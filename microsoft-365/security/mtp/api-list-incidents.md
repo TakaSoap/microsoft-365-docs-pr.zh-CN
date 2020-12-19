@@ -1,7 +1,7 @@
 ---
-title: Microsoft 365 Defender 中的列表事件 API
+title: 在 Microsoft 365 Defender 中列出事件 API
 description: 了解如何在 Microsoft 365 Defender 中列出事件 API
-keywords: 列表、事件、事件、api
+keywords: 列表， 事件， 事件， api
 search.product: eADQiWindows 10XVcnh
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
@@ -19,14 +19,14 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 9da6fdf04fd22767f3984229b7862f02b8293067
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 13508d3ad9d61797517ccb55a27152883947843a
+ms.sourcegitcommit: d6b1da2e12d55f69e4353289e90f5ae2f60066d0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48844992"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "49719424"
 ---
-# <a name="list-incidents-api-in-microsoft-365-defender"></a>Microsoft 365 Defender 中的列表事件 API
+# <a name="list-incidents-api-in-microsoft-365-defender"></a>在 Microsoft 365 Defender 中列出事件 API
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -36,152 +36,168 @@ ms.locfileid: "48844992"
 - Microsoft 365 Defender
 
 > [!IMPORTANT]
-> 一些信息与 prereleased 产品相关，在正式发布之前可能会对其进行重大修改。 Microsoft makes no warranties, express or implied, with respect to the information provided here.
+> 某些信息与预发布产品相关，该产品在商业发行之前可能会进行重大修改。 Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
 
 ## <a name="api-description"></a>API 说明
 
-事件 API 允许您对事件进行排序，以确定优先级并创建有通知的 cybersecurity 响应。 它公开在环境保留策略中指定的时间范围内，在网络中的设备、电子邮件帐户和用户中标记的事件的集合。 最近的事件显示在列表的顶部。 每个事件包含一系列相关警报及其相关的实体。
+列表事件 API 允许你对事件进行排序，以创建明智的网络安全响应。 它公开在环境保留策略中指定的时间范围内网络中标记的事件集合。 最新事件显示在列表顶部。 每个事件都包含一组相关警报及其相关实体。
 
-<br>API 支持以下 **OData** 运算符：
-<br>```$filter``` 打开： ```lastUpdateTime``` 、 ```createdTime``` ```status``` 和 ```assignedTo``` 属性。
-<br>```$top``` 最大值为 **100**
-<br>```$skip```
+API 支持以下 **OData** 运算符：
+
+- `$filter` on the `lastUpdateTime` `createdTime` ， ， and `status` `assignedTo` properties
+- `$top`，最大值为 **100**
+- `$skip`
 
 ## <a name="limitations"></a>限制
 
-1. 页面大小的最大值为 **100 个事件** 。
-2. 请求的最大速率为 **每分钟50个呼叫** 和 **每小时的1500个呼叫** 。
+1. 最大页面大小为 **100 个事件**。
+2. 最大请求速率为每分钟 **50** 个呼叫和 **每小时 1500 个呼叫**。
 
 ## <a name="permissions"></a>权限
 
-若要调用此 API，必须有以下权限之一。 若要了解详细信息，包括如何选择权限，请参阅 [Access Microsoft 365 Defender api](api-access.md)
+调用此 API 需要以下权限之一。 若要了解更多信息（包括如何选择权限），请参阅 [Access Microsoft 365 Defender API](api-access.md)
 
-权限类型 |   权限  |   权限显示名称
-:---|:---|:---
-应用程序 |   事件：全部已读。所有 | "读取所有事件"
-应用程序 |   事件 ReadWrite。 All | ' 读取和写入所有事件 '
-委派（工作或学校帐户） | 事件。阅读 | "读取事件"
-委派（工作或学校帐户） | 事件读写 | "读取和写入事件"
+权限类型 | 权限 | 权限显示名称
+-|-|-
+应用程序 | Incident.Read.All | 读取所有事件
+应用程序 | Incident.ReadWrite.All | 读取和写入所有事件
+委派（工作或学校帐户） | Incident.Read | 读取事件
+委派（工作或学校帐户） | Incident.ReadWrite | 读取和写入事件
 
 > [!Note]
 > 使用用户凭据获取令牌时：
-> - 用户需要具有门户中的事件的 "查看" 权限。
-> - 响应将仅包括用户向其公开的事件。
+>
+> - 用户需要具有对门户中事件的查看权限。
+> - 响应将仅包括用户公开的事件。
 
 ## <a name="http-request"></a>HTTP 请求
 
-```
+```HTTP
 GET /api/incidents
 ```
 
 ## <a name="request-headers"></a>请求标头
 
 名称 | 类型 | 说明
-:---|:---|:---
-Authorization | String | 持有者 {令牌}。 必需。
+-|-|-
+Authorization | String | Bearer {token}。 **Required**
 
 
 ## <a name="request-body"></a>请求正文
+
 无。
 
 ## <a name="response"></a>响应
-如果成功，此方法将返回 200 OK，以及响应正文中的 [事件](api-incident.md) 列表。
+
+如果成功，此方法返回 `200 OK` 响应正文 [中的事件](api-incident.md) 列表。
 
 ## <a name="schema-mapping"></a>架构映射
 
-| 字段名                                | 说明                                                                                                                                                                                                                                                                                                                                                                                | 示例值                                                                                                                                                                                                                                     |
-| ----------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **事件元数据**                         |                                                                                                                                                                                                                                                                                                                                                                                            |                                                                                                                                                                                                                                                   |
-| incidentId                                | 代表事件的唯一标识符。                                                                                                                                                                                                                                                                                                                                                | 924565                                                                                                                                                                                                                                            |
-| redirectIncidentId                        | 仅在事件处理逻辑过程中，将事件与另一个事件组合在一起时才填充。                                                                                                                                                                                                                                                           | 924569                                                                                                                                                                                                                                            |
-| incidentName                              | 可用于每个事件的字符串值。                                                                                                                                                                                                                                                                                                                                                  | 勒索软件活动                                                                                                                                                                                                                               |
-| createdTime                               | 首次创建事件的时间。                                                                                                                                                                                                                                                                                                                                                      | 2020-06T14：46： 57.0733333 Z                                                                                                                                                                                                                      |
-| lastUpdateTime                            | 后端事件最后更新的时间。<br> 在为事件的检索时间范围设置 request 参数时，可以使用此字段。                                                                                                                                                                                                                      | 2020-06T14：46： 57.29 Z                                                                                                                                                                                                                           |
-| assignedTo                                | 事件的所有者或 *null* （如果未分配所有者）。                                                                                                                                                                                                                                                                                                                         | secop2@contoso.com                                                                                                                                                                                                |
-| classification                            | 事件的规范。 属性值为： *Unknown* 、 *FalsePositive* 、 *TruePositive*                                                                                                                                                                                                                                                                           | 未知                                                                                                                                                                                                                                           |
-| 可用性                             | 指定事件的确定。 属性值为： *NotAvailable* 、 *Apt.* 、 *恶意软件* 、 *SecurityPersonnel* 、 *SecurityTesting* 、 *UnwantedSoftware* 、 *其他*                                                                                                                                                                                                                | NotAvailable                                                                                                                                                                                                                                      |
-| status                                    | 将事件分类 (为 *活动* 或 *已解决* ) 。 这可帮助您组织和管理对事件的响应。                                                                                                                                                                                                                                                                  | 活动                                                                                                                                                                                                                                            |
-| severity                                  | 指示可能对资产产生的影响。 严重度越高，影响越大。 通常情况下，严重级别较高的项目需要最直接的关注。<br>以下值之一： *信息* 、 *低* 、* 中和 *高* 。                                                                                                                                | 中                                                                                                                                                                                                                                            |
-| 标记                                      | 与事件相关联的自定义标记的数组，例如，用于标记具有共同特征的一组事件。                                                                                                                                                                                                                                                                  | \[\]                                                                                                                                                                                                                                              |
-| 警报                                    | 与事件相关的所有警报和其他信息（如严重性、警报中涉及的实体）的数组以及警报的来源。                                                                                                                                                                                                                     | \[\] (查看以下警报字段的详细信息)                                                                                                                                                                                                           |
-| **警报元数据**                           |                                                                                                                                                                                                                                                                                                                                                                                            |                                                                                                                                                                                                                                                   |
-| alertId                                   | 代表警报的唯一标识符                                                                                                                                                                                                                                                                                                                                                   | caD70CFEE2-1F54-32DB-9988-3A868A1EBFAC                                                                                                                                                                                                            |
-| incidentId                                | 代表与此通知关联的事件的唯一标识符                                                                                                                                                                                                                                                                                                                  | 924565                                                                                                                                                                                                                                            |
-| serviceSource                             | 通知源于的服务，例如 Microsoft Defender for Endpoint、Microsoft 云应用安全性、Microsoft Defender for Identity 或 Microsoft Defender for Office 365。                                                                                                                                                                                                                                                                     | MicrosoftCloudAppSecurity                                                                                                                                                                                                                         |
-| creationTime                              | 首次创建警报的时间。                                                                                                                                                                                                                                                                                                                                                         | 2020-06T14：46： 55.7182276 Z                                                                                                                                                                                                                      |
-| lastUpdatedTime                           | 后端最后更新警报的时间。                                                                                                                                                                                                                                                                                                                                           | 2020-06T14：46： 57.2433333 Z                                                                                                                                                                                                                      |
-| resolvedTime                              | 解决警报的时间。                                                                                                                                                                                                                                                                                                                                                              | 2020-10T05：22：59Z                                                                                                                                                                                                                              |
-| firstActivity                             | 警报第一次报告后端已更新活动的时间。                                                                                                                                                                                                                                                                                                                             | 2020-04T05：22：59Z                                                                                                                                                                                                                              |
-| title                                     | 可用于每个警报的简短标识字符串值。                                                                                                                                                                                                                                                                                                                                                     | 勒索软件活动                                                                                                                                                                                                                               |
-| description                               | 描述每个警报的字符串值。                                                                                                                                                                                                                                                                                                                                                        | 用户测试用户 2 (testUser2@contoso.com) 使用不常见扩展 *herunterladen* 的多个扩展名结尾的99文件。 这是一种不寻常的文件操作，并表明存在潜在的勒索软件攻击。 |
-| “类别”                                  | 对攻击在终止链中的进展程度的直观和数字视图。 与 [MITRE ATT&CK™ framework](https://attack.mitre.org/)对齐。                                                                                                                                                                                                                           | 影响                                                                                                                                                                                                                                            |
-| status                                    | 将警报 (为 *新* 的、 *活动* 的或 *已解决* 的) 进行分类。 这可帮助您组织和管理对警报的响应。                                                                                                                                                                                                                                                                   | 新式                                                                                                                                                                                                                                               |
-| severity                                  | 指示可能对资产产生的影响。 严重度越高，影响越大。 通常情况下，严重级别较高的项目需要最直接的关注。<br>以下值之一： *信息* 、 *低* 、* 中和 *高* 。                                                                                                                                   | 中                                                                                                                                                                                                                                            |
-| investigationId                           | 此警报触发的自动调查 id。                                                                                                                                                                                                                                                                                                                                | 1234                                                                                                                                                                                                                                              |
-| investigationState                        | 有关调查的当前状态的信息。 下列项之一： *未知* 、已 *终止* 、 *SuccessfullyRemediated* 、 *良性* 、 *失败* 、 *PartiallyRemediated* 、 *正在运行* 、 *PendingApproval* 、 *PendingResource* 、PartiallyInvestigated *、TerminatedByUser、TerminatedBySystem* *、**排队* 、InnerFailure *、PreexistingAlert、UnsupportedOs* *、UnsupportedAlertType* *、SuppressedAlert* *、、* 、、。 *PartiallyInvestigated* *InnerFailure* | UnsupportedAlertType                                                                                                                                                                                                                              |
-| classification                            | 事件的规范。 属性值为： *Unknown* 、 *FalsePositive* 、 *TruePositive* 或 *null*                                                                                                                                                                                                                                                                   | 未知                                                                                                                                                                                                                                           |
-| 可用性                             | 指定事件的确定。 属性值为： *NotAvailable* 、 *Apt.* 、 *恶意软件* 、 *SecurityPersonnel* 、 *SecurityTesting* 、 *UnwantedSoftware* 、 *Other* 或  *null*                                                                                                                                                                                                     | Apt.                                                                                                                                                                                                                                               |
-| assignedTo                                | 事件的所有者或 *null* （如果未分配所有者）。                                                                                                                                                                                                                                                                                                                            | secop2@contoso.com                                                                                                                                                                                                 |
-| actorName                                 | 与此通知关联的活动组（如果有）。                                                                                                                                                                                                                                                                                                                                        | BORON                                                                                                                                                                                                                                             |
-| threatFamilyName                          | 与此警报关联的威胁系列。                                                                                                                                                                                                                                                                                                                                                   | 空                                                                                                                                                                                                                                              |
-| mitreTechniques                           | 与 [MITRE ATT&CK](https://attack.mitre.org/)™框架相一致的攻击技术。                                                                                                                                                                                                                                                                                                                              | \[\]                                                                                                                                                                                                                                              |
-| 驱动器                                   | 发送与事件相关的警报的所有设备。                                                                                                                                                                                                                                                                                                     | \[\] (查看以下实体字段的详细信息)                                                                                                                                                                                                          |
-| **设备格式**                             |                                                                                                                                                                                                                                                                                                                                                                                            |                                                                                                                                                                                                                                                   |
-| DeviceId                                  | Microsoft Defender for Endpoint 中指定的设备 ID。                                                                                                                                                                                                                                                                                                                                                       | 24c222b0b60fe148eeece49ac83910cc6a7ef491                                                                                                                                                                                                          |
-| aadDeviceId                               |  在 [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis) (AAD) 中指定的设备 Id。 仅适用于加入域的设备。                                                                                                                                                                                                                                                                                                                              | 空                                                                                                                                                                                                                                              |
-| deviceDnsName                             | 设备的完全限定的域名称。                                                                                                                                                                                                                                                                                                                                                                        | user5cx.middleeast.corp.contoso.com                                                                                                                                                                                                    |
-| osPlatform                                | 设备正在运行的操作系统平台。                                                                                                                                                                                                                                                                                                                                                                     | WindowsServer2016                                                                                                                                                                                                                                 |
-| osBuild                                   | 设备正在运行的操作系统的内部版本。                                                                                                                                                                                                                                                                                                                                                                | 14393                                                                                                                                                                                                                                             |
-| rbacGroupName                             | [基于角色的访问控制](https://docs.microsoft.com/azure/role-based-access-control/overview) (RBAC) 组与设备相关联。                                                                                                                                                                                                                                                                                                                             | WDATP-Ring0                                                                                                                                                                                                                                       |
-| firstSeen                                 | 首次看到设备时的时间。                                                                                                                                                                                                                                                                                                                                                           | 2020-02-06T14：16： 01.9330135 Z                                                                                                                                                                                                                      |
-| healthStatus                              | 设备的运行状况状态。                                                                                                                                                                                                                                                                                                                                                                        | 活动                                                                                                                                                                                                                                            |
-| riskScore                                 | 设备的风险分数。                                                                                                                                                                                                                                                                                                                                                                       | 高                                                                                                                                                                                                                                              |
-| 实体                                  | 已标识为给定警报的一部分或与之相关的所有实体。                                                                                                                                                                                                                                                                                | \[\] (查看以下实体字段的详细信息)                                                                                                                                                                                                          |
-| **实体格式**                             |                                                                                                                                                                                                                                                                                                                                                                                            |                                                                                                                                                                                                                                                   |
-| entityType                                | 已标识为给定警报的一部分或与之相关的实体。<br>属性值为： *User* 、 *Ip* 、 *Url* 、 *File* 、 *Process* 、 *邮箱* 、 *MailMessage* 、 *MailCluster* 、 *Registry*                                                                                                                                                                                                     | 用户                                                                                                                                                                                                                                              |
-| sha1                                      | 如果 entityType 是 *文件* ，则可用。<br>与文件或进程相关联的警报的文件哈希。                                                                                                                                                                                                                                                                                    | 5de839186691aa96ee2ca6d74f0a38fb8d1bd6dd                                                                                                                                                                                                          |
-| sha256                                    | 如果 entityType 是 *文件* ，则可用。<br>与文件或进程相关联的警报的文件哈希。                                                                                                                                                                                                                                                                                    | 28cb017dfc99073aa1b47c1b30f413e3ce774c4991eb4158de50f9dbb36d8043                                                                                                                                                                                  |
-| fileName                                  | 如果 entityType 是 *文件* ，则可用。<br>与文件或进程相关联的警报的文件名                                                                                                                                                                                                                                                                                    | Detector.UnitTests.dll                                                                                                                                                                                                                            |
-| 路径                                  | 如果 entityType 是 *文件* ，则可用。<br>与文件或进程相关联的警报的文件路径                                                                                                                                                                                                                                                                                    | C： \\ \\ 代理 \\ \\ \_ 工作 \\ \\ \_ 临时 \\ \\ 部署 \_ 系统 2020-09-06 12 \_ 14 \_ 54 \\ \\ 输出                                                                                                                                                                    |
-| processId                                 | 如果 entityType 为 *进程* ，则为可用。                                                                                                                                                                                                                                                                                                                                                     | 24348                                                                                                                                                                                                                                             |
-| processCommandLine                        | 如果 entityType 为 *进程* ，则为可用。                                                                                                                                                                                                                                                                                                                                                     | " \\ " 您的文件已准备好下载 \_1911150169.exe\\ ""                                                                                                                                                                                           |
-| processCreationTime                       | 如果 entityType 为 *进程* ，则为可用。                                                                                                                                                                                                                                                                                                                                                     | 2020-18T03：25： 38.5269993 Z                                                                                                                                                                                                                      |
-| parentProcessId                           | 如果 entityType 为 *进程* ，则为可用。                                                                                                                                                                                                                                                                                                                                                   | 16840                                                                                                                                                                                                                                             |
-| parentProcessCreationTime                 | 如果 entityType 为 *进程* ，则为可用。                                                                                                                                                                                                                                                                                                                                                     | 2020-18T02：12： 32.8616797 Z                                                                                                                                                                                                                      |
-| ipAddress                                 | 如果 entityType 为 *Ip* ，则可用。 <br>与网络事件相关联的警报的 IP 地址，例如 *与恶意网络目标的通信* 。                                                                                                                                                                                                                                   | 62.216.203.204                                                                                                                                                                                                                                    |
-| url                                       | 如果 entityType 为 *Url* ，则可用。 <br>与网络事件相关联的警报的 Url，例如， *与恶意网络目标的通信* 。                                                                                                                                                                                                                                  | down.esales360.cn                                                                                                                                                                                                                                 |
-| 帐户                               | 如果 entityType 是 *用户* ，则可用。                                                                                                                                                                                                                                                                                                                                                         | testUser2                                                                                                                                                                                                                                         |
-| domainName                                | 如果 entityType 是 *用户* ，则可用。                                                                                                                                                                                                                                                                                                                                                        | 欧洲公司                                                                                                                                                                                                                              |
-| userSid                                   | 如果 entityType 是 *用户* ，则可用。                                                                                                                                                                                                                                                                                                                                                        | S-1-5-21-1721254763-462695806-1538882281-4156657                                                                                                                                                                                                  |
-| aadUserId                                 | 如果 entityType 是 *用户* ，则可用。                                                                                                                                                                                                                                                                                                                                                        | fc8f7484-f813-4db2-afab-bc1507913fb6                                                                                                                                                                                                              |
-| userPrincipalName                         | 如果 entityType 是 *用户* / *邮箱* / *MailMessage* ，则可用。                                                                                                                                                                                                                                                                                                                                | testUser2@contoso.com                                                                                                                                                                                      |
-| mailboxDisplayName                        | 如果 entityType 为 *邮箱* ，则可用。                                                                                                                                                                                                                                                                                                                                                     | 测试的您                                                                                                                                                                                                                                        |
-| mailboxAddress                            | 如果 entityType 是 *用户* / *邮箱* / *MailMessage* ，则可用。                                                                                                                                                                                                                                                                                                                                | testUser2@contoso.com                                                                                                                                                                                      |
-| clusterBy                                 | 如果 entityType 为  *MailCluster* ，则可用。                                                                                                                                                                                                                                                                                                                                                 | 遵照P2SenderDomain;ContentType                                                                                                                                                                                                                |
-| sender                                    | 如果 entityType 是 *用户* / *邮箱* / *MailMessage* ，则可用。                                                                                                                                                                                                                                                                                                                                  | user.abc@mail.contoso.co.in                                                                                                                                                                 |
-| recipient                                 | 如果 entityType 为 *MailMessage* ，则可用。                                                                                                                                                                                                                                                                                                                                                | testUser2@contoso.com                                                                                                                                                                                       |
-| subject                                   | 如果 entityType 为 *MailMessage* ，则可用。                                                                                                                                                                                                                                                                                                                                                 | \[外部 \] 注意事项                                                                                                                                                                                                                            |
-| deliveryAction                            | 如果 entityType 为 *MailMessage* ，则可用。                                                                                                                                                                                                                                                                                                                                                 | 附带                                                                                                                                                                                                                                         |
-| securityGroupId                           | 如果 entityType 为  *SecurityGroup* ，则可用。                                                                                                                                                                                                                                                                                                                                               | 301c47c8-e15f-4059-ab09-e2ba9ffd372b                                                                                                                                                                                                              |
-| securityGroupName                         | 如果 entityType 为  *SecurityGroup* ，则可用。                                                                                                                                                                                                                                                                                                                                               | 网络配置操作员                                                                                                                                                                                                                   |
-| registryHive                              | 如果 entityType 为  *注册表* ，则可用。                                                                                                                                                                                                                                                                                                                                                    | HKEY \_ 本地 \_ 计算机                                                                                                                                                                                                                              |
-| registryKey                               | 如果 entityType 为  *注册表* ，则可用。                                                                                                                                                                                                                                                                                                                                                     | 软件 \\ \\ MICROSOFT \\ \\ Windows NT \\ \\ CurrentVersion \\ \\ Winlogon                                                                                                                                                                                 |
-| registryValueType                         | 如果 entityType 为  *注册表* ，则可用。                                                                                                                                                                                                                                                                                                                                                    | String                                                                                                                                                                                                                                            |
-| registryValue                             | 如果 entityType 为  *注册表* ，则可用。                                                                                                                                                                                                                                                                                                                                                    | 31-00-00-00                                                                                                                                                                                                                                       |
-| deviceId                                  | 与实体相关的设备的 ID （如果有）。                                                                                                                                                                                                                                                                                                                                           | 986e5df8b73dacd43c8917d17e523e76b13c75cd                                                                                                                                                                                                          |
+### <a name="incident-metadata"></a>事件元数据
 
+字段名 | 说明 | 示例值
+-|-|-
+incidentId | 表示事件的唯一标识符 | 924565
+redirectIncidentId | 仅在将事件与另一个事件分组在一起时填充，作为事件处理逻辑的一部分。 | 924569
+incidentName | 可用于每个事件的字符串值。 | 勒索软件活动
+createdTime | 首次创建事件的时间。 | 2020-09-06T14：46：57.0733333Z
+lastUpdateTime | 上次在后端更新事件的时间。<br /><br /> 为检索事件的时间范围设置请求参数时，可以使用此字段。 | 2020-09-06T14：46：57.29Z
+assignedTo | 事件的所有者;如果没有分配 *所有者* ，则为空。 | secop2@contoso.com
+classification | 事件的规范。 属性值为 *：Unknown、FalsePositive、TruePositive*   | 未知
+确定 | 指定事件确定。 属性值是 *：NotAvailable*、 *Apt*、 *Malware*、 *SecurityPersonnel*、 *SecurityTesting*、 *UnwantedSoftware*、 *Other* | NotAvailable
+status | 将事件分类 (*活动或* 已解决 *) 。* 它可以帮助你组织和管理对事件的响应。 | 活动
+severity | 指示对资产可能的影响。 严重性越高，影响越大。 通常，严重性较高的项目需要最直接的注意。<br /><br />下列值之一：Informational、Low、*Medium 和 *High。*   | 中
+tags | 与事件关联的自定义标记数组，例如，用于标记一组具有共同特征的事件。 | \[\]
+警报 | 包含与事件相关的所有警报以及其他信息（如严重性、警报中涉及的实体以及警报来源）的数组。 | \[\] (以下警报字段的详细信息) 
 
+### <a name="alerts-metadata"></a>警报元数据
+
+字段名 | 说明 | 示例值
+-|-|-
+alertId | 表示警报的唯一标识符 | caD70CFEE2-1F54-32DB-9988-3A868A1EBFAC
+incidentId | 表示与此警报关联的事件的唯一标识符 | 924565
+serviceSource | 警报源自的服务，如 Microsoft Defender for Endpoint、Microsoft Cloud App Security、Microsoft Defender for Identity 或 Microsoft Defender for Office 365。 | MicrosoftCloudAppSecurity
+creationTime | 首次创建警报的时间。 | 2020-09-06T14：46：55.7182276Z
+lastUpdatedTime | 上次在后端更新警报的时间。 | 2020-09-06T14：46：57.2433333Z
+resolvedTime | 警报解决的时间。 | 2020-09-10T05：22：59Z
+firstActivity | 警报首次报告在后端更新活动的时间。| 2020-09-04T05：22：59Z
+title | 简要标识可用于每个警报的字符串值。 | 勒索软件活动
+说明 | 描述每个警报的字符串值。 | 用户 Test User2 (testUser2@contoso.com) 处理了以不常见扩展 *herunterladen* 结尾的多个扩展名的 99 个文件。 这是一个异常数量的文件操作，并表明存在潜在的勒索软件攻击。
+“类别” | 攻击沿击杀链的进度的可视和数值视图。 与 [MITRE ATT&CK™对齐](https://attack.mitre.org/)。 | 影响
+status | 将警报分类为 *(、活动或* 已解决 *) 。* 它可以帮助你组织和管理对警报的响应。 | 新式
+severity | 指示对资产可能的影响。 严重性越高，影响越大。 通常，严重性较高的项目需要最直接的注意。<br>下列值之一：Informational、Low、*Medium 和 *High。*   | 中
+investigationId | 此警报触发的自动调查 ID。 | 1234
+investigationState | 有关调查的当前状态的信息。 下列值之一：Unknown、Terminated、SuccessfullyRemediated、Unsupport、Failed、PartiallyRemediated、Running、PendingApproval、PendingResource、PartiallyInvestigated、TerminatedByUser、TerminatedBySystem、Queued、InnerFailure、PreexistingAlert、UnsupportedOs、UnsupportedAlertType *、SuppressedAlert。*                  | UnsupportedAlertType
+classification | 事件的规范。 属性值为：Unknown、FalsePositive、TruePositive 或 null    | 未知
+确定 | 指定事件确定。 属性值是：NotAvailable、Apt、Malware、SecurityPersonnel、SecurityTesting、UnwantedSoftware、Other或 null       | Apt
+assignedTo | 事件的所有者;如果没有分配 *所有者* ，则为空。 | secop2@contoso.com
+actorName | 与此警报关联的活动组（如果有）。 | BORON
+threatFamilyName | 与此警报关联的威胁系列。 | 空
+mitreTechniques | 攻击技术，与 [MITRE ATT](https://attack.mitre.org/)&CK ™一致。 | \[\]
+设备 | 已发送与事件相关的警报的所有设备。 | \[\] (下面的实体字段的详细信息) 
+
+### <a name="device-format"></a>设备格式
+
+字段名 | 说明 | 示例值
+-|-|-
+DeviceId | Microsoft Defender ATP 中指定的设备 ID。 | 24c222b0b60fe148eeece49ac83910cc6a7ef491
+aadDeviceId |  Azure Active Directory 中指定的[设备 ID。](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis) 仅适用于加入域的设备。 | 空
+deviceDnsName | 设备的完全限定域名。 | user5cx.middleeast.corp.contoso.com
+osPlatform | 设备正在运行的操作系统平台。| WindowsServer2016
+osBuild | 设备正在运行的操作系统的生成版本。 | 14393
+rbacGroupName | 基于 [角色的访问控制 (](https://docs.microsoft.com/azure/role-based-access-control/overview) 与) 关联的 RBAC 组。 | WDATP-Ring0
+firstSeen | 首次看到设备的时间。 | 2020-02-06T14：16：01.9330135Z
+healthStatus | 设备的运行状况。 | 活动
+riskScore | 设备的风险评分。 | 高
+entities | 已标识为给定警报的一部分或与给定警报相关的所有实体。 | \[\] (下面的实体字段的详细信息) 
+
+### <a name="entity-format"></a>实体格式
+
+字段名 | 说明 | 示例值
+-|-|-
+entityType | 已标识为给定警报的一部分或与给定警报相关的实体。<br>属性值包括：User、Ip、Url、File、Process、MailBox、MailMessage、MailCluster、Registry          | 用户
+sha1 | 如果 entityType 为 *File，则可用*。<br>与文件或进程关联的警报的文件哈希。 | 5de839186691aa96ee2ca6d74f0a38fb8d1bd6dd
+sha256 | 如果 entityType 为 *File，则可用*。<br>与文件或进程关联的警报的文件哈希。 | 28cb017dfc99073aa1b47c1b30f413e3ce774c4991eb4158de50f9dbb36d8043
+fileName | 如果 entityType 为 *File，则可用*。<br>与文件或进程关联的警报的文件名 | Detector.UnitTests.dll
+filePath | 如果 entityType 为 *File，则可用*。<br>与文件或进程关联的警报的文件路径 | C： \\ \agent_work_temp\Deploy\SYSTEM\2020-09-06 12_14_54\Out
+processId | 如果 entityType 是 Process， *则可用*。 | 24348
+processCommandLine | 如果 entityType 是 Process， *则可用*。 | "你的文件已准备好下载 \_1911150169.exe"
+processCreationTime | 如果 entityType 是 Process， *则可用*。 | 2020-07-18T03：25：38.5269993Z
+parentProcessId | 如果 entityType 是 Process， *则可用*。 | 16840
+parentProcessCreationTime | 如果 entityType 是 Process， *则可用*。 | 2020-07-18T02：12：32.8616797Z
+ipAddress | 如果 entityType 为 *Ip，则可用*。 <br>与网络事件（如到恶意网络目标的通信）关联的 *警报的* IP 地址。 | 62.216.203.204
+url | 如果 entityType 为 *Url，则可用*。 <br>与网络事件（如到恶意网络目标的通信 *）关联的警报的 URL。* | down.esales360.cn
+accountName | 如果 entityType 为 *User，则可用*。 | testUser2
+domainName | 如果 entityType 为 *User，则可用*。 | europe.corp.contoso
+userSid | 如果 entityType 为 *User，则可用*。 | S-1-5-21-1721254763-462695806-1538882281-4156657
+aadUserId | 如果 entityType 为 *User，则可用*。 | fc8f7484-f813-4db2-afab-bc1507913fb6
+userPrincipalName | 如果 entityType 是 *用户* / *MailBox* / *MailMessage，则可用*。 | testUser2@contoso.com
+mailboxDisplayName | 如果 entityType 为 *MailBox，则可用*。 | test User2
+mailboxAddress | 如果 entityType 是 *用户* / *MailBox* / *MailMessage，则可用*。 | testUser2@contoso.com
+clusterBy | 如果 entityType 为  *MailCluster，则可用*。 | 主题;P2SenderDomain;ContentType
+sender | 如果 entityType 是 *用户* / *MailBox* / *MailMessage，则可用*。 | user.abc@mail.contoso.co.in
+recipient | 如果 entityType 为 *MailMessage，则可用*。 | testUser2@contoso.com
+subject | 如果 entityType 为 *MailMessage，则可用*。 | \[外部 \] 关注
+deliveryAction | 如果 entityType 为 *MailMessage，则可用*。 | 已传递
+securityGroupId | 如果 entityType 为  *SecurityGroup，则可用*。 | 301c47c8-e15f-4059-ab09-e2ba9ffd372b
+securityGroupName | 如果 entityType 为  *SecurityGroup，则可用*。 | 网络配置运算符
+registryHive | 如果 entityType 为  *Registry，则可用*。 | HKEY \_ 本地 \_ 计算机 |
+registryKey | 如果 entityType 为  *Registry，则可用*。 | SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon
+registryValueType | 如果 entityType 为  *Registry，则可用*。 | String
+registryValue | 如果 entityType 为  *Registry，则可用*。 | 31-00-00-00
+deviceId | 与实体相关的设备的 ID（如果有）。 | 986e5df8b73dacd43c8917d17e523e76b13c75cd
 
 ## <a name="example"></a>示例
 
 **请求**
 
-```
+```HTTP
 GET https://api.security.microsoft.com/api/incidents
 ```
 
 **响应**
+
 ```json
 {
     "@odata.context": "https://api.security.microsoft.com/api/$metadata#Incidents",
@@ -695,6 +711,11 @@ GET https://api.security.microsoft.com/api/incidents
 }
 ```
 
-## <a name="related-topic"></a>相关主题
+## <a name="related-articles"></a>相关文章
+
+- [访问 Microsoft 365 Defender API](api-access.md)
+- [了解 API 限制和许可](api-terms.md)
+- [了解错误代码](api-error-codes.md)
+- [事件概述](incidents-overview.md)
 - [事件 API](api-incident.md)
-- [更新事件](api-update-incidents.md)
+- [更新事件 API](api-update-incidents.md)

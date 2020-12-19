@@ -1,7 +1,7 @@
 ---
-title: 常见 Microsoft 365 Defender REST API 错误代码
+title: 常见的 Microsoft 365 Defender REST API 错误代码
 description: 了解常见的 Microsoft 365 Defender REST API 错误代码
-keywords: api、错误、代码、常见错误、mtp、api 错误代码
+keywords: api， 错误， 代码， 常见错误， mtp， api 错误代码
 search.product: eADQiWindows 10XVcnh
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
@@ -19,65 +19,49 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: aceb376662f2b27397aa2332f8929a57d5a3ee03
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 0df741efb7555d587a6033acc23716e93f542d5e
+ms.sourcegitcommit: d6b1da2e12d55f69e4353289e90f5ae2f60066d0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48846004"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "49719210"
 ---
-# <a name="common-microsoft-365-defender-rest-api-error-codes"></a>常见 Microsoft 365 Defender REST API 错误代码
+# <a name="common-microsoft-365-defender-rest-api-error-codes"></a>常见的 Microsoft 365 Defender REST API 错误代码
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-
 **适用于：**
-- Microsoft 365 Defender
 
->[!IMPORTANT] 
->一些信息与 prereleased 产品相关，在正式发布之前可能会对其进行重大修改。 Microsoft makes no warranties, express or implied, with respect to the information provided here.
+- Microsoft 威胁防护
 
-下表中列出的错误代码可能由任何 Microsoft 365 Defender Api 上的操作返回。
+> [!IMPORTANT]
+> 某些信息与预发布产品相关，该产品在商业发行之前可能会进行重大修改。 Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
-每个错误响应都包含一条错误消息，可帮助解决该问题。
+任何 Microsoft 365 Defender API 上的操作可能会返回错误代码。 每个错误响应都将包含一条错误消息，有助于解决问题。 表部分中的错误消息列提供了一些示例消息。 实际消息的内容因触发响应的因素而异。 表中用尖括号指示变量内容。
 
-邮件是可更改的自由文本。
+## <a name="error-codes"></a>错误代码
 
-在页面底部，您可以找到响应示例。
-
-错误代码 |HTTP 状态代码 |邮件 
-:---|:---|:---
-BadRequest | BadRequest (400)  | 一般错误的请求错误消息。
-ODataError | BadRequest (400)  | OData URI 查询无效 () 指定了特定错误。
-InvalidInput | BadRequest (400)  | 无效输入 {无效输入}。
-InvalidRequestBody | BadRequest (400)  | 请求正文无效。
-InvalidHashValue | BadRequest (400)  | 哈希值 {无效的哈希} 无效。
-InvalidDomainName | BadRequest (400)  | 域名 {无效域} 无效。
-InvalidIpAddress | BadRequest (400)  | IP 地址 {无效的 IP} 无效。
-InvalidUrl | BadRequest (400)  | URL {无效的 URL} 无效。
-MaximumBatchSizeExceeded | BadRequest (400)  | 超出了最大批处理大小。 已接收： {已接收批处理大小}，允许： {允许批处理大小}。
-MissingRequiredParameter | BadRequest (400)  | 参数 {缺少的参数} 缺失。
-OsPlatformNotSupported | BadRequest (400)  | 此操作不支持 OS Platform {client OS Platform}。
-ClientVersionNotSupported | BadRequest (400)  | {客户端版本 {支持的客户端版本）和更高版本支持所请求的操作。
-未经授权 (Unauthorized) | 未经授权的 (401)  | 未经授权 (通常是无效或已过期的授权标头) 。
-禁止访问 (Forbidden) | 禁止 (403)  | 禁止 (有效令牌，但权限不足，无法执行操作) 。
-DisabledFeature | 禁止 (403)  | 未启用租户功能。
-DisallowedOperation | 禁止 (403)  | {不允许的操作和原因。
-NotFound | 找不到 (404)  | 找不到常规错误消息。
-ResourceNotFound | 找不到 (404)  | 资源 {找不到请求的资源}。
-InternalServerError | 内部服务器错误 (500)  |  (不会出现错误消息，请重试操作，否则请与我们联系（如果它未得到解决) 
-
-## <a name="body-parameters-are-case-sensitive"></a>正文参数区分大小写
-
-提交的正文参数当前区分大小写。
-<br>如果遇到 **InvalidRequestBody** 或 **MissingRequiredParameter** 错误，则可能是由错误的参数大写或小写字母导致的。
-<br>建议您查看 API 文档页，并检查提交的参数是否与相关的示例相匹配。
-
-## <a name="correlation-request-id"></a>关联请求 ID
-
-每个错误响应包含一个用于跟踪的唯一 ID 参数。
-<br>此参数的属性名称为 "target"。
-<br>在与我们联系时，附加此 ID 可帮助查找问题的根本原因。
+错误代码 | HTTP 状态代码 | 消息
+-|-|-
+BadRequest | BadRequest (400)  | 常规错误请求错误消息。
+ODataError | BadRequest (400)  | 无效的 OData URI 查询 \<the specific error is specified\> 。
+InvalidInput | BadRequest (400)  | 无效的输入 \<the invalid input\> 。
+InvalidRequestBody | BadRequest (400)  | 无效的请求正文。
+InvalidHashValue | BadRequest (400)  | 哈希 \<the invalid hash\> 值无效。
+InvalidDomainName | BadRequest (400)  | 域名 \<the invalid domain\> 无效。
+InvalidIpAddress | BadRequest (400)  | IP 地址 \<the invalid IP\> 无效。
+InvalidUrl | BadRequest (400)  | URL \<the invalid URL\> 无效。
+MaximumBatchSizeExceeded | BadRequest (400)  | 已超出最大批次大小。 Received： \<batch size received\> ， allowed： {batch size allowed}.
+MissingRequiredParameter | BadRequest (400)  | 参数 \<the missing parameter\> 缺失。
+OsPlatformNotSupported | BadRequest (400)  | 此操作 \<the client OS Platform\> 不支持 OS 平台。
+ClientVersionNotSupported | BadRequest (400)  | \<The requested action\> 在客户端版本及 \<supported client version\> 以上版本上受支持。
+未经授权 (Unauthorized) | 未授权 (401)  | 未经授权 (Unauthorized) <br /><br />*注意：通常是由无效或过期的授权标头导致的。*
+禁止访问 (Forbidden) | 禁止使用 (403)  | 禁止访问 (Forbidden) <br /><br />*注意：有效的令牌，但操作权限不足*。
+DisabledFeature | 禁止使用 (403)  | 租户功能未启用。
+DisallowedOperation | 禁止使用 (403)  | \<the disallowed operation and the reason\>.
+NotFound | 找不到 (404)  | "未找到常规"错误消息。
+ResourceNotFound | 找不到 (404)  | 未找到 \<the requested resource\> 资源。
+InternalServerError | 内部服务器错误 (500)  | *注意：无错误消息，重试该操作或联系 Microsoft（如果未解决）*
 
 ## <a name="examples"></a>示例
 
@@ -91,7 +75,6 @@ InternalServerError | 内部服务器错误 (500)  |  (不会出现错误消息�
 }
 ```
 
-
 ```json
 {
     "error": {
@@ -102,3 +85,20 @@ InternalServerError | 内部服务器错误 (500)  |  (不会出现错误消息�
 }
 ```
 
+## <a name="body-parameters"></a>Body 参数
+
+> [!IMPORTANT]
+> 正文参数区分大小写。
+
+如果遇到 *InvalidRequestBody* 或 *MissingRequiredParameter* 错误，这可能是由拼写错误导致的。 查看 API 文档并检查提交的参数是否与相关示例匹配。
+
+## <a name="tracking-id"></a>跟踪 ID
+
+每个错误响应都包含用于跟踪的唯一 ID 参数。 此参数的属性名称是 *目标*。 当我们就错误联系我们时，附加此 ID 将帮助我们找到问题的根本原因。
+
+## <a name="related-articles"></a>相关文章
+
+- [Microsoft 365 Defender API 概述](api-overview.md)
+- [支持的 Microsoft 365 Defender API](api-supported.md)
+- [访问 Microsoft 365 Defender API](api-access.md)
+- [了解 API 限制和许可](api-terms.md)

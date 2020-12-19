@@ -1,7 +1,7 @@
 ---
-title: Microsoft 365 Defender Api 概述
-description: 了解 Microsoft 365 Defender 中的可用 Api
-keywords: api、api、概述、事件、事件、威胁搜寻
+title: Microsoft 365 Defender API 概述
+description: 了解 Microsoft 365 Defender 中的可用 API
+keywords: api， api， 概述， 事件， 事件， 威胁搜寻， microsoft 365 defender
 search.product: eADQiWindows 10XVcnh
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
@@ -19,35 +19,46 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 75a5853e7128667420819c84fbc3c50b07d669b4
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 1a75a561e60c05208e8ea302505f9644ac0bc044
+ms.sourcegitcommit: d6b1da2e12d55f69e4353289e90f5ae2f60066d0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48845004"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "49719186"
 ---
-# <a name="overview-of--microsoft-365-defender-apis"></a>Microsoft 365 Defender Api 概述
+# <a name="overview-of--microsoft-365-defender-apis"></a>Microsoft 365 Defender API 概述
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-
 **适用于：**
+
 - Microsoft 365 Defender
 
+> [!IMPORTANT]
+> 某些信息与预发布产品相关，该产品在商业发行之前可能会进行重大修改。 Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
->[!IMPORTANT] 
->一些信息与 prereleased 产品相关，在正式发布之前可能会对其进行重大修改。 Microsoft makes no warranties, express or implied, with respect to the information provided here.
+Microsoft 365 Defender 基于集成就绪平台构建。
 
-Microsoft 365 Defender 解决方案建立在集成就绪平台之上。 
+使用 Microsoft 365 Defender API 基于共享事件和高级搜寻表自动执行工作流。
 
-使用 lop-exo 级 Microsoft 365 Defender Api，您可以基于共享事件和高级搜寻表自动执行工作流。
+- **[组合事件队列](api-incident.md)** - 通过按事件 API 将整个攻击范围和所有受影响资产分组在一起，重点关注关键内容。
 
-- **合并的事件队列** -帮助安全专业人员重点关注关键因素。 帮助确保完全攻击作用域和受影响的资产组合在一起，并在事件 API 下及时出现。
+- **[跨产品威胁搜寻](api-advanced-hunting.md)** - 通过创建自己的自定义查询来筛选跨多个保护产品收集的原始数据，利用安全团队的组织知识搜寻泄露的迹象。
 
-- **跨产品威胁搜寻** -安全团队可以通过 api 创建自己的自定义查询，通过 api 通过各种保护产品收集的原始数据创建自己的自定义查询，从而利用其独特的组织知识来寻找危害迹象。 
+除了这些特定于 Microsoft 365 Defender 的 API 外，我们每个其他安全产品都公开了其他 [API，](api-articles.md) 以帮助你充分利用它们的独特功能。
 
-除了这些 Api 集之外，每种不同的保护产品还会公开其他 Api，以帮助您根据每个产品功能进行创新。
+## <a name="learn-more"></a>了解详细信息
 
-## <a name="related-topics"></a>相关主题
-- [访问 Microsoft 威胁防护 Api](api-access.md)
-- [其他 API 资源](api-articles.md)
+| **了解如何访问 API** |
+|-|
+| [了解 API 配额和许可](api-terms.md) |
+| [访问 Microsoft 365 Defender API](api-access.md) |
+| **构建应用程序** |
+| [创建"Hello world"应用](api-hello-world.md) |
+| [创建应用以代表用户访问 Microsoft 365 Defender API](api-create-app-user-context.md) |
+| [创建应用以在没有用户的情况下访问 Microsoft 365 Defender](api-create-app-web.md) |
+| [创建具有对 Microsoft 365 Defender API 的多租户合作伙伴访问权限的应用](api-partner-access.md) |
+| **对应用进行疑难解答和维护** |
+| [了解 API 错误代码](api-error-codes.md) |
+| [使用 Azure 密钥保管库管理应用中的密钥](https://docs.microsoft.com/learn/modules/manage-secrets-with-azure-key-vault/) |
+| [为用户登录实现 OAuth 2.0 授权](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-code) |
