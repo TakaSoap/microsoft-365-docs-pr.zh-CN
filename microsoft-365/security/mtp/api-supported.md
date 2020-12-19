@@ -1,7 +1,7 @@
 ---
-title: 支持的 Microsoft 365 Defender Api
-description: 支持的 Microsoft 365 Defender Api
-keywords: MTP、Api、api
+title: 支持的 Microsoft 365 Defender API
+description: 支持的 Microsoft 365 Defender API
+keywords: MTP， API， api
 search.product: eADQiWindows 10XVcnh
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
@@ -19,41 +19,45 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: b7c0accf2d649d4ad6177260294922ee17783f2c
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: dbb7613dae3755b0fb794a3d68b5b424d765cc62
+ms.sourcegitcommit: d6b1da2e12d55f69e4353289e90f5ae2f60066d0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48844956"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "49719318"
 ---
-# <a name="supported-microsoft-365-defender-apis"></a><span data-ttu-id="0d0cf-104">支持的 Microsoft 365 Defender Api</span><span class="sxs-lookup"><span data-stu-id="0d0cf-104">Supported Microsoft 365 Defender APIs</span></span> 
+# <a name="supported-microsoft-365-defender-apis"></a><span data-ttu-id="a56b6-104">支持的 Microsoft 365 Defender API</span><span class="sxs-lookup"><span data-stu-id="a56b6-104">Supported Microsoft 365 Defender APIs</span></span> 
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-<span data-ttu-id="0d0cf-105">**适用于：**</span><span class="sxs-lookup"><span data-stu-id="0d0cf-105">**Applies to:**</span></span>
-- <span data-ttu-id="0d0cf-106">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="0d0cf-106">Microsoft 365 Defender</span></span>
+<span data-ttu-id="a56b6-105">**适用于：**</span><span class="sxs-lookup"><span data-stu-id="a56b6-105">**Applies to:**</span></span>
+- <span data-ttu-id="a56b6-106">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="a56b6-106">Microsoft 365 Defender</span></span>
 
->[!IMPORTANT] 
-><span data-ttu-id="0d0cf-107">一些信息与 prereleased 产品相关，在正式发布之前可能会对其进行重大修改。</span><span class="sxs-lookup"><span data-stu-id="0d0cf-107">Some information relates to prereleased product which may be substantially modified before it's commercially released.</span></span> <span data-ttu-id="0d0cf-108">Microsoft makes no warranties, express or implied, with respect to the information provided here.</span><span class="sxs-lookup"><span data-stu-id="0d0cf-108">Microsoft makes no warranties, express or implied, with respect to the information provided here.</span></span>
+> [!IMPORTANT]
+> <span data-ttu-id="a56b6-107">某些信息与预发布产品相关，该产品在商业发行之前可能会进行重大修改。</span><span class="sxs-lookup"><span data-stu-id="a56b6-107">Some information relates to prereleased product which may be substantially modified before it's commercially released.</span></span> <span data-ttu-id="a56b6-108">Microsoft makes no warranties, express or implied, with respect to the information provided here.</span><span class="sxs-lookup"><span data-stu-id="a56b6-108">Microsoft makes no warranties, express or implied, with respect to the information provided here.</span></span>
 
+## <a name="list-of-available-apis"></a><span data-ttu-id="a56b6-109">可用 API 列表</span><span class="sxs-lookup"><span data-stu-id="a56b6-109">List of available APIs</span></span>
 
-### <a name="end-point-uris"></a><span data-ttu-id="0d0cf-109">终结点 Uri：</span><span class="sxs-lookup"><span data-stu-id="0d0cf-109">End Point URIs:</span></span>
+<span data-ttu-id="a56b6-110">文章</span><span class="sxs-lookup"><span data-stu-id="a56b6-110">Article</span></span> | <span data-ttu-id="a56b6-111">说明</span><span class="sxs-lookup"><span data-stu-id="a56b6-111">Description</span></span>
+-|-
+[<span data-ttu-id="a56b6-112">高级搜寻 API</span><span class="sxs-lookup"><span data-stu-id="a56b6-112">Advanced Hunting API</span></span>](api-advanced-hunting.md) | <span data-ttu-id="a56b6-113">运行高级搜寻查询。</span><span class="sxs-lookup"><span data-stu-id="a56b6-113">Run Advanced Hunting queries.</span></span>
+[<span data-ttu-id="a56b6-114">事件 API</span><span class="sxs-lookup"><span data-stu-id="a56b6-114">Incident APIs</span></span>](api-incident.md) | <span data-ttu-id="a56b6-115">列出和更新事件以及其他实际任务。</span><span class="sxs-lookup"><span data-stu-id="a56b6-115">List and update incidents, along with other practical tasks.</span></span>
 
-- <span data-ttu-id="0d0cf-110">服务基 URI 为： https://api.security.microsoft.com</span><span class="sxs-lookup"><span data-stu-id="0d0cf-110">The service base URI is: https://api.security.microsoft.com</span></span> <br>
+### <a name="endpoint-uris"></a><span data-ttu-id="a56b6-116">终结点 URI</span><span class="sxs-lookup"><span data-stu-id="a56b6-116">Endpoint URIs</span></span>
 
->[!NOTE]
-><span data-ttu-id="0d0cf-111">为获得更好的性能，你可以使用服务器近距离你的地理位置：</span><span class="sxs-lookup"><span data-stu-id="0d0cf-111">For better performance, you can use server closer to your Geo location:</span></span>
-> - <span data-ttu-id="0d0cf-112">api-us.security.microsoft.com</span><span class="sxs-lookup"><span data-stu-id="0d0cf-112">api-us.security.microsoft.com</span></span>
-> - <span data-ttu-id="0d0cf-113">api-eu.security.microsoft.com</span><span class="sxs-lookup"><span data-stu-id="0d0cf-113">api-eu.security.microsoft.com</span></span>
-> - <span data-ttu-id="0d0cf-114">api-uk.security.microsoft.com</span><span class="sxs-lookup"><span data-stu-id="0d0cf-114">api-uk.security.microsoft.com</span></span>
+<span data-ttu-id="a56b6-117">两个主要 API 的基 URI 为： https://api.security.microsoft.com 。</span><span class="sxs-lookup"><span data-stu-id="a56b6-117">The base URI for both of the main APIs is: https://api.security.microsoft.com.</span></span> <span data-ttu-id="a56b6-118">为了提高性能，请使用距离地理位置更近的服务器：</span><span class="sxs-lookup"><span data-stu-id="a56b6-118">For better performance, use a server closer to your geolocation:</span></span>
 
- - <span data-ttu-id="0d0cf-115">令牌获取的资源应为： https://api.security.microsoft.com</span><span class="sxs-lookup"><span data-stu-id="0d0cf-115">The resource for token acquisition should be: https://api.security.microsoft.com</span></span>
+- <span data-ttu-id="a56b6-119">美国：api-us.security.microsoft.com</span><span class="sxs-lookup"><span data-stu-id="a56b6-119">The United States: api-us.security.microsoft.com</span></span>
+- <span data-ttu-id="a56b6-120">欧洲：api-eu.security.microsoft.com</span><span class="sxs-lookup"><span data-stu-id="a56b6-120">Europe: api-eu.security.microsoft.com</span></span>
+- <span data-ttu-id="a56b6-121">英国：api-uk.security.microsoft.com</span><span class="sxs-lookup"><span data-stu-id="a56b6-121">The United Kingdom: api-uk.security.microsoft.com</span></span>
 
- - <span data-ttu-id="0d0cf-116">Path 下的所有 Api ```/api``` 都是 OData api。</span><span class="sxs-lookup"><span data-stu-id="0d0cf-116">All the APIs under ```/api``` path are OData APIs.</span></span> <span data-ttu-id="0d0cf-117">举例. ```https://api.security.microsoft.com/api/incidents```</span><span class="sxs-lookup"><span data-stu-id="0d0cf-117">e.g. ```https://api.security.microsoft.com/api/incidents```</span></span>
+<span data-ttu-id="a56b6-122">可以通过访问获取令牌 https://api.security.microsoft.com 。</span><span class="sxs-lookup"><span data-stu-id="a56b6-122">Tokens can be acquired by accessing https://api.security.microsoft.com.</span></span>
 
-## <a name="list-of-available-apis"></a><span data-ttu-id="0d0cf-118">可用 Api 的列表：</span><span class="sxs-lookup"><span data-stu-id="0d0cf-118">List of available APIs:</span></span>
+<span data-ttu-id="a56b6-123">路径上的所有 API `/api` 都使用[OData](https://docs.microsoft.com/odata/overview)协议;例如， https://api.security.microsoft.com/api/incidents</span><span class="sxs-lookup"><span data-stu-id="a56b6-123">All APIs along the `/api` path use the [OData](https://docs.microsoft.com/odata/overview) Protocol; for example, https://api.security.microsoft.com/api/incidents.</span></span>
 
-<span data-ttu-id="0d0cf-119">主题</span><span class="sxs-lookup"><span data-stu-id="0d0cf-119">Topic</span></span> | <span data-ttu-id="0d0cf-120">说明</span><span class="sxs-lookup"><span data-stu-id="0d0cf-120">Description</span></span>
-:---|:---
-[<span data-ttu-id="0d0cf-121">高级搜寻 API</span><span class="sxs-lookup"><span data-stu-id="0d0cf-121">Advanced Hunting API</span></span>](api-advanced-hunting.md) | <span data-ttu-id="0d0cf-122">从 API 运行高级搜寻查询。</span><span class="sxs-lookup"><span data-stu-id="0d0cf-122">Run Advanced Hunting queries from API.</span></span>
-[<span data-ttu-id="0d0cf-123">事件 API</span><span class="sxs-lookup"><span data-stu-id="0d0cf-123">Incident APIs</span></span>](api-incident.md) | <span data-ttu-id="0d0cf-124">运行与事件相关的 API 调用，例如：列出事件、更新事件等。</span><span class="sxs-lookup"><span data-stu-id="0d0cf-124">Run incident related API calls such as: list incidents, update incident and more.</span></span>
+## <a name="related-articles"></a><span data-ttu-id="a56b6-124">相关文章</span><span class="sxs-lookup"><span data-stu-id="a56b6-124">Related articles</span></span>
+
+- [<span data-ttu-id="a56b6-125">Microsoft 365 Defender API 概述</span><span class="sxs-lookup"><span data-stu-id="a56b6-125">Microsoft 365 Defender APIs overview</span></span>](api-overview.md)
+- [<span data-ttu-id="a56b6-126">访问 Microsoft 威胁防护 API</span><span class="sxs-lookup"><span data-stu-id="a56b6-126">Access the Microsoft Threat Protection APIs</span></span>](api-access.md)
+- [<span data-ttu-id="a56b6-127">了解 API 限制和许可</span><span class="sxs-lookup"><span data-stu-id="a56b6-127">Learn about API limits and licensing</span></span>](api-terms.md)
+- [<span data-ttu-id="a56b6-128">了解错误代码</span><span class="sxs-lookup"><span data-stu-id="a56b6-128">Understand error codes</span></span>](api-error-codes.md)

@@ -1,7 +1,7 @@
 ---
-title: Microsoft 365 Defender REST API 的 Hello World 版
-description: 了解如何创建应用程序并使用令牌访问 Microsoft 365 Defender Api
-keywords: 应用程序、令牌、访问、aad、应用程序、应用程序注册、powershell、脚本、全局管理员、权限
+title: Microsoft 365 Defender REST API 的 Hello World
+description: 了解如何创建应用并使用令牌访问 Microsoft 365 Defender API
+keywords: 应用， 令牌， 访问， aad， 应用， 应用程序注册， powershell， 脚本， 全局管理员， 权限， microsoft 365 defender
 search.product: eADQiWindows 10XVcnh
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
@@ -19,175 +19,162 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: bd4f7e5485d67cf74477900ae2cc5c77f1a6ee41
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: b36a6acca5880a455a66b03b5355cdf1fb85b29b
+ms.sourcegitcommit: d6b1da2e12d55f69e4353289e90f5ae2f60066d0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48844040"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "49719306"
 ---
-# <a name="hello-world-for-microsoft-365-defender-rest-api"></a><span data-ttu-id="499b2-104">Microsoft 365 Defender REST API 的 Hello World 版</span><span class="sxs-lookup"><span data-stu-id="499b2-104">Hello World for Microsoft 365 Defender REST API</span></span> 
+# <a name="hello-world-for-microsoft-365-defender-rest-api"></a><span data-ttu-id="8daa6-104">Microsoft 365 Defender REST API 的 Hello World</span><span class="sxs-lookup"><span data-stu-id="8daa6-104">Hello World for Microsoft 365 Defender REST API</span></span>
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
+<span data-ttu-id="8daa6-105">**适用于：**</span><span class="sxs-lookup"><span data-stu-id="8daa6-105">**Applies to:**</span></span>
 
-<span data-ttu-id="499b2-105">**适用于：**</span><span class="sxs-lookup"><span data-stu-id="499b2-105">**Applies to:**</span></span>
-- <span data-ttu-id="499b2-106">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="499b2-106">Microsoft 365 Defender</span></span>
+- <span data-ttu-id="8daa6-106">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="8daa6-106">Microsoft 365 Defender</span></span>
 
->[!IMPORTANT] 
-><span data-ttu-id="499b2-107">一些信息与 prereleased 产品相关，在正式发布之前可能会对其进行重大修改。</span><span class="sxs-lookup"><span data-stu-id="499b2-107">Some information relates to prereleased product which may be substantially modified before it's commercially released.</span></span> <span data-ttu-id="499b2-108">Microsoft makes no warranties, express or implied, with respect to the information provided here.</span><span class="sxs-lookup"><span data-stu-id="499b2-108">Microsoft makes no warranties, express or implied, with respect to the information provided here.</span></span>
+> [!IMPORTANT]
+> <span data-ttu-id="8daa6-107">某些信息与预发布产品相关，该产品在商业发行之前可能会进行重大修改。</span><span class="sxs-lookup"><span data-stu-id="8daa6-107">Some information relates to prereleased product which may be substantially modified before it's commercially released.</span></span> <span data-ttu-id="8daa6-108">Microsoft makes no warranties, express or implied, with respect to the information provided here.</span><span class="sxs-lookup"><span data-stu-id="8daa6-108">Microsoft makes no warranties, express or implied, with respect to the information provided here.</span></span>
 
+## <a name="get-incidents-using-a-simple-powershell-script"></a><span data-ttu-id="8daa6-109">使用简单的 PowerShell 脚本获取事件</span><span class="sxs-lookup"><span data-stu-id="8daa6-109">Get incidents using a simple PowerShell script</span></span>
 
-## <a name="get-incidents-using-a-simple-powershell-script"></a><span data-ttu-id="499b2-109">使用简单 PowerShell 脚本获取事件</span><span class="sxs-lookup"><span data-stu-id="499b2-109">Get incidents using a simple PowerShell script</span></span>
+<span data-ttu-id="8daa6-110">完成此项目需要 5 到 10 分钟。</span><span class="sxs-lookup"><span data-stu-id="8daa6-110">It should take 5 to 10 minutes to complete this project.</span></span> <span data-ttu-id="8daa6-111">此时间估计包括注册应用程序，以及应用 PowerShell 示例脚本中的代码。</span><span class="sxs-lookup"><span data-stu-id="8daa6-111">This time estimate includes registering the application, and applying the code from the PowerShell sample script.</span></span>
 
-### <a name="how-long-it-takes-to-go-through-this-example"></a><span data-ttu-id="499b2-110">此示例需要多长时间？</span><span class="sxs-lookup"><span data-stu-id="499b2-110">How long it takes to go through this example?</span></span>
-<span data-ttu-id="499b2-111">只需完成以下两个步骤，即可完成5分钟：</span><span class="sxs-lookup"><span data-stu-id="499b2-111">It only takes 5 minutes done in two steps:</span></span>
-- <span data-ttu-id="499b2-112">应用程序注册</span><span class="sxs-lookup"><span data-stu-id="499b2-112">Application registration</span></span>
-- <span data-ttu-id="499b2-113">使用示例：仅需要复制/粘贴短 PowerShell 脚本</span><span class="sxs-lookup"><span data-stu-id="499b2-113">Use examples: only requires copy/paste of a short PowerShell script</span></span>
+### <a name="register-an-app-in-azure-active-directory"></a><span data-ttu-id="8daa6-112">在 Azure Active Directory 中注册应用</span><span class="sxs-lookup"><span data-stu-id="8daa6-112">Register an app in Azure Active Directory</span></span>
 
-### <a name="do-i-need-a-permission-to-connect"></a><span data-ttu-id="499b2-114">我是否需要权限才能连接？</span><span class="sxs-lookup"><span data-stu-id="499b2-114">Do I need a permission to connect?</span></span>
-<span data-ttu-id="499b2-115">对于 "应用程序注册" 阶段，您必须在 Azure Active Directory 中具有 **全局管理员** 角色 (azure AD) 租户。</span><span class="sxs-lookup"><span data-stu-id="499b2-115">For the Application registration stage, you must have a **Global administrator** role in your Azure Active Directory (Azure AD) tenant.</span></span>
+1. <span data-ttu-id="8daa6-113">以具有 [全局管理员](https://portal.azure.com)角色的用户登录 **Azure。**</span><span class="sxs-lookup"><span data-stu-id="8daa6-113">Sign in to [Azure](https://portal.azure.com) as a user with the **Global administrator** role.</span></span>
 
-### <a name="step-1---create-an-app-in-azure-active-directory"></a><span data-ttu-id="499b2-116">步骤 1-在 Azure Active Directory 中创建应用</span><span class="sxs-lookup"><span data-stu-id="499b2-116">Step 1 - Create an App in Azure Active Directory</span></span>
+2. <span data-ttu-id="8daa6-114">导航到 **Azure Active Directory**  >  **应用注册**  >  **新注册**。</span><span class="sxs-lookup"><span data-stu-id="8daa6-114">Navigate to **Azure Active Directory** > **App registrations** > **New registration**.</span></span>
 
-1. <span data-ttu-id="499b2-117">使用 **全局管理员** 用户登录到 [Azure](https://portal.azure.com) 。</span><span class="sxs-lookup"><span data-stu-id="499b2-117">Log on to [Azure](https://portal.azure.com) with your **Global administrator** user.</span></span>
+   ![Microsoft Azure 的图像和应用程序注册导航](../../media/atp-azure-new-app2.png)
 
-2. <span data-ttu-id="499b2-118">导航到 **Azure Active Directory**  >  **应用注册**  >  **新注册** 。</span><span class="sxs-lookup"><span data-stu-id="499b2-118">Navigate to **Azure Active Directory** > **App registrations** > **New registration**.</span></span> 
+3. <span data-ttu-id="8daa6-116">在注册表单中，选择应用程序的名称，然后选择"注册 **"。**</span><span class="sxs-lookup"><span data-stu-id="8daa6-116">In the registration form, choose a name for your application, then select **Register**.</span></span> <span data-ttu-id="8daa6-117">选择重定向 URI 是可选的。</span><span class="sxs-lookup"><span data-stu-id="8daa6-117">Selecting a redirect URI is optional.</span></span> <span data-ttu-id="8daa6-118">完成此示例不需要一个。</span><span class="sxs-lookup"><span data-stu-id="8daa6-118">You won't need one to complete this example.</span></span>
 
-   ![Microsoft Azure 的图像和到应用程序注册的导航](../../media/atp-azure-new-app2.png)
+4. <span data-ttu-id="8daa6-119">在应用程序页面上，选择 **"API** 权限添加我的组织使用> API，键入 Microsoft 威胁防护，然后选择  >    >  Microsoft **威胁防护**。 </span><span class="sxs-lookup"><span data-stu-id="8daa6-119">On your application page, select **API Permissions** > **Add permission** > **APIs my organization uses** >, type **Microsoft Threat Protection**, and select **Microsoft Threat Protection**.</span></span> <span data-ttu-id="8daa6-120">你的应用现在可以访问 Microsoft 365 Defender。</span><span class="sxs-lookup"><span data-stu-id="8daa6-120">Your app can now access Microsoft 365 Defender.</span></span>
 
-3. <span data-ttu-id="499b2-120">在 "注册" 表单中，选择应用程序的名称，然后选择 " **注册** "。</span><span class="sxs-lookup"><span data-stu-id="499b2-120">In the registration form, choose a name for your application and then select **Register**.</span></span>
+   > [!TIP]
+   > <span data-ttu-id="8daa6-121">*Microsoft 威胁防护* 是 Microsoft 365 Defender 的以前名称，不会显示在原始列表中。</span><span class="sxs-lookup"><span data-stu-id="8daa6-121">*Microsoft Threat Protection* is a former name for Microsoft 365 Defender, and will not appear in the original list.</span></span> <span data-ttu-id="8daa6-122">你需要开始在文本框中写入其名称，以查看其显示。</span><span class="sxs-lookup"><span data-stu-id="8daa6-122">You need to start writing its name in the text box to see it appear.</span></span>
+   <span data-ttu-id="8daa6-123">![API 权限选择的图像](../../media/apis-in-my-org-tab.PNG)</span><span class="sxs-lookup"><span data-stu-id="8daa6-123">![Image of API permission selection](../../media/apis-in-my-org-tab.PNG)</span></span>
 
-4. <span data-ttu-id="499b2-121">允许应用程序访问 Microsoft Defender for Endpoint 并将其分配为 " **读取所有事件** " 权限：</span><span class="sxs-lookup"><span data-stu-id="499b2-121">Allow your Application to access Microsoft Defender for Endpoint and assign it **Read all incidents** permission:</span></span>
-
-   - <span data-ttu-id="499b2-122">在应用程序页上，选择 " **API 权限**  >  **Add permission**  >  **" "添加我的组织使用的权限 api"** > 键入 **microsoft 365 defender** 并在 **microsoft 365 defender** 上选择。</span><span class="sxs-lookup"><span data-stu-id="499b2-122">On your application page, select **API Permissions** > **Add permission** > **APIs my organization uses** > type **Microsoft 365 Defender** and select on **Microsoft 365 Defender**.</span></span>
-
-   >[!NOTE]
-   ><span data-ttu-id="499b2-123">Microsoft 365 Defender 不会显示在原始列表中。</span><span class="sxs-lookup"><span data-stu-id="499b2-123">Microsoft 365 Defender does not appear in the original list.</span></span> <span data-ttu-id="499b2-124">您需要先在文本框中写入其名称，才能看到它的显示。</span><span class="sxs-lookup"><span data-stu-id="499b2-124">You need to start writing its name in the text box to see it appear.</span></span>
-
-   ![API 访问和 API 选择的图像](../../media/apis-in-my-org-tab.PNG)
-
-   - <span data-ttu-id="499b2-126">选择 " **应用程序权限**  >  **事件"。读取。所有** > 选择 " **添加权限** "</span><span class="sxs-lookup"><span data-stu-id="499b2-126">Choose **Application permissions** > **Incident.Read.All** > Select on **Add permissions**</span></span>
+   - <span data-ttu-id="8daa6-124">选择 **"应用程序权限**  >  **Incident.Read.All"，** 然后选择 **"添加权限"。**</span><span class="sxs-lookup"><span data-stu-id="8daa6-124">Choose **Application permissions** > **Incident.Read.All** and select **Add permissions**.</span></span>
 
    ![API 访问和 API 选择的图像](../../media/request-api-permissions.PNG)
 
-   >[!IMPORTANT]
-   ><span data-ttu-id="499b2-128">您需要选择相关权限。</span><span class="sxs-lookup"><span data-stu-id="499b2-128">You need to select the relevant permissions.</span></span> 
-
-     <span data-ttu-id="499b2-129">例如，</span><span class="sxs-lookup"><span data-stu-id="499b2-129">For instance,</span></span>
-
-     - <span data-ttu-id="499b2-130">若要确定所需的权限，请查看您想要调用的 API 中的 " **权限** " 部分。</span><span class="sxs-lookup"><span data-stu-id="499b2-130">To determine which permission you need, please look at the **Permissions** section in the API you are interested to call.</span></span>
-
-5. <span data-ttu-id="499b2-131">选择 " **授予管理员同意** "</span><span class="sxs-lookup"><span data-stu-id="499b2-131">Select **Grant admin consent**</span></span>
-
-    - >[!NOTE]
-      > <span data-ttu-id="499b2-132">每次添加权限时，您都必须选择 " **授予许可** " 以使新权限生效。</span><span class="sxs-lookup"><span data-stu-id="499b2-132">Every time you add permission you must select on **Grant consent** for the new permission to take effect.</span></span>
+5. <span data-ttu-id="8daa6-126">选择 **"授予管理员同意"。**</span><span class="sxs-lookup"><span data-stu-id="8daa6-126">Select **Grant admin consent**.</span></span> <span data-ttu-id="8daa6-127">每次添加权限时，都必须选择"授予 **管理员同意** "，它才能生效。</span><span class="sxs-lookup"><span data-stu-id="8daa6-127">Every time you add a permission, you must select **Grant admin consent** for it to take effect.</span></span>
 
     ![授予权限的图像](../../media/grant-consent.PNG)
 
-6. <span data-ttu-id="499b2-134">向应用程序添加密码。</span><span class="sxs-lookup"><span data-stu-id="499b2-134">Add a secret to the application.</span></span>
+6. <span data-ttu-id="8daa6-129">向应用程序添加密码。</span><span class="sxs-lookup"><span data-stu-id="8daa6-129">Add a secret to the application.</span></span> <span data-ttu-id="8daa6-130">选择 **证书&** 密码，向密码添加说明，然后选择"**添加"。**</span><span class="sxs-lookup"><span data-stu-id="8daa6-130">Select **Certificates & secrets**, add a description to the secret, then select **Add**.</span></span>
 
-    - <span data-ttu-id="499b2-135">选择 " **证书" & 密码** ，将 "说明" 添加到密码，然后选择 " **添加** "。</span><span class="sxs-lookup"><span data-stu-id="499b2-135">Select **Certificates & secrets** , add description to the secret and select **Add**.</span></span>
+    > [!TIP]
+    > <span data-ttu-id="8daa6-131">选择"添加 **"** 后， **选择复制生成的密码值**。</span><span class="sxs-lookup"><span data-stu-id="8daa6-131">After you select **Add**, select **copy the generated secret value**.</span></span> <span data-ttu-id="8daa6-132">离开后将无法检索密码值。</span><span class="sxs-lookup"><span data-stu-id="8daa6-132">You won't be able to retrieve the secret value after you leave.</span></span>
 
-    >[!IMPORTANT]
-    > <span data-ttu-id="499b2-136">选择 " **添加** " 后， **复制生成的机密值** 。</span><span class="sxs-lookup"><span data-stu-id="499b2-136">After selecting **Add** , **copy the generated secret value**.</span></span> <span data-ttu-id="499b2-137">你不能在离开后检索！</span><span class="sxs-lookup"><span data-stu-id="499b2-137">You won't be able to retrieve after you leave!</span></span>
+    ![创建应用密钥的图像](../../media/webapp-create-key2.png)
 
-    ![创建应用程序密钥的图像](../../media/webapp-create-key2.png)
+7. <span data-ttu-id="8daa6-134">将应用程序 ID 和租户 ID 记录在安全位置。</span><span class="sxs-lookup"><span data-stu-id="8daa6-134">Record your application ID and your tenant ID somewhere safe.</span></span> <span data-ttu-id="8daa6-135">它们列在应用程序 **页上的"** 概述"下。</span><span class="sxs-lookup"><span data-stu-id="8daa6-135">They're listed under **Overview** on your application page.</span></span>
 
-7. <span data-ttu-id="499b2-139">记下应用程序 ID 和租户 ID：</span><span class="sxs-lookup"><span data-stu-id="499b2-139">Write down your application ID and your tenant ID:</span></span>
+   ![已创建应用 ID 的图像](../../media/app-and-tenant-ids.png)
 
-   - <span data-ttu-id="499b2-140">在应用程序页上，转到 " **概述** " 并复制以下内容：</span><span class="sxs-lookup"><span data-stu-id="499b2-140">On your application page, go to **Overview** and copy the following:</span></span>
+### <a name="get-a-token-using-the-app-and-use-the-token-to-access-the-api"></a><span data-ttu-id="8daa6-137">使用应用获取令牌并使用令牌访问 API</span><span class="sxs-lookup"><span data-stu-id="8daa6-137">Get a token using the app and use the token to access the API</span></span>
 
-   ![已创建应用程序 id 的图像](../../media/app-and-tenant-ids.png)
+<span data-ttu-id="8daa6-138">有关 Azure Active Directory 令牌详细信息，请参阅 [Azure AD 教程](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds)。</span><span class="sxs-lookup"><span data-stu-id="8daa6-138">For more information on Azure Active Directory tokens, see the [Azure AD tutorial](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds).</span></span>
 
+> [!IMPORTANT]
+> <span data-ttu-id="8daa6-139">尽管此演示应用中的示例鼓励你粘贴密码值以进行测试，但绝不应硬编码密码到生产中运行的应用程序。</span><span class="sxs-lookup"><span data-stu-id="8daa6-139">Although the example in this demo app encourage you to paste in your secret value for testing purposes, you should **never hardcode secrets** into an application running in production.</span></span> <span data-ttu-id="8daa6-140">第三方可以使用你的密码访问资源。</span><span class="sxs-lookup"><span data-stu-id="8daa6-140">A third party could use your secret to access resources.</span></span> <span data-ttu-id="8daa6-141">通过使用 Azure 密钥保管库，可帮助保护 [应用密钥的安全](https://docs.microsoft.com/azure/key-vault/general/about-keys-secrets-certificates)。</span><span class="sxs-lookup"><span data-stu-id="8daa6-141">You can help keep your app's secrets secure by using [Azure Key Vault](https://docs.microsoft.com/azure/key-vault/general/about-keys-secrets-certificates).</span></span> <span data-ttu-id="8daa6-142">有关如何保护应用的实际示例，请参阅使用 Azure Key Vault 管理服务器 [应用中的密钥](https://docs.microsoft.com/learn/modules/manage-secrets-with-azure-key-vault/)。</span><span class="sxs-lookup"><span data-stu-id="8daa6-142">For a practical example of how you can protect your app, see [Manage secrets in your server apps with Azure Key Vault](https://docs.microsoft.com/learn/modules/manage-secrets-with-azure-key-vault/).</span></span>
 
-<span data-ttu-id="499b2-142">为了!</span><span class="sxs-lookup"><span data-stu-id="499b2-142">Done!</span></span> <span data-ttu-id="499b2-143">已成功注册应用程序。</span><span class="sxs-lookup"><span data-stu-id="499b2-143">You have successfully registered an application.</span></span>
+1. <span data-ttu-id="8daa6-143">复制下面的脚本并将其粘贴到你最喜爱的文本编辑器中。</span><span class="sxs-lookup"><span data-stu-id="8daa6-143">Copy the script below and paste it into your favorite text editor.</span></span> <span data-ttu-id="8daa6-144">另存为 **Get-Token.ps1**。</span><span class="sxs-lookup"><span data-stu-id="8daa6-144">Save as **Get-Token.ps1**.</span></span> <span data-ttu-id="8daa6-145">还可以在 PowerShell ISE 中像现在一样运行代码，但应保存它，因为我们需要在下一节中使用事件提取脚本时再次运行它。</span><span class="sxs-lookup"><span data-stu-id="8daa6-145">You can also run the code as-is in PowerShell ISE, but you should save it, because we'll need to run it again when we use the incident-fetching script in the next section.</span></span>
 
-### <a name="step-2---get-a-token-using-the-app-and-use-this-token-to-access-the-api"></a><span data-ttu-id="499b2-144">步骤 2-使用应用程序获取令牌，并使用此令牌访问 API。</span><span class="sxs-lookup"><span data-stu-id="499b2-144">Step 2 - Get a token using the App and use this token to access the API.</span></span>
+    <span data-ttu-id="8daa6-146">此脚本将生成令牌并将其保存在工作文件夹中的名称下 *，Latest-token.txt。*</span><span class="sxs-lookup"><span data-stu-id="8daa6-146">This script will generate a token and save it in the working folder under the name, *Latest-token.txt*.</span></span>
 
--   <span data-ttu-id="499b2-145">将下面的脚本复制到 PowerShell ISE 或文本编辑器，并将其另存为 " **Get-Token.ps1** "</span><span class="sxs-lookup"><span data-stu-id="499b2-145">Copy the script below to PowerShell ISE or to a text editor, and save it as " **Get-Token.ps1** "</span></span>
--   <span data-ttu-id="499b2-146">运行此脚本将生成一个令牌，并将其保存到名称为 " **Latest-token.txt** " 下的工作文件夹中。</span><span class="sxs-lookup"><span data-stu-id="499b2-146">Running this script will generate a token and will save it in the working folder under the name " **Latest-token.txt** ".</span></span>
+    ```PowerShell
+    # This script gets the app context token and saves it to a file named "Latest-token.txt" under the current directory.
+    # Paste in your tenant ID, client ID and app secret (App key).
 
-```
-# That code gets the App Context Token and save it to a file named "Latest-token.txt" under the current directory
-# Paste below your Tenant ID, App ID and App Secret (App key).
+    $tenantId = '' # Paste your directory (tenant) ID here
+    $clientId = '' # Paste your application (client) ID here
+    $appSecret = '' # # Paste your own app secret here to test, then store it in a safe place!
 
-$tenantId = '' ### Paste your tenant ID here
-$appId = '' ### Paste your Application ID here
-$appSecret = '' ### Paste your Application secret here
+    $resourceAppIdUri = 'https://api.security.microsoft.com'
+    $oAuthUri = "https://login.windows.net/$tenantId/oauth2/token"
+    $authBody = [Ordered] @{
+      resource = $resourceAppIdUri
+      client_id = $clientId
+      client_secret = $appSecret
+      grant_type = 'client_credentials'
+    }
+    $authResponse = Invoke-RestMethod -Method Post -Uri $oAuthUri -Body $authBody -ErrorAction Stop
+    $token = $authResponse.access_token
+    Out-File -FilePath "./Latest-token.txt" -InputObject $token
+    return $token
+    ```
 
-$resourceAppIdUri = 'https://api.security.microsoft.com'
-$oAuthUri = "https://login.windows.net/$TenantId/oauth2/token"
-$authBody = [Ordered] @{
-    resource = "$resourceAppIdUri"
-    client_id = "$appId"
-    client_secret = "$appSecret"
-    grant_type = 'client_credentials'
-}
-$authResponse = Invoke-RestMethod -Method Post -Uri $oAuthUri -Body $authBody -ErrorAction Stop
-$token = $authResponse.access_token
-Out-File -FilePath "./Latest-token.txt" -InputObject $token
-return $token
-```
+#### <a name="validate-the-token"></a><span data-ttu-id="8daa6-147">验证令牌</span><span class="sxs-lookup"><span data-stu-id="8daa6-147">Validate the token</span></span>
 
--   <span data-ttu-id="499b2-147">健全性检查：</span><span class="sxs-lookup"><span data-stu-id="499b2-147">Sanity Check:</span></span><br>
-<span data-ttu-id="499b2-148">运行脚本。</span><span class="sxs-lookup"><span data-stu-id="499b2-148">Run the script.</span></span><br>
-<span data-ttu-id="499b2-149">在浏览器中，转到： https://jwt.ms/</span><span class="sxs-lookup"><span data-stu-id="499b2-149">In your browser go to: https://jwt.ms/</span></span> <br>
-<span data-ttu-id="499b2-150">将令牌复制 (Latest-token.txt 文件的内容) 。</span><span class="sxs-lookup"><span data-stu-id="499b2-150">Copy the token (the content of the Latest-token.txt file).</span></span><br>
-<span data-ttu-id="499b2-151">粘贴在顶部的框中。</span><span class="sxs-lookup"><span data-stu-id="499b2-151">Paste in the top box.</span></span><br>
-<span data-ttu-id="499b2-152">查找 "角色" 部分。</span><span class="sxs-lookup"><span data-stu-id="499b2-152">Look for the "roles" section.</span></span> <span data-ttu-id="499b2-153">查找 ```Incidents.Read.All``` 角色。</span><span class="sxs-lookup"><span data-stu-id="499b2-153">Find the ```Incidents.Read.All``` role.</span></span><br>
-<span data-ttu-id="499b2-154">下面的示例来自具有和权限的应用 ```Incidents.Read.All``` 程序 ```Incidents.ReadWrite.All``` ```AdvancedHunting.Read.All``` 。</span><span class="sxs-lookup"><span data-stu-id="499b2-154">The below example is from an app that has ```Incidents.Read.All```, ```Incidents.ReadWrite.All``` and ```AdvancedHunting.Read.All``` permissions.</span></span>
+1. <span data-ttu-id="8daa6-148">将收到的令牌复制并粘贴到 [JWT](https://jwt.ms) 中以解码它。</span><span class="sxs-lookup"><span data-stu-id="8daa6-148">Copy and paste the token you received into [JWT](https://jwt.ms) to decode it.</span></span>
+1. <span data-ttu-id="8daa6-149">*JWT* 代表 *JSON Web 令牌*。</span><span class="sxs-lookup"><span data-stu-id="8daa6-149">*JWT* stands for *JSON Web Token*.</span></span> <span data-ttu-id="8daa6-150">解码的令牌将包含许多 JSON 格式的项目或声明。</span><span class="sxs-lookup"><span data-stu-id="8daa6-150">The decoded token will contain a number of JSON-formatted items or claims.</span></span> <span data-ttu-id="8daa6-151">确保解码 *令牌中* 的角色声明包含所需的权限。</span><span class="sxs-lookup"><span data-stu-id="8daa6-151">Make sure that the *roles* claim within the decoded token contains the desired permissions.</span></span>
 
-![图像 jwt.ms](../../media/api-jwt-ms.png)
+    <span data-ttu-id="8daa6-152">在下图中，你可以看到从应用获取的解码令牌，具有 ```Incidents.Read.All``` ```Incidents.ReadWrite.All``` 、 和 ```AdvancedHunting.Read.All``` 权限：</span><span class="sxs-lookup"><span data-stu-id="8daa6-152">In the following image, you can see a decoded token acquired from an app, with ```Incidents.Read.All```, ```Incidents.ReadWrite.All```, and ```AdvancedHunting.Read.All``` permissions:</span></span>
 
-### <a name="lets-get-the-incidents"></a><span data-ttu-id="499b2-156">允许你获取事件！</span><span class="sxs-lookup"><span data-stu-id="499b2-156">Lets get the Incidents!</span></span>
+    ![图像jwt.ms](../../media/api-jwt-ms.png)
 
--   <span data-ttu-id="499b2-157">下面的脚本将使用 **Get-Token.ps1** 访问 API，并将在过去的48小时内获得最后更新的事件。</span><span class="sxs-lookup"><span data-stu-id="499b2-157">The script below will use **Get-Token.ps1** to access the API and will get the incidents last updated in past 48 hours.</span></span>
--   <span data-ttu-id="499b2-158">将此脚本保存在保存以前的脚本 **Get-Token.ps1** 的同一文件夹中。</span><span class="sxs-lookup"><span data-stu-id="499b2-158">Save this script in the same folder you saved the previous script **Get-Token.ps1**.</span></span> 
--   <span data-ttu-id="499b2-159">脚本中包含数据的 json 文件与脚本位于同一文件夹中。</span><span class="sxs-lookup"><span data-stu-id="499b2-159">The script a json file with the data in the same folder as the scripts.</span></span>
+### <a name="get-a-list-of-recent-incidents"></a><span data-ttu-id="8daa6-154">获取最近事件的列表</span><span class="sxs-lookup"><span data-stu-id="8daa6-154">Get a list of recent incidents</span></span>
 
-```
-# Returns Incidents last updated in the past 48 hours.
+<span data-ttu-id="8daa6-155">下面的 **脚本将使用Get-Token.ps1** API。</span><span class="sxs-lookup"><span data-stu-id="8daa6-155">The script below will use **Get-Token.ps1** to access the API.</span></span> <span data-ttu-id="8daa6-156">然后，它将检索过去 48 小时内最后更新的事件列表，然后将该列表另存为 JSON 文件。</span><span class="sxs-lookup"><span data-stu-id="8daa6-156">It then retrieves a list of incidents that were last updated within the past 48 hours, and saves the list as a JSON file.</span></span>
 
-$token = ./Get-Token.ps1       #run the script Get-Token.ps1  - make sure you are running this script from the same folder of Get-Token.ps1
+> [!IMPORTANT]
+> <span data-ttu-id="8daa6-157">将此脚本保存在保存该脚本的同 **一Get-Token.ps1。**</span><span class="sxs-lookup"><span data-stu-id="8daa6-157">Save this script in the same folder you saved **Get-Token.ps1**.</span></span>
 
-# Get Incidents from the last 48 hours. Make sure you have incidents in that time frame.
+```PowerShell
+# This script returns incidents last updated within the past 48 hours.
+
+$token = ./Get-Token.ps1
+
+# Get incidents from the past 48 hours.
+# The script may appear to fail if you don't have any incidents in that time frame.
 $dateTime = (Get-Date).ToUniversalTime().AddHours(-48).ToString("o")
 
-# The URL contains the type of query and the time filter we created above
+# This URL contains the type of query and the time filter we created above.
+# Note that `$filter` does not refer to a local variable in our script --
+# it's actually an OData operator and part of the API's syntax.
 $url = "https://api.security.microsoft.com/api/incidents?$filter=lastUpdateTime+ge+$dateTime"
 
-# Set the WebRequest headers
-$headers = @{ 
+# Set the webrequest headers
+$headers = @{
     'Content-Type' = 'application/json'
     'Accept' = 'application/json'
     'Authorization' = "Bearer $token"
 }
 
-# Send the webrequest and get the results. 
+# Send the request and get the results.
 $response = Invoke-WebRequest -Method Get -Uri $url -Headers $headers -ErrorAction Stop
 
-# Extract the incidents from the results. 
+# Extract the incidents from the results.
 $incidents =  ($response | ConvertFrom-Json).value | ConvertTo-Json -Depth 99
 
-# Get string with the execution time. We concatenate that string to the output file to avoid overwrite the file
-$dateTimeForFileName = Get-Date -Format o | foreach {$_ -replace ":", "."}    
+# Get a string containing the execution time. We concatenate that string to the name 
+# of the output file to avoid overwriting the file on consecutive runs of the script.
+$dateTimeForFileName = Get-Date -Format o | foreach {$_ -replace ":", "."}
 
 # Save the result as json
-$outputJsonPath = "./Latest Incidents $dateTimeForFileName.json"     
+$outputJsonPath = "./Latest Incidents $dateTimeForFileName.json"
 
-Out-File -FilePath $outputJsonPath -InputObject $incidents 
+Out-File -FilePath $outputJsonPath -InputObject $incidents
 ```
 
-<span data-ttu-id="499b2-160">你已经完成了！</span><span class="sxs-lookup"><span data-stu-id="499b2-160">You're all done!</span></span> <span data-ttu-id="499b2-161">您已成功：</span><span class="sxs-lookup"><span data-stu-id="499b2-161">You have just successfully:</span></span>
--   <span data-ttu-id="499b2-162">创建并注册和应用</span><span class="sxs-lookup"><span data-stu-id="499b2-162">Created and registered and application</span></span>
--   <span data-ttu-id="499b2-163">授予该应用程序阅读通知的权限</span><span class="sxs-lookup"><span data-stu-id="499b2-163">Granted permission for that application to read alerts</span></span>
--   <span data-ttu-id="499b2-164">已连接 API</span><span class="sxs-lookup"><span data-stu-id="499b2-164">Connected the API</span></span>
--   <span data-ttu-id="499b2-165">使用 PowerShell 脚本返回在过去48小时内创建的事件</span><span class="sxs-lookup"><span data-stu-id="499b2-165">Used a PowerShell script to return incidents created in the past 48 hours</span></span>
+<span data-ttu-id="8daa6-158">全部完成！</span><span class="sxs-lookup"><span data-stu-id="8daa6-158">You're all done!</span></span> <span data-ttu-id="8daa6-159">你已成功：</span><span class="sxs-lookup"><span data-stu-id="8daa6-159">You've successfully:</span></span>
 
+- <span data-ttu-id="8daa6-160">创建并注册应用程序。</span><span class="sxs-lookup"><span data-stu-id="8daa6-160">Created and registered an application.</span></span>
+- <span data-ttu-id="8daa6-161">授予该应用程序读取警报的权限。</span><span class="sxs-lookup"><span data-stu-id="8daa6-161">Granted permission for that application to read alerts.</span></span>
+- <span data-ttu-id="8daa6-162">已连接到 API。</span><span class="sxs-lookup"><span data-stu-id="8daa6-162">Connected to the API.</span></span>
+- <span data-ttu-id="8daa6-163">使用 PowerShell 脚本返回过去 48 小时内更新的事件。</span><span class="sxs-lookup"><span data-stu-id="8daa6-163">Used a PowerShell script to return incidents updated in the past 48 hours.</span></span>
 
+## <a name="related-articles"></a><span data-ttu-id="8daa6-164">相关文章</span><span class="sxs-lookup"><span data-stu-id="8daa6-164">Related articles</span></span>
 
-## <a name="related-topic"></a><span data-ttu-id="499b2-166">相关主题</span><span class="sxs-lookup"><span data-stu-id="499b2-166">Related topic</span></span>
-- [<span data-ttu-id="499b2-167">访问 Microsoft 365 Defender Api</span><span class="sxs-lookup"><span data-stu-id="499b2-167">Access the Microsoft 365 Defender APIs</span></span>](api-access.md)
-- [<span data-ttu-id="499b2-168">使用应用程序上下文访问 Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="499b2-168">Access  Microsoft 365 Defender with application context</span></span>](api-create-app-web.md)
-- [<span data-ttu-id="499b2-169">使用用户上下文访问 Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="499b2-169">Access  Microsoft 365 Defender with user context</span></span>](api-create-app-user-context.md)
+- [<span data-ttu-id="8daa6-165">Microsoft 365 Defender API 概述</span><span class="sxs-lookup"><span data-stu-id="8daa6-165">Microsoft 365 Defender APIs overview</span></span>](api-overview.md)
+- [<span data-ttu-id="8daa6-166">访问 Microsoft 365 Defender API</span><span class="sxs-lookup"><span data-stu-id="8daa6-166">Access the Microsoft 365 Defender APIs</span></span>](api-access.md)
+- [<span data-ttu-id="8daa6-167">创建应用以在没有用户的情况下访问 Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="8daa6-167">Create an app to access Microsoft 365 Defender without a user</span></span>](api-create-app-web.md)
+- [<span data-ttu-id="8daa6-168">创建应用以代表用户访问 Microsoft 365 Defender API</span><span class="sxs-lookup"><span data-stu-id="8daa6-168">Create an app to access Microsoft 365 Defender APIs on behalf of a user</span></span>](api-create-app-user-context.md)
+- [<span data-ttu-id="8daa6-169">创建具有对 Microsoft 365 Defender API 的多租户合作伙伴访问权限的应用</span><span class="sxs-lookup"><span data-stu-id="8daa6-169">Create an app with multi-tenant partner access to Microsoft 365 Defender APIs</span></span>](api-partner-access.md)
+- [<span data-ttu-id="8daa6-170">使用 Azure Key Vault 管理服务器应用中的密钥</span><span class="sxs-lookup"><span data-stu-id="8daa6-170">Manage secrets in your server apps with Azure Key Vault</span></span>](https://docs.microsoft.com/learn/modules/manage-secrets-with-azure-key-vault/)
+- [<span data-ttu-id="8daa6-171">用户登录和 API 访问的 OAuth 2.0 授权</span><span class="sxs-lookup"><span data-stu-id="8daa6-171">OAuth 2.0 Authorization for user sign in and API access</span></span>](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-code)
