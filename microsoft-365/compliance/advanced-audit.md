@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 365 高级审核提供了新的审核功能，可帮助组织进行法庭与合规调查。
-ms.openlocfilehash: bd7b4f78d37feddd7c66322460a6532a77045ba2
-ms.sourcegitcommit: 82d8be71c5861a501ac62a774b306a3fc1d4e627
+ms.openlocfilehash: b05901ad8d42f481020178479df5d422fa68eb1a
+ms.sourcegitcommit: 5cbce99cfdbba4b72267a144b2e03a6c52473464
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48988664"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "49718495"
 ---
 # <a name="advanced-audit-in-microsoft-365"></a>Microsoft 365 高级审核
 
@@ -32,7 +32,7 @@ Microsoft 365 中的[统一审核](search-the-audit-log-in-security-and-complian
 > [!NOTE]
 > 高级审核适用于具有 Office 365 E5/G5 或 Microsoft 365 企业版 E5/G5订阅的组织。 另外，当对于高级审核功能需要每用户授权时（长期保留审核日志和访问关键事件进行调查就是这种情况），可将 Microsoft 365 E5 合规或 E5 电子数据展示和审核附加产品许可证分配至用户。 有关许可的详细信息，请参阅[适用于安全与合规性的 Microsoft 365 许可指南](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#advanced-audit)。
 
-本文提供了高级审核功能的概览信息。
+本文概述了“高级审核”功能，并展示了如何为“高级审核”设置用户。
 
 ## <a name="long-term-retention-of-audit-logs"></a>长期保留审核日志
 
@@ -140,6 +140,26 @@ Send 事件也是邮箱审核操作，当用户执行以下操作之一时将被
 所有组织最初每分钟分配 2000 个请求基线。 根据组织的座位数和许可订阅，此限制将显著增加。 E5 组织获得的带宽约为非 E5 组织的两倍。 这也是最大宽带的上限，以保护服务的健康。
 
 有关更多信息，参见“[Office 365 管理活动 API](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference#api-throttling)”中的“API 限制”部分。
+
+## <a name="set-up-advanced-audit-for-users"></a>为用户设置“高级审核”
+
+“高级审核”功能，如记录重要事件（如 MailItemsAccessed 和 Send）功能，需要为用户分配适当的 E5 许可证。 此外，必须为这些用户启用“高级审核”应用程序/服务计划。 要验证“高级审核”应用程序是否已分配给用户，请对每个用户执行以下步骤：
+
+1. 在 [Microsoft 365 管理中心](https://admin.microsoft.com/Adminportal)中，转到“**用户**” > “**活动用户**”，然后选择用户。
+
+2. 在用户属性浮出页面上，单击“**许可证和应用**”。
+
+3. 在“**许可证**”部分，验证是否为用户分配了 E5 许可证。
+
+4. 展开“**应用程序**”部分，并验证是否选中了“**Microsoft 365 高级审核**”复选框。
+
+5. 如果未选中该复选框，请将其选中，然后单击“**保存更改**”。
+
+   将在 24 小时内开始记录用户的 MailItemsAccessed、Send 和其他关键事件的审核记录。
+
+对于使用基于组的许可将许可证分配给用户组的组织，必须为组禁用 Microsoft 365 高级审核的许可分配。 保存所做的更改后，请验证是否已为组禁用 Microsoft 365 高级审核。 然后，重新为组启用许可分配。 有关基于组的许可的说明，请参阅[在 Azure Active Directory 中按组成员身份向用户分配许可证](https://docs.microsoft.com/azure/active-directory/users-groups-roles/licensing-groups-assign)。
+
+此外，如果您已自定义登录到用户邮箱或共享邮箱的邮箱操作，则不会在这些邮箱上自动审核新的默认邮箱操作（如 MailItemsAccessed）。 有关更改为每个登录类型审核的邮箱操作的信息，请参阅[管理邮箱审核](enable-mailbox-auditing.md#change-or-restore-mailbox-actions-logged-by-default)中的“更改或还原默认记录的邮箱操作”部分。
 
 ## <a name="faqs-for-advanced-audit"></a>高级审核常见问题解答
 

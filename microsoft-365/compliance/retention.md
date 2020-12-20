@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解有助于保留所需内容并删除不需要内容的保留策略和保留标签。
-ms.openlocfilehash: 767e63c22d085696b53d74e3a4d6955bedec22dd
-ms.sourcegitcommit: c0495e224f12c448bfc162ef2e4b33b82f064ac8
+ms.openlocfilehash: c405f2bf8d9700c9a0874ba9d921a290ae63de16
+ms.sourcegitcommit: d6b1da2e12d55f69e4353289e90f5ae2f60066d0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49709669"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "49719342"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>了解保留策略和保留标签
 
@@ -276,7 +276,7 @@ Office 365 安全与合规中心的保留标签概述信息与 **“信息管理
 
 结果不是赢得单个保留策略或单个保留标签的结果，而是保留项目多长时间（如果适用）以及删除项目的时间（如果适用）。 这两个操作是根据应用于项目的所有保留设置彼此独立计算的。
 
-例如，一个项目可能要受一个已配置为仅删除操作的保留策略的约束，而另一个则要配置为保留然后删除的保留策略。 为了确定结果，该项目只有一个保留动作，但有两个删除动作。 保留和删除可能会相互冲突，并且两个删除操作的日期可能会发生冲突。
+例如，一个项目可能要受一个已配置为仅删除操作的保留策略的约束，而另一个则要配置为保留然后删除的保留策略。 因此，此项只有一个保留操作和两个删除操作。 保留和删除操作可能彼此冲突，并且这两个删除操作的日期可能冲突。 为了得出结果，你必须运用保留原则。
 
 概括来说，可以确定的是，保留始终优先于删除，然后是最长保留期胜出。 这两个简单的规则总是决定一个项目将保留多长时间。
 
