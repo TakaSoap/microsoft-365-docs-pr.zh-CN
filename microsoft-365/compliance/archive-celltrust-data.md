@@ -12,18 +12,18 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: 管理员可以设置连接器以将 CellTrust 数据从 Globanet 导入和存档到 Microsoft 365。 此连接器允许你在 Microsoft 365 中存档来自第三方数据源的数据。 存档此数据后，可以使用合规性功能（如法定保留、内容搜索和保留策略）管理第三方数据。
-ms.openlocfilehash: 990f52eb48fcf031bda3c9f17884ff3d384afc55
-ms.sourcegitcommit: 6fc6aaa2b7610e148f41018abd229e3c55b2f3d0
+ms.openlocfilehash: 5870e823562f86b8b984e81fd03eeebd1b01f0ff
+ms.sourcegitcommit: a3215cc22faa47e935d22300c481e47ab2680b44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49620483"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "49722909"
 ---
 # <a name="set-up-a-connector-to-archive-celltrust-data"></a>设置连接器以存档 CellTrust 数据
 
-使用 Microsoft 365 合规中心中的 Globanet 连接器将数据从 CellTrust 平台导入并存档到 Microsoft 365 组织的用户邮箱。 Globanet 提供了 [一个 CellTrust](https://globanet.com/celltrust/) 连接器，配置为定期捕获第三方数据源 (中的项目) 将这些项目导入到 Microsoft 365。 连接器将短信的内容从 CellTrust 帐户转换为电子邮件格式，然后将这些项目导入到 Microsoft 365 中的用户邮箱。
+使用 Microsoft 365 合规中心中的 Globanet 连接器将数据从 CellTrust 平台导入并存档到 Microsoft 365 组织的用户邮箱。 Globanet 提供了 [一个 CellTrust](https://globanet.com/celltrust/) 连接器，用于捕获第三方数据源中的项目，并导入到 Microsoft 365。 连接器将短信的内容从 CellTrust 帐户转换为电子邮件格式，然后将这些项目导入到 Microsoft 365 中的用户邮箱。
 
-将 CellTrust 数据存储在用户邮箱中后，可以应用 Microsoft 365 合规性功能，如诉讼保留、电子数据展示、保留策略和保留标签以及通信合规性。 使用 CellTrust 连接器在 Microsoft 365 中导入和存档数据可帮助组织遵守政府政策和法规策略。
+将 CellTrust 数据存储在用户邮箱中后，可以应用 Microsoft 365 合规性功能，如诉讼保留、电子数据展示、保留策略和保留标签以及通信合规性。 使用 CellTrust 连接器在 Microsoft 365 中导入和存档数据可帮助组织遵守政府法规策略。
 
 ## <a name="overview-of-archiving-celltrust-data"></a>存档 CellTrust 数据概述
 
@@ -39,11 +39,11 @@ ms.locfileid: "49620483"
 
 4. 作为连接器的自动用户映射通过使用步骤 [3](#step-3-map-users-and-complete-the-connector-setup)中所述 *的 Email* 属性的值将项目导入到特定用户的邮箱。 在用户邮箱中创建名为 **CellTrust** 的收件箱文件夹中的子文件夹，邮件项目将导入到该文件夹中。 连接器使用 Email 属性的值确定将项目导入到哪个 *邮箱* 。 每个 CellTrust 项都包含此属性，此属性用每个参与者的电子邮件地址填充。
 
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>准备工作
 
 - 为 Microsoft 连接器创建 Merge1 帐户。 若要创建帐户，请联系 [Globanet 客户支持部门](https://globanet.com/contact-us/)。 在步骤 1 中创建连接器时，需要登录此帐户。
 
-- 在步骤 1 中创建 CellTrust 连接器 (步骤 3) 必须分配给 Exchange Online 中的邮箱导入导出角色。 在 Microsoft 365 合规中心的"数据连接器"页上添加连接器需要此角色。 默认情况下，此角色不会分配给 Exchange Online 中任何角色组。 可以将邮箱导入导出角色添加到 Exchange Online 中的组织管理角色组。 也可以创建一个角色组，分配邮箱导入导出角色，然后将相应的用户添加为成员。 有关详细信息，请参阅"在[](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#create-role-groups)Exchange Online[](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups)中管理角色组"一文的"创建角色组或修改角色组"部分。
+- 在步骤 1 中创建 CellTrust 连接器 (步骤 3) 必须分配给 Exchange Online 中的邮箱导入导出角色。 在 Microsoft 365 合规中心的"数据连接器"页上添加连接器需要此角色。 默认情况下，不会向 Exchange Online 中任何角色组分配此角色。 可以将邮箱导入导出角色添加到 Exchange Online 中的组织管理角色组。 也可以创建一个角色组，分配邮箱导入导出角色，然后将相应的用户添加为成员。 有关详细信息，请参阅"在[](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#create-role-groups)Exchange Online[](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups)中管理角色组"一文的"创建角色组或修改角色组"部分。
 
 ## <a name="step-1-set-up-the-celltrust-connector"></a>步骤 1：设置 CellTrust 连接器
 

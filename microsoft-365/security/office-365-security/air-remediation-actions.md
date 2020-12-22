@@ -1,6 +1,6 @@
 ---
-title: Microsoft Defender for Office 365 中的自动调查后的补救措施
-keywords: 空气、autoIR、ATP、自动化、调查、响应、修正、威胁、高级、威胁、保护
+title: Microsoft Defender for Office 365 自动调查后采取的修正操作
+keywords: AIR， autoIR， ATP， 自动化， 调查， 响应， 修正， 威胁， 高级， 威胁， 保护
 f1.keywords:
 - NOCSH
 ms.author: deniseb
@@ -16,25 +16,25 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
-description: 了解在 Microsoft Defender for Office 365 中进行自动调查后的修正操作。
+description: 了解 Microsoft Defender for Office 365 自动调查后采取的修正操作。
 ms.date: 09/29/2020
 ms.custom:
 - air
-ms.openlocfilehash: 75550352170841b1e6a26512c9e857a7c9e3acd3
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.openlocfilehash: 74fe6f66d0970fe2725caba7b51bd8a95a34159e
+ms.sourcegitcommit: 16e018f8b6eef5dad48eabf179691ead3cebe533
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49616136"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "49725161"
 ---
-# <a name="remediation-actions-following-automated-investigation-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 中的自动调查后的补救措施
+# <a name="remediation-actions-following-automated-investigation-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 自动调查后采取的修正操作
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
 ## <a name="remediation-actions"></a>修正操作
 
-[Microsoft Defender For Office 365](office-365-atp.md)中 (空中) 的[自动化调查和响应功能](office-365-air.md)包括某些修正操作。 无论何时运行自动化调查或已完成，你通常会看到一个或多个修正操作需要由安全运营团队批准后才能继续。 此类修正操作可包括以下内容：
+[Microsoft Defender for](office-365-air.md) [Office 365](office-365-atp.md) (AIR) 自动调查和响应功能包括某些修正操作。 无论何时运行自动化调查或已完成，你通常会看到一个或多个修正操作需要由安全运营团队批准后才能继续。 此类修正操作可能包括：
 
 - 软删除电子邮件或群集
 - 阻止 URL（单击时）
@@ -42,36 +42,36 @@ ms.locfileid: "49616136"
 - 关闭委派
 
 > [!NOTE]
-> 在 Microsoft Defender for Office 365 中，自动调查不会导致自动执行补救操作。 仅在组织的安全操作团队批准后才采取更正措施。
+> 在 Microsoft Defender for Office 365 中，自动调查不会导致自动采取修正操作。 修正操作仅在组织的安全运营团队批准后执行。
 
 ## <a name="threats-and-remediation-actions"></a>威胁和修正操作
 
-下表汇总了 Microsoft Defender for Office 365 中的威胁和相应的修正操作。 在某些情况下，自动调查不会导致特定的修正操作。 您的安全操作团队可以进一步调查并采取相应的操作，如下表所述。
+下表总结了 Microsoft Defender for Office 365 中的威胁和适当的修正操作。 在某些情况下，自动调查不会产生特定的修正操作。 安全运营团队可以进一步进行调查，并采取适当的措施，如下表所述。
 
 ****
 
-|类别|威胁/风险| (s) 的修正操作|
+|类别|威胁/风险|修正 (操作) |
 |---|---|---|
-|电子邮件|恶意软件|软删除电子邮件/群集 <br> 如果群集中的少量电子邮件包含恶意软件，则认为该群集是恶意的。|
-|电子邮件|恶意 URL <br>  ([Microsoft Defender For Office 365) 中的安全链接](atp-safe-links.md) 检测到恶意 URL。|软删除电子邮件/群集 <p> 包含恶意 URL 的电子邮件被认为是恶意的。|
-|电子邮件|网络钓鱼|软删除电子邮件/群集 <br> 如果群集中的少量电子邮件包含网络钓鱼尝试，则认为该群集是网络钓鱼。|
-|电子邮件|Zapped 网络钓鱼 <br>  (电子邮件已传递和 [zapped](zero-hour-auto-purge.md)。 ) |软删除电子邮件/群集 <p> 可查看 zapped 消息的报告。 [查看 ZAP 是否移动了邮件和 faq](zero-hour-auto-purge.md#how-to-see-if-zap-moved-your-message)。|
-|电子邮件|用户 [报告](enable-the-report-message-add-in.md) 的丢失的网络钓鱼电子邮件|[由用户的报告触发的自动调查](automated-investigation-response-office.md#example-a-user-reported-phish-message-launches-an-investigation-playbook)|
-|电子邮件|卷异常 <br>  (最近的电子邮件数量超过前7-10 天，以匹配条件。 ) |自动调查不会导致特定的挂起操作。 <p> 卷异常不是明确的威胁，而只是与过去的7-10 天相比，最近一天的电子邮件数量的指示。 虽然这可能表示潜在问题，但在恶意 verdicts 或电子邮件/群集的手动审核方面需要进行确认。 请参阅 [查找已发送的可疑电子邮件](investigate-malicious-email-that-was-delivered.md#find-suspicious-email-that-was-delivered)。|
-|电子邮件|未发现威胁 <br>  (系统找不到任何基于电子邮件群集 verdicts 的文件、url 或分析的威胁 ) |自动调查不会导致特定的挂起操作。 <p> 调查完成后发现的威胁和 [zapped](zero-hour-auto-purge.md) 不会反映在调查的数值发现中，但威胁 [资源管理器](threat-explorer.md)可查看此类威胁。|
-|用户|用户单击了恶意 URL <br>  (导航到后来发现恶意的页面的用户，或者用户跳过了 " [安全链接" 警告页](atp-safe-links.md#warning-pages-from-safe-links) 以获取恶意页面。 ) |自动调查不会导致特定的挂起操作。 <p> 使用威胁资源管理器 [查看有关 url 的数据，然后单击 "verdicts"](threat-explorer.md#view-data-about-phishing-urls-and-click-verdict)。 <p> 如果你的组织正在使用 [Microsoft Defender For Endpoint](https://docs.microsoft.com/windows/security/threat-protection/)，请考虑 [调查用户](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/investigate-user) 以确定其帐户是否受到威胁。|
-|用户|用户正在发送恶意软件/网络钓鱼|自动调查不会导致特定的挂起操作。 <p> 用户可能会报告恶意软件/网络钓鱼，或者有人可能会在攻击过程中 [欺骗用户](anti-spoofing-protection.md) 。 使用 [威胁资源管理器](threat-explorer.md) 查看和处理包含 [恶意软件](threat-explorer-views.md#email--malware) 或 [网络钓鱼](threat-explorer-views.md#email--phish)的电子邮件。|
-|用户|电子邮件转发 <br>  (配置邮箱转发规则，这可用于数据 exfiltration。 ) |删除转发规则 <p> 使用 [邮件流见解](mail-flow-insights-v2.md)（包括 " [自动转发的邮件" 报告](mfi-auto-forwarded-messages-report.md)）可以查看有关转发电子邮件的更多具体详细信息。|
-|用户|电子邮件委派规则 <br>  (用户的帐户设置了委派。 ) |删除委派规则 <p> 如果你的组织正在使用 [Microsoft Defender For Endpoint](https://docs.microsoft.com/windows/security/threat-protection/)，请考虑调查获取委派权限 [的用户](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/investigate-user) 。|
-|用户|数据外泄 <br>  (用户违反了电子邮件或文件共享 [DLP 策略](https://docs.microsoft.com/microsoft-365/compliance/data-loss-prevention-policies)。 ) |自动调查不会导致特定的挂起操作。 <p> [查看 DLP 报告并执行操作](https://docs.microsoft.com/microsoft-365/compliance/view-the-dlp-reports)。|
-|用户|异常电子邮件发送 <br>  (用户最近在过去的7-10 天内发送了多封电子邮件。 ) |自动调查不会导致特定的挂起操作。 <p> 发送大量电子邮件本身并不恶意;用户可能只是向一个大型收件人组发送了一个事件的电子邮件。 若要进行调查，请使用 [邮件流见解](mail-flow-insights-v2.md)，包括 [邮件流映射报告](mfi-mail-flow-map-report.md) ，以确定发生的情况并采取措施。|
+|电子邮件|恶意软件|软删除电子邮件/群集 <br> 如果群集中包含多个包含恶意软件的电子邮件，则群集被视为恶意邮件。|
+|电子邮件|恶意 URL <br>  (Microsoft Defender for Office [365](atp-safe-links.md) 安全链接检测到恶意 URL) 。|软删除电子邮件/群集 <p> 包含恶意 URL 的电子邮件被视为恶意 URL。|
+|电子邮件|网络钓鱼|软删除电子邮件/群集 <br> 如果群集中包含多个电子邮件包含网络钓鱼尝试，则群集将被视为网络钓鱼。|
+|电子邮件|Zapped phish <br>  (电子邮件已传递并 [删除](zero-hour-auto-purge.md).) |软删除电子邮件/群集 <p> 报告可用于查看已删除的邮件。 [查看 ZAP 是否移动了消息和常见问题](zero-hour-auto-purge.md#how-to-see-if-zap-moved-your-message)。|
+|电子邮件|用户报告的错过 [的](enable-the-report-message-add-in.md) 网络钓鱼电子邮件|[由用户报告触发的自动调查](automated-investigation-response-office.md#example-a-user-reported-phish-message-launches-an-investigation-playbook)|
+|电子邮件|音量异常 <br>  (条件，最近发送的电子邮件数量超过前 7-10 ) |自动调查不会导致特定的挂起操作。 <p> 卷异常不是一个明显的威胁，只是表示与过去 7-10 天相比，最近几天电子邮件数量较大。 尽管这表示存在潜在问题，但需要确认恶意裁定或手动审查电子邮件/群集。 请参阅["查找已送达的可疑电子邮件"。](investigate-malicious-email-that-was-delivered.md#find-suspicious-email-that-was-delivered)|
+|电子邮件|未发现威胁 <br>  (系统根据文件、URL 或电子邮件群集裁定分析来查找任何威胁。) |自动调查不会导致特定的挂起操作。 <p> 调查 [完成后发现](zero-hour-auto-purge.md) 和消除的威胁不会反映在调查的数字结果中，但此类威胁可以在威胁 [资源管理器中查看](threat-explorer.md)。|
+|用户|用户单击了恶意 URL <br>  (用户导航到之后发现是恶意页面，或者用户绕过安全链接警告页面进入恶意页面。) [](atp-safe-links.md#warning-pages-from-safe-links)|自动调查不会导致特定的挂起操作。 <p> 使用威胁资源管理器 [查看有关 URL 的数据并单击裁定](threat-explorer.md#view-phishing-url-and-click-verdict-data)。 <p> 如果你的组织正在使用 [Microsoft Defender for Endpoint，](https://docs.microsoft.com/windows/security/threat-protection/)请考虑调查 [用户](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/investigate-user) 以确定他们的帐户是否遭到入侵。|
+|用户|用户正在发送恶意软件/网络钓鱼|自动调查不会导致特定的挂起操作。 <p> 用户可能正在报告恶意软件/网络钓鱼，或者有人可能欺骗用户 [作为攻击](anti-spoofing-protection.md) 的一部分。 使用 [威胁资源管理器](threat-explorer.md) 查看和处理包含恶意软件 [或](threat-explorer-views.md#email--malware) 网络钓鱼 [的电子邮件](threat-explorer-views.md#email--phish)。|
+|用户|电子邮件转发 <br>  (配置邮箱转发规则，这些规则可用于数据) |删除转发规则 <p> 使用 [邮件流见解](mail-flow-insights-v2.md)（包括自动 [转发](mfi-auto-forwarded-messages-report.md)的邮件报告）查看有关转发电子邮件的更具体的详细信息。|
+|用户|电子邮件委派规则 <br>  (用户帐户已设置委派。) |删除委派规则 <p> 如果你的组织使用的是[Microsoft Defender for Endpoint，](https://docs.microsoft.com/windows/security/threat-protection/)请考虑调查获取委派权限的用户。 [](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/investigate-user)|
+|用户|数据外泄 <br>  (用户违反电子邮件或文件共享 [DLP](https://docs.microsoft.com/microsoft-365/compliance/data-loss-prevention-policies)策略 .) |自动调查不会导致特定的挂起操作。 <p> [查看 DLP 报告并采取措施](https://docs.microsoft.com/microsoft-365/compliance/view-the-dlp-reports)。|
+|用户|异常电子邮件发送 <br>  (用户最近发送的电子邮件数多于前 7-10 天) |自动调查不会导致特定的挂起操作。 <p> 发送大量电子邮件本身不是恶意的;用户可能只是向一大组收件人发送了事件的电子邮件。 若要调查，请使用 [邮件流见解](mail-flow-insights-v2.md)（包括 [邮件](mfi-mail-flow-map-report.md) 流映射报告）来确定要执行哪些操作并采取措施。|
 |
 
 ## <a name="next-steps"></a>后续步骤
 
 - [在 Microsoft Defender for Office 365 中查看自动调查的详细信息和结果](air-view-investigation-results.md)
 
-- [查看 Microsoft Defender for Office 365 中的自动调查后的挂起或已完成的修正操作](air-review-approve-pending-completed-actions.md)
+- [在 Microsoft Defender for Office 365 中自动调查后查看挂起或已完成的修正操作](air-review-approve-pending-completed-actions.md)
 
 ## <a name="related-articles"></a>相关文章
 

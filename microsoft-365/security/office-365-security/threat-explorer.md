@@ -16,486 +16,478 @@ ms.assetid: 82ac9922-939c-41be-9c8a-7c75b0a4e27d
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
-description: 了解如何在安全 & 合规性中心中使用 Explorer 和实时检测，以有效且高效地调查威胁并对其做出响应。
+description: 使用安全合规中心中的资源管理器和实时 &amp; 检测来有效调查和响应威胁。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 4328bfc52497f911c57256f8366b3742523b17b0
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.openlocfilehash: 8bca8e39029fe041c0bab59e92d8a653647746ef
+ms.sourcegitcommit: 0ecac0387be6b49025b79ce8eb949a8cf62481e2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49615560"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "49724410"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>威胁资源管理器和实时检测
 
-如果您的组织具有 [Microsoft Defender For Office 365](office-365-atp.md)，并且您拥有 [必要的权限](#required-licenses-and-permissions)，则可以 **使用资源管理器** 或 **实时检测** (以前的 *实时报告* — [请参阅最近更新](#new-features-in-threat-explorer-and-real-time-detections)！ ) 。 在安全 & 合规性中心中，转到 " **威胁管理**"，然后选择 " **浏览器**" _或_" **实时检测**"。
+如果你的组织拥有 [适用于 Office 365 的 Microsoft Defender，](office-365-atp.md)并且你拥有 [必要的](#required-licenses-and-permissions)权限，则你有权访问 *资源管理器* 或实时检测，这些检测以前是 *实时报告*。  ([了解](#new-features-in-threat-explorer-and-real-time-detections)新增功能。) 在安全与合规&中，转到"威胁管理"，然后选择"**资源管理器**"或"实时 **检测"。**
 
-|使用 Microsoft Defender for Office 365 计划2，你将看到：|使用 Microsoft Defender for Office 365 计划1时，您会看到：|
+|借助 Microsoft Defender for Office 365 计划 2，可以看到：|借助 Microsoft Defender for Office 365 计划 1，可以看到：|
 |---|---|
 |![威胁资源管理器](../../media/threatmgmt-explorer.png)|![实时检测](../../media/threatmgmt-realtimedetections.png)|
 |
 
-通过资源管理器 (或) 的实时检测功能，您有一个功能强大的报告，使安全操作团队能够有效且高效地调查威胁并对其做出响应。 该报告类似于以下图像：
+资源管理器或实时检测可帮助安全运营团队有效调查和响应威胁。 报表类似于下图：
 
-![转到 "威胁管理 \> 资源管理器"](../../media/cab32fa2-66f1-4ad5-bc1d-2bac4dbeb48c.png)
+![转到威胁管理 \> 资源管理器](../../media/cab32fa2-66f1-4ad5-bc1d-2bac4dbeb48c.png)
 
-使用此报告，可以执行以下操作：
+通过此报告，您可以：
 
 - [查看 Microsoft 365 安全功能检测到的恶意软件](#see-malware-detected-in-email-by-technology)
-- [查看有关仿冒 Url 的数据，然后单击 "判定"](#view-data-about-phishing-urls-and-click-verdict)
-- [从资源管理器中的视图启动自动调查和响应过程](#start-automated-investigation-and-response) (仅限 Office 365 计划2的 Defender) 
-- ... [调查恶意电子邮件，](#more-ways-to-use-explorer-or-real-time-detections)等等！
+- [查看网络钓鱼 URL 和单击裁定数据](#view-phishing-url-and-click-verdict-data)
+- [仅从资源管理器中的](#start-automated-investigation-and-response) 视图启动自动调查和响应 (Defender for Office 365 计划 2) 
+- [调查恶意电子邮件等](#more-ways-to-use-explorer-and-real-time-detections)
 
-## <a name="experience-improvements-to-threat-explorer-and-real-time-detections"></a>对威胁资源管理器和实时检测的改进体验
+## <a name="improvements-to-threat-explorer-and-real-time-detections"></a>威胁资源管理器和实时检测的改进
 
 ### <a name="tags-in-threat-explorer"></a>威胁资源管理器中的标记
 
 > [!NOTE]
-> "用户标记" 功能在预览中不可用，每个人都不可用，并且可能会发生更改。 有关发布计划的信息，请参阅 Microsoft 365 路线图。
+> 用户标记功能在 *预览版* 中，并非对所有人都可用，并且可能会更改。 有关发布计划的信息，请查看 Microsoft 365 路线图。
 
-用户标记是 Microsoft Defender for Office 365 中特定用户组的标识符。 有关标记、许可和配置标记的详细信息，请参阅 [用户标记](user-tags.md)。
+用户标记标识 Microsoft Defender for Office 365 中的特定用户组。 有关标记（包括许可和配置）详细信息，请参阅 [用户标记](user-tags.md)。
 
-在威胁资源管理器中，您可以在以下体验中查看用户标记周围的信息：
+在威胁资源管理器中，可以在以下体验中查看有关用户标记的信息。
 
 #### <a name="email-grid-view"></a>电子邮件网格视图
 
-电子邮件网格中显示的 "标记" 列将包含已应用于发件人或收件人邮箱的所有标记。 默认情况下，系统标记（如优先级帐户）首先显示。
+电子邮件 **网格** 中的"标记"列包含已应用于发件人或收件人邮箱的所有标记。 默认情况下，优先帐户等系统标记将首先显示。
 
 > [!div class="mx-imgBorder"]
-> ![电子邮件网格视图中的筛选标记](../../media/tags-grid.png)
+> ![电子邮件网格视图中的筛选器标记](../../media/tags-grid.png)
 
 #### <a name="filtering"></a>筛选
 
-我们现在将标记作为筛选器，以便您可以仅在优先级帐户或特定的用户标记方案中进行智能寻线 (甚至排除包含特定标记的结果) 的情况。 将这些筛选器与我们提供的多个其他筛选器组合在一起可帮助您缩小调查范围
+可以使用标记作为筛选器。 仅跨优先级帐户或特定用户标记方案进行智能寻线。 还可以排除具有特定标记的结果。 将此功能与其他筛选器相结合，以缩小调查范围。
 
-[![筛选标记](../../media/tags-filter-normal.png)](../../media/tags-filter-normal.png#lightbox)
+[![筛选器标记](../../media/tags-filter-normal.png)](../../media/tags-filter-normal.png#lightbox)
 
 > [!div class="mx-imgBorder"]
-> ![不筛选标记](../../media/tags-filter-not.png)
+> ![非筛选器标记](../../media/tags-filter-not.png)
 
 #### <a name="email-detail-flyout"></a>电子邮件详细信息飞出
-若要查看发件人和收件人的各个标记，请单击 "主题"。 它将打开 "消息详细信息" 浮出控件。 在 "摘要" 选项卡中，将单独显示发件人和收件人标记（如果它们存在于电子邮件中）。
-发件人和收件人的各个标记的信息也会扩展到导出的 CSV，在这种情况下，可以在两个单独的列中查看这些详细信息。
+若要查看发件人和收件人的单个标记，请选择主题以打开邮件详细信息飞出。 在 **"摘要"** 选项卡上，如果电子邮件存在发件人和收件人标记，则分别显示它们。
+有关发件人和收件人的单个标记的信息还扩展到导出的 CSV 数据，您可以在两个单独的列中查看这些详细信息。
 
 > [!div class="mx-imgBorder"]
 > ![电子邮件详细信息标记](../../media/tags-flyout.png)
 
-标签信息也显示在 URL 单击浮出控件中。 若要访问 URL，请单击 "浮出控件"，需要转到 "网络钓鱼" 或 "所有电子邮件视图"，然后转到 "Url" 或 "URL 单击" 选项卡。单击单个 URL 浮出控件将显示有关该 URL 的单击操作的更多详细信息，并将显示与该 URL 相关
+标记信息也显示在 URL 单击飞出中。 若要查看它，请转到"网络钓鱼"或"所有电子邮件"视图，然后转到 **"URL"或****"URL** 单击"选项卡。选择单个 URL 飞出以查看有关该 URL 的单击的其他详细信息，包括与该单击关联的标记。
 
 > [!div class="mx-imgBorder"]
 > ![URL 标记](../../media/tags-urls.png)
 
-## <a name="improvements-to-threat-hunting-experience-upcoming"></a> (即将到来的) 的威胁搜寻体验的改进
+## <a name="improvements-to-the-threat-hunting-experience-upcoming"></a>威胁搜寻体验的改进 (即将推出的) 
 
 ### <a name="updated-threat-information-for-emails"></a>更新了电子邮件的威胁信息
 
-我们重点介绍了平台和数据质量改进，以提高电子邮件记录的数据准确性和一致性。 这些更新集包括将对电子邮件执行的预送达和送达后信息 (示例操作作为作为 ZAP 过程的一部分执行) 到单个记录中，同时增加了垃圾邮件结论、实体级威胁 (例如，哪些 URL 是恶意的) 和最新的传递位置。
+我们专注于平台和数据质量改进，以提高电子邮件记录的数据准确性和一致性。 改进包括将传递前和传递后信息（如作为 ZAP 过程的一部分对电子邮件执行的操作）合并到单个记录中。 还包括垃圾邮件裁定、实体级威胁 (（例如，哪个 URL 是恶意) 和最新的传递位置）。
 
-在这些更新之后，您将看到每个邮件对应一个条目，而不考虑邮件上发生的不同送达事件。 操作可以包括 ZAP、手动修正 (这意味着管理操作) 、动态传递等。
+这些更新后，你将看到每封邮件的单个条目，无论影响邮件的不同传递后事件如何。 操作可能包括 ZAP、手动修正 (这意味着管理员操作) 、动态传递等。
 
-除了显示恶意软件和网络钓鱼威胁之外，您现在还可以查看与电子邮件相关联的垃圾邮件结论。 在电子邮件中，你将能够查看与电子邮件相关的所有威胁以及相应的检测技术。 每封电子邮件可以有0个、1个或多个威胁。 您将在 "电子邮件" 浮出控件的 "详细信息" 部分看到当前威胁。 此外，对于多个威胁 (例如，同时包含恶意软件和网络钓鱼) 的电子邮件，检测技术字段将提供 Threat-Detection 的映射，这意味着哪些检测技术会导致威胁的识别。
+除了显示恶意软件和网络钓鱼威胁外，您还可以看到与电子邮件关联的垃圾邮件裁定。 在电子邮件中，查看与电子邮件关联的所有威胁以及相应的检测技术。 电子邮件可以具有零个威胁、一个威胁或多个威胁。 你将在电子邮件飞出"详细信息"部分看到当前威胁。 对于恶意软件 (网络钓鱼) ，检测技术字段显示威胁检测映射，这是识别威胁的检测技术。
 
-已对一系列检测技术进行了更新，以包括新的检测方法、垃圾邮件检测技术，以及跨所有不同的电子邮件视图 (恶意软件、网络钓鱼诈骗、所有电子邮件) ，您将拥有相同的一致的检测技术集来筛选结果。
+检测技术集现在包括新的检测方法以及垃圾邮件检测技术。 您可以使用同一组检测技术筛选恶意软件、网络钓鱼、所有电子邮件 (不同电子邮件) 。
 
 > [!NOTE]
-> 判定分析可能并不一定与实体相关联。 例如，电子邮件可能会归类为网络钓鱼或垃圾邮件，但没有任何 Url 在其上标记任何网络钓鱼/垃圾邮件。 这是因为，在分配一个判定之前，我们的筛选器还会评估电子邮件的内容和其他详细信息。
+> 裁定分析不一定与实体关联。 例如，电子邮件可能分类为网络钓鱼或垃圾邮件，但没有标记有网络钓鱼/垃圾邮件裁定的 URL。 这是因为筛选器还会在分配裁定之前评估电子邮件的内容和其他详细信息。
 
-#### <a name="threats-in-urls"></a>Url 中的威胁
+#### <a name="threats-in-urls"></a>URL 中的威胁
 
-在 "电子邮件飞出" > 详细信息 "选项卡中，您现在可以看到 url 的特定威胁 (URL 可以是恶意软件、网络钓鱼诈骗、垃圾邮件或无) 
+现在，可以在"电子邮件飞出详细信息"选项卡上看到 URL **的特定威胁**。威胁可以是 *恶意软件*、*网络钓鱼*、*垃圾邮件* 或无 *.)*
 
 > [!div class="mx-imgBorder"]
 > ![URL 威胁](../../media/URL_Threats.png)
 
-### <a name="updated-timeline-view-upcoming"></a> (即将开始的日程表视图更新) 
+### <a name="updated-timeline-view-upcoming"></a>更新了 (视图) 
 
 > [!div class="mx-imgBorder"]
 > ![更新的日程表视图](../../media/Email_Timeline.png)
 
-除了标识所有传递和传递后事件之外，"日程表" 视图还提供有关在该时间点为这些事件的子集确定的威胁的信息。 此外，它还提供了有关其他操作的详细信息 (例如，ZAP、手动修正) 以及该操作的结果。 "日程表" 视图包含有关原始传递以及随后在电子邮件上执行的任何送达事件的信息。
+时间线视图标识所有传递和传递后事件。 它包括有关在这些事件的子集时标识的威胁的信息。 时间线视图还提供有关对项目执行 (操作（如 ZAP 或手动修正) ）的信息，以及该操作的结果。 日程表视图信息包括：
 
-- 来源：这可以是管理员/系统/用户，具体取决于事件的来源。
-- 事件：这包括原始传递、手动修正、ZAP、提交和动态传递等顶级事件。
-- 操作：这涵盖作为 ZAP 或 Admin 操作的一部分执行的特定操作 (例如软删除) 。
-- 威胁：涵盖该时间点 (恶意软件、网络钓鱼诈骗、垃圾邮件) 的威胁。
-- Result/Details：涵盖有关操作结果的详细信息，即是否作为 ZAP/管理操作的一部分执行。
+- **源：** 事件的源。 它可以是管理员/系统/用户。
+- **事件：** 包括顶级事件，如原始传递、手动修正、ZAP、提交和动态传递。
+- **操作：** 作为 ZAP 或管理员操作一部分执行的特定 (例如，软删除) 。
+- **威胁：** 涵盖 (时标识) 恶意软件、网络钓鱼、垃圾邮件等威胁。
+- **结果/详细信息：** 有关操作结果（例如是否作为 ZAP/管理员操作一部分执行）详细信息。
 
-### <a name="original-and-latest-delivery-location"></a>原始和最新送达位置
+### <a name="original-and-latest-delivery-location"></a>原始和最新的送达位置
 
-目前，我们在电子邮件网格和电子邮件浮出控件中呈现了交付位置。 今后，"送达位置" 字段将被重命名为原始送达位置。 此外，还引入了另一个名为 "最新传递位置" 的字段。
+目前，我们在电子邮件网格和电子邮件浮出控件中显示传递位置。 传递 **位置字段** 被重命名 **_原始传递位置_* _。 我们正在引入另一个字段， _*_即最新送达位置_*_。
 
-原始送达位置将提供有关最初传递电子邮件的位置的详细信息。 最新的送达位置将包括在系统操作（如 " **移动到已删除邮件**"）的系统操作之后，电子邮件可能会进入到的位置。 最新送达位置旨在通知管理员邮件的最近已知位置投递或任何系统/管理员操作。 根据设计，它不包含对电子邮件的任何与最终用户相关的操作。 例如：如果用户删除邮件或将邮件移动到存档/pst，则不会更新邮件 "送达" 位置。 但是，如果系统操作更新了位置 (例如，通过将邮件移到隔离) ，则会看到最新的送达位置作为隔离。
+_ *原始送达位置** 将提供有关电子邮件最初送达位置的更多信息。 **最新的送达位置** 将说明电子邮件在系统操作（如 *ZAP）* 或管理员操作（如 *移动到已删除项目）之后登录的位置*。 最新送达位置旨在告知管理员邮件传递后的最新已知位置或任何系统/管理员操作。 它不包含对电子邮件的任何最终用户操作。 例如，如果用户删除了邮件或将邮件移动到存档/pst，邮件"传递"位置将不会更新。 但是，如果系统操作更新了位置 (例如，ZAP 导致电子邮件移动到隔离邮箱) ，则最新送达位置将显示为"隔离"。
 
 > [!div class="mx-imgBorder"]
-> ![更新的送达位置](../../media/Updated_Delivery_Location.png)
+> ![更新的传递位置](../../media/Updated_Delivery_Location.png)
 
 > [!NOTE]
-> 在少数情况下，送达位置和传递操作可能会将 "Unknown" 显示为值：
+> 在某些情况下，传递位置 **和****传递操作** 可能显示为"未知"：
 >
-> - 您可能会看到送达位置为 "已传递"，并且传递位置为 "未知"。 邮件传递过程中出现这种情况，但收件箱规则将邮件移动到默认文件夹 (草稿、存档等 ) 而不是 "收件箱" 或 "垃圾邮件" 文件夹。
+> - 如果邮件已送达，您可能会将传递位置视为"已送达"，而"传递位置"为"未知"，但收件箱规则将邮件移动到默认文件夹 (如草稿或存档) ，而不是"收件箱"或"垃圾邮件"文件夹。
 >
-> - 如果管理员/系统操作 (（例如，ZAP、管理操作) ，但找不到该邮件），则无法识别最新的传递位置。 通常情况下，操作在用户移动或删除邮件之后发生。 在这种情况下，请验证 "日程表" 视图中的 "结果/详细信息" 列。 查找邮件：用户移动或删除的邮件。
+> - **如果尝试执行** 管理/系统操作（如 ZAP (，但未找到邮件) ，则最新的传递位置可能未知。 通常，该操作发生在用户移动或删除邮件之后。 在这种情况下，请验证 **日程表视图中的结果/** 详细信息列。 查找"用户移动或删除的邮件"语句。
 
 > [!div class="mx-imgBorder"]
-> ![日程表的送达位置](../../media/Updated_Timeline_Delivery_Location.png)
+> ![时间线的传递位置](../../media/Updated_Timeline_Delivery_Location.png)
 
 ### <a name="additional-actions"></a>其他操作
 
-其他操作包括已应用的操作在发送电子邮件时发布的操作，并且可以包括由管理员执行的 ZAP、手动修正 (操作，例如软删除) 、动态传递和重新处理 (电子邮件被检测为 "正常) " 的追溯。
+*在电子邮件* 传递后应用了其他操作。 它们可以包括 *ZAP、* 由管理员 (手动修正操作（如软删除 *) 、* 动态传递和重新处理 (）以用于被反向检测为良好的) 。  
 
 > [!NOTE]
+> - 作为挂起更改的一部分，当前在传递操作筛选器中显示"ZAP 删除"值将消失。 你将可以通过其他操作通过 ZAP 尝试搜索 **所有电子邮件**。
 >
-> - 作为此更改的一部分，当前在传递操作筛选器中的已删除的 ZAP 值将离开。 你可以通过其他操作搜索通过 ZAP 尝试的所有电子邮件的方法。
->
-> - 将有新的字段和值用于检测技术和其他操作，尤其是) 的 ZAP 方案中 (。 评估现有的已保存的查询和跟踪的查询，以确保它们能够处理新值。
+> - 检测技术和其他操作将具有新的字段 **和值**， (ZAP 方案) 。 您需要评估现有保存的查询和跟踪的查询，以确保它们使用新值。
 
 > [!div class="mx-imgBorder"]
-> ![浏览器中的其他操作](../../media/Additional_Actions.png)
 
-### <a name="system-overrides"></a>系统覆盖
+> ![资源管理器中的其他操作](../../media/Additional_Actions.png)
 
-系统覆盖是一种通过覆盖由系统 (提供的传递位置（基于由我们的筛选堆栈) 标识的威胁和其他检测）来对邮件的预期送达位置进行例外的方法。 可以通过租户或用户策略设置系统替代，以根据策略建议传递邮件。 重写可用于标识任何由于配置缺口而无意中传递的恶意邮件 (例如，由) 用户设置的一种非常广泛的安全发件人策略。 这些替代值可以是：
+### <a name="system-overrides"></a>系统替代
 
-- 用户策略允许：这是用户通过在邮箱级别创建策略来允许域或发件人。
-- 被用户策略阻止：当用户通过在邮箱级别创建策略来阻止域或发件人时，将会出现这种情况。
-- 组织策略允许：这是组织的安全团队设置策略或 Exchange 邮件流规则时 (也称为传输规则) 为其组织中的用户允许发件人和域。 这可用于一组用户或整个组织。
-- 被组织策略阻止：这是组织的安全团队设置策略或邮件流规则，以阻止其组织中用户的发件人、域、邮件语言或源 Ip。 这也可用于一组用户或整个组织。
-- 组织策略阻止的文件扩展名：这是组织的安全团队通过反恶意软件策略设置阻止的文件类型扩展名。 这些值现在将显示在电子邮件详细信息中，以帮助进行调查。 Secops 团队还可以使用富筛选功能筛选阻止的文件扩展名。
+*系统覆盖* 使您能够对邮件的预定传递位置进行例外。 根据筛选堆栈标识的威胁和其他检测，覆盖系统提供的传递位置。 可以通过租户或用户策略设置系统覆盖，以根据策略的建议传递邮件。 替代可以标识由于配置差异（如用户设置过宽的安全发件人策略）而无意传递恶意邮件。 这些替代值可以是：
 
-[![浏览器中的系统覆盖](../../media/System_Overrides.png)](../../media/System_Overrides.png#lightbox)
+- 用户策略允许：用户在邮箱级别创建策略以允许域或发件人。
+- 被用户策略阻止：用户在邮件框级别创建策略以阻止域或发件人。
+- 组织策略允许：组织的安全团队设置策略或 Exchange 邮件流规则 (也称为传输规则) ，以允许组织中的用户使用发件人和域。 这适用于一组用户或整个组织。
+- 被组织策略阻止：组织的安全团队设置策略或邮件流规则，以阻止组织中的用户的发件人、域、邮件语言或源 IP。 这可应用于一组用户或整个组织。
+- 组织策略阻止的文件扩展名：组织的安全团队通过反恶意软件策略设置阻止文件扩展名。 这些值现在将显示在电子邮件详细信息中，以帮助进行调查。 Secops 团队还可使用丰富的筛选功能筛选阻止的文件扩展名。
+
+[![资源管理器中的系统覆盖](../../media/System_Overrides.png)](../../media/System_Overrides.png#lightbox)
 
 > [!div class="mx-imgBorder"]
-> ![浏览器中的系统覆盖网格](../../media/System_Overrides_Grid.png)
+> ![资源管理器中的系统覆盖网格](../../media/System_Overrides_Grid.png)
 
-### <a name="improvements-around-url-and-clicks-experience"></a>有关 URL 和点击体验的改进
+### <a name="improvements-for-the-url-and-clicks-experience"></a>URL 和单击体验的改进
 
-重点关注 URL 和 URL 的改进集单击 "数据" 包括：
+这些改进包括：
 
-- 显示已完全单击的 URL (包括 URL 浮出控件的单击部分中的 URL) 的一部分查询参数。 目前，我们在标题栏中显示 URL 域和路径。 我们正在扩展该信息以显示完整的 URL。
+- 显示完整单击的 URL (包括作为 URL 链接的一) **单击部分的任何** 查询参数。 目前，URL 域和路径显示在标题栏中。 我们将扩展该信息以显示完整 URL。
 
-- 通过 URL 筛选器 (URL vs URL 域与 URL 域和路径) 的修正：我们已在搜索包含 URL/单击判定的邮件时进行了更新。 作为此过程的一部分，我们启用了对协议不可知搜索的支持 (意义上，您可以直接搜索不带 http) 的 URL。 默认情况下，除非显式指定，否则 URL 搜索将映射到 http。 例如：
+- 跨 URL 筛选器 (*URL* 域与 *URL* 域和路径的修复) ：更新会影响对包含 URL/单击裁定的邮件的搜索。 我们启用了协议不可知搜索支持，因此无需使用即可搜索 `http` URL。 默认情况下，除非明确指定了其他值，否则 URL 搜索将映射到 http。 例如：
 
-  1. `http://`在 "url"、"Url 域" 和 "Url 域和路径" 筛选器字段中使用和不带前缀进行搜索。 此行为是一致的，并应显示相同的结果。
+   -  在 URL、URL 域和 URL 域和路径筛选器字段中使用和 `http://` **不带前缀进行** 搜索。   搜索应显示相同的结果。
 
-  1. `https://`在 "URL" 中搜索前缀。 如果不存在，则 `http://` 假定前缀。
+   -  在 `https://` **URL** 中搜索前缀。 如果未指定任何值， `http://` 则假定前缀。
 
-  1. `/` "URL 路径"、"URL 域"、"URL 域和路径" 字段的开头和结尾将被忽略。 `/` 在 "URL" 字段的末尾忽略。
+   - `/` 在 URL 路径 **、URL** 域 **、URL** 域和路径字段的开头和结尾 **被忽略** 。 `/` 将忽略 **URL** 字段的末尾。
 
-### <a name="phish-confidence-level"></a>网络钓鱼信任级别
+### <a name="phish-confidence-level"></a>网络钓鱼可信度
 
-网络钓鱼可信度有助于确定置信度，其中电子邮件被分类为网络钓鱼。 这两个可能的值为 "高" 和 "普通"。 在初始阶段，此筛选器仅适用于威胁资源管理器的 "网络钓鱼视图"。
+网络钓鱼可信度有助于确定电子邮件被分类为"网络钓鱼"的可信度。 两个可能的值是 *高和**普通*。 在初始阶段，此筛选器仅在威胁资源管理器的网络钓鱼视图中可用。
 
-[![浏览器中的网络钓鱼可信度](../../media/Phish_Confidence_Level.png)](../../media/Phish_Confidence_Level.png#lightbox)
+[![资源管理器中的网络钓鱼可信度](../../media/Phish_Confidence_Level.png)](../../media/Phish_Confidence_Level.png#lightbox)
 
 ### <a name="zap-url-signal"></a>ZAP URL 信号
 
-通常用于将电子邮件标识为网络钓鱼并在传递后删除的 ZAP 网络钓鱼警报场景。 此项用于在资源管理器中将通知与相应的结果连接。 它是警报的 IOCs 之一。
+ZAP URL 信号通常用于 ZAP 网络钓鱼警报方案，其中电子邮件被标识为网络钓鱼，且在传递后被删除。 此信号将警报与资源管理器中的相应结果连接在一起。 它是警报的 IIC 之一。
 
-在改进搜寻过程的过程中，我们已经对威胁浏览器和实时检测进行了一些更新。 这些是 "体验" 改进，重点是让求职体验更一致。 下面概述了这些更改：
+为了改进搜寻过程，我们更新了威胁资源管理器和实时检测，使搜寻体验更加一致。 此处概述了这些更改：
 
 - [时区改进](#timezone-improvements)
 - [刷新过程中的更新](#update-in-the-refresh-process)
-- [要添加到筛选器的图表深入分析](#chart-drilldown-to-add-to-filters)
+- [要添加到筛选器的图表向下钻取](#chart-drilldown-to-add-to-filters)
 - [在产品信息更新中](#in-product-information-updates)
 
 ### <a name="filter-by-user-tags"></a>按用户标记筛选
 
-现在，您可以按系统或自定义用户标记对其进行排序和筛选，以快速抓住威胁的范围。 若要了解详细信息，请参阅 [用户标记](user-tags.md) 。
+现在，你可以对系统或自定义用户标记进行排序和筛选，以快速了解威胁的范围。 若要了解更多信息，请参阅 [用户标记](user-tags.md)。
 
 > [!IMPORTANT]
-> 按用户标记进行筛选和排序当前处于公共预览版中。
-> 在正式发布之前，可能会对其进行充分修改。 对于提供的信息，Microsoft 不做任何明示或暗示的担保。
+> 按用户标记进行筛选和排序目前处于公共预览阶段。 在商业发布之前，可能会对此功能进行重大修改。 Microsoft 对提供的信息不做出明示或暗示的担保。
 
-![浏览器中的标记列](../../media/threat-explorer-tags.png)
+![资源管理器中的"标记"列](../../media/threat-explorer-tags.png)
 
 ### <a name="timezone-improvements"></a>时区改进
 
-你将看到门户中的电子邮件记录的时区以及导出的数据的时区。 在电子邮件网格、详细信息浮出控件、电子邮件日程表和类似的电子邮件等体验中，时区将可见，从而使用户可以清楚地了解结果集的时区。
+你将在门户中以及导出的数据中查看电子邮件记录的时区。 它将在电子邮件网格、详细信息飞出控件、电子邮件时间线和类似电子邮件等体验中可见，因此邮件结果集清晰。
 
 > [!div class="mx-imgBorder"]
 > ![在资源管理器中查看时区](../../media/TimezoneImprovements.png)
 
 ### <a name="update-in-the-refresh-process"></a>刷新过程中的更新
 
-我们已经听说过与自动刷新 (混淆的反馈，例如日期，一旦您更改日期，页面将刷新) 并手动刷新 (其他筛选器) 。 同样，删除筛选器会导致自动刷新，这会导致在修改查询时更改不同的筛选器会导致不一致的搜索体验的情况。 若要解决此情况，我们将迁移到手动筛选机制。
+例如，一些用户评论了与自动刷新 (混淆，例如，一旦更改日期，页面就会) 其他筛选器 (刷新) 。 同样，删除筛选器会导致自动刷新。 修改查询时更改筛选器可能会导致搜索体验不一致。 为了解决这些问题，我们将迁移到手动筛选机制。
 
-从经验的角度来看，用户可以应用和删除筛选器集 (的不同范围的筛选器，并在日期) ，然后按 "刷新" 按钮，在完成定义查询的情况下筛选结果。 "刷新" 按钮也已更新，可在屏幕上清楚地调用它。 我们还提供了有关此更改的更新工具提示和产品内文档。
-
-> [!div class="mx-imgBorder"]
-> ![单击 "刷新" 以筛选结果](../../media/ManualRefresh.png)
-
-### <a name="chart-drilldown-to-add-to-filters"></a>要添加到筛选器的图表深入分析
-
-现在，您可以单击 "图表图例" 值，将该值作为筛选器添加。 请注意，您仍必须单击 "刷新" 按钮，才能将结果作为上述更改的一部分进行筛选。
+从体验的角度来看，用户可以应用和删除筛选器集和日期 (的不同筛选器范围) 并选择刷新按钮，以在定义查询后筛选结果。 此时，屏幕上也强调刷新按钮。 我们还更新了相关工具提示和产品内文档。
 
 > [!div class="mx-imgBorder"]
-> ![通过要筛选的图表深入分析](../../media/ChartDrilldown.png)
+> ![选择"刷新"筛选结果](../../media/ManualRefresh.png)
 
-### <a name="in-product-information-updates"></a>在产品信息更新中
+### <a name="chart-drilldown-to-add-to-filters"></a>要添加到筛选器的图表向下钻取
 
-您还应查看产品中的其他详细信息。 例如，网格中的搜索结果总数) ，以及有关标签、错误消息和工具提示的改进，以提供有关筛选器、搜索体验和结果集的详细信息，请参阅下图所示的 (。
+现在，你可以绘制图例值图表以将它们添加为筛选器。 选择 **"刷新** "按钮以筛选结果。
 
 > [!div class="mx-imgBorder"]
-> ![查看产品信息](../../media/ProductInfo.png)
+> ![向下钻取图表以筛选](../../media/ChartDrilldown.png)
+
+### <a name="in-product-information-updates"></a>产品内信息更新
+
+产品内现已提供其他详细信息，例如网格内搜索结果总数 (请参阅下面的) 。 我们改进了标签、错误消息和工具提示，以提供有关筛选器、搜索体验和搜索结果集。
+
+> [!div class="mx-imgBorder"]
+> ![查看产品内信息](../../media/ProductInfo.png)
 
 ## <a name="extended-capabilities-in-threat-explorer"></a>威胁资源管理器中的扩展功能
 
 ### <a name="top-targeted-users"></a>主要目标用户
 
-今天，我们在恶意软件的主要部分中公开主要目标用户的列表， (主要恶意软件系列中的电子邮件) 。 我们将在网络钓鱼和所有电子邮件视图中扩展此视图，在该视图中，您将能够查看前五个目标用户以及每个用户对相应 (视图的尝试次数。例如，对于 "网络钓鱼" 视图，您将能够查看) 的网络钓鱼尝试次数。
-您还可以将目标用户列表导出为3000，并将每个电子邮件视图的脱机分析尝试次数导出到最大值为。 此外，选择 "否"。  (例如，下面的13次) 将在威胁 Explorer 中打开筛选视图，以便您可以在电子邮件和威胁中查看该用户的更多详细信息。
+现在，我们在电子邮件的"恶意软件"视图中的"主要恶意软件系列"部分公开了主要目标 **用户** 的列表。 我们还将在"网络钓鱼"和"所有电子邮件"视图中扩展此视图。 你将能够看到前五个目标用户，以及每个用户针对相应视图的尝试次数。 例如，对于网络钓鱼视图，你将看到网络钓鱼尝试次数。
+
+你将能够导出目标用户的列表（最多为 3，000 个）以及每个电子邮件视图的脱机分析尝试次数。 此外，选择尝试次数（例如 (，) 下面的图像中的 13 次尝试将在威胁资源管理器中打开筛选视图，以便你可以查看针对该用户的电子邮件和威胁的更多详细信息。
 
 > [!div class="mx-imgBorder"]
 > ![主要目标用户](../../media/Top_Targeted_Users.png)
 
 ### <a name="exchange-transport-rules"></a>Exchange 传输规则
 
-作为数据扩充的一部分，您还应该能够查看应用于邮件的所有不同传输规则。 此信息将显示在电子邮件网格视图中 (查看此内容，请在网格中选择 "列选项"，并在 "网格中的列选项" 中添加 Exchange 传输规则) 以及电子邮件中的 "详细信息" 浮出控件。
-你将能够同时查看 GUID 以及应用于邮件的传输规则的名称。 此外，您还可以使用传输规则的名称搜索邮件。 这是一个 "包含" 搜索，这意味着您也可以使用部分搜索进行搜索。
+作为数据扩充的一部分，你将能够看到应用于邮件的所有不同 Exchange (ETR) 规则。 此信息将在电子邮件网格视图中提供。 若要查看它，请选择网格 **中的** 列选项，然后 **从列** 选项中添加 Exchange 传输规则。 它还将在电子邮件 **的"详细信息** "飞出上可见。
+
+您将能够查看应用于邮件的传输规则的 GUID 和名称。 您可以使用传输规则的名称搜索邮件。 这是一个"包含"搜索，这意味着您也可以执行部分搜索。
 
 #### <a name="important-note"></a>重要说明：
 
-ETR 搜索和名称可用性取决于已分配给你的特定角色。 您需要具有以下角色/权限之一才能查看 ETR 名称和搜索。  如果没有为您分配以下任何角色，您将无法看到传输规则的名称，并使用 ETR 名称搜索邮件的名称。 不过，你将能够在电子邮件详细信息中看到 ETR 标签和 GUID 信息。 有关在电子邮件网格、电子邮件 flyouts、筛选器和导出中查看记录的其他体验不受影响。
+ETR 搜索和名称可用性取决于分配给您的特定角色。 你需要具有以下角色/权限之一才能查看 ETR 名称和搜索。 如果未分配任何这些角色，则看不到传输规则的名称，也看不到使用 ETR 名称搜索邮件。 但是，您可以在电子邮件详细信息中查看 ETR 标签和 GUID 信息。 电子邮件网格、电子邮件飞出、筛选器和导出中的其他记录查看体验不受影响。
 
-- 仅限 EXO-数据丢失防护：全部
-- 仅 EXO-O365SupportViewConfig： All
-- AAD 或 EXO-安全管理员： All
-- AAD 或 EXO-安全读者： All
-- 仅限 EXO-传输规则： All
-- 仅限 EXO-View-Only 配置： All
+- 仅 EXO - 数据丢失防护：全部
+- 仅 EXO - O365SupportViewConfig：全部
+- Microsoft Azure Active Directory 或 EXO - 安全管理员：全部
+- AAD 或 EXO - 安全读取器：全部
+- 仅 EXO - 传输规则：全部
+- 仅 EXO - View-Only配置：全部
 
-在电子邮件网格、详细信息浮出控件和导出的 CSV 中，Etr 显示如下所示的名称/GUID。
+在电子邮件网格、详细信息飞出和导出的 CSV 中，ETR 将显示一个名称/GUID，如下所示。
 
 > [!div class="mx-imgBorder"]
 > ![Exchange 传输规则](../../media/ETR_Details.png)
 
 ### <a name="inbound-connectors"></a>入站连接器
 
-连接器是一组说明，可用于自定义电子邮件流动到 Microsoft 365 或 Office 365 组织的方式，并能够应用任何安全限制或控件。 在威胁资源管理器中，您现在可以查看与电子邮件相关的连接器，也可以使用连接器名称搜索电子邮件。
-对连接器的搜索是 ' 包含 ' 性质的，这意味着分部关键字搜索也应正常工作。
-在主网格视图中，"详细信息" 浮出控件和导出的 CSV，连接器以如下所示的名称/GUID 格式显示：
+连接器是一组说明，用于自定义电子邮件在 Microsoft 365 或 Office 365 组织之间流动和流出。 它们使您能够应用任何安全限制或控件。 在威胁资源管理器中，你现在可以查看与电子邮件相关的连接器，然后使用连接器名称搜索电子邮件。
+
+连接器搜索本质上是"包含"的，这意味着部分关键字搜索也应正常工作。 在主网格视图、"详细信息"飞出控件和导出的 CSV 中，连接器以名称/GUID 格式显示，如下所示：
 
 > [!div class="mx-imgBorder"]
 > ![连接器详细信息](../../media/Connector_Details.png)
 
 ## <a name="new-features-in-threat-explorer-and-real-time-detections"></a>威胁资源管理器中的新功能和实时检测
 
-威胁资源管理器和实时检测添加了三个新功能：
+威胁资源管理器和实时检测中提供了三项新功能：
 
-- [预览电子邮件标头并下载电子邮件正文](#preview-email-header-and-download-email-body)
-- [电子邮件日程表](#email-timeline)
-- [导出 URL 单击 "数据"](#export-url-click-data)
+- [预览电子邮件头并下载电子邮件正文](#preview-email-header-and-download-email-body)
+- [电子邮件时间线](#email-timeline)
+- [导出 URL 单击数据](#export-url-click-data)
 
 下面概述了这些新功能。
 
-### <a name="preview-email-header-and-download-email-body"></a>预览电子邮件标头并下载电子邮件正文
+### <a name="preview-email-header-and-download-email-body"></a>预览电子邮件头并下载电子邮件正文
 
-在威胁资源管理器中，预览电子邮件标头和下载电子邮件正文的功能是可用的新功能。 管理员将能够分析下载的邮件头/电子邮件是否有威胁。 由于下载电子邮件可能会降低信息的暴露风险，因此此过程由基于角色的访问控制 (RBAC) 控制。 必须向另一个角色 (组中添加一个新的角色、 *预览*，如安全操作或安全管理员) ，以授予在所有电子邮件视图中下载邮件和预览邮件头的能力。
+现在，你可以预览电子邮件头，并下载威胁资源管理器中的电子邮件正文。管理员可以分析下载的邮件头/电子邮件中的威胁。 因为下载电子邮件可能会暴露信息的风险，所以此过程由基于角色的访问控制控制， (RBAC) 。 必须将新角色 *Preview* 添加到另一个角色组 (如安全操作或安全管理员) ，以授予在全部电子邮件视图中下载邮件和预览邮件头的能力。
 
-但是，资源管理器 (和实时检测) 也会添加新的新字段，旨在为您提供有关电子邮件土地的更完整的信息。 此更改的目标部分是使搜索更易于进行安全操作人员，但最终结果是了解问题电子邮件的位置。
+资源管理器和实时检测还将获取新字段，这些字段可提供电子邮件到达位置的更完整图片。 这些更改使搜寻更便于安全操作。 但主要结果是，您可以一目了然地了解问题电子邮件的位置。
 
-这是如何完成的？ 传递状态现已分为两列：
+如何完成此操作？ 传递状态现在分为两列：
 
-- **传递操作** -此电子邮件的状态是什么？
-- **送达位置** -此电子邮件的路由结果
+- **传递操作** - 电子邮件的状态。
+- **传递位置** - 电子邮件的路由位置。
 
-传递操作是由于现有策略或检测而导致对电子邮件执行的操作。 以下是电子邮件可能执行的操作：
+*传递* 操作是对现有策略或检测对电子邮件采取的操作。 以下是电子邮件的可能操作：
 
-|附带|Junked|Blocked|代替|
+|已传递|垃圾邮件|Blocked|已替换|
 |---|---|---|---|
-|电子邮件已传递到用户的收件箱或文件夹，用户可以直接访问它。|电子邮件发送到用户的 "垃圾邮件" 文件夹或 "已删除" 文件夹，并且用户有权访问这些文件夹中的电子邮件。|隔离的、失败的或已丢弃的任何电子邮件。 用户完全无法访问它！|所有恶意附件都被替换为 .txt 文件的电子邮件，以表明附件是恶意的。|
+|电子邮件已传递到用户的收件箱或文件夹，用户可以访问它。|电子邮件已发送到用户的"垃圾邮件"或"已删除邮件"文件夹，用户可以访问它。|隔离、失败或已丢弃的电子邮件。 用户无法访问这些邮件。|电子邮件有恶意附件替换为 .txt 文件，指出附件是恶意附件。|
 
-|附带|Junked|Blocked|代替|
-|---|---|---|---|
-|电子邮件已传递到用户的收件箱或其他文件夹，用户可以直接访问它。|电子邮件发送到用户的 "垃圾邮件" 文件夹或 "已删除" 文件夹，并且用户有权访问这些文件夹中的电子邮件。|隔离的、失败的或已删除的任何电子邮件、以及用户无法访问的任何电子邮件。|任何电子邮件，其中恶意附件被替换为 .txt 文件，以表明这些附件是恶意的。|
-|
+下面是用户可以看到和看不到的：
 
-用户可以看到的内容及其不能执行的操作：
-
-|最终用户可以访问|最终用户无法访问|
+|最终用户可访问|最终用户无法访问|
 |---|---|
-|附带|Blocked|
-|Junked|代替|
+|已传递|Blocked|
+|垃圾邮件|已替换|
 
-"送达位置" 显示运行送达后的策略和检测结果。 它已链接到传递操作。 添加此字段是为了深入了解在发现问题邮件时所采取的操作。 以下是送达位置的可能值：
+**传递** 位置显示运行传递后的策略和检测的结果。 它链接到 **_传递操作_* _. 以下为可能的值：
 
-- **收件箱或文件夹**：电子邮件位于收件箱中或文件夹 (根据您的电子邮件规则) 。
-- **本地或 external**：邮箱在云上不存在，但在本地。
-- **垃圾邮件文件夹**：电子邮件位于用户的 "垃圾邮件" 文件夹中。
-- "**已删除** 邮件" 文件夹：用户的 "已删除邮件" 文件夹中的电子邮件。
-- **隔离**：隔离中的电子邮件，并且不在用户的邮箱中。
-- **失败**：电子邮件无法访问邮箱。
-- 已 **删除**：电子邮件在邮件流中的某处丢失。
+- _Inbox或文件夹*：电子邮件位于收件箱或文件夹中 (根据您的电子邮件规则) 。
+- *本地或外部*：邮箱在云中不存在，但位于本地。
+- *垃圾邮件* 文件夹：电子邮件位于用户的"垃圾邮件"文件夹中。
+- *"已删除邮件"文件夹*：用户的"已删除邮件"文件夹中的电子邮件。
+- *隔离*：电子邮件被隔离，不在用户的邮箱中。
+- *失败*：电子邮件无法到达邮箱。
+- *已* 丢弃：电子邮件在邮件流中的某位置丢失。
 
-### <a name="email-timeline"></a>电子邮件日程表
+### <a name="email-timeline"></a>电子邮件时间线
 
-**电子邮件日程表** 是另一个新的浏览器功能，旨在提高管理员的求职体验。 它会在随机时减少，因为检查不同位置以尝试了解事件的时间较少。 当电子邮件上的多个事件发生时，或在同一时间结束时，这些事件将显示在 "日程表" 视图中。 事实上，在传递给邮件的某些事件将在 "特殊操作" 列中捕获。 将该邮件的时间线中的信息与邮件投递后执行的特殊操作组合在一起，管理员可以了解其策略的工作方式，即最后路由邮件的位置，在某些情况下，最终评估是什么。
+电子邮件 **时间线** 是一种新的资源管理器功能，可改进管理员的搜寻体验。 它减少检查不同位置以尝试了解事件所花的时间。 当在电子邮件到达的同一时间或接近同一时间发生多个事件时，这些事件将显示在日程表视图中。 在"特殊操作"列中捕获电子邮件传递后发生的一 **些** 事件。 管理员可以将时间线的信息与对邮件传递后采取的特殊操作相结合，以深入了解其策略如何工作、邮件最终路由在何处，在某些情况下，了解最终评估内容。
 
-有关调查恶意电子邮件的详细讨论，请参阅 [调查和修正 Office 365 中提供的恶意电子邮件](investigate-malicious-email-that-was-delivered.md)。
+有关详细信息，请参阅 [调查和修正在 Office 365 中传递的恶意电子邮件](investigate-malicious-email-that-was-delivered.md)。
 
-### <a name="export-url-click-data"></a>导出 URL 单击 "数据"
+### <a name="export-url-click-data"></a>导出 URL 单击数据
 
-此外，您现在可以将 URL 单击的报告导出到 Microsoft Excel 中，以查看其网络消息 ID 和单击结论，从而使了解您的 URL 单击流量更容易的任务。 下面介绍了它的工作原理。 从 "Office 365 快速启动" 上的 "威胁管理" 开始，依次单击 "通过此链"：
+现在可以将 URL 单击报告导出到 Microsoft Excel 以查看其网络消息 **ID** 和单击裁定，这有助于说明 URL 单击流量的来源。 工作原理如下：在 Office 365 快速启动栏上的威胁管理中，按照以下链操作：
 
-**浏览器** \>**查看网络钓鱼** \>**单击** \>**顶部 url 或 URL 顶部单击** \>**单击任意记录以打开 "URL 飞出**"
+**资源管理器** \>**查看网络钓鱼** \>**单击** \>**顶部 URL 或** **URL 单击** \> 次数顶部选择任意记录以打开 URL 飞出。
 
-当您单击列表中的某个 URL 时，将会在弹出面板上看到一个新的 "导出" 按钮。 使用此按钮可以将数据移动到 Excel 电子表格，以便更轻松地进行报告。
+When you select a URL in the list， you'll see a new **Export** button on the fly-out panel. 使用此按钮将数据移动到 Excel 电子表格，以便于报告。
 
-您可以在实时检测报告中获取相同的位置，如下所示：
+按照此路径到达实时检测报告中的相同位置：
 
-**浏览器** \>**实时检测** \>**查看网络钓鱼** \>**Url** \>**顶部的 url 或顶部的单击** \>**单击任意记录以打开 "URL 飞出** \> "**导航到 "单击" 选项卡。**
+**资源管理器** \>**实时检测** \>**查看网络钓鱼** \>**URL** \>**顶部 URL** 或 **顶部单击** \> 选择任意记录以打开 URL 飞出控件 \> ，导航到 **"单击"** 选项卡。
 
 > [!TIP]
-> 当您通过网络邮件 ID 搜索浏览器或关联的第三方工具时，网络邮件 ID 会将单击映射回特定邮件。 在网络邮件 ID 中搜索将为管理员提供与单击结果关联的特定电子邮件。 在导出时，通过网络邮件 ID 的相互关联的标识可进行更快、更强大的分析。
+> 当您通过资源管理器或关联的第三方工具搜索 ID 时，网络消息 ID 将单击映射回特定邮件。 此类搜索可标识与单击结果关联的电子邮件。 通过关联网络消息 ID，可以更快、更强大的分析。
 
 > [!div class="mx-imgBorder"]
-> ![在资源管理器中单击选项卡](../../media/tp_ExportClickResultAndNetworkID.png)
+> ![资源管理器中的"单击"选项卡](../../media/tp_ExportClickResultAndNetworkID.png)
 
-## <a name="see-malware-detected-in-email-by-technology"></a>查看电子邮件中的技术检测到恶意软件
+## <a name="see-malware-detected-in-email-by-technology"></a>查看通过技术在电子邮件中检测到的恶意软件
 
-假设您想要查看 Microsoft 365 技术在电子邮件中检测到的恶意软件。 若要执行此操作，请使用资源管理器 (的 [电子邮件 > 恶意软件](threat-explorer-views.md#email--malware) 视图或实时检测) 。
+假设你想要查看在按 Microsoft 365 技术排序的电子邮件中检测到的恶意软件。 为此，请使用资源管理器>或[](threat-explorer-views.md#email--malware)实时检测的"电子邮件 (恶意软件"视图) 。
 
-1. 在 "安全性 & 合规性中心 (<https://protection.office.com> ") 中，选择 " **威胁管理** \> **资源管理器** (" 或 " **实时检测** ") 。  (本示例使用 Explorer。 ) 
+1. 在安全&中心 () ，选择威胁管理资源管理器 (或实时检测 <https://protection.office.com>  \> ) 。   (此示例使用 Explorer.) 
 
-2. 在 " **视图** " 菜单中，选择 " **电子邮件** \> **恶意软件**"。
+2. 在"**视图"** 菜单中，选择 **"电子邮件** \> **恶意软件"。**
 
    > [!div class="mx-imgBorder"]
-   > ![浏览器的视图菜单](../../media/ExplorerViewEmailMalwareMenu.png)
+   > ![资源管理器的视图菜单](../../media/ExplorerViewEmailMalwareMenu.png)
 
-3. 单击 " **发件人**"，然后选择 " **基本** \> **检测技术**"。
+3. 单击 **"** 发件人"，然后选择 **"基本** \> **检测技术"。**
 
-   您的检测技术现在可用作报告的筛选器。
+   你的检测技术现在用作报告的筛选器。
 
    > [!div class="mx-imgBorder"]
    > ![恶意软件检测技术](../../media/ExplorerEmailMalwareDetectionTech.png)
 
-4. 选择一个选项，然后单击 " **刷新** " 按钮以应用该筛选器。
+4. 选择一个选项。 然后选择" **刷新"** 按钮以应用该筛选器。
 
    > [!div class="mx-imgBorder"]
    > ![选定的检测技术](../../media/ExplorerEmailMalwareDetectionTechATP.png)
 
-报告将刷新，以显示使用您选择的技术选项在电子邮件中检测到恶意软件的结果。 在这里，你可以进行进一步分析。
+报告将刷新，以使用所选的技术选项显示电子邮件中检测到的恶意软件的结果。 在这里，你可以执行进一步的分析。
 
-## <a name="view-data-about-phishing-urls-and-click-verdict"></a>查看有关仿冒 Url 的数据，然后单击 "判定"
+## <a name="view-phishing-url-and-click-verdict-data"></a>查看网络钓鱼 URL 和单击裁定数据
 
-假定您要查看通过电子邮件中的 Url 进行的网络钓鱼尝试，包括允许、阻止和重写的 Url 的列表。 若要标识所单击的 Url，则需要配置 [安全链接](atp-safe-links.md) 。 确保已为单击时的保护设置了 [安全链接策略](set-up-atp-safe-links-policies.md) ，然后单击 "安全链接" 中的 "verdicts" 进行日志记录。
+假设您希望查看通过电子邮件中的 URL（包括允许、阻止和覆盖的 URL 列表）的网络钓鱼尝试。 若要标识单击的 URL， [必须](atp-safe-links.md) 配置安全链接。 确保为安全 [链接](set-up-atp-safe-links-policies.md) 的单击保护和单击裁定日志记录设置了安全链接策略。
 
-若要查看邮件中的网络钓鱼 Url 并单击网络钓鱼邮件中的 Url，请使用资源管理器 (的 [电子邮件 > 网络钓鱼](threat-explorer-views.md#email--phish) 视图或实时检测) 。
+若要查看邮件中的网络钓鱼 URL 并单击网络钓鱼邮件中的 URL，请使用 Explorer[  >  ](threat-explorer-views.md#email--phish)的电子邮件网络钓鱼视图或实时检测。
 
-1. 在 "安全性 & 合规性中心 (<https://protection.office.com> ") 中，选择 " **威胁管理** \> **资源管理器** (" 或 " **实时检测** ") 。  (本示例使用 Explorer。 ) 
+1. 在安全&中心 () ，选择威胁管理资源管理器 (或实时检测 <https://protection.office.com>  \> ) 。   (此示例使用 Explorer.) 
 
-2. 在 " **视图** " 菜单中，选择 " **电子邮件** \> **网络钓鱼**"。
-
-   > [!div class="mx-imgBorder"]
-   > ![网络仿冒上下文中的浏览器视图菜单](../../media/ExplorerViewEmailPhishMenu.png)
-
-3. 单击 " **发件人**"，然后选择 " **url** \> **" 单击 "判定"**。
-
-4. 选择一个或多个选项（如 "已 **阻止** " 和 " **阻止被覆盖**"），然后单击与应用该筛选器的选项位于同一行中的 " **刷新** " 按钮。  (不刷新浏览器窗口。 ) 
+2. 在"**视图"** 菜单中，选择 **"电子邮件** \> **钓鱼"。**
 
    > [!div class="mx-imgBorder"]
-   > ![Url 并单击 "verdicts"](../../media/ThreatExplorerEmailPhishClickVerdictOptions.png)
+   > ![网络钓鱼上下文中资源管理器的"查看"菜单](../../media/ExplorerViewEmailPhishMenu.png)
 
-   报告将刷新，以在报告下的 "URL" 选项卡上显示两个不同的 URL 表：
+3. 单击 **"** 发件人"，然后选择 **"URL 单击** \> **"裁定**。
 
-   - **上面的 url** 是您已筛选出的邮件中包含的 url，并且每个 URL 的电子邮件传递操作都会计数。 在网络钓鱼电子邮件视图中，此列表通常包含合法的 Url。 攻击者在其邮件中加入了好和坏的 Url，以尝试传递它们，但它们会使用户更有趣地单击恶意链接。 Url 表按总电子邮件计数进行排序 (但请注意，此列处于隐藏状态，以简化视图) 。
-
-   - 单击 **鼠标顶部** 的安全链接包装的 url 已被单击，按总单击次数排序 (此列也不会显示以简化视图) 。 "总计计数依据" 列指示安全链接单击每个单击的 URL 的 "已判定计数"。 在网络钓鱼电子邮件视图中，这些 Url 更常见或恶意 Url，但可能包括不是威胁但位于网络钓鱼邮件中的 Url。 URL 单击未打开的链接将不会显示在此处。
-
-   这两个 URL 表通过传递操作和位置显示网络钓鱼电子邮件中的前几个 url，并且它们显示的 URL 单击已被阻止 (或访问被阻止) 的情况，以便您可以了解用户收到的潜在坏链接和用户的交互情况。 在这里，你可以进行进一步分析。 例如，在图表下方，您可以看到在组织的环境中被阻止的电子邮件中的最高 Url。
+4. 选择一个或多个选项，如"阻止"和"阻止覆盖"，然后选择与应用该筛选器的选项位于同一行上的"刷新"按钮。   (不刷新浏览器窗口。) 
 
    > [!div class="mx-imgBorder"]
-   > ![阻止的资源管理器 Url](../../media/ExplorerPhishClickVerdictURLs.png)
+   > ![URL 和单击裁定](../../media/ThreatExplorerEmailPhishClickVerdictOptions.png)
 
-   选择一个 URL 以查看更详细的信息。
+   报告刷新以显示报告下的"URL"选项卡上的两个不同的 URL 表：
+
+   - **顶部 URL** 是筛选到的邮件中的 URL，以及每个 URL 的电子邮件传递操作计数。 在网络钓鱼电子邮件视图中，此列表通常包含合法 URL。 攻击者在邮件中混入好 URL 和坏 URL 以尝试传递这些 URL，但它们让恶意链接看起来更有趣。 URL 表按总电子邮件计数排序，但隐藏此列可简化视图。
+
+   - **点击** 量居前的是单击的安全链接包装 URL，按总点击次数排序。 此列也不显示，以简化视图。 按列的总计数指示每个单击的 URL 的安全链接单击裁定计数。 在网络钓鱼电子邮件视图中，这些 URL 通常是可疑或恶意的 URL。 但视图可能包括不是威胁但包含钓鱼邮件的 URL。 此处不会显示单击未包链接的 URL。
+
+   这两个 URL 表按传递操作和位置显示网络钓鱼电子邮件中的顶部 URL。 这些表显示了在出现警告时被阻止或访问的 URL 单击，因此你可以看到向用户显示哪些潜在的错误链接以及用户点击了哪些链接。 在这里，你可以执行进一步的分析。 例如，在图表下方，你可以看到在组织环境中被阻止的电子邮件中的顶部 URL。
+
+   > [!div class="mx-imgBorder"]
+   > ![阻止的浏览器 URL](../../media/ExplorerPhishClickVerdictURLs.png)
+
+   选择 URL 以查看更多详细信息。
 
    > [!NOTE]
-   > 在 "URL 浮出控件" 对话框中，将删除对电子邮件的筛选，以显示您的环境中 URL 公开的完整视图。 这样，您就可以在资源管理器中筛选出您关注的电子邮件，找出潜在威胁的特定 Url，然后通过 "URL 详细信息") 对话框 (了解您的环境中的 URL 公开情况，而无需向资源管理器视图本身添加 URL 筛选器。
+   > 在"URL"弹出对话框中，删除对电子邮件的筛选以显示环境中 URL 曝光的完整视图。 这允许你在资源管理器中筛选你关注的电子邮件，查找潜在威胁的特定 URL，然后通过 URL 详细信息对话框 (扩展你了解环境中 URL 的曝光) 而无需将 URL 筛选器添加到资源管理器视图本身。
 
-### <a name="interpretation-of-different-click-verdicts"></a>不同的单击 verdicts 的解释
+### <a name="interpretation-of-click-verdicts"></a>单击裁定的解释
 
-在电子邮件或 URL flyouts 中，点击率和在筛选体验中，你将看到不同的 click 值作为你的求职体验的一部分。 下面是单击 Verdicts 及其解释的可能值：
+在"电子邮件"或"URL"飞出、"点击量"以及筛选体验内，你将看到不同的单击裁定值：
 
-- **无**：我们无法捕获 URL 的结论。 用户可能已通过 URL 单击。
-- **允许**：允许用户导航到 URL。
-- 已 **阻止**：阻止用户导航到 URL。
-- **挂起的判定**：用户显示沙箱挂起页面。
-- **被阻止的被覆盖**：阻止用户导航到 URL;但是，用户 overrode 阻止导航到 URL。
-- **挂起的判定被绕过**：向用户显示沙箱页面;但是，用户 overrode 页面以导航到 URL。
-- **错误**：用户显示错误页。 这也意味着捕获判定的错误。
-- **失败**：捕获判定时出现未知异常。 用户可能已通过 URL 单击。
+- **无：** 无法捕获 URL 裁定。 用户可能已经单击了 URL。
+- **允许：** 允许用户导航到 URL。
+- **已阻止：** 阻止用户导航到 URL。
+- **待定裁定：** 用户被呈现了等待触发的页面。
+- **阻止重写：** 阻止用户直接导航到 URL。 但是，用户会超过此块以导航到 URL。
+- **已绕过待定裁定：** 向用户显示触发页面。 但用户会过度更改邮件以访问 URL。
+- **错误：** 用户收到错误页，或捕获裁定时出错。
+- **失败：** 捕获裁定时发生未知异常。 用户可能已经单击了 URL。
 
 ## <a name="review-email-messages-reported-by-users"></a>查看用户报告的电子邮件
 
-假设您想要查看您的组织中的用户使用 [Outlook 和 web 上的 outlook 的报告邮件外接程序](enable-the-report-message-add-in.md)报告为垃圾邮件、非垃圾邮件或网络钓鱼的电子邮件。 为此，请使用浏览器 (的 [电子邮件 > 提交](threat-explorer-views.md#email--submissions) 视图或实时检测) 。
+假设您想通过 Outlook 和 Web 上的 Outlook 报告邮件外接程序查看组织中用户报告为垃圾邮件、非垃圾邮件或网络钓鱼[的电子邮件](enable-the-report-message-add-in.md)。 若要查看它们，请使用资源管理器中的[  >  "电子邮件](threat-explorer-views.md#email--submissions)提交" (或实时检测) 。
 
-1. 在 "安全性 & 合规性中心 (<https://protection.office.com> ") 中，选择 " **威胁管理** \> **资源管理器** (" 或 " **实时检测** ") 。  (本示例使用 Explorer。 ) 
+1. 在安全&中心 () ，选择威胁管理资源管理器 (或实时检测 <https://protection.office.com>  \> ) 。   (此示例使用 Explorer.) 
 
-2. 在 " **视图** " 菜单中，选择 " **电子邮件** \> **提交**"。
+2. 在"**视图"** 菜单中，选择 **"** \> **电子邮件提交"。**
 
    > [!div class="mx-imgBorder"]
-   > ![用于电子邮件的浏览器的视图菜单](../../media/explorer-view-menu-email-user-reported.png)
+   > ![适用于电子邮件资源管理器的"查看"菜单](../../media/explorer-view-menu-email-user-reported.png)
 
-3. 单击 " **发件人**"，然后选择 " **基本** \> **报告类型**"。
+3. 单击 **"** 发件人"，然后选择 **"基本** \> **报告类型"。**
 
-4. 选择一个选项，如 " **网络钓鱼**"，然后单击 " **刷新** " 按钮。
+4. 选择一个选项，如 **钓鱼** 邮件，然后选择" **刷新"** 按钮。
 
    > [!div class="mx-imgBorder"]
    > ![用户报告的网络钓鱼](../../media/EmailUserReportedReportType.png)
 
-报告将刷新，以显示组织中的人员已报告为网络钓鱼尝试的电子邮件的相关数据。 您可以使用此信息进行进一步分析，并在必要时调整 [Microsoft Defender For Office 365 中的反网络钓鱼策略](configure-atp-anti-phishing-policies.md)。
+报告将刷新以显示有关组织中人员报告为网络钓鱼尝试的电子邮件的数据。 可以使用此信息进行进一步分析，如有必要，在 [Microsoft Defender for Office 365](configure-atp-anti-phishing-policies.md)中调整防钓鱼策略。
 
 ## <a name="start-automated-investigation-and-response"></a>启动自动调查和响应
 
 > [!NOTE]
-> **Microsoft Defender For office 365 计划 2** 和 **Office 365 E5** 中提供了自动调查和响应功能。
+> Microsoft Defender for *Office 365* 计划 2 和 *Office 365 E5* 中提供了自动调查和响应功能。
 
- (NEW！ ) [自动调查和响应](automated-investigation-response-office.md) 可在调查和缓解 cyberattacks 的过程中节省您的安全操作团队时间和精力。 除了配置可触发安全行动手册的警报外，还可以从资源管理器中的视图启动自动调查和响应过程。
+[自动调查和响应](automated-investigation-response-office.md) 可以节省安全运营团队在调查和缓解网络攻击上花费的时间和精力。 除了配置可触发安全手册的警报外，还可以从资源管理器中的视图启动自动调查和响应过程。 有关详细信息，请参阅 [示例：安全管理员从资源管理器触发调查](automated-investigation-response-office.md#example-a-security-administrator-triggers-an-investigation-from-threat-explorer)。
 
-有关此操作的详细信息，请参阅 [示例：安全管理员从资源管理器触发调查](automated-investigation-response-office.md#example-a-security-administrator-triggers-an-investigation-from-threat-explorer)。
+## <a name="more-ways-to-use-explorer-and-real-time-detections"></a>更多使用资源管理器和实时检测的方法
 
-## <a name="more-ways-to-use-explorer-or-real-time-detections"></a>使用资源管理器 (或实时检测) 的更多方法
-
-除了本文中介绍的方案，您还可以使用浏览器 (或实时检测) 更多的报告选项。
+除了本文中概述的方案之外，资源管理器或实时检测功能中 (更多报告) 。 另请参阅以下文章：
 
 - [查找和调查投递的恶意电子邮件](investigate-malicious-email-that-was-delivered.md)
-- [查看 SharePoint Online、OneDrive 和 Microsoft 团队中检测到的恶意文件](malicious-files-detected-in-spo-odb-or-teams.md)
-- [获取有关威胁资源管理器中的视图的概述 (和实时检测) ](threat-explorer-views.md)
+- [查看在 SharePoint Online、OneDrive 和 Microsoft Teams 中检测到的恶意文件](malicious-files-detected-in-spo-odb-or-teams.md)
+- [大致了解威胁资源管理器中的 (和实时检测) ](threat-explorer-views.md)
 - [威胁防护状态报告](view-email-security-reports.md#threat-protection-status-report)
 - [Microsoft 威胁防护中的自动调查和响应](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-autoir)
 
 ## <a name="required-licenses-and-permissions"></a>所需的许可证和权限
 
-您必须拥有 [Microsoft Defender For Office 365](office-365-atp.md) 才能获取资源管理器或实时检测。
+必须具有适用于 [Office 365 的 Microsoft Defender，](office-365-atp.md) 以使用资源管理器或实时检测。
 
-- 资源管理器包含在 Office 365 计划2的 Defender 中。
-- "实时检测" 报告包含在 Office 365 计划1的 Defender 中。
-- 计划为应由 Defender for Office 365 保护的所有用户分配许可证。  (资源管理器或实时检测显示许可用户的检测数据。 ) 
+- 资源管理器包含在 Defender for Office 365 计划 2 中。
+- 实时检测报告包含在 Defender for Office 365 计划 1 中。
+- 计划为应受 Office 365 Defender 保护的所有用户分配许可证。 资源管理器和实时检测显示许可用户的检测数据。
 
-若要查看和使用资源管理器或实时检测，您必须具有适当的权限，例如，授予安全管理员或安全阅读者的权限。
+若要查看和使用资源管理器或实时检测，您必须具有适当的权限，例如授予安全管理员或安全读者的权限。
 
-- 对于 "安全 & 合规中心"，您必须具有以下分配的角色之一：
+- 对于安全&合规中心，必须分配有以下角色之一：
 
   - 组织管理
-  - 安全管理员 (可在 Azure Active Directory 管理中心 (中分配此项 <https://aad.portal.azure.com>) 
+  - 安全 (可以在 Azure Active Directory 管理中心 () <https://aad.portal.azure.com>
   - 安全读取者
 
-- 对于 Exchange Online，必须在 Exchange 管理中心中分配以下角色之一 (<https://admin.protection.outlook.com/ecp/>) 或 [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell)：
+- 对于 Exchange Online，必须在 Exchange 管理中心或 Exchange Online PowerShell 中分配 <https://admin.protection.outlook.com/ecp/> () 角色 [之一](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell)：
 
   - 组织管理
   - 仅查看组织管理
   - 仅查看收件人
   - 合规性管理
 
-若要了解有关角色和权限的详细信息，请参阅以下资源：
+若要详细了解角色和权限，请参阅以下资源：
 
 - [安全与合规中心内的权限](permissions-in-the-security-and-compliance-center.md)
 - [Exchange Online 中的功能权限](https://docs.microsoft.com/exchange/permissions-exo/feature-permissions)
 
-## <a name="some-differences-between-threat-explorer-and-real-time-detections"></a>威胁资源管理器和实时检测的区别
+## <a name="differences-between-threat-explorer-and-real-time-detections"></a>威胁资源管理器和实时检测之间的差异
 
-- **实时检测** 报告可在 Office 365 计划1的 defender 中使用，而 **威胁浏览器** 在 office 365 计划2的 defender 中可用。
-- **实时检测** 报告允许你实时查看检测。 **威胁资源管理器** 也会执行此功能，但也允许您查看给定攻击的其他详细信息。
-- " **所有电子邮件** " 视图在 **威胁资源管理器** 中可用 (并且不在 **实时检测** 报告) 中。
-- **威胁资源管理器** 中包含更多筛选功能和可用操作。
-
-有关更多详细信息，请参阅 [Microsoft defender For office 365 服务说明：功能跨 Defender For office 365 计划的可用性](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans)。
+- *实时检测报告在* Defender for Office 365 计划 1 中提供。 *威胁资源管理器* 在 Office 365 计划 2 的 Defender 中可用。
+- 实时检测报告允许你实时查看检测。 威胁资源管理器也这样做，但它还提供给定攻击的其他详细信息。
+- " *所有电子邮件* "视图在威胁资源管理器中可用，但在实时检测报告中不可用。
+- 威胁资源管理器中包含更多筛选功能和可用操作。 有关详细信息，请参阅 [Microsoft Defender for Office 365 服务说明：跨 Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans)计划的 Defender 的功能可用性。
