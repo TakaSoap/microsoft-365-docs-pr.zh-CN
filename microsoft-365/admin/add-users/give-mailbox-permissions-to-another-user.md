@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 1dbcf12f-a9de-4d1d-b0b3-a227f8a736d8
 description: '了解如何授予用户访问其他用户的邮箱的权限。 这将使用户拥有从其他用户的邮箱读取邮件和发送邮件的权限。 '
-ms.openlocfilehash: 0b6977efbd6041a11c67ed66c9b7ecc72a38bde4
-ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
+ms.openlocfilehash: af12cfe3acad9e12ca3983c9fa13f52b72f0a467
+ms.sourcegitcommit: 16e018f8b6eef5dad48eabf179691ead3cebe533
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "46560371"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "49725149"
 ---
 # <a name="give-mailbox-permissions-to-another-user---admin-help"></a>向其他用户授予邮箱权限 - 管理员帮助
 
@@ -122,6 +122,10 @@ ms.locfileid: "46560371"
 
 6. 选择“**保存**”。
 
+
+> [!NOTE]
+> “**读取**”和“**管理**”权限在 Exchange 管理中心中授予时称为“**完全访问**”权限。 完全访问权限不授予“**发送方式**”或“**代表发送**”权限。
+
 ::: moniker-end
 
 ::: moniker range="o365-germany"
@@ -159,7 +163,7 @@ ms.locfileid: "46560371"
 
 1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。  
 
-2. 选择用户的名称（你打算向其授予**代表发送**权限），打开其 "属性" 窗格。
+2. 选择用户的名称（你打算向其授予 **代表发送** 权限），打开其 "属性" 窗格。
     
 3. 在 **邮件** 选项卡上，选择 **管理邮箱权限**。
     
