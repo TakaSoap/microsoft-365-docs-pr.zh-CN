@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 description: 通过 Microsoft 365 中的记录管理，你可以将保留计划应用到文件计划中，以管理保留、记录声明和处置。
-ms.openlocfilehash: 6648a3a671e40dd5218eba1a1e8bafe42120f0de
-ms.sourcegitcommit: 9d1351ea6d9942550b52132817f9f9693ddef2fd
+ms.openlocfilehash: 883fd65e3fba716018a1ed35cc457c2eb8f06c52
+ms.sourcegitcommit: 5756896ad87e28fac20f7981eaaeacfb0c098254
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2020
-ms.locfileid: "48830523"
+ms.lasthandoff: 12/23/2020
+ms.locfileid: "49730163"
 ---
 # <a name="learn-about-records-management-in-microsoft-365"></a>了解 Microsoft 365 中的记录管理
 
@@ -109,7 +109,7 @@ ms.locfileid: "48830523"
 > 
 > 由于这些操作不可逆，在针对保留标签选择此选项之前，请确定确实需要使用合规性记录。 为帮助防止意外配置，默认情况下该选项不可用，但必须先使用 PowerShell 启用。 有关说明，请参阅[使用保留标签 声明记录](declare-records.md)。
 
-## <a name="next-steps"></a>后续步骤
+## <a name="configuration-guidance"></a>配置指南
 
 请参阅[记录管理入门](get-started-with-records-management.md)。
 

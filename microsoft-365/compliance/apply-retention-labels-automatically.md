@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 创建保留标签和自动标记策略，以便你可以自动应用标签以保留需要的内容并删除不需要的内容
-ms.openlocfilehash: 766106e9c650047e37c9fa341bd2e78b390d814d
-ms.sourcegitcommit: d3ca8021f7da00a474ac14aac5f1358204a848f2
+ms.openlocfilehash: b4e1afbc520b7ec046b4af399e7c1c0cd094e8f9
+ms.sourcegitcommit: 5756896ad87e28fac20f7981eaaeacfb0c098254
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49519450"
+ms.lasthandoff: 12/23/2020
+ms.locfileid: "49730153"
 ---
 # <a name="automatically-apply-a-retention-label-to-retain-or-delete-content"></a>自动应用保留标签来保留或删除内容
 
@@ -55,8 +55,9 @@ ms.locfileid: "49519450"
 > [!NOTE]
 > "自动策略" 使用服务侧标记（带条件）自动应用保留标签。 执行以下操作时，还可使用标签策略自动应用保留标签： 
 >
-> - 为 SharePoint 和 Outlook 应用默认保留标签，以便自动标记未标记的内容
->- 使用规则将保留标签应用于电子邮件
+> - 将保留标签应用于文档理解 SharePoint Syntex 中的模型
+> - 将默认保留标签应用于 SharePoint 和 Outlook
+>- 使用 Outlook 规则将保留标签应用于电子邮件
 >
 > 有关这些情况，请参阅 [在应用中创建和应用保留标签](create-apply-retention-labels.md)。
 
