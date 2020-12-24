@@ -12,23 +12,30 @@ ms.collection: enabler-strategic
 ROBOTS: NOINDEX, NOFOLLOW
 localization_priority: None
 description: 了解如何查找主题体验的资源。
-ms.openlocfilehash: bc38e0a7310dd9c1d3787dbe6cabe646009d2bff
-ms.sourcegitcommit: 884ac262443c50362d0c3ded961d36d6b15d8b73
+ms.openlocfilehash: 9141f6b445932234ebfa5a3d77833f64110ceeb4
+ms.sourcegitcommit: 18f95c4b7f74881b4a6ce71ad2ffa78a6ead5584
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49698815"
+ms.lasthandoff: 12/24/2020
+ms.locfileid: "49731339"
 ---
 # <a name="introduction-to-topic-experiences-preview"></a>预览版主题体验 (简介) 
 
 > [!Note] 
 > 本文中的内容适用于 Project Cortex 专用预览版。 [了解更多关于 Project Cortex的信息](https://aka.ms/projectcortex)。
 
+</br>
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4LhZP]  
+
+</br>
+
+
 主题体验是一项 Office 365 服务，可帮助组织将信息转换为知识。
 
-此页上的资源旨在让你开始了解和使用组织中的主题体验。
+此页面上的资源旨在让你开始了解和使用组织中的主题体验。
 
-## <a name="get-started"></a>入门
+## <a name="get-started"></a>开始行动
 
 本节中的资源可帮助你了解有关主题体验及其如何提供帮助的详细信息。
 
@@ -58,13 +65,13 @@ ms.locfileid: "49698815"
 |了解如何管理可以查看主题的人|[管理主题可见性](topic-experiences-knowledge-rules.md)|
 |了解如何管理主题发现设置|[管理主题发现](topic-experiences-discovery.md)|
 
-## <a name="work-with-topics"></a>使用主题
+## <a name="work-with-topics"></a>处理主题
 
 本节中的资源可帮助用户了解如何使用和管理主题。
 
 | 如果要查找此信息： | 参考资源： |
 |:-----|:-----|
-|了解如何使用主题|[主题中心概述](topic-center-overview.md)<br><br>[管理主题](manage-topics.md)<br><br>[创建新主题](create-a-topic.md)<br><br>[编辑现有主题](edit-a-topic.md)<br><br>|
+|了解如何使用主题|[管理中心概述](topic-center-overview.md)<br><br>[管理主题](manage-topics.md)<br><br>[新建主题](create-a-topic.md)<br><br>[编辑现有主题](edit-a-topic.md)<br><br>|
 |了解用户角色|[主题体验角色](topic-experiences-roles.md)|
 |了解主题可能不同于不同用户的原因|[主题体验安全修整](topic-experiences-security-trimming.md)|
 |了解如何防止标识和查看特定主题|[限制对主题的访问](restrict-access-to-topics.md)|

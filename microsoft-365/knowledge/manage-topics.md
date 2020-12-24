@@ -11,17 +11,24 @@ search.appverid: ''
 ms.collection: enabler-strategic
 ROBOTS: NOINDEX, NOFOLLOW
 localization_priority: None
-ms.openlocfilehash: 832067d157ed9ffcba1ed9ad514c375cbbdd752b
-ms.sourcegitcommit: 884ac262443c50362d0c3ded961d36d6b15d8b73
+ms.openlocfilehash: 92cf9c860ddbf199c70a7c2d89a7daba3dfe0fe7
+ms.sourcegitcommit: 18f95c4b7f74881b4a6ce71ad2ffa78a6ead5584
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49698803"
+ms.lasthandoff: 12/24/2020
+ms.locfileid: "49731318"
 ---
 # <a name="manage-topics-in-the-topic-center-preview"></a>管理主题中心中的主题 (预览) 
 
 > [!Note] 
 > 本文中的内容适用于 Project Cortex 专用预览版。 [了解更多关于 Project Cortex的信息](https://aka.ms/projectcortex)。
+
+</br>
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4LxDx]  
+
+</br>
+
 
 在主题中心中，知识管理员可以查看"管理主题"页，以查看由知识管理员指定的 SharePoint 源位置中标识的主题。  
 
@@ -29,7 +36,7 @@ ms.locfileid: "49698803"
 
 
 
-知识经理可帮助指导发现的主题在主题生命周期中，主题包括：
+知识经理可帮助指导发现的主题在主题生命周期内，主题包括：
 
 - 建议：主题已由 AI 标识，并且具有足够的支持资源、连接和属性来满足主题阈值。
 - 已确认：验证 AI 建议的主题。 验证通过知识管理员确认完成。此外，如果至少有两个用户通过主题反馈对主题有效提供积极反馈，可以确认主题。
@@ -55,7 +62,7 @@ ms.locfileid: "49698803"
 
 查看建议的主题：
 
-1. 在 **"管理主题"** 页上，选择 **"建议"** 选项卡，选择主题以打开主题页。</br>
+1. 在 **"管理主题"** 页上，选择 **"建议"** 选项卡，选择主题以打开主题页面。</br>
 
 2. 在主题页面上，查看主题页面，如果需要对页面进行任何更改，请选择"编辑"。
 
@@ -73,7 +80,7 @@ ms.locfileid: "49698803"
 
 ## <a name="confirmed-topics"></a>已确认的主题
 
-在"管理主题"页上，在指定的 SharePoint 源位置中发现且已由知识经理确认的主题或由两个或多个人员通过卡片反馈机制确认的"群源"主题将列在"已确认"选项卡中。 如果需要，有权管理主题的用户可以审阅已确认的主题并选择拒绝它们。
+在"管理主题"页上，在指定的 SharePoint 源位置中发现并且已由知识经理确认的主题或由两个或多个人员通过卡片反馈机制确认的"群源"主题将列在"已确认" **选项卡中。** 如果需要，有权管理主题的用户可以审阅已确认的主题并选择拒绝它们。
 
 查看已确认的主题：
 
