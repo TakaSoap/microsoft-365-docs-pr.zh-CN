@@ -13,12 +13,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: 了解如何为 Microsoft 365 for Exchange Online、Skype for Business、SharePoint Online、OneDrive for Business 和 Teams 文件设置客户密钥。
-ms.openlocfilehash: b6ead2f92475dcfe230fc13d8ab1137365238755
-ms.sourcegitcommit: c0495e224f12c448bfc162ef2e4b33b82f064ac8
+ms.openlocfilehash: a89b5cb4144de3b548c7ac328f0be775b4262cdc
+ms.sourcegitcommit: 8a6540df9d63db1ffb69711381dc44fc2fdaf547
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49709514"
+ms.lasthandoff: 12/29/2020
+ms.locfileid: "49736061"
 ---
 # <a name="set-up-customer-key-at-the-application-level"></a>在应用程序级别设置客户密钥
 
@@ -35,7 +35,7 @@ ms.locfileid: "49709514"
 
 若要了解本主题中的概念和过程，请查看 [Azure Key Vault](https://docs.microsoft.com/azure/key-vault/) 文档。 此外，请熟悉 Azure 中使用的术语，例如 [，Azure AD 租户](https://docs.microsoft.com/previous-versions/azure/azure-services/jj573650(v=azure.100)#what-is-an-azure-ad-tenant)。
 
-FastTrack 仅用于收集注册客户密钥所需的租户和服务配置信息。 客户密钥产品/服务通过 FastTrack 发布，以便你和我们的合作伙伴可以使用同一方法提交所需信息。 FastTrack 还便于存档你在产品/服务中提供的数据。
+FastTrack 仅用于收集注册客户密钥所需的租户和服务配置信息。 客户密钥产品/服务通过 FastTrack 发布，以便你和我们的合作伙伴可以方便地使用相同的方法提交所需信息。 FastTrack 还便于存档你在产品/服务中提供的数据。
   
 如果您需要文档之外的其他支持，请联系 Microsoft 咨询服务 (MCS) 、Premier Field Engineering (PFE) 或 Microsoft 合作伙伴寻求帮助。 若要提供有关客户密钥（包括文档）的反馈，请将你的想法、建议和角度customerkeyfeedback@microsoft.com。
   
@@ -45,7 +45,7 @@ FastTrack 仅用于收集注册客户密钥所需的租户和服务配置信息�
   
 **在 Azure 和 Microsoft FastTrack 中：**
   
-你通过远程连接到 Azure PowerShell 完成大部分任务。 为了获得最佳结果，请使用版本 4.4.0 或更高版本的 Azure PowerShell。
+通过远程连接到 Azure PowerShell，可以完成大部分任务。 为了获得最佳结果，请使用版本 4.4.0 或更高版本的 Azure PowerShell。
   
 - [创建两个新的 Azure 订阅](#create-two-new-azure-subscriptions)
 
@@ -105,7 +105,7 @@ SharePoint Online 和 OneDrive for Business：
   
 ### <a name="submit-a-request-to-activate-customer-key-for-office-365"></a>提交激活 Office 365 客户密钥的请求
 
-完成 Azure 步骤后，你需要在 [Microsoft FastTrack](https://fasttrack.microsoft.com/)门户中提交产品/服务请求。 通过 FastTrack Web 门户提交请求后，Microsoft 会验证你提供的 Azure 密钥保管库配置数据和联系信息。 在产品/服务表单中针对组织的授权官员做出的选择对于完成客户密钥注册至关重要且是必需的。 在表单中选择的组织官员将用于确保撤销和销毁用于客户密钥数据加密策略的所有密钥的请求的真实性。 你需要执行此步骤一次以激活 Exchange Online 和 Skype for Business 的客户密钥，第二次激活 SharePoint Online 和 OneDrive for Business 的客户密钥。
+完成 Azure 步骤后，你需要在 [Microsoft FastTrack](https://fasttrack.microsoft.com/)门户中提交产品/服务请求。 通过 FastTrack Web 门户提交请求后，Microsoft 会验证你提供的 Azure 密钥保管库配置数据和联系信息。 在产品/服务表单中针对组织的授权官员做出的选择对于完成客户密钥注册至关重要且是必需的。 在表单中选择的组织官员将用于确保撤销和销毁用于客户密钥数据加密策略的所有密钥的任何请求的真实性。 你需要执行此步骤一次以激活 Exchange Online 和 Skype for Business 的客户密钥，第二次激活 SharePoint Online 和 OneDrive for Business 的客户密钥。
   
 若要提交产品/服务以激活客户密钥，请完成以下步骤：
   
@@ -121,13 +121,13 @@ SharePoint Online 和 OneDrive for Business：
 
    - **SharePoint Online、OneDrive 和 Teams 文件：** 选择 **Sharepoint 和 OneDrive** 产品/服务的请求加密密钥帮助。
 
-5. 查看产品/服务详细信息后，选择 **"继续"步骤 2。**
+5. 查看产品/服务详细信息后，选择 **"继续步骤 2"。**
 
 6. 填写产品/服务表单上的所有适用详细信息和请求的信息。 请特别注意你选择哪些组织官员有权批准永久和不可恢复的加密密钥和数据销毁。 完成表单后，选择"提交 **"。**
 
 ### <a name="register-azure-subscriptions-to-use-a-mandatory-retention-period"></a>注册 Azure 订阅以使用强制保留期
 
-根加密密钥的临时或永久丢失可能会非常中断，甚至对服务操作造成灾难性影响，并可能导致数据丢失。 因此，与客户密钥一起使用的资源需要强大的保护。 用于客户密钥的所有 Azure 资源都提供默认配置以外的保护机制。 Azure 订阅可以标记或注册，以防止立即取消和不可撤销的取消。 这称为注册强制保留期。 若要为 Azure 订阅注册强制保留期所需的步骤，需要与 Microsoft 365 团队协作。 此过程可能需要一到五个工作日。 以前，这有时称为"不取消"。
+根加密密钥的临时或永久丢失可能会非常中断，甚至对服务操作造成灾难性影响，并可能导致数据丢失。 因此，与客户密钥一起使用的资源需要强大的保护。 用于客户密钥的所有 Azure 资源都提供默认配置以外的保护机制。 Azure 订阅可以标记或注册，以防止立即取消和不可撤销的取消。 这称为注册强制保留期。 为强制保留期注册 Azure 订阅所需的步骤需要与 Microsoft 365 团队协作。 此过程可能需要一到五个工作日。 以前，这有时称为"不取消"。
   
 在联系 Microsoft 365 团队之前，必须针对使用客户密钥的每个 Azure 订阅执行以下步骤。 在启动之前，请确保已安装 [Azure PowerShell Az](https://docs.microsoft.com/powershell/azure/new-azureps-module-az) 模块。
   
@@ -149,7 +149,7 @@ SharePoint Online 和 OneDrive for Business：
 
    一旦 Microsoft 收到 (并验证) 你已注册订阅以使用强制保留期，完成此过程的服务级别协议 (SLA) 即为五个工作日。
 
-4. 从 Microsoft 收到注册完成通知后，通过运行以下 Get-AzProviderFeature命令验证注册状态。 如果验证，则Get-AzProviderFeature返回 **注册** 状态 **属性的值"已注册"。** 对于每个订阅执行此操作。
+4. 从 Microsoft 收到注册完成通知后，通过运行以下Get-AzProviderFeature验证注册状态。 如果验证，则Get-AzProviderFeature返回 **注册** 状态 **属性的值"已注册"。** 对于每个订阅执行此操作。
 
    ```powershell
    Set-AzContext -SubscriptionId <SubscriptionId>
@@ -210,7 +210,7 @@ SharePoint Online 和 OneDrive for Business：
    Set-AzKeyVaultAccessPolicy -VaultName Contoso-O365EX-NA-VaultA1 -UserPrincipalName alice@contoso.com -PermissionsToKeys create,import,list,get,backup,restore
    ```
 
-- **可更改** Azure 密钥保管库本身权限的关键保管库参与者。 当员工离开或加入团队时，或者当密钥保管库管理员合法需要删除或还原密钥的权限时，你将需要更改这些权限。 需要向这组密钥保管库参与者授予 **密钥** 保管库上的参与者角色。 可以使用 Azure 资源管理器分配此角色。 有关详细步骤，请参阅Role-Based [访问控制来管理对 Azure 订阅资源的访问权限](https://docs.microsoft.com/azure/active-directory/role-based-access-control-configure)。 创建订阅的管理员具有隐式访问权限，以及将其他管理员分配到参与者角色的能力。
+- **可更改** Azure 密钥保管库本身权限的关键保管库参与者。 当员工离开或加入团队时，或者当密钥保管库管理员合法需要删除或还原密钥的权限时，你将需要更改这些权限。 需要向这组密钥保管库参与者授予 **密钥** 保管库上的参与者角色。 可以使用 Azure 资源管理器分配此角色。 有关详细步骤，请参阅Role-Based [访问控制管理对 Azure 订阅资源的访问权限](https://docs.microsoft.com/azure/active-directory/role-based-access-control-configure)。 创建订阅的管理员具有隐式访问权限，以及将其他管理员分配到参与者角色的能力。
 
 - 如果你打算将客户密钥与 Exchange Online 和 Skype for Business 一同使用，则需要授予 Microsoft 365 代表 Exchange Online 和 Skype for Business 使用密钥保管库的权限。 同样，如果你打算将客户密钥用于 SharePoint Online 和 OneDrive for Business，则需要添加 Microsoft 365 代表 SharePoint Online 和 OneDrive for Business 使用密钥保管库的权限。 若要向 Microsoft 365 授予权限，请运行 **Set-AzKeyVaultAccessPolicy** cmdlet，使用以下语法： 
 
@@ -292,7 +292,7 @@ Add-AzKeyVaultKey -VaultName Contoso-O365EX-NA-VaultA1 -Name Contoso-O365EX-NA-V
   
 一些组织倾向于使用此方法来建立其密钥的来源，然后此方法还提供以下内容：
   
-- 用于导入的工具集包括 nCipher 的证明，表明用于加密生成的密钥的密钥 Exchange 密钥 (KEK) 不可导出，并且是在 nCipher 制造的真正 HSM 内生成的。
+- 用于导入的工具集包括来自 nCipher 的证明，表明用于加密生成的密钥的密钥 Exchange 密钥 (KEK) 不可导出，并且是在 nCipher 制造的真正 HSM 内生成的。
 
 - 工具集包括 nCipher 的证明，表明 Azure 密钥保管库安全世界也在 nCipher 制造的真正 HSM 上生成。 此证明向你证明 Microsoft 也使用正版 nCipher 硬件。
 
@@ -312,7 +312,7 @@ Microsoft 365 要求 Azure Key Vault 订阅设置为"不取消"，并且客户�
   
 ### <a name="back-up-azure-key-vault"></a>备份 Azure 密钥保管库
 
-创建或对密钥的任何更改后，立即执行备份并存储备份的副本（联机和脱机）。 脱机副本不应连接到任何网络，例如物理安全或商业存储设备中。 应至少将一个备份副本存储在发生灾难时可访问的位置。 如果密钥保管库密钥被永久销毁或无法操作，备份 blob 是还原密钥材料的唯一方法。 Azure 密钥保管库外部且已导入 Azure 密钥保管库的密钥不符合备份条件，因为客户密钥使用该密钥所需的元数据不存在于外部密钥中。 只有从 Azure Key Vault 获取的备份可用于使用客户密钥执行还原操作。 因此，在上载或创建密钥后，必须备份 Azure 密钥保管库。
+创建或对密钥的任何更改后，立即执行备份并存储备份的副本（联机和脱机）。 脱机副本不应连接到任何网络，例如物理安全或商业存储设备中。 在灾难发生时，应至少将一个备份副本存储在可访问的位置。 如果密钥保管库密钥被永久销毁或无法操作，备份 blob 是还原密钥材料的唯一方法。 Azure 密钥保管库外部且已导入 Azure 密钥保管库的密钥不符合备份条件，因为客户密钥使用该密钥所需的元数据不存在于外部密钥中。 只有从 Azure Key Vault 获取的备份可用于使用客户密钥执行还原操作。 因此，在上载或创建密钥后，必须备份 Azure 密钥保管库。
   
 若要创建 Azure 密钥保管库密钥的备份，请 [运行 Backup-AzKeyVaultKey](https://docs.microsoft.com/powershell/module/az.keyvault/backup-azkeyvaultkey) cmdlet，如下所示：
 
@@ -346,9 +346,9 @@ Backup-AzKeyVaultKey -VaultName Contoso-O365EX-NA-VaultA1 -Name Contoso-O365EX-N
 Get-AzKeyVault -VaultName <vault name>
 ```
 
-在输出中，查找访问策略和 Exchange Online 标识 (GUID) 或 SharePoint Online 标识 (GUID) 。 以上所有三种权限都必须显示在"密钥权限"下。
+在输出中，查找访问策略和 Exchange Online 标识 (GUID) 或 SharePoint Online 标识 (GUID) 。 以上三种权限都必须显示在"密钥权限"下。
   
-如果访问策略配置不正确，请运行 Set-AzKeyVaultAccessPolicy cmdlet，如下所示：
+如果访问策略配置不正确，请Set-AzKeyVaultAccessPolicy cmdlet，如下所示：
   
 ```powershell
 Set-AzKeyVaultAccessPolicy -VaultName <vault name> -PermissionsToKeys wrapKey,unwrapKey,get -ServicePrincipalName <Office 365 appID>
@@ -486,13 +486,14 @@ Get-MailboxStatistics -Identity <GeneralMailboxOrMailUserIdParameter> | fl IsEnc
 2. 在 Microsoft SharePoint Online 命令行管理程序 中，Register-SPODataEncryptionPolicy cmdlet，如下所示：
 
    ```powershell
-   Register-SPODataEncryptionPolicy -PrimaryKeyVaultName <PrimaryKeyVaultName> -PrimaryKeyName <PrimaryKeyName> -PrimaryKeyVersion <PrimaryKeyVersion> -SecondaryKeyVaultName <SecondaryKeyVaultName> -SecondaryKeyName <SecondaryKeyName> -SecondaryKeyVersion <SecondaryKeyVersion>
+   Register-SPODataEncryptionPolicy -Identity <adminSiteCollectionURL> -PrimaryKeyVaultName <PrimaryKeyVaultName> -PrimaryKeyName <PrimaryKeyName> -PrimaryKeyVersion <PrimaryKeyVersion> -SecondaryKeyVaultName <SecondaryKeyVaultName> -SecondaryKeyName <SecondaryKeyName> -SecondaryKeyVersion <SecondaryKeyVersion>
    ```
+
    示例：
   
- ```powershell
-Register-SPODataEncryptionPolicy -PrimaryKeyVaultName 'stageRG3vault' -PrimaryKeyName 'SPKey3' -PrimaryKeyVersion 'f635a23bd4a44b9996ff6aadd88d42ba' -SecondaryKeyVaultName 'stageRG5vault' -SecondaryKeyName 'SPKey5' -SecondaryKeyVersion '2b3e8f1d754f438dacdec1f0945f251a’
-```
+   ```powershell
+   Register-SPODataEncryptionPolicy -Identity https://contoso.sharepoint.com -PrimaryKeyVaultName 'stageRG3vault' -PrimaryKeyName 'SPKey3' -PrimaryKeyVersion 'f635a23bd4a44b9996ff6aadd88d42ba' -SecondaryKeyVaultName 'stageRG5vault' -SecondaryKeyName 'SPKey5' -SecondaryKeyVersion '2b3e8f1d754f438dacdec1f0945f251a’
+   ```
 
    注册 DEP 时，对地理位置的数据开始加密。 这可能需要一些时间。 有关使用此参数的信息，请参阅 [Register-SPODataEncryptionPolicy](https://docs.microsoft.com/powershell/module/sharepoint-online/register-spodataencryptionpolicy?view=sharepoint-ps&preserve-view=true)。
 

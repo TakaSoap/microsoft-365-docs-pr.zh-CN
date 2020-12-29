@@ -11,18 +11,18 @@ search.appverid: MET150
 localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
 description: 了解如何在 Microsoft 365 中设置主题体验
-ms.openlocfilehash: df4dccead4b627a215ec7ebd11932aa0f2b6ac08
-ms.sourcegitcommit: 18f95c4b7f74881b4a6ce71ad2ffa78a6ead5584
+ms.openlocfilehash: 3ff822d863e99f7e52089d3efde3d597df9957c7
+ms.sourcegitcommit: 806536f859ac864228797f1f2f23b8f41040a6b4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/24/2020
-ms.locfileid: "49731363"
+ms.lasthandoff: 12/28/2020
+ms.locfileid: "49735806"
 ---
 # <a name="set-up-topic-experiences-in-microsoft-365"></a>在 Microsoft 365 中设置主题体验
 
 </br>
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4LBp7]  
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Li0E]  
 
 </br>
 
@@ -41,11 +41,11 @@ ms.locfileid: "49731363"
 
     ![将人员连接到知识](../media/admin-org-knowledge-options.png) 
 
-3. 在 **"将人员连接到知识** "页上， **单击"** 入门"以完成设置过程。
+3. 在 **"将人员连接到知识** " **页上，单击** "入门"以完成设置过程。
 
     ![开始行动](../media/k-get-started.png) 
 
-4. 在 **"选择知识网络** 查找主题方式"页上，您将配置主题发现。 在 **"选择 SharePoint 主题源** "部分中，选择要在发现过程中作为主题源对哪些 SharePoint 网站进行爬网。 从以下项中进行选择：
+4. 在 **"选择知识网络如何查找** 主题"页上，您将配置主题发现。 在 **"选择 SharePoint 主题源** "部分中，选择要在发现过程中作为主题源对哪些 SharePoint 网站进行爬网。 从以下项中进行选择：
     - **所有网站**：组织的所有 SharePoint 网站。 这包括当前和将来的网站。
     - **全部，所选网站除外**：键入要排除的网站的名称。  还可以上载要选择从发现中退出的网站列表。 将来创建的网站将包含为主题发现源。 
     - **仅选定网站**：键入要包含的网站的名称。 还可以上载网站列表。 将来创建的网站不会作为主题发现源包含在内。
@@ -70,10 +70,10 @@ ms.locfileid: "49731363"
     在 CSV 模板中，输入有关要排除的主题的以下信息：
 
     - **名称**：键入要排除的主题的名称。 可通过 2 种方法执行此操作：
-        - 完全匹配：可以包括确切的名称或缩写词 (例如 *Contoso* 或 *ATL*) 。
+        - 完全匹配：可以包括确切的名称或首字母缩写词 (例如 *Contoso* 或 *ATL*) 。
         - 部分匹配：可以排除其中具有特定单词的所有主题。  例如 *，arc* 将排除其中带弧字的所有主题，如 *弧形圆*、圆弧 *弧* 线或 *培训弧*。请注意，它将不会排除其中的文本作为单词的一部分包含的主题，如 *体系结构。*
     - **代表 (可选**) ：如果要排除首字母缩略词，请键入首字母缩写词代表的单词。
-    - **MatchType-Exact/Partial：** 键入您输入的名称 *是精确匹配* 类型还是 *部分* 匹配类型。
+    - **MatchType-Exact/Partial：** 键入您输入 *的名称是精确* 匹配类型还是 *部分* 匹配类型。
 
     完成并保存 .csv 文件后， **选择"浏览** "找到并选择它。
     
@@ -96,7 +96,7 @@ ms.locfileid: "49731363"
 
     ![主题管理权限，可创建和编辑主题](../media/ksetup3.png) 
 
-8. 在" **谁可以管理主题** "部分，可以选择：
+8. 在" **谁可以管理主题** "部分中，可以选择：
     - **我的组织中的每个人**
     - **仅选定人员或安全组**
 
@@ -130,7 +130,7 @@ ms.locfileid: "49731363"
 
 3. 选择 **分配更多**。
 
-4. 在 **"许可证"** 下， **选择主题体验**。
+4. 在 **"许可证"** 下 **，选择主题体验**。
 
 5. 在 **"应用**"下，确保 **已选择具有索引** 和 **主题体验的图形** 连接器搜索。
 
