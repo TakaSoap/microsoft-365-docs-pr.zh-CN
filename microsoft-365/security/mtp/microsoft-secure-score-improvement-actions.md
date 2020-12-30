@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 8ebfe5746a69cc0161c38f0467954fabb3839240
-ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
+ms.openlocfilehash: c463e375594b3581486cb8d4bdd380412e195b2e
+ms.sourcegitcommit: a8f3c633714e934f9ad026c3bc72157ed535dcfc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "49683339"
+ms.lasthandoff: 12/29/2020
+ms.locfileid: "49738007"
 ---
 # <a name="assess-your-security-posture-with-microsoft-secure-score"></a>使用 Microsoft 安全分数评估安全状态
 
@@ -52,7 +52,7 @@ Microsoft 安全分数是组织安全状况的度量，数字越高，表示采�
 
 此外，如果你选择分数旁边的" **包含** "按钮，你可以选择你的分数的不同视图。 这些不同的分数视图将在分数磁贴和点细分图表的图形中显示。
 
-下面是你可以添加到总体分数视图的分数，以便全面了解总体分数：
+以下是你可以添加到总体分数视图的分数，以便更完整地了解总体分数：
 
 - **计划分数**：在计划操作完成时显示计划分数
 - **当前许可证分数**：显示可以使用当前 Microsoft 许可证实现的分数
@@ -60,7 +60,7 @@ Microsoft 安全分数是组织安全状况的度量，数字越高，表示采�
 
 如果已包含所有可能的得分视图，则此视图的外观将如下所示：
 
-![安全分数，包括计划分数、当前许可证分数和可得分](../../media/secure-score/your-secure-score.png)
+![你的安全分数，包括计划分数、当前许可证分数和可得分](../../media/secure-score/your-secure-score.png)
 
 ## <a name="take-action-to-improve-your-score"></a>采取措施提高分数
 
@@ -72,16 +72,17 @@ Microsoft 安全分数是组织安全状况的度量，数字越高，表示采�
 
 ### <a name="view-improvement-action-details"></a>查看改进操作详细信息
 
-选择特定改进操作时，将显示一个完整页面飞出。  
+选择特定改进操作时，将出现一个整页的飞出图。  
 
-![改进操作飞出示例 ](../../media/secure-score/secure-score-improvement-action-details.png)
- *图 2：改进操作飞出示例*
+![改进操作飞出示例](../../media/secure-score/secure-score-improvement-action-details.png)
 
 若要完成该操作，有几个选项：
 
-* 选择 **"** 管理"转到配置屏幕并做出更改。 然后，你将获得操作有价值的点，在飞出时可见。点通常需要大约 24 小时才能更新。
+- 选择 **"** 管理"转到配置屏幕并做出更改。 然后，你将获得操作有价值的点，在飞出时可见。点通常需要大约 24 小时才能更新。
 
-* 选择 **"** 共享"以复制指向改进操作的直接链接。 还可以选择共享链接的平台，如电子邮件、Microsoft Teams、Microsoft Planner 或 ServiceNow。 选择 ServiceNow 将让你创建将在 ServiceNow 和 Microsoft 365 安全中心主页中可见的更改票证。 若要了解更多信息，请参阅 [Microsoft 365 安全中心和 ServiceNow 集成](tickets-security-center.md)。
+- 选择 **"** 共享"以复制指向改进操作的直接链接。 还可以选择共享链接的平台，如电子邮件、Microsoft Teams、Microsoft Planner 或 ServiceNow。 选择 ServiceNow 将让你创建将在 ServiceNow 和 Microsoft 365 安全中心主页中可见的更改票证。 若要了解更多信息，请参阅 [Microsoft 365 安全中心和 ServiceNow 集成](tickets-security-center.md)。
+
+添加 **注释** 以跟踪进度或要注释的任何内容。 如果向改进操作 **添加** 自己的标记，可以按这些标记进行筛选。
 
 ### <a name="choose-an-improvement-action-status"></a>选择改进操作状态
 
@@ -94,23 +95,23 @@ Microsoft 安全分数是组织安全状况的度量，数字越高，表示采�
 
 #### <a name="threat--vulnerability-management-improvement-actions"></a>威胁&漏洞管理改进操作
 
-对于"设备"类别中的改进操作，你将无法选择状态。 相反，你将被定向到[Microsoft Defender](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/use)安全中心& [TVM](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/tvm-security-recommendation) (安全) 威胁和漏洞管理"以采取措施。 你选择的例外以及你编写的理由将特定于该门户。 它不会在 Microsoft 安全分数门户中显示。
+对于"设备"类别中的改进操作，你无法选择状态。 相反，你将被定向到[Microsoft Defender](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/use) [](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/tvm-security-recommendation)安全中心中的关联威胁和漏洞管理安全建议以采取措施。 你选择的例外以及你编写的理由将特定于该门户。 它不会在 Microsoft 安全分数门户中显示。
 
 #### <a name="completed-improvement-actions"></a>已完成的改进操作
 
-一旦达到改进操作的所有可能点，改进操作就具有"已完成"状态。 已完成的改进操作通过 Microsoft 数据进行确认，你将无法更改状态。
+一旦达到改进操作的所有可能点，改进操作就具有"已完成"状态。 已完成的改进操作通过 Microsoft 数据进行确认，你无法更改状态。
 
 ### <a name="assess-information-and-review-user-impact"></a>评估信息并查看用户影响
 
 名为 **"概览"的部分** 将告诉您类别、可抵御的攻击和产品。
 
-用户 **影响** 显示，如果执行改进操作，用户将体验哪些内容，受影响用户会显示谁将体验它。
+**用户** 影响是实施改进措施时用户将遇到的问题，受影响用户是将受到影响的用户。
 
 ### <a name="implement-the-improvement-action"></a>实施改进操作
 
 " **实现** "部分显示了任何先决条件、完成改进操作所需的分步步骤、改进操作的当前实现状态以及任何了解更多链接。
 
-先决条件包括需要获取的任何许可证或需要完成的操作，然后才能处理改进操作。 请确保许可证中有足够的座位来完成改进操作，并且这些许可证适用于必要的用户。  
+先决条件包括解决改进操作之前需要的任何许可证或要完成的操作。 请确保许可证中有足够的座位来完成改进操作，并且这些许可证适用于必要的用户。  
 
 ## <a name="we-want-to-hear-from-you"></a>欢迎提出宝贵意见
 

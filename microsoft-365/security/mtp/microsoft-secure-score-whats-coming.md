@@ -17,12 +17,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: d668aa8f0588ecc5ca24086d060cda32cdf1dbc6
-ms.sourcegitcommit: 849b365bd3eaa9f3c3a9ef9f5973ef81af9156fa
+ms.openlocfilehash: 0693e70cdd5636ce655a400a48aac65197327291
+ms.sourcegitcommit: a8f3c633714e934f9ad026c3bc72157ed535dcfc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49688037"
+ms.lasthandoff: 12/29/2020
+ms.locfileid: "49737949"
 ---
 # <a name="whats-coming-to-microsoft-secure-score"></a>Microsoft 安全分数即将提供哪些功能
 
@@ -35,6 +35,8 @@ ms.locfileid: "49688037"
 我们即将进行一些更改，使 [Microsoft 安全](microsoft-secure-score.md) 分数更好地代表你的安全状况并提高可用性。 你的分数和可能的最高分数可能会更改。
 
 ### <a name="no-planned-changes"></a>无计划更改
+
+目前没有任何计划更改。
 
 ## <a name="related-resources"></a>相关资源
 

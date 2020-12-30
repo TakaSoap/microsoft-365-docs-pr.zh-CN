@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 7fe5be065ee45700a1f08a39c8050757c3843f7b
-ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
+ms.openlocfilehash: 6e9dd214e53e3fdd601fe51e5522a3a24a7fd3d0
+ms.sourcegitcommit: a8f3c633714e934f9ad026c3bc72157ed535dcfc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "49682567"
+ms.lasthandoff: 12/29/2020
+ms.locfileid: "49737995"
 ---
 # <a name="microsoft-secure-score"></a>Microsoft 安全功能分数
 
@@ -38,7 +38,7 @@ Microsoft 安全分数是组织安全状况的度量，数字越高，表示采�
 安全分数可帮助组织：  
 
 * 有关组织安全状况的当前状态的报告。
-* 通过提供可发现性、可见性、指导和控制，改进其安全状况。  
+* 通过提供可发现性、可见性、指导和控制性来改进其安全状况。  
 * 与基准进行比较，并建立关键绩效指标 (KPI) 。
 
 组织可以访问指标和趋势的稳固可视化、与其他 Microsoft 产品的集成、与类似组织的分数比较等。 该分数还可以反映第三方解决方案何时解决了建议的操作。
@@ -55,17 +55,16 @@ Microsoft 安全分数是组织安全状况的度量，数字越高，表示采�
 
 某些改进操作仅在完全完成时提供分数。 如果为某些设备或用户完成了这些操作，一些会提供部分分数。 如果无法或不希望对其中一项改进操作进行评估，可以选择接受风险或剩余风险。
 
-如果你有受支持的 Microsoft 产品之一的许可证，你将看到这些产品的建议。 我们将向您展示产品的完整可能改进，无论许可证版本、订阅或计划如何。 这样，你可以了解安全最佳做法并提升分数。 无论组织为特定产品拥有哪些许可证，你的绝对安全状态（由安全分数表示）都保持不变。 请记住，安全性应该与可用性平衡，并且并不是每个建议都适用于你的环境。
+如果你有受支持的 Microsoft 产品之一的许可证，你将看到这些产品的建议。 我们将向您展示产品的完整可能改进，而不考虑许可证版本、订阅或计划。 这样，你可以了解安全最佳做法并提升分数。 无论组织为特定产品拥有哪些许可证，你的绝对安全状态（由安全分数表示）都保持不变。 请记住，安全性应该与可用性进行平衡，并且并不是每个建议都适用于你的环境。
 
 你的分数会实时更新，以反映可视化和改进操作页面中显示的信息。 安全分数还会每天同步，以接收有关每个操作所得分的系统数据。
 
 ### <a name="key-scenarios"></a>关键方案
 
 - [检查当前分数](microsoft-secure-score-improvement-actions.md#check-your-current-score)
-- [将分数与组织（如组织）进行比较](microsoft-secure-score-history-metrics-trends.md#compare-your-score-to-organizations-like-yours)
+- [将你的分数与像你这样的组织进行比较](microsoft-secure-score-history-metrics-trends.md#compare-your-score-to-organizations-like-yours)
 - [查看改进操作并决定行动计划](microsoft-secure-score-improvement-actions.md#take-action-to-improve-your-score)
 - [启动要调查或实施的工作流](microsoft-secure-score-improvement-actions.md#view-improvement-action-details)
-    - [Microsoft 365 安全中心和 ServiceNow 集成](tickets-security-center.md)
 
 ### <a name="how-improvement-actions-are-scored"></a>如何对改进操作进行评分
 
@@ -75,11 +74,19 @@ Microsoft 安全分数是组织安全状况的度量，数字越高，表示采�
 
 ### <a name="products-included-in-secure-score"></a>安全分数中包含的产品
 
-目前，有针对 Microsoft 365 (的建议，包括 Exchange Online) 、Azure Active Directory、Microsoft Defender for Endpoint、Microsoft Defender for Identity 和 Cloud App Security。 即将推出针对其他安全产品的建议。 建议不会涵盖与每个产品关联的所有攻击面，但它们是一个很好的基线。 还可以将改进操作标记为第三方或备用缓解所涵盖。
+目前，有针对以下产品的建议：
+
+- Microsoft 365 (包括 Exchange Online) 
+- Azure Active Directory
+- Microsoft Defender for Endpoint
+- Microsoft Defender for Identity
+- 云应用安全
+
+即将推出针对其他安全产品的建议。 建议不会涵盖与每个产品关联的所有攻击面，但它们是一个很好的基线。 还可以将改进操作标记为第三方或备用缓解所涵盖。
 
 ### <a name="security-defaults"></a>安全性默认值
 
-Microsoft 安全分数已更新了改进操作以支持 [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)中的安全默认值，这便于使用常见攻击的预配置安全设置帮助保护组织。
+Microsoft 安全分数已更新了改进操作，以支持 [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)中的安全默认值，从而通过预配置的安全设置帮助保护组织免受常见攻击。
 
 如果启用安全默认值，将被授予以下改进操作的完整分数：
 
@@ -117,7 +124,7 @@ Microsoft 安全分数已更新了改进操作以支持 [Azure Active Directory]
 
 ## <a name="risk-awareness"></a>风险感知
 
-Microsoft 安全分数是基于系统配置、用户行为和其他与安全相关的度量的安全状况的数字摘要。 它不是系统或数据被泄露的可能性的绝对度量。 相反，它表示在 Microsoft 环境中采用安全控件的程度，可帮助消除泄露风险。 任何联机服务都完全不受安全漏洞的影响，安全分数不应被解释为防止以任何方式出现安全漏洞的保证。
+Microsoft 安全分数是基于系统配置、用户行为和其他与安全相关的度量的安全状况的数字摘要。 它不是系统或数据被泄露的可能性的绝对度量。 相反，它表示在 Microsoft 环境中采用安全控件的程度，可帮助消除泄露风险。 任何联机服务都不受安全漏洞的影响，安全分数不应被解释为防止以任何方式出现安全漏洞的保证。
 
 ## <a name="we-want-to-hear-from-you"></a>欢迎提出宝贵意见
 
