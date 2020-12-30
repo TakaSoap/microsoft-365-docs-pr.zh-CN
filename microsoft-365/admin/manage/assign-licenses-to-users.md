@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 description: 了解如何向用户分配许可证。
 ms.date: 08/14/2020
-ms.openlocfilehash: ec2f9ae2e580987266c636343a66d7c21138e4c3
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: fc5f9112a22d56abb9c11d61f4108586487b4986
+ms.sourcegitcommit: 806536f859ac864228797f1f2f23b8f41040a6b4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48645127"
+ms.lasthandoff: 12/28/2020
+ms.locfileid: "49735794"
 ---
 # <a name="assign-licenses-to-users"></a>向用户分配许可证
 
@@ -65,7 +65,7 @@ ms.locfileid: "48645127"
 3. 在产品详细信息页面上，选择“**分配许可证**”。
 4. 在“**向用户分配许可证**”窗格中，开始键入名称，然后从结果中将其选中，将其添加到列表中。 一次最多可添加 20 名用户。
 5. 选择“**打开或关闭应用和服务**”，向特定项目分配访问权限或删除其访问权限。
-6. 完成后，选择“分配”****，然后选择“关闭”****。
+6. 完成后，选择“分配”，然后选择“关闭”。
 
 如果出现冲突，则将显示一则消息，指出问题是什么以及如何修复它。 例如，如果选择包含冲突服务的许可证，错误消息将指示审阅随每个许可证包含的服务并重试。
 
@@ -163,7 +163,7 @@ ms.locfileid: "48645127"
 
 ## <a name="assign-a-license-to-a-guest-user"></a>向来宾用户分配许可证
 
-可在 Azure Active directory 管理中心中邀请来宾用户与你的组织进行协作。 若要了解有关来宾用户的信息，请参阅 [Azure Active Directory B2B 中的来宾用户访问是什么？](https://docs.microsoft.com/azure/active-directory/external-identities/what-is-b2b) 如果你没有任何来宾用户，请参阅[快速入门：在 Azure 门户中将来宾用户添加到你的目录](https://docs.microsoft.com/azure/active-directory/external-identities/b2b-quickstart-add-guest-users-portal)。
+可在 Azure Active directory 管理中心中邀请来宾用户与你的组织进行协作。 若要了解有关来宾用户的信息，请参阅 [Azure Active Directory B2B 中的来宾用户访问是什么？](https://docs.microsoft.com/azure/active-directory/external-identities/what-is-b2b)。 如果你没有任何来宾用户，请参阅[快速入门：在 Azure 门户中将来宾用户添加到你的目录](https://docs.microsoft.com/azure/active-directory/external-identities/b2b-quickstart-add-guest-users-portal)。
 
 > [!IMPORTANT]
 > 必须是全局管理员才能执行这些步骤。
