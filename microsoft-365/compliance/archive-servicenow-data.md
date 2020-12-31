@@ -12,14 +12,14 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: 管理员可以设置连接器以将 ServiceNow 数据从 Globanet 导入和存档到 Microsoft 365。 此连接器允许你在 Microsoft 365 中存档来自第三方数据源的数据。 存档此数据后，可以使用合规性功能（如法定保留、内容搜索和保留策略）管理第三方数据。
-ms.openlocfilehash: 4139e66cc1554b7a7306c6076fd8475fe47f5cf5
-ms.sourcegitcommit: a3215cc22faa47e935d22300c481e47ab2680b44
+ms.openlocfilehash: 99b1f64bdb1d977816d4881fa633d77acd60952c
+ms.sourcegitcommit: 36d12e02f6fda199ae7f2fb72fe52d7e2b5b4efd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "49722925"
+ms.lasthandoff: 12/31/2020
+ms.locfileid: "49740329"
 ---
-# <a name="set-up-a-connector-to-archive-servicenow-data-preview"></a>设置连接器以存档 ServiceNow 数据 (预览) 
+# <a name="set-up-a-connector-to-archive-servicenow-data"></a>设置连接器以存档 ServiceNow 数据
 
 使用 Microsoft 365 合规中心中的 Globanet 连接器，将数据从 ServiceNow 平台导入并存档到 Microsoft 365 组织的用户邮箱。 Globanet 提供了 [一个 ServiceNow](https://globanet.com/servicenow/) 连接器，可捕获第三方数据源中的项目，并导入到 Microsoft 365。 连接器将实时邮件、附件和帖子等内容从 ServiceNow 转换为电子邮件格式，然后将这些项目导入 Microsoft 365 中的用户邮箱。
 
@@ -37,11 +37,11 @@ ms.locfileid: "49722925"
 
 3. 在 Microsoft 365 合规中心创建的 ServiceNow 连接器每天连接到 Globanet Merge1 网站，将 ServiceNow 内容转移到 Microsoft 云中安全的 Azure 存储位置。
 
-4. 连接器使用自动用户映射的 *Email* 属性值将转换的项目导入到特定用户的邮箱，如步骤 [3 中所述](#step-3-map-users-and-complete-the-connector-setup)。 在用户邮箱中创建名为 **ServiceNow** 的收件箱文件夹中的子文件夹，项目将导入到该文件夹中。 连接器使用 Email 属性的值确定将项目导入到哪个 *邮箱* 。 每个 ServiceNow 项都包含此属性，此属性用项目每个参与者的电子邮件地址填充。
+4. 连接器使用自动用户映射的 *Email* 属性值将转换的项目导入到特定用户的邮箱，如步骤 [3 中所述](#step-3-map-users-and-complete-the-connector-setup)。 在用户邮箱中创建名为 **ServiceNow** 的收件箱文件夹中的子文件夹，项目将导入到该文件夹中。 连接器使用 Email 属性的值确定将项目导入到哪个 *邮箱* 。 每个 ServiceNow 项都包含此属性，该属性用项目每个参与者的电子邮件地址填充。
 
 ## <a name="before-you-begin"></a>准备工作
 
-- 为 Microsoft 连接器创建 Merge1 帐户。 若要创建帐户，请联系 [Globanet 客户支持部门](https://globanet.com/contact-us/)。 在步骤 1 中创建连接器时，需要登录此帐户。
+- 为 Microsoft 连接器创建 Merge1 帐户。 若要创建帐户，请联系 [Globanet 客户支持部门](https://globanet.com/contact-us/)。 在步骤 1 中创建连接器时，需要登录到此帐户。
 
 - 创建 ServiceNow 应用程序以从 ServiceNow 帐户提取数据。 有关创建应用程序的分步说明，请参阅 [Merge1 第三方连接器用户指南](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20ServiceNow%20User%20Guide%20.pdf)。
 
@@ -77,9 +77,9 @@ ms.locfileid: "49722925"
 
 ## <a name="step-4-monitor-the-servicenow-connector"></a>步骤 4：监视 ServiceNow 连接器
 
-创建 ServiceNow 连接器后，可以在 Microsoft 365 合规中心内查看连接器状态。
+创建 ServiceNow 连接器后，可以在 Microsoft 365 合规中心查看连接器状态。
 
-1. 转到 [https://compliance.microsoft.com](https://compliance.microsoft.com/) 左侧导航 **中并** 单击"数据连接器"。
+1. 转到 [https://compliance.microsoft.com](https://compliance.microsoft.com/) 左侧导航 **中的"数据连接器** "，然后单击"数据连接器"。
 
 2. 单击 **"连接器"** 选项卡，然后选择 **ServiceNow** 连接器以显示包含连接器的属性和信息的飞出页。
 

@@ -12,18 +12,18 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: 管理员可以设置连接器以将 Yieldbroker 数据从 Globanet 导入并存档到 Microsoft 365。 此连接器允许你在 Microsoft 365 中存档来自第三方数据源的数据。 存档此数据后，可以使用合规性功能（如法定保留、内容搜索和保留策略）管理第三方数据。
-ms.openlocfilehash: 1591198dae3a7a5082c4f8f7ba925eb9e6dd680b
-ms.sourcegitcommit: a3215cc22faa47e935d22300c481e47ab2680b44
+ms.openlocfilehash: 34ce7686e6fdf418257265d707eda7eed3cab026
+ms.sourcegitcommit: 36d12e02f6fda199ae7f2fb72fe52d7e2b5b4efd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "49722924"
+ms.lasthandoff: 12/31/2020
+ms.locfileid: "49740319"
 ---
-# <a name="set-up-a-connector-to-archive-yieldbroker-data-preview"></a>设置连接器以存档 Yieldbroker 数据 (预览) 
+# <a name="set-up-a-connector-to-archive-yieldbroker-data"></a>设置连接器以存档 Yieldbroker 数据
 
 使用 Microsoft 365 合规中心中的 Globanet 连接器，将数据从 Yieldbroker 导入并存档到 Microsoft 365 组织的用户邮箱。 Globanet 为您提供了一个 [Yieldbroker](https://globanet.com/yieldbroker/) 连接器，该连接器配置为捕获第三方数据源中的项目，以及将这些项目导入到 Microsoft 365。 连接器将 Yieldbroker 中的内容转换为电子邮件格式，然后将这些项目导入到 Microsoft 365 中的用户邮箱。
 
-在 Yieldbroker 存储在用户邮箱中后，可以应用 Microsoft 365 合规性功能，如诉讼保留、电子数据展示、保留策略和保留标签。 使用 Yieldbroker 连接器在 Microsoft 365 中导入和存档数据可帮助组织遵守政府法规策略。
+在 Yieldbroker 存储在用户邮箱中后，可以应用 Microsoft 365 合规性功能，如诉讼保留、电子数据展示、保留策略和保留标签。 使用 Yieldbroker 连接器在 Microsoft 365 中导入和存档数据可帮助组织遵守政府政策和法规策略。
 
 ## <a name="overview-of-archiving-yieldbroker-data"></a>存档 Yieldbroker 数据概述
 
@@ -37,11 +37,11 @@ ms.locfileid: "49722924"
 
 3. 在 Microsoft 365 合规中心创建的 Yieldbroker 连接器每天连接到 Globanet Merge1 网站，将邮件转移到 Microsoft 云中安全的 Azure 存储位置。
 
-4. 连接器使用自动用户映射的 *Email* 属性值将转换后的 Yieldbroker 项目导入到特定用户的邮箱，如步骤 [3 中所述](#step-3-map-users-and-complete-the-connector-setup)。 在用户邮箱中创建名为 **Yieldbroker** 的收件箱文件夹中的子文件夹，并且项目将导入到该文件夹中。 连接器使用 Email 属性的值确定将项目导入到哪个 *邮箱* 。 每个 Yieldbroker 都包含此属性，该属性用项目每个参与者的电子邮件地址填充。
+4. 连接器使用自动用户映射的 *Email* 属性值将转换后的 Yieldbroker 项目导入到特定用户的邮箱，如步骤 [3 中所述](#step-3-map-users-and-complete-the-connector-setup)。 在用户邮箱中创建名为 **Yieldbroker** 的收件箱文件夹中的子文件夹，项目将导入到该文件夹中。 连接器使用 Email 属性的值确定将项目导入到哪个 *邮箱* 。 每个 Yieldbroker 都包含此属性，该属性用项目每个参与者的电子邮件地址填充。
 
 ## <a name="before-you-begin"></a>准备工作
 
-- 为 Microsoft 连接器创建 Globanet Merge1 帐户。 若要创建帐户，请联系 [Globanet 客户支持部门](https://globanet.com/contact-us/)。 在步骤 1 中创建连接器时，需要登录此帐户。
+- 为 Microsoft 连接器创建 Globanet Merge1 帐户。 若要创建帐户，请联系 [Globanet 客户支持部门](https://globanet.com/contact-us/)。 在步骤 1 中创建连接器时，需要登录到此帐户。
 
 - 在步骤 1 (创建 Yieldbroker 连接器) 步骤 3 中完成此连接器的用户必须分配到 Exchange Online 中的邮箱导入导出角色。 在 Microsoft 365 合规中心的"数据连接器"页上添加连接器需要此角色。 默认情况下，此角色不会分配给 Exchange Online 中任何角色组。 可以将邮箱导入导出角色添加到 Exchange Online 中的组织管理角色组。 也可以创建一个角色组，分配邮箱导入导出角色，然后将相应的用户添加为成员。 有关详细信息，请参阅"在[](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#create-role-groups)Exchange Online[](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups)中管理角色组"一文的"创建角色组或修改角色组"部分。
 
@@ -77,7 +77,7 @@ ms.locfileid: "49722924"
 
 创建 Yieldbroker 连接器后，可以在 Microsoft 365 合规中心查看连接器状态。
 
-1. 转到 [https://compliance.microsoft.com](https://compliance.microsoft.com/) 左侧导航 **中并** 单击"数据连接器"。
+1. 转到 [https://compliance.microsoft.com](https://compliance.microsoft.com/) 左侧导航 **中的"数据连接器** "，然后单击"数据连接器"。
 
 2. 单击 **"连接器"** 选项卡，然后选择 **Yieldbroker** 连接器以显示包含连接器的属性和信息的飞出页。
 
