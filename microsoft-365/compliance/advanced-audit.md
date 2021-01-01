@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 365 高级审核提供了新的审核功能，可帮助组织进行法庭与合规调查。
-ms.openlocfilehash: b05901ad8d42f481020178479df5d422fa68eb1a
-ms.sourcegitcommit: 5cbce99cfdbba4b72267a144b2e03a6c52473464
+ms.openlocfilehash: 83ff462ada02c9b262cfcaadb6bd48e47376cc0f
+ms.sourcegitcommit: 36d12e02f6fda199ae7f2fb72fe52d7e2b5b4efd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "49718495"
+ms.lasthandoff: 12/31/2020
+ms.locfileid: "49740359"
 ---
 # <a name="advanced-audit-in-microsoft-365"></a>Microsoft 365 高级审核
 
@@ -155,7 +155,7 @@ Send 事件也是邮箱审核操作，当用户执行以下操作之一时将被
 
 5. 如果未选中该复选框，请将其选中，然后单击“**保存更改**”。
 
-   将在 24 小时内开始记录用户的 MailItemsAccessed、Send 和其他关键事件的审核记录。
+   将在 24 小时内开始记录用户的 MailItemsAccessed、Send 和其他关键事件的审核日志记录。
 
 对于使用基于组的许可将许可证分配给用户组的组织，必须为组禁用 Microsoft 365 高级审核的许可分配。 保存所做的更改后，请验证是否已为组禁用 Microsoft 365 高级审核。 然后，重新为组启用许可分配。 有关基于组的许可的说明，请参阅[在 Azure Active Directory 中按组成员身份向用户分配许可证](https://docs.microsoft.com/azure/active-directory/users-groups-roles/licensing-groups-assign)。
 
