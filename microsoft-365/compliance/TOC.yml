@@ -589,7 +589,7 @@
           items:
             - name: 向事例添加保管人
               href: add-custodians-to-case.md
-            - name: 向事例批量添加保管人
+            - name: 向事例导入多个保管人
               href: bulk-add-custodians.md
             - name: 管理保管人
               href: manage-new-custodians.md
