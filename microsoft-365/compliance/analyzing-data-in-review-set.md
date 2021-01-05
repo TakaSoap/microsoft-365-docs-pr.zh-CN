@@ -1,5 +1,5 @@
 ---
-title: 在高级电子数据展示中分析评审集中的数据
+title: 分析高级电子数据展示审阅集内的数据
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -15,61 +15,61 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: 了解分析高级电子数据展示事例时可用于组织文档集的工具。
+description: 了解分析高级电子数据展示案例时可用于组织文档集的工具。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 87788e444a5ef671586567510448dab8b9deddcd
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 7c63e7eca2e032bfa11c4d4e6f961bb7a7700a4e
+ms.sourcegitcommit: 98b889e674ad1d5fa37d4b6c5fc3eda60a1d67f3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44033816"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "49751367"
 ---
-# <a name="analyze-data-in-a-review-set-in-advanced-ediscovery"></a>在高级电子数据展示中分析评审集中的数据
+# <a name="analyze-data-in-a-review-set-in-advanced-ediscovery"></a>分析高级电子数据展示审阅集内的数据
 
-收集的文档数较大时，可能很难查看所有文档。 高级电子数据展示提供了大量工具来分析文档，以减少要查看的文档量而不丢失任何信息，并帮助您以一致的方式组织文档。 若要了解有关这些功能的详细信息，请参阅：
+当收集的文档数量很大时，可能很难查看所有文档。 高级电子数据展示提供了许多工具来分析文档，以减少要审阅的文档量，而不会丢失任何信息，并帮助您以一致的方式组织文档。 若要详细了解这些功能，请参阅：
 
-- [近似重复检测](near-duplicates.md)
+- [近似重复检测](near-duplicate-detection-in-advanced-ediscovery.md)
 
-- [电子邮件会话](email-threading.md)
+- [电子邮件会话](email-threading-in-advanced-ediscovery.md)
 
-- [主题](themes.md)
+- [主题](themes-in-advanced-ediscovery.md)
 
-若要分析审阅集中的数据，请执行以下操作：
+分析审阅集内的数据：
 
-1. 为你的事例配置分析设置。 有关详细信息，请参阅[配置搜索和分析设置](configure-search-analytics-settings.md)。
+1. 为案例配置分析设置。 有关详细信息，请参阅配置 [搜索和分析设置](configure-search-and-analytics-settings-in-advanced-ediscovery.md)。
 
 2. 打开要分析的审阅集。
 
-3. 单击 "**管理审阅集**"。
+3. 单击 **"管理审阅集"。**
 
-4. 单击**评审集的 "运行分析"**。
+4. 单击 **"运行审阅集分析"。**
 
-可以在案例的 "**作业**" 选项卡上检查分析进度。
+您可以在案例的"作业 **"选项卡上** 检查分析进度。
 
- 完成分析后，您可以查看分析报告，在审核的输出集内运行查询（请参阅[评审集内的查询](review-set-search.md)），并查看给定文档的相关文档（请参阅[审阅集中的数据](reviewing-data-in-review-set.md)）。
+ 分析完成后，可以查看分析报告，对分析的输出运行审阅集内的查询 (请参阅审阅集 [) ](review-set-search.md) 中的查询，并查看给定文档的相关文档 (请参阅审阅集 [) ](reviewing-data-in-review-set.md) 中的审阅数据。
 
 ## <a name="analytics-report"></a>分析报告
 
-查看审阅集的分析报告：
+若要查看审阅集的分析报告，请：
 
-1. 打开评审集。
+1. 打开审阅集。
 
-2. 单击 "**管理审阅集**"。
+2. 单击 **"管理审阅集"。**
 
-3. 单击 "**查看报告**"。
+3. 单击 **"查看报告"。**
 
-此报告包含来自分析的七个组件：
+该报告有七个分析要素：
 
-- **目标填充：** 在审阅集中找到的电子邮件、附件和松散文档的数量。
+- **目标总体：** 在审阅集内找到的电子邮件、附件和松散文档的数量。
 
-- **文档（不包括附件）：** 要进行透视的松散文档的数量、数据透视表的重复的唯一性或另一个文档的完全相同的数量。
+- **包含 (附件的文档) ：** 作为透视表的松散文档数、透视表的唯一近重复项或另一个文档的确切副本。
 
-- **电子邮件：** Inclusives 的电子邮件数、包含的副本、包含的 minuses 或以上任何内容。
+- **电子邮件：** 包含非独占副本、非独占副本、非独占减号或上述任何邮件的电子邮件数量。
 
-- **附件：** 审阅集中其他电子邮件附件的唯一或重复的电子邮件附件数。
+- **附件：** 审阅集内其他电子邮件附件的唯一或重复的电子邮件附件数。
 
-- **按类型的文件数：** 由文件扩展名标识的文件数。
+- **按类型显示的文件数：** 文件扩展名标识的文件数。
 
-- **按源的文档：** 按其原始数据源的内容摘要。
+- **文档源：** 按原始数据源显示的内容摘要。
 
-- **按进程聚合的文档：** 按评审过程集的内容摘要。 
+- **按进程聚合的文档：** 按审阅集过程显示的内容摘要。 

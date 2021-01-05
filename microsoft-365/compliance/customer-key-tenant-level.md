@@ -1,5 +1,5 @@
 ---
-title: '租户级别的 Microsoft 365 客户密钥 (公共预览版) '
+title: 租户级 Microsoft 365 客户密钥（公共预览版）
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -15,18 +15,18 @@ ms.collection:
 - m365solution-mip
 - m365initiative-compliance
 description: 了解如何为 Microsoft 365 租户内的所有数据设置客户密钥。
-ms.openlocfilehash: eedf0e8c9d56131016bc798af8ae471df3005bdc
-ms.sourcegitcommit: 0867495cb02d0b38b439b16bdce97e6eda483ba9
+ms.openlocfilehash: f14bbc0cb6dd29883efa4c8d294d8d65cae98641
+ms.sourcegitcommit: 98b889e674ad1d5fa37d4b6c5fc3eda60a1d67f3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "49712519"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "49751260"
 ---
 # <a name="overview-of-customer-key-for-microsoft-365-at-the-tenant-level-public-preview"></a>租户级别 Microsoft 365 客户密钥 (公共预览版) 
 
 使用提供的密钥，可以在 DEP (创建) 策略并将其分配给租户。 DEP 对租户中这些工作负载的数据进行加密：
 
-- Teams 聊天 (一对一聊天、群聊、会议聊天和频道对话) 
+- Teams 聊天消息 (一对一聊天、群聊、会议聊天和频道对话) 
 - Teams 媒体 (图像、代码段、视频、wiki 图像) 
 - Teams 存储中存储的 Teams 通话和会议录像
 - Teams 聊天通知
@@ -40,13 +40,13 @@ ms.locfileid: "49712519"
 
 ## <a name="tenant-level-policies-add-broader-control-to-customer-key-for-microsoft-365"></a>租户级别策略为 Microsoft 365 的客户密钥添加了更广泛的控制
 
-如果你已经为 Exchange Online 和 Sharepoint Online 设置了客户密钥，下面将说明新的租户级公共预览版如何适应。
+如果你已经为 Exchange Online 和 Sharepoint Online 设置了客户密钥，下面将说明新的租户级别公共预览版如何适应。
 
 创建的租户级加密策略对 Microsoft 365 中的 Microsoft Teams 和 Exchange Online 工作负载的所有数据进行加密。 此策略不会干扰已在客户密钥中创建的微调的 DEPS。
 
 示例：
 
-保存在 OneDrive for Business 和 SharePoint 中的 Microsoft Teams 文件和一些 Teams 通话和会议录像由 SharePoint Online DEP 进行加密。 单个 SharePoint Online DEP 对单个地理位置中的内容进行加密。 租户级别的 DEP 会使用新策略再次加密加密的数据。
+保存在 OneDrive for Business 和 SharePoint 中的 Microsoft Teams 文件和一些 Teams 通话和会议录像由 SharePoint Online DEP 进行加密。 单个 SharePoint Online DEP 对单个地理位置中的内容进行加密。 租户级别的 DEP 会使用新策略再次加密加密数据。
 
 对于 Exchange Online，您可以创建使用客户密钥加密一个或多个用户邮箱的 DEP。 创建租户级别的策略时，该策略不会加密加密的邮箱。 但是，租户级别密钥将加密已不受 DEP 影响的邮箱。
 
@@ -59,7 +59,7 @@ ms.locfileid: "49712519"
 在开始使用之前，请确保以下各项：
 
 - 你需要使用具有合规性管理员角色的工作或学校帐户在租户级别设置客户密钥。
-- 确保你拥有适合你的组织的许可。 使用付费的已开票 Azure 订阅，企业协议云服务提供商。 客户密钥不支持使用即付即用计划或信用卡购买的 Azure 订阅。 从 2020 年 4 月 1 日起，Office 365 中的客户密钥在 Office 365 E5、M365 E5、M365 E5 合规性和 M365 E5 信息保护 & SUS 中提供。 Office 365 高级合规性 SKU 不再可用于购买新许可证。 现有 Office 365 高级合规性许可证将继续受支持。 虽然可以在具有相应许可证的租户下至少使用一个许可证来启用该服务，但您仍应确保从该服务受益的所有用户都有相应的许可证。 你将需要以下许可证之一：
+- 确保你拥有适合你的组织的许可。 使用付费的已开票 Azure 订阅，企业协议云服务提供商。 客户密钥不支持使用即付即用计划或信用卡购买的 Azure 订阅。 从 2020 年 4 月 1 日起，Office 365 中的客户密钥在 Office 365 E5、M365 E5、M365 E5 合规性和 M365 E5 信息保护 & SUS 中提供。 Office 365 高级合规性 SKU 不再可用于购买新许可证。 现有 Office 365 高级合规性许可证将继续受支持。 虽然可以在具有相应许可证的租户下至少使用一个许可证来启用该服务，但您仍应确保从该服务受益的所有用户都有相应的许可证。
 
 ### <a name="create-two-new-azure-subscriptions"></a>创建两个新的 Azure 订阅
 
@@ -71,7 +71,7 @@ ms.locfileid: "49712519"
 
 根加密密钥的临时或永久丢失可能会中断甚至对服务操作造成灾难性影响，并可能导致数据丢失。 因此，与客户密钥一起使用的资源需要强大的保护。 用于客户密钥的所有 Azure 资源都提供默认配置以外的保护机制。 Azure 订阅可以标记或注册，以防止立即取消和不可撤销的取消。 这称为注册强制保留期。 为 Azure 订阅注册强制保留期所需的步骤需要与 Microsoft 协作。 此过程最多可能需要 5 个工作日。 以前，这有时称为"不取消"。
   
-在联系 Microsoft 365 团队之前，必须针对使用客户密钥的每个 Azure 订阅执行以下步骤。 在启动之前，请确保已安装 [Azure PowerShell Az](https://docs.microsoft.com/powershell/azure/new-azureps-module-az) 模块。
+在联系 Microsoft 365 团队之前，你必须对使用客户密钥的每个 Azure 订阅执行以下步骤。 在启动之前，请确保已安装 [Azure PowerShell Az](https://docs.microsoft.com/powershell/azure/new-azureps-module-az) 模块。
 
 1. 使用 Azure PowerShell 登录。 有关说明，请参阅 [使用 Azure PowerShell 登录](https://docs.microsoft.com/powershell/azure/authenticate-azureps)。
 
@@ -109,14 +109,14 @@ ms.locfileid: "49712519"
 
 [Azure](https://azure.microsoft.com/documentation/articles/key-vault-get-started/)密钥保管库入门中记录了创建密钥保管库的步骤，这将指导你安装和启动 Azure PowerShell、连接到 Azure 订阅、创建资源组，以及创建该资源组中的关键保管库。
   
-创建密钥保管库时，必须选择 SKU：Standard 或 Premium。 标准 SKU 允许使用软件保护 Azure 密钥保管库密钥（没有硬件安全模块 (HSM) 密钥保护）。高级 SKU 允许使用 HSM 来保护密钥保管库密钥。 客户密钥接受使用任一 SKU 的密钥保管库，但 Microsoft 强烈建议你仅使用高级 SKU。 由于使用任一类型的密钥的操作成本相同，因此成本的唯一差异是每个受 HSM 保护的密钥的每月成本。 有关详细信息 [，请参阅密钥保管](https://azure.microsoft.com/pricing/details/key-vault/) 库定价。
+创建密钥保管库时，必须选择 SKU：Standard 或 Premium。 标准 SKU 允许 Azure 密钥保管库密钥受软件保护（没有硬件安全模块 (HSM) 密钥保护）。高级 SKU 允许使用 HSM 保护密钥保管库密钥。 客户密钥接受使用任一 SKU 的密钥保管库，但 Microsoft 强烈建议你仅使用高级 SKU。 由于使用任一类型的密钥的操作成本相同，因此成本的唯一差异是每个受 HSM 保护的密钥的每月成本。 有关详细信息 [，请参阅密钥保管](https://azure.microsoft.com/pricing/details/key-vault/) 库定价。
   
 > [!IMPORTANT]
 > 将高级 SKU 密钥保管库和受 HSM 保护的密钥用于生产数据，并且仅将标准 SKU 密钥保管库和密钥用于测试和验证目的。
 
 对密钥保管库使用通用前缀，并包括密钥保管库和密钥的使用和范围的缩写。 例如，对于保管库将位于北美的 Contoso 服务，可能的名称对是 Contoso-O365-NA-VaultA1 和 Contoso-O365-NA-VaultA2。 保管库名称是 Azure 中的全局唯一字符串，因此你可能需要尝试所需名称的变体，以防其他 Azure 客户已声明所需的名称。 配置后，不能更改保管库名称，因此最佳做法是制定书面设置计划，并使用第二个人验证计划是否正确执行。
 
-如果可能，在非配对区域创建保管库。 配对的 Azure 区域跨服务失败域提供高可用性。 因此，可以将区域对视为彼此的备份区域。 这意味着放置在一个地区的 Azure 资源通过配对区域自动获得容错能力。 因此，为数据加密策略中使用的两个保管库选择区域（其中区域已配对）意味着总共只有两个可用区域在使用。 大多数地理位置只有两个区域，因此尚无法选择非配对区域。 如果可能，为用于数据加密策略的两个保管库选择两个非配对区域。 这从总共四个可用性区域中获益。 有关详细信息，请参阅 BCDR (业务连续性和灾难恢复 [) ：区域](https://docs.microsoft.com/azure/best-practices-availability-paired-regions) 对当前列表的 Azure 配对区域。
+如果可能，在非配对区域创建保管库。 配对的 Azure 区域跨服务失败域提供高可用性。 因此，可以将区域对视为彼此的备份区域。 这意味着放置在一个地区的 Azure 资源通过配对区域自动获得容错能力。 因此，选择数据加密策略中使用的两个保管库的区域（其中区域已配对）意味着总共只有两个可用区域在使用。 大多数地理位置只有两个区域，因此尚无法选择非配对区域。 如果可能，为用于数据加密策略的两个保管库选择两个非配对区域。 这从总共四个可用性区域中获益。 有关详细信息，请参阅 BCDR (业务连续性和灾难恢复 [) ：区域](https://docs.microsoft.com/azure/best-practices-availability-paired-regions) 对当前列表的 Azure 配对区域。
 
 ### <a name="assign-permissions-to-each-key-vault"></a>为每个密钥保管库分配权限
 
@@ -141,7 +141,7 @@ ms.locfileid: "49712519"
    Set-AzKeyVaultAccessPolicy -VaultName Contoso-O365EX-NA-VaultA1 -UserPrincipalName alice@contoso.com -PermissionsToKeys create,import,list,get,backup,restore
    ```
 
-- **可更改** Azure 密钥保管库本身权限的关键保管库参与者。 当员工离开或加入团队时，或者当密钥保管库管理员合法需要删除或还原密钥的权限时，您需要更改这些权限。 需要向这组密钥保管库参与者授予密钥保管库上的参与者角色。 可以使用 Azure 资源管理器分配此角色。 有关详细步骤，请参阅Role-Based [访问控制](https://docs.microsoft.com/azure/active-directory/role-based-access-control-configure) 管理对 Azure 订阅资源的访问权限。 默认情况下，创建订阅的管理员具有此访问权限，并且能够将其他管理员分配到参与者角色。
+- **可更改** Azure 密钥保管库本身权限的关键保管库参与者。 当员工离开或加入团队时，或者当密钥保管库管理员合法需要删除或还原密钥的极少数情况下，你将需要更改这些权限。 需要向这组密钥保管库参与者授予密钥保管库上的参与者角色。 可以使用 Azure 资源管理器分配此角色。 有关详细步骤，请参阅Role-Based [访问控制](https://docs.microsoft.com/azure/active-directory/role-based-access-control-configure) 来管理对 Azure 订阅资源的访问权限。 默认情况下，创建订阅的管理员具有此访问权限，并且能够将其他管理员分配到参与者角色。
 
 - **Microsoft 365** 静态数据加密服务，该服务在租户级别处理客户密钥的工作。 若要向 Microsoft 365 授予权限，请运行 **Set-AzKeyVaultAccessPolicy** cmdlet，使用以下语法：
 
@@ -184,7 +184,7 @@ ms.locfileid: "49712519"
 
 ### <a name="add-a-key-to-each-key-vault-either-by-creating-or-importing-a-key"></a>通过创建或导入密钥将密钥添加到每个密钥保管库
 
-有两种方法可以将密钥添加到 Azure 密钥保管库;可以直接在密钥保管库中创建密钥，也可以导入密钥。 直接在 Key Vault 中创建密钥是不太复杂的方法，而导入密钥可提供对密钥生成方式的总控制。 使用 RSA 密钥。 Azure Key Vault 不支持使用椭圆曲线键换行和取消环绕。
+有两种方法可以将密钥添加到 Azure 密钥保管库;可以直接在密钥保管库中创建密钥，也可以导入密钥。 直接在 Key Vault 中创建密钥是不太复杂的方法，而导入密钥可提供对密钥生成方式的总控制。 使用 RSA 密钥。 Azure Key Vault 不支持使用椭圆曲线键环绕和取消环绕。
   
 若要直接在密钥保管库中创建密钥，请运行 [Add-AzKeyVaultKey](https://docs.microsoft.com/powershell/module/az.keyvault/add-azkeyvaultkey) cmdlet，如下所示：
   
@@ -211,7 +211,7 @@ Add-AzKeyVaultKey -VaultName Contoso-O365EX-NA-VaultA1 -Name Contoso-O365EX-NA-V
 
 ### <a name="check-the-recovery-level-of-your-keys"></a>检查密钥的恢复级别
 
-Microsoft 365 要求 Azure Key Vault 订阅设置为"不取消"，并且客户密钥使用的密钥已启用软删除。 可以通过查看密钥的恢复级别来确认这一点。
+Microsoft 365 要求 Azure 密钥保管库订阅设置为"不取消"，并且客户密钥使用的密钥已启用软删除。 可以通过查看密钥的恢复级别来确认这一点。
   
 若要检查密钥的恢复级别，请在 Azure PowerShell 中运行 Get-AzKeyVaultKey cmdlet，如下所示：
   
@@ -256,7 +256,7 @@ Get-AzKeyVault -VaultName <vault name>
 
 在输出中，查找访问策略和 Microsoft 365 应用 ID (GUID) 适当。 所有三个操作（get、wrapKey 和 unwrapKey）都必须显示在"密钥权限"下。
   
-如果访问策略配置不正确，请运行 Set-AzKeyVaultAccessPolicy cmdlet，如下所示：
+如果访问策略配置不正确，请Set-AzKeyVaultAccessPolicy cmdlet，如下所示：
   
 ```powershell
 Set-AzKeyVaultAccessPolicy -VaultName <vault name> -PermissionsToKeys wrapKey,unwrapKey,get -ServicePrincipalName <Microsoft 365 appID>
@@ -302,7 +302,7 @@ Update-AzKeyVaultKey -VaultName <vault name> -Name <key name> -Expires (Get-Date
    New-M365DataAtRestEncryptionPolicy [-Name] <String> -AzureKeyIDs <MultiValuedProperty> [-Description <String>] [-Enabled <Boolean>]
 ```
 
-说明：允许合规性管理员使用两个 AKV 根密钥 (DEP) 数据加密策略。 创建策略后，可以使用 Set-M365DataAtRestEncryptionPolicy cmdlet 进行分配。 第一次分配密钥时或旋转密钥后，新键最多可能需要 24 小时才能生效。 如果新的 DEP 需要 24 小时以上才能生效，请与 Microsoft 联系。
+说明：允许合规性管理员使用两个 AKV 根密钥 (DEP) 数据加密策略。 创建策略后，可以使用 Set-M365DataAtRestEncryptionPolicy cmdlet 进行分配。 首次分配密钥或旋转密钥后，新密钥最多可能需要 24 小时才能生效。 如果新的 DEP 需要 24 小时以上才能生效，请与 Microsoft 联系。
 
 示例：
 

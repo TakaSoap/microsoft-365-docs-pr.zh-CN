@@ -18,12 +18,12 @@ ms.collection:
 hideEdit: true
 feedback_system: None
 description: 安全合规 (DLP) 中的数据丢失防护包括 80 种可供您用于 DLP 策略 &amp; 的敏感信息类型。 本主题列出了所有这些敏感信息类型，并显示 DLP 策略在检测到每种类型时查找的内容。
-ms.openlocfilehash: cb45d613da95c977f56b82e64ad3332434e08cd8
-ms.sourcegitcommit: 884ac262443c50362d0c3ded961d36d6b15d8b73
+ms.openlocfilehash: 10f45403703130c191f4cbb26d1c0cba168b05ae
+ms.sourcegitcommit: 98b889e674ad1d5fa37d4b6c5fc3eda60a1d67f3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49698505"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "49751279"
 ---
 # <a name="sensitive-information-type-entity-definitions"></a>敏感信息类型属性定义
 
@@ -246,7 +246,7 @@ ms.locfileid: "49698505"
 - 找到来自Keywords_australian_business_number关键字。
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-- 函数Func_australian_business_number查找与模式匹配的内容。
+- 该函数Func_australian_business_number查找与模式匹配的内容。
 
 ```xml
       <!-- Australia Business Number -->
@@ -302,11 +302,11 @@ ms.locfileid: "49698505"
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
-- 函数Func_Australian_Company_Number查找与模式匹配的内容。
+- 该函数Func_Australian_Company_Number查找与模式匹配的内容。
 - 找到搜索Keyword_Australian_Company_Number关键字。
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 65% 确信它检测到这种类型的敏感信息：
-- 函数Func_Australian_Company_Number查找与模式匹配的内容。
+- 该函数Func_Australian_Company_Number查找与模式匹配的内容。
 
 ```xml
       <!-- Australia Company Number -->
@@ -325,8 +325,8 @@ ms.locfileid: "49698505"
 #### <a name="keyword_australia_company_number"></a>Keyword_australia_company_number
 
 - can
-- 澳大利亚公司否
-- 澳大利亚公司否#
+- australia company no
+- australia company no#
 - 澳大利亚公司编号
 - 澳大利亚公司否
 - 澳大利亚公司否#
@@ -871,7 +871,6 @@ OR
 - personalausichsich österreich
 
 ## <a name="austria-passport-number"></a>奥地利护照号码
-此敏感信息类型实体仅在欧盟护照号码敏感信息类型中可用。
 
 ### <a name="format"></a>Format
 
@@ -891,26 +890,42 @@ OR
   
 ### <a name="definition"></a>定义
 
+在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
+- 正则表达式  `Regex_austria_eu_passport_number` 查找与模式匹配的内容。 
+- 找到或  `Keywords_eu_passport_number` 找到 `Keywords_austria_eu_passport_number` 的关键字。 
+- 正则表达式查找 `Regex_eu_passport_date1` DD.MM.YYYY 格式的日期或找到 `Keywords_eu_passport_date` 的关键字
+
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
 - 正则表达式  `Regex_austria_eu_passport_number` 查找与模式匹配的内容。 
-- 找到一个  `Keywords_austria_eu_passport_number` 关键字。 
+- 找到或  `Keywords_eu_passport_number` 找到 `Keywords_austria_eu_passport_number` 的关键字。 
     
 ```xml
- <!-- EU Passport Number -->
-<Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
+      <!-- Austria Passport Number -->
+      <Entity id="1c96ae4e-303b-447d-86c7-77113ac266bf" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Regex_austria_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number" />
+            <Match idRef="Keywords_austria_eu_passport_number" />
+          </Any>
+          <Any minMatches="1">
+            <Match idRef="Regex_eu_passport_date1" />
+            <Match idRef="Keywords_eu_passport_date" />
+          </Any>
+        </Pattern>
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_austria_eu_passport_number" />
           <Any minMatches="1">
-            <Match idRef="Keywords_eu_passport_number_common" />
+            <Match idRef="Keywords_eu_passport_number" />
             <Match idRef="Keywords_austria_eu_passport_number" />
           </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>关键字
 
-#### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
+#### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
 - passport#
 - passport#
@@ -933,12 +948,12 @@ OR
 - Passnummer
 - reisepsse
 
-## <a name="austria-social-security-number-or-equivalent-identification"></a>奥地利社会保险号或等效标识
-此敏感信息类型实体仅在欧盟社会保险号或等效 ID 敏感信息类型中可用。
+
+## <a name="austria-social-security-number"></a>奥地利社会保险号码
 
 ### <a name="format"></a>Format
 
-指定格式的 10 个数字
+10 个数字，采用指定格式
   
 ### <a name="pattern"></a>模式
 
@@ -946,7 +961,7 @@ OR
   
 - 对应于序列号的三个数字 
 - 一个检查数字
-- 六个数字，对应于 DDMMYY (出生日期) 
+- 对应于 DD.2016 (日期的六个数字) 
     
 ### <a name="checksum"></a>校验和
 
@@ -955,43 +970,56 @@ OR
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
-- 函数"Func_austria_eu_
-- _or_equivalent"查找与模式匹配的内容。 
+- 该  `Func_austria_eu_ssn_or_equivalent` 函数查找与模式匹配的内容。 
 - 找到一个  `Keywords_austria_eu_ssn_or_equivalent` 关键字。 
     
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
 - 该  `Func_austria_eu_ssn_or_equivalent` 函数查找与模式匹配的内容。 
     
 ```xml
- <!-- EU SSN or Equivalent Number -->
-<Entity id="d24e32a4-c0bb-4ba8-899d-6303b95742d9" patternsProximity="300" recommendedConfidence="75">
+      <!-- Austria Social Security Number -->
+      <Entity id="6896a906-86c9-4d19-a2da-6e43ccd19b7b" patternsProximity="300" recommendedConfidence="85">
         <Pattern confidenceLevel="85">
           <IdMatch idRef="Func_austria_eu_ssn_or_equivalent" />
           <Match idRef="Keywords_austria_eu_ssn_or_equivalent" />
         </Pattern>
-<Pattern confidenceLevel="75">
-            <IdMatch idRef="Func_austria_eu_ssn_or_equivalent" />
-          </Pattern>
-</Entity>
+        <Pattern confidenceLevel="75">
+          <IdMatch idRef="Func_austria_eu_ssn_or_equivalent" />
+          <Any minMatches="0" maxMatches="0">
+            <Match idRef="Keywords_austria_eu_telephone_number" />
+            <Match idRef="Keywords_austria_eu_mobile_number" />
+          </Any>
+        </Pattern>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>关键字
 
 #### <a name="keywords_austria_eu_ssn_or_equivalent"></a>Keywords_austria_eu_ssn_or_equivalent
 
+- 将 ssn
+- ehic number
+- ehic no
+- 保险代码
+- insurancecode#
+- insurance number
+- insurance no
+- krnknkassennummer
+- ichnkenversicherung
+- socialsecurityno
+- socialsecurityno#
 - social security no
 - social security number
 - social security code
-- insurance number
-- 将 ssn
+- sozialversicherungsnummer
+- sozialversicherungsnummer#
+- soziale sicherheit kein
+- sozialesicherheitkein#
 - ssn#
 - ssn
-- 保险代码
-- 保险代码#
-- socialsecurityno#
-- sozialversicherungsnummer
-- soziale sicherheit kein
+- versicherungscode
 - versicherungsnummer
+- zdravstveno zavarovanje
 
 ## <a name="austria-tax-identification-number"></a>奥地利税务标识号
 
@@ -1080,11 +1108,11 @@ OR
 - T 或 t
 - 可选空间
 - U 或 u
-- 可选空格
+- 可选空间
 - 两个或三个数字
-- 可选空格
+- 可选空间
 - 四个数字
-- 可选空格
+- 可选空间
 - 一个或两个数字
 
 ### <a name="checksum"></a>校验和
@@ -1094,7 +1122,7 @@ OR
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
-- 函数Func_Austria_Value_Added_Tax查找与模式匹配的内容。
+- 该Func_Austria_Value_Added_Tax查找与模式匹配的内容。
 - 找到来自Keyword_Austria_Value_Added_Tax关键字。
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
@@ -1415,7 +1443,7 @@ OR
 
 ### <a name="format"></a>Format
 
-字符串"sig"后跟下面模式中列出的字符和字符串。
+字符串"sig"后跟以下模式中列出的字符和字符串。
 
 ### <a name="pattern"></a>模式
 
@@ -1575,7 +1603,7 @@ OR
 
 ### <a name="format"></a>Format
 
-86 个小写字母或大写字母、数字、正斜杠 (/) 或加号 (+) 的任意组合，前面或后跟以下模式中列出的字符。
+86 位小写字母或大写字母、数字、正斜杠 (/) 或加号 (+) 的任意组合，前面或后跟以下模式中列出的字符。
 
 ### <a name="pattern"></a>模式
 
@@ -1877,7 +1905,6 @@ OR
 - tin#
 
 ## <a name="belgium-passport-number"></a>比利时护照号码
-此敏感信息类型实体仅在欧盟护照号码敏感信息类型中可用。
 
 ### <a name="format"></a>Format
 
@@ -1893,26 +1920,44 @@ OR
   
 ### <a name="definition"></a>定义
 
+ 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
+- 正则表达式  `Regex_belgium_eu_passport_number` 查找与模式匹配的内容。 
+- 找到或  `Keywords_eu_passport_number` 找到 `Keywords_belgium_eu_passport_number` 的关键字。 
+- 正则表达式查找 `Regex_eu_passport_date2` DD MM YY 格式的日期或找到 `Keywords_eu_passport_date` `Keywords_belgium_eu_passport_number` 的关键字
+
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
 - 正则表达式  `Regex_belgium_eu_passport_number` 查找与模式匹配的内容。 
-- 找到一个  `Keywords_belgium_eu_passport_number` 关键字。
+- 找到或  `Keywords_eu_passport_number` 找到 `Keywords_belgium_eu_passport_number` 的关键字。 
 
 ```xml
- <!-- EU Passport Number -->
-<Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
+      <!-- Belgium Passport Number -->
+      <Entity id="d7b1315b-21ca-4774-a32a-596010ff78fd" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Regex_belgium_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number" />
+            <Match idRef="Keywords_belgium_eu_passport_number" />
+          </Any>
+          <Any minMatches="1">
+            <Match idRef="Regex_eu_passport_date2" />
+            <Match idRef="Keywords_eu_passport_date" />
+            <Match idRef="Keywords_belgium_eu_passport_date" />
+          </Any>
+        </Pattern>
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_belgium_eu_passport_number" />
           <Any minMatches="1">
-            <Match idRef="Keywords_eu_passport_number_common" />
+            <Match idRef="Keywords_eu_passport_number" />
             <Match idRef="Keywords_belgium_eu_passport_number" />
           </Any>
         </Pattern>
-</Entity>
+      </Entity>
+
 ```
 
 ### <a name="keywords"></a>关键字
 
-#### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
+#### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
 - passport#
 - passport#
@@ -1937,66 +1982,6 @@ OR
 - Pass-Nr
 - Passnummer
 - reisepass kein
-
-## <a name="belgium-social-security-number-or-equivalent-identification"></a>比利时社会保险号或等效标识
-此敏感信息类型实体仅在欧盟社会保险号或等效 ID 敏感信息类型中可用。
-
-### <a name="format"></a>Format
-
-11 个数字，不带空格或分隔符
-  
-### <a name="pattern"></a>模式
-
-11 个数字
-  
-### <a name="checksum"></a>校验和
-
-是
-  
-### <a name="definition"></a>定义
-
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
-  
-- 该  `Func_belgium_eu_ssn_or_equivalent` 函数查找与模式匹配的内容。 
-- 找到一个  `Keywords_belgium_eu_ssn_or_equivalent` 关键字。 
-    
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-- 该  `Func_belgium_eu_ssn_or_equivalent` 函数查找与模式匹配的内容。 
-    
-```xml
- <!-- EU SSN or Equivalent Number -->
-<Entity id="d24e32a4-c0bb-4ba8-899d-6303b95742d9" patternsProximity="300" recommendedConfidence="75">
-        <Pattern confidenceLevel="85">
-          <IdMatch idRef="Func_belgium_eu_ssn_or_equivalent" />
-          <Match idRef="Keywords_belgium_eu_ssn_or_equivalent" />
-        </Pattern> 
-       <Pattern confidenceLevel="75">
-          <IdMatch idRef="Func_belgium_eu_ssn_or_equivalent" />
-        </Pattern>      
-</Entity>
-```
-
-### <a name="keywords"></a>关键字
-
-#### <a name="keywords_belgium_eu_ssn_or_equivalent"></a>Keywords_belgium_eu_ssn_or_equivalent
-
-- national number
-- national number
-- social security number
-- nationalnumber#
-- ssn#
-- ssn
-- nationalnumber
-- bnn#
-- bnn
-- 个人 ID 号
-- personalidnumber#
-- numéro national
-- numéro de sécurité
-- numéro d'assuré
-- identifiant national
-- identifiantnational#
-- numéronational#
 
 
 ## <a name="belgium-value-added-tax-number"></a>比利时增值税编号
@@ -2121,7 +2106,7 @@ OR
 
 - CPF
 - 标识
-- Registration
+- 注册
 - 收入
 - Cadastro de Pessoas Físicas 
 - 一名 
@@ -2450,7 +2435,7 @@ Registro de Identidade (RIC)  (新格式) ：
 
 10 个数字，不带空格和分隔符
   
-- 与 YYMMDD (的出生日期对应的六)  
+- 六个数字，对应于 YYMMDD (出生日期)  
 - 对应于出生日期的两个数字
 - 对应于性别的一个数字：一个偶数（男性）和一个奇数（对于男性）
 - 一个检查数字
@@ -2534,7 +2519,6 @@ Registro de Identidade (RIC)  (新格式) ：
 
 
 ## <a name="bulgaria-passport-number"></a>保加利亚护照号码
-此敏感信息类型实体仅在欧盟护照号码敏感信息类型中可用。
 
 ### <a name="format"></a>Format
 
@@ -2550,25 +2534,41 @@ Registro de Identidade (RIC)  (新格式) ：
   
 ### <a name="definition"></a>定义
 
+在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
+- 正则表达式  `Regex_bulgaria_eu_passport_number` 查找与模式匹配的内容。 
+- 找到或  `Keywords_eu_passport_number` 找到 `Keywords_bulgaria_eu_passport_number` 的关键字。 
+- 正则表达式查找 `Regex_eu_passport_date1` DD.MM.YYYY 格式的日期或找到 `Keywords_eu_passport_date` 的关键字
+
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
 - 正则表达式  `Regex_bulgaria_eu_passport_number` 查找与模式匹配的内容。 
-- 找到或  `Keywords_bulgaria_eu_passport_number` 找到 `Keywords_eu_passport_number_common` 的关键字。 
+- 找到或  `Keywords_eu_passport_number` 找到 `Keywords_bulgaria_eu_passport_number` 的关键字。 
 
 ```xml
- <!-- EU Passport Number -->
-<Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
+      <!-- Bulgaria Passport Number -->
+      <Entity id="f7172b82-c588-4216-845e-4e54e397f29a" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Regex_bulgaria_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number" />
+            <Match idRef="Keywords_bulgaria_eu_passport_number" />
+          </Any>
+          <Any minMatches="1">
+            <Match idRef="Regex_eu_passport_date1" />
+            <Match idRef="Keywords_eu_passport_date" />
+          </Any>
+        </Pattern>
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_bulgaria_eu_passport_number" />
           <Any minMatches="1">
-            <Match idRef="Keywords_eu_passport_number_common" />
+            <Match idRef="Keywords_eu_passport_number" />
             <Match idRef="Keywords_bulgaria_eu_passport_number" />
           </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 ### <a name="keywords"></a>关键字
 
-#### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
+#### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
 - passport#
 - passport#
@@ -2586,6 +2586,11 @@ Registro de Identidade (RIC)  (新格式) ：
 - номер на паспорта
 - номер на паспорт
 - /否
+
+#### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
+
+- 问题日期
+- 到期日期
 
 ## <a name="canada-bank-account-number"></a>加拿大银行帐号
 
@@ -3050,7 +3055,7 @@ Registro de Identidade (RIC)  (新格式) ：
 #### <a name="keyword_canada_provinces"></a>Keyword_canada_provinces
 
 - Nunavut
-- 里里达
+- 百里达
 - Northwest Territories
 - On一
 - British Columbia
@@ -3220,7 +3225,7 @@ Registro de Identidade (RIC)  (新格式) ：
 - numero identificacion
 - identidad numero
 - 因此，标识为"否"。
-- 百万标识号
+- 中国身份证号码
 - 地名#
 - 唯一税务注册表
 - 唯一的三元角色
@@ -3428,7 +3433,7 @@ Registro de Identidade (RIC)  (新格式) ：
 - master cards
 - diner's Club
 - diners club
-- dinersc
+- dinersc一
 - discover
 - discover card
 - discovercard
@@ -3820,7 +3825,6 @@ Registro de Identidade (RIC)  (新格式) ：
 
 
 ## <a name="croatia-passport-number"></a>克罗地亚护照号码
-此敏感信息类型实体仅在欧盟护照号码敏感信息类型中可用。
 
 ### <a name="format"></a>Format
 
@@ -3836,21 +3840,37 @@ Registro de Identidade (RIC)  (新格式) ：
   
 ### <a name="definition"></a>定义
 
+在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
+- 正则表达式  `Regex_croatia_eu_passport_number` 查找与模式匹配的内容。 
+- 找到或  `Keywords_eu_passport_number` 找到 `Keywords_croatia_eu_passport_number` 的关键字。 
+- 正则表达式查找 `Regex_eu_passport_date1` DD.MM.YYYY 格式的日期或找到 `Keywords_eu_passport_date` 的关键字
+
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
 - 正则表达式  `Regex_croatia_eu_passport_number` 查找与模式匹配的内容。 
-- 找到或  `Keywords_eu_passport_number_common` 找到 `Keywords_croatia_eu_passport_number` 的关键字。 
+- 找到或  `Keywords_eu_passport_number` 找到 `Keywords_croatia_eu_passport_number` 的关键字。 
     
 ```xml
- <!-- EU Passport Number -->
-<Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
+      <!-- Croatia Passport Number -->
+      <Entity id="7d7a729d-32d8-4204-8d01-d5e6a6c25581" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Regex_croatia_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number" />
+            <Match idRef="Keywords_croatia_eu_passport_number" />
+          </Any>
+          <Any minMatches="1">
+            <Match idRef="Regex_eu_passport_date1" />
+            <Match idRef="Keywords_eu_passport_date" />
+          </Any>
+        </Pattern>
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_croatia_eu_passport_number" />
           <Any minMatches="1">
-            <Match idRef="Keywords_eu_passport_number_common" />
+            <Match idRef="Keywords_eu_passport_number" />
             <Match idRef="Keywords_croatia_eu_passport_number" />
           </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 ### <a name="keywords"></a>关键字
 
@@ -3893,7 +3913,7 @@ Registro de Identidade (RIC)  (新格式) ：
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
 - 函数 Func_croatia_oib_number 找到与该模式匹配的内容。
-- 找到来自Keywords_croatia_eu_tax_file_number的关键字。
+- 找到来自Keywords_croatia_eu_tax_file_number关键字。
 - 校验和通过。
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
@@ -3946,68 +3966,7 @@ Registro de Identidade (RIC)  (新格式) ：
 - tin no
 - tin#
 
-## <a name="croatia-social-security-number-or-equivalent-identification"></a>克罗地亚社会保险号或等效标识
-此敏感信息类型实体仅在欧盟社会保险号或等效 ID 敏感信息类型中可用。
 
-### <a name="format"></a>Format
-
-11 个数字，不含空格和分隔符
-  
-### <a name="pattern"></a>模式
-
-11 个数字：
-  
-- 十个数字
-- 一个检查数字
-    
-### <a name="checksum"></a>校验和
-
-是
-  
-### <a name="definition"></a>定义
-
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
-  
-- 该  `Func_croatia_eu_ssn_or_equivalent` 函数查找与模式匹配的内容。 
-- 找到一个  `Keywords_croatia_eu_ssn_or_equivalent` 关键字。 
-    
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-  
-- 该  `Func_croatia_eu_ssn_or_equivalent` 函数查找与模式匹配的内容。 
-    
-```xml
- <!-- EU SSN or Equivalent Number -->
-<Entity id="d24e32a4-c0bb-4ba8-899d-6303b95742d9" patternsProximity="300" recommendedConfidence="75">
-        <Pattern confidenceLevel="85">
-          <IdMatch idRef="Func_croatia_eu_ssn_or_equivalent" />
-          <Match idRef="Keywords_croatia_eu_ssn_or_equivalent" />
-        </Pattern> 
-       <Pattern confidenceLevel="75">
-          <IdMatch idRef="Func_croatia_eu_ssn_or_equivalent" />
-        </Pattern>      
-</Entity>
-```
-
-### <a name="keywords"></a>关键字
-
-#### <a name="keywords_croatia_eu_ssn_or_equivalent"></a>Keywords_croatia_eu_ssn_or_equivalent
-
-- 个人标识号
-- master citizen number
-- national identification number
-- social security number
-- nationalnumber#
-- ssn#
-- ssn
-- nationalnumber
-- bnn#
-- bnn
-- 个人 ID 号
-- personalidnumber#
-- oib
-- osobni identifidentcijski broj
-
-   
 ## <a name="cyprus-drivers-license-number"></a>塞浦路斯驾驶证号码
 
 ### <a name="format"></a>Format
@@ -4220,7 +4179,6 @@ Registro de Identidade (RIC)  (新格式) ：
 
 
 ## <a name="cyprus-passport-number"></a>塞浦路斯护照号码
-此敏感信息类型实体仅在欧盟护照号码敏感信息类型中可用。
 
 ### <a name="format"></a>Format
 
@@ -4236,21 +4194,37 @@ Registro de Identidade (RIC)  (新格式) ：
   
 ### <a name="definition"></a>定义
 
+在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
+- 正则表达式  `Regex_cyprus_eu_passport_number` 查找与模式匹配的内容。 
+- 找到或  `Keywords_eu_passport_number` 找到 `Keywords_cyprus_eu_passport_number` 的关键字。 
+- 正则表达式查找 `Regex_cyprus_eu_passport_date` DD/MM/YYYY 格式的日期或找到 `Keywords_cyprus_eu_passport_date` 的关键字
+
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-- 正则表达式  `Regex_cyprus_eu_passport_number` 查找与模式匹配的内容。
-- 找到或  `Keywords_eu_passport_number_common` 找到 `Keywords_cyprus_eu_passport_number` 的关键字。 
+- 正则表达式  `Regex_cyprus_eu_passport_number` 查找与模式匹配的内容。 
+- 找到或  `Keywords_eu_passport_number` 找到 `Keywords_cyprus_eu_passport_number` 的关键字。  
     
 ```xml
- <!-- EU Passport Number -->
-<Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
+      <!-- Cyprus Passport Number -->
+      <Entity id="9193e2e8-7f8c-43c1-a274-ac40d651936f" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Regex_cyprus_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number" />
+            <Match idRef="Keywords_cyprus_eu_passport_number" />
+          </Any>
+          <Any minMatches="1">
+            <Match idRef="Regex_cyprus_eu_passport_date" />
+            <Match idRef="Keywords_cyprus_eu_passport_date" />
+          </Any>
+        </Pattern>
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_cyprus_eu_passport_number" />
           <Any minMatches="1">
-            <Match idRef="Keywords_eu_passport_number_common" />
+            <Match idRef="Keywords_eu_passport_number" />
             <Match idRef="Keywords_cyprus_eu_passport_number" />
           </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>关键字
@@ -4281,6 +4255,12 @@ Registro de Identidade (RIC)  (新格式) ：
 - pasaport nu一s
 - Pasaport 否。
 - Αρ. Διαβατηρίου
+
+#### <a name="keywords_cyprus_eu_passport_date"></a>Keywords_cyprus_eu_passport_date
+
+- 过期时间
+- 颁发于
+
 
 ## <a name="cyprus-tax-identification-number"></a>塞浦路斯税务标识号
 此敏感信息类型仅适用于：
@@ -4351,8 +4331,8 @@ Registro de Identidade (RIC)  (新格式) ：
 - tin id
 - tin no
 - tin#
-- vergi kim且 kodu
-- vergi kim一 nu一s
+- vergi kim并 kodu
+- vergi kimkim nu一s
 - αριθμός φορολογικού μητρώου
 - κωδικός φορολογικού μητρώου
 - φορολογική ταυτότητα
@@ -4529,15 +4509,14 @@ Registro de Identidade (RIC)  (新格式) ：
 
 
 ## <a name="czech-passport-number"></a>捷克护照号码
-此敏感信息类型实体仅在欧盟护照号码敏感信息类型中可用。
 
 ### <a name="format"></a>Format
 
-八个数字，不带空格或分隔符
+不带空格或分隔符的八个数字
   
 ### <a name="pattern"></a>模式
 
-八个数字，不带空格或分隔符
+不带空格或分隔符的八个数字
   
 ### <a name="checksum"></a>校验和
 
@@ -4545,21 +4524,37 @@ Registro de Identidade (RIC)  (新格式) ：
   
 ### <a name="definition"></a>定义
 
+在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
+- 正则表达式  `Regex_czech_republic_eu_passport_number` 查找与模式匹配的内容。 
+- 找到或  `Keywords_eu_passport_number` 找到 `Keywords_czech_republic_eu_passport_number` 的关键字。 
+- 正则表达式查找 `Regex_eu_passport_date1` DD.MM.YYYY 格式的日期或找到 `Keywords_eu_passport_date` 的关键字
+
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
 - 正则表达式  `Regex_czech_republic_eu_passport_number` 查找与模式匹配的内容。 
-- 找到或  `Keywords_eu_passport_number_common` 找到 `Keywords_czech_republic_eu_passport_number` 的关键字。 
+- 找到或  `Keywords_eu_passport_number` 找到 `Keywords_czech_republic_eu_passport_number` 的关键字。 
     
 ```xml
- <!-- EU Passport Number -->
-<Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
+      <!-- Czech Republic Passport Number -->
+      <Entity id="7bcd8ce8-5e92-4bbe-bc92-fa669f0369fa" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Regex_czech_republic_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number" />
+            <Match idRef="Keywords_czech_republic_eu_passport_number" />
+          </Any>
+          <Any minMatches="1">
+            <Match idRef="Regex_eu_passport_date1" />
+            <Match idRef="Keywords_eu_passport_date" />
+          </Any>
+        </Pattern>
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_czech_republic_eu_passport_number" />
           <Any minMatches="1">
-            <Match idRef="Keywords_eu_passport_number_common" />
+            <Match idRef="Keywords_eu_passport_number" />
             <Match idRef="Keywords_czech_republic_eu_passport_number" />
           </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>关键字
@@ -4585,8 +4580,13 @@ Registro de Identidade (RIC)  (新格式) ：
 - passeport no
 - íísla pasu
 
+#### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
 
-## <a name="czech-personal-identity-number"></a>捷克语个人标识号
+- 问题日期
+- 到期日期
+
+
+## <a name="czech-personal-identity-number"></a>捷克个人标识号
 
 ### <a name="format"></a>Format
 
@@ -4618,7 +4618,7 @@ Registro de Identidade (RIC)  (新格式) ：
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
 
-- 函数Func_czech_id_card_new_format查找与模式匹配的内容。
+- 该函数Func_czech_id_card_new_format查找与模式匹配的内容。
 - 校验和通过。
 
 ```xml
@@ -4684,68 +4684,6 @@ Registro de Identidade (RIC)  (新格式) ：
 - tin no
 - tin#
 - 唯一标识号
-
-
-## <a name="czech-social-security-number-or-equivalent-identification"></a>捷克身份证号或等效标识
-
-此敏感信息类型实体仅在欧盟社会保险号或等效 ID 敏感信息类型中可用。
-
-### <a name="format"></a>Format
-
-10 个数字和指定模式中的反杠
-  
-### <a name="pattern"></a>模式
-
-10 个数字和一个反杠：
-  
-- 对应于 YYMMDD (出生日期的六) ： 
-- 反杠
-- 三个数字，对应于一个序列号，该序列号将同一日期的人分开
-- 一个检查数字
-    
-### <a name="checksum"></a>校验和
-
-是
-  
-### <a name="definition"></a>定义
-
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
-- 该  `Func_czech_republic_eu_ssn_or_equivalent` 函数查找与模式匹配的内容。 
-- 找到一个  `Keywords_czech_republic_eu_ssn_or_equivalent` 关键字。 
-    
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-- 该  `Func_czech_republic_eu_ssn_or_equivalent` 函数查找与模式匹配的内容。 
-
-```xml
- <!-- EU SSN or Equivalent Number -->
-<Entity id="d24e32a4-c0bb-4ba8-899d-6303b95742d9" patternsProximity="300" recommendedConfidence="75">
-        <Pattern confidenceLevel="85">
-          <IdMatch idRef="Func_czech_republic_eu_ssn_or_equivalent" />
-          <Match idRef="Keywords_czech_republic_eu_ssn_or_equivalent" />
-        </Pattern> 
-       <Pattern confidenceLevel="75">
-          <IdMatch idRef="Func_czech_republic_eu_ssn_or_equivalent" />
-        </Pattern>      
-</Entity>
-```
-
-### <a name="keywords"></a>关键字
-
-#### <a name="keywords_czech_republic_eu_ssn_or_equivalent"></a>Keywords_czech_republic_eu_ssn_or_equivalent
-
-- birth number
-- national identification number
-- 个人标识号
-- social security number
-- nationalnumber#
-- ssn#
-- ssn
-- national number
-- 个人 ID 号
-- personalidnumber#
-- r-
-- rodné ííslo
-- rodne cislo
 
 
 ## <a name="denmark-drivers-license-number"></a>丹麦驾驶证号码
@@ -4911,7 +4849,6 @@ Registro de Identidade (RIC)  (新格式) ：
 
 
 ## <a name="denmark-passport-number"></a>丹麦护照号码
-此敏感信息类型实体仅在欧盟护照号码敏感信息类型中可用。
 
 ### <a name="format"></a>Format
 
@@ -4927,21 +4864,38 @@ Registro de Identidade (RIC)  (新格式) ：
   
 ### <a name="definition"></a>定义
 
+在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
+- 正则表达式  `Regex_denmark_eu_passport_number` 查找与模式匹配的内容。 
+- 找到或  `Keywords_eu_passport_number` 找到 `Keywords_denmark_eu_passport_number` 的关键字。 
+- 正则表达式查找 `Regex_eu_passport_date2` DD MM YY 格式的日期或找到 `Keywords_eu_passport_date` 的关键字
+
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
 - 正则表达式  `Regex_denmark_eu_passport_number` 查找与模式匹配的内容。 
-- 找到或  `Keywords_eu_passport_number_common` 找到 `Keywords_denmark_eu_passport_number` 的关键字。 
+- 找到或  `Keywords_eu_passport_number` 找到 `Keywords_denmark_eu_passport_number` 的关键字。 
     
 ```xml
- <!-- EU Passport Number -->
-<Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
+      <!-- Denmark Passport Number -->
+      <Entity id="25e8c47e-e6fe-4884-a211-74898f8c0196" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Regex_denmark_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number" />
+            <Match idRef="Keywords_denmark_eu_passport_number" />
+          </Any>
+          <Any minMatches="1">
+            <Match idRef="Regex_eu_passport_date2" />
+            <Match idRef="Keywords_eu_passport_date" />
+          </Any>
+        </Pattern>
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_denmark_eu_passport_number" />
           <Any minMatches="1">
-            <Match idRef="Keywords_eu_passport_number_common" />
+            <Match idRef="Keywords_eu_passport_number" />
             <Match idRef="Keywords_denmark_eu_passport_number" />
           </Any>
         </Pattern>
-</Entity>
+      </Entity>
+
 ```
 
 ### <a name="keywords"></a>关键字
@@ -4964,6 +4918,11 @@ Registro de Identidade (RIC)  (新格式) ：
 - pasnummer
 - Passeport n°
 - pasnumre
+
+#### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
+
+- 问题日期
+- 到期日期
 
 
 ## <a name="denmark-personal-identification-number"></a>丹麦个人标识号
@@ -5083,65 +5042,7 @@ Registro de Identidade (RIC)  (新格式) ：
 - sygesikringsnummer
 
 
-## <a name="denmark-social-security-number-or-equivalent-identification"></a>丹麦社会保险号或等效标识
-此敏感信息类型实体仅适用于欧盟社会保险号或等效 ID 敏感信息类型。
-
-### <a name="format"></a>Format
-
-指定模式中的十个数字和连字符
-  
-### <a name="pattern"></a>模式
-
-10 个数字和一个连字符：
-  
-- 六个数字，对应于 DDMMYY (出生日期)  
-- 连字符
-- 对应于序列号的四个数字
-
-### <a name="checksum"></a>校验和
-
-是
-  
-### <a name="definition"></a>定义
-
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
-- 该  `Func_denmark_eu_ssn_or_equivalent` 函数查找与模式匹配的内容。 
-- 找到一个  `Keywords_denmark_eu_ssn_or_equivalent` 关键字。 
-    
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-- 该  `Func_denmark_eu_ssn_or_equivalent` 函数查找与模式匹配的内容。 
-    
-```xml
- <!-- EU SSN or Equivalent Number -->
-<Entity id="d24e32a4-c0bb-4ba8-899d-6303b95742d9" patternsProximity="300" recommendedConfidence="75">
-        <Pattern confidenceLevel="85">
-          <IdMatch idRef="Func_denmark_eu_ssn_or_equivalent" />
-          <Match idRef="Keywords_denmark_eu_ssn_or_equivalent" />
-        </Pattern> 
-       <Pattern confidenceLevel="75">
-          <IdMatch idRef="Func_denmark_eu_ssn_or_equivalent" />
-        </Pattern>      
-</Entity>
-```
-
-### <a name="keywords"></a>关键字
-
-#### <a name="keywords_denmark_eu_ssn_or_equivalent"></a>Keywords_denmark_eu_ssn_or_equivalent
-
-- 个人标识号
-- national identification number
-- social security number
-- nationalnumber#
-- ssn#
-- ssn
-- national number
-- 个人 ID 号
-- personalidnumber#
-- cpr-nummer
-- personnummer
-
-
-## <a name="drug-enforcement-agency-dea-number"></a>管制局 (DEA) 号码
+## <a name="drug-enforcement-agency-dea-number"></a>犯罪管制局 (DEA) 号码
 
 ### <a name="format"></a>Format
 
@@ -5376,7 +5277,7 @@ Registro de Identidade (RIC)  (新格式) ：
 
 ### <a name="format"></a>Format
 
-11 个数字，不含空格和分隔符
+11 个数字，不带空格和分隔符
   
 ### <a name="pattern"></a>模式
 
@@ -5384,7 +5285,7 @@ Registro de Identidade (RIC)  (新格式) ：
   
 - 一个数字，对应于性生活和百年 (奇数男性，偶数男性;1-2：19 世纪;3-4：20 世纪;5-6：21 世纪) 
 - 六个数字，对应于 YYMMDD (出生日期) 
-- 三个数字，对应于一个序列号，分隔同一日期的人
+- 三个数字，对应于同一日期出生日期分隔的序列号
 - 一个检查数字
     
 ### <a name="checksum"></a>校验和
@@ -5454,7 +5355,6 @@ Registro de Identidade (RIC)  (新格式) ：
 
 
 ## <a name="estonia-passport-number"></a>爱沙尼亚护照号码
-此敏感信息类型实体仅在欧盟护照号码敏感信息类型中可用。
 
 ### <a name="format"></a>Format
 
@@ -5470,21 +5370,37 @@ Registro de Identidade (RIC)  (新格式) ：
   
 ### <a name="definition"></a>定义
 
+在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
+- 正则表达式  `Regex_estonia_eu_passport_number` 查找与模式匹配的内容。 
+- 找到或  `Keywords_eu_passport_number` 找到 `Keywords_estonia_eu_passport_number` 的关键字。 
+- 正则表达式查找 `Regex_eu_passport_date1` DD.MM.YYYY 格式的日期或找到 `Keywords_eu_passport_date` 的关键字
+
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
 - 正则表达式  `Regex_estonia_eu_passport_number` 查找与模式匹配的内容。 
-- 找到或  `Keywords_eu_passport_number_common` 找到 `Keywords_estonia_eu_passport_number` 的关键字。 
+- 找到或  `Keywords_eu_passport_number` 找到 `Keywords_estonia_eu_passport_number` 的关键字。 
     
 ```xml
- <!-- EU Passport Number -->
-<Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
+      <!-- Estonia Passport Number -->
+      <Entity id="61f7073a-509e-425b-a754-bc01bb5d5b8c" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Regex_estonia_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number" />
+            <Match idRef="Keywords_estonia_eu_passport_number" />
+          </Any>
+          <Any minMatches="1">
+            <Match idRef="Regex_eu_passport_date1" />
+            <Match idRef="Keywords_eu_passport_date" />
+          </Any>
+        </Pattern>
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_estonia_eu_passport_number" />
           <Any minMatches="1">
-            <Match idRef="Keywords_eu_passport_number_common" />
+            <Match idRef="Keywords_eu_passport_number" />
             <Match idRef="Keywords_estonia_eu_passport_number" />
           </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>关键字
@@ -5505,6 +5421,12 @@ Registro de Identidade (RIC)  (新格式) ：
 #### <a name="keywords_estonia_eu_passport_number"></a>Keywords_estonia_eu_passport_number
 
 eesti kodaniku passi number passinumbrid document number document no dokumendi nr
+
+#### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
+
+- 问题日期
+- 到期日期
+
 
 ## <a name="eu-debit-card-number"></a>欧盟借记卡号
 
@@ -5629,7 +5551,7 @@ eesti kodaniku passi number passinumbrid document number document no dokumendi n
 - debitcards 
 - debito automatico 
 - diners club 
-- dinersc 
+- dinersc一 
 - discover 
 - discover card 
 - discover cards 
@@ -5806,7 +5728,7 @@ eesti kodaniku passi number passinumbrid document number document no dokumendi n
 - sicherheitsnummer 
 - speldblok 
 - veiligheid nr 
-- igheidsaantal 
+- 一个 
 - 一idscode 
 - igheidsnummer 
 - verfalldatum 
@@ -5877,7 +5799,7 @@ eesti kodaniku passi number passinumbrid document number document no dokumendi n
 - [意大利](#italy-drivers-license-number)
 - [拉脱维亚](#latvia-drivers-license-number)
 - [Lithuania（立陶宛）](#lithuania-drivers-license-number)
-- [比塞明卡](#luxemburg-drivers-license-number)
+- [基里明卡](#luxemburg-drivers-license-number)
 - [马耳他](#malta-drivers-license-number)
 - [荷兰](#netherlands-drivers-license-number)
 - [波兰](#poland-drivers-license-number) 
@@ -5944,7 +5866,7 @@ eesti kodaniku passi number passinumbrid document number document no dokumendi n
 - [意大利](#italy-passport-number)
 - [拉脱维亚](#latvia-passport-number)
 - [Lithuania（立陶宛）](#lithuania-passport-number)
-- [比塞明卡](#luxemburg-passport-number)
+- [基里明卡](#luxemburg-passport-number)
 - [马耳他](#malta-passport-number)
 - [荷兰](#netherlands-passport-number)
 - [波兰](#poland-passport-number)
@@ -5961,19 +5883,19 @@ eesti kodaniku passi number passinumbrid document number document no dokumendi n
 
 这些实体是欧盟社会保险号或等效标识敏感信息类型中的实体。
 
-- [Austria（奥地利）](#austria-social-security-number-or-equivalent-identification)
-- [Belgium（比利时）](#belgium-social-security-number-or-equivalent-identification)
-- [Croatia（克罗地亚）](#croatia-social-security-number-or-equivalent-identification)
-- [捷克语](#czech-social-security-number-or-equivalent-identification)
-- [丹麦](#denmark-social-security-number-or-equivalent-identification)
-- [Finland（芬兰）](#finland-social-security-number-or-equivalent-identification)
+- [Austria（奥地利）](#austria-social-security-number)
+- [Belgium（比利时）](#belgium-national-number)
+- [Croatia（克罗地亚）](#croatia-personal-identification-oib-number)
+- [捷克语](#czech-personal-identity-number)
+- [丹麦](#denmark-personal-identification-number)
+- [Finland（芬兰）](#finland-national-id)
 - [France（法国）](#france-social-security-number-insee-or-equivalent-identification)
 - [Germany（德国）](#germany-identity-card-number)
 - [希腊](#greece-national-id-card)
-- [匈牙利](#hungary-social-security-number-or-equivalent-identification)
+- [匈牙利](#hungary-social-security-number-taj)
 - [Portugal（葡萄牙）](#portugal-citizen-card-number)
 - [西班牙](#spain-social-security-number-ssn)
-- [瑞典](#sweden-social-security-number-or-equivalent-identification)
+- [瑞典](#sweden-national-id)
 
 
 ## <a name="eu-tax-identification-number"></a>欧盟税务标识号
@@ -6339,7 +6261,6 @@ eesti kodaniku passi number passinumbrid document number document no dokumendi n
 
 
 ## <a name="finland-passport-number"></a>芬兰护照号码
-此敏感信息类型实体在欧盟护照号码敏感信息类型中可用，并作为独立的敏感信息类型实体提供。
 
 ### <a name="format"></a>Format
 九个字母和数字的组合
@@ -6397,78 +6318,6 @@ eesti kodaniku passi number passinumbrid document number document no dokumendi n
 - passi number
 
 
-## <a name="finland-social-security-number-or-equivalent-identification"></a>芬兰社会保险号或等效标识
-此敏感信息类型实体仅在欧盟社会保险号或等效 ID 敏感信息类型中可用。
-
-### <a name="format"></a>Format
-
-指定格式的 11 个字符的组合
-  
-### <a name="pattern"></a>模式
-
-指定格式的 11 个字符的组合：
-  
-- 六个数字 
-- 以下其中一个实例：
-  - 加号
-  - 减号
-  - 字母"A" (不区分大小写) 
-- 三个数字
-- 一个字母或一个数字
-    
-### <a name="checksum"></a>校验和
-
-是
-  
-### <a name="definition"></a>定义
-
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
-- 该  `Func_finland_eu_ssn_or_equivalent` 函数查找与模式匹配的内容。 
-- 找到一个  `Keywords_finland_eu_ssn_or_equivalent` 关键字。 
-    
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-- 该  `Func_finland_eu_ssn_or_equivalent` 函数查找与模式匹配的内容。 
-    
-```xml
- <!-- EU SSN or Equivalent Number -->
-<Entity id="d24e32a4-c0bb-4ba8-899d-6303b95742d9" patternsProximity="300" recommendedConfidence="75">
-        <Pattern confidenceLevel="85">
-          <IdMatch idRef="Func_finland_eu_ssn_or_equivalent" />
-          <Match idRef="Keywords_finland_eu_ssn_or_equivalent" />
-        </Pattern> 
-       <Pattern confidenceLevel="75">
-          <IdMatch idRef="Func_finland_eu_ssn_or_equivalent" />
-        </Pattern>      
-</Entity>
-```
-
-### <a name="keywords"></a>关键字
-
-#### <a name="keywords_finland_eu_ssn_or_equivalent"></a>Keywords_finland_eu_ssn_or_equivalent
-
-- identification number
-- 个人 ID
-- 标识号
-- 芬兰国家/区身份证号码
-- personalidnumber#
-- national identification number
-- id number
-- national id no.
-- national id number
-- id no
-- tunnistenumero
-- henkilötunnus
-- yksilöllinen henkilökohtainen tunnistenumero
-- ainutlaatuinen henkilökohtainen tunnus
-- identiteero numero
-- snkmen henkilötunnus
-- henkilötunnusnumero#
-- tullisen tunnistenumero
-- tunnusnumero
-- tullinen tunnus numero
-- hetu
-
-
 ## <a name="france-drivers-license-number"></a>法国驾驶证号码
 
 ### <a name="format"></a>Format
@@ -6486,7 +6335,7 @@ eesti kodaniku passi number passinumbrid document number document no dokumendi n
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-- 函数Func_french_drivers_license找到与模式匹配的内容。
+- 函数Func_french_drivers_license查找与模式匹配的内容。
 - 找到Keyword_french_drivers_license关键字。
 
 ```xml
@@ -6785,7 +6634,7 @@ eesti kodaniku passi number passinumbrid document number document no dokumendi n
 - Passeportn °
 
       
-## <a name="france-social-security-number-insee-or-equivalent-identification"></a>法国社会保险号码 (INSEE) 或等效标识
+## <a name="france-social-security-number-insee-or-equivalent-identification"></a>法国社会保险号 (INSEE) 或等效标识
 此敏感信息类型实体包含在欧盟社会保险号和等效 ID 敏感信息类型中，并作为独立的敏感信息类型实体提供。
 
 ### <a name="format"></a>Format
@@ -6971,10 +6820,10 @@ eesti kodaniku passi number passinumbrid document number document no dokumendi n
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
 - 函数Func_france_value_added_tax_number查找与模式匹配的内容。
-- 找到来自Keywords_france_value_added_tax_number关键字。
+- 找到搜索Keywords_france_value_added_tax_number关键字。
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-- 函数Func_france_value_added_tax_number查找与模式匹配的内容。
+- 此函数Func_france_value_added_tax_number查找与模式匹配的内容。
 
 ```xml
       <!-- France Value Added Tax Number -->
@@ -7249,7 +7098,6 @@ eesti kodaniku passi number passinumbrid document number document no dokumendi n
 
 
 ## <a name="germany-passport-number"></a>德国护照号码
-此敏感信息类型实体包含在欧盟护照号码敏感信息类型中，并作为独立的敏感信息类型实体提供。
 
 ### <a name="format"></a>Format
 
@@ -7271,12 +7119,12 @@ eesti kodaniku passi number passinumbrid document number document no dokumendi n
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
 - 函数 Func_german_passport 找到与该模式匹配的内容。
-- 找到一个 `Keyword_german_passport` 关键字。
+- 找到或 `Keyword_german_passport` 找到 `Keywords_eu_passport_number_common` 的关键字。
 - 校验和通过。
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
 - 函数 Func_german_passport_data 找到与该模式匹配的内容。
-- 找到一个 `Keyword_german_passport` 关键字。
+- 找到或 `Keyword_german_passport` 找到 `Keywords_eu_passport_number_common` 的关键字。
 - 校验和通过。
 
 ```xml
@@ -7284,11 +7132,17 @@ eesti kodaniku passi number passinumbrid document number document no dokumendi n
     <Entity id="2e3da144-d42b-47ed-b123-fbf78604e52c" patternsProximity="300" recommendedConfidence="75">
       <Pattern confidenceLevel="85">
         <IdMatch idRef="Func_german_passport" />
-        <Match idRef="Keyword_german_passport" />
+        <Any minMatches="1">
+          <Match idRef="Keyword_german_passport" />
+          <Match idRef="Keywords_eu_passport_number_common" />
+        </Any>
       </Pattern>
       <Pattern confidenceLevel="75">
         <IdMatch idRef="Func_german_passport_data" />
-        <Match idRef="Keyword_german_passport" />
+        <Any minMatches="1">
+          <Match idRef="Keyword_german_passport" />
+          <Match idRef="Keywords_eu_passport_number_common" />
+        </Any>
       </Pattern>
     </Entity>
 ```
@@ -7307,11 +7161,25 @@ eesti kodaniku passi number passinumbrid document number document no dokumendi n
 - passeport no.
 - passeport no
 
+#### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
+
+- passport#
+- passport#
+- passportid
+- passports
+- passportno
+- passport no
+- passportnumber
+- passport number
+- passportnumbers
+- passport numbers
+
+
 ## <a name="germany-tax-identification-number"></a>德国税务标识号
 
 ### <a name="format"></a>Format
 
-11 个数字，不含空格和分隔符
+11 个数字，不带空格和分隔符
   
 ### <a name="pattern"></a>模式
 
@@ -7414,7 +7282,7 @@ eesti kodaniku passi number passinumbrid document number document no dokumendi n
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
 - 函数Func_germany_value_added_tax_number查找与模式匹配的内容。
-- 找到来自Keywords_germany_value_added_tax_number关键字。
+- 找到搜索Keywords_germany_value_added_tax_number关键字。
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
 - 函数Func_germany_value_added_tax_number查找与模式匹配的内容。
@@ -7669,8 +7537,6 @@ eesti kodaniku passi number passinumbrid document number document no dokumendi n
 
 ## <a name="greece-passport-number"></a>希腊护照号码
 
-此敏感信息类型实体仅在欧盟护照号码敏感信息类型中可用。
-
 ### <a name="format"></a>Format
 
 两个字母后跟七个数字，无空格或分隔符
@@ -7685,27 +7551,42 @@ eesti kodaniku passi number passinumbrid document number document no dokumendi n
   
 ### <a name="definition"></a>定义
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-  
+在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
 - 正则表达式  `Regex_greece_eu_passport_number` 查找与模式匹配的内容。 
-- 找到或  `Keywords_eu_passport_number_common` 找到 `Keywords_greece_eu_passport_number` 的关键字。 
+- 找到或  `Keywords_eu_passport_number` 找到 `Keywords_greece_eu_passport_number` 的关键字。 
+- 正则表达式查找 `Regex_greece_eu_passport_date` DD MMM YY 格式的日期 (示例 - 8 月 19) 或找到 `Keywords_greece_eu_passport_date` 关键字
+
+在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
+- 正则表达式  `Regex_greece_eu_passport_number` 查找与模式匹配的内容。 
+- 找到或  `Keywords_eu_passport_number` 找到 `Keywords_greece_eu_passport_number` 的关键字。 
     
 ```xml
- <!-- EU Passport Number -->
-<Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
+      <!-- Greece Passport Number -->
+      <Entity id="7e65eb47-cdf9-4f52-8f90-2a27d5ee67e3" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Regex_greece_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number" />
+            <Match idRef="Keywords_greece_eu_passport_number" />
+          </Any>
+          <Any minMatches="1">
+            <Match idRef="Regex_greece_eu_passport_date" />
+            <Match idRef="Keywords_greece_eu_passport_date" />
+          </Any>
+        </Pattern>
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_greece_eu_passport_number" />
           <Any minMatches="1">
-            <Match idRef="Keywords_eu_passport_number_common" />
+            <Match idRef="Keywords_eu_passport_number" />
             <Match idRef="Keywords_greece_eu_passport_number" />
           </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>关键字
 
-#### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
+#### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
 - passport#
 - passport#
@@ -7723,6 +7604,65 @@ eesti kodaniku passi number passinumbrid document number document no dokumendi n
 - αριθμός διαβατηρίου
 - αριθμούς διαβατηρίου
 - αριθμός διαβατηριο
+
+
+## <a name="greece-social-security-number-amka"></a>希腊社会保险号码 (AMKA) 
+此敏感信息类型仅适用于：
+- 数据丢失防护策略
+- 通信合规性策略
+- 信息治理
+- 记录管理
+- Microsoft 云应用安全
+
+### <a name="format"></a>Format
+
+无空格和分隔符的十一个数字
+  
+### <a name="pattern"></a>模式
+
+- 6 个数字作为出生日期 YYMMDD
+- 4 个数字
+- 一个检查数字
+  
+### <a name="checksum"></a>校验和
+
+是
+  
+### <a name="definition"></a>定义
+
+在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
+- 该  `Func_greece_eu_ssn` 函数查找与模式匹配的内容。 
+- 找到一个  `Keywords_greece_eu_ssn_or_equivalent` 关键字。 
+    
+在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
+- 该  `Func_greece_eu_ssn` 函数查找与模式匹配的内容。 
+
+```xml
+      <!-- Greece Social Security Number (AMKA) -->
+      <Entity id="e39b03f4-50ea-41ae-af7a-a4b9539596ad" patternsProximity="300" recommendedConfidence="85">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Func_greece_eu_ssn" />
+          <Match idRef="Keywords_greece_eu_ssn_or_equivalent" />
+        </Pattern>
+        <Pattern confidenceLevel="75">
+          <IdMatch idRef="Func_greece_eu_ssn" />
+        </Pattern>
+      </Entity>
+```
+
+### <a name="keywords"></a>关键字
+
+#### <a name="keywords_greece_eu_ssn_or_equivalent"></a>Keywords_greece_eu_ssn_or_equivalent
+
+- ssn
+- ssn#
+- social security no
+- socialsecurityno#
+- social security number
+- amka
+- a.m.k.a.
+- Αριθμού Μητρώου Κοινωνικής Ασφάλισης
+
 
 ## <a name="greece-tax-identification-number"></a>希腊税务标识号
 此敏感信息类型仅适用于：
@@ -8112,8 +8052,6 @@ eesti kodaniku passi number passinumbrid document number document no dokumendi n
 
 ## <a name="hungary-passport-number"></a>匈牙利护照号码
 
-此敏感信息类型实体仅在欧盟护照号码敏感信息类型中可用。
-
 ### <a name="format"></a>Format
 
 两个字母后跟六个或七个数字，没有空格或分隔符
@@ -8128,26 +8066,41 @@ eesti kodaniku passi number passinumbrid document number document no dokumendi n
   
 ### <a name="definition"></a>定义
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-  
+在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
 - 正则表达式  `Regex_hungary_eu_passport_number` 查找与模式匹配的内容。 
-- 找到或  `Keywords_eu_passport_number_common` 找到 `Keywords_hungary_eu_passport_number` 的关键字。 
+- 找到或  `Keywords_eu_passport_number` 找到 `Keywords_hungary_eu_passport_number` 的关键字。 
+- 正则表达式查找格式 `Regex_hungary_eu_passport_date` 为 DD MMM/MMM YY (示例 - 01 MÁR/MAR 12) 或找到 `Keywords_eu_passport_date` 的关键字
+
+在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
+- 正则表达式  `Regex_hungary_eu_passport_number` 查找与模式匹配的内容。 
+- 找到或  `Keywords_eu_passport_number` 找到 `Keywords_hungary_eu_passport_number` 的关键字。 
     
 ```xml
- <!-- EU Passport Number -->
-<Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
+      <!-- Hungary Passport Number -->
+      <Entity id="5b483910-9aa7-4c99-9917-f4001464bda7" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Regex_hungary_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number" />
+            <Match idRef="Keywords_hungary_eu_passport_number" />
+          </Any>
+          <Any minMatches="1">
+            <Match idRef="Regex_hungary_eu_passport_date" />
+            <Match idRef="Keywords_eu_passport_date" />
+          </Any>
+        </Pattern>
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_hungary_eu_passport_number" />
           <Any minMatches="1">
-            <Match idRef="Keywords_eu_passport_number_common" />
+            <Match idRef="Keywords_eu_passport_number" />
             <Match idRef="Keywords_hungary_eu_passport_number" />
           </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 ### <a name="keywords"></a>关键字
 
-#### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
+#### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
 - passport#
 - passport#
@@ -8166,9 +8119,8 @@ eesti kodaniku passi number passinumbrid document number document no dokumendi n
 - Útlevelek száma
 - útlevél szám
 
-## <a name="hungary-social-security-number-or-equivalent-identification"></a>匈牙利社会保险号或等效标识
 
-此敏感信息类型实体仅在欧盟社会保险号或等效 ID 敏感信息类型中可用。
+## <a name="hungary-social-security-number-taj"></a>匈牙利社会保险号码 (TAJ) 
 
 ### <a name="format"></a>Format
 
@@ -8194,16 +8146,16 @@ eesti kodaniku passi number passinumbrid document number document no dokumendi n
 - 该  `Func_hungary_eu_ssn_or_equivalent` 函数查找与模式匹配的内容。 
     
 ```xml
- <!-- EU SSN or Equivalent Number -->
-<Entity id="d24e32a4-c0bb-4ba8-899d-6303b95742d9" patternsProximity="300" recommendedConfidence="75">
+      <!-- Hungarian Social Security Number (TAJ) -->
+      <Entity id="0de78315-9537-47f5-95ab-b3e77eba3993" patternsProximity="300" recommendedConfidence="85">
         <Pattern confidenceLevel="85">
           <IdMatch idRef="Func_hungary_eu_ssn_or_equivalent" />
           <Match idRef="Keywords_hungary_eu_ssn_or_equivalent" />
-        </Pattern> 
-       <Pattern confidenceLevel="75">
+        </Pattern>
+        <Pattern confidenceLevel="75">
           <IdMatch idRef="Func_hungary_eu_ssn_or_equivalent" />
-        </Pattern>      
-</Entity>
+        </Pattern>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>关键字
@@ -8243,7 +8195,7 @@ eesti kodaniku passi number passinumbrid document number document no dokumendi n
   
 ### <a name="pattern"></a>模式
 
-10 个数字：
+十个数字：
   
 - 一个数字，必须为"8" 
 - 八个数字
@@ -8327,7 +8279,7 @@ eesti kodaniku passi number passinumbrid document number document no dokumendi n
 10 个字符字母数字模式：
 
 - 2 个字母 - HU 或 hu
-- 可选空格
+- 可选空间
 - 8 个数字
 
 ### <a name="checksum"></a>校验和
@@ -8587,7 +8539,7 @@ Dictionary
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
 - 找到来自Dictionary_icd_10_updated的关键字。
-- 找到来自Dictionary_icd_10_codes关键字。
+- 找到搜索Dictionary_icd_10_codes关键字。
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
 - 找到更新Dictionary_icd_10_关键字。
@@ -8884,8 +8836,6 @@ Dictionary
 
 ## <a name="ireland-passport-number"></a>爱尔兰护照号码
 
-此敏感信息类型实体仅在欧盟护照号码敏感信息类型中可用。
-
 ### <a name="format"></a>Format
 
 两个字母或数字后跟七个数字，无空格或分隔符
@@ -8903,22 +8853,37 @@ Dictionary
   
 ### <a name="definition"></a>定义
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-  
+在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
 - 正则表达式  `Regex_ireland_eu_passport_number` 查找与模式匹配的内容。 
-- 找到或  `Keywords_eu_passport_number_common` 找到 `Keywords_ireland_eu_passport_number` 的关键字。 
+- 找到或  `Keywords_eu_passport_number` 找到 `Keywords_ireland_eu_passport_number` 的关键字。 
+- 正则表达式查找格式 `Regex_ireland_eu_passport_date` 为 DD MMM/MMM YYYY (示例 - 01 BEA/MAY 1988) 或找到的 `Keywords_eu_passport_date` 关键字
+
+在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
+- 正则表达式  `Regex_ireland_eu_passport_number` 查找与模式匹配的内容。 
+- 找到或  `Keywords_eu_passport_number` 找到 `Keywords_ireland_eu_passport_number` 的关键字。
     
 ```xml
- <!-- EU Passport Number -->
-<Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
+      <!-- Ireland Passport Number -->
+      <Entity id="a2130f27-9ee2-4103-84f9-a6b1ee7d0cbf" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Regex_ireland_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number" />
+            <Match idRef="Keywords_ireland_eu_passport_number" />
+          </Any>
+          <Any minMatches="1">
+            <Match idRef="Regex_ireland_eu_passport_date" />
+            <Match idRef="Keywords_eu_passport_date" />
+          </Any>
+        </Pattern>
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_ireland_eu_passport_number" />
           <Any minMatches="1">
-            <Match idRef="Keywords_eu_passport_number_common" />
+            <Match idRef="Keywords_eu_passport_number" />
             <Match idRef="Keywords_ireland_eu_passport_number" />
           </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>关键字
@@ -8945,6 +8910,12 @@ Dictionary
 - uimhreacha pas
 - uimhir cárta
 - uimhir chárta
+
+#### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
+
+- 问题日期
+- 到期日期
+
 
 ## <a name="ireland-personal-public-service-pps-number"></a>爱尔兰个人公共服务 (PPS) 号码
 
@@ -9013,7 +8984,7 @@ Dictionary
 - ppsno#
 - ppsno
 - psp
-- 公共服务否
+- 公共服务 no
 - publicserviceno#
 - publicserviceno
 - 收入和社会保险号码
@@ -9212,7 +9183,7 @@ Dictionary
 - 三个字母，分别对应于名字中的第一个、第三个和第四个辅音
 - 两个数字，对应于出生日期的最后一个数字
 - 一个字母，对应于出生日期月份中的字母 - 字母按字母顺序使用，但只有字母 A 到 E、H、L、M、P、R 到 T (因此，一月是 A，十月是 R) 
-- 与出生日期对应的两个数字 -为了区分性别，将 40 添加到性别的出生日期
+- 与出生日期对应的两位数 -为了区分性别，将 40 添加到性别的出生日期
 - 四个数字，对应于某人所 (的国家/地区代码所特有的地区代码，用于) 
 - 一个奇偶校验数字
     
@@ -9281,11 +9252,10 @@ Dictionary
 
 
 ## <a name="italy-passport-number"></a>意大利护照号码
-此敏感信息类型实体仅在欧盟护照号码敏感信息类型中可用。
 
 ### <a name="format"></a>Format
 
-两个字母或数字后跟七个数字，没有空格或分隔符
+两个字母或数字后跟七个数字，无空格或分隔符
   
 ### <a name="pattern"></a>模式
 
@@ -9300,21 +9270,37 @@ Dictionary
   
 ### <a name="definition"></a>定义
 
+在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
+- 正则表达式  `Regex_italy_eu_passport_number` 查找与模式匹配的内容。 
+- 找到或  `Keywords_eu_passport_number` 找到 `Keywords_italy_eu_passport_number` 的关键字。 
+- 正则表达式查找格式 `Regex_italy_eu_passport_date` 为 DD MMM/MMM YYYY (示例 - 01 GEN/JAN 1988) 或找到的 `Keywords_eu_passport_date` 关键字
+
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
 - 正则表达式  `Regex_italy_eu_passport_number` 查找与模式匹配的内容。 
-- 找到或  `Keywords_eu_passport_number_common` 找到 `Keywords_italy_eu_passport_number` 的关键字。 
+- 找到或  `Keywords_eu_passport_number` 找到 `Keywords_italy_eu_passport_number` 的关键字。 
     
 ```xml
- <!-- EU Passport Number -->
-<Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
+      <!-- Italy Passport Number -->
+      <Entity id="39811019-4750-445f-b26d-4c0e6c431544" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Regex_italy_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number" />
+            <Match idRef="Keywords_italy_eu_passport_number" />
+          </Any>
+          <Any minMatches="1">
+            <Match idRef="Regex_italy_eu_passport_date" />
+            <Match idRef="Keywords_eu_passport_date" />
+          </Any>
+        </Pattern>
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_italy_eu_passport_number" />
           <Any minMatches="1">
-            <Match idRef="Keywords_eu_passport_number_common" />
+            <Match idRef="Keywords_eu_passport_number" />
             <Match idRef="Keywords_italy_eu_passport_number" />
           </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>关键字
@@ -9341,6 +9327,12 @@ Dictionary
 - numero di passaporto
 - numeri del passaporto
 - passeport italien
+
+#### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
+
+- 问题日期
+- 到期日期
+
 
 ## <a name="italy-value-added-tax-number"></a>意大利增值税编号
 此敏感信息类型仅适用于：
@@ -9600,11 +9592,11 @@ bank account number：
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
-- 该函数Func_japanese_my_number_corporate查找与模式匹配的内容。
+- 函数Func_japanese_my_number_corporate查找与模式匹配的内容。
 - 找到来自Keywords_japanese_my_number_corporate关键字。
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-- 该函数Func_japanese_my_number_corporate查找与模式匹配的内容。
+- 函数Func_japanese_my_number_corporate查找与模式匹配的内容。
 
 ```xml
       <!-- Japanese My Number – Corporate -->
@@ -9623,7 +9615,7 @@ bank account number：
 
 #### <a name="keyword_japan_my_number_corporate"></a>Keyword_japan_my_number_corporate
 
-- 公司号码
+- 公司编号
 - マイナンバー
 - 共通番号
 - マイナンバーカード
@@ -9664,11 +9656,11 @@ bank account number：
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
-- 函数Func_japanese_my_number_personal查找与模式匹配的内容。
+- 该Func_japanese_my_number_personal查找与模式匹配的内容。
 - 找到搜索Keywords_japanese_my_number_personal关键字。
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 65% 确信它检测到这种类型的敏感信息：
-- 函数Func_japanese_my_number_personal查找与模式匹配的内容。
+- 该Func_japanese_my_number_personal查找与模式匹配的内容。
 
 ```xml
       <!-- Japanese My Number – Personal -->
@@ -9770,7 +9762,7 @@ bank account number：
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
 - 正则表达式Regex_jp_residence_card_number查找与模式匹配的内容。
-- 找到来自Keyword_jp_residence_card_number关键字。
+- 找到搜索Keyword_jp_residence_card_number关键字。
 
 ```xml
 <!--Japan Residence Card Number-->
@@ -9788,7 +9780,7 @@ bank account number：
 
 - 住宅卡号
 - 住宅卡否
-- 居住地卡片#
+- 居住地卡#
 - 在留カード番号
 - 在留カード
 - 在留番号
@@ -9850,7 +9842,7 @@ bank account number：
 7-12 位数字：
 - 四个数字 
 - 可选连字符 (可选)  
-- 六个数字 OR
+- 六位数字 OR
 - 7-12 个连续的数字
 
 ### <a name="checksum"></a>校验和
@@ -10083,7 +10075,7 @@ bank account number：
 
 11 个数字和一个连字符：
   
-- 六个数字，对应于 DDMMYY (出生日期)  
+- 对应于 DD.2016 (日期的六个数字)  
 - 连字符
 - 一个数字，对应于 19 世纪 ("0"，"1"表示 20 世纪，"2"对应于 21 世纪) 
 - 四个数字，随机生成
@@ -10203,11 +10195,10 @@ bank account number：
 - 用户编号
 
 ## <a name="latvia-passport-number"></a>拉脱维亚护照号码
-此敏感信息类型实体仅在欧盟护照号码敏感信息类型中可用。
 
 ### <a name="format"></a>Format
 
-两个字母或数字后跟七个数字，没有空格或分隔符
+两个字母或数字后跟七个数字，无空格或分隔符
   
 ### <a name="pattern"></a>模式
 
@@ -10222,21 +10213,37 @@ bank account number：
   
 ### <a name="definition"></a>定义
 
+在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
+- 正则表达式  `Regex_latvia_eu_passport_number` 查找与模式匹配的内容。 
+- 找到或  `Keywords_eu_passport_number` 找到 `Keywords_latvia_eu_passport_number` 的关键字。 
+- 正则表达式查找 `Regex_eu_passport_date1` DD.MM.YYYY 格式的日期或找到 `Keywords_eu_passport_date` 的关键字
+
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
 - 正则表达式  `Regex_latvia_eu_passport_number` 查找与模式匹配的内容。 
-- 找到或  `Keywords_eu_passport_number_common` 找到 `Keywords_latvia_eu_passport_number` 的关键字。 
+- 找到或  `Keywords_eu_passport_number` 找到 `Keywords_latvia_eu_passport_number` 的关键字。 
     
 ```xml
- <!-- EU Passport Number -->
-<Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
+      <!-- Latvia Passport Number -->
+      <Entity id="23ae25ec-cc28-421b-b77a-3054eadf1ede" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Regex_latvia_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number" />
+            <Match idRef="Keywords_latvia_eu_passport_number" />
+          </Any>
+          <Any minMatches="1">
+            <Match idRef="Regex_eu_passport_date1" />
+            <Match idRef="Keywords_eu_passport_date" />
+          </Any>
+        </Pattern>
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_latvia_eu_passport_number" />
           <Any minMatches="1">
-            <Match idRef="Keywords_eu_passport_number_common" />
+            <Match idRef="Keywords_eu_passport_number" />
             <Match idRef="Keywords_latvia_eu_passport_number" />
           </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>关键字
@@ -10262,6 +10269,12 @@ bank account number：
 - pases nr
 - passeport no
 - n° du Passeport
+
+#### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
+
+- 问题日期
+- 到期日期
+
 
 ## <a name="lithuania-drivers-license-number"></a>立陶宛驾驶证号码
 
@@ -10436,7 +10449,7 @@ bank account number：
 
 ### <a name="format"></a>Format
 
-11 个数字，不含空格和分隔符
+11 个数字，不带空格和分隔符
   
 ### <a name="pattern"></a>模式
 
@@ -10515,7 +10528,6 @@ bank account number：
 - uniqueidentityno#
 
 ## <a name="lithuania-passport-number"></a>立陶宛护照号码
-此敏感信息类型实体仅在欧盟护照号码敏感信息类型中可用。
 
 ### <a name="format"></a>Format
 
@@ -10531,26 +10543,42 @@ bank account number：
   
 ### <a name="definition"></a>定义
 
+在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
+- 正则表达式  `Regex_lithuania_eu_passport_number` 查找与模式匹配的内容。 
+- 找到或  `Keywords_eu_passport_number` 找到 `Keywords_lithuania_eu_passport_number` 的关键字。 
+- 正则表达式查找 `Regex_eu_passport_date3` DD MM YYYY 格式的日期或找到 `Keywords_eu_passport_date` 的关键字
+
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
 - 正则表达式  `Regex_lithuania_eu_passport_number` 查找与模式匹配的内容。 
-- 找到或  `Keywords_eu_passport_number_common` 找到 `Keywords_lithuania_eu_passport_number` 的关键字。 
+- 找到或  `Keywords_eu_passport_number` 找到 `Keywords_lithuania_eu_passport_number` 的关键字。 
     
 ```xml
- <!-- EU Passport Number -->
-<Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
+      <!-- Lithuania Passport Number -->
+      <Entity id="1b79900f-047b-4c3f-846f-7d73b5534bce" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Regex_lithuania_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number" />
+            <Match idRef="Keywords_lithuania_eu_passport_number" />
+          </Any>
+          <Any minMatches="1">
+            <Match idRef="Regex_eu_passport_date3" />
+            <Match idRef="Keywords_eu_passport_date" />
+          </Any>
+        </Pattern>
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_lithuania_eu_passport_number" />
           <Any minMatches="1">
-            <Match idRef="Keywords_eu_passport_number_common" />
+            <Match idRef="Keywords_eu_passport_number" />
             <Match idRef="Keywords_lithuania_eu_passport_number" />
           </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>关键字
 
-#### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
+#### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
 - passport#
 - passport#
@@ -10568,6 +10596,12 @@ bank account number：
 - paso numeris
 - paso num一i
 - paso nr
+
+#### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
+
+- 问题日期
+- 到期日期
+
 
 ## <a name="luxemburg-drivers-license-number"></a>都明网驾驶证号码
 
@@ -10731,7 +10765,7 @@ bank account number：
 - fahrerlaubnis
 - Fhrerschhrin
 
-## <a name="luxemburg-national-identification-number-natural-persons"></a> (布尔自然人的) 
+## <a name="luxemburg-national-identification-number-natural-persons"></a> () 
 此敏感信息类型仅适用于：
 - 数据丢失防护策略
 - 通信合规性策略
@@ -10807,7 +10841,6 @@ bank account number：
 - uniqueidkey#
 
 ## <a name="luxemburg-passport-number"></a>比塞明卡护照号码
-此敏感信息类型实体仅在欧盟护照号码敏感信息类型中可用。
 
 ### <a name="format"></a>Format
 
@@ -10823,28 +10856,76 @@ bank account number：
   
 ### <a name="definition"></a>定义
 
+在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
+- 正则表达式  `Regex_luxemburg_eu_passport_number` 查找与模式匹配的内容。 
+- 找到或  `Keywords_eu_passport_number` 找到 `Keywords_luxemburg_eu_passport_number` 的关键字。 
+- 正则表达式查找 `Regex_eu_passport_date3` DD MM YYYY 格式的日期或找到 `Keywords_eu_passport_date` 的关键字
+
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-- 正则表达式  `Regex_nation_eu_passport_number` 查找与模式匹配的内容。 
-- 找到一个  `Keywords_nation_eu_passport_number` 关键字。 
+- 正则表达式  `Regex_luxemburg_eu_passport_number` 查找与模式匹配的内容。 
+- 找到或  `Keywords_eu_passport_number` 找到 `Keywords_luxemburg_eu_passport_number` 的关键字。 
     
 ```xml
- <!-- EU Passport Number -->
-<Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
-        <Pattern confidenceLevel="75">
-          <IdMatch idRef="Regex_nation_eu_passport_number" />
-          <Match idRef="Keywords_nation_eu_passport_number" />
+      <!-- Luxemburg Passport Number -->
+      <Entity id="81d5c027-bed9-4421-91a0-3b2e55b3eb85" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Regex_luxemburg_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number" />
+            <Match idRef="Keywords_luxemburg_eu_passport_number" />
+          </Any>
+          <Any minMatches="1">
+            <Match idRef="Regex_eu_passport_date3" />
+            <Match idRef="Keywords_eu_passport_date" />
+          </Any>
         </Pattern>
-</Entity>
+        <Pattern confidenceLevel="75">
+          <IdMatch idRef="Regex_luxemburg_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number" />
+            <Match idRef="Keywords_luxemburg_eu_passport_number" />
+          </Any>
+        </Pattern>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>关键字
 
-#### <a name="keywords_nation_eu_passport_number"></a>Keywords_nation_eu_passport_number
+#### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
-- passport number
-- 拉脱维亚护照号码
+- passport#
+- passport#
+- passportid
+- passports
+- passportno
 - passport no
+- passportnumber
+- passport number
+- passportnumbers
+- passport numbers
+
+#### <a name="keywords_luxemburg_eu_passport_number"></a>Keywords_luxemburg_eu_passport_number
+- aus一snummer
+- 卢森堡密码
+- 卢森堡通道
+- 卢森堡护照
+- no de passeport
+- no-reisepass
+- nr-reisepass
+- numéro de passeport
+- pass net
+- pass nr
 - passnummer
+- passeport nombre
+- reisepsse
+- reisepass-nr
+- reisepassnummer
+
+#### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
+
+- 问题日期
+- 到期日期
+
 
 ## <a name="luxemburg-national-identification-number-non-natural-persons"></a> (非自然人的) 
 
@@ -11224,7 +11305,7 @@ bank account number：
 
 - citizen service number
 - id tat-taxxa
-- identifident numru tal-jett
+- identifjet numru tal-jetjett
 - kodiċi数字个人
 - numru ta 'identifikazzjoni personali
 - numru ta 'identifikazzjoni tat-taxxa
@@ -11239,7 +11320,6 @@ bank account number：
 
 
 ## <a name="malta-passport-number"></a>马耳他护照号码
-此敏感信息类型实体仅在欧盟护照号码敏感信息类型中可用。
 
 ### <a name="format"></a>Format
 
@@ -11255,26 +11335,39 @@ bank account number：
   
 ### <a name="definition"></a>定义
 
+在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
+- 正则表达式  `Regex_malta_eu_passport_number` 查找与模式匹配的内容。 
+- 找到或  `Keywords_eu_passport_number` 找到 `Keywords_malta_eu_passport_number` 的关键字。 
+- 找到一个 `Keywords_eu_passport_date` 关键字
+
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
 - 正则表达式  `Regex_malta_eu_passport_number` 查找与模式匹配的内容。 
-- 找到或  `Keywords_eu_passport_number_common` 找到 `Keywords_malta_eu_passport_number` 的关键字。 
+- 找到或  `Keywords_eu_passport_number` 找到 `Keywords_malta_eu_passport_number` 的关键字。 
     
 ```xml
- <!-- EU Passport Number -->
-<Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
+      <!-- Malta Passport Number -->
+      <Entity id="b2b21198-48f9-4d13-b2a5-03969bff0fb8" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Regex_malta_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number" />
+            <Match idRef="Keywords_malta_eu_passport_number" />
+          </Any>
+          <Match idRef="Keywords_eu_passport_date" />
+        </Pattern>
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_malta_eu_passport_number" />
           <Any minMatches="1">
-            <Match idRef="Keywords_eu_passport_number_common" />
+            <Match idRef="Keywords_eu_passport_number" />
             <Match idRef="Keywords_malta_eu_passport_number" />
           </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>关键字
 
-#### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
+#### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
 - passport#
 - passport#
@@ -11293,6 +11386,12 @@ bank account number：
 - numri tal-passaport
 - Nru tal-passaport
 
+#### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
+
+- 问题日期
+- 到期日期
+
+
 ## <a name="malta-tax-identification-number"></a>马耳他税务标识号
 
 ### <a name="format"></a>Format
@@ -11310,7 +11409,7 @@ bank account number：
 - 七个数字 
 - 一个字母 (不区分大小写) 
     
-非马耳他语和马耳他实体：9 个数字
+非马耳他语公民和马耳他实体：9 个数字
   
 - 九个数字 
     
@@ -11353,7 +11452,7 @@ bank account number：
 
 - citizen service number
 - id tat-taxxa
-- identifident numru tal-jett
+- identifjet numru tal-jetjett
 - kodiċi数字个人
 - numru ta 'identifikazzjoni personali
 - numru ta 'identifikazzjoni tat-taxxa
@@ -11382,7 +11481,7 @@ bank account number：
 - 唯一标识号
 - uniqueidentityno#
 
-## <a name="netherlands-citizens-service-bsn-number"></a>荷兰公民服务号码 (BSN) 号码
+## <a name="netherlands-citizens-service-bsn-number"></a>荷兰公民的服务 (BSN) 号码
 
 ### <a name="format"></a>Format
 
@@ -11390,7 +11489,7 @@ bank account number：
 
 ### <a name="pattern"></a>模式
 
-8-9 个数字：
+八九个数字：
 - 三个数字 
 - 可选 (空格)  
 - 三个数字 
@@ -11612,7 +11711,6 @@ bank account number：
 
 
 ## <a name="netherlands-passport-number"></a>荷兰护照号码
-此敏感信息类型实体仅在欧盟护照号码敏感信息类型中可用。
 
 ### <a name="format"></a>Format
 
@@ -11628,31 +11726,57 @@ bank account number：
   
 ### <a name="definition"></a>定义
 
+在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
+- 正则表达式  `Regex_netherlands_eu_passport_number` 查找与模式匹配的内容。 
+- 找到或  `Keywords_eu_passport_number` 找到 `Keywords_netherlands_eu_passport_number` 的关键字。 
+- 正则表达式查找格式 `Regex_netherlands_eu_passport_date` 为 DD MMM/MMM YYYYY (示例 - 26 MAA/MAR 2012) 
+
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
 - 正则表达式  `Regex_netherlands_eu_passport_number` 查找与模式匹配的内容。 
-- 找到一个  `Keywords_netherlands_eu_passport_number` 关键字。 
+- 找到或  `Keywords_eu_passport_number` 找到 `Keywords_netherlands_eu_passport_number` 的关键字。 
     
 ```xml
- <!-- EU Passport Number -->
-<Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
+      <!-- Netherlands Passport Number -->
+      <Entity id="61786727-bafd-45f6-94d9-888d815e228e" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Regex_netherlands_eu_passport_number" />
+          <Match idRef="Regex_netherlands_eu_passport_date" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number" />
+            <Match idRef="Keywords_netherlands_eu_passport_number" />
+          </Any>
+        </Pattern>
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_netherlands_eu_passport_number" />
-          <Match idRef="Keywords_netherlands_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number" />
+            <Match idRef="Keywords_netherlands_eu_passport_number" />
+          </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>关键字
 
+#### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
+
+- passport#
+- passport#
+- passportid
+- passports
+- passportno
+- passport no
+- passportnumber
+- passport number
+- passportnumbers
+- passport numbers
+
 #### <a name="keywords_netherlands_eu_passport_number"></a>Keywords_netherlands_eu_passport_number
 
-- 荷兰语护照号码
-- passport number
-- 荷兰护照号码
-- nederlanden paspoort nummer
-- paspoort
-- nederlanden paspoortnummer
+- paspoort nummer
+- paspoortnummers
 - paspoortnummer
+- paspoort nr
 
 ## <a name="netherlands-tax-identification-number"></a>荷兰税务标识号
 此敏感信息类型仅适用于：
@@ -11769,7 +11893,7 @@ bank account number：
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
 - 该函数Func_netherlands_value_added_tax_number查找与模式匹配的内容。
-- 找到来自Keywords_netherlands_value_added_tax_number关键字。
+- 找到来自Keywords_netherlands_value_added_tax_number的关键字。
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
 - 该函数Func_netherlands_value_added_tax_number查找与模式匹配的内容。
@@ -11831,11 +11955,11 @@ bank account number：
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
-- 函数Func_new_zealand_bank_account_number查找与模式匹配的内容。
+- 该函数Func_new_zealand_bank_account_number查找与模式匹配的内容。
 - 找到搜索Keywords_new_zealand_bank_account_number关键字。
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-- 函数Func_new_zealand_bank_account_number查找与模式匹配的内容。
+- 该函数Func_new_zealand_bank_account_number查找与模式匹配的内容。
 
 ```xml
       <!-- New Zealand Bank Account Number -->
@@ -11888,7 +12012,7 @@ bank account number：
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
 - 函数Func_newzealand_driver_license_number查找与模式匹配的内容。
-- 找到来自Keywords_newzealand_driver_license_number的关键字。
+- 找到来自Keywords_newzealand_driver_license_number关键字。
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 65% 确信它检测到这种类型的敏感信息：
 - 函数Func_newzealand_driver_license_number查找与模式匹配的内容。
@@ -12005,11 +12129,11 @@ bank account number：
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
-- 函数Func_new_zealand_inland_revenue_number查找与模式匹配的内容。
+- 该函数Func_new_zealand_inland_revenue_number查找与模式匹配的内容。
 - 找到来自Keywords_new_zealand_inland_revenue_number关键字。
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-- 函数Func_new_zealand_inland_revenue_number查找与模式匹配的内容。
+- 该函数Func_new_zealand_inland_revenue_number查找与模式匹配的内容。
 
 ```xml
       <!-- New Zealand Inland Revenue Number -->
@@ -12033,14 +12157,14 @@ bank account number：
 - nz ird
 - 新西兰 ird
 - ird number
-- 区收入编号
+- 区收入数字
 
 
-## <a name="new-zealand-ministry-of-health-number"></a>新西兰医疗局号码
+## <a name="new-zealand-ministry-of-health-number"></a>新西兰卫生服务号码
 
 ### <a name="format"></a>Format
 
-三个字母，一 (可选) 和四个数字
+三个字母，一个 (可选) ，四个数字
 
 ### <a name="pattern"></a>模式
 
@@ -12122,7 +12246,7 @@ bank account number：
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
 - 函数Func_newzealand_social_welfare_number查找与模式匹配的内容。
-- 找到搜索Keywords_newzealand_social_welfare_number关键字。
+- 找到来自Keywords_newzealand_social_welfare_number关键字。
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 65% 确信它检测到这种类型的敏感信息：
 - 函数Func_newzealand_social_welfare_number查找与模式匹配的内容。
@@ -12146,7 +12270,7 @@ bank account number：
 #### <a name="keyword_new_zealand_social_welfare_number"></a>Keyword_new_zealand_social_welfare_number
 
 - social 40#
-- social 40#
+- 社交发展#
 - social no.
 - 社交4004
 - swn#
@@ -12425,7 +12549,7 @@ bank account number：
 
 ### <a name="pattern"></a>模式
 
-三个字母 (不区分大小写) 后跟六个数字
+三个字母 (区分大小写) 后跟六个数字
 
 ### <a name="checksum"></a>校验和
 
@@ -12586,7 +12710,7 @@ bank account number：
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
 - 函数Func_polish_regon_number查找与模式匹配的内容。
-- 找到来自Keywords_polish_regon_number关键字。
+- 找到搜索Keywords_polish_regon_number关键字。
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 65% 确信它检测到这种类型的敏感信息：
 - 函数Func_polish_regon_number查找与模式匹配的内容。
@@ -12727,7 +12851,7 @@ bank account number：
 
 #### <a name="keyword_portugal_citizen_card"></a>Keyword_portugal_citizen_card
 
-- 与 identidade
+- 一个
 - cartão de cidadão
 - citizen card
 - 文档编号
@@ -12926,11 +13050,10 @@ bank account number：
 - número licença
 - permissão de condução
 - permissão condução
-- 葡萄牙利cença condução
+- Licença condução Portugal
 - carta de condução
 
 ## <a name="portugal-passport-number"></a>葡萄牙护照号码
-此敏感信息类型实体仅在欧盟护照号码敏感信息类型中可用。
 
 ### <a name="format"></a>Format
 
@@ -12949,26 +13072,42 @@ bank account number：
   
 ### <a name="definition"></a>定义
 
+在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
+- 正则表达式  `Regex_portugal_eu_passport_number` 查找与模式匹配的内容。 
+- 找到或  `Keywords_eu_passport_number` 找到 `Keywords_portugal_eu_passport_number` 的关键字。 
+- 正则表达式查找 `Regex_eu_passport_date1` DD.MM.YYYY 格式的日期或找到 `Keywords_eu_passport_date` 的关键字
+
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
 - 正则表达式  `Regex_portugal_eu_passport_number` 查找与模式匹配的内容。 
-- 找到或  `Keywords_eu_passport_number_common` 找到 `Keywords_portugal_eu_passport_number` 的关键字。 
+- 找到或  `Keywords_eu_passport_number` 找到 `Keywords_portugal_eu_passport_number` 的关键字。
     
 ```xml
- <!-- EU Passport Number -->
-<Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
+      <!-- Portugal Passport Number -->
+      <Entity id="080a52fd-a7bc-431e-b54d-51f08f59db11" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Regex_portugal_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number" />
+            <Match idRef="Keywords_portugal_eu_passport_number" />
+          </Any>
+          <Any minMatches="1">
+            <Match idRef="Regex_eu_passport_date1" />
+            <Match idRef="Keywords_eu_passport_date" />
+          </Any>
+        </Pattern>
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_portugal_eu_passport_number" />
           <Any minMatches="1">
-            <Match idRef="Keywords_eu_passport_number_common" />
+            <Match idRef="Keywords_eu_passport_number" />
             <Match idRef="Keywords_portugal_eu_passport_number" />
           </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>关键字
 
-#### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
+#### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
 - passport#
 - passport#
@@ -12985,7 +13124,7 @@ bank account number：
 
 - número do passaporte
 - 葡萄牙语 passport
-- 葡萄牙语传递
+- 葡萄牙语传递端口
 - 葡萄牙语 passaporte
 - passaporte n eq
 - passeport n eq
@@ -12994,11 +13133,17 @@ bank account number：
 - número passaporte
 - números passaporte
 
+#### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
+
+- 问题日期
+- 到期日期
+
+
 ## <a name="portugal-tax-identification-number"></a>葡萄牙税务标识号
 
 ### <a name="format"></a>Format
 
-包含可选空格的九个数字
+九个数字（带可选空格）
   
 ### <a name="pattern"></a>模式
 
@@ -13295,7 +13440,7 @@ bank account number：
 - national identification number
 - numr identificare personal
 - numr identitate
-- numr 个人 unic
+- numr personal unic
 - numridentitate#
 - numridentitate
 - numrpersonalunic#
@@ -13329,7 +13474,6 @@ bank account number：
 - uniqueidentityno
 
 ## <a name="romania-passport-number"></a>罗马尼亚护照号码
-此敏感信息类型实体仅在欧盟护照号码敏感信息类型中可用。
 
 ### <a name="format"></a>Format
 
@@ -13345,26 +13489,42 @@ bank account number：
   
 ### <a name="definition"></a>定义
 
+在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
+- 正则表达式  `Regex_romania_eu_passport_number` 查找与模式匹配的内容。 
+- 找到或  `Keywords_eu_passport_number` 找到 `Keywords_romania_eu_passport_number` 的关键字。 
+- 正则表达式查找 `Regex_romania_eu_passport_date` DD MMM/MMM YY (示例- 01 二月/二月 10) 或找到 `Keywords_eu_passport_date` 的关键字的日期
+
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
 - 正则表达式  `Regex_romania_eu_passport_number` 查找与模式匹配的内容。 
-- 找到或  `Keywords_eu_passport_number_common` 找到 `Keywords_romania_eu_passport_number` 的关键字。 
+- 找到或  `Keywords_eu_passport_number` 找到 `Keywords_romania_eu_passport_number` 的关键字。 
     
 ```xml
- <!-- EU Passport Number -->
-<Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
+      <!-- Romania Passport Number -->
+      <Entity id="5d31b90c-7fe2-4a76-a14b-767b8fd19d6c" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Regex_romania_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number" />
+            <Match idRef="Keywords_romania_eu_passport_number" />
+          </Any>
+          <Any minMatches="1">
+            <Match idRef="Regex_romania_eu_passport_date" />
+            <Match idRef="Keywords_eu_passport_date" />
+          </Any>
+        </Pattern>
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_romania_eu_passport_number" />
           <Any minMatches="1">
-            <Match idRef="Keywords_eu_passport_number_common" />
+            <Match idRef="Keywords_eu_passport_number" />
             <Match idRef="Keywords_romania_eu_passport_number" />
           </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>关键字
 
-#### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
+#### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
 - passport#
 - passport#
@@ -13380,6 +13540,12 @@ bank account number：
 #### <a name="keywords_romania_eu_passport_number"></a>Keywords_romania_eu_passport_number
 
 numrul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
+
+#### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
+
+- 问题日期
+- 到期日期
+
 
 ## <a name="russia-passport-number-domestic"></a>俄罗斯护照号码国内
 此敏感信息类型仅适用于：
@@ -13862,7 +14028,6 @@ numrul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
 - tin#
 
 ## <a name="slovakia-passport-number"></a>斯洛伐克护照号码
-此敏感信息类型实体仅在欧盟护照号码敏感信息类型中可用。
 
 ### <a name="format"></a>Format
 
@@ -13878,26 +14043,42 @@ numrul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
   
 ### <a name="definition"></a>定义
 
+在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
+- 正则表达式  `Regex_slovakia_eu_passport_number` 查找与模式匹配的内容。 
+- 找到或  `Keywords_eu_passport_number` 找到 `Keywords_slovakia_eu_passport_number` 的关键字。 
+- 正则表达式查找 `Regex_eu_passport_date1` DD.MM.YYYY 格式的日期或找到 `Keywords_eu_passport_date` 的关键字
+
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
 - 正则表达式  `Regex_slovakia_eu_passport_number` 查找与模式匹配的内容。 
-- 找到或  `Keywords_eu_passport_number_common` 找到 `Keywords_slovakia_eu_passport_number` 的关键字。 
+- 找到或  `Keywords_eu_passport_number` 找到 `Keywords_slovakia_eu_passport_number` 的关键字。 
     
 ```xml
- <!-- EU Passport Number -->
-<Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
+      <!-- Slovakia Passport Number -->
+      <Entity id="238e1f08-d80e-4793-af33-9b57918335b7" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Regex_slovakia_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number" />
+            <Match idRef="Keywords_slovakia_eu_passport_number" />
+          </Any>
+          <Any minMatches="1">
+            <Match idRef="Regex_eu_passport_date1" />
+            <Match idRef="Keywords_eu_passport_date" />
+          </Any>
+        </Pattern>
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_slovakia_eu_passport_number" />
           <Any minMatches="1">
-            <Match idRef="Keywords_eu_passport_number_common" />
+            <Match idRef="Keywords_eu_passport_number" />
             <Match idRef="Keywords_slovakia_eu_passport_number" />
           </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>关键字
 
-#### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
+#### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
 - passport#
 - passport#
@@ -13917,6 +14098,12 @@ numrul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
 - pas pas.
 - Passeport n°
 - n° 传递
+
+#### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
+
+- 问题日期
+- 到期日期
+
 
 ## <a name="slovenia-drivers-license-number"></a>斯洛文尼亚驾驶证号码
 
@@ -14080,7 +14267,7 @@ numrul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
 - voznininiko dovoljenje
 - vozni-ka 1tevilka licence
 - voznininikih dovoljenj
-- -tevilka voznininikega dovoljenja
+- -tevilka vozninikega dovoljenja
 - ？tevilke voznininikih dovoljenj
 
 ## <a name="slovenia-unique-master-citizen-number"></a>斯洛文尼亚唯一主公民号码
@@ -14099,7 +14286,7 @@ numrul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
 
 指定模式中的 13 个数字：
   
-- 对应于 DDMMLLL (的七个数字) 其中"LLL"对应于出生日期的最后三个数字 
+- 与 DDMMLLL (日期对应的七个数字) 其中"LLL"对应于出生日期的最后三个数字 
 - 对应于出生日期"50"的两个数字
 - 三个数字，对应于同一天（男性为 (000-499）和 500-999（对于男性）的性别和序列号) 
 - 一个检查数字
@@ -14136,7 +14323,7 @@ numrul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
 
 - edinstvena 1tevilka gvilnega dr-avljana
 - em-o
-- enotna maticna matictevilka obcana
+- enotna maticna 4tevilka obcana
 - id card
 - identification number
 - identifkacijska 0tevilka
@@ -14161,7 +14348,6 @@ numrul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
 - uniqueidentityno#
 
 ## <a name="slovenia-passport-number"></a>斯洛文尼亚护照号码
-此敏感信息类型实体仅在欧盟护照号码敏感信息类型中可用。
 
 ### <a name="format"></a>Format
 
@@ -14181,26 +14367,42 @@ numrul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
   
 ### <a name="definition"></a>定义
 
+在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
+- 正则表达式  `Regex_slovenia_eu_passport_number` 查找与模式匹配的内容。 
+- 找到或  `Keywords_eu_passport_number` 找到 `Keywords_slovenia_eu_passport_number` 的关键字。 
+- 正则表达式查找 `Regex_eu_passport_date1` DD.MM.YYYY 格式的日期或找到 `Keywords_eu_passport_date` 的关键字
+
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
 - 正则表达式  `Regex_slovenia_eu_passport_number` 查找与模式匹配的内容。 
-- 找到或  `Keywords_eu_passport_number_common` 找到 `Keywords_slovenia_eu_passport_number` 的关键字。 
+- 找到或  `Keywords_eu_passport_number` 找到 `Keywords_slovenia_eu_passport_number` 的关键字。 
     
 ```xml
- <!-- EU Passport Number -->
-<Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
+      <!-- Slovenia Passport Number -->
+      <Entity id="235b7976-7bbe-4df5-bb40-08678e749d1a" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Regex_slovenia_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number" />
+            <Match idRef="Keywords_slovenia_eu_passport_number" />
+          </Any>
+          <Any minMatches="1">
+            <Match idRef="Regex_eu_passport_date1" />
+            <Match idRef="Keywords_eu_passport_date" />
+          </Any>
+        </Pattern>
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_slovenia_eu_passport_number" />
           <Any minMatches="1">
-            <Match idRef="Keywords_eu_passport_number_common" />
+            <Match idRef="Keywords_eu_passport_number" />
             <Match idRef="Keywords_slovenia_eu_passport_number" />
           </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>关键字
 
-#### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
+#### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
 - passport#
 - passport#
@@ -14220,7 +14422,13 @@ numrul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
 - potni 列表#
 - datum rojstva
 - potni 列表
-- -tevilke potnih listov
+- 以tevilke potnih listov
+
+#### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
+
+- 问题日期
+- 到期日期
+
 
 ## <a name="slovenia-tax-identification-number"></a>斯洛文尼亚税务标识号
 此敏感信息类型仅适用于：
@@ -14663,7 +14871,6 @@ numrul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
 - uniqueid#
 
 ## <a name="spain-passport-number"></a>西班牙护照号码
-此敏感信息类型实体仅在欧盟护照号码敏感信息类型中可用。
 
 ### <a name="format"></a>Format
 
@@ -14683,26 +14890,42 @@ numrul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
   
 ### <a name="definition"></a>定义
 
+在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
+- 正则表达式  `Regex_spain_eu_passport_number` 查找与模式匹配的内容。 
+- 找到或  `Keywords_eu_passport_number` 找到 `Keywords_spain_eu_passport_number` 的关键字。 
+- 正则表达式查找 `Regex_spain_eu_passport_date` DD-MM-YYYY 格式的日期或找到 `Keywords_eu_passport_date` 的关键字
+
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
 - 正则表达式  `Regex_spain_eu_passport_number` 查找与模式匹配的内容。 
-- 找到或  `Keywords_eu_passport_number_common` 找到 `Keywords_spain_eu_passport_number` 的关键字。 
+- 找到或  `Keywords_eu_passport_number` 找到 `Keywords_spain_eu_passport_number` 的关键字。
     
 ```xml
- <!-- EU Passport Number -->
-<Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
+      <!-- Spain Passport Number -->
+      <Entity id="d17a57de-9fa5-4e9f-85d3-85c26d89686e" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Regex_spain_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number" />
+            <Match idRef="Keywords_spain_eu_passport_number" />
+          </Any>
+          <Any minMatches="1">
+            <Match idRef="Regex_spain_eu_passport_date" />
+            <Match idRef="Keywords_eu_passport_date" />
+          </Any>
+        </Pattern>
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_spain_eu_passport_number" />
           <Any minMatches="1">
-            <Match idRef="Keywords_eu_passport_number_common" />
+            <Match idRef="Keywords_eu_passport_number" />
             <Match idRef="Keywords_spain_eu_passport_number" />
           </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>关键字
 
-#### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
+#### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
 - passport#
 - passport#
@@ -14719,7 +14942,7 @@ numrul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
 
 - libreta pasaporte
 - número pasaporte
-- espa？a pasaporte
+- espacala pasaporte
 - números de pasaporte
 - número de pasaporte
 - números pasaporte
@@ -14730,9 +14953,13 @@ numrul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
 - pasaporte n°
 - 西班牙护照
 
+#### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
+
+- 问题日期
+- 到期日期
+
 
 ## <a name="spain-social-security-number-ssn"></a>西班牙社会保险号码 (SSN) 
-此敏感信息类型实体包含在欧盟社会保险号或等效 ID 敏感信息类型中，并作为独立的敏感信息类型实体提供。
 
 ### <a name="format"></a>Format
 
@@ -14809,7 +15036,7 @@ numrul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
     
 没有一个百万的标识号的亿元
   
-- 一个区分大小写的大写字母"M" (区分大小写)  
+- 一个区分大小写的大写字母 ("M")  
 - 七个数字
 - 一个小写字母 (区分大小写)  
     
@@ -14894,7 +15121,7 @@ numrul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
 - 等号 (=) 
 - 不是美元符号 ($) 、百分比符号 (%) 、大于符号 (>) 、符号为 (@) 、引号 (") 、分号 (;) 、左大括号 ([) 或左括号 ({) 
 - 7-128 个字符（不是分号 (;) 、正斜杠 (/) 或引号 (") 
-- 分号 (;) 或引号 (") 
+- 一个分号 (;) 或引号 (") 
 
 ### <a name="checksum"></a>校验和
 
@@ -15215,7 +15442,7 @@ numrul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
 - 正则表达式Regex_sweden_passport_number查找与模式匹配的内容。
 - 下列情况之一为 true：
-    - 找到Keyword_passport关键字。
+    - 找到搜索Keyword_passport关键字。
     - 找到Keyword_sweden_passport关键字。
 
 ```xml
@@ -15266,66 +15493,6 @@ numrul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
 - PasseportNon 
 - Passeportn ° 
 
-## <a name="sweden-social-security-number-or-equivalent-identification"></a>瑞典社会保险号或等效标识
-此敏感信息类型实体仅在欧盟社会保险号或等效 ID 敏感信息类型中可用。
-
-### <a name="format"></a>Format
-
-12 个数字，不含空格和分隔符
-  
-### <a name="pattern"></a>模式
-
-12 个数字：
-  
-- 对应于 YYYYMMDD (出生日期的八个数字)  
-- 三个数字，对应于一个序列号，其中： 
-  - 序列号中的最后一个数字通过为男性分配奇数和偶数表示性别
-  - 截至 1990 年，序列号的分配对应于该号码的拥有人在 1947 年 1 月 1 日) 其生活地点为 1947 年 1 月 1 日 (该号码的拥有人所基于的省/市/县，特殊代码 (通常为 9 作为) 第 7 位 
-- 一个检查数字
-    
-### <a name="checksum"></a>校验和
-
-是
-  
-### <a name="definition"></a>定义
-
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
-- 该  `Func_sweden_eu_ssn_or_equivalent` 函数查找与模式匹配的内容。 
-- 找到一个  `Keywords_sweden_eu_ssn_or_equivalent` 关键字。 
-    
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-- 该  `Func_sweden_eu_ssn_or_equivalent` 函数查找与模式匹配的内容。 
-    
-```xml
- <!-- EU SSN or Equivalent Number -->
-<Entity id="d24e32a4-c0bb-4ba8-899d-6303b95742d9" patternsProximity="300" recommendedConfidence="75">
-        <Pattern confidenceLevel="85">
-          <IdMatch idRef="Func_sweden_eu_ssn_or_equivalent" />
-          <Match idRef="Keywords_sweden_eu_ssn_or_equivalent" />
-        </Pattern> 
-       <Pattern confidenceLevel="75">
-          <IdMatch idRef="Func_sweden_eu_ssn_or_equivalent" />
-        </Pattern>      
-</Entity>
-```
-
-### <a name="keywords"></a>关键字
-
-#### <a name="keywords_sweden_eu_ssn_or_equivalent"></a>Keywords_sweden_eu_ssn_or_equivalent
-
-- 个人 ID 号
-- identification number
-- 个人 ID 否
-- identity no
-- identification no
-- 个人标识否
-- personnummer id
-- personligt id-nummer
-- unikt id-nummer
-- personnummer
-- identifikationsnumret
-- personnummer#
-- identifikationsnumret#
 
 ## <a name="sweden-tax-identification-number"></a>瑞典税务标识号
 此敏感信息类型仅适用于：
@@ -15343,7 +15510,7 @@ numrul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
 
 10 个数字和一个符号：
   
-- 与 YYMMDD (的出生日期对应的六)  
+- 六个数字，对应于 YYMMDD (出生日期)  
 - 加号或减号
 - 使标识号唯一的三个数字，其中： 
   - 对于 1990 之前颁发的数字，第七位和第八位标识出生日期或外种人
@@ -15818,7 +15985,7 @@ numrul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
 18 个字母和数字：
 - 五个字母 (不区分大小写) 或数字"9"来表示字母 
 - 一个数字 
-- 如果驱动程序是男性（即 51 到 62，而不是 01 到 12 位），则日期格式 MMDDY 中用于出生日期的 5 个数字 (第 7 个字符将递增 50) 
+- 如果驱动程序是男性（即 51 到 62，而不是 01 到 12 位），则日期格式 MMDDY 中用于出生日期的五个数字 (第 7 个字符将递增 50) 
 - 两个字母 (不区分大小写) 或数字"9"来表示字母 
 - 五个数字
 
@@ -16050,7 +16217,7 @@ OR
 - nationalinsurancenumber
 
     
-## <a name="uk-unique-taxpayer-reference-number"></a>英国 唯一的纳税参考编号
+## <a name="uk-unique-taxpayer-reference-number"></a>英国 唯一的税务参考编号
 此敏感信息类型仅适用于：
 - 数据丢失防护策略
 - 通信合规性策略
@@ -16181,7 +16348,7 @@ OR
 
 取决于州 - 例如，纽约：
 - 9 个数字，格式设置为 ddd ddd ddd 将匹配。
-- 9 个数字（如 dddd）不匹配。
+- 九位数字（如 ddddd）不匹配。
 
 ### <a name="checksum"></a>校验和
 
@@ -16387,7 +16554,7 @@ unformatted：
 
 #### <a name="keyword_itin"></a>Keyword_itin
 
-- taxpayer 
+- 报税人 
 - tax id 
 - tax identification 
 - itin 

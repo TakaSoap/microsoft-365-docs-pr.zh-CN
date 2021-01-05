@@ -1,5 +1,5 @@
 ---
-title: 了解可训练的分类器（预览版）
+title: 了解可训练分类器
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -18,14 +18,14 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 365 可训练分类器是一种工具，可用于通过提供要查看的正面和负面示例来识别各种类型的内容。 对分类器进行训练后，可确认其结果准确无误。 然后，使用它搜索组织的内容，并进行分类以应用保留标签或敏感度标签，或将其包括在 DLP 策略或保留策略的数据丢失防护 (DLP) 中。
-ms.openlocfilehash: 77ebefe338f393a916f0a6844b42b16e3d011d49
-ms.sourcegitcommit: 6fc6aaa2b7610e148f41018abd229e3c55b2f3d0
+ms.openlocfilehash: d5e7eb891e4cff2fc220d1e9264839d05ed11bd2
+ms.sourcegitcommit: 54d1a2f363b2d5b63aae258c3cec0573a08f2866
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49620158"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "49752636"
 ---
-# <a name="learn-about-classifiers-preview"></a>了解分类器 (预览) 
+# <a name="learn-about-classifiers"></a>了解分类器
 
 对内容进行分类和标记以便可以保护和正确处理内容是信息保护规范的起点。 Microsoft 365 有三种对内容进行分类的方法。
 
@@ -53,14 +53,14 @@ ms.locfileid: "49620158"
 ### <a name="where-you-can-use-trainable-classifiers"></a>在哪里可以使用可训练分类器
 内置分类器以及可训练分类器均作为使用敏感度标签[进行 Office](apply-sensitivity-label-automatically.md)自动标记的条件，根据条件和通信合规性自动应用[](apply-retention-labels-automatically.md#configuring-conditions-for-auto-apply-retention-labels)保留[标签策略](communication-compliance.md)。 
 
-敏感度标签可以使用分类器作为条件，请参阅自动将敏感度 [标签应用于内容](apply-sensitivity-label-automatically.md)。
+敏感度标签可以使用分类器作为条件，请参阅自动将 [敏感度标签应用于内容](apply-sensitivity-label-automatically.md)。
 
 > [!IMPORTANT]
 > 分类器仅适用于未加密且为英语的项目。
 
 ## <a name="types-of-classifiers"></a>分类器的类型
 
-- **预先训练的分类器** - Microsoft 已创建并预先训练许多分类器，无需培训即可开始使用。 这些分类器的状态将显示为 `Ready to use` 。
+- **预先训练的分类器** - Microsoft 已创建并预先训练许多分类器，无需培训即可开始使用这些分类器。 这些分类器的状态将显示为 `Ready to use` 。
 - **自定义分类** 器 - 如果你的分类需求超出预先训练的分类器涵盖范围，可以创建并训练自己的分类器。
 
 ### <a name="pre-trained-classifiers"></a>经过预先训练的分类器
@@ -68,7 +68,7 @@ ms.locfileid: "49620158"
 Microsoft 365 附带五个预先训练的分类器：
 
 > [!CAUTION]
-> 我们弃用冒犯性语言预先训练的分类器，因为它一直产生大量误报。 请勿使用它，如果当前正在使用它，则应该将业务流程从其中移开。 我们建议改为使用 **威胁**、**亵** 亵和骚扰预先训练的分类器。
+> 我们弃用冒犯性语言预先训练的分类器，因为它一直产生大量误报。 请勿使用它，如果您当前正在使用它，您应该将业务流程从该业务流程中移开。 我们建议改为使用 **威胁**、**亵** 亵和骚扰预先训练的分类器。
 
 - **简历**：检测是简历个人、教育、专业资格、工作体验和其他个人识别信息的文本帐户的项目
 - **源代码：** 检测包含用 GitHub 上前 25 种使用的计算机编程语言编写的一组说明和语句的项目
@@ -103,7 +103,7 @@ Microsoft 365 附带五个预先训练的分类器：
 - **冒犯性**：检测特定类别的冒犯性语言文本项，这些文本项包含使大多数用户都为难的表达式
 - **威胁**：检测与威胁相关的特定类别的冒犯性语言文本项，以实施暴力或对人员或属性进行物理损害或损害
 
-它们显示在 **Microsoft 365** 合规中心数据  >  **分类 (预览**)  >  **可** 训练分类器视图中的状态 `Ready to use` 为 。
+它们显示在 **Microsoft 365 合规** 中心  >  **数据分类** 可训练分类器  >  视图中，状态为 `Ready to use` 。
 
 ![classifiers-pre-trained-classifiers](../media/classifiers-ready-to-use-classifiers.png)
 
@@ -129,7 +129,7 @@ Microsoft 365 附带五个预先训练的分类器：
 
 ### <a name="retraining-classifiers"></a>重新分类器
 
-通过提供有关自定义分类器及其所执行分类的准确性的反馈，可帮助提高所有自定义分类器以及一些经过预先训练的分类器的准确性。 这称为重新培训并遵循此工作流。
+通过提供有关自定义分类器及其所执行分类的准确性的反馈，可帮助提高所有自定义分类器以及一些预先训练的分类器的准确性。 这称为重新启动并遵循此工作流。
 
 ![分类器重新分类工作流](../media/classifier-retraining-workflow.png)
 
