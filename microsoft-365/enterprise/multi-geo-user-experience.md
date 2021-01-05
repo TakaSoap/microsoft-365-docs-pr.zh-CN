@@ -15,12 +15,12 @@ f1.keywords:
 ms.custom: seo-marvel-apr2020
 localization_priority: Normal
 description: 了解 Microsoft 365 多地理位置环境中的 SharePoint、OneDrive 和 Exchange 用户体验。
-ms.openlocfilehash: c94fc5569a5444ca6361712f57460cf0c977b18e
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 558e5a1f7ff2f6f5485a9f32d6e2b43b552b7f17
+ms.sourcegitcommit: ae646779d84e993cf80b1207e76b856a21be5790
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46687747"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "49749567"
 ---
 # <a name="user-experience-in-a-multi-geo-environment"></a>多地理位置环境中的用户体验
 
@@ -44,7 +44,7 @@ Word、Excel 和 PowerPoint 等 Office 应用会在每个用户登录时，自�
 
 ## <a name="onedrive-for-business-sync-client"></a>OneDrive for Business 同步客户端
 
-OneDrive for Business 同步客户端（版本 17.3.6943.0625 及更高版本）将自动为用户检测正确的 OneDrive for Business 地理位置。 同步客户端支持包括，能够同步基于组的网站，无论它们的地理位置如何。 请注意，多地理位置不支持 Groove 同步客户端。 
+OneDrive for Business 同步客户端（版本 17.3.6943.0625 及更高版本）将自动为用户检测正确的 OneDrive for Business 地理位置。 同步客户端支持包括同步基于组的网站（无论其地理位置如何）的能力。 请注意，多地理位置不支持 Groove 同步客户端。 
 
 ## <a name="onedrive-for-business-location"></a>OneDrive for Business 位置
 
@@ -94,7 +94,7 @@ SharePoint 移动客户端可感知多地理位置，并显示来自所有地理
 
 ## <a name="sharing"></a>共享
 
-“人员选取器”体验面向所有用户，无论他们的地理位置如何。 这样，一个用户可以与同一地理位置或租户内其他任何地理位置中的其他用户共享。 来自不同地理位置的内容会显示在用户 OneDrive for Business 的“与我共享的内容”**** 视图中，并且可以通过单一登录体验进行访问，无论托管地理位置如何。
+“人员选取器”体验面向所有用户，无论他们的地理位置如何。 这样，一个用户可以与同一地理位置或租户内其他任何地理位置中的其他用户共享。 来自不同地理位置的内容会显示在用户 OneDrive for Business 的“与我共享的内容”视图中，并且可以通过单一登录体验进行访问，无论托管地理位置如何。
 
 ## <a name="teams-experience"></a>Teams 体验
 

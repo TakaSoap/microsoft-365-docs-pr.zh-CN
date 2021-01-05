@@ -3,7 +3,7 @@ title: Office 365 美国政府 DOD 终结点
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 10/28/2020
+ms.date: 01/04/2021
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -19,50 +19,50 @@ search.appverid:
 ms.assetid: 5d7dce60-4892-4b58-b45e-ee42fe8a907f
 f1.keywords:
 - NOCSH
-description: Office 365 要求连接到 Internet。 下面的终结点应仅供使用 Office 365 美国政府 DoD 计划的客户访问。
+description: Office 365 需要连接到 Internet。 以下终结点应仅适用于使用 Office 365 美国政府版 DoD 计划的客户。
 hideEdit: true
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: ebf93708849a06348edd5433c56c486595da55a4
-ms.sourcegitcommit: ccbb405227880f40581c3cdfb974368a29d496f7
+ms.openlocfilehash: 39f48b152f46ab12b1e96cf8869a0fd8050d1c35
+ms.sourcegitcommit: 98b889e674ad1d5fa37d4b6c5fc3eda60a1d67f3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "48791926"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "49751635"
 ---
 # <a name="office-365-us-government-dod-endpoints"></a>Office 365 美国政府 DoD 终结点
 
-*适用于： Office 365 管理员*
+*适用于：Office 365 管理员*
 
- Office 365 要求连接到 Internet。 下面的终结点应仅供使用 Office 365 美国政府 DoD 计划的客户访问。
+ Office 365 需要连接到 Internet。 以下终结点应仅适用于使用 Office 365 美国政府版 DoD 计划的客户。
   
  **Office 365 终结点：**[全球（包括 GCC）](urls-and-ip-address-ranges.md) | [由世纪互联运营的 Office 365](urls-and-ip-address-ranges-21vianet.md)  | [Office 365 Germany](microsoft-365-germany-endpoints.md) | *Office 365 美国政府版 DoD* | [Office 365 美国政府版 GCC High](microsoft-365-u-s-government-gcc-high-endpoints.md) |
   
 |||
 |:-----|:-----|
-|**上次更新时间：** 10/28/2020- ![ RSS ](../media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [更改日志订阅](https://endpoints.office.com/version/USGOVDoD?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) <br/> |**下载：** [JSON 格式](https://endpoints.office.com/endpoints/USGOVDoD?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7)的完整列表 <br/> |
+|**上次更新时间** ：01/04/2021 - ![ RSS ](../media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [更改日志订阅](https://endpoints.office.com/version/USGOVDoD?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) <br/> |**下载：JSON** 格式 [的完整列表](https://endpoints.office.com/endpoints/USGOVDoD?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) <br/> |
 
- 从 [管理 Office 365 终结点](managing-office-365-endpoints.md) 开始，了解我们关于使用此数据管理网络连接的建议。 终结点数据在每月开始时更新，并在30天内发布新的 IP 地址和 Url，并在处于活动状态之前发布。 这样一来，在需要新的连接之前，尚不具有自动更新的客户即可完成其过程。 如果需要，还可以更新终结点，以解决支持升级、安全事件或其他立即运行的要求。 以下页面上显示的数据都是从基于 REST 的 web 服务生成的。 如果使用脚本或网络设备访问此数据，则应直接转到 [Web 服务](microsoft-365-ip-web-service.md) 。
+ 从 [管理 Office 365](managing-office-365-endpoints.md) 终结点开始，了解我们关于使用此数据管理网络连接的建议。 终结点数据在每月开始时更新，在处于活动状态前 30 天发布新的 IP 地址和 URL。 这使尚未自动更新的客户可以在需要新连接之前完成其流程。 如果需要解决支持升级、安全事件或其他即时操作要求，也可在一个月内更新终结点。 以下页面上显示的数据都是从基于 REST 的 Web 服务生成的。 如果使用脚本或网络设备访问此数据，应直接转到 [Web](microsoft-365-ip-web-service.md) 服务。
 
-下面的终结点数据列出了从用户计算机到 Office 365 的连接要求。 它不包括从 Microsoft 到客户网络的网络连接，有时也称为混合网络连接或入站网络连接。 有关详细信息，请参阅 [web 服务中未包含的其他终结点](additional-office365-ip-addresses-and-urls.md)。 
+以下终结点数据列出了从用户计算机到 Office 365 的连接要求。 它不包括从 Microsoft 到客户网络的网络连接，有时称为混合或入站网络连接。 有关详细信息，请参阅 [Web 服务中未包括的其他终结点](additional-office365-ip-addresses-and-urls.md)。 
 
 终结点分为四个服务区域。可以独立选择前三个服务区域进行连接。第四个服务区域是一个常见的依赖项（称为 Microsoft 365 Common 和 Office），并且必须始终具有网络连接。
 
 显示的数据列是：
 
-- **ID** ：行的 ID 号，也称为终结点集。此 ID 与终结点集的 Web 服务返回的 ID 相同。
+- **ID**：行的 ID 号，也称为终结点集。此 ID 与终结点集的 Web 服务返回的 ID 相同。
 
-- **类别** ：显示终结点集是分类为“优化”、“允许”还是“默认”。可以在 [https://aka.ms/pnc](https://aka.ms/pnc) 上了解管理它们的这些类别和指南。此列还列出了哪些终结点集需要具有网络连接。对于不需要具有网络连接的终结点集，我们在此字段中提供备注，以指示在终结点集被阻止时将丢失哪些功能。如果要排除整个服务区域，则根据需要列出的终结点集不需要连接。
+- **类别**：显示终结点集是分类为“优化”、“允许”还是“默认”。可以在 [https://aka.ms/pnc](https://aka.ms/pnc) 上了解管理它们的这些类别和指南。此列还列出了哪些终结点集需要具有网络连接。对于不需要具有网络连接的终结点集，我们在此字段中提供备注，以指示在终结点集被阻止时将丢失哪些功能。如果要排除整个服务区域，则根据需要列出的终结点集不需要连接。
 
-- **ER** ：如果终结点设置通过 Azure ExpressRoute （使用 Office 365 路由前缀）支持，则为 **"是"** 。 包含路由前缀的 BGP 社区与所列的服务区域对齐。 当 ER 为 " **否** " 时，这意味着此终结点集不支持 ExpressRoute。 但是，不应假定在 ER 为 **no** 时没有为终结点集播发任何路由。 如果您计划使用 Azure AD Connect，请阅读 [特殊注意事项部分](https://docs.microsoft.com/azure/active-directory/hybrid/reference-connect-instances#microsoft-azure-government) ，以确保您具有适当的 Azure ad connect 配置。
+- **ER：** 如果终结点 **集通过** 具有 Office 365 路由前缀的 Azure ExpressRoute 受支持，则这是"是"。 包含显示的路由前缀的 BGP 社区与列出的服务区域一致。 当 ER 为 **"否**"时，这意味着此终结点集不支持 ExpressRoute。 但是，不应假定没有为 ER 为 No 的终结点集播发 **路由**。 如果你计划使用 Azure AD Connect，请阅读[](https://docs.microsoft.com/azure/active-directory/hybrid/reference-connect-instances#microsoft-azure-government)特殊的注意事项部分，以确保你拥有适当的 Azure AD Connect 配置。
 
-- **地址** ：列出终结点集的 FQDN 或通配符域名以及 IP 地址范围。请注意，IP 地址范围采用 CIDR 格式，并且可能包含指定网络中的许多单独 IP 地址。
+- **地址**：列出终结点集的 FQDN 或通配符域名以及 IP 地址范围。请注意，IP 地址范围采用 CIDR 格式，并且可能包含指定网络中的许多单独 IP 地址。
  
-- **端口** ：列出与地址合并以形成网络终结点的 TCP 或 UDP 端口。你会注意到 IP 地址范围中存在一些重复，其中列出了不同的端口。
+- **端口**：列出与地址合并以形成网络终结点的 TCP 或 UDP 端口。你会注意到 IP 地址范围中存在一些重复，其中列出了不同的端口。
  
 [!INCLUDE [Office 365 U.S. Government DoD endpoints](../includes/office-365-u.s.-government-dod-endpoints.md)]
   
 关于此表的注释：
 
--  (SCC) 的安全与合规中心提供了对适用于 Office 365 的 Azure ExpressRoute 的支持。 这同样适用于通过 SCC 公开的许多功能，如报告、审核、高级电子数据展示、统一 DLP 和数据管理。 两种特定功能（PST 导入和电子数据展示导出）目前不支持仅具有 Office 365 路由筛选器的 Azure ExpressRoute，因为它们依赖于 Azure Blob 存储。 若要使用这些功能，您需要使用任何支持的 Azure 连接选项（包括 Internet 连接或具有 Azure 公用路由筛选器的 Azure ExpressRoute）以独立方式连接到 Azure Blob 存储。 您必须评估这两个功能的建立此类连接。 Office 365 信息保护团队了解此限制，并积极努力为 Office 365 提供对 Azure ExpressRoute 的支持，这些功能仅限于 Office 365 的路由筛选器。
+- 安全与合规中心 (SCC) 为 Office 365 的 Azure ExpressRoute 提供支持。 这同样适用于通过 SCC 公开的许多功能，如报告、审核、高级电子数据展示、统一 DLP 和数据管理。 PST 导入和电子数据展示导出这两个特定功能当前不支持仅具有 Office 365 路由筛选器的 Azure ExpressRoute，因为这些功能依赖于 Azure Blob 存储。 若要使用这些功能，你需要使用任何可支持的 Azure 连接选项（包括 Internet 连接或 Azure ExpressRoute 和 Azure 公共路由筛选器）单独连接到 Azure Blob 存储。 您必须评估为这两个功能建立此类连接。 Office 365 信息保护团队已注意到此限制，并积极致力于为 Office 365 提供 Azure ExpressRoute 支持，仅限于这两种功能的 Office 365 路由筛选器。
 
-- Microsoft 365 应用程序的其他可选终结点未列出，并且用户无需为企业应用程序启动 Microsoft 365 应用程序和编辑文档。 可选的终结点托管在 Microsoft 数据中心中，不会处理、传输或存储客户数据。 建议将指向这些终结点的用户连接定向到默认 Internet 出局外围。
+- 还有一些 Microsoft 365 企业应用版的其他可选终结点未列出，并且用户不需要这些终结点来启动 Microsoft 365 企业应用版应用程序并编辑文档。 可选终结点托管在 Microsoft 数据中心中，不处理、传输或存储客户数据。 我们建议将用户与这些终结点的连接定向到默认的 Internet 出口外围。
