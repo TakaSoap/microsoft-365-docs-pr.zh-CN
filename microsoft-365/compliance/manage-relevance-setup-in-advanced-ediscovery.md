@@ -14,13 +14,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: fd6be6d3-2e8d-449d-9851-03ab7546e6aa
+ROBOTS: NOINDEX, NOFOLLOW
 description: 获取有关在高级电子数据展示中设置相关性定型的建议，以计算文件相关性分数并生成分析结果。
-ms.openlocfilehash: a6bec149e11fa80fb57cb811120218fa7f2cc45b
-ms.sourcegitcommit: 47de4402174c263ae8d70c910ca068a7581d04ae
+ms.openlocfilehash: 8ba09babc91f233514cd0195c3e1da08b07ccb3c
+ms.sourcegitcommit: 222fb7fe2b26dde3d8591b61cc02113d6135012c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "49662867"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "49760206"
 ---
 # <a name="manage-relevance-setup-in-advanced-ediscovery-classic"></a>管理高级电子数据展示（经典）中的相关性设置
 
@@ -69,15 +70,4 @@ ms.locfileid: "49662867"
 
 - 谨慎定义和整理问题，因为这可能会影响相关性定型结果。
 
-设置参数后，审阅者/专家便可以开始在“相关性”选项卡中定型文件。 
-  
-## <a name="see-also"></a>另请参阅
-
-[高级电子数据展示（经典）](office-365-advanced-ediscovery.md)
-  
-[定义问题和分配用户](define-issues-and-assign-users.md)
-  
-[设置将已导入文件添加到的负载](set-up-loads-to-add-imported-files.md)
-  
-[定义突出显示的关键字和高级选项](define-highlighted-keywords-and-advanced-options.md)
-
+设置参数后，审阅者/专家便可以开始在“相关性”选项卡中定型文件。
