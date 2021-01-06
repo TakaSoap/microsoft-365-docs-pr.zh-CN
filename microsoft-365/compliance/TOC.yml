@@ -122,13 +122,13 @@
           href: what-the-dlp-functions-look-for.md
     - name: 可训练的分类器
       items:
-        - name: 了解可训练的分类器（预览版）
+        - name: 了解可训练的分类器
           href: classifier-learn-about.md
-        - name: 可训练的分类器入门（预览版）
+        - name: 可训练的分类器入门
           href: classifier-get-started-with.md
-        - name: 如何重新培训沟通合规性中的分类器（预览版）
+        - name: 如何重新训练沟通合规性中的分类器
           href: classifier-how-to-retrain-comms-compliance.md
-        - name: 如何重新培训内容资源管理器中的分类器（预览版）
+        - name: 如何重新训练内容资源管理器中的分类器
           href: classifier-how-to-retrain-content-explorer.md
     - name: 数据分类
       items:
@@ -629,7 +629,7 @@
             - name: 关键字查询和搜索条件
               href: keyword-queries-and-search-conditions.md
             - name: 搜索统计信息
-              href: search-statistics.md
+              href: search-statistics-in-advanced-ediscovery.md
             - name: 将搜索结果添加到审阅集
               href: add-data-to-review-set.md
         - name: 管理审阅集
@@ -792,83 +792,6 @@
               href: run-reports-in-advanced-ediscovery.md
     - name: 旧版电子数据展示工具的停用
       href: legacy-ediscovery-retirement.md
-- name: 管理数据调查
-  items:
-    - name: 数据调查概述
-      href: overview-data-investigations.md
-    - name: 管理数据泄漏事件
-      href: manage-data-spillage-incidents.md
-    - name: 为数据调查分配权限
-      href: data-investigations-permissions.md
-    - name: 创建新调查
-      href: create-new-investigation.md
-    - name: 在调查中搜索数据
-      href: search-for-data.md
-      items:
-        - name: 生成搜索查询
-          href: build-search-queries.md
-        - name: 搜索统计信息
-          href: search-statistics.md
-    - name: 查看证据中的数据
-      href: review-data-in-evidence.md
-      items:
-        - name: 查询数据
-          href: evidence-query.md
-        - name: 标记文档
-          href: tag-documents.md
-        - name: 注释和编辑文档
-          href: annotate-and-redact-documents.md
-        - name: 加载非 Office 365 数据
-          href: load-non-office365-data.md
-        - name: 修正处理数据时出现的错误
-          href: error-remediation.md
-        - name: 从项目的原始位置删除项目
-          href: delete-items-from-original-locations.md
-    - name: 运行分析功能以加快调查
-      href: run-analytics-to-investigate-faster.md
-      items:
-        - name: 电子邮件会话
-          href: email-threading.md
-        - name: 近似重复检测
-          href: near-duplicates.md
-        - name: 主题
-          href: themes.md
-        - name: 使用相关性模块
-          href: use-relevance-module.md
-    - name: 管理调查中感兴趣的人员
-      href: manage-people-of-interest.md
-      items:
-        - name: 为调查中的人员数据编制索引
-          href: index-data-people-of-interest.md
-        - name: 查看调查中人员的审核活动
-          href: view-people-of-interest-activity.md
-    - name: 从调查导出数据
-      href: export-data.md
-      items:
-        - name: 从证据导出文档
-          href: export-documents-from-incident.md
-        - name: 下载导出作业
-          href: download-export-jobs-from-a-data-investigation.md
-    - name: 配置调查设置
-      items:
-        - name: 从调查添加或删除成员
-          href: add-remove-members.md
-        - name: 配置搜索和分析设置
-          href: configure-search-analytics-settings.md
-        - name: 关闭或删除调查
-          href: close-or-delete-investigation.md
-    - name: 数据调查参考
-      items:
-        - name: 发行说明
-          href: data-investigations-release-notes.md
-        - name: 数据调查限制
-          href: limits-datainvestigations.md
-        - name: 支持的文件类型
-          href: supported-filetypes-datainvestigations.md
-        - name: 文档元数据字段
-          href: document-metadata-fields.md
-        - name: 管理作业
-          href: manage-jobs.md
 - name: 管理保留
   items:
     - name: 如何识别为邮箱设置的保留类型

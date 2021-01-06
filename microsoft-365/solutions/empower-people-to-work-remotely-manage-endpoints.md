@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: 使用 Microsoft Endpoint Manager 管理管理设备、电脑和其他终结点。
-ms.openlocfilehash: 291c1111bbfaf9a549c0d2ac22dab450a32a6a96
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: bca3e8e79264a2218dd1036e50be1c9ab29d2b8a
+ms.sourcegitcommit: ae646779d84e993cf80b1207e76b856a21be5790
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48845260"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "49749595"
 ---
 # <a name="step-4-deploy-endpoint-management-for-your-devices-pcs-and-other-endpoints"></a>步骤 4. 部署设备、电脑和其他终结点的终结点管理
 
@@ -72,7 +72,7 @@ Configuration Manager 是一种本地管理解决方案，可用于管理网络�
 
 ## <a name="windows-autopilot"></a>Windows Autopilot
 
-Windows Autopilot 是一个零接触、自助式的 Windows 部署平台。 它包含一组技术，你可使用这些技术来设置和预配置新设备，使它们可实现高效使用。 你还可以使用 Windows Autopilot 来重置、恢复设备并重新调整其用途。 
+Windows Autopilot 是一个零接触、自助式的 Windows 部署平台。 它包含一组技术，你可使用这些技术来设置和预配置新设备，使它们可实现高效使用。 还可以使用 Windows Autopilot 来重置、恢复设备并重新调整其用途。 
 
 借助 Windows Autopilot，IT 部门可以预配置设备，而几乎不需要管理任何基础结构，而且过程轻松简单。 
 
@@ -87,7 +87,7 @@ Windows Autopilot 是一个零接触、自助式的 Windows 部署平台。 它�
 - [如何注册用于移动设备管理的不同类型的设备](https://docs.microsoft.com/mem/intune/enrollment/device-enrollment)
 - [如何向最终用户讲解 Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/end-user-educate)
  
-## <a name="results-of-step-3"></a>步骤 3 的结果
+## <a name="results-of-step-4"></a>步骤 4 的结果
 
 你正在使用 Endpoint Manager 功能套件来管理移动设备、台式计算机、虚拟机、嵌入式设备和服务器。
 
