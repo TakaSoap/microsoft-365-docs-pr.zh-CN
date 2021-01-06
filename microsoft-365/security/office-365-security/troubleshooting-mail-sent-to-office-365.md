@@ -17,24 +17,24 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: 本文提供有关将电子邮件发送到 Microsoft 365 中的收件箱的问题的疑难解答信息 & 批量邮寄到 Microsoft 365 客户的最佳实践。
-ms.openlocfilehash: 8b7c008f827a579e234d8a8feab008d36ecfe064
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+description: 本文提供有关将电子邮件发送到 Microsoft 365 收件箱的问题疑难解答信息&向 Microsoft 365 客户发送批量邮件的最佳实践。
+ms.openlocfilehash: 3504d7518073826f3979c3c837c58d4406886b41
+ms.sourcegitcommit: 222fb7fe2b26dde3d8591b61cc02113d6135012c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49615398"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "49760478"
 ---
 # <a name="troubleshooting-mail-sent-to-microsoft-365"></a>有关发送到 Microsoft 365 的邮件的疑难解答
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
-本文提供了在尝试向 Microsoft 365 中的收件箱发送电子邮件时遇到问题的发件人故障排除信息，以及向客户批量发送电子邮件的最佳实践。
+本文提供了在 Microsoft 365 中尝试向收件箱发送电子邮件时遇到问题的发件人的疑难解答信息，以及批量发送给客户的最佳实践。
 
 ## <a name="are-you-managing-your-ip-and-domains-sending-reputation"></a>您是否正在管理您的 IP 和域的发送信誉？
 
-EOP 筛选技术旨在为 Microsoft 365 以及其他 Microsoft 产品（如 Exchange Server）提供反垃圾邮件保护。 我们还利用 SPF、DKIM、DMARC 和电子邮件身份验证技术来帮助解决欺骗和网络钓鱼的问题，通过验证发送电子邮件的域是否被授权执行此操作来帮助解决。 EOP 筛选受到许多因素的影响，如发送 IP、域、身份验证、列表精度、投诉率和内容等相关因素。 其中，拉低发件人信誉和传送电子邮件能力的关键因素之一是他们的垃圾邮件投诉率。
+EOP 筛选技术旨在为 Microsoft 365 以及其他 Microsoft 产品（如 Exchange Server）提供反垃圾邮件Exchange Server。 我们还利用 SPF、DKIM、DMARC 和电子邮件身份验证技术来帮助解决欺骗和网络钓鱼的问题，通过验证发送电子邮件的域是否被授权执行此操作来帮助解决。 EOP 筛选受到许多因素的影响，如发送 IP、域、身份验证、列表精度、投诉率和内容等相关因素。 其中，拉低发件人信誉和传送电子邮件能力的关键因素之一是他们的垃圾邮件投诉率。
 
 ## <a name="are-you-sending-email-from-new-ip-addresses"></a>您是否正从新的 IP 地址发送电子邮件？
 
@@ -54,19 +54,19 @@ EOP 筛选技术旨在为 Microsoft 365 以及其他 Microsoft 产品（如 Exch
 - 10.0.0.0/8 (or 10.0.0.0 - 10.255.255.255)
 - 172.16.0.0/11 (or 172.16.0.0 - 172.31.255.255)
 
-## <a name="you-received-a-non-delivery-report-ndr-when-sending-email-to-a-user-in-office-365"></a>您在向 Office 365 中的用户发送电子邮件时 (NDR) 收到未送达报告
+## <a name="you-received-a-non-delivery-report-ndr-when-sending-email-to-a-user-in-office-365"></a>向 Office 365 中的用户 (NDR) 未送达报告
 
 出现一些传送问题是因为发件人的 IP 地址被 Microsoft 阻止或用户账户由于以前的垃圾邮件活动被标识为已禁止的发件人。如果您认为您错误地收到了 NDR，首先按照在 NDR 邮件中解决此问题的说明进行操作。
 
-有关收到的错误的详细信息，请参阅 [Exchange Online 中的电子邮件未送达报告](https://docs.microsoft.com/exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/non-delivery-reports-in-exchange-online)中的错误代码列表。
+有关您收到的错误的详细信息，请参阅 Exchange Online 中的电子邮件未送达 [报告中的错误代码列表](https://docs.microsoft.com/exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/non-delivery-reports-in-exchange-online)。
 
  例如，如果您收到以下 NDR，则表明发送 IP 地址已被 Microsoft 阻止：
 
  `550 5.7.606-649 Access denied, banned sending IP [x.x.x.x]; To request removal from this list please visit https://sender.office.com/ and follow the directions.`
 
-若要请求从此列表中删除，您可以 [使用除名门户将自己从阻止的发件人列表中删除](use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis.md)。
+若要请求从此列表中删除，可以使用除名门户将自己从阻止 [的发件人名单中删除](use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis.md)。
 
-## <a name="my-email-landed-in-the-recipients-junk-email-folder"></a>收件人的 "垃圾邮件" 文件夹中的 "我的电子邮件进入到"
+## <a name="my-email-landed-in-the-recipients-junk-email-folder"></a>我的电子邮件已登陆收件人的"垃圾邮件"文件夹
 
 如果某封邮件被 EOP 错误地标识为垃圾邮件，您可以与收件人一起将此误报邮件提交给 Microsoft 垃圾邮件分析团队，他们将对该邮件进行评估和分析。 有关详细信息，请参见[向 Microsoft 报告邮件和文件](report-junk-email-messages-to-microsoft.md)。
 
@@ -78,25 +78,25 @@ EOP 筛选技术旨在为 Microsoft 365 以及其他 Microsoft 产品（如 Exch
 
 您收到了 NDR，因为从 IP 地址检测出可疑活动，且该地址在接受进一步评估时已暂时受限。如果通过评估后该怀疑被解除，则该限制将很快取消。
 
-## <a name="i-cant-receive-email-from-senders-in-microsoft-365"></a>我无法从 Microsoft 365 中的发件人接收电子邮件
+## <a name="i-cant-receive-email-from-senders-in-microsoft-365"></a>我在 Microsoft 365 中无法接收来自发件人的电子邮件
 
- 为了从我们的用户接收邮件，请确保您的网络允许来自 EOP 在我们的数据中心使用的 IP 地址的连接。 有关详细信息，请参阅 [Exchange Online PROTECTION IP 地址](https://docs.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges)。
+ 为了从我们的用户接收邮件，请确保您的网络允许来自 EOP 在我们的数据中心使用的 IP 地址的连接。 有关详细信息，请参阅 [Exchange Online Protection IP 地址](https://docs.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges)。
 
-## <a name="best-practices-for-bulk-emailing-to-microsoft-365-users"></a>批量向 Microsoft 365 用户发送电子邮件的最佳实践
+## <a name="best-practices-for-bulk-emailing-to-microsoft-365-users"></a>向 Microsoft 365 用户批量发送电子邮件的最佳实践
 
-如果你经常向 Microsoft 365 用户执行批量电子邮件活动，并希望确保你的电子邮件以安全、及时的方式送达，请按照本节中的提示操作。
+如果你经常向 Microsoft 365 用户发起批量电子邮件活动，并且希望确保电子邮件以安全且及时的方式到达，请按照本部分中的提示操作。
 
-### <a name="ensure-that-the-from-name-reflects-who-is-sending-the-message"></a>确保 "发件人" 名称反映发送邮件的人
+### <a name="ensure-that-the-from-name-reflects-who-is-sending-the-message"></a>确保"收件人"名称反映发送邮件的人
 
 邮件主题应是邮件内容的简要概括，且邮件正文应清楚并简洁地表明优惠、服务或产品的相关内容。 例如：
 
 正确：
 
-> 发件人： marketing@shoppershandbag.com <br> 主题：已更新圣诞节的目录！
+> From： marketing@shoppershandbag.com <br> 主题：更新了 Christmas 四月节的目录！
 
 不正确：
 
-> 发件人： someone@outlook.com <br> 主题： 目录
+> From： someone@outlook.com <br> 主题： 目录
 
 越容易让人知道您是谁、在做什么，您在通过大部分垃圾邮件筛选器传送邮件时遇到的困难就会越少。
 
@@ -128,7 +128,7 @@ EOP 筛选技术旨在为 Microsoft 365 以及其他 Microsoft 产品（如 Exch
 
 - 包含在邮件正文中的重定向应当是相似且一致的，不能是多样的和各不相同的。本文中的重定向不指向邮件，例如链接和文档。如果您有大量广告或"取消订阅"链接或"更新配置文件"链接，它们应全部指向同一个域。例如：
 
-  正确：
+  正确 (所有域都是同一) ：
 
   `unsubscribe.bulkmailer.com`
 
@@ -136,7 +136,7 @@ EOP 筛选技术旨在为 Microsoft 365 以及其他 Microsoft 产品（如 Exch
 
   `options.bulkmailer.com`
 
-  不正确：
+  所有 (域均不同，错误) ：
 
   `unsubscribe.bulkmailer.com`
 

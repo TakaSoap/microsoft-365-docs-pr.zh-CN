@@ -13,13 +13,13 @@ ms.custom:
 - seo-marvel-apr2020
 localization_priority: Normal
 ms.assetid: d74c6ddf-11b0-43ee-b298-8bb0340895f0
-description: 管理员可以了解如何设置独立 Exchange Online Protection (EOP) 保护本地电子邮件环境。
-ms.openlocfilehash: 2d63057e77e6965616e19452de824a94ba0ccda8
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+description: 管理员可以了解如何设置独立 Exchange Online Protection (EOP) 以保护本地电子邮件环境。
+ms.openlocfilehash: ca95f7dce30e8e751e293bf4e5de9caf0c845d29
+ms.sourcegitcommit: 222fb7fe2b26dde3d8591b61cc02113d6135012c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49659413"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "49760490"
 ---
 # <a name="set-up-your-standalone-eop-service"></a>设置独立 EOP 服务
 
@@ -31,24 +31,24 @@ ms.locfileid: "49659413"
 > [!NOTE]
 > 此主题假设你拥有内部部署邮箱，并且想使用 EOP 对其进行保护，这称为独立方案。 如果要使用 Exchange Online 在云中托管所有邮箱，则不必完成本文的所有步骤。 转到 ["比较 Exchange Online](https://products.office.com/exchange/compare-microsoft-exchange-online-plans) 计划"以注册和购买云邮箱。
 >
-> 如果你想在内部部署和云中分别托管一部分邮箱，这称为混合方案。 这需要更高级的邮件流设置。 [Exchange Server混合部署](https://docs.microsoft.com/exchange/exchange-hybrid) 介绍了混合邮件流，并提供了指向显示如何设置它的资源的链接。
+> 如果你想在内部部署和云中分别托管一部分邮箱，这称为混合方案。 这需要更高级的邮件流设置。 [Exchange Server混合部署](https://docs.microsoft.com/exchange/exchange-hybrid) 介绍了混合邮件流，并且具有指向显示如何设置它的资源的链接。
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>在开始之前，您需要知道什么？
 
 - 估计完成该任务的时间：1 小时
 
-- 您需在 Exchange Online Protection 中获得权限，然后才能执行本文中的过程。 具体来说，您需要远程域和接受域角色，默认情况下，该角色 (全局管理员) 和 **邮件** 流管理员角色组。 有关详细信息，请参阅独立 [EOP 中](feature-permissions-in-eop.md) 的权限和使用 [EAC 修改角色组的成员列表](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups)。
+- 您需在 Exchange Online Protection 中获得权限，然后才能执行本文中的过程。 具体而言，您需要远程域和接受域角色，默认情况下，该角色 (全局管理员) 和 **邮件** 流管理员角色组。 有关详细信息，请参阅独立 [EOP 中的权限](feature-permissions-in-eop.md) 和使用 [EAC 修改角色组的成员列表](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups)。
 
 - 如果你还未注册 EOP，请访问 [Exchange Online Protection](https://products.office.com/exchange/exchange-email-security-spam-protection) 并选择购买或者试用服务。
 
-- 有关可能适用于本文中的过程的键盘快捷方式的信息，请参阅 Exchange Online [中 Exchange 管理中心的键盘快捷方式](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center)。
+- 有关可能适用于本文中的过程的键盘快捷方式的信息，请参阅 Exchange Online 中 [Exchange 管理中心的键盘快捷方式](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center)。
 
 > [!TIP]
 > 是否有任何疑问？ 请在 [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351) 论坛中寻求帮助。
 
 ## <a name="step-1-use-the-microsoft-365-admin-center-to-add-and-verify-your-domain"></a>步骤 1：使用 Microsoft 365 管理中心添加和验证域
 
-1. 在[Microsoft 365 管理中心](https://docs.microsoft.com/microsoft-365/admin/admin-overview/about-the-admin-center)中，转到"设置"将域添加到服务。
+1. 在[Microsoft 365 管理中心](https://docs.microsoft.com/microsoft-365/admin/admin-overview/about-the-admin-center)中，转到"设置"以将域添加到服务。
 
 2. 按照该步骤将适用的 DNS 记录添加到您的 DNS 托管提供程序以验证域所有权。
 
@@ -76,13 +76,13 @@ ms.locfileid: "49659413"
 
 ## <a name="step-5-ensure-that-spam-is-routed-to-each-users-junk-email-folder"></a>步骤 5：确保垃圾邮件已路由到每个用户的"垃圾邮件"文件夹
 
-若要确保垃圾邮件 (垃圾邮件) 正确路由到每个用户的"垃圾邮件"文件夹，必须执行几个配置步骤。 步骤在配置独立 [EOP 中提供，以将垃圾邮件发送到混合环境中垃圾邮件文件夹](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md)。
+为确保垃圾邮件 (垃圾邮件) 正确路由到每个用户的"垃圾邮件"文件夹，必须执行几个配置步骤。 步骤在配置独立 [EOP 中提供，以将垃圾邮件发送到混合环境中垃圾邮件文件夹](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md)。
 
 如果您不想将邮件移动到每个用户的"垃圾邮件"文件夹，则通过编辑反垃圾邮件策略可以选择其他操作。 有关详细信息，请参阅[在 Office 365 中配置反垃圾邮件策略](configure-your-spam-filter-policies.md)。
 
 ## <a name="step-6-use-the-microsoft-365-admin-center-to-point-your-mx-record-to-eop"></a>步骤 6：使用 Microsoft 365 管理中心将 MX 记录指向 EOP
 
-按照域配置步骤更新域的 MX 记录，以便入站电子邮件流经 EOP。 请务必将你的 MX 记录直接指向 EOP 而不是让第三方筛选服务将电子邮件中继到 EOP。 有关详细信息，请再次参阅[为 Office 365 创建 DNS 记录](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider)。
+按照域配置步骤更新域的 MX 记录，以便入站电子邮件通过 EOP。 请务必将你的 MX 记录直接指向 EOP 而不是让第三方筛选服务将电子邮件中继到 EOP。 有关详细信息，请再次参阅[为 Office 365 创建 DNS 记录](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider)。
 
 > [!NOTE]
 > 如果必须将 MX 记录指向位于 EOP 前面的另一台服务器或服务，请参阅 [Exchange Online](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors)中连接器的增强筛选。

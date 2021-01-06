@@ -1,6 +1,6 @@
 ---
 title: 电子邮件保护的顺序和优先级
-keywords: security、恶意软件、Microsoft 365、M365、security center、ATP、Microsoft Defender ATP、Office 365 ATP、Azure ATP
+keywords: 安全， 恶意软件， Microsoft 365， M365， 安全中心， ATP， Microsoft Defender ATP， Office 365 ATP， Azure ATP
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -15,64 +15,64 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: 管理员可以了解 Exchange Online Protection (EOP) 中的应用程序保护顺序，以及保护策略中的优先级值如何确定应用的策略。
-ms.openlocfilehash: c6a89e35f1cce0532f206b5ac5dbfd4a1aedda9d
-ms.sourcegitcommit: 1db81b85d327fe423695ce675ad325e538417211
+description: 管理员可以了解 Exchange Online Protection (EOP) 中的保护的应用程序顺序，以及保护策略中的优先级值如何确定应用的策略。
+ms.openlocfilehash: a18234344e1100f3b6a03c10e970c8195e53e7df
+ms.sourcegitcommit: 222fb7fe2b26dde3d8591b61cc02113d6135012c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49349264"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "49760562"
 ---
 # <a name="order-and-precedence-of-email-protection"></a>电子邮件保护的顺序和优先级
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
-在使用 Exchange Online 或独立 Exchange online Protection 中的邮箱的 Microsoft 365 组织中 (EOP) 不含 Exchange Online 邮箱的组织中，入站电子邮件可能会被多种保护形式标记。 例如，EOP 中可供所有 Microsoft 365 客户使用的内置反网络钓鱼策略，以及 Microsoft Defender for Office 365 客户可以使用的更强健的反网络钓鱼策略。 邮件还会通过多个检测扫描，针对恶意软件、垃圾邮件、网络钓鱼等。在所有此活动中，可能会对应用的策略产生一些混淆。
+在 Exchange Online 中具有邮箱的 Microsoft 365 组织或独立 Exchange Online Protection (EOP) 组织中，入站电子邮件可能由多种形式的保护标记。 例如，EOP 中可用于所有 Microsoft 365 客户的内置防钓鱼策略，以及适用于 Office 365 客户的 Microsoft Defender 的更可靠的防钓鱼策略。 邮件还通过恶意软件、垃圾邮件、网络钓鱼等的多个检测扫描。鉴于所有这些活动，可能混淆了应用了哪个策略。
 
-通常情况下，应用于邮件的策略在 **CAT (Category)** 属性中的 **X-Forefront-反垃圾邮件报告** 标头中进行标识。 有关详细信息，请参阅[反垃圾邮件邮件头](anti-spam-message-headers.md)。
+通常，应用于邮件的策略在 CAT (Category) 属性中的 **X-Forefront-Antispam-Report** **标头** 中标识。 有关详细信息，请参阅[反垃圾邮件邮件头](anti-spam-message-headers.md)。
 
-有两个主要因素可用于确定将哪个策略应用于邮件：
+有两个主要因素可确定对邮件应用哪个策略：
 
-- **电子邮件保护类型的优先级**：此顺序不可配置，如下表所述：
+- **电子邮件保护类型的** 优先级：此顺序不可配置，如下表所述：
 
   ****
 
   |Priority|电子邮件保护|类别|管理位置|
   |---|---|---|---|
-  |1|恶意软件|CAT： MALW|[在 EOP 中配置反恶意软件策略](configure-anti-malware-policies.md)|
-  |双面|网络钓鱼|CAT： PHSH|[在 EOP 中配置反垃圾邮件策略](configure-your-spam-filter-policies.md)|
-  |第三章|高可信度垃圾邮件|CAT： HSPM|[在 EOP 中配置反垃圾邮件策略](configure-your-spam-filter-policies.md)|
-  |4 |网络钓鱼|分类程序：欺骗|[在 EOP 中配置欺骗智能](learn-about-spoof-intelligence.md)|
-  |5<sup>\*</sup>|用户模拟 (受保护的用户) |UIMP|[在 Microsoft Defender for Office 365 中配置反网络钓鱼策略](configure-atp-anti-phishing-policies.md)|
-  |型<sup>\*</sup>|域模拟 (受保护的域) |DIMP|[在 Microsoft Defender for Office 365 中配置反网络钓鱼策略](configure-atp-anti-phishing-policies.md)|
-  |7 |垃圾邮件|CAT： SPM|[在 EOP 中配置反垃圾邮件策略](configure-your-spam-filter-policies.md)|
-  |8 |批量邮件|分类程序：批量|[在 EOP 中配置反垃圾邮件策略](configure-your-spam-filter-policies.md)|
+  |1 |恶意软件|CAT：MALW|[在 EOP 中配置反恶意软件策略](configure-anti-malware-policies.md)|
+  |2 |网络钓鱼|CAT：PHSH|[在 EOP 中配置反垃圾邮件策略](configure-your-spam-filter-policies.md)|
+  |3 |高可信度垃圾邮件|CAT：HSPM|[在 EOP 中配置反垃圾邮件策略](configure-your-spam-filter-policies.md)|
+  |4 |网络钓鱼|CAT：SPOOF|[在 EOP 中配置欺骗智能](learn-about-spoof-intelligence.md)|
+  |5<sup>\*</sup>|用户模拟 (受保护的用户) |UIMP|[在 Microsoft Defender for Office 365 中配置防钓鱼策略](configure-atp-anti-phishing-policies.md)|
+  |6<sup>\*</sup>|域模拟 (受保护的域) |DIMP|[在 Microsoft Defender for Office 365 中配置防钓鱼策略](configure-atp-anti-phishing-policies.md)|
+  |7 |垃圾邮件|CAT：SPM|[在 EOP 中配置反垃圾邮件策略](configure-your-spam-filter-policies.md)|
+  |8 |批量邮件|CAT：BULK|[在 EOP 中配置反垃圾邮件策略](configure-your-spam-filter-policies.md)|
   |
 
-  <sup>\*</sup> 这些功能仅在 Microsoft Defender for Office 365 中提供了反网络钓鱼策略中。
+  <sup>\*</sup> 这些功能仅在 Microsoft Defender for Office 365 中的防钓鱼策略中可用。
 
-- **策略的优先级**：对于每种保护类型 (反垃圾邮件、反恶意软件、反网络钓鱼等 ) ，有一个适用于每个人的默认策略，但您可以创建适用于特定用户的自定义策略。 每个自定义策略都有一个优先级值，用于确定策略在中的应用顺序。 默认策略总是最后应用。
+- 策略的优先级：对于每种保护类型 (反垃圾邮件、反恶意软件、防钓鱼等 ) ，都有一个适用于所有用户的默认策略，但您可以创建适用于特定用户的自定义策略。 每个自定义策略都有一个优先级值，用于确定应用策略的顺序。 默认策略始终应用最后一个。
 
-  如果用户是在同一类型的多个策略中定义的，则仅对其应用具有最高优先级的策略。 该类型的任何剩余策略不会评估给用户 (包括默认策略) 。
+  如果用户在相同类型的多个策略中定义，则仅应用优先级最高的策略。 不会为用户评估该类型的任何剩余策略 (包括默认策略) 。
 
-例如，将 Microsoft Defender 中 **适用于相同用户** 的 Microsoft 365 Defender 中的以下反网络钓鱼策略和同时标识为用户模拟和哄骗的邮件视为：
+例如，请考虑适用于相同用户的 Microsoft Defender for Office 365中的以下防钓鱼策略，以及标识为用户模拟和欺骗的邮件：
 
   ****
 
   |策略名称|Priority|用户模拟|反欺骗|
   |---|---|---|---|
-  |策略 A|1|开|关|
-  |Policy B|双面|关|开|
+  |策略 A|1 |开|关|
+  |策略 B|2 |关|开|
   |
 
-1. 邮件被标记为欺骗，因为哄骗的优先级高于用户模拟 (8)  (4) 。
+1. 邮件被标记为欺骗邮件并被视为欺骗邮件，因为欺骗的优先级比用户模拟高 (4) 5 (高) 。
 2. 策略 A 应用于用户，因为它的优先级高于策略 B。
-3. 根据策略 A 中的设置，不会对邮件执行任何操作，因为在策略中禁用了反欺骗功能。
-4. 策略处理停止，因此策略 B 永远不会应用到用户。
+3. 根据策略 A 中的设置，不会对邮件执行任何操作，因为策略中已关闭反欺骗。
+4. 策略处理将停止，因此策略 B 从不应用于用户。
 
-由于相同的用户可能有意或无意地包含在同一类型的多个自定义策略中，因此，请对自定义策略使用以下设计准则：
+由于同一用户可能会有意或无意地包含在同一类型的多个自定义策略中，因此请对自定义策略使用以下设计准则：
 
-- 为适用于少数用户的策略分配更高的优先级，并为应用于大量用户的策略分配较低的优先级。 请记住，默认策略总是最后应用。
-- 配置更高优先级的策略，使其具有比低优先级策略更严格或更多的专用设置。
-- 请考虑使用较少的自定义策略 (仅对需要更严格或更多专用设置) 的用户使用自定义策略。
+- 为应用于少数用户的策略分配更高的优先级，为适用于大量用户的策略分配较低的优先级。 请记住，默认策略始终应用最后。
+- 将优先级较高的策略配置为具有比低优先级策略更严格或更专业的设置。
+- 请考虑使用更少的自定义策略 (仅对需要更严格或更专门的设置的用户使用) 。

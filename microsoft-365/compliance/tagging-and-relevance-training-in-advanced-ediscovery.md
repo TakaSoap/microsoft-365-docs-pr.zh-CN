@@ -15,13 +15,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 8576cc86-d51b-4285-b54b-67184714cc62
+ROBOTS: NOINDEX, NOFOLLOW
 description: 了解在高级电子数据展示的相关性培训阶段标记的步骤，然后使用包含 40 个文件的培训示例。
-ms.openlocfilehash: d576b0a907a4c12eabe4f3cba9846de670b0ee12
-ms.sourcegitcommit: 47de4402174c263ae8d70c910ca068a7581d04ae
+ms.openlocfilehash: cedac19ee04053e19b5dac1537b57d576e2e0354
+ms.sourcegitcommit: 222fb7fe2b26dde3d8591b61cc02113d6135012c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "49663447"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "49760362"
 ---
 # <a name="tagging-and-relevance-training-in-advanced-ediscovery-classic"></a>高级电子数据展示和经典电子数据展示 (相关性) 
 
@@ -30,7 +31,7 @@ ms.locfileid: "49663447"
   
 本主题介绍使用高级电子数据展示相关性培训模块的过程。 
   
-在高级电子数据展示中完成评估并进入相关性培训阶段后，将包含 40 个文件的培训示例放入标记选项卡中。 
+在高级电子数据展示中完成评估并进入相关性培训阶段后，40 个文件的培训示例将进入标记标签选项卡。 
   
 ## <a name="performing-relevance-training"></a>执行相关性培训
 
@@ -40,7 +41,7 @@ ms.locfileid: "49663447"
   
     在 **"标记** "选项卡中，显示名称文件的名称。 这可能是路径、电子邮件主题、标题或用户定义的名称。 可以通过右键单击文件路径来复制 ID、文件路径或文本路径。 
     
-    "标记"选项卡标记统计信息显示左窗格) 顶部的文件示例编号 (、右窗格) 底部示例 (中当前显示的文件总数，以及左窗格) 底部示例 (中标记文件的当前总数，这些标记文件将在标记文件时更改。 这适用于完成的任何相关性标记，无论是在评估、培训、跟进还是测试中。 
+    "标记"选项卡标记统计信息显示左窗格) 顶部的文件示例编号 (、右窗格) 底部示例 (中当前显示的文件总数，以及左窗格) 底部示例 (中标记文件的当前总数，这些标记文件将在标记文件时更改。 这适用于完成的任何相关性标记，无论是评估、培训、跟进还是测试。 
     
     指示存在注释、标记和系列文件的图标显示在文件上方的栏中的文件视图中。
     
@@ -76,7 +77,7 @@ ms.locfileid: "49663447"
     
 ## <a name="working-with-the-sample-files-list"></a>使用示例文件列表
 
-示例文件列表允许你查看培训示例中的文件列表，并针对一个或多个文件执行各种操作。 在 **"相关性标记**"选项卡中，示例文件左窗格显示示例文件列表，以使用评估、培训、跟进和不一致过程 \> 进行处理。 
+示例文件列表允许你查看培训示例中的文件列表，并针对一个或多个文件执行各种操作。 在 **"相关性标记**"选项卡中，示例文件左窗格显示示例文件列表，以使用评估、培训、跟进和不一 \> 致过程进行处理。 
   
 1. 在 **"相关性 \> 标记"** 选项卡中，选择左窗格下拉列表中的示例文件。 示例文件在左窗格中列出。 
     
@@ -98,17 +99,3 @@ ms.locfileid: "49663447"
     
     导航到示例中的最后一个文件：Shift + Ctrl + \>
     
-## <a name="see-also"></a>另请参阅
-
-[高级电子数据展示（经典）](office-365-advanced-ediscovery.md)
-  
-[了解相关性评估](assessment-in-relevance-in-advanced-ediscovery.md)
-  
-[标记和评估](tagging-and-assessment-in-advanced-ediscovery.md)
-  
-[跟踪相关性分析](track-relevance-analysis-in-advanced-ediscovery.md)
-  
-[根据结果决定](decision-based-on-the-results-in-advanced-ediscovery.md)
-  
-[测试相关性分析](test-relevance-analysis-in-advanced-ediscovery.md)
-

@@ -17,18 +17,18 @@ search.appverid:
 - MET150
 ms.assetid: 6ceca4d3-cad1-4532-9f0f-d469dfbbb552
 description: 了解如何为 Microsoft 365 组创建命名策略。
-ms.openlocfilehash: 9bc0a4c7e1ae6ad532c97b442a2bc50880a942fc
-ms.sourcegitcommit: 884ac262443c50362d0c3ded961d36d6b15d8b73
+ms.openlocfilehash: acf660375508760bd2e9874a07454709849929b0
+ms.sourcegitcommit: 222fb7fe2b26dde3d8591b61cc02113d6135012c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49698671"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "49759820"
 ---
 # <a name="microsoft-365-groups-naming-policy"></a>Microsoft 365 组命名策略
 
 可以使用组命名策略对组织中用户创建的组强制实施一致的命名策略。 命名策略可帮助你和用户识别组、成员身份、地理区域或组创建者的功能。 命名策略还有助于对通讯簿中的组进行分类。 可以使用该策略阻止在组名称和别名中使用的特定单词。
 
-命名策略应用于跨所有组工作负载创建的组 (如 Outlook、Microsoft Teams、SharePoint、Planner、Yammer 等) 。 它将应用于组名称和组别名。 当用户创建组时，以及编辑现有组的组名称或别名时，将应用它。
+命名策略应用于跨所有组工作负载创建的组 (如 Outlook、Microsoft Teams、SharePoint、Planner、Yammer 等) 。 它将应用于组名称和组别名。 它还在用户创建组时以及为现有组编辑组名称、别名、描述或头像时应用。
 
 > [!TIP]
 > Microsoft 365 组命名策略仅适用于 Microsoft 365 组。 它不适用于在 Exchange Online 中创建的通讯组。 若要为通讯组创建命名策略，请参阅"[创建通讯组命名策略"。](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-distribution-groups/create-group-naming-policy)
@@ -41,7 +41,7 @@ ms.locfileid: "49698671"
 
 ## <a name="licensing-requirements"></a>许可要求
 
-使用 Microsoft 365 组的 Azure AD 命名策略需要你拥有（但不一定）为每个唯一用户 (（包括作为一个或多个 Microsoft 365 组的成员的来宾) ）分配 Azure Active Directory Premium P1 许可证或 Azure AD Basic EDU 许可证。
+使用 Microsoft 365 组的 Azure AD 命名策略需要你拥有（但不一定）为每个唯一用户分配 Azure Active Directory Premium P1 许可证或 Azure AD Basic EDU 许可证 (包括作为一个或多个 Microsoft 365 组的成员的来宾) 。
 
 创建组命名策略的管理员也要求这样做。
 
@@ -51,7 +51,7 @@ ms.locfileid: "49698671"
 
 ### <a name="fixed-strings"></a>固定字符串
 
-可以使用短字符串来帮助区分 GAL 中的组和组工作负荷的左侧导航。 一些常见前缀后缀是关键字，如"Grp \_ \# Name"、"Name"、"Name" \_
+可以使用短字符串来帮助区分 GAL 中的组和组工作负荷的左侧导航。 一些常见前缀后缀是关键字，如"Grp \_ Name"、"Name" \# 和 \_ "Name"
 
 ### <a name="attributes"></a>属性
 
@@ -60,7 +60,7 @@ ms.locfileid: "49698671"
 示例：
 
 - Policy = "GRP [GroupName] [Department]"
-- 用户部门 = 工程
+- 用户的部门 = 工程
 - 已创建的组名称 = "GRP 我的组工程"
 
 支持的 Azure Active Directory (Azure AD) 属性是 [Department]、[Company]、[Office]、[StateOrProvince]、[CountryOrRegion]和 [Title]。
@@ -106,7 +106,7 @@ ms.locfileid: "49698671"
 
 ## <a name="admin-override"></a>管理员替代
 
-某些管理员在所有组工作负载和终结点中都免除这些策略，以便他们可以使用这些阻止的词语及其所需的命名约定创建组。 以下是从组命名策略中排除的管理员角色列表。
+所有组工作负载和终结点中的一些管理员都免除这些策略，以便他们可以使用这些阻止的词语及其所需的命名约定创建组。 以下是从组命名策略中排除的管理员角色列表。
 
 - 全局管理员
 
