@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: 了解用户在适用于桌面、移动和 Web 的 Office 应用中如何使用敏感度标签，以及哪些应用支持敏感度标签。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 2f2e28bc9321f8a9f3de8cb622eff3317be572b9
-ms.sourcegitcommit: 884ac262443c50362d0c3ded961d36d6b15d8b73
+ms.openlocfilehash: ebf4626a6106a9bebc62c8bca1be825c645d60fd
+ms.sourcegitcommit: 3bf4f1c0d3a8515cca651b2a520217195f89457f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49698415"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "49777075"
 ---
 # <a name="use-sensitivity-labels-in-office-apps"></a>在 Office 应用中使用敏感度标签
 
@@ -64,10 +64,10 @@ Office for iOS 和 Office for Android：敏感度标签内置于 [Office 应用�
 |[包含变量的动态标记](#dynamic-markings-with-variables)                                              | 2010+           | 16.42+     | 2.42+ | 16.0.13328+ | 正在审查 |
 |[立即分配权限](encryption-sensitivity-labels.md#assign-permissions-now)                                 | 1910+          | 16.21+     | 2.21+ | 16.0.11231+ | [是 - 选择加入](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[允许用户分配权限](encryption-sensitivity-labels.md#let-users-assign-permissions)                     |2004+ | 16.35+   | 正在审查   | 正在审查         | 正在审查                                                        |
-|[使用标签分析查看标签使用情况，](label-analytics.md) 并发送管理员数据                      | 正在审查            | 正在审查        | 正在审查   | 正在审查         | 是的 <sup>\*</sup>                                                        |
-|[要求用户向电子邮件和文档应用标签](sensitivity-labels.md#what-label-policies-can-do)   | 预览 [：Beta 渠道](https://office.com/insider)             | 预览 [：Beta 渠道](https://office.com/insider)         | 预览 [：Beta 渠道](https://office.com/insider)   | 正在审查         | 正在审查                                            
+|[使用标签分析查看标签使用情况，](label-analytics.md) 并发送管理员数据                      | 预览： [当前 (预览) ](https://office.com/insider)            | 预览： [当前 (预览) ](https://office.com/insider)        | 正在审查   | 正在审查         | 是的 <sup>\*</sup>                                                        |
+|[要求用户向电子邮件和文档应用标签](sensitivity-labels.md#what-label-policies-can-do)   | 预览：向当前 [频道 (预览) ](https://office.com/insider)             | 预览：向当前 [频道 (预览) ](https://office.com/insider)         | 正在审查   | 预览 [：Beta 渠道](https://office.com/insider)         | 正在审查                                            
 |[将敏感度标签自动应用于内容](apply-sensitivity-label-automatically.md)                    | 2009+                                  | Word 和 PowerPoint 预览：向当前频道 ([预览) ](https://office.com/insider) | 正在审查 | 正在审查 | [是 - 选择加入](sensitivity-labels-sharepoint-onedrive-files.md) |
-|支持 [对已标记](https://support.office.com/article/6d6bd723-ebfd-4e40-b5f6-ae6e8088f7a5) 和 [受保护的文档](https://support.office.com/article/ee1509b4-1f6e-401e-b04a-782d26f564a4) 进行自动保存和共同授权 | 正在审查 | 正在审查 | 正在审查 | 正在审查 | [是 - 选择加入](sensitivity-labels-sharepoint-onedrive-files.md) |
+|支持 [对已标记](https://support.office.com/article/6d6bd723-ebfd-4e40-b5f6-ae6e8088f7a5) 和 [加密的文档](https://support.office.com/article/ee1509b4-1f6e-401e-b04a-782d26f564a4) 进行自动保存和共同授权 | 正在审查 | 正在审查 | 正在审查 | 正在审查 | [是 - 选择加入](sensitivity-labels-sharepoint-onedrive-files.md) |
 |
 
 **脚注：**
@@ -88,8 +88,8 @@ Office for iOS 和 Office for Android：敏感度标签内置于 [Office 应用�
 |[包含变量的动态标记](#dynamic-markings-with-variables)                                              | 正在审查                     | 正在审查                 | 正在审查         | 正在审查           | 正在审查               |
 |[立即分配权限](encryption-sensitivity-labels.md#assign-permissions-now)                                 | 1910+                     | 16.21+                 | 4.7.1+         | 4.0.39+           | 是               |
 |[允许用户分配权限](encryption-sensitivity-labels.md#let-users-assign-permissions)                     | 1910+                     | 16.21+                 | 4.7.1+         | 4.0.39+           | 是               |
-|[要求用户向电子邮件和文档应用标签](#require-users-to-apply-a-label-to-their-email-and-documents)   | 预览 [：Beta 渠道](https://office.com/insider)                        | 16.43+                     | 4.57.0+            | 4.2037.4+                | 是                |
-|[使用标签分析查看标签使用情况，](label-analytics.md) 并发送管理员数据                      | 正在审查                       | 正在审查                    | 正在审查           | 正在审查               | 是               |
+|[要求用户向电子邮件和文档应用标签](#require-users-to-apply-a-label-to-their-email-and-documents)   | 预览：[当前频道 (预览) ) ](https://office.com/insider)                        | 16.43+                     | 4.57.0+            | 4.2037.4+                | 是                |
+|[使用标签分析查看标签使用情况，](label-analytics.md) 并发送管理员数据                      | 预览： [当前 (预览) ](https://office.com/insider)                       | 预览： [当前 (预览) ](https://office.com/insider)                    | 正在审查           | 正在审查               | 是               |
 |[将敏感度标签自动应用于内容](apply-sensitivity-label-automatically.md)                    | 2009+                      | 正在审查                    | 正在审查           | 正在审查               | 是 |
 |
 

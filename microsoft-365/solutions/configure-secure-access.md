@@ -1,6 +1,6 @@
 ---
 title: 配置对 Microsoft 365 服务的安全访问
-description: 说明。
+description: 查找针对三层保护（基线、敏感、高度敏感）实现 MFA、条件访问和相关策略的规范指南。
 ms.author: samanro
 author: samanro
 manager: bcarter
@@ -12,13 +12,13 @@ ms.collection:
 - M365-security-compliance
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: eff5e7701f0278654dd0e56f09428ba44748b1b1
-ms.sourcegitcommit: 0f71042edc7c3a7f10a7b92e1943abf51532cbf5
+ms.openlocfilehash: 00d6c1dd842cd906547f0d450a41052aaa466d35
+ms.sourcegitcommit: ddfb4f3e34deb733e8625e845e4dfd1fcc066ceb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "46521785"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "49771795"
 ---
 # <a name="configure-secure-access-to-microsoft-365-services"></a>配置对 Microsoft 365 服务的安全访问
 
-此解决方案基于 "[M365 黄金 config](https://aka.ms/m365goldenconfig)"--实施 MFA、条件访问和相关策略的指导性指导：比较基准、敏感和高度敏感。 
+此解决方案基于["M365 黄金](https://aka.ms/m365goldenconfig)配置"--针对三层保护实现 MFA、条件访问和相关策略的规范性指导：基线、敏感、高度敏感。 

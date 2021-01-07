@@ -14,40 +14,40 @@ search.appverid:
 - MET150
 ms.collection: Strat_O365_Enterprise
 description: 摘要：了解 Microsoft Office 365 中的数据恢复能力。
-ms.openlocfilehash: 4759cfda13ab5044ddf5980d7e61004e9e7626fa
-ms.sourcegitcommit: 51a9f34796535309b8ca8b52da92da0a3621327b
+ms.openlocfilehash: fbd2672986046a4f6d25c47b011eaef0a87d90e1
+ms.sourcegitcommit: 3bf4f1c0d3a8515cca651b2a520217195f89457f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "45024772"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "49777046"
 ---
 # <a name="service-encryption"></a>服务加密
 
-除了使用卷级加密之外，Exchange Online、Skype for business、SharePoint Online 和 OneDrive for business 还使用服务加密来加密客户数据。 服务加密允许两个密钥管理选项：
+除了使用卷级加密之外，Exchange Online、Skype for Business、SharePoint Online 和 OneDrive for Business 还使用服务加密来加密客户数据。 服务加密允许两种密钥管理选项：
 
-## <a name="microsoft-managed-keys"></a>Microsoft 托管密钥
-Microsoft 管理所有加密密钥，包括服务加密的根密钥。 此选项目前在 SharePoint Online 和 OneDrive for business 中可用。 此选项当前正在为 Exchange Online 推出。 Microsoft 托管密钥提供了默认服务加密，除非你决定使用客户密钥进行板载。 如果以后你决定停止使用客户密钥，而不考虑数据清除路径，则你的数据将使用 Microsoft 托管密钥进行加密。 你的数据始终至少在此默认级别进行加密。 
+## <a name="microsoft-managed-keys"></a>Microsoft 管理的密钥
+Microsoft 管理所有加密密钥，包括用于服务加密的根密钥。 此选项当前默认为 Exchange Online、SharePoint Online、OneDrive for Business 启用。 除非决定使用客户密钥载入，否则 Microsoft 托管密钥提供默认服务加密。 如果以后决定在未遵循数据清除路径的情况下停止使用客户密钥，那么数据会使用 Microsoft 管理的密钥保持加密状态。 你的数据始终至少在此默认级别加密。 
 
 ## <a name="customer-key"></a>客户密钥
-提供用于服务加密的根密钥，并使用 Azure Key Vault 管理这些密钥。 Microsoft 管理所有其他密钥。 此选项称为 "客户密钥"，目前适用于 Exchange Online、SharePoint Online 和 OneDrive for Business。 （以前称为使用 BYOK 的高级加密。 请参阅增强针对原始公告的[Office 365 客户的透明度和控制](https://blogs.office.com/2015/04/21/enhancing-transparency-and-control-for-office-365-customers/)。
+你提供用于服务加密的根密钥，并且使用 Azure 密钥保管库管理这些密钥。 Microsoft 管理所有其他密钥。 此选项称为"客户密钥"，当前可用于 Exchange Online、SharePoint Online 和 OneDrive for Business。  (BYOK 高级加密。 请参阅 [增强 Office 365](https://blogs.office.com/2015/04/21/enhancing-transparency-and-control-for-office-365-customers/) 客户对原始公告的透明度和控制。) 
 
-服务加密提供了多项优势。 例如，客户密钥：
+服务加密具有多种优势：
 
-- 在强加密保护之上提供权限保护和管理功能。
+- 在 BitLocker 顶部提供一层额外的保护。
 
-- 包括一个 "客户密钥" 选项，该选项使多租户服务能够提供每租户密钥管理。
+- 使 Windows 操作系统管理员无法访问操作系统存储或处理的应用程序数据。
 
-- 提供 Windows 操作系统管理员的分离，以访问由操作系统存储或处理的客户数据。
+- 包括一个客户密钥选项，该选项允许多租户服务提供每个租户密钥管理。
 
-- 增强了 Microsoft 365 满足具有有关加密合规性要求的客户需求的能力。
+- 增强 Microsoft 365 满足对加密有特定合规性要求的客户的需求的能力。
 
-使用 "客户密钥"，可以使用本地硬件服务模块（HSM）或 Azure Key Vault （AKV）生成自己的加密密钥。 无论生成密钥的方式如何，都可以使用 AKV 来控制和管理 Office 365 使用的加密密钥。 密钥存储在 AKV 中后，可以将其用作加密邮箱数据的 keychains 之一的根。
+使用客户密钥，可以使用本地硬件服务模块 (HSM) 或 Azure Key Vault (AKV) 。 无论您如何生成密钥，都可以使用 AKV 来控制和管理 Office 365 使用的加密密钥。 密钥存储在 AKV 中后，可以用作加密邮箱数据或文件的其中一个密钥链的根。
 
-客户密钥的另一个好处是，您可以控制 Microsoft 处理数据的能力。 如果要从 Office 365 中删除数据（例如，如果要使用 Microsoft 终止服务或删除云中存储的部分数据），则可以执行此操作，并将客户密钥用作技术控制。 这可确保任何人（包括 Microsoft）都不能访问或处理数据。 客户密钥补充并补充了用于控制 Microsoft 人员对数据的访问权限的客户密码箱的补充。
+客户密钥的另一个好处是，你可以控制 Microsoft 处理数据的能力。 如果要从 Office 365 中删除数据，例如想要终止 Microsoft 服务或删除云中存储的部分数据，可以这样做，并使用客户密钥作为技术控制。 删除数据可确保包括 Microsoft 在内的任何人无法访问或处理数据。 客户密钥是对用于控制 Microsoft 人员访问数据的客户密码箱的补充。
 
-若要了解如何设置用于 Exchange Online、Skype for Business、SharePoint Online （包括工作组网站和 OneDrive for business）的 Microsoft 365 客户密钥，请参阅以下文章：
+若要了解如何为 Microsoft 365 for Exchange Online、Skype for Business、SharePoint Online（包括团队网站和 OneDrive for Business）设置客户密钥，请参阅以下文章：
 
-- [使用客户密钥进行服务加密](customer-key-overview.md)
+- [使用客户密钥执行服务加密](customer-key-overview.md)
 
 - [设置客户密钥](customer-key-set-up.md)
 

@@ -1,6 +1,6 @@
 ---
 title: Microsoft 365 Foundation 解决方案概述
-description: 说明。
+description: 阅读这些基础解决方案指南，了解概念和功能，并帮助您做出选择，以产生从计划到实施到采用等最终结果。
 ms.author: samanro
 author: samanro
 manager: bcarter
@@ -13,18 +13,18 @@ ms.collection:
 ms.custom: ''
 f1.keywords: NOCSH
 ROBOTS: NOINDEX
-ms.openlocfilehash: 666ff0b9a3abb82af1eba12d5d17d025cfc9bff5
-ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
+ms.openlocfilehash: 28e68d7fe1a814ec82aba95aae59e5ae85244fe6
+ms.sourcegitcommit: ddfb4f3e34deb733e8625e845e4dfd1fcc066ceb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49613604"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "49771915"
 ---
 # <a name="microsoft-365-foundation-solutions-overview"></a>Microsoft 365 Foundation 解决方案概述
 
-![阻止 ](https://docs.microsoft.com/office/media/icons/blocks-blue.png) **基础解决方案**  这些解决方案提供了针对特定业务问题或需求的完整指南。 它们指导您完成概念和功能，并帮助您做出从规划到实施到采用的功能最终结果的选择。
+![blocks ](https://docs.microsoft.com/office/media/icons/blocks-blue.png) **Foundation solutions**  These solutions provide a complete guidance for a specific business problem or need. 它们指导你完成概念和功能，并帮助你做出选择，以产生从计划到实施到采用等最终结果。
 
 - [为远程工作者提供强大功能](empower-people-to-work-remotely.md)
 - [在团队、组和网站中安全地协作](setup-secure-collaboration-with-teams.md)
-- [在组织中设置威胁防护和网络安全](deploy-threat-protection.md)
+- [在整个组织中设置威胁防护和网络安全](deploy-threat-protection.md)
 - [为数据隐私法规部署信息保护](information-protection-deploy.md)
