@@ -18,12 +18,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: 了解可用于监视个人数据泄露的三种工具。
-ms.openlocfilehash: a212067d75ab3d9e195e3d869e0a6ae7d1ed4d01
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.openlocfilehash: 2a00d639be3b43fb56e26dca2725f2c3dac54b39
+ms.sourcegitcommit: 222fb7fe2b26dde3d8591b61cc02113d6135012c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49616376"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "49760538"
 ---
 # <a name="monitor-for-leaks-of-personal-data"></a>监视个人数据泄露
 
@@ -38,13 +38,13 @@ ms.locfileid: "49616376"
 
 - 从 Microsoft 365 数据丢失防护报告入手，它们用于监视 SharePoint Online、OneDrive for Business 和传输中的电子邮件内的个人数据。这些报告为监控个人数据提供了最详细的信息。然而，这些报告并未囊括 Office 365 中的所有服务。
 
-- 接下来，使用警报策略和审核日志监视服务中的活动。设置持续监视或搜索审核日志以调查事件。审核日志适用于服务：Sway、PowerBI、电子数据展示、Dynamics 365、Microsoft Flow、Microsoft Teams、管理员活动、OneDrive for Business、SharePoint Online、传输中的邮件和静态邮箱。Skype 对话包含在静态邮箱中。
+- 接下来，使用警报策略和审核日志监视服务中的活动。设置持续监视或搜索审核日志以调查事件。审核日志适用于以下服务：Sway、Power BI、电子数据展示、Dynamics 365、Microsoft Flow、Microsoft Teams、管理员活动、OneDrive for Business、SharePoint Online、传输中的邮件和静态邮箱。Skype 对话属于静态邮箱服务。
 
 - 最后，使用 Microsoft Cloud App Security 监视其他 SaaS 提供程序中包含敏感数据的文件。即将推出的功能为，通过 Cloud App Security 跨 Azure 信息保护和 Office 使用敏感信息类型和统一标签。可以设置适用于所有 SaaS 应用或特定应用（如 Box）的策略。Cloud App Security 不会发现 Exchange Online 中的文件（包括附加到电子邮件的文件）。
 
 ## <a name="data-loss-prevention-reports"></a>数据丢失防护报告
 
-创建数据丢失防护 (DLP) 策略后，你需要验证这些策略是否按预期运行，以及是否有助于你保持合规性。借助 Office 365 中的 DLP 报告，可以快速查看 DLP 策略匹配数、替代数或误报数；观察它们随时间推移是呈上升趋势还是下降趋势；以不同的方式筛选报告；以及通过选择图中直线上的点来查看其他详细信息。
+创建数据丢失防护 (DLP) 策略后，你需要验证这些策略是否按预期运行，以及是否有助于你保持合规性。借助 Office 365 中的 DLP 报告，可以快速查看 DLP 策略匹配数、替代数或误报数；观察它们随时间推移是呈上升趋势还是下降趋势；以不同的方式筛选报告；以及通过选择图中直线上的点来查看更多详细信息。
 
 可以使用 DLP 报告实现以下目的：
 
@@ -74,15 +74,15 @@ DLP 报告位于安全中心和合规中心中。 导航到“报告”\>“查�
 
 安全中心和合规中心提供两种方法针对审核日志进行监视和报告：
 
-- 设置警报策略、查看警报和监视趋势：使用安全中心或合规中心中的警报策略和警报仪表板工具。
+- 设置警报策略、查看警报和监视趋势 — 使用安全中心或合规中心中的警报策略和警报仪表板工具。
 
 - 直接搜索审核日志：搜索指定日期范围内的所有事件。也可以根据特定条件（如执行操作的用户、操作或目标对象）筛选结果。
 
-信息安全和合规性团队可以使用这些工具主动审核服务中由最终用户和管理员执行的活动。当特定网站集上发生某些活动时（例如共享已知网站的内容以包含 GDPR 相关信息时），可以配置自动警报以发送电子邮件通知。此操作使这些团队可以跟进用户以确保遵守企业安全策略，或提供其他培训。
+信息安全和合规性团队可以使用这些工具主动审核服务中由最终用户和管理员执行的活动。可以配置自动警报，以便在特定网站集上发生某些活动时（例如从已知包含 GDPR 相关信息的网站共享内容时），发送电子邮件通知。此操作使这些团队可以跟踪用户，以确保遵守企业安全策略或提供额外培训。
 
-信息安全团队还可以搜索审核日志来调查可疑的数据泄露并确定根本原因和泄露的范围。此内置功能有助于遵守 GDPR 条款 33 和 34 的规定，其中要求在特定时间段内向 GDPR 监管机构和数据泄露的数据主体自身提供通知。通常建议在服务内仅将审核日志条目保留 90 天，而许多组织则要求将这些日志保留更长的时间。
+信息安全团队还可以搜索审核日志来调查可疑的数据泄露并确定泄露的根本原因和程度。此内置功能有助于遵守 GDPR 条款 33 和 34 的规定，其中要求在特定时间段内向 GDPR 监管机构和数据泄露的数据主体自身提供通知。通常的建议是，仅将审核日志条目在服务内保留 90 天，但许多组织都要求将这些日志保留更长的时间。
 
-可以使用通过 Microsoft 管理活动 API 订阅到统一审核日志的解决方案，此解决方案按需存储日志条目并提供高级仪表板和警报。例如：[Microsoft Operations Management Suite (OMS)](https://docs.microsoft.com/azure/operations-management-suite/oms-solution-office-365)。
+有些解决方案可以通过 Microsoft 管理活动 API 来订阅统一审核日志，而且可以按需存储日志条目并提供高级仪表板和警报。例如：[Microsoft Operations Management Suite (OMS)](https://docs.microsoft.com/azure/operations-management-suite/oms-solution-office-365)。
 
 有关警报策略和搜索审核日志的更多信息：
 
@@ -100,11 +100,11 @@ DLP 报告位于安全中心和合规中心中。 导航到“报告”\>“查�
 
 ## <a name="microsoft-cloud-app-security"></a>Microsoft Cloud App Security
 
-Microsoft Cloud App Security 可帮助你跨网络发现使用中的其他 SaaS 应用、发送到这些应用的敏感数据以及从这些应用接收到的敏感数据。
+Microsoft Cloud App Security 可帮助你跨网络发现使用中的其他 SaaS 应用、发送到这些应用的敏感数据以及从这些应用发送的敏感数据。
 
-Microsoft Cloud App Security 是一项可为云应用提供深入了解、细化控制和增强型威胁防护的综合服务。它可以从所有设备的网络中识别出超过 15,000 个云应用程序，并提供风险评分以及持续的风险评估和分析。无需代理：从防火墙和代理收集信息，从而向用户提供云使用情况和影子 IT 的完整可见性和上下文。
+Microsoft Cloud App Security 是一项可为云应用提供深层可见性、细化控制和增强型威胁防护的综合服务。它可以在你的网络中（从所有设备）识别出超过 15,000 个云应用程序，并提供风险评分以及持续的风险评估和分析。无需代理：从你的防火墙和代理收集信息，从而为你提供有关云使用情况和影子 IT 的完整可见性和上下文。
 
-为了更好地了解云环境，Cloud App Security 调查功能深入了解批准的应用和托管的应用的所有活动、文件和帐户。用户可以获取有关文件级别的详细信息，并发现数据在云应用中传输的位置。
+为了更好地了解云环境，Cloud App Security 调查功能可让你深入了解批准的应用和托管的应用的所有活动、文件和帐户。你可以获得文件级别的详细信息，并发现数据在云应用中的传输位置。
 
 例如，下图说明了有助于符合 GDPR 的两个 Cloud App Security 策略。
 
@@ -151,7 +151,7 @@ Microsoft Cloud App Security 是一项可为云应用提供深入了解、细化
 |类别|DLP|
 |筛选设置|访问级别 = 公共 (Internet)，公共，外部 <p> 应用 = \<select apps\>（如果想要将监视限制为特定 SaaS 应用，请使用此设置）|
 |应用对象|所有文件、所有的所有者|
-|内容检查|包括匹配当前表达式的文件：所有国家/地区：法国：信用卡卡号 <p> 无需相关上下文：未选中（匹配关键字和正则表达式） <p> 包括具有至少 1 个匹配项的文件 <p> 取消屏蔽冲突的最后 4 个字符：已选中|
+|内容检查|包括匹配当前表达式的文件：所有国家/地区：法国：信用卡卡号 <p> 无需相关上下文：未选中（此设置将匹配关键字和正则表达式） <p> 包括具有至少 1 个匹配项的文件 <p> 取消屏蔽冲突的最后 4 个字符：已选中|
 |警报|为每个匹配文件创建警报：已选中 <p> 每日警报限制：1000 <p> 选择一个警报作为电子邮件：已选中 <p> 收件人：infosec@contoso.com|
 |治理|Microsoft OneDrive for Business <p> 设为专用：选中“删除外部用户” <p> 所有其他设置：未选中 <p> Microsoft SharePoint Online <p> 设为专用：选中“删除外部用户” <p> 所有其他设置：未选中|
 |
@@ -186,5 +186,5 @@ Microsoft Cloud App Security 是一项可为云应用提供深入了解、细化
 
 类似策略：
 
-- 检测客户数据或 HR 数据的大量下载 — 如果在较短时间段内检测到单个用户正在下载大量包含客户数据或 HR 数据的文件，则发出警报。
-- 检测客户和 HR 数据共享 — 共享包含客户或 HR 数据的文件时发出警报。
+- 检测大量下载客户数据或 HR 数据的情况 — 如果检测到单个用户在较短的一段时间内下载了大量包含客户数据或 HR 数据的文件，则发出警报。
+- 检测共享客户和 HR 数据的情况 — 共享包含客户或 HR 数据的文件时发出警报。

@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 description: 了解如何配置基于域的邮件身份验证、报告和一致性 (DMARC) 以验证从你的组织发送的邮件。
-ms.openlocfilehash: 9dd97b1fc60f0b6198bb6c55af291c7dd103ac5d
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.openlocfilehash: bcf1c0b3dc0a1a8dd8a679af815fbdc2173cabb7
+ms.sourcegitcommit: 222fb7fe2b26dde3d8591b61cc02113d6135012c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49615332"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "49759852"
 ---
 # <a name="use-dmarc-to-validate-email"></a>使用 DMARC 验证电子邮件
 
@@ -35,7 +35,7 @@ ms.locfileid: "49615332"
 
 ## <a name="how-do-spf-and-dmarc-work-together-to-protect-email-in-microsoft-365"></a>SPF 和 DMARC 如何协同工作来保护 Microsoft 365 中的电子邮件？
 
- 电子邮件可能包含多个发送方、发件人或地址。 这些地址用于不同用途。 例如，以下列地址为例：
+ 电子邮件可能包含多个发送者或发件人地址。 这些地址用于不同用途。 例如，以下列地址为例：
 
 - **“邮件发件人”地址**：标识发件人，并指定在传送邮件过程中出现任何问题（例如未送达通知）时发送返回通知的地址。 该地址出现在电子邮件的信封部分，而电子邮件应用程序通常不显示此地址。 有时称其为" 5321.MailFrom 地址"或"反向路径地址"。
 
@@ -176,7 +176,7 @@ _dmarc.domain  TTL  IN  TXT  "v=DMARC1; p=policy; pct=100"
 
 ## <a name="best-practices-for-implementing-dmarc-in-microsoft-365"></a>在 Microsoft 365 中实现 DMARC 的最佳做法
 
-你可以逐渐实现 DMARC，而不会影响邮件流的其余部分。创建和实施遵循以下步骤的推广计划。首先使用任一子域执行以下每一个步骤，然后使用其他子域，最后使用组织内的顶级域，然后再继续下一步骤。
+你可以逐渐实施 DMARC，而不影响邮件流的其余部分。请创建和实施遵循以下步骤的推广计划。在执行以下每一个步骤时，首先使用某个子域，然后使用其他子域，最后使用组织内的顶级域。然后，再继续下一步骤。
 
 1. 监视实现 DMARC 的影响
 
@@ -192,15 +192,15 @@ _dmarc.domain  TTL  IN  TXT  "v=DMARC1; p=policy; pct=100"
 
     最后一步是实施拒绝策略。拒绝策略是策略设置为拒绝 (p=reject) 的 DMARC TXT 记录。执行此操作时，你将要求 DMARC 接收器不接受未通过 DMARC 检查的邮件。
 
-4. 如何设置子域的DMARC？
+4. 如何设置子域的 DMARC？
 
-DMARC通过在DNS中以TXT记录的形式发布策略来实现，并且是分层的（例如，为contoso.com发布的策略将适用于sub.domain.contonos.com，除非为子域明确定义了不同的策略）。 此功能很有用，因为各组织可以指定较少数量的高级DMARC记录以扩大覆盖面。 不想要子域继承顶层域的DMARC记录时，应注意配置明确的子域DMARC记录。
+   DMARC通过在DNS中以TXT记录的形式发布策略来实现，并且是分层的（例如，为contoso.com发布的策略将适用于sub.domain.contonos.com，除非为子域明确定义了不同的策略）。 此功能很有用，因为组织可以指定较少数量的高级 DMARC 记录以扩大覆盖面。 如果不想让子域继承顶级域的 DMARC 记录，应注意配置明确的子域 DMARC 记录。
 
-此外，当子域不应该发送电子邮件时，还可通过添加 `sp=reject` 值来添加 DMARC 的通配符类型策略。 例如：
+   此外，当子域不应该发送电子邮件时，还可通过添加 `sp=reject` 值来添加 DMARC 的通配符类型策略。 例如：
 
-```console
-_dmarc.contoso.com. TXT "v=DMARC1; p=reject; sp=reject; ruf=mailto:authfail@contoso.com; rua=mailto:aggrep@contoso.com"
-```
+   ```text
+   _dmarc.contoso.com. TXT "v=DMARC1; p=reject; sp=reject; ruf=mailto:authfail@contoso.com; rua=mailto:aggrep@contoso.com"
+   ```
 
 ## <a name="how-microsoft-365-handles-outbound-email-that-fails-dmarc"></a>Microsoft 365 如何处理未通过 DMARC 的出站电子邮件
 
