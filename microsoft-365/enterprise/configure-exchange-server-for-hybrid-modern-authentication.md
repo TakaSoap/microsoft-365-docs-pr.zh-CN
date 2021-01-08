@@ -15,60 +15,60 @@ ms.collection:
 - M365-security-compliance
 f1.keywords:
 - NOCSH
-description: 了解如何在本地将 Exchange Server 配置为使用混合新式身份验证 (HMA) ，从而为您提供更安全的用户身份验证和授权。
+description: 了解如何在本地配置 Exchange Server 以使用混合新式验证 (HMA) ，为您提供更安全的用户身份验证和授权。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 8db74c04335e0846666991d74980648cedb4d9d7
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: 3841f429399500cfc24ebadc89c74d478d2290d9
+ms.sourcegitcommit: ec293978e951b09903b79e6642aa587824935e0c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47547126"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "49780280"
 ---
-# <a name="how-to-configure-exchange-server-on-premises-to-use-hybrid-modern-authentication"></a><span data-ttu-id="fb11f-103">如何配置本地 Exchange Server 以使用混合新式验证</span><span class="sxs-lookup"><span data-stu-id="fb11f-103">How to configure Exchange Server on-premises to use Hybrid Modern Authentication</span></span>
+# <a name="how-to-configure-exchange-server-on-premises-to-use-hybrid-modern-authentication"></a><span data-ttu-id="f849d-103">如何配置本地 Exchange Server 以使用混合新式验证</span><span class="sxs-lookup"><span data-stu-id="f849d-103">How to configure Exchange Server on-premises to use Hybrid Modern Authentication</span></span>
 
-<span data-ttu-id="fb11f-104">*本文适用于 Microsoft 365 企业版和 Office 365 企业版。*</span><span class="sxs-lookup"><span data-stu-id="fb11f-104">*This article applies to both Microsoft 365 Enterprise and Office 365 Enterprise.*</span></span>
+<span data-ttu-id="f849d-104">*此文章适用于 Microsoft 365 企业版和 Office 365 企业版。* </span><span class="sxs-lookup"><span data-stu-id="f849d-104">*This article applies to both Microsoft 365 Enterprise and Office 365 Enterprise.*</span></span>
 
-<span data-ttu-id="fb11f-105">混合新式身份验证 (HMA) 是一种提供更安全的用户身份验证和授权的身份管理方法，可用于 Exchange server 本地混合部署。</span><span class="sxs-lookup"><span data-stu-id="fb11f-105">Hybrid Modern Authentication (HMA) is a method of identity management that offers more secure user authentication and authorization, and is available for Exchange server on-premises hybrid deployments.</span></span>
+<span data-ttu-id="f849d-105">混合新式 (HMA) 是一种标识管理方法，可提供更安全的用户身份验证和授权，并且可用于 Exchange 服务器本地混合部署。</span><span class="sxs-lookup"><span data-stu-id="f849d-105">Hybrid Modern Authentication (HMA) is a method of identity management that offers more secure user authentication and authorization, and is available for Exchange server on-premises hybrid deployments.</span></span>
 
-## <a name="fyi"></a><span data-ttu-id="fb11f-106">仅供参考</span><span class="sxs-lookup"><span data-stu-id="fb11f-106">FYI</span></span>
+## <a name="fyi"></a><span data-ttu-id="f849d-106">FYI</span><span class="sxs-lookup"><span data-stu-id="f849d-106">FYI</span></span>
 
-<span data-ttu-id="fb11f-107">在开始之前，我称之为：</span><span class="sxs-lookup"><span data-stu-id="fb11f-107">Before we begin, I call:</span></span>
+<span data-ttu-id="f849d-107">在开始之前，我调用：</span><span class="sxs-lookup"><span data-stu-id="f849d-107">Before we begin, I call:</span></span>
 
-- <span data-ttu-id="fb11f-108">混合新式身份验证 \> HMA</span><span class="sxs-lookup"><span data-stu-id="fb11f-108">Hybrid Modern Authentication \> HMA</span></span>
+- <span data-ttu-id="f849d-108">混合新式验证 \> HMA</span><span class="sxs-lookup"><span data-stu-id="f849d-108">Hybrid Modern Authentication \> HMA</span></span>
 
-- <span data-ttu-id="fb11f-109">Exchange 本地 \> EXCH</span><span class="sxs-lookup"><span data-stu-id="fb11f-109">Exchange on-premises \> EXCH</span></span>
+- <span data-ttu-id="f849d-109">Exchange 本地 \> EXCH</span><span class="sxs-lookup"><span data-stu-id="f849d-109">Exchange on-premises \> EXCH</span></span>
 
-- <span data-ttu-id="fb11f-110">Exchange Online \> EXO</span><span class="sxs-lookup"><span data-stu-id="fb11f-110">Exchange Online \> EXO</span></span>
+- <span data-ttu-id="f849d-110">Exchange Online \> EXO</span><span class="sxs-lookup"><span data-stu-id="f849d-110">Exchange Online \> EXO</span></span>
 
-<span data-ttu-id="fb11f-111">此外， *如果本文中的图形有一个 "灰显" 或 "变暗" 的对象，则表示以灰色显示的元素不包含在 HMA 的特定配置中* 。</span><span class="sxs-lookup"><span data-stu-id="fb11f-111">Also, *if a graphic in this article has an object that's 'grayed-out' or 'dimmed' that means the element shown in gray is not included in HMA-specific configuration* .</span></span>
+<span data-ttu-id="f849d-111">此外，如果本文中的图形有一个"灰显"或"灰显"的对象，则意味着以灰色显示的元素不包含在 *HMA 特定的配置中*。</span><span class="sxs-lookup"><span data-stu-id="f849d-111">Also, *if a graphic in this article has an object that's 'grayed-out' or 'dimmed' that means the element shown in gray is not included in HMA-specific configuration*.</span></span>
 
-## <a name="enabling-hybrid-modern-authentication"></a><span data-ttu-id="fb11f-112">启用混合新式身份验证</span><span class="sxs-lookup"><span data-stu-id="fb11f-112">Enabling Hybrid Modern Authentication</span></span>
+## <a name="enabling-hybrid-modern-authentication"></a><span data-ttu-id="f849d-112">启用混合新式验证</span><span class="sxs-lookup"><span data-stu-id="f849d-112">Enabling Hybrid Modern Authentication</span></span>
 
-<span data-ttu-id="fb11f-113">启用 HMA 的打开方式：</span><span class="sxs-lookup"><span data-stu-id="fb11f-113">Turning HMA on means:</span></span>
+<span data-ttu-id="f849d-113">打开 HMA 意味着：</span><span class="sxs-lookup"><span data-stu-id="f849d-113">Turning on HMA means:</span></span>
 
-1. <span data-ttu-id="fb11f-114">在开始之前，请务必满足先决条件。</span><span class="sxs-lookup"><span data-stu-id="fb11f-114">Being sure you meet the prereqs before you begin.</span></span>
+1. <span data-ttu-id="f849d-114">确保在开始之前满足预先要求。</span><span class="sxs-lookup"><span data-stu-id="f849d-114">Being sure you meet the prereqs before you begin.</span></span>
 
-1. <span data-ttu-id="fb11f-115">由于很多 **先决条件** 对于 Skype for Business 和 exchange 都是常见的，因此 [混合新式身份验证概述和用于在本地 Skype For business 和 exchange 服务器上使用它的先决条件](hybrid-modern-auth-overview.md)。</span><span class="sxs-lookup"><span data-stu-id="fb11f-115">Since many **prerequisites** are common for both Skype for Business and Exchange, [Hybrid Modern Authentication overview and prerequisites for using it with on-premises Skype for Business and Exchange servers](hybrid-modern-auth-overview.md).</span></span> <span data-ttu-id="fb11f-116">在开始本文中的任何步骤之前，请执行此操作。</span><span class="sxs-lookup"><span data-stu-id="fb11f-116">Do this before you begin any of the steps in this article.</span></span>
+1. <span data-ttu-id="f849d-115">由于 **Skype** for Business 和 Exchange 都常见许多先决条件，混合新式验证概述以及将混合新式验证与本地 [Skype for Business](hybrid-modern-auth-overview.md)和 Exchange 服务器一同使用的先决条件。</span><span class="sxs-lookup"><span data-stu-id="f849d-115">Since many **prerequisites** are common for both Skype for Business and Exchange, [Hybrid Modern Authentication overview and prerequisites for using it with on-premises Skype for Business and Exchange servers](hybrid-modern-auth-overview.md).</span></span> <span data-ttu-id="f849d-116">在开始本文中的任一步骤之前，应执行上述操作。</span><span class="sxs-lookup"><span data-stu-id="f849d-116">Do this before you begin any of the steps in this article.</span></span>
 
-1. <span data-ttu-id="fb11f-117">在 Azure AD 中将本地 web 服务 Url 添加为 \*\*服务主体名称 (spn) \*\* 。</span><span class="sxs-lookup"><span data-stu-id="fb11f-117">Adding on-premises web service URLs as **Service Principal Names (SPNs)** in Azure AD.</span></span>
+1. <span data-ttu-id="f849d-117">将本地 Web 服务 URL 添加为 Azure AD (**SSP**) 服务主体名称。</span><span class="sxs-lookup"><span data-stu-id="f849d-117">Adding on-premises web service URLs as **Service Principal Names (SPNs)** in Azure AD.</span></span>
 
-1. <span data-ttu-id="fb11f-118">确保为 HMA 启用所有虚拟目录</span><span class="sxs-lookup"><span data-stu-id="fb11f-118">Ensuring all Virtual Directories are enabled for HMA</span></span>
+1. <span data-ttu-id="f849d-118">确保为 HMA 启用所有虚拟目录</span><span class="sxs-lookup"><span data-stu-id="f849d-118">Ensuring all Virtual Directories are enabled for HMA</span></span>
 
-1. <span data-ttu-id="fb11f-119">检查 EvoSTS Auth Server 对象</span><span class="sxs-lookup"><span data-stu-id="fb11f-119">Checking for the EvoSTS Auth Server object</span></span>
+1. <span data-ttu-id="f849d-119">检查 EvoSTS Auth Server 对象</span><span class="sxs-lookup"><span data-stu-id="f849d-119">Checking for the EvoSTS Auth Server object</span></span>
 
-1. <span data-ttu-id="fb11f-120">在 EXCH 中启用 HMA。</span><span class="sxs-lookup"><span data-stu-id="fb11f-120">Enabling HMA in EXCH.</span></span>
+1. <span data-ttu-id="f849d-120">在 EXCH 中启用 HMA。</span><span class="sxs-lookup"><span data-stu-id="f849d-120">Enabling HMA in EXCH.</span></span>
 
- <span data-ttu-id="fb11f-121">**注释** 您的 Office 版本是否支持 MA？</span><span class="sxs-lookup"><span data-stu-id="fb11f-121">**Note** Does your version of Office support MA?</span></span> <span data-ttu-id="fb11f-122">请参阅 [如何在 office 2013 和 office 2016 客户端应用程序中运行新式验证](modern-auth-for-office-2013-and-2016.md)。</span><span class="sxs-lookup"><span data-stu-id="fb11f-122">See [How modern authentication works for Office 2013 and Office 2016 client apps](modern-auth-for-office-2013-and-2016.md).</span></span>
+ <span data-ttu-id="f849d-121">**注意** Office 版本是否支持 MA？</span><span class="sxs-lookup"><span data-stu-id="f849d-121">**Note** Does your version of Office support MA?</span></span> <span data-ttu-id="f849d-122">请参阅 [新式验证如何适用于 Office 2013 和 Office 2016 客户端应用](modern-auth-for-office-2013-and-2016.md)。</span><span class="sxs-lookup"><span data-stu-id="f849d-122">See [How modern authentication works for Office 2013 and Office 2016 client apps](modern-auth-for-office-2013-and-2016.md).</span></span>
 
-## <a name="make-sure-you-meet-all-the-prerequisites"></a><span data-ttu-id="fb11f-123">请确保满足所有先决条件</span><span class="sxs-lookup"><span data-stu-id="fb11f-123">Make sure you meet all the prerequisites</span></span>
+## <a name="make-sure-you-meet-all-the-prerequisites"></a><span data-ttu-id="f849d-123">确保满足所有先决条件</span><span class="sxs-lookup"><span data-stu-id="f849d-123">Make sure you meet all the prerequisites</span></span>
 
-<span data-ttu-id="fb11f-124">由于很多先决条件对于 Skype for business 和 Exchange 都是常见的，因此请参阅 [混合新式身份验证概述和在本地 skype for business 和 exchange 服务器上使用它的先决条件](hybrid-modern-auth-overview.md)。</span><span class="sxs-lookup"><span data-stu-id="fb11f-124">Since many prerequisites are common for both Skype for Business and Exchange, review [Hybrid Modern Authentication overview and prerequisites for using it with on-premises Skype for Business and Exchange servers](hybrid-modern-auth-overview.md).</span></span> <span data-ttu-id="fb11f-125">在开始本文中的任何步骤  *之前*  ，请执行此操作。</span><span class="sxs-lookup"><span data-stu-id="fb11f-125">Do this  *before*  you begin any of the steps in this article.</span></span>
+<span data-ttu-id="f849d-124">由于 Skype for Business 和 Exchange 都常见许多先决条件，请查看混合新式验证概述以及将混合新式验证与本地 [Skype for Business](hybrid-modern-auth-overview.md)和 Exchange 服务器一同使用的先决条件。</span><span class="sxs-lookup"><span data-stu-id="f849d-124">Since many prerequisites are common for both Skype for Business and Exchange, review [Hybrid Modern Authentication overview and prerequisites for using it with on-premises Skype for Business and Exchange servers](hybrid-modern-auth-overview.md).</span></span> <span data-ttu-id="f849d-125">在开始  *本文中的*  任一步骤之前，应执行上述操作。</span><span class="sxs-lookup"><span data-stu-id="f849d-125">Do this  *before*  you begin any of the steps in this article.</span></span>
 
-## <a name="add-on-premises-web-service-urls-as-spns-in-azure-ad"></a><span data-ttu-id="fb11f-126">在 Azure AD 中将本地 web 服务 Url 添加为 Spn</span><span class="sxs-lookup"><span data-stu-id="fb11f-126">Add on-premises web service URLs as SPNs in Azure AD</span></span>
+## <a name="add-on-premises-web-service-urls-as-spns-in-azure-ad"></a><span data-ttu-id="f849d-126">在 Azure AD 中添加本地 Web 服务 URL 作为 SNS</span><span class="sxs-lookup"><span data-stu-id="f849d-126">Add on-premises web service URLs as SPNs in Azure AD</span></span>
 
-<span data-ttu-id="fb11f-127">运行将本地 web 服务 Url 分配为 Azure AD Spn 的命令。</span><span class="sxs-lookup"><span data-stu-id="fb11f-127">Run the commands that assign your on-premises web service URLs as Azure AD SPNs.</span></span> <span data-ttu-id="fb11f-128">在身份验证和授权过程中，客户端计算机和设备使用 Spn。</span><span class="sxs-lookup"><span data-stu-id="fb11f-128">SPNs are used by client machines and devices during authentication and authorization.</span></span> <span data-ttu-id="fb11f-129">可用于从本地连接到 Azure Active Directory (Azure AD) 的所有 Url 都必须在 Azure AD 中注册 (其中包括内部和外部命名空间) 。</span><span class="sxs-lookup"><span data-stu-id="fb11f-129">All the URLs that might be used to connect from on-premises to Azure Active Directory (Azure AD) must be registered in Azure AD (this includes both internal and external namespaces).</span></span>
+<span data-ttu-id="f849d-127">运行将本地 Web 服务 URL 分配为 Azure AD SNS 的命令。</span><span class="sxs-lookup"><span data-stu-id="f849d-127">Run the commands that assign your on-premises web service URLs as Azure AD SPNs.</span></span> <span data-ttu-id="f849d-128">SNS 在身份验证和授权期间由客户端计算机和设备使用。</span><span class="sxs-lookup"><span data-stu-id="f849d-128">SPNs are used by client machines and devices during authentication and authorization.</span></span> <span data-ttu-id="f849d-129">可能用于从本地连接到 Azure Active Directory (Azure AD) 的所有 URL 都必须在 Azure AD (这包括内部和外部命名空间) 。</span><span class="sxs-lookup"><span data-stu-id="f849d-129">All the URLs that might be used to connect from on-premises to Azure Active Directory (Azure AD) must be registered in Azure AD (this includes both internal and external namespaces).</span></span>
 
-<span data-ttu-id="fb11f-130">首先，收集您需要在 AAD 中添加的所有 Url。</span><span class="sxs-lookup"><span data-stu-id="fb11f-130">First, gather all the URLs that you need to add in AAD.</span></span> <span data-ttu-id="fb11f-131">在本地运行以下命令：</span><span class="sxs-lookup"><span data-stu-id="fb11f-131">Run these commands on-premises:</span></span>
+<span data-ttu-id="f849d-130">首先，收集需要在 AAD 中添加的所有 URL。</span><span class="sxs-lookup"><span data-stu-id="f849d-130">First, gather all the URLs that you need to add in AAD.</span></span> <span data-ttu-id="f849d-131">在本地运行以下命令：</span><span class="sxs-lookup"><span data-stu-id="f849d-131">Run these commands on-premises:</span></span>
 
 ```powershell
 Get-MapiVirtualDirectory | FL server,*url*
@@ -79,21 +79,21 @@ Get-AutodiscoverVirtualDirectory | FL server,*url*
 Get-OutlookAnywhere | FL server,*url*
 ```
 
-<span data-ttu-id="fb11f-132">确保客户端可以连接的 Url 在 AAD 中列为 HTTPS 服务主体名称。</span><span class="sxs-lookup"><span data-stu-id="fb11f-132">Ensure the URLs clients may connect to are listed as HTTPS service principal names in AAD.</span></span>
+<span data-ttu-id="f849d-132">确保 URL 客户端可能连接到的 URL 在 AAD 中列为 HTTPS 服务主体名称。</span><span class="sxs-lookup"><span data-stu-id="f849d-132">Ensure the URLs clients may connect to are listed as HTTPS service principal names in AAD.</span></span>
 
-1. <span data-ttu-id="fb11f-133">首先，使用 [这些说明](connect-to-microsoft-365-powershell.md)连接到 AAD。</span><span class="sxs-lookup"><span data-stu-id="fb11f-133">First, connect to AAD with [these instructions](connect-to-microsoft-365-powershell.md).</span></span>
+1. <span data-ttu-id="f849d-133">首先，使用这些 [说明连接到](connect-to-microsoft-365-powershell.md)AAD。</span><span class="sxs-lookup"><span data-stu-id="f849d-133">First, connect to AAD with [these instructions](connect-to-microsoft-365-powershell.md).</span></span>
 
-   <span data-ttu-id="fb11f-134">**注释** 您需要使用此页面中的 _connect-msolservice_ 选项，才能使用下面的命令。</span><span class="sxs-lookup"><span data-stu-id="fb11f-134">**Note** You need to use the _Connect-MsolService_ option from this page to be able to use the command below.</span></span>
+   <span data-ttu-id="f849d-134">**注意** 您需要使用此页面中的 _Connect-MsolService_ 选项才能使用下面的命令。</span><span class="sxs-lookup"><span data-stu-id="f849d-134">**Note** You need to use the _Connect-MsolService_ option from this page to be able to use the command below.</span></span>
 
-2. <span data-ttu-id="fb11f-135">对于与 Exchange 相关的 Url，请键入以下命令：</span><span class="sxs-lookup"><span data-stu-id="fb11f-135">For your Exchange related URLs, type the following command:</span></span>
+2. <span data-ttu-id="f849d-135">对于与 Exchange 相关的 URL，键入以下命令：</span><span class="sxs-lookup"><span data-stu-id="f849d-135">For your Exchange-related URLs, type the following command:</span></span>
 
    ```powershell
    Get-MsolServicePrincipal -AppPrincipalId 00000002-0000-0ff1-ce00-000000000000 | select -ExpandProperty ServicePrincipalNames
    ```
 
-   <span data-ttu-id="fb11f-136">记下 (和屏幕截图，以便稍后比较) 此命令的输出应包括 https://  *autodiscover.yourdomain.com*  和 Https://  *mail.yourdomain.com* URL，但主要是由以 00000002-0000-0Ff1-ce00-000000000000/开头的 spn 组成。</span><span class="sxs-lookup"><span data-stu-id="fb11f-136">Take note of (and screenshot for later comparison) the output of this command, which should include an https://  *autodiscover.yourdomain.com*  and https://  *mail.yourdomain.com* URL, but mostly consist of SPNs that begin with 00000002-0000-0ff1-ce00-000000000000/.</span></span> <span data-ttu-id="fb11f-137">如果缺少内部部署中的 https://Url，我们需要将这些特定记录添加到此列表中。</span><span class="sxs-lookup"><span data-stu-id="fb11f-137">If there are https:// URLs from your on-premises that are missing we will need to add those specific records to this list.</span></span>
+   <span data-ttu-id="f849d-136">记下 (和屏幕截图，用于稍后比较) 此命令的输出，该命令应包含 https://  *autodiscover.yourdomain.com*  和 https://  *mail.yourdomain.com* URL，但主要包括以 000000002-0000-0ff1-ce00-0000000000000/开头的 SSP。</span><span class="sxs-lookup"><span data-stu-id="f849d-136">Take note of (and screenshot for later comparison) the output of this command, which should include an https://  *autodiscover.yourdomain.com*  and https://  *mail.yourdomain.com* URL, but mostly consist of SPNs that begin with 00000002-0000-0ff1-ce00-000000000000/.</span></span> <span data-ttu-id="f849d-137">如果本地https:// URL 缺失，我们需要将这些特定记录添加到此列表。</span><span class="sxs-lookup"><span data-stu-id="f849d-137">If there are https:// URLs from your on-premises that are missing, we will need to add those specific records to this list.</span></span>
 
-3. <span data-ttu-id="fb11f-138">如果您在此列表中看不到内部和外部 MAPI/HTTP、EWS、ActiveSync、OAB 和自动发现记录，则必须使用下面的命令添加它们， (示例 Url 是 ' `mail.corp.contoso.com` ' 和 ' `owa.contoso.com` '，但您需要将 **示例 url 替换为您自己的** ) ：</span><span class="sxs-lookup"><span data-stu-id="fb11f-138">If you don't see your internal and external MAPI/HTTP, EWS, ActiveSync, OAB and Autodiscover records in this list, you must add them using the command below (the example URLs are '`mail.corp.contoso.com`' and '`owa.contoso.com`', but you'd **replace the example URLs with your own** ):</span></span>
+3. <span data-ttu-id="f849d-138">如果在此列表中看不到内部和外部 MAPI/HTTP、EWS、ActiveSync、OAB 和自动发现记录，则必须使用下面的命令添加它们 (示例 URL 为 `mail.corp.contoso.com` ""和 `owa.contoso.com` ""，但需要将示例 URL 替换为您自己的) ：</span><span class="sxs-lookup"><span data-stu-id="f849d-138">If you don't see your internal and external MAPI/HTTP, EWS, ActiveSync, OAB, and Autodiscover records in this list, you must add them using the command below (the example URLs are '`mail.corp.contoso.com`' and '`owa.contoso.com`', but you'd **replace the example URLs with your own**):</span></span>
 
    ```powershell
    $x= Get-MsolServicePrincipal -AppPrincipalId 00000002-0000-0ff1-ce00-000000000000
@@ -102,11 +102,11 @@ Get-OutlookAnywhere | FL server,*url*
    Set-MSOLServicePrincipal -AppPrincipalId 00000002-0000-0ff1-ce00-000000000000 -ServicePrincipalNames $x.ServicePrincipalNames
    ```
 
-4. <span data-ttu-id="fb11f-139">再次运行步骤2中的 New-msolserviceprincipal 命令，并查看输出，以验证新记录是否已添加。</span><span class="sxs-lookup"><span data-stu-id="fb11f-139">Verify your new records were added by running the Get-MsolServicePrincipal command from step 2 again, and looking through the output.</span></span> <span data-ttu-id="fb11f-140">将列表/屏幕截图从早到新的 Spn 列表进行比较 (您还可能会为记录) 中的新列表提供屏幕截图。</span><span class="sxs-lookup"><span data-stu-id="fb11f-140">Compare the list / screenshot from before to the new list of SPNs (you may also screenshot the new list for your records).</span></span> <span data-ttu-id="fb11f-141">如果成功，您将在列表中看到两个新的 Url。</span><span class="sxs-lookup"><span data-stu-id="fb11f-141">If you were successful, you will see the two new URLs in the list.</span></span> <span data-ttu-id="fb11f-142">根据我们的示例，Spn 列表现在将包含特定的 Url  `https://mail.corp.contoso.com`  和  `https://owa.contoso.com` 。</span><span class="sxs-lookup"><span data-stu-id="fb11f-142">Going by our example, the list of SPNs will now include the specific URLs  `https://mail.corp.contoso.com`  and  `https://owa.contoso.com`.</span></span>
+4. <span data-ttu-id="f849d-139">通过再次运行步骤 2 中的 Get-MsolServicePrincipal 命令并查看输出，验证是否添加了新记录。</span><span class="sxs-lookup"><span data-stu-id="f849d-139">Verify your new records were added by running the Get-MsolServicePrincipal command from step 2 again, and looking through the output.</span></span> <span data-ttu-id="f849d-140">将之前的列表/屏幕截图与新的 SNS 列表进行比较。</span><span class="sxs-lookup"><span data-stu-id="f849d-140">Compare the list / screenshot from before to the new list of SPNs.</span></span> <span data-ttu-id="f849d-141">您还可以为记录拍摄新列表的屏幕截图。</span><span class="sxs-lookup"><span data-stu-id="f849d-141">You might also take a screenshot of the new list for your records.</span></span> <span data-ttu-id="f849d-142">如果成功，你将在列表中看到两个新 URL。</span><span class="sxs-lookup"><span data-stu-id="f849d-142">If you were successful, you will see the two new URLs in the list.</span></span> <span data-ttu-id="f849d-143">以我们的示例为例，SNS 列表现在将包括特定的 URL 和  `https://mail.corp.contoso.com`  `https://owa.contoso.com` 。</span><span class="sxs-lookup"><span data-stu-id="f849d-143">Going by our example, the list of SPNs will now include the specific URLs  `https://mail.corp.contoso.com`  and  `https://owa.contoso.com`.</span></span>
 
-## <a name="verify-virtual-directories-are-properly-configured"></a><span data-ttu-id="fb11f-143">验证是否正确配置了虚拟目录</span><span class="sxs-lookup"><span data-stu-id="fb11f-143">Verify Virtual Directories are Properly Configured</span></span>
+## <a name="verify-virtual-directories-are-properly-configured"></a><span data-ttu-id="f849d-144">验证虚拟目录是否正确配置</span><span class="sxs-lookup"><span data-stu-id="f849d-144">Verify Virtual Directories are Properly Configured</span></span>
 
-<span data-ttu-id="fb11f-144">现在，验证是否已在 Outlook 的所有虚拟目录上通过运行以下命令，正确启用了 OAuth：</span><span class="sxs-lookup"><span data-stu-id="fb11f-144">Now verify OAuth is properly enabled in Exchange on all of the Virtual Directories Outlook might use by running the following commands:</span></span>
+<span data-ttu-id="f849d-145">现在，通过运行以下命令，验证 Outlook 可能使用的所有虚拟目录的 Exchange 中是否正确启用了 OAuth：</span><span class="sxs-lookup"><span data-stu-id="f849d-145">Now verify OAuth is properly enabled in Exchange on all of the Virtual Directories Outlook might use by running the following commands:</span></span>
 
 ```powershell
 Get-MapiVirtualDirectory | FL server,*url*,*auth*
@@ -115,7 +115,7 @@ Get-OABVirtualDirectory | FL server,*url*,*oauth*
 Get-AutoDiscoverVirtualDirectory | FL server,*oauth*
 ```
 
-<span data-ttu-id="fb11f-145">检查输出以确保每个 VDirs 上启用了 **OAuth** ，它将如下所示 (，要查看的关键内容是 "OAuth" ) ：</span><span class="sxs-lookup"><span data-stu-id="fb11f-145">Check the output to make sure **OAuth** is enabled on each of these VDirs, it will look something like this (and the key thing to look at is 'OAuth'):</span></span>
+<span data-ttu-id="f849d-146">检查输出以确保在这些 VDirs 中每个 VDirs 上都启用了 **OAuth，** 它看起来如下所示 (关键内容是"OAuth") ：</span><span class="sxs-lookup"><span data-stu-id="f849d-146">Check the output to make sure **OAuth** is enabled on each of these VDirs, it will look something like this (and the key thing to look at is 'OAuth'):</span></span>
 
 ```powershell
 Get-MapiVirtualDirectory | fl server,*url*,*auth*
@@ -128,46 +128,46 @@ InternalAuthenticationMethods : {Ntlm, OAuth, Negotiate}
 ExternalAuthenticationMethods : {Ntlm, OAuth, Negotiate}
 ```
 
-<span data-ttu-id="fb11f-146">如果任何服务器和四个虚拟目录中的任何一个都缺少 OAuth，则需要使用相关命令添加它，然后再继续 ([MapiVirtualDirectory](https://docs.microsoft.com/powershell/module/exchange/set-mapivirtualdirectory)、 [set-webservicesvirtualdirectory](https://docs.microsoft.com/powershell/module/exchange/set-webservicesvirtualdirectory)、 [set-oabvirtualdirectory](https://docs.microsoft.com/powershell/module/exchange/set-oabvirtualdirectory)和 [new-autodiscovervirtualdirectory](https://docs.microsoft.com/powershell/module/exchange/set-autodiscovervirtualdirectory)) 。</span><span class="sxs-lookup"><span data-stu-id="fb11f-146">If OAuth is missing from any server and any of the four virtual directories then you need to add it using the relevant commands before proceeding ([Set-MapiVirtualDirectory](https://docs.microsoft.com/powershell/module/exchange/set-mapivirtualdirectory), [Set-WebServicesVirtualDirectory](https://docs.microsoft.com/powershell/module/exchange/set-webservicesvirtualdirectory), [Set-OABVirtualDirectory](https://docs.microsoft.com/powershell/module/exchange/set-oabvirtualdirectory), and [Set-AutodiscoverVirtualDirectory](https://docs.microsoft.com/powershell/module/exchange/set-autodiscovervirtualdirectory)).</span></span>
+<span data-ttu-id="f849d-147">如果任何服务器和四个虚拟目录中的任一虚拟目录中缺少 OAuth，则需要在继续 (Set-MapiVirtualDirectory、Set-WebServicesVirtualDirectory、Set-OABVirtualDirectory 和[](https://docs.microsoft.com/powershell/module/exchange/set-mapivirtualdirectory)[](https://docs.microsoft.com/powershell/module/exchange/set-webservicesvirtualdirectory)[Set-AutodiscoverVirtualDirectory](https://docs.microsoft.com/powershell/module/exchange/set-autodiscovervirtualdirectory)) 之前，使用相关命令添加 OAuth。 [](https://docs.microsoft.com/powershell/module/exchange/set-oabvirtualdirectory)</span><span class="sxs-lookup"><span data-stu-id="f849d-147">If OAuth is missing from any server and any of the four virtual directories, you need to add it using the relevant commands before proceeding ([Set-MapiVirtualDirectory](https://docs.microsoft.com/powershell/module/exchange/set-mapivirtualdirectory), [Set-WebServicesVirtualDirectory](https://docs.microsoft.com/powershell/module/exchange/set-webservicesvirtualdirectory), [Set-OABVirtualDirectory](https://docs.microsoft.com/powershell/module/exchange/set-oabvirtualdirectory), and [Set-AutodiscoverVirtualDirectory](https://docs.microsoft.com/powershell/module/exchange/set-autodiscovervirtualdirectory)).</span></span>
 
-## <a name="confirm-the-evosts-auth-server-object-is-present"></a><span data-ttu-id="fb11f-147">确认 EvoSTS Auth Server 对象是否存在</span><span class="sxs-lookup"><span data-stu-id="fb11f-147">Confirm the EvoSTS Auth Server Object is Present</span></span>
+## <a name="confirm-the-evosts-auth-server-object-is-present"></a><span data-ttu-id="f849d-148">确认 EvoSTS 身份验证服务器对象存在</span><span class="sxs-lookup"><span data-stu-id="f849d-148">Confirm the EvoSTS Auth Server Object is Present</span></span>
 
-<span data-ttu-id="fb11f-148">返回到此最后一个命令的内部部署 Exchange 命令行管理程序。</span><span class="sxs-lookup"><span data-stu-id="fb11f-148">Return to the on-premises Exchange Management Shell for this last command.</span></span> <span data-ttu-id="fb11f-149">现在，您可以验证您的内部部署是否具有 evoSTS 身份验证提供程序的条目：</span><span class="sxs-lookup"><span data-stu-id="fb11f-149">Now you can validate that your on-premises has an entry for the evoSTS authentication provider:</span></span>
+<span data-ttu-id="f849d-149">返回最后一个命令的本地 Exchange 命令行管理程序。</span><span class="sxs-lookup"><span data-stu-id="f849d-149">Return to the on-premises Exchange Management Shell for this last command.</span></span> <span data-ttu-id="f849d-150">现在，您可以验证您的本地是否具有 evoSTS 身份验证提供程序的条目：</span><span class="sxs-lookup"><span data-stu-id="f849d-150">Now you can validate that your on-premises has an entry for the evoSTS authentication provider:</span></span>
 
 ```powershell
 Get-AuthServer | where {$_.Name -eq "EvoSts"}
 ```
 
-<span data-ttu-id="fb11f-150">您的输出应显示名称 EvoSts 的 Get-authserver，并且 "已启用" 状态应为 True。</span><span class="sxs-lookup"><span data-stu-id="fb11f-150">Your output should show an AuthServer of the Name EvoSts and the 'Enabled' state should be True.</span></span> <span data-ttu-id="fb11f-151">如果看不到此内容，应下载并运行 "混合配置" 向导的最新版本。</span><span class="sxs-lookup"><span data-stu-id="fb11f-151">If you don't see this, you should download and run the most recent version of the Hybrid Configuration Wizard.</span></span>
+<span data-ttu-id="f849d-151">输出应显示名称 EvoSts 的 AuthServer，并且"已启用"状态应为 True。</span><span class="sxs-lookup"><span data-stu-id="f849d-151">Your output should show an AuthServer of the Name EvoSts and the 'Enabled' state should be True.</span></span> <span data-ttu-id="f849d-152">如果未看到此内容，应下载并运行最新版本的混合配置向导。</span><span class="sxs-lookup"><span data-stu-id="f849d-152">If you don't see this, you should download and run the most recent version of the Hybrid Configuration Wizard.</span></span>
 
- <span data-ttu-id="fb11f-152">**重要说明** 如果您的环境中运行的是 Exchange 2010，则不会创建 EvoSTS 身份验证提供程序。</span><span class="sxs-lookup"><span data-stu-id="fb11f-152">**Important** If you're running Exchange 2010 in your environment, the EvoSTS authentication provider won't be created.</span></span>
+ <span data-ttu-id="f849d-153">**重要** 如果在环境中运行 Exchange 2010，将不会创建 EvoSTS 身份验证提供程序。</span><span class="sxs-lookup"><span data-stu-id="f849d-153">**Important** If you're running Exchange 2010 in your environment, the EvoSTS authentication provider won't be created.</span></span>
 
-## <a name="enable-hma"></a><span data-ttu-id="fb11f-153">启用 HMA</span><span class="sxs-lookup"><span data-stu-id="fb11f-153">Enable HMA</span></span>
+## <a name="enable-hma"></a><span data-ttu-id="f849d-154">启用 HMA</span><span class="sxs-lookup"><span data-stu-id="f849d-154">Enable HMA</span></span>
 
-<span data-ttu-id="fb11f-154">在 Exchange 命令行管理程序（本地）中运行以下命令：</span><span class="sxs-lookup"><span data-stu-id="fb11f-154">Run the following command in the Exchange Management Shell, on-premises:</span></span>
+<span data-ttu-id="f849d-155">在本地 Exchange 命令行管理程序 中运行以下命令：</span><span class="sxs-lookup"><span data-stu-id="f849d-155">Run the following command in the Exchange Management Shell, on-premises:</span></span>
 
 ```powershell
 Set-AuthServer -Identity EvoSTS -IsDefaultAuthorizationEndpoint $true
 Set-OrganizationConfig -OAuth2ClientProfileEnabled $true
 ```
 
-## <a name="verify"></a><span data-ttu-id="fb11f-155">Verify</span><span class="sxs-lookup"><span data-stu-id="fb11f-155">Verify</span></span>
+## <a name="verify"></a><span data-ttu-id="f849d-156">验证</span><span class="sxs-lookup"><span data-stu-id="f849d-156">Verify</span></span>
 
-<span data-ttu-id="fb11f-156">启用 HMA 后，客户端的下一次登录将使用新的身份验证流。</span><span class="sxs-lookup"><span data-stu-id="fb11f-156">Once you enable HMA, a client's next login will use the new auth flow.</span></span> <span data-ttu-id="fb11f-157">请注意，仅打开 HMA 不会触发任何客户端的重新身份验证。</span><span class="sxs-lookup"><span data-stu-id="fb11f-157">Note that just turning on HMA won't trigger a re-authentication for any client.</span></span> <span data-ttu-id="fb11f-158">客户端将根据身份验证令牌和/或证书的有效期重新进行身份验证。</span><span class="sxs-lookup"><span data-stu-id="fb11f-158">The clients re-authenticate based on the lifetime of the auth tokens and/or certs they have.</span></span>
+<span data-ttu-id="f849d-157">启用 HMA 后，客户端的下一个登录名将使用新的身份验证流。</span><span class="sxs-lookup"><span data-stu-id="f849d-157">Once you enable HMA, a client's next login will use the new auth flow.</span></span> <span data-ttu-id="f849d-158">请注意，仅打开 HMA 不会触发任何客户端的重新身份验证。</span><span class="sxs-lookup"><span data-stu-id="f849d-158">Note that just turning on HMA won't trigger a reauthentication for any client.</span></span> <span data-ttu-id="f849d-159">客户端根据其拥有身份验证令牌和/或证书的生存期重新进行身份验证。</span><span class="sxs-lookup"><span data-stu-id="f849d-159">The clients reauthenticate based on the lifetime of the auth tokens and/or certs they have.</span></span>
 
-<span data-ttu-id="fb11f-159">您还应按住 CTRL 键，同时右键单击 Outlook 客户端的图标 (也在 Windows 通知托盘) 中，然后单击 "连接状态"。</span><span class="sxs-lookup"><span data-stu-id="fb11f-159">You should also hold down the CTRL key at the same time you right click the icon for the Outlook client (also in the Windows Notifications tray) and click 'Connection Status'.</span></span> <span data-ttu-id="fb11f-160">针对 "身份验证" 类型的 "载荷" 查找客户端的 SMTP 地址 \* ，该类型表示在 OAuth 中使用的持有者令牌。</span><span class="sxs-lookup"><span data-stu-id="fb11f-160">Look for the client's SMTP address against an 'Authn' type of 'Bearer\*', which represents the bearer token used in OAuth.</span></span>
+<span data-ttu-id="f849d-160">在右键单击 Outlook 客户端图标的同时，还应按住 Ctrl 键 (Windows 通知任务栏) 然后单击"连接状态"。</span><span class="sxs-lookup"><span data-stu-id="f849d-160">You should also hold down the CTRL key at the same time you right-click the icon for the Outlook client (also in the Windows Notifications tray) and click 'Connection Status'.</span></span> <span data-ttu-id="f849d-161">针对"Bearer"类型的"Authn"类型查找客户端的 SMTP 地址，该类型表示 OAuth 中使用的记 \* 名令牌。</span><span class="sxs-lookup"><span data-stu-id="f849d-161">Look for the client's SMTP address against an 'Authn' type of 'Bearer\*', which represents the bearer token used in OAuth.</span></span>
 
- <span data-ttu-id="fb11f-161">**注释** 是否需要使用 HMA 配置 Skype for Business？</span><span class="sxs-lookup"><span data-stu-id="fb11f-161">**Note** Need to configure Skype for Business with HMA?</span></span> <span data-ttu-id="fb11f-162">您将需要两个文章：一个列出 [受支持的拓扑](https://docs.microsoft.com/skypeforbusiness/plan-your-deployment/modern-authentication/topologies-supported)，另一个演示 [如何执行配置](configure-skype-for-business-for-hybrid-modern-authentication.md)。</span><span class="sxs-lookup"><span data-stu-id="fb11f-162">You'll need two articles: One that lists [supported topologies](https://docs.microsoft.com/skypeforbusiness/plan-your-deployment/modern-authentication/topologies-supported), and one that shows you [how to do the configuration](configure-skype-for-business-for-hybrid-modern-authentication.md).</span></span>
+ <span data-ttu-id="f849d-162">**注意** 需要配置具有 HMA 的 Skype for Business？</span><span class="sxs-lookup"><span data-stu-id="f849d-162">**Note** Need to configure Skype for Business with HMA?</span></span> <span data-ttu-id="f849d-163">你将需要两篇文章：一 [篇文章列出支持的](https://docs.microsoft.com/skypeforbusiness/plan-your-deployment/modern-authentication/topologies-supported)拓扑，另一篇文章演示如何 [执行配置](configure-skype-for-business-for-hybrid-modern-authentication.md)。</span><span class="sxs-lookup"><span data-stu-id="f849d-163">You'll need two articles: One that lists [supported topologies](https://docs.microsoft.com/skypeforbusiness/plan-your-deployment/modern-authentication/topologies-supported), and one that shows you [how to do the configuration](configure-skype-for-business-for-hybrid-modern-authentication.md).</span></span>
 
-## <a name="using-hybrid-modern-authentication-with-outlook-for-ios-and-android"></a><span data-ttu-id="fb11f-163">将混合新式验证用于 Outlook for iOS 和 Outlook for Android</span><span class="sxs-lookup"><span data-stu-id="fb11f-163">Using hybrid Modern Authentication with Outlook for iOS and Android</span></span>
+## <a name="using-hybrid-modern-authentication-with-outlook-for-ios-and-android"></a><span data-ttu-id="f849d-164">将混合新式验证用于 Outlook for iOS 和 Outlook for Android</span><span class="sxs-lookup"><span data-stu-id="f849d-164">Using hybrid Modern Authentication with Outlook for iOS and Android</span></span>
 
-<span data-ttu-id="fb11f-164">如果您是在 TCP 443 上使用 Exchange server 的本地客户，请为以下 IP 范围列入白名单：</span><span class="sxs-lookup"><span data-stu-id="fb11f-164">If you are an on-premises customer using Exchange server on TCP 443, please whitelist the following IP ranges:</span></span>
+<span data-ttu-id="f849d-165">如果您是使用 TCP 443 上的 Exchange 服务器本地客户，请绕过以下 IP 范围的流量处理：</span><span class="sxs-lookup"><span data-stu-id="f849d-165">If you are an on-premises customer using Exchange server on TCP 443, bypass traffic processing for the following IP ranges:</span></span>
 
 ```text
 52.125.128.0/20
 52.127.96.0/23
 ```
 
-## <a name="related-topics"></a><span data-ttu-id="fb11f-165">相关主题</span><span class="sxs-lookup"><span data-stu-id="fb11f-165">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="f849d-166">相关主题</span><span class="sxs-lookup"><span data-stu-id="f849d-166">Related topics</span></span>
 
-[<span data-ttu-id="fb11f-166">从 Office 365 专用/ITAR 到 vNext 的转换的新式身份验证配置要求</span><span class="sxs-lookup"><span data-stu-id="fb11f-166">Modern Authentication configuration requirements for transition from Office 365 dedicated/ITAR to vNext</span></span>](https://docs.microsoft.com/exchange/troubleshoot/modern-authentication/modern-authentication-configuration)
+[<span data-ttu-id="f849d-167">从 Office 365 专用/ITAR 转换到 vNext 的新式验证配置要求</span><span class="sxs-lookup"><span data-stu-id="f849d-167">Modern Authentication configuration requirements for transition from Office 365 dedicated/ITAR to vNext</span></span>](https://docs.microsoft.com/exchange/troubleshoot/modern-authentication/modern-authentication-configuration)

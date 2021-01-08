@@ -22,29 +22,29 @@ search.appverid:
 - MET150
 - MOE150
 description: 了解如何购买新的 Microsoft 365 商业版许可证。
-ms.openlocfilehash: 2f881881bc55659d5ba4cd7280111a15bf0f9ff3
-ms.sourcegitcommit: ddfb4f3e34deb733e8625e845e4dfd1fcc066ceb
+ms.openlocfilehash: a4bc66188b064227821ddc66cc764c83caad5f64
+ms.sourcegitcommit: 4482c174e0e68e0fbbc7ad9ef6b0e78dc34ac85a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "49771952"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "49784237"
 ---
-# <a name="buy-microsoft-365-licenses"></a><span data-ttu-id="b5f1c-103">购买 Microsoft 365 许可证</span><span class="sxs-lookup"><span data-stu-id="b5f1c-103">Buy Microsoft 365 licenses</span></span>
+# <a name="buy-microsoft-365-licenses"></a><span data-ttu-id="50bf6-103">购买 Microsoft 365 许可证</span><span class="sxs-lookup"><span data-stu-id="50bf6-103">Buy Microsoft 365 licenses</span></span>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4KWvE?autoplay=false]
 
-<span data-ttu-id="b5f1c-104">添加新用户时，需要为这些用户购买更多许可证。</span><span class="sxs-lookup"><span data-stu-id="b5f1c-104">As you add new users, you will need to purchase more licenses for those users.</span></span>
+<span data-ttu-id="50bf6-104">添加新用户时，需要为这些用户购买更多 Microsoft 365 许可证。</span><span class="sxs-lookup"><span data-stu-id="50bf6-104">As you add new users, you will need to purchase more Microsoft 365 licenses for those users.</span></span>
 
-## <a name="try-it"></a><span data-ttu-id="b5f1c-105">试一试！</span><span class="sxs-lookup"><span data-stu-id="b5f1c-105">Try it!</span></span>
+## <a name="try-it"></a><span data-ttu-id="50bf6-105">试一试！</span><span class="sxs-lookup"><span data-stu-id="50bf6-105">Try it!</span></span>
 
-1. <span data-ttu-id="b5f1c-106">在 Microsoft 365 管理中心中 **，选择"** 计费 **"，选择"你的产品**"，然后选择你的订阅。</span><span class="sxs-lookup"><span data-stu-id="b5f1c-106">In the Microsoft 365 admin center, choose **Billing**, **Your Products**, then select your subscription.</span></span>
-1. <span data-ttu-id="b5f1c-107">选择 **"购买许可证"。**</span><span class="sxs-lookup"><span data-stu-id="b5f1c-107">Choose **Buy licenses**.</span></span>
-1. <span data-ttu-id="b5f1c-108">输入要购买的许可证数量。</span><span class="sxs-lookup"><span data-stu-id="b5f1c-108">Enter the number of licenses you want to buy.</span></span>
-1. <span data-ttu-id="b5f1c-109">选择“**保存**”。</span><span class="sxs-lookup"><span data-stu-id="b5f1c-109">Select **Save**.</span></span>
-1. <span data-ttu-id="b5f1c-110">然后关闭窗口。</span><span class="sxs-lookup"><span data-stu-id="b5f1c-110">Then close the window.</span></span>
-1. <span data-ttu-id="b5f1c-111">新许可证将添加到订阅中。</span><span class="sxs-lookup"><span data-stu-id="b5f1c-111">The new licenses are added to your subscription.</span></span>
-1. <span data-ttu-id="b5f1c-112">若要分配新许可证，请选择"分配 **许可证"。**</span><span class="sxs-lookup"><span data-stu-id="b5f1c-112">To assign the new licenses, select **Assign licenses**.</span></span>
-1. <span data-ttu-id="b5f1c-113">然后， **再次分配** 许可证。</span><span class="sxs-lookup"><span data-stu-id="b5f1c-113">Then, **Assign licenses** again.</span></span>
-1. <span data-ttu-id="b5f1c-114">键入要为其分配许可证的用户的名称，然后选择该名称。</span><span class="sxs-lookup"><span data-stu-id="b5f1c-114">Type the name of the user you want to assign the license to, then select the name.</span></span>
-1. <span data-ttu-id="b5f1c-115">确定希望用户拥有的应用或服务，然后选择"分配 **"。**</span><span class="sxs-lookup"><span data-stu-id="b5f1c-115">Decide which apps or services you want the user to have, then select **Assign**.</span></span>
-1. <span data-ttu-id="b5f1c-116">现在，许可证已分配给用户。</span><span class="sxs-lookup"><span data-stu-id="b5f1c-116">The license is now assigned to the user.</span></span>
+1. <span data-ttu-id="50bf6-106">在 Microsoft 365 管理中心中 **，选择"** 计费 **"，选择"你的产品**"，然后选择你的订阅。</span><span class="sxs-lookup"><span data-stu-id="50bf6-106">In the Microsoft 365 admin center, choose **Billing**, **Your Products**, then select your subscription.</span></span>
+1. <span data-ttu-id="50bf6-107">选择 **"购买许可证"。**</span><span class="sxs-lookup"><span data-stu-id="50bf6-107">Choose **Buy licenses**.</span></span>
+1. <span data-ttu-id="50bf6-108">输入要购买的许可证数量。</span><span class="sxs-lookup"><span data-stu-id="50bf6-108">Enter the number of licenses you want to buy.</span></span>
+1. <span data-ttu-id="50bf6-109">选择“**保存**”。</span><span class="sxs-lookup"><span data-stu-id="50bf6-109">Select **Save**.</span></span>
+1. <span data-ttu-id="50bf6-110">然后关闭窗口。</span><span class="sxs-lookup"><span data-stu-id="50bf6-110">Then close the window.</span></span>
+1. <span data-ttu-id="50bf6-111">新许可证将添加到订阅中。</span><span class="sxs-lookup"><span data-stu-id="50bf6-111">The new licenses are added to your subscription.</span></span>
+1. <span data-ttu-id="50bf6-112">若要分配新许可证，请选择"分配 **许可证"。**</span><span class="sxs-lookup"><span data-stu-id="50bf6-112">To assign the new licenses, select **Assign licenses**.</span></span>
+1. <span data-ttu-id="50bf6-113">然后， **再次分配** 许可证。</span><span class="sxs-lookup"><span data-stu-id="50bf6-113">Then, **Assign licenses** again.</span></span>
+1. <span data-ttu-id="50bf6-114">键入要为其分配许可证的用户的名称，然后选择该名称。</span><span class="sxs-lookup"><span data-stu-id="50bf6-114">Type the name of the user you want to assign the license to, then select the name.</span></span>
+1. <span data-ttu-id="50bf6-115">确定希望用户拥有的应用或服务，然后选择"分配 **"。**</span><span class="sxs-lookup"><span data-stu-id="50bf6-115">Decide which apps or services you want the user to have, then select **Assign**.</span></span>
+1. <span data-ttu-id="50bf6-116">现在，许可证已分配给用户。</span><span class="sxs-lookup"><span data-stu-id="50bf6-116">The license is now assigned to the user.</span></span>
