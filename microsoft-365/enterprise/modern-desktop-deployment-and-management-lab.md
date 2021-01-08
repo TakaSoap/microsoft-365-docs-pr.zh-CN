@@ -15,28 +15,28 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解有关 Windows 和 Office 部署实验室工具包的信息，以及访问的位置。
-ms.openlocfilehash: 4ee3663e326dc5a7fbefce06a696cca6a4b060a9
-ms.sourcegitcommit: 4cbb4ec26f022f5f9d9481f55a8a6ee8406968d2
+ms.openlocfilehash: f7f6dcaa9c1e007f6b83f897539bdabe9faa0b96
+ms.sourcegitcommit: ec293978e951b09903b79e6642aa587824935e0c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49527451"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "49780552"
 ---
 # <a name="windows-and-office-deployment-lab-kit"></a>Windows 和 Office 部署实验室工具包
 
-这些实验旨在帮助您规划、测试和验证运行 Windows 10 企业版和 Microsoft 365 应用程序的桌面的部署和管理。 使用 Microsoft 终结点配置管理器、桌面分析、Office 自定义工具、OneDrive、Windows Autopilot 等的实验室封面。
+Windows 和 Office 部署实验室工具包旨在帮助你规划、测试和验证运行 Windows 10 企业版和 Microsoft 365 企业应用版桌面的部署和管理。 工具包中的实验室包括使用 Microsoft Endpoint Configuration Manager、桌面分析、Office 自定义工具、OneDrive、Windows Autopilot 等。
 
-强烈建议将此工具包用于准备进行 Windows 8 升级的组织，如果你当前使用的是 Windows 10、Microsoft 365 的企业相关应用程序 (以前的 Office 365 专业增强版) 或 Office 2019，则也适用此工具包。 此外，作为独立环境，该实验室是探索部署工具更新和测试与部署相关的自动化的理想选择。
+强烈建议准备将 Windows 8.1 升级到 Windows 10 的组织使用此工具包。 如果你当前使用的是 Windows 10、Microsoft 365 企业应用版 (以前是 Office 365 专业增强版) 或 Office 2019，它同样适用。 作为隔离环境，生成的实验室非常适合探索部署工具更新和测试与部署相关的自动化。
 
 [下载 Windows 和 Office 部署实验室工具包](https://www.microsoft.com/evalcenter/evaluate-lab-kit)。
 
 ## <a name="a-complete-lab-environment"></a>完整的实验室环境
 
-实验室为你提供了自动预配的虚拟实验室环境，其中包括域加入桌面客户端、域控制器、Internet 网关和完全配置的配置管理器实例。 实验室包含以下产品的最新评估版本：
+该工具包可为您提供自动预配的虚拟实验室环境，包括加入域的桌面客户端、域控制器、Internet 网关和完全配置的 Configuration Manager 实例。 该工具包包含以下产品的最新评估版本：
 
-  - 新增内容！ Windows 10 企业版，版本20H2
+  - 新增内容！ Windows 10 企业版版本 20H2
   - Windows 7 企业版
-  - Microsoft 终结点配置管理器，版本 2010 *
+  - Microsoft Endpoint Configuration Manager 版本 2010*
   - 适用于 Windows 10 的 Windows 评估和部署工具包
   - Microsoft Deployment Toolkit
   - Microsoft Application Virtualization (App-V)
@@ -44,57 +44,62 @@ ms.locfileid: "49527451"
   - Windows Server 
   - Microsoft SQL Server 
 
-此外，该实验室旨在与以下试用版连接： 
+生成的实验室旨在连接到以下试用版： 
 
   - Microsoft 365 E5
-  - 使用企业移动性 + 安全性 (EMS) 的 Office 365 企业版 E5
+  - 具有企业移动性 + 安全性的 Office 365 E5 (EMS) 
 
 ## <a name="step-by-step-labs"></a>分步实验室
 
 详细的实验室指南会带你了解多个部署和管理方案。 实验室已针对 Intune 和 Configuration Manager 的最新版本进行了更新。 
 
-### <a name="plan-and-prepare-infrastructure"></a>规划和准备基础结构 
+### <a name="plan-and-prepare-infrastructure"></a>计划和准备基础结构 
 - 桌面分析 
-- 云管理网关 & 云分发点 
-- 租户附加、共同管理和切换工作负载  
+- 云管理网关&云分发点 
+- 租户附加、共同管理和切换工作负载 
 - 远程访问 (VPN) 
 
 ### <a name="prepare-configuration"></a>准备配置   
+
 - 优化 Windows 10 更新传递   
 - 使用组策略维护 Windows 10
-- 使用 Microsoft Intune 为 Windows 10 提供服务   
-- 使用配置管理器为 Windows 10 提供服务   
-- 使用 Configuration Manager 为面向企业的 Microsoft 365 应用提供服务   
-- 使用 Intune 为适用于企业的 Microsoft 365 应用提供服务  
+- 使用 Microsoft Intune 维护 Windows 10   
+- 使用 Configuration Manager 维护 Windows 10   
+- 使用 Configuration Manager 为 Microsoft 365 企业应用版提供服务   
+- 使用 Intune 为 Microsoft 365 企业应用版提供服务  
 - 安全性和合规性   
 
 ### <a name="prepare-applications"></a>准备应用程序    
-- 适用于 Office 的准备情况工具包  
-- MSIX 打包和转换 Win32 应用程序   
+
+- Office Toolkit准备情况  
+- Win32 应用程序的 MSIX 打包和转换   
 
 ### <a name="deploy-windows-10"></a>部署 Windows 10   
+
 - Configuration Manager 中的 OS 部署任务序列
-- MDT 中的 OS 部署任务序列   
+- MICROSOFT Deployment Toolkit (MDT) 
 - Windows Autopilot
 - 部署和管理新的 Microsoft Edge  
 
 ### <a name="deploy-microsoft-365-apps-for-enterprise"></a>部署 Microsoft 365 企业应用版    
+
 - 云托管部署  
 - 本地托管部署    
-- Microsoft 365 在非 AD 加入设备上部署企业版的应用程序 
-- 使用配置管理器的企业托管部署
+- 未加入 AD 的设备的 Microsoft 365 企业应用版部署 
+- 使用 Configuration Manager 的企业托管部署
 - 使用 Microsoft Intune 的企业托管部署  
-- 使用 Microsoft Intune 进行 LOB 部署和管理
-- 部署 Microsoft 团队
+- 使用 Microsoft Intune 部署和管理 LOB
+- 部署 Microsoft Teams
 
 ### <a name="deploy-windows-virtual-desktop"></a>部署 Windows 虚拟桌面  
+
 - 准备、部署、优化
  
-## <a name="download-the-windows-and-office-deployment-lab-kit"></a>下载 Windows 和 Office 部署实验室工具包
+## <a name="where-to-find-the-windows-and-office-deployment-lab-kit"></a>在哪里可以找到 Windows 和 Office 部署实验室工具包
 
 [下载 Windows 和 Office 部署实验室工具包](https://www.microsoft.com/evalcenter/evaluate-lab-kit)。
 
-* 使用在控制台更新中可将已安装的基准版本2002更新为版本2010。 请使用广泛的带宽下载此内容以增强你的下载体验，并允许自动预配的30-45 分钟。 实验室环境要求至少有 16 GB 的可用内存和150GB 的可用磁盘空间。 为获得最佳性能，建议 32 GB 的可用内存和300GB 的可用空间。 实验室的有效期为2021年2月7日。 在过期之前将发布新版本。
+* 可以使用控制台内更新将已安装的基线版本 2002 更新到版本 2010。 请使用宽带宽 Internet 连接下载此内容，并允许 30-45 分钟进行自动预配。 实验室环境至少需要 16 GB 的可用内存和 150 GB 的可用磁盘空间。 为获得最佳性能，建议使用 32 GB 的可用内存和 300 GB 的可用空间。 工具包将于 2021 年 2 月 7 日过期。 新版本将在过期前发布。
 
 ## <a name="additional-guidance"></a>其他指南
 
@@ -102,20 +107,20 @@ ms.locfileid: "49527451"
 
   - [Microsoft Endpoint Configuration Manager 操作系统部署](https://docs.microsoft.com/mem/configmgr/osd/understand/introduction-to-operating-system-deployment)
 
-  - [<span class="underline">Windows 10 部署计划</span>](https://docs.microsoft.com/windows/deployment/planning/index)
+  - [Windows 10 部署计划](https://docs.microsoft.com/windows/deployment/planning/index)
 
-  - [<span class="underline">Microsoft 365 应用部署指南</span>](https://docs.microsoft.com/deployoffice/deployment-guide-microsoft-365-apps)
+  - [Microsoft 365 应用部署指南](https://docs.microsoft.com/deployoffice/deployment-guide-microsoft-365-apps)
 
-  - [<span class="underline">Intune 入门</span>](https://docs.microsoft.com/intune/get-started-evaluation)
+  - [Intune 入门](https://docs.microsoft.com/intune/get-started-evaluation)
 
 ## <a name="related-resources"></a>相关资源
 
-  - [<span class="underline">Microsoft 365 简介</span>](https://www.microsoft.com/microsoft-365/default.aspx)
+  - [Microsoft 365 简介](https://www.microsoft.com/microsoft-365/default.aspx)
 
-  - [<span class="underline">Office 365 企业版</span>](https://products.office.com/business/office)
+  - [Office 365 企业版](https://products.office.com/business/office)
 
-  - [<span class="underline">企业移动性 + 安全性简介</span>](https://www.microsoft.com/cloud-platform/enterprise-mobility-security)
+  - [企业移动性 + 安全性简介](https://www.microsoft.com/cloud-platform/enterprise-mobility-security)
 
-  - [<span class="underline">Windows 10 企业版</span>](https://www.microsoft.com/WindowsForBusiness/windows-for-enterprise)
+  - [Windows 10 企业版](https://www.microsoft.com/WindowsForBusiness/windows-for-enterprise)
 
-  - [<span class="underline">Windows 10 中小型企业版</span>](https://www.microsoft.com/WindowsForBusiness/windows-for-small-business)
+  - [Windows 10 中小型企业版](https://www.microsoft.com/WindowsForBusiness/windows-for-small-business)

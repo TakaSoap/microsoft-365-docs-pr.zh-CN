@@ -22,18 +22,18 @@ search.appverid:
 - MET150
 - MOE150
 description: 了解如何购买新的 Microsoft 365 商业版许可证。
-ms.openlocfilehash: 2f881881bc55659d5ba4cd7280111a15bf0f9ff3
-ms.sourcegitcommit: ddfb4f3e34deb733e8625e845e4dfd1fcc066ceb
+ms.openlocfilehash: a4bc66188b064227821ddc66cc764c83caad5f64
+ms.sourcegitcommit: 4482c174e0e68e0fbbc7ad9ef6b0e78dc34ac85a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "49771952"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "49784237"
 ---
 # <a name="buy-microsoft-365-licenses"></a>购买 Microsoft 365 许可证
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4KWvE?autoplay=false]
 
-添加新用户时，需要为这些用户购买更多许可证。
+添加新用户时，需要为这些用户购买更多 Microsoft 365 许可证。
 
 ## <a name="try-it"></a>试一试！
 

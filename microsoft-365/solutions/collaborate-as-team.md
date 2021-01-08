@@ -17,12 +17,12 @@ ms.custom:
 localization_priority: Normal
 f1.keywords: NOCSH
 description: 了解设置团队与 Teams 中的来宾进行任务、对话以及文档协作所需的 Microsoft 365 配置步骤。
-ms.openlocfilehash: cc962e22bde70220e07f805b0a7a83c111886369
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+ms.openlocfilehash: 34b7d5d47d7fb0c9196beda70184fa6510b6cc33
+ms.sourcegitcommit: ec293978e951b09903b79e6642aa587824935e0c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49659602"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "49780540"
 ---
 # <a name="collaborate-with-guests-in-a-team"></a>在团队中与来宾协作
 
@@ -74,7 +74,7 @@ Teams 具有用于来宾访问的主开/关开关，以及可用于控制来宾�
 5. 确保 **在 Teams 中允许来宾访问** 设置为“**开**”。
 6. 对其他来宾设置进行任何所需的更改，然后单击“**保存**”。
 
-启用 Teams 来宾访问后，可以选择使用敏感度标签控制对各个团队及其关联 SharePoint 网站的来宾访问。 有关详细信息，请参阅使用 [敏感度标签保护 Microsoft Teams、Microsoft 365 组和 SharePoint 网站中的内容](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites)。
+启用 Teams 来宾访问后，可以选择使用敏感度标签控制对各个团队及其关联 SharePoint 网站的来宾访问。 有关详细信息，请参阅[使用敏感度标签保护 Microsoft Teams、Microsoft 365 组和 SharePoint 网站中的内容](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites)。
 
 > [!NOTE]
 > Teams 来宾设置可能需要 24 小时才能在打开后变为活动状态。
@@ -188,3 +188,5 @@ Teams 内容（如文件、文件夹和列表）均存储在 SharePoint 中。 �
 [创建托管有来宾的 B2B 外联网](b2b-extranet.md)
 
 [SharePoint 和 OneDrive 与 Azure AD B2B 集成](https://docs.microsoft.com/sharepoint/sharepoint-azureb2b-integration-preview)
+
+[从 SharePoint 或 OneDrive 共享时，共享选项灰心](https://docs.microsoft.com/sharepoint/troubleshoot/administration/sharing-options-grayed-out-when-sharing-from-sharepoint-online-or-onedrive)

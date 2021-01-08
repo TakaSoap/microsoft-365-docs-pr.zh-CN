@@ -3,7 +3,7 @@ title: Azure 网关子网的地址空间计算器
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 09/01/2020
+ms.date: 01/07/2021
 audience: ITPro
 ms.topic: hub-page
 ms.service: o365-administration
@@ -16,27 +16,27 @@ ms.custom:
 - Ent_Office_Other
 - seo-marvel-apr2020
 description: 摘要：使用 C3、Python 或 PowerShell 计算 Azure 网关子网的地址空间。
-ms.openlocfilehash: 5e119f1ddefb5877886042b835ffdd093a34f0f8
-ms.sourcegitcommit: c029834c8a914b4e072de847fc4c3a3dde7790c5
+ms.openlocfilehash: d92bea5c36fde6277154d19365ed0bdaa5df4254
+ms.sourcegitcommit: ec293978e951b09903b79e6642aa587824935e0c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "47332782"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "49780564"
 ---
 # <a name="address-space-calculator-for-azure-gateway-subnets"></a>Azure 网关子网的地址空间计算器
 
-连接到其他网络的 Azure 基础结构服务中的虚拟网络 (VNet) 必须具有网关子网。 定义此子网的最佳做法如下：
+连接到其他 (Azure) 服务中的 VNet 虚拟网络必须具有网关子网。 定义网关子网的最佳实践是：
 
-- 网关子网的前缀长度的最大前缀长度为 29 (例如，10.119.255.248/29) ，但当前建议使用前缀长度 27 (例如，10.119.255.224/27) 。
-- 在定义网关子网的地址空间时，请使用 VNet 地址空间的最后一部分。
+- 网关子网的前缀长度最长为 29 (例如，10.119.255.248/29) ，但当前建议使用前缀长度 27 (例如 10.119.255.224/27) 。
+- 定义网关子网的地址空间时，请使用 VNet 地址空间的最后一部分。
 
-对于第二个建议，您可以通过将用于网关子网的位设置为0，并将 VNet 地址空间中的剩余可变位设置为1，从而确定网关子网的地址空间。 若要快速计算网关子网地址空间，而无需转换为二进制并返回到十进制，可以使用以 c # 或 Python 或 PowerShell 命令块编写的控制台应用程序。
+对于第二个建议，可以通过将网关子网使用的位设置为 0，将 VNet 地址空间中的其余位设置为 1 来确定网关子网的地址空间。 若要快速计算网关子网地址空间，而无需转换为二进制和重新转换为十进制，可以使用用 C# 或 Python 编写的控制台应用程序或 PowerShell 命令块。
 
-本文包含的 c #、Python 和 PowerShell 代码块，它们收集五个整数（VNet 地址前缀和网关子网前缀长度的值为 w.x.y.z/n），并计算网关子网地址空间。
+本文包含 C#、Python 和 PowerShell 代码块，这些代码块根据 VNet 地址前缀和网关子网前缀长度的 w.x.y.z/n 值计算网关子网地址空间。
 
-## <a name="c-code-block"></a>C # 代码块
+## <a name="c-code-block"></a>C# 代码块
 
-使用此代码块可在 c # 中创建控制台应用程序。
+使用此代码块以 C# 创建控制台应用。
 
 ```c#
 using System; 
@@ -62,8 +62,8 @@ namespace ConsoleApplication1
  
             // Get the five values needed from the keyboard. 
             Console.WriteLine("**************************************************************************"); 
-            Console.WriteLine("*** Gateway subnet address space calculator for Azure virtual networks ***");             
-            Console.WriteLine("**************************************************************************");  
+            Console.WriteLine("**_ Gateway subnet address space calculator for Azure virtual networks _*_");             
+            Console.WriteLine("_*************************************************************************");  
             Console.WriteLine(); 
             Console.WriteLine("Please supply your virtual network address space in the form of w.x.y.z/n."); 
             Console.WriteLine(); 
@@ -110,14 +110,14 @@ namespace ConsoleApplication1
 
 ## <a name="python-code-block"></a>Python 代码块
 
-使用此代码块在 Python 中创建控制台应用程序。
+使用此代码块在 Python 中创建控制台应用。
 
 ```python
 import math 
 # Collect the values of w.x.y.z/n for your VNet address space and g, the prefix length of your gateway subnet 
 print("**************************************************************************")  
-print("*** Gateway subnet address space calculator for Azure virtual networks ***")  
-print("**************************************************************************\n")   
+print("**_ Gateway subnet address space calculator for Azure virtual networks _*_")  
+print("_*************************************************************************\n")   
 print("Please supply your virtual network address space in the form of w.x.y.z/n.");  
 w=int(input("w = ")) 
 x=int(input("x = ")) 
@@ -149,7 +149,7 @@ print(gwAddrPref)
 
 ## <a name="powershell-command-block"></a>PowerShell 命令块
 
-填写这些值，并在 PowerShell 窗口或 PowerShell ISE 中运行生成的命令块。
+在 PowerShell 窗口或 ISE (PowerShell 集成脚本环境中填写值并运行) 。
 
 ```powershell
 # Specify the values of w.x.y.z/n for your VNet address space and g, the prefix length of your gateway subnet: 
@@ -180,4 +180,3 @@ Write-Host "Your gateway address prefix is: " $dx
 ## <a name="related-topics"></a>相关主题
 
 [使用 PowerShell 管理 Microsoft 365](manage-microsoft-365-with-microsoft-365-powershell.md)
-

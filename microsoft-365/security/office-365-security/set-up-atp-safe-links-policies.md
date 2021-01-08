@@ -17,35 +17,35 @@ ms.assetid: bdd5372d-775e-4442-9c1b-609627b94b5d
 ms.collection:
 - M365-security-compliance
 description: 管理员可以了解如何在 Microsoft Defender for Office 365 中查看、创建、修改和删除安全链接策略和全局安全链接设置。
-ms.openlocfilehash: 7a00b73855302f5046afa0605fd7188007394ed7
-ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
+ms.openlocfilehash: ef83d0dba1de03aa2b36384474791783e926059f
+ms.sourcegitcommit: ec293978e951b09903b79e6642aa587824935e0c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "49683159"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "49780528"
 ---
 # <a name="set-up-safe-links-policies-in-microsoft-defender-for-office-365"></a>在 Microsoft Defender for Office 365 中设置安全链接策略
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 > [!IMPORTANT]
-> 本文适用于拥有 [Microsoft Defender for Office 365](office-365-atp.md)的企业客户。 如果你是一位家庭用户，正在查找有关 Outlook 中的安全链接的信息，请参阅高级Outlook.com [安全](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2)。
+> 本文适用于拥有 [Microsoft Defender for Office 365](office-365-atp.md)的企业客户。 如果你是一位家庭用户，正在查找有关 Outlook 中安全链接的信息，请参阅高级Outlook.com [安全](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2)。
 
 安全链接是 Microsoft [Defender for Office 365](office-365-atp.md) 中的一项功能，它提供对邮件流中入站电子邮件的 URL 扫描，以及单击验证电子邮件和其他位置中的 URL 和链接的时间。 有关详细信息，请参阅 [Microsoft Defender for Office 365 中的安全链接](atp-safe-links.md)。
 
-没有内置或默认安全链接策略。 若要对 URL 进行安全链接扫描，需要创建一个或多个安全链接策略，如本文中所述。
+没有内置或默认安全链接策略。 若要获取 URL 的安全链接扫描，需要创建一个或多个安全链接策略，如本文中所述。
 
 > [!NOTE]
-> 在安全链接策略之外配置安全链接保护 **的全局** 设置。 有关说明，请参阅 [在 Microsoft Defender for Office 365](configure-global-settings-for-safe-links.md)中配置安全链接的全局设置。
+> 在安全链接策略之外配置安全链接保护 **的全局** 设置。 有关说明，请参阅 [在 Microsoft Defender for Office 365](configure-global-settings-for-safe-links.md)中为安全链接配置全局设置。
 
-可以在安全与合规中心或 PowerShell (& Exchange Online PowerShell 中为在 Exchange Online 中拥有邮箱的符合条件的 Microsoft 365 组织配置安全链接策略;适用于没有 Exchange Online 邮箱的组织的独立 EOP PowerShell，但具有适用于 Office 365 加载项订阅的 Microsoft Defender) 。
+可以在 &安全与合规中心或 PowerShell (Exchange Online PowerShell 中为在 Exchange Online 中拥有邮箱的符合条件的 Microsoft 365 组织配置安全链接策略;适用于没有 Exchange Online 邮箱的组织的独立 EOP PowerShell，但具有适用于 Office 365 加载项订阅的 Microsoft Defender) 。
 
 安全链接策略的基本元素包括：
 
 - 安全链接策略：启用安全链接保护、启用实时 URL 扫描、指定是否在传递邮件之前等待实时扫描完成、打开对内部邮件的扫描、指定是否跟踪用户对 URL 的单击，并指定是否允许用户单击原始 URL 的 trough。
 - **安全链接规则**：指定策略应用于 (的优先级和收件人) 。
 
-在安全与合规中心管理安全链接策略时，这两个元素&不明显：
+在安全与合规中心内管理安全链接策略时，这两个元素&不明显：
 
 - 创建安全链接策略时，实际上是同时使用同一名称创建安全链接规则和相关的安全链接策略。
 - 修改安全链接策略时，与名称、优先级、启用或禁用以及收件人筛选器相关的设置将修改安全链接规则。 所有其他设置修改关联的安全链接策略。
@@ -59,11 +59,11 @@ ms.locfileid: "49683159"
 
 - 若要连接到 Exchange Online PowerShell，请参阅[连接到 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)。 若要连接到独立 EOP PowerShell，请参阅[连接到 Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell)。
 
-- 必须分配有 Office 365 安全与合规中心内的权限，才能执行本文中的步骤：
-  - 若要创建、修改和删除安全链接策略，您必须是组织 **管理或** 安全管理员角色 **组** 的成员。
+- 您需获得权限，然后才能执行本文中的过程：
+  - 若要创建、修改和删除安全链接策略，您需要是安全 & 合规中心组织管理或安全管理员角色组的成员以及 Exchange Online 中的组织管理角色组的成员。 
   - 若要对安全链接策略进行只读访问，你需要是全局读者或安全读者 **角色组的成员**。 
 
-  有关详细信息，请参阅 [安全与合规中心的权限](permissions-in-the-security-and-compliance-center.md)。
+  有关详细信息，请参阅安全与 [合规](permissions-in-the-security-and-compliance-center.md) 中心&和 [Exchange Online 中的权限](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo)。
 
   **注意**：
 
@@ -72,7 +72,7 @@ ms.locfileid: "49683159"
 
 - 有关安全链接策略的建议设置，请参阅 [安全链接策略设置](recommended-settings-for-eop-and-office365-atp.md#safe-links-policy-settings)。
 
-- 允许应用新策略或更新策略的时间最多为 30 分钟。
+- 最多允许应用新策略或更新策略 30 分钟。
 
 - [新功能不断添加到 Microsoft Defender for Office 365。](office-365-atp.md#new-features-in-microsoft-defender-for-office-365) 添加新功能时，可能需要对现有安全链接策略进行调整。
 
@@ -98,7 +98,7 @@ ms.locfileid: "49683159"
 
    - **选择 Microsoft Teams 中** 未知或潜在恶意 URL 的操作：选择 **"打开** "为 Teams 中的链接启用安全链接保护。
 
-   - **对指向文件的** 可疑链接和链接应用实时 URL 扫描：选择此设置可启用电子邮件中链接实时扫描。
+   - **对指向文件的** 可疑链接应用实时 URL 扫描：选择此设置可启用电子邮件中链接实时扫描。
 
    - **等待 URL 扫描完成，然后再** 传递邮件：选择此设置以等待实时 URL 扫描完成，然后再传递邮件。
 
@@ -106,7 +106,7 @@ ms.locfileid: "49683159"
 
    - **Do not track user clicks**： Leave this setting unselected to enable the tracking user clicks on URLs in email messages.
 
-   - **不允许用户单击到原始 URL：** 选择此设置可阻止用户在警告页面中单击到原始 [URL。](atp-safe-links.md#warning-pages-from-safe-links)
+   - **不允许用户单击到原始 URL：** 选择此设置可阻止用户单击警告页面中的原始 [URL。](atp-safe-links.md#warning-pages-from-safe-links)
 
    - **不要重写以下 URL：** 允许访问指定的 URL，否则安全链接将阻止这些 URL。
 
@@ -122,7 +122,7 @@ ms.locfileid: "49683159"
 
    完成后，单击“下一步”。
 
-5. 在 **出现的"应用于** "页上，标识策略所适用的内部收件人。
+5. 在 **出现的"应用于** "页上，标识策略应用于的内部收件人。
 
    只能使用一次条件或例外，但可以为条件或例外指定多个值。 同一个条件或例外的多个值使用“或”逻辑（例如，_\<recipient1\>_ 或 _\<recipient2\>_）。 不同的条件或例外使用“和”逻辑（例如，_\<recipient1\>_ 和 _\<member of group 1\>_）。
 
@@ -132,9 +132,9 @@ ms.locfileid: "49683159"
    - **收件人是：** 指定组织中一个或多个组的成员。
    - **收件人域是**：指定你的组织中配置的一个或多个接受的域中的收件人。
 
-   选择条件后，将显示相应的下拉列表，其中显示其中 **任何** 一个框。
+   选择条件后，将显示相应的下拉列表，其中任一 **框** 都显示。
 
-   - 在框中单击并滚动要选择的值列表。
+   - 在框中单击并滚动浏览要选择的值列表。
    - 在框中单击并开始键入以筛选列表并选择一个值。
    - 若要添加其他值，请单击框中的空白区域。
    - 若要删除单个条目 **，请单击值** ![ 上的" ](../../media/scc-remove-icon.png) 删除"图标。
@@ -154,7 +154,7 @@ ms.locfileid: "49683159"
 
 1. 在安全&中心，转到 **"威胁管理** \> **策略** \> **ATP 安全链接"。**
 
-2. 在 **"安全链接** "页上，从列表中选择一个策略， (不要选中该复选框) 。
+2. 在 **"安全链接** "页上，从列表中选择一个策略， (选中该策略，) 。
 
    策略详细信息显示在飞出中
 
@@ -162,7 +162,7 @@ ms.locfileid: "49683159"
 
 1. 在安全&中心，转到 **"威胁管理** \> **策略** \> **ATP 安全链接"。**
 
-2. 在 **"安全链接** "页上，从列表中选择一个策略， (不要选中该复选框) 。
+2. 在 **"安全链接** "页上，从列表中选择一个策略， (选中该策略，) 。
 
 3. 在出现的策略详细信息飞出中，单击 **"编辑策略"。**
 
@@ -182,19 +182,19 @@ ms.locfileid: "49683159"
 
 ### <a name="set-the-priority-of-safe-links-policies"></a>设置安全链接策略的优先级
 
-默认情况下，安全链接策略的优先级基于它们在新策略中创建的顺序 (策略的优先级低于较旧的策略) 。 低优先级数字表示高策略优先级（0 是最高优先级），且策略按照优先级顺序进行处理（高优先级策略先处理，低优先级策略后处理）。 没有两个策略可以具有相同的优先级，并且在应用第一个策略之后，策略处理将停止。
+默认情况下，安全链接策略的优先级基于它们在新策略中创建的顺序 (策略的优先级低于旧策略) 。 低优先级数字表示高策略优先级（0 是最高优先级），且策略按照优先级顺序进行处理（高优先级策略先处理，低优先级策略后处理）。 没有两个策略可以具有相同的优先级，并且在应用第一个策略之后，策略处理将停止。
 
 有关优先级顺序以及如何评估和应用多个策略的详细信息，请参阅[电子邮件保护的顺序和优先级](how-policies-and-protections-are-combined.md)。
 
-安全链接策略按处理策略的顺序显示 (优先级值为 0) 。 
+安全链接策略按第一个策略的优先级值为 0 (的顺序显示它们) 。 
 
-**注意**：在安全&合规中心，只能在创建安全链接策略后更改策略的优先级。 在 PowerShell 中，可以在创建安全链接规则集时替代默认优先级 (这可能会影响现有规则优先级) 。
+**注意**：在安全&合规中心，你只能在创建安全链接策略后更改该策略的优先级。 在 PowerShell 中，可以在创建安全链接规则集时替代默认优先级 (这可能会影响现有规则优先级) 。
 
 若要更改策略优先级，请在列表中上移或下移策略（无法直接在安全与合规中心内修改 **“优先级”** 数字）。
 
 1. 在安全&中心，转到 **"威胁管理** \> **策略** \> **ATP 安全链接"。**
 
-2. 在 **"安全链接** "页上，从列表中选择一个策略， (不要选中该复选框) 。
+2. 在 **"安全链接** "页上，从列表中选择一个策略， (选中该策略，) 。
 
 3. 在出现的策略详细信息飞出中，单击可用的优先级按钮：
 
@@ -212,7 +212,7 @@ ms.locfileid: "49683159"
 
 1. 在安全&中心，转到 **"威胁管理** \> **策略** \> **ATP 安全链接"。**
 
-2. 在 **"安全链接** "页上，从列表中选择一个策略， (不要选中该复选框) 。
+2. 在 **"安全链接** "页上，从列表中选择一个策略， (选中该策略，) 。
 
 3. 在出现的策略详细信息飞出中，单击"删除策略"，然后在出现的警告对话框中单击"是"。
 
@@ -231,7 +231,7 @@ ms.locfileid: "49683159"
 在 PowerShell 中创建安全链接策略的过程分两步完成：
 
 1. 创建安全链接策略。
-2. 创建安全链接规则，该规则指定应用该规则的安全链接策略。
+2. 创建安全链接规则，该规则指定应用于该规则的安全链接策略。
 
  **注意**：
 
@@ -240,7 +240,7 @@ ms.locfileid: "49683159"
 - 可以在 PowerShell 中的新安全链接策略上配置以下设置，这些策略在创建策略之前&安全与合规中心不可用：
 
   - 在 `$false` **New-SafeLinksRule** cmdlet (上创建禁用的新策略) 。
-  - 在 _\<Number\>_ **New-SafeLinksRule** cmdlet (设置策略) 优先级) 。
+  - 在 _\<Number\>_ **New-SafeLinksRule** cmdlet (中) 策略的优先级) 。
 
 - 在 PowerShell 中创建的新安全链接策略在安全与合规中心&，除非将策略分配给安全链接规则。
 
@@ -254,7 +254,7 @@ New-SafeLinksPolicy -Name "<PolicyName>" [-AdminDisplayName "<Comments>"] [-IsEn
 
 **注意**：
 
-- 有关要用于 _DoNotRewriteUrls_ 参数的条目语法的详细信息，请参阅"不重写以下 [URL"](atp-safe-links.md#entry-syntax-for-the-do-not-rewrite-the-following-urls-list)列表的条目语法。
+- 有关要用于 _DoNotRewriteUrls_ 参数的条目语法的详细信息，请参阅"不重写以下 [URL"列表的条目语法](atp-safe-links.md#entry-syntax-for-the-do-not-rewrite-the-following-urls-list)。
 
 - 有关在使用 **Set-SafeLinksPolicy** cmdlet 修改现有安全链接策略时可用于 _DoNotRewriteUrls_ 参数的其他语法，请参阅本文稍后介绍的"使用 [PowerShell](#use-powershell-to-modify-safe-links-policies)修改安全链接策略"部分。
 
@@ -422,7 +422,7 @@ Set-SafeLinksRule -Identity "<RuleName>" -Priority <Number>
 Set-SafeLinksRule -Identity "Marketing Department" -Priority 2
 ```
 
-**注意**：若要在创建新规则时设置其优先级，请改为使用 **New-SafeLinksRule** cmdlet 的 _Priority_ 参数。
+**注意**：若要在创建新规则时设置规则的优先级，请改为对 **New-SafeLinksRule** cmdlet 使用 _Priority_ 参数。
 
 有关语法和参数的详细信息，请参阅[Set-SafeLinksRule。](https://docs.microsoft.com/powershell/module/exchange/set-safelinksrule)
 

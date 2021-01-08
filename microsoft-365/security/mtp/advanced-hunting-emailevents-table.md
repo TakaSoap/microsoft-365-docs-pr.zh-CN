@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: 00fcc6514679868066ef88b0c9bc4a485d032528
-ms.sourcegitcommit: 1a9f0f878c045e1ddd59088ca2a94397605a242a
+ms.openlocfilehash: 6dbd7473074212c6bc257e683288040056426048
+ms.sourcegitcommit: ec293978e951b09903b79e6642aa587824935e0c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "49667633"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "49780268"
 ---
 # <a name="emailevents"></a>EmailEvents
 
@@ -65,9 +65,9 @@ ms.locfileid: "49667633"
 | `PhishDetectionMethod` | string | 用于检测电子邮件为网络钓鱼的方法：恶意 URL 信誉、安全链接 URL 触发、高级网络钓鱼筛选器、常规网络钓鱼筛选器、反欺骗：组织内部、反欺骗：外部域、域模拟、用户模拟、品牌模拟 |
 | `MalwareFilterVerdict` | string | 关于电子邮件是否包含恶意软件的电子邮件筛选堆栈裁定：恶意软件，非恶意软件 |
 | `MalwareDetectionMethod` | string | 用于检测电子邮件中的恶意软件的方法：反恶意软件引擎、文件信誉、安全附件 |
-| `FinalEmailAction` | string | 基于筛选器裁定、策略和用户操作对电子邮件执行的最后操作：将邮件移到垃圾邮件文件夹、添加 X 标头、修改主题、重定向邮件、删除邮件、发送到隔离区、未执行任何操作、密件抄送邮件 |
-| `FinalEmailActionPolicy` | string | 生效的操作策略：反垃圾邮件高可信度、反垃圾邮件、反垃圾邮件批量邮件、反垃圾邮件、反垃圾邮件钓鱼、防钓鱼域模拟、防钓鱼用户模拟、防钓鱼欺骗、防钓鱼图形模拟、反恶意软件、安全附件、企业传输规则 (ETR) |
-| `FinalEmailActionPolicyGuid` | string | 确定最后邮件操作的策略的唯一标识符 |
+| `EmailAction` | string | 基于筛选器裁定、策略和用户操作对电子邮件执行的最后操作：将邮件移到垃圾邮件文件夹、添加 X 标头、修改主题、重定向邮件、删除邮件、发送到隔离区、未执行任何操作、密件抄送邮件 |
+| `EmailActionPolicy` | string | 生效的操作策略：反垃圾邮件高可信度、反垃圾邮件、反垃圾邮件批量邮件、反垃圾邮件、反垃圾邮件钓鱼、防钓鱼域模拟、防钓鱼用户模拟、防钓鱼欺骗、防钓鱼图形模拟、反恶意软件、安全附件、企业传输规则 (ETR) |
+| `EmailActionPolicyGuid` | string | 确定最后邮件操作的策略的唯一标识符 |
 | `AttachmentCount` | int | 电子邮件中的附件数目 |
 | `UrlCount` | int | 电子邮件中的嵌入 URL 数目 |
 | `EmailLanguage` | string | 检测到的电子邮件内容的语言 |
@@ -77,7 +77,7 @@ ms.locfileid: "49667633"
 | `UserLevelPolicy` | string | 触发对电子邮件采取的操作最终用户邮箱策略 |
 | `Connectors` | string | 定义组织邮件流和电子邮件路由方式的自定义说明 |
 | `SenderDisplayName` | string | 通讯簿中显示的发件人姓名，通常是给定或名字、中间名首字母和姓氏或姓氏的组合 |
-| `SenderObjectId` | string |Azure AD 中发件人的帐户的唯一标识符 |
+| `SenderObjectId` | string |Azure AD 中发件人帐户的唯一标识符 |
 | `ThreatTypes` | string | 关于电子邮件是否包含恶意软件、网络钓鱼或其他威胁的电子邮件筛选堆栈裁定 |
 | `ThreatNames` | string |找到的恶意软件或其他威胁的检测名称 |
 | `DetectionMethods` | string | 用于检测电子邮件中的恶意软件、网络钓鱼或其他威胁的方法 |

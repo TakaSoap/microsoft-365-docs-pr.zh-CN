@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 description: 管理员可以了解 Microsoft 365 安全与合规中心&提供的权限。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 27e1a9451f4a51872599f18e65c29a2ec15c539d
-ms.sourcegitcommit: 5ba0015c1554048f817fdfdc85359eee1368da64
+ms.openlocfilehash: 28f3ca7fb1efa7924cc69c9ecf1deb2123282dfa
+ms.sourcegitcommit: 4482c174e0e68e0fbbc7ad9ef6b0e78dc34ac85a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "49769227"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "49784317"
 ---
 # <a name="permissions-in-the-security--compliance-center"></a>安全与合规中心内的权限
 
@@ -53,6 +53,11 @@ ms.locfileid: "49769227"
 管理安全与合规&仅允许用户访问安全与合规中心本身&的合规性功能。 如果要向安全与合规中心外的其他合规性功能授予权限，例如 Exchange 邮件流规则 (也称为传输规则) ，则需要使用 Exchange 管理中心。 &
 
 若要了解如何授予对安全与合规&的访问权限，请查看"授予用户对 Microsoft [365 合规性管理中心的访问权限"。](grant-access-to-the-security-and-compliance-center.md)
+
+> [!NOTE]
+> 若要查看 **安全与** 合规中心&"权限"选项卡，你需要是管理员。具体而言，需要分配有"角色管理"角色，默认情况下，该角色仅分配给安全与合规中心&管理角色组。 此外， **角色管理** 角色允许用户查看、创建和修改角色组。
+
+<br><br>
 
 ****
 
@@ -141,6 +146,8 @@ ms.locfileid: "49769227"
 - 审阅
 - RMS 解密
 - 监管审核管理员
+
+<br><br>
 
 ****
 

@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 摘要：从德国 Microsoft 云 (德国 microsoft 云) 迁移到新的德国数据中心区域中的 Office 365 服务时，有关服务的其他设备信息。
-ms.openlocfilehash: 1bbb4bf39db61a93844c21cd6062a70699b5d6d7
-ms.sourcegitcommit: 849b365bd3eaa9f3c3a9ef9f5973ef81af9156fa
+ms.openlocfilehash: 151fcac882dc91d96df3ece000c28d1a7abe1d1f
+ms.sourcegitcommit: ec293978e951b09903b79e6642aa587824935e0c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49688649"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "49780292"
 ---
 # <a name="additional-device-information-for-the-migration-from-microsoft-cloud-deutschland"></a>从德国 Microsoft 云迁移的其他设备信息
 
@@ -41,7 +41,7 @@ ms.locfileid: "49688649"
   
 **我的用户何时重新注册其设备？**
 
-在独立于 [Microsoft](ms-cloud-germany-transition.md#how-is-the-migration-organized) 云德国迁移阶段，仅注销和重新注册设备对成功至关重要。
+在"与 [德国 Microsoft](ms-cloud-germany-transition.md#how-is-the-migration-organized) 云分离"迁移阶段，仅注销和重新注册设备对成功至关重要。
 
 **如何在迁移后还原设备状态？**
 
@@ -61,11 +61,11 @@ Microsoft 将发布有关如何成功还原设备状态的说明。
 Get-AzureADServicePrincipal -All:$true |Where-object -Property AppId -eq "0000000a-0000-0000-c000-000000000000" | Set-AzureADServicePrincipal -AccountEnabled:$false
 ```
 
-## <a name="windows-hybrid-azure-ad-join"></a>Windows 混合 Azure AD 加入
+## <a name="hybrid-azure-ad-join"></a>混合 Azure AD 加入
 
 ### <a name="windows-down-level"></a>Windows 下层
 
-_Windows 低_ 级别设备是当前运行较早版本的 Windows (（如 Windows 8.1 或 Windows 7) ）的 Windows 设备，或运行早于 2019 和 2016 的 Windows Server 版本的 Windows 设备。 如果之前注册过此类设备，则需要注销并重新注册这些设备。 
+_Windows 低_ 级别设备是当前运行早期版本的 Windows (（如 Windows 8.1 或 Windows 7) ）或运行早于 2019 和 2016 的 Windows Server 版本的 Windows 设备。 如果之前注册过此类设备，则需要注销并重新注册这些设备。 
 
 若要确定 Windows 低级别设备之前是否已加入 Azure AD，请对设备使用以下命令：
 
@@ -86,7 +86,7 @@ Private key state : Okay
      Device state : Unknown
 ```
 
-受影响的设备将具有值为"Unknown"的"设备状态"。 如果输出为"未加入设备"或其"设备状态"值为"正常"，请忽略以下指南。
+受影响的设备将具有值为"Unknown"的"设备状态"。 如果输出为"未加入设备"或其"设备状态"值为"正常"，则忽略以下指南。
 
 仅对于显示设备已通过 deviceId、指纹等) 加入 (且其"设备状态"值为"未知"的设备，管理员应在域用户登录此类低级别设备的上下文中运行以下命令：
 
@@ -135,7 +135,7 @@ Private key state : Okay
 只要设备具有到全局 Azure AD 终结点的网络连接，设备就会自动加入 Azure AD，无需用户或管理员干预。 
 
 
-## <a name="windows-azure-ad-join"></a>Windows Azure AD 联接
+## <a name="azure-ad-join"></a>Azure AD 加入
 
 **重要提示：** 商业迁移后将启用 Intune 服务主体，这意味着激活 Azure AD 设备注册。 如果在迁移之前阻止了 Azure AD 设备注册，则必须使用 PowerShell 禁用 Intune 服务主体，以再次禁用 Azure AD 门户的 Azure AD 设备注册。 可以在 Azure Active Directory PowerShell for Graph 模块中通过此命令禁用 Intune 服务主体。
 
@@ -163,7 +163,7 @@ Get-AzureADServicePrincipal -All:$true |Where-object -Property AppId -eq "000000
               DomainJoined : NO
 ```
 
-如果输出为"AzureAdJoined ： NO"，请忽略以下指南。
+如果输出为"AzureAdJoined ： NO"，则忽略以下指南。
 
 用户：如果设备已加入 Azure AD，则用户可以从设置中取消加入设备。 在从 Azure AD 中取消加入设备之前，请验证设备上是否有本地管理员帐户。 需要本地管理员帐户才能重新登录设备。
 
@@ -177,10 +177,10 @@ Get-AzureADServicePrincipal -All:$true |Where-object -Property AppId -eq "000000
 
 ### <a name="azure-ad-joinre-registration"></a>Azure AD 加入/重新注册
 
-用户可以从 Windows 设置将设备加入 Azure AD：设置>帐户> **访问工作或学校>连接**。
+用户可以从 Windows 设置将设备加入 Azure AD：设置>帐户>访问工作或 **学校>连接**。
  
 
-## <a name="windows-azure-ad-registered-company-owned"></a>Windows Azure公司拥有 (AD 注册) 
+## <a name="azure-ad-registered-company-owned"></a>Azure AD 注册 (公司拥有) 
 
 若要确定 Windows 10 设备是否已注册 Azure AD，请对设备运行以下命令：
 
@@ -201,11 +201,11 @@ Get-AzureADServicePrincipal -All:$true |Where-object -Property AppId -eq "000000
 
 若要删除设备上现有的 Azure AD 注册帐户，请执行以下操作：
 
-- 若要删除设备上已注册 Azure AD 的帐户，请使用 CleanupWPJ，一种可从此处下载的工具[：CleanupWPJ.zip。 ](https://download.microsoft.com/download/8/e/f/8ef13ae0-6aa8-48a2-8697-5b1711134730/WPJCleanUp.zip)
+- 若要删除设备上已注册 Azure AD 的帐户，请使用 CleanupWPJ，这是一个可从此处下载的工具[：CleanupWPJ.zip。 ](https://download.microsoft.com/download/8/e/f/8ef13ae0-6aa8-48a2-8697-5b1711134730/WPJCleanUp.zip)
 
 - 提取 ZIP 文件并运行 **WPJCleanup.cmd。** 此工具将基于设备上 Windows 的版本启动正确的可执行文件。
 
-- 通过使用组策略等机制，管理员可以在设备上运行在设备上登录的任何用户的上下文中的命令。
+- 通过使用组策略等机制，管理员可以在设备上登录的任何用户的上下文中运行命令。
 
 若要禁用 Web 帐户管理器提示在 Azure AD 中注册设备，请添加以下注册表值： 
 
@@ -222,7 +222,7 @@ Get-AzureADServicePrincipal -All:$true |Where-object -Property AppId -eq "000000
 
 - 从 Microsoft Authenticator 应用中，用户可以转到"设备注册 **>设置"。** 用户可以从该服务器注销并重新注册其设备。
  
-- 从公司门户，用户可以 **转到"设备** "选项卡并删除设备。 之后，使用公司门户重新注册设备。
+- 从公司门户，用户可以转到"设备" **选项卡并** 删除设备。 之后，使用公司门户重新注册设备。
  
 - 用户还可以从帐户设置页中删除帐户，然后重新添加工作帐户，从而注销和重新注册。
 
@@ -236,7 +236,7 @@ Get-AzureADServicePrincipal -All:$true |Where-object -Property AppId -eq "000000
 若要注销 Android 设备，然后重新注册 Android 设备，请通过"Android 设置"页：
 
 1.  打开 **"设备设置**"并转到"**帐户"。**
-2.  选择要重新注册的工作帐户，然后选择"删除 **帐户"。**
+2.  选择要重新注册的工作帐户，然后选择"**删除帐户"。**
 3.  删除帐户后，从"帐户"**页中，** 选择">**工作帐户"。**
 4.  对于 **Workplace Join，** 键入您的电子邮件地址并选择 **"加入** "以完成设备注册。
 
