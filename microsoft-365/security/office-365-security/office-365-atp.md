@@ -20,12 +20,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Microsoft Defender for Office 365 包括安全附件、安全链接、高级防钓鱼工具、报告工具和威胁智能功能。
-ms.openlocfilehash: 86e738fa9390cc40b06c10a27f3198715bb991fd
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.openlocfilehash: 34011780241ae3a669fe32aa5fad00f9836d5570
+ms.sourcegitcommit: ec293978e951b09903b79e6642aa587824935e0c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49614806"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "49780304"
 ---
 # <a name="microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365
 
@@ -44,6 +44,11 @@ Microsoft Defender for Office 365 可保护你的组织免受电子邮件、链�
 - **[威胁调查和响应功能](#use-threat-investigation-and-response-capabilities)**：使用前沿工具调查、理解、模拟和阻止威胁。
 
 - **[自动调查和响应功能](office-365-air.md)**：节省时间和精力来调查和缓解威胁。
+
+## <a name="interactive-guide-to-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 的交互式指南
+在此交互式指南中，你将了解如何使用 Microsoft Defender for Office 365 保护组织。 你将了解 Office 365 的 Defender 如何帮助你定义保护策略、分析组织面临的威胁以及响应攻击。
+
+> [!VIDEO https://aka.ms/MSDO-IG]
 
 ## <a name="getting-started"></a>开始使用
 
