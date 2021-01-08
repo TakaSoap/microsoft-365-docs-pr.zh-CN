@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解用于 SharePoint 和 OneDrive 的保留的工作原理。
-ms.openlocfilehash: 84191cf7df1c8382b336ecce47c50ca24bc2aede
-ms.sourcegitcommit: 9bf6a4f77f9af5fd988f6795bad3b240213a51fc
+ms.openlocfilehash: 995f657778d3326a4d58d46f760539639f1fe7fe
+ms.sourcegitcommit: 3bf4f1c0d3a8515cca651b2a520217195f89457f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48951105"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "49777065"
 ---
 # <a name="learn-about-retention-for-sharepoint-and-onedrive"></a>了解用于 SharePoint 和 OneDrive 的保留
 
@@ -49,7 +49,9 @@ ms.locfileid: "48951105"
 > [!TIP]
 > 当你将[带有自动应用策略的查询用于保留标签](apply-retention-labels-automatically.md#auto-apply-labels-to-content-with-keywords-or-searchable-properties)时，可以使用以下条目排除特定文档库：`NOT(DocumentLink:"<URL to document library>")`
 
-保留设置不适用于包括库、列表和文件夹的组织结构。 或系统列表中的项目，系统列表是 SharePoint 用于管理系统的隐藏列表，并且包括母版页目录、解决方案目录和数据源。
+列表项不受保留策略支持，但是受保留标签支持，系统列表中的项例外。 这些是 SharePoint 用于管理系统的隐藏列表，并且包括主控页目录、解决方案目录和数据源。
+
+保留策略和保留标签的保留设置不适用于包括库、列表和文件夹的组织结构。
 
 对于保留策略和自动应用标签策略：必须为要应用的保留设置编制 SharePoint 网站索引。 但是，如果 SharePoint 文档库中的项目配置为不显示在搜索结果中，则此配置不会排除保留设置中的文件。
 
