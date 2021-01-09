@@ -14,13 +14,13 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 ms.custom: seo-marvel-apr2020
-description: 了解如何设置& Microsoft 365 合规中心中的连接器将 &存档数据从 Facebook Business 页面导入到 Microsoft 365。
-ms.openlocfilehash: db1d11f461125e7ea1d749fd273f8bc8622a8d77
-ms.sourcegitcommit: 6fc6aaa2b7610e148f41018abd229e3c55b2f3d0
+description: 了解如何设置& Microsoft 365 合规中心中的连接器将 & 存档数据从 Facebook 商业版页面导入到 Microsoft 365。
+ms.openlocfilehash: df86897defa92788399f704c53c00ebb9e4f4269
+ms.sourcegitcommit: 7d4aa58ae9fc893825b6e648fa3f072c3ac59628
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49620429"
+ms.lasthandoff: 01/09/2021
+ms.locfileid: "49790146"
 ---
 # <a name="set-up-a-connector-to-archive-facebook-data-preview"></a>设置连接器以存档 Facebook 数据 (预览) 
 
@@ -32,16 +32,18 @@ ms.locfileid: "49620429"
 
 完成以下先决条件，然后才能在 Microsoft 365 合规中心中设置和配置连接器，以从组织的 Facebook 商业页面导入和存档数据。 
 
-- 在设置连接器登录时，你需要为组织的业务 (Facebook 帐户) 。 目前，只能存档来自 Facebook 业务页面的数据;无法存档单个 Facebook 配置文件的数据。
+- 您需要一个 Facebook 帐户作为组织业务页面 (设置连接器帐户时需要登录到此) 。 目前，只能存档来自 Facebook 业务页面的数据;无法存档单个 Facebook 配置文件的数据。
 
 - 你的组织必须具有有效的 Azure 订阅。 如果你没有现有的 Azure 订阅，你可以注册以下选项之一：
 
-    - [注册一年免费的 Azure 订阅](https://azure.microsoft.com/free) 
+    - [注册一年免费的 Azure 订阅](https://azure.microsoft.com/free)
 
     - [注册 Azure 付费订阅](https://azure.microsoft.com/pricing/purchase-options/pay-as-you-go/)
 
     > [!NOTE]
     > Microsoft 365 订阅中包含的免费 [Azure Active Directory](use-your-free-azure-ad-subscription-in-office-365.md) 订阅不支持安全与合规&连接器。
+
+- Facebook 商业版页面连接器在一天中总共可以导入 200，000 个项目。 如果一天中 Facebook 商业版项目超过 200，000 个，则这些项目不会导入到 Microsoft 365。
 
 - 在步骤 5 (Microsoft 365 合规中心中设置自定义连接器) 必须在 Exchange Online 中分配邮箱导入导出角色。 默认情况下，不会向 Exchange Online 中任何角色组分配此角色。 可以将邮箱导入导出角色添加到 Exchange Online 中的组织管理角色组。 也可以创建一个角色组，分配邮箱导入导出角色，然后将相应的用户添加为成员。 有关详细信息，请参阅"在[](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#create-role-groups)Exchange Online[](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups)中管理角色组"一文的"创建角色组或修改角色组"部分。
 
@@ -85,7 +87,7 @@ ms.locfileid: "49620429"
 
 - Facebook 应用程序密码
 
-- Facebook Webhook 验证令牌
+- Facebook webhook 验证令牌
 
 ## <a name="step-4-configure-the-facebook-connector-app"></a>步骤 4：配置 Facebook 连接器应用
 
@@ -101,9 +103,9 @@ ms.locfileid: "49620429"
 
 - Facebook webhook 验证 (步骤 3 中获取的令牌) 
 
-- 在步骤 1 (获取的 AAD 应用程序 ID 中的 Azure Active Directory 应用程序 ID) 
+- 步骤 1 (获取的 AAD 应用程序 ID 中的 Azure Active Directory 应用程序 ID) 
 
-- 在步骤 1 (获取的 AAD 应用程序密码中的 Azure Active Directory 应用程序) 
+- 在步骤 1 (获取的 AAD 应用程序密码的 Azure Active Directory 应用程序) 
 
 ## <a name="step-5-set-up-a-facebook-business-pages-connector-in-the-microsoft-365-compliance-center"></a>步骤 5：在 Microsoft 365 合规中心中设置 Facebook 商业版页面连接器
 
@@ -111,9 +113,9 @@ ms.locfileid: "49620429"
 
 有关分步说明，请参阅步骤 [5：在 Microsoft 365 合规](deploy-facebook-connector.md#step-5-set-up-a-facebook-connector-in-the-microsoft-365-compliance-center)中心设置 Facebook 连接器。 
 
-完成此步骤 (按照) 中的分步说明操作， (在完成步骤后复制到文本文件的以下信息) 。
+完成此步骤 (按照) 中的分步说明进行操作， (在完成这些步骤后复制到文本文件中的以下信息) 。
 
-- 步骤 1 (获取的 AAD 应用程序 ID) 
+- 在步骤 1 (获取的 AAD 应用程序 ID) 
 
 - 在步骤 1 (获取的 Azure 应用服务 URL;例如， https://fbconnector.azurewebsites.net)
 

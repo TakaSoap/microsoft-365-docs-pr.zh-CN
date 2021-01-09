@@ -15,12 +15,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: seo-marvel-apr2020
 description: 了解管理员如何设置和使用数据连接器将数据从 Instant Bloomberg 聊天工具导入和存档到 Microsoft 365。
-ms.openlocfilehash: c2a56feb80f6772462fae47eb2a020e951f246e6
-ms.sourcegitcommit: 849b365bd3eaa9f3c3a9ef9f5973ef81af9156fa
+ms.openlocfilehash: b7cd35e0613d9c278e8f36efc194de9dc9b5a5f2
+ms.sourcegitcommit: 7d4aa58ae9fc893825b6e648fa3f072c3ac59628
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49688487"
+ms.lasthandoff: 01/09/2021
+ms.locfileid: "49790090"
 ---
 # <a name="set-up-a-connector-to-archive-instant-bloomberg-data"></a>设置连接器以存档 Instant Bloomberg 数据
 
@@ -54,7 +54,7 @@ Instant Bloomberg 数据存储在用户邮箱中后，可以将 Microsoft 365 �
 
   - 请参阅位于 Bloomberg Support 的"SFTP 连接标准 ["文档](https://www.bloomberg.com/professional/support/documentation/)。
 
-  - 联系 [Bloomberg 客户支持人员](https://service.bloomberg.com/portal/sessions/new?utm_source=bloomberg-menu&utm_medium=csc)。
+  - 联系 [Bloomberg 客户支持部门](https://service.bloomberg.com/portal/sessions/new?utm_source=bloomberg-menu&utm_medium=csc)。
 
   与 Bloomberg 合作设置 SFTP 网站后，在回复了 Bloomberg 实施电子邮件后，Bloomberg 会向您提供一些信息。 保存以下信息的副本。 您可以使用它在步骤 3 中设置连接器。
 
@@ -66,9 +66,9 @@ Instant Bloomberg 数据存储在用户邮箱中后，可以将 Microsoft 365 �
 
   - Bloomberg SFTP 网站的端口号
 
-- Instant Bloomberg 连接器在一天中总共可以导入 200，000 个项目。 如果 SFTP 网站中一天包含的项目超过 200，000 个，则这些项不会导入到 Microsoft 365。
+- Instant Bloomberg 连接器在一天中总共可以导入 200，000 个项目。 如果 SFTP 网站上的项目超过 200，000 个，则这些项目不会导入到 Microsoft 365。
 
-- 在步骤 3 (中创建 Instant Bloomberg 连接器且在步骤 1) 中下载公钥和 IP 地址的用户必须在 Exchange Online 中分配邮箱导入导出角色。 这是在 Microsoft 365合规中心的"数据连接器"页中添加连接器所必需。 默认情况下，不会向 Exchange Online 中任何角色组分配此角色。 可以将邮箱导入导出角色添加到 Exchange Online 中的组织管理角色组。 也可以创建一个角色组，分配邮箱导入导出角色，然后将相应的用户添加为成员。 有关详细信息，请参阅"在[](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#create-role-groups)Exchange Online[](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups)中管理角色组"一文的"创建角色组或修改角色组"部分。
+- 在步骤 3 (中创建 Instant Bloomberg 连接器且在步骤 1) 中下载公钥和 IP 地址的用户必须在 Exchange Online 中分配邮箱导入导出角色。 这是在 Microsoft 365合规中心的"数据连接器"页中添加连接器所必需。 默认情况下，不会向 Exchange Online 中任何角色组分配此角色。 可以将邮箱导入导出角色添加到 Exchange Online 中的组织管理角色组。 也可以创建角色组，分配邮箱导入导出角色，然后将相应的用户添加为成员。 有关详细信息，请参阅"在[](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#create-role-groups)Exchange Online[](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups)中管理角色组"一文的"创建角色组或修改角色组"部分。
 
 ## <a name="step-1-obtain-ssh-and-pgp-public-keys"></a>步骤 1：获取 SSH 和 PGP 公钥
 
@@ -122,8 +122,8 @@ Instant Bloomberg 数据存储在用户邮箱中后，可以将 Microsoft 365 �
 6. 在 **"用户映射"** 页上，启用自动用户映射并按需要提供自定义用户映射
 
    > [!NOTE]
-   > 连接器将聊天消息项目导入到特定用户的邮箱。 将在特定用户的邮箱中创建一个名为 **InstantBloomberg** 的新文件夹，项目将导入到该文件夹中。 连接器使用 *CorporateEmailAddress* 属性的值进行。 每个聊天消息都包含此属性，并且该属性填充了聊天消息每个参与者的电子邮件地址。 除了使用 *CorporateEmailAddress* 属性的值进行自动用户映射之外，您还可以通过上载 CSV 映射文件来定义自定义映射。 映射文件应包含每个用户的 Bloomberg UUID 和相应的 Microsoft 365 邮箱地址。 如果启用自动用户映射并提供自定义映射，连接器将首先查看自定义映射文件， 如果找不到与用户的 Bloomberg UUID 对应的有效 Microsoft 365 用户，连接器将使用聊天项目的 *CorporateEmailAddress* 属性。 如果连接器在聊天项目的自定义映射文件或 *CorporateEmailAddress* 属性中找不到有效的 Microsoft 365 用户，将不会导入该项目。
+   > 连接器将聊天消息项目导入到特定用户的邮箱。 将在特定用户的邮箱中创建一个名为 **InstantBloomberg** 的新文件夹，项目将导入到该文件夹中。 连接器使用 *CorporateEmailAddress* 属性的值进行。 每个聊天消息都包含此属性，并且使用聊天消息每个参与者的电子邮件地址填充该属性。 除了使用 *CorporateEmailAddress* 属性的值进行自动用户映射之外，您还可以通过上载 CSV 映射文件来定义自定义映射。 映射文件应包含每个用户的 Bloomberg UUID 和相应的 Microsoft 365 邮箱地址。 如果启用自动用户映射并提供自定义映射，连接器将首先查看自定义映射文件， 如果找不到与用户的 Bloomberg UUID 对应的有效 Microsoft 365 用户，连接器将使用聊天项目的 *CorporateEmailAddress* 属性。 如果连接器在聊天项目的自定义映射文件或 *CorporateEmailAddress* 属性中找不到有效的 Microsoft 365 用户，将不会导入该项目。
 
-7. 单击 **"下** 一步"，查看设置，然后单击 **"准备** "以创建连接器。
+7. 单击 **"下** 一步"，查看设置，然后单击 **"准备** "创建连接器。
 
 8. 转到" **数据连接器"** 页以查看新连接器的导入过程的进度。

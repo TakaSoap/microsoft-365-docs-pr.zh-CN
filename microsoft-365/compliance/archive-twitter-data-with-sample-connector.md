@@ -15,22 +15,22 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: seo-marvel-apr2020
 description: 了解管理员如何设置和使用本机连接器将 Twitter 数据导入 Microsoft 365。
-ms.openlocfilehash: b4eadc58393df651505287f9238f43a1db0563a8
-ms.sourcegitcommit: 6fc6aaa2b7610e148f41018abd229e3c55b2f3d0
+ms.openlocfilehash: 5b35259985664ac47b9d1f6265c8ca4282a4cd31
+ms.sourcegitcommit: 7d4aa58ae9fc893825b6e648fa3f072c3ac59628
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49620258"
+ms.lasthandoff: 01/09/2021
+ms.locfileid: "49790060"
 ---
 # <a name="set-up-a-connector-to-archive-twitter-data-preview"></a>设置连接器以存档 Twitter 数据 (预览) 
 
-使用 Microsoft 365 合规中心中的连接器将数据从 Twitter 导入和存档到 Microsoft 365。 设置和配置连接器后，它将按计划连接到组织的 Twitter 帐户 () ，将项目内容转换为电子邮件格式，然后将这些项目导入 Microsoft 365 中的邮箱。
+使用 Microsoft 365 合规中心中的连接器将数据从 Twitter 导入并存档到 Microsoft 365。 设置和配置连接器后，它将按计划连接到组织的 Twitter 帐户 () ，将项目内容转换为电子邮件格式，然后将这些项目导入 Microsoft 365 中的邮箱。
 
-导入 Twitter 数据后，可以将 Microsoft 365 合规性功能（如诉讼保留、内容搜索、In-Place 存档、审核和 Microsoft 365 保留策略）应用于 Twitter 数据。 例如，当邮箱置于诉讼保留或分配给保留策略时，将保留 Twitter 数据。 您可以使用内容搜索搜索第三方数据，或将存储 Twitter 数据的邮箱与高级电子数据展示案例中的保管人关联。 使用连接器在 Microsoft 365 中导入和存档 Twitter 数据可帮助你的组织遵守政府政策和法规策略。
+导入 Twitter 数据后，可以将 Microsoft 365 合规性功能（如诉讼保留、内容搜索、In-Place 存档、审核和 Microsoft 365 保留策略）应用到 Twitter 数据。 例如，当邮箱置于诉讼保留或分配给保留策略时，将保留 Twitter 数据。 您可以使用内容搜索搜索第三方数据，或将存储 Twitter 数据的邮箱与高级电子数据展示案例中的保管人关联。 使用连接器在 Microsoft 365 中导入和存档 Twitter 数据可帮助你的组织遵守政府政策和法规策略。
 
 导入 Twitter 数据后，可以将 Microsoft 365 合规性功能（如诉讼保留、内容搜索、In-Place 存档、审核、通信合规性和 Microsoft 365 保留策略）应用于邮箱中存储的数据。 例如，您可以使用内容搜索搜索 Twitter 数据，或将数据存储到高级电子数据展示案例中的保管人相关联的邮箱。 使用连接器在 Microsoft 365 中导入和存档 Twitter 数据可帮助你的组织遵守政府政策和法规策略。
 
-## <a name="prerequisites-for-setting-up-a-connector-for-twitter"></a>为 Twitter 设置连接器的先决条件
+## <a name="before-you-set-up-a-connector"></a>设置连接器之前
 
 完成以下先决条件，然后才能在 Microsoft 365 合规中心中设置和配置连接器，以从组织的 Twitter 帐户导入和存档数据。
 
@@ -45,7 +45,9 @@ ms.locfileid: "49620258"
     > [!NOTE]
     > Microsoft 365 订阅中包含的免费 [Azure Active Directory](use-your-free-azure-ad-subscription-in-office-365.md) 订阅不支持安全与合规&连接器。
 
-- 在步骤 5 (Microsoft 365 合规中心中设置 Twitter 连接器) 必须在 Exchange Online 中分配邮箱导入导出角色。 默认情况下，不会向 Exchange Online 中任何角色组分配此角色。 可以将邮箱导入导出角色添加到 Exchange Online 中的组织管理角色组。 也可以创建一个角色组，分配邮箱导入导出角色，然后将相应的用户添加为成员。 有关详细信息，请参阅"在[](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#create-role-groups)Exchange Online[](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups)中管理角色组"一文的"创建角色组或修改角色组"部分。
+- Twitter 连接器在一天中总共可以导入 200，000 个项目。 如果一天中超过 200，000 个 Twitter 项目，则这些项目不会导入到 Microsoft 365。
+
+- 在步骤 5 (Microsoft 365 合规中心中设置 Twitter) 必须在 Exchange Online 中分配邮箱导入导出角色。 默认情况下，不会向 Exchange Online 中任何角色组分配此角色。 可以将邮箱导入导出角色添加到 Exchange Online 中的组织管理角色组。 也可以创建一个角色组，分配邮箱导入导出角色，然后将相应的用户添加为成员。 有关详细信息，请参阅"在[](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#create-role-groups)Exchange Online[](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups)中管理角色组"一文的"创建角色组或修改角色组"部分。
 
 ## <a name="step-1-create-an-app-in-azure-active-directory"></a>步骤 1：在 Azure Active Directory 中创建应用
 
@@ -63,7 +65,7 @@ ms.locfileid: "49620258"
 
 ## <a name="step-2-deploy-connector-web-service-from-github-repository-to-your-azure-account"></a>步骤 2：将连接器 Web 服务从 GitHub 存储库部署到 Azure 帐户
 
-下一步是部署 Twitter 连接器应用的源代码，该应用将使用 Twitter API 连接到你的 Twitter 帐户并提取数据，以便你可以将其导入到 Microsoft 365。 为组织部署的 Twitter 连接器将项目从组织的 Twitter 帐户上载到此步骤中创建的 Azure 存储位置。 在步骤 5) 中的 Microsoft 365 合规中心 (创建 Twitter 连接器后，Microsoft 365 导入服务将 Twitter 数据从 Azure 存储位置复制到 Microsoft 365 中的邮箱。 如前面" [先决条件"部分](#prerequisites-for-setting-up-a-connector-for-twitter) 所述，你必须具有有效的 Azure 订阅，以创建 Azure 存储帐户。
+下一步是部署 Twitter 连接器应用的源代码，该应用将使用 Twitter API 连接到你的 Twitter 帐户并提取数据，以便你可以将其导入到 Microsoft 365。 为组织部署的 Twitter 连接器将项目从组织的 Twitter 帐户上载到此步骤中创建的 Azure 存储位置。 在步骤 5) 中的 Microsoft 365 合规中心 (创建 Twitter 连接器后，Microsoft 365 导入服务将 Twitter 数据从 Azure 存储位置复制到 Microsoft 365 中的邮箱。 如之前在" [设置连接器之前](#before-you-set-up-a-connector) "部分所述，你必须具有有效的 Azure 订阅才能创建 Azure 存储帐户。
 
 若要部署 Twitter 连接器应用的源代码：
 
@@ -83,7 +85,7 @@ ms.locfileid: "49620258"
 
 ## <a name="step-3-create-developer-app-on-twitter"></a>步骤 3：在 Twitter 上创建开发人员应用
 
-下一步是在 Twitter 上创建和配置开发人员应用。 在步骤 7 中创建的自定义连接器使用 Twitter 应用与 Twitter API 交互，以从组织的 Twitter 帐户获取数据。
+下一步是在 Twitter 上创建和配置开发人员应用。 在步骤 7 中创建的自定义连接器使用 Twitter 应用与 Twitter API 进行交互，以从组织的 Twitter 帐户获取数据。
 
 有关分步说明，请参阅"创建[Twitter 应用"。](deploy-twitter-connector.md#step-3-create-the-twitter-app)
 
