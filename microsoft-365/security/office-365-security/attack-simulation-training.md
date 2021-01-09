@@ -11,20 +11,20 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 description: 管理员可以了解如何使用 Microsoft Defender for Office 365 中的攻击模拟培训模拟网络钓鱼攻击并培训其用户防钓鱼。
-ms.openlocfilehash: 3707041067fd76ee9535d0dccf5cdfcb9d74fbd7
-ms.sourcegitcommit: 1a9f0f878c045e1ddd59088ca2a94397605a242a
+ms.openlocfilehash: 41a5a503fbc8aa5e41760c1cf420d5e3c6047d86
+ms.sourcegitcommit: a76de3d1604d755b29053e7bf557c0008be6ad23
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "49667516"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "49788047"
 ---
 # <a name="simulate-a-phishing-attack"></a>模拟网络钓鱼攻击
 
-Microsoft Defender for Office 365 中的攻击模拟器培训允许你在组织上运行恶意网络攻击模拟，以测试安全策略和做法，并培训员工提高认知度并减少他们对攻击的敏感性。 本文将引导你完成使用攻击模拟器培训创建模拟网络钓鱼攻击。
+Microsoft Defender for Office 365 中的攻击模拟培训允许你在组织上运行恶意网络攻击模拟，以测试安全策略和做法，并培训员工提高认知度并减少他们对攻击的敏感性。 本文将引导你完成使用攻击模拟培训创建模拟网络钓鱼攻击。
 
 [!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
-若要启动模拟网络钓鱼攻击，请打开 Microsoft [365](https://security.microsoft.com/)安全中心，转到"电子邮件&协作攻击模拟器 **"，** 然后切换到" \> [**模拟"**](https://security.microsoft.com/attacksimulator?viewid=simulations)选项卡。
+若要启动模拟网络钓鱼攻击，请打开 Microsoft [365](https://security.microsoft.com/)安全中心，转到"电子邮件&协作攻击 \> **模拟培训**"，然后切换到"[**模拟**](https://security.microsoft.com/attacksimulator?viewid=simulations)"选项卡。
 
 在 **"模拟"** 下，选择 **" + 启动模拟"。**
 
@@ -59,7 +59,7 @@ Microsoft Defender for Office 365 中的攻击模拟器培训允许你在组织�
 - **根据 Microsoft** Defender for Office 365 客户有效负载的历史数据，预测受此负载危害的百分比。
 - **启动的** 模拟计算此有效负载在其他模拟中使用的次数。
 - **复杂性**（通过筛选器 **提供**）根据有效负载中的指示器数量进行计算，这些指示器可指示攻击中的目标。 指示器越多，复杂性越低。
-- **源**（通过 **筛选器提供**）指示有效负载是在租户上创建的，还是 Microsoft 预先存在的有效负载目录的一 (全局) 。
+- **源**（通过 **筛选器提供**）指示有效负载是在你的租户上创建的，还是 Microsoft 预先存在的有效负载目录的一 (全局) 。
 
 ![Microsoft 365 安全中心攻击模拟培训内选定的有效负载](../../media/attack-sim-preview-select-payload.png)
 
@@ -69,9 +69,9 @@ Microsoft Defender for Office 365 中的攻击模拟器培训允许你在组织�
 
 ## <a name="audience-targeting"></a>访问群体设定
 
-现在该选择此模拟的受众了。 可以选择包括 **组织中所有用户或** 仅包括 **特定用户和组**。
+现在该选择此模拟的受众了。 可以选择包括 **组织中所有用户或** 仅 **包括特定用户和组**。
 
-当你选择仅 **包含特定用户和组时** ，你可以：
+选择仅 **包含特定用户和组时，** 可以执行下列任一操作：
 
 - **添加用户**，这允许你利用租户搜索以及高级搜索和筛选功能，例如面向过去 3 个月内未通过模拟定位的用户。
   ![Microsoft 365 安全中心攻击模拟培训中的用户筛选](../../media/attack-sim-preview-user-targeting.png)
@@ -94,8 +94,8 @@ Microsoft Defender for Office 365 中的攻击模拟器培训允许你在组织�
 
 ## <a name="launch-details-and-review"></a>启动详细信息和查看
 
-现在，所有内容已配置完成，你可以立即启动此模拟，或安排在以后日期进行。 你还需要选择何时结束此模拟。 在选定时间后，我们将停止捕获此模拟的交互。
+现在，所有内容已配置完成，你可以立即启动此模拟或安排在以后日期进行。 你还需要选择何时结束此模拟。 我们将停止捕获在选定时间后与此模拟的交互。
 
 **启用区域感知时区传递** ，以根据员工的区域在工作时间向员工传递模拟攻击消息。
 
-完成后，单击 **"下一** 步"并查看模拟的详细信息。 单击 **任意部件的** "编辑"可返回并更改任何需要更改的详细信息。 完成后，单击"**提交"。**
+完成后，单击 **"下一** 步"并查看模拟的详细信息。 单击 **任意** 部件的"编辑"可返回并更改任何需要更改的详细信息。 完成后，单击"**提交"。**

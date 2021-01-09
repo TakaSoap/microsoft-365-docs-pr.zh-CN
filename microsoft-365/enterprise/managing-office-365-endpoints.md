@@ -1,7 +1,7 @@
 ---
 title: 管理 Office 365 终结点
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 audience: ITPro
 ms.topic: conceptual
@@ -18,12 +18,12 @@ ms.custom:
 search.appverid: MOE150
 ms.assetid: 99cab9d4-ef59-4207-9f2b-3728eb46bf9a
 description: 了解如何管理 Office 365 终结点，以便它们与企业组织网络体系结构一起工作。
-ms.openlocfilehash: dcacb10492f4377dbcdf6e74c848a404f1b64c6f
-ms.sourcegitcommit: ec293978e951b09903b79e6642aa587824935e0c
+ms.openlocfilehash: a616e5f45fee77a02e7b4df7e19ed9e1b0d31d22
+ms.sourcegitcommit: a76de3d1604d755b29053e7bf557c0008be6ad23
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "49780480"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "49787947"
 ---
 # <a name="managing-office-365-endpoints"></a>管理 Office 365 终结点
 
@@ -37,9 +37,9 @@ Microsoft 建议使用 Office 365 IP 地址和 URL Web 服务访问 [Office 365]
 
 ## <a name="sd-wan-for-local-branch-egress-of-vital-office-365-network-traffic"></a>用于重要 Office 365 网络流量的本地分支出口的 SD-WAN
 
-在每个分支机构位置，你可以提供配置为将终结点的 Office 365 优化类别或"优化"和"允许"类别的流量直接路由到 Microsoft 网络的 SD-WAN 设备。 其他网络流量（包括本地数据中心流量、常规 Internet 网站流量以及到 Office 365 默认类别终结点的流量）将发送到你具有更大网络外围的位置。
+在每个分支机构位置，您可以提供配置为将终结点的 Office 365 优化类别或"优化"和"允许"类别的流量直接路由到 Microsoft 网络的 SD-WAN 设备。 其他网络流量（包括本地数据中心流量、常规 Internet 网站流量以及到 Office 365 默认类别终结点的流量）将发送到你具有更大网络外围的位置。
 
-Microsoft 正在与 SD-WAN 提供程序合作以启用自动配置。 有关详细信息，请参阅 [Office 365 网络合作伙伴计划](microsoft-365-networking-partner-program.md)。
+Microsoft 正在与 SD-WAN 提供程序合作，以启用自动配置。 有关详细信息，请参阅 [Office 365 网络合作伙伴计划](microsoft-365-networking-partner-program.md)。
 
 <a name="pacfiles"> </a>
 ## <a name="use-a-pac-file-for-direct-routing-of-vital-office-365-traffic"></a>使用 PAC 文件直接路由重要的 Office 365 流量
@@ -161,14 +161,14 @@ serviceA.office.com -> CNAME: serviceA.domainA.com -> CNAME: serviceA.domainB.co
 
 代理服务器验证初始 URL，如上例serviceA.office.com，此 URL 将包含在 Office 365 发布中。 代理服务器请求将该 URL 的 DNS 解析为 IP 地址，并将收到 IP_1。 它不会验证中间的 CNAME 重定向记录。
 
-不建议硬编码配置或允许基于间接 Office 365 FQDN 的流量，不受 Microsoft 支持，并且已知会导致客户连接问题。 可以通过启用 DNS 递归的 DNS 条件转发（范围仅限于直接使用的 Office 365 FQDN）来解决阻止 CNAME 重定向或以其他方式错误解析 Office 365 DNS 条目的 DNS 解决方案。 许多第三方网络外围产品使用 [Office 365 IP](microsoft-365-ip-web-service.md)地址和 URL Web 服务在配置中本机集成建议的 Office 365 终结点流量旁路。
+不建议硬编码配置或允许基于间接 Office 365 FQDN 的流量，Microsoft 不支持，并且已知会导致客户连接问题。 可以通过启用 DNS 递归的 DNS 条件转发（范围仅限于直接使用的 Office 365 FQDN）来解决阻止 CNAME 重定向或以其他方式错误解析 Office 365 DNS 条目的 DNS 解决方案。 许多第三方网络外围产品使用 [Office 365 IP](microsoft-365-ip-web-service.md)地址和 URL Web 服务将推荐的 Office 365 终结点流量绕过本地集成到其配置中。
 
 <a name="bkmk_akamai"> </a>
 ### <a name="why-do-i-see-names-such-as-nsatcnet-or-akadnsnet-in-the-microsoft-domain-names"></a>为什么会在 Microsoft 域名中看到 nsatc.net 或 akadns.net 等名称？
 
 Office 365 和其他 Microsoft 服务使用几项第三方服务（如 Akamai 和 MarkMonitor）来改进 Office 365 体验。 为了尽可能提供最佳体验，我们以后可能会更改这些服务。 第三方域可以承载 CDN 等内容，也可以托管服务，如地理流量管理服务。 目前正在使用的一些服务包括：
   
-[当你看到包含](https://www.markmonitor.com/) *\* .nsatc.net 的请求时*，MarkMonitor nsatc.net。 此服务提供域名称保护和监控功能，抵御恶意行为。
+[MarkMonitor](https://www.markmonitor.com/) is in use when you see requests that include *\* .nsatc.net*. 此服务提供域名称保护和监控功能，抵御恶意行为。
   
 [ExactTarget](https://www.marketingcloud.com/) is in use when you see requests to *\* .exacttarget.com*. 此服务提供电子邮件链接管理和监控功能，抵御恶意行为。
   
@@ -202,7 +202,7 @@ Office 365 套件分为几个主要服务区域。 可以选择性地为连接�
 
 除了基本的 Internet 服务外，还有一些仅用于集成功能的第三方服务。 尽管集成需要这些功能，但 Office 365 终结点文章中将这些功能标记为可选，这意味着如果无法访问终结点，服务的核心功能将继续运行。 所需的任何网络终结点都将所需的属性设置为 true。 任何可选网络终结点的必需属性都将设置为 false，notes 属性将详细说明在连接被阻止时预期缺少的功能。
   
-如果你尝试使用 Office 365 并且发现第三方服务不可访问，你会希望确保本文中标记为必需或可选的所有 [FQDN](urls-and-ip-address-ranges.md)都可以通过代理和防火墙。
+如果你尝试使用 Office 365 并且发现第三方服务不可访问，你会希望确保通过代理和防火墙允许本文中标记为必需或可选的所有[FQDN。](urls-and-ip-address-ranges.md)
   
 <a name="bkmk_consumer"> </a>
 ### <a name="how-do-i-block-access-to-microsofts-consumer-services"></a>如何阻止对 Microsoft 消费者服务的访问？
