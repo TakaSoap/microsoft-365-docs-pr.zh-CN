@@ -8,6 +8,8 @@
           href: top-security-tasks-for-remote-work.md
         - name: 适用于 BDM 的 Microsoft 365 安全中心
           href: Microsoft-365-security-for-bdm.md
+        - name: 优先帐户安全建议
+          href: ./office-365-security/security-recommendations-for-priority-accounts.md
     - name: 标识和设备访问配置
       href: ./office-365-security/microsoft-365-policies-configurations.md
       items:
@@ -420,8 +422,6 @@
               href: ./office-365-security/email-validation-and-authentication.md
             - name: 向用户授予对安全中心的访问权限
               href: ./office-365-security/grant-access-to-the-security-and-compliance-center.md
-            - name: 优先帐户安全建议
-              href: ./office-365-security/security-recommendations-for-priority-accounts.md
             - name: Defender for Office 365 中的安全文档
               href: ./office-365-security/safe-docs.md
             - name: 在 Defender for Office 365 中设置安全链接策略
