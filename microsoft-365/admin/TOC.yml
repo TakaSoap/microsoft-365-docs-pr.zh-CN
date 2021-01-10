@@ -66,6 +66,8 @@
           href: whats-new-in-preview.md
         - name: 随时掌握更改
           href: manage/stay-on-top-of-updates.md
+        - name: 管理多个租户
+          href: multi-tenant/manage.md
     - name: 由世纪互联运营的 Office 365
       items:
         - name: 关于由世纪互联运营的 Office 365
