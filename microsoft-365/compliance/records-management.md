@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 description: 通过 Microsoft 365 中的记录管理，你可以将保留计划应用到文件计划中，以管理保留、记录声明和处置。
-ms.openlocfilehash: 883fd65e3fba716018a1ed35cc457c2eb8f06c52
-ms.sourcegitcommit: 5756896ad87e28fac20f7981eaaeacfb0c098254
+ms.openlocfilehash: 0057be98c79ec07018d86f3130d7e03d68c74446
+ms.sourcegitcommit: 7d4aa58ae9fc893825b6e648fa3f072c3ac59628
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/23/2020
-ms.locfileid: "49730163"
+ms.lasthandoff: 01/09/2021
+ms.locfileid: "49790198"
 ---
 # <a name="learn-about-records-management-in-microsoft-365"></a>了解 Microsoft 365 中的记录管理
 
@@ -103,11 +103,13 @@ ms.locfileid: "49730163"
 >[!IMPORTANT] 
 > 合规性记录的最重要的差别是，在应用到内容后，任何人（哪怕是是全局管理员）都无法删除标签。 
 >
-> 此外，为合规性记录配置的保留标签具有以下管理员限制：
+> 为合规性记录配置的保留标签还具有以下管理员限制：
 > - 保存标签后，不能缩短保留期，只能对其进行扩展。
 > - 自动标记策略不支持这些标签，必须使用[保留标签策略](create-apply-retention-labels.md)应用这些标签。 
+>
+> 此外，合规性标签无法应用于在 SharePoint 中签出的文档。
 > 
-> 由于这些操作不可逆，在针对保留标签选择此选项之前，请确定确实需要使用合规性记录。 为帮助防止意外配置，默认情况下该选项不可用，但必须先使用 PowerShell 启用。 有关说明，请参阅[使用保留标签 声明记录](declare-records.md)。
+> 由于存在这些限制和不可逆操作，在针对保留标签选择此选项之前，请确保自己确实需要使用合规性记录。 为帮助防止意外配置，默认情况下该选项不可用，但必须先使用 PowerShell 启用。 有关说明，请参阅[使用保留标签 声明记录](declare-records.md)。
 
 ## <a name="configuration-guidance"></a>配置指南
 

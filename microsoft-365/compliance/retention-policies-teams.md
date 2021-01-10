@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解适用于 Microsoft Teams 的保留策略。
-ms.openlocfilehash: 12338c1679a8e0c5921ec3f4f05df85989413ccd
-ms.sourcegitcommit: 4482c174e0e68e0fbbc7ad9ef6b0e78dc34ac85a
+ms.openlocfilehash: 8cd67c9c188c97256ddddcdd57479f519bd33929
+ms.sourcegitcommit: a76de3d1604d755b29053e7bf557c0008be6ad23
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 01/08/2021
-ms.locfileid: "49784307"
+ms.locfileid: "49787959"
 ---
 # <a name="learn-about-retention-for-microsoft-teams"></a>了解用于 Microsoft Teams 的保留
 
@@ -46,9 +46,9 @@ ms.locfileid: "49784307"
 
 ## <a name="how-retention-works-with-microsoft-teams"></a>用于 Microsoft Teams 的保留的工作原理
 
-可使用保留策略保留 Teams 中的聊天和频道消息。 Teams 聊天存储在参与聊天的每个用户的邮箱中的隐藏文件夹内，Teams 频道消息存储在团队组邮箱中类似的隐藏文件夹中。
+可使用保留策略保留 Teams 中的聊天和频道消息的数据。 来自 Teams 聊天的数据存储在参与聊天的每个用户的邮箱中的隐藏文件夹内，来自 Teams 频道消息的数据存储在团队组邮箱中类似的隐藏文件夹中。
 
-务必了解，Teams 使用由 Azure 支持的聊天服务，该服务也会存储此数据，并且默认永久存储。 因此，建议创建保留策略来使用 Teams 位置保留和删除此 Teams 数据。 此保留策略可以从 Exchange 邮箱和由 Azure 提供技术支持的基础聊天服务中永久删除数据。 有关详细信息，请参阅 [Microsoft Teams 中的安全性和合规性](https://go.microsoft.com/fwlink/?linkid=871258)，特别是[信息保护体系结构](https://docs.microsoft.com/MicrosoftTeams/security-compliance-overview#information-protection-architecture)部分。
+务必了解，Teams 使用由 Azure 支持的聊天服务，该服务也会存储此数据，并且默认永久存储。 因此，建议创建保留策略来使用 Teams 位置保留和删除此 Teams 数据。 此保留策略可以从 Exchange 邮箱和由 Azure 提供技术支持的基础聊天服务中永久删除此数据。 有关详细信息，请参阅 [Microsoft Teams 中的安全性和合规性](https://go.microsoft.com/fwlink/?linkid=871258)，特别是[信息保护体系结构](https://docs.microsoft.com/MicrosoftTeams/security-compliance-overview#information-protection-architecture)部分。
 
 Teams 聊天和频道消息不受针对用户或组邮箱配置的保留策略影响。 即使 Teams 聊天和频道消息存储在 Exchange 中，此 Teams 数据仍将仅包含在针对 **Teams 频道消息** 和 **Teams 聊天** 位置配置的保留策略中。
 
