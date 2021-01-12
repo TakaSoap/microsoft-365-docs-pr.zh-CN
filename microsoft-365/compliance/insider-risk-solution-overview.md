@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: 9f2f6667066a1704ceb98179b677e7de7895cef2
-ms.sourcegitcommit: 5ba0015c1554048f817fdfdc85359eee1368da64
+ms.openlocfilehash: 684b4d724915478d8198d53d9e95cc1e9b3f092e
+ms.sourcegitcommit: 9833f95ab6ab95aea20d68a277246dca2223f93d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "49769263"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "49794134"
 ---
 # <a name="insider-risk-solutions-in-microsoft-365"></a>Microsoft 365 内部风险解决方案
 
@@ -49,12 +49,66 @@ Microsoft 365 风险防护功能专为内部风险产品和解决方案设计并
 
 若要帮助组织抵御内部风险，请使用这些 Microsoft 365 功能和特性。
 
-| 解决方案/功能 | 说明 | 许可 |
-| :------------------------ | :-------------- | :------------ |
-| 通信合规性 | 通信合规性通过帮助您检测、捕获和操作组织中不适当的邮件，帮助最大程度地降低通信风险。 | Microsoft 365 E5 订阅 (付费版或试用版)  <br><br> Microsoft 365 E3 订阅 + Microsoft 365 E5 合规性加载项 <br><br> Microsoft 365 E3 订阅 + Microsoft 365 E5 Insider Risk Management 加载项 <br><br> Microsoft 365 A5 订阅 (付费版或试用版)  <br><br> Microsoft 365 A3 订阅 + Microsoft 365 A5 合规性加载项 <br><br> Microsoft 365 A3 订阅 + Microsoft 365 A5 Insider Risk Management 加载项 <br><br> Microsoft 365 G5 订阅 (付费版或试用版)  <br><br> Microsoft 365 G5 订阅 + Microsoft 365 G5 合规性加载项 <br> Microsoft 365 G5 订阅 + Microsoft 365 G5 Insider Risk Management 加载项 <br><br> Office 365 企业版 E5 订阅 (付费版或试用版)  <br><br> Office 365 A5 订阅 (付费版或试用版)  <br><br> Office 365 企业版 E3 订阅 + Office 365 高级合规性 (不再可用于新订阅)  |
-| 内部风险管理 | 内部风险管理通过让你能够检测、调查和处理组织中恶意和无意的活动，帮助最大程度地降低内部风险。 | Microsoft 365 E5 订阅 (付费版或试用版)  <br><br> Microsoft 365 E3 订阅 + Microsoft 365 E5 合规性加载项 <br><br> Microsoft 365 E3 订阅 + Microsoft 365 E5 Insider Risk Management 加载项 <br><br> Microsoft 365 A5 订阅 (付费版或试用版)  <br><br> Microsoft 365 A3 订阅 + Microsoft 365 A5 合规性加载项 <br><br> Microsoft 365 A3 订阅 + Microsoft 365 A5 Insider Risk Management 加载项 |
-| 信息屏障 | 信息屏障允许您限制两个内部组之间的通信和协作，以避免在组织中发生利益冲突。  | Microsoft 365 E5/A5 <br><br> Office 365 E5/A5 <br><br> Office 365 高级合规版 <br><br> Microsoft 365 合规性 E5/A5 <br><br> Microsoft 365 内部风险管理 |
-| 特权访问管理 | 特权访问管理允许对 Office 365 中特权 Exchange Online 管理任务的精细访问控制。 它可以帮助保护组织免受使用现有特权管理员帐户的漏洞，这些帐户具有对敏感数据的长期访问权限或关键配置设置的访问权限。 | Microsoft 365 E5/A5 <br><br> Office 365 E5/A5 <br><br> Microsoft 365 E5/A5 合规 <br><br> Microsoft 365 E5/A5 信息保护和治理 |
+### <a name="communication-compliance"></a>通信合规性
+
+通信合规性通过帮助您检测、捕获和操作组织中不适当的邮件，帮助最大程度地降低通信风险。 通信合规性在下列订阅中可用：
+
+- Microsoft 365 E5 订阅 (付费版或试用版) 
+- Microsoft 365 E3 订阅 + Microsoft 365 E5 合规性加载项
+- Microsoft 365 E3 订阅 + Microsoft 365 E5 Insider Risk Management 加载项
+- Microsoft 365 A5 订阅 (付费版或试用版) 
+- Microsoft 365 A3 订阅 + Microsoft 365 A5 合规性加载项
+- Microsoft 365 A3 订阅 + Microsoft 365 A5 Insider Risk Management 加载项
+- Microsoft 365 G5 订阅 (付费版或试用版) 
+- Microsoft 365 G5 订阅 + Microsoft 365 G5 合规性加载项
+- Microsoft 365 G5 订阅 + Microsoft 365 G5 Insider Risk Management 加载项
+- Office 365 企业版 E5 订阅 (付费版或试用版) 
+- Office 365 A5 订阅 (付费版或试用版) 
+- Office 365 企业版 E3 订阅 + Office 365 高级合规性 (不再可用于新订阅) 
+
+### <a name="insider-risk-management"></a>内部风险管理
+
+内部风险管理通过让你能够检测、调查和处理组织中恶意和无意的活动，帮助最大程度地降低内部风险。
+
+内部风险管理可在以下订阅中提供：
+
+- Microsoft 365 E5 订阅 (付费版或试用版) 
+- Microsoft 365 E3 订阅 + Microsoft 365 E5 合规性加载项
+- Microsoft 365 E3 订阅 + Microsoft 365 E5 Insider Risk Management 加载项
+- Microsoft 365 A5 订阅 (付费版或试用版) 
+- Microsoft 365 A3 订阅 + Microsoft 365 A5 合规性加载项
+- Microsoft 365 A3 订阅 + Microsoft 365 A5 Insider Risk Management 加载项
+
+### <a name="information-barriers"></a>信息屏障
+
+信息屏障允许您限制两个内部组之间的通信和协作，以避免在组织中发生利益冲突。
+
+以下订阅中提供了信息屏障：
+
+- Microsoft 365 E5 订阅 (付费版或试用版) 
+- Microsoft 365 A5 订阅 (付费版或试用版) 
+- Office 365 企业版 E5 订阅 (付费版或试用版) 
+- Office 365 A5 订阅 (付费版或试用版) 
+- Office 365 高级合规性加载项 (不再可用于新订阅) 
+- Microsoft 365 E3 订阅 + Microsoft 365 E5 合规性加载项
+- Microsoft 365 E3 订阅 + Microsoft 365 E5 Insider Risk Management 加载项
+- Microsoft 365 A3 订阅 + Microsoft 365 A5 合规性加载项
+- Microsoft 365 A3 订阅 + Microsoft 365 A5 Insider Risk Management 加载项
+
+### <a name="privileged-access-management"></a>特权访问管理
+
+特权访问管理允许对 Office 365 中特权 Exchange Online 管理任务的精细访问控制。 它可以帮助保护组织免受使用现有特权管理员帐户的漏洞，这些帐户具有对敏感数据的长期访问权限或关键配置设置的访问权限。
+
+特权访问管理在下列订阅中可用：
+
+- Microsoft 365 E5 订阅 (付费版或试用版) 
+- Microsoft 365 A5 订阅 (付费版或试用版) 
+- Office 365 企业版 E5 订阅 (付费版或试用版) 
+- Office 365 A5 订阅 (付费版或试用版) 
+- Microsoft 365 E3 订阅 + Microsoft 365 E5 合规性加载项
+- Microsoft 365 E3 订阅 + Microsoft 365 E5 信息保护和治理加载项
+- Microsoft 365 A3 订阅 + Microsoft 365 A5 合规性加载项
+- Microsoft 365 A3 订阅 + Microsoft 365 A5 信息保护和治理加载项
 
 ## <a name="deploy-microsoft-365-insider-risk-solutions"></a>部署 Microsoft 365 内部风险解决方案
 
