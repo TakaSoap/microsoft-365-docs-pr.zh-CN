@@ -9,14 +9,14 @@ ms.prod: microsoft-365-enterprise
 localization_priority: Normal
 ms.collection:
 - M365-security-compliance
-- m365initiative-m365-defender
+- m365initiative-defender-office365
 description: 管理员可以了解 Microsoft 365 安全中心中的攻击模拟培训如何影响员工，并可以从模拟和培训结果中获得见解。
-ms.openlocfilehash: 6fc109469f8a9a3cf6aa87e9b8f9e3a024fed6e3
-ms.sourcegitcommit: 1a9f0f878c045e1ddd59088ca2a94397605a242a
+ms.openlocfilehash: 54855a4ce8e64f4d58b9ff2697395ed684be2773
+ms.sourcegitcommit: 9833f95ab6ab95aea20d68a277246dca2223f93d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "49667587"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "49794552"
 ---
 # <a name="gain-insights-through-attack-simulation-training"></a>通过攻击模拟培训获得见解
 
@@ -24,7 +24,7 @@ ms.locfileid: "49667587"
 
 [!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
-我们正在不断扩展可供你获取的见解。 行为影响和推荐操作当前可用。 若要开始，请前往 [Microsoft 365 安全中心进行攻击模拟培训](https://security.microsoft.com/attacksimulator?viewid=overview)。
+我们正在不断扩展可供你获取的见解。 行为影响和推荐操作目前可用。 若要开始，请前往 [Microsoft 365 安全中心进行攻击模拟培训](https://security.microsoft.com/attacksimulator?viewid=overview)。
 
 ## <a name="behavior-impact-on-compromise-rate"></a>行为对泄露率的影响
 
@@ -35,7 +35,7 @@ ms.locfileid: "49667587"
 - **预测的泄露** 率，反映使用攻击模拟培训的其他 Microsoft 365 租户中使用相同负载类型的模拟的平均泄露率。
 - **实际泄露** 率反映了为模拟而牺牲的员工百分比。
 
-此外，还反映了受攻击威胁的实际员工数与预测的入侵率 `<number> less susceptible to phishing` 之间的差异。 此员工数量将来不太可能受到类似攻击的攻击，同时指示员工的整体行为与预测的入侵率 `<percent%> better than predicted rate` 的对比。
+此外，还反映了受攻击威胁的实际员工数与预测的入侵率 `<number> less susceptible to phishing` 之间的差异。 此员工数量将来不太可能受到类似攻击的攻击，同时指示员工的整体行为与预测的入侵率 `<percent%> better than predicted rate` 相比。
 
 > [!div class="mx-imgBorder"]
 > ![攻击模拟培训概述中的行为影响卡片](../../media/attack-sim-preview-behavior-impact-card.png)

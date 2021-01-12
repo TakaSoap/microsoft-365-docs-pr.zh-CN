@@ -9,33 +9,47 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: e78f0123c909c90ff90be913e8775cc1e5b30313
-ms.sourcegitcommit: 3bf4f1c0d3a8515cca651b2a520217195f89457f
+ms.openlocfilehash: 88a832f6c4e17756bfb25ef5cb7c4c5ecedaf2c0
+ms.sourcegitcommit: 9833f95ab6ab95aea20d68a277246dca2223f93d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "49777095"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "49794384"
 ---
 # <a name="adjust-settings-after-enrollment"></a>注册后调整设置
 
-完成 Microsoft 托管桌面的注册后，需要调整本文中指定的 Microsoft Intune 和 Azure Active Directory (Azure AD) 设置，以便进行管理和维护安全性。 设置以下设置以排除包含 Microsoft 托管桌面设备和用户的特定 Azure AD 组。 有关排除组的步骤，请参阅条件 [访问：用户和组](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-users-groups#exclude-users)。
+在 Microsoft 托管桌面中完成注册后，可能需要调整某些管理设置。 若要检查和调整（如果需要），请按照以下步骤操作：
+
+1. 查看下一部分中介绍的 Microsoft Intune 和 Azure Active Directory 设置。
+2. 如果任何项目适用于您的环境，请进行所述的调整。
+3. 如果要仔细检查所有设置是否正确，可以重新运行准备情况评估工具，以确保没有任何与[](https://aka.ms/mmdart)Microsoft 托管桌面冲突的情况。
 
 > [!NOTE]
-> 如果在注册 Microsoft Intune、Azure Active Directory 或 Microsoft 365 中的策略后做出任何更改，Microsoft 托管桌面可能会停止正常运行。 为避免 Microsoft 托管桌面操作出现问题，请在更改任何策略之前检查[](../get-ready/readiness-assessment-fix.md)修复准备情况评估工具发现的问题中描述的特定设置。
+> 由于操作将在几个月后继续，如果在 Microsoft Intune、Azure Active Directory 或 Microsoft 365 中注册影响 Microsoft 托管桌面的策略后进行更改，Microsoft 托管桌面可能会停止正常运行。 为避免服务出现问题，请在更改该服务中列出的策略之前，检查"[](../get-ready/readiness-assessment-fix.md)修复准备情况评估工具发现的问题"中所述的特定设置。 您还可以随时重新运行准备情况评估工具。
 
 
 ## <a name="microsoft-intune-settings"></a>Microsoft Intune 设置
 
-- Autopilot 部署配置文件：对于由公司中的管理员创建的 Autopilot 配置文件，排除 **现代工作区设备 -所有** Azure AD 组。 有关步骤，请参阅 [使用 Windows Autopilot](https://docs.microsoft.com/mem/autopilot/enrollment-autopilot)在 Intune 中注册 Windows 设备。 不要将 **现代工作区设备 -所有** Azure AD 组从 Microsoft 托管桌面创建的任何部署策略中排除，这些策略的名称为 (例如 **，Modern Workplace Autopilot Profile**) 。 
-- 条件访问策略：对于公司中的管理员创建的条件访问策略，排除 **Modern Workplace Service Accounts** Azure AD 组。 有关步骤，请参阅 [条件访问：用户和组](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-users-groups)。 不要将 **现代工作区设备 -所有** Azure AD 组从 Microsoft 托管桌面创建的任何策略中排除，这些策略的名称为 ("新式工作区"，例如， **新式工作区** 安全工作站) 。
-- 多重身份验证：确保公司管理员创建的任何需要多重身份验证的条件访问策略都排除 **Modern Workplace Service Accounts** Azure AD 组。 有关详细信息，请参阅条件[访问策略](../get-ready/readiness-assessment-fix.md#conditional-access-policies)和[条件访问：要求所有用户使用 MFA。](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa)
-- 安全基线：对于公司中管理员创建的安全基线策略，不包括 **现代工作区设备 -所有**  Azure AD 组。 有关步骤，请参阅 [使用安全基线在 Intune](https://docs.microsoft.com/mem/intune/protect/security-baselines)中配置 Windows 10 设备。 不要将现代工作区设备 **-所有** Azure AD 组从 Microsoft 托管桌面创建的任何策略中排除，这些策略的名称为 ("新式工作区安全基线") 。 
-- Windows 10 更新圈：对于公司中管理员创建的 Windows 10 更新圈策略，排除 **现代工作区设备 -所有**  Azure AD 组。 有关步骤，请参阅 [在 Intune 中管理 Windows 10 软件更新](https://docs.microsoft.com/mem/intune/protect/windows-update-for-business-configure)。 不要将 **现代工作区设备 -所有** Azure AD 组从 Microsoft 托管桌面创建的任何策略中排除，这些策略的名称为 (，例如，新式工作区更新策略) 。
+- Autopilot 部署配置文件：如果你使用任何 Autopilot 策略，请更新每个策略以排除 **现代工作区设备 -所有** Azure AD 组。 若要更新它们，请在"分配"下的"已排除组"部分中，选择在 Microsoft 托管桌面注册期间创建的新式工作区设备 **-** 所有 Azure AD 组。 Microsoft 托管桌面还将创建 Autopilot 配置文件，其名称将为"新式工作区" (**Modern Workplace Autopilot 配置文件**) 。 更新自己的 Autopilot 配置文件时，请确保不要从Microsoft 托管桌面创建的新式 **工作区 Autopilot** 配置文件中排除新式工作区设备 **-** 所有 Azure AD 组。
+
+- 条件访问策略：对于已创建的条件访问策略，排除 **新式工作区服务帐户** Azure AD 组。 有关步骤，请参阅 [条件访问：用户和组](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-users-groups)。 Microsoft 托管桌面还将创建一些条件访问策略，所有这些策略的名称都将具有"新式工作区" (例如， **新式工作区** 安全工作站) 。 更新自己的条件访问策略时，请确保不要从 Microsoft托管桌面创建的任何策略中排除现代工作区设备 **-** 所有 Azure AD 组。
+
+- 多重身份验证：确保任何需要多重身份验证的条件访问策略都排除 **新式工作区服务帐户** Azure AD 组。 有关详细信息，请参阅条件[访问策略](../get-ready/readiness-assessment-fix.md#conditional-access-policies)和[条件访问：要求所有用户使用 MFA。](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa)
+
+- Windows 10 更新圈：对于你创建的任何 Windows 10 更新圈策略，从每个策略中排除 **现代工作区设备 -所有** Azure AD 组。 有关步骤，请参阅["创建并分配更新圈"。](https://docs.microsoft.com/mem/intune/protect/windows-10-update-rings#create-and-assign-update-rings) Microsoft 托管桌面还将创建一些更新圈策略，所有更新圈策略的名称为 (例如，现代工作区更新策略 **[广泛]**、 现代工作区更新策略 **[快速]**、 现代工作区更新策略 **[第一]** 和现代工作场所更新策略 **[测试]**) 。 更新自己的策略时，请确保不会将新式工作区设备 **-所有** Azure AD 组从 Microsoft 托管桌面创建的组中排除。
 
 
 ## <a name="azure-active-directory-settings"></a>Azure Active Directory 设置
 
-自助服务密码重置：选择 **"已选择** "设置，然后选择" **现代工作区设备 -所有** Azure AD 组"。 有关详细信息，请参阅 [教程：允许用户使用 Azure Active Directory](https://docs.microsoft.com/azure/active-directory/authentication/tutorial-enable-sspr)自助服务密码重置解锁其帐户或重置密码。
+自助服务密码重置：如果使用所有用户的自助密码重置，请调整分配以排除 Microsoft 托管桌面服务帐户。 若要调整此分配，请为除 *Microsoft* 托管桌面服务帐户以外的所有用户创建 Azure AD 动态组，然后将该组用于分配，而不是"所有用户"。
+
+为了帮助您查找和排除服务帐户，下面是一个可以使用的动态查询示例：
+
+```Console
+(user.objectID -ne null) and (user.userPrincipalName -ne "MSADMIN@TENANT.onmicrosoft.com") and (user.userPrincipalName -ne "MSADMININT@TENANT.onmicrosoft.com") and (user.userPrincipalName -ne "MWAAS_SOC_RO@TENANT.onmicrosoft.com") and (user.userPrincipalName -ne "MWAAS_WDGSOC@TENANT.onmicrosoft.com") and (user.userPrincipalName -ne "MSTEST@TENANT.onmicrosoft.com")
+```
+
+在此查询中，将@TENANT替换为租户域名。
 
 
 

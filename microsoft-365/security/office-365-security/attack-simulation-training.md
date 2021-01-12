@@ -9,18 +9,18 @@ ms.prod: microsoft-365-enterprise
 localization_priority: Normal
 ms.collection:
 - M365-security-compliance
-- m365initiative-m365-defender
+- m365initiative-defender-office365
 description: 管理员可以了解如何使用 Microsoft Defender for Office 365 中的攻击模拟培训模拟网络钓鱼攻击并培训其用户防钓鱼。
-ms.openlocfilehash: 41a5a503fbc8aa5e41760c1cf420d5e3c6047d86
-ms.sourcegitcommit: a76de3d1604d755b29053e7bf557c0008be6ad23
+ms.openlocfilehash: e7582b1f74266d988ecdf8f6dac49019699e2bc1
+ms.sourcegitcommit: 9833f95ab6ab95aea20d68a277246dca2223f93d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "49788047"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "49794252"
 ---
 # <a name="simulate-a-phishing-attack"></a>模拟网络钓鱼攻击
 
-Microsoft Defender for Office 365 中的攻击模拟培训允许你在组织上运行恶意网络攻击模拟，以测试安全策略和做法，并培训员工提高认知度并减少他们对攻击的敏感性。 本文将引导你完成使用攻击模拟培训创建模拟网络钓鱼攻击。
+Microsoft Defender for Office 365 中的攻击模拟培训允许你在组织中运行恶意网络攻击模拟，以测试安全策略和做法，并培训员工提高认知度并减少他们对攻击的敏感性。 本文将引导你完成使用攻击模拟培训创建模拟网络钓鱼攻击。
 
 [!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
@@ -31,11 +31,11 @@ Microsoft Defender for Office 365 中的攻击模拟培训允许你在组织上�
 ![在 Microsoft 365 安全中心启动模拟按钮](../../media/attack-sim-preview-launch.png)
 
 > [!NOTE]
-> 在模拟创建期间的任何时间点，你都可以保存并关闭，以稍后继续配置模拟。
+> 在模拟创建过程中的任何时间点，你都可以保存并关闭，以稍后继续配置模拟。
 
 ## <a name="selecting-a-social-engineering-technique"></a>选择社交工程技术
 
-从 CK 的 MITRE ATT 框架&[CK ®技术。](https://attack.mitre.org/techniques/enterprise/) 不同的有效负载可用于不同的技术：
+从 CK 的 4 种不同的技术中选择，这些技术 [由 MITRE ATT&设计®设计](https://attack.mitre.org/techniques/enterprise/)。 不同的有效负载可用于不同的技术：
 
 - **凭据收集** 尝试通过让用户到具有输入框的已知网站来提交用户名和密码来收集凭据。
 - **恶意软件附件** 向邮件添加恶意附件。 当用户打开附件时，将运行任意代码，帮助攻击者破坏目标设备。
@@ -57,9 +57,9 @@ Microsoft Defender for Office 365 中的攻击模拟培训允许你在组织上�
 
 - **单击率** 计算单击此负载的人数。
 - **根据 Microsoft** Defender for Office 365 客户有效负载的历史数据，预测受此负载危害的百分比。
-- **启动的** 模拟计算此有效负载在其他模拟中使用的次数。
-- **复杂性**（通过筛选器 **提供**）根据有效负载中的指示器数量进行计算，这些指示器可指示攻击中的目标。 指示器越多，复杂性越低。
-- **源**（通过 **筛选器提供**）指示有效负载是在你的租户上创建的，还是 Microsoft 预先存在的有效负载目录的一 (全局) 。
+- **模拟启动** 计算此有效负载在其他模拟中使用的次数。
+- **复杂性**（通过筛选器 **提供**）基于有效负载中的指示器数量计算，这些指示器可提示目标受到攻击。 指标越多，复杂性越低。
+- **源**（通过 **筛选器提供**）指示有效负载是在租户上创建的，还是 Microsoft 预先存在的有效负载目录的一 (全局) 。
 
 ![Microsoft 365 安全中心攻击模拟培训内选定的有效负载](../../media/attack-sim-preview-select-payload.png)
 
@@ -69,11 +69,11 @@ Microsoft Defender for Office 365 中的攻击模拟培训允许你在组织上�
 
 ## <a name="audience-targeting"></a>访问群体设定
 
-现在该选择此模拟的受众了。 可以选择包括 **组织中所有用户或** 仅 **包括特定用户和组**。
+现在该选择此模拟的受众了。 可以选择包括 **组织中所有用户或** 仅包括 **特定用户和组**。
 
-选择仅 **包含特定用户和组时，** 可以执行下列任一操作：
+当你选择仅 **包含特定用户和组时** ，你可以：
 
-- **添加用户**，这允许你利用租户搜索以及高级搜索和筛选功能，例如面向过去 3 个月内未通过模拟定位的用户。
+- **添加** 用户，这允许你利用租户的搜索以及高级搜索和筛选功能，例如面向过去 3 个月内未通过模拟定位的用户。
   ![Microsoft 365 安全中心攻击模拟培训中的用户筛选](../../media/attack-sim-preview-user-targeting.png)
 - **通过 CSV** 导入，可以导入此模拟的预定义用户集。
 
@@ -94,8 +94,8 @@ Microsoft Defender for Office 365 中的攻击模拟培训允许你在组织上�
 
 ## <a name="launch-details-and-review"></a>启动详细信息和查看
 
-现在，所有内容已配置完成，你可以立即启动此模拟或安排在以后日期进行。 你还需要选择何时结束此模拟。 我们将停止捕获在选定时间后与此模拟的交互。
+现在，所有内容已配置完成，你可以立即启动此模拟，或安排在以后日期进行。 你还需要选择何时结束此模拟。 在选定时间后，我们将停止捕获此模拟的交互。
 
 **启用区域感知时区传递** ，以根据员工的区域在工作时间向员工传递模拟攻击消息。
 
-完成后，单击 **"下一** 步"并查看模拟的详细信息。 单击 **任意** 部件的"编辑"可返回并更改任何需要更改的详细信息。 完成后，单击"**提交"。**
+完成后，单击 **"下一** 步"并查看模拟的详细信息。 单击 **任意部件的** "编辑"可返回并更改任何需要更改的详细信息。 完成后，单击"**提交"。**

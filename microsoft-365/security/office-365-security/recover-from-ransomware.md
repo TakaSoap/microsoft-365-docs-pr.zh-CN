@@ -12,152 +12,152 @@ search.appverid:
 - MET150
 ms.collection:
 - M365-security-compliance
-- m365initiative-m365-defender
+- m365initiative-defender-office365
 description: Microsoft 365 管理员可以了解如何从勒索软件攻击中恢复。
-ms.openlocfilehash: ad3f044e338abeb56046538bdda8df7b8510be0e
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.openlocfilehash: 753171578dc7b76aefadf4b8587e84320d98b912
+ms.sourcegitcommit: 9833f95ab6ab95aea20d68a277246dca2223f93d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49615896"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "49794444"
 ---
 # <a name="recover-from-a-ransomware-attack-in-microsoft-365"></a>在 Microsoft 365 中从勒索软件攻击中恢复
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
-即使您在保护组织时采取了任何预防措施，仍可成为 [勒索软件](https://docs.microsoft.com/windows/security/threat-protection/intelligence/ransomware-malware) 攻击的牺牲品。 勒索软件是大型企业，攻击非常复杂。
+即使你采取一切预防措施来保护你的组织，你仍然可能会遭受勒索 [软件](https://docs.microsoft.com/windows/security/threat-protection/intelligence/ransomware-malware) 攻击。 勒索软件是一个大企业，攻击非常复杂。
 
-本文中的步骤将为您提供恢复数据和停止感染的内部传播的最佳机会。 在开始之前，请考虑以下事项：
+本文中的步骤将为您提供恢复数据和停止内部感染传播的最佳机会。 在开始之前，请考虑以下事项：
 
-- 不能保证付款勒索将返回对您的文件的访问权限。 实际上，支付勒索可以使您成为更多勒索软件的目标。
+- 无法保证支付勒索将返回对文件的访问权限。 事实上，支付勒索可能会成为更多勒索软件的目标。
 
-  如果你已支付，但在未使用攻击者的解决方案的情况下进行了恢复，请联系你的银行以了解它们是否可以阻止事务。
+  如果已支付，但在未使用攻击者的解决方案的情况下恢复，请与银行联系，查看他们能否阻止交易。
 
-  此外，我们还建议您将勒索软件攻击报告给执法部门、诈骗报告网站和 Microsoft，如本文后面所述。
+  我们还建议您将勒索软件攻击报告给执法机构、欺诈报告网站和 Microsoft，如本文稍后所述。
 
-- 快速响应攻击及其后果非常重要。 等待时间越长，可以恢复受影响数据的可能性就越小。
+- 快速响应攻击及其后果非常重要。 等待的时间越长，恢复受影响数据的可能性就越小。
 
-## <a name="step-1-verify-your-backups"></a>步骤1：验证备份
+## <a name="step-1-verify-your-backups"></a>步骤 1：验证备份
 
-如果您具有脱机备份，则在从您的环境中删除勒索软件有效负载 (恶意软件) **后** ，可能会还原加密的数据。
+如果具有脱机备份，那么在从环境中删除勒索软件有效负载后， (还原) 数据。
 
-如果你没有备份，或者你的备份也受到勒索软件的影响，则可以跳过此步骤。
+如果没有备份，或者备份也受勒索软件影响，可以跳过此步骤。
 
-## <a name="step-2-disable-exchange-activesync-and-onedrive-sync"></a>步骤2：禁用 Exchange ActiveSync 和 OneDrive 同步
+## <a name="step-2-disable-exchange-activesync-and-onedrive-sync"></a>步骤 2：Exchange ActiveSync OneDrive 同步
 
-此处的关键点是停止勒索软件的数据加密传播。
+此处的关键点就是阻止勒索软件传播数据加密。
 
-如果您怀疑电子邮件为勒索软件加密的目标，请暂时禁用用户对邮箱的访问。 Exchange ActiveSync 在设备和 Exchange Online 邮箱之间同步数据。
+如果您怀疑电子邮件是勒索软件加密的目标，请暂时禁用用户对邮箱的访问。 Exchange ActiveSync在设备和 Exchange Online 邮箱之间同步数据。
 
-若要禁用邮箱的 Exchange ActiveSync，请参阅 [如何在 Exchange Online 中禁用用户的 Exchange activesync](https://support.microsoft.com/help/2795303)。
+若要禁用Exchange ActiveSync，请参阅如何为 Exchange [Online 中的Exchange ActiveSync禁用邮件。](https://support.microsoft.com/help/2795303)
 
 若要禁用对邮箱的其他类型的访问，请参阅：
 
-- [启用或禁用邮箱的 MAPI](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-user-mailboxes/enable-or-disable-mapi)。
+- [启用或禁用邮箱的 MAPI。](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-user-mailboxes/enable-or-disable-mapi)
 
-- [对用户启用或禁用 POP3 或 IMAP4 访问](https://docs.microsoft.com/Exchange/clients-and-mobile-in-exchange-online/pop3-and-imap4/enable-or-disable-pop3-or-imap4-access)
+- [为用户启用或禁用 POP3 或 IMAP4 访问](https://docs.microsoft.com/Exchange/clients-and-mobile-in-exchange-online/pop3-and-imap4/enable-or-disable-pop3-or-imap4-access)
 
-暂停 OneDrive 同步将有助于防止可能受感染的设备更新你的云数据。 有关详细信息，请参阅 [如何暂停和恢复 OneDrive 中的同步](https://support.microsoft.com/office/2152bfa4-a2a5-4d3a-ace8-92912fb4421e)。
+暂停 OneDrive 同步有助于防止云数据被潜在感染的设备更新。 有关详细信息，请参阅如何在 [OneDrive 中暂停和恢复同步](https://support.microsoft.com/office/2152bfa4-a2a5-4d3a-ace8-92912fb4421e)。
 
-## <a name="step-3-remove-the-malware-from-the-affected-devices"></a>步骤3：从受影响的设备中删除恶意软件
+## <a name="step-3-remove-the-malware-from-the-affected-devices"></a>步骤 3：从受影响的设备中删除恶意软件
 
-在所有可疑计算机和设备上运行完全的当前防病毒扫描，以检测和删除与勒索软件相关联的有效负载。
+在所有可疑计算机和设备上运行完整的当前防病毒扫描，以检测和删除与勒索软件关联的有效负载。
 
-请勿忘记扫描正在同步数据的设备，或映射的网络驱动器的目标。
+不要忘记扫描正在同步数据的设备或映射的网络驱动器的目标。
 
-您可以将 [Windows Defender](https://www.microsoft.com/windows/comprehensive-security) 或 (用于旧客户端) [Microsoft Security Essentials](https://www.microsoft.com/download/details.aspx?id=5201)。
+你可以将[Windows Defender](https://www.microsoft.com/windows/comprehensive-security)或 (客户端) Microsoft Security Essentials。 [](https://www.microsoft.com/download/details.aspx?id=5201)
 
-另一种方法也可帮助您删除勒索软件或恶意软件，这是 [ (MSRT) 的恶意软件删除工具 ](https://www.microsoft.com/download/details.aspx?id=9905)。
+此外，还可以帮助你删除勒索软件或恶意软件的替代方法是 [MSRT ](https://www.microsoft.com/download/details.aspx?id=9905) (恶意软件) 。
 
-如果这些选项不起作用，可以尝试让 [Windows Defender 脱机](https://support.microsoft.com/help/17466) 或 [解决检测和删除恶意软件的问题](https://support.microsoft.com/help/4466982)。
+如果这些选项不起作用，可以尝试Windows Defender [或](https://support.microsoft.com/help/17466) 解决 [检测和删除恶意软件的问题](https://support.microsoft.com/help/4466982)。
 
-## <a name="step-4-recover-files-on-a-cleaned-computer-or-device"></a>步骤4：在已清理的计算机或设备上恢复文件
+## <a name="step-4-recover-files-on-a-cleaned-computer-or-device"></a>步骤 4：在已清理的计算机或设备上恢复文件
 
-在完成上一步以从环境中删除勒索软件负载时 (这将阻止勒索软件加密或删除文件) ，可以使用 windows 10 中的 Windows 10 和 Windows 8.1 中的 [文件历史记录](https://support.microsoft.com/help/17128) 或 windows 7 中的系统保护尝试恢复您的本地文件和文件夹。
+完成上一步以从你的环境 (中删除勒索软件负载（这将阻止勒索软件加密或删除你的文件) ）后，可以使用 Windows 10 和 Windows 8.1 中的文件历史记录或 Windows 7 中的系统保护尝试恢复你的本地文件和文件夹。 [](https://support.microsoft.com/help/17128)
 
 **注意**：
 
-- 有些勒索软件还将加密或删除备份版本，因此不能使用文件历史记录或系统保护来还原文件。 如果发生这种情况，您需要在不受勒索软件或 OneDrive 影响的外部驱动器或设备上使用备份，如下一节中所述。
+- 某些勒索软件还会加密或删除备份版本，因此你无法使用文件历史记录或系统保护来还原文件。 如果发生这种情况，则需要在不受勒索软件或 OneDrive 影响的外部驱动器或设备上使用备份，如下一节中所述。
 
-- 如果将文件夹同步到 OneDrive，并且未使用最新版本的 Windows，则可能会有一些使用文件历史记录的限制。
+- 如果文件夹已同步到 OneDrive，并且你未使用最新版本的 Windows，则使用文件历史记录可能有一些限制。
 
-## <a name="step-5-recover-your-files-in-your-onedrive-for-business"></a>步骤5：在 OneDrive for Business 中恢复文件
+## <a name="step-5-recover-your-files-in-your-onedrive-for-business"></a>步骤 5：恢复 OneDrive for Business 中的文件
 
-通过 OneDrive for Business 还原文件，可以在过去的30天内将整个 OneDrive 还原到以前的时间点。 有关详细信息，请参阅 [还原 OneDrive](https://support.microsoft.com/office/fa231298-759d-41cf-bcd0-25ac53eb8a15)。
+OneDrive for Business 中的文件还原允许你将整个 OneDrive 还原到过去 30 天内以前的时间点。 有关详细信息，请参阅"[还原 OneDrive"。](https://support.microsoft.com/office/fa231298-759d-41cf-bcd0-25ac53eb8a15)
 
-## <a name="step-6-recover-deleted-email"></a>步骤6：恢复已删除的电子邮件
+## <a name="step-6-recover-deleted-email"></a>步骤 6：恢复已删除的电子邮件
 
-在少数情况下，勒索软件删除了所有电子邮件，您可能可以恢复已删除的项目。 有关详细信息，请参阅：
+在勒索软件删除所有电子邮件的极少数情况下，你或许可以恢复已删除的项目。 有关详细信息，请参阅：
 
 - [恢复用户邮箱中的已删除邮件](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-user-mailboxes/recover-deleted-messages)
 
 - [在 Outlook for Windows 中恢复已删除项目](https://support.microsoft.com/office/49e81f3c-c8f4-4426-a0b9-c0fd751d48ce)
 
-## <a name="step-7-re-enable-exchange-activesync-and-onedrive-sync"></a>步骤7：重新启用 Exchange ActiveSync 和 OneDrive 同步
+## <a name="step-7-re-enable-exchange-activesync-and-onedrive-sync"></a>步骤 7：重新启用Exchange ActiveSync OneDrive 同步
 
-在清理了计算机和设备并恢复了数据之后，可以重新启用之前在 [步骤 2](#step-2-disable-exchange-activesync-and-onedrive-sync)中禁用的 Exchange ActiveSync 和 OneDrive 同步。
+在清理计算机和设备并恢复数据后，可以重新启用之前在步骤 [2](#step-2-disable-exchange-activesync-and-onedrive-sync)中Exchange ActiveSync禁用的 Exchange ActiveSync 和 OneDrive 同步。
 
-## <a name="step-8-optional-block-onedrive-sync-for-specific-file-extensions"></a>第8步 (可选) ：阻止特定文件扩展名的 OneDrive 同步
+## <a name="step-8-optional-block-onedrive-sync-for-specific-file-extensions"></a>步骤 8 (可选) ：阻止特定文件扩展名的 OneDrive 同步
 
-恢复后，可以阻止 OneDrive for Business 客户端同步受此勒索软件影响的文件类型。 有关详细信息，请参阅 [get-spotenantsyncclientrestriction](https://docs.microsoft.com/powershell/module/sharepoint-online/set-spotenantsyncclientrestriction)
+恢复后，可以阻止 OneDrive for Business 客户端同步受此勒索软件影响的文件类型。 有关详细信息，请参阅 [Set-SPOTenantSyncClientRestriction](https://docs.microsoft.com/powershell/module/sharepoint-online/set-spotenantsyncclientrestriction)
 
 ## <a name="report-the-attack"></a>报告攻击
 
-### <a name="contact-law-enforcement"></a>联系执法部门
+### <a name="contact-law-enforcement"></a>联系法律部门
 
-您应联系当地或联邦法律实施机构。 例如，如果你处于美国，你可以联系 [FBI local field](https://www.fbi.gov/contact-us/field) [IC3](http://www.ic3.gov/complaint/default.aspx) 或 [Secret Service](http://www.secretservice.gov/)。
+应联系当地或联邦执法机构。 例如，如果你在美国，你可以联系[美国审计局本地现场办公室、IC3](https://www.fbi.gov/contact-us/field)[或](http://www.ic3.gov/complaint/default.aspx)[密码服务](http://www.secretservice.gov/)。
 
-### <a name="submit-a-report-to-your-countrys-scam-reporting-website"></a>将报告提交到你的国家/地区的骗局报告网站
+### <a name="submit-a-report-to-your-countrys-scam-reporting-website"></a>向你国家/地区欺诈报告网站提交报告
 
-诈骗报告网站提供有关如何阻止和避免诈骗的信息。 它们还提供了在您受到诈骗攻击时报告的机制。
+欺诈报告网站提供有关如何防止和避免欺诈的信息。 它们还提供一些机制，用于报告您是否是欺诈的受攻击者。
 
-- 澳大利亚： [SCAMwatch](http://www.scamwatch.gov.au/)
+- 澳大利亚 [：SCAMwatch](http://www.scamwatch.gov.au/)
 
 - 加拿大： [加拿大反欺诈中心](http://www.antifraudcentre-centreantifraude.ca/)
 
-- 法国： [Agence nationale de la sécurité des systèmes d'information](http://www.ssi.gouv.fr/)
+- 法国 [：Agence nationale de la sécurité des systémes d'information](http://www.ssi.gouv.fr/)
 
-- 德国： [Bundesamt Für Sicherheit in Der Informationstechnik](https://www.bsi.bund.de/DE/Home/home_node.html)
+- 德国 [：Der Informationstechnik 中的 Bundesamt für Sicherheit](https://www.bsi.bund.de/DE/Home/home_node.html)
 
-- 爱尔兰： [Garda Síochána](http://www.garda.ie/)
+- 爱尔兰： [一名 Garda Sí一一图卡](http://www.garda.ie/)
 
-- 新西兰： [消费者事务诈骗](http://www.consumeraffairs.govt.nz/scams)
+- 新西兰： [消费者诈骗](http://www.consumeraffairs.govt.nz/scams)
 
-- 英国： [操作欺诈](http://www.actionfraud.police.uk/)
+- 英国： [诉讼欺诈](http://www.actionfraud.police.uk/)
 
-- 美国：[在保护联机](http://www.onguardonline.gov/)状态
+- 美国 [：On Guard Online](http://www.onguardonline.gov/)
 
-如果未列出你的国家/地区，请咨询当地或联邦法律实施机构。
+如果你的国家/地区未列出，请咨询你的本地或联邦执法机构。
 
-### <a name="submit-email-messages-to-microsoft"></a>将电子邮件提交给 Microsoft
+### <a name="submit-email-messages-to-microsoft"></a>向 Microsoft 提交电子邮件
 
-您可以使用几种方法之一报告包含勒索软件的网络钓鱼邮件。 有关详细信息，请参见[向 Microsoft 报告邮件和文件](report-junk-email-messages-to-microsoft.md)。
+可以使用多种方法之一报告包含勒索软件的网络钓鱼邮件。 有关详细信息，请参见[向 Microsoft 报告邮件和文件](report-junk-email-messages-to-microsoft.md)。
 
 ## <a name="see-also"></a>另请参阅
 
-- [软件](https://docs.microsoft.com/windows/security/threat-protection/intelligence/ransomware-malware)
+- [勒索软件](https://docs.microsoft.com/windows/security/threat-protection/intelligence/ransomware-malware)
 
-- [勒索软件响应—要支付还是不支付？](https://www.microsoft.com/security/blog/2019/12/16/ransomware-response-to-pay-or-not-to-pay/)
+- [勒索软件响应- 要付费还是不支付？](https://www.microsoft.com/security/blog/2019/12/16/ransomware-response-to-pay-or-not-to-pay/)
 
-- [Norsk Hydro 使用透明度响应勒索软件攻击](https://www.microsoft.com/security/blog/2019/12/17/norsk-hydro-ransomware-attack-transparency/)
+- [Norsk 随透明度响应勒索软件攻击](https://www.microsoft.com/security/blog/2019/12/17/norsk-hydro-ransomware-attack-transparency/)
 
-- [你的 OneDrive 中的勒索软件检测和恢复文件](https://support.microsoft.com/office/0d90ec50-6bfd-40f4-acc7-b8c12c73637f)
+- [勒索软件检测和恢复 OneDrive 中的文件](https://support.microsoft.com/office/0d90ec50-6bfd-40f4-acc7-b8c12c73637f)
 
-- [Microsoft 安全研究报告](https://www.microsoft.com/securityinsights/)
+- [Microsoft 安全智能报告](https://www.microsoft.com/securityinsights/)
 
-- [启用或禁用 Office 文件中的宏](https://support.microsoft.com/office/12b036fd-d140-4e74-b45e-16fed1a7e5c6)
+- [启用或禁用 Office 文件中宏](https://support.microsoft.com/office/12b036fd-d140-4e74-b45e-16fed1a7e5c6)
 
-- [EOP 和 Microsoft Defender for Office 365 安全性的建议设置](recommended-settings-for-eop-and-office365-atp.md)
+- [用于配置 EOP 和 Defender for Office 365 安全性的建议设置](recommended-settings-for-eop-and-office365-atp.md)
 
-- [值得升级： Windows 10 上的下一代安全性证明可在2017中对勒索软件发作进行恢复](https://www.microsoft.com/security/blog/2018/01/10/a-worthy-upgrade-next-gen-security-on-windows-10-proves-resilient-against-ransomware-outbreaks-in-2017/)
+- [有价值的升级：Windows 10 上的下一代安全性证明可抵御 2017 年勒索软件爆发](https://www.microsoft.com/security/blog/2018/01/10/a-worthy-upgrade-next-gen-security-on-windows-10-proves-resilient-against-ransomware-outbreaks-in-2017/)
 
-- [没有 ma，Samas：此勒索软件的 modus operandi 中有什么？](https://www.microsoft.com/security/blog/2016/03/17/no-mas-samas-whats-in-this-ransomwares-modus-operandi/)
+- [没有 mas，Samas：此勒索软件模式操作方式是什么？](https://www.microsoft.com/security/blog/2016/03/17/no-mas-samas-whats-in-this-ransomwares-modus-operandi/)
 
-- [Locky 恶意软件，幸运的是要避免它](https://www.microsoft.com/security/blog/2016/02/24/locky-malware-lucky-to-avoid-it/)
+- [锁定恶意软件，防止其入侵](https://www.microsoft.com/security/blog/2016/02/24/locky-malware-lucky-to-avoid-it/)
 
-- [MSRT 2016 年7月： Cerber 勒索软件](https://www.microsoft.com/security/blog/2016/07/12/msrt-july-2016-cerber-ransomware/)
+- [MSRT 2016 年 7 月：Cerber 勒索软件](https://www.microsoft.com/security/blog/2016/07/12/msrt-july-2016-cerber-ransomware/)
 
-- [Cerberus Cerber 勒索软件的三个头部](https://www.microsoft.com/security/blog/2016/03/09/the-three-heads-of-the-cerberus-like-cerber-ransomware/)
+- [Cerberus-like Cerber 勒索软件三个头](https://www.microsoft.com/security/blog/2016/03/09/the-three-heads-of-the-cerberus-like-cerber-ransomware/)
 
-- [ () Da Vinci 代码影响的 Troldesh 勒索软件](https://www.microsoft.com/security/blog/2016/07/13/troldesh-ransomware-influenced-by-the-da-vinci-code/)
+- [受 Da Vinci 代码 () 勒索软件](https://www.microsoft.com/security/blog/2016/07/13/troldesh-ransomware-influenced-by-the-da-vinci-code/)
