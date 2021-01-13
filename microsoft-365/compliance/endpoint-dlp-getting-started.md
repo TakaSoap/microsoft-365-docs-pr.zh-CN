@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 设置 Microsoft 365 终结点数据丢失防护，以监视文件活动并将针对这些文件的保护措施实施到终结点。
-ms.openlocfilehash: 7dbceb97b7ccb542a0a4933f3e3cccf5a38026ea
-ms.sourcegitcommit: d859ea36152c227699c1786ef08cda5805ecf7db
+ms.openlocfilehash: 5a5c8e77679b55f20269b135da52bc0498fd7c11
+ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49604254"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49840921"
 ---
 # <a name="get-started-with-endpoint-data-loss-prevention"></a>终结点数据丢失防护入门
 
@@ -98,6 +98,8 @@ Microsoft 终结点数据丢失防护（终结点 DLP）是 Microsoft 365 数据
 5. 在终结点设备上安装 Microsoft Chromium Edge 浏览器，以对上传到云活动执行策略操作。 请参见[下载基于 Chromium 的新 Microsoft Edge](https://support.microsoft.com/help/4501095/download-the-new-microsoft-edge-based-on-chromium)。
 
 6. 如果使用的是 Microsoft 365 应用版的月度企业版 2004-2008，则终结点 DLP 的已知问题会分类 Office 内容，需要更新到版本 2009 或更高版本。 参见 [Microsoft 365 应用版的更新历史记录（按日期列出）](https://docs.microsoft.com/officeupdates/update-history-microsoft365-apps-by-date)。 要了解有关此问题的更多信息，请参阅[有关 2020 年当前频道发行的发行说明](https://docs.microsoft.com/officeupdates/current-channel#version-2010-october-27)。
+
+7. 如果你有使用设备代理连接到 internet 的端点，请按照 [配置设备代理和端点 DLP 的 internet 连接设置](endpoint-dlp-configure-proxy.md)中的过程进行操作。
 
 ## <a name="onboarding-devices-into-device-management"></a>将设备载入设备管理
 
