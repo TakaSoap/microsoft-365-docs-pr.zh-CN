@@ -19,11 +19,11 @@ ms.assetid: 5c47c07d-f9b6-4b78-a329-bfdc1b6da7a0
 ms.custom: seo-marvel-apr2020
 f1.keywords:
 - NOCSH
-description: 本文列出了由世纪银行在中国运营的 Office 365 的 URL 和 IP 地址范围。
+description: 本文列出了由中国的世纪互联运营的 Office 365 的 Url 和 IP 地址范围。
 hideEdit: true
 ms.openlocfilehash: 8a17cb9da5cf552615abf1ac20a67463e8430eb7
 ms.sourcegitcommit: a76de3d1604d755b29053e7bf557c0008be6ad23
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 01/08/2021
 ms.locfileid: "49787805"
