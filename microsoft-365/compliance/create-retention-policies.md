@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用保留策略可以非常高效地控制用户使用电子邮件、文档和对话生成的内容。 保留所需内容并删除不需要的内容。
-ms.openlocfilehash: 6816905155feb321ae9821c2f0dd47a271a382c9
-ms.sourcegitcommit: d859ea36152c227699c1786ef08cda5805ecf7db
+ms.openlocfilehash: d79a505731eea8b48e19507ff6ae9558cb9a78b2
+ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49604244"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49840865"
 ---
 # <a name="create-and-configure-retention-policies"></a>创建和配置保留策略
 
@@ -53,7 +53,7 @@ ms.locfileid: "49604244"
 - yammer 社区消息
 - Yammer 私人消息
 
-如果你在创建保留策略时选择 Teams 或 Yammer 位置，其他位置将被自动排除。 因此，需遵循的说明取决于你是需要包含 Teams 还是 Yammer 位置：
+如果你在创建保留策略时选择 Teams 或 Yammer 位置，其他位置将被自动排除。 因此，需遵循的说明取决于你是需要包含 Teams 或 Yammer 位置：
 
 - [有关 Teams 位置的保留策略的说明](#retention-policy-for-teams-locations)
 - [有关 Yammer 位置的保留策略的说明](#retention-policy-for-yammer-locations)
@@ -257,17 +257,20 @@ Yammer 不仅仅是社区消息和私人消息。 若要保留和删除 Yammer �
 
 ### <a name="a-policy-with-specific-inclusions-or-exclusions"></a>包含或排除特定位置、用户或组的策略
 
-使用可选配置将保留设置范围限定于特定用户、特定 Microsoft 365 组或特定网站时，需要注意以下几点： 
+只有当使用可选配置将保留设置搜索范围缩小到特定用户、特定 Microsoft 365 组或特定网站时，才需要注意每个策略的限制： 
 
 - 保留策略的最大数量：
-  - 1,000 个邮箱
+  - 1000个邮箱（用户邮箱或组邮箱）
   - 1,000 个 Microsoft 365 组
   - 1000 个用户的 Teams 私人聊天
   - 100 个网站（OneDrive 或 SharePoint）
 
-还有租户受支持的最大策略数：10,000。 但在 Exchange Online 中最大策略数为 1800。 最大策略数包括保留策略、保留标签策略和自动应用保留策略。
+这些限制针对每个策略，因此如果你需要使用会导致超过这些数字的特定包含或排除，则可以创建具有相同保留设置的额外保留策略。 请参阅下一节，了解为此理由使用多重保留策略的一些 [场景示例和解决方案](#examples-of-using-inclusions-and-exclusions)。 多重保留策略会产生更高的管理费用，因此要时刻质疑自己是否真的需要包含和排除。 请记住，适用于整个位置的默认配置没有任何限制，这种配置选择可能是比创建和维护多重策略更好的解决方案。
 
-如果你的保留策略可能受制于这些限制，请使用适用于整个位置的默认配置，因为这些策略没有任何限制。
+> [!TIP]
+> 如果需要为此方案创建和维护多重保留策略，请考虑使用 [PowerShell](retention.md#powershell-cmdlets-for-retention-policies-and-retention-labels) 以实现更高效的配置。
+
+还有租户受支持的最大策略数：10,000。 但在 Exchange Online 中最大策略数为 1800。 最大策略数包括保留策略、保留标签策略和自动应用保留策略。
 
 若要使用可选配置限定保留设置的范围，请确保该位置的“**状态**”为“**开启**”，然后使用链接来包含或排除特定用户、Microsoft 365 组或者网站。
 
@@ -277,6 +280,28 @@ Yammer 不仅仅是社区消息和私人消息。 若要保留和删除 Yammer �
 > 例如，如果你指定了一个 要在根据配置删除数据的保留策略中包含的 SharePoint 网站，然后删除了这个网站，那么默认情况下，所有 SharePoint 网站都将受到永久删除数据的保留策略的约束。 这同样适用于针对 Exchange 收件人、OneDrive 帐户和 Teams 聊天用户等进行包含设置。
 >
 > 在这种情况下，如果不希望“**所有**”这一位置设置受制于保留策略，请关闭位置。 或者，指定将不受该策略约束的排除项。
+
+#### <a name="examples-of-using-inclusions-and-exclusions"></a>使用包含和排除的示例
+
+下面的示例提供了一些设计方案，可在不能仅指定保留策略的位置，并且必须考虑上一节中所述的限制时使用。
+
+Exchange 示例：
+
+- **要求**：在具有超过40000个用户邮箱的组织中，大多数用户必须将其电子邮件保留7年，但一部分已确定的用户（425）的电子邮件仅必须保留5年。
+
+- **解决方案**：为 Exchange 电子邮件创建一个保留期为7年的保留策略，并排除用户子集。 然后为 Exchange 电子邮件创建保留期为5年的第二个保留策略，其中包括用户子集。 
+    
+    在这两种情况下，包含和排除的数目都低于单个策略的最大指定邮箱数，并且用户的子集必须从第一个策略中明确排除，因为它的[保留期](retention.md#the-principles-of-retention-or-what-takes-precedence)比第二个策略长。 如果用户的子集需要更长的保留策略，则不需要将他们从第一个策略中排除。
+     
+    使用此解决方案，如果有其他人新加入组织，则其邮箱将自动包含在限期为7年的第一个策略中，并且不会对支持的最大数量产生任何影响。 但是，需要5年保留期的新用户将添加到包括和不包括数量中，并且该限制将达到1000个。
+
+SharePoint 示例：
+
+- **要求**：一个组织拥有几千个 SharePoint 网站，但只有2000个网站需要10年的保留期，8000个网站要求保留期为4年。
+
+- **解决方案**：为 SharePoint 创建20个保留策略，保留期为10年，其中包括100个特定的网站，并为 SharePoint 创建80条保留策略，保留期为4年，其中包括100个特定网站。
+    
+    由于无需保留所有 SharePoint 网站，因此必须创建指定特定网站的保留策略。 由于一个保留策略不支持超过100个指定网站，因此必须为两个保留期创建多个策略。 这些保留策略中包含的网站数量最多，因此下一个需要保留的新网站需要一个新的保留策略，而不考虑保留期。
 
 ## <a name="updating-retention-policies"></a>更新保留策略
 
