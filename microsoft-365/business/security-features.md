@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 商业高级安全性和合规性功能
+title: Microsoft 365 商业高级版安全性和合规性功能
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -23,106 +23,106 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: c123694a-1efb-459e-a8d5-2187975373dc
-description: 了解 Microsoft 365 商业高级版附带的安全功能，以帮助保护电脑、电话和平板电脑上的数据。
-ms.openlocfilehash: 587d80c27f867a387c901d23f4ec05f3c5905bf6
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+description: 了解 Microsoft 365 商业高级版提供的安全功能，以帮助保护电脑、手机和平板电脑上的数据。
+ms.openlocfilehash: b7fdd3d7fa25c23ee49ae82aa037588d8fba61a1
+ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48843480"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49840381"
 ---
-# <a name="microsoft-365-business-premium-security-and-compliance-features"></a>Microsoft 365 商业高级安全性和合规性功能
+# <a name="microsoft-365-business-premium-security-and-compliance-features"></a>Microsoft 365 商业高级版安全性和合规性功能
 
-Microsoft 365 商业高级版提供了简化的安全功能，以帮助保护电脑、电话和平板电脑上的数据。
+Microsoft 365 商业高级版提供简化的安全功能，以帮助保护电脑、手机和平板电脑上的数据。
     
 ## <a name="microsoft-365-admin-center-security-features"></a>Microsoft 365 管理中心安全功能
 
-您可以在管理中心中管理许多 Microsoft 365 商业高级安全功能，这使您可以更简单的方式打开或关闭这些功能。 在管理中心，您可以执行以下操作：
+可以在管理中心管理许多 Microsoft 365 商业高级版安全功能，这为你提供了打开或关闭这些功能的简化方法。 在管理中心中，你可以执行以下操作：
   
 - [设置 Android 或 iOS 设备的应用程序管理设置](app-protection-settings-for-android-and-ios.md) 。 
     
-    这些设置包括在设定的时间段后从非活动设备中删除文件、对工作文件进行加密、要求用户设置 PIN 等。
+    这些设置包括：在设置时间段后从非活动设备中删除文件、加密工作文件、要求用户设置 PIN 等。
     
 - [设置 Windows 10 设备的应用程序保护设置](protection-settings-for-windows-10-devices.md) 。 
     
-    这些设置可应用于公司拥有的或个人拥有的设备上的公司数据。
+    这些设置可应用于公司拥有或个人拥有的设备上的公司数据。
     
 - [设置 Windows 10 设备的设备保护设置](protection-settings-for-windows-10-pcs.md) 。 
     
-    您可以启用 [BitLocker](https://go.microsoft.com/fwlink/p/?linkid=871405) 加密以在设备丢失或被盗时帮助保护数据，并启用 [Windows 漏洞防护](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/enable-exploit-protection) 以提供针对勒索软件的高级防护。 
+    你可以启用 [BitLocker](https://go.microsoft.com/fwlink/p/?linkid=871405) 加密以帮助保护设备丢失或被盗时的数据，并且允许 Windows [攻击](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/enable-exploit-protection) 防护提供针对勒索软件的高级保护。 
     
 - [从设备中删除公司数据](remove-company-data.md)
     
-    如果设备丢失、被盗或员工离开你的公司，你可以远程擦除公司数据。
+    如果设备丢失、被盗或员工离开公司，你可以远程擦除公司数据。
     
-- [将 Windows 10 设备重置为其出厂设置](reset-devices-to-factory-settings.md) 。 
+- [将 Windows 10 设备重置为出厂设置](reset-devices-to-factory-settings.md) 。 
     
-    您可以重置任何已应用设备保护设置的 Windows 10 设备。
+    你可以重置应用了设备保护设置的任何 Windows 10 设备。
     
 ## <a name="additional-security-features"></a>其他安全功能 
 
-Microsoft 365 商业高级版中的高级功能可帮助您保护业务，抵御网络威胁并保护敏感信息。
+Microsoft 365商业高级版中的高级功能可用来帮助您保护企业免受网络威胁并保护敏感信息。
   
 - **[Microsoft Defender for Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)**
     
-    Microsoft Defender for Office 365 可帮助保护你的业务不受复杂的网络钓鱼和勒索软件攻击，旨在危害员工或客户信息。 这些功能包括： 
+    Microsoft Defender for Office 365 可帮助你的企业抵御旨在泄露员工或客户信息的复杂的网络钓鱼和勒索软件攻击。 这些功能包括： 
     
-  - 完善的附件扫描和 AI 分析，以检测并丢弃危险邮件。
+  - 复杂的附件扫描和 AI 功能分析，用于检测和丢弃危险邮件。
     
-  - 自动检查电子邮件中的链接以进行评估（如果它们是网络钓鱼方案的一部分）。 这使您可以安全地访问不安全的网站。
+  - 自动检查电子邮件中的链接，以评估它们是否属于网络钓鱼计划。 这可使你安全访问不安全的网站。
 
-- **[Azure 门户中的 Intune 的完整功能](https://go.microsoft.com/fwlink/p/?linkid=871403)**
+- **[Azure 门户中 Intune 的完整功能](https://go.microsoft.com/fwlink/p/?linkid=871403)**
     
-    通过在 Azure 门户中访问 Intune 管理中心，可以设置其他安全功能，如 MacOS 设备、iPhone 和 Android 设备的管理，以及 Windows 的高级设备管理，这些功能无法通过 Microsoft 365 管理中心提供。
-- **与 Azure AD Premium P1 计划相同的 [条件访问](https://docs.microsoft.com/azure/active-directory/conditional-access/overview)**
+    通过访问 Azure 门户中的 Intune 管理中心，你可以设置其他安全功能，例如 MacOS 设备、iPhone 和 Android 设备的管理，以及无法通过 Microsoft 365 管理中心提供的适用于 Windows 的高级设备管理。
+- **与 [Azure](https://docs.microsoft.com/azure/active-directory/conditional-access/overview) AD Premium P1 计划相同的条件访问**
 
 
-    条件访问可帮助保护您的组织不受登录风险、访问来自意外网络或区域设置的尝试、访问来自有风险的设备类型的尝试，等等。 在第一次身份验证完成后，将强制执行条件访问策略，并使用来自第一种身份验证事件的信号来确定是否应批准、拒绝或更多证明 (例如标识) 的第二种形式。
+    条件访问可帮助保护组织免受登录风险、意外网络或区域设置的访问尝试、来自有风险设备类型的访问尝试等。 条件访问策略是在完成第一次身份验证之后强制执行的，它使用来自第一个身份验证事件的信号来确定尝试的访问是否应获得批准、拒绝，或者是否要求更多证明 (例如第二种标识) 。
 
-    条件访问功能包括：
+    包含的条件访问功能包括：
 
-    - 基于用户名、组和角色的访问权限
-    - [基于应用程序的](https://docs.microsoft.com/azure/active-directory/conditional-access/app-based-conditional-access)访问 
-    - [基于位置的访问权限](https://docs.microsoft.com/azure/active-directory/authentication/howto-registration-mfa-sspr-combined#conditional-access-policies-for-combined-registration); 仅允许来自受信任的 IP 范围或特定国家/地区的访问 
-    - 需要对 access 进行 MFA
-    - 阻止对使用[旧版身份验证](https://docs.microsoft.com/azure/active-directory/conditional-access/block-legacy-authentication)的应用的访问
-    - 要求应用 tp 使用 [Intune 应用保护](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access)
-    - 自定义身份验证（如与第三方提供商的 MFA），例如，双核。
+    - 基于用户名、组和角色的访问
+    - 基于 [应用的访问](https://docs.microsoft.com/azure/active-directory/conditional-access/app-based-conditional-access) 
+    - [基于位置访问](https://docs.microsoft.com/azure/active-directory/authentication/howto-registration-mfa-sspr-combined#conditional-access-policies-for-combined-registration); 仅允许从受信任的 IP 范围或特定国家/地区访问 
+    - 需要 MFA 访问
+    - 阻止访问使用旧式 [身份验证的应用](https://docs.microsoft.com/azure/active-directory/conditional-access/block-legacy-authentication)
+    - 要求应用使用 [Intune 应用保护](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access)
+    - 自定义身份验证，例如使用第三方提供程序的 MFA，例如 DUO。
    
     其他功能：
-    - 混合 Azure AD 的[自助服务密码重置](https://docs.microsoft.com/azure/active-directory/authentication/concept-sspr-customization)
+    - [混合](https://docs.microsoft.com/azure/active-directory/authentication/concept-sspr-customization) Azure AD 的自助服务密码重置
     
 ## <a name="compliance-features"></a>合规性功能
 
-Microsoft 365 商业高级版订阅包括可帮助您维护合规性和法规标准的功能。
+Microsoft 365 商业高级版订阅包含可帮助你维护合规性和法规标准的功能。
 
--  (DLP) **[的数据丢失防护策略概述](https://docs.microsoft.com/microsoft-365/compliance/data-loss-prevention-policies)** 。 
+- **[DLP 策略中的数据丢失防护](https://docs.microsoft.com/microsoft-365/compliance/data-loss-prevention-policies)** (概述) 。 
     
-    您可以设置 DLP 以自动检测敏感信息，如信用卡号、社会保险号码等，以防止无意中与公司外部共享。
+    您可以将 DLP 设置为自动检测敏感信息（如信用卡号、社会保险号等）以防止他们在公司外意外共享。
     
 - **[Exchange Online Archiving](https://products.office.com/exchange/microsoft-exchange-online-archiving-email)**
     
-    Exchange Online 存档许可证使邮件能够通过连续数据备份轻松存档。 它存储用户的所有电子邮件，包括已删除的项目，以备日后发现或还原时需要。 此外，您还可以使用不同的保留策略来保留电子邮件数据以用于诉讼保留、电子数据展示或满足合规性要求。
+    Exchange Online Archiving许可证允许使用连续数据备份轻松存档邮件。 它存储用户的所有电子邮件，包括已删除的项目，以防稍后需要它们进行发现或还原。 此外，您可以使用不同的保留策略来保留诉讼保留、电子数据展示或满足合规性要求的电子邮件数据。
     
 - **[敏感度标签](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels)**
 
-   Microsoft 365 商业高级版包括 [Azure 信息保护计划 1](https://go.microsoft.com/fwlink/p/?linkid=871407)的所有功能。 使用此计划，可以创建 **敏感度标签** ，以允许您控制对电子邮件和文档中敏感信息的访问，其中包含 "请勿转发" 和 "不复制" 等控件。 您还可以将敏感信息分类为 "机密"，并指定如何在企业外部和内部共享保密信息。 企业级加密易于应用于电子邮件和文档，以确保信息保密。 您还可以安装适用于 Office 应用的 Azure 信息保护客户端外接程序。 有关详细信息，请参阅 [Azure 信息保护统一标记客户端](https://docs.microsoft.com/azure/information-protection/rms-client/unifiedlabelingclient-version-release-history)。 若要区分灵敏度标签，请安装 **AzInfoProtection_UL.exe** 。
+   Microsoft 365 商业高级版包括 Azure 信息保护计划 [1 的所有功能](https://go.microsoft.com/fwlink/p/?linkid=871407)。 通过此计划，可以创建敏感度标签，通过"不要转发"和"不复制"等控件控制对电子邮件和文档中敏感信息的访问。 还可以将敏感信息分类为"机密"，并指定分类信息在企业外部和内部共享方式。 企业级加密很容易应用于电子邮件和文档，以保持信息私密。 还可以安装适用于 Office 应用的 Azure 信息保护客户端外接程序。 有关详细信息，请参阅 [Azure 信息保护统一标签客户端](https://docs.microsoft.com/azure/information-protection/rms-client/unifiedlabelingclient-version-release-history)。 对于敏感度标签， **请安装** AzInfoProtection_UL.exe。
 
-您可以在安全 &amp; 合规性中心和 Intune 管理中心中管理这些功能。 随着时间的推移，简化的控件将添加到 Microsoft 365 管理中心。
+可以在安全合规中心和 Intune 管理中心管理 &amp; 这些功能。 随着时间的推移，简化的控件将添加到 Microsoft 365 管理中心。
   
     
 ## <a name="faq"></a>常见问题
 
- ### <a name="are-these-security-features-available-in-all-markets"></a>这些安全功能在所有市场中是否可用？
+ ### <a name="are-these-security-features-available-in-all-markets"></a>这些安全功能是否在所有市场中可用？
   
-是的，在销售 Microsoft 365 商业高级版的所有市场中均提供这些功能。
+是的，这些功能可在销售 Microsoft 365 商业高级版的所有市场中提供。
   
-### <a name="how-do-i-find-the-security-amp-compliance-center"></a>如何查找安全 &amp; 合规性中心？
+### <a name="how-do-i-find-the-security-amp-compliance-center"></a>如何查找安全 &amp; 合规中心？
   
-1. 使用管理员凭据[登录到 Microsoft 365 商业高级版](https://portal.microsoft.com/)。 
+1. [使用管理员凭据登录到 Microsoft 365 商业](https://portal.microsoft.com/) 高级版。 
     
-2. 在左侧导航中，找到 **管理中心** 并展开它。 
+2. 在左侧导航中，找到 **管理中心并** 展开它。 
     
-    ![在 Microsoft 365 管理中心的左侧导航中，选择 "管理中心"。](../media/fa4484f8-c637-45fd-a7bd-bdb3abfd6c03.png)
+    ![在 Microsoft 365 管理中心的左侧导航中，选择"管理中心"。](../media/fa4484f8-c637-45fd-a7bd-bdb3abfd6c03.png)
   
-3. 选择 " **安全 &amp; 合规性** " 以转到 "安全 &amp; 合规中心"。
+3. 选择 **&amp; "安全合规性** "以转到安全 &amp; 合规中心。

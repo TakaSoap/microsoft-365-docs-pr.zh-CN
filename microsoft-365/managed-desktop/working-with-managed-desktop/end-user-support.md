@@ -1,6 +1,6 @@
 ---
-title: 获取对 Microsoft 托管桌面的支持
-description: ''
+title: 获取用户对 Microsoft 托管桌面的支持
+description: 用户如何获取有关服务和设备的帮助
 keywords: Microsoft 托管桌面, Microsoft 365, 服务, 文档
 ms.service: m365-md
 author: jaimeo
@@ -9,69 +9,69 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 5b09b59efa6862782b04b7aa58d7c1fdc0383bb0
-ms.sourcegitcommit: 21c3e44862854c74e4008cfb661840f069c6b709
+ms.openlocfilehash: abd1b681f3d5900f846fde7922f2f4a2ca5821ef
+ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "48787530"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49841359"
 ---
 # <a name="getting-help-for-users"></a>获取针对用户的帮助
 
-您的组织中的用户可以通过两种方式获取 Microsoft 托管桌面设备的帮助： **获取帮助** 应用程序或电话支持。 这两个支持选项均可用于每周7天、每天24小时的用户。
+贵组织中用户可以使用两种方法获取有关其 Microsoft 托管桌面设备的帮助： **获取** 帮助应用或电话支持。 这两种支持选项都可供用户每周 7 天、每天 24 小时使用。
  
 >[!NOTE]
->这些支持选项对测试组中的设备不可用。
+>这些支持选项不适用于"测试"组的设备。
 
-## <a name="get-help-app"></a>获取帮助应用程序
+## <a name="get-help-app"></a>获取帮助应用
 
-为你的用户提供支持的首选方法是 **获取** 用户设备中内置的易于使用的界面的帮助。  
+为用户提供支持的首选方法是获取帮助，这是内置于用户设备的易于使用的界面。  
 
-![获取帮助应用程序图标](../../media/get-help.png)
+![获取帮助应用图标](../../media/get-help.png)
 
-这是安装在所有 Microsoft 托管桌面设备上并固定到任务栏的应用程序。 
+获取帮助是安装在所有 Microsoft 托管桌面设备上并固定到任务栏的应用程序。 
 
-- 用户可以请求回叫提供的电话号码，或与服务代表在线聊天。
-- 位于 Microsoft 托管桌面支持范围之外的请求将通过电话呼叫重定向到本地 IT 支持人员。
+- 用户可以请求对提供的电话号码的回拨，或与服务代表在线聊天。
+- Microsoft 托管桌面支持范围外的请求会通过电话呼叫重定向到本地 IT 支持人员。
 
 > [!NOTE]
-> "获取帮助" 应用的显示语言仅为英语，即使用户在设置其设备或在 "设备设置" 中选择了其他语言也是如此。 
+> "获取帮助"应用的显示语言仅为英语，即使用户在设置设备或设备设置时选择了其他语言。 
 
 ### <a name="prerequisites"></a>先决条件
-为了让你的用户能够通过应用获取帮助，请确保满足以下先决条件：
+若要让用户能够通过应用获取帮助，请确保满足以下先决条件：
 
-- 必须使用 [设置 Microsoft 托管桌面设备](../get-started/set-up-devices.md)中的方法之一在 Microsoft 托管桌面注册设备，例如 [自己注册新设备](../get-started/register-devices-self.md)。
-- 设备的显示语言必须设置为以下任何英语语言区域设置： en-us、en、en、en、en 或 en-ca。
-- "获取帮助" 应用程序应处于最新状态。 若要确认这一点，请检查 Microsoft Store 中的应用程序更新。
-- 某些 [终结点](../get-ready/network.md#endpoints-allowed-that-are-necessary-for-microsoft-managed-desktop) 必须可从设备访问。
+- 必须使用"设置 Microsoft 托管桌面设备"中的一种方法向 [Microsoft](../get-started/set-up-devices.md)托管桌面注册设备，例如，自己注册 [新设备](../get-started/register-devices-self.md)。
+- 设备的显示语言必须设置为以下任何英语区域设置：en-us、en-gb、en-au、en-nz 或 en-ca。
+- "获取帮助"应用应是最新的。 若要确认其状态，请在 Microsoft Store 中检查应用更新。
+- [某些终结点](../get-ready/network.md#endpoints-allowed-that-are-necessary-for-microsoft-managed-desktop)必须可从设备访问。
 
 > [!NOTE]
-> 在部署设备以完全运行后，获取帮助应用程序最多可能需要一小时时间。
+> "获取帮助"应用可能需要一个小时，才能将设备部署到完全运行。
 
-如果你已检查这些先决条件且获取帮助应用仍无法正常工作，你作为 IT 管理员应将 [支持请求](admin-support.md)文件。
+如果你已检查这些先决条件，并且"获取帮助"应用仍然无法工作，你作为 IT 管理员应提出支持 [请求](admin-support.md)。
 
 ## <a name="phone-support"></a>电话支持
 
-拥有 Microsoft 托管桌面设备的用户还可以访问他们可以拨打的免费电话号码。 当获取帮助不可用时，应使用此功能。 例如，如果用户无法登录到设备，或者设备已断开。 以下是电话支持电话号码：
+使用 Microsoft 托管桌面设备的用户还可以访问他们可以呼叫的免费电话号码。 当"获取帮助"不可用时，应该使用这些数字。 例如，如果他们无法登录设备，或者设备已损坏。 以下是电话支持的电话号码：
 
-- 美国： + 1 855 425 0216
-- 加拿大 (不包括魁北克) ： + 1 855 425 0216
-- 英国： + 44 800 026 0698
-- 比利时： + 32 800 58533
-- 卢森堡： + 352 800 40119
-- 澳大利亚： + 61 180 037 0619
-- 新西兰： + 64 988 44380
-- 瑞典： + 46 20 120 3554
-- 挪威： + 47 800 62584
-- 冰岛： + 354 800 9006
-- 爱尔兰： + 353 1 800 832272
-- 丹麦： + 45 80 40 04 01
-- 芬兰： + 358 800 525088
+- 美国：+1 855 425 0216
+- 加拿大 () ：+1 855 425 0216
+- 英国：+44 800 026 0698
+- 比利时：+32 800 58533
+- 卢森堡：+352 800 40119
+- 澳大利亚：+61 180 037 0619
+- 新西兰：+64 988 44380
+- 瑞典：+46 20 120 3554
+- 挪威：+47 800 62584
+- 冰岛：+354 800 9006
+- 爱尔兰：+353 1 800 832272
+- 丹麦：+45 80 40 04 01
+- 芬兰：+358 800 525088
 
 >[!NOTE]
->调用以验证你的身份时，你需要准备好组织电子邮件地址。 
+>调用以验证身份时，你需要准备好组织电子邮件地址。 
 
-## <a name="additional-resources"></a>其他资源
+## <a name="more-resources"></a>更多资源
 - [Microsoft 托管桌面的管理员支持](admin-support.md)。 
 - [支持 Microsoft 托管桌面](../service-description/support.md)。
-- 如果您已订阅 Microsoft 托管桌面，则可以在 [Microsoft 终结点管理器](https://endpoint.microsoft.com/)中 " **租户管理** " 菜单的 "microsoft 托管桌面" 部分下的 **联机资源** 中找到 "microsoft 托管桌面管理指南" 中的详细过程、流程、工作说明和 faq。
+- 如果你已订阅 Microsoft 托管桌面，可以在 Microsoft Endpoint Manager 的"租户管理"菜单的"Microsoft 托管桌面"部分下的 **"联机** 资源"中的"Microsoft 托管桌面管理指南"中查找详细过程、流程流、工作说明和 [常见问题](https://endpoint.microsoft.com/)解答。

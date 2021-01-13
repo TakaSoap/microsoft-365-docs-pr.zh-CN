@@ -1,5 +1,5 @@
 ---
-title: 核心电子数据展示事例的限制
+title: 核心电子数据展示案例中的限制
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -16,26 +16,33 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: 本文介绍了 Microsoft 365 核心电子数据展示事例的限制。
-ms.openlocfilehash: 6224ce5ecb8fc0439e43ab5e1362f8a618194202
-ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
+description: 本文介绍了 Microsoft 365 中的核心电子数据展示案例中的限制。
+ms.openlocfilehash: 43d267acdb0c1fee0202c74832b376e066241d7c
+ms.sourcegitcommit: 495b66b77d6dbe6d69e5b06b304089e4e476e568
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47358510"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49799659"
 ---
 # <a name="limits-in-core-ediscovery"></a>核心电子数据展示中的限制
 
-下表列出了与核心电子数据展示事例相关联的核心电子数据展示事例和保留的限制。 有关核心电子数据展示的详细信息，请参阅 [核心电子数据展示概述](ediscovery-cases.md)。
+下表列出了与核心电子数据展示事例关联的核心电子数据展示事例和保留的限制。 有关核心电子数据展示详细信息，请参阅 [核心电子数据展示概述](ediscovery-cases.md)。
     
-  |**限制说明**|**限制**|
+  | 限制说明 | 限制 |
   |:-----|:-----|
   |组织的最大事例数  <br/> |无限制  <br/> |
-  |组织的最大事例保留数  <br/> |10,000  <br/> |
-  |单个事例保留中的最大邮箱数  <br/> |1,000  <br/> |
-  |单个事例保留中的 SharePoint 和 OneDrive for business 网站的最大数量  <br/> |100  <br/> |
-  |显示在核心电子数据展示主页上的最大事例数，以及在某一事例中的保留、搜索和导出选项卡上显示的最大项目数。 <sup>1</sup> |1,000|
+  |组织的最大案例保留数  <br/> |10,000  <br/> |
+  |单个案例保留中的最大邮箱数  <br/> |1,000  <br/> |
+  |单个案例保留中 SharePoint 和 OneDrive for Business 网站的最大数量  <br/> |100  <br/> |
+  |核心电子数据展示主页上显示的最大事例数，以及事例中的保留、搜索和导出选项卡上显示的最大项目数。 <sup>1</sup> |1,000|
   |||
 
    > [!NOTE]
-   > <sup>1</sup> 若要查看超过1000个事例、保留、搜索或导出的列表，您可以使用相应的 Office 365 安全性 & 合规性 PowerShell cmdlet：<br/> [Get-compliancecase](https://docs.microsoft.com/powershell/module/exchange/get-compliancecase) <br/> [CaseHoldPolicy](https://docs.microsoft.com/powershell/module/exchange/get-caseholdpolicy)<br/> [Get-ComplianceSearch](https://docs.microsoft.com/powershell/module/exchange/get-compliancesearch)<br/> [New-compliancesearchaction](https://docs.microsoft.com/powershell/module/exchange/get-compliancesearchaction)
+   > <sup>1</sup> 若要查看超过 1，000 个事例、保留、搜索或导出的列表，可以使用相应的 Office 365 安全与合规 PowerShell & cmdlet：
+   > 
+   > - [Get-ComplianceCase](https://docs.microsoft.com/powershell/module/exchange/get-compliancecase)
+   > - [Get-CaseHoldPolicy](https://docs.microsoft.com/powershell/module/exchange/get-caseholdpolicy)
+   > - [Get-ComplianceSearch](https://docs.microsoft.com/powershell/module/exchange/get-compliancesearch)
+   > - [Get-ComplianceSearchAction](https://docs.microsoft.com/powershell/module/exchange/get-compliancesearchaction)
+
+有关与核心电子数据展示案例关联的内容搜索和导出相关的限制详细信息，请参阅内容搜索和核心 [电子数据展示的限制](limits-for-content-search.md)。

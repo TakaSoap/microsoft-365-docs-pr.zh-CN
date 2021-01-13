@@ -15,12 +15,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 现在可以将 DLP 策略应用于 Microsoft Teams 聊天和频道。 阅读本文，详细了解其工作方式。
-ms.openlocfilehash: 25ba5850f496c188c2a38d6cc5b68960a85e5e5f
-ms.sourcegitcommit: 7d4aa58ae9fc893825b6e648fa3f072c3ac59628
+ms.openlocfilehash: a34a094a3c0440933a3d44e0125939a02b4ae202
+ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/09/2021
-ms.locfileid: "49790156"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49840579"
 ---
 # <a name="data-loss-prevention-and-microsoft-teams"></a>数据丢失防护和 Microsoft Teams
 
@@ -97,7 +97,7 @@ The **What's this？** link opens an [article](data-loss-prevention-policies.md)
 
 4. 在 **"状态** "列中，打开 Teams 聊天 **和频道消息的策略**。<br/>![适用于 Teams 聊天和频道的 DLP](../media/dlp-teams-addteamschatschannels.png)<br/>
 
-5. 在" **选择** 位置"选项卡上，保留所有帐户的默认设置，或选择"允许 **我** 选择特定位置"，并指定要包含和排除的帐户、通讯组列表或安全组。 然后选择“**下一步**”。
+5. 在 **"选择位置** "选项卡上，保留所有帐户的默认设置，或选择"允许 **我** 选择特定位置"并指定要包含或排除的帐户。 然后选择“**下一步**”。
 
 6. 单击“**保存**”。
 
@@ -116,7 +116,7 @@ The **What's this？** link opens an [article](data-loss-prevention-policies.md)
 
 4. 在 **"命名策略"** 选项卡上，指定策略的名称和说明，然后选择"下一步 **"。**
 
-5. 在" **选择** 位置"选项卡上，保留所有帐户的默认设置，或选择"允许 **我** 选择特定位置"，并指定要包含和排除的帐户、通讯组列表或安全组。 然后选择“**下一步**”。
+5. 在 **"选择位置** "选项卡上，保留所有帐户的默认设置，或选择"允许 **我** 选择特定位置"并指定要包含或排除的帐户。 然后选择“**下一步**”。
 
 ![DLP 策略位置](../media/dlp-teams-selectlocationsnewpolicy.png)
 

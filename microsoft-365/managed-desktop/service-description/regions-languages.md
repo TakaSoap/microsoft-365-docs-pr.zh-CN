@@ -1,38 +1,38 @@
 ---
 title: 支持的区域和语言
-description: Microsoft 托管桌面支持的区域和语言
+description: Microsoft 托管桌面支持的地区和语言
 keywords: Microsoft 托管桌面, Microsoft 365, 服务, 文档
 ms.service: m365-md
 author: jaimeo
 ms.author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: c659772df6492d52a23ed099ebd21e878939b8f7
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: d2aed005f0f1497cc9b545f48a8cb1dae3c90fb2
+ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47950456"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49841383"
 ---
 # <a name="microsoft-managed-desktop-supported-regions-and-languages"></a>Microsoft 托管桌面支持的区域和语言
 
-本文提供了 Microsoft 托管桌面支持的区域和语言以及您可以在其中使用它的区域的详细信息。
+本文提供有关 Microsoft 托管桌面支持的地区和语言以及可以使用的区域的详细信息。
 
 ## <a name="supported-languages"></a>支持的语言
 
-英语是 Microsoft 托管桌面用户唯一可用的语言。 这包括用户和管理员的所有用户界面，以及与 [管理员支持](https://docs.microsoft.com/microsoft-365/managed-desktop/working-with-managed-desktop/admin-support) 和 [最终用户支持](https://docs.microsoft.com/microsoft-365/managed-desktop/working-with-managed-desktop/end-user-support)的所有交互。
+英语是 Microsoft 托管桌面用户唯一可用的语言。 此策略包括用户和管理员的所有用户界面，以及管理员支持和用户支持[的所有交互](https://docs.microsoft.com/microsoft-365/managed-desktop/working-with-managed-desktop/end-user-support)。 [](https://docs.microsoft.com/microsoft-365/managed-desktop/working-with-managed-desktop/admin-support)
 
 
-您仍可以在不中断 Microsoft 托管桌面服务的情况下，使用位于英语区域之外的托管设备。 例如，基于英国的员工可以在亚洲、欧洲或南美洲旅行时安全地工作并在其托管设备上接收更新。 
+你仍然可以在英语区域之外使用托管设备，而不会中断 Microsoft 托管桌面服务。 例如，位于英国的员工可以安全地工作，并可以在出差到亚洲、欧洲或南非时，在托管设备上接收更新。 
 
-有关使用 Microsoft 托管桌面的用户支持的详细信息，请参阅 [支持 Microsoft 托管桌面](https://docs.microsoft.com/microsoft-365/managed-desktop/service-description/support)。
+有关 Microsoft 托管桌面的用户支持详细信息，请参阅 [Microsoft 托管桌面支持](https://docs.microsoft.com/microsoft-365/managed-desktop/service-description/support)。
 
 ## <a name="availability-of-the-service"></a>服务的可用性
 
-以下国家/地区的组织可以订阅 Microsoft 托管桌面：
+以下国家/地区中的组织可以订阅 Microsoft 托管桌面：
 
 - 美国
-- 加拿大 (不包括魁北克) 
+- 加拿大 (（澳大利亚）) 
 - 英国
 - 爱尔兰
 - 比利时
@@ -46,4 +46,4 @@ ms.locfileid: "47950456"
 - 澳大利亚
 - 新西兰
 
-这些区域中的用户和管理员必须对其设备和管理工具使用英语。 
+这些地区的用户和管理员都必须使用英语作为设备和管理工具。 

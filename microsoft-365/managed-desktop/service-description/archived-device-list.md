@@ -1,6 +1,6 @@
 ---
 title: Microsoft 托管桌面存档设备
-description: 你仍然可以注册但支持时间将缩短的设备即将停用
+description: 即将停用的设备仍可注册，但支持时间将缩短
 keywords: Microsoft 托管桌面, Microsoft 365, 服务, 文档
 ms.service: m365-md
 author: jaimeo
@@ -11,23 +11,23 @@ ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 57b49e49a20ee9e088301e90590c19cfabf89a2b
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+ms.openlocfilehash: 5d386000fab8894dd60790d3514ae93feaa03a22
+ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49658937"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49841275"
 ---
 # <a name="microsoft-managed-desktop-archived-devices"></a>Microsoft 托管桌面存档设备
 
-为了确保最佳用户体验，Microsoft 托管桌面在特定时间点停用对设备的支持。 本主题列出了在几年内即将停用的设备，我们将其称为"已存档"。 如果你已使用已有的设备开始使用 Microsoft 托管桌面，应仔细检查此列表。
+为了确保最佳用户体验，Microsoft 托管桌面在特定时间点停用对设备的支持。 本文列出了在几年内即将停用的设备，我们将其称为"已存档"。 如果你已使用已有的设备开始使用 Microsoft 托管桌面，应仔细检查此列表。
 
 >[!IMPORTANT]
 >现在，你仍然可以注册这些设备，但它们使用 Microsoft 托管桌面的服务时间将更短。 如果你要购买新设备，你应该使用活动设备 [列表中的型号](./device-list.md)。
 
 <!-- Microsoft 365 E5; Device as a Service -->
 <!-- Split from device & technologies topic. Destination topic for aka.ms/device-list  -->
-若要在 Microsoft 托管桌面中注册，设备必须是以下型号之一，并且必须满足或超过列出的 RAM、处理器系列和磁盘空间规格。 不支持其他自定义。
+若要在 Microsoft 托管桌面中注册，设备必须是以下型号之一，并且满足或超过列出的 RAM、处理器系列和磁盘空间规格。 不支持其他自定义。
 
 
 
@@ -47,7 +47,7 @@ ms.locfileid: "49658937"
 |Dell Optiplex 3070 | 128 GB / Intel i3 / 8 GB RAM | 无 | **2025 年 5 月 1 日**  |
 |HP EliteBook 830 / 840 / 850 G5| 128 GB / Intel i5 / 8 GB RAM | 需要具有 5VS01AV、IR 相机或指纹传感器的 SKU  | **2023 年 2 月 15 日** |
 |HP EliteBook 830 / 840 / 850 G6| 128 GB / Intel i5 / 8 GB RAM | 需要具有 5VS01AV、IR 相机或指纹传感器的 SKU  | **2023 年 11 月 30 日** |
-|HP Elite x2 1013 G3| 256 GB / Intel i5 / 8 GB RAM | 具有 5VS03AV 的 SKU，需要 IR 相机 |**2023 年 5 月 14 日** |
+|HP Elite x2 1013 G3| 256 GB / Intel i5 / 8 GB RAM | 需要 5VS03AV、IR 相机的 SKU |**2023 年 5 月 14 日** |
 |HP EliteBook x360 1030 G5| 256 GB / Intel i5 / 8 GB RAM | 具有 5VS01AV 的 SKU，需要 IR 相机 |**2023 年 5 月 14 日** |
 |HP EliteBook x360 1030 G6| 256 GB / Intel i5 / 8 GB RAM | 具有 5VS01AV 的 SKU，需要 IR 相机 |**2023 年 11 月 30 日** |
 |HP EliteBook x360 1040 G5| 256 GB / Intel i5 / 8 GB RAM | 具有 5VS01AV 的 SKU，需要 IR 相机 | **2023 年 10 月 23 日** |
@@ -66,14 +66,14 @@ ms.locfileid: "49658937"
 
 此外，设备还必须：
 
-- 具有 Microsoft 托管桌面批准的图像。 在订购设备时，请确保指定它们正用于 Microsoft 托管桌面。
+- 具有 Microsoft 托管桌面批准的映像。 在订购设备时，请确保指定它们正用于 Microsoft 托管桌面。
 - 尚未完成 Windows 首次运行体验。
-- 使用设备注册功能向 Microsoft 托管 [桌面](https://aka.ms/mmddrhelp) 注册
+- 使用设备注册功能向 Microsoft 托管[桌面注册](https://aka.ms/mmddrhelp)
 
-#### <a name="additional-help"></a>其他帮助
+#### <a name="more-help"></a>更多帮助
 
 这些资源可以帮助回答你可能对特定设备的问题：
 
-- 有关 Dell 设备的更多问题，[请与MMD_at_dell@dell.com。](mailto:MMD_at_dell@dell.com)
+- 有关 Dell 设备的更多问题， [请与](mailto:MMD_at_dell@dell.com)MMD_at_dell@dell.com。
 
 - 有关 HP 设备的更多问题，请联系：美洲[ (mmd-americas@hp.com) ;](mailto:mmd-americas@hp.com)欧洲/中东/非洲[ (mmd-emea@hp.com) ;](mailto:mmd-emea@hp.com)亚太地区/日本[ (mmd-apj@hp.com) ;](mailto:mmd-apj@hp.com)全局[ (mmd@hp.com) ](mailto:mmd@hp.com)

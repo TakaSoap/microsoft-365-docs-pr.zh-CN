@@ -1,6 +1,6 @@
 ---
 title: Microsoft 托管桌面中的安全操作
-description: ''
+description: 安全运营中心提供的服务和流程
 keywords: Microsoft 托管桌面, Microsoft 365, 服务, 文档
 ms.service: m365-md
 author: jaimeo
@@ -9,36 +9,36 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 5698e2a88adf3d2bae84a82e0e001132293e36be
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 4464c9c491af11831a3511dab60a472f1584d7f6
+ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48847712"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49840326"
 ---
 # <a name="security-operations-in-microsoft-managed-desktop"></a>Microsoft 托管桌面中的安全操作
 
-Microsoft 托管桌面安全操作中心 (SOC) 合作伙伴与您的信息安全人员保持安全，以确保您的桌面环境安全。 我们的团队使用专家分析在托管设备上接收和响应所有安全警报，并在需要时推动安全事件响应活动。 有关使用 SOC 的详细信息，请参阅管理门户的操作文档。
+Microsoft 托管桌面安全运营 (SOC) 与信息安全人员合作，以确保桌面环境安全。 我们团队通过专家分析接收和响应托管设备上的所有安全警报，并根据需要推动安全事件响应活动。 有关使用 SOC 的信息，请查看管理门户中的操作文档。
 
-SOC 在 Microsoft 全职员工中提供24/7/365 的覆盖范围，其中包含当前和新兴威胁环境的专业技能，包括通过软件、网络或人类 adversaries 的常见攻击方法。
+SOC 提供来自 Microsoft 全职员工的 24/7/365 范围，这些员工具有当前和新出现的威胁环境的专业知识，包括通过软件、网络或人为攻击的常见攻击方法。
 
 SOC 提供以下服务：
-- 对检测到的事件的快速且准确的响应，并分析数据以确定影响并评估设备或环境的总体风险
-- 设备管理和隔离操作，以保护您的环境免受已知或可疑的威胁，通过阻止传播降低风险
-- 推动安全事件响应流程，以确保与安全团队及时准确地进行通信
-- 基于威胁和漏洞数据的分析和建议，以在风险被利用之前识别和解决风险
-- 跨托管设备的高级搜寻，以确定已知和潜在威胁的指标和实体
+- 对检测到的事件做出快速准确的响应，并分析数据以确定对设备或环境的影响并评估总体风险
+- 用于保护环境免受已知或可疑泄露的设备管理和隔离操作，通过防止传播来降低风险
+- 推动安全事件响应流程，确保与安全团队及时准确地沟通
+- 基于威胁和漏洞数据的分析和建议，以在被利用之前识别和解决风险
+- 跨托管设备的高级搜寻，以标识已知和潜在威胁的指示器和实体
 
 ## <a name="processes"></a>进程
 
-- Microsoft 托管桌面安全操作由与 Microsoft 的 [网络防御运营中心](https://www.microsoft.com/msrc/cdoc)合作的全时 microsoft 员工组成。 
-- 我们的 SOC 使用来自我们公司（内部和外部）的集体信号来保护你的设备--甚至来自 Microsoft 托管桌面尚未看到的东西。
-- Microsoft 安全解决方案对应于许多 cybersecurity 保护标准。 SOC 操作基于美国国家标准和技术计算机安全事件响应处理指南 (NIST 800-61 r2) 。
-- 此过程允许正确收集信息和证据，以供分析和文档和恢复后深入了解通过以下阶段更好地保护环境的方法：
+- Microsoft 托管桌面安全操作由全职 Microsoft 员工与 Microsoft 网络防御操作中心 [合作配备](https://www.microsoft.com/msrc/cdoc)。 
+- 我们的 SOC 使用来自公司内部和外部的集中信号来保护你的设备，甚至防止我们在 Microsoft 托管桌面中尚未看到的信息。
+- Microsoft 安全解决方案符合许多网络安全保护标准。 SOC 操作基于 NIST 800-61 r2 (国家标准和技术协会计算机安全事件响应) 。
+- 此过程允许正确收集信息和证据，用于分析和记录恢复后见解，以通过以下阶段更好地保护环境：
     - 准备、检测和分析
-    - 内嵌
-    - Eradication
-    - 恢复流程
+    - 包含
+    - 一个
+    - 恢复
     - 事件后活动
-- Microsoft 托管桌面客户有资格注册 Microsoft 威胁专家服务。 使用此服务的 SOC 与可以更好地了解影响组织的复杂威胁，包括警报查询、潜在的受损设备、可疑网络连接的根本原因以及有关持续的高级威胁市场活动的其他威胁智能。 有关详细信息，请参阅 [Microsoft 威胁专家](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-threat-experts)。
-- SOC 的威胁和漏洞管理过程使用 Microsoft 的一些服务来帮助通知组织的建议，以防范威胁。 SOC 使用 Microsoft Defender for Endpoint Security Center 中的数据以及来自 Microsoft 内部和外部的相关漏洞数据源，以发现漏洞和错误配置并提供可操作的报告。
+- Microsoft 托管桌面客户有资格注册 Microsoft 威胁专家服务。 SOC 通过此服务更好地了解影响组织的复杂威胁，包括警报查询、可能受到威胁的设备、可疑网络连接的根本原因，以及有关正在进行的高级永久性威胁活动的其他威胁情报。 有关详细信息，请参阅 [Microsoft 威胁专家](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-threat-experts)。
+- SOC 的威胁和漏洞管理过程使用 Microsoft 的一些服务来帮助为组织提供建议，防止威胁。 SOC 使用来自适用于终结点安全中心的 Microsoft Defender 以及 Microsoft 内外的相关漏洞数据源的数据，以发现漏洞和错误配置并提供可操作的报告。

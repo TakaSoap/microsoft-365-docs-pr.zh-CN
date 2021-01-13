@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 3c3c0d21ca93c0d93d17cefbc6ce630d00a16d09
-ms.sourcegitcommit: 222fb7fe2b26dde3d8591b61cc02113d6135012c
+ms.openlocfilehash: ada6bb8ef66e3414a375a151b45d4871e306e825
+ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "49760120"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49841060"
 ---
 # <a name="fix-issues-found-by-the-readiness-assessment-tool"></a>修复准备情况评估工具发现的问题
 
@@ -247,7 +247,7 @@ Intune 中的"Windows 10 更新圈"策略不得面向任何 Microsoft 托管桌�
 
 **公告**
 
-确保你已排除任何更新圈策略，不包括 **现代工作区设备 -所有** Azure AD 组。 如果你向这些策略分配了 Azure AD 用户组，请确保你已排除所有更新圈策略，其中还包括 Microsoft 托管桌面用户的现代 **工作区 -所有** Azure AD 组。 有关步骤，请参阅 [在 Intune 中管理 Windows 10 软件更新](https://docs.microsoft.com/mem/intune/protect/windows-update-for-business-configure)。 现代 **工作区设备-全部** 和现代工作区 **-** 所有 Azure AD 组均分配有你在 Microsoft 托管桌面中注册时创建的组，因此你必须在注册后返回以排除此组。
+确保你已排除任何更新圈策略，不包括 **现代工作区设备 -所有** Azure AD 组。 如果你已向这些策略分配 Azure AD 用户组，请确保你已排除所有更新圈策略，其中还包括 Microsoft 托管桌面用户的现代 **工作区 -所有** Azure AD 组。 有关步骤，请参阅 [在 Intune 中管理 Windows 10 软件更新](https://docs.microsoft.com/mem/intune/protect/windows-update-for-business-configure)。 现代 **工作区设备-全部** 和现代工作区 **-** 所有 Azure AD 组均分配有你在 Microsoft 托管桌面中注册时创建的组，因此你必须在注册后返回以排除此组。
 
 
 ## <a name="azure-active-directory-settings"></a>Azure Active Directory 设置
