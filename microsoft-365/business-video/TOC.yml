@@ -159,3 +159,5 @@
           href: get-help-support.md
         - name: 员工快速设置
           href: employee-quick-setup.md
+    - name: 从 Google Workspace 切换
+      href: moveto-microsoft-365/move-from-google-workspace-overview.md
