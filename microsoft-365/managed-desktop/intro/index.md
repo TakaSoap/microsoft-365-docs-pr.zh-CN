@@ -1,6 +1,6 @@
 ---
-title: Microsoft 托管桌面是否适合你
-description: ''
+title: Microsoft 托管桌面是否适合你？
+description: 服务的方向以及面向不同受众的文章的快捷方式
 keywords: Microsoft 托管桌面, Microsoft 365, 服务, 文档
 ms.service: m365-md
 author: jaimeo
@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: b877a35133be13cd6783659f1e5d981633338be8
-ms.sourcegitcommit: 96b4593becc9450af136c528844e858c6e88b5a9
+ms.openlocfilehash: 8e95eb0fd0e03dc718affa7e7cf044beb654bb56
+ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "48269369"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49840931"
 ---
 # <a name="what-is-microsoft-managed-desktop"></a>什么是 Microsoft 托管桌面？
 
@@ -49,15 +49,15 @@ Microsoft 托管桌面提供了一种解决方案，可解决企业及其人员�
 IT 管理员将受益于以下功能：
 
 - 见解仪表板将不断更新使用情况、可靠性、设备运行状况以及设备和用户的其他数据
-- 只需大约*十分之一*的时间即可更新 95% 的设备
+- 只需大约 *十分之一* 的时间即可更新 95% 的设备
 - 由于该服务提供了[设备管理](#device-management)功能，因此可以有更多时间专注于其他 IT 管理活动。
 - 通过[设备监视](#device-monitoring)，更好地了解设备和应用的性能，并对安全问题进行预警。
 
 ## <a name="device-management"></a>设备管理
 Microsoft 托管桌面承担着管理注册的设备及其使用的 Microsoft 软件的重任。
 
-- **硬件：** IT 部门不必研究和测试设备（及其驱动程序），而是由 Microsoft 托管桌面仔细测试特定设备，从而得到一份精心编制的[设备列表](../service-description/device-list.md)，这些设备需要能够满足企业级别的性能要求，并保证可以使用该服务。 你可以自行获取设备（或与合作伙伴合作），也可以重复使用已经拥有的设备，前提是它们在批准列表中。 注册设备很简单，而且在部署之前，你还可以为用户[定制](../working-with-managed-desktop/config-setting-overview.md)设备体验的某些方面。
-- **更新：** Microsoft 托管桌面可针对 Windows 10 质量和功能更新、驱动程序、固件、反病毒定义和 Microsoft 365 企业应用版更新，设置和管理[部署组](../service-description/updates.md)的所有方面。 这包括对所有更新的广泛测试和验证，可确保注册的设备始终保持最新状态并最大限度地减少中断，从而将 IT 部门从这种持续的任务中解放出来。
+- **硬件：** IT 部门不必研究和测试设备（及其驱动程序），而是由 Microsoft 托管桌面仔细测试特定设备，从而得到一份精心编制的 [设备列表](../service-description/device-list.md)，这些设备需要能够满足企业级别的性能要求，并保证可以使用该服务。 你可以自行获取设备（或与合作伙伴合作），也可以重复使用已经拥有的设备，前提是它们在批准列表中。 注册设备很简单，而且在部署之前，你还可以为用户[定制](../working-with-managed-desktop/config-setting-overview.md)设备体验的某些方面。
+- **更新：** Microsoft 托管桌面可针对 Windows 10 质量和功能更新、驱动程序、固件、反病毒定义和 Microsoft 365 企业应用版更新，设置和管理 [部署组](../service-description/updates.md)的所有方面。 这包括对所有更新的广泛测试和验证，可确保注册的设备始终保持最新状态并最大限度地减少中断，从而将 IT 部门从这种持续的任务中解放出来。
 - **应用：** 作为 Microsoft 365 企业版的一部分，Microsoft 可为你提供（和管理）多个关键 Microsoft 应用。 但是你可能还拥有你的企业所需的其他应用。 IT 部门不必再去测试、打包和部署这些应用，Microsoft 将帮助你部署它们并在需要时通过[桌面应用保证](https://docs.microsoft.com/fasttrack/win-10-desktop-app-assure)提供帮助。 有关详细信息，请参阅 [Microsoft 托管桌面中的应用](../get-ready/apps.md)。
 
 
@@ -71,9 +71,9 @@ Microsoft 托管桌面承担着管理注册的设备及其使用的 Microsoft �
 ## <a name="need-more-details"></a>需要更多详细信息？
 有关 Microsoft 托管桌面的价值的详细信息（包括客户故事），请参阅 [Microsoft 托管桌面](https://aka.ms/mmd)。 如需开始了解更多方面，[路线图](https://aka.ms/AA6jiam)、[Forrester 总体经济影响案例研究](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/intro/downloads/forrester-tei-study.pdf)和一份可下载的[单页摘要](https://aka.ms/AA6ob3h)将会是不错的选择。 你可以在 Microsoft 托管桌面[博客](https://aka.ms/AA6l2dd)中找到最新消息。
 
-如果 Microsoft 托管桌面看上去适合你的组织，你可以深入研究其他文档，了解有关该服务的更多信息、如何为组织做好注册准备、如何开始使用该服务以及此后要进行的操作，包括你和你的用户如何在需要时轻松获得帮助。 如果你已经准备好部署该服务，请首先联系[当地的客户团队](https://pages.email.office.com/contactmmd/)。
+如果 Microsoft 托管桌面看上去适合你的组织，你可以深入研究更多文档，了解有关该服务的更多信息、如何为组织做好注册准备、如何开始使用该服务以及此后要进行的操作，包括你和你的用户如何在需要时轻松获得帮助。 如果你已经准备好部署该服务，请首先联系[当地的客户团队](https://pages.email.office.com/contactmmd/)。
 
-**更多概述和背景**：主要针对技术和业务决策者，这些主题详细说明了你的组织与 Microsoft 之间的角色和责任划分，以及 Microsoft 托管桌面中使用的技术和该服务如何作为 ITIL 框架的一部分融入更广泛的策略中。
+**更多概述和背景**：主要针对技术和业务决策者，这些文章详细说明了你的组织与 Microsoft 之间的角色和责任划分，以及 Microsoft 托管桌面中使用的技术和该服务如何作为 ITIL 框架的一部分融入更广泛的策略中。
 
 - [Microsoft 托管桌面角色和责任](roles-and-responsibilities.md)
 - [Microsoft 托管桌面技术](technologies.md)

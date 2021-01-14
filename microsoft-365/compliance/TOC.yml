@@ -241,6 +241,8 @@
           href: endpoint-dlp-learn-about.md
         - name: 终结点数据丢失防护入门
           href: endpoint-dlp-getting-started.md
+        - name: 为 Endpoint DLP 配置设备代理和 Internet 连接设置
+          href: endpoint-dlp-configure-proxy.md
         - name: 使用端点数据丢失防护
           href: endpoint-dlp-using.md
         - name: Windows 10 设备的 Endpoint DLP 载入工具和方法
@@ -463,7 +465,7 @@
           href: retention-regulatory-requirements.md
 - name: 管理电子数据展示
   items:
-    - name: Microsoft 365 中的电子数据展示
+    - name: Microsoft 365 电子数据展示解决方案
       href: ediscovery.md
     - name: 内容搜索
       items:
@@ -580,9 +582,11 @@
       items:
         - name: 高级电子数据展示概述
           href: overview-ediscovery-20.md
-        - name: 高级电子数据展示入门
+        - name: 设置高级电子数据展示
           href: get-started-with-advanced-ediscovery.md
-        - name: 配合保管人和非保管人数据源一起使用
+        - name: 创建高级电子数据展示事例
+          href: create-and-manage-advanced-ediscoveryv2-case.md
+        - name: 管理保管人和非保管人数据源
           href: managing-custodians.md
           items:
             - name: 向事例添加保管人
@@ -595,7 +599,7 @@
               href: view-custodian-activity.md
             - name: 向事例添加非保管人数据源
               href: non-custodial-data-sources.md
-        - name: 处理通信
+        - name: 管理保管人通信
           href: managing-custodian-communications.md
           items:
             - name: 创建保留通知
@@ -608,7 +612,7 @@
               href: acknowledge-hold-notification.md
         - name: 管理保留
           href: managing-holds.md
-        - name: 解决处理错误
+        - name: 管理处理错误
           href: processing-data-for-case.md
           items:
             - name: 保管人数据的高级索引
@@ -677,6 +681,8 @@
               href: configure-search-and-analytics-settings-in-advanced-ediscovery.md
         - name: 高级电子数据展示参考
           items:
+            - name: 通过 EDRM 协调高级电子数据展示
+              href: advanced-ediscovery-edrm.md
             - name: 高级电子数据展示限制
               href: limits-ediscovery20.md
             - name: 支持的文件类型
