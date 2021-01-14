@@ -15,154 +15,154 @@ search.appverid:
 ms.assetid: 4250c4bc-6102-420b-9e0a-a95064837676
 ms.collection:
 - M365-security-compliance
-description: 了解如何为单个用户或您的整个组织启用 Outlook 和 web 上的 outlook 和 Outlook 网页版报告消息外接程序。
-ms.openlocfilehash: baed46e500e58702b7031db5aa5ff376a4eafcb5
-ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
+description: 了解如何为单个用户或整个组织启用 Outlook 和 Outlook 网页邮件外接程序。
+ms.openlocfilehash: 13721317c33cf207f27cd8b98fb6d32864651847
+ms.sourcegitcommit: cc354fd54400be0ff0401f60bbe68ed975b69cda
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48877749"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "49864992"
 ---
-# <a name="enable-the-report-message-add-in"></a><span data-ttu-id="74cc5-103">启用报表消息加载项</span><span class="sxs-lookup"><span data-stu-id="74cc5-103">Enable the Report Message add-in</span></span>
+# <a name="enable-the-report-message-add-in"></a><span data-ttu-id="dabff-103">启用报表消息加载项</span><span class="sxs-lookup"><span data-stu-id="dabff-103">Enable the Report Message add-in</span></span>
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
 > [!NOTE]
-> <span data-ttu-id="74cc5-104">如果您是使用 Exchange Online 邮箱的 Microsoft 365 组织中的管理员，我们建议您在安全 & 合规性中心中使用提交门户。</span><span class="sxs-lookup"><span data-stu-id="74cc5-104">If you're an admin in a Microsoft 365 organization with Exchange Online mailboxes, we recommend that you use the Submissions portal in the Security & Compliance Center.</span></span> <span data-ttu-id="74cc5-105">有关详细信息，请参阅 [使用管理员提交将可疑的垃圾邮件、网络钓鱼、url 和文件提交给 Microsoft](admin-submission.md)。</span><span class="sxs-lookup"><span data-stu-id="74cc5-105">For more information, see [Use Admin Submission to submit suspected spam, phish, URLs, and files to Microsoft](admin-submission.md).</span></span>
+> <span data-ttu-id="dabff-104">如果你是具有 Exchange Online 邮箱的 Microsoft 365 组织的管理员，我们建议你使用安全与合规中心&门户。</span><span class="sxs-lookup"><span data-stu-id="dabff-104">If you're an admin in a Microsoft 365 organization with Exchange Online mailboxes, we recommend that you use the Submissions portal in the Security & Compliance Center.</span></span> <span data-ttu-id="dabff-105">有关详细信息，请参阅"使用管理员提交"将可疑的垃圾邮件、网络钓鱼[、URL 和文件提交到 Microsoft。](admin-submission.md)</span><span class="sxs-lookup"><span data-stu-id="dabff-105">For more information, see [Use Admin Submission to submit suspected spam, phish, URLs, and files to Microsoft](admin-submission.md).</span></span>
 
-<span data-ttu-id="74cc5-106">Outlook 和 web 上的 outlook 的报告邮件外接程序 (以前称为 Outlook Web App) 使人们可以轻松地报告误报 (电子邮件被标记为错误的) 或漏报 (错误的电子邮件将) 到 Microsoft 及其子公司进行分析。</span><span class="sxs-lookup"><span data-stu-id="74cc5-106">The Report Message add-in for Outlook and Outlook on the web (formerly known as Outlook Web App) enables people to easily report false positives (good email marked as bad) or false negatives (bad email allowed) to Microsoft and its affiliates for analysis.</span></span> <span data-ttu-id="74cc5-107">Microsoft 使用这些提交改进电子邮件保护技术的有效性。</span><span class="sxs-lookup"><span data-stu-id="74cc5-107">Microsoft uses these submissions to improve the effectiveness of email protection technologies.</span></span>
+<span data-ttu-id="dabff-106">Outlook 和 Web 上的 Outlook 的"报告邮件"和"报告钓鱼"外接程序 (以前称为 Outlook Web App) ，它使用户能够轻松地将标记为错误 (的误报或误报) 或漏报 (错误电子邮件允许) 向 Microsoft 及其关联公司进行分析。</span><span class="sxs-lookup"><span data-stu-id="dabff-106">The Report Message and Report Phishing add-ins for Outlook and Outlook on the web (formerly known as Outlook Web App) enables people to easily report false positives (good email marked as bad) or false negatives (bad email allowed) to Microsoft and its affiliates for analysis.</span></span>
 
-<span data-ttu-id="74cc5-108">例如，假设有人将大量邮件报告为网络钓鱼。</span><span class="sxs-lookup"><span data-stu-id="74cc5-108">For example, suppose that people are reporting a lot of messages as phishing.</span></span> <span data-ttu-id="74cc5-109">[安全仪表板](security-dashboard.md)和其他报告中的此信息图面。</span><span class="sxs-lookup"><span data-stu-id="74cc5-109">This information surfaces in the [Security Dashboard](security-dashboard.md) and other reports.</span></span> <span data-ttu-id="74cc5-110">组织的安全团队可以使用此信息指示可能需要更新的反网络钓鱼策略。</span><span class="sxs-lookup"><span data-stu-id="74cc5-110">Your organization's security team can use this information as an indication that anti-phishing policies might need to be updated.</span></span> <span data-ttu-id="74cc5-111">或者，如果用户使用报告邮件外接程序报告大量被标记为垃圾邮件的邮件，则组织的安全团队可能需要调整 [反垃圾邮件策略](configure-your-spam-filter-policies.md)。</span><span class="sxs-lookup"><span data-stu-id="74cc5-111">Or, if people are reporting a lot of messages that were flagged as junk mail as Not Junk by using the Report Message add-in, your organization's security team might need to adjust [anti-spam policies](configure-your-spam-filter-policies.md).</span></span>
+<span data-ttu-id="dabff-107">Microsoft 使用这些提交来提高电子邮件保护技术的有效性。</span><span class="sxs-lookup"><span data-stu-id="dabff-107">Microsoft uses these submissions to improve the effectiveness of email protection technologies.</span></span> <span data-ttu-id="dabff-108">例如，如果用户报告大量使用报告邮件外接程序标记为"非垃圾邮件"的邮件，则组织的安全团队可能需要调整反垃圾邮件 [策略](configure-your-spam-filter-policies.md)。</span><span class="sxs-lookup"><span data-stu-id="dabff-108">For example, if people are reporting a lot of messages that were flagged as junk mail as Not Junk by using the Report Message add-in, your organization's security team might need to adjust [anti-spam policies](configure-your-spam-filter-policies.md).</span></span>
 
-<span data-ttu-id="74cc5-112">此外，如果您的组织使用 [的是 Microsoft Defender For Office 365 计划 1](office-365-atp.md) 或 [计划 2](office-365-ti.md)，则报告消息外接程序会为您组织的安全团队提供可用于查看和更新安全策略的有用信息。</span><span class="sxs-lookup"><span data-stu-id="74cc5-112">In addition, if your organization is using [Microsoft Defender for Office 365 Plan 1](office-365-atp.md) or [Plan 2](office-365-ti.md), the Report Message add-in provides your organization's security team with useful information they can use to review and update security policies.</span></span>
+<span data-ttu-id="dabff-109">可以安装"报告邮件"或"报告钓鱼"加载项。</span><span class="sxs-lookup"><span data-stu-id="dabff-109">You can install either the Report Message or Report Phishing add-in.</span></span> <span data-ttu-id="dabff-110">如果希望用户仅报告网络钓鱼邮件，请在你的组织中部署报告网络钓鱼外接程序。</span><span class="sxs-lookup"><span data-stu-id="dabff-110">If you want your users to report only phishing messages, deploy the Report Phishing add-in in your organization.</span></span> <span data-ttu-id="dabff-111">有关详细信息，请参阅"[启用报告钓鱼外接程序"。](enable-the-report-phish-add-in.md)</span><span class="sxs-lookup"><span data-stu-id="dabff-111">For more information, see [Enable the Report Phishing add-in](enable-the-report-phish-add-in.md).</span></span>
 
-<span data-ttu-id="74cc5-113">管理员可以为组织启用报告邮件外接程序，单个用户可以自行安装。</span><span class="sxs-lookup"><span data-stu-id="74cc5-113">Admins can enable the Report Message add-in for the organization, and individual users can install it for themselves.</span></span>
+<span data-ttu-id="dabff-112">报告邮件外接程序提供了报告垃圾邮件和网络钓鱼邮件的选项。</span><span class="sxs-lookup"><span data-stu-id="dabff-112">The Report Message add-in provides the option to report both spam and phishing messages.</span></span> <span data-ttu-id="dabff-113">管理员可以为组织启用"报告消息"外接程序，并且单个用户可以自行安装它。</span><span class="sxs-lookup"><span data-stu-id="dabff-113">Admins can enable the Report Message add-in for the organization, and individual users can install it for themselves.</span></span>
 
-<span data-ttu-id="74cc5-114">如果您是单个用户，则可以 [为自己启用报告邮件加载项](#get-the-report-message-add-in-for-yourself)。</span><span class="sxs-lookup"><span data-stu-id="74cc5-114">If you're an individual user, you can [enable the Report Message add-in for yourself](#get-the-report-message-add-in-for-yourself).</span></span>
+<span data-ttu-id="dabff-114">如果你是单个用户，你可以为自己启用报告 [消息外接程序](#get-the-report-message-add-in-for-yourself)。</span><span class="sxs-lookup"><span data-stu-id="dabff-114">If you're an individual user, you can [enable the Report Message add-in for yourself](#get-the-report-message-add-in-for-yourself).</span></span>
 
-<span data-ttu-id="74cc5-115">如果您是全局管理员或 Exchange Online 管理员，并且将 Exchange 配置为使用 OAuth 身份验证，则可以 [为您的组织启用报告消息外接程序](#get-and-enable-the-report-message-add-in-for-your-organization)。</span><span class="sxs-lookup"><span data-stu-id="74cc5-115">If you're a global administrator or an Exchange Online administrator, and Exchange is configured to use OAuth authentication, you can [enable the Report Message add-in for your organization](#get-and-enable-the-report-message-add-in-for-your-organization).</span></span> <span data-ttu-id="74cc5-116">现在，可以通过 [集中部署](https://docs.microsoft.com/microsoft-365/admin/manage/centralized-deployment-of-add-ins)使用报告消息 Add-In。</span><span class="sxs-lookup"><span data-stu-id="74cc5-116">The Report Message Add-In is now available through [Centralized Deployment](https://docs.microsoft.com/microsoft-365/admin/manage/centralized-deployment-of-add-ins).</span></span>
+<span data-ttu-id="dabff-115">如果您是全局管理员或 Exchange Online 管理员，并且 Exchange 配置为使用 OAuth 身份验证，您可以为组织启用报告邮件 [外接程序](#get-and-enable-the-report-message-add-in-for-your-organization)。</span><span class="sxs-lookup"><span data-stu-id="dabff-115">If you're a global administrator or an Exchange Online administrator, and Exchange is configured to use OAuth authentication, you can [enable the Report Message add-in for your organization](#get-and-enable-the-report-message-add-in-for-your-organization).</span></span> <span data-ttu-id="dabff-116">报告消息Add-In现在可以通过集中 [部署获得](https://docs.microsoft.com/microsoft-365/admin/manage/centralized-deployment-of-add-ins)。</span><span class="sxs-lookup"><span data-stu-id="dabff-116">The Report Message Add-In is now available through [Centralized Deployment](https://docs.microsoft.com/microsoft-365/admin/manage/centralized-deployment-of-add-ins).</span></span>
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a><span data-ttu-id="74cc5-117">开始前，有必要了解什么？</span><span class="sxs-lookup"><span data-stu-id="74cc5-117">What do you need to know before you begin?</span></span>
+## <a name="what-do-you-need-to-know-before-you-begin"></a><span data-ttu-id="dabff-117">在开始之前，您需要知道什么？</span><span class="sxs-lookup"><span data-stu-id="dabff-117">What do you need to know before you begin?</span></span>
 
-- <span data-ttu-id="74cc5-118">报告邮件加载项适用于大多数 Microsoft 365 订阅和以下产品：</span><span class="sxs-lookup"><span data-stu-id="74cc5-118">The Report Message add-in works with most Microsoft 365 subscriptions and the following products:</span></span>
+- <span data-ttu-id="dabff-118">报告邮件外接程序适用于大多数 Microsoft 365 订阅和以下产品：</span><span class="sxs-lookup"><span data-stu-id="dabff-118">The Report Message add-in works with most Microsoft 365 subscriptions and the following products:</span></span>
 
-  - <span data-ttu-id="74cc5-119">Outlook 网页版</span><span class="sxs-lookup"><span data-stu-id="74cc5-119">Outlook on the web</span></span>
-  - <span data-ttu-id="74cc5-120">Outlook 2013 SP1 或更高版本</span><span class="sxs-lookup"><span data-stu-id="74cc5-120">Outlook 2013 SP1 or later</span></span>
-  - <span data-ttu-id="74cc5-121">Outlook 2016 for Mac</span><span class="sxs-lookup"><span data-stu-id="74cc5-121">Outlook 2016 for Mac</span></span>
-  - <span data-ttu-id="74cc5-122">Outlook 包含在适用于企业的 Microsoft 365 应用程序中</span><span class="sxs-lookup"><span data-stu-id="74cc5-122">Outlook included with Microsoft 365 apps for Enterprise</span></span>
+  - <span data-ttu-id="dabff-119">Outlook 网页版</span><span class="sxs-lookup"><span data-stu-id="dabff-119">Outlook on the web</span></span>
+  - <span data-ttu-id="dabff-120">Outlook 2013 SP1 或更高版本</span><span class="sxs-lookup"><span data-stu-id="dabff-120">Outlook 2013 SP1 or later</span></span>
+  - <span data-ttu-id="dabff-121">Outlook 2016 for Mac</span><span class="sxs-lookup"><span data-stu-id="dabff-121">Outlook 2016 for Mac</span></span>
+  - <span data-ttu-id="dabff-122">Microsoft 365 企业应用版中包含的 Outlook</span><span class="sxs-lookup"><span data-stu-id="dabff-122">Outlook included with Microsoft 365 apps for Enterprise</span></span>
 
-- <span data-ttu-id="74cc5-123">报告消息外接程序对本地 Exchange 组织中的邮箱不可用。</span><span class="sxs-lookup"><span data-stu-id="74cc5-123">The Report Message add-in is not available for mailboxes in on-premises Exchange organizations.</span></span>
+- <span data-ttu-id="dabff-123">报告邮件外接程序对内部部署 Exchange 组织的邮箱不可用。</span><span class="sxs-lookup"><span data-stu-id="dabff-123">The Report Message add-in is not available for mailboxes in on-premises Exchange organizations.</span></span>
 
-- <span data-ttu-id="74cc5-124">您可以将报告的邮件配置为复制或重定向到您指定的邮箱。</span><span class="sxs-lookup"><span data-stu-id="74cc5-124">You can configure reported messages to be copied or redirected to a mailbox that you specify.</span></span> <span data-ttu-id="74cc5-125">有关详细信息，请参阅 [用户提交策略](user-submission.md)。</span><span class="sxs-lookup"><span data-stu-id="74cc5-125">For more information, see [User submissions policies](user-submission.md).</span></span>
+- <span data-ttu-id="dabff-124">可以将报告的邮件配置为复制或重定向到指定的邮箱。</span><span class="sxs-lookup"><span data-stu-id="dabff-124">You can configure reported messages to be copied or redirected to a mailbox that you specify.</span></span> <span data-ttu-id="dabff-125">有关详细信息，请参阅用户 [提交策略](user-submission.md)。</span><span class="sxs-lookup"><span data-stu-id="dabff-125">For more information, see [User submissions policies](user-submission.md).</span></span>
 
-- <span data-ttu-id="74cc5-126">您的现有 web 浏览器应与报告邮件外接程序一起使用。</span><span class="sxs-lookup"><span data-stu-id="74cc5-126">Your existing web browser should work with the Report Message add-in.</span></span> <span data-ttu-id="74cc5-127">但是，如果您注意到加载项不可用或无法按预期工作，请尝试使用不同的浏览器。</span><span class="sxs-lookup"><span data-stu-id="74cc5-127">But, if you notice the add-in is not available or not working as expected, try a different browser.</span></span>
+- <span data-ttu-id="dabff-126">现有的 Web 浏览器应该与报告消息外接程序一起使用。</span><span class="sxs-lookup"><span data-stu-id="dabff-126">Your existing web browser should work with the Report Message add-in.</span></span> <span data-ttu-id="dabff-127">但是，如果发现加载项不可用或无法正常使用，请尝试其他浏览器。</span><span class="sxs-lookup"><span data-stu-id="dabff-127">But, if you notice the add-in is not available or not working as expected, try a different browser.</span></span>
 
-- <span data-ttu-id="74cc5-128">对于组织安装，需要将组织配置为使用 OAuth 身份验证。</span><span class="sxs-lookup"><span data-stu-id="74cc5-128">For organizational installs, the organization needs to be configured to use OAuth authentication.</span></span> <span data-ttu-id="74cc5-129">有关详细信息，请参阅 [确定加载项的集中部署是否适用于你的组织](../../admin/manage/centralized-deployment-of-add-ins.md)。</span><span class="sxs-lookup"><span data-stu-id="74cc5-129">For more information, see [Determine if Centralized Deployment of add-ins works for your organization](../../admin/manage/centralized-deployment-of-add-ins.md).</span></span>
+- <span data-ttu-id="dabff-128">对于组织安装，组织需要配置为使用 OAuth 身份验证。</span><span class="sxs-lookup"><span data-stu-id="dabff-128">For organizational installs, the organization needs to be configured to use OAuth authentication.</span></span> <span data-ttu-id="dabff-129">有关详细信息，请参阅"确定加载项集中部署[是否适用于你的组织"。](../../admin/manage/centralized-deployment-of-add-ins.md)</span><span class="sxs-lookup"><span data-stu-id="dabff-129">For more information, see [Determine if Centralized Deployment of add-ins works for your organization](../../admin/manage/centralized-deployment-of-add-ins.md).</span></span>
 
-- <span data-ttu-id="74cc5-130">管理员需要是全局管理员角色组的成员。</span><span class="sxs-lookup"><span data-stu-id="74cc5-130">Admins need to be a member of the Global admins role group.</span></span> <span data-ttu-id="74cc5-131">有关详细信息，请参阅[安全与合规中心中的权限](permissions-in-the-security-and-compliance-center.md)。</span><span class="sxs-lookup"><span data-stu-id="74cc5-131">For more information, see [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).</span></span>
+- <span data-ttu-id="dabff-130">管理员需是全局管理员角色组的成员。</span><span class="sxs-lookup"><span data-stu-id="dabff-130">Admins need to be a member of the Global admins role group.</span></span> <span data-ttu-id="dabff-131">有关详细信息，请参阅[安全与合规中心中的权限](permissions-in-the-security-and-compliance-center.md)。</span><span class="sxs-lookup"><span data-stu-id="dabff-131">For more information, see [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).</span></span>
 
-## <a name="get-the-report-message-add-in-for-yourself"></a><span data-ttu-id="74cc5-132">获取自己的报告邮件外接程序</span><span class="sxs-lookup"><span data-stu-id="74cc5-132">Get the Report Message add-in for yourself</span></span>
+## <a name="get-the-report-message-add-in-for-yourself"></a><span data-ttu-id="dabff-132">为自己获取"报告邮件"加载项</span><span class="sxs-lookup"><span data-stu-id="dabff-132">Get the Report Message add-in for yourself</span></span>
 
-1. <span data-ttu-id="74cc5-133">转到 Microsoft AppSource <https://appsource.microsoft.com/marketplace/apps> ，并搜索报告邮件外接程序。</span><span class="sxs-lookup"><span data-stu-id="74cc5-133">Go to the Microsoft AppSource at <https://appsource.microsoft.com/marketplace/apps> and search for the Report Message add-in.</span></span> <span data-ttu-id="74cc5-134">若要直接转到报告邮件加载项，请转到 <https://appsource.microsoft.com/product/office/wa104381180> 。</span><span class="sxs-lookup"><span data-stu-id="74cc5-134">To go directly to the Report Message add-in, go to <https://appsource.microsoft.com/product/office/wa104381180>.</span></span>
+1. <span data-ttu-id="dabff-133">转到 Microsoft AppSource， <https://appsource.microsoft.com/marketplace/apps> 然后搜索"报告消息"加载项。</span><span class="sxs-lookup"><span data-stu-id="dabff-133">Go to the Microsoft AppSource at <https://appsource.microsoft.com/marketplace/apps> and search for the Report Message add-in.</span></span> <span data-ttu-id="dabff-134">若要直接转到"报告邮件"加载项，请转到 <https://appsource.microsoft.com/product/office/wa104381180> 。</span><span class="sxs-lookup"><span data-stu-id="dabff-134">To go directly to the Report Message add-in, go to <https://appsource.microsoft.com/product/office/wa104381180>.</span></span>
 
-2. <span data-ttu-id="74cc5-135">单击 " **立即获取** "。</span><span class="sxs-lookup"><span data-stu-id="74cc5-135">Click **GET IT NOW**.</span></span>
+2. <span data-ttu-id="dabff-135">单击 **"立即获取"。**</span><span class="sxs-lookup"><span data-stu-id="dabff-135">Click **GET IT NOW**.</span></span>
 
-   ![报告消息-立即获取](../../media/ReportMessageGETITNOW.png)
+   ![报告消息 - 现在获取](../../media/ReportMessageGETITNOW.png)
 
-3. <span data-ttu-id="74cc5-137">在显示的对话框中，查看使用条款和隐私策略，然后单击 " **继续** "。</span><span class="sxs-lookup"><span data-stu-id="74cc5-137">In the dialog that appears, review the terms of use and privacy policy, and then click **Continue**.</span></span>
+3. <span data-ttu-id="dabff-137">在出现的对话框中，查看使用条款和隐私策略，然后单击"继续 **"。**</span><span class="sxs-lookup"><span data-stu-id="dabff-137">In the dialog that appears, review the terms of use and privacy policy, and then click **Continue**.</span></span>
 
-4. <span data-ttu-id="74cc5-138">使用您的工作或学校帐户登录 (商业用途) 或你的 Microsoft 帐户 (以供个人使用) 。</span><span class="sxs-lookup"><span data-stu-id="74cc5-138">Sign in using your work or school account (for business use) or your Microsoft account (for personal use).</span></span>
+4. <span data-ttu-id="dabff-138">使用工作或学校帐户登录 (商业) 或 Microsoft 帐户 (个人使用) 。</span><span class="sxs-lookup"><span data-stu-id="dabff-138">Sign in using your work or school account (for business use) or your Microsoft account (for personal use).</span></span>
 
-<span data-ttu-id="74cc5-139">安装并启用加载项后，您将看到以下图标：</span><span class="sxs-lookup"><span data-stu-id="74cc5-139">After the add-in is installed and enabled, you'll see the following icons:</span></span>
+<span data-ttu-id="dabff-139">安装并启用加载项后，你将看到以下图标：</span><span class="sxs-lookup"><span data-stu-id="dabff-139">After the add-in is installed and enabled, you'll see the following icons:</span></span>
 
-- <span data-ttu-id="74cc5-140">在 Outlook 中，图标如下所示：</span><span class="sxs-lookup"><span data-stu-id="74cc5-140">In Outlook, the icon looks like this:</span></span>
+- <span data-ttu-id="dabff-140">在 Outlook 中，图标如下所示：</span><span class="sxs-lookup"><span data-stu-id="dabff-140">In Outlook, the icon looks like this:</span></span>
 
-  ![报告邮件外接程序图标（适用于 Outlook）](../../media/OutlookReportMessageIcon.png)
+  ![Outlook 的"报告邮件"加载项图标](../../media/OutlookReportMessageIcon.png)
 
-- <span data-ttu-id="74cc5-142">在 web 上的 Outlook 中，图标如下所示：</span><span class="sxs-lookup"><span data-stu-id="74cc5-142">In Outlook on the web, the icon looks like this:</span></span>
+- <span data-ttu-id="dabff-142">在 Outlook 网页 Outlook 中，图标如下所示：</span><span class="sxs-lookup"><span data-stu-id="dabff-142">In Outlook on the web, the icon looks like this:</span></span>
 
-  ![Outlook 网页报告邮件加载项图标](../../media/d9326d0b-1769-4bc2-ae58-51f0ebc69a17.png)
+  ![Outlook 网页报告邮件外接程序图标](../../media/d9326d0b-1769-4bc2-ae58-51f0ebc69a17.png)
 
-<span data-ttu-id="74cc5-144">若要了解如何使用加载项，请参阅 [使用报告消息加载项](https://support.microsoft.com/office/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)。</span><span class="sxs-lookup"><span data-stu-id="74cc5-144">To learn how to use the add-in, see [Use the Report Message add-in](https://support.microsoft.com/office/b5caa9f1-cdf3-4443-af8c-ff724ea719d2).</span></span>
+<span data-ttu-id="dabff-144">若要了解如何使用外接程序，请参阅"使用 [报告消息"加载项](https://support.microsoft.com/office/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)。</span><span class="sxs-lookup"><span data-stu-id="dabff-144">To learn how to use the add-in, see [Use the Report Message add-in](https://support.microsoft.com/office/b5caa9f1-cdf3-4443-af8c-ff724ea719d2).</span></span>
 
-## <a name="get-and-enable-the-report-message-add-in-for-your-organization"></a><span data-ttu-id="74cc5-145">为您的组织获取并启用报告邮件外接程序</span><span class="sxs-lookup"><span data-stu-id="74cc5-145">Get and enable the Report Message add-in for your organization</span></span>
+## <a name="get-and-enable-the-report-message-add-in-for-your-organization"></a><span data-ttu-id="dabff-145">获取并启用组织的"报告邮件"加载项</span><span class="sxs-lookup"><span data-stu-id="dabff-145">Get and enable the Report Message add-in for your organization</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="74cc5-146">最长可能需要12个小时，外接程序才会显示在您的组织中。</span><span class="sxs-lookup"><span data-stu-id="74cc5-146">It could take up to 12 hours for the add-in to appear in your organization.</span></span>
+> <span data-ttu-id="dabff-146">外接程序最多可能需要 12 小时才能显示在组织中。</span><span class="sxs-lookup"><span data-stu-id="dabff-146">It could take up to 12 hours for the add-in to appear in your organization.</span></span>
 
-1. <span data-ttu-id="74cc5-147">在 Microsoft 365 管理中心，转到 " **设置"、"集成应用 & 外接** 程序" 页 <https://admin.microsoft.com/AdminPortal/Home#/Settings/AddIns> ，然后单击 " **部署外接程序** "。</span><span class="sxs-lookup"><span data-stu-id="74cc5-147">In the Microsoft 365 admin center, go to the **Settings, integrated Apps & Add-ins** page at <https://admin.microsoft.com/AdminPortal/Home#/Settings/AddIns>, and then click **Deploy Add-In**.</span></span>
+1. <span data-ttu-id="dabff-147">在 Microsoft 365 管理中心中，转到"设置"、"**集成&加载项**"页面，然后单击"部署 <https://admin.microsoft.com/AdminPortal/Home#/Settings/AddIns> **外接程序"。**</span><span class="sxs-lookup"><span data-stu-id="dabff-147">In the Microsoft 365 admin center, go to the **Settings, integrated Apps & Add-ins** page at <https://admin.microsoft.com/AdminPortal/Home#/Settings/AddIns>, and then click **Deploy Add-In**.</span></span>
 
-   ![Microsoft 365 管理中心中的 "服务和外接程序" 页](../../media/ServicesAddInsPageNewM365AdminCenter.png)
+   ![Microsoft 365 管理中心中的"服务和加载项"页](../../media/ServicesAddInsPageNewM365AdminCenter.png)
 
-2. <span data-ttu-id="74cc5-149">在 " **部署新的外接程序** " 弹出对话框中，查看信息，然后单击 " **下一步** "。</span><span class="sxs-lookup"><span data-stu-id="74cc5-149">In the **Deploy a new add-in** flyout that appears, review the information, and then click **Next**.</span></span>
+2. <span data-ttu-id="dabff-149">在 **出现的"部署新的外接程序"** 飞出中，查看信息，然后单击"下一 **步"。**</span><span class="sxs-lookup"><span data-stu-id="dabff-149">In the **Deploy a new add-in** flyout that appears, review the information, and then click **Next**.</span></span>
 
-3. <span data-ttu-id="74cc5-150">在下一页上，单击 **"从存储区中选择"** 。</span><span class="sxs-lookup"><span data-stu-id="74cc5-150">On the next page, click **Choose from the Store**.</span></span>
+3. <span data-ttu-id="dabff-150">下一页上，单击 **"从应用商店中选择"。**</span><span class="sxs-lookup"><span data-stu-id="dabff-150">On the next page, click **Choose from the Store**.</span></span>
 
-   ![部署新的加载项页面](../../media/NewAddInScreen2.png)
+   ![部署新外接程序页面](../../media/NewAddInScreen2.png)
 
-4. <span data-ttu-id="74cc5-152">在出现的 " **选择外接程序** " 页中，单击 **"搜索** " 框，输入 **报告消息** ，然后单击 " **搜索** ![ 搜索" 图标 ](../../media/search-icon.png) 。</span><span class="sxs-lookup"><span data-stu-id="74cc5-152">In the **Select add-in** page that appears, click in the **Search** box, enter **Report Message** , and then click **Search** ![Search icon](../../media/search-icon.png).</span></span> <span data-ttu-id="74cc5-153">在结果列表中，找到 " **报告消息** "，然后单击 " **添加** "。</span><span class="sxs-lookup"><span data-stu-id="74cc5-153">In the list of results, find **Report Message** and then click **Add**.</span></span>
+4. <span data-ttu-id="dabff-152">在 **出现的"选择外接程序"** 页中，在"搜索"框中单击，输入 **"报告** 消息"，然后单击 **"搜索搜索"** ![ 图标 ](../../media/search-icon.png) 。</span><span class="sxs-lookup"><span data-stu-id="dabff-152">In the **Select add-in** page that appears, click in the **Search** box, enter **Report Message**, and then click **Search** ![Search icon](../../media/search-icon.png).</span></span> <span data-ttu-id="dabff-153">在结果列表中，找到 **"报告消息**"，然后单击"**添加"。**</span><span class="sxs-lookup"><span data-stu-id="dabff-153">In the list of results, find **Report Message** and then click **Add**.</span></span>
 
-   ![选择加载项搜索结果](../../media/NewAddInScreen3.png)
+   ![选择外接程序搜索结果](../../media/NewAddInScreen3.png)
 
-5. <span data-ttu-id="74cc5-155">在出现的对话框中，查看许可和隐私信息，然后单击 " **继续** "。</span><span class="sxs-lookup"><span data-stu-id="74cc5-155">In the dialog that appears, review the licensing and privacy information, and then click **Continue**.</span></span>
+5. <span data-ttu-id="dabff-155">在出现的对话框中，查看许可和隐私信息，然后单击"继续 **"。**</span><span class="sxs-lookup"><span data-stu-id="dabff-155">In the dialog that appears, review the licensing and privacy information, and then click **Continue**.</span></span>
 
-6. <span data-ttu-id="74cc5-156">在出现的 " **配置外接程序** " 页中，配置以下设置：</span><span class="sxs-lookup"><span data-stu-id="74cc5-156">In the **Configure add-in** page that appears, configure the following settings:</span></span>
+6. <span data-ttu-id="dabff-156">在 **出现的"配置外接程序"** 页中，配置以下设置：</span><span class="sxs-lookup"><span data-stu-id="dabff-156">In the **Configure add-in** page that appears, configure the following settings:</span></span>
 
-   - <span data-ttu-id="74cc5-157">**分配的用户** ：选择下列值之一：</span><span class="sxs-lookup"><span data-stu-id="74cc5-157">**Assigned users** : Select one of the following values:</span></span>
+   - <span data-ttu-id="dabff-157">**已分配用户**：选择下列值之一：</span><span class="sxs-lookup"><span data-stu-id="dabff-157">**Assigned users**: Select one of the following values:</span></span>
 
-     - <span data-ttu-id="74cc5-158">默认)  (的 **所有人**</span><span class="sxs-lookup"><span data-stu-id="74cc5-158">**Everyone** (default)</span></span>
-     - <span data-ttu-id="74cc5-159">**特定用户/组**</span><span class="sxs-lookup"><span data-stu-id="74cc5-159">**Specific users / groups**</span></span>
-     - <span data-ttu-id="74cc5-160">**就我自己**</span><span class="sxs-lookup"><span data-stu-id="74cc5-160">**Just me**</span></span>
+     - <span data-ttu-id="dabff-158">**每个** (默认) </span><span class="sxs-lookup"><span data-stu-id="dabff-158">**Everyone** (default)</span></span>
+     - <span data-ttu-id="dabff-159">**特定用户/组**</span><span class="sxs-lookup"><span data-stu-id="dabff-159">**Specific users / groups**</span></span>
+     - <span data-ttu-id="dabff-160">**就我自己**</span><span class="sxs-lookup"><span data-stu-id="dabff-160">**Just me**</span></span>
 
-   - <span data-ttu-id="74cc5-161">**部署方法** ：选择下列值之一：</span><span class="sxs-lookup"><span data-stu-id="74cc5-161">**Deployment method** : Select one of the following values:</span></span>
+   - <span data-ttu-id="dabff-161">**部署方法**：选择下列值之一：</span><span class="sxs-lookup"><span data-stu-id="dabff-161">**Deployment method**: Select one of the following values:</span></span>
 
-     - <span data-ttu-id="74cc5-162">**固定 (默认)** ：加载项将自动部署到指定的用户，并且无法将其删除。</span><span class="sxs-lookup"><span data-stu-id="74cc5-162">**Fixed (Default)** : The add-in is automatically deployed to the specified users and they can't remove it.</span></span>
-     - <span data-ttu-id="74cc5-163">**可用** ：用户可以在 **家庭** 版中安装外接程序 \> **Get add-ins** \> **管理员管理** 。</span><span class="sxs-lookup"><span data-stu-id="74cc5-163">**Available** : Users can install the add-in at **Home** \> **Get add-ins** \> **Admin-managed**.</span></span>
-     - <span data-ttu-id="74cc5-164">**可选** ：将加载项自动部署到指定的用户，但可以选择将其删除。</span><span class="sxs-lookup"><span data-stu-id="74cc5-164">**Optional** : The add-in is automatically deployed to the specified users, but they can choose to remove it.</span></span>
+     - <span data-ttu-id="dabff-162">**修复 (默认) ：** 外接程序会自动部署到指定用户，并且他们无法删除它。</span><span class="sxs-lookup"><span data-stu-id="dabff-162">**Fixed (Default)**: The add-in is automatically deployed to the specified users and they can't remove it.</span></span>
+     - <span data-ttu-id="dabff-163">**可用**：用户可以在家庭获取外接程序管理员管理的 \>  \> **安装外接程序**。</span><span class="sxs-lookup"><span data-stu-id="dabff-163">**Available**: Users can install the add-in at **Home** \> **Get add-ins** \> **Admin-managed**.</span></span>
+     - <span data-ttu-id="dabff-164">**可选**：加载项会自动部署到指定用户，但他们可以选择将其删除。</span><span class="sxs-lookup"><span data-stu-id="dabff-164">**Optional**: The add-in is automatically deployed to the specified users, but they can choose to remove it.</span></span>
 
-   ![配置加载项页面](../../media/configure-add-in.png)
+   ![配置外接程序页面](../../media/configure-add-in.png)
 
-   <span data-ttu-id="74cc5-166">完成后，请单击 " **部署** "。</span><span class="sxs-lookup"><span data-stu-id="74cc5-166">When you're finished, click **Deploy**.</span></span>
+   <span data-ttu-id="dabff-166">完成后，单击"部署 **"。**</span><span class="sxs-lookup"><span data-stu-id="dabff-166">When you're finished, click **Deploy**.</span></span>
 
-7. <span data-ttu-id="74cc5-167">在出现的 " **部署报告邮件** " 页中，您将看到一个进度报告，随后将会看到已部署加载项的确认信息。</span><span class="sxs-lookup"><span data-stu-id="74cc5-167">In the **Deploy Report Message** page that appears, you'll see a progress report followed by a confirmation that the add-in was deployed.</span></span> <span data-ttu-id="74cc5-168">阅读信息后，单击 " **下一步** "。</span><span class="sxs-lookup"><span data-stu-id="74cc5-168">After you read the information, click **Next**.</span></span>
+7. <span data-ttu-id="dabff-167">在 **出现的"** 部署报告消息"页中，你将看到一个进度报告，后跟一条确认加载项已部署的确认。</span><span class="sxs-lookup"><span data-stu-id="dabff-167">In the **Deploy Report Message** page that appears, you'll see a progress report followed by a confirmation that the add-in was deployed.</span></span> <span data-ttu-id="dabff-168">阅读信息后，单击"下一 **步"。**</span><span class="sxs-lookup"><span data-stu-id="dabff-168">After you read the information, click **Next**.</span></span>
 
-   !["部署报告邮件" 页](../../media/deploy-report-message-page.png)
+   !["部署报告消息"页](../../media/deploy-report-message-page.png)
 
-8. <span data-ttu-id="74cc5-170">在出现的 " **通知外接程序** " 页上，查看信息，然后单击 " **关闭** "。</span><span class="sxs-lookup"><span data-stu-id="74cc5-170">On the **Announce add-in** page that appears, review the information, and then click **Close**.</span></span>
+8. <span data-ttu-id="dabff-170">在出现的 **"宣布外接程序"** 页上，查看信息，然后单击"关闭 **"。**</span><span class="sxs-lookup"><span data-stu-id="dabff-170">On the **Announce add-in** page that appears, review the information, and then click **Close**.</span></span>
 
-   ![通知加载项页面](../../media/announce-add-in-page.png)
+   !["宣布外接程序"页](../../media/announce-add-in-page.png)
 
-## <a name="learn-how-to-use-the-report-message-add-in"></a><span data-ttu-id="74cc5-172">了解如何使用报告邮件加载项</span><span class="sxs-lookup"><span data-stu-id="74cc5-172">Learn how to use the Report Message add-in</span></span>
+## <a name="learn-how-to-use-the-report-message-add-in"></a><span data-ttu-id="dabff-172">了解如何使用"报告邮件"加载项</span><span class="sxs-lookup"><span data-stu-id="dabff-172">Learn how to use the Report Message add-in</span></span>
 
-<span data-ttu-id="74cc5-173">为其分配了加载项的人员将看到以下图标：</span><span class="sxs-lookup"><span data-stu-id="74cc5-173">People who have the add-in assigned to them will see the following icons:</span></span>
+<span data-ttu-id="dabff-173">分配了外接程序的人将看到以下图标：</span><span class="sxs-lookup"><span data-stu-id="dabff-173">People who have the add-in assigned to them will see the following icons:</span></span>
 
-- <span data-ttu-id="74cc5-174">在 Outlook 中，图标如下所示：</span><span class="sxs-lookup"><span data-stu-id="74cc5-174">In Outlook, the icon looks like this:</span></span>
+- <span data-ttu-id="dabff-174">在 Outlook 中，图标如下所示：</span><span class="sxs-lookup"><span data-stu-id="dabff-174">In Outlook, the icon looks like this:</span></span>
 
-  ![报告邮件外接程序图标（适用于 Outlook）](../../media/OutlookReportMessageIcon.png)
+  ![Outlook 的"报告邮件外接程序"图标](../../media/OutlookReportMessageIcon.png)
 
-- <span data-ttu-id="74cc5-176">在 web 上的 Outlook 中，图标如下所示：</span><span class="sxs-lookup"><span data-stu-id="74cc5-176">In Outlook on the web, the icon looks like this:</span></span>
+- <span data-ttu-id="dabff-176">在 Outlook 网页 Outlook 中，图标如下所示：</span><span class="sxs-lookup"><span data-stu-id="dabff-176">In Outlook on the web, the icon looks like this:</span></span>
 
-  ![Outlook 网页报告邮件加载项图标](../../media/d9326d0b-1769-4bc2-ae58-51f0ebc69a17.png)
+  ![Outlook 网页报告邮件外接程序图标](../../media/d9326d0b-1769-4bc2-ae58-51f0ebc69a17.png)
 
-<span data-ttu-id="74cc5-178">当您通知用户有关报告邮件加载项时，请包含 [使用报告邮件加载项](https://support.microsoft.com/office/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)的链接。</span><span class="sxs-lookup"><span data-stu-id="74cc5-178">When you notify users about the Report Message add-in, include a link to [Use the Report Message add-in](https://support.microsoft.com/office/b5caa9f1-cdf3-4443-af8c-ff724ea719d2).</span></span>
+<span data-ttu-id="dabff-178">当通知用户有关报告邮件外接程序时，请包含一个指向"使用报告邮件 ["加载项的链接](https://support.microsoft.com/office/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)。</span><span class="sxs-lookup"><span data-stu-id="dabff-178">When you notify users about the Report Message add-in, include a link to [Use the Report Message add-in](https://support.microsoft.com/office/b5caa9f1-cdf3-4443-af8c-ff724ea719d2).</span></span>
 
-## <a name="review-or-edit-settings-for-the-report-message-add-in"></a><span data-ttu-id="74cc5-179">查看或编辑报告邮件外接程序的设置</span><span class="sxs-lookup"><span data-stu-id="74cc5-179">Review or edit settings for the Report Message add-in</span></span>
+## <a name="review-or-edit-settings-for-the-report-message-add-in"></a><span data-ttu-id="dabff-179">查看或编辑报告邮件外接程序的设置</span><span class="sxs-lookup"><span data-stu-id="dabff-179">Review or edit settings for the Report Message add-in</span></span>
 
-1. <span data-ttu-id="74cc5-180">在 Microsoft 365 管理中心，转到上的 " **服务" & "外接程序** " 页 <https://admin.microsoft.com/AdminPortal/Home#/Settings/ServicesAndAddIns> 。</span><span class="sxs-lookup"><span data-stu-id="74cc5-180">In the Microsoft 365 admin center, go to the **Services & add-ins** page at <https://admin.microsoft.com/AdminPortal/Home#/Settings/ServicesAndAddIns>.</span></span>
+1. <span data-ttu-id="dabff-180">在 Microsoft 365 管理中心中，转到& **加载项** 页面 <https://admin.microsoft.com/AdminPortal/Home#/Settings/ServicesAndAddIns> 。</span><span class="sxs-lookup"><span data-stu-id="dabff-180">In the Microsoft 365 admin center, go to the **Services & add-ins** page at <https://admin.microsoft.com/AdminPortal/Home#/Settings/ServicesAndAddIns>.</span></span>
 
-   ![新 Microsoft 365 管理中心中的 "服务和 Add-Ins" 页](../../media/ServicesAddInsPageNewM365AdminCenter.png)
+   ![新Add-Ins Microsoft 365 管理中心中的"服务和服务"页面](../../media/ServicesAddInsPageNewM365AdminCenter.png)
 
-2. <span data-ttu-id="74cc5-182">查找并选择 **报告邮件** 加载项。</span><span class="sxs-lookup"><span data-stu-id="74cc5-182">Find and select the **Report Message** add-in.</span></span>
+2. <span data-ttu-id="dabff-182">查找并选择 **"报告邮件** "加载项。</span><span class="sxs-lookup"><span data-stu-id="dabff-182">Find and select the **Report Message** add-in.</span></span>
 
-3. <span data-ttu-id="74cc5-183">在显示的 " **编辑报告消息** " 浮出控件中，查看并编辑组织的相应设置。</span><span class="sxs-lookup"><span data-stu-id="74cc5-183">In the **Edit Report Message** flyout that appears, review and edit settings as appropriate for your organization.</span></span> <span data-ttu-id="74cc5-184">完成时，请单击“保存”。</span><span class="sxs-lookup"><span data-stu-id="74cc5-184">When you're finished, click **Save**.</span></span>
+3. <span data-ttu-id="dabff-183">在 **出现的"编辑报告消息** "飞出中，根据组织情况查看和编辑设置。</span><span class="sxs-lookup"><span data-stu-id="dabff-183">In the **Edit Report Message** flyout that appears, review and edit settings as appropriate for your organization.</span></span> <span data-ttu-id="dabff-184">完成后，单击“**保存**”。</span><span class="sxs-lookup"><span data-stu-id="dabff-184">When you're finished, click **Save**.</span></span>
 
-   ![报告邮件外接程序的设置](../../media/EditReportMessageAddIn.png)
+   ![报告邮件加载项的设置](../../media/EditReportMessageAddIn.png)
 
-## <a name="view-and-review-reported-messages"></a><span data-ttu-id="74cc5-186">查看和查看报告的邮件</span><span class="sxs-lookup"><span data-stu-id="74cc5-186">View and review reported messages</span></span>
+## <a name="view-and-review-reported-messages"></a><span data-ttu-id="dabff-186">查看和查看报告的邮件</span><span class="sxs-lookup"><span data-stu-id="dabff-186">View and review reported messages</span></span>
 
-<span data-ttu-id="74cc5-187">若要查看用户向 Microsoft 报告的邮件，您可以选择以下选项：</span><span class="sxs-lookup"><span data-stu-id="74cc5-187">To review messages that users report to Microsoft, you have these options:</span></span>
+<span data-ttu-id="dabff-187">若要查看用户向 Microsoft 报告的邮件，可以使用以下选项：</span><span class="sxs-lookup"><span data-stu-id="dabff-187">To review messages that users report to Microsoft, you have these options:</span></span>
 
-- <span data-ttu-id="74cc5-188">使用管理提交门户。</span><span class="sxs-lookup"><span data-stu-id="74cc5-188">Use the Admin Submissions portal.</span></span> <span data-ttu-id="74cc5-189">有关详细信息，请参阅 [View user 报送 To Microsoft](admin-submission.md#view-user-submissions-to-microsoft)。</span><span class="sxs-lookup"><span data-stu-id="74cc5-189">For more information, see [View user submissions to Microsoft](admin-submission.md#view-user-submissions-to-microsoft).</span></span>
+- <span data-ttu-id="dabff-188">使用管理员提交门户。</span><span class="sxs-lookup"><span data-stu-id="dabff-188">Use the Admin Submissions portal.</span></span> <span data-ttu-id="dabff-189">有关详细信息，请参阅查看 [Microsoft 的用户提交](admin-submission.md#view-user-submissions-to-microsoft)。</span><span class="sxs-lookup"><span data-stu-id="dabff-189">For more information, see [View user submissions to Microsoft](admin-submission.md#view-user-submissions-to-microsoft).</span></span>
 
-- <span data-ttu-id="74cc5-190">创建邮件流规则 (也称为传输规则) 发送报告的邮件的副本。</span><span class="sxs-lookup"><span data-stu-id="74cc5-190">Create a mail flow rule (also known as a transport rule) to send copies of reported messages.</span></span> <span data-ttu-id="74cc5-191">有关说明，请参阅 [使用邮件流规则查看用户报告给 Microsoft 的内容](use-mail-flow-rules-to-see-what-your-users-are-reporting-to-microsoft.md)。</span><span class="sxs-lookup"><span data-stu-id="74cc5-191">For instructions, see [Use mail flow rules to see what your users are reporting to Microsoft](use-mail-flow-rules-to-see-what-your-users-are-reporting-to-microsoft.md).</span></span>
+- <span data-ttu-id="dabff-190">创建邮件流规则 (传输规则) 报告的邮件副本。</span><span class="sxs-lookup"><span data-stu-id="dabff-190">Create a mail flow rule (also known as a transport rule) to send copies of reported messages.</span></span> <span data-ttu-id="dabff-191">有关说明， [请参阅"使用邮件流规则"查看用户向 Microsoft 报告哪些内容](use-mail-flow-rules-to-see-what-your-users-are-reporting-to-microsoft.md)。</span><span class="sxs-lookup"><span data-stu-id="dabff-191">For instructions, see [Use mail flow rules to see what your users are reporting to Microsoft](use-mail-flow-rules-to-see-what-your-users-are-reporting-to-microsoft.md).</span></span>
