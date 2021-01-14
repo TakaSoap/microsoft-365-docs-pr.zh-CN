@@ -18,12 +18,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 71250a04-fd2d-4c3c-a32b-b8a838b19a54
 description: 了解独立的 SharePoint Online 团队网站，包括其用途、要求和功能。
-ms.openlocfilehash: e4e45c8adffcf86d56a71e5b9935e634f2de9254
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.openlocfilehash: 55bdf2999610310babb60b6938afb97732e5a7a0
+ms.sourcegitcommit: 89097fb648987567b9493b9d94c85c5990562874
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49616448"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49845067"
 ---
 # <a name="isolated-sharepoint-online-team-sites"></a>单独的 SharePoint Online 团队网站
 
@@ -32,9 +32,9 @@ ms.locfileid: "49616448"
 
  **摘要：** 了解有关单独的 SharePoint Online 团队网站的用法。
 
-SharePoint Online 团队网站是在 Microsoft Office 365 中为笔记、文档、文章、日历和其他资源协作快速创建专属空间的一种简单方法。SharePoint Online 团队网站基于 Microsoft 365 组，它具有一个简化的管理模型，允许与一组私有组成员或整个组织展开开放式协作。默认 SharePoint Online 团队网站允许 Microsoft 365 组的成员邀请其他用户并控制权限设置。
+SharePoint Online团队网站是快速创建协作空间的简便方法。用户可在 Microsoft Office 365 中的笔记、文档、文章、日历和其他资源协同工作。SharePoint Online 团队网站基于 Microsoft 365 组，它具有一个简化的管理模型，允许与一组私有组成员或整个组织展开开放式协作。默认 SharePoint Online 团队网站允许 Microsoft 365 组的成员邀请其他用户并控制权限设置。
 
-但是，在某些情况下，你想要创建用于协作的 SharePoint Online 团队网站，其权限通过组成员身份和仅由 SharePoint 管理员负责管理的 SharePoint Online 权限级别进行紧密控制。我们称之为单独网站，它独立于正在协作、查看其内容或管理网站的用户组。对于以下情况，你可能需要一个单独的网站：
+但是，有时需要由组成员身份控制的网站访问权限以及由 SharePoint 管理员管理的 SharePoint Online 权限级别。 我们将其称为隔离站点，此站点与正在协作、查看其内容或管理此站点的一组用户隔离。 可能需要隔离的网站，如下所示：
 
 - 组织内的一个机密项目。
 
