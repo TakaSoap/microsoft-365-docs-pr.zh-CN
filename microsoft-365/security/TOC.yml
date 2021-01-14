@@ -521,6 +521,8 @@
               href: ./office-365-security/reports-and-insights-in-security-and-compliance.md
             - name: 启用报表消息加载项
               href: ./office-365-security/enable-the-report-message-add-in.md
+            - name: 启用“报告网络钓鱼”加载项
+              href: ./office-365-security/enable-the-report-phish-add-in.md
             - name: 安装和使用垃圾邮件报告加载项
               href: ./office-365-security/junk-email-reporting-add-in-for-microsoft-outlook.md
             - name: 独立 EOP 中的邮件流规则（传输规则）
