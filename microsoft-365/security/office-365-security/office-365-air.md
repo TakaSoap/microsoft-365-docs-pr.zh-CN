@@ -21,18 +21,18 @@ description: 开始使用 Microsoft Defender for Office 365 中的自动调查�
 ms.custom:
 - air
 - seo-marvel-mar2020
-ms.openlocfilehash: 6ccefb5c435f08fcef4dcc872af676fba70668ee
-ms.sourcegitcommit: 9833f95ab6ab95aea20d68a277246dca2223f93d
+ms.openlocfilehash: 570fb3c9d180d3167cfc5a4e3c3825102875b74f
+ms.sourcegitcommit: cc354fd54400be0ff0401f60bbe68ed975b69cda
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "49794540"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "49865004"
 ---
 # <a name="automated-investigation-and-response-air-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 (AIR) 自动调查和响应
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
-[Microsoft Defender for Office 365](office-365-atp.md) 包括强大的自动调查和响应 (AIR) 功能，可节省安全运营团队的时间和精力。 触发警报后，由安全运营团队来审阅、确定优先级并响应这些警报。 与传入警报的量保持一起可能会很不知所措。 自动执行其中一些任务可能会有所帮助。
+[Microsoft Defender for Office 365](office-365-atp.md) 包括强大的自动调查和响应 (AIR) 功能，可节省安全运营团队的时间和精力。 触发警报时，由安全运营团队来审阅、确定优先级并响应这些警报。 与传入警报的量保持一起可能会很不知所措。 自动执行其中一些任务可能会有所帮助。
 
 AIR 使安全运营团队可以更高效地运行。 AIR 功能包括自动调查流程，以响应当今存在的已知威胁。 适当的修正操作等待审批，使安全运营团队能够有效响应检测到的威胁。 使用 AIR，安全运营团队可以专注于优先级较高的任务，而不会忽略触发的重要警报。
 
@@ -46,7 +46,7 @@ AIR 使安全运营团队可以更高效地运行。 AIR 功能包括自动调�
 
 ## <a name="the-overall-flow-of-air"></a>AIR 的整体流
 
-触发警报，安全手册启动自动调查，从而产生发现和推荐操作。 下面是 AIR 的整体流程，分步说明：
+触发警报，安全手册启动自动调查，从而产生发现和推荐操作。 下面是 AIR 的整体流，分步说明：
 
 1. 自动调查以下列方式之一启动：
 
@@ -98,20 +98,20 @@ AIR 功能包含在 [Microsoft Defender for Office 365](office-365-atp.md#micros
 
 7. [零时差自动清除电子邮件](protect-against-threats.md#zero-hour-auto-purge-for-email-in-eop)。
 
-此外，请确保 [查看组织的](https://docs.microsoft.com/microsoft-365/compliance/alert-policies)警报策略，尤其是威胁管理 [类别中的默认策略](https://docs.microsoft.com/microsoft-365/compliance/alert-policies?default-alert-policies)。
+此外，请确保 [查看组织的](https://docs.microsoft.com/microsoft-365/compliance/alert-policies)警报策略，尤其是威胁管理类别中 [的默认策略](https://docs.microsoft.com/microsoft-365/compliance/alert-policies?default-alert-policies)。
 
 ## <a name="which-alert-policies-trigger-automated-investigations"></a>哪些警报策略会触发自动调查？
 
-Microsoft 365 提供了许多内置警报策略，可帮助识别 Exchange 管理员权限滥用、恶意软件活动、潜在的外部和内部威胁以及信息治理风险。 一些 [默认警报策略](https://docs.microsoft.com/microsoft-365/compliance/alert-policies#default-alert-policies) 可以触发自动调查。 下表介绍了触发自动调查的警报、Microsoft 365 安全中心中警报的严重性以及如何生成这些警报：
+Microsoft 365 提供了许多内置警报策略，可帮助识别 Exchange 管理员权限滥用、恶意软件活动、潜在的外部和内部威胁以及信息治理风险。 一些 [默认警报策略](https://docs.microsoft.com/microsoft-365/compliance/alert-policies#default-alert-policies) 可以触发自动调查。 下表介绍了触发自动调查的警报、Microsoft 365 安全中心中警报的严重性以及它们的生成方式：
 
 |警报|Severity|如何生成警报|
 |---|---|---|
 |检测到潜在恶意 URL 单击|**High**|发生以下任一情况时，将生成此警报： <ul><li>组织中受安全 [链接](atp-safe-links.md) 保护的用户单击恶意链接</li><li>URL 裁定更改由 Microsoft Defender for Office 365 标识</li><li>根据组织的安全链接策略 (，用户会覆盖安全链接[警告) 。](set-up-atp-safe-links-policies.md)</li></ul> <p> 有关触发此警报的事件详细信息，请参阅["设置安全链接策略"。](set-up-atp-safe-links-policies.md)|
-|用户将电子邮件报告为恶意软件或网络钓鱼邮件|**信息**|当组织的用户使用报告邮件外接程序将邮件报告为网络钓鱼电子邮件时， [将生成此警报](enable-the-report-message-add-in.md)。|
+|电子邮件被用户报告为恶意软件或网络钓鱼邮件|**信息**|当组织的用户使用报告邮件外接程序或报告网络钓鱼外接程序将邮件报告为网络钓鱼电子邮件[](enable-the-report-message-add-in.md)时，将生成[此警报](enable-the-report-phish-add-in.md)。|
 |包含恶意软件的电子邮件在传递后被删除|**信息**|当包含恶意软件的任何电子邮件传递到您组织的邮箱时，将生成此警报。 如果发生此事件，Microsoft 使用零时差自动清除从 Exchange Online 邮箱中删除 [受感染的邮件](zero-hour-auto-purge.md)。|
 |包含网络钓鱼 URL 的电子邮件在传递后被删除|**信息**|当包含网络钓鱼的任何邮件传递到您组织的邮箱时，将生成此警报。 如果发生此事件，Microsoft 使用零时差自动清除从 Exchange Online 邮箱中删除 [受感染的邮件](zero-hour-auto-purge.md)。|
 |检测到可疑的电子邮件发送模式|**Medium**|当组织中有人已发送可疑电子邮件，并且存在被限制发送电子邮件的风险时，将生成此警报。 这是一个行为的早期警告，可能指示帐户受到威胁，但不够严重，无法限制用户。 <p> 尽管这种情况很少见，但此策略生成的警报可能是异常情况。 但是，检查用户帐户是否遭到入侵 [是一](responding-to-a-compromised-email-account.md)个好主意。|
-|用户被限制发送电子邮件|**High**|当组织中有人被限制发送出站邮件时，将生成此警报。 这通常会导致电子邮件帐户 [遭到入侵](responding-to-a-compromised-email-account.md)。 <p> 有关受限用户详细信息，请参阅 Microsoft [365](removing-user-from-restricted-users-portal-after-spam.md)中的"从受限用户"门户删除被阻止的用户。|
+|用户被限制发送电子邮件|**High**|当组织中有人被限制发送出站邮件时，将生成此警报。 这通常会导致电子邮件帐户 [遭到入侵](responding-to-a-compromised-email-account.md)。 <p> 有关受限用户详细信息，请参阅 [Microsoft 365](removing-user-from-restricted-users-portal-after-spam.md)中的"从受限用户"门户删除被阻止的用户。|
 |
 
 > [!TIP]

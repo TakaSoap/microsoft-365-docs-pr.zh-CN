@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 description: 管理员和最终用户可以了解如何通过电子邮件将 (标记为错误或错误的邮件，) Microsoft 进行分析。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: fe8e3c5ed44c7578764ed0bf19408f4db16e3740
-ms.sourcegitcommit: 98b889e674ad1d5fa37d4b6c5fc3eda60a1d67f3
+ms.openlocfilehash: 94747b1d0a1aef746a63abada977aa47270ae4e2
+ms.sourcegitcommit: cc354fd54400be0ff0401f60bbe68ed975b69cda
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "49751555"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "49865076"
 ---
 # <a name="manually-submit-messages-to-microsoft-for-analysis"></a>手动将邮件提交给 Microsoft 进行分析
 
@@ -30,11 +30,11 @@ ms.locfileid: "49751555"
 
 
 > [!NOTE]
-> 如果你是具有 Exchange Online 邮箱的组织的管理员，我们建议你使用安全与合规中心&门户。 有关详细信息，请参阅使用管理员提交将可疑的垃圾邮件、网络钓鱼[、URL 和文件提交给 Microsoft。](admin-submission.md)
+> 如果你是具有 Exchange Online 邮箱的组织的管理员，我们建议你使用安全与合规中心&门户。 有关详细信息，请参阅"使用管理员提交"将可疑的垃圾邮件、网络钓鱼[、URL 和文件提交到 Microsoft。](admin-submission.md)
 
 如果组织中的用户收到垃圾邮件或 (垃圾邮件) 或钓鱼邮件，或者他们因被标记为垃圾邮件而未收到合法电子邮件，则可能会感到沮丧。 我们会不断微调垃圾邮件筛选器，以更加准确。
 
-你和用户可以通过向 Microsoft 提交误报 (标记为错误) 、漏报 () 错误邮件和钓鱼邮件来帮助此过程。
+你和用户可以通过向 Microsoft 提交误报 (标记为错误) 、漏报 (允许的) 和钓鱼邮件来帮助此过程。
 
 > [!NOTE]
 > 由于我们收到的提交量很高，我们可能无法回答所有分析请求。
@@ -42,7 +42,7 @@ ms.locfileid: "49751555"
 ## <a name="submit-false-negatives-to-microsoft"></a>向 Microsoft 提交漏报
 
 > [!TIP]
-> Outlook 和 Outlook 网页 (以前称为 Outlook Web App) 的用户可以使用 Microsoft Outlook 报告邮件外接程序，而不是使用以下过程报告漏报。 若要了解如何安装和使用此工具，请参阅" [启用报告消息"加载项](enable-the-report-message-add-in.md)。
+> Outlook 和 Web 上的 Outlook (（以前称为 Outlook Web App) ）中的用户可以使用报告邮件外接程序或报告网络钓鱼外接程序，而不是使用以下过程报告漏报。 若要了解如何安装和使用这些工具，请参阅"启用报告邮件" [加载项和](enable-the-report-message-add-in.md) "启用报告钓鱼 ["加载项](enable-the-report-phish-add-in.md)。
 
 如果您收到通过垃圾邮件筛选传递的邮件，该邮件应被标识为垃圾邮件或网络钓鱼，您可以视情况将邮件提交给 Microsoft 垃圾邮件分析团队和 Microsoft 网络钓鱼分析团队。 如果邮件符合分类条件，分析员将审阅邮件并将其添加到服务范围的筛选器。
 
@@ -60,7 +60,7 @@ ms.locfileid: "49751555"
    >
    > - 保留新的邮件正文空白。
    >
-   > - 使用 .msg (outlook 格式) 或 .eml (附加邮件的默认 Outlook 网页) 格式。
+   > - 将 .msg (默认 Outlook) 或 .eml (Web 上的默认 Outlook 格式) 附加邮件使用。
 
 3. 完成后，单击"发送 **"。**
 
@@ -70,7 +70,8 @@ ms.locfileid: "49751555"
 ## <a name="submit-false-positives-to-microsoft"></a>向 Microsoft 提交误报
 
 > [!TIP]
-> Outlook 和 Outlook 网页中的用户可以使用适用于 Microsoft Outlook 的报告邮件外接程序，而不是使用以下过程报告误报。 若要了解如何安装和使用此工具，请参阅" [启用报告消息"加载项](enable-the-report-message-add-in.md)。
+> Outlook 和 Web 上的 Outlook (（以前称为 Outlook Web App) ）中的用户可以使用报告邮件外接程序或报告网络钓鱼外接程序，而不是使用以下过程报告误报。 若要了解如何安装和使用这些工具，请参阅"启用报告邮件" [加载项和](enable-the-report-message-add-in.md) "启用报告钓鱼 ["加载项](enable-the-report-phish-add-in.md)。
+
 
 如果邮件被错误地标识为垃圾邮件，可以将邮件提交给 Microsoft 垃圾邮件分析团队。 分析员将评估邮件， (根据分析结果) 可以调整服务范围的筛选器以允许邮件通过。
 
@@ -84,14 +85,14 @@ ms.locfileid: "49751555"
    >
    > - 保留新的邮件正文空白。
    >
-   > - 使用 .msg (outlook 格式) 或 .eml (附加邮件的默认 Outlook 网页) 格式。
+   > - 将 .msg (默认 Outlook) 或 .eml (Web 上的默认 Outlook 格式) 附加邮件使用。
 
 3. 完成后，单击"发送 **"。**
 
 > [!TIP]
 > 管理员有几种不同的方式允许特定邮件跳过垃圾邮件筛选。 有关详细信息，请参阅 [在 EOP 中创建安全发件人列表](create-safe-sender-lists-in-office-365.md)。
 
-## <a name="where-is-the-data-from-submissions-to-microsoft-stored"></a>从提交到 Microsoft 的数据存储在何处？
+## <a name="where-is-the-data-from-submissions-to-microsoft-stored"></a>从提交到 Microsoft 的数据存储在什么位置？
 
 数据位于北美数据中心的 Office 365 合规性边界内。 数据由工程团队的分析师审阅，以帮助提高筛选器的有效性。
 

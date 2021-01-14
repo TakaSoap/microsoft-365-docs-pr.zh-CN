@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-office365
 description: 使用安全合规中心中的资源管理器和实时 &amp; 检测来有效调查和响应威胁。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 8bca8e39029fe041c0bab59e92d8a653647746ef
-ms.sourcegitcommit: 0ecac0387be6b49025b79ce8eb949a8cf62481e2
+ms.openlocfilehash: 5ecc90602573de0de08336c3bca41aed701d8329
+ms.sourcegitcommit: cc354fd54400be0ff0401f60bbe68ed975b69cda
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "49724410"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "49865028"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>威胁资源管理器和实时检测
 
@@ -422,7 +422,7 @@ When you select a URL in the list， you'll see a new **Export** button on the f
 
 ## <a name="review-email-messages-reported-by-users"></a>查看用户报告的电子邮件
 
-假设您想通过 Outlook 和 Web 上的 Outlook 报告邮件外接程序查看组织中用户报告为垃圾邮件、非垃圾邮件或网络钓鱼[的电子邮件](enable-the-report-message-add-in.md)。 若要查看它们，请使用资源管理器中的[  >  "电子邮件](threat-explorer-views.md#email--submissions)提交" (或实时检测) 。
+假设您希望查看组织中用户通过报告邮件外接程序或报告网络钓鱼外接程序报告为垃圾邮件、非垃圾邮件或网络钓鱼[的电子邮件](enable-the-report-phish-add-in.md)。 [](enable-the-report-message-add-in.md) 若要查看它们，请使用资源管理器中的[  >  "电子邮件](threat-explorer-views.md#email--submissions)提交" (或实时检测) 。
 
 1. 在安全&中心 () ，选择威胁管理资源管理器 (或实时检测 <https://protection.office.com>  \> ) 。   (此示例使用 Explorer.) 
 

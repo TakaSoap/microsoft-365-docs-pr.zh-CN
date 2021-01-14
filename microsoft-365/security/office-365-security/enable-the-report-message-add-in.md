@@ -15,13 +15,13 @@ search.appverid:
 ms.assetid: 4250c4bc-6102-420b-9e0a-a95064837676
 ms.collection:
 - M365-security-compliance
-description: 了解如何为单个用户或您的整个组织启用 Outlook 和 web 上的 outlook 和 Outlook 网页版报告消息外接程序。
-ms.openlocfilehash: baed46e500e58702b7031db5aa5ff376a4eafcb5
-ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
+description: 了解如何为单个用户或整个组织启用 Outlook 和 Outlook 网页邮件外接程序。
+ms.openlocfilehash: 13721317c33cf207f27cd8b98fb6d32864651847
+ms.sourcegitcommit: cc354fd54400be0ff0401f60bbe68ed975b69cda
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48877749"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "49864992"
 ---
 # <a name="enable-the-report-message-add-in"></a>启用报表消息加载项
 
@@ -29,140 +29,140 @@ ms.locfileid: "48877749"
 
 
 > [!NOTE]
-> 如果您是使用 Exchange Online 邮箱的 Microsoft 365 组织中的管理员，我们建议您在安全 & 合规性中心中使用提交门户。 有关详细信息，请参阅 [使用管理员提交将可疑的垃圾邮件、网络钓鱼、url 和文件提交给 Microsoft](admin-submission.md)。
+> 如果你是具有 Exchange Online 邮箱的 Microsoft 365 组织的管理员，我们建议你使用安全与合规中心&门户。 有关详细信息，请参阅"使用管理员提交"将可疑的垃圾邮件、网络钓鱼[、URL 和文件提交到 Microsoft。](admin-submission.md)
 
-Outlook 和 web 上的 outlook 的报告邮件外接程序 (以前称为 Outlook Web App) 使人们可以轻松地报告误报 (电子邮件被标记为错误的) 或漏报 (错误的电子邮件将) 到 Microsoft 及其子公司进行分析。 Microsoft 使用这些提交改进电子邮件保护技术的有效性。
+Outlook 和 Web 上的 Outlook 的"报告邮件"和"报告钓鱼"外接程序 (以前称为 Outlook Web App) ，它使用户能够轻松地将标记为错误 (的误报或误报) 或漏报 (错误电子邮件允许) 向 Microsoft 及其关联公司进行分析。
 
-例如，假设有人将大量邮件报告为网络钓鱼。 [安全仪表板](security-dashboard.md)和其他报告中的此信息图面。 组织的安全团队可以使用此信息指示可能需要更新的反网络钓鱼策略。 或者，如果用户使用报告邮件外接程序报告大量被标记为垃圾邮件的邮件，则组织的安全团队可能需要调整 [反垃圾邮件策略](configure-your-spam-filter-policies.md)。
+Microsoft 使用这些提交来提高电子邮件保护技术的有效性。 例如，如果用户报告大量使用报告邮件外接程序标记为"非垃圾邮件"的邮件，则组织的安全团队可能需要调整反垃圾邮件 [策略](configure-your-spam-filter-policies.md)。
 
-此外，如果您的组织使用 [的是 Microsoft Defender For Office 365 计划 1](office-365-atp.md) 或 [计划 2](office-365-ti.md)，则报告消息外接程序会为您组织的安全团队提供可用于查看和更新安全策略的有用信息。
+可以安装"报告邮件"或"报告钓鱼"加载项。 如果希望用户仅报告网络钓鱼邮件，请在你的组织中部署报告网络钓鱼外接程序。 有关详细信息，请参阅"[启用报告钓鱼外接程序"。](enable-the-report-phish-add-in.md)
 
-管理员可以为组织启用报告邮件外接程序，单个用户可以自行安装。
+报告邮件外接程序提供了报告垃圾邮件和网络钓鱼邮件的选项。 管理员可以为组织启用"报告消息"外接程序，并且单个用户可以自行安装它。
 
-如果您是单个用户，则可以 [为自己启用报告邮件加载项](#get-the-report-message-add-in-for-yourself)。
+如果你是单个用户，你可以为自己启用报告 [消息外接程序](#get-the-report-message-add-in-for-yourself)。
 
-如果您是全局管理员或 Exchange Online 管理员，并且将 Exchange 配置为使用 OAuth 身份验证，则可以 [为您的组织启用报告消息外接程序](#get-and-enable-the-report-message-add-in-for-your-organization)。 现在，可以通过 [集中部署](https://docs.microsoft.com/microsoft-365/admin/manage/centralized-deployment-of-add-ins)使用报告消息 Add-In。
+如果您是全局管理员或 Exchange Online 管理员，并且 Exchange 配置为使用 OAuth 身份验证，您可以为组织启用报告邮件 [外接程序](#get-and-enable-the-report-message-add-in-for-your-organization)。 报告消息Add-In现在可以通过集中 [部署获得](https://docs.microsoft.com/microsoft-365/admin/manage/centralized-deployment-of-add-ins)。
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>开始前，有必要了解什么？
+## <a name="what-do-you-need-to-know-before-you-begin"></a>在开始之前，您需要知道什么？
 
-- 报告邮件加载项适用于大多数 Microsoft 365 订阅和以下产品：
+- 报告邮件外接程序适用于大多数 Microsoft 365 订阅和以下产品：
 
   - Outlook 网页版
   - Outlook 2013 SP1 或更高版本
   - Outlook 2016 for Mac
-  - Outlook 包含在适用于企业的 Microsoft 365 应用程序中
+  - Microsoft 365 企业应用版中包含的 Outlook
 
-- 报告消息外接程序对本地 Exchange 组织中的邮箱不可用。
+- 报告邮件外接程序对内部部署 Exchange 组织的邮箱不可用。
 
-- 您可以将报告的邮件配置为复制或重定向到您指定的邮箱。 有关详细信息，请参阅 [用户提交策略](user-submission.md)。
+- 可以将报告的邮件配置为复制或重定向到指定的邮箱。 有关详细信息，请参阅用户 [提交策略](user-submission.md)。
 
-- 您的现有 web 浏览器应与报告邮件外接程序一起使用。 但是，如果您注意到加载项不可用或无法按预期工作，请尝试使用不同的浏览器。
+- 现有的 Web 浏览器应该与报告消息外接程序一起使用。 但是，如果发现加载项不可用或无法正常使用，请尝试其他浏览器。
 
-- 对于组织安装，需要将组织配置为使用 OAuth 身份验证。 有关详细信息，请参阅 [确定加载项的集中部署是否适用于你的组织](../../admin/manage/centralized-deployment-of-add-ins.md)。
+- 对于组织安装，组织需要配置为使用 OAuth 身份验证。 有关详细信息，请参阅"确定加载项集中部署[是否适用于你的组织"。](../../admin/manage/centralized-deployment-of-add-ins.md)
 
-- 管理员需要是全局管理员角色组的成员。 有关详细信息，请参阅[安全与合规中心中的权限](permissions-in-the-security-and-compliance-center.md)。
+- 管理员需是全局管理员角色组的成员。 有关详细信息，请参阅[安全与合规中心中的权限](permissions-in-the-security-and-compliance-center.md)。
 
-## <a name="get-the-report-message-add-in-for-yourself"></a>获取自己的报告邮件外接程序
+## <a name="get-the-report-message-add-in-for-yourself"></a>为自己获取"报告邮件"加载项
 
-1. 转到 Microsoft AppSource <https://appsource.microsoft.com/marketplace/apps> ，并搜索报告邮件外接程序。 若要直接转到报告邮件加载项，请转到 <https://appsource.microsoft.com/product/office/wa104381180> 。
+1. 转到 Microsoft AppSource， <https://appsource.microsoft.com/marketplace/apps> 然后搜索"报告消息"加载项。 若要直接转到"报告邮件"加载项，请转到 <https://appsource.microsoft.com/product/office/wa104381180> 。
 
-2. 单击 " **立即获取** "。
+2. 单击 **"立即获取"。**
 
-   ![报告消息-立即获取](../../media/ReportMessageGETITNOW.png)
+   ![报告消息 - 现在获取](../../media/ReportMessageGETITNOW.png)
 
-3. 在显示的对话框中，查看使用条款和隐私策略，然后单击 " **继续** "。
+3. 在出现的对话框中，查看使用条款和隐私策略，然后单击"继续 **"。**
 
-4. 使用您的工作或学校帐户登录 (商业用途) 或你的 Microsoft 帐户 (以供个人使用) 。
+4. 使用工作或学校帐户登录 (商业) 或 Microsoft 帐户 (个人使用) 。
 
-安装并启用加载项后，您将看到以下图标：
+安装并启用加载项后，你将看到以下图标：
 
 - 在 Outlook 中，图标如下所示：
 
-  ![报告邮件外接程序图标（适用于 Outlook）](../../media/OutlookReportMessageIcon.png)
+  ![Outlook 的"报告邮件"加载项图标](../../media/OutlookReportMessageIcon.png)
 
-- 在 web 上的 Outlook 中，图标如下所示：
+- 在 Outlook 网页 Outlook 中，图标如下所示：
 
-  ![Outlook 网页报告邮件加载项图标](../../media/d9326d0b-1769-4bc2-ae58-51f0ebc69a17.png)
+  ![Outlook 网页报告邮件外接程序图标](../../media/d9326d0b-1769-4bc2-ae58-51f0ebc69a17.png)
 
-若要了解如何使用加载项，请参阅 [使用报告消息加载项](https://support.microsoft.com/office/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)。
+若要了解如何使用外接程序，请参阅"使用 [报告消息"加载项](https://support.microsoft.com/office/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)。
 
-## <a name="get-and-enable-the-report-message-add-in-for-your-organization"></a>为您的组织获取并启用报告邮件外接程序
+## <a name="get-and-enable-the-report-message-add-in-for-your-organization"></a>获取并启用组织的"报告邮件"加载项
 
 > [!NOTE]
-> 最长可能需要12个小时，外接程序才会显示在您的组织中。
+> 外接程序最多可能需要 12 小时才能显示在组织中。
 
-1. 在 Microsoft 365 管理中心，转到 " **设置"、"集成应用 & 外接** 程序" 页 <https://admin.microsoft.com/AdminPortal/Home#/Settings/AddIns> ，然后单击 " **部署外接程序** "。
+1. 在 Microsoft 365 管理中心中，转到"设置"、"**集成&加载项**"页面，然后单击"部署 <https://admin.microsoft.com/AdminPortal/Home#/Settings/AddIns> **外接程序"。**
 
-   ![Microsoft 365 管理中心中的 "服务和外接程序" 页](../../media/ServicesAddInsPageNewM365AdminCenter.png)
+   ![Microsoft 365 管理中心中的"服务和加载项"页](../../media/ServicesAddInsPageNewM365AdminCenter.png)
 
-2. 在 " **部署新的外接程序** " 弹出对话框中，查看信息，然后单击 " **下一步** "。
+2. 在 **出现的"部署新的外接程序"** 飞出中，查看信息，然后单击"下一 **步"。**
 
-3. 在下一页上，单击 **"从存储区中选择"** 。
+3. 下一页上，单击 **"从应用商店中选择"。**
 
-   ![部署新的加载项页面](../../media/NewAddInScreen2.png)
+   ![部署新外接程序页面](../../media/NewAddInScreen2.png)
 
-4. 在出现的 " **选择外接程序** " 页中，单击 **"搜索** " 框，输入 **报告消息** ，然后单击 " **搜索** ![ 搜索" 图标 ](../../media/search-icon.png) 。 在结果列表中，找到 " **报告消息** "，然后单击 " **添加** "。
+4. 在 **出现的"选择外接程序"** 页中，在"搜索"框中单击，输入 **"报告** 消息"，然后单击 **"搜索搜索"** ![ 图标 ](../../media/search-icon.png) 。 在结果列表中，找到 **"报告消息**"，然后单击"**添加"。**
 
-   ![选择加载项搜索结果](../../media/NewAddInScreen3.png)
+   ![选择外接程序搜索结果](../../media/NewAddInScreen3.png)
 
-5. 在出现的对话框中，查看许可和隐私信息，然后单击 " **继续** "。
+5. 在出现的对话框中，查看许可和隐私信息，然后单击"继续 **"。**
 
-6. 在出现的 " **配置外接程序** " 页中，配置以下设置：
+6. 在 **出现的"配置外接程序"** 页中，配置以下设置：
 
-   - **分配的用户** ：选择下列值之一：
+   - **已分配用户**：选择下列值之一：
 
-     - 默认)  (的 **所有人**
+     - **每个** (默认) 
      - **特定用户/组**
      - **就我自己**
 
-   - **部署方法** ：选择下列值之一：
+   - **部署方法**：选择下列值之一：
 
-     - **固定 (默认)** ：加载项将自动部署到指定的用户，并且无法将其删除。
-     - **可用** ：用户可以在 **家庭** 版中安装外接程序 \> **Get add-ins** \> **管理员管理** 。
-     - **可选** ：将加载项自动部署到指定的用户，但可以选择将其删除。
+     - **修复 (默认) ：** 外接程序会自动部署到指定用户，并且他们无法删除它。
+     - **可用**：用户可以在家庭获取外接程序管理员管理的 \>  \> **安装外接程序**。
+     - **可选**：加载项会自动部署到指定用户，但他们可以选择将其删除。
 
-   ![配置加载项页面](../../media/configure-add-in.png)
+   ![配置外接程序页面](../../media/configure-add-in.png)
 
-   完成后，请单击 " **部署** "。
+   完成后，单击"部署 **"。**
 
-7. 在出现的 " **部署报告邮件** " 页中，您将看到一个进度报告，随后将会看到已部署加载项的确认信息。 阅读信息后，单击 " **下一步** "。
+7. 在 **出现的"** 部署报告消息"页中，你将看到一个进度报告，后跟一条确认加载项已部署的确认。 阅读信息后，单击"下一 **步"。**
 
-   !["部署报告邮件" 页](../../media/deploy-report-message-page.png)
+   !["部署报告消息"页](../../media/deploy-report-message-page.png)
 
-8. 在出现的 " **通知外接程序** " 页上，查看信息，然后单击 " **关闭** "。
+8. 在出现的 **"宣布外接程序"** 页上，查看信息，然后单击"关闭 **"。**
 
-   ![通知加载项页面](../../media/announce-add-in-page.png)
+   !["宣布外接程序"页](../../media/announce-add-in-page.png)
 
-## <a name="learn-how-to-use-the-report-message-add-in"></a>了解如何使用报告邮件加载项
+## <a name="learn-how-to-use-the-report-message-add-in"></a>了解如何使用"报告邮件"加载项
 
-为其分配了加载项的人员将看到以下图标：
+分配了外接程序的人将看到以下图标：
 
 - 在 Outlook 中，图标如下所示：
 
-  ![报告邮件外接程序图标（适用于 Outlook）](../../media/OutlookReportMessageIcon.png)
+  ![Outlook 的"报告邮件外接程序"图标](../../media/OutlookReportMessageIcon.png)
 
-- 在 web 上的 Outlook 中，图标如下所示：
+- 在 Outlook 网页 Outlook 中，图标如下所示：
 
-  ![Outlook 网页报告邮件加载项图标](../../media/d9326d0b-1769-4bc2-ae58-51f0ebc69a17.png)
+  ![Outlook 网页报告邮件外接程序图标](../../media/d9326d0b-1769-4bc2-ae58-51f0ebc69a17.png)
 
-当您通知用户有关报告邮件加载项时，请包含 [使用报告邮件加载项](https://support.microsoft.com/office/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)的链接。
+当通知用户有关报告邮件外接程序时，请包含一个指向"使用报告邮件 ["加载项的链接](https://support.microsoft.com/office/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)。
 
 ## <a name="review-or-edit-settings-for-the-report-message-add-in"></a>查看或编辑报告邮件外接程序的设置
 
-1. 在 Microsoft 365 管理中心，转到上的 " **服务" & "外接程序** " 页 <https://admin.microsoft.com/AdminPortal/Home#/Settings/ServicesAndAddIns> 。
+1. 在 Microsoft 365 管理中心中，转到& **加载项** 页面 <https://admin.microsoft.com/AdminPortal/Home#/Settings/ServicesAndAddIns> 。
 
-   ![新 Microsoft 365 管理中心中的 "服务和 Add-Ins" 页](../../media/ServicesAddInsPageNewM365AdminCenter.png)
+   ![新Add-Ins Microsoft 365 管理中心中的"服务和服务"页面](../../media/ServicesAddInsPageNewM365AdminCenter.png)
 
-2. 查找并选择 **报告邮件** 加载项。
+2. 查找并选择 **"报告邮件** "加载项。
 
-3. 在显示的 " **编辑报告消息** " 浮出控件中，查看并编辑组织的相应设置。 完成时，请单击“保存”。
+3. 在 **出现的"编辑报告消息** "飞出中，根据组织情况查看和编辑设置。 完成后，单击“**保存**”。
 
-   ![报告邮件外接程序的设置](../../media/EditReportMessageAddIn.png)
+   ![报告邮件加载项的设置](../../media/EditReportMessageAddIn.png)
 
 ## <a name="view-and-review-reported-messages"></a>查看和查看报告的邮件
 
-若要查看用户向 Microsoft 报告的邮件，您可以选择以下选项：
+若要查看用户向 Microsoft 报告的邮件，可以使用以下选项：
 
-- 使用管理提交门户。 有关详细信息，请参阅 [View user 报送 To Microsoft](admin-submission.md#view-user-submissions-to-microsoft)。
+- 使用管理员提交门户。 有关详细信息，请参阅查看 [Microsoft 的用户提交](admin-submission.md#view-user-submissions-to-microsoft)。
 
-- 创建邮件流规则 (也称为传输规则) 发送报告的邮件的副本。 有关说明，请参阅 [使用邮件流规则查看用户报告给 Microsoft 的内容](use-mail-flow-rules-to-see-what-your-users-are-reporting-to-microsoft.md)。
+- 创建邮件流规则 (传输规则) 报告的邮件副本。 有关说明， [请参阅"使用邮件流规则"查看用户向 Microsoft 报告哪些内容](use-mail-flow-rules-to-see-what-your-users-are-reporting-to-microsoft.md)。

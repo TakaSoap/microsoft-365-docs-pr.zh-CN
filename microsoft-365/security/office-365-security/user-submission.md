@@ -16,122 +16,124 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 description: 管理员可以了解如何配置邮箱以收集用户报告的垃圾邮件和网络钓鱼电子邮件。
-ms.openlocfilehash: 7064e2d26722c433d33fe2f983484a40fa33c1e6
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.openlocfilehash: 8f9da620643d46bf21a18eccc2047ad4361832cc
+ms.sourcegitcommit: cc354fd54400be0ff0401f60bbe68ed975b69cda
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49615620"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "49865054"
 ---
 # <a name="user-submissions-policy"></a>用户提交策略
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
-在使用 Exchange Online 邮箱的 Microsoft 365 组织中，您可以指定接收用户报告为恶意或非恶意邮件的邮箱。 当用户使用各种报告选项提交邮件时，您可以使用此邮箱来拦截邮件， (仅将邮件发送给自定义邮箱) 或接收 (发送到自定义邮箱和 Microsoft) 的邮件的副本。 此功能适用于以下邮件报告选项：
+在具有 Exchange Online 邮箱的 Microsoft 365 组织中，可以指定一个邮箱来接收用户报告为恶意或不恶意的邮件。 当用户使用各种报告选项提交邮件时，您可以使用此邮箱截获仅发送到自定义邮箱 (的邮件) 或接收 (发送到自定义邮箱和 Microsoft) 的邮件的副本。 此功能适用于以下邮件报告选项：
 
-- [报告邮件加载项](enable-the-report-message-add-in.md)
+- ["报告邮件"加载项](enable-the-report-message-add-in.md)
 
-- [Outlook 网页上的内置报告](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md) (以前称为 Outlook web App) 
+- [报告网络钓鱼外接程序](enable-the-report-phish-add-in.md)
+
+- [Outlook 网页中的内置](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md) 报告 (以前称为Outlook Web App) 
 
 - [Outlook for iOS 和 Outlook for Android 中的内置报告](report-junk-email-and-phishing-scams-in-outlook-for-iOS-and-Android.md)
 
   > [!NOTE]
-  > 如果 [在 web 上的 Outlook 中禁用](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md#disable-or-enable-junk-email-reporting-in-outlook-on-the-web)了报告功能，则在此处启用用户提交将覆盖该设置，并使用户能够在 web 上再次报告 Outlook 中的邮件。
+  > 如果在 Web 上的 [Outlook](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md#disable-or-enable-junk-email-reporting-in-outlook-on-the-web)中禁用报告，则在此处启用用户提交将覆盖该设置，并使用户能够在 Outlook 网页中再次报告邮件。
 
-您还可以配置第三方邮件报告工具，以便将邮件转发到您指定的邮箱。
+还可以配置第三方邮件报告工具，将邮件转发到指定的邮箱。
 
-将用户报告的邮件传递到自定义邮箱，而不是直接发送到 Microsoft，使管理员可以有选择性地将邮件报告给 Microsoft，并使用 [管理员提交](admin-submission.md)。
+将用户报告的邮件传递至自定义邮箱而不是直接发送给 Microsoft，使管理员能够选择性地使用管理员提交将邮件手动 [报告](admin-submission.md)给 Microsoft。
 
 ## <a name="custom-mailbox-prerequisites"></a>自定义邮箱先决条件
 
-使用以下文章配置需要的必备组件，以使用户报告的邮件转到您的自定义邮箱：
+使用以下文章配置必备组件，以便用户报告的邮件转到自定义邮箱：
 
-- 通过创建用于设置垃圾邮件可信度级别的 exchange 邮件流规则，跳过自定义邮箱上的垃圾邮件筛选。 请参阅 [使用 EAC 创建邮件流规则，将邮件的 scl](use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md#use-the-eac-to-create-a-mail-flow-rule-that-sets-the-scl-of-a-message) 设置为将 scl 设置为 **-1**。
+- 通过创建 Exchange 邮件流规则来设置垃圾邮件可信度，跳过对自定义邮箱的垃圾邮件筛选。 [请参阅使用 EAC 创建邮件流规则，将邮件的 SCL](use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md#use-the-eac-to-create-a-mail-flow-rule-that-sets-the-scl-of-a-message)设置为 **-1。**
 
-- 为自定义邮箱中的恶意软件关闭扫描附件。 使用 " [在适用于 Office 365 的 Defender 中设置安全附件策略](set-up-atp-safe-attachments-policies.md) " 创建安全附件策略，将安全附件设置为 " **关闭** " " **未知恶意软件响应**"。
+- 关闭对自定义邮箱中恶意软件的扫描附件。 使用 [Defender for Office 365](set-up-atp-safe-attachments-policies.md)中的"设置安全附件"策略创建安全附件策略，并针对安全附件未知恶意软件响应设置"关闭 **"。**
 
-- 对自定义邮箱中的邮件禁用 URL 扫描。 使用 [在 Defender For Office 365 中设置安全链接策略](set-up-atp-safe-links-policies.md) ，以创建一个安全链接策略，其中设置为 " **关闭** "，以便 **为邮件中的未知潜在恶意 url 选择操作**。
+- 关闭自定义邮箱中邮件的 URL 扫描。 使用 [Defender for Office 365](set-up-atp-safe-links-policies.md)中的"设置安全链接"策略创建安全链接策略，并设置"关闭"以选择邮件中未知潜在恶意 **URL 的操作**。
 
-- 创建反恶意软件策略以关闭恶意软件零小时自动清除。 请参阅 [使用安全 & 合规性中心创建反恶意软件策略](configure-your-spam-filter-policies.md#use-the-security--compliance-center-to-create-anti-spam-policies)，将 **恶意软件设置为零小时自动清除** **。**
+- 创建反恶意软件策略以关闭恶意软件零时差自动清除。 请参阅 [使用安全&](configure-your-spam-filter-policies.md#use-the-security--compliance-center-to-create-anti-spam-policies)合规中心创建反恶意软件策略，将 **恶意软件零时差自动清除****设置为关闭**。
 
-- 创建垃圾邮件筛选器策略以禁用自定义邮箱中的垃圾邮件和网络钓鱼的零小时自动清除 (ZAP) 。 请参阅 [使用安全 & 合规性中心创建反垃圾邮件策略](configure-your-spam-filter-policies.md#use-the-security--compliance-center-to-create-anti-spam-policies)，并清除用于垃圾邮件 **Zap** 和 **网络钓鱼 ZAP** 的 "**打开**" 复选框。
+- 创建垃圾邮件筛选器策略，以禁用对自定义邮箱中的 (和网络钓鱼的 ZAP) 零时差自动清除策略。 请参阅 [使用安全&](configure-your-spam-filter-policies.md#use-the-security--compliance-center-to-create-anti-spam-policies) 合规中心创建反垃圾邮件策略，并清除 **垃圾邮件** **ZAP** 和 **网络钓鱼 ZAP** 的 On 复选框。
 
-- 禁用自定义邮箱中的垃圾邮件规则。 使用 [Exchange Online 邮箱上的 "配置垃圾邮件设置](configure-junk-email-settings-on-exo-mailboxes.md) " 禁用垃圾邮件规则。 禁用后，EOP 无法将邮件移动到 "垃圾邮件" 文件夹，具体取决于垃圾邮件筛选判定操作 **将邮件移动到 "垃圾邮件" 文件夹** 或邮箱中的 "安全列表" 集合。
+- 禁用自定义邮箱中的垃圾邮件规则。 使用 [配置 Exchange Online 邮箱上的垃圾邮件设置禁用](configure-junk-email-settings-on-exo-mailboxes.md) 垃圾邮件规则。 禁用后，EOP 无法根据垃圾邮件筛选裁定操作将邮件移动到"垃圾邮件"文件夹或邮箱的安全列表集合，将邮件移动到"垃圾邮件"文件夹。
 
-确认您的邮箱符合所有适用的先决条件后，请 [使用安全 & 合规性中心在本文中配置用户提交邮箱](#use-the-security--compliance-center-to-configure-the-user-submissions-mailbox) () 。
+验证邮箱满足所有适用的先决条件后，请使用安全 & 合规中心在[](#use-the-security--compliance-center-to-configure-the-user-submissions-mailbox)本文 (配置用户提交邮箱) 。
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>开始前，有必要了解什么？
 
-- 安全与合规中心的打开网址为 <https://protection.office.com/>。 若要直接转到 " **用户提交** " 页，请使用 <https://protection.office.com/userSubmissionsReportMessage> 。
+- 安全与合规中心的打开网址为 <https://protection.office.com/>。 若要直接转到" **用户提交"页面，** 请使用 <https://protection.office.com/userSubmissionsReportMessage> 。
 
-- 若要修改用户提交的配置，您必须是下列角色组之一的成员：
+- 若要修改用户提交的配置，你需要是以下角色组之一的成员：
 
   - [安全和合规中心](permissions-in-the-security-and-compliance-center.md)中的“**组织管理**”或“**安全管理员**”。
-  - [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups)中的 **组织管理**。
+  - **Exchange** [Online 中的组织管理](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups)。
 
-## <a name="use-the-security--compliance-center-to-configure-the-user-submissions-mailbox"></a>使用安全 & 合规性中心配置用户提交邮箱
+## <a name="use-the-security--compliance-center-to-configure-the-user-submissions-mailbox"></a>使用安全&合规中心配置用户提交邮箱
 
-1. 在安全 & 合规性中心中，转到 " **威胁管理** \> **策略** \> **用户提交**"。
+1. 在安全&中心，转到 **"威胁管理** \> **策略** \> **用户提交"。**
 
-2. 在出现的 " **用户提交** " 页面中，选择下列选项之一：
+2. 在 **出现的"用户** 提交"页中，选择以下选项之一：
 
-   1. **启用 (建议的 outlook) 的 "报告邮件" 功能**：如果您在 outlook 网页版中使用报告邮件外接程序或内置报告，请选择此选项，然后配置以下设置：
+   1. **为 Outlook (推荐**) 启用"报告邮件"功能：如果使用"报告邮件"加载项、"报告钓鱼"加载项或 Outlook 网页中的内置报告，请选择此选项，然后配置以下设置：
 
-      - **自定义最终用户确认消息**：单击此链接。 在出现的 " **自定义确认消息** " 浮出控件中，配置以下设置：
+      - **自定义最终用户确认消息**：单击此链接。 在 **出现的"自定义确认** 消息"飞出中，配置以下设置：
 
-      - **提交前**：在 " **标题** " 和 " **确认消息** " 框中，输入用户在使用报告邮件外接程序报告邮件之前看到的描述性文本。 您可以使用变量% type% 来包括提交类型 (垃圾邮件、非垃圾邮件、网络钓鱼等 ) 。
+      - **提交前**：在"标题"和"确认"消息框中，输入用户在使用"报告邮件"加载项或"报告网络钓鱼"外接程序报告邮件之前看到的描述性文本。 您可以使用变量 %type% 将提交类型 (垃圾邮件、网络钓鱼等) 。
 
-        如前所述，如果选择将报告的邮件发送给 Microsoft 的选项，则还会向通知中添加以下文本：
+        如前所述，如果您选择将报告的邮件发送到 Microsoft 的选项，还会将以下文本添加到通知中：
 
-        > 你的电子邮件将按与 Microsoft 的相同方式提交到 Microsoft 进行分析。 有些电子邮件可能包含个人信息或敏感信息。
+        > 你的电子邮件将像现在一样提交到 Microsoft 进行分析。 某些电子邮件可能包含个人或敏感信息。
 
-      - **提交后**：单击 " ![ 展开图标" ](../../media/scc-expand-icon.png) 。 在 " **标题** " 和 " **确认消息** " 框中，输入用户在使用报告邮件外接程序报告邮件后看到的描述性文本。 您可以使用变量% type% 来包括提交类型。
+      - **提交后**：单击 ![ 展开图标 ](../../media/scc-expand-icon.png) 。 在 **"标题** 和确认"消息框中，输入用户在使用"报告邮件"加载项或"报告网络钓鱼"外接程序报告邮件后看到的描述性文本。 可以使用变量 %type% 包含提交类型。
 
-      完成时，请单击“保存”。 若要清除这些值，请单击 "**用户提交**" 页上的 "**还原** 回"。
+      完成后，单击“**保存**”。 若要清除这些值 **，请单击"** 用户提交"页上的 **"还原回"。**
 
-      - **将报告的邮件发送到**：执行下列任一选择：
+      - **将报告的邮件发送到**：进行以下选择之一：
 
-        - **Microsoft (建议)**：不使用用户提交邮箱 (所有报告的邮件都转到 Microsoft) 。
+        - **Microsoft (推荐) ：** 所有报告的邮件都转到 Microsoft) 时，不会使用用户提交 (。
 
-        - **Microsoft 和自定义邮箱**：在显示的框中，输入现有 Exchange Online 邮箱的电子邮件地址。 不允许使用通讯组。 用户提交将转到 Microsoft 进行分析和自定义邮箱，以供管理员或安全操作团队进行分析。
+        - **Microsoft 和自定义邮箱**：在出现的框中，输入现有 Exchange Online 邮箱的电子邮件地址。 不允许通讯组。 用户提交将同时转到 Microsoft 进行分析，并转到自定义邮箱，供管理员或安全运营团队进行分析。
 
-        - **自定义邮箱**：在显示的框中，输入现有 Exchange Online 邮箱的电子邮件地址。 不允许使用通讯组。 如果您希望邮件仅转到管理员或安全操作团队进行分析，请使用此选项。 除非管理员自行转发，否则邮件不会转到 Microsoft。
+        - **自定义邮箱**：在出现的框中，输入现有 Exchange Online 邮箱的电子邮件地址。 不允许通讯组。 如果希望邮件仅转到管理员或安全运营团队进行分析，请使用此选项。 除非管理员自行转发邮件，否则邮件不会转到 Microsoft。
 
         > [!NOTE]
-        > 美国政府组织 (GCC、GCC-H 和 DoD) 只能配置 **自定义邮箱**。 其他两个选项将被禁用。
+        > 美国政府组织 (GCC、GCC-H 和 DoD) 只能配置 **自定义邮箱**。 其他两个选项已禁用。
 
-      完成后，请单击 " **确认**"。
+      完成后，单击"确认 **"。**
 
       > [!CAUTION]
-      > 如果您已在 Outlook 网页上使用 Outlook 网页邮箱策略禁用了 " [垃圾邮件报告](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md#disable-or-enable-junk-email-reporting-in-outlook-on-the-web) "，但您将上述任一设置配置为向 microsoft 报告邮件，则用户可以使用报告邮件加载项在 outlook 网页中向 microsoft 报告邮件。
+      > 如果已使用 Web 上的 Outlook 邮箱策略禁用 [Outlook](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md#disable-or-enable-junk-email-reporting-in-outlook-on-the-web) 网页中的垃圾邮件报告，但配置了以上任一设置以向 Microsoft 报告邮件，则用户将能够使用"报告邮件"加载项或"报告网络钓鱼"外接程序向 Outlook 网页中的 Microsoft 报告邮件。
 
-   - **禁用 outlook 的报告邮件功能**：如果您在 outlook 网页版中使用第三方报告工具而不是报告邮件外接程序或内置报告，请选择此选项，然后配置以下设置：
+   - **禁用 Outlook** 的"报告邮件"功能：如果使用第三方报告工具而不是报告邮件外接程序、"报告钓鱼"加载项或 Outlook 网页中的内置报告，请选择此选项，然后配置以下设置：
 
-      选择 " **使用此自定义邮箱" 可接收用户报告的提交**。 在出现的框中，输入已在 Office 365 中的现有邮箱的电子邮件地址。 这必须是 Exchange Online 中可接收电子邮件的现有邮箱。
+      选择 **"使用此自定义邮箱接收用户报告的提交"。** 在出现的框中，输入 Office 365 中已有邮箱的电子邮件地址。 这应该是 Exchange Online 中可以接收电子邮件的现有邮箱。
 
-      完成后，请单击 " **确认**"。
+      完成后，单击"确认 **"。**
 
 ## <a name="message-submission-format"></a>邮件提交格式
 
-发送到自定义邮箱的邮件需要遵循特定的提交邮件格式。 提交 (信封标题) 的主题应采用以下格式：
+发送到自定义邮箱的邮件需要遵循特定的提交邮件格式。 提交 (信封标题) 应采用以下格式：
 
 `SafetyAPIAction|NetworkMessageId|SenderIp|FromAddress|(Message Subject)`
 
-其中，SafetyAPIAction 是以下整数值之一：
+其中 SafetyAPIAction 是以下整数值之一：
 
 - 1：垃圾邮件
-- 2：不是垃圾邮件
+- 2：非垃圾邮件
 - 3：网络钓鱼
 
 在下面的示例中：
 
-- 将邮件报告为网络钓鱼。
-- 网络邮件 ID 为49871234-6dc6-43e8-abcd-08d797f20abe。
-- 发件人 IP 为167.220.232.101。
-- "发件人" 地址为 test@contoso.com。
-- 邮件的主题行是 "测试网络钓鱼提交"
+- 邮件被报告为网络钓鱼。
+- 网络消息 ID 为 49871234-6dc6-43e8-abcd-08d797f20abe。
+- 发件人 IP 为 167.220.232.101。
+- The From address is test@contoso.com.
+- 邮件的主题行是"测试网络钓鱼提交"
 
 `3|49871234-6dc6-43e8-abcd-08d797f20abe|167.220.232.101|test@contoso.com|(test phishing submission)`
 
-不遵循此格式的邮件在提交门户中不会正确显示。
+不遵循此格式的邮件将不会在提交门户中正确显示。

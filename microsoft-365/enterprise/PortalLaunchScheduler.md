@@ -17,31 +17,31 @@ search.appverid:
 - SPO160
 - MET150
 description: 本文介绍如何使用门户启动计划程序启动门户
-ms.openlocfilehash: 7e488caba5e4df47bb3f51f195e093891565d95c
-ms.sourcegitcommit: 001e64f89f9c3cd6bbd4a25459f5bee3b966820c
+ms.openlocfilehash: 66912f5730c580bd75282a64124fefcdf262d738
+ms.sourcegitcommit: cc354fd54400be0ff0401f60bbe68ed975b69cda
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "49367197"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "49864872"
 ---
 # <a name="launch-your-portal-using-the-portal-launch-scheduler"></a>使用门户启动计划程序启动门户
 
-门户是 Intranet 上的一个 SharePoint 网站，其中包含大量使用网站内容的网站查看者。 以波形的顺序启动门户是确保用户具有访问新 SharePoint Online 门户的流畅且能力丰富的体验的重要部分。 
+门户是 Intranet 上的一个 SharePoint 网站，其中包含大量使用网站内容的网站查看者。 分波启动门户是确保用户在访问新 SharePoint Online 门户时获得流畅且性能丰富的体验的重要部分。 
 
-以波形方式启动是一种用于滚动门户的关键方式，在 [SharePoint Online 中规划门户启动回滚计划中](https://docs.microsoft.com/microsoft-365/Enterprise/Planportallaunchroll-out?view=o365-worldwide)有详细介绍。 门户启动计划程序旨在帮助您通过管理新门户的重定向来帮助您遵循波形/分阶段的滚动方法。 在每个波形过程中，可以在每次部署浪潮期间收集用户反馈并监视性能。 这样做的优势在于门户的速度缓慢，让您可以选择在继续下一次浪潮之前暂停和解决问题，并最终确保用户获得良好的体验。 
+分波启动是推出门户的关键方法，如在 SharePoint Online 中规划门户启动 [推出计划所详述](https://docs.microsoft.com/microsoft-365/Enterprise/Planportallaunchroll-out?view=o365-worldwide)。 门户启动计划程序旨在帮助你通过管理新门户的重定向遵循一波/分阶段推出方法。 在每个阶段中，你可以收集用户反馈并监视每一波部署期间的性能。 这有一个缓慢引入门户的优势，让你可以选择暂停并解决问题，然后再继续下一波，并最终确保为用户提供积极体验。 
 
 有两种类型的重定向： 
 - 双向：启动新的新式 SharePoint Online 门户以替换现有 SharePoint 经典或新式门户 
-- 临时页面重定向：启动新的新式 SharePoint Online 门户（没有现有 SharePoint 门户）
+- 临时页面重定向：启动没有现有 SharePoint 门户的新新式 SharePoint Online 门户
 
-门户启动计划程序仅适用于启动新式 SharePoint Online 门户，即通信网站和新式团队网站。 必须提前安排启动时间至少7天。 所需的波浪数由预期的用户数决定。 在计划门户启动之前，必须运行 [SharePoint 工具的页面诊断程序](https://aka.ms/perftool) 以验证门户上的主页是否运行正常。 在门户启动结束时，具有网站权限的所有用户都将能够访问新网站。 
+门户启动计划程序仅可用于启动新式 SharePoint Online (例如通信网站) 。 启动必须至少提前 7 天进行计划。 所需的波形数由预期用户数决定。 在计划门户启动之前，必须运行 [SharePoint](https://aka.ms/perftool) 页面诊断工具，以验证门户上的主页是否正常运行。 在门户启动结束时，具有网站权限的所有用户都将能够访问新网站。 
 
-有关启动成功的门户的详细信息，请遵循 [创建、启动和维护正常门户](https://docs.microsoft.com/sharepoint/portal-health)中详细介绍的基本原则、实践和建议。 
+有关启动成功门户的详细信息，请遵循在创建、启动和维护正常门户时详述的指导原则、实践 [和建议](https://docs.microsoft.com/sharepoint/portal-health)。 
 
 > [!NOTE]
-> 此功能不适用于 Office 365 德国、由世纪互联运营的 Office 365 (中国) 或 Microsoft 365 美国政府版计划。
+> 此功能不适用于 Office 365 Germany、由世纪 (中国) 或 Microsoft 365 美国政府版计划运营的 Office 365。
 
-## <a name="app-setup-and-connecting-to-sharepoint-online"></a>应用程序设置和连接到 SharePoint Online
+## <a name="app-setup-and-connecting-to-sharepoint-online"></a>应用程序安装和连接到 SharePoint Online
 1. [下载最新的SharePoint在线管理壳](https://go.microsoft.com/fwlink/p/?LinkId=255251)。
 
     > [!NOTE]
@@ -52,29 +52,29 @@ ms.locfileid: "49367197"
 
 ## <a name="view-any-existing-portal-launch-setups"></a>查看任何现有的门户启动设置
 
-若要查看是否存在现有门户启动配置，请执行以下操作：
+查看是否有现有门户启动配置：
 
    ```PowerShell
    Get-SPOPortalLaunchWaves -LaunchSiteUrl <object> -DisplayFormat <object>
    ```
 
-## <a name="schedule-a-portal-launch-on-the-site"></a>在网站上安排门户启动
+## <a name="schedule-a-portal-launch-on-the-site"></a>计划网站上门户的启动
 
-所需的波浪数取决于所需的启动大小。 
-- 少于10k 用户：1波
-- 10k 到30k 用户：3波 
-- 30k + 到100k 用户：5波
-- 超过100k 的用户：5个波，并联系你的 Microsoft 帐户团队
+所需的波形数取决于您预期的启动大小。 
+- 少于 10，000 个用户：1 wave
+- 10k 至 30k 用户：3 个波形 
+- 30k+ 到 100，000 个用户：5 个波形
+- 超过 100，000 个用户：5 次，并联系你的 Microsoft 帐户团队
 
-### <a name="steps-for-bidirectional-redirection"></a>双向重定向步骤
+### <a name="steps-for-bidirectional-redirection"></a>双向重定向的步骤
 
-双向重定向包括启动新的新式 SharePoint Online 门户以替换现有的 SharePoint 经典或新式门户。 Active 无线电波中的用户将被重定向到新网站，无论它们是导航到旧网站还是新网站。 尝试访问新网站的非启动浪潮中的用户将被重定向回旧网站，直到其波形启动。 
+双向重定向涉及启动新的新式 SharePoint Online 门户以替换现有 SharePoint 经典或新式门户。 无论用户是导航到旧网站还是新网站，活动波中的用户都将重定向到新网站。 尝试访问新网站的未启动波中的用户将重定向回旧网站，直到启动其 Wave。 
 
-仅支持旧网站上的默认主页和新网站上的默认主页之间的重定向。 如果您有需要访问旧网站和新网站的管理员或所有者而不进行重定向，请确保使用参数列出这些网站 `WaveOverrideUsers` 。 如果您有需要访问旧网站和新网站的管理员或所有者而不进行重定向，请确保使用参数列出这些网站 `WaveOverrideUsers` 。 仅支持旧网站上的默认主页和新网站上的默认主页之间的重定向。
+我们仅支持在旧网站上的默认主页与新网站上的默认主页之间重定向。 如果管理员或所有者需要访问新旧网站，而无需重定向，请确保使用参数列出 `WaveOverrideUsers` 这些管理员或所有者。
 
-若要以暂存方式将用户从现有 SharePoint 网站迁移到新的 SharePoint 网站，请执行以下操作：
+以分步方式将用户从现有 SharePoint 网站迁移到新的 SharePoint 网站：
 
-1. 运行以下命令以指定门户启动波形。
+1. 运行以下命令以指定门户启动波。
    
    ```PowerShell
     New-SPOPortalLaunchWaves -LaunchSiteUrl <object> -RedirectionType Bidirectional -RedirectUrl <string> -ExpectedNumberOfUsers <object> -WaveOverrideUsers <object> -Waves <object>
@@ -88,13 +88,13 @@ ms.locfileid: "49367197"
 {Name:"Wave 3", Groups:["Viewers 3"], LaunchDateUtc:"2020/10/16"}]'
    ```
 
-2. 完整验证。 重定向可能需要5-10 分钟才能在服务中完成其配置。 
+2. 完成验证。 重定向可能需要 5-10 分钟才能完成整个服务的配置。 
 
 ### <a name="steps-for-redirection-to-temporary-page"></a>重定向到临时页面的步骤
 
-如果不存在任何现有 SharePoint 门户，则应使用临时页面重定向。 以暂存方式将用户定向到新新式 SharePoint Online 门户。 如果用户处于尚未启动的浪潮中，则会将它们重定向到 (任何 URL) 的临时页面。 
+当不存在现有 SharePoint 门户时，应该使用临时页面重定向。 用户以分步方式定向到新的新式 SharePoint Online 门户。 如果用户在尚未启动的波中，则他们将被重定向到包含任何 URL (临时) 。 
 
-1. 运行以下命令以指定门户启动波形。
+1. 运行以下命令以指定门户启动波。
    
       ```PowerShell
     New-SPOPortalLaunchWaves -LaunchSiteUrl <object> -RedirectionType ToTemporaryPage -RedirectUrl <string> -ExpectedNumberOfUsers <object> -WaveOverrideUsers <object> -Waves <object>
@@ -108,17 +108,16 @@ ms.locfileid: "49367197"
 {Name:"Wave 3", Groups:["Viewers 3"], LaunchDateUtc:"2020/10/16"}]'
    ```
 
-2. 完整验证。 重定向可能需要5-10 分钟才能在服务中完成其配置。 
-   - `New-SPOPortalLaunchWaves  -LaunchSiteUrl "https://*.sharepoint.com/sites/newsite" -RedirectionType Bidirectional -RedirectUrl "https://*.sharepoint.com/sites/oldsite" -ExpectedNumberOfUsers LessThan10kUsers -WaveOverrideUsers "*@microsoft.com" -Waves ' [{Name:"Wave 1", Groups:["Viewers SG1"], LaunchDateUtc:"2020/10/14"}, {Name:"Wave 2", Groups:["Viewers SG2"], LaunchDateUtc:"2020/10/15"}]' -IsTesting $true`
+2. 完成验证。 重定向可能需要 5-10 分钟才能完成整个服务的配置。 
 
-## <a name="pause-or-restart-a-portal-launch-on-the-site"></a>在网站上暂停或重新启动门户启动
+## <a name="pause-or-restart-a-portal-launch-on-the-site"></a>暂停或重新启动网站上门户启动
 
-1. 若要暂停正在进行的门户启动，并暂时阻止即将发生的声波 progressions，请运行以下命令：
+1. 若要暂停正在启动的门户并暂时阻止即将发生的波级，请运行以下命令：
 
    ```PowerShell
    Set-SPOPortalLaunchWaves -Status Pause - LaunchSiteUrl <object>
    ```
-2. 验证是否已将所有用户重定向到旧网站。 
+2. 验证所有用户是否被重定向到旧网站。 
 
 3. 若要重新启动已暂停的门户启动，请运行以下命令：
 
@@ -126,19 +125,17 @@ ms.locfileid: "49367197"
    Set-SPOPortalLaunchWaves -Status Restart - LaunchSiteUrl <object>
    ```
    
-4. 验证重定向现在是否已还原。 
+4. 验证重定向现已还原。 
 
-## <a name="delete-a-portal-launch-on-the-site"></a>在网站上删除门户启动
-1. 创建门户启动浪潮。
-  - `New-SPOPortalLaunchWaves  -LaunchSiteUrl "https://*.sharepoint.com/sites/NewSite" -RedirectionType ToTemporaryPage -RedirectUrl "https://*.sharepoint.com/sites/OldSite" -ExpectedNumberOfUsers From10kTo30kUsers -WaveOverrideUsers *@microsoft.com -Waves [{Name:"Wave 1", Groups:["Viewers SG1"], LaunchDateUtc:"2020/10/14"}, {Name:"Wave 2", Groups:["Viewers SG2"], LaunchDateUtc:"2020/10/15"}]' -IsTesting $true`
+## <a name="delete-a-portal-launch-on-the-site"></a>删除网站上门户启动
 
-2. 运行以下命令以删除已计划或正在进行的网站的门户启动。
+1. 运行以下命令以删除已计划或正在进行某个网站的门户启动。
 
    ```PowerShell
    Remove-SPOPortalLaunchWaves -LaunchSiteUrl <object>
    ```
 
-3. 验证是否所有用户都不会进行重定向。
+2. 验证所有用户是否未发生重定向。
 
 ## <a name="learn-more"></a>了解详细信息
-[在 SharePoint Online 中规划门户启动滚动计划](https://docs.microsoft.com/microsoft-365/Enterprise/Planportallaunchroll-out)
+[在 SharePoint Online 中规划门户启动推出计划](https://docs.microsoft.com/microsoft-365/Enterprise/Planportallaunchroll-out)
