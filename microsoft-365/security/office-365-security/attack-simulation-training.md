@@ -11,18 +11,20 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 description: 管理员可以了解如何使用 Microsoft Defender for Office 365 中的攻击模拟培训模拟网络钓鱼攻击并培训其用户防钓鱼。
-ms.openlocfilehash: e7582b1f74266d988ecdf8f6dac49019699e2bc1
-ms.sourcegitcommit: 9833f95ab6ab95aea20d68a277246dca2223f93d
+ms.openlocfilehash: dfdd3c93afb1b0fb30cc5b5affc040a369c29447
+ms.sourcegitcommit: df58fd8ebe14ca98fc1be84dbfb9c29ef7ab1d62
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "49794252"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49870963"
 ---
 # <a name="simulate-a-phishing-attack"></a>模拟网络钓鱼攻击
 
 Microsoft Defender for Office 365 中的攻击模拟培训允许你在组织中运行恶意网络攻击模拟，以测试安全策略和做法，并培训员工提高认知度并减少他们对攻击的敏感性。 本文将引导你完成使用攻击模拟培训创建模拟网络钓鱼攻击。
 
 [!INCLUDE [Prerelease information](../includes/prerelease.md)]
+
+有关攻击模拟培训的入门信息，请参阅 [使用攻击模拟培训入门](attack-simulation-training-get-started.md)。
 
 若要启动模拟网络钓鱼攻击，请打开 Microsoft [365](https://security.microsoft.com/)安全中心，转到"电子邮件&协作攻击 \> **模拟培训**"，然后切换到"[**模拟**](https://security.microsoft.com/attacksimulator?viewid=simulations)"选项卡。
 
@@ -69,11 +71,11 @@ Microsoft Defender for Office 365 中的攻击模拟培训允许你在组织中�
 
 ## <a name="audience-targeting"></a>访问群体设定
 
-现在该选择此模拟的受众了。 可以选择包括 **组织中所有用户或** 仅包括 **特定用户和组**。
+现在该选择此模拟的受众了。 可以选择包括 **组织中所有用户或** 仅 **包括特定用户和组**。
 
 当你选择仅 **包含特定用户和组时** ，你可以：
 
-- **添加** 用户，这允许你利用租户的搜索以及高级搜索和筛选功能，例如面向过去 3 个月内未通过模拟定位的用户。
+- **添加用户**，这允许你利用租户搜索以及高级搜索和筛选功能，例如面向过去 3 个月内未通过模拟定位的用户。
   ![Microsoft 365 安全中心攻击模拟培训中的用户筛选](../../media/attack-sim-preview-user-targeting.png)
 - **通过 CSV** 导入，可以导入此模拟的预定义用户集。
 
@@ -94,8 +96,8 @@ Microsoft Defender for Office 365 中的攻击模拟培训允许你在组织中�
 
 ## <a name="launch-details-and-review"></a>启动详细信息和查看
 
-现在，所有内容已配置完成，你可以立即启动此模拟，或安排在以后日期进行。 你还需要选择何时结束此模拟。 在选定时间后，我们将停止捕获此模拟的交互。
+现在，所有内容已配置完成，你可以立即启动此模拟或安排在以后日期进行。 你还需要选择何时结束此模拟。 我们将停止捕获在选定时间后与此模拟的交互。
 
 **启用区域感知时区传递** ，以根据员工的区域在工作时间向员工传递模拟攻击消息。
 
-完成后，单击 **"下一** 步"并查看模拟的详细信息。 单击 **任意部件的** "编辑"可返回并更改任何需要更改的详细信息。 完成后，单击"**提交"。**
+完成后，单击 **"下一** 步"并查看模拟的详细信息。 单击 **任意** 部件的"编辑"可返回并更改任何需要更改的详细信息。 完成后，单击"**提交"。**
