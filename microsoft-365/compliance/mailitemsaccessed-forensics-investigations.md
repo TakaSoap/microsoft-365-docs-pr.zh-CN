@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: 使用 MailItemsAccessed 邮箱审核操作对被盗用的用户账户进行司法鉴定调查。
-ms.openlocfilehash: 908c2a22b05d7daef8d55c7e0aac61f25489692a
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: 15379a5c24ee222cf097e94d46dc46de0e385820
+ms.sourcegitcommit: c1f9a1b2a34146c51c9e33c4119a388b249ce7a9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47546288"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "49868000"
 ---
 # <a name="use-advanced-audit-to-investigate-compromised-accounts"></a>使用“高级审核”来调查被盗用的帐户
 
@@ -33,11 +33,11 @@ ms.locfileid: "47546288"
 
 新的 MailItemsAccessed 操作是新“[高级审核](advanced-audit.md)”功能的一部分。 它是“[Exchange 邮箱审核](https://docs.microsoft.com/office365/securitycompliance/enable-mailbox-auditing#mailbox-auditing-actions)”的一部分，并默认为分配了 Office 365 或 Microsoft 365 E5 许可证的用户或拥有 Microsoft 365 E5 合规加载项订阅的组织启用。
 
-MailItemsAccessed 邮箱审核操作包含所有邮件协议：POP、IMAP、 MAPI、EWS、Exchange ActiveSync 和 REST。 还包含了两种存取邮件的类型：*同步*和*绑定*。
+MailItemsAccessed 邮箱审核操作包含所有邮件协议：POP、IMAP、 MAPI、EWS、Exchange ActiveSync 和 REST。 还包含了两种存取邮件的类型：*同步* 和 *绑定*。
 
 ### <a name="auditing-sync-access"></a>审核同步访问权限
 
-仅当邮箱由适用于 Windows 或 Mac 的桌面版 Outlook 客户端存取时，才记录同步操作。 同步操作期间，这些客户端通常从云端下载大型邮件项至本地计算机。 同步操作的审核量非常大。 因此我们取代生成同步的各邮件项的审核记录，我们只针对含有被同步项的邮件文件夹生成审核事件。 这假设已同步文件夹中的*所有*邮件项已被盗用。 访问权限类型会记录在审核记录的 OperationProperties 字段中。 
+仅当邮箱由适用于 Windows 或 Mac 的桌面版 Outlook 客户端存取时，才记录同步操作。 同步操作期间，这些客户端通常从云端下载大型邮件项至本地计算机。 同步操作的审核量非常大。 因此我们取代生成同步的各邮件项的审核记录，我们只针对含有被同步项的邮件文件夹生成审核事件。 这假设已同步文件夹中的 *所有* 邮件项已被盗用。 访问权限类型会记录在审核记录的 OperationProperties 字段中。 
 
 参见“[使用 MailItemsAccessed 审核记录进行司法鉴定调查](#use-mailitemsaccessed-audit-records-for-forensic-investigations)”一节的第 2 步了解在审核记录中显示同步访问权限的示例。
 
@@ -178,8 +178,8 @@ Search-MailboxAuditLog -Identity <user> -StartDate 01/06/2020 -EndDate 01/20/202
 
 |审核记录 1  |审核记录 2  |审核记录 3|
 |---------|---------|---------|
-|ClientIPAddress**1**<br/>SessionId**2**|ClientIPAddress**2**<br/>SessionId**2**|ClientIPAddress**1**<br/>SessionId**3**|
-|InternetMessageId**A**<br/>InternetMessageId**D**<br/>InternetMessageId**E**<br/>InternetMessageId**F**<br/>|InternetMessageId**A**<br/>InternetMessageId**C**|InternetMessageId**B** |
+|ClientIPAddress **1**<br/>SessionId **2**|ClientIPAddress **2**<br/>SessionId **2**|ClientIPAddress **1**<br/>SessionId **3**|
+|InternetMessageId **A**<br/>InternetMessageId **D**<br/>InternetMessageId **E**<br/>InternetMessageId **F**<br/>|InternetMessageId **A**<br/>InternetMessageId **C**|InternetMessageId **B** |
 ||||
 
 如果 [上一节](#filtering-of-duplicate-audit-records) 中的表中列出的任何属性不相同，则会生成单独的审核记录来跟踪新的上下文。 根据活动发生的背景，访问将被排序成单独的审核记录。
@@ -187,3 +187,9 @@ Search-MailboxAuditLog -Identity <user> -StartDate 01/06/2020 -EndDate 01/20/202
 例如，在下列截屏中显示的审核记录中，虽然我们从 EWSEditor 和 OWA 同时存取邮件，根据存取发生的背景，存取活动被整理至不同的审核记录中。 在这种情况中，上下文通过 ClientInfoString 属性的不同值确定。
 
 ![基于上下文的不同审核记录](../media/MailItemsAccessed4.png)
+
+下面是上一屏幕截图中所显示的命令语法：
+
+```powershell
+Search-MailboxAuditLog -Identity admin -ShowDetails -Operations MailItemsAccessed -ResultSize 2000 | Select LastAccessed,Operation,AuditOperationsCountInAggregatedRecord,ClientInfoString
+``` 

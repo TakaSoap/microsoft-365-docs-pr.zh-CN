@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: 3f7dde1a-a8ea-4366-86da-8ee6777f357c
 description: 在 Exchange 混合部署中，使用安全与合规中心中的内容搜索工具搜索并导出本地用户的 Teams 聊天数据。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 60bb207463c360d98623caed4024bb87deb5fdfc
-ms.sourcegitcommit: 1423e08a02d30f0a2b993fb99325c3f499c31787
+ms.openlocfilehash: 9620c48056545e6d6cf053040849acfe0a1bc68e
+ms.sourcegitcommit: c1f9a1b2a34146c51c9e33c4119a388b249ce7a9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "48277096"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "49868010"
 ---
 # <a name="search-for-teams-chat-data-for-on-premises-users"></a>搜索 Teams 中本地用户的聊天数据
 
@@ -60,7 +60,7 @@ ms.locfileid: "48277096"
   
 - 组织的默认域名。
 
-- 组织的租户名称和租户 ID。 可在 Azure Active Directory 门户中找到这些信息（位于“**管理**”\>“**属性**下）。 请参阅[查找 Microsoft 365 租户 ID](https://docs.microsoft.com/onedrive/find-your-office-365-tenant-id)。
+- 组织的租户名称和租户 ID。 可在 Azure Active Directory 门户中找到这些信息（位于“**管理**”\>“**属性** 下）。 请参阅[查找 Microsoft 365 租户 ID](https://docs.microsoft.com/onedrive/find-your-office-365-tenant-id)。
 
 - 可在支持请求中使用以下标题或说明：“为本地用户启用应用程序内容搜索”。 这有助于将请求传送到将实现请求的电子数据展示工程团队。
 
@@ -142,13 +142,13 @@ ms.locfileid: "48277096"
 
 ## <a name="frequently-asked-questions"></a>常见问题解答
 
- **本地用户基于云的邮箱位于何处？**
+**本地用户基于云的邮箱位于何处？**
   
-基于云的存储是在与组织相同的数据中心中预配的。
+Teams 聊天数据存储在本地用户的“首选数据位置”（PDL）中。 PDL 同时在单一地理和多地理环境中都授予支持。 有关详细信息，请参阅 [Microsoft 365 多地理位置](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-multi-geo)。
   
  **除了提交支持请求以外，还有其他要求吗？**
   
- 如前文所述，必须将具有本地邮箱的用户标识同步到基于云的组织，以便为 Office 365 中的每个本地用户帐户创建对应的邮件用户帐户。 你的组织还必须具有 Office 365 企业版订阅，例如 Office 365 企业版 E1、E3 或 E5 订阅。
+如前文所述，必须将具有本地邮箱的用户标识同步到基于云的组织，以便为 Office 365 中的每个本地用户帐户创建对应的邮件用户帐户。 你的组织还必须具有 Office 365 企业版订阅，例如 Office 365 企业版 E1、E3 或 E5 订阅。
   
  **如果将用户的本地邮箱迁移到云，是否有丢失 Teams 聊天数据的风险？**
   

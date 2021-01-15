@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用敏感度标签保护 SharePoint 和 Microsoft Teams 网站以及 Microsoft 365 组中的内容。
-ms.openlocfilehash: c1232e8e839837fc5564909322c90f634f1c6fa9
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.openlocfilehash: 9276288bc05abebe864a4465f69284372fa0baab
+ms.sourcegitcommit: c1f9a1b2a34146c51c9e33c4119a388b249ce7a9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49614926"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "49868020"
 ---
 # <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>使用敏感度标签保护 Microsoft Teams、Microsoft 365 组和 SharePoint 网站中的内容
 
@@ -277,9 +277,10 @@ ms.locfileid: "49614926"
 
   - SharePoint
   - Teams
-  - Outlook 网页版以及 Windows、MacOS、iOS 和 Android 版 Outlook
+  - Outlook 网页版以及 Windows、macOS、iOS 和 Android 版 Outlook
   - Forms
   - Stream
+  - Planner（即将推出） 
 
 以下应用和服务目前不支持为网站和组设置配置的敏感度标签：
 
@@ -293,7 +294,6 @@ ms.locfileid: "49614926"
 
   - Dynamics 365
   - Yammer
-  - Planner
   - Project
   - Power BI
 
