@@ -15,12 +15,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: 了解如何创建具有唯一敏感度标签的团队来保证安全。
-ms.openlocfilehash: 03252cad8449ee83cd757fac3ae74db6df68bcfe
-ms.sourcegitcommit: 98b889e674ad1d5fa37d4b6c5fc3eda60a1d67f3
+ms.openlocfilehash: d5cfe33d4f254832ccf26552d8ca392cf1dc440c
+ms.sourcegitcommit: df58fd8ebe14ca98fc1be84dbfb9c29ef7ab1d62
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "49751139"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49870975"
 ---
 # <a name="configure-a-team-with-security-isolation"></a>配置具有安全隔离的团队
 
@@ -106,7 +106,7 @@ ms.locfileid: "49751139"
 1. 打开 [Microsoft 365 合规中心](https://compliance.microsoft.com)。
 2. 在“**解决方案**”下，单击“**信息保护**”。
 3. 单击“**创建标签**”。
-4. 为标签命名。 建议使用“**敏感**”，但如果该名称已在使用，则可以选择其他名称。
+4. 为标签命名。 我们建议以你将要使用的团队为其命名。
 5. 添加显示名称和说明，然后单击“**下一步**”。
 6. 在“**定义此标签页的搜索范围**”中，选择“**文件和电子邮件**”和“**组和站点**”，然后单击“**下一步**”。
 7. 在“**选择文件和电子邮件的保护设置**”页面中，选择“**加密文件和电子邮件**”，然后单击“**下一步**”。

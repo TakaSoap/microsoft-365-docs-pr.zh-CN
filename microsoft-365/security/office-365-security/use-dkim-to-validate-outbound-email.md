@@ -19,12 +19,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 了解如何结合使用域密钥识别邮件 (DKIM) 和 Microsoft 365，以确保目标电子邮件系统信任从自定义域发送的邮件。
-ms.openlocfilehash: f8ae6334a078d635de069d2fe7af351ad42d8df3
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.openlocfilehash: 0c77798f0bf4b5dedfa5023eaa0b4de4ab8c5b64
+ms.sourcegitcommit: df58fd8ebe14ca98fc1be84dbfb9c29ef7ab1d62
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49615356"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49870988"
 ---
 # <a name="use-dkim-to-validate-outbound-email-sent-from-your-custom-domain"></a>使用 DKIM 验证从自定义域发送的出站电子邮件
 
@@ -209,6 +209,10 @@ TTL:                3600
 5. 选择要对其启用 DKIM 的域，然后对“**对此域的邮件进行 DKIM 签名**”选择“**启用**”。为每个自定义域重复执行这一步。
 
 #### <a name="to-enable-dkim-signing-for-your-custom-domain-by-using-powershell"></a>使用 PowerShell 为自定义域启用 DKIM 签名
+
+> [!IMPORTANT]
+>:::image type="content" source="../../media/DKIMNoKeysSavedForThisDomain.PNG" alt-text="“此域未保存 DKIM 密钥。”错误。":::
+> 如果你首次配置 DKIM，并看到错误“此域未保存 DKIM 密钥。” 请完成下面步骤 2 中的命令（例如，*Set-DkimSigningConfig -Identity contoso.com -Enabled $true*），以查看密钥。
 
 1. [连接到 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)。
 

@@ -19,18 +19,16 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 管理员可以了解如何使用攻击模拟培训在 Microsoft 365 E5 或 Microsoft Defender for Office 365 计划 2 组织中运行模拟网络钓鱼和密码攻击。
-ms.openlocfilehash: 9d97816edf7d59c002658fc8bb3f39e72dbc2430
-ms.sourcegitcommit: df58fd8ebe14ca98fc1be84dbfb9c29ef7ab1d62
+ms.openlocfilehash: 2c00fb27748887c6b8e2fa1458b10f0c3405eef7
+ms.sourcegitcommit: 8849dd6f80217c29f427c7f008d918f30c792240
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 01/15/2021
-ms.locfileid: "49871238"
+ms.locfileid: "49877160"
 ---
 # <a name="get-started-using-attack-simulation-training"></a>开始使用攻击模拟培训
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
-
-[!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
 如果你的组织拥有 Microsoft 365 E5 或 Microsoft Defender for Office 365 计划 2，其中包括威胁调查和响应功能，可以使用 Microsoft 安全中心中的攻击模拟培训在组织中运行真实的攻击方案。 [](office-365-ti.md) 这些模拟攻击可以帮助你在真正的攻击影响你的最后一线之前识别和查找易受攻击的用户。 阅读本文可了解更多信息。
 
@@ -59,15 +57,15 @@ ms.locfileid: "49871238"
 
 在攻击模拟培训中，可以使用多种社交工程技术：
 
-- **凭据获取**：攻击者向收件人发送包含 URL 的邮件。 当收件人单击该 URL 时，他们会被带至一个网站，该网站通常显示一个对话框，询问用户输入用户名和密码。 通常，目标页面以表示已知网站为标题，以在用户中建立信任。
+- **凭据获取**：攻击者向收件人发送包含 URL 的邮件。 当收件人单击 URL 时，他们会被带至一个网站，该网站通常显示一个对话框，询问用户输入用户名和密码。 通常，目标页面以表示已知网站为标题，以在用户中建立信任。
 
-- **恶意软件** 附件：攻击者向收件人发送包含附件的邮件。 当收件人打开附件时， (代码，例如，) 在用户设备上运行宏代码，以帮助攻击者安装其他代码或进一步自我攻击。
+- **恶意软件** 附件：攻击者向收件人发送包含附件的邮件。 当收件人打开附件时， (代码，例如，宏) 在用户设备上运行，以帮助攻击者安装其他代码或进一步修改自身。
 
 - **附件中的链接**：这是凭据收集的混合。 攻击者向收件人发送包含附件内 URL 的邮件。 当收件人打开附件并单击 URL 时，他们会被带至一个网站，该网站通常显示一个对话框，询问用户输入用户名和密码。 通常，目标页面以表示已知网站为标题，以在用户中建立信任。
 
-- 指向 **恶意软件** 的链接：攻击者向收件人发送一封邮件，其中包含指向已知文件共享网站 (（例如，SharePoint Online 或 Dropbox) ）上的附件的链接。 当收件人单击该 URL 时，附件将打开， (例如，宏) 在用户设备上运行，以帮助攻击者安装其他代码或进一步放大自身。
+- 指向 **恶意软件的链接**：攻击者向收件人发送一封邮件，其中包含指向已知文件共享网站 (（例如，SharePoint Online 或 Dropbox) ）上的附件的链接。 当收件人单击 URL 时，附件将打开， (例如，宏) 在用户设备上运行，以帮助攻击者安装其他代码或进一步修改自身。
 
-- **按 URL 驱动器**：攻击者向收件人发送包含 URL 的邮件。 当收件人单击 URL 时，他们会被带至尝试运行后台代码的网站。 此后台代码尝试收集有关收件人的信息或在设备上部署任意代码。 通常，目标网站是已被入侵的已知网站或已知网站的克隆。 熟悉网站有助于让用户确信链接可安全单击。 此技术也称为水 _洞攻击_。
+- **按 URL 驱动器**：攻击者向收件人发送包含 URL 的邮件。 当收件人单击 URL 时，他们会被带至尝试运行后台代码的网站。 此后台代码尝试收集有关收件人的信息或在设备上部署任意代码。 通常，目标网站是遭到入侵的已知网站或已知网站的克隆。 熟悉网站有助于让用户确信链接可安全单击。 此技术也称为水 _洞攻击_。
 
 > [!NOTE]
 > 在网络钓鱼活动中使用该 URL 之前，请检查受支持的 Web 浏览器中模拟网络钓鱼 URL 的可用性。 虽然我们与许多 URL 信誉供应商合作，始终允许这些模拟 URL，但我们并不总是具有完全覆盖 (例如，Google 安全浏览) 。 大多数供应商都提供指导，以便你始终允许特定 URL (例如 <https://support.google.com/chrome/a/answer/7532419> ，) 。
@@ -109,4 +107,4 @@ ms.locfileid: "49871238"
 
 ### <a name="gaining-insights"></a>获取见解
 
-有关如何通过报告获取见解的分步说明，请参阅通过攻击模拟培训 [获得见解](attack-simulation-training-insights.md)。
+有关如何使用报告获取见解的分步说明，请参阅通过攻击模拟培训 [获得见解](attack-simulation-training-insights.md)。

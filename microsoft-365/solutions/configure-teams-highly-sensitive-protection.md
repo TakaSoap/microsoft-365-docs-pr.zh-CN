@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: 了解如何部署具有高度敏感数据保护的团队。
-ms.openlocfilehash: 6354de5a37547d14b16a4d6a0857ddc390d531e6
-ms.sourcegitcommit: 98b889e674ad1d5fa37d4b6c5fc3eda60a1d67f3
+ms.openlocfilehash: 045f1b1d1ebf03eb70554dc5964acb0a12e0060f
+ms.sourcegitcommit: df58fd8ebe14ca98fc1be84dbfb9c29ef7ab1d62
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "49750805"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49870847"
 ---
 # <a name="configure-teams-with-protection-for-highly-sensitive-data"></a>配置具有高度敏感数据保护的团队
 
@@ -33,7 +33,7 @@ ms.locfileid: "49750805"
 
 高度敏感级别提供了以下超出基线层级的额外保护：
 
-- 团队的敏感度标签，可用于打开或关闭来宾共享，并仅允许未托管设备通过 Web 访问 SharePoint 内容。 此标签还可用于对文件进行分类和解密。
+- 团队的敏感度标签，可用于打开或关闭来宾共享，并阻止未托管设备访问 SharePoint 内容。 此标签还可用于对文件进行分类和解密。
 - 限制性更强的默认共享链接类型
 - 只有团队所有者可以创建专用频道。
 - 关联 SharePoint 网站的访问请求被关闭。
@@ -63,7 +63,7 @@ ms.locfileid: "49750805"
 1. 打开 [Microsoft 365 合规中心](https://compliance.microsoft.com)。
 2. 在“**解决方案**”下，单击“**信息保护**”。
 3. 单击“**创建标签**”。
-4. 为标签命名。 建议使用“**敏感**”，但如果该名称已在使用，则可以选择其他名称。
+4. 为标签命名。 建议使用“**高度敏感**”，但如果该名称已在使用，则可以选择其他名称。
 5. 添加显示名称和说明，然后单击“**下一步**”。
 6. 在“**定义此标签页的搜索范围**”中，选择“**文件和电子邮件**”和“**组和站点**”，然后单击“**下一步**”。
 7. 在“**选择文件和电子邮件的保护设置**”页面中，选择“**加密文件和电子邮件**”，然后单击“**下一步**”。

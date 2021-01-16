@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: da585eea-f576-4f55-a1e0-87090b6aaa9d
 description: 管理员角色映射到业务功能，并授予在管理中心执行特定任务的权限。 例如，”服务管理员”可通过管理中心打开支持票证。
-ms.openlocfilehash: 774edf1a024bd7aab7f35d5635c84b355fc0ef5a
-ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
+ms.openlocfilehash: ddea8a06af2b529a369ea045913b639b84c6f9d4
+ms.sourcegitcommit: c1f9a1b2a34146c51c9e33c4119a388b249ce7a9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "49682653"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "49867978"
 ---
 # <a name="about-admin-roles"></a>关于管理员角色
 
@@ -88,9 +88,9 @@ Microsoft 365 管理中心可让你管理 Azure AD 角色和 Microsoft Intune �
   
 合作伙伴可以分配以下角色：
   
-- **完全管理**，其权限等同于全局管理员，但通过合作伙伴中心管理多重身份验证除外。
+- **管理员代理**，其权限等同于全局管理员，但通过合作伙伴中心管理多重身份验证除外。
 
-- **有限管理**，其权限等同于支持管理员。
+- **支持人员代理**，其权限等同于支持管理员。
 
 在合作伙伴将这些角色分配给用户之前，必须先将合作伙伴作为委派管理员添加到你的帐户中。 此过程由授权合作伙伴发起。 合作伙伴将向你发送一封电子邮件，询问你是否要授予其作为委派管理员的权限。有关说明，请参阅[授权或删除合作伙伴关系](https://docs.microsoft.com/microsoft-365/admin/misc/add-partner)。
   

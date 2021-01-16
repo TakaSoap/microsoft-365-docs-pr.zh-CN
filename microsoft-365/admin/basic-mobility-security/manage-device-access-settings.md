@@ -17,33 +17,33 @@ ms.custom:
 - AdminSurgePortfolio
 search.appverid:
 - MET150
-description: 基本移动性和安全性可帮助您保护和管理移动设备。
-ms.openlocfilehash: e66465d312c4268aca82677fa4e517aaeb822ce3
-ms.sourcegitcommit: aeb94601a81db3ead8610c2f36cff30eb9fe10e7
+description: 基本移动性和安全性可以帮助您保护和管理移动设备。
+ms.openlocfilehash: dd9d777798c2c96776a8f9b40a3c4dfe0b95702a
+ms.sourcegitcommit: 8849dd6f80217c29f427c7f008d918f30c792240
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "47430080"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49876944"
 ---
 # <a name="manage-device-access-settings-in-basic-mobility-and-security"></a>在基本移动性和安全性中管理设备访问设置
 
-如果使用的是基本移动性和安全性，则可能存在无法使用基本移动性和安全性进行管理的设备。 如果是这样，则应阻止 Exchange ActiveSync 应用程序访问 Microsoft 365 电子邮件，以获取基本移动性和安全性不受支持的移动设备。 这有助于在更多设备上保护组织信息。
+如果你使用的是基本移动性和安全性，则可能有一些设备无法通过基本移动性和安全性进行管理。 如果是这样，你应该阻止Exchange ActiveSync移动性和安全性不支持的移动设备访问 Microsoft 365 电子邮件。 这有助于跨更多设备保护组织信息。
 
-请按照以下步骤操作：
+使用以下步骤：
 
-1. 使用全局管理员帐户登录到 Microsoft 365。
-    
+1. 使用全局管理员帐户登录 Microsoft 365。
+
 2. 在浏览器中，键入：  [https://protection.office.com](https://protection.office.com/) 。    
 
     >[!IMPORTANT]
-    >如果这是你第一次使用 MDM for Microsoft 365 商业标准，请在此处激活： [激活移动设备管理](https://admin.microsoft.com/EAdmin/Device/IntuneInventory.aspx)。 激活后，使用 [Office 365 安全性管理设备 & 合规性](https://protection.office.com/)。
+    >如果这是第一次使用 Microsoft 365 商业标准版的基本移动性和安全性，请在此处激活：激活基本安全性和 [移动性](https://admin.microsoft.com/EAdmin/Device/IntuneInventory.aspx)。 激活后，使用 [Office 365](https://protection.office.com/)安全与合规&设备。
 
-3. 转到 "数据丢失防护" > **设备管理**   > " **设备策略**，然后选择" **管理组织范围的设备访问设置**"。
-    
-4. 选择 " **阻止**"。
+3. 转到设备管理设备>数据丢失防护， **** 然后选择"管理   >  **** **组织范围内的设备访问设置"。**
 
-    :::image type="content" source="../../media/basic-mobility-security/bms-5-block-access.png" alt-text="基本移动性和安全块访问复选框":::
+4. 选择 **"阻止"。**
 
-5. 选择 " **保存**"。 
+    :::image type="content" source="../../media/basic-mobility-security/bms-5-block-access.png" alt-text="&quot;基本移动和安全阻止访问&quot;复选框":::
 
-若要了解基本移动性和安全性支持的设备，请参阅 [基本移动性和安全性的功能](capabilities.md)。
+5. 选择 **"保存"。**
+
+若要了解基本移动性和安全性支持哪些设备，请参阅" [基本移动性和安全性的功能"。](capabilities.md)

@@ -334,6 +334,8 @@
                   href: ./office-365-security/auditing-reports-in-eop.md
             - name: Defender for Office 365
               href: ./office-365-security/office-365-atp.md
+            - name: 评估 Defender for Office 365
+              href: ./office-365-security/office-365-evaluation.md
             - name: Defender for Office 365 的新增功能
               href: office-365-security/whats-new-in-office-365-atp.md
             - name: 适用于 SharePoint、OneDrive 和 Microsoft Teams 的 Defender for Office 365
@@ -481,6 +483,8 @@
               href: ./office-365-security/configuration-analyzer-for-security-policies.md
             - name: Defender for Office 365 中的攻击模拟器
               href: ./office-365-security/attack-simulator.md
+            - name: 开始使用攻击模拟培训
+              href: ./office-365-security/attack-simulation-training-get-started.md
             - name: 通过攻击模拟培训模拟网络钓鱼攻击
               href: ./office-365-security/attack-simulation-training.md
             - name: 创建用于攻击模拟培训的自定义负载
