@@ -15,12 +15,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: 了解如何创建具有唯一敏感度标签的团队来保证安全。
-ms.openlocfilehash: d5cfe33d4f254832ccf26552d8ca392cf1dc440c
-ms.sourcegitcommit: df58fd8ebe14ca98fc1be84dbfb9c29ef7ab1d62
+ms.openlocfilehash: 439dee40d1501801fc09d570614a591259c6f09c
+ms.sourcegitcommit: 31be333178b934c519f419656f4c3a53e1beffdc
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49870975"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "49881701"
 ---
 # <a name="configure-a-team-with-security-isolation"></a>配置具有安全隔离的团队
 
@@ -46,7 +46,7 @@ ms.locfileid: "49870975"
 <br>
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4mGHf]
 
-<a name="poster"></a> 有关此方案的两页摘要，请参阅[“采用安全隔离的 Microsoft Teams”文章](../downloads/team-security-isolation-poster.pdf)。
+<a name="poster"></a> 有关此方案的 1 页摘要，请参阅 [采用安全隔离的 Microsoft Teams 文章](../downloads/team-security-isolation-poster.pdf)。
 
 [![“采用安全隔离的 Microsoft Teams”文章](../media/secure-teams-security-isolation/team-security-isolation-poster.png)](../downloads/team-security-isolation-poster.pdf)
 
