@@ -18,27 +18,27 @@ ms.collection:
 - M365-security-compliance
 description: 无论是将新解决方案添加到合规中心、根据反馈更新现有功能，还是推出最新更新的文档，Microsoft 365 都可以帮助你随时了解不断变化的合规性环境。 了解我们这个月已经进行了哪些工作。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 3688ee7390b7cadf701e8dbefd8b12c82cf6d89c
-ms.sourcegitcommit: 98b889e674ad1d5fa37d4b6c5fc3eda60a1d67f3
+ms.openlocfilehash: 8723171820bb1c089d34b81f5adb6663ecc9b8af
+ms.sourcegitcommit: 27cb4591e08f62ba0a08d6dcf224bf2039034fe5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "49751589"
+ms.lasthandoff: 01/17/2021
+ms.locfileid: "49883711"
 ---
 # <a name="whats-new-in-microsoft-365-compliance"></a>Microsoft 365 合规中心更新信息
 
 无论是向 [Microsoft 365](microsoft-365-compliance-center.md)合规中心添加新解决方案、根据反馈更新现有功能，还是推出最新更新的文档，Microsoft 365 都可以帮助你随时了解不断变化的合规性环境。 查看下面的内容，了解 Microsoft 365 合规性的新增功能。 
 
 > [!NOTE]
-> 一些合规性功能以不同的速度向我们的客户推出。 如果尚未看到功能，请尝试将自己添加到 [定向发布](https://docs.microsoft.com/office365/admin/manage/release-options-in-office-365)。
+> 一些合规性功能以不同速度向我们的客户推出。 如果尚未看到功能，请尝试将自己添加到 [定向发布](https://docs.microsoft.com/office365/admin/manage/release-options-in-office-365)。
 
 
 > [!TIP]
 > 有兴趣了解其他管理中心中正在做什么？ 请查看以下文章：<br>[Microsoft 365 管理中心中的新增功能](https://docs.microsoft.com/office365/admin/whats-new-in-preview)<br>[SharePoint 管理中心中的新增功能](https://docs.microsoft.com/sharepoint/what-s-new-in-admin-center)<br>[Microsoft 365 Defender 的新增功能](https://docs.microsoft.com/microsoft-365/security/mtp/whats-new)<br><br>
-请访问 [Microsoft 365 路线图](https://www.microsoft.com/en-us/microsoft-365/roadmap) ，了解已启动、正在推出、正在开发、已取消或之前发布的 Microsoft 365 功能。
+请访问 [Microsoft 365 路线图](https://www.microsoft.com/en-us/microsoft-365/roadmap) ，了解已启动、即将推出、正在开发、已取消或之前发布的 Microsoft 365 功能。
 
 ## <a name="november--december-2020"></a>2020 & 11 月&日
-提醒我们通常以预览状态发布新功能和更新功能，以了解这些功能的使用方式，以便我们可以在发布通用功能之前改进它们。 在预览版和 (预览版) ，请务必通过打开合规性中心右下角的反馈卡，告诉我们您的想法。
+提醒我们通常以预览状态发布新功能和更新的功能，以了解这些功能的使用方式，以便我们可以在发布为通用功能之前进行完善和改进。 在预览版和 (预览版) ，请务必通过打开合规性中心右下角的反馈卡，告诉我们您的想法。
 
 ![反馈](../media/Feedback_card_MCC.JPG)
 
@@ -67,13 +67,13 @@ ms.locfileid: "49751589"
 ### <a name="sensitivity-labels"></a>敏感度标签
 
 - [ (预览) SharePoint 网站的外部共享设置](sensitivity-labels-teams-groups-sites.md#how-to-configure-groups-and-site-settings)。 创建将用于组和网站的标签时，你将看到一个选项，用于控制已应用标签的 SharePoint 网站的外部共享。 可以指定允许任何人、新来宾和现有来宾、仅现有来宾或仅组织用户共享。 应用标签后，标签设置将替换 [在 SharePoint](https://docs.microsoft.com/sharepoint/change-external-sharing-site)管理中心配置的任何外部共享设置。
-- [从已标记的文档中删除标签和加密](sensitivity-labels-sharepoint-onedrive-files.md#remove-encryption-for-a-labeled-document)。 若要从 SharePoint 中已标记的文档中删除标签及其强制加密，全局管理员和 SharePoint 管理员可以运行新的 `Unlock-SPOSensitivityLabelEncryptedFile` cmdlet。 即使管理员无权访问站点或文件，或者 Azure 权限管理服务不可用，此 cmdlet 也运行。
+- [从已标记的文档中删除标签和加密](sensitivity-labels-sharepoint-onedrive-files.md#remove-encryption-for-a-labeled-document)。 若要从 SharePoint 中的已标记文档删除标签和它强制执行的加密，全局管理员和 SharePoint 管理员可以运行新的 `Unlock-SPOSensitivityLabelEncryptedFile` cmdlet。 即使管理员无权访问站点或文件，或者 Azure 权限管理服务不可用，此 cmdlet 也运行。
 
 ## <a name="october-2020"></a>2020 年 10 月
 
 ### <a name="advanced-ediscovery"></a>高级电子数据展示
 
-[CJK 语言支持](ediscovery-cjk-support.md)。 高级电子数据展示现在支持双字节字符集语言，统称为 CJK 语言 (包括简体中文、繁体中文、日语和朝鲜语) 。 这些可在多个高级审阅集方案中使用。
+[CJK 语言支持](ediscovery-cjk-support.md)。 高级电子数据展示现在支持双字节字符集语言，统称为 CJK 语言 (包括简体中文、繁体中文、日语和朝鲜语) 。 这些可以在多个高级审阅集方案中使用。
 
 ### <a name="sensitivity-labels"></a>敏感度标签
 
@@ -84,7 +84,7 @@ ms.locfileid: "49751589"
 
 ### <a name="spotlight-compliance-manager"></a>聚焦：合规性管理器
 
-今年在 Ignite 上宣布，合规性分数重新成为 [合规性管理器](compliance-manager.md)。 此版本完成了从服务信任门户中合规性管理器之前主页的转换，并引入了 Microsoft 365 合规中心中的端到端合规性管理解决方案。
+今年在 Ignite 上宣布，合规性分数重新成为合规性 [管理器](compliance-manager.md)。 此版本完成了从服务信任门户中合规性管理器以前主页的转换，并引入了 Microsoft 365 合规中心中的端到端合规性管理解决方案。
 
 观看下面的视频，了解合规性管理器如何有助于简化组织管理合规性的情况。
 <br>
@@ -100,8 +100,8 @@ ms.locfileid: "49751589"
 
 - [更新的角色组](communication-compliance-configure.md#step-1-required-enable-permissions-for-communication-compliance)。 通信合规性角色组现在与可用于内部风险管理解决方案的角色组结构相匹配。
 - [报表仪表板](communication-compliance-feature-reference.md#reports-preview)。 查看所有通信合规性报告的中央位置。 "报告"小组件提供对通信合规性活动状态进行总体评估最常用的见解的快速视图。
-- [Power Automate 流](communication-compliance-feature-reference.md#power-automate-flows-preview)。 设置流程以自动执行提醒和用户的任务、在用户触发警报时通知管理员等。
-- ["改进分类"修正操作](communication-compliance-investigate-remediate.md#step-3-decide-on-a-remediation-action)。 包含与可训练分类器匹配的项目的警报可能会从反馈中获益，以帮助最大程度地减少组织中误报。 通过 **"改进** 分类"选项，你可以提供相关通信合规性策略中配置的分类器是否与检测到的项目匹配的反馈。 你甚至可以建议其他分类器与项目关联，以提高将来警报的匹配准确度。
+- [Power Automate 流](communication-compliance-feature-reference.md#power-automate-flows)。 设置流程以自动执行提醒和用户的任务、在用户触发警报时通知管理员等。
+- ["改进分类"修正操作](communication-compliance-investigate-remediate.md#step-3-decide-on-a-remediation-action)。 包含与可训练分类器匹配的项目的警报可能会从反馈中获益，以帮助最大程度地减少组织中误报。 通过 **"改进** 分类"选项，你可以提供相关通信合规性策略中配置的分类器是否与检测到的项目匹配的反馈。 你甚至可以建议其他分类器与项目关联，以提高未来警报的匹配准确度。
 
 ### <a name="data-connectors"></a>数据连接器
 
@@ -112,7 +112,7 @@ ms.locfileid: "49751589"
 
 - [Microsoft Teams 集成](insider-risk-management-settings.md#microsoft-teams-preview)。 在内部风险设置中启用 Teams 集成后，你可以与 Teams 中其他利益干系人协作，共同执行与单个案例相关的安全共享和存储数据、跟踪和查看分析员和调查人员的响应活动等任务。
 - [Power Automate 流](insider-risk-management-settings.md#power-automate-flows-preview)。 设置流程以自动执行事例和用户的重要任务，例如检索用户、警报和案例信息以与利益干系人和其他应用共享、自动执行诸如发布到事例笔记等操作。
-- [活动资源管理器](insider-risk-management-alerts.md#activity-explorer-preview)。 查看警报时可用，活动资源管理器为调查人员和分析师提供了一个全面的分析工具，用于深入查看每个警报。 快速查看检测到的风险活动的日程表，并识别并筛选与警报关联的所有风险活动。
+- [活动资源管理器](insider-risk-management-alerts.md#activity-explorer-preview)。 在查看警报时可用，活动资源管理器为调查人员和分析师提供了一个全面的分析工具，用于深入查看每个警报。 快速查看检测到的风险活动的日程表，并识别并筛选与警报关联的所有风险活动。
 
 ### <a name="retention-policies-and-retention-labels"></a>保留策略和保留标签
 
@@ -134,7 +134,7 @@ ms.locfileid: "49751589"
 此新功能包含在以下功能中：
 
 > [!NOTE]
-> 对于所有功能，如果至少提供 30 个反馈回复，我们将创建该分类器经过重新检查的版本，你可以查看该分类器。 如果改进，可以重新发布分类器。
+> 对于所有功能，如果你至少提供 30 个反馈回复，我们将创建一个可以审阅的分类器经过改进的版本。 如果改进，可以重新发布分类器。
 
 - [可训练分类器](classifier-learn-about.md#retraining-classifiers)。 若要提高已发布分类器的准确性，您可以提供有关检测到的项目是否与分类器匹配的反馈。
 - [通信合规性](classifier-how-to-retrain-comms-compliance.md)。 新的 **"改进分类** 修正"操作可使你提供反馈，了解通信合规性警报中的项目是否与通信合规性策略中配置的分类器匹配。
@@ -169,8 +169,8 @@ ms.locfileid: "49751589"
 **通信合规性**
 
 - 查看 [警报中的消息](communication-compliance-investigate-remediate.md#step-3-decide-on-a-remediation-action)时，现在可以删除 Microsoft Teams 频道、一对一和群聊中的不恰当的消息。 已删除的消息和内容将替换为策略提示，说明由于敏感内容而将其删除。
-- 新的 [通信 (](communication-compliance-configure.md#step-1-required-enable-permissions-for-communication-compliance) 角色也将包含在) 年 9 月发布的新的通信合规性角色组中。
-- 新的通信合规性设置体验，包括隐私[和](communication-compliance-feature-reference.md#privacy-preview)[通知模板的设置](communication-compliance-feature-reference.md#notice-templates)。
+- 新的 [通信 (](communication-compliance-configure.md#step-1-required-enable-permissions-for-communication-compliance) 角色也将包含在) 年 9 月发布的新通信合规性角色组中。
+- 新的通信合规性设置体验，包括隐私[和](communication-compliance-feature-reference.md#privacy)[通知模板的设置](communication-compliance-feature-reference.md#notice-templates)。
 - 新的 [分类器](communication-compliance-feature-reference.md#classifiers) 可帮助检测成人、手部和手部图像。
 - 查看警报中的邮件时显示的新"检测到[](communication-compliance-investigate-remediate.md#step-2-examine-the-message-details)的模式"通知可使你了解用户重复发生相同行为的实例。
 
@@ -212,7 +212,7 @@ ms.locfileid: "49751589"
 
 ### <a name="data-connectors-hr-connector-enhancements"></a>数据连接器：HR 连接器增强功能
 
- (预览) 新版本 [的 HR](import-hr-data.md) 连接器允许您导入与作业级别更改、绩效考核和性能改进计划相关的数据。 然后，此数据可用于多个 [内部风险策略，](insider-risk-management-policies.md) 以检测相关活动。
+ (在预览) 新版本 [的 HR](import-hr-data.md) 连接器允许您导入与作业级别更改、绩效考核和性能改进计划相关的数据。 然后，此数据可用于多个 [内部风险策略，](insider-risk-management-policies.md) 以检测相关活动。
 
 ### <a name="retention-labels-new-support-for-email"></a>保留标签：电子邮件的新支持
 
@@ -232,7 +232,7 @@ ms.locfileid: "49751589"
 - [一条"一文"消息](archive-bloomberg-message-data.md)。 从 Bloomberg 邮件协作工具导入和存档金融服务电子邮件数据。 在邮箱中存储数据后，可以访问和使用合规性功能（如诉讼保留、内容搜索、就地存档、审核、通信合规性和保留策略）中的数据。
 - [ICE 聊天](archive-icechat-data.md)。 从 ICE 聊天协作工具导入和存档金融服务聊天数据。 在邮箱中存储数据后，可以访问和使用合规性功能（如诉讼保留、电子数据展示、存档、审核、通信合规性和保留策略）中的数据。
 
-### <a name="compliance-score--compliance-manager-the-hits-keep-coming"></a>合规性分数&合规性管理器：命中率持续持续
+### <a name="compliance-score--compliance-manager-the-hits-keep-coming"></a>合规性分数&合规性管理器：命中率不断回来
 
 6 月更新包括合规性分数中的新评估深化 [视图](compliance-score.md)。 监视控制进度、直接从合规性分数添加和删除评估等。
 
@@ -253,7 +253,7 @@ ms.locfileid: "49751589"
 可能会为可训练分类器带来更多增强功能：
 
 - 基于反馈的修补程序：为自定义分类器设定种子并训练后，不再需要手动输入 SharePoint 网站 URL 和文件夹路径。 现在，可以从网站和文件夹的预填充列表进行选择。
-- 新功能：创建敏感度标签并配置 Office 应用的自动标记设置时，现在可以自动应用 (或建议用户将) 标签应用于与可训练分类器匹配的内容。 [了解详细信息](apply-sensitivity-label-automatically.md#configuring-trainable-classifiers-for-a-label)
+- 新功能：创建敏感度标签并配置 Office 应用的自动标记设置时，现在可以自动应用 (或建议用户将) 标签应用于与可训练分类器匹配的内容。 [了解更多](apply-sensitivity-label-automatically.md#configuring-trainable-classifiers-for-a-label)
 
 ### <a name="communication-compliance-yammer-support-is-here"></a>通信合规性：Yammer 支持在此处
 
@@ -317,14 +317,14 @@ Yammer 中的私人消息和公共社区对话在通信合规性策略中受支�
 
 ### <a name="insider-risk-management-is-officially-released"></a>内部风险管理正式发布
 
-请汇总...<br>现在，具有以下订阅的组织可以使用内部风险管理：
+请滚动卷...<br>现在，具有以下订阅的组织可以使用内部风险管理：
 
 - [Microsoft 365 E5](https://go.microsoft.com/fwlink/?linkid=2120431) (或试用版) 
 - 带 Microsoft E5 合规性加载项的 Microsoft 365 企业版 [E3 订阅](https://go.microsoft.com/fwlink/?linkid=2120432)
 
-请注意，自预览版以来，我们进行了一些改进，包括 [新的](insider-risk-management-configure.md#step-1-enable-permissions-for-insider-risk-management) 角色组 [和解决方案范围的设置](insider-risk-management-configure.md#step-4-configure-insider-risk-settings)。
+请注意，自预览版以来，我们进行了一些改进，包括 [新的角色组](insider-risk-management-configure.md#step-1-enable-permissions-for-insider-risk-management) 和 [解决方案范围的设置](insider-risk-management-configure.md#step-4-configure-insider-risk-settings)。
 
-一如常，请在你使用解决方案时留下反馈，以便我们可以继续改进。
+与始终一样，请在你使用解决方案时留下反馈，以便我们可以继续改进。
 
 ### <a name="records-management"></a>记录管理
 
@@ -381,7 +381,7 @@ Yammer 中的私人消息和公共社区对话在通信合规性策略中受支�
 
 **数据连接器**
 
-数据连接器以前与 Office 36 & 5 安全与合规中心的其他"导入"功能共享空间，现在，数据连接器在 Microsoft 365 合规中心有自己的主页。 使用新的"数据连接器"页，将组织的人力资源 (HR)  (文件和各种第三方平台（如 Facebook、LinkedIn、Twitter 和 Instant Bloomberg) ）的数据导入和存档到 Microsoft 365 组织的邮箱。 导入后，可在多个合规性解决方案中管理此数据，包括电子数据展示、内部风险管理、通信合规性、审核、保留策略等。
+以前与 Office 36 & 5 安全与合规中心的其他"导入"功能共享空间，数据连接器现在在 Microsoft 365 合规中心有自己的主页。 使用新的"数据连接器"页，将组织的人力资源 (HR)  (文件和各种第三方平台（如 Facebook、LinkedIn、Twitter 和 Instant Bloomberg) ）的数据导入和存档到 Microsoft 365 组织的邮箱。 导入后，可在多个合规性解决方案中管理此数据，包括电子数据展示、内部风险管理、通信合规性、审核、保留策略等。
 
 [详细了解数据连接器](archiving-third-party-data.md)
 
@@ -391,7 +391,7 @@ Yammer 中的私人消息和公共社区对话在通信合规性策略中受支�
 
 **合规性分数和预览版 (新)**
 
-我们的合规性分数团队始终努力帮助你在不断发展的合规性环境之前取得先机，我们合规性分数团队提供了一组新的模板，可帮助你根据最近的法规评估组织的合规性状态，并获取有关如何实施更有效的控制措施的指导。 你将看到用于：
+合规性分数团队始终努力帮助你在不断发展的合规性环境之前取得先机，我们合规性分数团队提供了一组新的模板，可帮助你根据最近的法规评估组织的合规性状态，并获取有关如何实施更有效的控制措施的指导。 你将看到用于：
 
 - ISO/IEC 27701：2019
 - 加州消费者隐私法案 (CCPA)
