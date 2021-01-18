@@ -24,12 +24,12 @@ search.appverid:
 ms.assetid: 8548a211-3fe7-47cb-abb1-355ea5aa88a2
 description: 摘要：Office 365 需要连接到 Internet。对于使用 Office 365 计划（包括政府社区云 (GCC)）的客户，应该可以访问以下终结点。
 hideEdit: true
-ms.openlocfilehash: 9b705c6cad0387efb16f3fc5494b1ba2fe337732
-ms.sourcegitcommit: 9833f95ab6ab95aea20d68a277246dca2223f93d
+ms.openlocfilehash: 386c92d0856b3faa88fb8a05f8ddff58a81e3c4f
+ms.sourcegitcommit: a92b150da1e11d4a204c556ab98a4776727dbc22
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "49794396"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "49883332"
 ---
 # <a name="office-365-urls-and-ip-address-ranges"></a>Office 365 URL 和 IP 地址范围
 
@@ -62,7 +62,7 @@ Office 365 需要连接到 Internet。对于使用 Office 365 计划（包括政
 [!INCLUDE [Office 365 worldwide endpoints](../includes/office-365-worldwide-endpoints.md)]
 
 >[!Note]
->有关 Yammer IP 地址和 URL 的建议，请参阅[此博客文章](https://techcommunity.microsoft.com/t5/Yammer-Blog/Using-hard-coded-IP-addresses-for-Yammer-is-not-recommended/ba-p/276592)。
+>有关 Yammer IP 地址和 UR L的建议，请参阅 Yammer 博客上的[不建议为 Yammer 使用硬编码 IP 地址](https://techcommunity.microsoft.com/t5/Yammer-Blog/Using-hard-coded-IP-addresses-for-Yammer-is-not-recommended/ba-p/276592)。
 >
 
 ## <a name="related-topics"></a>相关主题
@@ -71,7 +71,7 @@ Office 365 需要连接到 Internet。对于使用 Office 365 计划（包括政
 
 [通用 Microsoft Stream 终结点](https://docs.microsoft.com/stream/network-overview#general-microsoft-stream-endpoints)
   
-[监视 Microsoft 365 连接性](https://docs.microsoft.com/microsoft-365/enterprise/monitor-connectivity?view=o365-worldwide)
+[监视 Microsoft 365 连接性](https://docs.microsoft.com/microsoft-365/enterprise/monitor-connectivity)
 
 [第三方应用程序系统中的根 CA 和中级 CA 捆绑](../compliance/encryption-office-365-certificate-chains.md)
   
@@ -88,3 +88,5 @@ Office 365 需要连接到 Internet。对于使用 Office 365 计划（包括政
 [Microsoft Azure IP 范围和服务标签 – 中国云](https://www.microsoft.com/download/details.aspx?id=57062)
   
 [Microsoft 公共 IP 空间](https://www.microsoft.com/download/details.aspx?id=53602)
+
+[服务名称和传输协议端口号注册表](https://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.xhtml)
