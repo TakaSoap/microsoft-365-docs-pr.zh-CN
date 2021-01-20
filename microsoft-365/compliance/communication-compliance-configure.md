@@ -1,6 +1,6 @@
 ---
 title: 通信合规性入门
-description: 设置通信合规性策略以配置用户通信以供审阅。
+description: 设置通信合规性策略，以配置用户用户通信以供审阅。
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -20,139 +20,139 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: e88b26fcfbcc9cbb0c2c53ed8fdb6b875ef4adc9
-ms.sourcegitcommit: 98146c67a1d99db5510fa130340d3b7be8d81b21
-ms.translationtype: MT
+ms.openlocfilehash: f958a2f6854ca34b0d24a527e2517c848885ad1c
+ms.sourcegitcommit: 27cb4591e08f62ba0a08d6dcf224bf2039034fe5
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2020
-ms.locfileid: "49585302"
+ms.lasthandoff: 01/17/2021
+ms.locfileid: "49883681"
 ---
 # <a name="get-started-with-communication-compliance"></a>通信合规性入门
 
-使用通信合规性策略来确定内部或外部审阅者进行检查的用户通信。 有关通信合规性策略如何帮助您监视组织中的通信的详细信息，请参阅 [Microsoft 365 中的通信合规性策略](communication-compliance.md)。 如果您想要查看 Contoso 如何快速将通信合规性策略配置为在 Microsoft 团队、Exchange Online 和 Yammer 通信中监视攻击性语言，请查看此 [案例研究](communication-compliance-case-study.md)。
+使用通信合规性策略，以识别用户通信，供内部或外部审阅者检查。 有关通信合规性策略如何帮助监视组织内通信的详细信息，请参阅 [Microsoft 365 中的通信合规性策略](communication-compliance.md)。 如果希望查看 Contoso 如何快速配置通信合规性策略以监视 Microsoft Teams、Exchange Online 和 Yammer 通信中的冒犯性语言，请查看此 [案例研究](communication-compliance-case-study.md)。
 
 ## <a name="subscriptions-and-licensing"></a>订阅和许可
 
-在开始进行通信合规性之前，应确认你的 [Microsoft 365 订阅](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans) 和任何加载项。 若要访问和使用通信合规性，您的组织必须具有以下订阅或加载项之一：
+在开始通信合规性入门之前，应该先确认 [Microsoft 365 订阅](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans) 以及任何加载项。 若要访问和使用通信合规性，组织必须具有以下订阅或加载项之一：
 
-- Microsoft 365 E5 订阅 (付费或试用版) 
-- Microsoft 365 E3 订阅 + Microsoft 365 E5 合规性加载项
-- Microsoft 365 E3 订阅 + Microsoft 365 E5 内幕人士风险管理加载项
-- Microsoft 365 A5 订阅 (付费版或试用版) 
-- Microsoft 365 A3 订阅 + Microsoft 365 A5 合规性加载项
-- Microsoft 365 A3 订阅 + Microsoft 365 A5 内幕成员风险管理加载项
-- Microsoft 365 G5 订阅 (付费版或试用版) 
-- Microsoft 365 G5 订阅 + Microsoft 365 G5 合规性附加
-- Microsoft 365 G5 订阅 + Microsoft 365 G5 内幕版风险管理加载项
-- Office 365 企业版 E5 订阅 (付费或试用版) 
-- Office 365 A5 订阅 (付费或试用版) 
-- Office 365 企业版 E3 订阅 + Office 365 高级合规性外接程序 (不再可用于新订阅，请参阅 note) 
+- Microsoft 365 E5 订阅（付费或试用版本）
+- Microsoft 365 E3 订阅 + Microsoft 365 E5 合规加载项
+- Microsoft 365 E3 订阅 + Microsoft 365 E5 预览体验成员风险管理加载项
+- Microsoft 365 A5 订阅（付费或试用版本）
+- Microsoft 365 A3 订阅 + Microsoft 365 A5 合规加载项
+- Microsoft 365 A3 订阅 + Microsoft 365 A5 预览体验成员风险管理加载项
+- Microsoft 365 G5 订阅（付费或试用版本）
+- Microsoft 365 G5 订阅 + Microsoft 365 G5 合规加载项
+- Microsoft 365 G5 订阅 + Microsoft 365 G5 预览体验成员风险管理加载项
+- Office 365 企业版 E5 订阅（付费或试用版本）
+- Office 365 A5 订阅（付费或试用版本）
+- Office 365 企业版 E3 订阅 + Office 365 高级合规版加载项（新订阅已不再可用，请参阅注释）
 
-必须为通信合规性策略中包含的用户分配上述许可证之一。
+通信合规性策略中包括的用户必须获得以上许可证之一。
 
 >[!IMPORTANT]
->Office 365 高级合规性不再作为独立订阅销售。 当当前订阅过期时，客户应转换为上述订阅之一，其中包含相同或更多的合规性功能。
+>Office 365 高级合规版已不再作为独立订阅销售。 当前订阅到期后，客户应过渡到以上订阅之一，其中包含了相同的或其它合规性功能。
 
-如果您没有现成的 Office 365 企业版 E5 计划，并且想要尝试进行通信合规性，则可以 [将 Microsoft 365 添加](https://docs.microsoft.com/office365/admin/try-or-buy-microsoft-365) 到现有订阅或注册 Office 365 企业版 e5 的 [试用版](https://www.microsoft.com/microsoft-365/enterprise) 。
+如果你没有现有的 Office 365 企业版 E5 套餐，并且想要尝试通信合规性，可以 [添加 Microsoft 365](https://docs.microsoft.com/office365/admin/try-or-buy-microsoft-365) 到现有订阅，或 [注册试用](https://www.microsoft.com/microsoft-365/enterprise) Office 365 企业版 E5。
 
-## <a name="step-1-required-enable-permissions-for-communication-compliance"></a>步骤 1 (必需) ：启用通信合规性的权限
+## <a name="step-1-required-enable-permissions-for-communication-compliance"></a>步骤 1（必选）：启用通信合规性权限
 
 >[!Important]
->默认情况下，全局管理员不具有对通信合规性功能的访问权限。 在此步骤中分配的角色在所有通信合规性功能都可访问之前是必需的。 配置角色组后，最多可能需要30分钟的时间才能将角色组权限应用到组织中分配的用户。
+>默认状态下，全局管理员没有对通信合规性功能的访问权限。 在可以访问任何通信合规性功能之前，必须在此步骤中分配角色。 配置角色组之后，可能需要长达 30 分钟时间将角色组权限应用到整个组织的已分配用户。
 
-有五个角色组用于配置管理通信合规性功能的权限。 为了使 **通信合规性** 在 Microsoft 365 合规性中心中可用作菜单选项，若要继续执行这些配置步骤，您必须分配给 *通信合规* 性管理员角色组或 *通信合规性管理员* 角色组。 若要在初始配置后访问和管理通信合规性功能，用户必须是至少一个通信合规性角色组的成员。
+共有 5 个角色组，用于配置权限以管理通信合规性功能。 若要在 Microsoft 365 合规中心中将 **通信合规性** 作为菜单选项提供并继续执行这些配置步骤，必须将你分配给 *通信符合性* 或 *通信符合性管理员* 角色组。 若要在初始配置后访问和管理通信合规性功能，用户必须是至少一个通信合规性角色组的成员。
 
-根据您想要管理通信策略和通知的方式，您需要将用户分配给特定角色组。 您可以选择将具有不同合规性职责的用户分配给特定角色组，以管理通信合规性功能的不同方面。 或者，您可以决定将指定管理员、分析师、调查人员和查看者的所有用户帐户分配给 *通信合规性* 角色组。 使用一个或多个角色组以最大限度地满足合规性管理要求。
+根据希望管理通信策略和警报的方式，你需要将用户分配到特定的角色组。 可以选择将具有不同合规性职责的用户分配给特定的角色组，以管理不同区域的通信合规性功能。 或者可以决定将指定管理员、分析者、调查者和查看者的所有用户账户分配到 *通信合规性* 角色组。 使用单个角色组或多个角色组，以充分符合你的合规性管理要求。
 
-配置通信合规性时从这些角色组选项中进行选择：
+配置通信合规性时，请从这些角色组中进行选择：
 
-| Role | 角色权限 |
+| 角色 | 角色权限 |
 |:-----|:-----|
-| **通信合规性** | 使用此角色组管理单个组中的组织的通信合规性。 通过添加指定管理员、分析师、调查人员和查看者的所有用户帐户，您可以在单个组中配置通信合规性权限。 此角色组包含所有通信合规性权限角色。 此配置是快速开始使用通信合规性的最简单方法，非常适合不需要为单独的用户组定义单独权限的组织。 |
-| **通信合规性管理员** | 使用此角色组最初配置通信合规性和更高版本，以将通信合规性管理员与定义的组隔离。 分配到此角色组的用户可以创建、读取、更新和删除通信合规性策略、全局设置和角色组分配。 分配到此角色组的用户无法查看邮件通知。 |
-| **通信合规性分析师** | 使用此组可将权限分配给将充当通信合规性分析员的用户。 分配到此角色组的用户可以查看将其分配为审阅者的策略、查看邮件元数据 (不是邮件内容) 、升级到其他审阅者或向用户发送通知。 分析师无法解决待处理的警报。 |
-| **通信合规调查人员** | 使用此组将权限分配给将充当通信合规性调查人员的用户。 分配到此角色组的用户可以查看邮件元数据和内容、升级到其他审阅者、升级到高级电子数据展示事例、向用户发送通知以及解决警报。 |
-| **通信合规性查看器** | 使用此组可为将管理通信报告的用户分配权限。 分配到此角色组的用户可以访问通信合规性主页上的所有报告小部件，并且可以查看所有通信合规性报告。 |
+| **通信合规性** | 使用此角色组在单个组中管理组织的通信合规性。 通过添加指定管理员、分析者、调查者和查看者的所有用户账户，可以在单个组中配置通信合规性权限。 此角色组包含所有通信合规性权限角色。 这一配置是通信合规性快速入门的最简单方式，非常适合不需要为单独用户组定义单独权限的组织。 |
+| **通信合规性管理员** | 使用此角色组进行通信合规性初始配置，后期可将通信合规性管理员隔离到已定义组中。 分配到此角色组的用户可以创建、读取、更新和删除通信合规性策略、全局设置和角色组分配。 分配到此角色组的用户无法查看消息警报。 |
+| **通信合规性分析者** | 使用此组向执行通信合规性分析者操作的用户分配权限。 分配到此角色组的用户可以查看分配其为审阅者的策略，查看消息元数据（而不是消息内容）、升级到其他审阅者，或向用户发送通知。 分析者不能解决挂起的警报。 |
+| **通信合规性调查者** | 使用此组向执行通信合规性调查者操作的用户分配权限。 分配到此角色组的用户可以查看消息元数据和内容、升级到其他审阅者、升级到高级 eDiscovery 案例、向用户发送通知、以及解决警报。 |
+| **通信合规性查看者** | 使用此组向管理通信报告的用户分配权限。 分配到此角色组的用户可以访问通信合规性主页上的所有报告小组件，并且可以查看所有通信合规性报告。 |
 
-### <a name="option-1-assign-all-compliance-users-to-the-communication-compliance-role-group"></a>选项1：将所有合规性用户分配给通信合规性角色组
+### <a name="option-1-assign-all-compliance-users-to-the-communication-compliance-role-group"></a>选项 1： 将所有合规用户分配到通信合规性角色组
 
-1. [https://protection.office.com/permissions](https://protection.office.com/permissions)在 Microsoft 365 组织中使用管理员帐户的凭据进行登录。
+1. 使用 Microsoft 365 组织中的管理员账户凭据登录 [https://protection.office.com/permissions](https://protection.office.com/permissions)。
 
-2. 在 "安全 &amp; 合规性中心" 中，转到 " **权限**"。 选择用于查看和管理 Office 365 中的角色的链接。
+2. 在安全 &amp; 合规中心中，转到“**权限**”。 选择链接以查看和管理 Office 365 中的角色。
 
-3. 选择 " *通信合规性* 角色组"，然后选择 " **编辑角色组**"。
+3. 选择“*通信合规性*”角色组，然后选择“**编辑角色组**”。
 
-4. 从左侧导航窗格中选择 " **选择成员** "，然后选择 " **编辑**"。
+4. 从左侧导航窗格中选择“**选择成员**”，然后选择“**编辑**”。
 
-5. 选择 " **添加** "，然后选中要添加到 *通信合规性* 角色组的所有用户的复选框。
+5. 选择“**添加**”，然后选中希望添加到 *通信合规性* 角色组的所有用户的复选框。
 
-6. 选择 " **添加**"，然后选择 " **完成**"。
+6. 选择“**添加**”，然后选择“**完成**”。
 
-7. 选择 " **保存** " 将用户添加到角色组。 选择 " **关闭** " 完成步骤
+7. 选择“**保存**”以将用户添加到角色组。 选择“**关闭**”以完成步骤
 
-### <a name="option-2-assign-users-to-specific-communication-compliance-role-groups"></a>选项2：将用户分配给特定的通信合规性角色组
+### <a name="option-2-assign-users-to-specific-communication-compliance-role-groups"></a>选项 2： 将用户分配到特定通信合规性角色组
 
-使用此选项可将用户分配给特定角色组，以在组织中的不同用户之间分段通信合规性访问和责任。
+使用此选项将用户分配到特定角色组，以区分组织中不同用户的通信合规性访问和职责。
 
-1. [https://protection.office.com/permissions](https://protection.office.com/permissions)在 Microsoft 365 组织中使用管理员帐户的凭据进行登录。
+1. 使用 Microsoft 365 组织中的管理员账户凭据登录 [https://protection.office.com/permissions](https://protection.office.com/permissions)。
 
-2. 在 "安全 &amp; 合规性中心" 中，转到 " **权限**"。 选择用于查看和管理 Office 365 中的角色的链接。
+2. 在安全 &amp; 合规中心中，转到“**权限**”。 选择链接以查看和管理 Office 365 中的角色。
 
-3. 选择其中一个通信合规性角色组，然后选择 " **编辑角色组**"。
+3. 选择通信合规性角色组之一，然后选择“**编辑角色组**”。
 
-4. 从左侧导航窗格中选择 " **选择成员** "，然后选择 " **编辑**"。
+4. 从左侧导航窗格中选择“**选择成员**”，然后选择“**编辑**”。
 
-5. 选择 " **添加** "，然后选中要添加到角色组的所有用户的复选框。
+5. 选择“**添加**”，然后选中希望添加到角色组的所有用户的复选框。
 
-6. 选择 " **添加**"，然后选择 " **完成**"。
+6. 选择“**添加**”，然后选择“**完成**”。
 
-7. 选择 " **保存** " 将用户添加到角色组。
+7. 选择“**保存**”以将用户添加到角色组。
 
-8. 选择 "下一个通信合规性角色组"，然后对每个所需的角色组重复步骤4-7。
+8. 选择下一个通信合规性角色组，然后为每个需要的角色组重复步骤 4-7。
 
-9. 选择 " **关闭** " 完成这些步骤。
+9. 选择“**关闭**”以完成步骤。
 
-有关角色组和权限的详细信息，请参阅 [合规性中心中的权限](../security/office-365-security/protect-against-threats.md)。
+有关角色组和权限的详细信息，请参阅 [合规中心中的权限](../security/office-365-security/protect-against-threats.md)。
 
-## <a name="step-2-required-enable-the-audit-log"></a>步骤 2 (必需) ：启用审核日志
+## <a name="step-2-required-enable-the-audit-log"></a>步骤 2（必选）：启用审核日志
 
-通信合规性需要审核日志来显示通知并跟踪审阅者采取的修正操作。 审核日志是与定义的组织策略关联的所有活动的摘要，也是任何与通信合规性策略更改相关的活动。
+通信合规性需要审核日志显示警报和跟踪审阅者采取的修正操作。 审核日志是与已定义的组织策略，或任何时刻的通信合规性策略更改相关联的所有活动摘要。
 
-有关启用审核的分步说明，请参阅 [打开或关闭审核日志搜索](turn-audit-log-search-on-or-off.md)。 启用审核后，会显示一条消息，指出正在准备审核日志，并且您可以在准备完成后的几小时内运行搜索。 您只需执行一次此操作。 有关使用审核日志的详细信息，请参阅 [Search the audit log](search-the-audit-log-in-security-and-compliance.md)。
+有关启用审核的逐步操作说明，请参阅 [打开或关闭审核日志搜索](turn-audit-log-search-on-or-off.md)。 打开审核之后，将显示一条消息，内容为正在准备审核日志，你可以在准备完成后几个小时内运行搜索。 此操作只需要执行一次。 有关使用审核日志的详细信息，请参阅 [搜索审核日志](search-the-audit-log-in-security-and-compliance.md)。
 
-## <a name="step-3-optional-set-up-groups-for-communication-compliance"></a>步骤 3 (可选) ：为通信合规性设置组
+## <a name="step-3-optional-set-up-groups-for-communication-compliance"></a>步骤 3（可选）：设置通信合规性组
 
- 创建通信合规性策略时，您需要定义哪些用户已查看其通信，以及谁执行了评论。 在策略中，您将使用电子邮件地址来标识个人或用户组。 为简化您的设置，您可以为已查看其通信的用户创建组，并为查看这些通信的用户分组。 如果使用的是组，可能需要多个。 例如，如果要监视两个不同的人员组之间的通信，或者要指定不受监督的组。
+ 创建通信合规性策略时，即定义了要审阅谁的通信和谁来执行审阅。 在策略中，可以使用电子邮件地址来标识个人或人员组。 若要简化设置，可以为接受通信审阅的人员创建组，也可以为审阅这些通信的人员创建组。 如果正在使用组，可能需要若干个组。 例如，如果希望监视两个不同组人员之间的通信，或如果希望指定一个不会受到监督的组。
 
-使用下图可帮助您为组织中的通信合规性策略配置组：
+使用下图帮助配置组织中的组以实施通信合规性策略：
 
-| **Policy 成员** | **支持的组** | **不受支持的组** |
+| **策略成员** | **支持的组** | **不支持的组** |
 |:-----|:-----|:-----|
-|受监督用户 <br> 非监督用户 | 通讯组 <br> Microsoft 365 组 | 动态通讯组 <br> 嵌套的通讯组 <br> 启用邮件的安全组 |
-| Reviewers | 无 | 通讯组 <br> 动态通讯组 <br> 嵌套的通讯组 <br> 启用邮件的安全组 |
+|受监督用户 <br> 不受监督用户 | 通讯组 <br> Microsoft 365 组 | 动态通讯组 <br> 嵌套通讯组 <br> 启用邮件的安全组 |
+| 审阅者 | 无 | 通讯组 <br> 动态通讯组 <br> 嵌套通讯组 <br> 启用邮件的安全组 |
   
-当您在策略中分配通讯组时，该策略将监视来自通讯组中每个用户的所有电子邮件和团队聊天。 当您在策略中分配 Microsoft 365 组时，该策略将监视发送到该组的所有电子邮件和团队聊天，而不是每个组成员收到的单个电子邮件和聊天。
+在策略中分配通讯组时，策略会监视通讯组每个用户的所有电子邮件和 Teams 聊天。 在策略中分配 Microsoft 365 组时，策略会监视发送到该组的所有电子邮件和 Teams 聊天，而不是每个团队成员收到的单个电子邮件和聊天。
 
-如果您是具有 Exchange 本地部署或外部电子邮件提供商的组织，并且您要为用户监视 Microsoft 团队聊天，则必须为具有内部部署或外部邮箱的用户创建通讯组以进行监视。 在后面的这些步骤中，您将分配此通讯组作为策略向导中的受 **监督的用户和组** 选择。
+如果你是具有 Exchange 本地部署或外部电子邮件提供商的组织，并且想要监视用户的 Microsoft Teams 聊天，则必须创建一个通讯组以便具有本地或外部邮箱的用户进行监视。 在这些步骤的稍后部分，你将此通讯组分配为策略向导中的 **受监督用户和组**。
 
 >[!IMPORTANT]
->你必须向 Microsoft 支持人员提交请求，以使贵组织能够使用安全与合规中心中的图形用户界面来搜索本地用户的 Teams 聊天数据。 有关详细信息，请参阅针对 [本地用户搜索基于云的邮箱](search-cloud-based-mailboxes-for-on-premises-users.md)。
+>你必须向 Microsoft 支持人员提交请求，以使贵组织能够使用安全与合规中心中的图形用户界面来搜索本地用户的 Teams 聊天数据。 有关详细信息，请参阅 [为本地用户搜索基于云的邮箱](search-cloud-based-mailboxes-for-on-premises-users.md)。
 
-若要在大型企业组织中管理受监督的用户，您可能需要监视跨大型组的所有用户。 您可以使用 PowerShell 为分配组的全局通信合规性策略配置通讯组。 这使您可以使用单个策略监视数千个用户，并在新员工加入您的组织时更新通信合规性策略。
+若要在大型企业组织中管理受监督的用户，可能需要监视大型组的所有用户。 可使用 PowerShell 为已分配组配置全局通信合规性策略的通讯组。 这样，可以使用一个策略监视成千上万个用户，并在新员工加入组织时保持通信合规性策略的更新。
 
-1. 为符合以下属性的全局通信合规性策略创建专用 [通讯组](https://docs.microsoft.com/powershell/module/exchange/new-distributiongroup) ：确保此通讯组不用于其他目的或其他 Office 365 服务。
+1. 为全局通信合规性策略创建一个专用的 [通讯组](https://docs.microsoft.com/powershell/module/exchange/new-distributiongroup)，该策略具有以下属性：确保此通讯组未用于其他目的或其他 Office 365 服务。
 
-    - **MemberDepartRestriction = 已关闭**。 确保用户无法将自己从通讯组中删除。
-    - **MemberJoinRestriction = 已关闭**。 确保用户无法将自己添加到通讯组。
-    - **ModerationEnabled = True**。 确保发送到此组的所有邮件都受批准，并且该组未用于通信合规性策略配置之外的通信。
+    - **MemberDepartRestriction = Closed**。 确保用户无法将自己从通讯组中删除。
+    - **MemberJoinRestriction = Closed**。 确保用户无法将自己添加到通讯组。
+    - **ModerationEnabled = True**。 确保发送到此组的所有邮件都受制于审批，并且组未用于在通信合规性策略配置外部进行通信。
 
     ```PowerShell
     New-DistributionGroup -Name <your group name> -Alias <your group alias> -MemberDepartRestriction 'Closed' -MemberJoinRestriction 'Closed' -ModerationEnabled $true
     ```
 
-2. 选择一个未使用的 [Exchange 自定义属性](https://docs.microsoft.com/Exchange/recipients/mailbox-custom-attributes) ，以跟踪添加到组织中的通信合规性策略的用户。
+2. 选择未使用的 [Exchange 自定义属性](https://docs.microsoft.com/Exchange/recipients/mailbox-custom-attributes) 以跟踪添加到组织内通信合规性策略的用户。
 
-3. 定期对计划运行以下 PowerShell 脚本，以将用户添加到通信合规性策略：
+3. 按定期计划运行以下 PowerShell 脚本，将用户添加到通信合规性策略：
 
     ```PowerShell
     $Mbx = (Get-Mailbox -RecipientTypeDetails UserMailbox -ResultSize Unlimited -Filter {CustomAttribute9 -eq $Null})
@@ -172,114 +172,114 @@ ms.locfileid: "49585302"
 - [创建和管理通讯组](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-distribution-groups/manage-distribution-groups)
 - [Microsoft 365 组概述](https://docs.microsoft.com/office365/admin/create-groups/office-365-groups)
 
-## <a name="step-4-optional-verify-your-yammer-tenant-is-in-native-mode"></a>步骤 4 (可选) ：验证 Yammer 租户是否处于本机模式
+## <a name="step-4-optional-verify-your-yammer-tenant-is-in-native-mode"></a>步骤 4（可选）：验证 Yammer 租户是否处于本机模式
 
-在本机模式中，所有 Yammer 用户都在 Azure Active Directory 中 (Azure AD) 中，所有组都是 Office 365 组，并且所有文件都存储在 SharePoint Online 中。 您的 Yammer 租户必须处于本机模式，以实现通信合规性策略，以扫描和识别 Yammer 中的私人邮件和社区对话中的有风险的对话。
+在本机模式下，所有 Yammer 用户都在 Azure Active Directory (Azure AD) 中，所有组都是 Office 365 组，并且所有文件都存储在 SharePoint Online 中。 你的 Yammer 租户必须为本机模式，以便通信合规性策略可以扫描和识别 Yammer 中私人消息和社区对话中的风险对话。
 
-有关在本机模式中配置 Yammer 的详细信息，请参阅：
+有关以本机模式配置 Yammer 详细信息，请参阅：
 
-- [Microsoft 365 中的 Yammer 本机模式概述](https://docs.microsoft.com/yammer/configure-your-yammer-network/overview-native-mode)
+- [Microsoft 365 中 Yammer 本机模式概述](https://docs.microsoft.com/yammer/configure-your-yammer-network/overview-native-mode)
 - [配置适用于 Microsoft 365 本机模式的 Yammer 网络](https://docs.microsoft.com/yammer/configure-your-yammer-network/native-mode)
 
-## <a name="step-5-required-create-a-communication-compliance-policy"></a>步骤 5 (必需) ：创建通信合规性策略
+## <a name="step-5-required-create-a-communication-compliance-policy"></a>步骤 5（必需）：创建通信合规性策略
   
 >[!Important]
->不支持使用 PowerShell 创建和管理通信合规性策略。 若要创建和管理这些策略，必须使用 [Microsoft 365 通信合规性解决方案](https://compliance.microsoft.com/supervisoryreview)中的策略管理控件。
+>不支持使用 PowerShell 创建和管理通信合规性策略。 若要创建和管理这些策略，必须使用 [Microsoft 365 通信合规性解决方案](https://compliance.microsoft.com/supervisoryreview) 中的策略管理控件。
 
-1. [https://compliance.microsoft.com](https://compliance.microsoft.com)在 Microsoft 365 组织中使用管理员帐户的凭据进行登录。
+1. 使用 Microsoft 365 组织中的管理员账户凭据登录 [https://compliance.microsoft.com](https://compliance.microsoft.com)。
 
-2. 在 Microsoft 365 合规性中心中，选择 " **通信合规性**"。
+2. 在 Microsoft 365 合规中心中，选择“**通信合规性**”。
   
-3. 选择 " **策略** " 选项卡。
+3. 选择“**策略**”选项卡。
 
-4. 选择 " **创建策略** "，从模板创建和配置新策略，或创建和配置自定义策略。
+4. 选择“**创建策略**”从模板创建和配置新策略，或创建和配置自定义策略。
 
-    如果选择策略模板来创建策略，您将：
+    如果选择策略模板来创建策略，将需要：
 
-    - 确认或更新策略名称。 一旦创建了策略，便无法更改策略名称。
+    - 确认或更新策略名称。 创建策略后，不能更改策略名称。
     
-    - 选择要监督的用户或组，包括选择要排除的用户或组。
+    - 选择要监督的用户或组，包括选择要排除的用户或组。 使用利益冲突模板时，需要选择两个组或两个用户来进行内部通信监视。
     
-    - 选择策略的审阅者。 审阅者是单个用户，并且所有审阅者都必须在 Exchange Online 上托管邮箱。 在这里添加的审阅者是在调查和修正工作流中上报通知时可供选择的审阅者。 将审阅者添加到策略时，他们将自动收到一封电子邮件，通知他们对策略的分配，并提供有关审阅过程的信息的链接。
+    - 选择该策略的审阅者。 审阅者是单个用户，所有审阅者都必须拥有在 Exchange Online 上托管的邮箱。 此处添加的审阅者是可在调查和修正工作流中升级警报时选择的审阅者。 审阅者添加到策略时，他们会自动收到一封电子邮件，通知他们分配到此策略，并提供有关审阅过程的信息的链接。
     
-    - 选择 "受限条件" 字段，通常是要应用于策略的敏感信息类型或关键字词典。
+    - 选择有限条件字段，通常是要应用于该策略的敏感信息类型或关键字词典。
 
-    如果您选择使用策略向导创建自定义策略，您将：
+    如果选择使用策略向导创建自定义策略，将需要：
 
-    - 为策略指定名称和说明。 一旦创建了策略，便无法更改策略名称。
+    - 为策略指定名称和说明。 创建策略后，无法更改策略名称。
     
-    - 选择要监督的用户或组，包括组织中的所有用户、特定用户和组，或者要排除的其他用户和组。
+    - 选择要监视的用户或组，包括你组织中所有用户、特定用户和组，或者希望排除的其他用户和组。
     
-    - 选择策略的审阅者。 审阅者是单个用户，并且所有审阅者都必须在 Exchange Online 上托管邮箱。 在这里添加的审阅者是在调查和修正工作流中上报通知时可供选择的审阅者。 将审阅者添加到策略时，他们将自动收到一封电子邮件，通知他们对策略的分配，并提供有关审阅过程的信息的链接。
+    - 选择该策略的审阅者。 审阅者是单个用户，所有审阅者都必须拥有在 Exchange Online 上托管的邮箱。 此处添加的审阅者是可在调查和修正工作流中升级警报时选择的审阅者。 审阅者添加到策略时，他们会自动收到一封电子邮件，通知他们分配到此策略，并提供有关审阅过程的信息的链接。
     
-    - 选择要扫描的通信通道，包括 Exchange、Microsoft 团队、Yammer 或 Skype for Business。 如果您在 Microsoft 365 中配置了连接器，您还将选择扫描第三方源。
+    - 选择要扫描的信道，包括 Exchange、Microsoft Teams、Yammer 或 Skype for Business。 如果在 Microsoft 365 中配置了连接器，还可选择扫描第三方源。
     
     - 选择要监视的通信方向，包括入站、出站或内部通信。
     
-    - 定义通信合规性策略 [条件](communication-compliance-feature-reference.md#ConditionalSettings)。 您可以从 "消息地址"、"关键字"、"文件类型" 和 "大小匹配条件" 中进行选择。
+    - 定义通信合规性策略 [条件](communication-compliance-feature-reference.md#ConditionalSettings)。 可以从邮件地址、关键字、文件类型和大小匹配条件中进行选择。
     
-    - 选择是否要包含敏感信息类型。 在此步骤中，您可以选择默认和自定义的敏感信息类型。 从 "通信合规性策略向导" 中的现有自定义敏感信息类型或自定义关键字词典中进行选择。 如果需要，可以在运行向导之前创建这些项目。 您还可以在 "通信合规性策略" 向导中创建新的敏感信息类型。
+    - 选择是否希望包含敏感信息类型。 此步骤可用于选择默认和自定义敏感信息类型。 在通信合规性策略向导中，从现有自定义敏感信息类型或自定义关键字词典进行选取。 如果需要，可在运行向导前创建这些项目。 还可从通信合规性策略向导中创建新的敏感信息类型。
     
-    - 选择是否要启用分类器。 分类器可以检测在电子邮件正文或其他类型的文本中发送或接收的不正确的语言和图像。 您可以选择以下内置分类符： *威胁*、 *猥亵*、 *目标骚扰*、 *成人图像*、 *Racy 图像* 和 *Gory 图像*。
+    - 选择是否启用分类器。 分类器可以检测电子邮件正文或其他类型的文本中发送或接收的不当语言和图像。 可选择以下内置分类器： *威胁*、*猥亵*、*有针对性的骚扰*、*成人图像*、*色情图像* 和 *血腥图像*。
 
       > [!CAUTION]
-      > 我们正在弃用 **冒犯性语言** 内置分类器，因为它会生成大量误报。 请勿使用该功能，如果您当前正在使用它，则应将业务流程移出它。 建议改为使用 **威胁**、 **猥亵** 和 **目标骚扰** 内置分类符。
+      > 我们正在弃用 **冒犯性语言** 内置分类器，因为它会生成大量误报。 请勿使用，如果当前正在使用，应将业务流程从其中移开。 我们建议改用 **威胁**、**猥亵** 和 **有针对性的骚扰** 内置分类器。
 
-    - 定义要查看的通信百分比。
+    - 定义要审阅的通信的百分比。
     
     - 查看策略选择并创建策略。
 
-5. 使用 "自定义策略" 向导时，选择 "使用模板或 **提交** 时 **创建策略**"。
+5. 使用模板时选择“**创建策略**”，或者使用自定义策略向导时选择“**提交**”。
 
-6. **您的策略已创建** 页面将显示有关何时激活策略以及将捕获哪些通信的指南。
+6. 将显示 **策略已创建** 页面，其中将包含有关何时激活策略以及捕获哪些通信的准则。
 
-## <a name="step-6-optional-create-notice-templates-and-configure-user-anonymization"></a>步骤 6 (可选) ：创建通知模板和配置用户 anonymization
+## <a name="step-6-optional-create-notice-templates-and-configure-user-anonymization"></a>步骤 6（可选）：创建通知模板并配置用户匿名处理
 
-如果希望通过向关联用户发送提醒通知来选择对策略警报做出响应，您需要在组织中至少创建一个通知模板。 在将 "通知模板" 字段作为警报修正过程的一部分发送并为每个通信合规性策略创建自定义的通知模板之前，这些字段都是可编辑的。
+如果要选择通过向关联用户发送提醒通知来响应策略警报，你需要在组织中至少创建一个通知模板。 通知模板字段在作为警报修正过程的一部分发送之前可编辑，建议为每条通信合规性策略创建自定义通知模板。
 
-您还可以选择在调查策略匹配和对邮件采取操作时为显示的用户名启用 anonymization。
+当调查策略匹配并针对邮件采取措施时，还可以选择对显示用户名启用匿名处理。
 
-1. [https://compliance.microsoft.com](https://compliance.microsoft.com)在 Microsoft 365 组织中使用管理员帐户的凭据进行登录。
+1. 使用 Microsoft 365 组织中的管理员账户凭据登录 [https://compliance.microsoft.com](https://compliance.microsoft.com)。
 
-2. 在 Microsoft 365 合规性中心中，转到 " **通信合规性**"。
+2. 在 Microsoft 365 合规中心中，转到“**通信合规性**”。
 
-3. 若要为用户名配置 anonymization，请选择 " **隐私** " 选项卡。
+3. 若要配置用户名的匿名处理，请选择“**隐私**”选项卡。
 
-4. 若要启用 anonymization，请选择 " **显示匿名版本的用户名**"。
+4. 若要启用匿名处理，请选择“**显示用户名的匿名版本**”。
 
 5. 选择“**保存**”。
 
-6. 导航到 " **通知模板** " 选项卡，然后选择 " **创建通知模板**"。
+6. 导航到“**通知模板**”选项卡，然后选择“**创建通知模板**”。
 
-7. 在 " **修改通知模板** " 页上，填写下列字段：
+7. 在 **修改通知模板** 页面，完成以下字段：
 
-    - 模板名称 (必需) 
-    -  (必需的发送) 
-    - "抄送" 和 "密件抄送" (可选) 
-    - 必需的主题 () 
-    - 邮件正文 (必需的) 
+    - 模板名称（必需）
+    - 发送自（必需）
+    - 抄送和密件抄送（可选）
+    - 主题（必需）
+    - 邮件正文（必需）
 
-8. 选择 " **保存** " 以创建并保存 "通知" 模板。
+8. 选择“**另存为**” ，以创建并保存通知模板。
 
-## <a name="step-7-optional-test-your-communication-compliance-policy"></a>第7步 (可选) ：测试通信合规性策略
+## <a name="step-7-optional-test-your-communication-compliance-policy"></a>步骤 7（可选）：测试通信合规性策略
 
-创建通信合规性策略后，最好对其进行测试，以确保策略正确地强制实施了您定义的条件。 如果通信合规性策略包含敏感信息类型，您可能还需要 [测试您的数据丢失防护 (DLP) 策略](create-test-tune-dlp-policy.md) 。 请确保为策略激活时间，以便捕获要测试的通信。
+创建通信合规性策略后，建议进行测试，以确保已定义的条件已由策略正确强制执行。 如果通信合规性策略包含敏感信息类型，也可以 [测试数据丢失防护 (DLP) 策略](create-test-tune-dlp-policy.md)。 请务必为策略提供激活时间，以便捕获要测试的通信。
 
-按照以下步骤测试您的通信合规性策略：
+请按照以下步骤测试通信合规性策略：
 
-1. 在以要测试的策略中定义的受监督用户身份登录时，打开电子邮件客户端、Microsoft 团队或 Yammer。
+1. 以要测试的策略中定义的受监督用户登录时，打开电子邮件客户端、Microsoft Teams 或 Yammer。
 
-2. 发送符合您在通信合规性策略中定义的条件的电子邮件、Microsoft 团队聊天或 Yammer 邮件。 此测试可以是关键字、附件大小、域等。请确保您确定策略中配置的条件设置过于严格或太 lenient。
+2. 发送电子邮件、Microsoft Teams 聊天或 Yammer 消息，这些内容需要满足通信合规性策略中定义的条件。 此测试可以是关键字、附件大小、域等。请确保确定策略中已配置的条件设置是否过于严格或过于宽松。
 
     > [!NOTE]
-    > 电子邮件可能需要长达24小时才能在策略中完全处理。 Microsoft 团队、Yammer 和第三方平台中的通信可能需要最长48小时才能在策略中完全处理。
+    > 在策略中完全处理电子邮件可能需要 24 小时。 Microsoft Teams、Yammer 和第三方平台中的通信可能需要长达 48 小时才能完全执行策略处理。
 
-3. 以通信合规性策略中指定的审阅者的资格登录到 Microsoft 365。 导航到 "**通信合规性**  >  **警报**" 以查看策略的警报。
+3. 作为通信合规性策略中指定的审阅者登录到 Microsoft 365。 导航到“**通信合规性**” > “**警报**”以查看策略的警报。
 
-4. 使用修正控件修正警报，并验证是否正确解决了警报。
+4. 使用修正控件修正警报，并验证警报是否正确解决。
 
 ## <a name="next-steps"></a>后续步骤
 
-完成这些步骤以创建您的第一个通信合规性策略后，您将在24-48 小时后开始收到活动指示器发出的警报。 根据需要使用本文步骤5中的指导配置其他策略。
+完成这些步骤以创建第一个通信合规性策略后，将在 24-48 小时之后开始从活动指标接收警报。 使用本文中步骤 5 中的指南，根据需要配置其他策略。
 
-若要了解有关调查通信合规性警报的详细信息，请参阅 [调查和修正通信合规性警报](communication-compliance-investigate-remediate.md)。
+若要深入了解如何调查通信合规性警报，请参阅 [调查并修正通信合规性警报](communication-compliance-investigate-remediate.md)。
