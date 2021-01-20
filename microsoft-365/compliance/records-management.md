@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 description: 通过 Microsoft 365 中的记录管理，你可以将保留计划应用到文件计划中，以管理保留、记录声明和处置。
-ms.openlocfilehash: 0057be98c79ec07018d86f3130d7e03d68c74446
-ms.sourcegitcommit: 7d4aa58ae9fc893825b6e648fa3f072c3ac59628
+ms.openlocfilehash: 1f6ab392abbf55851e1f084507d3f1658c3cf264
+ms.sourcegitcommit: 64262f6f42dcce6a4608b2e3c7ca6190b7009093
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/09/2021
-ms.locfileid: "49790198"
+ms.lasthandoff: 01/19/2021
+ms.locfileid: "49905231"
 ---
 # <a name="learn-about-records-management-in-microsoft-365"></a>了解 Microsoft 365 中的记录管理
 
@@ -85,7 +85,7 @@ ms.locfileid: "49790198"
 |删除|允许 <sup>1</sup> |**阻止** |**阻止**| **阻止**|
 |复制|允许 |Allowed | 允许| 允许|
 |在容器 <sup>2</sup> 中移动|允许 |允许 | Allowed| 允许|
-|围绕容器 <sup>2</sup> 移动|允许 |如果从未解锁，则允许 | 允许| **阻止**|
+|围绕容器 <sup>2</sup> 移动|允许 |如果从未解锁，则允许 | **阻止** | **阻止**|
 |打开/读取|允许 |允许 | 允许| Allowed|
 |更改标签|允许 |允许 - 仅容器管理员 | 允许 - 仅容器管理员| **已阻止**
 |删除标签|允许 |允许 - 仅容器管理员 | 允许 - 仅容器管理员| **已阻止**
