@@ -3,7 +3,7 @@ title: 在 Microsoft 365 Defender 中管理事件
 description: 了解如何分配、更新状态
 keywords: 事件, 事件, 警报, 相关警报, 分配, 更新, 状态, 管理, 分类, microsoft, 365, m365
 search.product: eADQiWindows 10XVcnh
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -21,64 +21,65 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 29f55d99dd3acd26ae305c03b533e2ca9bb61f2a
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.technology: m365d
+ms.openlocfilehash: 90d9d397b8baf0ffdb9844a0f068f142a5c7fd48
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48846648"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49930626"
 ---
-# <a name="manage-incidents-in-microsoft-365-defender"></a><span data-ttu-id="68b6e-104">在 Microsoft 365 Defender 中管理事件</span><span class="sxs-lookup"><span data-stu-id="68b6e-104">Manage incidents in Microsoft 365 Defender</span></span>
+# <a name="manage-incidents-in-microsoft-365-defender"></a><span data-ttu-id="2d8a2-104">在 Microsoft 365 Defender 中管理事件</span><span class="sxs-lookup"><span data-stu-id="2d8a2-104">Manage incidents in Microsoft 365 Defender</span></span>
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
-<span data-ttu-id="68b6e-105">**适用于：**</span><span class="sxs-lookup"><span data-stu-id="68b6e-105">**Applies to:**</span></span>
-- <span data-ttu-id="68b6e-106">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="68b6e-106">Microsoft 365 Defender</span></span>
+<span data-ttu-id="2d8a2-105">**适用于：**</span><span class="sxs-lookup"><span data-stu-id="2d8a2-105">**Applies to:**</span></span>
+- <span data-ttu-id="2d8a2-106">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="2d8a2-106">Microsoft 365 Defender</span></span>
 
 
 
-<span data-ttu-id="68b6e-107">管理事件对于确保控制和解决威胁至关重要。</span><span class="sxs-lookup"><span data-stu-id="68b6e-107">Managing incidents is critical in ensuring that threats are contained and addressed.</span></span> <span data-ttu-id="68b6e-108">在 Microsoft 365 Defender 中，你有权管理设备、用户和邮箱上的事件。</span><span class="sxs-lookup"><span data-stu-id="68b6e-108">In Microsoft 365 Defender, you have access to managing incidents on devices, users, and mailboxes.</span></span> 
+<span data-ttu-id="2d8a2-107">管理事件对于确保控制和解决威胁至关重要。</span><span class="sxs-lookup"><span data-stu-id="2d8a2-107">Managing incidents is critical in ensuring that threats are contained and addressed.</span></span> <span data-ttu-id="2d8a2-108">在 Microsoft 365 Defender 中，你有权访问管理设备、用户和邮箱上的事件。</span><span class="sxs-lookup"><span data-stu-id="2d8a2-108">In Microsoft 365 Defender, you have access to managing incidents on devices, users, and mailboxes.</span></span> 
 
 
-<span data-ttu-id="68b6e-109">从“事件队列”中选择事件后，就可以管理事件了。</span><span class="sxs-lookup"><span data-stu-id="68b6e-109">You can manage incidents by selecting an incident from the **Incidents queue**.</span></span> 
+<span data-ttu-id="2d8a2-109">从“事件队列”中选择事件后，就可以管理事件了。</span><span class="sxs-lookup"><span data-stu-id="2d8a2-109">You can manage incidents by selecting an incident from the **Incidents queue**.</span></span> 
 
-<span data-ttu-id="68b6e-110">可以编辑事件的名称、解决事件、设置其分类和确定。</span><span class="sxs-lookup"><span data-stu-id="68b6e-110">You can edit the name of an incident, resolve it, set its classification and determination.</span></span> <span data-ttu-id="68b6e-111">还可以将事件分配给自己，添加事件标记和备注。</span><span class="sxs-lookup"><span data-stu-id="68b6e-111">You can also assign the incident to yourself, add incident tags and comments.</span></span>
+<span data-ttu-id="2d8a2-110">可以编辑事件的名称、解决事件、设置其分类和确定。</span><span class="sxs-lookup"><span data-stu-id="2d8a2-110">You can edit the name of an incident, resolve it, set its classification and determination.</span></span> <span data-ttu-id="2d8a2-111">还可以将事件分配给自己，添加事件标记和备注。</span><span class="sxs-lookup"><span data-stu-id="2d8a2-111">You can also assign the incident to yourself, add incident tags and comments.</span></span>
 
-<span data-ttu-id="68b6e-112">如果在调查时希望将警报从一个事件转移到另一个事件，还可以从“警报”选项卡执行相关操作，从而创建一个包含所有相关警报的较大或较小的事件。</span><span class="sxs-lookup"><span data-stu-id="68b6e-112">In cases where while investigating you would like to move alerts from one incident to another you can also do so from the Alerts tab, thus creating a larger or smaller incident that include all relevant alerts.</span></span>
+<span data-ttu-id="2d8a2-112">如果在调查时希望将警报从一个事件转移到另一个事件，还可以从“警报”选项卡执行相关操作，从而创建一个包含所有相关警报的较大或较小的事件。</span><span class="sxs-lookup"><span data-stu-id="2d8a2-112">In cases where while investigating you would like to move alerts from one incident to another you can also do so from the Alerts tab, thus creating a larger or smaller incident that include all relevant alerts.</span></span>
 
-## <a name="edit-incident-name"></a><span data-ttu-id="68b6e-113">编辑事件名称</span><span class="sxs-lookup"><span data-stu-id="68b6e-113">Edit incident name</span></span>
-<span data-ttu-id="68b6e-114">事件将根据警报属性（如受影响的终结点数、受影响的用户数、检测源或类别）自动分配名称。</span><span class="sxs-lookup"><span data-stu-id="68b6e-114">Incidents are automatically assigned a name based on alert attributes such as the number of endpoints affected, users affected, detection sources or categories.</span></span> <span data-ttu-id="68b6e-115">这使您可以快速了解事件的范围。</span><span class="sxs-lookup"><span data-stu-id="68b6e-115">This allows you to quickly understand the scope of the incident.</span></span>
+## <a name="edit-incident-name"></a><span data-ttu-id="2d8a2-113">编辑事件名称</span><span class="sxs-lookup"><span data-stu-id="2d8a2-113">Edit incident name</span></span>
+<span data-ttu-id="2d8a2-114">根据警报属性（如受影响的终结点数量、受影响的用户数、检测源或类别）自动为事件分配名称。</span><span class="sxs-lookup"><span data-stu-id="2d8a2-114">Incidents are automatically assigned a name based on alert attributes such as the number of endpoints affected, users affected, detection sources or categories.</span></span> <span data-ttu-id="2d8a2-115">这使您可以快速了解事件的范围。</span><span class="sxs-lookup"><span data-stu-id="2d8a2-115">This allows you to quickly understand the scope of the incident.</span></span>
 
-<span data-ttu-id="68b6e-116">例如：多 *个源报告的多个终结点上的多阶段事件。*</span><span class="sxs-lookup"><span data-stu-id="68b6e-116">For example: *Multi-stage incident on multiple endpoints reported by multiple sources.*</span></span>
+<span data-ttu-id="2d8a2-116">例如： *多个源报告的多个终结点上的多阶段事件。*</span><span class="sxs-lookup"><span data-stu-id="2d8a2-116">For example: *Multi-stage incident on multiple endpoints reported by multiple sources.*</span></span>
 
-<span data-ttu-id="68b6e-117">可以修改事件名称，以便更好地与首选命名约定保持一致。</span><span class="sxs-lookup"><span data-stu-id="68b6e-117">You can modify the incident name to better align with your preferred naming convention.</span></span>
+<span data-ttu-id="2d8a2-117">可以修改事件名称，以便更好地与首选命名约定保持一致。</span><span class="sxs-lookup"><span data-stu-id="2d8a2-117">You can modify the incident name to better align with your preferred naming convention.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="68b6e-118">在自动事件命名功能的推出之前存在的事件将保留其名称。</span><span class="sxs-lookup"><span data-stu-id="68b6e-118">Incidents that existed prior the rollout of the automatic incident naming feature will retain their name.</span></span>
+> <span data-ttu-id="2d8a2-118">在推出自动事件命名功能之前已存在的事件将保留其名称。</span><span class="sxs-lookup"><span data-stu-id="2d8a2-118">Incidents that existed prior the rollout of the automatic incident naming feature will retain their name.</span></span>
 
 
 
-## <a name="assign-incidents"></a><span data-ttu-id="68b6e-119">分配事件</span><span class="sxs-lookup"><span data-stu-id="68b6e-119">Assign incidents</span></span>
-<span data-ttu-id="68b6e-120">如果尚未分配事件，可以选择“分配给我”将事件分配给自己。</span><span class="sxs-lookup"><span data-stu-id="68b6e-120">If an incident has not yet been assigned, you can select **Assign to me** to assign the incident to yourself.</span></span> <span data-ttu-id="68b6e-121">执行此操作时，假定所有权不仅限于事件，而且还针对与之关联的所有警报。</span><span class="sxs-lookup"><span data-stu-id="68b6e-121">Doing so assumes ownership of not just the incident, but also all the alerts associated with it.</span></span>
+## <a name="assign-incidents"></a><span data-ttu-id="2d8a2-119">分配事件</span><span class="sxs-lookup"><span data-stu-id="2d8a2-119">Assign incidents</span></span>
+<span data-ttu-id="2d8a2-120">如果尚未分配事件，可以选择“分配给我”将事件分配给自己。</span><span class="sxs-lookup"><span data-stu-id="2d8a2-120">If an incident has not yet been assigned, you can select **Assign to me** to assign the incident to yourself.</span></span> <span data-ttu-id="2d8a2-121">执行此操作时，假定所有权不仅限于事件，而且还针对与之关联的所有警报。</span><span class="sxs-lookup"><span data-stu-id="2d8a2-121">Doing so assumes ownership of not just the incident, but also all the alerts associated with it.</span></span>
 
-## <a name="set-status-and-classification"></a><span data-ttu-id="68b6e-122">设置状态和分类</span><span class="sxs-lookup"><span data-stu-id="68b6e-122">Set status and classification</span></span>
-### <a name="incident-status"></a><span data-ttu-id="68b6e-123">事件状态</span><span class="sxs-lookup"><span data-stu-id="68b6e-123">Incident status</span></span>
-<span data-ttu-id="68b6e-124">可通过在调查期间更改事件的状态来为事件分类（例如“活动”或“已解决”）。</span><span class="sxs-lookup"><span data-stu-id="68b6e-124">You can categorize incidents (as **Active** , or **Resolved** ) by changing their status as your investigation progresses.</span></span> <span data-ttu-id="68b6e-125">这可帮助你整理和管理团队对事件的响应方式。</span><span class="sxs-lookup"><span data-stu-id="68b6e-125">This helps you organize and manage how your team can respond to incidents.</span></span>
+## <a name="set-status-and-classification"></a><span data-ttu-id="2d8a2-122">设置状态和分类</span><span class="sxs-lookup"><span data-stu-id="2d8a2-122">Set status and classification</span></span>
+### <a name="incident-status"></a><span data-ttu-id="2d8a2-123">事件状态</span><span class="sxs-lookup"><span data-stu-id="2d8a2-123">Incident status</span></span>
+<span data-ttu-id="2d8a2-124">可通过在调查期间更改事件的状态来为事件分类（例如“活动”或“已解决”）。</span><span class="sxs-lookup"><span data-stu-id="2d8a2-124">You can categorize incidents (as **Active**, or **Resolved**) by changing their status as your investigation progresses.</span></span> <span data-ttu-id="2d8a2-125">这可帮助你整理和管理团队对事件的响应方式。</span><span class="sxs-lookup"><span data-stu-id="2d8a2-125">This helps you organize and manage how your team can respond to incidents.</span></span>
 
-<span data-ttu-id="68b6e-126">例如，SOC 分析人员可以查看当天的紧急“活动”事件，并决定将其分配给自己进行调查。</span><span class="sxs-lookup"><span data-stu-id="68b6e-126">For example, your SOC analyst can review the urgent **Active** incidents for the day, and decide to assign them to herself for investigation.</span></span>
+<span data-ttu-id="2d8a2-126">例如，SOC 分析人员可以查看当天的紧急“活动”事件，并决定将其分配给自己进行调查。</span><span class="sxs-lookup"><span data-stu-id="2d8a2-126">For example, your SOC analyst can review the urgent **Active** incidents for the day, and decide to assign them to herself for investigation.</span></span>
 
-<span data-ttu-id="68b6e-127">或者，如果事件已得到修正，SOC 分析人员可能将该事件设置为“已解决”。</span><span class="sxs-lookup"><span data-stu-id="68b6e-127">Alternatively, your SOC analyst might set the incident as **Resolved** if the incident has been remediated.</span></span> <span data-ttu-id="68b6e-128">解决事件后，系统将自动关闭事件中仍处于打开状态的所有警报。</span><span class="sxs-lookup"><span data-stu-id="68b6e-128">Resolving an incident will automatically close all alerts that are part of the incident and still open.</span></span> 
+<span data-ttu-id="2d8a2-127">或者，如果事件已得到修正，SOC 分析人员可能将该事件设置为“已解决”。</span><span class="sxs-lookup"><span data-stu-id="2d8a2-127">Alternatively, your SOC analyst might set the incident as **Resolved** if the incident has been remediated.</span></span> <span data-ttu-id="2d8a2-128">解决事件后，系统将自动关闭事件中仍处于打开状态的所有警报。</span><span class="sxs-lookup"><span data-stu-id="2d8a2-128">Resolving an incident will automatically close all alerts that are part of the incident and still open.</span></span> 
 
-### <a name="classification-and-determination"></a><span data-ttu-id="68b6e-129">分类和确定</span><span class="sxs-lookup"><span data-stu-id="68b6e-129">Classification and determination</span></span>
-<span data-ttu-id="68b6e-130">可以选择不设置分类，也可以决定指定事件为真实/误报事件。</span><span class="sxs-lookup"><span data-stu-id="68b6e-130">You can choose not to set a classification, or decide to specify whether an incident is true or false.</span></span> <span data-ttu-id="68b6e-131">这样做有助于团队查看模式并从中了解相关信息。</span><span class="sxs-lookup"><span data-stu-id="68b6e-131">Doing so helps the team see patterns and learn from them.</span></span> 
+### <a name="classification-and-determination"></a><span data-ttu-id="2d8a2-129">分类和确定</span><span class="sxs-lookup"><span data-stu-id="2d8a2-129">Classification and determination</span></span>
+<span data-ttu-id="2d8a2-130">可以选择不设置分类，也可以决定指定事件为真实/误报事件。</span><span class="sxs-lookup"><span data-stu-id="2d8a2-130">You can choose not to set a classification, or decide to specify whether an incident is true or false.</span></span> <span data-ttu-id="2d8a2-131">这样做有助于团队查看模式并从中了解相关信息。</span><span class="sxs-lookup"><span data-stu-id="2d8a2-131">Doing so helps the team see patterns and learn from them.</span></span> 
 
-## <a name="add-comments"></a><span data-ttu-id="68b6e-132">添加备注</span><span class="sxs-lookup"><span data-stu-id="68b6e-132">Add comments</span></span>
-<span data-ttu-id="68b6e-133">可以添加备注并查看有关事件的历史事件，以便了解以前对其所做的更改。</span><span class="sxs-lookup"><span data-stu-id="68b6e-133">You can add comments and view historical events about an incident to see previous changes made to it.</span></span>
+## <a name="add-comments"></a><span data-ttu-id="2d8a2-132">添加备注</span><span class="sxs-lookup"><span data-stu-id="2d8a2-132">Add comments</span></span>
+<span data-ttu-id="2d8a2-133">可以添加备注并查看有关事件的历史事件，以便了解以前对其所做的更改。</span><span class="sxs-lookup"><span data-stu-id="2d8a2-133">You can add comments and view historical events about an incident to see previous changes made to it.</span></span>
 
-<span data-ttu-id="68b6e-134">每当对警报进行更改或添加备注时，都会在“备注”和“历史记录”部分进行记录。</span><span class="sxs-lookup"><span data-stu-id="68b6e-134">Whenever a change or comment is made to an alert, it is recorded in the Comments and history section.</span></span>
+<span data-ttu-id="2d8a2-134">每当对警报进行更改或添加备注时，都会在“备注”和“历史记录”部分进行记录。</span><span class="sxs-lookup"><span data-stu-id="2d8a2-134">Whenever a change or comment is made to an alert, it is recorded in the Comments and history section.</span></span>
 
-<span data-ttu-id="68b6e-135">添加的备注会立即显示在窗格中。</span><span class="sxs-lookup"><span data-stu-id="68b6e-135">Added comments instantly appear on the pane.</span></span>
+<span data-ttu-id="2d8a2-135">添加的备注会立即显示在窗格中。</span><span class="sxs-lookup"><span data-stu-id="2d8a2-135">Added comments instantly appear on the pane.</span></span>
 
-## <a name="add-incident-tags"></a><span data-ttu-id="68b6e-136">添加事件标记</span><span class="sxs-lookup"><span data-stu-id="68b6e-136">Add incident tags</span></span>
-<span data-ttu-id="68b6e-137">可以向事件添加自定义标记，例如，标记一组具有共同特征的事件。</span><span class="sxs-lookup"><span data-stu-id="68b6e-137">You can add custom tags to an incident, for example to flag a group of incidents with a common characteristics.</span></span> <span data-ttu-id="68b6e-138">以后可以筛选包含特定标记的所有事件的事件队列。</span><span class="sxs-lookup"><span data-stu-id="68b6e-138">You can later filter the incidents queue for all incidents that contain a specific tag.</span></span>
+## <a name="add-incident-tags"></a><span data-ttu-id="2d8a2-136">添加事件标记</span><span class="sxs-lookup"><span data-stu-id="2d8a2-136">Add incident tags</span></span>
+<span data-ttu-id="2d8a2-137">可以向事件添加自定义标记，例如，标记一组具有共同特征的事件。</span><span class="sxs-lookup"><span data-stu-id="2d8a2-137">You can add custom tags to an incident, for example to flag a group of incidents with a common characteristics.</span></span> <span data-ttu-id="2d8a2-138">以后可以筛选包含特定标记的所有事件的事件队列。</span><span class="sxs-lookup"><span data-stu-id="2d8a2-138">You can later filter the incidents queue for all incidents that contain a specific tag.</span></span>

@@ -1,10 +1,10 @@
 ---
 title: 高级搜寻架构中的 DeviceTvmSoftwareVulnerabilitiesKB 表
 description: 在高级搜寻架构的 DeviceTvmSoftwareVulnerabilitiesKB 表中，了解由威胁和漏洞管理跟踪的软件漏洞。
-keywords: 高级搜寻、威胁搜寻、网络威胁搜寻、microsoft 威胁防护、microsoft 365、mtp、m365、搜索、查询、遥测、架构、参考、kusto、表、列、数据类型、说明、威胁 & 漏洞管理、TVM、设备管理、软件、清单、漏洞、CVE ID、CVSS、DeviceTvmSoftwareVulnerabilitiesKB
+keywords: 高级搜寻， 威胁搜寻， 网络威胁搜寻， Microsoft 威胁防护， microsoft 365， mtp， m365， 搜索， 查询， 遥测， 架构， 参考， kusto， 表， 列， 数据类型， 说明， 威胁 & 漏洞管理， TVM， 设备管理， 软件， 清单， 漏洞， CVE ID， CVSS， DeviceTvmSoftwareVulnerabilitiesKB
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,44 +19,45 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: f5cbc037dce72979874be6246a24ea3491a90df1
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.technology: m365d
+ms.openlocfilehash: 00474ac13f88cd9a00ea2ba4a53a6e30ddd664c4
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48847484"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49931046"
 ---
-# <a name="devicetvmsoftwarevulnerabilitieskb"></a><span data-ttu-id="11185-104">DeviceTvmSoftwareVulnerabilitiesKB</span><span class="sxs-lookup"><span data-stu-id="11185-104">DeviceTvmSoftwareVulnerabilitiesKB</span></span>
+# <a name="devicetvmsoftwarevulnerabilitieskb"></a><span data-ttu-id="ddaff-104">DeviceTvmSoftwareVulnerabilitiesKB</span><span class="sxs-lookup"><span data-stu-id="ddaff-104">DeviceTvmSoftwareVulnerabilitiesKB</span></span>
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
-<span data-ttu-id="11185-105">**适用于：**</span><span class="sxs-lookup"><span data-stu-id="11185-105">**Applies to:**</span></span>
-- <span data-ttu-id="11185-106">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="11185-106">Microsoft 365 Defender</span></span>
+<span data-ttu-id="ddaff-105">**适用于：**</span><span class="sxs-lookup"><span data-stu-id="ddaff-105">**Applies to:**</span></span>
+- <span data-ttu-id="ddaff-106">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="ddaff-106">Microsoft 365 Defender</span></span>
 
 
 
-<span data-ttu-id="11185-107">高级搜寻架构中的 `DeviceTvmSoftwareVulnerabilitiesKB` 表包含漏洞列表，[威胁和漏洞管理](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)会针对这些漏洞对设备进行评估。</span><span class="sxs-lookup"><span data-stu-id="11185-107">The `DeviceTvmSoftwareVulnerabilitiesKB` table in the advanced hunting schema contains the list of vulnerabilities [Threat & Vulnerability Management](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt) assesses devices for.</span></span> <span data-ttu-id="11185-108">使用此参考来构建从该表返回信息的查询。</span><span class="sxs-lookup"><span data-stu-id="11185-108">Use this reference to construct queries that return information from the table.</span></span>
+<span data-ttu-id="ddaff-107">高级搜寻架构中的 `DeviceTvmSoftwareVulnerabilitiesKB` 表包含漏洞列表，[威胁和漏洞管理](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)会针对这些漏洞对设备进行评估。</span><span class="sxs-lookup"><span data-stu-id="ddaff-107">The `DeviceTvmSoftwareVulnerabilitiesKB` table in the advanced hunting schema contains the list of vulnerabilities [Threat & Vulnerability Management](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt) assesses devices for.</span></span> <span data-ttu-id="ddaff-108">使用此参考来构建从该表返回信息的查询。</span><span class="sxs-lookup"><span data-stu-id="ddaff-108">Use this reference to construct queries that return information from the table.</span></span>
 
-<span data-ttu-id="11185-109">有关高级搜寻架构中其他表的信息，请参阅[高级搜寻参考](advanced-hunting-schema-tables.md)。</span><span class="sxs-lookup"><span data-stu-id="11185-109">For information on other tables in the advanced hunting schema, see [the advanced hunting reference](advanced-hunting-schema-tables.md).</span></span>
+<span data-ttu-id="ddaff-109">有关高级搜寻架构中其他表的信息，请参阅[高级搜寻参考](advanced-hunting-schema-tables.md)。</span><span class="sxs-lookup"><span data-stu-id="ddaff-109">For information on other tables in the advanced hunting schema, see [the advanced hunting reference](advanced-hunting-schema-tables.md).</span></span>
 
-| <span data-ttu-id="11185-110">列名称</span><span class="sxs-lookup"><span data-stu-id="11185-110">Column name</span></span> | <span data-ttu-id="11185-111">数据类型</span><span class="sxs-lookup"><span data-stu-id="11185-111">Data type</span></span> | <span data-ttu-id="11185-112">说明</span><span class="sxs-lookup"><span data-stu-id="11185-112">Description</span></span> |
+| <span data-ttu-id="ddaff-110">列名称</span><span class="sxs-lookup"><span data-stu-id="ddaff-110">Column name</span></span> | <span data-ttu-id="ddaff-111">数据类型</span><span class="sxs-lookup"><span data-stu-id="ddaff-111">Data type</span></span> | <span data-ttu-id="ddaff-112">说明</span><span class="sxs-lookup"><span data-stu-id="ddaff-112">Description</span></span> |
 |-------------|-----------|-------------|
-| `CveId` | <span data-ttu-id="11185-113">string</span><span class="sxs-lookup"><span data-stu-id="11185-113">string</span></span> | <span data-ttu-id="11185-114">通用漏洞披露 (CVE) 系统下分配给安全漏洞的唯一标识符</span><span class="sxs-lookup"><span data-stu-id="11185-114">Unique identifier assigned to the security vulnerability under the Common Vulnerabilities and Exposures (CVE) system</span></span> |
-| `CvssScore` | <span data-ttu-id="11185-115">string</span><span class="sxs-lookup"><span data-stu-id="11185-115">string</span></span> | <span data-ttu-id="11185-116">通用漏洞评分系统 (CVSS) 下分配给安全漏洞的严重性评分</span><span class="sxs-lookup"><span data-stu-id="11185-116">Severity score assigned to the security vulnerability under th Common Vulnerability Scoring System (CVSS)</span></span> |
-| `IsExploitAvailable` | <span data-ttu-id="11185-117">boolean</span><span class="sxs-lookup"><span data-stu-id="11185-117">boolean</span></span> | <span data-ttu-id="11185-118">指示该漏洞的攻击代码是否公开可用</span><span class="sxs-lookup"><span data-stu-id="11185-118">Indicates whether exploit code for the vulnerability is publicly available</span></span> |
-| `VulnerabilitySeverityLevel` | <span data-ttu-id="11185-119">string</span><span class="sxs-lookup"><span data-stu-id="11185-119">string</span></span> | <span data-ttu-id="11185-120">基于 CVSS 分数和受威胁环境影响的动态因素为安全漏洞分配的严重性级别</span><span class="sxs-lookup"><span data-stu-id="11185-120">Severity level assigned to the security vulnerability based on the CVSS score and dynamic factors influenced by the threat landscape</span></span> |
-| `LastModifiedTime` | <span data-ttu-id="11185-121">datetime</span><span class="sxs-lookup"><span data-stu-id="11185-121">datetime</span></span> | <span data-ttu-id="11185-122">上次修改项或相关元数据的日期和时间</span><span class="sxs-lookup"><span data-stu-id="11185-122">Date and time the item or related metadata was last modified</span></span> |
-| `PublishedDate` | <span data-ttu-id="11185-123">datetime</span><span class="sxs-lookup"><span data-stu-id="11185-123">datetime</span></span> | <span data-ttu-id="11185-124">向公众公开漏洞的日期</span><span class="sxs-lookup"><span data-stu-id="11185-124">Date vulnerability was disclosed to public</span></span> |
-| `VulnerabilityDescription` | <span data-ttu-id="11185-125">string</span><span class="sxs-lookup"><span data-stu-id="11185-125">string</span></span> | <span data-ttu-id="11185-126">漏洞和相关风险的描述</span><span class="sxs-lookup"><span data-stu-id="11185-126">Description of vulnerability and associated risks</span></span> |
-| `AffectedSoftware` | <span data-ttu-id="11185-127">string</span><span class="sxs-lookup"><span data-stu-id="11185-127">string</span></span> | <span data-ttu-id="11185-128">受漏洞影响的所有软件产品列表</span><span class="sxs-lookup"><span data-stu-id="11185-128">List of all software products affected by the vulnerability</span></span> |
+| `CveId` | <span data-ttu-id="ddaff-113">string</span><span class="sxs-lookup"><span data-stu-id="ddaff-113">string</span></span> | <span data-ttu-id="ddaff-114">通用漏洞披露 (CVE) 系统下分配给安全漏洞的唯一标识符</span><span class="sxs-lookup"><span data-stu-id="ddaff-114">Unique identifier assigned to the security vulnerability under the Common Vulnerabilities and Exposures (CVE) system</span></span> |
+| `CvssScore` | <span data-ttu-id="ddaff-115">string</span><span class="sxs-lookup"><span data-stu-id="ddaff-115">string</span></span> | <span data-ttu-id="ddaff-116">通用漏洞评分系统 (CVSS) 下分配给安全漏洞的严重性评分</span><span class="sxs-lookup"><span data-stu-id="ddaff-116">Severity score assigned to the security vulnerability under th Common Vulnerability Scoring System (CVSS)</span></span> |
+| `IsExploitAvailable` | <span data-ttu-id="ddaff-117">boolean</span><span class="sxs-lookup"><span data-stu-id="ddaff-117">boolean</span></span> | <span data-ttu-id="ddaff-118">指示该漏洞的攻击代码是否公开可用</span><span class="sxs-lookup"><span data-stu-id="ddaff-118">Indicates whether exploit code for the vulnerability is publicly available</span></span> |
+| `VulnerabilitySeverityLevel` | <span data-ttu-id="ddaff-119">string</span><span class="sxs-lookup"><span data-stu-id="ddaff-119">string</span></span> | <span data-ttu-id="ddaff-120">基于 CVSS 分数和受威胁环境影响的动态因素为安全漏洞分配的严重性级别</span><span class="sxs-lookup"><span data-stu-id="ddaff-120">Severity level assigned to the security vulnerability based on the CVSS score and dynamic factors influenced by the threat landscape</span></span> |
+| `LastModifiedTime` | <span data-ttu-id="ddaff-121">datetime</span><span class="sxs-lookup"><span data-stu-id="ddaff-121">datetime</span></span> | <span data-ttu-id="ddaff-122">上次修改项或相关元数据的日期和时间</span><span class="sxs-lookup"><span data-stu-id="ddaff-122">Date and time the item or related metadata was last modified</span></span> |
+| `PublishedDate` | <span data-ttu-id="ddaff-123">datetime</span><span class="sxs-lookup"><span data-stu-id="ddaff-123">datetime</span></span> | <span data-ttu-id="ddaff-124">向公众公开漏洞的日期</span><span class="sxs-lookup"><span data-stu-id="ddaff-124">Date vulnerability was disclosed to public</span></span> |
+| `VulnerabilityDescription` | <span data-ttu-id="ddaff-125">string</span><span class="sxs-lookup"><span data-stu-id="ddaff-125">string</span></span> | <span data-ttu-id="ddaff-126">漏洞和相关风险的描述</span><span class="sxs-lookup"><span data-stu-id="ddaff-126">Description of vulnerability and associated risks</span></span> |
+| `AffectedSoftware` | <span data-ttu-id="ddaff-127">string</span><span class="sxs-lookup"><span data-stu-id="ddaff-127">string</span></span> | <span data-ttu-id="ddaff-128">受漏洞影响的所有软件产品列表</span><span class="sxs-lookup"><span data-stu-id="ddaff-128">List of all software products affected by the vulnerability</span></span> |
 
-## <a name="related-topics"></a><span data-ttu-id="11185-129">相关主题</span><span class="sxs-lookup"><span data-stu-id="11185-129">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="ddaff-129">相关主题</span><span class="sxs-lookup"><span data-stu-id="ddaff-129">Related topics</span></span>
 
-- [<span data-ttu-id="11185-130">主动搜寻威胁</span><span class="sxs-lookup"><span data-stu-id="11185-130">Proactively hunt for threats</span></span>](advanced-hunting-overview.md)
-- [<span data-ttu-id="11185-131">了解查询语言</span><span class="sxs-lookup"><span data-stu-id="11185-131">Learn the query language</span></span>](advanced-hunting-query-language.md)
-- [<span data-ttu-id="11185-132">使用共享查询</span><span class="sxs-lookup"><span data-stu-id="11185-132">Use shared queries</span></span>](advanced-hunting-shared-queries.md)
-- [<span data-ttu-id="11185-133">跨设备、电子邮件、应用和标识进行查寻</span><span class="sxs-lookup"><span data-stu-id="11185-133">Hunt across devices, emails, apps, and identities</span></span>](advanced-hunting-query-emails-devices.md)
-- [<span data-ttu-id="11185-134">了解架构</span><span class="sxs-lookup"><span data-stu-id="11185-134">Understand the schema</span></span>](advanced-hunting-schema-tables.md)
-- [<span data-ttu-id="11185-135">应用查询最佳做法</span><span class="sxs-lookup"><span data-stu-id="11185-135">Apply query best practices</span></span>](advanced-hunting-best-practices.md)
-- [<span data-ttu-id="11185-136">威胁和漏洞管理概述</span><span class="sxs-lookup"><span data-stu-id="11185-136">Overview of Threat & Vulnerability Management</span></span>](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)
+- [<span data-ttu-id="ddaff-130">主动搜寻威胁</span><span class="sxs-lookup"><span data-stu-id="ddaff-130">Proactively hunt for threats</span></span>](advanced-hunting-overview.md)
+- [<span data-ttu-id="ddaff-131">了解查询语言</span><span class="sxs-lookup"><span data-stu-id="ddaff-131">Learn the query language</span></span>](advanced-hunting-query-language.md)
+- [<span data-ttu-id="ddaff-132">使用共享查询</span><span class="sxs-lookup"><span data-stu-id="ddaff-132">Use shared queries</span></span>](advanced-hunting-shared-queries.md)
+- [<span data-ttu-id="ddaff-133">跨设备、电子邮件、应用和标识进行查寻</span><span class="sxs-lookup"><span data-stu-id="ddaff-133">Hunt across devices, emails, apps, and identities</span></span>](advanced-hunting-query-emails-devices.md)
+- [<span data-ttu-id="ddaff-134">了解架构</span><span class="sxs-lookup"><span data-stu-id="ddaff-134">Understand the schema</span></span>](advanced-hunting-schema-tables.md)
+- [<span data-ttu-id="ddaff-135">应用查询最佳做法</span><span class="sxs-lookup"><span data-stu-id="ddaff-135">Apply query best practices</span></span>](advanced-hunting-best-practices.md)
+- [<span data-ttu-id="ddaff-136">威胁和漏洞管理概述</span><span class="sxs-lookup"><span data-stu-id="ddaff-136">Overview of Threat & Vulnerability Management</span></span>](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)

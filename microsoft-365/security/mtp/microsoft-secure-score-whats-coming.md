@@ -2,7 +2,7 @@
 title: Microsoft 安全分数即将提供哪些功能
 description: 介绍 Microsoft 365 安全中心中的 Microsoft 安全分数即将发生哪些新更改。
 keywords: microsoft 安全分数， 安全分数， office 365 安全分数， Microsoft 安全分数， microsoft 365 安全中心， 改进操作
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 f1.keywords:
@@ -17,30 +17,31 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 0693e70cdd5636ce655a400a48aac65197327291
-ms.sourcegitcommit: a8f3c633714e934f9ad026c3bc72157ed535dcfc
+ms.technology: m365d
+ms.openlocfilehash: f7a0dfa3e95321ddd85a56fc32f2d36e72c6b80b
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/29/2020
-ms.locfileid: "49737949"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49930602"
 ---
-# <a name="whats-coming-to-microsoft-secure-score"></a><span data-ttu-id="2bdb4-104">Microsoft 安全分数即将提供哪些功能</span><span class="sxs-lookup"><span data-stu-id="2bdb4-104">What's coming to Microsoft Secure Score</span></span>
+# <a name="whats-coming-to-microsoft-secure-score"></a><span data-ttu-id="420fb-104">Microsoft 安全分数即将提供哪些功能</span><span class="sxs-lookup"><span data-stu-id="420fb-104">What's coming to Microsoft Secure Score</span></span>
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-<span data-ttu-id="2bdb4-105">可在 Microsoft https://security.microsoft.com/securescore [365](overview-security-center.md)安全中心找到 Microsoft 安全分数。</span><span class="sxs-lookup"><span data-stu-id="2bdb4-105">Microsoft Secure Score can be found at https://security.microsoft.com/securescore in the [Microsoft 365 security center](overview-security-center.md).</span></span>
+<span data-ttu-id="420fb-105">Microsoft 安全分数位于 https://security.microsoft.com/securescore [Microsoft 365 安全中心](overview-security-center.md)。</span><span class="sxs-lookup"><span data-stu-id="420fb-105">Microsoft Secure Score can be found at https://security.microsoft.com/securescore in the [Microsoft 365 security center](overview-security-center.md).</span></span>
 
-## <a name="proposed-changes"></a><span data-ttu-id="2bdb4-106">建议的更改</span><span class="sxs-lookup"><span data-stu-id="2bdb4-106">Proposed changes</span></span>
+## <a name="proposed-changes"></a><span data-ttu-id="420fb-106">建议的更改</span><span class="sxs-lookup"><span data-stu-id="420fb-106">Proposed changes</span></span>
 
-<span data-ttu-id="2bdb4-107">我们即将进行一些更改，使 [Microsoft 安全](microsoft-secure-score.md) 分数更好地代表你的安全状况并提高可用性。</span><span class="sxs-lookup"><span data-stu-id="2bdb4-107">We're making some changes in the near future to make [Microsoft Secure Score](microsoft-secure-score.md) a better representative of your security posture and improve usability.</span></span> <span data-ttu-id="2bdb4-108">你的分数和可能的最高分数可能会更改。</span><span class="sxs-lookup"><span data-stu-id="2bdb4-108">Your score and the maximum possible score may change.</span></span>
+<span data-ttu-id="420fb-107">我们即将进行一些更改，使 [Microsoft 安全](microsoft-secure-score.md) 分数更好地代表你的安全状况并提高可用性。</span><span class="sxs-lookup"><span data-stu-id="420fb-107">We're making some changes in the near future to make [Microsoft Secure Score](microsoft-secure-score.md) a better representative of your security posture and improve usability.</span></span> <span data-ttu-id="420fb-108">你的分数和可能的最高分数可能会更改。</span><span class="sxs-lookup"><span data-stu-id="420fb-108">Your score and the maximum possible score may change.</span></span>
 
-### <a name="no-planned-changes"></a><span data-ttu-id="2bdb4-109">无计划更改</span><span class="sxs-lookup"><span data-stu-id="2bdb4-109">No Planned Changes</span></span>
+### <a name="no-planned-changes"></a><span data-ttu-id="420fb-109">无计划更改</span><span class="sxs-lookup"><span data-stu-id="420fb-109">No Planned Changes</span></span>
 
-<span data-ttu-id="2bdb4-110">目前没有任何计划更改。</span><span class="sxs-lookup"><span data-stu-id="2bdb4-110">There are no planned changes at this time.</span></span>
+<span data-ttu-id="420fb-110">目前没有任何计划的更改。</span><span class="sxs-lookup"><span data-stu-id="420fb-110">There are no planned changes at this time.</span></span>
 
-## <a name="related-resources"></a><span data-ttu-id="2bdb4-111">相关资源</span><span class="sxs-lookup"><span data-stu-id="2bdb4-111">Related resources</span></span>
+## <a name="related-resources"></a><span data-ttu-id="420fb-111">相关资源</span><span class="sxs-lookup"><span data-stu-id="420fb-111">Related resources</span></span>
 
-- [<span data-ttu-id="2bdb4-112">Microsoft 安全分数概述</span><span class="sxs-lookup"><span data-stu-id="2bdb4-112">Microsoft Secure Score overview</span></span>](microsoft-secure-score.md)
-- [<span data-ttu-id="2bdb4-113">评估你的安全状况</span><span class="sxs-lookup"><span data-stu-id="2bdb4-113">Assess your security posture</span></span>](microsoft-secure-score-improvement-actions.md)
-- [<span data-ttu-id="2bdb4-114">跟踪 Microsoft 安全分数历史记录并实现目标</span><span class="sxs-lookup"><span data-stu-id="2bdb4-114">Track your Microsoft Secure Score history and meet goals</span></span>](microsoft-secure-score-history-metrics-trends.md)
-- [<span data-ttu-id="2bdb4-115">新增功能</span><span class="sxs-lookup"><span data-stu-id="2bdb4-115">What's new</span></span>](microsoft-secure-score-whats-new.md)
+- [<span data-ttu-id="420fb-112">Microsoft 安全分数概述</span><span class="sxs-lookup"><span data-stu-id="420fb-112">Microsoft Secure Score overview</span></span>](microsoft-secure-score.md)
+- [<span data-ttu-id="420fb-113">评估你的安全状况</span><span class="sxs-lookup"><span data-stu-id="420fb-113">Assess your security posture</span></span>](microsoft-secure-score-improvement-actions.md)
+- [<span data-ttu-id="420fb-114">跟踪 Microsoft 安全分数历史记录并实现目标</span><span class="sxs-lookup"><span data-stu-id="420fb-114">Track your Microsoft Secure Score history and meet goals</span></span>](microsoft-secure-score-history-metrics-trends.md)
+- [<span data-ttu-id="420fb-115">新增功能</span><span class="sxs-lookup"><span data-stu-id="420fb-115">What's new</span></span>](microsoft-secure-score-whats-new.md)
