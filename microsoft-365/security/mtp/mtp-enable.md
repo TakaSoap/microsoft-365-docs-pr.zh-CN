@@ -3,7 +3,7 @@ title: 在 Microsoft 365 安全中心打开 Microsoft 365 Defender
 description: 了解如何启用 Microsoft 365 Defender 并开始集成安全事件和响应。
 keywords: 入门， 启用 MTP， Microsoft 威胁防护， M365， 安全性， 数据位置， 所需权限， 许可证资格， 设置页面
 search.product: eADQiWindows 10XVcnh
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,12 +19,13 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: b052f70c1b618adef12c4f70c2b3fe55741697d5
-ms.sourcegitcommit: 222fb7fe2b26dde3d8591b61cc02113d6135012c
+ms.technology: m365d
+ms.openlocfilehash: 19f035a271626077911b05082a4aba6d67355cdb
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "49760502"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49930218"
 ---
 # <a name="turn-on-microsoft-365-defender"></a>打开 Microsoft 365 Defender
 
@@ -40,7 +41,7 @@ ms.locfileid: "49760502"
 
 ## <a name="check-license-eligibility-and-required-permissions"></a>检查许可证资格和所需权限
 
-Microsoft 365 安全产品的许可证通常授权你在 Microsoft 365 安全中心内使用 Microsoft 365 Defender，而无需额外的许可费用。 我们建议获取 Microsoft 365 E5、E5 安全、A5 或 A5 安全许可证或提供所有支持服务访问权限的有效许可证组合。
+Microsoft 365 安全产品的许可证通常授权你在 Microsoft 365 安全中心使用 Microsoft 365 Defender，而无需额外的许可费用。 我们建议获取 Microsoft 365 E5、E5 安全、A5 或 A5 安全许可证或提供所有支持服务访问权限的有效许可证组合。
 
 有关详细的许可信息， [请阅读许可要求](prerequisites.md#licensing-requirements)。
 
@@ -94,9 +95,9 @@ Microsoft 365 Defender 将在 Microsoft [Defender for Endpoint](https://docs.mic
 
 ## <a name="get-assistance"></a>获取帮助
 
-若要获取有关打开 Microsoft 365 Defender 的最常见问题的答案，请阅读 [常见问题](mtp-enable-faq.md)解答。
+若要获取有关打开 Microsoft 365 Defender 的最常见问题的答案，请阅读 [常见问题解答](mtp-enable-faq.md)。
 
-Microsoft 支持人员可帮助预配或取消设置租户上的服务和相关资源。 For assistance， select **Need help？** in the Microsoft 365 security center. 联系支持人员时，请提及 Microsoft 365 Defender。
+Microsoft 支持人员可帮助预配或取消设置租户上的服务和相关资源。 有关帮助 **，请在** Microsoft 365 安全中心中选择"需要帮助？"。 联系支持人员时，请提及 Microsoft 365 Defender。
 
 ## <a name="related-topics"></a>相关主题
 

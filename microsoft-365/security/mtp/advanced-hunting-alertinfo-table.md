@@ -1,10 +1,10 @@
 ---
 title: 高级搜寻架构中的 AlertInfo 表
 description: 了解高级搜寻架构的 AlertInfo 表中的警报生成事件
-keywords: 高级搜寻、威胁搜寻、网络威胁搜寻、microsoft 威胁防护、microsoft 365、mtp、m365、搜索、查询、遥测、架构参考、kusto、表、列、数据类型、说明、AlertInfo、警报、严重性、类别、MITRE、ATT&CK、Microsoft Defender ATP、MDATP、Office 365 ATP、Microsoft Cloud App Security、MCAS 和 Azure ATP
+keywords: 高级搜寻， 威胁搜寻， 网络威胁搜寻， Microsoft 威胁防护， microsoft 365， mtp， m365， 搜索， 查询， 遥测， 架构参考， kusto， 表， 列， 数据类型， 说明， AlertInfo， 警报， 严重性， 类别， MITRE， ATT&CK， Microsoft Defender ATP， MDATP， Office 365 ATP， Microsoft Cloud App Security， MCAS， 和 Azure ATP
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,12 +19,13 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: 7672d974666a381a48da15e0917a46c97df88895
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.technology: m365d
+ms.openlocfilehash: ac1e28987a944a8f7786af4f10a85362f2f92a80
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48847664"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49929966"
 ---
 # <a name="alertinfo"></a>AlertInfo
 
@@ -36,7 +37,7 @@ ms.locfileid: "48847664"
 
 
 
-`AlertInfo`[高级搜寻](advanced-hunting-overview.md)架构中的表包含来自 Microsoft defender For Endpoint、Microsoft defender for Office 365、Microsoft 云应用安全性和 Microsoft defender for Identity 的警报信息。 使用此参考来构建从此表返回信息的查询。
+高级 `AlertInfo` 搜寻架构中的[](advanced-hunting-overview.md)表包含有关来自 Microsoft Defender for Endpoint、Microsoft Defender for Office 365、Microsoft Cloud App Security 和 Microsoft Defender for Identity 的警报的信息。 使用此参考来构建从此表返回信息的查询。
 
 有关高级搜寻架构中其他表的信息，请[参阅高级搜寻参考](advanced-hunting-schema-tables.md)。
 
@@ -47,9 +48,9 @@ ms.locfileid: "48847664"
 | `Title` | string | 警报的标题 |
 | `Category` | string | 由警报标识的威胁指示器或违反活动的类型 |
 | `Severity` | string | 指示警报所标识的威胁指示器或违反活动的潜在影响（高、中或低） |
-| `ServiceSource` | string | 提供通知信息的产品或服务 |
-| `DetectionSource` | string | 识别明显的组件或活动的检测技术或传感器 |
-| `AttackTechniques` | string | MITRE ATT&与触发警报的活动相关联的 CK 技术 |
+| `ServiceSource` | string | 提供警报信息的产品或服务 |
+| `DetectionSource` | string | 标识值得注意的组件或活动的检测技术或传感器 |
+| `AttackTechniques` | string | MITRE ATT&触发警报的活动关联的 CK 技术 |
 
 ## <a name="related-topics"></a>相关主题
 - [高级搜寻概述](advanced-hunting-overview.md)

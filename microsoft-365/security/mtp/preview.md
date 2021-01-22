@@ -3,7 +3,7 @@ title: Microsoft 365 Defender 中的预览功能
 description: 了解 Microsoft 365 安全中心的新功能
 keywords: 预览, 新, m365 安全中心, 安全, 365, 功能
 search.product: eADQiWindows 10XVcnh
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,19 +19,20 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 15f599f425e20540f5f7889efa632f5a9f11a4e8
-ms.sourcegitcommit: 25ac2736a66bb72c0d574c3fbde7472ac98d5321
+ms.technology: m365d
+ms.openlocfilehash: ce0f1ae41b57db398c7ec84e078897a7345c1b9a
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/31/2020
-ms.locfileid: "49741053"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49930074"
 ---
 # <a name="microsoft-365-defender-preview-features"></a>Microsoft 365 Defender 预览版功能
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 >[!IMPORTANT]
->预览版本在没有服务级别协议的情况下提供，不建议用于生产工作负载。 某些功能可能不受支持，或者可能具有受限功能。
+>预览版本未经服务级别协议提供，不建议用于生产工作负载。 某些功能可能不受支持，或者可能具有受限功能。
 
 **适用于：**
 - Microsoft 365 Defender

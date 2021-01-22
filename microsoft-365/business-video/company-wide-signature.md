@@ -1,5 +1,5 @@
 ---
-title: 创建公司范围内的签名
+title: 创建公司范围的签名
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -16,24 +16,25 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- okr_smb
 monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: 了解如何创建公司范围内的电子邮件签名。
-ms.openlocfilehash: 64c269abd25cab74ec5b0836975902e46a611c8c
-ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
+ms.openlocfilehash: 3a9623837b3a68fa8cc0fb378293ec463d9bb789
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49701838"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49928296"
 ---
 # <a name="create-a-company-wide-email-signature"></a>创建公司范围内的电子邮件签名
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1IEWf?autoplay=false]
 
-公司范围内的电子邮件签名显示在组织中人员发送的每封电子邮件上。 您可以使用它显示重要详细信息，如公司联系人信息或法律免责声明。 
+公司范围内的电子邮件签名显示在组织中人员发送的每封电子邮件上。 您可以使用它显示重要详细信息，如公司联系信息或法律免责声明。 
 
 ## <a name="try-it"></a>试一试！
 

@@ -16,17 +16,18 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: 了解设置 Microsoft 365 商业高级版所需的功能。
-ms.openlocfilehash: e1f4e736cfc8aa1a89e461662cf80907fd640cec
-ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
+ms.openlocfilehash: 23524c96e994aa9df9a2799c81a6bbd5861ce5e4
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49701578"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49927906"
 ---
 # <a name="overview-of-microsoft-365-business-premium-setup"></a>Microsoft 365 商业高级版设置概述
 
@@ -93,7 +94,7 @@ ms.locfileid: "49701578"
 
 - 若要在 Microsoft 365 中取得最大价值，&#39;想要将 Windows 10 电脑连接到运行在它的 Microsoft 365 商业高级版和 Azure Active Directory。 这允许你的电脑由 Microsoft 365 商业高级版管理，以获取软件更新和防止数据丢失和其他网络威胁。
 - 连接电脑时，Windows 10 向组织&#39;网络注册设备，然后将设备加入网络，以便可以使用组织的&#39;用户名和密码登录和访问资源。
-- 根据组织&#39;要求，系统可能会要求你设置两步验证、加密和移动设备管理（如 Microsoft Intune）。
+- 根据组织&#39;要求，系统可能会要求你设置两步验证、加密和移动设备管理，如 Microsoft Intune。
 
 ## <a name="8-set-up-and-use-office-apps"></a>8. 设置和使用 Office 应用
 
@@ -103,7 +104,7 @@ ms.locfileid: "49701578"
 
 ## <a name="9-migrate-old-email-and-files"></a>9. 迁移旧电子邮件和文件
 
-- 有时，你&#39;将旧电子邮件、日历和联系人，以及业务文档和其他文件导入到 Microsoft 365 商业高级版。
+- 有时，你&#39;将旧电子邮件、日历、联系人以及业务文档和其他文件导入到 Microsoft 365 商业高级版。
 - 对于电子邮件，您可以通过将旧电子邮件导出为 PST，然后将该 PST 导入新的电子邮件帐户，在 Outlook 中执行此操作。 然后在其他计算机上重复此操作。 您还可以使用合作伙伴来帮助执行此步骤。
 - 对于业务文档，您可以将文件拖放到 OneDrive for Business 中，如果常见或共享业务文件，请将这些文件复制到 SharePoint。
 

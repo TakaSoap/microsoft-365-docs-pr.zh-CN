@@ -3,7 +3,7 @@ title: 创建应用以代表用户访问 Microsoft 365 Defender API
 description: 了解如何代表用户访问 Microsoft 365 Defender API。
 keywords: access， 代表用户， api， 应用程序， 用户， 访问令牌， 令牌，
 search.product: eADQiWindows 10XVcnh
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,12 +19,13 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: f1c0caea9ff7810f79026c789241a4f250ec5303
-ms.sourcegitcommit: d6b1da2e12d55f69e4353289e90f5ae2f60066d0
+ms.technology: m365d
+ms.openlocfilehash: d443334a00b5247525a2cdba98a11cfe0f515193
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "49719412"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49928449"
 ---
 # <a name="create-an-app-to-access-microsoft-365-defender-apis-on-behalf-of-a-user"></a>创建应用以代表用户访问 Microsoft 365 Defender API
 
@@ -59,7 +60,7 @@ Microsoft 365 Defender 通过一组编程 API 公开其大部分数据和操作�
 > 代表用户访问 Microsoft 365 Defender API 时，你将需要正确的应用程序权限和用户权限。
 
 > [!TIP]
-> 如果你有权在门户中执行一个操作，则你有权在 API 中执行此操作。
+> 如果您有权在门户中执行一个操作，则有权在 API 中执行此操作。
 
 ## <a name="create-an-app"></a>创建应用
 
@@ -127,14 +128,14 @@ $response.AccessToken
 1. 将令牌复制并粘贴到 [JWT](https://jwt.ms) 中以解码它。
 1. 确保解码 *令牌中* 的角色声明包含所需的权限。
 
-在下图中，你可以看到从应用获取的解码令牌，具有 ```Incidents.Read.All``` ```Incidents.ReadWrite.All``` 、 和 ```AdvancedHunting.Read.All``` 权限：
+在下图中，你可以看到从应用获取的已解码令牌，具有 ```Incidents.Read.All``` ```Incidents.ReadWrite.All``` 、 和 ```AdvancedHunting.Read.All``` 权限：
 
 ![令牌验证的图像](../../media/webapp-decoded-token.png)
 
 ## <a name="use-the-token-to-access-the-microsoft-365-defender-api"></a>使用令牌访问 Microsoft 365 Defender API
 
 1. 选择要用于事件或高级搜寻 (API) 。 有关详细信息，请参阅支持的[Microsoft 365 Defender API。](api-supported.md)
-2. 在即将发送的 http 请求中，将授权标头设置为 `"Bearer" <token>` *，Bearer* 是授权方案，令牌是经过验证的令牌。
+2. 在即将发送的 http 请求中，将授权标头设置为 `"Bearer" <token>` *，Bearer* 为授权方案，令牌为经过验证的令牌。
 3. 令牌将在一小时内过期。 在此期间，可以使用同一令牌发送多个请求。
 
 以下示例演示如何发送请求，以使用 **C# 获取事件列表**。

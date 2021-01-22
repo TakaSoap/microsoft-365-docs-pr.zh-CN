@@ -16,18 +16,19 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- okr_smb
 monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: 了解如何管理安全链接，以保护企业免受恶意网站的攻击。
-ms.openlocfilehash: eabb2c1f71b1183867ffcb005ba4f7e44ed6e4b7
-ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
+ms.openlocfilehash: 1f5b3f61871e8d231029156631031dbb0ef4f2f5
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49701589"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49928014"
 ---
 # <a name="manage-safe-links"></a>管理安全链接
 
@@ -41,10 +42,10 @@ Microsoft Defender for Office 365（以前称为 Microsoft 365 ATP 或高级威�
 1. 向下滚动以 **增强对高级威胁的保护**。 选择 **"查看****、管理**"，然后选择 **"ATP 安全链接"。**
 1. 在 **"应用于整个组织的策略"下**，选择 **"** 默认策略"，然后选择"编辑 **"** 图标。
 1. 输入要阻止的 URL。
-1. Select **Use safe links in Office apps， Office for iOS and Android**;select **Do not track when users click safe links**;并选择 **"不允许用户单击到原始 URL 的安全链接"。** 如果设置默认策略，则可能已经选择了这些策略。 选择“**保存**”。
+1. Select **Use safe links in Office apps， Office for iOS and Android**;select **Do not track when users click safe links**;并选择 **"不允许用户单击原始 URL 的安全链接"。** 如果设置默认策略，则可能已经选择了这些策略。 选择 **“保存”**。
 1. 在 **"适用于特定收件人的策略**"下，选择 **"推荐的安全链接** 规则"，然后选择"编辑 **"** 图标。
 1. 选择 **设置**，向下滚动，输入不希望检查的 URL，然后选择"添加 **"** 图标。
-1. 选择 **"应用于**"，然后选择您的域名。 选择要应用规则的其他域。 选择 **"添加****"，"** 确定"，然后 **保存**。
+1. 选择 **"应用于"，** 然后选择您的域名。 选择要应用规则的其他域。 选择 **"添加****"，"** 确定"，然后 **保存**。
 
 ATP 安全链接现已配置。 最多允许 30 分钟更改生效。
 

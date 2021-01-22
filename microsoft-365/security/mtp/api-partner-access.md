@@ -3,7 +3,7 @@ title: 合作伙伴通过 Microsoft 365 Defender API 访问
 description: 了解如何创建应用以代表用户以编程方式访问 Microsoft 365 Defender。
 keywords: 合作伙伴， 访问， api， 多租户， 同意， 访问令牌， 应用
 search.product: eADQiWindows 10XVcnh
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,12 +19,13 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 5de113c8f8419b3af2a287bd7ba7e41dc06b4121
-ms.sourcegitcommit: d6b1da2e12d55f69e4353289e90f5ae2f60066d0
+ms.technology: m365d
+ms.openlocfilehash: 07afb0baf5c115f2029abfe03795b081a4f253a8
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "49719436"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49929394"
 ---
 # <a name="create-an-app-with-partner-access-to-microsoft-365-defender-apis"></a>创建具有 Microsoft 365 Defender API 合作伙伴访问权限的应用
 
@@ -49,7 +50,7 @@ Microsoft 365 Defender 通过一组编程 API 公开其大部分数据和操作�
 - 使用此应用程序获取访问令牌。
 - 使用令牌访问 Microsoft 365 Defender API。
 
-由于此应用是多租户应用，你还需要代表其用户[](https://docs.microsoft.com/azure/active-directory/develop/v2-permissions-and-consent#requesting-consent-for-an-entire-tenant)从每个租户获得管理员同意。
+由于此应用是多租户，你还需要代表其用户从[](https://docs.microsoft.com/azure/active-directory/develop/v2-permissions-and-consent#requesting-consent-for-an-entire-tenant)每个租户获得管理员同意。
 
 本文介绍如何：
 
@@ -75,13 +76,13 @@ Microsoft 365 Defender 通过一组编程 API 公开其大部分数据和操作�
 
 2. 导航到 **Azure Active Directory**  >  **应用注册**  >  **新注册**。
 
-   ![Microsoft Azure 的图像和应用程序注册导航](../../media/atp-azure-new-app2.png)
+   ![Microsoft Azure 的图像和到应用程序注册的导航](../../media/atp-azure-new-app2.png)
 
 3. 在注册表单中：
 
    - 为应用程序选择一个名称。
    - 从 **支持的帐户类型中**，选择任何组织目录中的帐户 **(任何 Azure AD) - 多租户**。
-   - 填写" **重定向 URI"** 部分。 选择类型 **Web，** 将重定向 URI 作为 **https://portal.azure.com** 。
+   - 填写" **重定向 URI"** 部分。 选择类型 **Web，** 将重定向 URI 作为 **https://portal.azure.com** 提供。
 
    填写完表单后，选择"注册 **"。**
 
@@ -107,7 +108,7 @@ Microsoft 365 Defender 通过一组编程 API 公开其大部分数据和操作�
 
     ![授予权限的图像](../../media/grant-consent.PNG)
 
-7. 若要向应用程序添加密码，请选择"证书&**密码**，向密码添加说明，然后选择"添加 **"。**
+7. 若要向应用程序添加密码，请选择"证书&**密码，向** 密码添加说明，然后选择"添加 **"。**
 
     > [!TIP]
     > 选择"添加 **"** 后， **选择复制生成的密码值**。 离开后将无法检索密码值。
@@ -244,7 +245,7 @@ aadToken = jsonResponse["access_token"]
 
 1. 打开命令提示符，CLIENT_ID Azure 应用程序 ID。
 1. 将CLIENT_SECRET Azure 应用程序密码。
-1. 将TENANT_ID应用访问 Microsoft 365 Defender 的用户的 Azure 租户 ID。
+1. 将TENANT_ID Azure 租户 ID 设置为想要使用你的应用访问 Microsoft 365 Defender 的用户的 Azure 租户 ID。
 1. 运行以下命令：
 
 ```bash
@@ -262,7 +263,7 @@ curl -i -X POST -H "Content-Type:application/x-www-form-urlencoded" -d "grant_ty
 1. 将令牌复制并粘贴到 [JSON Web 令牌验证程序网站 JWT 中](https://jwt.ms) ，以解码它。
 1. 确保解码 *令牌中* 的角色声明包含所需的权限。
 
-在下图中，你可以看到从应用获取的解码令牌，具有 ```Incidents.Read.All``` ```Incidents.ReadWrite.All``` 、 和 ```AdvancedHunting.Read.All``` 权限：
+在下图中，你可以看到从应用获取的已解码令牌，具有 ```Incidents.Read.All``` ```Incidents.ReadWrite.All``` 、 和 ```AdvancedHunting.Read.All``` 权限：
 
 ![令牌验证的图像](../../media/webapp-decoded-token.png)
 

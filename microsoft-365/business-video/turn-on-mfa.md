@@ -16,18 +16,19 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- okr_smb
 monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: 了解如何启用多重身份验证。
-ms.openlocfilehash: 4f7cd51a8a6a412b8aed2e0855727eeb48fc522b
-ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
+ms.openlocfilehash: 1485875d1d40d93dab7a04d4e3d81016ac1536f3
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49701866"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49927762"
 ---
 # <a name="turn-on-multi-factor-authentication"></a>启用多重身份验证
 

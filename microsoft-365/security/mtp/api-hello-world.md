@@ -3,7 +3,7 @@ title: Microsoft 365 Defender REST API 的 Hello World
 description: 了解如何创建应用并使用令牌访问 Microsoft 365 Defender API
 keywords: 应用， 令牌， 访问， aad， 应用， 应用程序注册， powershell， 脚本， 全局管理员， 权限， microsoft 365 defender
 search.product: eADQiWindows 10XVcnh
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,12 +19,13 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: b36a6acca5880a455a66b03b5355cdf1fb85b29b
-ms.sourcegitcommit: d6b1da2e12d55f69e4353289e90f5ae2f60066d0
+ms.technology: m365d
+ms.openlocfilehash: 66afa27d0fa7a092d3f9e9ed6c3b6abc6020cb8d
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "49719306"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49928374"
 ---
 # <a name="hello-world-for-microsoft-365-defender-rest-api"></a>Microsoft 365 Defender REST API 的 Hello World
 
@@ -47,7 +48,7 @@ ms.locfileid: "49719306"
 
 2. 导航到 **Azure Active Directory**  >  **应用注册**  >  **新注册**。
 
-   ![Microsoft Azure 的图像和应用程序注册导航](../../media/atp-azure-new-app2.png)
+   ![Microsoft Azure 的图像和到应用程序注册的导航](../../media/atp-azure-new-app2.png)
 
 3. 在注册表单中，选择应用程序的名称，然后选择"注册 **"。** 选择重定向 URI 是可选的。 完成此示例不需要一个。
 

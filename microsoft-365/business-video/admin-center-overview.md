@@ -16,18 +16,19 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- okr_smb
 monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: 详细了解 Microsoft 365 管理中心。
-ms.openlocfilehash: 9d3b8c83429eec924e23ae1a63e57d6ed36f76b3
-ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
+ms.openlocfilehash: 3070d6e9ce035786291fab4557648ab6bc520540
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49701915"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49927582"
 ---
 # <a name="overview-of-the-microsoft-365-admin-center"></a>Microsoft 365 管理中心概述
 
@@ -35,7 +36,7 @@ ms.locfileid: "49701915"
 
 Microsoft 365 管理中心是你在云中管理业务的地方。 可以完成添加和删除用户、更改许可证和重置密码等任务。 
 
-To get to the Microsoft 365 admin center， go to [admin.microsoft.com](https://admin.microsoft.com) or， if you're already signed in， select the app launcher， and choose **Admin.**
+To get to the Microsoft 365 admin center， go to [admin.microsoft.com](https://admin.microsoft.com) or， if you'already signed in， select the app launcher， and choose **Admin.**
 
 在主页上，你可以为经常执行的任务创建卡片。 若要添加新卡片，请选择"添加 **卡**"，然后选择要添加的卡片旁边的加号。 完成后，关闭窗口。 可以通过选择卡片，然后将卡片拖动到所需的位置来重新排列卡片。 若要删除卡片，请选择 **"更多操作"，** 然后选择"**删除"。**
 

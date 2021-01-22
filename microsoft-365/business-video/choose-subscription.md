@@ -16,23 +16,24 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: 了解哪种 Microsoft 365 订阅适合你的组织。
-ms.openlocfilehash: 34a7da132004cc73b66d9244f143dfc80a0e5f86
-ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
+ms.openlocfilehash: 81ec93f5295fe9eb39538e74fc82b41b26641302
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49701846"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49927366"
 ---
 # <a name="choose-a-microsoft-365-subscription"></a>选择 Microsoft 365 订阅
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWfzL9?autoplay=false]
 
-选择正确的 Microsoft 365 订阅是使服务获得最大功能的关键。 下面&#39;如何比较选项并选择适合&#39;的计划。
+选择正确的 Microsoft 365 订阅是使服务获得最大功能的关键。 下面&#39;比较选项并选择适合&#39;的计划。
 
 ## <a name="try-it"></a>试一试！
 
@@ -41,7 +42,7 @@ ms.locfileid: "49701846"
 3. 向下滚动以查看每个选项可用的功能。
 4. 如果你有较大的业务或复杂的 IT 需求，请向下滚动并选择 Microsoft  **365 企业版**。
 5. 选择  **"查看产品和计划** "，并查看企业版订阅及其功能。
-6. 一旦&#39;决定订阅，请选择"立即购买"，然后完成注册过程。
+6. 一&#39;决定订阅后，选择"立即购买"，然后完成注册过程。
 
 ## <a name="compare-plans"></a>比较各计划
 

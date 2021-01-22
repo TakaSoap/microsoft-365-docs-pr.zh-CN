@@ -1,10 +1,10 @@
 ---
 title: 高级搜寻架构中的 IdentityQueryEvents 表
 description: 了解高级搜寻架构的 IdentityQueryEvents 表中的 Active Directory 查询事件
-keywords: 高级搜寻、威胁搜寻、网络威胁搜寻、microsoft 威胁防护、microsoft 365、mtp、m365、搜索、查询、遥测、架构参考、kusto、表、列、数据类型、说明、IdentityQueryEvents、Azure AD、Active Directory、Azure ATP、标识、LDAP 查询
+keywords: 高级搜寻， 威胁搜寻， 网络威胁搜寻， Microsoft 威胁防护， microsoft 365， mtp， m365， 搜索， 查询， 遥测， 架构参考， kusto， 表， 列， 数据类型， 说明， IdentityQueryEvents， Azure AD， Active Directory， Azure ATP， 标识， LDAP 查询
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,12 +19,13 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: 2b163dc39e56c82ef177b71d197c431c744b12d7
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.technology: m365d
+ms.openlocfilehash: 7016127a75bca48103f5325ce169faa3d7c31c85
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48847400"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49929810"
 ---
 # <a name="identityqueryevents"></a>IdentityQueryEvents
 
@@ -34,36 +35,36 @@ ms.locfileid: "48847400"
 **适用于：**
 - Microsoft 365 Defender
 
-`IdentityQueryEvents`[高级搜寻](advanced-hunting-overview.md)架构中的表包含针对 Active Directory 对象（如用户、组、设备和域）执行的查询的相关信息。 使用此参考来构建从此表返回信息的查询。
+高级 `IdentityQueryEvents` 搜寻架构 [中的](advanced-hunting-overview.md) 表包含有关对 Active Directory 对象（如用户、组、设备和域）执行的查询的信息。 使用此参考来构建从此表返回信息的查询。
 
 >[!TIP]
-> 若要详细了解表支持的事件类型 (`ActionType` 值) ，请使用 "安全中心" 中提供的 [内置架构引用](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) 。
+> 有关事件类型的详细信息 (表) 支持的值，请使用安全中心中提供的内置 `ActionType` 架构参考。 [](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center)
 
 有关高级搜寻架构中其他表的信息，请[参阅高级搜寻参考](advanced-hunting-schema-tables.md)。
 
 | 列名称 | 数据类型 | 说明 |
 |-------------|-----------|-------------|
 | `Timestamp` | datetime | 记录事件的日期和时间 |
-| `ActionType` | string | 触发事件的活动类型。 有关详细信息，请参阅[在门户架构参考中](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) |
-| `Application` | string | 执行录制操作的应用程序 |
+| `ActionType` | string | 触发事件的活动类型。 有关详细信息 [，请参阅门户内架构](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) 参考 |
+| `Application` | string | 执行录制的操作的应用程序 |
 | `QueryType` | string | 查询类型，如 QueryGroup、QueryUser 或 EnumerateUsers |
-| `QueryTarget` | string | 要查询的用户、组、设备、域或任何其他实体类型的名称 |
+| `QueryTarget` | string | 要查询的用户、组、设备、域或其他任何实体类型的名称 |
 | `Query` | string | 用于运行查询的字符串 |
-| `Protocol` | string | 通信过程中使用的协议 |
+| `Protocol` | string | 通信期间使用的协议 |
 | `AccountName` | string | 帐户的用户名 |
 | `AccountDomain` | string | 帐户的域 |
-| `AccountUpn` | string | 帐户的用户主体名称 (UPN)  |
-| `AccountSid` | string | 帐户的安全标识符 (SID)  |
-| `AccountObjectId` | string | Azure AD 中的帐户的唯一标识符 |
-| `AccountDisplayName` | string | 通讯簿中显示的帐户用户的名称。 通常是给定的或名的名称、中间初始名称和姓氏的组合。 |
-| `DeviceName` | string | 终结点 (FQDN) 的完全限定的域名称 |
-| `IPAddress` | string | 分配给终结点的 IP 地址，并在相关的网络通信过程中使用 |
-| `DestinationDeviceName` | string | 运行处理录制操作的服务器应用程序的设备的名称 |
-| `DestinationIPAddress` | string | 运行用于处理录制操作的服务器应用程序的设备的 IP 地址 |
-| `TargetDeviceName` | string | 应用录制的操作的设备的完全限定的域名 (FQDN)  |
-| `TargetAccountUpn` | string | 应用了录制的操作的帐户 (UPN) 的用户主体名称 |
-| `TargetAccountDisplayName` | string | 将录制的操作应用于的帐户的显示名称 |
-| `Location` | string | 与事件关联的城市、国家或其他地理位置 |
+| `AccountUpn` | string | 帐户的用户主体 (UPN)  |
+| `AccountSid` | string | 帐户 (SID) 安全标识符 |
+| `AccountObjectId` | string | Azure AD 中帐户的唯一标识符 |
+| `AccountDisplayName` | string | 通讯簿中显示的帐户用户的名称。 通常是给定或名字、中间初始和姓氏或姓氏的组合。 |
+| `DeviceName` | string | 终结点的 FQDN (完全) 域名 |
+| `IPAddress` | string | 分配给终结点的 IP 地址，在相关的网络通信期间使用 |
+| `DestinationDeviceName` | string | 运行处理所记录操作的服务器应用程序的设备的名称 |
+| `DestinationIPAddress` | string | 运行处理所记录操作的服务器应用程序的设备的 IP 地址 |
+| `TargetDeviceName` | string | 已记录 (的) 的设备的 FQDN 的完全限定域名 |
+| `TargetAccountUpn` | string | 用户主体 (UPN) 记录操作应用于的帐户的名称 |
+| `TargetAccountDisplayName` | string | 记录的操作应用于的帐户的显示名称 |
+| `Location` | string | 与事件关联的城市、国家/地区或其他地理位置 |
 | `ReportId` | long | 事件的唯一标识符 |
 | `AdditionalFields` | string | 有关实体或事件的其他信息 |
 

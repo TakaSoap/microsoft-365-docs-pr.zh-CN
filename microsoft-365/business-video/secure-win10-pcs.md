@@ -16,17 +16,18 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: 了解如何使用 Microsoft 365 商业高级版设置 Windows 10 保护策略。
-ms.openlocfilehash: e2ef5c3c3d1dbc07e1c3705389eb757e720c9182
-ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
+ms.openlocfilehash: dadb24c5de46ef13ea64c4e164cf6edfd4592b35
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49701583"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49928002"
 ---
 # <a name="secure-windows-10-pcs"></a>保护 Windows 10 电脑
 

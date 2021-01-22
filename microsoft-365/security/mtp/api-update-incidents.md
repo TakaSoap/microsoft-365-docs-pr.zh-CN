@@ -3,7 +3,7 @@ title: 更新事件 API
 description: 了解如何使用 Microsoft 365 Defender API 更新事件
 keywords: 更新， api， 事件
 search.product: eADQiWindows 10XVcnh
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,12 +19,13 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 6fc1ff730994f03aa500ad9a4559b66970e32d87
-ms.sourcegitcommit: d6b1da2e12d55f69e4353289e90f5ae2f60066d0
+ms.technology: m365d
+ms.openlocfilehash: 18be4565c2611457d0f5fdc135f99a301bb39e2a
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "49719400"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49929066"
 ---
 # <a name="update-incidents-api"></a>更新事件 API
 
@@ -83,7 +84,7 @@ Content-Type | String | application/json. 必需。
 assignedTo | string | 事件的所有者。
 classification | 枚举 | 警报的规范。 可取值为：```Unknown```、```FalsePositive```、```TruePositive```。
 确定 | 枚举 | 指定警报的确定。 可取值为：```NotAvailable```、```Apt```、```Malware```、```SecurityPersonnel```、```SecurityTesting```、```UnwantedSoftware``` 或 ```Other```。
-tags | string List | 事件标记列表。
+标记 | string List | 事件标记列表。
 
 ## <a name="response"></a>响应
 

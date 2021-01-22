@@ -4,7 +4,7 @@ description: 设置 Microsoft 365 Defender 试用实验室或试验环境，以�
 keywords: Microsoft 威胁防护试用版， 试用 Microsoft 威胁防护， 评估 Microsoft 威胁防护， Microsoft 威胁防护评估实验室， Microsoft 威胁防护试点， 网络安全， 高级永久性威胁， 企业安全， 设备， 设备， 标识， 用户， 数据， 应用程序， 事件， 自动调查和修正， 高级搜寻
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -20,12 +20,13 @@ ms.collection:
 - m365solution-overview
 - m365solution-evalutatemtp
 ms.topic: conceptual
-ms.openlocfilehash: 8504b036203e1f73dc9e0a0d79a228425fb88bfa
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+ms.technology: m365d
+ms.openlocfilehash: 6735817a71f9fb50843acad3a13596ec247aa407
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49659627"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49930206"
 ---
 # <a name="create-a-microsoft-365-defender-trial-lab-or-pilot-environment"></a>创建 Microsoft 365 Defender 试用实验室或试验环境 
 
@@ -38,10 +39,10 @@ ms.locfileid: "49659627"
 
 本指南可帮助你使用用户和组设置实验室环境，然后指导你完成 Microsoft 365 Defender 中的功能配置，以便你可以模拟威胁攻击并获取有意义的试验结果。 
 
-创建此试用实验室或试验环境的目的是说明全面和集成的 Microsoft 365 Defender 功能。 体验此智能安全解决方案如何检测、阻止、自动调查和响应组织的高级威胁。 
+创建此试用实验室或试验环境的目的是说明全面且集成的 Microsoft 365 Defender 功能。 体验此智能安全解决方案如何检测、阻止、自动调查和响应组织的高级威胁。 
 
 
-将指导你完成基于推荐的部署路径启动 Microsoft 365 Defender 评估的步骤。 目标是帮助你使用试用帐户在实验室环境中或在具有完整许可证的生产试验环境中设置安全解决方案。 准备试验实验室或试验环境可以帮助您向贵组织的决策者呈现安全操作用例。 运行完攻击模拟并满意结果后，可以在组织中使用 Microsoft 技术销售专业人员或专家全面部署和操作它。 
+将指导你完成基于推荐的部署路径启动 Microsoft 365 Defender 评估的步骤。 目标是帮助你使用试用帐户在实验室环境中或在具有完整许可证的生产试验环境中设置安全解决方案。 准备试验实验室或试验环境可以帮助您向贵组织的决策者呈现安全操作用例。 运行完攻击模拟并满意结果后，可以在组织中完全部署和运行它，同时获得 Microsoft 技术销售专业人员或组织中专家的帮助。 
 
 本指南将帮助你：
 - 设置实验室服务器和计算机
@@ -62,7 +63,7 @@ ms.locfileid: "49659627"
 
 |阶段 | 说明 | 
 |:-------|:-----|
-|[第 1 阶段：准备](prepare-mtpeval.md)| 了解在试用实验室或试验环境中部署 Microsoft 365 Defender 时需要考虑的问题： <br><br>- 利益干系人并注销 <br> - 环境注意事项 <br>- Access <br>- Azure Active Directory 设置 <br> - 配置顺序
+|[阶段 1：准备](prepare-mtpeval.md)| 了解在试用实验室或试验环境中部署 Microsoft 365 Defender 时需要考虑的问题： <br><br>- 利益干系人并注销 <br> - 环境注意事项 <br>- Access <br>- Azure Active Directory 设置 <br> - 配置顺序
 |[阶段 2：设置](setup-mtpeval.md)|  执行初始步骤以访问 Microsoft 365 安全中心，以设置 Microsoft 365 Defender 试用实验室或试验环境。 将指导你：<br><br>- 注册 Microsoft 365 E5 试用版 <br>  - 配置域<br>- 分配 Microsoft 365 E5 许可证<br>- 在门户中完成安装向导|
 |[第 3 阶段：配置&载入](config-mtpeval.md) | 配置每个 Microsoft 365 Defender 支柱和载入终结点。 将指导你：<br><br>- 配置 Microsoft Defender for Office 365<br>- 配置 Microsoft Cloud App Security<br>- 为标识配置 Microsoft Defender<br>- 配置适用于终结点的 Microsoft Defender
 

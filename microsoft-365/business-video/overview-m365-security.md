@@ -16,18 +16,19 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- okr_smb
 monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: 了解 Microsoft 365 商业版中包含的安全功能。
-ms.openlocfilehash: b32c99946db0257490283b493d104d0d11c9ec8e
-ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
+ms.openlocfilehash: 72ed57d0f6392d7475f11aebb9da700e6aef78ae
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49701596"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49928134"
 ---
 # <a name="overview-of-security"></a>安全性概述
 
@@ -50,7 +51,7 @@ Windows Defender为系统、文件和联机活动提供全面保护，防止病�
 
 Microsoft 365 商业高级版中的数据保护功能有助于确保重要数据的安全，并且只有经过授权的人员才能访问这些数据。
 
-您可以使用数据丢失防护 (DLP) 策略来识别和管理敏感信息，如社会保险或信用卡号，以便不会错误地共享。 
+您可以使用 DLP (策略) 数据丢失防护来识别和管理敏感信息，如社会保险或信用卡号，以便不会错误地共享。 
 
 Office 365 邮件加密结合了加密和访问权限功能，以帮助确保只有预期收件人才能查看邮件内容。 Office 365 邮件加密适用于 Outlook.com、Yahoo！和 Gmail 以及其他电子邮件服务。
 
@@ -58,12 +59,12 @@ Exchange Online Archiving是一种基于云的存档解决方案，与 Microsoft
 
 ## <a name="device-management"></a>设备管理
 
-Microsoft 365 商业高级版高级设备管理功能使你可以监视和控制用户可以使用已注册设备执行哪些操作。 这些功能包括条件访问、移动设备管理 (MDM) 、BitLocker 和自动更新。
+Microsoft 365 商业高级版高级设备管理功能使你可以监视和控制用户可以使用已注册的设备执行哪些操作。 这些功能包括条件访问、移动设备管理 (MDM) 、BitLocker 和自动更新。
 
-可以使用条件访问策略对某些用户和任务要求其他安全措施。 例如，可以在 MFA 中 (多重身份验证) 或阻止不支持条件访问的客户端。
+可以使用条件访问策略对某些用户和任务要求其他安全措施。 例如，你可以要求使用 MFA (多重) 或阻止不支持条件访问的客户端。
 
 借助 MDM，可帮助保护和管理用户的移动设备，如 iPhone、iPad、Android 和 Windows 手机。 你可以创建和管理设备安全策略、远程擦除设备以删除所有公司数据、将设备重置为出厂设置以及查看详细的设备报告。 
 
-你可以启用 BitLocker 加密以帮助在设备丢失或被盗时保护数据，并且允许 Windows 攻击防护提供针对勒索软件的高级保护。
+你可以启用 BitLocker 加密以帮助保护设备丢失或被盗时的数据，并且允许 Windows 攻击防护提供针对勒索软件的高级保护。
 
 你可以配置自动更新，以便将最新的安全功能和更新应用于所有用户设备。 

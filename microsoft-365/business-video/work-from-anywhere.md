@@ -16,17 +16,18 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Microsoft 365 如何帮助你从任何位置工作概述。
-ms.openlocfilehash: 07e3625b90e17a516311241a2bd6365e46e24d86
-ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
+ms.openlocfilehash: 55327fff51b67107aab7069c0036e8ded9b73cbb
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49701619"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49927774"
 ---
 # <a name="work-from-anywhere---overview"></a>随时随地工作 - 概述
 
@@ -34,11 +35,11 @@ ms.locfileid: "49701619"
 
 **专业提示：** 通过关闭个人设备上工作应用的通知，保持工作与生活平衡。
 
-使用下面的四个提示随时随地工作：下载信息图，获取从任何位置工作的[提示](https://go.microsoft.com/fwlink/?linkid=2079455)[：PDF、PowerPoint](https://go.microsoft.com/fwlink/?linkid=2079451)
+使用下面的四个提示随时随地工作：下载信息图，获取从任何位置工作的提示 [：PDF](https://go.microsoft.com/fwlink/?linkid=2079451) [、PowerPoint](https://go.microsoft.com/fwlink/?linkid=2079455)
 
 **考虑定期在家工作？**
 
-使用此模板来分析你习惯以及你工作的方式，以创建一个在过渡到家庭办公室时的工作方式。 收集材料与装饰以优化空间，并保持高效且能够执行任务。 [下载模板](https://templates.office.com/EN-US/work-from-home-checklist-TM77989015)
+使用此模板可以分析你习惯以及你工作的方式，以创建一个在过渡到家庭办公室时的工作方式。 收集材料与装饰以优化空间，并保持高效且能够执行任务。 [下载模板](https://templates.office.com/EN-US/work-from-home-checklist-TM77989015)
 
 ## <a name="install-outlook-and-keep-in-touch"></a>安装 Outlook 并保持联系
 
@@ -91,7 +92,7 @@ ms.locfileid: "49701619"
 **在浏览器中使用 Office Online**
 
 - [Microsoft 365 中的 Office Online 入门](https://support.microsoft.com/office/5622c7c9-721d-4b3d-8cb9-a7276c2470e5)
-- [Word 网页应用入门](https://support.microsoft.com/office/b406a6f9-341e-45f2-b9ac-ed85b6f7b8f6)
+- [Word 网页入门](https://support.microsoft.com/office/b406a6f9-341e-45f2-b9ac-ed85b6f7b8f6)
 - [Excel Online 入门](https://support.microsoft.com/office/63b50461-38c4-4c93-a17e-36998be0e3d0)
 - [PowerPoint 网页入门](https://support.microsoft.com/office/21360025-7eef-4173-9d7c-08281d55f64a)
 
@@ -99,10 +100,10 @@ ms.locfileid: "49701619"
 
 从笔记本电脑：
 
-- 在 Microsoft Teams中，单击应用左侧的"会议"按钮，你将看到一周中所有 :::image type="icon" source="../media/meetings-icon.png" border="false"::: 会议的列表。 找到您想要的会议，然后单击"加入"。
+- 在 Microsoft Teams中，单击应用左侧的"会议"按钮，你将看到一周的所有 :::image type="icon" source="../media/meetings-icon.png" border="false"::: 会议列表。 找到您想要的会议，然后单击"加入"。
 
 从手机：
 
 - 在会议之前和会议期间，你将在聊天列表或 Microsoft Teams 中的频道对话中看到会议通知。
 
-    可以从会议通知或会议日历 :::image type="icon" source="../media/meetings-icon.png" border="false"::: 加入
+    你可以从会议通知或会议日历 :::image type="icon" source="../media/meetings-icon.png" border="false"::: 加入

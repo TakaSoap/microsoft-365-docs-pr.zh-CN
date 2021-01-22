@@ -4,7 +4,7 @@ description: 了解与高级搜寻架构的 Azure Active Directory 服务主体�
 keywords: 高级搜寻， 威胁搜寻， 网络威胁搜寻， Microsoft 威胁防护， microsoft 365， mtp， m365， 搜索， 查询， 遥测， 架构参考， kusto， 表， 列， 数据类型， 说明， AlertInfo， 警报， 实体， 证据， 文件， IP 地址， 设备， 计算机， 用户， 帐户， 标识， AAD
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,12 +19,13 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: 42acf24ce9b941fffb1ce0ed4b67216bd8c1de47
-ms.sourcegitcommit: 4482c174e0e68e0fbbc7ad9ef6b0e78dc34ac85a
+ms.technology: m365d
+ms.openlocfilehash: 172c400df3adea70a2e2d2e37547fa39e0d3b9cf
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "49784295"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49928614"
 ---
 # <a name="aadspnsignineventsbeta"></a>AADSpnSignInEventsBeta
 
@@ -51,7 +52,7 @@ ms.locfileid: "49784295"
 | 列名称     | 数据类型 | 说明   |
 | ----- | ----- | ---- |
 | `Timestamp` | datetime      | 生成记录的日期和时间                                                                                                     |
-| `Application`          | string        | 执行所记录操作的应用程序                                                                                                   |
+| `Application`          | string        | 执行录制的操作的应用程序                                                                                                   |
 | `ApplicationId`        | string        | 应用程序的唯一标识符                                                                                                           |
 | `IsManagedIdentity`    | boolean       | 指示登录是否由托管标识启动                                                                               |
 | `ErrorCode`            | int        | 包含登录错误时的错误代码。 若要查找特定错误代码的说明，请访问 <https://aka.ms/AADsigninsErrorCodes> 。 |

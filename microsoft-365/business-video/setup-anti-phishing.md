@@ -16,20 +16,21 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- okr_smb
 monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: 了解如何设置防钓鱼保护。
-ms.openlocfilehash: f3a1399c8a6a51c7b14af7ffea8fbaea39cd1541
-ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
+ms.openlocfilehash: bcb6b8bac316b4b74c505656cb9a93e7a87e0830
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49701633"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49927870"
 ---
-# <a name="set-up-anti-phishing"></a>设置防钓鱼
+# <a name="set-up-anti-phishing"></a>设置防网络钓鱼
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWvt9r?autoplay=false]
 
@@ -44,9 +45,9 @@ ms.locfileid: "49701633"
 1. 转到 **"操作**"，打开下拉列表"如果电子邮件是由模拟 **用户** 发送的，然后选择您想要的操作"。
 
     打开下拉列表 如果 **电子邮件是由** 模拟域发送的，然后选择您想要的操作。
-1. 选择 **"打开模拟安全提示"。** 选择在系统检测到模拟的用户、域或异常字符时，是否应该为用户提供提示。 选择“**保存**”。
+1. 选择 **"打开模拟安全提示"。** 选择在系统检测到模拟的用户、域或异常字符时，是否应该为用户提供提示。 选择 **“保存”**。
 1. 选择 **邮箱智能** 并验证其是否打开。 这使您的电子邮件通过学习使用模式提高效率。
 1. 选择 **"添加受信任的发件人和域"。** 你可以在此处添加不应分类为模拟的电子邮件地址或域。
-1. Choose **Review your settings，** make sure everything is correct， select **Save，** then **Close.**
+1. 选择 **"查看设置**"，确保一切正确，选择" **保存"，** 然后 **关闭**。
 
     贵组织现在可以更好地防范网络钓鱼威胁。

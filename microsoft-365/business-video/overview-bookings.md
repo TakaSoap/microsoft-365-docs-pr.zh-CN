@@ -16,17 +16,18 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: 了解 Microsoft Bookings。
-ms.openlocfilehash: a325dbb12d7442317ef5c3657ba4ab249d10ffe1
-ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
+ms.openlocfilehash: 67ed948793b4d43f92b376d7e299564f5d734550
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49701597"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49928122"
 ---
 # <a name="overview-of-microsoft-bookings"></a>Microsoft Bookings 概述
 

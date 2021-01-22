@@ -1,10 +1,10 @@
 ---
 title: 高级搜寻架构中的 CloudAppEvents 表
 description: 了解高级搜寻架构的 CloudAppEvents 表中的云应用和服务中的事件
-keywords: 高级搜寻、威胁搜寻、网络威胁搜寻、microsoft 威胁防护、microsoft 365、mtp、m365、搜索、查询、遥测、架构参考、kusto、表、列、数据类型、说明、CloudAppEvents、云应用安全性、MCAS
+keywords: 高级搜寻， 威胁搜寻， 网络威胁搜寻， Microsoft 威胁防护， microsoft 365， mtp， m365， 搜索， 查询， 遥测， 架构参考， kusto， 表， 列， 数据类型， 说明， CloudAppEvents， Cloud App Security， MCAS
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,12 +19,13 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: 3cb4498e5db6a7752e99b8c677bc8936d2c975ef
-ms.sourcegitcommit: e7bf23df4852b78912229d1d38ec475223597f34
+ms.technology: m365d
+ms.openlocfilehash: 021a8210bbe5886021e980b33ade0b9e2ded7b5b
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "49087760"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49928446"
 ---
 # <a name="cloudappevents"></a>CloudAppEvents
 
@@ -36,9 +37,9 @@ ms.locfileid: "49087760"
 
 [!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
-当前在预览中， `CloudAppEvents` [高级搜寻](advanced-hunting-overview.md) 架构中的表格包含有关各种云应用和服务（尤其是 Microsoft 团队和 Exchange Online）中的活动的信息。 使用此参考来构建从此表返回信息的查询。
+目前提供预览版，高级搜寻架构中的表包含有关各种云应用和服务（特别是 Microsoft Teams 和 `CloudAppEvents` Exchange Online）中的活动的信息。 [](advanced-hunting-overview.md) 使用此参考来构建从此表返回信息的查询。
 
-此表将展开以包含 Microsoft 云应用安全监视的更多活动。 最终，此表将包含当前存储在 [AppFileEvents](advanced-hunting-appfileevents-table.md) 表中的文件活动。 当更多数据移动到此表中时，Microsoft 将提供其他指导。
+此表将展开，以包含受 Microsoft Cloud App Security 监视的更多活动。 最后，此表将包含当前存储在 [AppFileEvents 表中的文件](advanced-hunting-appfileevents-table.md) 活动。 随着更多数据移至此表，Microsoft 将提供其他指南。
 
 有关高级搜寻架构中其他表的信息，请[参阅高级搜寻参考](advanced-hunting-schema-tables.md)。
 
@@ -46,26 +47,26 @@ ms.locfileid: "49087760"
 |-------------|-----------|-------------|
 | `Timestamp` | datetime | 记录事件的日期和时间 |
 | `ActionType` | string | 触发事件的活动类型 |
-| `Application` | string | 执行录制操作的应用程序 |
+| `Application` | string | 执行录制的操作的应用程序 |
 | `ApplicationId` | string | 应用程序的唯一标识符 |
-| `AccountObjectId` | string | Azure Active Directory 中的帐户的唯一标识符 |
-| `AccountDisplayName` | string | 通讯簿中显示的帐户用户的名称。 通常是给定的或名的名称、中间初始名称和姓氏的组合。 |
+| `AccountObjectId` | string | Azure Active Directory 中帐户的唯一标识符 |
+| `AccountDisplayName` | string | 通讯簿中显示的帐户用户的名称。 通常是给定或名字、中间初始和姓氏或姓氏的组合。 |
 | `IsAdminOperation` | string | 指示活动是否由管理员执行 |
-| `DeviceType` | string | 基于用途和功能的设备类型，如 "网络设备"、"工作站"、"服务器"、"移动"、"游戏控制台" 或 "打印机" | 
-| `OSPlatform` | string | 设备上运行的操作系统的平台。 此列指示特定操作系统，包括同一系列内的变体，如 Windows 10 和 Windows 7。 |
-| `IPAddress` | string | 分配给终结点的 IP 地址，并在相关的网络通信过程中使用 |
-| `IsAnonymousProxy` | string | 指示 IP 地址是否属于已知的匿名代理 |
-| `CountryCode` | string | 指示客户端 IP 地址所在国家/地区的两个字母的代码 geolocated |
-| `City` | string | 客户端 IP 地址为 "geolocated" 的城市 |
-| `Isp` | string | Internet 服务提供商 (与 IP 地址关联的 ISP)  |
-| `UserAgent` | string | 来自 web 浏览器或其他客户端应用程序的用户代理信息 |
+| `DeviceType` | string | 基于用途和功能的设备类型，例如"网络设备"、"工作站"、"服务器"、"移动"、"游戏控制台"或"打印机" | 
+| `OSPlatform` | string | 在设备上运行的操作系统的平台。 此列指示特定操作系统，包括同一系列中的变体，如 Windows 10 和 Windows 7。 |
+| `IPAddress` | string | 分配给终结点的 IP 地址，在相关的网络通信期间使用 |
+| `IsAnonymousProxy` | string | 指示 IP 地址是否属于已知匿名代理 |
+| `CountryCode` | string | 指示客户端 IP 地址已异地分配的国家/地区两个字母的代码 |
+| `City` | string | 客户端 IP 地址已异地分配的城市 |
+| `Isp` | string | 与 IP 地址 (ISP) 服务提供商 |
+| `UserAgent` | string | 来自 Web 浏览器或其他客户端应用程序的用户代理信息 |
 | `ActivityType` | string | 触发事件的活动类型 |
-| `ActivityObjects` | string | 录制的活动中涉及的对象（如文件或文件夹）的列表 |
-| `ObjectName` | string | 将录制的操作应用于的对象的名称 |
-| `ObjectType` | string | 将录制的操作应用于的对象的类型（如文件或文件夹） |
-| `ObjectId` | string | 应用录制的操作的对象的唯一标识符 |
+| `ActivityObjects` | string | 记录的活动所涉及的对象列表，如文件或文件夹 |
+| `ObjectName` | string | 记录的操作应用于的对象的名称 |
+| `ObjectType` | string | 记录的操作应用于的对象类型，如文件或文件夹 |
+| `ObjectId` | string | 记录的操作应用于的对象的唯一标识符 |
 | `ReportId` | string | 事件的唯一标识符 |
-| `RawEventData` | string | 来自 JSON 格式的源应用程序或服务的原始事件信息 |
+| `RawEventData` | string | 来自源应用程序或服务的原始事件信息，格式为 JSON |
 | `AdditionalFields` | string | 有关实体或事件的其他信息 |
 
 ## <a name="related-topics"></a>相关主题

@@ -16,18 +16,19 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- okr_smb
 monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: 了解如何购买新的 Microsoft 365 商业版许可证。
-ms.openlocfilehash: a4bc66188b064227821ddc66cc764c83caad5f64
-ms.sourcegitcommit: 4482c174e0e68e0fbbc7ad9ef6b0e78dc34ac85a
+ms.openlocfilehash: 7cec05256cb67c82caf367c10ac10546cb63b369
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "49784237"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49927450"
 ---
 # <a name="buy-microsoft-365-licenses"></a>购买 Microsoft 365 许可证
 
@@ -40,7 +41,7 @@ ms.locfileid: "49784237"
 1. 在 Microsoft 365 管理中心中 **，选择"** 计费 **"，选择"你的产品**"，然后选择你的订阅。
 1. 选择 **"购买许可证"。**
 1. 输入要购买的许可证数量。
-1. 选择“**保存**”。
+1. 选择 **“保存”**。
 1. 然后关闭窗口。
 1. 新许可证将添加到订阅中。
 1. 若要分配新许可证，请选择"分配 **许可证"。**

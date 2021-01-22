@@ -4,7 +4,7 @@ description: 在高级搜寻架构的 EmailEvents 表中了解与 Microsoft 365 
 keywords: 高级搜寻， 威胁搜寻， 网络威胁搜寻， Microsoft 威胁防护， microsoft 365， mtp， m365， 搜索， 查询， 遥测， 架构参考， kusto， 表， 列， 数据类型， 说明， EmailEvents， 网络消息 ID， 发件人， 收件人， 附件 ID， 附件名称， 恶意软件裁定， 网络钓鱼裁定， 附件计数， 链接计数， url 计数
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,12 +19,13 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: 6dbd7473074212c6bc257e683288040056426048
-ms.sourcegitcommit: ec293978e951b09903b79e6642aa587824935e0c
+ms.technology: m365d
+ms.openlocfilehash: 48a0fe53cb92214d616887741c0c260edf1653c2
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "49780268"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49928982"
 ---
 # <a name="emailevents"></a>EmailEvents
 
@@ -77,7 +78,7 @@ ms.locfileid: "49780268"
 | `UserLevelPolicy` | string | 触发对电子邮件采取的操作最终用户邮箱策略 |
 | `Connectors` | string | 定义组织邮件流和电子邮件路由方式的自定义说明 |
 | `SenderDisplayName` | string | 通讯簿中显示的发件人姓名，通常是给定或名字、中间名首字母和姓氏或姓氏的组合 |
-| `SenderObjectId` | string |Azure AD 中发件人帐户的唯一标识符 |
+| `SenderObjectId` | string |Azure AD 中发件人的帐户的唯一标识符 |
 | `ThreatTypes` | string | 关于电子邮件是否包含恶意软件、网络钓鱼或其他威胁的电子邮件筛选堆栈裁定 |
 | `ThreatNames` | string |找到的恶意软件或其他威胁的检测名称 |
 | `DetectionMethods` | string | 用于检测电子邮件中的恶意软件、网络钓鱼或其他威胁的方法 |

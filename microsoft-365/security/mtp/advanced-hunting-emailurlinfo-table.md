@@ -1,10 +1,10 @@
 ---
 title: 高级搜寻架构中的 EmailUrlInfo 表
 description: 在高级搜寻架构的 EmailUrlInfo 表中，了解 URL 或链接信息
-keywords: 高级搜寻、威胁搜寻、网络威胁搜寻、microsoft 威胁防护、microsoft 365、mtp、m365、搜索、查询、遥测、架构参考、kusto、表、列、数据类型、说明、EmailUrlInfo、网络邮件 id、url、链接
+keywords: 高级搜寻， 威胁搜寻， 网络威胁搜寻， Microsoft 威胁防护， microsoft 365， mtp， m365， 搜索， 查询， 遥测， 架构参考， kusto， 表， 列， 数据类型， 说明， EmailUrlInfo， 网络消息 ID， url， 链接
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,12 +19,13 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: 6684f2d56cb30c909cae57e7b3e6593377449f6b
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.technology: m365d
+ms.openlocfilehash: 56d35e2812d895215cbe76deb6791695380abc50
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48842556"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49929711"
 ---
 # <a name="emailurlinfo"></a>EmailUrlInfo
 
@@ -34,7 +35,7 @@ ms.locfileid: "48842556"
 **适用于：**
 - Microsoft 365 Defender
 
-`EmailUrlInfo`[高级搜寻](advanced-hunting-overview.md)架构中的表包含有关电子邮件和附件（由 Microsoft Defender for Office 365 处理）上的 url 的信息。 使用此参考来构建从此表返回信息的查询。
+高级 `EmailUrlInfo` 搜寻架构 [中的](advanced-hunting-overview.md) 表包含有关 Microsoft Defender for Office 365 处理的电子邮件和附件的 URL 的信息。 使用此参考来构建从此表返回信息的查询。
 
 有关高级搜寻架构中其他表的信息，请[参阅高级搜寻参考](advanced-hunting-schema-tables.md)。
 

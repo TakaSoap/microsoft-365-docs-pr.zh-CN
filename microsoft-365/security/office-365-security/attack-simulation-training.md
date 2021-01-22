@@ -5,18 +5,19 @@ author: chrisda
 manager: dansimp
 audience: ITPro
 ms.topic: how-to
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 description: 管理员可以了解如何使用 Microsoft Defender for Office 365 中的攻击模拟培训模拟网络钓鱼攻击并培训其用户防钓鱼。
-ms.openlocfilehash: 56ee8b7c11187ee6883bffc9b41961d2783e1ff4
-ms.sourcegitcommit: 8849dd6f80217c29f427c7f008d918f30c792240
+ms.technology: mdo
+ms.openlocfilehash: f22fe8633d8ffa8856f851369739a0f12364342b
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49877148"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49929198"
 ---
 # <a name="simulate-a-phishing-attack"></a>模拟网络钓鱼攻击
 
@@ -31,7 +32,7 @@ Microsoft Defender for Office 365 中的攻击模拟培训允许你在组织中�
 ![在 Microsoft 365 安全中心启动模拟按钮](../../media/attack-sim-preview-launch.png)
 
 > [!NOTE]
-> 在模拟创建期间的任何时间点，你都可以保存并关闭，以稍后继续配置模拟。
+> 在模拟创建过程中的任何时间点，你都可以保存并关闭，以稍后继续配置模拟。
 
 ## <a name="selecting-a-social-engineering-technique"></a>选择社交工程技术
 
@@ -57,9 +58,9 @@ Microsoft Defender for Office 365 中的攻击模拟培训允许你在组织中�
 
 - **单击率** 计算单击此负载的人数。
 - **根据 Microsoft** Defender for Office 365 客户有效负载的历史数据，预测受此负载危害的百分比。
-- **启动的** 模拟计算此有效负载在其他模拟中使用的次数。
-- **复杂性**（通过筛选器 **提供**）基于有效负载中的指示器数量计算，这些指示器可提示目标受到攻击。 指标越多，复杂性越低。
-- **源**（通过 **筛选器提供**）指示有效负载是在租户上创建的，还是 Microsoft 预先存在的有效负载目录的一 (全局) 。
+- **模拟启动** 计算此有效负载在其他模拟中使用的次数。
+- **复杂性**（通过筛选器 **提供**）根据有效负载中的指示器数量进行计算，这些指示器可指示攻击中的目标。 指示器越多，复杂性越低。
+- **源**（通过 **筛选器提供**）指示有效负载是在你的租户上创建的，还是 Microsoft 预先存在的有效负载目录的一 (全局) 。
 
 ![Microsoft 365 安全中心攻击模拟培训内选定的有效负载](../../media/attack-sim-preview-select-payload.png)
 
@@ -94,7 +95,7 @@ Microsoft Defender for Office 365 中的攻击模拟培训允许你在组织中�
 
 ## <a name="launch-details-and-review"></a>启动详细信息和查看
 
-现在，所有内容已配置完成，你可以立即启动此模拟或安排在以后日期进行。 你还需要选择何时结束此模拟。 在选定时间后，我们将停止捕获此模拟的交互。
+现在，所有内容已配置完成，你可以立即启动此模拟，或安排在以后日期进行。 你还需要选择何时结束此模拟。 在选定时间后，我们将停止捕获此模拟的交互。
 
 **启用区域感知时区传递** ，以根据员工的区域在工作时间向员工传递模拟攻击消息。
 

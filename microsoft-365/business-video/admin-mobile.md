@@ -16,17 +16,18 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: 了解如何在手机上安装 Microsoft 365 管理移动应用。
-ms.openlocfilehash: cb69dbe02e91ab4eb29b14ac5e71e91bed6cdb88
-ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
+ms.openlocfilehash: 110e691858537a90a7bee03b4318a5f415b3e83f
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49701611"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49927534"
 ---
 # <a name="install-the-microsoft-365-admin-mobile-app-on-your-phone"></a>在手机上安装 Microsoft 365 管理移动应用
 
@@ -36,7 +37,7 @@ ms.locfileid: "49701611"
 
 ## <a name="try-it"></a>试一试！
 
-1. 若要获取 Microsoft 365 管理移动应用，在设备的应用商店中搜索  **Microsoft 365**  管理员并安装它。
+1. 若要获取 Microsoft 365 管理移动应用，请在你的设备的应用商店中搜索  **Microsoft 365**  管理员并安装它。
 2. 使用全局管理员电子邮件地址登录，并查看仪表板以查看服务运行状况、监视用户许可证以及查看消息和服务请求。
 3. 以下是你可以对应用执行一些常见任务：
 

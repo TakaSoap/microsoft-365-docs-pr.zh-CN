@@ -15,18 +15,19 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- okr_smb
 monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: 了解如何使用 Mover 将 Google 文件迁移到 Microsoft 365 商业版。
-ms.openlocfilehash: a6f9dbf7803cb552c23b6c6abb13d13d6f3eda5d
-ms.sourcegitcommit: 9833f95ab6ab95aea20d68a277246dca2223f93d
+ms.openlocfilehash: 99040e4846aba084f40536e88f0aed70998f48be
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "49794580"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49928194"
 ---
 # <a name="migrate-google-files-to-microsoft-365-for-business"></a>将 Google 文件迁移到 Microsoft 365 商业版 
 
@@ -39,7 +40,7 @@ ms.locfileid: "49794580"
 
 ## <a name="before-you-start"></a>准备工作
 
-所有用户都应已登录 Microsoft 365 商业版并设置其 OneDrive for Business。 为此，请转到office.com，使用[](https://office.com)Microsft 365 商业版凭据登录，然后选择 OneDrive。
+所有用户都应已登录 Microsoft 365 商业版并设置其 OneDrive for Business。 为此，请转到 [office.com，使用](https://office.com)Microsft 365 商业版凭据登录，然后选择 OneDrive。
 
 ## <a name="try-it"></a>试一试！
 
@@ -61,7 +62,7 @@ ms.locfileid: "49794580"
 1. 刷新浏览器，然后选择 **Mover** 应用。
 1. 向下滚动并选择通用导航链接。
 1. Select **Authorize New Connector，** locate **G Suite (Admin) ，** and choose **Authorize**.
-1. 如果需要 **，请** 更改显示名称，然后选择"授权 **"。**
+1. 如果需要 **，请更改** 显示名称，然后选择"授权 **"。**
 1. 选择 Google 管理员帐户，查看权限，然后选择"**允许"。**
 
     Mover 显示发现的团队驱动器数和用户驱动器数。 
@@ -74,7 +75,7 @@ ms.locfileid: "49794580"
 1. 返回到 Mover 应用，更改显示名称，如果需要，请选择"授权 **"，然后选择** Microsoft 管理员帐户。
 
     Mover 将通知你发现的 SharePoint Online (或 SPO) 用户的数量。
-1. 选择 **"继续迁移设置**"， **选择"添加用户"，** 然后 **自动发现和添加用户**。
+1. 选择 **"继续迁移设置**"， **选择"添加用户"，** 然后 **自动发现并添加用户**。
 
     Mover 应用将尝试将驱动器从 Google 中的源路径映射到 Microsoft 365 中的目标路径。 
 

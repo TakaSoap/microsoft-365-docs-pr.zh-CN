@@ -8,7 +8,6 @@ manager: dansimp
 audience: Admin
 ms.topic: conceptual
 ms.date: ''
-ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -19,16 +18,18 @@ ms.collection:
 - m365solution-overview
 - m365solution-protecthve
 description: 管理员可以了解如何提升安全设置，并使用其 Microsoft 365 组织中优先级帐户的报告、警报和调查。
-ms.openlocfilehash: 8a1d92ef12070a722a1b618bf51ab6d8130f49c0
-ms.sourcegitcommit: 31be333178b934c519f419656f4c3a53e1beffdc
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: 10890a5fe797439de0bfc28bf28a216318016908
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "49881792"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49929302"
 ---
 # <a name="security-recommendations-for-priority-accounts-in-microsoft-365"></a>Microsoft 365 中优先级帐户的安全建议
 
-并非所有用户帐户都有权访问相同的公司信息。 某些帐户有权访问敏感信息，例如财务数据、产品开发信息、合作伙伴对关键生成系统的访问权限等。 如果泄露，有权访问高度机密信息的帐户将构成一个严重的威胁。 我们将这些类型的帐户称为 _优先级帐户_。 优先级帐户 (但不限于) CEO、CPA、COS、基础结构管理员帐户、生成系统帐户等。
+并非所有用户帐户都有权访问相同的公司信息。 某些帐户有权访问敏感信息，例如财务数据、产品开发信息、合作伙伴对关键生成系统的访问权限等。 如果泄露，有权访问高度机密信息的帐户将构成一个严重的威胁。 我们将这些类型的帐户称为 _优先级帐户_。 优先级帐户 (但不限于) CEO、CCEC、COS、基础结构管理员帐户、生成系统帐户等。
 
 对于攻击者，为普通用户或未知用户转换随机网络的普通网络钓鱼攻击效率低下。 另一方面，_以_ 优先级帐户为目标的网络钓鱼或钓鱼攻击对攻击者来说非常具有攻击性。 因此，优先级帐户需要比普通保护更强大的保护来帮助防止帐户泄露。
 
@@ -69,19 +70,19 @@ Microsoft 365 和 Microsoft Defender for Office 365 包含多个关键功能，�
 
 例如，如果邮件用于优先级帐户，则不应将分类为垃圾邮件的邮件发送到"垃圾邮件"文件夹，而应隔离这些相同的邮件。
 
-可以使用预设安全策略中的"严格"配置文件为优先级帐户实施此严格方法。
+可以通过在预设安全策略中使用"严格"配置文件，为优先级帐户实施此严格的方法。
 
 预设安全策略是一个方便且集中的位置，用于将建议的严格策略设置应用于 EOP 和 Defender for Office 365 的所有保护。 有关详细信息，请参阅 [EOP 和 Microsoft Defender for Office 365](preset-security-policies.md)中的预设安全策略。
 
-有关严格策略设置与默认和标准策略设置之间如何不同的详细信息，请参阅 EOP 和 [Microsoft Defender for Office 365 安全推荐设置](recommended-settings-for-eop-and-office365-atp.md)。
+有关严格策略设置与默认和标准策略设置的区别的详细信息，请参阅 EOP 和 [Microsoft Defender for Office 365 安全性的推荐设置](recommended-settings-for-eop-and-office365-atp.md)。
 
 ## <a name="apply-user-tags-to-priority-accounts"></a>将用户标记应用于优先级帐户
 
-Microsoft Defender for Office 365 计划 2 (中的用户标记作为 Microsoft 365 E5 或附加订阅) 的一部分，是一种在报告和事件调查中快速标识特定用户或用户组并进行分类的方法。
+作为 Microsoft 365 E5 或附加订阅) 的一部分，Microsoft Defender for Office 365 计划 2 (中的用户标记是一种在报告和事件调查中快速识别和分类特定用户或用户组的方法。
 
 **优先级帐户** 是一种内置用户标记 (称为系统标记) ，可用于标识涉及优先级帐户的事件和警报。 有关优先级帐户 **详细信息，请参阅** 管理和 [监视优先级帐户](https://docs.microsoft.com/microsoft-365/admin/setup/priority-accounts)。
 
-您还可以创建自定义标记以进一步标识和分类优先级帐户。 有关详细信息，请参阅用户 [标记](user-tags.md)。 请注意，可以在自定义 **用户标记 (** 界面) 系统标记管理优先级帐户。
+您还可以创建自定义标记以进一步标识优先级帐户并进行分类。 有关详细信息，请参阅用户 [标记](user-tags.md)。 请注意，可以在自定义 **用户标记 (** 界面) 系统标记管理优先级帐户。
 
 ## <a name="monitor-priority-accounts-in-alerts-reports-and-detections"></a>监视警报、报告和检测中的优先级帐户
 
@@ -93,11 +94,11 @@ Microsoft Defender for Office 365 计划 2 (中的用户标记作为 Microsoft 3
 
 |功能|说明|
 |---|---|
-|警报|受影响用户的用户标记在安全与合规中心的"查看警报"页上可见&筛选器。 有关详细信息，请参阅"[查看警报"。](https://docs.microsoft.com/microsoft-365/compliance/alert-policies#viewing-alerts)|
+|警报|受影响用户的用户标记在安全与合规中心的"查看警报"页上可见并&筛选器。 有关详细信息，请参阅"[查看警报"。](https://docs.microsoft.com/microsoft-365/compliance/alert-policies#viewing-alerts)|
 |威胁资源管理器 <p> 实时检测|在威胁资源管理器 **(** Microsoft Defender for Office 365 计划 2) 或实时检测 **(** Microsoft Defender for Office 365 计划 1) 中，用户标记显示在电子邮件网格视图和电子邮件详细信息飞出中。 用户标记也可作为可筛选属性使用。 有关详细信息，请参阅威胁  [资源管理器中的标记](threat-explorer.md#tags-in-threat-explorer)。|
 |市场活动视图|用户标记是 Microsoft Defender for Office 365 计划 2 的"市场活动视图"中的许多可筛选属性之一。 有关详细信息，请参阅"[宣传活动视图"。](campaigns.md)|
 |威胁防护状态报告|在威胁防护状态报告中几乎所有视图和详细信息表中，你可以按优先级帐户 **筛选结果**。 有关详细信息，请参阅 [威胁防护状态报告](view-email-security-reports.md#threat-protection-status-report)。|
-|优先级帐户的电子邮件问题报告|EAC **管理中心** 中的"优先级帐户的电子邮件问题" (EAC) 包含有关优先级帐户的未送达和延迟 **邮件的信息**。 有关详细信息，请参阅"优先级[帐户的电子邮件问题报告"。](https://docs.microsoft.com/exchange/monitoring/mail-flow-reports/mfr-email-issues-for-priority-accounts-report)|
+|优先级帐户的电子邮件问题报告|EAC **管理中心** 中的"优先级帐户的电子邮件问题" (EAC) 包含有关优先级帐户的未送达和延迟 **邮件的信息**。 有关详细信息，请参阅"优先级 [帐户的电子邮件问题"报告](https://docs.microsoft.com/exchange/monitoring/mail-flow-reports/mfr-email-issues-for-priority-accounts-report)。|
 |
 
 ## <a name="train-users"></a>培训用户
@@ -112,7 +113,7 @@ Microsoft 365 提供以下资源来帮助通知组织用户：
 
 ****
 
-|概念|资源|Description|
+|概念|资源|说明|
 |---|---|---|
 |Microsoft 365|[可自定义的学习路径](https://docs.microsoft.com/office365/customlearning/)|这些资源可帮助您将组织中用户的培训整合在一起。|
 |Microsoft 365 安全中心|[学习模块：使用 Microsoft 365 的内置智能安全性保护组织](https://docs.microsoft.com/learn/modules/security-with-microsoft-365)|此模块使您能够描述 Microsoft 365 安全功能如何协同工作，并阐明这些安全功能的好处。|

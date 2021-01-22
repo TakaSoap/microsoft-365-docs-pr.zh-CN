@@ -1,10 +1,10 @@
 ---
-title: 'Microsoft 365 Defender 的高级搜寻中的 FileProfile ( # A1 函数'
-description: '了解如何使用 FileProfile ( # A1 丰富有关高级搜索查询结果中的文件的信息'
-keywords: 高级搜寻、威胁搜寻、网络威胁搜寻、microsoft 威胁防护、microsoft 365、mtp、m365、搜索、查询、遥测、架构参考、kusto、FileProfile、文件配置文件、函数、扩充
+title: Microsoft 365 Defender 高级搜寻中的 FileProfile () 函数
+description: 了解如何使用 FileProfile () 丰富有关高级搜寻查询结果中的文件的信息
+keywords: 高级搜寻， 威胁搜寻， 网络威胁搜寻， Microsoft 威胁防护， microsoft 365， mtp， m365， 搜索， 查询， 遥测， 架构参考， kusto， FileProfile， 文件配置文件， 函数， 扩充
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,12 +19,13 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: 31959ed146df52aa6568f7aa60617b74ab8dd4db
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.technology: m365d
+ms.openlocfilehash: 68196f126ac470088d7ba5e2923accc492d8764c
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48847448"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49929546"
 ---
 # <a name="fileprofile"></a>FileProfile()
 
@@ -34,25 +35,25 @@ ms.locfileid: "48847448"
 **适用于：**
 - Microsoft 365 Defender
 
-`FileProfile()`函数是[高级](advanced-hunting-overview.md)搜索中的一个扩充函数，可将以下数据添加到查询找到的文件中。
+该 `FileProfile()` 函数是高级搜寻中的扩充 [函数](advanced-hunting-overview.md) ，它将以下数据添加到查询找到的文件。
 
 | 列 | 数据类型 | 说明 |
 |------------|-------------|-------------|
 | SHA1 | string | 录制操作所应用到的文件的 SHA-1 |
-| SHA256 | string | 将所录制操作应用于的文件的 SHA-256 |
-| MD5 | string | 将录制的操作应用于的文件的 MD5 哈希值 |
+| SHA256 | string | 已记录操作应用于的文件的 SHA-256 |
+| MD5 | string | 记录的操作应用到的文件的 MD5 哈希 |
 | FileSize | int | 文件大小（以字节为单位） |
-| GlobalPrevalence | int | 由 Microsoft 全局监视的实体的实例数 |
-| GlobalFirstSeen | datetime | Microsoft 全球首次观测实体的日期和时间 |
-| GlobalLastSeen | datetime | 上次 Microsoft 全局观察实体的日期和时间 |
-| 签字 | string | 有关文件签名者的信息 |
-| 颁发者 | string | 有关颁发证书颁发机构 (CA) 的信息 |
+| GlobalPrevalence | int | Microsoft 全局观察到的实体实例数 |
+| GlobalFirstSeen | datetime | Microsoft 全局首次观察到实体的日期和时间 |
+| GlobalLastSeen | datetime | Microsoft 全局上次观测到实体的日期和时间 |
+| 签名者 | string | 有关文件签署人的信息 |
+| 颁发者 | string | 有关 CA 证书颁发机构 (的信息)  |
 | SignerHash | string | 标识签名者的唯一哈希值 |
 | IsCertificateValid | boolean | 用于对文件进行签名的证书是否有效 |
-| IsRootSignerMicrosoft | boolean | 指示根证书的签名者是否为 Microsoft |
-| IsExecutable | boolean | 文件是否为可移植可执行文件 (PE) 文件 |
-| ThreatName | string | 发现的任何恶意软件或其他威胁的检测名称 |
-| Publisher | string | 发布文件的组织的名称 |
+| IsRootSignerMicrosoft | boolean | 指示根证书的签名者是否是 Microsoft |
+| IsExecutable | boolean | 文件是否是可移植可执行 (PE) 文件 |
+| ThreatName | string | 找到的任何恶意软件或其他威胁的检测名称 |
+| Publisher | string | 发布该文件的组织的名称 |
 | SoftwareName | string | 软件产品的名称 |
 
 ## <a name="syntax"></a>语法
@@ -63,12 +64,12 @@ invoke FileProfile(x,y)
 
 ## <a name="arguments"></a>参数
 
-- **x** —要使用的文件 ID 列： `SHA1` 、 `SHA256` 、 `InitiatingProcessSHA1` 、 `InitiatingProcessSHA256` 或; `SHA1` 如果未指定，则使用函数
-- **y** -限制为要丰富的记录数，1-1000;函数使用100（如果未指定）
+- **x**—要使用的文件 ID 列：、、 `SHA1` `SHA256` `InitiatingProcessSHA1` 或 `InitiatingProcessSHA256` ;函数（ `SHA1` 如果未指定）
+- **y**— 限制要扩充的记录数，1-1000;函数使用 100（如果未指定）
 
 ## <a name="examples"></a>示例
 
-### <a name="project-only-the-sha1-column-and-enrich-it"></a>仅投影 SHA1 列并浓缩它
+### <a name="project-only-the-sha1-column-and-enrich-it"></a>仅项目 SHA1 列并扩充它
 
 ```kusto
 DeviceFileEvents
@@ -78,7 +79,7 @@ DeviceFileEvents
 | invoke FileProfile()
 ```
 
-### <a name="enrich-the-first-500-records-and-list-low-prevalence-files"></a>浓缩前500条记录并列出低传播文件
+### <a name="enrich-the-first-500-records-and-list-low-prevalence-files"></a>丰富前 500 条记录并列出低程度文件
 
 ```kusto
 DeviceFileEvents

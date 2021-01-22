@@ -16,17 +16,18 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: 了解可在 Microsoft 365 商业版中存储文件的位置。
-ms.openlocfilehash: d0a1b90b35b2d186c8278ead274cbf5f24e98ecd
-ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
+ms.openlocfilehash: 4f9ce18ca86a59e615426b994ef440279a78990a
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49701867"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49927798"
 ---
 # <a name="where-to-store-files"></a>文件存储位置
 

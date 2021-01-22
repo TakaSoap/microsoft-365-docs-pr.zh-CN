@@ -16,18 +16,19 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- okr_smb
 monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: 了解如何在 Microsoft 365 商业版中重置用户密码。
-ms.openlocfilehash: ea6ff03a75c68c13ae27befd0f4eb2ac6c4e4a3e
-ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
+ms.openlocfilehash: 07752229e30c2a15ad1ece120a07b947bbe9c895
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49701591"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49928088"
 ---
 # <a name="reset-passwords-for-your-users"></a>重置用户密码
 

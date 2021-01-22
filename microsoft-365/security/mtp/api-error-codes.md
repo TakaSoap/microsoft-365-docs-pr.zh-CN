@@ -3,7 +3,7 @@ title: 常见的 Microsoft 365 Defender REST API 错误代码
 description: 了解常见的 Microsoft 365 Defender REST API 错误代码
 keywords: api， 错误， 代码， 常见错误， mtp， api 错误代码
 search.product: eADQiWindows 10XVcnh
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,12 +19,13 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 0df741efb7555d587a6033acc23716e93f542d5e
-ms.sourcegitcommit: d6b1da2e12d55f69e4353289e90f5ae2f60066d0
+ms.technology: m365d
+ms.openlocfilehash: 15eabc8ff28e7cc0313e2a1cb701403de0eab120
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "49719210"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49928386"
 ---
 # <a name="common-microsoft-365-defender-rest-api-error-codes"></a>常见的 Microsoft 365 Defender REST API 错误代码
 
@@ -41,7 +42,7 @@ ms.locfileid: "49719210"
 
 ## <a name="error-codes"></a>错误代码
 
-错误代码 | HTTP 状态代码 | 消息
+错误代码 | HTTP 状态代码 | 邮件
 -|-|-
 BadRequest | BadRequest (400)  | 常规错误请求错误消息。
 ODataError | BadRequest (400)  | 无效的 OData URI 查询 \<the specific error is specified\> 。
@@ -56,9 +57,9 @@ MissingRequiredParameter | BadRequest (400)  | 参数 \<the missing parameter\> 
 OsPlatformNotSupported | BadRequest (400)  | 此操作 \<the client OS Platform\> 不支持 OS 平台。
 ClientVersionNotSupported | BadRequest (400)  | \<The requested action\> 在客户端版本及 \<supported client version\> 以上版本上受支持。
 未经授权 (Unauthorized) | 未授权 (401)  | 未经授权 (Unauthorized) <br /><br />*注意：通常是由无效或过期的授权标头导致的。*
-禁止访问 (Forbidden) | 禁止使用 (403)  | 禁止访问 (Forbidden) <br /><br />*注意：有效的令牌，但操作权限不足*。
-DisabledFeature | 禁止使用 (403)  | 租户功能未启用。
-DisallowedOperation | 禁止使用 (403)  | \<the disallowed operation and the reason\>.
+禁止访问 (Forbidden) | 禁止 (403)  | 禁止访问 (Forbidden) <br /><br />*注意：有效的令牌，但操作权限不足*。
+DisabledFeature | 禁止 (403)  | 租户功能未启用。
+DisallowedOperation | 禁止 (403)  | \<the disallowed operation and the reason\>.
 NotFound | 找不到 (404)  | "未找到常规"错误消息。
 ResourceNotFound | 找不到 (404)  | 未找到 \<the requested resource\> 资源。
 InternalServerError | 内部服务器错误 (500)  | *注意：无错误消息，重试该操作或联系 Microsoft（如果未解决）*

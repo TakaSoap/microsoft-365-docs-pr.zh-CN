@@ -3,7 +3,7 @@ title: 其他安全和威胁防护 API
 description: 查看与 Microsoft 安全和威胁防护产品相关的 API 列表。
 keywords: api， 安全性， 威胁防护， mde， microsoft defender for endpoint， microsoft defender atp， office 365 高级威胁防护， microsoft defender 高级威胁防护， 云应用安全
 search.product: eADQiWindows 10XVcnh
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,12 +19,13 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: e0b1301341538110d563f446c4a2d603f41078c4
-ms.sourcegitcommit: d6b1da2e12d55f69e4353289e90f5ae2f60066d0
+ms.technology: m365d
+ms.openlocfilehash: 3d9eb6b255aefa55da811e779503242c240baf58
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "49719364"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49929762"
 ---
 # <a name="other-security-and-threat-protection-apis"></a>其他安全和威胁防护 API
 

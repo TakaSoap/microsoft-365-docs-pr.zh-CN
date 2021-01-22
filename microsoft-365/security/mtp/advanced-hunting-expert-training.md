@@ -1,10 +1,10 @@
 ---
 title: 获取高级搜寻方面的专家培训
-description: 来自高级搜寻专家的免费培训和指导
-keywords: 高级搜寻、威胁搜寻、网络威胁搜寻、microsoft 威胁防护、microsoft 365、mtp、m365、搜索、查询、语言、培训、方案、基本到高级、视频、分步
+description: 高级搜寻专家的免费培训和指导
+keywords: 高级搜寻， 威胁搜寻， 网络威胁搜寻， Microsoft 威胁防护， microsoft 365， mtp， m365， 搜索， 查询， 语言， 培训， 方案， 基本到高级， 视频， 分步执行
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,12 +19,13 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: c2772d0fc77e563bc80b0f29815349d1bfb3e2ea
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.technology: m365d
+ms.openlocfilehash: d7c2ccb12cb096359e558af9e1b4a962a9130be5
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48842508"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49929630"
 ---
 # <a name="get-expert-training-on-advanced-hunting"></a>获取高级搜寻方面的专家培训
 
@@ -34,20 +35,20 @@ ms.locfileid: "48842508"
 **适用于：**
 - Microsoft 365 Defender
 
-通过 _跟踪入侵_ 者、新安全分析员和经验丰富的威胁 hunters 的网络广播系列，快速提高您对高级搜寻的掌握程度。 该系列将指导您完成创建自己的复杂查询的基本方法。 先从第一个视频开始，再跳转到符合你的体验级别的更高级视频。
+通过跟踪攻击者（针对新安全分析师和经验丰富的威胁情报人员的网络广播系列）快速提升你的高级搜寻知识。 本系列将指导您完成创建您自己的复杂查询的基础知识。 从关于基础功能的第一个视频开始，或跳转到适合你的体验级别的更高级视频。
 
 
-| 标题 | 说明 | Watch | Queries | 
+| 标题 | 说明 | Watch | 查询 | 
 |--|--|--|--|
-| 剧集1： KQL 基础知识 | 这一部分涵盖了 Microsoft 365 Defender 中的高级搜寻的基础知识。 了解可用的高级搜寻数据和基本 KQL 语法和运算符。 | [YouTube](https://youtu.be/0D9TkGjeJwM?t=351) (54:14)  | [CSL 文件](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%201%20-%20KQL%20Fundamentals.csl) |
-| 剧集2：联接 | 继续了解高级搜寻中的数据以及如何将表格联接在一起。 了解 `inner` 、 `outer` 、 `unique` 和 `semi` 联接，并了解默认 Kusto 联接的细微差别 `innerunique` 。 | [YouTube](https://youtu.be/LMrO6K5TWOU?t=297) (53:33)  | [CSL 文件](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%202%20-%20Joins.csl) |
-| 剧集3：汇总、透视和可视化数据 | 现在，您已经了解了如何筛选、处理和联接数据，现在可以汇总、量化、透视和可视化。 此集中讨论了 `summarize` 运算符和各种计算，同时还介绍了架构中的其他表。 您还将了解如何将数据集转换为可帮助您提取洞察力的图表。 | [YouTube](https://youtu.be/UKnk9U1NH6Y?t=296) (48:52)  | [CSL 文件](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%203%20-%20Summarizing%2C%20Pivoting%2C%20and%20Joining.csl) |
-| 剧集4：让我们来寻找！ 将 KQL 应用于事件跟踪 | 在此部分中，你将了解到跟踪某些攻击者的活动。 我们利用我们对 Kusto 和高级搜寻的改进了解来跟踪攻击。 了解字段中使用的实际窍门，包括 cybersecurity 的 ABCs 以及如何将其应用到事件响应。 | [YouTube](https://youtu.be/2EUxOc_LNd8?t=291) (59:36)  | [CSL 文件](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%204%20-%20Lets%20Hunt.csl)
+| 第 1 集：KQL 基础知识 | 此部分介绍 Microsoft 365 Defender 中高级搜寻的基础知识。 了解可用的高级搜寻数据和基本 KQL 语法和运算符。 | [YouTube](https://youtu.be/0D9TkGjeJwM?t=351) (54：14)  | [CSL 文件](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%201%20-%20KQL%20Fundamentals.csl) |
+| 第 2 集：加入 | 继续了解高级搜寻中的数据以及如何将表联接在一起。 了解 `inner` 、 `outer` `unique` 和联接，并了解默认 `semi` Kusto 联接的 `innerunique` 细微差别。 | [YouTube](https://youtu.be/LMrO6K5TWOU?t=297) (53：33)  | [CSL 文件](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%202%20-%20Joins.csl) |
+| 第 3 部分：汇总、透视和可视化数据 | 现在，你已经了解了筛选、操作和联接数据，是时候汇总、量化、透视和可视化了。 此部分讨论了 `summarize` 运算符和各种计算，同时在架构中引入了其他表。 你还将学习如何将数据集转换为可帮助您提取见解的图表。 | [YouTube](https://youtu.be/UKnk9U1NH6Y?t=296) (48：52)  | [CSL 文件](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%203%20-%20Summarizing%2C%20Pivoting%2C%20and%20Joining.csl) |
+| 第 4 集：让我们进行搜寻！ 将 KQL 应用于事件跟踪 | 在此集中，你将了解如何跟踪一些攻击者活动。 我们使用对 Kusto 和高级搜寻的改进了解来跟踪攻击。 了解现场使用的实际技巧，包括网络安全的 APC 以及如何将它们应用于事件响应。 | [YouTube](https://youtu.be/2EUxOc_LNd8?t=291) (59：36)  | [CSL 文件](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%204%20-%20Lets%20Hunt.csl)
 
 ## <a name="how-to-use-the-csl-file"></a>如何使用 CSL 文件
-在开始剧集之前，请访问 [GitHub 上相应的 KUSTO CSL 文件](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/tree/master/Webcasts/TrackingTheAdversary) ，并将其内容复制到高级搜寻查询编辑器。 在观看剧集时，可以使用复制的内容遵循演讲者和运行查询。 
+在启动剧集之前，访问 GitHub 上的相应 [Kusto CSL](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/tree/master/Webcasts/TrackingTheAdversary) 文件，将其内容复制到高级搜寻查询编辑器。 在观看剧集时，可以使用复制的内容关注扬声器并运行查询。 
 
-以下来自 CSL 文件的摘要显示了一组标记为注释的综合指南 `//` 。
+下面摘自 CSL 文件，其中显示了一组标记为注释的综合指南 `//` 。
 
 ```kusto
 // DeviceLogonEvents
@@ -60,7 +61,7 @@ ms.locfileid: "48842508"
 // - Timestamp
 ```
 
-同一个 CSL 文件包含注释之前和之后的查询，如下所示。 若要 [在编辑器中运行包含多个查询](advanced-hunting-query-language.md#work-with-multiple-queries-in-the-editor)的特定查询，请将光标移动到该查询，然后选择 " **运行查询** "。   
+同一 CSL 文件包含注释的之前和之后查询，如下所示。 若要在编辑器中使用多个查询 [](advanced-hunting-query-language.md#work-with-multiple-queries-in-the-editor)运行特定查询，请移动光标到该查询，然后选择"**运行查询"。**   
 
 ```kusto
 DeviceLogonEvents

@@ -1,10 +1,10 @@
 ---
 title: 使用高级搜寻查找勒索软件
-description: 使用高级搜寻查找勒索软件可能影响的设备。
-keywords: 高级搜索、勒索软件、威胁搜寻、网络威胁搜寻、搜索、查询、遥测、Microsoft 365、Microsoft 威胁防护、Microsoft 365 Defender
+description: 使用高级搜寻查找可能受勒索软件影响的设备。
+keywords: 高级搜寻， 勒索软件， 威胁搜寻， 网络威胁搜寻， 搜索， 查询， 遥测， Microsoft 365， Microsoft 威胁防护， Microsoft 365 Defender
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,44 +19,45 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: aaee2af4b3df849b57b8e1c18ab330603042fe96
-ms.sourcegitcommit: 8ad481ed61cb6dabf8afb0fb04296666fa166450
+ms.technology: m365d
+ms.openlocfilehash: f44a649035ef7f5993015142fb65fa29aaf5099f
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "49422892"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49929501"
 ---
-# <a name="hunt-for-ransomware"></a>查找勒索软件的智能寻线
+# <a name="hunt-for-ransomware"></a>查寻勒索软件
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 **适用于：**
 - Microsoft 365 Defender
 
-勒索软件快速发展为简单的商品恶意软件，它会影响各个计算机用户对行业和政府机构造成严重影响的企业威胁。 虽然 [Microsoft 365 Defender](microsoft-threat-protection.md) 提供了许多功能，可检测并阻止勒索软件和关联的入侵活动，但执行主动检查以确保泄露的功能可以帮助保护网络的安全。
+勒索软件已从影响单个计算机用户的简单商品恶意软件快速演变为严重影响行业和政府机构的企业威胁。 [虽然 Microsoft 365 Defender](microsoft-threat-protection.md)提供了许多检测和阻止勒索软件和相关入侵活动的功能，但主动检查泄露的迹象可帮助保护网络。
 
-> [阅读有关人为运营的勒索软件的信息](https://www.microsoft.com/security/blog/2020/03/05/human-operated-ransomware-attacks-a-preventable-disaster/)
+> [阅读有关人工运营的勒索软件](https://www.microsoft.com/security/blog/2020/03/05/human-operated-ransomware-attacks-a-preventable-disaster/)
 
-使用 Microsoft 365 Defender 中的 [高级搜寻](advanced-hunting-overview.md) ，可以创建查找与勒索软件活动相关联的各个项目的查询。 您还可以运行更复杂的查询来查找活动的标志，并将这些符号与这些符号进行权衡，以查找需要立即关注的设备。
+借助[](advanced-hunting-overview.md) Microsoft 365 Defender 中的高级搜寻，你可以创建查询，以查找与勒索软件活动关联的单个项目。 还可以运行更复杂的查询，以查找活动的迹象并权衡这些符号，以查找需要立即关注的设备。
 
 ## <a name="signs-of-ransomware-activity"></a>勒索软件活动的迹象
-Microsoft 安全研究人员已在多个由完善的入侵者启动的多个勒索软件活动中发现了各种常见的细微项目 这些标志主要涉及使用系统工具来准备加密、阻止检测和清除取证证据。
+Microsoft 安全研究人员已观察到由复杂软件启动的许多勒索软件活动中的各种常见但细微的项目。 这些标志主要涉及使用系统工具准备加密、阻止检测以及清除取证证据。
 
 | 勒索软件活动 | 常用工具 | Intent |
 |--|--|--|
-| 停止进程 | _taskkill.exe_， _net stop_ | 确保针对加密的文件不会被各种应用程序锁定。 |
-| 关闭服务 | _sc.exe_ | -确保目标为加密的文件不会被各种应用程序锁定。<br>-防止安全软件破坏加密和其他勒索软件活动。<br>-阻止备份软件创建可恢复的副本。  |
-| 删除日志和文件 | _cipher.exe_、 _wevtutil_、 _fsutil.exe_ | 删除法庭证据。 |
-| 删除卷影副本  | _vsadmin.exe_， _wmic.exe_ | 删除可用于恢复加密文件的驱动器卷影副本。 |
-| 删除和停止备份 | _wbadmin.exe_ | 删除现有备份并停止计划的备份任务，以防止在加密之后进行恢复。 |
-| 修改启动设置 | _bcdedit.exe_ | 在可能由加密进程导致的启动故障之后关闭警告和自动修复。 |
-| 关闭恢复工具 | _schtasks.exe_、 _regedit.exe_、 | 关闭系统还原和其他系统恢复选项。 |
+| 停止进程 | _taskkill.exe_ _，net stop_ | 确保各种应用程序不会锁定用于加密的文件。 |
+| 关闭服务 | _sc.exe_ | - 确保各种应用程序不会锁定用于加密的文件。<br>- 防止安全软件中断加密和其他勒索软件活动。<br>- 停止备份软件创建可恢复副本。  |
+| 删除日志和文件 | _cipher.exe_， _wevtutil_， _fsutil.exe_ | 删除取证证据。 |
+| 删除卷影副本  | _vsadmin.exe_ _，wmic.exe_ | 删除可用于恢复加密文件的驱动器卷影副本。 |
+| 删除和停止备份 | _wbadmin.exe_ | 删除现有备份并停止计划的备份任务，从而阻止加密后的恢复。 |
+| 修改启动设置 | _bcdedit.exe_ | 在由加密过程导致的启动失败后关闭警告和自动修复。 |
+| 关闭恢复工具 | _schtasks.exe_， _regedit.exe_， | 关闭系统还原和其他系统恢复选项。 |
 
-## <a name="check-for-individual-signs-of-ransomware-activity"></a>检查勒索软件活动的单个迹象
-许多构成勒索软件行为的活动（包括上一节中所述的活动）都是良性的。 使用以下查询来查找勒索软件勒索软件时，请运行多个查询以检查相同设备是否出现各种可能的勒索软件活动迹象。
+## <a name="check-for-individual-signs-of-ransomware-activity"></a>检查勒索软件活动的个别标志
+许多构成勒索软件行为的活动（包括上一节中所述的活动）可能是恶意的。 当使用下列查询查找勒索软件时，请运行多个查询来检查同一设备是否显示各种可能的勒索软件活动的迹象。
 
-### <a name="stopping-multiple-processes-using-_taskkillexe_"></a>使用 _taskkill.exe_ 停止多个进程
-此查询将检查是否尝试使用 _taskkill.exe_ 实用工具至少停止10个单独的进程。 [运行查询](https://security.microsoft.com/hunting?query=H4sIAAAAAAAEAI2RS2vCUBCFz7rgfwiuIkit3eumVSgtpYvuS9SLDTY2eLUvxN_eb8YHKlFkyNzJzDkn505aailRX7mmGlFlmhNBhUrOSGeuT3L0s6QqNaMagolEcMyCbApjx2e8TYhcH8Q1mB-emq50z_lF39gvBzo9-gEF-6Yhlyh9653ejCfRK6zCsaZfuJOu-x2jkqqN-0Yls-8-gp6dZ52OVuT6Sad1plulyN0KIkMt15_zt7zHDe8OBwv3btoJToa7Tnp0T8Ou9WzfT761gPOm3_FQ16Zxp2qcCdg33_rlyokG-iXv7_4BRNMnhkortmvTW6rqnZ7bgP2Vtm70D3d9wcFaAgAA&runQuery=true&timeRangeId=week)
+### <a name="stopping-multiple-processes-using-_taskkillexe_"></a>使用方法停止多个 _taskkill.exe_
+此查询将检查是否尝试使用taskkill.exe实用工具停止至少 10 _个单独的_ 进程。 [运行查询](https://security.microsoft.com/hunting?query=H4sIAAAAAAAEAI2RS2vCUBCFz7rgfwiuIkit3eumVSgtpYvuS9SLDTY2eLUvxN_eb8YHKlFkyNzJzDkn505aailRX7mmGlFlmhNBhUrOSGeuT3L0s6QqNaMagolEcMyCbApjx2e8TYhcH8Q1mB-emq50z_lF39gvBzo9-gEF-6Yhlyh9653ejCfRK6zCsaZfuJOu-x2jkqqN-0Yls-8-gp6dZ52OVuT6Sad1plulyN0KIkMt15_zt7zHDe8OBwv3btoJToa7Tnp0T8Ou9WzfT761gPOm3_FQ16Zxp2qcCdg33_rlyokG-iXv7_4BRNMnhkortmvTW6rqnZ7bgP2Vtm70D3d9wcFaAgAA&runQuery=true&timeRangeId=week)
 
 ```kusto
 // Find attempts to stop processes using taskkill.exe
@@ -67,8 +68,8 @@ DeviceProcessEvents
 | where taskKillCount > 10
 ```
   
-### <a name="stopping-processes-using-_net-stop_"></a>使用 _net stop_ 停止进程
-此查询将检查是否尝试使用 _net stop_ 命令至少停止10个单独的进程。 [运行查询](https://security.microsoft.com/hunting?query=H4sIAAAAAAAEAI2RQUvDUBCE5yz0P4ScUijWereXVkGQIti7aA1pqakhL7VVxN_ebzc1NBChPLJv2Z2ZN5sdaqhId1ppozeyF1WcVLkK7kCl0gcx-F2QFSrJFmACJ3XMlmgKGfmGWnXC6OlCU2qfIIz12OLfUk_h2FuG_IG505JayRdpDit3bIW33B2M3WeGSqIRrvudTJvpnWzmPKvc6JcYHx1eEvd8savV07e9TchzTt198AlNZ0kluNLfjHHjIPAvak4J_tvx9XtPR6ypbn1icxShvGgqyVkO-hrAm7VUrRcaTWOs6T_7hs7XjfSqL-Lpvu5BDLxjqKRjI9a9Juvew__T2x5HutIB3T1qt4QCAAA&runQuery=true&timeRangeId=week)
+### <a name="stopping-processes-using-_net-stop_"></a>使用网络 _停止停止进程_
+此查询使用 net stop 命令检查是否尝试停止至少 10 _个单独的_ 进程。 [运行查询](https://security.microsoft.com/hunting?query=H4sIAAAAAAAEAI2RQUvDUBCE5yz0P4ScUijWereXVkGQIti7aA1pqakhL7VVxN_ebzc1NBChPLJv2Z2ZN5sdaqhId1ppozeyF1WcVLkK7kCl0gcx-F2QFSrJFmACJ3XMlmgKGfmGWnXC6OlCU2qfIIz12OLfUk_h2FuG_IG505JayRdpDit3bIW33B2M3WeGSqIRrvudTJvpnWzmPKvc6JcYHx1eEvd8savV07e9TchzTt198AlNZ0kluNLfjHHjIPAvak4J_tvx9XtPR6ypbn1icxShvGgqyVkO-hrAm7VUrRcaTWOs6T_7hs7XjfSqL-Lpvu5BDLxjqKRjI9a9Juvew__T2x5HutIB3T1qt4QCAAA&runQuery=true&timeRangeId=week)
 
 ```kusto
 // Find attempts to stop processes using net stop
@@ -78,8 +79,8 @@ DeviceProcessEvents
 | summarize netStopCount = dcount(ProcessCommandLine), NetStopList = make_set(ProcessCommandLine) by DeviceId, bin(Timestamp, 2m)
 | where netStopCount > 10
 ```
-### <a name="deletion-of-data-on-multiple-drives-using-_cipherexe_"></a>使用 _cipher.exe_ 删除多个驱动器上的数据
-此查询将检查是否尝试使用 _cipher.exe_ 删除多个驱动器上的数据。 勒索软件通常会执行此活动，以防止在加密后恢复数据。 [运行查询](https://security.microsoft.com/hunting?query=H4sIAAAAAAAEAI1SXUvDQBCcZ8H_cOQpgWLoD7AvVUEo4oPvElO1pblUcmn9QPztzk6TEuEsIdzdZndndm73cuRwWGDLb0PrhWfDs8Qab1jhmX8X3D-4HJbcK66W0Rqv8hT8K4RsiPW0PHbMasVQdbiGf3vaAec4wxWtPT0lz3vhSsUCrpVVE33I_Cb6vdNhTA9EeeVaVc8KDjOugmq2SDFlrSyKvCHS1NwJZ55L_HBPondNGDGWXP2JdyMnv927UnXHWwf6l4MunupXTOPfXszVT8_smriFOCxrRU-QclOQDLgCNRwQ1u8vZc8H2o1xp-7a7U1NefSko6pnmKjakNVi4chpiA39j-rGeF6HJ3xyH76NW2ZMFLGsNDJ9i05pZSPmVdDfq-jncfqtOuU5zSuQz6Zq92w7Hfbm-9cUm-d_vZ9J9S81O2KIfAMAAA&runQuery=true&timeRangeId=week)
+### <a name="deletion-of-data-on-multiple-drives-using-_cipherexe_"></a>使用文件删除多个驱动器 _cipher.exe_
+此查询将检查是否尝试删除多个驱动器上使用 _cipher.exe。_ 此活动通常由勒索软件执行，以防止在加密后恢复数据。 [运行查询](https://security.microsoft.com/hunting?query=H4sIAAAAAAAEAI1SXUvDQBCcZ8H_cOQpgWLoD7AvVUEo4oPvElO1pblUcmn9QPztzk6TEuEsIdzdZndndm73cuRwWGDLb0PrhWfDs8Qab1jhmX8X3D-4HJbcK66W0Rqv8hT8K4RsiPW0PHbMasVQdbiGf3vaAec4wxWtPT0lz3vhSsUCrpVVE33I_Cb6vdNhTA9EeeVaVc8KDjOugmq2SDFlrSyKvCHS1NwJZ55L_HBPondNGDGWXP2JdyMnv927UnXHWwf6l4MunupXTOPfXszVT8_smriFOCxrRU-QclOQDLgCNRwQ1u8vZc8H2o1xp-7a7U1NefSko6pnmKjakNVi4chpiA39j-rGeF6HJ3xyH76NW2ZMFLGsNDJ9i05pZSPmVdDfq-jncfqtOuU5zSuQz6Zq92w7Hfbm-9cUm-d_vZ9J9S81O2KIfAMAAA&runQuery=true&timeRangeId=week)
 
 ```kusto
 // Look for cipher.exe deleting data from multiple drives
@@ -94,8 +95,8 @@ CipherList = make_set(ProcessCommandLine) by DeviceId, bin(Timestamp, 1m)
 | where CipherCount > 1
 ```
 
-### <a name="clearing-of-forensic-evidence-from-event-logs-using-_wevtutil_"></a>使用 _wevtutil_ 清除事件日志中的法庭证据
-此查询将检查是否尝试使用 _wevtutil_ 从事件日志中清除至少10个日志条目。 [运行查询](https://security.microsoft.com/hunting?query=H4sIAAAAAAAEAJWRTU_CQBCG37OJ_2HDqSQkwMGjXgoHEg4cUI-m2hUaqGu6BaPxx_vsEFCTxmA225nOvB_tzFBDOc0VOBuyZ2JD3CnKEwMVpzfyPbVWlba8t9Sdnsi9CsPXdLfWf7Wq4xm0QuVSF5oYv4LhtQAfLIucKXWvF5gH5Ke5rak1prKEVRu2xalG3emGW6AdlGmsUv1O5m-fnLzmFHiV_G9FTKg1lUjs6Z5vucPvljsD0TOXhP6_Vm7841dFZnPAN2A_DDu36eSnCSbNnc3B6Zpb4nasZGf59zWA963orZdcEiKelBNvQ_fBNny-utOj3nn-3OUMxMA6CZV1bCt1r8i6d_TXFNKWxxrpC48hm8miAgAA&runQuery=true&timeRangeId=week)
+### <a name="clearing-of-forensic-evidence-from-event-logs-using-_wevtutil_"></a>使用 _wevtutil_ 从事件日志中清除取证证据
+此查询会检查使用 wevtutil 清除事件日志中至少 10 个日志 _条目的尝试_。 [运行查询](https://security.microsoft.com/hunting?query=H4sIAAAAAAAEAJWRTU_CQBCG37OJ_2HDqSQkwMGjXgoHEg4cUI-m2hUaqGu6BaPxx_vsEFCTxmA225nOvB_tzFBDOc0VOBuyZ2JD3CnKEwMVpzfyPbVWlba8t9Sdnsi9CsPXdLfWf7Wq4xm0QuVSF5oYv4LhtQAfLIucKXWvF5gH5Ke5rak1prKEVRu2xalG3emGW6AdlGmsUv1O5m-fnLzmFHiV_G9FTKg1lUjs6Z5vucPvljsD0TOXhP6_Vm7841dFZnPAN2A_DDu36eSnCSbNnc3B6Zpb4nasZGf59zWA963orZdcEiKelBNvQ_fBNny-utOj3nn-3OUMxMA6CZV1bCt1r8i6d_TXFNKWxxrpC48hm8miAgAA&runQuery=true&timeRangeId=week)
 
 ```kusto
 // Look for use of wevtutil to clear multiple logs
@@ -106,8 +107,8 @@ DeviceProcessEvents
 | where LogClearCount > 10
 ```
 
-### <a name="turning-off-services-using-_scexe_"></a>使用 _sc.exe_ 关闭服务
-此查询将检查是否尝试使用 _sc.exe_ 关闭至少10个现有的服务。 [运行查询](https://security.microsoft.com/hunting?query=H4sIAAAAAAAEAKWST2vCQBDF31nodwg5RZCqhx7bi3ooeCjovaQxraIxxfU_fvj-ZoiiEIqlhM3Ozrz3ZnZm22or0lAl3xzrk33FHpTpUbn2rEgTzfCk-tACa6kvR-Qgt5wzrKAHNdTHOnveiJZVLGiAP4e5rpAnFHaauoZlGMMqHLsmT6FvfC-slFylEnWpoVnLvM3Twy74UnJNuJdVa6gpnsAe-81iVzbE3_kZiCV9mlHZf3Sue5pzii-3C9pU3BWYo_NGKPdvGJZh4x2N9Owzyi6e5K5qmmrVKg_9dNY11hzvu0_8fu0ItQP_6zfxCqLlEUMlNVO36BNW_ax_74K9l646-gFts39I1AIAAA&runQuery=true&timeRangeId=week)
+### <a name="turning-off-services-using-_scexe_"></a>使用应用程序关闭 _sc.exe_
+此查询将检查是否尝试关闭至少 10 个使用 _sc.exe。_ [运行查询](https://security.microsoft.com/hunting?query=H4sIAAAAAAAEAKWST2vCQBDF31nodwg5RZCqhx7bi3ooeCjovaQxraIxxfU_fvj-ZoiiEIqlhM3Ozrz3ZnZm22or0lAl3xzrk33FHpTpUbn2rEgTzfCk-tACa6kvR-Qgt5wzrKAHNdTHOnveiJZVLGiAP4e5rpAnFHaauoZlGMMqHLsmT6FvfC-slFylEnWpoVnLvM3Twy74UnJNuJdVa6gpnsAe-81iVzbE3_kZiCV9mlHZf3Sue5pzii-3C9pU3BWYo_NGKPdvGJZh4x2N9Owzyi6e5K5qmmrVKg_9dNY11hzvu0_8fu0ItQP_6zfxCqLlEUMlNVO36BNW_ax_74K9l646-gFts39I1AIAAA&runQuery=true&timeRangeId=week)
 
 ```kusto
 // Look for sc.exe disabling services
@@ -119,7 +120,7 @@ DeviceProcessEvents
 ```
 
 ### <a name="turning-off-system-restore"></a>关闭系统还原
-此查询识别停止系统还原并阻止系统创建还原点的尝试，这些还原点可用于恢复由勒索软件加密的数据。 [运行查询](https://security.microsoft.com/hunting?query=H4sIAAAAAAAEAK2S3UrDQBCFz7XgO6y9id4o6HWvrIVCkaJPENOYFNumZGO1ID673w4xJA1isbJMZnZ-zpzM7EiptlooQc9UqjDLc-7wp1qrwj7Via44MzK35FTotTI5PXMr0aVe8cy15NzoGo-zqg_0m3KQSsRpQtbC6uMGpdt3jHeJfU_GymqG-uQb9XpcEn1HIuvmGpZT0Aq99Dim4G3ousNO8K04sSE6EEN22kL6jvzO-LaDNW2QzqxLmGBsPo9vUMt_oA8Na3DQv3vwcmPiifpmds48jkhut8T2FLikxm_T4bI_m_6uQt-wrXO28lPPSBcdziOqPFlP9RYy47tDKtuZM07hVtSvaJ_HYRPL63-NyMgtmtWv5684jy2WDx2O0ZEM562ZBLQvURxur6gDAAA&runQuery=true&timeRangeId=week)
+此查询标识了停止系统还原和阻止系统创建还原点（可用于恢复由勒索软件加密的数据）的尝试。 [运行查询](https://security.microsoft.com/hunting?query=H4sIAAAAAAAEAK2S3UrDQBCFz7XgO6y9id4o6HWvrIVCkaJPENOYFNumZGO1ID673w4xJA1isbJMZnZ-zpzM7EiptlooQc9UqjDLc-7wp1qrwj7Via44MzK35FTotTI5PXMr0aVe8cy15NzoGo-zqg_0m3KQSsRpQtbC6uMGpdt3jHeJfU_GymqG-uQb9XpcEn1HIuvmGpZT0Aq99Dim4G3ousNO8K04sSE6EEN22kL6jvzO-LaDNW2QzqxLmGBsPo9vUMt_oA8Na3DQv3vwcmPiifpmds48jkhut8T2FLikxm_T4bI_m_6uQt-wrXO28lPPSBcdziOqPFlP9RYy47tDKtuZM07hVtSvaJ_HYRPL63-NyMgtmtWv5684jy2WDx2O0ZEM562ZBLQvURxur6gDAAA&runQuery=true&timeRangeId=week)
 
 ```kusto
 DeviceProcessEvents
@@ -135,7 +136,7 @@ and ProcessCommandLine has 'disable'
 ```
 
 ### <a name="backup-deletion"></a>备份删除
-此查询标识使用 _wmic.exe_ 在加密之前删除卷影复制快照。 [运行查询](https://security.microsoft.com/hunting?query=H4sIAAAAAAAEAJWS2wqCQBCG_-ugd5CupTfoqgMIEV70AqFLGp5QyYLo2fsavEjxwlhWZ7-df2Z2dndyuitVxD9UrdKshrGHOxVqsZda6CVPnRJYzfR0QJVhnXRRbmSjN98VXrlFXEMfzNWkfphti50zLmSMdURfmFcCaSxqY3aMX4eqVKUn1OsV_8eLWX_rbwcVVhblBovY8bT76U-AxoedWeeWp7WzV0YDMqSQFNZavuuopnHH_Iku-lbJnLPMyxnYDTp4bZ5P9M5uNpsZIWSn7l_CuNoPSggb4z4CAAA&runQuery=true&timeRangeId=week)
+此查询标识 _了wmic.exe在_ 加密之前删除卷影副本快照。 [运行查询](https://security.microsoft.com/hunting?query=H4sIAAAAAAAEAJWS2wqCQBCG_-ugd5CupTfoqgMIEV70AqFLGp5QyYLo2fsavEjxwlhWZ7-df2Z2dndyuitVxD9UrdKshrGHOxVqsZda6CVPnRJYzfR0QJVhnXRRbmSjN98VXrlFXEMfzNWkfphti50zLmSMdURfmFcCaSxqY3aMX4eqVKUn1OsV_8eLWX_rbwcVVhblBovY8bT76U-AxoedWeeWp7WzV0YDMqSQFNZavuuopnHH_Iku-lbJnLPMyxnYDTp4bZ5P9M5uNpsZIWSn7l_CuNoPSggb4z4CAAA&runQuery=true&timeRangeId=week)
 
 ```kusto
 DeviceProcessEvents
@@ -145,13 +146,13 @@ DeviceProcessEvents
 ProcessCommandLine, InitiatingProcessIntegrityLevel, InitiatingProcessParentFileName
 ```
 
-## <a name="check-for-multiple-signs-of-ransomware-activity"></a>检查勒索软件活动的多个迹象
-您还可以使用综合查询检查勒索软件活动的多个迹象以识别受影响的设备，而不是单独运行多个查询。 以下合并查询：
-- 查找勒索软件活动的相对具体和细微标志
-- 对这些符号的存在进行权衡
-- 确定具有更高机会的勒索软件的目标的设备 
+## <a name="check-for-multiple-signs-of-ransomware-activity"></a>检查勒索软件活动的多个标志
+除了单独运行多个查询外，您还可以使用全面的查询来检查勒索软件活动的多个标志，以标识受影响的设备。 以下合并查询：
+- 查找勒索软件活动的相对具体和细微的符号
+- 权衡是否存在这些符号
+- 标识具有更高机会成为勒索软件目标的设备 
 
-在运行时，此合并查询将返回已表现出多个攻击迹象的设备的列表。 此外，还显示了每种类型的勒索软件活动的计数。 若要运行此合并查询，请将其直接复制到 [高级搜寻查询编辑器](https://security.microsoft.com/advanced-hunting)。 
+运行时，此合并查询将返回已呈现多个攻击信号的设备列表。 还显示了每种类型的勒索软件活动的计数。 若要运行此合并查询，请直接将其复制到[高级搜寻查询编辑器。](https://security.microsoft.com/advanced-hunting) 
 
 ```kusto
 // Find attempts to stop processes using taskkill.exe
@@ -225,20 +226,20 @@ ScDisable = iff(make_set(ScDisableUse) contains "1", 1, 0), TotalEvidenceCount =
 | extend UniqueEvidenceCount = BcdEdit + NetStop10PlusCommands + Wevtutil10PlusLogsCleared + CipherMultipleDrives + Wbadmin + Fsutil + TaskKill10PlusCommand + VssAdminShadow + ScDisable + ShadowCopyDelete
 | where UniqueEvidenceCount > 2
 ```
-### <a name="understand-and-tweak-the-query-results"></a>了解和调整查询结果
+### <a name="understand-and-tweak-the-query-results"></a>了解并调整查询结果
 合并查询将返回以下结果：
 
-- **DeviceId**—识别受影响的设备 
-- **时间戳**—第一次在设备上观察到任何勒索软件活动的任何迹象
-- **特定活动标志**—在多列中显示的每个符号（如 _BcdEdit_ 或 _FsUtil_ ）的计数
-- **TotalEvidenceCount**—观测的符号数
-- **UniqueEvidenceCount**—观测信号的类型数
+- **DeviceId**— 标识受影响的设备 
+- **时间戳**— 第一次在设备上观察到勒索软件活动的任何符号时
+- **活动的特定符号**- 显示在多列中的每个符号的计数，例如 _BcdEdit_ 或 _FsUtil_
+- **TotalEvidenceCount**— 观察到的符号数
+- **UniqueEvidenceCount**- 观察到的符号类型的数量
 
 ![勒索软件活动的查询结果的图像](../../media/advanced-hunting-ransomware-query.png)
 
-*显示受影响设备的查询结果以及勒索软件活动的各种标志计数*
+*显示受影响的设备和各种勒索软件活动符号计数的查询结果*
 
-默认情况下，查询结果仅列出两种类型的勒索软件活动类型的设备。 若要查看带有任何勒索软件勒索活动标志的所有设备，请修改以下 `where` 运算符并将该数字设置为零 (0) 。 若要查看更少的设备，请设置一个更大的数字。 
+默认情况下，查询结果仅列出具有两种以上类型的勒索软件活动的设备。 若要查看具有任何勒索软件活动符号的所有设备，请修改以下运算符，将数字设置为 0 (`where` 0) 。 若要查看较少的设备，请设置一个更高的数量。 
 
 ```kusto
 | where UniqueEvidenceCount > 2
