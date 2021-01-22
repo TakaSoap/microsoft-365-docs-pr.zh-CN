@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 确定 Microsoft 365 客户数据在全球范围内的存储位置
-ms.openlocfilehash: 4b1e0d30d37ec9bc7a333216854e8eb602e07cc1
-ms.sourcegitcommit: d3ca8021f7da00a474ac14aac5f1358204a848f2
+ms.openlocfilehash: 4830a10bed1f95686fb69ab577f6c89f93e9818f
+ms.sourcegitcommit: 7ecd10b302b3b3dfa4ba3be3a6986dd3c189fbff
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49519723"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "49921664"
 ---
 <!--
 Note to new owner: Links in the Notes and FAQ sections need to be added from the source document at https://microsoft.sharepoint.com/:w:/t/golocalteam/Ebv6_Lw6FvNKucfA1eESTPUBy6O1MdvWEeT-L8O5a2HsIg?e=4%3AUfF1Uj&at=9&xsdata=MDR8MDF8am9zZXBoZEBtaWNyb3NvZnQuY29tfGM1ZTg1ODI0ZWRmMTRlN2E3MDkzMDhkNzgzNDMxYTczfDcyZjk4OGJmODZmMTQxYWY5MWFiMmQ3Y2QwMTFkYjQ3fDF8MHw2MzcxMjIxOTY1MzQ5NjM5NDl8VW5rbm93bnxUV0ZwYkdac2IzZDhleUpXSWpvaU1DNHdMakF3TURBaUxDSlFJam9pVjJsdU16SWlMQ0pCVGlJNklrMWhhV3dpTENKWFZDSTZNbjA9fC0x&sdata=MkxOUXhlZEdyR0I1SzBvd044d2hkd2RPaGN2RUpaS09jMkZTcys0dkZQRT0%3D
@@ -250,7 +250,7 @@ Microsoft 不会存储指定地理位置之外的静态 Intune 客户数据。 �
 | OneDrive for Business | 全球地理位置 2 – 亚太地区 |
 | SharePoint Online | 全球地理位置 2 – 亚太地区 |
 | Skype for Business | 全球地理位置 2 – 亚太地区 |
-| Microsoft Teams | 美国 |
+| Microsoft Teams | 全球地理位置 2 – 亚太地区 |
 | Office Online &amp; Mobile | 全球地理位置 2 – 亚太地区 |
 | EOP | 全球地理位置 2 – 亚太地区 |
 | Intune | 全球地理位置 2 – 亚太地区 |
@@ -418,7 +418,7 @@ Microsoft 不会存储指定地理位置之外的静态 Intune 客户数据。 �
 | OneDrive for Business | 全球地理位置 1 – EMEA |
 | SharePoint Online | 全球地理位置 1 – EMEA |
 | Skype for Business | 全球地理位置 1 – EMEA |
-| Microsoft Teams | 全球地理位置 2 – 亚太地区 |
+| Microsoft Teams | 全球地理位置 1 – EMEA |
 | Office Online &amp; Mobile | 全球地理位置 1 – EMEA |
 | EOP | 全球地理位置 1 – EMEA |
 | Intune | 全球地理位置 1 – EMEA |
@@ -514,7 +514,7 @@ Microsoft 不会存储指定地理位置之外的静态 Intune 客户数据。 �
 | OneDrive for Business | 全球地理位置 1 – EMEA |
 | SharePoint Online | 全球地理位置 1 – EMEA |
 | Skype for Business | 全球地理位置 1 – EMEA |
-| Microsoft Teams | 全球地理位置 2 – 亚太地区 |
+| Microsoft Teams | 全球地理位置 1 – EMEA |
 | Office Online &amp; Mobile | 全球地理位置 1 – EMEA |
 | EOP | 全球地理位置 1 – EMEA |
 | Intune | 全球地理位置 1 – EMEA |
@@ -2122,7 +2122,7 @@ Microsoft 不会存储指定地理位置之外的静态 Intune 客户数据。 �
 | OneDrive for Business | 全球地理位置 1 – EMEA |
 | SharePoint Online | 全球地理位置 1 – EMEA |
 | Skype for Business | 全球地理位置 1 – EMEA |
-| Microsoft Teams | 全球地理位置 2 – 亚太地区 |
+| Microsoft Teams | 全球地理位置 1 – EMEA |
 | Office Online &amp; Mobile | 全球地理位置 1 – EMEA |
 | EOP | 全球地理位置 1 – EMEA |
 | Intune | 全球地理位置 1 – EMEA |
@@ -2914,7 +2914,7 @@ Microsoft 不会存储指定地理位置之外的静态 Intune 客户数据。 �
 | OneDrive for Business | 全球地理位置 1 – EMEA |
 | SharePoint Online | 全球地理位置 1 – EMEA |
 | Skype for Business | 全球地理位置 1 – EMEA |
-| Microsoft Teams | 全球地理位置 2 – 亚太地区 |
+| Microsoft Teams | 全球地理位置 1 – EMEA |
 | Office Online &amp; Mobile | 全球地理位置 1 – EMEA |
 | EOP | 全球地理位置 1 – EMEA |
 | Intune | 全球地理位置 1 – EMEA |
@@ -3058,7 +3058,7 @@ Microsoft 不会存储指定地理位置之外的静态 Intune 客户数据。 �
 | OneDrive for Business | 全球地理位置 1 – EMEA |
 | SharePoint Online | 全球地理位置 1 – EMEA |
 | Skype for Business | 全球地理位置 1 – EMEA |
-| Microsoft Teams | 全球地理位置 2 – 亚太地区 |
+| Microsoft Teams | 全球地理位置 1 – EMEA |
 | Office Online &amp; Mobile | 全球地理位置 1 – EMEA |
 | EOP | 全球地理位置 1 – EMEA |
 | Intune | 全球地理位置 1 – EMEA |
@@ -4450,7 +4450,7 @@ Microsoft 不会存储指定地理位置之外的静态 Intune 客户数据。 �
 | OneDrive for Business | 全球地理位置 1 – EMEA |
 | SharePoint Online | 全球地理位置 1 – EMEA |
 | Skype for Business | 全球地理位置 1 – EMEA |
-| Microsoft Teams | 全球地理位置 2 – 亚太地区 |
+| Microsoft Teams | 全球地理位置 1 – EMEA |
 | Office Online &amp; Mobile | 全球地理位置 1 – EMEA |
 | EOP | 全球地理位置 1 – EMEA |
 | Intune | 全球地理位置 1 – EMEA |
@@ -5314,7 +5314,7 @@ Microsoft 不会存储指定地理位置之外的静态 Intune 客户数据。 �
 | OneDrive for Business | 全球地理位置 1 – EMEA |
 | SharePoint Online | 全球地理位置 1 – EMEA |
 | Skype for Business | 全球地理位置 1 – EMEA |
-| Microsoft Teams | 全球地理位置 2 – 亚太地区 |
+| Microsoft Teams | 全球地理位置 1 – EMEA |
 | Office Online &amp; Mobile | 全球地理位置 1 – EMEA |
 | EOP | 全球地理位置 1 – EMEA |
 | Intune | 全球地理位置 1 – EMEA |
@@ -5554,7 +5554,7 @@ Microsoft 不会存储指定地理位置之外的静态 Intune 客户数据。 �
 | OneDrive for Business | 全球地理位置 1 – EMEA |
 | SharePoint Online | 全球地理位置 1 – EMEA |
 | Skype for Business | 全球地理位置 1 – EMEA |
-| Microsoft Teams | 全球地理位置 2 – 亚太地区 |
+| Microsoft Teams | 全球地理位置 1 – EMEA |
 | Office Online &amp; Mobile | 全球地理位置 1 – EMEA |
 | EOP | 全球地理位置 1 – EMEA |
 | Intune | 全球地理位置 1 – EMEA |
@@ -5818,7 +5818,7 @@ Microsoft 不会存储指定地理位置之外的静态 Intune 客户数据。 �
 | OneDrive for Business | 全球地理位置 1 – EMEA |
 | SharePoint Online | 全球地理位置 1 – EMEA |
 | Skype for Business | 全球地理位置 1 – EMEA |
-| Microsoft Teams | 全球地理位置 2 – 亚太地区 |
+| Microsoft Teams | 全球地理位置 1 – EMEA |
 | Office Online &amp; Mobile | 全球地理位置 1 – EMEA |
 | EOP | 全球地理位置 1 – EMEA |
 | Intune | 全球地理位置 1 – EMEA |

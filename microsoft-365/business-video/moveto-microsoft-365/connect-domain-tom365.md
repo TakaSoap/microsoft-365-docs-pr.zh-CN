@@ -15,18 +15,19 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- okr_smb
 monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: 了解如何将域连接到 Microsoft 365。
-ms.openlocfilehash: c7827b93b56560579b31bd2abb5a852467565103
-ms.sourcegitcommit: 9833f95ab6ab95aea20d68a277246dca2223f93d
+ms.openlocfilehash: 1bec66a43026321ddf1979c73902a533bee3a07b
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "49794581"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49925106"
 ---
 # <a name="connect-your-domain-to-microsoft-365-for-business"></a>将域连接到 Microsoft 365 商业版
 
@@ -47,7 +48,7 @@ ms.locfileid: "49794581"
 1. 然后选择默认域。
 1. 选择 **"继续** 设置"，然后，若要连接域，请选择"**继续"。**
 1. 向下滚动以查看需要复制到 Google 的 DNS 记录。
-1. 打开 **MX 记录**，在" **指向地址或值**"下复制记录。
+1. 打开 **MX 记录**，在"指向 **地址或值**"下复制记录。
 1. 返回到 Google，在"自定义资源记录 **"部分，** 打开记录类型下拉列表并选择 **MX。**
 1. 在 **"数据** "字段中，粘贴复制的记录。
 1. 然后，选择“**添加**”。

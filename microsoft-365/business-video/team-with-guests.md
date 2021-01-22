@@ -1,5 +1,5 @@
 ---
-title: 与来宾一起创建团队
+title: 以来宾身份创建团队
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -16,27 +16,28 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: 了解如何在 Microsoft Teams 中创建具有来宾的团队。
-ms.openlocfilehash: 83d474e057e3400e0fae4eac17c2eb6d501e519a
-ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
+ms.openlocfilehash: ea195b64f3d4d048d78648b19f1820842570b2b0
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49701629"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49925870"
 ---
-# <a name="create-a-team-with-guests"></a>与来宾一起创建团队
+# <a name="create-a-team-with-guests"></a>以来宾身份创建团队
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FQMp?autoplay=false]
 
 ## <a name="try-it"></a>试一试！
 
-可以使用 Microsoft Teams 与员工和业务外部人员（如客户端）协作处理项目。
+可以使用 Microsoft Teams 与员工和企业外部人员（如客户端）协作处理项目。
 
-1. 在 Teams 中，在左侧导航栏中选择 **Teams，** 然后选择"**创建团队"。**
+1. 在 Teams 中，**在** 左侧导航栏中选择 Teams，然后选择"**创建团队"。**
 2. 在 **"创建团队"** 框中，输入团队名称，提供简短说明，选择隐私设置，然后选择"下一 **步"。**
 3. 在  **"添加成员**  "框中，输入组织中其他员工的姓名。 对于外部来宾，输入其电子邮件地址。
 

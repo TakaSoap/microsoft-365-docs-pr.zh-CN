@@ -19,19 +19,19 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 摘要：了解如何从德国 Microsoft 云迁移到新的德国数据中心区域内的 Office 365 服务
-ms.openlocfilehash: 3587979c61434b77c38758e70903ee7028d70b9e
-ms.sourcegitcommit: c0495e224f12c448bfc162ef2e4b33b82f064ac8
+ms.openlocfilehash: 28344f1249e4f51bb9802bf19ca7561182610a7c
+ms.sourcegitcommit: 7ecd10b302b3b3dfa4ba3be3a6986dd3c189fbff
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49709688"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "49921585"
 ---
 # <a name="migration-from-microsoft-cloud-deutschland-to-office-365-services-in-the-new-german-datacenter-regions"></a>从德国 Microsoft 云迁移到新的德国数据中心区域的 Office 365 服务
 
 > [!NOTE]
 > 本文仅适用于符合条件的德国 Microsoft 云客户。
 
-2018 年 8 月，Microsoft 宣布打算从德国的新云区域交付完整的 Microsoft 云（Azure、Office 365、Dynamics 365 和 Power Platform）以更好地实现客户数字化转型。 2019 年 8 月，我们宣布已启动在德国开放新的云区域的流程。 我们已宣布 Azure、Office 365、Dynamics 365 和 Power Platform 的可用性。
+2018 年 8 月，Microsoft 宣布打算从德国的新云区域交付完整的 Microsoft 云（Azure、Office 365、Dynamics 365 和 Power Platform）以更好地实现客户数字化转型。 2019 年 8 月，我们宣布已启动在德国开放新的云区域的流程。 我们已宣布提供 Azure、Office 365、Dynamics 365 和 Power Platform。
 
 新区域旨在满足德国客户不断变化的需求，这些客户具有更大的灵活性、最新的智能云服务、与 Microsoft 365 服务云服务网络的完整连接以及德国的客户数据驻留。
 
@@ -63,20 +63,20 @@ Office 365 视频将于 2021年 3 月 1 日停用。 如果选择将 Office 365 
 
 ## <a name="how-is-the-migration-organized"></a>如何组织迁移？
 
-此图表示迁移到新的德国数据中心时 Office 365 和 Dynamics 365 的各种组件。
+此图显示了迁移到新的德国数据中心的九个阶段。
 
-![迁移到新德国数据中心中的 Office 365 和 Dynamics 365 组件](../media/ms-cloud-germany-migration-opt-in/migration-organization.png)
+![迁移到新德国数据中心的九个阶段](../media/ms-cloud-germany-migration-opt-in/migration-organization.png)
 
-迁移在选择加入迁移时开始的所有阶段 [执行](https://aka.ms/office365germanymoveoptin)。 大多数迁移阶段作为后端服务操作执行，所需的客户交互最少，并且执行一个阶段。 其他客户引导任务的开始和整体迁移状态将在迁移过程中通过 Microsoft 365 管理中心的消息中心进行通信。 任务示例可能包括客户管理的 DNS 更新、Exchange 混合客户的混合设置重新配置或 Azure 迁移。
+当你选择加入迁移时 [，这些阶段将开始](https://aka.ms/office365germanymoveoptin)。 大多数迁移阶段都是作为后端服务操作执行的，所需的客户交互最少，并且执行一个阶段之后。 其他客户引导任务的开始和整体迁移状态将在迁移过程中通过 Microsoft 365 管理中心的消息中心进行通信。 任务示例可能包括客户管理的 DNS 更新、Exchange 混合客户的混合设置重新配置或 Azure 迁移。
 
-选择加入时，迁移不会立即开始。 您的组织将添加到计划稍后迁移的租户列表中。 现在可以开始工作前阶段，这些阶段对于确保在完成时成功迁移和使用至关重要：
+选择加入时，迁移不会立即开始。 你的组织将添加到计划稍后迁移的租户列表中。 现在可以开始工作前阶段，这些阶段对于确保在完成时成功迁移和使用至关重要：
 
 - [迁移阶段操作和影响](ms-cloud-germany-transition-phases.md)
 - [其他预工作](ms-cloud-germany-transition-add-pre-work.md)
 
 在租户迁移开始的一周之前，你将在消息中心服务中收到通知，作为最终警告，指出所有先决条件都必须完成。
 
-迁移将 Azure AD 租户从欧盟地区的德国 Azure AD 服务迁移到 Azure AD 的 Office 365 服务实例。
+迁移将你的 Azure AD 租户从欧盟地区的独立德国 Azure AD 服务迁移到 Azure AD 的 Office 365 服务实例。
 
 下一个阶段是，将租户&#39;订阅和用户许可证从德国特定产品迁移到全球产品。
 
@@ -104,7 +104,7 @@ Office 365 视频将于 2021年 3 月 1 日停用。 如果选择将 Office 365 
 
 第一步是通知 Microsoft，以便我们有权将你的订阅和数据从德国 Microsoft 云迁移到新的德国数据中心区域的 Office 365 服务。 有关说明 [，请参阅选择加入](https://aka.ms/office365germanymoveoptin) 过程，请注意：
 
-- 所有迁移客户都需要验证与 Office 365 服务 [Office 365 URL](urls-and-ip-address-ranges.md)和 IP 地址的连接，其中包括新的德国数据中心区域。 不操作可能会导致服务和客户端故障。
+- 所有迁移客户都需要验证与 Office 365 服务 [Office 365 URL](urls-and-ip-address-ranges.md)和 IP 地址的连接，其中包括新的德国数据中心区域。 不操作可能会导致服务和客户端失败。
 - 查看工作 [前活动列表](ms-cloud-germany-transition-add-pre-work.md) ，确保组织已针对更改做好准备。
 - 应查看 Office 365 平台服务说明，了解迁移到德国区域后，您的组织将可以使用哪些功能和服务。
 - 试用版订阅将不会迁移，并且将阻止迁移所有付费订阅。 在迁移开始之前，必须取消任何试用版或转换为付费订阅。
@@ -117,7 +117,7 @@ Office 365 视频将于 2021年 3 月 1 日停用。 如果选择将 Office 365 
 
 ### <a name="is-migration-required"></a>是否需要迁移？
 
-Microsoft 提供从德国 Microsoft 云到新的德国数据中心区域的 Office 365 服务的 Office 365 租户迁移，无需额外付费。 尽管我们强烈建议你选择迁移到新的德国数据中心区域，但我们将继续为德国 Microsoft 云区域提供必要的安全更新。
+Microsoft 提供从德国 Microsoft 云到新的德国数据中心区域的 Office 365 服务的 Office 365 租户迁移，无需额外付费。 尽管我们强烈建议你选择迁移到新的德国数据中心区域，但我们将继续为德国 Microsoft 云区域提供必需的安全更新。
 
 新的德国数据中心区域的 Office 365 服务：
 
@@ -149,7 +149,7 @@ Microsoft 提供从德国 Microsoft 云到新的德国数据中心区域的 Offi
 14. Office 365 专业增强版
 15. Outlook Mobile
 
-目前，有 39 个服务作为新的德国数据中心区域的 Office 365 服务的一部分提供。 新功能和服务的可用性将持续与全球 Office 365 服务的保持一致。
+目前，新的德国数据中心区域有 39 个服务作为 Office 365 服务的一部分提供。 新功能和服务的可用性将持续与全球 Office 365 服务的保持一致。
 
 1. Exchange Online
 2. Exchange Online 的客户密码箱
@@ -197,7 +197,7 @@ Microsoft 提供从德国 Microsoft 云到新的德国数据中心区域的 Offi
 
 如果你只是 Azure 客户，你可以立即开始 [将](https://docs.microsoft.com/azure/germany/germany-migration-main) Azure 资源迁移到另一区域。 
 
-如果你有带 Office 365、Dynamics 365 或 Power BI 的 Azure，则必须执行迁移过程，以确保在开始自行定向 Azure 迁移之前成功迁移 AzureAD。 必须在服务关闭之前完成 Azure 迁移，才能通过 AzureAD 和 Office 365 组织维护 Azure 工作负载。
+如果你有带 Office 365、Dynamics 365 或 Power BI 的 Azure，则必须按照迁移过程操作，以确保在开始自动定向 Azure 迁移之前成功迁移 AzureAD。 必须在服务关闭之前完成 Azure 迁移，才能通过 AzureAD 和 Office 365 组织维护 Azure 工作负载。
 
 **Office 365**
 
@@ -236,7 +236,7 @@ Microsoft 提供从德国 Microsoft 云到新的德国数据中心区域的 Offi
 | Microsoft 365 商业标准 (O365 \_ 商业 \_ 高级版)  | Microsoft 365 商业标准 (O365 \_ 商业 \_ 高级版)  |
 | Microsoft Dynamics CRM Online实例 DE \_ (CRMINSTANCE DE \_)  | Microsoft Dynamics CRM Online CRMINSTANCE (实例)  |
 | OFFICE 365 A1 for faculty \_ DE (STANDARDWOFFPACK \_ FACULTY DE \_)  | STANDARDWOFFPACK 教职员工 (Office 365 \_ A1)  |
-| 适用于学生 DE 的 Office 365 A1 \_ (STANDARDWOFFPACK \_ STUDENT DE \_)  | 适用于 STANDARDWOFFPACK 学生版 (Office 365 \_ A1)  |
+| 适用于学生 DE 的 Office 365 A1 \_ (STANDARDWOFFPACK \_ STUDENT DE \_)  | 适用于 STANDARDWOFFPACK 学生 (Office 365 \_ A1)  |
 | Office 365 高级合规性 \_ DE (EQUIVIO \_ ANALYTICS DE \_)  | Microsoft 365 E5 合规性 (信息 \_ 保护 \_ 合规性)  |
 |Microsoft Defender for Office 365 (计划 1) \_ DE (ATP \_ ENTERPRISE DE \_)  |Microsoft Defender for Office 365 (计划 1)  (ATP \_ ENTERPRISE)  |
 | Office 365 商业基础 \_ 版 DE (O365 BUSINESS \_ \_ ESSENTIALS DE \_)  | Microsoft 365 Business Basic (O365 \_ BUSINESS \_ ESSENTIALS)  |
@@ -265,7 +265,7 @@ Microsoft 提供从德国 Microsoft 云到新的德国数据中心区域的 Offi
 | SharePoint Online (计划 2) \_ DE (SHAREPOINTENTERPRISE \_ DE)  | SharePoint Online (计划 2)  (SHAREPOINTENTERPRISE)  |
 | SKYPE for Business Online (计划 1) \_ DE (MCOIMP \_ DE)  | Office 365 E1 (STANDARDPACK)  |
 | SKYPE for Business Online (计划 1) \_ DE (MCOIMP \_ DE)  | SKYPE for Business Online (计划 1)  (MCOIMP)  |
-| Skype for Business Online (计划 2) \_ DE (MCOSTANDARD \_ DE)  | Skype for Business Online (计划 2)  (MCOSTANDARD)  |
+| Skype for Business Online (计划 2) \_ DE (MCOSTANDARD \_ DE)  | MCOSTANDARD (计划 2)  (Skype for Business Online)  |
 | Skype for Business Plus CAL \_ DE (MCOPLUSCAL \_ DE)  | Skype for Business Plus CAL (MCOPLUSCAL)  |
 | Visio Online Plan 1 for faculty \_ DE (VISIOONLINE \_ PLAN1 \_ FAC DE \_)  | Visio Online Plan 1 for faculty (VISIOONLINE \_ PLAN1 \_ FAC)  |
 | Visio Online 计划 1 \_ DE (VISIOONLINE \_ PLAN1 DE \_)  | Visio Online 计划 1 (VISIOONLINE \_ PLAN1)  |

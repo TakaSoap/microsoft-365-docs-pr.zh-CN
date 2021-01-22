@@ -16,17 +16,18 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: 了解如何将电脑连接到 Microsoft 365 商业版。
-ms.openlocfilehash: 715f20ecd8f10d3d21fbdfac2953369504f02dec
-ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
+ms.openlocfilehash: 61adae68541233ffb7b7087174c4633995b28fdd
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49701835"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49927306"
 ---
 # <a name="connect-your-pc-to-microsoft-365-business-premium"></a>将电脑连接到 Microsoft 365 商业高级版
 
@@ -37,7 +38,7 @@ ms.locfileid: "49701835"
 
 首先，验证是否安装了 Windows 10 专业版：
 
-1. 选择  **"开始** "，搜索  **控制面板** ，然后选择它。
+1. 选择  **"** 开始"，  **搜索控制面板** ，然后选择它。
 2. 选择 **"系统和安全**   >   **系统**"，并确认 Windows 版本。
 
 接下来，连接到 Microsoft 365 商业版：
@@ -53,10 +54,10 @@ ms.locfileid: "49701835"
 
 1. 选择  **所需的加密**  邮件。
 2. 选择 **"&#39;安装任何其他磁盘加密** 软件，加密我的所有磁盘，然后选择"**是"。** 你将看到一个  **"开始 BitLocker"**  窗口，该窗口具有进度栏。
-3. In the **Choose how to unlock your drive at startup** window， select Enter a PIN (recommended **) .**
+3. 在"**选择启动时如何解锁** 驱动器"窗口中，选择"输入推荐 (**PIN) 。**
 4. 输入 PIN，然后再次输入以进行验证。 选择 **"设置 PIN"。**
 5. 选择保存加密恢复密钥的方法，然后选择"下一 **步"。**
 6. 选择要加密的驱动器多少，然后选择"下一 **步"。**
-7. 选择加密模式，选择"**下** 一步"，然后选择"**继续"。** 现在，你的驱动器将被加密。 您可以在加密过程中继续工作。
+7. 选择加密模式，选择"**下** 一步"，然后选择"**继续"。** 你的驱动器现在将被加密。 您可以在加密过程中继续工作。
 
 你的电脑现在受 Microsoft 365 商业版保护和管理。

@@ -2,7 +2,7 @@
 title: 跟踪 Microsoft 安全分数历史记录并实现目标
 description: 深入了解影响 Microsoft 安全分数的活动。 发现趋势并设定目标。
 keywords: microsoft 安全分数， 安全分数， office 365 安全分数， Microsoft 安全分数， microsoft 365 安全中心， 改进操作
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 f1.keywords:
@@ -20,12 +20,13 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: ed937c90bbc6875ee3d72f710d5ac11d4069cbb6
-ms.sourcegitcommit: a8f3c633714e934f9ad026c3bc72157ed535dcfc
+ms.technology: m365d
+ms.openlocfilehash: c9af6a3ae6f461acfd2968897223446641d5cf09
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/29/2020
-ms.locfileid: "49738039"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49925668"
 ---
 # <a name="track-your-microsoft-secure-score-history-and-meet-goals"></a>跟踪 Microsoft 安全分数历史记录并实现目标
 
@@ -35,7 +36,7 @@ ms.locfileid: "49738039"
 
 ## <a name="gain-insights-into-activity-that-has-affected-your-score"></a>深入了解影响分数的活动
 
-在"历史记录"选项卡中查看组织一段时间的 **分数** 图。
+在"历史记录"选项卡中查看组织一段时间 **得分的图形。**
 
 下图是选定时间范围内执行的所有操作及其属性的列表，如生成的点和类别。 您可以自定义日期范围，并按类别进行筛选。
 
@@ -54,7 +55,7 @@ ms.locfileid: "49738039"
 * **安全分数区域** - 根据组织目标和良好、正常和差分范围的定义进行自定义。
 * **回归趋势** - 由于配置、用户或设备更改而已回归的点的时间线。  
 * **比较趋势** - 组织的安全分数如何与其他人的一段时间进行比较。 此视图可以包含表示具有相似席位计数的组织得分平均值的行和您可以设置的自定义比较视图。
-* **风险接受趋势** - 标记为"接受风险"的改进措施日程表。
+* **风险接受趋势** - 标记为"接受风险"的改进操作时间线。
 * **分数更改** - 获得分数、已回归分数以及指定日期范围内分数的更改。
 
 ### <a name="compare-your-score-to-organizations-like-yours"></a>将你的分数与像你这样的组织进行比较
@@ -63,11 +64,11 @@ ms.locfileid: "49738039"
 
 #### <a name="comparison-bar-chart"></a>比较条形图
 
-比较条形图是"概述 **"** 选项卡。将鼠标悬停在图表上可查看得分和得分机会。 对比较数据进行匿名处理，因此我们不确切知道哪些其他租户位于混合中。
+比较条形图是"概述 **"** 选项卡。将鼠标悬停在图表上可查看得分和得分机会。 对比较数据进行匿名处理，因此，我们完全不知道哪些其他租户位于混合中。
 
 ![相似组织分数的条形图](../../media/secure-score/secure-score-comparison-bar.png)
 
-- **组织（如你** 组织）：如果我们至少有五个或五 (个租户来比较符合以下条件) 租户的平均分数：
+- **类似你的** 组织：如果我们至少有五个或五 (个租户来比较符合以下条件) 租户的平均得分：
     1. 同一行业
     2. 组织规模相同
     3. 所有区域
@@ -80,7 +81,7 @@ ms.locfileid: "49738039"
     3. 所选 (区域) 
     4. 所选许可证 () 
     5. 使用的 Microsoft 产品有 80% 相似
-    6. 机会 (租户 20% 范围内的当前许可证) 达到的最大得分
+    6. 机会 (租户 20% 范围内的当前许可证) 可获取的最大得分
 
 如果你已进行自定义选择，但结果少于五个我们可以与之比较的其他租户，你将看到"由于数据有限，不可用"。
 

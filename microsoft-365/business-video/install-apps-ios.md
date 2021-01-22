@@ -16,17 +16,18 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: 了解如何在 iOS 设备上安装 Office 应用。
-ms.openlocfilehash: 4b92b21d1002d63f00cec322495cdc7d122c2f7c
-ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
+ms.openlocfilehash: e3b703f3bc0bfe6972ac73e9ad7de955d773a812
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49701557"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49927104"
 ---
 # <a name="install-outlook-and-office-apps-on-ios-devices"></a>在 iOS 设备上安装 Outlook 和 Office 应用
 
@@ -42,7 +43,7 @@ ms.locfileid: "49701557"
 4. 输入 Apple ID 密码，选择 **"登录打开**  >   **"。**
 5. 输入你的工作电子邮件地址。
 6. 选择 **"添加帐户**"，输入密码，然后选择"**登录"。**
-7.  (可选) ，选择"让我们做"以添加更多帐户，或选择"以后可能跳过此步骤"。 
+7.  (可选) ，选择 **Let's Do It ** 以添加更多帐户，  **或选择"**  以后可能跳过此步骤"。
 8. 选择  **"** 确定"重新启动应用，以便 Microsoft 365 商业版可以保护 Outlook 数据。
 9. 再次打开 Outlook，将出现一条确认消息。 选择 **"确定"。**
 10. 为 Outlook 和其他 Office 应用创建 PIN，然后确认。 从现在开始，此 PIN 将用于保护所有 Office 应用数据。
@@ -51,4 +52,4 @@ ms.locfileid: "49701557"
 
 现在可以在 iPhone 上使用 Outlook 检查电子邮件、日历和联系人。
 
-可以按相同方式安装其余 Office 应用，这些应用中的数据将受 Microsoft 365 商业高级版保护。
+你可以以相同方式安装其余 Office 应用，这些应用的数据将受 Microsoft 365 商业高级版保护。

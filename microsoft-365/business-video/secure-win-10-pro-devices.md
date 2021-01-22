@@ -16,18 +16,19 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- okr_smb
 monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: 了解如何使用 Microsoft 365 商业高级版管理 Windows 10 专业版设备策略。
-ms.openlocfilehash: 9052859f03035a76bf69b7c8c23c75ae00353846
-ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
-ms.translationtype: HT
+ms.openlocfilehash: f42c175543ae16ae645c17997b20ed67aa5d705c
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49701891"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49926002"
 ---
 # <a name="manage-windows-10-pro-device-policies"></a>管理 Windows 10 专业版设备策略
 

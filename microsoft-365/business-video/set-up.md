@@ -16,17 +16,18 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: 了解如何设置 Microsoft 365 商业高级版。
-ms.openlocfilehash: 79f089e38979990c29156ea07201c8d902a51e80
-ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
+ms.openlocfilehash: bda1326ebd905dece382c1513296739a39887976
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49701875"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49925942"
 ---
 # <a name="set-up-microsoft-365-business-premium"></a>设置 Microsoft 365 商业高级版
 

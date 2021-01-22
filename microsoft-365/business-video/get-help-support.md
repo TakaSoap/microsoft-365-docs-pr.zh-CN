@@ -16,18 +16,19 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- okr_smb
 monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: 了解如何在 Microsoft 365 商业高级版中获取管理员帮助或支持。
-ms.openlocfilehash: f33778c5c8b8ebfe71bd7acc6d203327a2fd7e94
-ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
+ms.openlocfilehash: bcfe140ec87b50048db570ad4efe4575135b3191
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49701638"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49927162"
 ---
 # <a name="get-help-or-support"></a>获取帮助或支持
 
@@ -35,7 +36,7 @@ ms.locfileid: "49701638"
 
 需要与某人说话吗？ 管理员在致电支持人员时准备好帐户详细信息。
 
-不是管理员？ 尝试 [Microsoft 对](https://go.microsoft.com/fwlink/?linkid=860695) 家庭用户和商业最终用户的支持。
+不是管理员？ 尝试 [Microsoft 对](https://go.microsoft.com/fwlink/?linkid=860695) 家庭用户和业务最终用户的支持。
 
 - **在美国，请拨打 1 800 865 9408。**
 - **在澳大利亚，请拨打 1 800 197 503。**
@@ -45,7 +46,7 @@ ms.locfileid: "49701638"
 帐单支持以英语提供，从星期一到星期五 (上午 9) 6 点提供。
 技术支持所用语言为英语，且全天候提供（每周 7 天，每天 24 小时）。
 
-若要查找你的国家/地区或地区的 Microsoft 365 或 Microsoft 365 商业高级版支持电话号码，请参阅联系 [商业版产品支持人员](https://support.microsoft.com/office/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)。
+若要查找你的国家/地区或地区的 Microsoft 365 或 Microsoft 365 商业高级版支持电话号码，请参阅 [联系商业版产品支持人员](https://support.microsoft.com/office/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)。
 
 ## <a name="try-it"></a>试一试！
 
@@ -70,4 +71,4 @@ ms.locfileid: "49701638"
 1. 输入你的位置、组织的规模和要查找的支持类型。 选择 **"转到"。**
 1. 在 **"查找 Microsoft 解决方案提供程序"页上** ，从列表中选择您需要的解决方案提供程序。
 
-    您选择的服务提供商将联系您。
+    你选择的服务提供商将联系你。

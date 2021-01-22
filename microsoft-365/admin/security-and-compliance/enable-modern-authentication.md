@@ -13,19 +13,21 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
-ms.custom: AdminSurgePortfolio
+ms.custom:
+- AdminSurgePortfolio
+- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 7dc1c01a-090f-4971-9677-f1b192d6c910
-description: 了解如何设置注册表项以启用安装了 Microsoft Office 2013 的设备的新式验证。
-ms.openlocfilehash: 8edcedefc04d5018b8b61022c26cbe027f7c24a9
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+description: 了解如何设置注册表项以对已安装 2013 Microsoft Office新式验证。
+ms.openlocfilehash: 34078291fa237b63c391a7e90ba06ea0085c37cb
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44779961"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49926554"
 ---
 # <a name="enable-modern-authentication-for-office-2013-on-windows-devices"></a>在 Windows 设备上启用适用于 Office 2013 的新式验证
 
@@ -43,7 +45,7 @@ ms.locfileid: "44779961"
 |HKCU\SOFTWARE\Microsoft\Office\15.0\Common\Identity\EnableADAL  |REG_DWORD  |1   |
 |HKCU\SOFTWARE\Microsoft\Office\15.0\Common\Identity\Version |REG_DWORD |1  |
    
-设置注册表项后，可以将 Office 2013 设备应用设置为使用具有 Microsoft 365 的[多重身份验证（MFA）](set-up-multi-factor-authentication.md) 。 
+设置注册表项后，可以将 Office 2013 设备应用设置为在 Microsoft 365 ([MFA ](set-up-multi-factor-authentication.md)) 多重身份验证。 
   
 如果当前登录了任何客户端应用，需注销并重新登录以使更改生效。否则，在建立 ADAL 标识之前，MRU 和漫游设置将不可用。
   

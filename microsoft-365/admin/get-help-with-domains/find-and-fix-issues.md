@@ -14,7 +14,9 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 - Adm_O365_Setup
-ms.custom: AdminSurgePortfolio
+ms.custom:
+- AdminSurgePortfolio
+- okr_smb
 search.appverid:
 - BCS160
 - MET150
@@ -22,12 +24,12 @@ search.appverid:
 - GEA150
 ms.assetid: 40398b0b-bdd0-4afd-ab5e-b5ae6b7990bf
 description: 了解如何通过确保 DNS 记录设置正确，在设置自定义域时遇到任何问题。
-ms.openlocfilehash: d2935a7fcc134f7f6d2dd06a5b4e0e0a8761ad8a
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+ms.openlocfilehash: 786df75f3f8a514e9b3c2a7666d715c9abd082bd
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49658515"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49926386"
 ---
 # <a name="find-and-fix-issues-after-adding-your-domain-or-dns-records"></a>查找并修复添加域或 DNS 记录之后出现的问题
 
@@ -36,13 +38,13 @@ ms.locfileid: "49658515"
 设置域以使用 Microsoft 365 可能非常困难。 DNS 系统要求严格，很难使用，并且，你的域的 DNS 设置会影响重要的业务活动，如电子邮件！
 
 > [!NOTE]
-> 可以通过检查域的状态来检查域的问题。 转到 **"设置**  >  **域**"，并查看"状态"列中的通知。 如果看到问题，请选择" (三个点) ，然后选择"检查运行状况 **"。** 打开的窗格将描述您的域发生的任何问题。
+> 可以通过检查域的状态来检查域的问题。 转到 **"设置**  >  **域**"，并查看"状态"**列中** 的通知。 如果看到问题，请选择三个点 (更多) ，然后选择"检查运行状况 **"。** 打开的窗格将描述您的域发生的任何问题。
   
 ## <a name="whats-going-on"></a>What's going on?
 
 - [无法验证你的域？](#cant-verify-your-domain)
     
-- [Outlook 无法工作？](#outlook-isnt-working)
+- [Outlook 不工作？](#outlook-isnt-working)
     
 - [每个人的电子邮件都切换到了 Microsoft 365，并且你只想让电子邮件切换？](#everyones-email-got-switched-to-microsoft-365-and-you-only-wanted-your-email-to-switch)
 

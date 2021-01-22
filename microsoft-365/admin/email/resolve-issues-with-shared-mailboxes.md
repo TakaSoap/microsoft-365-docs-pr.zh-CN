@@ -16,38 +16,39 @@ ms.collection:
 ms.custom:
 - MSStore_Link
 - AdminSurgePortfolio
+- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: 如果您在使用共享邮箱时遇到问题，请尝试这些解决方案。
-ms.openlocfilehash: c889d3aa2fab8c2dce4cc2a8a00ef49a905363a1
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+description: 如果遇到共享邮箱问题，请尝试这些解决方案。
+ms.openlocfilehash: ba62db76edff6e4ab3d738ed0af8db2a40c18394
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48445503"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49926482"
 ---
 # <a name="resolve-issues-with-shared-mailboxes"></a>解决共享邮箱问题
 
-如果您在创建或使用共享邮箱时看到错误消息，请尝试这些可能的解决方案。 
+如果在创建和使用共享邮箱时看到错误消息，请尝试这些可能的解决方案。 
 
 ## <a name="error-when-creating-shared-mailboxes"></a>创建共享邮箱时出错
 <a name="bkmk_Fix"> </a>
 
-如果您看到错误消息，则 **代理地址 "smtp： <共享邮箱名称 \> " 已由代理地址或 "" LegacyExchangeDN 使用 \<name> 。请选择其他代理地址**，这表示你尝试为共享邮箱提供一个已在使用中的名称。 例如，假设希望共享邮箱命名为 info@domain1 和 info@domain2。 可通过 2 种方法执行此操作：
+如果看到错误消息，""的代理地址或 **LegacyExchangeDN 已在使用代理地址"smtp：<共享 \> 邮箱 \<name> 名称"。请选择另一个** 代理地址，这意味着你要尝试为共享邮箱指定一个已在使用的名称。 例如，假设希望共享邮箱命名为 info@domain1 和 info@domain2。 可通过 2 种方法执行此操作：
 
-  - 使用 Windows PowerShell。 有关说明，请参阅以下博客文章： [在不同的域中创建具有相同别名的共享邮箱](https://www.cogmotive.com/blog/office-365-tips/create-shared-mailboxes-with-same-alias-at-different-domains-in-office-365)
+  - 使用 Windows PowerShell。 有关说明，请参阅此博客文章 [：在不同域中创建同名的共享邮箱](https://www.cogmotive.com/blog/office-365-tips/create-shared-mailboxes-with-same-alias-at-different-domains-in-office-365)
     
-  - 将第二个共享邮箱命名为不同于开头的内容，以避免出现此错误。 然后在管理中心内，将共享邮箱重命名为您想要的。
+  - 将第二个共享邮箱的名称从一开始不同，以绕开错误。 然后在管理中心中，将共享邮箱重命名为您希望它的名称。
 
-## <a name="error-about-not-having-send-permissions-when-using-a-shared-mailbox"></a>有关使用共享邮箱时不具有发送权限的错误
+## <a name="error-about-not-having-send-permissions-when-using-a-shared-mailbox"></a>使用共享邮箱时没有发送权限的错误
 
-如果您创建了一个共享邮箱，然后尝试从该邮箱发送邮件，则可能会出现以下情况：
+如果创建了共享邮箱，然后尝试从该邮箱发送邮件，您可能会收到以下消息：
 
-**无法发送此邮件。您没有代表指定用户发送邮件的权限。**
+**无法发送此消息。您没有代表指定用户发送邮件的权限。**
 
-当 Microsoft 365 遇到复制延迟问题时，将出现此消息。 当您的新共享邮箱的信息 (或添加的用户) 在我们的所有数据中心之间进行复制时，它会在一小时后消失。 请等待一小时，然后再尝试发送一封邮件。
+当 Microsoft 365 遇到复制延迟问题时，将出现此消息。 当有关新共享邮箱或已添加 (或添加的用户) 我们的所有数据中心进行复制时，它应在一个小时左右的时间消失。 等待一小时，然后再次尝试发送邮件。
 
 ## <a name="related-articles"></a>相关文章
 

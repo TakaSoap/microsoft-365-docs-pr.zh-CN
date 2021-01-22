@@ -16,18 +16,19 @@ ms.collection:
 ms.custom:
 - MSStore_Link
 - AdminSurgePortfolio
+- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 871a246d-3acd-4bba-948e-5de8be0544c9
 description: 创建共享邮箱，让企业中的多名人员分担查看和答复发送到同一地址的电子邮件的责任。
-ms.openlocfilehash: 2cef7c742407b291d392a73e72316e7feeba4197
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: d0bd5770f347766638af0f0e66b9f961b3721697
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48445635"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49926590"
 ---
 # <a name="create-a-shared-mailbox"></a>创建共享邮箱 
 
@@ -53,13 +54,13 @@ ms.locfileid: "48445635"
 
 ::: moniker range="o365-germany"
 
-2. 在[管理中心](https://go.microsoft.com/fwlink/p/?linkid=848041)，转到“**组**”\>“**共享邮箱**”页面。
+2. 在 [管理中心](https://go.microsoft.com/fwlink/p/?linkid=848041)，转到“**组**”\>“**共享邮箱**”页面。
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-2. 在[管理中心](https://go.microsoft.com/fwlink/p/?linkid=850627)，转到“**组**”\>“**共享邮箱**”页面。
+2. 在 [管理中心](https://go.microsoft.com/fwlink/p/?linkid=850627)，转到“**组**”\>“**共享邮箱**”页面。
 
 ::: moniker-end
     

@@ -16,17 +16,18 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: 了解如何在 Microsoft Teams 中作为来宾加入团队。
-ms.openlocfilehash: 85ad752c3b54dcd64020771b097026c964e6fac5
-ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
+ms.openlocfilehash: 31d5acb1a0294a54bcb5b5c7c74d76dbba7124f7
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49701598"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49925022"
 ---
 # <a name="join-a-team-as-a-guest"></a>作为来宾加入团队
 
@@ -47,5 +48,5 @@ ms.locfileid: "49701598"
 
     如果你已在组织中使用 Teams 应用作为来宾加入团队，则要简单很多。
 
-1. 只需打开 Microsoft Teams 应用，然后选择"  **是**  "以切换到受邀加入的团队。  现在，你可以协作处理 Teams 中的项目。
+1. 只需打开 Microsoft Teams 应用并选择"  **是**  "以切换到受邀加入的团队。  现在，你可以协作处理 Teams 中的项目。
 2. 若要切换回公司的团队，请从"组织  **"下拉列表中选择**  它。

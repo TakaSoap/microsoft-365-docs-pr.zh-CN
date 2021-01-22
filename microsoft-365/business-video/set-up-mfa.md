@@ -16,18 +16,19 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- okr_smb
 monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: 了解如何在手机上设置多重身份验证。
-ms.openlocfilehash: 0f86b93514f974d440ed2f58ee837ce9b497a53c
-ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
+ms.openlocfilehash: b682ec58c73d90b0936c107ab8fef1de5aff867d
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49701878"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49925930"
 ---
 # <a name="set-up-multi-factor-authentication-on-your-phone"></a>在手机上设置多重身份验证
 

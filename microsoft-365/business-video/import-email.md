@@ -16,17 +16,18 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: 了解如何将电子邮件导入到 Microsoft 365 商业版。
-ms.openlocfilehash: ae72662c779d230addb3b15d0d486900328fa602
-ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
+ms.openlocfilehash: a53552ddead1ed69a7c9b77bb8021a6340690059
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49701559"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49927171"
 ---
 # <a name="import-email-to-microsoft-365-for-business"></a>将电子邮件导入到 Microsoft 365 商业版 
 
@@ -50,7 +51,7 @@ ms.locfileid: "49701559"
 
 ### <a name="step-2-import-your-old-email-into-your-new-email-account"></a>步骤 2：将旧电子邮件导入新电子邮件帐户
 
-1. 在 Outlook 中，**选择"文件****"、"打开****"、"导出**"，然后 **导入/导出**。
+1. 在 Outlook 中，**选择"文件****"，"打开****"，"导出**"，然后 **导入/导出**。
 2. 选择 **"从另一个程序或文件** 导入"，然后选择"下 **一步"。**
 3. 选择 **Outlook 数据文件**，然后选择"下一 **步"。**
 4. 选择  **"** 浏览"，然后转到刚刚导出的文件。 选择它，然后选择"打开 **"，** 然后选择"下 **一步"。**

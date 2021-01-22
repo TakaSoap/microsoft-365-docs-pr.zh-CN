@@ -16,19 +16,20 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: 了解如何在外部轻松共享业务文件。
-ms.openlocfilehash: 9fc15ab0b3eee3b32a4ede7122e8ca7baddb5143
-ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
+ms.openlocfilehash: 4f5870859b06aa4229a37576bcc724ddb078d833
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49701874"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49925906"
 ---
-# <a name="easily-share-files-externally"></a>轻松在外部共享文件
+# <a name="easily-share-files-externally"></a>在外部轻松共享文件
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2dCOV?autoplay=false]
 

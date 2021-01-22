@@ -4,7 +4,7 @@ description: 在高级搜寻架构的 EmailAttachmentInfo 表中，了解电子�
 keywords: 高级搜寻， 威胁搜寻， 网络威胁搜寻， Microsoft 威胁防护， microsoft 365， mtp， m365， 搜索， 查询， 遥测， 架构参考， kusto， 表， 列， 数据类型， 说明， EmailAttachmentInfo， 网络邮件 ID， 发件人， 收件人， 附件 ID， 附件名称， 恶意软件裁定
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,12 +19,13 @@ mms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: 6d88303b34f78abc857e9aec749bf2f58090f43a
-ms.sourcegitcommit: 1a9f0f878c045e1ddd59088ca2a94397605a242a
+ms.technology: m365d
+ms.openlocfilehash: c6cab4d813eba79e298d0082072888e3ef1ad1cd
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "49667645"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49926998"
 ---
 # <a name="emailattachmentinfo"></a>EmailAttachmentInfo
 

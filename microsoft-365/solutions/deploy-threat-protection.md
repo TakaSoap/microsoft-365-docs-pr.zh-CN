@@ -1,12 +1,13 @@
 ---
-title: 在 Microsoft 365 中部署网络安全威胁保护
-description: 了解如何在 Microsoft 365 E5 中部署威胁保护服务和 IT 网络安全功能。
+title: 跨 Microsoft 365 部署网络安全威胁防护
+description: 了解如何在 Microsoft 365 E5 中部署威胁防护服务和 IT 网络安全功能。
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
 ms.audience: ITPro
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
+ms.technology: m365d
 localization_priority: Normal
 ms.collection:
 - M365-security-compliance
@@ -14,66 +15,66 @@ ms.collection:
 - m365solution-threatprotection
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: 1bf06c605290dc94f64da6c2aabca3683c234c9a
-ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
+ms.openlocfilehash: 79352aca2012e6615f41b19f4a77fc5cf125f4c4
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "48906747"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49926746"
 ---
-# <a name="deploy-threat-protection-capabilities-across-microsoft-365"></a>在 Microsoft 365 中部署威胁防护功能
+# <a name="deploy-threat-protection-capabilities-across-microsoft-365"></a>跨 Microsoft 365 部署威胁防护功能
 
-[恶意软件](https://docs.microsoft.com/windows/security/threat-protection/intelligence/understanding-malware)和复杂的 cyberattacks （如 [fileless 威胁](https://docs.microsoft.com/windows/security/threat-protection/intelligence/fileless-threats)）是常见事件。 企业需要使用有效的 IT 网络安全功能来保护自己及其客户。 此类攻击可能会导致贵组织的主要问题，包括从失去信任到财务 woes、业务威胁停机等。 防御威胁非常重要，但确定组织的时间、工作和资源的位置可能会有很大难度。 
+[恶意软件](https://docs.microsoft.com/windows/security/threat-protection/intelligence/understanding-malware)和复杂的网络攻击（如无文件威胁）[](https://docs.microsoft.com/windows/security/threat-protection/intelligence/fileless-threats)是常见事件。 企业需要使用有效的 IT 网络安全功能来保护自己及其客户。 此类攻击可能会给组织带来严重问题，包括失去信任、财务问题、业务中断停机时间等。 防范威胁很重要，但确定组织的时间、精力和资源重点在哪些方面是一项挑战。 
 
-Microsoft 安全解决方案内置在我们的产品和服务中。 自动化和机器学习功能可降低安全团队的负载，以确保解决正确的项目。 Microsoft 网络安全解决方案的优势是基于我们在 [智能安全图形](https://cloud-platform-assets.azurewebsites.net/intelligent-security-graph)中每天处理的 trillions 信号。 Microsoft 365 安全解决方案包括 [microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-threat-protection)，这是一种解决方案，可跨您的电子邮件、数据、设备和标识一起提供各种信号，以在组织中绘制高级威胁的图片。
+Microsoft 安全解决方案内置在我们的产品和服务中。 自动化和机器学习功能可减少安全团队的负载，以确保解决正确的项目。 Microsoft 网络安全解决方案的强大功能基于我们的 Intelligent [Security Graph](https://cloud-platform-assets.azurewebsites.net/intelligent-security-graph)中每天处理数十万个信号。 Microsoft 365 安全解决方案包括 [Microsoft 365 Defender，](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-threat-protection)这是一种将电子邮件、数据、设备和标识中的信号汇集在一起的解决方案，可绘制针对组织的高级威胁的图片。
 
 
 观看此视频以简要了解部署流程。
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4vsI7]
 
-使用本文作为实施威胁防护解决方案的指南。
+使用本文作为实现威胁防护解决方案的指南。
 
 ## <a name="threat-protection-in-microsoft-365-e5"></a>Microsoft 365 E5 中的威胁防护
 
-[Microsoft 365 E5](https://www.microsoft.com/microsoft-365/enterprise-e5-business-software?activetab=pivot%3aoverviewtab) 使你能够使用自适应内置智能来保护你的组织。 使用 Microsoft 365 E5 中的威胁防护功能，可以在内部部署和云环境中检测和调查高级威胁、受到危害的身份和恶意操作。
+[Microsoft 365 E5](https://www.microsoft.com/microsoft-365/enterprise-e5-business-software?activetab=pivot%3aoverviewtab) 使你能够使用自适应内置智能保护组织。 借助 Microsoft 365 E5 中的威胁防护功能，可以检测和调查内部部署和云环境中的高级威胁、遭到入侵的标识和恶意操作。
 
-在 Microsoft 365 E5 中，默认情况下会集成威胁防护功能。 来自每个功能的信号将强度增加到检测和响应威胁的总体能力。 与运行非 Microsoft 产品相比，组合的一组功能为组织提供了最佳保护，尤其是多国组织。 下图描述了 Microsoft 365 E5 中的威胁防护服务和功能，如本文中所述。
+在 Microsoft 365 E5 中，默认情况下集成了威胁防护功能。 来自每个功能的信号为检测和响应威胁的整体能力增加强度。 与运行非 Microsoft 产品相比，组合的功能集为组织（尤其是跨国家/地区组织）提供最佳保护。 下图描述了本文中介绍的 Microsoft 365 E5 中的威胁防护服务和功能。
 
 ![Microsoft 365 Defender 概述](../media/solutions-architecture-center/deploy-threat-protection-across-m365-overview.png)
 
-一旦您部署任何适用于 Office 365 的任何 Defender 功能，您就可以打开 Microsoft 365 Defender，这会将信号和数据一起引入一个位置。 
+一旦部署任何 Defender for Office 365 功能，就可以打开 Microsoft 365 Defender，从而将信号和数据汇集在一起。 
 
-![Microsoft 365 Defender 仪表板的概念性图示](../media/solutions-architecture-center/deploy-threat-protection-across-m365-mtp.png)
+![Microsoft 365 Defender 仪表板的概念图示](../media/solutions-architecture-center/deploy-threat-protection-across-m365-mtp.png)
 
-下图展示了用于部署这些单独功能的推荐途径。 
+下图描述了部署这些单个功能的建议路径。 
 
 ![M365 威胁防护信号](../media/solutions-architecture-center/deploy-threat-protection-across-m365.png)
 
 |解决方案/功能  |说明  |
 |---------|---------|
-|多重身份验证和条件访问     |针对泄露的标识和设备进行防护。 从这种保护开始，因为它是基础。 本指南中建议的配置包括作为先决条件的 Azure AD 标识保护。     |
-|Microsoft Defender for Identity     |  一种基于云的安全解决方案，利用本地 Active Directory 信号识别、检测和调查组织中的高级威胁、已泄露身份和恶意内幕行为。 关注 Microsoft Defender for Identity 下一步，因为它保护您的本地和云基础结构，没有任何依赖项或先决条件，并且可以提供直接的好处。       | 
-|Microsoft Defender for Office 365     | 保护您的组织免受电子邮件、链接 (Url) 和协作工具带来的恶意威胁的侵扰。 针对恶意软件、网络钓鱼、欺骗和其他攻击类型的保护。 接下来建议配置 Microsoft Defender for Office 365，因为更改控制、从委任系统迁移设置以及其他注意事项可能需要更长时间才能部署。 <br><br>注意：请确保在 Exchange Online Protection)  (配置所有 Office 365 订阅中所包含的威胁防护功能。       |
-|Microsoft Defender for Endpoint    | 一种 endpoint protection 平台，可帮助防止、检测、调查和响应高级威胁。  用于终结点的 Defender 可能需要一些时间来部署，但可以与其他功能并行进行配置。   |
-|Microsoft Cloud App Security     |   用于发现、调查和治理的云访问安全代理。 你可以及早启用 Microsoft 云应用安全，以开始收集数据和见解。 在您的 SaaS 应用程序中实施信息和其他目标保护涉及规划，并可能需要更多时间。       | 
+|多重身份验证和条件访问     |防止标识和设备遭到入侵。 从此保护开始，因为它具有基础性。 本指南中建议的配置包括 Azure AD Identity Protection 作为先决条件。     |
+|Microsoft Defender for Identity     |  基于云的安全解决方案，利用本地 Active Directory 信号识别、检测和调查针对组织的高级威胁、泄露的身份和恶意内部操作。 接下来关注 Microsoft Defender for Identity，因为它可保护你的企业部署和云基础结构，没有任何依赖关系或先决条件，并且可以提供直接的好处。       | 
+|Microsoft Defender for Office 365     | 保护组织免受电子邮件、链接和 (URL) 和协作工具造成的恶意威胁。 恶意软件、网络钓鱼、欺骗和其他攻击类型的保护。 接下来，建议配置适用于 Office 365 的 Microsoft Defender，因为更改控制、从系统迁移设置和其他注意事项可能需要更长时间才能部署。 <br><br>注意：确保配置 Exchange Online Protection (中所有 Office 365 订阅) 。       |
+|Microsoft Defender for Endpoint    | 有助于预防、检测、调查和响应高级威胁的终结点保护平台。  Defender for Endpoint 可能需要一些时间才能部署，但配置可以与其他功能并行完成。   |
+|Microsoft Cloud App Security     |   用于发现、调查和治理的云访问安全代理。 你可以提前启用 Microsoft Cloud App Security，以便开始收集数据和见解。 在 SaaS 应用中实现信息和其他目标保护涉及规划，并且可能需要更多时间。       | 
 
 > [!TIP]
-> 具有多个安全团队的组织可以并行实施这些功能。
+> 具有多个安全团队的组织可以并行实现这些功能。
 
 ## <a name="deploy-your-threat-protection-solution"></a>部署威胁防护解决方案
 
-若要确保贵组织能够获得最佳保护，请设置和部署安全解决方案以包括以下步骤：
+若要确保组织具有尽可能最佳的保护，请设置和部署安全解决方案以包括以下步骤：
 
 1. [设置多重身份验证和条件访问策略](deploy-threat-protection-configure.md#step-1-set-up-multi-factor-authentication-and-conditional-access-policies)
-2. [配置 Microsoft Defender for Identity](deploy-threat-protection-configure.md#step-2-configure-microsoft-defender-for-identity)
-3. [启用 Microsoft 365 Defender](deploy-threat-protection-configure.md#step-3-turn-on-microsoft-365-defender)
-4. [配置适用于 Office 的 Defender 365](deploy-threat-protection-configure.md#step-4-configure-microsoft-defender-for-office-365)
-5. [为终结点配置 Microsoft Defender](deploy-threat-protection-configure.md#step-5-configure-microsoft-defender-for-endpoint)
-6. [配置 Microsoft 云应用安全](deploy-threat-protection-configure.md#step-6-configure-microsoft-cloud-app-security)
-7. [监视状态并采取操作](deploy-threat-protection-configure.md#step-7-monitor-status-and-take-actions)
+2. [配置 Microsoft Defender 标识](deploy-threat-protection-configure.md#step-2-configure-microsoft-defender-for-identity)
+3. [打开 Microsoft 365 Defender](deploy-threat-protection-configure.md#step-3-turn-on-microsoft-365-defender)
+4. [为 Office 365 配置 Defender](deploy-threat-protection-configure.md#step-4-configure-microsoft-defender-for-office-365)
+5. [配置适用于终结点的 Microsoft Defender](deploy-threat-protection-configure.md#step-5-configure-microsoft-defender-for-endpoint)
+6. [配置 Microsoft Cloud App Security](deploy-threat-protection-configure.md#step-6-configure-microsoft-cloud-app-security)
+7. [监视状态并采取措施](deploy-threat-protection-configure.md#step-7-monitor-status-and-take-actions)
 8. [培训用户](deploy-threat-protection-configure.md#step-8-train-users)
 
-您的威胁防护功能可以并行配置，因此，如果您有多个负责不同服务的网络安全团队，则可以同时配置组织的保护功能。 下图说明了部署威胁防护功能的高级别过程。 
+威胁防护功能可以并行配置，因此，如果有多个网络安全团队负责不同的服务，他们可以同时配置组织的保护功能。 下图演示了部署威胁防护功能的高级别流程。 
 
 ![部署威胁防护功能的过程](../media/solutions-architecture-center/deploy-threat-protection-across-m365-grid.png) 

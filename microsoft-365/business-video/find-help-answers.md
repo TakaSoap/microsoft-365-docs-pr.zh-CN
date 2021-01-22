@@ -16,18 +16,19 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- okr_smb
 monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: 了解如何查找 Microsoft 365 商业高级版管理员帮助。
-ms.openlocfilehash: 0fb3e3ae2521353b9185e5b7f27b681e1d9c743c
-ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
+ms.openlocfilehash: 3eaf5d63d681076386643e28f0270ae5cd532971
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49701898"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49925130"
 ---
 # <a name="find-answers-and-help-for-admins"></a>查找管理员的答案和帮助
 
@@ -49,5 +50,5 @@ ms.locfileid: "49701898"
 您还可以使用以下资源获取有关问题的帮助：
 
 - [aka.ms/learn365admin](https://aka.ms/learn365admin)，搜索所有与管理员相关的任务和帮助，如重置密码和分配 Microsoft 订阅。
-- [answers.microsoft.com](https://answers.microsoft.com)、搜索答案、开始讨论以及向其他用户提问。
+- [answers.microsoft.com，](https://answers.microsoft.com)以搜索答案、开始讨论以及向其他用户提问。
 - [techcommunity.microsoft.com](https://techcommunity.microsoft.com)，加入专家社区并查找适用于你的企业 Microsoft 365 的最佳实践。

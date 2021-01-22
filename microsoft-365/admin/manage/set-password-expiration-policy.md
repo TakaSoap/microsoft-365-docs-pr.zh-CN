@@ -13,7 +13,9 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
-ms.custom: AdminSurgePortfolio
+ms.custom:
+- AdminSurgePortfolio
+- okr_smb
 search.appverid:
 - BCS160
 - MET150
@@ -21,12 +23,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0f54736f-eb22-414c-8273-498a0918678f
 description: 了解如何在 Microsoft 365 管理中心为组织设置密码过期策略。
-ms.openlocfilehash: 96e9159f3228fb6b7725f2f0d6eb515b108bc32e
-ms.sourcegitcommit: 98b889e674ad1d5fa37d4b6c5fc3eda60a1d67f3
+ms.openlocfilehash: 471a881bd9808861b9fa2c67d007f1ebe1c10885
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "49751497"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49926170"
 ---
 # <a name="set-the-password-expiration-policy-for-your-organization"></a>为组织设置密码过期策略
 

@@ -16,17 +16,18 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: 了解如何安排与来宾的 Teams 会议。
-ms.openlocfilehash: 3efe87e93bc70adba4c99be3f2791e464cbfbc83
-ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
+ms.openlocfilehash: 2da05fdd4bc10bb1cc0dea5cd769c4630787820c
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49701545"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49926086"
 ---
 # <a name="schedule-a-teams-meeting-with-guests"></a>安排有来宾用户参加的 Teams 会议
 

@@ -3,7 +3,7 @@ title: Microsoft 365 Defender 服务问题疑难解答
 description: 查找解决方案并解决已知的 Microsoft 365 Defender 问题
 keywords: Microsoft 威胁防护疑难解答， 疑难解答， Azure ATP， 问题， 加载项， 设置页面
 search.product: eADQiWindows 10XVcnh
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,12 +19,13 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: b7b6ea55d084c114b79dfee0e061b09c8ede8632
-ms.sourcegitcommit: 222fb7fe2b26dde3d8591b61cc02113d6135012c
+ms.technology: m365d
+ms.openlocfilehash: 414743fa5ba25b9d2714c1dd08dd38e34ec94372
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "49760454"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49925714"
 ---
 # <a name="troubleshoot-microsoft-365-defender-service-issues"></a>Microsoft 365 Defender 服务问题疑难解答
 
@@ -42,7 +43,7 @@ ms.locfileid: "49760454"
 
 有关详细信息，请参阅[必备条件](prerequisites.md)。
 
-## <a name="microsoft-defender-for-identity-alerts-are-not-showing-up-in-the-microsoft-365-defender-incidents"></a>Microsoft Defender for Identity 警报未显示在 Microsoft 365 Defender 事件中
+## <a name="microsoft-defender-for-identity-alerts-are-not-showing-up-in-the-microsoft-365-defender-incidents"></a>Microsoft 365 Defender 事件中未显示 Microsoft Defender 标识警报
 
 如果你的环境中部署了 Microsoft Defender for Identity，但看不到 Defender for Identity 警报作为 Microsoft 365 Defender 事件的一部分，则需要确保 Microsoft Cloud App Security 和 Defender for Identity 集成已启用。
 

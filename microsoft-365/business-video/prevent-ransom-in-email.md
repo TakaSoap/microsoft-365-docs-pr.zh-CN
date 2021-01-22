@@ -1,5 +1,5 @@
 ---
-title: 创建勒索软件的电子邮件规则
+title: 创建针对勒索软件的电子邮件规则
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -16,18 +16,19 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- okr_smb
 monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: 了解如何创建电子邮件规则以防止勒索软件。
-ms.openlocfilehash: 85898480438225848fc09db9a9c507045f8a182c
-ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
+ms.openlocfilehash: 3b45af71aa26beb31e21f5db662091f46343f97d
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49701546"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49926110"
 ---
 # <a name="create-email-rules-to-prevent-ransomware"></a>创建电子邮件规则以防止勒索软件
 

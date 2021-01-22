@@ -16,18 +16,19 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- okr_smb
 monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: 了解如何删除 Microsoft 365 商业版中的用户。
-ms.openlocfilehash: d44b04f0a053fb8dc43188a048043d0a90c708ea
-ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
+ms.openlocfilehash: 01c26431947950195c5fc711d8bd0d82c808beec
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49701610"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49927270"
 ---
 # <a name="delete-a-user"></a>删除用户
 
@@ -48,7 +49,7 @@ ms.locfileid: "49701610"
 1. 选择用户，然后选择"下一 **步"。**
 1. 如果需要，可以创建一个新显示名称指示邮箱属于以前的员工，然后选择"下一步 **"。**
 1. 打开自动答复，并更改回复文本（如果需要）。
-1. 选择向谁发送自动答复、公司内外人员以及是否将同一答复发送给公司外部人员，然后选择"下一 **步"。**
+1. 选择向谁发送自动答复、公司内部或外部人员以及是否将同一回复发送给公司外部人员，然后选择"下一 **步"。**
 1. 若要删除关联的电子邮件别名，请选择 **其别名旁边的 X。**
 1. 查看共享邮箱信息，然后选择"完成 **"。**
 1. 确认选项设置正确，然后选择"**分配"和"转换"。**

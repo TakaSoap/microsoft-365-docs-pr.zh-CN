@@ -13,19 +13,21 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
-ms.custom: AdminSurgePortfolio
+ms.custom:
+- AdminSurgePortfolio
+- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
 description: 了解如何使用管理中心中的集中部署将加载项部署到组织的用户和组。
-ms.openlocfilehash: 37fac34449ee39366778e29c0eeddf1fc7bfdd37
-ms.sourcegitcommit: 884ac262443c50362d0c3ded961d36d6b15d8b73
+ms.openlocfilehash: ef7237f20780cb67bc84561ad8617dd8da6f8b82
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49698285"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49926350"
 ---
 # <a name="deploy-add-ins-in-the-admin-center"></a>在管理中心部署加载项
 
@@ -36,18 +38,18 @@ ms.locfileid: "49698285"
 
 ::: moniker-end
 
-Office 加载项可帮助用户个性化设置文档并加速访问 Web 上的信息（请参阅[开始使用 Office 加载项](https://support.microsoft.com/office/82e665c4-6700-4b56-a3f3-ef5441996862)）。 作为管理员，可以使用 Microsoft 365 管理中心中的集中部署功能为组织的用户部署 Office 外接程序。 对于大多数管理员来说，集中部署是推荐且功能最丰富的方法，用于将外接程序部署到组织内的用户和组。 
+Office 加载项可帮助用户个性化设置文档并加速访问 Web 上的信息（请参阅[开始使用 Office 加载项](https://support.microsoft.com/office/82e665c4-6700-4b56-a3f3-ef5441996862)）。 作为管理员，可以使用 Microsoft 365 管理中心中的集中部署功能为组织的用户部署 Office 外接程序。 对于大多数管理员来说，集中部署是推荐且功能最丰富的方法，用于将加载项部署到组织内的用户和组。 
 
 若要详细了解如何确定组织能否支持集中部署，请参阅"确定外接程序的集中部署是否适用于[组织"。](centralized-deployment-of-add-ins.md)
 
-若要了解有关在部署后管理外接程序的更多信息，请参阅管理 [中心中的"管理外接程序"](manage-addins-in-the-admin-center.md)
+若要了解有关在部署后管理外接程序的更多信息，请参阅管理中心中的 [管理外接程序](manage-addins-in-the-admin-center.md)
   
 > [!NOTE]
 >  对于 Word，Excel 和 PowerPoint 使用 [SharePoint](https://dev.office.com/docs/add-ins/publish/publish-task-pane-and-content-add-ins-to-an-add-in-catalog) 应用程序目录向本地环境中的用户部署加载项，无需连接到 Microsoft 365 和/或支持所需的 SharePoint 外接程序。 对于 Outlook，使用 Exchange 控制面板在本地环境中部署，而无需连接到 Microsoft 365。
   
 ## <a name="recommended-approach-for-deploying-office-add-ins"></a>部署 Office 加载项的建议方法
 
-若要使用分阶段方法推出加载项，我们建议采用以下方法：
+若要使用分阶段方法推出加载项，我们建议执行以下操作：
   
 1. 将外接程序推出给一小组业务利益干系人以及 IT 部门的成员。 如果部署成功，请移至步骤 2。
     
@@ -59,7 +61,7 @@ Office 加载项可帮助用户个性化设置文档并加速访问 Web 上的�
   
 ## <a name="deploy-an-office-add-in-using-the-admin-center"></a>使用管理中心部署 Office 加载项
 
-在开始之前，请参阅"确定外接程序的集中部署[是否适用于你的组织"。](centralized-deployment-of-add-ins.md)
+开始之前，请参阅"确定外接程序的集中部署[是否适用于你的组织"。](centralized-deployment-of-add-ins.md)
   
 1. 在管理中心，转到 **"设置** \> **加载项"** 页。 如果看不到外接程序页面，请转到"设置集成 \> **应用** \> **外接程序"** 页。
     
@@ -77,7 +79,7 @@ Office 加载项可帮助用户个性化设置文档并加速访问 Web 上的�
     > [!NOTE] 
     > 使用 Office 应用商店选项，更新和增强功能会自动部署到用户。
 
-5. 下一页上，选择"每个人"、"特定用户 **/** 组"或"仅我"以指定外接程序部署到的用户。 使用"搜索"框查找特定用户或组。 <br/>
+5. On the next page， select **Everyone，** **Specific users/groups，** or **Just me** to specify who the add-in is deployed to. 使用"搜索"框查找特定用户或组。 <br/>
 
     > [!NOTE] 
     > 若要了解适用于外接程序的其他状态，请参阅 [外接程序状态](https://docs.microsoft.com/microsoft-365/admin/manage/manage-addins-in-the-admin-center.md)。
@@ -103,9 +105,9 @@ Office 加载项可帮助用户个性化设置文档并加速访问 Web 上的�
     
 - **用户** 如果将加载项分配给单个用户，然后将外接程序部署到新用户，则必须先添加新用户。
     
-- **组** 如果将加载项分配给组，则会自动向添加到该组的用户分配加载项。 从组中删除用户时，用户将失去对加载项的访问权限。 在任一情况下，管理员无需执行任何其他操作。 
+- **组** 如果将外接程序分配给组，则会自动向添加到该组的用户分配加载项。 从组中删除用户时，用户将失去对加载项的访问权限。 在任一情况下，管理员无需执行任何其他操作。 
 
-- **只有我** 如果仅将外接程序分配给自己，则仅将加载项分配给你的帐户，这是测试外接程序的理想帐户。
+- **只有我** 如果仅将加载项分配给自己，则仅将加载项分配给你的帐户，这是测试外接程序的理想帐户。
     
 适合贵组织的选项取决于您的配置。 但是，我们建议使用组进行分配。 作为管理员，您可能会发现使用组并控制这些组的成员身份，而不是每次分配单个用户来更轻松地管理外接程序。 在某些情况下，您可能希望通过手动分配用户来为特定用户分配分配，从而限制对一小组用户的访问。
   

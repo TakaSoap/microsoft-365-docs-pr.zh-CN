@@ -13,31 +13,33 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
-ms.custom: AdminSurgePortfolio
+ms.custom:
+- AdminSurgePortfolio
+- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: a1229cdb-ce19-4da5-90c7-2b9b146aef0a
-description: 使用 Azure Active Directory 自定义 Microsoft 365 登录页面。 您可以向登录页面添加插图、徽标和文本。
-ms.openlocfilehash: 2f6df71a46e7510413601fe7dc00143280b4e6aa
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+description: 使用 Azure Active Directory 自定义 Microsoft 365 登录页面。 你可以向登录页添加插图、徽标和文本。
+ms.openlocfilehash: 9a4e18aeb050fe128ded1ea83756256a386a0fb4
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44398938"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49926902"
 ---
 # <a name="add-your-company-branding-to-the-sign-in-page"></a>将公司品牌添加到登录页面
 
- 现在，你可以使用 Microsoft 365 订阅附带的 Azure Active Directory （AD）订阅来自定义你的用户看到的登录页面。 
+ 你现在可以使用 Microsoft 365 订阅 (Azure Active Directory) AD) 订阅来自定义用户看到的登录页面。 
   
 ## <a name="add-company-branding-to-your-sign-in-page-and-access-panel-pages"></a>将公司品牌添加到登录页和访问面板页
 
-如果你已付费订阅 Microsoft 365 for business、Microsoft Dynamics CRM Online、企业移动性套件或其他 Microsoft 服务，则你将拥有对 Azure Active Directory 的免费订阅。 您可以使用 Azure Active Directory 创建和管理用户和组帐户，并将公司品牌添加到页面中。 若要激活此订阅并访问 Microsoft Azure 管理门户，您必须完成一次性注册过程。 之后，你可以从使用它的 Microsoft 服务访问 Azure Active Directory。 有关如何注册 Microsoft 365 订阅的说明，请参阅[注册免费的 Azure Active Directory 订阅](https://go.microsoft.com/fwlink/p/?LinkID=527966)，有关常规管理说明，请参阅[在 Azure 中管理 Microsoft 365 订阅的目录](https://go.microsoft.com/fwlink/p/?LinkId=620076)。 
+如果你有 Microsoft 365 商业版、Microsoft Dynamics CRM Online、企业移动性套件或其他 Microsoft 服务的付费订阅，则你有 Azure Active Directory 的免费订阅。 可以使用 Azure Active Directory 创建和管理用户和组帐户，以及向页面添加公司品牌。 若要激活此订阅并访问 Microsoft Azure 管理门户，必须完成一次注册过程。 之后，你可以从使用 Azure Active Directory 的 Microsoft 服务访问它。 有关如何注册 Microsoft 365 订阅的说明，请参阅注册免费的 [Azure Active Directory](https://go.microsoft.com/fwlink/p/?LinkID=527966)订阅，有关常规管理说明，请参阅在 Azure 中管理 [Microsoft 365](https://go.microsoft.com/fwlink/p/?LinkId=620076) 订阅的目录。 
   
 下图显示了可以在 Azure 中修改登录页面的哪些部分。
   
-![您可以自定义的登录页面的区域。](../../media/screenshotbranding.png)
+![可以自定义的登录页区域。](../../media/screenshotbranding.png)
   
 1. 大插图和/或背景色
     

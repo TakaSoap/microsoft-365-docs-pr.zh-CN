@@ -16,23 +16,24 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: 了解如何为企业主持联机会议。
-ms.openlocfilehash: b0a95ff30fbff4da46ebcf0d8c236ba1023deebb
-ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
+ms.openlocfilehash: 178091c5233da5e96ed6c9f074b5418cc00c4155
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49701558"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49926122"
 ---
 # <a name="host-online-meetings-for-your-business"></a>为企业主持联机会议
 
-需要与客户、客户或合作伙伴会面，但无法让每个人都在一个地方？ 不用担心，请参加联机会议。 如果他们有智能手机、平板电脑或笔记本电脑，他们可以使用 Microsoft Teams 加入。
+需要与客户、客户或合作伙伴会面，但无法将每个人放在一个地方？ 不用担心，请参加联机会议。 如果他们有智能手机、平板电脑或笔记本电脑，他们可以使用 Microsoft Teams 加入。
 
-他们需要下载免费版本或在浏览器中联机[](https://support.microsoft.com/office/6d79a648-6913-4696-9237-ed13de64ae3c)加入，才能[](https://support.microsoft.com/office/1613bb53-f3fa-431e-85a9-d6a91e3468c9)获取视频和屏幕共享。
+他们需要下载免费版本或在浏览器中联机[](https://support.microsoft.com/office/6d79a648-6913-4696-9237-ed13de64ae3c)加入[，才能获取](https://support.microsoft.com/office/1613bb53-f3fa-431e-85a9-d6a91e3468c9)视频和屏幕共享。
 
 如果你经常与客户、客户或合作伙伴就项目紧密协作，请考虑为客户端创建团队，这样[](https://support.microsoft.com/office/11fbb083-52ee-434d-8c6e-63711fdafac7)你可以轻松地邀请他们参加会议，还可以在 Microsoft Teams 中进行对话、共享文件和跟踪项目。
 
@@ -50,7 +51,7 @@ ms.locfileid: "49701558"
 1. 选择 **"安排会议"。**
 1. 在 **"新建会议"框中****，输入****会议的标题** 和位置。
 1. 输入 **开始时间** 和 **结束** 时间和日期。
-1. 在 **"详细信息** "框中，输入会议说明和要添加的其他任何详细信息，如会议议程。
+1. 在 **"详细信息** "框中，输入会议说明和要添加的其他任何详细信息，例如会议议程。
 1. 在 **"邀请人员**"下，输入要邀请的员工或客户的姓名。
 1. 如果在任意名称 **下方** 看到暂定或忙碌，请选择提供的空闲时间之一，**或单击"** 日程安排助理"查看更多选项。
 1. 选择 **"安排会议"。**

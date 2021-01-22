@@ -13,19 +13,21 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
-ms.custom: AdminSurgePortfolio
+ms.custom:
+- AdminSurgePortfolio
+- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 758759ad-63ee-4ea9-90a3-39f941897b7d
 description: 了解可以使用的组类型。
-ms.openlocfilehash: ee8d14035ed9eb8296c54510b8fe1d374c9dc2b2
-ms.sourcegitcommit: f3a02584c9354a46c082f8f948b34a177adf65bb
+ms.openlocfilehash: 4cbc7f15632026babec3640f021c09e901ad20b9
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "46514763"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49925526"
 ---
 # <a name="compare-groups"></a>比较组
 
@@ -33,9 +35,9 @@ ms.locfileid: "46514763"
 
 - **Microsoft 365 组** （之前称为 Office 365 组）用于公司内部和外部用户之间的协作。
 - **通讯组** 用于向一组人员发送通知。
-- **安全组**用于授予对资源（如 SharePoint 网站）的访问权限。
-- **启用邮件的安全组**用于授予对资源（如 SharePoint）的访问权限，并向这些用户发送电子邮件通知。
-- 当多个用户需要访问同一邮箱（例如公司信息或支持电子邮件地址）时，将使用**共享邮箱**。
+- **安全组** 用于授予对资源（如 SharePoint 网站）的访问权限。
+- **启用邮件的安全组** 用于授予对资源（如 SharePoint）的访问权限，并向这些用户发送电子邮件通知。
+- 当多个用户需要访问同一邮箱（例如公司信息或支持电子邮件地址）时，将使用 **共享邮箱**。
 
 ## <a name="microsoft-365-groups"></a>Microsoft 365 组
 

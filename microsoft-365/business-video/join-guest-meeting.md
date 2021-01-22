@@ -16,17 +16,18 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: 了解如何与来宾一起加入 Teams 会议。
-ms.openlocfilehash: bb13396f13062e65700a535315ef41292210b3a8
-ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
+ms.openlocfilehash: a5f19aab079685a76f31bf67c1c79bd7312d00a4
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49701549"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49927138"
 ---
 # <a name="join-a-teams-meeting-with-guests"></a>以来宾身份加入 Teams 会议
 
