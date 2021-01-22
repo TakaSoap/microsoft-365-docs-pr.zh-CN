@@ -4,7 +4,7 @@ description: 了解与高级搜寻架构的 Azure Active Directory 登录事件�
 keywords: 高级搜寻， 威胁搜寻， 网络威胁搜寻， Microsoft 威胁防护， microsoft 365， mtp， m365， 搜索， 查询， 遥测， 架构参考， kusto， 表， 列， 数据类型， 说明， 文件， IP 地址， 设备， 计算机， 用户， 帐户， 标识， AAD
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,12 +19,13 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: 1830eeec674c4948bd6492780ef8a0a8039111b8
-ms.sourcegitcommit: 4482c174e0e68e0fbbc7ad9ef6b0e78dc34ac85a
+ms.technology: m365d
+ms.openlocfilehash: b574717d0ba5621d85c8e73f36ddc72b062a1494
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "49784283"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49931034"
 ---
 # <a name="aadsignineventsbeta"></a>AADSignInEventsBeta
 
@@ -50,7 +51,7 @@ ms.locfileid: "49784283"
 | 列名称                 | 数据类型 | 说明          |
 |---------------------------------|---------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `Timestamp`                       | datetime      | 生成记录的日期和时间                                                                                                                                         |
-| `Application`                     | string        | 执行所记录操作的应用程序                                                                                                                                       |
+| `Application`                     | string        | 执行录制的操作的应用程序                                                                                                                                       |
 | `ApplicationId`                   | string        | 应用程序的唯一标识符                                                                                                                                               |
 | `LogonType`                       | string        | 登录会话的类型，特别是交互式远程交互式 (RDP) 、网络、批处理和服务                                                                              |
 | `ErrorCode`                       | int        | 包含登录错误时的错误代码。 若要查找特定错误代码的说明，请访问 <https://aka.ms/AADsigninsErrorCodes> 。                                     |
@@ -59,7 +60,7 @@ ms.locfileid: "49784283"
 | `AccountDisplayName`              | string        | 通讯簿中显示的帐户用户的名称。 通常是给定或名字、中间名首字母和姓氏或姓氏的组合。                             |
 | `AccountObjectId`                 | string        | Azure AD 中帐户的唯一标识符                                                                                                                                       |
 | `AccountUpn`                      | string        | 帐户的用户主体 (UPN)                                                                                                                                             |
-| `IsExternalUser`                  | int        | 指示登录的用户是否位于外部。 可能的值：-1 (未) ，0 (外部) ，1 (外部) 。                                                                   |
+| `IsExternalUser`                  | int        | 指示登录的用户是否位于外部。 可能的值：-1 (不) ，0 (外部) ，1 (外部) 。                                                                   |
 | `IsGuestUser`                     | boolean       | 指示登录的用户是否是租户中的来宾                                                                                                                  |
 | `AlternateSignInName`             | string        | 用户登录 Azure AD (UPN) 本地用户主体名称                                                                                                            |
 | `LastPasswordChangeTimestamp`     | datetime        | 上次登录的用户更改其密码的日期和时间                                                                                                              |
@@ -88,7 +89,7 @@ ms.locfileid: "49784283"
 | `State`                           | string        | 登录发生位置的状态（如果可用）                                                                                                                                      |
 | `City`                            | string        | 帐户用户所在的城市                                                                                                                                              |
 | `Latitude`                        | string        | 登录位置的北向南坐标                                                                                                                              |
-| `Longitude`                       | string        | 登录位置的从上到下坐标                                                                                                                                |
+| `Longitude`                       | string        | 登录位置的从西到西坐标                                                                                                                                |
 | `NetworkLocationDetails`          | string        | 登录事件的身份验证处理器的网络位置详细信息                                                                                                       |
 | `RequestId`                       | string        |  请求的唯一标识符                                                                                                                                                   |
 |`ReportId` | string | 事件的唯一标识符 |

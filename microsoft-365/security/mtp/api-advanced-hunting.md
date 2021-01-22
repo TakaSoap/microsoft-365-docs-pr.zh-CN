@@ -3,7 +3,7 @@ title: Microsoft 365 Defender 高级搜寻 API
 description: 了解如何使用 Microsoft 365 Defender 的高级搜寻 API 运行高级搜寻查询
 keywords: 高级搜寻， API， api， MTP， M365 Defender， Microsoft 365 Defender
 search.product: eADQiWindows 10XVcnh
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,12 +19,13 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: e7cd9192ec25e01ed06b77cb2b39357cb9df79bd
-ms.sourcegitcommit: d6b1da2e12d55f69e4353289e90f5ae2f60066d0
+ms.technology: m365d
+ms.openlocfilehash: 4213773c3305c28f0913013d8f7634c083811f52
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "49719376"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49932078"
 ---
 # <a name="microsoft-365-defender-advanced-hunting-api"></a>Microsoft 365 Defender 高级搜寻 API
 
@@ -45,13 +46,13 @@ ms.locfileid: "49719376"
 
 1. 查询将浏览并返回过去 30 天的数据。
 2. 结果可返回最多 100，000 行。
-3. 每个租户每分钟最多可以拨打 10 个呼叫。
+3. 每个租户每分钟最多可以拨打 10 次呼叫。
 4. 每个租户每小时有 10 分钟的运行时间。
 5. 每个租户的运行时间总小时数为四小时。
 6. 如果单个请求运行超过 10 分钟，它将退出并返回错误。
 7. HTTP 响应代码指示你已按发送的请求数或分配的运行时间达到 `429` 配额。 响应正文将包括重置达到的配额之前的时间。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 调用高级搜寻 API 需要以下权限之一。 若要了解更多信息（包括如何选择权限），请参阅 [Access the Microsoft 365 Defender Protection API](api-access.md)
 

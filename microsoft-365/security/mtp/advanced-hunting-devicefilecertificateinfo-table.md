@@ -1,10 +1,10 @@
 ---
 title: 高级搜寻架构中的 DeviceFileCertificateInfo 表
 description: 了解高级搜寻架构的 DeviceFileCertificateInfo 表中的文件签名信息
-keywords: 高级搜寻、威胁搜寻、网络威胁搜寻、microsoft 威胁防护、microsoft 365、mtp、m365、搜索、查询、遥测、架构参考、kusto、表、列、数据类型、数字签名、证书、文件签名、DeviceFileCertificateInfo
+keywords: 高级搜寻， 威胁搜寻， 网络威胁搜寻， Microsoft 威胁防护， microsoft 365， mtp， m365， 搜索， 查询， 遥测， 架构参考， kusto， 表， 列， 数据类型， 数字签名， 证书， 文件签名， DeviceFileCertificateInfo
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,12 +19,13 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: 9291d9f113fdc1c082b38d92399c1dee646b523d
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.technology: m365d
+ms.openlocfilehash: e35e8e86f6814a5f90a7921f71ccab7247fcc1bc
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48846166"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49931310"
 ---
 # <a name="devicefilecertificateinfo"></a>DeviceFileCertificateInfo
 
@@ -34,7 +35,7 @@ ms.locfileid: "48846166"
 **适用于：**
 - Microsoft 365 Defender
 
-`DeviceFileCertificateInfo`[高级搜寻](advanced-hunting-overview.md)架构中的表包含有关文件签名证书的信息。 此表使用从证书验证活动获取的数据，这些数据定期对终结点上的文件执行。
+高级 `DeviceFileCertificateInfo` 搜寻架构 [中的](advanced-hunting-overview.md) 表包含有关文件签名证书的信息。 此表使用定期对终结点上的文件执行的证书验证活动获取的数据。
 
 有关高级搜寻架构中其他表的信息，请[参阅高级搜寻参考](advanced-hunting-schema-tables.md)。
 
@@ -45,19 +46,19 @@ ms.locfileid: "48846166"
 | `DeviceName` | string | 计算机的完全限定域名 (FQDN) |
 | `SHA1` | string | 录制操作所应用到的文件的 SHA-1 |
 | `IsSigned` | boolean | 指示文件是否已签名 |
-| `SignatureType` | string | 指示是否已将签名信息作为文件本身的嵌入内容读取或从外部目录文件读取 |
-| `Signer` | string | 有关文件签名者的信息 |
+| `SignatureType` | string | 指示签名信息是作为嵌入内容读取到文件本身中，还是从外部目录文件中读取 |
+| `Signer` | string | 有关文件签署人的信息 |
 | `SignerHash` | string | 标识签名者的唯一哈希值 |
-| `Issuer` | string | 有关颁发证书颁发机构 (CA) 的信息 |
-| `IssuerHash` | string | 标识颁发证书颁发机构 (CA) 的唯一哈希值 |
-| `CertificateSerialNumber` | string | 颁发证书颁发机构 (CA 的唯一证书的标识符)  |
-| `CrlDistributionPointUrls` | string |  JSON 数组，列出包含证书和证书吊销列表 (Crl 的网络共享的 Url)  |
-| `CertificateCreationTime` | datetime | 证书的创建日期和时间 |
+| `Issuer` | string | 有关 CA 证书颁发机构 (的信息)  |
+| `IssuerHash` | string | 标识证书颁发机构的唯一哈希值 (CA)  |
+| `CertificateSerialNumber` | string | CA 证书颁发机构唯一的证书 (标识符)  |
+| `CrlDistributionPointUrls` | string |  列出网络共享 URL 的 JSON 数组，其中包含证书和证书吊销列表 (CCL)  |
+| `CertificateCreationTime` | datetime | 创建证书的日期和时间 |
 | `CertificateExpirationTime` | datetime | 将证书设置为过期的日期和时间 |
-| `CertificateCountersignatureTime` | datetime | 副署证书的日期和时间 |
-| `IsTrusted` | boolean | 指示文件是否受 WinVerifyTrust 函数的结果（检查未知的根证书信息、无效签名、吊销的证书以及其他可疑属性）的信任。 |
-| `IsRootSignerMicrosoft` | boolean | 指示根证书的签名者是否为 Microsoft |
-| `ReportId` | long | 基于重复计数器的事件标识符。 若要标识唯一事件，此列必须与 DeviceName 和时间戳列结合使用。 | 
+| `CertificateCountersignatureTime` | datetime | 对证书进行反签名的日期和时间 |
+| `IsTrusted` | boolean | 根据 WinVerifyTrust 函数的结果指示文件是否受信任，该函数将检查未知根证书信息、无效签名、吊销的证书和其他疑问的属性 |
+| `IsRootSignerMicrosoft` | boolean | 指示根证书的签名者是否是 Microsoft |
+| `ReportId` | long | 基于重复计数器的事件标识符。 若要标识唯一事件，必须将此列与 DeviceName 和时间戳列结合使用。 | 
 
 ## <a name="related-topics"></a>相关主题
 - [高级搜寻概述](advanced-hunting-overview.md)

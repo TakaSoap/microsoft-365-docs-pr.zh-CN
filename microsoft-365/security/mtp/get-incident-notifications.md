@@ -3,7 +3,7 @@ title: 在 Microsoft 365 Defender 中获取事件通知
 description: 了解如何创建规则，以在 Microsoft 365 Defender 中获取事件的电子邮件通知
 keywords: 事件， 电子邮件， 电子邮件通知， 配置， 用户， 邮箱， 电子邮件， 事件
 search.product: eADQiWindows 10XVcnh
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -21,12 +21,13 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: f25be4de3f25db869957474c3cb32b20e9f7aa53
-ms.sourcegitcommit: 88d358d778804b26d5e41c53b4f725d01a78112b
+ms.technology: m365d
+ms.openlocfilehash: 9db025818fdd5eb2635a9a676e4a10e20f3036b6
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49848887"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49930974"
 ---
 # <a name="get-incident-notifications-by-email"></a>通过电子邮件获取事件通知
 
@@ -45,7 +46,7 @@ ms.locfileid: "49848887"
 电子邮件通知包含有关事件的重要详细信息，如事件名称、严重性和类别等。 还可以直接转到事件，以便立即开始调查。 有关调查事件 More on investigatings， see [Investigate incidents in Microsoft 365 Defender.](https://docs.microsoft.com/microsoft-365/security/mtp/investigate-incidents)
 
 >[!NOTE]
->您需要"管理安全设置"权限才能配置电子邮件通知设置。 如果选择使用基本权限管理，具有安全管理员或全局管理员角色的用户可以配置电子邮件通知。 <br> <br>
+>您需要"管理安全设置"权限来配置电子邮件通知设置。 如果选择使用基本权限管理，具有安全管理员或全局管理员角色的用户可以配置电子邮件通知。 <br> <br>
 同样，如果组织使用基于角色的访问控制 (RBAC) ，则只能基于允许管理的设备组创建、编辑、删除和接收通知。
 
 ## <a name="create-rules-for-incident-notifications"></a>创建事件通知规则
@@ -61,7 +62,7 @@ ms.locfileid: "49848887"
     - **警报严重性** - 选择将触发事件通知的警报严重性。 例如，如果您只想获得有关高严重性事件的通知，请选择"高"。
     - **设备组** 作用域 - 此下拉列表显示用户可以访问的所有设备组。 选择要为哪些设备组创建事件通知规则。
     - **仅在每个事件首次出现时** 通知 - 选择此选项将仅在第一个匹配其他选择的警报上发送电子邮件通知。 以后与事件相关的更新或警报不会触发通知。
-    - **包含组织名称** - 指示是否在电子邮件通知上显示客户名称。
+    - **包含组织名称** - 指示客户名称是否显示在电子邮件通知上。
     - **包含特定于租户的门户链接** - 添加包含租户 ID 的链接，以允许访问特定租户。
     
     ![事件电子邮件的 Notif 设置窗口](../../media/incidentemailnotif2.png)

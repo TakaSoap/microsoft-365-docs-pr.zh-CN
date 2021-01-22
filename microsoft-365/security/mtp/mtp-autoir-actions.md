@@ -3,7 +3,7 @@ title: 批准或拒绝自动调查后挂起的操作
 description: 使用操作中心管理与自动调查和响应相关的操作
 keywords: 操作, 中心, autoair, 自动化, 调查, 响应, 修正
 search.appverid: met150
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -21,12 +21,13 @@ ms.topic: conceptual
 ms.custom: autoir
 ms.reviewer: evaldm, isco
 ms.date: 12/09/2020
-ms.openlocfilehash: b34f4a532571d6215500ab2bec022489fd462d0f
-ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
+ms.technology: m365d
+ms.openlocfilehash: 3776dea4a5a24f4695a5c617325af14f1f03494f
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "49683355"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49930374"
 ---
 # <a name="approve-or-reject-pending-actions-following-an-automated-investigation"></a>批准或拒绝自动调查后挂起的操作
 
@@ -65,6 +66,30 @@ ms.locfileid: "49683355"
 1. 在[调查详细信息](mtp-autoir-results.md)页上，选择“挂起的操作”（或“操作”）选项卡。此处列出了等待批准的项。
 
 2. 选择列表中的某个项，然后选择“批准”或“拒绝”。
+
+## <a name="undo-completed-actions"></a>撤消已完成的操作
+
+如果你已确定设备或文件不是威胁，你可以撤消已采取的修正操作，无论这些操作是自动执行还是手动执行。 在操作中心的"历史记录 **"** 选项卡上，可以撤消以下任何操作：  
+
+| 操作源 | 支持的操作 |
+|:---|:---|
+| - 自动调查 <br/>- Microsoft Defender 防病毒 <br/>- 手动响应操作 | - 隔离设备 <br/>- 限制代码执行 <br/>- 隔离文件 <br/>- 删除注册表项 <br/>- 停止服务 <br/>- 禁用驱动程序 <br/>- 删除计划任务 |
+
+### <a name="to-undo-a-remediation-action"></a>撤消修正操作
+
+1. 转到操作中心 [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) () 登录。
+
+2. 在 **"历史记录** "选项卡上，选择要撤消的操作。
+
+3. 在屏幕右侧窗格中，选择"撤消 **"。**
+
+### <a name="to-remove-a-file-from-quarantine-across-multiple-devices"></a>跨多个设备从隔离区删除文件 
+
+1. 转到操作中心 [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) () 登录。
+
+2. 在" **历史记录** "选项卡上，选择具有操作类型 **隔离文件的文件**。
+
+3. 在屏幕右侧窗格中，选择"应用到此文件的 **X** 更多实例"，然后选择"**撤消"。**
 
 ## <a name="next-steps"></a>后续步骤
 

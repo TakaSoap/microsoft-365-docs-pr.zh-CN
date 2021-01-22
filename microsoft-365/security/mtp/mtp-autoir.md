@@ -3,7 +3,7 @@ title: Microsoft 365 Defender 中的自动调查和响应
 description: 在 Microsoft 365 Defender 中大致了解自动调查和响应功能（也称为自我修复）
 keywords: 自动化， 调查， 警报， 触发器， 操作， 修正， 自我修复
 search.appverid: met150
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -21,12 +21,13 @@ ms.topic: conceptual
 ms.custom: autoir
 ms.date: 12/09/2020
 ms.reviewer: evaldm, isco
-ms.openlocfilehash: 7c28b7f3ac797f7402cfdb1f604fcef1e142a31b
-ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
+ms.technology: m365d
+ms.openlocfilehash: 905455e4cd70485e099f8005b5f8876b1a5d9caf
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "49683303"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49930326"
 ---
 # <a name="automated-investigation-and-response-in-microsoft-365-defender"></a>Microsoft 365 Defender 中的自动调查和响应
 
@@ -84,6 +85,6 @@ ms.locfileid: "49683303"
 
 ## <a name="next-steps"></a>后续步骤
 
-- [查看 Microsoft 365 Defender 中自动调查和响应的先决条件](mtp-configure-auto-investigation-response.md#prerequisites-for-automated-investigation-and-response-in-microsoft-365-defender)
+- [请参阅 Microsoft 365 Defender 中自动调查和响应的先决条件](mtp-configure-auto-investigation-response.md#prerequisites-for-automated-investigation-and-response-in-microsoft-365-defender)
 - [为组织配置自动调查和响应](mtp-configure-auto-investigation-response.md)
 - [详细了解操作中心](mtp-action-center.md)

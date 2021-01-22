@@ -5,24 +5,25 @@ author: chrisda
 manager: dansimp
 audience: ITPro
 ms.topic: conceptual
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 description: 管理员可以了解 Microsoft 365 安全中心中的攻击模拟培训如何影响员工，并可以从模拟和培训结果中获得见解。
-ms.openlocfilehash: baff6032f295b2b49b4f2ec9280fb465d47b8dc3
-ms.sourcegitcommit: 8849dd6f80217c29f427c7f008d918f30c792240
+ms.technology: mdo
+ms.openlocfilehash: b7fd414cc355e768077198eb5215720c4d4a9444
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49877136"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49933062"
 ---
 # <a name="gain-insights-through-attack-simulation-training"></a>通过攻击模拟培训获得见解
 
 在攻击模拟培训中，Microsoft 根据员工经过的模拟和培训的结果为您提供见解。 这些见解将帮助你了解员工的威胁准备进度，并推荐下一步，以更好地让员工和环境做好应对攻击的准备。
 
-我们正在不断扩展可供你获取的见解。 行为影响和推荐操作目前可用。 若要开始，请前往 [Microsoft 365 安全中心进行攻击模拟培训](https://security.microsoft.com/attacksimulator?viewid=overview)。
+我们正在不断扩展可供你获取的见解。 行为影响和推荐操作当前可用。 若要开始，请前往 [Microsoft 365 安全中心进行攻击模拟培训](https://security.microsoft.com/attacksimulator?viewid=overview)。
 
 ## <a name="behavior-impact-on-compromise-rate"></a>行为对泄露率的影响
 

@@ -3,7 +3,7 @@ title: 转到操作中心以查看并批准自动调查和修正任务
 description: 使用操作中心查看有关自动调查的详细信息并批准挂起的操作
 keywords: 操作中心, 威胁防护, 调查, 警报, 挂起, 自动, 检测
 search.appverid: met150
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -21,12 +21,13 @@ ms.topic: conceptual
 ms.custom: autoir
 ms.reviewer: evaldm, isco
 ms.date: 12/09/2020
-ms.openlocfilehash: aa9f433bc60949aa625d9346421b025121347a2c
-ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
+ms.technology: m365d
+ms.openlocfilehash: 45e02e4ce7d5d813cc8215a1f27ed9c415707cb1
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "49683315"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49930422"
 ---
 # <a name="the-action-center"></a>操作中心
 
@@ -65,12 +66,12 @@ ms.locfileid: "49683315"
 
 5. 在列表中选择一个项目以查看有关调查的更多详细信息。 此时将打开调查详细信息视图。<br/>![调查详细信息](../../media/mtp-air-investdetails.png)
 
-    - 如果调查与电子邮件内容 (，例如，实体是邮箱) ，调查详细信息在安全与合规&中心 [https://protection.office.com/threatinvestigation](https://protection.office.com/threatinvestigation) () 。 
+    - 如果调查与电子邮件内容相关， (实体是邮箱) ，调查详细信息在安全与合规&中心 [https://protection.office.com/threatinvestigation](https://protection.office.com/threatinvestigation) () 。 
 
     - 如果调查涉及设备，则将在安全中心 ([https://security.microsoft.com](https://security.microsoft.com)) 中打开调查详细信息。 
 
 > [!TIP]
-> 如果认为 Microsoft 365 Defender 中的自动调查和响应功能遗漏或检测错误，请告诉我们！ 请参阅 [如何在 Microsoft 365](mtp-autoir-report-false-positives-negatives.md)Defender 中的 AIR (功能中的自动调查和响应) 误报/负数。
+> 如果认为 Microsoft 365 Defender 中的自动调查和响应功能遗漏或检测错误，请告诉我们！ 请参阅 [ (如何在 Microsoft 365](mtp-autoir-report-false-positives-negatives.md)Defender 中的 AIR) 功能中报告自动调查和响应中的误报/负数。
 
 ## <a name="available-actions"></a>可用操作
 

@@ -4,7 +4,7 @@ description: 了解高级搜寻架构的 DeviceFileEvents 表中与文件相关�
 keywords: 高级搜寻， 威胁搜寻， 网络威胁搜寻， Microsoft 威胁防护， microsoft 365， mtp， m365， 搜索， 查询， 遥测， 架构参考， kusto， 表， 列， 数据类型， 说明， filecreationevents， DeviceFileEvents， 文件， 路径， 哈希， sha1， sha256， md5
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,12 +19,13 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: 9b48321693f883e40a100e29e5e1ec3c5203caa2
-ms.sourcegitcommit: ddfb4f3e34deb733e8625e845e4dfd1fcc066ceb
+ms.technology: m365d
+ms.openlocfilehash: cb51d9b94cc500361f836f7ba8bc4fc290436805
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "49771855"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49931322"
 ---
 # <a name="devicefileevents"></a>DeviceFileEvents
 
@@ -48,7 +49,7 @@ ms.locfileid: "49771855"
 | `DeviceName` | string | 计算机的完全限定域名 (FQDN) |
 | `ActionType` | string | 触发事件的活动类型。 有关详细信息 [，请参阅门户内架构](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) 参考 |
 | `FileName` | string | 录制操作所应用到的文件的名称 |
-| `FolderPath` | string | 包含已记录操作应用于的文件的文件夹 |
+| `FolderPath` | string | 包含已记录操作所应用到的文件的文件夹 |
 | `SHA1` | string | 录制操作所应用到的文件的 SHA-1 |
 | `SHA256` | string | 录制操作所应用到的文件的 SHA-256。 通常不会填充此字段 — 可用时使用 SHA1 列。 |
 | `MD5` | string | 记录的操作应用到的文件的 MD5 哈希 |
@@ -60,8 +61,8 @@ ms.locfileid: "49771855"
 | `InitiatingProcessAccountSid` | string | 安全 (SID) 运行负责事件的进程的帐户的 SID 标识符 |
 | `InitiatingProcessMD5` | string | 启动事件 (映像) 的 MD5 哈希 |
 | `InitiatingProcessSHA1` | string | 启动事件 (映像) SHA-1 |
-| `InitiatingProcessSHA256` | string | 启动事件 (映像文件) SHA-256。 通常不会填充此字段 — 可用时使用 SHA1 列。 |
-| `InitiatingProcessFolderPath` | string | 包含启动 (的文件) 进程的文件夹 |
+| `InitiatingProcessSHA256` | string | 启动事件 (映像) SHA-256。 通常不会填充此字段 — 可用时使用 SHA1 列。 |
+| `InitiatingProcessFolderPath` | string | 包含启动事件 (映像) 文件的文件夹 |
 | `InitiatingProcessFileName` | string | 启动事件的进程的名称 |
 | `InitiatingProcessId` | int | 启动 (PID) 进程的进程 ID |
 | `InitiatingProcessCommandLine` | string | 用于运行启动事件的进程的命令行 |

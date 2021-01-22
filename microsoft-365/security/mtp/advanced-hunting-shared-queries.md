@@ -1,10 +1,10 @@
 ---
-title: 在 Microsoft 365 Defender 高级搜寻中使用共享查询
+title: 使用 Microsoft 365 Defender 高级搜寻中的共享查询
 description: 使用预定义的以及共享的查询快速启动威胁搜寻。 与公众或组织共享查询。
-keywords: 高级搜寻、威胁搜寻、网络威胁搜寻、microsoft 威胁防护、microsoft 365、mtp、m365、搜索、查询、遥测、自定义检测、架构、kusto、github 存储库、我的查询、共享查询
+keywords: 高级搜寻， 威胁搜寻， 网络威胁搜寻， Microsoft 威胁防护， microsoft 365， mtp， m365， 搜索， 查询， 遥测， 自定义检测， 架构， kusto， github 存储库， 我的查询， 共享查询
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,12 +19,13 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: 48da1a3a64926f44582e7872f0b0ee03240409ca
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.technology: m365d
+ms.openlocfilehash: 7dcf446b5e1014d411fc8af08dd15506a2b04e49
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48844076"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49932186"
 ---
 # <a name="use-shared-queries-in-advanced-hunting"></a>使用高级搜寻的共享查询
 
@@ -65,7 +66,7 @@ ms.locfileid: "48844076"
 2. 选择“删除”，并确认删除。 或者选择“重命名”，并为查询提供新名称。
 
 ## <a name="create-a-direct-link-to-a-query"></a>创建指向查询的直接链接
-若要生成直接在高级搜寻查询编辑器中打开您的查询的链接，请先完成查询，然后选择 " **共享链接** "。
+若要生成直接在高级搜寻查询编辑器中打开查询的链接，请完成查询并选择 **"共享"链接**。
 
 ## <a name="access-queries-in-the-github-repository"></a>访问 GitHub 存储库中的查询  
 Microsoft 安全研究人员定期在[指定的 GitHub 公共存储库](https://aka.ms/hunting-queries)中共享高级搜寻查询。 此存储库可自行参与。 [免费加入 GitHub](https://github.com/)，即可参与。

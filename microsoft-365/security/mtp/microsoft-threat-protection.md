@@ -4,7 +4,7 @@ description: Microsoft 365 Defender 是一个协调的威胁防护解决方案�
 keywords: Microsoft 威胁防护简介， 网络安全， 高级永久性威胁， 企业安全， 设备， 设备， 标识， 用户， 数据， 应用程序， 事件， 自动调查和修正， 高级搜寻
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,12 +19,13 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: conceptual
-ms.openlocfilehash: 1884f0dae87bf068d134430ada78e44d713fd4d9
-ms.sourcegitcommit: ec293978e951b09903b79e6642aa587824935e0c
+ms.technology: m365d
+ms.openlocfilehash: e80a3d094ac8f5724bbe7daf72a0ded7d30091ba
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "49780512"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49930566"
 ---
 # <a name="microsoft-365-defender"></a>Microsoft 365 Defender
 
@@ -37,7 +38,7 @@ ms.locfileid: "49780512"
 > 想要体验 Microsoft 365 Defender？ 可以在[实验室环境中对其进行评估或在](https://aka.ms/mtp-trial-lab)[生产中运行试点项目](https://aka.ms/m365d-pilotplaybook)。
 >
 
-Microsoft 365 Defender 是一个统一的攻破前和入侵后企业防御套件，在本机协调跨终结点、标识、电子邮件和应用程序进行检测、预防、调查和响应，以提供针对复杂攻击的集成保护。
+Microsoft 365 Defender 是一个统一的入侵前和入侵后企业防御套件，在本机协调跨终结点、标识、电子邮件和应用程序进行检测、预防、调查和响应，以提供针对复杂攻击的集成保护。
 
 借助集成的 Microsoft 365 Defender 解决方案，安全专业人员可以将每个产品接收的威胁信号拼接在一起，并确定威胁的完整范围和影响;它如何进入环境、它的影响以及它当前对组织的影响。 Microsoft 365 Defender 采取自动操作来阻止或停止攻击和自我修复受影响的邮箱、终结点和用户标识。  
 
@@ -91,7 +92,7 @@ Microsoft 365 Defender 跨产品功能包括：
 - **跨产品威胁** 搜寻 - 安全团队可以利用自己独特的组织知识，通过针对各种保护产品收集的原始数据创建自己的自定义查询来搜寻泄露的迹象。 Microsoft 365 Defender 提供对终结点和 Microsoft Defender for Office 365 数据之间 30 天的历史原始信号和警报数据的基于查询的访问。 
 
 
-## <a name="get-started"></a>入门
+## <a name="get-started"></a>开始行动
 必须先满足 Microsoft 365 Defender 许可要求，然后才能在 Microsoft 365 安全中心内启用[security.microsoft.com。](https://security.microsoft.com) 有关详细信息，请阅读：
 - [授权要求](prerequisites.md#licensing-requirements)
 - [打开 Microsoft 365 Defender](mtp-enable.md)

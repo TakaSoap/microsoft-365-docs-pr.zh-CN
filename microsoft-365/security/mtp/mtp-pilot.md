@@ -4,7 +4,7 @@ description: 在生产中运行试点 Microsoft 365 Defender 项目，以有效�
 keywords: Microsoft 威胁防护试点， 运行试点 Microsoft 威胁防护项目， 评估生产中的 Microsoft 威胁防护， Microsoft 威胁防护试点项目， 网络安全， 高级永久性威胁， 企业安全， 设备， 设备， 标识， 用户， 数据， 应用程序， 事件， 自动调查和修正， 高级搜寻
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -20,12 +20,13 @@ ms.collection:
 - m365solution-overview
 - m365solution-pilotmtpproject
 ms.topic: conceptual
-ms.openlocfilehash: f01e918d35ce77d9239c200355c7b4c48c9e2b84
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+ms.technology: m365d
+ms.openlocfilehash: 9c0635058539e464a76f1720f041c205a05fa9b2
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49659312"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49933026"
 ---
 # <a name="run-your-pilot-microsoft-365-defender-project"></a>运行试点 Microsoft 365 Defender 项目 
 
@@ -41,7 +42,7 @@ ms.locfileid: "49659312"
 ![运行 Microsoft 365 Defender 试点的阶段](../../media/pilotphases.png)
 
 
-运行试点可帮助你有效确定采用 Microsoft 365 Defender 的好处。 在生产环境中启用 Microsoft 365 Defender 并启动用例之前，最好先计划确定要为试点项目完成的任务并设置成功条件。 
+运行试点有助于有效确定采用 Microsoft 365 Defender 的好处。 在生产环境中启用 Microsoft 365 Defender 并启动用例之前，最好先计划确定要为试点项目完成的任务并设置成功条件。 
 
 
 ## <a name="how-to-use-this-pilot-playbook"></a>如何使用此试点手册
@@ -56,11 +57,11 @@ Microsoft 365 Defender 是一个统一的入侵前和入侵后企业防御套件
 
 ![适用于of_Microsoft、Microsoft Defender for Identity、终结点 Microsoft Defender for Endpoint、云应用、Microsoft Cloud App Security 和数据、Microsoft Defender for Office 365 的 365 Defender 解决方案的图像](../../media/mtp/m365pillars.png)
 
-借助集成的 Microsoft 365 Defender 解决方案，安全专业人员可以将 Microsoft Defender for Endpoint、Microsoft Defender for Office 365、Microsoft Defender for Identity 和 Microsoft Cloud App Security 接收的威胁信号拼接在一起，并确定威胁的完整范围和影响、威胁进入环境方式、受影响以及威胁当前对组织的影响。 Microsoft 365 Defender 采取自动操作来阻止或停止攻击和自我修复受影响的邮箱、终结点和用户标识。 有关详细信息，请参阅 [Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-threat-protection) 概述。
+借助集成的 Microsoft 365 Defender 解决方案，安全专业人员可以将 Microsoft Defender for Endpoint、Microsoft Defender for Office 365、Microsoft Defender for Identity 和 Microsoft Cloud App Security 接收的威胁信号拼接在一起，并确定威胁的完整范围和影响、威胁进入环境方式、受影响内容以及威胁当前对组织的影响。 Microsoft 365 Defender 采取自动操作来阻止或停止攻击和自我修复受影响的邮箱、终结点和用户标识。 有关详细信息，请参阅 [Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-threat-protection) 概述。
 
 
 
-下面的示例时间线因环境中具有正确的资源而异。 某些检测和工作流可能需要比其他检测和工作流更多的学习时间。
+下面的示例时间线因环境中具有正确的资源而异。 一些检测和工作流可能需要比其他检测和工作流更多的学习时间。
 
 ![运行 Microsoft 365 Defender 试点的示例时间线](../../media/phase-diagrams/pilot-phases.png)
 

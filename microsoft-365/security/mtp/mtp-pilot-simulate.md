@@ -4,7 +4,7 @@ description: 运行 Microsoft 365 Defender 试点项目的攻击模拟，查看�
 keywords: Microsoft 威胁防护试点攻击模拟， 运行 Microsoft 威胁防护试点攻击模拟， 在 Microsoft 威胁防护中模拟攻击， Microsoft 威胁防护试点项目， 网络安全， 高级永久性威胁， 企业安全， 设备， 设备， 标识， 用户， 数据， 应用程序， 事件， 自动调查和修正， 高级搜寻
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -20,12 +20,13 @@ ms.collection:
 - m365solution-scenario
 - m365solution-pilotmtpproject
 ms.topic: conceptual
-ms.openlocfilehash: bfe7358d0549a664608c396870cb2b4a5cc58edf
-ms.sourcegitcommit: 222fb7fe2b26dde3d8591b61cc02113d6135012c
+ms.technology: m365d
+ms.openlocfilehash: f1714eeeb30d1dd4c209d063604e1031369b5ddb
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "49760574"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49933050"
 ---
 # <a name="run-your-microsoft-365-defender-attack-simulations"></a>运行 Microsoft 365 Defender 攻击模拟
 
@@ -40,7 +41,7 @@ ms.locfileid: "49760574"
 
 准备试点环境后，可以测试 Microsoft 365 Defender 事件管理和自动调查和修正功能了。 我们将帮助你模拟复杂的攻击，该攻击利用高级技术在检测中隐藏。 攻击枚举在域控制器上打开 (SMB) 会话，并检索用户设备的最近 IP 地址。 此类攻击通常不包括在患者设备上丢弃的文件，它们仅发生在内存中。 他们通过使用现有系统和管理工具"离开陆地"，将其代码注入系统进程以隐藏其执行，此类行为允许他们规避检测并保留在设备上。
 
-在此模拟中，我们的示例方案从 PowerShell 脚本开始。 用户可能会被诱使运行脚本。 或者，脚本可能从远程连接从以前受感染的设备运行到另一台计算机，攻击者试图在网络中进行稍后移动。 检测这些脚本可能非常困难，因为管理员经常远程运行脚本以执行各种管理活动。
+在此模拟中，我们的示例方案从 PowerShell 脚本开始。 用户可能会被诱使运行脚本。 或者，脚本可能从远程连接从以前受感染的设备运行到另一台计算机，攻击者试图在网络中进行稍后移动。 检测这些脚本可能比较困难，因为管理员经常远程运行脚本以执行各种管理活动。
 
 ![无文件 PowerShell 攻击与进程注入和 SMB 重新连接攻击图](../../media/mtp/mtpdiydiagram.png)
 
@@ -176,13 +177,13 @@ Microsoft 365 Defender 将分析关联，并将不同产品的所有相关警报
 
 ![潜在恶意代码注入警报的屏幕截图](../../media/mtp/fig7.png)
 
-#### <a name="alert-unexpected-behavior-observed-by-a-process-run-with-no-command-line-arguments-source-microsoft-defender-for-endpoint-edr"></a>警报：在源：适用于终结点 EDR 的 Microsoft Defender (没有命令行参数的进程运行时观察到的意外) 
+#### <a name="alert-unexpected-behavior-observed-by-a-process-run-with-no-command-line-arguments-source-microsoft-defender-for-endpoint-edr"></a>警报：在源：Microsoft Defender for Endpoint EDR (没有命令行参数的进程运行时观察到的意外) 
 
 Microsoft Defender 终结点检测通常面向攻击技术的最常见属性。 此方法可确保持久性，并提升攻击者切换到较新的策略的条形。
 
 我们采用大规模学习算法来建立组织和全球范围内常见流程的正常行为，并观察这些进程何时显示异常行为。 这些异常行为通常指示已引入多余的代码，并且正在其他受信任进程中运行。
 
-对于此方案，此过程 <i>notepad.exe</i> 异常行为，包括与外部位置的通信。 此结果独立于用于引入和执行恶意代码的特定方法。
+对于此 <i> 方案，notepad.exe</i> 异常行为，包括与外部位置的通信。 此结果独立于用于引入和执行恶意代码的特定方法。
 
 > [!NOTE]
 > 由于此警报基于需要其他后端处理的机器学习模型，因此在门户中看到此警报可能需要一些时间。
@@ -216,7 +217,7 @@ Microsoft Defender 终结点检测通常面向攻击技术的最常见属性。 
 
 展开一些更有趣的行为可提供有用的详细信息，例如进程树。
 
-例如，向下滚动，直到找到观察到的警报事件 **可疑进程注入**。 选择 **powershell.exe** 以notepad.exe进程事件，在侧窗格的"事件实体"图形下显示此行为的完整进程树。  如有必要，请使用搜索栏进行筛选。
+例如，向下滚动，直到找到观察到的警报事件 **可疑进程注入**。 选择 **powershell.exe** 以notepad.exe进程事件，在侧窗格上的"事件实体"图形下显示此行为的完整进程树。  如有必要，请使用搜索栏进行筛选。
 
 ![所选 PowerShell 文件创建行为的进程树屏幕截图](../../media/mtp/fig12.png)
 
@@ -265,7 +266,7 @@ Microsoft Defender 终结点检测通常面向攻击技术的最常见属性。 
 
 !["事件"页面的屏幕截图，其中打开"管理事件"面板，可在其中单击开关来解决事件](../../media/mtp/fig16.png)
 
-这将结束针对事件管理和自动调查和修正方案的攻击模拟。 下一个模拟将让你完成针对潜在恶意文件的主动威胁搜寻。
+这将总结事件管理和自动调查和修正方案的攻击模拟。 下一个模拟将让你完成针对潜在恶意文件的主动威胁搜寻。
 
 ## <a name="advanced-hunting-scenario"></a>高级搜寻方案
 
@@ -279,7 +280,7 @@ Microsoft Defender 终结点检测通常面向攻击技术的最常见属性。 
 此方案需要单个内部邮箱和设备。 你还需要一个外部电子邮件帐户来发送测试邮件。
 
 1. 验证租户是否已启用[Microsoft 365 Defender。](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-enable#starting-the-service)
-2. 确定用于接收电子邮件的目标邮箱。
+2. 标识用于接收电子邮件的目标邮箱。
     a. Microsoft Defender for Office 365 b 必须监视此邮箱。 要求 3 中的设备需要访问此邮箱
 3. 配置测试设备：a. 确保使用的是 Windows 10 版本 1903 或更高版本。
     b. 将测试设备加入测试域。
@@ -309,7 +310,7 @@ Microsoft Defender 终结点检测通常面向攻击技术的最常见属性。 
       EmailEvents
       ```
 
-   1. 将时间范围更改为过去 24 小时。 假定你在运行上述模拟时发送的电子邮件是过去 24 小时发送的，否则请更改时间范围。
+   1. 将时间范围更改为过去 24 小时。 假定运行上述模拟时发送的电子邮件是过去 24 小时发送的，否则请更改时间范围。
 
       ![可以更改时间范围的屏幕截图。 打开下拉菜单以从时间范围选项范围中进行选择](../../media/mtp/fig18.png)
 
@@ -327,14 +328,14 @@ Microsoft Defender 终结点检测通常面向攻击技术的最常见属性。 
 
       在示例中，电子邮件从 Yahoo 帐户发送。 单击 **+** SenderFromDomain **yahoo.com** 旁边的图标，然后单击"应用"将所选域添加到查询。 使用用于在运行模拟的步骤 1 中发送测试邮件的域或电子邮件帐户筛选结果。 再次运行查询，获取较小的结果集，以验证您是否看到来自模拟的消息。
 
-      ![筛选器的屏幕截图。 使用筛选器缩小搜索范围，并更快地找到要查找的内容。](../../media/mtp/fig20.png)
+      ![筛选器的屏幕截图。 使用筛选器缩小搜索范围，并更快找到要查找的内容。](../../media/mtp/fig20.png)
 
       ```console
       EmailEvents
       | where SenderMailFromDomain == "yahoo.com"
       ```
 
-   1. 单击查询中生成的行，以便检查记录。
+   1. 单击查询产生的行，以便可以检查记录。
 
       ![选中高级搜寻结果时打开的检查记录侧面板的屏幕截图](../../media/mtp/fig21.png)
 
@@ -347,7 +348,7 @@ Microsoft Defender 终结点检测通常面向攻击技术的最常见属性。 
    | where AttachmentCount > 0 and EmailDirection == "Inbound"
    ```
 
-5. 接下来，包括有关附件 (，例如：文件名、) 哈希结果集。 为此，请加入 **EmailAttachmentInfo** 表。 用于联接的常用字段是 **NetworkMessageId** 和 **RecipientObjectId。**
+5. 接下来，包括有关附件 (，例如：文件名、) 哈希结果集。 为此，请加入 **EmailAttachmentInfo** 表。 要用于联接的常用字段是 **NetworkMessageId** 和 **RecipientObjectId。**
 
    以下查询还包括一个附加行"| **项目重命名 EmailTimestamp=Timestamp"，** 帮助确定与电子邮件相关的时间戳与下一步将添加的文件操作相关的时间戳。
 
@@ -392,7 +393,7 @@ Microsoft Defender 终结点检测通常面向攻击技术的最常见属性。 
 
 自定义检测将根据您的设置的频率运行查询，查询结果将基于您选择的影响资产创建安全警报。 这些警报将关联到事件，并作为其中一个产品生成的其他任何安全警报进行会审。
 
-1. 在查询页上，删除在"开始"搜寻说明的步骤 7 中添加的第 7 行和 8 行，然后单击 **"创建检测规则"。**
+1. 在查询页上，删除在 Go 搜寻说明的步骤 7 中添加的第 7 行和 8 行，然后单击 **"创建检测规则"。**
 
    ![Screenshot of where you can click create detection rule in the advanced hunting page](../../media/mtp/fig22.png)
 
@@ -417,9 +418,9 @@ Microsoft Defender 终结点检测通常面向攻击技术的最常见属性。 
 
    !["创建检测规则"页的屏幕截图，可在其中设置警报规则的范围，以管理对你将看到的结果的预期](../../media/mtp/fig26.png)
 
-   对于此试点，您可能希望将此规则限制为生产环境中的测试设备的子集。
+   对于此试点，您可能希望将此规则限制为生产环境中测试设备的子集。
 
-6. 选择 **“创建”**。 然后， **从导航面板中选择** 自定义检测规则。
+6. 选择“创建”。 然后， **从导航面板中选择** 自定义检测规则。
 
    ![菜单中的"自定义检测规则"选项的屏幕截图](../../media/mtp/fig27a.png)
 
@@ -434,7 +435,7 @@ Microsoft Defender 终结点检测通常面向攻击技术的最常见属性。 
 若要详细了解高级搜寻，以下网络广播将演练 Microsoft 365 Defender 中的高级搜寻功能，以创建跨支柱查询、透视实体以及创建自定义检测和修正操作。
 
 > [!NOTE]
-> 请准备好使用自己的 GitHub 帐户在试点测试实验室环境中运行搜寻查询。
+> 准备好使用自己的 GitHub 帐户在试点测试实验室环境中运行搜寻查询。
 
 |标题|说明|下载 MP4|在 YouTube 上观看|CSL 文件使用|
 |---|---|---|---|---|

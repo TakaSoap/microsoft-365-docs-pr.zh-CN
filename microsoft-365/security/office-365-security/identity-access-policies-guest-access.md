@@ -1,7 +1,7 @@
 ---
-title: 用于允许来宾和外部用户 B2B 访问的标识和设备访问策略 - Microsoft 365 企业版 |Microsoft Docs
+title: 用于允许来宾和外部用户 B2B 访问的标识和设备访问策略 - Microsoft 365 企业版|Microsoft Docs
 description: 介绍用于保护来宾和外部用户访问的建议条件访问和相关策略。
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.topic: article
 ms.author: josephd
 author: JoeDavies-MSFT
@@ -17,12 +17,13 @@ ms.collection:
 - M365-security-compliance
 - m365solution-identitydevice
 - m365solution-scenario
-ms.openlocfilehash: 4ee6cb93e5c943d704950e28ba4dc70a246429a6
-ms.sourcegitcommit: 89097fb648987567b9493b9d94c85c5990562874
+ms.technology: mdo
+ms.openlocfilehash: 2ef494f8e383f50f16b1e64f6387b6e5d62459c4
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49845072"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49932606"
 ---
 # <a name="policies-for-allowing-guest-access-and-b2b-external-user-access"></a>允许来宾访问和 B2B 外部用户访问的策略
 
@@ -30,7 +31,7 @@ ms.locfileid: "49845072"
 
 这些建议旨在应用于 **保护的基线** 层。 但您也可以根据敏感和高度管控保护的特定需求 **调整建议**。 
 
-为 B2B 帐户提供向 Azure AD 租户进行身份验证的路径不会授予这些帐户访问整个环境的访问权限。 B2B 用户及其帐户有权访问由条件访问策略与它们共享的服务和资源（如文件）。
+为 B2B 帐户提供向 Azure AD 租户进行身份验证的路径不会向这些帐户授予访问整个环境的访问权限。 B2B 用户及其帐户有权访问由条件访问策略与它们共享的服务和资源（如文件）。
 
 ## <a name="updating-the-common-policies-to-allow-and-protect-guests-and-external-user-access"></a>更新常见策略以允许和保护来宾和外部用户访问
 
@@ -72,9 +73,9 @@ Microsoft Teams 定义以下用户：
 
 ### <a name="excluding-guests-and-external-users-from-risk-based-mfa"></a>从基于风险的 MFA 中排除来宾和外部用户
 
-虽然组织可以使用 Azure AD Identity Protection 为 B2B 用户强制执行基于风险的策略，但资源目录中 B2B 协作用户的 Azure AD Identity Protection 实施存在一些限制，因为 B2B 协作用户的身份已存储在其主目录中。 由于这些限制，Microsoft 建议从基于风险的 MFA 策略中排除来宾，并要求这些用户始终使用 MFA。
+虽然组织可以使用 Azure AD Identity Protection 为 B2B 用户强制执行基于风险的策略，但由于 B2B 协作用户的身份已存储在其主目录中，因此在资源目录中实现 Azure AD Identity Protection 时存在一些限制。 由于这些限制，Microsoft 建议从基于风险的 MFA 策略中排除来宾，并要求这些用户始终使用 MFA。
 
-有关详细信息，请参阅 [B2B 协作用户的 Identity Protection 的限制](https://docs.microsoft.com/azure/active-directory/identity-protection/concept-identity-protection-b2b#limitations-of-identity-protection-for-b2b-collaboration-users)。
+有关详细信息，请参阅 [B2B 协作用户的身份保护限制](https://docs.microsoft.com/azure/active-directory/identity-protection/concept-identity-protection-b2b#limitations-of-identity-protection-for-b2b-collaboration-users)。
 
 ### <a name="excluding-guests-and-external-users-from-device-management"></a>从设备管理中排除来宾和外部用户
 

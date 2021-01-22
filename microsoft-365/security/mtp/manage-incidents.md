@@ -3,7 +3,7 @@ title: 在 Microsoft 365 Defender 中管理事件
 description: 了解如何分配、更新状态
 keywords: 事件, 事件, 警报, 相关警报, 分配, 更新, 状态, 管理, 分类, microsoft, 365, m365
 search.product: eADQiWindows 10XVcnh
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -21,12 +21,13 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 29f55d99dd3acd26ae305c03b533e2ca9bb61f2a
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.technology: m365d
+ms.openlocfilehash: 90d9d397b8baf0ffdb9844a0f068f142a5c7fd48
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48846648"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49930626"
 ---
 # <a name="manage-incidents-in-microsoft-365-defender"></a>在 Microsoft 365 Defender 中管理事件
 
@@ -38,7 +39,7 @@ ms.locfileid: "48846648"
 
 
 
-管理事件对于确保控制和解决威胁至关重要。 在 Microsoft 365 Defender 中，你有权管理设备、用户和邮箱上的事件。 
+管理事件对于确保控制和解决威胁至关重要。 在 Microsoft 365 Defender 中，你有权访问管理设备、用户和邮箱上的事件。 
 
 
 从“事件队列”中选择事件后，就可以管理事件了。 
@@ -48,14 +49,14 @@ ms.locfileid: "48846648"
 如果在调查时希望将警报从一个事件转移到另一个事件，还可以从“警报”选项卡执行相关操作，从而创建一个包含所有相关警报的较大或较小的事件。
 
 ## <a name="edit-incident-name"></a>编辑事件名称
-事件将根据警报属性（如受影响的终结点数、受影响的用户数、检测源或类别）自动分配名称。 这使您可以快速了解事件的范围。
+根据警报属性（如受影响的终结点数量、受影响的用户数、检测源或类别）自动为事件分配名称。 这使您可以快速了解事件的范围。
 
-例如：多 *个源报告的多个终结点上的多阶段事件。*
+例如： *多个源报告的多个终结点上的多阶段事件。*
 
 可以修改事件名称，以便更好地与首选命名约定保持一致。
 
 > [!NOTE]
-> 在自动事件命名功能的推出之前存在的事件将保留其名称。
+> 在推出自动事件命名功能之前已存在的事件将保留其名称。
 
 
 

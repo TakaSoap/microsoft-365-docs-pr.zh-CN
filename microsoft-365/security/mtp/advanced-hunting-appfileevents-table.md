@@ -1,10 +1,10 @@
 ---
 title: 高级搜寻架构中的 AppFileEvents 表
-description: 了解与高级搜寻架构的 AppFileEvents 表中的云应用和服务关联的与文件相关的事件
-keywords: 高级搜寻、威胁搜寻、网络威胁搜寻、microsoft 威胁防护、microsoft 365、mtp、m365、搜索、查询、遥测、架构参考、kusto、表、列、数据类型、说明、AppFileEvents、云应用安全性、MCAS
+description: 在高级搜寻架构的 AppFileEvents 表中了解与云应用和服务关联的文件相关事件
+keywords: 高级搜寻， 威胁搜寻， 网络威胁搜寻， Microsoft 威胁防护， microsoft 365， mtp， m365， 搜索， 查询， 遥测， 架构参考， kusto， 表， 列， 数据类型， 说明， AppFileEvents， Cloud App Security， MCAS
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,12 +19,13 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: 1a7f523e96c0a46c29098f7e5bb2fbb83a4db4bb
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.technology: m365d
+ms.openlocfilehash: 59e9affc53398f2a1b06fbab9774e4b53e146425
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48847652"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49932870"
 ---
 # <a name="appfileevents"></a>AppFileEvents
 
@@ -34,36 +35,36 @@ ms.locfileid: "48847652"
 **适用于：**
 - Microsoft 365 Defender
 
-`AppFileEvents`[高级搜寻](advanced-hunting-overview.md)架构中的表包含有关 Microsoft 云应用安全监视的云应用和服务中与文件相关的活动的信息。 使用此参考来构建从此表返回信息的查询。
+高级 `AppFileEvents` 搜寻 [架构中的](advanced-hunting-overview.md) 表包含有关 Microsoft Cloud App Security 监视的云应用和服务中的文件相关活动的信息。 使用此参考来构建从此表返回信息的查询。
 
 >[!TIP]
-> 若要详细了解表支持的事件类型 (`ActionType` 值) ，请使用 "安全中心" 中提供的 [内置架构引用](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) 。
+> 有关事件类型的详细信息 (表) 支持的值，请使用安全中心中提供的内置 `ActionType` 架构参考。 [](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center)
 
 有关高级搜寻架构中其他表的信息，请[参阅高级搜寻参考](advanced-hunting-schema-tables.md)。
 
 | 列名称 | 数据类型 | 说明 |
 |-------------|-----------|-------------|
 | `Timestamp` | datetime | 记录事件的日期和时间 |
-| `ActionType` | string | 触发事件的活动类型。 有关详细信息，请参阅[在门户架构参考中](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) |
-| `Application` | string | 执行录制操作的应用程序 |
+| `ActionType` | string | 触发事件的活动类型。 有关详细信息 [，请参阅门户内架构](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) 参考 |
+| `Application` | string | 执行所记录操作的应用程序 |
 | `FileName` | string | 录制操作所应用到的文件的名称 |
-| `FolderPath` | string | 包含录制的操作所应用于的文件的文件夹 |
-| `PreviousFileName` | string | 作为操作的结果重命名的文件的原始名称 |
-| `PreviousFolderPath` | string | 在应用录制的操作之前包含文件的原始文件夹 |
+| `FolderPath` | string | 包含已记录操作应用于的文件的文件夹 |
+| `PreviousFileName` | string | 作为操作结果重命名的文件的原始名称 |
+| `PreviousFolderPath` | string | 应用录制的操作之前包含文件的原始文件夹 |
 | `Protocol` | string | 使用的网络协议 |
 | `AccountName` | string | 帐户的用户名 |
 | `AccountDomain` | string | 帐户的域 |
-| `AccountUpn` | string | 帐户的用户主体名称 (UPN)  |
-| `AccountObjectId` | string | Azure AD 中的帐户的唯一标识符 |
-| `AccountDisplayName` | string | 通讯簿中显示的帐户用户的名称。 通常是给定的或名的名称、中间初始名称和姓氏的组合。 |
-| `DeviceName` | string | 设备 (FQDN) 的完全限定的域名称 |
+| `AccountUpn` | string | 帐户的用户主体 (UPN)  |
+| `AccountObjectId` | string | Azure AD 中帐户的唯一标识符 |
+| `AccountDisplayName` | string | 通讯簿中显示的帐户用户的名称。 通常是给定或名字、中间初始和姓氏或姓氏的组合。 |
+| `DeviceName` | string | 设备的 FQDN (完全) 域名 |
 | `DeviceType` | string | 设备类型 | 
-| `OSPlatform` | string | 设备上运行的操作系统的平台。 这表示特定操作系统，包括同一系列中的变体，如 Windows 10 和 Windows 7。 |
-| `IPAddress` | string | 分配给终结点的 IP 地址，并在相关的网络通信过程中使用 |
-| `DestinationDeviceName` | string | 运行处理录制操作的服务器应用程序的设备的名称 |
-| `DestinationIPAddress` | string | 运行用于处理录制操作的服务器应用程序的设备的 IP 地址 |
-| `Location` | string | 与事件关联的城市、国家或其他地理位置 |
-| `Isp` | string | Internet 服务提供商 (与终结点 IP 地址关联的 ISP)  |
+| `OSPlatform` | string | 在设备上运行的操作系统的平台。 这表示特定操作系统，包括同一系列中的变体，如 Windows 10 和 Windows 7。 |
+| `IPAddress` | string | 分配给终结点的 IP 地址，在相关的网络通信期间使用 |
+| `DestinationDeviceName` | string | 运行处理所记录操作的服务器应用程序的设备的名称 |
+| `DestinationIPAddress` | string | 运行处理所记录操作的服务器应用程序的设备的 IP 地址 |
+| `Location` | string | 与事件关联的城市、国家/地区或其他地理位置 |
+| `Isp` | string | Internet 服务提供商 (ISP) 与终结点 IP 地址关联 |
 | `ReportId` | long | 事件的唯一标识符 |
 | `AdditionalFields` | string | 有关实体或事件的其他信息 |
 

@@ -3,7 +3,7 @@ title: Microsoft 365 Defender 中的修正操作
 description: 获取 Microsoft 365 Defender 中自动调查后修正操作概述
 keywords: 自动化, 调查, 警报, 触发器, 操作, 修正
 search.appverid: met150
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -21,12 +21,13 @@ ms.topic: conceptual
 ms.custom: autoir
 ms.date: 12/09/2020
 ms.reviewer: evaldm, isco
-ms.openlocfilehash: 9e489e3b0100aa138b11d4bfb4ccc8048a2113f4
-ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
+ms.technology: m365d
+ms.openlocfilehash: c6b0275335f32419b470c789d83b069be7839c36
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "49683291"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49932846"
 ---
 # <a name="remediation-actions-in-microsoft-365-defender"></a>Microsoft 365 Defender 中的修正操作
 
@@ -52,7 +53,7 @@ ms.locfileid: "49683291"
 |---------|---------|
 |- 收集调查包 <br/>- 隔离设备 (此操作可以撤消) <br/>- 载出计算机 <br/>- 发布代码执行 <br/>- 解除隔离 <br/>- 请求示例 <br/>- 限制代码 (此操作可以撤消)  <br/>- 运行防病毒扫描 <br/>- 停止和隔离      |- 在 (时阻止 URL) <br/>- 软删除电子邮件或群集<br/>- 隔离电子邮件<br/>- 隔离电子邮件附件<br/>- 关闭外部邮件转发          |
 
-可在操作中心中查看修正操作（无论是等待审批还是 [已完成](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-action-center)）。
+可在操作中心中查看修正操作，无论是等待审批还是 [已完成](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-action-center)。
 
 ## <a name="remediation-actions-that-follow-automated-investigations"></a>自动调查后采取的修正操作
 
@@ -62,7 +63,7 @@ ms.locfileid: "49683291"
 
 | Verdict    | 区域    | 结果|
 |------|------|------|
-| 恶意    | 设备 (终结点)     | 如果组织的设备组 ("完全"，则会自动采取修正操作 [](mtp-configure-auto-investigation-response.md#review-or-change-the-automation-level-for-device-groups) **-** 自动修正) |
+| 恶意    | 设备 (终结点)     | 如果组织的设备组 ("完全"，则会自动执行修正操作 [](mtp-configure-auto-investigation-response.md#review-or-change-the-automation-level-for-device-groups) **-** 自动修正) |
 | 恶意    | 电子邮件内容 (URL 或附件)  | 建议的修正操作正在等待审批|
 | 可疑    | 设备或电子邮件内容 | 建议的修正操作正在等待审批|
 | 未发现威胁    | 设备或电子邮件内容    | 无需修正操作|

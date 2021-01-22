@@ -7,7 +7,6 @@ ms.reviewer: ''
 ms.date: ''
 audience: ITPro
 ms.topic: how-to
-ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -16,19 +15,21 @@ ms.collection:
 - M365-security-compliance
 ROBOTS: NOINDEX
 description: 用户可以了解如何查看和操作发送到他们有权访问的共享邮箱的隔离邮件。
-ms.openlocfilehash: 34a401d3bff66926acd3e04d7144ce465dfa3dbb
-ms.sourcegitcommit: 849b365bd3eaa9f3c3a9ef9f5973ef81af9156fa
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: 3efccca375745b0850c91039165b72a7d6f0bcb3
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49688025"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49931442"
 ---
 # <a name="view-and-release-quarantined-messages-from-shared-mailboxes"></a>查看和释放来自共享邮箱的隔离邮件
 
 > [!NOTE]
 > 本文中介绍的功能目前处于预览阶段，并非每个人都可以使用，并且可能会更改。
 
-用户可以管理隔离邮件，其中他们是收件人之一，如在 EOP 中查找并释放隔离 [邮件中所述](find-and-release-quarantined-messages-as-a-user.md)。 但是，用户具有邮箱的完全访问权限和"代理发送"或"代表发送"权限的共享邮箱呢，如 Exchange [Online](https://docs.microsoft.com/exchange/collaboration-exo/shared-mailboxes)中的共享邮箱中所述？
+用户可以管理隔离邮件，其中他们是收件人之一，如在 EOP 中查找并释放隔离 [邮件中所述](find-and-release-quarantined-messages-as-a-user.md)。 但是，用户对邮箱具有完全访问权限和"代理发送"或"代表发送"权限的共享邮箱呢，如 Exchange [Online](https://docs.microsoft.com/exchange/collaboration-exo/shared-mailboxes)中的共享邮箱中所述？
 
 以前，如果用户能够管理发送到共享邮箱的隔离邮件，管理员需要管理员为共享邮箱启用自动映射 (当管理员授予用户对另一个邮箱邮箱的访问权限时，它默认启用) 。 但是，根据用户有权访问的邮箱的大小和数量，当 Outlook 尝试打开用户有权访问的所有邮箱时，性能可能会受到影响。  因此，许多管理员都选择 [删除共享邮箱的自动映射](https://docs.microsoft.com/outlook/troubleshoot/profiles-and-accounts/remove-automapping-for-shared-mailbox)。
 

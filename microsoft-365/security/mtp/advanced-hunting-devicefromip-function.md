@@ -4,7 +4,7 @@ description: 了解如何使用 DeviceFromIP () 函数获取已分配有特定 I
 keywords: 高级搜寻， 威胁搜寻， 网络威胁搜寻， Microsoft 威胁防护， microsoft 365， mtp， m365， 搜索， 查询， 遥测， 架构参考， kusto， 设备， devicefromIP， 函数， 扩充
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,14 +19,15 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: 65409dd93f3703f1af115178c4cd9fa470fb7497
-ms.sourcegitcommit: 25ac2736a66bb72c0d574c3fbde7472ac98d5321
+ms.technology: m365d
+ms.openlocfilehash: 86373c903252fde4ab71c80a81404428a7366da7
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/31/2020
-ms.locfileid: "49741102"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49931298"
 ---
-# <a name="devicefromip"></a>DeviceFromIP () 
+# <a name="devicefromip"></a>DeviceFromIP()
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -38,7 +39,7 @@ ms.locfileid: "49741102"
 [!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
 
-使用高级搜寻查询中的函数快速获取给定时间点已分配给特定 IP 地址 `DeviceFromIP()` 的设备列表。 [](advanced-hunting-overview.md) 
+使用高级搜寻查询中的函数可快速获取给定时间点已分配给特定 IP 地址 `DeviceFromIP()` 的设备列表。 [](advanced-hunting-overview.md) 
 
 此函数返回具有以下列的表：
 

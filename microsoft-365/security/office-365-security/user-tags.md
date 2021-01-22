@@ -8,19 +8,20 @@ manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: how-to
-ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 ms.collection:
 - M365-security-compliance
 description: 管理员可以了解如何在 Microsoft Defender for Office 365 计划 2 中标识具有用户标记的特定用户组。 标签筛选可用于 Microsoft Defender for Office 365 中的警报、报告和调查，以快速标识标记的用户。
-ms.openlocfilehash: ad06bf90f1ecb93d671bfcad6fad0b4f2a952cb2
-ms.sourcegitcommit: 47de4402174c263ae8d70c910ca068a7581d04ae
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: ed91492e652773b3a48373df49b20d97887df6ee
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "49663603"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49931430"
 ---
 # <a name="user-tags-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 中的用户标记
 
@@ -46,7 +47,7 @@ ms.locfileid: "49663603"
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>开始前，有必要了解什么？
 
-- 安全与合规中心的打开网址为 <https://protection.office.com/>。 若要直接转到" **用户标记"页，** 请打开 <https://protection.office.com/userTags> 。
+- 安全与合规中心的打开网址为 <https://protection.office.com/>。 若要直接转到" **用户标记"** 页，请打开 <https://protection.office.com/userTags> 。
 
 - 必须分配有 Office 365 安全与合规中心内的权限，才能执行本文中的步骤：
   - 若要创建、修改和删除用户标记，您必须是组织 **管理或****安全** 管理员角色组的成员。
@@ -81,7 +82,7 @@ ms.locfileid: "49663603"
      - 在框中单击并开始键入以筛选列表并选择用户或组。
      - 若要添加其他值，请单击框中的空白区域。
      - 若要从框中删除单个条目，请单击框中用户或 ![ 组上的"删除 ](../../media/scc-remove-icon.png) "图标。
-     - 若要从框下方的列表中删除现有条目，请单击 **"删除** ![ "图标删除该 ](../../media/scc-remove-icon.png) 条目。
+     - 若要从框下方的列表中删除现有条目，请单击 **"删除** ![ "图标 ](../../media/scc-remove-icon.png) 删除该条目。
 
      完成后，单击"添加 **"。**
 
@@ -119,4 +120,4 @@ ms.locfileid: "49663603"
 
 1. 在安全中心，转到 **威胁管理** \> **用户标记**。
 
-2. 在打开 **的**"用户标记"页上，选择要删除的用户标记，单击"删除标记"，然后在出现的警告中选择"是，删除"。 
+2. 在打开 **的用户标记** 页上，选择要删除的用户标记，单击"删除标记"，然后在出现的警告中选择"是，删除"。

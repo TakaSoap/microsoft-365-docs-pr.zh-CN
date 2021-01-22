@@ -2,7 +2,7 @@
 title: Microsoft 安全分数即将提供哪些功能
 description: 介绍 Microsoft 365 安全中心中的 Microsoft 安全分数即将发生哪些新更改。
 keywords: microsoft 安全分数， 安全分数， office 365 安全分数， Microsoft 安全分数， microsoft 365 安全中心， 改进操作
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 f1.keywords:
@@ -17,18 +17,19 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 0693e70cdd5636ce655a400a48aac65197327291
-ms.sourcegitcommit: a8f3c633714e934f9ad026c3bc72157ed535dcfc
+ms.technology: m365d
+ms.openlocfilehash: f7a0dfa3e95321ddd85a56fc32f2d36e72c6b80b
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/29/2020
-ms.locfileid: "49737949"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49930602"
 ---
 # <a name="whats-coming-to-microsoft-secure-score"></a>Microsoft 安全分数即将提供哪些功能
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-可在 Microsoft https://security.microsoft.com/securescore [365](overview-security-center.md)安全中心找到 Microsoft 安全分数。
+Microsoft 安全分数位于 https://security.microsoft.com/securescore [Microsoft 365 安全中心](overview-security-center.md)。
 
 ## <a name="proposed-changes"></a>建议的更改
 
@@ -36,7 +37,7 @@ ms.locfileid: "49737949"
 
 ### <a name="no-planned-changes"></a>无计划更改
 
-目前没有任何计划更改。
+目前没有任何计划的更改。
 
 ## <a name="related-resources"></a>相关资源
 

@@ -2,7 +2,7 @@
 title: 通过 Microsoft 安全分数评估安全状况
 description: 介绍如何采取措施改进 Microsoft 365 安全中心中的 Microsoft 安全分数。
 keywords: microsoft 安全分数， 安全分数， office 365 安全分数， Microsoft 安全分数， microsoft 365 安全中心， 改进操作
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 f1.keywords:
@@ -20,12 +20,13 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: c463e375594b3581486cb8d4bdd380412e195b2e
-ms.sourcegitcommit: a8f3c633714e934f9ad026c3bc72157ed535dcfc
+ms.technology: m365d
+ms.openlocfilehash: 8cf416e773abc6cbe1fd891fcec9f02a5011c413
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/29/2020
-ms.locfileid: "49738007"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49930638"
 ---
 # <a name="assess-your-security-posture-with-microsoft-secure-score"></a>使用 Microsoft 安全分数评估安全状态
 
@@ -36,11 +37,11 @@ Microsoft 安全分数是组织安全状况的度量，数字越高，表示采�
 为了帮助您更快获得所需的信息，Microsoft 改进操作分为多个组：
 
 * Azure (Directory 帐户的标识&角色) 
-* Device (For Endpoint 的 Microsoft Defender，称为 [适用于终结点的 Microsoft](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/tvm-microsoft-secure-score-devices) 安全) 
+* Device (For Endpoint，称为 Microsoft [安全分数（](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/tvm-microsoft-secure-score-devices) 适用于终结点) 
 * 应用 (电子邮件和云应用，包括 Office 365 和 Microsoft Cloud App Security) 
 
 >[!NOTE]
->在 Microsoft 安全分数的最近版本中，已发布了改进的评分模型，使 Microsoft 安全分数暂时与标识安全分数和 Graph API 不兼容。 [查看详细信息](microsoft-secure-score-whats-new.md)
+>在 Microsoft 安全分数的最近版本中，已发布了改进的记分模型，使 Microsoft 安全分数暂时与标识安全分数和 Graph API 不兼容。 [查看详细信息](microsoft-secure-score-whats-new.md)
 
 在"Microsoft 安全分数概述"页中，查看如何在这些组之间拆分分数以及可用分数。 通过基准比较，还可以全面查看总分、安全分数的历史趋势，以及可用于提高分数的优先级改进操作。
 
@@ -60,7 +61,7 @@ Microsoft 安全分数是组织安全状况的度量，数字越高，表示采�
 
 如果已包含所有可能的得分视图，则此视图的外观将如下所示：
 
-![你的安全分数，包括计划分数、当前许可证分数和可得分](../../media/secure-score/your-secure-score.png)
+![安全分数，包括计划分数、当前许可证分数和可得分](../../media/secure-score/your-secure-score.png)
 
 ## <a name="take-action-to-improve-your-score"></a>采取措施提高分数
 
@@ -72,7 +73,7 @@ Microsoft 安全分数是组织安全状况的度量，数字越高，表示采�
 
 ### <a name="view-improvement-action-details"></a>查看改进操作详细信息
 
-选择特定改进操作时，将出现一个整页的飞出图。  
+选择特定改进操作时，将显示一个完整页面飞出。  
 
 ![改进操作飞出示例](../../media/secure-score/secure-score-improvement-action-details.png)
 
@@ -82,7 +83,7 @@ Microsoft 安全分数是组织安全状况的度量，数字越高，表示采�
 
 - 选择 **"** 共享"以复制指向改进操作的直接链接。 还可以选择共享链接的平台，如电子邮件、Microsoft Teams、Microsoft Planner 或 ServiceNow。 选择 ServiceNow 将让你创建将在 ServiceNow 和 Microsoft 365 安全中心主页中可见的更改票证。 若要了解更多信息，请参阅 [Microsoft 365 安全中心和 ServiceNow 集成](tickets-security-center.md)。
 
-添加 **注释** 以跟踪进度或要注释的任何内容。 如果向改进操作 **添加** 自己的标记，可以按这些标记进行筛选。
+添加 **备注** 以跟踪进度或要注释的任何内容。 如果向改进操作 **添加** 自己的标记，可以按这些标记进行筛选。
 
 ### <a name="choose-an-improvement-action-status"></a>选择改进操作状态
 
@@ -90,12 +91,12 @@ Microsoft 安全分数是组织安全状况的度量，数字越高，表示采�
 
 - **要** 解决 - 您意识到改进操作是必需的，并计划在将来的某一时间点处理改进操作。 此状态还适用于被检测为部分但未完成的操作。
 - **已计划** - 已制定具体计划来完成改进操作。
-- **接受** 风险 - 安全性应始终与可用性进行平衡，并且并不是每个建议都适用于你的环境。 在这种情况下，你可以选择接受风险或剩余风险，而不是强调改进操作。 你将不会获得任何分数，但该操作将不再显示在改进操作列表中。 可以在历史记录中查看此操作，也可以随时撤消此操作。
+- **接受风险** - 安全性应始终与可用性进行平衡，并且并不是每个建议都适用于你的环境。 在这种情况下，你可以选择接受风险或剩余风险，而不是强调改进操作。 你将不会获得任何分数，但该操作将不再显示在改进操作列表中。 可以在历史记录中查看此操作，也可以随时撤消此操作。
 - **通过第三方解决** ， **通过** 备用缓解解决 - 改进操作已由第三方应用程序或软件或内部工具解决。 你将获得操作有价值的分数，以便你的分数更好地反映你的整体安全状况。 如果第三方或内部工具不再涵盖该控件，可以选择其他状态。 请记住，如果改进操作被标记为这些状态之一，Microsoft 将不能了解实现的完整性。
 
 #### <a name="threat--vulnerability-management-improvement-actions"></a>威胁&漏洞管理改进操作
 
-对于"设备"类别中的改进操作，你无法选择状态。 相反，你将被定向到[Microsoft Defender](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/use) [](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/tvm-security-recommendation)安全中心中的关联威胁和漏洞管理安全建议以采取措施。 你选择的例外以及你编写的理由将特定于该门户。 它不会在 Microsoft 安全分数门户中显示。
+对于"设备"类别中的改进操作，你无法选择状态。 相反，你将转到[Microsoft Defender](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/use)安全中心[](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/tvm-security-recommendation)中的关联威胁和漏洞管理安全建议以采取措施。 你选择的例外以及你编写的理由将特定于该门户。 它不会在 Microsoft 安全分数门户中显示。
 
 #### <a name="completed-improvement-actions"></a>已完成的改进操作
 
@@ -105,13 +106,13 @@ Microsoft 安全分数是组织安全状况的度量，数字越高，表示采�
 
 名为 **"概览"的部分** 将告诉您类别、可抵御的攻击和产品。
 
-**用户** 影响是实施改进措施时用户将遇到的问题，受影响用户是将受到影响的用户。
+**用户** 影响是实施改进措施时用户将体验的，受影响用户是将受到影响的用户。
 
 ### <a name="implement-the-improvement-action"></a>实施改进操作
 
 " **实现** "部分显示了任何先决条件、完成改进操作所需的分步步骤、改进操作的当前实现状态以及任何了解更多链接。
 
-先决条件包括解决改进操作之前需要的任何许可证或要完成的操作。 请确保许可证中有足够的座位来完成改进操作，并且这些许可证适用于必要的用户。  
+先决条件包括解决改进操作之前需要完成的任何许可证或要完成的操作。 请确保许可证中有足够的座位来完成改进操作，并且这些许可证适用于必要的用户。  
 
 ## <a name="we-want-to-hear-from-you"></a>欢迎提出宝贵意见
 

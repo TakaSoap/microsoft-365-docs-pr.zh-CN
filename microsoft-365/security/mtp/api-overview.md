@@ -3,7 +3,7 @@ title: Microsoft 365 Defender API 概述
 description: 了解 Microsoft 365 Defender 中的可用 API
 keywords: api， api， 概述， 事件， 事件， 威胁搜寻， microsoft 365 defender
 search.product: eADQiWindows 10XVcnh
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,12 +19,13 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 1a75a561e60c05208e8ea302505f9644ac0bc044
-ms.sourcegitcommit: d6b1da2e12d55f69e4353289e90f5ae2f60066d0
+ms.technology: m365d
+ms.openlocfilehash: 8e06d4b4f7c895b532091c73e8269411fb38bf21
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "49719186"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49930998"
 ---
 # <a name="overview-of--microsoft-365-defender-apis"></a>Microsoft 365 Defender API 概述
 

@@ -1,8 +1,8 @@
 ---
-title: 数据监控 & 报告-安全中心
+title: 数据监视&报告 - 安全中心
 description: 了解如何跟踪可能导致 Microsoft 365 安全中心中未经授权的数据泄露的用户活动。
-keywords: security、恶意软件、Microsoft 365、M365、security center、monitor、report、data
-ms.prod: microsoft-365-enterprise
+keywords: 安全， 恶意软件， Microsoft 365， M365， 安全中心， 监视， 报告， 数据
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 f1.keywords:
@@ -17,25 +17,26 @@ ms.collection:
 ms.topic: article
 search.appverid: met150
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d5763c3e3152586285d27bcbc8214e1ee36641c3
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+ms.technology: m365d
+ms.openlocfilehash: a71f7a7284c2734c4cab2d4e9501a17f4e9ec6e7
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48429391"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49930434"
 ---
-# <a name="data-monitoring-and-reporting-in-the-microsoft-365-security-center"></a>Microsoft 365 安全中心中的数据监控和报告
+# <a name="data-monitoring-and-reporting-in-the-microsoft-365-security-center"></a>Microsoft 365 安全中心内的数据监视和报告
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
-“数据”**** 类别报告有助于跟踪可能会导致未经授权数据泄漏的用户活动。 它们是现有 DLP 策略报告和第三方 DLP 策略匹配报告的返工。
+“数据”类别报告有助于跟踪可能会导致未经授权数据泄漏的用户活动。 它们是现有 DLP 策略报告以及第三方 DLP 策略匹配报告的重复工作。
 
 可以看到：
 
 - 从云应用共享文件最多的用户
-- 已发生的 DLP 策略匹配的数量
+- 发生了多少 DLP 策略匹配
 - 报告的 DLP 策略替代数或误报数
-- 通过 Microsoft 云应用安全性在第三方云服务中发生的 DLP 策略匹配的数量
+- 通过 Microsoft Cloud App Security 第三方云服务中发生的 DLP 策略匹配数
 
-!["报表的数据类别" 页](../../media/data.png)
+!["报告的数据类别"页](../../media/data.png)

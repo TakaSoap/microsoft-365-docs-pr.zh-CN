@@ -1,10 +1,10 @@
 ---
-title: 在 Microsoft 365 Defender 中创建和管理自定义检测规则
-description: 了解如何创建和管理基于高级搜寻查询的自定义检测规则
-keywords: 高级搜寻、威胁搜寻、网络威胁搜寻、microsoft 威胁防护、microsoft 365、mtp、m365、搜索、查询、遥测、自定义检测、规则、架构、kusto、microsoft 365、Microsoft 威胁防护、RBAC、权限、Microsoft Defender ATP
+title: 在 Microsoft 365 Defender 中创建自定义检测规则
+description: 了解如何基于高级搜寻查询创建和管理自定义检测规则
+keywords: 高级搜寻， 威胁搜寻， 网络威胁搜寻， Microsoft 威胁防护， microsoft 365， mtp， m365， 搜索， 查询， 遥测， 自定义检测， 规则， 架构， kusto， microsoft 365， Microsoft 威胁防护， RBAC， 权限， Microsoft Defender ATP
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,12 +19,13 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: 5de4532a1bba809cde16ba6033ab30773a832176
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.technology: m365d
+ms.openlocfilehash: 8c7e47e66f9e5543cc122c5b5154207cae836d2a
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48846768"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49932918"
 ---
 # <a name="create-and-manage-custom-detections-rules"></a>创建和管理自定义检测规则
 
@@ -34,45 +35,45 @@ ms.locfileid: "48846768"
 **适用于：**
 - Microsoft 365 Defender
 
-自定义检测规则是您可以使用 [高级搜寻](advanced-hunting-overview.md) 查询进行设计和调整的规则。 这些规则允许您主动监视各种事件和系统状态，包括可疑的入侵活动和错误配置的终结点。 您可以将其设置为定期运行，并在存在匹配项时生成警报和采取响应操作。
+自定义检测规则是可以使用高级搜寻查询设计和 [调整](advanced-hunting-overview.md) 的规则。 通过这些规则，您可以主动监视各种事件和系统状态，包括可疑的泄露活动和错误配置的终结点。 你可以将它们设置为定期运行，生成警报，并随时执行响应操作。
 
-## <a name="required-permissions-for-managing-custom-detections"></a>管理自定义检测项所需的权限
+## <a name="required-permissions-for-managing-custom-detections"></a>管理自定义检测所需的权限
 
-若要管理自定义检测，您需要分配以下角色之一：
+若要管理自定义检测，需要分配以下角色之一：
 
-- **安全管理员** -具有此 [Azure Active Directory 角色](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#security-administrator) 的用户可以在 Microsoft 365 安全中心和其他门户和服务中管理安全设置。
+- **安全管理员**- 具有 [此 Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#security-administrator) 角色的用户可以在 Microsoft 365 安全中心和其他门户和服务中管理安全设置。
 
-- **Security operator** -具有此 [Azure Active Directory 角色](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#security-administrator) 的用户可以管理警报并对安全相关功能（包括 Microsoft 365 安全中心中的所有信息）具有全局只读访问权限。 仅当基于角色的访问控制 (RBAC) 在 Microsoft Defender for Endpoint 中处于关闭状态时，此角色才足够管理自定义检测。 如果配置了 RBAC，则还需要对 Defender for Endpoint 的 " **管理安全设置** " 权限。
+- **安全操作员**— 具有 [此 Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#security-administrator) 角色的用户可以管理警报，并且对与安全相关的功能（包括 Microsoft 365 安全中心内的所有信息）具有全局只读访问权限。 只有在 Microsoft Defender for Endpoint 中关闭基于角色的访问控制 (RBAC) ，此角色才足以管理自定义检测。 如果已配置 RBAC，则还需要 Defender for Endpoint **的** 安全设置权限。
 
-若要管理所需的权限， **全局管理员** 可以执行以下操作：
+若要管理所需的权限，全局 **管理员可以** ：
 
-- 在 **角色** 安全管理员下的 [Microsoft 365 管理中心](https://admin.microsoft.com/)中分配 **安全管理员** 或 **安全操作员** 角色  >  **Security admin** 。
-- 在 " **设置** 权限角色" 下的 " [microsoft defender 安全中心](https://securitycenter.windows.com/)" 中检查 microsoft defender for Endpoint 的 RBAC 设置  >  **Permissions**  >  **Roles** 。 选择相应的角色以分配 **管理安全设置** 权限。
+- 在 **Microsoft** [365](https://admin.microsoft.com/)管理 **中心的**"角色安全管理员"下分配 **安全管理员或**  >  **安全操作员角色**。
+- 在"设置权限角色"下检查 Microsoft Defender 安全中心中 [适用于终结点的 Microsoft Defender](https://securitycenter.windows.com/)的 RBAC  >    >  **设置**。 选择相应的角色以分配 **管理安全设置** 权限。
 
 > [!NOTE]
-> 若要管理自定义检测，如果 RBAC 已打开， **安全操作员** 将需要 Microsoft Defender for Endpoint 中的 " **管理安全设置** " 权限。
+> 若要管理自定义检测，如果RBAC 已打开，安全操作员将需要在 Microsoft Defender for Endpoint 中管理安全设置权限。
 
 ## <a name="create-a-custom-detection-rule"></a>创建自定义检测规则
 ### <a name="1-prepare-the-query"></a>1. 准备查询。
 
-在 Microsoft 365 安全中心中，转到 " **高级** 搜索"，然后选择一个现有查询或创建新的查询。 使用新查询时，请运行查询以确定错误并了解可能的结果。
+在 Microsoft 365 安全中心，转到" **高级** 搜寻"并选择现有查询或创建新查询。 使用新查询时，运行查询以识别错误并了解可能的结果。
 
 >[!IMPORTANT]
->若要防止服务返回过多警报，每个规则都限制为每次运行时仅生成100警报。 在创建规则之前，请调整您的查询以避免正常的日常活动的警报。
+>为了防止服务返回过多警报，每个规则都限制为每次运行时仅生成 100 个警报。 在创建规则之前，请调整查询以避免对正常的日常活动发出警报。
 
 
 #### <a name="required-columns-in-the-query-results"></a>查询结果中的必需列
 若要创建自定义检测规则，查询必须返回以下列：
 
-- `Timestamp`-用于设置生成的警报的时间戳
-- `ReportId`-启用对原始记录的查找
-- 标识特定设备、用户或邮箱的下列各列之一：
+- `Timestamp`—用于设置生成的警报的时间戳
+- `ReportId`— 启用对原始记录的查找
+- 标识特定设备、用户或邮箱的以下列之一：
     - `DeviceId`
     - `DeviceName`
     - `RemoteDeviceName`
     - `RecipientEmailAddress`
-    - `SenderFromAddress` (信封发件人或 Return-Path 地址) 
-    - `SenderMailFromAddress` (电子邮件客户端显示的发件人地址) 
+    - `SenderFromAddress` (信封发件人或Return-Path地址) 
+    - `SenderMailFromAddress` (客户端服务器显示) 
     - `RecipientObjectId`
     - `AccountObjectId`
     - `AccountSid`
@@ -82,13 +83,13 @@ ms.locfileid: "48846768"
     - `InitiatingProcessAccountObjectId`
 
 >[!NOTE]
->在向 [高级搜寻架构](advanced-hunting-schema-tables.md)中添加新表时，将添加对其他实体的支持。
+>当新表添加到高级搜寻架构时，将添加对其他 [实体的支持](advanced-hunting-schema-tables.md)。
 
-简单查询（例如，不使用 `project` or `summarize` 运算符自定义或聚合结果的查询）通常返回这些常见的列。
+简单查询（如不使用 or 运算符自定义或聚合结果的查询） `project` `summarize` 通常返回这些常用列。
 
-有多种方法可确保更复杂的查询返回这些列。 例如，如果您更喜欢在一列（如）下按实体进行聚合和计数 `DeviceId` ，则仍可以返回，也可以 `Timestamp` 通过与 `ReportId` 每个唯一涉及的最新事件获取它 `DeviceId` 。
+有多种方式可以确保更复杂的查询返回这些列。 例如，如果你更希望按列下的实体进行聚合和计数，你仍然可以返回它，并且通过从涉及每个唯一的最近事件获取 `DeviceId` `Timestamp` `ReportId` 它 `DeviceId` 。
 
-下面的示例查询计算使用防病毒检测 () 的唯一设备的数量 `DeviceId` ，并使用此计数来仅查找具有超过5个检测项的设备。 若要返回最新 `Timestamp` 和相应的 `ReportId` ，则将 `summarize` 运算符与函数一起使用 `arg_max` 。
+下面的示例查询对使用防病毒检测 () 设备数进行计数，并使用此计数仅查找检测次数超过 `DeviceId` 五的设备。 为了返回最新 `Timestamp` 和相应的值 `ReportId` ，它将 `summarize` 运算符与 `arg_max` 函数一同使用。
 
 ```kusto
 DeviceEvents
@@ -99,112 +100,112 @@ DeviceEvents
 ```
 
 > [!TIP]
-> 若要获得更好的查询性能，请设置与规则的预期运行频率相匹配的时间筛选器。 由于 _每隔24小时_ 运行最少的运行，因此过去一天的筛选将涵盖所有新数据。
+> 为了提升查询性能，请设置与规则预期运行频率相匹配的时间筛选器。 由于运行频率最低是 _每 24 小时_ 一次，因此对过去一天的筛选将覆盖所有新数据。
 
 ### <a name="2-create-new-rule-and-provide-alert-details"></a>2. 创建新规则并提供警报详细信息。
 
-使用查询编辑器中的查询，选择 " **创建检测规则** "，并指定以下警报详细信息：
+使用查询编辑器中的查询，选择 **"创建检测规则** "并指定以下警报详细信息：
 
-- **检测名称** —检测规则的名称
-- **Frequency** —运行查询和采取操作的时间间隔。 [请参阅下面的其他指导](#rule-frequency)
-- **通知标题** —与规则触发的警报一起显示的标题
-- **严重性** —由规则标识的组件或活动的潜在风险
-- **Category** -由规则标识的威胁组件或活动
-- **MITRE ATT&CK 技术** —由规则标识的一个或多个攻击技术，如 [MITRE ATT&CK framework](https://attack.mitre.org/)中所述。 此部分对于某些警报类别是隐藏的，其中包括恶意软件、勒索软件、可疑活动和不需要的软件
-- **说明** —有关由规则标识的组件或活动的详细信息 
-- **建议的操作** ，响应者可能会采取的其他操作来响应警报
+- **检测名称**- 检测规则的名称
+- **频率**— 运行查询和采取措施的时间间隔。 [请参阅下面的其他指南](#rule-frequency)
+- **警报标题**- 显示由规则触发的警报的标题
+- **严重性**- 规则标识的组件或活动的潜在风险
+- **类别**— 规则标识的威胁组件或活动
+- **MITRE ATT&CK** 技术 - 一种或多种攻击技术，由 [MITRE ATT](https://attack.mitre.org/)和 CK 框架中记录的规则&攻击技术。 本部分对某些警报类别（包括恶意软件、勒索软件、可疑活动和不需要的软件）隐藏
+- **说明**- 有关规则标识的组件或活动详细信息 
+- **建议的操作**- 响应者为响应警报可能执行的其他操作
 
 #### <a name="rule-frequency"></a>规则频率
-当您保存或编辑新规则时，它会运行并检查来自过去30天数据的匹配项。 然后，该规则将按固定的时间间隔再次运行，并根据您选择的频率应用 lookback 持续时间：
+保存或编辑新规则时，它将运行并检查过去 30 天的数据中的匹配项。 然后，规则以固定间隔再次运行，并基于你选择的频率应用回发持续时间：
 
-- **每24小时一** 次，从过去30天中检查数据，每24小时运行一次
-- **每12个小时一** 次，从过去24小时内检查数据，每12小时运行一次
-- **每3小时一** 次，每3小时运行一次，检查过去6个小时的数据
-- **每小时一次—每** 小时运行一次，检查过去2个小时内的数据
+- **每 24 小时** 运行一次，每 24 小时运行一次，检查过去 30 天的数据
+- **每 12 小时** 运行一次 ，每 12 小时运行一次，检查过去 24 小时的数据
+- **每 3 小时** 运行一次，每 3 小时运行一次，检查过去 6 小时的数据
+- **每小时** 运行一次，检查过去 2 小时的数据
 
 >[!TIP]
-> 将查询中的时间筛选器与 lookback 持续时间相匹配。 Lookback 持续时间之外的结果将被忽略。  
+> 将查询中的时间筛选器与回发持续时间相匹配。 将忽略回发持续时间之外的结果。  
 
-选择与您要监视检测结果的接近程度相匹配的频率。 请考虑贵组织对警报做出响应的能力。
+选择与要监视检测的频率相匹配的频率。 考虑组织响应警报的能力。
 
-### <a name="3-choose-the-impacted-entities"></a>3. 选择受影响的实体。
-确定您希望在其中查找受影响的主要或受影响的实体的查询结果中的列。 例如，查询可能会返回发件人 (`SenderFromAddress` 或 `SenderMailFromAddress`) 和收件人 (`RecipientEmailAddress`) 地址。 确定哪些列代表主要受影响的实体可帮助服务聚合相关警报、关联事件和目标响应操作。
+### <a name="3-choose-the-impacted-entities"></a>3. 选择受到影响的实体。
+在查询结果中标识希望找到主要受影响或受影响的实体的列。 例如，查询可能返回发件人 (`SenderFromAddress` 或) `SenderMailFromAddress` 收件人 () `RecipientEmailAddress` 地址。 确定哪些列表示主要影响的实体可帮助服务聚合相关警报、关联事件和目标响应操作。
 
-您只能为每个实体类型 (邮箱、用户或设备) 选择一列。 无法选择查询未返回的列。
+只能为邮箱、用户或设备 (实体类型选择一) 。 无法选择查询未返回的列。
 
 ### <a name="4-specify-actions"></a>4. 指定操作。
-您的自定义检测规则可以对查询返回的设备、文件或用户自动执行操作。
+自定义检测规则可以自动对查询返回的设备、文件或用户执行操作。
 
 #### <a name="actions-on-devices"></a>对设备的操作
-这些操作适用于 `DeviceId` 查询结果列中的设备：
-- **隔离设备** —使用 Microsoft Defender for Endpoint 应用完全网络隔离，以阻止设备连接到任何应用程序或服务。 [了解有关 Microsoft Defender for Endpoint machine 隔离的详细信息](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#isolate-devices-from-the-network)
-- **收集调查包** —收集 ZIP 文件中的设备信息。 [了解有关 Microsoft Defender for Endpoint 调查包的详细信息](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#collect-investigation-package-from-devices)
-- **运行防病毒扫描** —在设备上执行完整的 Windows Defender 防病毒扫描
-- **启动调查** —启动对设备的 [自动调查](mtp-autoir.md)
-- **限制应用程序执行** —将对设备的限制设置为仅允许使用 Microsoft 颁发的证书签名的文件运行。 [了解有关 Microsoft Defender for Endpoint 的应用限制的详细信息](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#restrict-app-execution)
+这些操作将应用于查询结果 `DeviceId` 列中的设备：
+- **隔离设备**— 使用 Microsoft Defender for Endpoint 应用完全网络隔离，阻止设备连接到任何应用程序或服务。 [了解有关适用于终结点计算机隔离的 Microsoft Defender](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#isolate-devices-from-the-network)
+- **收集调查包**— 在 ZIP 文件中收集设备信息。 [详细了解 Microsoft Defender for Endpoint 调查包](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#collect-investigation-package-from-devices)
+- **运行防病毒扫描**- 在设备上执行Windows Defender防病毒扫描
+- **启动调查**— 在 [设备上](mtp-autoir.md) 启动自动调查
+- **限制应用** 执行 — 在设备上设置限制以仅允许使用 Microsoft 颁发的证书签名的文件运行。 [详细了解 Microsoft Defender for Endpoint 的应用限制](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#restrict-app-execution)
 
-#### <a name="actions-on-files"></a>对文件执行的操作
-如果选择此选项，则可以选择对查询结果的、、或列中的文件应用 **隔离文件** 操作 `SHA1` `InitiatingProcessSHA1` `SHA256` `InitiatingProcessSHA256` 。 此操作将从文件的当前位置删除文件，并将副本放在 "隔离" 中。
+#### <a name="actions-on-files"></a>对文件的操作
+选择后，可以选择对查询结果的、 或列中的文件应用隔离 `SHA1` `InitiatingProcessSHA1` `SHA256` `InitiatingProcessSHA256` 文件操作。 此操作将从文件的当前位置删除文件，并隔离副本。
 
-#### <a name="actions-on-users"></a>对用户的操作
-如果选择此选项，则会对查询结果的、或列中的用户执行 "将 **用户标记为受到威胁** " 操作 `AccountObjectId` `InitiatingProcessAccountObjectId` `RecipientObjectId` 。 此操作在 Azure Active Directory 中将用户风险级别设置为 "高"，从而触发相应的 [标识保护策略](https://docs.microsoft.com/azure/active-directory/identity-protection/overview-identity-protection)。
+#### <a name="actions-on-users"></a>用户操作
+选中后， **将用户标记为** 已泄露，将针对查询结果的 `AccountObjectId` 、 `InitiatingProcessAccountObjectId` 或 `RecipientObjectId` 列中的用户执行该操作。 此操作将 Azure Active Directory 中的用户风险级别设置为"高"，从而触发相应的 [标识保护策略](https://docs.microsoft.com/azure/active-directory/identity-protection/overview-identity-protection)。
 
 > [!NOTE]
-> Microsoft 365 Defender 目前不支持自定义检测规则的允许或阻止操作。
+> Microsoft 365 Defender 当前不支持自定义检测规则的允许或阻止操作。
 
-### <a name="5-set-the-rule-scope"></a>5. 设置规则作用域。
-设置作用域以指定规则所涵盖的设备。 作用域会影响检查设备的规则，而不会影响仅检查邮箱和用户帐户或标识的规则。
+### <a name="5-set-the-rule-scope"></a>5. 设置规则范围。
+设置范围以指定规则涵盖哪些设备。 作用域影响检查设备的规则，而不影响仅检查邮箱和用户帐户或标识的规则。
 
-设置作用域时，可以选择：
+设置范围时，可以选择：
 
 - 所有设备
 - 特定设备组
 
-仅会查询范围内设备中的数据。 此外，操作只会在这些设备上执行。
+将仅查询范围内设备的数据。 此外，仅对这些设备执行操作。
 
-### <a name="6-review-and-turn-on-the-rule"></a>6. 查看并启用规则。
-检查规则后，选择 " **创建** " 以保存该规则。 自定义检测规则将立即运行。 它将根据配置的频率再次运行，以检查匹配项、生成警报并采取响应操作。
+### <a name="6-review-and-turn-on-the-rule"></a>6. 查看并打开规则。
+查看规则后，选择 **"创建"** 以保存它。 自定义检测规则会立即运行。 它将基于配置的频率再次运行，以检查匹配项、生成警报以及执行响应操作。
 
-## <a name="manage-existing-custom-detection-rules"></a>管理现有的自定义检测规则
-您可以查看现有的自定义检测规则的列表，检查其以前的运行，并查看它们触发的警报。 您还可以按需运行规则并对其进行修改。
+## <a name="manage-existing-custom-detection-rules"></a>管理现有自定义检测规则
+您可以查看现有自定义检测规则的列表，检查其之前的运行，并查看已触发的警报。 您还可以按需运行规则并对其进行修改。
 
 ### <a name="view-existing-rules"></a>查看现有规则
 
-若要查看所有现有的自定义检测规则，请导航到 " **搜寻**  >  **自定义** 检测"。 页面列出了包含以下运行信息的所有规则：
+若要查看所有现有的自定义检测规则，请导航到 **"搜寻**  >  **自定义检测"。** 该页列出了具有以下运行信息的所有规则：
 
-- **上次运行** 时间—上次运行规则以检查查询匹配项并生成警报
-- **上次运行状态** —规则是否成功运行
-- **下次运行** —下一次计划的运行
-- **状态** —是否已打开或关闭规则
+- **上次运行**- 上次运行规则以检查查询匹配项并生成警报时
+- **上次运行状态**— 规则是否成功运行
+- **下一次** 运行 - 下一次计划运行
+- **状态**— 规则是已打开还是关闭
 
-### <a name="view-rule-details-modify-rule-and-run-rule"></a>查看规则详细信息、修改规则和运行规则
+### <a name="view-rule-details-modify-rule-and-run-rule"></a>查看规则详细信息、修改规则并运行规则
 
-若要查看有关自定义检测规则的完整信息，请 **转到 "** 搜索  >  **自定义检测** "，然后选择规则的名称。 然后，您可以查看有关该规则的常规信息，包括信息的运行状态和范围。 此页面还提供触发的警报和操作的列表。
+若要查看有关自定义检测规则的综合信息，请转到"搜寻  >  **自定义检测**"，然后选择规则的名称。 然后，您可以查看有关规则的常规信息，包括其运行状态和范围信息。 该页还提供触发的警报和操作的列表。
 
-!["自定义检测规则详细信息" 页](../../media/custom-detection-details.png)<br>
+![自定义检测规则详细信息页](../../media/custom-detection-details.png)<br>
 *自定义检测规则详细信息*
 
-此外，还可以对此页面中的规则执行以下操作：
+您还可以从此页面对规则执行以下操作：
 
-- **运行** —立即运行该规则。 这还会重置下一次运行的时间间隔。
-- **编辑** —在不更改查询的情况下修改规则
-- **修改查询** —在高级搜寻中编辑查询
-- **打开**  / **关闭** —启用或停止运行规则
-- **删除** -关闭规则并将其删除
+- **运行**-立即运行规则。 这还会重置下一次运行的时间间隔。
+- **编辑**- 在不更改查询的情况下修改规则
+- **修改查询**— 在高级搜寻中编辑查询
+- **打开**  / **关闭**- 启用规则或阻止其运行
+- **删除**- 关闭并删除规则
 
 ### <a name="view-and-manage-triggered-alerts"></a>查看和管理触发的警报
 
-在 "规则详细信息" 屏幕 **中 (**  >  搜索 **自定义检测**  >  **[规则名称]** ) 中，转到 " **触发警报** "，其中列出了与该规则匹配生成的警报。 选择一个警报以查看有关其的详细信息，并执行以下操作：
+在规则详细信息屏幕 (搜索自定义检测  >    >  **[规则名称]**) ，转到"触发的警报"，其中列出了规则匹配项生成的警报。 选择警报以查看有关它的详细信息，并执行以下操作：
 
-- 通过将警报的状态和分类设置 (true 或 false 警报来管理警报) 
+- 通过将警报的状态和分类设置为 true 或 false (来管理警报) 
 - 将警报链接到事件
-- 在高级搜寻中运行触发警报的查询
+- 运行在高级搜寻时触发警报的查询
 
 ### <a name="review-actions"></a>查看操作
-在 "规则详细信息" 屏幕 **中 (**  >  搜索 **自定义检测**  >  **[规则名称]** ) 中，转到 " **触发操作** "，其中列出了根据与规则匹配而执行的操作。
+在规则详细信息屏幕 (搜索自定义检测  >    >  **[规则名称]**) ，转到"触发的操作"，其中列出了根据规则匹配项采取的操作。
 
 >[!TIP]
->若要快速查看信息并对表中的项目执行操作，请使用表左侧的选择列 [&#10003;]。
+>若要快速查看信息并针对表中的项目采取操作，请使用表格左侧的选择列 [&#10003;] 。
 
 ## <a name="related-topic"></a>相关主题
 - [自定义检测概述](custom-detections-overview.md)
