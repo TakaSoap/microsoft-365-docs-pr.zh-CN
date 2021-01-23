@@ -1,5 +1,5 @@
 ---
-title: 在安全与合规中心内创建自定义敏感信息类型
+title: 自定义敏感信息类型入门
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -17,174 +17,117 @@ search.appverid:
 - MET150
 description: 了解如何在安全与合规中心的图形用户界面中为 DLP 创建、修改、删除和测试自定义敏感信息类型。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 59d16ed662ff1b577bbb6c8388c5d27836832c1f
-ms.sourcegitcommit: 554755bc9ce40228ce6e34bde6fc6e226869b6a1
+ms.openlocfilehash: 94f0f6b68e9f952e0d52ce7cb71ccf03913584f4
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48681718"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49929348"
 ---
-<!-- rename md file to match the display name -->
-# <a name="create-a-custom-sensitive-information-type-in-the-security--compliance-center"></a><span data-ttu-id="31a3c-103">在安全与合规中心内创建自定义敏感信息类型</span><span class="sxs-lookup"><span data-stu-id="31a3c-103">Create a custom sensitive information type in the Security & Compliance Center</span></span>
+# <a name="get-started-with-custom-sensitive-information-types"></a><span data-ttu-id="79ac9-103">自定义敏感信息类型入门</span><span class="sxs-lookup"><span data-stu-id="79ac9-103">Get started with custom sensitive information types</span></span>
 
-<span data-ttu-id="31a3c-104">阅读本文，以在安全与合规中心 ([https://protection.office.com](https://protection.office.com))内创建自定义敏感信息类型。</span><span class="sxs-lookup"><span data-stu-id="31a3c-104">Read this article to create a custom sensitive information type in the Security & Compliance Center ([https://protection.office.com](https://protection.office.com)).</span></span> <span data-ttu-id="31a3c-105">使用此方法创建的自定义敏感信息类型将添加到名为 `Microsoft.SCCManaged.CustomRulePack` 的规则包中。</span><span class="sxs-lookup"><span data-stu-id="31a3c-105">The custom sensitive information types that you create by using this method are added to the rule package named `Microsoft.SCCManaged.CustomRulePack`.</span></span>
+<span data-ttu-id="79ac9-104">如果预先配置的敏感信息类型不满足你的需要，可以创建自己的自定义敏感信息类型，你可以完全定义这些类型，也可以复制其中一个预先配置的类型并进行修改。</span><span class="sxs-lookup"><span data-stu-id="79ac9-104">If the pre-configured sensitive information types don't meet your needs, you can create your own custom sensitive information types that you fully define or you can copy one of the pre-configured ones and modify it.</span></span>
 
-<span data-ttu-id="31a3c-106">此外，还可以使用 PowerShell 和精确的数据匹配功能创建自定义敏感信息类型。</span><span class="sxs-lookup"><span data-stu-id="31a3c-106">You can also create custom sensitive information types by using PowerShell and Exact Data Match capabilities.</span></span> <span data-ttu-id="31a3c-107">若要了解有关这些方法的详细信息，请参阅：</span><span class="sxs-lookup"><span data-stu-id="31a3c-107">To learn more about those methods, see:</span></span>
-- [<span data-ttu-id="31a3c-108">使用安全与合规中心 PowerShell 创建自定义敏感信息类型</span><span class="sxs-lookup"><span data-stu-id="31a3c-108">Create a custom sensitive information type in Security & Compliance Center PowerShell</span></span>](create-a-custom-sensitive-information-type-in-scc-powershell.md)
-- [<span data-ttu-id="31a3c-109">使用精确数据匹配 (EDM) 为 DLP 创建自定义敏感信息类型</span><span class="sxs-lookup"><span data-stu-id="31a3c-109">Create a custom sensitive information type for DLP with Exact Data Match (EDM)</span></span>](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)
+<span data-ttu-id="79ac9-105">使用此方法创建的自定义敏感信息类型将添加到名为 `Microsoft.SCCManaged.CustomRulePack` 的规则包中。</span><span class="sxs-lookup"><span data-stu-id="79ac9-105">The custom sensitive information types that you create by using this method are added to the rule package named `Microsoft.SCCManaged.CustomRulePack`.</span></span>
 
-> [!NOTE]
-> <span data-ttu-id="31a3c-110">Microsoft 365 信息保护现可为以下语言提供双字节字符集语言支持（预览）：</span><span class="sxs-lookup"><span data-stu-id="31a3c-110">Microsoft 365 Information Protection now  supports in preview double byte character set languages for:</span></span>
-> - <span data-ttu-id="31a3c-111">简体中文</span><span class="sxs-lookup"><span data-stu-id="31a3c-111">Chinese (simplified)</span></span>
-> - <span data-ttu-id="31a3c-112">繁体中文</span><span class="sxs-lookup"><span data-stu-id="31a3c-112">Chinese (traditional)</span></span>
-> - <span data-ttu-id="31a3c-113">韩语</span><span class="sxs-lookup"><span data-stu-id="31a3c-113">Korean</span></span>
-> - <span data-ttu-id="31a3c-114">日语</span><span class="sxs-lookup"><span data-stu-id="31a3c-114">Japanese</span></span>
->
-><span data-ttu-id="31a3c-115">此支持适用于敏感信息类型。</span><span class="sxs-lookup"><span data-stu-id="31a3c-115">This support is available for sensitive information types.</span></span> <span data-ttu-id="31a3c-116">有关详细信息，请参阅[双字节字符集的信息保护支持发行说明（预览版）](mip-dbcs-relnotes.md)。</span><span class="sxs-lookup"><span data-stu-id="31a3c-116">See, [Information protection support for double byte character sets release notes (preview)](mip-dbcs-relnotes.md) for more information.</span></span>
+<span data-ttu-id="79ac9-106">有两种方法可以创建新的敏感信息类型：</span><span class="sxs-lookup"><span data-stu-id="79ac9-106">There are two ways to create a new sensitive information type:</span></span>
 
-## <a name="before-you-begin"></a><span data-ttu-id="31a3c-117">准备工作</span><span class="sxs-lookup"><span data-stu-id="31a3c-117">Before you begin</span></span>
+- [<span data-ttu-id="79ac9-107">从头开始完全定义所有元素</span><span class="sxs-lookup"><span data-stu-id="79ac9-107">from scratch where you fully define all elements</span></span>](#create-a-custom-sensitive-information-type)
+- [<span data-ttu-id="79ac9-108">复制和修改现有的敏感信息类型</span><span class="sxs-lookup"><span data-stu-id="79ac9-108">copy and modify an existing sensitive information type</span></span>](#copy-and-modify-a-sensitive-information-type)
 
-> [!NOTE]
-> <span data-ttu-id="31a3c-118">应该拥有全局管理员或合规性管理员权限，以便可以通过 UI 创建、测试和部署自定义的敏感信息类型。</span><span class="sxs-lookup"><span data-stu-id="31a3c-118">You should have Global admin or Compliance admin permissions to create, test, and deploy a custom sensitive information type through the UI.</span></span> <span data-ttu-id="31a3c-119">请参阅 Office 365 中的[关于管理员角色](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles?view=o365-worldwide)。</span><span class="sxs-lookup"><span data-stu-id="31a3c-119">See [About admin roles](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles?view=o365-worldwide) in Office 365.</span></span>
 
-- <span data-ttu-id="31a3c-120">组织必须具有包含数据丢失防护 (DLP) 的订阅（如 Office 365 企业版）。</span><span class="sxs-lookup"><span data-stu-id="31a3c-120">Your organization must have a subscription, such as Office 365 Enterprise, that includes Data Loss Prevention (DLP).</span></span> <span data-ttu-id="31a3c-121">请参阅[邮件策略和合规性服务说明](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/messaging-policy-and-compliance-servicedesc)。</span><span class="sxs-lookup"><span data-stu-id="31a3c-121">See [Messaging Policy and Compliance ServiceDescription](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/messaging-policy-and-compliance-servicedesc).</span></span> 
+## <a name="before-you-begin"></a><span data-ttu-id="79ac9-109">开始之前</span><span class="sxs-lookup"><span data-stu-id="79ac9-109">Before you begin</span></span>
 
-- <span data-ttu-id="31a3c-p106">自定义敏感信息类型需要熟悉正则表达式 (RegEx)。有关用于处理文本的 Boost.RegEx（以前称为 RegEx++）引擎的详细信息，请参阅 [Boost.Regex 5.1.3](https://www.boost.org/doc/libs/1_68_0/libs/regex/doc/html/)。</span><span class="sxs-lookup"><span data-stu-id="31a3c-p106">Custom sensitive information types require familiarity with regular expressions (RegEx). For more information about the Boost.RegEx (formerly known as RegEx++) engine that's used for processing the text, see [Boost.Regex 5.1.3](https://www.boost.org/doc/libs/1_68_0/libs/regex/doc/html/).</span></span>
-
-  <span data-ttu-id="31a3c-124">在创建自定义分类或正则表达式模式时，不可从 Microsoft 客户服务和支持获取帮助。</span><span class="sxs-lookup"><span data-stu-id="31a3c-124">Microsoft Customer Service & Support can't assist with creating custom classifications or regular expression patterns.</span></span> <span data-ttu-id="31a3c-125">支持工程师可对功能提供有限的支持，例如提供用于测试目的的示例正则表达式，或者帮助排查未如期触发的现有正则表达式模式的问题，但无法保证所有自定义内容匹配开发都将满足你的要求或义务。</span><span class="sxs-lookup"><span data-stu-id="31a3c-125">Support engineers can provide limited support for the feature, such as, providing sample regular expression patterns for testing purposes, or assisting with troubleshooting an existing regular expression pattern that's not triggering as expected, but can't provide assurances that any custom content-matching development will fulfill your requirements or obligations.</span></span>
-
-- <span data-ttu-id="31a3c-126">DLP 使用搜索爬网程序来确定 SharePoint Online 和 OneDrive for Business 网站中的敏感信息并对其分类。</span><span class="sxs-lookup"><span data-stu-id="31a3c-126">DLP uses the search crawler to identify and classify sensitive information in SharePoint Online and OneDrive for Business sites.</span></span> <span data-ttu-id="31a3c-127">要确定现有内容中新的自定义敏感信息类型，必须对该内容重新爬网。</span><span class="sxs-lookup"><span data-stu-id="31a3c-127">To identify your new custom sensitive information type in existing content, the content must be re-crawled.</span></span> <span data-ttu-id="31a3c-128">根据计划对内容进行爬网，但你可手动重新爬网内容来查找网站集、列表或库。</span><span class="sxs-lookup"><span data-stu-id="31a3c-128">Content is crawled based on a schedule, but you can manually re-crawl content for a site collection, list, or library.</span></span> <span data-ttu-id="31a3c-129">有关详细信息，请参阅[Manually request crawling and re-indexing of a site, a library or a list](https://docs.microsoft.com/sharepoint/crawl-site-content)（手动请求对网站、库或列表进行爬网和重新编制索引）。</span><span class="sxs-lookup"><span data-stu-id="31a3c-129">For more information, see [Manually request crawling and re-indexing of a site, a library or a list](https://docs.microsoft.com/sharepoint/crawl-site-content).</span></span>
-
-## <a name="create-custom-sensitive-information-types-in-the-security--compliance-center"></a><span data-ttu-id="31a3c-130">在安全与合规中心内创建自定义敏感信息类型</span><span class="sxs-lookup"><span data-stu-id="31a3c-130">Create custom sensitive information types in the Security & Compliance Center</span></span>
-
-<span data-ttu-id="31a3c-131">在安全与合规中心内，依次转到“分类”\*\*\*\*\>“敏感信息类型”\*\*\*\*，再单击“创建”\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="31a3c-131">In the Security & Compliance Center, go to **Classifications** \> **Sensitive info types** and click **Create**.</span></span>
-
-<span data-ttu-id="31a3c-132">设置的含义相当显而易见，而且向导中的相关页也对这些设置进行了说明：</span><span class="sxs-lookup"><span data-stu-id="31a3c-132">The settings are fairly self-evident, and are explained on the associate page of the wizard:</span></span>
-
-- <span data-ttu-id="31a3c-133">**名称**</span><span class="sxs-lookup"><span data-stu-id="31a3c-133">**Name**</span></span>
-
-- <span data-ttu-id="31a3c-134">**说明**</span><span class="sxs-lookup"><span data-stu-id="31a3c-134">**Description**</span></span>
-
-- <span data-ttu-id="31a3c-135">**临近度**</span><span class="sxs-lookup"><span data-stu-id="31a3c-135">**Proximity**</span></span>
-
-- <span data-ttu-id="31a3c-136">**可信度**</span><span class="sxs-lookup"><span data-stu-id="31a3c-136">**Confidence level**</span></span>
-
-- <span data-ttu-id="31a3c-137">**主要模式元素**（关键字、正则表达式或字典）</span><span class="sxs-lookup"><span data-stu-id="31a3c-137">**Primary pattern element** (keywords, regular expression, or dictionary)</span></span>
-
-- <span data-ttu-id="31a3c-138">可选**支持性模式元素**（关键字、正则表达式或字典）和相应**最低成本**值。</span><span class="sxs-lookup"><span data-stu-id="31a3c-138">Optional **Supporting pattern elements** (keywords, regular expression, or dictionary) and a corresponding **Minimum cost** value.</span></span>
-
-<span data-ttu-id="31a3c-p109">应用场景如下：需要创建能够在内容中检测 9 位数员工编号的自定义敏感信息类型，以及关键字“员工”、“ID”和“徽章”。若要创建此自定义敏感信息类型，请按以下步骤操作：</span><span class="sxs-lookup"><span data-stu-id="31a3c-p109">Here's a scenario: You want a custom sensitive information type that detects 9-digit employee numbers in content, along with the keywords "employee" "ID" and "badge". To create this custom sensitive information type, do the following steps:</span></span>
-
-1. <span data-ttu-id="31a3c-141">在安全与合规中心内，依次转到“分类”\*\*\*\*\>“敏感信息类型”\*\*\*\*，再单击“创建”\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="31a3c-141">In the Security & Compliance Center, go to **Classifications** \> **Sensitive info types** and click **Create**.</span></span>
-
-    ![“敏感信息类型”和“创建”按钮的位置](../media/scc-cust-sens-info-type-new.png)
-
-2. <span data-ttu-id="31a3c-143">在随即打开的“选择名称和说明”\*\*\*\* 页中，输入以下值：</span><span class="sxs-lookup"><span data-stu-id="31a3c-143">In the **Choose a name and description** page that opens, enter the following values:</span></span>
-
-  - <span data-ttu-id="31a3c-144">**名称**：员工 ID。</span><span class="sxs-lookup"><span data-stu-id="31a3c-144">**Name**: Employee ID.</span></span>
-
-  - <span data-ttu-id="31a3c-145">**说明**：检测 9 位数 Contoso 员工 ID 号。</span><span class="sxs-lookup"><span data-stu-id="31a3c-145">**Description**: Detect nine-digit Contoso employee ID numbers.</span></span>
-
-    ![名称和说明页](../media/scc-cust-sens-info-type-new-name-desc.png)
-
-    <span data-ttu-id="31a3c-147">完成后，单击“下一步”\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="31a3c-147">When you're finished, click **Next**.</span></span>
-
-3. <span data-ttu-id="31a3c-148">在随即打开的“匹配要求”\*\*\*\* 页中，单击“添加元素”\*\*\*\*，以配置下列设置：</span><span class="sxs-lookup"><span data-stu-id="31a3c-148">In the **Requirements for matching** page that opens, click **Add an element** configure the following settings:</span></span>
-
-    - <span data-ttu-id="31a3c-149">**检测内容包含**：</span><span class="sxs-lookup"><span data-stu-id="31a3c-149">**Detect content containing**:</span></span>
+- <span data-ttu-id="79ac9-110">应该熟悉敏感信息类型及其组成。</span><span class="sxs-lookup"><span data-stu-id="79ac9-110">You should be familiar with sensitive information types and what they are composed of.</span></span> <span data-ttu-id="79ac9-111">请参阅，[了解敏感信息类型](sensitive-information-type-learn-about.md)。</span><span class="sxs-lookup"><span data-stu-id="79ac9-111">See, [Learn about sensitive information types](sensitive-information-type-learn-about.md).</span></span> <span data-ttu-id="79ac9-112">了解以下角色至关重要：</span><span class="sxs-lookup"><span data-stu-id="79ac9-112">It is critical to understand the roles of:</span></span>
+    - <span data-ttu-id="79ac9-113">[正则表达式](https://www.boost.org/doc/libs/1_68_0/libs/regex/doc/html/) - Microsoft 365 敏感信息类型使用 Boost.RegEx 5.1.3 引擎</span><span class="sxs-lookup"><span data-stu-id="79ac9-113">[regular expressions](https://www.boost.org/doc/libs/1_68_0/libs/regex/doc/html/) - Microsoft 365 sensitive information types uses the Boost.RegEx 5.1.3 engine</span></span>
+    - <span data-ttu-id="79ac9-114">关键字列表 - 可以在定义敏感信息类型或从现有关键字列表中选择时创建自己的关键字列表</span><span class="sxs-lookup"><span data-stu-id="79ac9-114">keyword lists - you can create your own as you define your sensitive information type or choose from existing keyword lists</span></span>
+    - [<span data-ttu-id="79ac9-115">关键字字典</span><span class="sxs-lookup"><span data-stu-id="79ac9-115">keyword dictionary</span></span>](create-a-keyword-dictionary.md)
+    - [<span data-ttu-id="79ac9-116">函数</span><span class="sxs-lookup"><span data-stu-id="79ac9-116">functions</span></span>](what-the-dlp-functions-look-for.md)
+    - [<span data-ttu-id="79ac9-117">可信度</span><span class="sxs-lookup"><span data-stu-id="79ac9-117">confidence levels</span></span>](sensitive-information-type-learn-about.md#more-on-confidence-levels)
  
-      <span data-ttu-id="31a3c-p110">a. 单击“任意内容”\*\*\*\*，再选择“正则表达式”\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="31a3c-p110">a. Click **Any of these** and select **Regular expression**.</span></span>
+- <span data-ttu-id="79ac9-118">必须拥有全局管理员或合规性管理员权限，以便可以通过 UI 创建、测试和部署自定义的敏感信息类型。</span><span class="sxs-lookup"><span data-stu-id="79ac9-118">You must have Global admin or Compliance admin permissions to create, test, and deploy a custom sensitive information type through the UI.</span></span> <span data-ttu-id="79ac9-119">请参阅 Office 365 中的[关于管理员角色](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles?view=o365-worldwide)。</span><span class="sxs-lookup"><span data-stu-id="79ac9-119">See [About admin roles](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles?view=o365-worldwide) in Office 365.</span></span>
 
-      <span data-ttu-id="31a3c-p111">b. 在正则表达式框中，输入“`(\s)(\d{9})(\s)`”（两边是空格的 9 位数）。</span><span class="sxs-lookup"><span data-stu-id="31a3c-p111">b. In the regular expression box, enter `(\s)(\d{9})(\s)` (nine-digit numbers surrounded by white space).</span></span>
-  
-    - <span data-ttu-id="31a3c-154">**支持性元素**：单击“添加支持性元素”\*\*\*\*，再选择“包含此关键字列表”\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="31a3c-154">**Supporting elements**: Click **Add supporting elements** and select **Contains this keyword list**.</span></span>
+- <span data-ttu-id="79ac9-120">组织必须具有包含数据丢失防护 (DLP) 的订阅（如 Office 365 企业版）。</span><span class="sxs-lookup"><span data-stu-id="79ac9-120">Your organization must have a subscription, such as Office 365 Enterprise, that includes Data Loss Prevention (DLP).</span></span> <span data-ttu-id="79ac9-121">请参阅[邮件策略和合规性服务说明](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/messaging-policy-and-compliance-servicedesc)。</span><span class="sxs-lookup"><span data-stu-id="79ac9-121">See [Messaging Policy and Compliance ServiceDescription](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/messaging-policy-and-compliance-servicedesc).</span></span> 
 
-    - <span data-ttu-id="31a3c-155">在随即显示的“包含此关键字列表”\*\*\*\* 区域中，配置下列设置：</span><span class="sxs-lookup"><span data-stu-id="31a3c-155">In the **Contains this keyword list** area that appears, configure the following settings:</span></span>
 
-      - <span data-ttu-id="31a3c-156">**关键字列表**：输入以下值：员工、ID、徽章。</span><span class="sxs-lookup"><span data-stu-id="31a3c-156">**Keyword list**: Enter the following value: employee,ID,badge.</span></span>
+> [!IMPORTANT]
+> <span data-ttu-id="79ac9-122">在创建自定义分类或正则表达式模式时，不可从 Microsoft 客户服务和支持获取帮助。</span><span class="sxs-lookup"><span data-stu-id="79ac9-122">Microsoft Customer Service & Support can't assist with creating custom classifications or regular expression patterns.</span></span> <span data-ttu-id="79ac9-123">支持工程师可对功能提供有限的支持，例如提供用于测试目的的示例正则表达式，或者帮助排查未如期触发的现有正则表达式模式的问题，但无法保证所有自定义内容匹配开发都将满足你的要求或义务。</span><span class="sxs-lookup"><span data-stu-id="79ac9-123">Support engineers can provide limited support for the feature, such as, providing sample regular expression patterns for testing purposes, or assisting with troubleshooting an existing regular expression pattern that's not triggering as expected, but can't provide assurances that any custom content-matching development will fulfill your requirements or obligations.</span></span>
 
-      - <span data-ttu-id="31a3c-157">**最小计数**：保留默认值 1。</span><span class="sxs-lookup"><span data-stu-id="31a3c-157">**Minimum count**: Leave the default value 1.</span></span>
+## <a name="create-a-custom-sensitive-information-type"></a><span data-ttu-id="79ac9-124">创建自定义敏感信息类型</span><span class="sxs-lookup"><span data-stu-id="79ac9-124">Create a custom sensitive information type</span></span>
 
-    - <span data-ttu-id="31a3c-158">保留“可信度”\*\*\*\* 默认值 60。</span><span class="sxs-lookup"><span data-stu-id="31a3c-158">Leave the default **Confidence level** value 60.</span></span> 
+<span data-ttu-id="79ac9-125">使用以下步骤可以创建完全定义的新敏感信息类型。</span><span class="sxs-lookup"><span data-stu-id="79ac9-125">Use this procedure to create a new sensitive information type that you fully define.</span></span> 
 
-    - <span data-ttu-id="31a3c-159">保留“字符临近度”\*\*\*\* 默认值 300。</span><span class="sxs-lookup"><span data-stu-id="31a3c-159">Leave the default **Character proximity** value 300.</span></span>
+1. <span data-ttu-id="79ac9-126">在“合规中心”中，转到“**数据分类**”\>“**敏感信息类型**”，然后选择“**创建信息类型**”。</span><span class="sxs-lookup"><span data-stu-id="79ac9-126">In the Compliance Center, go to **Data classification** \> **Sensitive info types** and choose **Create info type**.</span></span>
+2. <span data-ttu-id="79ac9-127">填写“**名称**”和“**说明**” 的值，然后选择“**下一步**”。</span><span class="sxs-lookup"><span data-stu-id="79ac9-127">Fill in values for **Name** and **Description** and choose **Next**.</span></span>
+3. <span data-ttu-id="79ac9-128">选择“**创建模式**”。</span><span class="sxs-lookup"><span data-stu-id="79ac9-128">Choose **Create pattern**.</span></span> <span data-ttu-id="79ac9-129">在定义新的敏感信息类型时，可以创建多个模式，每个模式具有不同的元素和置信度。</span><span class="sxs-lookup"><span data-stu-id="79ac9-129">You can create multiple patterns, each with different elements and confidence levels, as you define your new sensitive information type.</span></span>
+4. <span data-ttu-id="79ac9-130">选择模式的默认可信度。</span><span class="sxs-lookup"><span data-stu-id="79ac9-130">Choose the default confidence level for the pattern.</span></span> <span data-ttu-id="79ac9-131">这些值是“**低可信度**”、“**中可信度**”和“**高可信度**”。</span><span class="sxs-lookup"><span data-stu-id="79ac9-131">The values are **Low confidence**, **Medium confidence**, and **High confidence**.</span></span>
+5. <span data-ttu-id="79ac9-132">选择并定义 **主要元素**。</span><span class="sxs-lookup"><span data-stu-id="79ac9-132">Choose and define **Primary element**.</span></span> <span data-ttu-id="79ac9-133">主要元素可以是带有可选验证程序的 **正则表达式**、**关键字列表**、**关键字字典** 或预先配置的 **函数** 之一。</span><span class="sxs-lookup"><span data-stu-id="79ac9-133">The primary element can be a **Regular expression** with an optional validator, a **Keyword list**, a **Keyword dictionary**, or one of the pre-configured **Functions**.</span></span> <span data-ttu-id="79ac9-134">有关 DLP 函数的详细信息，请参阅 [DLP 函数查找的内容](what-the-dlp-functions-look-for.md)。</span><span class="sxs-lookup"><span data-stu-id="79ac9-134">For more information on DLP functions, see [What the DLP functions look for](what-the-dlp-functions-look-for.md).</span></span>
+6. <span data-ttu-id="79ac9-135">填写 **字符领近度** 的值。</span><span class="sxs-lookup"><span data-stu-id="79ac9-135">Fill in a value for **Character proximity**.</span></span>
+7. <span data-ttu-id="79ac9-136">（可选）添加支持元素（如有）。</span><span class="sxs-lookup"><span data-stu-id="79ac9-136">(Optional) Add supporting elements if you have any.</span></span> <span data-ttu-id="79ac9-137">支持元素可以是带有可选验证程序的正则表达式、关键字列表、关键字字典或预定义的函数之一。</span><span class="sxs-lookup"><span data-stu-id="79ac9-137">Supporting elements can be a regular expression with an optional validator, a keyword list, a keyword dictionary or one of the pre-defined functions.</span></span> 
+8.  <span data-ttu-id="79ac9-138">（可选）从可用检查列表中添加其他检查</span><span class="sxs-lookup"><span data-stu-id="79ac9-138">(Optional) Add additional checks from the list of available checks</span></span>
+9. <span data-ttu-id="79ac9-139">选择“**创建**”。</span><span class="sxs-lookup"><span data-stu-id="79ac9-139">Choose **Create**.</span></span>
+10. <span data-ttu-id="79ac9-140">选择“**下一步**”。</span><span class="sxs-lookup"><span data-stu-id="79ac9-140">Choose **Next**.</span></span>
+11. <span data-ttu-id="79ac9-141">为此敏感信息类型选择 **建议的可信度**。</span><span class="sxs-lookup"><span data-stu-id="79ac9-141">Choose the **recommended confidence level** for this sensitive information type.</span></span>
+12. <span data-ttu-id="79ac9-142">检查设置并选择“**提交**”。</span><span class="sxs-lookup"><span data-stu-id="79ac9-142">Check your setting and choose **Submit**.</span></span>
 
-    ![匹配页面要求](../media/scc-cust-sens-info-type-new-reqs.png)
+> [!IMPORTANT]
+> <span data-ttu-id="79ac9-143">Microsoft 365 使用搜索爬网程序来确定 SharePoint Online 和 OneDrive for Business 网站中的敏感信息并对其分类。</span><span class="sxs-lookup"><span data-stu-id="79ac9-143">Microsoft 365 uses the search crawler to identify and classify sensitive information in SharePoint Online and OneDrive for Business sites.</span></span> <span data-ttu-id="79ac9-144">要确定现有内容中新的自定义敏感信息类型，必须对该内容重新爬网。</span><span class="sxs-lookup"><span data-stu-id="79ac9-144">To identify your new custom sensitive information type in existing content, the content must be re-crawled.</span></span> <span data-ttu-id="79ac9-145">根据计划对内容进行爬网，但你可手动重新爬网内容来查找网站集、列表或库。</span><span class="sxs-lookup"><span data-stu-id="79ac9-145">Content is crawled based on a schedule, but you can manually re-crawl content for a site collection, list, or library.</span></span> <span data-ttu-id="79ac9-146">有关详细信息，请参阅[Manually request crawling and re-indexing of a site, a library or a list](https://docs.microsoft.com/sharepoint/crawl-site-content)（手动请求对网站、库或列表进行爬网和重新编制索引）。</span><span class="sxs-lookup"><span data-stu-id="79ac9-146">For more information, see [Manually request crawling and re-indexing of a site, a library or a list](https://docs.microsoft.com/sharepoint/crawl-site-content).</span></span>
 
-    <span data-ttu-id="31a3c-161">完成后，单击“下一步”\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="31a3c-161">When you're finished, click **Next**.</span></span>
+13. <span data-ttu-id="79ac9-147">在“**数据分类**”页面上，将看到列出的所有敏感信息类型。</span><span class="sxs-lookup"><span data-stu-id="79ac9-147">On the **Data classification** page, you'll see all the sensitive information types listed.</span></span> <span data-ttu-id="79ac9-148">选择“**刷新**”，然后浏览或使用搜索工具查找刚刚创建的敏感信息类型。</span><span class="sxs-lookup"><span data-stu-id="79ac9-148">Choose **Refresh** and then browse for or use the search tool to find the sensitive information type you just created.</span></span>
 
-4. <span data-ttu-id="31a3c-162">在随即打开的“检查并最终确定”\*\*\*\* 页中，检查设置并单击“完成”\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="31a3c-162">On the **Review and finalize** page that opens, review the settings and click **Finish**.</span></span>
+## <a name="test-a-sensitive-information-type"></a><span data-ttu-id="79ac9-149">测试敏感信息类型</span><span class="sxs-lookup"><span data-stu-id="79ac9-149">Test a sensitive information type</span></span>
 
-    ![检查并完成页面](../media/scc-cust-sens-info-type-new-review.png)
+<span data-ttu-id="79ac9-150">可以测试列表中的任何敏感信息类型。</span><span class="sxs-lookup"><span data-stu-id="79ac9-150">You can test any sensitive information type in the list.</span></span> <span data-ttu-id="79ac9-151">我们建议在策略中使用之前，测试创建的每种敏感信息类型。</span><span class="sxs-lookup"><span data-stu-id="79ac9-151">We suggest that you test every sensitive information type that you create before using it in a policy.</span></span>
 
-5. <span data-ttu-id="31a3c-p112">下一页建议通过单击“是”\*\*\*\* 测试新自定义敏感信息类型。有关详细信息，请参阅[在安全与合规中心内测试自定义敏感信息类型](#test-custom-sensitive-information-types-in-the-security--compliance-center)。若要稍后测试规则，请单击“否”\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="31a3c-p112">The next page encourages you to test the new custom sensitive information type by clicking **Yes**. For more information, see [Test custom sensitive information types in the Security & Compliance Center](#test-custom-sensitive-information-types-in-the-security--compliance-center). To test the rule later, click **No**.</span></span>
+1. <span data-ttu-id="79ac9-152">准备两个文件，比如 Word 文档。</span><span class="sxs-lookup"><span data-stu-id="79ac9-152">Prepare two files, like a Word document.</span></span> <span data-ttu-id="79ac9-153">一个包含与敏感信息类型中指定的元素匹配的内容，另一个不匹配。</span><span class="sxs-lookup"><span data-stu-id="79ac9-153">One with content that matches the elements you specified in your sensitive information type and one that doesn't match.</span></span>
+2. <span data-ttu-id="79ac9-154">在“合规中心”中，转到“**数据分类**”\>“**敏感信息类型**”，然后从列表中选择敏感信息类型，以打开“详细信息”窗格并选择“**测试**”。</span><span class="sxs-lookup"><span data-stu-id="79ac9-154">In the Compliance Center, go to **Data classification** \> **Sensitive info types** and choose the sensitive information type from the list to open the details pane and choose **Test**.</span></span>
+3. <span data-ttu-id="79ac9-155">上传文件并选择“**测试**”。</span><span class="sxs-lookup"><span data-stu-id="79ac9-155">Upload a file and choose **Test**.</span></span>
+4. <span data-ttu-id="79ac9-156">在“**匹配结果**”页面上，查看结果并选择“**完成**”。</span><span class="sxs-lookup"><span data-stu-id="79ac9-156">On the **Matches results** page, review the results and choose **Finish**.</span></span>
 
-    ![测试建议页](../media/scc-cust-sens-info-type-new-test.png)
+## <a name="modify-custom-sensitive-information-types-in-the-compliance-center"></a><span data-ttu-id="79ac9-157">在合规中心内修改自定义敏感信息类型</span><span class="sxs-lookup"><span data-stu-id="79ac9-157">Modify custom sensitive information types in the Compliance Center</span></span>
 
-### <a name="how-do-you-know-this-worked"></a><span data-ttu-id="31a3c-168">如何知道操作成功？</span><span class="sxs-lookup"><span data-stu-id="31a3c-168">How do you know this worked?</span></span>
+1. <span data-ttu-id="79ac9-158">在“合规中心”中，转到“**数据分类**”\>“**敏感信息类型**”，然后从要修改的列表中选择敏感信息类型，然后选择“**编辑**”。</span><span class="sxs-lookup"><span data-stu-id="79ac9-158">In the Compliance Center, go to **Data classification** \> **Sensitive info types** and choose the sensitive information type from the list that you want to modify choose **Edit**.</span></span>
+2. <span data-ttu-id="79ac9-159">可以添加其他模式，其中包括唯一的主元素和支持元素、可信度、字符领近度和其他检查，或者编辑/删除现有的模式。</span><span class="sxs-lookup"><span data-stu-id="79ac9-159">You can add other patterns, with unique primary and supporting elements, confidence levels, character proximity, and additional checks or edit/remove the existing ones.</span></span> <span data-ttu-id="79ac9-160">有关详细信息，请参阅[创建自定义敏感信息类型](#create-a-custom-sensitive-information-type)。</span><span class="sxs-lookup"><span data-stu-id="79ac9-160">For more information, see [Create a custom sensitive information type](#create-a-custom-sensitive-information-type).</span></span>
 
-<span data-ttu-id="31a3c-169">若要验证是否已成功新建敏感信息类型，请按以下任一步骤操作：</span><span class="sxs-lookup"><span data-stu-id="31a3c-169">To verify that you've successfully created a new sensitive information type, do any of the following steps:</span></span>
+## <a name="remove-custom-sensitive-information-types-in-the-compliance-center"></a><span data-ttu-id="79ac9-161">移除合规中心中的自定义敏感信息类型</span><span class="sxs-lookup"><span data-stu-id="79ac9-161">Remove custom sensitive information types in the Compliance Center</span></span> 
 
-  - <span data-ttu-id="31a3c-170">依次转到“分类”\*\*\*\*\>“敏感信息类型”\*\*\*\*，并验证新自定义敏感信息类型是否已列出。</span><span class="sxs-lookup"><span data-stu-id="31a3c-170">Go to **Classifications** \> **Sensitive info types** and verify the new custom sensitive information type is listed.</span></span>
+> [!NOTE]
+> <span data-ttu-id="79ac9-162">只能删除自定义敏感信息类型；不能删除内置敏感信息类型。</span><span class="sxs-lookup"><span data-stu-id="79ac9-162">You can only remove custom sensitive information types; you can't remove built-in sensitive information types.</span></span>
 
-  - <span data-ttu-id="31a3c-p113">测试新自定义敏感信息类型。有关详细信息，请参阅[在安全与合规中心内测试自定义敏感信息类型](#test-custom-sensitive-information-types-in-the-security--compliance-center)。</span><span class="sxs-lookup"><span data-stu-id="31a3c-p113">Test the new custom sensitive information type. For more information, see [Test custom sensitive information types in the Security & Compliance Center](#test-custom-sensitive-information-types-in-the-security--compliance-center).</span></span>
+> [!IMPORTANT]
+> <span data-ttu-id="79ac9-163">删除自定义敏感信息类型前，请先验证没有 DLP 策略或 Exchange 邮件流规则（亦称为“传输规则”）仍在引用此敏感信息类型。</span><span class="sxs-lookup"><span data-stu-id="79ac9-163">Before your remove a custom sensitive information type, verify that no DLP policies or Exchange mail flow rules (also known as transport rules) still reference the sensitive information type.</span></span>
 
-## <a name="modify-custom-sensitive-information-types-in-the-security--compliance-center"></a><span data-ttu-id="31a3c-173">在安全与合规中心内修改自定义敏感信息类型</span><span class="sxs-lookup"><span data-stu-id="31a3c-173">Modify custom sensitive information types in the Security & Compliance Center</span></span>
+1. <span data-ttu-id="79ac9-164">在“合规中心”中，转到“**数据分类**”\>“**敏感信息类型**”，然后从列表中选择要删除的敏感信息类型。</span><span class="sxs-lookup"><span data-stu-id="79ac9-164">In the Compliance Center, go to **Data classification** \> **Sensitive info types** and choose the sensitive information type from the list that you want to remove.</span></span>
+2. <span data-ttu-id="79ac9-165">在打开的浮出控件中，选择“**删除**”。</span><span class="sxs-lookup"><span data-stu-id="79ac9-165">In the fly-out that opens, choose **Delete**.</span></span>
 
-<span data-ttu-id="31a3c-174">**注意**：</span><span class="sxs-lookup"><span data-stu-id="31a3c-174">**Notes**:</span></span>
-<!-- check to see if this note contradicts the guidance in "customize a built in sensitive information type customize-a-built-in-sensitive-information-type it sure seems like it does-->
-- <span data-ttu-id="31a3c-p114">只能修改自定义敏感信息类型；不能修改内置敏感信息类型。不过，可使用 PowerShell 导出内置自定义敏感信息类型，然后自定义它们，并将它们作为自定义敏感信息类型导入。有关详细信息，请参阅[自定义内置敏感信息类型](customize-a-built-in-sensitive-information-type.md)。</span><span class="sxs-lookup"><span data-stu-id="31a3c-p114">You can only modify custom sensitive information types; you can't modify built-in sensitive information types. But you can use PowerShell to export built-in custom sensitive information types, customize them, and import them as custom sensitive information types. For more information, see [Customize a built-in sensitive information type](customize-a-built-in-sensitive-information-type.md).</span></span>
+## <a name="copy-and-modify-a-sensitive-information-type"></a><span data-ttu-id="79ac9-166">复制和修改敏感信息类型</span><span class="sxs-lookup"><span data-stu-id="79ac9-166">Copy and modify a sensitive information type</span></span>
 
-- <span data-ttu-id="31a3c-p115">只能修改在 UI 中创建的自定义敏感信息类型。如果使用 [PowerShell 过程](create-a-custom-sensitive-information-type-in-scc-powershell.md)导入自定义敏感信息类型规则包，将收到一个错误。</span><span class="sxs-lookup"><span data-stu-id="31a3c-p115">You can only modify custom sensitive information types that you created in the UI. If you used the [PowerShell procedure](create-a-custom-sensitive-information-type-in-scc-powershell.md) to import a custom sensitive information type rule package, you'll get an error.</span></span>
+<span data-ttu-id="79ac9-167">使用以下步骤可以创建基于现有敏感信息类型的新敏感信息类型。</span><span class="sxs-lookup"><span data-stu-id="79ac9-167">Use this procedure to create a new sensitive information type that is based on an existing sensitive information type.</span></span> 
 
-<span data-ttu-id="31a3c-180">在安全与合规中心内，依次转到“分类”\*\*\*\*\>“敏感信息类型”\*\*\*\*，选择要修改的自定义敏感信息类型，然后单击“编辑”\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="31a3c-180">In the Security & Compliance Center, go to **Classifications** \> **Sensitive info types**, select the custom sensitive information type that you want to modify, and then click **Edit**.</span></span>
+1. <span data-ttu-id="79ac9-168">在“合规中心”中，转到“**数据分类**”\>“**敏感信息类型**”，然后选择要复制的敏感信息类型。</span><span class="sxs-lookup"><span data-stu-id="79ac9-168">In the Compliance Center, go to **Data classification** \> **Sensitive info types** and choose the sensitive information type that you want to copy.</span></span>
+2. <span data-ttu-id="79ac9-169">在浮出控件中，选择“**复制**”。</span><span class="sxs-lookup"><span data-stu-id="79ac9-169">In the flyout, choose **Copy**.</span></span>
+3. <span data-ttu-id="79ac9-170">在敏感信息类型列表中选择“**刷新**”，然后浏览或搜索刚刚创建的副本。</span><span class="sxs-lookup"><span data-stu-id="79ac9-170">Choose **Refresh** in the list of sensitive information types and either browse or search for the copy you just made.</span></span> <span data-ttu-id="79ac9-171">部分字串搜索有用，所以可以只搜索 `copy`，搜索将返回名称中包含 `copy` 文字的所有敏感信息类型。</span><span class="sxs-lookup"><span data-stu-id="79ac9-171">Partial sting searches work, so you could just search for `copy` and search would return all the sensitive information types with the word `copy` in the name.</span></span> 
+4. <span data-ttu-id="79ac9-172">填写“**名称**”和“**说明**” 的值，然后选择“**下一步**”。</span><span class="sxs-lookup"><span data-stu-id="79ac9-172">Fill in values for **Name** and **Description** and choose **Next**.</span></span>
+5. <span data-ttu-id="79ac9-173">选择敏感信息类型“副本”，然后选择“**编辑**”。</span><span class="sxs-lookup"><span data-stu-id="79ac9-173">Choose your sensitive information type copy and choose **Edit**.</span></span> 
+6. <span data-ttu-id="79ac9-174">为新的敏感信息类型提供新“**名称**”和“**描述**”。</span><span class="sxs-lookup"><span data-stu-id="79ac9-174">Give your new sensitive information type a new **Name** and **Description**.</span></span>
+7. <span data-ttu-id="79ac9-175">您可以选择编辑或删除现有模式，以及添加新模式。</span><span class="sxs-lookup"><span data-stu-id="79ac9-175">You can choose to edit or remove the existing patterns and add new ones.</span></span> <span data-ttu-id="79ac9-176">选择新模式的默认可信度。</span><span class="sxs-lookup"><span data-stu-id="79ac9-176">Choose the default confidence level for the new pattern.</span></span> <span data-ttu-id="79ac9-177">这些值是“**低可信度**”、“**中可信度**”和“**高可信度**”。</span><span class="sxs-lookup"><span data-stu-id="79ac9-177">The values are **Low confidence**, **Medium confidence**, and **High confidence**.</span></span>
+8. <span data-ttu-id="79ac9-178">选择并定义 **主要元素**。</span><span class="sxs-lookup"><span data-stu-id="79ac9-178">Choose and define **Primary element**.</span></span> <span data-ttu-id="79ac9-179">主要元素可以是 **正则表达式**、**关键字列表**、**关键字字典** 或预先配置的 **函数** 之一。</span><span class="sxs-lookup"><span data-stu-id="79ac9-179">The primary element can be a **Regular expression**, a **Keyword list**, a **Keyword dictionary**, or one of the pre-configured **Functions**.</span></span> <span data-ttu-id="79ac9-180">请参阅，[DLP 函数查找的内容](what-the-dlp-functions-look-for.md)。</span><span class="sxs-lookup"><span data-stu-id="79ac9-180">See, [What the DLP functions look for](what-the-dlp-functions-look-for.md).</span></span>
+9. <span data-ttu-id="79ac9-181">填写 **字符领近度** 的值。</span><span class="sxs-lookup"><span data-stu-id="79ac9-181">Fill in a value for **Character proximity**.</span></span>
+10. <span data-ttu-id="79ac9-182">（可选）如果有 **支持元素** 或任何 **其他检查**，请添加它们。</span><span class="sxs-lookup"><span data-stu-id="79ac9-182">(Optional) If you have **Supporting elements** or any **Additional checks** add them.</span></span> <span data-ttu-id="79ac9-183">如果需要，可以将你的 **支持元素** 分组。</span><span class="sxs-lookup"><span data-stu-id="79ac9-183">If needed you can group your **Supporting elements**.</span></span>
+11. <span data-ttu-id="79ac9-184">选择“**创建**”。</span><span class="sxs-lookup"><span data-stu-id="79ac9-184">Choose **Create**.</span></span>
+12. <span data-ttu-id="79ac9-185">选择“**下一步**”。</span><span class="sxs-lookup"><span data-stu-id="79ac9-185">Choose **Next**.</span></span>
+13. <span data-ttu-id="79ac9-186">为此敏感信息类型选择 **建议的可信度**。</span><span class="sxs-lookup"><span data-stu-id="79ac9-186">Choose the **recommended confidence level** for this sensitive information type.</span></span>
+14. <span data-ttu-id="79ac9-187">检查设置并选择“**提交**”。</span><span class="sxs-lookup"><span data-stu-id="79ac9-187">Check your setting and choose **Submit**.</span></span>
 
-  ![“敏感信息类型”和“编辑”按钮的位置](../media/scc-cust-sens-info-type-edit.png)
-
-<span data-ttu-id="31a3c-p116">随后看到的选项与在安全与合规中心内创建自定义敏感信息类型时相同。有关详细信息，请参阅[在安全与合规中心内创建自定义敏感信息类型](#create-custom-sensitive-information-types-in-the-security--compliance-center)。</span><span class="sxs-lookup"><span data-stu-id="31a3c-p116">The same options are available here as when you created the custom sensitive information type in the Security & Compliance Center. For more information, see [Create custom sensitive information types in the Security & Compliance Center](#create-custom-sensitive-information-types-in-the-security--compliance-center).</span></span>
-
-### <a name="how-do-you-know-this-worked"></a><span data-ttu-id="31a3c-184">如何判断是否生效？</span><span class="sxs-lookup"><span data-stu-id="31a3c-184">How do you know this worked?</span></span>
-
-<span data-ttu-id="31a3c-185">若要验证是否已成功修改敏感信息类型，请按以下任一步骤操作：</span><span class="sxs-lookup"><span data-stu-id="31a3c-185">To verify that you've successfully modified a sensitive information type, do any of the following steps:</span></span>
-
-  - <span data-ttu-id="31a3c-186">依次转到“分类”\*\*\*\*\>“敏感信息类型”\*\*\*\*，以验证修改后的自定义敏感信息类型的属性。</span><span class="sxs-lookup"><span data-stu-id="31a3c-186">Go to **Classifications** \> **Sensitive info types** to verify the properties of the modified custom sensitive information type.</span></span> 
-
-  - <span data-ttu-id="31a3c-p117">测试修改后的自定义敏感信息类型。有关详细信息，请参阅[在安全与合规中心内测试自定义敏感信息类型](#test-custom-sensitive-information-types-in-the-security--compliance-center)。</span><span class="sxs-lookup"><span data-stu-id="31a3c-p117">Test the modified custom sensitive information type. For more information, see [Test custom sensitive information types in the Security & Compliance Center](#test-custom-sensitive-information-types-in-the-security--compliance-center).</span></span>
-
-## <a name="remove-custom-sensitive-information-types-in-the-security--compliance-center"></a><span data-ttu-id="31a3c-189">在安全与合规中心内删除自定义敏感信息类型</span><span class="sxs-lookup"><span data-stu-id="31a3c-189">Remove custom sensitive information types in the Security & Compliance Center</span></span> 
-
-<span data-ttu-id="31a3c-190">**注意**：</span><span class="sxs-lookup"><span data-stu-id="31a3c-190">**Notes**:</span></span>
-
-- <span data-ttu-id="31a3c-191">只能删除自定义敏感信息类型；不能删除内置敏感信息类型。</span><span class="sxs-lookup"><span data-stu-id="31a3c-191">You can only remove custom sensitive information types; you can't remove built-in sensitive information types.</span></span>
-
-- <span data-ttu-id="31a3c-192">删除自定义敏感信息类型前，请先验证没有 DLP 策略或 Exchange 邮件流规则（亦称为“传输规则”）仍在引用此敏感信息类型。</span><span class="sxs-lookup"><span data-stu-id="31a3c-192">Before your remove a custom sensitive information type, verify that no DLP policies or Exchange mail flow rules (also known as transport rules) still reference the sensitive information type.</span></span>
-
-1. <span data-ttu-id="31a3c-193">在安全与合规中心内，依次转到“分类”\*\*\*\*\>“敏感信息类型”\*\*\*\*，并选择一个或多个要删除的自定义敏感信息类型。</span><span class="sxs-lookup"><span data-stu-id="31a3c-193">In the Security & Compliance Center, go to **Classifications** \> **Sensitive info types** and select one or more custom sensitive information types that you want to remove.</span></span>
-
-2. <span data-ttu-id="31a3c-194">在随即打开的弹出窗口中，单击“删除”\*\*\*\*（或“删除多个敏感信息类型”\*\*\*\*，如果选择了多个类型的话）。</span><span class="sxs-lookup"><span data-stu-id="31a3c-194">In the fly-out that opens, click **Delete** (or **Delete sensitive info types** if you selected more than one).</span></span>
-
-    ![“敏感信息类型”和“删除”按钮的位置](../media/scc-cust-sens-info-type-delete.png)
-
-3. <span data-ttu-id="31a3c-196">在随即显示的警告消息中，单击“是”\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="31a3c-196">In the warning message that appears, click **Yes**.</span></span>
-
-### <a name="how-do-you-know-this-worked"></a><span data-ttu-id="31a3c-197">如何判断是否生效？</span><span class="sxs-lookup"><span data-stu-id="31a3c-197">How do you know this worked?</span></span>
-
-<span data-ttu-id="31a3c-198">若要验证是否已成功删除自定义敏感信息类型，请依次转到“分类”\*\*\*\*\>“敏感信息类型”\*\*\*\*，以验证自定义敏感信息类型是否已不再列出。</span><span class="sxs-lookup"><span data-stu-id="31a3c-198">To verify that you've successfully removed a custom sensitive information type, go to **Classifications** \> **Sensitive info types** to verify the custom sensitive information type is no longer listed.</span></span>
-
-## <a name="test-custom-sensitive-information-types-in-the-security--compliance-center"></a><span data-ttu-id="31a3c-199">在安全与合规中心内测试自定义敏感信息类型</span><span class="sxs-lookup"><span data-stu-id="31a3c-199">Test custom sensitive information types in the Security & Compliance Center</span></span>
-
-1. <span data-ttu-id="31a3c-200">在安全与合规中心内，依次转到“分类”\*\*\*\*\>“敏感信息类型”\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="31a3c-200">In the Security & Compliance Center, go to **Classifications** \> **Sensitive info types**.</span></span>
-
-2. <span data-ttu-id="31a3c-p118">选择要测试的一个或多个自定义敏感信息类型。在随即打开的弹出窗口中，单击“测试类型”\*\*\*\*（或“测试多个敏感信息类型”\*\*\*\*，如果选择了多个类型的话）。</span><span class="sxs-lookup"><span data-stu-id="31a3c-p118">Select one or more custom sensitive information types to test. In the fly-out that opens, click **Test type** (or **Test sensitive info types** if you selected more than one).</span></span>
-
-    ![“敏感信息类型”和“测试类型”按钮的位置](../media/scc-cust-sens-info-type-test.png)
-
-3. <span data-ttu-id="31a3c-204">在随即打开的“上传测试文件”\*\*\*\* 页面上，拖放文件或单击“浏览”\*\*\*\* 并选择文件，以上传要测试的文档。</span><span class="sxs-lookup"><span data-stu-id="31a3c-204">On the **Upload file to test** page that opens, upload a document to test by dragging and dropping a file or by clicking **Browse** and selecting a file.</span></span>
-
-    ![“上传测试文件”页](../media/scc-cust-sens-info-type-test-upload.png)
-
-4. <span data-ttu-id="31a3c-206">单击“测试”\*\*\*\* 按钮，以测试文档的模式匹配情况。</span><span class="sxs-lookup"><span data-stu-id="31a3c-206">Click the **Test** button to test the document for pattern matches in the file.</span></span>
-
-5. <span data-ttu-id="31a3c-207">在“匹配结果”\*\*\*\* 页上，单击“完成”\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="31a3c-207">On the **Match results** page, click **Finish**.</span></span>
-
-    ![匹配结果](../media/scc-cust-sens-info-type-test-results.png)
+<span data-ttu-id="79ac9-188">此外，还可以使用 PowerShell 和精确的数据匹配功能创建自定义敏感信息类型。</span><span class="sxs-lookup"><span data-stu-id="79ac9-188">You can also create custom sensitive information types by using PowerShell and Exact Data Match capabilities.</span></span> <span data-ttu-id="79ac9-189">若要了解有关这些方法的详细信息，请参阅：</span><span class="sxs-lookup"><span data-stu-id="79ac9-189">To learn more about those methods, see:</span></span>
+- [<span data-ttu-id="79ac9-190">使用安全与合规中心 PowerShell 创建自定义敏感信息类型</span><span class="sxs-lookup"><span data-stu-id="79ac9-190">Create a custom sensitive information type in Security & Compliance Center PowerShell</span></span>](create-a-custom-sensitive-information-type-in-scc-powershell.md)
+- [<span data-ttu-id="79ac9-191">使用精确数据匹配 (EDM) 为 DLP 创建自定义敏感信息类型</span><span class="sxs-lookup"><span data-stu-id="79ac9-191">Create a custom sensitive information type for DLP with Exact Data Match (EDM)</span></span>](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)
+ 
+> [!NOTE]
+> <span data-ttu-id="79ac9-192">Microsoft 365 信息保护可为以下语言提供双字节字符集语言支持（预览）：</span><span class="sxs-lookup"><span data-stu-id="79ac9-192">Microsoft 365 Information Protection supports, in preview, double byte character set languages for:</span></span>
+> - <span data-ttu-id="79ac9-193">简体中文</span><span class="sxs-lookup"><span data-stu-id="79ac9-193">Chinese (simplified)</span></span>
+> - <span data-ttu-id="79ac9-194">繁体中文</span><span class="sxs-lookup"><span data-stu-id="79ac9-194">Chinese (traditional)</span></span>
+> - <span data-ttu-id="79ac9-195">韩语</span><span class="sxs-lookup"><span data-stu-id="79ac9-195">Korean</span></span>
+> - <span data-ttu-id="79ac9-196">日语</span><span class="sxs-lookup"><span data-stu-id="79ac9-196">Japanese</span></span>
+>
+><span data-ttu-id="79ac9-197">此支持适用于敏感信息类型。</span><span class="sxs-lookup"><span data-stu-id="79ac9-197">This support is available for sensitive information types.</span></span> <span data-ttu-id="79ac9-198">有关详细信息，请参阅[双字节字符集的信息保护支持发行说明（预览版）](mip-dbcs-relnotes.md)。</span><span class="sxs-lookup"><span data-stu-id="79ac9-198">See, [Information protection support for double byte character sets release notes (preview)](mip-dbcs-relnotes.md) for more information.</span></span>
