@@ -20,12 +20,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0d6dfb17-8582-4172-a9a9-aed798150263
 description: 获取定期报表，了解你组织中的人员当前是如何使用 Microsoft 365 服务的。 通过使用情况概述仪表板，可深入了解每个图表获取更多见解。
-ms.openlocfilehash: d2c5b4f67d93500f7341463a01313271d182dc38
-ms.sourcegitcommit: 039205fdaaa2a233ff7e95cd91bace474b84b68c
+ms.openlocfilehash: 4ec7690e5300b2ac08a98fbec3f4c253e970738c
+ms.sourcegitcommit: 7ecd10b302b3b3dfa4ba3be3a6986dd3c189fbff
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49611345"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "49921166"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center"></a>管理中心中的 Microsoft 365 报表
 
@@ -86,7 +86,9 @@ ms.locfileid: "49611345"
 
 根据你的订阅，下面是可供使用的报表。
   
-- [电子邮件活动](email-activity.md)
+- [电子邮件活动](email-activity-ww.md)
+
+- [适用于美国政府的电子邮件活动](email-activity.md)
     
 - [邮箱使用情况](mailbox-usage.md)
     
@@ -98,7 +100,9 @@ ms.locfileid: "49611345"
 
 - [适用于美国政府的活动用户](active-users.md)
   
-- [电子邮件应用使用情况](email-apps-usage.md)
+- [电子邮件应用使用情况](email-apps-usage-ww.md)
+
+- [适用于美国政府的电子邮件应用使用情况](email-apps-usage.md)
 
 - [表单活动](forms-activity-ww.md)
 

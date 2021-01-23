@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft 生产力分数概述。
-ms.openlocfilehash: e052d1189379bb00a05b574e6568e9e718285d50
-ms.sourcegitcommit: 849b365bd3eaa9f3c3a9ef9f5973ef81af9156fa
+ms.openlocfilehash: 8ba1ceb57cd322a67e7b154700a8ac90c62f5ef0
+ms.sourcegitcommit: 7ecd10b302b3b3dfa4ba3be3a6986dd3c189fbff
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49688327"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "49921238"
 ---
 # <a name="microsoft-productivity-score"></a>Microsoft 生产力分数 
 
@@ -87,6 +87,9 @@ Productivity Score 仅在 Microsoft 365 管理中心中提供，并且只能由�
 - Teams 管理员 
 - 全局读取者 
 - 报告读取者 
+
+> [!NOTE]
+> 只有具有全局管理员角色的 IT 专业人员才能注册或选择加入 Productivity Score 租户。
 
 请注意，该信息仅用于使用 Microsoft 365 进一步推进数字化转型，因此请谨慎分享。 
 

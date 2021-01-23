@@ -18,16 +18,16 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: 了解在 Office 365 安全与合规中心中创建关键字字典的基本步骤。
-ms.openlocfilehash: e6f6043efd4c5f38b7e9fa2a92c4fcb7ceb91e45
-ms.sourcegitcommit: 554755bc9ce40228ce6e34bde6fc6e226869b6a1
+ms.openlocfilehash: 488e39921f36a6557378a6214269fcb399114972
+ms.sourcegitcommit: 7ecd10b302b3b3dfa4ba3be3a6986dd3c189fbff
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48681632"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "49921574"
 ---
 # <a name="create-a-keyword-dictionary"></a>创建关键字字典
 
-数据丢失防护 (DLP) 可识别、监视和保护敏感项目。 标识敏感项目有时需要查找关键字，尤其是在标识常规内容（如与医疗保健相关的通信）或不当或露骨语言时。 虽然可以在敏感信息类型中创建关键字列表，但关键字列表的大小是有限的，且需要修改 XML 才能创建或编辑它们。 关键字字典可更简单地管理关键字，并且规模更大，可支持多达 100KB 的术语（压缩后），并支持所有语言。 租户限制同样为压缩后 100KB。
+数据丢失防护 (DLP) 可识别、监视和保护敏感项目。 标识敏感项目有时需要查找关键字，尤其是在标识常规内容（如与医疗保健相关的通信）或不当或露骨语言时。 虽然可以在敏感信息类型中创建关键字列表，但关键字列表的大小是有限的，且需要修改 XML 才能创建或编辑它们。 关键字字典可更简单地管理关键字，并且规模更大，可支持多达 1MB 的术语（压缩后），并支持所有语言。 租户限制同样为压缩后 1MB。 压缩后限值 1MB 意味着租户中合并的所有词典可能接近 100 万字符。
   
 > [!NOTE]
 > Microsoft 365 信息保护现可为以下语言提供双字节字符集语言支持（预览）：
@@ -42,7 +42,7 @@ ms.locfileid: "48681632"
 
 词典可能有多个关键字来源，最常见的来源是服务或 PowerShell cmdlet 中导入的文件（如 .csv 或 .txt 列表）、你直接在 PowerShell cmdlet 中输入的列表或现有词典。创建关键字词典时，请遵循下面的相同核心步骤：
   
-1. 使用**安全与合规中心** ([https://protection.office.com](https://protection.office.com)) 或连接到**安全与合规中心 PowerShell**。&amp;
+1. 使用 **安全与合规中心** ([https://protection.office.com](https://protection.office.com)) 或连接到 **安全与合规中心 PowerShell**。&amp;
     
 2. **定义或加载目标来源中的关键字**。 该向导和 cmdlet 均接受逗号分隔的关键字列表，以创建自定义关键字字典，所以这一步将会因关键字来源不同而略有差异。 加载后的关键字会在导入前编码并转换为字节数组。
     
@@ -82,7 +82,7 @@ ms.locfileid: "48681632"
   
 1. 将关键字复制到文本文件中，并确保每个关键字都单独占一行。
     
-2. 使用 Unicode 编码保存文本文件。在记事本中，依次单击“另存为”****\>“编码”****\>“Unicode”****。
+2. 使用 Unicode 编码保存文本文件。在记事本中，依次单击“另存为”\>“编码”\>“Unicode”。
     
 3. 运行下面的 cmdlet，以将文件读入变量中：
     

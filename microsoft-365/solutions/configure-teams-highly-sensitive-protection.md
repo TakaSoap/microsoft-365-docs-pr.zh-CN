@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: 了解如何部署具有高度敏感数据保护的团队。
-ms.openlocfilehash: 045f1b1d1ebf03eb70554dc5964acb0a12e0060f
-ms.sourcegitcommit: df58fd8ebe14ca98fc1be84dbfb9c29ef7ab1d62
+ms.openlocfilehash: 2679a8a0bd8cf5cc3d35d517e8a44921fc4fdbc1
+ms.sourcegitcommit: 7ecd10b302b3b3dfa4ba3be3a6986dd3c189fbff
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49870847"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "49921130"
 ---
 # <a name="configure-teams-with-protection-for-highly-sensitive-data"></a>配置具有高度敏感数据保护的团队
 
@@ -153,7 +153,7 @@ ms.locfileid: "49870847"
 2. 在团队的工具栏中，单击“文件”。
 3. 单击省略号，然后单击“在 SharePoint 中打开”。
 4. 在基础 SharePoint 网站的工具栏中，依次单击设置图标和“网站权限”。
-5. 在“网站权限”窗格的“**共享设置**”下方，单击“**更改共享设置**”。
+5. 在“**网站权限**”窗格的“**网站共享**”下方，单击“**更改成员共享方式**”。
 6. 在“**共享权限**”下方，选择“**仅网站所有者可以共享文件、文件夹和网站**”。
 7. 将“**允许访问请求**”设置为“**关闭**”，然后单击“**保存**”。
 

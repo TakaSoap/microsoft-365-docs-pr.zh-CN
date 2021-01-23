@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: 了解如何部署具有基线保护级别的团队。
-ms.openlocfilehash: 16f37175c3aa7b420745e6126de1aa96368d618a
-ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
+ms.openlocfilehash: 11554dbd7e33a77c9f6397ae9c5e91669f537081
+ms.sourcegitcommit: 7ecd10b302b3b3dfa4ba3be3a6986dd3c189fbff
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49613438"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "49921866"
 ---
 # <a name="configure-teams-with-baseline-protection"></a>配置具有基线保护的团队
 
@@ -87,7 +87,7 @@ ms.locfileid: "49613438"
 1. 在团队的工具栏中，单击“**文件**”。
 2. 单击“**在 SharePoint 中打开**”。
 3. 在 SharePoint 网站的工具栏中，依次单击设置图标和“**网站权限**”。
-4. 在“**网站权限**”窗格的“**共享设置**”下方，单击“**更改共享设置**”。
+4. 在“**网站权限**”窗格的“**网站共享**”下方，单击“**更改成员共享方式**”。
 5. 在“**共享权限**”下，选择选择“**网站所有者和成员以及拥有编辑权限的人员可共享文件和文件夹，但只有网站所有者才可共享网站**”，然后单击“**保存**”。
 
 ## <a name="additional-protections"></a>附加保护

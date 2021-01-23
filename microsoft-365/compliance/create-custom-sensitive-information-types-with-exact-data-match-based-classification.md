@@ -17,16 +17,16 @@ search.appverid:
 - MET150
 description: 了解如何使用基于精确数据匹配的分类来创建自定义敏感信息类型。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 68546f7ad9f4b97f43611d49054200db4fdd4bbd
-ms.sourcegitcommit: 884ac262443c50362d0c3ded961d36d6b15d8b73
+ms.openlocfilehash: f9b905e73fe471cc034eae42726a5a86d91a359a
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49698393"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49928816"
 ---
 # <a name="create-custom-sensitive-information-types-with-exact-data-match-based-classification"></a>使用基于精确数据匹配的分类创建自定义敏感信息类型
 
-[自定义敏感信息类型](custom-sensitive-info-types.md)用于帮助标识敏感项目，以帮助防止它们被意外或不当地共享。 可基于以下内容定义自定义敏感信息类型：
+[自定义敏感信息类型](sensitive-information-type-learn-about.md)用于帮助标识敏感项目，以防止它们被意外或不当地共享。 可基于以下内容定义自定义敏感信息类型：
 
 - 模式
 - 如 *员工*、*徽章* 或 *ID 等关键字证据*
@@ -649,7 +649,7 @@ Register-ScheduledTask -TaskName $taskName -InputObject $scheduledTask -User $us
 ## <a name="related-articles"></a>相关文章
 
 - [敏感信息类型属性定义](sensitive-information-type-entity-definitions.md)
-- [自定义敏感信息类型](custom-sensitive-info-types.md)
+- [了解敏感信息类型](sensitive-information-type-learn-about.md)
 - [DLP 策略概述](data-loss-prevention-policies.md)
 - [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security)
 - [New-DlpEdmSchema](https://docs.microsoft.com/powershell/module/exchange/new-dlpedmschema)
