@@ -21,25 +21,25 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: a0f4307cc0ed42a8ed53cdeefdb0a7b32eb36d35
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 39abcbde82c2902b091b42db3dbc8e1ee2cbd924
+ms.sourcegitcommit: 8b3ff6e9f8931327b6f0541fd882107687cd123e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49930578"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "49942786"
 ---
 # <a name="microsoft-secure-score"></a>Microsoft 安全功能分数
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-Microsoft 安全分数是组织安全状况的度量，数字越高，表示采取的改进操作就越高。 可以在 https://security.microsoft.com/securescore [Microsoft 365 安全中心找到它](overview-security-center.md)。
+Microsoft 安全分数是组织安全状况的度量，较高的数字表示采取更多改进措施。 可以在 https://security.microsoft.com/securescore [Microsoft 365 安全中心找到它](overview-security-center.md)。
 
 遵循安全分数建议可保护组织免受威胁。 在 Microsoft 365 安全中心的集中式仪表板中，组织可以监视并处理其 Microsoft 365 标识、应用和设备的安全性。
 
 安全分数可帮助组织：  
 
 * 有关组织安全状况的当前状态的报告。
-* 通过提供可发现性、可见性、指导和控制，改进其安全状况。  
+* 通过提供可发现性、可见性、指导和控制性来改进其安全状况。  
 * 与基准进行比较，并建立关键绩效指标 (KPI) 。
 
 组织可以访问指标和趋势的稳固可视化、与其他 Microsoft 产品的集成、与类似组织的分数比较等。 该分数还可以反映第三方解决方案何时解决了建议的操作。
@@ -71,7 +71,7 @@ Microsoft 安全分数是组织安全状况的度量，数字越高，表示采�
 
 每个改进操作都值 10 分或更少，大多数改进操作都以二进制方式进行评分。 如果实施改进操作（如创建新策略或打开特定设置），则获得 100% 的分数。 对于其他改进操作，分数以总配置的百分比表示。
 
-例如，改进操作通过多重身份验证保护所有用户来表示你获得 10 分。 你只有 50 个 100 个受保护的用户，因此你只获得 5 分的部分分数 (50 个受保护/ 100 个总 * 10 最大 pts = 5 pts) 。
+例如，改进操作通过多重身份验证保护所有用户来表示你获得 10 分。 你只有 50 个保护的用户，共 100 个用户，因此你获得的部分分数为 5 分 (50 个受保护/ 100 个总计 * 10 最大 pts = 5 pts) 。
 
 ### <a name="products-included-in-secure-score"></a>安全分数中包含的产品
 
@@ -82,12 +82,13 @@ Microsoft 安全分数是组织安全状况的度量，数字越高，表示采�
 - Microsoft Defender for Endpoint
 - Microsoft Defender for Identity
 - 云应用安全
+- Microsoft Teams
 
 即将推出针对其他安全产品的建议。 建议不会涵盖与每个产品关联的所有攻击面，但它们是一个很好的基线。 还可以将改进操作标记为第三方或备用缓解所涵盖。
 
 ### <a name="security-defaults"></a>安全性默认值
 
-Microsoft 安全分数已更新了改进操作，以支持 [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)中的安全默认值，从而通过预配置的安全设置帮助保护组织免受常见攻击。
+Microsoft 安全分数已更新了改进操作，以支持 [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)中的安全默认值，这便于通过针对常见攻击的预配置安全设置帮助保护组织。
 
 如果启用安全默认值，将被授予以下改进操作的完整分数：
 
@@ -100,7 +101,7 @@ Microsoft 安全分数已更新了改进操作，以支持 [Azure Active Directo
 
 ## <a name="required-permissions"></a>所需权限
 
-若要有权访问 Microsoft 安全分数，必须在 Azure Active Directory 中分配以下角色之一。
+要有权访问 Microsoft 安全分数，必须在 Azure Active Directory 中分配以下角色之一。
 
 ### <a name="read-and-write-roles"></a>读取和写入角色
 

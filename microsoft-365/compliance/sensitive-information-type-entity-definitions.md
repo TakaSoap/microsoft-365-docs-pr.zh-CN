@@ -18,20 +18,28 @@ ms.collection:
 hideEdit: true
 feedback_system: None
 description: 安全合规 (DLP) 中的数据丢失防护包括 80 种可供您用于 DLP 策略 &amp; 的敏感信息类型。 本主题列出了所有这些敏感信息类型，并显示 DLP 策略在检测到每种类型时查找的内容。
-ms.openlocfilehash: 584e2fe2353c1f80545a3742a44163cb26ee2c29
-ms.sourcegitcommit: 31be333178b934c519f419656f4c3a53e1beffdc
+ms.openlocfilehash: b70f335fd0742e6bc34957058c6e695530e83507
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "49881781"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49927125"
 ---
 # <a name="sensitive-information-type-entity-definitions"></a>敏感信息类型属性定义
 
-合规性中心 (DLP) 中的数据丢失防护包括许多可供您用于 DLP 策略的敏感信息类型。 本主题列出了所有这些敏感信息类型，并显示 DLP 策略在检测到每种类型时查找的内容。 敏感信息类型通过正则表达式或函数可以识别的模式定义。 此外，关键字和校验和等确凿的证据可用于识别敏感信息类型。 可信度和相似度也会在评估过程中使用。
+敏感信息类型通过正则表达式或函数可以识别的模式定义。 此外，关键字和校验和等确凿的证据可用于识别敏感信息类型。 可信度和相似度也会在评估过程中使用。
 
 敏感信息类型需要以下订阅之一：
 - Microsoft 365 E3
 - Microsoft 365 E5
+
+敏感信息类型用于：
+
+- [数据丢失防护策略](data-loss-prevention-policies.md) 
+- [敏感度标签](sensitivity-labels.md)
+- [保留标签](retention.md)
+- [通信合规性](communication-compliance.md)
+- [自动标记策略](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-for-office-apps)
 
 ## <a name="aba-routing-number"></a>ABA 路由号码
 
@@ -56,11 +64,11 @@ ms.locfileid: "49881781"
 
 ### <a name="definition"></a>定义
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
+如果策略在 300 个字符的邻近度内检测到这种类型的敏感信息，则策略具有中等可信度：
 - 函数 Func_aba_routing 找到与该模式匹配的内容。
 - 找到 Keyword_ABA_Routing 中的一个关键字。
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 65% 确信它检测到这种类型的敏感信息：
+DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息时，置信度较低：
 - 函数 Func_aba_routing 找到与该模式匹配的内容。
 
 ```xml
@@ -119,7 +127,7 @@ ms.locfileid: "49881781"
 
 ### <a name="definition"></a>定义
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略具有中等可信度，即检测到这种类型的敏感信息：
 - 正则表达式 Regex_argentina_national_id 找到与该模式匹配的内容。
 - 找到 Keyword_argentina_national_id 中的一个关键字。
 
@@ -168,12 +176,12 @@ ms.locfileid: "49881781"
 
 ### <a name="definition"></a>定义
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略可高可信度地检测到这种类型的敏感信息：
 - 正则表达式 Regex_australia_bank_account_number 找到与该模式匹配的内容。
 - 找到 Keyword_australia_bank_account_number 中的一个关键字。
 - 正则表达式 Regex_australia_bank_account_number_bsb 找到与该模式匹配的内容。
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略具有中等可信度，可以检测到这种类型的敏感信息：
 - 正则表达式 Regex_australia_bank_account_number 找到与该模式匹配的内容。
 - 找到 Keyword_australia_bank_account_number 中的一个关键字。
 
@@ -241,11 +249,11 @@ ms.locfileid: "49881781"
 
 ### <a name="definition"></a>定义
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
-- 函数Func_australian_business_number查找与模式匹配的内容。
+在 300 个字符的邻近度内，DLP 策略可高可信度地检测到这种类型的敏感信息：
+- 该函数Func_australian_business_number查找与模式匹配的内容。
 - 找到来自Keywords_australian_business_number关键字。
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略具有中等可信度，可以检测到这种类型的敏感信息：
 - 函数Func_australian_business_number查找与模式匹配的内容。
 
 ```xml
@@ -301,12 +309,12 @@ ms.locfileid: "49881781"
 
 ### <a name="definition"></a>定义
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略可高可信度地检测到这种类型的敏感信息：
 - 该函数Func_Australian_Company_Number查找与模式匹配的内容。
 - 找到搜索Keyword_Australian_Company_Number关键字。
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 65% 确信它检测到这种类型的敏感信息：
-- 该函数Func_Australian_Company_Number查找与模式匹配的内容。
+DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息时，置信度较低：
+- 函数Func_Australian_Company_Number查找与模式匹配的内容。
 
 ```xml
       <!-- Australia Company Number -->
@@ -325,8 +333,8 @@ ms.locfileid: "49881781"
 #### <a name="keyword_australia_company_number"></a>Keyword_australia_company_number
 
 - can
-- australia company no
-- australia company no#
+- 澳大利亚公司否
+- 澳大利亚公司否#
 - 澳大利亚公司编号
 - 澳大利亚公司否
 - 澳大利亚公司否#
@@ -361,7 +369,7 @@ ms.locfileid: "49881781"
 
 ### <a name="definition"></a>定义
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略具有中等可信度，可以检测到这种类型的敏感信息：
 - 正则表达式 Regex_australia_drivers_license_number 找到与该模式匹配的内容。
 - 找到 Keyword_australia_drivers_license_number 中的一个关键字。
 - 未找到 Keyword_australia_drivers_license_number_exclusions 中的关键字。
@@ -503,7 +511,7 @@ ms.locfileid: "49881781"
 
 ### <a name="definition"></a>定义
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略可高可信度地检测到这种类型的敏感信息：
 - 函数 Func_australian_medical_account_number 找到与该模式匹配的内容。
 - 找到 Keyword_Australia_Medical_Account_Number 中的一个关键字。
 - 校验和通过。
@@ -550,7 +558,7 @@ ms.locfileid: "49881781"
 
 ### <a name="definition"></a>定义
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略具有中等可信度，可以检测到这种类型的敏感信息：
 - 正则表达式 Regex_australia_passport_number 找到与该模式匹配的内容。
 - 找到来自Keyword_passport或Keyword_australia_passport_number关键字。
 
@@ -626,7 +634,7 @@ ms.locfileid: "49881781"
 
 ### <a name="definition"></a>定义
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略可高可信度地检测到这种类型的敏感信息：
 - 函数 Func_australian_tax_file_number 找到与该模式匹配的内容。
 - 未找到 Keyword_Australia_Tax_File_Number 或 Keyword_number_exclusions 中的关键字。
 - 校验和通过。
@@ -671,7 +679,7 @@ ms.locfileid: "49881781"
   
 ### <a name="definition"></a>定义
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略具有中等可信度，即检测到这种类型的敏感信息：
   
 - 正则表达式查找  `Regex_austria_eu_driver's_license_number` 与模式匹配的内容。 
 - 找到或  `Keywords_eu_driver's_license_number` 找到 `Keywords_austria_eu_driver's_license_number` 的关键字。 
@@ -750,7 +758,7 @@ ms.locfileid: "49881781"
 - driverlicence#
 - driverlicences#
 - driver lic#
-- driver lics#
+- 驱动程序 lics#
 - driver license#
 - driver licenses#
 - driver licences#
@@ -839,7 +847,7 @@ ms.locfileid: "49881781"
   
 -  22 个字母 (不区分大小写) 数字、反斜杠、正斜杠或加号 
     
-- 两个字母 (不区分大小写) 、数字、反斜杠、正斜杠、加号或等号
+- 两个字母 (不区分大小写) 数字、反斜杠、正斜杠、加号或等号
     
 ### <a name="checksum"></a>校验和
 
@@ -847,9 +855,9 @@ ms.locfileid: "49881781"
   
 ### <a name="definition"></a>定义
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略具有中等可信度，可以检测到这种类型的敏感信息：
   
-- 正则表达式查找  `Regex_austria_eu_national_id_card` 与模式匹配的内容。 
+- 正则表达式  `Regex_austria_eu_national_id_card` 查找与模式匹配的内容。 
 - 找到一个  `Keywords_austria_eu_national_id_card` 关键字。 
    
 ```xml
@@ -890,13 +898,13 @@ ms.locfileid: "49881781"
   
 ### <a name="definition"></a>定义
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
-- 正则表达式查找  `Regex_austria_eu_passport_number` 与模式匹配的内容。 
+在 300 个字符的邻近度内，DLP 策略可高可信度地检测到这种类型的敏感信息：
+- 正则表达式  `Regex_austria_eu_passport_number` 查找与模式匹配的内容。 
 - 找到或  `Keywords_eu_passport_number` 找到 `Keywords_austria_eu_passport_number` 的关键字。 
 - 正则表达式查找 `Regex_eu_passport_date1` DD.MM.YYYY 格式的日期或找到 `Keywords_eu_passport_date` 的关键字
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-- 正则表达式查找  `Regex_austria_eu_passport_number` 与模式匹配的内容。 
+在 300 个字符的邻近度内，DLP 策略具有中等可信度，可以检测到这种类型的敏感信息：
+- 正则表达式  `Regex_austria_eu_passport_number` 查找与模式匹配的内容。 
 - 找到或  `Keywords_eu_passport_number` 找到 `Keywords_austria_eu_passport_number` 的关键字。 
     
 ```xml
@@ -969,11 +977,11 @@ ms.locfileid: "49881781"
   
 ### <a name="definition"></a>定义
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略可高可信度地检测到这种类型的敏感信息：
 - 该  `Func_austria_eu_ssn_or_equivalent` 函数查找与模式匹配的内容。 
 - 找到一个  `Keywords_austria_eu_ssn_or_equivalent` 关键字。 
     
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略具有中等可信度，可以检测到这种类型的敏感信息：
 - 该  `Func_austria_eu_ssn_or_equivalent` 函数查找与模式匹配的内容。 
     
 ```xml
@@ -1043,11 +1051,11 @@ ms.locfileid: "49881781"
   
 ### <a name="definition"></a>定义
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略可高可信度地检测到这种类型的敏感信息：
 - 该  `Func_austria_eu_tax_file_number` 函数查找与模式匹配的内容。 
 - 找到一个  `Keywords_austria_eu_tax_file_number` 关键字。 
     
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 65% 确信它检测到这种类型的敏感信息：
+DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息时，置信度较低：
 - 该  `Func_austria_eu_tax_file_number` 函数查找与模式匹配的内容。 
     
 ```xml
@@ -1108,11 +1116,11 @@ ms.locfileid: "49881781"
 - T 或 t
 - 可选空间
 - U 或 u
-- 可选空间
+- 可选空格
 - 两个或三个数字
-- 可选空间
+- 可选空格
 - 四个数字
-- 可选空间
+- 可选空格
 - 一个或两个数字
 
 ### <a name="checksum"></a>校验和
@@ -1121,12 +1129,12 @@ ms.locfileid: "49881781"
 
 ### <a name="definition"></a>定义
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略可高可信度地检测到这种类型的敏感信息：
 - 该Func_Austria_Value_Added_Tax查找与模式匹配的内容。
 - 找到来自Keyword_Austria_Value_Added_Tax关键字。
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-- 该Func_Austria_Value_Added_Tax查找与模式匹配的内容。
+在 300 个字符的邻近度内，DLP 策略具有中等可信度，即检测到这种类型的敏感信息：
+- 函数Func_Austria_Value_Added_Tax查找与模式匹配的内容。
 
 ```xml
       <!-- Austria Value Added Tax -->
@@ -1181,7 +1189,7 @@ ms.locfileid: "49881781"
 
 ### <a name="definition"></a>定义
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略可高可信度地检测到这种类型的敏感信息：
 - 正则表达式CEP_Regex_AzureDocumentDBAuthKey查找与模式匹配的内容。
 - 正则表达式CEP_CommonExampleKeywords **找不到** 与模式匹配的内容。
 
@@ -1241,7 +1249,7 @@ ms.locfileid: "49881781"
 
 ### <a name="definition"></a>定义
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略可高可信度地检测到这种类型的敏感信息：
 - 正则表达式CEP_Regex_AzureConnectionString查找与模式匹配的内容。
 - 正则表达式CEP_CommonExampleKeywords **找不到** 与模式匹配的内容。
 
@@ -1301,7 +1309,7 @@ ms.locfileid: "49881781"
 
 ### <a name="definition"></a>定义
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略可高可信度地检测到这种类型的敏感信息：
 - 正则表达式CEP_Regex_AzureIoTConnectionString查找与模式匹配的内容。
 - 正则表达式CEP_CommonExampleKeywords **找不到** 与模式匹配的内容。
 
@@ -1351,7 +1359,7 @@ ms.locfileid: "49881781"
 
 ### <a name="definition"></a>定义
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略可高可信度地检测到这种类型的敏感信息：
 - 正则表达式CEP_Regex_AzurePublishSettingPasswords查找与模式匹配的内容。
 - 正则表达式CEP_CommonExampleKeywords **找不到** 与模式匹配的内容。
 
@@ -1407,7 +1415,7 @@ ms.locfileid: "49881781"
 
 ### <a name="definition"></a>定义
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略可高可信度地检测到这种类型的敏感信息：
 - 正则表达式CEP_Regex_AzureRedisCacheConnectionString查找与模式匹配的内容。
 - 正则表达式CEP_CommonExampleKeywords **找不到** 与模式匹配的内容。
 
@@ -1461,7 +1469,7 @@ ms.locfileid: "49881781"
 
 ### <a name="definition"></a>定义
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略可高可信度地检测到这种类型的敏感信息：
 - 正则表达式CEP_Regex_AzureSAS查找与模式匹配的内容。
 
 ```xml
@@ -1501,7 +1509,7 @@ ms.locfileid: "49881781"
 
 ### <a name="definition"></a>定义
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略可高可信度地检测到这种类型的敏感信息：
 - 正则表达式CEP_Regex_AzureServiceBusConnectionString查找与模式匹配的内容。
 - 正则表达式CEP_CommonExampleKeywords **找不到** 与模式匹配的内容。
 
@@ -1551,7 +1559,7 @@ ms.locfileid: "49881781"
 - 等号 (=) 
 - 零到两个空格字符
 - 86 个字符的任意组合，即小写或大写字母、数字、正斜杠 (/) 或加号 (+) 
-- 两个等 (=) 
+- 两个等号 (=) 
 
 ### <a name="checksum"></a>校验和
 
@@ -1559,7 +1567,7 @@ ms.locfileid: "49881781"
 
 ### <a name="definition"></a>定义
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略可高可信度地检测到这种类型的敏感信息：
 - 正则表达式CEP_Regex_AzureStorageAccountKey查找与模式匹配的内容。
 - 正则表达式CEP_AzureEmulatorStorageAccountFilter **找不到** 与模式匹配的内容。
 - 正则表达式CEP_CommonExampleKeywords **找不到** 与模式匹配的内容。
@@ -1603,13 +1611,13 @@ ms.locfileid: "49881781"
 
 ### <a name="format"></a>Format
 
-86 位小写字母或大写字母、数字、正斜杠 (/) 或加号 (+) 的任意组合，前面或后跟以下模式中列出的字符。
+86 个小写字母或大写字母、数字、正斜杠 (/) 或加号 (+) 的任意组合，前面或后跟以下模式中列出的字符。
 
 ### <a name="pattern"></a>模式
 
 - 零到大于符号 (>) 、撇号 (') 、等号 (=) 、引号 (") 或数字符号 (#) 
 - 86 个字符的任意组合，即小写或大写字母、数字、正斜杠 (/) 或加号 (+) 
-- 两个等 (=) 
+- 两个等号 (=) 
 
 ### <a name="checksum"></a>校验和
 
@@ -1617,7 +1625,7 @@ ms.locfileid: "49881781"
 
 ### <a name="definition"></a>定义
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略可高可信度地检测到这种类型的敏感信息：
 - 正则表达式CEP_Regex_AzureStorageAccountKeyGeneric查找与模式匹配的内容。
 
 ```xml
@@ -1644,8 +1652,8 @@ ms.locfileid: "49881781"
   
 ### <a name="definition"></a>定义
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-- 正则表达式查找  `Regex_belgium_eu_driver's_license_number` 与模式匹配的内容。 
+在 300 个字符的邻近度内，DLP 策略具有中等可信度，即检测到这种类型的敏感信息：
+- 正则表达式  `Regex_belgium_eu_driver's_license_number` 查找与模式匹配的内容。 
 - 找到或 `Keywords_eu_driver's_license_number` 找到 `Keywords_belgium_eu_driver's_license_number` 的关键字。
     
 ```xml
@@ -1723,7 +1731,7 @@ ms.locfileid: "49881781"
 - driverlicence#
 - driverlicences#
 - driver lic#
-- driver lics#
+- 驱动程序 lics#
 - driver license#
 - driver licenses#
 - driver licences#
@@ -1800,7 +1808,7 @@ ms.locfileid: "49881781"
 - numéro permis conduire
 
 
-## <a name="belgium-national-number"></a>比利时国家/区号码
+## <a name="belgium-national-number"></a>比利时国家/区号
 
 ### <a name="format"></a>Format
 
@@ -1821,12 +1829,12 @@ ms.locfileid: "49881781"
 
 ### <a name="definition"></a>定义
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略具有中等可信度，可以检测到这种类型的敏感信息：
 - 函数 Func_belgium_national_number 找到与该模式匹配的内容。
 - 找到 Keyword_belgium_national_number 中的一个关键字。
 - 校验和通过。
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 65% 确信它检测到这种类型的敏感信息：
+DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息时，置信度较低：
 - 函数 Func_belgium_national_number 找到与该模式匹配的内容。
 - 校验和通过。
 
@@ -1920,12 +1928,12 @@ ms.locfileid: "49881781"
   
 ### <a name="definition"></a>定义
 
- 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
-- 正则表达式查找  `Regex_belgium_eu_passport_number` 与模式匹配的内容。 
+ 在 300 个字符的邻近度内，DLP 策略可高可信度地检测到这种类型的敏感信息：
+- 正则表达式  `Regex_belgium_eu_passport_number` 查找与模式匹配的内容。 
 - 找到或  `Keywords_eu_passport_number` 找到 `Keywords_belgium_eu_passport_number` 的关键字。 
 - 正则表达式查找 `Regex_eu_passport_date2` DD MM YY 格式的日期或找到 `Keywords_eu_passport_date` `Keywords_belgium_eu_passport_number` 的关键字
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略具有中等可信度，即检测到这种类型的敏感信息：
 - 正则表达式查找  `Regex_belgium_eu_passport_number` 与模式匹配的内容。 
 - 找到或  `Keywords_eu_passport_number` 找到 `Keywords_belgium_eu_passport_number` 的关键字。 
 
@@ -2017,11 +2025,11 @@ ms.locfileid: "49881781"
 
 ### <a name="definition"></a>定义
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略可高可信度地检测到这种类型的敏感信息：
 - 该函数Func_belgium_value_added_tax_number查找与模式匹配的内容。
 - 找到来自Keywords_belgium_value_added_tax_number的关键字。
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略具有中等可信度，即检测到这种类型的敏感信息：
 - 该函数Func_belgium_value_added_tax_number查找与模式匹配的内容。
 
 ```xml
@@ -2078,12 +2086,12 @@ ms.locfileid: "49881781"
 
 ### <a name="definition"></a>定义
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略可高可信度地检测到这种类型的敏感信息：
 - 函数 Func_brazil_cpf 找到与该模式匹配的内容。
 - 找到 Keyword_brazil_cpf 中的一个关键字。
 - 校验和通过。
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略具有中等可信度，即检测到这种类型的敏感信息：
 - 函数 Func_brazil_cpf 找到与该模式匹配的内容。
 - 校验和通过。
 
@@ -2141,12 +2149,12 @@ ms.locfileid: "49881781"
 
 ### <a name="definition"></a>定义
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略可高可信度地检测到这种类型的敏感信息：
 - 函数 Func_brazil_cnpj 找到与该模式匹配的内容。
 - 找到 Keyword_brazil_cnpj 中的一个关键字。
 - 校验和通过。
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略具有中等可信度，可以检测到这种类型的敏感信息：
 - 函数 Func_brazil_cnpj 找到与该模式匹配的内容。
 - 校验和通过。
 
@@ -2218,12 +2226,12 @@ Registro de Identidade (RIC)  (新格式) ：
 
 ### <a name="definition"></a>定义
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略可高可信度地检测到这种类型的敏感信息：
 - 函数 Func_brazil_rg 找到与该模式匹配的内容。
 - 找到 Keyword_brazil_rg 中的一个关键字。
 - 校验和通过。
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略具有中等可信度，可以检测到这种类型的敏感信息：
 - 函数 Func_brazil_rg 找到与该模式匹配的内容。
 - 校验和通过。
 
@@ -2270,8 +2278,8 @@ Registro de Identidade (RIC)  (新格式) ：
   
 ### <a name="definition"></a>定义
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-- 正则表达式查找  `Regex_bulgaria_eu_driver's_license_number` 与模式匹配的内容。 
+在 300 个字符的邻近度内，DLP 策略具有中等可信度，即检测到这种类型的敏感信息：
+- 正则表达式  `Regex_bulgaria_eu_driver's_license_number` 查找与模式匹配的内容。 
 - 找到或  `Keywords_eu_driver's_license_number` 找到 `Keywords_bulgaria_eu_driver's_license_number` 的关键字。 
     
 ```xml
@@ -2298,7 +2306,7 @@ Registro de Identidade (RIC)  (新格式) ：
 - driverlicence
 - driverlicences
 - driver lic
-- driver lics
+- 驱动程序 lics
 - driver license
 - driver licenses
 - driver licence
@@ -2348,7 +2356,7 @@ Registro de Identidade (RIC)  (新格式) ：
 - driverlicence#
 - driverlicences#
 - driver lic#
-- driver lics#
+- 驱动程序 lics#
 - driver license#
 - driver licenses#
 - driver licences#
@@ -2446,11 +2454,11 @@ Registro de Identidade (RIC)  (新格式) ：
   
 ### <a name="definition"></a>定义
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略可高可信度地检测到这种类型的敏感信息：
 - 该  `Func_bulgaria_eu_national_id_card` 函数查找与模式匹配的内容。 
 - 找到一个  `Keywords_bulgaria_eu_national_id_card` 关键字。 
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略具有中等可信度，可以检测到这种类型的敏感信息：
 - 该  `Func_bulgaria_eu_national_id_card` 函数查找与模式匹配的内容。 
     
 ```xml
@@ -2534,13 +2542,13 @@ Registro de Identidade (RIC)  (新格式) ：
   
 ### <a name="definition"></a>定义
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
-- 正则表达式查找  `Regex_bulgaria_eu_passport_number` 与模式匹配的内容。 
+在 300 个字符的邻近度内，DLP 策略可高可信度地检测到这种类型的敏感信息：
+- 正则表达式  `Regex_bulgaria_eu_passport_number` 查找与模式匹配的内容。 
 - 找到或  `Keywords_eu_passport_number` 找到 `Keywords_bulgaria_eu_passport_number` 的关键字。 
 - 正则表达式查找 `Regex_eu_passport_date1` DD.MM.YYYY 格式的日期或找到 `Keywords_eu_passport_date` 的关键字
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-- 正则表达式查找  `Regex_bulgaria_eu_passport_number` 与模式匹配的内容。 
+在 300 个字符的邻近度内，DLP 策略具有中等可信度，可以检测到这种类型的敏感信息：
+- 正则表达式  `Regex_bulgaria_eu_passport_number` 查找与模式匹配的内容。 
 - 找到或  `Keywords_eu_passport_number` 找到 `Keywords_bulgaria_eu_passport_number` 的关键字。 
 
 ```xml
@@ -2615,12 +2623,12 @@ Registro de Identidade (RIC)  (新格式) ：
 
 ### <a name="definition"></a>定义
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略可高可信度地检测到这种类型的敏感信息：
 - 正则表达式 Regex_canada_bank_account_number 找到与该模式匹配的内容。
 - 找到 Keyword_canada_bank_account_number 中的一个关键字。
 - 正则表达式 Regex_canada_bank_account_transit_number 找到与该模式匹配的内容。
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略可高可信度地检测到这种类型的敏感信息：
 - 正则表达式 Regex_canada_bank_account_number 找到与该模式匹配的内容。
 - 找到 Keyword_canada_bank_account_number 中的一个关键字。
 
@@ -2682,7 +2690,7 @@ Registro de Identidade (RIC)  (新格式) ：
 
 ### <a name="definition"></a>定义
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略具有中等可信度，可以检测到这种类型的敏感信息：
 - 函数 Func_[province_name]_drivers_license_number 找到与该模式匹配的内容。
 - 找到 Keyword_[province_name]_drivers_license_name 中的一个关键字。
 - 找到 Keyword_canada_drivers_license 中的一个关键字。
@@ -2900,7 +2908,7 @@ Registro de Identidade (RIC)  (新格式) ：
 
 ### <a name="definition"></a>定义
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略具有中等可信度，可以检测到这种类型的敏感信息：
 - 正则表达式 Regex_canada_health_service_number 找到与该模式匹配的内容。
 - 找到 Keyword_canada_health_service_number 中的一个关键字。
 
@@ -2947,7 +2955,7 @@ Registro de Identidade (RIC)  (新格式) ：
 
 ### <a name="definition"></a>定义
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略具有中等可信度，可以检测到这种类型的敏感信息：
 - 正则表达式 Regex_canada_passport_number 找到与该模式匹配的内容。
 - 找到来自Keyword_canada_passport_number或Keyword_passport关键字。
 
@@ -2989,7 +2997,7 @@ Registro de Identidade (RIC)  (新格式) ：
 - パスポート
 - パスポート番号
 - パスポのnum
-- パスポート#
+- パスポート＃
 - Numéro de passeport
 - Passeport n °
 - Passeport Non
@@ -3015,7 +3023,7 @@ Registro de Identidade (RIC)  (新格式) ：
 
 ### <a name="definition"></a>定义
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略具有中等可信度，即检测到这种类型的敏感信息：
 - 正则表达式 Regex_canada_phin 找到与该模式匹配的内容。
 - 至少找到两个Keyword_canada_phin或Keyword_canada_provinces关键字。
 
@@ -3055,7 +3063,7 @@ Registro de Identidade (RIC)  (新格式) ：
 #### <a name="keyword_canada_provinces"></a>Keyword_canada_provinces
 
 - Nunavut
-- 里里达
+- 百里达
 - Northwest Territories
 - On一
 - British Columbia
@@ -3093,7 +3101,7 @@ Registro de Identidade (RIC)  (新格式) ：
 
 ### <a name="definition"></a>定义
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略可高可信度地检测到这种类型的敏感信息：
 - 函数 Func_canadian_sin 找到与该模式匹配的内容。
 - 至少两个以下任意组合：
     - 找到 Keyword_sin 中的一个关键字。
@@ -3101,7 +3109,7 @@ Registro de Identidade (RIC)  (新格式) ：
     - 函数 Func_eu_date 找到正确日期格式的日期。
 - 校验和通过。
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略具有中等可信度，可以检测到这种类型的敏感信息：
 - 函数 Func_unformatted_canadian_sin 找到与该模式匹配的内容。
 - 找到 Keyword_sin 中的一个关键字。
 - 校验和通过。
@@ -3177,12 +3185,12 @@ Registro de Identidade (RIC)  (新格式) ：
 
 ### <a name="definition"></a>定义
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略可高可信度地检测到这种类型的敏感信息：
 - 函数 Func_chile_id_card 找到与该模式匹配的内容。
 - 找到 Keyword_chile_id_card 中的一个关键字。
 - 校验和通过。
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略具有中等可信度，可以检测到这种类型的敏感信息：
 - 函数 Func_chile_id_card 找到与该模式匹配的内容。
 - 校验和通过。
 
@@ -3259,12 +3267,12 @@ Registro de Identidade (RIC)  (新格式) ：
 
 ### <a name="definition"></a>定义
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略可高可信度地检测到这种类型的敏感信息：
 - 函数 Func_china_resident_id 找到与该模式匹配的内容。
 - 找到 Keyword_china_resident_id 中的一个关键字。
 - 校验和通过。
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略具有中等可信度，可以检测到这种类型的敏感信息：
 - 函数 Func_china_resident_id 找到与该模式匹配的内容。
 - 校验和通过。
 
@@ -3313,7 +3321,7 @@ Registro de Identidade (RIC)  (新格式) ：
 
 ### <a name="definition"></a>定义
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略可高可信度地检测到这种类型的敏感信息：
 - 函数 Func_credit_card 找到与该模式匹配的内容。
 - 下列其中一项为真：
     - 找到 Keyword_cc_verification 中的一个关键字。
@@ -3321,7 +3329,7 @@ Registro de Identidade (RIC)  (新格式) ：
     - 函数 Func_expiration_date 找到正确日期格式的日期。
 - 校验和通过。
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 65% 确信它检测到这种类型的敏感信息：
+DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息时，置信度较低：
 - 函数 Func_credit_card 找到与该模式匹配的内容。
 - 校验和通过。
 
@@ -3433,7 +3441,7 @@ Registro de Identidade (RIC)  (新格式) ：
 - master cards
 - diner's Club
 - diners club
-- dinersc一
+- dinersc
 - discover
 - discover card
 - discovercard
@@ -3566,13 +3574,13 @@ Registro de Identidade (RIC)  (新格式) ：
 - 不。 do cartao
 - クレジットカード番号
 - クレジットカードナンバー
-- クレジットカード#
+- クレジットカード＃
 - クレジットカード
 - クレジット
 - クレカ
 - カード番号
 - カードナンバー
-- カード#
+- カード＃
 - アメックス
 - アメリカンエクスプレス
 - アメリカン エクスプレス
@@ -3611,7 +3619,7 @@ Registro de Identidade (RIC)  (新格式) ：
   
 ### <a name="definition"></a>定义
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略具有中等可信度，即检测到这种类型的敏感信息：
   
 - 正则表达式查找  `Regex_croatia_eu_driver's_license_number` 与模式匹配的内容。 
 - 找到或 `Keywords_eu_driver's_license_number` 找到 `Keywords_croatia_eu_driver's_license_number` 的关键字。 
@@ -3640,7 +3648,7 @@ Registro de Identidade (RIC)  (新格式) ：
 - driverlicence
 - driverlicences
 - driver lic
-- driver lics
+- 驱动程序 lics
 - driver license
 - driver licenses
 - driver licence
@@ -3690,7 +3698,7 @@ Registro de Identidade (RIC)  (新格式) ：
 - driverlicence#
 - driverlicences#
 - driver lic#
-- driver lics#
+- 驱动程序 lics#
 - driver license#
 - driver licenses#
 - driver licences#
@@ -3776,7 +3784,7 @@ Registro de Identidade (RIC)  (新格式) ：
 
 ### <a name="definition"></a>定义
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略具有中等可信度，可以检测到这种类型的敏感信息：
 - 函数 Func_croatia_id_card 找到与该模式匹配的内容。
 - 找到 Keyword_croatia_id_card 中的一个关键字。
 
@@ -3840,12 +3848,12 @@ Registro de Identidade (RIC)  (新格式) ：
   
 ### <a name="definition"></a>定义
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
-- 正则表达式查找  `Regex_croatia_eu_passport_number` 与模式匹配的内容。 
+在 300 个字符的邻近度内，DLP 策略可高可信度地检测到这种类型的敏感信息：
+- 正则表达式  `Regex_croatia_eu_passport_number` 查找与模式匹配的内容。 
 - 找到或  `Keywords_eu_passport_number` 找到 `Keywords_croatia_eu_passport_number` 的关键字。 
 - 正则表达式查找 `Regex_eu_passport_date1` DD.MM.YYYY 格式的日期或找到 `Keywords_eu_passport_date` 的关键字
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略具有中等可信度，即检测到这种类型的敏感信息：
 - 正则表达式查找  `Regex_croatia_eu_passport_number` 与模式匹配的内容。 
 - 找到或  `Keywords_eu_passport_number` 找到 `Keywords_croatia_eu_passport_number` 的关键字。 
     
@@ -3911,12 +3919,12 @@ Registro de Identidade (RIC)  (新格式) ：
 
 ### <a name="definition"></a>定义
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略可高可信度地检测到这种类型的敏感信息：
 - 函数 Func_croatia_oib_number 找到与该模式匹配的内容。
-- 找到来自Keywords_croatia_eu_tax_file_number关键字。
+- 找到来自Keywords_croatia_eu_tax_file_number的关键字。
 - 校验和通过。
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略具有中等可信度，可以检测到这种类型的敏感信息：
 - 函数 Func_croatia_oib_number 找到与该模式匹配的内容。
 - 校验和通过。
 
@@ -3983,8 +3991,8 @@ Registro de Identidade (RIC)  (新格式) ：
   
 ### <a name="definition"></a>定义
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-- 正则表达式查找  `Regex_cyprus_eu_driver's_license_number` 与模式匹配的内容。 
+在 300 个字符的邻近度内，DLP 策略具有中等可信度，可以检测到这种类型的敏感信息：
+- 正则表达式  `Regex_cyprus_eu_driver's_license_number` 查找与模式匹配的内容。 
 - 找到或  `Keywords_eu_driver's_license_number` 找到 `Keywords_cyprus_eu_driver's_license_number` 的关键字。
 
 ```xml
@@ -4011,7 +4019,7 @@ Registro de Identidade (RIC)  (新格式) ：
 - driverlicence
 - driverlicences
 - driver lic
-- driver lics
+- 驱动程序 lics
 - driver license
 - driver licenses
 - driver licence
@@ -4061,7 +4069,7 @@ Registro de Identidade (RIC)  (新格式) ：
 - driverlicence#
 - driverlicences#
 - driver lic#
-- driver lics#
+- 驱动程序 lics#
 - driver license#
 - driver licenses#
 - driver licences#
@@ -4152,8 +4160,8 @@ Registro de Identidade (RIC)  (新格式) ：
   
 ### <a name="definition"></a>定义
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-- 正则表达式查找  `Regex_cyprus_eu_national_id_card` 与模式匹配的内容。 
+在 300 个字符的邻近度内，DLP 策略具有中等可信度，可以检测到这种类型的敏感信息：
+- 正则表达式  `Regex_cyprus_eu_national_id_card` 查找与模式匹配的内容。 
 - 找到一个  `Keywords_cyprus_eu_national_id_card` 关键字。 
     
 ```xml 
@@ -4194,12 +4202,12 @@ Registro de Identidade (RIC)  (新格式) ：
   
 ### <a name="definition"></a>定义
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
-- 正则表达式查找  `Regex_cyprus_eu_passport_number` 与模式匹配的内容。 
+在 300 个字符的邻近度内，DLP 策略可高可信度地检测到这种类型的敏感信息：
+- 正则表达式  `Regex_cyprus_eu_passport_number` 查找与模式匹配的内容。 
 - 找到或  `Keywords_eu_passport_number` 找到 `Keywords_cyprus_eu_passport_number` 的关键字。 
 - 正则表达式查找 `Regex_cyprus_eu_passport_date` DD/MM/YYYY 格式的日期或找到 `Keywords_cyprus_eu_passport_date` 的关键字
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略具有中等可信度，即检测到这种类型的敏感信息：
 - 正则表达式查找  `Regex_cyprus_eu_passport_number` 与模式匹配的内容。 
 - 找到或  `Keywords_eu_passport_number` 找到 `Keywords_cyprus_eu_passport_number` 的关键字。  
     
@@ -4288,11 +4296,11 @@ Registro de Identidade (RIC)  (新格式) ：
   
 ### <a name="definition"></a>定义
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略可高可信度地检测到这种类型的敏感信息：
 - 该  `Func_cyprus_eu_tax_file_number` 函数查找与模式匹配的内容。 
 - 找到一个  `Keywords_cyprus_eu_tax_file_number` 关键字。 
     
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略具有中等可信度，即检测到这种类型的敏感信息：
 - 该  `Func_cyprus_eu_tax_file_number` 函数查找与模式匹配的内容。 
     
 ```xml
@@ -4331,7 +4339,7 @@ Registro de Identidade (RIC)  (新格式) ：
 - tin id
 - tin no
 - tin#
-- vergi kim并 kodu
+- vergi kim且 kodu
 - vergi kim一 nu一s
 - αριθμός φορολογικού μητρώου
 - κωδικός φορολογικού μητρώου
@@ -4360,8 +4368,8 @@ Registro de Identidade (RIC)  (新格式) ：
   
 ### <a name="definition"></a>定义
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-- 正则表达式查找  `Regex_czech_republic_eu_driver's_license_number` 与模式匹配的内容。 
+在 300 个字符的邻近度内，DLP 策略具有中等可信度，即检测到这种类型的敏感信息：
+- 正则表达式  `Regex_czech_republic_eu_driver's_license_number` 查找与模式匹配的内容。 
 - 找到或  `Keywords_eu_driver's_license_number` 找到 `Keywords_czech_republic_eu_driver's_license_number` 的关键字。 
 
 ```xml
@@ -4388,7 +4396,7 @@ Registro de Identidade (RIC)  (新格式) ：
 - driverlicence
 - driverlicences
 - driver lic
-- driver lics
+- 驱动程序 lics
 - driver license
 - driver licenses
 - driver licence
@@ -4438,7 +4446,7 @@ Registro de Identidade (RIC)  (新格式) ：
 - driverlicence#
 - driverlicences#
 - driver lic#
-- driver lics#
+- 驱动程序 lics#
 - driver license#
 - driver licenses#
 - driver licences#
@@ -4503,7 +4511,7 @@ Registro de Identidade (RIC)  (新格式) ：
 #### <a name="keywords_czech_republic_eu_drivers_license_number"></a>Keywords_czech_republic_eu_driver s_license_number
 
 - úidiúskú prúkaz
-- éidi？ské przy
+- üidi？ské przy
 - ííslo 4idiíského príkazu
 - íísla 4idiískích príkaz≥
 
@@ -4524,13 +4532,13 @@ Registro de Identidade (RIC)  (新格式) ：
   
 ### <a name="definition"></a>定义
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
-- 正则表达式查找  `Regex_czech_republic_eu_passport_number` 与模式匹配的内容。 
+在 300 个字符的邻近度内，DLP 策略可高可信度地检测到这种类型的敏感信息：
+- 正则表达式  `Regex_czech_republic_eu_passport_number` 查找与模式匹配的内容。 
 - 找到或  `Keywords_eu_passport_number` 找到 `Keywords_czech_republic_eu_passport_number` 的关键字。 
 - 正则表达式查找 `Regex_eu_passport_date1` DD.MM.YYYY 格式的日期或找到 `Keywords_eu_passport_date` 的关键字
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-- 正则表达式查找  `Regex_czech_republic_eu_passport_number` 与模式匹配的内容。 
+在 300 个字符的邻近度内，DLP 策略具有中等可信度，可以检测到这种类型的敏感信息：
+- 正则表达式  `Regex_czech_republic_eu_passport_number` 查找与模式匹配的内容。 
 - 找到或  `Keywords_eu_passport_number` 找到 `Keywords_czech_republic_eu_passport_number` 的关键字。 
     
 ```xml
@@ -4586,7 +4594,7 @@ Registro de Identidade (RIC)  (新格式) ：
 - 到期日期
 
 
-## <a name="czech-personal-identity-number"></a>捷克个人标识号
+## <a name="czech-personal-identity-number"></a>捷克语个人标识号
 
 ### <a name="format"></a>Format
 
@@ -4610,15 +4618,15 @@ Registro de Identidade (RIC)  (新格式) ：
 
 ### <a name="definition"></a>定义
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略可高可信度地检测到这种类型的敏感信息：
 
 - 函数 Func_czech_id_card 找到与该模式匹配的内容。
 - 找到 Keyword_czech_id_card 中的一个关键字。
 - 校验和通过。
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略具有中等可信度，可以检测到这种类型的敏感信息：
 
-- 函数Func_czech_id_card_new_format查找与模式匹配的内容。
+- 该函数Func_czech_id_card_new_format查找与模式匹配的内容。
 - 校验和通过。
 
 ```xml
@@ -4702,8 +4710,8 @@ Registro de Identidade (RIC)  (新格式) ：
   
 ### <a name="definition"></a>定义
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-- 正则表达式查找  `Regex_denmark_eu_driver's_license_number` 与模式匹配的内容。 
+在 300 个字符的邻近度内，DLP 策略具有中等可信度，可以检测到这种类型的敏感信息：
+- 正则表达式  `Regex_denmark_eu_driver's_license_number` 查找与模式匹配的内容。 
 - 找到或  `Keywords_eu_driver's_license_number` 找到 `Keywords_denmark_eu_driver's_license_number` 的关键字。 
     
 ```xml
@@ -4730,7 +4738,7 @@ Registro de Identidade (RIC)  (新格式) ：
 - driverlicence
 - driverlicences
 - driver lic
-- driver lics
+- 驱动程序 lics
 - driver license
 - driver licenses
 - driver licence
@@ -4780,7 +4788,7 @@ Registro de Identidade (RIC)  (新格式) ：
 - driverlicence#
 - driverlicences#
 - driver lic#
-- driver lics#
+- 驱动程序 lics#
 - driver license#
 - driver licenses#
 - driver licences#
@@ -4864,13 +4872,13 @@ Registro de Identidade (RIC)  (新格式) ：
   
 ### <a name="definition"></a>定义
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略可高可信度地检测到这种类型的敏感信息：
 - 正则表达式查找  `Regex_denmark_eu_passport_number` 与模式匹配的内容。 
 - 找到或  `Keywords_eu_passport_number` 找到 `Keywords_denmark_eu_passport_number` 的关键字。 
 - 正则表达式查找 `Regex_eu_passport_date2` DD MM YY 格式的日期或找到 `Keywords_eu_passport_date` 的关键字
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-- 正则表达式查找  `Regex_denmark_eu_passport_number` 与模式匹配的内容。 
+在 300 个字符的邻近度内，DLP 策略具有中等可信度，可以检测到这种类型的敏感信息：
+- 正则表达式  `Regex_denmark_eu_passport_number` 查找与模式匹配的内容。 
 - 找到或  `Keywords_eu_passport_number` 找到 `Keywords_denmark_eu_passport_number` 的关键字。 
     
 ```xml
@@ -4944,12 +4952,12 @@ Registro de Identidade (RIC)  (新格式) ：
 
 ### <a name="definition"></a>定义
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略具有中等可信度，即检测到这种类型的敏感信息：
 - 正则表达式Func_denmark_eu_tax_file_number查找与模式匹配的内容。
 - 找到 Keyword_denmark_id 中的一个关键字。
 - 校验和通过。
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 65% 确信它检测到这种类型的敏感信息：
+DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息时，置信度较低：
 - 正则表达式Func_denmark_eu_tax_file_number查找与模式匹配的内容。
 - 校验和通过。
 
@@ -4975,9 +4983,9 @@ Registro de Identidade (RIC)  (新格式) ：
 - registrt registreringssystem
 - cpr
 - cpr#
-- gesundheitshete nummer
+- gesundheitsitte nummer
 - gesundheitsversicherungte nummer
-- 运行状况卡片
+- health card
 - 健康保险卡号
 - 健康保险号码
 - identification number
@@ -5042,7 +5050,7 @@ Registro de Identidade (RIC)  (新格式) ：
 - sygesikringsnummer
 
 
-## <a name="drug-enforcement-agency-dea-number"></a>管制局 (DEA) 号码
+## <a name="drug-enforcement-agency-dea-number"></a>犯罪管制局 (DEA) 号码
 
 ### <a name="format"></a>Format
 
@@ -5061,12 +5069,12 @@ Registro de Identidade (RIC)  (新格式) ：
 
 ### <a name="definition"></a>定义
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略可高可信度地检测到这种类型的敏感信息：
 - 函数 Func_dea_number 找到与该模式匹配的内容。
 - 找到一个 `Keyword_dea_number` 关键字
 - 校验和通过。
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略具有中等可信度，可以检测到这种类型的敏感信息：
 - 函数 Func_dea_number 找到与该模式匹配的内容。
 - 校验和通过。
 
@@ -5119,7 +5127,7 @@ Registro de Identidade (RIC)  (新格式) ：
   
 ### <a name="definition"></a>定义
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略具有中等可信度，即检测到这种类型的敏感信息：
 - 正则表达式查找  `Regex_estonia_eu_driver's_license_number` 与模式匹配的内容。 
 - 找到或  `Keywords_eu_driver's_license_number` 找到 `Keywords_estonia_eu_driver's_license_number` 的关键字。 
     
@@ -5197,7 +5205,7 @@ Registro de Identidade (RIC)  (新格式) ：
 - driverlicence#
 - driverlicences#
 - driver lic#
-- driver lics#
+- 驱动程序 lics#
 - driver license#
 - driver licenses#
 - driver licences#
@@ -5285,7 +5293,7 @@ Registro de Identidade (RIC)  (新格式) ：
   
 - 一个数字，对应于性生活和百年 (奇数男性，偶数男性;1-2：19 世纪;3-4：20 世纪;5-6：21 世纪) 
 - 六个数字，对应于 YYMMDD (出生日期) 
-- 三个数字，对应于同一日期出生日期分隔的序列号
+- 三个数字，对应于一个序列号，分隔同一日期的人
 - 一个检查数字
     
 ### <a name="checksum"></a>校验和
@@ -5294,11 +5302,11 @@ Registro de Identidade (RIC)  (新格式) ：
   
 ### <a name="definition"></a>定义
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略可高可信度地检测到这种类型的敏感信息：
 - 该  `Func_estonia_eu_national_id_card` 函数查找与模式匹配的内容。 
 - 找到一个  `Keywords_estonia_eu_national_id_card` 关键字。 
     
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略具有中等可信度，即检测到这种类型的敏感信息：
 - 该  `Func_estonia_eu_national_id_card` 函数查找与模式匹配的内容。 
     
 ```xml
@@ -5370,13 +5378,13 @@ Registro de Identidade (RIC)  (新格式) ：
   
 ### <a name="definition"></a>定义
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
-- 正则表达式查找  `Regex_estonia_eu_passport_number` 与模式匹配的内容。 
+在 300 个字符的邻近度内，DLP 策略可高可信度地检测到这种类型的敏感信息：
+- 正则表达式  `Regex_estonia_eu_passport_number` 查找与模式匹配的内容。 
 - 找到或  `Keywords_eu_passport_number` 找到 `Keywords_estonia_eu_passport_number` 的关键字。 
 - 正则表达式查找 `Regex_eu_passport_date1` DD.MM.YYYY 格式的日期或找到 `Keywords_eu_passport_date` 的关键字
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-- 正则表达式查找  `Regex_estonia_eu_passport_number` 与模式匹配的内容。 
+在 300 个字符的邻近度内，DLP 策略具有中等可信度，可以检测到这种类型的敏感信息：
+- 正则表达式  `Regex_estonia_eu_passport_number` 查找与模式匹配的内容。 
 - 找到或  `Keywords_eu_passport_number` 找到 `Keywords_estonia_eu_passport_number` 的关键字。 
     
 ```xml
@@ -5444,7 +5452,7 @@ eesti kodaniku passi number passinumbrid document number document no dokumendi n
 
 ### <a name="definition"></a>定义
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略可高可信度地检测到这种类型的敏感信息：
 - 函数 Func_eu_debit_card 找到与该模式匹配的内容。
 - 下列至少其中一项为真：
     - 找到 Keyword_eu_debit_card 中的一个关键字。
@@ -5551,7 +5559,7 @@ eesti kodaniku passi number passinumbrid document number document no dokumendi n
 - debitcards 
 - debito automatico 
 - diners club 
-- dinersc一 
+- dinersc 
 - discover 
 - discover card 
 - discover cards 
@@ -5728,7 +5736,7 @@ eesti kodaniku passi number passinumbrid document number document no dokumendi n
 - sicherheitsnummer 
 - speldblok 
 - veiligheid nr 
-- 一个 
+- igheidsaantal 
 - 一idscode 
 - igheidsnummer 
 - verfalldatum 
@@ -5799,7 +5807,7 @@ eesti kodaniku passi number passinumbrid document number document no dokumendi n
 - [意大利](#italy-drivers-license-number)
 - [拉脱维亚](#latvia-drivers-license-number)
 - [Lithuania（立陶宛）](#lithuania-drivers-license-number)
-- [基里明卡](#luxemburg-drivers-license-number)
+- [比塞明卡](#luxemburg-drivers-license-number)
 - [马耳他](#malta-drivers-license-number)
 - [荷兰](#netherlands-drivers-license-number)
 - [波兰](#poland-drivers-license-number) 
@@ -5833,7 +5841,7 @@ eesti kodaniku passi number passinumbrid document number document no dokumendi n
 - [意大利](#italy-fiscal-code)
 - [拉脱维亚](#latvia-personal-code)
 - [Lithuania（立陶宛）](#lithuania-personal-code)
-- [基里明卡](#luxemburg-national-identification-number-natural-persons)
+- [比塞明卡](#luxemburg-national-identification-number-natural-persons)
 - [马耳他](#malta-identity-card-number)
 - [荷兰](#netherlands-citizens-service-bsn-number)
 - [波兰](#poland-national-id-pesel)
@@ -5866,7 +5874,7 @@ eesti kodaniku passi number passinumbrid document number document no dokumendi n
 - [意大利](#italy-passport-number)
 - [拉脱维亚](#latvia-passport-number)
 - [Lithuania（立陶宛）](#lithuania-passport-number)
-- [比塞明卡](#luxemburg-passport-number)
+- [基里明卡](#luxemburg-passport-number)
 - [马耳他](#malta-passport-number)
 - [荷兰](#netherlands-passport-number)
 - [波兰](#poland-passport-number)
@@ -5953,8 +5961,8 @@ eesti kodaniku passi number passinumbrid document number document no dokumendi n
   
 ### <a name="definition"></a>定义
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-- 正则表达式查找  `Regex_finland_eu_driver's_license_number` 与模式匹配的内容。 
+在 300 个字符的邻近度内，DLP 策略具有中等可信度，可以检测到这种类型的敏感信息：
+- 正则表达式  `Regex_finland_eu_driver's_license_number` 查找与模式匹配的内容。 
 - 找到或  `Keywords_eu_driver's_license_number` 找到 `Keywords_finland_eu_driver's_license_number` 的关键字。 
     
 ```xml
@@ -6031,7 +6039,7 @@ eesti kodaniku passi number passinumbrid document number document no dokumendi n
 - driverlicence#
 - driverlicences#
 - driver lic#
-- driver lics#
+- 驱动程序 lics#
 - driver license#
 - driver licenses#
 - driver licences#
@@ -6133,7 +6141,7 @@ eesti kodaniku passi number passinumbrid document number document no dokumendi n
 
 ### <a name="definition"></a>定义
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略具有中等可信度，可以检测到这种类型的敏感信息：
 - 正则表达式Regex_Finland_European_Health_Insurance_Number查找与模式匹配的内容。
 - 找到搜索Keyword_Finland_European_Health_Insurance_Number关键字。
 
@@ -6187,12 +6195,12 @@ eesti kodaniku passi number passinumbrid document number document no dokumendi n
 
 ### <a name="definition"></a>定义
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略可高可信度地检测到这种类型的敏感信息：
 - 函数Func_finnish_national_id查找与模式匹配的内容
 - 找到Keyword_finnish_national_id关键字
 - 校验和传递
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略具有中等可信度，可以检测到这种类型的敏感信息：
 - 函数Func_finnish_national_id查找与模式匹配的内容
 - 校验和传递
 
@@ -6276,7 +6284,7 @@ eesti kodaniku passi number passinumbrid document number document no dokumendi n
 
 ### <a name="definition"></a>定义
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略具有中等可信度，可以检测到这种类型的敏感信息：
 - 正则表达式 Regex_finland_passport_number 找到与该模式匹配的内容。
 - 找到来自Keywords_eu_passport_number_common或Keyword_finland_passport_number关键字。
 
@@ -6334,7 +6342,7 @@ eesti kodaniku passi number passinumbrid document number document no dokumendi n
 
 ### <a name="definition"></a>定义
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略具有中等可信度，可以检测到这种类型的敏感信息：
 - 函数Func_french_drivers_license找到与模式匹配的内容。
 - 找到Keyword_french_drivers_license关键字。
 
@@ -6359,7 +6367,7 @@ eesti kodaniku passi number passinumbrid document number document no dokumendi n
 - driverlicence
 - driverlicences
 - driver lic
-- driver lics
+- 驱动程序 lics
 - driver license
 - driver licenses
 - driver licence
@@ -6409,7 +6417,7 @@ eesti kodaniku passi number passinumbrid document number document no dokumendi n
 - driverlicence#
 - driverlicences#
 - driver lic#
-- driver lics#
+- 驱动程序 lics#
 - driver license#
 - driver licenses#
 - driver licences#
@@ -6507,7 +6515,7 @@ eesti kodaniku passi number passinumbrid document number document no dokumendi n
 
 ### <a name="definition"></a>定义
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略具有中等可信度，可以检测到这种类型的敏感信息：
 - 正则表达式Regex_France_Health_Insurance_Number找到与模式匹配的内容。
 - 找到Keyword_France_Health_Insurance_Number关键字。
 
@@ -6545,7 +6553,7 @@ eesti kodaniku passi number passinumbrid document number document no dokumendi n
 
 ### <a name="definition"></a>定义
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 65% 确信它检测到这种类型的敏感信息：
+DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息时，置信度较低：
 - 正则表达式 Regex_france_cni 找到与该模式匹配的内容。
 - 找到搜索Keywords_france_eu_national_id_card关键字。
 
@@ -6596,7 +6604,7 @@ eesti kodaniku passi number passinumbrid document number document no dokumendi n
 
 ### <a name="definition"></a>定义
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略具有中等可信度，可以检测到这种类型的敏感信息：
 - 函数 Func_fr_passport 找到与该模式匹配的内容。
 - 找到 Keyword_passport 中的一个关键字。
 
@@ -6634,7 +6642,7 @@ eesti kodaniku passi number passinumbrid document number document no dokumendi n
 - Passeportn °
 
       
-## <a name="france-social-security-number-insee-or-equivalent-identification"></a>法国社会保险号 (INSEE) 或等效标识
+## <a name="france-social-security-number-insee-or-equivalent-identification"></a>法国社会保险号码 (INSEE) 或等效标识
 此敏感信息类型实体包含在欧盟社会保险号和等效 ID 敏感信息类型中，并作为独立的敏感信息类型实体提供。
 
 ### <a name="format"></a>Format
@@ -6659,7 +6667,7 @@ eesti kodaniku passi number passinumbrid document number document no dokumendi n
 - 找到 Keyword_fr_insee 中的一个关键字。
 - 校验和通过。
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略可高可信度地检测到这种类型的敏感信息：
 - 该函数Func_french_insee或Func_fr_insee找到与模式匹配的内容。
 - 未找到 Keyword_fr_insee 中的关键字。
 - 校验和通过。
@@ -6738,11 +6746,11 @@ eesti kodaniku passi number passinumbrid document number document no dokumendi n
   
 ### <a name="definition"></a>定义
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略可高可信度地检测到这种类型的敏感信息：
 - 该  `Func_france_eu_tax_file_number` 函数查找与模式匹配的内容。 
 - 找到一个  `Keywords_france_eu_tax_file_number` 关键字。 
     
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略具有中等可信度，可以检测到这种类型的敏感信息：
 - 该  `Func_france_eu_tax_file_number` 函数查找与模式匹配的内容。 
     
 ```xml
@@ -6818,12 +6826,12 @@ eesti kodaniku passi number passinumbrid document number document no dokumendi n
 
 ### <a name="definition"></a>定义
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
-- 此函数Func_france_value_added_tax_number查找与模式匹配的内容。
-- 找到来自Keywords_france_value_added_tax_number关键字。
+在 300 个字符的邻近度内，DLP 策略可高可信度地检测到这种类型的敏感信息：
+- 函数Func_france_value_added_tax_number查找与模式匹配的内容。
+- 找到搜索Keywords_france_value_added_tax_number关键字。
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-- 此函数Func_france_value_added_tax_number查找与模式匹配的内容。
+在 300 个字符的邻近度内，DLP 策略具有中等可信度，可以检测到这种类型的敏感信息：
+- 函数Func_france_value_added_tax_number查找与模式匹配的内容。
 
 ```xml
       <!-- France Value Added Tax Number -->
@@ -6874,7 +6882,7 @@ eesti kodaniku passi number passinumbrid document number document no dokumendi n
 
 ### <a name="definition"></a>定义
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略具有中等可信度，即检测到这种类型的敏感信息：
 - 函数 Func_german_drivers_license 找到与该模式匹配的内容。
 - 找到 Keyword_german_drivers_license_number 中的一个关键字。
 - 校验和通过。
@@ -6930,7 +6938,7 @@ eesti kodaniku passi number passinumbrid document number document no dokumendi n
 - driverlicence
 - driverlicences
 - driver lic
-- driver lics
+- 驱动程序 lics
 - driver license
 - driver licenses
 - driver licence
@@ -6980,7 +6988,7 @@ eesti kodaniku passi number passinumbrid document number document no dokumendi n
 - driverlicence#
 - driverlicences#
 - driver lic#
-- driver lics#
+- 驱动程序 lics#
 - driver license#
 - driver licenses#
 - driver licences#
@@ -7064,7 +7072,7 @@ eesti kodaniku passi number passinumbrid document number document no dokumendi n
 
 ### <a name="definition"></a>定义
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 65% 确信它检测到这种类型的敏感信息：
+DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息时，置信度较低：
 - 正则表达式 Regex_germany_id_card 找到与该模式匹配的内容。
 - 找到 Keyword_germany_id_card 中的一个关键字。
 
@@ -7117,12 +7125,12 @@ eesti kodaniku passi number passinumbrid document number document no dokumendi n
 
 ### <a name="definition"></a>定义
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略可高可信度地检测到这种类型的敏感信息：
 - 函数 Func_german_passport 找到与该模式匹配的内容。
 - 找到或 `Keyword_german_passport` 找到 `Keywords_eu_passport_number_common` 的关键字。
 - 校验和通过。
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略具有中等可信度，可以检测到这种类型的敏感信息：
 - 函数 Func_german_passport_data 找到与该模式匹配的内容。
 - 找到或 `Keyword_german_passport` 找到 `Keywords_eu_passport_number_common` 的关键字。
 - 校验和通过。
@@ -7200,11 +7208,11 @@ eesti kodaniku passi number passinumbrid document number document no dokumendi n
   
 ### <a name="definition"></a>定义
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略可高可信度地检测到这种类型的敏感信息：
 - 该  `Func_germany_eu_tax_file_number` 函数查找与模式匹配的内容。 
 - 找到一个  `Keywords_germany_eu_tax_file_number` 关键字。 
     
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略具有中等可信度，可以检测到这种类型的敏感信息：
 - 该  `Func_germany_eu_tax_file_number` 函数查找与模式匹配的内容。 
     
 ```xml
@@ -7280,11 +7288,11 @@ eesti kodaniku passi number passinumbrid document number document no dokumendi n
 
 ### <a name="definition"></a>定义
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略可高可信度地检测到这种类型的敏感信息：
 - 函数Func_germany_value_added_tax_number查找与模式匹配的内容。
-- 找到搜索Keywords_germany_value_added_tax_number关键字。
+- 找到来自Keywords_germany_value_added_tax_number关键字。
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略具有中等可信度，可以检测到这种类型的敏感信息：
 - 函数Func_germany_value_added_tax_number查找与模式匹配的内容。
 
 ```xml
@@ -7328,7 +7336,7 @@ eesti kodaniku passi number passinumbrid document number document no dokumendi n
   
 ### <a name="definition"></a>定义
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略具有中等可信度，即检测到这种类型的敏感信息：
 - 正则表达式查找  `Regex_greece_eu_driver's_license_number` 与模式匹配的内容。 
 - 找到或  `Keywords_eu_driver's_license_number` 找到 `Keywords_greece_eu_driver's_license_number` 的关键字。 
     
@@ -7356,7 +7364,7 @@ eesti kodaniku passi number passinumbrid document number document no dokumendi n
 - driverlicence
 - driverlicences
 - driver lic
-- driver lics
+- 驱动程序 lics
 - driver license
 - driver licenses
 - driver licence
@@ -7406,7 +7414,7 @@ eesti kodaniku passi number passinumbrid document number document no dokumendi n
 - driverlicence#
 - driverlicences#
 - driver lic#
-- driver lics#
+- 驱动程序 lics#
 - driver license#
 - driver licenses#
 - driver licences#
@@ -7501,11 +7509,11 @@ eesti kodaniku passi number passinumbrid document number document no dokumendi n
 
 ### <a name="definition"></a>定义
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略可高可信度地检测到这种类型的敏感信息：
 - 正则表达式 Regex_greece_id_card 找到与该模式匹配的内容。
 - 找到 Keyword_greece_id_card 中的一个关键字。
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 65% 确信它检测到这种类型的敏感信息：
+DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息时，置信度较低：
 - 正则表达式 Regex_greece_id_card 找到与该模式匹配的内容。
 
 ```xml
@@ -7528,7 +7536,7 @@ eesti kodaniku passi number passinumbrid document number document no dokumendi n
 - 希腊语 id
 - 希腊语国家/区 ID
 - 希腊语个人 ID 卡
-- 希腊语的警察局 ID
+- 希腊语警察局 ID
 - identity card
 - tautotita
 - ταυτότητα
@@ -7551,13 +7559,13 @@ eesti kodaniku passi number passinumbrid document number document no dokumendi n
   
 ### <a name="definition"></a>定义
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
-- 正则表达式查找  `Regex_greece_eu_passport_number` 与模式匹配的内容。 
+在 300 个字符的邻近度内，DLP 策略可高可信度地检测到这种类型的敏感信息：
+- 正则表达式  `Regex_greece_eu_passport_number` 查找与模式匹配的内容。 
 - 找到或  `Keywords_eu_passport_number` 找到 `Keywords_greece_eu_passport_number` 的关键字。 
 - 正则表达式查找 `Regex_greece_eu_passport_date` DD MMM YY 格式的日期 (示例 - 8 月 19) 或找到 `Keywords_greece_eu_passport_date` 关键字
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-- 正则表达式查找  `Regex_greece_eu_passport_number` 与模式匹配的内容。 
+在 300 个字符的邻近度内，DLP 策略具有中等可信度，可以检测到这种类型的敏感信息：
+- 正则表达式  `Regex_greece_eu_passport_number` 查找与模式匹配的内容。 
 - 找到或  `Keywords_eu_passport_number` 找到 `Keywords_greece_eu_passport_number` 的关键字。 
     
 ```xml
@@ -7630,11 +7638,11 @@ eesti kodaniku passi number passinumbrid document number document no dokumendi n
   
 ### <a name="definition"></a>定义
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略可高可信度地检测到这种类型的敏感信息：
 - 该  `Func_greece_eu_ssn` 函数查找与模式匹配的内容。 
 - 找到一个  `Keywords_greece_eu_ssn_or_equivalent` 关键字。 
     
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略具有中等可信度，可以检测到这种类型的敏感信息：
 - 该  `Func_greece_eu_ssn` 函数查找与模式匹配的内容。 
 
 ```xml
@@ -7686,9 +7694,9 @@ eesti kodaniku passi number passinumbrid document number document no dokumendi n
   
 ### <a name="definition"></a>定义
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略具有中等可信度，可以检测到这种类型的敏感信息：
   
-- 正则表达式查找  `Regex_greece_eu_tax_file_number` 与模式匹配的内容。 
+- 正则表达式  `Regex_greece_eu_tax_file_number` 查找与模式匹配的内容。 
 - 找到一个  `Keywords_greece_eu_tax_file_number` 关键字。 
     
 ```xml
@@ -7707,7 +7715,7 @@ eesti kodaniku passi number passinumbrid document number document no dokumendi n
 
 - afm#
 - afm
-- a μ αριθμός
+- a|a αριθμός
 - a
 - tax id
 - tax identification no
@@ -7752,12 +7760,12 @@ eesti kodaniku passi number passinumbrid document number document no dokumendi n
 
 ### <a name="definition"></a>定义
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略具有中等可信度，即检测到这种类型的敏感信息：
 - 函数 Func_hong_kong_id_card 找到与该模式匹配的内容。
 - 找到 Keyword_hong_kong_id_card 中的一个关键字。
 - 校验和通过。
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 65% 确信它检测到这种类型的敏感信息：
+DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息时，置信度较低：
 - 函数 Func_hong_kong_id_card 找到与该模式匹配的内容。
 - 校验和通过。
 
@@ -7836,7 +7844,7 @@ eesti kodaniku passi number passinumbrid document number document no dokumendi n
   
 ### <a name="definition"></a>定义
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略具有中等可信度，即检测到这种类型的敏感信息：
   
 - 正则表达式查找  `Regex_hungary_eu_driver's_license_number` 与模式匹配的内容。 
 - 找到或  `Keywords_eu_driver's_license_number` 找到 `Keywords_hungary_eu_driver's_license_number` 的关键字。 
@@ -7914,7 +7922,7 @@ eesti kodaniku passi number passinumbrid document number document no dokumendi n
 - driverlicence#
 - driverlicences#
 - driver lic#
-- driver lics#
+- 驱动程序 lics#
 - driver license#
 - driver licenses#
 - driver licences#
@@ -8000,7 +8008,7 @@ eesti kodaniku passi number passinumbrid document number document no dokumendi n
 
 11 个数字：
   
-- 对于在 1900 之前 (或具有双重公民身份的公民，也可以对应性别（1-男性、2-)  
+- 1 个数字对应于性别 (1-男性、2- 男性，对于在 1900 之前生活或具有双重公民关系公民的公民，也可以)  
 - 与 YYMMDD (日期对应的六个数字) 
 - 对应于序列号的三个数字
 - 一个检查数字
@@ -8011,12 +8019,12 @@ eesti kodaniku passi number passinumbrid document number document no dokumendi n
   
 ### <a name="definition"></a>定义
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略可高可信度地检测到这种类型的敏感信息：
   
 - 该  `Func_hungary_eu_national_id_card` 函数查找与模式匹配的内容。 
 - 找到一个  `Keywords_hungary_eu_national_id_card` 关键字。 
     
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略具有中等可信度，可以检测到这种类型的敏感信息：
   
 - 该  `Func_hungary_eu_national_id_card` 函数查找与模式匹配的内容。 
     
@@ -8066,12 +8074,12 @@ eesti kodaniku passi number passinumbrid document number document no dokumendi n
   
 ### <a name="definition"></a>定义
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略可高可信度地检测到这种类型的敏感信息：
 - 正则表达式查找  `Regex_hungary_eu_passport_number` 与模式匹配的内容。 
 - 找到或  `Keywords_eu_passport_number` 找到 `Keywords_hungary_eu_passport_number` 的关键字。 
-- 正则表达式查找 `Regex_hungary_eu_passport_date` DD MMM/MMM YY (格式的日期 示例 - 01 MÁR/MAR 12) 或找到 `Keywords_eu_passport_date` 关键字
+- 正则表达式查找格式 `Regex_hungary_eu_passport_date` 为 DD MMM/MMM YY (示例 - 01 MÁR/MAR 12) 或找到 `Keywords_eu_passport_date` 的关键字
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略具有中等可信度，可以检测到这种类型的敏感信息：
 - 正则表达式查找  `Regex_hungary_eu_passport_number` 与模式匹配的内容。 
 - 找到或  `Keywords_eu_passport_number` 找到 `Keywords_hungary_eu_passport_number` 的关键字。 
     
@@ -8136,12 +8144,12 @@ eesti kodaniku passi number passinumbrid document number document no dokumendi n
   
 ### <a name="definition"></a>定义
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略可高可信度地检测到这种类型的敏感信息：
   
 - 该  `Func_hungary_eu_ssn_or_equivalent` 函数查找与模式匹配的内容。 
 - 找到一个  `Keywords_hungary_eu_ssn_or_equivalent` 关键字。 
     
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略具有中等可信度，可以检测到这种类型的敏感信息：
   
 - 该  `Func_hungary_eu_ssn_or_equivalent` 函数查找与模式匹配的内容。 
     
@@ -8207,12 +8215,12 @@ eesti kodaniku passi number passinumbrid document number document no dokumendi n
   
 ### <a name="definition"></a>定义
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略可高可信度地检测到这种类型的敏感信息：
   
 - 该  `Func_hungary_eu_tax_file_number` 函数查找与模式匹配的内容。 
 - 找到一个  `Keywords_hungary_eu_tax_file_number` 关键字。 
     
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略具有中等可信度，可以检测到这种类型的敏感信息：
   
 - 该  `Func_hungary_eu_tax_file_number` 函数查找与模式匹配的内容。 
     
@@ -8279,7 +8287,7 @@ eesti kodaniku passi number passinumbrid document number document no dokumendi n
 10 个字符字母数字模式：
 
 - 2 个字母 - HU 或 hu
-- 可选空间
+- 可选空格
 - 8 个数字
 
 ### <a name="checksum"></a>校验和
@@ -8288,12 +8296,12 @@ eesti kodaniku passi number passinumbrid document number document no dokumendi n
 
 ### <a name="definition"></a>定义
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略可高可信度地检测到这种类型的敏感信息：
 
 - 该函数Func_hungarian_value_added_tax_number查找与模式匹配的内容。
 - 找到来自Keywords_hungarian_value_added_tax_number关键字。
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略具有中等可信度，可以检测到这种类型的敏感信息：
 
 - 该函数Func_hungarian_value_added_tax_number查找与模式匹配的内容。
 
@@ -8348,11 +8356,11 @@ eesti kodaniku passi number passinumbrid document number document no dokumendi n
 
 ### <a name="definition"></a>定义
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略可高可信度地检测到这种类型的敏感信息：
 - 正则表达式 Regex_india_permanent_account_number 找到与该模式匹配的内容。
 - 找到 Keyword_india_permanent_account_number 中的一个关键字。
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 65% 确信它检测到这种类型的敏感信息：
+DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息时，置信度较低：
 - 正则表达式 Regex_india_permanent_account_number 找到与该模式匹配的内容。
 
 
@@ -8400,12 +8408,12 @@ eesti kodaniku passi number passinumbrid document number document no dokumendi n
 
 ### <a name="definition"></a>定义
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略可高可信度地检测到这种类型的敏感信息：
 - 函数 Func_india_aadhaar 找到与该模式匹配的内容。
 - 找到 Keyword_india_aadhar 中的一个关键字。
 - 校验和通过。
 - 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略具有中等可信度，可以检测到这种类型的敏感信息：
 
 - 函数 Func_india_aadhaar 找到与该模式匹配的内容。
 - 校验和通过。
@@ -8456,7 +8464,7 @@ eesti kodaniku passi number passinumbrid document number document no dokumendi n
 
 ### <a name="definition"></a>定义
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略可高可信度地检测到这种类型的敏感信息：
 
 - 正则表达式 Regex_indonesia_id_card 找到与该模式匹配的内容。
 - 找到 Keyword_indonesia_id_card 中的一个关键字。
@@ -8503,7 +8511,7 @@ ad, ae, al, at, az, ba, be, bg, bh, ch, cr, cy, cz, de, dk, do, ee, es, fi, fo, 
 
 ### <a name="definition"></a>定义
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略可高可信度地检测到这种类型的敏感信息：
 
 - 函数 Func_iban 找到与该模式匹配的内容。
 - 校验和通过。
@@ -8537,11 +8545,11 @@ Dictionary
 
 ### <a name="definition"></a>定义
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略可高可信度地检测到这种类型的敏感信息：
 - 找到来自Dictionary_icd_10_updated的关键字。
 - 找到来自Dictionary_icd_10_codes关键字。
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略具有中等可信度，即检测到这种类型的敏感信息：
 - 找到更新Dictionary_icd_10_关键字。
 
 ```xml
@@ -8579,11 +8587,11 @@ Dictionary
 
 ### <a name="definition"></a>定义
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略可高可信度地检测到这种类型的敏感信息：
 - 找到搜索Dictionary_icd_9_updated关键字。
 - 找到搜索Dictionary_icd_9_codes关键字。
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略具有中等可信度，可以检测到这种类型的敏感信息：
 - 找到搜索Dictionary_icd_9_updated关键字。
 
 ```xml
@@ -8602,7 +8610,7 @@ Dictionary
 
 来自 Dictionary_icd_9_updated 关键字词典的任何术语，该词典基于国际动物分类、第九次修订、修改 ([ICD-9-CM) 。 ](https://go.microsoft.com/fwlink/?linkid=852605) 此类型仅查找该术语，而不是保险代码。
 
-来自 Dictionary_icd_9_codes 关键字词典的任何术语，该词典基于国际分类（第九次修订、修改 ([ICD-9-CM ](https://go.microsoft.com/fwlink/?linkid=852605)) ）。 此类型仅查找保险代码，而不是说明。
+来自 Dictionary_icd_9_codes 关键字词典的任何术语，该词典基于国际动物分类、第九次修订、修改 ([ICD-9-CM) 。 ](https://go.microsoft.com/fwlink/?linkid=852605) 此类型仅查找保险代码，而不是说明。
 
 ## <a name="ip-address"></a>IP 地址
 
@@ -8622,7 +8630,7 @@ Dictionary
 
 ### <a name="definition"></a>定义
 
-对于 IPv6，在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
+对于 IPv6，如果在 300 个字符的邻近度内，DLP 策略会高可信度地检测到这种类型的敏感信息：
 - 正则表达式 Regex_ipv6_address 找到与该模式匹配的内容。
 - 未找到 Keyword_ipaddress 中的关键字。
 
@@ -8687,9 +8695,9 @@ Dictionary
   
 ### <a name="definition"></a>定义
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略具有中等可信度，可以检测到这种类型的敏感信息：
   
-- 正则表达式查找  `Regex_ireland_eu_driver's_license_number` 与模式匹配的内容。 
+- 正则表达式  `Regex_ireland_eu_driver's_license_number` 查找与模式匹配的内容。 
 - 找到或  `Keywords_eu_driver's_license_number` 找到 `Keywords_ireland_eu_driver's_license_number` 的关键字。 
     
 ```xml
@@ -8716,7 +8724,7 @@ Dictionary
 - driverlicence
 - driverlicences
 - driver lic
-- driver lics
+- 驱动程序 lics
 - driver license
 - driver licenses
 - driver licence
@@ -8766,7 +8774,7 @@ Dictionary
 - driverlicence#
 - driverlicences#
 - driver lic#
-- driver lics#
+- 驱动程序 lics#
 - driver license#
 - driver licenses#
 - driver licences#
@@ -8853,12 +8861,12 @@ Dictionary
   
 ### <a name="definition"></a>定义
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
-- 正则表达式查找  `Regex_ireland_eu_passport_number` 与模式匹配的内容。 
+在 300 个字符的邻近度内，DLP 策略可高可信度地检测到这种类型的敏感信息：
+- 正则表达式  `Regex_ireland_eu_passport_number` 查找与模式匹配的内容。 
 - 找到或  `Keywords_eu_passport_number` 找到 `Keywords_ireland_eu_passport_number` 的关键字。 
 - 正则表达式查找格式 `Regex_ireland_eu_passport_date` 为 DD MMM/MMM YYYY (示例 - 01 BEA/MAY 1988) 或找到的 `Keywords_eu_passport_date` 关键字
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略具有中等可信度，即检测到这种类型的敏感信息：
 - 正则表达式查找  `Regex_ireland_eu_passport_number` 与模式匹配的内容。 
 - 找到或  `Keywords_eu_passport_number` 找到 `Keywords_ireland_eu_passport_number` 的关键字。
     
@@ -8944,12 +8952,12 @@ Dictionary
 
 ### <a name="definition"></a>定义
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略可高可信度地检测到这种类型的敏感信息：
 - 函数 Func_ireland_pps 找到与该模式匹配的内容。
-- 找到搜索Keywords_ireland_eu_national_id_card关键字。
+- 找到来自Keywords_ireland_eu_national_id_card关键字。
 - 校验和通过。
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 65% 确信它检测到这种类型的敏感信息：
+DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息时，置信度较低：
 - 函数 Func_ireland_pps 找到与该模式匹配的内容。
 - 校验和通过。
 
@@ -8984,7 +8992,7 @@ Dictionary
 - ppsno#
 - ppsno
 - psp
-- 公共服务 no
+- 公共服务否
 - publicserviceno#
 - publicserviceno
 - 收入和社会保险号码
@@ -9038,7 +9046,7 @@ Dictionary
 
 ### <a name="definition"></a>定义
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略具有中等可信度，可以检测到这种类型的敏感信息：
 - 正则表达式 Regex_israel_bank_account_number 找到与该模式匹配的内容。
 - 找到 Keyword_israel_bank_account_number 中的一个关键字。
 
@@ -9079,7 +9087,7 @@ Dictionary
 
 ### <a name="definition"></a>定义
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略具有中等可信度，可以检测到这种类型的敏感信息：
 - 函数 Func_israeli_national_id_number 找到与该模式匹配的内容。
 - 找到 Keyword_Israel_National_ID 中的一个关键字。
 - 校验和通过。
@@ -9138,7 +9146,7 @@ Dictionary
 
 ### <a name="definition"></a>定义
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略具有中等可信度，可以检测到这种类型的敏感信息：
 - 正则表达式 Regex_italy_drivers_license_number 找到与该模式匹配的内容。
 - 找到 Keyword_italy_drivers_license_number 中的一个关键字。
 
@@ -9182,7 +9190,7 @@ Dictionary
 - 三个字母，对应于系列名称中的前三个辅音
 - 三个字母，分别对应于名字中的第一个、第三个和第四个辅音
 - 两个数字，对应于出生日期的最后一个数字
-- 一个字母，对应于出生日期月份中的字母 - 字母按字母顺序使用，但只有字母 A 到 E、H、L、M、P、R 到 T (因此，一月是 A，十月是 R) 
+- 一个字母，对应于出生日期月份中的字母 - 字母按字母顺序使用，但只有字母 A 到 E、H、L、M、P、R 到 T (因此，January 是 A，十月是 R) 
 - 与出生日期对应的两位数 -为了区分性别，将 40 添加到性别的出生日期
 - 四个数字，对应于某人所 (的国家/地区代码所特有的地区代码，用于) 
 - 一个奇偶校验数字
@@ -9193,11 +9201,11 @@ Dictionary
   
 ### <a name="definition"></a>定义
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略可高可信度地检测到这种类型的敏感信息：
 - 该  `Func_italy_eu_national_id_card` 函数查找与模式匹配的内容。 
 - 找到一个  `Keywords_italy_eu_national_id_card` 关键字。 
     
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略具有中等可信度，可以检测到这种类型的敏感信息：
 - 该  `Func_italy_eu_national_id_card` 函数查找与模式匹配的内容。 
     
 ```xml
@@ -9255,7 +9263,7 @@ Dictionary
 
 ### <a name="format"></a>Format
 
-两个字母或数字后跟七个数字，无空格或分隔符
+两个字母或数字后跟七个数字，没有空格或分隔符
   
 ### <a name="pattern"></a>模式
 
@@ -9270,13 +9278,13 @@ Dictionary
   
 ### <a name="definition"></a>定义
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
-- 正则表达式查找  `Regex_italy_eu_passport_number` 与模式匹配的内容。 
+在 300 个字符的邻近度内，DLP 策略可高可信度地检测到这种类型的敏感信息：
+- 正则表达式  `Regex_italy_eu_passport_number` 查找与模式匹配的内容。 
 - 找到或  `Keywords_eu_passport_number` 找到 `Keywords_italy_eu_passport_number` 的关键字。 
 - 正则表达式查找格式 `Regex_italy_eu_passport_date` 为 DD MMM/MMM YYYY (示例 - 01 GEN/JAN 1988) 或找到的 `Keywords_eu_passport_date` 关键字
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-- 正则表达式查找  `Regex_italy_eu_passport_number` 与模式匹配的内容。 
+在 300 个字符的邻近度内，DLP 策略具有中等可信度，可以检测到这种类型的敏感信息：
+- 正则表达式  `Regex_italy_eu_passport_number` 查找与模式匹配的内容。 
 - 找到或  `Keywords_eu_passport_number` 找到 `Keywords_italy_eu_passport_number` 的关键字。 
     
 ```xml
@@ -9361,11 +9369,11 @@ Dictionary
 
 ### <a name="definition"></a>定义
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略可高可信度地检测到这种类型的敏感信息：
 - 该函数Func_italy_value_added_tax_number查找与模式匹配的内容。
 - 找到来自Keywords_italy_value_added_tax_number的关键字。
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略具有中等可信度，可以检测到这种类型的敏感信息：
 - 该函数Func_italy_value_added_tax_number查找与模式匹配的内容。
 
 ```xml
@@ -9413,14 +9421,14 @@ bank account number：
 
 ### <a name="definition"></a>定义
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略可高可信度地检测到这种类型的敏感信息：
 - 函数 Func_jp_bank_account 找到与该模式匹配的内容。
 - 找到 Keyword_jp_bank_account 中的一个关键字。
 - 下列其中一项为真：
 - 函数 Func_jp_bank_account_branch_code 找到与该模式匹配的内容。
 - 找到 Keyword_jp_bank_branch_code 中的一个关键字。
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略具有中等可信度，可以检测到这种类型的敏感信息：
 - 函数 Func_jp_bank_account 找到与该模式匹配的内容。
 - 找到 Keyword_jp_bank_account 中的一个关键字。
 
@@ -9511,7 +9519,7 @@ bank account number：
 
 ### <a name="definition"></a>定义
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略具有中等可信度，可以检测到这种类型的敏感信息：
 - 函数 Func_jp_drivers_license_number 找到与该模式匹配的内容。
 - 找到 Keyword_jp_drivers_license_number 中的一个关键字。
 
@@ -9591,11 +9599,11 @@ bank account number：
 
 ### <a name="definition"></a>定义
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略可高可信度地检测到这种类型的敏感信息：
 - 该函数Func_japanese_my_number_corporate查找与模式匹配的内容。
 - 找到来自Keywords_japanese_my_number_corporate关键字。
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略具有中等可信度，可以检测到这种类型的敏感信息：
 - 该函数Func_japanese_my_number_corporate查找与模式匹配的内容。
 
 ```xml
@@ -9615,7 +9623,7 @@ bank account number：
 
 #### <a name="keyword_japan_my_number_corporate"></a>Keyword_japan_my_number_corporate
 
-- 公司号码
+- 公司编号
 - マイナンバー
 - 共通番号
 - マイナンバーカード
@@ -9655,11 +9663,11 @@ bank account number：
 
 ### <a name="definition"></a>定义
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略可高可信度地检测到这种类型的敏感信息：
 - 函数Func_japanese_my_number_personal查找与模式匹配的内容。
 - 找到搜索Keywords_japanese_my_number_personal关键字。
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 65% 确信它检测到这种类型的敏感信息：
+DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息时，置信度较低：
 - 函数Func_japanese_my_number_personal查找与模式匹配的内容。
 
 ```xml
@@ -9699,7 +9707,7 @@ bank account number：
 
 ### <a name="pattern"></a>模式
 
-两个字母 (区分大小写) 后跟七个数字
+两个字母 (不区分大小写) 后跟七个数字
 
 ### <a name="checksum"></a>校验和
 
@@ -9707,7 +9715,7 @@ bank account number：
 
 ### <a name="definition"></a>定义
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略具有中等可信度，可以检测到这种类型的敏感信息：
 - 函数 Func_jp_passport 找到与该模式匹配的内容。
 - 找到 Keyword_jp_passport 中的一个关键字。
 
@@ -9732,11 +9740,11 @@ bank account number：
 - パスポート
 - パスポート番号
 - パスポートナンバー
-- パスポート#
+- パスポート＃
 - パスポート#
 - パスポNo。
 - 旅券番号
-- 旅券番号#
+- 旅券番号＃
 - 旅券番号♯
 - 旅券ナンバー
 
@@ -9760,9 +9768,9 @@ bank account number：
 
 ### <a name="definition"></a>定义
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略具有中等可信度，可以检测到这种类型的敏感信息：
 - 正则表达式Regex_jp_residence_card_number查找与模式匹配的内容。
-- 找到搜索Keyword_jp_residence_card_number关键字。
+- 找到来自Keyword_jp_residence_card_number关键字。
 
 ```xml
 <!--Japan Residence Card Number-->
@@ -9780,7 +9788,7 @@ bank account number：
 
 - 住宅卡号
 - 住宅卡否
-- 居住地卡#
+- 居住地卡片#
 - 在留カード番号
 - 在留カード
 - 在留番号
@@ -9801,7 +9809,7 @@ bank account number：
 
 ### <a name="definition"></a>定义
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略具有中等可信度，可以检测到这种类型的敏感信息：
 - 函数 Func_jp_resident_registration_number 找到与该模式匹配的内容。
 - 找到 Keyword_jp_resident_registration_number 中的一个关键字。
 
@@ -9851,11 +9859,11 @@ bank account number：
 
 ### <a name="definition"></a>定义
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略可高可信度地检测到这种类型的敏感信息：
 - 函数 Func_jp_sin 找到与该模式匹配的内容。
 - 找到 Keyword_jp_sin 中的一个关键字。
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略具有中等可信度，可以检测到这种类型的敏感信息：
 - 函数 Func_jp_sin_pre_1997 找到与该模式匹配的内容。
 - 找到 Keyword_jp_sin 中的一个关键字。
 
@@ -9916,8 +9924,8 @@ bank account number：
   
 ### <a name="definition"></a>定义
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-- 正则表达式查找  `Regex_latvia_eu_driver's_license_number` 与模式匹配的内容。 
+在 300 个字符的邻近度内，DLP 策略具有中等可信度，可以检测到这种类型的敏感信息：
+- 正则表达式  `Regex_latvia_eu_driver's_license_number` 查找与模式匹配的内容。 
 - 找到或  `Keywords_eu_driver's_license_number` 找到 `Keywords_latvia_eu_driver's_license_number` 的关键字。 
     
 ```xml
@@ -9944,7 +9952,7 @@ bank account number：
 - driverlicence
 - driverlicences
 - driver lic
-- driver lics
+- 驱动程序 lics
 - driver license
 - driver licenses
 - driver licence
@@ -9994,7 +10002,7 @@ bank account number：
 - driverlicence#
 - driverlicences#
 - driver lic#
-- driver lics#
+- 驱动程序 lics#
 - driver license#
 - driver licenses#
 - driver licences#
@@ -10059,7 +10067,7 @@ bank account number：
 
 #### <a name="keywords_latvia_eu_drivers_license_number"></a>Keywords_latvia_eu_driver s_license_number
 
-- autovadplit-ja apliecpliba
+- autovadplitplija apliecpliba
 - autovadplitplija apliecplibas
 - vadplitplija apliecpliba
 
@@ -10093,11 +10101,11 @@ bank account number：
   
 ### <a name="definition"></a>定义
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略可高可信度地检测到这种类型的敏感信息：
 - 函数  `Func_latvia_eu_national_id_card` 或正则表达式 `Regex_latvia_eu_national_id_card_new_format` 查找与模式匹配的内容。 
 - 找到一个  `Keywords_latvia_eu_national_id_card` 关键字。 
     
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略具有中等可信度，即检测到这种类型的敏感信息：
 - 函数  `Func_latvia_eu_national_id_card` 或正则表达式 `Regex_latvia_eu_national_id_card_new_format` 查找与模式匹配的内容。 
     
 ```xml
@@ -10213,13 +10221,13 @@ bank account number：
   
 ### <a name="definition"></a>定义
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略可高可信度地检测到这种类型的敏感信息：
 - 正则表达式查找  `Regex_latvia_eu_passport_number` 与模式匹配的内容。 
 - 找到或  `Keywords_eu_passport_number` 找到 `Keywords_latvia_eu_passport_number` 的关键字。 
 - 正则表达式查找 `Regex_eu_passport_date1` DD.MM.YYYY 格式的日期或找到 `Keywords_eu_passport_date` 的关键字
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-- 正则表达式查找  `Regex_latvia_eu_passport_number` 与模式匹配的内容。 
+在 300 个字符的邻近度内，DLP 策略具有中等可信度，即检测到这种类型的敏感信息：
+- 正则表达式  `Regex_latvia_eu_passport_number` 查找与模式匹配的内容。 
 - 找到或  `Keywords_eu_passport_number` 找到 `Keywords_latvia_eu_passport_number` 的关键字。 
     
 ```xml
@@ -10292,8 +10300,8 @@ bank account number：
   
 ### <a name="definition"></a>定义
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-- 正则表达式查找  `Regex_lithuania_eu_driver's_license_number` 与模式匹配的内容。 
+在 300 个字符的邻近度内，DLP 策略具有中等可信度，即检测到这种类型的敏感信息：
+- 正则表达式  `Regex_lithuania_eu_driver's_license_number` 查找与模式匹配的内容。 
 - 找到或  `Keywords_eu_driver's_license_number` 找到 `Keywords_lithuania_eu_driver's_license_number` 的关键字。 
     
 ```xml
@@ -10320,7 +10328,7 @@ bank account number：
 - driverlicence
 - driverlicences
 - driver lic
-- driver lics
+- 驱动程序 lics
 - driver license
 - driver licenses
 - driver licence
@@ -10466,11 +10474,11 @@ bank account number：
   
 ### <a name="definition"></a>定义
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略可高可信度地检测到这种类型的敏感信息：
 - 该  `Func_lithuania_eu_tax_file_number` 函数查找与模式匹配的内容。 
 - 找到一个  `Keywords_lithuania_eu_tax_file_number` 关键字。 
     
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略具有中等可信度，即检测到这种类型的敏感信息：
 - 该  `Func_lithuania_eu_tax_file_number` 函数查找与模式匹配的内容。 
     
 ```xml
@@ -10543,13 +10551,13 @@ bank account number：
   
 ### <a name="definition"></a>定义
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略可高可信度地检测到这种类型的敏感信息：
 - 正则表达式查找  `Regex_lithuania_eu_passport_number` 与模式匹配的内容。 
 - 找到或  `Keywords_eu_passport_number` 找到 `Keywords_lithuania_eu_passport_number` 的关键字。 
 - 正则表达式查找 `Regex_eu_passport_date3` DD MM YYYY 格式的日期或找到 `Keywords_eu_passport_date` 的关键字
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-- 正则表达式查找  `Regex_lithuania_eu_passport_number` 与模式匹配的内容。 
+在 300 个字符的邻近度内，DLP 策略具有中等可信度，可以检测到这种类型的敏感信息：
+- 正则表达式  `Regex_lithuania_eu_passport_number` 查找与模式匹配的内容。 
 - 找到或  `Keywords_eu_passport_number` 找到 `Keywords_lithuania_eu_passport_number` 的关键字。 
     
 ```xml
@@ -10619,8 +10627,8 @@ bank account number：
   
 ### <a name="definition"></a>定义
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-- 正则表达式查找  `Regex_luxemburg_eu_driver's_license_number` 与模式匹配的内容。 
+在 300 个字符的邻近度内，DLP 策略具有中等可信度，可以检测到这种类型的敏感信息：
+- 正则表达式  `Regex_luxemburg_eu_driver's_license_number` 查找与模式匹配的内容。 
 - 找到或  `Keywords_eu_driver's_license_number` 找到 `Keywords_luxemburg_eu_driver's_license_number` 的关键字。 
     
 ```xml
@@ -10697,7 +10705,7 @@ bank account number：
 - driverlicence#
 - driverlicences#
 - driver lic#
-- driver lics#
+- 驱动程序 lics#
 - driver license#
 - driver licenses#
 - driver licences#
@@ -10765,7 +10773,7 @@ bank account number：
 - fahrerlaubnis
 - Fhrerschhrin
 
-## <a name="luxemburg-national-identification-number-natural-persons"></a> () 
+## <a name="luxemburg-national-identification-number-natural-persons"></a> (布尔自然人的) 
 此敏感信息类型仅适用于：
 - 数据丢失防护策略
 - 通信合规性策略
@@ -10790,11 +10798,11 @@ bank account number：
   
 ### <a name="definition"></a>定义
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略可高可信度地检测到这种类型的敏感信息：
 - 该  `Func_luxemburg_eu_tax_file_number` 函数查找与模式匹配的内容。 
 - 找到一个  `Keywords_luxemburg_eu_national_id_card` 关键字。 
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略具有中等可信度，可以检测到这种类型的敏感信息：
 - 该  `Func_luxemburg_eu_tax_file_number` 函数查找与模式匹配的内容。 
 
 
@@ -10840,7 +10848,7 @@ bank account number：
 - 唯一标识
 - uniqueidkey#
 
-## <a name="luxemburg-passport-number"></a>都鲁比卡护照号码
+## <a name="luxemburg-passport-number"></a>比塞明卡护照号码
 
 ### <a name="format"></a>Format
 
@@ -10856,12 +10864,12 @@ bank account number：
   
 ### <a name="definition"></a>定义
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略可高可信度地检测到这种类型的敏感信息：
 - 正则表达式查找  `Regex_luxemburg_eu_passport_number` 与模式匹配的内容。 
 - 找到或  `Keywords_eu_passport_number` 找到 `Keywords_luxemburg_eu_passport_number` 的关键字。 
 - 正则表达式查找 `Regex_eu_passport_date3` DD MM YYYY 格式的日期或找到 `Keywords_eu_passport_date` 的关键字
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略具有中等可信度，即检测到这种类型的敏感信息：
 - 正则表达式查找  `Regex_luxemburg_eu_passport_number` 与模式匹配的内容。 
 - 找到或  `Keywords_eu_passport_number` 找到 `Keywords_luxemburg_eu_passport_number` 的关键字。 
     
@@ -10906,7 +10914,7 @@ bank account number：
 
 #### <a name="keywords_luxemburg_eu_passport_number"></a>Keywords_luxemburg_eu_passport_number
 - aus一snummer
-- 卢森堡通道
+- 卢森堡密码
 - 卢森堡通道
 - 卢森堡护照
 - no de passeport
@@ -10952,11 +10960,11 @@ bank account number：
   
 ### <a name="definition"></a>定义
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略可高可信度地检测到这种类型的敏感信息：
 - 该  `Func_luxemburg_eu_tax_file_number_non_natural` 函数查找与模式匹配的内容。 
 - 找到一个  `Keywords_luxemburg_eu_tax_file_number` 关键字。 
     
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略具有中等可信度，可以检测到这种类型的敏感信息：
 - 该  `Func_luxemburg_eu_tax_file_number_non_natural` 函数查找与模式匹配的内容。 
     
 ```xml
@@ -11041,7 +11049,7 @@ bank account number：
 
 ### <a name="definition"></a>定义
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略可高可信度地检测到这种类型的敏感信息：
 - 正则表达式 Regex_malaysia_id_card_number 找到与该模式匹配的内容。
 - 找到 Keyword_malaysia_id_card_number 中的一个关键字。
 
@@ -11107,8 +11115,8 @@ bank account number：
   
 ### <a name="definition"></a>定义
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-- 正则表达式查找  `Regex_malta_eu_driver's_license_number` 与模式匹配的内容。 
+在 300 个字符的邻近度内，DLP 策略具有中等可信度，可以检测到这种类型的敏感信息：
+- 正则表达式  `Regex_malta_eu_driver's_license_number` 查找与模式匹配的内容。 
 - 找到或  `Keywords_eu_driver's_license_number` 找到 `Keywords_malta_eu_driver's_license_number` 的关键字。 
     
 ```xml
@@ -11135,7 +11143,7 @@ bank account number：
 - driverlicence
 - driverlicences
 - driver lic
-- driver lics
+- 驱动程序 lics
 - driver license
 - driver licenses
 - driver licence
@@ -11185,7 +11193,7 @@ bank account number：
 - driverlicence#
 - driverlicences#
 - driver lic#
-- driver lics#
+- 驱动程序 lics#
 - driver license#
 - driver licenses#
 - driver licences#
@@ -11279,11 +11287,11 @@ bank account number：
   
 ### <a name="definition"></a>定义
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-- 正则表达式查找  `Regex_malta_eu_national_id_card` 与模式匹配的内容。 
+在 300 个字符的邻近度内，DLP 策略具有中等可信度，即检测到这种类型的敏感信息：
+- 正则表达式  `Regex_malta_eu_national_id_card` 查找与模式匹配的内容。 
 - 找到一个  `Keywords_malta_eu_national_id_card` 关键字。 
     
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 65% 确信它检测到这种类型的敏感信息：
+DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息时，置信度较低：
 - 正则表达式查找  `Regex_malta_eu_national_id_card` 与模式匹配的内容。 
     
 ```xml
@@ -11335,13 +11343,13 @@ bank account number：
   
 ### <a name="definition"></a>定义
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
-- 正则表达式查找  `Regex_malta_eu_passport_number` 与模式匹配的内容。 
+在 300 个字符的邻近度内，DLP 策略可高可信度地检测到这种类型的敏感信息：
+- 正则表达式  `Regex_malta_eu_passport_number` 查找与模式匹配的内容。 
 - 找到或  `Keywords_eu_passport_number` 找到 `Keywords_malta_eu_passport_number` 的关键字。 
 - 找到一个 `Keywords_eu_passport_date` 关键字
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-- 正则表达式查找  `Regex_malta_eu_passport_number` 与模式匹配的内容。 
+在 300 个字符的邻近度内，DLP 策略具有中等可信度，可以检测到这种类型的敏感信息：
+- 正则表达式  `Regex_malta_eu_passport_number` 查找与模式匹配的内容。 
 - 找到或  `Keywords_eu_passport_number` 找到 `Keywords_malta_eu_passport_number` 的关键字。 
     
 ```xml
@@ -11409,7 +11417,7 @@ bank account number：
 - 七个数字 
 - 一个字母 (不区分大小写) 
     
-非马耳他语公民和马耳他实体：9 个数字
+非马耳他语和马耳他实体：9 个数字
   
 - 九个数字 
     
@@ -11419,11 +11427,11 @@ bank account number：
   
 ### <a name="definition"></a>定义
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略具有中等可信度，可以检测到这种类型的敏感信息：
 - 正则表达式或  `Regex_malta_eu_tax_file_number` `Regex_malta_eu_tax_file_number_non_maltese_national` 查找与模式匹配的内容。 
 - 找到一个  `Keywords_malta_eu_tax_file_number` 关键字。 
     
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 65% 确信它检测到这种类型的敏感信息：
+DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息时，置信度较低：
 - 正则表达式或  `Regex_malta_eu_tax_file_number` `Regex_malta_eu_tax_file_number_non_maltese_national` 查找与模式匹配的内容。 
     
 ```xml
@@ -11452,7 +11460,7 @@ bank account number：
 
 - citizen service number
 - id tat-taxxa
-- identifjet numru tal-jetjett
+- identifident numru tal-jett
 - kodiċi数字个人
 - numru ta 'identifikazzjoni personali
 - numru ta 'identifikazzjoni tat-taxxa
@@ -11481,7 +11489,7 @@ bank account number：
 - 唯一标识号
 - uniqueidentityno#
 
-## <a name="netherlands-citizens-service-bsn-number"></a>荷兰公民的服务 (BSN) 号码
+## <a name="netherlands-citizens-service-bsn-number"></a>荷兰公民服务号码 (BSN) 号码
 
 ### <a name="format"></a>Format
 
@@ -11489,7 +11497,7 @@ bank account number：
 
 ### <a name="pattern"></a>模式
 
-8-9 个数字：
+八九个数字：
 - 三个数字 
 - 可选 (空格)  
 - 三个数字 
@@ -11502,7 +11510,7 @@ bank account number：
 
 ### <a name="definition"></a>定义
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略可高可信度地检测到这种类型的敏感信息：
 - 函数 Func_netherlands_bsn 找到与该模式匹配的内容。
 - 找到 Keyword_netherlands_bsn 中的一个关键字。
 - 校验和通过。
@@ -11559,7 +11567,7 @@ bank account number：
   
 ### <a name="definition"></a>定义
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略具有中等可信度，即检测到这种类型的敏感信息：
 - 正则表达式查找  `Regex_netherlands_eu_driver's_license_number` 与模式匹配的内容。 
 - 找到或  `Keywords_eu_driver's_license_number` 找到 `Keywords_netherlands_eu_driver's_license_number` 的关键字。 
     
@@ -11587,7 +11595,7 @@ bank account number：
 - driverlicence
 - driverlicences
 - driver lic
-- driver lics
+- 驱动程序 lics
 - driver license
 - driver licenses
 - driver licence
@@ -11637,7 +11645,7 @@ bank account number：
 - driverlicence#
 - driverlicences#
 - driver lic#
-- driver lics#
+- 驱动程序 lics#
 - driver license#
 - driver licenses#
 - driver licences#
@@ -11726,13 +11734,13 @@ bank account number：
   
 ### <a name="definition"></a>定义
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略可高可信度地检测到这种类型的敏感信息：
 - 正则表达式查找  `Regex_netherlands_eu_passport_number` 与模式匹配的内容。 
 - 找到或  `Keywords_eu_passport_number` 找到 `Keywords_netherlands_eu_passport_number` 的关键字。 
-- 正则表达式查找格式 `Regex_netherlands_eu_passport_date` 为 DD MMM/MMM YYYY (示例 - 26 MAA/MAR 2012) 
+- 正则表达式查找格式 `Regex_netherlands_eu_passport_date` 为 DD MMM/MMM YYYYY (示例 - 26 MAA/MAR 2012) 
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-- 正则表达式查找  `Regex_netherlands_eu_passport_number` 与模式匹配的内容。 
+在 300 个字符的邻近度内，DLP 策略具有中等可信度，可以检测到这种类型的敏感信息：
+- 正则表达式  `Regex_netherlands_eu_passport_number` 查找与模式匹配的内容。 
 - 找到或  `Keywords_eu_passport_number` 找到 `Keywords_netherlands_eu_passport_number` 的关键字。 
     
 ```xml
@@ -11800,11 +11808,11 @@ bank account number：
   
 ### <a name="definition"></a>定义
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略可高可信度地检测到这种类型的敏感信息：
 - 该  `Func_netherlands_eu_tax_file_number` 函数查找与模式匹配的内容。 
 - 找到一个  `Keywords_netherlands_eu_tax_file_number` 关键字。 
     
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 65% 确信它检测到这种类型的敏感信息：
+DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息时，置信度较低：
 - 该  `Func_netherlands_eu_tax_file_number` 函数查找与模式匹配的内容。 
     
 ```xml
@@ -11891,11 +11899,11 @@ bank account number：
 
 ### <a name="definition"></a>定义
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略可高可信度地检测到这种类型的敏感信息：
 - 该函数Func_netherlands_value_added_tax_number查找与模式匹配的内容。
-- 找到来自Keywords_netherlands_value_added_tax_number的关键字。
+- 找到来自Keywords_netherlands_value_added_tax_number关键字。
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略具有中等可信度，可以检测到这种类型的敏感信息：
 - 该函数Func_netherlands_value_added_tax_number查找与模式匹配的内容。
 
 ```xml
@@ -11954,11 +11962,11 @@ bank account number：
 
 ### <a name="definition"></a>定义
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略可高可信度地检测到这种类型的敏感信息：
 - 函数Func_new_zealand_bank_account_number查找与模式匹配的内容。
 - 找到搜索Keywords_new_zealand_bank_account_number关键字。
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略具有中等可信度，可以检测到这种类型的敏感信息：
 - 函数Func_new_zealand_bank_account_number查找与模式匹配的内容。
 
 ```xml
@@ -12010,12 +12018,12 @@ bank account number：
 
 ### <a name="definition"></a>定义
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略可高可信度地检测到这种类型的敏感信息：
 - 该函数Func_newzealand_driver_license_number查找与模式匹配的内容。
 - 找到来自Keywords_newzealand_driver_license_number的关键字。
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 65% 确信它检测到这种类型的敏感信息：
-- 该函数Func_newzealand_driver_license_number查找与模式匹配的内容。
+DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息时，置信度较低：
+- 函数Func_newzealand_driver_license_number查找与模式匹配的内容。
 
 ```xml
       <!-- New Zealand Driver License Number -->
@@ -12067,7 +12075,7 @@ bank account number：
 - driverlicence#
 - driverlicences#
 - driver lic#
-- driver lics#
+- 驱动程序 lics#
 - driver licence#
 - driver licences#
 - driverslic#
@@ -12128,11 +12136,11 @@ bank account number：
 
 ### <a name="definition"></a>定义
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略可高可信度地检测到这种类型的敏感信息：
 - 该函数Func_new_zealand_inland_revenue_number查找与模式匹配的内容。
-- 找到来自Keywords_new_zealand_inland_revenue_number关键字。
+- 找到搜索Keywords_new_zealand_inland_revenue_number关键字。
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略具有中等可信度，即检测到这种类型的敏感信息：
 - 该函数Func_new_zealand_inland_revenue_number查找与模式匹配的内容。
 
 ```xml
@@ -12178,12 +12186,12 @@ bank account number：
 
 ### <a name="definition"></a>定义
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略可高可信度地检测到这种类型的敏感信息：
 - 函数 Func_new_zealand_ministry_of_health_number 找到与该模式匹配的内容。
 - 找到 Keyword_nz_terms 中的一个关键字。
 - 校验和通过。
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略具有中等可信度，可以检测到这种类型的敏感信息：
 - 函数 Func_new_zealand_ministry_of_health_number 找到与该模式匹配的内容。
 - 校验和通过。
 
@@ -12245,11 +12253,11 @@ bank account number：
 
 ### <a name="definition"></a>定义
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略可高可信度地检测到这种类型的敏感信息：
 - 函数Func_newzealand_social_welfare_number查找与模式匹配的内容。
-- 找到搜索Keywords_newzealand_social_welfare_number关键字。
+- 找到来自Keywords_newzealand_social_welfare_number关键字。
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 65% 确信它检测到这种类型的敏感信息：
+DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息时，置信度较低：
 - 函数Func_newzealand_social_welfare_number查找与模式匹配的内容。
 
 ```xml
@@ -12272,7 +12280,7 @@ bank account number：
 
 - 社交发展#
 - social 40#
-- social-no.
+- social no.
 - 社交4004
 - swn#
 
@@ -12296,12 +12304,12 @@ bank account number：
 
 ### <a name="definition"></a>定义
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略可高可信度地检测到这种类型的敏感信息：
 - 函数 Func_norway_id_number 找到与该模式匹配的内容。
 - 找到 Keyword_norway_id_number 中的一个关键字。
 - 校验和通过。
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略具有中等可信度，即检测到这种类型的敏感信息：
 - 函数 Func_norway_id_numbe 找到与该模式匹配的内容。
 - 校验和通过。
 
@@ -12351,7 +12359,7 @@ bank account number：
 
 ### <a name="definition"></a>定义
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略具有中等可信度，可以检测到这种类型的敏感信息：
 - 正则表达式 Regex_philippines_unified_id 找到与该模式匹配的内容。
 - 找到 Keyword_philippines_id 中的一个关键字。
 
@@ -12396,8 +12404,8 @@ bank account number：
   
 ### <a name="definition"></a>定义
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-- 正则表达式查找  `Regex_poland_eu_driver's_license_number` 与模式匹配的内容。 
+在 300 个字符的邻近度内，DLP 策略具有中等可信度，可以检测到这种类型的敏感信息：
+- 正则表达式  `Regex_poland_eu_driver's_license_number` 查找与模式匹配的内容。 
 - 找到或  `Keywords_eu_driver's_license_number` 找到 `Keywords_poland_eu_driver's_license_number` 的关键字。 
     
 ```xml
@@ -12424,7 +12432,7 @@ bank account number：
 - driverlicence
 - driverlicences
 - driver lic
-- driver lics
+- 驱动程序 lics
 - driver license
 - driver licenses
 - driver licence
@@ -12474,7 +12482,7 @@ bank account number：
 - driverlicence#
 - driverlicences#
 - driver lic#
-- driver lics#
+- 驱动程序 lics#
 - driver license#
 - driver licenses#
 - driver licences#
@@ -12558,7 +12566,7 @@ bank account number：
 
 ### <a name="definition"></a>定义
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略具有中等可信度，可以检测到这种类型的敏感信息：
 - 函数 Func_polish_national_id 找到与该模式匹配的内容。
 - 找到 Keyword_polish_national_id_passport_number 中的一个关键字。
 - 校验和通过。
@@ -12577,7 +12585,7 @@ bank account number：
 
 #### <a name="keyword_poland_national_id_passport_number"></a>Keyword_poland_national_id_passport_number
 
-- 博拉维多 osobisty
+- 百年版 osobisty
 - Numer dowodu osobistego
 - Nazwa i numer dowodu osobistego
 - Nazwa i nr dowodu osobistego
@@ -12604,12 +12612,12 @@ bank account number：
 
 ### <a name="definition"></a>定义
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略可高可信度地检测到这种类型的敏感信息：
 - 函数 Func_pesel_identification_number 找到与该模式匹配的内容。
 - 找到 Keyword_pesel_identification_number 中的一个关键字。
 - 校验和通过。
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略具有中等可信度，即检测到这种类型的敏感信息：
 - 函数 Func_pesel_identification_number 找到与该模式匹配的内容。
 - 校验和通过。
 
@@ -12658,7 +12666,7 @@ bank account number：
 
 ### <a name="definition"></a>定义
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略可高可信度地检测到这种类型的敏感信息：
 - 函数 Func_polish_passport_number 找到与该模式匹配的内容。
 - 找到 Keyword_polish_national_id_passport_number 中的一个关键字。
 - 校验和通过。
@@ -12709,11 +12717,11 @@ bank account number：
 
 ### <a name="definition"></a>定义
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略可高可信度地检测到这种类型的敏感信息：
 - 函数Func_polish_regon_number查找与模式匹配的内容。
 - 找到来自Keywords_polish_regon_number关键字。
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 65% 确信它检测到这种类型的敏感信息：
+DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息时，置信度较低：
 - 函数Func_polish_regon_number查找与模式匹配的内容。
 
 ```xml
@@ -12770,7 +12778,7 @@ bank account number：
   
 ### <a name="definition"></a>定义
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略可高可信度地检测到这种类型的敏感信息：
 - 该  `Func_poland_eu_tax_file_number` 函数查找与模式匹配的内容。 
 - 找到一个  `Keywords_poland_eu_tax_file_number` 关键字。 
     
@@ -12834,7 +12842,7 @@ bank account number：
 
 ### <a name="definition"></a>定义
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略可高可信度地检测到这种类型的敏感信息：
 - 正则表达式 Regex_portugal_citizen_card 找到与该模式匹配的内容。
 - 找到 Keyword_portugal_citizen_card 中的一个关键字。
 
@@ -12865,7 +12873,7 @@ bank account number：
 - national id card
 - nic
 - número bi de portugal
-- número de identificação
+- número de identificação 公民
 - número de identificação fiscal
 - número do documento
 - portugal bi number
@@ -12900,8 +12908,8 @@ bank account number：
   
 ### <a name="definition"></a>定义
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-- 正则表达式查找  `Regex_portugal_eu_driver's_license_number` 与模式匹配的内容。 
+在 300 个字符的邻近度内，DLP 策略具有中等可信度，可以检测到这种类型的敏感信息：
+- 正则表达式  `Regex_portugal_eu_driver's_license_number` 查找与模式匹配的内容。 
 - 找到或  `Keywords_eu_driver's_license_number` 找到 `Keywords_portugal_eu_driver's_license_number` 的关键字。 
     
 ```xml
@@ -12928,7 +12936,7 @@ bank account number：
 - driverlicence
 - driverlicences
 - driver lic
-- driver lics
+- 驱动程序 lics
 - driver license
 - driver licenses
 - driver licence
@@ -12978,7 +12986,7 @@ bank account number：
 - driverlicence#
 - driverlicences#
 - driver lic#
-- driver lics#
+- 驱动程序 lics#
 - driver license#
 - driver licenses#
 - driver licences#
@@ -13073,13 +13081,13 @@ bank account number：
   
 ### <a name="definition"></a>定义
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略可高可信度地检测到这种类型的敏感信息：
 - 正则表达式查找  `Regex_portugal_eu_passport_number` 与模式匹配的内容。 
 - 找到或  `Keywords_eu_passport_number` 找到 `Keywords_portugal_eu_passport_number` 的关键字。 
 - 正则表达式查找 `Regex_eu_passport_date1` DD.MM.YYYY 格式的日期或找到 `Keywords_eu_passport_date` 的关键字
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-- 正则表达式查找  `Regex_portugal_eu_passport_number` 与模式匹配的内容。 
+在 300 个字符的邻近度内，DLP 策略具有中等可信度，可以检测到这种类型的敏感信息：
+- 正则表达式  `Regex_portugal_eu_passport_number` 查找与模式匹配的内容。 
 - 找到或  `Keywords_eu_passport_number` 找到 `Keywords_portugal_eu_passport_number` 的关键字。
     
 ```xml
@@ -13125,7 +13133,7 @@ bank account number：
 
 - número do passaporte
 - 葡萄牙语 passport
-- 葡萄牙语传递
+- 葡萄牙语传递端口
 - 葡萄牙语 passaporte
 - passaporte n eq
 - passeport n eq
@@ -13144,7 +13152,7 @@ bank account number：
 
 ### <a name="format"></a>Format
 
-包含可选空格的九个数字
+九个数字（带可选空格）
   
 ### <a name="pattern"></a>模式
 
@@ -13160,11 +13168,11 @@ bank account number：
   
 ### <a name="definition"></a>定义
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略可高可信度地检测到这种类型的敏感信息：
 - 该  `Func_portugal_eu_tax_file_number` 函数查找与模式匹配的内容。 
 - 找到一个  `Keywords_portugal_eu_tax_file_number` 关键字。 
     
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 65% 确信它检测到这种类型的敏感信息：
+DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息时，置信度较低：
 - 该  `Func_portugal_eu_tax_file_number` 函数查找与模式匹配的内容。 
     
 ```xml
@@ -13226,7 +13234,7 @@ bank account number：
   
 ### <a name="definition"></a>定义
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略具有中等可信度，可以检测到这种类型的敏感信息：
 - 正则表达式查找  `Regex_romania_eu_driver's_license_number` 与模式匹配的内容。 
 - 找到或  `Keywords_eu_driver's_license_number` 找到 `Keywords_romania_eu_driver's_license_number` 的关键字。 
     
@@ -13254,7 +13262,7 @@ bank account number：
 - driverlicence
 - driverlicences
 - driver lic
-- driver lics
+- 驱动程序 lics
 - driver license
 - driver licenses
 - driver licence
@@ -13304,7 +13312,7 @@ bank account number：
 - driverlicence#
 - driverlicences#
 - driver lic#
-- driver lics#
+- 驱动程序 lics#
 - driver license#
 - driver licenses#
 - driver licences#
@@ -13401,11 +13409,11 @@ bank account number：
   
 ### <a name="definition"></a>定义
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略可高可信度地检测到这种类型的敏感信息：
 - 该  `Func_romania_eu_national_id_card` 函数查找与模式匹配的内容。 
 - 找到一个  `Keywords_romania_eu_national_id_card` 关键字。 
     
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略具有中等可信度，可以检测到这种类型的敏感信息：
 - 该  `Func_romania_eu_national_id_card` 函数查找与模式匹配的内容。 
     
 ```xml
@@ -13441,7 +13449,7 @@ bank account number：
 - national identification number
 - numr identificare personal
 - numr identitate
-- numr personal unic
+- numr 个人 unic
 - numridentitate#
 - numridentitate
 - numrpersonalunic#
@@ -13490,13 +13498,13 @@ bank account number：
   
 ### <a name="definition"></a>定义
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
-- 正则表达式查找  `Regex_romania_eu_passport_number` 与模式匹配的内容。 
+在 300 个字符的邻近度内，DLP 策略可高可信度地检测到这种类型的敏感信息：
+- 正则表达式  `Regex_romania_eu_passport_number` 查找与模式匹配的内容。 
 - 找到或  `Keywords_eu_passport_number` 找到 `Keywords_romania_eu_passport_number` 的关键字。 
 - 正则表达式查找 `Regex_romania_eu_passport_date` DD MMM/MMM YY 格式的日期 (示例- 01 二月/二月 10) 或找到 `Keywords_eu_passport_date` 的关键字
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-- 正则表达式查找  `Regex_romania_eu_passport_number` 与模式匹配的内容。 
+在 300 个字符的邻近度内，DLP 策略具有中等可信度，可以检测到这种类型的敏感信息：
+- 正则表达式  `Regex_romania_eu_passport_number` 查找与模式匹配的内容。 
 - 找到或  `Keywords_eu_passport_number` 找到 `Keywords_romania_eu_passport_number` 的关键字。 
     
 ```xml
@@ -13576,7 +13584,7 @@ numrul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
 
 ### <a name="definition"></a>定义
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略具有中等可信度，即检测到这种类型的敏感信息：
 - 正则表达式Regex_Russian_Passport_Number_Domestic查找与模式匹配的内容。
 - 找到来自Keyword_Russian_Passport_Number的关键字。
 
@@ -13602,8 +13610,8 @@ numrul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
 - passportnumber#
 - паспорт нет
 - ？
-- pоссийской 请访问
-- pусский <pусский </pусский>
+- pоссийской паспорт
+- pусский номер паспорта
 - паспорт#
 - id#
 - номер паспорта
@@ -13636,7 +13644,7 @@ numrul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
 
 ### <a name="definition"></a>定义
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略具有中等可信度，可以检测到这种类型的敏感信息：
 - 正则表达式Regex_Russian_Passport_Number_International查找与模式匹配的内容。
 - 找到来自Keyword_Russian_Passport_Number的关键字。
 
@@ -13662,8 +13670,8 @@ numrul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
 - passportnumber#
 - паспорт нет
 - ？
-- pоссийской 请访问
-- pусский <pусский </pусский>
+- pоссийской паспорт
+- pусский номер паспорта
 - паспорт#
 - id#
 - номер паспорта
@@ -13686,7 +13694,7 @@ numrul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
 
 ### <a name="definition"></a>定义
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略具有中等可信度，可以检测到这种类型的敏感信息：
 - 正则表达式 Regex_saudi_arabia_national_id 找到与该模式匹配的内容。
 - 找到 Keyword_saudi_arabia_national_id 中的一个关键字。
 
@@ -13731,12 +13739,12 @@ numrul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
 
 ### <a name="definition"></a>定义
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略可高可信度地检测到这种类型的敏感信息：
 - 正则表达式 Regex_singapore_nric 找到与该模式匹配的内容。
 - 找到 Keyword_singapore_nric 中的一个关键字。
 - 校验和通过。
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略具有中等可信度，可以检测到这种类型的敏感信息：
 - 正则表达式 Regex_singapore_nric 找到与该模式匹配的内容。
 - 校验和通过。
 
@@ -13785,8 +13793,8 @@ numrul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
   
 ### <a name="definition"></a>定义
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-- 正则表达式查找  `Regex_slovakia_eu_driver's_license_number` 与模式匹配的内容。 
+在 300 个字符的邻近度内，DLP 策略具有中等可信度，可以检测到这种类型的敏感信息：
+- 正则表达式  `Regex_slovakia_eu_driver's_license_number` 查找与模式匹配的内容。 
 - 找到或  `Keywords_eu_driver's_license_number` 找到 `Keywords_slovakia_eu_driver's_license_number` 的关键字。 
     
 ```xml
@@ -13813,7 +13821,7 @@ numrul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
 - driverlicence
 - driverlicences
 - driver lic
-- driver lics
+- 驱动程序 lics
 - driver license
 - driver licenses
 - driver licence
@@ -13863,7 +13871,7 @@ numrul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
 - driverlicence#
 - driverlicences#
 - driver lic#
-- driver lics#
+- 驱动程序 lics#
 - driver license#
 - driver licenses#
 - driver licences#
@@ -13958,11 +13966,11 @@ numrul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
   
 ### <a name="definition"></a>定义
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略可高可信度地检测到这种类型的敏感信息：
 - 该  `Func_slovakia_eu_national_id_card` 函数查找与模式匹配的内容。 
 - 找到一个  `Keywords_slovakia_eu_national_id_card` 关键字。 
     
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 65% 确信它检测到这种类型的敏感信息：
+DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息时，置信度较低：
 - 该  `Func_slovakia_eu_national_id_card` 函数查找与模式匹配的内容。 
     
 ```xml
@@ -13985,7 +13993,7 @@ numrul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
 
 - azonosítá szám
 - birth number
-- ííslo národnej identifínej karty
+- ííslo národnej identifánej karty
 - ííslo obianského prezuzu
 - daé ííslo
 - id number
@@ -13998,7 +14006,7 @@ numrul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
 - národná identifáná znaáka á
 - national number
 - nationalnumber#
-- nemzeti személyazonosító igazolvméy
+- nemzeti személyazonosító igazolvcioy
 - personalidnumber#
 - r-
 - rodne cislo
@@ -14032,7 +14040,7 @@ numrul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
 
 ### <a name="format"></a>Format
 
-一个数字或字母后跟七个数字，无空格或分隔符
+一个数字或字母后跟七个数字，没有空格或分隔符
   
 ### <a name="pattern"></a>模式
 
@@ -14044,12 +14052,12 @@ numrul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
   
 ### <a name="definition"></a>定义
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
-- 正则表达式查找  `Regex_slovakia_eu_passport_number` 与模式匹配的内容。 
+在 300 个字符的邻近度内，DLP 策略可高可信度地检测到这种类型的敏感信息：
+- 正则表达式  `Regex_slovakia_eu_passport_number` 查找与模式匹配的内容。 
 - 找到或  `Keywords_eu_passport_number` 找到 `Keywords_slovakia_eu_passport_number` 的关键字。 
 - 正则表达式查找 `Regex_eu_passport_date1` DD.MM.YYYY 格式的日期或找到 `Keywords_eu_passport_date` 的关键字
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略具有中等可信度，可以检测到这种类型的敏感信息：
 - 正则表达式查找  `Regex_slovakia_eu_passport_number` 与模式匹配的内容。 
 - 找到或  `Keywords_eu_passport_number` 找到 `Keywords_slovakia_eu_passport_number` 的关键字。 
     
@@ -14122,8 +14130,8 @@ numrul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
   
 ### <a name="definition"></a>定义
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-- 正则表达式查找  `Regex_slovenia_eu_driver's_license_number` 与模式匹配的内容。 
+在 300 个字符的邻近度内，DLP 策略具有中等可信度，可以检测到这种类型的敏感信息：
+- 正则表达式  `Regex_slovenia_eu_driver's_license_number` 查找与模式匹配的内容。 
 - 找到或  `Keywords_eu_driver's_license_number` 找到 `Keywords_slovenia_eu_driver's_license_number` 的关键字。 
     
 ```xml
@@ -14150,7 +14158,7 @@ numrul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
 - driverlicence
 - driverlicences
 - driver lic
-- driver lics
+- 驱动程序 lics
 - driver license
 - driver licenses
 - driver licence
@@ -14200,7 +14208,7 @@ numrul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
 - driverlicence#
 - driverlicences#
 - driver lic#
-- driver lics#
+- 驱动程序 lics#
 - driver license#
 - driver licenses#
 - driver licences#
@@ -14269,7 +14277,7 @@ numrul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
 - vozni-ka 1tevilka licence
 - voznininikih dovoljenj
 - -tevilka voznininikega dovoljenja
-- -tevilke voznininikih dovoljenj
+- ？tevilke voznininikih dovoljenj
 
 ## <a name="slovenia-unique-master-citizen-number"></a>斯洛文尼亚唯一主公民号码
 此敏感信息类型仅适用于：
@@ -14298,11 +14306,11 @@ numrul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
   
 ### <a name="definition"></a>定义
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略可高可信度地检测到这种类型的敏感信息：
 - 该  `Func_slovenia_eu_national_id_card` 函数查找与模式匹配的内容。 
 - 找到一个  `Keywords_slovenia_eu_national_id_card` 关键字。 
     
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略具有中等可信度，可以检测到这种类型的敏感信息：
 - 该  `Func_slovenia_eu_national_id_card` 函数查找与模式匹配的内容。 
     
 ```xml
@@ -14324,7 +14332,7 @@ numrul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
 
 - edinstvena 1tevilka gvilnega dr-avljana
 - em-o
-- enotna maticna 4tevilka obcana
+- enotna maticna matictevilka obcana
 - id card
 - identification number
 - identifkacijska 0tevilka
@@ -14368,13 +14376,13 @@ numrul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
   
 ### <a name="definition"></a>定义
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
-- 正则表达式查找  `Regex_slovenia_eu_passport_number` 与模式匹配的内容。 
+在 300 个字符的邻近度内，DLP 策略可高可信度地检测到这种类型的敏感信息：
+- 正则表达式  `Regex_slovenia_eu_passport_number` 查找与模式匹配的内容。 
 - 找到或  `Keywords_eu_passport_number` 找到 `Keywords_slovenia_eu_passport_number` 的关键字。 
 - 正则表达式查找 `Regex_eu_passport_date1` DD.MM.YYYY 格式的日期或找到 `Keywords_eu_passport_date` 的关键字
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-- 正则表达式查找  `Regex_slovenia_eu_passport_number` 与模式匹配的内容。 
+在 300 个字符的邻近度内，DLP 策略具有中等可信度，即检测到这种类型的敏感信息：
+- 正则表达式  `Regex_slovenia_eu_passport_number` 查找与模式匹配的内容。 
 - 找到或  `Keywords_eu_passport_number` 找到 `Keywords_slovenia_eu_passport_number` 的关键字。 
     
 ```xml
@@ -14423,7 +14431,7 @@ numrul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
 - potni 列表#
 - datum rojstva
 - potni 列表
-- -tevilke potnih listov
+- 以tevilke potnih listov
 
 #### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
 
@@ -14455,11 +14463,11 @@ numrul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
   
 ### <a name="definition"></a>定义
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略可高可信度地检测到这种类型的敏感信息：
 - 该  `Func_slovenia_eu_tax_file_number` 函数查找与模式匹配的内容。 
 - 找到一个  `Keywords_slovenia_eu_tax_file_number` 关键字。 
     
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 65% 确信它检测到这种类型的敏感信息：
+DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息时，置信度较低：
 - 该  `Func_slovenia_eu_tax_file_number` 函数查找与模式匹配的内容。 
     
 ```xml
@@ -14523,7 +14531,7 @@ numrul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
 
 ### <a name="definition"></a>定义
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略可高可信度地检测到这种类型的敏感信息：
 - 函数 Func_south_africa_identification_number 找到与该模式匹配的内容。
 - 找到 Keyword_south_africa_identification_number 中的一个关键字。
 - 校验和通过。
@@ -14568,12 +14576,12 @@ numrul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
 
 ### <a name="definition"></a>定义
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略可高可信度地检测到这种类型的敏感信息：
 - 函数 Func_south_korea_resident_number 找到与该模式匹配的内容。
 - 找到 Keyword_south_korea_resident_number 中的一个关键字。
 - 校验和通过。
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略具有中等可信度，可以检测到这种类型的敏感信息：
 - 函数 Func_south_korea_resident_number 找到与该模式匹配的内容。
 - 校验和通过。
 
@@ -14619,11 +14627,11 @@ numrul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
   
 ### <a name="definition"></a>定义
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略可高可信度地检测到这种类型的敏感信息：
 - 函数  `Func_spain_eu_DL_and_NI_number_citizen` 或 `Func_spain_eu_DL_and_NI_number_foreigner` 查找与模式匹配的内容。 
 - 找到或  `Keywords_eu_driver's_license_number` 找到 `Keywords_spain_eu_driver's_license_number` 的关键字。 
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略具有中等可信度，即检测到这种类型的敏感信息：
 - 函数  `Func_spain_eu_DL_and_NI_number_citizen` 或 `Func_spain_eu_DL_and_NI_number_foreigner` 查找与模式匹配的内容。 
     
 ```xml
@@ -14663,7 +14671,7 @@ numrul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
 - driverlicence
 - driverlicences
 - driver lic
-- driver lics
+- 驱动程序 lics
 - driver license
 - driver licenses
 - driver licence
@@ -14817,11 +14825,11 @@ numrul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
   
 ### <a name="definition"></a>定义
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略可高可信度地检测到这种类型的敏感信息：
 - 函数  `Func_spain_eu_DL_and_NI_number_citizen` 或 `Func_spain_eu_DL_and_NI_number_foreigner` 查找与模式匹配的内容。 
 - 找到一个  `Keywords_spain_eu_national_id_card"` 关键字。 
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略具有中等可信度，即检测到这种类型的敏感信息：
 - 函数  `Func_spain_eu_DL_and_NI_number_citizen` 或 `Func_spain_eu_DL_and_NI_number_foreigner` 查找与模式匹配的内容。 
 
     
@@ -14891,12 +14899,12 @@ numrul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
   
 ### <a name="definition"></a>定义
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略可高可信度地检测到这种类型的敏感信息：
 - 正则表达式查找  `Regex_spain_eu_passport_number` 与模式匹配的内容。 
 - 找到或  `Keywords_eu_passport_number` 找到 `Keywords_spain_eu_passport_number` 的关键字。 
 - 正则表达式查找 `Regex_spain_eu_passport_date` DD-MM-YYYY 格式的日期或找到 `Keywords_eu_passport_date` 的关键字
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略具有中等可信度，即检测到这种类型的敏感信息：
 - 正则表达式查找  `Regex_spain_eu_passport_number` 与模式匹配的内容。 
 - 找到或  `Keywords_eu_passport_number` 找到 `Keywords_spain_eu_passport_number` 的关键字。
     
@@ -14981,7 +14989,7 @@ numrul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
 
 ### <a name="definition"></a>定义
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略可高可信度地检测到这种类型的敏感信息：
 - 函数 Func_spanish_social_security_number 找到与该模式匹配的内容。
 - 校验和通过。
 
@@ -15047,11 +15055,11 @@ numrul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
   
 ### <a name="definition"></a>定义
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略可高可信度地检测到这种类型的敏感信息：
 - 函数  `Func_spain_eu_tax_file_number` 或 `Func_spain_eu_DL_and_NI_number_citizen` 查找与模式匹配的内容。 
 - 找到一个  `Keywords_spain_eu_tax_file_number` 关键字。 
     
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略具有中等可信度，可以检测到这种类型的敏感信息：
 - 函数  `Func_spain_eu_tax_file_number` 或 `Func_spain_eu_DL_and_NI_number_citizen` 查找与模式匹配的内容。 
     
 ```xml
@@ -15122,7 +15130,7 @@ numrul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
 - 等号 (=) 
 - 不是美元符号 ($) 、百分比符号 (%) 、大于符号 (>) 、符号为 (@) 、引号 (") 、分号 (;) 、左大括号 ([) 或左括号 ({) 
 - 7-128 个字符（不是分号 (;) 、正斜杠 (/) 或引号 (") 
-- 一个分号 (;) 或引号 (") 
+- 分号 (;) 或引号 (") 
 
 ### <a name="checksum"></a>校验和
 
@@ -15130,7 +15138,7 @@ numrul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
 
 ### <a name="definition"></a>定义
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略可高可信度地检测到这种类型的敏感信息：
 - 正则表达式CEP_Regex_SQLServerConnectionString查找与模式匹配的内容。
 - 未找到CEP_GlobalFilter **关键字** 。
 - 正则表达式CEP_PasswordPlaceHolder **找不到** 与模式匹配的内容。
@@ -15204,8 +15212,8 @@ numrul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
   
 ### <a name="definition"></a>定义
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-- 正则表达式查找  `Regex_sweden_eu_driver's_license_number` 与模式匹配的内容。 
+在 300 个字符的邻近度内，DLP 策略具有中等可信度，可以检测到这种类型的敏感信息：
+- 正则表达式  `Regex_sweden_eu_driver's_license_number` 查找与模式匹配的内容。 
 - 找到或  `Keywords_eu_driver's_license_number` 找到 `Keywords_sweden_eu_driver's_license_number` 的关键字。 
     
 ```xml
@@ -15232,7 +15240,7 @@ numrul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
 - driverlicence
 - driverlicences
 - driver lic
-- driver lics
+- 驱动程序 lics
 - driver license
 - driver licenses
 - driver licence
@@ -15363,7 +15371,7 @@ numrul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
 
 ### <a name="format"></a>Format
 
-10 位或 12 位和可选分隔符
+十个或 12 个数字和一个可选的分隔符
 
 ### <a name="pattern"></a>模式
 
@@ -15379,12 +15387,12 @@ numrul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
 
 ### <a name="definition"></a>定义
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略可高可信度地检测到这种类型的敏感信息：
 - 该 `Func_swedish_national_identifier` 函数查找与模式匹配的内容。
 - 找到一个 `Keywords_swedish_national_identifier` 关键字
 - 校验和通过。
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略具有中等可信度，可以检测到这种类型的敏感信息：
 - 该 `Func_swedish_national_identifier` 函数查找与模式匹配的内容。
 - 校验和通过。
 
@@ -15440,10 +15448,10 @@ numrul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
 
 ### <a name="definition"></a>定义
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略具有中等可信度，可以检测到这种类型的敏感信息：
 - 正则表达式Regex_sweden_passport_number查找与模式匹配的内容。
 - 下列情况之一为 true：
-    - 找到Keyword_passport关键字。
+    - 找到搜索Keyword_passport关键字。
     - 找到Keyword_sweden_passport关键字。
 
 ```xml
@@ -15485,7 +15493,7 @@ numrul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
 - パスポート 
 - パスポート番号 
 - パスポのnum 
-- パスポート# 
+- パスポート＃ 
 - Numéro de passeport 
 - Passeport n ° 
 - Passeport Non 
@@ -15524,11 +15532,11 @@ numrul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
   
 ### <a name="definition"></a>定义
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略可高可信度地检测到这种类型的敏感信息：
 - 该  `Func_sweden_eu_tax_file_number` 函数查找与模式匹配的内容。 
 - 找到一个  `Keywords_sweden_eu_tax_file_number` 关键字。 
     
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略具有中等可信度，可以检测到这种类型的敏感信息：
 - 该  `Func_sweden_eu_tax_file_number` 函数查找与模式匹配的内容。 
     
 ```xml
@@ -15598,7 +15606,7 @@ numrul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
 
 ### <a name="definition"></a>定义
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略具有中等可信度，可以检测到这种类型的敏感信息：
 - 正则表达式 Regex_swift 找到与该模式匹配的内容。
 - 找到 Keyword_swift 中的一个关键字。
 
@@ -15680,11 +15688,11 @@ numrul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
 
 ### <a name="definition"></a>定义
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略可高可信度地检测到这种类型的敏感信息：
 - 函数Func_swiss_social_security_number_ahv查找与模式匹配的内容。
 - 找到来自Keywords_swiss_social_security_number_ahv的关键字。
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略具有中等可信度，可以检测到这种类型的敏感信息：
 - 函数Func_swiss_social_security_number_ahv查找与模式匹配的内容。
 
 ```xml
@@ -15743,12 +15751,12 @@ numrul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
 
 ### <a name="definition"></a>定义
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略可高可信度地检测到这种类型的敏感信息：
 - 函数 Func_taiwanese_national_id 找到与该模式匹配的内容。
 - 找到 Keyword_taiwanese_national_id 中的一个关键字。
 - 校验和通过。
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略具有中等可信度，即检测到这种类型的敏感信息：
 - 函数 Func_taiwanese_national_id 找到与该模式匹配的内容。
 - 校验和通过。
 
@@ -15805,7 +15813,7 @@ numrul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
 
 ### <a name="definition"></a>定义
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略具有中等可信度，即检测到这种类型的敏感信息：
 - 正则表达式 Regex_taiwan_passport 找到与该模式匹配的内容。
 - 找到 Keyword_taiwan_passport 中的一个关键字。
 
@@ -15850,7 +15858,7 @@ numrul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
 
 ### <a name="definition"></a>定义
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略具有中等可信度，可以检测到这种类型的敏感信息：
 - 正则表达式 Regex_taiwan_resident_certificate 找到与该模式匹配的内容。
 - 找到 Keyword_taiwan_resident_certificate 中的一个关键字。
 
@@ -15898,11 +15906,11 @@ numrul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
 
 ### <a name="definition"></a>定义
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略可高可信度地检测到这种类型的敏感信息：
 - 函数Func_Thai_Citizen_Id查找与模式匹配的内容。
 - 找到搜索Keyword_Thai_Citizen_Id关键字。
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略具有中等可信度，即检测到这种类型的敏感信息：
 - 函数Func_Thai_Citizen_Id查找与模式匹配的内容。
 
 ```xml
@@ -15945,11 +15953,11 @@ numrul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
 
 ### <a name="definition"></a>定义
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
-- 该函数Func_Turkish_National_Id查找与模式匹配的内容。
+在 300 个字符的邻近度内，DLP 策略可高可信度地检测到这种类型的敏感信息：
+- 函数Func_Turkish_National_Id查找与模式匹配的内容。
 - 找到搜索Keyword_Turkish_National_Id关键字。
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略具有中等可信度，即检测到这种类型的敏感信息：
 - 该函数Func_Turkish_National_Id查找与模式匹配的内容。
 
 ```xml
@@ -15971,7 +15979,7 @@ numrul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
 
 - TC Kimkim No
 - TC Kim一 nu一s
-- Vatanda？l？k nu一s
+- Vatanda？lk nu一s
 - Vatanda？l 否
 
 ## <a name="uk-drivers-license-number"></a>英国 driver's license number
@@ -15986,7 +15994,7 @@ numrul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
 18 个字母和数字：
 - 五个字母 (不区分大小写) 或数字"9"来表示字母 
 - 一个数字 
-- 如果驱动程序是男性（即 51 到 62，而不是 01 到 12 位），则日期格式 MMDDY 中用于出生日期的五个数字 (第 7 个字符将递增 50) 
+- 如果驱动程序是男性（即 51 到 62，而不是 01 到 12 位），则日期格式 MMDDY 中用于出生日期的 5 个数字 (第 7 个字符将递增 50) 
 - 两个字母 (不区分大小写) 或数字"9"来表示字母 
 - 五个数字
 
@@ -15996,7 +16004,7 @@ numrul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
 
 ### <a name="definition"></a>定义
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略具有中等可信度，可以检测到这种类型的敏感信息：
 - 函数 Func_uk_drivers_license 找到与该模式匹配的内容。
 - 找到 Keyword_uk_drivers_license 中的一个关键字。
 - 校验和通过。
@@ -16047,7 +16055,7 @@ numrul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
 
 ### <a name="definition"></a>定义
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略具有中等可信度，即检测到这种类型的敏感信息：
 - 正则表达式 Regex_uk_electoral 找到与该模式匹配的内容。
 - 找到 Keyword_uk_electoral 中的一个关键字。
 
@@ -16094,7 +16102,7 @@ numrul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
 
 ### <a name="definition"></a>定义
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略可高可信度地检测到这种类型的敏感信息：
 - 函数 Func_uk_nhs_number 找到与该模式匹配的内容。
 - 下列其中一项为真：
     - 找到 Keyword_uk_nhs_number 中的一个关键字。
@@ -16173,11 +16181,11 @@ numrul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
 
 ### <a name="definition"></a>定义
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略可高可信度地检测到这种类型的敏感信息：
 - 函数 Func_uk_nino 找到与该模式匹配的内容。
 - 找到 Keyword_uk_nino 中的一个关键字。
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略具有中等可信度，可以检测到这种类型的敏感信息：
 - 函数 Func_uk_nino 找到与该模式匹配的内容。
 
 ```xml
@@ -16241,7 +16249,7 @@ numrul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
   
 ### <a name="definition"></a>定义
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略具有中等可信度，可以检测到这种类型的敏感信息：
 - 该  `Func_uk_eu_tax_file_number` 函数查找与模式匹配的内容。 
 - 找到一个  `Keywords_uk_eu_tax_file_number` 关键字。 
     
@@ -16293,7 +16301,7 @@ numrul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
 
 ### <a name="definition"></a>定义
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略具有中等可信度，可以检测到这种类型的敏感信息：
 - 正则表达式 Regex_usa_bank_account_number 找到与该模式匹配的内容。
 - 找到 Keyword_usa_Bank_Account 中的一个关键字。
 
@@ -16357,12 +16365,12 @@ numrul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
 
 ### <a name="definition"></a>定义
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略具有中等可信度，可以检测到这种类型的敏感信息：
 - 函数 Func_new_york_drivers_license_number 找到与该模式匹配的内容。
 - 找到 Keyword_[state_name]_drivers_license_name 中的一个关键字。
 - 找到 Keyword_us_drivers_license 中的一个关键字。
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 65% 确信它检测到这种类型的敏感信息：
+DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息时，置信度较低：
 - 函数 Func_new_york_drivers_license_number 找到与该模式匹配的内容。
 - 找到 Keyword_[state_name]_drivers_license_name 中的一个关键字。
 - 找到 Keyword_us_drivers_license_abbreviations 中的一个关键字。
@@ -16520,15 +16528,15 @@ unformatted：
 
 ### <a name="definition"></a>定义
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略可高可信度地检测到这种类型的敏感信息：
 - 函数 Func_formatted_itin 找到与该模式匹配的内容。
 - 找到 Keyword_itin 中的一个关键字。
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略具有中等可信度，可以检测到这种类型的敏感信息：
 - 函数 Func_unformatted_itin 找到与该模式匹配的内容。
 - 找到 Keyword_itin 中的一个关键字。
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 65% 确信它检测到这种类型的敏感信息：
+DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息时，置信度较低：
 - 该函数Func_formatted_itin或Func_unformatted_itin找到与模式匹配的内容。
 
 ```xml
@@ -16593,15 +16601,15 @@ unformatted：
 
 ### <a name="definition"></a>定义
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略可高可信度地检测到这种类型的敏感信息：
 - 函数 Func_ssn 找到与该模式匹配的内容。
 - 找到 Keyword_ssn 中的一个关键字。
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略具有中等可信度，可以检测到这种类型的敏感信息：
 - 函数 Func_unformatted_ssn 查找与该模式匹配的内容。
 - 找到 Keyword_ssn 中的一个关键字。
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 65% 确信它检测到这种类型的敏感信息：
+DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息时，置信度较低：
 - 函数 Func_randomized_formatted_ssn 找到与该模式匹配的内容。
 - 找到 Keyword_ssn 中的一个关键字。
 
@@ -16666,7 +16674,7 @@ unformatted：
 
 ### <a name="definition"></a>定义
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略具有中等可信度，即检测到这种类型的敏感信息：
 - 函数 Func_usa_uk_passport 找到与该模式匹配的内容。
 - 找到 Keyword_passport 中的一个关键字。
 
@@ -16693,7 +16701,7 @@ unformatted：
 - パスポート 
 - パスポート番号 
 - パスポのnum 
-- パスポート# 
+- パスポート＃ 
 - Numéro de passeport 
 - Passeport n ° 
 - Passeport Non 
@@ -16724,7 +16732,7 @@ unformatted：
 
 ### <a name="definition"></a>定义
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略具有中等可信度，即检测到这种类型的敏感信息：
 - 正则表达式Regex_Ukraine_Passport_Domestic查找与模式匹配的内容。
 - 找到来自Keyword_Ukraine_Passport_Domestic关键字。
 
@@ -16774,7 +16782,7 @@ unformatted：
 
 ### <a name="definition"></a>定义
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
+在 300 个字符的邻近度内，DLP 策略具有中等可信度，可以检测到这种类型的敏感信息：
 - 正则表达式Regex_Ukraine_Passport_International查找与模式匹配的内容。
 - 找到来自Keyword_Ukraine_Passport_International的关键字。
 

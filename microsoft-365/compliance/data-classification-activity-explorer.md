@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 活动资源管理器通过查看和筛选用户对你的标记内容执行的操作来完善数据分类功能的功能。
-ms.openlocfilehash: 0175f41ca3fbcfc685acf933cc0cd97af6aa61ad
-ms.sourcegitcommit: 5e40c760c1af2a4cc6d85cb782b17f5c979677c5
+ms.openlocfilehash: 6825c00373617011db28fa484f272086f887ea40
+ms.sourcegitcommit: 7ecd10b302b3b3dfa4ba3be3a6986dd3c189fbff
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48379203"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "49921630"
 ---
 # <a name="get-started-with-activity-explorer"></a>活动资源管理器入门
 
@@ -51,6 +51,8 @@ ms.locfileid: "48379203"
 - Office 365 (E5)
 - 高级合规性（E5）加载项
 - 高级威胁智能（E5）加载项
+- Microsoft 365 E5/A5 信息保护和管控
+- Microsoft 365 E5/A5 合规
 
 ### <a name="permissions"></a>权限
 
