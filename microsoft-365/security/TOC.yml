@@ -338,7 +338,7 @@
               href: ./office-365-security/office-365-evaluation.md
             - name: Defender for Office 365 的新增功能
               href: office-365-security/whats-new-in-office-365-atp.md
-            - name: 适用于 SharePoint、OneDrive 和 Microsoft Teams 的 Defender for Office 365
+            - name: 用于 SharePoint、OneDrive 和 Microsoft Teams 的安全附件
               href: ./office-365-security/atp-for-spo-odb-and-teams.md
             - name: 新版 Microsoft 365 安全中心
               href: ./mtp/overview-security-center.md
@@ -400,7 +400,7 @@
               href: ./office-365-security/siem-integration-with-office-365-ti.md
             - name: 默认处于保护状态
               href: ./office-365-security/secure-by-default.md
-            - name: 配置 ATP 防钓鱼策略
+            - name: 在 Defender for Office 365 中配置反钓鱼策略
               href: ./office-365-security/configure-atp-anti-phishing-policies.md
             - name: 配置反恶意软件策略
               href: ./office-365-security/configure-anti-malware-policies.md
@@ -436,7 +436,7 @@
               href: ./office-365-security/user-submission.md
             - name: Defender for Office 365 中的用户标记
               href: ./office-365-security/user-tags.md
-            - name: 启用适用于 SharePoint、OneDrive 和 Microsoft Teams 的 Defender for Office 365
+            - name: 为 SharePoint、OneDrive 和 Microsoft Teams 启用安全附件
               href: ./office-365-security/turn-on-atp-for-spo-odb-and-teams.md
             - name: 使用 DKIM 验证出站电子邮件
               href: ./office-365-security/use-dkim-to-validate-outbound-email.md
@@ -457,7 +457,7 @@
                   href: ./office-365-security/configure-s-mime-settings-for-outlook-web-app.md
                 - name: 发送和接收经 S/MIME 签名和加密的电子邮件
                   href: ./office-365-security/send-and-receive-s-mime-signed-and-encrypted-email.md
-                - name: 出于 S/MIME 目的将用户证书同步到 Office 365
+                - name: 将用户证书同步到 Microsoft 365 for S/MIME
                   href: ./office-365-security/sync-user-certificates-to-office-365-for-s-mime.md
                 - name: 设置虚拟证书集合以验证 S/MIME
                   href: ./office-365-security/set-up-virtual-certificate-collection-to-validate-s-mime.md
@@ -501,7 +501,7 @@
               href: ./office-365-security/air-custom-reporting.md
             - name: 高级垃圾邮件筛选器 (ASF) 设置
               href: ./office-365-security/advanced-spam-filtering-asf-options.md
-            - name: 管理租户允许/阻止列表中的 URL
+            - name: 管理租户允许/阻止列表
               href: ./office-365-security/tenant-allow-block-list.md
             - name: 安全与合规中心内的消息跟踪
               href: ./office-365-security/message-trace-scc.md
