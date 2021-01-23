@@ -241,18 +241,6 @@
                       href: mtp/custom-detections-overview.md
                     - name: 创建和管理检测规则
                       href: mtp/custom-detection-rules.md
-            - name: 报告
-              items:
-                - name: 监视和查看报告
-                  href: mtp/monitoring-and-reporting.md
-                - name: 身份监视和报告
-                  href: mtp/monitor-and-report-identities.md
-                - name: 数据监视和报告
-                  href: mtp/monitor-data.md
-                - name: 设备监视和报告
-                  href: mtp/monitor-devices.md
-                - name: 应用监视和报告
-                  href: mtp/monitor-apps.md
         - name: 参考
           items:
             - name: 权限和设置
