@@ -106,7 +106,6 @@
           href: customize-a-built-in-sensitive-information-type.md
         - name: 使用精确数据匹配创建自定义敏感信息类型
           href: create-custom-sensitive-information-types-with-exact-data-match-based-classification.md
-        - name: 自定义敏感信息类型入门
         - name: 使用精确数据匹配架构和敏感信息类型向导
           href: sit-edm-wizard.md
         - name: 修改精确数据匹配架构，以使用可配置匹配
