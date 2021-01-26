@@ -8,16 +8,18 @@ audience: ''
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 search.appverid: ''
-ms.collection: enabler-strategic
+ms.collection:
+- enabler-strategic
+- m365initiative-topics
 ROBOTS: NOINDEX, NOFOLLOW
 localization_priority: None
 description: 了解如何查找主题体验的资源。
-ms.openlocfilehash: 9141f6b445932234ebfa5a3d77833f64110ceeb4
-ms.sourcegitcommit: 18f95c4b7f74881b4a6ce71ad2ffa78a6ead5584
+ms.openlocfilehash: a9069b8723cb23a406fcce3b96a53b3de2a07568
+ms.sourcegitcommit: 162c01dfaa2fdb3225ce4c24964c1065ce22ed5d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/24/2020
-ms.locfileid: "49731339"
+ms.lasthandoff: 01/25/2021
+ms.locfileid: "49976175"
 ---
 # <a name="introduction-to-topic-experiences-preview"></a>预览版主题体验 (简介) 
 
@@ -33,9 +35,9 @@ ms.locfileid: "49731339"
 
 主题体验是一项 Office 365 服务，可帮助组织将信息转换为知识。
 
-此页面上的资源旨在让你开始了解和使用组织中的主题体验。
+此页上的资源旨在让你开始了解和使用组织中的主题体验。
 
-## <a name="get-started"></a>开始行动
+## <a name="get-started"></a>入门
 
 本节中的资源可帮助你了解有关主题体验及其如何提供帮助的详细信息。
 

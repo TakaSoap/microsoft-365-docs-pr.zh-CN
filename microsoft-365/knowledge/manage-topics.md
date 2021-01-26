@@ -8,15 +8,17 @@ audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 search.appverid: ''
-ms.collection: enabler-strategic
+ms.collection:
+- enabler-strategic
+- m365initiative-topics
 ROBOTS: NOINDEX, NOFOLLOW
 localization_priority: None
-ms.openlocfilehash: 92cf9c860ddbf199c70a7c2d89a7daba3dfe0fe7
-ms.sourcegitcommit: 18f95c4b7f74881b4a6ce71ad2ffa78a6ead5584
+ms.openlocfilehash: 371ccc16e787b331f42026dec48e5e3113b2b172
+ms.sourcegitcommit: 162c01dfaa2fdb3225ce4c24964c1065ce22ed5d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/24/2020
-ms.locfileid: "49731318"
+ms.lasthandoff: 01/25/2021
+ms.locfileid: "49976187"
 ---
 # <a name="manage-topics-in-the-topic-center-preview"></a>管理主题中心中的主题 (预览) 
 
@@ -36,7 +38,7 @@ ms.locfileid: "49731318"
 
 
 
-知识经理可帮助指导发现的主题在主题生命周期内，主题包括：
+知识经理可帮助指导发现的主题在主题生命周期中，主题包括：
 
 - 建议：主题已由 AI 标识，并且具有足够的支持资源、连接和属性来满足主题阈值。
 - 已确认：验证 AI 建议的主题。 验证通过知识管理员确认完成。此外，如果至少有两个用户通过主题反馈对主题有效提供积极反馈，可以确认主题。
@@ -62,7 +64,7 @@ ms.locfileid: "49731318"
 
 查看建议的主题：
 
-1. 在 **"管理主题"** 页上，选择 **"建议"** 选项卡，选择主题以打开主题页面。</br>
+1. 在 **"管理主题"** 页上，选择 **"建议"** 选项卡，选择主题以打开主题页。</br>
 
 2. 在主题页面上，查看主题页面，如果需要对页面进行任何更改，请选择"编辑"。
 
@@ -80,7 +82,7 @@ ms.locfileid: "49731318"
 
 ## <a name="confirmed-topics"></a>已确认的主题
 
-在"管理主题"页上，在指定的 SharePoint 源位置中发现并且已由知识经理确认的主题或由两个或多个人员通过卡片反馈机制确认的"群源"主题将列在"已确认" **选项卡中。** 如果需要，有权管理主题的用户可以审阅已确认的主题并选择拒绝它们。
+在"管理主题"页上，在指定的 SharePoint 源位置中发现且已由知识经理确认的主题或由两个或多个人员通过卡片反馈机制确认的"群源"主题将列在"已确认"选项卡中。 如果需要，有权管理主题的用户可以审阅已确认的主题并选择拒绝它们。
 
 查看已确认的主题：
 

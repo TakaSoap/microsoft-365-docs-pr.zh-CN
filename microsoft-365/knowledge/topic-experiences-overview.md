@@ -8,16 +8,18 @@ ms.topic: article
 ms.service: ''
 ms.prod: microsoft-365-enterprise
 search.appverid: ''
-ms.collection: enabler-strategic
+ms.collection:
+- enabler-strategic
+- m365initiative-topics
 localization_priority: None
 ROBOTS: NOINDEX, NOFOLLOW
 description: 主题体验概述。
-ms.openlocfilehash: 8b06dd016295c8b0712a7c18c2296a318cd826ba
-ms.sourcegitcommit: 18f95c4b7f74881b4a6ce71ad2ffa78a6ead5584
+ms.openlocfilehash: decc1a3aa5535b4d8bc97dc7d6b010eedd395741
+ms.sourcegitcommit: 162c01dfaa2fdb3225ce4c24964c1065ce22ed5d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/24/2020
-ms.locfileid: "49731316"
+ms.lasthandoff: 01/25/2021
+ms.locfileid: "49976587"
 ---
 # <a name="topic-experiences-overview-preview"></a>主题体验概述 (预览) 
 
@@ -34,7 +36,7 @@ ms.locfileid: "49731316"
 
 它的目标是将信息转换为知识，并将其在日常使用的应用程序（如 SharePoint 新式页面和 Microsoft 搜索）中传送给用户。
 
-主题体验可帮助解决许多公司中的一个关键业务问题 - 在用户需要该信息时提供相关信息。 例如，新员工需要快速了解大量新信息，在阅读公司信息时会遇到他们一点不知道的术语。 若要了解详细信息，用户可能需要离开他们正在执行的工作，并花费宝贵的时间搜索详细信息，例如有关术语内容、组织中哪些人员是行业专家的信息，或者与术语相关的网站和文档。
+主题体验可帮助解决许多公司中的一个关键业务问题 - 在用户需要该信息时提供相关信息。 例如，新员工需要快速了解大量新信息，在阅读公司信息时会遇到他们一点不知道的术语。 若要了解详细信息，用户可能需要离开他们正在执行的工作，并花费宝贵的时间搜索详细信息，例如有关术语内容、组织中哪些人员是主题专家，以及可能与术语相关的网站和文档的信息。
 
 主题体验使用 AI 自动搜索 **和标识组织中** 的主题。 它编译有关它们的信息，例如简短说明、主题主题专家以及网站、文件和与主题相关的页面。 知识经理或参与者可以选择根据需要更新主题信息。 这些主题可供用户使用，这意味着对于新闻和页面中新式 SharePoint 网站中显示的主题每个实例，文本将突出显示。 用户可选择选择主题，通过主题详细信息了解有关该主题的详细信息。 还可以在 SharePoint 搜索中查找主题。
 
@@ -92,7 +94,7 @@ ms.locfileid: "49731316"
 
 ## <a name="admin-controls"></a>管理控件
 
-Microsoft 365 管理中心中的管理控件允许你管理知识网络。 它们允许 Microsoft 365 全局管理员或 SharePoint 管理员：
+Microsoft 365 管理中心中的管理员控件允许你管理知识网络。 它们允许 Microsoft 365 全局管理员或 SharePoint 管理员：
 
 - 控制允许组织中哪些用户查看 SharePoint 新式页面或 SharePoint 搜索结果中的主题。
 - 控制将爬网哪些 SharePoint 网站以搜索主题。
@@ -107,7 +109,7 @@ Microsoft 365 管理中心中的管理控件允许你管理知识网络。 它�
 
 AI 将持续努力提供建议，以改进环境中发生的更改时的主题。 
 
-系统可能会询问允许其访问的用户查看其日常工作中的主题是否对用户有用。 AI 查看这些响应，并使用它们帮助确定主题摘要和主题详细信息中显示的内容。
+可能会询问允许其查看其日常工作中的主题的用户主题是否有用。 AI 查看这些响应，并使用它们帮助确定主题摘要和主题详细信息中显示的内容。
 
 具有编辑或创建主题权限的用户可以直接对主题页面进行更新，如果他们要更正或添加其他信息。 
 
