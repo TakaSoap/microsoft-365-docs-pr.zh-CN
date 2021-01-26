@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: 3f7dde1a-a8ea-4366-86da-8ee6777f357c
 description: 在 Exchange 混合部署中，使用安全与合规中心中的内容搜索工具搜索并导出本地用户的 Teams 聊天数据。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 9620c48056545e6d6cf053040849acfe0a1bc68e
-ms.sourcegitcommit: c1f9a1b2a34146c51c9e33c4119a388b249ce7a9
+ms.openlocfilehash: 23f8ea08de3d7fdbbc36274374d315ef0cb66a84
+ms.sourcegitcommit: 162c01dfaa2fdb3225ce4c24964c1065ce22ed5d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "49868010"
+ms.lasthandoff: 01/25/2021
+ms.locfileid: "49976199"
 ---
 # <a name="search-for-teams-chat-data-for-on-premises-users"></a>搜索 Teams 中本地用户的聊天数据
 
@@ -34,6 +34,8 @@ ms.locfileid: "49868010"
 - 本地目录服务（如 Active Directory）中的用户帐户必须与 Azure Active Directory（Microsoft 365 中的目录服务）同步。 这意味着将在 Microsoft 365 中创建一个邮件用户帐户，并将该帐户与其主邮箱位于本地组织中的用户相关联。
 
 - 必须为其主邮箱位于本地组织中的用户分配 Microsoft Teams 许可证和 Exchange Online 计划 1 许可证（最低要求）。
+
+- 如果您的组织没有 Exchange 混合部署，则必须将本地 Exchange 架构同步到 Azure Active Directory。 如果不这样做，虽然用户在本地 Exchange 组织中已有邮箱，你仍可能要冒险为其在 Exchange Online 中创建重复的基于云的邮箱。
 
 - 只有与本地用户关联的 Teams 聊天数据存储在基于云的存储区域中。 本地用户不能以任何方式访问此存储区域。
 

@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: 使用 Office 365 安全与合规中心或 Microsoft 365 合规性中心搜索统一的审核日志，以查看组织中的用户和管理员活动。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 4028d5ff59625d2008afb4a384bc290a5df1b2a3
-ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
+ms.openlocfilehash: 2e95c2f3627a6bb0c28b736437012a92107b3533
+ms.sourcegitcommit: 162c01dfaa2fdb3225ce4c24964c1065ce22ed5d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "49682643"
+ms.lasthandoff: 01/25/2021
+ms.locfileid: "49976243"
 ---
 # <a name="search-the-audit-log-in-the-compliance-center"></a>在合规中心搜索审核日志
 
@@ -66,10 +66,12 @@ ms.locfileid: "49682643"
 
 在开始搜索审核日志之前，请务必阅读以下各项。
 
-- 你（或其他管理员）必须首先开启审核日志记录，然后才能开始搜索审核日志。 若要将其打开，请单击安全与合规中心中 **审核日志搜索** 页面上的 **打开审核**。 （如果未看到此链接，则已为你的组织开启审核。）打开后，将显示一条消息，称正在准备审核日志，你可以在准备完成后数小时内运行搜索。 只需执行一次此操作。 有关详细信息，请参阅[打开或关闭审核日志搜索](turn-audit-log-search-on-or-off.md)。
+- 默认情况下，Microsoft 365 和 Office 365 企业版组织开启审核日志搜索。 这包括具有 E3/G3 或 E5/G5 订阅的组织。 若要验证审核日志搜索是否打开，可以在 Exchange Online PowerShell 中运行以下命令：
 
-  > [!NOTE]
-  > 默认正在启用审核。 在这之前，可以按上文所述启用审核。
+  ```powershell
+  Get-AdminAuditLogConfig | FL UnifiedAuditLogIngestionEnabled
+  ```
+  *UnifiedAuditLogestionEnabled* 属性的 `True` 值表明已打开审核日志搜索。 有关详细信息，请参阅 [打开或关闭审核日志搜索](turn-audit-log-search-on-or-off.md)。
 
 - 必须分配有 Exchange Online 中的“仅供查看审核日志”或“审核日志”角色才能搜索审核日志。 默认情况下，在 Exchange 管理中心中的“**权限**”页上将这些角色分配给“合规性管理”和“组织管理”角色组。 请注意，Office 365 和 Microsoft 365 中的全局管理员将自动添加为 Exchange Online 的组织管理角色组成员。 若要让用户能够使用最低权限级别搜索审核日志，可以在 Exchange Online 中创建自定义角色组，添加“仅供查看审核日志”或“审核日志”角色，然后将用户添加为新角色组的成员。 有关详细信息，请参阅[在 Exchange Online 中管理角色组](https://go.microsoft.com/fwlink/p/?LinkID=730688)。
 
