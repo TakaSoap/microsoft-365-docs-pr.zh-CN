@@ -1,9 +1,8 @@
 ---
 title: Microsoft Defender for Office 365 的新增功能
-description: 了解最新版 Microsoft Defender for Office 365 中提供的新特性和功能。
+description: 了解最新版本的 Microsoft Defender for Office 365 中提供的新特性和功能。
 keywords: Office 365 atp， ga， 通用， 功能， 可用， 新增功能中的新增功能
 search.appverid: met150
-ms.service: O365-seccomp
 ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
@@ -17,15 +16,17 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 ms.topic: conceptual
-ms.date: 10/09/2020
+ms.date: 01/12/2021
 ms.custom: seo-marvel-apr2020
 ms.reviewer: vippand
-ms.openlocfilehash: fb588320461ab44d1ce0f10c0776bcc9ee61b551
-ms.sourcegitcommit: 0ecac0387be6b49025b79ce8eb949a8cf62481e2
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: 3544f1ccb760c461b7ab72c6dc037fd653136db9
+ms.sourcegitcommit: cbe8724bd71d1c002395d98f1451c5f578c824f9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "49724398"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "49988156"
 ---
 # <a name="whats-new-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 的新增功能
 
@@ -41,6 +42,10 @@ ms.locfileid: "49724398"
 > [!TIP]
 > 还没有适用于 Office 365 的 Microsoft Defender？ [联系销售人员以开始试用](https://go.microsoft.com/fwlink/p/?LinkId=518644)。
 
+## <a name="december-2020"></a>2020 年 12 月
+
+- [在 Office 365 中默认安全](secure-by-default.md)
+
 ## <a name="november-2020"></a>2020 年 11 月
 
 - 更新了 Review > Action Center > Remediation from Mail Submission and Action Log (Defender for Office 365 Plan 2) 
@@ -48,7 +53,6 @@ ms.locfileid: "49724398"
 ## <a name="septemberoctober-2020"></a>2020 年 9 月/10 月
 
 - [使用配置分析器检查策略](configuration-analyzer-for-security-policies.md)
-- [使用租户允许/阻止列表手动替代筛选器裁定](tenant-allow-block-list.md)
 - 租户/用户策略[ (](threat-explorer.md#new-features-in-threat-explorer-and-real-time-detections) Defender for Office 365 计划 2 中允许)  (/阻止威胁资源管理器[](threat-explorer.md)中的扩展功能，包括主要目标用户、传输规则和连接器 (Defender for Office 365 (电子邮件) 
 - 在威胁资源管理器中显示 URL [威胁 (恶意软件](threat-explorer.md#threats-in-urls) 、网络钓鱼、垃圾邮件或无)  (Defender for Office 365 计划 2) 
 - [对搜寻体验威胁资源管理器](threat-explorer.md#improvements-to-the-threat-hunting-experience-upcoming) 进行了改进，新增了威胁、其他操作、传递位置和更新时间线视图 (Defender for Office 365 计划 2) 

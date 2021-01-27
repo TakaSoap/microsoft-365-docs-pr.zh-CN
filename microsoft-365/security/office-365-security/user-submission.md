@@ -8,7 +8,6 @@ manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: how-to
-ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -16,12 +15,14 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 description: 管理员可以了解如何配置邮箱以收集用户报告的垃圾邮件和网络钓鱼电子邮件。
-ms.openlocfilehash: 8f9da620643d46bf21a18eccc2047ad4361832cc
-ms.sourcegitcommit: cc354fd54400be0ff0401f60bbe68ed975b69cda
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: 9759bbae1dc49b80859198e11e6f85383cdf2f66
+ms.sourcegitcommit: cbe8724bd71d1c002395d98f1451c5f578c824f9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "49865054"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "49988124"
 ---
 # <a name="user-submissions-policy"></a>用户提交策略
 
@@ -39,7 +40,7 @@ ms.locfileid: "49865054"
 - [Outlook for iOS 和 Outlook for Android 中的内置报告](report-junk-email-and-phishing-scams-in-outlook-for-iOS-and-Android.md)
 
   > [!NOTE]
-  > 如果在 Web 上的 [Outlook](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md#disable-or-enable-junk-email-reporting-in-outlook-on-the-web)中禁用报告，则在此处启用用户提交将覆盖该设置，并使用户能够在 Outlook 网页中再次报告邮件。
+  > 如果在 Web 上的 [Outlook](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md#disable-or-enable-junk-email-reporting-in-outlook-on-the-web)中禁用了报告，则在此处启用用户提交将覆盖该设置，并使用户能够在 Outlook 网页中再次报告邮件。
 
 还可以配置第三方邮件报告工具，将邮件转发到指定的邮箱。
 
@@ -49,7 +50,7 @@ ms.locfileid: "49865054"
 
 使用以下文章配置必备组件，以便用户报告的邮件转到自定义邮箱：
 
-- 通过创建 Exchange 邮件流规则来设置垃圾邮件可信度，跳过对自定义邮箱的垃圾邮件筛选。 [请参阅使用 EAC 创建邮件流规则，将邮件的 SCL](use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md#use-the-eac-to-create-a-mail-flow-rule-that-sets-the-scl-of-a-message)设置为 **-1。**
+- 通过创建 Exchange 邮件流规则来设置垃圾邮件可信度，跳过对自定义邮箱的垃圾邮件筛选。 请参阅 [使用 EAC 创建邮件流规则，将邮件的 SCL](use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md#use-the-eac-to-create-a-mail-flow-rule-that-sets-the-scl-of-a-message)设置为 **-1。**
 
 - 关闭对自定义邮箱中恶意软件的扫描附件。 使用 [Defender for Office 365](set-up-atp-safe-attachments-policies.md)中的"设置安全附件"策略创建安全附件策略，并针对安全附件未知恶意软件响应设置"关闭 **"。**
 
@@ -57,7 +58,7 @@ ms.locfileid: "49865054"
 
 - 创建反恶意软件策略以关闭恶意软件零时差自动清除。 请参阅 [使用安全&](configure-your-spam-filter-policies.md#use-the-security--compliance-center-to-create-anti-spam-policies)合规中心创建反恶意软件策略，将 **恶意软件零时差自动清除****设置为关闭**。
 
-- 创建垃圾邮件筛选器策略，以禁用对自定义邮箱中的 (和网络钓鱼的 ZAP) 零时差自动清除策略。 请参阅 [使用安全&](configure-your-spam-filter-policies.md#use-the-security--compliance-center-to-create-anti-spam-policies) 合规中心创建反垃圾邮件策略，并清除 **垃圾邮件** **ZAP** 和 **网络钓鱼 ZAP** 的 On 复选框。
+- 创建垃圾邮件筛选器策略，以禁用对自定义邮箱中的 (和网络钓鱼的 ZAP) 零时差自动清除。 请参阅 [使用安全&](configure-your-spam-filter-policies.md#use-the-security--compliance-center-to-create-anti-spam-policies) 合规中心创建反垃圾邮件策略，并清除 **垃圾邮件** **ZAP** 和 **网络钓鱼 ZAP** 的 On 复选框。
 
 - 禁用自定义邮箱中的垃圾邮件规则。 使用 [配置 Exchange Online 邮箱上的垃圾邮件设置禁用](configure-junk-email-settings-on-exo-mailboxes.md) 垃圾邮件规则。 禁用后，EOP 无法根据垃圾邮件筛选裁定操作将邮件移动到"垃圾邮件"文件夹或邮箱的安全列表集合，将邮件移动到"垃圾邮件"文件夹。
 
@@ -72,13 +73,22 @@ ms.locfileid: "49865054"
   - [安全和合规中心](permissions-in-the-security-and-compliance-center.md)中的“**组织管理**”或“**安全管理员**”。
   - **Exchange** [Online 中的组织管理](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups)。
 
+- 您需要访问 Exchange Online PowerShell。 如果您尝试使用的帐户无法访问 Exchange Online PowerShell，则指定提交邮箱时将收到如下所示的错误：
+
+  > 在域中指定电子邮件地址
+
+  有关启用或禁用对 Exchange Online PowerShell 的访问详细信息，请参阅下列主题：
+
+  - [启用或禁用对 Exchange Online PowerShell 的访问](https://docs.microsoft.com/powershell/exchange/disable-access-to-exchange-online-powershell) 
+  - [Exchange Online 中的客户端访问规则](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/client-access-rules/client-access-rules)
+
 ## <a name="use-the-security--compliance-center-to-configure-the-user-submissions-mailbox"></a>使用安全&合规中心配置用户提交邮箱
 
 1. 在安全&中心，转到 **"威胁管理** \> **策略** \> **用户提交"。**
 
 2. 在 **出现的"用户** 提交"页中，选择以下选项之一：
 
-   1. **为 Outlook (推荐**) 启用"报告邮件"功能：如果使用"报告邮件"加载项、"报告钓鱼"加载项或 Outlook 网页中的内置报告，请选择此选项，然后配置以下设置：
+   1. 为 **Outlook (推荐**) 启用"报告邮件"功能：如果使用"报告邮件"加载项、"报告钓鱼"加载项或 Outlook 网页中的内置报告，请选择此选项，然后配置以下设置：
 
       - **自定义最终用户确认消息**：单击此链接。 在 **出现的"自定义确认** 消息"飞出中，配置以下设置：
 
@@ -86,7 +96,7 @@ ms.locfileid: "49865054"
 
         如前所述，如果您选择将报告的邮件发送到 Microsoft 的选项，还会将以下文本添加到通知中：
 
-        > 你的电子邮件将像现在一样提交到 Microsoft 进行分析。 某些电子邮件可能包含个人或敏感信息。
+        > 你的电子邮件将像现在一样提交到 Microsoft 进行分析。 某些电子邮件可能包含个人信息或敏感信息。
 
       - **提交后**：单击 ![ 展开图标 ](../../media/scc-expand-icon.png) 。 在 **"标题** 和确认"消息框中，输入用户在使用"报告邮件"加载项或"报告网络钓鱼"外接程序报告邮件后看到的描述性文本。 可以使用变量 %type% 包含提交类型。
 

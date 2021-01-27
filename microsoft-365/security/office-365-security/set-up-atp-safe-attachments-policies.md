@@ -7,7 +7,6 @@ author: chrisda
 manager: dansimp
 audience: Admin
 ms.topic: how-to
-ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -17,12 +16,14 @@ ms.collection:
 - M365-security-compliance
 description: 了解如何定义安全附件策略来保护组织免受电子邮件中的恶意文件的攻击。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 8dfdcc0779fb8b8438ee7a63d2f0e180cbb12ac9
-ms.sourcegitcommit: ec293978e951b09903b79e6642aa587824935e0c
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: 5a26d214fe99d0053bf178d7d85a0b526d64f887
+ms.sourcegitcommit: cbe8724bd71d1c002395d98f1451c5f578c824f9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "49780504"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "49988076"
 ---
 # <a name="set-up-safe-attachments-policies-in-microsoft-defender-for-office-365"></a>在 Microsoft Defender for Office 365 中设置安全附件策略
 
@@ -51,7 +52,7 @@ ms.locfileid: "49780504"
 在 Exchange Online PowerShell 或独立 EOP PowerShell 中，单独管理策略和规则。 有关详细信息，请参阅本文稍后介绍的"使用 Exchange Online PowerShell 或独立 [EOP PowerShell](#use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-safe-attachments-policies) 配置安全附件策略"部分。
 
 > [!NOTE]
-> 在安全附件设置的全局设置区域中，配置不依赖于安全附件策略的功能。 有关说明，请参阅在[Microsoft 365 E5](safe-docs.md)中打开[适用于 SharePoint、OneDrive](turn-on-atp-for-spo-odb-and-teams.md)以及 Microsoft Teams 和安全文档的 ATP。
+> 在安全附件设置的全局设置区域中，配置不依赖于安全附件策略的功能。 有关说明，请参阅在[Microsoft 365 E5](safe-docs.md)中打开[SharePoint、OneDrive](turn-on-atp-for-spo-odb-and-teams.md)以及 Microsoft Teams 和安全文档的安全附件。
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>开始前，有必要了解什么？
 
@@ -60,10 +61,10 @@ ms.locfileid: "49780504"
 - 若要连接到 Exchange Online PowerShell，请参阅[连接到 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)。 若要连接到独立 EOP PowerShell，请参阅[连接到 Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell)。
 
 - 您需获得权限，然后才能执行本文中的过程：
-  - 若要创建、修改和删除安全链接策略，您需要是安全 & 合规中心组织管理或安全管理员角色组的成员以及 Exchange Online 中的组织管理角色组的成员。 
+  - 若要创建、修改和删除安全链接策略，您需要是安全与合规中心内组织管理或安全管理员角色组的成员和 Exchange Online 中的组织管理角色组的成员。 & 
   - 若要对安全链接策略进行只读访问，你需要是安全与合规中心内全局读者或安全读者角色&的成员。
 
-  有关详细信息，请参阅安全与 [合规](permissions-in-the-security-and-compliance-center.md) 中心&和 [Exchange Online 中的权限](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo)。
+  有关详细信息，请参阅 [安全与合规](permissions-in-the-security-and-compliance-center.md) 中心&和 [Exchange Online 中的权限](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo)。
 
   **注意**：
 
@@ -102,15 +103,15 @@ ms.locfileid: "49780504"
 
      这些值在安全附件 [策略设置中进行了解释](atp-safe-attachments.md#safe-attachments-policy-settings)。
 
-   - 将附件发送到以下电子邮件地址：对于操作值Block、Monitor或 **Replace，** 可以选择"启用重定向"，将包含恶意软件附件的邮件发送到指定的内部或外部电子邮件地址进行分析和调查。
+   - 将附件发送到以下电子邮件地址：对于操作值Block、Monitor或 **Replace，** 可以选择"启用重定向"，将包含恶意软件附件的邮件发送到指定的内部或外部电子邮件地址，以便进行分析和调查。
 
      对于"标准"和"严格"策略设置的建议是启用重定向。 有关详细信息，请参阅安全 [附件设置](recommended-settings-for-eop-and-office365-atp.md#safe-attachments-settings)。
 
-   - **如果附件的恶意软件** 扫描次数或出现错误，则应用上述选择：即使安全附件扫描无法完成，对邮件执行安全附件未知恶意软件响应指定的操作。 如果选择了"已启用重定向"，请始终 **选择此选项**。 否则，邮件可能会丢失。
+   - **如果附件的恶意软件** 扫描次数或出现错误，则应用上述选择：即使安全附件扫描无法完成，对邮件执行安全附件未知恶意软件响应指定的操作。 如果选择此选项，请始终选择"**已启用重定向"。** 否则，邮件可能会丢失。
 
    完成后，单击“下一步”。
 
-5. 在 **出现的"应用于** "页上，标识策略应用于的内部收件人。
+5. 在 **出现的"应用于** "页上，标识策略所适用的内部收件人。
 
    只能使用一次条件或例外，但可以为条件或例外指定多个值。 同一个条件或例外的多个值使用“或”逻辑（例如，_\<recipient1\>_ 或 _\<recipient2\>_）。 不同的条件或例外使用“和”逻辑（例如，_\<recipient1\>_ 和 _\<member of group 1\>_）。
 
@@ -120,9 +121,9 @@ ms.locfileid: "49780504"
    - **收件人是：** 指定组织中一个或多个组的成员。
    - **收件人域是**：指定你的组织中配置的一个或多个接受的域中的收件人。
 
-   选择条件后，将显示相应的下拉列表，其中任一 **框** 都显示。
+   选择条件后，将显示相应的下拉列表，其中显示其中 **任何** 一个框。
 
-   - 在框中单击并滚动浏览要选择的值列表。
+   - 在框中单击并滚动要选择的值列表。
    - 在框中单击并开始键入以筛选列表并选择一个值。
    - 若要添加其他值，请单击框中的空白区域。
    - 若要删除单个条目 **，请单击值** ![ 上的" ](../../media/scc-remove-icon.png) 删除"图标。
@@ -188,7 +189,7 @@ ms.locfileid: "49780504"
 
    - 优先级值为 **0** **的安全附件** 策略只有"**减少优先级"按钮** 可用。
 
-   - 优先级值最低的安全附件策略 (例如 **，3**) 只有"增加 **优先级"按钮** 可用。
+   - 优先级值最低的安全附件策略 (例如 **，3**) 只有"增加优先级 **"按钮** 可用。
 
    - 如果你有三个或多个安全附件策略，则最高优先级值和最低优先级值之间的策略同时具有"增加 **优先级** "和" **降低优先级"** 按钮。
 
@@ -208,7 +209,7 @@ ms.locfileid: "49780504"
 
 如前所述，安全附件策略由安全附件策略和安全附件规则组成。
 
-在 PowerShell 中，安全附件策略和安全附件规则的区别显而易见。 您可以使用 **\* -SafeAttachmentPolicy** cmdlet 管理安全附件策略，然后使用 **\* -SafeAttachmentRule** cmdlet 管理安全附件规则。
+在 PowerShell 中，安全附件策略和安全附件规则的区别很明显。 您可以使用 **\* -SafeAttachmentPolicy** cmdlet 管理安全附件策略，然后使用 **\* -SafeAttachmentRule** cmdlet 管理安全附件规则。
 
 - 在 PowerShell 中，首先创建安全附件策略，然后创建安全附件规则，以标识该规则所适用的策略。
 - 在 PowerShell 中，可以分别修改安全附件策略和安全附件规则中的设置。
@@ -225,7 +226,7 @@ ms.locfileid: "49780504"
 
 - 可以创建新的安全附件规则，并为其分配现有的未关联的安全附件策略。 安全附件规则不能与多个安全附件策略关联。
 
-- 可以在 PowerShell 中的新安全附件策略上配置以下设置，这些策略在创建策略之前在安全与合规&中心内不可用：
+- 可以在 PowerShell 中的新安全附件策略上配置以下设置，这些策略在创建策略之前&安全与合规中心内不可用：
   - 在 `$false` **New-SafeAttachmentRule** cmdlet (上创建禁用的新) 。
   - 在 _\<Number\>_ **New-SafeAttachmentRule** cmdlet (中) 策略优先级设置策略) 。
 
@@ -239,7 +240,7 @@ ms.locfileid: "49780504"
 New-SafeAttachmentPolicy -Name "<PolicyName>" [-AdminDisplayName "<Comments>"] [-Action <Allow | Block | Replace | DynamicDelivery>] [-Redirect <$true | $false>] [-RedirectAddress <SMTPEmailAddress>] [-ActionOnError <$true | $false>]
 ```
 
-此示例创建一个名为"Contoso All"的安全附件策略，并具有以下值：
+此示例创建一个名为 Contoso All 的安全附件策略，并具有以下值：
 
 - 阻止通过安全文档扫描发现包含恶意软件的邮件 (我们未使用 _Action_ 参数，并且默认值为 `Block`) 。
 - 启用重定向，发现包含恶意软件的邮件将发送到sec-ops@contoso.com进行分析和调查。
@@ -292,7 +293,7 @@ Get-SafeAttachmentPolicy
 Get-SafeAttachmentPolicy -Identity "Contoso Executives" | Format-List
 ```
 
-有关语法和参数的详细信息，请参阅 [Get-SafeAttachmentPolicy](https://docs.microsoft.com/powershell/module/exchange/get-safeattachmentpolicy)。
+有关语法和参数的详细信息，请参阅[Get-SafeAttachmentPolicy。](https://docs.microsoft.com/powershell/module/exchange/get-safeattachmentpolicy)
 
 ### <a name="use-powershell-to-view-safe-attachment-rules"></a>使用 PowerShell 查看安全附件规则
 
@@ -328,7 +329,7 @@ Get-SafeAttachmentRule -Identity "Contoso Executives" | Format-List
 
 ### <a name="use-powershell-to-modify-safe-attachment-policies"></a>使用 PowerShell 修改安全附件策略
 
-如果 **Set-SafeAttachmentPolicy** cmdlet 没有 Name 参数，则 (_PowerShell_ 中重命名安全附件) 。 在安全与合规中心重命名安全&策略时，你仅重命名安全附件 _规则_。
+如果 **Set-SafeAttachmentPolicy** cmdlet 没有 Name 参数，则 (_PowerShell_ 中重命名安全附件) 。 在安全与合规中心内重命名安全&策略时，你仅重命名安全附件 _规则_。
 
 否则，当您创建安全附件策略时，可以使用如本文前面步骤 1 中所述的相同设置：使用 [PowerShell](#step-1-use-powershell-to-create-a-safe-attachment-policy) 创建安全附件策略部分。
 
@@ -438,7 +439,7 @@ Remove-SafeAttachmentRule -Identity "Marketing Department"
 
 若要验证您是否已成功创建、修改或删除安全附件策略，请执行下列任一步骤：
 
-- 在安全&中心，转到 **"威胁管理** \> **策略** \> **ATP 安全附件"。** 验证策略的列表、 **其状态** 值及其 **优先级** 值。 若要查看更多详细信息，请从列表中选择策略，然后查看飞出中的详细信息。
+- 在安全&中心，转到 **"威胁管理** \> **策略** \> **ATP 安全附件"。** 验证策略列表、其 **状态** 值及其 **优先级** 值。 若要查看更多详细信息，请从列表中选择策略，然后查看飞出中的详细信息。
 
 - 在 Exchange Online PowerShell 或 Exchange Online Protection PowerShell 中，替换为策略或规则的名称，运行以下命令并 \<Name\> 验证设置：
 

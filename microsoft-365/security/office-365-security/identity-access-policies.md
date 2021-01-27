@@ -19,12 +19,12 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 ms.technology: mdo
-ms.openlocfilehash: a928044df2c4185cff71db4883dcc1ddf30cdf3e
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 511f044960c5b723c8e10f6644007036c45d1f44
+ms.sourcegitcommit: cbe8724bd71d1c002395d98f1451c5f578c824f9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49932582"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "49988088"
 ---
 # <a name="common-identity-and-device-access-policies"></a>常见标识和设备访问策略
 
@@ -36,7 +36,7 @@ ms.locfileid: "49932582"
 
 下图演示了建议的策略集。 它显示每个策略所适用的保护层，以及策略是应用于电脑、手机和平板电脑，还是适用于这两类设备。 它还指示配置这些策略的地方。
 
-[![用于配置标识和设备访问的常见策略](../../media/microsoft-365-policies-configurations/Identity_device_access_policies_byplan.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/Identity_device_access_policies_byplan.png)
+[![配置标识和设备访问的常见策略](../../media/microsoft-365-policies-configurations/Identity_device_access_policies_byplan.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/Identity_device_access_policies_byplan.png)
 
 [查看此图像的较大版本](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/Identity_device_access_policies_byplan.png)
 
@@ -55,13 +55,13 @@ ms.locfileid: "49932582"
 |---|---|---|
 |**Baseline**|[当登录风险为中或高 *时需要* MFA](#require-mfa-based-on-sign-in-risk)||
 ||[阻止不支持新式身份验证的客户端](#block-clients-that-dont-support-modern-authentication)|不使用新式身份验证的客户端可以绕过条件访问策略，因此阻止这些策略非常重要。|
-||[高风险用户必须更改密码](#high-risk-users-must-change-password)|如果检测到其帐户存在高风险活动，则强制用户在登录时更改其密码。|
+||[高风险用户必须更改密码](#high-risk-users-must-change-password)|如果为用户的帐户检测到高风险活动，则强制用户在登录时更改其密码。|
 ||[应用应用数据保护策略](#apply-app-data-protection-policies)|每个平台的一个 Intune 应用保护策略 (Windows、iOS/iPadOS、Android) 。|
 ||[需要批准的应用和应用保护](#require-approved-apps-and-app-protection)|使用 iOS、iPadOS 或 Android 对手机和平板电脑强制执行移动应用保护。|
 ||[定义设备合规性策略](#define-device-compliance-policies)|每个平台一个策略。|
 ||[需要兼容电脑](#require-compliant-pcs-but-not-compliant-phones-and-tablets)|使用 Windows 或 MacOS 强制执行电脑的 Intune 管理。|
 |**敏感**|[当登录风险较低、中等或高时 *需要* MFA](#require-mfa-based-on-sign-in-risk)||
-||[要求 *兼容电脑和* 移动设备](#require-compliant-pcs-and-mobile-devices)|对 Windows 或 MacOS (和手机) 平板电脑（iOS、iPadOS 或 Android (）强制执行 Intune) 。|
+||[要求兼容电脑 *和* 移动设备](#require-compliant-pcs-and-mobile-devices)|对 Windows 或 MacOS (电脑和) iOS、iPadOS 或 Android (电脑强制执行 Intune) 。|
 |**高度管控**|[*始终* 需要 MFA](#require-mfa-based-on-sign-in-risk)|
 |
 
@@ -104,7 +104,7 @@ ms.locfileid: "49932582"
 3. 在"**管理**"列表中，**选择"安全性**"，然后选择"**条件访问"。**
 4. 选择 **"新建** 策略"并键入新策略的名称。
 
-下表介绍了根据登录风险要求 MFA 的条件访问策略设置。
+下表介绍了条件访问策略设置，要求基于登录风险进行 MFA。
 
 在 **"分配"** 部分：
 
@@ -169,7 +169,7 @@ ms.locfileid: "49932582"
 
 选择 **"** 选择"保存 **"授予"** 设置。
 
-最后，为 **启用策略选择"打开****"，** 然后选择"**创建"。**
+最后，选择 **"启用****"策略，** 然后选择"**创建"。**
 
 请考虑使用 [What if](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-whatif) 工具测试策略。
 
@@ -193,7 +193,7 @@ Log in to the [Microsoft Azure portal (https://portal.azure.com)](https://portal
 
 |类型|属性|值|操作|
 |---|---|---|---|
-|访问|**允许访问**||Select|
+|Access|**允许访问**||Select|
 |||**需要更改密码**|支票|
 |
 
@@ -203,7 +203,7 @@ Log in to the [Microsoft Azure portal (https://portal.azure.com)](https://portal
 
 请考虑使用 [What if](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-whatif) 工具测试策略。
 
-结合配置 [Azure AD](https://docs.microsoft.com/azure/active-directory/authentication/concept-password-ban-bad)密码保护使用此策略，可检测和阻止已知的弱密码及其变体以及特定于您的组织的其他弱术语。 使用 Azure AD 密码保护可确保已更改的密码是强密码。
+结合配置 [Azure AD](https://docs.microsoft.com/azure/active-directory/authentication/concept-password-ban-bad)密码保护使用此策略，可检测和阻止已知的弱密码及其变体以及特定于您的组织的其他弱术语。 使用 Azure AD 密码保护可确保更改的密码是强密码。
 
 ## <a name="apply-app-data-protection-policies"></a>应用 APP 数据保护策略
 
@@ -211,13 +211,13 @@ APP (策略) 定义允许哪些应用以及这些应用可以使用组织数据�
 
 APP 数据保护框架分为三个不同的配置级别，每个级别都从上一级别构建：
 
-- **企业基本数据保护 (** 级别 1) 可确保应用使用 PIN 进行保护并加密，并执行选择性擦除操作。 对于 Android 设备，此级别验证 Android 设备证明。 这是一种入口点配置，在 Exchange Online 邮箱策略中提供类似的数据保护控制，并且向 APP 引入了 IT 和用户总体。
+- **企业基本数据保护 (** 级别 1) 可确保应用使用 PIN 进行保护并加密，并执行选择性擦除操作。 对于 Android 设备，此级别验证 Android 设备证明。 这是一个入口点配置，在 Exchange Online 邮箱策略中提供类似的数据保护控制，并且向 APP 引入了 IT 和用户总体。
 - **企业增强的数据保护 (** 级别 2) 引入了 APP 数据泄露防护机制和最低操作系统要求。 这是适用于访问工作或学校数据的大多数移动用户的配置。
 - **企业高级数据保护 (** 级别 3) 引入了高级数据保护机制、增强的 PIN 配置和 APP 移动威胁防护。 访问高风险数据的用户需要此配置。
 
 To see the specific recommendations for each configuration level and the minimum apps that must be protected， review [Data protection framework using app protection policies.](https://docs.microsoft.com/mem/intune/apps/app-protection-framework)
 
-使用标识和设备访问配置中概述[](microsoft-365-policies-configurations.md)的原则，基线和敏感保护层与级别 2 企业增强的数据保护设置紧密映射。 高度管控保护层紧密映射到级别 3 企业高数据保护设置。
+使用标识和设备访问配置中概述[](microsoft-365-policies-configurations.md)的原则，基线和敏感保护层与级别 2 企业增强数据保护设置紧密映射。 高度管控保护层紧密映射到级别 3 企业高数据保护设置。
 
 |保护级别|应用保护策略|更多信息|
 |---|---|---|
@@ -237,14 +237,16 @@ To see the specific recommendations for each configuration level and the minimum
 
 强制执行 APP 保护策略需要一组策略，如"需要应用保护策略"中所述，用于通过条件 [访问访问云应用](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access)。 每个策略都包含在此推荐的标识和访问配置策略集内。
 
-若要创建需要已批准应用和应用保护的条件访问策略，请按照方案 1 中的"步骤 1：为 Microsoft 365 配置 Azure AD 条件访问策略"操作 [：Microsoft 365](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access#scenario-1-office-365-apps-require-approved-apps-with-app-protection-policies)应用需要具有应用保护策略的已批准应用，该策略允许 Outlook for iOS 和 Outlook for Android，但阻止支持 OAuth 的 Exchange ActiveSync 客户端连接到 Exchange Online。
+若要创建需要已批准应用和应用保护的条件访问策略，请按照方案 1 中的"步骤 1：为 Microsoft 365 配置 Azure AD 条件访问策略 ["：Microsoft 365](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access#scenario-1-office-365-apps-require-approved-apps-with-app-protection-policies)应用需要具有应用保护策略的已批准应用，该策略允许 Outlook for iOS 和 Outlook for Android，但阻止支持 OAuth 的 Exchange ActiveSync 客户端连接到 Exchange Online。
 
    > [!NOTE]
    > 此策略可确保移动用户可以使用适用的应用访问所有 Office 终结点。
 
 如果要启用对 Exchange Online 的移动访问，请实现阻止 [ActiveSync](secure-email-recommended-policies.md#block-activesync-clients)客户端，这将Exchange ActiveSync利用基本身份验证的客户端连接到 Exchange Online。 此策略未在本文顶部的图中显示。 它在用于保护电子邮件的策略[建议中进行了描述和图片。](secure-email-recommended-policies.md)
 
- 这些策略利用授权控件["需要批准的客户端应用"和](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-grant#require-approved-client-app)"[需要应用保护策略"。](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-grant#require-app-protection-policy)
+若要创建需要适用于 iOS 和 Android 的边缘的条件访问策略，请按照方案 2 中的"步骤 [2：](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access#scenario-2-browser-apps-require-approved-apps-with-app-protection-policies)为 Microsoft 365 配置 Azure AD 条件访问策略"：浏览器应用需要具有应用保护策略的已批准应用，该策略允许 Edge 用于 iOS 和 Android，但阻止其他移动设备 Web 浏览器连接到 Microsoft 365 终结点。
+
+ 这些策略利用授权控件["需要批准的客户端应用](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-grant#require-approved-client-app)"和["需要应用保护策略"。](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-grant#require-app-protection-policy)
 
 最后，阻止 iOS 和 Android 设备上其他客户端应用的旧身份验证可确保这些客户端无法绕过条件访问策略。 如果你正在按照本文中的指南操作，则已经配置了不支持新式验证 [的阻止客户端](#block-clients-that-dont-support-modern-authentication)。
 
@@ -267,7 +269,7 @@ With Conditional Access, organizations can restrict access to approved (modern a
 
 设备合规性策略定义设备必须满足的要求，以被确定为合规。 从 Microsoft Endpoint Manager 管理中心内创建 Intune 设备合规性策略。
 
-必须为每个电脑、手机或平板电脑平台创建策略：
+你必须为每个电脑、手机或平板电脑平台创建策略：
 
 - Android 设备管理员
 - Android 企业版
@@ -325,27 +327,27 @@ With Conditional Access, organizations can restrict access to approved (modern a
 
 |类型|属性|值|操作|
 |---|---|---|---|
-|适用于终结点的 Microsoft Defender 规则|要求设备处于计算机风险分数或处于计算机风险分数之下|中|Select|
+|Microsoft Defender for Endpoint 规则|要求设备处于计算机风险分数或处于计算机风险分数之下|中|Select|
 |
 
 ## <a name="require-compliant-pcs-but-not-compliant-phones-and-tablets"></a>要求符合标准的电脑 (但不符合标准的手机和平板电脑) 
 
-在添加策略以要求兼容电脑之前，请务必将设备注册到 Intune 中以用于管理。 建议在将设备注册到 Intune 之前使用多重身份验证，确保设备由目标用户拥有。
+在添加策略以要求兼容电脑之前，请务必将设备注册到 Intune 中以用于管理。 建议在将设备注册到 Intune 中之前使用多重身份验证，确保设备由目标用户拥有。
 
 若要要求兼容电脑：
 
 1. 转到 [Azure 门户](https://portal.azure.com)，然后使用你的凭据登录。
-2. 在 Azure 服务列表中，选择 **"Azure Active Directory"。**
+2. 在 Azure 服务列表中，选择 **Azure Active Directory。**
 3. 在"**管理**"列表中，**选择"安全性**"，然后选择"**条件访问"。**
 4. 选择 **"新建** 策略"并键入新策略的名称。
 
-5. 在 **"****分配"下**，选择"用户和组"，并包括您希望策略应用于的用户。 此外，排除条件访问排除组。
+5. 在 **"分配**" **下** ，选择"用户和组"，并包括您希望策略应用于的用户。 此外，排除条件访问排除组。
 
 6. 在 **"分配"** 下 **，选择云应用或操作**。
 
-7. 对于 **"包含**"， **选择>选择**"，然后从"云应用" **列表中选择所需的** 应用。 例如，选择 Exchange Online。 选择 **"完成** 时选择"。
+7. 对于 **"包含****"，>** 选择应用，然后从云应用列表中选择 **所需的** 应用。 例如，选择 Exchange Online。 选择 **"完成** 时选择"。
 
-8. 若要要求兼容电脑 (兼容手机和平板电脑) ，在"分配"下，选择">**设备平台"。**  选择 **"是** "进行 **配置**。 选择 **"选择设备平台**"，**选择 Windows** 和 **macOS，** 然后选择"**完成"。**
+8. 若要要求兼容电脑 (兼容手机和平板电脑) ，在"分配"下，选择"条件>**设备平台。**  选择 **"是** "进行 **配置**。 选择 **"选择设备平台**"，**选择 Windows** 和 **macOS，** 然后选择"**完成"。**
 
 9. 在 **"访问控制"** 下，选择"**授予"。**
 
@@ -354,7 +356,7 @@ With Conditional Access, organizations can restrict access to approved (modern a
 11. 选择 **"** 启用 **"策略**，然后选择"**创建"。**
 
 > [!NOTE]
-> 在启用此策略之前，请确保你的设备合规。 否则，你将被锁定，并且将无法更改此策略，直到用户帐户添加到条件访问排除组。
+> 在启用此策略之前，请确保你的设备合规。 否则，在将用户帐户添加到条件访问排除组之前，你将被锁定，并且将不能更改此策略。
 
 ## <a name="require-compliant-pcs-and-mobile-devices"></a>要求 *兼容电脑和* 移动设备
 
@@ -365,7 +367,7 @@ With Conditional Access, organizations can restrict access to approved (modern a
 3. 在"**管理**"列表中，**选择"安全性**"，然后选择"**条件访问"。**
 4. 选择 **"新建** 策略"并键入新策略的名称。
 
-5. 在 **"分配**" **下** ，选择"用户和组"，并包括您希望策略应用于的用户。 此外，排除条件访问排除组。
+5. 在 **"****分配"下**，选择"用户和组"，并包括您希望策略应用于的用户。 此外，排除条件访问排除组。
 
 6. 在 **"分配"** 下 **，选择云应用或操作**。
 
@@ -375,10 +377,10 @@ With Conditional Access, organizations can restrict access to approved (modern a
 
 9. 选择 **"授予** 访问权限"，然后选中"要求 **设备标记为合规"。** 对于多个控件，选择 **"需要所有选定的控件"。** 完成后，选择"**选择"。**
 
-10. 选择 **"** 启用 **"策略**，然后选择"**创建"。**
+10. 选择 **"** 启用 **"策略，** 然后选择"**创建"。**
 
 > [!NOTE]
-> 在启用此策略之前，请确保你的设备合规。 否则，在将用户帐户添加到条件访问排除组之前，你将被锁定，并且将不能更改此策略。
+> 在启用此策略之前，请确保你的设备合规。 否则，你将被锁定，并且将无法更改此策略，直到用户帐户添加到条件访问排除组。
 
 ## <a name="next-step"></a>后续步骤
 
