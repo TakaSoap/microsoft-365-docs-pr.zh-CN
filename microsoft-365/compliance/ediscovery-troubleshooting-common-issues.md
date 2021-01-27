@@ -1,5 +1,5 @@
 ---
-title: 解决常见的电子数据展示问题
+title: 常见电子数据展示问题疑难解答
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -16,192 +16,208 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: 了解在 Office 365 电子数据展示中解决常见问题时可以采取的基本疑难解答步骤。
+description: 了解解决 Office 365 电子数据展示中的常见问题时可以执行的基本疑难解答步骤。
 siblings_only: true
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 4f1bad23705729c15976959a3902501f05da7600
-ms.sourcegitcommit: 1beaf89d2faa32f11fe1613be2fa2b31c4bc4a91
+ms.openlocfilehash: e1fbda23b730956db42d8e7a92218fb9837868b8
+ms.sourcegitcommit: cbe8724bd71d1c002395d98f1451c5f578c824f9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "49602033"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "49988136"
 ---
-# <a name="investigate-troubleshoot-and-resolve-common-ediscovery-issues"></a><span data-ttu-id="5654a-103">调查、解决和解决常见的电子数据展示问题</span><span class="sxs-lookup"><span data-stu-id="5654a-103">Investigate, troubleshoot, and resolve common eDiscovery issues</span></span>
+# <a name="investigate-troubleshoot-and-resolve-common-ediscovery-issues"></a><span data-ttu-id="6d3de-103">调查、排查并解决常见的电子数据展示问题</span><span class="sxs-lookup"><span data-stu-id="6d3de-103">Investigate, troubleshoot, and resolve common eDiscovery issues</span></span>
 
-<span data-ttu-id="5654a-104">本主题介绍了可用于识别和解决电子数据展示搜索或电子数据展示过程中其他位置可能遇到的问题的基本故障排除步骤。</span><span class="sxs-lookup"><span data-stu-id="5654a-104">This topic covers basic troubleshooting steps you can take to identify and resolve issues you may encounter during an eDiscovery search or elsewhere in the eDiscovery process.</span></span> <span data-ttu-id="5654a-105">解决其中一些方案需要 Microsoft 支持方面的帮助。</span><span class="sxs-lookup"><span data-stu-id="5654a-105">Resolving some of these scenarios requires help from Microsoft Support.</span></span> <span data-ttu-id="5654a-106">有关何时与 Microsoft 支持人员联系的信息包括在解决步骤中。</span><span class="sxs-lookup"><span data-stu-id="5654a-106">Information on when to contact Microsoft Support is included in the resolution steps.</span></span>
+<span data-ttu-id="6d3de-104">本主题介绍可用于识别和解决在电子数据展示搜索过程中或电子数据展示过程中其他位置可能遇到的问题的基本疑难解答步骤。</span><span class="sxs-lookup"><span data-stu-id="6d3de-104">This topic covers basic troubleshooting steps you can take to identify and resolve issues you may encounter during an eDiscovery search or elsewhere in the eDiscovery process.</span></span> <span data-ttu-id="6d3de-105">解决其中某些方案需要 Microsoft 支持人员的帮助。</span><span class="sxs-lookup"><span data-stu-id="6d3de-105">Resolving some of these scenarios requires help from Microsoft Support.</span></span> <span data-ttu-id="6d3de-106">有关何时联系 Microsoft 支持部门的信息包含在解决步骤中。</span><span class="sxs-lookup"><span data-stu-id="6d3de-106">Information on when to contact Microsoft Support is included in the resolution steps.</span></span>
 
-## <a name="errorissue-ambiguous-location"></a><span data-ttu-id="5654a-107">错误/问题：不明确的位置</span><span class="sxs-lookup"><span data-stu-id="5654a-107">Error/issue: Ambiguous location</span></span>
+## <a name="errorissue-ambiguous-location"></a><span data-ttu-id="6d3de-107">错误/问题：位置不明确</span><span class="sxs-lookup"><span data-stu-id="6d3de-107">Error/issue: Ambiguous location</span></span>
 
-<span data-ttu-id="5654a-108">如果您尝试将用户的邮箱位置添加到搜索中，并且在 Exchange Online Protection (EOP) 目录中存在具有相同 userID 的重复或冲突的对象，则会收到此错误： `The compliance search contains the following invalid location(s):useralias@contoso.com. The location "useralias@contoso.com" is ambiguous` 。</span><span class="sxs-lookup"><span data-stu-id="5654a-108">If you try to add user's mailbox location to search and there are duplicate or conflicting objects with the same userID in the Exchange Online Protection (EOP) directory, you receive this error: `The compliance search contains the following invalid location(s):useralias@contoso.com. The location "useralias@contoso.com" is ambiguous`.</span></span>
+<span data-ttu-id="6d3de-108">如果您尝试添加用户的邮箱位置进行搜索，并且 Exchange Online Protection (EOP) 目录中存在重复或冲突的对象，则会收到 `The compliance search contains the following invalid location(s):useralias@contoso.com. The location "useralias@contoso.com" is ambiguous` 此错误：</span><span class="sxs-lookup"><span data-stu-id="6d3de-108">If you try to add user's mailbox location to search and there are duplicate or conflicting objects with the same userID in the Exchange Online Protection (EOP) directory, you receive this error: `The compliance search contains the following invalid location(s):useralias@contoso.com. The location "useralias@contoso.com" is ambiguous`.</span></span>
 
-### <a name="resolution"></a><span data-ttu-id="5654a-109">解决方案</span><span class="sxs-lookup"><span data-stu-id="5654a-109">Resolution</span></span>
+### <a name="resolution"></a><span data-ttu-id="6d3de-109">解决方案</span><span class="sxs-lookup"><span data-stu-id="6d3de-109">Resolution</span></span>
 
-<span data-ttu-id="5654a-110">检查是否存在具有相同用户 ID 的重复用户或通讯组列表。</span><span class="sxs-lookup"><span data-stu-id="5654a-110">Check for duplicate users or distribution list with the same user ID.</span></span>
+<span data-ttu-id="6d3de-110">检查具有相同用户 ID 的重复用户或通讯组列表。</span><span class="sxs-lookup"><span data-stu-id="6d3de-110">Check for duplicate users or distribution list with the same user ID.</span></span>
 
-1. <span data-ttu-id="5654a-111">连接到 [安全 & 合规性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell)。</span><span class="sxs-lookup"><span data-stu-id="5654a-111">Connect to [Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell).</span></span>
+1. <span data-ttu-id="6d3de-111">连接到安全[&合规中心 PowerShell。](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell)</span><span class="sxs-lookup"><span data-stu-id="6d3de-111">Connect to [Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell).</span></span>
 
-2. <span data-ttu-id="5654a-112">运行以下命令以检索用户名的所有实例：</span><span class="sxs-lookup"><span data-stu-id="5654a-112">Run the following command to retrieve all instances of the username:</span></span>
+2. <span data-ttu-id="6d3de-112">运行以下命令以检索用户名的所有实例：</span><span class="sxs-lookup"><span data-stu-id="6d3de-112">Run the following command to retrieve all instances of the username:</span></span>
 
     ```powershell
     Get-Recipient <username>
     ```
 
-   <span data-ttu-id="5654a-113">"Useralias@contoso.com" 的输出将类似于以下内容：</span><span class="sxs-lookup"><span data-stu-id="5654a-113">The output for 'useralias@contoso.com' would be similar to the following:</span></span>
+   <span data-ttu-id="6d3de-113">"useralias@contoso.com"的输出如下所示：</span><span class="sxs-lookup"><span data-stu-id="6d3de-113">The output for 'useralias@contoso.com' would be similar to the following:</span></span>
 
    > 
-   > |<span data-ttu-id="5654a-114">名称</span><span class="sxs-lookup"><span data-stu-id="5654a-114">Name</span></span>|<span data-ttu-id="5654a-115">RecipientType</span><span class="sxs-lookup"><span data-stu-id="5654a-115">RecipientType</span></span>|
+   > |<span data-ttu-id="6d3de-114">名称</span><span class="sxs-lookup"><span data-stu-id="6d3de-114">Name</span></span>|<span data-ttu-id="6d3de-115">RecipientType</span><span class="sxs-lookup"><span data-stu-id="6d3de-115">RecipientType</span></span>|
    > |---|---|
-   > |<span data-ttu-id="5654a-116">别名、用户</span><span class="sxs-lookup"><span data-stu-id="5654a-116">Alias, User</span></span>|<span data-ttu-id="5654a-117">MailUser</span><span class="sxs-lookup"><span data-stu-id="5654a-117">MailUser</span></span>|
-   > |<span data-ttu-id="5654a-118">别名、用户</span><span class="sxs-lookup"><span data-stu-id="5654a-118">Alias, User</span></span>|<span data-ttu-id="5654a-119">User</span><span class="sxs-lookup"><span data-stu-id="5654a-119">User</span></span>|
+   > |<span data-ttu-id="6d3de-116">别名、用户</span><span class="sxs-lookup"><span data-stu-id="6d3de-116">Alias, User</span></span>|<span data-ttu-id="6d3de-117">MailUser</span><span class="sxs-lookup"><span data-stu-id="6d3de-117">MailUser</span></span>|
+   > |<span data-ttu-id="6d3de-118">别名、用户</span><span class="sxs-lookup"><span data-stu-id="6d3de-118">Alias, User</span></span>|<span data-ttu-id="6d3de-119">用户</span><span class="sxs-lookup"><span data-stu-id="6d3de-119">User</span></span>|
 
-3. <span data-ttu-id="5654a-120">如果返回多个用户，请找到并修复冲突的对象。</span><span class="sxs-lookup"><span data-stu-id="5654a-120">If multiple users are returned, locate and fix the conflicting object.</span></span>
+3. <span data-ttu-id="6d3de-120">如果返回多个用户，请找到并修复冲突对象。</span><span class="sxs-lookup"><span data-stu-id="6d3de-120">If multiple users are returned, locate and fix the conflicting object.</span></span>
 
-## <a name="errorissue-search-fails-on-specific-locations"></a><span data-ttu-id="5654a-121">错误/问题：搜索在特定位置失败</span><span class="sxs-lookup"><span data-stu-id="5654a-121">Error/issue: Search fails on specific locations</span></span>
+## <a name="errorissue-search-fails-on-specific-locations"></a><span data-ttu-id="6d3de-121">错误/问题：搜索特定位置失败</span><span class="sxs-lookup"><span data-stu-id="6d3de-121">Error/issue: Search fails on specific locations</span></span>
 
-<span data-ttu-id="5654a-122">电子数据展示或内容搜索可能会产生以下错误： `This search completed with (#) errors.  Would you like to retry the search on the failed locations?`</span><span class="sxs-lookup"><span data-stu-id="5654a-122">An eDiscovery or content search may yield the following error: `This search completed with (#) errors.  Would you like to retry the search on the failed locations?`</span></span>
+<span data-ttu-id="6d3de-122">电子数据展示或内容搜索可能会生成以下错误： `This search completed with (#) errors.  Would you like to retry the search on the failed locations?`</span><span class="sxs-lookup"><span data-stu-id="6d3de-122">An eDiscovery or content search may yield the following error: `This search completed with (#) errors.  Would you like to retry the search on the failed locations?`</span></span>
 
-![搜索特定位置发生错误屏幕截图](../media/edisc-tshoot-specific-location-search-fails.png)
+![搜索特定位置失败错误屏幕截图](../media/edisc-tshoot-specific-location-search-fails.png)
 
-### <a name="resolution"></a><span data-ttu-id="5654a-124">解决方案</span><span class="sxs-lookup"><span data-stu-id="5654a-124">Resolution</span></span>
+### <a name="resolution"></a><span data-ttu-id="6d3de-124">解决方案</span><span class="sxs-lookup"><span data-stu-id="6d3de-124">Resolution</span></span>
 
-<span data-ttu-id="5654a-125">如果您收到此错误，我们建议您验证在搜索中失败的位置，然后仅在失败的位置上运行搜索。</span><span class="sxs-lookup"><span data-stu-id="5654a-125">If you receive this error, we recommend that you verify the locations that failed in the search  then rerun the search only on the failed locations.</span></span>
+<span data-ttu-id="6d3de-125">如果收到此错误，建议您验证搜索失败的位置，然后仅在失败的位置重新运行搜索。</span><span class="sxs-lookup"><span data-stu-id="6d3de-125">If you receive this error, we recommend that you verify the locations that failed in the search  then rerun the search only on the failed locations.</span></span>
 
-1. <span data-ttu-id="5654a-126">连接到 [安全 & 合规性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell) ，然后运行以下命令：</span><span class="sxs-lookup"><span data-stu-id="5654a-126">Connect to [Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell) and then run the following command:</span></span>
+1. <span data-ttu-id="6d3de-126">连接到 [安全&合规中心 PowerShell，](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell) 然后运行以下命令：</span><span class="sxs-lookup"><span data-stu-id="6d3de-126">Connect to [Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell) and then run the following command:</span></span>
 
    ```powershell
    Get-ComplianceSearch <searchname> | FL
    ```
 
-2. <span data-ttu-id="5654a-127">从 PowerShell 输出中，查看 "错误" 字段中的失败位置或从搜索输出中的错误的状态详细信息。</span><span class="sxs-lookup"><span data-stu-id="5654a-127">From the PowerShell output, view the failed locations in the errors field or from the status details in the error from the search output.</span></span>
+2. <span data-ttu-id="6d3de-127">从 PowerShell 输出中，从搜索输出中查看错误字段中的失败位置或错误的状态详细信息。</span><span class="sxs-lookup"><span data-stu-id="6d3de-127">From the PowerShell output, view the failed locations in the errors field or from the status details in the error from the search output.</span></span>
 
-3. <span data-ttu-id="5654a-128">仅重试失败位置上的电子数据展示搜索。</span><span class="sxs-lookup"><span data-stu-id="5654a-128">Retry the eDiscovery search on the failed locations only.</span></span>
+3. <span data-ttu-id="6d3de-128">仅对失败的位置重试电子数据展示搜索。</span><span class="sxs-lookup"><span data-stu-id="6d3de-128">Retry the eDiscovery search on the failed locations only.</span></span>
 
-4. <span data-ttu-id="5654a-129">如果继续收到这些错误，请参阅 [重试失败的位置](https://docs.microsoft.com/Office365/SecurityCompliance/retry-failed-content-search) 以了解更多疑难解答步骤。</span><span class="sxs-lookup"><span data-stu-id="5654a-129">If you continue to receive these errors, see [Retry failed locations](https://docs.microsoft.com/Office365/SecurityCompliance/retry-failed-content-search) for more troubleshooting steps.</span></span>
+4. <span data-ttu-id="6d3de-129">如果继续收到这些错误，请参阅" [重试失败位置](https://docs.microsoft.com/Office365/SecurityCompliance/retry-failed-content-search) "了解更多疑难解答步骤。</span><span class="sxs-lookup"><span data-stu-id="6d3de-129">If you continue to receive these errors, see [Retry failed locations](https://docs.microsoft.com/Office365/SecurityCompliance/retry-failed-content-search) for more troubleshooting steps.</span></span>
 
-## <a name="errorissue-file-not-found"></a><span data-ttu-id="5654a-130">错误/问题：找不到文件</span><span class="sxs-lookup"><span data-stu-id="5654a-130">Error/issue: File not found</span></span>
+## <a name="errorissue-file-not-found"></a><span data-ttu-id="6d3de-130">错误/问题：未找到文件</span><span class="sxs-lookup"><span data-stu-id="6d3de-130">Error/issue: File not found</span></span>
 
-<span data-ttu-id="5654a-131">在运行包含 SharePoint Online 的电子数据展示搜索和一个驱动器用于商业位置时，您可能会收到错误， `File Not Found` 尽管文件位于网站上。</span><span class="sxs-lookup"><span data-stu-id="5654a-131">When running an eDiscovery search that includes SharePoint Online and One Drive For Business locations, you may receive the error `File Not Found` although the file is located on the site.</span></span> <span data-ttu-id="5654a-132">此错误将出现在 "导出警告" 和 "errors.csv" 或 "跳过" items.csv。</span><span class="sxs-lookup"><span data-stu-id="5654a-132">This error will be in the export warnings and errors.csv or skipped items.csv.</span></span> <span data-ttu-id="5654a-133">如果在网站上找不到该文件，或者索引已过期，则可能会出现这种情况。</span><span class="sxs-lookup"><span data-stu-id="5654a-133">This may occur if the file can't be found on the site or if the index is out of date.</span></span> <span data-ttu-id="5654a-134">以下是使用强调添加) 的实际错误 (文本。</span><span class="sxs-lookup"><span data-stu-id="5654a-134">Here's the text of an actual error (with emphasis added).</span></span>
+<span data-ttu-id="6d3de-131">运行包括 SharePoint Online 和 One Drive For Business 位置的电子数据展示搜索时，您可能会收到错误，尽管该文件 `File Not Found` 位于网站上。</span><span class="sxs-lookup"><span data-stu-id="6d3de-131">When running an eDiscovery search that includes SharePoint Online and One Drive For Business locations, you may receive the error `File Not Found` although the file is located on the site.</span></span> <span data-ttu-id="6d3de-132">此错误将位于导出警告中，errors.csv或跳过items.csv。</span><span class="sxs-lookup"><span data-stu-id="6d3de-132">This error will be in the export warnings and errors.csv or skipped items.csv.</span></span> <span data-ttu-id="6d3de-133">如果网站上找不到该文件或索引过期，则可能会发生这种情况。</span><span class="sxs-lookup"><span data-stu-id="6d3de-133">This may occur if the file can't be found on the site or if the index is out of date.</span></span> <span data-ttu-id="6d3de-134">下面是实际错误的文本， (添加了) 。</span><span class="sxs-lookup"><span data-stu-id="6d3de-134">Here's the text of an actual error (with emphasis added).</span></span>
 
-> <span data-ttu-id="5654a-135">28.06.2019 10：02：19_FailedToExportItem_Failed 下载内容。</span><span class="sxs-lookup"><span data-stu-id="5654a-135">28.06.2019 10:02:19_FailedToExportItem_Failed to download content.</span></span> <span data-ttu-id="5654a-136">其他诊断信息： ExportWorker：无法从内容 6ea52149-91cd 4965-b5bb-82ca6a3ec9be--到类型文档的。</span><span class="sxs-lookup"><span data-stu-id="5654a-136">Additional diagnostic info : Microsoft.Office.Compliance.EDiscovery.ExportWorker.Exceptions.ContentDownloadTemporaryFailure: Failed to download from content 6ea52149-91cd-4965-b5bb-82ca6a3ec9be of type Document.</span></span> <span data-ttu-id="5654a-137">相关 Id：3bd84722-937b-4c23-b61b-08d6fba9ec32。</span><span class="sxs-lookup"><span data-stu-id="5654a-137">Correlation Id: 3bd84722-937b-4c23-b61b-08d6fba9ec32.</span></span> <span data-ttu-id="5654a-138">ServerErrorCode：-2147024894---> ***找不到*** ServerException： File。</span><span class="sxs-lookup"><span data-stu-id="5654a-138">ServerErrorCode: -2147024894 ---> Microsoft.SharePoint.Client.ServerException: ***File Not Found***.</span></span> <span data-ttu-id="5654a-139">在 ClientRequest (Stream responseStream)  ( # A3---内部异常堆栈跟踪的结束日期的 ProcessResponseStream 的更多信息---</span><span class="sxs-lookup"><span data-stu-id="5654a-139">at Microsoft.SharePoint.Client.ClientRequest.ProcessResponseStream(Stream responseStream) at Microsoft.SharePoint.Client.ClientRequest.ProcessResponse() --- End of inner exception stack trace ---</span></span>
+> <span data-ttu-id="6d3de-135">28.06.2019 10：02：19_FailedToExportItem_Failed下载内容。</span><span class="sxs-lookup"><span data-stu-id="6d3de-135">28.06.2019 10:02:19_FailedToExportItem_Failed to download content.</span></span> <span data-ttu-id="6d3de-136">其他诊断信息：Microsoft.Office.Compliance.EDiscovery.ExportWorker.Exceptions.ContentDownloadTemporaryFailure：无法从文档类型的内容 6ea52149-91cd-4965-b5bb-82ca6a3ec9be 下载。</span><span class="sxs-lookup"><span data-stu-id="6d3de-136">Additional diagnostic info : Microsoft.Office.Compliance.EDiscovery.ExportWorker.Exceptions.ContentDownloadTemporaryFailure: Failed to download from content 6ea52149-91cd-4965-b5bb-82ca6a3ec9be of type Document.</span></span> <span data-ttu-id="6d3de-137">相关 ID：3bd84722-937b-4c23-b61b-08d6fba9ec32。</span><span class="sxs-lookup"><span data-stu-id="6d3de-137">Correlation Id: 3bd84722-937b-4c23-b61b-08d6fba9ec32.</span></span> <span data-ttu-id="6d3de-138">ServerErrorCode： -2147024894 ---> Microsoft.SharePoint.Client.ServerException： ***找不到文件***。</span><span class="sxs-lookup"><span data-stu-id="6d3de-138">ServerErrorCode: -2147024894 ---> Microsoft.SharePoint.Client.ServerException: ***File Not Found***.</span></span> <span data-ttu-id="6d3de-139">位于 Microsoft.SharePoint.Client.Client.ClientRequest.ProcessResponseStream (Stream responseStream) at Microsoft.SharePoint.Client.ClientRequest.ProcessResponse () --- End of inner exception stack trace ---</span><span class="sxs-lookup"><span data-stu-id="6d3de-139">at Microsoft.SharePoint.Client.ClientRequest.ProcessResponseStream(Stream responseStream) at Microsoft.SharePoint.Client.ClientRequest.ProcessResponse() --- End of inner exception stack trace ---</span></span>
 
-### <a name="resolution"></a><span data-ttu-id="5654a-140">解决方案</span><span class="sxs-lookup"><span data-stu-id="5654a-140">Resolution</span></span>
+### <a name="resolution"></a><span data-ttu-id="6d3de-140">解决方案</span><span class="sxs-lookup"><span data-stu-id="6d3de-140">Resolution</span></span>
 
-1. <span data-ttu-id="5654a-141">检查搜索中标识的位置，以确保文件的位置正确，并将其添加到搜索位置中。</span><span class="sxs-lookup"><span data-stu-id="5654a-141">Check location identified in the search to ensure the that the location of the file is correct and added in the search locations.</span></span>
+1. <span data-ttu-id="6d3de-141">检查搜索中标识的位置，以确保文件的位置正确无误，并添加到搜索位置。</span><span class="sxs-lookup"><span data-stu-id="6d3de-141">Check location identified in the search to ensure the that the location of the file is correct and added in the search locations.</span></span>
 
-2. <span data-ttu-id="5654a-142">手动使用这些过程可对 [网站、库或列表重新编制索引，以对网站、库或列表进行爬网的请求](https://docs.microsoft.com/sharepoint/crawl-site-content) 。</span><span class="sxs-lookup"><span data-stu-id="5654a-142">Use the procedures at [Manually request crawling and re-indexing of a site, a library, or a list](https://docs.microsoft.com/sharepoint/crawl-site-content) to reindex the site.</span></span>
+2. <span data-ttu-id="6d3de-142">使用手动 [请求](https://docs.microsoft.com/sharepoint/crawl-site-content) 对网站、库或列表进行爬网和重新编制索引的过程对网站重新编制索引。</span><span class="sxs-lookup"><span data-stu-id="6d3de-142">Use the procedures at [Manually request crawling and re-indexing of a site, a library, or a list](https://docs.microsoft.com/sharepoint/crawl-site-content) to reindex the site.</span></span>
 
-## <a name="errorissue-search-fails-because-recipient-is-not-found"></a><span data-ttu-id="5654a-143">错误/问题：搜索失败，因为找不到收件人</span><span class="sxs-lookup"><span data-stu-id="5654a-143">Error/issue: Search fails because recipient is not found</span></span>
+## <a name="errorissue-search-fails-because-recipient-is-not-found"></a><span data-ttu-id="6d3de-143">错误/问题：搜索失败，因为未找到收件人</span><span class="sxs-lookup"><span data-stu-id="6d3de-143">Error/issue: Search fails because recipient is not found</span></span>
 
-<span data-ttu-id="5654a-144">电子数据展示搜索失败，并出现错误 `recipient not found` 。</span><span class="sxs-lookup"><span data-stu-id="5654a-144">An eDiscovery search fails with error the `recipient not found`.</span></span> <span data-ttu-id="5654a-145">如果在 Exchange Online Protection (EOP) 中找不到用户对象，则可能会发生此错误，因为该对象尚未同步。</span><span class="sxs-lookup"><span data-stu-id="5654a-145">This error may occur if the user object cannot be found in Exchange Online Protection (EOP) because the object has not synced.</span></span>
+<span data-ttu-id="6d3de-144">电子数据展示搜索失败，错误为 `recipient not found` 。</span><span class="sxs-lookup"><span data-stu-id="6d3de-144">An eDiscovery search fails with error the `recipient not found`.</span></span> <span data-ttu-id="6d3de-145">如果由于用户对象尚未同步，在 Exchange Online Protection (EOP) ，则可能会发生此错误。</span><span class="sxs-lookup"><span data-stu-id="6d3de-145">This error may occur if the user object cannot be found in Exchange Online Protection (EOP) because the object has not synced.</span></span>
 
-### <a name="resolution"></a><span data-ttu-id="5654a-146">解决方案</span><span class="sxs-lookup"><span data-stu-id="5654a-146">Resolution</span></span>
+### <a name="resolution"></a><span data-ttu-id="6d3de-146">解决方案</span><span class="sxs-lookup"><span data-stu-id="6d3de-146">Resolution</span></span>
 
-1. <span data-ttu-id="5654a-147">连接到 [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)。</span><span class="sxs-lookup"><span data-stu-id="5654a-147">Connect to [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).</span></span>
+1. <span data-ttu-id="6d3de-147">连接到 [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)。</span><span class="sxs-lookup"><span data-stu-id="6d3de-147">Connect to [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).</span></span>
 
-2. <span data-ttu-id="5654a-148">运行以下命令以检查用户是否已同步到 Exchange Online Protection：</span><span class="sxs-lookup"><span data-stu-id="5654a-148">Run the following command to check if the user is synced to Exchange Online Protection:</span></span>
+2. <span data-ttu-id="6d3de-148">运行以下命令以检查用户是否同步到 Exchange Online Protection：</span><span class="sxs-lookup"><span data-stu-id="6d3de-148">Run the following command to check if the user is synced to Exchange Online Protection:</span></span>
 
    ```powershell
    Get-Recipient <userId> | FL
    ```
 
-3. <span data-ttu-id="5654a-149">应存在用户问题的邮件用户对象。</span><span class="sxs-lookup"><span data-stu-id="5654a-149">There should be a mail user object for the user question.</span></span> <span data-ttu-id="5654a-150">如果未返回任何内容，请调查 user 对象。</span><span class="sxs-lookup"><span data-stu-id="5654a-150">If nothing is returned, investigate the user object.</span></span> <span data-ttu-id="5654a-151">如果无法同步对象，请联系 Microsoft 支持部门。</span><span class="sxs-lookup"><span data-stu-id="5654a-151">Contact Microsoft Support if the object can't be synced.</span></span>
+3. <span data-ttu-id="6d3de-149">应存在用户问题的邮件用户对象。</span><span class="sxs-lookup"><span data-stu-id="6d3de-149">There should be a mail user object for the user question.</span></span> <span data-ttu-id="6d3de-150">如果未返回任何值，则调查用户对象。</span><span class="sxs-lookup"><span data-stu-id="6d3de-150">If nothing is returned, investigate the user object.</span></span> <span data-ttu-id="6d3de-151">如果对象无法同步，请联系 Microsoft 支持人员。</span><span class="sxs-lookup"><span data-stu-id="6d3de-151">Contact Microsoft Support if the object can't be synced.</span></span>
 
-## <a name="errorissue-exporting-search-results-is-slow"></a><span data-ttu-id="5654a-152">错误/问题：导出搜索结果的速度缓慢</span><span class="sxs-lookup"><span data-stu-id="5654a-152">Error/issue: Exporting search results is slow</span></span>
+## <a name="errorissue-exporting-search-results-is-slow"></a><span data-ttu-id="6d3de-152">错误/问题：导出搜索结果缓慢</span><span class="sxs-lookup"><span data-stu-id="6d3de-152">Error/issue: Exporting search results is slow</span></span>
 
-<span data-ttu-id="5654a-153">在安全与合规中心中导出来自电子数据展示或内容搜索的搜索结果时，下载时间比预期时间长。</span><span class="sxs-lookup"><span data-stu-id="5654a-153">When exporting search results from eDiscovery or Content Search in the Security and Compliance center, the download takes longer than expected.</span></span>  <span data-ttu-id="5654a-154">您可以查看要下载的数据量，并可能增加导出速度。</span><span class="sxs-lookup"><span data-stu-id="5654a-154">You can check to see the amount of data to be download and possibly increase the export speed.</span></span>
+<span data-ttu-id="6d3de-153">在安全与合规中心中从电子数据展示或内容搜索导出搜索结果时，下载所花的时间超过预期。</span><span class="sxs-lookup"><span data-stu-id="6d3de-153">When exporting search results from eDiscovery or Content Search in the Security and Compliance center, the download takes longer than expected.</span></span>  <span data-ttu-id="6d3de-154">你可以检查要下载的数据量，并可能提高导出速度。</span><span class="sxs-lookup"><span data-stu-id="6d3de-154">You can check to see the amount of data to be download and possibly increase the export speed.</span></span>
 
-### <a name="resolution"></a><span data-ttu-id="5654a-155">解决方案</span><span class="sxs-lookup"><span data-stu-id="5654a-155">Resolution</span></span>
+### <a name="resolution"></a><span data-ttu-id="6d3de-155">解决方案</span><span class="sxs-lookup"><span data-stu-id="6d3de-155">Resolution</span></span>
 
-1. <span data-ttu-id="5654a-156">连接到 [安全 & 合规性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell) ，然后运行以下命令：</span><span class="sxs-lookup"><span data-stu-id="5654a-156">Connect to [Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell) and then run the following command:</span></span>
+1. <span data-ttu-id="6d3de-156">连接到 [安全&合规中心 PowerShell，](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell) 然后运行以下命令：</span><span class="sxs-lookup"><span data-stu-id="6d3de-156">Connect to [Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell) and then run the following command:</span></span>
 
    ```powershell
    Get-ComplianceSearch <searchname> | FL
    ```
 
-2. <span data-ttu-id="5654a-157">在 SearchResults 和 SearchStatistics 参数中查找要下载的数据量。</span><span class="sxs-lookup"><span data-stu-id="5654a-157">Find the amount of data to be downloaded in the SearchResults and SearchStatistics parameters.</span></span>
+2. <span data-ttu-id="6d3de-157">在 SearchResults 和 SearchStatistics 参数中查找要下载的数据量。</span><span class="sxs-lookup"><span data-stu-id="6d3de-157">Find the amount of data to be downloaded in the SearchResults and SearchStatistics parameters.</span></span>
 
-3. <span data-ttu-id="5654a-158">运行以下命令：</span><span class="sxs-lookup"><span data-stu-id="5654a-158">Run the following command:</span></span>
+3. <span data-ttu-id="6d3de-158">运行以下命令：</span><span class="sxs-lookup"><span data-stu-id="6d3de-158">Run the following command:</span></span>
 
    ```powershell
    Get-ComplianceSearchAction | FL
    ```
 
-4. <span data-ttu-id="5654a-159">在 "结果" 字段中，查找已导出的数据并查看遇到的任何错误。</span><span class="sxs-lookup"><span data-stu-id="5654a-159">In the results field, find the data that has been exported and view any errors encountered.</span></span>
+4. <span data-ttu-id="6d3de-159">在结果字段中，查找已导出的数据并查看遇到的任何错误。</span><span class="sxs-lookup"><span data-stu-id="6d3de-159">In the results field, find the data that has been exported and view any errors encountered.</span></span>
 
-5. <span data-ttu-id="5654a-160">检查您将内容导出到的目录中的 trace 文件，以查找任何错误。</span><span class="sxs-lookup"><span data-stu-id="5654a-160">Check the trace.log file located in the directory that you exported the content to for any errors.</span></span>
+5. <span data-ttu-id="6d3de-160">检查位于日志文件目录中的 trace.日志文件，了解是否有错误。</span><span class="sxs-lookup"><span data-stu-id="6d3de-160">Check the trace.log file located in the directory that you exported the content to for any errors.</span></span>
 
-6. <span data-ttu-id="5654a-161">如果仍有问题，请考虑将返回大型结果集的搜索划分为较小的搜索。</span><span class="sxs-lookup"><span data-stu-id="5654a-161">If you still have issues, consider dividing searches that return a large set of results into smaller searches.</span></span> <span data-ttu-id="5654a-162">例如，您可以在搜索查询中使用日期范围来返回可以更快下载的较小结果集。</span><span class="sxs-lookup"><span data-stu-id="5654a-162">For example, you can use date ranges in search queries to return a smaller set of results that can be downloaded faster.</span></span>
+6. <span data-ttu-id="6d3de-161">如果仍有问题，请考虑将返回大量结果的搜索划分为较小的搜索。</span><span class="sxs-lookup"><span data-stu-id="6d3de-161">If you still have issues, consider dividing searches that return a large set of results into smaller searches.</span></span> <span data-ttu-id="6d3de-162">例如，您可以在搜索查询中使用日期范围返回一组可以更快下载的较小结果。</span><span class="sxs-lookup"><span data-stu-id="6d3de-162">For example, you can use date ranges in search queries to return a smaller set of results that can be downloaded faster.</span></span>
 
-## <a name="errorissue-internal-server-error-500-occurred"></a><span data-ttu-id="5654a-163">错误/问题： "内部服务器错误 (500) 出现"</span><span class="sxs-lookup"><span data-stu-id="5654a-163">Error/issue: "Internal server error (500) occurred"</span></span>
+## <a name="errorissue-internal-server-error-500-occurred"></a><span data-ttu-id="6d3de-163">错误/问题："发生内部服务器 (500) 错误"</span><span class="sxs-lookup"><span data-stu-id="6d3de-163">Error/issue: "Internal server error (500) occurred"</span></span>
 
-<span data-ttu-id="5654a-164">在运行电子数据展示搜索时，如果搜索持续失败，并出现类似 "内部服务器错误 (500) " 的错误，则可能需要仅在特定邮箱位置上重新运行搜索。</span><span class="sxs-lookup"><span data-stu-id="5654a-164">When running an eDiscovery search, if the search continually fails with error similar to "Internal server error (500) occurred", you may need rerun the search only on specific mailbox locations.</span></span>
+<span data-ttu-id="6d3de-164">运行电子数据展示搜索时，如果搜索不断失败，并出现类似于"发生内部服务器错误 (500) "的错误，可能需要仅在特定邮箱位置重新运行搜索。</span><span class="sxs-lookup"><span data-stu-id="6d3de-164">When running an eDiscovery search, if the search continually fails with error similar to "Internal server error (500) occurred", you may need rerun the search only on specific mailbox locations.</span></span>
 
-![内部服务器错误500屏幕截图](../media/edisc-tshoot-error-500.png)
+![内部服务器错误 500 屏幕截图](../media/edisc-tshoot-error-500.png)
 
-### <a name="resolution"></a><span data-ttu-id="5654a-166">解决方案</span><span class="sxs-lookup"><span data-stu-id="5654a-166">Resolution</span></span>
+### <a name="resolution"></a><span data-ttu-id="6d3de-166">解决方案</span><span class="sxs-lookup"><span data-stu-id="6d3de-166">Resolution</span></span>
 
-1. <span data-ttu-id="5654a-167">将搜索拆分为较小的搜索，然后再次运行搜索。</span><span class="sxs-lookup"><span data-stu-id="5654a-167">Break the search into smaller searches and run the search again.</span></span>  <span data-ttu-id="5654a-168">请尝试使用较小的日期范围或限制搜索的位置数。</span><span class="sxs-lookup"><span data-stu-id="5654a-168">Try using a smaller date range or limit the number of locations being searched.</span></span>
+1. <span data-ttu-id="6d3de-167">将搜索分解为较小的搜索，然后再次运行搜索。</span><span class="sxs-lookup"><span data-stu-id="6d3de-167">Break the search into smaller searches and run the search again.</span></span>  <span data-ttu-id="6d3de-168">请尝试使用较小的日期范围或限制要搜索的位置数。</span><span class="sxs-lookup"><span data-stu-id="6d3de-168">Try using a smaller date range or limit the number of locations being searched.</span></span>
 
-2. <span data-ttu-id="5654a-169">连接到 [安全 & 合规性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell) ，然后运行以下命令：</span><span class="sxs-lookup"><span data-stu-id="5654a-169">Connect to [Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell) and then run the following command:</span></span>
+2. <span data-ttu-id="6d3de-169">连接到 [安全&合规中心 PowerShell，](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell) 然后运行以下命令：</span><span class="sxs-lookup"><span data-stu-id="6d3de-169">Connect to [Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell) and then run the following command:</span></span>
 
    ```powershell Set-CaseHoldPolicy <policyname> -RetryDistribution
    Get-ComplianceSearch <searchname> | FL
    ```
 
-3. <span data-ttu-id="5654a-170">检查结果和错误的输出。</span><span class="sxs-lookup"><span data-stu-id="5654a-170">Examine the output for results and errors.</span></span>
+3. <span data-ttu-id="6d3de-170">检查结果和错误的输出。</span><span class="sxs-lookup"><span data-stu-id="6d3de-170">Examine the output for results and errors.</span></span>
 
-4. <span data-ttu-id="5654a-171">检查 trace .log 文件。</span><span class="sxs-lookup"><span data-stu-id="5654a-171">Examine the trace.log file.</span></span> <span data-ttu-id="5654a-172">它位于将搜索结果导出到的同一文件夹中。</span><span class="sxs-lookup"><span data-stu-id="5654a-172">It's located  in the same folder that you exported the search results to.</span></span>
+4. <span data-ttu-id="6d3de-171">检查 trace.日志文件。</span><span class="sxs-lookup"><span data-stu-id="6d3de-171">Examine the trace.log file.</span></span> <span data-ttu-id="6d3de-172">它位于将搜索结果导出到的同一文件夹中。</span><span class="sxs-lookup"><span data-stu-id="6d3de-172">It's located  in the same folder that you exported the search results to.</span></span>
 
-5. <span data-ttu-id="5654a-173">与 Microsoft 技术支持联系。</span><span class="sxs-lookup"><span data-stu-id="5654a-173">Contact Microsoft Support.</span></span>
+5. <span data-ttu-id="6d3de-173">与 Microsoft 技术支持联系。</span><span class="sxs-lookup"><span data-stu-id="6d3de-173">Contact Microsoft Support.</span></span>
 
-## <a name="errorissue-holds-dont-sync"></a><span data-ttu-id="5654a-174">错误/问题：保留不同步</span><span class="sxs-lookup"><span data-stu-id="5654a-174">Error/issue: Holds don't sync</span></span>
+## <a name="errorissue-holds-dont-sync"></a><span data-ttu-id="6d3de-174">错误/问题：保留未同步</span><span class="sxs-lookup"><span data-stu-id="6d3de-174">Error/issue: Holds don't sync</span></span>
 
-<span data-ttu-id="5654a-175">电子数据展示事例保留策略同步分布错误。</span><span class="sxs-lookup"><span data-stu-id="5654a-175">eDiscovery Case Hold Policy Sync Distribution error.</span></span> <span data-ttu-id="5654a-176">错误读数为：</span><span class="sxs-lookup"><span data-stu-id="5654a-176">The error reads:</span></span>
+<span data-ttu-id="6d3de-175">电子数据展示案例保留策略同步分发错误。</span><span class="sxs-lookup"><span data-stu-id="6d3de-175">eDiscovery Case Hold Policy Sync Distribution error.</span></span> <span data-ttu-id="6d3de-176">错误显示为：</span><span class="sxs-lookup"><span data-stu-id="6d3de-176">The error reads:</span></span>
 
-> <span data-ttu-id="5654a-177">"资源：部署策略所花的时间比预期要长。</span><span class="sxs-lookup"><span data-stu-id="5654a-177">"Resources: It's taking longer than expected to deploy the policy.</span></span> <span data-ttu-id="5654a-178">更新最终部署状态可能需要另外2个小时，因此请在几小时内回来查看。 "</span><span class="sxs-lookup"><span data-stu-id="5654a-178">It might take an additional 2 hours to update the final deployment status, so check back in a couple hours."</span></span>
+> <span data-ttu-id="6d3de-177">"资源：部署策略所花时间超过预期。</span><span class="sxs-lookup"><span data-stu-id="6d3de-177">"Resources: It's taking longer than expected to deploy the policy.</span></span> <span data-ttu-id="6d3de-178">更新最终部署状态可能需要额外 2 个小时，因此请在几个小时后重新检查。"</span><span class="sxs-lookup"><span data-stu-id="6d3de-178">It might take an additional 2 hours to update the final deployment status, so check back in a couple hours."</span></span>
 
-### <a name="resolution"></a><span data-ttu-id="5654a-179">解决方案</span><span class="sxs-lookup"><span data-stu-id="5654a-179">Resolution</span></span>
+### <a name="resolution"></a><span data-ttu-id="6d3de-179">解决方案</span><span class="sxs-lookup"><span data-stu-id="6d3de-179">Resolution</span></span>
 
-1. <span data-ttu-id="5654a-180">连接到 [安全 & 合规性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell) ，然后为电子数据展示事例保留运行以下命令：</span><span class="sxs-lookup"><span data-stu-id="5654a-180">Connect to [Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell) and then run the following command for an eDiscovery case hold:</span></span>
+1. <span data-ttu-id="6d3de-180">连接到 [安全&合规中心 PowerShell，](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell) 然后对电子数据展示案例保留运行以下命令：</span><span class="sxs-lookup"><span data-stu-id="6d3de-180">Connect to [Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell) and then run the following command for an eDiscovery case hold:</span></span>
 
    ```powershell
    Get-CaseHoldPolicy <policyname> - DistributionDetail | FL
    ```
 
-    <span data-ttu-id="5654a-181">对于保留策略，请运行以下命令：</span><span class="sxs-lookup"><span data-stu-id="5654a-181">For a retention policy, run the following command:</span></span>
+    <span data-ttu-id="6d3de-181">对于保留策略，请运行以下命令：</span><span class="sxs-lookup"><span data-stu-id="6d3de-181">For a retention policy, run the following command:</span></span>
 
    ```powershell
    Get-RetentionCompliancePolicy <policyname> - DistributionDetail | FL
    ```
 
-2. <span data-ttu-id="5654a-182">检查 DistributionDetail 参数中的值，以查找类似于以下的错误：</span><span class="sxs-lookup"><span data-stu-id="5654a-182">Examine the value in the DistributionDetail parameter for errors like the following:</span></span>
+2. <span data-ttu-id="6d3de-182">检查 DistributionDetail 参数中的值，了解错误，如下所示：</span><span class="sxs-lookup"><span data-stu-id="6d3de-182">Examine the value in the DistributionDetail parameter for errors like the following:</span></span>
 
-   > <span data-ttu-id="5654a-183">错误：资源：部署策略所花的时间比预期时间长。</span><span class="sxs-lookup"><span data-stu-id="5654a-183">Error: Resources: It's taking longer than expected to deploy the policy.</span></span> <span data-ttu-id="5654a-184">更新最终部署状态可能需要另外2个小时，因此请在几小时内回来查看。 "</span><span class="sxs-lookup"><span data-stu-id="5654a-184">It might take an additional 2 hours to update the final deployment status, so check back in a couple hours."</span></span>
+   > <span data-ttu-id="6d3de-183">错误：资源：部署策略所花时间超过预期。</span><span class="sxs-lookup"><span data-stu-id="6d3de-183">Error: Resources: It's taking longer than expected to deploy the policy.</span></span> <span data-ttu-id="6d3de-184">更新最终部署状态可能需要额外 2 个小时，因此请在几个小时后重新检查。"</span><span class="sxs-lookup"><span data-stu-id="6d3de-184">It might take an additional 2 hours to update the final deployment status, so check back in a couple hours."</span></span>
 
-3. <span data-ttu-id="5654a-185">尝试对所述的策略运行 RetryDistribution 参数：</span><span class="sxs-lookup"><span data-stu-id="5654a-185">Try running the RetryDistribution parameter on the policy in question:</span></span>
+3. <span data-ttu-id="6d3de-185">尝试对问题策略运行 RetryDistribution 参数：</span><span class="sxs-lookup"><span data-stu-id="6d3de-185">Try running the RetryDistribution parameter on the policy in question:</span></span>
 
-   <span data-ttu-id="5654a-186">对于电子数据展示事例保留：</span><span class="sxs-lookup"><span data-stu-id="5654a-186">For eDiscovery case holds:</span></span>
+   <span data-ttu-id="6d3de-186">对于电子数据展示案例保留：</span><span class="sxs-lookup"><span data-stu-id="6d3de-186">For eDiscovery case holds:</span></span>
 
    ```powershell
    Set-CaseHoldPolicy <policyname> -RetryDistribution
    ```
 
-   <span data-ttu-id="5654a-187">对于保留策略：</span><span class="sxs-lookup"><span data-stu-id="5654a-187">For retention policies:</span></span>
+   <span data-ttu-id="6d3de-187">对于保留策略：</span><span class="sxs-lookup"><span data-stu-id="6d3de-187">For retention policies:</span></span>
 
    ```powershell
    Set-RetentionCompliancePolicy <policyname> -RetryDistribution
    ```
 
-4. <span data-ttu-id="5654a-188">与 Microsoft 技术支持联系。</span><span class="sxs-lookup"><span data-stu-id="5654a-188">Contact Microsoft Support.</span></span>
+4. <span data-ttu-id="6d3de-188">与 Microsoft 技术支持联系。</span><span class="sxs-lookup"><span data-stu-id="6d3de-188">Contact Microsoft Support.</span></span>
 
-## <a name="error-the-condition-specified-using-http-conditional-headers-is-not-met"></a><span data-ttu-id="5654a-189">错误： "不满足使用 HTTP 条件头指定的条件 (s) "</span><span class="sxs-lookup"><span data-stu-id="5654a-189">Error: "The condition specified using HTTP conditional header(s) is not met"</span></span>
+## <a name="error-the-condition-specified-using-http-conditional-headers-is-not-met"></a><span data-ttu-id="6d3de-189">错误："不满足使用 HTTP 条件标头 () 条件"</span><span class="sxs-lookup"><span data-stu-id="6d3de-189">Error: "The condition specified using HTTP conditional header(s) is not met"</span></span>
 
-<span data-ttu-id="5654a-190">使用电子数据展示导出工具下载搜索结果时，可能会收到以下错误： `System.Net.WebException: The remote server returned an error: (412) The condition specified using HTTP conditional header(s) is not met.` 这是暂时性错误，通常发生在 Azure 存储位置中。</span><span class="sxs-lookup"><span data-stu-id="5654a-190">When downloading search results using the eDiscovery Export Tool, it's possible you might receive the following error: `System.Net.WebException: The remote server returned an error: (412) The condition specified using HTTP conditional header(s) is not met.` This is transient error, which typically occurs in the Azure Storage location.</span></span>
+<span data-ttu-id="6d3de-190">使用电子数据展示导出工具下载搜索结果时，可能会收到以下错误：这是暂时性错误，通常发生在 Azure 存储 `System.Net.WebException: The remote server returned an error: (412) The condition specified using HTTP conditional header(s) is not met.` 位置。</span><span class="sxs-lookup"><span data-stu-id="6d3de-190">When downloading search results using the eDiscovery Export Tool, it's possible you might receive the following error: `System.Net.WebException: The remote server returned an error: (412) The condition specified using HTTP conditional header(s) is not met.` This is transient error, which typically occurs in the Azure Storage location.</span></span>
 
-### <a name="resolution"></a><span data-ttu-id="5654a-191">解决方案</span><span class="sxs-lookup"><span data-stu-id="5654a-191">Resolution</span></span>
+### <a name="resolution"></a><span data-ttu-id="6d3de-191">解决方案</span><span class="sxs-lookup"><span data-stu-id="6d3de-191">Resolution</span></span>
 
-<span data-ttu-id="5654a-192">若要解决此问题，请重试 [下载搜索结果](export-search-results.md#step-2-download-the-search-results)，这将重新启动电子数据展示导出工具。</span><span class="sxs-lookup"><span data-stu-id="5654a-192">To resolve this issue, retry [downloading the search results](export-search-results.md#step-2-download-the-search-results), which will restart the eDiscovery Export Tool.</span></span>
+<span data-ttu-id="6d3de-192">若要解决此问题，请 [重试下载](export-search-results.md#step-2-download-the-search-results)搜索结果，这将重新启动电子数据展示导出工具。</span><span class="sxs-lookup"><span data-stu-id="6d3de-192">To resolve this issue, retry [downloading the search results](export-search-results.md#step-2-download-the-search-results), which will restart the eDiscovery Export Tool.</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="5654a-193">另请参阅</span><span class="sxs-lookup"><span data-stu-id="5654a-193">See Also</span></span>
+## <a name="errorissue-downloaded-export-shows-no-results"></a><span data-ttu-id="6d3de-193">错误/问题：下载的导出未显示任何结果</span><span class="sxs-lookup"><span data-stu-id="6d3de-193">Error/issue: Downloaded export shows no results</span></span>
 
-- [<span data-ttu-id="5654a-194">避免内容位置错误的提示</span><span class="sxs-lookup"><span data-stu-id="5654a-194">Tips to avoid content location errors</span></span>](retry-failed-content-search.md#tips-to-avoid-content-location-errors)
+<span data-ttu-id="6d3de-194">成功导出后，通过导出工具完成的下载将在结果中显示零文件。</span><span class="sxs-lookup"><span data-stu-id="6d3de-194">After a successful export, the completed download via the export tool shows zero files in the results.</span></span>
+
+### <a name="resolution"></a><span data-ttu-id="6d3de-195">解决方案</span><span class="sxs-lookup"><span data-stu-id="6d3de-195">Resolution</span></span>
+
+<span data-ttu-id="6d3de-196">这是一个客户端问题，为了修正此问题，请尝试以下步骤：</span><span class="sxs-lookup"><span data-stu-id="6d3de-196">This is a client-side issue and in order to remediate it, please attempt the following steps:</span></span>
+
+1. <span data-ttu-id="6d3de-197">尝试使用其他客户端/计算机进行下载。</span><span class="sxs-lookup"><span data-stu-id="6d3de-197">Try using another client/machine to download.</span></span>
+
+2. <span data-ttu-id="6d3de-198">确保下载到本地驱动器。</span><span class="sxs-lookup"><span data-stu-id="6d3de-198">Make sure to download to a local drive.</span></span>
+
+3. <span data-ttu-id="6d3de-199">确保病毒扫描程序未运行。</span><span class="sxs-lookup"><span data-stu-id="6d3de-199">Make sure the virus scanner is not running.</span></span>
+
+4. <span data-ttu-id="6d3de-200">确保没有任何其他导出正在下载到同一文件夹或任何父文件夹。</span><span class="sxs-lookup"><span data-stu-id="6d3de-200">Make sure that no other export is downloading to the same folder or any parent folder.</span></span>
+
+5. <span data-ttu-id="6d3de-201">如果上述步骤不起作用，则禁用压缩和重复数据删除。</span><span class="sxs-lookup"><span data-stu-id="6d3de-201">If the previous steps did not work, disable zipping and de-duplication.</span></span>
+
+6. <span data-ttu-id="6d3de-202">如果此操作有效，则问题由本地病毒扫描程序或磁盘问题导致。</span><span class="sxs-lookup"><span data-stu-id="6d3de-202">If this works then the issue is due to a local virus scanner or a disk issue.</span></span>
