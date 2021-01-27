@@ -7,16 +7,18 @@ manager: serdars
 audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
-ms.collection: enabler-strategic
+ms.collection:
+- enabler-strategic
+- m365initiative-syntex
 search.appverid: MET150
 localization_priority: Priority
 description: 在Project Cortex中设置对内容的理解
-ms.openlocfilehash: 1abcc71200642de3f74a92e83299e079ffffb038
-ms.sourcegitcommit: d859ea36152c227699c1786ef08cda5805ecf7db
+ms.openlocfilehash: a9713f1d28cf863ab827d2975e84042026105b3f
+ms.sourcegitcommit: 162c01dfaa2fdb3225ce4c24964c1065ce22ed5d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49604258"
+ms.lasthandoff: 01/25/2021
+ms.locfileid: "49976376"
 ---
 # <a name="set-up-sharepoint-syntex"></a>设置 SharePoint Syntex
 
@@ -24,15 +26,15 @@ ms.locfileid: "49604258"
 
 开始之前应考虑下列建议：
 
-- 哪些SharePoint站点将启用表单处理？ 全部、部分、还是选定的站点？
-- 你的默认内容中心会采用什么名字？
+- 要在哪些 SharePoint 网站中启用表单处理？ 全部、部分、还是选定的站点？
+- 你会如何为默认内容中心命名？
 
 可在 Microsoft 365 管理中心内的初始设置后更改你的设置。
 
-设置前，请确保计划在环境中设置和配置内容理解的最佳方式。 例如，需要对以下名称进行考虑：
+设置前，请确保计划在环境中设置和配置内容理解的最佳方式。 例如，你需要做出以下决策：
 
-- 要启用表单处理的 SharePoint 站点 - 所有这些站点、部分或选定的站点
-- 你的内容中心和主站管理员的名字
+- 要启用表单处理的 SharePoint 网站 - 所有网站、部分网站或所选网站
+- 名称和管理员或内容中心
 
 ## <a name="requirements"></a>要求 
 
@@ -55,8 +57,8 @@ ms.locfileid: "49604258"
 4. 在 **配置表单处理** 页面上，可选择是否希望用户能够在特定的 SharePoint 文档库中创建表单处理模型。 在文档库功能区中存在一个菜单选项，以便在已启用该功能的SharePoint文档库中 **创建表单处理模型**。
  
      对于 **应显示用于创建表单处理模型的SharePoint库选项**，可选择：</br>
-      - **所有SharePoint库** ，均使其可供组织中的所有 SharePoint 库使用。</br>
-      - **仅在选定站点中的库**，然后选择需要提供它的站点，或上传最多50个站点的列表。</br>
+      - “**所有 SharePoint 网站中的库**”，从而使组织内的所有 SharePoint 库都可显示该选项。</br>
+      - “**所选 SharePoint 网站中的库**”，然后选择可显示该选项的网站或上传一个包含最多 50 个网站的列表。</br>
       - 如果不希望对任何网站提供 **SharePoint 库**，则不需要SharePoint库（可在设置后更改）。
 
    > [!div class="mx-imgBorder"]
@@ -114,4 +116,3 @@ ms.locfileid: "49604258"
 [表单处理模式概述](https://docs.microsoft.com/ai-builder/form-processing-model-overview)
 
 [逐步：如何构建文档理解模型（视频）](https://www.youtube.com/watch?v=DymSHObD-bg)
-
