@@ -7,15 +7,17 @@ audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 search.appverid: ''
-ms.collection: enabler-strategic
+ms.collection:
+- enabler-strategic
+- m365initiative-syntex
 localization_priority: Priority
-description: 在文档中创建提取器的术语库分类 Microsoft SharePoint Syntex 中的理解模型。
-ms.openlocfilehash: cf396d14a497981389cc336c5efd121f36392181
-ms.sourcegitcommit: c0495e224f12c448bfc162ef2e4b33b82f064ac8
+description: 使用 SharePoint Syntex 在文档理解模型中创建提取器时，请使用术语库分类。
+ms.openlocfilehash: aff2df6a96fdfee7380651f68e647019e9485658
+ms.sourcegitcommit: 162c01dfaa2fdb3225ce4c24964c1065ce22ed5d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49709544"
+ms.lasthandoff: 01/25/2021
+ms.locfileid: "49975735"
 ---
 # <a name="leverage-term-store-taxonomy-when-creating-an-extractor"></a>创建提取器时利用术语库分类
 
@@ -33,13 +35,13 @@ ms.locfileid: "49709544"
 
 ## <a name="use-a-managed-metadata-column-in-your-extractor"></a>在提取器使用托管元数据列
 
-在 SharePoint 管理中心的托管元数据服务术语库中配置术语集。 在下面的示例中， *合同服务*[术语集](https://docs.microsoft.com/sharepoint/managed-metadata#term-set)配置为包含许多条款，包括 *创意*。  它的详细信息显示该术语有三个同义词（*Design*、*Graphics* 和 *Topography*），并且同义词应翻译为 *创意*。 
+在 SharePoint 管理中心的托管元数据服务术语库中配置术语集。 在下面的示例中，“*合同服务*”[术语集](https://docs.microsoft.com/sharepoint/managed-metadata#term-set)被配置为包含多个术语，包括“*创意*”。  它的详细信息显示该术语有三个同义词（*Design*、*Graphics* 和 *Topography*），并且同义词应翻译为 *创意*。 
 
    ![术语集](../media/content-understanding/term-store.png)</br>
 
-在术语集中使用同义词可能有很多原因。 例如，组织部门的命名中可能存在已过时的术语、已重命名的术语或差异。
+在术语集中使用同义词的原因可能有很多。 例如，组织部门的命名中可能存在已过时的术语、已重命名的术语或差异。
 
-若要使托管元数据字段在模型中创建提取器时可供选择，需要[将其添加为](https://support.microsoft.com/office/8fad9e35-a618-4400-b3c7-46f02785d27f)托管元数据网站列。 添加网站列后，当为模型创建提取器时，就可以选择它了。
+若要确保在模型中创建提取器时托管元数据字段可供选择，需要[将其添加为托管元数据网站列](https://support.microsoft.com/office/8fad9e35-a618-4400-b3c7-46f02785d27f)。 添加该网站列后，便可以在为模型创建提取器时选择该字段。
 
    ![合同服务](../media/content-understanding/contract-services.png)</br>
 
