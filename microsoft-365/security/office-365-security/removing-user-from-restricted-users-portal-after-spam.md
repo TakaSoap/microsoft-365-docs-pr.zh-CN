@@ -10,7 +10,6 @@ audience: ITPro
 ms.topic: how-to
 f1_keywords:
 - ms.exch.eac.ActionCenter.Restricted.Users.RestrictedUsers
-ms.service: O365-seccomp
 localization_priority: Priority
 search.appverid:
 - MET150
@@ -19,12 +18,14 @@ ms.collection:
 - M365-security-compliance
 description: 管理员可以了解如何在 Office 365 中从“受限的用户”门户中删除用户。 用户之所以被添加到“受限的用户”门户是因为发送出站垃圾邮件，这通常是由于帐户遭入侵所致。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: bca9366fdb8cacdc58c12757e870c8ead8f1fa7a
-ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: 779e769b76299edf9b6d205f64bed4738f2f2499
+ms.sourcegitcommit: cbe8724bd71d1c002395d98f1451c5f578c824f9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "49683042"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "49988188"
 ---
 # <a name="remove-blocked-users-from-the-restricted-users-portal-in-office-365"></a>在 Office 365 中从“受限的用户”门户中删除被阻止的用户
 
@@ -71,7 +72,7 @@ ms.locfileid: "49683042"
 5. 单击 **“是”** 确认更改。
 
    > [!NOTE]
-   > 移除限制可能需要 30 分钟或更长时间。
+   > 从用户中删除所有限制可能需要多达 24 小时。
 
 ## <a name="verify-the-alert-settings-for-restricted-users"></a>验证用于受限的用户的警报设置
 
@@ -82,7 +83,7 @@ ms.locfileid: "49683042"
 
 1. 在安全与合规中心内，依次转到“警报”\>“警报策略”。
 
-2. 查找并选择“被限制发送电子邮件的用户”警报。
+2. 查找并选择 **发送电子邮件受限用户** 警报。
 
 3. 在随即显示的浮出控件中，验证或配置下列设置：
 

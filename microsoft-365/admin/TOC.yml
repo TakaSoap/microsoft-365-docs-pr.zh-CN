@@ -84,7 +84,7 @@
           href: services-in-china/view-your-bill-or-get-a-fapiao.md
         - name: 申请发票
           href: services-in-china/apply-for-a-fapiao.md
-        - name: Azure 信息保护奇偶校验
+        - name: Azure 信息保护支持
           href: services-in-china/parity-between-azure-information-protection.md
     - name: 管理用户、组和密码
       href: add-users/index.yml

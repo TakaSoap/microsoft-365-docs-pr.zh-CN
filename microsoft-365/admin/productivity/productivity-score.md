@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft 生产力分数概述。
-ms.openlocfilehash: 8ba1ceb57cd322a67e7b154700a8ac90c62f5ef0
-ms.sourcegitcommit: 7ecd10b302b3b3dfa4ba3be3a6986dd3c189fbff
+ms.openlocfilehash: 9f3e24d4af6858f106cde937940d5f0be1a4f85f
+ms.sourcegitcommit: cbe8724bd71d1c002395d98f1451c5f578c824f9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "49921238"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "49988064"
 ---
 # <a name="microsoft-productivity-score"></a>Microsoft 生产力分数 
 
@@ -80,13 +80,14 @@ ms.locfileid: "49921238"
 
 Productivity Score 仅在 Microsoft 365 管理中心中提供，并且只能由具有以下角色之一的 IT 专业人员访问：  
 
-- 全局管理员 
+- 全局管理员
 - Exchange 管理员
-- SharePoint 管理员 
-- Skype for Business 管理员 
-- Teams 管理员 
-- 全局读取者 
-- 报告读取者 
+- SharePoint 管理员
+- Skype for Business 管理员
+- Teams 管理员
+- 全局读取者
+- 报告读取者
+- 使用情况摘要报告阅读器
 
 > [!NOTE]
 > 只有具有全局管理员角色的 IT 专业人员才能注册或选择加入 Productivity Score 租户。
