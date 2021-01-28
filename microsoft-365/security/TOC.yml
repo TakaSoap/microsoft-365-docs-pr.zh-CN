@@ -432,31 +432,12 @@
               href: ./office-365-security/use-dmarc-to-validate-email.md
             - name: 添加对通过 IPv6 发送的匿名入站电子邮件的支持
               href: ./office-365-security/support-for-anonymous-inbound-email-messages-over-ipv6.md
+            - name: 安装适用于 Office 的应用程序防护
+              href: ./office-365-security/install-app-guard.md
             - name: 为政治宣传活动开发/测试环境配置组和用户
               href: ./office-365-security/configure-groups-and-users-for-a-political-campaign-dev-test-environment.md
             - name: 在政治宣传活动开发/测试环境中创建团队网站
               href: ./office-365-security/create-team-sites-in-a-political-campaign-dev-test-environment.md
-            - name: S/MIME
-              href: ./office-365-security/s-mime-for-message-signing-and-encryption.md
-              items:
-                - name: 用于邮件签名和加密的 S/MIME
-                  href: ./office-365-security/s-mime-for-message-signing-and-encryption.md
-                - name: 配置 Outlook 网页版的 S/MIME 设置
-                  href: ./office-365-security/configure-s-mime-settings-for-outlook-web-app.md
-                - name: 发送和接收经 S/MIME 签名和加密的电子邮件
-                  href: ./office-365-security/send-and-receive-s-mime-signed-and-encrypted-email.md
-                - name: 将用户证书同步到 Microsoft 365 for S/MIME
-                  href: ./office-365-security/sync-user-certificates-to-office-365-for-s-mime.md
-                - name: 设置虚拟证书集合以验证 S/MIME
-                  href: ./office-365-security/set-up-virtual-certificate-collection-to-validate-s-mime.md
-                - name: 为政治宣传活动开发/测试环境配置组和用户
-                  href: ./office-365-security/configure-groups-and-users-for-a-political-campaign-dev-test-environment.md
-                - name: 在政治宣传活动开发/测试环境中创建团队网站
-                  href: ./office-365-security/create-team-sites-in-a-political-campaign-dev-test-environment.md
-                - name: 将域和设置从一个 EOP 组织移动到另一个 EOP 组织
-                  href: ./office-365-security/move-domains-and-settings-from-one-eop-organization-to-another-eop-organization.md
-                - name: 在独立 EOP 中管理角色组
-                  href: ./office-365-security/manage-admin-role-group-permissions-in-eop.md
         - name: 迁移
           items:
             - name: 从 Google Postini、Barracuda 垃圾邮件和病毒防火墙或 Cisco IronPort 切换到 EOP
@@ -669,6 +650,27 @@
               href: ./office-365-security/virus-detection-in-spo.md
             - name: 垃圾邮件和群发电子邮件有何区别？
               href: ./office-365-security/what-s-the-difference-between-junk-email-and-bulk-email.md
+            - name: S/MIME
+              href: ./office-365-security/s-mime-for-message-signing-and-encryption.md
+              items:
+                - name: 用于邮件签名和加密的 S/MIME
+                  href: ./office-365-security/s-mime-for-message-signing-and-encryption.md
+                - name: 配置 Outlook 网页版的 S/MIME 设置
+                  href: ./office-365-security/configure-s-mime-settings-for-outlook-web-app.md
+                - name: 发送和接收经 S/MIME 签名和加密的电子邮件
+                  href: ./office-365-security/send-and-receive-s-mime-signed-and-encrypted-email.md
+                - name: 将用户证书同步到 Microsoft 365 for S/MIME
+                  href: ./office-365-security/sync-user-certificates-to-office-365-for-s-mime.md
+                - name: 设置虚拟证书集合以验证 S/MIME
+                  href: ./office-365-security/set-up-virtual-certificate-collection-to-validate-s-mime.md
+                - name: 为政治宣传活动开发/测试环境配置组和用户
+                  href: ./office-365-security/configure-groups-and-users-for-a-political-campaign-dev-test-environment.md
+                - name: 在政治宣传活动开发/测试环境中创建团队网站
+                  href: ./office-365-security/create-team-sites-in-a-political-campaign-dev-test-environment.md
+                - name: 将域和设置从一个 EOP 组织移动到另一个 EOP 组织
+                  href: ./office-365-security/move-domains-and-settings-from-one-eop-organization-to-another-eop-organization.md
+                - name: 在独立 EOP 中管理角色组
+                  href: ./office-365-security/manage-admin-role-group-permissions-in-eop.md
     - name: Microsoft 365 企业版
       href: 'https://docs.microsoft.com/microsoft-365/enterprise'
     - name: Microsoft 365 商业版

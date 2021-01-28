@@ -19,6 +19,8 @@
           href: service-description/regions-languages.md
         - name: 产品生命周期
           href: service-description/device-lifecycle.md
+        - name: 设备要求
+          href: service-description/device-requirements.md
         - name: 程序设备
           href: service-description/device-list.md
           items:
