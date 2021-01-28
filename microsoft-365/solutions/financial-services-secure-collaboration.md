@@ -12,12 +12,12 @@ ms.custom: seo-marvel-jun2020
 localization_priority: Priority
 description: 了解金融服务机构如何通过使用 Microsoft 365 和 Teams 来维持财务安全合规性并高效协作。
 f1.keywords: NOCSH
-ms.openlocfilehash: ff4ce29e42ea3a8a5619f514373041c1e8c3e138
-ms.sourcegitcommit: c1dd5be42fe0c5dcc7c05817c941edd9076febf8
+ms.openlocfilehash: 1d1c3886a38636e7e72774f8b2bb5ce574d1c7a6
+ms.sourcegitcommit: 537e513a4a232a01e44ecbc76d86a8bcaf142482
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "49558474"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "50029950"
 ---
 # <a name="key-compliance-and-security-considerations-for-us-banking-and-capital-markets"></a>针对美国银行业和资本市场的关键合规性与安全性注意事项
 
@@ -319,7 +319,7 @@ Microsoft 365 最近启动了一个内部风险管理解决方案，它将 Micro
 
 例如，Microsoft 365 中的内部风险管理可将来自用户 Windows 10 桌面版的信号关联起来（例如，将文件复制到 USB 驱动器，或通过电子邮件发送个人电子邮件帐户，其中包括 Office 365 电子邮件、SharePoint Online、Microsoft Teams 或 OneDrive for Business 等联机服务中的活动），以识别数据泄漏模式。 它还可以将这些活动与离开组织的员工关联起来，这是一种常见的数据泄漏模式。 它可监控一段时间内的多个活动和行为。 当常见模式出现时，它会发出警报，帮助调查人员专注于主要活动，以高可信度验证是否违反了策略。 内部风险管理可以对调查人员的数据进行伪匿名化处理，以帮助满足数据隐私规定，同时还可以提供帮助他们有效开展调查的关键活动。 它允许调查人员将关键活动数据打包并安全地发送给 HR 和法律部门，遵循常见的升级工作流程，以对出现的案例实施补救行动。
 
-Microsoft 365 中的内部风险管理显著增强了组织的功能，可监视和调查内部风险，同时允许组织继续满足数据隐私法规要求，并在需要更高级别操作的情况下遵循既定的升级途径。
+Microsoft 365 中的内部风险管理显著增强了组织的功能，可监视和调查内部风险，同时允许组织继续满足数据隐私法规要求，并在需要更高级别操作的情况下遵循既定的升级途径。 有关 Microsoft 365 中预览体验计划风险管理的详细信息，请参阅 [Microsoft 365 中预览体验计划风险管理的新式风险痛点和工作流](https://docs.microsoft.com/microsoft-365/compliance/insider-risk-management?view=o365-worldwide)。
 
 ![在小隔间里的呼叫中心工作人员一边看屏幕一边打字。](../media/clo17-call-center-006.jpg)
  
