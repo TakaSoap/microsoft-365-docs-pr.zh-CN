@@ -3,23 +3,24 @@ title: 安装和使用 Microsoft Outlook 的垃圾邮件报告外接程序
 f1.keywords:
 - NOCSH
 ms.author: siosulli
-author: chrisda
+author: siosulli
 manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: how-to
-ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 4650fec1-4ee3-4659-abbc-bf091718cb26
 ms.collection:
 - M365-security-compliance
 description: 了解如何安装和使用 Microsoft 垃圾邮件报告外接程序向 Microsoft 报告垃圾邮件、非垃圾邮件和网络钓鱼邮件。
-ms.openlocfilehash: 2b98fb0183cb7164ee90fb6a3a22d949e6edc2bc
-ms.sourcegitcommit: cc354fd54400be0ff0401f60bbe68ed975b69cda
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: 896ef89149e5ef65ea96b2b21e1010c29fa7a7fc
+ms.sourcegitcommit: 537e513a4a232a01e44ecbc76d86a8bcaf142482
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "49865053"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "50029416"
 ---
 # <a name="install-and-use-the-junk-email-reporting-add-in-for-microsoft-outlook"></a>安装和使用 Microsoft Outlook 的垃圾邮件报告外接程序
 
@@ -27,13 +28,13 @@ ms.locfileid: "49865053"
 
 
 > [!NOTE]
-> 如果您当前没有使用垃圾邮件报告外接程序，我们建议改为使用"报告邮件"加载项或"报告钓鱼[](enable-the-report-message-add-in.md)["](enable-the-report-phish-add-in.md)外接程序。 有关详细信息，请参见[向 Microsoft 报告邮件和文件](report-junk-email-messages-to-microsoft.md)。
+> 如果您当前没有使用垃圾邮件报告外接程序，我们建议改为使用报告邮件外接程序或报告网络钓鱼[外接程序](enable-the-report-phish-add-in.md)。 [](enable-the-report-message-add-in.md) 有关详细信息，请参见[向 Microsoft 报告邮件和文件](report-junk-email-messages-to-microsoft.md)。
 
-Microsoft Outlook 的垃圾邮件报告外接程序允许用户向 Microsoft 提交误报 (标记为垃圾邮件) 、漏报 (错误电子邮件允许的) 和网络钓鱼邮件。 如果组织不使用 Exchange Online Protection (例如，本地 Exchange 或 Exchange Online) 电子邮件服务，垃圾邮件报告提交不会影响垃圾邮件筛选。
+Microsoft Outlook 的垃圾邮件报告外接程序允许用户向 Microsoft 提交误报 (标记为垃圾邮件) 、漏报 (错误电子邮件允许的) 和网络钓鱼邮件。 如果您的组织不使用 Exchange Online Protection (例如，内部部署 Exchange 或 Exchange Online) 电子邮件服务，则垃圾邮件报告提交不会影响垃圾邮件筛选。
 
 本主题介绍如何安装和使用垃圾邮件报告外接程序。
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>在开始之前，您需要知道什么？
+## <a name="what-do-you-need-to-know-before-you-begin"></a>开始前，有必要了解什么？
 
 - 若要安装垃圾邮件报告外接程序，请参阅本文稍后介绍的"[](#install-the-junk-email-reporting-add-in)安装垃圾邮件报告外接程序"部分。
 
@@ -42,7 +43,7 @@ Microsoft Outlook 的垃圾邮件报告外接程序允许用户向 Microsoft 提
   - Outlook 2013 或更高版本
   - Microsoft 365 企业应用版中包含的 Outlook
 
-- 有关向 Microsoft 报告邮件详细信息，请参阅向 [Microsoft 报告邮件和文件](report-junk-email-messages-to-microsoft.md)。
+- 有关向 Microsoft 报告邮件详细信息，请参阅向 Microsoft 报告邮件 [和文件](report-junk-email-messages-to-microsoft.md)。
 
 ## <a name="use-the-junk-email-reporting-add-in-to-report-spam-and-phishing-messages"></a>使用垃圾邮件报告外接程序报告垃圾邮件和网络钓鱼邮件
 
@@ -56,7 +57,7 @@ Microsoft Outlook 的垃圾邮件报告外接程序允许用户向 Microsoft 提
 
      ![右键单击报告垃圾邮件或网络钓鱼电子邮件](../../media/junk-email-reporting-right-click.png)
 
-   - 选择多个邮件，右键单击，然后选择 **报告为垃圾邮件** 或 **报告为网络钓鱼**。
+   - 选择多个邮件，右键单击，然后选择报告 **为垃圾邮件** 或 **报告为网络钓鱼**。
 
      ![右键单击报告多个垃圾邮件或网络钓鱼电子邮件](../../media/junk-email-reporting-right-click-multiple.png)
 
@@ -83,9 +84,9 @@ Microsoft Outlook 的垃圾邮件报告外接程序允许用户向 Microsoft 提
 
    - 右键单击邮件 **，单击"** 垃圾邮件"，然后选择"报告 **为非垃圾邮件**"或"**报告为网络钓鱼"。**
 
-     ![在"垃圾邮件"文件夹中右键单击报告非垃圾邮件或网络钓鱼电子邮件](../../media/junk-email-reporting-junk-folder-right-click.png)
+     ![从"垃圾邮件"文件夹中右键单击报告非垃圾邮件或网络钓鱼电子邮件](../../media/junk-email-reporting-junk-folder-right-click.png)
 
-   - 选择多个邮件，右键单击，然后选择报告 **为"非垃圾邮件**"或"**报告为网络钓鱼"。**
+   - 选择多个邮件，右键单击，然后选择"**报告为非垃圾邮件**"或"**报告为网络钓鱼"。**
 
      ![从"垃圾邮件"文件夹中右键单击报告多个非垃圾邮件或网络钓鱼电子邮件](../../media/junk-email-reporting-junk-folder-right-click-multiple.png)
 
@@ -119,7 +120,7 @@ Microsoft Outlook 的垃圾邮件报告外接程序允许用户向 Microsoft 提
 
 2. 在 Windows 10 中，验证 .NET Framework 2.0 是否已启用。 有关说明，请参阅["控制面板"中的"启用 .NET Framework 3.5"。](https://docs.microsoft.com/dotnet/framework/install/dotnet-35-windows-10#enable-the-net-framework-35-in-control-panel)
 
-3. 找到下载的 .msi 文件，然后双击它。
+3. 找到你下载的 .msi 文件，然后双击它。
 
 4. 在“欢迎使用 Microsoft 垃圾电子邮件报告外接程序安装程序”页面上，单击“下一步”。
 
@@ -170,7 +171,7 @@ Microsoft Outlook 的垃圾邮件报告外接程序允许用户向 Microsoft 提
 
 ### <a name="how-do-you-know-this-worked"></a>您如何知道这有效？
 
-若要验证您是否已成功安装垃圾邮件报告外接程序，请执行 Outlook 中的以下任一步骤：
+若要验证您是否已成功安装垃圾邮件报告外接程序，请执行 Outlook 中的下列任一步骤：
 
 - 选择邮件或打开邮件。 在功能 **区的**"**主页**"或"消息"选项卡中，单击"垃圾邮件"，并验证以下选项是否可用：
 
@@ -201,7 +202,7 @@ Microsoft Outlook 的垃圾邮件报告外接程序允许用户向 Microsoft 提
 
   ![从"垃圾邮件"文件夹中的功能区报告非垃圾邮件或网络钓鱼电子邮件](../../media/junk-email-reporting-junk-folder-ribbon.png)
 
-  ![在"垃圾邮件"文件夹中右键单击报告非垃圾邮件或网络钓鱼电子邮件](../../media/junk-email-reporting-junk-folder-right-click.png)
+  ![从"垃圾邮件"文件夹中右键单击报告非垃圾邮件或网络钓鱼电子邮件](../../media/junk-email-reporting-junk-folder-right-click.png)
 
   ![从"垃圾邮件"文件夹中右键单击报告多个非垃圾邮件或网络钓鱼电子邮件](../../media/junk-email-reporting-junk-folder-right-click-multiple.png)
 
@@ -290,7 +291,7 @@ Microsoft Outlook 的垃圾邮件报告外接程序允许用户向 Microsoft 提
      "LoggingLevel"="Verbose"
      ```
 
-2. 重新启动 Outlook，并要求用户在看到错误消息时返回报告。
+2. 重新启动 Outlook，并要求用户在看到错误消息时进行报告。
 
 3. 收集在以下位置找到的日志信息：
 

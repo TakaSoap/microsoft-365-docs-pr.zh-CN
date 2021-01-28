@@ -3,7 +3,7 @@ title: 用户提交策略
 f1.keywords:
 - NOCSH
 ms.author: siosulli
-author: chrisda
+author: siosulli
 manager: dansimp
 ms.date: ''
 audience: ITPro
@@ -17,12 +17,12 @@ ms.collection:
 description: 管理员可以了解如何配置邮箱以收集用户报告的垃圾邮件和网络钓鱼电子邮件。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 9759bbae1dc49b80859198e11e6f85383cdf2f66
-ms.sourcegitcommit: cbe8724bd71d1c002395d98f1451c5f578c824f9
+ms.openlocfilehash: 28848908934057cc898eeca489cd2ee21f30692f
+ms.sourcegitcommit: 537e513a4a232a01e44ecbc76d86a8bcaf142482
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49988124"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "50029758"
 ---
 # <a name="user-submissions-policy"></a>用户提交策略
 
@@ -44,7 +44,7 @@ ms.locfileid: "49988124"
 
 还可以配置第三方邮件报告工具，将邮件转发到指定的邮箱。
 
-将用户报告的邮件传递至自定义邮箱而不是直接发送给 Microsoft，使管理员能够选择性地使用管理员提交将邮件手动 [报告](admin-submission.md)给 Microsoft。
+将用户报告的邮件发送到自定义邮箱而不是直接发送给 Microsoft，使管理员能够选择性地使用管理员提交将邮件手动 [报告](admin-submission.md)给 Microsoft。
 
 ## <a name="custom-mailbox-prerequisites"></a>自定义邮箱先决条件
 
@@ -52,7 +52,7 @@ ms.locfileid: "49988124"
 
 - 通过创建 Exchange 邮件流规则来设置垃圾邮件可信度，跳过对自定义邮箱的垃圾邮件筛选。 请参阅 [使用 EAC 创建邮件流规则，将邮件的 SCL](use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md#use-the-eac-to-create-a-mail-flow-rule-that-sets-the-scl-of-a-message)设置为 **-1。**
 
-- 关闭对自定义邮箱中恶意软件的扫描附件。 使用 [Defender for Office 365](set-up-atp-safe-attachments-policies.md)中的"设置安全附件"策略创建安全附件策略，并针对安全附件未知恶意软件响应设置"关闭 **"。**
+- 关闭对自定义邮箱中恶意软件的扫描附件。 使用 [Defender for Office 365](set-up-atp-safe-attachments-policies.md)中的"设置安全附件"策略创建安全附件策略，并针对安全附件未知恶意软件响应设置"**关闭"。**
 
 - 关闭自定义邮箱中邮件的 URL 扫描。 使用 [Defender for Office 365](set-up-atp-safe-links-policies.md)中的"设置安全链接"策略创建安全链接策略，并设置"关闭"以选择邮件中未知潜在恶意 **URL 的操作**。
 
@@ -86,7 +86,7 @@ ms.locfileid: "49988124"
 
 1. 在安全&中心，转到 **"威胁管理** \> **策略** \> **用户提交"。**
 
-2. 在 **出现的"用户** 提交"页中，选择以下选项之一：
+2. 在 **出现的"用户** 提交"页中，选择下列选项之一：
 
    1. 为 **Outlook (推荐**) 启用"报告邮件"功能：如果使用"报告邮件"加载项、"报告钓鱼"加载项或 Outlook 网页中的内置报告，请选择此选项，然后配置以下设置：
 
@@ -100,7 +100,7 @@ ms.locfileid: "49988124"
 
       - **提交后**：单击 ![ 展开图标 ](../../media/scc-expand-icon.png) 。 在 **"标题** 和确认"消息框中，输入用户在使用"报告邮件"加载项或"报告网络钓鱼"外接程序报告邮件后看到的描述性文本。 可以使用变量 %type% 包含提交类型。
 
-      完成后，单击“**保存**”。 若要清除这些值 **，请单击"** 用户提交"页上的 **"还原回"。**
+      完成时，请单击“保存”。 若要清除这些值 **，请单击"** 用户提交"页上的 **"还原回"。**
 
       - **将报告的邮件发送到**：进行以下选择之一：
 

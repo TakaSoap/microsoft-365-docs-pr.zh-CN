@@ -14,12 +14,12 @@ ms.collection:
 ROBOTS: NOINDEX, NOFOLLOW
 localization_priority: None
 description: 了解如何查找主题体验的资源。
-ms.openlocfilehash: a9069b8723cb23a406fcce3b96a53b3de2a07568
-ms.sourcegitcommit: 162c01dfaa2fdb3225ce4c24964c1065ce22ed5d
+ms.openlocfilehash: afba6930c30ad59dc95abb255eadab501b01f189
+ms.sourcegitcommit: 537e513a4a232a01e44ecbc76d86a8bcaf142482
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2021
-ms.locfileid: "49976175"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "50029604"
 ---
 # <a name="introduction-to-topic-experiences-preview"></a>预览版主题体验 (简介) 
 
@@ -43,8 +43,8 @@ ms.locfileid: "49976175"
 
 | 如果要查找此信息： | 参考资源： |
 |:-----|:-----|
-|了解有关文档理解的详细信息|[主题体验概述](topic-experiences-overview.md)|
-|了解 AI 如何发现和创建主题|[主题体验发现](topic-experiences-discovery.md)|
+|了解有关主题体验的详细信息|[主题体验概述](topic-experiences-overview.md)|
+|了解 AI 如何发现和推荐主题|[主题体验发现](topic-experiences-discovery.md)|
 |了解主题安全性|[主题体验安全和隐私](topic-experiences-security-privacy.md)|
 
 

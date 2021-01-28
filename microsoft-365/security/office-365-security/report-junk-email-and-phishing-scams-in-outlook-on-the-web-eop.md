@@ -3,12 +3,11 @@ title: 报告 Outlook 网页中的垃圾邮件和钓鱼电子邮件
 f1.keywords:
 - NOCSH
 ms.author: siosulli
-author: chrisda
+author: siosulli
 manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: how-to
-ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -16,14 +15,16 @@ ms.assetid: 758822b5-0126-463a-9d08-7366bb2a807d
 ms.collection:
 - M365-security-compliance
 description: 管理员可以了解 Exchange Online 中 Outlook 网页版中的内置垃圾邮件报告选项 (Outlook Web App) 垃圾邮件报告选项，以及如何为用户禁用这些报告选项。
-ms.openlocfilehash: 0032e807961aed60128d6863899ae0de32d1a627
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: 0af57aceed608ae80e72e3ae18724925c1168e26
+ms.sourcegitcommit: 537e513a4a232a01e44ecbc76d86a8bcaf142482
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49659305"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "50029206"
 ---
-# <a name="report-junk-and-phishing-email-in-outlook-on-the-web-in-exchange-online"></a>在 Exchange Online 的 Outlook 网页版中报告垃圾邮件和网络钓鱼电子邮件
+# <a name="report-junk-and-phishing-email-in-outlook-on-the-web-in-exchange-online"></a>在 Exchange Online 的 Outlook 网页版中报告垃圾邮件和钓鱼电子邮件
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -32,7 +33,7 @@ ms.locfileid: "49659305"
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>开始前，有必要了解什么？
 
-- 如果你是具有 Exchange Online 邮箱的组织的管理员，我们建议你使用安全与合规中心&门户。 有关详细信息，请参阅使用管理员提交将可疑的垃圾邮件、网络钓鱼[、URL 和文件提交给 Microsoft。](admin-submission.md)
+- 如果你是具有 Exchange Online 邮箱的组织的管理员，我们建议你使用安全与合规中心&门户。 有关详细信息，请参阅"使用管理员提交"将可疑的垃圾邮件、网络钓鱼[、URL 和文件提交到 Microsoft。](admin-submission.md)
 
 - 管理员可以禁用或启用用户在 Web 上的 Outlook 中向 Microsoft 报告邮件的能力。 有关详细信息，请参阅本文稍后介绍的" [在 Outlook 网页](#disable-or-enable-junk-email-reporting-in-outlook-on-the-web) 版中禁用或启用垃圾邮件报告"部分。
 
@@ -62,7 +63,7 @@ ms.locfileid: "49659305"
 
 1. 在"垃圾邮件"文件夹中，使用以下任一方法来报告垃圾邮件误报或网络钓鱼邮件：
 
-   - 选择邮件，单击工具栏 **上的"非** 垃圾邮件"，然后选择"**非垃圾邮件**"或"网络钓鱼 **"。**
+   - 选择邮件 **，单击工具栏** 上的"非垃圾邮件"，然后选择"**非垃圾邮件**"或"网络钓鱼 **"。**
 
      ![从功能区报告非垃圾邮件或钓鱼电子邮件](../../media/owa-report-not-junk.png)
 
@@ -88,7 +89,7 @@ ms.locfileid: "49659305"
 
 - 每个组织都有一个名为 OwaMailboxPolicy-Default 的默认策略，但您可以创建自定义策略。 自定义策略应用于默认策略之前的范围用户。 有关 Outlook 网页版邮箱策略详细信息，请参阅 [Exchange Online 中的 Outlook 网页版邮箱策略](https://docs.microsoft.com/Exchange/clients-and-mobile-in-exchange-online/outlook-on-the-web/outlook-web-app-mailbox-policies)。
 
-- 禁用垃圾邮件报告不会删除在 Web 上的 Outlook 中将邮件标记为垃圾邮件的能力。 选择"垃圾邮件"文件夹中的邮件 **并单击"** 非垃圾邮件"仍会将邮件 \> 移回收件箱。 选择任何其他电子邮件文件夹中的邮件并单击 **"垃圾邮件**"仍将 \> 邮件移动到"垃圾邮件"文件夹中。 不再可用的是向 Microsoft 报告邮件的选项。
+- 禁用垃圾邮件报告不会删除在 Web 上的 Outlook 中将邮件标记为垃圾邮件的能力。 选择"垃圾邮件"文件夹中的邮件 **并单击"** 非垃圾邮件"仍将 \> 邮件移回收件箱。 选择任何其他电子邮件文件夹中的邮件并单击 **"垃圾邮件**"仍将 \> 邮件移动到"垃圾邮件"文件夹中。 不再可用的是向 Microsoft 报告邮件的选项。
 
 ### <a name="use-exchange-online-powershell-to-disable-or-enable-junk-email-reporting-in-outlook-on-the-web"></a>使用 Exchange Online PowerShell 禁用或启用 Outlook 网页版中的垃圾邮件报告
 
@@ -118,7 +119,7 @@ ms.locfileid: "49659305"
 
 有关语法和参数的详细信息，请参阅[Get-OwaMailboxPolicy](https://docs.microsoft.com/powershell/module/exchange/get-owamailboxpolicy)和[Set-OwaMailboxPolicy。](https://docs.microsoft.com/powershell/module/exchange/set-owamailboxpolicy)
 
-### <a name="how-do-you-know-this-worked"></a>如何判断是否生效？
+### <a name="how-do-you-know-this-worked"></a>您如何知道这有效？
 
 若要验证您是否已成功启用或禁用 Outlook 网页中的垃圾邮件报告，请使用以下步骤之一：
 

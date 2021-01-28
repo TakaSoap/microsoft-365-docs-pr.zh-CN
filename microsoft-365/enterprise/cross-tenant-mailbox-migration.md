@@ -14,12 +14,12 @@ ms.custom:
 - it-pro
 ms.collection:
 - M365-subscription-management
-ms.openlocfilehash: aecb1230ac9a9b2868c519c9b8920e312ff5a282
-ms.sourcegitcommit: 9833f95ab6ab95aea20d68a277246dca2223f93d
+ms.openlocfilehash: 4296879b36e26f11f945105ccebea351ad88314d
+ms.sourcegitcommit: 537e513a4a232a01e44ecbc76d86a8bcaf142482
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "49794040"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "50029522"
 ---
 # <a name="cross-tenant-mailbox-migration-preview"></a>跨租户邮箱迁移 (预览) 
 
@@ -99,17 +99,17 @@ ms.locfileid: "49794040"
 
     | 参数 | 值 | 必需或可选
     |---------------------------------------------|-----------------|--------------|
-    | -TargetTenantDomain                         | 目标租户域，如 contoso \. onmicrosoft.com。 | 必填 |
-    | -ResourceTenantDomain                       | 源租户域，例如 fabrikam \. onmicrosoft.com。 | 必填 |
-    | -ResourceTenantAdminEmail                   | 源租户管理员的电子邮件地址。 这是将同意使用从目标管理员发送的邮箱迁移应用程序的源租户管理员。这是将接收应用程序的电子邮件邀请的管理员。 | 必填 |
-    | -ResourceTenantId                           | 源租户组织 ID (GUID) 。 | 必填 |
-    | -SubscriptionId                             | 用于创建资源的 Azure 订阅。 | 必填 |
-    | -ResourceGroup                              | 包含或将包含密钥保管库的 Azure 资源组名称。 | 必填 |
-    | -KeyVaultName                               | 将存储邮箱迁移应用程序证书/密码的 Azure Key Vault 实例。 | 必填 |
-    | -CertificateName                            | 在密钥保管库中生成或搜索证书时证书名称。 | 必填 |
-    | -CertificateSubject                         | Azure 密钥保管库证书主题名称，例如 CN=contoso_fabrikam。 | 必填 |
+    | -TargetTenantDomain                         | 目标租户域，如 contoso \. onmicrosoft.com。 | 必需 |
+    | -ResourceTenantDomain                       | 源租户域，例如 fabrikam \. onmicrosoft.com。 | 必需 |
+    | -ResourceTenantAdminEmail                   | 源租户管理员的电子邮件地址。 这是将同意使用从目标管理员发送的邮箱迁移应用程序的源租户管理员。这是将接收应用程序的电子邮件邀请的管理员。 | 必需 |
+    | -ResourceTenantId                           | 源租户组织 ID (GUID) 。 | 必需 |
+    | -SubscriptionId                             | 用于创建资源的 Azure 订阅。 | 必需 |
+    | -ResourceGroup                              | 包含或将包含密钥保管库的 Azure 资源组名称。 | 必需 |
+    | -KeyVaultName                               | 将存储邮箱迁移应用程序证书/密码的 Azure Key Vault 实例。 | 必需 |
+    | -CertificateName                            | 在密钥保管库中生成或搜索证书时证书名称。 | 必需 |
+    | -CertificateSubject                         | Azure 密钥保管库证书主题名称，例如 CN=contoso_fabrikam。 | 必需 |
     | -ExistingApplicationId                      | 要用于已创建的邮件迁移应用程序。 | 可选 |
-    | -AzureAppPermissions                        | 为邮箱迁移应用程序（如 Exchange 或 MSGraph (Exchange）授予移动邮箱所需的权限，MSGraph 用于使用此应用程序向资源租户邮箱发送同意链接) 。 | 必填 |
+    | -AzureAppPermissions                        | 为邮箱迁移应用程序（如 Exchange 或 MSGraph (Exchange）授予移动邮箱所需的权限，MSGraph 用于使用此应用程序向资源租户邮箱发送同意链接) 。 | 必需 |
     | -UseAppAndCertGeneratedForSendingInvitation | 用于使用为迁移创建的应用程序的参数，用于向源租户管理员发送同意链接邀请。如果不存在，将提示目标管理员的凭据连接到 Azure 邀请管理器，并作为目标管理员发送邀请。 | 可选 |
     | -KeyVaultAuditStorageAccountName            | 存储密钥保管库审核日志的存储帐户。 | 可选 |
     | -KeyVaultAuditStorageResourceGroup          | 包含存储密钥保管库审核日志的存储帐户的资源组。 | 可选 |
@@ -176,7 +176,7 @@ ms.locfileid: "49794040"
 
 3. 在 Microsoft 365 管理中心或远程 PowerShell 会话中，创建一个或多个启用邮件的安全组，以控制目标租户允许的邮箱列表，以将 () 从源租户移动到目标租户。 无需提前填充此组，但必须至少提供一个组，以运行脚本 (安装) 。 不支持嵌套组。 
 
-4. 从SetupCrossTenantRelationshipForTargetResource.ps1 GitHub 存储库下载源租户设置的脚本 [https://github.com/microsoft/cross-tenant/releases/tag/Preview](https://github.com/microsoft/cross-tenant/releases/tag/Preview) ：。 
+4. 从SetupCrossTenantRelationshipForResourceTenant.ps1 GitHub 存储库下载源租户设置的脚本 [https://github.com/microsoft/cross-tenant/releases/tag/Preview](https://github.com/microsoft/cross-tenant/releases/tag/Preview) ：。 
 
 5. 使用 Exchange 管理员权限创建到源租户的远程 PowerShell 连接。 由于 Azure 应用程序创建过程，配置源租户（仅目标租户）不需要全局管理员权限。
 

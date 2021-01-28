@@ -8,7 +8,6 @@ manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: how-to
-ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -18,12 +17,14 @@ ms.collection:
 - M365-security-compliance
 description: 管理员可以了解安全与合规中心的"报告"仪表板中&报告。
 ms.custom: ''
-ms.openlocfilehash: 1ededf2d0d693c537c159c52d00deb03f278b4b2
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: e69085d1fad845ab519f2590b0527316463373a7
+ms.sourcegitcommit: 537e513a4a232a01e44ecbc76d86a8bcaf142482
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49659461"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "50029794"
 ---
 # <a name="view-mail-flow-reports-in-the-reports-dashboard-in-security--compliance-center"></a>在安全与合规中心的"报告"仪表板中查看&报告
 
@@ -32,7 +33,7 @@ ms.locfileid: "49659461"
 
 除了安全与合规中心的邮件流仪表板中提供的邮件流[](mail-flow-insights-v2.md)报告外，报告仪表板中还提供了各种额外的邮件流报告，以帮助您监视 Microsoft 365 组织。 &
 
-如果您具有[必要的权限](#what-permissions-are-needed-to-view-these-reports)，可以在安全与合规中心内查看这些报告&报告[](https://office.protection.com)仪表板 \> 。 若要直接转到报表仪表板，请打开 <https://protection.office.com/insightdashboard> 。
+如果您具有[必要的权限](#what-permissions-are-needed-to-view-these-reports)，可以在安全与合规中心内查看这些报告&报告[](https://protection.office.com)仪表板 \> 。 若要直接转到报表仪表板，请打开 <https://protection.office.com/insightdashboard> 。
 
 ![安全与合规中心&仪表板](../../media/6b213d34-adbb-44af-8549-be9a7e2db087.png)
 
@@ -76,7 +77,7 @@ ms.locfileid: "49659461"
 
 如果单击 **视图中的"** 查看详细信息报表视图，将显示以下信息：
 
-- **Date**
+- "日期"
 - **连接器方向和名称**
 - **连接器类型**
 - **强制 TLS？：** 值 **True** 或 **False**。
@@ -132,7 +133,7 @@ ms.locfileid: "49659461"
 
 - **查看数据方式：Exchange 传输规则**：
 
-  - **Date**
+  - "日期"
   - **传输规则**
   - **主题**
   - **发件人地址**
@@ -142,7 +143,7 @@ ms.locfileid: "49659461"
 
 - **查看数据方式：DLP Exchange 传输规则**：
 
-  - **Date**
+  - "日期"
   - **DLP 策略**
   - **传输规则**
   - **主题**
@@ -318,7 +319,7 @@ If you click **Choose a category for more details，** you can select from the f
 
 该数据表包含以下信息，按降序日期顺序显示：
 
-- **Date**
+- "日期"
 - **电子邮件总数**
 - **边缘保护**
 - **反恶意软件， 文件信誉， 文件类型阻止**：
@@ -387,7 +388,7 @@ If you click **Choose a category for more details，** you can select from the f
 
 该数据表包含以下信息，按降序日期顺序显示：
 
-- **Date**
+- "日期"
 - **电子邮件总数**
 - **已筛选边缘**
 - **反恶意软件引擎，安全附件，已筛选规则**：
@@ -540,11 +541,12 @@ The **Top senders and recipients** report is a pie chart showing your top email 
 - **组织管理**
 - **安全管理员**
 - **安全读者**
-- **全局阅读器**
+- **全局读取者**
 
-有关详细信息，请参阅[安全与合规中心中的权限](permissions-in-the-security-and-compliance-center.md)。
+有关详细信息，请参阅 [安全与合规中心的权限](permissions-in-the-security-and-compliance-center.md)。
 
-注意：将用户添加到 Microsoft 36 & 5 管理中心的相应 Azure Active Directory 角色会为用户提供安全与合规中心所需的权限和 Microsoft 365 中其他功能的权限。 有关详细信息，请参阅 [关于管理员角色](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)。
+> [!NOTE]
+> 向 Microsoft 365 管理中心相应的 Azure 活动目录添加用户会向其提供安全与合规中心的必备权限 _以及_ Microsoft 365其它功能的权限。 有关详细信息，请参阅 [关于管理员角色](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)。
 
 ## <a name="related-topics"></a>相关主题
 

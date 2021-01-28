@@ -3,50 +3,51 @@ title: 修复可能的邮件循环见解
 f1.keywords:
 - NOCSH
 ms.author: siosulli
-author: chrisda
+author: siosulli
 manager: dansimp
 audience: ITPro
 ms.topic: conceptual
-ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: cb801985-3c89-4979-9c18-17829a4cb563
 ms.custom:
 - seo-marvel-apr2020
-description: 管理员可以了解如何使用安全 & 合规中心中的 "邮件流" 仪表板中的 "修复可能的邮件循环真知灼见" 来识别和修复其组织中的邮件循环。
-ms.openlocfilehash: 1d49fd93b2ea068986e003b36077672215a2dd57
-ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
+description: 管理员可以了解如何在安全与合规中心的邮件流仪表板中使用"修复可能的邮件循环"见解&标识和修复其组织的邮件循环。
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: f08c27c761cdfe4acbbd8cf80e8ab6da8012b55f
+ms.sourcegitcommit: 537e513a4a232a01e44ecbc76d86a8bcaf142482
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48920557"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "50029890"
 ---
-# <a name="fix-possible-mail-loop-insight-in-the-security--compliance-center"></a>修复安全 & 合规中心中可能的邮件循环见解
+# <a name="fix-possible-mail-loop-insight-in-the-security--compliance-center"></a>修复安全与合规中心内可能的邮件&见解
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
-邮件循环已损坏，因为：
+邮件循环错误，因为：
 
-- 它们会浪费系统资源。
-- 它们使用您的组织的邮件卷配额。
-- 它们发送混淆的未送达报告 (也称为 Ndr 或退回邮件) 发送给原始邮件发件人。
+- 它们浪费系统资源。
+- 它们使用组织的邮件卷配额。
+- 它们向原始邮件 (发送混淆的未送达报告) 或退回邮件。
 
-修复了 [安全 & 合规中心](https://protection.office.com)中的 [邮件流仪表板](mail-flow-insights-v2.md)的 **建议** 的邮件 **循环** 见解，当组织中检测到邮件循环时，会向您发出通知。
+安全 **与** 合规中心内邮件流仪表板的"建议你"区域中 [](mail-flow-insights-v2.md)的"修复可能的邮件 [](https://protection.office.com)循环见解"&在组织中检测到邮件循环时通知您。 
 
-此洞察力仅在检测到条件后出现 (如果您没有任何邮件循环，则不会看到) 的洞察力。
+此见解仅在检测到条件 (（如果没有任何邮件循环）后，您才能看到) 。
 
-![修复邮件流仪表板的 "为您推荐的情况" 区域中的邮件流规则的速度下降](../../media/mfi-fix-possible-mail-loop.png)
+![修复邮件流仪表板的"建议"区域中的慢邮件流规则见解](../../media/mfi-fix-possible-mail-loop.png)
 
-当您单击小组件上的 " **查看详细信息** " 时，将显示一个弹出项，其中包含详细信息：
+单击小 **组件上的** "查看详细信息"时，将显示一个包含详细信息的飞出控件：
 
 - **域**
-- **邮件数** ：您可以单击 " **查看示例邮件** "，查看受循环影响的邮件示例的 [邮件跟踪](message-trace-scc.md) 结果。
-- **域类型** （例如，权威或非权威）。
-- **MX 记录** ：主机 (域的 MX 记录的 **邮件服务器** ) 和 **优先级** 值。
-- **循环原因** 和 **解决方法** ：我们将确定最常见的邮件循环方案，并提供建议的操作来修复循环。
+- **消息数**：可以单击"**查看示例** 邮件"以查看受循环 [](message-trace-scc.md)影响的邮件示例的邮件跟踪结果。
+- **域类型**" 例如，权威或非权威。
+- **MX 记录**： (**邮箱)** MX 记录的优先级值和优先级值。
+- **循环原因****和修复** 方法：我们将确定最常见的邮件循环方案并提供建议的操作来修复循环。
 
-![在 "修复可能的邮件循环" 见解上单击 "查看详细信息" 后出现的详细信息浮出](../../media/mfi-fix-possible-mail-loop-details.png)
+![单击"修复可能的邮件循环见解"上的"查看详细信息"后显示的详细信息飞出](../../media/mfi-fix-possible-mail-loop-details.png)
 
 ## <a name="see-also"></a>另请参阅
 
-有关邮件流仪表板中的其他见解的信息，请参阅 [Security & 合规性中心中的邮件流见解](mail-flow-insights-v2.md)。
+有关邮件流仪表板中其他见解的信息，请参阅安全与合规中心& [见解](mail-flow-insights-v2.md)。

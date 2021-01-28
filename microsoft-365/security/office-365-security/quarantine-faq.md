@@ -8,7 +8,6 @@ manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: troubleshooting
-ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -18,12 +17,14 @@ ms.collection:
 - m365initiative-defender-office365
 description: 管理员可以查看有关 Exchange Online Protection 和 EOP (隔离邮件的常见问题和) 。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 58ddb5847706aef3d2c3b8ea8cd9a96fd65a9b3d
-ms.sourcegitcommit: 9833f95ab6ab95aea20d68a277246dca2223f93d
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: abd2304e83d2814cab55d13312535bd94308d8be
+ms.sourcegitcommit: b3bb5bf5efa197ef8b16a33401b0b4f5663d3aa0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "49794408"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "50032597"
 ---
 # <a name="quarantined-messages-faq"></a>隔离邮件常见问题解答
 
@@ -72,16 +73,39 @@ ms.locfileid: "49794408"
 
 安全与合规中心不支持通配符&通配符。 例如，在搜索发件人时，需要指定完整电子邮件地址。 但是，您可以在 Exchange Online PowerShell 或独立 EOP PowerShell 中使用通配符。
 
-例如，运行以下命令以查找来自域中所有发件人的垃圾邮件隔离contoso.com：
+例如，将以下 PowerShell 代码复制到记事本，将文件另存为 .ps1，位置易于查找 (例如，C:\Data\QuarantineRelease.ps1) 。
+
+然后，在连接到 [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell) 或 [Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell)后，运行以下命令以运行脚本：
 
 ```powershell
-$CQ = Get-QuarantineMessage -Type Spam | where {$_.SenderAddress -like "*@contoso.com"}
+& C:\Data\QuarantineRelease.ps1
 ```
 
-然后，运行以下命令以将这些邮件释放给所有原始收件人：
+该脚本执行以下操作：
+
+- 查找从 fabrikam 域中所有发件人隔离为垃圾邮件的未发布邮件。 最多结果数为 50，000 (50 页（包含 1000 个) ）。
+- 将结果保存到 CSV 文件。
+- 将匹配的隔离邮件释放到所有原始收件人。
 
 ```powershell
-$CQ | foreach {Release-QuarantineMessage -Identity $_.Identity -ReleaseToAll}
+$Page = 1
+$List = $null
+
+Do
+{
+Write-Host "Getting Page " $Page
+
+$List = (Get-QuarantineMessage -Type Spam -PageSize 1000 -Page $Page | where {$_.Released -like "False" -and $_.SenderAddress -like "*fabrikam.com"})
+Write-Host "                     " $List.count " rows in this page match"
+Write-Host "                                                             Exporting list to appended CSV for logging"
+$List | Export-Csv -Path "C:\Data\Quarantined Message Matches.csv" -Append -NoTypeInformation
+
+Write-Host "Releasing page " $Page
+$List | foreach {Release-QuarantineMessage -Identity $_.Identity -ReleaseToAll}
+
+$Page = $Page + 1
+
+} Until ($Page -eq 50)
 ```
 
 释放邮件后，你无法再次释放它。

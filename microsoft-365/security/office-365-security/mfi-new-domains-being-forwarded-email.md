@@ -3,44 +3,45 @@ title: 正在转发的新域的电子邮件见解
 f1.keywords:
 - NOCSH
 ms.author: siosulli
-author: chrisda
+author: siosulli
 manager: dansimp
 audience: ITPro
 ms.topic: conceptual
-ms.service: exchange-online
 localization_priority: Normal
 ms.assetid: ''
-description: 管理员可以了解如何使用安全 & 合规中心中的 "邮件流" 仪表板中的新域转发电子邮件，以调查其用户何时将邮件转发到从未转发到的外部域。
-ms.openlocfilehash: a72ffd001ea22972d9dc6c00af8a4dd7881386b7
-ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
+description: 管理员可以了解如何使用安全 & 合规中心的邮件流仪表板中转发的电子邮件见解的新域，以调查用户何时将邮件转发到从未转发到的外部域。
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: eb44f5d577d18fc38333cca5e8d2d862f288a2e0
+ms.sourcegitcommit: 537e513a4a232a01e44ecbc76d86a8bcaf142482
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49356939"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "50029854"
 ---
-# <a name="new-domains-being-forwarded-email-insight-in-the-security--compliance-center"></a>在安全 & 合规中心中转发的新域的电子邮件洞察力
+# <a name="new-domains-being-forwarded-email-insight-in-the-security--compliance-center"></a>安全与合规中心内转发电子邮件见解&域
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
-将电子邮件转发给特定域中的外部收件人的商业原因有很多。 但是，当组织中的用户突然开始将邮件转发到域时，您的组织中没有任何人将邮件转发给 (新域) 的域是可疑的。
+将电子邮件转发给特定域中的外部收件人有一些有效的业务原因。 但是，当贵组织的用户突然开始将邮件转发到组织中没有人将邮件转发到新域域的域时 (可疑) 。
 
-这种情况可能表示用户帐户受到威胁。 如果您怀疑帐户已损坏，请参阅 [响应已泄露的电子邮件帐户](responding-to-a-compromised-email-account.md)。
+此条件可能指示用户帐户受到威胁。 如果怀疑帐户已被泄露，请参阅"响应遭到入侵[的电子邮件帐户"。](responding-to-a-compromised-email-account.md)
 
-当您组织中的用户将邮件转发到新域时，将在 [安全 & 合规中心](https://protection.office.com)中 **转发的新域** 将向您发出通知。
+当 **组织的用户** 将邮件转发到新域时，安全与合规中心 [&](https://protection.office.com) 转发的电子邮件见解的新域会通知你。
 
-此洞察力仅在检测到问题时显示，并显示在 " [转发报告](view-mail-flow-reports.md#forwarding-report) " 页上。
+此见解仅在检测到问题时显示，并且显示在"转发 [报告"页上](view-mail-flow-reports.md#forwarding-report) 。
 
 ![正在转发的新域的电子邮件见解](../../media/mfi-new-domains-being-forwarded.png)
 
-当您单击该小组件时，将显示一个弹出对话框，您可在其中找到有关转发邮件的更多详细信息，包括返回到 [转发报告](view-mail-flow-reports.md#forwarding-report)的链接。
+单击小部件时，将出现一个飞出控件，您可以在其中找到有关转发邮件的更多详细信息，包括返回转发 [报告的链接](view-mail-flow-reports.md#forwarding-report)。
 
-![单击正在转发的新域的电子邮件洞察力之后显示的详细信息浮出控件](../../media/mfi-new-domains-being-forwarded-details.png)
+![单击"正在转发的新域"电子邮件见解后显示的详细信息飞出](../../media/mfi-new-domains-being-forwarded-details.png)
 
-当您在 (**报告** 仪表板 "或") 上的 "**热门见解 & 建议**" 区域中单击 "**查看全部**" 后，您还可以转到此详细信息页面 \> **Dashboard** <https://protection.office.com/insightdashboard> 。
+在报表仪表板或仪表板上单击"查看所有热门见解"&建议区域中的见解后，**还可以进入** (\> 页面 <https://protection.office.com/insightdashboard>) 。
 
-若要阻止自动将邮件转发到外部域，请为部分或全部外部域配置远程域。 有关详细信息，请参阅 [在 Exchange Online 中管理远程域](https://docs.microsoft.com/Exchange/mail-flow-best-practices/remote-domains/manage-remote-domains)。
+若要阻止自动邮件转发到外部域，请为部分或所有外部域配置远程域。 有关详细信息，请参阅管理 [Exchange Online 中的远程域](https://docs.microsoft.com/Exchange/mail-flow-best-practices/remote-domains/manage-remote-domains)。
 
 ## <a name="related-topics"></a>相关主题
 
-有关邮件流仪表板中的其他见解的信息，请参阅 [Security & 合规性中心中的邮件流见解](mail-flow-insights-v2.md)。
+有关邮件流仪表板中其他见解的信息，请参阅安全与合规中心& [见解](mail-flow-insights-v2.md)。

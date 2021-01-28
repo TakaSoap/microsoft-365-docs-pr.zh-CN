@@ -3,12 +3,11 @@ title: 手动将邮件提交给 Microsoft 进行分析
 f1.keywords:
 - NOCSH
 ms.author: siosulli
-author: chrisda
+author: siosulli
 manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: how-to
-ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -17,12 +16,14 @@ ms.collection:
 - M365-security-compliance
 description: 管理员和最终用户可以了解如何通过电子邮件将 (标记为错误或错误的邮件，) Microsoft 进行分析。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 94747b1d0a1aef746a63abada977aa47270ae4e2
-ms.sourcegitcommit: cc354fd54400be0ff0401f60bbe68ed975b69cda
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: d5d3b7a51c39b85af8a6fae84f525da6d806789c
+ms.sourcegitcommit: 537e513a4a232a01e44ecbc76d86a8bcaf142482
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "49865076"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "50029580"
 ---
 # <a name="manually-submit-messages-to-microsoft-for-analysis"></a>手动将邮件提交给 Microsoft 进行分析
 
@@ -30,11 +31,11 @@ ms.locfileid: "49865076"
 
 
 > [!NOTE]
-> 如果你是具有 Exchange Online 邮箱的组织的管理员，我们建议你使用安全与合规中心&门户。 有关详细信息，请参阅"使用管理员提交"将可疑的垃圾邮件、网络钓鱼[、URL 和文件提交到 Microsoft。](admin-submission.md)
+> 如果你是具有 Exchange Online 邮箱的组织的管理员，我们建议你使用安全与合规中心&门户。 有关详细信息，请参阅使用管理员提交将可疑的垃圾邮件、网络钓鱼[、URL 和文件提交给 Microsoft。](admin-submission.md)
 
 如果组织中的用户收到垃圾邮件或 (垃圾邮件) 或钓鱼邮件，或者他们因被标记为垃圾邮件而未收到合法电子邮件，则可能会感到沮丧。 我们会不断微调垃圾邮件筛选器，以更加准确。
 
-你和用户可以通过向 Microsoft 提交误报 (标记为错误) 、漏报 (允许的) 和钓鱼邮件来帮助此过程。
+你和用户可以通过向 Microsoft 提交误报 (标记为错误) 、漏报 () 错误邮件和钓鱼邮件来帮助此过程。
 
 > [!NOTE]
 > 由于我们收到的提交量很高，我们可能无法回答所有分析请求。
@@ -60,7 +61,7 @@ ms.locfileid: "49865076"
    >
    > - 保留新的邮件正文空白。
    >
-   > - 将 .msg (默认 Outlook) 或 .eml (Web 上的默认 Outlook 格式) 附加邮件使用。
+   > - 使用 .msg (outlook 格式) 或 .eml (附加邮件的默认 Outlook 网页) 格式。
 
 3. 完成后，单击"发送 **"。**
 
@@ -85,14 +86,14 @@ ms.locfileid: "49865076"
    >
    > - 保留新的邮件正文空白。
    >
-   > - 将 .msg (默认 Outlook) 或 .eml (Web 上的默认 Outlook 格式) 附加邮件使用。
+   > - 使用 .msg (outlook 格式) 或 .eml (附加邮件的默认 Outlook 网页) 格式。
 
 3. 完成后，单击"发送 **"。**
 
 > [!TIP]
 > 管理员有几种不同的方式允许特定邮件跳过垃圾邮件筛选。 有关详细信息，请参阅 [在 EOP 中创建安全发件人列表](create-safe-sender-lists-in-office-365.md)。
 
-## <a name="where-is-the-data-from-submissions-to-microsoft-stored"></a>从提交到 Microsoft 的数据存储在什么位置？
+## <a name="where-is-the-data-from-submissions-to-microsoft-stored"></a>从提交到 Microsoft 的数据存储在何处？
 
 数据位于北美数据中心的 Office 365 合规性边界内。 数据由工程团队的分析师审阅，以帮助提高筛选器的有效性。
 

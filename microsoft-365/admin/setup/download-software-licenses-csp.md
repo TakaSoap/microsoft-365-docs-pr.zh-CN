@@ -1,5 +1,5 @@
 ---
-title: 下载永久软件和产品许可证密钥
+title: 下载通过云解决方案提供商云解决方案提供商计划或云解决方案提供商计划 (软件) 密钥
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -18,12 +18,12 @@ search.appverid:
 ms.custom:
 - AdminSurgePortfolio
 description: 了解如何下载通过云解决方案提供商计划云解决方案提供商计划 (软件) 密钥。
-ms.openlocfilehash: bd9584e6a160f713cdfbfbcdac876b2e18b94110
-ms.sourcegitcommit: 8849dd6f80217c29f427c7f008d918f30c792240
+ms.openlocfilehash: 9e55161111ae1796e8254a60ecdc693592988386
+ms.sourcegitcommit: 537e513a4a232a01e44ecbc76d86a8bcaf142482
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49877221"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "50029394"
 ---
 # <a name="download-perpetual-software-and-product-license-keys"></a>下载永久软件和产品许可证密钥
 
@@ -31,7 +31,7 @@ ms.locfileid: "49877221"
 
 ## <a name="before-you-begin"></a>准备工作
 
-你必须是全局管理员才能执行本文中的步骤。 有关详细信息，请参阅[关于管理员角色](../add-users/about-admin-roles.md)。
+你必须是全局管理员才能执行本文中的步骤。 有关详细信息，请参阅 [关于管理员角色](../add-users/about-admin-roles.md)。
 
 ## <a name="download-software-and-product-license-keys"></a>下载软件和产品许可证密钥
 

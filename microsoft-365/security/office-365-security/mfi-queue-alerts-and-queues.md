@@ -3,20 +3,21 @@ title: 邮件流仪表板中的队列见解
 f1.keywords:
 - NOCSH
 ms.author: siosulli
-author: chrisda
+author: siosulli
 manager: dansimp
 audience: ITPro
 ms.topic: conceptual
-ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 37640c80-ce6f-47e2-afd1-bc1d3c50e637
 description: '& 管理员可以了解如何使用安全与合规中心内邮件流仪表板中的"队列"小组件监视通过出站连接器发送到其内部部署组织或合作伙伴组织的不成功邮件流。'
-ms.openlocfilehash: a1563c61620ef9f1ae97739681f426fd0ea38bd8
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: 73e97cbbd05e298013e9e686053a969d587ad5cf
+ms.sourcegitcommit: 537e513a4a232a01e44ecbc76d86a8bcaf142482
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49659236"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "50029146"
 ---
 # <a name="queues-insight-in-the-security--compliance-center"></a>安全与合规中心&队列见解
 

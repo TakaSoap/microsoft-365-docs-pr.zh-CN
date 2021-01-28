@@ -1,72 +1,73 @@
 ---
-title: 邮件流仪表板中的非接受域报告
+title: 邮件流仪表板中的未接受域报告
 f1.keywords:
 - NOCSH
 ms.author: siosulli
-author: chrisda
+author: siosulli
 manager: dansimp
 audience: ITPro
 ms.topic: conceptual
-ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
-description: 管理员可以了解如何在安全 & 合规性中心中的邮件流仪表板中使用未接受的域报告来监视来自内部部署组织的邮件，其中发件人的域不是在 Microsoft 365 中配置的。
-ms.openlocfilehash: 06acacb79c826cb465b3fd28086a7df9d64eabdc
-ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
+description: 管理员可以了解如何使用安全 & 合规中心的邮件流仪表板中的"非接受域"报告监视来自内部部署组织的邮件，其中发件人的域未在 Microsoft 365 中配置。
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: 401d566158ca3f730af94fab60c471484e244a16
+ms.sourcegitcommit: 537e513a4a232a01e44ecbc76d86a8bcaf142482
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48877713"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "50029842"
 ---
-# <a name="non-accepted-domain-report-in-the-security--compliance-center"></a>安全 & 合规中心中的非接受域报告
+# <a name="non-accepted-domain-report-in-the-security--compliance-center"></a>安全与合规中心中的&报告
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
-[Security & 合规性中心](https://protection.office.com)的 [邮件流仪表板](mail-flow-insights-v2.md)中的 **非接受域** 报告显示有关内部部署电子邮件组织中的邮件的信息，其中发件人的域未配置为 Microsoft 365 组织中的接受域。
+安全与合规中心的邮件流仪表板中的[](mail-flow-insights-v2.md)"非接受域"报告显示有关来自内部部署电子邮件组织的邮件的信息，其中发件人的域未配置为 Microsoft 365 组织中接受的域。 [&](https://protection.office.com)
 
-如果我们有数据来证明这些邮件的意图是恶意的，Microsoft 365 可能会对这些邮件进行限制。 因此，重要的是要了解所发生的情况并解决问题。
+如果我们有数据可以证明这些邮件的意图是恶意的，Microsoft 365 可能会限制这些邮件。 因此，了解发生的情况并解决该问题非常重要。
 
-![安全 & 合规性中心的邮件流仪表板中的 "不接受的域" 小部件](../../media/mfi-non-accepted-domain-report-widget.png)
+![安全与合规中心的邮件流仪表板中的"非接受&小组件](../../media/mfi-non-accepted-domain-report-widget.png)
 
-## <a name="report-view-for-the-non-accepted-domain-report"></a>不接受的域报告的报告视图
+## <a name="report-view-for-the-non-accepted-domain-report"></a>非接受域报告的报告视图
 
-单击 **不接受的域** 小组件上的图表将转到 **不接受的域** 报告。
+单击"非接受 **域"小部件上的** 图表将进入 **非接受域** 报告。
 
-默认情况下，将显示所有受影响的连接器的活动。 如果单击 " **显示数据** "，则可以从下拉列表中选择特定的连接器。
+默认情况下，将显示所有受影响的连接器的活动。 如果单击 **"显示数据"，** 可以从下拉列表中选择特定连接器。
 
-如果将鼠标悬停在图表中 (日) 上，您将看到连接器的邮件总数。
+如果将鼠标悬停在 () 的数据点上，你将看到连接器的邮件总数。
 
-![不接受的域报告中的报告视图](../../media/mfi-non-accepted-domain-report-overview-view.png)
+![非接受域报告中的报告视图](../../media/mfi-non-accepted-domain-report-overview-view.png)
 
-## <a name="details-table-view-for-the-non-accepted-domain-report"></a>不接受的域报告的详细信息表格视图
+## <a name="details-table-view-for-the-non-accepted-domain-report"></a>非接受域报告的详细信息表视图
 
-如果您在报告视图中单击 " **查看详细信息表** "，将显示以下信息：
+如果单击 **视图中的"** 查看详细信息报表视图，将显示以下信息：
 
-- **Date**
+- "日期"
 - **入站连接器名称**
 - **发件人域**
 - **邮件计数**
-- **示例邮件** ：受影响邮件的示例的邮件 id。
+- **示例邮件**：受影响邮件示例的邮件 ID。
 
-如果单击 "详细信息" 表视图中的 " **筛选器** "，则可以指定具有 " **开始日期** " 和 " **结束日期** " 的日期范围。
+如果在 **详细信息表** 视图中单击"筛选器"，可以指定开始日期和 **结束日期的日期范围**。 
 
-若要通过电子邮件将特定日期范围的报告发送给一个或多个收件人，请单击 " **请求下载** "。
+若要将特定日期范围的报告通过电子邮件发送给一个或多个收件人，请单击"请求 **下载"。**
 
-当您在表中选择一行时，将显示一个包含以下信息的浮出控件：
+当您在表中选择一行时，将显示一个包含以下信息的飞出图：
 
-- **Date**
+- "日期"
 - **入站连接器名称**
 - **发件人域**
 - **邮件计数**
-- **示例邮件** ：您可以单击 " **查看示例邮件** "，查看有关受影响邮件的示例的 [邮件跟踪](message-trace-scc.md) 结果。
+- **示例邮件**：可以单击 **"查看示例邮件** " [以查看受影响邮件](message-trace-scc.md) 示例的邮件跟踪结果。
 
-![在 "不接受的域" 报表的 "详细信息表" 视图中选择行后的详细信息浮出控件](../../media/mfi-non-accepted-domain-report-details-flyout.png)
+![在"未接受域"报告中的"详细信息"表视图中选择行后的详细信息飞出](../../media/mfi-non-accepted-domain-report-details-flyout.png)
 
-若要返回到 "报告" 视图，请单击 " **查看报告** "。
+若要返回到报告视图，请单击"**查看报告"。**
 
 ## <a name="related-topics"></a>相关主题
 
-有关邮件流仪表板中的其他见解的信息，请参阅 [Security & 合规性中心中的邮件流见解](mail-flow-insights-v2.md)。
+有关邮件流仪表板中其他见解的信息，请参阅安全与合规中心& [见解](mail-flow-insights-v2.md)。

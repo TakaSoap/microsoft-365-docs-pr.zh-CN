@@ -3,30 +3,31 @@ title: 邮件流仪表板中的邮件流见解
 f1.keywords:
 - NOCSH
 ms.author: siosulli
-author: chrisda
+author: siosulli
 manager: dansimp
 audience: ITPro
 ms.topic: overview
-ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: beb6acaa-6016-4d54-ba7e-3d6d035e2b46
-description: 管理员可以了解安全 & 合规性中心的邮件流仪表板中提供的见解和报告。
+description: 管理员可以了解安全与合规中心的邮件流仪表板中提供的见解&报告。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f7781dca48e1eae4716dbe6c7c3b40da4bae0cd8
-ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: ef9498d19e79cf670fbae52171b78b0c44c45910
+ms.sourcegitcommit: 537e513a4a232a01e44ecbc76d86a8bcaf142482
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48920004"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "50029358"
 ---
 # <a name="mail-flow-insights-in-the-security--compliance-center"></a>安全与合规中心内的邮件流见解
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
-管理员可以使用安全 & 合规性中心中的邮件流仪表板来发现趋势、见解，并采取措施解决与组织中的邮件流相关的问题。
+管理员可以使用安全与合规中心&邮件流仪表板来发现趋势、见解，并采取措施来解决与组织中邮件流相关的问题。
 
-![安全 & 合规性中心中的邮件流仪表板](../../media/mail-flow-dashboard-v2.png)
+![安全与合规中心内的邮件&仪表板](../../media/mail-flow-dashboard-v2.png)
 
 可用的见解包括：
 
@@ -34,13 +35,13 @@ ms.locfileid: "48920004"
 
 - [修复可能的邮件循环见解](mfi-mail-loop-insight.md)<sup>1</sup>
 
-- [修复慢速邮件流规则真知灼见](mfi-slow-mail-flow-rules-insight.md)<sup>1</sup>
+- [修复慢速邮件流规则见解](mfi-slow-mail-flow-rules-insight.md)<sup>1</sup>
 
 - [邮件流地图](mfi-mail-flow-map-report.md)
 
-- [转发的新域电子邮件洞察力](mfi-new-domains-being-forwarded-email.md)<sup>2</sup>
+- [正在转发的电子邮件见解](mfi-new-domains-being-forwarded-email.md)<sup>2</sup>的新域
 
-- [新用户转发电子邮件真知灼见](mfi-new-users-forwarding-email.md)<sup>2</sup>
+- [转发电子邮件见解](mfi-new-users-forwarding-email.md)<sup>2</sup>的新用户
 
 - [非接受域报告](mfi-non-accepted-domain-report.md)
 
@@ -54,27 +55,27 @@ ms.locfileid: "48920004"
 
 - [顶级域邮件流状态见解](mfi-domain-mail-flow-status-insight.md)
 
-<sup>1</sup> 只有在检测到问题之后，才会在 "邮件流" 仪表板的 " **建议** " 区域中显示此见解。 否则，您将看不到它。
+<sup>1</sup>仅在检测到问题后，此见解显示在邮件流仪表板的"建议"区域中。 否则，你将看不到它。
 
-<sup>2</sup> 此真知灼见不会出现在邮件流仪表板上，但在检测到问题后，在 " [转发报告](view-mail-flow-reports.md#forwarding-report) " 页面上可见。 否则，您将看不到它。
+<sup>2</sup>此见解不会显示在邮件流仪表板上，但在检测到问题后在"转发[](view-mail-flow-reports.md#forwarding-report)报告"页上可见。 否则，你将看不到它。
 
 ## <a name="permissions-required-to-view-the-mail-flow-dashboard"></a>查看邮件流仪表板所需的权限
 
-邮件流仪表板可用于以下角色组的成员：
+邮件流仪表板可供以下角色组的成员使用：
 
-- 安全 & 合规中心 (全局管理员) 中的 " **组织管理** "。
+- **安全与** 合规中心&管理 (全局管理员) 。
 
-- Azure Active Directory 中的 **[Exchange 管理员](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#exchange-administrator)** 。
+- **[Azure](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#exchange-administrator)** Active Directory 中的 Exchange 管理员。
 
-- Security & 合规性中心中的 **邮件流管理员** 。 如果该帐户不是 "组织管理" 或 "Exchange 管理员" 角色组的成员，请考虑以下问题：
-  - 用户必须直接在上登录到安全 & 合规性中心 <https://protection.office.com> 。
-  - 用户将只具有对邮件流仪表板的只读权限。
-  - 用户将无法访问 Microsoft 365 管理中心。
+- **安全与** 合规中心&邮件流管理员。 如果该帐户不是组织管理或 Exchange 管理员角色组的成员，请考虑以下问题：
+  - 用户必须直接登录到安全&合规中心 <https://protection.office.com> 。
+  - 用户仅对邮件流仪表板具有只读权限。
+  - 用户无法访问 Microsoft 365 管理中心。
 
-有关权限的详细信息，请参阅 [security & 合规性中心中的权限](permissions-in-the-security-and-compliance-center.md) ，并 [向用户授予对安全 & 合规性中心的访问](grant-access-to-the-security-and-compliance-center.md)权限。
+有关权限详细信息，请参阅安全与合规中心 [&"](permissions-in-the-security-and-compliance-center.md) 权限"，并授予用户对安全与合规& [的访问权限](grant-access-to-the-security-and-compliance-center.md)。
 
-## <a name="where-to-find-the-mail-flow-dashboard"></a>在何处查找邮件流仪表板
+## <a name="where-to-find-the-mail-flow-dashboard"></a>在哪里可以找到邮件流仪表板
 
-在中打开 "安全 & 合规中心" <https://protection.office.com> ，展开 " **邮件流** "，然后选择 " **仪表板** "。
+打开安全& <https://protection.office.com> 合规中心，展开 **"邮件流**"，然后选择"**仪表板"。**
 
-若要直接转到 "邮件流" 仪表板，请打开 <https://protection.office.com/mailflow/dashboard> 。
+若要直接转到邮件流仪表板，请打开 <https://protection.office.com/mailflow/dashboard> 。

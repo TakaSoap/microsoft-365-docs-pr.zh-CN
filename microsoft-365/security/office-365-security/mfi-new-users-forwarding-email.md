@@ -3,20 +3,21 @@ title: 新用户转发电子邮件见解
 f1.keywords:
 - NOCSH
 ms.author: siosulli
-author: chrisda
+author: siosulli
 manager: dansimp
 audience: ITPro
 ms.topic: conceptual
-ms.service: exchange-online
 localization_priority: Normal
 ms.assetid: ''
 description: 管理员可以了解如何使用安全与合规中心内的新用户转发电子邮件见解&调查其组织中用户何时将邮件转发到新域。
-ms.openlocfilehash: cf1852169279e19ac00e5e29dd1c26e155936039
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: af991cb0af20a0f48bc5283d4e4fb26ea75d6ba6
+ms.sourcegitcommit: 537e513a4a232a01e44ecbc76d86a8bcaf142482
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49660013"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "50029866"
 ---
 # <a name="new-users-forwarding-email-insight-in-the-security--compliance-center"></a>新用户在安全与合规中心转发&见解
 
