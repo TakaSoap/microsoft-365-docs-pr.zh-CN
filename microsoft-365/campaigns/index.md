@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 for Campaigns
+title: 面向小型企业和活动的Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: samanro
@@ -24,68 +24,78 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
-description: Microsoft 365 for Campaigns
-ms.openlocfilehash: 57997af310eb07c61b5f2cdb03f24b5e443d6e2e
-ms.sourcegitcommit: 371249d3dde12092b820cd11ed3e02b31e88636a
+description: 适用于小型企业（包括小型公司、惯例和政治活动）的 Microsoft 365 指南。
+ms.openlocfilehash: 0f7b441a4280ba9eaaf5f1f673d1ccf43a0a5350
+ms.sourcegitcommit: 1b30ac6e05906c8a014b1fed33fc71e1821f6ad2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "48897289"
+ms.lasthandoff: 01/29/2021
+ms.locfileid: "50044700"
 ---
-<a name="microsoft-365-for-campaigns"></a><span data-ttu-id="9674d-103">Microsoft 365 for Campaigns</span><span class="sxs-lookup"><span data-stu-id="9674d-103">Microsoft 365 for Campaigns</span></span>
+<a name="microsoft-365-for-smaller-businesses-and-campaigns"></a><span data-ttu-id="dfd3b-103">面向小型企业和活动的Microsoft 365</span><span class="sxs-lookup"><span data-stu-id="dfd3b-103">Microsoft 365 for smaller businesses and campaigns</span></span>
 ===========================
 
-<span data-ttu-id="9674d-104">在当今世界，保持数据和通信安全是头等大事，尤其是在竞选活动、医疗和法律实践以及许多其他业务中。</span><span class="sxs-lookup"><span data-stu-id="9674d-104">In our current world, keeping data and communications secure is a priority, particularly for political campaigns, medical and legal practices, and many other businesses.</span></span> <span data-ttu-id="9674d-105">Microsoft 365 for Campaigns 提供了一组用于帮助保护你和你的数据的建议。</span><span class="sxs-lookup"><span data-stu-id="9674d-105">Microsoft 365 for Campaigns comes with a set of recommendations designed to help protect you and your data.</span></span> <span data-ttu-id="9674d-106">此库包括有关设置和使用此推荐环境的帮助，即使所处理的并不是宣传活动也同样适用。</span><span class="sxs-lookup"><span data-stu-id="9674d-106">This library includes help for setting up and using this recommended environment, even if you're not a campaign.</span></span>
+<span data-ttu-id="dfd3b-104">在当今世界，保持数据和通信安全是优先事项，特别是对于医疗和法律实践、政治活动和许多其他小型企业。</span><span class="sxs-lookup"><span data-stu-id="dfd3b-104">In our current world, keeping data and communications secure is a priority, particularly for medical and legal practices, political campaigns, and many other smaller businesses.</span></span> <span data-ttu-id="dfd3b-105">该解决方案提供了一系列建议，旨在帮助保护你和你的数据。</span><span class="sxs-lookup"><span data-stu-id="dfd3b-105">This solution provides a set of recommendations designed to help protect you and your data.</span></span> <span data-ttu-id="dfd3b-106">无论何种企业类型，此库包括有关设置和使用此推荐环境的帮助。</span><span class="sxs-lookup"><span data-stu-id="dfd3b-106">This library includes help for setting up and using this recommended environment, no matter your business type.</span></span>
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3clbH]
-
-<a name="what-is-microsoft-365-for-campaigns"></a><span data-ttu-id="9674d-107">什么是 Microsoft 365 for Campaigns？</span><span class="sxs-lookup"><span data-stu-id="9674d-107">What is Microsoft 365 for Campaigns?</span></span>
-------------------------------------
-
-<span data-ttu-id="9674d-108">它是一种推荐的安全配置，包括 Microsoft 365 商业高级版，因此你可以：</span><span class="sxs-lookup"><span data-stu-id="9674d-108">It's a recommended secure configuration that includes Microsoft 365 Business Premium so that you can:</span></span>
-
-- <span data-ttu-id="9674d-109">依靠可靠的业务生产力和协作工具，如 Outlook、Word、Excel 和其他 Office 产品。</span><span class="sxs-lookup"><span data-stu-id="9674d-109">Rely on trusted business productivity and collaboration tools, such as Outlook, Word, Excel, and other Office products.</span></span>
-- <span data-ttu-id="9674d-110">通过易于管理的企业级安全性保护所有 iOS、Android 和 Windows 10 设备上的工作文件。</span><span class="sxs-lookup"><span data-stu-id="9674d-110">Protect your work files on all of your iOS, Android, and Windows 10 devices with enterprise-grade security that is simple to manage.</span></span>
-- <span data-ttu-id="9674d-111">对用户帐户和标识应用额外保护。</span><span class="sxs-lookup"><span data-stu-id="9674d-111">Apply extra protection for user accounts and identity.</span></span>
 
 ![Microsoft 365 商业高级版可保护你的生产力工具、协作工具、文件存储、电子邮件、设备和标识](../media/M365-WhatIsIt-SecurityFocus.png)
 
-<span data-ttu-id="9674d-113">虽然美国的联邦选举活动有资格享受 Microsoft 365 商业高级版的特殊定价，但具有此计划的任何组织都可以利用此指南来配置增强的安全性，并了解如何安全地进行协作。</span><span class="sxs-lookup"><span data-stu-id="9674d-113">While federal election campaigns in the United States qualify for special pricing for Microsoft 365 Business Premium, any organization with this plan can take advantage of this guidance to configure increased security and learn how to collaborate securely.</span></span>
+<span data-ttu-id="dfd3b-108">此配置包括以下用于保护业务生产力、协作、文件存储、电子邮件、设备和身份的指南：</span><span class="sxs-lookup"><span data-stu-id="dfd3b-108">This configuration includes the following guidance for productivity, collaboration, file storage, email, devices, and identity to protect your business:</span></span>
 
-<span data-ttu-id="9674d-114">此库包括以下内容：</span><span class="sxs-lookup"><span data-stu-id="9674d-114">This library includes the following:</span></span>
+| <span data-ttu-id="dfd3b-109">保护</span><span class="sxs-lookup"><span data-stu-id="dfd3b-109">Protection for</span></span> | <span data-ttu-id="dfd3b-110">说明</span><span class="sxs-lookup"><span data-stu-id="dfd3b-110">Description</span></span> | <span data-ttu-id="dfd3b-111">链接</span><span class="sxs-lookup"><span data-stu-id="dfd3b-111">Links</span></span> |
+| ----- | ----- | ----- | ----- |
+|<span data-ttu-id="dfd3b-112">电子邮件</span><span class="sxs-lookup"><span data-stu-id="dfd3b-112">Email</span></span> | <span data-ttu-id="dfd3b-113">使用多重身份验证、ATP 高级钓鱼保护、ATP 安全链接和安全附件，并使用加密电子邮件获取敏感信息。</span><span class="sxs-lookup"><span data-stu-id="dfd3b-113">Use multi-factor authentication, and ATP Advanced Phishing Protection, and ATP Safe Links and Safe Attachments, and use encrypted email for sensitive information.</span></span>| <span data-ttu-id="dfd3b-114">[设置多重身份验证](m365-campaigns-multifactor-authenication.md)、[防止网络钓鱼攻击](m365-campaigns-phishing-and-attacks.md)、[加密或标记敏感电子邮件](send-encrypted-email.md)</span><span class="sxs-lookup"><span data-stu-id="dfd3b-114">[Set up multi-factor authentication](m365-campaigns-multifactor-authenication.md), [Protect against phishing attacks](m365-campaigns-phishing-and-attacks.md), [Encrypt or label your sensitive email](send-encrypted-email.md)</span></span> |
+|<span data-ttu-id="dfd3b-115">iPhone 和 Android 设备</span><span class="sxs-lookup"><span data-stu-id="dfd3b-115">iPhones and Android devices</span></span> |<span data-ttu-id="dfd3b-116">使用多重身份验证，设置 Microsoft 移动应用，并需要 PIN 码</span><span class="sxs-lookup"><span data-stu-id="dfd3b-116">Use multi-factor authentication, and set up Microsoft mobile apps, and require a PIN</span></span> | <span data-ttu-id="dfd3b-117">[设置多重身份验证](m365-campaigns-multifactor-authenication.md)、[设置移动设备](../business/set-up-mobile-devices.md?toc=/microsoft-365/campaigns/toc.json)</span><span class="sxs-lookup"><span data-stu-id="dfd3b-117">[Set up multi-factor authentication](m365-campaigns-multifactor-authenication.md), [Set up mobile devices](../business/set-up-mobile-devices.md?toc=/microsoft-365/campaigns/toc.json)</span></span>|
+|<span data-ttu-id="dfd3b-118">自带设备（BYOD）的 Mac 和 Windows 10 的电脑</span><span class="sxs-lookup"><span data-stu-id="dfd3b-118">Bring-your-own-devices (BYOD) Macs and Windows 10 PCs</span></span> |<span data-ttu-id="dfd3b-119">保持 Office 处于最新版本、保持操作系统处于最新版本，并启用安全功能。</span><span class="sxs-lookup"><span data-stu-id="dfd3b-119">Keep Office up to date, keep operating systems updated, and enable security features.</span></span> | [<span data-ttu-id="dfd3b-120">保护非托管的 Windows 10 电脑和 Mac</span><span class="sxs-lookup"><span data-stu-id="dfd3b-120">Protect unmanaged Windows 10 PCs and Macs</span></span>](m365-campaigns-protect-pcs-macs.md) |
+|<span data-ttu-id="dfd3b-121">安全地存储和共享文件</span><span class="sxs-lookup"><span data-stu-id="dfd3b-121">Storing and sharing files securely</span></span> | <span data-ttu-id="dfd3b-122">共享来自 Microsoft Teams、OneDrive、SharePoint 和 Microsoft Stream 的文件和视频，并保护敏感数据。</span><span class="sxs-lookup"><span data-stu-id="dfd3b-122">Share files and videos from Microsoft Teams, OneDrive, SharePoint, and Microsoft Stream, and protect sensitive data.</span></span>| [<span data-ttu-id="dfd3b-123">共享文件和视频</span><span class="sxs-lookup"><span data-stu-id="dfd3b-123">Share files and videos</span></span>](share-files-and-videos.md) |
+|<span data-ttu-id="dfd3b-124">托管的 Windows 10 设备</span><span class="sxs-lookup"><span data-stu-id="dfd3b-124">Managed Windows 10 devices</span></span> |<span data-ttu-id="dfd3b-125">为关键员工使用管理设备，并确保设备的安全。</span><span class="sxs-lookup"><span data-stu-id="dfd3b-125">Use managed devices for key staff and secure these devices.</span></span> | [<span data-ttu-id="dfd3b-126">设置托管设备</span><span class="sxs-lookup"><span data-stu-id="dfd3b-126">Set up managed devices</span></span>](../business/set-up-windows-devices.md?toc=/microsoft-365/campaigns/toc.json) |
 
-- <span data-ttu-id="9674d-115">关于增加增强的安全性的说明性设置指南。</span><span class="sxs-lookup"><span data-stu-id="9674d-115">Prescriptive setup guidance for adding increased security.</span></span>
-- <span data-ttu-id="9674d-116">有关设置设备以实现安全访问的用户帮助。</span><span class="sxs-lookup"><span data-stu-id="9674d-116">Help for users to setup devices for secure access.</span></span>
-- <span data-ttu-id="9674d-117">有关如何安全协作和共享的指南。</span><span class="sxs-lookup"><span data-stu-id="9674d-117">Guidance on how to collaborate and share securely.</span></span>
+<a name="a-recommended-security-configuration-for-microsoft-365-business-premium"></a><span data-ttu-id="dfd3b-127">Microsoft 365 商业高级版推荐的安全配置</span><span class="sxs-lookup"><span data-stu-id="dfd3b-127">A recommended security configuration for Microsoft 365 Business Premium</span></span>
+------------------------------------
 
-<span data-ttu-id="9674d-118">有关所含内容的详细信息，请参阅 [Microsoft 365 商业高级版](https://www.microsoft.com/microsoft-365/business)。</span><span class="sxs-lookup"><span data-stu-id="9674d-118">For more information about what's included, see [Microsoft 365 Business Premium](https://www.microsoft.com/microsoft-365/business).</span></span>
+<span data-ttu-id="dfd3b-128">此 Microsoft 365 商业高级版推荐的安全配置允许：</span><span class="sxs-lookup"><span data-stu-id="dfd3b-128">This recommended secure configuration for Microsoft 365 Business Premium lets you:</span></span>
 
-<a name="get-started"></a><span data-ttu-id="9674d-119">入门</span><span class="sxs-lookup"><span data-stu-id="9674d-119">Get started</span></span>
+- <span data-ttu-id="dfd3b-129">依靠可靠的业务生产力和协作工具，如 Outlook、Word、Excel 和其他 Office 产品。</span><span class="sxs-lookup"><span data-stu-id="dfd3b-129">Rely on trusted business productivity and collaboration tools, such as Outlook, Word, Excel, and other Office products.</span></span>
+- <span data-ttu-id="dfd3b-130">通过易于管理的企业级安全性保护所有 iOS、Android 和 Windows 10 设备上的工作文件。</span><span class="sxs-lookup"><span data-stu-id="dfd3b-130">Protect your work files on all of your iOS, Android, and Windows 10 devices with enterprise-grade security that is simple to manage.</span></span>
+- <span data-ttu-id="dfd3b-131">对用户帐户和标识应用额外保护。</span><span class="sxs-lookup"><span data-stu-id="dfd3b-131">Apply extra protection for user accounts and identity.</span></span>
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3clbH]
+
+<span data-ttu-id="dfd3b-132">尽管美国的联邦和某些州市场活动有资格享受 Microsoft 365 商业高级版 Microsoft 365 活动优惠的 [特殊定价](get-microsoft-365-campaigns.md) ，但任何使用商业高级版计划的组织都可利用本指南，以配置更高的安全性，并了解如何安全协作。</span><span class="sxs-lookup"><span data-stu-id="dfd3b-132">While federal and some state election campaigns in the United States qualify for [special pricing](get-microsoft-365-campaigns.md) for the Microsoft 365 for Campaigns offering of Microsoft 365 Business Premium, any organization with the Business Premium plan can take advantage of this guidance to configure increased security and learn how to collaborate securely.</span></span>
+
+<span data-ttu-id="dfd3b-133">此库包括以下内容：</span><span class="sxs-lookup"><span data-stu-id="dfd3b-133">This library includes the following:</span></span>
+
+- <span data-ttu-id="dfd3b-134">关于增加增强的安全性的说明性设置指南。</span><span class="sxs-lookup"><span data-stu-id="dfd3b-134">Prescriptive setup guidance for adding increased security.</span></span>
+- <span data-ttu-id="dfd3b-135">有关设置设备以实现安全访问的用户帮助。</span><span class="sxs-lookup"><span data-stu-id="dfd3b-135">Help for users to setup devices for secure access.</span></span>
+- <span data-ttu-id="dfd3b-136">有关如何安全协作和共享的指南。</span><span class="sxs-lookup"><span data-stu-id="dfd3b-136">Guidance on how to collaborate and share securely.</span></span>
+
+<span data-ttu-id="dfd3b-137">有关所含内容的详细信息，请参阅 [Microsoft 365 商业高级版](https://www.microsoft.com/microsoft-365/business)。</span><span class="sxs-lookup"><span data-stu-id="dfd3b-137">For more information about what's included, see [Microsoft 365 Business Premium](https://www.microsoft.com/microsoft-365/business).</span></span>
+
+<a name="get-started"></a><span data-ttu-id="dfd3b-138">入门</span><span class="sxs-lookup"><span data-stu-id="dfd3b-138">Get started</span></span>
 --------------------------
 
-<span data-ttu-id="9674d-120">请按照以下步骤开始操作：</span><span class="sxs-lookup"><span data-stu-id="9674d-120">Follow these steps to get started:</span></span>
+<span data-ttu-id="dfd3b-139">请按照以下步骤开始操作：</span><span class="sxs-lookup"><span data-stu-id="dfd3b-139">Follow these steps to get started:</span></span>
 
-- [<span data-ttu-id="9674d-121">获取 Microsoft 365 活动</span><span class="sxs-lookup"><span data-stu-id="9674d-121">Get Microsoft 365 campaigns</span></span>](get-microsoft-365-campaigns.md)
-- [<span data-ttu-id="9674d-122">了解用户将如何使用 Microsoft 365</span><span class="sxs-lookup"><span data-stu-id="9674d-122">Learn how your users will work with Microsoft 365</span></span>](m365-campaigns-users.md)
-- [<span data-ttu-id="9674d-123">设置 Microsoft 365 活动</span><span class="sxs-lookup"><span data-stu-id="9674d-123">Set up Microsoft 365 campaigns</span></span>](microsoft-365-campaigns-setup-overview.md)
+- <span data-ttu-id="dfd3b-140">对于活动： [获取 Microsoft 365 活动](get-microsoft-365-campaigns.md)</span><span class="sxs-lookup"><span data-stu-id="dfd3b-140">For campaigns: [Get Microsoft 365 campaigns](get-microsoft-365-campaigns.md)</span></span>
+- <span data-ttu-id="dfd3b-141">任何企业： [用户如何使用 Microsoft 365](m365-campaigns-users.md)</span><span class="sxs-lookup"><span data-stu-id="dfd3b-141">For any business: [Learn how your users will work with Microsoft 365](m365-campaigns-users.md)</span></span>
+- <span data-ttu-id="dfd3b-142">任何企业： [设置 Microsoft 365](microsoft-365-campaigns-setup-overview.md)</span><span class="sxs-lookup"><span data-stu-id="dfd3b-142">For any business: [Set up Microsoft 365](microsoft-365-campaigns-setup-overview.md)</span></span>
 
-<a name="solutions-for-your-campaign-or-small-business"></a><span data-ttu-id="9674d-124">面向宣传活动或小型企业的解决方案</span><span class="sxs-lookup"><span data-stu-id="9674d-124">Solutions for your campaign or small business</span></span>
+<a name="solutions-for-your-business"></a><span data-ttu-id="dfd3b-143">适合你的业务的解决方案</span><span class="sxs-lookup"><span data-stu-id="dfd3b-143">Solutions for your business</span></span>
 --------------------------
 
-<span data-ttu-id="9674d-125">在设置安全的 Microsoft 365 环境后，可使用以下解决方案开始工作：</span><span class="sxs-lookup"><span data-stu-id="9674d-125">After you set up your secure Microsoft 365 environment, you can use the following solutions to get working:</span></span>
+<span data-ttu-id="dfd3b-144">在设置安全的 Microsoft 365 环境后，可使用以下解决方案开始工作：</span><span class="sxs-lookup"><span data-stu-id="dfd3b-144">After you set up your secure Microsoft 365 environment, you can use the following solutions to get working:</span></span>
 
-| <span data-ttu-id="9674d-126">创建协作团队</span><span class="sxs-lookup"><span data-stu-id="9674d-126">Create teams for collaboration</span></span> | <span data-ttu-id="9674d-127">设置联机会议</span><span class="sxs-lookup"><span data-stu-id="9674d-127">Set up online meetings</span></span> |
+| <span data-ttu-id="dfd3b-145">创建协作团队</span><span class="sxs-lookup"><span data-stu-id="dfd3b-145">Create teams for collaboration</span></span> | <span data-ttu-id="dfd3b-146">设置联机会议</span><span class="sxs-lookup"><span data-stu-id="dfd3b-146">Set up online meetings</span></span> |
 | ------------- | ------------- |
 | ![SharePoint 通信网站](../media/sm-m365-democracy-teams-collab.png) | ![联机会议](../media/m365-democracy-teams-meetings.png) |
-| <span data-ttu-id="9674d-130">使用 Teams 与关键员工、所有员工和合作伙伴或供应商进行协作。</span><span class="sxs-lookup"><span data-stu-id="9674d-130">Collaborate with teams for key staff, all staff, and partners or vendors.</span></span> [<span data-ttu-id="9674d-131">创建团队</span><span class="sxs-lookup"><span data-stu-id="9674d-131">Create your team</span></span>](create-teams-for-collaboration.md) | <span data-ttu-id="9674d-132">使用 Microsoft Teams 安排会议（包括音频、视频和共享）。</span><span class="sxs-lookup"><span data-stu-id="9674d-132">Schedule a meeting with audio, video, and sharing with Microsoft Teams.</span></span> [<span data-ttu-id="9674d-133">设置会议</span><span class="sxs-lookup"><span data-stu-id="9674d-133">Set up a meeting</span></span>](set-up-meetings.md) |
+| <span data-ttu-id="dfd3b-149">使用 Teams 与关键员工、所有员工和合作伙伴或供应商进行协作。</span><span class="sxs-lookup"><span data-stu-id="dfd3b-149">Collaborate with teams for key staff, all staff, and partners or vendors.</span></span><br>[<span data-ttu-id="dfd3b-150">创建团队</span><span class="sxs-lookup"><span data-stu-id="dfd3b-150">Create your team</span></span>](create-teams-for-collaboration.md) | <span data-ttu-id="dfd3b-151">使用 Microsoft Teams 安排会议（包括音频、视频和共享）。</span><span class="sxs-lookup"><span data-stu-id="dfd3b-151">Schedule a meeting with audio, video, and sharing with Microsoft Teams.</span></span><br>[<span data-ttu-id="dfd3b-152">设置会议</span><span class="sxs-lookup"><span data-stu-id="dfd3b-152">Set up a meeting</span></span>](set-up-meetings.md) |
 
-| <span data-ttu-id="9674d-134">加密或标记敏感电子邮件</span><span class="sxs-lookup"><span data-stu-id="9674d-134">Encrypt or label your sensitive email</span></span> | <span data-ttu-id="9674d-135">创建通信网站</span><span class="sxs-lookup"><span data-stu-id="9674d-135">Create a communications site</span></span> |
+| <span data-ttu-id="dfd3b-153">加密或标记敏感电子邮件</span><span class="sxs-lookup"><span data-stu-id="dfd3b-153">Encrypt or label your sensitive email</span></span> | <span data-ttu-id="dfd3b-154">创建通信网站</span><span class="sxs-lookup"><span data-stu-id="dfd3b-154">Create a communications site</span></span> |
 | ------------- | ------------- |
 | ![已加密和标记的电子邮件](../media/sm-m365-campaign-email-encrypt.png) | ![SharePoint 通信网站](../media/sm-m365-democracy-comms-site.png) |
-| <span data-ttu-id="9674d-138">使用加密和敏感度标签来保护包含机密或敏感信息的电子邮件。</span><span class="sxs-lookup"><span data-stu-id="9674d-138">Use encryption and sensitivity labels to protect email that contains confidential or sensitive information.</span></span> [<span data-ttu-id="9674d-139">发送加密电子邮件</span><span class="sxs-lookup"><span data-stu-id="9674d-139">Send encrypted email</span></span>](send-encrypted-email.md) | <span data-ttu-id="9674d-140">在使用 SharePoint 创建的内部通信网站中与你的团队共享事件、邮件、图像等内容。</span><span class="sxs-lookup"><span data-stu-id="9674d-140">Share events, message, images, and more with your team in an internal communications site created with SharePoint.</span></span> [<span data-ttu-id="9674d-141">创建网站</span><span class="sxs-lookup"><span data-stu-id="9674d-141">Create your site</span></span>](create-communications-site.md) |
+| <span data-ttu-id="dfd3b-157">使用加密和敏感度标签来保护包含机密或敏感信息的电子邮件。</span><span class="sxs-lookup"><span data-stu-id="dfd3b-157">Use encryption and sensitivity labels to protect email that contains confidential or sensitive information.</span></span><br>[<span data-ttu-id="dfd3b-158">发送加密电子邮件</span><span class="sxs-lookup"><span data-stu-id="dfd3b-158">Send encrypted email</span></span>](send-encrypted-email.md) | <span data-ttu-id="dfd3b-159">在使用 SharePoint 创建的内部通信网站中与你的团队共享事件、邮件、图像等内容。</span><span class="sxs-lookup"><span data-stu-id="dfd3b-159">Share events, message, images, and more with your team in an internal communications site created with SharePoint.</span></span><br>[<span data-ttu-id="dfd3b-160">创建网站</span><span class="sxs-lookup"><span data-stu-id="dfd3b-160">Create your site</span></span>](create-communications-site.md) |
 
-| <span data-ttu-id="9674d-142">共享文件和视频</span><span class="sxs-lookup"><span data-stu-id="9674d-142">Share files and videos</span></span> |
+| <span data-ttu-id="dfd3b-161">共享文件和视频</span><span class="sxs-lookup"><span data-stu-id="dfd3b-161">Share files and videos</span></span> |
 | ------------- |
 | ![在 Microsoft Teams 中共享文件](../media/m365-democracy-teams-sharefiles.png) |
-| <span data-ttu-id="9674d-144">将文件和视频保存到云，以便所有相应的人员都可以</span><span class="sxs-lookup"><span data-stu-id="9674d-144">Save your files and videos to the cloud so they're available to all</span></span> <br><br><span data-ttu-id="9674d-145">使用它们。</span><span class="sxs-lookup"><span data-stu-id="9674d-145">of the appropriate people.</span></span> [<span data-ttu-id="9674d-146">开始共享</span><span class="sxs-lookup"><span data-stu-id="9674d-146">Start sharing</span></span>](share-files-and-videos.md) |
-
+| <span data-ttu-id="dfd3b-163">将文件和视频保存到云端，以便于使用</span><span class="sxs-lookup"><span data-stu-id="dfd3b-163">Save your files and videos to the cloud so they're available</span></span> <br><span data-ttu-id="dfd3b-164">给所有合适的人。</span><span class="sxs-lookup"><span data-stu-id="dfd3b-164">to all of the appropriate people.</span></span><br>[<span data-ttu-id="dfd3b-165">开始共享</span><span class="sxs-lookup"><span data-stu-id="dfd3b-165">Start sharing</span></span>](share-files-and-videos.md) |
