@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 for Campaigns
+title: 面向小型企业和活动的Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: samanro
@@ -24,33 +24,44 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
-description: Microsoft 365 for Campaigns
-ms.openlocfilehash: 57997af310eb07c61b5f2cdb03f24b5e443d6e2e
-ms.sourcegitcommit: 371249d3dde12092b820cd11ed3e02b31e88636a
+description: 适用于小型企业（包括小型公司、惯例和政治活动）的 Microsoft 365 指南。
+ms.openlocfilehash: 0f7b441a4280ba9eaaf5f1f673d1ccf43a0a5350
+ms.sourcegitcommit: 1b30ac6e05906c8a014b1fed33fc71e1821f6ad2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "48897289"
+ms.lasthandoff: 01/29/2021
+ms.locfileid: "50044700"
 ---
-<a name="microsoft-365-for-campaigns"></a>Microsoft 365 for Campaigns
+<a name="microsoft-365-for-smaller-businesses-and-campaigns"></a>面向小型企业和活动的Microsoft 365
 ===========================
 
-在当今世界，保持数据和通信安全是头等大事，尤其是在竞选活动、医疗和法律实践以及许多其他业务中。 Microsoft 365 for Campaigns 提供了一组用于帮助保护你和你的数据的建议。 此库包括有关设置和使用此推荐环境的帮助，即使所处理的并不是宣传活动也同样适用。
+在当今世界，保持数据和通信安全是优先事项，特别是对于医疗和法律实践、政治活动和许多其他小型企业。 该解决方案提供了一系列建议，旨在帮助保护你和你的数据。 无论何种企业类型，此库包括有关设置和使用此推荐环境的帮助。
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3clbH]
 
-<a name="what-is-microsoft-365-for-campaigns"></a>什么是 Microsoft 365 for Campaigns？
+![Microsoft 365 商业高级版可保护你的生产力工具、协作工具、文件存储、电子邮件、设备和标识](../media/M365-WhatIsIt-SecurityFocus.png)
+
+此配置包括以下用于保护业务生产力、协作、文件存储、电子邮件、设备和身份的指南：
+
+| 保护 | 说明 | 链接 |
+| ----- | ----- | ----- | ----- |
+|电子邮件 | 使用多重身份验证、ATP 高级钓鱼保护、ATP 安全链接和安全附件，并使用加密电子邮件获取敏感信息。| [设置多重身份验证](m365-campaigns-multifactor-authenication.md)、[防止网络钓鱼攻击](m365-campaigns-phishing-and-attacks.md)、[加密或标记敏感电子邮件](send-encrypted-email.md) |
+|iPhone 和 Android 设备 |使用多重身份验证，设置 Microsoft 移动应用，并需要 PIN 码 | [设置多重身份验证](m365-campaigns-multifactor-authenication.md)、[设置移动设备](../business/set-up-mobile-devices.md?toc=/microsoft-365/campaigns/toc.json)|
+|自带设备（BYOD）的 Mac 和 Windows 10 的电脑 |保持 Office 处于最新版本、保持操作系统处于最新版本，并启用安全功能。 | [保护非托管的 Windows 10 电脑和 Mac](m365-campaigns-protect-pcs-macs.md) |
+|安全地存储和共享文件 | 共享来自 Microsoft Teams、OneDrive、SharePoint 和 Microsoft Stream 的文件和视频，并保护敏感数据。| [共享文件和视频](share-files-and-videos.md) |
+|托管的 Windows 10 设备 |为关键员工使用管理设备，并确保设备的安全。 | [设置托管设备](../business/set-up-windows-devices.md?toc=/microsoft-365/campaigns/toc.json) |
+
+<a name="a-recommended-security-configuration-for-microsoft-365-business-premium"></a>Microsoft 365 商业高级版推荐的安全配置
 ------------------------------------
 
-它是一种推荐的安全配置，包括 Microsoft 365 商业高级版，因此你可以：
+此 Microsoft 365 商业高级版推荐的安全配置允许：
 
 - 依靠可靠的业务生产力和协作工具，如 Outlook、Word、Excel 和其他 Office 产品。
 - 通过易于管理的企业级安全性保护所有 iOS、Android 和 Windows 10 设备上的工作文件。
 - 对用户帐户和标识应用额外保护。
 
-![Microsoft 365 商业高级版可保护你的生产力工具、协作工具、文件存储、电子邮件、设备和标识](../media/M365-WhatIsIt-SecurityFocus.png)
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3clbH]
 
-虽然美国的联邦选举活动有资格享受 Microsoft 365 商业高级版的特殊定价，但具有此计划的任何组织都可以利用此指南来配置增强的安全性，并了解如何安全地进行协作。
+尽管美国的联邦和某些州市场活动有资格享受 Microsoft 365 商业高级版 Microsoft 365 活动优惠的 [特殊定价](get-microsoft-365-campaigns.md) ，但任何使用商业高级版计划的组织都可利用本指南，以配置更高的安全性，并了解如何安全协作。
 
 此库包括以下内容：
 
@@ -65,11 +76,11 @@ ms.locfileid: "48897289"
 
 请按照以下步骤开始操作：
 
-- [获取 Microsoft 365 活动](get-microsoft-365-campaigns.md)
-- [了解用户将如何使用 Microsoft 365](m365-campaigns-users.md)
-- [设置 Microsoft 365 活动](microsoft-365-campaigns-setup-overview.md)
+- 对于活动： [获取 Microsoft 365 活动](get-microsoft-365-campaigns.md)
+- 任何企业： [用户如何使用 Microsoft 365](m365-campaigns-users.md)
+- 任何企业： [设置 Microsoft 365](microsoft-365-campaigns-setup-overview.md)
 
-<a name="solutions-for-your-campaign-or-small-business"></a>面向宣传活动或小型企业的解决方案
+<a name="solutions-for-your-business"></a>适合你的业务的解决方案
 --------------------------
 
 在设置安全的 Microsoft 365 环境后，可使用以下解决方案开始工作：
@@ -77,15 +88,14 @@ ms.locfileid: "48897289"
 | 创建协作团队 | 设置联机会议 |
 | ------------- | ------------- |
 | ![SharePoint 通信网站](../media/sm-m365-democracy-teams-collab.png) | ![联机会议](../media/m365-democracy-teams-meetings.png) |
-| 使用 Teams 与关键员工、所有员工和合作伙伴或供应商进行协作。 [创建团队](create-teams-for-collaboration.md) | 使用 Microsoft Teams 安排会议（包括音频、视频和共享）。 [设置会议](set-up-meetings.md) |
+| 使用 Teams 与关键员工、所有员工和合作伙伴或供应商进行协作。<br>[创建团队](create-teams-for-collaboration.md) | 使用 Microsoft Teams 安排会议（包括音频、视频和共享）。<br>[设置会议](set-up-meetings.md) |
 
 | 加密或标记敏感电子邮件 | 创建通信网站 |
 | ------------- | ------------- |
 | ![已加密和标记的电子邮件](../media/sm-m365-campaign-email-encrypt.png) | ![SharePoint 通信网站](../media/sm-m365-democracy-comms-site.png) |
-| 使用加密和敏感度标签来保护包含机密或敏感信息的电子邮件。 [发送加密电子邮件](send-encrypted-email.md) | 在使用 SharePoint 创建的内部通信网站中与你的团队共享事件、邮件、图像等内容。 [创建网站](create-communications-site.md) |
+| 使用加密和敏感度标签来保护包含机密或敏感信息的电子邮件。<br>[发送加密电子邮件](send-encrypted-email.md) | 在使用 SharePoint 创建的内部通信网站中与你的团队共享事件、邮件、图像等内容。<br>[创建网站](create-communications-site.md) |
 
 | 共享文件和视频 |
 | ------------- |
 | ![在 Microsoft Teams 中共享文件](../media/m365-democracy-teams-sharefiles.png) |
-| 将文件和视频保存到云，以便所有相应的人员都可以 <br><br>使用它们。 [开始共享](share-files-and-videos.md) |
-
+| 将文件和视频保存到云端，以便于使用 <br>给所有合适的人。<br>[开始共享](share-files-and-videos.md) |
