@@ -16,12 +16,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: 了解 Microsoft 365 电子数据展示工具如何处理附加到电子邮件并存储在 SharePoint Online 和 OneDrive for Business 中的加密文档。
-ms.openlocfilehash: df2ff218e5c62e103661889fc8c66950a4d25cab
-ms.sourcegitcommit: 6759e619c45a5f8e775ad456a5dfb18c08f13f8e
+ms.openlocfilehash: aeb1d927a5da24c55838fe3379451956949d8b4f
+ms.sourcegitcommit: 1b30ac6e05906c8a014b1fed33fc71e1821f6ad2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "49713263"
+ms.lasthandoff: 01/29/2021
+ms.locfileid: "50044764"
 ---
 # <a name="decryption-in-microsoft-365-ediscovery-tools"></a>Microsoft 365 电子数据展示工具中的解密
 
@@ -39,7 +39,7 @@ Microsoft 电子数据展示工具支持使用 Microsoft 加密技术加密的�
 
 ## <a name="ediscovery-activities-that-support-encrypted-items"></a>支持加密项目的电子数据展示活动
 
-下表标识了可以在 Microsoft 365 电子数据展示工具中对附加到 SharePoint 和 OneDrive 中的电子邮件加密文件和加密文档的加密文件执行的支持任务。 这些支持的任务可以在符合搜索条件的加密文件上执行。 值"N/A"表示相应电子数据展示工具中不可用。
+下表标识了可以在 Microsoft 365 电子数据展示工具中对附加到 SharePoint 和 OneDrive 中的电子邮件加密文件和加密文档的加密文件执行的支持任务。 这些支持的任务可以在符合搜索条件的加密文件上执行。 值指示功能在相应的电子数据展示 `N/A` 工具中不可用。
 
 |电子数据展示任务  |内容搜索  |核心电子数据展示  |高级电子数据展示  |
 |:---------|:---------|:---------|:---------|
@@ -50,6 +50,16 @@ Microsoft 电子数据展示工具支持使用 Microsoft 加密技术加密的�
 |导出附加到电子邮件的加密文件    |是       |是  |是    |
 |在 SharePoint 和 OneDrive 中导出加密文档    |否       |否  |是    |
 |||||
+
+**注意：** 当使用以下任一设置配置应用加密的敏感度标签时，电子数据展示不支持 SharePoint 和 OneDrive 中的加密文件：
+
+- 用户可以在手动将标签应用于文档时分配权限。 这有时称为用户 *定义权限*。<br/>
+
+- 用户对文档的访问权限具有设置为"从不"值而非"从不"值的过期 **设置**。
+
+有关这些设置的信息，请参阅"使用敏感度标签应用加密来限制对内容的访问"部分中的"配置 [加密设置"](encryption-sensitivity-labels.md#configure-encryption-settings)部分。
+
+使用以前的设置加密的文档仍可由电子数据展示搜索返回。 当文档属性（如 (、作者或修改日期）与搜索条件) 时，可能会发生这种情况。 尽管这些文档可能包含在搜索结果中，但无法预览或查看它们。 在高级电子数据展示中导出这些文档时，这些文档也将保持加密状态。
 
 ## <a name="requirements-for-decryption-in-ediscovery"></a>电子数据展示中的解密要求
 

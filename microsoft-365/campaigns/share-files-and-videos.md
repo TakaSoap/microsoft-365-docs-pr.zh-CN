@@ -24,49 +24,48 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: 在 Microsoft 团队和 SharePoint 中共享市场活动中的文件和视频。
-ms.openlocfilehash: d8f9df1befe720dbcd2affc56ff02f29c037216b
-ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
+description: 与 Microsoft Teams 和 SharePoint 共享市场活动中的文件和视频。
+ms.openlocfilehash: d6d168c196a8571cab86a1be57f5b26782bc4d3f
+ms.sourcegitcommit: 1b30ac6e05906c8a014b1fed33fc71e1821f6ad2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48132008"
+ms.lasthandoff: 01/29/2021
+ms.locfileid: "50044176"
 ---
 # <a name="share-files-and-videos"></a>共享文件和视频
 
-当您需要控制谁可以查看您的文件以及谁可以编辑您的文件时，您需要将文件存储在一个安全的位置，以确保正确应用权限。 您可以使用 Microsoft 团队存储文件，然后使用 Microsoft 团队或通过发送 SharePoint 链接在市场活动内部或外部共享这些文件。 发送链接（而不是电子邮件附件）意味着您知道谁正在查看和修改文件，并且在没有您的许可的情况下无法查看或修改这些文件。 
+当您需要控制可以查看文件的用户和可编辑文件的用户时，您需要将文件存储在一个安全的位置，您可以在其中确保正确应用权限。 可以使用 Microsoft Teams 存储文件，然后使用 Microsoft Teams 或发送 SharePoint 链接，在公司、实践或市场活动内外共享文件。 发送链接而不是电子邮件附件意味着你知道谁正在查看和修改文件，未经你的允许，无法查看或修改这些文件。
 
-![Microsoft 团队窗口的关系图，显示 "文件" 选项卡并获取菜单上的链接](../media/m365-democracy-teams-sharefiles.png)
+![Microsoft Teams 窗口的图示，显示菜单上的"文件"选项卡和"获取"链接](../media/m365-democracy-teams-sharefiles.png)
 
-使用 Microsoft 团队和 SharePoint 中的文件，您还可以同时处理这些文件，并相互审阅各自的更改。 使用 Microsoft 团队共享政治活动中的文件。 如果需要与市场活动外部的人员进行外部共享，可以将其作为来宾添加到团队或向其发送安全 SharePoint 链接。
+借助 Microsoft Teams 和 SharePoint 中的文件，还可以一起处理文件并查看彼此的更改。 使用 Microsoft Teams 在公司、实践或市场活动内共享文件。 如果需要与组织外部人员进行外部共享，可以将他们作为来宾添加到团队或向团队发送安全的 SharePoint 链接。
 
-您还可以使用 Microsoft Stream 存储和共享市场活动的视频。 这些视频对公众是不可查看的，因此它们是内部市场活动邮件的理想之选。
+您还可以使用 Microsoft Stream 在内部存储和共享视频。 这些视频无法供公众查看，因此是内部市场活动消息的理想视频。
 
 ## <a name="best-practices"></a>最佳做法
 
-使用以下方法安全地共享文件和视频：
+使用这些方法可以安全地共享文件和视频：
 
-1. 在 Microsoft 团队或 SharePoint 中存储文件，并确保只有那些需要访问这些文件的人员才拥有这些文件。 
-2. 当您想要共享时，不要将文件附加到电子邮件。 相反，请选择 "从 Microsoft 团队或 SharePoint **获取链接** " 并在电子邮件中发送链接。
-3. 若要在外部共享文件，请将该用户添加为你的团队的来宾，或使用 SharePoint 获取安全链接以仅共享该文件。
-4. 使用 Microsoft Stream 承载希望您的市场活动看到的视频。 
-5. 使用 Microsoft 团队或 SharePoint 存储您需要工作组进行协作或共享的视频文件。
+1. 将文件存储在 Microsoft Teams 或 SharePoint 中，并确保只有需要访问这些文件的人具有这些文件。
+2. 想要共享时，不要将文件附加到电子邮件。 相反，请选择" **从** Microsoft Teams 或 SharePoint 获取链接"，然后通过电子邮件发送链接。
+3. 若要在外部共享文件，请向团队添加用户作为来宾，或使用 SharePoint 获取仅共享该文件的安全链接。
+4. 使用 Microsoft Stream 托管希望市场活动查看的视频。
+5. 使用 Microsoft Teams 或 SharePoint 存储需要团队协作处理或共享的视频文件。
 
- 
 ## <a name="set-up"></a>设置
 
-若要创建团队并向其添加来宾（如广告商或融资合作伙伴），请执行以下步骤。
+若要创建团队并添加来宾（如广告商或财务合作伙伴），请按照以下步骤操作。
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FQMp]
 
-若要与来宾共享安全链接，而不使用 Microsoft 团队，请执行以下步骤
+若要在不使用 Microsoft Teams 的情况下与来宾共享安全链接，请按照以下步骤操作。
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE22Yf0]
 
-若要创建和共享视频，请执行以下步骤。
+若要创建和共享视频，请按照以下步骤操作。
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWrv0F]
 
-下载 [PDF](https://go.microsoft.com/fwlink/?linkid=2079435) 或 [PowerPoint](https://go.microsoft.com/fwlink/?linkid=2079438) 中的信息图，以快速了解共享文件的方法。
+下载 PDF 或[](https://go.microsoft.com/fwlink/?linkid=2079435)[PowerPoint](https://go.microsoft.com/fwlink/?linkid=2079438)信息图，快速概览共享文件的方法。
 
-[![与不同用户共享文件的说明](../media/ShareYourfiles-thumb-358x201.png)](https://go.microsoft.com/fwlink/?linkid=2079435)
+[![与不同用户共享文件的图示](../media/ShareYourfiles-thumb-358x201.png)](https://go.microsoft.com/fwlink/?linkid=2079435)

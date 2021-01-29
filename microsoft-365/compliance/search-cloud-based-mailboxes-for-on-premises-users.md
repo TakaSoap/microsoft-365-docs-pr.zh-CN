@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: 3f7dde1a-a8ea-4366-86da-8ee6777f357c
 description: 在 Exchange 混合部署中，使用安全与合规中心中的内容搜索工具搜索并导出本地用户的 Teams 聊天数据。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 23f8ea08de3d7fdbbc36274374d315ef0cb66a84
-ms.sourcegitcommit: 162c01dfaa2fdb3225ce4c24964c1065ce22ed5d
+ms.openlocfilehash: 7bdcba3a14b2ee6d14210d3525e20ec507166a5d
+ms.sourcegitcommit: 537e513a4a232a01e44ecbc76d86a8bcaf142482
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2021
-ms.locfileid: "49976199"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "50029712"
 ---
 # <a name="search-for-teams-chat-data-for-on-premises-users"></a>搜索 Teams 中本地用户的聊天数据
 
@@ -39,10 +39,8 @@ ms.locfileid: "49976199"
 
 - 只有与本地用户关联的 Teams 聊天数据存储在基于云的存储区域中。 本地用户不能以任何方式访问此存储区域。
 
-- 你必须向 Microsoft 支持人员提交请求，以使贵组织能够搜索本地用户的 Teams 聊天数据。 请参阅本文中的[向 Microsoft 支持人员提交启用此功能的请求](#filing-a-request-with-microsoft-support-to-enable-this-feature)部分。
-
 > [!NOTE]
-> Teams 频道对话始终存储在与 Teams 关联的基于云的邮箱中。 这意味着您可以使用内容搜索来搜索频道对话，而无需提交支持请求。 有关搜索 Teams 频道对话的详细信息，请参阅[搜索 Microsoft Teams 和 Microsoft 365 组](content-search.md#searching-microsoft-teams-and-microsoft-365-groups)。
+> Teams 频道对话始终存储在与 Teams 关联的基于云的邮箱中，这意味着可以搜索频道对话。 有关搜索 Teams 频道对话的详细信息，请参阅[搜索 Microsoft Teams 和 Microsoft 365 组](content-search.md#searching-microsoft-teams-and-microsoft-365-groups)。
   
 ## <a name="how-it-works"></a>运作方式
 
@@ -54,20 +52,7 @@ ms.locfileid: "49976199"
   
 除了此新功能之外，你仍可以使用内容搜索在基于云的 SharePoint 网站和与每个 Microsoft Team 关联的 Exchange 邮箱中搜索、预览和导出 Teams 内容，以及在基于云的用户的 Exchange Online 邮箱中搜索、预览和导出 1xN Teams 聊天数据。
 
-## <a name="filing-a-request-with-microsoft-support-to-enable-this-feature"></a>向 Microsoft 支持人员提交启用此功能的请求
 
-你必须向 Microsoft 支持人员提交请求，以使贵组织能够使用安全与合规中心中的图形用户界面来搜索本地用户的 Teams 聊天数据。 此功能在安全与合规中心 PowerShell 中提供。 无需提交支持请求即可使用 PowerShell 来搜索本地用户的 Teams 聊天数据。
-  
-向 Microsoft 支持人员提交请求时，请包含以下信息：
-  
-- 组织的默认域名。
-
-- 组织的租户名称和租户 ID。 可在 Azure Active Directory 门户中找到这些信息（位于“**管理**”\>“**属性** 下）。 请参阅[查找 Microsoft 365 租户 ID](https://docs.microsoft.com/onedrive/find-your-office-365-tenant-id)。
-
-- 可在支持请求中使用以下标题或说明：“为本地用户启用应用程序内容搜索”。 这有助于将请求传送到将实现请求的电子数据展示工程团队。
-
-执行工程更改后，Microsoft 支持人员将向你发送预计的部署日期。 在提交支持请求后，部署过程通常需要 2 到 3 周的时间。
-  
 ### <a name="what-happens-after-this-feature-is-enabled"></a>启用此功能后会发生什么情况？
 
 在组织中部署此功能后，将在安全与合规中心中的内容搜索以及与电子数据展示事例关联的搜索中进行以下更改：

@@ -22,48 +22,46 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: 为您的市场活动创建一个通信网站。
-ms.openlocfilehash: 5bd0dd36188f5ec1d550c9baa875e18debd99528
-ms.sourcegitcommit: 26c2f01d6f88f6c288b04f9f08062d68dd1e67e1
+description: 为市场活动或企业创建通信网站。
+ms.openlocfilehash: c9624694e2174de47cb53ece8b1077fd7a5b59c5
+ms.sourcegitcommit: 1b30ac6e05906c8a014b1fed33fc71e1821f6ad2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "49569959"
+ms.lasthandoff: 01/29/2021
+ms.locfileid: "50044651"
 ---
-# <a name="create-a-communications-site-for-your-campaign"></a>为市场活动创建通信网站
+# <a name="create-a-communications-site"></a>创建通信网站
 
-若要传达优先级、共享策略文档和突出显示即将发生的事件，这是一种很好的方法：使用 SharePoint 中的通信网站。 通信网站用于在整个市场活动中广泛共享内容;它是您的内部市场活动网站。
+在 SharePoint 中使用通信网站是传达优先级、共享战略文档和突出显示即将发生事件的主要方式。 通信网站用于在整个企业或活动中广泛共享内容;它是你的内部战略网站。
 
 ## <a name="best-practices"></a>最佳做法
 
 在通信网站中包括以下元素：
 
-1. 将您的市场活动徽标和颜色添加为页眉图像和主题
-2. 在一个 **英雄 web 部件** 中，领导你的策略、消息、重要文档、目录和 FAQ。
-3. 在 **文本 web 部件** 中包括对团队的候选语句。
-4. 将市场活动事件添加到 **事件 web 部件** ，以便每个人都可以看到即将推出的内容。
-5. 添加用户可以使用或共享到 **图像库 web 部件** 的照片。
+1. 将徽标和颜色添加为标题图像和主题。
+2. 在主 Web 部件中引导你的策略、消息、重要文档、目录和 **常见问题** 解答。
+3. 在文本 Web 部件中向团队添加 **CEO 或候选人声明**。
+4. 将事件添加到事件 **Web 部件，** 以便每个人都可以看到即将发生的内容。
+5. 添加用户可以使用或共享到图像 **库 Web** 部件的照片。
 
-![包含市场活动所需的常见元素空间的 SharePoint 通信页面的关系图](../media/m365-democracy-comms-site.png)
+![包含活动所需的常见元素空间的 SharePoint 通信页面关系图](../media/m365-democracy-comms-site.png)
 
-## <a name="infographic-create-a-communications-site-infographic"></a>信息图：创建通信网站信息图 
-可以按 tabloid 格式下载和打印以下适用于 PowerPoint 和 PDF 的链接 (也称为分类账、11 x 17 或 A3) 。
+## <a name="infographic-create-a-communications-site-infographic"></a>信息图：创建通信网站信息图
+
+可以下载并打印以下 PowerPoint 和 PDF 链接，格式为 (分类帐、11 x 17 或 A3) 。
 
 [![通信网站信息图的图像](../media/M365-Campaigns-CreateCommunicationSite-358-201.png)](downloads/M365CampaignsCreateCommunicationSite.pdf)
 
 [PDF](downloads/M365CampaignsCreateCommunicationSite.pdf)  | [PowerPoint](downloads/M365CampaignsCreateCommunicationSite.pptx)
 
-
 ## <a name="set-it-up"></a>设置
 
 1. 登录到 https://Office.com。
-2. 在页面的左上角，选择应用启动器图标，然后选择 " **SharePoint** " 磁贴。 如果看不到 **sharepoint** 磁贴，请单击 " **网站** 图块" 或 " **全部** 如果 sharepoint 不可见"。
-3. 在 SharePoint 主页的顶部，单击 " **+ 创建网站** "，然后选择 " **通信网站** " 选项。
+2. 在页面的左上角，选择应用启动器图标，然后选择 **SharePoint** 磁贴。 如果看不到 **SharePoint** 磁贴，请单击"网站 **"磁贴或**"所有"（如果 SharePoint 不可见）。
+3. 在 SharePoint 主页顶部，单击" **+ 创建网站** "，然后选择" **通信网站"** 选项。
 
-了解 [有关通信网站](https://support.office.com/article/What-is-a-SharePoint-communication-site-94A33429-E580-45C3-A090-5512A8070732) 以及如何 [在 SharePoint Online 中创建通信网站](https://support.microsoft.com/en-us/office/create-a-communication-site-in-sharepoint-online-7fb44b20-a72f-4d2c-9173-fc8f59ba50eb)的所有信息。
+了解有关 [通信网站以及如何](https://support.office.com/article/What-is-a-SharePoint-communication-site-94A33429-E580-45C3-A090-5512A8070732) 在 SharePoint Online 中创建 [通信网站的所有信息](https://support.microsoft.com/en-us/office/create-a-communication-site-in-sharepoint-online-7fb44b20-a72f-4d2c-9173-fc8f59ba50eb)。
 
+## <a name="admin-settings"></a>管理员设置
 
-## <a name="admin-settings"></a>管理设置
-
-如果看不到 " **+ 创建** 网站" 链接，则可能无法在 Microsoft 365 中使用自助式网站创建。 若要创建工作组网站，请与组织中的 Microsoft 365 管理人员联系。 如果你是 Microsoft 365 管理员，请参阅 [在 Sharepoint online 中管理网站创建](https://docs.microsoft.com/sharepoint/manage-site-creation) 以为你的组织启用自助式网站创建，或 [在新 Sharepoint 管理中心中管理网站](https://docs.microsoft.com/sharepoint/manage-sites-in-new-admin-center) 以从 SharePoint Online 管理中心创建网站。
-  
+如果看不到 + 创建网站链接，Microsoft 365 中可能无法提供自助式网站创建。 若要创建团队网站，请联系组织中管理 Microsoft 365 的人。 如果你是 Microsoft 365 管理员，请参阅 ["在 SharePoint Online](https://docs.microsoft.com/sharepoint/manage-site-creation) 中管理网站创建"，为组织启用自助式网站创建，或管理新 [SharePoint](https://docs.microsoft.com/sharepoint/manage-sites-in-new-admin-center) 管理中心中的网站以从 SharePoint Online 管理中心创建网站。  

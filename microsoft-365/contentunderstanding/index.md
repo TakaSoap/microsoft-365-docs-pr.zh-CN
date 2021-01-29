@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: 了解如何查找 Microsoft SharePoint Syntex 资源。
-ms.openlocfilehash: 558559efc0387eebb1be7a57c8f7c3aeacfc149e
-ms.sourcegitcommit: 162c01dfaa2fdb3225ce4c24964c1065ce22ed5d
+ms.openlocfilehash: 02f3da4e03d13b0710590336e49292ac6df70560
+ms.sourcegitcommit: 1b30ac6e05906c8a014b1fed33fc71e1821f6ad2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2021
-ms.locfileid: "49975723"
+ms.lasthandoff: 01/29/2021
+ms.locfileid: "50044752"
 ---
 # <a name="introduction-to-microsoft-sharepoint-syntex"></a>Microsoft SharePoint Syntex 简介
 
@@ -72,7 +72,7 @@ Microsoft SharePoint Syntex 是一项 Office 365 服务，有助于组织：
 
 | 如果要查找此信息： | 参考资源： |
 |:-----|:-----|
-|了解如何使用模型|[创建内容中心](https://docs.microsoft.com/microsoft-365/contentunderstanding/create-a-content-center)<br><br>[创建分类器](https://docs.microsoft.com/microsoft-365/contentunderstanding/create-a-classifier)<br><br>[创建提取程序](https://docs.microsoft.com/microsoft-365/contentunderstanding/create-an-extractor)<br><br>[创建表单处理模型](https://docs.microsoft.com/microsoft-365/contentunderstanding/create-a-form-processing-model)<br><br>[说明类型](https://docs.microsoft.com/microsoft-365/contentunderstanding/form-processing-overview)<br><br>[应用文档理解模型](https://docs.microsoft.com/microsoft-365/contentunderstanding/apply-a-model)<br><br>[通过示例模型了解文档理解模型](https://docs.microsoft.com/microsoft-365/contentunderstanding/learn-about-document-understanding-models-through-the-sample-model)<br><br>|
+|了解如何使用模型|[创建内容中心](https://docs.microsoft.com/microsoft-365/contentunderstanding/create-a-content-center)<br><br>[创建分类器](https://docs.microsoft.com/microsoft-365/contentunderstanding/create-a-classifier)<br><br>[创建提取程序](https://docs.microsoft.com/microsoft-365/contentunderstanding/create-an-extractor)<br><br>[创建表单处理模型](https://docs.microsoft.com/microsoft-365/contentunderstanding/create-a-form-processing-model)<br><br>[说明类型](https://docs.microsoft.com/microsoft-365/contentunderstanding/explanation-types-overview)<br><br>[应用文档理解模型](https://docs.microsoft.com/microsoft-365/contentunderstanding/apply-a-model)<br><br>[通过示例模型了解文档理解模型](https://docs.microsoft.com/microsoft-365/contentunderstanding/learn-about-document-understanding-models-through-the-sample-model)<br><br>|
 |将保留标签应用于模型|[将保留标签应用于文档理解模型](https://docs.microsoft.com/microsoft-365/contentunderstanding/apply-a-retention-label-to-a-model)|
 |创建提取程序时使用托管元数据服务术语库分类|[创建提取程序时利用术语库分类](https://docs.microsoft.com/microsoft-365/contentunderstanding/leverage-term-store-taxonomy)|
 |了解如何查看有关模型的数据|[模型使用情况分析](https://docs.microsoft.com/microsoft-365/contentunderstanding/model-usage-analytics)|

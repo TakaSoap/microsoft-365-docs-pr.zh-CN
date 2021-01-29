@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 有助于你满足信息治理和记录管理监管要求的资源。
-ms.openlocfilehash: f8641af2ec839c9ed3f4d029b4f6de52fe7033e3
-ms.sourcegitcommit: 36795a6735cd3fc678c7d5db71ddc97fac3f6f8a
+ms.openlocfilehash: 891dd3f37e70ae94dbae96baaa7c38b71456305b
+ms.sourcegitcommit: b3bb5bf5efa197ef8b16a33401b0b4f5663d3aa0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "48941417"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "50032563"
 ---
 # <a name="regulatory-requirements-for-information-governance-and-records-management"></a>信息治理和记录管理的监管要求
 
@@ -29,6 +29,18 @@ ms.locfileid: "48941417"
 使用本页面上的资源来帮助你满足 Microsoft 365 中信息治理和记录管理的特定法规要求。 本文档的每个部分都侧重于一个或多个相关法规，并包括任何现有的指南或第三方评估如何配置 Microsoft 365，以帮助满足所概述的要求。
 
 这些资源可从服务信托门户的 [数据保护资源、常见问题和白皮书](https://servicetrust.microsoft.com/ViewPage/TrustDocuments) 页面下载。
+
+## <a name="new-zealand-public-records-act"></a>新西兰公共记录法
+
+**使用 Microsoft 365 支持新西兰公共记录法合规性义务** - [下载评估](https://aka.ms/NZPRA)
+
+适用的工作负载：SharePoint、OneDrive、Teams、Exchange 和 Skype for Business
+
+本报告于 2021 年 1 月发布，是与 Microsoft 新西兰合作编写的，旨在评估 Microsoft 365 服务在记录、存储和管理电子记录方面所要求的能力，具体如下： 
+
+- 2005 年新西兰公共记录法为新西兰公共档案和地方当局档案的保存制定了准则。
+
+此报告可帮助你了解使用 Microsoft 365 时如何实现 2005 年新西兰公共记录法 (PRA) 的系统要求。
 
 ## <a name="sec-17a-4f-finra-4511c-and-cftc-131c-d"></a>SEC 17a-4(f)、FINRA 4511(c) 和 CFTC 1.31(c)-(d)
 

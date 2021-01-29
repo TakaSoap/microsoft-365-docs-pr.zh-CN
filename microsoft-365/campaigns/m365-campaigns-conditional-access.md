@@ -23,64 +23,62 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: 了解如何要求进行 MFA 并为 Microsoft 365 for business 设置条件访问策略。
-ms.openlocfilehash: 08a77615d6801eef52465c450c2559a9d786befb
-ms.sourcegitcommit: c1dd5be42fe0c5dcc7c05817c941edd9076febf8
+description: 了解如何要求 MFA 和为 Microsoft 365 商业版设置条件访问策略。
+ms.openlocfilehash: b13ba9f8c948d9a1209655c44871ca62cb5354dd
+ms.sourcegitcommit: 1b30ac6e05906c8a014b1fed33fc71e1821f6ad2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "49558270"
+ms.lasthandoff: 01/29/2021
+ms.locfileid: "50044496"
 ---
 # <a name="require-multi-factor-authentication-and-set-up-conditional-access-policies"></a>需要多重身份验证并设置条件访问策略
 
-使用多重身份验证和条件访问策略来保护对数据的访问。 这些都增加了额外的安全性。 Microsoft 提供一组针对所有客户推荐的基准条件访问策略。 基准策略是一组预定义策略，可帮助组织抵御多种常见攻击。 这些常见攻击可能包括密码喷涂、重放和网络钓鱼。
+使用多重身份验证和条件访问策略保护对数据的访问。 这增加了大量额外的安全性。 Microsoft 提供了一组建议用于所有客户的基准条件访问策略。 基线策略是一组预定义的策略，可帮助保护组织免受许多常见攻击。 这些常见攻击可能包括密码加密、重播和网络钓鱼。
 
-这些策略要求管理员和用户输入第二种形式的身份验证 (称为多重身份验证，或在满足特定条件时进行 MFA) 。 例如，如果组织中的某个用户尝试从不同的国家/地区或从未知设备登录到 Microsoft 365，则可能会认为该登录是危险的。 用户必须提供另一种形式的身份验证 (如指纹或代码) ，以证明其身份。 
+这些策略要求管理员和用户输入第二种形式的身份验证 (多重身份验证，或在某些情况下) MFA 身份验证。 例如，如果组织中用户尝试从不同的国家/地区或未知设备登录 Microsoft 365，则登录可能会被视为有风险。 用户必须提供一种额外的身份验证方法， (指纹或代码) 证明其身份。
 
-目前，基准策略包括以下各项：
+目前，基准策略包括以下策略：
+
 - 在 Microsoft 365 管理中心中设置：
-    - **需要对管理员进行 MFA** -对最具特权的管理员角色（包括全局管理员）要求进行多重身份验证。
-    - **最终用户保护** —仅当登录存在风险时，才需要对用户进行多重身份验证。 
+  - **需要针对管理员的 MFA：** 要求对特权最大的管理员角色（包括全局管理员）进行多重身份验证。
+  - **最终用户保护**：仅在登录存在风险时，才要求用户进行多重身份验证。 
 - 在 Azure Active Directory 门户中设置：
-    - **阻止旧版身份验证** —较旧的客户端应用和一些新的应用程序不使用较新的、更安全的身份验证协议。 这些较旧的应用程序可以绕过条件访问策略，并对您的环境进行未经授权的访问。 此策略阻止来自不支持条件访问的客户端的访问。 
-    - **需要进行服务管理的 MFA** -需要多重身份验证以访问管理工具，包括 Azure 门户 (在其中配置基准策略) 。 
+  - **阻止旧式身份验证**：较旧的客户端应用和一些新应用不使用更新、更安全的身份验证协议。 这些较旧的应用可以绕过条件访问策略并获取对环境的未经授权的访问。 此策略阻止来自不支持条件访问的客户端的访问。 
+  - **需要 MFA 进行服务管理**：需要多重身份验证来访问管理工具，包括 Azure 门户 (配置基线策略) 。
 
-Microsoft 建议您启用所有这些基准策略。 启用这些策略后，系统将提示管理员和用户注册 Azure AD 多重身份验证。
+我们建议您启用所有这些基线策略。 启用这些策略后，将提示管理员和用户注册 Azure AD 多重身份验证。
 
-有关这些策略的详细信息，请参阅 [什么是基准策略](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-baseline-protection)？
-
+有关这些策略详细信息，请参阅 [什么是基准策略](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-baseline-protection)？
 
 ## <a name="require-mfa"></a>需要使用 MFA
 
-若要要求所有用户使用第二种 ID 登录，请执行以下操作：
+若要要求所有用户使用第二种形式的 ID 登录：
 
-1. 转到管理中心 <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> ，并选择 " **设置**"。
+1. 转到管理中心， <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> 然后选择"设置 **"。**
 
-2. 在 "安装程序" 页上，选择 "**创建登录更安全** 的卡片" 中的 "**查看**"。
+2. 在"设置"页上 **，选择"****使登录更安全"卡中的"查看**"。
 
+    ![使登录更加安全。](../media/setupmfa.png)
+3. 在"使登录更安全"页上，选择"**开始使用"。**
 
-    ![制作登录更安全的卡。](../media/setupmfa.png)
-3. 在 "使登录更安全" 页上，选择 " **已启动**"。
- 
-4. 在 "加强登录安全" 窗格中，选中 " **要求对管理员启用多重身份验证** " 旁边的复选框，并 **要求用户注册多重身份验证，并在检测到风险时阻止访问**。
-    确保在 "**查找用户**" 框中排除了来自 MFA 要求的 [紧急](m365-campaigns-protect-admin-accounts.md#create-an-emergency-admin-account)或 "中断玻璃" 管理帐户。
-    
-    ![增强 "在安全中的安全" 页。](../media/requiremfa.png)
+4. 在"加强登录安全"窗格中，选中"要求管理员进行多重身份验证"和"要求用户注册多重身份验证"旁边的复选框，如果检测到风险，则阻止 **访问**。
+    请务必从"查找用户 [](m365-campaigns-protect-admin-accounts.md#create-an-emergency-admin-account)"框中的 MFA 要求中排除紧急或"破折 **"管理员** 帐户。
 
-5. 在页面底部选择 " **创建策略** "。
+    ![加强"登录安全"页。](../media/requiremfa.png)
 
-## <a name="set-up-baseline-policies"></a>设置基准策略
+5. 选择 **页面** 底部的"创建策略"。
 
-1. 转到 [azure 门户](https://portal.azure.com)，然后导航到 **azure Active Directory** \> **条件访问** 以创建 **新策略**。
+## <a name="set-up-baseline-policies"></a>设置基线策略
 
-请参阅以下针对每个策略的特定说明： <br>
-    - [要求对管理员进行 MFA](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-baseline-protect-administrators) <br>
-    - [要求对用户进行 MFA](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-baseline-protect-end-users) <br>
+1. 转到 [Azure 门户，](https://portal.azure.com)然后导航到 **Azure Active Directory** \> **条件访问** 以创建新 **策略**。
+
+请参阅每个策略的以下特定说明： <br>
+    - [要求管理员使用 MFA](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-baseline-protect-administrators) <br>
+    - [要求用户使用 MFA](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-baseline-protect-end-users) <br>
     - [阻止传统身份验证](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-baseline-protect-legacy-auth) <br>
-    - [需要进行服务管理的 MFA](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-baseline-protect-azure)
-    
+    - [需要 MFA 进行服务管理](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-baseline-protect-azure)
+
 > [!NOTE]
 > 预览策略不再存在，用户将需要创建自己的策略。
 
-
-您可以设置额外的策略，如要求批准的客户端应用程序。 有关详细信息，请参阅 [条件访问文档](https://docs.microsoft.com/azure/active-directory/conditional-access/)。
+你可以设置额外的策略，例如要求批准的客户端应用。 有关详细信息，请参阅条件 [访问文档](https://docs.microsoft.com/azure/active-directory/conditional-access/)。

@@ -15,12 +15,12 @@ f1.keywords:
 ms.custom: seo-marvel-apr2020
 localization_priority: Normal
 description: 在本文中，了解如何添加适用于 Microsoft 365 多地理位置租户的卫星位置和配置。
-ms.openlocfilehash: 4276d8ff70fed99e74f2cbab29386c81da06d17b
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: fb907c02a4714c5a2d8e47245321252e7186a8a7
+ms.sourcegitcommit: f3059a0065496623e36e5a084cd2291e6b844597
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46687748"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "50040564"
 ---
 # <a name="microsoft-365-multi-geo-tenant-configuration"></a>Microsoft 365 多地理位置租户配置
 
@@ -46,17 +46,17 @@ ms.locfileid: "46687748"
 
 1. 打开 SharePoint 管理中心。
 
-2. 导航到“地理位置”**** 选项卡。
+2. 导航到“地理位置”选项卡。
 
-3. 单击“添加位置”****。
+3. 单击“添加位置”。
 
-4. 选择要添加的位置，然后单击“下一步”****。
+4. 选择要添加的位置，然后单击“下一步”。
 
-5. 键入想要与地理位置一同使用的域，然后单击“添加”****。
+5. 键入想要与地理位置一同使用的域，然后单击“添加”。
 
-6. 单击“关闭”****。
+6. 单击“关闭”。
 
-预配可能需要几小时到 72 小时，具体要取决于租户的大小。附属位置设置完成后，你将收到电子邮件确认。当新地理位置在 OneDrive 管理中心的“地理位置”**** 选项卡的地图上以蓝色显示时，你可以继续将用户的首选数据位置设置为该地理位置。 
+预配可能需要几小时到 72 小时，具体要取决于租户的大小。附属位置设置完成后，你将收到电子邮件确认。当新地理位置在 OneDrive 管理中心的“地理位置”选项卡的地图上以蓝色显示时，你可以继续将用户的首选数据位置设置为该地理位置。 
 
 > [!IMPORTANT]
 > 你的新附属位置将使用默认设置进行设置。这可使你根据当地合规性要求来配置该附属位置。
@@ -110,7 +110,10 @@ ms.locfileid: "46687748"
 
 ## <a name="onedrive-provisioning-and-the-effect-of-pdl"></a>OneDrive 设置和 PDL 效果
 
-如果用户已有在租户中创建的 OneDrive 网站，设置用户 PDL 不会自动移动他们的现有 OneDrive。 若要移动用户的 OneDrive，请参阅 [OneDrive for Business 异地移动](move-onedrive-between-geo-locations.md)，并按照“在地理位置之间移动 OneDrive”中的说明操作。 （请注意，用户的 Exchange 邮箱不会在你设置用户的 PDL 后自动移动。）
+如果用户已有在租户中创建的 OneDrive 网站，设置用户 PDL 不会自动移动他们的现有 OneDrive。 若要移动用户的 OneDrive，请参阅 [OneDrive for Business 异地移动](move-onedrive-between-geo-locations.md)。
+
+> [!NOTE]
+> 如果 PLD 发生更改且 MailboxRegion 不再与邮箱数据库地理位置代码匹配，Exchange Online 将自动重定位用户的邮箱。 有关详细信息，请参阅在多地理位置环境中管理 [Exchange Online 邮箱](https://docs.microsoft.com/microsoft-365/enterprise/administering-exchange-online-multi-geo)。
 
 如果用户在租户内没有 OneDrive 网站，将会根据用户的 PDL 值为他们预配 OneDrive，假定用户的 PDL 与公司的附属位置之一匹配。
 
@@ -146,7 +149,7 @@ ms.locfileid: "46687748"
 
 **OneDrive 同步客户端**
 
-确认 OneDrive 同步客户端在登录后可自动检测你的 OneDrive for Business 地理位置。如果你需要下载同步客户端，则可单击 OneDrive 库中的“同步”****。
+确认 OneDrive 同步客户端在登录后可自动检测你的 OneDrive for Business 地理位置。如果你需要下载同步客户端，则可单击 OneDrive 库中的“同步”。
 
 **Office 应用程序**
 
