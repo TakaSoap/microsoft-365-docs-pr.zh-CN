@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: 确保远程工作者可以访问本地资源，同时优化对 Microsoft 365 云服务的访问权限。
-ms.openlocfilehash: a9a8c972d58c7d2bac3f49ad602578358406c5a0
-ms.sourcegitcommit: 99a7354e6a6b4d9d5202674ef57852d52a43fef6
+ms.openlocfilehash: 43000ce27fc24dbc6c2db3782b0ed40aa66b7fd2
+ms.sourcegitcommit: 1ac884d8470b2f2a58b6f79e324fd91e4d11dceb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "49908325"
+ms.lasthandoff: 01/29/2021
+ms.locfileid: "50055527"
 ---
 # <a name="step-2-provide-remote-access-to-on-premises-apps-and-services"></a>步骤 2. 提供对本地应用和服务的远程访问权限。
 
@@ -107,7 +107,7 @@ P2S VPN 连接通过 Azure 虚拟网络创建从远程工作者的设备到组�
 
 ## <a name="protect-your-remote-desktop-services-connections-with-the-remote-desktop-services-gateway"></a>使用远程桌面服务网关保护你的远程桌面服务连接
 
-如果使用远程桌面服务 (RDS) 来允许员工连接到本地网络上基于 Windows 的计算机，则应在边缘网络中使用 Microsoft 远程桌面服务网关。 该网关使用安全套接字层 (SSL) 对通信进行加密，并防止托管 RDS 的本地计算机直接暴露在 Internet 上。
+如果使用远程桌面服务 (RDS) 来允许员工连接到本地网络上基于 Windows 的计算机，则应在边缘网络中使用 Microsoft 远程桌面服务网关。 网关使用传输层安全性 （TLS） 加密通信流，并阻止托管 RDS 本地计算机直接向 Internet 公开。
 
 ![带远程桌面服务网关的远程桌面服务连接](../media/empower-people-to-work-remotely-remote-access/empower-people-to-work-remotely-remote-access-remote-desktop.png)
 

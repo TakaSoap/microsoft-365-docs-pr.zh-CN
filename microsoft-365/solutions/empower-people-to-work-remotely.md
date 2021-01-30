@@ -18,12 +18,12 @@ ms.collection:
 - M365initiative-coredeploy
 ms.custom: seo-marvel-jun2020
 description: 确保已启用 Microsoft 365 中的所有功能，以最大限度地提高远程工作者的工作效率，并保持对服务器、数据和云的安全访问。
-ms.openlocfilehash: c6f17f2a80fa37abe43ceabc7a06c86c80eeadbd
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.openlocfilehash: aa72ba0c47acdd507bf86a082c9b4c2a87e3f1ef
+ms.sourcegitcommit: 1ac884d8470b2f2a58b6f79e324fd91e4d11dceb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49616352"
+ms.lasthandoff: 01/29/2021
+ms.locfileid: "50055515"
 ---
 # <a name="empower-remote-workers-with-microsoft-365"></a>使用 Microsoft 365 为远程工作者提供强大帮助
 
@@ -37,11 +37,16 @@ Microsoft 365 提供了帮助员工远程工作的功能。
 
 ![使用 Microsoft 365 为远程员工提供强大帮助](../media/empower-people-to-work-remotely/2-m365-remoteworker-solution-businessoverview.png)
 
+>[!Note]
+>如果你第一次使用 Microsoft 365，请参阅 [的](https://www.microsoft.com/microsoft-365)。
+>
+
 观看此视频以简要了解部署流程。
+<br>
 <br>
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4F1af]
 
-此解决方案提供了以下关键功能。
+为让 IT 专业人员管理现场和基于云的基础结构，提高员工的工作效率，此解决方案提供了以下关键功能：
 
 - 已连接
 

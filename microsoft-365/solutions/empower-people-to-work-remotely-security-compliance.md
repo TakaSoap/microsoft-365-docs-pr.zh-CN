@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: 使用 Microsoft 365 安全和合规性服务为远程工作者保护你的应用、数据和设备。
-ms.openlocfilehash: 6c6c30e320068a6e97cf5fd2cd81b4bfeff1c49e
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 8248fdbaa96a651ad9ff4548ce0867bd7c2988eb
+ms.sourcegitcommit: 1ac884d8470b2f2a58b6f79e324fd91e4d11dceb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48845224"
+ms.lasthandoff: 01/29/2021
+ms.locfileid: "50055482"
 ---
 # <a name="step-3-deploy-security-and-compliance-for-remote-workers"></a>步骤 3：为远程工作者部署安全与合规
 
@@ -47,12 +47,12 @@ ms.locfileid: "48845224"
 
 使用 Microsoft 365 的这些安全功能来保护应用程序和数据。
 
-| 功能或特性 | 说明 | 授权 |
+| 功能或特性 | 为什么需要它 | 许可 |
 |:-------|:-----|:-------|
-| Microsoft Defender for Office 365 | 保护你的 Microsoft 365 应用和数据（例如电子邮件、Office 文档和协作工具）免受攻击。 <br><br> Microsoft Defender for Office 365 会从你的应用收集和分析信号，以检测、调查和补救安全风险，并保护你的组织免受电子邮件、链接 (URL) 和协作工具带来的恶意威胁。 | Microsoft 365 E3 或 E5 | 
+| Microsoft Defender for Office 365 | 保护你的 Microsoft 365 应用和数据（例如电子邮件、Office 文档和协作工具）免受攻击。 <br><br> Microsoft Defender for Office 365 会从你的应用收集和分析信号，以检测、调查和补救安全风险，并保护你的组织免受电子邮件、链接 (URL) 和协作工具带来的恶意威胁。 它还提供针对标准和严格安全性等同的租户配置评估和配置工具。 | Microsoft 365 E3 或 E5 | 
 | 恶意软件防护 | ‎Microsoft Defender 防病毒和 Device Guard 提供基于设备的恶意软件防护。 <br><br> SharePoint‎ Online 会自动扫描上传文件中已知的恶意软件。 ‎<br><br> Exchange Online Protection‎ (‎EOP‎) 可保护云邮箱。 | Microsoft 365 E3 或 E5 |
 | Microsoft Defender for Endpoint | 保护你的组织的设备免受网络威胁和数据泄露，并检测、调查和响应高级威胁。 | Microsoft 365 E5 |
-| 云应用安全 | 保护基于云的服务（Microsoft 365 和其他 SaaS 应用）免受攻击。 | Microsoft 365 E5 或单独的云应用安全许可证 |
+| 云应用安全 | 保防您的基于云的服务（Microsoft 365 和其他 SaaS 应用）受到攻击。 | Microsoft 365 E5 或单独的云应用安全许可证 |
 | Azure AD 标识保护  | 自动检测和修复基于标识的风险。 <br><br>创建基于风险的条件访问策略，以对有风险的登录要求多重身份验证 (MFA)。 | Microsoft 365 E5 或 E3（含 Azure AD Premium P2 许可） |
 ||||
 
@@ -62,7 +62,7 @@ ms.locfileid: "48845224"
 
 使用 Microsoft 365 的这些合规性功能来遵守内部政策或法规要求。
 
-| 功能或特性 | 说明 | 许可 |
+| 功能或特性 | 为什么需要它 | 许可 |
 |:-------|:-----|:-------|
 | 敏感度标签 | 通过在电子邮件、文件或站点上放置具有不同保护级别的标签，可以在不影响用户工作效率和协作能力的情况下对组织的数据进行分类和保护。 | Microsoft 365 E3 或 E5 |
 | 数据丢失防护 (DLP) | 在内部和外部检测、警告和阻止有风险的、无意或不适当的共享，例如包含个人信息的数据共享。 | Microsoft 365 E3 或 E5 | 

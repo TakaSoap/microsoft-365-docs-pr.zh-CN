@@ -17,21 +17,24 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: 使用户可通过 Teams、Exchange、SharePoint 和其他 Microsoft 365 服务高效工作。
-ms.openlocfilehash: 57e862769533b8c076513874e7f6daafdbe836da
-ms.sourcegitcommit: 554755bc9ce40228ce6e34bde6fc6e226869b6a1
+ms.openlocfilehash: ce19085a358861238e9a7cd4d650246d08fd272d
+ms.sourcegitcommit: 1ac884d8470b2f2a58b6f79e324fd91e4d11dceb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48681404"
+ms.lasthandoff: 01/29/2021
+ms.locfileid: "50055483"
 ---
 # <a name="step-5-deploy-remote-worker-productivity-apps-and-services"></a>步骤 5. 部署远程工作者生产力应用和服务
 
 为了提高工作效率，人们需要相互沟通和协作。 他们需要举行会议、通过语音和文本聊天、创建新内容、共享信息和文件、进行电子邮件往来以及管理日历和任务。 Microsoft 365 提供基于云的服务来实现所有这些关键功能：
 
-- 要使用户在远程工作的同时保持连接，请使用 Microsoft Teams，它为组织、部门、小型团队和个人提供用于会议、聊天和文件存储的通用通信中心。 
-- 要进行电子邮件往来和管理日历、联系人和任务，请使用 Exchange Online 和 Outlook 客户端。
-- 要存储和协作处理文件，请使用 SharePoint 和 OneDrive。 可在 Web 浏览器或 Teams 中使用它们。
-- 要创建新内容或协作处理现有内容，请使用 Microsoft 365 应用，它是安装在本地计算机上的 Word、PowerPoint、Excel 和 Outlook 的版本，并能持续接收功能和安全更新。
+| IT 函数 | Microsoft 365 组件 | 说明 |
+|:-------|:-----|:-------|
+| 电子邮件服务 | Exchange Online | Exchange 电子邮件，使用 Outlook 客户端管理日历、联系人和任务。 |
+| 组织聊天、通过 IP （VOIP） 实现语音提示和基于团队的协作 | Microsoft Teams | 通过组织、部门及小型团队和个人用常见通信中心进行会议、聊天和文件存储，让人员保持连接。 |
+| Intranet 网站、文档协作 | SharePoint 和 OneDrive | 在 Web 浏览器或 Teams 中存储和协作处理文件。 |
+| 桌面和移动设备 Office 应用程序 | Microsoft 365 应用版 | 使用本地计算机上安装的 Word、PowerPoint、Excel 和 Outlook 版本创建新内容或协作处理现有内容，并接收持续的功能和安全更新。 |
+||||
 
 ![使用 Teams、Outlook、SharePoint、OneDrive 和 Microsoft 365 应用保持高效工作](../media/empower-people-to-work-remotely/remote-workers-productivity-grid.png)
 
