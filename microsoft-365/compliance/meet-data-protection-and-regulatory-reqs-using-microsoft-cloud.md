@@ -16,17 +16,17 @@ search.appverid:
 ms.assetid: 429e686f-d8a6-455e-a2b6-3791d763f000
 description: 了解如何使用 Microsoft 服务信任门户中的合规性管理器来满足数据保护和管理法规要求。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ac0cd758717161e3b5cf727dd478d1e06f0d6375
-ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
+ms.openlocfilehash: f527aae2d36e392ecd646d48263a01b20a0785e8
+ms.sourcegitcommit: b8e9b2ecdc4927b67088c5fffb1585424c66fb10
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "49682805"
+ms.lasthandoff: 01/29/2021
+ms.locfileid: "50050396"
 ---
 # <a name="microsoft-compliance-manager-classic"></a>Microsoft 合规性管理器（经典）
 
 > [!IMPORTANT]
-> **合规性管理器现已在 [Microsoft 365 合规中心](https://compliance.microsoft.com/)中公开提供。强烈建议客户停止使用合规性管理器（经典），并移动到新的合规性管理器，从其丰富的用户体验和已更新的控件映射中受益。请参阅我们的 [合规性管理器文档](compliance-manager.md) ，以在 Microsoft 365 合规中心中设置并开始使用新的合规性管理器。**
+> **合规性管理器（经典）即将从 Microsoft 服务信任门户中删除。** 建议你转换到 Microsoft 365 合规中心中的新[合规性管理器](https://compliance.microsoft.com/)，它会提供增强的用户体验和更新的控制映射。 拥有经典版评估的客户需要在新的合规性管理器中创建新评估。 任何现有数据（包括评估、控制和其他数据）都不会转移到新的合规性管理器。 [详细了解该转移](compliance-manager-faq.md#whats-happening-to-compliance-manager-classic-in-the-service-trust-portal)。
 
 *由世纪互联运营的 Office 365、Office 365 Germany、Office 365 U.S. Government Community High (GCC High) 或 Office 365 Department of Defense 不提供合规性管理器。*
 
