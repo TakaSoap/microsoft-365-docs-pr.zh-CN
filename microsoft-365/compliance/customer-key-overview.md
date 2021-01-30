@@ -16,22 +16,22 @@ ms.collection:
 - m365initiative-compliance
 ms.custom: seo-marvel-apr2020
 description: 本文将介绍服务加密如何与 Microsoft 365 中的客户密钥一起工作。
-ms.openlocfilehash: 0008d145db81d5d6c4eb9ab89ca194b7e426d2e4
-ms.sourcegitcommit: c0495e224f12c448bfc162ef2e4b33b82f064ac8
+ms.openlocfilehash: efb2ba9c2532973a096c509b57639544fc2ddbe5
+ms.sourcegitcommit: 50f10d83fa21db8572adab90784146e5231e3321
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49709524"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "50058485"
 ---
 # <a name="service-encryption-with-customer-key"></a>使用客户密钥执行服务加密
 
-Microsoft 365 提供通过 BitLocker 和分布式密钥管理器和 DKM (启用的基线) 。 Microsoft 365 在内容的应用程序层添加了一层加密。 此内容包括来自 Exchange Online、Skype for Business、SharePoint Online、OneDrive for Business 和 Teams 文件的数据。 这一添加的加密层称为服务加密。
+Microsoft 365 提供通过 BitLocker 和分布式密钥管理器和 DKM (启用的基线) 。 Microsoft 365 在内容的应用程序层添加了一层加密。 此内容包括来自 Exchange Online、Skype for Business、SharePoint Online、OneDrive for Business 和 Teams 文件的数据。 此添加的加密层称为服务加密。
 
 ## <a name="how-service-encryption-bitlocker-and-customer-key-work-together"></a>服务加密、BitLocker 和客户密钥如何协同工作
 
 服务加密可确保静态内容在服务层加密。 **你的数据在 Microsoft 365** 服务中始终使用 BitLocker 和 DKM 进行其余加密。 有关详细信息，请参阅"安全、隐私和合规性信息"以及 Exchange Online 如何 [保护电子邮件密码](exchange-online-secures-email-secrets.md)。 客户密钥提供了防止未经授权的系统或人员查看数据的额外保护，并补充了 Microsoft 数据中心中的 BitLocker 磁盘加密。 服务加密不应阻止 Microsoft 人员访问客户数据。 主要目的是帮助客户履行控制根密钥的法规或合规性义务。 客户明确授权 O365 服务使用其加密密钥来提供增值云服务，如电子数据展示、反恶意软件、反垃圾邮件、搜索索引等。
 
-客户密钥基于服务加密构建，可让你提供和控制加密密钥。 然后，Microsoft 365 使用这些密钥加密你的数据，如联机服务条款 ([OST) 。 ](https://www.microsoft.com/licensing/product-licensing/products.aspx) 客户密钥有助于你履行合规性义务，因为你控制 Microsoft 365 用于加密和解密数据的加密密钥。
+客户密钥基于服务加密构建，可让你提供和控制加密密钥。 然后，Microsoft 365 使用这些密钥加密你的其余数据，如联机服务条款[ (OST) 。 ](https://www.microsoft.com/licensing/product-licensing/products.aspx) 客户密钥有助于你履行合规性义务，因为你控制 Microsoft 365 用于加密和解密数据的加密密钥。
   
 客户密钥增强了组织满足合规性要求的能力，这些要求指定了与云服务提供商的关键安排。 使用客户密钥，您可以在应用程序级别提供和控制 Microsoft 365 静态数据的根加密密钥。 因此，你可以对组织的密钥进行控制。 如果决定退出该服务，则撤消对组织的根密钥的访问权限。 对于所有 Microsoft 365 服务，撤销对密钥的访问是数据删除路径的第一步。 通过撤销对密钥的访问，数据对服务不可读。
 
@@ -60,13 +60,16 @@ Microsoft 365 提供通过 BitLocker 和分布式密钥管理器和 DKM (启用�
 
 - 邮箱移动时进行加密。 允许使用新的 DEP 加密邮箱 72 小时。 如果在分配 DEP 后等待 72 小时后邮箱未加密，请与 Microsoft 联系。
 
-稍后，您可以刷新 DEP 或为邮箱分配不同的 DEP，如管理 [Office 365](customer-key-manage.md)的客户密钥中所述。 每个邮箱必须具有适当的许可证才能分配 DEP。 有关许可详细信息，请参阅"[设置客户密钥之前"。](customer-key-set-up.md#before-you-set-up-customer-key)
+稍后，您可以刷新 DEP 或为邮箱分配不同的 DEP，如管理 [Office 365](customer-key-manage.md)的客户密钥中所述。 每个邮箱必须具有适当的许可证才能分配 DEP。 有关许可详细信息，请参阅设置 [客户密钥之前](customer-key-set-up.md#before-you-set-up-customer-key)。
+
+> [!NOTE]
+> DEP 可以应用于满足用户邮箱许可要求的租户的共享邮箱、公用文件夹邮箱和 Microsoft 365 组邮箱，即使其中某些邮箱类型不能是分配的许可证 (公用文件夹邮箱和 Microsoft 365 组邮箱) 或需要用于增加存储 (共享邮箱) 的许可证。
 
 **SharePoint Online、OneDrive for Business 和 Teams 文件** 如果使用的是多地理位置功能，则每个地理位置最多为组织创建一个 DEP。 可以针对每个地理位置使用不同的客户密钥。 如果未使用多地理位置功能，则只能为每个租户创建一个 DEP。 分配 DEP 时，加密将自动开始，但可能需要一些时间才能完成。 请参阅"设置 [客户密钥"中的详细信息](customer-key-set-up.md)。
 
 ## <a name="leaving-the-service"></a>离开服务
 
-客户密钥通过允许您在离开 Microsoft 365 服务时吊销密钥来帮助你履行合规性义务。 在退出服务时吊销密钥时，可用性密钥将被删除，从而导致数据的加密删除。 加密删除可以减少数据保留的风险，这一风险对于满足安全性和合规性义务都非常重要。 有关数据清除过程和密钥吊销的信息，请参阅" [撤销密钥"并启动数据清除路径过程](customer-key-manage.md#revoke-your-keys-and-start-the-data-purge-path-process)。
+客户密钥通过允许您在离开 Microsoft 365 服务时吊销密钥来帮助你履行合规性义务。 在离开服务时吊销密钥时，可用性密钥将被删除，从而导致数据的加密删除。 加密删除可以减少数据保留的风险，这一风险对于满足安全性和合规性义务都非常重要。 有关数据清除过程和密钥吊销的信息，请参阅" [撤销密钥"并启动数据清除路径过程](customer-key-manage.md#revoke-your-keys-and-start-the-data-purge-path-process)。
 
 ### <a name="encryption-ciphers-used-by-customer-key"></a>客户密钥使用的加密密码
 

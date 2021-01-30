@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 当多个用户需要访问同一个邮箱时，使用共享邮箱。 在创建共享邮箱之前，了解您需要了解的内容。
-ms.openlocfilehash: 744c4fece24cf1fa5ee7259a0d722ff123ff2664
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: c8d29ac2dfe8670181064e61a7fba145ae00fed1
+ms.sourcegitcommit: 50f10d83fa21db8572adab90784146e5231e3321
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49926506"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "50058443"
 ---
 # <a name="about-shared-mailboxes"></a>关于共享邮箱
 
@@ -58,6 +58,10 @@ ms.locfileid: "49926506"
 - **用户过多：** 当同时访问共享邮箱的指定用户过多时，他们可能间歇性地无法连接到此邮箱。 在这种情况下，你可以考虑减少用户数或使用不同的工作负荷，如 Microsoft 365 组或公用文件夹。
 
 - **邮件删除：** 遗憾的是，无法阻止用户删除共享邮箱中的邮件。 唯一的方法就是创建 Microsoft 365 组，而不是共享邮箱。 Outlook 中的组与共享邮箱类似。 有关这两个组的比较，请参阅["比较组"。](../create-groups/compare-groups.md) 若要详细了解组，请参阅" [了解有关组"的更多信息](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2)。
+
+
+> [!NOTE]
+> 若要访问共享邮箱，用户必须具有 Exchange Online 许可证，但共享邮箱不需要单独的许可证。 如果没有许可证，共享邮箱限制为 50 GB。 若要将大小限制提高至 100 GB，必须为共享邮箱分配 Exchange Online 计划 2 许可证或具有 Exchange Online Archiving 附加许可证的 Exchange Online 计划 1 许可证。 这还使您能够为无限量的存档存储容量启用自动扩展存档。 同样，如果要将共享邮箱置于诉讼保留状态，共享邮箱必须具有 Exchange Online 计划 2 许可证或 Exchange Online 计划 1 许可证以及Exchange Online Archiving许可证。 如果要应用 Microsoft Defender for Office 365、高级电子数据展示或自动保留策略等高级功能，共享邮箱必须获得这些功能的许可。
 
 ## <a name="related-articles"></a>相关文章
 

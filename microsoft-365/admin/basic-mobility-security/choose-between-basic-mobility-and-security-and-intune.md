@@ -18,19 +18,19 @@ ms.custom:
 search.appverid:
 - MET150
 description: 基本移动性和安全性是 Microsoft 365 计划的一部分。
-ms.openlocfilehash: cfd1a68c313d1a1335490e2b8d6938de192fe3f3
-ms.sourcegitcommit: 8849dd6f80217c29f427c7f008d918f30c792240
+ms.openlocfilehash: ec3ffa8879bf14ab3116bbbbf5cf2a1a3fd7c6e6
+ms.sourcegitcommit: ea8a096df5acedecdce1780969f2b189c3fadf73
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49877088"
+ms.lasthandoff: 01/29/2021
+ms.locfileid: "50053797"
 ---
 # <a name="choose-between-basic-mobility-and-security-or-intune"></a>在基本移动性和安全性或 Intune 之间选择
 
-[Microsoft Intune](https://docs.microsoft.com/mem/intune/) 是某些 Microsoft 365 计划中包含的独立产品，而基本移动性和安全性是 Microsoft 365 计划的一部分。 
+[Microsoft Intune](https://docs.microsoft.com/mem/intune/) 是某些 Microsoft 365 计划中包含的独立产品，而基本移动性和安全性是 Microsoft 365 计划的一部分。
 
  ## <a name="availability-of-basic-mobility-and-security-and-intune"></a>基本移动性和安全性以及 Intune 的可用性
- 
+
 基本移动性和安全性以及 Intune 均包含在各种计划中，如下表所述。
 
 | 计划 | 基本移动性和安全性 | Microsoft Intune |
@@ -42,7 +42,7 @@ ms.locfileid: "49877088"
 |Office 365 E3 |是|否|
 |Office 365 E5 |是|否|
 |Microsoft 365 商业高级版 |是|是|
-|Microsoft 365 一行 3 |是|是|
+|Microsoft 365 一线 3 |是|是|
 |Microsoft 365 企业版 E3 |是|是|
 |Microsoft 365 企业版 E5 |是|是|
 |Microsoft 365 教育版 A1 |是|是|
@@ -67,15 +67,15 @@ Microsoft Intune 和内置的 Basic Mobility and Security 都让你能够在组�
 | 功能区域 | 功能突出显示 | 基本移动性和安全性 | Microsoft Intune |
 |:-----|:-----|:-----|:-----|
 |设备类型|管理不同的操作系统平台和主要管理模式变体。 |Windows<br/>iOS<br/>Android<br/>Android Samsung KNOX<br/>|Windows<br/>iOS<br/>Android<br/>Android Samsung KNOX<br/>mac OS、iPad OS|
-|设备合规性|设置和管理安全策略，如设备级 PIN 锁定和越狱检测。 |Android 9 和更高版本设备上的限制。 请参阅 [详细信息](capabilities.md)。 |是|
-|基于设备合规性的条件访问 |防止不相容的设备从云中访问公司电子邮件和数据。 |在 Windows 10 上不受支持。<br/>仅限于控制对 Exchange Online、SharePoint Online 和 Outlook 的访问。 |是 |
-|设备配置  |配置设备 (例如，禁用相机) |有限的设置集。|是|
-|设备合规性  |设置和管理安全策略，如设备级 PIN 锁定和越狱检测。 |Android 9 和更高版本设备上的限制。 请参阅 [详细信息](capabilities.md)。 |是|
+|设备合规性|设置和管理安全策略，如设备级别的 PIN 锁定和越狱检测。 |Android 9 和更高版本设备上的限制。 请参阅 [详细信息](capabilities.md)。 |是|
+|基于设备合规性的条件访问 |阻止不相容的设备从云访问公司电子邮件和数据。 |在 Windows 10 上不受支持。<br/>仅限于控制对 Exchange Online、SharePoint Online 和 Outlook 的访问。 |是 |
+|设备配置  |配置设备设置 (例如，禁用相机) |有限的设置集。|是|
+|设备合规性  |设置和管理安全策略，如设备级别的 PIN 锁定和越狱检测。 |Android 9 和更高版本设备上的限制。 请参阅 [详细信息](capabilities.md)。 |是|
 |电子邮件配置文件  |在设备上预配本机电子邮件配置文件。 |是|是|
 |WiFi 配置文件 |在设备上预配本机 WiFi 配置文件。 |否|是|
 |VPN 配置文件 |在设备上预配本机 VPN 配置文件。 |否|是|
 |基本移动性和安全性应用程序管理  |将内部业务线应用和从应用存储部署到用户。 |否|是|
-|移动应用程序保护  |使用户可以使用他们了解的 Office 移动和业务线应用安全地访问公司信息，同时通过帮助将复制、剪切、粘贴和另存为等操作限制为仅针对经公司数据批准的那些应用程序，从而确保数据的安全性。 即使设备未注册到基本移动性和安全性，也有效。 请参阅使用 MAM 策略保护应用数据。 |否|是|
+|移动应用程序保护  |使用户可以使用他们了解的 Office 移动和业务线应用安全地访问公司信息，同时通过帮助将复制、剪切、粘贴和另存为等操作限制为仅针对经批准用于公司数据管理的应用，从而确保数据的安全性。 即使设备未注册到基本移动性和安全性，也有效。 请参阅使用 MAM 策略保护应用数据。 |否|是|
 |托管浏览器  |使用 Edge 应用启用更安全的 Web 浏览。 |否|是|
 |零接触注册计划 Autopilot)  |注册大量企业拥有的设备，同时简化用户设置。 |否|是|
 |||
@@ -93,11 +93,11 @@ Microsoft Intune 和内置的 Basic Mobility and Security 都让你能够在组�
 -  [全新开始](https://docs.microsoft.com/mem/intune/remote-actions/device-fresh-start)   (Windows) 
 - [完全扫描](https://docs.microsoft.com/mem/intune/configuration/device-restrictions-windows-10#microsoft-defender-antivirus)   (Windows 10) 
 - [查找设备](https://docs.microsoft.com/mem/intune/remote-actions/device-locate)   (iOS) 
-- [丢失模式](https://docs.microsoft.com/mem/intune/remote-actions/device-lost-mode)   (iOS) - [ (](https://docs.microsoft.com/mem/intune/configuration/device-restrictions-windows-10#microsoft-defender-antivirus) Windows 10) 
+- [丢失模式](https://docs.microsoft.com/mem/intune/remote-actions/device-lost-mode)   (iOS) -[仅](https://docs.microsoft.com/mem/intune/configuration/device-restrictions-windows-10#microsoft-defender-antivirus)windows 10 (快速扫描) 
 - [适用于 Android 的远程控制](https://docs.microsoft.com/mem/intune/remote-actions/teamviewer-support)
 - [远程锁定](https://docs.microsoft.com/mem/intune/remote-actions/device-remote-lock)
 - [重命名设备](https://docs.microsoft.com/mem/intune/remote-actions/device-rename)
--  [重置密码](https://docs.microsoft.com/mem/intune/remote-actions/device-passcode-reset)[仅](https://docs.microsoft.com/mem/intune/remote-actions/device-restart)   (Windows) 
+-  [重置密码](https://docs.microsoft.com/mem/intune/remote-actions/device-passcode-reset)[仅 (](https://docs.microsoft.com/mem/intune/remote-actions/device-restart)   Windows) 
 -  仅Windows Defender Windows (更新安全) 
 -  Windows 10 PIN 重置 (仅 Windows) 
 -  [发送自定义通知](https://docs.microsoft.com/mem/intune/remote-actions/custom-notifications#send-a-custom-notification-to-a-single-device)   (Android、iOS、iPad 操作系统) 

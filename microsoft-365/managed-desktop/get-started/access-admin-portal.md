@@ -10,19 +10,19 @@ audience: ITPro
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 manager: laurawi
-ms.openlocfilehash: 09427d163b8b5e47911b6df26e5acf0fcd1f3524
-ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
+ms.openlocfilehash: c2a5b7f837d6c43369301820019732ca3aef83bf
+ms.sourcegitcommit: ea8a096df5acedecdce1780969f2b189c3fadf73
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49841347"
+ms.lasthandoff: 01/29/2021
+ms.locfileid: "50053843"
 ---
 # <a name="access-the-admin-portal"></a>访问管理门户
 
-Microsoft 托管桌面服务的网关是 Microsoft [Azure 门户](https://portal.azure.com)。 有关通常使用和自定义 Azure 门户体验的更多信息，请参阅 [Azure 门户文档](https://docs.microsoft.com/azure/azure-portal/)。 现在可在预览版中查看，还可以在 Microsoft Endpoint Manager 中查找 [Microsoft 托管桌面](https://endpoint.microsoft.com/)。 如果你不熟悉此门户的设备管理功能，请参阅 [Microsoft Endpoint Manager 文档](https://docs.microsoft.com/mem/)。
+Microsoft 托管桌面服务的网关是[Microsoft Endpoint Manager。](https://endpoint.microsoft.com/) 如果你不熟悉此门户的设备管理功能，请参阅 [Microsoft Endpoint Manager 文档](https://docs.microsoft.com/mem/)。
 
 > [!NOTE]
-> 但是，选择在 [Microsoft Endpoint Manager](https://endpoint.microsoft.com/) 或 [Azure](https://portal.azure.com)门户中访问 Microsoft 托管桌面，支持以下浏览器：
+> 在 [Microsoft Endpoint Manager](https://endpoint.microsoft.com/) 中，支持以下浏览器：
 > - Microsoft Edge (最新版本) 
 > - Microsoft Internet Explorer 11
 > - Safari (最新版本，仅 Mac) 
@@ -39,7 +39,7 @@ Microsoft 托管桌面服务的网关是 Microsoft [Azure 门户](https://portal
 |全局读取者     | 具有此角色的 **管理员将具有** 对 Microsoft 托管桌面管理门户中所有功能的只读权限。         |
 |Intune 服务管理员     |  具有此角色的管理员将拥有对 Microsoft 托管桌面管理门户中与安全不相关的功能的读取和写入权限。       |
 |服务支持管理员     | 具有此角色的管理员将具有对与安全不相关的功能的只读权限，并且具有在Microsoft 托管桌面管理门户中管理支持请求的写入权限。         |
-|安全管理员 | 具有此角色的管理员将拥有针对所有功能的只读权限，并且对管理门户中的 Microsoft 托管桌面中的与安全相关的功能具有写入权限。 |
+|安全管理员 | 具有此角色的管理员将拥有针对所有功能的只读权限，并拥有在管理门户中对 Microsoft 托管桌面中与安全相关的功能的写入权限。 |
 |安全读取者 |具有此角色的 **管理员将具有** 对 Microsoft 托管桌面管理门户中所有功能的只读权限。|
 
 > [!IMPORTANT]
@@ -64,7 +64,7 @@ Microsoft 托管桌面服务的网关是 Microsoft [Azure 门户](https://portal
 2.  选择 **左侧** 的组。
 3.  搜索 **新式工作区角色**，然后选择与要分配的角色关联的组。 
 4.  选择 **左侧** 的成员，然后选择 **命令栏上的 +** 添加成员。
-5.  输入要添加的人的电子邮件。 如果他们是来宾，必须先邀请他们，然后才能分配组。
+5.  输入要添加的人的电子邮件。 如果他们是来宾，则必须先邀请他们，然后才能分配组。
 6.  选择 **底部的** "选择"。
 
 > [!NOTE]

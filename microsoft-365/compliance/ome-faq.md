@@ -15,12 +15,12 @@ search.appverid:
 ms.assetid: 0432dce9-d9b6-4e73-8a13-4a932eb0081e
 description: 对新的邮件保护功能如何工作有疑问？ 请在此处查看答案。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a83e8b05f59ff05d22422431683e26b11bb8a780
-ms.sourcegitcommit: 849b365bd3eaa9f3c3a9ef9f5973ef81af9156fa
+ms.openlocfilehash: 4be3ff4be1d5bf8b81d06ea17a8345e4c843b150
+ms.sourcegitcommit: 50f10d83fa21db8572adab90784146e5231e3321
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49688603"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "50058535"
 ---
 # <a name="message-encryption-faq"></a>邮件加密常见问题解答
 
@@ -32,7 +32,7 @@ OME 结合了电子邮件加密和权限管理功能。 权限管理功能由 Az
 
 ## <a name="who-can-use-ome"></a>谁可以使用 OME？
 
-您可以在以下条件下使用 OME 的新功能：
+在下列情况下，可以使用 OME 的新功能：
   
 - 如果在 Office 365 中从未为 Exchange Online 设置 OME 或 IRM。
 
@@ -40,7 +40,7 @@ OME 结合了电子邮件加密和权限管理功能。 权限管理功能由 Az
 
 - 如果将 Exchange Online 与 Active Directory 权限管理服务 (AD RMS) ，则不能马上启用这些新功能。 相反，你需要首先 [将 AD RMS 迁移到 Azure 信息](https://docs.microsoft.com/information-protection/plan-design/migrate-from-ad-rms-to-azure-rms) 保护。 完成迁移后，可以成功设置 OME。
 
-  如果选择将本地 AD RMS 与 Exchange Online 一起使用，而不是迁移到 Azure 信息保护，将无法使用这些新功能。
+  如果你选择继续将本地 AD RMS 与 Exchange Online 一同使用，而不是迁移到 Azure 信息保护，你将不能使用这些新功能。
 
 ## <a name="what-subscriptions-do-i-need-to-use-the-new-ome-capabilities"></a>使用新的 OME 功能需要哪些订阅？
 
@@ -62,7 +62,7 @@ OME 结合了电子邮件加密和权限管理功能。 权限管理功能由 Az
   
 ## <a name="do-ome-and-byok-with-azure-information-protection-change-microsofts-approach-to-third-party-data-requests-such-as-subpoenas"></a>使用 Azure 信息保护的 OME 和 BYOK 是否更改了 Microsoft 处理第三方数据请求（如子请求）的方法？
 
-否。 Azure 信息保护中的 OME 以及提供和控制你自己的加密密钥（称为 BYOK）的选项并非旨在响应强制执行的子请求。 OME 与用于 Azure 信息保护的 BYOK 专为以合规性为中心的客户设计。 Microsoft 非常重视第三方客户数据请求。 作为云服务提供商，我们始终宣传客户数据的隐私。 如果我们收到子请求，我们始终尝试将第三方重定向到客户以获取信息。  (请阅读 Brad Smith 的博客：[](https://blogs.microsoft.com/blog/2013/12/04/protecting-customer-data-from-government-snooping/)保护客户数据免受政府暂停) 。 我们会定期发布收到的请求的详细信息。 有关第三方数据请求详细信息，请参阅响应访问 Microsoft[](https://www.microsoft.com/trustcenter/privacy/govt-requests-for-data)信任中心上的客户数据的政府请求和强制执行请求。 另请参阅 OST 协议联机服务条款中的"客户[数据 (") 。 ](https://www.microsoft.com/Licensing/product-licensing/products.aspx)
+否。 OME 以及提供和控制自己的加密密钥（称为 BYOK）的选项（称为 Azure 信息保护）并非旨在响应强制执行的子请求。 OME 与用于 Azure 信息保护的 BYOK 专为以合规性为中心的客户设计。 Microsoft 非常重视第三方客户数据请求。 作为云服务提供商，我们始终宣传客户数据的隐私。 如果我们收到子请求，我们始终尝试将第三方重定向到客户以获取信息。  (请阅读 Brad Smith 的博客：[](https://blogs.microsoft.com/blog/2013/12/04/protecting-customer-data-from-government-snooping/)保护客户数据免受政府暂停) 。 我们会定期发布收到的请求的详细信息。 有关第三方数据请求详细信息，请参阅"响应政府请求[](https://www.microsoft.com/trustcenter/privacy/govt-requests-for-data)"和"强制执行请求"，以访问 Microsoft 信任中心上的客户数据。 另请参阅 OST 协议联机服务条款中的"客户[数据 (") 。 ](https://www.microsoft.com/Licensing/product-licensing/products.aspx)
   
 ## <a name="how-is-this-feature-related-to-legacy-office-365-message-encryption-ome-and-information-rights-management-irm-features"></a>此功能与旧版 Office 365 邮件加密 (OME) 信息权限管理 (IRM) 功能相关？
 
@@ -96,7 +96,7 @@ Office 365 邮件加密的新功能是现有 IRM 和旧 OME 解决方案的发�
   
 ## <a name="what-email-client-do-i-need-to-use-in-order-to-create-an-ome-encrypted-message-what-applications-are-supported-for-sending-protected-messages"></a>我需要使用哪些电子邮件客户端才能创建 OME 加密邮件？ 哪些应用程序支持发送受保护的邮件？
 
-可以从 Outlook 2016、Outlook 2013 for Windows 和 Mac 以及 Outlook 网页版创建受保护的邮件。 有关发送加密邮件详细信息，请参阅 Outlook for PC 中的发送、查看和回复 [加密邮件](https://support.microsoft.com/office/send-view-and-reply-to-encrypted-messages-in-outlook-for-pc-eaa43495-9bbb-4fca-922a-df90dee51980?ui=en-us&rs=en-us&ad=us)。
+可以从 Outlook 2016、Outlook 2013 for Windows 和 Mac 以及 Outlook 网页版创建受保护的邮件。 有关发送加密邮件详细信息，请参阅 Outlook for PC 中的"发送、查看和回复加密[邮件"。](https://support.microsoft.com/office/send-view-and-reply-to-encrypted-messages-in-outlook-for-pc-eaa43495-9bbb-4fca-922a-df90dee51980?ui=en-us&rs=en-us&ad=us)
   
 ## <a name="what-email-clients-are-supported-to-read-and-reply-to-protected-emails"></a>支持哪些电子邮件客户端读取和回复受保护的电子邮件？
 
@@ -118,11 +118,11 @@ Microsoft 365 用户可以使用 Outlook for PC 版本 2019 和 Microsoft 365 �
   
 ## <a name="are-pdf-file-attachments-supported"></a>是否支持 PDF 文件附件？
 
-简短回答是"是"！ PDF 加密允许您通过安全通信或安全协作来保护敏感的 PDF 文档。 发送电子邮件时，Office 365 服务会加密 PDF 文件附件，而不是 Outlook 客户端。
+简短回答是"是"！ PDF 加密允许您通过安全通信或安全协作来保护敏感的 PDF 文档。 发送电子邮件时，Office 365 服务对 PDF 文件附件而非 Outlook 客户端加密。
 
 对于 Outlook 网页版、Outlook for iOS 和 Outlook for Android，可以加密发送的 PDF，而无需执行任何其他步骤。 这些客户端本机支持 PDF 加密。
 
-Outlook 桌面在本机不支持加密 PDF 文件附件。 相反，您需要设置 Exchange 邮件流规则或 DLP，以首先对 PDF 附件应用加密。 当您从 Outlook 桌面版发送包含 PDF 附件的邮件时，客户端会首先将包含附件的邮件发送到服务。 当服务收到文件时，该服务在 Exchange Online 中将数据丢失防护的 OME 保护 (DLP) 策略或邮件流规则中。 接下来，Exchange Online 发送带受保护 PDF 文件附件的邮件。
+Outlook 桌面版在本机不支持加密 PDF 文件附件。 相反，您需要设置 Exchange 邮件流规则或 DLP，以首先对 PDF 附件应用加密。 当您从 Outlook 桌面版发送包含 PDF 附件的邮件时，客户端会首先将包含附件的邮件发送到服务。 当服务收到文件时，该服务在 Exchange Online 中将数据丢失防护的 OME 保护 (DLP) 策略或邮件流规则中。 接下来，Exchange Online 发送带受保护 PDF 文件附件的邮件。
 
 若要启用 PDF 附件加密，请运行 [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)中的以下命令：
 
@@ -141,7 +141,7 @@ Not yet. 不支持 OneDrive for Business 附件，最终用户无法加密包含
   
 ## <a name="what-email-clients-support-preview-of-encrypted-attachments-in-protected-emails"></a>哪些电子邮件客户端支持在受保护的电子邮件中预览加密附件？
 
-当附件受受保护邮件保护时，Outlook 客户端将提供直接预览文档的能力。 Outlook 支持预览 office 文档 (docx、xlsx、pptx、doc、xls、ppt) 。 Outlook 网页版支持预览 office 文档 (docx、xlsx、pptx) 和 PDF。  
+当附件受到受保护邮件的保护时，Outlook 客户端将提供直接预览文档的能力。 Outlook 支持预览 office 文档 (docx、xlsx、pptx、doc、xls、ppt) 。 Outlook 网页版支持预览 office 文档 (docx、xlsx、pptx) 和 PDF。  
 
 ## <a name="what-email-clients-support-revocation-of-protected-emails"></a>哪些电子邮件客户端支持吊销受保护的电子邮件？
 
@@ -156,7 +156,7 @@ Web 上的 Outlook 支持吊销受保护的邮件。  请参阅 [如何撤销您
 
 管理员可以设置邮件流规则以删除传出邮件的加密。 无法设置规则来删除传入邮件的加密。
 
-## <a name="can-i-automatically-encrypt-messages-by-setting-up-policies-in-data-loss-prevention-dlp-through-the-security-amp-compliance-center"></a>我能否通过安全合规中心在 DLP (中设置) 来自动加密 &amp; 邮件？
+## <a name="can-i-automatically-encrypt-messages-by-setting-up-policies-in-data-loss-prevention-dlp-through-the-security-amp-compliance-center"></a>我能否通过安全合规中心在 DLP (中设置) 来自动 &amp; 加密邮件？
 
 是的。 您可以在 Exchange Online 中设置邮件流规则，或在安全合规中心使用 DLP &amp; 设置邮件流规则。
   
@@ -179,6 +179,10 @@ Web 上的 Outlook 支持吊销受保护的邮件。  请参阅 [如何撤销您
 ## <a name="is-delegated-access-supported"></a>是否支持委派访问？
 
 此时不作用。
+
+## <a name="can-i-send-as-a-shared-mailbox-and-encrypt-emails"></a>我能否以共享邮箱形式发送并加密电子邮件？
+
+当某人发送与加密邮件流规则匹配的电子邮件时，邮件在发送之前会进行加密。
 
 ## <a name="can-i-open-encrypted-messages-sent-to-a-shared-mailbox"></a>我能否打开发送到共享邮箱的加密邮件？
 
@@ -203,7 +207,7 @@ Web 上的 Outlook 支持吊销受保护的邮件。  请参阅 [如何撤销您
 
 - 无法打开使用 Outlook 移动版在移动设备上接收的电子邮件的附件。
 
-- 我们不支持通过启用电子邮件的安全组进行分配。 我们仅支持通过直接用户分配来访问共享邮箱，并且为 Exchange Online 启用自动映射。 默认情况下，为 Exchange Online 启用自动映射。
+- 我们不支持通过启用电子邮件的安全组进行分配。 我们仅支持通过直接用户分配提供对共享邮箱的访问，并且为 Exchange Online 启用自动映射。 默认情况下，为 Exchange Online 启用自动映射。
 
 **将用户分配给共享邮箱**
 
@@ -214,6 +218,10 @@ Web 上的 Outlook 支持吊销受保护的邮件。  请参阅 [如何撤销您
    ```powershell
    Add-MailboxPermission -Identity support@contoso.onmicrosoft.com -User ayla@contoso.com -AccessRights FullAccess -AutoMapping $true
    ```
+   
+ ## <a name="can-i-open-encrypted-messages-sent-to-another-users-mailbox-with-fullaccess"></a>我能否使用 Fullaccess 打开发送到其他用户邮箱的加密邮件？
+
+用户只要获得直接访问并启用自动映射，就可以打开加密邮件。 如果通过启用电子邮件的安全组授予访问权限，则不允许访问。
 
 ## <a name="what-do-i-do-if-i-dont-receive-the-one-time-pass-code-after-i-requested-it"></a>如果我在请求一次传递代码后没有收到该代码，该怎么办？
 
