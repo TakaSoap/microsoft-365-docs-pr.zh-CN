@@ -22,12 +22,12 @@ description: 使用 Microsoft 信息保护 (MIP) 中的敏感度标签对敏感�
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 2a4b66de9996ec0ea7047ca44ae3750a917c4cc2
-ms.sourcegitcommit: 7ecd10b302b3b3dfa4ba3be3a6986dd3c189fbff
+ms.openlocfilehash: 2e334e57b84bea7985983527e600be731e4de20c
+ms.sourcegitcommit: 50f10d83fa21db8572adab90784146e5231e3321
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "49921676"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "50058515"
 ---
 # <a name="learn-about-sensitivity-labels"></a>了解敏感度标签
 
@@ -42,6 +42,11 @@ ms.locfileid: "49921676"
 ![Excel 功能区和状态栏上的敏感度标签](../media/Sensitivity-label-in-Excel.png)
 
 若要应用敏感度标签，用户必须使用其 Microsoft 365 工作或学校帐户登录。
+
+> [!NOTE]
+> 敏感度标签新近支持用于美国政府租户（GCC 和 GCC-H）。 有关详细信息，请参阅 Microsoft 365 企业应用版 [版本2101：1 月 26 日](https://docs.microsoft.com/officeupdates/current-channel#version-2101-january-26)。
+>
+> 关于 Azure 信息保护统一标签客户端和扫描器，请参阅 [Azure 信息保护高级版政府服务说明](https://docs.microsoft.com/enterprise-mobility-security/solutions/ems-aip-premium-govt-service-description)。
 
 借助敏感度标签，你可以：
   
@@ -195,7 +200,7 @@ ms.locfileid: "49921676"
 
     ![功能区上“敏感度”按钮中的“了解更多”链接](../media/Sensitivity-label-learn-more.png)
 
-创建为用户和组分配新敏感度标签的标签策略后，用户在 30 分钟内即可在其 Office 应用中看到这些标签。 但是，最多需要 24 小时才能看到对这些标签的更改。
+创建为用户和组分配新敏感度标签的标签策略后，用户可在其 Office 应用中看到这些标签。 请留出长达 24 小时的时间将最新更改复制到整个组织内。
 
 可创建和发布的敏感度标签的数量没有限制，但有一种例外：如果标签应用了加密，则最多可创建 500 个标签。 但是，最佳做法是减少管理开销并降低用户复杂程度，尽量将标签的数量保持在最低限度。 事实证明，当用户拥有五个以上的主标签或者每个主标签拥有五个以上的子标签时，实际部署的效率就会显著降低。
 
@@ -268,4 +273,4 @@ ms.locfileid: "49921676"
 
 ## <a name="deployment-guidance"></a>部署指南
 
-有关部署规划和指南（包括许可信息、权限、部署策略、支持的方案列表和最终用户文档），请参阅[敏感度标签入门](get-started-with-sensitivity-labels.md)。
+有关部署规划和指南（包括许可信息、权限、部署策略、支持的方案列表和最终用户文档），请参阅 [敏感度标签入门](get-started-with-sensitivity-labels.md)。

@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 所有 Microsoft 信息保护解决方案的相关要求：创建、配置和发布敏感度标签以对组织的文档和电子邮件进行分类和保护。
-ms.openlocfilehash: 10d677eb328ee002e187b098fa44b09372b59f72
-ms.sourcegitcommit: 7e003ee0a06f61bfb9f80441c3479fa3148afafe
+ms.openlocfilehash: 816da1001593dc36d625a48d12a1e0ace86578bf
+ms.sourcegitcommit: 50f10d83fa21db8572adab90784146e5231e3321
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49568325"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "50058495"
 ---
 # <a name="create-and-configure-sensitivity-labels-and-their-policies"></a>创建和配置敏感度标签及其策略
 
@@ -59,7 +59,8 @@ ms.locfileid: "49568325"
     
     ![创建敏感度标签](../media/create-sensitivity-label-full.png)
     
-    注意：默认情况下，租户没有任何标签，你必须创建它们。 示例图片中的标签显示 [从 Azure 信息保护迁移](https://docs.microsoft.com/azure/information-protection/configure-policy-migrate-labels)的默认标签。
+    > [!NOTE]
+    > 默认情况下，租户没有任何标签，并且必须由你创建。 示例图片中的标签显示 [从 Azure 信息保护迁移](https://docs.microsoft.com/azure/information-protection/configure-policy-migrate-labels)的默认标签。
 
 3. 在 **定义此标签的范围** 页面上，选择的选项将确定可以配置的设置的标签范围以及它们发布后的可见位置：
     
@@ -69,7 +70,7 @@ ms.locfileid: "49568325"
     
     - 如果已选中 **“组合网站”** ，则可以在此向导中配置适用于 Microsoft 365 组和网站（Teams 和 SharePoint）的设置。 如果未选择此选项，向导将显示这些设置的第一页，但无法进行配置，用户无法在组合网站中选择标签。
     
-    有关 **Azure Purview 素材（预览版）** 范围的详细信息，请参阅[在 Azure Purview 中自动标记内容](https://docs.microsoft.com/azure/purview/create-sensitivity-label)。
+    有关 **Azure Purview 素材（预览版）** 范围的详细信息，请参阅 [在 Azure Purview 中自动标记内容](https://docs.microsoft.com/azure/purview/create-sensitivity-label)。
 
 4. 在向导中按照提示进行标签设置。
     
@@ -88,7 +89,7 @@ ms.locfileid: "49568325"
 除非你了解对用户的影响，否则不要删除标签。 有关更多信息，请参阅[移除和删除标签](#removing-and-deleting-labels)部分。 
 
 > [!NOTE]
-> 如果要编辑已使用标签策略发布的标签，则在完成该向导时不需要执行额外步骤。 例如，不需要将其添加到新的标签策略，以便对相同用户提供所做的更改。 但是，可允许在 24 小时内将所做的更改复制到用户和服务。
+> 如果要编辑已使用标签策略发布的标签，则在完成该向导时不需要执行额外步骤。 例如，不需要将其添加到新的标签策略，以便对相同用户提供所做的更改。 但是，请留出长达 24 小时的时间将更改复制到所有应用和服务。
 
 发布标签之前，无法在应用程序或服务中使用。 若要发布标签，必须将其[添加到标签策略](#publish-sensitivity-labels-by-creating-a-label-policy)。
 
@@ -155,7 +156,8 @@ Set-Label -Identity $Label -LocaleSettings (ConvertTo-Json $DisplayNameLocaleSet
         
     ![发布标签](../media/publish-sensitivity-labels-full.png)
     
-    注意：默认情况下，租户没有任何策略，你必须创建它们。 
+    > [!NOTE]
+    > 默认情况下，租户没有任何标签策略，且必须由你创建。 
 
 3. 在想到中，选择“**选择要发布的敏感度标签**”。 选择可在应用和服务中可以使用的标签，随后选择“**添加**”。
     
@@ -184,7 +186,7 @@ Set-Label -Identity $Label -LocaleSettings (ConvertTo-Json $DisplayNameLocaleSet
 
 此按钮将启动“**创建策略**”向导，可用于编辑所包含的标签和标签设置。 完成向导后，所有更改都将自动复制到所选用户和服务。
 
-用户在一小时内即可在其 Office 应用程序中看到新标签。 但是，最多需要 24 小时以将所做的更改复制到用户和服务。
+使用 Windows、macOS、iOS 和 Android 的内置标签时，用户会在 4 小时内在 Office 应用中看到新的标签，而在 Office web 版上 1 小时内就可以看到新标签。 但是，请留出长达 24 小时的时间将更改复制到所有应用和服务。
 
 ### <a name="additional-label-policy-settings-with-security--compliance-center-powershell"></a>附加标签策略设置在安全与合规中心 PowerShell 中可用
 
