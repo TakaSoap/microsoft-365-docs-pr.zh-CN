@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 10/15/2019
+ms.date: 02/01/2021
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,12 +13,12 @@ localization_priority: Priority
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: 介绍 Microsoft 365 企业版的组件、计划和部署路径。
-ms.openlocfilehash: 0916fa97daec166a7bae8b19e3c9efbd693f4874
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 324e5166dd722f9fcd682db7e536a4b864365025
+ms.sourcegitcommit: 2c4c7ebe9bea52765ece0ed27d3ea77313711b10
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48846960"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "50068963"
 ---
 # <a name="microsoft-365-for-enterprise-overview"></a>Microsoft 365 企业版概述
 
@@ -131,6 +131,24 @@ Microsoft 365 E3 用户可以使用这些加载项来利用 Microsoft 365 E5 包
 - [Microsoft 365 政府版](https://www.microsoft.com/microsoft-365/government)
 
   使美国公共事业员工能够安全地协同工作。
+
+## <a name="best-together-with-surface-and-the-edge-browser"></a>通过 Surface 和 Microsoft Edge 浏览器协同工作效果最佳
+
+利用 Microsoft 365 企业版、Microsoft Surface 设备和 Microsoft Edge 浏览器的最佳组合，优化用户的集成和安全生产力。 此跨产品集成提供：
+
+- 通用身份和登录安全基础结构。
+- 集成本地和云应用，实现搜索、协作、高效和合规性。
+- 针对硬件、浏览器、本地应用和云应用全面集成的安全性。
+- 适用于安装和更新 IT 管理的通用基础结构。
+
+下面是企业组织的示例。
+
+![具有 Microsoft 365、Surface 设备和 Microsoft Edge 浏览器的企业组织](../media/microsoft-365-overview/best-together-with-surface-and-edge.png)
+
+有关中小型企业和教育机构的详细信息和配置示例，请下载 [最佳组合海报](https://download.microsoft.com/download/2/8/d/28db0cf9-2f5a-4f63-91e2-46ff5c4d3baf/microsoft-best-together-poster.pdf)。
+
+[![Surface 和 Microsoft Edge 浏览器最佳组合海报图像](../media/microsoft-365-overview/best-together-poster-thumbnail.png)](https://download.microsoft.com/download/2/8/d/28db0cf9-2f5a-4f63-91e2-46ff5c4d3baf/microsoft-best-together-poster.pdf)
+
 
 ## <a name="microsoft-365-training"></a>Microsoft 365 培训
 
