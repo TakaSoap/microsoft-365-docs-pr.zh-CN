@@ -10,12 +10,12 @@ audience: ITPro
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 manager: laurawi
-ms.openlocfilehash: c2a5b7f837d6c43369301820019732ca3aef83bf
-ms.sourcegitcommit: ea8a096df5acedecdce1780969f2b189c3fadf73
+ms.openlocfilehash: 5b7ba0db52f06f7b3f6fce596015b56c8e46c6c2
+ms.sourcegitcommit: 2c4c7ebe9bea52765ece0ed27d3ea77313711b10
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2021
-ms.locfileid: "50053843"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "50068949"
 ---
 # <a name="access-the-admin-portal"></a>访问管理门户
 
@@ -29,9 +29,9 @@ Microsoft 托管桌面服务的网关是[Microsoft Endpoint Manager。](https://
 > - Chrome (最新版本) 
 > - Firefox (最新版本) 
 
-管理帐户需要特定权限才能访问 Azure 门户或 Microsoft Endpoint Manager 中的 Microsoft 托管桌面管理功能。 您可以使用基于角色的访问控制或 RBAC (管理对组织中这些功能的管理员) 。 多个 Azure Active Directory (Azure AD) 管理员角色和内置自定义角色可用于为 Microsoft 托管桌面管理门户中的不同功能提供更精细的控制。 有关 Azure Active Directory 角色详细信息，请参阅 [Azure Active Directory 中的管理员角色权限](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)。 与应用于各种 Microsoft 产品和服务的 Azure AD 管理员角色不同，自定义角色特定于 Microsoft 托管桌面，并且仅保证访问此服务的管理员功能。 管理员可以单独或结合 Azure AD 管理员角色向用户分配自定义角色，以向现有管理员帐户添加 Microsoft 托管桌面权限。
+管理帐户需要特定权限才能访问 Microsoft Endpoint Manager 中的 Microsoft 托管桌面管理功能。 可以使用基于角色的访问控制管理管理员对组织中这些功能的访问。 多个 Azure Active Directory (Azure AD) 管理员角色和内置的 Microsoft 托管桌面角色可用于为 Microsoft 托管桌面管理门户中的不同功能提供更精细的控制。 有关 Azure Active Directory 角色详细信息，请参阅 [Azure Active Directory 中的管理员角色权限](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)。 与应用于各种 Microsoft 产品和服务的 Azure AD 管理员角色不同，内置角色特定于 Microsoft 托管桌面，并且仅保证访问此服务的管理员功能。 管理员可以单独或结合 Azure AD 管理员角色向用户分配内置角色，以向现有管理员帐户添加 Microsoft 托管桌面权限。
 
-可以分配以下每个角色以提供不同级别的访问：
+## <a name="azure-active-directory-roles-with-microsoft-managed-desktop-access"></a>具有 Microsoft 托管桌面访问权限的 Azure Active Directory 角色
 
 |Azure AD 角色  |Microsoft 托管桌面权限  |
 |---------|---------|
@@ -39,14 +39,18 @@ Microsoft 托管桌面服务的网关是[Microsoft Endpoint Manager。](https://
 |全局读取者     | 具有此角色的 **管理员将具有** 对 Microsoft 托管桌面管理门户中所有功能的只读权限。         |
 |Intune 服务管理员     |  具有此角色的管理员将拥有对 Microsoft 托管桌面管理门户中与安全不相关的功能的读取和写入权限。       |
 |服务支持管理员     | 具有此角色的管理员将具有对与安全不相关的功能的只读权限，并且具有在Microsoft 托管桌面管理门户中管理支持请求的写入权限。         |
-|安全管理员 | 具有此角色的管理员将拥有针对所有功能的只读权限，并拥有在管理门户中对 Microsoft 托管桌面中与安全相关的功能的写入权限。 |
+|安全管理员 | 具有此角色的管理员将拥有针对所有功能的只读权限，并且对管理门户中的 Microsoft 托管桌面中的与安全相关的功能具有写入权限。 |
 |安全读取者 |具有此角色的 **管理员将具有** 对 Microsoft 托管桌面管理门户中所有功能的只读权限。|
+
+如果需要有关分配 Azure Active Directory 角色的帮助，请参阅 [Azure Active Directory 中的管理员角色权限](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)。
 
 > [!IMPORTANT]
 > 只有全局管理员角色才具有在 Microsoft 托管桌面中注册组织所需的权限。 请注意，Azure Active Directory 角色将为用户帐户提供跨各种 Microsoft 服务的权限。 完成 Microsoft 托管桌面的注册后，应始终使用具有完成其他任务所需的最低权限的角色。
 
- 
-|自定义角色  |Microsoft 托管桌面权限  |
+## <a name="built-in-roles-provided-by-microsoft-managed-desktop"></a>Microsoft 托管桌面提供的内置角色
+
+
+|内置角色  |Microsoft 托管桌面权限  |
 |---------|---------|
 |Microsoft 托管桌面服务管理员  | 分配给用户时，此角色授予管理员对 Microsoft托管桌面管理门户中与安全不相关的功能的读取和写入权限。  |
 |Microsoft Managed Desktop Service Reader | 分配给用户时，此角色授予管理员对 Microsoft托管桌面管理门户中与安全不相关的功能的只读权限。 |
@@ -55,16 +59,14 @@ Microsoft 托管桌面服务的网关是[Microsoft Endpoint Manager。](https://
 > [!NOTE]
 > 安全功能包括与安全相关的通信、安全联系人的管理、安全相关支持请求的管理以及安全相关报告的访问权限。 
 
-## <a name="assigning-roles-to-administrators"></a>向管理员分配角色
+### <a name="assigning-built-in-roles-to-administrators"></a>向管理员分配内置角色
 
-如果需要有关分配 Azure Active Directory 角色的帮助，请参阅 [Azure Active Directory 中的管理员角色权限](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)。
-
-为了便于管理内置角色，每个自定义角色都有一个安全组 (例如，"新式工作区角色 – 安全管理器") 。 若要将用户分配到其中一个安全组，请按照以下步骤操作：
+若要管理内置角色，每个自定义角色都有一个安全组，其名称为"新式工作区角色 _-_ 角色名称" (例如，"新式工作区角色 – 安全管理器") 。 若要将用户分配到其中一个安全组，请按照以下步骤操作：
 1.  转到 Microsoft Endpoint Manager 门户。
 2.  选择 **左侧** 的组。
 3.  搜索 **新式工作区角色**，然后选择与要分配的角色关联的组。 
 4.  选择 **左侧** 的成员，然后选择 **命令栏上的 +** 添加成员。
-5.  输入要添加的人的电子邮件。 如果他们是来宾，则必须先邀请他们，然后才能分配组。
+5.  输入要添加的人的电子邮件。 如果他们是来宾，必须先邀请他们，然后才能分配组。
 6.  选择 **底部的** "选择"。
 
 > [!NOTE]
