@@ -15,12 +15,12 @@ search.appverid:
 ms.assetid: 0432dce9-d9b6-4e73-8a13-4a932eb0081e
 description: 对新的邮件保护功能如何工作有疑问？ 请在此处查看答案。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 4be3ff4be1d5bf8b81d06ea17a8345e4c843b150
-ms.sourcegitcommit: 50f10d83fa21db8572adab90784146e5231e3321
+ms.openlocfilehash: a88d853905ed8462972c9f423254a49424974bb7
+ms.sourcegitcommit: c550c1b5b9e67398fd95bfb0256c4f5c7930b2be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "50058535"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "50066835"
 ---
 # <a name="message-encryption-faq"></a>邮件加密常见问题解答
 
@@ -40,7 +40,7 @@ OME 结合了电子邮件加密和权限管理功能。 权限管理功能由 Az
 
 - 如果将 Exchange Online 与 Active Directory 权限管理服务 (AD RMS) ，则不能马上启用这些新功能。 相反，你需要首先 [将 AD RMS 迁移到 Azure 信息](https://docs.microsoft.com/information-protection/plan-design/migrate-from-ad-rms-to-azure-rms) 保护。 完成迁移后，可以成功设置 OME。
 
-  如果你选择继续将本地 AD RMS 与 Exchange Online 一同使用，而不是迁移到 Azure 信息保护，你将不能使用这些新功能。
+  如果选择将本地 AD RMS 与 Exchange Online 一起使用，而不是迁移到 Azure 信息保护，将无法使用这些新功能。
 
 ## <a name="what-subscriptions-do-i-need-to-use-the-new-ome-capabilities"></a>使用新的 OME 功能需要哪些订阅？
 
@@ -50,7 +50,7 @@ OME 结合了电子邮件加密和权限管理功能。 权限管理功能由 Az
 
 - 还可以将 Azure 信息保护计划 1 添加到以下计划，以接收新的 Office 365 邮件加密功能：Exchange Online 计划 1、Exchange Online 计划 2、Office 365 F1、Microsoft 365 Business Basic、Microsoft 365 商业标准版或 Office 365 企业版 E1。
 
-- 从 Office 365 邮件加密受益的每个用户都需要获得许可，此功能将涵盖范围。
+- 从 Office 365 邮件加密中获益的每个用户都需要获得许可，此功能将包括在内。
 
 - 有关完整列表，请参阅 [Office](https://technet.microsoft.com/library/exchange-online-service-description.aspx) 365 邮件加密的 Exchange Online 服务说明。
 
@@ -62,7 +62,7 @@ OME 结合了电子邮件加密和权限管理功能。 权限管理功能由 Az
   
 ## <a name="do-ome-and-byok-with-azure-information-protection-change-microsofts-approach-to-third-party-data-requests-such-as-subpoenas"></a>使用 Azure 信息保护的 OME 和 BYOK 是否更改了 Microsoft 处理第三方数据请求（如子请求）的方法？
 
-否。 OME 以及提供和控制自己的加密密钥（称为 BYOK）的选项（称为 Azure 信息保护）并非旨在响应强制执行的子请求。 OME 与用于 Azure 信息保护的 BYOK 专为以合规性为中心的客户设计。 Microsoft 非常重视第三方客户数据请求。 作为云服务提供商，我们始终宣传客户数据的隐私。 如果我们收到子请求，我们始终尝试将第三方重定向到客户以获取信息。  (请阅读 Brad Smith 的博客：[](https://blogs.microsoft.com/blog/2013/12/04/protecting-customer-data-from-government-snooping/)保护客户数据免受政府暂停) 。 我们会定期发布收到的请求的详细信息。 有关第三方数据请求详细信息，请参阅"响应政府请求[](https://www.microsoft.com/trustcenter/privacy/govt-requests-for-data)"和"强制执行请求"，以访问 Microsoft 信任中心上的客户数据。 另请参阅 OST 协议联机服务条款中的"客户[数据 (") 。 ](https://www.microsoft.com/Licensing/product-licensing/products.aspx)
+否。 Azure 信息保护中的 OME 以及提供和控制你自己的加密密钥（称为 BYOK）的选项并非旨在响应强制执行的子请求。 OME 与用于 Azure 信息保护的 BYOK 专为以合规性为中心的客户设计。 Microsoft 非常重视第三方客户数据请求。 作为云服务提供商，我们始终宣传客户数据的隐私。 如果我们收到子请求，我们始终尝试将第三方重定向到客户以获取信息。  (请阅读 Brad Smith 的博客：[](https://blogs.microsoft.com/blog/2013/12/04/protecting-customer-data-from-government-snooping/)保护客户数据免受政府暂停) 。 我们会定期发布收到的请求的详细信息。 有关第三方数据请求详细信息，请参阅响应访问 Microsoft[](https://www.microsoft.com/trustcenter/privacy/govt-requests-for-data)信任中心上的客户数据的政府请求和强制执行请求。 另请参阅 OST 协议联机服务条款中的 ([客户数据) 。 ](https://www.microsoft.com/Licensing/product-licensing/products.aspx)
   
 ## <a name="how-is-this-feature-related-to-legacy-office-365-message-encryption-ome-and-information-rights-management-irm-features"></a>此功能与旧版 Office 365 邮件加密 (OME) 信息权限管理 (IRM) 功能相关？
 
@@ -70,12 +70,12 @@ Office 365 邮件加密的新功能是现有 IRM 和旧 OME 解决方案的发�
   
 **旧版 OME、IRM 和新 OME 功能的比较**
 
-|**功能**|**OME 的以前版本**|**IRM**|**新的 OME 功能**|
+| 功能 | OME 的以前版本 | IRM | 新的 OME 功能 |
 |:-----|:-----|:-----|:-----|
 |**发送加密电子邮件**|仅通过 Exchange 邮件流规则|最终用户从 Outlook for Windows、Outlook for Mac 或 Outlook 网页 Outlook 启动;或通过 Exchange 邮件流规则|最终用户从 Outlook for Windows、Outlook for Mac 或 Outlook 网页 Outlook 启动;或邮件流规则|
 |**版权管理**|-|"不要转发"选项和自定义模板|"不要转发"选项、仅加密选项、默认模板和自定义模板|
 |**支持的收件人类型**|仅外部收件人|仅内部收件人|内部和外部收件人|
-|**收件人体验**|外部收件人收到一条 HTML 邮件，该消息在浏览器或已下载的移动应用中下载并打开。|内部收件人仅收到 Outlook for Windows、Outlook for Mac 和 Outlook 网页 Outlook 中的加密电子邮件。|内部和外部收件人在 Outlook for Windows、Outlook for Mac、Outlook 网页版、Outlook for Android 和 Outlook for iOS 中接收电子邮件，或者通过 Web 门户接收电子邮件，而无论他们是否在同一个组织或任何组织中。 OME 门户无需单独下载。|
+|**收件人体验**|外部收件人收到一条 HTML 邮件，邮件在浏览器或已下载的移动应用中下载并打开。|内部收件人仅收到 Outlook for Windows、Outlook for Mac 和 Outlook 网页 Outlook 中的加密电子邮件。|内部和外部收件人在 Outlook for Windows、Outlook for Mac、Outlook 网页版、Outlook for Android 和 Outlook for iOS 中接收电子邮件，或者通过 Web 门户接收电子邮件，而无论他们是否在同一个组织或任何组织中。 OME 门户无需单独下载。|
 |**自带密钥支持**|不可用|不可用| BYOK 受支持|
 
 ## <a name="how-do-i-enable-the-new-ome-capabilities-for-my-organization"></a>如何为组织启用新的 OME 功能？
@@ -96,7 +96,7 @@ Office 365 邮件加密的新功能是现有 IRM 和旧 OME 解决方案的发�
   
 ## <a name="what-email-client-do-i-need-to-use-in-order-to-create-an-ome-encrypted-message-what-applications-are-supported-for-sending-protected-messages"></a>我需要使用哪些电子邮件客户端才能创建 OME 加密邮件？ 哪些应用程序支持发送受保护的邮件？
 
-可以从 Outlook 2016、Outlook 2013 for Windows 和 Mac 以及 Outlook 网页版创建受保护的邮件。 有关发送加密邮件详细信息，请参阅 Outlook for PC 中的"发送、查看和回复加密[邮件"。](https://support.microsoft.com/office/send-view-and-reply-to-encrypted-messages-in-outlook-for-pc-eaa43495-9bbb-4fca-922a-df90dee51980?ui=en-us&rs=en-us&ad=us)
+可以从 Outlook 2016、Outlook 2013 for Windows 和 Mac 以及 Outlook 网页版创建受保护的邮件。 有关发送加密邮件详细信息，请参阅 Outlook for PC 中的发送、查看和回复 [加密邮件](https://support.microsoft.com/office/send-view-and-reply-to-encrypted-messages-in-outlook-for-pc-eaa43495-9bbb-4fca-922a-df90dee51980?ui=en-us&rs=en-us&ad=us)。
   
 ## <a name="what-email-clients-are-supported-to-read-and-reply-to-protected-emails"></a>支持哪些电子邮件客户端读取和回复受保护的电子邮件？
 
@@ -104,7 +104,7 @@ Microsoft 365 用户可以从 Outlook for Windows 和 Mac (2013 和 2016) 、Out
 
 ## <a name="what-email-clients-support-the-encrypt-only-protected-emails"></a>哪些电子邮件客户端支持仅加密受保护的电子邮件？
 
-Microsoft 365 用户可以使用 Outlook for PC 版本 2019 和 Microsoft 365 创建受仅加密策略保护的邮件。  这意味着应用了新的仅加密策略的邮件可以直接在 Outlook 网页版、Outlook for iOS 和 Outlook for Android 以及 Outlook for PC 版本 2019 和 Microsoft 365 中读取。
+Microsoft 365 用户可以使用 Outlook for PC 版本 2019 和 Microsoft 365 创建受仅加密策略保护的邮件。  这意味着应用了新的仅加密策略的邮件可以直接在 Outlook 网页版、Outlook for iOS 和 Outlook for Android 以及现在适用于电脑版 2019 和 Microsoft 365 的 Outlook 中读取。
 
 ## <a name="is-there-a-size-limit-for-messages-you-can-send-with-ome"></a>可以使用 OME 发送的邮件是否有大小限制？
 
@@ -174,7 +174,7 @@ Web 上的 Outlook 支持吊销受保护的邮件。  请参阅 [如何撤销您
 
 ## <a name="can-i-remove-encryption-from-email"></a>能否从电子邮件中删除加密？
 
-管理员可以设置邮件流规则以从传出邮件中删除加密。 不能从传入邮件中删除使用邮件流规则的加密。
+管理员可以设置邮件流规则，以从传出邮件中删除加密。 不能从传入邮件中删除使用邮件流规则的加密。
 
 ## <a name="is-delegated-access-supported"></a>是否支持委派访问？
 
@@ -213,7 +213,7 @@ Web 上的 Outlook 支持吊销受保护的邮件。  请参阅 [如何撤销您
 
 1. [使用远程 PowerShell 连接到 Exchange Online。](https://technet.microsoft.com/library/jj984289?v=exchg.150%29.aspx)
 
-2. 使用 Automapping Add-MailboxPermission运行 Add-MailboxPermission cmdlet。 此示例向 Ayla 授予对支持邮箱的完全访问权限。
+2. 使用自动映射Add-MailboxPermission运行 Add-MailboxPermission cmdlet。 此示例向 Ayla 授予对支持邮箱的完全访问权限。
 
    ```powershell
    Add-MailboxPermission -Identity support@contoso.onmicrosoft.com -User ayla@contoso.com -AccessRights FullAccess -AutoMapping $true

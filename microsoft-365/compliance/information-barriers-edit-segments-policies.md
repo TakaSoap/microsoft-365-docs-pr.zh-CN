@@ -12,12 +12,12 @@ ms.collection:
 localization_priority: None
 f1.keywords:
 - NOCSH
-ms.openlocfilehash: 62e9910a1b94862ba23ecdc63c0fea1ec644043a
-ms.sourcegitcommit: c10eb675da725830e9776d2a0566ba3622eb361c
+ms.openlocfilehash: 3a95ccb476960424b701f522aacce78576e6f68f
+ms.sourcegitcommit: 8d28bce1a3445878b066864e766cf52cb83becd1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49980075"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "50071277"
 ---
 # <a name="manage-information-barrier-policies"></a>管理信息屏障策略
 
@@ -27,17 +27,17 @@ ms.locfileid: "49980075"
 
 |**操作**|**说明**|
 |:---------|:--------------|
-| [编辑用户帐户属性](#edit-user-account-attributes) | 在 Azure Active Directory 中填写可用于定义线段的属性。<br/>在用户未包含在用户应包含的分段中时编辑用户帐户属性，更改用户所在区段，或者使用不同的属性定义分段。 |
-| [编辑线段](#edit-a-segment) | 在需要更改线段定义时编辑线段。 <br/>例如，你可能最初使用 *Department* 定义分段，现在想要使用另一个属性，如 *MemberOf。* |
+| [编辑用户帐户属性](#edit-user-account-attributes) | 填写 Azure Active Directory 中可用于定义线段的属性。<br/>在用户未包含在用户应包含的分段中时编辑用户帐户属性，更改用户所参与的分段，或者使用不同的属性定义分段。 |
+| [编辑线段](#edit-a-segment) | 在想要更改线段的定义时编辑线段。 <br/>例如，你可能最初使用 *Department* 定义分段，现在想要使用另一个属性，如 *MemberOf。* |
 | [编辑策略](#edit-a-policy) | 在想要更改策略的工作方式时编辑信息屏障策略。<br/>例如，你可能决定只允许某些分段之间发生通信，而不是阻止两个分段之间的通信。 |
 | [将策略设置为非活动状态](#set-a-policy-to-inactive-status) |在想要更改策略或不希望策略生效时，将策略设置为非活动状态。 |
 | [删除策略](#remove-a-policy) | 如果不再需要特定策略，请删除信息屏障策略。 |
 | [停止策略应用程序](#stop-a-policy-application) | 若要停止应用信息屏障策略的过程，请执行该操作。<br/> 停止策略应用程序不是即时的，它不会撤消已应用于用户的策略。 |
-| [定义信息屏障策略](information-barriers-policies.md) | 如果尚未制定此类策略，并且必须限制或限制特定用户组之间的通信，请定义信息屏障策略。 |
+| [定义信息屏障策略](information-barriers-policies.md) | 如果尚未制定信息屏障策略，并且必须限制或限制特定用户组之间的通信，请定义信息屏障策略。 |
 | [信息屏障疑难解答](information-barriers-troubleshooting.md) | 当您遇到信息障碍的意外问题时，请参阅本文。 |
 
 > [!IMPORTANT]
-> 若要执行本文中所述的任务，您必须分配有适当的角色，例如以下角色之一：<br/>- Microsoft 365 企业版全局管理员<br/>- 全局管理员<br/>- 合规性管理员<br/>- IBM 合规性管理 (这是一个新角色！) <br><br>若要了解有关信息屏障的先决条件详细信息，请参阅 ([策略的先决条件 ](information-barriers-policies.md#prerequisites)) 。<br><br> 确保连接到[安全与合规& PowerShell。](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell)
+> 若要执行本文中所述的任务，必须分配有适当的角色，例如以下角色之一：<br/>- Microsoft 365 企业版全局管理员<br/>- 全局管理员<br/>- 合规性管理员<br/>- IBM 合规性管理 (这是一个新角色！) <br><br>若要了解有关信息屏障的先决条件详细信息，请参阅 ([策略的先决条件 ](information-barriers-policies.md#prerequisites)) 。<br><br> 确保连接到[安全与合规& PowerShell。](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell)
 
 ## <a name="edit-user-account-attributes"></a>编辑用户帐户属性
 
@@ -51,15 +51,15 @@ ms.locfileid: "49980075"
 
 2. 确定要编辑用户帐户配置文件的属性 () 。 有关详细信息，请参阅 ["属性"了解信息屏障策略](information-barriers-attributes.md)。 
 
-3. 编辑一个或多个用户帐户以包括上一步中所选的属性的值。 若要执行此操作，请使用以下过程之一：
+3. 编辑一个或多个用户帐户以包括上一步中所选的属性值。 若要执行此操作，请使用以下过程之一：
 
     - 若要编辑单个帐户，请参阅使用 [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal)添加或更新用户配置文件信息。
 
-    - 若要编辑多个帐户 (或使用 PowerShell 编辑单个帐户) ，请参阅使用 [Office 365 PowerShell 配置用户帐户属性](https://docs.microsoft.com/microsoft-365/enterprise/configure-user-account-properties-with-microsoft-365-powershell)。
+    - 若要编辑多个帐户 (或使用 PowerShell 编辑单个帐户) ，请参阅"使用[Office 365 PowerShell 配置用户帐户属性"。](https://docs.microsoft.com/microsoft-365/enterprise/configure-user-account-properties-with-microsoft-365-powershell)
 
 ## <a name="edit-a-segment"></a>编辑线段
 
-使用此过程可编辑用户区段的定义。 例如，您可以更改线段的名称，或者更改用于确定该线段中包括哪些人的筛选器。
+使用此过程可编辑用户区段的定义。 例如，您可以更改线段的名称，或者更改用于确定该线段中包括哪些人使用的筛选器。
 
 1. 若要查看所有现有分段，请使用 **Get-OrganizationSegment** cmdlet。
 
@@ -68,7 +68,7 @@ ms.locfileid: "49980075"
     你将看到每个类别的列表和详细信息，如线段类型、其 UserGroupFilter 值、创建或上次修改它的用户、GUID 等。
 
     > [!TIP]
-    > 打印或保存分段列表，供以后参考。 例如，如果要编辑线段，需要知道其名称或标识值 (Identity 参数一) 。
+    > 打印或保存分段列表，供以后参考。 例如，如果要编辑线段，需要知道其名称或标识值 (Identity 参数参数) 。
 
 2. 若要编辑段，请使用带 **Identity** 参数和相关详细信息的 **Set-OrganizationSegment** cmdlet。
 
@@ -76,7 +76,7 @@ ms.locfileid: "49980075"
     |:---------|:----------|
     | `Set-OrganizationSegment -Identity GUID -UserGroupFilter "attribute -eq 'attributevalue'"` |`Set-OrganizationSegment -Identity c96e0837-c232-4a8a-841e-ef45787d8fcd -UserGroupFilter "Department -eq 'HRDept'"` <p> 本示例中，对于 GUID *为 c96e0837-c232-4a8a-841e-ef45787d8fcd* 的段，我们将部门名称更新为"HRDept"。 |
 
-为组织完成分段编辑后，可以[定义或](information-barriers-policies.md#part-2-define-information-barrier-policies)[编辑信息](#edit-a-policy)屏障策略。
+为组织完成分段编辑后，可以[定义或](information-barriers-policies.md#part-2-define-information-barrier-policies)[编辑](#edit-a-policy)信息屏障策略。
 
 ## <a name="edit-a-policy"></a>编辑策略
 
@@ -88,7 +88,7 @@ ms.locfileid: "49980075"
 
 2. 将 **Set-InformationBarrierPolicy** cmdlet 与 **Identity** 参数一同使用，并指定要所做的更改。
 
-    示例：假设定义了一个策略来阻止 *Research* 部门与销售和市场营销部门 *进行通信。* 策略是使用此 cmdlet 定义的： `New-InformationBarrierPolicy -Name "Research-SalesMarketing" -AssignedSegment "Research" -SegmentsBlocked "Sales","Marketing"`
+    示例：假设定义了一个策略，以阻止 *Research* 部门与 *销售和* 市场营销部门进行通信 *。* 策略是使用此 cmdlet 定义的： `New-InformationBarrierPolicy -Name "Research-SalesMarketing" -AssignedSegment "Research" -SegmentsBlocked "Sales","Marketing"`
 
     假设我们想要更改它，以便"研究"部门中的人员只能与 *人力资源* 部门中的人员通信。 若要进行此更改，我们使用此 cmdlet： `Set-InformationBarrierPolicy -Identity 43c37853-ea10-4b90-a23d-ab8c93772471 -SegmentsAllowed "HR"`
 
@@ -114,7 +114,7 @@ ms.locfileid: "49980075"
 
     语法： `Start-InformationBarrierPoliciesApplication`
 
-    将按用户对组织应用更改。 如果组织规模较大，可能需要 24 (或) 才能完成此过程。  (一般来说，大约需要一小时处理 5，000 个用户帐户。) 
+    将按用户对组织应用更改。 如果组织规模较大，可能需要 24 (或) 才能完成此过程。  (一般来说，处理 5，000 个用户帐户大约需要一个小时) 
 
 此时，一个或多个信息屏障策略设置为非活动状态。 在这里，你可以执行以下任一操作：
 
@@ -164,8 +164,10 @@ ms.locfileid: "49980075"
 
 ## <a name="resources"></a>资源
 
-- [大致了解信息屏障](information-barriers.md)
+- [大致了解信息障碍](information-barriers.md)
 - [定义信息屏障策略](information-barriers-policies.md)
-- [了解有关 Microsoft Teams 中信息屏障的信息详细信息](https://docs.microsoft.com/MicrosoftTeams/information-barriers-in-teams)
+- [了解有关 Microsoft Teams 中信息屏障的信息详细信息](/MicrosoftTeams/information-barriers-in-teams)
+- [了解有关 SharePoint Online 中信息屏障的信息详细信息](/sharepoint/information-barriers)
+- [了解有关 OneDrive 中信息屏障的信息详细信息](/onedrive/information-barriers)
 - [信息屏障策略的属性](information-barriers-attributes.md)
 - [信息屏障疑难解答](information-barriers-troubleshooting.md)

@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_IP
 description: 了解 Exchange Online 和 Microsoft 365 如何使用传输层安全性 (TLS) 和转发保密 (FS) 保护电子邮件通信。 此外，还获取有关 Microsoft for Exchange Online 颁发的证书的信息。
-ms.openlocfilehash: 507a152130113868293d8d08441f298e5f5ae512
-ms.sourcegitcommit: 50f10d83fa21db8572adab90784146e5231e3321
+ms.openlocfilehash: 67be87bc07399af9469728383af1caf604bf1372
+ms.sourcegitcommit: c550c1b5b9e67398fd95bfb0256c4f5c7930b2be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "50058455"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "50066825"
 ---
 # <a name="how-exchange-online-uses-tls-to-secure-email-connections"></a>Exchange Online 如何使用 TLS 保护电子邮件连接
 
@@ -37,7 +37,7 @@ ms.locfileid: "50058455"
   
 我们建议在您希望在 Microsoft 和内部部署组织或其他组织（如合作伙伴）之间设置安全通信通道的情况下使用 TLS。 Exchange Online 始终尝试首先使用 TLS 保护您的电子邮件，但如果另一方没有提供 TLS 安全，则无法始终这么做。 请继续阅读，了解如何使用连接器保护发送到内部部署服务器或重要合作伙伴  *的所有邮件*。 
 
-为了为客户提供一流的加密，Microsoft 在 [Office 365 和 Office 365](tls-1.0-and-1.1-deprecation-for-office-365.md) GCC 中已弃用传输层安全性 (TLS) 1.0 版和 [1.1](tls-1-2-in-office-365-gcc.md)版。 但是，您可以继续使用不带任何 TLS 的未加密 SMPT 连接。 建议不要在没有任何加密的情况下传输电子邮件。  
+为了为客户提供一流的加密，Microsoft 在 [Office 365 和 Office 365](tls-1.0-and-1.1-deprecation-for-office-365.md) GCC 中已弃用传输层安全性 (TLS) 1.0 版和 [1.1](tls-1-2-in-office-365-gcc.md)版。 但是，你可以继续使用不带任何 TLS 的未加密 SMPT 连接。 建议不要在没有任何加密的情况下传输电子邮件。  
   
 ## <a name="how-exchange-online-uses-tls-between-exchange-online-customers"></a>Exchange Online 如何在 Exchange Online 客户之间使用 TLS
 
@@ -45,13 +45,13 @@ Exchange Online 服务器始终通过 TLS 1.2 加密到我们数据中心其他 
   
 ## <a name="how-microsoft-365-uses-tls-between-microsoft-365-and-external-trusted-partners"></a>Microsoft 365 如何在 Microsoft 365 和外部受信任合作伙伴之间使用 TLS
 
-默认情况下，Exchange Online 始终使用操作 TLS。 这意味着 Exchange Online 会始终尝试首先通过最安全的 TLS 版本加密连接，而后沿着 TLS 密码列表一直往下，直到找到一个双方都同意的版本进行加密。 除非您已配置 Exchange Online 以确保发送给该收件人的邮件仅通过安全连接发送，否则默认情况下，如果收件人组织不支持 TLS 加密，则邮件将发送未加密。 操作 TLS 对于多数企业已够用。 但是，对于具有合规性要求（如医疗、银行或政府组织）的企业，可以将 Exchange Online 配置为要求或强制使用 TLS。 有关说明，请参阅 [使用 Office 365 中的连接器配置邮件流](https://technet.microsoft.com/library/ms.exch.eac.connectorselection%28v=exchg.150%29.aspx)。
+默认情况下，Exchange Online 始终使用操作 TLS。 这意味着 Exchange Online 会始终尝试首先通过最安全的 TLS 版本加密连接，而后沿着 TLS 密码列表一直往下，直到找到一个双方都同意的版本进行加密。 除非已配置 Exchange Online 以确保发送给该收件人的邮件仅通过安全连接发送，否则默认情况下，如果收件人组织不支持 TLS 加密，则邮件将发送未加密。 操作 TLS 对于多数企业已够用。 但是，对于具有合规性要求（如医疗、银行或政府组织）的企业，可以将 Exchange Online 配置为要求或强制使用 TLS。 有关说明，请参阅 [使用 Office 365 中的连接器配置邮件流](https://technet.microsoft.com/library/ms.exch.eac.connectorselection%28v=exchg.150%29.aspx)。
   
 如果您决定在您的组织和受信任合作伙伴组织之间配置 TLS，Exchange Online 可以使用强制 TLS 创建受信任的通信通道。 “强制 TLS”要求您的合作伙伴组织使用安全证书对 Exchange Online 进行身份验证，以便向您发送邮件。 若要这么做，您的合作伙伴将需要管理其自己的证书。 在 Exchange Online 中，我们使用连接器保护您发送的邮件在到达收件人的电子邮件提供商之前免受未经授权的访问。 有关使用连接器配置邮件流的信息，请参阅使用 [Office 365](https://technet.microsoft.com/library/ms.exch.eac.connectorselection%28v=exchg.150%29.aspx)中的连接器配置邮件流。
   
 ## <a name="tls-and-hybrid-exchange-server-deployments"></a>TLS 和混合 Exchange Server 部署
 
-如果要管理混合 Exchange 部署，本地 Exchange 服务器需要使用安全证书向 Microsoft 365 进行身份验证，以便向邮箱仅位于 Office 365 中的收件人发送邮件。 因此，您需要为内部部署 Exchange 服务器管理您自己的安全证书。 您还必须以安全的方式存储并维护这些服务器证书。 有关在混合部署中管理证书详细信息，请参阅混合 [部署的证书要求](https://technet.microsoft.com/library/hh563848%28v=exchg.150%29.aspx)。
+如果要管理混合 Exchange 部署，本地 Exchange 服务器需要使用安全证书向 Microsoft 365 进行身份验证，以便向邮箱仅位于 Office 365 中的收件人发送邮件。 因此，您需要为内部部署 Exchange 服务器管理您自己的安全证书。 您还必须以安全的方式存储并维护这些服务器证书。 有关在混合部署中管理证书详细信息，请参阅 [混合部署的证书要求](https://technet.microsoft.com/library/hh563848%28v=exchg.150%29.aspx)。
   
 ## <a name="how-to-set-up-forced-tls-for-exchange-online-in-office-365"></a>如何在 Office 365 中为 Exchange Online 设置强制 TLS
 
@@ -63,7 +63,7 @@ Exchange Online 服务器始终通过 TLS 1.2 加密到我们数据中心其他 
   
  **当前证书信息自 2018 年 9 月 3 起有效**
   
-|**属性**|**值**|
+| 属性 | 值 |
 |:-----|:-----|
 |证书颁发机构根颁发者  <br/> |GlobalSign 根 CA – R1 <br/> |
 |证书名称  <br/> |mail.protection.outlook.com  <br/> |
@@ -77,7 +77,7 @@ Exchange Online 服务器始终通过 TLS 1.2 加密到我们数据中心其他 
   
 ****
 
-|**属性**|**值**|
+| 属性 | 值 |
 |:-----|:-----|
 |证书颁发机构根颁发者  <br/> |Baltimore CyberTrust 根  <br/> |
 |证书名称  <br/> |mail.protection.outlook.com  <br/> |
@@ -93,15 +93,18 @@ Exchange Online 服务器始终通过 TLS 1.2 加密到我们数据中心其他 
 
 1. 使用 Exchange Server 连接到本地Windows PowerShell，然后运行以下命令：  
   `certutil -URL https://crl.globalsign.com/gsorganizationvalsha2g3.crl`
-2. 在出现的窗口中，选择"检索 **"。**
-3. 当实用工具完成检查时，它将返回一个状态。 如果状态显示为 **"确定**"，则您的邮件服务器可以成功验证新证书。 如果没有，则需要确定导致连接失败的原因。 很可能需要更新防火墙的设置。 需要访问的终结点的完整列表包括：
+
+1. 在出现的窗口中，选择"检索 **"。**
+
+1. 当实用工具完成检查时，它将返回一个状态。 如果状态显示为 **"确定**"，则您的邮件服务器可以成功验证新证书。 如果没有，则需要确定导致连接失败的原因。 很可能需要更新防火墙的设置。 需要访问的终结点的完整列表包括：
     - ocsp.globalsign.com
-     - crl.globalsign.com
-     - secure.globalsign.com   
+    - crl.globalsign.com
+    - secure.globalsign.com   
 
 正常情况下，你通过 Windows 更新自动接收根证书更新。 但是，某些部署具有防止自动发生这些更新的其他安全性。 在这些锁定的部署中，Windows 更新无法自动更新根证书，您需要通过完成以下步骤来确保安装了正确的根 CA 证书：
 1.  使用 Exchange Server 连接到本地Windows PowerShell，然后运行以下命令：  
   `certmgr.msc`
+
 2. 在 **"受信任的根证书颁发机构/证书**"下，确认新证书已列出。
 
 ## <a name="get-more-information-about-tls-and-microsoft-365"></a>获取有关 TLS 和 Microsoft 365 详细信息

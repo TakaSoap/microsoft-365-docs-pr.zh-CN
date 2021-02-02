@@ -16,12 +16,12 @@ localization_priority: None
 f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 4a0200b894bcdbc734bb90e25eff8c52848d7b65
-ms.sourcegitcommit: ea8a096df5acedecdce1780969f2b189c3fadf73
+ms.openlocfilehash: 003347d46bed2529831a92681e73630d58a1f653
+ms.sourcegitcommit: 8d28bce1a3445878b066864e766cf52cb83becd1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2021
-ms.locfileid: "50053809"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "50071267"
 ---
 # <a name="learn-about-information-barriers-in-microsoft-365"></a>了解 Microsoft 365 中的信息障碍
 
@@ -38,14 +38,20 @@ Microsoft Teams、SharePoint Online 和 OneDrive for Business 支持信息屏障
 > [!IMPORTANT]
 > 信息屏障 ***仅支持** _ 双向限制。 单向限制（如营销）可以与日交易者进行通信和协作，但日交易者无法与营销 _* 进行通信 _和协作不受_ 支持**。
 
-对于上述所有示例方案 (更多) ，可以定义信息屏障策略来阻止或允许 Microsoft Teams、SharePoint Online 和 OneDrive 中的通信和协作。 此类策略可以阻止用户呼叫或与不应联系的组聊天，或者使用户仅与 Microsoft Teams 中的特定组通信。 在信息屏障策略生效后，只要这些策略覆盖的用户尝试与 Microsoft Teams、SharePoint Online 或 OneDrive 中的其他人进行通信和协作，就会阻止 (或允许) 通信和协作 (，如信息屏障策略) 所定义。 若要了解有关具有信息障碍的用户体验详细信息，请参阅 Microsoft [Teams](https://docs.microsoft.com/MicrosoftTeams/information-barriers-in-teams)中的信息障碍和[SharePoint Online](https://docs.microsoft.com/sharepoint/information-barriers)中的信息障碍
+对于上述所有示例方案 (更多) ，可以定义信息屏障策略来阻止或允许 Microsoft Teams、SharePoint Online 和 OneDrive 中的通信和协作。 此类策略可以阻止用户呼叫或与不应联系的组聊天，或者使用户仅与 Microsoft Teams 中的特定组通信。 在信息屏障策略生效后，只要这些策略覆盖的用户尝试与 Microsoft Teams、SharePoint Online 或 OneDrive 中的其他人进行通信和协作，就会阻止 (或允许) 通信和协作 (，如信息屏障策略) 所定义。
+
+若要了解有关具有信息障碍的用户体验详细信息，请参阅：
+
+- [Microsoft Teams 中的信息屏障](/MicrosoftTeams/information-barriers-in-teams)
+- [SharePoint Online 中的信息障碍](/sharepoint/information-barriers)
+- [OneDrive 中的信息屏障](/onedrive/information-barriers)
 
 > [!IMPORTANT]
 > 目前，信息屏障不适用于电子邮件通信。 此外，信息屏障独立于合规性 [边界](set-up-compliance-boundaries.md)。<p> 在定义和应用信息屏障策略之前，请确保您的组织没有 [生效的 Exchange](https://docs.microsoft.com/exchange/address-books/address-book-policies/address-book-policies) 通讯簿策略。  (信息屏障基于通讯簿策略。) 
 
 ## <a name="what-happens-with-information-barriers"></a>信息屏障会发生什么情况
 
-当信息屏障策略到位时，不应与其他特定用户通信或共享文件的用户将无法查找、选择、聊天或呼叫这些用户。 在信息屏障下，将进行检查以防止未经授权的通信和协作。 
+信息屏障策略实施后，不应与其他特定用户通信或共享文件的用户将无法查找、选择、聊天或呼叫这些用户。 在信息屏障下，将进行检查以防止未经授权的通信和协作。 
 
 信息屏障适用于 Microsoft Teams (、SharePoint Online 和 OneDrive) 聊天和频道。 在 Microsoft Teams 中，信息屏障策略确定并阻止以下类型的未经授权的通信：
 
@@ -59,18 +65,18 @@ Microsoft Teams、SharePoint Online 和 OneDrive for Business 支持信息屏障
 - 与其他用户共享文件
 - 通过共享链接访问文件
 
-如果参与人员包含在信息屏障策略中以阻止活动，他们将不能继续。 此外，可能阻止信息屏障策略中包含的每个人与 Microsoft Teams 中的其他人通信。 当受信息屏障策略影响的人属于同一团队或群组聊天时，他们可能会从这些聊天会话中删除，并且可能不允许与组进一步通信。
+如果参与人员包含在信息屏障策略中以阻止活动，他们将无法继续。 此外，可能阻止信息屏障策略中包含的每个人与 Microsoft Teams 中的其他人通信。 当受信息屏障策略影响的人属于同一团队或群组聊天时，他们可能会从这些聊天会话中删除，并且可能不允许与组进一步通信。
 
-若要了解有关具有信息障碍的用户体验详细信息，请参阅 Microsoft [Teams 中的信息屏障](https://docs.microsoft.com/MicrosoftTeams/information-barriers-in-teams)。
+若要了解有关具有信息障碍的用户体验详细信息，请参阅 Microsoft [Teams 中的信息屏障](/MicrosoftTeams/information-barriers-in-teams)。
 
 在 SharePoint Online 和 OneDrive 中，信息屏障策略可确定并阻止以下类型的未经授权的协作：
 
 - 向网站添加成员
 - 用户访问网站或内容
 - 与其他用户共享网站或内容
-- 搜索网站 
+- 搜索网站
 
-若要了解有关具有信息障碍的用户体验详细信息，请参阅 [SharePoint Online 中的信息屏障](https://docs.microsoft.com/sharepoint/information-barriers)
+若要了解有关具有信息障碍的用户体验详细信息，请参阅 [SharePoint Online 中的信息屏障](/sharepoint/information-barriers)
 
 ## <a name="required-licenses-and-permissions"></a>所需的许可证和权限
 
@@ -91,15 +97,15 @@ Microsoft Teams、SharePoint Online 和 OneDrive for Business 支持信息屏障
 - 合规性管理员
 - IBM 合规性管理
 
- (详细了解角色和权限，请参阅 [Office 365](../security/office-365-security/permissions-in-the-security-and-compliance-center.md)安全与合规中心&中的权限) 
+ (了解有关角色和权限的更多信息，请参阅 [Office 365](../security/office-365-security/permissions-in-the-security-and-compliance-center.md)安全与合规&中的权限) 
 
 您必须熟悉 PowerShell cmdlet，才能定义、验证或编辑信息屏障策略。 尽管我们在操作方法文章中提供了 PowerShell cmdlet[](information-barriers-policies.md)的几个示例，但您需要了解组织的其他详细信息（如参数）。
 
 ## <a name="next-steps"></a>后续步骤
 
-- [了解有关 Microsoft Teams 中信息屏障的信息详细信息](https://docs.microsoft.com/MicrosoftTeams/information-barriers-in-teams)
+- [了解有关 Microsoft Teams 中信息屏障的信息详细信息](/MicrosoftTeams/information-barriers-in-teams)
+- [了解有关 SharePoint Online 中信息屏障的信息详细信息](/sharepoint/information-barriers)
+- [了解有关 OneDrive 中信息屏障的信息详细信息](/onedrive/information-barriers)
 - [查看可用于信息屏障策略的属性](information-barriers-attributes.md)
 - [定义信息屏障策略](information-barriers-policies.md)
 - [编辑 (或删除) 信息屏障策略](information-barriers-edit-segments-policies.md)
-- [了解有关 SharePoint Online 中信息屏障的信息详细信息](https://docs.microsoft.com/sharepoint/information-barriers)
-- [了解有关 OneDrive for Business 中信息屏障的信息详细信息](https://docs.microsoft.com/onedrive/information-barriers)
