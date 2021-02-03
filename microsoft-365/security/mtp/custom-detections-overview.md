@@ -18,12 +18,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: ae9617a55fd5efb40a3aba07202ebfb1494d4db6
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: de9fb28f09b88cf1730f3bb3539234f6a03ec2e3
+ms.sourcegitcommit: d354727303d9574991b5a0fd298d2c9414e19f6c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49928804"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "50080709"
 ---
 # <a name="custom-detections-overview"></a>自定义检测概述
 
@@ -41,6 +41,7 @@ ms.locfileid: "49928804"
 - 针对从高级搜寻查询构建的基于规则的检测的警报
 - 自动响应操作
 
-## <a name="related-topic"></a>相关主题
+## <a name="see-also"></a>另请参阅
 - [创建和管理自定义检测规则](custom-detection-rules.md)
 - [高级搜寻概述](advanced-hunting-overview.md)
+- [从 Microsoft Defender for Endpoint 迁移高级搜寻查询](advanced-hunting-migrate-from-mdatp.md)

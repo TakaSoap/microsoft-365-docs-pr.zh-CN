@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 8c7e47e66f9e5543cc122c5b5154207cae836d2a
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: d58292f658446259bfab5b1b55c8b462d081421c
+ms.sourcegitcommit: d354727303d9574991b5a0fd298d2c9414e19f6c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49932918"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "50080619"
 ---
 # <a name="create-and-manage-custom-detections-rules"></a>创建和管理自定义检测规则
 
@@ -39,7 +39,7 @@ ms.locfileid: "49932918"
 
 ## <a name="required-permissions-for-managing-custom-detections"></a>管理自定义检测所需的权限
 
-若要管理自定义检测，需要分配以下角色之一：
+若要管理自定义检测，需要分配有以下角色之一：
 
 - **安全管理员**- 具有 [此 Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#security-administrator) 角色的用户可以在 Microsoft 365 安全中心和其他门户和服务中管理安全设置。
 
@@ -110,7 +110,7 @@ DeviceEvents
 - **频率**— 运行查询和采取措施的时间间隔。 [请参阅下面的其他指南](#rule-frequency)
 - **警报标题**- 显示由规则触发的警报的标题
 - **严重性**- 规则标识的组件或活动的潜在风险
-- **类别**— 规则标识的威胁组件或活动
+- **类别**-由规则标识的威胁组件或活动
 - **MITRE ATT&CK** 技术 - 一种或多种攻击技术，由 [MITRE ATT](https://attack.mitre.org/)和 CK 框架中记录的规则&攻击技术。 本部分对某些警报类别（包括恶意软件、勒索软件、可疑活动和不需要的软件）隐藏
 - **说明**- 有关规则标识的组件或活动详细信息 
 - **建议的操作**- 响应者为响应警报可能执行的其他操作
@@ -119,7 +119,7 @@ DeviceEvents
 保存或编辑新规则时，它将运行并检查过去 30 天的数据中的匹配项。 然后，规则以固定间隔再次运行，并基于你选择的频率应用回发持续时间：
 
 - **每 24 小时** 运行一次，每 24 小时运行一次，检查过去 30 天的数据
-- **每 12 小时** 运行一次 ，每 12 小时运行一次，检查过去 24 小时的数据
+- **每 12 小时** 运行一次 —每 12 小时运行一次，检查过去 24 小时的数据
 - **每 3 小时** 运行一次，每 3 小时运行一次，检查过去 6 小时的数据
 - **每小时** 运行一次，检查过去 2 小时的数据
 
@@ -148,7 +148,7 @@ DeviceEvents
 选择后，可以选择对查询结果的、 或列中的文件应用隔离 `SHA1` `InitiatingProcessSHA1` `SHA256` `InitiatingProcessSHA256` 文件操作。 此操作将从文件的当前位置删除文件，并隔离副本。
 
 #### <a name="actions-on-users"></a>用户操作
-选中后， **将用户标记为** 已泄露，将针对查询结果的 `AccountObjectId` 、 `InitiatingProcessAccountObjectId` 或 `RecipientObjectId` 列中的用户执行该操作。 此操作将 Azure Active Directory 中的用户风险级别设置为"高"，从而触发相应的 [标识保护策略](https://docs.microsoft.com/azure/active-directory/identity-protection/overview-identity-protection)。
+选择 **此参数时** ，将用户标记为已泄露，将针对查询结果的 `AccountObjectId` 、 `InitiatingProcessAccountObjectId` 或 `RecipientObjectId` 列中的用户执行该操作。 此操作将 Azure Active Directory 中的用户风险级别设置为"高"，从而触发相应的 [标识保护策略](https://docs.microsoft.com/azure/active-directory/identity-protection/overview-identity-protection)。
 
 > [!NOTE]
 > Microsoft 365 Defender 当前不支持自定义检测规则的允许或阻止操作。
@@ -164,7 +164,7 @@ DeviceEvents
 将仅查询范围内设备的数据。 此外，仅对这些设备执行操作。
 
 ### <a name="6-review-and-turn-on-the-rule"></a>6. 查看并打开规则。
-查看规则后，选择 **"创建"** 以保存它。 自定义检测规则会立即运行。 它将基于配置的频率再次运行，以检查匹配项、生成警报以及执行响应操作。
+查看规则后，选择" **创建"** 以保存它。 自定义检测规则会立即运行。 它将基于配置的频率再次运行，以检查匹配项、生成警报以及执行响应操作。
 
 ## <a name="manage-existing-custom-detection-rules"></a>管理现有自定义检测规则
 您可以查看现有自定义检测规则的列表，检查其之前的运行，并查看已触发的警报。 您还可以按需运行规则并对其进行修改。
@@ -187,7 +187,7 @@ DeviceEvents
 
 您还可以从此页面对规则执行以下操作：
 
-- **运行**-立即运行规则。 这还会重置下一次运行的时间间隔。
+- **运行**-立即运行规则。 这还会重置下一次运行的间隔。
 - **编辑**- 在不更改查询的情况下修改规则
 - **修改查询**— 在高级搜寻中编辑查询
 - **打开**  / **关闭**- 启用规则或阻止其运行
@@ -199,7 +199,7 @@ DeviceEvents
 
 - 通过将警报的状态和分类设置为 true 或 false (来管理警报) 
 - 将警报链接到事件
-- 运行在高级搜寻时触发警报的查询
+- 运行触发高级搜寻警报的查询
 
 ### <a name="review-actions"></a>查看操作
 在规则详细信息屏幕 (搜索自定义检测  >    >  **[规则名称]**) ，转到"触发的操作"，其中列出了根据规则匹配项采取的操作。
@@ -207,7 +207,8 @@ DeviceEvents
 >[!TIP]
 >若要快速查看信息并针对表中的项目采取操作，请使用表格左侧的选择列 [&#10003;] 。
 
-## <a name="related-topic"></a>相关主题
+## <a name="see-also"></a>另请参阅
 - [自定义检测概述](custom-detections-overview.md)
 - [高级搜寻概述](advanced-hunting-overview.md)
 - [了解高级搜寻查询语言](advanced-hunting-query-language.md)
+- [从 Microsoft Defender for Endpoint 迁移高级搜寻查询](advanced-hunting-migrate-from-mdatp.md)

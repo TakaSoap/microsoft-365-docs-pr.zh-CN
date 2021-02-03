@@ -21,12 +21,12 @@ ms.collection:
 ms.topic: article
 ms.custom: seo-marvel-apr2020
 ms.technology: m365d
-ms.openlocfilehash: 08bdd1e22040166bb3becac32580a185c74f34a0
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 4e008488bdd733c9a7ce5b418fb838e0fe880d9d
+ms.sourcegitcommit: d354727303d9574991b5a0fd298d2c9414e19f6c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49932296"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "50080732"
 ---
 # <a name="migrate-advanced-hunting-queries-from-microsoft-defender-for-endpoint"></a>从 Microsoft Defender for Endpoint 迁移高级搜寻查询
 
@@ -114,7 +114,66 @@ AlertInfo
 | where FileName == "powershell.exe"
 ```
 
-## <a name="related-topics"></a>相关主题
+## <a name="migrate-custom-detection-rules"></a>迁移自定义检测规则
+
+在 Microsoft 365 Defender 上编辑 Microsoft Defender for Endpoint 规则时，它们将继续像以前一样运行，就像生成的查询仅查看设备表一样。 例如，由仅查询设备表的自定义检测规则生成的警报将继续传递到 SIEM 并生成电子邮件通知，具体取决于你在 Microsoft Defender for Endpoint 中配置它们的方式。 Defender for Endpoint 中的任何现有抑制规则也将继续适用。
+
+编辑 Defender for Endpoint 规则以便查询仅在 Microsoft 365 Defender 中可用的标识和电子邮件表后，该规则将自动移动到 Microsoft 365 Defender。 
+
+由迁移的规则生成的警报：
+
+- 在 Microsoft Defender 安全中心 (Defender for Endpoint 门户中不再) 
+- 停止传递到 SIEM 或生成电子邮件通知。 若要解决此更改，请通过 Microsoft 365 Defender 配置通知，获取警报。 可以使用 Microsoft [365 Defender API](api-incident.md) 接收客户检测警报或相关事件的通知。
+- Microsoft Defender 不会针对终结点抑制规则进行抑制。 若要阻止为某些用户、设备或邮箱生成警报，请修改相应的查询以明确排除这些实体。
+
+如果通过此方式编辑规则，将在应用此类更改之前提示您进行确认。
+
+Microsoft 365 Defender 门户中的自定义检测规则生成的新警报显示在提供以下信息的警报页面中：
+
+- 警报标题和说明 
+- 受影响的资产
+- 为响应警报而采取的操作
+- 触发警报的查询结果 
+- 有关自定义检测规则的信息 
+ 
+![新警报页面的图像](../../media/newalertpage.png)
+
+## <a name="write-queries-without-devicealertevents"></a>编写不含 DeviceAlertEvents 的查询
+
+在 Microsoft 365 Defender 架构中，提供和表以适应各种来源的警报附带的 `AlertInfo` `AlertEvidence` 一组不同信息。 
+
+若要获取用于从 Microsoft Defender for Endpoint 架构中的表获取的相同警报信息，请筛选该表，然后将每个唯一 ID 与表联接，该表提供详细的事件和 `DeviceAlertEvents` `AlertInfo` `ServiceSource` `AlertEvidence` 实体信息。 
+
+请参阅下面的示例查询：
+
+```kusto
+AlertInfo
+| where Timestamp > ago(7d)
+| where ServiceSource == "Microsoft Defender for Endpoint"
+| join AlertEvidence on AlertId
+```
+
+此查询产生列数多于 `DeviceAlertEvents` Microsoft Defender for Endpoint 架构中的列数。 若要使结果易于管理，请使用 `project` 仅获取感兴趣的列。 下面的示例对调查检测到 PowerShell 活动时您可能感兴趣的列进行规划：
+
+```kusto
+AlertInfo
+| where Timestamp > ago(7d)
+| where ServiceSource == "Microsoft Defender for Endpoint"
+    and AttackTechniques has "powershell"
+| join AlertEvidence on AlertId
+| project Timestamp, Title, AlertId, DeviceName, FileName, ProcessCommandLine 
+```
+
+如果要筛选警报中涉及的特定实体，可以通过指定要筛选的实体类型和值 `EntityType` 来这样做。 以下示例查找特定的 IP 地址：
+
+```kusto
+AlertInfo
+| where Title == "Insert_your_alert_title"
+| join AlertEvidence on AlertId 
+| where EntityType == "Ip" and RemoteIP == "192.88.99.01" 
+```
+
+## <a name="see-also"></a>另请参阅
 - [打开 Microsoft 365 Defender](advanced-hunting-query-language.md)
 - [高级搜寻概述](advanced-hunting-overview.md)
 - [了解架构](advanced-hunting-schema-tables.md)
