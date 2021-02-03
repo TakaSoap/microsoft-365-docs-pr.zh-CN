@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解有助于保留所需内容并删除不需要内容的保留策略和保留标签。
-ms.openlocfilehash: 307687a277ade03f3ba40852eff15378928465e6
-ms.sourcegitcommit: a76de3d1604d755b29053e7bf557c0008be6ad23
+ms.openlocfilehash: 751b88ea3dde0c4cf2a33dded26a032a1e320b5e
+ms.sourcegitcommit: 8d28bce1a3445878b066864e766cf52cb83becd1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "49787984"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "50071307"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>了解保留策略和保留标签
 
@@ -224,7 +224,7 @@ Exchange 公用文件夹、Skype、Teams 和 Yammer 消息不支持保留标签�
 
 Office 365 安全与合规中心的保留标签概述信息与 **“信息管理政策”** > **“仪表板”** 中的概述信息相同，更加详细的信息可以在 **“信息管理政策”** > **“标签活动资源管理器”** 中找到。 有关从较旧版本的管理中心监视保留标签的更多信息，请参阅以下文档：
 - [查看数据管理报告](view-the-data-governance-reports.md)
-- [使用标签分析查看标签使用情况](label-analytics.md)
+- [数据分类入门](data-classification-overview.md)。
 - [查看文档的标签活动](view-label-activity-for-documents.md)
 
 #### <a name="using-content-search-to-find-all-content-with-a-specific-retention-label"></a>使用“内容搜索”来查找所有带有特定保留标签的内容
