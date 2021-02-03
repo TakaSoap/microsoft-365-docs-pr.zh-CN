@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: 了解用户在适用于桌面、移动和 Web 的 Office 应用中如何使用敏感度标签，以及哪些应用支持敏感度标签。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 932fb602039a3f2437dfd9cc9db2c2e9438369e3
-ms.sourcegitcommit: 8d28bce1a3445878b066864e766cf52cb83becd1
+ms.openlocfilehash: 672d99ed4345ee27437cda66087de6e4e3f521bb
+ms.sourcegitcommit: 4f40f5be140a23bacff6fd7b85536de14fc7d499
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "50071247"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "50084587"
 ---
 # <a name="use-sensitivity-labels-in-office-apps"></a>在 Office 应用中使用敏感度标签
 
@@ -64,8 +64,8 @@ Office for iOS 和 Office for Android：敏感度标签内置于 [Office 应用�
 |[具有变量的动态标记](#dynamic-markings-with-variables)                                              | 2010+           | 16.42+     | 2.42+ | 16.0.13328+ | 正在审查 |
 |[立即分配权限](encryption-sensitivity-labels.md#assign-permissions-now)                                 | 1910+          | 16.21+     | 2.21+ | 16.0.11231+ | [是 - 选择加入](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[允许用户分配权限](encryption-sensitivity-labels.md#let-users-assign-permissions)                     |2004+ | 16.35+   | 正在审查   | 正在审查         | 正在审查                                                        |
-|[数据分类入门，](data-classification-overview.md) 并发送管理员数据                      | 预览： [当前 (预览) ](https://office.com/insider)            | 预览： [当前 (预览) ](https://office.com/insider)        | 正在审查   | 正在审查         | 是的 <sup>\*</sup>                                                        |
-|[要求用户将标签应用于他们的电子邮件和文档](#require-users-to-apply-a-label-to-their-email-and-documents)   | 预览：向当前 [频道 (预览) ](https://office.com/insider)             | 预览：向当前 [频道 (预览) ](https://office.com/insider)         | 正在审查   | 预览 [：Beta 渠道](https://office.com/insider)         | 正在审查                                            
+|[数据分类入门，](data-classification-overview.md) 并发送管理员数据                      | 2011+ | 16.43+ | 预览： [当前 (预览) ](https://office.com/insider) | 预览： [当前 (预览) ](https://office.com/insider) | 是的 <sup>\*</sup>                                                        |
+|[要求用户将标签应用于他们的电子邮件和文档](#require-users-to-apply-a-label-to-their-email-and-documents)   | 预览： [当前 (预览) ](https://office.com/insider)             | 预览： [当前 (预览) ](https://office.com/insider)         | 正在审查   | 推出：16.0.13628+ | 正在审查                                            
 |[将敏感度标签自动应用于内容](apply-sensitivity-label-automatically.md)                    | 2009+                                  | 推出：16.44 及以上 | 正在审查 | 正在审查 | [是 - 选择加入](sensitivity-labels-sharepoint-onedrive-files.md) |
 |支持 [对已标记](https://support.office.com/article/6d6bd723-ebfd-4e40-b5f6-ae6e8088f7a5) 和 [加密的文档](https://support.office.com/article/ee1509b4-1f6e-401e-b04a-782d26f564a4) 进行自动保存和共同授权 | 正在审查 | 正在审查 | 正在审查 | 正在审查 | [是 - 选择加入](sensitivity-labels-sharepoint-onedrive-files.md) |
 |
@@ -89,7 +89,7 @@ Office for iOS 和 Office for Android：敏感度标签内置于 [Office 应用�
 |[立即分配权限](encryption-sensitivity-labels.md#assign-permissions-now)                                 | 1910+                     | 16.21+                 | 4.7.1+         | 4.0.39+           | 是               |
 |[允许用户分配权限](encryption-sensitivity-labels.md#let-users-assign-permissions)                     | 1910+                     | 16.21+                 | 4.7.1+         | 4.0.39+           | 是               |
 |[要求用户将标签应用于他们的电子邮件和文档](#require-users-to-apply-a-label-to-their-email-and-documents)   | 预览：[当前频道 (预览) ) ](https://office.com/insider)                        | 16.43+                     | 正在审查            | 正在审查                | 是                |
-|[数据分类入门，](data-classification-overview.md) 并发送管理员数据                      | 预览： [当前 (预览) ](https://office.com/insider)                       | 预览： [当前 (预览) ](https://office.com/insider)                    | 正在审查           | 正在审查               | 是               |
+|[数据分类入门，](data-classification-overview.md) 并发送管理员数据                      | 2011+ | 正在审查 | 正在审查           | 正在审查               | 正在审查 |
 |[将敏感度标签自动应用于内容](apply-sensitivity-label-automatically.md)                    | 2009+                      | 16.44+                    | 正在审查           | 正在审查               | 是 |
 |
 

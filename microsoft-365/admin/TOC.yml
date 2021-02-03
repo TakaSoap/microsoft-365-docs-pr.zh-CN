@@ -184,8 +184,6 @@
               href: email/resolve-issues-with-shared-mailboxes.md
         - name: 设置重点收件箱
           href: setup/configure-focused-inbox.md
-        - name: 关于电子邮件协作
-          href: email/email-collaboration.md
         - name: 向通讯组添加用户或联系人
           href: email/add-user-or-contact-to-distribution-list.md
         - name: 管理组织的待筛选邮件
