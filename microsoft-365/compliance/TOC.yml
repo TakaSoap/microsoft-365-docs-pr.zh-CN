@@ -232,57 +232,63 @@
     - name: 数据丢失防护 (DLP)
       items:
         - name: 了解 DLP
-          href: data-loss-prevention-policies.md
-        - name: DLP 和 Microsoft Teams
-          href: dlp-microsoft-teams.md
-        - name: 了解终结点数据丢失防护
-          href: endpoint-dlp-learn-about.md
-        - name: 终结点数据丢失防护入门
-          href: endpoint-dlp-getting-started.md
-        - name: 为 Endpoint DLP 配置设备代理和 Internet 连接设置
-          href: endpoint-dlp-configure-proxy.md
-        - name: 使用端点数据丢失防护
-          href: endpoint-dlp-using.md
-        - name: Windows 10 设备的 Endpoint DLP 载入工具和方法
           items:
-            - name: Windows 10 设备的装载工具和方法
-              href: dlp-configure-endpoints.md
-            - name: 通过组策略载入 Windows 10 设备
-              href: dlp-configure-endpoints-gp.md
-            - name: 使用移动设备管理工具载入 Windows 10 设备
-              href: dlp-configure-endpoints-mdm.md
-            - name: 使用 Configuration Manager 载入 Windows 10 设备
-              href: dlp-configure-endpoints-sccm.md
-            - name: 使用本地脚本载入 Windows 10 设备
-              href: dlp-configure-endpoints-script.md
-            - name: 载入非持久性虚拟桌面基础结构 (VDI) 设备。
-              href: dlp-configure-endpoints-vdi.md
-        - name: 开始使用默认 DLP 策略
-          href: get-started-with-the-default-dlp-policy.md
-        - name: 通过模板创建 DLP 策略
-          href: create-a-dlp-policy-from-a-template.md
-        - name: 创建、测试和优化 DLP 策略
-          href: create-test-tune-dlp-policy.md
-        - name: 使用 DLP 策略中的通知和策略提示
-          href: use-notifications-and-policy-tips.md
-        - name: 配置和查看 DLP 策略的警报（预览）
-          href: dlp-configure-view-alerts-policies.md
-        - name: DLP 策略模板包含的内容
-          href: what-the-dlp-policy-templates-include.md
-        - name: 创建 DLP 策略来保护具有 FCI 或其他属性的文档
-          href: protect-documents-that-have-fci-or-other-properties.md
-        - name: 查看 DLP 报告
-          href: view-the-dlp-reports.md
-        - name: 创建查询以查找存储在站点上的敏感数据
-          href: form-a-query-to-find-sensitive-data-stored-on-sites.md
-        - name: DLP 在安全与合规中心和 Exchange 管理中心中之间的工作原理
-          href: how-dlp-works-between-admin-centers.md
-        - name: 在 DLP 策略中使用灵敏度标签作为条件（预览版）
-          href: dlp-sensitivity-label-as-condition.md
-        - name: 为非 Microsoft 云应用使用数据丢失防护策略
-          href: dlp-use-policies-non-microsoft-cloud-apps.md
-        - name: DLP 策略条件和异常（预览版）
-          href: dlp-conditions-and-exceptions.md
+            - name: 了解 DLP
+              href: data-loss-prevention-policies.md
+            - name: 了解终结点数据丢失防护
+              href: endpoint-dlp-learn-about.md
+        - name: 开始使用 DLP
+          items:
+            - name: 开始使用默认 DLP 策略
+              href: get-started-with-the-default-dlp-policy.md
+            - name: 通过模板创建 DLP 策略
+              href: create-a-dlp-policy-from-a-template.md
+            - name: 创建、测试和优化 DLP 策略
+              href: create-test-tune-dlp-policy.md
+            - name: 终结点数据丢失防护入门
+              href: endpoint-dlp-getting-started.md
+            - name: 为 Endpoint DLP 配置设备代理和 Internet 连接设置
+              href: endpoint-dlp-configure-proxy.md
+            - name: Windows 10 设备的 Endpoint DLP 载入工具和方法
+              items:
+                - name: Windows 10 设备的装载工具和方法
+                  href: dlp-configure-endpoints.md
+                - name: 通过组策略载入 Windows 10 设备
+                  href: dlp-configure-endpoints-gp.md
+                - name: 使用移动设备管理工具载入 Windows 10 设备
+                  href: dlp-configure-endpoints-mdm.md
+                - name: 使用 Configuration Manager 载入 Windows 10 设备
+                  href: dlp-configure-endpoints-sccm.md
+                - name: 使用本地脚本载入 Windows 10 设备
+                  href: dlp-configure-endpoints-script.md
+                - name: 载入非持久性虚拟桌面基础结构 (VDI) 设备。
+                  href: dlp-configure-endpoints-vdi.md
+        - name: 使用 DLP
+          items:
+            - name: DLP 和 Microsoft Teams
+              href: dlp-microsoft-teams.md
+            - name: 使用终结点数据丢失防护
+              href: endpoint-dlp-using.md
+            - name: 使用 DLP 策略中的通知和策略提示
+              href: use-notifications-and-policy-tips.md
+            - name: DLP 策略模板包含的内容
+              href: what-the-dlp-policy-templates-include.md
+            - name: 创建 DLP 策略来保护具有 FCI 或其他属性的文档
+              href: protect-documents-that-have-fci-or-other-properties.md
+            - name: 查看 DLP 报告
+              href: view-the-dlp-reports.md
+            - name: 创建查询以查找存储在站点上的敏感数据
+              href: form-a-query-to-find-sensitive-data-stored-on-sites.md
+            - name: DLP 在安全与合规中心和 Exchange 管理中心中之间的工作原理
+              href: how-dlp-works-between-admin-centers.md
+            - name: 配置和查看 DLP 策略的警报（预览）
+              href: dlp-configure-view-alerts-policies.md
+            - name: 在 DLP 策略中使用灵敏度标签作为条件（预览版）
+              href: dlp-sensitivity-label-as-condition.md
+            - name: 为非 Microsoft 云应用使用数据丢失防护策略
+              href: dlp-use-policies-non-microsoft-cloud-apps.md
+            - name: DLP 策略条件和异常（预览版）
+              href: dlp-conditions-and-exceptions.md
 - name: 管理信息治理
   items:
     - name: 治理数据
@@ -729,6 +735,8 @@
       items:
         - name: 搜索审核日志
           href: search-the-audit-log-in-security-and-compliance.md
+        - name: 使用 PowerShell 脚本搜索审核日志
+          href: audit-log-search-script.md
         - name: 启用或禁用审核日志搜索
           href: turn-audit-log-search-on-or-off.md
         - name: 审核日志中的详细属性
