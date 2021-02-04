@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: 了解如何将已发布的模型应用于 SharePoint 文档库
-ms.openlocfilehash: 742c6b7088619579f6157e20de63fe311039d6e2
-ms.sourcegitcommit: 162c01dfaa2fdb3225ce4c24964c1065ce22ed5d
+ms.openlocfilehash: 17da1e37f72504ac5e0e26c0dd190efced08d285
+ms.sourcegitcommit: d354727303d9574991b5a0fd298d2c9414e19f6c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2021
-ms.locfileid: "49975927"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "50080760"
 ---
 # <a name="apply-a-document-understanding-model-in-microsoft-sharepoint-syntex"></a>在 Microsoft SharePoint Syntex 中应用文档理解模型
 
@@ -61,10 +61,15 @@ ms.locfileid: "49975927"
 
     ![已选择 的库](../media/content-understanding/selected-library.png)</br>
 
-7. 转到你的文档库，并确保你处于模型的文档库视图中。 请注意，如果选择文档库名称旁的“信息”按钮，会显示一条消息，说明你的模型已应用于文档库。
+7. 转到你的文档库，并确保你处于模型的文档库视图中。 请注意，如果选择文档库名称旁的“信息”按钮，会显示一条消息，说明文档库已应用一个模型。
 
     ![信息视图](../media/content-understanding/info-du.png)</br> 
 
+    你可以选择 **“查看活动模型”** 来查看应用于文档库的任何模型的详细信息。
+
+8. 在 **“活动模型”** 窗格中，你可以看到应用于文档库的模型。 选择一个模型以查看关于它的更多详细信息，例如模型的描述、发布该模型的人，以及该模型是否将保留标签应用于它所分类的文件。
+
+    ![活动模型窗格](../media/content-understanding/active-models.png)</br> 
 
 将模型应用到文档库之后，你可以开始将文档上传到网站并查看结果。
 
@@ -82,6 +87,20 @@ ms.locfileid: "49975927"
 
 > [!NOTE]
 > 您可以将单个文件复制到库中，然后将其应用于模型，但不能应用于文件夹。
+
+### <a name="the-classification-date-field"></a>分类日期字段
+
+SharePoint Syntex 文档理解模型或表单处理模型应用于文档库时，文档库架构包含一个<b>“分类日期”</b>字段。 默认情况下，此字段为空，但由模型处理和分类文档时，此字段会更新为完成日期时间戳。 
+
+   ![分类日期列](../media/content-understanding/class-date-column.png)</br> 
+
+分类日期字段由[<b>“内容理解模型对文件进行分类时”</b>触发器](https://docs.microsoft.com/connectors/sharepointonline/#when-a-file-is-classified-by-a-content-understanding-model)使用，以便在 Syntex 内容理解模型完成处理文件并更新“分类日期”字段后运行 Power Automate 流程。
+
+   ![流程触发器](../media/content-understanding/trigger.png)</br>
+
+<b>“内容理解模型对文件进行分类时”</b>触发器然后可用于使用从文件中提取的任何信息启动另一个工作流。
+
+
 
 ## <a name="see-also"></a>另请参阅
 [创建分类器](create-a-classifier.md)

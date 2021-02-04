@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: 了解如何在 Microsoft SharePoint Syntex 中创建提取程序。
-ms.openlocfilehash: 7417805f51bb3a1c7b993ce2cd72137478abbc02
-ms.sourcegitcommit: 162c01dfaa2fdb3225ce4c24964c1065ce22ed5d
+ms.openlocfilehash: dd26b049f71688804cd5110a5a0bb7c87950be94
+ms.sourcegitcommit: d354727303d9574991b5a0fd298d2c9414e19f6c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2021
-ms.locfileid: "49976539"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "50080479"
 ---
 # <a name="create-an-extractor-in-microsoft-sharepoint-syntex"></a>在 Microsoft SharePoint Syntex 中创建提取程序
 
@@ -57,6 +57,14 @@ ms.locfileid: "49976539"
 
  
 标记了五个文件后，将显示一条通知横幅，告知你移动到培训。 你可以选择更多标签，更多文档或前进到培训。 
+
+### <a name="use-find-to-search-your-file"></a>使用“查找”搜索文件
+使用<b>“查找”</b>功能在文档中搜索你要标记的实体。
+
+   ![在文件中查找](../media/content-understanding/find-feature.png) 
+
+如果要搜索大型文档，或者文档中有多个实体实例，则“查找”功能非常有用。 如果发现多个实例，可以在搜索结果中选择需要的实例，进入查看器中的那个位置对它进行标记。
+
 
 ## <a name="add-an-explanation"></a>添加说明
 
