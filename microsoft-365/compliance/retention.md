@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解有助于保留所需内容并删除不需要内容的保留策略和保留标签。
-ms.openlocfilehash: 751b88ea3dde0c4cf2a33dded26a032a1e320b5e
-ms.sourcegitcommit: 8d28bce1a3445878b066864e766cf52cb83becd1
+ms.openlocfilehash: d834cc53677c8b7c01ed4bec40ed51983d41e9da
+ms.sourcegitcommit: 4f40f5be140a23bacff6fd7b85536de14fc7d499
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "50071307"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "50084621"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>了解保留策略和保留标签
 
@@ -77,7 +77,7 @@ ms.locfileid: "50071307"
 
 ## <a name="retention-policies-and-retention-labels"></a>保留策略和保留标签
 
-可以使用保留策略和带有标签策略的保留标签来为内容分配保留设置。 
+若要将保留设置分配到内容，请使用 **保留策略** 和 **带有标签策略的保留标签**。 可以使用其中一种方法，也可以组合使用。
 
 使用保留策略可以在网站或邮箱级别为内容分配相同的保留设置，使用保留标签可以在项（文件夹、文档、电子邮件）级别分配保留设置。
 

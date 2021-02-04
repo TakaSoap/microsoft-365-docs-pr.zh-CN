@@ -13,12 +13,12 @@ ms.collection:
 search.appverid: MET150
 localization_priority: Priority
 description: 在Project Cortex中设置对内容的理解
-ms.openlocfilehash: a9713f1d28cf863ab827d2975e84042026105b3f
-ms.sourcegitcommit: 162c01dfaa2fdb3225ce4c24964c1065ce22ed5d
+ms.openlocfilehash: 0e5b48bab343f887a1438386bfa4f7915126ccd7
+ms.sourcegitcommit: c0cfb9b354db56fdd329aec2a89a9b2cf160c4b0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2021
-ms.locfileid: "49976376"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "50094705"
 ---
 # <a name="set-up-sharepoint-syntex"></a>设置 SharePoint Syntex
 
@@ -34,12 +34,12 @@ ms.locfileid: "49976376"
 设置前，请确保计划在环境中设置和配置内容理解的最佳方式。 例如，你需要做出以下决策：
 
 - 要启用表单处理的 SharePoint 网站 - 所有网站、部分网站或所选网站
-- 名称和管理员或内容中心
+- 内容中心的名称和管理员
 
 ## <a name="requirements"></a>要求 
 
 > [!NOTE]
-> 必须拥有全局管理员或 SharePoint 管理员权限，才能访问 Microsoft 365 管理中心并设置内容理解。
+> 必须拥有全局管理员或 SharePoint 管理员权限，才能访问 Microsoft 365 管理中心并设置 SharePoint Syntex。
 
 作为管理员，你还可在设置后随时对所选择的设置进行更改，并在整个 Microsoft 365 管理中心中的内容理解管理中设置。
 

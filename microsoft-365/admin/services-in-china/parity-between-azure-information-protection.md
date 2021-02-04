@@ -20,12 +20,12 @@ search.appverid:
 - GEA150
 description: 了解有关由世纪 (运营的 Office 365 的 Azure 信息保护) AIP 服务以及如何为中国客户配置它。
 monikerRange: o365-21vianet
-ms.openlocfilehash: cee50384587ffc3e1e43eb9c6bb07d2e0ced7e13
-ms.sourcegitcommit: cbe8724bd71d1c002395d98f1451c5f578c824f9
+ms.openlocfilehash: 300e7633237511fb9de64199ae7cf54594f2239e
+ms.sourcegitcommit: 3b369a44b71540c8b8214ce588a7aa6f47c3bb1e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49988040"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "50099674"
 ---
 # <a name="azure-information-protection-support-for-office-365-operated-by-21vianet"></a>由世纪银行运营的 Office 365 的 Azure 信息保护支持
 
@@ -43,13 +43,15 @@ ms.locfileid: "49988040"
   
 - 支持与商业云中的用户共享受保护的电子邮件。
   
-- 目前，无法与商业云中的用户共享文档和电子邮件附件。 这包括由商业云中的世纪银行运营的 Office 365、由商业云中的世纪银行运营的非 Office 365 用户以及拥有 RMS for 个人版许可证的用户。
+- 目前，无法与商业云中的用户共享文档和电子邮件附件。 这包括由商业云中的世纪版用户运营的 Office 365、由商业云中的世纪银行运营的非 Office 365 用户和拥有 RMS 个人版许可证的用户。
   
 - SharePoint 的 IRM (受 IRM 保护的网站和) 目前不可用。
   
 - AD RMS 的移动设备扩展当前不可用。
 
 - Azure [China](/azure/information-protection/rms-client/mobile-app-faq) 21Vianet 不支持移动查看器。
+
+- Azure 门户的 AIP 区域在中国客户无法使用。 使用 [PowerShell](#step-5-install-the-aip-on-premises-scanner-and-manage-content-scan-jobs) 命令，而不是在门户中执行诸如安装本地扫描程序和管理内容扫描作业等操作。
 
 ## <a name="configure-aip-for-customers-in-china"></a>为中国客户配置 AIP
 
@@ -142,7 +144,7 @@ Windows 上的 AIP 应用需要以下注册表项来将它们指向适用于 Azu
 > [!IMPORTANT]
 > 确保在卸载后不删除注册表项。 如果密钥为空、不正确或不存在，则该功能的行为将为默认值 (默认值 = 0，用于商业云) 。 如果键为空或不正确，也会向日志中添加打印错误。
 
-### <a name="step-5-install-the-aip-on-premises-scanner-and-manage-content-scan-jobs"></a>步骤 5：安装 AIP 本地扫描程序并管理内容扫描作业
+### <a name="step-5-install-the-aip-on-premises-scanner-and-manage-content-scan-jobs"></a>步骤 5：安装 AIP 本地扫描程序和管理内容扫描作业
 
 安装 AIP 本地扫描程序以扫描网络和内容共享中的敏感数据，并应用组织策略中配置的分类和保护标签。
 

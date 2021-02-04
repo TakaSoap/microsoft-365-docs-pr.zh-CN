@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: 了解如何将保留标签应用于文档理解模型
-ms.openlocfilehash: 793ae34fa5f033b10023811887af89c1785f7cda
-ms.sourcegitcommit: 162c01dfaa2fdb3225ce4c24964c1065ce22ed5d
+ms.openlocfilehash: 92115d8b1985fa84cd72671442aca18f255355de
+ms.sourcegitcommit: d354727303d9574991b5a0fd298d2c9414e19f6c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2021
-ms.locfileid: "49976395"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "50080410"
 ---
 # <a name="document-understanding-model-usage-analytics"></a>文档理解模型使用情况分析
 
@@ -28,28 +28,53 @@ ms.locfileid: "49976395"
 </br>
 
 
-Microsoft SharePoint Syntex 内容中心可提供模型使用情况分析，即提供有关如何使用内容中心中已发布的模型的详细信息。 其中包括以下信息汇总：
+Microsoft SharePoint Syntex 内容中心可提供模型使用情况分析，即提供有关如何使用内容中心中已发布的模型的详细信息。 内容中心的<b>模型最近 30 天的运行情况</b>部分包括以下图表和列表中提供的 30 天使用情况分析数据汇总：
 
-- 应用模型的位置
-- 一段时间内处理的文件数
+- 按模型分类
+- 按库分类
+- 模型使用情况 
 
  ![模型分析](../media/content-understanding/model-analytics.png) </br>
 
-## <a name="total-model-percentage"></a>总模型百分比
+### <a name="roll-up-of-model-usage-data-in-the-default-content-center"></a>在默认内容中心汇总模型使用数据
+
+在 SharePoint Syntex 中，在设置过程中创建默认内容中心。 也可以根据需要创建其他内容中心。 例如，部门可创建自己的内容中心来创建和管理其模型。 
+
+对于模型使用情况分析，请注意：
+
+- 默认内容中心将显示组织内所有内容中心和模型的模型使用情况分析，包括在其他内容中心中创建的模型。 这为内容管理者和其他利益干系人提供了一个集中式门户，用于管理和监督整个公司的内容中心和模型。  
+- 其他内容中心将仅显示在其中创建的模型的模型使用情况分析。 这使内容管理员可以仅深入了解所关注模型的使用情况数据。
+
+
+## <a name="classification-by-model"></a>按模型分类
 
    ![总模型百分比](../media/content-understanding/total-model-percentage.png) </br>
 
-**总模型百分比** 饼图将每个已发布模型显示为内容中心中所有已发布模型处理的总文件的百分比。
+**按模型分类** 饼图显示已对大多数文件进行分类的模型。 它将每个已发布模型显示为内容中心中所有已发布模型处理的总文件的百分比。
 
 每个模型还显示 **完整率**，即由模型成功分析的已上传文件的百分比。 完整率低可能意味着模型或正在分析的文件存在问题。
 
-## <a name="files-processed-over-time"></a>一段时间内处理的文件
+## <a name="classification-by-library"></a>按库分类
 
    ![处理的文件](../media/content-understanding/files-processed-over-time.png) </br>
 
-**一段时间内处理的文件** 条形图不仅显示每个模型一段时间内处理的文件数，还显示应用模型的文档库。
+**按库分类** 条形图可帮助确定组织中内容理解的有效性。  条形图不仅显示每个模型一段时间内处理的文件数，通过选择图标中的列，还会显示应用模型的文档库。
 
-   ![条形图](../media/content-understanding/bar-chart-models.png) </br>
+
+## <a name="model-usage"></a>模型使用情况
+
+“模型使用情况”列表将显示通过内容中心创建的模型的使用情况分析。  
+
+> [!NOTE]
+> 如果你位于默认资源中心，并且组织中有其他资源中心，则模型使用情况列表将按资源中心分组。
+
+模型使用情况列表中的每个模型都将显示使用情况数据：
+
+- 已分类项目计数：模型处理的文件数。
+- 平均置信度分数：对文件运行模型的平均准确度分数。
+- 目标列表 URL：应用模型的 SharePoint 文档库。
+
+
 
 ## <a name="see-also"></a>另请参阅
 [创建分类器](create-a-classifier.md)

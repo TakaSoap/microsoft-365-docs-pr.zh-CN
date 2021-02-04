@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 内容资源管理器可用于在本机查看标记的项目。
-ms.openlocfilehash: 9beeab0c0b00ac1ac37c9df53e14a2f3f2914422
-ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
+ms.openlocfilehash: 19ad68d3c32046754e366919e8c4e66336945624
+ms.sourcegitcommit: d354727303d9574991b5a0fd298d2c9414e19f6c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49701149"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "50080721"
 ---
 # <a name="get-started-with-content-explorer"></a>内容资源管理器入门
 
@@ -47,8 +47,6 @@ ms.locfileid: "49701149"
 
 若要访问“内容资源管理器”选项卡，必须在其中任一角色或角色组中向帐户分配成员身份。 
 
-[DLP 策略](data-loss-prevention-policies.md)可帮助保护定义为 **敏感信息类型** 的敏感信息。 Microsoft 365 在多个不同区域包含[适用于众多常用敏感信息类型的定义](sensitive-information-type-entity-definitions.md)它们已准备就绪可供使用。 例如，信用卡号、银行帐号、国民身份证号码和 Windows Live ID 服务编号。
-
 **Microsoft 365 角色组**
 
 - 全局管理员
@@ -66,7 +64,7 @@ ms.locfileid: "49701149"
 > [!IMPORTANT]
 > 这些权限会替代本地分配给项目的权限，后者允许查看内容。 
 
-有两个角色可授予对内容资源管理器的访问权限：
+有两个角色已授予内容资源管理器的访问权限，并且使用 [microsoft 安全与合规中心](https://protection.office.com/permissions) 授予：
 
 - **内容资源管理器列表查看员**：此角色组的成员资格允许你在列表视图中查看每个项目及其位置。 已为此角色组预分配 `data classification list viewer` 角色。
 

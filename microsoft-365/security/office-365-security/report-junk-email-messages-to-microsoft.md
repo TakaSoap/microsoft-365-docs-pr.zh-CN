@@ -14,35 +14,37 @@ search.appverid:
 ms.assetid: c31406ea-2979-4fac-9288-f835269b9d2f
 ms.collection:
 - M365-security-compliance
-description: 管理员可以了解向 Microsoft 报告好消息和错误消息和文件以进行分析的不同方法。
+description: 管理员可以了解向 Microsoft 报告好坏消息和文件以进行分析的不同方法。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 52133756ffab28975c1d384c7e455892ce6b0dfc
-ms.sourcegitcommit: 537e513a4a232a01e44ecbc76d86a8bcaf142482
+ms.openlocfilehash: 601d0c599a815529540281679bd2b0f907031058
+ms.sourcegitcommit: 3b369a44b71540c8b8214ce588a7aa6f47c3bb1e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "50029170"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "50099686"
 ---
 # <a name="report-messages-and-files-to-microsoft"></a>向 Microsoft 报告邮件和文件
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
-在 Exchange Online 中具有邮箱的 Microsoft 365 组织或独立 Exchange Online Protection (EOP) 组织中，用户和管理员都有几种不同的方法向 Microsoft 报告电子邮件和文件。
+在 Exchange Online 中具有邮箱的 Microsoft 365 组织或独立 Exchange Online Protection (EOP) 组织中，用户和管理员都有几种向 Microsoft 报告电子邮件和文件的不同方法。
 
 ****
 
 |方法|说明|
 |---|---|
 |[使用“管理员提交”将可疑的垃圾邮件、网络钓鱼诈骗、URL和文件提交给 Microsoft](admin-submission.md)|对于具有 Exchange Online 邮箱的组织中管理员的建议报告 (在独立 EOP) 。|
-|[启用报告消息加载项](enable-the-report-message-add-in.md)|适用于 Outlook 和 Outlook 网页 (以前称为Outlook Web App) 。 <p> 根据你的订阅，用户在外接程序中报告的邮件可在管理员提交门户、自动调查和响应[](admin-submission.md) ([AIR) ](air-view-investigation-results.md)结果、用户报告的邮件报告以及威胁[资源管理器中提供](threat-explorer-views.md#email--submissions)。 [](view-email-security-reports.md#user-reported-messages-report) <p> 可以将报告的邮件配置为复制或重定向到指定的邮箱。 有关详细信息，请参阅用户 [提交策略](user-submission.md)。
-|[启用“报告网络钓鱼”加载项](enable-the-report-phish-add-in.md)|适用于 Outlook 和 Outlook 网页 (以前称为Outlook Web App) 。 <p> 根据你的订阅，用户在外接程序中报告的邮件可在管理员提交门户、自动调查和响应[](admin-submission.md) ([AIR) ](air-view-investigation-results.md)结果、用户报告的邮件报告以及威胁[资源管理器中提供](threat-explorer-views.md#email--submissions)。 [](view-email-security-reports.md#user-reported-messages-report) <p> 可以将报告的邮件配置为复制或重定向到指定的邮箱。 有关详细信息，请参阅用户 [提交策略](user-submission.md)。|
+|[启用报告消息加载项](enable-the-report-message-add-in.md)|使用 Outlook 和 Outlook 网页 (以前称为Outlook Web App) 。 <p> 根据你的订阅，用户在外接程序中报告的邮件可在管理员提交门户、自动调查和响应[](admin-submission.md) [ (AIR) 结果](air-view-investigation-results.md)、用户[报告](view-email-security-reports.md#user-reported-messages-report)的邮件报告以及威胁[资源管理器中提供](threat-explorer-views.md#email--submissions)。 <p> 可以将报告的邮件配置为复制或重定向到指定的邮箱。 有关详细信息，请参阅用户 [提交策略](user-submission.md)。
+|[启用“报告网络钓鱼”加载项](enable-the-report-phish-add-in.md)|使用 Outlook 和 Outlook 网页 (以前称为Outlook Web App) 。 <p> 根据你的订阅，用户在外接程序中报告的邮件可在管理员提交门户、自动调查和响应[](admin-submission.md) [ (AIR) 结果](air-view-investigation-results.md)、用户[报告](view-email-security-reports.md#user-reported-messages-report)的邮件报告以及威胁[资源管理器中提供](threat-explorer-views.md#email--submissions)。 <p> 可以将报告的邮件配置为复制或重定向到指定的邮箱。 有关详细信息，请参阅用户 [提交策略](user-submission.md)。|
 |[安装和使用 Microsoft Outlook 的垃圾邮件报告外接程序](junk-email-reporting-add-in-for-microsoft-outlook.md)|仅适用于 Outlook。|
-|[报告 Outlook 网页中的垃圾邮件和钓鱼电子邮件](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md)|为具有 Exchange Online 邮箱的组织使用 Outlook 网页版中的内置功能 (在独立 EOP) 。 <p> 用户报告的邮件在管理员 [提交门户中可用](admin-submission.md)。 <p> 可以将报告的邮件配置为复制或重定向到指定的邮箱。 有关详细信息，请参阅用户 [提交策略](user-submission.md)。|
-|[在 Outlook for iOS 和 Outlook for Android 中报告垃圾邮件和网络钓鱼电子邮件](report-junk-email-and-phishing-scams-in-outlook-for-iOS-and-Android.md)|为具有 Exchange Online 邮箱的组织使用 Outlook for iOS 和 Outlook for Android 中的内置功能 (在独立 EOP) 。 <p> 用户报告的邮件在管理员 [提交门户中可用](admin-submission.md)。 <p> 可以将报告的邮件配置为复制或重定向到指定的邮箱。 有关详细信息，请参阅用户 [提交策略](user-submission.md)。|
+|[报告 Outlook 网页中的垃圾邮件和钓鱼电子邮件](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md)|为具有 Exchange Online 邮箱的组织使用 Outlook 网页版中的内置功能 (在独立 EOP) 。 <p> 用户报告的邮件在管理员 [提交门户中提供](admin-submission.md)。 <p> 可以将报告的邮件配置为复制或重定向到指定的邮箱。 有关详细信息，请参阅用户 [提交策略](user-submission.md)。|
+|[在 Outlook for iOS 和 Outlook for Android 中报告垃圾邮件和钓鱼电子邮件](report-junk-email-and-phishing-scams-in-outlook-for-iOS-and-Android.md)|为具有 Exchange Online 邮箱的组织使用 Outlook for iOS 和 Outlook for Android 中的内置功能 (在独立 EOP) 。 <p> 用户报告的邮件在管理员 [提交门户中提供](admin-submission.md)。 <p> 可以将报告的邮件配置为复制或重定向到指定的邮箱。 有关详细信息，请参阅用户 [提交策略](user-submission.md)。|
 |[手动将邮件提交给 Microsoft 进行分析](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md)|手动将附加邮件发送到特定的 Microsoft 电子邮件地址，以发送垃圾邮件，而不是垃圾邮件和网络钓鱼。|
-|[使用邮件流规则来查看用户向 Microsoft 报告的内容](use-mail-flow-rules-to-see-what-your-users-are-reporting-to-microsoft.md)|了解如何创建邮件流规则 (也称为传输规则) 在用户向 Microsoft 报告邮件进行分析时通知您。
-|||
+|[使用邮件流规则来查看用户向 Microsoft 报告的内容](use-mail-flow-rules-to-see-what-your-users-are-reporting-to-microsoft.md)|了解如何创建邮件流规则 (传输规则) 在用户向 Microsoft 报告邮件进行分析时通知您。|
 |[将恶意软件和非恶意软件提交给 Microsoft 进行分析](submitting-malware-and-non-malware-to-microsoft-for-analysis.md)|使用 Microsoft 安全智能网站提交附件和其他文件。|
 
 如果垃圾邮件或网络钓鱼邮件被隔离而不是送达，则用户可以从安全与合规中心中的隔离门户& Microsoft。 有关详细信息，请参阅 [Microsoft 365](find-and-release-quarantined-messages-as-a-user.md)中的用户查找并释放隔离邮件。
+
+> [!NOTE]
+> 提交到 Microsoft 的数据位于北美数据中心的 Office 365 合规性边界内。 数据由工程团队的分析师审阅，以帮助提高筛选器的有效性。

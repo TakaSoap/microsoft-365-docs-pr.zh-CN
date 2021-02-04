@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 创建敏感度标签时，你可以自动为文档或电子邮件分配标签，也可以提示用户选择你建议的标签。
-ms.openlocfilehash: 190b06a719775fbbf14c94a4fd817d3242a95e6c
-ms.sourcegitcommit: 1b30ac6e05906c8a014b1fed33fc71e1821f6ad2
+ms.openlocfilehash: 4bbea7810c20d72ef75bbb5602b1daddfce45576
+ms.sourcegitcommit: 4f40f5be140a23bacff6fd7b85536de14fc7d499
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2021
-ms.locfileid: "50044742"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "50084673"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>将敏感度标签自动应用于内容
 
@@ -227,9 +227,9 @@ Azure 信息保护统一标记客户端支持适用于 Windows 的 Office 应用
 
 1. 创建和配置自动标记策略。
 
-2. 在模拟模式下运行策略，并等待 24 个小时，或者直到模拟完成。
+2. 以模拟模式运行该策略，可能需要 48 小时才能完成。
 
-3. 查看结果，并在必要时优化策略。 重新运行模拟模式，再等待 24 个小时，或者直到模拟完成。
+3. 查看结果，并在必要时优化策略。 重新运行模拟模式，并等待其再次完成。
 
 4. 根据需要重复步骤 3。
 

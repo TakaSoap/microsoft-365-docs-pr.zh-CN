@@ -17,12 +17,12 @@ ms.collection:
 description: 了解如何为单个用户或整个组织启用 Outlook 和 Outlook 网页邮件外接程序。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a1f8cffaa6346ec7f426da3c862014ed85a9a367
-ms.sourcegitcommit: 537e513a4a232a01e44ecbc76d86a8bcaf142482
+ms.openlocfilehash: 9b21472736cff2fd0eed7da5495ab6aae597032f
+ms.sourcegitcommit: c0cfb9b354db56fdd329aec2a89a9b2cf160c4b0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "50029228"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "50094851"
 ---
 # <a name="enable-the-report-message-add-in"></a>启用报表消息加载项
 
@@ -30,11 +30,11 @@ ms.locfileid: "50029228"
 
 
 > [!NOTE]
-> 如果你是具有 Exchange Online 邮箱的 Microsoft 365 组织的管理员，我们建议您使用安全与合规中心中的&门户。 有关详细信息，请参阅使用管理员提交将可疑的垃圾邮件、网络钓鱼[、URL 和文件提交给 Microsoft。](admin-submission.md)
+> 如果你是具有 Exchange Online 邮箱的 Microsoft 365 组织的管理员，我们建议你使用安全与合规中心&门户。 有关详细信息，请参阅"使用管理员提交"将可疑的垃圾邮件、网络钓鱼[、URL 和文件提交到 Microsoft。](admin-submission.md)
 
-Outlook 和 Web 上的 Outlook 的"报告邮件"和"报告钓鱼"外接程序 (以前称为 Outlook Web App) ，它使用户能够轻松地将标记为错误 (的误报) 或漏报 (错误电子邮件允许) 向 Microsoft 及其关联公司进行分析。
+Outlook 和 Web 上的 Outlook 的"报告邮件"和"报告钓鱼"外接程序 (以前称为 Outlook Web App) ，它使用户能够轻松地将标记为错误 (的误报或误报) 或漏报 (错误电子邮件允许) 向 Microsoft 及其关联公司进行分析。
 
-Microsoft 使用这些提交来提高电子邮件保护技术的有效性。 例如，如果用户报告大量使用报告邮件外接程序标记为"非垃圾邮件"的邮件，则组织的安全团队可能需要调整 [反垃圾邮件策略](configure-your-spam-filter-policies.md)。
+Microsoft 使用这些提交来提高电子邮件保护技术的有效性。 例如，如果用户报告大量使用报告邮件外接程序标记为"非垃圾邮件"的邮件，则组织的安全团队可能需要调整反垃圾邮件 [策略](configure-your-spam-filter-policies.md)。
 
 可以安装"报告邮件"或"报告钓鱼"加载项。 如果希望用户仅报告网络钓鱼邮件，请在你的组织中部署报告网络钓鱼外接程序。 有关详细信息，请参阅"[启用报告钓鱼外接程序"。](enable-the-report-phish-add-in.md)
 
@@ -52,6 +52,7 @@ Microsoft 使用这些提交来提高电子邮件保护技术的有效性。 例
   - Outlook 2013 SP1 或更高版本
   - Outlook 2016 for Mac
   - Microsoft 365 企业应用版中包含的 Outlook
+  - 适用于 iOS 和 Android 的 Outlook 应用
 
 - 报告邮件外接程序对内部部署 Exchange 组织的邮箱不可用。
 
@@ -59,9 +60,9 @@ Microsoft 使用这些提交来提高电子邮件保护技术的有效性。 例
 
 - 现有的 Web 浏览器应该与报告消息外接程序一起使用。 但是，如果发现加载项不可用或无法正常使用，请尝试其他浏览器。
 
-- 对于组织安装，组织需要配置为使用 OAuth 身份验证。 有关详细信息，请参阅"确定外接程序的集中部署[是否适用于你的组织"。](../../admin/manage/centralized-deployment-of-add-ins.md)
+- 对于组织安装，组织需要配置为使用 OAuth 身份验证。 有关详细信息，请参阅"确定加载项集中部署[是否适用于你的组织"。](../../admin/manage/centralized-deployment-of-add-ins.md)
 
-- 管理员需为全局管理员角色组的成员。 有关详细信息，请参阅 [安全与合规中心的权限](permissions-in-the-security-and-compliance-center.md)。
+- 管理员需是全局管理员角色组的成员。 有关详细信息，请参阅[安全与合规中心中的权限](permissions-in-the-security-and-compliance-center.md)。
 
 ## <a name="get-the-report-message-add-in-for-yourself"></a>为自己获取"报告邮件"加载项
 
@@ -114,31 +115,31 @@ Microsoft 使用这些提交来提高电子邮件保护技术的有效性。 例
 
    - **已分配用户**：选择下列值之一：
 
-     - **每个 (** 默认) 
+     - **每个** (默认) 
      - **特定用户/组**
      - **就我自己**
 
    - **部署方法**：选择下列值之一：
 
      - **修复 (默认) ：** 外接程序会自动部署到指定用户，并且他们无法删除它。
-     - **可用**： 用户可以在家庭获取外接程序管理员管理的 \>  \> **安装外接程序**。
+     - **可用**：用户可以在家庭获取外接程序管理员管理的 \>  \> **安装外接程序**。
      - **可选**：加载项会自动部署到指定用户，但他们可以选择将其删除。
 
    ![配置外接程序页面](../../media/configure-add-in.png)
 
    完成后，单击"部署 **"。**
 
-8. 在 **出现的** "部署报告消息"页中，你将看到一个进度报告，后跟加载项已部署的确认。 阅读信息后，单击"下一 **步"。**
+8. 在 **出现的"** 部署报告消息"页中，你将看到一个进度报告，后跟一条确认加载项已部署的确认。 阅读信息后，单击"下一 **步"。**
 
    !["部署报告消息"页](../../media/deploy-report-message-page.png)
 
-9. 在出现的 **"宣布外接程序"** 页上，查看信息，然后单击"**关闭"。**
+9. 在出现的 **"宣布外接程序"** 页上，查看信息，然后单击"关闭 **"。**
 
    !["宣布外接程序"页](../../media/announce-add-in-page.png)
 
 ## <a name="learn-how-to-use-the-report-message-add-in"></a>了解如何使用"报告邮件"加载项
 
-分配了加载项的人将看到以下图标：
+分配了外接程序的人将看到以下图标：
 
 - 在 Outlook 中，图标如下所示：
 
@@ -150,7 +151,7 @@ Microsoft 使用这些提交来提高电子邮件保护技术的有效性。 例
 
 当通知用户有关报告邮件外接程序时，请包含一个指向"使用报告邮件 ["加载项的链接](https://support.microsoft.com/office/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)。
 
-## <a name="review-or-edit-settings-for-the-report-message-add-in"></a>查看或编辑"报告邮件"加载项的设置
+## <a name="review-or-edit-settings-for-the-report-message-add-in"></a>查看或编辑报告邮件外接程序的设置
 
 1. 在 Microsoft 365 管理中心中，转到"设置加载项"页面，如果看不到外接程序页面，请转到"集成应用"页面顶部的"设置集成应用外接程序" \>  <https://admin.microsoft.com/AdminPortal/Home#/Settings/AddIns>  \>  \> 链接。
 
@@ -158,7 +159,7 @@ Microsoft 使用这些提交来提高电子邮件保护技术的有效性。 例
 
 2. 查找并选择 **"报告邮件** "加载项。
 
-3. 在 **出现的"编辑报告** 消息"飞出控件中，根据组织情况查看和编辑设置。 完成时，请单击“保存”。
+3. 在 **出现的"编辑报告消息** "飞出中，根据组织情况查看和编辑设置。 完成后，单击“**保存**”。
 
    ![报告邮件加载项的设置](../../media/EditReportMessageAddIn.png)
 

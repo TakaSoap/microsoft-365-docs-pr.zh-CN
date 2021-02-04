@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 客户端应用支持：条件访问
+title: Microsoft 365 客户端应用支持：多重身份验证
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -7,34 +7,36 @@ audience: ITPro
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-search.appverid:
-- MET150
 ms.collection:
 - Strat_O365_Enterprise
 - M365-subscription-management
+search.appverid:
+- MET150
 f1.keywords:
 - NOCSH
-description: 本文将了解哪些平台、客户端和 PowerShell 模块支持 Microsoft 365 的条件访问。
+description: 本文将了解哪些平台、客户端和 PowerShell 模块支持 Microsoft 365 的多重身份验证。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 969dd9d712fe124458273144b3e7974e03ade9e0
+ms.openlocfilehash: fdec611fc595cdc15abb0fc1fb7a998f7a615ff7
 ms.sourcegitcommit: 8e696c084d097520209c864140af11aa055b979e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 02/03/2021
-ms.locfileid: "50097242"
+ms.locfileid: "50097455"
 ---
-# <a name="microsoft-365-client-app-support-conditional-access"></a>Microsoft 365 客户端应用支持：条件访问
+# <a name="microsoft-365-client-app-support-multi-factor-authentication"></a>Microsoft 365 客户端应用支持：多重身份验证
 
-在新式工作场所中，用户可以从任何位置使用各种设备和应用访问组织的资源。 因此，仅关注谁可以访问资源是不够的。 您的组织还必须支持在访问控制基础结构中访问资源以及如何访问资源。
+*此文章适用于 Microsoft 365 企业版和 Office 365 企业版。* 
 
-借助 Azure Active Directory 设备、位置和基于多重身份验证的条件访问，可以满足此新要求。 条件访问是 Azure Active Directory 的一项功能，使你能够强制执行对环境中应用的访问权限控制，所有这些操作都基于特定条件，并且从中心位置进行管理。
+若要为登录提供额外的安全级别，客户端可以配置为使用多重身份验证 (MFA) ，它同时使用用户密码和基于：
 
-详细了解 [Azure Active Directory 条件访问](/azure/active-directory/conditional-access/)。
+- 其拥有中无法轻松复制的项，例如智能手机。
+- 用户具有独特和独特特征的一些内容，例如其指纹、面部或其他生物识别属性
+
+了解有关多重 [身份验证的更多信息](/azure/active-directory/authentication/multi-factor-authentication)。
 
 ## <a name="supported-clients--platforms"></a>支持的客户端&平台
 
-以下客户端和平台的最新版本支持条件访问。 有关 Microsoft 365 中的平台支持详细信息，请参阅 [Microsoft 365](/microsoft-365/microsoft-365-and-office-resources)的系统要求。
-
+以下客户端和平台的最新版本支持多重身份验证。 有关 Microsoft 365 中的平台支持详细信息，请参阅 [Microsoft 365](/microsoft-365/microsoft-365-and-office-resources)的系统要求。
 <br>
 <br>
 
@@ -44,7 +46,7 @@ ms.locfileid: "50097242"
 | Access | 不适用 | 不适用 | 不适用 | 不适用 | ![受支持](../media/check-mark.png) |
 | Azure 管理员 | 不适用 | 不适用 | 不适用 | 不适用 | 不适用 |
 | 公司门户 | ![支持](../media/check-mark.png) | ![支持](../media/check-mark.png) | ![支持](../media/check-mark.png) | ![支持](../media/check-mark.png) | 不适用 |
-| Cortana | 计划 | 计划 | 不适用 | ![支持](../media/check-mark.png) | 不适用 |
+| Cortana | ![支持](../media/check-mark.png) | ![支持](../media/check-mark.png) | 不适用 | ![支持](../media/check-mark.png) | 不适用 |
 | Delve | ![支持](../media/check-mark.png) | ![支持](../media/check-mark.png) | 不适用 | 不适用 | 不适用 |
 | Microsoft Edge | ![支持](../media/check-mark.png) | ![支持](../media/check-mark.png) | 不适用 | 不适用 | ![受支持](../media/check-mark.png) |
 | Excel | ![支持](../media/check-mark.png) | ![支持](../media/check-mark.png) | ![支持](../media/check-mark.png) | ![支持](../media/check-mark.png) | ![支持](../media/check-mark.png) |
@@ -59,13 +61,14 @@ ms.locfileid: "50097242"
 | OneNote | ![支持](../media/check-mark.png) | ![支持](../media/check-mark.png) | ![支持](../media/check-mark.png) | ![支持](../media/check-mark.png) | ![支持](../media/check-mark.png) |
 | Outlook | ![支持](../media/check-mark.png) | ![支持](../media/check-mark.png) | ![支持](../media/check-mark.png) | ![支持](../media/check-mark.png) | ![支持](../media/check-mark.png) |
 | Planner | ![支持](../media/check-mark.png) | ![支持](../media/check-mark.png) | 不适用 | 不适用 | 不适用 |
-| Power Apps | ![支持](../media/check-mark.png) | ![支持](../media/check-mark.png) | 不适用 | 计划 | 不适用 |
+| Power Apps | ![支持](../media/check-mark.png) | ![支持](../media/check-mark.png) | 不适用 | ![支持](../media/check-mark.png) | 不适用 |
 | Power Automate | ![支持](../media/check-mark.png) | ![支持](../media/check-mark.png) | 不适用 | 不适用 | 不适用 |
 | Power BI | ![支持](../media/check-mark.png) | ![支持](../media/check-mark.png) | 不适用 | ![支持](../media/check-mark.png) | ![支持](../media/check-mark.png) |
 | PowerPoint | ![支持](../media/check-mark.png) | ![支持](../media/check-mark.png) | ![支持](../media/check-mark.png) | ![支持](../media/check-mark.png) | ![支持](../media/check-mark.png) |
 | Project | 不适用 | 不适用 | 不适用 | 不适用 | ![受支持](../media/check-mark.png) |
 | Publisher | 不适用 | 不适用 | 不适用 | 不适用 | ![受支持](../media/check-mark.png) |
-| Skype for Business | ![支持](../media/check-mark.png) | ![支持](../media/check-mark.png) | 不适用 | 不适用 | 不适用 ||
+| Skype for Business | ![支持](../media/check-mark.png) | ![支持](../media/check-mark.png) | ![支持](../media/check-mark.png) | 不适用 | ![受支持](../media/check-mark.png) |
+| Skype for Business 管理员 | 不适用 | 不适用 | 不适用 | 不适用 | ![受支持](../media/check-mark.png) |
 | SharePoint | ![支持](../media/check-mark.png) | ![支持](../media/check-mark.png) | 不适用 | 不适用 | 不适用 |
 | SharePoint Online 管理员 | 不适用 | 不适用 | 不适用 | 不适用 | ![受支持](../media/check-mark.png) |
 | 便笺 | 不适用 | 不适用 | 不适用 | ![支持](../media/check-mark.png) | 不适用 |

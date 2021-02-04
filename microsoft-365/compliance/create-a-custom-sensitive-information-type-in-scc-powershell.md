@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解如何在合规中心中创建并导入策略的自定义敏感信息类型。
-ms.openlocfilehash: 31badcb2ab0102584e3addf3ed4d1549afe78525
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: ab96a3928105f612ab97bc8ca3a0acc3613082c3
+ms.sourcegitcommit: d354727303d9574991b5a0fd298d2c9414e19f6c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49929418"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "50080677"
 ---
 # <a name="create-a-custom-sensitive-information-type-using-powershell"></a>使用 PowerShell 创建自定义敏感信息类型
 
@@ -161,7 +161,7 @@ ms.locfileid: "49929418"
 ### <a name="name-the-entity-and-generate-its-guid"></a>命名实体并生成 GUID
 
 1. 在选择的 XML 编辑器中，添加规则和实体元素。
-2. 添加一个包含自定义实体名称的注释 - 在本示例中实体为员工 ID。 稍后将实体名称添加到本地化的字符串部分，创建策略时，会在 UI 中显示该名称。
+2. 添加一个包含自定义实体名称的注释 - 在本示例中为员工 ID。 稍后将实体名称添加到本地化的字符串部分，创建策略时，会在 UI 中显示该名称。
 3. 生成实体的 GUID。 有几种方法可生成 GUID，可在 PowerShell 中通过键入 **[guid]::NewGuid()** 轻松生成。 稍后还要将实体 GUID 添加到本地化的字符串部分。
   
 ![显示 Rule 和 Entity 元素的 XML 标记](../media/c46c0209-0947-44e0-ac3a-8fd5209a81aa.png)
@@ -192,7 +192,7 @@ ms.locfileid: "49929418"
   
 ### <a name="keywords-keyword-group-and-term-elements-matchstyle-and-casesensitive-attributes"></a>关键字 [Keyword、Group 和 Term 元素，matchStyle 和 caseSensitive 特性]
 
-通常建议在标识敏感信息（如员工 ID）时，要求将关键字用作确证性证据。例如，除了匹配九位数外，还建议查找“卡”、“徽章”或“ID”等字词。为此，请使用 Keyword 元素。Keyword 元素有 id 特性，可供多个模式或实体中的多个 Match 元素引用。
+在识别员工 ID 等敏感信息时，通常希望要求将关键字作为补强证据。例如，除匹配九位数字外，还可能希望查找“卡”、“徽章”或“ID”等字眼。为此，可使用 Keyword 元素。Keyword 元素具有一个 ID 属性，可由多个模式或实体中的多个 Match 元素引用。
   
 关键字以 Term 元素列表的形式包含在 Group 元素中。Group 元素包含有以下两个可取值的 matchStyle 特性：
   
@@ -206,7 +206,7 @@ ms.locfileid: "49929418"
   
 ### <a name="regular-expressions-regex-element"></a>正则表达式 [Regex 元素]
 
-在本示例中，“员工 ID”实体已使用 IdMatch 元素为模式引用正则表达式，以标识两边是空格的九位数。此外，模式还可使用 Match 元素来引用其他 Regex 元素，以标识确证性证据，如采用美国邮政编码格式的五位数或九位数。
+在此示例中，员工 ID 实体已使用 IdMatch 元素引用模式（由空格包围的九位数字）的正则表达式。此外，模式还可使用 Match 元素再引用一个 Regex 元素，以识别补强证据，例如格式为美国邮政编码格式的五位或九位数字。
   
 ### <a name="additional-patterns-such-as-dates-or-addresses-built-in-functions"></a>日期或地址等其他模式 [内置函数]
 
@@ -220,7 +220,7 @@ ms.locfileid: "49929418"
   
 ## <a name="different-combinations-of-evidence-any-element-minmatches-and-maxmatches-attributes"></a>不同证据组合 [Any 元素、minMatches 和 maxMatches 特性]
 
-在 Pattern 元素中，所有 IdMatch 和 Match 元素都是通过隐式 AND 运算符进行联接。也就是说，必须符合所有 IdMatch 和 Match 元素，才算符合模式。不过，可使用 Any 元素对 Match 元素进行分组，从而创建更灵活的匹配逻辑。例如，可使用 Any 元素匹配所有或确切的一部分 Match 子元素，或不匹配任何 Match 子元素。
+在 Pattern 元素中，所有 IdMatch 和 Match 元素均通过隐式 AND 运算符进行联接。也就是说，必须符合所有 IdMatch 和 Match 元素，才算符合模式。不过，可使用 Any 元素对 Match 元素进行分组，从而创建更灵活的匹配逻辑。例如，可使用 Any 元素匹配所有或确切的一部分 Match 子元素，或不匹配任何 Match 子元素。
   
 Any 元素有可选的 minMatches 和 maxMatches 特性，可用于定义必须符合多少个 Match 子元素才算与模式匹配。请注意，这些特性定义的是必须符合的 Match 元素数量，而不是为与模式匹配而找到的证据实例数。若要定义为特定匹配找到的最小实例数（如列表中的两个关键字），请使用 Match 元素的 minCount 特性（见上文）。
   
@@ -238,7 +238,7 @@ Any 元素有可选的 minMatches 和 maxMatches 特性，可用于定义必须�
     
 ### <a name="match-an-exact-subset-of-any-children-match-elements"></a>匹配确切的一部分 Match 子元素
 
-若要规定必须符合确切数量的 Match 元素，可以将 minMatches 和 maxMatches 设置为相同值。仅当找到确切的一个日期或关键字时，才符合以下 Any 元素。如果找到多个，便与模式不匹配。
+若要规定必须符合确切数量的 Match 元素，可以将 minMatches 和 maxMatches 设置为相同值。仅当找到确切的一个日期或关键字时，才符合以下 Any 元素。如果找到多个，则与模式不匹配。
 
 ```xml
 <Any minMatches="1" maxMatches="1" >
@@ -428,6 +428,14 @@ Version 元素也很重要。当你首次上传规则包时，Microsoft 365 会�
 - 组中不得有无限重复符（如“\*”或“+”）。
     
   例如，“(xx)\*”和“(xx)+”无法通过验证。
+  
+- 关键字最多可包含 50 个字符。  如果组中的关键字超过此字符数，建议将术语组创建为[关键字字典](https://docs.microsoft.com/microsoft-365/compliance/create-a-keyword-dictionary)，并在 XML 结构中引用关键字字典的 GUID 作为文件中的 Match 或 idMatch 实体的一部分。
+
+- 每个自定义敏感信息类型最多可以包含 2048 个关键字。
+
+- 使用 PowerShell Cmdlet 时，最多可返回约 1 MB 的反序列化数据。   这会影响 XML 文件的大小。 将所上传文件的建议上限设置为 512 MB，以确保结果一致，处理时不会出错。
+
+- XML 结构不需要格式设置字符，例如空格、制表符或回车符/行源条目。  在针对上传空间进行优化时，请注意这一点。
     
 如果自定义敏感信息类型存在可能会影响性能的问题，便无法上传，且可能会导致以下错误消息之一出现：
   

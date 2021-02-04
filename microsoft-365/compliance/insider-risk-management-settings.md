@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: dd72ded935b9108e4b2699f5ddb6d320f5c32e69
-ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
+ms.openlocfilehash: ba851a7ad6243b9b3b6bc69432bd2b3036d6b269
+ms.sourcegitcommit: c0cfb9b354db56fdd329aec2a89a9b2cf160c4b0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49841253"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "50094763"
 ---
 # <a name="get-started-with-insider-risk-management-settings"></a>内部风险管理设置入门
 
@@ -105,7 +105,7 @@ ms.locfileid: "49841253"
 3. 选择“**设备管理**”，以打开“**设备**”列表。 在载入设备之前，此列表将为空。
 4. 选择“**载入**”以开始载入流程。
 5. 从部署方法列表中选择你想要部署到这些更多设备的方式，然后 **下载程序包**。 
-6. 按照[适用于 Windows 10 计算机的载入工具和方法](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints)中的相应程序进行操作。 此链接将你进入登录页面，可以在其中访问与步骤 5 中所选的部署包匹配的 Microsoft Defender for Endpoint 过程：
+6. 按照[适用于 Windows 10 计算机的载入工具和方法](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints)中的相应程序进行操作。 此链接会将你定位到登录页面，你可以在其中访问与在步骤 5 中选择的部署程序包相匹配的 Microsoft Defender for Endpoint 过程：
     - 使用组策略载入 Windows 10 计算机
     - 使用 Microsoft Endpoint Configuration Manager 载入 Windows 10 计算机
     - 使用移动设备管理工具载入 Windows 10 计算机
@@ -127,7 +127,7 @@ ms.locfileid: "49841253"
 3. 选择“**设备管理**”，以打开“**设备**”列表。 你应该会看到已经向 Microsoft Defender for Endpoint 报告的设备列表。
 4. 如果需要 **载入** 更多设备，请选择"载入"。
 5. 从部署方法列表中选择你想要部署到这些更多 **设备的方式，** 然后 **下载程序包**。
-6. 按照[适用于 Windows 10 计算机的载入工具和方法](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints)中的相应程序进行操作。 此链接将你进入登录页面，可以在其中访问与步骤 5 中所选的部署包匹配的 Microsoft Defender for Endpoint 过程：
+6. 按照[适用于 Windows 10 计算机的载入工具和方法](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints)中的相应程序进行操作。 此链接会将你定位到登录页面，你可以在其中访问与在步骤 5 中选择的部署程序包相匹配的 Microsoft Defender for Endpoint 过程：
     - 使用组策略载入 Windows 10 计算机
     - 使用 Microsoft Endpoint Configuration Manager 载入 Windows 10 计算机
     - 使用移动设备管理工具载入 Windows 10 计算机
@@ -165,9 +165,7 @@ ms.locfileid: "49841253"
 
 ## <a name="intelligent-detections"></a>智能检测
 
-智能检测设置有助于优化如何针对警报处理风险活动的检测。 在某些情况下，您可能需要定义要忽略的文件类型，或者希望对文件强制执行检测级别以帮助定义警报的最低条。 使用冒犯性语言策略时，可能需要增加或降低检测敏感度，以控制报告的策略匹配数量。 使用这些设置可控制总体警报量、文件类型排除、文件卷限制和冒犯性语言检测敏感度。
-
-![内部风险管理智能检测设置](../media/insider-risk-settings-detections.png)
+智能检测设置有助于优化如何针对警报处理风险活动的检测。 在某些情况下，您可能需要定义要忽略的文件类型，或者希望对文件强制执行检测级别以帮助定义警报的最低条。 使用这些设置可控制整体警报量、文件类型排除项和文件卷限制。
 
 ### <a name="anomaly-detections"></a>异常检测
 
@@ -175,17 +173,6 @@ ms.locfileid: "49841253"
 
 - **文件类型排除**：若要从所有内部风险管理策略匹配中排除特定文件类型，请输入以逗号分隔的文件类型扩展名。 例如，若要从策略匹配中排除某些类型的音乐文件，您可以在文件类型排除字段中输入 *aac，mp3，wav，wma。*  所有内部风险管理策略将忽略具有这些扩展名的文件。
 - **文件卷截止限制**：若要在内部风险策略中报告活动警报之前定义最低文件级别，请输入文件数。 例如，如果不希望在用户下载 10 个或更少文件时生成内部风险警报，则输入"10"，即使策略认为此活动异常。
-
-### <a name="offensive-language-detections"></a>冒犯性语言检测
-
->[!IMPORTANT]
->从 2020 年 10 月 16 日起，将无法再使用此模板创建策略。 使用此模板的任何活动策略都将有效，直到 2021 年 1 月永久删除。 我们弃用支持此模板的冒犯性语言内置分类器，因为它一直产生大量误报。 若要解决冒犯性语言的风险问题，我们建议使用 Microsoft 365 [通信合规性](communication-compliance.md) 策略。 有关内置分类器的信息，请参阅可 [训练分类器入门](classifier-get-started-with.md)。
-
-若要调整在电子邮件模板中使用冒犯性语言的策略的冒犯性语言分类器敏感度，请选择以下设置之一：
-
-- **低**：检测冒犯性语言和情绪范围最广的最低敏感度级别。 冒犯性语言匹配误报的可能性提高。
-- **中等**：中等级别敏感度级别，具有用于检测冒犯性语言和情绪的平衡范围。 冒犯性语言匹配误报的概率是平均值。
-- **高**：检测冒犯性语言和情绪范围较窄的最高敏感度级别。 冒犯性语言匹配误报的可能性较低。
 
 ### <a name="alert-volume"></a>警报量
 
@@ -249,7 +236,7 @@ ms.locfileid: "49841253"
 | 名称 | 生成警报的内部风险管理策略的策略名称。 |
 | PolicyId | 触发警报的内部风险管理策略的 GUID。 |
 | Severity | 警报的严重性。 值为 *"高**"、"中"* 或"*低"。* |
-| Source | 警报的来源。 值为 *Office 365 安全&合规性*。 |
+| 源 | 警报的来源。 值为 *Office 365 安全&合规性*。 |
 | 状态 | 警报的状态。 值为"内部 (风险) 中的活动 (审核、*调查 (在* 内部风险中确认的) 、解决的 *(**在* 内部风险) 中已解决、 (在内部风险中) 。  |
 | 版本 | 安全性和合规性警报架构的版本。 |
 

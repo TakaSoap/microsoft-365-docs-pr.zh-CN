@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: 深入了解 Microsoft SharePoint Syntex 中的说明类型
-ms.openlocfilehash: 9a65c5de5321ee623a3d1a1e4260c0bcb2ad331e
-ms.sourcegitcommit: 162c01dfaa2fdb3225ce4c24964c1065ce22ed5d
+ms.openlocfilehash: 2c2997fd165339cc43f7f007050f343794021a23
+ms.sourcegitcommit: d354727303d9574991b5a0fd298d2c9414e19f6c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2021
-ms.locfileid: "49975951"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "50080546"
 ---
 # <a name="introduction-to-explanation-types"></a>说明类型简介
 
@@ -123,6 +123,31 @@ Redmond, WA 98034<br>
 配置邻近度设置，以便拥有 0 到 3 的范围。
 
    ![邻近度示例](../media/content-understanding/proximity-example.png)</br>
+
+
+## <a name="configure-where-phrases-occur-in-the-document"></a>配置短语在文档中出现的位置
+
+创建说明时，默认情况下会在整个文档中搜索要提取的短语。 但是，可以使用“<b>这些短语出现的位置</b>”高级设置来帮助隔离文档中出现短语的特定位置。 这适用于文档的其他位置可能出现短语的类似实例，而你希望确保选择正确短语的情况。 以我们的医疗转诊文档为例，文档的第一段中总是会提到 **转诊医生**。 通过“<b>这些短语出现的位置</b>”设置，在本示例中，你可以配置说明以仅在文档开头或可能出现该短语的任何其他位置搜索该短语。
+
+   ![“这些短语出现的位置”设置](../media/content-understanding/phrase-location.png)</br>
+
+可以为此设置选择以下选项：
+
+- 文件中的任何位置：将在整个文档中搜索短语。
+- 文件开头：从文档开头开始搜索短语。</br> 
+   ![文件开头](../media/content-understanding/beginning-of-file.png)</br>
+在查看器中，可以手动调整选择框以包括出现短语的位置。 <b>结束位置</b>值将更新以显示所选区域包含的令牌数。 请注意，可以更新“结束位置”值并调整所选区域。</br>
+   ![文件开头位置框](../media/content-understanding/beginning-box.png)</br>
+
+- 文件末尾：从文档末尾开始搜索短语。</br> 
+   ![文件末尾](../media/content-understanding/end-of-file.png)</br>
+在查看器中，可以手动调整选择框以包括出现短语的位置。 <b>开始位置</b>值将更新以显示所选区域包含的令牌数。 请注意，可以更新“开始位置”值并调整所选区域。</br> 
+   ![文件末尾位置框](../media/content-understanding/end-box.png)</br>
+- 自定义范围：在文档内的指定范围内搜索短语位置。</br> 
+   ![自定义范围](../media/content-understanding/custom-file.png)</br>
+在查看器中，可以手动调整选择框以包括出现短语的位置。 对于此设置，需要选择一个<b>开始</b>和<b>结束</b>位置。 这些值表示从文档开头开始的令牌数。 尽管可以手动输入这些值，但在查看器中手动调整选择框更容易。</br> 
+   
+
 
 ## <a name="use-explanation-templates"></a>使用说明模板
 

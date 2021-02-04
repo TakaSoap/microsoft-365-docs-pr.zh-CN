@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 所有 Microsoft 信息保护解决方案的相关要求：创建、配置和发布敏感度标签以对组织的文档和电子邮件进行分类和保护。
-ms.openlocfilehash: 60865b40582416ac2ac963c4a8c68353b06fc6d4
-ms.sourcegitcommit: 8d28bce1a3445878b066864e766cf52cb83becd1
+ms.openlocfilehash: b7943259d3a20cbf4fd6d8b0b57ca7c027e74d3f
+ms.sourcegitcommit: 4f40f5be140a23bacff6fd7b85536de14fc7d499
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "50071287"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "50084653"
 ---
 # <a name="create-and-configure-sensitivity-labels-and-their-policies"></a>创建和配置敏感度标签及其策略
 
@@ -186,7 +186,7 @@ Set-Label -Identity $Label -LocaleSettings (ConvertTo-Json $DisplayNameLocaleSet
 
 此按钮将启动“**创建策略**”向导，可用于编辑所包含的标签和标签设置。 完成向导后，所有更改都将自动复制到所选用户和服务。
 
-使用 Windows、macOS、iOS 和 Android 的内置标签时，用户会在 4 小时内在 Office 应用中看到新的标签，而在 Office web 版上 1 小时内就可以看到新标签。 但是，请留出长达 24 小时的时间将更改复制到所有应用和服务。
+使用 Windows、macOS、iOS 和 Android 上 Office 应用的内置标签时，用户会在 4 小时内看到新标签，而在 Office web 版上 1 小时内就可以看到新标签。 但是，请留出长达 24 小时的时间将更改复制到所有应用和服务。
 
 ### <a name="additional-label-policy-settings-with-security--compliance-center-powershell"></a>附加标签策略设置在安全与合规中心 PowerShell 中可用
 

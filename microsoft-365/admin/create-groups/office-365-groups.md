@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 了解 Microsoft 365 组。
-ms.openlocfilehash: b3bc0c30f4ac292da7af46678fc742854984db12
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 5d5c15c13d46738ac9de701b5a39f47274b9f1e5
+ms.sourcegitcommit: c0cfb9b354db56fdd329aec2a89a9b2cf160c4b0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49925346"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "50094729"
 ---
 # <a name="overview-of-microsoft-365-groups-for-administrators"></a>面向管理员的 Microsoft 365 组概述
 
@@ -62,9 +62,9 @@ Microsoft 365 组是推动 Microsoft 365 所有团队合作的基础成员身份
 - [管理对组的来宾访问](manage-guest-access-in-groups.md)
 - [在删除 (](restore-deleted-group.md) 30 天内恢复已删除) 
 
-如果你希望采用更自动化的方式来管理 Microsoft 365 组的生命周期，可以使用过期策略以特定时间间隔使组过期。 组的所有者将在组过期前 30、15 和 1 天收到一封电子邮件，允许他们根据需要续订组。 请参阅 [：Microsoft 365 组过期策略](office-365-groups-expiration-policy.md)。
+如果你希望采用更自动化的方式来管理 Microsoft 365 组的生命周期，可以使用过期策略以特定时间间隔使组过期。 组的所有者将在组到期前 30、15 和 1 天收到一封电子邮件，允许他们根据需要续订组。 请参阅 [：Microsoft 365 组过期策略](office-365-groups-expiration-policy.md)。
 
-可以从 Microsoft 365 管理中心或 [PowerShell 管理组](https://docs.microsoft.com/microsoft-365/enterprise/manage-microsoft-365-groups-with-powershel)。
+可以从 Microsoft 365 管理中心或 [PowerShell 管理组](https://docs.microsoft.com/microsoft-365/enterprise/manage-microsoft-365-groups-with-powershell)。
 
 如果您具有许多用户（如大型企业或企业中的用户），则您可能有许多用户出于各种目的创建组。 我们强烈建议你查看 [Microsoft 365](plan-for-groups-governance.md) 组中管理规划的最佳实践。
 
@@ -103,7 +103,7 @@ Microsoft 365 组是推动 Microsoft 365 所有团队合作的基础成员身份
 
 ## <a name="which-microsoft-365-plans-include-groups"></a>哪些 Microsoft 365 计划包含组？
 
-任何具有 Exchange Online 和 SharePoint Online 的 Microsoft 365 订阅都将支持组。 这包括商业基础版和商业高级版计划，以及企业版 E1、E3 和 E5 计划。 组负责授权创建组 (也称为组"组织者"的组) 。 只要组织者具有希望组具有的任何功能的正确许可证，该许可证就会传达到组。
+任何具有 Exchange Online 和 SharePoint Online 的 Microsoft 365 订阅都将支持组。 这包括商业基础版和商业高级版计划，以及企业版 E1、E3 和 E5 计划。 组负责授权创建组 (也称为组"组织者"的组) 。 只要组织者具有希望组具有的任何功能的正确许可证，该许可证就会传达给组。
 
 > [!NOTE]
 > 有关 Microsoft 365 服务系列和计划的更多详细信息，请参阅 [Microsoft 365 计划选项](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-plan-options)。

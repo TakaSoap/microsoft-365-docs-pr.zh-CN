@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: 了解如何使用基于精确数据匹配的分类来创建自定义敏感信息类型。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f9b905e73fe471cc034eae42726a5a86d91a359a
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: d3d94d585ca0a0e88fb442e658d57bf000ce49bb
+ms.sourcegitcommit: d354727303d9574991b5a0fd298d2c9414e19f6c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49928816"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "50080513"
 ---
 # <a name="create-custom-sensitive-information-types-with-exact-data-match-based-classification"></a>使用基于精确数据匹配的分类创建自定义敏感信息类型
 
@@ -54,8 +54,8 @@ ms.locfileid: "49928816"
 > - 繁体中文
 > - 韩语
 > - 日语
-
->此支持适用于敏感信息类型。 有关详细信息，请参阅[双字节字符集的信息保护支持发行说明（预览版）](mip-dbcs-relnotes.md)。
+> 
+> 此支持适用于敏感信息类型。 有关详细信息，请参阅[双字节字符集的信息保护支持发行说明（预览版）](mip-dbcs-relnotes.md)。
 
 ## <a name="required-licenses-and-permissions"></a>所需的许可证和权限
 
@@ -104,7 +104,7 @@ ms.locfileid: "49928816"
 
 2. 在 .csv 文件中构造敏感数据，使第一行包含用于基于 EDM 的分类的字段名称。 在 .csv 文件中，你可能拥有“ssn”、“生日”、“名字”、“姓氏”等字段名称。 列标题名称不能包含空格或下划线。 例如，本文中使用的示例 .csv 文件名为 *PatientRecords.csv*，其中包含 *PatientID*、*MRN*、*LastName*、*FirstName* 和 *SSN* 等列。
 
-3. 注意敏感数据字段的格式。 特别要注意的是，内容中可能包含逗号的字段（比如，包含”Seattle,WA”值的街道地址）在用 EDM 工具分析时，可能会被分析为两个单独的字段。 为了避免这种情况，你需要确保在敏感数据表中，用单引号或双引号将这些字段包围在内。 如果带逗号的字段同时也包含空格，你需要创建一个自定义的敏感信息类型，且它需要与对应的格式相匹配（比如，一个包含多字的字符串，带有逗号和空格）来确保在扫描文件时该字符串正确匹配。
+3. 注意敏感数据字段的格式。 特别要注意的是，内容中可能包含逗号的字段（比如，包含 “Seattle,WA” 值的街道地址）在用 EDM 工具分析时，可能会被分析为两个单独的字段。 为了避免这种情况，你需要确保在敏感数据表中，用单引号或双引号将这些字段包围在内。 如果带逗号的字段同时也包含空格，你将需要创建一个自定义的敏感信息类型，且它需要匹配对应的格式（例如，一个带有逗号和空格的多词字符串）来确保在扫描文件时该字符串正确匹配。
 
 #### <a name="define-the-schema-for-your-database-of-sensitive-information"></a>定义敏感信息数据库的架构
 
@@ -146,7 +146,7 @@ ms.locfileid: "49928816"
 
 当在架构定义中包括 ***caseInsensitive** _ 字段并将其设置为值 `true` 时，EDM 不会根据 `PatientID` 字段的大小写差异排除项目。 因此，EDM 会将 `PatientID` _ *FOO-1234** 和 **fOo-1234** 视为完全相同。
 
-当你包括 **_ignoredDelimiters_*_ 和支持的字符时，EDM 将忽略 `PatientID` 中的这些字符。因此，EDM 会将 `PatientID` _* FOO-1234** 和 `PatientID` **FOO#1234** 视为完全相同。 `ignoredDelimiters` 标志支持任何非字母数字字符，以下是一些示例：
+如果包括带支持字符和 ***ignoredDelimiters** _ 字段，EDM 将忽略 `PatientID` 中的这些字符。 因此，EDM 会将 `PatientID` _ *FOO-1234** 和 `PatientID` **FOO#1234** 视为完全相同。 `ignoredDelimiters` 标志支持任何非字母数字字符，以下是一些示例：
 - \.
 - \-
 - \/
@@ -210,7 +210,7 @@ ms.locfileid: "49928816"
 
       - **idMatch**：此字段指向 EDM 的主要元素。
         - 匹配：指定要在精确查找中使用的字段。 在数据存储的 EDM 架构中提供可搜索的字段名称。
-        - 分类：此字段指定触发 EDM 查找的敏感类型匹配。 可提供现有内置或自定义分类的名称或 GUID。
+        - 分类：此字段指定触发 EDM 查找的敏感类型匹配。 可提供现有内建或自定义敏感信息类型的名称或 GUID。 请注意，与所提供敏感信息类型相匹配的任何字符串将进行哈希处理，并与敏感信息表中的每个条目相比较。 为避免导致性能问题，如果将自定义敏感信息类型用作 EDM 中的分类元素，请通过添加辅助关键词或在自定义分类敏感信息类型定义中包含格式的方法，避免使用与较大百分比内容（如“任何数字”或“任何五个字母的单词”）相匹配的类型。 
 
       - **匹配：** 此字段指向邻近 idMatch 找到的其他证据。
         - 匹配：在数据存储的 EDM 架构中提供任何字段名称。
@@ -369,7 +369,7 @@ ms.locfileid: "49928816"
 如果不希望公开明文敏感数据文件，可在计算机的安全位置上为其创建哈希，然后将哈希文件和随机混淆值文件复制到可直接连接到 Microsoft 365 租户的计算机以进行上传。 在这种情况下，需要在两台计算机上都有 EDMUploadAgent。
 
 > [!IMPORTANT]
-> 如使用精确数据匹配架构和敏感信息类型向导创建架构和模式文件，您 **_必须_* 为此过程下载架构。
+> 如使用精确数据匹配架构和敏感信息类型向导创建架构和模式文件，您 ***必须** 为此过程下载架构。
 
 #### <a name="prerequisites"></a>先决条件
 
@@ -380,11 +380,11 @@ ms.locfileid: "49928816"
     - 我们示例中使用的 csv 格式的敏感项目文件 **PatientRecords**
     -  以及输出的哈希和随机混淆值文件
     - 来自 **edm .xml** 文件的数据存储名称，在本示例中为 `PatientRecords`
-- 如果使用 [精确数据匹配和敏感信息类型向导](sit-edm-wizard.md)，您 **_必须_* 将其下载。
+- 如果使用 [精确数据匹配架构和敏感信息类型向导](sit-edm-wizard.md)，您 ***必须*** 将其下载。
 
 #### <a name="set-up-the-security-group-and-user-account"></a>设置安全组和用户帐户
 
-1. 作为全局管理员，使用相应的 [订阅链接](#portal-links-for-your-subscription) 转到管理中心并 [创建安全组](https://docs.microsoft.com/office365/admin/email/create-edit-or-delete-a-security-group?view=o365-worldwide)，名为 EDM\_DataUploaders。
+1. 作为全局管理员，使用相应的 [订阅链接](#portal-links-for-your-subscription)转到管理中心并 [创建安全组](https://docs.microsoft.com/office365/admin/email/create-edit-or-delete-a-security-group?view=o365-worldwide)，名为 **EDM\_DataUploaders**。
 
 2. 将一个或多个用户添加到 **EDM\_DataUploaders** 安全组。 （这些用户将管理敏感信息的数据库。）
 
@@ -415,13 +415,13 @@ ms.locfileid: "49928816"
 
 2. 下载并将适合你的订阅的 [EDM 上传代理](#links-to-edm-upload-agent-by-subscription-type)安装到步骤 1 创建的目录中。
 
-> [!NOTE]
-> 上述链接中的 EDMUploadAgent 已更新，可自动将随机混淆值添加到哈希数据。 或者，你可以提供自己的随机混淆值。 使用此版本后，你将不能使用 EDMUploadAgent 的先前版本。
->
-> 每天只能使用 EDMUploadAgent 上传数据到任何给定的数据存储空间两次。
+   > [!NOTE]
+   > 上述链接中的 EDMUploadAgent 已更新，可自动将随机混淆值添加到哈希数据。 或者，你可以提供自己的随机混淆值。 使用此版本后，你将不能使用 EDMUploadAgent 的先前版本。
+   >
+   > 每天只能使用 EDMUploadAgent 上传数据到任何给定的数据存储空间两次。
 
-> [!TIP]
-> 要获取受支持命令参数的列表，请运行无代理参数。 例如“EdmUploadAgent.exe”。
+   > [!TIP]
+   > 要获取受支持命令参数的列表，请运行无代理参数。 例如“EdmUploadAgent.exe”。
 
 2. 授权 “EDM 上传代理”，打开命令提示符窗口（以管理员身份），切换到 **C:\EDM\Data** 目录，然后运行以下命令：
 
@@ -429,25 +429,25 @@ ms.locfileid: "49928816"
 
 3. 使用添加到 EDM_DataUploaders 安全组的 Microsoft 365 工作或学校帐户登录。 将从用户帐户提取你的租户信息以建立连接。
 
-可选：如使用精确数据匹配架构和敏感信息类型向导创建架构和模式文件，请在命令提示符窗口中运行以下命令：
+   可选：如使用精确数据匹配架构和敏感信息类型向导创建架构和模式文件，请在命令提示符窗口中运行以下命令：
 
-`EdmUploadAgent.exe /SaveSchema /DataStoreName <schema name> /OutputDir <path to output folder>`
+   `EdmUploadAgent.exe /SaveSchema /DataStoreName <schema name> /OutputDir <path to output folder>`
 
 4. 若要为敏感数据创建哈希并上传，请在命令提示符窗口中运行以下命令：
 
-`EdmUploadAgent.exe /UploadData /DataStoreName [DS Name] /DataFile [data file] /HashLocation [hash file location] /Schema [Schema file]`
+   `EdmUploadAgent.exe /UploadData /DataStoreName [DS Name] /DataFile [data file] /HashLocation [hash file location] /Schema [Schema file]`
 
-示例：**EdmUploadAgent.exe /UploadData /DataStoreName PatientRecords /DataFile C:\Edm\Hash\PatientRecords.csv /HashLocation C:\Edm\Hash /Schema edm.xml**
+   示例：**EdmUploadAgent.exe /UploadData /DataStoreName PatientRecords /DataFile C:\Edm\Hash\PatientRecords.csv /HashLocation C:\Edm\Hash /Schema edm.xml**
 
-这会自动将随机生成的随机混淆值添加到哈希，以实现更高的安全性。 或者，如果你想要使用自己的随机混淆值，请将 **/Salt <saltvalue>** 值添加到命令中。 该值的长度必须为 64 个字符，并且只能包含 a-z 的字符和 0-9 的数字。
+   这会自动将随机生成的随机混淆值添加到哈希，以实现更高的安全性。 或者，如果你想要使用自己的随机混淆值，请将 **/Salt <saltvalue>** 值添加到命令中。 该值的长度必须为 64 个字符，并且只能包含 a-z 的字符和 0-9 的数字。
 
 5. 运行以下命令，检查“上传”状态：
 
-`EdmUploadAgent.exe /GetSession /DataStoreName \<DataStoreName\>`
+   `EdmUploadAgent.exe /GetSession /DataStoreName \<DataStoreName\>`
 
-示例：**EdmUploadAgent/GetSession/DataStoreName PatientRecords**
+   示例：**EdmUploadAgent/GetSession/DataStoreName PatientRecords**
 
-在 **ProcessingInProgress** 中查找状态。 每隔几分钟再次检查，直到状态更改为“**已完成**”。 在状态为已完成后，即可使用 EDM 数据。
+   在 **ProcessingInProgress** 中查找状态。 每隔几分钟再次检查，直到状态更改为“**已完成**”。 在状态为已完成后，即可使用 EDM 数据。
 
 #### <a name="separate-hash-and-upload"></a>将哈希与上传分开操作
 
@@ -459,39 +459,38 @@ ms.locfileid: "49928816"
 
 1. 在命令提示符窗口中运行以下命令：
 
-`EdmUploadAgent.exe /CreateHash /DataFile [data file] /HashLocation [hash file location] /Schema [Schema file] >`
+   `EdmUploadAgent.exe /CreateHash /DataFile [data file] /HashLocation [hash file location] /Schema [Schema file] >`
 
-例如：
+   例如：
 
-> **EdmUploadAgent.exe /CreateHash /DataFile C:\Edm\Data\PatientRecords.csv /HashLocation C:\Edm\Hash /Schema edm.xml**
+   > **EdmUploadAgent.exe /CreateHash /DataFile C:\Edm\Data\PatientRecords.csv /HashLocation C:\Edm\Hash /Schema edm.xml**
 
-如果没有指定“**/Salt <saltvalue>**”选项，这将会输出具有以下扩展名的哈希文件和随机混淆值文件：
-- .EdmHash
-- .EdmSalt
+   如果没有指定“**/Salt <saltvalue>**”选项，这将会输出具有以下扩展名的哈希文件和随机混淆值文件：
+   - .EdmHash
+   - .EdmSalt
 
 2. 通过安全方式将这些文件复制到计算机，该计算机用于向租户上传敏感项目 csv 文件 (PatientRecords)。
 
-若要上传哈希数据，请在 Windows 命令提示符中运行以下命令：
+   若要上传哈希数据，请在 Windows 命令提示符中运行以下命令：
 
-`EdmUploadAgent.exe /UploadHash /DataStoreName \<DataStoreName\> /HashFile \<HashedSourceFilePath\>`
+   `EdmUploadAgent.exe /UploadHash /DataStoreName \<DataStoreName\> /HashFile \<HashedSourceFilePath\>`
 
-例如：
+   例如：
 
-> **EdmUploadAgent.exe /UploadHash /DataStoreName PatientRecords /HashFile C:\\Edm\\Hash\\PatientRecords.EdmHash**
-
-
-若要验证是否已上传敏感数据，请在“命令提示符”窗口中运行以下命令：
+   > **EdmUploadAgent.exe /UploadHash /DataStoreName PatientRecords /HashFile C:\\Edm\\Hash\\PatientRecords.EdmHash**
 
 
-`EdmUploadAgent.exe /GetDataStore`
+   若要验证是否已上传敏感数据，请在“命令提示符”窗口中运行以下命令：
 
-你将看到数据存储区列表以及上次更新时间。
+   `EdmUploadAgent.exe /GetDataStore`
 
-如果要查看所有数据上载到特定存储的信息，请在 Windows 命令提示符下运行以下命令：
+   你将看到数据存储区列表以及上次更新时间。
 
-`EdmUploadAgent.exe /GetSession /DataStoreName <DataStoreName>`
+   如果要查看所有数据上载到特定存储的信息，请在 Windows 命令提示符下运行以下命令：
 
-继续设置[刷新敏感信息数据库](#refreshing-your-sensitive-information-database)的流程和计划。
+   `EdmUploadAgent.exe /GetSession /DataStoreName <DataStoreName>`
+
+   继续设置[刷新敏感信息数据库](#refreshing-your-sensitive-information-database)的流程和计划。
 
 此时，你已准备好将基于 EDM 的分类与 Microsoft 云服务一起使用。 例如，你可以[使用基于 EDM 的分类设置 DLP 策略](#to-create-a-dlp-policy-with-edm)。
 
@@ -654,4 +653,3 @@ Register-ScheduledTask -TaskName $taskName -InputObject $scheduledTask -User $us
 - [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security)
 - [New-DlpEdmSchema](https://docs.microsoft.com/powershell/module/exchange/new-dlpedmschema)
 - [修改精确数据匹配架构，以使用可配置匹配项](sit-modify-edm-schema-configurable-match.md)
-

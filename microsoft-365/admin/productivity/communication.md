@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 通信详细信息 - 人员体验生产力分数。
-ms.openlocfilehash: b688063c10749d15fc5b00b629ee18afedba927e
-ms.sourcegitcommit: 0867495cb02d0b38b439b16bdce97e6eda483ba9
+ms.openlocfilehash: de59a57f1c856d94836b59eba6a4869831fe700a
+ms.sourcegitcommit: 3b369a44b71540c8b8214ce588a7aa6f47c3bb1e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "49712575"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "50099708"
 ---
 # <a name="communication--people-experiences"></a>通信 – 人员体验
 
@@ -44,7 +44,7 @@ Productivity Score 通过深入了解组织如何使用 Microsoft 365 以及支�
 
 ## <a name="why-your-organizations-communication-score-matters"></a>为什么组织的通信分数很重要 
 
-Microsoft 了解用户有不同的通信需求。 若要快速响应问题，您可以选择发送即时消息。 如果要向领导发送状态更新，可以选择一封电子邮件。 若要覆盖更广泛的受众，您可以选择发布社区消息。 Microsoft 365 在通信模式中实现了这种灵活性，以满足每个人的需求。 研究表明，使用实时通信工具可以创建一个更为统一的组织并培养信心，而不管位置如何。 [请参阅证据](https://go.microsoft.com/fwlink/?linkid=2127669)。
+Microsoft 了解用户有不同的通信需求。 若要快速响应问题，您可以选择发送即时消息。 如果要向领导发送状态更新，可以选择一封电子邮件。 若要覆盖更广泛的受众，您可以选择发布社区消息。 Microsoft 365 在通信模式中实现了这种灵活性，以满足每个人的需求。 研究表明，使用实时通信工具可以创建一个更为统一的组织并培养团队，而不管位置如何。 [请参阅证据](https://go.microsoft.com/fwlink/?linkid=2127669)。
 
 ## <a name="how-we-calculate-the-communication-score"></a>如何计算通信得分
 
@@ -52,7 +52,7 @@ Microsoft 了解用户有不同的通信需求。 若要快速响应问题，您
 
 ### <a name="primary-insight"></a>主要见解
 
-Microsoft 365 提供多种模式，使用户能够灵活地适应每个人的通信风格。 主要见解提供了对组织内使用多个模式进行通信的人的度量。
+Microsoft 365 提供多种模式，使用户能够灵活地适应每个人的通信风格。 主要见解提供了组织内使用多个模式进行通信的人的度量。
 
 :::image type="content" source="../../media/primaryinsight.png" alt-text="主要了解通信模式。":::
 
@@ -78,13 +78,13 @@ Microsoft 365 提供多种模式，使用户能够灵活地适应每个人的通
 
 #### <a name="trend-visualization-of-primary-insight"></a>主要见解的趋势可视化
 
- 此图表提供主要见解中关键指标的分子趋势，即，过去 180 天内使用多个通信模式的组织中的人数。 此处的每日值是过去 28 天内使用多种通信方式的总数。
+ 此图表提供主要见解中关键指标的分子趋势 ，即，过去 180 天内使用多个通信模式的组织中的人员数。 此处的每日值是过去 28 天内使用多种形式通信的总数。
 
 :::image type="content" source="../../media/trend-communication.png" alt-text="显示使用多个模式进行通信与时间的人数的图表。":::
 
-### <a name="scoring-model"></a>记分模型
+### <a name="scoring-model"></a>评分模型
 
-组织的通信得分以 (组织) 级别衡量用户是否在 28 天窗口中在电子邮件、聊天和社区帖子之间持续使用多个模式进行通信。  
+组织的通信得分以 (组织) 级别衡量用户是否在 28 天窗口中在电子邮件、聊天和社区帖子之间持续使用多种模式进行通信。  
 
 未在单个用户级别提供分数。
 
@@ -102,17 +102,17 @@ Microsoft 365 提供多种模式，使用户能够灵活地适应每个人的通
 
 3. **可视化：** 细分表示每种模式的使用。 每个栏上的彩色部分和分数表示发送电子邮件、邮件或社区帖子的人数，占启用该模式的人数的百分比：
 
-   - **发送电子邮件的人：** 彩色部分和小数表示为 Exchange 启用发送电子邮件的用户百分比。 此分数构建于：
+   - **发送电子邮件的人：** 彩色部分和小数表示为发送电子邮件的 Exchange 启用的用户百分比。 此分数构建于：
    
      - **Numerator**： People sending emails in the last 28 days.
      - **分母**：过去 28 天内启用 Exchange 的人。
      
-   - **在 Microsoft Teams 中发送消息的人：** 彩色部分和小数表示为正在发送邮件的 Microsoft Teams 启用的用户百分比。 此分数构建于：
+   - **在 Microsoft Teams 中发送消息的人：** 彩色部分和小数表示为 Microsoft Teams 启用发送消息的用户百分比。 此分数构建于：
    
      - **Numerator**： People sending messages on Microsoft Teams in the last 28 days.
      - **分母**：过去 28 天内启用 Microsoft Teams 的人。
      
-   - **社区中的人员发布：** 彩色部分和小数表示在社区中发布 Yammer 的用户的百分比。 此分数构建于：
+   - **社区中的人员发布：** 彩色部分和小数表示在社区中发布为 Yammer 启用的用户百分比。 此分数构建于：
    
      - **分子：** 过去 28 天内 Yammer 社区中发布人员。
      - **分母：** 用户最近 28 天内启用了 Yammer。
@@ -127,16 +127,16 @@ Microsoft 365 提供多种模式，使用户能够灵活地适应每个人的通
 
 2. **正文：** 提供有关在电子邮件中@mentions值的信息。 此外，@mentions用户表示为过去 28 天内发送电子邮件的所有用户的百分比。
 
-3. **可视化：** 根据新电子邮件线程是否包含以下邮件线索，@mentions速率：
+3. **可视化：** 根据新电子邮件线索是否包含以下邮件线索，@mentions速率：
 
-   - **对提及电子邮件 \@** 的响应：彩色部分和小数表示包含新电子邮件主题的响应@mentions。 此分数构建于：
+   - **提及电子邮件 \@** 的响应：彩色部分和小数表示包含电子邮件主题的新电子邮件@mentions。 此分数构建于：
    
      - **分子：** 包含最近 28 @mentions已启动并收到响应的新电子邮件线程。
-     - **分母：** 包含最近 28 @mentions中启动的邮件的新电子邮件线程。
+     - **分母：** 包含最近 28 @mentions开始的新电子邮件线程。
      
-   - **无提及电子邮件响应 \@ ：** 彩色部分和分数表示包含电子邮件主题的新电子邮件@mentions。 此分数构建于：
+   - **无提及电子邮件 \@** 响应：彩色部分和分数表示包含电子邮件主题的新电子邮件@mentions。 此分数构建于：
    
-     - **分子：** 不包含电子邮件的新@mentions，这些线程已启动，并且最近 28 天内也收到响应。
+     - **分子：** 不包含邮件的新电子邮件@mentions，这些线程已启动，并且最近 28 天内也收到响应。
      - **分母：** 不包含最近 28 @mentions启动的新电子邮件线程。
      
 4. **查看相关内容：** 选择此链接可查看整理的视频和其他相关帮助内容。
@@ -159,7 +159,7 @@ Microsoft 365 提供多种模式，使用户能够灵活地适应每个人的通
         
       - **发送频道消息的人：** 彩色部分和分数表示在 Microsoft Teams 上发送消息的人中频道消息的使用。 分数的构造方式为：
       
-        - **分子：** 过去 28 天内在 Microsoft Teams 上发送聊天消息的人。
+        - **分子：** 过去 28 天内在 Microsoft Teams 上发送频道消息的人。
         - **分母：** 过去 28 天内在 Microsoft Teams 上发送消息的人。
         
 4. **查看相关内容：** 选择此链接可查看整理的视频和其他相关帮助内容。
@@ -168,7 +168,7 @@ Microsoft 365 提供多种模式，使用户能够灵活地适应每个人的通
 
 :::image type="content" source="../../media/yammerqsandas.png" alt-text="[Yammer 中的问题和答案]"::: 
 
-1. **标头：** 突出显示 Yammer 上标记为问题的文章，这些帖子已收到一个标记为"最佳答案"的答案，以过去 28 天内 Yammer 上标记为问题的所有帖子的百 &quot; &quot; 分比表示。
+1. **标头：** 突出显示标记为 Yammer 问题的文章，这些帖子已收到一个标记为"最佳答案"的答案，以过去 28 天内 Yammer 上标记为问题的所有帖子的百 &quot; &quot; 分比表示。
 
 2. **正文：** 提供有关在 Yammer 中使用问题和答案共享知识的价值的信息。
 
