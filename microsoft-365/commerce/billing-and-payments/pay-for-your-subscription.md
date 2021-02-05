@@ -12,112 +12,85 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
-- commerce
 search.appverid:
-- BCS160
 - MET150
-- MOE150
-- BEA160
 ms.assetid: 734f4aab-df2d-4e9b-8cb1-691910bde216
-description: 了解哪些付款选项可用于为 Microsoft 365 for business 订阅付款。
+description: 了解可用于为 Microsoft 365 商业版订阅付费的支付选项。
 ms.custom:
 - okr_SMB
 - fwlink 808700 for SEPA UI glink 906 for older uI
 - AdminSurgePortfolio
-ms.openlocfilehash: 778906219c03e8cc79ccebb368b84642639a8467
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+- commerce
+ms.openlocfilehash: 858b42dbb647e472bcb3e95ddcba850f03ab11f1
+ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48638431"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "50114821"
 ---
-# <a name="pay-for-your-subscription"></a><span data-ttu-id="d9e7d-103">支付订阅费用</span><span class="sxs-lookup"><span data-stu-id="d9e7d-103">Pay for your subscription</span></span>
+# <a name="how-to-pay-for-your-subscription"></a><span data-ttu-id="570b0-103">如何支付订阅费用</span><span class="sxs-lookup"><span data-stu-id="570b0-103">How to pay for your subscription</span></span>
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> <span data-ttu-id="d9e7d-104">管理中心正在发生改变。</span><span class="sxs-lookup"><span data-stu-id="d9e7d-104">The admin center is changing.</span></span> <span data-ttu-id="d9e7d-105">如果你的体验与此处提供的详细信息不匹配，请参阅[有关新版 Microsoft 365 管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)。</span><span class="sxs-lookup"><span data-stu-id="d9e7d-105">If your experience doesn't match the details presented here, see [About the new Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).</span></span>
+> <span data-ttu-id="570b0-104">管理中心正在发生改变。</span><span class="sxs-lookup"><span data-stu-id="570b0-104">The admin center is changing.</span></span> <span data-ttu-id="570b0-105">如果你的体验与此处提供的详细信息不匹配，请参阅[有关新版 Microsoft 365 管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true)。</span><span class="sxs-lookup"><span data-stu-id="570b0-105">If your experience doesn't match the details presented here, see [About the new Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true).</span></span>
 
 ::: moniker-end
 
-<span data-ttu-id="d9e7d-106">设置订阅时，可以选择使用信用卡或银行帐户付款，或使用支票或电子资金转帐 (EFT) 按发票付款。</span><span class="sxs-lookup"><span data-stu-id="d9e7d-106">When you set up your subscription, you can choose to pay by using credit card or bank account payments, or to pay by invoice using check or electronic funds transfer (EFT).</span></span> <span data-ttu-id="d9e7d-107">选择的任何方式就是继续用于后续计费周期的付款方式，除非[更改付款方式](change-payment-method.md)。</span><span class="sxs-lookup"><span data-stu-id="d9e7d-107">Whichever method you choose, that is the payment method we will continue to use for subsequent billing periods, unless you [change your payment method](change-payment-method.md).</span></span>
+<span data-ttu-id="570b0-106">可以使用信用卡或借记卡或银行帐户支付订阅费用。</span><span class="sxs-lookup"><span data-stu-id="570b0-106">You can use a credit or debit card, or bank account to pay for your subscription.</span></span> <span data-ttu-id="570b0-107">在某些情况下，可以使用支票或电子资金 (EFT) 。</span><span class="sxs-lookup"><span data-stu-id="570b0-107">In some cases, you can pay by invoice, using check or electronic funds transfer (EFT).</span></span> <span data-ttu-id="570b0-108">如果你有计费配置文件，你的选项会略有不同。</span><span class="sxs-lookup"><span data-stu-id="570b0-108">If you have a billing profile, your options are slightly different.</span></span> <span data-ttu-id="570b0-109">如果你不确定你的帐户是否具有计费配置文件，请参阅["了解计费配置文件"。](manage-billing-profiles.md)</span><span class="sxs-lookup"><span data-stu-id="570b0-109">If you’re not sure if your account has a billing profile, see  [Understand billing profiles](manage-billing-profiles.md).</span></span>
+
+<span data-ttu-id="570b0-110">**只想了解发票付款的发送位置？**</span><span class="sxs-lookup"><span data-stu-id="570b0-110">**Just want to find out where to send your invoice payment?**</span></span> <span data-ttu-id="570b0-111">如果你通过支票或电子资金 (EFT) ，请参阅"我在哪里发送支票或 [EFT 付款？](#where-do-i-send-my-check-or-eft-payment)</span><span class="sxs-lookup"><span data-stu-id="570b0-111">If you pay your invoice by check or electronic funds transfer (EFT), see [Where do I send my check or EFT payment?](#where-do-i-send-my-check-or-eft-payment)</span></span>
+
+## <a name="before-you-begin"></a><span data-ttu-id="570b0-112">准备工作</span><span class="sxs-lookup"><span data-stu-id="570b0-112">Before you begin</span></span>
+
+- <span data-ttu-id="570b0-113">只有全局或帐单管理员才能执行本文所述步骤。</span><span class="sxs-lookup"><span data-stu-id="570b0-113">You must be a Global or Billing admin to do the steps described in this article.</span></span> <span data-ttu-id="570b0-114">有关详细信息，请参阅[关于管理员角色](../../admin/add-users/about-admin-roles.md)。</span><span class="sxs-lookup"><span data-stu-id="570b0-114">For more information, see [About admin roles](../../admin/add-users/about-admin-roles.md).</span></span>
+- <span data-ttu-id="570b0-115">在结帐期间选择的付款方式就是我们用于所有未来计费周期的付款方式。</span><span class="sxs-lookup"><span data-stu-id="570b0-115">The payment method that you choose during checkout is the payment method that we use for all future billing periods.</span></span> <span data-ttu-id="570b0-116">你随时都可以更改它。</span><span class="sxs-lookup"><span data-stu-id="570b0-116">You can change it at any time.</span></span>
+
+## <a name="paying-by-credit-or-debit-card-or-bank-account"></a><span data-ttu-id="570b0-117">通过信用卡或借记卡或银行帐户支付</span><span class="sxs-lookup"><span data-stu-id="570b0-117">Paying by credit or debit card, or bank account</span></span>
+
+> [!IMPORTANT]
+> <span data-ttu-id="570b0-118">某些国家或地区不支持银行帐户支付。</span><span class="sxs-lookup"><span data-stu-id="570b0-118">Paying by bank account is not available in some countries or regions.</span></span>
+
+<span data-ttu-id="570b0-119">可以使用信用卡或借记卡或银行帐户支付订阅费用。</span><span class="sxs-lookup"><span data-stu-id="570b0-119">You can pay for your subscription with a credit or debit card, or a bank account.</span></span> <span data-ttu-id="570b0-120">当你使用这些付款方式之一付款时，我们会继续收取该付款方式的费用，直到订阅过期或取消。</span><span class="sxs-lookup"><span data-stu-id="570b0-120">When you pay with one of these payment methods, we continue to charge that payment method until the subscription expires, or is canceled.</span></span> <span data-ttu-id="570b0-121">你可以随时[管理付款方式](manage-payment-methods.md)。</span><span class="sxs-lookup"><span data-stu-id="570b0-121">You can [manage payment methods](manage-payment-methods.md) whenever you need to.</span></span> <span data-ttu-id="570b0-122">也可选择[以电子邮件方式接收账单副本](view-your-bill-or-invoice.md#receive-a-copy-of-your-billing-statement-in-email)。</span><span class="sxs-lookup"><span data-stu-id="570b0-122">You can also choose to [receive a copy of your billing statement in email](view-your-bill-or-invoice.md#receive-a-copy-of-your-billing-statement-in-email).</span></span>
+
+## <a name="paying-by-invoice"></a><span data-ttu-id="570b0-123">通过发票付款</span><span class="sxs-lookup"><span data-stu-id="570b0-123">Paying by invoice</span></span>
+
+<span data-ttu-id="570b0-124">在某些情况下，可以使用支票或 EFT 通过发票支付订阅费用。</span><span class="sxs-lookup"><span data-stu-id="570b0-124">In some cases, you can pay for your subscription by invoice with a check or EFT.</span></span> <span data-ttu-id="570b0-125">若要有资格通过发票付款，你必须：</span><span class="sxs-lookup"><span data-stu-id="570b0-125">To be eligible to pay by invoice, you must:</span></span>
+
+- <span data-ttu-id="570b0-126">成为已建立的客户</span><span class="sxs-lookup"><span data-stu-id="570b0-126">Be an established customer</span></span>
+- <span data-ttu-id="570b0-127">订阅费用超过一定金额 (此金额因服务位置而异) </span><span class="sxs-lookup"><span data-stu-id="570b0-127">Have a subscription cost that exceeds a certain amount (this amount varies by service location)</span></span>
+- <span data-ttu-id="570b0-128">通过信用检查</span><span class="sxs-lookup"><span data-stu-id="570b0-128">Pass a credit check</span></span>
+
+<span data-ttu-id="570b0-129">如果需要信用检查，购买订阅时将会收到通知。</span><span class="sxs-lookup"><span data-stu-id="570b0-129">If a credit check is required, you’re notified when you buy your subscription.</span></span> <span data-ttu-id="570b0-130">如果你同意联系你，你收到一封电子邮件，其中包含有关申请信用审批详细信息。</span><span class="sxs-lookup"><span data-stu-id="570b0-130">If you agree to be contacted, you get an email that includes more information about applying for credit approval.</span></span> <span data-ttu-id="570b0-131">通常会在两个工作日内完成信用检查。</span><span class="sxs-lookup"><span data-stu-id="570b0-131">Credit checks are usually completed within two business days.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="d9e7d-108">某些国家或地区不支持银行帐户支付。</span><span class="sxs-lookup"><span data-stu-id="d9e7d-108">Paying by bank account is not available in some countries or regions.</span></span>
+> <span data-ttu-id="570b0-132">居住在巴西的客户可以使用 Boleto Bancario 支付订阅费用。</span><span class="sxs-lookup"><span data-stu-id="570b0-132">Customers who live in Brazil can pay for a subscription with a Boleto Bancario.</span></span> <span data-ttu-id="570b0-133">如果选择此选项，在订单日期后 10 个工作日内，付款凭据将被发送至订阅购买期间提供的电子邮件。</span><span class="sxs-lookup"><span data-stu-id="570b0-133">If you have selected this option, the billet for payment is sent to the email provided during subscription purchase within 10 working days after the order date.</span></span> <span data-ttu-id="570b0-134">截止日期是订单日期后 30 日。</span><span class="sxs-lookup"><span data-stu-id="570b0-134">The due date is 30 days after the order date.</span></span> <span data-ttu-id="570b0-135">如果通过电子邮件未收到 Boleto，选中垃圾电子邮件文件夹或联系支持人员。</span><span class="sxs-lookup"><span data-stu-id="570b0-135">If you don't receive your Boleto by email, check your spam folder or contact support.</span></span>
+>
+> <span data-ttu-id="570b0-136">如果想要的话，可通过账户间电子转账来付款。</span><span class="sxs-lookup"><span data-stu-id="570b0-136">If you prefer, you can pay by electronic transfer between accounts.</span></span> <span data-ttu-id="570b0-137">代理和账户编号位于发表的底部。</span><span class="sxs-lookup"><span data-stu-id="570b0-137">The Agency and account number are at the bottom of your invoice.</span></span> <span data-ttu-id="570b0-138">必须在“转账标识”字段中输入账单编号。</span><span class="sxs-lookup"><span data-stu-id="570b0-138">You must enter your invoice number in the Transfer identification field.</span></span>
 
-## <a name="pay-by-credit-card-or-bank-account"></a><span data-ttu-id="d9e7d-109">通过信用卡或银行帐户支付</span><span class="sxs-lookup"><span data-stu-id="d9e7d-109">Pay by credit card or bank account</span></span>
+<span data-ttu-id="570b0-139">如果你通过发票为订阅付款，则当帐单可供查看时，你收到一封电子邮件。</span><span class="sxs-lookup"><span data-stu-id="570b0-139">If you pay by invoice for your subscription, you get an email when your billing statement is ready to view.</span></span> <span data-ttu-id="570b0-140">此电子邮件不包含帐单副本。</span><span class="sxs-lookup"><span data-stu-id="570b0-140">This email doesn’t contain a copy of your billing statement.</span></span> <span data-ttu-id="570b0-141">但是，你可以选择通过电子邮件接收帐单 [副本](view-your-bill-or-invoice.md#receive-a-copy-of-your-billing-statement-in-email)。</span><span class="sxs-lookup"><span data-stu-id="570b0-141">However, you can choose to [receive a copy of your billing statement in email](view-your-bill-or-invoice.md#receive-a-copy-of-your-billing-statement-in-email).</span></span> <span data-ttu-id="570b0-142">帐单包含有关付款选项以及付款位置的详细信息。</span><span class="sxs-lookup"><span data-stu-id="570b0-142">Your billing statement includes details about your options for making a payment, and where to send it.</span></span> <span data-ttu-id="570b0-143">如果购买订阅时输入了采购订单 (PO) 编号，则该编号会显示在帐单中。</span><span class="sxs-lookup"><span data-stu-id="570b0-143">If you enter a purchase order (PO) number when you buy a subscription, the number appears on your billing statement.</span></span> <span data-ttu-id="570b0-144">若要了解有关访问帐单的信息，请参阅[查看帐单或发票](view-your-bill-or-invoice.md)。</span><span class="sxs-lookup"><span data-stu-id="570b0-144">For information about accessing billing statements, see [View your bill or invoice](view-your-bill-or-invoice.md).</span></span>
 
-<span data-ttu-id="d9e7d-110">当通过信用卡或银行帐户付款时，将在发票日期后自动扣除你的订阅的费用，直到订阅期限结束。</span><span class="sxs-lookup"><span data-stu-id="d9e7d-110">When you pay by credit card or bank account, you'll be automatically charged for your subscription the day after the invoice date, until the end of your subscription term.</span></span> <span data-ttu-id="d9e7d-111">你可以随时[管理付款方式](manage-payment-methods.md)。</span><span class="sxs-lookup"><span data-stu-id="d9e7d-111">You can [manage payment methods](manage-payment-methods.md) whenever you need to.</span></span> <span data-ttu-id="d9e7d-112">也可以选择[以电子邮件方式接收帐单副本](#receive-a-copy-of-your-billing-statement-in-email)。</span><span class="sxs-lookup"><span data-stu-id="d9e7d-112">You can also choose to [Receive a copy of your billing statement in email](#receive-a-copy-of-your-billing-statement-in-email).</span></span>
+## <a name="what-if-i-have-an-outstanding-balance"></a><span data-ttu-id="570b0-145">如果我有未结余额，该怎么办？</span><span class="sxs-lookup"><span data-stu-id="570b0-145">What if I have an outstanding balance?</span></span>
 
-### <a name="what-if-my-credit-card-was-declined-and-my-payment-is-past-due"></a><span data-ttu-id="d9e7d-113">如果信用卡被拒绝，并且付款已过期怎么办？</span><span class="sxs-lookup"><span data-stu-id="d9e7d-113">What if my credit card was declined and my payment is past due?</span></span>
+<span data-ttu-id="570b0-146">如果我们无法对文件的付款方式收费，我们将发送一封电子邮件，让您知道存在问题。</span><span class="sxs-lookup"><span data-stu-id="570b0-146">If we’re unable to charge the payment method on file, we send an email that lets you know there’s a problem.</span></span> <span data-ttu-id="570b0-147">电子邮件简要说明问题所在，并包含一个链接，您可以在其中检查未结余额。</span><span class="sxs-lookup"><span data-stu-id="570b0-147">The email briefly states what the problem is and includes a link where you can check the outstanding balance.</span></span> <span data-ttu-id="570b0-148">我们将继续每隔几天重试一次交易 30 天，在此期间订阅将进入宽限期。</span><span class="sxs-lookup"><span data-stu-id="570b0-148">We continue to retry the transaction every few days for 30 days, during which time the subscription is in a grace period.</span></span> <span data-ttu-id="570b0-149">每次事务失败时，你都会收到有关失败的电子邮件警报。</span><span class="sxs-lookup"><span data-stu-id="570b0-149">Every time a transaction fails, you receive an email alert about the failure.</span></span>
 
-<span data-ttu-id="d9e7d-114">如果通过信用卡支付，且信用卡被拒，将收到一封电子邮件，告知无法处理该付款。</span><span class="sxs-lookup"><span data-stu-id="d9e7d-114">If you pay by credit card, and your credit card is declined, you'll receive an email letting you know that we were unable to process the payment.</span></span> <span data-ttu-id="d9e7d-115">出现此情况的原因有多种，包括信用卡已过期。</span><span class="sxs-lookup"><span data-stu-id="d9e7d-115">This can happen for several reasons, including if the credit card has expired.</span></span> <span data-ttu-id="d9e7d-116">我们将持续每隔几天重试该交易。</span><span class="sxs-lookup"><span data-stu-id="d9e7d-116">We'll continue to retry the transaction every few days.</span></span> <span data-ttu-id="d9e7d-117">如果这些尝试失败，你将持续收到有关这些失败的电子邮件警报。</span><span class="sxs-lookup"><span data-stu-id="d9e7d-117">If those attempts fail, you'll continue to receive email alerts about those failures.</span></span> <span data-ttu-id="d9e7d-118">可随时使用“**结算余额**”功能更改信用卡信息并立即重新提交付款。</span><span class="sxs-lookup"><span data-stu-id="d9e7d-118">You can use the **Settle balance** feature at any time to change your credit card information and immediately resubmit the payment.</span></span>
+<span data-ttu-id="570b0-150">如果你个人添加了具有已到期金额的付款方式，可以使用"结算余额"进行付款。 </span><span class="sxs-lookup"><span data-stu-id="570b0-150">If you personally added the payment method that has a past due amount, you can use **Settle balance** to make a payment.</span></span> <span data-ttu-id="570b0-151">用于支付过期金额的付款方式将成为使用已拒绝付款方式的所有订阅的新付款方式。</span><span class="sxs-lookup"><span data-stu-id="570b0-151">The payment method that you use to pay the overdue amount becomes the new payment method for all subscriptions that used the declined payment method.</span></span>
 
-> [!NOTE]
-> <span data-ttu-id="d9e7d-119">如果切换为其他信用卡来支付订阅的未结余额，则将从该信用卡收取该订阅将来所有的自动支付款项。</span><span class="sxs-lookup"><span data-stu-id="d9e7d-119">If you switch to a different credit card to pay the outstanding balance on your subscription, that card will be charged for all future automatic payments for that subscription.</span></span>
+1. <span data-ttu-id="570b0-152">在管理中心中，转到"帐单&  >  **付款** 页面，然后选择"付款方式 <a href="https://go.microsoft.com/fwlink/p/?linkid=2018806" target="_blank">"</a>选项卡。</span><span class="sxs-lookup"><span data-stu-id="570b0-152">In the admin center, go to the **Billing** > **Bills & payments** page, then select the <a href="https://go.microsoft.com/fwlink/p/?linkid=2018806" target="_blank">Payment methods</a> tab.</span></span>
+1. <span data-ttu-id="570b0-153">警告消息显示拒绝的付款方式。</span><span class="sxs-lookup"><span data-stu-id="570b0-153">A warning message says which payment method was declined.</span></span> <span data-ttu-id="570b0-154">选择 **"结算余额"。**</span><span class="sxs-lookup"><span data-stu-id="570b0-154">Select **Settle balance**.</span></span>
+1. <span data-ttu-id="570b0-155">在右侧窗格中，选择其他付款方式，或选择"**添加新的付款方式"。**</span><span class="sxs-lookup"><span data-stu-id="570b0-155">In the right pane, choose a different payment method, or select **Add a new payment method**.</span></span>
+1. <span data-ttu-id="570b0-156">更新付款方式信息后，选择"保存 **"。**</span><span class="sxs-lookup"><span data-stu-id="570b0-156">After you've updated the payment method information, select **Save**.</span></span>
 
-::: moniker range="o365-worldwide"
+<span data-ttu-id="570b0-157">如果未添加用于支付订阅的付款方式，则必须将付款方式替换为之前添加的付款方式或新付款方式。</span><span class="sxs-lookup"><span data-stu-id="570b0-157">If you didn’t add the payment method used to pay for the subscription, you must replace the payment method with one you previously added, or with a new one.</span></span>
 
-1. <span data-ttu-id="d9e7d-120">在管理中心中，转到“**计费**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">你的产品</a>”页面。</span><span class="sxs-lookup"><span data-stu-id="d9e7d-120">In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.</span></span>
+## <a name="where-do-i-send-my-check-or-eft-payment"></a><span data-ttu-id="570b0-158">支票或 EFT 付款应寄往何处？</span><span class="sxs-lookup"><span data-stu-id="570b0-158">Where do I send my check or EFT payment?</span></span>
 
-2. <span data-ttu-id="d9e7d-121">查找余额未结的订阅。</span><span class="sxs-lookup"><span data-stu-id="d9e7d-121">Find the subscription with the outstanding balance.</span></span> <span data-ttu-id="d9e7d-122">在“**帐单**”部分中的**订阅的预期付款**旁，选择“**结算余额**”。</span><span class="sxs-lookup"><span data-stu-id="d9e7d-122">In the **Billing** section, next to **Subscription has a past due payment**, select **Settle balance**.</span></span>
-
-3. <span data-ttu-id="d9e7d-123">如果是信用卡所有者，可更改卡的到期日期，选择另一张卡，或[添加新卡](manage-payment-methods.md)。</span><span class="sxs-lookup"><span data-stu-id="d9e7d-123">If you're the credit card owner, you can change the expiration date for the card, pick a different card, or [add a new card](manage-payment-methods.md).</span></span>
-
-    > [!NOTE]
-    > <span data-ttu-id="d9e7d-124">当使用“**结算余额**”功能时，将收取帐户的全部未结余额，这可能会比其他位置显示的到期金额多。</span><span class="sxs-lookup"><span data-stu-id="d9e7d-124">When you use the **Settle balance** feature, you'll be charged for the entire outstanding balance on your account, which could be more than the amount due shown elsewhere.</span></span>
-
-4. <span data-ttu-id="d9e7d-125">如果不是信用卡所有者，可选择另一张信用卡或[添加新卡](manage-payment-methods.md)。</span><span class="sxs-lookup"><span data-stu-id="d9e7d-125">If you're not the credit card owner, you can choose a different credit card or [add a new card](manage-payment-methods.md).</span></span>
-
-5. <span data-ttu-id="d9e7d-126">更新信用卡信息或更改用于支付订阅的信用卡后，请选择“**保存**”。</span><span class="sxs-lookup"><span data-stu-id="d9e7d-126">After you've updated the credit card information or changed the credit card that is used to pay for the subscription, select **Save**.</span></span>
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. <span data-ttu-id="d9e7d-127">在管理中心，转到“**账单**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">订阅</a>”页面。</span><span class="sxs-lookup"><span data-stu-id="d9e7d-127">In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Subscriptions</a> page.</span></span>
-
-2. <span data-ttu-id="d9e7d-128">选择想要更改的订阅。</span><span class="sxs-lookup"><span data-stu-id="d9e7d-128">Select the subscription that you want to change.</span></span> <span data-ttu-id="d9e7d-129">在“**我的帐单**”部分中，选择“**立即付款**”。</span><span class="sxs-lookup"><span data-stu-id="d9e7d-129">In the **My bill** section, select **Pay now**.</span></span>
-
-3. <span data-ttu-id="d9e7d-130">如果是信用卡所有者，可更改卡的到期日期，选择另一张卡，或[添加新卡](manage-payment-methods.md)。</span><span class="sxs-lookup"><span data-stu-id="d9e7d-130">If you're the credit card owner, you can change the expiration date for the card, pick a different card, or [add a new card](manage-payment-methods.md).</span></span>
-
-    > [!NOTE]
-    > <span data-ttu-id="d9e7d-131">当使用“**立即付款**”功能时，将收取帐户的全部未结余额，这可能会比其他位置显示的到期金额多。</span><span class="sxs-lookup"><span data-stu-id="d9e7d-131">When you use the **Pay now** feature, you'll be charged for the entire outstanding balance on your account, which could be more than the amount due shown elsewhere.</span></span>
-
-4. <span data-ttu-id="d9e7d-132">如果不是信用卡所有者，可选择另一张信用卡或[添加新卡](manage-payment-methods.md)。</span><span class="sxs-lookup"><span data-stu-id="d9e7d-132">If you're not the credit card owner, you can choose a different credit card or [add a new card](manage-payment-methods.md).</span></span>
-
-5. <span data-ttu-id="d9e7d-133">更新信用卡信息或更改用于支付订阅的信用卡后，请选择“**提交**”。</span><span class="sxs-lookup"><span data-stu-id="d9e7d-133">After you've updated the credit card information or changed the credit card that is used to pay for the subscription, select **Submit**.</span></span> <span data-ttu-id="d9e7d-134">将看到确认消息，显示“已更新付款方式并已结清所有未付费用。</span><span class="sxs-lookup"><span data-stu-id="d9e7d-134">You'll see a confirmation message that says "Your payment method has been updated and all outstanding charges are settled.</span></span> <span data-ttu-id="d9e7d-135">谢谢大家。”</span><span class="sxs-lookup"><span data-stu-id="d9e7d-135">Thank you."</span></span>
-
-::: moniker-end
-
-## <a name="pay-by-invoice-check-or-eft"></a><span data-ttu-id="d9e7d-136">按发票付款（使用支票或 EFT）</span><span class="sxs-lookup"><span data-stu-id="d9e7d-136">Pay by invoice (check or EFT)</span></span>
-
-<span data-ttu-id="d9e7d-137">如果你的订阅费用高于一定的金额（此金额因服务位置而异），则可以选择使用支票或 EFT 按发票付款。</span><span class="sxs-lookup"><span data-stu-id="d9e7d-137">If your subscription costs over a certain amount of money (this amount varies by service location), you'll have the option to pay by invoice by using a check or EFT.</span></span> <span data-ttu-id="d9e7d-138">较大数额的发票付款可能要求进行信用检查。</span><span class="sxs-lookup"><span data-stu-id="d9e7d-138">A credit check may be required for larger invoice payments.</span></span> <span data-ttu-id="d9e7d-139">如需进行信用检查，会在购买订阅时收到通知。</span><span class="sxs-lookup"><span data-stu-id="d9e7d-139">If a credit check is required, you'll be notified when you purchase your subscription.</span></span> <span data-ttu-id="d9e7d-140">如果同意接受联系，将收到一封电子邮件，其中包括有关申请信用审批的详细信息。</span><span class="sxs-lookup"><span data-stu-id="d9e7d-140">And, if you agree to be contacted, you'll get an email that includes more information about applying for credit approval.</span></span> <span data-ttu-id="d9e7d-141">通常会在两个工作日内完成信用检查。</span><span class="sxs-lookup"><span data-stu-id="d9e7d-141">Credit checks are usually completed within two business days.</span></span>
+<span data-ttu-id="570b0-159">[请查看发票，](view-your-bill-or-invoice.md) 查看付款说明。</span><span class="sxs-lookup"><span data-stu-id="570b0-159">[Check your invoice](view-your-bill-or-invoice.md) for payment instructions.</span></span> <span data-ttu-id="570b0-160">您还可以使用下面的下拉列表查找你的国家/地区或地区的付款说明。</span><span class="sxs-lookup"><span data-stu-id="570b0-160">You can also use the drop-down below to find payment instructions for your country or region.</span></span> <span data-ttu-id="570b0-161">如果你不确定你应支付的金额，可以在"帐单和付款"页面的"发票"选项卡上在线查看帐单<a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">&历史记录。</a></span><span class="sxs-lookup"><span data-stu-id="570b0-161">If you're not sure how much you owe, you can check your bill and billing history online on the **Invoices** tab of the <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Bills & payments</a> page.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="d9e7d-142">居住在巴西的客户可以使用 Boleto Bancario 支付订阅费用。</span><span class="sxs-lookup"><span data-stu-id="d9e7d-142">Customers who live in Brazil can pay for a subscription with a Boleto Bancario.</span></span> <span data-ttu-id="d9e7d-143">如果选择此选项，在订单日期后 10 个工作日内，付款凭据将被发送至订阅购买期间提供的电子邮件。</span><span class="sxs-lookup"><span data-stu-id="d9e7d-143">If you have selected this option, the billet for payment is sent to the email provided during subscription purchase within 10 working days after the order date.</span></span> <span data-ttu-id="d9e7d-144">截止日期是订单日期后 30 日。</span><span class="sxs-lookup"><span data-stu-id="d9e7d-144">The due date is 30 days after the order date.</span></span> <span data-ttu-id="d9e7d-145">如果通过电子邮件未收到 Boleto，选中垃圾电子邮件文件夹或联系支持人员。</span><span class="sxs-lookup"><span data-stu-id="d9e7d-145">If you don't receive your Boleto by email, check your spam folder or contact support.</span></span> <br><br><span data-ttu-id="d9e7d-146">如果想要的话，可通过账户间电子转账来付款。</span><span class="sxs-lookup"><span data-stu-id="d9e7d-146">If you prefer, you can pay by electronic transfer between accounts.</span></span> <span data-ttu-id="d9e7d-147">代理和账户编号位于发表的底部。</span><span class="sxs-lookup"><span data-stu-id="d9e7d-147">The Agency and account number are at the bottom of your invoice.</span></span> <span data-ttu-id="d9e7d-148">必须在“转账标识”字段中输入账单编号。</span><span class="sxs-lookup"><span data-stu-id="d9e7d-148">You must enter your invoice number in the Transfer identification field.</span></span>
+> <span data-ttu-id="570b0-162">仅少数国家/地区提供支票支付。</span><span class="sxs-lookup"><span data-stu-id="570b0-162">Paying by check is only available in a few countries.</span></span>
 
-<span data-ttu-id="d9e7d-149">如果按发票支付订阅费用，将收到一封电子邮件，指明帐单可供查看。</span><span class="sxs-lookup"><span data-stu-id="d9e7d-149">If you pay by invoice for your subscription, you'll get an email that says your billing statement is ready to view.</span></span> <span data-ttu-id="d9e7d-150">此电子邮件不包含帐单的副本。</span><span class="sxs-lookup"><span data-stu-id="d9e7d-150">This email does not contain a copy of your billing statement.</span></span> <span data-ttu-id="d9e7d-151">然而，也可以选择[以电子邮件方式接收帐单副本](#receive-a-copy-of-your-billing-statement-in-email)。</span><span class="sxs-lookup"><span data-stu-id="d9e7d-151">However, you can also choose to [Receive a copy of your billing statement in email](#receive-a-copy-of-your-billing-statement-in-email).</span></span> <span data-ttu-id="d9e7d-152">帐单包括用于付款的选项的详细信息。</span><span class="sxs-lookup"><span data-stu-id="d9e7d-152">Your billing statement includes details about your options for making a payment.</span></span> <span data-ttu-id="d9e7d-153">如果购买订阅时输入了采购订单 (PO) 编号，则该编号会显示在帐单中。</span><span class="sxs-lookup"><span data-stu-id="d9e7d-153">If you enter a purchase order (PO) number when you buy a subscription, the number appears on your billing statement.</span></span> <span data-ttu-id="d9e7d-154">若要了解有关访问帐单的信息，请参阅[查看帐单或发票](view-your-bill-or-invoice.md)。</span><span class="sxs-lookup"><span data-stu-id="d9e7d-154">For information about accessing billing statements, see [View your bill or invoice](view-your-bill-or-invoice.md).</span></span>
-
-> [!NOTE]
-> <span data-ttu-id="d9e7d-155">默认情况下，你的组织的帐单通知将被发送到 Microsoft 电子邮件地址和组织中每个全局和帐单管理员的备用电子邮件地址。</span><span class="sxs-lookup"><span data-stu-id="d9e7d-155">By default, your organization's billing notifications are sent to the Microsoft email address and the alternate email address of every global and billing admin in your organization.</span></span> <span data-ttu-id="d9e7d-156">若要更改备用电子邮件地址，请参阅[更改帐单邮寄地址](change-your-billing-addresses.md)。</span><span class="sxs-lookup"><span data-stu-id="d9e7d-156">To change the alternate email address, see [Change your billing addresses](change-your-billing-addresses.md).</span></span>
-
-### <a name="can-i-pay-my-bill-online"></a><span data-ttu-id="d9e7d-157">可否在线支付帐单？</span><span class="sxs-lookup"><span data-stu-id="d9e7d-157">Can I pay my bill online?</span></span>
-
-<span data-ttu-id="d9e7d-p113">很遗憾，如果订阅设置为按发票支付，则不接受在线直接付款。但是，可[将付款方式更改为信用卡或银行帐户](change-payment-method.md)，以便在每个服务周期之后向该卡或帐户自动收取应付金额。对于 Azure，请参阅[如何更改用于支付 Azure 订阅的信用卡](https://go.microsoft.com/fwlink/p/?LinkId=718057)。</span><span class="sxs-lookup"><span data-stu-id="d9e7d-p113">Unfortunately, if your subscription is set up to pay by invoice, we can't accept online payments directly. You can, however, [change your payment method to credit card or bank account](change-payment-method.md), and the amount due will be automatically charged to your card or account after each service period. For Azure, see [How to change the credit card used to pay for an Azure subscription](https://go.microsoft.com/fwlink/p/?LinkId=718057).</span></span>
-
-> [!NOTE]
-> <span data-ttu-id="d9e7d-161">若要将支付方式切换为自动信用卡付款，请务必首先支付所有未清余额。</span><span class="sxs-lookup"><span data-stu-id="d9e7d-161">If you're switching to pay by automatic credit card payments, be sure to first pay all outstanding balances.</span></span> <span data-ttu-id="d9e7d-162">查看帐单以了解付款方式和说明。</span><span class="sxs-lookup"><span data-stu-id="d9e7d-162">Check your billing statement for payment options and instructions.</span></span> <span data-ttu-id="d9e7d-163">有关详细信息，请参阅 [了解你的帐单或发票](understand-your-invoice2.md)。</span><span class="sxs-lookup"><span data-stu-id="d9e7d-163">For more information, see [Understand your bill or invoice](understand-your-invoice2.md).</span></span>
-
-### <a name="where-do-i-send-my-check-or-eft-payment"></a><span data-ttu-id="d9e7d-164">支票或 EFT 付款应寄往何处？</span><span class="sxs-lookup"><span data-stu-id="d9e7d-164">Where do I send my check or EFT payment?</span></span>
-
-> [!NOTE]
-> <span data-ttu-id="d9e7d-p115">通过支票付款仅在几个国家/地区可行。可遵照以下相应国家/地区的付款说明，或[检查你的发票](understand-your-invoice2.md)。</span><span class="sxs-lookup"><span data-stu-id="d9e7d-p115">Payment by check is only available in a few countries. You can follow the payment instructions below for your country, or [check your invoice](understand-your-invoice2.md).</span></span>
-
-<span data-ttu-id="d9e7d-p116">如果不确定应付金额，可[在线查看帐单和帐单历史记录](view-your-bill-or-invoice.md)。对于 Azure，请参阅[如何下载 Azure 帐单发票和日常使用数据](https://go.microsoft.com/fwlink/p/?LinkId=718058)。</span><span class="sxs-lookup"><span data-stu-id="d9e7d-p116">If you're not sure how much you owe, you can [check your bill and billing history online](view-your-bill-or-invoice.md). For Azure, see [How to download your Azure billing invoice and daily usage data](https://go.microsoft.com/fwlink/p/?LinkId=718058).</span></span>
-
- <span data-ttu-id="d9e7d-169">**从以下下拉菜单选择"帐单寄往地址"所在国家/地区。**</span><span class="sxs-lookup"><span data-stu-id="d9e7d-169">**Choose your "bill-to" country or region from the drop-down menu below.**</span></span>
+ <span data-ttu-id="570b0-163">**从以下下拉菜单选择"帐单寄往地址"所在国家/地区。**</span><span class="sxs-lookup"><span data-stu-id="570b0-163">**Choose your "bill-to" country or region from the drop-down menu below.**</span></span>
 
 > [!div class="op_single_selector"]
 > - **选择所在的国家或地区**
@@ -273,44 +246,20 @@ ms.locfileid: "48638431"
 > - [Zambia（赞比亚）](../pay/zambia.md)
 > - [津巴布韦](../pay/zimbabwe.md)
 
-## <a name="receive-a-copy-of-your-billing-statement-in-email"></a><span data-ttu-id="d9e7d-322">以电子邮件方式接收帐单副本</span><span class="sxs-lookup"><span data-stu-id="d9e7d-322">Receive a copy of your billing statement in email</span></span>
+## <a name="can-i-pay-my-invoice-online"></a><span data-ttu-id="570b0-316">我能否在线支付发票？</span><span class="sxs-lookup"><span data-stu-id="570b0-316">Can I pay my invoice online?</span></span>
 
-<span data-ttu-id="d9e7d-p117">可以选择以电子邮件附件的形式接收帐单副本。如果执行此操作，请注意：</span><span class="sxs-lookup"><span data-stu-id="d9e7d-p117">You can choose to receive a copy of your billing statement as an email attachment. If you do, be aware that:</span></span>
+<span data-ttu-id="570b0-317">无法在线支付发票。</span><span class="sxs-lookup"><span data-stu-id="570b0-317">You can’t pay your invoice online.</span></span> <span data-ttu-id="570b0-318">你必须通过支票或 EFT 支付。</span><span class="sxs-lookup"><span data-stu-id="570b0-318">You must remit payment via either check or EFT.</span></span>
 
-- <span data-ttu-id="d9e7d-325">电子邮件会发送到列为通知收件人的每个人的主要和备用电子邮件地址。</span><span class="sxs-lookup"><span data-stu-id="d9e7d-325">An email will be sent to both the primary and alternate email address for every person listed as a notification recipient.</span></span>
+## <a name="can-i-change-from-my-current-payment-method-to-paying-by-invoice"></a><span data-ttu-id="570b0-319">我能否从当前的付款方式更改为通过发票付款？</span><span class="sxs-lookup"><span data-stu-id="570b0-319">Can I change from my current payment method to paying by invoice?</span></span>
 
-- <span data-ttu-id="d9e7d-326">你将收到两封单独的电子邮件：第一封告知你的帐单已生成，其中包含如何登录管理中心查看帐单的说明，第二封电子邮件的附件中包含帐单。</span><span class="sxs-lookup"><span data-stu-id="d9e7d-326">You will receive two separate emails: one that lets you know that your bill is ready, with instructions to log on to the admin center to view it, and a second email that contains the billing statement as an attachment.</span></span>
+<span data-ttu-id="570b0-320">如果你的订阅费用超过一定金额，你只能更改为通过发票付款。</span><span class="sxs-lookup"><span data-stu-id="570b0-320">You can only change to paying by invoice if your subscription costs above a certain amount.</span></span> <span data-ttu-id="570b0-321">必须先支付信用卡或借记卡或银行帐户上的任何未结余额，然后才能更改为通过发票付款。</span><span class="sxs-lookup"><span data-stu-id="570b0-321">You must first pay any outstanding balance on the credit or debit card or bank account before you can change to paying by invoice.</span></span> <span data-ttu-id="570b0-322">若要了解如何更改付款方式，请参阅更改单个 [订阅的付款方式](manage-payment-methods.md#change-a-payment-method-for-a-single-subscription)。</span><span class="sxs-lookup"><span data-stu-id="570b0-322">To learn how to change payment methods, see [Change a payment method for a single subscription](manage-payment-methods.md#change-a-payment-method-for-a-single-subscription).</span></span>
 
-### <a name="to-receive-your-billing-statement-in-email"></a><span data-ttu-id="d9e7d-327">以电子邮件的方式接收帐单</span><span class="sxs-lookup"><span data-stu-id="d9e7d-327">To receive your billing statement in email</span></span>
+## <a name="can-i-change-from-paying-by-invoice-to-using-a-different-payment-method"></a><span data-ttu-id="570b0-323">我能否从发票支付更改为使用不同的付款方式？</span><span class="sxs-lookup"><span data-stu-id="570b0-323">Can I change from paying by invoice to using a different payment method?</span></span>
 
-::: moniker range="o365-worldwide"
+<span data-ttu-id="570b0-324">你无法自动从发票支付更改为使用不同的付款方式付款。</span><span class="sxs-lookup"><span data-stu-id="570b0-324">You can’t automatically change from paying by invoice to paying with a different payment method.</span></span> <span data-ttu-id="570b0-325">相反，你必须 [购买](../try-or-buy-microsoft-365.md#buy-a-different-subscription) 使用信用卡或借记卡或银行帐户支付的不同订阅，将所有用户移动到 [新](../subscriptions/move-users-different-subscription.md)订阅，然后取消 [旧订阅](../subscriptions/cancel-your-subscription.md)。</span><span class="sxs-lookup"><span data-stu-id="570b0-325">Instead, you must [buy a different subscription](../try-or-buy-microsoft-365.md#buy-a-different-subscription) paid for with a credit or debit card or bank account, [move all users to the new subscription](../subscriptions/move-users-different-subscription.md), and then [cancel the old subscription](../subscriptions/cancel-your-subscription.md).</span></span>
 
-1. <span data-ttu-id="d9e7d-328">在管理中心中，转到“**账单**” \> “<a href="https://go.microsoft.com/fwlink/p/?linkid=853212" target="_blank">账单通知</a>”页面。</span><span class="sxs-lookup"><span data-stu-id="d9e7d-328">In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=853212" target="_blank">Billing notifications</a> page.</span></span>
+## <a name="related-articles"></a><span data-ttu-id="570b0-326">相关文章</span><span class="sxs-lookup"><span data-stu-id="570b0-326">Related articles</span></span>
 
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. <span data-ttu-id="d9e7d-329">在管理中心中，转到“**账单**” > “<a href="https://go.microsoft.com/fwlink/p/?linkid=853213" target="_blank">账单通知</a>”页面。</span><span class="sxs-lookup"><span data-stu-id="d9e7d-329">In the admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=853213" target="_blank">Billing notifications</a> page.</span></span>
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-1. <span data-ttu-id="d9e7d-330">在管理中心中，转到“**账单**” > “<a href="https://go.microsoft.com/fwlink/p/?linkid=853215" target="_blank">账单通知</a>”页面。</span><span class="sxs-lookup"><span data-stu-id="d9e7d-330">In the admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=853215" target="_blank">Billing notifications</a> page.</span></span>
-
-::: moniker-end
-
-2. <span data-ttu-id="d9e7d-331">在“**以电子邮件附件形式接收帐单？**”下，将开关切换到“**开**”。</span><span class="sxs-lookup"><span data-stu-id="d9e7d-331">Under **Receive billing statement as email attachment?**, switch the toggle to **On**.</span></span>
-
-    <span data-ttu-id="d9e7d-332">将开关切换到" **关**"可随时停止接收帐单电子邮件。</span><span class="sxs-lookup"><span data-stu-id="d9e7d-332">You can stop receiving the billing statement emails at any time by switching the toggle to **Off**.</span></span>
-
-## <a name="need-to-switch-payment-methods"></a><span data-ttu-id="d9e7d-333">需要切换付款方法？</span><span class="sxs-lookup"><span data-stu-id="d9e7d-333">Need to switch payment methods?</span></span>
-
-<span data-ttu-id="d9e7d-334">如果选择发票、信用卡或银行帐户的原始原因发生改变，例如，如果调整订阅使付款金额减少，导致不再符合发票付款的条件，那么可以更改付款方式。</span><span class="sxs-lookup"><span data-stu-id="d9e7d-334">If your original reasons for choosing invoice, credit card, or bank account have changed, for example, if you adjust your subscription so that the payment amount is lower so that you no longer qualify for invoice payments, you can change your payment method.</span></span> <span data-ttu-id="d9e7d-335">有关详细信息，请参阅[更改付款方法](change-payment-method.md)。</span><span class="sxs-lookup"><span data-stu-id="d9e7d-335">For more information, see [Change your payment method](change-payment-method.md).</span></span>
-
-## <a name="related-articles"></a><span data-ttu-id="d9e7d-336">相关文章</span><span class="sxs-lookup"><span data-stu-id="d9e7d-336">Related articles</span></span>
-
-[<span data-ttu-id="d9e7d-337">管理支付方式</span><span class="sxs-lookup"><span data-stu-id="d9e7d-337">Manage payment methods</span></span>](manage-payment-methods.md)
-
-[<span data-ttu-id="d9e7d-338">了解你的帐单或发票</span><span class="sxs-lookup"><span data-stu-id="d9e7d-338">Understand your bill or invoice</span></span>](understand-your-invoice2.md)
+<span data-ttu-id="570b0-327">[管理付款方式 (](manage-payment-methods.md) 文章) </span><span class="sxs-lookup"><span data-stu-id="570b0-327">[Manage payment methods](manage-payment-methods.md) (article)</span></span>\
+<span data-ttu-id="570b0-328">[查看帐单或发票 (](view-your-bill-or-invoice.md) 文章) </span><span class="sxs-lookup"><span data-stu-id="570b0-328">[View your bill or invoice](view-your-bill-or-invoice.md) (article)</span></span>\
+<span data-ttu-id="570b0-329">[了解帐单或发票 (](understand-your-invoice2.md) 文章) </span><span class="sxs-lookup"><span data-stu-id="570b0-329">[Understand your bill or invoice](understand-your-invoice2.md) (article)</span></span>

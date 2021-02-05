@@ -21,214 +21,214 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: f09696b2-8c29-4588-a08b-b333da19810c
-description: 了解如何从 Microsoft 365 中删除旧域，以及如何将用户和组移动到另一个域。
-ms.openlocfilehash: 02ec704e400af76c25c0eb54de10291e2ef3caa2
-ms.sourcegitcommit: 849b365bd3eaa9f3c3a9ef9f5973ef81af9156fa
+description: 了解如何从 Microsoft 365 中删除旧域，以及将用户和组移动到另一个域。
+ms.openlocfilehash: 39f8d97abb3a424251d6847da02f0dcc58baff31
+ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49688257"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "50114005"
 ---
-# <a name="remove-a-domain"></a><span data-ttu-id="96320-103">删除域</span><span class="sxs-lookup"><span data-stu-id="96320-103">Remove a domain</span></span>
+# <a name="remove-a-domain"></a><span data-ttu-id="0e3c5-103">删除域</span><span class="sxs-lookup"><span data-stu-id="0e3c5-103">Remove a domain</span></span>
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> <span data-ttu-id="96320-104">管理中心正在发生改变。</span><span class="sxs-lookup"><span data-stu-id="96320-104">The admin center is changing.</span></span> <span data-ttu-id="96320-105">如果你的体验与此处提供的详细信息不匹配，请参阅[有关新版 Microsoft 365 管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)。</span><span class="sxs-lookup"><span data-stu-id="96320-105">If your experience doesn't match the details presented here, see [About the new Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).</span></span>
+> <span data-ttu-id="0e3c5-104">管理中心正在发生改变。</span><span class="sxs-lookup"><span data-stu-id="0e3c5-104">The admin center is changing.</span></span> <span data-ttu-id="0e3c5-105">如果你的体验与此处提供的详细信息不匹配，请参阅[有关新版 Microsoft 365 管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true)。</span><span class="sxs-lookup"><span data-stu-id="0e3c5-105">If your experience doesn't match the details presented here, see [About the new Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true).</span></span>
 
 ::: moniker-end
   
- <span data-ttu-id="96320-106">如果找不到要查找的内容，请 **[查看域常见问题解答](../setup/domains-faq.yml)**。</span><span class="sxs-lookup"><span data-stu-id="96320-106">**[Check the Domains FAQ](../setup/domains-faq.yml)** if you don't find what you're looking for.</span></span> 
+ <span data-ttu-id="0e3c5-106">如果找不到要查找的内容，请 **[查看域常见问题解答](../setup/domains-faq.yml)**。</span><span class="sxs-lookup"><span data-stu-id="0e3c5-106">**[Check the Domains FAQ](../setup/domains-faq.yml)** if you don't find what you're looking for.</span></span> 
   
-<span data-ttu-id="96320-107">是否要删除域，因为你想要将其添加到其他 Microsoft 365 订阅计划中？</span><span class="sxs-lookup"><span data-stu-id="96320-107">Are you removing your domain because you want to add it to a different Microsoft 365 subscription plan?</span></span> <span data-ttu-id="96320-108">或者只是想取消订阅？</span><span class="sxs-lookup"><span data-stu-id="96320-108">Or do you just want to cancel your subscription?</span></span> <span data-ttu-id="96320-109">可[更改计划或订阅](../../commerce/subscriptions/switch-to-a-different-plan.md)，也可[取消订阅](../../commerce/subscriptions/cancel-your-subscription.md)。</span><span class="sxs-lookup"><span data-stu-id="96320-109">You can [change your plan or subscription](../../commerce/subscriptions/switch-to-a-different-plan.md) or [cancel your subscription](../../commerce/subscriptions/cancel-your-subscription.md).</span></span>
+<span data-ttu-id="0e3c5-107">是否要删除域，因为你想要将其添加到其他 Microsoft 365 订阅计划中？</span><span class="sxs-lookup"><span data-stu-id="0e3c5-107">Are you removing your domain because you want to add it to a different Microsoft 365 subscription plan?</span></span> <span data-ttu-id="0e3c5-108">或者只是想取消订阅？</span><span class="sxs-lookup"><span data-stu-id="0e3c5-108">Or do you just want to cancel your subscription?</span></span> <span data-ttu-id="0e3c5-109">可[更改计划或订阅](../../commerce/subscriptions/switch-to-a-different-plan.md)，也可[取消订阅](../../commerce/subscriptions/cancel-your-subscription.md)。</span><span class="sxs-lookup"><span data-stu-id="0e3c5-109">You can [change your plan or subscription](../../commerce/subscriptions/switch-to-a-different-plan.md) or [cancel your subscription](../../commerce/subscriptions/cancel-your-subscription.md).</span></span>
   
-### <a name="step-1-move-users-to-another-domain"></a><span data-ttu-id="96320-110">步骤 1：将用户移动到另一个域</span><span class="sxs-lookup"><span data-stu-id="96320-110">Step 1: Move users to another domain</span></span>
+### <a name="step-1-move-users-to-another-domain"></a><span data-ttu-id="0e3c5-110">步骤 1：将用户移动到另一个域</span><span class="sxs-lookup"><span data-stu-id="0e3c5-110">Step 1: Move users to another domain</span></span>
 
-#### <a name="move-users"></a><span data-ttu-id="96320-111">移动用户</span><span class="sxs-lookup"><span data-stu-id="96320-111">Move users</span></span>
+#### <a name="move-users"></a><span data-ttu-id="0e3c5-111">移动用户</span><span class="sxs-lookup"><span data-stu-id="0e3c5-111">Move users</span></span>
 
 ::: moniker range="o365-worldwide"
 
-1. <span data-ttu-id="96320-112">转到<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">管理中心</a>。</span><span class="sxs-lookup"><span data-stu-id="96320-112">Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">admin center</a>.</span></span>
+1. <span data-ttu-id="0e3c5-112">转到<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">管理中心</a>。</span><span class="sxs-lookup"><span data-stu-id="0e3c5-112">Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">admin center</a>.</span></span>
 
-2. <span data-ttu-id="96320-113">选择 **用户** > **活动用户**。</span><span class="sxs-lookup"><span data-stu-id="96320-113">Select **Users** > **Active users**.</span></span>
+2. <span data-ttu-id="0e3c5-113">选择 **用户** > **活动用户**。</span><span class="sxs-lookup"><span data-stu-id="0e3c5-113">Select **Users** > **Active users**.</span></span>
 
-3. <span data-ttu-id="96320-114">选中要移动的所有用户的名称旁边的框。</span><span class="sxs-lookup"><span data-stu-id="96320-114">Select the boxes next to the names of all the users you want to move.</span></span>
+3. <span data-ttu-id="0e3c5-114">选中要移动的所有用户的名称旁边的框。</span><span class="sxs-lookup"><span data-stu-id="0e3c5-114">Select the boxes next to the names of all the users you want to move.</span></span>
 
-4. <span data-ttu-id="96320-115">选择 **页面\*\*\*\*("...) ，** 然后选择"更改 **域"。**</span><span class="sxs-lookup"><span data-stu-id="96320-115">Select **More options** (**…**), at the top of the page, and then choose **Change domains**.</span></span>
+4. <span data-ttu-id="0e3c5-115">选择 **页面\*\*\*\*("...) ，** 然后选择"更改 **域"。**</span><span class="sxs-lookup"><span data-stu-id="0e3c5-115">Select **More options** (**…**), at the top of the page, and then choose **Change domains**.</span></span>
 
-5. <span data-ttu-id="96320-116">在 **"更改域"** 窗格中，选择其他域。</span><span class="sxs-lookup"><span data-stu-id="96320-116">In the **Change domains** pane, select a different domain.</span></span>
+5. <span data-ttu-id="0e3c5-116">在 **"更改域"** 窗格中，选择其他域。</span><span class="sxs-lookup"><span data-stu-id="0e3c5-116">In the **Change domains** pane, select a different domain.</span></span>
 
-<span data-ttu-id="96320-p103">如果位于要删除的域中，则也需要自行执行此过程。编辑自己帐户的域时，必须先注销，然后使用选择继续的新域重新登录。</span><span class="sxs-lookup"><span data-stu-id="96320-p103">You'll need to do this for yourself, too, if you're on the domain that you want to remove. When you edit the domain for your account, you'll have to log out and log back in using the new domain you chose to continue.</span></span>
+<span data-ttu-id="0e3c5-p103">如果位于要删除的域中，则也需要自行执行此过程。编辑自己帐户的域时，必须先注销，然后使用选择继续的新域重新登录。</span><span class="sxs-lookup"><span data-stu-id="0e3c5-p103">You'll need to do this for yourself, too, if you're on the domain that you want to remove. When you edit the domain for your account, you'll have to log out and log back in using the new domain you chose to continue.</span></span>
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. <span data-ttu-id="96320-119">转到<a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">管理中心</a>。</span><span class="sxs-lookup"><span data-stu-id="96320-119">Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">admin center</a>.</span></span>  
+1. <span data-ttu-id="0e3c5-119">转到<a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">管理中心</a>。</span><span class="sxs-lookup"><span data-stu-id="0e3c5-119">Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">admin center</a>.</span></span>  
 
-2. <span data-ttu-id="96320-120">选择 **用户** > **活动用户**。</span><span class="sxs-lookup"><span data-stu-id="96320-120">Select **Users** > **Active users**.</span></span>
+2. <span data-ttu-id="0e3c5-120">选择 **用户** > **活动用户**。</span><span class="sxs-lookup"><span data-stu-id="0e3c5-120">Select **Users** > **Active users**.</span></span>
 
-3. <span data-ttu-id="96320-121">选中要移动的所有用户的名称旁边的框。</span><span class="sxs-lookup"><span data-stu-id="96320-121">Select the boxes next to the names of all the users you want to move.</span></span>
+3. <span data-ttu-id="0e3c5-121">选中要移动的所有用户的名称旁边的框。</span><span class="sxs-lookup"><span data-stu-id="0e3c5-121">Select the boxes next to the names of all the users you want to move.</span></span>
 
-4. <span data-ttu-id="96320-122">在页面顶部，选择"**更多** > **编辑域"。**</span><span class="sxs-lookup"><span data-stu-id="96320-122">At the top of the page, choose **More** > **Edit domains**.</span></span>
+4. <span data-ttu-id="0e3c5-122">在页面顶部，选择"**更多** > **编辑域"。**</span><span class="sxs-lookup"><span data-stu-id="0e3c5-122">At the top of the page, choose **More** > **Edit domains**.</span></span>
 
-5. <span data-ttu-id="96320-123">在 **"编辑域"** 窗格中，选择其他域。</span><span class="sxs-lookup"><span data-stu-id="96320-123">In the **Edit domains** pane, select a different domain.</span></span>
+5. <span data-ttu-id="0e3c5-123">在 **"编辑域"** 窗格中，选择其他域。</span><span class="sxs-lookup"><span data-stu-id="0e3c5-123">In the **Edit domains** pane, select a different domain.</span></span>
   
-<span data-ttu-id="96320-p104">如果位于要删除的域中，则也需要自行执行此过程。编辑自己帐户的域时，必须先注销，然后使用选择继续的新域重新登录。</span><span class="sxs-lookup"><span data-stu-id="96320-p104">You'll need to do this for yourself, too, if you're on the domain that you want to remove. When you edit the domain for your account, you'll have to log out and log back in using the new domain you chose to continue.</span></span>
+<span data-ttu-id="0e3c5-p104">如果位于要删除的域中，则也需要自行执行此过程。编辑自己帐户的域时，必须先注销，然后使用选择继续的新域重新登录。</span><span class="sxs-lookup"><span data-stu-id="0e3c5-p104">You'll need to do this for yourself, too, if you're on the domain that you want to remove. When you edit the domain for your account, you'll have to log out and log back in using the new domain you chose to continue.</span></span>
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. <span data-ttu-id="96320-126">转到<a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">管理中心</a>。</span><span class="sxs-lookup"><span data-stu-id="96320-126">Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">admin center</a>.</span></span>  
+1. <span data-ttu-id="0e3c5-126">转到<a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">管理中心</a>。</span><span class="sxs-lookup"><span data-stu-id="0e3c5-126">Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">admin center</a>.</span></span>  
 
-2. <span data-ttu-id="96320-127">选择 **用户** > **活动用户**。</span><span class="sxs-lookup"><span data-stu-id="96320-127">Select **Users** > **Active users**.</span></span>
+2. <span data-ttu-id="0e3c5-127">选择 **用户** > **活动用户**。</span><span class="sxs-lookup"><span data-stu-id="0e3c5-127">Select **Users** > **Active users**.</span></span>
 
-3. <span data-ttu-id="96320-128">选中要移动的所有用户的名称旁边的框。</span><span class="sxs-lookup"><span data-stu-id="96320-128">Select the boxes next to the names of all the users you want to move.</span></span>
+3. <span data-ttu-id="0e3c5-128">选中要移动的所有用户的名称旁边的框。</span><span class="sxs-lookup"><span data-stu-id="0e3c5-128">Select the boxes next to the names of all the users you want to move.</span></span>
 
-4. <span data-ttu-id="96320-129">在页面顶部，选择"**更多** > **编辑域"。**</span><span class="sxs-lookup"><span data-stu-id="96320-129">At the top of the page, choose **More** > **Edit domains**.</span></span>
+4. <span data-ttu-id="0e3c5-129">在页面顶部，选择"**更多** > **编辑域"。**</span><span class="sxs-lookup"><span data-stu-id="0e3c5-129">At the top of the page, choose **More** > **Edit domains**.</span></span>
 
-5. <span data-ttu-id="96320-130">在 **"编辑域"** 窗格中，选择其他域。</span><span class="sxs-lookup"><span data-stu-id="96320-130">In the **Edit domains** pane, select a different domain.</span></span>
+5. <span data-ttu-id="0e3c5-130">在 **"编辑域"** 窗格中，选择其他域。</span><span class="sxs-lookup"><span data-stu-id="0e3c5-130">In the **Edit domains** pane, select a different domain.</span></span>
   
-<span data-ttu-id="96320-p105">如果位于要删除的域中，则也需要自行执行此过程。编辑自己帐户的域时，必须先注销，然后使用选择继续的新域重新登录。</span><span class="sxs-lookup"><span data-stu-id="96320-p105">You'll need to do this for yourself, too, if you're on the domain that you want to remove. When you edit the domain for your account, you'll have to log out and log back in using the new domain you chose to continue.</span></span>
+<span data-ttu-id="0e3c5-p105">如果位于要删除的域中，则也需要自行执行此过程。编辑自己帐户的域时，必须先注销，然后使用选择继续的新域重新登录。</span><span class="sxs-lookup"><span data-stu-id="0e3c5-p105">You'll need to do this for yourself, too, if you're on the domain that you want to remove. When you edit the domain for your account, you'll have to log out and log back in using the new domain you chose to continue.</span></span>
 
 ::: moniker-end
 
-#### <a name="move-yourself"></a><span data-ttu-id="96320-133">移动你自己</span><span class="sxs-lookup"><span data-stu-id="96320-133">Move yourself</span></span>
+#### <a name="move-yourself"></a><span data-ttu-id="0e3c5-133">移动你自己</span><span class="sxs-lookup"><span data-stu-id="0e3c5-133">Move yourself</span></span>
 
 ::: moniker range="o365-worldwide"
 
-1. <span data-ttu-id="96320-134">转到<a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">管理中心</a>。</span><span class="sxs-lookup"><span data-stu-id="96320-134">Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">admin center</a>.</span></span>
+1. <span data-ttu-id="0e3c5-134">转到<a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">管理中心</a>。</span><span class="sxs-lookup"><span data-stu-id="0e3c5-134">Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">admin center</a>.</span></span>
 
-2. <span data-ttu-id="96320-135">转到 **"用户** \> **活动用户"，** 然后从列表中选择你的帐户。</span><span class="sxs-lookup"><span data-stu-id="96320-135">Go to **Users** \> **Active Users**, and select your account from the list.</span></span>
+2. <span data-ttu-id="0e3c5-135">转到 **"用户** \> **活动用户"，** 然后从列表中选择你的帐户。</span><span class="sxs-lookup"><span data-stu-id="0e3c5-135">Go to **Users** \> **Active Users**, and select your account from the list.</span></span>
 
-3. <span data-ttu-id="96320-136">在" **帐户** "选项卡上， **选择"管理用户名**"，然后选择其他域。</span><span class="sxs-lookup"><span data-stu-id="96320-136">On the **Account** tab, select **Manage username**, and then choose a different domain.</span></span>
+3. <span data-ttu-id="0e3c5-136">在" **帐户** "选项卡上， **选择"管理用户名**"，然后选择其他域。</span><span class="sxs-lookup"><span data-stu-id="0e3c5-136">On the **Account** tab, select **Manage username**, and then choose a different domain.</span></span>
   
-4. <span data-ttu-id="96320-137">At the top， select your account name， then select **Sign Out.**</span><span class="sxs-lookup"><span data-stu-id="96320-137">At the top, select your account name, then select **Sign Out**.</span></span>
+4. <span data-ttu-id="0e3c5-137">At the top， select your account name， then select **Sign Out.**</span><span class="sxs-lookup"><span data-stu-id="0e3c5-137">At the top, select your account name, then select **Sign Out**.</span></span>
 
-5. <span data-ttu-id="96320-138">使用新域和相同密码登录。</span><span class="sxs-lookup"><span data-stu-id="96320-138">Sign in with the new domain and your same password.</span></span>
+5. <span data-ttu-id="0e3c5-138">使用新域和相同密码登录。</span><span class="sxs-lookup"><span data-stu-id="0e3c5-138">Sign in with the new domain and your same password.</span></span>
 
-<span data-ttu-id="96320-139">也可使用 PowerShell 将用户移动到另一个域。</span><span class="sxs-lookup"><span data-stu-id="96320-139">You can also use PowerShell to move users to another domain.</span></span> <span data-ttu-id="96320-140">有关详细信息，请参阅 [Set-MsolUserPrincipalName](https://docs.microsoft.com/powershell/module/msonline/set-msoluserprincipalname?view=azureadps-1.0)。</span><span class="sxs-lookup"><span data-stu-id="96320-140">See [Set-MsolUserPrincipalName](https://docs.microsoft.com/powershell/module/msonline/set-msoluserprincipalname?view=azureadps-1.0) for more information.</span></span> <span data-ttu-id="96320-141">若要设置默认域，请使用 [Set-MsolDomain](https://docs.microsoft.com/powershell/module/msonline/set-msoldomain?view=azureadps-1.0)。</span><span class="sxs-lookup"><span data-stu-id="96320-141">To set the default domain, use [Set-MsolDomain](https://docs.microsoft.com/powershell/module/msonline/set-msoldomain?view=azureadps-1.0).</span></span>
+<span data-ttu-id="0e3c5-139">也可使用 PowerShell 将用户移动到另一个域。</span><span class="sxs-lookup"><span data-stu-id="0e3c5-139">You can also use PowerShell to move users to another domain.</span></span> <span data-ttu-id="0e3c5-140">有关详细信息，请参阅 [Set-MsolUserPrincipalName](https://docs.microsoft.com/powershell/module/msonline/set-msoluserprincipalname?view=azureadps-1.0)。</span><span class="sxs-lookup"><span data-stu-id="0e3c5-140">See [Set-MsolUserPrincipalName](https://docs.microsoft.com/powershell/module/msonline/set-msoluserprincipalname?view=azureadps-1.0) for more information.</span></span> <span data-ttu-id="0e3c5-141">若要设置默认域，请使用 [Set-MsolDomain](https://docs.microsoft.com/powershell/module/msonline/set-msoldomain?view=azureadps-1.0)。</span><span class="sxs-lookup"><span data-stu-id="0e3c5-141">To set the default domain, use [Set-MsolDomain](https://docs.microsoft.com/powershell/module/msonline/set-msoldomain?view=azureadps-1.0).</span></span>
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. <span data-ttu-id="96320-142">转到 **"用户** \> **活动用户"，** 然后从列表中选择你的姓名。</span><span class="sxs-lookup"><span data-stu-id="96320-142">Go to **Users** \> **Active Users**, and select your name in the list.</span></span>
+1. <span data-ttu-id="0e3c5-142">转到 **"用户** \> **活动用户"，** 然后从列表中选择你的姓名。</span><span class="sxs-lookup"><span data-stu-id="0e3c5-142">Go to **Users** \> **Active Users**, and select your name in the list.</span></span>
 
-2. <span data-ttu-id="96320-143">在 **"用户名/电子邮件** "部分，选择 **"** 编辑"，然后选择其他域。</span><span class="sxs-lookup"><span data-stu-id="96320-143">In the **Username / Email** section, select **Edit**, and then choose a different domain.</span></span>
+2. <span data-ttu-id="0e3c5-143">在 **"用户名/电子邮件** "部分，选择 **"编辑**"，然后选择其他域。</span><span class="sxs-lookup"><span data-stu-id="0e3c5-143">In the **Username / Email** section, select **Edit**, and then choose a different domain.</span></span>
 
-3. <span data-ttu-id="96320-144">选择 **"设置为主** > **保存** > **关闭"。**</span><span class="sxs-lookup"><span data-stu-id="96320-144">Select **Set as primary** > **Save** > **Close**.</span></span>
+3. <span data-ttu-id="0e3c5-144">选择 **"设置为主** > **保存** > **关闭"。**</span><span class="sxs-lookup"><span data-stu-id="0e3c5-144">Select **Set as primary** > **Save** > **Close**.</span></span>
   
-4. <span data-ttu-id="96320-145">At the top， select your account name， then select **Sign Out.**</span><span class="sxs-lookup"><span data-stu-id="96320-145">At the top, select your account name, then select **Sign Out**.</span></span>
+4. <span data-ttu-id="0e3c5-145">At the top， select your account name， then select **Sign Out.**</span><span class="sxs-lookup"><span data-stu-id="0e3c5-145">At the top, select your account name, then select **Sign Out**.</span></span>
 
-5. <span data-ttu-id="96320-146">使用新域和相同密码登录。</span><span class="sxs-lookup"><span data-stu-id="96320-146">Sign in with the new domain and your same password.</span></span>
+5. <span data-ttu-id="0e3c5-146">使用新域和相同密码登录。</span><span class="sxs-lookup"><span data-stu-id="0e3c5-146">Sign in with the new domain and your same password.</span></span>
 
-<span data-ttu-id="96320-147">也可使用 PowerShell 将用户移动到另一个域。</span><span class="sxs-lookup"><span data-stu-id="96320-147">You can also use PowerShell to move users to another domain.</span></span> <span data-ttu-id="96320-148">有关详细信息，请参阅 [Set-MsolUserPrincipalName](https://docs.microsoft.com/powershell/module/msonline/set-msoluserprincipalname?view=azureadps-1.0)。</span><span class="sxs-lookup"><span data-stu-id="96320-148">See [Set-MsolUserPrincipalName](https://docs.microsoft.com/powershell/module/msonline/set-msoluserprincipalname?view=azureadps-1.0) for more information.</span></span> <span data-ttu-id="96320-149">若要设置默认域，请使用 [Set-MsolDomain](https://docs.microsoft.com/powershell/module/msonline/set-msoldomain?view=azureadps-1.0)。</span><span class="sxs-lookup"><span data-stu-id="96320-149">To set the default domain, use [Set-MsolDomain](https://docs.microsoft.com/powershell/module/msonline/set-msoldomain?view=azureadps-1.0).</span></span>
+<span data-ttu-id="0e3c5-147">也可使用 PowerShell 将用户移动到另一个域。</span><span class="sxs-lookup"><span data-stu-id="0e3c5-147">You can also use PowerShell to move users to another domain.</span></span> <span data-ttu-id="0e3c5-148">有关详细信息，请参阅 [Set-MsolUserPrincipalName](https://docs.microsoft.com/powershell/module/msonline/set-msoluserprincipalname?view=azureadps-1.0)。</span><span class="sxs-lookup"><span data-stu-id="0e3c5-148">See [Set-MsolUserPrincipalName](https://docs.microsoft.com/powershell/module/msonline/set-msoluserprincipalname?view=azureadps-1.0) for more information.</span></span> <span data-ttu-id="0e3c5-149">若要设置默认域，请使用 [Set-MsolDomain](https://docs.microsoft.com/powershell/module/msonline/set-msoldomain?view=azureadps-1.0)。</span><span class="sxs-lookup"><span data-stu-id="0e3c5-149">To set the default domain, use [Set-MsolDomain](https://docs.microsoft.com/powershell/module/msonline/set-msoldomain?view=azureadps-1.0).</span></span>
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. <span data-ttu-id="96320-150">转到 **"用户** \> **活动用户"，** 然后从列表中选择你的姓名。</span><span class="sxs-lookup"><span data-stu-id="96320-150">Go to **Users** \> **Active Users**, and select your name in the list.</span></span>
+1. <span data-ttu-id="0e3c5-150">转到 **"用户** \> **活动用户"，** 然后从列表中选择你的姓名。</span><span class="sxs-lookup"><span data-stu-id="0e3c5-150">Go to **Users** \> **Active Users**, and select your name in the list.</span></span>
 
-2. <span data-ttu-id="96320-151">在 **"用户名/电子邮件** "部分，选择 **"编辑**"，然后选择其他域。</span><span class="sxs-lookup"><span data-stu-id="96320-151">In the **Username / Email** section, select **Edit**, and then choose a different domain.</span></span>
+2. <span data-ttu-id="0e3c5-151">在 **"用户名/电子邮件** "部分，选择 **"编辑**"，然后选择其他域。</span><span class="sxs-lookup"><span data-stu-id="0e3c5-151">In the **Username / Email** section, select **Edit**, and then choose a different domain.</span></span>
 
-3. <span data-ttu-id="96320-152">选择 **"设置为主** > **保存** > **关闭"。**</span><span class="sxs-lookup"><span data-stu-id="96320-152">Select **Set as primary** > **Save** > **Close**.</span></span>
+3. <span data-ttu-id="0e3c5-152">选择 **"设置为主** > **保存** > **关闭"。**</span><span class="sxs-lookup"><span data-stu-id="0e3c5-152">Select **Set as primary** > **Save** > **Close**.</span></span>
   
-4. <span data-ttu-id="96320-153">At the top， select your account name， then select **Sign Out.**</span><span class="sxs-lookup"><span data-stu-id="96320-153">At the top, select your account name, then select **Sign Out**.</span></span>
+4. <span data-ttu-id="0e3c5-153">At the top， select your account name， then select **Sign Out.**</span><span class="sxs-lookup"><span data-stu-id="0e3c5-153">At the top, select your account name, then select **Sign Out**.</span></span>
 
-5. <span data-ttu-id="96320-154">使用新域和相同密码登录。</span><span class="sxs-lookup"><span data-stu-id="96320-154">Sign in with the new domain and your same password.</span></span>
+5. <span data-ttu-id="0e3c5-154">使用新域和相同密码登录。</span><span class="sxs-lookup"><span data-stu-id="0e3c5-154">Sign in with the new domain and your same password.</span></span>
 
-<span data-ttu-id="96320-155">也可使用 PowerShell 将用户移动到另一个域。</span><span class="sxs-lookup"><span data-stu-id="96320-155">You can also use PowerShell to move users to another domain.</span></span> <span data-ttu-id="96320-156">有关详细信息，请参阅 [Set-MsolUserPrincipalName](https://docs.microsoft.com/powershell/module/msonline/set-msoluserprincipalname?view=azureadps-1.0)。</span><span class="sxs-lookup"><span data-stu-id="96320-156">See [Set-MsolUserPrincipalName](https://docs.microsoft.com/powershell/module/msonline/set-msoluserprincipalname?view=azureadps-1.0) for more information.</span></span> <span data-ttu-id="96320-157">若要设置默认域，请使用 [Set-MsolDomain](https://docs.microsoft.com/powershell/module/msonline/set-msoldomain?view=azureadps-1.0)。</span><span class="sxs-lookup"><span data-stu-id="96320-157">To set the default domain, use [Set-MsolDomain](https://docs.microsoft.com/powershell/module/msonline/set-msoldomain?view=azureadps-1.0).</span></span>
+<span data-ttu-id="0e3c5-155">也可使用 PowerShell 将用户移动到另一个域。</span><span class="sxs-lookup"><span data-stu-id="0e3c5-155">You can also use PowerShell to move users to another domain.</span></span> <span data-ttu-id="0e3c5-156">有关详细信息，请参阅 [Set-MsolUserPrincipalName](https://docs.microsoft.com/powershell/module/msonline/set-msoluserprincipalname?view=azureadps-1.0)。</span><span class="sxs-lookup"><span data-stu-id="0e3c5-156">See [Set-MsolUserPrincipalName](https://docs.microsoft.com/powershell/module/msonline/set-msoluserprincipalname?view=azureadps-1.0) for more information.</span></span> <span data-ttu-id="0e3c5-157">若要设置默认域，请使用 [Set-MsolDomain](https://docs.microsoft.com/powershell/module/msonline/set-msoldomain?view=azureadps-1.0)。</span><span class="sxs-lookup"><span data-stu-id="0e3c5-157">To set the default domain, use [Set-MsolDomain](https://docs.microsoft.com/powershell/module/msonline/set-msoldomain?view=azureadps-1.0).</span></span>
 
 ::: moniker-end
 
-### <a name="step-2-move-groups-to-another-domain"></a><span data-ttu-id="96320-158">步骤 2：将组移动到另一个域</span><span class="sxs-lookup"><span data-stu-id="96320-158">Step 2: Move groups to another domain</span></span>
+### <a name="step-2-move-groups-to-another-domain"></a><span data-ttu-id="0e3c5-158">步骤 2：将组移动到另一个域</span><span class="sxs-lookup"><span data-stu-id="0e3c5-158">Step 2: Move groups to another domain</span></span>
 
 ::: moniker range="o365-worldwide"
 
-1. <span data-ttu-id="96320-159">在管理中心，转到"组 \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">组"</a>页。</span><span class="sxs-lookup"><span data-stu-id="96320-159">In the admin center, go to the **Groups** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Groups</a> page.</span></span>
+1. <span data-ttu-id="0e3c5-159">在管理中心，转到"组 \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">组"</a>页。</span><span class="sxs-lookup"><span data-stu-id="0e3c5-159">In the admin center, go to the **Groups** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Groups</a> page.</span></span>
   
-2. <span data-ttu-id="96320-160">选择组名称，然后在电子邮件地址下的"常规 **"选项卡** 上 **，选择"主\*\*\*\*"，选择"编辑"。**</span><span class="sxs-lookup"><span data-stu-id="96320-160">Select the group name, and then on the **General** tab under **Email address, Primary**, select **Edit**.</span></span>
+2. <span data-ttu-id="0e3c5-160">选择组名称，然后在电子邮件地址下的"常规 **"选项卡** 上 **，选择"主\*\*\*\*"，选择"编辑"。**</span><span class="sxs-lookup"><span data-stu-id="0e3c5-160">Select the group name, and then on the **General** tab under **Email address, Primary**, select **Edit**.</span></span>
 
-3. <span data-ttu-id="96320-161">使用下拉列表选择另一个域。</span><span class="sxs-lookup"><span data-stu-id="96320-161">Use the drop-down list to choose another domain.</span></span>
+3. <span data-ttu-id="0e3c5-161">使用下拉列表选择另一个域。</span><span class="sxs-lookup"><span data-stu-id="0e3c5-161">Use the drop-down list to choose another domain.</span></span>
 
-4. <span data-ttu-id="96320-162">依次选择“**保存**”和“**关闭**”。</span><span class="sxs-lookup"><span data-stu-id="96320-162">Select **Save**, then **Close**.</span></span> <span data-ttu-id="96320-163">对与要删除的域关联的任何组或通讯组列表重复此过程。</span><span class="sxs-lookup"><span data-stu-id="96320-163">Repeat this process for any groups or distribution lists associated with the domain that you want to remove.</span></span>
+4. <span data-ttu-id="0e3c5-162">依次选择“**保存**”和“**关闭**”。</span><span class="sxs-lookup"><span data-stu-id="0e3c5-162">Select **Save**, then **Close**.</span></span> <span data-ttu-id="0e3c5-163">对与要删除的域关联的任何组或通讯组列表重复此过程。</span><span class="sxs-lookup"><span data-stu-id="0e3c5-163">Repeat this process for any groups or distribution lists associated with the domain that you want to remove.</span></span>
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. <span data-ttu-id="96320-164">在 <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">管理中心</a>，转到"组 > **组"** 页。</span><span class="sxs-lookup"><span data-stu-id="96320-164">In the <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">admin center</a>,  go to the **Groups** > **Groups** page.</span></span>
+1. <span data-ttu-id="0e3c5-164">在 <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">管理中心</a>，转到"组 > **组"** 页。</span><span class="sxs-lookup"><span data-stu-id="0e3c5-164">In the <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">admin center</a>,  go to the **Groups** > **Groups** page.</span></span>
 
-2. <span data-ttu-id="96320-165">选择组名称，然后选择"名称 **"** 旁边的"编辑 **"。**</span><span class="sxs-lookup"><span data-stu-id="96320-165">Select the group name, and then select **Edit** next to **Name**.</span></span>
+2. <span data-ttu-id="0e3c5-165">选择组名称，然后选择"名称 **"** 旁边的"编辑 **"。**</span><span class="sxs-lookup"><span data-stu-id="0e3c5-165">Select the group name, and then select **Edit** next to **Name**.</span></span>
 
-3. <span data-ttu-id="96320-166">使用下拉列表选择另一个域。</span><span class="sxs-lookup"><span data-stu-id="96320-166">Use the drop-down list to choose another domain.</span></span>
+3. <span data-ttu-id="0e3c5-166">使用下拉列表选择另一个域。</span><span class="sxs-lookup"><span data-stu-id="0e3c5-166">Use the drop-down list to choose another domain.</span></span>
 
-4. <span data-ttu-id="96320-167">依次选择“**保存**”和“**关闭**”。</span><span class="sxs-lookup"><span data-stu-id="96320-167">Select **Save**, then **Close**.</span></span> <span data-ttu-id="96320-168">对与要删除的域关联的任何组或通讯组列表重复此过程。</span><span class="sxs-lookup"><span data-stu-id="96320-168">Repeat this process for any groups or distribution lists associated with the domain that you want to remove.</span></span>
+4. <span data-ttu-id="0e3c5-167">依次选择“**保存**”和“**关闭**”。</span><span class="sxs-lookup"><span data-stu-id="0e3c5-167">Select **Save**, then **Close**.</span></span> <span data-ttu-id="0e3c5-168">对与要删除的域关联的任何组或通讯组列表重复此过程。</span><span class="sxs-lookup"><span data-stu-id="0e3c5-168">Repeat this process for any groups or distribution lists associated with the domain that you want to remove.</span></span>
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. <span data-ttu-id="96320-169">在 <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">管理中心</a>，转到"组 > **组"** 页。</span><span class="sxs-lookup"><span data-stu-id="96320-169">In the <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">admin center</a>,  go to the **Groups** > **Groups** page.</span></span>
+1. <span data-ttu-id="0e3c5-169">在 <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">管理中心</a>，转到"组 > **组"** 页。</span><span class="sxs-lookup"><span data-stu-id="0e3c5-169">In the <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">admin center</a>,  go to the **Groups** > **Groups** page.</span></span>
 
-2. <span data-ttu-id="96320-170">选择组名称，然后选择"名称 **"** 旁边的"编辑 **"。**</span><span class="sxs-lookup"><span data-stu-id="96320-170">Select the group name, and then select **Edit** next to **Name**.</span></span>
+2. <span data-ttu-id="0e3c5-170">选择组名称，然后选择"名称 **"** 旁边的"编辑 **"。**</span><span class="sxs-lookup"><span data-stu-id="0e3c5-170">Select the group name, and then select **Edit** next to **Name**.</span></span>
 
-3. <span data-ttu-id="96320-171">使用下拉列表选择另一个域。</span><span class="sxs-lookup"><span data-stu-id="96320-171">Use the drop-down list to choose another domain.</span></span>
+3. <span data-ttu-id="0e3c5-171">使用下拉列表选择另一个域。</span><span class="sxs-lookup"><span data-stu-id="0e3c5-171">Use the drop-down list to choose another domain.</span></span>
 
-4. <span data-ttu-id="96320-172">依次选择“**保存**”和“**关闭**”。</span><span class="sxs-lookup"><span data-stu-id="96320-172">Select **Save**, then **Close**.</span></span> <span data-ttu-id="96320-173">对与要删除的域关联的任何组或通讯组列表重复此过程。</span><span class="sxs-lookup"><span data-stu-id="96320-173">Repeat this process for any groups or distribution lists associated with the domain that you want to remove.</span></span>
+4. <span data-ttu-id="0e3c5-172">依次选择“**保存**”和“**关闭**”。</span><span class="sxs-lookup"><span data-stu-id="0e3c5-172">Select **Save**, then **Close**.</span></span> <span data-ttu-id="0e3c5-173">对与要删除的域关联的任何组或通讯组列表重复此过程。</span><span class="sxs-lookup"><span data-stu-id="0e3c5-173">Repeat this process for any groups or distribution lists associated with the domain that you want to remove.</span></span>
 
 ::: moniker-end
 
-### <a name="step-3-remove-the-old-domain"></a><span data-ttu-id="96320-174">步骤 3：删除旧域</span><span class="sxs-lookup"><span data-stu-id="96320-174">Step 3: Remove the old domain</span></span>
+### <a name="step-3-remove-the-old-domain"></a><span data-ttu-id="0e3c5-174">步骤 3：删除旧域</span><span class="sxs-lookup"><span data-stu-id="0e3c5-174">Step 3: Remove the old domain</span></span>
 
 ::: moniker range="o365-worldwide"
 
-1. <span data-ttu-id="96320-175">在管理中心，转到“**设置**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">域</a>”页面。</span><span class="sxs-lookup"><span data-stu-id="96320-175">In the admin center, go to the **Settings** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domains</a> page.</span></span>
+1. <span data-ttu-id="0e3c5-175">在管理中心，转到“**设置**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">域</a>”页面。</span><span class="sxs-lookup"><span data-stu-id="0e3c5-175">In the admin center, go to the **Settings** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domains</a> page.</span></span>
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. <span data-ttu-id="96320-176">在管理中心，转到"设置域 **"** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank"></a>页。</span><span class="sxs-lookup"><span data-stu-id="96320-176">In the admin center, go to the **Setup** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">Domains</a> page.</span></span>
+1. <span data-ttu-id="0e3c5-176">在管理中心，转到"设置域 **"** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank"></a>页。</span><span class="sxs-lookup"><span data-stu-id="0e3c5-176">In the admin center, go to the **Setup** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">Domains</a> page.</span></span>
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. <span data-ttu-id="96320-177">在管理中心，转到"设置域 **"** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank"></a>页。</span><span class="sxs-lookup"><span data-stu-id="96320-177">In the admin center, go to the **Setup** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank">Domains</a> page.</span></span>
+1. <span data-ttu-id="0e3c5-177">在管理中心，转到"设置域 **"** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank"></a>页。</span><span class="sxs-lookup"><span data-stu-id="0e3c5-177">In the admin center, go to the **Setup** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank">Domains</a> page.</span></span>
 
 ::: moniker-end
   
-2. <span data-ttu-id="96320-178">在 **"域** "页上，选择要删除的域。</span><span class="sxs-lookup"><span data-stu-id="96320-178">On the **Domains** page, select the domain that you want to remove.</span></span>
+2. <span data-ttu-id="0e3c5-178">在 **"域** "页上，选择要删除的域。</span><span class="sxs-lookup"><span data-stu-id="0e3c5-178">On the **Domains** page, select the domain that you want to remove.</span></span>
 
-3. <span data-ttu-id="96320-179">在右侧窗格中，选择"删除 **"。**</span><span class="sxs-lookup"><span data-stu-id="96320-179">In the right pane, select **Remove**.</span></span>
+3. <span data-ttu-id="0e3c5-179">在右侧窗格中，选择"删除 **"。**</span><span class="sxs-lookup"><span data-stu-id="0e3c5-179">In the right pane, select **Remove**.</span></span>
 
-4. <span data-ttu-id="96320-180">按照任何其他提示，然后选择"关闭 **"。**</span><span class="sxs-lookup"><span data-stu-id="96320-180">Follow any additional prompts, and then select **Close**.</span></span>
+4. <span data-ttu-id="0e3c5-180">按照任何其他提示，然后选择"关闭 **"。**</span><span class="sxs-lookup"><span data-stu-id="0e3c5-180">Follow any additional prompts, and then select **Close**.</span></span>
 
-## <a name="how-long-does-it-take-for-a-domain-to-be-removed"></a><span data-ttu-id="96320-181">删除域需要多长时间？</span><span class="sxs-lookup"><span data-stu-id="96320-181">How long does it take for a domain to be removed?</span></span>
+## <a name="how-long-does-it-take-for-a-domain-to-be-removed"></a><span data-ttu-id="0e3c5-181">删除域需要多长时间？</span><span class="sxs-lookup"><span data-stu-id="0e3c5-181">How long does it take for a domain to be removed?</span></span>
 
-<span data-ttu-id="96320-182">如果没有在很多位置（如安全组、通讯组列表、用户和 Microsoft 365 组）中引用域，Microsoft 365 删除域可能需要 5 分钟。</span><span class="sxs-lookup"><span data-stu-id="96320-182">It can take as little as 5 minutes for Microsoft 365 to remove a domain if it's not referenced in a lot of places such as security groups, distribution lists, users, and Microsoft 365 groups.</span></span> <span data-ttu-id="96320-183">如果存在众多使用该域的引用，则删除域可能需要数小时（一天）。</span><span class="sxs-lookup"><span data-stu-id="96320-183">If there are many references that use the domain it can take several hours (a day) for the domain to be removed.</span></span>
+<span data-ttu-id="0e3c5-182">如果没有在很多位置（如安全组、通讯组列表、用户和 Microsoft 365 组）中引用域，则 Microsoft 365 删除域可能需要 5 分钟。</span><span class="sxs-lookup"><span data-stu-id="0e3c5-182">It can take as little as 5 minutes for Microsoft 365 to remove a domain if it's not referenced in a lot of places such as security groups, distribution lists, users, and Microsoft 365 groups.</span></span> <span data-ttu-id="0e3c5-183">如果存在众多使用该域的引用，则删除域可能需要数小时（一天）。</span><span class="sxs-lookup"><span data-stu-id="0e3c5-183">If there are many references that use the domain it can take several hours (a day) for the domain to be removed.</span></span>
   
-<span data-ttu-id="96320-p113">如果有数百或数千用户，使用 PowerShell 查询所有用户，然后将其移至另一个域。否则，可能大量用户将在 UI 中丢失，然后当你要删除域时，将无法删除而且找不到原因。有关详细信息，请参阅 [Set-MsolUserPrincipalName](https://docs.microsoft.com/powershell/module/msonline/set-msoluserprincipalname?view=azureadps-1.0)。若要设置默认域，请使用 [Set-MsolDomain](https://docs.microsoft.com/powershell/module/msonline/set-msoldomain?view=azureadps-1.0)。</span><span class="sxs-lookup"><span data-stu-id="96320-p113">If you have hundreds or thousands of users, use PowerShell to query for all users and then move them to another domain. Otherwise, it's possible for a handful of users to be missed in the UI, and then when you go to remove the domain, you won't be able to and you won't know why. See [Set-MsolUserPrincipalName](https://docs.microsoft.com/powershell/module/msonline/set-msoluserprincipalname?view=azureadps-1.0) for more information. To set the default domain, use [Set-MsolDomain](https://docs.microsoft.com/powershell/module/msonline/set-msoldomain?view=azureadps-1.0).</span></span>
+<span data-ttu-id="0e3c5-p113">如果有数百或数千用户，使用 PowerShell 查询所有用户，然后将其移至另一个域。否则，可能大量用户将在 UI 中丢失，然后当你要删除域时，将无法删除而且找不到原因。有关详细信息，请参阅 [Set-MsolUserPrincipalName](https://docs.microsoft.com/powershell/module/msonline/set-msoluserprincipalname?view=azureadps-1.0)。若要设置默认域，请使用 [Set-MsolDomain](https://docs.microsoft.com/powershell/module/msonline/set-msoldomain?view=azureadps-1.0)。</span><span class="sxs-lookup"><span data-stu-id="0e3c5-p113">If you have hundreds or thousands of users, use PowerShell to query for all users and then move them to another domain. Otherwise, it's possible for a handful of users to be missed in the UI, and then when you go to remove the domain, you won't be able to and you won't know why. See [Set-MsolUserPrincipalName](https://docs.microsoft.com/powershell/module/msonline/set-msoluserprincipalname?view=azureadps-1.0) for more information. To set the default domain, use [Set-MsolDomain](https://docs.microsoft.com/powershell/module/msonline/set-msoldomain?view=azureadps-1.0).</span></span>
   
-## <a name="still-need-help"></a><span data-ttu-id="96320-188">仍然需要帮助？</span><span class="sxs-lookup"><span data-stu-id="96320-188">Still need help?</span></span>
+## <a name="still-need-help"></a><span data-ttu-id="0e3c5-188">仍然需要帮助？</span><span class="sxs-lookup"><span data-stu-id="0e3c5-188">Still need help?</span></span>
 
 ::: moniker range="o365-worldwide"
 
 > [!NOTE]
-> <span data-ttu-id="96320-189">不能从你的帐户中删除 [".onmicrosoft.com"](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) 域。</span><span class="sxs-lookup"><span data-stu-id="96320-189">You can't remove the [".onmicrosoft.com"](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) domain from your account.</span></span> <span data-ttu-id="96320-190">删除域时，用户帐户将恢复为".onmicrosoft.com"地址作为主 SMTP/UserprincipalName。</span><span class="sxs-lookup"><span data-stu-id="96320-190">When you remove a domain, user accounts will revert back to the ".onmicrosoft.com" address as the Primary SMTP/UserprincipalName.</span></span>
+> <span data-ttu-id="0e3c5-189">不能从你的帐户中删除 [".onmicrosoft.com"](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) 域。</span><span class="sxs-lookup"><span data-stu-id="0e3c5-189">You can't remove the [".onmicrosoft.com"](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) domain from your account.</span></span> <span data-ttu-id="0e3c5-190">删除域时，用户帐户将恢复为".onmicrosoft.com"地址作为主 SMTP/UserprincipalName。</span><span class="sxs-lookup"><span data-stu-id="0e3c5-190">When you remove a domain, user accounts will revert back to the ".onmicrosoft.com" address as the Primary SMTP/UserprincipalName.</span></span>
   
-<span data-ttu-id="96320-191">仍然无法工作？</span><span class="sxs-lookup"><span data-stu-id="96320-191">Still not working?</span></span> <span data-ttu-id="96320-192">可能需要手动删除你的域。</span><span class="sxs-lookup"><span data-stu-id="96320-192">Your domain might need to be manually removed.</span></span> <span data-ttu-id="96320-193">[致电我们](../contact-support-for-business-products.md) ，我们将帮助你处理它！</span><span class="sxs-lookup"><span data-stu-id="96320-193">[Give us a call](../contact-support-for-business-products.md) and we'll help you take care of it!</span></span>
+<span data-ttu-id="0e3c5-191">仍然无法工作？</span><span class="sxs-lookup"><span data-stu-id="0e3c5-191">Still not working?</span></span> <span data-ttu-id="0e3c5-192">可能需要手动删除你的域。</span><span class="sxs-lookup"><span data-stu-id="0e3c5-192">Your domain might need to be manually removed.</span></span> <span data-ttu-id="0e3c5-193">[致电我们](../contact-support-for-business-products.md) ，我们将帮助你处理它！</span><span class="sxs-lookup"><span data-stu-id="0e3c5-193">[Give us a call](../contact-support-for-business-products.md) and we'll help you take care of it!</span></span>
   
 ::: moniker-end
 
-## <a name="related-articles"></a><span data-ttu-id="96320-194">相关文章</span><span class="sxs-lookup"><span data-stu-id="96320-194">Related articles</span></span>
+## <a name="related-articles"></a><span data-ttu-id="0e3c5-194">相关文章</span><span class="sxs-lookup"><span data-stu-id="0e3c5-194">Related articles</span></span>
 
-[<span data-ttu-id="96320-195">关于域的常见问题</span><span class="sxs-lookup"><span data-stu-id="96320-195">Domains FAQ</span></span>](../setup/domains-faq.yml)
+[<span data-ttu-id="0e3c5-195">关于域的常见问题</span><span class="sxs-lookup"><span data-stu-id="0e3c5-195">Domains FAQ</span></span>](../setup/domains-faq.yml)
 
-[<span data-ttu-id="96320-196">切换到其他 Microsoft 365 商业版计划</span><span class="sxs-lookup"><span data-stu-id="96320-196">Switch to a different Microsoft 365 for business plan</span></span>](../../commerce/subscriptions/switch-to-a-different-plan.md)
+[<span data-ttu-id="0e3c5-196">切换到其他 Microsoft 365 商业版计划</span><span class="sxs-lookup"><span data-stu-id="0e3c5-196">Switch to a different Microsoft 365 for business plan</span></span>](../../commerce/subscriptions/switch-to-a-different-plan.md)
 
-[<span data-ttu-id="96320-197">取消订阅</span><span class="sxs-lookup"><span data-stu-id="96320-197">Cancel your subscription</span></span>](../../commerce/subscriptions/cancel-your-subscription.md)
+[<span data-ttu-id="0e3c5-197">取消订阅</span><span class="sxs-lookup"><span data-stu-id="0e3c5-197">Cancel your subscription</span></span>](../../commerce/subscriptions/cancel-your-subscription.md)
