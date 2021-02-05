@@ -12,110 +12,83 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
-- commerce
 search.appverid:
-- BCS160
 - MET150
-- MOE150
-- BEA160
 ms.assetid: 734f4aab-df2d-4e9b-8cb1-691910bde216
-description: 了解哪些付款选项可用于为 Microsoft 365 for business 订阅付款。
+description: 了解可用于为 Microsoft 365 商业版订阅付费的支付选项。
 ms.custom:
 - okr_SMB
 - fwlink 808700 for SEPA UI glink 906 for older uI
 - AdminSurgePortfolio
-ms.openlocfilehash: 778906219c03e8cc79ccebb368b84642639a8467
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+- commerce
+ms.openlocfilehash: 858b42dbb647e472bcb3e95ddcba850f03ab11f1
+ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48638431"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "50114821"
 ---
-# <a name="pay-for-your-subscription"></a>支付订阅费用
+# <a name="how-to-pay-for-your-subscription"></a>如何支付订阅费用
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 管理中心正在发生改变。 如果你的体验与此处提供的详细信息不匹配，请参阅[有关新版 Microsoft 365 管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)。
+> 管理中心正在发生改变。 如果你的体验与此处提供的详细信息不匹配，请参阅[有关新版 Microsoft 365 管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true)。
 
 ::: moniker-end
 
-设置订阅时，可以选择使用信用卡或银行帐户付款，或使用支票或电子资金转帐 (EFT) 按发票付款。 选择的任何方式就是继续用于后续计费周期的付款方式，除非[更改付款方式](change-payment-method.md)。
+可以使用信用卡或借记卡或银行帐户支付订阅费用。 在某些情况下，可以使用支票或电子资金 (EFT) 。 如果你有计费配置文件，你的选项会略有不同。 如果你不确定你的帐户是否具有计费配置文件，请参阅["了解计费配置文件"。](manage-billing-profiles.md)
 
-> [!NOTE]
+**只想了解发票付款的发送位置？** 如果你通过支票或电子资金 (EFT) ，请参阅"我在哪里发送支票或 [EFT 付款？](#where-do-i-send-my-check-or-eft-payment)
+
+## <a name="before-you-begin"></a>准备工作
+
+- 只有全局或帐单管理员才能执行本文所述步骤。 有关详细信息，请参阅[关于管理员角色](../../admin/add-users/about-admin-roles.md)。
+- 在结帐期间选择的付款方式就是我们用于所有未来计费周期的付款方式。 你随时都可以更改它。
+
+## <a name="paying-by-credit-or-debit-card-or-bank-account"></a>通过信用卡或借记卡或银行帐户支付
+
+> [!IMPORTANT]
 > 某些国家或地区不支持银行帐户支付。
 
-## <a name="pay-by-credit-card-or-bank-account"></a>通过信用卡或银行帐户支付
+可以使用信用卡或借记卡或银行帐户支付订阅费用。 当你使用这些付款方式之一付款时，我们会继续收取该付款方式的费用，直到订阅过期或取消。 你可以随时[管理付款方式](manage-payment-methods.md)。 也可选择[以电子邮件方式接收账单副本](view-your-bill-or-invoice.md#receive-a-copy-of-your-billing-statement-in-email)。
 
-当通过信用卡或银行帐户付款时，将在发票日期后自动扣除你的订阅的费用，直到订阅期限结束。 你可以随时[管理付款方式](manage-payment-methods.md)。 也可以选择[以电子邮件方式接收帐单副本](#receive-a-copy-of-your-billing-statement-in-email)。
+## <a name="paying-by-invoice"></a>通过发票付款
 
-### <a name="what-if-my-credit-card-was-declined-and-my-payment-is-past-due"></a>如果信用卡被拒绝，并且付款已过期怎么办？
+在某些情况下，可以使用支票或 EFT 通过发票支付订阅费用。 若要有资格通过发票付款，你必须：
 
-如果通过信用卡支付，且信用卡被拒，将收到一封电子邮件，告知无法处理该付款。 出现此情况的原因有多种，包括信用卡已过期。 我们将持续每隔几天重试该交易。 如果这些尝试失败，你将持续收到有关这些失败的电子邮件警报。 可随时使用“**结算余额**”功能更改信用卡信息并立即重新提交付款。
+- 成为已建立的客户
+- 订阅费用超过一定金额 (此金额因服务位置而异) 
+- 通过信用检查
 
-> [!NOTE]
-> 如果切换为其他信用卡来支付订阅的未结余额，则将从该信用卡收取该订阅将来所有的自动支付款项。
-
-::: moniker range="o365-worldwide"
-
-1. 在管理中心中，转到“**计费**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">你的产品</a>”页面。
-
-2. 查找余额未结的订阅。 在“**帐单**”部分中的**订阅的预期付款**旁，选择“**结算余额**”。
-
-3. 如果是信用卡所有者，可更改卡的到期日期，选择另一张卡，或[添加新卡](manage-payment-methods.md)。
-
-    > [!NOTE]
-    > 当使用“**结算余额**”功能时，将收取帐户的全部未结余额，这可能会比其他位置显示的到期金额多。
-
-4. 如果不是信用卡所有者，可选择另一张信用卡或[添加新卡](manage-payment-methods.md)。
-
-5. 更新信用卡信息或更改用于支付订阅的信用卡后，请选择“**保存**”。
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. 在管理中心，转到“**账单**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">订阅</a>”页面。
-
-2. 选择想要更改的订阅。 在“**我的帐单**”部分中，选择“**立即付款**”。
-
-3. 如果是信用卡所有者，可更改卡的到期日期，选择另一张卡，或[添加新卡](manage-payment-methods.md)。
-
-    > [!NOTE]
-    > 当使用“**立即付款**”功能时，将收取帐户的全部未结余额，这可能会比其他位置显示的到期金额多。
-
-4. 如果不是信用卡所有者，可选择另一张信用卡或[添加新卡](manage-payment-methods.md)。
-
-5. 更新信用卡信息或更改用于支付订阅的信用卡后，请选择“**提交**”。 将看到确认消息，显示“已更新付款方式并已结清所有未付费用。 谢谢大家。”
-
-::: moniker-end
-
-## <a name="pay-by-invoice-check-or-eft"></a>按发票付款（使用支票或 EFT）
-
-如果你的订阅费用高于一定的金额（此金额因服务位置而异），则可以选择使用支票或 EFT 按发票付款。 较大数额的发票付款可能要求进行信用检查。 如需进行信用检查，会在购买订阅时收到通知。 如果同意接受联系，将收到一封电子邮件，其中包括有关申请信用审批的详细信息。 通常会在两个工作日内完成信用检查。
+如果需要信用检查，购买订阅时将会收到通知。 如果你同意联系你，你收到一封电子邮件，其中包含有关申请信用审批详细信息。 通常会在两个工作日内完成信用检查。
 
 > [!NOTE]
-> 居住在巴西的客户可以使用 Boleto Bancario 支付订阅费用。 如果选择此选项，在订单日期后 10 个工作日内，付款凭据将被发送至订阅购买期间提供的电子邮件。 截止日期是订单日期后 30 日。 如果通过电子邮件未收到 Boleto，选中垃圾电子邮件文件夹或联系支持人员。 <br><br>如果想要的话，可通过账户间电子转账来付款。 代理和账户编号位于发表的底部。 必须在“转账标识”字段中输入账单编号。
+> 居住在巴西的客户可以使用 Boleto Bancario 支付订阅费用。 如果选择此选项，在订单日期后 10 个工作日内，付款凭据将被发送至订阅购买期间提供的电子邮件。 截止日期是订单日期后 30 日。 如果通过电子邮件未收到 Boleto，选中垃圾电子邮件文件夹或联系支持人员。
+>
+> 如果想要的话，可通过账户间电子转账来付款。 代理和账户编号位于发表的底部。 必须在“转账标识”字段中输入账单编号。
 
-如果按发票支付订阅费用，将收到一封电子邮件，指明帐单可供查看。 此电子邮件不包含帐单的副本。 然而，也可以选择[以电子邮件方式接收帐单副本](#receive-a-copy-of-your-billing-statement-in-email)。 帐单包括用于付款的选项的详细信息。 如果购买订阅时输入了采购订单 (PO) 编号，则该编号会显示在帐单中。 若要了解有关访问帐单的信息，请参阅[查看帐单或发票](view-your-bill-or-invoice.md)。
+如果你通过发票为订阅付款，则当帐单可供查看时，你收到一封电子邮件。 此电子邮件不包含帐单副本。 但是，你可以选择通过电子邮件接收帐单 [副本](view-your-bill-or-invoice.md#receive-a-copy-of-your-billing-statement-in-email)。 帐单包含有关付款选项以及付款位置的详细信息。 如果购买订阅时输入了采购订单 (PO) 编号，则该编号会显示在帐单中。 若要了解有关访问帐单的信息，请参阅[查看帐单或发票](view-your-bill-or-invoice.md)。
+
+## <a name="what-if-i-have-an-outstanding-balance"></a>如果我有未结余额，该怎么办？
+
+如果我们无法对文件的付款方式收费，我们将发送一封电子邮件，让您知道存在问题。 电子邮件简要说明问题所在，并包含一个链接，您可以在其中检查未结余额。 我们将继续每隔几天重试一次交易 30 天，在此期间订阅将进入宽限期。 每次事务失败时，你都会收到有关失败的电子邮件警报。
+
+如果你个人添加了具有已到期金额的付款方式，可以使用"结算余额"进行付款。  用于支付过期金额的付款方式将成为使用已拒绝付款方式的所有订阅的新付款方式。
+
+1. 在管理中心中，转到"帐单&  >  **付款** 页面，然后选择"付款方式 <a href="https://go.microsoft.com/fwlink/p/?linkid=2018806" target="_blank">"</a>选项卡。
+1. 警告消息显示拒绝的付款方式。 选择 **"结算余额"。**
+1. 在右侧窗格中，选择其他付款方式，或选择"**添加新的付款方式"。**
+1. 更新付款方式信息后，选择"保存 **"。**
+
+如果未添加用于支付订阅的付款方式，则必须将付款方式替换为之前添加的付款方式或新付款方式。
+
+## <a name="where-do-i-send-my-check-or-eft-payment"></a>支票或 EFT 付款应寄往何处？
+
+[请查看发票，](view-your-bill-or-invoice.md) 查看付款说明。 您还可以使用下面的下拉列表查找你的国家/地区或地区的付款说明。 如果你不确定你应支付的金额，可以在"帐单和付款"页面的"发票"选项卡上在线查看帐单<a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">&历史记录。</a>
 
 > [!NOTE]
-> 默认情况下，你的组织的帐单通知将被发送到 Microsoft 电子邮件地址和组织中每个全局和帐单管理员的备用电子邮件地址。 若要更改备用电子邮件地址，请参阅[更改帐单邮寄地址](change-your-billing-addresses.md)。
-
-### <a name="can-i-pay-my-bill-online"></a>可否在线支付帐单？
-
-很遗憾，如果订阅设置为按发票支付，则不接受在线直接付款。但是，可[将付款方式更改为信用卡或银行帐户](change-payment-method.md)，以便在每个服务周期之后向该卡或帐户自动收取应付金额。对于 Azure，请参阅[如何更改用于支付 Azure 订阅的信用卡](https://go.microsoft.com/fwlink/p/?LinkId=718057)。
-
-> [!NOTE]
-> 若要将支付方式切换为自动信用卡付款，请务必首先支付所有未清余额。 查看帐单以了解付款方式和说明。 有关详细信息，请参阅 [了解你的帐单或发票](understand-your-invoice2.md)。
-
-### <a name="where-do-i-send-my-check-or-eft-payment"></a>支票或 EFT 付款应寄往何处？
-
-> [!NOTE]
-> 通过支票付款仅在几个国家/地区可行。可遵照以下相应国家/地区的付款说明，或[检查你的发票](understand-your-invoice2.md)。
-
-如果不确定应付金额，可[在线查看帐单和帐单历史记录](view-your-bill-or-invoice.md)。对于 Azure，请参阅[如何下载 Azure 帐单发票和日常使用数据](https://go.microsoft.com/fwlink/p/?LinkId=718058)。
+> 仅少数国家/地区提供支票支付。
 
  **从以下下拉菜单选择"帐单寄往地址"所在国家/地区。**
 
@@ -273,44 +246,20 @@ ms.locfileid: "48638431"
 > - [Zambia（赞比亚）](../pay/zambia.md)
 > - [津巴布韦](../pay/zimbabwe.md)
 
-## <a name="receive-a-copy-of-your-billing-statement-in-email"></a>以电子邮件方式接收帐单副本
+## <a name="can-i-pay-my-invoice-online"></a>我能否在线支付发票？
 
-可以选择以电子邮件附件的形式接收帐单副本。如果执行此操作，请注意：
+无法在线支付发票。 你必须通过支票或 EFT 支付。
 
-- 电子邮件会发送到列为通知收件人的每个人的主要和备用电子邮件地址。
+## <a name="can-i-change-from-my-current-payment-method-to-paying-by-invoice"></a>我能否从当前的付款方式更改为通过发票付款？
 
-- 你将收到两封单独的电子邮件：第一封告知你的帐单已生成，其中包含如何登录管理中心查看帐单的说明，第二封电子邮件的附件中包含帐单。
+如果你的订阅费用超过一定金额，你只能更改为通过发票付款。 必须先支付信用卡或借记卡或银行帐户上的任何未结余额，然后才能更改为通过发票付款。 若要了解如何更改付款方式，请参阅更改单个 [订阅的付款方式](manage-payment-methods.md#change-a-payment-method-for-a-single-subscription)。
 
-### <a name="to-receive-your-billing-statement-in-email"></a>以电子邮件的方式接收帐单
+## <a name="can-i-change-from-paying-by-invoice-to-using-a-different-payment-method"></a>我能否从发票支付更改为使用不同的付款方式？
 
-::: moniker range="o365-worldwide"
-
-1. 在管理中心中，转到“**账单**” \> “<a href="https://go.microsoft.com/fwlink/p/?linkid=853212" target="_blank">账单通知</a>”页面。
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. 在管理中心中，转到“**账单**” > “<a href="https://go.microsoft.com/fwlink/p/?linkid=853213" target="_blank">账单通知</a>”页面。
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-1. 在管理中心中，转到“**账单**” > “<a href="https://go.microsoft.com/fwlink/p/?linkid=853215" target="_blank">账单通知</a>”页面。
-
-::: moniker-end
-
-2. 在“**以电子邮件附件形式接收帐单？**”下，将开关切换到“**开**”。
-
-    将开关切换到" **关**"可随时停止接收帐单电子邮件。
-
-## <a name="need-to-switch-payment-methods"></a>需要切换付款方法？
-
-如果选择发票、信用卡或银行帐户的原始原因发生改变，例如，如果调整订阅使付款金额减少，导致不再符合发票付款的条件，那么可以更改付款方式。 有关详细信息，请参阅[更改付款方法](change-payment-method.md)。
+你无法自动从发票支付更改为使用不同的付款方式付款。 相反，你必须 [购买](../try-or-buy-microsoft-365.md#buy-a-different-subscription) 使用信用卡或借记卡或银行帐户支付的不同订阅，将所有用户移动到 [新](../subscriptions/move-users-different-subscription.md)订阅，然后取消 [旧订阅](../subscriptions/cancel-your-subscription.md)。
 
 ## <a name="related-articles"></a>相关文章
 
-[管理支付方式](manage-payment-methods.md)
-
-[了解你的帐单或发票](understand-your-invoice2.md)
+[管理付款方式 (](manage-payment-methods.md) 文章) \
+[查看帐单或发票 (](view-your-bill-or-invoice.md) 文章) \
+[了解帐单或发票 (](understand-your-invoice2.md) 文章) 

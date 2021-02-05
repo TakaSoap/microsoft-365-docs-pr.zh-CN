@@ -9,23 +9,23 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 88b1ba657b4823d90a41b28b01362760676410ba
-ms.sourcegitcommit: b3bb5bf5efa197ef8b16a33401b0b4f5663d3aa0
+ms.openlocfilehash: a6b5cbbcb2f48797130b080d9d1dd1e6427d4fb8
+ms.sourcegitcommit: fa5659cb66d84dcfeebc03b47bd9d38017d8934d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "50032678"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "50110047"
 ---
 # <a name="device-requirements"></a>设备要求
 
-Microsoft 托管桌面会定期评估要包含在服务中的设备要求。 本文介绍设备必须满足的硬件和软件要求才能使用 Microsoft 托管桌面。 你可以根据这些要求查看已批准用于服务[](device-list.md)的特定设备的列表。
+Microsoft 托管桌面会定期评估要包含在服务中的设备要求。 本文介绍了设备必须满足的硬件和软件要求才能使用 Microsoft 托管桌面。 你可以根据这些要求查看已批准用于服务[](device-list.md)的特定设备的列表。
 
 > [!NOTE]
-> 这些要求可能随时更改，但我们将提供有关任何此类更改的 90 天通知。 最近更改的要求标记为 **\*** 。 
+> 这些要求可能会随时更改，但我们会提前 30 天通知任何硬件要求更改。 最近更改的要求标记为 **\*** 。 
 
 ## <a name="check-hardware-requirements"></a>检查硬件要求
 
-除了查看设备规格之外，您还可以使用可下载的准备情况评估检查[](../get-ready/readiness-assessment-downloadable.md)器验证给定设备是否满足必要的要求。 此工具还会检查使服务正常工作所需的网络设置和终结点。
+除了查看设备规格之外，您还可以使用可下载的准备情况评估检查[](../get-ready/readiness-assessment-downloadable.md)器验证给定设备是否满足必要的要求。 此工具还会检查服务正常工作所需的网络设置和终结点。
 
 ## <a name="minimum-requirements"></a>最低要求
 
@@ -46,7 +46,7 @@ Microsoft 托管桌面会定期评估要包含在服务中的设备要求。 本
 设备必须预安装此软件：
 
 - Windows 10 企业版、专业版或专业工作站版
-- {64 位版本的 Office 即点即用 {我将仔细检查名称 w/Office 同事]}
+- 64 位版本的Microsoft Office单击即可运行 
 - 所有适用的设备驱动程序
 
 
@@ -78,5 +78,5 @@ Microsoft 托管桌面会定期评估要包含在服务中的设备要求。 本
 - Intel vPro 平台处理器或 AMD Ryzen Pro 处理器
 - 容量至少为 256 GB 的 SSD 类型的启动驱动器
 - 支持新式待机
-- 设备是安全核心电脑类型
+- 设备为安全核心电脑类型
 - 支持内核 DMA 保护

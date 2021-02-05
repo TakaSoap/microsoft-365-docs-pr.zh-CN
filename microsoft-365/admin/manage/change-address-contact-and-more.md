@@ -21,19 +21,19 @@ search.appverid:
 - GEA150
 ms.assetid: a36e5a52-4df2-479e-bb97-9e67b8483e10
 description: 了解如何更改组织配置文件，如组织名称、地址、电话、技术联系人和电子邮件。
-ms.openlocfilehash: 334bd1bee0571ba173987b7767465e8d82d7efe9
-ms.sourcegitcommit: 50f10d83fa21db8572adab90784146e5231e3321
+ms.openlocfilehash: 3c3a936c8961373a94dc8b8978dbc274048af09c
+ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "50058431"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "50114221"
 ---
 # <a name="change-your-organizations-address-technical-contact-and-more"></a>更改组织的地址、技术联系人和其他信息
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 管理中心正在发生改变。 如果你的体验与此处提供的详细信息不匹配，请参阅[有关新版 Microsoft 365 管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)。
+> 管理中心正在发生改变。 如果你的体验与此处提供的详细信息不匹配，请参阅[有关新版 Microsoft 365 管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true)。
 
 ::: moniker-end
   
@@ -44,7 +44,7 @@ ms.locfileid: "50058431"
 ## <a name="edit-organization-information"></a>编辑组织信息
 
 > [!IMPORTANT]
-> 你无法更改订阅的一个或多个国家/地区。 这是因为组织总部的一个或多个地区决定了哪些服务可供你使用、税款和计费货币以及数据中心的位置。 若要更改组织的国家/地区，请注册新帐户，选择所需的国家/地区，然后购买新订阅。
+> 你无法更改订阅的一个或多个国家/地区。 这是因为组织总部的一个或多个国家/地区决定了哪些服务可供你使用、税款和计费货币以及数据中心的位置。 若要更改组织的国家/地区，请注册新帐户，选择所需的国家/地区，然后购买新订阅。
 
 更改公司配置文件页上的其他信息：
   
@@ -62,7 +62,7 @@ ms.locfileid: "50058431"
 |---------|---------|
 |名称  <br/>   | 此处输入的名称是用户将在以下页面中看到的名称：  <br/>  登录页面：如果用户已经使用其企业或学校电子邮件地址设置了其他 Microsoft 帐户，则他们可能会在登录页面上看到组织名称。这可以帮助用户区分其 工作或学校帐户 和其他帐户，以便他们可以确定在登录时要使用的帐户。  <br/>  组织配置文件链接和页面：指向您所在组织的配置文件的链接会显示组织名称。  <br/>  Yammer 导航：在 Yammer 中，左侧导航使用组织名称作为主 Yammer 网络的名称。  <br/> OneDrive 同步客户端：组织名称显示在 Windows 上的文件资源管理器和 Mac 上的 Finder、文件路径、OneDrive 活动中心、OneDrive 云图标的工具提示和 OneDrive 设置窗口中。 目前，更新组织名称不会为配置的客户端更新它。 <br/> MS Teams：Teams 中的组织切换器显示组织名称 <br/>  |
 |地址、城市、省/自治区/直辖市、邮政编码  <br/>     | 此处输入的地址是你将在帐单上看到的地址，在"销售到："帐单上的"销售到"地址与配置文件页上的组织地址相同 (请参阅"了解 [Microsoft 365](../../commerce/billing-and-payments/understand-your-invoice2.md) 商业版帐单或发票) 。  <br/>        |
-|"国家或地区"  <br/>    | 这是公司总部所在的国家或地区。所选的国家或地区将决定你可以使用的服务、你所在国家或地区的税务和支付货币，以及最接近你的数据中心的位置（请参阅 [Microsoft Office 许可限制](https://office.microsoft.com/redir/FX103037529)）。  <br/>注意：选择后，无法更改国家/地区。 如果要更改选定内容，需取消订阅并重新注册。 有关此过程的帮助，请联系 [支持人员](../contact-support-for-business-products.md)。        |
+|"国家或地区"  <br/>    | 这是公司总部所在的国家或地区。所选的国家或地区将决定你可以使用的服务、你所在国家或地区的税务和支付货币，以及最接近你的数据中心的位置（请参阅 [Microsoft Office 许可限制](https://office.microsoft.com/redir/FX103037529)）。  <br/>注意：选中后，无法更改国家/地区。 如果要更改选定内容，需取消订阅并重新注册。 有关此过程的帮助，请联系 [支持人员](../contact-support-for-business-products.md)。        |
 |电话  <br/>     | 这是您的公司主要号码。它通常是您的公司总部的号码。  <br/>        |
 |技术联系人  <br/> |这是管理 Microsoft 365 订阅的主要技术人员的电子邮件地址。 这是将收到有关 Microsoft 365 服务状态的通信的人。  <br/> |
 |首选语言  <br/> |首选语言将决定从 Microsoft 发送给你的组织的所有通信的语言。注册时，此设置决定 SharePoint Online 使用的语言，即用户将在团队网站上看见的语言。如果注册后要更改语言首选项设置，则以后的所有通信将使用选择的最新语言发送。    <br/> 注意：SharePoint Online 使用的语言无法更改。           |
@@ -77,11 +77,11 @@ ms.locfileid: "50058431"
 
 3. 在左侧，选择 **安全信息**。
 
-4. 在"电子邮件"部分中，选择 **"更改"**
+4. 在"电子邮件"部分中，选择" **更改"**
 
-5. 编辑备用电子邮件框中 **的地址**，然后选择"下一 **步"。**
+5. 编辑备用电子邮件框中 **的地址**，然后选择"下 **一步"。**
 
-6. 输入发送到备用电子邮件地址的代码，然后选择" **确定** "验证更改。
+6. 输入发送到备用电子邮件地址的代码，然后选择" **确定** "以验证更改。
 若要了解如何更改其他个人资料信息，请参阅"[更改联系人首选项](change-contact-preferences.md)"或"[更改显示语言"。](https://support.microsoft.com/office/6f238bff-5252-441e-b32b-655d5d85d15b.aspx)
   
 ### <a name="email-signatures"></a>电子邮件签名

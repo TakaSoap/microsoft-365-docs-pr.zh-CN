@@ -18,12 +18,12 @@ ms.custom:
 - seo-marvel-apr2020
 ROBOTS: NOINDEX
 description: 管理员可以了解适用于 Office 365 的 Microsoft Defender 试用模式
-ms.openlocfilehash: 70f5264671e16e5e7fb6138de055a7da942a57cf
-ms.sourcegitcommit: 3b369a44b71540c8b8214ce588a7aa6f47c3bb1e
+ms.openlocfilehash: f5ab0b0cd4ef5c2bf1a799043af94a0938a53783
+ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "50099787"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "50114891"
 ---
 # <a name="about-the-microsoft-defender-for-office-365-trial"></a>关于 Microsoft Defender for Office 365 试用版
 
@@ -41,7 +41,7 @@ Microsoft Defender for Office 365 试用版是试用适用于 Office 365 的 Def
 
 ## <a name="terms-and-conditions"></a>条款和条件
 
-Defender for Office 365 试用版的试用期为 90 天，可针对所有用户启动。 有关详细信息，请参阅 <link to TOU>。
+Defender for Office 365 试用版的试用期为 90 天，可针对所有用户启动。 有关详细信息，请参阅 [Microsoft Defender for Office 365 试用版的使用条款](terms-of-use-defender-for-office-365-trial.md)。
 
 ## <a name="set-up-a-defender-for-office-365-trial"></a>设置适用于 Office 365 的 Defender 试用版
 

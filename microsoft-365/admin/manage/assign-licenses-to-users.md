@@ -23,19 +23,19 @@ search.appverid:
 - MET150
 description: 了解如何向用户分配许可证。
 ms.date: 08/14/2020
-ms.openlocfilehash: fc5f9112a22d56abb9c11d61f4108586487b4986
-ms.sourcegitcommit: 806536f859ac864228797f1f2f23b8f41040a6b4
+ms.openlocfilehash: b5179006da896dbadab10d43a43b094acedcb806
+ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/28/2020
-ms.locfileid: "49735794"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "50113981"
 ---
 # <a name="assign-licenses-to-users"></a>向用户分配许可证
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 管理中心正在发生改变。 如果你的体验与此处提供的详细信息不匹配，请参阅[有关新版 Microsoft 365 管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)。
+> 管理中心正在发生改变。 如果你的体验与此处提供的详细信息不匹配，请参阅[有关新版 Microsoft 365 管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true)。
 
 ::: moniker-end
 

@@ -26,19 +26,19 @@ search.appverid:
 - MOE150
 ms.assetid: 6383f56d-3d09-4dcb-9b41-b5f5a5efd611
 description: 在 DNS 主机上添加 DNS 记录，将域添加到 Microsoft 365 管理中心中的 Microsoft 365。 安装向导将指导你完成此过程。
-ms.openlocfilehash: 3e7463bd4cf6b7836a9770421e0b8ce597524a67
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+ms.openlocfilehash: 5a3c86fb2b2f93e9da844c15a55555c5d0d7b5c1
+ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49658047"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "50114251"
 ---
 # <a name="add-a-domain-to-microsoft-365"></a>将域添加到 Microsoft 365
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 管理中心正在发生改变。 如果你的体验与此处提供的详细信息不匹配，请参阅[有关新版 Microsoft 365 管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)。
+> 管理中心正在发生改变。 如果你的体验与此处提供的详细信息不匹配，请参阅[有关新版 Microsoft 365 管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true)。
 
 ::: moniker-end
 
@@ -84,13 +84,13 @@ ms.locfileid: "49658047"
 5. 选择您希望如何验证您是否拥有该域。
     
     1. 如果你的域注册机构使用[域连接](#domain-connect-registrars-integrating-with-microsoft-365)[，Microsoft](../get-help-with-domains/domain-connect.md)会通过登录注册机构并确认与 Microsoft 365 的连接来自动设置记录。 你将返回到管理中心，然后 Microsoft 将自动验证你的域。
-    2. 可使用 TXT 记录验证域。 选择此选项，然后选择 **"下** 一步"以查看有关如何将此 DNS 记录添加到注册机构网站的说明。 添加记录后，最多可能需要 30 分钟才能进行验证。 
+    2. 可使用 TXT 记录验证域。 选择此选项，然后选择 **"** 下一步"，查看有关如何将此 DNS 记录添加到注册机构网站的说明。 添加记录后，最多可能需要 30 分钟才能进行验证。 
     3. 可以将文本文件添加到域的网站。 从安装向导中选择并下载 .txt 文件，然后将该文件上载到网站的顶级文件夹。 文件的路径应 `http://mydomain.com/ms39978200.txt` 类似于： 我们将通过在网站上查找文件来确认你拥有该域。
     
-6. 选择您希望如何对 Microsoft 使用域所需的 DNS 更改。
+6. 选择要对 Microsoft 使用域所需的 DNS 更改。
     
     1. 如果你 **的** 注册机构支持 [域](#domain-connect-registrars-integrating-with-microsoft-365)连接，请选择"为我添加 DNS 记录 ["，Microsoft](../get-help-with-domains/domain-connect.md) 会通过登录注册机构并确认与 Microsoft 365 的连接来自动设置记录。
-    2. Choose **I'll add the DNS records自己** if you want to attach only specific Microsoft 365 services to your domain or if you want to skip this for now and do this later. **如果确切了解执行内容，请选择此选项。**
+    2. 如果你 **只想将** 特定的 Microsoft 365 服务附加到你的域，或者如果你希望暂时跳过此步骤，并且稍后要这样做，请选择"我将自己添加 DNS 记录"。 **如果确切了解执行内容，请选择此选项。**
 
 7. 如果选择自己添加 *DNS* 记录，请选择"下一步"，你将看到一个页面，包含要添加到注册机构网站以设置域的所有记录。 
 
@@ -120,11 +120,11 @@ ms.locfileid: "49658047"
     
 6. 选择“**保存**”。
 
-## <a name="registrars-with-domain-connect"></a>具有域连接的注册器
+## <a name="registrars-with-domain-connect"></a>使用域连接的注册器
 
-[通过启用域](https://www.domainconnect.org/) 连接注册器，可以分三步将域添加到 Microsoft 365，此过程需要几分钟。 
+[通过启用域](https://www.domainconnect.org/) 连接的注册机构，你可以将域添加到 Microsoft 365，此过程分三步完成，此过程需要几分钟时间。 
   
-在向导中，我们只需确认你拥有该域，然后自动设置域记录，这样电子邮件就会发送到 Microsoft 365 和其他 Microsoft 365 服务（如 Teams）处理你的域。
+在向导中，我们将仅确认你拥有该域，然后自动设置域记录，因此电子邮件发送到 Microsoft 365 和其他 Microsoft 365 服务（如 Teams）处理你的域。
   
 > [!NOTE]
 > 在开始此设置向导前，请确保你已禁用浏览器中的任何弹出窗口阻止程序。
@@ -145,7 +145,7 @@ ms.locfileid: "49658047"
 
 ### <a name="what-happens-to-my-email-and-website"></a>我的电子邮件和网站会发生什么情况？
 
-完成设置后，你的域的 MX 记录将更新为指向 Microsoft 365，并且你的域的所有电子邮件都将开始发送到 Microsoft 365。 确保你已添加用户，并针对在你的域中收到电子邮件的每个人在 Microsoft 365 中设置邮箱！
+完成设置后，你的域的 MX 记录将更新为指向 Microsoft 365，并且你的域的所有电子邮件都将开始发送到 Microsoft 365。 确保在 Microsoft 365 中为在你的域中收到电子邮件的每个人添加了用户并设置了邮箱！
   
 如果你有一个用于你的企业的网站，它将在其所在的位置保持工作。 域连接设置步骤不会影响您的网站。
 

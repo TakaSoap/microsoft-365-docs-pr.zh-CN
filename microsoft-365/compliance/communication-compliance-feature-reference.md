@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 7e76b7f694a5c2087cd77939b80bf9edf2f23e40
-ms.sourcegitcommit: c550c1b5b9e67398fd95bfb0256c4f5c7930b2be
+ms.openlocfilehash: effe4bbcf381a717c03d9e3ace3ff7a7db8bd273
+ms.sourcegitcommit: fa5659cb66d84dcfeebc03b47bd9d38017d8934d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/01/2021
-ms.locfileid: "50066845"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "50110037"
 ---
 # <a name="communication-compliance-feature-reference"></a>通信合规性功能参考
 
@@ -120,9 +120,9 @@ ms.locfileid: "50066845"
 
 你必须向 Microsoft 支持人员提交请求，以使贵组织能够使用安全与合规中心中的图形用户界面来搜索本地用户基于云的邮箱中的 Teams 聊天数据。
 
-- **Exchange 电子邮件**：作为 Microsoft 365 或 Office 365 订阅的一部分托管在 Exchange Online 上的邮箱均符合邮件扫描条件。 与通信合规性策略条件匹配的 Exchange 电子邮件和附件最多可能需要 24 小时处理。 支持的通信合规性附件类型与 Exchange 邮件流规则内容 [检查支持的文件类型相同](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments#supported-file-types-for-mail-flow-rule-content-inspection)。
+- **Exchange 电子邮件**：作为 Microsoft 365 或 Office 365 订阅的一部分托管在 Exchange Online 上的邮箱均符合邮件扫描条件。 与通信合规性策略条件匹配的 Exchange 电子邮件和附件最多可能需要 24 小时处理。 支持的通信合规性附件类型与 Exchange 邮件流规则内容 [检查支持的文件类型相同](/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments#supported-file-types-for-mail-flow-rule-content-inspection)。
 
-- **Yammer：** 可以扫描 Yammer 社区中的私人消息、公共对话和相关附件。 将用户添加到包括 Yammer 作为已定义频道的通信合规性策略时，扫描过程中将包含用户是成员的所有 Yammer 社区之间的通信。 与通信合规性策略条件匹配的 Yammer 聊天和附件最多可能需要 24 小时处理。 Yammer 必须进入本机 [模式](https://docs.microsoft.com/yammer/configure-your-yammer-network/overview-native-mode) ，通信合规性策略用于监视 Yammer 通信和附件。 在本机模式下，所有 Yammer 用户都使用 Azure Active Directory (AAD) ，所有组都是 Office 365 组，所有文件都存储在 SharePoint Online 中。
+- **Yammer：** 可以扫描 Yammer 社区中的私人消息、公共对话和相关附件。 将用户添加到包括 Yammer 作为已定义频道的通信合规性策略时，扫描过程中将包含用户是成员的所有 Yammer 社区之间的通信。 与通信合规性策略条件匹配的 Yammer 聊天和附件最多可能需要 24 小时处理。 Yammer 必须进入本机 [模式](/yammer/configure-your-yammer-network/overview-native-mode) ，通信合规性策略用于监视 Yammer 通信和附件。 在本机模式下，所有 Yammer 用户都使用 Azure Active Directory (AAD) ，所有组都是 Office 365 组，所有文件都存储在 SharePoint Online 中。
 
 - **Skype for Business Online：** 可以监督 Skype for Business Online 中的聊天通信和相关附件。 与通信合规性策略条件匹配的 Skype for Business Online 聊天最多可能需要 24 小时处理。 受监督的聊天对话来自之前 [保存在 Skype for Business Online 中的对话](https://support.office.com/article/Find-a-previous-Skype-for-Business-conversation-18892eba-5f18-4281-8c87-fd48bd72e6a2)。  使用以下组管理配置来监督 Skype for Business Online 中的用户聊天通信：
 
@@ -290,7 +290,7 @@ ms.locfileid: "50066845"
 | "日期" | 组织中用户发送或接收邮件的日期。 若要筛选一天，请选择一个日期范围，从希望结果的日期开始，到第二天结束。 例如，如果要筛选 9/20/2020 的结果，可选择筛选日期范围 9/20/2020-9/21/2020。|
 | **文件类** | 基于邮件类型（邮件或附件）*的邮件**类*。 |
 | **具有附件** | 邮件中的附件状态。 |
-| **Item 类** | 基于消息类型、电子邮件、Microsoft Team 聊天、Bloomberg 等的消息源。有关常见项目类型和邮件类的详细信息，请参阅 [项目类型和邮件类](https://docs.microsoft.com/office/vba/outlook/concepts/forms/item-types-and-message-classes)。 |
+| **Item 类** | 基于消息类型、电子邮件、Microsoft Team 聊天、Bloomberg 等的消息源。有关常见项目类型和邮件类的详细信息，请参阅 [项目类型和邮件类](/office/vba/outlook/concepts/forms/item-types-and-message-classes)。 |
 | **收件人域** | 邮件发送到的域。 默认情况下，此域通常是你的 Microsoft 365 订阅域。 |
 | **收件人** | 邮件发送到的用户。 |
 | **Sender** | 邮件发送者。 |
@@ -338,7 +338,7 @@ ms.locfileid: "50066845"
 
 ## <a name="power-automate-flows"></a>Power Automate 流
 
-[Microsoft Power Automate](https://docs.microsoft.com/power-automate/getting-started) 是一种工作流服务，可自动执行应用程序和服务中的操作。 通过使用模板中的流或手动创建流，可以自动执行与这些应用程序和服务关联的常见任务。 启用 Power Automate 流以实现通信合规性时，可以自动执行提醒和用户的重要任务。 可以配置 Power Automate 流，以在用户具有通信合规性警报和其他应用程序时通知管理员。
+[Microsoft Power Automate](/power-automate/getting-started) 是一种工作流服务，可自动执行应用程序和服务中的操作。 通过使用模板中的流或手动创建流，可以自动执行与这些应用程序和服务关联的常见任务。 启用 Power Automate 流以实现通信合规性时，可以自动执行提醒和用户的重要任务。 可以配置 Power Automate 流，以在用户具有通信合规性警报和其他应用程序时通知管理员。
 
 具有包含通信合规性的 Microsoft 365 订阅的客户不需要其他 Power Automate 许可证来使用建议的默认通信合规性 Power Automate 模板。 可以自定义默认模板以支持您的组织并涵盖核心通信合规性方案。 如果你选择在这些模板中使用高级 Power Automate 功能，使用 Microsoft 365 合规性连接器创建自定义模板，或者为 Microsoft 365 中其他合规性区域使用 Power Automate 模板，可能需要其他 Power Automate 许可证。
 
@@ -450,7 +450,7 @@ ms.locfileid: "50066845"
 | **Operations** | 对策略执行的审阅操作。 |
 | **AuditData** | 此字段是所有策略审阅活动的主要数据源。 所有审阅活动都记录和用逗号分隔符分隔。 |
 
-您还可以查看统一部署中的审核审核日志 [Search-UnifiedAuditLog](https://docs.microsoft.com/powershell/module/exchange/search-unifiedauditlog) PowerShell cmdlet。
+您还可以查看统一部署中的审核审核日志 [Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog) PowerShell cmdlet。
 
 例如，以下示例返回策略和规则中所有监管审核 (活动) ：
 

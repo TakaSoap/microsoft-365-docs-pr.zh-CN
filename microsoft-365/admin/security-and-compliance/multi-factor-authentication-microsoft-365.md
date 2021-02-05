@@ -2,8 +2,8 @@
 title: 适用于 Microsoft 365 的 Multi-Factor Authentication
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: kwekua
+author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: conceptual
@@ -23,12 +23,12 @@ search.appverid:
 ms.assetid: 043807b2-21db-4d5c-b430-c8a6dee0e6ba
 ROBOTS: NOINDEX, NOFOLLOW
 description: 了解 Microsoft 365 中的多重身份验证。
-ms.openlocfilehash: 7d62d88acb5137bd0674de7a42b44103bc9fc5f0
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 5e72e3990db533b49041dc4167283b9487f23426
+ms.sourcegitcommit: b88ffaf3409e02a9847f030f8468f96d36efa398
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49926542"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "50105181"
 ---
 # <a name="multi-factor-authentication-for-microsoft-365"></a>适用于 Microsoft 365 的 Multi-Factor Authentication
 
@@ -45,7 +45,7 @@ ms.locfileid: "49926542"
 
 默认情况下，Microsoft 365 和 Office 365 都支持使用：
 
-- 发送到需要用户键入验证码的电话的短信。
+- 发送到电话的短信，要求用户键入验证码。
 - 电话呼叫。
 - Microsoft Authenticator 智能手机应用。
 
@@ -59,7 +59,7 @@ ms.locfileid: "49926542"
 
 |计划|建议|客户类型|
 |---|---|---|
-|所有 Microsoft 365 计划|使用安全默认值，这需要所有用户帐户的 MFA。 <p> 还可以对单个用户帐户配置每用户 MFA，但不建议这样做。|小型企业|
+|所有 Microsoft 365 计划|使用安全默认值，这要求所有用户帐户使用 MFA。 <p> 还可以对单个用户帐户配置每用户 MFA，但不建议这样做。|小型企业|
 |Microsoft 365 商业高级版 <p> Microsoft 365 E3 <p> Azure Active Directory (Azure AD) 高级 P1 许可证|使用条件访问策略根据组成员身份、应用或其他条件要求用户帐户使用 MFA。|小型企业到企业|
 |Microsoft 365 E5 <p> Azure AD Premium P2 许可证|使用 Azure AD Identity Protection 根据登录风险条件要求 MFA。|企业版|
 ||||
@@ -138,7 +138,7 @@ ms.locfileid: "49926542"
 
 ### <a name="legacy-per-user-mfa-not-recommended"></a>不建议使用旧版每用户 MFA () 
 
-你应该使用安全默认值或条件访问策略来要求用户帐户登录使用 MFA。但是，如果无法使用这两者中的任一种，Microsoft 强烈建议为具有管理员角色的用户帐户执行 MFA，尤其是全局管理员角色大小的订阅。
+你应该使用安全默认值或条件访问策略来要求用户帐户登录使用 MFA。但是，如果其中任何一个无法使用，Microsoft 强烈建议为具有管理员角色的用户帐户（尤其是具有管理员角色的用户帐户全局管理员角色大小订阅使用 MFA。
 
 从 Microsoft 365 管理中心的 **"** 活动用户"窗格为单个用户帐户启用 MFA。
 
@@ -173,3 +173,9 @@ ms.locfileid: "49926542"
 ## <a name="your-next-step"></a>下一步
 
 [为 Microsoft 365 设置 MFA](set-up-multi-factor-authentication.md)
+
+## <a name="related-topics"></a>相关主题
+
+[视频：启用多重身份验证](https://docs.microsoft.com/microsoft-365/business-video/turn-on-mfa)
+
+[视频：为手机启用多重身份验证](https://docs.microsoft.com/microsoft-365/business-video/set-up-mfa)

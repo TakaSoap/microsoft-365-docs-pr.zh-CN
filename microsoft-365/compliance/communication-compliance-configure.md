@@ -20,12 +20,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: f958a2f6854ca34b0d24a527e2517c848885ad1c
-ms.sourcegitcommit: 27cb4591e08f62ba0a08d6dcf224bf2039034fe5
-ms.translationtype: HT
+ms.openlocfilehash: 442f0dd13415c4ca435cdf69336d1fb07a9e045d
+ms.sourcegitcommit: fa5659cb66d84dcfeebc03b47bd9d38017d8934d
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/17/2021
-ms.locfileid: "49883681"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "50109921"
 ---
 # <a name="get-started-with-communication-compliance"></a>通信合规性入门
 
@@ -53,7 +53,7 @@ ms.locfileid: "49883681"
 >[!IMPORTANT]
 >Office 365 高级合规版已不再作为独立订阅销售。 当前订阅到期后，客户应过渡到以上订阅之一，其中包含了相同的或其它合规性功能。
 
-如果你没有现有的 Office 365 企业版 E5 套餐，并且想要尝试通信合规性，可以 [添加 Microsoft 365](https://docs.microsoft.com/office365/admin/try-or-buy-microsoft-365) 到现有订阅，或 [注册试用](https://www.microsoft.com/microsoft-365/enterprise) Office 365 企业版 E5。
+如果你没有现有的 Office 365 企业版 E5 套餐，并且想要尝试通信合规性，可以 [添加 Microsoft 365](/office365/admin/try-or-buy-microsoft-365) 到现有订阅，或 [注册试用](https://www.microsoft.com/microsoft-365/enterprise) Office 365 企业版 E5。
 
 ## <a name="step-1-required-enable-permissions-for-communication-compliance"></a>步骤 1（必选）：启用通信合规性权限
 
@@ -140,7 +140,7 @@ ms.locfileid: "49883681"
 
 若要在大型企业组织中管理受监督的用户，可能需要监视大型组的所有用户。 可使用 PowerShell 为已分配组配置全局通信合规性策略的通讯组。 这样，可以使用一个策略监视成千上万个用户，并在新员工加入组织时保持通信合规性策略的更新。
 
-1. 为全局通信合规性策略创建一个专用的 [通讯组](https://docs.microsoft.com/powershell/module/exchange/new-distributiongroup)，该策略具有以下属性：确保此通讯组未用于其他目的或其他 Office 365 服务。
+1. 为全局通信合规性策略创建一个专用的 [通讯组](/powershell/module/exchange/new-distributiongroup)，该策略具有以下属性：确保此通讯组未用于其他目的或其他 Office 365 服务。
 
     - **MemberDepartRestriction = Closed**。 确保用户无法将自己从通讯组中删除。
     - **MemberJoinRestriction = Closed**。 确保用户无法将自己添加到通讯组。
@@ -150,7 +150,7 @@ ms.locfileid: "49883681"
     New-DistributionGroup -Name <your group name> -Alias <your group alias> -MemberDepartRestriction 'Closed' -MemberJoinRestriction 'Closed' -ModerationEnabled $true
     ```
 
-2. 选择未使用的 [Exchange 自定义属性](https://docs.microsoft.com/Exchange/recipients/mailbox-custom-attributes) 以跟踪添加到组织内通信合规性策略的用户。
+2. 选择未使用的 [Exchange 自定义属性](/Exchange/recipients/mailbox-custom-attributes) 以跟踪添加到组织内通信合规性策略的用户。
 
 3. 按定期计划运行以下 PowerShell 脚本，将用户添加到通信合规性策略：
 
@@ -169,8 +169,8 @@ ms.locfileid: "49883681"
 
 有关设置组的详细信息，请参阅：
 
-- [创建和管理通讯组](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-distribution-groups/manage-distribution-groups)
-- [Microsoft 365 组概述](https://docs.microsoft.com/office365/admin/create-groups/office-365-groups)
+- [创建和管理通讯组](/Exchange/recipients-in-exchange-online/manage-distribution-groups/manage-distribution-groups)
+- [Microsoft 365 组概述](/office365/admin/create-groups/office-365-groups)
 
 ## <a name="step-4-optional-verify-your-yammer-tenant-is-in-native-mode"></a>步骤 4（可选）：验证 Yammer 租户是否处于本机模式
 
@@ -178,8 +178,8 @@ ms.locfileid: "49883681"
 
 有关以本机模式配置 Yammer 详细信息，请参阅：
 
-- [Microsoft 365 中 Yammer 本机模式概述](https://docs.microsoft.com/yammer/configure-your-yammer-network/overview-native-mode)
-- [配置适用于 Microsoft 365 本机模式的 Yammer 网络](https://docs.microsoft.com/yammer/configure-your-yammer-network/native-mode)
+- [Microsoft 365 中 Yammer 本机模式概述](/yammer/configure-your-yammer-network/overview-native-mode)
+- [配置适用于 Microsoft 365 本机模式的 Yammer 网络](/yammer/configure-your-yammer-network/native-mode)
 
 ## <a name="step-5-required-create-a-communication-compliance-policy"></a>步骤 5（必需）：创建通信合规性策略
   

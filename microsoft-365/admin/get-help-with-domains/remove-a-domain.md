@@ -21,20 +21,20 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: f09696b2-8c29-4588-a08b-b333da19810c
-description: 了解如何从 Microsoft 365 中删除旧域，以及如何将用户和组移动到另一个域。
-ms.openlocfilehash: 02ec704e400af76c25c0eb54de10291e2ef3caa2
-ms.sourcegitcommit: 849b365bd3eaa9f3c3a9ef9f5973ef81af9156fa
+description: 了解如何从 Microsoft 365 中删除旧域，以及将用户和组移动到另一个域。
+ms.openlocfilehash: 39f8d97abb3a424251d6847da02f0dcc58baff31
+ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49688257"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "50114005"
 ---
 # <a name="remove-a-domain"></a>删除域
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 管理中心正在发生改变。 如果你的体验与此处提供的详细信息不匹配，请参阅[有关新版 Microsoft 365 管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)。
+> 管理中心正在发生改变。 如果你的体验与此处提供的详细信息不匹配，请参阅[有关新版 Microsoft 365 管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true)。
 
 ::: moniker-end
   
@@ -116,7 +116,7 @@ ms.locfileid: "49688257"
 
 1. 转到 **"用户** \> **活动用户"，** 然后从列表中选择你的姓名。
 
-2. 在 **"用户名/电子邮件** "部分，选择 **"** 编辑"，然后选择其他域。
+2. 在 **"用户名/电子邮件** "部分，选择 **"编辑**"，然后选择其他域。
 
 3. 选择 **"设置为主** > **保存** > **关闭"。**
   
@@ -210,7 +210,7 @@ ms.locfileid: "49688257"
 
 ## <a name="how-long-does-it-take-for-a-domain-to-be-removed"></a>删除域需要多长时间？
 
-如果没有在很多位置（如安全组、通讯组列表、用户和 Microsoft 365 组）中引用域，Microsoft 365 删除域可能需要 5 分钟。 如果存在众多使用该域的引用，则删除域可能需要数小时（一天）。
+如果没有在很多位置（如安全组、通讯组列表、用户和 Microsoft 365 组）中引用域，则 Microsoft 365 删除域可能需要 5 分钟。 如果存在众多使用该域的引用，则删除域可能需要数小时（一天）。
   
 如果有数百或数千用户，使用 PowerShell 查询所有用户，然后将其移至另一个域。否则，可能大量用户将在 UI 中丢失，然后当你要删除域时，将无法删除而且找不到原因。有关详细信息，请参阅 [Set-MsolUserPrincipalName](https://docs.microsoft.com/powershell/module/msonline/set-msoluserprincipalname?view=azureadps-1.0)。若要设置默认域，请使用 [Set-MsolDomain](https://docs.microsoft.com/powershell/module/msonline/set-msoldomain?view=azureadps-1.0)。
   

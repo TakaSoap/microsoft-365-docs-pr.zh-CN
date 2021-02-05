@@ -19,43 +19,43 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 767349fa-f646-46d9-9dab-4a65049bdd1f
-description: 在管理中心更新管理员电话号码和电子邮件地址。 如果要重置自己的管理员密码，将需要此信息。
-ms.openlocfilehash: 06dc277fc408ab234dd51d9c8bec5f20226e3215
-ms.sourcegitcommit: 0402d3275632fceda9137b6abc3ce48c8020172a
+description: 在管理中心更新管理员电话号码和电子邮件地址。 如果你想要重置自己的管理员密码，则需要此信息。
+ms.openlocfilehash: 8ceb2fdc6543bf38089b40d3a66dfc2ab1d7dc64
+ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "49126607"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "50114425"
 ---
 # <a name="update-your-admin-phone-number-and-email-address"></a>更新管理员电话号码和电子邮件地址
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 管理中心正在发生改变。 如果你的体验与此处提供的详细信息不匹配，请参阅[有关新版 Microsoft 365 管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)。
+> 管理中心正在发生改变。 如果你的体验与此处提供的详细信息不匹配，请参阅[有关新版 Microsoft 365 管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true)。
 
 ::: moniker-end
-本文介绍管理员如何在 Microsoft 365 中更改你的业务电话和电子邮件地址。
+本文介绍了管理员如何在 Microsoft 365 中更改你的企业电话和电子邮件地址。
   
 如果想了解如何更改公司的资料信息（如公司名称和地址、公司电话号码和技术联系人信息），请参阅[更改公司地址、技术联系人电子邮件及其他信息](change-address-contact-and-more.md)。
   
-## <a name="to-update-your-phone-number-and-email-address"></a>更新你的电话号码和电子邮件地址
+## <a name="to-update-your-phone-number-and-email-address"></a>更新电话号码和电子邮件地址
 
-使用 " **安全信息** " 页面更改你的移动电话号码和备用电子邮件地址。 备用电子邮件地址用于重要通知，如重置管理员密码 (不是计算机管理员密码) 。 
+使用 **"安全信息** "页更改移动电话号码和备用电子邮件地址。 备用电子邮件地址用于重要通知，例如重置管理员密码 (而不是计算机管理员密码) 。 
   
 1. 浏览到 Microsoft 365 管理中心。
 
-2. 在标头中，选择您的配置文件图标 \> **My account** \> **Security Info**。
+2. 在标头中，选择配置文件图标 \> **"我的帐户** \> **安全信息"。**
 
-3. 在 " **安全信息** " 选项卡中，选择 " **添加方法** \> **电话** \> **备用电话** 或 **电子邮件** " 以添加详细信息。 若要更新移动电话、电话和备用电子邮件地址详细信息，请选择 " **更改**"。 请务必使用 Microsoft 电子邮件地址之外的其他电子邮件地址。
+3. 在" **安全信息** "选项卡中， **选择"添加方法** \> **电话** \> **备用电话** "或" **电子邮件** "以添加详细信息。 若要更新你的移动、电话和备用电子邮件地址详细信息，请选择"**更改"。** 请确保对备用电子邮件地址使用除 Microsoft 电子邮件地址外的其他地址。
 
     > [!IMPORTANT]
-    > 备用电子邮件地址和移动电话号码是重置管理员密码所必需的， (不) 您的计算机管理员密码。
+    > 重置管理员密码时需要备用电子邮件地址和移动电话号码 (计算机管理员密码) 。
 
 4. 完成后，选择“保存”。
   
 有关账单问题的解答，请参阅：
   
-- [更改 Microsoft 365 商业版的帐单邮寄地址](../../commerce/billing-and-payments/change-your-billing-addresses.md)
+- [更改 Microsoft 365 商业版帐单邮寄地址](../../commerce/billing-and-payments/change-your-billing-addresses.md)
 
 - [管理支付方式](../../commerce/billing-and-payments/manage-payment-methods.md)

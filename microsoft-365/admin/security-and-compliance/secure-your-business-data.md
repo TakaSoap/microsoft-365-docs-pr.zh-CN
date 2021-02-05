@@ -22,23 +22,23 @@ search.appverid:
 - MOE150
 ms.assetid: de2da300-dbb6-4725-bb12-b85a9d296e75
 description: '保护业务电子邮件和数据免受网络威胁，包括勒索软件、网络钓鱼和恶意附件。 '
-ms.openlocfilehash: a329d2879309812a516191fdbd1858ad10e4beeb
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 3ae6d896d5ef060e2f077167f81e2029a3a143ac
+ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49926326"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "50114401"
 ---
 # <a name="top-10-ways-to-secure-microsoft-365-for-business-plans"></a>保护 Microsoft 365 商业版计划的十大方法
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 管理中心正在发生改变。 如果你的体验与此处提供的详细信息不匹配，请参阅[有关新版 Microsoft 365 管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)。
+> 管理中心正在发生改变。 如果你的体验与此处提供的详细信息不匹配，请参阅[有关新版 Microsoft 365 管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true)。
 
 ::: moniker-end
 
-如果你是使用 Microsoft 业务计划之一的中小型组织，并且你的组织类型被网络犯罪和黑客攻击，请使用本文中的指导来增强组织的安全性。 本指南可帮助你的组织实现《百年学校网络安全宣传活动手册》中所述 [的目标](https://go.microsoft.com/fwlink/p/?linkid=2015598)。
+如果你是使用 Microsoft 业务计划之一的中小型组织，并且你的组织类型是网络犯罪和黑客的目标，请使用本文中的指导来增强组织的安全性。 本指南可帮助你的组织实现《百年学校网络安全宣传活动手册》中所述 [的目标](https://go.microsoft.com/fwlink/p/?linkid=2015598)。
 
 Microsoft 建议完成下表中列出的适用于服务计划的任务。
 
@@ -55,7 +55,7 @@ Microsoft 建议完成下表中列出的适用于服务计划的任务。
 |9 |[防范恶意附件和安全附件文件](secure-your-business-data.md#atp)||![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |10 |[使用安全链接抵御网络钓鱼攻击](secure-your-business-data.md#phishingatp)||![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
 
-开始之前，请查看 Microsoft [365](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-secure-score) 安全中心中的 Microsoft 365 安全分数。 通过集中式仪表板，你可以监视并改进 Microsoft 365 标识、数据、应用、设备和基础结构的安全性。 您可以配置建议的安全功能、执行与安全相关的 (如查看报告) 或处理第三方应用程序或软件的建议。 通过进一步见解和更多了解更广泛的 Microsoft 产品和服务集，可以确信报告组织的安全运行状况。
+开始之前，请查看 Microsoft [365](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-secure-score) 安全中心中的 Microsoft 365 安全分数。 通过集中式仪表板，你可以监视并改进 Microsoft 365 标识、数据、应用、设备和基础结构的安全性。 您可以获得用于配置建议安全功能、执行与安全相关的任务 (例如查看报告) ，或者使用第三方应用程序或软件解决建议。 通过进一步见解和更多了解更广泛的 Microsoft 产品和服务集，可以确信报告组织的安全运行状况。
 
 ![Microsoft 安全分数屏幕截图](../../media/secure-score.png)
 
@@ -90,7 +90,7 @@ Microsoft 建议完成下表中列出的适用于服务计划的任务。
 
 《百里学校 [网络安全宣传活动](https://go.microsoft.com/fwlink/p/?linkid=2015598) 手册》为在组织内部建立强大的安全意识文化提供了出色的指导，包括培训用户识别网络钓鱼攻击。
 
-除了本指南之外，Microsoft 还建议你的用户执行本文中所述的操作：保护你的帐户和设备免受 [黑客和恶意软件的攻击](https://support.microsoft.com/office/066d6216-a56b-4f90-9af3-b3a1e9a327d6)。 这些操作包括：
+除了本指南之外，Microsoft 还建议你的用户执行本文中所述的操作：保护你的帐户和设备免受黑客和 [恶意软件的攻击](https://support.microsoft.com/office/066d6216-a56b-4f90-9af3-b3a1e9a327d6)。 这些操作包括：
 
 - 使用强密码
 
@@ -102,7 +102,7 @@ Microsoft 还建议用户采取以下文章中建议的操作来保护其个人�
 
 - [帮助保护Outlook.com电子邮件帐户](https://support.microsoft.com/office/a4f20fc5-4307-4ece-8231-6d4d4bd8a9ba)
 
-- [通过两步验证保护 Gmail 帐户](https://go.microsoft.com/fwlink/p/?linkid=2015688&)
+- [使用两步验证保护 Gmail 帐户](https://go.microsoft.com/fwlink/p/?linkid=2015688&)
 
 ## <a name="3-use-dedicated-admin-accounts"></a>3：使用专用管理员帐户
 <a name="admin"> </a>
@@ -141,7 +141,7 @@ Microsoft 365 环境包括恶意软件防护，但您可以通过阻止包含通
 
 您可以通过创建一个或多个邮件流规则来阻止通常用于勒索软件的文件扩展名，或警告通过电子邮件接收这些附件的用户，从而防范勒索软件。 一个很好的起点是创建两个规则：
 
-- 在打开包含宏的 Office 文件附件之前警告用户。 勒索软件可以隐藏在宏内，因此我们将警告用户不要从他们不知道的人打开这些文件。
+- 在打开包含宏的 Office 文件附件之前警告用户。 勒索软件可以隐藏在宏中，因此我们将警告用户不要从他们不知道的人打开这些文件。
 
 - 阻止可能包含勒索软件或其他恶意代码的文件类型。 我们将从下表中列出的可执行文件 (列表开始) 。 如果组织使用这些可执行类型中的任意一种，并且希望通过电子邮件发送这些类型，请将其添加到上一规则 (警告用户) 。
 
@@ -157,7 +157,7 @@ Microsoft 365 环境包括恶意软件防护，但您可以通过阻止包含通
 
 5. 针对每个规则应用下表中的设置。 将其余的设置保留为默认值，除非您要更改这些设置。
 
-6. 选择 **“保存”**。
+6. 选择“**保存**”。
     
 | 设置 | 在打开 Office 文件的附件之前警告用户 | 阻止可能包含勒索软件或其他恶意代码的文件类型 |
 |:-----|:-----|:-----|
@@ -193,21 +193,21 @@ Microsoft 365 环境包括恶意软件防护，但您可以通过阻止包含通
 
 5. 应用下表中的设置。 将其余的设置保留为默认值，除非您要更改这些设置。
 
-6. 选择 **“保存”**。
+6. 选择“**保存**”。
 
 |设置|拒绝自动将电子邮件转发到外部域|
 |---|---|
 |名称|阻止电子邮件自动转发到外部域|
 |如果 ...|发件人 。 . . 是外部/内部 。 . . 组织内部|
 |添加条件|收件人 。 . . 是外部/内部 。 . . 组织外部|
-|添加条件|邮件属性。 . . 包括邮件类型。 . . 自动转发|
+|添加条件|邮件属性 。 . . 包括邮件类型。 . . 自动转发|
 |执行以下操作...|阻止邮件。 . . 拒绝邮件并包括说明。|
 |提供消息文本|出于安全考虑，将阻止在此组织外自动转发电子邮件。|
 
 ## <a name="7-use-office-message-encryption"></a>7：使用 Office 邮件加密
 <a name="encryption"> </a>
 
-Office 邮件加密包含在 Microsoft 365 中。 已设置。 使用 Office 邮件加密，组织可以在组织内外人员之间发送和接收加密的电子邮件。 Office 365 邮件加密适用于 Outlook.com、Yahoo！、Gmail 和其他电子邮件服务。 电子邮件加密有助于确保只有预期收件人才能查看邮件内容。
+Office 邮件加密包含在 Microsoft 365 中。 已设置。 借助 Office 邮件加密，组织可以在组织内外人员之间发送和接收加密的电子邮件。 Office 365 邮件加密适用于 Outlook.com、Yahoo！、Gmail 和其他电子邮件服务。 电子邮件加密有助于确保只有预期收件人才能查看邮件内容。
 
 Office 邮件加密在发送邮件时提供两种保护选项：
 
@@ -248,15 +248,15 @@ Office 邮件加密在发送邮件时提供两种保护选项：
 
 1. 转到 <https://protection.office.com>。
 
-2. 在安全&合规中心的左侧导航窗格中，在 **"威胁** 管理"下，选择"**策略"。**
+2. 在安全&合规中心的左侧导航窗格中，在 **"威胁** 管理"下，选择 **"策略"。**
 
 3. 在"策略"页上，**选择"防钓鱼"。**
 
 4. 在"防钓鱼"页上，选择 **" + 创建"。** 向导将启动，可分步定义防钓鱼策略。
 
-5. 指定策略的名称、说明和设置，如下图所示。 有关 [更多详细信息，请参阅 Microsoft Defender for Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-anti-phishing-policies) 选项中的反网络钓鱼策略。
+5. 指定策略的名称、说明和设置，如下图所示。 有关 [更多详细信息，请参阅 Microsoft Defender for Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-anti-phishing-policies) 选项中的防钓鱼策略。
 
-6. 查看设置后，选择" **创建此策略"或** " **保存**"（如果适用）。
+6. 查看设置后，选择"**创建此策略"或****"保存**"（如果适用）。
 
 |设置或选项|推荐设置|
 |---|---|
@@ -281,7 +281,7 @@ Office 邮件加密在发送邮件时提供两种保护选项：
 
 1. 转到 <https://protection.office.com> 管理员帐户并登录。
 
-2. 在安全&合规中心的左侧导航窗格中，在 **"威胁** 管理"下，选择"**策略"。**
+2. 在安全&合规中心的左侧导航窗格中，在 **"威胁** 管理"下，选择 **"策略"。**
 
 3. 在"策略"页上，选择 **"安全附件"。**
 
@@ -297,7 +297,7 @@ Office 邮件加密在发送邮件时提供两种保护选项：
 |---|---|
 |名称|使用检测到的恶意软件阻止当前和未来的电子邮件。|
 |说明|使用检测到的恶意软件阻止当前和未来的电子邮件和附件。|
-|保存附件未知恶意软件响应|选择"阻止 - 使用检测到的恶意软件阻止当前和未来 **的电子邮件和附件"。**|
+|保存附件未知恶意软件响应|Select **Block - Block the current and future emails and attachments with detected malware.**|
 |检测时重定向附件|启用重定向 (选中此框)  <br/> 输入管理员帐户或邮箱设置以隔离。 <br/> 如果附件的恶意软件扫描次数或出现错误，请应用 (选中此框) 。|
 |应用于|收件人域为 。 . . 选择你的域。|
 |
@@ -325,13 +325,13 @@ Office 邮件加密在发送邮件时提供两种保护选项：
 
 修改默认策略：
 
-1. 在"安全链接"页上应用于整个组织的"策略" **下**，双击" **默认策略** "。
+1. 在"安全链接"页上应用于整个组织 **的策略下**， **双击默认策略** 。
 
 2. 在 **"应用于 Office 365** 中的内容的设置"下，输入要阻止的 _URL，example.com，_ 然后选择 **+** 。
 
 3. 在 **"** 应用于电子邮件以外的内容的设置"下，选择 **"Office 365** 应用程序"，"不跟踪用户何时单击安全链接"，并且"不允许用户单击指向原始 URL 的安全 **链接**"。 
 
-4. 选择 **“保存”**。
+4. 选择“**保存**”。
 
 若要创建面向域中所有收件人的新策略：
 
@@ -339,7 +339,7 @@ Office 邮件加密在发送邮件时提供两种保护选项：
 
 2. 应用下表中列出的设置。
 
-3. 选择 **“保存”**。
+3. 选择“**保存**”。
 
 |设置或选项|推荐设置|
 |---|---|

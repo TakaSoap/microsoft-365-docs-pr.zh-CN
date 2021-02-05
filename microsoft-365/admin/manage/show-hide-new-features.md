@@ -1,74 +1,65 @@
 ---
-title: 使用新增管理功能显示或隐藏新功能
-f1.keywords:
-- NOCSH
-ms.author: sirkkuw
-author: sirkkuw
-manager: scotv
-audience: Admin
-ms.topic: article
-ms.service: o365-administration
-localization_priority: Normal
-ms.collection:
+title： "Manage which Office features appear in What's New" f1.keywords：
+- NOCSH ms.author：danbrown author： DHB-MSFT manager： audiencetv audience： Admin ms.topic： article ms.service： o365-administration localization_priority： Normal ms.collection：
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
-ms.custom: AdminSurgePortfolio
-search.appverid:
+- Adm_TOC ms.custom：AdminSurgePortfolio search.appverid：
 - BCS160
 - MET150
-- MOE150
-description: 决定向 Office 中的最终用户显示或隐藏哪些功能及其新增内容。 Office 桌面应用程序的新管理。
-ms.openlocfilehash: 8a7511845dbcce56848834178ed81cd7b919de42
-ms.sourcegitcommit: e56894917d2aae05705c3b9447388d10e2156183
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48841407"
+- MOE150 description： "Decide which Office features to show or hide when a user chooses Help > What's New in their Office app on Windows by using the "What's new in Office" feature in the Microsoft 365 admin center.
 ---
-# <a name="show-or-hide-new-features-using-whats-new-management"></a>使用新增管理功能显示或隐藏新功能
 
-**Office 的新的 Windows 管理** 功能使组织能够决定在 Office 桌面应用程序中向最终用户显示的功能。 内容预览允许您查看每个发布版本和频道的新内容。 然后，您可以选择是隐藏还是显示每项功能对最终用户的新增内容。 
+# <a name="manage-which-office-features-appear-in-whats-new"></a>管理新增功能中显示哪些 Office 功能
 
-**Office 桌面应用程序中** 的 "新增功能" 内容突出显示为应用程序发布的新功能的列表。 它还包含简短说明和图片或视频，可帮助客户了解如何使用该功能。 
+当一个重要的 Office 功能发布时，当用户在 Windows 上的 Office应用中选择"帮助新增功能"时，用户将会收到有关  >  该功能的消息。
 
-**Office 的新管理功能** 在 Microsoft 365 管理中心和 [客户端配置服务](https://config.office.com)中可用。
+可以使用 Microsoft 365 管理中心中的 **Office** 新增功能来控制用户显示哪些功能消息。 如果你决定向用户隐藏功能消息，你稍后可以始终返回，并决定向用户显示它。
 
 > [!NOTE]
-> 全局管理员和 Office 应用管理员角色管理用户在 Office 应用程序中看到的内容的新增内容。
+> - 向用户隐藏功能消息不会在 Office 应用中禁用该功能。
+> - 必须分配有全局管理员角色或 Office 应用管理员角色才能使用 Office 中的 **新增** 功能。
 
-##  <a name="show-or-hide-new-features"></a>显示或隐藏新功能 
+## <a name="show-or-hide-new-features"></a>显示或隐藏新功能 
 
-管理员可以预览频道的新增 **功能** 内容，并通过 **Office 的新增管理功能** 来管理内容的发布。
+1. 在 Microsoft 365 管理中心的"设置 **"** 下，选择 **"组织设置"。**
+2. 在" **服务"** 选项卡上， **选择 Office 中的新增功能**。
+3. 单击功能名称时，将显示一个包含以下信息的飞出面板：
+     - 功能简短说明。
+     - 指向文章的链接，以了解有关该功能的更多内容。
+     - 功能出现的 Office 应用程序。
+     - 第一 (版本) 该功能可用于该频道。
+4. Choose **Hide from users.** 或者，如果你之前隐藏该功能，请选择"**向用户显示"。**
 
-1. 在 Microsoft 365 管理中心的 " **设置** " 下，选择 " **组织设置** "。
-2. 在 " **服务** " 选项卡上，选择 " **Office 新增功能管理** "。
-3. 选择一个或多个功能以查看弹出面板上每个功能的功能名称、简短说明、目标应用程序和发布版本。
-4. 选择 " **从用户隐藏** " 或 "向 **用户显示** "。  
-    **默认情况下显示** 的状态指示在管理员将功能的状态设置为 " **隐藏** " 或 "已 **显示** " 之前，默认情况下将向用户显示功能信息。  
+还可以在"管理哪些 **Office** 功能显示在'新增功能'"页上选择多个功能，然后选择"隐藏 **"** 或"**显示"。**
 
-    > [!NOTE]
-    > 如果功能在多个 Office 应用中可用，则将该功能设置为 "隐藏" 将在所有 Office 应用中隐藏功能通知。
+> [!NOTE]
+> - 如果功能在多个 Office 应用中可用，将该功能设置为 **"** 隐藏"将隐藏所有这些 Office 应用中的功能消息。
+> - 默认情况下，所有功能消息都向用户显示。 这是所有功能的默认状态，并且只有选择隐藏或显示功能消息时状态才能更改。
+> - 您还可以从 Microsoft 365 应用版管理中心 () 。 [https://config.office.com](https://config.office.com) 此功能位于 **"自定义**  >  **新增管理"下**。
 
-新功能将基于此计划显示在 Office 新增功能管理中：
+## <a name="list-of-features"></a>功能列表
+
+可以筛选"管理哪些 Office 功能显示在' **新增功能'"页上的功能** 。 可以按频道、应用程序或状态或它们的组合进行筛选。
+
+基于以下计划在页面上显示新功能：
 
 ||||
 |:-----|:-----|:-----|
-|**频道** <br/> |**在管理预览中** <br/> |**执行操作** <br/> |
-|**Current** <br/> |一个月的15号  <br/> |每月发布前 1-3 周 <br/> |
-|**月度企业版** <br/> |一个月的第一  <br/> |主要发布之前两周的新功能 |
-|**半年企业 (预览)** <br/> |9月1日和3月1日 <br/> | 在主要发布新功能之前2周|
-|**半年企业** <br/> |1月1日和7月1 <br/> | 在主要发布新功能之前2周<br/> |
+|**频道** <br/> |"日期" <br/> |**采取措施** <br/> |
+|**Current** <br/> |每月 15 日  <br/> |1 - 每月发布前 3 周 <br/> |
+|**月度企业版** <br/> |每月第一个  <br/> |在主要版本前两周引入新功能 |
+|**半年企业版 (预览)** <br/> |9 月 1 日到 3 月 1 日 <br/> | 在引入新功能的主要版本前 2 周|
+|**半年企业版** <br/> |1 月 1 日与 7 月 1 日 <br/> | 在引入新功能的主要版本前 2 周<br/> |
 
-有关频道更新计划的详细信息，请参阅 [按日期) 列出的 Microsoft 365 应用更新历史记录 (](https://docs.microsoft.com/officeupdates/update-history-microsoft365-apps-by-date)。
+有关何时向每个更新频道发布新版本的信息，请参阅 [Microsoft 365 ](https://docs.microsoft.com/officeupdates/update-history-microsoft365-apps-by-date)应用版的更新历史记录 (按日期) 。
 
-## <a name="add-office-whats-new-management-card-to-the-admin-center-home-page"></a>将 Office 的新增管理卡添加到管理中心主页
+## <a name="add-the-whats-new-in-office-card-to-the-admin-center-home-page"></a>将"Office 中的新增功能"卡片添加到管理中心主页
 
-1. 在 "Microsoft 365 管理" 页上，选择页面顶部的 " **添加卡片** "
-2. 在列表中查找 **Office 应用程序中的新增功能** 并选择它。
-3. 一旦卡片在主页上，您可以选择 " **管理** [" 以显示或隐藏您的组织的功能](#show-or-hide-new-features) 。 
+1. 在 Microsoft 365 管理页面上 **，选择页面** 顶部的"添加卡"
+2. 找到 **"管理哪些 Office 功能显示在** 列表中的新增功能"中，然后选择它。
+3. 卡片在主页上显示后，可以选择 **Office** 中的新增功能来显示或 [隐藏](#show-or-hide-new-features) 组织的功能。
 
 
 ## <a name="related-articles"></a>相关文章
 
-[Office 现已推出的新增管理功能现已正式推出](https://techcommunity.microsoft.com/t5/microsoft-365-blog/office-what-s-new-management-is-now-generally-available/ba-p/1179954)
+[Office 新增功能管理现已普遍可用](https://techcommunity.microsoft.com/t5/microsoft-365-blog/office-what-s-new-management-is-now-generally-available/ba-p/1179954)

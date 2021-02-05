@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: 了解用户在适用于桌面、移动和 Web 的 Office 应用中如何使用敏感度标签，以及哪些应用支持敏感度标签。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 672d99ed4345ee27437cda66087de6e4e3f521bb
-ms.sourcegitcommit: 4f40f5be140a23bacff6fd7b85536de14fc7d499
+ms.openlocfilehash: e9e3f73ad3756381a2ea6884d6ec65bc85063a10
+ms.sourcegitcommit: fa5659cb66d84dcfeebc03b47bd9d38017d8934d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "50084587"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "50110015"
 ---
 # <a name="use-sensitivity-labels-in-office-apps"></a>在 Office 应用中使用敏感度标签
 
@@ -171,15 +171,15 @@ Azure 信息保护统一标签客户端支持 Open XML 格式和 Microsoft Offic
 
 用户一次只能对一个文档或电子邮件应用一个标签。
 
-当您为包含附件的电子邮件添加标签时，附件不会继承标签，但出现以下一个例外：
+在标记包含附件的电子邮件时，只有在应用于电子邮件的标签应用加密且附件是 Office 文档尚未加密时，附件才能继承该标签。 由于继承的标签应用了加密，因此附件将新加密。
 
-- 附件是一个带有不应用加密的标签的 Office 文档，并且应用于电子邮件的标签将应用加密。 在这种情况下，通过电子邮件发送的 Office 文档会继承电子邮件的标签及其加密设置。
+当应用于电子邮件的标签未应用加密或附件已加密时，附件不会从电子邮件继承标签。
 
-或者： 
+标签继承示例，其中标签 **"机密** "应用加密，标签 **"常规** "不应用加密：
 
-- 如果附件有标签，则保留最初应用的标签。
-- 如果附件在未添加标签的情况下加密，则保留加密，但不标记它们。
-- 如果附件没有标签，则保持无标签。
+- 用户创建新电子邮件，并对此邮件应用 **"** 机密"标签。 然后，他们添加未标记或加密的 Word 文档。 继承后，文档被新标记为"机密"，并且现在从该标签应用了加密。
+
+- 用户创建新电子邮件，并对此邮件应用 **"** 机密"标签。 然后，他们添加一个标记为"常规"且此文件未加密的 Word 文档。 继承后，文档会重新标记为"机密"，现在已应用该标签中的加密。
 
 ## <a name="sensitivity-label-compatibility"></a>敏感度标签兼容性
 

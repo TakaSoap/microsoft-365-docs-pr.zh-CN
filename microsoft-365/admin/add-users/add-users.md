@@ -21,19 +21,19 @@ search.appverid:
 - MET150
 description: 了解如何同时向 Microsoft 365 添加用户和分配许可证。
 ms.date: 07/01/2020
-ms.openlocfilehash: 5df0db1cb782cc55bcf3e2b599430a98ea88750c
-ms.sourcegitcommit: 8252377f63de188d32ed1ccd37540d92cba3cb65
+ms.openlocfilehash: 412774c9786abc01e94c5a350871f9d34586cce4
+ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "49670991"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "50114149"
 ---
 # <a name="add-users-and-assign-licenses-at-the-same-time"></a>同时添加用户和分配许可证
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 管理中心正在发生改变。 如果你的体验与此处提供的详细信息不匹配，请参阅[有关新版 Microsoft 365 管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)。
+> 管理中心正在发生改变。 如果你的体验与此处提供的详细信息不匹配，请参阅[有关新版 Microsoft 365 管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true)。
 
 ::: moniker-end
 
@@ -41,7 +41,7 @@ ms.locfileid: "49670991"
 
 ## <a name="before-you-begin"></a>准备工作
 
-你必须是全局管理员、许可证管理员或用户管理员才能添加用户和分配许可证。 有关详细信息，请参阅 [关于管理员角色](../../admin/add-users/about-admin-roles.md)。
+你必须是全局管理员、许可证管理员或用户管理员才能添加用户和分配许可证。 有关详细信息，请参阅[关于管理员角色](../../admin/add-users/about-admin-roles.md)。
 
 ## <a name="watch-add-users-in-the-admin-center"></a>观看：在管理中心添加用户
 
@@ -62,7 +62,7 @@ ms.locfileid: "49670991"
     - **密码设置** 选择使用自动生成的密码或为用户创建自己的强密码。
     - 用户必须在 90 天后更改其密码。 或者，你可以选择 **要求此用户在首次登录时更改其密码**。
     - 选择添加用户时是否要通过电子邮件发送密码。
-4. 在 **"分配产品许可证** "窗格中，为用户选择位置和相应的许可证。 如果没有可用的许可证，仍然可以添加用户并购买更多许可证。 展开 **"** 应用"并选择或取消选择应用，以限制用户拥有其许可证的应用。 选择“**下一步**”。
+4. 在 **"分配产品许可证** "窗格中，为用户选择位置和相应的许可证。 如果没有可用的许可证，仍然可以添加用户并购买更多许可证。 展开 **"** 应用"并选择或取消选择应用，以限制用户拥有其许可证的应用。 选择 **下一步**。
 5. 在 **"可选设置"** 窗格中，展开 **"角色** "，使此用户成为管理员。展开 **配置文件信息** 以添加有关用户的其他信息。
 6. 选择 **"下** 一步"，查看新用户的设置，进行您喜欢的任何更改，然后选择"**完成添加"，** 然后选择"**关闭"。**
 

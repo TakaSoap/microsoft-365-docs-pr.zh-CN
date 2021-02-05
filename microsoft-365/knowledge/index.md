@@ -1,9 +1,9 @@
 ---
-title: '预览版主题体验 (简介) '
+title: Microsoft Viva 主题简介
 ms.author: efrene
 author: efrene
 manager: pamgreen
-ms.reviewer: ''
+ms.reviewer: cjtan
 audience: ''
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -11,20 +11,16 @@ search.appverid: ''
 ms.collection:
 - enabler-strategic
 - m365initiative-topics
-ROBOTS: NOINDEX, NOFOLLOW
 localization_priority: None
-description: 了解如何查找主题体验的资源。
-ms.openlocfilehash: afba6930c30ad59dc95abb255eadab501b01f189
-ms.sourcegitcommit: 537e513a4a232a01e44ecbc76d86a8bcaf142482
+description: 了解如何查找 Microsoft Viva 主题的资源。
+ms.openlocfilehash: 3e75dfcfa17e5604e04b6f5e49be9019b1679110
+ms.sourcegitcommit: a048fefb081953aefa7747c08da52a7722e77288
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "50029604"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "50107166"
 ---
-# <a name="introduction-to-topic-experiences-preview"></a>预览版主题体验 (简介) 
-
-> [!Note] 
-> 本文中的内容适用于 Project Cortex 专用预览版。 [了解更多关于 Project Cortex的信息](https://aka.ms/projectcortex)。
+# <a name="introduction-to-microsoft-viva-topics"></a>Microsoft Viva 主题简介
 
 </br>
 
@@ -33,36 +29,36 @@ ms.locfileid: "50029604"
 </br>
 
 
-主题体验是一项 Office 365 服务，可帮助组织将信息转换为知识。
+Viva 主题是一项 Office 365 服务，可帮助组织将信息转换为知识。
 
-此页上的资源旨在让你开始了解和使用组织中的主题体验。
+此页面上的资源旨在让你开始了解和使用贵组织中 Viva 主题。
 
-## <a name="get-started"></a>入门
+## <a name="get-started"></a>开始行动
 
-本节中的资源可帮助你了解有关主题体验及其如何提供帮助的详细信息。
+本节中的资源可帮助你了解有关什么是 Viva 主题及其如何提供帮助。
 
 | 如果要查找此信息： | 参考资源： |
 |:-----|:-----|
-|了解有关主题体验的详细信息|[主题体验概述](topic-experiences-overview.md)|
-|了解 AI 如何发现和推荐主题|[主题体验发现](topic-experiences-discovery.md)|
-|了解主题安全性|[主题体验安全和隐私](topic-experiences-security-privacy.md)|
+|了解有关 Viva 主题的信息|[Microsoft Viva 主题概述](topic-experiences-overview.md)|
+|了解 AI 如何发现和推荐主题|[Microsoft Viva 主题发现](topic-experiences-discovery.md)|
+|了解主题安全性|[Microsoft Viva 安全和隐私](topic-experiences-security-privacy.md)|
 
 
 ## <a name="adoption"></a>采用
 
-了解有关如何在组织中使用和实施主题体验以帮助你解决业务问题的详细信息： 
+详细了解如何在组织中使用和实施 Viva 主题，以帮助你解决业务问题： 
 
 | 如果要查找此信息： | 参考资源： |
 |:-----|:-----|
-|了解如何开始计划使用主题体验。 |[入门](topics-adoption-getstarted.md)<br><br>|  
+|了解如何开始计划使用 Microsoft Viva。 |[入门](topics-adoption-getstarted.md)<br><br>|  
 
 ## <a name="set-up-and-administration"></a>设置和管理
 
-本部分中的资源可帮助组织中的管理员在 Microsoft 365 环境中设置和配置Microsoft SharePoint Syntex。
+本节中的资源可帮助你组织的管理员在 Microsoft 365 环境中设置和配置 Viva 主题。
 
 | 如果要查找此信息： | 参考资源： |
 |:-----|:-----|
-|了解如何设置和配置主题体验|[设置主题体验](set-up-topic-experiences.md)|
+|了解如何设置和配置 Microsoft Viva|[设置 Microsoft Viva](set-up-topic-experiences.md)|
 |了解如何配置用户权限|[管理主题权限](topic-experiences-user-permissions.md)|
 |了解如何管理可以查看主题的人|[管理主题可见性](topic-experiences-knowledge-rules.md)|
 |了解如何管理主题发现设置|[管理主题发现](topic-experiences-discovery.md)|
@@ -73,11 +69,11 @@ ms.locfileid: "50029604"
 
 | 如果要查找此信息： | 参考资源： |
 |:-----|:-----|
-|了解如何使用主题|[管理中心概述](topic-center-overview.md)<br><br>[管理主题](manage-topics.md)<br><br>[新建主题](create-a-topic.md)<br><br>[编辑现有主题](edit-a-topic.md)<br><br>|
-|了解用户角色|[主题体验角色](topic-experiences-roles.md)|
-|了解主题可能不同于不同用户的原因|[主题体验安全修整](topic-experiences-security-trimming.md)|
+|了解如何使用主题|[管理中心概述](topic-center-overview.md)<br><br>[管理主题](manage-topics.md)<br><br>[新建主题](create-a-topic.md)<br><br>[编辑现有主题](edit-a-topic.md)<br><br>[使用 Microsoft 搜索查找主题](search.md)<br><br>|
+|了解用户角色|[Viva 主题角色](topic-experiences-roles.md)|
+|了解主题可能不同于不同用户的原因|[Viva 主题安全修整](topic-experiences-security-trimming.md)|
 |了解如何防止标识和查看特定主题|[限制对主题的访问](restrict-access-to-topics.md)|
 
 
 
-## <a name="see-also"></a>另请参阅
+

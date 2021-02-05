@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: 无论是向合规中心添加新解决方案、根据反馈更新现有功能，还是推出最新更新的文档，Microsoft 365 都可以帮助你随时了解不断变化的合规性环境。 了解我们这个月已经进行了哪些工作。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 4fcc0c9317ed0f302c03ba4bda0b536b57889660
-ms.sourcegitcommit: c550c1b5b9e67398fd95bfb0256c4f5c7930b2be
+ms.openlocfilehash: 682f736456ebe822ee5a34de0175003fd7516920
+ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/01/2021
-ms.locfileid: "50066815"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "50113971"
 ---
 # <a name="whats-new-in-microsoft-365-compliance"></a>Microsoft 365 合规中心更新信息
 
@@ -79,7 +79,7 @@ Microsoft 365 合规性内容团队努力创建"内容解决方案"文档，以�
 
 ### <a name="sensitivity-labels"></a>敏感度标签
 
-- [自动标记 Azure Azure (预览) 。 ](https://docs.microsoft.com/en-us/azure/purview/create-sensitivity-label) 现在，你可以创建敏感度标签并自动将敏感度标签应用到 Azure Azure 中的资产，如 Azure Blob 存储中的文件和 Azure 中SQL Server。
+- [自动标记 Azure Azure (预览) 。 ](https://docs.microsoft.com/azure/purview/create-sensitivity-label) 现在，你可以创建敏感度标签并自动将敏感度标签应用到 Azure Azure 中的资产，如 Azure Blob 存储中的文件和 Azure 中SQL Server。
 - [要求用户向项目应用标签](sensitivity-labels-office-apps.md#require-users-to-apply-a-label-to-their-email-and-documents)。 这一新选项也称为"强制标签"，要求用户根据特定方案选择和应用敏感度标签。
 
 ## <a name="november-2020"></a>2020 年 11 月

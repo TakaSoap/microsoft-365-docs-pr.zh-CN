@@ -21,19 +21,19 @@ search.appverid:
 - MET150
 ms.assetid: 8d83b530-f4ca-47f6-a666-e5791cbacc7e
 description: 了解如何通过关闭或打开定期计费功能来续订 Microsoft 365。
-ms.openlocfilehash: 1bf6d3957479d1cb695075e139dc4af2a09db3df
-ms.sourcegitcommit: 25afc0c34edc7f8a5eb389d8c701175256c58ec8
+ms.openlocfilehash: 3bde3cc6d62e89e3339c268b9e3f9be5d657c467
+ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "47324300"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "50114605"
 ---
 # <a name="renew-microsoft-365-for-business"></a>续订 Microsoft 365 商业版
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 管理中心正在发生改变。 如果你的体验与此处提供的详细信息不匹配，请参阅[有关新版 Microsoft 365 管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)。
+> 管理中心正在发生改变。 如果你的体验与此处提供的详细信息不匹配，请参阅[有关新版 Microsoft 365 管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true)。
 
 ::: moniker-end
 
@@ -59,7 +59,7 @@ ms.locfileid: "47324300"
 5. 选择“**保存**”。
 
     > [!NOTE]
-    > - 只能更改活动订阅的“**定期计费**”设置。 如果你的订阅已过期或处于禁用状态，则你需要[重新激活](reactivate-your-subscription.md)它，然后才能打开或关闭“**定期计费**”。
+    > - 只能更改活动订阅的“**定期计费**”设置。 如果你的订阅已过期或处于禁用状态，则你需要 [重新激活](reactivate-your-subscription.md)它，然后才能打开或关闭“**定期计费**”。
     > - 关闭“**定期计费**”后，不会取消订阅。 如果要保持订阅有效，则必须手动支付帐单。
     > - 如果关闭“**定期计费**”，订阅将保持活动状态，直至到期。 可在“订阅详细信息”页面的“**订阅和付款设置**”部分中查看到期日。
     > - 若要了解如何立即取消订阅，请参阅[取消订阅](cancel-your-subscription.md)。
@@ -79,7 +79,7 @@ ms.locfileid: "47324300"
     可通过将开关切换到“**关**”来关闭“**定期计费**”。
 
     > [!NOTE]
-    > - 只能更改活动订阅的“**定期计费**”设置。 如果你的订阅已过期或处于禁用状态，则你需要[重新激活](reactivate-your-subscription.md)它，然后才能打开或关闭“**定期计费**”。
+    > - 只能更改活动订阅的“**定期计费**”设置。 如果你的订阅已过期或处于禁用状态，则你需要 [重新激活](reactivate-your-subscription.md)它，然后才能打开或关闭“**定期计费**”。
     > - 关闭“**定期计费**”后，不会立即取消订阅。 它将在过期之前保持活动状态。 可以在订阅卡上查看到期日期
     > - 若要了解如何立即取消订阅，请参阅[取消订阅](cancel-your-subscription.md)。
 
@@ -98,7 +98,7 @@ ms.locfileid: "47324300"
     可通过将开关切换到“**关**”来关闭“**定期计费**”。
 
     > [!NOTE]
-    > - 只能更改活动订阅的“**定期计费**”设置。 如果你的订阅已过期或处于禁用状态，则你需要[重新激活](reactivate-your-subscription.md)它，然后才能打开或关闭“**定期计费**”。
+    > - 只能更改活动订阅的“**定期计费**”设置。 如果你的订阅已过期或处于禁用状态，则你需要 [重新激活](reactivate-your-subscription.md)它，然后才能打开或关闭“**定期计费**”。
     > - 关闭“**定期计费**”后，不会立即取消订阅。 它将在过期之前保持活动状态。 可以在订阅卡上查看到期日期。
     > - 若要了解如何立即取消订阅，请参阅[取消订阅](cancel-your-subscription.md)。
 

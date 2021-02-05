@@ -10,12 +10,12 @@ audience: ITPro
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 manager: laurawi
-ms.openlocfilehash: 5b7ba0db52f06f7b3f6fce596015b56c8e46c6c2
-ms.sourcegitcommit: 2c4c7ebe9bea52765ece0ed27d3ea77313711b10
+ms.openlocfilehash: d22cef41fb1d6dc3fde39681ad84edc510440b11
+ms.sourcegitcommit: fa5659cb66d84dcfeebc03b47bd9d38017d8934d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/01/2021
-ms.locfileid: "50068949"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "50110003"
 ---
 # <a name="access-the-admin-portal"></a>访问管理门户
 
@@ -59,9 +59,9 @@ Microsoft 托管桌面服务的网关是[Microsoft Endpoint Manager。](https://
 > [!NOTE]
 > 安全功能包括与安全相关的通信、安全联系人的管理、安全相关支持请求的管理以及安全相关报告的访问权限。 
 
-### <a name="assigning-built-in-roles-to-administrators"></a>向管理员分配内置角色
+### <a name="assigning-built-in-roles-to-user"></a>向用户分配内置角色
 
-若要管理内置角色，每个自定义角色都有一个安全组，其名称为"新式工作区角色 _-_ 角色名称" (例如，"新式工作区角色 – 安全管理器") 。 若要将用户分配到其中一个安全组，请按照以下步骤操作：
+为了便于管理内置角色，每个自定义角色都有一个安全组，其名称为"新式工作区角色 _-_ 角色名称" (例如，"新式工作区角色 – 安全管理器") 。 若要将用户分配到其中一个安全组，请按照以下步骤操作：
 1.  转到 Microsoft Endpoint Manager 门户。
 2.  选择 **左侧** 的组。
 3.  搜索 **新式工作区角色**，然后选择与要分配的角色关联的组。 
@@ -71,3 +71,16 @@ Microsoft 托管桌面服务的网关是[Microsoft Endpoint Manager。](https://
 
 > [!NOTE]
 > 当前不支持嵌套角色分配组。 
+
+### <a name="assigning-built-in-roles-to-groups"></a>向组分配内置角色
+
+如果需要将一个或多个内置角色分配给现有组，请按照以下步骤操作：
+1. 转到portal.azure.com [](https://portal.azure.com/)。
+2. 搜索并打开 **企业应用程序**。
+3. 将应用程序 **类型** 筛选器更改为 _Microsoft Applications，_ 然后选择"应用 **"。**
+4. 搜索并选择 _现代工作区客户 API。_
+5. 从 **左侧窗格中** 选择用户和组，然后选择 **+ 添加用户/组**。
+6. 从用户和组搜索 **你需要的组**。
+7. 从"选择角色"中搜索适用的 **角色**，然后选择它。
+8. 选择 **"分配"。**
+ 

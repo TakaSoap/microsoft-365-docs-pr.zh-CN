@@ -24,19 +24,19 @@ search.appverid:
 - GEA150
 ms.assetid: 1561140a-16a9-4a02-822d-a989250e479d
 description: 了解如何在 Microsoft 365 中购买域名。
-ms.openlocfilehash: d8c0bac5921b5cb3efacffdfee3ab948857b8a1f
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+ms.openlocfilehash: 40fc44dfa3bc3e608b590157b7db423302af748d
+ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49658607"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "50113959"
 ---
 # <a name="buy-a-domain-name"></a>购买域名
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 管理中心正在发生改变。 如果你的体验与此处提供的详细信息不匹配，请参阅[有关新版 Microsoft 365 管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)。
+> 管理中心正在发生改变。 如果你的体验与此处提供的详细信息不匹配，请参阅[有关新版 Microsoft 365 管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true)。
 
 ::: moniker-end
 
@@ -77,7 +77,7 @@ ms.locfileid: "49658607"
 > 选择" **购买域**"时，如果租户是通过 Microsoft 合作伙伴购买/管理的，则可能会重定向到 Microsoft 合作伙伴的网站。
 
 ### <a name="domain-privacy"></a>域隐私
-我们通过购买域提供免费域隐私订阅。 这样，你的联系人信息将附加到你的域注册中， [了解更多信息。](https://whois.icann.org/en/privacy-and-proxy-services)
+我们通过购买域提供免费域隐私订阅。 这样，你的联系人信息将附加到你的域的注册中，并保留为专用。 [了解更多信息。](https://whois.icann.org/en/privacy-and-proxy-services)
   
 ### <a name="buy-a-domain-from-another-domain-registrar"></a>从另一域注册机构购买域
 如果你想要从域注册机构（而非 [GoDaddy）](https://www.godaddy.com)购买域，我们建议你使用以下支持自动设置 (域连接) 。 

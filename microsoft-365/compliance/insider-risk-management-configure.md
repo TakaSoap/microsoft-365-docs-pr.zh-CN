@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: 3eaa6481c2f1b0d41066a8cea1b28d776f786a1b
-ms.sourcegitcommit: c0cfb9b354db56fdd329aec2a89a9b2cf160c4b0
+ms.openlocfilehash: 3a88c48e6915b03316b29d80d2a0f7550d4b5d32
+ms.sourcegitcommit: b88ffaf3409e02a9847f030f8468f96d36efa398
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "50094773"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "50105159"
 ---
 # <a name="get-started-with-insider-risk-management"></a>内部风险管理入门
 
@@ -41,10 +41,13 @@ ms.locfileid: "50094773"
 - Microsoft 365 A5 订阅（付费或试用版本）
 - Microsoft 365 A3 订阅 + Microsoft 365 A5 合规加载项
 - Microsoft 365 A3 订阅 + Microsoft 365 A5 预览体验成员风险管理加载项
+- Microsoft 365 G5 订阅（付费或试用版本）
+- Microsoft 365 G5 订阅 + Microsoft 365 G5 合规加载项
+- Microsoft 365 G5 订阅 + Microsoft 365 G5 预览体验成员风险管理加载项
 
 必须为包含在内部风险管理策略中的用户分配上述许可证之一。
 
-如果你没有现有的 Microsoft 365 企业版 E5 计划，并且想要尝试内部风险管理，可以将[Microsoft 365](https://docs.microsoft.com/office365/admin/try-or-buy-microsoft-365)添加到现有订阅或注册[](https://www.microsoft.com/microsoft-365/enterprise)Microsoft 365 企业版 E5 试用版。
+如果你没有现有的 Microsoft 365 企业版 E5 计划，并且想要尝试内部风险管理，可以将[Microsoft 365](/office365/admin/try-or-buy-microsoft-365)添加到现有订阅或注册[](https://www.microsoft.com/microsoft-365/enterprise)Microsoft 365 企业版 E5 试用版。
 
 ## <a name="step-1-enable-permissions-for-insider-risk-management"></a>步骤 1：为内部风险管理启用权限
 
@@ -63,7 +66,7 @@ ms.locfileid: "50094773"
 | **预览体验计划风险管理调查员** | 使用此组向将充当内部风险数据调查者的用户分配权限。 此角色组的用户可以访问所有内部风险管理警报、案例、通知模板和内容资源管理器。 |
 
 > [!NOTE]
-> Privileged Identity Management (PIM) 。 若要了解有关 PIM 的信息，请参阅 Privileged Identity Management 中的"分配[Azure AD 角色"。](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-how-to-add-role-to-user)
+> Privileged Identity Management (PIM) 。 若要了解有关 PIM 的信息，请参阅 Privileged Identity Management 中的"分配[Azure AD 角色"。](/azure/active-directory/privileged-identity-management/pim-how-to-add-role-to-user)
 
 ### <a name="add-users-to-an-insider-risk-management-role-group"></a>将用户添加到内部风险管理角色组
 

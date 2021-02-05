@@ -1,5 +1,5 @@
 ---
-title: 在 Microsoft 365 中规划主题体验
+title: 规划 Microsoft Viva 主题
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
@@ -9,41 +9,40 @@ ms.topic: article
 ms.service: o365-administration
 search.appverid: MET150
 localization_priority: Normal
-ROBOTS: NOINDEX, NOFOLLOW
-description: 了解如何在 Microsoft 365 中规划主题体验
-ms.openlocfilehash: 153937cf6bc4a12f0a27866204b2286c343ddf55
-ms.sourcegitcommit: 1a9f0f878c045e1ddd59088ca2a94397605a242a
+description: 了解如何规划 Microsoft Viva 主题
+ms.openlocfilehash: 65983f342b3277d33c7bfeb21d8481b1d3d5e817
+ms.sourcegitcommit: a048fefb081953aefa7747c08da52a7722e77288
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "49668098"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "50107950"
 ---
-# <a name="plan-topic-experiences-in-microsoft-365"></a>在 Microsoft 365 中规划主题体验
+# <a name="plan-for-microsoft-viva-topics"></a>规划 Microsoft Viva 主题
 
-你可以控制主题在组织中是如何体验的。 针对主题体验的规划决策可确保向用户显示高质量主题，并且他们有权使用和贡献知识。
+你可以控制主题在组织中是如何体验的。 针对主题的规划决策可确保向用户显示高质量主题，并且他们有权使用和贡献知识。
 
 本文将介绍这些规划决策：
 
-- 要针对主题对哪些 SharePoint 网站进行爬网。
+- 要针对主题对哪些 SharePoint 网站进行爬网
 - 您希望从主题体验中排除的主题（如果有）
-- 要向哪些用户显示主题。
-- 要授予哪些用户权限来管理主题中心中的主题。
-- 要授予在主题中心创建或编辑主题的权限的用户。
-- 要为主题中心命名的名称。
+- 要向哪些用户显示主题
+- 要向哪些用户授予在主题中心管理主题的权限
+- 要授予在主题中心创建或编辑主题的权限的用户
+- 要为主题中心命名的名称
 
-将尊重数据的安全性和隐私，并且主题体验不会向用户授予对无权限文件的其他访问权限。 作为规划 [过程的一部分](topic-experiences-security-privacy.md) ，我们还建议你阅读主题体验安全和隐私。
+将尊重数据的安全性和隐私，并且主题体验不会向用户授予对无权限文件的其他访问权限。 作为规划过程的一部分，我们还建议你阅读 [Microsoft Viva](topic-experiences-security-privacy.md) 主题安全和隐私。
 
-## <a name="requirements"></a>Requirements
+## <a name="requirements"></a>要求
 
-您必须是全局管理员或 SharePoint 管理员才能访问 Microsoft 365 管理中心并设置主题体验。
+您必须是全局管理员或 SharePoint 管理员才能访问 Microsoft 365 管理中心并设置主题。
 
-将使用主题体验的所有用户都需要主题 **体验** 许可证。 "设置"主题体验 [中介绍了分配许可证的内容](set-up-topic-experiences.md)。
+将使用主题的所有用户都需要主题 **体验** 许可证。 "设置 Microsoft Viva 主题"中介绍了 [分配许可证的内容](set-up-topic-experiences.md)。
 
 ## <a name="topic-discovery"></a>主题发现
 
 主题发现设置指定哪些 SharePoint 网站用作主题源。 您可以选择包括所有 SharePoint 网站、特定网站列表或不包含任何网站。 我们建议你选择所有网站，以便主题体验可以发现大量适合你的用户的主题。
 
-设置主题体验时，可以从以下选项中进行选择：
+设置主题时，可以从以下选项中进行选择：
 
 - **所有网站**：组织的所有 SharePoint 网站。 这包括当前和将来的网站。
 - **所有（所选网站除外**）：除您指定的站点之外的所有网站。 将来创建的网站将包含为主题发现源。 
@@ -58,13 +57,13 @@ ms.locfileid: "49668098"
 Site name,URL
 ```
 
-我们不建议选择"否 **"网站** ，因为它会阻止自动创建或更新主题。 但是，如果你想要设置主题体验，然后以后添加网站，可以选择此选项。
+我们不建议选择"否 **"网站** ，因为它会阻止自动创建或更新主题。 但是，如果要设置主题，稍后再添加网站，可以选择此选项。
 
 建议为用户或知识管理员创建一个流程，以请求从主题发现中删除各个网站（如果需要）。
 
 ## <a name="user-permissions"></a>用户权限
 
-您指定的用户权限可确定组织中哪些人员与主题交互以及他们可以做什么。
+您指定的用户权限决定了组织中哪些人员与主题进行交互以及他们可以做什么。
 
 *管理主题*
 
@@ -80,7 +79,7 @@ Site name,URL
 
 如果要将创建和编辑主题限制为特定人员或组，请为这些人员或组创建一个安全组，并指定它在安装过程中。
 
-你可以选择不允许任何人参与主题，但不建议这样做。 知识管理员仍能够编辑和创建主题。
+你可以选择不允许任何人参与主题，但不建议这样做。 如果选择此选项，知识管理员仍可以编辑和创建主题。
 
 *主题查看者*
 
@@ -92,7 +91,7 @@ Site name,URL
 - **仅选定人员或安全组**
 - **没人**
 
-我们建议 **我的组织中的每个人**，但如果你进行试点，你可能希望仅选择选定的人员或安全组。 如果要设置 **主题** 体验，也可以选择"否"，但不允许用户查看主题。  (知识管理员仍可查看主题，并帮助他们做出让主题体验广泛可用的决定。) 
+我们建议 **我的组织中的每个人**，但如果进行试点，你可能希望仅选择选定的人员或安全组。 如果要设置 **主题** ，也可以选择"否"，但不允许用户查看主题。  (知识管理员仍可查看这些主题，并帮助他们做出让主题广泛可用的决定。) 
 
 ## <a name="knowledge-rules"></a>知识规则
 
@@ -103,9 +102,9 @@ Site name,URL
 .csv 文件必须包含以下参数：
 
 - **名称**：键入要排除的主题的名称。 可通过 2 种方法执行此操作：
-- **MatchType-Exact/Partial：** 键入您输入的名称 *是精确匹配* 类型还是 *部分* 匹配类型。
+- **MatchType-Exact/Partial：** 键入您输入 *的名称是精确* 匹配类型还是 *部分* 匹配类型。
     - 完全匹配：可以包括确切的名称或首字母缩写词 (例如 *Contoso* 或 *ATL*) 。
-    - 部分匹配：可以排除其中具有特定单词的所有主题。  例如 *，arc* 将排除其中带弧字的所有主题，如 *弧形圆*、圆弧 *弧* 线或 *培训弧*。请注意，它将不会排除作为单词的一部分包含的文本的主题，例如 *体系结构。*
+    - 部分匹配：可以排除其中具有特定单词的所有主题。  例如 *，arc* 将排除其中带弧字的所有主题，如 *弧形圆*、弧形弧形 *或**培训弧*。请注意，它将不会排除其中的文本作为单词的一部分包含的主题，如 *体系结构。*
 - **代表 (** 可选) ： (也称为 *扩展)* 如果要排除首字母缩略词，请键入首字母缩写词代表的单词。
 
     ![排除 CSV 模板中的主题](../media/exclude-topics-csv.png) 
@@ -118,7 +117,7 @@ Name (required),Expansion,MatchType- Exact/Partial (required)
 
 ## <a name="administration"></a>管理
 
-设置主题体验时，作为设置过程的一部分，将自动创建主题中心。 考虑要命名主题中心的内容以及希望 URL 是什么。 可以在设置过程中同时设置名称和 URL，稍后可以在 Microsoft 365 管理中心中更改名称 (但不能更改 URL) URL。 只能有一个主题中心。
+在设置主题时，作为设置过程的一部分，将自动创建主题中心。 考虑要命名主题中心的内容以及希望 URL 是什么。 可以在设置过程中同时设置名称和 URL，稍后可以在 Microsoft 365 管理中心中更改名称 (但不能更改 URL) URL。 只能有一个主题中心。
 
 ## <a name="setup-checklist"></a>设置清单
 

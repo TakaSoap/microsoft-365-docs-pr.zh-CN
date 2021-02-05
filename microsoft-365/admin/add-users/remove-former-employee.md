@@ -24,20 +24,20 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 44d96212-4d90-4027-9aa9-a95eddb367d1
-description: '按照此检查表操作，从 Microsoft 365 中删除员工并保护数据。 '
-ms.openlocfilehash: e8f0b61fae3656b7d700857e3cc7167cc121a77f
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+description: '按照此清单从 Microsoft 365 中删除员工和安全数据。 '
+ms.openlocfilehash: a875a8b7620067cdae46fcae3bb7ef8ce7d148fa
+ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48445515"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "50114053"
 ---
 # <a name="remove-or-delete-a-former-employee"></a>删除或删除以前的员工
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 管理中心正在发生改变。 如果你的体验与此处提供的详细信息不匹配，请参阅[有关新版 Microsoft 365 管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)。
+> 管理中心正在发生改变。 如果你的体验与此处提供的详细信息不匹配，请参阅[有关新版 Microsoft 365 管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true)。
 
 ::: moniker-end
   
@@ -49,14 +49,14 @@ ms.locfileid: "48445515"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOfR] 
 
-如果你觉得这段视频有用，请查看[适用于小型企业和 Microsoft 365 新手的完整培训系列](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)。
+如果你发现此视频有帮助，请查看[适用于小型企业和 Microsoft 365 新用户的完整培训系列](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)。
 
-若要阻止员工登录，请执行以下操作：
+若要阻止员工登录，
 
 1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。
-2. 选择用户名称旁边的框，然后选择 " **重置密码**"。
-3. 输入新密码，然后选择 " **重置**"。  (不将其发送给他们。 ) 
-4. 选择要转到其属性窗格的用户的名称，然后在 " **帐户** " 选项卡上，选择 " **启动注销**"。
+2. 选择用户名旁边的框，然后选择"重置 **密码"。**
+3. 输入新密码，然后选择"重置 **"。**  (不要将其发送给他们。) 
+4. 选择要转到其属性窗格的用户名称，在"帐户 **"选项卡上**，选择"启动 **注销"。**
 
 ::: moniker-end
 
@@ -64,11 +64,11 @@ ms.locfileid: "48445515"
 
 1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">活动用户</a>”页面。
 
-2. 选择该用户，然后选择 " **重置密码**"。
+2. 选择用户，然后选择"重置 **密码"。**
 
-3. 输入新密码，然后选择 " **重置**"。  (不将其发送给他们。 ) 
+3. 输入新密码，然后选择"重置 **"。**  (不要将其发送给他们。) 
 
-4. 选择要转到其属性窗格的用户的名称，然后在 " **帐户** " 选项卡上，选择 " **启动注销**"。
+4. 选择要转到其属性窗格的用户名称，在"帐户 **"选项卡上**，选择"启动 **注销"。**
 
 ::: moniker-end
 
@@ -76,21 +76,21 @@ ms.locfileid: "48445515"
 
 1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">活动用户</a>”页面。
 
-2. 选择该用户，然后选择 " **重置密码**"。
+2. 选择用户，然后选择"重置 **密码"。**
 
-3. 输入新密码，然后选择 " **重置**"。  (不将其发送给他们。 ) 
+3. 输入新密码，然后选择"重置 **"。**  (不要将其发送给他们。) 
 
-4. 选择要转到其属性窗格的用户的名称，然后在 " **帐户** " 选项卡上，选择 " **启动注销**"。
+4. 选择要转到其属性窗格的用户名称，在"帐户 **"选项卡上**，选择"启动 **注销"。**
 
 ::: moniker-end
 
 > [!NOTE]
-> 您必须是全局管理员才能启动注销。
+> 你需要是全局管理员才能启动注销。
 
-在一小时内，或者在离开当前的 Microsoft 365 页面后，系统会提示他们重新登录。 访问令牌适用于一个小时，因此时间线取决于该令牌所剩的时间，以及它们是否从当前网页中移出。
+在一小时内（或离开他们当前位于的 Microsoft 365 页面后）将提示他们重新登录。 访问令牌适合一小时，因此时间线取决于该令牌所留的时间，以及他们是否导航到当前网页。
   
 > [!IMPORTANT]
-> 如果用户在 web 上的 Outlook 中，只需在其邮箱中单击，它们可能不会立即弹出。 一旦选择了不同的磁贴（如 OneDrive）或刷新其浏览器，就会启动注销。
+> 如果用户在 Outlook 网页中，只需在邮箱中四处单击，可能不会立即将其退出。 当他们选择其他磁贴（如 OneDrive）或刷新浏览器时，即会启动注销。
   
 若要使用 PowerShell 立即注销用户，请参阅 [Revoke-AzureADUserAllRefreshToken](https://go.microsoft.com/fwlink/?linkid=841345) cmdlet。
   
@@ -98,24 +98,24 @@ ms.locfileid: "48445515"
   
 ## <a name="overview-of-all-the-steps-to-remove-an-employee-and-secure-data"></a>有关删除员工和安全数据的完整步骤的概述
 
-我们经常收到一个问题，即"当员工离开组织时该如何保护数据？ 本文介绍如何阻止对 Microsoft 365 的访问以及应采取的措施保护数据的步骤。
+我们经常收到一个问题，即"当员工离开组织时该如何保护数据？ 本文介绍了如何阻止访问 Microsoft 365 以及保护数据应执行的步骤。
   
 > [!NOTE]
-> 如果你是全局管理员，你可以删除员工，转发其电子邮件，选择使用新的引导式体验对其 OneDrive 内容执行的操作。 有关详细信息，请参阅 [全局管理员：删除用户](remove-former-employee.md)。 但是，我们建议您完成此处列出的所有其他步骤，以确保员工无法访问贵公司的数据。 
+> 如果你是全局管理员，可以删除员工，转发他们的电子邮件，选择使用新的引导体验处理 OneDrive 内容。 有关详细信息，请参阅全局 [管理员：删除用户](remove-former-employee.md)。 但是，我们建议完成此处列出的所有其他步骤，以确保员工无法访问公司数据。 
   
 以下是快速概述。本文详细介绍了每个步骤。
   
 |||
 |:-----|:-----|
 |**步骤** <br/> |**为什么执行此操作** <br/> |
-|1. [保存以前员工的邮箱的内容](#save-the-contents-of-a-former-employees-mailbox) <br/> |这对于要接管员工工作的人员，或者如果存在诉讼，这一点非常有用。  <br/> |
+|1. [保存以前员工的邮箱的内容](#save-the-contents-of-a-former-employees-mailbox) <br/> |这适用于将要接管员工工作的人，或者如果存在诉讼。  <br/> |
 |2.[将前员工的电子邮件转发给其他员工或转换为共享邮箱](#forward-a-former-employees-email-to-another-employee-or-convert-to-a-shared-mailbox) <br/> |这可保证前员工的电子邮件地址处于活动状态。如果客户或合作伙伴仍向以前员工的地址发送电子邮件，此功能可让他们发送给接管该工作的员工。  <br/> |
 |3.[擦除并阻止以前员工的移动设备](#wipe-and-block-a-former-employees-mobile-device) <br/> |从手机或平板电脑删除业务数据。  <br/> |
-|4. [阻止以前的员工对 Microsoft 365 数据的访问权限](#block-a-former-employees-access-to-microsoft-365-data)<br/> |阻止用户访问其旧的 Microsoft 365 邮箱和数据。  <br/><br/> **提示**：当您阻止用户的访问时，您仍在为其许可证付费。 若要停止付款，请从订阅 (步骤 5) 中删除许可证。  |
+|4. [阻止以前的员工访问 Microsoft 365 数据](#block-a-former-employees-access-to-microsoft-365-data)<br/> |它会阻止用户访问其旧的 Microsoft 365 邮箱和数据。  <br/><br/> **提示**：阻止用户访问时，仍需要支付其许可证费用。 若要停止付费，请从订阅中删除许可证 (步骤 5) 。  |
 |5.[移动员工的 OneDrive 内容](get-access-to-and-back-up-a-former-user-s-data.md) <br/> |如果仅删除用户的许可证但不删除其帐户，则甚至 30 天后仍可访问该用户的 OneDrive 中的内容。  <br/><br/> 删除帐户之前，应将其 OneDrive 内容移至另一个易访问的位置。删除员工帐户后，其 OneDrive 中的内容会保留 **30** 天。在此 30 天中可以还原用户帐户并获取访问其 OneDrive 内容的权限。如果还原用户帐户，即使是在 30 天后也可以访问 OneDrive 内容。  <br/> |
-|5a.如果用户使用其个人计算机访问 OneDrive 和 SharePoint，将发生什么情况？  <br/> |如果用户使用个人计算机（而不是公司计算机）从 OneDrive 和 SharePoint 下载文件，则无法擦除其存储的文件。  <br/><br/> 他们将继续访问已同步到其计算机的任何文件。  <br/> |
-|6. [从以前的员工处删除并删除 Microsoft 365 许可证](#remove-and-delete-the-microsoft-365-license-from-a-former-employee)<br/> |移除许可证后，可将许可证分配给其他人。也可删除许可证，以便在聘用其他人员之前，无需为其付费。  <br/><br/> 移除或删除许可证时，用户的旧电子邮件、联系人和日历将保留 **30 days** ，然后永久删除。如果删除许可证但不删除其帐户，则在 30 天后仍可以访问该用户的 OneDrive 中的内容。  <br/> |
-|7.[删除以前员工的用户帐户](#delete-a-former-employees-user-account)<br/> |这将从您的管理中心删除帐户。 进行清除，保持干净。  <br/> |
+|5a.如果用户使用其个人计算机访问 OneDrive 和 SharePoint，将发生什么情况？  <br/> |如果用户使用个人计算机（而不是公司计算机）从 OneDrive 和 SharePoint 下载文件，则无法擦除其存储的文件。  <br/><br/> 他们仍然有权访问已同步到其计算机的任何文件。  <br/> |
+|6. [从以前的员工删除和删除 Microsoft 365 许可证](#remove-and-delete-the-microsoft-365-license-from-a-former-employee)<br/> |移除许可证后，可将许可证分配给其他人。也可删除许可证，以便在聘用其他人员之前，无需为其付费。  <br/><br/> 移除或删除许可证时，用户的旧电子邮件、联系人和日历将保留 **30 days** ，然后永久删除。如果删除许可证但不删除其帐户，则在 30 天后仍可以访问该用户的 OneDrive 中的内容。  <br/> |
+|7.[删除以前员工的用户帐户](#delete-a-former-employees-user-account)<br/> |这会从管理中心删除帐户。 进行清除，保持干净。  <br/> |
 
 ## <a name="save-the-contents-of-a-former-employees-mailbox"></a>保存以前员工的邮箱的内容
 
@@ -127,11 +127,11 @@ ms.locfileid: "48445515"
 
 2. 在删除用户帐户之前，对邮箱执行诉讼保留或就地保留功能。这比第一种方式复杂得多，但在以下情况下是值得的：企业版计划包括存档和法定保留项，可能进行诉讼且拥有强大的 IT 部门。
 
-    将邮箱转换为 "非活动邮箱" 之后，管理员、合规性监察官或记录管理员可以使用 Exchange Online 中 In-Place 电子数据展示工具访问和搜索内容。
+    将邮箱转换为"非活动邮箱"后，管理员、合规部主管或记录管理员可以使用 Exchange Online 中的 In-Place 电子数据展示工具来访问和搜索内容。
 
     非活动状态的邮箱无法接收电子邮件且不在组织的共享通讯簿或其他列表中显示。
 
-    若要了解如何在邮箱中放置保留，请参阅 [在 Exchange Online 中管理非活动邮箱](https://docs.microsoft.com/microsoft-365/compliance/create-and-manage-inactive-mailboxes)。
+    若要了解如何将邮箱置于保留状态，请参阅["管理 Exchange Online 中的非活动邮箱"。](https://docs.microsoft.com/microsoft-365/compliance/create-and-manage-inactive-mailboxes)
 
 ## <a name="forward-a-former-employees-email-to-another-employee-or-convert-to-a-shared-mailbox"></a>将前员工的电子邮件转发给其他员工或转换为共享邮箱
 
@@ -142,14 +142,14 @@ ms.locfileid: "48445515"
 - If you set up email forwarding, only  *new*  emails sent to the former employee will now be sent to the current employee.
 
  > [!IMPORTANT]
- > 如果你正在设置电子邮件转发或共享邮箱，在末尾，请勿删除以前的员工帐户。 需要保留该帐户以定位电子邮件转发或共享邮箱。
+ > 如果要设置电子邮件转发或共享邮箱，则最后不要删除前员工的帐户。 需要保留该帐户以定位电子邮件转发或共享邮箱。
 
 ::: moniker range="o365-worldwide"
 
 1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。
-2. 选择要阻止的员工的姓名，然后选择 " **邮件** " 选项卡。
-3. 在 " **电子邮件转发**" 下，选择 " **管理电子邮件转发**"。
-4. 启用" **转发发至此邮箱的所有电子邮件** "。 在 " **转发地址** " 框中，键入要获取电子邮件的当前员工的电子邮件地址。
+2. 选择要阻止的员工的姓名，然后选择"邮件 **"** 选项卡。
+3. 在 **"电子邮件转发"下**，**选择"管理电子邮件转发"。**
+4. 启用" **转发发至此邮箱的所有电子邮件** "。 在 **"转发地址** "框中，键入要获取电子邮件的当前员工的电子邮件地址。
 5. 选择“**保存**”。
 6. 注意，切勿删除以前员工的帐户。
 
@@ -159,9 +159,9 @@ ms.locfileid: "48445515"
 
 1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">活动用户</a>”页面。
 
-2. 选择要阻止的员工并展开 " **邮件设置**"。
+2. 选择要阻止的员工，然后展开"**邮件设置"。**
 
-3. 在 " **电子邮件转发**" 旁边，选择 " **编辑**"。
+3. 在"**电子邮件转发"旁边，** 选择"**编辑"。**
 
 4. 启用" **转发发至此邮箱的所有电子邮件** "。在" **转发地址** "框中，键入将收到电子邮件的当前员工（或共享邮箱）的电子邮件地址。
   
@@ -175,9 +175,9 @@ ms.locfileid: "48445515"
 
 1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">活动用户</a>”页面。
 
-2. 选择要阻止的员工并展开 " **邮件设置**"。
+2. 选择要阻止的员工，然后展开"**邮件设置"。**
 
-3. 在 " **电子邮件转发**" 旁边，选择 " **编辑**"。
+3. 在"**电子邮件转发"旁边，** 选择"**编辑"。**
 
 4. 启用" **转发发至此邮箱的所有电子邮件** "。在" **转发地址** "框中，键入将收到电子邮件的当前员工（或共享邮箱）的电子邮件地址。
   
@@ -189,26 +189,26 @@ ms.locfileid: "48445515"
 
 ## <a name="wipe-and-block-a-former-employees-mobile-device"></a>擦除并阻止以前员工的移动设备
 
-如果以前的员工有组织电话，则可以使用 Exchange 管理中心擦除并阻止该设备，以便将所有组织数据从设备中删除，并且无法再连接到 Office 365。
+如果以前的员工拥有组织电话，可以使用 Exchange 管理中心擦除和阻止该设备，以便从设备中删除所有组织数据，并且无法再连接到 Office 365。
 
 1. 转到 <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange 管理中心</a>。
 2. 在 Exchange 管理中心 中，导航到" **收件人** "\>" **邮箱** "。
-3. 选择用户，在 " **移动设备**" 下，选择 " **查看详细信息**"。
-4. 在 "**移动设备详细信息**" 页的 "**移动设备**" 下，选择移动设备，选择 "**擦除数据** ![ 擦除设备 ](../../media/1c113a36-53cb-4974-884f-3ecd9535506e.png) "，然后选择 "**阻止**"。
+3. 选择用户，在 **"移动设备"下**，选择 **"查看详细信息"。**
+4. 在 **"移动设备详细信息**"页上 **的**"移动设备"下，选择移动设备，选择"擦除数据 ![ 擦除设备"， ](../../media/1c113a36-53cb-4974-884f-3ecd9535506e.png) 然后选择"**阻止"。**
 5. 选择“**保存**”。
    > [!TIP]
    > 请确保从本地 Blackberry 企业服务中删除或禁用用户。 还应禁用该用户的所有 BlackBerry 设备。 有关如何禁用用户的具体步骤，可参阅 BlackBerry(R) 商务云服务管理指南。
 
-## <a name="block-a-former-employees-access-to-microsoft-365-data"></a>阻止以前的员工对 Microsoft 365 数据的访问权限
+## <a name="block-a-former-employees-access-to-microsoft-365-data"></a>阻止以前的员工访问 Microsoft 365 数据
 
  > [!IMPORTANT]
- > 阻止帐户可能需要长达24小时才会生效。 如果需要立即阻止用户登录访问，则应 [重置其密码](reset-passwords.md) ，然后启动一次性事件，以便在所有设备上将其从 Microsoft 365 会话中注销。 请参阅[立即注销！](#sign-out-now)
+ > 阻止帐户最多可能需要 24 小时才能生效。 如果需要立即阻止用户的登录访问，应重置其密码，然后启动一次事件[](reset-passwords.md)，以跨所有设备将其从 Microsoft 365 会话注销。 请参阅[立即注销！](#sign-out-now)
 
 ::: moniker range="o365-worldwide"
 
 1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。
-2. 选择要阻止的员工的姓名，在用户的名称下，选择 " **阻止此用户**" 的符号。
-3. 选择 " **阻止用户登录**"，然后选择 " **保存**"。
+2. 选择要阻止的员工的姓名，在用户名下，选择"阻止 **此用户"的符号**。
+3. 选择 **"阻止用户登录"，** 然后选择"**保存"。**
 
 ::: moniker-end
 
@@ -216,9 +216,9 @@ ms.locfileid: "48445515"
 
 1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">活动用户</a>”页面。
 
-2. 选择要阻止的员工，然后选择 " **阻止登录**"。
+2. 选择要阻止的员工，然后选择"**阻止登录"。**
 
-3. 选择 " **阻止用户登录**"，然后选择 " **保存**"。
+3. 选择 **"阻止用户登录"，** 然后选择"**保存"。**
 
 ::: moniker-end
 
@@ -226,32 +226,32 @@ ms.locfileid: "48445515"
 
 1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">活动用户</a>”页面。
 
-2. 选择要阻止的员工，然后选择 " **阻止登录**"。
+2. 选择要阻止的员工，然后选择"**阻止登录"。**
 
-3. 选择 " **阻止用户登录**"，然后选择 " **保存**"。
+3. 选择 **"阻止用户登录"，** 然后选择"**保存"。**
 
 ::: moniker-end
 
 ## <a name="block-a-former-employees-access-to-email-exchange-online"></a>阻止以前的员工访问电子邮件 (Exchange Online)
 
-如果您的电子邮件是 Microsoft 365 订阅的一部分，则需要登录 Exchange 管理中心，以阻止您的前一名员工访问其电子邮件。
+如果你有电子邮件作为 Microsoft 365 订阅的一部分，则需要登录到 Exchange 管理中心，按照以下步骤阻止以前的员工访问其电子邮件。
   
 1. 转到 <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange 管理中心</a>。
 2. 在 Exchange 管理中心 中，导航到" **收件人** "\>" **邮箱** "。
-3. 双击该用户并转到 " **邮箱功能** " 页。 在 " **移动设备**" 下，选择 " **禁用 Exchange ActiveSync** " 和 " **禁用设备的 OWA"，** 并在收到提示时回答 **"是"** 。
-4. 在 " **电子邮件连接**" 下，选择 " **禁用** 并在出现提示时回答 **是"** 。
+3. 双击用户并转到" **邮箱功能"** 页。 在 **"移动设备"****下**，Exchange ActiveSync"禁用"和"禁用适用于设备的 **OWA"，** 当系统提示时，对两者回答"是"。
+4. 在 **"电子邮件连接**"下， **选择"禁用** "，当 **系统提示** 时回答"是"。
 
-## <a name="remove-and-delete-the-microsoft-365-license-from-a-former-employee"></a>从以前的员工处删除并删除 Microsoft 365 许可证
+## <a name="remove-and-delete-the-microsoft-365-license-from-a-former-employee"></a>从以前的员工中删除和删除 Microsoft 365 许可证
 
-因此，在有人离开你的组织后，你不会继续支付许可证，你需要删除其 Microsoft 365 许可证，然后将其从订阅中删除。 如果选择不从订阅中删除该许可证，可将其分配给其他用户。
+因此，在某人离开组织后，你无需继续支付许可证费用，你需要删除其 Microsoft 365 许可证，然后从订阅中删除它。 如果选择不从订阅中删除该许可证，可将其分配给其他用户。
   
-删除许可证后，该用户的所有数据将保留 30 天。 可[访问](get-access-to-and-back-up-a-former-user-s-data.md)该数据，或在用户返回时[还原](restore-user.md)该帐户。 30天后，除了存储在 SharePoint Online) 中的文档之外的所有用户数据 (都将从 Microsoft 365 中永久删除，并且无法恢复。
+删除许可证后，该用户的所有数据将保留 30 天。 可[访问](get-access-to-and-back-up-a-former-user-s-data.md)该数据，或在用户返回时[还原](restore-user.md)该帐户。 30 天后，用户的所有数据 (存储在 SharePoint Online) 上的文档除外）将从 Microsoft 365 中永久删除，并且无法恢复。
 
 ::: moniker range="o365-worldwide"
 
 1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。
-2. 选择要阻止的员工的名称，然后选择 " **许可证和应用** " 选项卡。
-3. 清除要删除的许可证 (s) 的复选框，然后选择 " **保存更改**"。
+2. 选择要阻止的员工的姓名，然后选择"许可证和应用 **"** 选项卡。
+3. 清除要删除 (许可证) 复选框，然后选择"保存 **更改"。**
 
 ::: moniker-end
 
@@ -259,9 +259,9 @@ ms.locfileid: "48445515"
 
 1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">活动用户</a>”页面。
 
-2. 选择要阻止的员工，然后选择 " **产品许可证**" 旁边的 " **编辑**"。
+2. 选择要阻止的员工，然后在产品许可证旁边选择"编辑 **"。** 
 
-3. 在 " **产品许可证** " 页上，关闭要删除的许可证 (s) ，然后选择 " **保存**"。
+3. 在 **"产品许可证**"页上， (要) 许可证，然后选择"保存 **"。**
 
 ::: moniker-end
 
@@ -269,35 +269,35 @@ ms.locfileid: "48445515"
 
 1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">活动用户</a>”页面。
 
-2. 选择要阻止的员工，然后选择 " **产品许可证**" 旁边的 " **编辑**"。
+2. 选择要阻止的员工，然后在产品许可证旁边选择"编辑 **"。** 
 
-3. 在 " **产品许可证** " 页上，关闭要删除的许可证 (s) ，然后选择 " **保存**"。
+3. 在 **"产品许可证**"页上， (要) 许可证，然后选择"保存 **"。**
 
 ::: moniker-end
 
-**若要** 在你雇用其他人之前减少你支付的许可证数量，请执行以下步骤：
+**若要减少你** 雇用其他人之前所支付许可证的数量，请执行以下步骤：
 
 ::: moniker range="o365-worldwide"
-1. 在管理中心中，转到 " **付费** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">产品</a> " 页面，然后选择 " **产品** " 选项卡。
+1. 在管理中心，转到"计费 \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">你的产品"</a>页，然后选择"产品 **"** 选项卡。
 2. 选择要从中删除许可证的订阅。
-3. 在 "详细信息" 页上，选择 " **删除许可证**"。
-4. 在 " **删除许可证** " 窗格中，在 "新数量" 下的 " **许可证总数** " 框中，输入此订阅所需的许可证总数。 例如，如果你有25个许可证，并且想要删除其中一个许可证，请输入24。
+3. 在详细信息页面上，选择 **"删除许可证"。**
+4. 在 **"删除许可证"** 窗格的"新数量"下的"许可证总数"框中，输入要用于此订阅的许可证总数。 例如，如果你有 25 个许可证，并且想要删除其中一个许可证，请输入 24。
 5. 选择“**保存**”。
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 1. 在管理中心，转到“**计费**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">订阅</a>”页面。
-2. 选择 " **添加/删除许可证** " 以删除许可证，以便在你雇用其他人之前，不要支付此许可证。
+2. 选择 **"添加/** 删除许可证"可删除许可证，这样在聘用其他人之前，你才会支付许可证费用。
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 1. 在管理中心，转到“**计费**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">订阅</a>”页面。
-2. 选择 " **添加/删除许可证** " 以删除许可证，以便在你雇用其他人之前，不要支付此许可证。
+2. 选择 **"添加/** 删除许可证"可删除许可证，这样在聘用其他人之前，你才会支付许可证费用。
 ::: moniker-end
 
-[将其他人添加](add-users.md)到您的企业中时，系统将提示您同时购买许可证，只需一步即可！
+向 [企业添加其他人](add-users.md) 时，系统会提示你同时购买许可证，只需一个步骤！
 
-有关管理 Microsoft 365 for business 的用户许可证的详细信息，请参阅 [在 microsoft 365 商业版中向用户分配许可证](../manage/assign-licenses-to-users.md)，以及 [从 Microsoft 365 for business 中的用户中取消分配许可证](../manage/remove-licenses-from-users.md)。
+若要详细了解如何管理 Microsoft 365 商业版的用户许可证，请参阅为 [Microsoft 365](../manage/assign-licenses-to-users.md)商业版中的用户分配许可证，以及从 [Microsoft 365](../manage/remove-licenses-from-users.md)商业版中的用户取消分配许可证。
   
 ## <a name="how-the-deleted-employee-account-affects-skype-for-business"></a>已删除的员工帐户如何影响 Skype for Business
 
@@ -305,9 +305,9 @@ ms.locfileid: "48445515"
   
 如果用户属于队列组，则他不再是呼叫队列代理的可行目标。因此，我们还建议将该用户从与呼叫队列相关联的组中删除。
 
-## <a name="set-up-call-forwarding-to-people-in-your-organization"></a>设置到组织中的人员的呼叫转接
+## <a name="set-up-call-forwarding-to-people-in-your-organization"></a>设置呼叫转发给组织人员
 
-如果需要为已终止的员工的电话号码设置呼叫转移，则呼叫策略下的呼叫转接设置可以设置转发，在传入呼叫可以转发给其他用户或同时拨打其他用户。 有关详细信息，请参阅 [Microsoft 团队中的呼叫策略](https://docs.microsoft.com/microsoftteams/teams-calling-policy)。
+如果需要为离职员工的电话号码设置呼叫转发，则呼叫策略下的呼叫转发设置可以设置转发，其中传入呼叫可以转发给其他用户，也可以同时拨打其他人。 有关详细信息，请参阅 [Microsoft Teams 中的通话策略](https://docs.microsoft.com/microsoftteams/teams-calling-policy)。
   
 ## <a name="delete-a-former-employees-user-account"></a>删除以前员工的用户帐户
 
@@ -318,8 +318,8 @@ ms.locfileid: "48445515"
 ::: moniker range="o365-worldwide"
 
 1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。
-2. 选择要删除的雇员的姓名。
-3. 在用户的名称下，选择 " **删除用户**" 的符号。 为此用户选择所需的选项，然后选择 " **删除用户**"。
+2. 选择要删除的员工的姓名。
+3. 在用户名称下，选择"删除用户 **"符号**。 选择此用户需要的选项，然后选择"**删除用户"。**
 
 ::: moniker-end
 
@@ -327,9 +327,9 @@ ms.locfileid: "48445515"
 
 1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">活动用户</a>”页面。
 
-2. 选择要删除的雇员的姓名。
+2. 选择要删除的员工的姓名。
 
-3. 在页面顶部，选择 " **删除用户**"。 为此用户选择所需的选项，然后选择 " **删除用户**"。
+3. 在页面顶部，选择"**删除用户"。** 选择此用户需要的选项，然后选择"**删除用户"。**
 
 ::: moniker-end
 
@@ -337,9 +337,9 @@ ms.locfileid: "48445515"
 
 1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">活动用户</a>”页面。
 
-2. 选择要删除的雇员的姓名。
+2. 选择要删除的员工的姓名。
 
-3. 在页面顶部，选择 " **删除用户**"。 为此用户选择所需的选项，然后选择 " **删除用户**"。
+3. 在页面顶部，选择"**删除用户"。** 选择此用户需要的选项，然后选择"**删除用户"。**
 
 ::: moniker-end
 
@@ -347,11 +347,11 @@ ms.locfileid: "48445515"
   
 ### <a name="does-your-organization-use-active-directory"></a>组织是否使用 Active Directory？
 
-如果您的组织将用户帐户从本地 Active Directory 环境同步到 Microsoft 365，则必须在本地 Active Directory 服务中删除和还原这些用户帐户。 你无法在 Office 365 中删除或还原它们。
+如果组织将用户帐户从本地 Active Directory 环境同步到 Microsoft 365，则必须在本地 Active Directory 服务中删除和还原这些用户帐户。 你无法在 Office 365 中删除或还原它们。
   
-若要了解如何在 Active Directory 中删除和还原用户帐户，请参阅 [删除用户帐户](https://go.microsoft.com/fwlink/?linkid=841808)。
+若要了解如何删除和还原 Active Directory 中的用户帐户，请参阅["删除用户帐户"。](https://go.microsoft.com/fwlink/?linkid=841808)
   
-如果使用的是 Azure Active Directory，请参阅 [Get-msoluser](https://go.microsoft.com/fwlink/?linkid=842230) PowerShell cmdlet。
+如果使用的是 Azure Active Directory，请参阅 [Remove-MsolUser](https://go.microsoft.com/fwlink/?linkid=842230) PowerShell cmdlet。
   
 ## <a name="what-you-need-to-know-about-terminating-an-employees-email-session"></a>终止员工电子邮件会话须知事项
 
@@ -361,10 +361,10 @@ ms.locfileid: "48445515"
 |:-----|:-----|
 |**可执行的操作** <br/> |**实现方式** <br/> |
 |终止会话（如 Outlook 网页版、Outlook、Exchange Active Sync 等）并强制打开一个新的会话  <br/> |重置密码  <br/> |
-|终止会话并阻止对未来会话的访问（针对所有协议）  <br/> |禁用帐户。 例如， (在 Exchange 管理中心或使用 PowerShell) ：  <br/>  `Set-Mailbox user@contoso.com -AccountDisabled:$true` <br/> |
-|针对特定协议终止会话（如 ActiveSync）  <br/> |禁用该协议。 例如， (在 Exchange 管理中心或使用 PowerShell) ：  <br/>  `Set-CASMailbox user@contoso.com -ActiveSyncEnabled:$false` <br/> |
+|终止会话并阻止对未来会话的访问（针对所有协议）  <br/> |禁用帐户。 例如， (Exchange 管理中心或 PowerShell) ：  <br/>  `Set-Mailbox user@contoso.com -AccountDisabled:$true` <br/> |
+|针对特定协议终止会话（如 ActiveSync）  <br/> |禁用协议。 例如， (Exchange 管理中心或 PowerShell) ：  <br/>  `Set-CASMailbox user@contoso.com -ActiveSyncEnabled:$false` <br/> |
 
-可以在以下三个位置完成上述操作：
+可在三处完成上述操作：
   
 |||
 |:-----|:-----|

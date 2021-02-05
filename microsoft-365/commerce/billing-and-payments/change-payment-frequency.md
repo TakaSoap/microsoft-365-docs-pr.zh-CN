@@ -1,5 +1,5 @@
 ---
-title: 更改你的记帐频率
+title: 更改计费频率
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -20,26 +20,26 @@ ms.custom:
 - AdminSurgePortfolio
 search.appverid:
 - MET150
-description: 了解如何更改为你的业务订阅计费的频率。
-ms.openlocfilehash: 0a4dccd69092c849637a5c79bd1bfe6d7faa1202
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+description: 了解如何更改业务订阅的计费频率。
+ms.openlocfilehash: 77d2e72b7b315f223cc6ab7faf3e53f8354218ae
+ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47545926"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "50114879"
 ---
-# <a name="change-your-billing-frequency"></a>更改你的记帐频率
+# <a name="change-your-billing-frequency"></a>更改计费频率
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 管理中心正在发生改变。 如果你的体验与此处提供的详细信息不匹配，请参阅[有关新版 Microsoft 365 管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)。
+> 管理中心正在发生改变。 如果你的体验与此处提供的详细信息不匹配，请参阅[有关新版 Microsoft 365 管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true)。
 
 ::: moniker-end
 
-在购买订阅时，选择每月或每年的帐单。 若要更改订阅的计费频率，请按照以下步骤操作。
+购买订阅时，可选择按月或按年计费。 若要更改订阅的计费频繁，请使用以下步骤。
 
-1. 在管理中心中，转到 "**付费** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">产品</a>" 页面。
-2. 在 " **产品** " 选项卡上，选择要更改的订阅。
-3. 在 "订阅详细信息" 页上的 " **订阅和付款设置** " 部分中，选择 " **编辑帐单频率**"。
-4. 在 " **编辑计费频率** " 窗格中，选择要向其计费的频率的选项，然后选择 " **更改**"。
+1. 在管理中心，转到"计费 \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">你的产品"</a>页。
+2. 在“**产品**”选项卡上，选择要更改的订阅。
+3. 在订阅详细信息页面上的"订阅 **和** 付款设置"部分，选择 **"编辑计费频率"。**
+4. 在 **"编辑计费频率**"窗格中，选择要计费的频率选项，然后选择"**更改"。**

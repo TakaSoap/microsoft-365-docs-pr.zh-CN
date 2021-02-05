@@ -22,20 +22,20 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: 1136115a-75af-4497-b693-640c4ce70bc6
-description: '通过将自定义磁贴添加到应用程序启动器，创建指向电子邮件、文档、应用程序、SharePoint 网站、外部网站和其他资源的快速链接。 '
-ms.openlocfilehash: 2bbcf64b807754aed199c441f6df028d5fe20a97
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+description: '通过向应用启动器添加自定义磁贴，创建指向电子邮件、文档、应用程序、SharePoint 网站、外部网站和其他资源的快速链接。 '
+ms.openlocfilehash: 96d059b252b63e48e20edb29861cf8233e220e34
+ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49926230"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "50114185"
 ---
 # <a name="add-custom-tiles-to-the-app-launcher"></a>向应用启动器添加自定义磁贴
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 管理中心正在发生改变。 如果你的体验与此处提供的详细信息不匹配，请参阅[有关新版 Microsoft 365 管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)。
+> 管理中心正在发生改变。 如果你的体验与此处提供的详细信息不匹配，请参阅[有关新版 Microsoft 365 管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true)。
 
 ::: moniker-end
 
@@ -55,7 +55,7 @@ ms.locfileid: "49926230"
   
 4. 为新磁贴输入" **磁贴名称**"。 该名称将显示在磁贴中。 
     
-5. 输入 **磁贴的网站** URL。 这是你想要用户在应用启动器上选择磁贴时转到的位置。 在 URL 中使用 HTTPS。<br/>提示：如果要为 SharePoint 网站创建磁贴，请导航到该网站，复制 URL，然后将其粘贴到此处。 默认团队网站的 URL 如下所示： `https://<company_name>.sharepoint.com` 
+5. 输入 **磁贴的网站** URL。 这是你想要用户在应用启动器上选择磁贴时转到的位置。 在 URL 中使用 HTTPS。<br/>提示：如果要为 SharePoint 网站创建磁贴，请导航到该网站，复制 URL 并将其粘贴到此处。 默认团队网站的 URL 如下所示： `https://<company_name>.sharepoint.com` 
   
 6. 输入 **磁贴的图像 URL。** 此图像显示在"我的应用"页面上和应用启动器中。<br/>提示：图像应为 60x60 像素，并且无需身份验证即可供组织所有人使用。
 
