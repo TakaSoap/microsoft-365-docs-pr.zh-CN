@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 了解如何配置数据丢失防护 (DLP) 策略以使用 Microsoft 365 终结点数据丢失防护 (EPDLP) 位置。
-ms.openlocfilehash: 531fd5506aeb255e261c3cce35473f1ddad2aa42
-ms.sourcegitcommit: 1a9f0f878c045e1ddd59088ca2a94397605a242a
+ms.openlocfilehash: 15a540c323c8f49cfa6c15358cfec89034667378
+ms.sourcegitcommit: c0cfb9b354db56fdd329aec2a89a9b2cf160c4b0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "49667807"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "50094793"
 ---
 # <a name="using-endpoint-data-loss-prevention"></a>使用端点数据丢失防护
 
@@ -80,11 +80,19 @@ ms.locfileid: "49667807"
 
 如果列表模式设置为“**阻止**”，用户将无法向这些域上传敏感项目。 如果由于某项目符合 DLP 策略而阻止了上载操作，则 DLP 会生成警告或阻止敏感项目的上载。
 
-如果列表模式设置为“**允许**”，则用户将**_只能_* _将敏感项目上传到那些域，并且不允许对所有其他域的上传访问。
+如果列表模式设置为“**允许**”，则用户将 **_只能_** 将敏感项目上传到那些域，并且不允许对所有其他域的上传访问。
 
 #### <a name="unallowed-browsers"></a>不允许的浏览器
 
 你将添加由执行文件名标识的浏览器，这些浏览器将被阻止访问与强制 DLP 策略的条件匹配的文件，在该 DLP 策略中，“上载到云服务的限制”设置为“阻止”或“阻止覆盖”。 当这些浏览器被阻止访问文件时，最终用户将看到一则定制通知，要求他们通过 Microsoft Edge Chromium 打开文件。
+
+### <a name="business-justification-in-policy-tips"></a>策略提示中的业务理由
+
+可在 DLP 策略提示通知中控制用户与业务理由选项的交互方式。 当用户执行受 DLP 策略中 **以超越阻止** 设置所保护的活动时，将出现此选项。 可从下列选项中进行选择：
+
+- 默认情况下，用户可以选择内置理由或输入自己的文本。
+- 用户只能选择内置理由。
+- 用户只能输入自己的理由。
 
 
 ## <a name="tying-dlp-settings-together"></a>将 DLP 设置捆绑在一起
@@ -99,7 +107,7 @@ ms.locfileid: "49667807"
 
 2. 添加出现 DLP 策略匹配时不允许访问某些敏感项目的浏览器。
 
-3. 通过启用“*上传到云服务*”和“**从不允许的浏览器访问**”，配置 DLP 策略以定义应将上传限制到这些位置的敏感项目种类。
+3. 通过启用“**上载到云服务**”和“**从不允许的浏览器访问**”，配置 DLP 策略以定义应限制在这些位置的敏感项目的种类。
 
 你可以继续添加新的服务、应用和策略，以扩展和扩大你的限制，从而满足业务需求并保护敏感数据。 
 
