@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: 审核日志保留策略是 Microsoft 365 中新增的高级审核功能的一部分。 通过审核日志保留策略，可指定组织中审核日志的保留时间。
-ms.openlocfilehash: c106024e5426972f6637d6226b385d1179516d4d
-ms.sourcegitcommit: df58fd8ebe14ca98fc1be84dbfb9c29ef7ab1d62
+ms.openlocfilehash: eeddf4c963284acaa908e07ddfdae77ec0bb080c
+ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49870941"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "50114929"
 ---
 # <a name="manage-audit-log-retention-policies"></a>管理审核日志保留策略
 
@@ -51,21 +51,19 @@ Microsoft 365 中的高级审核功能为所有组织提供默认审核日志保
 
 - 所有自定义审核日志保留策略（由组织创建）都优先于默认保留策略。 例如，如果为保留期短于一年的 Exchange 邮箱活动创建审核日志保留策略，则 Exchange 邮箱活动的审核记录将在自定义策略指定的较短期限内保留。
 
-## <a name="create-an-audit-log-retention-policy-in-the-compliance-center"></a>在合规中心创建审核日志保留策略
+## <a name="create-an-audit-log-retention-policy"></a>创建审核日志保留策略
 
-1. 转到 [https://compliance.microsoft.com](https://compliance.microsoft.com)，然后使用在安全与合规中心分配了“组织配置”角色的用户帐户登录。
+1. 转到 [https://compliance.microsoft.com](https://compliance.microsoft.com)，然后使用在安全与合规中心的“权限”页上分配了“组织配置”角色的用户帐户登录。
 
 2. 在 Microsoft 365 合规中心的左窗格中，单击“**显示所有**”，然后单击“**审核**”。
 
-    将显示“**审核**”页。
+3. 点击“**审核保留保留策略**”选项卡。
 
-    ![合规中心中的“审核日志搜索”页面](../media/AuditLogRetentionPolicy1.png)
+4. 单击“**创建审核保留策略**”，然后在弹出页面上填写以下字段：
 
-3. 单击“**创建审核保留策略**”，然后在弹出页面上填写以下字段：
+    ![新审核保留策略弹出页面](../media/CreateAuditLogRetentionPolicy.png)
 
-    ![审核保留策略弹出页面](../media/AuditLogRetentionPolicy2.png)
-
-   1. **名称**：审核日志保留策略的名称。 此名称必须在你的组织中保持唯一。
+   1. **原则名称**：审核日志保留策略的名称。 此名称在你的组织中必须是唯一的，并且在创建策略后不能更改。
 
    2. **说明**：可选，但有助于提供有关策略的信息，例如记录类型或工作负载、策略中指定的用户以及期限。
 
@@ -81,11 +79,44 @@ Microsoft 365 中的高级审核功能为所有组织提供默认审核日志保
 
    6. **优先级**：此值确定处理组织中的审核日志保留策略的顺序。 该值越大，表示优先级越高。 例如，优先级值为 **5** 的策略将优先于优先级值为 **0** 的策略。 如前文所述，任何自定义审核日志保留策略都优先于组织的默认策略。
 
-4. 单击“**保存**”以创建新的审核日志保留策略。
+5. 单击“**保存**”以创建新的审核日志保留策略。
 
-## <a name="create-an-audit-log-retention-policy-in-powershell"></a>在 PowerShell 中创建审核日志保留策略
+   新策略将显示在“**审核保留策略**”选项卡上的列表中。
 
-还可以使用安全与合规中心 PowerShell 来创建审核日志保留策略。
+## <a name="manage-audit-log-retention-policies"></a>管理审核日志保留策略
+
+审核日志保留策略列在“**审核保留策略**”选项卡（也称为 *仪表板*）上。 可使用仪表板查看、编辑和删除审核保留策略。
+
+### <a name="view-policies-in-the-dashboard"></a>在仪表板中查看策略
+
+审核日志保留策略列在仪表板中。 在仪表板中查看策略的一个优点是，可以单击“**优先级**”列以按它们应用的优先级列出策略。 如前所述，值越大表示优先级越高。
+
+![“审核保留策略”仪表板中的“优先级”列](../media/AuditLogRetentionDashboardPriority.png)
+
+也可以选择一个策略以在浮出页面上显示其设置。
+
+> [!NOTE]
+> 仪表板中不显示你的组织的默认审核日志保留策略。
+
+### <a name="edit-policies-in-the-dashboard"></a>在仪表板中编辑策略
+
+要编辑策略，请选择它以显示浮出页面。 可以修改一个或多个设置，然后保存更改。
+
+
+> [!IMPORTANT]
+> 如果使用 **New UnifiedAuditLogRetentionPolicy** cmdlet，则可以为仪表板中“**创建审核保留策略**”工具中不可用的记录类型或活动创建审核日志保留策略。 在这种情况下，你将无法从“**审核保留策略**”仪表板编辑策略（例如，更改保留期或添加和删除活动）。 只能在合规中心中查看和删除策略。 若要编辑策略，必须在安全与合规中心 PowerShell 中使用 [Set-UnifiedAuditLogRetentionPolicy](https://docs.microsoft.com/powershell/module/exchange/set-unifiedauditlogretentionpolicy) cmdlet。<br/><br/>**提示**：对于必须使用 PowerShell 编辑的策略，浮出页面顶部会显示一条消息。
+
+### <a name="delete-policies-in-the-dashboard"></a>在仪表板中删除策略
+
+若要删除策略，单击“**删除**”“![删除图标](../media/92a9f8e0-d469-48da-addb-69365e7ffb6f.jpg)”图标，然后确认要删除该策略。 已从仪表板中删除策略，但从组织中删除策略最长可能需要 30 分钟。
+
+## <a name="create-and-manage-audit-log-retention-policies-in-powershell"></a>在 PowerShell 中创建和管理审核日志保留策略
+
+还可以使用安全与合规中心 PowerShell 来创建和管理审核日志保留策略。 使用 PowerShell 的一个原因是为 UI 中不可用的记录类型或活动创建策略。
+
+### <a name="create-an-audit-log-retention-policy-in-powershell"></a>在 PowerShell 中创建审核日志保留策略
+
+请按照以下步骤在 PowerShell 中创建审核日志保留策略：
 
 1. [连接到安全与合规中心 PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell)。
 
@@ -113,41 +144,41 @@ New-UnifiedAuditLogRetentionPolicy -Name "SixMonth retention for admin logons" -
 
 有关详细信息，请参阅 [New-UnifiedAuditLogRetentionPolicy](https://docs.microsoft.com/powershell/module/exchange/new-unifiedauditlogretentionpolicy)。
 
-## <a name="view-audit-log-retention-policies"></a>查看审核日志保留策略
+### <a name="view-policies-in-powershell"></a>在 PowerShell 中查看策略
 
-目前，查看自定义审核日志保留策略的唯一方法是在安全与合规中心 PowerShell 中使用 **Get-UnifiedAuditRetentionPolicy** cmdlet。 下面是一个示例命令，用于显示组织中的审核日志保留策略的设置（在上一步中配置）。 此命令从最高优先级到最低优先级对策略进行排序。
+使用安全与合规中心 PowerShell 中的 [Get-UnifiedAuditLogRetentionPolicy](https://docs.microsoft.com/powershell/module/exchange/get-unifiedauditlogretentionpolicy) cmdlet 查看审核日志保留策略。
+
+下面是用于显示组织中所有审核日志保留策略的设置的示例命令。 此命令从最高优先级到最低优先级对策略进行排序。
 
 ```powershell
 Get-UnifiedAuditLogRetentionPolicy | Sort-Object -Property Priority -Descending | FL Priority,Name,Description,RecordTypes,Operations,UserIds,RetentionDuration
 ```
 
 > [!NOTE]
-> 目前，**Get-UnifiedAuditLogRetentionPolicy** cmdlet 不会返回组织的默认审核日志策略。
+> **Get-UnifiedAuditLogRetentionPolicy** cmdlet 不会返回组织的默认审核日志保留策略。
 
-有关详细信息，请参阅 [Get-UnifiedAuditLogRetentionPolicy](https://docs.microsoft.com/powershell/module/exchange/get-unifiedauditlogretentionpolicy)。
+### <a name="edit-policies-in-powershell"></a>在 PowerShell 中编辑策略
 
-## <a name="some-audit-log-retention-policies-not-supported-in-the-ui"></a>UI 中不支持某些审核日志保留策略
+使用安全与合规中心 PowerShell 中的 [Set-UnifiedAuditLogRetentionPolicy](https://docs.microsoft.com/powershell/module/exchange/set-unifiedauditlogretentionpolicy) cmdlet 编辑现有审核日志保留策略。
 
-如果使用 **New UnifiedAuditLogRetentionPolicy** cmdlet，则可以为 Microsoft 365 合规中心的“**创建审核保留策略**”工具中不可用的记录类型或活动创建审核日志保留策略。 在这种情况下，你将无法从合规性中心的“**审核保留策略**”选项卡中编辑策略（例如，更改保留期或添加和删除活动）。 只能在合规中心中查看和删除策略。 若要编辑策略，必须在安全与合规中心 PowerShell 中使用 **Set-UnifiedAuditLogRetentionPolicy** cmdlet。
+### <a name="delete-policies-in-powershell"></a>在 PowerShell 中删除策略
+
+使用安全与合规中心 PowerShell 中的 [Remove-UnifiedAuditLogRetentionPolicy](https://docs.microsoft.com/powershell/module/exchange/remove-unifiedauditlogretentionpolicy) cmdlet 删除审核日志保留策略。 从组织中删除策略最长可能需要 30 分钟。
 
 ## <a name="more-information"></a>详细信息
 
-- 使用安全与合规中心 PowerShell 中的 **Set-UnifiedAuditLogRetentionPolicy** cmdlet 可修改现有审核日志保留策略。 有关详细信息，请参阅 [Set-UnifiedAuditLogRetentionPolicy](https://docs.microsoft.com/powershell/module/exchange/set-unifiedauditlogretentionpolicy)。
+如前文所述，Azure Active Directory，Exchange 和 SharePoint 中针对操作的审核记录将默认保留一年。 下表列出了默认审核日志保留策略中包括的所有记录类型（针对每个服务）。 这意味着具有此记录类型的任何操作的审核日志都将保留一年，除非自定义审核日志保留策略对特定的记录类型、操作或用户具有优先权。 括号中显示了每种记录类型的枚举值（在审核记录中显示为 RecordType 属性值）。
 
-- 使用安全与合规中心 PowerShell 中的 **Remove-UnifiedAuditLogRetentionPolicy** cmdlet 可删除审核日志保留策略。 最长可能需要 30 分钟才能删除策略。 有关详细信息，请参阅 [Remove-UnifiedAuditLogRetentionPolicy](https://docs.microsoft.com/powershell/module/exchange/remove-unifiedauditlogretentionpolicy)。
-
-- 如前文所述，Azure Active Directory，Exchange 和 SharePoint 中针对操作的审核记录将保留一年。 下表列出了默认审核日志保留策略中包括的所有记录类型（针对每个服务）。 这意味着具有此记录类型的任何操作的审核日志都将保留一年，除非自定义审核日志保留策略对特定的记录类型、操作或用户具有优先权。 括号中显示了每种记录类型的枚举值（在审核记录中显示为 RecordType 属性值）。
-
-   |AzureActiveDirectory |Exchange  |SharePoint|
-   |:---------|:---------|:---------|
-   |AzureActiveDirectory (8)|ExchangeAdmin (1)|ComplianceDLPSharePoint (11)|
-   |AzureActiveDirectoryAccountLogon (9)|ExchangeItem (2)|ComplianceDLPSharePointClassification (33)|
-   |AzureActiveDirectoryStsLogon (15)|Campaign (62)|Project (35)|
-   ||ComplianceDLPExchange (13)|SharePoint (4)|
-   ||ComplianceSupervisionExchange (68)|SharePointCommentOperation (37)|
-   ||CustomerKeyServiceEncryption (69)|SharePointContentTypeOperation (55)|
-   ||ExchangeAggregatedOperation (19)|SharePointFieldOperation (56)|
-   ||ExchangeItemAggregated (50)|SharePointFileOperation (6)|
-   ||ExchangeItemGroup (3)|SharePointListOperation (36)|
-   ||InformationBarrierPolicyApplication (53)|SharePointSharingOperation (14)|
-   ||||
+|AzureActiveDirectory |Exchange  |SharePoint|
+|:---------|:---------|:---------|
+|AzureActiveDirectory (8)|ExchangeAdmin (1)|ComplianceDLPSharePoint (11)|
+|AzureActiveDirectoryAccountLogon (9)|ExchangeItem (2)|ComplianceDLPSharePointClassification (33)|
+|AzureActiveDirectoryStsLogon (15)|Campaign (62)|Project (35)|
+||ComplianceDLPExchange (13)|SharePoint (4)|
+||ComplianceSupervisionExchange (68)|SharePointCommentOperation (37)|
+||CustomerKeyServiceEncryption (69)|SharePointContentTypeOperation (55)|
+||ExchangeAggregatedOperation (19)|SharePointFieldOperation (56)|
+||ExchangeItemAggregated (50)|SharePointFileOperation (6)|
+||ExchangeItemGroup (3)|SharePointListOperation (36)|
+||InformationBarrierPolicyApplication (53)|SharePointSharingOperation (14)|
+||||
