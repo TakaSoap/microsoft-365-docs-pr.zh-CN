@@ -1,5 +1,5 @@
 ---
-title: 将域从 Microsoft 传输到另一台主机
+title: 将域从 Microsoft 转移到另一台主机
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -16,55 +16,54 @@ ms.collection:
 - Adm_O365_Setup
 ms.custom:
 - AdminSurgePortfolio
-- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 - GEA150
-description: '在此处查找将域从 Microsoft 转移到另一个注册器的步骤。 '
-ms.openlocfilehash: 1fb1fa50bd919bddb620a39d9edb46abb6710ba4
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+description: '在此处查找将域从 Microsoft 转移到其他注册机构的步骤。 '
+ms.openlocfilehash: f34e9733ab53c8bdc6f4432c96e6232ecc26ee06
+ms.sourcegitcommit: eac5d9f759f290d3c51cafaf335a1a1c43ded927
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48645271"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50126343"
 ---
-# <a name="transfer-a-domain-from-microsoft-to-another-host"></a><span data-ttu-id="73167-103">将域从 Microsoft 传输到另一台主机</span><span class="sxs-lookup"><span data-stu-id="73167-103">Transfer a domain from Microsoft to another host</span></span>
+# <a name="transfer-a-domain-from-microsoft-to-another-host"></a><span data-ttu-id="46468-103">将域从 Microsoft 转移到另一台主机</span><span class="sxs-lookup"><span data-stu-id="46468-103">Transfer a domain from Microsoft to another host</span></span>
 
-<span data-ttu-id="73167-104">从 Microsoft 购买域后，不能将 Microsoft 365 域传输到另一个注册器60天。</span><span class="sxs-lookup"><span data-stu-id="73167-104">You can't transfer a Microsoft 365 domain to another registrar for 60 days after you purchase the domain from Microsoft.</span></span>
+<span data-ttu-id="46468-104">从 Microsoft 购买域后，60 天内无法将 Microsoft 365 域转移到另一个注册机构。</span><span class="sxs-lookup"><span data-stu-id="46468-104">You can't transfer a Microsoft 365 domain to another registrar for 60 days after you purchase the domain from Microsoft.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="73167-105">_Whois_   查询显示 Microsoft 购买的域注册器作为通配符西部域 LLC。</span><span class="sxs-lookup"><span data-stu-id="73167-105">A _Whois_ query shows a Microsoft purchased domain registrar as Wild West Domains LLC.</span></span> <span data-ttu-id="73167-106">但是，应仅联系 microsoft 365 购买的域的相关 Microsoft。</span><span class="sxs-lookup"><span data-stu-id="73167-106">However, only Microsoft should be contacted regarding your Microsoft 365 purchased domain.</span></span>
+> <span data-ttu-id="46468-105">Whois _查询_ 将显示 Microsoft 购买的域注册机构   为 Wild West Domains LLC。</span><span class="sxs-lookup"><span data-stu-id="46468-105">A _Whois_ query shows a Microsoft purchased domain registrar as Wild West Domains LLC.</span></span> <span data-ttu-id="46468-106">但是，应仅就 Microsoft 365 购买的域与 Microsoft 联系。</span><span class="sxs-lookup"><span data-stu-id="46468-106">However, only Microsoft should be contacted regarding your Microsoft 365 purchased domain.</span></span>
 
-<span data-ttu-id="73167-107">按照以下步骤在 Microsoft 365 获取代码，然后转到其他域注册器网站，以将您的域名转移到新的注册机构。</span><span class="sxs-lookup"><span data-stu-id="73167-107">Follow these steps to get a code at Microsoft 365, and then go to the other domain registrar website to set up transferring your domain name to the new registrar.</span></span>
+<span data-ttu-id="46468-107">按照以下步骤在 Microsoft 365 获取代码，然后转到其他域注册机构网站以设置将域名转移到新注册机构。</span><span class="sxs-lookup"><span data-stu-id="46468-107">Follow these steps to get a code at Microsoft 365, and then go to the other domain registrar website to set up transferring your domain name to the new registrar.</span></span>
 
-## <a name="transfer-a-domain"></a><span data-ttu-id="73167-108">转移域</span><span class="sxs-lookup"><span data-stu-id="73167-108">Transfer a domain</span></span>
+## <a name="transfer-a-domain"></a><span data-ttu-id="46468-108">转移域</span><span class="sxs-lookup"><span data-stu-id="46468-108">Transfer a domain</span></span>
 
-1. <span data-ttu-id="73167-109">在管理中心中，转到  **设置**   >  **域**。</span><span class="sxs-lookup"><span data-stu-id="73167-109">In the admin center, go to  **Settings** > **Domains**.</span></span>
+1. <span data-ttu-id="46468-109">在管理中心，转到"  **设置**   >  **域"。**</span><span class="sxs-lookup"><span data-stu-id="46468-109">In the admin center, go to   **Settings** > **Domains**.</span></span>
 
-2. <span data-ttu-id="73167-110">在 " **域** " 页上，选择要转移到其他域注册机构的 Microsoft 365 域，然后选择 " **检查运行状况**"。</span><span class="sxs-lookup"><span data-stu-id="73167-110">On the **Domains** page, select the Microsoft 365 domain that you want to transfer to another domain registrar, and then select **Check health**.</span></span>
+2. <span data-ttu-id="46468-110">在 **"域**"页上，选择要转移到其他域注册机构的 Microsoft 365 域，然后选择"检查 **运行状况"。**</span><span class="sxs-lookup"><span data-stu-id="46468-110">On the **Domains** page, select the Microsoft 365 domain that you want to transfer to another domain registrar, and then select **Check health**.</span></span>
 
-3. <span data-ttu-id="73167-111">在页面顶部，选择 " **转移域**"。</span><span class="sxs-lookup"><span data-stu-id="73167-111">At the top of the page, select **Transfer domain**.</span></span>
+3. <span data-ttu-id="46468-111">在页面顶部，选择"传输 **域"。**</span><span class="sxs-lookup"><span data-stu-id="46468-111">At the top of the page, select **Transfer domain**.</span></span>
 
-4. <span data-ttu-id="73167-112">在 " **选择转移域的位置** " 页上，选择 **不同的注册**器，然后单击 " **下一步**"。</span><span class="sxs-lookup"><span data-stu-id="73167-112">On the **Choose where to transfer your domain** page, select **A different registrar**, and then click **Next**.</span></span>
+4. <span data-ttu-id="46468-112">在"**选择域的传输** 位置"页上，选择 **其他注册** 机构，然后单击"下 **一步"。**</span><span class="sxs-lookup"><span data-stu-id="46468-112">On the **Choose where to transfer your domain** page, select **A different registrar**, and then click **Next**.</span></span>
 
-5. <span data-ttu-id="73167-113">在 "**解锁域转移**" 页上，选择 "**解锁 <_您的域_ > 的传输**"，然后选择 "**下一步**"。</span><span class="sxs-lookup"><span data-stu-id="73167-113">On the **Unlock domain transfer** page, select **Unlock transfer for <_your domain_>**, and then select **Next**.</span></span>
+5. <span data-ttu-id="46468-113">在"**解锁域传输"** 页面上，选择"解锁 **<_你的域，_ >** 然后选择"下一 **步"。**</span><span class="sxs-lookup"><span data-stu-id="46468-113">On the **Unlock domain transfer** page, select **Unlock transfer for <_your domain_>**, and then select **Next**.</span></span>
 
-6. <span data-ttu-id="73167-114">检查你的域传输联系信息，然后选择 " **下一步**"。</span><span class="sxs-lookup"><span data-stu-id="73167-114">Check your domain transfer contact information, and then select **Next**.</span></span>
+6. <span data-ttu-id="46468-114">检查域传输联系人信息，然后选择"下一 **步"。**</span><span class="sxs-lookup"><span data-stu-id="46468-114">Check your domain transfer contact information, and then select **Next**.</span></span>
 
-7. <span data-ttu-id="73167-115">复制授权代码，并等待大约30分钟，让您的域传输状态更改为 "**注册**" 选项卡上的 "已**解锁以供转移**"，然后再继续执行下一步。</span><span class="sxs-lookup"><span data-stu-id="73167-115">Copy the authorization code and wait about 30 minutes for your domain transfer status to change to **Unlocked for transfer** on the **Registration** tab before you proceed with next steps.</span></span>
+7. <span data-ttu-id="46468-115">复制授权代码并等待大约 30 分钟，让域传输状态在"注册"选项卡上更改为"已解锁"进行转移，然后再继续执行以下步骤。</span><span class="sxs-lookup"><span data-stu-id="46468-115">Copy the authorization code and wait about 30 minutes for your domain transfer status to change to **Unlocked for transfer** on the **Registration** tab before you proceed with next steps.</span></span>
 
-8. <span data-ttu-id="73167-116">转到要对其进行管理的域名注册机构的网站，以继续进行。</span><span class="sxs-lookup"><span data-stu-id="73167-116">Go to the website of the domain registrar you want to manage your domain name going forward.</span></span> <span data-ttu-id="73167-117">按照传输域的说明 (搜索其网站) 的帮助。</span><span class="sxs-lookup"><span data-stu-id="73167-117">Follow directions for transferring a domain (search for help on their website).</span></span> <span data-ttu-id="73167-118">这通常意味着支付转帐费用并为新的注册机构提供 Authcode，以便他们可以启动传输。</span><span class="sxs-lookup"><span data-stu-id="73167-118">This usually means paying transfer fees and giving the Authcode to the new registrar so they can initiate the transfer.</span></span> <span data-ttu-id="73167-119">Microsoft 会向你发送电子邮件以确认我们已收到传输请求，并且域将在5天内转移。</span><span class="sxs-lookup"><span data-stu-id="73167-119">Microsoft will email you to confirm we’ve received the transfer request, and the domain will transfer within 5 days.</span></span>
+8. <span data-ttu-id="46468-116">转到要管理域名的域注册机构的网站。</span><span class="sxs-lookup"><span data-stu-id="46468-116">Go to the website of the domain registrar you want to manage your domain name going forward.</span></span> <span data-ttu-id="46468-117">按照域传输说明 (在网站上搜索帮助) 。</span><span class="sxs-lookup"><span data-stu-id="46468-117">Follow directions for transferring a domain (search for help on their website).</span></span> <span data-ttu-id="46468-118">这通常意味着支付转移费用，将 Authcode 给予新注册机构，以便他们可以启动转移。</span><span class="sxs-lookup"><span data-stu-id="46468-118">This usually means paying transfer fees and giving the Authcode to the new registrar so they can initiate the transfer.</span></span> <span data-ttu-id="46468-119">Microsoft 将通过电子邮件确认我们已收到转移请求，域将在 5 天内转移。</span><span class="sxs-lookup"><span data-stu-id="46468-119">Microsoft will email you to confirm we’ve received the transfer request, and the domain will transfer within 5 days.</span></span>
 
-    <span data-ttu-id="73167-120">您可以在 Microsoft 365 中的 " **域**" 页上找到 "授权代码**注册**" 选项卡。</span><span class="sxs-lookup"><span data-stu-id="73167-120">You can find the authorization code **Registration** tab on the  **Domains** page in Microsoft 365.</span></span>
+    <span data-ttu-id="46468-120">可以在 Microsoft 365 的 \*\*\*\*"域"页上找到授权代码注册选项卡。 </span><span class="sxs-lookup"><span data-stu-id="46468-120">You can find the authorization code **Registration** tab on the  **Domains** page in Microsoft 365.</span></span>
     
     > [!TIP]
-    > <span data-ttu-id="73167-121">英国域需要不同的过程。</span><span class="sxs-lookup"><span data-stu-id="73167-121">.uk domains require a different procedure.</span></span> <span data-ttu-id="73167-122">请与 Microsoft 支持部门联系并请求 **IPS 标记更改** ，以匹配您要管理的域的注册器。</span><span class="sxs-lookup"><span data-stu-id="73167-122">Contact Microsoft Support and request an **IPS Tag change** to match the registrar you want to manage your domain going forward.</span></span> <span data-ttu-id="73167-123">标记发生更改后，域将立即转移到新的注册器。</span><span class="sxs-lookup"><span data-stu-id="73167-123">Once the tag changes, the domain immediately transfers to the new registrar.</span></span> <span data-ttu-id="73167-124">然后，您需要使用新的注册器完成转移，很可能会支付转让费用，并使用新的注册机构将转移的域添加到您的帐户。</span><span class="sxs-lookup"><span data-stu-id="73167-124">You will then need to work with the new registrar to complete the transfer, likely paying transfer fees and adding the transferred domain to your account with your new registrar.</span></span>
+    > <span data-ttu-id="46468-121">.uk 域需要不同的过程。</span><span class="sxs-lookup"><span data-stu-id="46468-121">.uk domains require a different procedure.</span></span> <span data-ttu-id="46468-122">联系 Microsoft 支持部门并请求 **IPS 标记更改** ，以匹配要管理域的注册机构。</span><span class="sxs-lookup"><span data-stu-id="46468-122">Contact Microsoft Support and request an **IPS Tag change** to match the registrar you want to manage your domain going forward.</span></span> <span data-ttu-id="46468-123">标记更改后，域将立即转移到新注册机构。</span><span class="sxs-lookup"><span data-stu-id="46468-123">Once the tag changes, the domain immediately transfers to the new registrar.</span></span> <span data-ttu-id="46468-124">然后，你将需要与新注册机构合作来完成转移，可能会支付转移费用，并且使用你的新注册机构将已转移的域添加到你的帐户。</span><span class="sxs-lookup"><span data-stu-id="46468-124">You will then need to work with the new registrar to complete the transfer, likely paying transfer fees and adding the transferred domain to your account with your new registrar.</span></span>
 
-9. <span data-ttu-id="73167-125">传输完成后，你将在新域注册机构中续订你的域。</span><span class="sxs-lookup"><span data-stu-id="73167-125">After the transfer is complete, you'll renew your domain at the new domain registrar.</span></span>
+9. <span data-ttu-id="46468-125">传输完成后，你将在新的域注册机构续订域。</span><span class="sxs-lookup"><span data-stu-id="46468-125">After the transfer is complete, you'll renew your domain at the new domain registrar.</span></span>
 
-10. <span data-ttu-id="73167-126">若要完成此过程，请返回管理中心的 " **域** " 页，然后选择 "  **完成域传输**"。</span><span class="sxs-lookup"><span data-stu-id="73167-126">To finish the process, go back to the **Domains** page in the admin center, and then select  **Complete domain transfer**.</span></span> <span data-ttu-id="73167-127">这将把域标记为不再从 Microsoft 365 购买，并将禁用域订阅。</span><span class="sxs-lookup"><span data-stu-id="73167-127">This will mark the domain as no longer purchased from Microsoft 365, and will disable the domain subscription.</span></span> <span data-ttu-id="73167-128">它不会从租户中删除域，也不会影响域中的现有用户和邮箱。</span><span class="sxs-lookup"><span data-stu-id="73167-128">It will not remove the domain from the tenant, and will not affect existing users and mailboxes on the domain.</span></span>
+10. <span data-ttu-id="46468-126">若要完成此过程，请返回到管理中心中的"域"页面，然后选择"完成  **域传输"。**</span><span class="sxs-lookup"><span data-stu-id="46468-126">To finish the process, go back to the **Domains** page in the admin center, and then select  **Complete domain transfer**.</span></span> <span data-ttu-id="46468-127">这会将域标记为不再从 Microsoft 365 购买，并禁用域订阅。</span><span class="sxs-lookup"><span data-stu-id="46468-127">This will mark the domain as no longer purchased from Microsoft 365, and will disable the domain subscription.</span></span> <span data-ttu-id="46468-128">它将不会从租户中删除域，并且不会影响域中的现有用户和邮箱。</span><span class="sxs-lookup"><span data-stu-id="46468-128">It will not remove the domain from the tenant, and will not affect existing users and mailboxes on the domain.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="73167-129">Microsoft 365 购买的域不符合 nameserver 更改或在 Microsoft 365 组织之间传输域的条件。</span><span class="sxs-lookup"><span data-stu-id="73167-129">Microsoft 365 purchased domains are not eligible for nameserver changes or transferring the domain between Microsoft 365 organizations.</span></span> <span data-ttu-id="73167-130">如果需要其中任一项，则必须将域注册转移到其他注册器。</span><span class="sxs-lookup"><span data-stu-id="73167-130">If either of these are required, the domain registration must be transferred to another registrar.</span></span>
+> <span data-ttu-id="46468-129">Microsoft 365 购买的域不符合名称服务器更改或在 Microsoft 365 组织之间传输域的权限。</span><span class="sxs-lookup"><span data-stu-id="46468-129">Microsoft 365 purchased domains are not eligible for nameserver changes or transferring the domain between Microsoft 365 organizations.</span></span> <span data-ttu-id="46468-130">如果其中任一项是必需的，则必须将域注册转移到另一个注册机构。</span><span class="sxs-lookup"><span data-stu-id="46468-130">If either of these are required, the domain registration must be transferred to another registrar.</span></span>
