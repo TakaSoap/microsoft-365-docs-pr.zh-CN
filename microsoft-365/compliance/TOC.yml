@@ -666,6 +666,8 @@
               href: themes-in-advanced-ediscovery.md
             - name: 使用相关性模块来分析数据
               href: using-relevance.md
+            - name: 相关性模块的停用
+              href: relevance-module-retirement.md
         - name: 导出事例数据
           href: exporting-data-ediscover20.md
           items:
