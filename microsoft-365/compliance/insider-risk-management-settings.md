@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: ba851a7ad6243b9b3b6bc69432bd2b3036d6b269
-ms.sourcegitcommit: c0cfb9b354db56fdd329aec2a89a9b2cf160c4b0
+ms.openlocfilehash: 1e719b03db1c6de0279606d5f46f44eb02368c7e
+ms.sourcegitcommit: eac5d9f759f290d3c51cafaf335a1a1c43ded927
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "50094763"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50126611"
 ---
 # <a name="get-started-with-insider-risk-management-settings"></a>内部风险管理设置入门
 
@@ -60,7 +60,7 @@ ms.locfileid: "50094763"
 
 - **Office 指示器**：其中包括 SharePoint 网站、Teams 和电子邮件的策略指示器。
 - **设备指示器**：其中包括用于活动的策略指示器，例如通过网络或与设备共享文件。 指示器包括涉及文件Microsoft Office活动。CSV 文件和 。PDF 文件。 如果选择设备 **指示器**，则仅处理 Windows 10 版本 1809 或更高版本的设备的活动。 有关配置设备以与内部风险集成的信息，请参阅以下"启用设备指示器和载入 [设备"](insider-risk-management-settings.md#OnboardDevices) 部分。
-- **安全策略违反指示器**：其中包括来自 Microsoft Defender for Endpoint 的与未批准或恶意软件安装或绕过安全控制相关的指示器。 若要在内部风险管理中接收警报，必须启用活动的 Defender for Endpoint 许可证和内部风险集成。 有关为 Endpoint 配置 Defender 以用于内部风险管理集成，请参阅 [在 Microsoft Defender for Endpoint 中配置高级功能](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-features\#share-endpoint-alerts-with-microsoft-compliance-center)。
+- **安全策略违反指示器**：其中包括来自 Microsoft Defender for Endpoint 的与未批准或恶意软件安装或绕过安全控制相关的指示器。 若要在内部风险管理中接收警报，必须启用活动的 Defender for Endpoint 许可证和内部风险集成。 有关为 Endpoint 配置 Defender 以用于内部风险管理集成，请参阅 [在 Microsoft Defender for Endpoint 中配置高级功能](/windows/security/threat-protection/microsoft-defender-atp/advanced-features\#share-endpoint-alerts-with-microsoft-compliance-center)。
 - **风险评分：** 其中包括提高异常活动或过去违反策略的风险评分。 启用风险评分会提高风险评分以及针对这些类型的活动发出警报的可能性。 只有在选择了一个或多个指标时，才能选择风险评分分数。
 
 ![内部风险管理指示器设置](../media/insider-risk-settings-indicators.png)
@@ -82,7 +82,7 @@ ms.locfileid: "50094763"
 确保计划在内部风险管理中报告 Windows 10 设备满足这些要求。
 
 1. 必须运行 Windows 10 x64 版本 1809 或更高版本，并且必须已安装 Windows 10 更新 ([OS 版本 17763.1075) ](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818) 2020 年 2 月 20 日。
-2. 所有设备必须[已加入 Azure Active Directory (AAD)](https://docs.microsoft.com/azure/active-directory/devices/concept-azure-ad-join) 或已加入混合 Azure AD。
+2. 所有设备必须[已加入 Azure Active Directory (AAD)](/azure/active-directory/devices/concept-azure-ad-join) 或已加入混合 Azure AD。
 3. 在终结点设备上安装 Microsoft Chromium Edge 浏览器，以监视云上传活动的操作。 请参见[下载基于 Chromium 的新 Microsoft Edge](https://support.microsoft.com/help/4501095/download-the-new-microsoft-edge-based-on-chromium)。
 
 #### <a name="step-2-onboarding-devices"></a>步骤 2：载入设备
@@ -92,7 +92,7 @@ ms.locfileid: "50094763"
 
 当你希望载入尚未载入的设备时，你将下载相应的脚本并按照以下步骤所述进行部署。
 
-已载入到 [Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/) 的设备将显示在“托管设备”列表中。 按照[步骤 3：如果你的设备已载入下一节中的 Microsoft Defender for Endpoint。](insider-risk-management-settings.md#OnboardStep3)
+已载入到 [Microsoft Defender for Endpoint](/windows/security/threat-protection/) 的设备将显示在“托管设备”列表中。 按照[步骤 3：如果你的设备已载入下一节中的 Microsoft Defender for Endpoint。](insider-risk-management-settings.md#OnboardStep3)
 
 在此部署方案中，你将载入尚未载入的设备，并且你只想监视 Windows 10 设备上的内部风险活动。
 
@@ -105,7 +105,7 @@ ms.locfileid: "50094763"
 3. 选择“**设备管理**”，以打开“**设备**”列表。 在载入设备之前，此列表将为空。
 4. 选择“**载入**”以开始载入流程。
 5. 从部署方法列表中选择你想要部署到这些更多设备的方式，然后 **下载程序包**。 
-6. 按照[适用于 Windows 10 计算机的载入工具和方法](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints)中的相应程序进行操作。 此链接会将你定位到登录页面，你可以在其中访问与在步骤 5 中选择的部署程序包相匹配的 Microsoft Defender for Endpoint 过程：
+6. 按照[适用于 Windows 10 计算机的载入工具和方法](/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints)中的相应程序进行操作。 此链接会将你定位到登录页面，你可以在其中访问与在步骤 5 中选择的部署程序包相匹配的 Microsoft Defender for Endpoint 过程：
     - 使用组策略载入 Windows 10 计算机
     - 使用 Microsoft Endpoint Configuration Manager 载入 Windows 10 计算机
     - 使用移动设备管理工具载入 Windows 10 计算机
@@ -127,7 +127,7 @@ ms.locfileid: "50094763"
 3. 选择“**设备管理**”，以打开“**设备**”列表。 你应该会看到已经向 Microsoft Defender for Endpoint 报告的设备列表。
 4. 如果需要 **载入** 更多设备，请选择"载入"。
 5. 从部署方法列表中选择你想要部署到这些更多 **设备的方式，** 然后 **下载程序包**。
-6. 按照[适用于 Windows 10 计算机的载入工具和方法](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints)中的相应程序进行操作。 此链接会将你定位到登录页面，你可以在其中访问与在步骤 5 中选择的部署程序包相匹配的 Microsoft Defender for Endpoint 过程：
+6. 按照[适用于 Windows 10 计算机的载入工具和方法](/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints)中的相应程序进行操作。 此链接会将你定位到登录页面，你可以在其中访问与在步骤 5 中选择的部署程序包相匹配的 Microsoft Defender for Endpoint 过程：
     - 使用组策略载入 Windows 10 计算机
     - 使用 Microsoft Endpoint Configuration Manager 载入 Windows 10 计算机
     - 使用移动设备管理工具载入 Windows 10 计算机
@@ -184,7 +184,7 @@ ms.locfileid: "50094763"
 
 ### <a name="microsoft-defender-for-endpoint-preview"></a>Microsoft Defender for Endpoint (预览) 
 
-[Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) 是一个企业终结点安全平台，旨在帮助企业网络预防、检测、调查和响应高级威胁。 为了更好地了解组织中违反安全的行为，你可以导入和筛选 Defender for Endpoint 警报，以针对根据内部风险管理安全违反策略模板创建的策略中使用的活动。
+[Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) 是一个企业终结点安全平台，旨在帮助企业网络预防、检测、调查和响应高级威胁。 为了更好地了解组织中违反安全的行为，你可以导入和筛选 Defender for Endpoint 警报，以针对根据内部风险管理安全违反策略模板创建的策略中使用的活动。
 
 根据你感兴趣的信号类型，你可以选择根据 Defender for Endpoint 警报会审状态将警报导入内部风险管理。 可以在要导入的全局设置中定义以下一个或多个警报会审状态：
 
@@ -198,7 +198,7 @@ ms.locfileid: "50094763"
 例如，如果为此设置选择"新建"、"正在进行"和"已解决"，则当生成 Microsoft Defender for Endpoint 警报并且状态为 *"* 新建"时，会为存在内部风险的用户导入初始警报活动。  当 Defender for Endpoint 会审状态更改为"正在进行"时，会为存在内部风险的用户导入此警报的第二个活动。 当设置"已解决"的最终 Defender终结点会审状态时，会为存在内部风险的用户导入此警报的第三个活动。 此功能允许调查人员跟踪 Defender for Endpoint 警报进度，并选择其调查所需的可见性级别。
 
 >[!IMPORTANT]
->你需要在你的组织中配置 Microsoft Defender for Endpoint，并启用 Defender for Endpoint，以便 Defender 安全中心中的内部风险管理集成导入安全违反警报。 有关为 Endpoint 配置 Defender 进行内部风险管理集成的信息，请参阅在 Defender for Endpoint 中 [配置高级功能](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-features\#share-endpoint-alerts-with-microsoft-compliance-center)。
+>你需要在你的组织中配置 Microsoft Defender for Endpoint，并启用 Defender for Endpoint，以便 Defender 安全中心中的内部风险管理集成导入安全违反警报。 有关为 Endpoint 配置 Defender 进行内部风险管理集成的信息，请参阅在 Defender for Endpoint 中 [配置高级功能](/windows/security/threat-protection/microsoft-defender-atp/advanced-features\#share-endpoint-alerts-with-microsoft-compliance-center)。
 
 ### <a name="domains-preview"></a>域 (预览) 
 
@@ -212,7 +212,7 @@ ms.locfileid: "50094763"
 
 ## <a name="export-alerts-preview"></a>导出警报 (预览) 
 
-内部风险管理警报信息可通过 [Office 365](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema#security-and-compliance-alerts-schema)管理活动 API 架构导出 (SIEM) 服务的安全信息和事件管理。 您可以使用 Office 365 管理活动 API 将警报信息导出到组织可能用于管理或聚合内部风险信息的其他应用程序。
+内部风险管理警报信息可通过 [Office 365](/office/office-365-management-api/office-365-management-activity-api-schema#security-and-compliance-alerts-schema)管理活动 API 架构导出 (SIEM) 服务的安全信息和事件管理。 您可以使用 Office 365 管理活动 API 将警报信息导出到组织可能用于管理或聚合内部风险信息的其他应用程序。
 
 若要使用 API 查看内部风险警报信息：
 
@@ -231,16 +231,16 @@ ms.locfileid: "50094763"
 | AlertType | 警报的类型为 *"自定义"。*  |
 | AlertId | 警报的 GUID。 内部风险管理警报是可变的。 当警报状态更改时，将生成一个同一 AlertID 的新日志。 此 AlertID 可用于关联警报的更新。 |
 | 类别 | 警报的类别是 *InsiderRiskManagement。* 此类别可用于区分这些警报与其他安全与合规&警报。 |
-| 备注 | 警报的默认注释。 值是在 *(* 警报更新时记录的新警报) 和 (更新时记录警报更新) 。  使用 AlertID 关联警报的更新。 |
+| Comments | 警报的默认注释。 值是在 *(* 警报更新时记录的新警报) 和 (更新时记录警报更新) 。  使用 AlertID 关联警报的更新。 |
 | Data | 警报的数据包括唯一的用户 ID、用户主体名称，以及当用户被触发到策略 (UTC) 日期和时间。 |
 | 名称 | 生成警报的内部风险管理策略的策略名称。 |
 | PolicyId | 触发警报的内部风险管理策略的 GUID。 |
 | Severity | 警报的严重性。 值为 *"高**"、"中"* 或"*低"。* |
-| 源 | 警报的来源。 值为 *Office 365 安全&合规性*。 |
+| Source | 警报的来源。 值为 *Office 365 安全&合规性*。 |
 | 状态 | 警报的状态。 值为"内部 (风险) 中的活动 (审核、*调查 (在* 内部风险中确认的) 、解决的 *(**在* 内部风险) 中已解决、 (在内部风险中) 。  |
 | 版本 | 安全性和合规性警报架构的版本。 |
 
-针对 [Office 365](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema#common-schema)管理活动 API 通用架构的内部风险管理警报导出以下字段和值。
+针对 [Office 365](/office/office-365-management-api/office-365-management-activity-api-schema#common-schema)管理活动 API 通用架构的内部风险管理警报导出以下字段和值。
 
 - UserID
 - Id
@@ -348,7 +348,7 @@ ms.locfileid: "50094763"
 
 ## <a name="power-automate-flows-preview"></a>Power Automate 流 (预览) 
 
-[Microsoft Power Automate](https://docs.microsoft.com/power-automate/getting-started) 是一种工作流服务，可自动执行应用程序和服务中的操作。 通过使用模板中的流或手动创建流，可以自动执行与这些应用程序和服务关联的常见任务。 启用 Power Automate 流进行内部风险管理时，可以自动执行事例和用户的重要任务。 可以将 Power Automate 流配置为检索用户、警报和案例信息，并与利益干系人和其他应用程序共享此信息，以及自动执行内部风险管理中的操作，例如发布到案例说明。 Power Automate 流适用于事例和策略范围内的任何用户。
+[Microsoft Power Automate](/power-automate/getting-started) 是一种工作流服务，可自动执行应用程序和服务中的操作。 通过使用模板中的流或手动创建流，可以自动执行与这些应用程序和服务关联的常见任务。 启用 Power Automate 流进行内部风险管理时，可以自动执行事例和用户的重要任务。 可以将 Power Automate 流配置为检索用户、警报和案例信息，并与利益干系人和其他应用程序共享此信息，以及自动执行内部风险管理中的操作，例如发布到案例说明。 Power Automate 流适用于事例和策略范围内的任何用户。
 
 具有包含内部风险管理的 Microsoft 365 订阅的客户不需要其他 Power Automate 许可证来使用建议的内部风险管理 Power Automate 模板。 可以自定义这些模板以支持您的组织并涵盖核心内部风险管理方案。 如果你选择在这些模板中使用高级 Power Automate 功能，使用 Microsoft 365 合规性连接器创建自定义模板，或者为 Microsoft 365 中其他合规性区域使用 Power Automate 模板，你可能需要更多 Power Automate 许可证。
 
@@ -392,8 +392,8 @@ ms.locfileid: "50094763"
 完成以下步骤，为内部风险管理创建自定义 Power Automate 模板：
 
 1. **检查 Power Automate 流许可证**：若要创建使用内部风险管理触发器的自定义 Power Automate 流，需要 Power Automate 许可证。 建议的内部风险管理流模板不需要额外的许可，并作为内部风险管理许可证的一部分包含在内。
-2. **创建自动化流**：创建在内部风险管理事件触发后执行一个或多个任务的流。 若要详细了解如何创建自动化流，请参阅在 [Power Automate 中创建流](https://docs.microsoft.com/power-automate/get-started-logic-flow)。
-3. **选择 Microsoft 365 合规性连接器**：搜索并选择 Microsoft 365 合规性连接器。 此连接器支持内部风险管理触发器和操作。 有关连接器详细信息，请参阅连接器 [参考概述](https://docs.microsoft.com/connectors/connector-reference/) 文章。
+2. **创建自动化流**：创建在内部风险管理事件触发后执行一个或多个任务的流。 若要详细了解如何创建自动化流，请参阅在 [Power Automate 中创建流](/power-automate/get-started-logic-flow)。
+3. **选择 Microsoft 365 合规性连接器**：搜索并选择 Microsoft 365 合规性连接器。 此连接器支持内部风险管理触发器和操作。 有关连接器详细信息，请参阅连接器 [参考概述](/connectors/connector-reference/) 文章。
 4. **为流程选择** 内部风险管理触发器：内部风险管理有两个触发器可用于自定义 Power Automate 流：
     - **对于选定的内部风险管理案例**：可以从内部风险管理案例仪表板页面选择具有此触发器的流。
     - **对于选定的内部风险管理用户**：可以从内部风险管理用户仪表板页面选择具有此触发器的流。
@@ -453,7 +453,7 @@ ms.locfileid: "50094763"
 
 启用 Microsoft Teams 进行内部风险管理后，每次确认警报并创建案例时，都会创建专门的 Microsoft Teams 团队。 默认情况下，团队自动包括预览体验成员风险管理、内部风险管理分析师和内部风险管理调查人员角色组的所有成员 (最多 100 名初始) 。  创建团队后，可在适当时向团队添加其他组织参与者。 对于在启用 Microsoft Teams 之前创建的现有案例，分析员和调查人员可以选择在需要的情况下创建新 Microsoft Teams 团队。  在内部风险管理中解决相关案例后，团队会自动存档 (移动到隐藏和只读) 。
 
-若要详细了解如何在 Microsoft Teams 中使用团队和频道，请参阅 [Microsoft Teams 中的团队和频道概述](https://docs.microsoft.com/MicrosoftTeams/teams-channels-overview)。
+若要详细了解如何在 Microsoft Teams 中使用团队和频道，请参阅 [Microsoft Teams 中的团队和频道概述](/MicrosoftTeams/teams-channels-overview)。
 
 为事例启用 Microsoft Teams 支持快速且易于配置。 若要启用 Microsoft Teams 进行内部风险管理，请完成以下步骤：
 
@@ -466,7 +466,7 @@ ms.locfileid: "50094763"
 
 如果你在现有案例后启用对内部风险管理的 Microsoft Teams 支持，你将需要根据需要为每个案例手动创建一个团队。 在内部风险管理设置中启用 Microsoft Teams 支持后，新案例将自动创建新的 Microsoft Teams 团队。
 
-用户需要有权在组织中创建 Microsoft 365 组，才能根据情况创建 Microsoft Teams 团队。 有关管理 Microsoft 365 组的权限详细信息，请参阅"管理可以创建[Microsoft 365 组的用户"。](https://docs.microsoft.com/microsoft-365/solutions/manage-creation-of-groups)
+用户需要有权在组织中创建 Microsoft 365 组，才能根据情况创建 Microsoft Teams 团队。 有关管理 Microsoft 365 组的权限详细信息，请参阅"管理可以创建[Microsoft 365 组的用户"。](/microsoft-365/solutions/manage-creation-of-groups)
 
 若要为案例创建团队，您将在直接处理现有案例时使用"创建 Microsoft 团队"控件。 完成以下步骤以创建新团队：
 

@@ -15,17 +15,17 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 description: 了解如何使用 QR 代码对 Outlook 移动版进行身份验证和下载。
-ms.openlocfilehash: 2d62a49b93fa7bd5f2d747525de7244e8014e6a7
-ms.sourcegitcommit: b8e9b2ecdc4927b67088c5fffb1585424c66fb10
+ms.openlocfilehash: b9e433e0c7d3f5f3466924b318e242e5ac29181c
+ms.sourcegitcommit: 719b89baca1bae14455acf2e517ec18fc473636c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2021
-ms.locfileid: "50050768"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "50122368"
 ---
 # <a name="use-a-qr-code-to-sign-in-to-the-outlook-mobile-apps"></a>使用 QR 代码登录到 Outlook 移动应用
 
 > [!IMPORTANT]
-> 此 Microsoft 365 功能为公共预览版。 公共预览版提供对 Microsoft 365 功能的早期访问。
+> 此 Microsoft 365 功能是公共预览版。 公共预览版提供对 Microsoft 365 功能的早期访问。
 
 作为 Microsoft 365 管理员，您可以允许用户登录到其移动设备上的 Outlook for Android 或 iOS 应用，而无需输入用户名和密码。 通过扫描 QR 代码，用户可以安全地进行身份验证并登录到 Outlook Mobile。
 
@@ -39,10 +39,10 @@ ms.locfileid: "50050768"
 默认情况下，此体验为打开状态。 若要禁用此功能，请按照以下步骤操作。
 
 1. [连接到 Exchange PowerShell。](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell?view=exchange-ps)
-2. 使用 PowerShell，可以禁用通知用户有关 Outlook 移动应用的通知。 这还会阻止显示 QR 代码登录流。
+2. 使用 PowerShell，可以禁用通知用户有关 Outlook 移动应用的通知。 这还将阻止显示 QR 代码登录流。
 
 ```powershell
-Set-Organization -MobileAppEducationEnabled <Boolean>
+Set-OrganizationConfig -MobileAppEducationEnabled <Boolean>
 ```
 
 相关主题

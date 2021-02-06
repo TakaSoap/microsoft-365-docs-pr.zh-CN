@@ -16,7 +16,6 @@ ms.collection:
 - Adm_O365_Setup
 ms.custom:
 - AdminSurgePortfolio
-- okr_smb
 search.appverid:
 - BCS160
 - MET150
@@ -24,12 +23,12 @@ search.appverid:
 - GEA150
 ms.assetid: 77f90d4a-dc7f-4f09-8972-c1b03ea85a67
 description: '了解如何查找为 Microsoft 365 创建 DNS 记录所需的值/信息。 '
-ms.openlocfilehash: db9aff1fdcd9fa52c90cc96b1a32cd3908c30edb
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+ms.openlocfilehash: 45994139b11a2fd5a03b2e979dd6af334bc1f00b
+ms.sourcegitcommit: eac5d9f759f290d3c51cafaf335a1a1c43ded927
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49658503"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50126367"
 ---
 # <a name="gather-the-information-you-need-to-create-dns-records"></a>收集创建 DNS 记录所需的信息
 
@@ -57,13 +56,13 @@ ms.locfileid: "49658503"
     
 2. 在"**域**"页上，选择你的域，然后选择"**开始设置"。** 你将返回域设置向导，查看需要添加的特定值。
     
-3. 在"**验证域"** 页上，改为选择 **"添加 TXT 记录"，** 然后选择"下 **一步"。**
+3. 在"**验证域"** 页上，选择"**改为添加 TXT 记录**"，然后选择"下 **一步"。**
     
 4. 复制 **显示的 TXT** 值。 它如下所示 **：MS=msXXXXXXXX**。 
     
 5. 转到 [在任何 DNS](create-dns-records-at-any-dns-hosting-provider.md)托管提供商处创建 DNS 记录，然后从注册机构列表中选择 DNS 主机以查看分步说明。
     
-6. 按照在 DNS 主机上 (TXT 记录或 MX) 的步骤操作，然后在 Microsoft 365 中重新验证域。
+6. 按照在 DNS 主机上 (MX) TXT 记录的步骤操作，然后在 Microsoft 365 中重新验证域。
 
 7. 在 Microsoft 365 中 (域后，从 DNS) 中删除 TXT 记录或 MX 记录。
     

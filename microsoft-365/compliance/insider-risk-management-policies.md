@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 1093d664e58f77d94db9f6f922a1a5072f4d3982
-ms.sourcegitcommit: c0cfb9b354db56fdd329aec2a89a9b2cf160c4b0
+ms.openlocfilehash: 9f8424beb7e4a078d14bce755fc399ecd41764d9
+ms.sourcegitcommit: eac5d9f759f290d3c51cafaf335a1a1c43ded927
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "50094695"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50126631"
 ---
 # <a name="insider-risk-management-policies"></a>内部风险管理策略
 
@@ -89,7 +89,7 @@ ms.locfileid: "50094695"
 
 在许多组织中，用户有权在设备上安装软件或修改设备设置以帮助完成其任务。 无论是无意还是恶意，用户可能会安装恶意软件或禁用有助于保护其设备或网络资源上的信息的重要安全功能。 此策略模板使用来自 Microsoft Defender for Endpoint 的安全警报开始对这些活动进行评分，并针对此风险区域进行焦点检测和警报。 在用户可能拥有安全策略违反历史记录（可能是内部风险指示器）的情况下，使用此模板提供安全策略违反的见解。
 
-你需要在你的组织中配置 Microsoft Defender for Endpoint，并启用 Defender for Endpoint，以便 Defender 安全中心中的内部风险管理集成导入安全违反警报。 有关为 Endpoint 配置 Defender 进行内部风险管理集成的信息，请参阅在 Defender for Endpoint 中 [配置高级功能](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-features#share-endpoint-alerts-with-microsoft-compliance-center)。
+你需要在你的组织中配置 Microsoft Defender for Endpoint，并启用 Defender for Endpoint，以便 Defender 安全中心中的内部风险管理集成导入安全违反警报。 有关为 Endpoint 配置 Defender 进行内部风险管理集成的信息，请参阅在 Defender for Endpoint 中 [配置高级功能](/windows/security/threat-protection/microsoft-defender-atp/advanced-features#share-endpoint-alerts-with-microsoft-compliance-center)。
 
 ### <a name="security-policy-violations-by-departing-users-preview"></a>通过离开用户或预览版 (违反) 
 
@@ -97,13 +97,13 @@ ms.locfileid: "50094695"
 
 使用此模板时，必须配置 Microsoft 365 HR 连接器，以定期导入组织中用户的终止日期和终止日期信息。 有关 [为组织配置](import-hr-data.md) Microsoft 365 HR 连接器的分步指南，请参阅"使用 HR 连接器导入数据"一文。
 
-你需要在你的组织中配置 Microsoft Defender for Endpoint，并启用 Defender for Endpoint，以便 Defender 安全中心中的内部风险管理集成导入安全违反警报。 有关为 Endpoint 配置 Defender 进行内部风险管理集成的信息，请参阅在 Defender for Endpoint 中 [配置高级功能](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-features#share-endpoint-alerts-with-microsoft-compliance-center)。
+你需要在你的组织中配置 Microsoft Defender for Endpoint，并启用 Defender for Endpoint，以便 Defender 安全中心中的内部风险管理集成导入安全违反警报。 有关为 Endpoint 配置 Defender 进行内部风险管理集成的信息，请参阅在 Defender for Endpoint 中 [配置高级功能](/windows/security/threat-protection/microsoft-defender-atp/advanced-features#share-endpoint-alerts-with-microsoft-compliance-center)。
 
 ### <a name="security-policy-violations-by-priority-users-preview"></a>预览版中优先级用户违反 (违反) 
 
 防止组织中用户的安全违规可能取决于他们的位置、敏感信息的访问级别或风险历史记录。 由于优先级用户违反安全规定可能会对组织的关键区域产生过大的影响，因此此策略模板开始在这些指示器上评分，并使用 Microsoft Defender for Endpoint 警报为这些用户提供与安全相关的活动的见解。 这些可能包括优先用户安装恶意软件或其他可能有害的应用程序，并禁用其设备上的安全性功能。 优先级用户在内部风险管理设置区域中配置的优先级用户组中定义。
 
-你需要在你的组织中配置 Microsoft Defender for Endpoint，并启用 Defender for Endpoint，以便 Defender 安全中心中的内部风险管理集成导入安全违反警报。 有关为 Endpoint 配置 Defender 进行内部风险管理集成的信息，请参阅在 Defender for Endpoint 中 [配置高级功能](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-features#share-endpoint-alerts-with-microsoft-compliance-center)。 此外，还需要将"内部风险管理设置"中创建的优先级用户组  >  **分配给**  >  策略。
+你需要在你的组织中配置 Microsoft Defender for Endpoint，并启用 Defender for Endpoint，以便 Defender 安全中心中的内部风险管理集成导入安全违反警报。 有关为 Endpoint 配置 Defender 进行内部风险管理集成的信息，请参阅在 Defender for Endpoint 中 [配置高级功能](/windows/security/threat-protection/microsoft-defender-atp/advanced-features#share-endpoint-alerts-with-microsoft-compliance-center)。 此外，还需要将"内部风险管理设置"中创建的优先级用户组  >  **分配给**  >  策略。
 
 ### <a name="security-policy-violations-by-disgruntled-users-preview"></a>取消注册的用户在预览版中违反 (违反) 
 
@@ -111,7 +111,7 @@ ms.locfileid: "50094695"
 
 使用此模板时，还必须配置 Microsoft 365 HR 连接器，以定期为组织用户导入性能改进通知、性能考核状态不佳或作业级别更改信息。 有关 [为组织配置](import-hr-data.md) Microsoft 365 HR 连接器的分步指南，请参阅"使用 HR 连接器导入数据"一文。
 
-你还需要在组织中配置 Microsoft Defender for Endpoint，并启用 Defender for Endpoint，以便 Defender 安全中心中的内部风险管理集成导入安全违反警报。 有关为 Endpoint 配置 Defender 进行内部风险管理集成的信息，请参阅在 Defender for Endpoint 中 [配置高级功能](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-features#share-endpoint-alerts-with-microsoft-compliance-center)。
+你还需要在组织中配置 Microsoft Defender for Endpoint，并启用 Defender for Endpoint，以便 Defender 安全中心中的内部风险管理集成导入安全违反警报。 有关为 Endpoint 配置 Defender 进行内部风险管理集成的信息，请参阅在 Defender for Endpoint 中 [配置高级功能](/windows/security/threat-protection/microsoft-defender-atp/advanced-features#share-endpoint-alerts-with-microsoft-compliance-center)。
 
 ### <a name="policy-template-prerequisites-and-triggering-events"></a>策略模板先决条件和触发事件
 

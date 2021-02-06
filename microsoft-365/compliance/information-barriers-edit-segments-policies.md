@@ -12,12 +12,12 @@ ms.collection:
 localization_priority: None
 f1.keywords:
 - NOCSH
-ms.openlocfilehash: 3a95ccb476960424b701f522aacce78576e6f68f
-ms.sourcegitcommit: 8d28bce1a3445878b066864e766cf52cb83becd1
+ms.openlocfilehash: 0d46459f61b29c6bdb457c7e0c82e9147e7709ba
+ms.sourcegitcommit: eac5d9f759f290d3c51cafaf335a1a1c43ded927
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "50071277"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50126137"
 ---
 # <a name="manage-information-barrier-policies"></a>管理信息屏障策略
 
@@ -37,7 +37,7 @@ ms.locfileid: "50071277"
 | [信息屏障疑难解答](information-barriers-troubleshooting.md) | 当您遇到信息障碍的意外问题时，请参阅本文。 |
 
 > [!IMPORTANT]
-> 若要执行本文中所述的任务，必须分配有适当的角色，例如以下角色之一：<br/>- Microsoft 365 企业版全局管理员<br/>- 全局管理员<br/>- 合规性管理员<br/>- IBM 合规性管理 (这是一个新角色！) <br><br>若要了解有关信息屏障的先决条件详细信息，请参阅 ([策略的先决条件 ](information-barriers-policies.md#prerequisites)) 。<br><br> 确保连接到[安全与合规& PowerShell。](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell)
+> 若要执行本文中所述的任务，必须分配有适当的角色，例如以下角色之一：<br/>- Microsoft 365 企业版全局管理员<br/>- 全局管理员<br/>- 合规性管理员<br/>- IBM 合规性管理 (这是一个新角色！) <br><br>若要了解有关信息屏障的先决条件详细信息，请参阅 ([策略的先决条件 ](information-barriers-policies.md#prerequisites)) 。<br><br> 确保连接到[安全与合规& PowerShell。](/powershell/exchange/connect-to-scc-powershell)
 
 ## <a name="edit-user-account-attributes"></a>编辑用户帐户属性
 
@@ -53,9 +53,9 @@ ms.locfileid: "50071277"
 
 3. 编辑一个或多个用户帐户以包括上一步中所选的属性值。 若要执行此操作，请使用以下过程之一：
 
-    - 若要编辑单个帐户，请参阅使用 [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal)添加或更新用户配置文件信息。
+    - 若要编辑单个帐户，请参阅使用 [Azure Active Directory](/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal)添加或更新用户配置文件信息。
 
-    - 若要编辑多个帐户 (或使用 PowerShell 编辑单个帐户) ，请参阅"使用[Office 365 PowerShell 配置用户帐户属性"。](https://docs.microsoft.com/microsoft-365/enterprise/configure-user-account-properties-with-microsoft-365-powershell)
+    - 若要编辑多个帐户 (或使用 PowerShell 编辑单个帐户) ，请参阅"使用[Office 365 PowerShell 配置用户帐户属性"。](/microsoft-365/enterprise/configure-user-account-properties-with-microsoft-365-powershell)
 
 ## <a name="edit-a-segment"></a>编辑线段
 

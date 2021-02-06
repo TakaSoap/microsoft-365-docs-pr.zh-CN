@@ -1,6 +1,6 @@
 ---
 title: 信息屏障疑难解答
-description: 使用本文作为解决信息障碍的指南。
+description: 使用本文作为信息屏障疑难解答指南。
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -13,21 +13,21 @@ localization_priority: None
 f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 39ac5c2f12b8947bce26d426cac83e57cd4c87ae
-ms.sourcegitcommit: c10eb675da725830e9776d2a0566ba3622eb361c
+ms.openlocfilehash: 3810dd977ef0d25642ba86a2b62a036c9a4ace06
+ms.sourcegitcommit: eac5d9f759f290d3c51cafaf335a1a1c43ded927
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49980035"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50126559"
 ---
 # <a name="troubleshooting-information-barriers"></a>信息屏障疑难解答
 
-[信息屏障](information-barriers.md) 可帮助组织保持遵守法律要求和行业法规。 例如，在信息障碍下，您可以限制特定用户组之间的通信，以避免发生冲突或其他问题。  (若要详细了解如何设置信息屏障，请参阅"定义信息 [屏障策略](information-barriers-policies.md)") 
+[信息屏障](information-barriers.md) 可帮助组织保持遵守法律要求和行业法规。 例如，在信息障碍下，可以限制特定用户组之间的通信，以避免发生冲突或其他问题。  (若要详细了解如何设置信息屏障，请参阅"定义信息屏障[策略") ](information-barriers-policies.md)
 
 如果信息屏障存在后，用户遇到意外问题，您可以采取一些步骤来解决这些问题。 使用本文作为指南。
 
 > [!IMPORTANT]
-> 若要执行本文中所述的任务，您必须分配有适当的角色，例如以下角色之一：<br/>- Microsoft 365 企业版全局管理员<br/>- 全局管理员<br/>- 合规性管理员<br/>- IBM 合规性管理 (这是一个新角色！) <p>若要了解有关信息屏障的先决条件详细信息，请参阅 ([策略的先决条件 ](information-barriers-policies.md#prerequisites)) 。<p>确保连接到[安全与合规& PowerShell。](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell)
+> 若要执行本文中所述的任务，必须分配有适当的角色，例如以下角色之一：<br/>- Microsoft 365 企业版全局管理员<br/>- 全局管理员<br/>- 合规性管理员<br/>- IBM 合规性管理 (这是一个新角色！) <p>若要了解有关信息屏障的先决条件详细信息，请参阅 ([策略的先决条件 ](information-barriers-policies.md#prerequisites)) 。<p>确保连接到[安全与合规& PowerShell。](/powershell/exchange/connect-to-scc-powershell)
 
 ## <a name="issue-users-are-unexpectedly-blocked-from-communicating-with-others-in-microsoft-teams"></a>问题：意外阻止用户与 Microsoft Teams 中的其他人通信 
 
@@ -53,7 +53,7 @@ ms.locfileid: "49980035"
 
     |**语法**|**示例**|
     |:---------|:----------|
-    | `Get-InformationBarrierPolicy` <p> 使用在上一步 (ExoPolicyId) 策略 GUID 作为标识值。 | `Get-InformationBarrierPolicy -Identity b42c3d0f-49e9-4506-a0a5-bf2853b5df6f` <p> 此示例中，我们将获取有关具有 ExoPolicyId *b42c3d0f-49e9-4506-a0a5-bf2853b5df6f* 的信息屏障策略的详细信息。 |
+    | `Get-InformationBarrierPolicy` <p> 使用在上一步 (ExoPolicyId) 策略 GUID 作为标识值。 | `Get-InformationBarrierPolicy -Identity b42c3d0f-49e9-4506-a0a5-bf2853b5df6f` <p> 本示例中，我们将获取有关具有 ExoPolicyId *b42c3d0f-49e9-4506-a0a5-bf2853b5df6f* 的信息屏障策略的详细信息。 |
 
     运行 cmdlet 后，在结果中查找 **AssignedSegment、SegmentsAllowed** 和 **SegmentsBlocked** 值。 
 
@@ -73,19 +73,19 @@ ms.locfileid: "49980035"
 
     |**语法**|**示例**|
     |:---------|:----------|
-    | `Get-OrganizationSegment`<p> 使用此 cmdlet 和 Identity 参数。 | `Get-OrganizationSegment -Identity c96e0837-c232-4a8a-841e-ef45787d8fcd` <p> 在此示例中，我们将获取具有 GUID *c96e0837-c232-4a8a-841e-ef45787d8fcd* 的段的信息。 |
+    | `Get-OrganizationSegment`<p> 使用此 cmdlet 和 Identity 参数。 | `Get-OrganizationSegment -Identity c96e0837-c232-4a8a-841e-ef45787d8fcd` <p> 此示例中，我们将获取具有 GUID *c96e0837-c232-4a8a-841e-ef45787d8fcd* 的段的信息。 |
 
-    查看该段的详细信息。 如有必要， [编辑线段](information-barriers-edit-segments-policies.md#edit-a-segment)，然后重新使用此 `Start-InformationBarrierPoliciesApplication` cmdlet。
+    查看该段的详细信息。 如有必要， [编辑线段](information-barriers-edit-segments-policies.md#edit-a-segment)，然后重新 `Start-InformationBarrierPoliciesApplication` 使用该 cmdlet。
 
     **如果信息屏障策略仍有问题，请联系支持人员**。
 
 ## <a name="issue-communications-are-allowed-between-users-who-should-be-blocked-in-microsoft-teams"></a>问题：允许在 Microsoft Teams 中阻止的用户之间的通信
 
-在这种情况下，虽然信息屏障已定义、激活和应用，但应阻止彼此通信的人在 Microsoft Teams 中以某种方式能够相互聊天和通话。
+在这种情况下，虽然定义了、激活和应用了信息屏障，但应阻止彼此通信的人以某种方式能够在 Microsoft Teams 中相互聊天和通话。
 
 ### <a name="what-to-do"></a>需执行的操作
 
-验证有关用户是否包含在信息屏障策略中。 
+验证信息屏障策略中是否包含有关用户。 
 
 1. 将 **Get-InformationBarrierRecipientStatus** cmdlet 与 Identity 参数一同使用。
 
@@ -94,7 +94,7 @@ ms.locfileid: "49980035"
     | `Get-InformationBarrierRecipientStatus -Identity <value> -Identity2 <value>` <p> 可以使用任何能够唯一标识每个用户的值，例如名称、别名、可分辨名称、规范域名、电子邮件地址或 GUID。 |`Get-InformationBarrierRecipientStatus -Identity meganb -Identity2 alexw` <p> 本示例中，我们引用了 Office 365 中的两个用户帐户 *：Meganb* for *Megan* 和 *alexw* for *Alex。* |
 
     > [!TIP]
-    > 还可以对单个用户使用此 cmdlet： `Get-InformationBarrierRecipientStatus -Identity <value>`
+    > 您还可以对单个用户使用此 cmdlet： `Get-InformationBarrierRecipientStatus -Identity <value>`
 
 2. 查看结果。 **Get-InformationBarrierRecipientStatus** cmdlet 返回有关用户的信息，例如属性值和应用的任何信息屏障策略。
 
@@ -102,7 +102,7 @@ ms.locfileid: "49980035"
 
     |**结果**|**下一步要做什么**|
     |:----------|:------------------|
-    | 未为所选用户列出任何 ()  | 执行下列操作之一：<br/>- 在 Azure Active Directory 中编辑用户的用户配置文件，将用户分配到现有段。  (Office [365 PowerShell](https://docs.microsoft.com/microsoft-365/enterprise/configure-user-account-properties-with-microsoft-365-powershell).) <br/>- 使用信息屏障 [的受支持属性定义线段](information-barriers-attributes.md)。 然后，[定义新策略或](information-barriers-policies.md#part-2-define-information-barrier-policies)[编辑现有策略](information-barriers-edit-segments-policies.md#edit-a-policy)以包含该段。 |
+    | 未为所选用户列出任何 ()  | 执行下列操作之一：<br/>- 在 Azure Active Directory 中编辑用户的用户配置文件，将用户分配到现有段。  (Office [365 PowerShell](/microsoft-365/enterprise/configure-user-account-properties-with-microsoft-365-powershell).) <br/>- 使用信息屏障 [的受支持属性定义线段](information-barriers-attributes.md)。 然后，[定义新策略或](information-barriers-policies.md#part-2-define-information-barrier-policies)[编辑现有策略](information-barriers-edit-segments-policies.md#edit-a-policy)以包含该段。 |
     | 列出分段，但没有为这些分段分配信息屏障策略 | 执行下列操作之一：<br/>- [为所针对的每个分段](information-barriers-policies.md#part-2-define-information-barrier-policies) 定义新的信息屏障策略 <br/>- [编辑现有信息屏障策略](information-barriers-edit-segments-policies.md#edit-a-policy) 以将其分配到正确的段 |
     | 列出了分段，并且每个分段都包含在信息屏障策略中 | - 运行 `Get-InformationBarrierPolicy` cmdlet 以验证信息屏障策略是否处于活动状态<br/>- 运行 `Get-InformationBarrierPoliciesApplicationStatus` cmdlet 以确认已应用策略<br/>- 运行 `Start-InformationBarrierPoliciesApplication` cmdlet 以应用所有活动信息屏障策略 |
 
@@ -119,11 +119,11 @@ ms.locfileid: "49980035"
     |**语法**|**示例**|
     |:---------|:----------|
     | `Get-InformationBarrierRecipientStatus -Identity <value> -Identity2 <value>` <p> 可以使用任何能够唯一标识每个用户的值，例如名称、别名、可分辨名称、规范域名、电子邮件地址或 GUID。 | `Get-InformationBarrierRecipientStatus -Identity meganb -Identity2 alexw` <p> 本示例中，我们引用了 Office 365 中的两个用户帐户 *：Meganb* for *Megan* 和 *alexw* for *Alex。*          |
-    | `Get-InformationBarrierRecipientStatus -Identity <value>` <p> 可以使用任何能够唯一标识用户的值，例如名称、别名、可分辨名称、规范域名、电子邮件地址或 GUID。|`Get-InformationBarrierRecipientStatus -Identity jeanp`<p> 本示例中，我们引用了 Office 365 中的单个帐户：*用户。* |
+    | `Get-InformationBarrierRecipientStatus -Identity <value>` <p> 可以使用任何能够唯一标识用户的值，例如名称、别名、可分辨名称、规范域名、电子邮件地址或 GUID。|`Get-InformationBarrierRecipientStatus -Identity jeanp`<p> 本示例中，我们引用了 Office 365 中的单个 *帐户：用户。* |
 
-2. 查看结果以查看是否分配了信息屏障策略，以及用户 (所属的) 类别 (用户) 类别。
+2. 查看结果以查看是否分配了信息屏障策略，以及用户 (所属的) 属于 (类别) 类别。
 
-3. 若要从受信息屏障影响的区段中删除用户，请更新 [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal)中的用户配置文件信息。
+3. 若要从受信息屏障影响的区段中删除用户，请更新 [Azure Active Directory](/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal)中的用户配置文件信息。
 
 4. 等待大约 30 分钟，FwdSync 发生。 或者，运行 `Start-InformationBarrierPoliciesApplication` cmdlet 以应用所有活动信息屏障策略。
 
@@ -133,7 +133,7 @@ ms.locfileid: "49980035"
 
 ### <a name="what-to-do"></a>需执行的操作
 
-请记住，在运行策略应用程序 cmdlet 时，会针对组织 (用户) 用户应用或删除信息屏障策略。 如果有很多用户，需要一段时间处理。  (一般来说，大约需要一小时处理 5，000 个用户帐户。) 
+请记住，在运行策略应用程序 cmdlet 时，会针对组织 (用户) 用户应用或删除信息屏障策略。 如果有很多用户，需要一段时间处理。  (一般来说，处理 5，000 个用户帐户大约需要一个小时) 
 
 1. 使用 **Get-InformationBarrierPoliciesApplicationStatus** cmdlet 验证最新策略应用程序的状态。
 
@@ -148,24 +148,24 @@ ms.locfileid: "49980035"
     |"状态"|**后续步骤**|
     |:---------|:------------|
     | **未启动** | 如果自 **Start-InformationBarrierPoliciesApplication** cmdlet 运行以来已超过 45 分钟，请查看 审核日志 以查看策略定义中是否有错误，或应用程序未启动的其他原因。 |
-    | **失败** | 如果应用程序失败，请查看审核日志。 此外，查看分段和策略。 是否向多个用户分配了多个用户段？ 是否向任何分段分配了多个策略？ 如有必要， [编辑分段](information-barriers-edit-segments-policies.md#edit-a-segment) 和/ [或编辑策略](information-barriers-edit-segments-policies.md#edit-a-policy)，然后再次运行 **Start-InformationBarrierPoliciesApplication** cmdlet。 |
+    | **失败** | 如果应用程序失败，请查看审核日志。 此外，查看你的分段和策略。 是否向多个用户分配了多个用户段？ 是否向任何分段分配了多个策略？ 如有必要， [编辑分段](information-barriers-edit-segments-policies.md#edit-a-segment) 和/ [或编辑策略](information-barriers-edit-segments-policies.md#edit-a-policy)，然后再次运行 **Start-InformationBarrierPoliciesApplication** cmdlet。 |
     | **正在进行** | 如果应用程序仍在处理中，请留出更多时间来完成它。 如果已经过几天，请收集审核日志，然后联系支持人员。 |
 
 ## <a name="issue-information-barrier-policies-are-not-being-applied-at-all"></a>问题：完全未应用信息屏障策略
 
-在这种情况下，你已定义分段、定义信息屏障策略，并且尝试应用这些策略。 但是，运行 `Get-InformationBarrierPoliciesApplicationStatus` cmdlet 时，可以看到策略应用程序已失败。
+在这种情况下，已定义分段、定义信息屏障策略，并尝试应用这些策略。 但是，运行 `Get-InformationBarrierPoliciesApplicationStatus` cmdlet 时，可以看到策略应用程序已失败。
 
 ### <a name="what-to-do"></a>需执行的操作
 
-确保您的组织没有 [Exchange 通讯簿](https://docs.microsoft.com/exchange/address-books/address-book-policies/address-book-policies) 策略。 此类策略将阻止应用信息屏障策略。
+确保您的组织没有 [Exchange 通讯簿](/exchange/address-books/address-book-policies/address-book-policies) 策略。 此类策略将阻止应用信息屏障策略。
 
-1. 连接到 [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)。
+1. 连接到 [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)。
 
-2. 运行 [Get-AddressBookPolicy](https://docs.microsoft.com/powershell/module/exchange/get-addressbookpolicy) cmdlet 并查看结果。
+2. 运行 [Get-AddressBookPolicy](/powershell/module/exchange/get-addressbookpolicy) cmdlet 并查看结果。
 
     |**结果**|**后续步骤**|
     |:----------|:------------|
-    | 列出了 Exchange 通讯簿策略 | [删除通讯簿策略](https://docs.microsoft.com/exchange/address-books/address-book-policies/remove-an-address-book-policy) |
+    | 列出 Exchange 通讯簿策略 | [删除通讯簿策略](/exchange/address-books/address-book-policies/remove-an-address-book-policy) |
     | 不存在通讯簿策略 |查看审核日志，了解策略应用程序失败的原因 |
 
 3. [查看用户帐户、分段、策略或策略应用程序的状态](information-barriers-policies.md#view-status-of-user-accounts-segments-policies-or-policy-application)。
@@ -203,7 +203,7 @@ $DetailedLogs = Search-UnifiedAuditLog -EndDate <yyyy-mm-ddThh:mm:ss>  -StartDat
 
 > "UserId"：User1
 >
->"ErrorDetails"："状态：IBMPolicyConflict。 错误：IBM 段"segment id1"和 IBM segment"segment id2"存在冲突，无法分配给收件人。
+>"ErrorDetails"："Status： IBMPolicyConflict. 错误：IBM 段"segment id1"和 IBM segment"segment id2"存在冲突，无法分配给收件人。
 
 3. 通常，你会发现用户已包含在多个段中。 可以通过更新中的值 `-UserGroupFilter` 来解决此问题 `OrganizationSegments` 。
 

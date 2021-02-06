@@ -15,12 +15,12 @@ localization_priority: None
 f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 284036fecf53252bb29878482dbf6dec42eeeaeb
-ms.sourcegitcommit: 8d28bce1a3445878b066864e766cf52cb83becd1
+ms.openlocfilehash: 09e680d2bcf8f1e0fd5237adbf640349741c26fd
+ms.sourcegitcommit: eac5d9f759f290d3c51cafaf335a1a1c43ded927
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "50071257"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50126581"
 ---
 # <a name="define-information-barrier-policies"></a>定义信息屏障策略
 
@@ -59,20 +59,20 @@ ms.locfileid: "50071257"
 
 - 目录数据 - 确保组织的结构反映在目录数据中。 若要执行此操作，请确保用户帐户属性（如组成员身份、部门名称等）在 Azure Active Directory (或 Exchange Online) 。 若要了解详细信息，请参阅以下资源：
   - [信息屏障策略的属性](information-barriers-attributes.md)
-  - [使用 Azure Active Directory 添加或更新用户的配置文件信息](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal)
-  - [使用 Office 365 PowerShell 配置用户帐户的属性](https://docs.microsoft.com/microsoft-365/enterprise/configure-user-account-properties-with-microsoft-365-powershell)
+  - [使用 Azure Active Directory 添加或更新用户的配置文件信息](/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal)
+  - [使用 Office 365 PowerShell 配置用户帐户的属性](/microsoft-365/enterprise/configure-user-account-properties-with-microsoft-365-powershell)
 
-- 作用域目录搜索 - 在定义组织的第一个信息屏障策略之前，必须在 Microsoft Teams 中启用作用域 [目录搜索](https://docs.microsoft.com/MicrosoftTeams/teams-scoped-directory-search)。 在启用作用域目录搜索后至少等待 24 小时，然后再设置或定义信息屏障策略。
+- 作用域目录搜索 - 在定义组织的第一个信息屏障策略之前，必须在 Microsoft Teams 中启用作用域 [目录搜索](/MicrosoftTeams/teams-scoped-directory-search)。 在启用作用域目录搜索后至少等待 24 小时，然后再设置或定义信息屏障策略。
 
 - EXO 许可证 - 仅在目标用户分配了 EXO 许可证时，才使用 IBM 策略。
 
 - 审核日志记录 - 为了查找策略应用程序的状态，必须启用审核日志记录。 建议在开始定义分段或策略之前启用审核。 若要了解更多信息，请参阅打开 [审核日志或关闭搜索](turn-audit-log-search-on-or-off.md)。
 
-- 无通讯簿策略 - 在定义和应用信息屏障策略之前，请确保没有 Exchange 通讯簿策略。 信息屏障基于通讯簿策略，但两种类型的策略不兼容。 如果有此类策略，请确保首先 [删除通讯簿](https://docs.microsoft.com/exchange/address-books/address-book-policies/remove-an-address-book-policy) 策略。 启用信息屏障策略并启用分层通讯簿后，所有未包含在信息屏障段中的用户 ** 都将在 Exchange Online 中查看分层通讯簿。 [](https://docs.microsoft.com/exchange/address-books/hierarchical-address-books/hierarchical-address-books)
+- 无通讯簿策略 - 在定义和应用信息屏障策略之前，请确保没有 Exchange 通讯簿策略。 信息屏障基于通讯簿策略，但两种类型的策略不兼容。 如果有此类策略，请确保首先 [删除通讯簿](/exchange/address-books/address-book-policies/remove-an-address-book-policy) 策略。 启用信息屏障策略并启用分层通讯簿后，未包含在信息屏障段中的所有用户都将在 Exchange Online 中查看分层通讯簿[](/exchange/address-books/hierarchical-address-books/hierarchical-address-books)。
 
 - PowerShell - 目前，信息屏障策略在 Office 365 安全与合规中心& PowerShell cmdlet 进行定义和管理。 尽管本文中提供了几个示例，但您需要熟悉 PowerShell cmdlet 和参数。 你还需要 Azure PowerShell 模块。
-    - [连接到安全与合规中心 PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell)
-    - [安装 Azure PowerShell 模块](https://docs.microsoft.com/powershell/azure/install-az-ps?view=azps-2.3.2)
+    - [连接到安全与合规中心 PowerShell](/powershell/exchange/connect-to-scc-powershell)
+    - [安装 Azure PowerShell 模块](/powershell/azure/install-az-ps?view=azps-2.3.2)
 
 - Microsoft Teams 中信息屏障的管理员同意 - 当策略到位时，信息屏障可能会将用户从不应参与的聊天会话中删除。 此配置有助于确保组织符合策略和法规。 使用以下过程可使信息屏障策略在 Microsoft Teams 中正常工作。
 
@@ -88,7 +88,7 @@ ms.locfileid: "50071257"
 
    2. 当系统提示时，使用 Office 365 的工作或学校帐户登录。
 
-   3. 在 _ *请求的权限** 对话框中，查看信息，然后选择"接受 **"。**
+   3. 在 **"请求的权限"对话框中**，查看信息，然后选择"接受 **"。**
 
 满足所有先决条件后，继续下一节。
 
@@ -118,7 +118,7 @@ ms.locfileid: "50071257"
 确定要用于定义分段的组织目录数据中的哪些属性。 可以使用 *Department* *、MemberOf* 或任何受支持的属性。 请确保你在为用户选择的属性中具有值。 [有关信息障碍，请参阅受支持的属性列表](information-barriers-attributes.md)。
 
 > [!IMPORTANT]
-> **在继续下一节** 之前，请确保目录数据具有可用于定义分段的属性值。 如果目录数据没有想要使用的属性的值，则必须更新用户帐户以包含该信息，然后才能继续信息屏障。 若要获取有关此内容的帮助，请参阅以下资源：<br/>- [使用 Office 365 PowerShell 配置用户帐户属性](https://docs.microsoft.com/microsoft-365/enterprise/configure-user-account-properties-with-microsoft-365-powershell)<br/>- [使用 Azure Active Directory 添加或更新用户的配置文件信息](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal)
+> **在继续下一节** 之前，请确保目录数据具有可用于定义分段的属性值。 如果目录数据没有想要使用的属性的值，则必须更新用户帐户以包含该信息，然后才能继续信息屏障。 若要获取有关此内容的帮助，请参阅以下资源：<br/>- [使用 Office 365 PowerShell 配置用户帐户属性](/microsoft-365/enterprise/configure-user-account-properties-with-microsoft-365-powershell)<br/>- [使用 Azure Active Directory 添加或更新用户的配置文件信息](/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal)
 
 ### <a name="define-segments-using-powershell"></a>使用 PowerShell 定义线段
 

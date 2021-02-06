@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 22b5a6353720f8fbee218c138a3c9d0dee444db9
-ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
+ms.openlocfilehash: ff2ef15f93cef5255e8c8113facf51b833eff77d
+ms.sourcegitcommit: 719b89baca1bae14455acf2e517ec18fc473636c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 02/05/2021
-ms.locfileid: "50114915"
+ms.locfileid: "50122356"
 ---
 # <a name="fix-issues-found-by-the-readiness-assessment-tool"></a>修复准备情况评估工具发现的问题
 
@@ -26,7 +26,7 @@ ms.locfileid: "50114915"
 |Ready     | 完成注册前无需任何操作。        |
 |公告    | 按照工具或本文中的步骤操作，实现注册和用户的最佳体验。 *你可以完成* 注册，但在部署第一台设备之前必须解决这些问题。        |
 |未就绪 | *如果不解决这些问题，注册将失败。* 按照工具或本文中的步骤进行解析。        |
-|错误 | Azure Active Directory (AD) 角色没有足够的权限来运行此检查。 |
+|Error | Azure Active Directory (AD) 角色没有足够的权限来运行此检查。 |
 
 > [!NOTE]
 > 此工具报告的结果仅在运行设置的特定时间点反映设置的状态。 如果稍后对 Microsoft Intune、Azure Active Directory 或 Microsoft 365 中的策略进行了任何更改，则"就绪"的项目可能会变为"未准备就绪"。 为了避免 Microsoft 托管桌面操作出现问题，请在更改任何策略之前检查本文中描述的特定设置。
@@ -280,13 +280,13 @@ Azure AD 组织中 Windows 10 设备必须能够在 Intune 中自动注册。
 你没有使用 Microsoft 托管桌面所需的全部许可证。 有关详细信息，请参阅[Microsoft 托管桌面技术和](../intro/technologies.md)[有关许可证的更多内容](prerequisites.md#more-about-licenses)。
 
 
-### <a name="security-account-names"></a>安全帐户名称
+### <a name="microsoft-managed-desktop-service-accounts"></a>Microsoft 托管桌面服务帐户
 
-某些安全帐户名称可能会与 Microsoft 托管桌面创建的帐户名冲突。
+某些帐户名可能会与 Microsoft 托管桌面创建用于管理 Microsoft 托管桌面服务的帐户名称冲突。
 
 **未就绪**
 
-你至少具有一个与 Microsoft 托管桌面创建的帐户名称相冲突的帐户名称。 与 Microsoft 帐户代表合作，排除这些帐户名。
+您至少有一个与 Microsoft 托管桌面创建的帐户名称相冲突的帐户名称。 与 Microsoft 帐户代表合作，排除这些帐户名。 我们不会公开列出帐户名称，以最大限度地降低安全风险。 
 
 
 ### <a name="security-administrator-roles"></a>安全管理员角色

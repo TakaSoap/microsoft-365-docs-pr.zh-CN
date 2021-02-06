@@ -16,12 +16,12 @@ localization_priority: None
 f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 003347d46bed2529831a92681e73630d58a1f653
-ms.sourcegitcommit: 8d28bce1a3445878b066864e766cf52cb83becd1
+ms.openlocfilehash: 1ef09fbf7a517950ae182472e4b4d5ef896d65e5
+ms.sourcegitcommit: eac5d9f759f290d3c51cafaf335a1a1c43ded927
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "50071267"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50126539"
 ---
 # <a name="learn-about-information-barriers-in-microsoft-365"></a>了解 Microsoft 365 中的信息障碍
 
@@ -47,7 +47,7 @@ Microsoft Teams、SharePoint Online 和 OneDrive for Business 支持信息屏障
 - [OneDrive 中的信息屏障](/onedrive/information-barriers)
 
 > [!IMPORTANT]
-> 目前，信息屏障不适用于电子邮件通信。 此外，信息屏障独立于合规性 [边界](set-up-compliance-boundaries.md)。<p> 在定义和应用信息屏障策略之前，请确保您的组织没有 [生效的 Exchange](https://docs.microsoft.com/exchange/address-books/address-book-policies/address-book-policies) 通讯簿策略。  (信息屏障基于通讯簿策略。) 
+> 目前，信息屏障不适用于电子邮件通信。 此外，信息屏障独立于合规性 [边界](set-up-compliance-boundaries.md)。<p> 在定义和应用信息屏障策略之前，请确保您的组织没有 [生效的 Exchange](/exchange/address-books/address-book-policies/address-book-policies) 通讯簿策略。  (信息屏障基于通讯簿策略。) 
 
 ## <a name="what-happens-with-information-barriers"></a>信息屏障会发生什么情况
 
@@ -88,7 +88,7 @@ Microsoft Teams、SharePoint Online 和 OneDrive for Business 支持信息屏障
 - Microsoft 365 合规性 E5/A5
 - Microsoft 365 内部风险管理
 
-有关详细信息，请参阅 [Microsoft 365 安全与合规&指南](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection)。
+有关详细信息，请参阅 [Microsoft 365 安全与合规&指南](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection)。
 
 若要 [定义或编辑信息屏障策略](information-barriers-policies.md)，必须分配有以下角色之一：
 

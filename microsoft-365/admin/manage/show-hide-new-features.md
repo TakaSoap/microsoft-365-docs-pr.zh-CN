@@ -1,14 +1,31 @@
 ---
-title： "Manage which Office features appear in What's New" f1.keywords：
-- NOCSH ms.author：danbrown author： DHB-MSFT manager： audiencetv audience： Admin ms.topic： article ms.service： o365-administration localization_priority： Normal ms.collection：
+title: 管理新增功能中显示哪些 Office 功能
+f1.keywords:
+- NOCSH
+ms.author: danbrown
+author: DHB-MSFT
+manager: scotv
+audience: Admin
+ms.topic: article
+ms.service: o365-administration
+localization_priority: Normal
+ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC ms.custom：AdminSurgePortfolio search.appverid：
+- Adm_TOC
+ms.custom: AdminSurgePortfolio
+search.appverid:
 - BCS160
 - MET150
-- MOE150 description： "Decide which Office features to show or hide when a user chooses Help > What's New in their Office app on Windows by using the "What's new in Office" feature in the Microsoft 365 admin center.
+- MOE150
+description: 通过使用 Microsoft 365 管理中心中的"Office 中的新增功能"功能，确定当用户在 Windows 上选择帮助 > Office 应用中的新增功能时要显示或隐藏的 Office 功能。
+ms.openlocfilehash: d0b5bc3e643b306d9a38a707fed50ab546249c2b
+ms.sourcegitcommit: 719b89baca1bae14455acf2e517ec18fc473636c
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "50122344"
 ---
-
 # <a name="manage-which-office-features-appear-in-whats-new"></a>管理新增功能中显示哪些 Office 功能
 
 当一个重要的 Office 功能发布时，当用户在 Windows 上的 Office应用中选择"帮助新增功能"时，用户将会收到有关  >  该功能的消息。

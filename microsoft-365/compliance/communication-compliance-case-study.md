@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 5925ad7641370b26d0a272968a13028b74b81ef4
-ms.sourcegitcommit: fa5659cb66d84dcfeebc03b47bd9d38017d8934d
+ms.openlocfilehash: 1b9bef180fed9c3afa3b3d8d2319a1fa0260ed14
+ms.sourcegitcommit: eac5d9f759f290d3c51cafaf335a1a1c43ded927
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "50109993"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50126591"
 ---
 # <a name="case-study---contoso-quickly-configures-an-offensive-language-policy-for-microsoft-teams-exchange-and-yammer-communications"></a>案例研究 - Contoso 为 Microsoft Teams、Exchange 和 Yammer 通信快速配置冒犯性语言策略
 
@@ -158,7 +158,7 @@ Contoso IT 管理员查看并完成[](turn-audit-log-search-on-or-off.md)启用�
 
 通信合规性要求组织的 Yammer 租户在本机模式下监视私人消息和公共社区对话中的冒犯性语言。
 
-Contoso IT 管理员确保他们查看 [Microsoft 365](https://docs.microsoft.com/yammer/configure-your-yammer-network/overview-native-mode) 中的 Yammer 本机模式概述文章中的信息，并按照 Microsoft [365](/yammer/configure-your-yammer-network/native-mode) 的本机模式配置 Yammer 网络文章中有关运行迁移工具的步骤操作。
+Contoso IT 管理员确保他们查看 [Microsoft 365](/yammer/configure-your-yammer-network/overview-native-mode) 中的 Yammer 本机模式概述文章中的信息，并按照 Microsoft [365](/yammer/configure-your-yammer-network/native-mode) 的本机模式配置 Yammer 网络文章中有关运行迁移工具的步骤操作。
 
 ### <a name="setting-up-a-group-for-in-scope-users"></a>为作用域内用户设置组
 

@@ -15,25 +15,24 @@ ms.collection:
 - Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
-- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: 了解如何在 Microsoft 365 管理中心中填充来宾用户列表。
-ms.openlocfilehash: 338b86d7f32eb2a2ecbacc3d7d1e00124c3804e4
-ms.sourcegitcommit: 98b889e674ad1d5fa37d4b6c5fc3eda60a1d67f3
+ms.openlocfilehash: 7610e22be5cf229c9c0b71dd1282f8138452fe67
+ms.sourcegitcommit: eac5d9f759f290d3c51cafaf335a1a1c43ded927
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "49751432"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50126089"
 ---
 # <a name="guest-users-in-microsoft-365-admin-center"></a>Microsoft 365 管理中心中的来宾用户
 
 添加到 Microsoft Teams、SharePoint 或 Azure Active Directory 的任何来宾也会添加到Microsoft 管理中心的来宾用户列表中。 来宾可以在受邀加入的 Teams 中参加会议、查看文档和聊天。
 一旦用户显示在"来宾用户"列表中，你可以删除其访问权。
 
-若要查看来宾用户，在 Microsoft 365 管理中心的左侧导航中，展开"用户"，然后选择"**来宾用户"。**
+若要查看来宾用户，在 Microsoft 365 管理中心中的左侧导航中，展开"用户"，然后选择"**来宾用户"。**
 
 ## <a name="add-guests-to-teams"></a>将来宾添加到 Teams
 
@@ -59,7 +58,7 @@ ms.locfileid: "49751432"
 
 ## <a name="remove-a-guest"></a>删除来宾
 
-1. 在 Microsoft 365 管理中心中，展开 **"用户"，** 然后选择"**来宾用户"。**
+1. 在 Microsoft 365 管理中心中，展开 **"用户**"，然后选择"**来宾用户"。**
 1. 在 **"来宾用户"** 页上，选择要删除的用户，然后选择"**删除用户"。** 
 
 若要在 Azure AD 门户中删除用户，请参阅 [删除来宾用户和资源](https://docs.microsoft.com/azure/active-directory/b2b/b2b-quickstart-add-guest-users-portal#clean-up-resources)。

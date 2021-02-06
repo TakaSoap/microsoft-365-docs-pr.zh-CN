@@ -18,19 +18,18 @@ ms.collection:
 ms.custom:
 - TRN_M365B
 - OKR_SMB_Videos
-- okr_smb
 - AdminSurgePortfolio
 search.appverid:
 - MET150
 - MOE150
 - BEA160
 description: 了解如何设置 Microsoft 365 商业基础版订阅。
-ms.openlocfilehash: b40b6a633c9c6c25daa4607c9e05178a1f418c51
-ms.sourcegitcommit: 3a0accd616ca94d6ba7f50e502552b45e9661a95
+ms.openlocfilehash: 43ae19b24058429c9276bd44dd4c3960c792ca0d
+ms.sourcegitcommit: eac5d9f759f290d3c51cafaf335a1a1c43ded927
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "48350211"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50126181"
 ---
 # <a name="set-up-microsoft-365-business-basic"></a>设置 Microsoft 365 商业基础版
 
@@ -106,4 +105,4 @@ ms.locfileid: "48350211"
 
     注册过程完成后，你将转到管理中心，可在其中添加用户并分配许可证。 完成初始设置后，可使用管理中心中的“**设置**”页面，继续设置和配置订阅附带的服务。
 
-    有关设置向导和管理中心“**设置**”页面的详细信息，请参阅[设置向导和设置页面之间的区别](o365-setup-wizard-and-setup-page.md)。
+    有关设置向导和管理中心“**设置**”页面的详细信息，请参阅 [设置向导和设置页面之间的区别](o365-setup-wizard-and-setup-page.md)。

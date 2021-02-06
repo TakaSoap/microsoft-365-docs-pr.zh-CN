@@ -16,19 +16,18 @@ ms.collection:
 - Adm_O365_Setup
 ms.custom:
 - AdminSurgePortfolio
-- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: f40a9185-b6d5-4a80-bb31-aa3bb0cab48a
 description: 了解如何在 GoDaddy for Microsoft 中验证域并设置电子邮件、Skype for Business Online 和其他服务的 DNS 记录。
-ms.openlocfilehash: fdd8688f848e676411e736a5be10a2d01dcce50b
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+ms.openlocfilehash: 2b53985dc17f3d124ec2b37dbf0047bce229385c
+ms.sourcegitcommit: eac5d9f759f290d3c51cafaf335a1a1c43ded927
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49658472"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50126445"
 ---
 # <a name="create-dns-records-at-godaddy-for-microsoft"></a>在 GoDaddy 为 Microsoft 创建 DNS 记录
 
@@ -55,7 +54,7 @@ ms.locfileid: "49658472"
 
     ![GoDaddy-BP-Configure-1-1](../../media/d6833ec7-9904-43fd-a877-7c663e5f5c25.png)
 
-2. 在 **"域**"下，选择要编辑的域下的 DNS。
+2. 在 **"** 域"下，选择要编辑的域下的 DNS。
 
     ![GoDaddy-BP-Configure-1-2](../../media/dns/56528038-94b6ac00-651c-11e9-8874-12db60cc7ea6.png)
 
@@ -106,7 +105,7 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
 
     ![GoDaddy-BP-Configure-1-1](../../media/d6833ec7-9904-43fd-a877-7c663e5f5c25.png)
 
-2. 在 **"域**"下，选择要编辑的域下的 DNS。
+2. 在 **"** 域"下，选择要编辑的域下的 DNS。
 
     ![GoDaddy-BP-Configure-1-2](../../media/dns/56528038-94b6ac00-651c-11e9-8874-12db60cc7ea6.png)
 
@@ -114,7 +113,7 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
 
     ![GoDaddy-BP-Configure-1-4](../../media/dns/56527673-ffb3b300-651b-11e9-91c2-83dc9fe5ca30.png)
 
-4. Choose **MX (Mail Exchanger)** from the drop-down list.
+4. 从 **(选择")** 邮件交换器"选项。
 
     ![GoDaddy-BP-Configure-2-0](../../media/dns/56528642-85842e00-651d-11e9-8dd8-217f468f9a18.png)
 
@@ -137,7 +136,7 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
 
     ![GoDaddy-BP-Configure-1-1](../../media/d6833ec7-9904-43fd-a877-7c663e5f5c25.png)
 
-2. 在 **"域**"下，选择要编辑的域下的 DNS。
+2. 在 **"** 域"下，选择要编辑的域下的 DNS。
 
     ![GoDaddy-BP-Configure-1-2](../../media/dns/56528038-94b6ac00-651c-11e9-8874-12db60cc7ea6.png)
 
@@ -146,7 +145,7 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
     ![GoDaddy-BP-Configure-1-4](../../media/dns/56527673-ffb3b300-651b-11e9-91c2-83dc9fe5ca30.png)
 
 
-4. 从 **(中选择**) 别名"。
+4. 从 **下拉列表 (")** 别名"。
 
     ![GoDaddy-BP-Configure-3-0](../../media/dns/56528891-e7449800-651d-11e9-8eac-112285b8e38c.png)
 
@@ -180,7 +179,7 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
 
     ![GoDaddy-BP-Configure-1-1](../../media/d6833ec7-9904-43fd-a877-7c663e5f5c25.png)
 
-2. 在 **"域**"下，选择要编辑的域下的 DNS。
+2. 在 **"** 域"下，选择要编辑的域下的 DNS。
 
     ![GoDaddy-BP-Configure-1-2](../../media/dns/56528038-94b6ac00-651c-11e9-8874-12db60cc7ea6.png)
 
@@ -214,7 +213,7 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
 
     ![GoDaddy-BP-Configure-1-1](../../media/d6833ec7-9904-43fd-a877-7c663e5f5c25.png)
 
-2. 在 **"域**"下，选择要编辑的域下的 DNS。
+2. 在 **"** 域"下，选择要编辑的域下的 DNS。
 
     ![GoDaddy-BP-Configure-1-2](../../media/dns/56528038-94b6ac00-651c-11e9-8874-12db60cc7ea6.png)
 
@@ -222,7 +221,7 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
 
     ![GoDaddy-BP-Configure-1-4](../../media/dns/56527673-ffb3b300-651b-11e9-91c2-83dc9fe5ca30.png)
 
-4. 从 **(列表中选择) SRV**) 服务选项。
+4. 从 **(列表中选择) SRV** 服务服务选项。
 
     ![GoDaddy-BP-Configure-5-0](../../media/dns/56529669-1dcee280-651f-11e9-8ba2-ecf4fc2f6dca.png)
 
