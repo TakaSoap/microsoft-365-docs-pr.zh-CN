@@ -1,22 +1,22 @@
-- name: 主题体验入门
+- name: Microsoft Viva 入门
   items:
-    - name: 主题体验简介
+    - name: Microsoft Viva 简介
       href: index.md
-    - name: 主题体验概述
+    - name: Microsoft Viva 概述
       href: topic-experiences-overview.md
-    - name: 主题体验发现与管理
+    - name: Microsoft Viva 发现与管理
       href: topic-experiences-discovery-curation.md
-    - name: 主题体验角色
+    - name: Microsoft Viva 角色
       href: topic-experiences-roles.md
     - name: 准备好你的环境
       href: topic-experiences-get-ready.md
 - name: 设置和管理
   items:
-    - name: 主题安全性
+    - name: 主题安全
       href: topic-experiences-security-privacy.md
-    - name: 计划主题体验
+    - name: 主题计划
       href: plan-topic-experiences.md
-    - name: 设置主题体验
+    - name: 设置主题
       href: set-up-topic-experiences.md
     - name: 管理主题发现
       href: topic-experiences-discovery.md
@@ -38,6 +38,8 @@
       href: edit-a-topic.md
     - name: 安全修整
       href: topic-experiences-security-trimming.md
+    - name: 主题搜索
+      href: search.md
 - name: 采用
   items:
     - name: 驱动性采用入门

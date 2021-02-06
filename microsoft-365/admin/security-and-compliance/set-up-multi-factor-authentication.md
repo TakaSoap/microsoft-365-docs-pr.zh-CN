@@ -2,8 +2,8 @@
 title: 为用户设置多重身份验证
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: sirkkuw
+ms.author: kwekua
+author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -23,12 +23,12 @@ search.appverid:
 ms.assetid: 8f0454b2-f51a-4d9c-bcde-2c48e41621c6
 description: 了解如何为你的组织设置多重身份验证。
 monikerRange: o365-worldwide
-ms.openlocfilehash: db858cbd4242a096261942fd12b911ecff43f71f
-ms.sourcegitcommit: c1dd5be42fe0c5dcc7c05817c941edd9076febf8
+ms.openlocfilehash: 5ea367e64108e80ee7429ec700cf2ac0551aeab2
+ms.sourcegitcommit: b88ffaf3409e02a9847f030f8468f96d36efa398
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "49558206"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "50105147"
 ---
 # <a name="set-up-multi-factor-authentication"></a>设置多重身份验证
 
@@ -100,3 +100,9 @@ ms.locfileid: "49558206"
 - [何为：多重身份验证](https://support.microsoft.com/help/4577374/what-is-multifactor-authentication)
 - [注册后如何登录](https://support.microsoft.com/office/2b856342-170a-438e-9a4f-3c092394d3cb)
 - [如何更改其他验证方法](https://support.microsoft.com/office/956ec8d0-7081-4518-a701-f8414cc20831)
+
+## <a name="related-topics"></a>相关主题
+
+[i视频：开启多重身份验证](https://docs.microsoft.com/microsoft-365/business-video/turn-on-mfa)
+
+[i视频：为手机开启多重身份验证](https://docs.microsoft.com/microsoft-365/business-video/set-up-mfa)
