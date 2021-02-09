@@ -1,14 +1,13 @@
 ---
-title: 在自动调查和响应中查看并批准待解决的补救措施
-keywords: 空气、autoIR、ATP、自动化、调查、响应、修正、威胁、高级、威胁、保护
+title: 在 Microsoft Defender for Office 365 中查看和管理修正操作
+keywords: AIR， autoIR， ATP， 自动化， 调查， 响应， 修正， 威胁， 高级， 威胁， 保护
 f1.keywords:
 - NOCSH
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
 audience: ITPro
-ms.topic: article
-ms.service: O365-seccomp
+ms.topic: how-to
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -16,45 +15,61 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
-description: 了解 Microsoft Defender for Office 365 计划2中的自动调查和响应功能中的补救措施。
-ms.openlocfilehash: 9a1fdb4bec5168dfcd816dbce7da01f930e38ae1
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+description: 了解 Microsoft Defender for Office 365 计划 2 中的自动调查和响应功能中的修正操作。
+ms.technology: mdo
+ms.prod: m365-security
+ms.date: 01/29/2021
+ms.openlocfilehash: bcff8f12133ea16e3d91e293943be1593eaf9659
+ms.sourcegitcommit: d739f48b991793c08522a3d5323beba27f0111b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49615188"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "50142689"
 ---
-# <a name="view-pending-or-completed-remediation-actions-following-an-automated-investigation-in-office-365"></a>查看 Office 365 中的自动调查后的挂起或已完成的修正操作
+# <a name="review-and-manage-remediation-actions-in-office-365"></a>查看和管理 Office 365 中的修正操作
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+由于自动调查电子邮件&协作内容会导致裁定（如恶意或可疑）时，会创建某些修正操作。 在 Microsoft Defender for Office 365 中，修正操作可以包括：
+- 在单击 (时阻止 URL) 
+- 软删除电子邮件或群集
+- 隔离电子邮件或电子邮件附件
+- 关闭外部邮件转发
 
-
-
-![航空调查操作页](../../media/air-investigationactionspage.png)
+除非安全运营团队批准这些修正操作，否则不会执行这些修正操作。 我们建议尽快审阅和批准任何挂起的操作，以便自动调查及时完成。 在某些情况下，您可以撤消修正操作。
 
 ## <a name="approve-or-reject-pending-actions"></a>批准 (或拒绝) 挂起的操作
 
-在查看 [调查的详细信息](air-view-investigation-results.md)时，您可以批准或拒绝任何待定的修正操作。 我们建议您尽快执行此操作，以便您的自动调查能够完成。
+1. 转到 Microsoft 365 安全中心 [https://security.microsoft.com](https://security.microsoft.com)) 登录。
+2. 在导航窗格中，选择 **操作中心**。
+3. 在 **"挂起** "选项卡上，查看等待审批的操作列表。
+4. 选择列表项。 随即打开其飞出窗格。 
+5. 查看飞出窗格中的信息，然后执行以下步骤之一：
+   - 选择 **"打开** 调查"页以查看有关调查的更多详细信息。
+   - 选择 **"** 批准"以启动挂起的操作。
+   - 选择 **"** 拒绝"可阻止执行挂起的操作。
 
-> [!IMPORTANT]
-> 批准或拒绝修正操作需要适当的权限。 查看 [使用空中功能所需的权限](office-365-air.md#required-permissions-to-use-air-capabilities)。
+## <a name="undo-one-remediation-action"></a>撤消一个修正操作
 
-1. 转到 <https://protection.office.com> 并登录。 这将转到安全 & 合规性中心。
+1. 转到操作中心 [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) () 登录。
+2. 在 **"历史记录** "选项卡上，选择要撤消的操作。
+3. 在屏幕右侧窗格中，选择"撤消 **"。**
 
-2. 转到 **威胁管理** \> **调查**。
+## <a name="undo-multiple-remediation-actions"></a>撤消多个修正操作
 
-3. 在调查列表中，选择 " **ID** " 列中的项目。
+1. 转到操作中心 [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) () 登录。
+2. 在 **"历史记录** "选项卡上，选择要撤消的操作。 确保选择操作类型相同的项目。 将打开一个飞出窗格。
+3. 在飞出窗格中，选择"撤消"。
 
-4. 选择 " **操作** " 选项卡。
+## <a name="to-remove-a-file-from-quarantine-across-multiple-devices"></a>跨多个设备从隔离区删除文件
 
-5. 选择列表项。  (这将激活 "批准" 和 "拒绝" 按钮。 ) 
-
-6. 查看您选择的项目 () 的可用信息，然后批准或拒绝该操作 (s) 。
-   - **批准** 可开始进行修正。
-   - **拒绝** 无需进一步操作
+1. 转到操作中心 [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) () 登录。
+2. 在" **历史记录** "选项卡上，选择具有操作类型 **隔离文件的文件**。
+3. 在屏幕右侧窗格中，选择"应用到此文件的 **X** 更多实例"，然后选择"**撤消"。**
 
 ## <a name="next-steps"></a>后续步骤
 
-- [Office 365 中的自动调查的详细信息和结果](air-view-investigation-results.md)
-
 - [使用威胁资源管理器](threat-explorer.md)
+- [如何在自动调查和响应功能中报告误报/负面影响](air-report-false-positives-negatives.md)
+
+## <a name="see-also"></a>另请参阅
+
+- [查看 Office 365 中自动调查的详细信息和结果](air-view-investigation-results.md)

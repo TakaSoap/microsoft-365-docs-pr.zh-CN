@@ -13,21 +13,25 @@ ms.assetid: f2738dec-41b0-43c4-b814-84c0a4e45c6d
 description: 管理员可以在安全与合规中心的邮件流仪表板中了解出站和入站&见解。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e46a0ebf0c14e31462d1e86d8a8d8c08486337af
-ms.sourcegitcommit: 537e513a4a232a01e44ecbc76d86a8bcaf142482
+ms.openlocfilehash: fcce6981369217f21ace5fdf2abbf23ca8606569
+ms.sourcegitcommit: e920e68c8d0eac8b152039b52cfc139d478a67b3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "50029818"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50150804"
 ---
 # <a name="outbound-and-inbound-mail-flow-insight-in-the-security--compliance-center"></a>安全与合规中心中的出站和入站&见解
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**适用于**
+- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
+- [Microsoft Defender for Office 365 计划 1 和计划 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 安全 [&](https://protection.office.com)**与** 合规中心内邮件流仪表板 [](mail-flow-insights-v2.md)中的出站和入站邮件流见解将连接器报告中的信息和以前的 **TLS** [](view-mail-flow-reports.md#connector-report)概述报告中的信息合并在一处。
 
-小组件在邮件发送到组织或从组织发送邮件时显示用于连接的 TLS 加密。 当 TLS 由双方提供时，TLS 会加密与其他电子邮件服务建立的连接。 小部件提供上一周的邮件流的快照。
+小组件在邮件发送到组织或从组织发送邮件时显示用于连接的 TLS 加密。 当 TLS 由双方提供时，TLS 会加密与其他电子邮件服务建立的连接。 小组件提供最后一周的邮件流的快照。
 
 ![安全与合规中心的"邮件流"仪表板中的"出站和入站&小组件](../../media/mfi-outbound-and-inbound-mail-flow-report-widget.png)
 
@@ -45,7 +49,7 @@ ms.locfileid: "50029818"
 
 目前，TLS 1.2 是 Microsoft 365 提供的最安全的 TLS 版本。 通常，你需要知道用于合规性审核的 TLS 加密。 你可能与大部分源和目标电子邮件服务器没有直接关系 (而 Microsoft) 也不拥有，因此，你没有很多选项可以改进这些服务器使用的 TLS 加密。
 
-但是，您可以使用 [连接器来确保](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow) 电子邮件服务器和 Microsoft 365 之间发送的邮件的最佳 TLS 保护。 Microsoft 365 和属于合作伙伴的您自己的电子邮件服务器之间的邮件流通常比常规邮件更加重要和敏感，因此你需要为这些邮件应用额外的安全性和安全性。
+但是，您可以使用 [连接器来确保](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow) 对电子邮件服务器和 Microsoft 365 之间发送的邮件的最佳 TLS 保护。 Microsoft 365 和属于合作伙伴的您自己的电子邮件服务器之间的邮件流通常比常规邮件更加重要和敏感，因此你需要为这些邮件应用额外的安全性和安全性。
 
 您可以升级或修复自己的电子邮件服务器，以改进所使用的 TLS 加密，或联系合作伙伴以执行相同的操作。 连接器 **报告** 显示使用 Microsoft 365 连接器的邮件的邮件流卷和 TLS 加密。
 

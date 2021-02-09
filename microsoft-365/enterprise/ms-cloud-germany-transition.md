@@ -19,12 +19,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 摘要：了解如何从德国 Microsoft 云迁移到新的德国数据中心区域内的 Office 365 服务
-ms.openlocfilehash: 28344f1249e4f51bb9802bf19ca7561182610a7c
-ms.sourcegitcommit: 7ecd10b302b3b3dfa4ba3be3a6986dd3c189fbff
+ms.openlocfilehash: d807637e9d5469131d3124d1ef8b6b1f874e81a1
+ms.sourcegitcommit: 005028af7c5a6b2e95f17a0037958131484d9e73
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "49921585"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "50145411"
 ---
 # <a name="migration-from-microsoft-cloud-deutschland-to-office-365-services-in-the-new-german-datacenter-regions"></a>从德国 Microsoft 云迁移到新的德国数据中心区域的 Office 365 服务
 
@@ -33,7 +33,7 @@ ms.locfileid: "49921585"
 
 2018 年 8 月，Microsoft 宣布打算从德国的新云区域交付完整的 Microsoft 云（Azure、Office 365、Dynamics 365 和 Power Platform）以更好地实现客户数字化转型。 2019 年 8 月，我们宣布已启动在德国开放新的云区域的流程。 我们已宣布提供 Azure、Office 365、Dynamics 365 和 Power Platform。
 
-新区域旨在满足德国客户不断变化的需求，这些客户具有更大的灵活性、最新的智能云服务、与 Microsoft 365 服务云服务网络的完整连接以及德国的客户数据驻留。
+新区域旨在满足德国客户不断变化的需求，这些客户具有更大的灵活性、最新的智能云服务、与 Microsoft 365 服务云服务网络的完整连接以及在德国的客户数据驻留。
 
 ## <a name="how-to-migrate-to-the-new-german-datacenter-regions"></a>如何迁移到新的德国数据中心区域
 
@@ -41,7 +41,7 @@ ms.locfileid: "49921585"
 
 对于选择采用 Microsoft 驱动的方法的组织，迁移预计于 2021 年初开始，并将于 2021 年 10 月 29 日完成。 迁移后，核心客户数据和订阅会迁移到新的德国区域。
 
-本文概述了 Microsoft 推动的迁移方法、迁移期间和迁移后用户和管理员的体验的清晰性，以及客户可能基于你利用的工作负荷需要采取的操作。
+本文概述了 Microsoft 推动的迁移方法、迁移期间和迁移后的用户和管理员体验的清晰性，以及客户可能基于你利用的工作负荷需要采取的操作。
 
 下列服务将采用 Microsoft 提出的方法进行迁移：
 
@@ -82,7 +82,7 @@ Office 365 视频将于 2021年 3 月 1 日停用。 如果选择将 Office 365 
 
 完成所有步骤（包括客户 Azure 迁移）后，租户在 Office 365 服务服务中完成，迁移标记为完成。 此时，消息中心的最终更新将提供给您。 租户现在是一个完全全局的 Office 365 组织。
 
-您将收到消息中心帖子的迁移进度通知。 这些帖子将出现在特定的里程碑上，并提供有关步骤进度的指导，以及客户根据流程要求采取行动的重要信息。 消息中心通知在下列里程碑中提供：
+你将收到消息中心帖子的迁移进度通知。 这些帖子将出现在特定的里程碑上，并提供有关步骤进度的指导，以及客户根据流程要求采取行动的重要信息。 消息中心通知在下列里程碑中提供：
 
 - 在 Azure AD (前 5 个工作日开始迁移) 
 - Azure AD 迁移完成
@@ -164,21 +164,21 @@ Microsoft 提供从德国 Microsoft 云到新的德国数据中心区域的 Offi
 11. Information Protection for Office 365 
 12. 高级数据管理
 13. SharePoint Online
-14. SharePoint Online 的客户密码箱
+14. SharePoint Online 客户密码箱
 15. OneDrive for Business
 16. Microsoft Stream
-17. 在迁移 (Skype for Business) 
+17. Skype for Business (将在迁移期间迁移到 Microsoft Teams) 
 18. 云 PBX
 19. PSTN 会议
 20. PSTN 呼叫
 21. Microsoft Teams
 22. 管理员报告/使用率报告
 23. Office 网页版
-24. Planner
+24. 规划器
 25. Sway
 26. Microsoft 365 应用版
 27. Outlook Mobile
-28. 企业移动性 + 安全性 (EMS) E3 (Azure AD Premium P1、Intune 和 Rights Management Service) 
+28. 企业移动性 + 安全性 (E3) E3 (Azure AD Premium P1、Intune 和权限管理服务) 
 29. Yammer 企业版
 30. Microsoft Forms
 31. Power Automate for Office 365
@@ -195,7 +195,7 @@ Microsoft 提供从德国 Microsoft 云到新的德国数据中心区域的 Offi
 
 **Azure**
 
-如果你只是 Azure 客户，你可以立即开始 [将](https://docs.microsoft.com/azure/germany/germany-migration-main) Azure 资源迁移到另一区域。 
+如果你只是 Azure 客户，你现在可以开始 [将](https://docs.microsoft.com/azure/germany/germany-migration-main) Azure 资源迁移到另一区域。 
 
 如果你有带 Office 365、Dynamics 365 或 Power BI 的 Azure，则必须按照迁移过程操作，以确保在开始自动定向 Azure 迁移之前成功迁移 AzureAD。 必须在服务关闭之前完成 Azure 迁移，才能通过 AzureAD 和 Office 365 组织维护 Azure 工作负载。
 
@@ -213,7 +213,7 @@ Microsoft 提供从德国 Microsoft 云到新的德国数据中心区域的 Offi
 
 ### <a name="during-the-subscription-migration-what-skus-and-licenses-will-be-applied-to-my-organization-and-users"></a>在订阅迁移期间，哪些 SUS 和许可证将应用于我的组织和用户？
 
-在从德国 Microsoft 云迁移到 Office 365 服务期间，德国服务特定的 SKU 将替换为相同或类似 SKU 的全局版本。 在大多数情况下，Office 365 服务中的 SKU 是相同的，但是，在德国的 SKU 在 Office 365 服务中不再可用的替换项很少。 如果希望在迁移完成后更新分配给您的组织的 SKU，请与卖家联系，添加或修改所分配的服务。
+在从德国 Microsoft 云迁移到 Office 365 服务期间，德国服务特定的 SKU 将替换为相同或类似 SKU 的全局版本。 在大多数情况下，Office 365 服务中的 SKU 是相同的，但是，在德国的 SKU 在 Office 365 服务中不再可用的替换项很少。 如果您希望在迁移完成后更新分配给您的组织的 SKU，请与卖家联系以添加或修改分配的服务。
 
 | 德国 Microsoft 云 - 产品 SKU (DE)  | Microsoft 云全局 - 产品 SKU (WW)  |
 | --- | --- |
@@ -247,7 +247,7 @@ Microsoft 提供从德国 Microsoft 云到新的德国数据中心区域的 Offi
 | Office 365 E3 \_ DE (ENTERPRISEPACK \_ DE)  | Office 365 E3 (ENTERPRISEPACK)  |
 | Office 365 企业版 E1 \_ DE (STANDARDPACK \_ DE)  | Office 365 企业版 E1 (STANDARDPACK)  |
 | Office 365 企业版 E3 \_ DE (ENTERPRISEPACK \_ DE)  | Office 365 企业版 E3 (ENTERPRISEPACK)  |
-| SHAREPOINTSTORAGE DE (Office 365 额外文件 \_ \_ 存储 DE)  | SHAREPOINTSTORAGE (Office 365 额外文件)  |
+| OFFICE 365 额外文件存储 \_ DE (SHAREPOINTSTORAGE \_ DE)  | SHAREPOINTSTORAGE (Office 365 额外文件)  |
 | Office 365 F1 \_ DE (DESKLESSPACK \_ DE)  | Office 365 F1 (DESKLESSPACK)  |
 | Office 365 ProPlus for Faculty \_ DE (OFFICESUBSCRIPTION \_ FACULTY DE \_)  | Office 365 专业增强版（教职员工 (OFFICEUBSCRIPTION \_ 教职员工)  |
 | Office 365 专业增强版（学生 \_ 版 DE (OFFICEUBSCRIPTION \_ 学生版 DE \_)  | Office 365 专业增强版（学生 (OFFICEUBSCRIPTION \_ 学生)  |
@@ -259,7 +259,7 @@ Microsoft 提供从德国 Microsoft 云到新的德国数据中心区域的 Offi
 | Project Online Essentials \_ DE (PROJECTESSENTIALS \_ DE)  | Project Online Essentials (PROJECTESSENTIALS)  |
 | Project Online Premium \_ DE (PROJECTPREMIUM \_ DE)  | Project Online Premium (PROJECTPREMIUM)  |
 | Project Online Professional \_ DE (PROJECTPROFESSIONAL \_ DE)  | Project Online Professional (PROJECTPROFESSIONAL)  |
-| PROJECT 计划 3 \_ DE (PROFESSIONAL \_ DE)  | Project 计划 3 (PROJECTPROFESSIONAL)  |
+| Project Plan 3 \_ DE (PROJECTPROFESSIONAL \_ DE)  | Project 计划 3 (PROJECTPROFESSIONAL)  |
 | Office 365 E4 \_ DE (ENTERPRISEWITHSCAL \_ DE)  | Office 365 E3 (ENTERPRISEPACK)  |
 | SharePoint Online (计划 1) \_ DE (SHAREPOINTSTANDARD \_ DE)  | SharePoint Online (计划 1)  (SHAREPOINTSTANDARD)  |
 | SharePoint Online (计划 2) \_ DE (SHAREPOINTENTERPRISE \_ DE)  | SharePoint Online (计划 2)  (SHAREPOINTENTERPRISE)  |
@@ -283,12 +283,58 @@ Microsoft 提供从德国 Microsoft 云到新的德国数据中心区域的 Offi
 - 对于 Office 365，可以使用 Microsoft &quot; &quot; [365](https://portal.office.de/)管理中心的"需要帮助？"链接提交问题。
 - 如果你是 Dynamics 365 Customer Engagement and Power BI customer and also have Office 365， you may submit questions using the &quot; Need Help？ &quot; link of the [Microsoft 365 admin center.](https://portal.office.de/) 有关 Dynamics 365 Customer Engagement 支持选项，可查看[此处](https://docs.microsoft.com/dynamics365/get-started/support/)。 有关 Power BI 支持选项，可查看[此处](https://powerbi.microsoft.com/support/)。
 
+### <a name="my-customer-already-has-a-m365-tenant-in-the-global-microsoft-cloud-in-addition-to-a-microsoft-cloud-deutschland-tenant-can-these-two-tenants-be-merged-into-one-as-part-of-the-migration"></a>除了 Microsoft 云德国租户外，我的客户已在全局 Microsoft 云中拥有 M365 租户。 这两个租户能否在迁移过程中合并为一个租户？
+
+否，没有租户合并功能。 租户将保持独立和唯一，因为每个租户都有自己的命名空间和唯一 ID。 如果需要，Microsoft 将 Microsoft 云德国租户迁移到全球云，否则客户可以取消并放弃它。
+
+
+### <a name="what-actions-are-required-to-be-done-by-most-end-users-as-part-of-the-migration"></a>大多数最终用户在迁移过程中需要执行哪些操作？
+迁移旨在对最终用户/客户产生最小影响。
+- 确保 Office 应用程序运行的是最新的可用版本。 
+- 使用 Skype for Business 的客户将在迁移过程中过渡到 Teams，并且可能需要在设备上下载和安装[Teams。](https://docs.microsoft.com/deployoffice/teams-install)
+- 最终用户可能需要注销 Office 应用程序，在迁移完成后重新登录。 
+- 运行 OneDrive 同步客户端的客户需要注销其工作站并再次登录，以允许 OneDrive 同步客户端登录到全局 Azure Active Directory 服务。
+- 迁移完成后请注意新的全局 URL，特别是 Outlook Web Access (示例：outlook.office365.com) 。 SharePoint Online 客户端将继续使用现有 URL 成功连接到 MCD 命名空间， (示例：contoso.sharepoint.de) 。
+
+
+### <a name="which-customers-are-affected-by-the-azure-active-directory-migration"></a>哪些客户受 Azure Active Directory 迁移的影响？ 
+
+所有 Office 365 客户都依赖 Azure Active Directory 来验证和存储 Microsoft 托管服务操作所需的关键服务组件。 
+
+
+### <a name="what-are-the-impacts-of-the-azure-active-directory-migration"></a>Azure Active Directory 迁移有什么影响？
+
+Azure Active Directory 在早期阶段的初始迁移对客户体验没有任何影响。 最终迁移阶段后，客户租户的所有服务完全处于全局服务中。 在此最后阶段之后，德国 Microsoft 云中的 Azure Active Directory 服务可能不再接受授权请求或向 Office 服务提供访问令牌。
+
+
+### <a name="what-does-it-mean-to-ensure-network-connectivity-to-office-365-services-urls-and-ip-addresses"></a>确保与 Office 365 服务 URL 和 [IP 地址的网络连接意味着什么](https://aka.ms/o365urls)？
+
+本文介绍使全局服务正常运行以确保良好的客户体验所需的必要 URL 和 IP 地址。 在相对极少数情况下，一些客户尝试以最大程度减少流量的方式配置网络外围安全，并限制仅作为 Microsoft 云德国服务 IP 范围一部分的服务访问。
+
+
+### <a name="how-do-i-manage-the-dns-changes-for-exchange-online-so-mail-will-continue-to-flow"></a>如何管理 Exchange Online 的 DNS 更改，以便邮件继续流动？
+
+Microsoft 管理的 IP 范围和 DNS 区域在迁移到全局服务期间以及作为全局服务的一部分进行转换。 
+
+客户管理的 DNS 区域（如自定义域 MX 记录）由客户负责，但为了简化此迁移，客户管理的 MX 记录指向 office.de 区域中的 Office 365 服务终结点，Microsoft 会自动管理此服务终结点的迁移。
+
+
+### <a name="how-do-i-manage-the-dns-changes-for-skype-for-business"></a>如何管理 Skype for Business 的 DNS 更改？ 
+ 
+所有 Skype for Business 客户都将过渡到 Microsoft Teams。 迁移到 Teams 时不需要转换客户 Skype DNS 区域。 客户将能够在迁移后立即使用所有功能登录 Teams。
+ 
+
+### <a name="will-outlook-for-ios-and-android-work-after-the-migration"></a>迁移后 Outlook for iOS 和 Outlook for Android 将正常工作吗？ 
+
+是。 Microsoft 建议所有客户运行最新可用版本的 Office 客户端，包括 Outlook for iOS 和 Android 客户端。 迁移到 Office 365 全局服务后，所有 Office 客户端都需要注销并重新登录，才能从全局服务获取新的 Azure Active Directory 访问令牌。 
+
+
 
 ## <a name="next-step"></a>后续步骤
 
 [选择加入迁移](ms-cloud-germany-migration-opt-in.md)
 
-## <a name="more-information"></a>更多信息
+## <a name="more-information"></a>详细信息
 
 入门：
 

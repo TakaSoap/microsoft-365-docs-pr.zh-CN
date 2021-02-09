@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 376e54fb4bf5f07a1c821ff436ddc8ec7dd25812
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 6bd0e4fe3173fa899b0b9c86d6f85d724b52be3a
+ms.sourcegitcommit: 005028af7c5a6b2e95f17a0037958131484d9e73
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49931106"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "50145003"
 ---
 # <a name="deviceregistryevents"></a>DeviceRegistryEvents
 
@@ -52,19 +52,23 @@ ms.locfileid: "49931106"
 | `RegistryValueType` | string | 记录的操作应用于的注册表值的数据类型（如二进制或字符串） |
 | `RegistryValueName` | string | 记录的操作应用于的注册表值的名称 |
 | `RegistryValueData` | string | 记录的操作应用于的注册表值的数据 |
-| `PreviousRegistryValueName` | string | 修改之前注册表值的原始名称 |
+| `PreviousRegistryKey` | string | 修改前注册表值的原始注册表项 |
+| `PreviousRegistryValueName` | string | 注册表值修改前的原始名称 |
 | `PreviousRegistryValueData` | string | 修改前注册表值的原始数据 |
 | `InitiatingProcessAccountDomain` | string | 运行负责事件的进程的帐户的域 |
 | `InitiatingProcessAccountName` | string | 运行负责事件的进程的帐户的用户名 |
 | `InitiatingProcessAccountSid` | string | 安全 (SID) 运行负责事件的进程的帐户的 SID 标识符 |
+| `InitiatingProcessAccountUpn` | string | 运行 (事件) 帐户的 UPN 帐户的用户主体名称 |
+| `InitiatingProcessAccountObjectId` | string | 运行负责事件的进程的用户帐户的 Azure AD 对象 ID |
 | `InitiatingProcessSHA1` | string | 启动事件 (映像) SHA-1 |
-| `InitiatingProcessSHA256` | string | 启动事件 (映像文件) SHA-256。 通常不会填充此字段 — 可用时使用 SHA1 列。 |
+| `InitiatingProcessSHA256` | string | 启动事件 (映像) SHA-256。 通常不会填充此字段 — 可用时使用 SHA1 列。 |
 | `InitiatingProcessMD5` | string | 启动事件 (映像) 的 MD5 哈希 |
 | `InitiatingProcessFileName` | string | 启动事件的进程的名称 |
+| `InitiatingProcessFileSize` | long | 运行负责事件的进程的文件的大小 |
 | `InitiatingProcessId` | int | 启动 (PID) 进程的进程 ID |
 | `InitiatingProcessCommandLine` | string | 用于运行启动事件的进程的命令行 |
 | `InitiatingProcessCreationTime` | datetime | 启动事件的过程启动的日期和时间 |
-| `InitiatingProcessFolderPath` | string | 包含启动 (的文件) 进程的文件夹 |
+| `InitiatingProcessFolderPath` | string | 包含启动事件 (映像) 文件的文件夹 |
 | `InitiatingProcessParentId` | int | 进程 ID (PID) 生成负责事件的进程的父进程 |
 | `InitiatingProcessParentFileName` | string | 生成负责事件的进程的父进程的名称 |
 | `InitiatingProcessParentCreationTime` | datetime | 启动负责事件的进程的父级的日期和时间 |

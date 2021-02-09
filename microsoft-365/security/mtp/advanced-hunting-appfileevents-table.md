@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 59e9affc53398f2a1b06fbab9774e4b53e146425
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 8406d1f9e3d56555b1699d191933c6f9735c9574
+ms.sourcegitcommit: 005028af7c5a6b2e95f17a0037958131484d9e73
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49932870"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "50145483"
 ---
 # <a name="appfileevents"></a>AppFileEvents
 
@@ -46,14 +46,15 @@ ms.locfileid: "49932870"
 |-------------|-----------|-------------|
 | `Timestamp` | datetime | 记录事件的日期和时间 |
 | `ActionType` | string | 触发事件的活动类型。 有关详细信息 [，请参阅门户内架构](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) 参考 |
-| `Application` | string | 执行所记录操作的应用程序 |
+| `Application` | string | 执行录制的操作的应用程序 |
 | `FileName` | string | 录制操作所应用到的文件的名称 |
-| `FolderPath` | string | 包含已记录操作应用于的文件的文件夹 |
-| `PreviousFileName` | string | 作为操作结果重命名的文件的原始名称 |
+| `FolderPath` | string | 包含已记录操作所应用到的文件的文件夹 |
+| `PreviousFileName` | string | 由于操作而重命名的文件的原始名称 |
 | `PreviousFolderPath` | string | 应用录制的操作之前包含文件的原始文件夹 |
 | `Protocol` | string | 使用的网络协议 |
 | `AccountName` | string | 帐户的用户名 |
 | `AccountDomain` | string | 帐户的域 |
+| `AccountSid` | string | 帐户 (SID) 安全标识符 |
 | `AccountUpn` | string | 帐户的用户主体 (UPN)  |
 | `AccountObjectId` | string | Azure AD 中帐户的唯一标识符 |
 | `AccountDisplayName` | string | 通讯簿中显示的帐户用户的名称。 通常是给定或名字、中间初始和姓氏或姓氏的组合。 |
@@ -61,8 +62,10 @@ ms.locfileid: "49932870"
 | `DeviceType` | string | 设备类型 | 
 | `OSPlatform` | string | 在设备上运行的操作系统的平台。 这表示特定操作系统，包括同一系列中的变体，如 Windows 10 和 Windows 7。 |
 | `IPAddress` | string | 分配给终结点的 IP 地址，在相关的网络通信期间使用 |
+| `Port` | string | 通信期间使用的 TCP 端口  |
 | `DestinationDeviceName` | string | 运行处理所记录操作的服务器应用程序的设备的名称 |
 | `DestinationIPAddress` | string | 运行处理所记录操作的服务器应用程序的设备的 IP 地址 |
+| `DestinationPort` | string | 相关网络通信的目标端口 |
 | `Location` | string | 与事件关联的城市、国家/地区或其他地理位置 |
 | `Isp` | string | Internet 服务提供商 (ISP) 与终结点 IP 地址关联 |
 | `ReportId` | long | 事件的唯一标识符 |

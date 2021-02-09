@@ -7,7 +7,6 @@ author: chrisda
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.service: O365-seccomp
 localization_priority: Normal
 ms.date: 09/08/2020
 search.appverid:
@@ -19,17 +18,23 @@ ms.collection:
 - m365initiative-defender-office365
 description: 管理员可以在 Microsoft 365 中学习威胁防护并为组织配置使用方法。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 2951d5725237d572d357ac3fc6cff0ac4df7e8f0
-ms.sourcegitcommit: 9833f95ab6ab95aea20d68a277246dca2223f93d
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: cb2866fd3e60c021ae89ffabe7149f4b415d63bc
+ms.sourcegitcommit: e920e68c8d0eac8b152039b52cfc139d478a67b3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "49794432"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50150708"
 ---
 # <a name="protect-against-threats"></a>抵御威胁
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**适用于**
+- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
+- [Microsoft Defender for Office 365 计划 1 和计划 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 这是一个快速的指南，它将 Defender for Office 365 的配置分成块。 如果你对 Microsoft Office 365 中的威胁防护功能不了解，不知道从哪里开始，或者你喜欢通过 *上手* 来学习，使用这个指南作为一个清单和开始。
 
@@ -55,7 +60,7 @@ ms.locfileid: "49794432"
 |反垃圾邮件保护|[EOP](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)|
 |零时差自动清除 (电子邮件)|[EOP](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)|
 |防护 Office 文件和电子邮件中的恶意 URL 和文件带来的威胁（安全链接和安全附件）|[Microsoft Defender for Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)|
-|启用适用于 SharePoint、OneDrive 和 Microsoft Teams 工作负载的 ATP|[Defender for Office 365](atp-for-spo-odb-and-teams.md)|
+|打开 SharePoint、OneDrive 和 Microsoft Teams 工作负载的安全附件|[Defender for Office 365](atp-for-spo-odb-and-teams.md)|
 |高级反钓鱼保护|[Defender for Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)|
 
 ### <a name="roles-and-permissions"></a>角色和权限
@@ -207,7 +212,7 @@ ms.locfileid: "49794432"
 
 若要了解详细信息，请参阅“[设置安全链接策略](set-up-atp-safe-links-policies.md)”。
 
-## <a name="part-5---verify-atp-for-sharepoint-onedrive-and-microsoft-teams-is-turned-on"></a>第五部分 - 验证适用于 SharePoint、OneDrive 和 Microsoft Teams 的 ATP
+## <a name="part-5---verify-safe-attachments-for-sharepoint-onedrive-and-microsoft-teams-is-turned-on"></a>第 5 部分 - 验证 SharePoint、OneDrive 和 Microsoft Teams 的安全附件是否打开
 
 SharePoint、OneDrive 和 Teams 这样的工作负载是为协作而构建的。 使用 Defender for Office 365 帮助组织和检测在团队站点和文件库中识别为恶意的文件。 你可以在[这里](atp-for-spo-odb-and-teams.md)阅读有关详细信息。
 
@@ -216,7 +221,7 @@ SharePoint、OneDrive 和 Teams 这样的工作负载是为协作而构建的。
 
 1. 在 [安全与合规中心](https://protection.office.com)中， 选择“**威胁管理**” \> “**策略**” \> “**ATP 安全附件**”，然后单击“**全局设置**”。
 
-2. 验证“**为 SharePoint、OneDrive 和 Microsoft Teams 启用 ATP**”切换键在右边：“![打开](../../media/scc-toggle-on.png)”，然后单击“**保存**”。
+2. 验证 Office **365 for SharePoint、OneDrive** 和 Microsoft Teams 的"打开 Defender"开关是否位于右侧：打开， ![ 然后单击" ](../../media/scc-toggle-on.png) **保存"。**
 
 3. 检查（并合适地编辑）组织的[安全附件策略](set-up-atp-safe-attachments-policies.md)和[安全链接策略](set-up-atp-safe-links-policies.md)。
 

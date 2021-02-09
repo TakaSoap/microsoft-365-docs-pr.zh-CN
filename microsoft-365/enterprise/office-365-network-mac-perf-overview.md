@@ -14,199 +14,199 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 - m365initiative-coredeploy
-description: 'Microsoft 365 管理中心中的网络连接概述 (预览) '
-ms.openlocfilehash: d7ccbad83bbe0b6c3b88001c285db370afcb8510
-ms.sourcegitcommit: 45c0afcf958069c5c1b31f9b6c762d8dd806e1e9
+description: 'Microsoft 365 管理中心预览版中的网络连接 (概述) '
+ms.openlocfilehash: 976059e1469861ea28b2a94b84e373119935fb20
+ms.sourcegitcommit: 005028af7c5a6b2e95f17a0037958131484d9e73
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "48774077"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "50145387"
 ---
 # <a name="network-connectivity-in-the-microsoft-365-admin-center-preview"></a>Microsoft 365 管理中心中的网络连接 (预览版) 
 
-Microsoft 365 管理中心现在包含从 Microsoft 365 租户收集的聚合网络连接指标，仅可供租户中的管理用户查看。
+Microsoft 365 管理中心现在包括从 Microsoft 365 租户收集的聚合网络连接指标，并且仅可供租户中的管理用户查看。
 
 > [!div class="mx-imgBorder"]
 > ![网络连接测试工具](../media/m365-mac-perf/m365-mac-perf-admin-center.png)
 
-**网络评估** 和 **网络洞察力** 显示在 Microsoft 365 管理中心的 **运行状况 |连接** 。
+**网络评估和****网络见解** 显示在 Microsoft 365 管理中心中的"运行状况"| **连接**。
 
 > [!div class="mx-imgBorder"]
 > ![网络性能页面](../media/m365-mac-perf/m365-mac-perf-page-nav.png)
 
 >[!NOTE]
->网络连接测试工具支持 WW 商业和德国的租户，但不支持 GCC 中、GCC 高级、DoD 或中国的租户。
+>网络连接测试工具支持 WW Commercial 和 Germany 中的租户，但不支持 GCC 中等、GCC 高、DoD 或中国租户。
 
-当您第一次导航到 "网络性能" 页面时，将看到 "概述" 窗格，其中包含全局网络性能的地图、网络评估范围为整个租户以及当前问题的列表。 从概述中，您可以深入查看特定的网络性能指标和按位置的问题。 有关详细信息，请参阅 [Microsoft 365 管理中心中的网络性能概述](#network-connectivity-overview-in-the-microsoft-365-admin-center)。
+首次导航到网络性能页面时，你将看到一个概述窗格，其中包含全局网络性能映射、范围为整个租户的网络评估以及当前问题列表。 从概述中，你可以向下钻取以查看特定网络性能指标和按位置的问题。 有关详细信息，请参阅 [Microsoft 365 管理中心中的网络性能概述](#network-connectivity-overview-in-the-microsoft-365-admin-center)。
 
-可能会要求代表您的组织加入此功能的公共预览版。 通常情况下，接受通常会立即发生，然后您将看到 "网络连接" 页面。 
+系统可能会要求你代表组织加入此功能的公共预览版。 接受通常会立即发生，然后你将看到网络连接页面。 
 
-在导航到 "网络连接" 页面时，您将看到一个 "概述" 窗格，其中包含全局网络性能的地图、范围限定为整个租户的网络评估以及当前问题的列表。 若要访问此页面，您必须是 Microsoft 365 中组织的管理员。 报告读取器管理角色将对此信息具有读取权限。 若要配置位置和网络连接的其他元素，管理员必须是服务器管理员角色（如服务支持管理员角色）的一部分。 从概述中，您可以深入查看特定的网络性能指标和按位置的问题。 有关详细信息，请参阅 [Microsoft 365 管理中心中的网络连接概述](#network-connectivity-overview-in-the-microsoft-365-admin-center)。
+在导航到网络连接页面时，你将看到一个概述窗格，其中包含全局网络性能地图、范围为整个租户的网络评估以及当前问题列表。 若要访问此页面，你必须是 Microsoft 365 中组织的管理员。 报表阅读器管理角色将具有对此信息的读取权限。 若要配置网络连接的位置和其他元素，管理员必须是服务器管理员角色（如服务支持管理员角色）的一部分。 从概述中，你可以向下钻取以查看特定网络性能指标和按位置的问题。 有关详细信息，请参阅 [Microsoft 365](#network-connectivity-overview-in-the-microsoft-365-admin-center)管理中心中的网络连接概述。
 
-## <a name="pre-requisites-for-network-connectivity-assessments-to-appear"></a>将显示网络连接评估的必备组件
+## <a name="pre-requisites-for-network-connectivity-assessments-to-appear"></a>要显示网络连接评估的先决条件
 
-尽管可以在组织中评估网络连接性，但需要对特定的办公室位置进行任何网络设计方面的改进。 一旦可以确定每个办公地点的网络连接信息，就会提供这些位置。 从你的办公室位置获取网络评估有三个选项：
+To get started， turn on your location opt-in setting to automatically collect data from devices using Windows Location Services， go to your Locations list to add or upload location data， or run the Microsoft 365 network connectivity test from your office locations. 尽管可以在整个组织中评估网络连接，但需要针对特定办公地点进行任何网络设计改进。 确定每个办公室位置后，会提供这些位置的网络连接信息。 有三个选项用于从办公地点获取网络评估：
 
-### <a name="1-enable-windows-location-services"></a>1. 启用 Windows 定位服务
+### <a name="1-enable-windows-location-services"></a>1. 启用 Windows Location Services
 
-对于此选项，必须在每个支持必备组件的办公室位置至少有两台计算机运行。 必须在每台计算机上安装 OneDrive for Windows 版本 **19.232** 或更高版本。 有关 OneDrive 版本的详细信息，请参阅 [onedrive 发行说明](https://support.office.com/article/onedrive-release-notes-845dcf18-f921-435e-bf28-4e24b95e5fc0)。 在不久的将来，会计划在其他 Office 365 客户端应用程序中添加网络度量。
+对于此选项，必须在每个支持先决条件的办公地点至少运行两台计算机。 必须在每台计算机上安装 OneDrive for Windows **版本 19.232** 或以上版本。 有关 OneDrive 版本的信息，请参阅 [OneDrive 发行说明](https://support.office.com/article/onedrive-release-notes-845dcf18-f921-435e-bf28-4e24b95e5fc0)。 计划在近期将网络度量添加到其他 Office 365 客户端应用程序中。
 
-Windows 位置服务必须在计算机上同意。 您可以通过运行 " **地图** " 应用并找到自己来对此进行测试。 可以在具有设置的单台计算机上启用此功能 **|隐私 |** 必须启用设置 _允许应用访问你的位置_ 的位置。 可以将 Windows 位置服务同意部署到使用 MDM 或组策略的电脑中，设置 _LetAppsAccessLocation_ 。
+必须在计算机上同意 Windows 位置服务。 可以通过运行地图应用并找到你自己来测试这一点。 可以在具有"设置"选项的单个计算机上 **|隐私|必须** 启用设置 _"允许应用访问你_ 的位置"。 可以使用 MDM 或组策略（设置为 _LetAppsAccessLocation）_ 将 Windows Location Services 同意部署到电脑。
 
-您无需使用此方法在管理中心中添加位置，因为它们会在城市分辨率中自动标识。 您不能使用 Windows 定位服务在城市中显示多个办公室位置。 在上传之前，位置信息还会四舍五入到最接近的300米 x 300 米，这样就不能访问更精确的位置信息。
+无需使用此方法在管理中心添加位置，因为它们会在城市解决方案中自动标识。 不能使用 Windows 位置服务在一个市/县中显示多个办公室位置。 在上载之前，位置信息也会四舍五入到最近的 300 米宽 300 米，以便无法访问更精确的位置信息。
 
-计算机应具有 Wi-Fi 网络，而不是以太网电缆。 具有以太网电缆的计算机没有准确的位置信息。
+计算机应具有Wi-Fi网络，而不是以太网电缆。 具有以太网电缆的计算机没有准确的位置信息。
 
-满足这些先决条件后，度量样本和办公室位置应会在24小时后开始显示。
+测量示例和办公地点应在满足这些先决条件后的 24 小时后开始显示。
 
 ### <a name="2-add-locations-and-provide-lan-subnet-information"></a>2. 添加位置并提供 LAN 子网信息
 
-对于此选项，Windows 定位服务和 Wi-Fi 都不是必需的。 您需要在每台计算机上安装了 OneDrive for Windows 版本 **20.161** 或更高版本。
+对于此选项，不需要 Windows 定位服务Wi-Fi服务。 你需要在位置的每台计算机上安装 OneDrive for Windows 版本 **20.161** 或以上版本。
 
-此外，还需要在管理中心网络连接页面中添加位置，或从 CSV 文件中导入这些位置。 添加的位置必须包含 office LAN 子网信息。
+还需要在管理中心网络连接页中添加位置，或从 CSV 文件导入位置。 添加的位置必须包含 Office LAN 子网信息。
 
-由于要添加位置，因此可以在城市内定义多个办事处。
+由于要添加位置，因此可以在一个城市内定义多个办公室。
 
-客户端计算机中的所有测试度量都包括 LAN 子网信息，这与您输入的 office 位置详细信息相关联。 满足这些先决条件后，度量样本和办公室位置应会在24小时后开始显示。
+来自客户端计算机的所有测试测量均包括 LAN 子网信息，该信息与已输入的办公地点详细信息相关。 测量示例和办公地点应在满足这些先决条件后的 24 小时后开始显示。
 
 ### <a name="3-manually-gather-test-reports-with-the-microsoft-365-network-connectivity-test-tool"></a>3. 使用 Microsoft 365 网络连接测试工具手动收集测试报告
 
-对于此选项，您需要在每个位置标识一个人。 要求他们在具有管理权限的 Windows 计算机上浏览到 [Microsoft 365 网络连接测试](https://connectivity.office.com) 。 在网站上，他们需要登录到他们的 Office 365 帐户，才能查看您想要查看结果的同一组织。 然后，他们应单击 " **运行测试** "。 在测试过程中有一个已下载的连接测试 EXE。 他们还需要打开和执行。 测试完成后，测试结果将上传到 Office 365。
+对于此选项，你需要在每个位置标识一个人。 让他们在具有管理权限的 Windows 计算机上浏览 [到 Microsoft 365](https://connectivity.office.com) 网络连接测试。 在网站中，他们需要登录到想要查看结果的同一组织的 Office 365 帐户。 然后，他们应单击 **"运行测试"。** 在测试期间，有下载的连接测试 EXE。 他们还需要打开和执行它。 测试完成后，测试结果将上载到 Office 365。
 
-如果将测试报告添加到 LAN 子网信息中，则会将这些报告链接到该位置，否则这些报告将仅显示在城市位置。
+如果使用 LAN 子网信息添加测试报告，则测试报告将链接到该位置，否则它们仅在城市位置显示。
 
-测试报告完成后，度量样本和办公室位置应会在2-3 分钟后开始。 有关详细信息，请参阅 [Microsoft 365 网络连接测试 (preview) ](office-365-network-mac-perf-onboarding-tool.md)。
+完成测试报告后，度量示例和办公地点应开始显示 2-3 分钟。 有关详细信息，请参阅[Microsoft 365 网络连接测试 (预览) 。 ](office-365-network-mac-perf-onboarding-tool.md)
 
 ## <a name="how-do-i-use-this-information"></a>如何使用此信息？
 
-**网络洞察力** 、其相关的性能建议和网络评估旨在帮助为你的办公室位置设计网络外围。 每个真知灼见都提供有关用户访问你的租户的每个地理位置的特定常见问题的性能特征的详细信息。 每个网络洞察力的 **性能建议** 提供了您可以进行的特定网络体系结构设计更改，以改进与 Microsoft 365 网络连接相关的用户体验。 网络评估显示网络连接对用户体验的影响，从而允许比较不同的用户位置网络连接。
+**网络见解**、其相关的性能建议和网络评估旨在帮助您设计办公地点的网络外围。 每个见解都提供有关用户访问租户的每个地理位置的特定常见问题的性能特征的详细信息。 **每个网络** 见解的性能建议都提供您可以进行的特定网络体系结构设计更改，以改进与 Microsoft 365 网络连接相关的用户体验。 网络评估显示网络连接如何影响用户体验，从而可以比较不同的用户位置网络连接。
 
-**网络评估** 将许多网络性能指标的聚合提取到企业网络运行状况的快照中，由 0-100 中的点值表示。 网络评估的作用范围为整个租户和每个地理位置，用户将从该位置连接到你的租户，从而为 Microsoft 365 管理员提供一种简单的方法来即时了解企业网络运行状况的 gestalt，并快速深入到任何全球办公地点的详细报告。
+**网络评估** 将许多网络性能指标聚合到企业网络运行状况的快照中，以 0 到 100 的点值表示。 网络评估的范围既包括整个租户，也适用于用户连接到租户的每个地理位置，为 Microsoft 365 管理员提供了一种快速掌握企业网络运行状况的一个简单方法，并快速深入到任何全球办事处位置的详细报告。
 
-具有多个办公室位置和非普通网络外围体系结构的复杂企业可以在初始加入 Microsoft 365 或解决使用情况增长发现的网络性能问题时从这些信息中受益。 对于使用 Microsoft 365 的小型企业或已具有简单且直接的网络连接的企业，这通常是不必要的。 具有500个以上的用户和多个办公地点的企业有望获益最多。
+具有多个办公地点和普通网络外围体系结构的复杂企业可以在初次载入 Microsoft 365 期间从此信息中获益，或修正使用增长时发现的网络性能问题。 对于使用 Microsoft 365 的小型企业或任何已具有简单直接网络连接的企业来说，这通常不是必需的。 具有 500 多个用户和多个办公地点的企业预期受益最大。
 
 >[!IMPORTANT]
->网络洞察力、Microsoft 365 管理中心中的性能建议和评估当前处于预览状态，并且仅适用于已在功能预览计划中注册的 Microsoft 365 租户。
+>Microsoft 365 管理中心中的网络见解、性能建议和评估目前处于预览状态，仅适用于已在功能预览计划注册的 Microsoft 365 租户。
 
-## <a name="enterprise-network-connectivity-challenges"></a>企业网络连接难题
+## <a name="enterprise-network-connectivity-challenges"></a>企业网络连接挑战
 
 > [!div class="mx-imgBorder"]
 > ![客户网络到云](../media/m365-mac-perf/m365-mac-perf-first-last-mile.png)
 
-许多企业都具有网络外围配置，这些配置随着时间的推移而逐渐发展，主要旨在适应员工 Internet 网站访问，其中大多数网站都不是预先知道的，不受信任。 这些未知网站的受攻击和必要的重点是避免恶意软件和钓鱼攻击。 此网络配置策略虽然有助于安全目的，但会导致 Microsoft 365 用户性能和用户体验下降。
+许多企业具有网络外围配置，这些配置已随着时间的推移而增长，主要旨在容纳大多数网站未事先已知且不受信任的员工 Internet 网站访问。 当前和必要的焦点是避免来自这些未知网站的恶意软件和入侵攻击。 此网络配置策略有助于实现安全目的，但可能会导致 Microsoft 365 用户性能和用户体验下降。
 
-## <a name="how-we-can-solve-these-challenges"></a>我们可以如何解决这些难题
+## <a name="how-we-can-solve-these-challenges"></a>我们如何解决这些问题
 
-企业可以通过遵循 [Office 365 连接原则](https://aka.ms/pnc) 和使用 Microsoft 365 管理中心网络连接功能来改进常规用户体验并保护其环境。 在大多数情况下，遵循这些常规原则将对最终用户延迟、服务可靠性和 Microsoft 365 的总体性能产生重大影响。
+企业可以遵循 [Office 365 连接](https://aka.ms/pnc) 原则，使用 Microsoft 365 管理中心网络连接功能，改善常规用户体验并保护其环境。 在大多数情况下，遵循这些一般原则将对最终用户延迟、服务可靠性和 Microsoft 365 的总体性能产生显著正面影响。
 
-有时，microsoft 需要调查大型企业客户的 Microsoft 365 的网络性能问题，并且这些问题通常有与客户网络外围基础结构相关的根本原因。 当发现客户网络外围问题的常见根源时，我们会设法确定确定它的简单测试指标。 具有确定特定问题的度量阈值的测试非常有用，因为我们可以在任何位置测试相同的指标，告知是否存在此根本原因，并将其共享为与管理员的网络洞察力。
+有时要求 Microsoft 调查适用于大型企业客户的 Microsoft 365 的网络性能问题，这些问题通常具有与客户网络外围基础结构相关的根本原因。 当找到客户网络外围问题的常见根本原因时，我们寻找识别它的简单测试度量。 具有标识特定问题的度量阈值的测试非常有价值，因为我们可以测试任何位置的相同度量，判断该根本原因是否存在，并与管理员共享作为网络见解。
 
-一些网络见解只表示需要进一步调查的问题。 一种网络洞察力，其中我们有足够的测试来显示解决根本原因的特定修正操作，作为 **建议的操作** 列出。 这些建议基于实时指标，其中显示超出预先确定的阈值之外的值，比一般的最佳实践建议更有价值，因为它们是特定于您的环境的，并且会在进行建议的更改后显示实际的改进。
+某些网络见解只是指示需要进一步调查的问题。 我们有足够的测试来显示用于纠正根本原因的特定修正操作的网络见解作为推荐 **操作列出**。 这些建议基于显示超出预先确定阈值的值实时指标，比一般最佳做法建议更有价值，因为它们特定于您的环境，并且将在建议更改后显示实际改进。
 
 ## <a name="network-connectivity-overview-in-the-microsoft-365-admin-center"></a>Microsoft 365 管理中心中的网络连接概述
 
-Microsoft 从多个 Office 桌面和 web 客户端中获得了支持 Microsoft 365 操作的现有网络度量。 这些度量现在用于提供网络体系结构设计见解和网络评估，这些数据显示在 Microsoft 365 管理中心的 " **网络连接** " 页面中。
+Microsoft 具有多个 Office 桌面和 Web 客户端的现有网络度量，这些客户端支持 Microsoft 365 的操作。 这些度量现在用于提供网络体系结构设计见解和网络评估，如 Microsoft 365 管理中心的"网络连接"页所示。
 
-默认情况下，与网络度量相关联的近似位置信息标识客户端设备所在的城市。 每个位置的网络评估均以颜色显示，并且每个位置的用户相对数量由圆的大小表示。
+默认情况下，与网络度量相关的近似位置信息标识客户端设备所在的城市。 每个位置的网络评估以颜色显示，每个位置的用户相对数量由圆形的大小表示。
 
 > [!div class="mx-imgBorder"]
-> ![网络洞察力概述映射](../media/m365-mac-perf/m365-mac-perf-overview-map.png)
+> ![网络见解概述地图](../media/m365-mac-perf/m365-mac-perf-overview-map.png)
 
-概述页面还显示了客户的网络评估，作为所有办公地点的加权平均。
+概述页面还将客户网络评估作为所有办公地点的加权平均值显示。
 
 > [!div class="mx-imgBorder"]
 > ![网络评估](../media/m365-mac-perf/m365-mac-perf-overview-score.png)
 
-可以在 "位置" 选项卡中查看可筛选、排序和编辑它们的位置的表格视图。具有特定建议的位置也可能包括估计的潜在延迟改进。 这是通过在该位置获取组织用户的中间延迟，并减去同一个城市中所有组织的中间滞后时间来计算的。
+您可以在"位置"选项卡中查看可以筛选、排序和编辑位置的表视图。具有特定建议的位置可能还包括估计的潜在延迟改进。 这是通过以下方法计算的：在位置采用组织用户的中值延迟，并减去同一城市中所有组织的中值延迟。
 
 > [!div class="mx-imgBorder"]
 > ![网络见解位置](../media/m365-mac-perf/m365-mac-perf-locations.png)
 
-## <a name="specific-office-location-network-performance-summary-and-insights"></a>特定的办公室位置网络性能摘要和见解
+## <a name="specific-office-location-network-performance-summary-and-insights"></a>特定办公地点网络性能摘要和见解
 
-选择 "办公室位置" 将打开一个特定位置的摘要页面，其中显示了已从该办公室位置测量指标中标识的网络出口的详细信息。
-
-> [!div class="mx-imgBorder"]
-> ![按位置的网络洞察力详细信息](../media/m365-mac-perf/m365-mac-perf-locations-plan-overview.png)
-
-此位置的组织用户的外围网络的地图与以下部分或全部元素一起显示：
-
-- **办公地点** -你正在查看的页面的办公地点
-- **网络外围** -来自办公室位置的连接的源 IP 地址的位置。 这取决于地理位置 IP 位置数据库的准确性
-- **Exchange 最佳服务前盖** -此办公室位置中的用户应连接到的推荐 Exchange 服务前盖之一
-- **Exchange 欠线前盖** -用户连接到的 exchange 服务前向，但不建议使用
-- **SharePoint 最优服务前盖** -此办公室位置中的用户应连接到的建议 SharePoint 服务前门之一
-- **Sharepoint 子最佳服务前端门** -用户连接到的 sharepoint 服务前向门，但不建议使用
-- **DNS 递归解析器服务器** -来自检测到的 dns 递归解析程序（如果可用）的地域 IP 数据库中的位置 (（如果有）) 
-- **您的代理服务器** -来自检测到的代理服务器的地域 IP 数据库的位置 (（如果可用）)  
-
-"Office 位置摘要" 页还会显示位置的网络评估、网络评估历史记录、此位置的评估与同一城市中的其他客户的比较，以及您可以采取以提高网络性能和可靠性的特定见解和建议的列表。
-
-同一个城市中的客户之间的比较取决于所有客户都具有对网络服务提供商、电信基础结构和附近 Microsoft 网络状态点的同等访问权限的预期。
-
-"Office 位置" 页上的 "详细信息" 选项卡显示了用于提供任何见解、建议和网络评估的具体测量结果。 提供此信息是为了让网络工程师能够验证其环境中的任何约束或细节方面的建议和因素。
+选择一个办公室位置将打开一个特定于位置的摘要页，其中显示从该办公地点的度量中标识的网络出口的详细信息。
 
 > [!div class="mx-imgBorder"]
-> ![位置特定的详细信息](../media/m365-mac-perf/m365-mac-perf-locations-plan-details-all.png)
+> ![按位置的网络见解详细信息](../media/m365-mac-perf/m365-mac-perf-locations-plan-overview.png)
 
-## <a name="csv-import-for-lan-subnet-office-locations"></a>LAN 子网办公地点的 CSV 导入
+显示位置组织用户的外围网络地图，其中包含以下部分或所有元素：
 
-对于 LAN 子网办公室标识，需要提前添加每个位置。 您可以从 CSV 文件中导入它们，而不是在 " **位置** " 选项卡中添加各个办公室位置。 你可以从存储它的其他位置（如呼叫质量仪表板或 Active Directory 站点和服务）获取此数据
+- **Office 位置** - 所查看页面的办公地点
+- **网络外围** - 来自办公室位置的连接的源 IP 地址的位置。 这取决于地理位置 IP 位置数据库的准确性
+- **Exchange 最佳服务前端** - 此办公室位置的用户应连接到的建议 Exchange 服务前端门之一
+- **Exchange 非最佳前端** - 用户已连接到的 Exchange 服务前端，但不推荐
+- **SharePoint 最佳服务前端** - 此办公地点的用户应连接到的建议 SharePoint 服务前端门之一
+- **SharePoint 次优化服务前端** - 用户已连接到的 SharePoint 服务前端，但不推荐
+- **DNS 递归** 解析器服务器 - 检测到用于 Exchange Online (DNS 递归解析程序（如果可用）的地理位置 IP) 
+- **代理服务器** - 检测到的代理服务器的地理位置 IP 数据库 (（如果)  
 
-在 CSV 文件中，发现的城市位置在 userEntered 列中显示为空白，手动添加的 "office 位置" 显示为1。
+此外，"办公室位置摘要"页还显示位置的网络评估、网络评估历史记录、此位置评估与同一城市的其他客户的比较，以及可用于提高网络性能和可靠性的特定见解和建议的列表。
 
-1. 在 " _Microsoft 365_ 的主要连接" 窗口中，单击 " **位置** " 选项卡。
+同一城市的客户之间的比较基于以下预期：所有客户对网络服务提供商、电信基础结构和附近的 Microsoft 网络接入点具有相同的访问权限。
 
-1. 单击 "位置" 列表正上方的 " **导入** " 按钮。 将显示 " **导入 office 位置** " 浮出控件。
+The details tab on the office location page shows the specific measurement results that were used to come up with any insights， recommendations， and the network assessment. 提供此功能，以便网络工程师可以验证其环境中任何约束或特定内容的建议和因素。
+
+> [!div class="mx-imgBorder"]
+> ![特定于位置的详细信息](../media/m365-mac-perf/m365-mac-perf-locations-plan-details-all.png)
+
+## <a name="csv-import-for-lan-subnet-office-locations"></a>LAN 子网办公室位置的 CSV 导入
+
+对于 LAN 子网办公室标识，需要提前添加每个位置。 你可以从 CSV 文件导入位置，而不是在"位置"选项卡中添加单独的办公室位置。 你可以从存储该数据的其他位置（如呼叫质量仪表板或 Active Directory 站点和服务）获取此数据
+
+在 CSV 文件中，发现的城市位置在 userEntered 列中显示为空，手动添加的办公地点将显示为 1。
+
+1. 在"与 _Microsoft 365 的连接_ "主窗口中，单击 **"位置"** 选项卡。
+
+1. 单击 **位置** 列表正上方的"导入"按钮。 将出现 **"导入办公室位置** "飞出。
 
    > [!div class="mx-imgBorder"]
-   > ![CSV 导入邮件](../media/m365-mac-perf/m365-mac-perf-import.png)
+   > ![CSV 导入消息](../media/m365-mac-perf/m365-mac-perf-import.png)
 
-1. 单击 " **下载当前的 office 位置 ( .csv)** 链接以将" 当前位置 "列表导出到 csv 文件，并将其保存到本地硬盘。 这将为您提供一个格式正确的 CSV 以及您可以向其添加位置的列标题。 您可以将现有导出的位置保留原样;当您导入更新的 CSV 时，将不会复制它们。 如果要更改现有位置的地址，则会在您导入 CSV 时对其进行更新。 您无法更改发现的城市的地址。
+1. 单击 **"下载当前办公室 (.csv)** 链接，将当前位置列表导出到 CSV 文件，并将其保存到本地硬盘。 这将为您提供格式正确的 CSV 以及列标题，您可以将位置添加到其中。 您可以将现有导出的位置保留为现有位置;导入更新后的 CSV 时不会复制它们。 如果要更改现有位置的地址，它将在导入 CSV 时更新。 无法更改已发现城市的地址。
 
-1. 打开 CSV 并添加您的位置，方法是在要添加的每个位置的新行上填写以下字段。 将所有其他字段保留为空;您在其他字段中输入的值将被忽略。
+1. 打开 CSV 并添加位置，在要添加的每个位置的新行中填写以下字段。 将所有其他字段留空;在其他字段中输入的值将被忽略。
 
-   1. **userEntered** (必需的) ：对于新的 LAN 子网办公室位置，必须为1个
-   1. **Address** (必需的) ：办公室的物理地址
-   1. **纬度** (可选) ：从 Bing 地图中填充如果为空，则为查找地址
-   1. **经度** (可选) ：从 Bing 地图中填充如果为空，则为查找地址
-   1. **出局 IP 地址范围 1-5** (可选) ：对于每个区域，输入电路名称，后跟一个以空格分隔的有效 IPv4 或 IPv6 CIDR 地址列表。 这些值用于区分使用相同 LAN 子网 IP 地址的多个办公室位置。 传出 IP 地址范围全部必须为/24 个网络大小，输入中不包含/24。
-   1. **LanIps** (必需的) ：列出在此办公室位置使用的 LAN 子网区域。 LAN 子网 Id 需要包含 CIDR 网络大小，其中的网络大小可以介于/8 和/29 之间。 可以用逗号或分号分隔多个 LAN 子网范围。
+   1. **userEntered** (必需) ：对于新的 LAN 子网办公室位置，必须为 1
+   1. **需要** (地址) ：办公室的物理地址
+   1. **Latitude** (可选) ：通过必应地图查找地址填充（如果为空）
+   1. **经度** (可选) ：从必应地图查找中填充的地址（如果为空）
+   1. IP 地址范围 **1-5** (可选) ：对于每个范围，输入电路名称后跟有效 IPv4 或 IPv6 CIDR 地址的空格分隔列表。 这些值用于区分使用同一 LAN 子网 IP 地址的多个办公室位置。 出口 IP 地址范围必须全部为 /24 网络大小，且 /24 不包含在输入中。
+   1. **LanIps** (以下) ：列出此办公地点使用的 LAN 子网范围。 LAN 子网 ID 需要包含 CIDR 网络大小，其中网络大小介于 /8 和 /29 之间。 可以使用逗号或分号分隔多个 LAN 子网范围。
    
-1. 添加办公室位置并保存文件后，单击 " **上载完成** 时间" 字段旁边的 " **浏览** " 按钮，然后选择保存的 CSV 文件。
+1. 添加办公室位置并保存文件后，单击"上载已完成"字段旁边的"浏览"按钮，然后选择保存的 CSV 文件。
 
-1. 将自动验证文件。 如果存在验证错误，您将看到错误消息 _导入文件中存在一些错误。请查看错误，更正导入文件，然后重试。_ 有关特定字段验证错误的列表，请单击链接的 " **打开错误详细信息** "。
+1. 将自动验证该文件。 如果存在验证错误，则会看到错误消息 _：导入文件中存在一些错误。查看错误，更正导入文件，然后重试。_ 单击" **打开特定字段** 验证错误列表的错误详细信息"链接。
 
    > [!div class="mx-imgBorder"]
    > ![CSV 导入错误消息](../media/m365-mac-perf/m365-mac-perf-import-error.png)
 
-1. 如果文件中没有任何错误，您将看到 _报告已准备好的消息。找到要添加的 x 位置和要更新的 x 位置。_ 单击 " **导入** " 按钮上传 CSV。
+1. 如果文件中没有任何错误，则会看到消息"报告 _已准备就绪"。找到要添加的 x 位置和要更新的 x 位置。_ 单击 **"导入** "按钮上载 CSV。
 
    > [!div class="mx-imgBorder"]
    > ![CSV 导入就绪消息](../media/m365-mac-perf/m365-mac-perf-import-ready.png)
 
 ## <a name="faq"></a>常见问题
 
-### <a name="what-is-a-microsoft-365-service-front-door"></a>什么是 Microsoft 365 服务的前盖？
+### <a name="what-is-a-microsoft-365-service-front-door"></a>什么是 Microsoft 365 服务前端？
 
-Microsoft 365 服务的前端是 Microsoft 全球网络的一个入口点，Office 客户端和服务终止其网络连接。 为实现到 Microsoft 365 的最佳网络连接，建议将您的网络连接终止为最近的 Microsoft 365 前盖。
+Microsoft 365 服务前端是 Microsoft 全局网络的入口点，Office 客户端和服务将终止其网络连接。 为了获得最佳到 Microsoft 365 的网络连接，建议将网络连接终止到最近的 Microsoft 365 前端。
 
 >[!NOTE]
->Microsoft 365 服务前向与 azure marketplace 提供的 Azure 前门服务产品没有直接关系。
+>Microsoft 365 服务前端与 Azure 市场中提供的 Azure Front Door Service 产品没有直接关系。
 
-### <a name="what-is-an-optimal-microsoft-365-service-front-door"></a>什么是最佳 Microsoft 365 服务前门？
+### <a name="what-is-an-optimal-microsoft-365-service-front-door"></a>什么是最佳的 Microsoft 365 服务前端？
 
-最佳 Microsoft 365 服务前盖是最接近你的网络出口（通常在你所在的城市或大都市区域中）的一门。 使用 [microsoft 365 连接测试工具 (预览) ](office-365-network-mac-perf-onboarding-tool.md) 确定使用中的 microsoft 365 服务前盖和最佳服务前盖的位置。 如果该工具确定你的使用中的前向门是最佳的，则表示你正在以最佳方式连接到 Microsoft 的全球网络。
+最佳的 Microsoft 365 服务前端是离网络出口最近的入口，通常位于你的城市或都市区域。 使用 [Microsoft 365 ](office-365-network-mac-perf-onboarding-tool.md) 连接测试工具 (预览) 确定使用中的 Microsoft 365 服务前端的位置和最佳服务前端。 如果该工具确定你的使用中的前端是最佳，那么你最好连接到 Microsoft 的全局网络。
 
-### <a name="what-is-an-internet-egress-location"></a>Internet 出口的位置是什么？
+### <a name="what-is-an-internet-egress-location"></a>什么是 Internet 出口位置？
 
-Internet 出局位置是网络流量退出企业网络并连接到 Internet 的位置。 这也标识为您的网络地址转换 (NAT) 设备的位置，通常与 Internet 服务提供商 (ISP) 进行连接的位置相同。 如果你发现您的位置和 internet 出局位置之间的距离很长，则这可能表示有重要的 WAN backhaul。
+Internet 出口位置是网络流量退出企业网络并连接到 Internet 的位置。 这还将标识为具有网络地址转换 (NAT) 设备的位置，以及通常与 Internet 服务提供商 (ISP) 。 如果您看到您的位置和 Internet 出口位置之间的距离很长，这可能表示 WAN 回程很大。
 
 ## <a name="related-topics"></a>相关主题
 
 [Microsoft 365 网络见解 (预览) ](office-365-network-mac-perf-insights.md)
 
-[Microsoft 365 网络评估 (预览版) ](office-365-network-mac-perf-score.md)
+[Microsoft 365 网络评估 (预览) ](office-365-network-mac-perf-score.md)
 
 [Microsoft 365 连接测试工具 (预览) ](office-365-network-mac-perf-onboarding-tool.md)
 

@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 1df1295b3386b94e3737c53ac8226c719c8bfa08
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 87ac6194374e8e042cf9d00271b17dd8bb785d64
+ms.sourcegitcommit: 005028af7c5a6b2e95f17a0037958131484d9e73
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49929918"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "50145343"
 ---
 # <a name="identitylogonevents"></a>IdentityLogonEvents
 
@@ -35,7 +35,7 @@ ms.locfileid: "49929918"
 **适用于：**
 - Microsoft 365 Defender
 
-高级搜寻架构中的表包含有关通过 Microsoft Defender 捕获本地 Active Directory 的身份验证活动的信息，以及 Microsoft Cloud App Security 捕获的与 Microsoft 联机服务相关的身份验证 `IdentityLogonEvents` 活动。 [](advanced-hunting-overview.md) 使用此参考来构建从此表返回信息的查询。
+高级搜寻架构中的表包含有关通过 Microsoft Defender 捕获的通过本地 Active Directory 进行身份验证活动的信息，以及 Microsoft Cloud App Security 捕获的与 Microsoft 联机服务相关的身份验证 `IdentityLogonEvents` 活动。 [](advanced-hunting-overview.md) 使用此参考来构建从此表返回信息的查询。
 
 >[!TIP]
 > 有关事件类型的详细信息 (表) 支持的值，请使用安全中心中提供的内置 `ActionType` 架构参考。 [](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center)
@@ -50,7 +50,7 @@ ms.locfileid: "49929918"
 | `Timestamp` | datetime | 记录事件的日期和时间 |
 | `ActionType` | string | 触发事件的活动类型。 有关详细信息 [，请参阅门户内架构](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) 参考 |
 | `LogonType` | string | 登录会话的类型，特别是：<br><br> - **交互** - 用户使用本地键盘和屏幕与计算机进行物理交互<br><br> - **远程交互式 (RDP)** 登录 - 用户使用远程桌面、终端服务、远程协助或其他 RDP 客户端与计算机进行远程交互<br><br> - **网络** - 使用 PsExec 访问计算机或访问计算机上的共享资源（如打印机和共享文件夹）时启动的会话<br><br> - **批处理** - 由计划任务启动的会话<br><br> - **服务** - 服务启动时启动的会话 |
-| `Application` | string | 执行录制的操作的应用程序 |
+| `Application` | string | 执行所记录操作的应用程序 |
 | `Protocol` | string | 使用的网络协议 |
 | `FailureReason` | string | 说明所记录操作失败的原因的信息 |
 | `AccountName` | string | 帐户的用户名 |
@@ -63,12 +63,14 @@ ms.locfileid: "49929918"
 | `DeviceType` | string | 设备类型 |
 | `OSPlatform` | string | 计算机上运行的操作系统平台。 这表示特定操作系统，包括同一系列中的变体，如 Windows 10 和 Windows 7。 |
 | `IPAddress` | string | 分配给终结点的 IP 地址，在相关的网络通信期间使用 |
+| `Port` | string | 通信期间使用的 TCP 端口 |
 | `DestinationDeviceName` | string | 运行处理所记录操作的服务器应用程序的设备的名称 |
 | `DestinationIPAddress` | string | 运行处理所记录操作的服务器应用程序的设备的 IP 地址 |
+| `DestinationPort` | string | 相关网络通信的目标端口 |
 | `TargetDeviceName` | string | 已记录 (的) 的设备的 FQDN 的完全限定域名 |
 | `TargetAccountDisplayName` | string | 记录的操作应用于的帐户的显示名称 |
 | `Location` | string | 与事件关联的城市、国家/地区或其他地理位置 |
-| `Isp` | string | Internet 服务提供商 (与) IP 地址关联的 ISP 服务 |
+| `Isp` | string | Internet 服务提供商 (ISP) 与终结点 IP 地址关联 |
 | `ReportId` | long | 事件的唯一标识符 |
 | `AdditionalFields` | string | 有关实体或事件的其他信息 |
 

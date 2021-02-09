@@ -14,17 +14,21 @@ ms.custom:
 description: 管理员可以了解如何使用安全 & 合规中心的邮件流仪表板中的"非接受域"报告监视来自内部部署组织的邮件，其中发件人的域未在 Microsoft 365 中配置。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 401d566158ca3f730af94fab60c471484e244a16
-ms.sourcegitcommit: 537e513a4a232a01e44ecbc76d86a8bcaf142482
+ms.openlocfilehash: 573fb0ba2bf7981b6eb7df4eec7c8c4e5d596cac
+ms.sourcegitcommit: e920e68c8d0eac8b152039b52cfc139d478a67b3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "50029842"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50150816"
 ---
 # <a name="non-accepted-domain-report-in-the-security--compliance-center"></a>安全与合规中心中的&报告
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**适用于**
+- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
+- [Microsoft Defender for Office 365 计划 1 和计划 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 安全与合规中心的邮件流仪表板中的[](mail-flow-insights-v2.md)"非接受域"报告显示有关来自内部部署电子邮件组织的邮件的信息，其中发件人的域未配置为 Microsoft 365 组织中接受的域。 [&](https://protection.office.com)
 
@@ -34,7 +38,7 @@ ms.locfileid: "50029842"
 
 ## <a name="report-view-for-the-non-accepted-domain-report"></a>非接受域报告的报告视图
 
-单击"非接受 **域"小部件上的** 图表将进入 **非接受域** 报告。
+单击"非接受域 **"小部件上的** 图表将进入 **非接受域** 报告。
 
 默认情况下，将显示所有受影响的连接器的活动。 如果单击 **"显示数据"，** 可以从下拉列表中选择特定连接器。
 
@@ -56,7 +60,7 @@ ms.locfileid: "50029842"
 
 若要将特定日期范围的报告通过电子邮件发送给一个或多个收件人，请单击"请求 **下载"。**
 
-当您在表中选择一行时，将显示一个包含以下信息的飞出图：
+选择表格中的行时，将显示一个包含以下信息的飞出图：
 
 - "日期"
 - **入站连接器名称**

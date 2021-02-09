@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 9fbd24185288265d698288e0d5e63e8b3c2afd10
-ms.sourcegitcommit: 7ecd10b302b3b3dfa4ba3be3a6986dd3c189fbff
+ms.openlocfilehash: 1a00f7d5fb37cc9eea3f9454d473703084960864
+ms.sourcegitcommit: d739f48b991793c08522a3d5323beba27f0111b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "49921842"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "50142929"
 ---
 # <a name="readiness-assessment-tools"></a>准备情况评估工具
 
@@ -26,9 +26,9 @@ ms.locfileid: "49921842"
 
 ## <a name="online-readiness-assessment-tool-for-management-settings"></a>用于管理设置的联机准备情况评估工具
 
-联机工具检查 Microsoft Endpoint Manager (（特别是 Microsoft Intune) 、Azure Active Directory (Azure AD) 和 Microsoft 365）中的设置，以确保这些设置与 Microsoft 托管桌面一起运行。 在上一次在 Azure AD 组织或租户租户中运行检查后，Microsoft 托管桌面会保留与这些检查 (12) 。 12 个月后，我们会以去标识的形式保留它。 你可以选择删除我们收集的数据。
+联机工具检查 Microsoft Endpoint Manager (（特别是 Microsoft Intune) 、Azure Active Directory (Azure AD) 和 Microsoft 365）中的设置，以确保这些设置与 Microsoft 托管桌面一起运行。 上一次在 Azure AD 组织或租户租户中运行检查后，Microsoft 托管桌面会保留与这些检查 (12) 。 12 个月后，我们会以去标识的形式保留它。 你可以选择删除我们收集的数据。
 
-至少具有 Intune 管理员角色的任何人都可以运行此工具，但条件访问策略和 (身份验证[中的](readiness-assessment-fix.md#multifactor-authentication)两项检查需要其他[](readiness-assessment-fix.md#conditional-access-policies)权限。
+至少具有全局读取者或 Intune 管理员角色的任何人都可以运行此工具，但条件访问策略和多重身份验证中的两项 (检查[](readiness-assessment-fix.md#conditional-access-policies)需要其他权限。 [](readiness-assessment-fix.md#multifactor-authentication)
  
 评估工具将检查以下项：
 
@@ -48,7 +48,7 @@ ms.locfileid: "49921842"
 |多重身份验证 | 验证多重身份验证是否不适用于 Microsoft Managed Desktop 服务帐户。
 |PowerShell 脚本     | 检查Windows PowerShell脚本的分配方式是否面向Microsoft 托管桌面设备    |
 |地区     | 检查你的区域是否受 Microsoft 托管桌面支持        |
-|安全基线     | 检查安全基线配置文件是否未面向所有用户或安全 (策略不应面向任何 Microsoft 托管桌面设备。)        |
+|安全基线     | 检查安全基线配置文件是否未面向所有用户或安全 (策略的所有设备不应面向任何 Microsoft 托管桌面设备。)        |
 |Windows 应用     | 查看要分配给 Microsoft 托管桌面设备的应用      |
 |Windows Hello 企业版     | 检查 Windows Hello 企业应用是否已启用        |
 |Windows 10 更新圈     | 检查 Intune 的"Windows 10 更新圈"策略是否未面向所有用户或所有设备 (该策略不应面向任何 Microsoft托管桌面设备。)      |
@@ -84,7 +84,7 @@ ms.locfileid: "49921842"
 |Ready     | 完成注册前无需任何操作。        |
 |公告    | 按照工具中的步骤操作，实现注册和用户的最佳体验。 *你可以完成* 注册，但在部署第一台设备之前必须解决这些问题。        |
 |未就绪 | *如果不解决这些问题* ，注册将失败。 按照工具中的步骤进行解析。        |
-|错误 | Azure Active Director (AD) 角色没有足够的权限来运行此检查。 |
+|Error | Azure Active Director (AD) 你使用的角色没有足够的权限来运行此检查。 |
 
 ## <a name="after-enrollment"></a>注册后
 

@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 4cd23b8f3ba99b38264b9bf1ba18e8ec2574bab6
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: cf4204767843b9a9e0b0bbfecc2d3fc50db531fc
+ms.sourcegitcommit: 005028af7c5a6b2e95f17a0037958131484d9e73
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49931058"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "50145447"
 ---
 # <a name="devicetvmsecureconfigurationassessmentkb"></a>DeviceTvmSecureConfigurationAssessmentKB
 
@@ -51,8 +51,8 @@ ms.locfileid: "49931058"
 | `ConfigurationCategory` | string | 配置所属的类别或分组：应用程序、OS、网络、帐户、安全控件|
 | `ConfigurationSubcategory` | string |配置所属的子类别或子组。 在许多情况下，它用于描述特定的功能。 |
 | `ConfigurationBenchmarks` | string | 推荐相同或类似配置的行业基准的列表 |
-| `RelatedMitreTechniques` | string | 与该配置相关的 Mitre ATT&CK 框架技术的列表 |
-| `RelatedMitreTactics ` | string | 与该配置相关的 Mitre ATT&CK 框架技巧的列表 |
+| `Tags` | string | 表示用于标识或分类安全配置的各种属性的标签 |
+| `RemediationOptions` | string | 用于降低或解决任何关联风险的建议操作 |
 
 ## <a name="related-topics"></a>相关主题
 

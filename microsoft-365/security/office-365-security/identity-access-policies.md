@@ -19,14 +19,19 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 ms.technology: mdo
-ms.openlocfilehash: 5f1f9d8c5f4e507e62de1b815d2345fc6b70bfea
-ms.sourcegitcommit: 8e696c084d097520209c864140af11aa055b979e
+ms.openlocfilehash: e70274f5718d1c8e8fca1be780649cdb0fcef851
+ms.sourcegitcommit: d739f48b991793c08522a3d5323beba27f0111b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "50097278"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "50142893"
 ---
 # <a name="common-identity-and-device-access-policies"></a>常见标识和设备访问策略
+
+**适用于**
+- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
+- [Microsoft Defender for Office 365 计划 1 和计划 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- Azure
 
 本文介绍用于保护对 Microsoft 365 云服务的访问的常见建议策略，包括使用 Azure Active Directory (Azure AD) 应用程序代理发布的本地应用程序。
 
@@ -51,7 +56,7 @@ ms.locfileid: "50097278"
 
 为了让你有时间来完成这些任务，我们建议按此表中列出的顺序实现基准策略。 但是，可随时实施敏感和高度管控级别的 MFA 策略。
 
-|保护级别|策略|更多信息|
+|保护级别|策略|详细信息|
 |---|---|---|
 |**Baseline**|[当登录风险为中或高 *时需要* MFA](#require-mfa-based-on-sign-in-risk)||
 ||[阻止不支持新式身份验证的客户端](#block-clients-that-dont-support-multi-factor)|不使用新式身份验证的客户端可以绕过条件访问策略，因此阻止这些策略非常重要。|
@@ -108,7 +113,7 @@ ms.locfileid: "50097278"
 
 在 **"分配"** 部分：
 
-|设置|属性|值|注意|
+|Setting|属性|值|注意|
 |---|---|---|---|
 |用户和组|包括|**选择用户和>组**：选择包含目标用户帐户的特定组。|从包含试点用户帐户的组开始。|
 ||排除|**用户和组**：选择条件访问异常组;服务帐户 (应用标识) 。|应根据需要临时修改成员身份。|
@@ -121,7 +126,7 @@ ms.locfileid: "50097278"
 
 根据目标保护级别应用风险级别设置。
 
-|保护级别|所需的风险级别值|操作|
+|保护级别|所需的风险级别值|Action|
 |---|---|---|
 |基线|高、中|检查两者。|
 |敏感|高、中、低|检查所有三项。|
@@ -130,7 +135,7 @@ ms.locfileid: "50097278"
 
 在 **"访问控制"** 部分：
 
-|设置|属性|值|操作|
+|Setting|属性|值|Action|
 |---|---|---|---|
 |授予|**Grant access**||Select|
 |||**需要多重身份验证**|支票|
@@ -151,7 +156,7 @@ ms.locfileid: "50097278"
 
 在 **"分配"** 部分：
 
-|设置|属性|值|注意|
+|Setting|属性|值|注意|
 |---|---|---|---|
 |用户和组|包括|**选择用户和>组**：选择包含目标用户帐户的特定组。|从包含试点用户帐户的组开始。|
 ||排除|**用户和组**：选择条件访问异常组;服务帐户 (应用标识) 。|应根据需要临时修改成员身份。|
@@ -161,7 +166,7 @@ ms.locfileid: "50097278"
 
 在 **"访问控制"** 部分：
 
-|设置|属性|值|操作|
+|Setting|属性|值|Action|
 |---|---|---|---|
 |授予|**阻止访问**||Select|
 ||**需要所有已选控件**||Select|
@@ -183,7 +188,7 @@ Log in to the [Microsoft Azure portal (https://portal.azure.com)](https://portal
 
 在 **"分配"** 部分：
 
-|类型|属性|值|操作|
+|类型|属性|值|Action|
 |---|---|---|---|
 |Users|包括|**所有用户**|Select|
 |用户风险|**High**||Select|
@@ -191,7 +196,7 @@ Log in to the [Microsoft Azure portal (https://portal.azure.com)](https://portal
 
 在"第二 **个分配"** 部分：
 
-|类型|属性|值|操作|
+|类型|属性|值|Action|
 |---|---|---|---|
 |Access|**允许访问**||Select|
 |||**需要更改密码**|支票|
@@ -219,7 +224,7 @@ To see the specific recommendations for each configuration level and the minimum
 
 使用标识和设备访问配置中概述[](microsoft-365-policies-configurations.md)的原则，基线和敏感保护层与级别 2 企业增强数据保护设置紧密映射。 高度管控保护层紧密映射到级别 3 企业高数据保护设置。
 
-|保护级别|应用保护策略|更多信息|
+|保护级别|应用保护策略|详细信息|
 |---|---|---|
 |基线|[级别 2 增强的数据保护](https://docs.microsoft.com/mem/intune/apps/app-protection-framework#level-2-enterprise-enhanced-data-protection)|级别 2 中强制执行的策略设置包括为级别 1 建议的所有策略设置，并且仅添加到或更新以下策略设置，以实施比级别 1 更多的控件和更复杂的配置。|
 |敏感|[级别 2 增强的数据保护](https://docs.microsoft.com/mem/intune/apps/app-protection-framework#level-2-enterprise-enhanced-data-protection)|级别 2 中强制执行的策略设置包括为级别 1 建议的所有策略设置，并且仅添加到或更新以下策略设置，以实施比级别 1 更多的控件和更复杂的配置。|
@@ -290,7 +295,7 @@ With Conditional Access, organizations can restrict access to approved (modern a
 
 有关 **Windows 运行状况>服务评估规则** 的设备运行状况，请参阅此表。
 
-|属性|值|操作|
+|属性|值|Action|
 |---|---|---|
 |需要 BitLocker|需要|Select|
 |要求在设备上启用安全启动|需要|Select|
@@ -303,7 +308,7 @@ With Conditional Access, organizations can restrict access to approved (modern a
 
 有关 **系统安全性，** 请参阅此表。
 
-|类型|属性|值|操作|
+|类型|属性|值|Action|
 |---|---|---|---|
 |Password|需要密码才能解锁移动设备|需要|Select|
 ||简单密码|阻止|Select|
@@ -325,7 +330,7 @@ With Conditional Access, organizations can restrict access to approved (modern a
 
 #### <a name="microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint
 
-|类型|属性|值|操作|
+|类型|属性|值|Action|
 |---|---|---|---|
 |适用于终结点的 Microsoft Defender 规则|要求设备处于计算机风险分数或处于计算机风险分数之下|中|Select|
 |

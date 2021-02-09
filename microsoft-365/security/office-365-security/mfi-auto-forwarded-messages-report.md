@@ -12,17 +12,21 @@ ms.assetid: b5543faa-44fa-44c5-8180-fb835e7e452d
 description: 管理员可以在安全与合规中心的邮件流仪表板中了解自动转发&报告。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: c892400152df15adb3dfeb0c747ed7fae034d3d6
-ms.sourcegitcommit: 537e513a4a232a01e44ecbc76d86a8bcaf142482
+ms.openlocfilehash: c95c403e0b342bf0466c45804ba3975c492b8e1b
+ms.sourcegitcommit: e920e68c8d0eac8b152039b52cfc139d478a67b3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "50029938"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50150590"
 ---
 # <a name="auto-forwarded-messages-insight-in-the-security--compliance-center"></a>安全与合规中心中的自动转发&见解
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**适用于**
+- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
+- [Microsoft Defender for Office 365 计划 1 和计划 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 安全 &**与** 合规中心的邮件流仪表板 [](mail-flow-insights-v2.md)中的"自动转发邮件"见解显示有关从组织自动转发给外部域中 [收件人](https://protection.office.com)的邮件的信息。
 
@@ -43,9 +47,9 @@ ms.locfileid: "50029938"
 
   - **转发到的前 5 个域**
   - **上个星期 (新域)**
-  - **前 5 个转发用户**
+  - **前 5 位转发用户**
   - **上周 (新用户)**
-  - 有关更多详细信息， [请参阅转发修改](mfi-new-users-forwarding-email.md#forwarding-modifications-report) 报告的链接。
+  - 指向转发 [修改报告的链接，](mfi-new-users-forwarding-email.md#forwarding-modifications-report) 了解更多详细信息。
 
 ![安全与合规中心内自动转发的邮件报告&飞出](../../media/mfi-auto-forwarded-messages-details.png)
 

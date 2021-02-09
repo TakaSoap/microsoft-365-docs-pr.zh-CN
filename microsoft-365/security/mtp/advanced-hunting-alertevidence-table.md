@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: c01b0aae1eff3d9b4add632aff0f13cb56941a30
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 7457084d49c5a9fef4ef79abc7702c6b473efcd2
+ms.sourcegitcommit: 005028af7c5a6b2e95f17a0037958131484d9e73
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49932295"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "50145283"
 ---
 # <a name="alertevidence"></a>AlertEvidence
 
@@ -45,10 +45,10 @@ ms.locfileid: "49932295"
 | `AlertId` | string | 警报的唯一标识符 |
 | `ServiceSource` | string | 提供警报信息的产品或服务 |
 | `EntityType` | string | 对象类型，例如文件、进程、设备或用户 |
-| `EvidenceRole` | string | 如何在警报中涉及实体，指示该实体是受到影响还是仅相关 |
+| `EvidenceRole` | string | 实体在警报中如何参与，指示该实体是受到影响还是只是相关的 |
 | `EvidenceDirection` | string | 指示实体是网络连接的源还是目标 |
 | `FileName` | string | 录制操作所应用到的文件的名称 |
-| `FolderPath` | string | 包含已记录操作应用于的文件的文件夹 |
+| `FolderPath` | string | 包含已记录操作所应用到的文件的文件夹 |
 | `SHA1` | string | 录制操作所应用到的文件的 SHA-1 |
 | `SHA256` | string | 录制操作所应用到的文件的 SHA-256。 此字段通常不填充，可用时使用 SHA1 列。 |
 | `FileSize` | int | 文件大小（以字节为单位） |
@@ -59,6 +59,7 @@ ms.locfileid: "49932295"
 | `AccountDomain` | string | 帐户的域 |
 | `AccountSid` | string | 帐户 (SID) 安全标识符 |
 | `AccountObjectId` | string | Azure Active Directory 中帐户的唯一标识符 |
+| `AccountUpn` | string | 帐户的用户主体 (UPN)  |
 | `DeviceId` | string | 服务中的设备的唯一标识符 |
 | `DeviceName` | string | 计算机的完全限定域名 (FQDN) |
 | `LocalIP` | string | 分配给通信期间使用的本地设备的 IP 地址 |
@@ -68,6 +69,9 @@ ms.locfileid: "49932295"
 | `Application` | string | 执行录制的操作的应用程序 |
 | `ProcessCommandLine` | string | 用于创建新进程的命令行 |
 | `AdditionalFields` | string | 有关 JSON 数组格式的事件的其他信息 |
+| `RegistryKey` |string | 记录的操作已应用到的注册表项 |
+| `RegistryValueName` |string | 记录的操作应用于的注册表值的名称 |
+| `RegistryValueData` |string | 记录的操作应用于的注册表值的数据 |
 
 ## <a name="related-topics"></a>相关主题
 - [高级搜寻概述](advanced-hunting-overview.md)

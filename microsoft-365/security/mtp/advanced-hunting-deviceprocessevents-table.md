@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 7ad4fa530c3bc44169f7785aad95a3205f2cb8d9
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 6f94b861aa73d01f9e906d41bc52a9724552cd33
+ms.sourcegitcommit: 005028af7c5a6b2e95f17a0037958131484d9e73
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49931142"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "50145507"
 ---
 # <a name="deviceprocessevents"></a>DeviceProcessEvents
 
@@ -51,29 +51,34 @@ ms.locfileid: "49931142"
 | `DeviceName` | string | 计算机的完全限定域名 (FQDN) |
 | `ActionType` | string | 触发事件的活动类型。 有关详细信息 [，请参阅门户内架构](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) 参考 |
 | `FileName` | string | 录制操作所应用到的文件的名称 |
-| `FolderPath` | string | 包含已记录操作应用于的文件的文件夹 |
+| `FolderPath` | string | 包含已记录操作所应用到的文件的文件夹 |
 | `SHA1` | string | 录制操作所应用到的文件的 SHA-1 |
 | `SHA256` | string | 录制操作所应用到的文件的 SHA-256。 通常不会填充此字段 — 可用时使用 SHA1 列。 |
 | `MD5` | string | 记录的操作应用到的文件的 MD5 哈希 |
 | `ProcessId` | int | 新 (进程的进程 ID) PID |
 | `ProcessCommandLine` | string | 用于创建新进程的命令行 |
 | `ProcessIntegrityLevel` | string | 新创建的过程的完整性级别。 Windows 根据某些特征（例如是否从下载的 Internet 启动）为进程分配完整性级别。 这些完整性级别影响对资源的权限 |
-| `ProcessTokenElevation` | string | 指示是否存在用户访问控制的令牌类型 (UAC) 权限提升应用于新创建的进程 |
+| `ProcessTokenElevation` | string | 指示应用于新创建进程的令牌提升类型。 可能的值：TokenElevationTypeLimited (restricted) 、TokenElevationTypeDefault (standard) 和 TokenElevationTypeFull (提升)  |
 | `ProcessCreationTime` | datetime | 创建过程的日期和时间 |
 | `AccountDomain` | string | 帐户的域 |
 | `AccountName` | string | 帐户的用户名 |
 | `AccountSid` | string | 帐户 (SID) 安全标识符 |
+| `AccountUpn` | string | 帐户的用户主体 (UPN)  |
+| `AccountObjectId` | string | Azure AD 中帐户的唯一标识符 |
 | `LogonId` | string | 登录会话的标识符。 此标识符仅在重新启动之间的同一计算机上是唯一的 |
 | `InitiatingProcessAccountDomain` | string | 运行负责事件的进程的帐户的域 |
 | `InitiatingProcessAccountName` | string | 运行负责事件的进程的帐户的用户名 |
 | `InitiatingProcessAccountSid` | string | 安全 (SID) 运行负责事件的进程的帐户的 SID 标识符 |
+| `InitiatingProcessAccountUpn` | string | 运行 (事件) 帐户的 UPN 帐户的用户主体名称 |
+| `InitiatingProcessAccountObjectId` | string | 运行负责事件的进程的用户帐户的 Azure AD 对象 ID |
 | `InitiatingProcessLogonId` | string | 启动事件的进程的登录会话的标识符。 此标识符仅在重新启动之间的同一计算机上是唯一的。 |
 | `InitiatingProcessIntegrityLevel` | string | 启动事件的过程的完整性级别。 Windows 根据某些特征（例如是否从 Internet 下载启动）为进程分配完整性级别。 这些完整性级别影响对资源的权限 |
-| `InitiatingProcessTokenElevation` | string | 指示 UAC 中是否存在用户访问控制的令牌 (，) 启动事件的进程应用的权限提升 |
+| `InitiatingProcessTokenElevation` | string | 指示 UAC 是否存在用户访问控制的令牌类型 (UAC) 启动事件的进程应用的特权提升 |
 | `InitiatingProcessSHA1` | string | 启动事件 (映像) SHA-1 |
-| `InitiatingProcessSHA256` | string | 启动事件 (映像文件) SHA-256。 通常不会填充此字段 — 可用时使用 SHA1 列。 |
+| `InitiatingProcessSHA256` | string | 启动事件 (映像) SHA-256。 通常不会填充此字段 — 可用时使用 SHA1 列。 |
 | `InitiatingProcessMD5` | string | 启动事件 (映像) 的 MD5 哈希 |
 | `InitiatingProcessFileName` | string | 启动事件的进程的名称 |
+| `InitiatingProcessFileSize` | long | 运行负责事件的进程的文件的大小 |
 | `InitiatingProcessId` | int | 启动 (PID) 进程的进程 ID |
 | `InitiatingProcessCommandLine` | string | 用于运行启动事件的进程的命令行 |
 | `InitiatingProcessCreationTime` | datetime | 启动事件的过程启动的日期和时间 |
@@ -83,6 +88,8 @@ ms.locfileid: "49931142"
 | `InitiatingProcessParentCreationTime` | datetime | 启动负责事件的进程的父级的日期和时间 |
 | `ReportId` | long | 基于重复计数器的事件标识符。 若要标识唯一事件，此列必须与 DeviceName 和时间戳列一起使用 |
 | `AppGuardContainerId` | string | 应用程序防护用于隔离浏览器活动的虚拟化容器的标识符 |
+| `AdditionalFields` | string | 有关 JSON 数组格式的事件的其他信息 |
+| `FileSize` | long | 文件大小（以字节为单位） |
 
 ## <a name="related-topics"></a>相关主题
 - [高级搜寻概述](advanced-hunting-overview.md)

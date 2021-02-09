@@ -8,25 +8,30 @@ manager: dansimp
 audience: ITPro
 ms.topic: how-to
 ms.date: ''
-ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: 管理员可以了解如何跨 Exchange Online Protection 和 EOP (和 Microsoft Defender for Office 365 的保护功能) 标准策略和严格策略设置
-ms.openlocfilehash: a77201835652fb36822fbc603f5211c1f7a9521b
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: f57b388716eca02741ba48b3e6b47b7cf9f28884
+ms.sourcegitcommit: e920e68c8d0eac8b152039b52cfc139d478a67b3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49659226"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50150073"
 ---
 # <a name="preset-security-policies-in-eop-and-microsoft-defender-for-office-365"></a>EOP 和 Microsoft Defender for Office 365 中的预设安全策略
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**适用于**
+- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
+- [Microsoft Defender for Office 365 计划 1 和计划 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-预设安全策略提供了一个集中位置，用于一次将建议的所有垃圾邮件、恶意软件和网络钓鱼策略应用于用户。 策略设置不可配置。 相反，它们由我们设置，基于我们在数据中心中的观察和体验，以平衡将有害的内容远离用户而不中断他们的工作。
+预设安全策略提供了一个集中位置，用于一次将建议的所有垃圾邮件、恶意软件和网络钓鱼策略应用于用户。 策略设置不可配置。 相反，它们由我们设置，基于我们在数据中心中的观察和体验，以在将有害的内容远离用户而不中断其工作之间取得平衡。
 
 本主题的其余部分介绍了预设安全策略以及如何配置它们。
 
@@ -47,7 +52,7 @@ ms.locfileid: "49659226"
 - **标准保护**：适用于大多数用户的基线保护配置文件。
 - **严格保护**：针对所选用户的更积极保护配置文件 (高价值目标或优先级用户) 。
 
-使用具有条件和例外的规则来确定配置文件是应用还是不适用于哪些人。
+使用具有条件和例外的规则，这些规则可确定配置文件是应用还是不适用于哪些人。
 
 只能使用一次条件或例外，但可以为条件或例外指定多个值。 同一个条件或例外的多个值使用“或”逻辑（例如，_\<recipient1\>_ 或 _\<recipient2\>_）。 不同的条件或例外使用“和”逻辑（例如，_\<recipient1\>_ 和 _\<member of group 1\>_）。
 
@@ -59,27 +64,27 @@ ms.locfileid: "49659226"
 
 ### <a name="policies-in-preset-security-policies"></a>预设安全策略中的策略
 
-预设安全策略使用来自 EOP 和 Microsoft Defender for Office 365 中各种保护功能的相应策略。 这些策略是在 _将标准保护_ 或严格保护预设安全策略分配给用户后创建的。 不能修改这些策略。
+预设安全策略使用来自 EOP 和 Microsoft Defender for Office 365 中各种保护功能的相应策略。 这些策略是在 _将标准保护_ 或严格保护预设安全策略分配给用户之后创建的。 不能修改这些策略。
 
 - **Exchange Online Protection (EOP)** 策略：这包括具有 Exchange Online 邮箱的 Microsoft 365 组织和没有 Exchange Online 邮箱的独立 EOP 组织：
 
-  - [名为"](configure-your-spam-filter-policies.md)**标准** 预设安全策略"和"**严格预设安全策略"的反垃圾邮件策略**。
-  - [名为"](configure-anti-malware-policies.md)**标准** 预设安全策略"和"**严格预设安全策略"的反恶意软件策略**。
-  - [名为"标准预设安全策略"](set-up-anti-phishing-policies.md#spoof-settings)和"严格预设安全策略"的EOP 防钓鱼策略 (欺骗) 。
+  - [名为"标准预设](configure-your-spam-filter-policies.md) 安全策略 **"** 和" **严格预设安全策略"的反垃圾邮件策略**。
+  - [名为"标准预设](configure-anti-malware-policies.md)安全策略"和"**严格预设安全策略"的反恶意软件策略**。
+  - [名为"标准预设安全策略"](set-up-anti-phishing-policies.md#spoof-settings)**和"严格** 预设安全策略"的EOP 防钓鱼策略 (欺骗设置) 。
 
 - **Microsoft Defender for Office 365 策略**：这包括具有 Microsoft 365 E5 或适用于 Office 365 的 Defender 附加订阅的组织：
 
-  - Microsoft Defender for Office 365 中名为 **"标准** 预设安全策略" **和"严格** 预设安全策略"的防钓鱼策略，其中包括：
+  - Microsoft Defender for Office 365 中名为 **"标准** 预设安全策略"和"严格预设安全策略"的防钓鱼 **策略，其中包括**：
 
-    - EOP [防钓鱼](set-up-anti-phishing-policies.md#spoof-settings) 策略中可用的相同欺骗设置。
+    - EOP [反网络钓鱼](set-up-anti-phishing-policies.md#spoof-settings) 策略中可用的相同欺骗设置。
     - [模拟设置](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)
     - [高级网络钓鱼阈值](set-up-anti-phishing-policies.md#advanced-phishing-thresholds-in-anti-phishing-policies-in-microsoft-defender-for-office-365)
 
   - [名为"](set-up-atp-safe-links-policies.md)**标准** 预设安全策略"和"**严格预设安全策略"的安全链接策略**。
 
-  - [名为"](set-up-atp-safe-attachments-policies.md) 标准预设安全策略 **"和** " **严格预设安全策略"的安全附件策略**。
+  - [名为"](set-up-atp-safe-attachments-policies.md) 标准预设安全策略" **和** " **严格预设安全策略"的安全附件策略**。
 
-请注意，你可以将 EOP 保护应用于不同于 Microsoft Defender 的 Office 365 保护的用户。
+请注意，你可以将 EOP 保护应用于与 Microsoft Defender for Office 365 保护不同的用户。
 
 ### <a name="policy-settings-in-preset-security-policies"></a>预设安全策略中的策略设置
 
@@ -105,12 +110,12 @@ ms.locfileid: "49659226"
 - 若要连接到 Exchange Online PowerShell，请参阅[连接到 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)。
 
 - 必须分配有 Office 365 安全与合规中心内的权限，才能执行本文中的步骤：
-  - 若要配置预设安全策略，你需要是组织管理或安全 **管理员角色****组** 的成员。
+  - 若要配置预设安全策略，您必须是组织管理或安全 **管理员角色****组** 的成员。
   - 若要对预设安全策略进行只读访问，你需要是全局读者 **角色组的成员** 。
 
   有关详细信息，请参阅[安全与合规中心中的权限](permissions-in-the-security-and-compliance-center.md)。
 
-  注意：将用户添加到 Microsoft 36 & 5 管理中心的相应 Azure Active Directory 角色会为用户提供安全与合规中心所需的权限和 Microsoft 365 中其他功能的权限。 有关详细信息，请参阅 [关于管理员角色](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)。
+  注意：将用户添加到 Microsoft 36 & 5 管理中心的相应 Azure Active Directory 角色会为用户提供安全与合规中心所需的权限和 Microsoft 365 中其他功能的权限。 有关详细信息，请参阅[关于管理员角色](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)。
 
 ### <a name="use-the-security--compliance-center-to-assign-preset-security-policies-to-users"></a>使用安全&合规中心向用户分配预设安全策略
 
@@ -123,14 +128,14 @@ ms.locfileid: "49659226"
    1. 单击 **"添加条件"。** In the dropdown that appears， select a condition under **Applied if**：
 
       - **收件人是**
-      - **收件人是以下组的成员：**
+      - **收件人是以下组的成员**
       - **收件人域为**
 
       一个条件只能使用一次，但你可以为条件指定多个值。 同一条件的多个值使用 OR 逻辑 (或 _\<recipient1\>_ _\<recipient2\>_) 。
 
    2. 所选条件将显示在带阴影的节中。 在这一部分中，单击 **其中任何一个** 框。 如果您稍等片刻，将显示一个列表，以便您可以选择一个值。 或者，您可以开始键入值以筛选列表并选择值。 根据需要重复执行此步骤（次数不限）。 若要删除单个值 **，请单击值** ![ 上的" ](../../media/scc-remove-icon.png) 删除"图标。 若要删除整个条件 **，请单击** ![ 条件上的" ](../../media/scc-remove-icon.png) 删除"图标。
 
-   3. 若要添加其他条件，请单击 **"添加条件** "，然后从其余条件中选择。 不同的条件使用 AND 逻辑 (，例如 _\<recipient1\>_ _\<member of group 1\>_ ，) 。
+   3. 若要添加其他条件，请单击 **"添加条件** "，然后从其余条件中选择。 不同的条件使用 AND (，例如 _\<recipient1\>_ _\<member of group 1\>_ ，) 。
 
       重复上一步以向条件添加值，并根据需要多次重复此步骤，或直到条件用完。
 
@@ -158,4 +163,4 @@ ms.locfileid: "49659226"
 
 例如，对于被检测为垃圾邮件 (高可信度垃圾邮件) 验证邮件是否传递到 **标准** 保护用户的"垃圾邮件"文件夹，并隔离"严格保护"用户。 
 
-或者，对于 [](bulk-complaint-level-values.md)批量电子邮件，验证 BCL 值 6 或更高版本是否将邮件发送到 **标准** 保护用户的垃圾邮件文件夹，并且 BCL 值 4 或更高值会隔离严格保护 **用户** 的邮件。
+或者，对于 [](bulk-complaint-level-values.md)批量电子邮件，验证 BCL 值 6 或更高版本是否将邮件发送到 **标准** 保护用户的"垃圾邮件"文件夹，并且 BCL 值 4 或更高值会隔离严格保护 **用户** 的邮件。

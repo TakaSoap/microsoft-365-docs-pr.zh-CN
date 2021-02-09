@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: d7920be05156320411f3907cbcdae88d315b5136
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 774676e15e9018b13674149b6a2e147a91000814
+ms.sourcegitcommit: 005028af7c5a6b2e95f17a0037958131484d9e73
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49929702"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "50145495"
 ---
 # <a name="emailpostdeliveryevents"></a>EmailPostDeliveryEvents
 
@@ -45,7 +45,6 @@ ms.locfileid: "49929702"
 | 列名称 | 数据类型 | 说明 |
 |-------------|-----------|-------------|
 | `Timestamp` | datetime | 记录事件的日期和时间 |
-| `EventId` | string | 事件的唯一标识符 |
 | `NetworkMessageId` | string | 由 Microsoft 365 生成的电子邮件的唯一标识符 |
 | `InternetMessageId` | string | 发送电子邮件系统设置的电子邮件的面向公众的标识符 |
 | `Action` | string | 对实体采取的操作 |
@@ -54,11 +53,12 @@ ms.locfileid: "49929702"
 | `ActionResult` | string | 操作的结果 |
 | `RecipientEmailAddress` | string | 收件人的电子邮件地址，或通讯组列表扩展后收件人的电子邮件地址 |
 | `DeliveryLocation` | string | 发送电子邮件的位置：收件箱/文件夹、本地/外部、垃圾箱、隔离区、已失败、已弃用、已删除的邮件 |
+| `ReportId` | long | 基于重复计数器的事件标识符。 若要标识唯一事件，必须将此列与 DeviceName 和时间戳列结合使用。 |
 
 ## <a name="supported-event-types"></a>支持的事件类型
 此表捕获具有以下值 `ActionType` 的事件：
 
-- **手动** 修正 – 管理员在电子邮件传递到用户邮箱后手动对电子邮件采取操作。 这包括通过威胁资源管理器手动采取的操作[](../office-365-security/threat-explorer.md)，或者 AIR ([自动](mtp-autoir-actions.md)调查和) 批准。
+- **手动** 修正 – 管理员在将电子邮件传递到用户邮箱后手动对电子邮件采取操作。 这包括通过威胁资源管理器手动采取的操作[](../office-365-security/threat-explorer.md)，或者 AIR ([自动调查和) 批准](mtp-autoir-actions.md)。
 - **网络钓鱼 ZAP** – [零时差自动清除 (ZAP](../office-365-security/zero-hour-auto-purge.md)) 对网络钓鱼电子邮件执行传递后的操作。
 - **恶意软件 ZAP** – 零时差自动清除 (ZAP) 对在传递后发现包含恶意软件的电子邮件采取操作。
 

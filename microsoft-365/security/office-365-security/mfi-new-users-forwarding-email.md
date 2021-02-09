@@ -12,19 +12,23 @@ ms.assetid: ''
 description: 管理员可以了解如何使用安全与合规中心内的新用户转发电子邮件见解&调查其组织中用户何时将邮件转发到新域。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: af991cb0af20a0f48bc5283d4e4fb26ea75d6ba6
-ms.sourcegitcommit: 537e513a4a232a01e44ecbc76d86a8bcaf142482
+ms.openlocfilehash: 7b86d726979991a55e7d4e43bf3581a4a664ee4f
+ms.sourcegitcommit: e920e68c8d0eac8b152039b52cfc139d478a67b3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "50029866"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50150251"
 ---
 # <a name="new-users-forwarding-email-insight-in-the-security--compliance-center"></a>新用户在安全与合规中心转发&见解
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**适用于**
+- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
+- [Microsoft Defender for Office 365 计划 1 和计划 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-当组织的新用户帐户突然开始将电子邮件转发到外部域时，这是可疑的。
+当组织中新的用户帐户突然开始将电子邮件转发到外部域时，这是可疑的。
 
 当 **组织中新** 创建的用户将邮件转发 [到](https://protection.office.com) 外部域时&安全与合规中心中转发的电子邮件见解的新域会通知你。 此条件可能指示已使用遭到入侵的管理员帐户创建新用户。 如果怀疑帐户已被泄露，请参阅"响应遭到入侵[的电子邮件帐户"。](responding-to-a-compromised-email-account.md)
 
@@ -36,7 +40,7 @@ ms.locfileid: "50029866"
 
 ![单击"新用户"转发电子邮件见解后显示的详细信息飞出](../../media/mfi-new-users-forwarding-email-details.png)
 
-在报表仪表板或仪表板上单击"查看所有热门见解"&建议区域中的见解后，**还可以进入** (\> 页面 <https://protection.office.com/insightdashboard>) 。
+在报表仪表板或仪表板上单击"查看所有热门见解"&建议区域中选择见解 **后，也可以** 访问 ( \> 页面 <https://protection.office.com/insightdashboard>) 。
 
 可以单击"**查看与见解关联的** 报告"链接，转到下一节中所述的转发修改报告。
 
@@ -51,9 +55,9 @@ ms.locfileid: "50029866"
 
 该报告包含最多 90 天的数据。 默认情况下，报告显示最近 7 天的数据。
 
-此报告不直接在邮件流仪表板或[报表](mail-flow-insights-v2.md)[仪表板中提供](view-mail-flow-reports.md)。 除了单击"新用户转发电子邮件见解"中的"查看与见解"链接关联的报告外，您还可以通过以下操作访问报告：
+此报告不直接在邮件流仪表板或[报表](mail-flow-insights-v2.md)[仪表板中提供](view-mail-flow-reports.md)。 除了单击"转发电子邮件见解的新用户"中的"查看与见解"链接关联的报告外，您还可以通过以下操作访问报告：
 
-- 单击 **正在转发电子邮件见解** 的新域 [的详细信息中的"转发通知报告"链接](mfi-new-domains-being-forwarded-email.md)。
+- 单击 **正在转发电子邮件见解** 的新域 [的详细信息中的转发通知报告链接](mfi-new-domains-being-forwarded-email.md)。
 - 打开 <https://protection.office.com/reportv2?id=MailFlowNewForwarding> 。
 
 ### <a name="report-view-for-the-forwarding-modifications-report"></a>转发修改报告的报告视图

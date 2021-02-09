@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: b574717d0ba5621d85c8e73f36ddc72b062a1494
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 174db150920d2d95c043bb5d6e5a4593ea1ea39d
+ms.sourcegitcommit: 005028af7c5a6b2e95f17a0037958131484d9e73
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49931034"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "50145423"
 ---
 # <a name="aadsignineventsbeta"></a>AADSignInEventsBeta
 
@@ -71,21 +71,21 @@ ms.locfileid: "49931034"
 | `AadDeviceId`                     | string   |      Azure AD 中的设备的唯一标识符                                                                                                                                                                               |
 | `OSPlatform`                      | string        | 计算机上运行的操作系统平台。 这表示特定操作系统，包括同一系列中的变体，如 Windows 10 和 Windows 7。  |
 | `DeviceTrustType`                 | string        | 指示已登录设备的信任类型。 仅适用于托管设备方案。 可能的值是 Workplace、AzureAd 和 ServerAd。                                     |
-| `IsManaged`                       | int       | 指示启动登录的设备是否是托管设备 1 (1) 托管设备是否 (0)                                                                          |
+| `IsManaged`                       | int       | 指示启动登录的设备是否是托管设备 1 (1) 托管设备 (0)                                                                          |
 | `IsCompliant`                     | int       | 指示启动登录的设备是否符合 1 (1) 0 (0)                                                                                        |
 | `AuthenticationProcessingDetails` | string        | 有关身份验证处理器的详细信息                                                                                                                                          |
 | `AuthenticationRequirement`       | string        | 登录所需的身份验证类型。 可能的值：需要 multiFactorAuthentication (MFA) singleFactorAuthentication (不需要 MFA) 。                |
 | `TokenIssuerType`                 | int        | 指示令牌颁发者是 Azure Active Directory (0) 还是 Active Directory 联合身份验证服务 (1)                                                                              |
 | `RiskLevelAggregated`                       | int        | 登录期间聚合的风险级别。 可能的值：0 (未设置) 、1 (无) 、10 (低) 、50 (中等) 或 100 (高) 。                               |
 | `RiskDetails`                      | int        | 有关登录用户的风险状态的详细信息                                                                                                                            |
-| `RiskState`                       | int        | 指示有风险的用户状态。 可能的值：0 (无) 、1 (确认安全) 、2 (修正) 、3 (已解除) 、4 (存在风险) 或 5 (确认) 。                                |
+| `RiskState`                       | int        | 指示有风险的用户状态。 可能的值：0 (无) 、1 (确认安全) 、2 (修正) 、3 (已解除) 、4 (存在风险) 或 5 (确认已泄露) 。                                |
 | `UserAgent`                       | string        | 来自 Web 浏览器或其他客户端应用程序的用户代理信息                                                                                                             |
 | `ClientAppUsed`                   | string        | 指示使用的客户端应用                                                                                                                                                       |
 | `Browser`                         | string        | 有关用于登录的浏览器版本的详细信息                                                                                                                            |
 | `ConditionalAccessPolicies`       | string        | 应用于登录事件的条件访问策略的详细信息                                                                                                             |
-| `ConditionalAccessStatus`         | int        | 应用于登录的条件访问策略的状态。 可能的值是 0 (应用的策略) 1 (尝试应用策略失败) 或 2 (策略未) 。      |
+| `ConditionalAccessStatus`         | int        | 应用于登录的条件访问策略的状态。 可能的值是 0 (应用策略) 1 (尝试应用策略失败) 或 2 (策略未) 。      |
 | `IPAddress`                       | string        | 分配给终结点的 IP 地址，在相关的网络通信期间使用                                                                                                  |
-| `CountryCode`                     | string        | 指示客户端 IP 地址已异地分配的国家/地区两个字母的代码                                                                                                    |
+| `Country`                     | string        | 指示客户端 IP 地址已异地分配的国家/地区两个字母的代码                                                                                                    |
 | `State`                           | string        | 登录发生位置的状态（如果可用）                                                                                                                                      |
 | `City`                            | string        | 帐户用户所在的城市                                                                                                                                              |
 | `Latitude`                        | string        | 登录位置的北向南坐标                                                                                                                              |

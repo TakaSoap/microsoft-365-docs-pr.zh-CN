@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 7016127a75bca48103f5325ce169faa3d7c31c85
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 48a1520e9fc6239fd3105f01a32a03e5e58df174
+ms.sourcegitcommit: 005028af7c5a6b2e95f17a0037958131484d9e73
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49929810"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "50145279"
 ---
 # <a name="identityqueryevents"></a>IdentityQueryEvents
 
@@ -59,8 +59,10 @@ ms.locfileid: "49929810"
 | `AccountDisplayName` | string | 通讯簿中显示的帐户用户的名称。 通常是给定或名字、中间初始和姓氏或姓氏的组合。 |
 | `DeviceName` | string | 终结点的 FQDN (完全) 域名 |
 | `IPAddress` | string | 分配给终结点的 IP 地址，在相关的网络通信期间使用 |
+| `Port` | string | 通信期间使用的 TCP 端口 |
 | `DestinationDeviceName` | string | 运行处理所记录操作的服务器应用程序的设备的名称 |
 | `DestinationIPAddress` | string | 运行处理所记录操作的服务器应用程序的设备的 IP 地址 |
+| `DestinationPort` | string | 相关网络通信的目标端口 |
 | `TargetDeviceName` | string | 已记录 (的) 的设备的 FQDN 的完全限定域名 |
 | `TargetAccountUpn` | string | 用户主体 (UPN) 记录操作应用于的帐户的名称 |
 | `TargetAccountDisplayName` | string | 记录的操作应用于的帐户的显示名称 |

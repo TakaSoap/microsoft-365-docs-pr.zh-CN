@@ -10,12 +10,12 @@ ms.service: o365-administration
 search.appverid: MET150
 localization_priority: Normal
 description: 了解如何设置 Microsoft Viva 主题
-ms.openlocfilehash: e8cfe1d849ba5df903f377fd001a8d067f80b608
-ms.sourcegitcommit: a048fefb081953aefa7747c08da52a7722e77288
+ms.openlocfilehash: 6bd0d3eca653ae44e46b410ef3ac55fe11629a6b
+ms.sourcegitcommit: e920e68c8d0eac8b152039b52cfc139d478a67b3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "50107856"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50150496"
 ---
 # <a name="set-up-microsoft-viva-topics"></a>设置 Microsoft Viva 主题
 
@@ -23,7 +23,7 @@ ms.locfileid: "50107856"
 
 规划在环境中设置和配置主题的最佳方法非常重要。 在开始本文中的过程之前，请务必阅读 ["Microsoft Viva](plan-topic-experiences.md) 主题计划"。
 
-您必须是全局管理员或 SharePoint 管理员才能访问 Microsoft 365 管理中心并设置主题。
+您必须订阅 [Viva 主题](https://www.microsoft.com/microsoft-viva/topics) ，并且必须是全局管理员或 SharePoint 管理员才能访问 Microsoft 365 管理中心并设置主题。
 
 ## <a name="video-demonstration"></a>视频演示
 
@@ -80,7 +80,7 @@ ms.locfileid: "50107856"
 
     完成并保存 .csv 文件后，选择"浏览"找到并选择它。
     
-    选择 **下一步**。
+    选择“**下一步**”。
 
 6. 在 **"谁可以看到主题** 以及他们在哪里可以看到主题"页上，将配置主题可见性。 在" **谁可以看到** 主题"设置中，选择有权访问主题详细信息（如突出显示的主题、主题卡片、搜索中的主题答案和主题页）的哪些人员。 可以选择：
     - **我的组织中的每个人**
@@ -105,11 +105,11 @@ ms.locfileid: "50107856"
 
     ![主题管理的权限](../media/km-setup-create-edit-topics.png) 
 
-    选择 **下一步**。
+    选择“**下一步**”。
 
 9. 在 **"创建主题中心** "页上，您可以创建可在其中查看主题页面并管理主题的主题中心网站。 在 **"网站名称"** 框中，键入主题中心的名称。 可以选择在"说明"框中键入 **简短** 说明。 
 
-   选择 **下一步**。
+   选择“**下一步**”。
 
    ![创建知识中心](../media/ksetup4.png)  
 
@@ -131,7 +131,7 @@ ms.locfileid: "50107856"
 
 2. 选择要许可的用户，然后单击"许可证 **和应用"。**
 
-3. 在 **"应用**"下，确保 **已选中包含索引** 和 **Viva 主题** 的 Graph 连接器搜索。
+3. 在 **"应用**"下，确保 **已选择具有索引** 和 **主题体验的图形** 连接器搜索。
 
 4. 单击 **保存更改**。
 

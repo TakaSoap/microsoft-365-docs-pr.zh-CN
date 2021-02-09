@@ -19,18 +19,23 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 ms.technology: mdo
-ms.openlocfilehash: df09f72e8bb5aee78ca4b45ce2804774ee16cbf2
-ms.sourcegitcommit: 8e696c084d097520209c864140af11aa055b979e
+ms.openlocfilehash: e411eaa7874dee710cbb21dd02a4edd383003def
+ms.sourcegitcommit: d739f48b991793c08522a3d5323beba27f0111b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "50097112"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "50142093"
 ---
 # <a name="prerequisite-work-for-implementing-identity-and-device-access-policies"></a>实现标识和设备访问策略的先决条件工作
 
 本文介绍了管理员使用推荐的标识和设备访问策略以及使用条件访问必须满足的先决条件。 它还讨论了为 SSO 体验的最佳单一登录 (客户端) 默认值。
 
 ## <a name="prerequisites"></a>先决条件
+
+**适用于**
+- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
+- [Microsoft Defender for Office 365 计划 1 和计划 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- Azure
 
 在使用建议的标识和设备访问策略之前，组织需要满足先决条件。 对于列出的各种标识和身份验证模型，要求是不同的：
 

@@ -10,12 +10,12 @@ ms.service: o365-administration
 search.appverid: MET150
 localization_priority: Normal
 description: 了解如何规划 Microsoft Viva 主题
-ms.openlocfilehash: 65983f342b3277d33c7bfeb21d8481b1d3d5e817
-ms.sourcegitcommit: a048fefb081953aefa7747c08da52a7722e77288
+ms.openlocfilehash: 2f7b85399f0b1f49e25aae1f1d4627413594f618
+ms.sourcegitcommit: e920e68c8d0eac8b152039b52cfc139d478a67b3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "50107950"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50150474"
 ---
 # <a name="plan-for-microsoft-viva-topics"></a>规划 Microsoft Viva 主题
 
@@ -34,7 +34,7 @@ ms.locfileid: "50107950"
 
 ## <a name="requirements"></a>要求
 
-您必须是全局管理员或 SharePoint 管理员才能访问 Microsoft 365 管理中心并设置主题。
+您必须订阅 [Viva 主题](https://www.microsoft.com/microsoft-viva/topics) ，并且必须是全局管理员或 SharePoint 管理员才能访问 Microsoft 365 管理中心并设置主题。
 
 将使用主题的所有用户都需要主题 **体验** 许可证。 "设置 Microsoft Viva 主题"中介绍了 [分配许可证的内容](set-up-topic-experiences.md)。
 
@@ -104,7 +104,7 @@ Site name,URL
 - **名称**：键入要排除的主题的名称。 可通过 2 种方法执行此操作：
 - **MatchType-Exact/Partial：** 键入您输入 *的名称是精确* 匹配类型还是 *部分* 匹配类型。
     - 完全匹配：可以包括确切的名称或首字母缩写词 (例如 *Contoso* 或 *ATL*) 。
-    - 部分匹配：可以排除其中具有特定单词的所有主题。  例如 *，arc* 将排除其中带弧字的所有主题，如 *弧形圆*、弧形弧形 *或**培训弧*。请注意，它将不会排除其中的文本作为单词的一部分包含的主题，如 *体系结构。*
+    - 部分匹配：可以排除其中具有特定单词的所有主题。  例如 *，arc* 将排除其中带弧字的所有主题，如 *弧形圆*、圆弧 *弧* 线或 *培训弧*。请注意，它将不会排除作为单词的一部分包含的文本的主题，例如 *体系结构。*
 - **代表 (** 可选) ： (也称为 *扩展)* 如果要排除首字母缩略词，请键入首字母缩写词代表的单词。
 
     ![排除 CSV 模板中的主题](../media/exclude-topics-csv.png) 

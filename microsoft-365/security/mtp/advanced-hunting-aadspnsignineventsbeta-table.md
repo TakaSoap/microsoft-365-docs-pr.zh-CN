@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 172c400df3adea70a2e2d2e37547fa39e0d3b9cf
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 3eba2459fd9a0af1963ca8d1446b22fc0b1bdb93
+ms.sourcegitcommit: 005028af7c5a6b2e95f17a0037958131484d9e73
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49928614"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "50145399"
 ---
 # <a name="aadspnsignineventsbeta"></a>AADSpnSignInEventsBeta
 
@@ -63,11 +63,11 @@ ms.locfileid: "49928614"
 | `ResourceId`           | string        | 访问的资源的唯一标识符                                                                                                      |
 | `ResourceTenantId`     | string        | 访问的资源的租户的唯一标识符                                                                                        |
 | `IPAddress`            | string        | 分配给终结点的 IP 地址，在相关的网络通信期间使用                                                              |
-| `CountryCode`          | string        | 指示客户端 IP 地址已异地分配的国家/地区两个字母的代码                                                                |
+| `Country`          | string        | 指示客户端 IP 地址已异地分配的国家/地区两个字母的代码                                                                |
 | `State`                | string        | 登录发生位置的状态（如果可用）                                                                                                  |
 | `City`                 | string        | 帐户用户所在的城市                                                                                                          |
 | `Latitude`             | string        | 登录位置的北向南坐标                                                                                          |
-| `Longitude`            | string        | 登录位置的从上到下坐标                                                                                            |
+| `Longitude`            | string        | 登录位置的从西到西坐标                                                                                            |
 | `RequestId`            | string        | 请求的唯一标识符                                                                                                                |
 |`ReportId` | string | 事件的唯一标识符 | 
 

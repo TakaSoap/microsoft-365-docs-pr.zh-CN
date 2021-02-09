@@ -14,19 +14,23 @@ ms.custom:
 description: 管理员可以了解如何使用安全 & 合规中心的邮件流仪表板中的邮件流映射来可视化和跟踪邮件流如何通过连接器和不使用连接器从组织流动。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: c07730f3abcec8905285cdfdf1579ffb71573ec1
-ms.sourcegitcommit: 537e513a4a232a01e44ecbc76d86a8bcaf142482
+ms.openlocfilehash: 87a5780bd2485ba6ad3b295c09a30a4d7fc34277
+ms.sourcegitcommit: e920e68c8d0eac8b152039b52cfc139d478a67b3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "50029914"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50150556"
 ---
 # <a name="mail-flow-map-in-the-security--compliance-center"></a>安全与合规中心内&映射
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**适用于**
+- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
+- [Microsoft Defender for Office 365 计划 1 和计划 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-安全 **与合规中心** 的邮件流 [](mail-flow-insights-v2.md)仪表板中的邮件 [流](https://protection.office.com)&提供了邮件在组织中流动的见解。 您可以使用此信息了解模式、识别异常并修复发生的问题。
+安全 **与合规中心** 的邮件流 [](mail-flow-insights-v2.md)仪表板中的邮件 [流](https://protection.office.com)&提供了邮件在组织中流动的见解。 您可以使用此信息了解模式、识别异常，并解决出现的问题。
 
 ![安全与合规中心的邮件流仪表板中的"邮件流&小组件](../../media/mfi-mail-flow-map-widget.png)
 
@@ -38,7 +42,7 @@ ms.locfileid: "50029914"
 
 下表中提供了以下报表视图：
 
-- **显示其数据：概述**：这基本上是小部件的较大视图。 如果将鼠标悬停在特定颜色上，将显示该类型的连接器的消息数。
+- **显示数据：概述**：这基本上是小部件的较大视图。 如果将鼠标悬停在特定颜色上，将显示该类型的连接器的消息数。
 
   ![邮件流映射报告中的概述视图](../../media/mfi-mail-flow-map-report-overview.png)
 
@@ -50,7 +54,7 @@ ms.locfileid: "50029914"
 
 若要将特定日期范围的报告通过电子邮件发送给一个或多个收件人，请单击"请求 **下载"。**
 
-相关见解显示在邮件流映射下方（如果它们 (例如， [修复](mfi-mail-loop-insight.md) 可能的邮件循环见解) 。
+相关见解显示在邮件流映射下方（如果它们可用 (例如， [修复](mfi-mail-loop-insight.md) 可能的邮件循环见解) 。
 
 ## <a name="details-table-view-for-the-mail-flow-map"></a>邮件流映射的详细信息表视图
 
@@ -64,7 +68,7 @@ ms.locfileid: "50029914"
 
 如果在 **详细信息表** 视图中单击"筛选器"，可以指定开始日期和 **结束日期的日期范围**。 
 
-如果选择行，则类似的详细信息将显示在一个标注中：
+如果您选择一行，则类似的详细信息将显示在一个标注中：
 
 ![邮件流映射中详细信息表中的详细信息飞出](../../media/mfi-mail-flow-map-view-details-table-details.png)
 

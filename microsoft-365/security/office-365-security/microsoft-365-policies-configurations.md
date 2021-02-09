@@ -19,16 +19,20 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-overview
 ms.technology: mdo
-ms.openlocfilehash: d8a4a3c519ab51a5aed6ad1819a67bf93df2cbb2
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 2b72152b94d7bea85d92f86f16bdb27ffe541ebc
+ms.sourcegitcommit: e920e68c8d0eac8b152039b52cfc139d478a67b3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49928910"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50150792"
 ---
 # <a name="identity-and-device-access-configurations"></a>标识和设备访问配置
 
-组织的新式安全外围现在扩展到网络之外，包括从任何位置使用各种设备访问基于云的应用的用户。 安全基础结构需要确定是否应授予给定的访问请求以及应在哪些条件下授予。
+**适用于**
+- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
+- [Microsoft Defender for Office 365 计划 1 和计划 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+
+组织的新式安全外围现在扩展到网络之外，包括从任何位置使用各种设备访问基于云的应用的用户。 安全基础结构需要确定是否应授予给定访问请求以及应在哪些条件下授予。
 
 此确定应基于登录的用户帐户、所使用的设备、用户用于访问的应用、提出访问请求的位置以及请求风险的评估。 这个功能有助于确保只有经过批准的用户和设备才能访问关键的公司资源。
 
@@ -39,7 +43,7 @@ ms.locfileid: "49928910"
 这些功能及其建议：
 
 - 在 Microsoft 365 E3 和 Microsoft 365 E5 中受支持。
-- 与 Microsoft [安全分数](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-secure-score) 和 Azure [AD 中的标识](https://docs.microsoft.com/azure/active-directory/fundamentals/identity-secure-score)分数保持一致，将提高组织的这些分数。
+- 与 Microsoft [安全分数](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-secure-score) 以及 Azure [AD 中的标识](https://docs.microsoft.com/azure/active-directory/fundamentals/identity-secure-score)分数一致，将提高组织的这些分数。
 - 将帮助您实施这 [五个步骤来保护标识基础结构](https://docs.microsoft.com/azure/security/azure-ad-secure-steps)。
 
 如果您的组织具有独特的环境要求或复杂性，请使用这些建议作为起点。 但是，大多数组织都可以按照规定实现这些建议。
@@ -72,12 +76,12 @@ ms.locfileid: "49928910"
 每个行业也有自己独特的一组规定。 针对三个不同级别的安全和保护提供了建议，而不是提供所有可能的安全选项列表或每个行业或工作职能的建议，这些层可以基于你的需求粒度应用。
 
 - **基线** 保护：建议建立保护数据以及访问数据的标识和设备的最低标准。 您可以遵循这些基线建议来提供强大的默认保护，以满足许多组织的需求。
-- **敏感保护**：某些客户具有必须在较高级别保护的数据子集，或者可能要求在较高级别保护所有数据。 你可以对 Microsoft 365 环境中的所有或特定数据集应用增强的保护。 建议以与安全性相当的级别保护访问敏感数据的标识和设备。
+- **敏感保护**：某些客户具有必须在较高级别进行保护的数据子集，或者可能要求在较高级别保护所有数据。 你可以对 Microsoft 365 环境中的所有或特定数据集应用增强的保护。 建议以与安全性相当的级别保护访问敏感数据的标识和设备。
 - **高度管控**：某些组织可能有少量高度机密、构成商业机密或受监管数据的数据。 Microsoft 提供多种功能，帮助组织满足相关要求，包括为标识和设备添加保护。
 
 ![安全锥 - 所有客户>特定>客户。 向特定应用程序广泛应用](../../media/microsoft-365-policies-configurations/M365-idquality-threetiers.png)
 
-本指南演示如何针对这些保护层中的每个层实现标识和设备保护。 使用本指南作为组织的起始点，并调整策略以满足组织的特定要求。
+本指南显示了如何针对这些保护层中的标识和设备实施保护。 使用本指南作为组织的起始点，并调整策略以满足组织的特定要求。
 
 请务必在数据、标识和设备中使用一致的保护级别。 例如，如果你实现本指南，请确保在相当级别保护你的数据。
 
@@ -96,7 +100,7 @@ Microsoft **365** 体系结构模型的标识和设备保护显示哪些功能�
 提供的建议基于以下原则：
 
 - 了解用户并灵活满足其安全性和功能要求。
-- 及时应用安全策略并确保它有意义。
+- 及时应用安全策略，并确保它有意义。
 
 ## <a name="services-and-concepts-for-identity-and-device-access-protection"></a>标识和设备访问保护的服务和概念
 
@@ -111,11 +115,11 @@ Azure AD 提供了一整套标识管理功能。 我们建议使用这些功能�
 |功能或特性|说明|许可|
 |---|---|---|
 |[多重身份验证 (MFA)](/azure/active-directory/authentication/concept-mfa-howitworks)|MFA 要求用户提供两种形式的验证，如用户密码以及来自 Microsoft Authenticator 应用的通知或电话呼叫。 MFA 大大减少了被盗凭据可用于访问环境的风险。 Microsoft 365 对基于 MFA 的登录使用 Azure AD 多重身份验证服务。|Microsoft 365 E3 或 E5|
-|[条件访问](/azure/active-directory/conditional-access/overview)|Azure AD 评估用户登录的条件，并使用条件访问策略来确定允许的访问。 例如，在本指南中，我们将向您展示如何创建条件访问策略，以要求设备合规性访问敏感数据。 这大大减少了黑客使用自己的设备和被盗凭据访问敏感数据的风险。 它还保护设备上敏感数据，因为设备必须满足运行状况和安全性的特定要求。|Microsoft 365 E3 或 E5|
+|[条件访问](/azure/active-directory/conditional-access/overview)|Azure AD 评估用户登录的条件，并使用条件访问策略来确定允许的访问。 例如，在本指南中，我们将向您展示如何创建条件访问策略，以要求设备合规性访问敏感数据。 这大大减少了黑客使用自己的设备和被盗凭据访问敏感数据的风险。 它还保护设备的敏感数据，因为设备必须满足运行状况和安全性的特定要求。|Microsoft 365 E3 或 E5|
 |[Azure AD 组](/azure/active-directory/fundamentals/active-directory-manage-groups)|条件访问策略、使用 Intune 的设备管理，甚至对组织中文件和网站的权限都依赖于用户帐户或 Azure AD 组的分配。 我们建议你创建与正在实现的保护级别对应的 Azure AD 组。 例如，你的管理人员可能是黑客的更高价值目标。 因此，有必要将这些员工的用户帐户添加到 Azure AD 组，并将该组分配给条件访问策略和其他强制执行更高级别的访问保护的策略。|Microsoft 365 E3 或 E5|
 |[设备注册](/azure/active-directory/devices/overview)|将设备注册到 Azure AD 以创建设备的标识。 此标识用于在用户登录时对设备进行身份验证，并应用要求加入域或兼容电脑的条件访问策略。 对于本指南，我们使用设备注册来自动注册加入域的 Windows 计算机。 设备注册是使用 Intune 管理设备的先决条件。|Microsoft 365 E3 或 E5|
 |[Azure AD Identity Protection](/azure/active-directory/identity-protection/overview)|使您可以检测影响组织标识的潜在漏洞，将自动修正策略配置为低、中和高登录风险和用户风险。 本指南依赖于此风险评估来应用条件访问策略进行多重身份验证。 本指南还包括条件访问策略，如果检测到其帐户存在高风险活动，则要求用户更改其密码。|具有标识的 Microsoft 365 E5、Microsoft 365 E3 &威胁防护加载项、EMS E5 或 Azure Premium P2 许可证|
-|[自助服务密码重置 (SSPR)](/azure/active-directory/authentication/concept-sspr-howitworks)|通过提供对管理员可以控制的多种身份验证方法的验证，允许用户安全地重置其密码，而无需技术支持干预。|Microsoft 365 E3 或 E5|
+|[SSPR (自助服务密码) ](/azure/active-directory/authentication/concept-sspr-howitworks)|通过提供对管理员可以控制的多种身份验证方法的验证，允许用户安全地重置其密码，而无需技术支持干预。|Microsoft 365 E3 或 E5|
 |[Azure AD 密码保护](https://docs.microsoft.com/azure/active-directory/authentication/concept-password-ban-bad)|检测并阻止已知的弱密码及其变体以及特定于您的组织的其他弱术语。 默认全局禁止使用的密码列表将自动应用于 Azure AD 租户中的所有用户。 可在自定义禁止密码列表中定义额外条目。 用户更改或重置其密码时，将检查这些禁止的密码列表，强制使用强密码。|Microsoft 365 E3 或 E5|
 |
 
@@ -158,7 +162,7 @@ Windows 10 和 Microsoft 365 企业应用版是推荐的电脑客户端环境。
 |强制执行 MFA|针对中级或以上登录风险|针对低级或以上登录风险|针对所有新会话|
 |**强制更改密码**|对于高风险用户|对于高风险用户|对于高风险用户|
 |**强制执行 Intune 应用程序保护**|是|是|是|
-|**为组织拥有的设备强制执行 Intune 注册**|需要兼容或加入域的电脑，但允许自带设备 (BYOD) 手机和平板电脑|需要兼容或已加入域的设备|需要兼容或已加入域的设备|
+|**为组织拥有的设备强制执行 Intune 注册**|需要兼容或已加入域的电脑，但允许自带设备 (BYOD) 手机和平板电脑|需要兼容或已加入域的设备|需要兼容或已加入域的设备|
 |
 
 ## <a name="device-ownership"></a>设备所有权
@@ -186,7 +190,7 @@ Windows 10 和 Microsoft 365 企业应用版是推荐的电脑客户端环境。
 
 Microsoft 建议不要创建适用于所有应用的策略集，因为这可能会导致一些意外配置。 例如，阻止所有应用的策略可能会将管理员锁定在 Azure 门户之外，并且无法为重要终结点（如 Microsoft Graph）配置排除项。
 
-## <a name="steps-in-the-process-of-configuring-identity-and-device-access"></a>配置标识和设备访问过程中的步骤
+## <a name="steps-in-the-process-of-configuring-identity-and-device-access"></a>配置标识和设备访问的过程的步骤
 
 ![配置标识和设备访问的步骤。](../../media/microsoft-365-policies-configurations/identity-device-access-steps.png)
 

@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: e445902ee83b734f84d02607905413a14c016b8f
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 6462096a6c1b44ee11299f652a54f261d0355523
+ms.sourcegitcommit: 005028af7c5a6b2e95f17a0037958131484d9e73
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49931274"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "50145363"
 ---
 # <a name="deviceinfo"></a>DeviceInfo
 
@@ -52,9 +52,11 @@ ms.locfileid: "49931274"
 | `OSPlatform` | string | 计算机上运行的操作系统平台。 这表示特定操作系统，包括同一系列中的变体，如 Windows 10 和 Windows 7 |
 | `OSBuild` | string | 计算机上运行的操作系统的生成版本 |
 | `IsAzureADJoined` | boolean | 指示计算机是否已加入 Azure Active Directory 的布尔指示器 |
+| `DeviceObjectId` | string | Azure AD 中的设备的唯一标识符 |
 | `LoggedOnUsers` | string | 事件时以 JSON 数组格式登录计算机的所有用户的列表 |
 | `RegistryDeviceTag` | string | 通过注册表添加的机器标记 |
 | `ReportId` | long | 基于重复计数器的事件标识符。 若要标识唯一事件，此列必须与 DeviceName 和时间戳列一起使用 |
+|`AdditionalFields` | string | 有关 JSON 数组格式的事件的其他信息 |
 | `OSVersion` | string | 计算机上运行的操作系统版本 |
 | `MachineGroup` | string | 计算机计算机组。 此组由基于角色的访问控制用于确定对计算机的访问权限 |
 
