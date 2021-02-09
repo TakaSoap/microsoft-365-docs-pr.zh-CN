@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: 3a88c48e6915b03316b29d80d2a0f7550d4b5d32
-ms.sourcegitcommit: b88ffaf3409e02a9847f030f8468f96d36efa398
+ms.openlocfilehash: 13e5d1f160fe957748295749662a7042489887ca
+ms.sourcegitcommit: e920e68c8d0eac8b152039b52cfc139d478a67b3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "50105159"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50150580"
 ---
 # <a name="get-started-with-insider-risk-management"></a>内部风险管理入门
 
@@ -42,8 +42,8 @@ ms.locfileid: "50105159"
 - Microsoft 365 A3 订阅 + Microsoft 365 A5 合规加载项
 - Microsoft 365 A3 订阅 + Microsoft 365 A5 预览体验成员风险管理加载项
 - Microsoft 365 G5 订阅（付费或试用版本）
-- Microsoft 365 G5 订阅 + Microsoft 365 G5 合规加载项
-- Microsoft 365 G5 订阅 + Microsoft 365 G5 预览体验成员风险管理加载项
+- Microsoft 365 G3 订阅 + Microsoft 365 G5 合规性加载项
+- Microsoft 365 G3 订阅 + Microsoft 365 G5 Insider Risk Management 加载项
 
 必须为包含在内部风险管理策略中的用户分配上述许可证之一。
 

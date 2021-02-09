@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: dd197d58-5bf6-4d18-b9f8-d16db603fae2
 description: 了解信息权限管理 (IRM) 如何保护上载到 Microsoft SharePoint 2013 中受 IRM 保护的库并下载的 PDF 文档。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 2ada8c0ddfcd66b36f7bde4de9221d9c11abe8d8
-ms.sourcegitcommit: a8f3c633714e934f9ad026c3bc72157ed535dcfc
+ms.openlocfilehash: 3ce5e8b89dbf33d9d25b177c027676a1539547f1
+ms.sourcegitcommit: d739f48b991793c08522a3d5323beba27f0111b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/29/2020
-ms.locfileid: "49737973"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "50142427"
 ---
 # <a name="sharepoint-compatible-pdf-readers-that-support-microsoft-information-rights-management-services"></a>SharePoint-Compatible Microsoft 信息权限管理服务的 PDF 阅读器
 
@@ -39,6 +39,6 @@ Microsoft SharePoint 2013 支持信息权限管理 (IRM) PDF 文档保护。 借
 |Windows 10  <br/> |Azure 信息保护应用  <br/> Foxit Reader  <br/> NitroPDF  <br/> Edge Chromium  <br/> |[下载 Azure 信息保护应用](https://go.microsoft.com/fwlink/?linkid=837797) <br/> [下载 Foxit Reader](https://go.microsoft.com/fwlink/?linkid=2139326) <br/> [下载 NitroPDF](https://go.microsoft.com/fwlink/?linkid=2139327) <br/> [下载 Edge Chromium](https://support.microsoft.com/microsoft-edge/download-the-new-microsoft-edge-based-on-chromium-0f4a3dd7-55df-60f5-739f-00010dba52cf) <br/> |
 |Android  <br/> |Azure 信息保护应用  <br/> 具有 RMS 的 Foxit MobilePDF  <br/> |[下载 Azure 信息保护应用](https://go.microsoft.com/fwlink/?linkid=836827) <br/> [购买 Foxit MobilePDF](https://play.google.com/store/apps/details?id=com.foxit.mobile.pdf.lite) <br/> |
 |Windows Phone  <br/> |不适用  <br/> |不适用  <br/> |
-|macOS  <br/> |不适用  <br/> |不适用  <br/> |
+|macOS  <br/> |Edge Chromium  <br/> |[下载 Edge Chromium](https://support.microsoft.com/microsoft-edge/download-the-new-microsoft-edge-based-on-chromium-0f4a3dd7-55df-60f5-739f-00010dba52cf)  <br/> |
 |IOS  <br/> |Azure 信息保护应用  <br/> 具有 RMS 的 Foxit MobilePDF  <br/> |[下载 Azure 信息保护应用](https://go.microsoft.com/fwlink/?linkid=836828) <br/> [购买 Foxit MobilePDF](https://play.google.com/store/apps/details?id=com.foxit.mobile.pdf.lite) <br/> |
    

@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: 71eb42c0912edc258b1a33698f1942140d91feb3
-ms.sourcegitcommit: b88ffaf3409e02a9847f030f8468f96d36efa398
+ms.openlocfilehash: 6c8d0dee3b1452c9a43b6b0b1b36e96f19e5abcd
+ms.sourcegitcommit: e920e68c8d0eac8b152039b52cfc139d478a67b3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "50105193"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50150626"
 ---
 # <a name="insider-risk-solutions-in-microsoft-365"></a>Microsoft 365 内部风险解决方案
 
@@ -79,8 +79,8 @@ Microsoft 365 风险防护功能专为内部风险产品和解决方案设计并
 - Microsoft 365 A3 订阅 + Microsoft 365 A5 合规加载项
 - Microsoft 365 A3 订阅 + Microsoft 365 A5 预览体验成员风险管理加载项
 - Microsoft 365 G5 订阅（付费或试用版本）
-- Microsoft 365 G5 订阅 + Microsoft 365 G5 合规加载项
-- Microsoft 365 G5 订阅 + Microsoft 365 G5 预览体验成员风险管理加载项
+- Microsoft 365 G3 订阅 + Microsoft 365 G5 合规性加载项
+- Microsoft 365 G3 订阅 + Microsoft 365 G5 Insider Risk Management 加载项
 
 ### <a name="information-barriers"></a>信息屏障
 
@@ -128,7 +128,7 @@ Microsoft 365 风险防护功能专为内部风险产品和解决方案设计并
 
 为了帮助你规划实施 Microsoft 365 内部风险功能的集成策略，请下载 *Microsoft 365* 信息保护和合规性功能集的图示。 有关内部风险功能，请参阅体系结构说明第 5-7 页。 可随时根据自己的使用情况来修改这些插图。
 
-| 项目 | 说明 |
+| Item | 说明 |
 |:-----|:------------|
 |[![模型海报：Microsoft 365 信息保护和合规性功能](../media/solutions-architecture-center/m365-compliance-illustrations-thumb.png)](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf) <br/> [下载为 PDF](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf) \|[下载为 Visio](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.vsdx)   <br/> 2020 年 10 月更新|包括： <ul><li>  Microsoft 信息保护和数据丢失防护</li><li>保留策略和保留标签 </li><li>信息屏障</li><li>通信合规性</li><li>内部风险管理</li><li>第三方数据摄取</li>|
 
