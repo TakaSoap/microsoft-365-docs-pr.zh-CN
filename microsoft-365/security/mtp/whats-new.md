@@ -1,6 +1,6 @@
 ---
 title: Microsoft 365 Defender 的新增功能
-description: 列出 Microsoft 365 Defender 中的新特性和功能
+description: 列出 Microsoft 365 Defender 中的新增特性和功能
 keywords: Microsoft 威胁防护的新增功能， ga， 通用， 功能， 可用， 新增
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 8e66c734151e7476d7c54bd050891a1bffb17b3c
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 4e065ff4da80b50ea11ff2069e8938c59f16f962
+ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49932018"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50165987"
 ---
 # <a name="whats-new-in-microsoft-365-defender"></a>Microsoft 365 Defender 的新增功能
 
@@ -38,8 +38,9 @@ RSS 源：在此页面更新时收到通知，方法为将以下 URL 复制并�
 ```http
 https://docs.microsoft.com/api/search/rss?search=%22Lists+the+new+features+and+functionality+in+Microsoft+Threat+Protection%22&locale=en-us
 ```
-> 想要体验 Microsoft 365 Defender？ 可以在[实验室环境中对其进行评估或在](https://aka.ms/mtp-trial-lab)[生产中运行试点项目](https://aka.ms/m365d-pilotplaybook)
->
+
+## <a name="february-2021"></a>2021 年 2 月
+-  (预览) 增强[的 Microsoft https://security.microsoft.com) 365](https://security.microsoft.com)安全中心 (现在公开预览版中提供。 这一新体验将 Defender for Endpoint 和 Defender for Office 365 引入中心。 [了解有关更改后功能更多。](https://docs.microsoft.com/microsoft-365/security/mtp/overview-security-center)
 
 ## <a name="september-2020"></a>2020 年 9 月
 - [IdentityDirectoryEvents 表](advanced-hunting-identitydirectoryevents-table.md) <br> 查找涉及运行 Active Directory 和 AD (本地域控制器) 。 此 [高级搜寻](advanced-hunting-overview.md) 架构表涵盖域控制器上的一系列与标识相关的事件和系统事件。
@@ -66,4 +67,4 @@ https://docs.microsoft.com/api/search/rss?search=%22Lists+the+new+features+and+f
 ## <a name="march-2019"></a>2019 年 3 月
 - 高级搜寻 <br> 各种搜寻功能的登录页面，可让你主动查找影响电子邮件和数据、设备和标识的威胁。
 - [Microsoft 安全功能分数](microsoft-secure-score.md) <br> 组织安全状况的度量，数字越高，表示采取的改进措施就越高。 遵循安全分数建议可保护组织免受威胁。 
-- [报告](monitoring-and-reporting.md) <br>  功能丰富的卡片涵盖安全分析师和管理员在日常操作中跟踪的一系列领域。
+- [报表](monitoring-and-reporting.md) <br>  功能丰富的卡片涵盖安全分析师和管理员在日常操作中跟踪的一系列领域。

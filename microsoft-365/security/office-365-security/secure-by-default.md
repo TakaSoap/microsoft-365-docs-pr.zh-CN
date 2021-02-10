@@ -17,24 +17,29 @@ ms.collection:
 description: '了解有关 Exchange Online Protection 和 EOP (默认设置) '
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: c8af609b8ed50b0bfacb7d9f5397fab4c4726927
-ms.sourcegitcommit: f3059a0065496623e36e5a084cd2291e6b844597
+ms.openlocfilehash: 51b33afa6b07c040e6aa18abe996c78b770f0773
+ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "50040540"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50166575"
 ---
 # <a name="secure-by-default-in-office-365"></a>在 Office 365 中默认安全
 
 [!INCLUDE [Prerelease information](../includes/prerelease.md)]
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**适用于**
+- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
+- [Microsoft Defender for Office 365 计划 1 和计划 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+
 "默认安全"一词用于定义尽可能安全的默认设置。
 
 但是，安全性需要与工作效率平衡。 这可能包括以下各点之间的平衡：
 
 - **可用性**：设置不应影响用户工作效率。
-- **风险**：安全性可能会阻止重要活动。
+- **风险**：安全可能会阻止重要活动。
 - **旧设置**：出于业务原因，可能需要维护较旧产品和功能的一些配置，即使新的新式设置已改进。
 
 在 Exchange Online 中拥有邮箱的 Microsoft 365 组织受 Exchange Online Protection (EOP) 。 此保护包括：
@@ -44,7 +49,7 @@ ms.locfileid: "50040540"
 
 有关 EOP 详细信息，请参阅 [Exchange Online Protection 概述](exchange-online-protection-overview.md)。
 
-由于默认情况下，Microsoft 希望保护我们的客户安全，因此某些租户替代不适用于恶意软件或高可信度网络钓鱼。 这些替代包括：
+由于 Microsoft 默认希望保护我们的客户安全，因此某些租户替代不适用于恶意软件或高可信度网络钓鱼。 这些替代包括：
 
 - 允许的发件人列表或允许的域 (反垃圾邮件策略) 
 - Outlook 安全发件人

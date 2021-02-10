@@ -8,7 +8,6 @@ manager: dansimp
 audience: Admin
 ms.topic: how-to
 ms.date: ''
-ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -17,19 +16,25 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: 管理员可以了解如何在 Microsoft Defender for Office 365 (Office 365 安全链接中查看和配置全局设置) "阻止以下 URL"列表和保护。
-ms.openlocfilehash: bc44432d4d9478e4c6a2414a70acc785c5b2c005
-ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: 885fe6a06cce054bea6d6f20c24c5c1f2a159c07
+ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "49682899"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50165723"
 ---
 # <a name="configure-global-settings-for-safe-links-in-microsoft-defender-for-office-365"></a>在 Microsoft Defender for Office 365 中配置安全链接的全局设置
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**适用于**
+- [Microsoft Defender for Office 365 计划 1 和计划 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+
 > [!IMPORTANT]
-> 本文适用于拥有 [Microsoft Defender for Office 365](office-365-atp.md)的企业客户。 如果你是一位家庭用户，正在查找有关 Outlook 中安全链接的信息，请参阅高级Outlook.com [安全](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2)。
+> 本文适用于拥有 [Microsoft Defender for Office 365](office-365-atp.md)的企业客户。 如果你是一位家庭用户，正在查找有关 Outlook 中的安全链接的信息，请参阅高级Outlook.com [安全](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2)。
 
 安全链接是 Microsoft [Defender for Office 365](office-365-atp.md) 中的一项功能，它提供对邮件流中入站电子邮件的 URL 扫描，以及单击验证电子邮件和其他位置中的 URL 和链接的时间。 有关详细信息，请参阅 [Microsoft Defender for Office 365 中的安全链接](atp-safe-links.md)。
 
@@ -63,7 +68,7 @@ ms.locfileid: "49682899"
 
 - 有关安全链接的全局设置的建议值，请参阅 [安全链接设置](recommended-settings-for-eop-and-office365-atp.md#safe-links-settings)。
 
-- 最多允许应用新策略或更新策略 30 分钟。
+- 允许应用新策略或更新策略的时间最多为 30 分钟。
 
 - [新功能不断添加到 Microsoft Defender for Office 365。](office-365-atp.md#new-features-in-microsoft-defender-for-office-365) 添加新功能时，可能需要对现有安全链接策略进行调整。
 
@@ -77,7 +82,7 @@ ms.locfileid: "49682899"
 
 3. 配置一个或多个条目，如"阻止以下 [URL"列表的条目语法中所述](atp-safe-links.md#entry-syntax-for-the-block-the-following-urls-list)。
 
-   完成时，请单击“保存”。
+   完成后，单击“**保存**”。
 
 ### <a name="configure-the-block-the-following-urls-list-in-powershell"></a>在 PowerShell 中配置"阻止以下 URL"列表
 
@@ -118,15 +123,15 @@ Office 365 应用的安全链接保护适用于受支持的 Office 桌面、移�
 
 1. 在安全&，转到 **"威胁管理** 策略 \>  \> **ATP 安全链接**"，然后单击"**全局设置"。**
 
-2. 在 **出现的组织安全** 链接策略中，在"设置"中配置应用于电子邮件除外 **内容的以下** 设置：
+2. 在 **出现的组织安全** 链接策略中，在"设置"中配置应用于电子邮件以外的 **内容的以下** 设置：
 
    - **Office 365** 应用程序：验证切换是否位于右侧，为受支持的 Office 365 应用启用安全 ![ 链接：打开 ](../../media/scc-toggle-on.png) 。
 
-   - **Do not track when users click Safe Links**： Move the toggle to the left to track user clicks related to blocked URLs in supported Office 365 apps： Toggle off ![ ](../../media/scc-toggle-off.png) .
+   - **Do not track when users click Safe Links**： Move the toggle to the left to track user clicks related to blocked URLs in supported Office 365 apps： Toggle ![ ](../../media/scc-toggle-off.png) off.
 
    - **不允许用户** 单击到原始 URL 的安全链接：验证切换是否位于右侧，以防止用户单击到受支持的 Office 365 应用中的原始阻止的 URL： ![ 打开 ](../../media/scc-toggle-on.png) 。
 
-   完成时，请单击“保存”。
+   完成后，单击“**保存**”。
 
 ### <a name="configure-safe-links-protection-for-office-365-apps-in-powershell"></a>在 PowerShell 中为 Office 365 应用配置安全链接保护
 

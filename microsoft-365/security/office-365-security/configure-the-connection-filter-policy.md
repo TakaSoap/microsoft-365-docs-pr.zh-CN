@@ -8,7 +8,6 @@ manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: how-to
-ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -18,21 +17,28 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 管理员可以了解如何在 Exchange Online Protection (EOP) 配置连接筛选以允许或阻止来自电子邮件服务器的电子邮件。
-ms.openlocfilehash: 844b1d8d17a99bbb0c441be511c64a009b8dafcb
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: ef81d602e1f6da368e9d469bf1deaf0ef2c0a6af
+ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49659809"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50165747"
 ---
 # <a name="configure-connection-filtering"></a>配置连接筛选
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**适用于**
+- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
+- [Microsoft Defender for Office 365 计划 1 和计划 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-如果你是在 Exchange Online 中拥有邮箱的 Microsoft 365 客户，或者没有 Exchange Online 邮箱的独立 Exchange Online Protection (EOP) 客户，则使用 EOP (中的连接筛选专门使用默认连接筛选器策略) 按 IP 地址标识好源电子邮件服务器或错误源电子邮件服务器。 默认连接筛选器策略的关键组件是：
 
-- **IP 允许列表**：跳过按 IP 地址或 IP 地址范围指定的源电子邮件服务器中所有传入邮件的垃圾邮件筛选。 有关垃圾邮件筛选可能仍发生在来自这些源的邮件上的方案，请参阅本文稍后部分中的" [来自 IP](#scenarios-where-messages-from-sources-in-the-ip-allow-list-are-still-filtered) 允许列表中的源的邮件仍进行筛选的方案"部分。 有关 IP 允许列表如何适合整体安全发件人策略的信息，请参阅在 EOP 中创建 [安全发件人列表](create-safe-sender-lists-in-office-365.md)。
+如果你是在 Exchange Online 中拥有邮箱的 Microsoft 365 客户，或者是没有 Exchange Online 邮箱的独立 Exchange Online Protection (EOP) 客户，则使用 EOP (中的连接筛选专门使用默认连接筛选器策略) 通过 IP 地址标识好源电子邮件服务器或错误源电子邮件服务器。 默认连接筛选器策略的关键组件是：
+
+- **IP 允许列表**：跳过按 IP 地址或 IP 地址范围指定的源电子邮件服务器中所有传入邮件的垃圾邮件筛选。 对于这些源中的邮件可能仍进行垃圾邮件筛选的方案，请参阅本文稍后部分中的"来自 [IP](#scenarios-where-messages-from-sources-in-the-ip-allow-list-are-still-filtered) 允许列表中的源的邮件仍进行筛选的方案"部分。 有关 IP 允许列表如何适合整体安全发件人策略的信息，请参阅在 EOP 中创建 [安全发件人列表](create-safe-sender-lists-in-office-365.md)。
 
 - **IP 阻止列表**：阻止来自按 IP 地址或 IP 地址范围指定的源电子邮件服务器的所有传入邮件。 传入的邮件被拒绝，不会标记为垃圾邮件，并且不会发生其他筛选。 有关 IP 阻止列表如何适合整体阻止的发件人策略，请参阅 EOP 中的"创建[阻止发件人列表"。](create-block-sender-lists-in-office-365.md)
 
@@ -51,7 +57,7 @@ ms.locfileid: "49659809"
 
 - 必须分配有 Office 365 安全与合规中心内的权限，才能执行本文中的步骤：
   - 若要修改默认连接筛选器策略，您必须是组织管理或安全管理员角色 **组** 的成员。 
-  - 若要对默认连接筛选器策略进行只读访问，您需要是全局读者或安全读者 **角色组** 的成员。
+  - 若要对默认连接筛选器策略进行只读访问，您必须是全局读者或 **安全** 读者角色组的成员。
 
   有关详细信息，请参阅 [安全与合规中心的权限](permissions-in-the-security-and-compliance-center.md)。
 
@@ -62,15 +68,15 @@ ms.locfileid: "49659809"
 
 - 若要查找要允许或阻止的电子邮件服务器的源 IP 地址 (发件人) ，可以检查邮件头中的连接 IP (**CIP**) 头字段。 若要查看各种电子邮件客户端中的邮件头，请参阅在 [Outlook 中查看 Internet 邮件头](https://support.microsoft.com/office/cd039382-dc6e-4264-ac74-c048563d212c)。
 
-- IP 允许列表优先于 IP 阻止列表 (两个列表上的地址不会) 。
+- IP 允许列表优先于 IP 阻止列表 (这两个列表上的地址不会) 。
 
-- IP 允许列表和 IP 阻止列表最多支持 1273 个条目，其中条目是单个 IP 地址、IP 地址范围或无类别域间路由 (CIDR) IP。
+- IP 允许列表和 IP 阻止列表最多支持 1273 个条目，其中条目是单个 IP 地址、IP 地址范围或无类别域际路由 (CIDR) IP。
 
 ## <a name="use-the-security--compliance-center-to-modify-the-default-connection-filter-policy"></a>使用安全&合规中心修改默认连接筛选器策略
 
 1. 在安全&安全与合规中心，然后转到 **"威胁管理** \> **策略** \> **反垃圾邮件"。**
 
-2. 在 **"反垃圾邮件设置**"页上 **，通过单击**"展开"图标展开"连接筛选器策略"， ![ ](../../media/scc-expand-icon.png) 然后单击"编辑 **策略"。**
+2. 在 **"反垃圾邮件设置**"页上，通过单击"展开"图标展开"连接筛选器策略"， ![ ](../../media/scc-expand-icon.png) 然后单击"编辑 **策略"。**
 
 3. 在 **出现的"** 默认"飞出中，配置以下任一设置：
 
@@ -84,15 +90,15 @@ ms.locfileid: "49659809"
 
      - CIDR IP：例如，192.168.0.1/25。 有效的网络掩码值为 /24 到 /32。 若要将 CIDR IP 掩码值 /1 的垃圾邮件筛选跳过到 /23，请参阅本文稍后部分外的 [CIDR IP](#skip-spam-filtering-for-a-cidr-ip-outside-of-the-available-range) 跳过垃圾邮件筛选。
 
-     若要添加 IP 地址或地址范围，请单击 **"添加"** ![ 图标 ](../../media/ITPro-EAC-AddIcon.png) 。 若要删除条目，请选择"允许的 **IP** 地址"中的条目，然后单击" **删除** ![ ](../../media/scc-remove-icon.png) "。 完成时，请单击“保存”。
+     若要添加 IP 地址或地址范围，请单击 **"添加"** ![ 图标 ](../../media/ITPro-EAC-AddIcon.png) 。 若要删除条目，请选择"允许的 **IP** 地址"中的条目，然后单击" **删除** ![ ](../../media/scc-remove-icon.png) "。 完成后，单击“**保存**”。
 
-   - **IP 阻止列表**：单击 **"编辑"。** 在 **出现的 IP 阻止列表** 飞出框中，在"地址或地址范围"框中输入单个 IP、IP 范围或 CIDR IP，如 **前面 IP** 允许列表设置中所述。 
+   - **IP 阻止列表**：单击 **"编辑"。** 在 **出现的 IP 阻止列表** 飞出中，在"地址或地址范围"框中输入单个 IP、IP 范围或 CIDR IP，如 **前面 IP** 允许列表设置中所述。 
 
-     若要添加 IP 地址或地址范围，请单击 **"添加"** ![ 图标 ](../../media/ITPro-EAC-AddIcon.png) 。 若要删除条目，请选择"阻止的 **IP** 地址"中的条目，然后单击" **删除** ![ ](../../media/scc-remove-icon.png) "。 完成时，请单击“保存”。
+     若要添加 IP 地址或地址范围，请单击 **"添加"** ![ 图标 ](../../media/ITPro-EAC-AddIcon.png) 。 若要删除条目，请选择"阻止的 **IP** 地址"中的条目，然后单击" **删除** ![ ](../../media/scc-remove-icon.png) "。 完成后，单击“**保存**”。
 
    - **打开安全列表**：启用或禁用安全列表的使用，以标识将跳过垃圾邮件筛选的已知、良好的发件人。
 
-4. 完成时，请单击“保存”。
+4. 完成后，单击“**保存**”。
 
 ## <a name="use-the-security--compliance-center-to-view-the-default-connection-filter-policy"></a>使用安全&合规中心查看默认连接筛选器策略
 
@@ -132,7 +138,7 @@ Set-HostedConnectionFilterPolicy -Identity Default [-AdminDisplayName <"Optional
 Set-HostedConnectionFilterPolicy -Identity Default -IPAllowList 192.168.1.10,192.168.1.23 -IPBlockList 10.10.10.0/25,172.17.17.0/24
 ```
 
-此示例从 IP 允许列表中添加和删除指定的 IP 地址和地址范围。
+本示例从 IP 允许列表中添加和删除指定的 IP 地址和地址范围。
 
 ```powershell
 Set-HostedConnectionFilterPolicy -Identity Default -IPAllowList @{Add="192.168.2.10","192.169.3.0/24","192.168.4.1-192.168.4.5";Remove="192.168.1.10"}
@@ -166,19 +172,19 @@ Set-HostedConnectionFilterPolicy -Identity Default -IPAllowList @{Add="192.168.2
 
 - 规则 **条件：** 如果发件人 IP 地址位于以下任一范围内或完全匹配，则应用此规则 (输入 \>  \>  \> 具有 /1 到 /23 网络掩码的 CIDR IP) 。
 
-- 规则操作 **：修改邮件属性** \> **设置垃圾邮件可信度 (SCL**) \> **绕过垃圾邮件筛选**。
+- 规则操作 **：修改邮件属性** \> **设置 SCL (垃圾邮件筛选)** \> **垃圾邮件可信度**。
 
-可以审核规则、测试规则、激活特定时间段的规则和其他选择。 我们建议首先在一段时间内测试规则，然后再强制应用。 有关详细信息，请参阅管理 [Exchange Online 中的邮件流规则](https://docs.microsoft.com/Exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules)。
+您可以在特定时段内审核规则、测试规则、激活规则以及其他选择。 我们建议首先在一段时间内测试规则，然后再强制应用。 有关详细信息，请参阅管理 [Exchange Online 中的邮件流规则](https://docs.microsoft.com/Exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules)。
 
 ### <a name="skip-spam-filtering-on-selective-email-domains-from-the-same-source"></a>跳过来自同一源的选择性电子邮件域的垃圾邮件筛选
 
-通常，将 IP 地址或地址范围添加到 IP 允许列表意味着信任来自该电子邮件源的所有传入邮件。 但是，如果该源从多个域发送电子邮件，并且您希望跳过其中某些域（而非其他域）的垃圾邮件筛选，将如何？ 不能单独使用 IP 允许列表来这样做，但可以将 IP 允许列表与邮件流规则结合使用。
+通常，将 IP 地址或地址范围添加到 IP 允许列表意味着信任来自该电子邮件源的所有传入邮件。 但是，如果该源从多个域发送电子邮件，并且您希望跳过其中某些域（而非其他域）的垃圾邮件筛选，又如何呢？ 不能单独使用 IP 允许列表来这样做，但可以将 IP 允许列表与邮件流规则结合使用。
 
 例如，源电子邮件服务器 192.168.1.25 从域 contoso.com、fabrikam.com 和 tailspintoys.com 发送电子邮件，但您只想跳过对 fabrikam.com 中发件人的邮件进行垃圾邮件筛选。 为此，请使用以下步骤：
 
 1. 将 192.168.1.25 添加到 IP 允许列表。
 
-2. 配置邮件流规则，并至少 (以下设置) ：
+2. 配置邮件流规则，并 (以下设置) ：
 
    - 规则 **条件：** 如果发件人 IP 地址位于上述任一范围内或完全匹配 \>  \> 192.168.1.25 (则应用此规则 (该 IP 地址或地址范围与在上一步骤) 中添加的 IP 允许列表的 IP 地址或地址 \> 范围完全一致。
 
@@ -190,18 +196,18 @@ Set-HostedConnectionFilterPolicy -Identity Default -IPAllowList @{Add="192.168.2
 
 在下列情况下，来自 IP 允许列表中的电子邮件服务器的邮件仍受垃圾邮件筛选限制：
 
-- IP 允许列表中的 IP 地址也在 Microsoft 365 (任何租户中的基于 IP的入站连接器中配置 (让我们调用此租户 A) ，租户 A 和首次遇到邮件的 EOP 服务器正好位于 Microsoft 数据中心中的同一 *Active* Directory 林中。 在此方案中 **，IPV：CAL** 将添加到邮件的反垃圾邮件邮件头 [ (](anti-spam-message-headers.md)指示邮件绕过了垃圾邮件筛选) ，但邮件仍受垃圾邮件筛选限制。
+- IP 允许列表中的 IP 地址也配置在 Microsoft 365 中任何租户的基于IP 的入站连接器中 (让我们调用此租户 A) ，租户 A 和首次遇到邮件的 EOP 服务器正好位于 Microsoft 数据中心中的同一 *Active* Directory 林中。 在此方案中 **，IPV：CAL** 将添加到邮件的反垃圾邮件邮件头 [ (](anti-spam-message-headers.md)指示邮件绕过了垃圾邮件筛选) ，但邮件仍受垃圾邮件筛选限制。
 
 - 包含 IP 允许列表的租户和首次遇到邮件的 EOP 服务器都发生在 Microsoft 数据中心的不同 *Active* Directory 林中。 在此方案中 **，IPV：CAL** *未* 添加到邮件头，因此邮件仍受垃圾邮件筛选限制。
 
-如果遇到上述任一情况，可以创建至少 (设置的邮件流规则) 以确保来自有问题的 IP 地址的邮件将跳过垃圾邮件筛选：
+如果遇到以上任一情况，可以创建至少 (设置的邮件流规则) 以确保来自有问题的 IP 地址的邮件将跳过垃圾邮件筛选：
 
-- 规则条件：**如果** 发件人 IP 地址位于以下任一范围内或与 IP 地址或 (地址完全匹配，则应用此 \>  \>  \>) 。
+- 规则条件：**如果** 发件人 IP 地址位于以下任一范围内或与 IP 地址 (完全匹配，则 \>  \>  \> 应用此) 。
 
-- 规则操作 **：修改邮件属性** \> **设置垃圾邮件可信度 (SCL**) \> **绕过垃圾邮件筛选**。
+- 规则操作 **：修改邮件属性** \> **设置 SCL (垃圾邮件筛选)** \> **垃圾邮件可信度**。
 
 ## <a name="new-to-microsoft-365"></a>是 Microsoft 365 的新增功能？
 
 ****
 
-![Microsoft ](../../media/eac8a413-9498-4220-8544-1e37d1aaea13.png) **365** LinkedIn Learning New 的简短图标 发现 LinkedIn Learning 为 **Microsoft 365** 管理员和 IT 专业人员提供的免费视频课程。
+![Microsoft ](../../media/eac8a413-9498-4220-8544-1e37d1aaea13.png) **365** LinkedIn Learning New 的简短图标？ 发现 LinkedIn Learning 为 **Microsoft 365** 管理员和 IT 专业人员提供的免费视频课程。

@@ -8,24 +8,31 @@ manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: overview
-ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: .
-ms.openlocfilehash: f75504941e8481d35458ad2ae6b5e8a72c5e8c8c
-ms.sourcegitcommit: a49338bde6923b13132c7b9e4c6bb75c14163c72
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: e578cadf6687e02c900299a75bdd00a9d6e5b2ee
+ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/23/2020
-ms.locfileid: "49728184"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50166143"
 ---
 # <a name="control-automatic-external-email-forwarding-in-microsoft-365"></a>在 Microsoft 365 中控制自动外部电子邮件转发
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
-作为管理员，您可能有公司要求限制或控制自动转发给组织外部 (外部收件人的邮件) 。 电子邮件转发可能是一项有用的功能，但也可能由于信息泄露而带来安全风险。 攻击者可能会使用此信息来攻击你的组织或合作伙伴。
+**适用于**
+- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
+- [Microsoft Defender for Office 365 计划 1 和计划 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+
+作为管理员，您可能有公司要求限制或控制自动转发给组织外部 (外部收件人的邮件) 。 电子邮件转发可能很有用，但也可能由于信息泄露而带来安全风险。 攻击者可能会使用此信息来攻击你的组织或合作伙伴。
+
 
 以下类型的自动转发在 Microsoft 365 中可用：
 

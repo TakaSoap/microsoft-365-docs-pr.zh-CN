@@ -8,25 +8,28 @@ manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: how-to
-ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 212e68ac-6330-47e9-a169-6cf5e2f21e13
 ms.custom:
 - seo-marvel-apr2020
 description: 独立 Exchange Online Protection (EOP) 组织的管理员可以了解如何在 Exchange 管理中心 (EAC) 和独立 Exchange Online Protection (EOP) PowerShell 中创建、修改和删除通讯组和启用邮件的安全组。
-ms.openlocfilehash: 5ff7c61d51ded039b06d1faa98ba6390939b3413
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: 01fe5c6ab1555749d38f9c092b05aca9befb67fe
+ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49658841"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50166959"
 ---
 # <a name="manage-groups-in-eop"></a>在 EOP 中管理组
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**适用于**
+-  [独立 Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
 
-在独立 Exchange Online Protection (EOP) 组织中，您可以创建、修改和删除以下类型的组：
+在独立 Exchange Online Protection (EOP) 没有 Exchange Online 邮箱的组织，您可以创建、修改和删除以下类型的组：
 
 - **通讯组**：邮件用户或其他通讯组的集合。 例如，需要在共同关注领域接收或发送电子邮件的团队或其他临时组。 通讯组专用于分发电子邮件，并且不是安全主体 (他们无法为其分配权限) 。
 
@@ -38,7 +41,7 @@ ms.locfileid: "49658841"
     >
     > - 不要向启用邮件的安全组添加通讯组。
 
-您可以在 Exchange 管理中心内管理组 (EAC) EOP PowerShell 中管理组。
+您可以在 Exchange 管理中心和 EAC (和) EOP PowerShell 中管理组。
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>开始前，有必要了解什么？
 
@@ -48,9 +51,9 @@ ms.locfileid: "49658841"
 
 - 在独立 EOP PowerShell 中管理组时，可能会遇到限制。 本文中的 PowerShell 过程使用批处理方法，该方法在命令结果可见之前导致传播延迟几分钟。
 
-- 您需在 Exchange Online Protection 中获得权限，然后才能执行本文中的过程。 具体来说，您需要"**通讯组"** 角色，该角色默认分配给"组织管理"和"**收件人管理**"角色组。 有关详细信息，请参阅独立 [EOP 中](feature-permissions-in-eop.md) 的权限和使用 [EAC 修改角色组的成员列表](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups)。
+- 您需在 Exchange Online Protection 中获得权限，然后才能执行本文中的过程。 具体来说，您需要"**通讯组"** 角色，该角色默认分配给"组织管理"和"**收件人管理**"角色组。 有关详细信息，请参阅独立 [EOP 中的权限](feature-permissions-in-eop.md) 和使用 [EAC 修改角色组的成员列表](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups)。
 
-- 有关可能适用于本文中的过程的键盘快捷方式的信息，请参阅 Exchange Online [中 Exchange 管理中心的键盘快捷方式](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center)。
+- 有关可能适用于本文中的过程的键盘快捷方式的信息，请参阅 Exchange Online 中 [Exchange 管理中心的键盘快捷方式](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center)。
 
 > [!TIP]
 > 是否有任何疑问？ 请在 [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351) 论坛中寻求帮助。
@@ -79,13 +82,13 @@ ms.locfileid: "49658841"
 
    - <sup>\*</sup>**所有者**：组所有者可以管理组成员身份。 默认情况下，组创建者即为组所有者。 所有组都必须至少有一个所有者。
 
-     若要添加所有者，请单击 **"添加"** ![ 图标 ](../../media/ITPro-EAC-AddIcon.png) 。 在出现的对话框中，查找并选择收件人或组，然后单击"添加 **>。** 根据需要重复执行此步骤（次数不限）。 完成后，单击"确定 **"。**
+     若要添加所有者，请单击 **"添加"** ![ 图标 ](../../media/ITPro-EAC-AddIcon.png) 。 在出现的对话框中，查找并选择收件人或组，然后单击 **"添加>。** 根据需要重复执行此步骤（次数不限）。 完成后，单击"确定 **"。**
 
      若要删除所有者，请选择所有者，然后单击"删除 **"** ![ 图标 ](../../media/ITPro-EAC-RemoveIcon.gif) 。
 
    - **Members**： Add and remove group members.
 
-     若要添加成员，请单击 **"添加"** ![ 图标 ](../../media/ITPro-EAC-AddIcon.png) 。 在出现的对话框中，查找并选择收件人或组，然后单击"添加 **>。** 根据需要重复执行此步骤（次数不限）。 完成后，单击"确定 **"。**
+     若要添加成员，请单击 **"添加"** ![ 图标 ](../../media/ITPro-EAC-AddIcon.png) 。 在出现的对话框中，查找并选择收件人或组，然后单击 **"添加>。** 根据需要重复执行此步骤（次数不限）。 完成后，单击"确定 **"。**
 
      若要删除成员，请选择该成员，然后单击" **删除"** ![ 图标 ](../../media/ITPro-EAC-RemoveIcon.gif) 。
 
@@ -99,7 +102,7 @@ ms.locfileid: "49658841"
 
 3. 在打开的通讯组属性页上，单击以下选项卡之一以查看或更改属性。
 
-   完成时，请单击“保存”。
+   完成后，单击“**保存**”。
 
 #### <a name="general"></a>常规
 
@@ -119,15 +122,15 @@ ms.locfileid: "49658841"
 
 使用此选项卡可分配组所有者。 组所有者可以管理组成员身份。 默认情况下，组创建者即为组所有者。 所有组都必须至少有一个所有者。
 
-若要添加所有者，请单击 **"添加"** ![ 图标 ](../../media/ITPro-EAC-AddIcon.png) 。 在出现的对话框中，查找并选择收件人，然后单击"添加 **->"。** 根据需要重复执行此步骤（次数不限）。 完成后，单击"确定 **"。**
+若要添加所有者，请单击 **"添加"** ![ 图标 ](../../media/ITPro-EAC-AddIcon.png) 。 在出现的对话框中，查找并选择收件人，然后单击 **"添加->"。** 根据需要重复执行此步骤（次数不限）。 完成后，单击"确定 **"。**
 
 若要删除所有者，请选择所有者，然后单击"删除 **"** ![ 图标 ](../../media/ITPro-EAC-RemoveIcon.gif) 。
 
 #### <a name="membership"></a>成员身份
 
-使用此选项卡可添加或删除组的成员。 组所有者不需要是组的成员。
+使用此选项卡可以添加或删除组的成员。 组所有者不需要是组的成员。
 
-若要添加成员，请单击 **"添加"** ![ 图标 ](../../media/ITPro-EAC-AddIcon.png) 。 在出现的对话框中，查找并选择收件人或组，然后单击"添加 **>。** 根据需要重复执行此步骤（次数不限）。 完成后，单击"确定 **"。**
+若要添加成员，请单击 **"添加"** ![ 图标 ](../../media/ITPro-EAC-AddIcon.png) 。 在出现的对话框中，查找并选择收件人或组，然后单击 **"添加>。** 根据需要重复执行此步骤（次数不限）。 完成后，单击"确定 **"。**
 
 若要删除成员，请选择该成员，然后单击" **删除"** ![ 图标 ](../../media/ITPro-EAC-RemoveIcon.gif) 。
 
@@ -135,7 +138,7 @@ ms.locfileid: "49658841"
 
 1. 在 EAC 中，转到 **"收件人** \> **组"。**
 
-2. 在组列表中，选择要删除的通讯组，然后单击"删除 **"** ![ 图标 ](../../media/ITPro-EAC-RemoveIcon.gif) 。
+2. 在组列表中，选择要删除的通讯组，然后单击"删除 **删除"** ![ 图标 ](../../media/ITPro-EAC-RemoveIcon.gif) 。
 
 ## <a name="use-powershell-to-manage-groups"></a>使用 PowerShell 管理组
 
@@ -167,7 +170,7 @@ New-EOPDistributionGroup -Name "<Unique Name>" -ManagedBy @("UserOrGroup1","User
 
 - _Name_ 参数是必需的，最大长度为 64 个字符，并且必须是唯一的。 如果您不使用 _DisplayName_ 参数，_Name_ 参数的值可用于显示名称。
 
-- 如果不使用 Alias 参数 _，Name__参数将用于_ 别名值。 空格将被删除，不受支持的字符将转换为问号 (？) 。
+- 如果不使用 Alias 参数， _则_ _Name_ 参数用于别名值。 空格将被删除，不受支持的字符将转换为问号 (？) 。
 
 - 如果不使用 _PrimarySmtpAddress_ 参数，则别名值在 _PrimarySmtpAddress_ 参数中使用。
 
@@ -231,13 +234,13 @@ Remove-EOPDistributionGroup -Identity "IT Administrators"
 
 - 在 EAC 中，转到 **"收件人** \> **组"。** 验证组是否 (列出) ，并验证组 **类型** 值。 选择组并查看详细信息窗格中的信息，或单击"编辑编辑" ![ 图标 ](../../media/ITPro-EAC-AddIcon.png) 查看设置。
 
-- 在独立 EOP PowerShell 中，运行以下命令验证该组是否 (列出或未) ：
+- 在独立 EOP PowerShell 中，运行以下命令，验证组是否 (列出) ：
 
   ```PowerShell
   Get-Recipient -RecipientType MailUniversalDistributionGroup,MailUniversalSecurityGroup -ResultSize unlimited
   ```
 
-- 替换为 \<GroupIdentity\> 组的名称、别名或电子邮件地址，并运行以下命令来验证设置：
+- 替换为组的名称、别名或电子邮件地址，并 \<GroupIdentity\> 运行以下命令来验证设置：
 
   ```PowerShell
   Get-Recipient -Identity <GroupIdentity> | Format-List

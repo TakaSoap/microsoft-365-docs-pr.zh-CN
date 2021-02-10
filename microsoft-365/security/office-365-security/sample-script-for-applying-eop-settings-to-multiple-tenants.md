@@ -1,5 +1,5 @@
 ---
-title: EOP 设置的示例脚本-多租户
+title: EOP 设置的示例脚本 - 多个租户
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -8,34 +8,37 @@ manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: how-to
-ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: e87e84e1-7be0-44bf-a414-d91d60ed8817
 ms.custom:
 - seo-marvel-apr2020
-description: 在本文中，您将了解如何使用 PowerShell 将配置设置应用到您在 Microsoft Exchange Online Protection (EOP) 中的租户。
-ms.openlocfilehash: b18fc71171a93e2a2f415800bcf2b5abd5c5a526
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+description: 本文将了解如何使用 PowerShell 将配置设置应用到 Microsoft Exchange Online Protection (EOP) 。
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: b7d856a7cec3bddc32455ba3afadf0323ddce935
+ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49615860"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50166587"
 ---
 # <a name="sample-script-for-applying-eop-settings-to-multiple-tenants"></a>将 EOP 设置应用到多个租户的示例脚本
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**适用于**
+-  [独立 Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
 
-以下示例脚本允许 Microsoft Exchange Online Protection (EOP) 管理员管理多个租户 (公司) 使用 Exchange Online PowerShell 查看和/或将配置设置应用到租户。
+以下示例脚本允许 Microsoft Exchange Online Protection (EOP) 管理员管理 (公司) 使用 Exchange Online PowerShell 查看和/或将配置设置应用到其租户。
 
 ## <a name="to-run-a-script-or-cmdlet-on-multiple-tenants"></a>在多个租户上运行脚本或 cmdlet
 
-1. 如果还未安装，请 [安装 Exchange Online V2 模块](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell-v2#install-and-maintain-the-exo-v2-module)。
+1. 如果尚未安装，请安装 [Exchange Online V2 模块](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell-v2#install-and-maintain-the-exo-v2-module)。
 
-2. 使用电子表格应用程序 (例如，Excel) ，创建一个 .csv 文件，其中包含以下详细信息：
+2. 使用电子表格应用程序 (例如 Excel) ，创建具有以下详细信息的 .csv 文件：
 
-   - UserName 列：用于连接 (的帐户例如， `admin@contoso.onmicrosoft.com`) 。
-   - Cmdlet 列：要运行的 cmdlet 或命令 (例如， `Get-AcceptedDomain` 或 `Get-AcceptedDomain | FT Name`) 。
+   - UserName 列：用于连接帐户的帐户 (例如 `admin@contoso.onmicrosoft.com` ，) 。
+   - Cmdlet 列：例如，用于运行 (或) 的 cmdlet `Get-AcceptedDomain` `Get-AcceptedDomain | FT Name` 或) 。
 
    该文件将如下所示：
 
@@ -45,9 +48,9 @@ ms.locfileid: "49615860"
    admin@fabrikam.onmicrosoft.com,Get-AcceptedDomain | FT Name
    ```
 
-3. 将 .csv 文件保存到易于查找的位置 (例如，c:\scripts\inputfile.csv) 。
+3. 将 .csv 文件保存在易于查找的位置，例如 (文件c:\scripts\inputfile.csv) 。
 
-4. 将 [RunCmdletOnMultipleTenants.ps1](#runcmdletonmultipletenantsps1) 脚本复制到记事本中，然后将该文件保存到易于查找的位置 (例如，c：\scripts) 。
+4. 将 [RunCmdletOnMultipleTenants.ps1](#runcmdletonmultipletenantsps1) 脚本复制到记事本中，然后将文件保存到易于查找的位置 (例如 c：\scripts) 。
 
 5. 使用以下语法运行此脚本：
 
@@ -61,12 +64,12 @@ ms.locfileid: "49615860"
    & "c:\scripts\RunCmdletOnMultipleTenants.ps1" "c:\scripts\inputfile.csv"
    ```
 
-6. 每个租户都将登录到，脚本将运行。
+6. 每个租户都将登录，并且脚本将运行。
 
 ## <a name="runcmdletonmultipletenantsps1"></a>RunCmdletOnMultipleTenants.ps1
 
 > [!NOTE]
-> 您可能需要修改 `Connect-IPPSSession` 脚本中的行以匹配您的环境。 例如，Office 365 德国需要一个与脚本中的当前值不同的 _ConnectionUri_ 值。 有关详细信息，请参阅连接到 [Exchange Online Powershell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell)。
+> 您可能需要修改脚本 `Connect-IPPSSession` 中的行以匹配您的环境。 例如，Office 365 Germany 需要与脚本中的当前值不同的 _ConnectionUri_ 值。 有关详细信息，请参阅"连接到[Exchange Online Powershell"。](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell)
 
 ```powershell
 # This script runs Windows PowerShell cmdlets on multiple tenants.

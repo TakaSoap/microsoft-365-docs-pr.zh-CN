@@ -8,23 +8,26 @@ manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: how-to
-ms.service: O365-seccomp
 ms.custom:
 - seo-marvel-apr2020
 localization_priority: Normal
 ms.assetid: d74c6ddf-11b0-43ee-b298-8bb0340895f0
 description: 管理员可以了解如何设置独立 Exchange Online Protection (EOP) 以保护本地电子邮件环境。
-ms.openlocfilehash: ca95f7dce30e8e751e293bf4e5de9caf0c845d29
-ms.sourcegitcommit: 222fb7fe2b26dde3d8591b61cc02113d6135012c
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: 42952259da4086c4e147fb1a69fc081659dcc7e2
+ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "49760490"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50166203"
 ---
 # <a name="set-up-your-standalone-eop-service"></a>设置独立 EOP 服务
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**适用于**
+-  [独立 Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
 
 本主题介绍如何设置独立 Exchange Online Protection (EOP) 。 如果您已从 Office 365 域向导登录到这里，则假如您不想使用 Exchange Online Protection，请返回到 Office 365 域向导。 若要详细了解如何配置连接器，请参阅[Configure mail flow using connectors in Office 365](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow)。
 

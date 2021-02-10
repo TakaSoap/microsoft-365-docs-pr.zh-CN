@@ -13,19 +13,23 @@ description: 管理员可以了解安全与合规中心的邮件流仪表板中�
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ef9498d19e79cf670fbae52171b78b0c44c45910
-ms.sourcegitcommit: 537e513a4a232a01e44ecbc76d86a8bcaf142482
+ms.openlocfilehash: b65e235e3446fa62bca1c9f8aef73f2387b1140b
+ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "50029358"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50167091"
 ---
 # <a name="mail-flow-insights-in-the-security--compliance-center"></a>安全与合规中心内的邮件流见解
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**适用于**
+- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
+- [Microsoft Defender for Office 365 计划 1 和计划 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-管理员可以使用安全与合规中心&邮件流仪表板来发现趋势、见解，并采取措施来解决与组织中邮件流相关的问题。
+管理员可以使用安全与合规中心内&流仪表板发现趋势、见解，并采取措施来解决与组织中邮件流相关的问题。
 
 ![安全与合规中心内的邮件&仪表板](../../media/mail-flow-dashboard-v2.png)
 

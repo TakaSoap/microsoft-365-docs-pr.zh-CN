@@ -19,14 +19,19 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 ms.technology: mdo
-ms.openlocfilehash: 261c375aa17e4a3bc8f7d1b469d82621cf4ae45b
-ms.sourcegitcommit: 8e696c084d097520209c864140af11aa055b979e
+ms.openlocfilehash: 653b16b7b3f6637440e3740830ffe9f9a51c6dd8
+ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "50097124"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50166503"
 ---
 # <a name="policy-recommendations-for-securing-email"></a>用于保护电子邮件的策略建议
+
+**适用于**
+- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
+- [Microsoft Defender for Office 365 计划 1 和计划 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+
 
 本文介绍如何实施推荐的标识和设备访问策略，以保护支持新式身份验证和条件访问的组织电子邮件和电子邮件客户端。 本指南基于通用 [标识和设备访问](identity-access-policies.md) 策略，还包括一些其他建议。
 
@@ -46,7 +51,7 @@ ms.locfileid: "50097124"
 
 如果在设置策略时将 Exchange Online 和 Outlook 包含在策略范围内，则只需创建新策略来阻止 ActiveSync 客户端。 查看下表中列出的策略，并添加建议的策略，或确认已包含这些策略。 每个策略链接到通用标识和设备访问策略中的关联 [配置说明](identity-access-policies.md)。
 
-|保护级别|策略|更多信息|
+|保护级别|策略|详细信息|
 |---|---|---|
 |**Baseline**|[当登录风险为中或高 *时需要* MFA](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|在分配云应用时包括 Exchange Online|
 ||[阻止不支持新式身份验证的客户端](identity-access-policies.md#block-clients-that-dont-support-multi-factor)|在分配云应用时包括 Exchange Online|

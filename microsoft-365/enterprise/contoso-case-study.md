@@ -14,12 +14,12 @@ ms.collection:
 - M365-subscription-management
 ms.custom: ''
 description: 虚构但具有代表性的全球组织如何采用 Microsoft 365 企业版。
-ms.openlocfilehash: b009e02cde0708c54fbd8e047029dae9f67a145b
-ms.sourcegitcommit: ae646779d84e993cf80b1207e76b856a21be5790
+ms.openlocfilehash: 9e02469c644c3107e964d0f5defa08043091e28f
+ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "49749559"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50166425"
 ---
 # <a name="microsoft-365-for-enterprise-for-the-contoso-corporation"></a>Contoso Corporation 的 Microsoft 365 企业版
 
@@ -53,7 +53,7 @@ Microsoft 365 企业版的总体目标是使用云服务将员工、合作伙伴
 
 - [Microsoft 365 企业应用版](contoso-o365pp.md)
 
-  Microsoft 365 企业应用版 Contoso 基础结构部署并自动安装Microsoft Office软件套件的更新。
+  Microsoft 365 企业应用版 Contoso 基础结构部署并自动安装 Microsoft Office 套件的更新。
 
 - [移动设备管理](contoso-mdm.md)
 
@@ -61,7 +61,7 @@ Microsoft 365 企业版的总体目标是使用云服务将员工、合作伙伴
 
 - [信息保护](contoso-info-protect.md)
 
-  为了确保对常见和高价值数据进行标识、标记和遵守安全层，Contoso 使用 Microsoft 365 强制执行其数据安全策略，以用于企业信息保护。
+  为了确保对常见和高价值数据进行标识、标记，并受安全层限制，Contoso 使用 Microsoft 365 强制执行其数据安全策略，以用于企业信息保护。
 
 - [Microsoft 365 企业安全摘要](contoso-security-summary.md)
 
@@ -71,15 +71,19 @@ Microsoft 365 企业版的总体目标是使用云服务将员工、合作伙伴
 
 - [为远程和现场工作采取的 COVID-19 响应措施和所提供的基础设施](../solutions/contoso-remote-onsite-work.md)
 
-  了解 Contoso 如何针对 COVID-19 威胁更新其远程访问基础结构，以及针对远程和现场工作的新安装和更新基础结构。
+  了解 Contoso 如何为远程和现场工作人员更新其远程访问功能及其新的安装和更新基础结构。
 
 - [最高机密项目团队](../solutions/contoso-team-for-top-secret-project.md)
 
   为了为顶级机密项目创建安全协作环境，Contoso 使用具有安全隔离的团队。
 
-- [Teams 语音迁移概述](https://docs.microsoft.com/MicrosoftTeams/voice-case-study-overview)
+- [Teams 语音迁移](https://docs.microsoft.com/MicrosoftTeams/voice-case-study-overview)
 
   了解 Contoso 如何将其本地用户迁移到 Microsoft Teams，实现统一的通信、协作和语音。
+
+- [通信合规性冒犯性语言策略](../compliance/communication-compliance-case-study.md)
+
+  了解 Contoso 如何快速为 Microsoft Teams、Exchange 和 Yammer 通信配置冒犯性语言策略。
 
 ## <a name="next-step"></a>后续步骤
 

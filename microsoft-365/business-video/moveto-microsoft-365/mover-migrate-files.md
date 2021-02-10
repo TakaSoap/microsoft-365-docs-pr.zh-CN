@@ -15,32 +15,31 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
-- okr_smb
 monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: 了解如何使用 Mover 将 Google 文件迁移到 Microsoft 365 商业版。
-ms.openlocfilehash: 99040e4846aba084f40536e88f0aed70998f48be
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 72ea81ad86a20e01b4650915fef96a713b207c3b
+ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49928194"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50166155"
 ---
 # <a name="migrate-google-files-to-microsoft-365-for-business"></a>将 Google 文件迁移到 Microsoft 365 商业版 
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4MhaD?autoplay=false]
 
-迁移到 Microsoft 365 商业版时，需要从 Google Drive 迁移文件。 可以使用 Mover 应用从个人驱动器和共享驱动器移动文件。 有关详细信息，请参阅 [Mover 云迁移](https://docs.microsoft.com/sharepointmigration/mover-plan-migration)
+迁移到 Microsoft 365 商业版时，需要从 Google Drive 迁移文件。 可以使用 Mover 应用从个人驱动器和共享驱动器移动文件。 有关详细信息，请参阅 [Mover 云迁移](https://docs.microsoft.com/sharepointmigration/mover-plan-migration)。
 
 > [!NOTE]
 > Mover 将创建文件副本，将副本移动到 Microsoft 365 商业版。 原始文件也将留在 Google Drives 中。
 
 ## <a name="before-you-start"></a>准备工作
 
-所有用户都应已登录 Microsoft 365 商业版并设置其 OneDrive for Business。 为此，请转到 [office.com，使用](https://office.com)Microsft 365 商业版凭据登录，然后选择 OneDrive。
+所有用户都应已登录到 Microsoft 365 商业版并设置其 OneDrive for Business。 为此，请转到 [office.com，使用](https://office.com)Microsoft 365 商业版凭据登录，然后选择 OneDrive。
 
 ## <a name="try-it"></a>试一试！
 
@@ -48,7 +47,7 @@ ms.locfileid: "49928194"
 
 1. 登录 Google Workspace 管理控制台[，admin.google.com。](https://admin.google.com)
 
-1. 选择 **"应用****"，"Google Workspace Marketplace"应用****，然后将应用添加到域安装列表**。
+1. 选择 **应用**  >  **Google 工作区市场应用**  >  **将应用添加到域安装列表**。
 
 1. 搜索 Mover 并选择它。
 
@@ -70,7 +69,7 @@ ms.locfileid: "49928194"
 1. 在 **"选择目标**"下，**选择"授权新连接器**"，找到 **Office 365，** 然后选择"**授权"。**
 1. 若要向 Azure Active Directory 中的 Mover 应用授予权限， [请导航到](https://aka.ms/Office365MoverAuth)aka.ms/Office365MoverAuth。
 1. Select **Office 365 Mover**， **Permissions，** **Grant admin consent for your company.**
-1. 选择您的帐户，查看权限，然后选择"**接受"。**
+1. 选择您的帐户，查看权限，然后选择"接受 **"。**
 1. 选择 **"** 属性"并验证 **用户分配是否必需？** 已打开。
 1. 返回到 Mover 应用，更改显示名称，如果需要，请选择"授权 **"，然后选择** Microsoft 管理员帐户。
 
@@ -81,12 +80,12 @@ ms.locfileid: "49928194"
 
     如果驱动器未自动映射，请将其目标路径添加到 CSV 文件，稍后我们将使用该路径将共享驱动器迁移到 SharePoint 文档库。 
 
-1. 在这种情况下，我们添加了一个称为"已迁移文件"的 SharePoint 网站，并记下了文档页的 URL。 
+1. 在这种情况下，我们添加了一个称为"迁移文件"的 SharePoint 网站，并记下了文档页的 URL。 
 1. 然后，我们使用源路径、目标路径和标记的格式创建了 CSV 文件。 
 
     有关详细信息 [，请参阅](https://docs.microsoft.com/sharepointmigration/mover-create-migration-csv)aka.ms/movercsv。
 
-    添加目标路径 URL 时，删除共享文档之后的所有内容，例如，此完整 URL 不起作用： `https://TENANT01.sharepoint.com/sites/SiteName/Shared Documents/Forms/AllItems.aspx`
+    添加目标路径 URL 时，删除共享文档之后的所有内容。 例如，此完整 URL 无效： `https://TENANT01.sharepoint.com/sites/SiteName/Shared Documents/Forms/AllItems.aspx`
 
     将其更改为：`https://TENANT01.sharepoint.com/sites/SiteName/Shared Documents`
 

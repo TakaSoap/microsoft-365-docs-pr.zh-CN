@@ -17,16 +17,21 @@ ms.collection:
 description: 管理员可以了解向 Microsoft 报告好坏消息和文件以进行分析的不同方法。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 601d0c599a815529540281679bd2b0f907031058
-ms.sourcegitcommit: 3b369a44b71540c8b8214ce588a7aa6f47c3bb1e
+ms.openlocfilehash: b75b05f33ab6c6a5827101ad2f5b14c94b932135
+ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "50099686"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50166683"
 ---
 # <a name="report-messages-and-files-to-microsoft"></a>向 Microsoft 报告邮件和文件
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
+**适用于**
+- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
+- [Microsoft Defender for Office 365 计划 1 和计划 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 在 Exchange Online 中具有邮箱的 Microsoft 365 组织或独立 Exchange Online Protection (EOP) 组织中，用户和管理员都有几种向 Microsoft 报告电子邮件和文件的不同方法。
 

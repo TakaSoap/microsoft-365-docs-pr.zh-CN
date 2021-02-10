@@ -8,7 +8,6 @@ manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: overview
-ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -16,17 +15,21 @@ ms.assetid: 97921f0e-832f-40c7-b56d-414faede5191
 ms.collection:
 - M365-security-compliance
 description: 了解独立 Exchange Online Protection 中的 Web 管理界面 (EOP) 。
-ms.openlocfilehash: fc76ecd6dafcf9453a0c6de14917c96c950f8370
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: 81af6c64d2ec3204d0c9d46888bbfe21335955bd
+ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49659662"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50166215"
 ---
 # <a name="exchange-admin-center-in-standalone-eop"></a>独立 EOP 中的 Exchange 管理中心
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**适用于**
+-  [独立 Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
 
 Exchange 管理中心 (EAC) 是一个基于 Web 的管理控制台，适用于独立 Exchange Online Protection (EOP) 。
 
@@ -40,11 +43,11 @@ Exchange 管理中心 (EAC) 是一个基于 Web 的管理控制台，适用于�
 
   1. 转到并 <https://admin.microsoft.com> 单击"**全部显示"。**
 
-     ![单击 Microsoft 365 管理中心中的"全部显示"](../../media/m365-center-show-all.png)
+     ![单击"在 Microsoft 365 管理中心中全部显示"](../../media/m365-center-show-all.png)
 
-  2. 在出现的 **"管理** 中心"部分，单击 **"所有管理中心"。**
+  2. 在出现的 **"管理中心**"部分，单击 **"所有管理中心"。**
 
-     ![单击 Microsoft 365 管理中心的所有管理中心](../../media/m365-center-select-all-admin-centers.png)
+     ![单击 Microsoft 365 管理中心中的"所有管理中心"](../../media/m365-center-select-all-admin-centers.png)
 
   3. 在出现的 **"所有管理** 中心"页上，单击 **"Exchange Online Protection"。**
 
@@ -64,9 +67,9 @@ Exchange 管理中心 (EAC) 是一个基于 Web 的管理控制台，适用于�
 
 - **权限**：你将在此管理管理员角色。
 
-- **合规性管理**：你将在此找到管理员角色组报告和管理审核日志报告。
+- **合规性管理**：你可以在这里找到管理员角色组报告和管理审核日志报告。
 
-- **保护**：你可以在这里管理反恶意软件策略、默认连接筛选器策略和 DKIM。
+- **保护**：这是你可以管理反恶意软件策略、默认连接筛选器策略和 DKIM 的地方。
 
   > [!NOTE]
   > 您应该在安全与合规中心内管理反恶意软件策略和&筛选器策略。 有关详细信息，请参阅"在 EOP 中配置[反恶意软件](configure-anti-malware-policies.md)策略"和"[在 EOP 中配置连接筛选"。](configure-the-connection-filter-policy.md)
@@ -92,7 +95,7 @@ Exchange 管理中心 (EAC) 是一个基于 Web 的管理控制台，适用于�
 |![删除图标](../../media/ITPro-EAC-DeleteIcon.gif)|删除|使用此图标可删除对象。有些删除图标有一个向下箭头，单击该箭头可显示其他选项。|
 |![搜索图标](../../media/ITPro-EAC-.gif)|搜索|使用此图标可打开一个搜索框，可在其中键入要查找的对象的搜索短语。|
 |![刷新图标](../../media/ITPro-EAC-RefreshIcon.gif)|刷新|使用此图标可刷新列表视图。|
-|![更多选项图标](../../media/ITPro-EAC-MoreOptionsIcon.gif)|更多选项|使用此图标可以查看可对该选项卡的对象执行的更多操作。 例如，在 **"收件人 \> 用户** "中，单击此图标将显示执行高级 **搜索的选项**。|
+|![更多选项图标](../../media/ITPro-EAC-MoreOptionsIcon.gif)|更多选项|使用此图标可以查看可对该选项卡的对象执行的更多操作。 例如，在 **"收件人 \> 用户"中** ，单击此图标将显示执行高级 **搜索的选项**。|
 |![向上键图标](../../media/ITPro-EAC-UpArrowIcon.gif)![向下键图标](../../media/ITPro-EAC-DownArrowIcon.gif)|向上箭头和向下箭头|使用这些图标可以将对象的优先级上移或下移。|
 |![删除图标](../../media/ITPro-EAC-RemoveIcon.gif)|删除|使用此图标可从列表中删除对象。|
 |

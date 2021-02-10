@@ -15,21 +15,25 @@ ms.assetid: c440b2ac-cafa-4be5-ba4c-14278a7990ae
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
-description: 管理员可以查看有关 Exchange Online Protection 和 EOP (隔离邮件的常见问题和) 。
+description: 管理员可以查看有关 Exchange Online Protection 中隔离邮件的常见问题和解答， (EOP) 。
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: abd2304e83d2814cab55d13312535bd94308d8be
-ms.sourcegitcommit: b3bb5bf5efa197ef8b16a33401b0b4f5663d3aa0
+ms.openlocfilehash: 019f1c103ef1aaf7641072cd1259d22e83f0de4c
+ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "50032597"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50166923"
 ---
 # <a name="quarantined-messages-faq"></a>隔离邮件常见问题解答
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**适用于**
+- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
+- [Microsoft Defender for Office 365 计划 1 和计划 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 本主题提供有关在 Exchange Online 中具有邮箱的 Microsoft 365 组织或没有 Exchange Online 邮箱的独立 Exchange Online Protection (EOP) 组织的隔离电子邮件的常见问题和解答。
 
@@ -49,17 +53,17 @@ ms.locfileid: "50032597"
 
 ## <a name="how-do-i-give-users-access-to-the-quarantine"></a>如何授予用户对隔离的访问权限？
 
-用户必须具有有效的帐户，以访问自己的隔离邮件。 独立 EOP 要求在 EOP 中将用户表示为邮件用户 (通过目录同步邮箱手动创建或) 。 有关在独立 EOP 环境中管理用户的信息，请参阅["在 EOP 中管理邮件用户"。](manage-mail-users-in-eop.md)
+用户必须具有有效的帐户，以访问自己的隔离邮件。 独立 EOP 要求用户表示为 EOP 中的邮件用户 (通过目录同步邮箱手动创建或) 。 有关在独立 EOP 环境中管理用户的信息，请参阅["在 EOP 中管理邮件用户"。](manage-mail-users-in-eop.md)
 
 ## <a name="what-messages-can-end-users-access-in-quarantine"></a>最终用户可以在隔离中访问哪些邮件？
 
-自 2020 年 4 (，用户可以访问垃圾邮件、批量) 电子邮件和邮件，包括收件人的网络钓鱼邮件。 最终用户无法访问隔离的恶意软件、高可信度网络钓鱼或因邮件流规则（也称为传输规则 (传输规则）中的托管隔离操作而隔离) 。 有关用户访问隔离邮件详细信息，请参阅"查找隔离邮件并作为用户[释放"。](find-and-release-quarantined-messages-as-a-user.md)
+自 2020 年 4 (，用户可以访问垃圾邮件、批量) 电子邮件和邮件，包括收件人的网络钓鱼邮件。 最终用户无法访问隔离的恶意软件、高可信度网络钓鱼或因邮件流规则（也称为传输规则 (传输规则）中的托管隔离操作而隔离) 。 有关访问隔离邮件的用户详细信息，请参阅"查找隔离邮件并作为用户[释放"。](find-and-release-quarantined-messages-as-a-user.md)
 
 ## <a name="how-long-are-messages-kept-in-the-quarantine"></a>邮件在隔离区中保留多久？
 
 您可以使用反垃圾邮件策略配置垃圾邮件、网络钓鱼和批量电子邮件在隔离区中的保留时间。 默认值为 30 天，也是最大值。 有关详细信息，请参阅在 [EOP 中配置反垃圾邮件策略](configure-your-spam-filter-policies.md)
 
-对于由邮件流规则操作 **"** 将邮件发送到托管隔离邮箱"隔离的邮件，这些邮件在隔离中保留 30 天。 无法配置此持续时间。
+对于邮件流规则操作 **"** 将邮件发送到托管隔离邮箱"隔离的邮件，这些邮件在隔离区中保留 30 天。 无法配置此持续时间。
 
 在时间段过期后，邮件将被删除且不可恢复。
 
@@ -85,7 +89,7 @@ ms.locfileid: "50032597"
 
 - 查找从 fabrikam 域中所有发件人隔离为垃圾邮件的未发布邮件。 最多结果数为 50，000 (50 页（包含 1000 个) ）。
 - 将结果保存到 CSV 文件。
-- 将匹配的隔离邮件释放到所有原始收件人。
+- 将匹配的隔离邮件释放给所有原始收件人。
 
 ```powershell
 $Page = 1

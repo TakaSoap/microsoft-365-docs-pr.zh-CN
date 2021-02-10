@@ -1,5 +1,5 @@
 ---
-title: 检测并修正违法许可授予
+title: 检测和修正非法同意授权
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -11,115 +11,119 @@ ms.topic: article
 ms.collection:
 - o365_security_incident_response
 - M365-security-compliance
-ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
-description: 了解如何识别和修正 Microsoft Office 365 中的非法许可授予攻击。
+description: 了解如何识别和修正 365 中的非法同意Microsoft Office攻击。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b534d53166c09cf77993948cf1c448e21c8cd330
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: a1c724bb3b201e0ddf1edea4794606c7083605e8
+ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48203091"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50165435"
 ---
-# <a name="detect-and-remediate-illicit-consent-grants"></a>检测并修正违法许可授予
+# <a name="detect-and-remediate-illicit-consent-grants"></a>检测和修正非法同意授权
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**适用于**
+- [Microsoft Defender for Office 365 计划 1 和计划 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-**摘要**  了解如何识别和修正在 Office 365 中的非法许可授予攻击。
+**摘要**  了解如何识别和修正 Office 365 中的非法同意授予攻击。
 
-## <a name="what-is-the-illicit-consent-grant-attack-in-office-365"></a>什么是 Office 365 中的非法同意授权攻击？
+## <a name="what-is-the-illicit-consent-grant-attack-in-office-365"></a>什么是 Office 365 中的非法许可授予攻击？
 
-在违法许可授予攻击中，攻击者将创建一个 Azure 注册的应用程序，该应用程序请求对联系人信息、电子邮件或文档等数据的访问权限。 然后，攻击者向最终用户授予权限，允许该应用程序通过网络钓鱼攻击或将非法代码注入到受信任的网站来访问其数据。 在违法应用程序被授予同意后，它将具有对数据的帐户级别访问权限，而无需组织帐户。 常规修正步骤（如重置被破坏帐户的密码或要求对帐户的多重身份验证 (MFA) ）不会对此类型的攻击有效，因为它们是第三方应用程序，而是组织外部的。
+在非法同意授予攻击中，攻击者创建 Azure 注册的应用程序，请求访问联系人信息、电子邮件或文档等数据。 然后，攻击者通过网络钓鱼攻击或将非法代码注入受信任的网站，来欺骗最终用户授予该应用程序访问其数据的同意。 在非法应用程序获得许可后，它将具有对数据的帐户级访问权限，而无需使用组织帐户。 正常修正步骤（如重置被泄露帐户的密码或要求帐户使用多重身份验证 (MFA) ）无法有效抵御此类攻击，因为此类攻击是第三方应用程序，并且位于组织外部。
 
-这些攻击利用交互模型，该模型假定调用信息的实体是自动化的，而不是人工。
+这些攻击利用一个交互模型，该模型以调用信息的实体为自动化，而不是人工。
 
 > [!IMPORTANT]
-> 您是否怀疑在违法许可的情况下遇到问题-从应用程序中立即授予权限？ Microsoft Cloud App Security (MCAS) 具有检测、调查和修正 OAuth 应用程序的工具。 本 MCAS 文章中有一个教程，概述了如何 [调查有风险的 OAuth 应用程序](https://docs.microsoft.com/cloud-app-security/investigate-risky-oauth)。 您还可以设置 [OAuth 应用策略](https://docs.microsoft.com/cloud-app-security/app-permission-policy) 以调查应用程序请求的权限，这些权限是用户授权这些应用程序，并广泛批准或禁止这些权限请求。
+> 你是否怀疑目前遇到来自应用的非法许可问题？ Microsoft Cloud App Security (MCAS) 具有用于检测、调查和修正 OAuth 应用的工具。 此 MCAS 文章包含一个教程，概述了如何调查 [有风险的 OAuth 应用](https://docs.microsoft.com/cloud-app-security/investigate-risky-oauth)。 还可以设置 [OAuth](https://docs.microsoft.com/cloud-app-security/app-permission-policy) 应用策略以调查应用程序请求的权限（用户正在授权这些应用程序）并广泛批准或禁止这些权限请求。
 
-## <a name="what-does-an-illicit-consent-grant-attack-look-like-in-office-365"></a>非法同意在 Office 365 中授予攻击外观？
+## <a name="what-does-an-illicit-consent-grant-attack-look-like-in-office-365"></a>非法同意授予攻击在 Office 365 中的外观是什么？
 
-您需要搜索 **审核日志** ，以查找此攻击的标志（也称为泄露 (IOC) 的标记）。 对于具有许多 Azure 注册应用程序和大型用户群的组织，最佳做法是在每周的基础上查看您的组织同意授予。
+你需要搜索此审核日志，以查找此攻击的 IOC (入侵) 指示器。 对于具有许多 Azure 注册应用程序和大型用户群的组织，最佳做法是每周查看一次组织的同意授予。
 
 ### <a name="steps-for-finding-signs-of-this-attack"></a>查找此攻击的迹象的步骤
 
-1. 在上打开 **安全 & 合规性中心** <https://protection.office.com> 。
+1. 打开 **安全&合规中心** <https://protection.office.com> 。
 
-2. 导航到 " **搜索** "，然后选择 " **审核日志搜索**"。
+2. 导航到 **"搜索**"，然后选择 **"审核日志搜索"。**
 
-3. 搜索 (所有活动和所有用户) 并输入开始日期和结束日期（如果需要），然后单击 " **搜索**"。
+3. 搜索 (活动以及所有用户) 输入开始日期和结束日期（如果需要）然后单击"**搜索"。**
 
-4. 单击 " **筛选结果** " 并在 " **活动** " 字段中输入应用同意。
+4. 单击 **"筛选结果** "，在"活动"字段中输入"同意 **应用程序** "。
 
-5. 单击结果以查看活动的详细信息。 若要获取活动的详细信息，请单击 " **详细信息** "。 查看 "IsAdminContent" 是否设置为 True。
+5. 单击结果以查看活动的详细信息。 单击 **"详细信息** "可获取活动的详细信息。 检查 IsAdminContent 是否设置为 True。
 
 > [!NOTE]
 >
-> 在事件发生后，在搜索结果中显示相应的审核日志条目可能需要30分钟到24小时的时间。
+> 在事件发生后，可能需要 30 分钟到 24 小时才能在搜索结果中审核日志相应的项目条目。
 >
-> 审核记录的保留和可在审核日志中搜索的时间长度取决于您的 Microsoft 365 订阅，以及分配给特定用户的许可证类型。 有关详细信息，请参阅 [审核日志](../../compliance/search-the-audit-log-in-security-and-compliance.md)。
+> 审核记录在 审核日志 中保留和搜索的时间长度取决于 Microsoft 365 订阅，特别是分配给特定用户的许可证类型。 有关详细信息，请参阅审核 [日志](../../compliance/search-the-audit-log-in-security-and-compliance.md)。
 >
-> 如果此值为 true，则表示具有全局管理员访问权限的人员可能已授予对数据的广泛访问权限。 如果这是意外情况，请执行相应的步骤来 [确认攻击](#how-to-confirm-an-attack)。
+> 如果此值为 true，则表明具有全局管理员访问权限的某人可能已授予对数据的广泛访问权限。 如果这是意外情况，请采取措施 [确认攻击](#how-to-confirm-an-attack)。
 
 ## <a name="how-to-confirm-an-attack"></a>如何确认攻击
 
-如果您有上面列出的 IOCs 的一个或多个实例，则需要进行进一步调查以确认攻击是否发生。 您可以使用以下三种方法中的任何一种来确认攻击：
+如果上面列出了 IIC 的一个或多个实例，则需要进一步调查，以积极确认攻击是否发生。 可以使用以下三种方法之一确认攻击：
 
-- 使用 Azure Active Directory 门户列出应用程序及其权限。 这种方法是彻底的，但是，如果您有多个用户要检查，则一次只能检查一个用户，这可能会非常耗时。
+- 使用 Azure Active Directory 门户清点应用程序及其权限。 此方法非常彻底，但如果有许多用户要检查，则一次只能检查一个用户，这会非常耗时。
 
-- 使用 PowerShell 清点应用程序及其权限。 这是最快且最彻底的方法，最少的开销。
+- 使用 PowerShell 清点应用程序及其权限。 这是最快、最彻底的方法，开销最少。
 
-- 让您的用户单独检查其应用和权限，并将结果报告给管理员进行修正。
+- 让用户单独检查其应用和权限，将结果报告回管理员进行修正。
 
-## <a name="inventory-apps-with-access-in-your-organization"></a>在您的组织中列出具有访问权限的应用程序
+## <a name="inventory-apps-with-access-in-your-organization"></a>清点组织中具有访问权限的应用
 
-您可以为使用 Azure Active Directory 门户或 PowerShell 的用户执行此操作，也可以让用户单独枚举其应用程序访问。
+可以使用 Azure Active Directory 门户或 PowerShell 为用户执行此操作，也可以让用户单独枚举其应用程序访问权限。
 
 ### <a name="steps-for-using-the-azure-active-directory-portal"></a>使用 Azure Active Directory 门户的步骤
 
-您可以通过使用 [Azure Active Directory 门户](https://portal.azure.com/)来查找任何单个用户已向其授予权限的应用程序。
+可以使用 [Azure Active Directory](https://portal.azure.com/)门户查找任何单个用户已授予权限的应用程序。
 
 1. 使用管理权限登录到 Azure 门户。
 
-2. 选择 "Azure Active Directory" 边栏。
+2. 选择 Azure Active Directory 边栏选项卡。
 
 3. 选择“**用户**”。
 
 4. 选择要查看的用户。
 
-5. 选择 " **应用程序**"。
+5. 选择 **应用程序**。
 
-这将显示分配给用户的应用程序以及应用程序具有的权限。
+这将显示分配给用户的应用以及应用程序具有的权限。
 
 ### <a name="steps-for-having-your-users-enumerate-their-application-access"></a>让用户枚举其应用程序访问权限的步骤
 
-让你的用户转到 https://myapps.microsoft.com 并查看其自己的应用程序访问权限。 他们应该能够查看具有访问权限的所有应用程序，查看有关这些应用程序的详细信息 (包括访问) 的范围，并能够撤销可疑或违法应用程序的权限。
+让用户前往并 https://myapps.microsoft.com 查看自己的应用程序访问权限。 他们应能够看到所有具有访问权限的应用、查看有关这些应用的详细信息 (包括访问范围) ，并能够撤销对可疑或非法应用的权限。
 
 ### <a name="steps-for-doing-this-with-powershell"></a>使用 PowerShell 执行此操作的步骤
 
-验证违法许可授予攻击的最简单方法是运行 [Get-AzureADPSPermissions.ps1](https://gist.github.com/psignoret/41793f8c6211d2df5051d77ca3728c09)，这会将租赁中所有用户的所有 oauth 同意授权和 oauth 应用转储到一个 .csv 文件中。
+验证非法同意授予攻击的最简单方法就是运行 [Get-AzureADPSPermissions.ps1， ](https://gist.github.com/psignoret/41793f8c6211d2df5051d77ca3728c09)这将将租户中所有用户的所有 OAuth 许可授权和 OAuth 应用转储到一个 .csv 文件中。
 
 #### <a name="pre-requisites"></a>先决条件
 
-- 安装了 Azure AD PowerShell 库。
+- 已安装 Azure AD PowerShell 库。
 
-- 对将对其运行脚本的租户的全局管理员权限。
+- 对将运行脚本的租户的全局管理员权限。
 
 - 将运行脚本的计算机上的本地管理员。
 
 > [!IMPORTANT]
-> ***强烈建议***您在管理帐户上要求进行多重身份验证。 此脚本支持 MFA 身份验证。
+> ***强烈建议您*** 要求对管理帐户进行多重身份验证。 此脚本支持 MFA 身份验证。
 
-1. 使用本地管理员权限登录到您将运行脚本的计算机。
+1. 使用本地管理员权限登录到将运行脚本的计算机。
 
-2. 将 [Get-AzureADPSPermissions.ps1](https://gist.github.com/psignoret/41793f8c6211d2df5051d77ca3728c09) 脚本从 GitHub 下载或复制到将从中运行脚本的文件夹中。 这将是将在其中写入输出 "permissions.csv" 文件的文件夹。
+2. 从 GitHub [ 下载Get-AzureADPSPermissions.ps1](https://gist.github.com/psignoret/41793f8c6211d2df5051d77ca3728c09) 脚本，或将其复制到运行脚本的文件夹。 这将是将输出"permissions.csv"文件写入的同一文件夹。
 
-3. 以管理员身份打开 PowerShell 实例，并打开将脚本保存到的文件夹。
+3. 以管理员角色打开 PowerShell 实例，然后打开将脚本保存到的文件夹。
 
-4. 使用 [AzureAD](https://docs.microsoft.com/powershell/module/azuread/connect-azuread) cmdlet 连接到您的目录。
+4. 使用 [Connect-AzureAD](https://docs.microsoft.com/powershell/module/azuread/connect-azuread) cmdlet 连接到目录。
 
 5. 运行此 PowerShell 命令：
 
@@ -127,44 +131,44 @@ ms.locfileid: "48203091"
    Get-AzureADPSPermissions.ps1 | Export-csv -Path "Permissions.csv" -NoTypeInformation
    ```
 
-该脚本将生成一个名为 Permissions.csv 的文件。 按照以下步骤查找违法应用程序权限授予：
+该脚本生成一个名为 Permissions.csv。 按照以下步骤查找非法应用程序权限授予：
 
-1. 在 "ConsentType" 列中 (列 G) 搜索值 "AllPrinciples"。 AllPrincipals 权限允许客户端应用程序访问租赁中的所有人的内容。 本机 Microsoft 365 应用程序需要此权限才能正常工作。 应仔细查看具有此权限的每个非 Microsoft 应用程序。
+1. 在 ConsentType 列 (G 列) 搜索值"AllPrinciples"。 AllPrincipals 权限允许客户端应用程序访问租赁中每个人的内容。 本机 Microsoft 365 应用程序需要此权限才能正常工作。 应仔细检查每个具有此权限的非 Microsoft 应用程序。
 
-2. 在 "权限" 列中 (第 F 列) 查看每个委派的应用程序对内容的权限。 查找 "读取" 和 "写入" 权限或 "*"。所有 "权限，并仔细审查这些权限，因为它们可能不合适。
+2. 在"权限"列 (F 列) 查看每个委派应用程序具有的内容权限。 查找"读取"和"写入"权限或"*"。所有"权限，并仔细检查这些权限，因为它们可能不合适。
 
-3. 查看已授予同意的特定用户。 如果高配置文件或高影响用户授予了不适当的同意，则应进一步调查。
+3. 查看已授予同意的特定用户。 如果高调用户或高影响力用户授予了不适当的同意，你应进一步调查。
 
-4. 在 "ClientDisplayName" 列中 (列 C) 查找看起来可疑的应用程序。 应仔细查看具有拼写错误名称、超级 bland 名称或以黑客为名字的名称的应用程序。
+4. 在 ClientDisplayName 列 (C 列) 查找看起来可疑的应用。 应仔细查看名称拼写错误、超级恶意名称或黑客攻击名称的应用。
 
-## <a name="determine-the-scope-of-the-attack"></a>确定攻击的范围
+## <a name="determine-the-scope-of-the-attack"></a>确定攻击范围
 
-完成对应用程序访问的清查之后，请查看 **审核日志** 以确定泄露的全部范围。 搜索受影响的用户、违法应用程序有权访问您组织的时间段以及应用程序的权限。 你可以在[Microsoft 365 安全与合规中心](https://docs.microsoft.com/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance)中搜索**审核日志**。
+完成应用程序访问清单后，请查看 **审核日志以确定泄露** 的完整范围。 搜索受影响的用户、非法应用程序有权访问您的组织的时间范围以及应用程序拥有的权限。 可以在 Microsoft  [365 审核日志合规中心中搜索此策略](https://docs.microsoft.com/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance)。
 
 > [!IMPORTANT]
-> 必须先启用[管理员和用户](https://docs.microsoft.com/microsoft-365/compliance/turn-audit-log-search-on-or-off)的[邮箱审核](https://docs.microsoft.com/microsoft-365/compliance/enable-mailbox-auditing)和活动审核，然后才能获取此类信息。
+> [在攻击](https://docs.microsoft.com/microsoft-365/compliance/enable-mailbox-auditing)[之前](https://docs.microsoft.com/microsoft-365/compliance/turn-audit-log-search-on-or-off)，必须为管理员和用户启用邮箱审核和活动审核，才能获取此信息。
 
-## <a name="how-to-stop-and-remediate-an-illicit-consent-grant-attack"></a>如何停止和修正违法许可授予攻击
+## <a name="how-to-stop-and-remediate-an-illicit-consent-grant-attack"></a>如何停止和修正非法同意授予攻击
 
-在识别出具有非法权限的应用程序之后，可以通过多种方式删除该访问。
+识别具有非法权限的应用程序后，有几种方法可以删除该访问权限。
 
-- 您可以通过以下方式在 Azure Active Directory 门户中撤销应用程序的权限：
+- 可以通过以下方法在 Azure Active Directory 门户中撤销应用程序的权限：
 
-  - 导航到 **Azure Active Directory 用户** 边栏中受影响的用户。
+  - 在 Azure Active Directory 用户边栏 **选项卡中导航到受影响的** 用户。
 
-  - 选择 " **应用程序**"。
+  - 选择 **应用程序**。
 
-  - 选择违法应用程序。
+  - 选择非法应用程序。
 
-  - 在深化中单击 " **删除** "。
+  - 在 **向下** 钻取中单击"删除"。
 
-- 您可以按照 [AzureADOAuth2PermissionGrant](https://docs.microsoft.com/powershell/module/azuread/Remove-AzureADOAuth2PermissionGrant)中的步骤撤销对 PowerShell 的 OAuth 同意授权。
+- 你可以按照 [Remove-AzureADOAuth2PermissionGrant](https://docs.microsoft.com/powershell/module/azuread/Remove-AzureADOAuth2PermissionGrant)中的步骤撤销对 PowerShell 的 OAuth 许可授权。
 
-- 您可以按照 [AzureADServiceAppRoleAssignment](https://docs.microsoft.com/powershell/module/azuread/Remove-AzureADServiceAppRoleAssignment)中的步骤，通过 PowerShell 吊销服务应用程序角色分配。
+- 可以通过按照 [Remove-AzureADServiceAppRoleAssignment](https://docs.microsoft.com/powershell/module/azuread/Remove-AzureADServiceAppRoleAssignment)中的步骤使用 PowerShell 撤销服务应用角色分配。
 
-- 您还可以完全禁用受影响帐户的登录，这将禁用对该帐户中的数据的应用程序访问。 这并不是最终用户的工作效率的理想之处，但如果您正在努力快速限制影响，则它可能是一个可行的短期补救措施。
+- 还可以完全禁用受影响帐户的登录，这将反过来禁用应用访问该帐户的数据。 当然，这对最终用户的工作效率并不理想，但如果努力快速限制影响，它可以是一种可行的短期修正。
 
-- 您可以为租赁启用集成的应用程序。 这是一项重大步骤，可禁用最终用户对租户范围授予许可的能力。 这样可以防止您的用户无意中授予对恶意应用程序的访问权限。 强烈建议不要这样做，因为这会严重削弱用户在第三方应用程序中的工作效率。 为此，可以按照 [启用或禁用集成应用程序](https://docs.microsoft.com/microsoft-365/admin/misc/integrated-apps)中的步骤操作。
+- 你可以关闭租户的集成应用程序。 这是一个重大步骤，禁用最终用户在租户范围内授予同意的能力。 这可以防止用户无意中授予对恶意应用程序的访问权限。 不建议这样做，因为它会严重妨碍用户利用第三方应用程序提高工作效率的能力。 为此，可以按照打开或关闭集成 [应用中的步骤操作](https://docs.microsoft.com/microsoft-365/admin/misc/integrated-apps)。
 
 ## <a name="secure-microsoft-365-like-a-cybersecurity-pro"></a>像网络安全专家那样保护 Microsoft 365
 
@@ -178,12 +182,12 @@ ms.locfileid: "48203091"
 
 ## <a name="see-also"></a>另请参阅：
 
-- [我的应用程序列表中的意外应用程序](https://docs.microsoft.com/azure/active-directory/application-access-unexpected-application) 通过在实现时可能需要执行的各种操作来指导管理员。在遇到意外应用程序时，将对数据进行访问。
+- ["我的应用程序"列表中的意外应用程序将](https://docs.microsoft.com/azure/active-directory/application-access-unexpected-application) 指导管理员完成在发现存在具有数据访问权限的意外应用程序后可能想要执行的各种操作。
 
-- 将[应用程序与 Azure Active Directory 集成](https://docs.microsoft.com/azure/active-directory/active-directory-apps-permissions-consent)是对同意和权限的高级概述。
+- [将应用程序与 Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-apps-permissions-consent) 集成是同意和权限的简要概述。
 
-- [开发应用程序时遇到的问题](https://docs.microsoft.com/azure/active-directory/active-directory-application-dev-development-content-map) 提供了指向各种同意相关文章的链接。
+- [开发我的应用程序时出现问题](https://docs.microsoft.com/azure/active-directory/active-directory-application-dev-development-content-map) ，可提供指向各种许可相关文章的链接。
 
-- [Azure Active Directory (AZURE AD) 中的应用程序和服务主体对象 ](https://docs.microsoft.com/azure/active-directory/develop/active-directory-application-objects) 概述了应用程序模型的核心应用程序和服务主体对象。
+- [Azure Active Directory ](https://docs.microsoft.com/azure/active-directory/develop/active-directory-application-objects) (Azure AD) 中的应用程序和服务主体对象概述了应用程序模型的核心应用程序和服务主体对象。
 
-- "[管理对应用程序的访问](https://docs.microsoft.com/azure/active-directory/active-directory-managing-access-to-apps)" 是管理员管理用户对应用程序的访问权限所需的功能的概述。
+- [管理对应用](https://docs.microsoft.com/azure/active-directory/active-directory-managing-access-to-apps) 的访问权限是管理员管理用户对应用的访问权限所必须的功能的概述。

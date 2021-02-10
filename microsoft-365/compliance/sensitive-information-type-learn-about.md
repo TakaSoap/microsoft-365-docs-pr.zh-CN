@@ -16,12 +16,12 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: ''
-ms.openlocfilehash: 896a529d67faddb45b2672ca077f5a8e3b19827e
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 91366e8f255d277d4d40de4c4cd3330283da718c
+ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49933076"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50166447"
 ---
 # <a name="learn-about-sensitive-information-types"></a>了解敏感信息类型
 
@@ -46,14 +46,14 @@ ms.locfileid: "49933076"
 每个敏感信息类型实体由以下字段定义：
 
 - name：如何引用敏感信息类型
-- description： describes what the sensitive information type is looking for
+- description： 描述敏感信息类型正在查找的内容
 - 模式：模式定义敏感信息类型检测到的信息。 它由以下组件组成
     - 主元素 – 敏感信息类型要查找的主元素。 它可以 **是具有或** 不带校验和验证、关键字列表、关键字词典或函数的 **正则表达式**。 
-    - 支持元素 – 充当支持证据的元素，有助于提高匹配可信度。 例如，与 SSN 号码邻近的关键字"SSN"。 它可以是包含或不带校验和验证、关键字列表、关键字词典的正则表达式。
-    - 可信度 - 置信 (高、中、低) 反映与主要元素一起检测到的支持性证据量。 项目包含的支持性证据越高，匹配项包含的敏感信息的可信度越高。
+    - 支持元素 – 用作支持证据的元素，有助于提高匹配可信度。 例如，与 SSN 号码邻近的关键字"SSN"。 它可以是包含或不带校验和验证、关键字列表、关键字词典的正则表达式。
+    - 可信度 - 置信 (高、中、低) 反映与主要元素一起检测到的支持性证据量。 项目包含的支持性证据越多，匹配项包含的敏感信息的置信度越高。
     - 邻近度 – 主要元素和支持元素之间的字符数
 
-![确证性证据和临近度窗口的关系图](../media/dc68e38e-dfa1-45b8-b204-89c8ba121f96.png)
+![确证性证据和接近度窗口的关系图](../media/dc68e38e-dfa1-45b8-b204-89c8ba121f96.png)
 
 在此视频中了解有关可信度的更多信息
 
@@ -104,7 +104,7 @@ ms.locfileid: "49933076"
 
 - Argentina National Identity number 
 - 标识 
-- 标识国家身份证 
+- Identification National Identity Card 
 - DNI 
 - NIC 国家/个人注册表 
 - Documento Nacional de Identidad 
@@ -114,11 +114,11 @@ ms.locfileid: "49933076"
 
 ### <a name="more-on-confidence-levels"></a>有关可信度的更多方面
 
-在敏感信息类型实体定义中，可信度反映除了主要元素之外检测到多少支持证据。 项目包含的支持性证据越高，匹配项包含的敏感信息的可信度越高。 例如，高可信度的匹配项将包含与主要元素接近的更多支持证据，而置信度较低的匹配将几乎不包含接近度的支持性证据。 
+在敏感信息类型实体定义中，可信度反映除了主要元素之外检测到多少支持证据。 项目包含的支持性证据越多，匹配项包含的敏感信息的置信度越高。 例如，高可信度的匹配项将包含与主要元素接近的更多支持性证据，而置信度较低的匹配将几乎不包含接近度的支持性证据。 
 
 高可信度返回最小的误报，但可能会导致漏报数更多。 低或中等可信度返回更多的误报，但漏报很少到零。
 
-- **低可信度**：值 65，匹配的项将包含最小的漏报，但误报最多。  
+- **低可信度**：值 65，匹配项将包含最小的漏报，但误报最多。  
 - **中置** 信度 ：值 75，匹配项将包含误报和漏报的平均数量。  
 - **高可信度**：值 85，匹配的项将包含最小的误报，但包含最多的漏报。  
 
@@ -137,6 +137,8 @@ ms.locfileid: "49933076"
 
 
 > [!NOTE]
+> 改进的可信度可用于 Microsoft 365 服务的数据丢失防护、Microsoft 365 服务的 Microsoft 信息保护、通信合规性、信息管理和记录管理。
+
 > Microsoft 365 信息保护现可为以下语言提供双字节字符集语言支持（预览）：
 > - 简体中文
 > - 繁体中文

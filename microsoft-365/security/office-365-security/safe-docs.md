@@ -7,7 +7,6 @@ ms.reviewer: kshi
 ms.date: ''
 audience: ITPro
 ms.topic: how-to
-ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -15,19 +14,24 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: 了解 Microsoft 365 E5 或 Microsoft 365 E5 安全中心中的安全文档。
-ms.openlocfilehash: 1bf802422dc05babaf5e2616468f8326b7007dc8
-ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: 47bb6c66d51575c91b829e9688a074aaf9a18ab5
+ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "49682933"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50166647"
 ---
 # <a name="safe-documents-in-microsoft-365-e5"></a>Microsoft 365 E5 中的安全文档
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**适用于**
+- [Microsoft Defender for Office 365 计划 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-安全文档是 Microsoft 365 E5 或 Microsoft 365 E5 安全版中的一项功能，它使用 [Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) 扫描受保护的视图中打开的文档和 [文件](https://support.microsoft.com/office/d6f09ac7-e6b9-4495-8e43-2bbcdbcb6653)。
+安全文档是 Microsoft 365 E5 或 Microsoft 365 E5 安全中的一项功能，它使用 [Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) 扫描在受保护视图中打开 [的文档和文件](https://support.microsoft.com/office/d6f09ac7-e6b9-4495-8e43-2bbcdbcb6653)。
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>开始前，有必要了解什么？
 
@@ -40,15 +44,16 @@ ms.locfileid: "49682933"
 - 若要连接到 Exchange Online PowerShell，请参阅[连接到 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)。
 
 - 必须分配有 Office 365 安全与合规中心内的权限，才能执行本文中的步骤：
-  - 若要配置安全文档设置，您必须是组织管理或安全 **管理员角色****组** 的成员。
-  - 若要对安全文档设置进行只读访问，你需要是全局读者或安全 **读者角色组** 的成员。 
+  - 若要配置安全文档设置，您必须是组织管理或安全管理员角色 **组** 的成员。
+  - 若要对安全文档设置进行只读访问，您必须是全局读者或安全 **读者角色组** 的成员。 
 
-  有关详细信息，请参阅 [安全与合规中心的权限](permissions-in-the-security-and-compliance-center.md)。
+  有关详细信息，请参阅[安全与合规中心中的权限](permissions-in-the-security-and-compliance-center.md)。
 
-  **注意**：
-
-  - 向 Microsoft 365 管理中心相应的 Azure 活动目录添加用户会向其提供安全与合规中心的必备权限 _以及_ Microsoft 365其它功能的权限。 有关详细信息，请参阅 [关于管理员角色](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)。
-  - [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) 中的 **仅查看组织管理人员** 角色组也提供到该功能的只读访问。
+  > [!NOTE]
+  > 
+  > - 向 Microsoft 365 管理中心相应的 Azure 活动目录添加用户会向其提供安全与合规中心的必备权限 _以及_ Microsoft 365其它功能的权限。 有关详细信息，请参阅 [关于管理员角色](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)。
+  >
+  > - [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) 中的 **仅查看组织管理人员** 角色组也提供到该功能的只读访问。
 
 ### <a name="how-does-microsoft-handle-your-data"></a>Microsoft 如何处理你的数据？
 
@@ -62,11 +67,11 @@ ms.locfileid: "49682933"
 
 2. 在 **出现的全局设置** 飞出中，配置以下设置：
 
-   - **打开 Office 客户端的安全** 文档：将开关向右移动以打开功能： ![ 打开 ](../../media/scc-toggle-on.png) 。
+   - **打开 Office 客户端的安全文档**：将开关向右移动以打开功能： ![ 打开 ](../../media/scc-toggle-on.png) 。
 
    - 即使安全文档将文件标识为恶意文件，也允许用户单击"受保护的视图"：建议将此选项保持关闭状态， (将开关向左切换 ![ ：) 。 ](../../media/scc-toggle-off.png)
 
-   完成时，请单击“保存”。
+   完成后，单击“**保存**”。
 
    ![选择"安全附件"页上的"全局"设置后的安全文档设置。](../../media/safe-docs.png)
 

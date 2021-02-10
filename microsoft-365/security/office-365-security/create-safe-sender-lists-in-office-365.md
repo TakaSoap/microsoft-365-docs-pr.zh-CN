@@ -8,7 +8,6 @@ manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: how-to
-ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150s
@@ -16,17 +15,23 @@ ms.assetid: 9721b46d-cbea-4121-be51-542395e6fd21
 ms.custom:
 - seo-marvel-apr2020
 description: 管理员可以了解在 Exchange Online Protection 和 EOP 服务中允许入站邮件的可用 (首选) 。
-ms.openlocfilehash: 48f08e5b0d94a0e1eb65b78ba56639d8457f90aa
-ms.sourcegitcommit: a76de3d1604d755b29053e7bf557c0008be6ad23
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: 92229f0324eb9c05b233e5c4b0bc9f1bd7ab2e39
+ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "49788095"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50165555"
 ---
 # <a name="create-safe-sender-lists-in-eop"></a>在 EOP 中创建安全发件人列表
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**适用于**
+- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
+- [Microsoft Defender for Office 365 计划 1 和计划 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 如果你是在 Exchange Online 中拥有邮箱的 Microsoft 365 客户，或者是没有 Exchange Online 邮箱的独立 Exchange Online Protection (EOP) 客户，则 EOP 提供多种方式确保用户将接收来自受信任发件人的电子邮件。 这些选项包括 Exchange 邮件流规则 (也称为传输规则) 、Outlook 安全发件人、IP 允许列表 (连接筛选) 以及反垃圾邮件策略中允许的发件人列表或允许的域列表。 统一来说，你可以将这些选项视为 _安全发件人列表_。
 

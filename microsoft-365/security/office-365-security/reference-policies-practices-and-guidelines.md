@@ -8,41 +8,46 @@ manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: conceptual
-ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: ff3f140b-b005-445f-bfe0-7bc3f328aaf0
 ms.collection:
 - M365-security-compliance
-description: Microsoft 制定了各种策略和过程，并采用了几个行业最佳实践来帮助我们的用户避免滥用、不受欢迎或恶意的电子邮件。
-ms.openlocfilehash: b971823201fb805c9e17da8402250065d274668d
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+description: Microsoft 已制定各种策略、过程，并采用多个行业最佳实践来帮助保护我们的用户免受滥用、不需要或恶意电子邮件的干扰。
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: 01df2e8c1cc8a8ca68688377c4cad6ade91b5623
+ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48202371"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50166851"
 ---
 # <a name="reference-policies-practices-and-guidelines"></a>参考：策略、实践和指南
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**适用于**
+- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
+- [Microsoft Defender for Office 365 计划 1 和计划 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-Microsoft 致力于在 Web 上提供最可信赖的用户体验。 因此，Microsoft 已开发了多种策略、过程并采用多个行业的最佳实践，以保护我们的用户免受滥用、不必要或恶意的电子邮件的侵扰。 尝试向用户发送电子邮件的发件人应确保他们完全了解并遵循本文中的指导操作，以帮助避免潜在的传递问题。
+Microsoft 致力于在 Web 上提供最可信赖的用户体验。 因此，Microsoft 已开发了多种策略、过程并采用多个行业的最佳实践，以保护我们的用户免受滥用、不必要或恶意的电子邮件的侵扰。 尝试向用户发送电子邮件的发件人应确保他们完全理解并遵循本文中的指导，以帮助进行此工作并帮助避免潜在的传递问题。
 
-如果您不遵从这些策略和指南，我们的支持小组可能无法协助您。 如果您遵循本文中介绍的指南、实践和策略，但基于您的发送 IP 地址仍然遇到传送问题，请按步骤提交除名请求。 有关说明，请参阅 [使用除名门户将自己从阻止的发件人列表中删除](use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis.md)。
+如果您不遵从这些策略和指南，我们的支持小组可能无法协助您。 如果您遵循本文中介绍的指南、实践和策略，但基于您的发送 IP 地址仍然遇到传送问题，请按步骤提交除名请求。 有关说明， [请参阅使用除名门户将自己从阻止的发件人名单中删除](use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis.md)。
 
 ## <a name="general-microsoft-policies"></a>Microsoft 一般性策略
 
-发送给 Microsoft 365 用户的电子邮件必须符合管理电子邮件传输和 Microsoft 365 使用的所有 Microsoft 策略。
+发送给 Microsoft 365 用户的电子邮件必须遵守管理电子邮件传输和使用 Microsoft 365 的所有 Microsoft 策略。
 
-- 适用于 Microsoft 365 的服务条款;特别是，禁止使用服务进行垃圾邮件或分发恶意软件。
+- 适用于 Microsoft 365 的服务条款;特别是，禁止使用服务发送垃圾邮件或分发恶意软件。
 
 - [Microsoft 服务协议](https://www.microsoft.com/servicesagreement/)
 
 ## <a name="governmental-regulations"></a>政府法规
 
-发送给 Microsoft 365 用户的电子邮件必须遵守适用司法辖区中管理电子邮件通信的所有适用的法律和法规。
+发送给 Microsoft 365 用户的电子邮件必须遵守在适用管辖下管理电子邮件通信的所有适用法律和法规。
 
 - [CAN-SPAM Act:A Compliance Guide for Business](https://www.ftc.gov/tips-advice/business-center/guidance/can-spam-act-compliance-guide-business)
 
@@ -50,13 +55,13 @@ Microsoft 致力于在 Web 上提供最可信赖的用户体验。 因此，Micr
 
 ## <a name="technical-guidelines"></a>技术指南
 
-发送到 Microsoft 365 的电子邮件应符合以下文档中列出的适用建议 (某些链接仅适用于英语) 。
+发送到 Microsoft 365 的电子邮件应符合以下文档中列出的适用建议 (某些链接仅提供英文版) 。
 
 - [RFC 2505:Anti-Spam Recommendations for SMTP MTAs](https://www.ietf.org/rfc/rfc2505.txt)
 
 - [RFC 2920:SMTP Service Extension for Command Pipelining](https://www.ietf.org/rfc/rfc2920.txt)
 
-此外，连接到 Microsoft 365 的电子邮件服务器必须符合以下要求：
+此外，连接到 Microsoft 365 的电子邮件服务器必须遵守以下要求：
 
 - 发件人应符合互联网电子邮件传输的所有技术标准，该标准由互联网协会的互联网工程任务组 (IETF) 发布，包括 RFC 5321、RFC 5322 和其他。
 
@@ -78,7 +83,7 @@ Microsoft 致力于在 Web 上提供最可信赖的用户体验。 因此，Micr
 
 ## <a name="microsoft-365-limits"></a>Microsoft 365 限制
 
-发件人必须遵循 [Exchange Online Protection 限制](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-limits)中列出的 Microsoft 365 限制。
+发件人必须遵守 Exchange Online Protection 限制中列出的 Microsoft 365 [限制](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-limits)。
 
 ## <a name="email-delivery-resources-and-organizations"></a>电子邮件传送资源和组织
 
@@ -86,13 +91,13 @@ Microsoft 积极与行业机构和服务提供商合作，以改善互联网和�
 
 - [信息传送、恶意软件和移动反滥用工作组](https://www.m3aawg.org/)
 
-- [在线信任联盟](https://www.otalliance.org/resources)
+- [联机信任联盟](https://www.otalliance.org/resources)
 
-- [电子邮件发件人 & 提供商联盟](https://www.espcoalition.org/)
+- [电子邮件发件人&联盟](https://www.espcoalition.org/)
 
 ## <a name="abuse-and-spam-reporting"></a>滥用和垃圾邮件报告
 
-若要报告非法、滥用、不受欢迎或恶意的电子邮件，请参阅 [将邮件和文件报告给 Microsoft](report-junk-email-messages-to-microsoft.md)。 发送这些类型的通信会违反 Microsoft 策略，并将对已确认的报告执行相应的操作。
+若要报告非法、滥用、不需要或恶意电子邮件，请参阅向 Microsoft 报告邮件 [和文件](report-junk-email-messages-to-microsoft.md)。 发送这些类型的通信违反 Microsoft 策略，并且将针对已确认的报告采取适当的措施。
 
 ## <a name="law-enforcement"></a>法律执行
 

@@ -8,21 +8,24 @@ manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: how-to
-ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 125834f4-1024-4325-ad5a-d2573cfb005e
 description: 管理员可以了解如何在 Exchange Online Protection 中的 Exchange 管理中心 (EAC) 权限。
-ms.openlocfilehash: 4a1353963e5e3eadc1a07f8b4aa3a765b06c86ec
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: b53023521f477b5e864424ec648ccf7e5b749d0c
+ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49659288"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50166983"
 ---
 # <a name="manage-role-groups-in-standalone-eop"></a>在独立 EOP 中管理角色组
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**适用于**
+-  [独立 Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
 
 在独立 Exchange Online Protection (EOP) 组织中，可以使用 Exchange 管理中心 (EAC) 将用户添加到角色组。 向角色组添加用户会授予用户执行特定管理员任务的权限。 还可以从角色组中删除用户。
 
@@ -34,9 +37,9 @@ ms.locfileid: "49659288"
 
 - 若要打开独立 EOP PowerShell，请参阅["连接到 Exchange Online Protection PowerShell"。](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell)
 
-- 您需在 Exchange Online Protection 中获得权限，然后才能执行本文中的过程。 具体而言，您需要角色 **管理** 角色，默认情况下，角色管理角色分配给 **组织** 管理角色组。 有关详细信息，请参阅独立 [EOP 中](feature-permissions-in-eop.md) 的权限和使用 [EAC 修改角色组的成员列表](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups)。
+- 您需在 Exchange Online Protection 中获得权限，然后才能执行本文中的过程。 具体而言，您需要角色 **管理** 角色，默认情况下，角色管理角色分配给 **组织** 管理角色组。 有关详细信息，请参阅独立 [EOP 中的权限](feature-permissions-in-eop.md) 和使用 [EAC 修改角色组的成员列表](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups)。
 
-- 有关可能适用于本文中的过程的键盘快捷方式的信息，请参阅 Exchange Online [中 Exchange 管理中心的键盘快捷方式](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center)。
+- 有关可能适用于本文中的过程的键盘快捷方式的信息，请参阅 Exchange Online 中 [Exchange 管理中心的键盘快捷方式](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center)。
 
 > [!TIP]
 > 是否有任何疑问？ 请在 [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351) 论坛中寻求帮助。
@@ -47,7 +50,7 @@ ms.locfileid: "49659288"
 
 1. 在 EAC 中，转到 **"权限** \> **管理员"角色**。 这里列出了你组织中的所有角色组。
 
-2. 选择角色组。 "详细信息"窗格显示 **角色组的名称**、说明、分配的角色和管理。  You can also see this information by clicking **Edit** ![ Edit icon ](../../media/ITPro-EAC-EditIcon.png) .
+2. 选择角色组。 "详细信息"窗格显示 **角色组的名称**、说明、分配的角色和管理。  您还可以通过单击"编辑编辑 **"图标来查看** ![ 此信息 ](../../media/ITPro-EAC-EditIcon.png) 。
 
 ### <a name="use-the-eac-to-create-role-groups"></a>使用 EAC 创建角色组
 
@@ -57,7 +60,7 @@ ms.locfileid: "49659288"
 
    - **手动创建新角色组**：单击 **"添加"** ![ 图标 ](../../media/ITPro-EAC-AddIcon.png) 。
 
-   - **复制现有角色组**：选择要复制的角色组，然后单击"复制 ![ 副本"图标 ](../../media/ITPro-EAC-CopyIcon.png) 。
+   - **复制现有角色组**：选择要复制的角色组，然后单击"复制 **副本"** ![ 图标 ](../../media/ITPro-EAC-CopyIcon.png) 。
 
 2. 在 **出现的"新建** 角色组"窗口中，配置以下设置：
 
@@ -65,9 +68,9 @@ ms.locfileid: "49659288"
 
     - **说明**：输入角色组的可选说明。
 
-    - **角色**： **单击** ![ "添加" ](../../media/ITPro-EAC-AddIcon.png) 图标或 **"** 删除删除"图标以选择或修改分配给角色 ![ ](../../media/ITPro-EAC-RemoveIcon.gif) 组的角色。
+    - **角色**：**单击"添加**"图标或删除"删除"图标，以选择或修改分配给角色 ![ ](../../media/ITPro-EAC-AddIcon.png)  ![ ](../../media/ITPro-EAC-RemoveIcon.gif) 组的角色。
 
-    - **成员**：单击 **"** ![ 添加" ](../../media/ITPro-EAC-AddIcon.png) 图标或删除 ![ "删除"图标 ](../../media/ITPro-EAC-RemoveIcon.gif) 以修改角色组成员身份。
+    - **成员**：单击 **"** ![ 添加" ](../../media/ITPro-EAC-AddIcon.png) 图标或删除"删除 ![ "图标 ](../../media/ITPro-EAC-RemoveIcon.gif) 以修改角色组成员身份。
 
 3. 完成后，单击"保存 **"** 创建角色组。
 
@@ -91,11 +94,11 @@ ms.locfileid: "49659288"
 
 2. 在打开的角色组属性页的" **成员** "部分，执行下列任一步骤：
 
-   - 单击 **"添加** ![ "图标 ](../../media/ITPro-EAC-AddIcon.png) 。 在出现的页面中，找到要添加的用户，然后单击"添加 **>。** 选择用户并根据需要多次 **>** ->添加- 完成后，单击"确定 **"。**
+   - 单击 **"添加** ![ "图标 ](../../media/ITPro-EAC-AddIcon.png) 。 在出现的页面中，找到要添加的用户，然后单击"添加 **>。** 选择用户，并根据需要多次 **>** ->加载项。 完成后，单击"确定 **"。**
 
    - 选择要删除的用户，然后单击"删除 **"** ![ 图标 ](../../media/ITPro-EAC-RemoveIcon.gif) 。
 
-3. 完成时，请单击“保存”。
+3. 完成后，单击“**保存**”。
 
    > [!NOTE]
    > 在角色组中添加或删除成员后，用户可能必须先注销，然后重新登录才会看到其管理权限的更改。
@@ -152,7 +155,7 @@ Get-RoleGroup -Filter "Members -eq 'CN=Julia,OU=contoso.onmicrosoft.com,OU=Micro
 
   - _Roles_ 参数通过以下语法指定要分配给角色组的管理角色 `"Role1","Role1",..."RoleN"` 。 可以使用 **Get-ManagementRole** cmdlet 查看可用角色。
 
-  - Members 参数通过以下语法指定角色组 `"Member1","Member2",..."MemberN"` 的成员： 可以指定用户、启用邮件的通用安全组 (USG) 或其他角色组 (安全主体) 。
+  - Members 参数通过以下语法指定角色组 `"Member1","Member2",..."MemberN"` 的成员： 可以指定用户、启用邮件的通用安全组 (USG) ，也可以指定其他角色 (安全主体) 。
 
   本示例将创建一个名为"Limited Recipient Management"的新角色组，该角色组具有以下设置：
 
@@ -178,9 +181,9 @@ Get-RoleGroup -Filter "Members -eq 'CN=Julia,OU=contoso.onmicrosoft.com,OU=Micro
      New-RoleGroup -Name "<Unique Name>" -Roles $RoleGroup.Roles [-Members <Members>]
      ```
 
-     Members 参数通过以下语法指定角色组 `"Member1","Member2",..."MemberN"` 的成员： 可以指定用户、启用邮件的通用安全组 (USG) 或其他角色组 (安全主体) 。
+     Members 参数通过以下语法指定角色组 `"Member1","Member2",..."MemberN"` 的成员： 可以指定用户、启用邮件的通用安全组 (USG) ，也可以指定其他角色 (安全主体) 。
 
-     本示例将组织管理角色组复制到名为"Limited Organization Management"的新角色组。 角色组的成员是 Isabelle、Carter 和 Lukas。
+     本示例将组织管理角色组复制到名为"Limited Organization Management"的新角色组。 角色组的成员是 Isab carter、Carter 和 Lukas。
 
      ```PowerShell
      $RoleGroup = Get-RoleGroup "Organization Management"
@@ -193,7 +196,7 @@ Get-RoleGroup -Filter "Members -eq 'CN=Julia,OU=contoso.onmicrosoft.com,OU=Micro
 
 - **Add-RoleGroupMember** 和 **Remove-RoleGroupMember** cmdlet 每次添加或删除单个成员一个。 **Update-RoleGroupMember** cmdlet 可以替换或修改现有成员列表。
 
-- 角色组的成员可以是用户、启用邮件的通用安全组 (USG) 或其他角色组 (安全) 。
+- 角色组的成员可以是用户、启用邮件的通用安全组 (USG) 或其他角色组 (安全主体) 。
 
 若要修改角色组的成员，请使用以下语法：
 
@@ -211,7 +214,7 @@ Update-RoleGroupMember -Identity "<Role Group Name>" -Members <Members>
 Update-RoleGroupMember -Identity "Help Desk" -Members "Gabriela Laureano","Hyun-Ae Rim","Jacob Berger"
 ```
 
-本示例添加一位用户，并从 Help Desk 角色组的成员列表中删除一个。
+本示例将添加一位用户，并从 Help Desk 角色组的成员列表中删除一个。
 
 ```PowerShell
 Update-RoleGroupMember -Identity "Help Desk" -Members @{Add="Daigoro Akai"; Remove="Valeria Barrios"}
@@ -241,9 +244,9 @@ Remove-RoleGroup -Identity "Training Administrators"
 
 若要验证是否成功复制了角色组，请执行下列任一步骤：
 
-- 在 EAC 中，转到 **"权限** 管理员"角色，并验证角色组是否 (\> 列出) 。 选择角色组，然后验证"详细信息"窗格中的设置 **或单击"** 编辑编辑" ![ 图标 ](../../media/ITPro-EAC-EditIcon.png) 以验证设置。
+- 在 EAC 中，转到 **"权限** 管理员"角色，并验证角色组是否 (\> 列出) 。 选择角色组，然后验证"详细信息"窗格中的设置 **或单击"** 编辑编辑 ![ "图标 ](../../media/ITPro-EAC-EditIcon.png) 以验证设置。
 
-- 在 Exchange Online PowerShell 中，替换为角色组的名称，并运行以下命令来验证角色组是否存在 (或不存在) \<Role Group Name\> 验证设置：
+- 在 Exchange Online PowerShell 中，替换为角色组的名称，并运行以下命令来验证角色组是否存在 (或不存在) 验证 \<Role Group Name\> 设置：
 
     ```PowerShell
     Get-RoleGroup -Identity "<Role Group Name>" | Format-List

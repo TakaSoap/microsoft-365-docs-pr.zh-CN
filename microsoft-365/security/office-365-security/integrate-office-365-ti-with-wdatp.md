@@ -15,16 +15,16 @@ search.appverid:
 - MOE150
 ms.collection:
 - M365-security-compliance
-description: 将适用于 Office 365 的 Microsoft Defender 与 Microsoft Defender for Endpoint 一起用于获取有关针对设备和电子邮件内容的威胁的更多详细信息。
+description: 将 Microsoft Defender for Office 365 与 Microsoft Defender for Endpoint 一起用于获取有关针对设备和电子邮件内容的威胁的更多详细信息。
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 24b81bb4c445c44d7c0228fa1c4440faff642816
-ms.sourcegitcommit: ba830e85899f247e5a1e117d63e09e4d5b8a8020
+ms.openlocfilehash: 035834e1e4855c0e47defed06043a5fdbd0e63bd
+ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49939328"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50166083"
 ---
 # <a name="use-microsoft-defender-for-office-365-together-with-microsoft-defender-for-endpoint"></a>将 Microsoft Defender for Office 365 与 Microsoft Defender for Endpoint 一同使用
 
@@ -35,14 +35,14 @@ ms.locfileid: "49939328"
 
 将 Microsoft Defender for Office 365 与 Microsoft Defender for Endpoint 集成可帮助你的安全操作团队在用户设备存在风险时监视并快速采取措施。 例如，启用集成后，安全运营团队将能够查看受检测到的电子邮件潜在影响的设备，以及 Microsoft Defender for Endpoint 中为这些设备生成的最近警报数。
 
-下图描述了"设备"选项卡启用Microsoft Defender for Endpoint 集成后的外观：
+下图描述了启用 Microsoft Defender  for Endpoint 集成后"设备"选项卡的外观：
 
 ![启用 Microsoft Defender for Endpoint 后，你可以看到具有警报的设备列表。](../../media/fec928ea-8f0c-44d7-80b9-a2e0a8cd4e89.PNG)
 
 在此例中，可以看到检测到的电子邮件的收件人具有四台设备，一个设备具有警报。 单击设备的链接将在 Microsoft Defender 安全中心 <https://securitycenter.windows.com> () 。
 
 > [!TIP]
-> **[了解有关 Microsoft Defender 安全中心](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/use)** (也称为 Microsoft Defender for Endpoint 门户。) 
+> **[了解有关 Microsoft Defender 安全](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/use)** 中心 (也称为 Microsoft Defender for Endpoint 门户。) 
 
 ## <a name="requirements"></a>要求
 
@@ -62,7 +62,7 @@ ms.locfileid: "49939328"
 
    !["威胁管理"菜单中的资源管理器](../../media/ThreatMgmt-Explorer-nav.png)
 
-3. In the upper right corner of the screen， choose **Defender for Endpoint Settings (MDE Settings) .**
+3. 在屏幕右上角，选择"适用于 **MDE** 设置" (的 Defender) 。
 
 4. 在 Microsoft Defender for Endpoint 连接对话框中，打开 **"连接到适用于终结点的 Microsoft Defender"。**
 

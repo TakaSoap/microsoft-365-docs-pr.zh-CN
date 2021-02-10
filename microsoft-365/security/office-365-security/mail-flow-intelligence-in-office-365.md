@@ -14,27 +14,31 @@ ms.assetid: c29f75e5-c16e-409e-a123-430691e38276
 description: 管理员可以了解使用连接器（也称为"邮件流智能" (）与邮件传递关联的) 。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: c7d4277d1ce3baeabcb5b1795b5d57583fbc8245
-ms.sourcegitcommit: 537e513a4a232a01e44ecbc76d86a8bcaf142482
+ms.openlocfilehash: 864b69bf650a4e460376ae988a9ce4abc4c61ad4
+ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "50029252"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50167067"
 ---
 # <a name="mail-flow-intelligence-in-eop"></a>EOP 中的邮件流智能
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**适用于**
+- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
+- [Microsoft Defender for Office 365 计划 1 和计划 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-在 Exchange Online 中具有邮箱的 Microsoft 365 组织或没有 Exchange Online 邮箱的独立 Exchange Online Protection (EOP) 组织中，通常使用连接器将电子邮件从 EOP 路由到本地电子邮件环境。 您还可以使用连接器将邮件从 Microsoft 365 路由到合作伙伴组织。 当 Microsoft 365 无法通过连接器传递这些邮件时，它们在 Microsoft 365 中排队。 Microsoft 365 将继续重试每封邮件的传递 24 小时。 24 小时后，排队的邮件将过期，邮件将在未送达报告（也称为 NDR 或退回邮件）中返回到原始发件人 (也称为 NDR 或退回) 。
+在具有 Exchange Online 邮箱的 Microsoft 365 组织或独立 Exchange Online Protection (EOP) 组织中，通常使用连接器将电子邮件从 EOP 路由到本地电子邮件环境。 您还可以使用连接器将邮件从 Microsoft 365 路由到合作伙伴组织。 当 Microsoft 365 无法通过连接器传递这些邮件时，它们在 Microsoft 365 中排队。 Microsoft 365 将继续重试每封邮件的传递 24 小时。 24 小时后，排队的邮件将过期，邮件将在未送达报告（也称为 NDR 或退回邮件）中返回到原始发件人 (也称为 NDR 或退回) 。
 
-当邮件无法通过连接器传递时，Microsoft 365 将生成错误。 本文介绍了最常见的错误及其解决方案。 统称为邮件流智能。通过连接器发送的未送达邮件的排队和通知 _错误统称为邮件流智能_。
+当邮件无法通过连接器传递时，Microsoft 365 将生成一个错误。 本文介绍了最常见的错误及其解决方案。 统称为邮件流智能。通过连接器发送的未送达邮件的排队和通知 _错误统称为邮件流智能_。
 
 ## <a name="error-code-450-44312-dns-query-failed"></a>错误代码：450 4.4.312 DNS 查询失败
 
 通常，此错误意味着 Microsoft 365 尝试连接到连接器中指定的智能主机，但用于查找智能主机 IP 地址的 DNS 查询失败。 此错误的可能原因包括：
 
-- 您的域的 DNS 托管服务与维护域 (服务器一方存在) 。
+- 您的域的 DNS 托管服务存在 (维护域服务器的权威名称服务器的一方) 。
 
 - 您的域最近已过期，因此无法检索 MX 记录。
 
@@ -66,9 +70,9 @@ ms.locfileid: "50029252"
 
 ### <a name="how-do-i-fix-error-code-450-44316"></a>如何修复错误代码 450 4.4.316？
 
-- 如果您的内部部署环境中有邮箱，则需要修改防火墙设置，以允许从 TCP 端口 25 上的 Microsoft 365 IP 地址连接到本地电子邮件服务器。 有关 Microsoft 365 IP 地址的列表，请参阅 [Microsoft 365 URL 和 IP 地址范围](https://docs.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges)。
+- 如果你在本地环境中有邮箱，则需要修改防火墙设置，以允许从 TCP 端口 25 上的 Microsoft 365 IP 地址连接到本地电子邮件服务器。 有关 Microsoft 365 IP 地址的列表，请参阅 [Microsoft 365 URL 和 IP 地址范围](https://docs.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges)。
 
-- 如果不应向本地环境传递其他邮件，请单击警报中的"立即修复"，以便 Microsoft 365 可以立即拒绝收件人无效的邮件。 这将降低超出组织对无效收件人的配额的风险，这可能会影响正常邮件传递。 或者，可以使用以下说明手动修复该问题：
+- 如果不应将更多邮件传递到本地环境，请单击警报中的"立即修复"，以便 Microsoft 365 可以立即拒绝收件人无效的邮件。 这将降低超出组织对无效收件人的配额的风险，这可能会影响正常邮件传递。 或者，可以使用以下说明手动修复该问题：
 
   - 在 [Exchange 管理中心 (EAC) ， ](https://docs.microsoft.com/Exchange/exchange-admin-center)禁用或删除将电子邮件从 Microsoft 365 发送到本地电子邮件环境的连接器：
 
@@ -78,11 +82,11 @@ ms.locfileid: "50029252"
 
        - 通过单击"删除删除 **"图标删除** ![ 连接器](../../media/adf01106-cc79-475c-8673-065371c1897b.gif)
 
-       - 通过单击"编辑编辑 **"图标** ![ 并 ](../../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif) 清除" **打开"来禁用连接器**。
+       - 通过单击"编辑编辑 **"** 图标并清除 ![ ](../../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif) " **打开"来禁用连接器**。
 
-  - 将 Microsoft 365 中与本地电子邮件环境关联的接受域从内部中继更改为 **权威**。  有关说明，请参阅["管理 Exchange Online 中的接受域"。](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)
+  - 将与本地电子邮件环境关联的 Microsoft 365 中的接受域从 **内部** 中继更改为 **权威**。 有关说明，请参阅 [管理 Exchange Online 中的接受域](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)。
 
-  **注意**：通常，这些更改需要 30 分钟到 1 小时才能生效。 一小时后，请确认您不再收到错误。
+  **注意**：通常，这些更改需要 30 分钟到 1 小时才能生效。 一小时后，请确认您不再收到该错误。
 
 - 如果错误来自你的合作伙伴组织 (例如，第三方云服务提供商) ，你需要联系你的合作伙伴来解决此问题。
 
@@ -106,7 +110,7 @@ ms.locfileid: "50029252"
 
 - 防火墙使用 SMTP 数据包检查规则，这些规则无法正常工作。
 
-- 您的本地电子邮件服务器无法正常运行 (例如服务挂起、崩溃或系统资源不足) ，从而导致服务器将退出并关闭与 Microsoft 365 的连接。
+- 本地电子邮件服务器无法正常运行 (例如，服务挂起、崩溃或系统资源不足) ，从而导致服务器退出并关闭与 Microsoft 365 的连接。
 
 - 本地环境和 Microsoft 365 之间存在网络问题。
 
@@ -136,6 +140,6 @@ ms.locfileid: "50029252"
 
 ## <a name="other-error-codes"></a>其他错误代码
 
-Microsoft 365 难以将邮件发送到本地或合作伙伴电子邮件服务器。 使用 **错误中的** 目标服务器信息检查环境中的问题，或者修改连接器（如果存在配置错误）。
+Microsoft 365 难以将邮件传递至本地或合作伙伴电子邮件服务器。 使用 **错误** 中的目标服务器信息检查环境中的问题，或者修改连接器（如果存在配置错误）。
 
 如果错误来自你的合作伙伴组织 (例如，第三方云服务提供商) ，你需要联系你的合作伙伴来解决此问题。

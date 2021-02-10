@@ -8,23 +8,26 @@ manager: dansimp
 audience: ITPro
 ms.topic: how-to
 ms.date: ''
-ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: 管理员可以了解如何创建、修改和删除 Exchange Online Protection (EOP) 组织（具有或没有 Exchange Online 邮箱）中提供的防钓鱼策略。
-ms.openlocfilehash: 03c1ce8e940491607fe04988d41c927f92479d96
-ms.sourcegitcommit: 222fb7fe2b26dde3d8591b61cc02113d6135012c
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: 052e19d811f56fe633ff0fbde79f51860a04a669
+ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "49760328"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50165843"
 ---
 # <a name="configure-anti-phishing-policies-in-eop"></a>在 EOP 中配置反垃圾邮件策略
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**适用于**
+- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
 
 在 Exchange Online 中具有邮箱的 Microsoft 365 组织或没有 Exchange Online 邮箱的独立 Exchange Online Protection (EOP) 组织中，默认反网络钓鱼策略包含有限数量的反欺骗功能，这些功能默认启用。 有关详细信息，请参阅反 [网络钓鱼策略中的欺骗设置](set-up-anti-phishing-policies.md#spoof-settings)。
 
