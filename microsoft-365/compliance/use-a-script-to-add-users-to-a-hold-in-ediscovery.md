@@ -20,12 +20,12 @@ search.appverid:
 ms.assetid: bad352ff-d5d2-45d8-ac2a-6cb832f10e73
 ms.custom: seo-marvel-apr2020
 description: 了解如何运行脚本，将 OneDrive for Business &邮箱添加到与 Microsoft 365 合规中心中的电子数据展示案例相关联的新保留中。
-ms.openlocfilehash: 72fd9b8e7b63b36399d055e2eb710e8b53967e44
-ms.sourcegitcommit: eac5d9f759f290d3c51cafaf335a1a1c43ded927
+ms.openlocfilehash: 278e8e051165eca906e9b454268068cbbe6aef05
+ms.sourcegitcommit: 3dc795ea862b180484f76b3eb5d046e74041252b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50126435"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "50175571"
 ---
 # <a name="use-a-script-to-add-users-to-a-hold-in-a-core-ediscovery-case"></a>使用脚本将用户添加到核心电子数据展示案例中的保留项
 
@@ -81,9 +81,9 @@ Get-Mailbox -ResultSize unlimited -Filter { RecipientTypeDetails -eq 'UserMailbo
 
 在此步骤中运行脚本时，它将提示您输入以下信息。 在运行脚本之前，请确保准备好此信息。
   
-- **用户凭据：** 该脚本将使用你的凭据通过远程 PowerShell &安全与合规中心。 它还将使用这些凭据访问 SharePoint Online，获取用户列表的 OneDrive for Business URL。
+- **用户凭据：** 该脚本将使用你的凭据通过 PowerShell &安全与合规中心。 它还将使用这些凭据访问 SharePoint Online，获取用户列表的 OneDrive for Business URL。
 
-- **"我的网站"域的名称：** "我的网站"域是包含组织中所有 OneDrive for Business 网站的域。 例如，如果"我的网站"域的 URL 是，则当脚本提示您输入"我的网站"域 **https://contoso-my.sharepoint.com**  `contoso` 的名称时，您将输入。
+- **SharePoint 域的名称：** 脚本会提示您输入此名称，以便可以连接到 SharePoint 管理中心。 它还使用组织中 OneDrive URL 的域名。 例如，如果管理中心的 URL 为，而 OneDrive 的 URL 为，则当脚本提示您输入域名时，您将 `https://contoso-admin.sharepoint.com` `https://contoso-my.sharepoint.com` `contoso` 输入。
 
 - **案例的名称：** 现有案例的名称。 该脚本将创建一个与此案例相关联的新保留。
 

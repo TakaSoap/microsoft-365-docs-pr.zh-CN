@@ -1,5 +1,5 @@
 ---
-title: 安全 & 合规中心中的警报
+title: 安全与合规中心&警报
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -8,7 +8,6 @@ manager: dansimp
 ms.date: ''
 audience: Admin
 ms.topic: hub-page
-ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MOE150
@@ -18,52 +17,57 @@ ms.assetid: 2bb4e7c0-5f7f-4144-b647-cc6a956aaa53
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
-description: 了解如何使用 Office 365 安全 & 合规中心中的警报功能查看和管理警报，包括管理高级通知。
+description: 了解如何使用 Office 365 安全与合规中心中的&功能查看和管理警报，包括管理高级警报。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a40e880315b49620c372cf09416457c1bcaa00e7
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: f4af23ac1fd3c7272fc60b2228bf808351cb4d2b
+ms.sourcegitcommit: 3dc795ea862b180484f76b3eb5d046e74041252b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49615044"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "50176023"
 ---
-# <a name="alerts-in-the-security--compliance-center"></a>安全 & 合规中心中的警报
+# <a name="alerts-in-the-security--compliance-center"></a>安全与合规中心&警报
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**适用于**
+- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
+- [Microsoft Defender for Office 365 计划 1 和计划 2](https://go.microsoft.com/fwlink/?linkid=2148715)
 
-使用安全 & 合规中心中的警报功能查看和管理组织的警报，包括作为 [Microsoft 云应用安全概述](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security)的一部分管理高级警报。
+使用安全与合规中心&功能查看和管理组织的警报，包括管理高级警报作为 [Microsoft Cloud App Security 概述](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security)的一部分。
 
 ## <a name="how-to-get-to-the-alerts-features"></a>如何获取警报功能
 
-警报在安全 & 合规中心。 下面介绍了如何访问页面。
+警报位于安全与&中心。 下面将说明如何访问页面。
 
-### <a name="to-go-directly-to-the-security--compliance-center"></a>直接转到安全 & 合规中心
+### <a name="to-go-directly-to-the-security--compliance-center"></a>直接转到安全与&中心
 
 1. 转到 <https://protection.office.com>。
 
 2. 使用工作或学校帐户进行登录。
 
-3. 在左窗格中，单击 " **警报** " 以查看警报功能。
+3. 在左窗格中，单击 **"通知** "以查看警报功能。
 
-### <a name="to-go-to-the-security--compliance-center-using-the-app-launcher"></a>使用应用启动器转到安全 & 合规性中心
+### <a name="to-go-to-the-security--compliance-center-using-the-app-launcher"></a>使用应用启动器&安全与合规中心
 
 1. 使用工作或学校帐户进行登录。
 
-2. 单击左上角的应用启动器，然后单击 " **安全 & 合规性**"。
+2. 单击左上角的应用启动器，然后单击"安全与&**合规性"。**
 
    找不到需要的应用？从应用启动器中，选择“**所有应用**”，以查看可供使用的 Office 365 应用的列表（按字母顺序排列）。可在此处搜索特定应用。
 
-3. 在左窗格中，单击 " **警报** " 以查看警报功能。
+3. 在左窗格中，单击 **"通知** "以查看警报功能。
 
-## <a name="alerts-features"></a>警报功能
+## <a name="alerts-features"></a>通知功能
 
-下表介绍了安全性 & 合规性中心中的 " **警报** " 下提供的工具。
+下表介绍了安全与合规 **中心警报&** 可用的工具。
 
 ****
 
 |工具|说明|
 |---|---|
-|[管理通知](../../compliance/create-activity-alerts.md)|当用户在 Microsoft 365 中执行特定活动时，可使用活动警报向自己或其他管理员发送电子邮件通知。 活动通知与搜索事件的审核日志类似，不同之处在于，当您创建了通知的事件发生时，将会发送一封电子邮件。|
-|[管理高级通知](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security)|使用 Microsoft 365 云应用安全性的 " **管理高级警报** " 功能设置可在 Microsoft 365 中提醒您可疑和异常活动的策略。 收到警报后，可以调查可能存在问题的情况，如果需要，可以采取措施解决安全问题。|
+|[管理警报](../../compliance/create-activity-alerts.md)|当用户在 Microsoft 365 中执行特定活动时，使用活动通知向自己或其他管理员发送电子邮件通知。 活动通知类似于在 审核日志搜索事件，只是当发生已创建警报的事件时，会向用户发送电子邮件。|
+|[管理高级警报](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security)|使用Microsoft 365 云应用安全的高级警报功能设置可提醒您 Microsoft 365 中可疑和异常活动的策略。 发出警报后，你可以调查可能存在问题的情况，并根据需要采取措施来解决安全问题。|
 |

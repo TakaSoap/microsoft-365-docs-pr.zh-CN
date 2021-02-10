@@ -13,12 +13,12 @@ ms.collection:
 search.appverid: MET150
 localization_priority: Priority
 description: 在Project Cortex中设置对内容的理解
-ms.openlocfilehash: 0e5b48bab343f887a1438386bfa4f7915126ccd7
-ms.sourcegitcommit: c0cfb9b354db56fdd329aec2a89a9b2cf160c4b0
+ms.openlocfilehash: 58496041004218b48b864fa725084cba8edd518b
+ms.sourcegitcommit: 005028af7c5a6b2e95f17a0037958131484d9e73
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "50094705"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "50145471"
 ---
 # <a name="set-up-sharepoint-syntex"></a>设置 SharePoint Syntex
 
@@ -92,11 +92,11 @@ ms.locfileid: "50094705"
 
 1. 在Microsoft 365 管理中心中，在 **用户** 下，点击 **活动用户**。
 
-2. 选择要给予许可的用户，然后单击 **管理产品许可证**。
+2. 选择要给予许可的用户，然后选择“**管理产品许可证**”。
 
-3. 选择 **分配更多**。
+3. 从下拉菜单中选择“**应用**”。
 
-4. 选择“**SharePoint Syntex**”。 在“**应用**”下，确保“**面向 SharePoint Syntex 的 Common Data Service**”、“**SharePoint Syntex**”和“**SharePoint Syntex - SPO 类型**”都已选中。
+4. 选择“**显示 SharePoint Syntex 相关应用**”。 在“**应用**”下，确保“**面向 SharePoint Syntex 的 Common Data Service**”、“**SharePoint Syntex**”和“**SharePoint Syntex - SPO 类型**”都已选中。
 
     > [!div class="mx-imgBorder"]
     > ![Microsoft 365 管理中心的 SharePoint Syntex 许可证](../media/content-understanding/sharepoint-syntex-licenses.png)

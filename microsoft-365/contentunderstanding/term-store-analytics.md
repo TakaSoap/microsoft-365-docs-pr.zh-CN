@@ -12,16 +12,18 @@ ms.collection:
 - enabler-strategic
 - m365initiative-topics
 localization_priority: Priority
-ms.openlocfilehash: ad777fde5179b8425fad3ead4d4733a9a455e657
-ms.sourcegitcommit: 162c01dfaa2fdb3225ce4c24964c1065ce22ed5d
+ms.openlocfilehash: 5ac0513b100c120366138b1f2a7b4a35f4435cfb
+ms.sourcegitcommit: 005028af7c5a6b2e95f17a0037958131484d9e73
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2021
-ms.locfileid: "49976335"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "50145087"
 ---
 # <a name="term-store-reports"></a>术语库报告
 
-可在 SharePoint 管理中心中访问术语库的报告。 展开“**报告**”，然后单击“**内容服务**”。
+可在 SharePoint 管理中心中访问术语库的报告。 此功能需要 [SharePoint Syntex](index.md) 许可证。
+
+展开“**报告**”，然后单击“**内容服务**”。
 
 可使用以下报告：
 

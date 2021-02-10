@@ -11,16 +11,16 @@ ms.service: ''
 ms.collection: enabler-strategic
 search.appverid: ''
 localization_priority: Priority
-ms.openlocfilehash: ba0f240caa8b3452783436e9a35c53d44baba894
-ms.sourcegitcommit: 162c01dfaa2fdb3225ce4c24964c1065ce22ed5d
+ms.openlocfilehash: 3d6efce9b6414444793da54d9c6d7be47d6a9a5c
+ms.sourcegitcommit: 005028af7c5a6b2e95f17a0037958131484d9e73
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2021
-ms.locfileid: "49976431"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "50145075"
 ---
 # <a name="import-a-term-set-using-a-skos-based-format"></a>使用基于 SKOS 的格式导入术语集
 
-可以使用基于 SKOS 的格式导入术语集。 有关格式的详细信息，请参阅 [SharePoint 分类 SKOS 格式参考](skos-format-reference.md)。
+可以使用基于 SKOS 的格式导入术语集。 有关格式的详细信息，请参阅 [SharePoint 分类 SKOS 格式参考](skos-format-reference.md)。 此功能需要 [SharePoint Syntex](index.md) 许可证。
 
 建议将导入文件保持在 20,000 个术语以下。 较大的文件可能会增加验证和导入所需的时间。
 

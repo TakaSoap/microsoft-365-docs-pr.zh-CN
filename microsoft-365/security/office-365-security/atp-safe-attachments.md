@@ -8,7 +8,6 @@ manager: dansimp
 audience: Admin
 ms.date: ''
 ms.topic: overview
-ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -19,39 +18,45 @@ ms.collection:
 - m365initiative-defender-office365
 - seo-marvel-apr2020
 description: 管理员可以了解 Microsoft Defender for Office 365 中的安全附件功能。
-ms.openlocfilehash: 07e44885a3813ce625c6a853f4070d644a392ded
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: 5e85695a6d0fba221f3c614ec33b3552d37153e2
+ms.sourcegitcommit: 3dc795ea862b180484f76b3eb5d046e74041252b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49659188"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "50175843"
 ---
 # <a name="safe-attachments-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 中的安全附件
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**适用于**
+- [Microsoft Defender for Office 365 计划 1 和计划 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+
 [Microsoft Defender for Office 365](office-365-atp.md)中的安全附件为已由 Exchange Online Protection (EOP) 中的反恶意软件保护扫描的电子邮件附件提供了一[层额外保护](anti-malware-protection.md)。 具体来说，安全附件使用虚拟环境检查电子邮件中的附件，然后再将附件 (称为触发) 。 
 
-电子邮件的安全附件保护由安全附件策略控制。 没有默认的安全附件策略，因此若要保护安全附件，需要创建一个或多个安全 **附件策略**。 有关说明，请参阅在 [Defender for Office 365](set-up-atp-safe-attachments-policies.md)中设置安全附件策略。
+电子邮件的安全附件保护由安全附件策略控制。 没有默认的安全附件策略，因此若要保护安全附件，需要创建一个或多个 **安全附件策略**。 有关说明，请参阅在 [Defender for Office 365](set-up-atp-safe-attachments-policies.md)中设置安全附件策略。
 
-下表介绍了 Microsoft 365 和 Office 365 组织中安全附件的方案，包括 Microsoft Defender for Office 365 (换句话说，缺少许可在示例) 中永远不会是问题。
+下表介绍了 Microsoft 365 和 Office 365 组织中安全附件的方案，包括 Microsoft Defender for Office 365 (换句话说，缺少许可从不会成为示例) 。
 
 ****
 
-|方案|结果|
+|应用场景|结果|
 |---|---|
-|Pat 的 Microsoft 365 E5 组织未配置安全附件策略。|Pat 不受安全附件保护。 <p> 管理员必须创建至少一个安全附件策略，安全附件保护才能处于活动状态。 此外，如果 Pat 受安全附件保护，则策略条件必须包括 Pat。|
+|Pat 的 Microsoft 365 E5 组织未配置安全附件策略。|Pat 不受安全附件保护。 <p> 管理员必须至少创建一个安全附件策略，安全附件保护才能处于活动状态。 此外，如果 Pat 受安全附件保护，则策略条件必须包括 Pat。|
 |小明的组织具有仅适用于财务员工的安全附件策略。 小明是销售部门的成员。|小王不受安全附件保护。 <p> 财务员工受安全附件保护，但 (员工和其他) 员工不受保护。|
-|昨天，一名管理中心管理员创建了一个适用于所有员工的安全附件策略。 今天较早时，该服务器收到一封包含附件的电子邮件。|百分之百受安全附件保护。 <p> 通常，新策略生效需要大约 30 分钟。|
+|昨天，一名管理中心管理员创建了一个适用于所有员工的安全附件策略。 今天较早时，用户收到一封包含附件的电子邮件。|百分之百受安全附件保护。 <p> 通常，新策略大约需要 30 分钟才能生效。|
 |Chris 的组织对组织中的每个人具有长期的安全附件策略。 Chris 收到一封包含附件的电子邮件，然后将邮件转发给外部收件人。|Chis 受安全附件保护。 <p> 如果外部收件人的组织中也有安全附件策略，则转发的邮件将受这些策略限制。|
 |
 
 安全附件扫描发生在 Microsoft 365 数据所在的同一区域。 有关数据中心地理位置的信息，请参阅 [数据所在的位置？](https://products.office.com/where-is-your-data-located?geo=All)
 
 > [!NOTE]
-> 以下功能位于全局设置中的安全附件策略&合规中心内，但这些设置全局启用或禁用，并且不需要安全附件策略：
+> 以下功能 &位于安全与合规中心内的安全附件策略的全局设置中，但这些设置在全局启用或禁用，并且不需要安全附件策略：
 >
-> - [适用于 SharePoint、OneDrive 和 Microsoft Teams 的 ATP。](atp-for-spo-odb-and-teams.md)
+> - [SharePoint、OneDrive](atp-for-spo-odb-and-teams.md)和 Microsoft Teams 的安全附件。
 >
 > - [Microsoft 365 E5 中的安全文档](safe-docs.md)
 
@@ -59,7 +64,7 @@ ms.locfileid: "49659188"
 
 本节介绍安全附件策略中的设置：
 
-- **安全附件未知恶意软件响应**：此设置控制电子邮件中安全附件恶意软件扫描的操作。 下表介绍了可用的选项：
+- **安全附件未知恶意软件响应**：此设置控制电子邮件中安全附件恶意软件扫描的操作。 下表介绍了可用选项：
 
   ****
 
@@ -68,15 +73,15 @@ ms.locfileid: "49659188"
   |**关闭**|安全附件不会扫描附件是否包含恶意软件。 EOP 中的反恶意软件保护 [仍对邮件进行恶意软件扫描](anti-malware-protection.md)。|关闭所选收件人的扫描。 <p> 防止在路由内部邮件时出现不必要的延迟。 <p> **建议大多数用户不要使用此选项。只应使用此选项来关闭仅接收来自受信任发件人的邮件的收件人的安全附件扫描。**|
   |**监视器**|传递带有附件的邮件，然后跟踪检测到的恶意软件发生的情况。 <p> 由于安全附件扫描，安全邮件的传递可能会延迟。|查看组织中检测到的恶意软件的去向。|
   |**阻止**|阻止传递包含检测到的恶意软件附件的邮件。 <p> 邮件 [被隔离](manage-quarantined-messages-and-files.md) ，其中只有管理员 (最终用户) 查看、释放或删除邮件。 <p> 自动阻止邮件和附件的未来实例。 <p> 由于安全附件扫描，安全邮件的传递可能会延迟。|保护组织免受使用相同的恶意软件附件的重复攻击。 <p> 这是默认值，以及"标准"和"严格"预设安全策略 [中的建议值](preset-security-policies.md)。|
-  |**Replace**|删除检测到的恶意软件附件。 <p> 通知收件人附件已删除。 <p>  邮件 [被隔离](manage-quarantined-messages-and-files.md) ，其中只有管理员 (最终用户) 查看、释放或删除邮件。 <p> 由于安全附件扫描，安全邮件的传递可能会延迟。|提高收件人的可见性，这些收件人的附件因检测到的恶意软件而被删除。|
-  |**动态传递**|立即传递邮件，但将附件替换为占位符，直到安全附件扫描完成。 <p> 有关详细信息，请参阅本文稍后 [的"安全附件策略](#dynamic-delivery-in-safe-attachments-policies) 中的动态传递"部分。|避免邮件延迟，同时保护收件人免受恶意文件的攻击。 <p> 允许收件人在扫描进行时以安全模式预览附件。|
+  |**Replace**|删除检测到的恶意软件附件。 <p> 通知收件人附件已删除。 <p>  邮件 [被隔离](manage-quarantined-messages-and-files.md) ，其中只有管理员 (最终用户) 查看、释放或删除邮件。 <p> 由于安全附件扫描，安全邮件的传递可能会延迟。|提高收件人的可见性，这些收件人由于检测到恶意软件而删除了附件。|
+  |**动态传递**|立即传递邮件，但将附件替换为占位符，直到安全附件扫描完成。 <p> 有关详细信息，请参阅本文稍后 [介绍的动态传递安全](#dynamic-delivery-in-safe-attachments-policies) 附件策略部分。|避免邮件延迟，同时保护收件人免受恶意文件的攻击。 <p> 允许收件人在扫描进行时在安全模式下预览附件。|
   |
 
 - 检测时重定向附件 **：** 启用重定向并将附件发送到以下电子邮件地址：对于阻止、监视或 **替换** 操作，将包含恶意软件附件的邮件发送到指定的内部或外部电子邮件地址进行分析和调查。
 
   对于"标准"和"严格"策略设置的建议是启用重定向。 有关详细信息，请参阅安全 [附件设置](recommended-settings-for-eop-and-office365-atp.md#safe-attachments-settings)。
 
-- **如果附件的恶意软件** 扫描次数或出现错误，则应用上述选择：即使安全附件扫描无法完成，对邮件执行安全附件未知恶意软件响应指定的操作。 如果选择了"启用重定向"，请 **始终选择此选项**。 否则，邮件可能会丢失。
+- **如果附件** 的恶意软件扫描次数或出现错误，则应用上述选择：即使安全附件扫描无法完成，对邮件执行安全附件未知恶意软件响应指定的操作。 如果选择了"启用重定向"，请 **始终选择此选项**。 否则，邮件可能会丢失。
 
 - **收件人** 筛选器：需要指定确定策略适用的收件人条件和例外。 可以将这些属性用于条件和例外：
 
@@ -97,7 +102,7 @@ ms.locfileid: "49659188"
 
 安全附件策略中的动态传递操作旨在消除由安全附件扫描可能导致的任何电子邮件传递延迟。 电子邮件正文通过每个附件的占位符传递给收件人。 占位符将一直保留，直到发现附件是安全的，然后附件可以打开或下载。
 
-如果发现附件是恶意附件，则隔离邮件。 只有最终用户 (才能查看、) 或删除安全附件扫描隔离的邮件。 有关详细信息，请参阅以管理员角色 [管理隔离的邮件和文件](manage-quarantined-messages-and-files.md)。
+如果发现附件是恶意附件，则隔离邮件。 只有管理员 (最终用户) ，才能查看、释放或删除由安全附件扫描隔离的邮件。 有关详细信息，请参阅以管理员角色 [管理隔离的邮件和文件](manage-quarantined-messages-and-files.md)。
 
 在安全附件扫描进行期间，大多数 PDF 和 Office 文档都可以在安全模式下预览。 如果附件与动态传递预览版不兼容，则收件人将看到附件的占位符，直到安全附件扫描完成。
 
@@ -131,4 +136,4 @@ ms.locfileid: "49659188"
 
 - 如果收到要发送到 Microsoft 进行分析的文件，请参阅"将恶意软件和非恶意软件提交给[Microsoft 进行分析"。](submitting-malware-and-non-malware-to-microsoft-for-analysis.md)
 
-- 如果收到一封包含 (附件的邮件，) 要提交给 Microsoft 进行分析，请参阅"向 Microsoft 报告邮件和文件["。](report-junk-email-messages-to-microsoft.md)
+- 如果收到一封包含 (附件或没有附件的邮件) 您希望提交给 Microsoft 进行分析，请参阅"将邮件和文件报告给[Microsoft"。](report-junk-email-messages-to-microsoft.md)

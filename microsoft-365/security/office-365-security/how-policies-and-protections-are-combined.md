@@ -9,24 +9,29 @@ manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: conceptual
-ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
 description: 管理员可以了解 Exchange Online Protection (EOP) 中的保护的应用程序顺序，以及保护策略中的优先级值如何确定应用的策略。
-ms.openlocfilehash: a18234344e1100f3b6a03c10e970c8195e53e7df
-ms.sourcegitcommit: 222fb7fe2b26dde3d8591b61cc02113d6135012c
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: 7f3d4a607f702349d3a8e43c1eceba5ecbb697d7
+ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "49760562"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50167475"
 ---
 # <a name="order-and-precedence-of-email-protection"></a>电子邮件保护的顺序和优先级
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**适用于**
+- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
+- [Microsoft Defender for Office 365 计划 1 和计划 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 在 Exchange Online 中具有邮箱的 Microsoft 365 组织或独立 Exchange Online Protection (EOP) 组织中，入站电子邮件可能由多种形式的保护标记。 例如，EOP 中可用于所有 Microsoft 365 客户的内置防钓鱼策略，以及适用于 Office 365 客户的 Microsoft Defender 的更可靠的防钓鱼策略。 邮件还通过恶意软件、垃圾邮件、网络钓鱼等的多个检测扫描。鉴于所有这些活动，可能混淆了应用了哪个策略。
 

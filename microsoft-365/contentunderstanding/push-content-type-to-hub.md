@@ -12,12 +12,12 @@ ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 localization_priority: Priority
-ms.openlocfilehash: 89c03a70da364bd4b945debc64de02255dec15e1
-ms.sourcegitcommit: 162c01dfaa2fdb3225ce4c24964c1065ce22ed5d
+ms.openlocfilehash: 22d146b1d376bab134e82ad7d1313cb7881ca45b
+ms.sourcegitcommit: 005028af7c5a6b2e95f17a0037958131484d9e73
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2021
-ms.locfileid: "49975711"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "50144967"
 ---
 # <a name="push-content-types-to-a-hub"></a>将内容类型推送到中心
 
@@ -28,7 +28,7 @@ ms.locfileid: "49975711"
 </br>
 
 
-若要使重要内容类型与 SharePoint 库和列表更为一致，可将其推送到选择的中心。 推送内容类型操作会自动将内容类型添加到在与中心相关联的网站上创建的所有新列表和库中，以及中心的任何新增网站中。
+若要使重要内容类型与 SharePoint 库和列表更为一致，可将其推送到选择的中心。 推送内容类型操作会自动将内容类型添加到在与中心相关联的网站上创建的所有新列表和库中，以及中心的任何新增网站中。 此功能需要 [SharePoint Syntex](index.md) 许可证。
 
 若要使用此功能，必须已发布正在推送的内容类型。
 

@@ -19,16 +19,20 @@ description: 在 Microsoft 365 自动调查期间和之后，可以查看结果�
 ms.date: 01/29/2021
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 7ebfa8bb7060b633bdb48c77bc661477ad3e201b
-ms.sourcegitcommit: d739f48b991793c08522a3d5323beba27f0111b2
+ms.openlocfilehash: 36cce42d0986cc793753d247d97315616f86f986
+ms.sourcegitcommit: 3dc795ea862b180484f76b3eb5d046e74041252b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "50142509"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "50175594"
 ---
 # <a name="details-and-results-of-an-automated-investigation-in-microsoft-365"></a>Microsoft 365 中自动调查的详细信息和结果
 
-当在[](office-365-air.md) Microsoft Defender [for Office 365](office-365-atp.md)中执行自动调查时，有关该调查的详细信息在自动调查过程期间和之后可用。 如果您具有必要的权限，可以在安全中心查看这些详细信息。 调查详细信息为您提供了最新状态以及批准任何待处理操作的能力。
+**适用于**
+- [Microsoft Defender for Office 365 计划 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+
+当在[](office-365-air.md) Microsoft Defender [for Office 365](office-365-atp.md)中执行自动调查时，有关该调查的详细信息在自动调查过程期间和之后可用。 如果你拥有必要的权限，可以在 Microsoft 365 安全中心查看这些详细信息。 调查详细信息为您提供了最新状态以及批准任何待处理操作的能力。
 
 > [!TIP]
 > 查看 Microsoft 365 安全中心中新的统一调查页面。 若要了解有关详细信息，请参阅 [ ("新建！) 统一调查"页](../mtp/mtp-autoir-results.md#new-unified-investigation-page)。
