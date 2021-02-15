@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-topics
 localization_priority: None
 description: 了解如何查找 Microsoft Viva 主题的资源。
-ms.openlocfilehash: 3e75dfcfa17e5604e04b6f5e49be9019b1679110
-ms.sourcegitcommit: a048fefb081953aefa7747c08da52a7722e77288
+ms.openlocfilehash: d5c54bda3432fc9a1ff5ce4342cc523544eb6e78
+ms.sourcegitcommit: 78f48304f990e969a052fe6536b2e8d6856e1086
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "50107166"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50242862"
 ---
 # <a name="introduction-to-microsoft-viva-topics"></a>Microsoft Viva 主题简介
 
@@ -31,17 +31,20 @@ ms.locfileid: "50107166"
 
 Viva 主题是一项 Office 365 服务，可帮助组织将信息转换为知识。
 
-此页面上的资源旨在让你开始了解和使用贵组织中 Viva 主题。
+此页上的资源旨在让你开始了解和使用组织中 Viva 主题。
 
 ## <a name="get-started"></a>开始行动
 
-本节中的资源可帮助你了解有关什么是 Viva 主题及其如何提供帮助。
+本节中的资源可帮助你了解有关什么是 Viva 主题以及如何提供帮助的信息。
 
 | 如果要查找此信息： | 参考资源： |
 |:-----|:-----|
 |了解有关 Viva 主题的信息|[Microsoft Viva 主题概述](topic-experiences-overview.md)|
 |了解 AI 如何发现和推荐主题|[Microsoft Viva 主题发现](topic-experiences-discovery.md)|
 |了解主题安全性|[Microsoft Viva 安全和隐私](topic-experiences-security-privacy.md)|
+|了解如何获取 Viva 主题|[Microsoft Viva 主题产品页面](https://www.microsoft.com/microsoft-viva/topics?activetab=pivot%3aoverviewtab)|
+|查看 Microsoft 技术社区资源中心中的资源|[Microsoft Viva 主题技术社区](https://resources.techcommunity.microsoft.com/viva-topics/)|
+
 
 
 ## <a name="adoption"></a>采用
@@ -54,7 +57,7 @@ Viva 主题是一项 Office 365 服务，可帮助组织将信息转换为知识
 
 ## <a name="set-up-and-administration"></a>设置和管理
 
-本节中的资源可帮助你组织的管理员在 Microsoft 365 环境中设置和配置 Viva 主题。
+本节中的资源可帮助贵组织的管理员在 Microsoft 365 环境中设置和配置 Viva 主题。
 
 | 如果要查找此信息： | 参考资源： |
 |:-----|:-----|

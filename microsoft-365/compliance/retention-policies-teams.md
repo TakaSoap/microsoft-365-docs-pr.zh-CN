@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解适用于 Microsoft Teams 的保留策略。
-ms.openlocfilehash: 675a98656655521095096a535d4ee8352885e70c
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: 2541519ad9082383c5381452722d023f23760798
+ms.sourcegitcommit: 78f48304f990e969a052fe6536b2e8d6856e1086
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50166457"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50242708"
 ---
 # <a name="learn-about-retention-for-microsoft-teams"></a>了解用于 Microsoft Teams 的保留
 
@@ -43,21 +43,22 @@ ms.locfileid: "50166457"
 > [!NOTE]
 > 包括卡片内容是最近增加的功能，目前正在向租户推出。 有关详细信息，请参阅 [通过 Teams 中应用 Microsoft 365 用于自适应卡片内容的合规功能现已可用](https://techcommunity.microsoft.com/t5/microsoft-teams-blog/microsoft-365-compliance-capabilities-for-adaptive-card-content/ba-p/2095869)。
 
-不包括专用频道中的 Teams 消息，也不包括来自表情符号中来自其他人的代码片段和答复。
+专用频道中的 Teams 消息目前不支持保留策略。 对Teams使用保留策略（不包括代码片段）时，来自Teams移动客户端所录制的语音备忘录以及来自其他人以表情符号形式的反应。
 
 通过 Teams 使用的电子邮件和文件不包括在 Teams 的保留策略内。 这些项目有自己的保留策略。
-
-Teams 保留策略支持 RecipientTypeDetails 的邮箱：
-
-- MailUser
-- UserMailbox
-- GroupMailbox
-- ArbitrationMailbox
-- SharedMailbox
 
 ## <a name="how-retention-works-with-microsoft-teams"></a>用于 Microsoft Teams 的保留的工作原理
 
 可使用保留策略保留和删除 Teams 中的聊天和频道消息的数据。 Exchange 邮箱用于在后台存储这些邮件。 Teams 聊天中的数据存储在聊天中包含的每个用户的邮箱中的隐藏文件夹中，组邮箱中的类似隐藏文件夹用于 Teams 频道消息。
+
+通过RecipientTypeDetails属性列出这些邮箱：
+
+- **UserMailbox**：这些邮箱为拥有 Exchange Online 邮箱的 Teams 用户存储邮件。
+- **MailUser**：这些邮箱为拥有预置 Exchange 服务器邮箱而非 Exchange Online 邮箱的 Teams 用户存储邮件。
+- **用户**：这些邮箱为没有 Exchange Online 或内部部署 Exchange 服务器邮箱的 Teams 用户存储邮件。
+- **组邮件**：这些邮箱为 Teams 频道存储信息。
+
+其他邮箱类型，如用于Teams会议室的RoomMailbox，不支持Teams的保留策略。
 
 务必了解，Teams 使用由 Azure 支持的聊天服务，该服务也会存储此数据，并且默认永久存储。 因此，如果你因合规性原因需要删除 Teams 消息，则建议你对 Teams 使用保留策略，因为这样可以从 Exchange 邮箱和 Azure 支持的基础聊天服务中永久删除此数据。 有关基础架构的详细信息，请参阅 [Microsoft Teams 中的安全性和合规性](https://go.microsoft.com/fwlink/?linkid=871258)，特别是[信息保护体系结构](https://docs.microsoft.com/MicrosoftTeams/security-compliance-overview#information-protection-architecture)部分。
 

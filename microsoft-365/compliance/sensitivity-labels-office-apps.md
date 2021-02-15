@@ -1,5 +1,5 @@
 ---
-title: 在 Office 应用中使用敏感度标签
+title: 在 Office 应用中管理敏感度标签
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -14,16 +14,16 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-description: 了解用户在适用于桌面、移动和 Web 的 Office 应用中如何使用敏感度标签，以及哪些应用支持敏感度标签。
+description: IT 管理员在 Office 桌面、移动和 Web 应用中管理敏感度标签的信息。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 95da9753d773e3bb9724a8d0ae2ab0e2f2618c27
-ms.sourcegitcommit: a62ac3c01ba700a51b78a647e2301f27ac437c5a
+ms.openlocfilehash: 3f2be9310e6230bf0530670796dea56f775f365d
+ms.sourcegitcommit: 78f48304f990e969a052fe6536b2e8d6856e1086
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/12/2021
-ms.locfileid: "50233714"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50242662"
 ---
-# <a name="use-sensitivity-labels-in-office-apps"></a>在 Office 应用中使用敏感度标签
+# <a name="manage-sensitivity-labels-in-office-apps"></a>在 Office 应用中管理敏感度标签
 
 >*[Microsoft 365 安全性与合规性许可指南](https://aka.ms/ComplianceSD)。*
 
@@ -205,7 +205,9 @@ Azure 信息保护统一标签客户端支持 Open XML 格式和 Microsoft Offic
 
 ### <a name="sharing-encrypted-documents-with-external-users"></a>与外部用户共享加密文档
 
-除了限制对自己组织中用户的访问之外，还可以将访问权限扩展到在 Azure Active Directory 中拥有帐户的其他用户。 用户成功进行身份验证后，所有 Office 应用和其他 [RMS](https://docs.microsoft.com/azure/information-protection/requirements-applications#rms-enlightened-applications) 启发式应用程序都可以打开加密文档。
+除了限制对自己组织中用户的访问之外，还可以将访问权限扩展到在 Azure Active Directory 中拥有帐户的其他用户。 但是，如果组织使用条件访问策略，请参阅下一节 [了解](#conditional-access-policies) 其他注意事项。
+
+用户成功进行身份验证后，所有 Office 应用和其他 [RMS](https://docs.microsoft.com/azure/information-protection/requirements-applications#rms-enlightened-applications) 启发式应用程序都可以打开加密文档。 
 
 如果外部用户在 Azure Active Directory 中没有帐户，他们可以使用租户中的来宾帐户进行身份验证。 当你为 SharePoint 和 OneDrive 中的 Office 文件启用敏感度标签时，这些来宾帐户还可用于访问 SharePoint 或 [OneDrive 中的共享文档](sensitivity-labels-sharepoint-onedrive-files.md)：
 
@@ -228,6 +230,16 @@ Azure 信息保护统一标签客户端支持 Open XML 格式和 Microsoft Offic
 
 > [!TIP]
 > 由于你无法确保外部用户将使用受支持的 Office 客户端应用程序，因此，为特定用户) 创建来宾帐户 (或将 SharePoint 和 OneDrive 与 [Azure AD B2B](https://docs.microsoft.com/sharepoint/sharepoint-azureb2b-integration-preview) (集成用于任何经过身份验证的用户) 时，共享 SharePoint 和 OneDrive 的链接是支持与外部用户进行安全协作的更可靠方法。
+
+### <a name="conditional-access-policies"></a>条件访问策略
+
+如果你的组织已实施 [Azure Active Directory 条件访问策略](https://docs.microsoft.com/azure/active-directory/conditional-access/overview)，请检查这些策略的配置。 如果策略包括 Azure 信息保护，并且该策略扩展到外部用户，则这些外部用户必须在租户中拥有来宾帐户，即使他们在其自己的租户中拥有 Azure AD 帐户。
+
+如果没有此来宾帐户，他们无法打开加密文档并看到错误消息。 消息文本可能会通知他们，需要将其帐户添加为租户中的外部用户，但说明不正确，请注销，然后使用不同的 **Azure Active Directory 用户帐户重新登录**。
+
+如果无法为需要打开标签加密的文档的外部用户创建和配置租户中的来宾帐户，则必须从条件访问策略中删除 Azure 信息保护，或者从策略中排除外部用户。
+
+有关条件访问和 Azure 信息保护（敏感度标签使用的加密服务）详细信息，请参阅常见问题，我了解 Azure 信息保护已列为可用于条件访问的云应用，这如何 [工作？](https://docs.microsoft.com/azure/information-protection/faqs#i-see-azure-information-protection-is-listed-as-an-available-cloud-app-for-conditional-accesshow-does-this-work)
 
 ## <a name="when-office-apps-apply-content-marking-and-encryption"></a>当 Office 应用应用内容标记和加密时
 
