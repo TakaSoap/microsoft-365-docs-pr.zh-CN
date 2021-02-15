@@ -291,6 +291,8 @@
           href: security-and-compliance/multi-factor-authentication-microsoft-365.md
         - name: 设置多重身份验证
           href: security-and-compliance/set-up-multi-factor-authentication.md
+        - name: 管理和监视优先级帐户
+          href: setup/priority-accounts.md
         - name: 为 Office 2013 启用新式身份验证
           href: security-and-compliance/enable-modern-authentication.md
         - name: 获取Microsoft 365 商业高级版

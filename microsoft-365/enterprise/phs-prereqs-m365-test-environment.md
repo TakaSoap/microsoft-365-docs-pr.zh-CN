@@ -5,7 +5,6 @@ f1.keywords:
 - NOCSH
 ms.author: josephd
 manager: laurawi
-ms.date: 12/12/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -15,35 +14,37 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 创建 Microsoft 365 环境以测试标识和设备访问，含密码哈希同步身份验证的先决条件。
-ms.openlocfilehash: 63f433d5297139fcc7f6eb8bd5383a6593c29388
-ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
+ms.openlocfilehash: 8e8db4aae39acda0762f9b6394b23ab047727ea5
+ms.sourcegitcommit: a62ac3c01ba700a51b78a647e2301f27ac437c5a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48399439"
+ms.lasthandoff: 02/12/2021
+ms.locfileid: "50233780"
 ---
 # <a name="identity-and-device-access-prerequisites-for-password-hash-synchronization-in-your-microsoft-365-test-environment"></a>Microsoft 365 测试环境中密码哈希同步的标识和设备访问先决条件
 
-*此测试实验室指南仅可用于企业测试环境的 Microsoft 365。*
+*本测试实验室指南仅适用于 Microsoft 365 企业版测试环境。*
 
-[标识和设备访问配置](../security/office-365-security/microsoft-365-policies-configurations.md) 是一组配置和条件访问策略，用于保护与 Azure Active Directory (azure AD) 集成的适用于企业的 Microsoft 365 中所有服务的访问权限。
+[标识](../security/office-365-security/microsoft-365-policies-configurations.md) 和设备访问配置是一组配置和条件访问策略，用于保护对 Microsoft 365 企业版中与 Azure Active Directory (Azure AD) 集成的所有服务的访问。
 
-本文介绍如何配置 Microsoft 365 测试环境，使其满足 [Active Directory 和用于标识和设备访问的密码哈希同步先决条件配置](../security/office-365-security/identity-access-prerequisites.md#prerequisites)的要求。
+本文介绍如何配置 Microsoft 365 测试环境，该环境满足用于标识和设备访问的密码哈希同步身份验证先决条件 [配置的](../security/office-365-security/identity-access-prerequisites.md#prerequisites) 混合要求。
 
-此测试环境的设置分为以下八个阶段：
+设置此测试环境有十个阶段：
 
-1.  创建密码哈希同步的测试环境的模拟企业配置
-2.  配置 Azure AD 无缝单一登录
-3.  配置命名位置
-4.  配置密码写回服务
-5.  为所有用户帐户配置自助密码重置
-6.  为所有用户帐户配置多重身份验证
-7.  启用 Azure AD Identity Protection
-8.  启用 Exchange Online 和 Skype for Business Online 的新式身份验证
+1. 创建密码哈希同步的测试环境的模拟企业配置
+2. 配置 Azure AD 无缝单一登录
+3. 配置命名位置
+4. 配置密码写回服务
+5. 为所有用户帐户配置自助密码重置
+6. 为所有用户帐户配置多重身份验证
+7. 启用已加入域的 Windows 计算机的自动设备注册
+8. 配置 Azure AD 密码保护 
+9. 启用 Azure AD Identity Protection
+10. 启用 Exchange Online 和 Skype for Business Online 的新式身份验证
 
 ## <a name="phase-1-build-out-your-simulated-enterprise-with-password-hash-sync-microsoft-365-test-environment"></a>阶段 1：构建密码哈希同步的 Microsoft 365 测试环境的模拟企业配置
 
-按照[密码哈希同步](password-hash-sync-m365-ent-test-environment.md)中的说明操作。
+按照密码哈希 [同步测试实验室指南](password-hash-sync-m365-ent-test-environment.md) 中的说明操作。
 下面是生成的配置。
 
 ![使用密码哈希同步测试环境的模拟企业配置](../media/password-hash-sync-m365-ent-test-environment/Phase3.png)
@@ -66,7 +67,7 @@ ms.locfileid: "48399439"
 
 接下来，按照[“密码重置”测试实验室指南的阶段 3](password-reset-m365-ent-test-environment.md#phase-3-configure-and-test-password-reset) 中的说明进行操作。 
 
-为特定 Azure AD 组中的帐户启用密码重置时，请将这些帐户添加到**密码重置**组：
+为特定 Azure AD 组中的帐户启用密码重置时，请将这些帐户添加到 **密码重置** 组：
 
 - 用户 2
 - 用户 3
@@ -86,11 +87,19 @@ ms.locfileid: "48399439"
 
 仅为用户 2 帐户测试多重身份验证。
 
-## <a name="phase-7-enable-azure-ad-identity-protection"></a>阶段 7：启用 Azure AD Identity Protection
+## <a name="phase-7-enable-automatic-device-registration-of-domain-joined-windows-computers"></a>阶段 7：启用已加入域的 Windows 计算机的自动设备注册 
+
+按照 [以下说明](https://docs.microsoft.com/azure/active-directory/devices/hybrid-azuread-join-plan) 启用已加入域的 Windows 计算机的自动设备注册。
+
+## <a name="phase-8-configure-azure-ad-password-protection"></a>第 8 阶段：配置 Azure AD 密码保护 
+
+按照 [以下说明](https://docs.microsoft.com/azure/active-directory/authentication/concept-password-ban-bad) 阻止已知的弱密码及其变体。
+
+## <a name="phase-9-enable-azure-ad-identity-protection"></a>第 9 阶段：启用 Azure AD 标识保护
 
 按照[“Azure AD Identity Protection”测试实验室指南的阶段 2](azure-ad-identity-protection-microsoft-365-test-environment.md#phase-2-use-azure-ad-identity-protection) 中的说明操作。 
 
-## <a name="phase-8-enable-modern-authentication-for-exchange-online-and-skype-for-business-online"></a>阶段 8：启用 Exchange Online 和 Skype for Business Online 的新式身份验证
+## <a name="phase-10-enable-modern-authentication-for-exchange-online-and-skype-for-business-online"></a>第 10 阶段：为 Exchange Online 和 Skype for Business Online 启用新式验证
 
 对于 Exchange Online，请按照[这些说明](https://docs.microsoft.com/Exchange/clients-and-mobile-in-exchange-online/enable-or-disable-modern-authentication-in-exchange-online#enable-or-disable-modern-authentication-in-exchange-online-for-client-connections-in-outlook-2013-or-later)操作。 
 

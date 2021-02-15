@@ -16,29 +16,29 @@ ms.custom:
 - seo-marvel-apr2020
 localization_priority: Normal
 f1.keywords: NOCSH
-description: 了解设置团队与 Teams 中的来宾进行任务、对话以及文档协作所需的 Microsoft 365 配置步骤。
-ms.openlocfilehash: 34b7d5d47d7fb0c9196beda70184fa6510b6cc33
-ms.sourcegitcommit: ec293978e951b09903b79e6642aa587824935e0c
+description: 了解在 Teams 中设置团队以与来宾进行任务、对话以及文档协作所需的 Microsoft 365 配置步骤。
+ms.openlocfilehash: 66c5692dd8cd233d8b3639f8ce0755ce51b60c0a
+ms.sourcegitcommit: a62ac3c01ba700a51b78a647e2301f27ac437c5a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "49780540"
+ms.lasthandoff: 02/12/2021
+ms.locfileid: "50233070"
 ---
 # <a name="collaborate-with-guests-in-a-team"></a>在团队中与来宾协作
 
-如果你需要跨文档、任务和对话与来宾协作，我们建议使用 Microsoft Teams。 Teams 提供 Office 和 SharePoint 中提供的所有协作功能，在统一的用户体验中提供持久聊天和一组可自定义和可扩展的协作工具。
+如果你需要跨文档、任务和对话与来宾协作，我们建议使用 Microsoft Teams。 Teams 提供 Office 和 SharePoint 中提供的所有协作功能，提供持久聊天和统一用户体验中可自定义和可扩展的协作工具集。
 
-本文将介绍设置团队以与来宾协作所需的 Microsoft 365 配置步骤。
+本文将介绍设置团队以与来宾协作所需的 Microsoft 365 配置步骤。 配置来宾访问权限后，可以按照 Teams 中"将来宾添加到团队"中的步骤邀请 [来宾加入团队](https://support.microsoft.com/office/fccb4fa6-f864-4508-bdde-256e7384a14f)。
 
 ## <a name="video-demonstration"></a>视频演示
 
-此视频演示本文档中所述的配置步骤。</br>
+此视频显示了本文档中所述的配置步骤。</br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE44NTr?autoplay=false]
 
 ## <a name="azure-external-collaboration-settings"></a>Azure 外部协作设置
 
-Microsoft 365 中的共享由 Azure Active Directory 中的 [B2B](https://docs.microsoft.com/azure/active-directory/external-identities/delegate-invitations)外部协作设置在最高级别管理。 如果在 Azure AD 中禁用或限制来宾共享，此设置将覆盖你在 Microsoft 365 中配置的任何共享设置。
+Microsoft 365 中的共享由 Azure Active Directory 中的 [B2B 外部](https://docs.microsoft.com/azure/active-directory/external-identities/delegate-invitations)协作设置在最高级别管理。 如果在 Azure AD 中禁用或限制来宾共享，此设置将覆盖你在 Microsoft 365 中配置的任何共享设置。
 
 检查 B2B 外部协作设置设置以确保不会阻止与来宾共享。
 
@@ -46,20 +46,20 @@ Microsoft 365 中的共享由 Azure Active Directory 中的 [B2B](https://docs.m
 
 设置外部协作设置
 
-1. 登录 Azure Active [https://aad.portal.azure.com](https://aad.portal.azure.com) Directory。
-2. 在左侧导航窗格中，单击 **Azure Active Directory。**
+1. 登录到 Azure Active Directory， at [https://aad.portal.azure.com](https://aad.portal.azure.com) .
+2. 在左侧导航窗格中，单击 **Azure Active Directory**。
 3. 单击 **"外部标识"。**
-4. 在 **"入门"** 屏幕的左侧导航窗格中，单击 **"外部协作设置"。**
-5. 确保 **管理员和来宾邀请** 者角色中的用户可以邀请，**并且成员可以邀请** 都设置为 **"是"。**
+4. 在 **"入门"屏幕** 的左侧导航窗格中，单击 **"外部协作设置"。**
+5. 确保 **管理员和** 来宾邀请者角色中的用户可以邀请，**并且成员可以邀请** 都设置为 **"是"。**
 6. 如果进行了任何更改，请单击 **“保存”**。
 
-记下"协作限制 **"部分** 中的设置。 确保未阻止要协作的来宾的域。
+请注意"协作限制 **"部分中的** 设置。 确保未阻止要协作的来宾的域。
 
-如果与多个组织的来宾合作，可能需要限制其访问目录数据的能力。 这将阻止他们查看目录中的来宾。 为此，在"来宾用户访问限制"下，选择"来宾用户对目录对象设置的属性和成员身份具有有限访问权限"或"来宾"用户访问仅限于其自己的目录对象的属性和 **成员身份**。
+如果您与多个组织的来宾合作，您可能需要限制其访问目录数据的能力。 这将阻止他们查看目录中的来宾。 为此，在"来宾用户访问限制"下，选择"来宾用户具有对目录对象属性和成员身份的有限访问权限"设置，或者"来宾"用户访问仅限于其自己的目录对象的属性和 **成员身份**。
 
 ## <a name="teams-guest-access-settings"></a>Teams 来宾访问设置
 
-Teams 具有用于来宾访问的主开/关开关，以及可用于控制来宾可在团队中执行哪些操作的各种设置。 主开关 **"在 Teams 中允许来宾访问** "必须 **打开，来宾** 访问在 Teams 中工作。
+Teams 具有用于来宾访问的主开/关开关，以及可用于控制来宾可以在团队中执行哪些操作的各种设置。 主开关 **"Teams 中允许来宾访问** "必须 **打开，来宾** 访问在 Teams 中工作。
 
 检查以确保 Teams 中已启用来宾访问，并根据您的业务需求对来宾设置进行任何调整。 请记住，这些设置会影响所有团队。
 
@@ -70,7 +70,7 @@ Teams 具有用于来宾访问的主开/关开关，以及可用于控制来宾�
 1. 访问 [https://admin.microsoft.com](https://admin.microsoft.com) 登录到 Microsoft 365 管理中心。
 2. 在左侧导航窗格中，单击"**全部显示"。**
 3. 在“**管理中心**”下，单击“**团队**”。
-4. 在 Teams 管理中心的左侧导航窗格中，展开 **组织范围的设置**，然后单击"**来宾访问"。**
+4. 在 Teams 管理中心的左侧导航窗格中，展开 **组织范围的设置**，然后单击 **"来宾访问"。**
 5. 确保 **在 Teams 中允许来宾访问** 设置为“**开**”。
 6. 对其他来宾设置进行任何所需的更改，然后单击“**保存**”。
 
@@ -90,26 +90,26 @@ Teams 使用 Microsoft 365 组作为团队成员身份。 必须打开 Microsoft
 1. 在 Microsoft 365 管理中心的左侧导航窗格中，展开"**设置"。**
 2. 单击 **"组织设置"。**
 3. 在列表中，单击 **"Microsoft 365 组"。**
-4. 确保允许组所有者将组织外部人员作为来宾添加到 **Microsoft 365** 组，同时选中"允许 **来宾** 组成员访问组内容"复选框。
+4. 确保允许组所有者将组织外部人员作为来宾添加到 **Microsoft 365** 组，同时选中"允许来宾组成员 **访问** 组内容"复选框。
 5. 如果进行了更改，请单击"**保存更改"。**
 
 
 ## <a name="sharepoint-organization-level-sharing-settings"></a>SharePoint 组织级别共享设置
 
-Teams 内容（如文件、文件夹和列表）均存储在 SharePoint 中。 为了让来宾能够访问 Teams 中的这些项目，SharePoint 组织级共享设置必须允许与来宾共享。
+Teams 内容（如文件、文件夹和列表）均存储在 SharePoint 中。 为了使来宾能够访问 Teams 中的这些项目，SharePoint 组织级别的共享设置必须允许与来宾共享。
 
-组织级别的设置确定各个网站（包括与团队关联的网站）可用的设置。 网站设置不能比组织级别的设置更宽松。
+组织级别设置确定各个网站（包括与团队关联的网站）可用的设置。 网站设置不能比组织级别设置更宽松。
 
-如果要允许与未经身份验证的人共享文件和文件夹，请选择"任何人 **"。** 如果要确保所有来宾均必须进行身份验证，请选择 **"新建来宾"和"现有来宾"。** 选择组织中任何网站所需的最宽松设置。
+如果要允许与未经身份验证的人共享文件和文件夹，请选择"任何人 **"。** 如果要确保所有来宾都进行身份验证，请选择"**新建来宾"和"现有来宾"。** 选择组织中任何网站所需的最宽松设置。
 
 ![SharePoint 组织级别共享设置的屏幕截图](../media/sharepoint-organization-external-sharing-controls.png)
 
 
 设置 SharePoint 组织级共享设置
 
-1. 在 Microsoft 365 管理中心左侧导航窗格中的"管理中心"下，单击 **"SharePoint"。**
-2. 在 SharePoint 管理中心的左侧导航窗格中，展开"策略 **"，然后单击**"**共享"。**
-3. 确保 SharePoint 的外部共享设置为"任何人 **"** 或"**新来宾"和"现有来宾"。**
+1. 在 Microsoft 365 管理中心的左侧导航窗格中的"管理 **中心**"下，单击 **"SharePoint"。**
+2. 在 SharePoint 管理中心的左侧导航窗格中，展开 **"** 策略"，然后单击"**共享"。**
+3. 确保 SharePoint 的外部共享设置为"任何人 **"或**"**新来宾"和"现有来宾"。**
 4. 如果进行了任何更改，请单击 **“保存”**。
 
 
@@ -121,14 +121,14 @@ Teams 内容（如文件、文件夹和列表）均存储在 SharePoint 中。 �
 
 选择以下任一链接类型，当用户共享文件和文件夹时，将默认选择这些链接类型：
 
-- **具有链接的** 任何人 - 如果希望对文件和文件夹执行大量未经身份验证的共享，请选择此选项。 如果要允许"任何人 *"* 链接，但担心意外的未经身份验证的共享，请考虑使用其他选项之一作为默认选项。 此链接类型仅在启用了"任何人共享 **"时** 可用。
+- **具有链接的** 任何人 - 如果希望对文件和文件夹执行大量未经身份验证的共享，请选择此选项。 如果要允许 *"任何人"* 链接，但担心意外的未经身份验证的共享，请考虑使用其他选项之一作为默认选项。 此链接类型仅在启用了"任何人共享 **"时** 可用。
 - **仅组织内部人员** - 如果希望大多数文件和文件夹共享与组织内部人员共享，请选择此选项。
-- **特定人员** - 如果你希望与来宾共享大量文件和文件夹，请考虑使用此选项。 此类链接适用于来宾，要求他们进行身份验证。
+- **特定人员** - 如果希望与来宾进行大量文件和文件夹共享，请考虑使用此选项。 此类链接适用于来宾，要求他们进行身份验证。
  
 ![SharePoint 组织级别文件和文件夹共享设置的屏幕截图](../media/sharepoint-organization-files-folders-sharing-settings.png)
 
 
-设置 SharePoint 组织级别默认链接设置
+设置 SharePoint 组织级别的默认链接设置
 
 1. 导航到 SharePoint 管理中心中的"共享"页面。
 2. 在 **"文件和文件夹链接**"下，选择要使用的默认共享链接。
@@ -139,7 +139,7 @@ Teams 内容（如文件、文件夹和列表）均存储在 SharePoint 中。 �
 下一步是创建计划用于与来宾协作的团队。
 
 创建团队
-1. 在 Teams 中的 **"Teams"** 选项卡上，单击"加入"或在左窗格底部创建团队。
+1. 在 Teams 中的 **"Teams"** 选项卡上，单击左窗格底部的"加入"或创建团队。
 2. 单击 **"创建团队"。**
 3. 单击 **"从头开始建立团队"。**
 4. 选择 **"专用"** 或 **"公共"。**
@@ -150,28 +150,28 @@ Teams 内容（如文件、文件夹和列表）均存储在 SharePoint 中。 �
 
 ## <a name="sharepoint-site-level-sharing-settings"></a>SharePoint 网站级共享设置
 
-检查网站级别的共享设置，以确保这些设置允许此团队访问的类型。 例如，如果将组织级别设置设置为"任何人"，但希望所有来宾对此团队进行身份验证，请确保网站级别共享设置设置为"新来宾"和"现有来宾 **"。**
+检查网站级别的共享设置，以确保它们允许此团队访问的类型。 例如，如果将组织级别设置设置为 **"** 任何人"，但希望所有来宾对此团队进行身份验证，请确保网站级别共享设置设置为"新建"和"现有来宾 **"。**
 
 ![SharePoint 网站外部共享设置的屏幕截图](../media/sharepoint-site-external-sharing-settings.png)
 
 设置网站级共享设置
 1. 在 SharePoint 管理中心的左侧导航窗格中，展开 **"** 网站"，然后单击 **"活动网站"。**
 2. 选择刚才创建的团队站点。
-3. 单击...然后选择"**共享"。**
+3. 单击...并选择"**共享"。**
 4. 确保共享设置为"任何人 **"或****"新来宾"和"现有来宾"。**
 5. 如果进行了任何更改，请单击 **“保存”**。
 
 ## <a name="invite-users"></a>邀请用户
 
-现在配置了来宾共享设置，因此你可以开始向团队添加内部用户和来宾。 
+现在配置了来宾共享设置，以便你可以开始向团队添加内部用户和来宾。 
 
 邀请内部用户加入团队
-1. 在团队中，单击 **" ()** **\*\*\*** 选项，然后单击"添加 **成员"。**
+1. 在团队中，**单击" ()** **\*\*\*** 选项，然后单击"**添加成员"。**
 2. 键入要邀请的人的姓名。
 3. 单击“**添加**”，然后单击“**关闭**”。
 
 邀请来宾加入团队
-1. 在团队中，单击 **" ()** **\*\*\*** 选项，然后单击"添加 **成员"。**
+1. 在团队中，**单击" ()** **\*\*\*** 选项，然后单击"**添加成员"。**
 2. 键入要邀请的来宾的电子邮件地址。
 3. 单击 **"编辑来宾信息"。**
 4. 键入来宾的全名，然后单击选中标记。
@@ -187,6 +187,6 @@ Teams 内容（如文件、文件夹和列表）均存储在 SharePoint 中。 �
 
 [创建托管有来宾的 B2B 外联网](b2b-extranet.md)
 
-[SharePoint 和 OneDrive 与 Azure AD B2B 集成](https://docs.microsoft.com/sharepoint/sharepoint-azureb2b-integration-preview)
+[SharePoint 和 OneDrive 与 Azure AD B2B 的集成](https://docs.microsoft.com/sharepoint/sharepoint-azureb2b-integration-preview)
 
-[从 SharePoint 或 OneDrive 共享时，共享选项灰心](https://docs.microsoft.com/sharepoint/troubleshoot/administration/sharing-options-grayed-out-when-sharing-from-sharepoint-online-or-onedrive)
+[从 SharePoint 或 OneDrive 共享时，共享选项灰度](https://docs.microsoft.com/sharepoint/troubleshoot/administration/sharing-options-grayed-out-when-sharing-from-sharepoint-online-or-onedrive)

@@ -1,5 +1,5 @@
 ---
-title: Microsoft 团队中的 microsoft 365 报表-Microsoft 团队设备使用情况
+title: 管理中心中的 Microsoft 365 报告 - Microsoft Teams 设备使用情况
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -20,45 +20,47 @@ search.appverid:
 - MST160
 - MET150
 - MOE150
-description: 通过从 Microsoft 365 报告中获取 Microsoft 团队应用使用情况报告，深入了解你的组织中使用的 Microsoft 团队应用。
-ms.openlocfilehash: 928ba7bbe4d4753499e71b347baffafa7441f5b5
-ms.sourcegitcommit: 82d8be71c5861a501ac62a774b306a3fc1d4e627
+description: 从 Microsoft 365 报告中获取 Microsoft Teams 应用使用情况报告，深入了解组织中使用的 Microsoft Teams 应用。
+ms.openlocfilehash: 54219b060767193e711c839d25780dd3b4a618bf
+ms.sourcegitcommit: a62ac3c01ba700a51b78a647e2301f27ac437c5a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48988524"
+ms.lasthandoff: 02/12/2021
+ms.locfileid: "50233430"
 ---
-# <a name="microsoft-365-reports-in-the-admin-center---microsoft-teams-device-usage"></a>Microsoft 团队中的 microsoft 365 报表-Microsoft 团队设备使用情况
+# <a name="microsoft-365-reports-in-the-admin-center---microsoft-teams-device-usage"></a>管理中心中的 Microsoft 365 报告 - Microsoft Teams 设备使用情况
 
-Microsoft 365 " **报告** " 仪表板显示组织中各产品的活动概述。 它让你能够深入研究各产品级报表，以便更细致地了解每个产品内的活动。 请查看[报表概述主题](activity-reports.md)。 在 Microsoft Teams 应用使用情况报表中，可深入了解组织中使用的 Microsoft Teams 应用。
+Microsoft 365 **报表** 仪表板显示组织中产品的活动概述。 它让你能够深入研究各产品级报表，以便更细致地了解每个产品内的活动。 请查看[报表概述主题](activity-reports.md)。 在 Microsoft Teams 应用使用情况报表中，可深入了解组织中使用的 Microsoft Teams 应用。
   
 > [!NOTE]
-> 您必须是 Microsoft 365 或 Exchange、SharePoint、团队服务、团队通信或 Skype for Business 管理员中的全局管理员、全局读取器或报告阅读器才能查看报告。  
+> 你必须是 Microsoft 365 中的全局管理员、全局读者或报告读者，或者是 Exchange、SharePoint、Teams 服务、Teams 通信或 Skype for Business 管理员才能查看报告。  
  
 ## <a name="how-to-get-to-the-microsoft-teams-app-usage-report"></a>如何获取 Microsoft Teams 应用使用情况报表
 
-1. 在管理中心，转到“ **报表** ”\> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">使用情况</a>页面。 
-2. 在仪表板主页中，单击 Microsoft 团队活动卡片上的 " **查看更多** " 按钮。
+1. 在管理中心，转到“**报表**”\> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">使用情况</a>页面。 
+2. 在仪表板主页上，单击 Microsoft  Teams 活动卡上的"查看更多"按钮。
   
 ## <a name="interpret-the-microsoft-teams-app-usage-report"></a>解读 Microsoft Teams 应用使用情况报表
 
-您可以通过选择 " **设备使用情况** " 选项卡，在 "团队报告" 中查看设备使用情况。<br/>![Microsoft 365 报告-Microsoft 团队设备使用情况。](../../media/e46c7f7c-8371-4a20-ae82-b20df64b0205.png)
+可以通过选择"设备使用情况"选项卡在 Teams 报告中 **查看设备** 使用情况。<br/>![Microsoft 365 报告 - Microsoft Teams 设备使用情况。](../../media/e46c7f7c-8371-4a20-ae82-b20df64b0205.png)
 
-选择 " **选择列** " 可在报告中添加或删除列。  <br/> ![团队用户设备报告-选择列](../../media/3358d5d9-931b-4d30-931f-450b2f5717da.png)
+选择 **"选择列** "以在报表中添加或删除列。  <br/> ![Teams 用户设备报告 - 选择列](../../media/3358d5d9-931b-4d30-931f-450b2f5717da.png)
 
-您还可以通过选择 " **导出** " 链接将报告数据导出到 Excel .csv 文件中。 此操作可导出所有用户的数据，使你能够对数据进行简单的排序和筛选，以进一步分析数据。 如果用户数量不足 2000，则可在报表中的表格内进行排序和筛选。 如果用户数超过 2000，则需要导出数据才能进行排序和筛选。 
+您还可以通过选择"导出"链接将报告数据导出到 Excel .csv **文件中。** 此操作可导出所有用户的数据，使你能够对数据进行简单的排序和筛选，以进一步分析数据。 如果用户数量不足 2000，则可在报表中的表格内进行排序和筛选。 如果用户数超过 2000，则需要导出数据才能进行排序和筛选。 
+
+可查看" **Microsoft Teams 设备使用情况**"报表，了解过去 7 天、30 天、90 天或 180 天的趋势。 但是，如果您选择报告中的特定日期，则表 (7) 将显示自当前日期起最多 28 天的数据 (而不是报告生成日期) 。
   
-|项目|说明|
+|Item|说明|
 |:-----|:-----|
 |**跃点数**|**定义**|
 |用户名  <br/> |用户的显示名称。  <br/> |
-|Windows  <br/> |如果用户在基于 Windows 的计算机上的工作组桌面客户端中处于活动状态，则选择此选项。  <br/> |
-|Mac  <br/> |如果用户在 macOS 计算机上的团队桌面客户端中处于活动状态，则选择此选项。  <br/> |
-|iOS  <br/> |如果用户在 iOS 的工作组移动客户端处于活动状态，则选择此选项。  <br/> |
-|Android 手机  <br/> | 如果用户在适用于 Android 的工作组移动客户端上处于活动状态，则选择此选项。  <br/> |
-|Chrome OS  <br/> |如果用户在 ChromeOS 计算机上的团队桌面客户端中处于活动状态，则选择此选项。|
-|Linux  <br/> | 如果用户在 Linux 计算机上的工作组桌面客户端中处于活动状态，则选择此选项。  <br/> |
-|Web  <br/> |如果用户在设备上的工作组 web 客户端中处于活动状态，则选择此选项。|
-| (UTC) 的上次活动日期  <br/> |上次 (UTC) 用户参与团队活动的日期。  <br/> |
-|已许可|如果用户已被授权使用团队，则选择此选项。|
+|Windows  <br/> |如果用户在基于 Windows 的计算机上在 Teams 桌面客户端中处于活动状态，则选中。  <br/> |
+|Mac  <br/> |如果用户在 macOS 计算机的 Teams 桌面客户端中处于活动状态，则选中。  <br/> |
+|iOS  <br/> |如果用户在适用于 iOS 的 Teams 移动客户端上处于活动状态，则选中。  <br/> |
+|Android 手机  <br/> | 如果用户在适用于 Android 的 Teams 移动客户端上处于活动状态，则选中。  <br/> |
+|Chrome OS  <br/> |如果用户在 ChromeOS 计算机的 Teams 桌面客户端中处于活动状态，则选中。|
+|Linux  <br/> | 如果用户在 Linux 计算机的 Teams 桌面客户端中处于活动状态，则选中。  <br/> |
+|Web  <br/> |如果用户在设备的 Teams Web 客户端中处于活动状态，则选中。|
+|上次活动日期 (UTC)   <br/> |用户参与 Teams (的最后一) UTC 日期。  <br/> |
+|已授权|如果用户获得使用 Teams 的许可，则选中。|
 |||

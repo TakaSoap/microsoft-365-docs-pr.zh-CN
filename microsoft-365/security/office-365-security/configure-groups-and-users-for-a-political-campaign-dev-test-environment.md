@@ -11,24 +11,27 @@ ms.topic: article
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
-ms.service: O365-seccomp
 localization_priority: Priority
 search.appverid:
 - MET150
 ms.assetid: 0e22bcf3-bad3-42a4-b44f-276e0cf4790f
 description: 摘要：通过用户和组创建适用于政治宣传活动开发/测试环境的 Office 365 和 Microsoft 企业移动性 + 安全性 (EMS) 试用订阅。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 1fac15cc0b2a512745e0538ec689bd5f17555419
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: 2d23539951e4d51fcd29417ab71ce599853d7537
+ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49614902"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50165699"
 ---
 # <a name="configure-groups-and-users-for-a-political-campaign-devtest-environment"></a>为政治宣传活动开发/测试环境配置组和用户
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**适用对象**
+- [适用于 Office 365 计划 2 的 Microsoft Defender](https://go.microsoft.com/fwlink/?linkid=2148715)
 
  **摘要**：通过用户和组创建适用于政治宣传活动开发/测试环境的 Office 365 和 Microsoft 企业移动性 + 安全性 (EMS) 试用订阅。
 
@@ -68,7 +71,7 @@ ms.locfileid: "49614902"
 
 首先，通过 Azure 门户为典型政治宣传活动创建一系列组。
 
-1. 在浏览器的单独标签页上，转到 Azure 门户 (<https://portal.azure.com>)。如有需要，请使用 Office 365 E5 试用订阅的全局管理员帐户凭据登录。
+1. 在浏览器的单独选项卡上，转到 azure 门户（按 <https://portal.azure.com>）。 如有需要，请使用 Office 365 E5 试用订阅的全局管理员帐户凭据登录。
 
 2. 在 Azure 门户中，单击“Azure Active Directory”>“用户和组”>“所有组”。
 

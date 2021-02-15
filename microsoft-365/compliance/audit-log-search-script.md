@@ -16,13 +16,13 @@ search.appverid:
 - MOE150
 - MET150
 ms.custom: seo-marvel-apr2020
-description: 使用 PowerShell 脚本运行 Search-UnifiedAuditLog cmdlet 来搜索审核日志。 此脚本经过优化，可返回大量（最多 50,000 个）审核记录。 该脚本会将这些记录导出为 CSV 文件，可在 Excel 中使用 Power Query 查看或转换这些文件。
-ms.openlocfilehash: d4fcf59297747d0499f6616438299ad8cbe96d7f
-ms.sourcegitcommit: c0cfb9b354db56fdd329aec2a89a9b2cf160c4b0
+description: 使用在 Exchange Online 中运行 Search-UnifiedAuditLog cmdlet 的 PowerShell 脚本搜索审核日志。 此脚本经过优化，可返回大量（最多 50,000 个）审核记录。 该脚本会将这些记录导出为 CSV 文件，可在 Excel 中使用 Power Query 查看或转换这些文件。
+ms.openlocfilehash: 3d44054d8d1111fe86e06460f5ca4d442d0d1625
+ms.sourcegitcommit: a62ac3c01ba700a51b78a647e2301f27ac437c5a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "50094783"
+ms.lasthandoff: 02/12/2021
+ms.locfileid: "50233326"
 ---
 # <a name="use-a-powershell-script-to-search-the-audit-log"></a>使用 PowerShell 脚本搜索审核日志
 
@@ -80,7 +80,7 @@ $intervalMinutes = 60
 
 Function Write-LogFile ([String]$Message)
 {
-    $final = [DateTime]::Now.ToString("s") + ":" + $Message
+    $final = [DateTime]::Now.ToUniversalTime().ToString("s") + ":" + $Message
     $final | Out-File $logFile -Append
 }
 
@@ -101,7 +101,7 @@ while ($true)
         break
     }
 
-    $sessionID = [DateTime]::Now.ToString("s")
+    $sessionID = [Guid]::NewGuid().ToString() + "_" +  "ExtractLogs" + (Get-Date).ToString("yyyyMMddHHmmssfff")
     Write-LogFile "INFO: Retrieving audit records for activities performed between $($currentStart) and $($currentEnd)"
     Write-Host "Retrieving audit records for activities performed between $($currentStart) and $($currentEnd)"
     $currentCount = 0
@@ -137,14 +137,13 @@ while ($true)
 
 Write-LogFile "END: Retrieving audit records between $($start) and $($end), RecordType=$record, PageSize=$resultSize, total count: $totalCount."
 Write-Host "Script complete! Finished retrieving audit records for the date range between $($start) and $($end). Total count: $totalCount" -foregroundColor Green
-
 ```
 
 2. 修改下表中列出的变量以配置搜索条件。 脚本包括这些变量的示例值，但应对其进行更改（除非另有说明）以满足特定要求。
 
    |变量|示例值|说明|
    |---|---|---|
-   |`$logFile`|"d:\temp\AuditSearchLog.txt"|指定日志文件的名称和位置，其中包含有关脚本执行的审核日志搜索的进度信息。|
+   |`$logFile`|"d:\temp\AuditSearchLog.txt"|指定日志文件的名称和位置，其中包含有关脚本执行的审核日志搜索的进度信息。 该脚本将 UTC 时间戳写入日志文件。|
    |`$outputFile`|"d:\temp\AuditRecords.csv"|指定包含脚本所返回的审核记录的 CSV 文件的名称和位置。|
    |`[DateTime]$start` 和 `[DateTime]$end`|[DateTime]::UtcNow.AddDays(-1) <br/>[DateTime]::UtcNow|指定审核日志搜索的日期范围。 该脚本将返回指定日期范围内发生的审核活动的记录。 例如，若要返回 2021 年 1 月执行的活动，可使用 `"2021-01-01"` 的开始日期和 `"2021-01-31"` 的结束日期（请确保用双引号括起值）脚本中的示例值将返回过去 24 小时内执行的活动的记录。 如果值中不包含时间戳，则指定日期的默认时间戳为凌晨 12:00（午夜）。|
    |`$record`|"AzureActiveDirectory"|指定要搜索的审计活动（也称为 *操作*）的记录类型。 此属性指示触发了活动的服务或功能。 有关可用于此变量的记录类型的列表，请参阅[审核日志记录类型](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema#auditlogrecordtype)。 可以使用记录类型名称或 ENUM 值。 <br/><br/>**提示：** 若要返回所有记录类型的审核记录，请使用 `$null` 值（不带双引号）。|

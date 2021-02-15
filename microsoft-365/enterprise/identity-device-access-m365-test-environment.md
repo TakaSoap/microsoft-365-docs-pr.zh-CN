@@ -5,7 +5,6 @@ f1.keywords:
 - NOCSH
 ms.author: josephd
 manager: laurawi
-ms.date: 04/23/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -15,28 +14,28 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 创建一个 Microsoft 365 环境来测试标识和设备访问情况。
-ms.openlocfilehash: b8e91a58bb6e1c00013b963c77151080a419b836
-ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
+ms.openlocfilehash: ed143341079a55d6bdd1d4a68feea68acb86ef85
+ms.sourcegitcommit: a62ac3c01ba700a51b78a647e2301f27ac437c5a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48398803"
+ms.lasthandoff: 02/12/2021
+ms.locfileid: "50233724"
 ---
 # <a name="identity-and-device-access-for-your-microsoft-365-test-environment"></a>针对 Microsoft 365 的标识和设备访问测试环境
 
-*此测试实验室指南仅可用于企业测试环境的 Microsoft 365。*
+*本测试实验室指南仅适用于 Microsoft 365 企业版测试环境。*
 
-[标识和设备访问配置](../security/office-365-security/microsoft-365-policies-configurations.md) 是一组功能和条件访问策略，用于保护与 Azure Active Directory (azure AD) 集成的所有服务的访问权限。
+[标识和设备访问](../security/office-365-security/microsoft-365-policies-configurations.md) 配置是一组推荐的配置和条件访问策略，用于保护对与 Azure Active Directory (Azure AD) 集成的所有服务的访问。
 
 若要创建具有通用标识和设备访问配置的测试环境，请执行以下操作：
 
 1. 根据所选的标识模型和身份验证方法，使用必备标识和安全功能来配置测试环境：
 
   - [仅限云](cloud-only-prereqs-m365-test-environment.md)
-  - [ (PHS) 的密码哈希同步 ](phs-prereqs-m365-test-environment.md)
+  - [PHS (密码哈希) ](phs-prereqs-m365-test-environment.md)
   - [直通身份验证 (PTA)](pta-prereqs-m365-test-environment.md)
 
-2. 使用 [通用标识和设备访问策略](identity-access-policies.md) 来配置基于为测试环境配置的先决条件的策略，并探索并验证身份和设备的保护。
+2. 使用 [通用标识和设备](identity-access-policies.md) 访问策略配置基于为测试环境配置的先决条件构建的策略，并探索和验证标识和设备保护。
 
 ## <a name="see-also"></a>另请参阅
 

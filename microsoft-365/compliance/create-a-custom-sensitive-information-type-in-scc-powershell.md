@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解如何在合规中心中创建并导入策略的自定义敏感信息类型。
-ms.openlocfilehash: ab96a3928105f612ab97bc8ca3a0acc3613082c3
-ms.sourcegitcommit: d354727303d9574991b5a0fd298d2c9414e19f6c
+ms.openlocfilehash: 63ff32bda31446c25a523ff2064f7b750d102961
+ms.sourcegitcommit: 3e29926f51530afb0d75d8518a92b9ec7dc5e5bd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "50080677"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "50173119"
 ---
 # <a name="create-a-custom-sensitive-information-type-using-powershell"></a>使用 PowerShell 创建自定义敏感信息类型
 
@@ -377,7 +377,7 @@ Version 元素也很重要。当你首次上传规则包时，Microsoft 365 会�
    有关语法和参数的详细信息，请参阅 [New-DlpSensitiveInformationTypeRulePackage](https://docs.microsoft.com/powershell/module/exchange/new-dlpsensitiveinformationtyperulepackage)。
 
    > [!NOTE]
-   > 自定义敏感信息类型集合的限制是 10。
+   > 支持的规则包数量最多为10个，但每个包可以包含多个敏感信息类型的定义。
 
 4. 若要验证是否已成功新建敏感信息类型，请按以下任一步骤操作：
 

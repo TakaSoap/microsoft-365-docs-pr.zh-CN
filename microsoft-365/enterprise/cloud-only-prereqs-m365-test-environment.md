@@ -5,7 +5,6 @@ f1.keywords:
 - NOCSH
 ms.author: josephd
 manager: laurawi
-ms.date: 12/12/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -15,30 +14,31 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 创建一个 Microsoft 365 环境来测试标识和设备访问情况，其中内附仅限云的身份验证的先决条件。
-ms.openlocfilehash: aa18e1a9943ec12465737f6c3f2e12c1fa49e2a3
-ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
+ms.openlocfilehash: 1e659304eee330960937b641c9a39b03920f52e7
+ms.sourcegitcommit: a62ac3c01ba700a51b78a647e2301f27ac437c5a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48398873"
+ms.lasthandoff: 02/12/2021
+ms.locfileid: "50233126"
 ---
 # <a name="identity-and-device-access-prerequisites-for-cloud-only-in-your-microsoft-365-test-environment"></a>Microsoft 365 测试环境中仅限云的标识和设备访问先决条件
 
-*此测试实验室指南仅可用于企业测试环境的 Microsoft 365。*
+*本测试实验室指南仅适用于 Microsoft 365 企业版测试环境。*
 
-[标识和设备访问配置](../security/office-365-security/microsoft-365-policies-configurations.md) 是一组配置和条件访问策略，用于保护与 Azure Active Directory (azure AD) 集成的所有服务的访问权限。
+[标识和设备访问](../security/office-365-security/microsoft-365-policies-configurations.md) 配置是一组推荐的配置和条件访问策略，用于保护对与 Azure Active Directory (Azure AD) 集成的所有服务的访问。
 
 本文介绍了如何配置 Microsoft 365 测试环境，使其满足标识和设备访问[仅限云的先决条件配置](../security/office-365-security/identity-access-prerequisites.md#prerequisites)的要求。
 
-此测试环境的设置分为下面 7 个阶段：
+此测试环境的设置分为以下八个阶段：
 
-1.  构建轻量级测试环境
-2.  配置命名位置
-3.  配置密码写回服务
-4.  配置自助服务密码重置
-5.  配置多重身份验证
-6.  启用 Azure AD Identity Protection
-7.  为 Exchange Online 和 Skype for Business Online 启用新式身份验证
+1. 构建轻量级测试环境
+2. 配置命名位置
+3. 配置自助密码重置
+4. 配置多重身份验证
+5. 启用已加入域的 Windows 计算机的自动设备注册
+6. 配置 Azure AD 密码保护 
+7. 启用 Azure AD Identity Protection
+8. 为 Exchange Online 和 Skype for Business Online 启用新式身份验证
 
 ## <a name="phase-1-build-out-your-lightweight-microsoft-365-test-environment"></a>阶段 1：构建轻量级的 Microsoft 365 测试环境
 
@@ -47,22 +47,17 @@ ms.locfileid: "48398873"
 
 ![轻量级 Microsoft 365 企业版测试环境](../media/lightweight-base-configuration-microsoft-365-enterprise/Phase4.png)
  
-
 ## <a name="phase-2-configure-named-locations"></a>阶段 2：配置命名位置
 
 首先，确定组织使用的公共 IP 地址或地址范围。
 
 接下来，按照[在 Azure Active Directory 中配置命名位置](https://docs.microsoft.com/azure/active-directory/reports-monitoring/quickstart-configure-named-locations)中的说明将地址或地址范围添加为命名位置。 
 
-## <a name="phase-3-configure-password-writeback"></a>阶段 3：配置密码写回服务
-
-接下来，按照[“密码写回”测试实验室指南的阶段 2](password-writeback-m365-ent-test-environment.md#phase-2-enable-password-writeback-for-the-testlab-ad-ds-domain) 中的说明进行操作。
-
-## <a name="phase-4-configure-self-service-password-reset"></a>阶段 4：配置自助服务密码重置
+## <a name="phase-3-configure-self-service-password-reset"></a>第 3 阶段：配置自助服务密码重置
 
 接下来，按照[“密码重置”测试实验室指南的阶段 3](password-reset-m365-ent-test-environment.md#phase-3-configure-and-test-password-reset) 中的说明进行操作。 
 
-为特定 Azure AD 组中的帐户启用密码重置时，请将这些帐户添加到**密码重置**组：
+为特定 Azure AD 组中的帐户启用密码重置时，请将这些帐户添加到 **密码重置** 组：
 
 - 用户 2
 - 用户 3
@@ -71,7 +66,7 @@ ms.locfileid: "48398873"
 
 仅为用户 2 帐户测试密码重置。
 
-## <a name="phase-5-configure-multi-factor-authentication"></a>阶段 5：配置多重身份验证
+## <a name="phase-4-configure-multi-factor-authentication"></a>第 4 阶段：配置多重身份验证
 
 按照以下用户帐户的[“多重身份验证”测试实验室指南的阶段 2 ](multi-factor-authentication-microsoft-365-test-environment.md#phase-2-enable-and-test-multi-factor-authentication-for-the-user-2-account)中的说明操作：
 
@@ -82,11 +77,19 @@ ms.locfileid: "48398873"
 
 仅为用户 2 帐户测试多重身份验证。
 
-## <a name="phase-6-enable-azure-ad-identity-protection"></a>阶段 6：启用 Azure AD Identity Protection
+## <a name="phase-5-enable-automatic-device-registration-of-domain-joined-windows-computers"></a>第 5 阶段：启用已加入域的 Windows 计算机的自动设备注册 
+
+按照 [以下说明](https://docs.microsoft.com/azure/active-directory/devices/hybrid-azuread-join-plan) 启用已加入域的 Windows 计算机的自动设备注册。
+
+## <a name="phase-6-configure-azure-ad-password-protection"></a>第 6 阶段：配置 Azure AD 密码保护 
+
+按照 [以下说明](https://docs.microsoft.com/azure/active-directory/authentication/concept-password-ban-bad) 阻止已知的弱密码及其变体。
+
+## <a name="phase-7-enable-azure-ad-identity-protection"></a>阶段 7：启用 Azure AD Identity Protection
 
 按照[“Azure AD Identity Protection”测试实验室指南的阶段 2](azure-ad-identity-protection-microsoft-365-test-environment.md#phase-2-use-azure-ad-identity-protection) 中的说明操作。 
 
-## <a name="phase-7-enable-modern-authentication-for-exchange-online-and-skype-for-business-online"></a>阶段 7：为 Exchange Online 和 Skype for Business Online 启用新式身份验证
+## <a name="phase-8-enable-modern-authentication-for-exchange-online-and-skype-for-business-online"></a>阶段 8：启用 Exchange Online 和 Skype for Business Online 的新式身份验证
 
 对于 Exchange Online，请按照[这些说明](https://docs.microsoft.com/Exchange/clients-and-mobile-in-exchange-online/enable-or-disable-modern-authentication-in-exchange-online#enable-or-disable-modern-authentication-in-exchange-online-for-client-connections-in-outlook-2013-or-later)操作。 
 
@@ -106,9 +109,9 @@ ms.locfileid: "48398873"
   Get-CsOAuthConfiguration
   ```
 
-结果是一个测试环境，它满足标识和设备访问[仅限云的先决条件配置](../security/office-365-security/identity-access-prerequisites.md#prerequisites)的要求。 
+结果是测试环境满足标识和设备访问的仅 [云先决条件配置](../security/office-365-security/identity-access-prerequisites.md#prerequisites) 的要求。 
 
-## <a name="next-step"></a>下一步
+## <a name="next-step"></a>后续步骤
 
 使用[常见标识和设备访问策略](identity-access-policies.md)配置基于这些先决条件构建的策略并保护标识和设备。
 

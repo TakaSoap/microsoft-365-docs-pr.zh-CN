@@ -1,5 +1,5 @@
 ---
-title: Microsoft 团队用户活动中的 microsoft 365 报告
+title: 管理中心中的 Microsoft 365 报告 - Microsoft Teams 用户活动
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
@@ -18,48 +18,50 @@ search.appverid:
 - MST160
 - MET150
 - MOE150
-description: 了解如何获取 Microsoft 团队用户活动报告，并深入了解组织中的团队活动。
-ms.openlocfilehash: 7e32ca6b665cab9da93dec9632ef25176db0e839
-ms.sourcegitcommit: 039205fdaaa2a233ff7e95cd91bace474b84b68c
+description: 了解如何获取 Microsoft Teams 用户活动报告并深入了解贵组织的 Teams 活动。
+ms.openlocfilehash: e8e4ab6fd78fb290243d8fdc780b5a7a14ca2ee0
+ms.sourcegitcommit: a62ac3c01ba700a51b78a647e2301f27ac437c5a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49611396"
+ms.lasthandoff: 02/12/2021
+ms.locfileid: "50233406"
 ---
-# <a name="microsoft-365-reports-in-the-admin-center---microsoft-teams-user-activity"></a>Microsoft 团队用户活动中的 microsoft 365 报告
+# <a name="microsoft-365-reports-in-the-admin-center---microsoft-teams-user-activity"></a>管理中心中的 Microsoft 365 报告 - Microsoft Teams 用户活动
 
-Microsoft 365 " **报告** " 仪表板显示组织中各产品的活动概述。 它让你能够深入研究各产品级报表，以便更细致地了解每个产品内的活动。 请查看[报表概述主题](activity-reports.md)。 在 Microsoft Teams 用户活动报表中，可深入了解组织中的 Microsoft Teams 活动。
+Microsoft 365 **报表** 仪表板显示组织中产品的活动概述。 它让你能够深入研究各产品级报表，以便更细致地了解每个产品内的活动。 请查看[报表概述主题](activity-reports.md)。 在 Microsoft Teams 用户活动报表中，可深入了解组织中的 Microsoft Teams 活动。
   
 > [!NOTE]
-> 您必须是 Microsoft 365 或 Exchange、SharePoint、团队服务、团队通信或 Skype for Business 管理员中的全局管理员、全局读取器或报告阅读器才能查看报告。  
+> 你必须是 Microsoft 365 中的全局管理员、全局读者或报告读者，或者是 Exchange、SharePoint、Teams 服务、Teams 通信或 Skype for Business 管理员才能查看报告。  
  
 ## <a name="how-to-get-to-the-microsoft-teams-user-activity-report"></a>如何获取 Microsoft Teams 用户活动报表
 
 1. 在管理中心，转到“**报表**”\> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">使用情况</a>页面。
-2. 在仪表板主页中，单击 Microsoft 团队活动卡片上的 " **查看更多** " 按钮。
+2. 在仪表板主页上，单击 Microsoft  Teams 活动卡上的"查看更多"按钮。
 
 ## <a name="interpret-the-microsoft-teams-user-activity-report"></a>解读 Microsoft Teams 用户活动报表
 
-您可以通过选择 " **用户活动** " 选项卡来查看团队报告中的用户活动。 <br/>![Microsoft 365 报表-Microsoft 团队用户活动。](../../media/1011877f-3cf0-4417-9447-91d0b2312aab.png)
+可以通过选择"用户活动"选项卡在 Teams 报告中 **查看用户** 活动。 <br/>![Microsoft 365 报告 - Microsoft Teams 用户活动。](../../media/1011877f-3cf0-4417-9447-91d0b2312aab.png)
 
-选择 " **选择列** " 可在报告中添加或删除列。  <br/> ![Teams user activity report - choose columns](../../media/a1513028-cf09-4186-93a6-8a203cd22475.png)
+选择 **"选择列** "以在报表中添加或删除列。  <br/> ![Teams user activity report - choose columns](../../media/a1513028-cf09-4186-93a6-8a203cd22475.png)
 
-您还可以通过选择 " **导出** " 链接将报告数据导出到 Excel .csv 文件中。 此操作可导出所有用户的数据，使你能够对数据进行简单的排序和筛选，以进一步分析数据。 如果用户数量不足 2000，则可在报表中的表格内进行排序和筛选。 如果用户数超过 2000，则需要导出数据才能进行排序和筛选。 **音频时间**、**视频时间** 和 **屏幕共享时间** 的导出格式遵循 ISO8601 持续时间格式。
+您还可以通过选择"导出"链接将报告数据导出到 Excel .csv **文件中。** 此操作可导出所有用户的数据，使你能够对数据进行简单的排序和筛选，以进一步分析数据。 如果用户数量不足 2000，则可在报表中的表格内进行排序和筛选。 如果用户数超过 2000，则需要导出数据才能进行排序和筛选。 音频 **时间、视频** 时间和屏幕共享时间导出的格式 **遵循** ISO8601 持续时间格式。
 
-为了确保数据质量，我们在过去的三天中执行每日数据验证检查，并将填充检测到的任何缺口。 在此过程中，您可能会注意到历史数据的差异。
+可查看" **Microsoft Teams 用户活动**"报表，了解过去 7 天、30 天、90 天或 180 天的趋势。 但是，如果您选择报告中的特定日期，则表 (7) 将显示自当前日期起最多 28 天的数据 (而不是报告生成日期) 。
 
-|项目|说明|
+为了确保数据质量，我们将对过去三天执行每日数据有效性检查，并填补检测到的任何漏洞。 您可能会注意到过程中历史数据的差异。
+
+|Item|说明|
 |:-----|:-----|
 |**跃点数**|**定义**|
 |用户名  <br/> |用户的电子邮件地址。 可以显示实际的电子邮件地址或采用匿名字段。   <br/> |
-|通道邮件   <br/> |在指定时间段内用户在团队聊天中发布的唯一消息数。  <br/> |
-|聊天消息   <br/> |在指定时间段内，用户在私人聊天中发布的唯一邮件数。  <br/> |
-|会议总数   <br/> |用户在指定时间段内参与的联机会议的数量。  <br/> |
-|1:1 调用   <br/> | 用户在指定时间段内参与的1:1 呼叫数。  <br/> |
-| (UTC) 的上次活动日期  <br/> |用户参与 Microsoft 团队活动的最后日期。<br/> |
-|会议是临时参与的   <br/> | 在指定时间段内用户参与的日历上未计划的会议数。  <br/> |
-|以即席方式组织的会议 <br/> |在指定时间段内，用户组织的日历上未计划的会议数。 <br/>|
-|安排的会议  <br/> |用户在指定时间段内组织的已安排会议数。  <br/> |
-|已许可 |如果用户已被授权使用团队，则选择此选项。|
-|其他活动|用户处于活动状态，但执行了与报告中提供的操作类型的其他活动 (发送或回复频道消息和聊天消息、安排或参与1:1 呼叫和会议) 。 示例操作是在用户更改团队状态或团队状态邮件时或者打开频道消息 post 但不回复的情况。 |
+|频道消息   <br/> |用户指定时段内在团队聊天中发布的唯一消息数。  <br/> |
+|聊天消息   <br/> |用户在指定时段内在私人聊天中发布的唯一消息数。  <br/> |
+|会议总数   <br/> |用户指定时间段参与的在线会议的数量。  <br/> |
+|1：1 呼叫   <br/> | 用户在指定时间段参与的 1：1 呼叫数。  <br/> |
+|上次活动日期 (UTC)   <br/> |用户上次参与 Microsoft Teams 活动的日期。<br/> |
+|会议参加 adhoc   <br/> | 未在日历上安排的用户在指定时段内参与的会议数。  <br/> |
+|组织会议 <br/> |用户未在日历上安排的指定时间段内组织的会议数。 <br/>|
+|安排的会议  <br/> |用户在指定时间段组织的计划会议的数量。  <br/> |
+|已授权 |如果用户获得使用 Teams 的许可，则选中。|
+|其他活动|用户处于活动状态，但执行了除报告中提供的公开操作类型外的其他活动 (例如发送或回复频道消息和聊天消息、安排或参与 1：1 通话和会议) 。 示例操作包括用户更改 Teams 状态或 Teams 状态消息或打开频道消息帖子但不回复的情况。 |
 |||

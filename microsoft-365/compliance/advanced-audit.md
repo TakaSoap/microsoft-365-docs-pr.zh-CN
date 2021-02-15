@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 365 高级审核提供了新的审核功能，可帮助组织进行法庭与合规调查。
-ms.openlocfilehash: f265a30a3d43b592a7d297e2137fd6b9ff4acfb4
-ms.sourcegitcommit: 8e696c084d097520209c864140af11aa055b979e
+ms.openlocfilehash: 0ae67497829e69da92e9735cb68a84e75c517814
+ms.sourcegitcommit: 78f48304f990e969a052fe6536b2e8d6856e1086
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "50097148"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50242454"
 ---
 # <a name="advanced-audit-in-microsoft-365"></a>Microsoft 365 高级审核
 
@@ -107,7 +107,19 @@ Send 事件也是邮箱审核操作，当用户执行以下操作之一时将被
 
 ### <a name="searchqueryinitiatedexchange"></a>SearchQueryInitiatedExchange
 
-当用户在 Outlook 网页版 (OWA) 中使用搜索栏搜索邮箱中的项目时，会触发 SearchQueryInitiatedExchange 事件。 调查人员可使用 SearchQueryInitiatedExchange 事件来确定可能已泄露帐户的攻击者是否已查找或尝试访问邮箱中的敏感信息。 SearchQueryInitiatedExchange 事件的审核记录包含实际搜索查询文本等信息。 通过查看攻击者可能已执行的搜索查询，调查员可以更清晰地了解所搜索的电子邮件数据的意图。
+当用户使用Outlook搜索邮箱中的项目时，会触发SearchQueryInitiatedExchange事件。 当在以下Outlook环境中执行搜索时，将触发事件：
+
+- Outlook（桌面客户端）
+
+- Outlook 网页版（OWA）
+
+- Outlook for iOS
+
+- Outlook for Android
+
+- Windows 10的“邮件”应用
+
+调查人员可使用 SearchQueryInitiatedExchange 事件来确定可能已泄露帐户的攻击者是否已查找或尝试访问邮箱中的敏感信息。 SearchQueryInitiatedExchange 事件的审核记录包含实际搜索查询文本等信息。 审计记录也显示了搜索所处的Outlook环境。 通过查看攻击者可能已执行的搜索查询，调查员可以更清晰地了解所搜索的电子邮件数据的意图。
 
 若要搜索 SearchQueryInitiatedExchange 审核记录，可到合规中心，在 [审核日志搜索工具](search-the-audit-log-in-security-and-compliance.md)中的 **“搜索活动”** 下拉列表中，搜索 **“已执行的电子邮件搜索”** 活动。
 
@@ -122,7 +134,17 @@ Send 事件也是邮箱审核操作，当用户执行以下操作之一时将被
 
 ### <a name="searchqueryinitiatedsharepoint"></a>SearchQueryInitiatedSharePoint
 
-与搜索邮箱项目类似，当有人在组织中的 SharePoint 主页网站搜索项目时，会触发 SearchQueryInitiatedSharePoint 事件。 调查人员可使用 SearchQueryInitiatedSharePoint 事件来确定攻击者是否试图在 SharePoint 中查找（并有可能访问）敏感信息。 SearchQueryInitiatedSharePoint 事件的审核记录中还包含实际搜索查询文本。 通过查看攻击者可能已执行的搜索查询，调查员可以更清晰地了解所搜索的文件数据的意图和范围。
+与搜索邮箱项目类似，当有人在 SharePoint 中搜索项目时，会触发 SearchQueryInitiatedSharePoint 事件。 在以下类型的SharePoint站点中进行搜索时，将触发事件：
+
+- 首页
+
+- 通信网站
+
+- 中心网站
+
+- 与 Microsoft Teams 相关联的网站
+
+调查人员可使用 SearchQueryInitiatedSharePoint 事件来确定攻击者是否试图在 SharePoint 中查找（并有可能访问）敏感信息。 SearchQueryInitiatedSharePoint 事件的审核记录中还包含实际搜索查询文本。 审计记录还显示所搜索的SharePoint站点的类型。 通过查看攻击者可能已执行的搜索查询，调查员可以更清晰地了解所搜索的文件数据的意图和范围。
 
 若要搜索 SearchQueryInitiatedSharePoint 审核记录，可到合规中心，在 [审核日志搜索工具](search-the-audit-log-in-security-and-compliance.md)中的 **“搜索活动”** 下拉列表中，搜索 **“已执行的 SharePoint 搜索”** 活动。
 
