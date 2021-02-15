@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: 深入了解 Microsoft SharePoint Syntex 中的说明类型
-ms.openlocfilehash: 2c2997fd165339cc43f7f007050f343794021a23
-ms.sourcegitcommit: d354727303d9574991b5a0fd298d2c9414e19f6c
+ms.openlocfilehash: caba92b635feaf8f87e2c487559f70be3fab6df9
+ms.sourcegitcommit: 78f48304f990e969a052fe6536b2e8d6856e1086
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "50080546"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50242578"
 ---
 # <a name="introduction-to-explanation-types"></a>说明类型简介
 
@@ -147,43 +147,65 @@ Redmond, WA 98034<br>
    ![自定义范围](../media/content-understanding/custom-file.png)</br>
 在查看器中，可以手动调整选择框以包括出现短语的位置。 对于此设置，需要选择一个<b>开始</b>和<b>结束</b>位置。 这些值表示从文档开头开始的令牌数。 尽管可以手动输入这些值，但在查看器中手动调整选择框更容易。</br> 
    
-
-
 ## <a name="use-explanation-templates"></a>使用说明模板
 
-虽然可以手动为说明添加各种模式列表值，但使用说明库中提供的模板可能更容易。
+可手动添加各个短语列表值进行解释，但使用解释库中提供模板更为轻松。
 
-例如，可使用已包含多种模式列表值的“*日期*”模式列表模板，而不用手动添加“*日期*”的所有变体：</br>
+例如，可以使用 *Date* 的短语列表模板来手动添加 *Date* 的所有变体，因为它已包含许多短语列表值：</br>
 
    ![说明库](../media/content-understanding/explanation-template.png)</br>
  
-说明库包含常用的模式列表说明，包括：</br>
+解释库包含常用的短语列表说明，包括：</br>
 
 - 日期</br>
 - 日期（数值）</br>
 - 时间</br>
 - 号码</br>
+- 百分比</br>
 - 电话号码</br>
 - 邮政编码</br>
 - 一句话的第一个词</br>
+- 句末</br>
 - 信用卡</br>
 - 社会安全号码</br>
+- 复选框</br>
+- 货币</br>
+- 电子邮件抄送</br>
+- 电子邮件日期</br>
+- 电子邮件问候语</br>
+- 向电子邮件收件人发送电子邮件</br>
+- 电子邮件发件人</br>
+- 电子邮件主题</br>
 
-请注意，说明库还包含短语列表说明的模板：
-- 句末
-- 货币
+说明库还包含三种自动模板类型，用于处理示例文件中标记的数据：
 
+- 标记后：示例文件中标签后发生的字词或字符。</br>
+- 标签之前：示例文件中标签前发生的字词或字符。</br>
+- 标签：示例文件前 10 个标签。</br>
+
+为提供自动模板工作方式的示例，以下示例文件中将使用"之前的标签"说明模板，帮助为模型提供更多信息，以获得更准确的匹配。
+
+   ![示例文件](../media/content-understanding/before-label.png)</br>
+
+选择"标签之前"说明模板时，它将查找示例文件中标签前显示的第一组字词。 在示例中，第一个示例文件中标识的字词为"截至"。
+
+   ![标签模板之前](../media/content-understanding/before-label-explanation.png)</br>
+
+可选择" <b>添加</b> 模板创建解释。  添加更多示例文件时，将在短语列表中标识并添加其他字词。
+
+   ![添加标签](../media/content-understanding/before-label-add.png)</br>
+ 
 #### <a name="to-use-a-template-from-the-explanation-library"></a>若要使用说明库中的模板
 
 1. 从模型的“**培训**”页面的“**说明**”部分中，选择“**新建**”，然后选择“**通过模板**”。</br>
 
-   ![通过模板创建](../media/content-understanding/from-template.png)</br>
+   ![添加前标签](../media/content-understanding/from-template.png)</br>
 
 2.  在“**说明模板**”页面上，选择要使用的说明，然后选择“**添加**”。</br>
 
        ![选择模板](../media/content-understanding/phone-template.png)</br>
 
-3. 所选模板的信息显示在“**创建说明**”页面。 如有必要，编辑说明名称，然后在模式列表中添加或删除项目。 </br> 
+3. 所选模板的信息显示在“**创建说明**”页面。 如果需要，可编辑解释名称，并从短语列表中添加或删除项目。 </br> 
 
    ![编辑模板](../media/content-understanding/phone-template-live.png)</br>
 

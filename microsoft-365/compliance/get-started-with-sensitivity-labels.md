@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 已准备好实现敏感度标签以帮助保护组织的数据，但不确定从哪里开始？ 请阅读一些可帮助你使用标签的实用指导。
-ms.openlocfilehash: 04ac373250f13ece1a4e976891044a6584989f6d
-ms.sourcegitcommit: d739f48b991793c08522a3d5323beba27f0111b2
+ms.openlocfilehash: 03408a2f9e57421ea613bdb38e253401526f8f71
+ms.sourcegitcommit: 78f48304f990e969a052fe6536b2e8d6856e1086
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "50142035"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50242362"
 ---
 # <a name="get-started-with-sensitivity-labels"></a>开始使用敏感度标签
 
@@ -81,7 +81,7 @@ ms.locfileid: "50142035"
 
 |我想...|文档|
 |----------------|---------------|
-|管理 Office 应用的敏感度标签，以便在创建内容时对其进行标记 — 包括在所有平台上支持手动标记 |[在 Office 应用中使用敏感度标签](sensitivity-labels-office-apps.md)|
+|管理 Office 应用的敏感度标签，以便在创建内容时对其进行标记 — 包括在所有平台上支持手动标记 |[管理 Office 应用中的敏感度标签](sensitivity-labels-office-apps.md)|
 |使用户能够使用 Office 应用、文件资源管理器和 PowerShell 标记和保护 Windows 计算机中的文件|[适用于 Windows 的 Azure 信息保护的统一标记客户端](https://docs.microsoft.com/azure/information-protection/rms-client/aip-clientv2)|
 |使用敏感度标签加密文档和电子邮件，并限制谁可以访问该内容以及可以如何使用它 |[通过敏感度标签应用加密，从而限制对内容的访问](encryption-sensitivity-labels.md)|
 |在 Web 上为 Office 启用敏感度标签，支持协同创作、eDiscovery、数据丢失防护和搜索，即便是加密文档也可如此 | [启用 SharePoint 和 OneDrive 中 Office 文件的敏感度标签](sensitivity-labels-sharepoint-onedrive-files.md)

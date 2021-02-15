@@ -156,7 +156,7 @@
           href: sensitivity-labels-teams-groups-sites.md
         - name: 启用 SharePoint 和 OneDrive 中 Office 文件的敏感度标签
           href: sensitivity-labels-sharepoint-onedrive-files.md
-        - name: 在 Office 应用中使用敏感度标签
+        - name: 管理 Office 应用中的敏感度标签
           href: sensitivity-labels-office-apps.md
     - name: 加密
       items:

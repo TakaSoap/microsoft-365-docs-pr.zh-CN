@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: 获取 Microsoft SharePoint Syntex 中的文档理解概述。
-ms.openlocfilehash: c0396c8e702d3e32db93d26dba23ab038546bea0
-ms.sourcegitcommit: 162c01dfaa2fdb3225ce4c24964c1065ce22ed5d
+ms.openlocfilehash: d2bf581468eeee008d09a242876bed5ad07ae01f
+ms.sourcegitcommit: 78f48304f990e969a052fe6536b2e8d6856e1086
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2021
-ms.locfileid: "49976515"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50242406"
 ---
 # <a name="document-understanding-overview"></a>文档理解概述
 
@@ -46,10 +46,45 @@ ms.locfileid: "49976515"
 
 可使用示例文件在模型中培训并测试分类器和提取器。 示例文件提供了有关尝试从文件识别和提取数据时要查找的内容的模型示例。 例如，你将使用公司使用的合同续订文档的示例来训练你的合同续订分类和提取器。 还可以使用示例文件来测试模型的有效性。
 
-> [!NOTE]
-> 如果您使用光学字符识别（OCR）技术扫描文档，则Syntex的模型训练限制为15页。
-
 发布模型后，请使用内容中心将其应用到你有权访问的任何 SharePoint 文档库。  
+
+### <a name="file-limitations"></a>文件限制
+
+了解模型时，在通过光学字符识别 （OCR） 技术扫描 PDF、图像和 TIFF 文件时，包括当使用示例文件对模型进行训练时，以及针对文档库中的文件运行模型时。
+
+请注意以下差异，与 Microsoft Office 基于文本的文件和 OCR 扫描文件（PDF、图像或 TIFF）有关：
+
+- Office 文件：我们截断 64，000 个字符（在培训中，当对文档库中的文件运行时）。
+- OCR 扫描的文件：存在 20 个页面限制。  
+
+#### <a name="supported-file-types"></a>支持的文件类型
+
+了解文档模型支持以下文件类型：
+
+- doc
+- docx
+- eml
+- Heic
+- Heif
+- htm
+- html
+- jpeg
+- jpg
+- markdown
+- md
+- msg
+- pdf
+- png
+- ppt
+- pptx
+- rtf
+- tif
+- tiff
+- txt
+- xls
+- xlsx
+
+
 
 ## <a name="see-also"></a>另请参阅
 [创建分类器](create-a-classifier.md)
@@ -65,3 +100,5 @@ ms.locfileid: "49976515"
 [文档理解与表单处理模型之间的差异](difference-between-document-understanding-and-form-processing-model.md)
   
 [表单处理概述](form-processing-overview.md)
+
+[SharePoint 整合辅助功能模式](accessibility-mode.md)

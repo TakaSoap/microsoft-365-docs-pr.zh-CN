@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: 了解如何创建分类器
-ms.openlocfilehash: 9f2cfe65140aa3f8d4c1c4ff5b8f2e3b9e8591f6
-ms.sourcegitcommit: 162c01dfaa2fdb3225ce4c24964c1065ce22ed5d
+ms.openlocfilehash: bff23807fce18bf4a585dbb1ec47c1502ab686f6
+ms.sourcegitcommit: 78f48304f990e969a052fe6536b2e8d6856e1086
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2021
-ms.locfileid: "49975905"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50242684"
 ---
 # <a name="create-a-classifier-in-microsoft-sharepoint-syntex"></a>在 Microsoft SharePoint Syntex 中创建分类器
 
@@ -148,3 +148,5 @@ ms.locfileid: "49975905"
 [说明类型](explanation-types-overview.md)
 
 [应用模型](apply-a-model.md) 
+
+[SharePoint 整合辅助功能模式](accessibility-mode.md)

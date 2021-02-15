@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: 了解如何查找 Microsoft SharePoint Syntex 资源。
-ms.openlocfilehash: 02f3da4e03d13b0710590336e49292ac6df70560
-ms.sourcegitcommit: 1b30ac6e05906c8a014b1fed33fc71e1821f6ad2
+ms.openlocfilehash: 21dc0e29e9322b4c009b0f1e63b7bfbc4b92da9a
+ms.sourcegitcommit: 78f48304f990e969a052fe6536b2e8d6856e1086
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2021
-ms.locfileid: "50044752"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50242696"
 ---
 # <a name="introduction-to-microsoft-sharepoint-syntex"></a>Microsoft SharePoint Syntex 简介
 
@@ -45,8 +45,8 @@ Microsoft SharePoint Syntex 是一项 Office 365 服务，有助于组织：
 |了解有关文档理解的详细信息|[文档理解概述](https://docs.microsoft.com/microsoft-365/contentunderstanding/document-understanding-overview)|
 |了解有关表单处理的详细信息|[表单处理概述](https://docs.microsoft.com/microsoft-365/contentunderstanding/form-processing-overview)|
 |了解两种方法之间的差异|[文档理解与表单处理模型之间的差异](https://docs.microsoft.com/microsoft-365/contentunderstanding/difference-between-document-understanding-and-form-processing-model)|
-|查看 Microsoft 技术社区资源中心中的资源|[ SharePoint Syntex - Microsoft 365 中的内容服务](https://resources.techcommunity.microsoft.com/sharepoint-syntex/)|
-|有关 Microsoft 技术社区资源中心的 SharePoint Syntex 常见问题解答 |[SharePoint Syntex - 常见问题解答](https://resources.techcommunity.microsoft.com/project-cortex-microsoft-365/faq/)|
+|查看 Microsoft 技术社区资源中心中的资源|[ SharePoint Syntex - Microsoft 365 中的内容服务](https://techcommunity.microsoft.com/t5/sharepoint-syntex/bg-p/SharePointSyntex)|
+|有关 Microsoft 技术社区资源中心的 SharePoint Syntex 常见问题解答 |[SharePoint Syntex - 常见问题解答](https://resources.techcommunity.microsoft.com/sharepoint-syntex/faq/)|
 |如何获取 SharePoint Syntex |[SharePoint Syntex 产品页面](https://www.microsoft.com/microsoft-365/enterprise/sharepoint-syntex)|
 
 ## <a name="adoption"></a>采用
@@ -76,6 +76,7 @@ Microsoft SharePoint Syntex 是一项 Office 365 服务，有助于组织：
 |将保留标签应用于模型|[将保留标签应用于文档理解模型](https://docs.microsoft.com/microsoft-365/contentunderstanding/apply-a-retention-label-to-a-model)|
 |创建提取程序时使用托管元数据服务术语库分类|[创建提取程序时利用术语库分类](https://docs.microsoft.com/microsoft-365/contentunderstanding/leverage-term-store-taxonomy)|
 |了解如何查看有关模型的数据|[模型使用情况分析](https://docs.microsoft.com/microsoft-365/contentunderstanding/model-usage-analytics)|
+|了解如何在培训模型时使用辅助功能模式|[SharePoint 整合辅助功能模式](https://docs.microsoft.com/microsoft-365/contentunderstanding/accessibility-mode)|
 
 ## <a name="premium-services"></a>高级服务
 
