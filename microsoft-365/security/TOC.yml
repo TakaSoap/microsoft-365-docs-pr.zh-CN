@@ -648,7 +648,7 @@
               href: ./office-365-security/set-up-anti-phishing-policies.md
             - name: EOP 中的退信式垃圾邮件
               href: ./office-365-security/backscatter-messages-and-eop.md
-            - name: 批量投诉级别 (SCL)
+            - name: 批量投诉级别(BCL)
               href: ./office-365-security/bulk-complaint-level-values.md
             - name: 最终用户垃圾邮件通知
               href: ./office-365-security/use-spam-notifications-to-release-and-report-quarantined-messages.md
