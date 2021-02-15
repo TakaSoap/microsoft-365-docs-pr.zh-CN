@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 已准备好实现敏感度标签以帮助保护组织的数据，但不确定从哪里开始？ 请阅读一些可帮助你使用标签的实用指导。
-ms.openlocfilehash: b2a16da1d4a7b9b35d519d544eba951765122596
-ms.sourcegitcommit: 8d28bce1a3445878b066864e766cf52cb83becd1
+ms.openlocfilehash: 04ac373250f13ece1a4e976891044a6584989f6d
+ms.sourcegitcommit: d739f48b991793c08522a3d5323beba27f0111b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "50071297"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "50142035"
 ---
 # <a name="get-started-with-sensitivity-labels"></a>开始使用敏感度标签
 
@@ -98,7 +98,9 @@ ms.locfileid: "50071297"
 
 ## <a name="end-user-documentation-for-sensitivity-labels"></a>敏感度标签的最终用户文档
 
-最有效的最终用户文档将用作你为所选标签名称和配置提供的定制指南和说明。 请参阅以下博客文章，获取可用于培训用户和提高采用率的下载软件包：[最终用户培训：M365 中的敏感度标签 – 如何提高采纳速度](https://techcommunity.microsoft.com/t5/microsoft-security-and/end-user-training-for-sensitivity-labels-in-m365-how-to/ba-p/1750880)。 
+最有效的最终用户文档将用作你为所选标签名称和配置提供的定制指南和说明。 对于内置标签，可使用标签策略设置 **为用户提供指向自定义帮助页面的链接**，以指定本文档的内部链接。 然后，用户可以通过从Word、PowerPoint、Excel和Outlook的Office功能区的 **灵敏度** 按钮中选择 **学习更多** 来轻松访问它。
+
+为了帮助编写自定义文档，请参见以下博客文章，以获取可用于培训用户和推动采用率的下载软件包： [M365中灵敏度标签的最终用户培训 – 如何加速采用](https://techcommunity.microsoft.com/t5/microsoft-security-and/end-user-training-for-sensitivity-labels-in-m365-how-to/ba-p/1750880)。 
 
 此外，还可使用以下资源来获取基本说明：
 
