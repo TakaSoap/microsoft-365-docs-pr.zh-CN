@@ -275,6 +275,8 @@
                   href: mtp/device-profile.md
                 - name: 提供反馈
                   href: mtp/feedback.md
+                - name: 提供托管服务提供商 （MSSP） 访问权限
+                  href: mtp/mssp-access.md
                 - name: 创建 ServiceNow 票证和任务
                   items:
                     - name: ServiceNow 集成概述
