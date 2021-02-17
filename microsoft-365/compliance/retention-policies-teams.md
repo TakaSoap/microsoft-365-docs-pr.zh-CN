@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解适用于 Microsoft Teams 的保留策略。
-ms.openlocfilehash: 2541519ad9082383c5381452722d023f23760798
-ms.sourcegitcommit: 78f48304f990e969a052fe6536b2e8d6856e1086
+ms.openlocfilehash: b3b0451f2f1b0950f2b2ee723025a796f1814038
+ms.sourcegitcommit: a9ac702c9efc9defded3bfa65618b94bac00c237
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50242708"
+ms.lasthandoff: 02/16/2021
+ms.locfileid: "50261499"
 ---
 # <a name="learn-about-retention-for-microsoft-teams"></a>了解用于 Microsoft Teams 的保留
 
@@ -55,7 +55,6 @@ ms.locfileid: "50242708"
 
 - **UserMailbox**：这些邮箱为拥有 Exchange Online 邮箱的 Teams 用户存储邮件。
 - **MailUser**：这些邮箱为拥有预置 Exchange 服务器邮箱而非 Exchange Online 邮箱的 Teams 用户存储邮件。
-- **用户**：这些邮箱为没有 Exchange Online 或内部部署 Exchange 服务器邮箱的 Teams 用户存储邮件。
 - **组邮件**：这些邮箱为 Teams 频道存储信息。
 
 其他邮箱类型，如用于Teams会议室的RoomMailbox，不支持Teams的保留策略。
