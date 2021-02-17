@@ -1,5 +1,5 @@
 ---
-title: 在 Office 应用中管理敏感度标签
+title: 管理 Office 应用中的敏感度标签
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -16,14 +16,14 @@ search.appverid:
 - MET150
 description: IT 管理员在 Office 桌面、移动和 Web 应用中管理敏感度标签的信息。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 3f2be9310e6230bf0530670796dea56f775f365d
-ms.sourcegitcommit: 78f48304f990e969a052fe6536b2e8d6856e1086
+ms.openlocfilehash: 959fb0371ab50d4132cacbae38d979a9a75d2aab
+ms.sourcegitcommit: a9ac702c9efc9defded3bfa65618b94bac00c237
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50242662"
+ms.lasthandoff: 02/16/2021
+ms.locfileid: "50261353"
 ---
-# <a name="manage-sensitivity-labels-in-office-apps"></a>在 Office 应用中管理敏感度标签
+# <a name="manage-sensitivity-labels-in-office-apps"></a>管理 Office 应用中的敏感度标签
 
 >*[Microsoft 365 安全性与合规性许可指南](https://aka.ms/ComplianceSD)。*
 
@@ -235,7 +235,7 @@ Azure 信息保护统一标签客户端支持 Open XML 格式和 Microsoft Offic
 
 如果你的组织已实施 [Azure Active Directory 条件访问策略](https://docs.microsoft.com/azure/active-directory/conditional-access/overview)，请检查这些策略的配置。 如果策略包括 Azure 信息保护，并且该策略扩展到外部用户，则这些外部用户必须在租户中拥有来宾帐户，即使他们在其自己的租户中拥有 Azure AD 帐户。
 
-如果没有此来宾帐户，他们无法打开加密文档并看到错误消息。 消息文本可能会通知他们，需要将其帐户添加为租户中的外部用户，但说明不正确，请注销，然后使用不同的 **Azure Active Directory 用户帐户重新登录**。
+如果没有此来宾帐户，他们无法打开加密文档并看到错误消息。 消息文本可能会通知他们，需要将其帐户添加为租户中的外部用户，并指示此方案注销，然后使用其他 **Azure Active Directory** 用户帐户重新登录。
 
 如果无法为需要打开标签加密的文档的外部用户创建和配置租户中的来宾帐户，则必须从条件访问策略中删除 Azure 信息保护，或者从策略中排除外部用户。
 

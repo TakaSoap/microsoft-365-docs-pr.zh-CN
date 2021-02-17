@@ -1,5 +1,5 @@
 ---
-title: 与组织外部的人员进行协作
+title: 与组织外部人员进行协作
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
@@ -17,48 +17,48 @@ ms.custom:
 - seo-marvel-jun2020
 localization_priority: Normal
 f1.keywords: NOCSH
-description: 了解如何配置 Microsoft 365 应用程序（如团队、OneDrive 和 SharePoint）与组织外部的人员进行协作。
-ms.openlocfilehash: 374ad8f5ec37fc0900fb38cb4e0f4743a02c4da4
-ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
+description: 了解如何配置 Microsoft 365 应用（如 Teams、OneDrive 和 SharePoint）以与组织外部人员协作。
+ms.openlocfilehash: 7b8e5e30d8222d055fc5f64472c4083db614d4bd
+ms.sourcegitcommit: a9ac702c9efc9defded3bfa65618b94bac00c237
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49613450"
+ms.lasthandoff: 02/16/2021
+ms.locfileid: "50261509"
 ---
-# <a name="collaborating-with-people-outside-your-organization"></a>与组织外部的人员进行协作
+# <a name="collaborating-with-people-outside-your-organization"></a>与组织外部人员进行协作
 
-Microsoft 365 中的外部共享功能为组织中的人员与合作伙伴、供应商、客户和其他在你的目录中没有帐户的人进行协作提供了机会。 您可以与组织外部的人员或仅与单个文件共享整个团队或网站。
+Microsoft 365 中的外部共享功能为组织内部人员提供了一个与目录中没有帐户的合作伙伴、供应商、客户和其他人员进行协作的机会。 你可以与组织外部人员共享整个团队或网站，或仅与单个文件共享。
 
-与组织外部的人员进行协作包含以下两个主要组件：
+与组织外部人员协作由两个主要部分组成：
 
-- **启用共享** -在 Azure Active Directory、团队、Microsoft 365 组和 SharePoint 之间共享共享控件，以允许您的组织所需的共享级别。
-- **启用其他安全性** -尽管可以将基本共享功能配置为要求组织外部的人员进行身份验证，但 Microsoft 365 提供了许多额外的安全性和合规性功能，可帮助您在外部共享时保护数据并维护您的管理策略。
+- **启用共享** - 配置 Azure Active Directory、Teams、Microsoft 365 组和 SharePoint 中的共享控件，以允许组织进行想要共享的级别。
+- 启用 **其他** 安全性 - 虽然基本共享功能可以配置为要求组织外部人员进行身份验证，但 Microsoft 365 提供了许多其他安全性和合规性功能，以帮助您在外部共享时保护数据和维护管理策略。
 
 ## <a name="enable-sharing"></a>启用共享
 
-默认情况下，在 Microsoft 365 中，与组织外部的人员共享启用 SharePoint 和 OneDrive，但对团队禁用。 许多 SharePoint 和 OneDrive 外部共享方案的工作方式不需要进一步配置。 若要确认您正在使用的方案的设置，或启用新的设置，请从以下选项中进行选择：
+默认情况下，在 Microsoft 365 中，启用与组织外部人员共享。 许多外部共享方案无需进一步配置即可工作。 若要确认你使用的方案的设置，或启用一个新方案，请从以下选项中进行选择：
 
-- [对文档进行协作](collaborate-on-documents.md) -了解如何配置 Microsoft 365 以允许与组织外部的人员共享和协作 (文件和文件夹上的来宾和未经身份验证的用户) 。
-- [在网站中进行协作](collaborate-in-site.md) -了解如何配置 Microsoft 365 以启用与来宾共享 SharePoint 网站。
-- [作为团队协作](collaborate-as-team.md) -了解如何配置 Microsoft 365 以在团队中启用来宾协作。
+- 协作处理[文档](collaborate-on-documents.md)- 了解如何配置 Microsoft 365，以允许与组织外部的用户共享和协作 (来宾和未经身份验证的用户) 文件和文件夹。
+- [在网站中协作](collaborate-in-site.md) - 了解如何配置 Microsoft 365 以启用与来宾共享 SharePoint 网站。
+- [团队协作](collaborate-as-team.md) - 了解如何配置 Microsoft 365 以在 Teams 中启用来宾协作。
 
-有关跨 Microsoft 365 提供的来宾共享设置的全面查看，请参阅 [microsoft 365 来宾共享设置参考](microsoft-365-guest-settings.md)。
+有关 Microsoft 365 中可用的来宾共享设置的全面了解，请参阅 [Microsoft 365 来宾共享设置参考](microsoft-365-guest-settings.md)。
 
 ## <a name="enable-additional-security"></a>启用其他安全性
 
-启用了要用于与组织外部的人员共享的方案后，请考虑其他保护措施，以防止无意或有意的不恰当的共享中保护您的内容。
+启用要用于与组织外部人员共享的方案后，请考虑其他安全措施，以帮助防止意外或有意不当共享内容。
 
-- [使用未经身份验证的用户共享文件和文件夹的最佳做法](best-practices-anonymous-sharing.md) -了解与未经身份验证的用户共享的最佳实践。
-- [限制意外曝光](share-limit-accidental-exposure.md) -了解如何减少与组织外部人员意外共享敏感内容的可能性。
-- [创建安全来宾共享环境](create-secure-guest-sharing-environment.md) -了解 Microsoft 365 中提供的工具，以帮助确保与组织外部的人员共享以安全且安全的方式完成，并满足您的治理要求。
+- [与未经身份验证的用户](best-practices-anonymous-sharing.md) 共享文件和文件夹的最佳实践 - 了解与未经身份验证的用户共享的最佳方案。
+- [限制意外](share-limit-accidental-exposure.md) 曝光 - 了解如何减少意外与组织外部人员共享敏感内容的可能性。
+- [创建安全的来宾](create-secure-guest-sharing-environment.md) 共享环境 - 了解 Microsoft 365 中提供的工具，以帮助确保以安全的方式与组织外部人员共享，并满足管理要求。
 
 ## <a name="collaborate-with-partner-companies"></a>与合作伙伴公司协作
 
-当您在大型项目中工作时，如果有来自其他组织的多个来宾，或者如果来宾经常在其中进行更改，则可以使用 Azure Active Directory 中的权限管理简化来宾管理，并允许合作伙伴公司在此职责中进行共享。 有关详细信息，请参阅 [Create a B2B extranet with 托管来宾](b2b-extranet.md) 。
+当你处理涉及来自另一个组织的许多来宾的大型项目时，或者如果你具有经常更改来宾的供应商关系，可以在 Azure Active Directory 中使用权利管理来简化来宾管理并允许合作伙伴公司共同承担该责任。 有关详细信息[，请参阅创建包含托管来宾的 B2B Extranet。](b2b-extranet.md)
 
 ## <a name="limit-sharing"></a>限制共享
 
-如果 Microsoft 365 中的某些共享功能与您的治理策略冲突，请参阅 [在 microsoft 365 中限制共享](microsoft-365-limit-sharing.md) 以了解用于限制共享的选项。
+如果 Microsoft 365 中的某些共享功能与管理策略冲突，请参阅 [Microsoft 365](microsoft-365-limit-sharing.md) 中的"限制共享"以了解限制共享的选项。
 
 ## <a name="related-topics"></a>相关主题
 

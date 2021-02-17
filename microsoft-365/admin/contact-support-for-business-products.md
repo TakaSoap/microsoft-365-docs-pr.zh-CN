@@ -22,19 +22,19 @@ search.appverid:
 description: 通过使用针对你所在国家或地区列出的电话号码或在线提交服务请求获取技术和帐单支持。
 feedback_system: None
 ms.date: 7/28/2020
-ms.openlocfilehash: 06f78d50901f279bf27f55f1b8f7ad867682d784
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 7679539e64588827b6dcc20f6f98bc67e613aae6
+ms.sourcegitcommit: a9ac702c9efc9defded3bfa65618b94bac00c237
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49925574"
+ms.lasthandoff: 02/16/2021
+ms.locfileid: "50261331"
 ---
 # <a name="ways-to-contact-support-for-business-products---admin-help"></a>联系商业版产品支持人员的方式 - 管理员帮助
 
 ::: moniker range="o365-worldwide"
 
 > [!IMPORTANT]
-> 必须是业务订阅的管理员才能使用这些支持方法。 如果你不是企业管理员，请使用[此支持页面](https://support.microsoft.com/help/contactus)。
+> 必须是业务订阅的管理员才能使用这些支持方法。 如果你不是企业管理员，请使用[此支持页面](https://support.microsoft.com/contactus)。
 
 首先，[查看服务的当前运行状况](https://docs.microsoft.com/microsoft-365/enterprise/view-service-health)。 可在<a href="https://go.microsoft.com/fwlink/p/?linkid=842900" target="_blank">“服务运行状况”仪表板</a>上查看关于当前和过去问题的详细信息。 如果你遇到的问题未列出，可通过以下其中一种方式获取支持：
 
