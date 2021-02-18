@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 创建保留标签和自动标记策略，以便你可以自动应用标签以保留需要的内容并删除不需要的内容
-ms.openlocfilehash: 2b06188a5990c7de81fca0afd21f05ef346807ba
-ms.sourcegitcommit: 222fb7fe2b26dde3d8591b61cc02113d6135012c
+ms.openlocfilehash: 69bada084aa3817b49b75d970a1a8d304f6853e6
+ms.sourcegitcommit: a9ac702c9efc9defded3bfa65618b94bac00c237
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "49759962"
+ms.lasthandoff: 02/16/2021
+ms.locfileid: "50261343"
 ---
 # <a name="automatically-apply-a-retention-label-to-retain-or-delete-content"></a>自动应用保留标签来保留或删除内容
 
@@ -128,6 +128,9 @@ ms.locfileid: "49759962"
 - [可训练分类器的匹配项](#auto-apply-labels-to-content-by-using-trainable-classifiers)
 
 #### <a name="auto-apply-labels-to-content-with-specific-types-of-sensitive-information"></a>将标签自动应用于包含特定类型敏感信息的内容
+
+> [!WARNING]
+> 该配置当前存在一个已知限制，即选定的敏感信息类型有匹配时，所有未标记的电子邮件始终应用所选的保留标签。 例如，即使将自动应用策略的范围限定于特定用户，或者为该策略选择了 Exchange 以外的位置，如果匹配，标签始终会应用于未标记的电子邮件。
 
 为敏感信息创建自动应用保留标签策略时，可看到与创建数据丢失防护 (DLP) 策略时相同的策略模板列表。 每个策略模板都是预配置的，用于查找特定类型的敏感信息。 例如，此处显示的模板查找来自 **隐私** 类别的美国 ITIN、SSN 和护照号码，以及 **美国个人身份信息 (PII) 数据** 模板：
 
