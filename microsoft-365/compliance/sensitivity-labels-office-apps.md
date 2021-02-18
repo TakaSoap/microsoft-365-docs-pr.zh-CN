@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: IT 管理员在 Office 桌面、移动和 Web 应用中管理敏感度标签的信息。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 959fb0371ab50d4132cacbae38d979a9a75d2aab
-ms.sourcegitcommit: a9ac702c9efc9defded3bfa65618b94bac00c237
+ms.openlocfilehash: 8d7fd75aaa1b6f54222252c3e8379aaed2c4c223
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/16/2021
-ms.locfileid: "50261353"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50290807"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>管理 Office 应用中的敏感度标签
 
@@ -126,7 +126,7 @@ Office 内置标签客户端从以下管理中心下载敏感度标签和敏感�
 
 ## <a name="office-file-types-supported"></a>支持的 Office 文件类型
 
-具有 Word、Excel 和 PowerPoint 文件的内置标签的 Office 应用支持 Open XML 格式 (，如 .docx 和 .xlsx) ，但不支持 Microsoft Office 97-2003 格式 (如 .doc 和 .xls) 。 当内置标签不支持文件类型时，"敏感度"按钮在 Office应用中不可用。
+具有 Word、Excel 和 PowerPoint 文件的内置标签的 Office 应用程序支持 Open XML 格式 (，如 .docx 和 .xlsx) ，但不支持 Microsoft Office 97-2003 格式 (如 .doc 和 .xls) 、Open 文档格式 (（如 .odt 和 .ods) ）或其他格式。 当内置标签不支持文件类型时，"敏感度"按钮在 Office应用中不可用。
 
 Azure 信息保护统一标签客户端支持 Open XML 格式和 Microsoft Office 97-2003 格式。 有关详细信息，请参阅该客户端的管理员指南 [中 Azure 信息保护统一标签](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide-file-types) 客户端支持的文件类型。
 
@@ -219,12 +219,12 @@ Azure 信息保护统一标签客户端支持 Open XML 格式和 Microsoft Offic
     
     此选项的优点是管理开销最小，因为帐户是自动创建的，并且标签配置更简单。 对于此方案，你必须选择加密选项 ["](encryption-sensitivity-labels.md#requirements-and-limitations-for-add-any-authenticated-users) 添加任何经过身份验证的用户"，因为您事先不知道电子邮件地址。 缺点是此设置不允许将访问权限和使用权限限制为特定用户。
 
-外部用户在 Windows 上使用 Microsoft 365 应用版 (以前是 Office [365](https://docs.microsoft.com/deployoffice/name-change) 应用) ，并且新在 macOS (版本 16.42+) 、Android (版本 16.0.13029+) 和 iOS (版本 2.42+) 上支持时，也可以将 Microsoft 帐户用于加密文档。 例如，有人与用户共享加密文档，加密设置指定其 Gmail 电子邮件地址。 此用户可以创建自己的使用其 Gmail 电子邮件地址的 Microsoft 帐户。 然后，在通过此帐户登录后，他们可根据为该用户指定的使用限制打开和编辑文档。 有关此方案的演练示例，请参阅打开 [和编辑受保护的文档](https://docs.microsoft.com/azure/information-protection/secure-collaboration-documents#opening-and-editing-the-protected-document)。
+外部用户在使用 Windows 和 Microsoft 365 应用版 (以前是 [Office 365](https://docs.microsoft.com/deployoffice/name-change) 应用版或独立版 Office 2019) 时，还可使用 Microsoft 帐户打开加密文档。 最近受其他平台支持，Microsoft 帐户还支持在 macOS (Microsoft 365 应用版、版本 16.42+) 、Android (版本 16.0.13029+) 和 iOS (版本 2.42+) 上打开加密文档。 例如，您组织的用户与组织外部的用户共享加密文档，并且加密设置为外部用户指定 Gmail 电子邮件地址。 此外部用户可以创建自己的使用其 Gmail 电子邮件地址的 Microsoft 帐户。 然后，在通过此帐户登录后，他们可以打开文档，然后根据为文档指定的使用限制对其进行编辑。 有关此方案的演练示例，请参阅打开 [和编辑受保护的文档](https://docs.microsoft.com/azure/information-protection/secure-collaboration-documents#opening-and-editing-the-protected-document)。
 
 > [!NOTE]
 > Microsoft 帐户的电子邮件地址必须与为限制加密设置的访问而指定的电子邮件地址相匹配。
 
-当具有 Microsoft 帐户的用户通过此方式打开加密文档时，如果不存在同名来宾帐户，则会自动为租户创建来宾帐户。 当来宾帐户存在时，除了从 Windows 桌面应用程序打开加密文档之外，它还可用于使用浏览器 (Office 网页版) 在 SharePoint 和 OneDrive 中打开文档。 
+当具有 Microsoft 帐户的用户通过此方式打开加密文档时，如果不存在同名来宾帐户，则会自动为租户创建来宾帐户。 当来宾帐户存在时，除了从受支持的桌面和移动 Office 应用打开加密文档之外，它还可用于使用 Office 网页版在 SharePoint 和 OneDrive 中打开文档。
 
 但是，由于复制延迟，在此方案中不会立即创建自动来宾帐户。 如果你将个人电子邮件地址指定为标签加密设置的一部分，我们建议你在 Azure Active Directory 中创建相应的来宾帐户。 然后让这些用户知道，他们必须使用此帐户从组织打开加密文档。
 

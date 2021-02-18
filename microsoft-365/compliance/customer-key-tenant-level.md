@@ -3,7 +3,7 @@ title: 租户级 Microsoft 365 客户密钥（公共预览版）
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 12/17/2020
+ms.date: 2/17/2021
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -15,12 +15,12 @@ ms.collection:
 - m365solution-mip
 - m365initiative-compliance
 description: 了解如何为 Microsoft 365 租户内的所有数据设置客户密钥。
-ms.openlocfilehash: 682eed7eb2e80535af1acf68808c708e1a25d80f
-ms.sourcegitcommit: 78f48304f990e969a052fe6536b2e8d6856e1086
+ms.openlocfilehash: 60704f77e17222de790cb397653a2275144d770e
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50242372"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50288143"
 ---
 # <a name="overview-of-customer-key-for-microsoft-365-at-the-tenant-level-public-preview"></a>租户级别的 Microsoft 365 客户密钥 (公共预览版) 
 
@@ -313,7 +313,7 @@ New-M365DataAtRestEncryptionPolicy -Name "Default_Policy" -AzureKeyIDs "https://
 参数：
 
 | 名称 | 说明 | 可选 (Y/N)  |
-|--|--|--|
+|----------|----------|---------|
 |名称|数据加密策略的友好名称|网络|
 |AzureKeyIDs|指定 Azure 密钥保管库密钥的两个 URI 值（用逗号分隔）以与数据加密策略关联|网络|
 |说明|数据加密策略的说明|网络|
@@ -334,7 +334,7 @@ Set-M365DataAtRestEncryptionPolicyAssignment -Policy “Tenant default policy”
 
 参数：
 | 名称 | 说明 | 可选 (Y/N)  |
-|--|--|--|
+|----------|----------|---------|
 -Policy|指定需要分配的数据加密策略;指定策略名称或策略 ID。|网络|
 
 ### <a name="modify-or-refresh-policy"></a>修改或刷新策略
@@ -361,12 +361,12 @@ Set-M365DataAtRestEncryptionPolicy -Identity “EUR Policy” -Refresh
 
 参数：
 | 名称 | 说明 | 可选 (Y/N)  |
-|--|--|--|
+|----------|----------|---------|
 |-Identity|指定要修改的数据加密策略。|网络|
 |-Refresh|旋转 Azure 密钥保管库中的任何关联密钥后，使用 Refresh 开关更新数据加密策略。 不必为此开关指定值。|Y|
 |- 已启用|Enabled 参数启用或禁用数据加密策略。 在禁用策略之前，必须从租户取消分配它。 有效值为：</br > $true：策略已启用</br > $true：启用此策略。此为默认值。
 |Y|
-|-名称|Name 参数指定数据加密策略的唯一名称。|Y
+|-Name|Name 参数指定数据加密策略的唯一名称。|Y
 |-Description|Description 参数指定数据加密策略的可选说明。|Y|
 
 ### <a name="get-policy-details"></a>获取策略详细信息
@@ -394,7 +394,7 @@ Get-M365DataAtRestEncryptionPolicy -Identity "NAM Policy"
 参数：
 
 | 名称 | 说明 | 可选 (Y/N)  |
-|--|--|--|
+|----------|----------|---------|
 |-Identity|指定要列出其详细信息的数据加密策略。|Y|
 
 ### <a name="get-policy-assignment-info"></a>获取策略分配信息
