@@ -19,12 +19,12 @@ ms.assetid: c2112ce8-1c4b-424f-b200-59e161db2d21
 description: 摘要：在政治宣传活动开发/测试环境中创建公共、专用、敏感和高度机密的 SharePoint Online 团队网站。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1f3488b479b4d37b7e38e4ced0d612e8fb5ae8a0
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: 1c12970fb3ff6d5616201ff153085d411068d11c
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50165471"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50288391"
 ---
 # <a name="create-team-sites-in-a-political-campaign-devtest-environment"></a>在政治宣传活动开发/测试环境中创建团队网站
 
@@ -32,7 +32,7 @@ ms.locfileid: "50165471"
 
 **适用对象**
 
-- [适用于 Office 365 计划 2 的 Microsoft Defender](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [适用于 Office 365 计划 2 的 Microsoft Defender](office-365-atp.md)
 - 
  **摘要：** 在政治宣传活动开发/测试环境中创建公共、专用、敏感和高度机密的 SharePoint Online 团队网站。 
    
@@ -424,6 +424,6 @@ ms.locfileid: "50165471"
 
 [为政治宣传活动开发/测试环境配置组和用户](configure-groups-and-users-for-a-political-campaign-dev-test-environment.md)
 
-[云采用测试实验室指南 (TLG)](https://docs.microsoft.com/microsoft-365/enterprise/cloud-adoption-test-lab-guides-tlgs)
+[云采用测试实验室指南 (TLG)](../../enterprise/cloud-adoption-test-lab-guides-tlgs.md)
 
-[云应用和混合解决方案](https://docs.microsoft.com/office365/enterprise/cloud-adoption-and-hybrid-solutions)
+[Microsoft 365 解决方案和体系结构中心](../../solutions/index.yml)

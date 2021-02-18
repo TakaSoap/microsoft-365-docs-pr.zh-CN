@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: 871a246d-3acd-4bba-948e-5de8be0544c9
 description: 创建共享邮箱，让企业中的多名人员分担查看和答复发送到同一地址的电子邮件的责任。
-ms.openlocfilehash: d0bd5770f347766638af0f0e66b9f961b3721697
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: d71e33aa0a04bd52f707038ac31e98bef68f27b0
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49926590"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50287229"
 ---
 # <a name="create-a-shared-mailbox"></a>创建共享邮箱 
 
@@ -81,6 +81,30 @@ ms.locfileid: "49926590"
 7. 选择“**关闭**”。
 
 你有一个共享邮箱，而且它包含一个共享日历。 现转到下一步：阻止登录共享邮箱帐户。
+
+## <a name="which-permissions-should-you-use"></a>您应使用哪些权限？
+
+对于共享邮箱，可以使用以下权限：
+
+- **完全访问权限**： 完全访问权限允许用户登录共享邮箱并作为该邮箱的所有者。 访问共享邮箱后，用户可以创建日历项目、读取、查看、删除和更改电子邮件，以及创建任务和日历联系人。 然而，具有完全访问权限的用户无法从共享邮箱发送电子邮件，除非他们同时拥有"发送为"或"代表发送"权限。
+
+- **发送方式**：通过"发送方式"权限，用户可以在发送邮件时模拟共享邮箱。 例如，如果由 Marketingrina 登录到市场营销部门的共享邮箱并发送一封电子邮件，看起来好像市场营销部门发送了该电子邮件。
+
+- **代表**：通过"代表发送"权限，用户可以代表共享邮箱发送电子邮件。 例如，John 登录到 32 号接待大楼的共享邮箱并发送一封电子邮件，看起来就像是"John 代表 32 号接待大楼"发送的该邮件。 无法使用 EAC 来授予"代表发送"权限，必须通过在 **Set-Mailbox** cmdlet 中设置 _GrantSendonBehalf_ 参数才能实现。
+
+### <a name="use-the-eac-to-edit-shared-mailbox-delegation"></a>使用 EAC 编辑共享邮箱委派
+
+1. 在 EAC 中，转到 **共享** \> **的**。 选择共享邮箱，然后选择" **编辑** ![图标或](../../media/ITPro-EAC-EditIcon.png)。
+
+2. 选择 **委派**。
+
+3. 若要授予或删除"完全访问"和"发送为"权限，请选择 **"添加** ![添加图标](../../media/ITPro-EAC-AddIcon.png) 或 **删除** ![删除图标](../../media/ITPro-EAC-RemoveIcon.gif) ，然后选择要授予权限的用户。
+
+   > [!NOTE]
+   > “完全访问”权限允许用户打开邮箱，以及创建和修改其中的项目。“代理发送”权限允许除邮箱所有者以外的任何人从该共享邮箱发送电子邮件。这两个权限是成功操作共享邮箱所必需的。
+
+4. 选择“**保存**”以保存所做的更改。
+
 
 ## <a name="block-sign-in-for-the-shared-mailbox-account"></a>阻止登录共享邮箱帐户
 
@@ -185,8 +209,5 @@ ms.locfileid: "49926590"
 [从共享邮箱删除许可证](remove-license-from-shared-mailbox.md)
 
 [解决共享邮箱问题](resolve-issues-with-shared-mailboxes.md)
-
-
-
 
 
