@@ -15,24 +15,24 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解有关 Windows 和 Office 部署实验室工具包的信息，以及访问的位置。
-ms.openlocfilehash: 459b0fd246455f46a1c1ff497379487de9fdb61d
-ms.sourcegitcommit: d739f48b991793c08522a3d5323beba27f0111b2
+ms.openlocfilehash: 9b558ad20a84bc902dd9a4a78ebafdbcecd8a9bb
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "50142261"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50288259"
 ---
 # <a name="windows-and-office-deployment-lab-kit"></a>Windows 和 Office 部署实验室工具包
 
 Windows 和 Office 部署实验室工具包旨在帮助你规划、测试和验证运行 Windows 10 企业版和 Microsoft 365 企业应用版桌面的部署和管理。 工具包中的实验室包括使用 Microsoft Endpoint Configuration Manager、桌面分析、Office 自定义工具、OneDrive、Windows Autopilot 等。
 
-强烈建议准备升级到 Windows 10 的 Windows 8.1 的组织使用此工具包。 如果你当前使用的是 Windows 10、Microsoft 365 企业应用版 (以前是 Office 365 专业增强版) 或 Office 2019，它同样适用。 作为隔离环境，生成的实验室非常适合探索部署工具更新和测试与部署相关的自动化。
+强烈建议准备升级到 Windows 10 的 Windows 8.1 的组织使用此工具包。 如果你当前使用的是 Windows 10、Microsoft 365 企业应用版 (以前是 Office 365 专业增强版) 或 Office 2019，则也适用。 作为独立环境，生成的实验室非常适合探索部署工具更新和测试与部署相关的自动化。
 
 [下载 Windows 和 Office 部署实验室工具包](https://www.microsoft.com/evalcenter/evaluate-lab-kit)。
 
 ## <a name="a-complete-lab-environment"></a>完整的实验室环境
 
-该工具包可为您提供自动预配的虚拟实验室环境，包括加入域的桌面客户端、域控制器、Internet 网关和完全配置的 Configuration Manager 实例。 该工具包包含以下产品的最新评估版本：
+该工具包可为您提供自动预配的虚拟实验室环境，包括已加入域的桌面客户端、域控制器、Internet 网关和完全配置的 Configuration Manager 实例。 该工具包包含以下产品的最新评估版本：
 
   - 新增内容！ Windows 10 企业版版本 20H2
   - Windows 7 企业版
@@ -77,7 +77,7 @@ Windows 和 Office 部署实验室工具包旨在帮助你规划、测试和验�
 ### <a name="deploy-windows-10"></a>部署 Windows 10   
 
 - Configuration Manager 中的 OS 部署任务序列
-- MICROSOFT Deployment Toolkit (MDT) 
+- Microsoft Deployment Toolkit (MDT) 中的操作系统部署任务序列
 - Windows Autopilot
 - 部署和管理新的 Microsoft Edge  
 
@@ -85,7 +85,7 @@ Windows 和 Office 部署实验室工具包旨在帮助你规划、测试和验�
 
 - 云托管部署  
 - 本地托管部署    
-- 未加入 AD 的设备的 Microsoft 365 企业应用版部署 
+- 在未加入 AD 的设备上部署 Microsoft 365 企业应用版 
 - 使用 Configuration Manager 的企业托管部署
 - 使用 Microsoft Intune 的企业托管部署  
 - 使用 Microsoft Intune 部署和管理 LOB
@@ -99,7 +99,7 @@ Windows 和 Office 部署实验室工具包旨在帮助你规划、测试和验�
 
 [下载 Windows 和 Office 部署实验室工具包](https://www.microsoft.com/evalcenter/evaluate-lab-kit)。
 
-* 可以使用控制台内更新将已安装的基线版本 2002 更新到版本 2010。 请使用宽带宽 Internet 连接下载此内容，并允许自动预配 30-45 分钟。 实验室环境至少需要 16 GB 的可用内存和 150 GB 的可用磁盘空间。 为获得最佳性能，建议使用 32 GB 的可用内存和 300 GB 的可用空间。 工具包将于 2021 年 2 月 11 日过期。 新版本将在过期前发布。
+* 可以使用控制台内更新将已安装的比较基准版本 2002 更新到版本 2010。 请使用宽带宽 Internet 连接下载此内容，并允许 30-45 分钟进行自动预配。 实验室环境至少需要 16 GB 的可用内存和 150 GB 的可用磁盘空间。 为获得最佳性能，建议使用 32 GB 的可用内存和 300 GB 的可用空间。 工具包将于 2021 年 5 月 2 日过期。 新版本将在过期前发布。
 
 ## <a name="additional-guidance"></a>其他指南
 

@@ -19,19 +19,19 @@ description: 使用安全合规中心中的资源管理器和实时检测 &amp; 
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 5cbb8bd57a2e9bde8d19c960a71066d3ea5531c1
-ms.sourcegitcommit: a62ac3c01ba700a51b78a647e2301f27ac437c5a
+ms.openlocfilehash: daa7b4014d1302743578d79c2e1e0e1d2d5ac61f
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/12/2021
-ms.locfileid: "50233638"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50288893"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>威胁资源管理器和实时检测
 
 
 **适用对象**
-- [Microsoft Defender for Office 365 计划 1 和计划 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender for Office 365 计划 1 和计划 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 如果你的组织拥有适用于[Office 365](office-365-atp.md)的 Microsoft Defender，并且你拥有[必要的](#required-licenses-and-permissions)权限，你拥有资源管理器或实时检测 (以前的实时报告 -查看新增功能[！) 。](#new-features-in-threat-explorer-and-real-time-detections) 在安全&合规中心，转到 **"威胁** 管理"，然后选择"**资源管理器**"_或_**"实时检测"。**
 
@@ -462,7 +462,7 @@ ETR 搜索和名称可用性取决于分配给您的特定角色。 您需要具
 - [查看在 SharePoint Online、OneDrive 和 Microsoft Teams 中检测到的恶意文件](malicious-files-detected-in-spo-odb-or-teams.md)
 - [大致了解威胁资源管理器中的 (和实时检测) ](threat-explorer-views.md)
 - [威胁防护状态报告](view-email-security-reports.md#threat-protection-status-report)
-- [Microsoft 威胁防护中的自动调查和响应](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-autoir)
+- [Microsoft 威胁防护中的自动调查和响应](../mtp/mtp-autoir.md)
 
 ## <a name="required-licenses-and-permissions"></a>所需的许可证和权限
 

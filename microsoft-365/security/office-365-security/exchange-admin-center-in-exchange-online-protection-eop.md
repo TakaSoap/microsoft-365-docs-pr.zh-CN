@@ -14,22 +14,22 @@ search.appverid:
 ms.assetid: 97921f0e-832f-40c7-b56d-414faede5191
 ms.collection:
 - M365-security-compliance
-description: 了解独立 Exchange Online Protection 中的 Web 管理界面 (EOP) 。
+description: 了解独立 Exchange Online Protection (EOP) 中的 Web 管理界面。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 81af6c64d2ec3204d0c9d46888bbfe21335955bd
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: ec9dcbccbee734ea7c475b1ac0a5f9a92a0b401b
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50166215"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50286953"
 ---
 # <a name="exchange-admin-center-in-standalone-eop"></a>独立 EOP 中的 Exchange 管理中心
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
-**适用于**
--  [独立 Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
+**适用对象**
+-  [独立 Exchange Online Protection](exchange-online-protection-overview.md)
 
 Exchange 管理中心 (EAC) 是一个基于 Web 的管理控制台，适用于独立 Exchange Online Protection (EOP) 。
 
@@ -41,13 +41,13 @@ Exchange 管理中心 (EAC) 是一个基于 Web 的管理控制台，适用于�
 
 - **从 Microsoft 365 管理中心**：
 
-  1. 转到并 <https://admin.microsoft.com> 单击"**全部显示"。**
+  1. 转到 <https://admin.microsoft.com> 并单击"**全部显示"。**
 
      ![单击"在 Microsoft 365 管理中心中全部显示"](../../media/m365-center-show-all.png)
 
-  2. 在出现的 **"管理中心**"部分，单击 **"所有管理中心"。**
+  2. 在出现的 **"管理** 中心"部分中，单击 **"所有管理中心"。**
 
-     ![单击 Microsoft 365 管理中心中的"所有管理中心"](../../media/m365-center-select-all-admin-centers.png)
+     ![单击 Microsoft 365 管理中心内的所有管理中心](../../media/m365-center-select-all-admin-centers.png)
 
   3. 在出现的 **"所有管理** 中心"页上，单击 **"Exchange Online Protection"。**
 
@@ -67,16 +67,16 @@ Exchange 管理中心 (EAC) 是一个基于 Web 的管理控制台，适用于�
 
 - **权限**：你将在此管理管理员角色。
 
-- **合规性管理**：你可以在这里找到管理员角色组报告和管理审核日志报告。
+- **合规性管理**：你将在此找到管理员角色组报告和管理审核日志报告。
 
 - **保护**：这是你可以管理反恶意软件策略、默认连接筛选器策略和 DKIM 的地方。
 
   > [!NOTE]
-  > 您应该在安全与合规中心内管理反恶意软件策略和&筛选器策略。 有关详细信息，请参阅"在 EOP 中配置[反恶意软件](configure-anti-malware-policies.md)策略"和"[在 EOP 中配置连接筛选"。](configure-the-connection-filter-policy.md)
+  > 应在安全与合规中心内管理反恶意软件策略和&筛选器策略。 有关详细信息，请参阅在 [EOP](configure-anti-malware-policies.md) 中配置反恶意软件策略和 [在 EOP 中配置连接筛选](configure-the-connection-filter-policy.md)。
 
 - **邮件** 流：这是管理邮件流规则的位置 (也称为传输规则) 、接受域和连接器，以及可以运行邮件跟踪的位置。
 
-- **混合**：这是您可以运行混合配置 [向导](https://docs.microsoft.com/Exchange/hybrid-configuration-wizard)，并可以安装 [Exchange Online PowerShell 模块的地方](https://docs.microsoft.com/powershell/exchange/mfa-connect-to-exchange-online-powershell)。
+- **混合**：这是你可以运行混合配置向导 [](https://docs.microsoft.com/Exchange/hybrid-configuration-wizard)的地方，并且可以在其中安装 [Exchange Online PowerShell 模块](https://docs.microsoft.com/powershell/exchange/mfa-connect-to-exchange-online-powershell)。
 
 ### <a name="tabs"></a>选项卡
 
@@ -95,7 +95,7 @@ Exchange 管理中心 (EAC) 是一个基于 Web 的管理控制台，适用于�
 |![删除图标](../../media/ITPro-EAC-DeleteIcon.gif)|删除|使用此图标可删除对象。有些删除图标有一个向下箭头，单击该箭头可显示其他选项。|
 |![搜索图标](../../media/ITPro-EAC-.gif)|搜索|使用此图标可打开一个搜索框，可在其中键入要查找的对象的搜索短语。|
 |![刷新图标](../../media/ITPro-EAC-RefreshIcon.gif)|刷新|使用此图标可刷新列表视图。|
-|![更多选项图标](../../media/ITPro-EAC-MoreOptionsIcon.gif)|更多选项|使用此图标可以查看可对该选项卡的对象执行的更多操作。 例如，在 **"收件人 \> 用户"中** ，单击此图标将显示执行高级 **搜索的选项**。|
+|![更多选项图标](../../media/ITPro-EAC-MoreOptionsIcon.gif)|更多选项|使用此图标可以查看可对该选项卡的对象执行的更多操作。 例如，在 **"收件人 \> 用户** "中，单击此图标将显示执行高级 **搜索的选项**。|
 |![向上键图标](../../media/ITPro-EAC-UpArrowIcon.gif)![向下键图标](../../media/ITPro-EAC-DownArrowIcon.gif)|向上箭头和向下箭头|使用这些图标可以将对象的优先级上移或下移。|
 |![删除图标](../../media/ITPro-EAC-RemoveIcon.gif)|删除|使用此图标可从列表中删除对象。|
 |
@@ -112,15 +112,15 @@ Exchange 管理中心 (EAC) 是一个基于 Web 的管理控制台，适用于�
 
 使用“自有”图块可以注销 EAC，然后以其他用户身份登录。 在 **"** ![ 帮助帮助图标 ](../../media/ITPro-EAC-HelpIcon.gif) "下拉菜单中，可以执行以下操作：
 
-- **帮助**： ![ 单击"帮助图标 ](../../media/ITPro-EAC-HelpIcon.gif) "查看联机帮助内容。
+- **帮助**： ![ 单击"帮助 ](../../media/ITPro-EAC-HelpIcon.gif) 图标"查看联机帮助内容。
 - **反馈**：留下反馈。
 - **社区**：在社区论坛中发布问题以查找答案。
 - **禁用帮助气泡**：创建或编辑对象时，帮助气泡显示字段的上下文帮助。 您可以关闭"帮助"气泡，如果已被禁用，也可以打开它。
-- **显示命令日志记录**：将打开一个新窗口，根据在 EAC 中配置的命令显示等效的 PowerShell 命令。
+- **显示命令日志记录**：将打开一个新窗口，根据 EAC 中配置的功能显示等效的 PowerShell 命令。
 
 ## <a name="supported-browsers"></a>支持的浏览器
 
-若要获得最佳的 EAC 使用体验，我们建议您始终使用最新的浏览器、Office 客户端和应用程序。 我们还建议您安装可用的软件更新。 有关支持的浏览器和服务的系统要求详细信息，请参阅 [Office 的系统要求](https://products.office.com/office-system-requirements)。
+若要获得最佳的 EAC 使用体验，我们建议您始终使用最新的浏览器、Office 客户端和应用程序。 我们还建议您安装可用的软件更新。 有关服务支持的浏览器和系统要求详细信息，请参阅 [Office 的系统要求](https://products.office.com/office-system-requirements)。
 
 ## <a name="supported-languages"></a>支持的语言
 

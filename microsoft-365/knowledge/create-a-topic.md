@@ -14,19 +14,19 @@ ms.collection:
 ms.service: ''
 search.appverid: ''
 localization_priority: Normal
-ms.openlocfilehash: 2b543dbc8132f261814aec45e713874971b9b5d1
-ms.sourcegitcommit: 78f48304f990e969a052fe6536b2e8d6856e1086
+ms.openlocfilehash: fbdd0e9b75e92d8080d9aaf43a2d1eaa8baacbc3
+ms.sourcegitcommit: 88820cd2536a7da868e472d10b4d265c52e5692b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50242876"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "50279374"
 ---
 # <a name="create-a-new-topic"></a>新建主题 
 
 在 Viva 主题中，如果尚未通过索引发现一个主题，或者 AI 技术没有找到足够证据来将主题建立为主题，则您可以创建一个新主题。
 
 > [!Note] 
-> 虽然 AI 收集的主题信息经过安全修整，[](topic-experiences-security-trimming.md)但请注意，手动创建的主题中的信息对有权查看主题的所有用户可见。 
+> 虽然 AI 收集的主题信息经过安全修整，[](topic-experiences-security-trimming.md)但请注意，手动创建的主题中的主题说明和人员信息对有权查看该主题的所有用户可见。 
 
 
 ## <a name="requirements"></a>要求
@@ -77,6 +77,9 @@ ms.locfileid: "50242876"
 
     您还可以通过提供 URL<b></b>使用"从链接"选项添加文件或页面。 
 
+    > [!Note] 
+    > 添加的文件和页面必须位于同一 Microsoft 365 租户中。 如果要在主题中添加指向外部资源的链接，可以通过步骤 8 中的画布图标添加该链接。
+
 
 6.  " <b>相关网站</b> "部分显示包含有关主题的信息的网站。 
 
@@ -97,6 +100,16 @@ ms.locfileid: "50242876"
    添加的相关主题将显示为已连接的主题。
 
    ![已连接的相关主题](../media/knowledge-management/related-topics-final.png)</br> 
+
+   若要删除相关主题，请选择要删除的主题，然后选择" <b>删除主题"</b> 图标。</br>
+ 
+   ![删除相关主题](../media/knowledge-management/remove-related.png)</br>  
+
+   然后选择"<b>删除"。</b></br>
+
+   ![确认删除](../media/knowledge-management/remove-related-confirm.png)</br> 
+     
+ 
 
 
 8. 您还可以通过选择画布图标（可在简短说明 (找到的画布图标）将静态项目添加到页面) ，如文本、图像或链接。 选择它将打开 SharePoint 工具箱，您可以从中选择要添加到页面的项目。

@@ -21,28 +21,28 @@ description: 了解如何使用 Office 365 安全与合规中心中的&功能查
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: f4af23ac1fd3c7272fc60b2228bf808351cb4d2b
-ms.sourcegitcommit: 3dc795ea862b180484f76b3eb5d046e74041252b
+ms.openlocfilehash: d4c92a0bccded461d272d84e0f5b4d06a3b44713
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "50176023"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50287085"
 ---
 # <a name="alerts-in-the-security--compliance-center"></a>安全与合规中心&警报
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
-**适用于**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Microsoft Defender for Office 365 计划 1 和计划 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+**适用对象**
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender for Office 365 计划 1 和计划 2](office-365-atp.md)
 
 使用安全与合规中心&功能查看和管理组织的警报，包括管理高级警报作为 [Microsoft Cloud App Security 概述](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security)的一部分。
 
 ## <a name="how-to-get-to-the-alerts-features"></a>如何获取警报功能
 
-警报位于安全与&中心。 下面将说明如何访问页面。
+警报位于安全与&中心。 下面将了解如何访问页面。
 
-### <a name="to-go-directly-to-the-security--compliance-center"></a>直接转到安全与&中心
+### <a name="to-go-directly-to-the-security--compliance-center"></a>直接转到安全&合规中心
 
 1. 转到 <https://protection.office.com>。
 
@@ -62,12 +62,12 @@ ms.locfileid: "50176023"
 
 ## <a name="alerts-features"></a>通知功能
 
-下表介绍了安全与合规 **中心警报&** 可用的工具。
+下表介绍了安全与合规中心中的警报&可用的工具。
 
 ****
 
 |工具|说明|
 |---|---|
 |[管理警报](../../compliance/create-activity-alerts.md)|当用户在 Microsoft 365 中执行特定活动时，使用活动通知向自己或其他管理员发送电子邮件通知。 活动通知类似于在 审核日志搜索事件，只是当发生已创建警报的事件时，会向用户发送电子邮件。|
-|[管理高级警报](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security)|使用Microsoft 365 云应用安全的高级警报功能设置可提醒您 Microsoft 365 中可疑和异常活动的策略。 发出警报后，你可以调查可能存在问题的情况，并根据需要采取措施来解决安全问题。|
+|[管理高级警报](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security)|使用Microsoft 365 云应用安全的高级警报功能设置可提醒你 Microsoft 365 中可疑和异常活动的策略。 发出警报后，你可以调查可能存在问题的情况，并根据需要采取措施来解决安全问题。|
 |

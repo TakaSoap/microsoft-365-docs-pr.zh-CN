@@ -20,20 +20,20 @@ ms.collection:
 description: 管理员可以了解 Microsoft Defender for Office 365 中的安全附件功能。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 5d2d348856dbd51cabe2b320d315406076921fee
-ms.sourcegitcommit: a9ac702c9efc9defded3bfa65618b94bac00c237
+ms.openlocfilehash: f0d7028f33e7a9259d12930631f259ae1cedc4fe
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/16/2021
-ms.locfileid: "50261533"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50287025"
 ---
 # <a name="safe-attachments-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 中的安全附件
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **适用对象**
-- [Microsoft Defender for Office 365 计划 1 和计划 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender for Office 365 计划 1 和计划 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 [Microsoft Defender for Office 365](office-365-atp.md)中的安全附件为已由 Exchange Online Protection (EOP) 中的反恶意软件保护扫描的电子邮件附件提供了一[层额外的保护](anti-malware-protection.md)。 具体来说，安全附件使用虚拟环境检查电子邮件中的附件，然后再将附件 (称为触发) 。 
 

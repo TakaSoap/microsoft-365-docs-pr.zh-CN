@@ -20,21 +20,21 @@ search.appverid:
 description: 了解如何使用 Microsoft 365 中的工具来识别并响应遭到入侵的电子邮件帐户。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a34780b260a6e4bbc2d8b3f53af6b67de04fbdcd
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: 1bbd607386b49b45ebd7444c4a91d05e4cee475b
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50166659"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50288605"
 ---
 # <a name="responding-to-a-compromised-email-account"></a>响应遭到入侵的电子邮件帐户
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **适用对象**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Microsoft Defender for Office 365 计划 1 和计划 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender for Office 365 计划 1 和计划 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 **摘要** 了解如何识别并响应 Microsoft 365 中遭到入侵的电子邮件帐户。
 
@@ -90,7 +90,7 @@ ms.locfileid: "50166659"
 
 ### <a name="step-1-reset-the-users-password"></a>步骤 1 重置用户密码
 
-按照[为他人重置商业版密码](https://docs.microsoft.com/microsoft-365/admin/add-users/reset-passwords#reset-my-admin-password)中的程序操作。
+按照[为他人重置商业版密码](../../admin/add-users/reset-passwords.md#reset-my-admin-password)中的程序操作。
 
 > [!IMPORTANT]
 >
@@ -104,7 +104,7 @@ ms.locfileid: "50166659"
 >
 > - 务必更新应用密码。 重置用户帐户密码后，不会自动撤消应用密码。 用户应删除现有应用程序密码并创建新密码。 有关说明，请参阅[从其他安全验证页面创建和删除应用密码](https://docs.microsoft.com/azure/active-directory/user-help/multi-factor-authentication-end-user-app-passwords#create-and-delete-app-passwords-from-the-additional-security-verification-page)。
 >
-> - 强烈建议启用多重身份验证 (MFA)，以防发生泄漏，特别是对于拥有管理权限的帐户。 若要了解有关 MFA 的详细信息，请转到[设置多重身份验证](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/set-up-multi-factor-authentication)。
+> - 强烈建议启用多重身份验证 (MFA)，以防发生泄漏，特别是对于拥有管理权限的帐户。 若要了解有关 MFA 的详细信息，请转到[设置多重身份验证](../../admin/security-and-compliance/set-up-multi-factor-authentication.md)。
 
 ### <a name="step-2-remove-suspicious-email-forwarding-addresses"></a>步骤 2 删除可疑的电子邮件转发地址
 

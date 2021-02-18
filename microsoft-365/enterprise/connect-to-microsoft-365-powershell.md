@@ -17,12 +17,12 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: 5ebc0e21-b72d-46d8-96fa-00643b18eaec
 description: 使用 PowerShell for Microsoft 365 连接到 Microsoft 365 租户，从命令行执行管理中心任务。
-ms.openlocfilehash: 33f9af45418ae8a1f126d2b321e7246201bd1f6e
-ms.sourcegitcommit: f07442d077eb4357fa5d99d051b035705eb30efa
+ms.openlocfilehash: 0691304a2d40f7ae4262e6761902f16b4f6d5ee2
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "49002401"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50288109"
 ---
 # <a name="connect-to-microsoft-365-with-powershell"></a>使用 PowerShell 连接 Microsoft 365
 
@@ -117,7 +117,7 @@ PowerShell Core 不支持用于 Windows PowerShell 和 cmdlet 的其名称中包
 
 这些步骤只需在计算机上执行一次。 但可能需要定期更新软件。
   
-1.  如果您运行的不是 Windows 10，则请安装 64 位版 Microsoft Online Services 登录助手：[适用于 IT 专业人员 RTW 的 Microsoft Online Services 登录助手](https://go.microsoft.com/fwlink/p/?LinkId=286152)。
+1.  如果您运行的不是 Windows 10，则请安装 64 位版 Microsoft Online Services 登录助手：[适用于 IT 专业人员 RTW 的 Microsoft Online Services 登录助手](https://www.microsoft.com/Download/details.aspx?id=28177)。
     
 2. 请按照以下步骤，安装用于 Windows PowerShell 的 Microsoft Azure Active Directory 模块：
     
@@ -165,7 +165,7 @@ PowerShell Core 不支持用于 Windows PowerShell 和 cmdlet 的其名称中包
   (Get-Item C:\Windows\System32\WindowsPowerShell\v1.0\Modules\MSOnline\Microsoft.Online.Administration.Automation.PSModule.dll).VersionInfo.FileVersion
   ```
 
-    如果返回的版本号低于 *1.0.8070.2*，请卸载用于 Windows PowerShell 的 Microsoft Azure Active Directory 模块，并通过上述[第 1 步](#step-1-install-the-required-software)进行安装。
+    如果返回的版本号低于 *1.0.8070.2*，请卸载用于 Windows PowerShell 的 Microsoft Azure Active Directory 模块，并通过上述 [第 1 步](#step-1-install-the-required-software)进行安装。
 
 - **如果收到连接错误，请参阅**[“Connect-MsolService：抛出类型异常”错误](https://go.microsoft.com/fwlink/p/?LinkId=532377)。
     

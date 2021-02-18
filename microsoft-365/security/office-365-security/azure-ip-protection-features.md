@@ -19,20 +19,20 @@ ms.custom:
 description: 本文介绍了对 Azure 信息保护中的保护功能所做的更改
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 0769306c3aa2d1a357e1d5999d1a1406c02aa5f3
-ms.sourcegitcommit: a9ac702c9efc9defded3bfa65618b94bac00c237
+ms.openlocfilehash: fe85a46e3f20cda62cd8a52bd5df92257f8fee57
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/16/2021
-ms.locfileid: "50261557"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50286665"
 ---
 # <a name="protection-features-in-azure-information-protection-rolling-out-to-existing-tenants"></a>Azure 信息保护中的保护功能向现有租户推出
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **适用对象**
-- [适用于 Office 365 计划 2 的 Microsoft Defender](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [适用于 Office 365 计划 2 的 Microsoft Defender](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 为了帮助执行保护信息的初始步骤，从 2018 年 7 月开始，所有符合条件的 Azure 信息保护租户将默认启用 Azure 信息保护中的保护功能。 Azure 信息保护中的保护功能以前在 Office 365 中称为权限管理或 Azure RMS。 如果你的组织具有 Office E3 服务计划或更高的服务计划，那么现在，当我们推出这些功能时，你将开始通过 Azure 信息保护来保护信息。
 
@@ -61,15 +61,15 @@ Office 365 邮件加密利用 Azure 信息保护中的保护功能。 最近对 
 如果你的组织已购买符合条件的 Office 365 许可证，则你的租户将受此更改的影响。
 
 > [!IMPORTANT]
-> 如果你在本地环境中使用 Active Directory Rights Management Services (AD RMS) ，则必须选择立即退出此更改，或迁移到 Azure 信息保护，然后才能在接下来 30 天内推出此更改。 若要了解如何选择退出，请参阅"我使用 AD RMS，如何选择退出？" ”中所述的过程安装本地化文件。 如果你希望迁移，请参阅"从[AD RMS 迁移到 Azure 信息保护"。](https://docs.microsoft.com/azure/information-protection/plan-design/migrate-from-ad-rms-to-azure-rms)
+> 如果你在本地环境中使用 Active Directory Rights Management Services (AD RMS) ，则必须选择立即退出此更改或迁移到 Azure 信息保护，然后才能在接下来 30 天内推出此更改。 若要了解如何选择退出，请参阅"我使用 AD RMS，如何选择退出？" ”中所述的过程安装本地化文件。 如果你希望迁移，请参阅"从[AD RMS 迁移到 Azure 信息保护"。](https://docs.microsoft.com/azure/information-protection/plan-design/migrate-from-ad-rms-to-azure-rms)
 
 ## <a name="can-i-use-azure-information-protection-with-active-directory-rights-management-services-ad-rms"></a>能否将 Azure 信息保护与 Active Directory Rights Management Services (AD RMS) ？
 
-否。 这不是受支持的部署方案。 如果不执行其他选择退出步骤，某些计算机可能会自动开始使用 Azure 权限管理服务，并连接到 AD RMS 群集。 此方案不受支持，且结果不可靠，因此，在推出这些新功能之前，必须选择在 30 天内退出此更改。 若要了解如何选择退出，请参阅"我使用 AD RMS，如何选择退出？" ”中所述的过程安装本地化文件。 如果你希望迁移，请参阅从 [AD RMS 迁移到 Azure 信息保护。](https://docs.microsoft.com/azure/information-protection/plan-design/migrate-from-ad-rms-to-azure-rms)
+否。 这不是受支持的部署方案。 如果不执行其他选择退出步骤，某些计算机可能会自动开始使用 Azure 权限管理服务，并连接到 AD RMS 群集。 此方案不受支持，且结果不可靠，因此，在推出这些新功能之前，必须选择在 30 天内退出此更改。 若要了解如何选择退出，请参阅"我使用 AD RMS，如何选择退出？" ”中所述的过程安装本地化文件。 如果你希望迁移，请参阅"从 [AD RMS 迁移到 Azure 信息保护"。](https://docs.microsoft.com/azure/information-protection/plan-design/migrate-from-ad-rms-to-azure-rms)
 
 ## <a name="how-do-i-know-if-im-using-ad-rms"></a>我如何知道是否正在使用 AD RMS？
 
-如果还具有 [AD RMS ](https://docs.microsoft.com/azure/information-protection/deploy-use/prepare-environment-adrms) Active Directory Rights Management Services (，请使用准备 Azure 权限管理) 检查是否部署了 AD RMS：
+如果还具有用于检查是否部署了 [AD RMS Active Directory Rights Management Services (AD RMS ](https://docs.microsoft.com/azure/information-protection/deploy-use/prepare-environment-adrms)) ，请使用准备 Azure 权限管理环境中的以下说明：
 
 1. 尽管是可选的，但大多数 AD RMS 部署将服务连接点 (SCP) 发布到 Active Directory，以便域计算机可以发现 AD RMS 群集。
 

@@ -22,20 +22,20 @@ ms.assetid: 10d1004b-42b6-4e2b-aaa2-18ddd9118f64
 description: 摘要：针对发展迅速且配置文件威胁不断增加的组织的计划和实现指南。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e7d16f63b808edc008022b17d20461df6cd30e75
-ms.sourcegitcommit: e920e68c8d0eac8b152039b52cfc139d478a67b3
+ms.openlocfilehash: f8ed01d2c41529782c5c714bfe66096b97300712
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50150768"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50287397"
 ---
 # <a name="microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-organizations"></a>Microsoft 针对政治宣传活动、非营利组织和其他敏捷型组织的安全指南
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **适用对象**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Microsoft Defender for Office 365 计划 1 和计划 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender for Office 365 计划 1 和计划 2](office-365-atp.md)
 
  **摘要：** 针对发展迅速且配置文件威胁不断增加的组织的计划和实现指南。
 
@@ -69,6 +69,6 @@ ms.locfileid: "50150768"
 
 ## <a name="see-also"></a>另请参阅
 
-[云采用测试实验室指南 (TLG)](https://docs.microsoft.com/microsoft-365/enterprise/cloud-adoption-test-lab-guides-tlgs)
+[云采用测试实验室指南 (TLG)](../../enterprise/cloud-adoption-test-lab-guides-tlgs.md)
 
-[Microsoft 云 IT 体系结构资源](https://docs.microsoft.com/microsoft-365/solutions/cloud-architecture-models)
+[Microsoft 云 IT 体系结构资源](../../solutions/cloud-architecture-models.md)

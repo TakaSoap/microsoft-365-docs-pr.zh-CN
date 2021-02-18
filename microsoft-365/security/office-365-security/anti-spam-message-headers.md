@@ -18,21 +18,21 @@ description: 管理员可以了解由 Exchange Online Protection (EOP) 添加到
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 5f0befa764982ae30e0c7c5c1a9f109067f3ee02
-ms.sourcegitcommit: 3dc795ea862b180484f76b3eb5d046e74041252b
+ms.openlocfilehash: e78d7d6eb2b38ab93dc09e0098641f97f845015c
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "50175645"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50289001"
 ---
 # <a name="anti-spam-message-headers-in-microsoft-365"></a>Microsoft 365 中的反垃圾邮件标题
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **适用对象**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Microsoft Defender for Office 365 计划 1 和计划 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender for Office 365 计划 1 和计划 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 在所有 Microsoft 365 组织中，Exchange Online Protection (EOP) 会扫描所有传入邮件中的垃圾邮件、恶意软件和其他威胁。 这些扫描的结果将添加到消息中的以下标头字段中：
 

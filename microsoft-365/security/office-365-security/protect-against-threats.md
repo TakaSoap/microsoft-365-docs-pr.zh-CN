@@ -20,21 +20,21 @@ description: 管理员可以在 Microsoft 365 中学习威胁防护并为组织�
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: cb2866fd3e60c021ae89ffabe7149f4b415d63bc
-ms.sourcegitcommit: e920e68c8d0eac8b152039b52cfc139d478a67b3
+ms.openlocfilehash: c9ca420609628476faba6262fe7ed412b8fa5746
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50150708"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50288797"
 ---
 # <a name="protect-against-threats"></a>抵御威胁
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
-**适用于**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Microsoft Defender for Office 365 计划 1 和计划 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+**适用对象**
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender for Office 365 计划 1 和计划 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 这是一个快速的指南，它将 Defender for Office 365 的配置分成块。 如果你对 Microsoft Office 365 中的威胁防护功能不了解，不知道从哪里开始，或者你喜欢通过 *上手* 来学习，使用这个指南作为一个清单和开始。
 
@@ -71,7 +71,7 @@ ms.locfileid: "50150708"
 
 |角色或角色组|在哪里了解更多信息|
 |---|---|
-|全局管理员|[关于 Microsoft 365 管理员角色](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)|
+|全局管理员|[关于 Microsoft 365 管理员角色](../../admin/add-users/about-admin-roles.md)|
 |安全管理员|[Azure Active Directory 中的管理员角色权限](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)|
 |Exchange Online 组织管理|[Exchange Online 中的权限](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo) <p> 和 <p> [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell)|
 |
@@ -221,7 +221,7 @@ SharePoint、OneDrive 和 Teams 这样的工作负载是为协作而构建的。
 
 1. 在 [安全与合规中心](https://protection.office.com)中， 选择“**威胁管理**” \> “**策略**” \> “**ATP 安全附件**”，然后单击“**全局设置**”。
 
-2. 验证 Office **365 for SharePoint、OneDrive** 和 Microsoft Teams 的"打开 Defender"开关是否位于右侧：打开， ![ 然后单击" ](../../media/scc-toggle-on.png) **保存"。**
+2. 验证 **"打开 Defender for Office 365 for SharePoint、OneDrive** 和 Microsoft Teams"切换是否向右：打开，然后单击 ![ ](../../media/scc-toggle-on.png) "**保存"。**
 
 3. 检查（并合适地编辑）组织的[安全附件策略](set-up-atp-safe-attachments-policies.md)和[安全链接策略](set-up-atp-safe-links-policies.md)。
 
@@ -231,7 +231,7 @@ SharePoint、OneDrive 和 Teams 这样的工作负载是为协作而构建的。
    - `$false`阻止所有除删除和下载的操作。 人员可以选择接受风险并下载检测到的文件。
 
    > [!TIP]
-   > 了解更多用 Microsoft 365 使用 PowerShell 的信息，请参阅[使用 PowerShell 管理 Microsoft 365](https://docs.microsoft.com/microsoft-365/enterprise/manage-microsoft-365-with-microsoft-365-powershell)。
+   > 了解更多用 Microsoft 365 使用 PowerShell 的信息，请参阅[使用 PowerShell 管理 Microsoft 365](../../enterprise/manage-microsoft-365-with-microsoft-365-powershell.md)。
 
 5. 预留至多 30 分钟以让更改传播到所有 Microsoft 365 数据中心。
 
@@ -291,5 +291,5 @@ SharePoint、OneDrive 和 Teams 这样的工作负载是为协作而构建的。
 |---|---|
 |通过查看报告了解威胁防护功能如何为你的阻止工作|[安全操作仪表板](security-dashboard.md) <p> [电子邮件安全报告](view-email-security-reports.md) <p> [Microsoft Defender for Office 365 报告](view-reports-for-atp.md) <p> [威胁资源管理器](threat-explorer.md)|
 |定期检查和修改你的威胁防护策略（如有需要）|[安全功能分数](../mtp/microsoft-secure-score.md) <p> [智能报告和见解](reports-and-insights-in-security-and-compliance.md) <p> [Microsoft 365 威胁调查和响应功能](keep-users-safe-with-office-365-ti.md)|
-|关注新功能和服务更新|[标准和目标发布选项](https://docs.microsoft.com/microsoft-365/admin/manage/release-options-in-office-365) <p> [消息中心](https://docs.microsoft.com/microsoft-365/admin/manage/message-center) <p> [Microsoft 365 路线图](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=advanced%2Cthreat%2Cprotection) <p> [服务说明](https://docs.microsoft.com/office365/servicedescriptions/office-365-service-descriptions-technet-library)|
+|关注新功能和服务更新|[标准和目标发布选项](../../admin/manage/release-options-in-office-365.md) <p> [消息中心](../../admin/manage/message-center.md) <p> [Microsoft 365 路线图](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=advanced%2Cthreat%2Cprotection) <p> [服务说明](https://docs.microsoft.com/office365/servicedescriptions/office-365-service-descriptions-technet-library)|
 |了解配置 EOP 和 Defender for Office 365 的标准和严格安全配置推荐的详细信息|[用于配置 EOP 和 Defender for Office 365 安全性的建议设置](recommended-settings-for-eop-and-office365-atp.md)|

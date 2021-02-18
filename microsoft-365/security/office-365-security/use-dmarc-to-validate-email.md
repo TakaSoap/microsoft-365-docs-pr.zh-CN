@@ -7,7 +7,6 @@ author: MSFTTracyP
 manager: dansimp
 audience: ITPro
 ms.topic: article
-ms.service: O365-seccomp
 localization_priority: Priority
 search.appverid:
 - MET150
@@ -16,17 +15,23 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 description: 了解如何配置基于域的邮件身份验证、报告和一致性 (DMARC) 以验证从你的组织发送的邮件。
-ms.openlocfilehash: bcf1c0b3dc0a1a8dd8a679af815fbdc2173cabb7
-ms.sourcegitcommit: 222fb7fe2b26dde3d8591b61cc02113d6135012c
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: 43290d7ba46774e6ec31d96aa14dbff4eb2b2cb9
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "49759852"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50286319"
 ---
 # <a name="use-dmarc-to-validate-email"></a>使用 DMARC 验证电子邮件
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**适用对象**
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender for Office 365 计划 1 和计划 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 基于域的邮件身份验证、报告和一致性 ([DMARC](https://dmarc.org)) 与发件人策略框架 (SPF) 和域密钥识别邮件 (DKIM) 结合使用，以验证邮件发件人并确保目标电子邮件系统信任从你的域发送的邮件。 实现使用 SPF 和 DKIM 的 DMARC 可以针对欺骗和钓鱼电子邮件提供额外的保护。 DMARC 可帮助接收邮件系统确定如何处理从你的域发送且未通过 SPF 或 DKIM 检查的邮件。
 
@@ -172,7 +177,7 @@ _dmarc.domain  TTL  IN  TXT  "v=DMARC1; p=policy; pct=100"
     _dmarc.contoso.com  3600 IN  TXT  "v=DMARC1; p=reject"
     ```
 
-生成记录后，你需要在你的域注册机构中更新记录。有关为 Microsoft 365 将 DMARC TXT 记录添加到 DNS 记录的说明，请参阅[管理 DNS 记录时为 Microsoft 365 创建 DNS 记录](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider)。
+生成记录后，你需要在你的域注册机构中更新记录。有关为 Microsoft 365 将 DMARC TXT 记录添加到 DNS 记录的说明，请参阅[管理 DNS 记录时为 Microsoft 365 创建 DNS 记录](../../admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md)。
 
 ## <a name="best-practices-for-implementing-dmarc-in-microsoft-365"></a>在 Microsoft 365 中实现 DMARC 的最佳做法
 

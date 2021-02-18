@@ -21,20 +21,20 @@ ms.custom:
 - air
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 95c16ed9ad3db7c70202f3a054e3fa77ef24e00a
-ms.sourcegitcommit: a62ac3c01ba700a51b78a647e2301f27ac437c5a
+ms.openlocfilehash: bef2fbd1e9e3d3525f9c274b5f9127acfb218396
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/12/2021
-ms.locfileid: "50233572"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50287121"
 ---
 # <a name="remediation-actions-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 中的修正操作
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **适用对象**
-- [适用于 Office 365 计划 2 的 Microsoft Defender](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [适用于 Office 365 计划 2 的 Microsoft Defender](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 ## <a name="remediation-actions"></a>修正操作
 
@@ -64,15 +64,15 @@ Microsoft Defender for Office 365 包括解决各种威胁的修正操作。 自
 |用户|用户正在发送恶意软件/网络钓鱼|自动调查不会导致特定的待处理操作。 <p> 用户可能会报告恶意软件/网络钓鱼，或者 [有人可能在攻击](anti-spoofing-protection.md) 中欺骗用户。 使用 [威胁资源管理器](threat-explorer.md) 查看和处理包含恶意软件 [或](threat-explorer-views.md#email--malware) 网络钓鱼 [的电子邮件](threat-explorer-views.md#email--phish)。|
 |用户|电子邮件转发 <br>  (邮箱转发规则，这些规则可用于数据) |删除转发规则 <p> 使用 [邮件流见解](mail-flow-insights-v2.md)（包括 ["](mfi-auto-forwarded-messages-report.md)自动转发邮件"报告）查看有关转发电子邮件的更具体的详细信息。|
 |用户|电子邮件委派规则 <br>  (用户帐户设置了委派。) |删除委派规则 <p> 如果你的组织使用[Microsoft Defender for Endpoint，](https://docs.microsoft.com/windows/security/threat-protection/)请考虑调查正在获取委派权限的用户。 [](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/investigate-user)|
-|用户|数据外泄 <br>  (用户违反电子邮件或文件共享 [DLP](https://docs.microsoft.com/microsoft-365/compliance/data-loss-prevention-policies)策略 .) |自动调查不会导致特定的待处理操作。 <p> [查看 DLP 报告并采取措施](https://docs.microsoft.com/microsoft-365/compliance/view-the-dlp-reports)。|
+|用户|数据外泄 <br>  (用户违反电子邮件或文件共享 [DLP](../../compliance/data-loss-prevention-policies.md)策略 .) |自动调查不会导致特定的待处理操作。 <p> [查看 DLP 报告并采取措施](../../compliance/view-the-dlp-reports.md)。|
 |用户|异常电子邮件发送 <br>  (用户最近发送的电子邮件数多于前 7-10 天) |自动调查不会导致特定的待处理操作。 <p> 发送大量电子邮件本身不是恶意的;用户可能只是向事件的一大组收件人发送电子邮件。 若要调查，请使用 [邮件流见解](mail-flow-insights-v2.md)，包括 [邮件](mfi-mail-flow-map-report.md) 流映射报告，以确定正在执行哪些操作并采取措施。|
 
 ## <a name="next-steps"></a>后续步骤
 
 - [在 Microsoft Defender for Office 365 中查看自动调查的详细信息和结果](air-view-investigation-results.md)
-- [在 Microsoft Defender for Office 365 中查看自动调查后挂起或已完成的修正操作](air-review-approve-pending-completed-actions.md)
+- [在 Microsoft Defender for Office 365 中自动调查后查看挂起或已完成的修正操作](air-review-approve-pending-completed-actions.md)
 
 ## <a name="related-articles"></a>相关文章
 
 - [了解 Microsoft Defender for Endpoint 中的自动调查](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations)
-- [了解 Microsoft 365 Defender 中的功能](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-threat-protection)
+- [了解 Microsoft 365 Defender 中的功能](../mtp/microsoft-threat-protection.md)

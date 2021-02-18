@@ -20,13 +20,13 @@ ms.custom:
 ms.reviewer: sstewart
 search.appverid:
 - MET150
-description: 了解如何使用页面诊断来优化 SharePoint Online 新式网站页面中的 web 部件的性能。
-ms.openlocfilehash: f7b72aa8ed212147c06660585c4e58e548762c35
-ms.sourcegitcommit: d3ca8021f7da00a474ac14aac5f1358204a848f2
+description: 了解如何使用页面诊断优化 SharePoint Online 新式网站页面中 Web 部件的性能。
+ms.openlocfilehash: ca1b9328ad71fdd4a3f3c6c6be47eaa3993d4fc7
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49519747"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50287145"
 ---
 # <a name="optimize-web-part-performance-in-sharepoint-online-modern-site-pages"></a>在 SharePoint Online 新式网站页面中优化 Web 部件性能
 
@@ -56,13 +56,16 @@ SharePoint Online 新式网站页面包含可能影响整个页面加载时间�
 
 结果中的可用信息包括：
 
-- “**创建者**”显示 Web 部件是自定义还是 Microsoft OOTB 部件
-- “**名称和 ID**”显示可帮助你在页面上查找 Web 部件的标识信息
-- “**总计**”显示 Web 部件加载的总时间
-- “**模块加载**”显示提取和加载 Web 部件组件所需的时间
-- “**延迟加载**”显示页面主要部分中未显示的 Web 部件的延迟加载时间
-- “**初始化**”显示 Web 部件初始化所花的时间
-- “**呈现**”显示 Web 部件提取和呈现结果所需的时间
+- **由显示** Web 部件是自定义还是 Microsoft OOTB 进行创建。
+- **名称和 ID** 显示可帮助您在页面上查找 Web 部件标识信息。
+- **总计** 显示 Web 部件加载、初始化和呈现 Web 部件的总时间。 它是 Web 部件在页面上呈现的总相对时间，从开始到结束。
+- **模块** 加载显示下载、评估和加载扩展 JavaScript 和 CSS 文件所花时间。 然后，它将启动 Init 进程。
+- **延迟加载** 显示页面主部分中未显示的 Web 部件的延迟加载时间。 在某些情况下，要呈现的 Web 部件太多，并排入队列以呈现以最大程度地缩短页面加载时间。
+- **Init** 显示 Web 部件初始化数据所花时间。
+    它是异步调用，Init 时间是解决返回的承诺时 onInit 函数的时间计算。
+- **呈现** 显示一旦模块加载和 (Init) 用户界面呈现 UI 所花时间。
+    JavaScript 执行时，需要将 DOM 装载到文档 (页面) 。
+    呈现异步资源（例如图像）可能需要额外时间才能完成。
 
 提供此信息是为了帮助设计人员和开发人员解决问题。 此信息应提供给你的设计和开发团队。
 
@@ -80,7 +83,7 @@ Web 部件性能较差的原因有三类。 使用以下信息确定哪些问题
   - 重复使用作为 SharePoint 框架 (SPFx) 一部分的 _React_ 和 _Fabric 导入_ 等框架。 有关详细信息，请参阅 [SharePoint 框架概述](https://docs.microsoft.com/sharepoint/dev/spfx/sharepoint-framework-overview)。
   - 确保你使用的是最新版本的 SharePoint 框架，并在新版本推出时进行升级。
 - 数据提取/缓存
-  - 如果 web 部件依赖于额外的服务器调用来获取用于显示的数据，请确保这些服务器 Api 速度快和/或实现客户端缓存 (例如，使用 _localStorage_ 或 _IndexedDB_ 为大型集) 。
+  - 如果 Web 部件依赖额外的服务器调用来提取数据进行显示，请确保这些服务器 API 运行速度很快，并且/或实现客户端缓存 (例如，将 _localStorage_ 或 _IndexedDB_ 用于大型集) 。
   - 如果需要多次调用来呈现关键数据，请考虑在服务器上进行批处理或将请求合并到单个调用的其他方法。
   - 或者，如果某些数据元素需要较慢的 API，但对初始呈现并不重要，请将这些元素与在呈现关键数据后执行的单独调用进行分离。
   - 如果多个部件使用相同的数据，请使用公用数据层以避免重复调用。

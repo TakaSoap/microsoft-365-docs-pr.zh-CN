@@ -8,33 +8,37 @@ manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: how-to
-ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 003d7a74-3e16-4453-ae0c-9dbae51f66d1
 description: 管理员可以了解如何在独立 Exchange Online Protection 审核日志 EOP (中查看和搜索) 。
-ms.openlocfilehash: c65c09efa0f90fc9b63d635dae598b24d93ea714
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: ab6bf0a2739a88a075b636b990539b24006f3e63
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49659437"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50286473"
 ---
 # <a name="view-the-admin-audit-log-in-standalone-eop"></a>在独立 EOP 中查看管理员审核日志
+
+**适用对象**
+- [独立 Exchange Online Protection](exchange-online-protection-overview.md)
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
-在没有 Exchange Online 邮箱的独立 Exchange Online Protection (EOP) 组织中，可以使用 Exchange 管理中心 (EAC) 或独立 EOP PowerShell 搜索和查看管理 审核日志 中的条目。
+在没有 Exchange Online 邮箱的独立 Exchange Online Protection (EOP) 组织中，可以使用 Exchange 管理中心 (EAC) 或独立 EOP PowerShell 搜索和查看管理员 审核日志 中的条目。
 
-管理员审核日志管理员和已分配管理权限的用户基于独立 EOP PowerShell cmdlet 记录特定操作。 管理中心中的条目审核日志有关运行的 cmdlet、使用的参数、运行 cmdlet 的用户以及受影响的对象的信息。
+管理员审核日志管理员和已分配管理权限的用户基于独立的 EOP PowerShell cmdlet 记录特定操作。 管理中心中的条目审核日志有关运行的 cmdlet、使用的参数、运行 cmdlet 的用户以及受影响的对象的信息。
 
 > [!NOTE]
 >
-> - 默认情况下启用管理员审核日志记录，你无法禁用它。
+> - 默认情况下启用管理员审核日志记录，并且无法禁用它。
 >
-> - 管理员审核日志不记录基于以动词 **Get、Search** 或 **Test** 开头的 cmdlet **的操作**。
+> - 管理员审核日志记录基于以动词 **Get、Search** 或 **Test** 开头的 cmdlet **的操作**。
 >
-> - 审核日志条目将保留 90 天。 当条目超过 90 天时，它将被删除
+> - 审核日志条目将保留 90 天。 当条目超过 90 天时，将删除该条目
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>开始前，有必要了解什么？
 
@@ -42,16 +46,16 @@ ms.locfileid: "49659437"
 
 - 若要连接到独立 EOP PowerShell，请参阅[连接到 Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell)。
 
-- 您需在 Exchange Online Protection 中获得权限，然后才能执行本文中的过程。 具体来说，您需要审核 **日志** 或仅查看审核 **日志** 角色，默认情况下，该角色分配给组织管理、合规性管理和 **安全** 管理员角色组。 有关详细信息，请参阅独立 [EOP 中](feature-permissions-in-eop.md) 的权限和使用 [EAC 修改角色组的成员列表](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups)。
+- 您需要在 Exchange Online Protection 中分配权限，然后才能执行本文中的过程。 具体来说，您需要"审核 **日志**"或"仅查看审核 **日志**"角色，该角色默认分配给"组织管理"、"合规性管理"和"**安全** 管理员"角色组。  有关详细信息，请参阅独立 [EOP 中](feature-permissions-in-eop.md) 的权限和使用 [EAC 修改角色组的成员列表](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups)。
 
-- 有关可能适用于本文中的过程的键盘快捷方式的信息，请参阅 Exchange Online [中 Exchange 管理中心的键盘快捷方式](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center)。
+- 有关可能适用于本文中的过程的键盘快捷方式的信息，请参阅 Exchange Online 中 [Exchange 管理中心的键盘快捷方式](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center)。
 
 > [!TIP]
-> 是否有任何疑问？ 请在 [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351) 论坛中寻求帮助。
+> 是否有任何疑问？ 请在 [Exchange Online Protection](https://social.technet.microsoft.com/Forums/forefront/home?forum=FOPE) 论坛中寻求帮助。
 
 ## <a name="use-the-eac-to-view-the-admin-audit-log"></a>使用 EAC 查看管理员审核日志
 
-1. 在 EAC 中，转到"**合规性管理** 审核"，然后选择"运行 \> **管理员审核日志报告**。
+1. 在 EAC 中，转到 **"合规性管理** 审核"，然后选择"运行 \> **管理员审核日志报告**。
 
 2. 在打开 **的**"搜索管理员角色组更改"页中，选择开始日期和 **结束日期 (默认** 范围是过去两周) ，然后选择"**搜索"。** 在指定期间进行的所有配置更改都将显示并且可以使用以下信息进行排序：
 
@@ -65,13 +69,13 @@ ms.locfileid: "49659437"
 
    - **修改的对象**：由 cmdlet 修改的对象。
 
-   - **Parameters (Parameter：Value)**： the cmdlet parameters that were used， and any value specified with the parameter.
+   - **Parameters (Parameter：Value) ：** the cmdlet parameters that were used， and any value specified with the parameter.
 
-3. 如果要打印特定页面审核日志，请选择详细信息窗格中的"打印"按钮。 
+3. 如果要打印特定页面审核日志，请选择 **详细信息窗格中的** "打印"按钮。
 
-## <a name="use-standalone-eop-powershell-to-view-the-admin-audit-log"></a>使用独立 EOP PowerShell 查看管理员审核日志
+## <a name="use-standalone-eop-powershell-to-view-the-admin-audit-log"></a>使用独立的 EOP PowerShell 查看管理员审核日志
 
-可以使用独立 EOP PowerShell 搜索满足审核日志条件的电子邮件条目。 使用以下语法：
+可以使用独立 EOP PowerShell 搜索审核日志指定条件的条目。 使用以下语法：
 
 ```PowerShell
 Search-AdminAuditLog [-Cmdlets <Cmdlet1,Cmdlet2,...CmdletN>] [-Parameters <Parameter1,Parameter2,...ParameterN>] [-StartDate <UTCDateTime>] [-EndDate <UTCDateTime>] [-UserIds <"User1","User2",..."UserN">] [-ObjectIds <"Object1","Object2",..."ObjectN">] [-IsSuccess <$true | $false>]
@@ -79,24 +83,24 @@ Search-AdminAuditLog [-Cmdlets <Cmdlet1,Cmdlet2,...CmdletN>] [-Parameters <Param
 
 **注意**：
 
-- 只能将 _Parameters_ 参数与 _Cmdlets_ 参数一同使用。
+- 只能将 _Parameters_ 参数与 _Cmdlets 参数_ 一同使用。
 
-- _ObjectIds_ 参数按 cmdlet 修改的对象筛选结果。 有效值取决于对象在对象对象中的审核日志。 例如：
+- _ObjectIds_ 参数按 cmdlet 修改的对象筛选结果。 有效值取决于对象在对象中的审核日志。 例如：
 
   - 名称
   - 规范可分辨名称 (例如，contoso.com/Users/Akia Al-Zuhairi) 
 
   您可能需要在此 cmdlet 上使用其他筛选参数来缩小结果范围并确定感兴趣的对象类型。
 
-- _UserIds_ 参数按对运行 cmdlet (的用户筛选结果) 。
+- _UserIds 参数_ 按对运行 cmdlet (的用户筛选结果) 。
 
-- 对于 _StartDate_ 和 _EndDate_ 参数，如果指定不带时区的日期/时间值，则该值使用协调世界时 (UTC) 。 若要指定此参数的日期/时间值，请使用下列方法之一：
+- 对于 _StartDate 和_ _EndDate_ 参数，如果指定不带时区的日期/时间值，则该值使用协调世界时 (UTC) 。 若要指定此参数的日期/时间值，请使用下列方法之一：
 
   - 以 UTC 格式指定日期/时间值：例如，"2016-05-06 14:30:00z"。
 
-  - 将日期/时间值指定为将本地时区中的日期/时间转换为 UTC 的公式：例如， `(Get-Date "5/6/2016 9:30 AM").ToUniversalTime()` 。 有关详细信息，请参阅 [Get-Date](https://docs.microsoft.com/powershell/module/microsoft.powershell.utility/get-date)。
+  - 将日期/时间值指定为将本地时区的日期/时间转换为 UTC 的公式：例如， `(Get-Date "5/6/2016 9:30 AM").ToUniversalTime()` 。 有关详细信息，请参阅 [Get-Date](https://docs.microsoft.com/powershell/module/microsoft.powershell.utility/get-date)。
 
-- 默认情况下，此 cmdlet 最多返回 1，000 个日志条目。 使用 _ResultSize_ 参数可指定最多 250，000 个日志条目。 或者，使用 `Unlimited` 该值返回所有条目。
+- 默认情况下，此 cmdlet 最多返回 1，000 个日志条目。 使用 _ResultSize_ 参数可以指定最多 250，000 个日志条目。 或者，使用 `Unlimited` 该值返回所有条目。
 
 本示例将使用以下条件执行对所有审核日志条目的搜索：
 
@@ -149,12 +153,12 @@ Search-AdminAuditLog -Cmdlets Update-RoleGroupMember -StartDate (Get-Date "08/04
 |`ObjectModified`|此字段包含由该字段中指定的 cmdlet 修改 `CmdletName` 的对象。|
 |`CmdletName`|此字段包含用户在此字段中运行的 cmdlet `Caller` 的名称。|
 |`CmdletParameters`|此字段包含运行字段中的 cmdlet 时 `CmdletName` 指定的参数。 使用参数指定的值（如果有）也存储在此字段中，但是在默认输出中不可见。|
-|`ModifiedProperties`|此字段包含对该字段中的对象修改 `ObjectModified` 的属性。 属性的旧值和存储的新值也存储在此字段中，但在默认输出中不可见。|
-|`Caller`|此字段包含在此字段中运行 cmdlet 的用户 `CmdletName` 的用户帐户。|
+|`ModifiedProperties`|此字段包含对该字段中的对象修改 `ObjectModified` 的属性。 也存储在此字段中，但在默认输出中不可见的是属性的旧值和存储的新值。|
+|`Caller`|此字段包含在此字段中运行 cmdlet 的用户的 `CmdletName` 用户帐户。|
 |`ExternalAccess`|此字段由 EOP 在内部使用。|
-|`Succeeded`|此字段指定字段中的 cmdlet 是否 `CmdletName` 成功运行。 值为或 `True` `False` 。|
-|`Error`|此字段包含当字段中的 cmdlet 未能 `CmdletName` 成功完成时生成的错误消息。|
-|`RunDate`|此字段包含运行该字段中的 cmdlet 的 `CmdletName` 日期和时间。 日期和时间存储为协调世界时 (UTC) 格式。|
+|`Succeeded`|此字段指定字段中的 cmdlet 是否 `CmdletName` 成功运行。 该值为或 `True` `False` 。|
+|`Error`|此字段包含当字段中的 cmdlet 未能成功完成时 `CmdletName` 生成的错误消息。|
+|`RunDate`|此字段包含运行字段中的 cmdlet `CmdletName` 的日期和时间。 日期和时间存储为协调世界时 (UTC) 格式。|
 |`OriginatingServer`|此字段指示运行字段中指定的 cmdlet `CmdletName` 的服务器。|
 |`ClientIP`|此字段由 EOP 在内部使用。|
 |`SessionId`|此字段由 EOP 在内部使用。|

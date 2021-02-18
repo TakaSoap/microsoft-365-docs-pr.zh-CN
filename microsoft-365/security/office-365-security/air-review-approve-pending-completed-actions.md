@@ -19,36 +19,36 @@ description: 了解 Microsoft Defender for Office 365 计划 2 中的自动调�
 ms.technology: mdo
 ms.prod: m365-security
 ms.date: 01/29/2021
-ms.openlocfilehash: 3fb77fa41ff3e9af995cf80b9f4024aa92a51212
-ms.sourcegitcommit: 3dc795ea862b180484f76b3eb5d046e74041252b
+ms.openlocfilehash: a11e9ee6a4c2426951fe2b4aa4f2dd08d1931f1c
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "50176011"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50287109"
 ---
 # <a name="review-and-manage-remediation-actions-in-office-365"></a>查看和管理 Office 365 中的修正操作
 
-由于自动调查电子邮件&协作内容会导致裁定（如恶意或可疑）时，会创建某些修正操作。 在 Microsoft Defender for Office 365 中，修正操作可以包括：
+随着对电子邮件和协作&自动调查导致裁定（如恶意或可疑）时，会创建某些修正操作。 在 Microsoft Defender for Office 365 中，修正操作可以包括：
 - 在单击 (时阻止 URL) 
 - 软删除电子邮件或群集
 - 隔离电子邮件或电子邮件附件
 - 关闭外部邮件转发
 
-除非安全运营团队批准这些修正操作，否则不会执行这些修正操作。 我们建议尽快审阅和批准任何挂起的操作，以便自动调查及时完成。 在某些情况下，您可以撤消修正操作。
+除非安全运营团队批准这些修正操作，否则不会采取这些修正操作。 我们建议尽快审阅和批准任何挂起的操作，以便自动调查及时完成。 在某些情况下，您可以撤消修正操作。
 
-**适用于**
-- [Microsoft Defender for Office 365 计划 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+**适用对象**
+- [适用于 Office 365 计划 2 的 Microsoft Defender](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 ## <a name="approve-or-reject-pending-actions"></a>批准 (或拒绝) 挂起的操作
 
 1. 转到 Microsoft 365 安全中心 [https://security.microsoft.com](https://security.microsoft.com)) 登录。
 2. 在导航窗格中，选择 **操作中心**。
 3. 在 **"挂起** "选项卡上，查看等待审批的操作列表。
-4. 选择列表项。 随即打开其飞出窗格。 
-5. 查看飞出窗格中的信息，然后执行以下步骤之一：
+4. 选择列表项。 将打开其飞出窗格。 
+5. 查看飞出窗格中的信息，然后执行下列步骤之一：
    - 选择 **"打开** 调查"页以查看有关调查的更多详细信息。
-   - 选择 **"** 批准"以启动挂起的操作。
+   - 选择 **"批准** "以启动挂起的操作。
    - 选择 **"** 拒绝"可阻止执行挂起的操作。
 
 ## <a name="undo-one-remediation-action"></a>撤消一个修正操作
@@ -66,13 +66,13 @@ ms.locfileid: "50176011"
 ## <a name="to-remove-a-file-from-quarantine-across-multiple-devices"></a>跨多个设备从隔离区删除文件
 
 1. 转到操作中心 [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) () 登录。
-2. 在" **历史记录** "选项卡上，选择具有操作类型 **隔离文件的文件**。
-3. 在屏幕右侧窗格中，选择"应用到此文件的 **X** 更多实例"，然后选择"**撤消"。**
+2. 在" **历史记录"** 选项卡上，选择具有操作类型 **隔离文件的文件**。
+3. 在屏幕右侧窗格中，选择"应用到此文件的 **X** 更多实例"，然后选择"撤消 **"。**
 
 ## <a name="next-steps"></a>后续步骤
 
 - [使用威胁资源管理器](threat-explorer.md)
-- [如何在自动调查和响应功能中报告误报/负面影响](air-report-false-positives-negatives.md)
+- [如何在自动调查和响应功能中报告误报/负数](air-report-false-positives-negatives.md)
 
 ## <a name="see-also"></a>另请参阅
 

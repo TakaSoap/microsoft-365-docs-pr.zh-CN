@@ -21,20 +21,20 @@ ms.custom:
 description: Microsoft Defender for Office 365 包括安全附件、安全链接、高级防钓鱼工具、报告工具和威胁智能功能。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 7624b9a62530e54a161bbc4aacc8bee56ed959b2
-ms.sourcegitcommit: e920e68c8d0eac8b152039b52cfc139d478a67b3
+ms.openlocfilehash: 741b00a55ee73d16c82abd4806d06660d49be65b
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50150720"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50287661"
 ---
 # <a name="microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **适用对象**
-- [Microsoft Defender for Office 365 计划 1 和计划 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender for Office 365 计划 1 和计划 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 > [!IMPORTANT]
 > 本文适用于拥有 [Microsoft Defender for Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)的企业客户。 如果你使用的是 Outlook.com、Microsoft 365 家庭版或 Microsoft 365 个人版，并且正在查找有关 Outlook 中安全链接或安全附件的信息，请参阅[适用于 Microsoft 365 订阅者的高级 Outlook.com 安全机制](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2)。
@@ -92,7 +92,7 @@ Microsoft Defender for Office 365 可保护你的组织免受电子邮件、链�
 
 - 只有拥有 Microsoft 365 E5 或 Microsoft 365 E5 安全性许可证（未包括在 Microsoft Defender for Office 365 计划内）的用户才能使用[安全文档](safe-docs.md)功能。
 
-- 如果你当前的订阅不包括 Microsoft Defender for Office 365，请[与销售人员联系以开始试用](https://go.microsoft.com/fwlink/p/?LinkId=518644)，并查看 Defender for Office 365 如何为你的组织所用。
+- 如果你当前的订阅不包括 Microsoft Defender for Office 365，请[与销售人员联系以开始试用](https://info.microsoft.com/ww-landing-M365SMB-web-contact.html)，并查看 Defender for Office 365 如何为你的组织所用。
 
 ## <a name="configure-microsoft-defender-for-office-365-policies"></a>配置 Microsoft Defender for Office 365 策略
 
@@ -149,7 +149,7 @@ Microsoft Defender for Office 365 计划 2 包括同类最佳的[威胁调查和
 
 |角色或角色组|了解详细信息的资源|
 |---|---|
-|全局管理员（可以在 Azure Active Directory 或安全与合规中心内分配此权限）|[关于 Microsoft 365 管理员角色](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)|
+|全局管理员（可以在 Azure Active Directory 或安全与合规中心内分配此权限）|[关于 Microsoft 365 管理员角色](../../admin/add-users/about-admin-roles.md)|
 |安全管理员（可以在 Azure Active Directory 或安全与合规中心内分配此权限）|[Azure Active Directory 中的管理员角色权限](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles) <p> [安全与合规中心内的权限](permissions-in-the-security-and-compliance-center.md)|
 |Exchange Online 组织管理（在 Exchange Online 中分配此权限）|[Exchange Online 中的权限](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo) <p> [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell)|
 |搜索和清除（仅在安全与合规中心内分配此权限）|[安全与合规中心内的权限](permissions-in-the-security-and-compliance-center.md)|

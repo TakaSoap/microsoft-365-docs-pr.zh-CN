@@ -6,6 +6,7 @@ author: JoeDavies-MSFT
 manager: Laurawi
 ms.prod: m365-security
 ms.topic: article
+audience: Admin
 f1.keywords:
 - NOCSH
 ms.reviewer: martincoetzer
@@ -18,18 +19,18 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 ms.technology: mdo
-ms.openlocfilehash: 53d64d869b80c6fe5c6e0954a00af5b6f5359356
-ms.sourcegitcommit: a62ac3c01ba700a51b78a647e2301f27ac437c5a
+ms.openlocfilehash: fa00427d9f950a996a52f88c1b12608707d7aa8d
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/12/2021
-ms.locfileid: "50233082"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50288593"
 ---
 # <a name="prerequisite-work-for-implementing-identity-and-device-access-policies"></a>实现标识和设备访问策略的先决条件工作
 
 **适用对象**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Microsoft Defender for Office 365 计划 1 和计划 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender for Office 365 计划 1 和计划 2](office-365-atp.md)
 - Azure
 
 本文介绍了管理员使用推荐的标识和设备访问策略以及使用条件访问必须满足的先决条件。 它还讨论为 SSO) 体验的最佳单一登录配置客户端 (默认值。
@@ -85,7 +86,7 @@ ms.locfileid: "50233082"
 
 |平台|客户端|版本/说明|
 |---|---|---|
-|**Windows**|Outlook|2019, 2016, 2013 <p> [启用新式验证](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/enable-modern-authentication) <p> [所需的更新](https://support.office.com/article/Outlook-Updates-472c2322-23a4-4014-8f02-bbc09ad62213)|
+|**Windows**|Outlook|2019, 2016, 2013 <p> [启用新式验证](../../admin/security-and-compliance/enable-modern-authentication.md) <p> [所需的更新](https://support.office.com/article/Outlook-Updates-472c2322-23a4-4014-8f02-bbc09ad62213)|
 |**iOS**|Outlook for iOS|[最新版本](https://itunes.apple.com/us/app/microsoft-outlook-email-and-calendar/id951937596?mt=8)|
 |**Android**|Outlook for Android|[最新版本](https://play.google.com/store/apps/details?id=com.microsoft.office.outlook&hl=en)|
 |**macOS**|Outlook|2019 和 2016|
@@ -123,7 +124,7 @@ ms.locfileid: "50233082"
 
 - 使用 [Azure AD Privileged Identity Management](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-getting-started) 减少永久管理帐户的数量。
 - [使用特权访问管理](../../compliance/privileged-access-management-overview.md) 保护组织免受可能使用现有特权管理员帐户的漏洞，这些帐户具有对敏感数据的长期访问权限或关键配置设置的访问权限。
-- 创建和使用分配 [有 Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)管理员角色的单独 *帐户，用于管理*。 管理员应拥有自己的用户帐户，用于常规的非管理用途，并且仅在必要时使用管理帐户来完成与其角色或作业功能相关联的任务。
+- 创建和使用分配 [有 Microsoft 365](../../admin/add-users/about-admin-roles.md)管理员角色的单独 *帐户，用于管理*。 管理员应拥有自己的用户帐户，用于常规的非管理用途，并且仅在必要时使用管理帐户来完成与其角色或作业功能相关联的任务。
 - 遵循 [在](https://docs.microsoft.com/azure/active-directory/admin-roles-best-practices) Azure AD 中保护特权帐户的最佳实践。
 
 ## <a name="next-step"></a>后续步骤
