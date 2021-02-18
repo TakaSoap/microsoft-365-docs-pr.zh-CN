@@ -8,47 +8,52 @@ manager: laurawi
 ms.date: 12/15/2017
 audience: ITPro
 ms.topic: article
-ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom:
 - Ent_Solutions
 - seo-marvel-apr2020
 ms.assetid: 79a61003-4905-4ba8-9e8a-16def7add37c
-description: 管理独立的 SharePoint Online 团队网站，添加新用户和组，删除用户和组，并创建具有自定义权限的 documents 子文件夹。
-ms.openlocfilehash: 1e244738071b434efd09e8fd700462bbef7e116a
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+description: 管理独立的 SharePoint Online 团队网站、添加新用户和组、删除用户和组以及创建具有自定义权限的文档子文件夹。
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: 20e354de77b70ea69d69e201bd3b1d40ea32cc5b
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49616760"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50289517"
 ---
-# <a name="manage-an-isolated-sharepoint-online-team-site"></a><span data-ttu-id="1f6be-103">管理独立的 SharePoint Online 团队网站</span><span class="sxs-lookup"><span data-stu-id="1f6be-103">Manage an isolated SharePoint Online team site</span></span>
+# <a name="manage-an-isolated-sharepoint-online-team-site"></a><span data-ttu-id="f4468-103">管理独立的 SharePoint Online 团队网站</span><span class="sxs-lookup"><span data-stu-id="f4468-103">Manage an isolated SharePoint Online team site</span></span>
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+<span data-ttu-id="f4468-104">**适用对象**</span><span class="sxs-lookup"><span data-stu-id="f4468-104">**Applies to**</span></span>
+- [<span data-ttu-id="f4468-105">Exchange Online Protection</span><span class="sxs-lookup"><span data-stu-id="f4468-105">Exchange Online Protection</span></span>](exchange-online-protection-overview.md)
+- [<span data-ttu-id="f4468-106">Microsoft Defender for Office 365 计划 1</span><span class="sxs-lookup"><span data-stu-id="f4468-106">Microsoft Defender for Office 365 plan 1</span></span>](office-365-atp.md)
+- <span data-ttu-id="f4468-107">SharePoint Online</span><span class="sxs-lookup"><span data-stu-id="f4468-107">SharePoint Online</span></span> 
 
- <span data-ttu-id="1f6be-104">**摘要：** 使用这些过程管理独立的 SharePoint Online 团队网站。</span><span class="sxs-lookup"><span data-stu-id="1f6be-104">**Summary:** Manage your isolated SharePoint Online team site with these procedures.</span></span>
+ <span data-ttu-id="f4468-108">**摘要：** 通过这些过程管理独立的 SharePoint Online 团队网站。</span><span class="sxs-lookup"><span data-stu-id="f4468-108">**Summary:** Manage your isolated SharePoint Online team site with these procedures.</span></span>
 
-<span data-ttu-id="1f6be-105">本文介绍了独立的 SharePoint Online 团队网站的常见管理操作。</span><span class="sxs-lookup"><span data-stu-id="1f6be-105">This article describes common management operations for an isolated SharePoint Online team site.</span></span>
+<span data-ttu-id="f4468-109">本文介绍了独立 SharePoint Online 团队网站的常见管理操作。</span><span class="sxs-lookup"><span data-stu-id="f4468-109">This article describes common management operations for an isolated SharePoint Online team site.</span></span>
 
-## <a name="add-a-new-user"></a><span data-ttu-id="1f6be-106">添加新用户</span><span class="sxs-lookup"><span data-stu-id="1f6be-106">Add a new user</span></span>
+## <a name="add-a-new-user"></a><span data-ttu-id="f4468-110">添加新用户</span><span class="sxs-lookup"><span data-stu-id="f4468-110">Add a new user</span></span>
 
-<span data-ttu-id="1f6be-107">当有人新建加入网站时，您必须决定其在网站中的参与级别：</span><span class="sxs-lookup"><span data-stu-id="1f6be-107">When someone new joins the site, you must decide their level of participation in the site:</span></span>
+<span data-ttu-id="f4468-111">当有人新加入网站时，您必须确定其参与网站的级别：</span><span class="sxs-lookup"><span data-stu-id="f4468-111">When someone new joins the site, you must decide their level of participation in the site:</span></span>
 
-- <span data-ttu-id="1f6be-108">管理：将新用户帐户添加到网站管理员访问组</span><span class="sxs-lookup"><span data-stu-id="1f6be-108">Administration: Add the new user account to the site admins access group</span></span>
+- <span data-ttu-id="f4468-112">管理：将新用户帐户添加到网站管理员访问组</span><span class="sxs-lookup"><span data-stu-id="f4468-112">Administration: Add the new user account to the site admins access group</span></span>
 
-- <span data-ttu-id="1f6be-109">主动协作：将用户帐户添加到网站成员访问组</span><span class="sxs-lookup"><span data-stu-id="1f6be-109">Active collaboration: Add the user account to the site members access group</span></span>
+- <span data-ttu-id="f4468-113">活动协作：将用户帐户添加到网站成员访问组</span><span class="sxs-lookup"><span data-stu-id="f4468-113">Active collaboration: Add the user account to the site members access group</span></span>
 
-- <span data-ttu-id="1f6be-110">查看：将用户帐户添加到网站查看者访问组</span><span class="sxs-lookup"><span data-stu-id="1f6be-110">Viewing: Add the user account to the site viewers access group</span></span>
+- <span data-ttu-id="f4468-114">查看：将用户帐户添加到网站查看者访问组</span><span class="sxs-lookup"><span data-stu-id="f4468-114">Viewing: Add the user account to the site viewers access group</span></span>
 
-<span data-ttu-id="1f6be-111">如果通过 Active Directory 域服务 (AD DS) 管理用户帐户和组，请使用常规 AD DS 用户和组管理过程将相应的用户添加到相应的访问组，并等待与订阅的同步。</span><span class="sxs-lookup"><span data-stu-id="1f6be-111">If you are managing user accounts and groups through Active Directory Domain Services (AD DS), add the appropriate users to the appropriate access groups using your normal AD DS user and group management procedures and wait for synchronization with your subscription.</span></span>
+<span data-ttu-id="f4468-115">如果要通过 Active Directory 域服务 (AD DS) 管理用户帐户和组，则使用正常的 AD DS 用户和组管理过程将相应的用户添加到相应的访问组，并等待与订阅同步。</span><span class="sxs-lookup"><span data-stu-id="f4468-115">If you are managing user accounts and groups through Active Directory Domain Services (AD DS), add the appropriate users to the appropriate access groups using your normal AD DS user and group management procedures and wait for synchronization with your subscription.</span></span>
 
-<span data-ttu-id="1f6be-112">如果通过 Microsoft 365 管理用户帐户和组，则可以使用 Microsoft 365 管理中心或 Microsoft PowerShell：</span><span class="sxs-lookup"><span data-stu-id="1f6be-112">If you are managing user accounts and groups through Microsoft 365, you can use the Microsoft 365 admin center or Microsoft PowerShell:</span></span>
+<span data-ttu-id="f4468-116">如果通过 Microsoft 365 管理用户帐户和组，可以使用 Microsoft 365 管理中心或 Microsoft PowerShell：</span><span class="sxs-lookup"><span data-stu-id="f4468-116">If you are managing user accounts and groups through Microsoft 365, you can use the Microsoft 365 admin center or Microsoft PowerShell:</span></span>
 
-- <span data-ttu-id="1f6be-113">对于 Microsoft 365 管理中心，使用已分配有用户帐户管理员或公司管理员角色的用户帐户登录，并使用组将相应的用户添加到相应的访问组。</span><span class="sxs-lookup"><span data-stu-id="1f6be-113">For the Microsoft 365 admin center, sign in with a user account that has been assigned the User Account Administrator or Company Administrator role and use Groups to add the appropriate users to the appropriate access groups.</span></span>
+- <span data-ttu-id="f4468-117">对于 Microsoft 365 管理中心，使用已分配有用户帐户管理员或公司管理员角色的用户帐户登录，并使用组将相应的用户添加到相应的访问组。</span><span class="sxs-lookup"><span data-stu-id="f4468-117">For the Microsoft 365 admin center, sign in with a user account that has been assigned the User Account Administrator or Company Administrator role and use Groups to add the appropriate users to the appropriate access groups.</span></span>
 
-- <span data-ttu-id="1f6be-114">对于 PowerShell，首先 [与 Azure Active Directory PowerShell For Graph 模块进行连接](https://docs.microsoft.com/microsoft-365/enterprise/connect-to-microsoft-365-powershell#connect-with-the-azure-active-directory-powershell-for-graph-module)。</span><span class="sxs-lookup"><span data-stu-id="1f6be-114">For PowerShell, first [Connect with the Azure Active Directory PowerShell for Graph module](https://docs.microsoft.com/microsoft-365/enterprise/connect-to-microsoft-365-powershell#connect-with-the-azure-active-directory-powershell-for-graph-module).</span></span> <span data-ttu-id="1f6be-115">若要将用户帐户添加到其用户主体名称 (UPN) 的访问组，请使用以下 PowerShell 命令块：</span><span class="sxs-lookup"><span data-stu-id="1f6be-115">To add a user account to an access group with its user principal name (UPN), use the following PowerShell command block:</span></span>
+- <span data-ttu-id="f4468-118">对于 PowerShell，首先 [使用适用于 Graph 模块的 Azure Active Directory PowerShell 进行连接](../../enterprise/connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)。</span><span class="sxs-lookup"><span data-stu-id="f4468-118">For PowerShell, first [Connect with the Azure Active Directory PowerShell for Graph module](../../enterprise/connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).</span></span> <span data-ttu-id="f4468-119">若要将用户帐户添加到其用户主体名称为 UPN (访问) ，请使用以下 PowerShell 命令块：</span><span class="sxs-lookup"><span data-stu-id="f4468-119">To add a user account to an access group with its user principal name (UPN), use the following PowerShell command block:</span></span>
 
 ```powershell
 $userUPN="<UPN of the user account>"
@@ -56,7 +61,7 @@ $grpName="<display name of the group>"
 Add-AzureADGroupMember -RefObjectId (Get-AzureADUser | Where { $_.UserPrincipalName -eq $userUPN }).ObjectID -ObjectID (Get-AzureADGroup | Where { $_.DisplayName -eq $grpName }).ObjectID
 ```
 
-<span data-ttu-id="1f6be-116">若要向具有其显示名称的访问组添加用户帐户，请使用以下 PowerShell 命令块：</span><span class="sxs-lookup"><span data-stu-id="1f6be-116">To add a user account to an access group with its display name, use the following PowerShell command block:</span></span>
+<span data-ttu-id="f4468-120">若要将用户帐户添加到具有其权限显示名称，请使用以下 PowerShell 命令块：</span><span class="sxs-lookup"><span data-stu-id="f4468-120">To add a user account to an access group with its display name, use the following PowerShell command block:</span></span>
 
 ```powershell
 $userDisplayName="<display name of the user account>"
@@ -64,24 +69,24 @@ $grpName="<display name of the group>"
 Add-AzureADGroupMember -RefObjectId (Get-AzureADUser | Where { $_.DisplayName -eq $userDisplayName }).ObjectID -ObjectID (Get-AzureADGroup | Where { $_.DisplayName -eq $grpName }).ObjectID
 ```
 
-## <a name="add-a-new-group"></a><span data-ttu-id="1f6be-117">添加新组</span><span class="sxs-lookup"><span data-stu-id="1f6be-117">Add a new group</span></span>
+## <a name="add-a-new-group"></a><span data-ttu-id="f4468-121">添加新组</span><span class="sxs-lookup"><span data-stu-id="f4468-121">Add a new group</span></span>
 
-<span data-ttu-id="1f6be-118">若要添加对整个组的访问权限，您必须确定网站中组的所有成员的参与级别：</span><span class="sxs-lookup"><span data-stu-id="1f6be-118">To add access to an entire group, you must decide the level of participation of all the members of the group in the site:</span></span>
+<span data-ttu-id="f4468-122">若要添加对整个组的访问权限，您必须确定网站中组所有成员的参与级别：</span><span class="sxs-lookup"><span data-stu-id="f4468-122">To add access to an entire group, you must decide the level of participation of all the members of the group in the site:</span></span>
 
-- <span data-ttu-id="1f6be-119">管理：将组添加到网站管理员访问组</span><span class="sxs-lookup"><span data-stu-id="1f6be-119">Administration: Add the group to the site admins access group</span></span>
+- <span data-ttu-id="f4468-123">管理：将组添加到网站管理员访问组</span><span class="sxs-lookup"><span data-stu-id="f4468-123">Administration: Add the group to the site admins access group</span></span>
 
-- <span data-ttu-id="1f6be-120">主动协作：将组添加到网站成员访问组</span><span class="sxs-lookup"><span data-stu-id="1f6be-120">Active collaboration: Add the group to the site members access group</span></span>
+- <span data-ttu-id="f4468-124">活动协作：将组添加到网站成员访问组</span><span class="sxs-lookup"><span data-stu-id="f4468-124">Active collaboration: Add the group to the site members access group</span></span>
 
-- <span data-ttu-id="1f6be-121">查看：将组添加到网站查看器访问组</span><span class="sxs-lookup"><span data-stu-id="1f6be-121">Viewing: Add the group to the site viewers access group</span></span>
+- <span data-ttu-id="f4468-125">查看：将组添加到网站查看者访问组</span><span class="sxs-lookup"><span data-stu-id="f4468-125">Viewing: Add the group to the site viewers access group</span></span>
 
-<span data-ttu-id="1f6be-122">如果通过 AD DS 管理用户帐户和组，请使用常规 AD DS 用户和组管理过程将适当的组添加到适当的组，并等待与订阅的同步。</span><span class="sxs-lookup"><span data-stu-id="1f6be-122">If you are managing user accounts and groups through AD DS, add the appropriate groups to the appropriate groups using your normal AD DS user and group management procedures and wait for synchronization with your subscription.</span></span>
+<span data-ttu-id="f4468-126">如果通过 AD DS 管理用户帐户和组，则使用正常的 AD DS 用户和组管理过程将相应的组添加到相应的组，并等待与订阅同步。</span><span class="sxs-lookup"><span data-stu-id="f4468-126">If you are managing user accounts and groups through AD DS, add the appropriate groups to the appropriate groups using your normal AD DS user and group management procedures and wait for synchronization with your subscription.</span></span>
 
-<span data-ttu-id="1f6be-123">如果您通过 Office 365 管理用户帐户和组，则可以使用 Microsoft 365 管理中心或 PowerShell：</span><span class="sxs-lookup"><span data-stu-id="1f6be-123">If you are managing user accounts and groups through Office 365, you can use the Microsoft 365 admin center or PowerShell:</span></span>
+<span data-ttu-id="f4468-127">如果通过 Office 365 管理用户帐户和组，可以使用 Microsoft 365 管理中心或 PowerShell：</span><span class="sxs-lookup"><span data-stu-id="f4468-127">If you are managing user accounts and groups through Office 365, you can use the Microsoft 365 admin center or PowerShell:</span></span>
 
-- <span data-ttu-id="1f6be-124">对于 Microsoft 365 管理中心，使用已分配有用户帐户管理员或公司管理员角色的用户帐户登录，并使用组将适当的组添加到相应的访问组。</span><span class="sxs-lookup"><span data-stu-id="1f6be-124">For the Microsoft 365 admin center, sign in with a user account that has been assigned the User Account Administrator or Company Administrator role and use Groups to add the appropriate groups to the appropriate access groups.</span></span>
+- <span data-ttu-id="f4468-128">对于 Microsoft 365 管理中心，使用已分配有用户帐户管理员或公司管理员角色的用户帐户登录，并使用组将相应的组添加到相应的访问组。</span><span class="sxs-lookup"><span data-stu-id="f4468-128">For the Microsoft 365 admin center, sign in with a user account that has been assigned the User Account Administrator or Company Administrator role and use Groups to add the appropriate groups to the appropriate access groups.</span></span>
 
-- <span data-ttu-id="1f6be-125">对于 PowerShell，首先 [与 Azure Active Directory PowerShell For Graph 模块进行连接](https://docs.microsoft.com/microsoft-365/enterprise/connect-to-microsoft-365-powershell#connect-with-the-azure-active-directory-powershell-for-graph-module)。</span><span class="sxs-lookup"><span data-stu-id="1f6be-125">For PowerShell, first [Connect with the Azure Active Directory PowerShell for Graph module](https://docs.microsoft.com/microsoft-365/enterprise/connect-to-microsoft-365-powershell#connect-with-the-azure-active-directory-powershell-for-graph-module).</span></span>
- <span data-ttu-id="1f6be-126">然后，使用以下 PowerShell 命令：</span><span class="sxs-lookup"><span data-stu-id="1f6be-126">Then, use the following PowerShell commands:</span></span>
+- <span data-ttu-id="f4468-129">对于 PowerShell，首先 [使用适用于 Graph 模块的 Azure Active Directory PowerShell 进行连接](../../enterprise/connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)。</span><span class="sxs-lookup"><span data-stu-id="f4468-129">For PowerShell, first [Connect with the Azure Active Directory PowerShell for Graph module](../../enterprise/connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).</span></span>
+ <span data-ttu-id="f4468-130">然后，使用以下 PowerShell 命令：</span><span class="sxs-lookup"><span data-stu-id="f4468-130">Then, use the following PowerShell commands:</span></span>
 
 ```powershell
 $newGroupName="<display name of the new group to add>"
@@ -89,24 +94,24 @@ $siteGrpName="<display name of the access group>"
 Add-AzureADGroupMember -RefObjectId (Get-AzureADGroup | Where { $_.DisplayName -eq $newGroupName }).ObjectID -ObjectID (Get-AzureADGroup | Where { $_.DisplayName -eq $siteGrpName }).ObjectID
 ```
 
-## <a name="remove-a-user"></a><span data-ttu-id="1f6be-127">删除用户</span><span class="sxs-lookup"><span data-stu-id="1f6be-127">Remove a user</span></span>
+## <a name="remove-a-user"></a><span data-ttu-id="f4468-131">删除用户</span><span class="sxs-lookup"><span data-stu-id="f4468-131">Remove a user</span></span>
 
-<span data-ttu-id="1f6be-128">当必须从网站中删除某人的访问权限时，您可以从访问组中删除他们当前为其成员的访问组，具体取决于其在网站中的参与情况：</span><span class="sxs-lookup"><span data-stu-id="1f6be-128">When someone's access must be removed from the site, you remove them from the access group for which they are currently a member based on their participation in the site:</span></span>
+<span data-ttu-id="f4468-132">当必须从网站中删除某人的访问权限时，根据用户对网站的参与情况，将其从当前是访问组的成员中删除：</span><span class="sxs-lookup"><span data-stu-id="f4468-132">When someone's access must be removed from the site, you remove them from the access group for which they are currently a member based on their participation in the site:</span></span>
 
-- <span data-ttu-id="1f6be-129">管理：从网站管理员访问组中删除用户帐户</span><span class="sxs-lookup"><span data-stu-id="1f6be-129">Administration: Remove the user account from the site admins access group</span></span>
+- <span data-ttu-id="f4468-133">管理：从网站管理员访问组中删除用户帐户</span><span class="sxs-lookup"><span data-stu-id="f4468-133">Administration: Remove the user account from the site admins access group</span></span>
 
-- <span data-ttu-id="1f6be-130">主动协作：从网站成员访问组中删除用户帐户</span><span class="sxs-lookup"><span data-stu-id="1f6be-130">Active collaboration: Remove the user account from the site members access group</span></span>
+- <span data-ttu-id="f4468-134">活动协作：从网站成员访问组中删除用户帐户</span><span class="sxs-lookup"><span data-stu-id="f4468-134">Active collaboration: Remove the user account from the site members access group</span></span>
 
-- <span data-ttu-id="1f6be-131">查看：从网站查看器访问组中删除用户帐户</span><span class="sxs-lookup"><span data-stu-id="1f6be-131">Viewing: Remove the user account from the site viewers access group</span></span>
+- <span data-ttu-id="f4468-135">查看：从网站查看者访问组中删除用户帐户</span><span class="sxs-lookup"><span data-stu-id="f4468-135">Viewing: Remove the user account from the site viewers access group</span></span>
 
-<span data-ttu-id="1f6be-132">如果通过 AD DS 管理用户帐户和组，请使用常规 AD DS 用户和组管理过程从适当的访问组中删除相应的用户，并等待与订阅的同步。</span><span class="sxs-lookup"><span data-stu-id="1f6be-132">If you are managing user accounts and groups through AD DS, remove the appropriate users from the appropriate access groups using your normal AD DS user and group management procedures and wait for synchronization with your subscription.</span></span>
+<span data-ttu-id="f4468-136">如果通过 AD DS 管理用户帐户和组，则使用正常的 AD DS 用户和组管理过程从相应的访问组中删除相应的用户，并等待与订阅同步。</span><span class="sxs-lookup"><span data-stu-id="f4468-136">If you are managing user accounts and groups through AD DS, remove the appropriate users from the appropriate access groups using your normal AD DS user and group management procedures and wait for synchronization with your subscription.</span></span>
 
-<span data-ttu-id="1f6be-133">如果您通过 Office 365 管理用户帐户和组，则可以使用 Microsoft 365 管理中心或 PowerShell：</span><span class="sxs-lookup"><span data-stu-id="1f6be-133">If you are managing user accounts and groups through Office 365, you can use the Microsoft 365 admin center or PowerShell:</span></span>
+<span data-ttu-id="f4468-137">如果通过 Office 365 管理用户帐户和组，可以使用 Microsoft 365 管理中心或 PowerShell：</span><span class="sxs-lookup"><span data-stu-id="f4468-137">If you are managing user accounts and groups through Office 365, you can use the Microsoft 365 admin center or PowerShell:</span></span>
 
-- <span data-ttu-id="1f6be-134">对于 Microsoft 365 管理中心，使用已分配有用户帐户管理员或公司管理员角色的用户帐户登录，并使用组从相应的访问组中删除相应的用户。</span><span class="sxs-lookup"><span data-stu-id="1f6be-134">For the Microsoft 365 admin center, sign in with a user account that has been assigned the User Account Administrator or Company Administrator role and use Groups to remove the appropriate users from the appropriate access groups.</span></span>
+- <span data-ttu-id="f4468-138">对于 Microsoft 365 管理中心，使用已分配有用户帐户管理员或公司管理员角色的用户帐户登录，并使用组从相应的访问组中删除相应的用户。</span><span class="sxs-lookup"><span data-stu-id="f4468-138">For the Microsoft 365 admin center, sign in with a user account that has been assigned the User Account Administrator or Company Administrator role and use Groups to remove the appropriate users from the appropriate access groups.</span></span>
 
-- <span data-ttu-id="1f6be-135">对于 PowerShell，首先 [与 Azure Active Directory PowerShell For Graph 模块进行连接](https://docs.microsoft.com/microsoft-365/enterprise/connect-to-microsoft-365-powershell#connect-with-the-azure-active-directory-powershell-for-graph-module)。</span><span class="sxs-lookup"><span data-stu-id="1f6be-135">For PowerShell, first [Connect with the Azure Active Directory PowerShell for Graph module](https://docs.microsoft.com/microsoft-365/enterprise/connect-to-microsoft-365-powershell#connect-with-the-azure-active-directory-powershell-for-graph-module).</span></span>
-<span data-ttu-id="1f6be-136">若要从具有 UPN 的访问组中删除用户帐户，请使用以下 PowerShell 命令块：</span><span class="sxs-lookup"><span data-stu-id="1f6be-136">To remove a user account from an access group with its UPN, use the following PowerShell command block:</span></span>
+- <span data-ttu-id="f4468-139">对于 PowerShell，首先 [使用适用于 Graph 模块的 Azure Active Directory PowerShell 进行连接](../../enterprise/connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)。</span><span class="sxs-lookup"><span data-stu-id="f4468-139">For PowerShell, first [Connect with the Azure Active Directory PowerShell for Graph module](../../enterprise/connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).</span></span>
+<span data-ttu-id="f4468-140">若要从具有其 UPN 的访问组中删除用户帐户，请使用以下 PowerShell 命令块：</span><span class="sxs-lookup"><span data-stu-id="f4468-140">To remove a user account from an access group with its UPN, use the following PowerShell command block:</span></span>
 
 ```powershell
 $userUPN="<UPN of the user account>"
@@ -114,7 +119,7 @@ $grpName="<display name of the access group>"
 Remove-AzureADGroupMember -MemberId (Get-AzureADUser | Where { $_.UserPrincipalName -eq $userUPN }).ObjectID -ObjectID (Get-AzureADGroup | Where { $_.DisplayName -eq $grpName }).ObjectID
 ```
 
-<span data-ttu-id="1f6be-137">若要从具有显示名称的访问组中删除用户帐户，请使用以下 PowerShell 命令块：</span><span class="sxs-lookup"><span data-stu-id="1f6be-137">To remove a user account from an access group with its display name, use the following PowerShell command block:</span></span>
+<span data-ttu-id="f4468-141">若要从访问组中删除用户帐户及其显示名称，请使用以下 PowerShell 命令块：</span><span class="sxs-lookup"><span data-stu-id="f4468-141">To remove a user account from an access group with its display name, use the following PowerShell command block:</span></span>
 
 ```powershell
 $userDisplayName="<display name of the user account>"
@@ -122,24 +127,24 @@ $grpName="<display name of the access group>"
 Remove-AzureADGroupMember -MemberId (Get-AzureADUser | Where { $_.DisplayName -eq $userDisplayName }).ObjectID -ObjectID (Get-AzureADGroup | Where { $_.DisplayName -eq $grpName }).ObjectID
 ```
 
-## <a name="remove-a-group"></a><span data-ttu-id="1f6be-138">删除组</span><span class="sxs-lookup"><span data-stu-id="1f6be-138">Remove a group</span></span>
+## <a name="remove-a-group"></a><span data-ttu-id="f4468-142">删除组</span><span class="sxs-lookup"><span data-stu-id="f4468-142">Remove a group</span></span>
 
-<span data-ttu-id="1f6be-139">若要删除对整个组的访问权限，您可以从访问组中删除其当前为其成员的访问组，这些组基于其在站点中的参与情况：</span><span class="sxs-lookup"><span data-stu-id="1f6be-139">To remove access for an entire group, you remove the group from the access group for which they are currently a member based on their participation in the site:</span></span>
+<span data-ttu-id="f4468-143">若要删除整个组的访问权限，请根据用户对网站的参与情况，从当前他们作为访问组的成员的访问组中删除该组：</span><span class="sxs-lookup"><span data-stu-id="f4468-143">To remove access for an entire group, you remove the group from the access group for which they are currently a member based on their participation in the site:</span></span>
 
-- <span data-ttu-id="1f6be-140">管理：从网站管理员访问组中删除组</span><span class="sxs-lookup"><span data-stu-id="1f6be-140">Administration: Remove the group from the site admins access group</span></span>
+- <span data-ttu-id="f4468-144">管理：从网站管理员访问组中删除组</span><span class="sxs-lookup"><span data-stu-id="f4468-144">Administration: Remove the group from the site admins access group</span></span>
 
-- <span data-ttu-id="1f6be-141">主动协作：从网站成员访问组中删除组</span><span class="sxs-lookup"><span data-stu-id="1f6be-141">Active collaboration: Remove the group from the site members access group</span></span>
+- <span data-ttu-id="f4468-145">活动协作：从网站成员访问组中删除组</span><span class="sxs-lookup"><span data-stu-id="f4468-145">Active collaboration: Remove the group from the site members access group</span></span>
 
-- <span data-ttu-id="1f6be-142">查看：从网站查看器访问组中删除组</span><span class="sxs-lookup"><span data-stu-id="1f6be-142">Viewing: Remove the group from the site viewers access group</span></span>
+- <span data-ttu-id="f4468-146">查看：从网站查看者访问组中删除组</span><span class="sxs-lookup"><span data-stu-id="f4468-146">Viewing: Remove the group from the site viewers access group</span></span>
 
-<span data-ttu-id="1f6be-143">如果通过 Windows Server Active Directory 管理用户帐户和组，请使用常规 AD DS 用户和组管理过程从适当的访问组中删除相应的组，并等待与订阅的同步。</span><span class="sxs-lookup"><span data-stu-id="1f6be-143">If you are managing user accounts and groups through Windows Server Active Directory, remove the appropriate groups from the appropriate access groups using your normal AD DS user and group management procedures and wait for synchronization with your subscription.</span></span>
+<span data-ttu-id="f4468-147">如果要通过 Windows Server Active Directory 管理用户帐户和组，则使用正常的 AD DS 用户和组管理过程从相应的访问组中删除相应的组，并等待与订阅同步。</span><span class="sxs-lookup"><span data-stu-id="f4468-147">If you are managing user accounts and groups through Windows Server Active Directory, remove the appropriate groups from the appropriate access groups using your normal AD DS user and group management procedures and wait for synchronization with your subscription.</span></span>
 
-<span data-ttu-id="1f6be-144">如果您通过 Office 365 管理用户帐户和组，则可以使用 Microsoft 365 管理中心或 PowerShell：</span><span class="sxs-lookup"><span data-stu-id="1f6be-144">If you are managing user accounts and groups through Office 365, you can use the Microsoft 365 admin center or PowerShell:</span></span>
+<span data-ttu-id="f4468-148">如果通过 Office 365 管理用户帐户和组，可以使用 Microsoft 365 管理中心或 PowerShell：</span><span class="sxs-lookup"><span data-stu-id="f4468-148">If you are managing user accounts and groups through Office 365, you can use the Microsoft 365 admin center or PowerShell:</span></span>
 
-- <span data-ttu-id="1f6be-145">对于 Microsoft 365 管理中心，使用已分配有用户帐户管理员或公司管理员角色的用户帐户登录，并使用组从相应的访问组中删除相应的组。</span><span class="sxs-lookup"><span data-stu-id="1f6be-145">For the Microsoft 365 admin center, sign in with a user account that has been assigned the User Account Administrator or Company Administrator role and use Groups to remove the appropriate groups from the appropriate access groups.</span></span>
+- <span data-ttu-id="f4468-149">对于 Microsoft 365 管理中心，使用已分配有用户帐户管理员或公司管理员角色的用户帐户登录，并使用组从相应的访问组中删除相应的组。</span><span class="sxs-lookup"><span data-stu-id="f4468-149">For the Microsoft 365 admin center, sign in with a user account that has been assigned the User Account Administrator or Company Administrator role and use Groups to remove the appropriate groups from the appropriate access groups.</span></span>
 
-- <span data-ttu-id="1f6be-146">对于 PowerShell，首先 [与 Azure Active Directory PowerShell For Graph 模块进行连接](https://docs.microsoft.com/microsoft-365/enterprise/connect-to-microsoft-365-powershell#connect-with-the-azure-active-directory-powershell-for-graph-module)。</span><span class="sxs-lookup"><span data-stu-id="1f6be-146">For PowerShell, first [Connect with the Azure Active Directory PowerShell for Graph module](https://docs.microsoft.com/microsoft-365/enterprise/connect-to-microsoft-365-powershell#connect-with-the-azure-active-directory-powershell-for-graph-module).</span></span>
-<span data-ttu-id="1f6be-147">若要使用用户的显示名称从访问组中删除组，请使用以下 PowerShell 命令块：</span><span class="sxs-lookup"><span data-stu-id="1f6be-147">To remove a group from an access group using their display names, use the following PowerShell command block:</span></span>
+- <span data-ttu-id="f4468-150">对于 PowerShell，首先 [使用适用于 Graph 模块的 Azure Active Directory PowerShell 进行连接](../../enterprise/connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)。</span><span class="sxs-lookup"><span data-stu-id="f4468-150">For PowerShell, first [Connect with the Azure Active Directory PowerShell for Graph module](../../enterprise/connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).</span></span>
+<span data-ttu-id="f4468-151">若要使用其显示名称从访问组中删除组，请使用以下 PowerShell 命令块：</span><span class="sxs-lookup"><span data-stu-id="f4468-151">To remove a group from an access group using their display names, use the following PowerShell command block:</span></span>
 
 ```powershell
 $groupMemberName="<display name of the group to remove>"
@@ -147,50 +152,50 @@ $grpName="<display name of the access group>"
 Remove-AzureADGroupMember -MemberId (Get-AzureADGroup | Where { $_.DisplayName -eq $groupMemberName }).ObjectID -ObjectID (Get-AzureADGroup | Where { $_.DisplayName -eq $grpName }).ObjectID
 ```
 
-## <a name="create-a-documents-subfolder-with-custom-permissions"></a><span data-ttu-id="1f6be-148">使用自定义权限创建 documents 子文件夹</span><span class="sxs-lookup"><span data-stu-id="1f6be-148">Create a documents subfolder with custom permissions</span></span>
+## <a name="create-a-documents-subfolder-with-custom-permissions"></a><span data-ttu-id="f4468-152">使用自定义权限创建文档子文件夹</span><span class="sxs-lookup"><span data-stu-id="f4468-152">Create a documents subfolder with custom permissions</span></span>
 
-<span data-ttu-id="1f6be-149">在某些情况下，在独立网站中工作的人员的子集需要更多的专用空间进行协作。</span><span class="sxs-lookup"><span data-stu-id="1f6be-149">In some cases, a subset of the people working within the isolated site need a more private place to collaborate.</span></span> <span data-ttu-id="1f6be-150">对于 SharePoint Online 网站，可以在网站的 "文档" 文件夹中创建一个子文件夹，并分配自定义权限。</span><span class="sxs-lookup"><span data-stu-id="1f6be-150">For SharePoint Online sites, you can create a subfolder in the Documents folder of the site and assign custom permissions.</span></span> <span data-ttu-id="1f6be-151">没有权限的人员将看不到子文件夹。</span><span class="sxs-lookup"><span data-stu-id="1f6be-151">Those without permissions will not see the subfolder.</span></span>
+<span data-ttu-id="f4468-153">在某些情况下，在独立网站中工作的一部分人员需要一个更为私人的协作位置。</span><span class="sxs-lookup"><span data-stu-id="f4468-153">In some cases, a subset of the people working within the isolated site need a more private place to collaborate.</span></span> <span data-ttu-id="f4468-154">对于 SharePoint Online 网站，您可以在网站的"文档"文件夹中创建子文件夹并分配自定义权限。</span><span class="sxs-lookup"><span data-stu-id="f4468-154">For SharePoint Online sites, you can create a subfolder in the Documents folder of the site and assign custom permissions.</span></span> <span data-ttu-id="f4468-155">没有权限的用户将看不到子文件夹。</span><span class="sxs-lookup"><span data-stu-id="f4468-155">Those without permissions will not see the subfolder.</span></span>
 
-<span data-ttu-id="1f6be-152">若要创建具有自定义权限的 documents 子文件夹，请执行以下操作：</span><span class="sxs-lookup"><span data-stu-id="1f6be-152">To create a documents subfolder with custom permissions, do the following:</span></span>
+<span data-ttu-id="f4468-156">若要创建具有自定义权限的文档子文件夹，请执行下列操作：</span><span class="sxs-lookup"><span data-stu-id="f4468-156">To create a documents subfolder with custom permissions, do the following:</span></span>
 
-1. <span data-ttu-id="1f6be-153">登录到属于该网站的 "管理员" 访问组成员的帐户。</span><span class="sxs-lookup"><span data-stu-id="1f6be-153">Sign in to an account that is a member of the admins access group for the site.</span></span> <span data-ttu-id="1f6be-154">如需帮助，请参阅[在哪里登录 Microsoft 365](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4)。</span><span class="sxs-lookup"><span data-stu-id="1f6be-154">For help, see [Where to sign in to Microsoft 365](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4).</span></span>
+1. <span data-ttu-id="f4468-157">登录到作为网站的管理员访问组的成员的帐户。</span><span class="sxs-lookup"><span data-stu-id="f4468-157">Sign in to an account that is a member of the admins access group for the site.</span></span> <span data-ttu-id="f4468-158">如需帮助，请参阅[在哪里登录 Microsoft 365](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4)。</span><span class="sxs-lookup"><span data-stu-id="f4468-158">For help, see [Where to sign in to Microsoft 365](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4).</span></span>
 
-2. <span data-ttu-id="1f6be-155">转到独立的团队网站，然后单击 " **文档**"。</span><span class="sxs-lookup"><span data-stu-id="1f6be-155">Go to the isolated team site and click **Documents**.</span></span>
+2. <span data-ttu-id="f4468-159">转到独立团队网站，然后单击"**文档"。**</span><span class="sxs-lookup"><span data-stu-id="f4468-159">Go to the isolated team site and click **Documents**.</span></span>
 
-3. <span data-ttu-id="1f6be-156">浏览到 "documents" 文件夹中将包含具有自定义权限的子文件夹的文件夹，创建该文件夹，然后将其打开。</span><span class="sxs-lookup"><span data-stu-id="1f6be-156">Browse to the folder in the documents folder that will contain the subfolder with custom permissions, create the folder, and then open it.</span></span>
+3. <span data-ttu-id="f4468-160">浏览到将包含具有自定义权限的子文件夹的文档文件夹中的文件夹，创建该文件夹，然后打开它。</span><span class="sxs-lookup"><span data-stu-id="f4468-160">Browse to the folder in the documents folder that will contain the subfolder with custom permissions, create the folder, and then open it.</span></span>
 
-4. <span data-ttu-id="1f6be-157">单击“**共享**”。</span><span class="sxs-lookup"><span data-stu-id="1f6be-157">Click **Share**.</span></span>
+4. <span data-ttu-id="f4468-161">单击“**共享**”。</span><span class="sxs-lookup"><span data-stu-id="f4468-161">Click **Share**.</span></span>
 
-5. <span data-ttu-id="1f6be-158">单击 " **共享并 > 高级**"。</span><span class="sxs-lookup"><span data-stu-id="1f6be-158">Click **Shared with > Advanced**.</span></span>
+5. <span data-ttu-id="f4468-162">单击 **"与>共享"。**</span><span class="sxs-lookup"><span data-stu-id="f4468-162">Click **Shared with > Advanced**.</span></span>
 
-6. <span data-ttu-id="1f6be-159">单击 " **停止继承权限**"，然后单击 **"确定"**。</span><span class="sxs-lookup"><span data-stu-id="1f6be-159">Click **Stop inheriting permissions**, and then click **OK**.</span></span>
+6. <span data-ttu-id="f4468-163">单击 **"停止继承权限"，** 然后单击"**确定"。**</span><span class="sxs-lookup"><span data-stu-id="f4468-163">Click **Stop inheriting permissions**, and then click **OK**.</span></span>
 
-7. <span data-ttu-id="1f6be-160">单击“**共享**”。</span><span class="sxs-lookup"><span data-stu-id="1f6be-160">Click **Share**.</span></span>
+7. <span data-ttu-id="f4468-164">单击“**共享**”。</span><span class="sxs-lookup"><span data-stu-id="f4468-164">Click **Share**.</span></span>
 
-8. <span data-ttu-id="1f6be-161">单击 " **共享并 > 高级**"。</span><span class="sxs-lookup"><span data-stu-id="1f6be-161">Click **Shared with > Advanced**.</span></span>
+8. <span data-ttu-id="f4468-165">单击 **"与>共享"。**</span><span class="sxs-lookup"><span data-stu-id="f4468-165">Click **Shared with > Advanced**.</span></span>
 
-9. <span data-ttu-id="1f6be-162">单击 " **授予权限 > 与 > 高级共享**"。</span><span class="sxs-lookup"><span data-stu-id="1f6be-162">Click **Grant Permissions > Shared with > Advanced**.</span></span>
+9. <span data-ttu-id="f4468-166">单击 **"授予与>共享的权限>"。**</span><span class="sxs-lookup"><span data-stu-id="f4468-166">Click **Grant Permissions > Shared with > Advanced**.</span></span>
 
-10. <span data-ttu-id="1f6be-163">在 "权限" 页上，单击 **\<site name> 列表中的 "成员"**。</span><span class="sxs-lookup"><span data-stu-id="1f6be-163">On the permissions page, click **\<site name> Members in the list**.</span></span>
+10. <span data-ttu-id="f4468-167">在"权限"页上，单击 **\<site name> 列表中的"成员"。**</span><span class="sxs-lookup"><span data-stu-id="f4468-167">On the permissions page, click **\<site name> Members in the list**.</span></span>
 
-11. <span data-ttu-id="1f6be-164">在 " **\<site name> 成员**" 页上，选中 "网站成员访问" 组旁边的复选标记，单击 "**操作**"，单击 "**从组中删除用户**"，然后单击 **"确定"**。</span><span class="sxs-lookup"><span data-stu-id="1f6be-164">On the **\<site name> Members** page, select the checkmark next to the site members access group, click **Actions**, click **Remove users from group**, and then click **OK**.</span></span>
+11. <span data-ttu-id="f4468-168">在"**\<site name> 成员**"页上，选择网站成员访问组旁边的选中标记，单击"操作"，单击"从组中删除 **用户**"，然后单击"**确定"。**</span><span class="sxs-lookup"><span data-stu-id="f4468-168">On the **\<site name> Members** page, select the checkmark next to the site members access group, click **Actions**, click **Remove users from group**, and then click **OK**.</span></span>
 
-12. <span data-ttu-id="1f6be-165">若要将特定成员添加到此子文件夹，请单击 " **新建 > 添加用户**"。</span><span class="sxs-lookup"><span data-stu-id="1f6be-165">To add specific members to this subfolder, click **New > Add users**.</span></span>
+12. <span data-ttu-id="f4468-169">若要向此子文件夹添加特定成员，请单击">**添加用户"。**</span><span class="sxs-lookup"><span data-stu-id="f4468-169">To add specific members to this subfolder, click **New > Add users**.</span></span>
 
-13. <span data-ttu-id="1f6be-166">在 " **共享** " 对话框中，键入可在子文件夹中的文件上进行协作的用户帐户的名称，然后单击 " **共享**"。</span><span class="sxs-lookup"><span data-stu-id="1f6be-166">In the **Share** dialog box, type the names of the user accounts that can collaborate on files in the subfolder, and then click **Share**.</span></span>
+13. <span data-ttu-id="f4468-170">在 **"共享**"对话框中，键入可以在子文件夹内对文件进行协作的用户帐户的名称，然后单击"**共享"。**</span><span class="sxs-lookup"><span data-stu-id="f4468-170">In the **Share** dialog box, type the names of the user accounts that can collaborate on files in the subfolder, and then click **Share**.</span></span>
 
-14. <span data-ttu-id="1f6be-167">刷新网页以查看新结果。</span><span class="sxs-lookup"><span data-stu-id="1f6be-167">Refresh the web page to see the new results.</span></span>
+14. <span data-ttu-id="f4468-171">刷新网页以查看新结果。</span><span class="sxs-lookup"><span data-stu-id="f4468-171">Refresh the web page to see the new results.</span></span>
 
-15. <span data-ttu-id="1f6be-168">在左侧导航组中的 "**组**" 下，单击 " **\<site name> 访问者**" 组，并使用步骤11-14 指定可以根据需要查看子文件夹中的文件 (的用户帐户集) 。</span><span class="sxs-lookup"><span data-stu-id="1f6be-168">Under **Groups** in the left navigation, click the **\<site name> Visitors** group and use steps 11-14 to specify the set of user accounts that can view the files in the subfolder (as needed).</span></span>
+15. <span data-ttu-id="f4468-172">在左侧导航中的"组"下，单击 **\<site name> Visitors** 组并使用步骤 11-14 指定一组用户帐户，这些用户帐户可根据需要查看子 (文件) 。</span><span class="sxs-lookup"><span data-stu-id="f4468-172">Under **Groups** in the left navigation, click the **\<site name> Visitors** group and use steps 11-14 to specify the set of user accounts that can view the files in the subfolder (as needed).</span></span>
 
-16. <span data-ttu-id="1f6be-169">在左侧导航组中的 "**组**" 下，单击 " **\<site name> 所有者**" 组，并使用步骤11-14 来指定可以根据需要在子文件夹中管理权限的用户帐户集 () 。</span><span class="sxs-lookup"><span data-stu-id="1f6be-169">Under **Groups** in the left navigation, click the **\<site name> Owners** group and use steps 11-14 to specify the set of user accounts that can administer the permissions in the subfolder (as needed).</span></span>
+16. <span data-ttu-id="f4468-173">在左侧导航中的"组"下，**\<site name>** 单击"所有者"组并使用步骤 11-14 指定一组用户帐户，这些用户帐户可根据需要管理子 (权限) 。</span><span class="sxs-lookup"><span data-stu-id="f4468-173">Under **Groups** in the left navigation, click the **\<site name> Owners** group and use steps 11-14 to specify the set of user accounts that can administer the permissions in the subfolder (as needed).</span></span>
 
-17. <span data-ttu-id="1f6be-170">关闭浏览器中的 " **人员和组** " 选项卡。</span><span class="sxs-lookup"><span data-stu-id="1f6be-170">Close the **People and Groups** tab in your browser.</span></span>
+17. <span data-ttu-id="f4468-174">关闭 **浏览器中的"人员** "和"组"选项卡。</span><span class="sxs-lookup"><span data-stu-id="f4468-174">Close the **People and Groups** tab in your browser.</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="1f6be-171">另请参阅</span><span class="sxs-lookup"><span data-stu-id="1f6be-171">See Also</span></span>
+## <a name="see-also"></a><span data-ttu-id="f4468-175">另请参阅</span><span class="sxs-lookup"><span data-stu-id="f4468-175">See Also</span></span>
 
-[<span data-ttu-id="1f6be-172">独立 SharePoint Online 团队网站</span><span class="sxs-lookup"><span data-stu-id="1f6be-172">Isolated SharePoint Online team sites</span></span>](isolated-sharepoint-online-team-sites.md)
+[<span data-ttu-id="f4468-176">独立 SharePoint Online 团队网站</span><span class="sxs-lookup"><span data-stu-id="f4468-176">Isolated SharePoint Online team sites</span></span>](isolated-sharepoint-online-team-sites.md)
 
-[<span data-ttu-id="1f6be-173">设计独立 SharePoint Online 团队网站</span><span class="sxs-lookup"><span data-stu-id="1f6be-173">Design an isolated SharePoint Online team site</span></span>](design-an-isolated-sharepoint-online-team-site.md)
+[<span data-ttu-id="f4468-177">设计独立 SharePoint Online 团队网站</span><span class="sxs-lookup"><span data-stu-id="f4468-177">Design an isolated SharePoint Online team site</span></span>](design-an-isolated-sharepoint-online-team-site.md)
 
-[<span data-ttu-id="1f6be-174">部署独立 SharePoint Online 团队网站</span><span class="sxs-lookup"><span data-stu-id="1f6be-174">Deploy an isolated SharePoint Online team site</span></span>](deploy-an-isolated-sharepoint-online-team-site.md)
+[<span data-ttu-id="f4468-178">部署独立 SharePoint Online 团队网站</span><span class="sxs-lookup"><span data-stu-id="f4468-178">Deploy an isolated SharePoint Online team site</span></span>](deploy-an-isolated-sharepoint-online-team-site.md)
