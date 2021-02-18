@@ -19,12 +19,12 @@ search.appverid:
 description: 了解可用于监视个人数据泄露的三种工具。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: b1425015843b2f444c6a410df449eeeaf4045ee5
-ms.sourcegitcommit: a9ac702c9efc9defded3bfa65618b94bac00c237
+ms.openlocfilehash: a8fb8557d6cd2677aeb6dcda75d34e86ada8f68c
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/16/2021
-ms.locfileid: "50261421"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50290665"
 ---
 # <a name="monitor-for-leaks-of-personal-data"></a>监视个人数据泄露
 
@@ -65,7 +65,7 @@ ms.locfileid: "50261421"
 
 DLP 报告位于安全中心和合规中心中。 导航到“报告”\>“查看报告”。 在“数据丢失防护 (DLP)”下，转到“DLP 策略和规则匹配项”或“DLP 误报和重写”。
 
-有关详细信息，请参阅[查看数据丢失防护报告](https://docs.microsoft.com/microsoft-365/compliance/view-the-dlp-reports)。
+有关详细信息，请参阅[查看数据丢失防护报告](../../compliance/view-the-dlp-reports.md)。
 
 ![显示 DLP 策略匹配项的报告](../../media/Monitor-for-leaks-of-personal-data-image2.png)
 
@@ -87,17 +87,17 @@ DLP 报告位于安全中心和合规中心中。 导航到“报告”\>“查�
 
 有关警报策略和搜索审核日志的更多信息：
 
-- [Microsoft 365 安全与合规中心中的警报策略](https://docs.microsoft.com/microsoft-365/compliance/alert-policies)
+- [Microsoft 365 安全与合规中心中的警报策略](../../compliance/alert-policies.md)
 
-- [在 Office 365 中搜索用户和管理员活动的审核日志](https://docs.microsoft.com/microsoft-365/compliance/search-the-audit-log)（介绍）
+- [在 Office 365 中搜索用户和管理员活动的审核日志](../../compliance/search-the-audit-log-in-security-and-compliance.md)（介绍）
 
-- [启用或禁用审核日志搜索](https://docs.microsoft.com/microsoft-365/compliance/turn-audit-log-search-on-or-off)
+- [启用或禁用审核日志搜索](../../compliance/turn-audit-log-search-on-or-off.md)
 
-- [搜索审核日志](https://docs.microsoft.com/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance)
+- [搜索审核日志](../../compliance/search-the-audit-log-in-security-and-compliance.md)
 
 - [Search-UnifiedAuditLog](https://docs.microsoft.com/powershell/module/exchange/search-unifiedauditlog) (cmdlet)
 
-- [审核日志中的详细属性](https://docs.microsoft.com/microsoft-365/compliance/detailed-properties-in-the-office-365-audit-log)
+- [审核日志中的详细属性](../../compliance/detailed-properties-in-the-office-365-audit-log.md)
 
 ## <a name="microsoft-cloud-app-security"></a>Microsoft Cloud App Security
 

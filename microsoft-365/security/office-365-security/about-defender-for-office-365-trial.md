@@ -18,12 +18,12 @@ ms.custom:
 - seo-marvel-apr2020
 ROBOTS: NOINDEX
 description: 管理员可以了解适用于 Office 365 的 Microsoft Defender 试用模式
-ms.openlocfilehash: 6207ae117f06a0e5f10d4a7a47a251137c51df05
-ms.sourcegitcommit: a62ac3c01ba700a51b78a647e2301f27ac437c5a
+ms.openlocfilehash: 0f45379bec52b54059c743823e2c8eb366f9bd59
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/12/2021
-ms.locfileid: "50233574"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50289385"
 ---
 # <a name="about-the-microsoft-defender-for-office-365-trial"></a>关于 Microsoft Defender for Office 365 试用版
 
@@ -57,7 +57,7 @@ Defender for Office 365 试用版的试用期为 90 天，可针对所有用户�
 
 ## <a name="permissions"></a>权限
 
-若要开始或结束试用版，你需要是 Azure Active Directory中全局管理员或 **安全管理员** 角色的成员。 有关详细信息，请参阅["关于管理员角色"。](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)
+若要开始或结束试用版，你需要是 Azure Active Directory中全局管理员或 **安全管理员** 角色的成员。 有关详细信息，请参阅["关于管理员角色"。](../../admin/add-users/about-admin-roles.md)
 
 ## <a name="additional-information"></a>其他信息
 
@@ -98,7 +98,7 @@ Defender for Office 365 通过提供一系列全面的功能来帮助组织保�
 - [威胁资源管理器和实时检测](threat-explorer.md)
 - [Defender for Office 365 中的实时报告](view-reports-for-atp.md)
 - [威胁跟踪器 - 新增的和值得注意的威胁](threat-trackers.md)
-- 与 [Microsoft 365 Defender 集成](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-threat-protection)
+- 与 [Microsoft 365 Defender 集成](../mtp/microsoft-threat-protection.md)
 
 ### <a name="response-and-remediation"></a>响应和修正
 

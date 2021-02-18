@@ -14,28 +14,28 @@ search.appverid:
 ms.assetid: ff3f140b-b005-445f-bfe0-7bc3f328aaf0
 ms.collection:
 - M365-security-compliance
-description: Microsoft 已制定各种策略、过程，并采用多个行业最佳实践来帮助保护我们的用户免受滥用、不需要或恶意电子邮件的干扰。
+description: Microsoft 已制定各种策略、过程，并采用多个行业最佳做法来帮助保护我们的用户免受滥用、不需要或恶意电子邮件的攻击。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 01df2e8c1cc8a8ca68688377c4cad6ade91b5623
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: 1065fdef5f804214ca48f7ca54170e6e417490d7
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50166851"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50289193"
 ---
 # <a name="reference-policies-practices-and-guidelines"></a>参考：策略、实践和指南
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
-**适用于**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Microsoft Defender for Office 365 计划 1 和计划 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+**适用对象**
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender for Office 365 计划 1 和计划 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 Microsoft 致力于在 Web 上提供最可信赖的用户体验。 因此，Microsoft 已开发了多种策略、过程并采用多个行业的最佳实践，以保护我们的用户免受滥用、不必要或恶意的电子邮件的侵扰。 尝试向用户发送电子邮件的发件人应确保他们完全理解并遵循本文中的指导，以帮助进行此工作并帮助避免潜在的传递问题。
 
-如果您不遵从这些策略和指南，我们的支持小组可能无法协助您。 如果您遵循本文中介绍的指南、实践和策略，但基于您的发送 IP 地址仍然遇到传送问题，请按步骤提交除名请求。 有关说明， [请参阅使用除名门户将自己从阻止的发件人名单中删除](use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis.md)。
+如果您不遵从这些策略和指南，我们的支持小组可能无法协助您。 如果您遵循本文中介绍的指南、实践和策略，但基于您的发送 IP 地址仍然遇到传送问题，请按步骤提交除名请求。 有关说明， [请参阅使用除名门户将自己从阻止的发件人列表中删除](use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis.md)。
 
 ## <a name="general-microsoft-policies"></a>Microsoft 一般性策略
 
@@ -55,7 +55,7 @@ Microsoft 致力于在 Web 上提供最可信赖的用户体验。 因此，Micr
 
 ## <a name="technical-guidelines"></a>技术指南
 
-发送到 Microsoft 365 的电子邮件应符合以下文档中列出的适用建议 (某些链接仅提供英文版) 。
+发送到 Microsoft 365 的电子邮件应符合以下文档中列出的适用建议 (某些链接仅提供英文) 。
 
 - [RFC 2505:Anti-Spam Recommendations for SMTP MTAs](https://www.ietf.org/rfc/rfc2505.txt)
 
@@ -93,11 +93,11 @@ Microsoft 积极与行业机构和服务提供商合作，以改善互联网和�
 
 - [联机信任联盟](https://www.otalliance.org/resources)
 
-- [电子邮件发件人&联盟](https://www.espcoalition.org/)
+- [电子邮件发件人&提供商联盟](https://www.espcoalition.org/)
 
 ## <a name="abuse-and-spam-reporting"></a>滥用和垃圾邮件报告
 
-若要报告非法、滥用、不需要或恶意电子邮件，请参阅向 Microsoft 报告邮件 [和文件](report-junk-email-messages-to-microsoft.md)。 发送这些类型的通信违反 Microsoft 策略，并且将针对已确认的报告采取适当的措施。
+若要报告非法、滥用、不需要或恶意的电子邮件，请参阅向 Microsoft 报告 [邮件和文件](report-junk-email-messages-to-microsoft.md)。 发送这些类型的通信违反了 Microsoft 策略，将针对已确认的报告采取相应操作。
 
 ## <a name="law-enforcement"></a>法律执行
 

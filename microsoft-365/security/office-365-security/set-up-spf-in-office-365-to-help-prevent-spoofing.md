@@ -19,21 +19,21 @@ ms.custom:
 description: 了解如何更新域名服务 (DNS) 记录，以便可以在 Office 365 中使用发件人策略框架 (SPF) 和自定义域。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: fbed28047b88a3eff75f574fc4d2581a75f15518
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: 52997150302805ea5085028e9a8f1cd5f745d841
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50166227"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50290437"
 ---
 # <a name="set-up-spf-to-help-prevent-spoofing"></a>设置 SPF 以防欺骗
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **适用对象**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Microsoft Defender for Office 365 计划 1 和计划 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender for Office 365 计划 1 和计划 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 本文介绍了如何更新域名服务 (DNS) 记录，以便可以在 Office 365 中结合使用发件人策略框架 (SPF) 电子邮件身份验证和自定义域。
 
@@ -48,7 +48,7 @@ ms.locfileid: "50166227"
 
 收集此信息：
 
-- 自定义域的当前 SPF TXT记录（如果存在）。 有关说明，请参阅[收集创建 Office 365 DNS 记录所需的信息](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/information-for-dns-records)。
+- 自定义域的当前 SPF TXT记录（如果存在）。 有关说明，请参阅[收集创建 Office 365 DNS 记录所需的信息](../../admin/get-help-with-domains/information-for-dns-records.md)。
 
 - 转到消息服务器并查找外部 IP 地址（需要来自所有本地消息服务器）。 例如，**131.107.2.200**。
 
@@ -94,7 +94,7 @@ ms.locfileid: "50166227"
 
    如果你已在 Office 365 中进行部署并已为自定义域设置 SPF TXT 记录，而当前正在向 Office 365 Germany 迁移，则需要更新 SPF TXT 记录。 若要执行此操作，请将 `include:spf.protection.outlook.com` 更改为 `include:spf.protection.outlook.de`。
 
-3. 一旦形成 SPF TXT 记录，则需要更新 DNS 中的记录。 只能为域使用一个 SPF TXT 记录。 如果存在 SPF TXT 记录，则需要更新现有的记录，而不是添加新记录。 转到[为 Office 365 创建 DNS 记录](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider)然后单击 DNS 主机的链接。
+3. 一旦形成 SPF TXT 记录，则需要更新 DNS 中的记录。 只能为域使用一个 SPF TXT 记录。 如果存在 SPF TXT 记录，则需要更新现有的记录，而不是添加新记录。 转到[为 Office 365 创建 DNS 记录](../../admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md)然后单击 DNS 主机的链接。
 
 4. 测试 SPF TXT 记录。
 
@@ -137,6 +137,6 @@ SPF 标识允许哪些邮件服务器代表您发送邮件。 一般来说，SPF
 
  SPF 旨在帮助防骗，但有些骗术是 SPF 所无法防范的。 为了防范这些诈骗技术，设置 SPF 后，就应该为 Office 365 配置 DKIM 和 DMARC。
 
-[DKIM](https://docs.microsoft.com/microsoft-365/security/office-365-security/use-dkim-to-validate-outbound-email?view=o365-worldwide) 电子邮件身份验证的目标是证明邮件的内容没有被篡改。
+[DKIM](use-dkim-to-validate-outbound-email.md) 电子邮件身份验证的目标是证明邮件的内容没有被篡改。
 
-[DMARC](https://docs.microsoft.com/microsoft-365/security/office-365-security/use-dmarc-to-validate-email?view=o365-worldwide) 电子邮件身份验证的目标是确保 SPF 和 DKIM 信息与发件人地址匹配。
+[DMARC](use-dmarc-to-validate-email.md) 电子邮件身份验证的目标是确保 SPF 和 DKIM 信息与发件人地址匹配。

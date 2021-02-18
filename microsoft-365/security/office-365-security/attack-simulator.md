@@ -20,18 +20,18 @@ ms.custom:
 description: 管理员可以了解如何使用攻击模拟器在 Microsoft 365 E5 或 Microsoft Defender for Office 365 计划 2 组织中运行模拟网络钓鱼和密码攻击。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 9d3d55c17e5d77ee18bd822899fea2f64136e1a3
-ms.sourcegitcommit: a62ac3c01ba700a51b78a647e2301f27ac437c5a
+ms.openlocfilehash: 1e877900698d033cb99154b31e32fa04ff7d1010
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/12/2021
-ms.locfileid: "50233596"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50289577"
 ---
 # <a name="attack-simulator-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 中的攻击模拟器
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
-**适用于** [Microsoft Defender for Office 365 计划 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+**适用于** [Microsoft Defender for Office 365 计划 2](office-365-atp.md)
 
 如果你的组织具有 Microsoft Defender for Office 365 计划[](office-365-ti.md)& 2（包括威胁调查和响应功能），可以在安全与合规中心内使用攻击模拟器在组织中运行真实的攻击方案。 这些模拟攻击可以帮助你在真实攻击影响你的最后一线之前识别并找到易受攻击的用户。 阅读本文可了解更多信息。
 
@@ -47,7 +47,7 @@ ms.locfileid: "50233596"
 
 - 您必须是组织管理或 **安全管理员角色组** 的成员。  若要详细了解安全与合规中心内的角色组，请参阅[安全与合规中心内的权限](permissions-in-the-security-and-compliance-center.md)。
 
-- 你的帐户需要配置为使用 MFA (多重) ，以在攻击模拟器中创建和管理市场活动。 有关说明，请参阅["设置多重身份验证"。](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/set-up-multi-factor-authentication)
+- 你的帐户需要配置为使用 MFA (多重) ，以在攻击模拟器中创建和管理市场活动。 有关说明，请参阅["设置多重身份验证"。](../../admin/security-and-compliance/set-up-multi-factor-authentication.md)
 
 - 网络钓鱼活动将在 30 天内收集和处理事件。 历史市场活动数据将在你启动市场活动后最多 90 天内可用。
 
@@ -213,7 +213,7 @@ ms.locfileid: "50233596"
 
    完成后，单击“下一步”。
 
-6. 在 **"撰写电子邮件** "步骤中，创建电子邮件的邮件正文。 如果在"开始"步骤中选择了模板，则邮件正文已配置，但您可以对其进行自定义。 可以使用"电子邮件"**选项卡 (** 富 HTML 编辑器) "源"选项卡 (原始HTML 代码) 。
+6. 在 **"撰写电子邮件** "步骤中，创建电子邮件的邮件正文。 如果在"开始"步骤中选择了模板，则邮件正文已配置，但您可以对其进行自定义。 可以使用"电子邮件"**选项卡 (** 富 HTML 编辑器) 或源选项卡 (原始 HTML代码) 。
 
    HTML 格式可以像需要一样简单或复杂。 您可以插入图像和文本，以增强邮件在收件人的电子邮件客户端中的可信度。
 
@@ -228,7 +228,7 @@ ms.locfileid: "50233596"
 
    完成后，单击“下一步”。
 
-7. 在 **"确认** "步骤 **中，单击"完成** "以启动市场活动。 网络钓鱼邮件将传递给目标收件人。
+7. 在 **"确认** "步骤中，单击 **"完成** "以启动市场活动。 网络钓鱼邮件将传递给目标收件人。
 
 ## <a name="password-attack-campaigns"></a>密码攻击活动
 
@@ -240,7 +240,7 @@ ms.locfileid: "50233596"
 
   对于字典攻击，你可以指定一个或多个密码来尝试 (输入或输入上传的文件) ，也可以指定一个或多个用户。
 
-- **密码攻击***：密码攻击* 对用户帐户列表使用相同的经过仔细考虑的密码， (多个帐户使用一) 。 密码感染攻击比暴力密码攻击更难检测 (当攻击者在数十个或数百个帐户上尝试一个密码，而不会删除用户不正确的密码锁定密码) 。
+- **密码攻击***：密码攻击* 对用户帐户列表使用相同的经过仔细考虑的密码， (多个帐户使用一) 。 密码感染攻击比暴力密码攻击更难检测 (当攻击者在数十个或数百个帐户上尝试一个密码，而不会降低用户不正确的密码锁定风险时，成功) 。
 
   对于密码攻击，只能指定一个要尝试的密码，也可以指定一个或多个用户。
 
@@ -311,7 +311,7 @@ ms.locfileid: "50233596"
 
 - **Average Click**： The sum of how long of everyone to click the link divided by the number of users who clicked the link.
 
-- **单击"** 成功率：由单击 (/目标用户总数"链接) 计算 **得出的百分比**。
+- **单击"** 成功率：由单击链接 (/目标用户总数) 计算得出的百 **分比**。
 
 - **最快凭据**：启动市场活动后，第一个用户输入其凭据需要多久。
 
@@ -321,7 +321,7 @@ ms.locfileid: "50233596"
 
 - 显示单击的链接和 **凭据提供的号码** 每天的条形图。 
 
-- 一个圆形图，显示活动的 **单击** 链接、**提供的** 凭据和无百分比。
+- 一个圆形图，显示活动的单击 **链接**、**提供的** 凭据和无百分比。
 
 - " **遭到入侵的用户** "部分列出了单击链接的用户的详细信息：
 
@@ -335,7 +335,7 @@ ms.locfileid: "50233596"
 
   可以单击 **"导出** "将结果导出到 CSV 文件。
 
-### <a name="spear-phishing-attachment-campaign-results"></a>网络钓鱼 (活动) 附件
+### <a name="spear-phishing-attachment-campaign-results"></a>钓鱼邮件 (活动) 附件
 
 每个活动的"攻击详细信息 **"** 页上提供了以下信息：
 
@@ -343,11 +343,11 @@ ms.locfileid: "50233596"
 
 - **目标用户总数**
 
-- **成功尝试**：打开或下载并打开附件 (预览版的用户) 。
+- **成功尝试**：打开或下载并打开附件 (预览的用户数) 。
 
 - **总体成功率**：成功尝试目标用户总数  /  **计算出的百分比**。
 
-- **最短附件打开时间**：启动市场活动后第一个用户打开附件所花时间。
+- **最快附件打开时间**：启动市场活动后第一个用户打开附件所花时间。
 
 - **平均附件打开时间**：每个人打开附件所花时间的总和除以打开附件的用户数。
 

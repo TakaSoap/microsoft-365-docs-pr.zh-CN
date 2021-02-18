@@ -8,6 +8,7 @@ manager: dansimp
 ms.date: ''
 ms.audience: Admin
 ms.topic: article
+audience: Admin
 localization_priority: Priority
 ms.collection:
 - M365-security-compliance
@@ -18,21 +19,21 @@ description: 使用 Microsoft 365 安全中心或 Microsoft 365 合规中心，�
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2be0b1ced6a10d37b400a454987b908e21afbaa0
-ms.sourcegitcommit: e920e68c8d0eac8b152039b52cfc139d478a67b3
+ms.openlocfilehash: 55030813ecddedd5661602fddea59f6bf3a8b03a
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50150696"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50290783"
 ---
 # <a name="permissions-in-the-microsoft-365-compliance-center-and-microsoft-365-security-center"></a>Microsoft 365 合规中心和 Microsoft 365 安全中心中的权限
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **适用对象**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Microsoft Defender for Office 365 计划 1 和计划 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender for Office 365 计划 1 和计划 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 组织需要管理跨所有 Microsoft 365 服务的安全和合规性方案。 并且你需要灵活地向组织 IT 组中的正确人员授予正确的管理员权限。 使用 Microsoft 365 安全中心或 Microsoft 365 合规中心，可以集中管理与安全或合规性相关的所有任务的权限。
 
@@ -85,11 +86,11 @@ Microsoft 365 合规中心和 Microsoft 365 安全中心中显示的角色也会
 
 |Microsoft 365 服务|角色信息|
 |---|---|
-|Office 365 和 Microsoft 365 商业版计划中的管理员角色|[Microsoft 365 管理员角色](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)|
+|Office 365 和 Microsoft 365 商业版计划中的管理员角色|[Microsoft 365 管理员角色](../../admin/add-users/about-admin-roles.md)|
 |Azure Active Directory (Azure AD) 和 Azure AD Identity Protection|[Azure AD 管理员角色](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)|
 |Microsoft Defender for Identity|[Microsoft Defender for Identity 角色组](https://docs.microsoft.com/azure-advanced-threat-protection/atp-role-groups)|
 |Azure 信息保护|[Azure AD 管理员角色](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)|
-|合规性管理器|[合规性管理器](https://docs.microsoft.com/microsoft-365/compliance/compliance-manager-setup#set-user-permissions-and-assign-roles)|
+|合规性管理器|[合规性管理器](../../compliance/compliance-manager-setup.md#set-user-permissions-and-assign-roles)|
 |Exchange Online|[Exchange 基于角色的访问控制](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo)|
 |Intune|[Intune 基于角色的访问控制](https://docs.microsoft.com/intune/role-based-access-control)|
 |托管桌面|[Azure AD 管理员角色](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)|

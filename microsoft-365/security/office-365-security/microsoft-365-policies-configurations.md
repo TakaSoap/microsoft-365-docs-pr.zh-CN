@@ -6,6 +6,7 @@ author: JoeDavies-MSFT
 manager: laurawi
 ms.prod: m365-security
 ms.topic: article
+audience: Admin
 f1.keywords:
 - NOCSH
 ms.reviewer: martincoetzer
@@ -18,18 +19,18 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-overview
 ms.technology: mdo
-ms.openlocfilehash: 0f6e3d7bef0f09dc922a7c1878e6ea7ce0aad3d7
-ms.sourcegitcommit: a62ac3c01ba700a51b78a647e2301f27ac437c5a
+ms.openlocfilehash: e4b85091366927596a2c8f52c579c369fc9697c3
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/12/2021
-ms.locfileid: "50233148"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50290713"
 ---
 # <a name="identity-and-device-access-configurations"></a>标识和设备访问配置
 
 **适用对象**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Microsoft Defender for Office 365 计划 1 和计划 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender for Office 365 计划 1 和计划 2](office-365-atp.md)
 
 组织的新式安全外围现在扩展到网络之外，包括从任何位置使用各种设备访问基于云的应用的用户。 安全基础结构需要确定是否应授予给定访问请求以及应在哪些条件下授予。
 
@@ -42,7 +43,7 @@ ms.locfileid: "50233148"
 这些功能及其建议：
 
 - 在 Microsoft 365 E3 和 Microsoft 365 E5 中受支持。
-- 与 Microsoft [安全](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-secure-score) 分数以及 Azure [AD 中的标识](https://docs.microsoft.com/azure/active-directory/fundamentals/identity-secure-score)分数一致，并且将增加组织的这些分数。
+- 与 Microsoft [安全](../mtp/microsoft-secure-score.md) 分数以及 Azure [AD 中的标识](https://docs.microsoft.com/azure/active-directory/fundamentals/identity-secure-score)分数一致，并且将增加组织的这些分数。
 - 将帮助您实施这 [五个步骤来保护标识基础结构](https://docs.microsoft.com/azure/security/azure-ad-secure-steps)。
 
 如果您的组织具有独特的环境要求或复杂性，请使用这些建议作为起点。 但是，大多数组织都可以按照规定实施这些建议。
