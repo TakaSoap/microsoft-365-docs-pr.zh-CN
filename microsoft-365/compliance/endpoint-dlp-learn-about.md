@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 'Microsoft 365 终结点数据丢失防护可将对文件活动的监视和针对这些文件的保护措施扩展到终结点。 在 Microsoft 365 合规解决方案中将文件设为可见 '
-ms.openlocfilehash: 1dac32505144c3966ad2219cc69a33ba29f194dc
-ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
+ms.openlocfilehash: d5394499b5514e6e0a49f958a62e70cde61ebf44
+ms.sourcegitcommit: 88820cd2536a7da868e472d10b4d265c52e5692b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "49682623"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "50279306"
 ---
 # <a name="learn-about-microsoft-365-endpoint-data-loss-prevention"></a>了解 Microsoft 365 终结点数据丢失防护
 
@@ -34,8 +34,7 @@ ms.locfileid: "49682623"
 
 ## <a name="endpoint-activities-you-can-monitor-and-take-action-on"></a>可监视并对其执行操作的终结点活动
 
-Microsoft 终结点 DLP 使你可以审核和管理用户对运行 Windows 10 的设备上的敏感项目进行的以下类型的活动。
-
+Microsoft 终结点 DLP 使你可以审核和管理用户对运行 Windows 10 的设备上的敏感项目进行的以下类型的活动。 
 
 |活动 |说明  | 可审核/可限制|
 |---------|---------|---------|
@@ -47,6 +46,28 @@ Microsoft 终结点 DLP 使你可以审核和管理用户对运行 Windows 10 �
 |创建项|当用户创建项目时，检测该项目| 可审核|
 |重命名项|当用户重命名一个项目时，检测该项目| 可审核|
 
+ ## <a name="monitored-files"></a>受监视的文件
+
+终结点 DLP 支持监视以下文件类型：
+
+- Word 文件
+- PowerPoint 文件
+- Excel 文件
+- PDF 文件
+- .csv 文件
+- .tsv 文件
+- .txt 文件
+- .rtf 文件
+- .c 文件
+- .class 文件
+- .cpp 文件
+- .cs 文件
+- .h 文件
+- .java 文件
+ 
+默认情况下，即使没有匹配的策略，终结点 DLP 也会审核这些文件类型的活动。 如果只想从策略匹配项中监视数据，你可以关闭终结点 DLP 全局设置中的 **始终为设备审核文件活动**。 无论如何，将始终审核 Word、PowerPoint、Excel、PDF 和 .csv 文件上的任何活动。
+
+终结点 DLP 会监视基于活动的 MIME 类型，因此即使文件扩展名已更改也会捕获活动。 
 
 ## <a name="whats-different-in-endpoint-dlp"></a>终结点 DLP 中的区别
 
@@ -79,25 +100,7 @@ Microsoft 终结点 DLP 使你可以审核和管理用户对运行 Windows 10 �
 
 ### <a name="viewing-endpoint-dlp-data"></a>查看终结点 DLP 数据
 
- 终结点 DLP 会监视基于活动的 MIME 类型，因此即使文件扩展名已更改也会捕获活动。 目前，还支持以下文件类型：
 
-- Word 文件
-- PowerPoint 文件
-- Excel 文件
-- PDF 文件
-- .csv 文件
-- .tsv 文件
-- .txt 文件
-- .rtf 文件
-- .c 文件
-- .class 文件
-- .cpp 文件
-- .cs 文件
-- .h 文件
-- .java 文件
-
-> [!NOTE]
-> Endpoint DLP 对照 DLP 策略评估上述所有类型的文件，并相应地应用保护操作。 所有符合 DLP 策略的文件都将经过审核，查看所有受支持的操作，即使这些文件未被阻止也是如此。 此外在默认情况下，在任何 PowerPoint、Excel、PDF 和 .csv 文件上执行的文件活动都将经过审核，不论 DLP 策略是否存在或是否匹配这些文件。
 
 可通过进入 [DLP 警报管理仪表板](dlp-configure-view-alerts-policies.md)查看与在端点设备上强制实施的 DLP 策略有关的警报。
 

@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解如何在合规中心中创建并导入策略的自定义敏感信息类型。
-ms.openlocfilehash: 63ff32bda31446c25a523ff2064f7b750d102961
-ms.sourcegitcommit: 3e29926f51530afb0d75d8518a92b9ec7dc5e5bd
+ms.openlocfilehash: e3735458f3259478a7df36bb3c6ddbc4a5fed719
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "50173119"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50288499"
 ---
 # <a name="create-a-custom-sensitive-information-type-using-powershell"></a>使用 PowerShell 创建自定义敏感信息类型
 
@@ -433,9 +433,13 @@ Version 元素也很重要。当你首次上传规则包时，Microsoft 365 会�
 
 - 每个自定义敏感信息类型最多可以包含 2048 个关键字。
 
-- 使用 PowerShell Cmdlet 时，最多可返回约 1 MB 的反序列化数据。   这会影响 XML 文件的大小。 将所上传文件的建议上限设置为 512 MB，以确保结果一致，处理时不会出错。
+- 单个租户中关键字词典的最大大小为压缩的 100 KB。 创建自定义敏感信息类型时，请尽情地根据需要多次引用同一词典。 请先在敏感信息类型中创建自定义关键字列表，然后如果关键字列表中有超过 2048 个关键字或某个关键字长度超过 50 个字符时，请使用关键字词典。
 
-- XML 结构不需要格式设置字符，例如空格、制表符或回车符/行源条目。  在针对上传空间进行优化时，请注意这一点。
+- 确保每个 Entity 元素都包含一个 recommendedConfidence 属性。
+
+- 使用 PowerShell Cmdlet 时，最多可返回约 1 MB 的反序列化数据。   这会影响规则包 XML 文件的大小。 将所上传文件的建议上限设置为 770 KB，以确保结果一致，处理时不会出错。
+
+- XML 结构不需要格式设置字符，例如空格、制表符或回车符/行源条目。  在针对上传空间进行优化时，请注意这一点。 诸如 Microsoft Visual Code 等工具提供连接线功能来压缩 XML 文件。
     
 如果自定义敏感信息类型存在可能会影响性能的问题，便无法上传，且可能会导致以下错误消息之一出现：
   
