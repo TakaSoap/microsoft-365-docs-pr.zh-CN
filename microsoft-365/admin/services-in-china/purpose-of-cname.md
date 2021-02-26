@@ -18,20 +18,20 @@ search.appverid:
 - MET150
 - MOE150
 ROBOTS: NOINDEX
-description: 详细了解 Office 365 中的"MSOID"CNAME 记录，该记录将指导你进入最佳服务器进行身份验证过程，以便更快地获得响应。
+description: 深入了解 Office 365 中的"MSOID"CNAME 记录，该记录将你引导至针对身份验证过程的最佳服务器，以便你获得更快的响应。
 monikerRange: o365-21vianet
 ms.openlocfilehash: aea04391768993c40978d94b50817244cd77405c
 ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/11/2020
 ms.locfileid: "49655480"
 ---
-# <a name="whats-the-purpose-of-the-office-365-cname-record-for-msoid"></a>MSOID 的 Office 365 CNAME 记录有何用途？
+# <a name="whats-the-purpose-of-the-office-365-cname-record-for-msoid"></a>MSOID 的 Office 365 CNAME 记录有什么用途？
 
  如果找不到要查找的内容，请 **[查看域常见问题解答](../setup/domains-faq.yml)**。 
 > [!NOTE]
-> 以下仅适用于由世纪银行运营的 Office 365。
+> 以下仅适用于由世纪互联运营的 Office 365。
   
 你可能很想知道为什么需要在 Office 365 中添加"MSOID"CNAME 记录。 这是必须为所有自定义域添加的记录（无论你使用何种订阅）。 为什么需要它？ 这有一点技术上的原因，但本质上，这使你可定向到最好的服务器以进行某些身份验证过程，因此你可获得更快的响应。
   
@@ -39,10 +39,10 @@ ms.locfileid: "49655480"
   
 如果你的域缺少此 CNAME 记录，这些应用程序将使用美国的默认身份验证终结点，这意味着身份验证可能较慢。如果未正确配置此 CNAME 记录，例如，如果在" **指向地址**"中输入有误，这些应用程序将无法进行身份验证。
   
- **如果 Office 365 管理域的 DNS 记录，** Office 365 会设置此 CNAME 记录。 
+ **如果由 Office 365 管理域的 DNS 记录，** Office 365 为您设置此 CNAME 记录。 
   
- **如果在 DNS 主机上** 管理域的 DNS 记录，请按照 DNS 主机的说明自己 [创建此记录](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider)。
+ **如果你正在 DNS 主机处管理你的域的 DNS 记录，** 则可以通过 [按照适合你的 DNS 主机的说明](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider)自己创建此记录。
   
-如果你正在计划 Office 365 部署，并且想要了解有关可能需要添加或更新的所有 DNS 记录，请参阅参考 [：Office 365](https://go.microsoft.com/fwlink/?LinkId=579013)的外部域名系统记录。
+如果你正在规划 Office 365 部署，并且希望了解有关可能需要添加或更新的所有 DNS 记录，请阅读 [参考：Office 365 应用程序的外部域名系统记录](https://go.microsoft.com/fwlink/?LinkId=579013)。
   
 
