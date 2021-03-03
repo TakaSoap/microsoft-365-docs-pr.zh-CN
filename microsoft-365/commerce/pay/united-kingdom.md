@@ -1,8 +1,8 @@
 ---
 title: 英国付款信息
-author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
+author: cmcatee-MSFT
 ms.author: cmcatee
 manager: scotv
 audience: Admin
@@ -11,26 +11,36 @@ ms.service: o365-administration
 ms.collection: Adm_Commerce_Pay
 ms.custom: AdminSurgePortfolio
 localization_priority: Normal
-description: 了解在何处发送订阅的付款。
+description: 了解在何处发送订阅付款。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 2e8dfc5d5ebc6e300fa50b0f51e4bd6344aa3aed
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 334743ba42561522879ea416faf7e8c2897600a7
+ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48648151"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "50406788"
 ---
-# <a name="payment-information-for-united-kingdom"></a><span data-ttu-id="0d05e-103">英国付款信息</span><span class="sxs-lookup"><span data-stu-id="0d05e-103">Payment information for United Kingdom</span></span>
+# <a name="payment-information-for-united-kingdom"></a><span data-ttu-id="1a4b2-103">英国付款信息</span><span class="sxs-lookup"><span data-stu-id="1a4b2-103">Payment information for United Kingdom</span></span>
 
-<span data-ttu-id="0d05e-104">[查找其他国家或地区](../billing-and-payments/pay-for-your-subscription.md)。</span><span class="sxs-lookup"><span data-stu-id="0d05e-104">[Find another country or region](../billing-and-payments/pay-for-your-subscription.md).</span></span>
+<span data-ttu-id="1a4b2-104">[查找另一个国家/地区](../billing-and-payments/pay-for-your-subscription.md)。</span><span class="sxs-lookup"><span data-stu-id="1a4b2-104">[Find another country or region](../billing-and-payments/pay-for-your-subscription.md).</span></span>
 
-<span data-ttu-id="0d05e-105">请仅在 GBP 中付款，并在您的付款汇款中 (s) 中引用发票编号。</span><span class="sxs-lookup"><span data-stu-id="0d05e-105">Please pay in GBP only and reference invoice number(s) on your payment remittance.</span></span>
+## <a name="electronic-funds-transfer"></a><span data-ttu-id="1a4b2-105">电子资金转帐</span><span class="sxs-lookup"><span data-stu-id="1a4b2-105">Electronic Funds Transfer</span></span>
 
-## <a name="electronic-funds-transfer"></a><span data-ttu-id="0d05e-106">电子资金转帐</span><span class="sxs-lookup"><span data-stu-id="0d05e-106">Electronic Funds Transfer</span></span>
+<span data-ttu-id="1a4b2-106">**Please pay in GBP and reference invoice number (s) on your payment) .**</span><span class="sxs-lookup"><span data-stu-id="1a4b2-106">**Please pay in GBP and reference invoice number(s) on your payment remittance.**</span></span>
 
-<span data-ttu-id="0d05e-107">**银行：** Citibank，伦敦</span><span class="sxs-lookup"><span data-stu-id="0d05e-107">**Bank:** Citibank, London</span></span>  
-<span data-ttu-id="0d05e-108">**SWIFT 代码：** CITIGB2L</span><span class="sxs-lookup"><span data-stu-id="0d05e-108">**SWIFT Code:** CITIGB2L</span></span>  
-<span data-ttu-id="0d05e-109">**IBAN：** GB41CITI18500812207605</span><span class="sxs-lookup"><span data-stu-id="0d05e-109">**IBAN:** GB41CITI18500812207605</span></span>  
-<span data-ttu-id="0d05e-110">**排序代码：** 185008</span><span class="sxs-lookup"><span data-stu-id="0d05e-110">**SORT Code:** 185008</span></span>  
-<span data-ttu-id="0d05e-111">**帐号：** 12207605</span><span class="sxs-lookup"><span data-stu-id="0d05e-111">**Account Number:** 12207605</span></span>  
-<span data-ttu-id="0d05e-112">**帐户名称：** WORD</span><span class="sxs-lookup"><span data-stu-id="0d05e-112">**Account Name:** MICROSOFT</span></span>  
+<span data-ttu-id="1a4b2-107">如果你有由 **Microsoft Ireland Operations Limited** 计费的发票，请使用此银行信息：</span><span class="sxs-lookup"><span data-stu-id="1a4b2-107">If you have an invoice billed by **Microsoft Ireland Operations Limited**, use this bank information:</span></span>
+
+<span data-ttu-id="1a4b2-108">Bank：Bank， London</span><span class="sxs-lookup"><span data-stu-id="1a4b2-108">Bank: Citibank, London</span></span>\
+<span data-ttu-id="1a4b2-109">SWIFT 代码：为</span><span class="sxs-lookup"><span data-stu-id="1a4b2-109">SWIFT Code: CITIGB2L\</span></span>
+<span data-ttu-id="1a4b2-110">IBAN 代码：GB41CITI18500812207605</span><span class="sxs-lookup"><span data-stu-id="1a4b2-110">IBAN Code: GB41CITI18500812207605</span></span>\
+<span data-ttu-id="1a4b2-111">SORT 代码：185008</span><span class="sxs-lookup"><span data-stu-id="1a4b2-111">SORT Code: 185008</span></span>\
+<span data-ttu-id="1a4b2-112">帐号：12207605</span><span class="sxs-lookup"><span data-stu-id="1a4b2-112">Account Number: 12207605</span></span>\
+<span data-ttu-id="1a4b2-113">帐户名称：MICROSOFT</span><span class="sxs-lookup"><span data-stu-id="1a4b2-113">Account Name: MICROSOFT</span></span>
+
+<span data-ttu-id="1a4b2-114">如果你有由 **Microsoft Limited** 针对 2021 年 3 月 1 日的订单和消耗计费的发票，请使用此银行信息：</span><span class="sxs-lookup"><span data-stu-id="1a4b2-114">If you have an invoice billed by **Microsoft Limited** for orders and consumption starting March 1, 2021, use this bank information:</span></span>
+
+<span data-ttu-id="1a4b2-115">Bank：Bank Europe plc</span><span class="sxs-lookup"><span data-stu-id="1a4b2-115">Bank: Citibank Europe plc</span></span>\
+<span data-ttu-id="1a4b2-116">SWIFT 代码：为</span><span class="sxs-lookup"><span data-stu-id="1a4b2-116">SWIFT Code: CITIIE2X\</span></span>
+<span data-ttu-id="1a4b2-117">IBAN 代码：IE65CITI99005170000121</span><span class="sxs-lookup"><span data-stu-id="1a4b2-117">IBAN Code: IE65CITI99005170000121</span></span>\
+<span data-ttu-id="1a4b2-118">帐号：70000121</span><span class="sxs-lookup"><span data-stu-id="1a4b2-118">Account Number: 70000121</span></span>\
+<span data-ttu-id="1a4b2-119">帐户名称：MICROSOFT</span><span class="sxs-lookup"><span data-stu-id="1a4b2-119">Account Name: MICROSOFT</span></span>
