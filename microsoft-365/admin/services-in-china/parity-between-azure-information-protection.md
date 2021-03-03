@@ -43,7 +43,7 @@ ms.locfileid: "50099674"
   
 - <span data-ttu-id="c0bed-111">支持在商业云中与用户共享受保护的电子邮件。</span><span class="sxs-lookup"><span data-stu-id="c0bed-111">Sharing of protected emails with users in the commercial cloud is supported.</span></span>
   
-- <span data-ttu-id="c0bed-112">目前，不可在商业云中与用户共享文档和电子邮件附件。</span><span class="sxs-lookup"><span data-stu-id="c0bed-112">Sharing of documents and email attachments with users in the commercial cloud is currently not available.</span></span> <span data-ttu-id="c0bed-113">这包括商业云中由世纪互联络用户运营的 Office 365、在商业云中由世纪网用户运营的非 Office 365 用户，以及拥有个人版 RMS 许可证的用户。</span><span class="sxs-lookup"><span data-stu-id="c0bed-113">This includes Office 365 operated by 21Vianet users in the commercial cloud, non-Office 365 operated by 21Vianet users in the commercial cloud, and users with an RMS for Individuals license.</span></span>
+- <span data-ttu-id="c0bed-112">目前，不可在商业云中与用户共享文档和电子邮件附件。</span><span class="sxs-lookup"><span data-stu-id="c0bed-112">Sharing of documents and email attachments with users in the commercial cloud is currently not available.</span></span> <span data-ttu-id="c0bed-113">这包括商业云中由世纪互联络用户运营的 Office 365、在商业云中由世纪互联用户运营的非 Office 365 用户，以及拥有个人版 RMS 许可证的用户。</span><span class="sxs-lookup"><span data-stu-id="c0bed-113">This includes Office 365 operated by 21Vianet users in the commercial cloud, non-Office 365 operated by 21Vianet users in the commercial cloud, and users with an RMS for Individuals license.</span></span>
   
 - <span data-ttu-id="c0bed-114">具有 SharePoint（受 IRM 保护的网站和库）的 IRM 当前不可用。</span><span class="sxs-lookup"><span data-stu-id="c0bed-114">IRM with SharePoint (IRM-protected sites and libraries) is currently not available.</span></span>
   
