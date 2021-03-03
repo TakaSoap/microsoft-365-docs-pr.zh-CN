@@ -1,5 +1,5 @@
 ---
-title: 适用于由世纪网运营的 Office 365 的 Azure 信息保护支持
+title: 适用于由世纪互联运营的 Office 365 的 Azure 信息保护支持
 f1.keywords:
 - NOCSH
 ms.author: sharik
@@ -18,7 +18,7 @@ search.appverid:
 - MET150
 - GEU150
 - GEA150
-description: 深入了解适用于由世纪网运营的 Office 365 的 Azure 信息保护 （AIP） 以及如何为中国客户进行配置。
+description: 深入了解适用于由世纪互联运营的 Office 365 的 Azure 信息保护 （AIP） 以及如何为中国客户进行配置。
 monikerRange: o365-21vianet
 ms.openlocfilehash: 300e7633237511fb9de64199ae7cf54594f2239e
 ms.sourcegitcommit: 3b369a44b71540c8b8214ce588a7aa6f47c3bb1e
@@ -27,13 +27,13 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 02/04/2021
 ms.locfileid: "50099674"
 ---
-# <a name="azure-information-protection-support-for-office-365-operated-by-21vianet"></a><span data-ttu-id="c0bed-103">适用于由世纪网运营的 Office 365 的 Azure 信息保护支持</span><span class="sxs-lookup"><span data-stu-id="c0bed-103">Azure Information Protection support for Office 365 operated by 21Vianet</span></span>
+# <a name="azure-information-protection-support-for-office-365-operated-by-21vianet"></a><span data-ttu-id="c0bed-103">适用于由世纪互联运营的 Office 365 的 Azure 信息保护支持</span><span class="sxs-lookup"><span data-stu-id="c0bed-103">Azure Information Protection support for Office 365 operated by 21Vianet</span></span>
 
-<span data-ttu-id="c0bed-104">本文介绍了 Azure 信息保护 （AIP） 对由世纪网运营的 Office 365 和商业产品/服务之间的差异，以及为中国&mdash;客户配置 AIP 的详细说明，包括如何安装 AIP 本地扫描仪和管理内容扫描作业。</span><span class="sxs-lookup"><span data-stu-id="c0bed-104">This article covers the differences between Azure Information Protection (AIP) support for Office 365 operated by 21Vianet and commercial offerings, as well as specific instructions for configuring AIP for customers in China&mdash;including how to install the AIP on-premises scanner and manage content scan jobs.</span></span>
+<span data-ttu-id="c0bed-104">本文介绍了 Azure 信息保护 （AIP） 对由世纪互联运营的 Office 365 和商业产品/服务之间的差异，以及为中国&mdash;客户配置 AIP 的详细说明，包括如何安装 AIP 本地扫描仪和管理内容扫描作业。</span><span class="sxs-lookup"><span data-stu-id="c0bed-104">This article covers the differences between Azure Information Protection (AIP) support for Office 365 operated by 21Vianet and commercial offerings, as well as specific instructions for configuring AIP for customers in China&mdash;including how to install the AIP on-premises scanner and manage content scan jobs.</span></span>
 
-## <a name="differences-between-aip-for-office-365-operated-by-21vianet-and-commercial-offerings"></a><span data-ttu-id="c0bed-105">由世纪网运营的 Office 365 的 AIP 与商业产品之间的差异</span><span class="sxs-lookup"><span data-stu-id="c0bed-105">Differences between AIP for Office 365 operated by 21Vianet and commercial offerings</span></span>
+## <a name="differences-between-aip-for-office-365-operated-by-21vianet-and-commercial-offerings"></a><span data-ttu-id="c0bed-105">由世纪互联运营的 Office 365 的 AIP 与商业产品之间的差异</span><span class="sxs-lookup"><span data-stu-id="c0bed-105">Differences between AIP for Office 365 operated by 21Vianet and commercial offerings</span></span>
 
-<span data-ttu-id="c0bed-106">我们的目标是通过针对由世纪网运营的 Office 365 的 AIP 产品，为中国客户提供所有商业特性和功能，但是我们要强调的一些缺失功能。</span><span class="sxs-lookup"><span data-stu-id="c0bed-106">While our goal is to deliver all commercial features and functionality to customers in China with our AIP for Office 365 operated by 21Vianet offer, there's some missing functionality that we'd like to highlight.</span></span>
+<span data-ttu-id="c0bed-106">我们的目标是通过针对由世纪互联运营的 Office 365 的 AIP 产品，为中国客户提供所有商业特性和功能，但是我们要强调的一些缺失功能。</span><span class="sxs-lookup"><span data-stu-id="c0bed-106">While our goal is to deliver all commercial features and functionality to customers in China with our AIP for Office 365 operated by 21Vianet offer, there's some missing functionality that we'd like to highlight.</span></span>
 
 <span data-ttu-id="c0bed-107">以下列表包含世纪行运营的 Office 365 的 AIP 与 2021 年 1 月前的商业产品之间的现有缺陷：</span><span class="sxs-lookup"><span data-stu-id="c0bed-107">The following list includes the existing gaps between AIP for Office 365 operated by 21Vianet and our commercial offerings as of January 2021:</span></span>
 
@@ -43,7 +43,7 @@ ms.locfileid: "50099674"
   
 - <span data-ttu-id="c0bed-111">支持在商业云中与用户共享受保护的电子邮件。</span><span class="sxs-lookup"><span data-stu-id="c0bed-111">Sharing of protected emails with users in the commercial cloud is supported.</span></span>
   
-- <span data-ttu-id="c0bed-112">目前，不可在商业云中与用户共享文档和电子邮件附件。</span><span class="sxs-lookup"><span data-stu-id="c0bed-112">Sharing of documents and email attachments with users in the commercial cloud is currently not available.</span></span> <span data-ttu-id="c0bed-113">这包括商业云中由世纪网络用户运营的 Office 365、在商业云中由世纪网用户运营的非 Office 365 用户，以及拥有个人版 RMS 许可证的用户。</span><span class="sxs-lookup"><span data-stu-id="c0bed-113">This includes Office 365 operated by 21Vianet users in the commercial cloud, non-Office 365 operated by 21Vianet users in the commercial cloud, and users with an RMS for Individuals license.</span></span>
+- <span data-ttu-id="c0bed-112">目前，不可在商业云中与用户共享文档和电子邮件附件。</span><span class="sxs-lookup"><span data-stu-id="c0bed-112">Sharing of documents and email attachments with users in the commercial cloud is currently not available.</span></span> <span data-ttu-id="c0bed-113">这包括商业云中由世纪互联络用户运营的 Office 365、在商业云中由世纪网用户运营的非 Office 365 用户，以及拥有个人版 RMS 许可证的用户。</span><span class="sxs-lookup"><span data-stu-id="c0bed-113">This includes Office 365 operated by 21Vianet users in the commercial cloud, non-Office 365 operated by 21Vianet users in the commercial cloud, and users with an RMS for Individuals license.</span></span>
   
 - <span data-ttu-id="c0bed-114">具有 SharePoint（受 IRM 保护的网站和库）的 IRM 当前不可用。</span><span class="sxs-lookup"><span data-stu-id="c0bed-114">IRM with SharePoint (IRM-protected sites and libraries) is currently not available.</span></span>
   
