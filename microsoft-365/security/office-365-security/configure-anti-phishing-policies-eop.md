@@ -15,12 +15,12 @@ ms.collection:
 description: 管理员可以了解如何创建、修改和删除 Exchange Online Protection (EOP) 组织（具有或没有 Exchange Online 邮箱）中提供的防钓鱼策略。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 5bab5e791cb58c4e681a802179583471bb6ab165
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 612c7153f89a404cac736a9a46e8ca5f69e46f65
+ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50287909"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "50406216"
 ---
 # <a name="configure-anti-phishing-policies-in-eop"></a>在 EOP 中配置反垃圾邮件策略
 
@@ -29,7 +29,7 @@ ms.locfileid: "50287909"
 **适用对象**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
 
-在邮箱在 Exchange Online 中的 Microsoft 365 组织或没有 Exchange Online 邮箱的独立 Exchange Online Protection (EOP) 组织中，默认反网络钓鱼策略包含有限数量的默认情况下启用的反欺骗功能。 有关详细信息，请参阅反网络钓鱼策略 [中的欺骗设置](set-up-anti-phishing-policies.md#spoof-settings)。
+在具有 Exchange Online 邮箱的 Microsoft 365 组织或具有独立 Exchange Online Protection (EOP) 组织（没有 Exchange Online 邮箱）中，存在一个默认反网络钓鱼策略，其中包含有限数量的反欺骗功能，默认情况下会启用这些功能。 有关详细信息，请参阅反网络钓鱼策略 [中的欺骗设置](set-up-anti-phishing-policies.md#spoof-settings)。
 
 管理员可以查看、编辑和配置 (，但不能删除) 默认的防钓鱼策略。 更具体一些，您还可以创建自定义防钓鱼策略，这些策略适用于组织中特定的用户、组或域。 自定义策略始终优先于默认策略，但可以更改自定义策略的优先级（即运行顺序）。
 
@@ -44,7 +44,7 @@ ms.locfileid: "50287909"
 
 在安全与合规中心内管理防钓鱼策略时，这两个元素&并不明显：
 
-- 创建防钓鱼策略时，实际上是同时使用同一名称创建反网络钓鱼规则和相关反网络钓鱼策略。
+- 创建防钓鱼策略时，实际上是使用同一名称同时创建反网络钓鱼规则和相关反网络钓鱼策略。
 - 修改防钓鱼策略时，与名称、优先级、启用或禁用以及收件人筛选器相关的设置将修改反网络钓鱼规则。 所有其他设置修改关联的防钓鱼策略。
 - 删除防钓鱼策略时，将删除防钓鱼规则和相关反网络钓鱼策略。
 
@@ -66,15 +66,15 @@ ms.locfileid: "50287909"
 
   无法管理独立 EOP PowerShell 中的防钓鱼策略。
 
-- 必须分配有 Office 365 安全与合规中心内的权限，才能执行本文中的步骤：
+- 您需要在 **Exchange Online** 中分配权限，然后才能执行本文中的过程：
   - 若要添加、修改和删除防钓鱼策略，您必须是组织 **管理或****安全管理员角色组** 的成员。
   - 若要对防钓鱼策略进行只读访问，你需要是全局读者或安全读者 **角色组的成员** <sup>\*</sup> 。
 
-  有关详细信息，请参阅 [安全与合规中心的权限](permissions-in-the-security-and-compliance-center.md)。
+  有关详细信息，请参阅 [Exchange Online 中权限](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo)。
 
   **注意**：
 
-  - 向 Microsoft 365 管理中心相应的 Azure 活动目录添加用户会向其提供安全与合规中心的必备权限 _以及_ Microsoft 365其它功能的权限。 有关详细信息，请参阅 [关于管理员角色](../../admin/add-users/about-admin-roles.md)。
+  - 将用户添加到 Microsoft 365 管理中心中的相应 Azure Active Directory 角色会为用户提供 Microsoft 365 中其他功能所需的权限。 有关详细信息，请参阅 [关于管理员角色](../../admin/add-users/about-admin-roles.md)。
   - Exchange [Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) **中的"** 仅查看组织管理"角色组还授予对该功能的只读访问权限 <sup>\*</sup> 。
   - <sup>\*</sup> 在安全&合规中心，只读访问权限允许用户查看自定义防钓鱼策略的设置。 只读用户看不到默认防钓鱼策略中的设置。
 
@@ -84,7 +84,7 @@ ms.locfileid: "50287909"
 
 - 最多允许应用 30 分钟更新的策略。
 
-- 有关反网络钓鱼策略在筛选管道中的应用位置的信息，请参阅电子邮件保护 [的顺序和优先级](how-policies-and-protections-are-combined.md)。
+- 有关反网络钓鱼策略在筛选管道中的应用位置的信息，请参阅电子邮件保护的顺序 [和优先级](how-policies-and-protections-are-combined.md)。
 
 ## <a name="use-the-security--compliance-center-to-create-anti-phishing-policies"></a>使用安全&合规中心创建防钓鱼策略
 
@@ -111,7 +111,7 @@ ms.locfileid: "50287909"
    单击 **"添加条件"。** 在出现的下拉列表中，选择"应用" **下的条件（如果为**：
 
    - **收件人为**：指定您组织中一个或多个邮箱、邮件用户或邮件联系人。
-   - **收件人是：** 指定组织中一个或多个组的成员。
+   - **收件人是 ：** 指定组织中一个或多个组的成员。
    - **收件人域是**：指定你的组织中配置的一个或多个接受的域中的收件人。
 
    选择条件后，将显示相应的下拉列表，其中任意 **一个** 框。
@@ -120,7 +120,7 @@ ms.locfileid: "50287909"
    - 在框中单击并开始键入以筛选列表并选择一个值。
    - 若要添加其他值，请单击框中的空白区域。
    - 若要删除单个条目 **，请单击值** ![ 上的" ](../../media/scc-remove-icon.png) 删除删除"图标。
-   - 若要删除整个条件 **，请单击条件** 上的"删除 ![ ](../../media/scc-remove-icon.png) "图标。
+   - 若要删除整个条件 **，请单击条件** ![ 上的"删除 ](../../media/scc-remove-icon.png) "图标。
 
    若要添加其他条件，请单击" **添加条件** "，然后选择"应用的条件"下的 **其余值**。
 
@@ -142,7 +142,7 @@ ms.locfileid: "50287909"
 
 1. 如果还没有，请打开安全与合规&，然后转到 **"威胁管理** 策略 \>  \> **防钓鱼"。**
 
-2. 选择要修改的自定义防钓鱼策略。 如果已选中，请取消选择它，然后再次选择它。
+2. 选择要修改的自定义防钓鱼策略。 如果已选择，请取消选择它，然后再次选择它。
 
 3. 将显示 **"编辑策略 \<name\>**"飞出控件。 单击 **任何** 部分中的"编辑"可让你访问该节中的设置。
 
@@ -150,7 +150,7 @@ ms.locfileid: "50287909"
 
    - 单击分区中的"编辑"后，可用设置以向导格式显示，但您可以按任意顺序跳转到页面内，并可以单击任何页面上的"保存" (或 ![ ](../../media/scc-remove-icon.png) **\<name\>**"取消"或"关闭"图标返回到"编辑策略"页面 (无需访问向导的最后一页即可保存或离开) 。
 
-4. **策略设置**：单击 **"** 编辑"可修改在上一部分中创建策略 [时可用的](#use-the-security--compliance-center-to-create-anti-phishing-policies) 相同设置：
+4. **策略设置****：单击"** 编辑"可修改在上一部分中创建策略 [](#use-the-security--compliance-center-to-create-anti-phishing-policies)时可用的相同设置：
 
    - **名称**
    - **说明**
@@ -161,14 +161,14 @@ ms.locfileid: "50287909"
 
 5. **欺骗**：单击"编辑"打开或关闭欺骗智能，在 Outlook 中打开或关闭未经身份验证的发件人标识，并配置操作以应用于来自被阻止的欺骗发件人的邮件。 有关详细信息，请参阅反网络钓鱼策略 [中的欺骗设置](set-up-anti-phishing-policies.md#spoof-settings)。
 
-   请注意，这些相同的设置在 Defender for Office 365 中的防钓鱼策略中也可用。
+   请注意，这些相同的设置在 Defender for Office 365 中的反网络钓鱼策略中也可用。
 
-   - **欺骗筛选器设置**：默认值为 **"打开**"，建议保留它。 若要将其关闭，请滑动切换至 **"关闭"。** 有关详细信息，请参阅在 [EOP 中配置欺骗智能](learn-about-spoof-intelligence.md)。
+   - **欺骗筛选器设置**：默认值为 **"打开**"，建议保留它。 若要关闭它，将切换切换到"关闭 **"。** 有关详细信息，请参阅在 [EOP 中配置欺骗智能](learn-about-spoof-intelligence.md)。
 
      > [!NOTE]
      > 如果 MX 记录未指向 Microsoft 365，无需禁用反欺骗保护;改为启用连接器的增强筛选。 有关说明，请参阅 [Exchange Online 中连接器的增强筛选](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors)。
 
-   - **启用未经身份验证的发件人功能**：默认值为 **On。** 若要将其关闭，请滑动切换至 **"关闭"。**
+   - **启用未经身份验证的发件人功能**：默认值为 **On。** 若要关闭它，将切换切换到"关闭 **"。**
 
    - **操作**：指定对欺骗智能失败的邮件要采取的操作：
 
@@ -180,7 +180,7 @@ ms.locfileid: "50287909"
    - **查看设置**：设置显示在摘要中，而不是单击各个步骤。
 
      - 可以单击 **每个部分** 中的"编辑"跳转回相关页面。
-     - 您可以直接在此页面上切换以下设置 **"开**"或"关"： 
+     - 可以直接在此页面上切换以下设置 **"开**"或"关"： 
 
        - **启用反反恶意软件保护**
        - **启用未经身份验证的发件人功能**
@@ -205,7 +205,7 @@ ms.locfileid: "50287909"
 
    修改默认策略时，以下设置不可用：
 
-   - 可以看到"策略设置"部分和值，但没有"编辑"链接，因此不能修改设置 (策略名称、说明以及策略应用于其 (应用于所有收件人) ) 。
+   - 你可以查看"策略设置"部分和值，但没有"编辑"链接，因此不能修改设置 (策略名称、说明以及策略应用于 (应用于所有收件人) ) 。
    - 不能删除默认策略。
    - 你无法更改默认策略的优先级 (它始终在上次应用) 。
 
@@ -231,13 +231,13 @@ ms.locfileid: "50287909"
 
 自定义防钓鱼策略按处理策略的顺序显示 (优先级值为 0) 。  名为 Office365 AntiPhish Default 的默认防钓鱼策略具有自定义优先级值 **"** 最低"，你无法更改它。
 
- **注意**：在安全&合规中心，只能在创建后更改反网络钓鱼策略的优先级。 在 PowerShell 中，可以在创建反钓鱼规则时替代默认优先级 (这会影响现有规则优先级) 。
+ **注意**：在安全&合规中心，只能在创建后更改反网络钓鱼策略的优先级。 在 PowerShell 中，您可以在创建反钓鱼规则时替代默认优先级 (这会影响现有规则优先级) 。
 
 若要更改策略的优先级，请单击策略属性中的"增加优先级"或"降低优先级 (则不能直接修改安全与合规中心&优先级) 。  更改策略的优先级仅在有多个策略时有意义。
 
 1. 在安全&合规中心，转到 **"威胁管理** \> **策略** \> **ATP 防钓鱼"。**
 
-2. 选择要修改的策略。 如果已选中，请取消选择它，然后再次选择它。
+2. 选择要修改的策略。 如果已选择，请取消选择它，然后再次选择它。
 
 3. 将显示 **"编辑策略 \<name\>**"飞出控件。
 
@@ -247,7 +247,7 @@ ms.locfileid: "50287909"
 
    - 如果你有三个或多个自定义防钓鱼策略，则最高优先级值和最低优先级值之间的策略同时具有"增加优先级"和"减少优先级 **"** 按钮。
 
-4. 单击 **"增加优先级** " **或"降低优先级** "可更改 **"优先级"** 值。
+4. 单击 **"增加优先级** " **或"减少优先级** "可更改 **"优先级"** 值。
 
 5. 完成后，单击“关闭”。
 
@@ -257,7 +257,7 @@ ms.locfileid: "50287909"
 
 2. 采取以下步骤之一：
 
-   - 选择要查看的自定义防钓鱼策略。 如果已选中，请取消选择它，然后再次选择它。
+   - 选择要查看的自定义防钓鱼策略。 如果已选择，请取消选择它，然后再次选择它。
 
    - 单击 **"默认** 策略"可查看默认的防钓鱼策略。
 
@@ -267,7 +267,7 @@ ms.locfileid: "50287909"
 
 1. 在安全&合规中心，转到 **"威胁管理** \> **策略** \> **防钓鱼"。**
 
-2. 选择要删除的策略。 如果已选中，请取消选择它，然后再次选择它。
+2. 选择要删除的策略。 如果已选择，请取消选择它，然后再次选择它。
 
 3. 在出现的 **"编辑策略 \<name\>**"弹出对话框中，单击"删除策略"，然后在出现的警告对话框中单击"是"。
 
@@ -275,9 +275,9 @@ ms.locfileid: "50287909"
 
 ## <a name="use-exchange-online-powershell-to-configure-anti-phishing-policies"></a>使用 Exchange Online PowerShell 配置防钓鱼策略
 
-如前所述，防钓鱼策略由反网络钓鱼策略和防钓鱼规则组成。
+如前所述，防钓鱼策略由反网络钓鱼策略和反网络钓鱼规则组成。
 
-在 Exchange Online PowerShell 中，防钓鱼策略和防钓鱼规则的区别显而易见。 您可以使用 **\* -AntiPhishPolicy** cmdlet 管理防钓鱼策略，使用 **\* -AntiPhishRule** cmdlet 管理防钓鱼规则。
+在 Exchange Online PowerShell 中，防钓鱼策略和防钓鱼规则的区别显而易见。 您可以使用 **\* -AntiPhishPolicy** cmdlet 管理防钓鱼策略，使用 **\* -AntiPhishRule** cmdlet 管理反钓鱼规则。
 
 - 在 PowerShell 中，首先创建防钓鱼策略，然后创建标识规则所适用的策略的防钓鱼规则。
 - 在 PowerShell 中，分别修改反钓鱼策略和反钓鱼规则中的设置。
@@ -288,7 +288,7 @@ ms.locfileid: "50287909"
 
 ### <a name="use-powershell-to-create-anti-phishing-policies"></a>使用 PowerShell 创建防钓鱼策略
 
-在 PowerShell 中创建防钓鱼策略的过程分两步完成：
+在 PowerShell 中创建防钓鱼策略是一个两步过程：
 
 1. 创建防钓鱼策略。
 2. 创建指定规则所适用的防钓鱼策略的防钓鱼规则。
@@ -331,7 +331,7 @@ New-AntiPhishPolicy -Name "Monitor Policy" -AdminDisplayName "Research departmen
 New-AntiPhishRule -Name "<RuleName>" -AntiPhishPolicy "<PolicyName>" <Recipient filters> [<Recipient filter exceptions>] [-Comments "<OptionalComments>"]
 ```
 
-此示例创建一个名为"研究部门"的反网络钓鱼规则，该规则具有以下条件：
+此示例创建一个名为"Research Department"的反网络钓鱼规则，该规则具有以下条件：
 
 - 该规则与名为"研究隔离"的防钓鱼策略相关联。
 - 此规则应用于“研究部门”组中的成员。
@@ -417,7 +417,7 @@ Set-AntiPhishPolicy -Identity "<PolicyName>" <Settings>
 
 在 PowerShell 中修改防钓鱼规则时，唯一不可用的设置是允许创建已禁用规则的 _Enabled_ 参数。 若要启用或禁用现有的防钓鱼规则，请参阅下一节。
 
-否则，当您创建规则时，如本文前面所述的步骤 [2：使用 PowerShell](#step-2-use-powershell-to-create-an-anti-phish-rule) 创建防钓鱼规则部分时，可使用相同的设置。
+否则，当您创建规则时，如本文前面所述的步骤 [2：使用 PowerShell](#step-2-use-powershell-to-create-an-anti-phish-rule) 创建反钓鱼规则部分，这些设置也可用。
 
 若要修改防钓鱼规则，请使用以下语法：
 
@@ -483,7 +483,7 @@ Set-AntiPhishRule -Identity "Marketing Department" -Priority 2
 Remove-AntiPhishPolicy -Identity "<PolicyName>"
 ```
 
-此示例删除名为 Marketing Department 的防钓鱼策略。
+此示例删除名为"Marketing Department"的防钓鱼策略。
 
 ```PowerShell
 Remove-AntiPhishPolicy -Identity "Marketing Department"
@@ -501,7 +501,7 @@ Remove-AntiPhishPolicy -Identity "Marketing Department"
 Remove-AntiPhishRule -Identity "<PolicyName>"
 ```
 
-此示例删除名为"Marketing Department"的反网络钓鱼规则。
+此示例删除名为"Marketing Department"的防钓鱼规则。
 
 ```PowerShell
 Remove-AntiPhishRule -Identity "Marketing Department"
@@ -511,7 +511,7 @@ Remove-AntiPhishRule -Identity "Marketing Department"
 
 ## <a name="how-do-you-know-these-procedures-worked"></a>如何判断这些过程生效了？
 
-若要验证您是否已成功在 Microsoft Defender for Office 365 中配置防钓鱼策略，请执行下列任一步骤：
+若要验证您是否已成功在 Microsoft Defender for Office 365 中配置防钓鱼策略，请执行下列任何步骤：
 
 - 在安全&合规中心，转到 **"威胁管理** \> **策略** \> **防钓鱼"。** 验证策略列表、其 **状态** 值及其 **优先级** 值。 若要查看更多详细信息，请执行下列任一步骤：
 

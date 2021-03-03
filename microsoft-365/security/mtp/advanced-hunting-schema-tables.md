@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: b335ba90479c670d918226caa18f80ee5535f0a1
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 2bfc02203000f448cf11bf75bf00f6045225a821
+ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49925039"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "50407368"
 ---
 # <a name="understand-the-advanced-hunting-schema"></a>了解高级搜寻架构
 
@@ -42,13 +42,13 @@ ms.locfileid: "49925039"
 ## <a name="get-schema-information-in-the-security-center"></a>在安全中心获取架构信息
 构造查询时，请使用内置架构引用快速获取有关架构中每个表的以下信息：
 
-- **表说明** 表中包含的数据类型以及该数据的来源。
+- **表** 说明 表中包含的数据类型以及该数据的来源。
 - **列**- 表中的所有列。
 - **操作** 类型 - 表示表支持的事件 `ActionType` 类型的列中的可能值。 此信息仅针对包含事件信息的表提供。
-- **示例** 查询 -示例查询，它以表的利用方式为特征。
+- **示例查询**-示例查询，它以表的利用方式为特征。
 
 ### <a name="access-the-schema-reference"></a>访问架构引用
-若要快速访问架构引用，请选择架构表示形式中表名称旁边的"查看引用"操作。 还可以选择架构 **引用** 来搜索表。   
+若要快速访问架构引用，请在架构表示形式中选择表名称旁边的 View 引用操作。 还可以选择架构 **引用** 来搜索表。   
 
 ![显示如何访问门户内架构参考的图像 ](../../media/mtp-ah/ah-reference.png) 
 
@@ -73,7 +73,8 @@ ms.locfileid: "49925039"
 | **[DeviceRegistryEvents](advanced-hunting-deviceregistryevents-table.md)** | 创建和修改注册表项 |
 | **[DeviceTvmSecureConfigurationAssessment](advanced-hunting-devicetvmsecureconfigurationassessment-table.md)** | 威胁和漏洞管理评估事件，指示设备上的各种安全配置的状态 |
 | **[DeviceTvmSecureConfigurationAssessmentKB](advanced-hunting-devicetvmsecureconfigurationassessmentkb-table.md)** | 威胁和漏洞管理用于评估设备的各种安全配置的知识库；包括各种标准和基准的映射  |
-| **[DeviceTvmSoftwareInventoryVulnerabilities](advanced-hunting-devicetvmsoftwareinventoryvulnerabilities-table.md)** | 设备上软件清单和这些软件产品的任何已知漏洞 |
+| **[DeviceTvmSoftwareInventory](advanced-hunting-devicetvmsoftwareinventory-table.md)** | 设备上安装的软件清单，包括其版本信息和停止支持状态 |
+| **[DeviceTvmSoftwareVulnerabilities](advanced-hunting-devicetvmsoftwarevulnerabilities-table.md)** | 在设备上发现的软件漏洞以及可解决每个漏洞的可用安全更新列表 |
 | **[DeviceTvmSoftwareVulnerabilitiesKB](advanced-hunting-devicetvmsoftwarevulnerabilitieskb-table.md)** | 公开披露的漏洞的知识库，包括攻击代码是否已公开 |
 | **[EmailAttachmentInfo](advanced-hunting-emailattachmentinfo-table.md)** | 有关附加到电子邮件的文件的信息 |
 | **[EmailEvents](advanced-hunting-emailevents-table.md)** | Microsoft 365 电子邮件事件，包括电子邮件传递和阻止事件 |
@@ -81,8 +82,8 @@ ms.locfileid: "49925039"
 | **[EmailUrlInfo](advanced-hunting-emailurlinfo-table.md)** | 有关电子邮件 URL 的信息 |
 | **[IdentityDirectoryEvents](advanced-hunting-identitydirectoryevents-table.md)** | 涉及运行 Active Directory 本地域控制器的事件 (AD) 。 此表涵盖域控制器上与标识相关的一系列事件和系统事件。 |
 | **[IdentityInfo](advanced-hunting-identityinfo-table.md)** | 来自各种源的帐户信息，包括 Azure Active Directory |
-| **[IdentityLogonEvents](advanced-hunting-identitylogonevents-table.md)** | Active Directory 和 Microsoft 联机服务上的身份验证事件 |
-| **[IdentityQueryEvents](advanced-hunting-identityqueryevents-table.md)** | 对 Active Directory 对象（如用户、组、设备和域）的查询 |
+| **[IdentityLogonEvents](advanced-hunting-identitylogonevents-table.md)** | Active Directory 和 Microsoft 在线服务上的身份验证事件 |
+| **[IdentityQueryEvents](advanced-hunting-identityqueryevents-table.md)** | Active Directory 对象的查询，例如用户、组、设备和域 |
 
 ## <a name="related-topics"></a>相关主题
 - [高级搜寻概述](advanced-hunting-overview.md)

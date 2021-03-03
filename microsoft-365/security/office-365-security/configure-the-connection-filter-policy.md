@@ -19,12 +19,12 @@ ms.custom:
 description: 管理员可以了解如何在 Exchange Online Protection (EOP) 配置连接筛选以允许或阻止来自电子邮件服务器的电子邮件。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: c6ec8b4adcdda692ee561f7d50bacf0511642269
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: bdc8033996c41238bb1defe831eb8e8c7650bb44
+ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50290041"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "50406086"
 ---
 # <a name="configure-connection-filtering"></a>配置连接筛选
 
@@ -38,9 +38,9 @@ ms.locfileid: "50290041"
 
 如果你是在 Exchange Online 中拥有邮箱的 Microsoft 365 客户，或者是没有 Exchange Online 邮箱的独立 Exchange Online Protection (EOP) 客户，请使用 EOP (中的连接筛选，特别是默认连接筛选器策略) 通过 IP 地址标识好或坏的源电子邮件服务器。 默认连接筛选器策略的关键组件是：
 
-- **IP 允许列表**：跳过通过 IP 地址或 IP 地址范围指定的源电子邮件服务器中所有传入邮件的垃圾邮件筛选。 有关这些源中的邮件仍可能发生垃圾邮件筛选的方案，请参阅本文稍后部分中的" [来自 IP](#scenarios-where-messages-from-sources-in-the-ip-allow-list-are-still-filtered) 允许列表中的源的邮件仍然经过筛选的方案"部分。 有关 IP 允许列表如何适合整体安全发件人策略的信息，请参阅[EOP 中的"创建安全发件人列表"。](create-safe-sender-lists-in-office-365.md)
+- **IP 允许列表**：跳过通过 IP 地址或 IP 地址范围指定的源电子邮件服务器中所有传入邮件的垃圾邮件筛选。 有关这些源中的邮件仍可能发生垃圾邮件筛选的方案，请参阅本文稍后部分中的" [来自 IP](#scenarios-where-messages-from-sources-in-the-ip-allow-list-are-still-filtered) 允许列表中的源的邮件仍被筛选的方案"部分。 有关 IP 允许列表如何适合整体安全发件人策略的信息，请参阅[EOP 中的"创建安全发件人列表"。](create-safe-sender-lists-in-office-365.md)
 
-- **IP 阻止列表**：阻止来自按 IP 地址或 IP 地址范围指定的源电子邮件服务器的所有传入邮件。 传入的邮件被拒绝，不会标记为垃圾邮件，并且不会发生其他筛选。 有关 IP 阻止列表如何适合整个阻止发件人策略的信息，请参阅 EOP 中的"创建[阻止发件人列表"。](create-block-sender-lists-in-office-365.md)
+- **IP 阻止列表**：阻止来自按 IP 地址或 IP 地址范围指定的源电子邮件服务器的所有传入邮件。 传入的邮件被拒绝，不会标记为垃圾邮件，并且不会发生其他筛选。 有关 IP 阻止列表如何适合整体阻止发件人策略的信息，请参阅 EOP 中的"创建[阻止发件人列表"。](create-block-sender-lists-in-office-365.md)
 
 - **安全列表**： *安全列表是* Microsoft 数据中心中的动态允许列表，不需要客户配置。 Microsoft 从订阅到各种第三方列表标识这些受信任的电子邮件源。 启用或禁用安全列表的使用;无法配置安全列表中的源电子邮件服务器。 从安全列表上的电子邮件服务器传入的邮件上跳过垃圾邮件筛选。
 
@@ -55,20 +55,20 @@ ms.locfileid: "50290041"
 
 - 若要连接到 Exchange Online PowerShell，请参阅[连接到 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)。 若要连接到独立 EOP PowerShell，请参阅[连接到 Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell)。
 
-- 必须分配有 Office 365 安全与合规中心内的权限，才能执行本文中的步骤：
+- 您需要在 **Exchange Online** 中分配权限，然后才能执行本文中的过程：
   - 若要修改默认连接筛选器策略，您必须是组织管理或 **安全管理员** 角色组的成员。
   - 若要对默认连接筛选器策略进行只读访问，你需要是全局阅读器或安全读者 **角色组** 的成员。
 
-  有关详细信息，请参阅 [安全与合规中心的权限](permissions-in-the-security-and-compliance-center.md)。
+  有关详细信息，请参阅 [Exchange Online 中权限](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo)。
 
   **注意**：
 
-  - 向 Microsoft 365 管理中心相应的 Azure 活动目录添加用户会向其提供安全与合规中心的必备权限 _以及_ Microsoft 365其它功能的权限。 有关详细信息，请参阅 [关于管理员角色](../../admin/add-users/about-admin-roles.md)。
+  - 将用户添加到 Microsoft 365 管理中心中的相应 Azure Active Directory 角色会为用户提供 Microsoft 365 中其他功能所需的权限。 有关详细信息，请参阅 [关于管理员角色](../../admin/add-users/about-admin-roles.md)。
   - [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) 中的 **仅查看组织管理人员** 角色组也提供到该功能的只读访问。
 
 - 若要查找要允许或阻止的电子邮件服务器 (发件人) 的源 IP 地址，可以检查邮件头中的连接 IP (**CIP**) 头字段。 若要查看各种电子邮件客户端中的邮件头，请参阅 Outlook 中的["查看 Internet 邮件头"。](https://support.microsoft.com/office/cd039382-dc6e-4264-ac74-c048563d212c)
 
-- IP 允许列表优先于 IP 阻止列表 (两个列表上的地址不会) 。
+- IP 允许列表优先于 IP 阻止列表 (这两个列表中的地址不会) 。
 
 - IP 允许列表和 IP 阻止列表最多支持 1273 个条目，其中条目是单个 IP 地址、IP 地址范围或无类别域间路由 (CIDR) IP。
 
@@ -88,7 +88,7 @@ ms.locfileid: "50290041"
 
      - IP 范围：例如，192.168.0.1-192.168.0.254。
 
-     - CIDR IP：例如，192.168.0.1/25。 有效的网络掩码值为 /24 到 /32。 若要将 CIDR IP 掩码值 /1 的垃圾邮件筛选跳过到 /23，请参阅本文稍后部分之外的 [CIDR IP](#skip-spam-filtering-for-a-cidr-ip-outside-of-the-available-range) 跳过垃圾邮件筛选。
+     - CIDR IP：例如，192.168.0.1/25。 有效的网络掩码值为 /24 到 /32。 若要将 CIDR IP 掩码值 /1 的垃圾邮件筛选跳过到 /23，请参阅本文稍后在可用范围部分之外跳过 [CIDR IP](#skip-spam-filtering-for-a-cidr-ip-outside-of-the-available-range) 的垃圾邮件筛选。
 
      若要添加 IP 地址或地址范围，请单击 **"添加图标** ![ ](../../media/ITPro-EAC-AddIcon.png) "。 若要删除条目，请选择"允许的 **IP** 地址"中的条目，然后单击" **删除** ![ ](../../media/scc-remove-icon.png) "。 完成时，请单击“保存”。
 
@@ -96,7 +96,7 @@ ms.locfileid: "50290041"
 
      若要添加 IP 地址或地址范围，请单击 **"添加图标** ![ ](../../media/ITPro-EAC-AddIcon.png) "。 若要删除条目，请选择"阻止的 **IP** 地址"中的条目，然后单击" **删除** ![ ](../../media/scc-remove-icon.png) "。 完成时，请单击“保存”。
 
-   - **打开安全列表**：启用或禁用安全列表，以标识将跳过垃圾邮件筛选的已知良好发件人。
+   - **打开安全列表**：启用或禁用安全列表的使用，以标识将跳过垃圾邮件筛选的已知良好发件人。
 
 4. 完成时，请单击“保存”。
 
@@ -168,17 +168,17 @@ Set-HostedConnectionFilterPolicy -Identity Default -IPAllowList @{Add="192.168.2
 
 如本文前面所述，只能在 IP 允许列表中使用具有网络掩码 /24 到 /32 的 CIDR IP。 若要跳过对来自 /1 范围内源电子邮件服务器的邮件进行垃圾邮件筛选到 /23 范围，您需要使用 Exchange 邮件流规则 (也称为传输规则) 。 但是，我们建议你尽可能不要这样做，因为如果 /1 到 /23 CIDR IP 范围中的 IP 地址出现在任何 Microsoft 专有或第三方阻止列表中，邮件将被阻止。
 
-现在，已完全了解潜在问题，您至少可以使用以下设置 (创建一个邮件流规则) 以确保来自这些 IP 地址的邮件将跳过垃圾邮件筛选：
+既然已完全了解潜在问题，您至少可以使用以下设置 (创建一个邮件流规则) 以确保来自这些 IP 地址的邮件将跳过垃圾邮件筛选：
 
 - 规则 **条件：** 如果发件人 IP 地址位于以下任一范围内或与输入的 CIDR IP 完全匹配 (则应用此规则，并输入 \>  \>  \> /1 到 /23 网络掩码) 。
 
-- 规则操作 **：修改邮件属性** 设置垃圾邮件可信度 \> **(SCL)** \> **绕过垃圾邮件筛选**。
+- 规则操作： **修改邮件属性** 设置垃圾邮件可信度 \> **(SCL**) \> **绕过垃圾邮件筛选**。
 
 可以审核规则、测试规则、激活特定时间段的规则和其他选择。 我们建议首先在一段时间内测试规则，然后再强制应用。 有关详细信息，请参阅管理 [Exchange Online 中的邮件流规则](https://docs.microsoft.com/Exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules)。
 
 ### <a name="skip-spam-filtering-on-selective-email-domains-from-the-same-source"></a>跳过来自同一源的选择性电子邮件域的垃圾邮件筛选
 
-通常，将 IP 地址或地址范围添加到 IP 允许列表意味着信任来自该电子邮件源的所有传入邮件。 但是，如果该源从多个域发送电子邮件，并且您希望跳过其中一些域（而非其他域）的垃圾邮件筛选，那又如何呢？ 不能单独使用 IP 允许列表来这样做，但可以将 IP 允许列表与邮件流规则结合使用。
+通常，将 IP 地址或地址范围添加到 IP 允许列表意味着信任来自该电子邮件源的所有传入邮件。 但是，如果该源从多个域发送电子邮件，并且您希望跳过其中某些域（而非其他域）的垃圾邮件筛选，则如何？ 不能单独使用 IP 允许列表来这样做，但可以将 IP 允许列表与邮件流规则结合使用。
 
 例如，源电子邮件服务器 192.168.1.25 从 contoso.com、fabrikam.com 和 tailspintoys.com 域发送电子邮件，但您只想跳过对 fabrikam.com 中发件人的邮件进行垃圾邮件筛选。 为此，请使用以下步骤：
 
@@ -186,7 +186,7 @@ Set-HostedConnectionFilterPolicy -Identity Default -IPAllowList @{Add="192.168.2
 
 2. 配置邮件流规则，并至少 (以下) ：
 
-   - 规则 **条件：** 如果发件人 IP 地址位于以下任一范围内或与 \>  \> 192.168.1.25 (与在上一步骤) 中添加到 IP 允许列表的相同 IP 地址或地址范围匹配，则应用 \> 此规则。
+   - 规则 **条件：** 如果发件人 IP 地址位于这些范围内或与 \>  \> 192.168.1.25 (与在上一步骤) 中添加到 IP 允许列表的同一 IP 地址或地址范围匹配，则应用 \> 此规则。
 
    - 规则操作 **：修改邮件属性** \> **将垃圾邮件可信度设置为 (SCL)** \> **0。**
 
@@ -202,9 +202,9 @@ Set-HostedConnectionFilterPolicy -Identity Default -IPAllowList @{Add="192.168.2
 
 如果遇到上述任一情况，可以创建至少 (设置的邮件流规则) 以确保有问题的 IP 地址中的邮件跳过垃圾邮件筛选：
 
-- 规则条件：**如果** 发件人 IP 地址位于以下任一范围内或与你的 IP 地址 (完全匹配，则应用此 \>  \>  \>) 。
+- 规则条件：**如果** 发件人 IP 地址位于以下任一范围内或与你的 IP 地址 (完全匹配，则应用 \>  \>  \> 此) 。
 
-- 规则操作 **：修改邮件属性** 设置垃圾邮件可信度 \> **(SCL)** \> **绕过垃圾邮件筛选**。
+- 规则操作： **修改邮件属性** 设置垃圾邮件可信度 \> **(SCL**) \> **绕过垃圾邮件筛选**。
 
 ## <a name="new-to-microsoft-365"></a>是 Microsoft 365 的新增功能？
 

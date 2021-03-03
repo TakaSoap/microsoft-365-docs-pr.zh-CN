@@ -16,12 +16,12 @@ ms.collection:
 description: 管理员可以了解如何在安全门户的租户允许/阻止列表中配置允许和阻止。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 250b6223ffe663e0cd950069a3c3c7827b4aa57b
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 960fbf26b610485fb46c935b04aedcc593b85752
+ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50290161"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "50407246"
 ---
 # <a name="manage-the-tenant-allowblock-list"></a>管理租户允许/阻止列表
 
@@ -36,9 +36,9 @@ ms.locfileid: "50290161"
 >
 > 本文中介绍的功能在预览版中，可能会更改，并且并非在所有组织中都可用。
 >
-> 此时， **你无法** 配置租户允许/阻止列表中的允许项目。
+> 此时， **你无法** 配置租户允许/阻止列表中的允许项。
 
-在具有 Exchange Online 邮箱的 Microsoft 365 组织或具有独立 Exchange Online Protection (EOP) 组织（没有 Exchange Online 邮箱）中，您可能会对 EOP 筛选裁定不一致。 例如，一条好邮件可能标记为错误 (误报) ，或者错误消息可能 (误报) 。
+在具有 Exchange Online 邮箱的 Microsoft 365 组织或具有独立 Exchange Online Protection (EOP) 组织（没有 Exchange Online 邮箱）中，您可能会对 EOP 筛选裁定不一致。 例如，一条好邮件可能标记为错误 (误报) ，或者可能允许错误邮件通过 (误报) 。
 
 安全与合规中心中的租户允许/阻止&提供了一种手动覆盖 Microsoft 365 筛选裁定的方法。 租户允许/阻止列表在邮件流期间和用户单击时使用。 可以指定要始终阻止的 URL 或文件。
 
@@ -66,15 +66,15 @@ ms.locfileid: "50290161"
 
 - 若要连接到 Exchange Online PowerShell，请参阅[连接到 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)。 若要连接到独立 EOP PowerShell，请参阅[连接到 Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell)。
 
-- 必须分配有 Office 365 安全与合规中心内的权限，才能执行本文中的步骤：
+- 您需要在 **Exchange Online** 中分配权限，然后才能执行本文中的过程：
   - 若要在租户允许/阻止列表中添加和删除值，你需要是组织 **管理或****安全管理员角色组** 的成员。
   - 若要对租户允许/阻止列表进行只读访问，你需要是全局读者或安全读者 **角色组** 的成员。
 
-  有关详细信息，请参阅 [安全与合规中心的权限](permissions-in-the-security-and-compliance-center.md)。
+  有关详细信息，请参阅 [Exchange Online 中权限](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo)。
 
   **注意**：
 
-  - 向 Microsoft 365 管理中心相应的 Azure 活动目录添加用户会向其提供安全与合规中心的必备权限 _以及_ Microsoft 365其它功能的权限。 有关详细信息，请参阅 [关于管理员角色](../../admin/add-users/about-admin-roles.md)。
+  - 将用户添加到 Microsoft 365 管理中心的相应 Azure Active Directory 角色会为用户提供Microsoft 365 中其他功能所需的权限。 有关详细信息，请参阅 [关于管理员角色](../../admin/add-users/about-admin-roles.md)。
   - [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) 中的 **仅查看组织管理人员** 角色组也提供到该功能的只读访问。
 
 ## <a name="use-the-security--compliance-center-to-create-url-entries-in-the-tenant-allowblock-list"></a>使用安全&合规中心在租户允许/阻止列表中创建 URL 条目
@@ -105,7 +105,7 @@ ms.locfileid: "50290161"
 
 1. 在安全&，转到 **"威胁管理** \> **策略** \> **租户允许/阻止列表"。**
 
-2. 在 **"租户允许/阻止列表"页上**，**选择"** 文件"选项卡，然后单击"阻止 **"。**
+2. 在"**租户允许/阻止列表"** 页上，**选择"** 文件"选项卡，然后单击"阻止 **"。**
 
 3. 在 **"添加文件以阻止** 出现的飞出"中，配置以下设置：
 
@@ -144,7 +144,7 @@ ms.locfileid: "50290161"
 
 - **Last updated**： Select a start date (**From**) ， an end date (**To**) both.
 
-- **到期日期：** 选择开始日期 (开始日期) ，结束日期 (") "或同时选择这两者。  
+- **到期日期：** 选择开始日期 (开始日期) 开始日期，选择结束日期 (") "或同时选择两者。 
 
 完成后，单击"应用 **"。**
 
@@ -289,7 +289,7 @@ Remove-TenantAllowBlockListItems -ListType Url -Ids "RgAAAAAI8gSyI_NmQqzeh-HXJBy
 
     例如， `*.contoso.com` 允许; `*contoso.com` 不允许。
 
-  - 右通配符必须遵循正斜杠 (/) 指定路径。
+  - 右通配符必须按照正斜杠 (/) 指定路径。
 
     例如， `contoso.com/*` 允许; `contoso.com*` `contoso.com/ab*` 或不允许。
 
@@ -463,7 +463,7 @@ Remove-TenantAllowBlockListItems -ListType Url -Ids "RgAAAAAI8gSyI_NmQqzeh-HXJBy
   - 1.2.3.4/b
   - 1.2.3.4/baaaa
 
-### <a name="examples-of-invalid-entries"></a>无效条目的示例
+### <a name="examples-of-invalid-entries"></a>无效条目示例
 
 以下条目无效：
 

@@ -19,16 +19,16 @@ description: 了解 Microsoft Defender for Office 365 计划 2 中的自动调�
 ms.technology: mdo
 ms.prod: m365-security
 ms.date: 01/29/2021
-ms.openlocfilehash: a11e9ee6a4c2426951fe2b4aa4f2dd08d1931f1c
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 40d0d8a14e0dd340d931a1c43425854b96702c65
+ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50287109"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "50407090"
 ---
 # <a name="review-and-manage-remediation-actions-in-office-365"></a>查看和管理 Office 365 中的修正操作
 
-随着对电子邮件和协作&自动调查导致裁定（如恶意或可疑）时，会创建某些修正操作。 在 Microsoft Defender for Office 365 中，修正操作可以包括：
+随着对电子邮件和协作&自动调查导致裁定（如恶意或可疑）时，会创建某些修正操作。 在 Microsoft Defender for Office 365 中，修正操作可能包括：
 - 在单击 (时阻止 URL) 
 - 软删除电子邮件或群集
 - 隔离电子邮件或电子邮件附件
@@ -42,7 +42,7 @@ ms.locfileid: "50287109"
 
 ## <a name="approve-or-reject-pending-actions"></a>批准 (或拒绝) 挂起的操作
 
-1. 转到 Microsoft 365 安全中心 [https://security.microsoft.com](https://security.microsoft.com)) 登录。
+1. 转到 Microsoft 365 安全中心 () <https://security.microsoft.com> 登录。
 2. 在导航窗格中，选择 **操作中心**。
 3. 在 **"挂起** "选项卡上，查看等待审批的操作列表。
 4. 选择列表项。 将打开其飞出窗格。 
@@ -53,19 +53,19 @@ ms.locfileid: "50287109"
 
 ## <a name="undo-one-remediation-action"></a>撤消一个修正操作
 
-1. 转到操作中心 [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) () 登录。
+1. 转到操作中心 <https://security.microsoft.com/action-center> () 登录。
 2. 在 **"历史记录** "选项卡上，选择要撤消的操作。
 3. 在屏幕右侧窗格中，选择"撤消 **"。**
 
 ## <a name="undo-multiple-remediation-actions"></a>撤消多个修正操作
 
-1. 转到操作中心 [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) () 登录。
+1. 转到操作中心 <https://security.microsoft.com/action-center> () 登录。
 2. 在 **"历史记录** "选项卡上，选择要撤消的操作。 确保选择操作类型相同的项目。 将打开一个飞出窗格。
 3. 在飞出窗格中，选择"撤消"。
 
 ## <a name="to-remove-a-file-from-quarantine-across-multiple-devices"></a>跨多个设备从隔离区删除文件
 
-1. 转到操作中心 [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) () 登录。
+1. 转到操作中心 <https://security.microsoft.com/action-center> () 登录。
 2. 在" **历史记录"** 选项卡上，选择具有操作类型 **隔离文件的文件**。
 3. 在屏幕右侧窗格中，选择"应用到此文件的 **X** 更多实例"，然后选择"撤消 **"。**
 

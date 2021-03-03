@@ -20,12 +20,12 @@ search.appverid:
 description: 了解如何使用 Microsoft 365 中的工具来识别并响应遭到入侵的电子邮件帐户。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1bbd607386b49b45ebd7444c4a91d05e4cee475b
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 5dfb40c195cb9df9c8f2ac5d1cfbacdda022d416
+ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50288605"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "50406720"
 ---
 # <a name="responding-to-a-compromised-email-account"></a>响应遭到入侵的电子邮件帐户
 
@@ -204,7 +204,7 @@ ms.locfileid: "50288605"
 
 - [在 Microsoft 365 中检测并修正 Outlook 规则和自定义窗体注入攻击](detect-and-remediate-outlook-rules-forms-attack.md)
 
-- [Internet 犯罪投诉中心](https://www.ic3.gov/preventiontips.aspx)
+- [Internet 犯罪投诉中心](https://www.ic3.gov/Home/Ransomware)
 
 - [证券交易委员会 -“网络钓鱼”诈骗](https://www.sec.gov/investor/pubs/phishing.htm)
 

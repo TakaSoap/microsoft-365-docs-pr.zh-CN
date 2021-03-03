@@ -22,12 +22,12 @@ ms.topic: how-to
 ms.custom:
 - autoir
 ms.technology: mdo
-ms.openlocfilehash: 48d7e1a7497f9bc2a07a84b36fb07939d25609bf
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 8a91a55d9598b5e780474315ddf1f7019e593fed
+ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50289145"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "50406158"
 ---
 # <a name="how-to-report-false-positivesnegatives-in-automated-investigation-and-response-capabilities"></a>如何在自动调查和响应功能中报告误报/负数
 
@@ -68,7 +68,7 @@ ms.locfileid: "50289145"
 
 借助威胁资源管理器，安全运营团队可以查找受操作影响的电子邮件，并可能撤消该操作。
 
-|应用场景|撤消选项|了解详细信息|
+|应用场景|撤消选项|了解更多|
 |---|---|---|
 |电子邮件已路由到用户的"垃圾邮件"文件夹|- 将邮件移动到用户的"已删除邮件"文件夹<br/>- 将邮件移动到用户的收件箱<br/>- 删除邮件|[查找并调查在 Office 365 中传递的恶意电子邮件](investigate-malicious-email-that-was-delivered.md)|
 |已隔离电子邮件或文件|- 释放电子邮件或文件<br/>- 删除电子邮件或文件|[以管理员角色管理隔离邮件](manage-quarantined-messages-and-files.md)|
@@ -78,10 +78,10 @@ ms.locfileid: "50289145"
 
 在操作中心中，你可以看到已采取的修正操作并可能撤消该操作。
 
-1. 转到 Microsoft 365 安全中心 [https://security.microsoft.com](https://security.microsoft.com) () 。
-2. 在导航窗格中，选择 **操作中心**。 
+1. 转到 Microsoft 365 安全中心 <https://security.microsoft.com> () 。
+2. 在导航窗格中，选择 **操作中心**。
 3. 选择 **"历史记录** "选项卡以查看已完成操作的列表。
-4. 选择一个项目。 将打开其飞出窗格。 
+4. 选择一个项目。 将打开其飞出窗格。
 5. 在飞出窗格中，选择"撤消 **"。**  (只有可以撤消的操作才 **具有"撤消** "按钮。) 
 
 ## <a name="see-also"></a>另请参阅

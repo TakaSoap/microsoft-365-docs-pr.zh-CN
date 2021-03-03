@@ -17,12 +17,12 @@ ms.collection:
 description: Microsoft 已制定各种策略、过程，并采用多个行业最佳做法来帮助保护我们的用户免受滥用、不需要或恶意电子邮件的攻击。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1065fdef5f804214ca48f7ca54170e6e417490d7
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: f53b1c36417b15e366b527dd1c12e4f23c06f632
+ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50289193"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "50406592"
 ---
 # <a name="reference-policies-practices-and-guidelines"></a>参考：策略、实践和指南
 
@@ -55,7 +55,7 @@ Microsoft 致力于在 Web 上提供最可信赖的用户体验。 因此，Micr
 
 ## <a name="technical-guidelines"></a>技术指南
 
-发送到 Microsoft 365 的电子邮件应符合以下文档中列出的适用建议 (某些链接仅提供英文) 。
+发送到 Microsoft 365 的电子邮件应遵守以下文档中列出的适用建议 (某些链接仅提供英语) 。
 
 - [RFC 2505:Anti-Spam Recommendations for SMTP MTAs](https://www.ietf.org/rfc/rfc2505.txt)
 
@@ -91,13 +91,13 @@ Microsoft 积极与行业机构和服务提供商合作，以改善互联网和�
 
 - [信息传送、恶意软件和移动反滥用工作组](https://www.m3aawg.org/)
 
-- [联机信任联盟](https://www.otalliance.org/resources)
+- [联机信任联盟](https://www.internetsociety.org/ota/)
 
 - [电子邮件发件人&提供商联盟](https://www.espcoalition.org/)
 
 ## <a name="abuse-and-spam-reporting"></a>滥用和垃圾邮件报告
 
-若要报告非法、滥用、不需要或恶意的电子邮件，请参阅向 Microsoft 报告 [邮件和文件](report-junk-email-messages-to-microsoft.md)。 发送这些类型的通信违反了 Microsoft 策略，将针对已确认的报告采取相应操作。
+若要报告非法、滥用、不需要或恶意的电子邮件，请参阅向 Microsoft 报告邮件 [和文件](report-junk-email-messages-to-microsoft.md)。 发送这些类型的通信违反了 Microsoft 策略，将针对已确认的报告采取相应操作。
 
 ## <a name="law-enforcement"></a>法律执行
 

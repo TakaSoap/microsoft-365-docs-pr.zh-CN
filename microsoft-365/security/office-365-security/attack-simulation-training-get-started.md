@@ -11,7 +11,7 @@ localization_priority: Normal
 search.appverid:
 - MET150
 - MOE150
-ms.assetid: da5845db-c578-4a41-b2cb-5a09689a551b
+ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
@@ -20,18 +20,18 @@ ms.custom:
 description: 管理员可以了解如何使用攻击模拟培训，在 Microsoft 365 E5 或 Microsoft Defender for Office 365 计划 2 组织中运行模拟网络钓鱼和密码攻击。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1ec5b8175db6eb03e59a31a4dc21d9649c5e7616
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: a33c212f7d0fd6b0617a8059b03ac90de03fba16
+ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50289886"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "50407467"
 ---
 # <a name="get-started-using-attack-simulation-training"></a>开始使用攻击模拟培训
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
-如果你的组织具有 Microsoft 365 E5 或 Microsoft Defender for Office 365 计划 2，其中包括威胁调查和响应功能，可以使用 Microsoft 安全中心中的攻击模拟培训在组织中运行真实的攻击方案。 [](office-365-ti.md) 这些模拟攻击可以帮助你在真实攻击影响你的最后一线之前识别并找到易受攻击的用户。 阅读本文可了解更多信息。
+如果你的组织具有 Microsoft 365 E5 或 Microsoft Defender for Office 365 计划 2，其中包括威胁调查和响应功能，可以在 Microsoft 安全中心使用攻击模拟培训在组织中运行真实的攻击方案。 [](office-365-ti.md) 这些模拟攻击可以帮助你在真实攻击影响你的最后一线之前识别并找到易受攻击的用户。 阅读本文可了解更多信息。
 
 > [!NOTE]
 > 攻击模拟培训取代了 Microsoft [Defender for Office 365](attack-simulator.md)中攻击模拟器中所述的旧攻击模拟器 v1 体验。
@@ -50,7 +50,7 @@ ms.locfileid: "50289886"
 
 - 没有用于攻击模拟培训的相应 PowerShell cmdlet。
 
-- 攻击模拟和培训相关的数据存储在 Microsoft 365 服务的其他客户数据中。 有关详细信息，请参阅 [Microsoft 365 数据位置](/microsoft-365/enterprise/o365-data-locations)。 攻击模拟目前不适用于以下区域：SGP、NOR、UAE、ZAF、GER、BRA 和 CHE。
+- 攻击模拟和培训相关的数据存储在 Microsoft 365 服务的其他客户数据中。 有关详细信息，请参阅 [Microsoft 365 数据位置](../../enterprise/o365-data-locations.md)。 攻击模拟可用于以下区域：NAM、APC、EUR、IND、CAN、AUS、FRA、GBR、JPN 和 EUR。
 
 ## <a name="simulations"></a>模拟
 
@@ -66,7 +66,7 @@ ms.locfileid: "50289886"
 
 - 指向 **恶意软件的链接**：攻击者向收件人发送一封邮件，其中包含指向已知文件共享网站 (（例如，SharePoint Online 或 Dropbox) ）上的附件的链接。 当收件人单击该 URL 时，附件将打开， (例如，宏) 在用户设备上运行，以帮助攻击者安装其他代码或进一步强化自身。
 
-- **按 URL 驱动器**：攻击者向收件人发送包含 URL 的邮件。 当收件人单击 URL 时，他们会被带至尝试运行后台代码的网站。 此后台代码尝试收集有关收件人的信息或在设备上部署任意代码。 通常，目标网站是遭到入侵的已知网站或已知网站的克隆。 熟悉网站有助于让用户确信链接是可安全单击的。 此技术也称为水 _洞攻击_。
+- **按 URL 驱动器**：攻击者向收件人发送包含 URL 的邮件。 当收件人单击 URL 时，他们会被带至尝试运行后台代码的网站。 此后台代码尝试收集有关收件人的信息或在设备上部署任意代码。 通常，目标网站是遭到入侵的已知网站或已知网站的克隆。 熟悉网站有助于让用户确信链接可安全单击。 此技术也称为水 _洞攻击_。
 
 > [!NOTE]
 > 在网络钓鱼活动中使用该 URL 之前，请检查受支持的 Web 浏览器中模拟网络钓鱼 URL 的可用性。 虽然我们与许多 URL 信誉供应商合作，始终允许这些模拟 URL，但我们并不总是具有完全覆盖 (例如，Google 安全浏览) 。 大多数供应商提供指导，允许你始终允许特定 URL (例如 <https://support.google.com/chrome/a/answer/7532419> ，) 。
@@ -104,8 +104,8 @@ ms.locfileid: "50289886"
 
 ### <a name="create-a-payload"></a>创建有效负载
 
-有关如何创建负载以在模拟中使用的分步说明，请参阅"为攻击模拟培训创建自定义[有效负载"。](attack-simulation-training-payloads.md)
+有关如何创建负载以用于模拟的分步说明，请参阅"为攻击模拟培训创建自定义[有效负载"。](attack-simulation-training-payloads.md)
 
 ### <a name="gaining-insights"></a>获取见解
 
-有关如何通过报告获取见解的分步说明，请参阅通过攻击模拟培训 [获得见解](attack-simulation-training-insights.md)。
+有关如何通过报告获取见解的分步说明，请参阅通过攻击模拟培训 [获取见解](attack-simulation-training-insights.md)。

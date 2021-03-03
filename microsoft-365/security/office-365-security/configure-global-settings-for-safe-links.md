@@ -18,12 +18,12 @@ ms.collection:
 description: 管理员可以了解如何在 Microsoft Defender for Office 365 中查看和配置全局设置 (阻止以下 URL"列表和保护 Office 365) for Safe Links。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d52a4dc5ed35ec73c1410d6428a581b098bf2c52
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 38614d070f4ac9bfda978301eaeed6029b47e0ca
+ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50287457"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "50406110"
 ---
 # <a name="configure-global-settings-for-safe-links-in-microsoft-defender-for-office-365"></a>在 Microsoft Defender for Office 365 中配置安全链接的全局设置
 
@@ -55,15 +55,15 @@ ms.locfileid: "50287457"
 
 - 若要连接到 Exchange Online PowerShell，请参阅[连接到 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)。 若要连接到独立 EOP PowerShell，请参阅[连接到 Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell)。
 
-- 必须分配有 Office 365 安全与合规中心内的权限，才能执行本文中的步骤：
+- 您需要在 **Exchange Online** 中分配权限，然后才能执行本文中的过程：
   - 若要配置安全链接的全局设置，您必须是组织 **管理或****安全管理员角色组** 的成员。
   - 若要对安全链接的全局设置进行只读访问，你需要是全局阅读器或安全读者 **角色组** 的成员。
 
-  有关详细信息，请参阅 [安全与合规中心的权限](permissions-in-the-security-and-compliance-center.md)。
+  有关详细信息，请参阅 [Exchange Online 中权限](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo)。
 
   **注意**：
 
-  - 向 Microsoft 365 管理中心相应的 Azure 活动目录添加用户会向其提供安全与合规中心的必备权限 _以及_ Microsoft 365其它功能的权限。 有关详细信息，请参阅 [关于管理员角色](../../admin/add-users/about-admin-roles.md)。
+  - 将用户添加到 Microsoft 365 管理中心中的相应 Azure Active Directory 角色会为用户提供 Microsoft 365 中其他功能所需的权限。 有关详细信息，请参阅 [关于管理员角色](../../admin/add-users/about-admin-roles.md)。
   - [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) 中的 **仅查看组织管理人员** 角色组也提供到该功能的只读访问。
 
 - 有关安全链接的全局设置的建议值，请参阅 [安全链接设置](recommended-settings-for-eop-and-office365-atp.md#safe-links-settings)。
@@ -129,7 +129,7 @@ Office 365 应用的安全链接保护适用于受支持的 Office 桌面、移�
 
    - **不要跟踪用户** 单击安全链接时：将切换开关向左移动，以跟踪与受支持的 Office 365 应用中阻止的 URL 相关的用户单击： ![ 关闭 ](../../media/scc-toggle-off.png) 。
 
-   - **请勿让用户单击指向** 原始 URL 的安全链接：验证切换是否位于右侧，以防止用户在受支持的 Office 365 应用中单击到原始阻止的 URL： ![ 打开 ](../../media/scc-toggle-on.png) 。
+   - **不允许用户单击指向** 原始 URL 的安全链接：验证切换是否位于右侧，以防止用户在受支持的 Office 365 应用中单击到原始阻止的 URL： ![ 打开 ](../../media/scc-toggle-on.png) 。
 
    完成时，请单击“保存”。
 
@@ -145,7 +145,7 @@ Set-AtpPolicyForO365 [-EnableSafeLinksForO365Clients <$true | $false> [-AllowCli
 
 - Office 365 应用的安全链接已打开 (我们未使用 _EnableSafeLinksForO365Clients_ 参数，默认值为 $true) 。
 - 跟踪与受支持的 Office 365 应用中阻止的 URL 相关的用户单击。
-- 不允许用户在受支持的 Office 365 应用中单击原始阻止的 URL (因为我们没有使用 _AllowClickThrough_ 参数，默认值为 $false) 。
+- 不允许用户在支持的 Office 365 应用中单击原始阻止的 URL (我们未使用 _AllowClickThrough_ 参数，默认值为 $false) 。
 
 ```powershell
 Set-AtpPolicyForO365 -TrackClicks $true

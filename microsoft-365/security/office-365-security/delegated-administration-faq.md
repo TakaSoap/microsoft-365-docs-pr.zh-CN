@@ -15,12 +15,12 @@ ms.custom:
 description: 管理员可以查看有关 Microsoft 365 中针对 Microsoft 合作伙伴和经销商的委派管理任务的常见问题和解答。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 971572f8bff80da6dd63bed8958112332292feb9
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 304fbba16d6c8e81e965462e3405824bd22982c9
+ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50288355"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "50405932"
 ---
 # <a name="delegated-administration-faq"></a>委派管理常见问题解答
 
@@ -35,7 +35,7 @@ ms.locfileid: "50288355"
 
 委派管理允许你管理 Microsoft 365 (包括 EOP 设置) 就像你是该组织内的管理员一样。 下表介绍了配置委派管理的步骤：
 
-1. 注册成为 [Microsoft Office 365 顾问](https://aka.ms/cloudbenefits)。
+1. 注册成为 [Microsoft Office 365 顾问](https://partner.microsoft.com/?cloudbenefits)。
 
 2. 注册委派管理。 在你开始管理客户的租户之前，他们必须授权你成为委派管理员。 若要获得他们的批准，你首先 [会向这些用户发送委派管理产品/服务](https://support.microsoft.com/office/26530dc0-ebba-415b-86b1-b55bc06b073e)。 还可以稍后为客户提供委派管理。
 

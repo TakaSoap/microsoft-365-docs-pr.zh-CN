@@ -1,6 +1,6 @@
 ---
 title: Microsoft 报告邮件和报告网络钓鱼Add-In许可条款
-description: 介绍 Microsoft 报告邮件和报告网络钓鱼Add-In条款
+description: 介绍 Microsoft 报告邮件和报告网络钓鱼Add-In许可条款
 keywords: microsoft， 报告， 网络钓鱼， 安全， 欺诈， 黑客， 许可证， 条款， 应用程序， 使用， 安装， 服务， 反馈
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
@@ -15,19 +15,19 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 hideEdit: true
-ms.openlocfilehash: 2b2b8a6215a653cee7ea67bafaadddc096abb911
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: c42f8da3235ffe139eaad3de61473a26866ecd3d
+ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50288153"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "50407428"
 ---
 # <a name="microsoft-report-message-and-report-phishing-add-in-license-terms"></a>Microsoft 报告邮件和报告网络钓鱼Add-In许可条款
 
 ## <a name="microsoft-software-license-terms-microsoft-report-message-and-report-phishing-add-in"></a>Microsoft 软件许可条款：Microsoft Report Message and Report Phishing Add-in
 
 > [!IMPORTANT]
-> 如果你居住在或是一家以美国为主要业务地点的企业，请阅读第 7 节：绑定仲裁和 *课堂诉讼豁免*。 它描述如何解决争议。
+> 如果你居住在美国或是一家以美国为主要业务地点的企业，请阅读第 7 节：绑定仲裁和 *课堂诉讼豁免*。 它描述如何解决争议。
 
 > [!NOTE]
 > *英语：* 由于此软件在加拿大分发，本协议中的一些条款 (特别是第 10、11 和 12 节中) 法语。
@@ -41,7 +41,7 @@ These license terms are an agreement between you and Microsoft Corporation (or o
 1. **安装和使用权限**
 
     1. **General.** You may install and use any number of copies of the software.
-    1. **Third Party Software.** 该软件可能包括 Microsoft（而不是第三方）根据本协议许可给你的第三方应用程序。 第三方应用程序的任何包含的通知都仅适用于你的信息。
+    1. **Third Party Software.** 该软件可能包括 Microsoft（而不是第三方）根据本协议许可给你的第三方应用程序。 第三方应用程序的任何包含的通知仅针对你的信息。
     1. **Microsoft 服务协议。** 该软件的一些功能提供对联机服务的访问或依赖。 这些服务的使用 (但软件) 受 Microsoft 服务协议（位于 ）中的单独条款和隐私策略的约束 <https://www.microsoft.com/servicesagreement/> 。 请认真阅读。 服务可能并非在所有区域都可用。
 
 2. **DATA COLLECTION.** 该软件可能会收集有关你以及你使用该软件的信息，并将其发送给 Microsoft。 Microsoft 可能会使用此信息提供服务和改进 Microsoft 的产品和服务。 产品文档中介绍了你的选择退出权限（如果有）。 软件中的某些功能可能允许从访问或使用该软件的应用程序的用户收集数据。
@@ -56,13 +56,13 @@ These license terms are an agreement between you and Microsoft Corporation (or o
     1. use the software in any way that is against the law or to create or propagate malware; or
     1. share, publish, distribute, or lend the software, provide the software as a stand-alone hosted solution for others to use, or transfer the software or this agreement to any third party.
 
-4. **EXPORT RESTRICTIONS.** You must comply with all domestic and international export laws and regulations that apply to the software, which include restrictions on destinations, end users, and end use. 有关导出限制的进一步信息，请访问 [https://aka.ms/exporting](https://aka.ms/exporting) 。
+4. **EXPORT RESTRICTIONS.** You must comply with all domestic and international export laws and regulations that apply to the software, which include restrictions on destinations, end users, and end use. For further information on export restrictions, visit <https://www.microsoft.com/exporting>.
 
 5. **SUPPORT SERVICES.** Microsoft is not obligated under this agreement to provide any support services for the software. Any support provided is “as is”, “with all faults”, and without warranty of any kind.
 
 6. **UPDATES.** The software may periodically check for updates, and download and install them for you. You may obtain updates only from Microsoft or authorized sources. Microsoft may need to update your system to provide you with updates. You agree to receive these automatic updates without any additional notice. Updates may not include or support all existing software features, services, or peripheral devices.
 
-7. **绑定仲裁和类操作豁免。** **如果你居住在美国 (，或者如果你的企业主要业务地点在美国) ，则本节适用。** If you and Microsoft have a dispute, you and Microsoft agree to try for 60 days to resolve it informally. 如果和 Microsoft 不能，则你和 Microsoft同意根据联邦仲裁法案 ("FAA") 在美国仲裁协会之前绑定个人仲裁，而不是在律师或律师的面前进行诉讼。 Instead, a neutral arbitrator will decide. **课堂诉讼、全类** 仲裁、私人律师一般诉讼，以及不允许某人以代表权采取行动的其他任何 **诉讼**;未经各方同意，也不合并个人诉讼。 完整的仲裁协议包含更多条款，位于 [https://aka.ms/arb-agreement-1](https://aka.ms/arb-agreement-1) 。 You and Microsoft agree to these terms.
+7. **绑定仲裁和类操作豁免。** **如果你居住在美国 (，或者如果你的企业主要业务地点在美国) ，则本节适用。** If you and Microsoft have a dispute, you and Microsoft agree to try for 60 days to resolve it informally. 如果你和 Microsoft 不能，你和 Microsoft 同意根据联邦仲裁法案 ("FAA") 在美国仲裁协会之前绑定个人仲裁，并且不要向律师或律师提出诉讼。 Instead, a neutral arbitrator will decide. **课堂诉讼、全类** 仲裁、私人律师一般诉讼，以及不允许某人以代表权采取行动的其他任何 **诉讼**;未经各方同意，也不合并个人诉讼。 The complete Arbitration Agreement contains more terms and is at <https://aka.ms/arb-agreement-1>. You and Microsoft agree to these terms.
 
 8. **ENTIRE AGREEMENT.** This agreement, and any other terms Microsoft may provide for supplements, updates, or third-party applications, is the entire agreement for the software.
 
@@ -84,11 +84,11 @@ These license terms are an agreement between you and Microsoft Corporation (or o
 
 11. *英语：***免责声明。** 软件按"按如下"获得许可。 使用本主题的风险需自行承担。 Microsoft 不提供明示的担保、保证或条件。 在适用法律允许的范围内，Microsoft 将排除所有默示担保，包括可盈利性、适合特定用途和不侵权。
 
-    *En Français* **：EXONAIATION DE GARANTIE。** Le logiciel visé par une licence est offert « tel quel ». Toute utilisation de ce logiciel est à votre seule risque et péril. Microsoft n’accorde aucune autre garantie expresse. Vous pouvez bénéficier de droits additionnels en vertu du droit local sur la protection des consommateurs, que ce contrat ne peut modifier. La ou elles sont permises par le droit locale, les garanties implicites de qualité marchande, d’adéquation à un usage particulier et d’absence de contrefaçon sont exclues.
+    *En Français*： **EXONFRANATION DE GARANTIE。** Le logiciel visé par une licence est offert « tel quel ». Toute utilisation de ce logiciel est à votre seule risque et péril. Microsoft n’accorde aucune autre garantie expresse. Vous pouvez bénéficier de droits additionnels en vertu du droit local sur la protection des consommateurs, que ce contrat ne peut modifier. La ou elles sont permises par le droit locale, les garanties implicites de qualité marchande, d’adéquation à un usage particulier et d’absence de contrefaçon sont exclues.
 
 12. *英语：***损害的限制和排除。** If you have any basis for recovering damages despite the preceding disclaimer of warranty， you can recover from Microsoft and its suppliers only direct damages to U. 5.00. 无法恢复任何其他损害，包括后果性、利润损失、特殊、间接或附带损害。
 
-    此限制适用于 () 第三方 Internet 网站或第三方应用程序上 (代码) 、服务、内容等相关内容的任何内容;并 (b) 合同、担保、保证或条件违反索赔;严格责任、处罚或其他侵权;或其他任何声明;在适用法律允许的范围内，
+    此限制适用于 () 第三方 Internet 网站或第三方应用程序上 (代码) 、服务、内容等相关内容的任何内容;并 (b) 合同、担保、保证或条件违反索赔;严格责任、处罚或其他侵权;或任何其他声明;在适用法律允许的范围内，
 
     It also applies even if Microsoft knew or should have known about the possibility of the damages. The above limitation or exclusion may not apply to you because your state, province, or country may not allow the exclusion or limitation of incidental, consequential, or other damages.
 

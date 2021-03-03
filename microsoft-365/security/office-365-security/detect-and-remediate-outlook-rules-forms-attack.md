@@ -18,12 +18,12 @@ description: 了解如何识别和修正 Office 365 中的 Outlook 规则和自�
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e22cfa97ae59fdd094c161cdaeff899dc1dd6507
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 30ddd5f57dee2156504211e76304d346a63e192d
+ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50286389"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "50406696"
 ---
 # <a name="detect-and-remediate-outlook-rules-and-custom-forms-injections-attacks"></a>检测和修正 Outlook 规则和自定义窗体注入攻击
 
@@ -34,70 +34,69 @@ ms.locfileid: "50286389"
 
 ## <a name="what-is-the-outlook-rules-and-custom-forms-injection-attack"></a>什么是 Outlook 规则和自定义窗体注入攻击？
 
-攻击者在租户中泄露帐户并进入后，将尝试建立一种留在租户中或找到并删除后重新进入的方法。 这称为建立持久性机制。 他们可通过两种方式实现此操作：利用 Outlook 规则或将自定义窗体注入 Outlook。
-在这两种情况下，规则或表单从云服务向下同步到桌面客户端，因此客户端软件的完整格式和重新安装不会消除注入机制。 这是因为当 Outlook 客户端软件重新连接到云中的邮箱时，它将从云中重新下载规则和表单。 一旦规则和表单就位，攻击者会使用它们执行远程或自定义代码，通常在本地计算机上安装恶意软件。 恶意软件随后会重新窃取凭据或执行其他非法活动。
-好消息是，如果你将客户端修补为最新版本，你将不会易受威胁，因为当前的 Outlook 客户端默认会阻止这两种机制。
+攻击者获取对组织的访问权限后，将尝试建立一个保留或发现后重新进入的页脚。 此活动称为 *建立持久性机制*。 攻击者可通过两种方法使用 Outlook 建立持久性机制：
+
+- 利用 Outlook 规则。
+- 通过向 Outlook 中注入自定义窗体。
+
+重新安装 Outlook，甚至向受影响的人员提供一台新计算机将没有帮助。 当全新安装的 Outlook 连接到邮箱时，所有规则和表单都从云中同步。 规则或表单通常设计为在本地计算机上运行远程代码和安装恶意软件。 恶意软件窃取凭据或执行其他非法活动。
+
+好消息是：如果你将 Outlook 客户端修补为最新版本，则你无法受到威胁，因为当前的 Outlook 客户端默认会阻止这两种机制。
 
 攻击通常遵循以下模式：
 
 **规则攻击**：
 
-1. 攻击者窃取你的一个用户的用户名和密码。
+1. 攻击者窃取用户的凭据。
 
-2. 攻击者随后登录用户 Exchange 邮箱。 邮箱可以联机位于 Exchange 中，也可以位于 Exchange 本地。
+2. 攻击者在 Exchange Online 或本地 Exchange (登录该用户的 Exchange) 。
 
-3. 然后，攻击者在邮箱中创建一个转发规则，该规则在邮箱收到符合规则条件的电子邮件时触发。 规则的条件和触发电子邮件的内容是互为定制的。
+3. 攻击者在邮箱中创建转发收件箱规则。 当邮箱从攻击者收到匹配规则条件的特定邮件时，将触发转发规则。 规则条件和邮件格式是互为定制的。
 
-4. 攻击者向正常使用其邮箱的用户发送触发器电子邮件。
+4. 攻击者将触发器电子邮件发送到遭到入侵的邮箱，不知情的用户仍正常使用该邮箱。
 
-5. 收到电子邮件时，将触发规则。 该规则的操作通常是在远程 WebDAV (启动) 应用程序。
+5. 当邮箱收到与规则条件匹配的邮件时，将应用规则的操作。 通常，规则操作是在远程 WebDAV (启动) 应用程序。
 
-6. 应用程序通常会在用户计算机上本地安装恶意软件，如 [Powershell 管理](https://www.powershellempire.com/)中心。
+6. 通常，应用程序在用户计算机上安装恶意软件 (例如 [PowerShell 高级](https://www.powershellempire.com/)) 。
 
-7. 恶意软件允许攻击者从本地计算机重新窃取用户的用户名和密码或其他凭据，并执行其他恶意活动。
+7. 恶意软件允许攻击者从本地计算机 (或) 用户用户名和密码或其他凭据，或者执行其他恶意活动。
 
 **表单攻击**：
 
-1. 攻击者窃取你的一个用户的用户名和密码。
+1. 攻击者窃取用户的凭据。
 
-2. 攻击者随后登录到用户 Exchange 邮箱。 邮箱可以联机位于 Exchange 中，也可以位于 Exchange 本地。
+2. 攻击者在 Exchange Online 或本地 Exchange (登录该用户的 Exchange) 。
 
-3. 攻击者随后会创建自定义邮件表单模板并将其插入到用户的邮箱中。 当邮箱收到要求邮箱加载自定义窗体的电子邮件时，将触发自定义窗体。 自定义窗体和电子邮件格式是互为定制的。
-4. 攻击者向正常使用其邮箱的用户发送触发器电子邮件。
+3. 攻击者将自定义邮件表单模板用户邮箱中。 当邮箱收到来自攻击者的特定邮件（要求邮箱加载自定义表单）时，将触发自定义表单。 自定义窗体和邮件格式是互为定制的。
 
-5. 收到电子邮件后，将加载表单。 表单将在远程 WebDAV (启动) 应用程序。
+4. 攻击者将触发器电子邮件发送到遭到入侵的邮箱，不知情的用户仍正常使用该邮箱。
 
-6. 应用程序通常会在用户计算机上本地安装恶意软件，如 [Powershell 管理](https://www.powershellempire.com/)中心。
+5. 当邮箱收到邮件时，邮箱将加载所需的表单。 表单将在远程 WebDAV (启动) 应用程序。
 
-7. 恶意软件允许攻击者从本地计算机重新窃取用户的用户名和密码或其他凭据，并执行其他恶意活动。
+6. 通常，应用程序在用户计算机上安装恶意软件 (例如 [PowerShell 管理](https://www.powershellempire.com/) 中心) 。
+
+7. 恶意软件允许攻击者从本地计算机 (或) 用户用户名和密码或其他凭据，或者执行其他恶意活动。
 
 ## <a name="what-a-rules-and-custom-forms-injection-attack-might-look-like-office-365"></a>规则和自定义表单注入攻击可能看起来像 Office 365？
 
 这些持久性机制不太可能被用户注意到，并且在某些情况下甚至对用户不可见。 本文将告诉你如何查找下面列出的七 (泄露指示器) 中的任意一个。 如果找到其中任何一个，则需要执行修正步骤。
 
-- 规则泄露指示器：
-
+- **规则泄露指示器**：
   - 规则操作是启动应用程序。
-
   - 规则引用 EXE、ZIP 或 URL。
-
   - 在本地计算机上，查找源自 Outlook PID 的新进程启动。
 
-- 自定义表单泄露指示器：
-
+- **自定义表单泄露指示器**：
   - 呈现为其自己的邮件类的自定义窗体。
-
   - 邮件类包含可执行代码。
-
-  - 通常存储在个人窗体库或收件箱文件夹中。
-
+  - 通常，恶意表单存储在个人窗体库或收件箱文件夹中。
   - 窗体名为 IPM。请注意。[自定义名称]。
 
 ## <a name="steps-for-finding-signs-of-this-attack-and-confirming-it"></a>查找此攻击的迹象并确认它的步骤
 
-可以使用这两种方法之一确认攻击：
+可以使用以下任一方法确认攻击：
 
-- 使用 Outlook 客户端手动检查每个邮箱的规则和表单。 此方法非常彻底，但是，如果您有许多用户要检查，则只能在非常耗时的时间检查邮箱用户。 它还可能导致运行检查的计算机泄露。
+- 使用 Outlook 客户端手动检查每个邮箱的规则和表单。 此方法非常彻底，但一次只能检查一个邮箱。 如果有许多用户要检查，此方法可能非常耗时，并且还可能会感染你使用的计算机。
 
 - 使用 [Get-AllTenantRulesAndForms.ps1](https://github.com/OfficeDev/O365-InvestigationTooling/blob/master/Get-AllTenantRulesAndForms.ps1) PowerShell 脚本自动转储租赁中所有用户的所有邮件转发规则和自定义表单。 这是最快、最安全的方法，开销最少。
 
@@ -117,15 +116,15 @@ ms.locfileid: "50286389"
 
 1. 以用户状态打开用户 Outlook 客户端。
 
-2. 按照用户版本的 Outlook [的"显示](https://support.microsoft.com/office/e1192344-5e56-4d45-931b-e5fd9bea2d45) 开发人员"选项卡中的步骤操作。
+2. 按照用户版本的 Outlook [的"](https://support.microsoft.com/office/e1192344-5e56-4d45-931b-e5fd9bea2d45) 显示开发人员"选项卡中的步骤操作。
 
 3. 在 Outlook 中打开现在可见的开发人员选项卡，然后单击 **设计窗体**。
 
-4. 从 **"查找** "列表中选择 **收件箱** 。 查找任何自定义窗体。 自定义窗体很少见，因此，如果有任何自定义窗体，则值得更深入地查看。
+4. 从 **"查找** " **列表中选择收件箱** 。 查找任何自定义窗体。 自定义窗体很少见，因此，如果有任何自定义窗体，则值得更深入地查看。
 
 5. 调查任何自定义表单，尤其是标记为隐藏的自定义表单。
 
-6. 打开任何自定义窗体，在 **"窗体** "组中单击 **"查看** 代码"以查看在加载表单时运行哪些内容。
+6. 打开任何自定义窗体，在 **"窗体** "组中单击 **"查看** 代码"以查看在加载窗体时运行哪些内容。
 
 ### <a name="steps-to-confirm-the-rules-and-forms-attack-using-powershell"></a>使用 PowerShell 确认规则和表单攻击的步骤
 
@@ -151,9 +150,9 @@ ms.locfileid: "50286389"
 
   - **IsPotentiallyMalicious (D)**： 如果此值为"TRUE"，则规则可能是恶意的。
 
-  - **ActionCommand (列 G) ：** 如果其中列出了应用程序或任何具有 .exe.zip 扩展名的文件或引用 URL 的条目（不应存在该条目）的规则可能是恶意的。
+  - **ActionCommand (列 G) ：** 如果此列列出具有 .exe 或 .zip 扩展名的应用程序或任何文件，或者引用 URL 的未知条目，则规则可能是恶意的。
 
-- **MailboxFormsExport-*yyyy-mm-dd*.csv：** 通常，使用自定义窗体很少。 如果在此工作簿中发现任何内容，则打开该用户的邮箱并检查表单本身。 如果组织没有有意将文件放在该站点，则可能是恶意的。
+- **MailboxFormsExport-*yyyy-mm-dd*.csv：** 通常，很少使用自定义窗体。 如果在此工作簿中发现任何内容，则打开该用户的邮箱并检查表单本身。 如果组织没有有意将文件放在该站点，则可能是恶意的。
 
 ## <a name="how-to-stop-and-remediate-the-outlook-rules-and-forms-attack"></a>如何停止和修正 Outlook 规则和窗体攻击
 
@@ -165,11 +164,11 @@ ms.locfileid: "50286389"
 
 2. 按照" [删除每个设备的规则](https://support.microsoft.com/office/2f0e7139-f696-4422-8498-44846db9067f) "中的步骤操作。
 
-3. 如果你不确定是否存在其他恶意软件，可以在设备上格式化和重新安装所有软件。 对于移动设备，你可以按照制造商步骤将设备重置为出厂映像。
+3. 如果你不确定是否存在其他恶意软件，你可以格式化并重新安装设备上的所有软件。 对于移动设备，你可以按照制造商步骤将设备重置为出厂映像。
 
 4. 安装最新版本的 Outlook。 请记住，默认情况下，当前版本的 Outlook 会阻止这两种类型的攻击。
 
-5. 删除邮箱的所有脱机副本后，请重置用户密码 (使用高质量的) ，如果尚未启用 MFA，请按照用户安装程序多重身份验证中的步骤操作。 [](../../admin/security-and-compliance/set-up-multi-factor-authentication.md) 这将确保用户凭据不会通过其他方式公开， (例如钓鱼或密码重新使用) 。
+5. 删除邮箱的所有脱机副本后，请重置用户密码 (请使用一个高质量) ，如果尚未启用 MFA，请按照用户安装程序多重身份验证中的步骤操作[](../../admin/security-and-compliance/set-up-multi-factor-authentication.md)。 这将确保用户凭据不会通过其他方式公开， (例如钓鱼或密码重新使用) 。
 
 ### <a name="using-powershell"></a>使用 PowerShell
 
@@ -195,7 +194,7 @@ ms.locfileid: "50286389"
 
 ### <a name="first-protect-your-accounts"></a>首先：保护帐户
 
-规则和表单漏洞仅在攻击者窃取或破坏用户帐户之一后使用。 因此，阻止对组织使用这些攻击的第一步是主动保护你的用户帐户。 帐户遭到入侵的一些最常见方式是通过网络钓鱼或密码 [加密](https://www.dabcc.com/microsoft-defending-against-password-spray-attacks/) 攻击。
+规则和表单漏洞仅在攻击者窃取或破坏用户帐户之一后使用。 因此，阻止对组织使用这些攻击的第一步是主动保护你的用户帐户。 帐户遭到入侵的一些最常见方式是通过网络钓鱼或密码 [攻击](https://www.microsoft.com/security/blog/2020/04/23/protecting-organization-password-spray-attacks/)。
 
 保护用户帐户（尤其是管理员帐户）的最佳方法就是为用户设置 [多重身份验证](../../admin/security-and-compliance/set-up-multi-factor-authentication.md)。 您还应：
 
@@ -207,11 +206,11 @@ ms.locfileid: "50286389"
 
   - 用户 (执行的异常模拟 **活动) ：** 此策略将配置文件您的环境，并触发警报，当用户在一个会话中执行与所了解的基线有关的多个模拟活动，这可能表示已尝试泄露。
 
-- 利用 Office [365 安全分数](https://securescore.office.com/) 等工具管理帐户安全配置和行为。
+- 使用 Office [365 安全分数等](https://securescore.office.com/) 工具管理帐户安全配置和行为。
 
 ### <a name="second-keep-your-outlook-clients-current"></a>Second： Keep your Outlook clients current
 
-默认情况下，Outlook 2013 和 2016 的完全更新和修补版本禁用"启动应用程序"规则/窗体操作。 这将确保即使攻击者违反帐户，也会阻止该规则及表单操作。 可以按照安装 Office 更新中的步骤安装最新更新 [和安全修补程序](https://support.microsoft.com/office/2ab296f3-7f03-43a2-8e50-46de917611c5)。
+Outlook 2013 和 2016 的完全更新和修补版本默认情况下禁用"启动应用程序"规则/窗体操作。 这将确保即使攻击者违反帐户，也会阻止该规则及表单操作。 可以按照安装 Office 更新中的步骤安装最新更新 [和安全修补程序](https://support.microsoft.com/office/2ab296f3-7f03-43a2-8e50-46de917611c5)。
 
 以下是 Outlook 2013 和 2016 客户端的修补程序版本：
 
@@ -229,21 +228,21 @@ ms.locfileid: "50286389"
 
 请注意，即使安装了修补程序和更新，攻击者也可以更改本地计算机配置以重新启用"启动应用程序"行为。 可以使用高级 [组策略管理](https://docs.microsoft.com/microsoft-desktop-optimization-pack/agpm/) 监视和强制执行客户端上的本地计算机策略。
 
-通过使用如何使用 [64](https://support.microsoft.com/help/305097)位版本的 Windows 查看系统注册表的信息，可以查看"启动应用程序"是否通过注册表中的替代重新启用。 检查以下子项：
+通过使用如何使用 [64](https://support.microsoft.com/help/305097)位版本的 Windows 查看系统注册表，你可以看到"启动应用程序"是否通过注册表中的覆盖重新启用。 检查以下子项：
 
 - **Outlook 2016：**`HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Outlook\Security\`
 
 - **Outlook 2013：**`HKEY_CURRENT_USER\Software\Microsoft\Office\15.0\Outlook\Security\`
 
-查找 EnableUnsafeClientMailRules 密钥。 如果此修补程序存在且设置为 1，则 Outlook 安全修补程序已被覆盖，并且计算机易受窗体/规则攻击。 如果值为 0，则禁用"启动应用程序"操作。 如果已安装更新和修补版本的 Outlook，但此注册表项不存在，则系统不会易受这些攻击。
+查找 EnableUnsafeClientMailRules 密钥。 如果该修补程序存在且设置为 1，则 Outlook 安全修补程序已被覆盖，并且计算机易受窗体/规则攻击。 如果值为 0，则禁用"启动应用程序"操作。 如果已安装更新和修补版本的 Outlook，但此注册表项不存在，则系统不会易受这些攻击。
 
-安装本地 Exchange 的客户应考虑阻止没有修补程序的较旧版本的 Outlook。 有关此过程的详细信息，请参阅"配置 Outlook 客户端阻止 ["一文](https://docs.microsoft.com/exchange/configure-outlook-client-blocking-exchange-2013-help)。
+具有本地 Exchange 安装的客户应考虑阻止没有修补程序的较旧版本的 Outlook。 有关此过程的详细信息，请参阅"配置 Outlook 客户端阻止 ["一文](https://docs.microsoft.com/exchange/configure-outlook-client-blocking-exchange-2013-help)。
 
 ## <a name="secure-microsoft-365-like-a-cybersecurity-pro"></a>像网络安全专家那样保护 Microsoft 365
 
 你的 Microsoft 365 订阅附带了一组强大的安全功能，可用于保护你的数据和用户。 使用“[Microsoft 365 安全路线图 - 前 30 天、90 天内以及之后的首要行动](security-roadmap.md)”，通过实施 Microsoft 建议的最佳做法来保护你的 Microsoft 365 租户。
 
-- 需要在前 30 天完成的任务。 这些任务会对你的用户产生直接影响并且影响很小。
+- 需要在前 30 天完成的任务。 它们立即生效，并且对用户影响较低。
 
 - 需要在 90 天内完成的任务。 这些任务需要花费更多时间来规划和实施，但会显著改善你的安全状况。
 

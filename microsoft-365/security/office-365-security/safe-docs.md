@@ -16,12 +16,12 @@ ms.collection:
 description: 了解 Microsoft 365 E5 或 Microsoft 365 E5 安全版中的安全文档。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a3f4ed3535c7e53774b9b567b50f7c06e99cef9d
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 75dfa9e5687a4c4b561067190e7ce338074b2f66
+ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50288581"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "50407416"
 ---
 # <a name="safe-documents-in-microsoft-365-e5"></a>Microsoft 365 E5 中的安全文档
 
@@ -43,27 +43,27 @@ ms.locfileid: "50288581"
 
 - 若要连接到 Exchange Online PowerShell，请参阅[连接到 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)。
 
-- 必须分配有 Office 365 安全与合规中心内的权限，才能执行本文中的步骤：
+- 您需要在 **Exchange Online** 中分配权限，然后才能执行本文中的过程：
   - 若要配置安全文档设置，您必须是组织管理或 **安全管理员** 角色组的成员。
   - 若要对安全文档设置进行只读访问，你需要是全局读者或安全读者 **角色组的成员**。 
 
-  有关详细信息，请参阅 [安全与合规中心的权限](permissions-in-the-security-and-compliance-center.md)。
+  有关详细信息，请参阅 [Exchange Online 中权限](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo)。
 
   > [!NOTE]
   >
-  > - 向 Microsoft 365 管理中心相应的 Azure 活动目录添加用户会向其提供安全与合规中心的必备权限 _以及_ Microsoft 365其它功能的权限。 有关详细信息，请参阅 [关于管理员角色](../../admin/add-users/about-admin-roles.md)。
+  > - 将用户添加到 Microsoft 365 管理中心中的相应 Azure Active Directory 角色会为用户提供 Microsoft 365 中其他功能所需的权限。 有关详细信息，请参阅 [关于管理员角色](../../admin/add-users/about-admin-roles.md)。
   >
   > - [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) 中的 **仅查看组织管理人员** 角色组也提供到该功能的只读访问。
 
 ### <a name="how-does-microsoft-handle-your-data"></a>Microsoft 如何处理你的数据？
 
-为了保护你，安全文档将文件发送到 [Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) 云进行分析。 可在以下位置找到有关 Microsoft Defender for Endpoint 如何处理你的数据 [的详细信息：Microsoft Defender for Endpoint 数据存储和隐私](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy)。
+为了保护你，安全文档将文件发送到 [Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) 云进行分析。 可以在以下位置找到有关 Microsoft Defender for Endpoint 如何处理你的数据 [的详细信息：Microsoft Defender for Endpoint 数据存储和隐私](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy)。
 
 安全文档发送的文件不会在 Defender 中保留超过分析 (，通常不超过 24 小时) 。
 
 ## <a name="use-the-security--compliance-center-to-configure-safe-documents"></a>使用安全&合规中心配置安全文档
 
-1. 在安全&，转到 **"威胁管理** 策略 \>  \> **ATP 安全附件**"，然后单击"**全局设置"。**
+1. 在安全&，转到 **"威胁管理** \> **策略** \> **ATP 安全附件**"，然后单击"**全局设置"。**
 
 2. 在 **出现的全局设置** 飞出中，配置以下设置：
 
@@ -84,7 +84,7 @@ Set-AtpPolicyForO365 -EnableSafeDocs <$true | $false> -AllowSafeDocsOpen <$true 
 ```
 
 - _EnableSafeDocs_ 参数为整个组织启用或禁用安全文档。
-- _AllowSafeDocsOpen_ 参数允许或阻止用户离开受保护的视图 (，即打开文档) 如果文档被标识为恶意视图。
+- _AllowSafeDocsOpen_ 参数允许或阻止用户离开受保护的视图 (即，如果文档被标识为恶意) 打开文档。
 
 本示例为整个组织启用安全文档，并阻止用户打开受保护的视图中已标识为恶意的文档。
 

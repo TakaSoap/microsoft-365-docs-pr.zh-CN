@@ -12,18 +12,20 @@ f1.keywords:
 ms.custom: seo-marvel-mar2020
 localization_priority: normal
 description: 了解如何使用 PowerShell 在 Microsoft 365 环境中管理 Exchange Online 多地理位置设置。
-ms.openlocfilehash: 63eb1957611fd57e216012435188a6ddd1b232d3
-ms.sourcegitcommit: 38d828ae8d4350ae774a939c8decf30cb36c3bea
+ms.openlocfilehash: 83889b4582d2e305b2cb9f07a64307e85d30be77
+ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "49552003"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "50406038"
 ---
 # <a name="administering-exchange-online-mailboxes-in-a-multi-geo-environment"></a>在多地理位置环境中管理 Exchange Online 邮箱
 
-需要 Exchange Online PowerShell 才能查看和配置 Microsoft 365 环境中的多地理属性。 若要连接到 Exchange Online PowerShell，请参阅[连接到 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)。
+在 Microsoft 365 环境中查看和配置多地理位置属性需要 Exchange Online PowerShell。 若要连接到 Exchange Online PowerShell，请参阅[连接到 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)。
 
 你需要 [Microsoft Azure Active Directory PowerShell 模块](https://social.technet.microsoft.com/wiki/contents/articles/28552.microsoft-azure-active-directory-powershell-module-version-release-history.aspx) v1.1.166.0 或 v1.x 中的更高版本才能查看用户对象的 **PreferredDataLocation** 属性。 无法通过 AAD PowerShell 直接修改通过 AAD Connect 同步到 AAD 中的用户对象的 **PreferredDataLocation** 值。 可以通过 AAD PowerShell 修改仅限云的用户对象。 若要连接到 Azure AD PowerShell，请参阅[连接到 PowerShell](connect-to-microsoft-365-powershell.md)。
+
+在 Exchange Online 多地理位置环境中，无需执行任何手动步骤将地理位置添加到租户。 收到消息中心帖子，显示多地理位置已准备好用于 Exchange Online 后，所有可用的地理位置都可供你使用并配置。
 
 ## <a name="connect-directly-to-a-geo-location-using-exchange-online-powershell"></a>使用 Exchange Online PowerShell 直接连接到某个地理位置
 
@@ -31,15 +33,15 @@ ms.locfileid: "49552003"
 
 [安装和维护 EXO V2 模块](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell-v2#install-and-maintain-the-exo-v2-module)中介绍了安装和使用 EXO V2 模块的要求。
 
-若要将 Exchange Online PowerShell 连接到特定地理位置， *ConnectionUri* 参数与常规连接说明不同。 命令和值的其余部分是相同的。
+若要将 Exchange Online PowerShell 连接到特定地理位置 *，ConnectionUri* 参数不同于常规连接说明。 命令和值的其余部分是相同的。
 
-具体来说，您需要将 `?email=<emailaddress>` 值添加到 _ConnectionUri_ 值的末尾。 `<emailaddress>` 是目标地理位置中 **任何** 邮箱的电子邮件地址。 您对该邮箱的权限或与您的凭据的关系不是一个因素;电子邮件地址只是告诉 Exchange Online PowerShell 在哪里连接。
+具体来说，需要将值添加到 `?email=<emailaddress>` _ConnectionUri_ 值的末尾。 `<emailaddress>` 是目标地理位置 **中** 任何邮箱的电子邮件地址。 您拥有该邮箱的权限或与凭据的关系不是因素;电子邮件地址只是告知 Exchange Online PowerShell 连接位置。
 
-Microsoft 365 或 Microsoft 365 GCC 客户通常不需要使用 _ConnectionUri_ 参数连接到 Exchange Online PowerShell。 但是，若要连接到特定地理位置，您需要使用 _ConnectionUri_ 参数，以便可以 `?email=<emailaddress>` 在值中使用。
+Microsoft 365 或 Microsoft 365 GCC 客户通常不需要使用 _ConnectionUri_ 参数连接到 Exchange Online PowerShell。 但是，若要连接到特定地理位置，您需要使用 _ConnectionUri_ 参数，以便可以在 `?email=<emailaddress>` 值中使用它。
 
-### <a name="connect-to-a-geo-location-in-exchange-online-powershell"></a>连接到 Exchange Online PowerShell 中的地理位置
+### <a name="connect-to-a-geo-location-in-exchange-online-powershell"></a>在 Exchange Online PowerShell 中连接到地理位置
 
-以下连接说明适用于或未配置为多重身份验证 (MFA) 的帐户。
+以下连接说明适用于已配置或未配置为 MFA (多重身份验证) 。
 
 1. 在 Windows PowerShell 窗口中，通过运行以下命令加载 EXO V2 模块：
 
@@ -47,13 +49,13 @@ Microsoft 365 或 Microsoft 365 GCC 客户通常不需要使用 _ConnectionUri_ 
    Import-Module ExchangeOnlineManagement
    ```
 
-2. 在以下示例中，admin@contoso.onmicrosoft.com 是管理员帐户，目标地理位置是邮箱 olga@contoso.onmicrosoft.com 所在的位置。
+2. 在下面的示例中，admin@contoso.onmicrosoft.com是管理员帐户，而目标地理位置是邮箱olga@contoso.onmicrosoft.com所在的位置。
 
    ```powershell
    Connect-ExchangeOnline -UserPrincipalName admin@contoso.onmicrosoft.com -ConnectionUri https://outlook.office365.com/powershell?email=olga@contoso.onmicrosoft.com
    ```
 
-3. 在出现的提示中，输入 admin@contoso.onmicrosoft.com 的密码。 如果将帐户配置为进行 MFA，还需要输入安全代码。
+3. 在出现的提示admin@contoso.onmicrosoft.com输入密码。 如果该帐户配置为 MFA，则还需要输入安全代码。
 
 ## <a name="view-the-available-geo-locations-that-are-configured-in-your-exchange-online-organization"></a>查看在 Exchange Online 组织中配置的可用地理位置
 
@@ -102,7 +104,7 @@ MailboxRegionLastUpdateTime : 2/6/2018 8:21:01 PM
 ```
 
 > [!NOTE]
-> 如果数据库名称中的地理位置代码与 **MailboxRegion** 值不匹配，则会自动将该邮箱放入位置队列并移动到由 **MailboxRegion** 值指定的地理位置， (Exchange Online 会在这些属性值) 之间查找不匹配项。
+> 如果数据库名称中的地理位置代码与 **MailboxRegion** 值不匹配，则邮箱将自动放入重定位队列中，并移动到 **MailboxRegion** 值 (Exchange Online 指定的地理位置，以查找这些属性值) 之间的不匹配。
 
 ## <a name="move-an-existing-cloud-only-mailbox-to-a-specific-geo-location"></a>将现有的仅限云邮箱移动到特定地理位置
 
@@ -134,7 +136,7 @@ Set-MsolUser -UserPrincipalName michelle@contoso.onmicrosoft.com -PreferredDataL
 
 > [!NOTE]
 >
-> - 如前所述，不能对本地 Active Directory 中的同步用户对象使用此过程。 你需要在 Active Directory 中更改 **PreferredDataLocation** 值，并使用 AAD Connect 进行同步。 有关详细信息，请参阅 [Azure Active Directory Connect 同步：为 Microsoft 365 资源配置首选数据位置](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnectsync-feature-preferreddatalocation)。
+> - 如前所述，您无法对本地 Active Directory 中的同步用户对象使用此过程。 你需要在 Active Directory 中更改 **PreferredDataLocation** 值，并使用 AAD Connect 进行同步。 有关详细信息，请参阅 [Azure Active Directory Connect 同步：为 Microsoft 365 资源配置首选数据位置](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnectsync-feature-preferreddatalocation)。
 >
 > - 将邮箱重定位到新的地理位置所花费的时间取决于若干因素：
 >
@@ -144,37 +146,37 @@ Set-MsolUser -UserPrincipalName michelle@contoso.onmicrosoft.com -PreferredDataL
 
 ### <a name="move-an-inactive-mailbox-to-a-specific-geo"></a>将非活动邮箱移动到特定地理位置
 
-您无法移动出于合规性目的而保留的非活动邮箱 (例如，诉讼保留) 上的邮箱通过更改其 **PreferredDataLocation** 值来实现。 若要将非活动邮箱移动到不同地理位置，请执行以下步骤：
+不能移动出于合规性目的保留的非活动 (例如，通过更改其 **PreferredDataLocation**) 诉讼保留邮箱）。 若要将非活动邮箱移动到其他地理位置，请执行以下步骤：
 
-1. 恢复非活动邮箱。 有关说明，请参阅 [恢复非活动邮箱](https://docs.microsoft.com/microsoft-365/compliance/recover-an-inactive-mailbox)。
+1. 恢复非活动邮箱。 有关说明，请参阅["恢复非活动邮箱"。](https://docs.microsoft.com/microsoft-365/compliance/recover-an-inactive-mailbox)
 
-2. 通过将 \<MailboxIdentity\> 邮箱的名称、别名、帐户或电子邮件地址替换并在 [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)中运行以下命令，阻止托管文件夹助理处理恢复的邮箱：
+2. 通过替换邮箱的名称、别名、帐户或电子邮件地址，并运行 Exchange Online PowerShell 中的以下命令，阻止托管文件夹助理处理恢复的 \<MailboxIdentity\> [邮箱](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)：
 
     ```powershell
     Set-Mailbox <MailboxIdentity> -ElcProcessingDisabled $true
     ```
 
-3. 向恢复的邮箱分配 **Exchange Online 计划 2** 许可证。 这一步是将邮箱置于诉讼保留状态的必要条件。 有关说明，请参阅 [向用户分配许可证](https://docs.microsoft.com/microsoft-365/admin/manage/assign-licenses-to-users)。
+3. 将 **Exchange Online 计划 2** 许可证分配给恢复的邮箱。 需要此步骤才能将邮箱重新置于诉讼保留状态。 有关说明，请参阅["向用户分配许可证"。](https://docs.microsoft.com/microsoft-365/admin/manage/assign-licenses-to-users)
 
-4. 按照上一节中所述，在邮箱上配置 **PreferredDataLocation** 值。
+4. 配置 **邮箱上的 PreferredDataLocation** 值，如上一节中所述。
 
-5. 确认邮箱已移动到新的地理位置之后，将恢复的邮箱重新置于诉讼保留状态。 有关说明，请参阅 [将邮箱置于诉讼保留状态](https://docs.microsoft.com/microsoft-365/compliance/create-a-litigation-hold#place-a-mailbox-on-litigation-hold)。
+5. 确认邮箱已移动到新地理位置后，将恢复的邮箱重新置于诉讼保留状态。 有关说明，请参阅["将邮箱置于诉讼保留"。](https://docs.microsoft.com/microsoft-365/compliance/create-a-litigation-hold#place-a-mailbox-on-litigation-hold)
 
-6. 验证诉讼保留是否就绪后，允许托管文件夹助理通过将 \<MailboxIdentity\> 邮箱的名称、别名、帐户或电子邮件地址替换并在 [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)中运行以下命令来再次处理邮箱：
+6. 验证诉讼保留已就位后，允许托管文件夹助理再次处理邮箱，方法为替换为邮箱的名称、别名、帐户或电子邮件地址，并运行 \<MailboxIdentity\> [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)中的以下命令：
 
     ```powershell
     Set-Mailbox <MailboxIdentity> -ElcProcessingDisabled $false
     ```
 
-7. 通过删除与邮箱关联的用户帐户，使邮箱再次处于非活动状态。 有关说明，请参阅 [从组织中删除用户](https://docs.microsoft.com/microsoft-365/admin/add-users/delete-a-user)。 此步骤还将释放 Exchange Online 计划2许可证，以供其他用途。
+7. 通过删除与邮箱关联的用户帐户，使邮箱再次变为非活动状态。 有关说明，请参阅["从组织中删除用户"。](https://docs.microsoft.com/microsoft-365/admin/add-users/delete-a-user) 此步骤还会发布 Exchange Online 计划 2 许可证以用于其他用途。
 
-**注意**：将非活动邮箱移到其他地理位置时，可能会影响内容搜索结果或从以前的地理位置搜索邮箱的功能。 有关详细信息，请参阅 [在多地理位置环境中搜索和导出内容](https://docs.microsoft.com/microsoft-365/compliance/set-up-compliance-boundaries#searching-and-exporting-content-in-multi-geo-environments)。
+**注意**：将非活动邮箱移动到其他地理位置时，可能会影响内容搜索结果或从以前的地理位置搜索邮箱的能力。 有关详细信息，请参阅在多地理位置环境中搜索和 [导出内容](https://docs.microsoft.com/microsoft-365/compliance/set-up-compliance-boundaries#searching-and-exporting-content-in-multi-geo-environments)。
 
 ## <a name="create-new-cloud-mailboxes-in-a-specific-geo-location"></a>在特定地理位置中创建新的云邮箱
 
 若要在特定地理位置中创建新邮箱，你需要执行以下任一步骤：
 
-- 按照上一步 [将现有仅云邮箱移动到特定地理位置](#move-an-existing-cloud-only-mailbox-to-a-specific-geo-location)部分中所述配置 **PreferredDataLocation** 值，*然后再* 在 Exchange Online 中创建邮箱。 例如，在分配许可证前配置用户的 **PreferredDataLocation** 值。
+- 配置 **PreferredDataLocation** 值，如前面的"[](#move-an-existing-cloud-only-mailbox-to-a-specific-geo-location)将现有仅云邮箱移动到特定地理位置"部分中所述，在Exchange Online 中创建邮箱之前。 例如，在分配许可证之前，在用户上配置 **PreferredDataLocation** 值。
 
 - 在设置 **PreferredDataLocation** 值的同时分配许可证。
 

@@ -22,12 +22,12 @@ ms.assetid: 10d1004b-42b6-4e2b-aaa2-18ddd9118f64
 description: 摘要：针对发展迅速且配置文件威胁不断增加的组织的计划和实现指南。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: f8ed01d2c41529782c5c714bfe66096b97300712
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 76680ef5b21ae80525a7158ca0473cf82bd154d7
+ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50287397"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "50406324"
 ---
 # <a name="microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-organizations"></a>Microsoft 针对政治宣传活动、非营利组织和其他敏捷型组织的安全指南
 
@@ -65,10 +65,8 @@ ms.locfileid: "50287397"
 
   创建四个具有内部、专用、敏感和高度机密级别的 SharePoint Online 团队网站。
 
-有关演示或概念证明的其他安全功能，请参阅 [Office 365 测试实验室指南](https://aka.ms/o365tlgs)。
+有关演示或概念证明的其他安全功能，请参阅 [Office 365 测试实验室指南](../../enterprise/cloud-adoption-test-lab-guides-tlgs.md)。
 
 ## <a name="see-also"></a>另请参阅
-
-[云采用测试实验室指南 (TLG)](../../enterprise/cloud-adoption-test-lab-guides-tlgs.md)
 
 [Microsoft 云 IT 体系结构资源](../../solutions/cloud-architecture-models.md)

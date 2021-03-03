@@ -19,12 +19,12 @@ ms.custom:
 description: 管理员可以了解如何在 Exchange Online Protection (EOP) 中查看和管理所有用户的隔离) 。 使用 Microsoft Defender for Office 365 的组织中管理员还可以在 SharePoint Online、OneDrive for Business 和 Microsoft Teams 中管理隔离文件。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 22bcf0cefb746e92ccadf8254f4076b47ee475c4
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: b0515d610b38986c2b5339c1cb967a7b150914a2
+ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50287781"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "50405814"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-admin-in-eop"></a>在 EOP 中以管理员身份管理已隔离邮件和文件
 
@@ -49,15 +49,15 @@ ms.locfileid: "50287781"
 
 - 若要连接到 Exchange Online PowerShell，请参阅[连接到 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)。 若要连接到独立 EOP PowerShell，请参阅[连接到 Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell)。
 
-- 必须分配有 Office 365 安全与合规中心内的权限，才能执行本文中的步骤：
+- 您需要在 **Exchange Online** 中分配权限，然后才能执行本文中的过程：
   - 若要对所有用户的隔离邮件采取措施，你需要是组织管理、**安全** 管理员或 **隔离管理员** 角色 <sup>\*</sup> 组的成员。
-  - 若要对所有用户的隔离邮件进行只读访问，你需要是全局读者或安全读者角色组的成员。  
+  - 若要对所有用户的隔离邮件进行只读访问，你需要是全局读者或安全读者 **角色组的成员**。 
 
-  有关详细信息，请参阅 [安全与合规中心的权限](permissions-in-the-security-and-compliance-center.md)。
+  有关详细信息，请参阅 [Exchange Online 中权限](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo)。
 
   **注意**：
 
-  - 向 Microsoft 365 管理中心相应的 Azure 活动目录添加用户会向其提供安全与合规中心的必备权限 _以及_ Microsoft 365其它功能的权限。 有关详细信息，请参阅 [关于管理员角色](../../admin/add-users/about-admin-roles.md)。
+  - 将用户添加到 Microsoft 365 管理中心的相应 Azure Active Directory 角色会为用户提供Microsoft 365 中其他功能所需的权限。 有关详细信息，请参阅 [关于管理员角色](../../admin/add-users/about-admin-roles.md)。
   - [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) 中的 **仅查看组织管理人员** 角色组也提供到该功能的只读访问。
   - <sup>\*</sup>隔离管理员 **角色** 组的成员还需要是 [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups)中清洁管理角色组的成员，才能在 Exchange Online PowerShell 中执行隔离过程。
 
@@ -106,7 +106,7 @@ ms.locfileid: "50287781"
    - **隔离原因**：
      - **策略**：邮件匹配邮件流规则 (也称为传输规则) 。
      - **大量邮件**
-     - **网络钓鱼**：垃圾邮件筛选器裁定是 **网络钓鱼电子邮件** 或防钓鱼保护隔离了邮件 ([欺骗](set-up-anti-phishing-policies.md#spoof-settings) 设置或 [模拟](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) 保护) 。
+     - **网络钓鱼**：垃圾邮件筛选器裁定是网络钓鱼 **电子邮件** 或防钓鱼保护隔离了邮件 ([欺骗](set-up-anti-phishing-policies.md#spoof-settings) 设置或 [模拟](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) 保护) 。
      - **恶意软件**
      - **垃圾邮件**
      - **高可信度网络钓鱼**
@@ -154,7 +154,7 @@ ms.locfileid: "50287781"
 
 - **主题**
 
-- **隔离原因**：显示邮件被标识为垃圾邮件、批量邮件、网络钓鱼邮件、匹配邮件流规则 (**传输** 规则) ，或标识为包含 **恶意软件**。
+- **隔离原因**：显示邮件被标识为垃圾邮件、批量邮件、网络钓鱼邮件、匹配邮件流规则 (**传输** 规则) ，或标识为包含 **恶意软件。**
 
 - **收件人计数**
 
@@ -172,7 +172,7 @@ ms.locfileid: "50287781"
 
 - **释放消息**：在出现的飞出窗格中，选择以下选项：
 
-  - **将邮件报告给 Microsoft 进行分析**：默认情况下选中此选项，将错误隔离的邮件报告给 Microsoft 为误报。 如果邮件被隔离为垃圾邮件、批量邮件、网络钓鱼邮件或包含恶意软件，邮件也会报告给 Microsoft 垃圾邮件分析团队。 根据分析，可能会调整服务范围内的垃圾邮件筛选规则以允许邮件通过。
+  - **将邮件报告给 Microsoft 进行分析**：默认情况下选中此选项，将错误隔离的邮件报告给 Microsoft 为误报。 如果邮件被隔离为垃圾邮件、批量、网络钓鱼或包含恶意软件，邮件也会报告给 Microsoft 垃圾邮件分析团队。 根据分析，可能会调整服务范围内的垃圾邮件筛选规则以允许邮件通过。
 
   - 选择下列选项之一：
     - **将邮件释放给所有收件人**
@@ -193,7 +193,7 @@ ms.locfileid: "50287781"
   - **源视图**：显示禁用所有链接的 HTML 版邮件正文。
   - **文本视图**：以纯文本格式显示邮件正文。
 
-- **从隔离** 区中删除：在出现的警告中单击"是"后，将立即删除该邮件，而不会发送给原始收件人。
+- **从隔离区** 中删除：在出现的警告中单击"是"后，将立即删除该邮件，而不会发送给原始收件人。
 
 - **下载邮件**：在显示的浮出控件窗格中，选择“我了解下载此邮件所面临的风险”，以使用 .eml 格式保存邮件的本地副本。
 
@@ -218,7 +218,7 @@ ms.locfileid: "50287781"
 - **释放邮件**：除了无法选择“将邮件释放给特定收件人”之外，可以选择的选项与释放一封邮件时相同，即只能选择“将邮件释放给所有收件人”或“将邮件释放给其他用户”。
 
   > [!NOTE]
-  > 请考虑以下方案：john@gmail.com向用户faith@contoso.com john@subsidiary.contoso.com。 Gmail 将此邮件分为两个副本，这两个副本在 Microsoft 中均作为网络钓鱼路由到隔离邮箱。 管理员将这两条消息都释放到admin@contoso.com。 将传递到达管理员邮箱的第一个释放的邮件。 第二个释放的邮件被标识为重复传递并跳过。 如果邮件具有相同的邮件 ID 和接收时间，则邮件被标识为重复邮件。
+  > 请考虑以下方案：john@gmail.com向用户faith@contoso.com john@subsidiary.contoso.com。 Gmail 将此邮件分为两个副本，两个副本在 Microsoft 中均作为网络钓鱼邮件路由到隔离区。 管理员将这两条消息都释放到admin@contoso.com。 将传递到达管理员邮箱的第一个释放的邮件。 第二个释放的邮件被标识为重复传递并跳过。 如果邮件具有相同的邮件 ID 和接收时间，则邮件被标识为重复邮件。
 
 - **删除邮件**：在出现的警告中单击"是"后，将立即删除这些邮件，而不会发送给原始收件人。
 
@@ -288,7 +288,7 @@ ms.locfileid: "50287781"
 - **下载文件**
 - **从隔离区删除文件**
 
-如果未释放或删除文件，将在默认隔离保留期到期后删除这些文件。
+如果不释放或删除文件，将在默认隔离保留期到期后删除这些文件。
 
 #### <a name="actions-on-multiple-quarantined-files"></a>对多个隔离文件的操作
 
