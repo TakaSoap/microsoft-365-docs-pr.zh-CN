@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用敏感度标签保护 SharePoint 和 Microsoft Teams 网站以及 Microsoft 365 组中的内容。
-ms.openlocfilehash: 7eea07b91647af2b0b7121f9d9c1f018bc9fc630
-ms.sourcegitcommit: a9ac702c9efc9defded3bfa65618b94bac00c237
+ms.openlocfilehash: 3565b47e21d81b4b3d560d72a29f2deae9587709
+ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/16/2021
-ms.locfileid: "50261455"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "50407312"
 ---
 # <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>使用敏感度标签保护 Microsoft Teams、Microsoft 365 组和 SharePoint 网站中的内容
 
@@ -32,7 +32,7 @@ ms.locfileid: "50261455"
 
 - 与 Microsoft 365 组连接的团队网站的隐私（公共或专用）
 - 外部用户访问
-- 从 SharePoint 网站（预览下）进行的外部共享。
+- 从 SharePoint 网站进行外部共享
 - 非托管设备的访问
 
 > [!IMPORTANT]
@@ -100,7 +100,7 @@ ms.locfileid: "50261455"
 
 4. 如果你选择了“**设备访问和外部共享设置**”，现在请配置以下设置：
     
-    - **控制来自标记的 SharePoint 网站的外部共享**：目前在预览状态下，选择这个选项，然后选择“对任何人外部共享”、“新的或现有来宾”、“现有来宾”或“仅组织内人员”。 有关此配置和设置的详细信息，请参阅 SharePoint 文档，[为网站开启或关闭外部共享](https://docs.microsoft.com/sharepoint/change-external-sharing-site)。
+    - **控制来自标记为 SharePoint 网站或网站** 的外部共享：选择此选项，然后选择对任何人、新来宾和现有来宾、现有来宾或仅对组织内部人员的外部共享。 有关此配置和设置的详细信息，请参阅 SharePoint 文档，[为网站开启或关闭外部共享](https://docs.microsoft.com/sharepoint/change-external-sharing-site)。
     
     - **非托管设备的访问**：此选项使用利用 Azure AD 条件访问来阻止或限制从非托管设备访问 SharePoint 和 OneDrive 内容的 SharePoint 功能。 有关详细信息，请参阅 SharePoint 文档中的[控制非托管设备的访问](/sharepoint/control-access-from-unmanaged-devices)。 为此标签设置指定的选项等效于运行针对网站的 PowerShell 命令，如 SharePoint 说明中的[阻止或限制对特定 SharePoint 网站或 OneDrive](https://docs.microsoft.com/sharepoint/control-access-from-unmanaged-devices#block-or-limit-access-to-a-specific-sharepoint-site-or-onedrive) 部分的步骤 3-5 所述。
         

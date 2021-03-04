@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 已准备好实现敏感度标签以帮助保护组织的数据，但不确定从哪里开始？ 请阅读一些可帮助你使用标签的实用指导。
-ms.openlocfilehash: 03408a2f9e57421ea613bdb38e253401526f8f71
-ms.sourcegitcommit: 78f48304f990e969a052fe6536b2e8d6856e1086
+ms.openlocfilehash: 31c0ae4cdbeabb10fd44aaffaa24a8597e644941
+ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50242362"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "50407156"
 ---
 # <a name="get-started-with-sensitivity-labels"></a>开始使用敏感度标签
 
@@ -85,6 +85,7 @@ ms.locfileid: "50242362"
 |使用户能够使用 Office 应用、文件资源管理器和 PowerShell 标记和保护 Windows 计算机中的文件|[适用于 Windows 的 Azure 信息保护的统一标记客户端](https://docs.microsoft.com/azure/information-protection/rms-client/aip-clientv2)|
 |使用敏感度标签加密文档和电子邮件，并限制谁可以访问该内容以及可以如何使用它 |[通过敏感度标签应用加密，从而限制对内容的访问](encryption-sensitivity-labels.md)|
 |在 Web 上为 Office 启用敏感度标签，支持协同创作、eDiscovery、数据丢失防护和搜索，即便是加密文档也可如此 | [启用 SharePoint 和 OneDrive 中 Office 文件的敏感度标签](sensitivity-labels-sharepoint-onedrive-files.md)
+|文档加密时，在 Office 桌面应用中使用共同创作和自动保存 | [为使用敏感度标签加密的文件启用共同创作](sensitivity-labels-coauthoring.md)
 |自动将敏感度标签应用于文档和电子邮件 | [将敏感度标签自动应用于内容](apply-sensitivity-label-automatically.md)|
 |使用敏感度标签来保护 Teams和 SharePoint 中的内容 |[将敏感度标签与 Microsoft Teams、Microsoft 365 组和 SharePoint 网站配合使用](sensitivity-labels-teams-groups-sites.md)|
 |阻止或警告用户与特定的灵敏度标签共享文件或电子邮件 |[在 DLP 策略中使用灵敏度标签作为条件（预览版）](dlp-sensitivity-label-as-condition.md) |
