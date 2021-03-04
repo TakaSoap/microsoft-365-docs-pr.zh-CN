@@ -237,6 +237,8 @@
               href: data-loss-prevention-policies.md
             - name: 了解终结点数据丢失防护
               href: endpoint-dlp-learn-about.md
+            - name: 了解 Microsoft 365 数据丢失防护本地扫描程序（预览）
+              href: dlp-on-premises-scanner-learn.md
         - name: 开始使用 DLP
           items:
             - name: 开始使用默认 DLP 策略
@@ -245,6 +247,8 @@
               href: create-a-dlp-policy-from-a-template.md
             - name: 创建、测试和优化 DLP 策略
               href: create-test-tune-dlp-policy.md
+            - name: Microsoft 365 数据丢失防护本地扫描程序（预览）入门
+              href: dlp-on-premises-scanner-get-started.md
             - name: 终结点数据丢失防护入门
               href: endpoint-dlp-getting-started.md
             - name: 为 Endpoint DLP 配置设备代理和 Internet 连接设置
@@ -269,6 +273,8 @@
               href: dlp-microsoft-teams.md
             - name: 使用终结点数据丢失防护
               href: endpoint-dlp-using.md
+            - name: 使用 Microsoft 365 数据丢失防护本地扫描程序（预览版）
+              href: dlp-on-premises-scanner-use.md
             - name: 使用 DLP 策略中的通知和策略提示
               href: use-notifications-and-policy-tips.md
             - name: DLP 策略模板包含的内容
