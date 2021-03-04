@@ -15,16 +15,17 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: 633fd7ef00926d89d0b76051bf933798d2482ea1
-ms.sourcegitcommit: a62ac3c01ba700a51b78a647e2301f27ac437c5a
+- m365solution-overview
+ms.openlocfilehash: 858b4a05dd65b0a32d672882e6ec18188c0cce81
+ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/12/2021
-ms.locfileid: "50233822"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50423937"
 ---
 # <a name="insider-risk-solutions-in-microsoft-365"></a>Microsoft 365 内部风险解决方案
 
-内部风险是新式工作场所中安全与合规专业人员最担心的问题之一。 行业研究已表明，内部风险通常与特定的用户事件或活动关联。 保护组织免受这些风险可能难以识别，并且难以缓解。 内部风险包括多个方面的漏洞，并且可能导致组织出现严重问题，包括知识产权损失和工作场所骚扰等。 下图概述了常见的内部风险：
+内部风险是新式工作场所中安全与合规专业人员最关心的问题之一。 行业研究已表明，内部风险通常与特定的用户事件或活动关联。 保护组织免受这些风险可能难以识别，并且难以缓解。 内部风险包括多个方面的漏洞，并且可能导致组织出现严重问题，包括知识产权损失和工作场所骚扰等。 下图概述了常见的内部风险：
 
 ![内部风险威胁](../media/ir-solution-threats.png)
 
@@ -35,13 +36,13 @@ Microsoft 365 风险防护功能是专为内部风险产品和解决方案设计
 | ![数据泄漏图标](../media/ir-risk-data-spillage.png)| 数据泄漏 | ![支持](../media/check-mark.png) | ![支持](../media/check-mark.png) |  |  |
 | !["违反保密性"图标](../media/ir-risk-confidentiality-violations.png)| 保密性违反 | ![支持](../media/check-mark.png) | ![支持](../media/check-mark.png) | ![支持](../media/check-mark.png) |  |
 | ![IP 盗窃图标](../media/ir-risk-ip-theft.png)| IP 盗窃 | ![支持](../media/check-mark.png) | ![支持](../media/check-mark.png) | ![支持](../media/check-mark.png) |  |
-| ![工作场所暴力图标](../media/ir-risk-workplace-violence.png)| 工作场所暴力 | ![受支持](../media/check-mark.png) |  |  |  |
+| ![工作场所暴力图标](../media/ir-risk-workplace-violence.png)| 工作场所暴力 | ![支持](../media/check-mark.png) |  |  |  |
 | ![欺诈/欺诈图标](../media/ir-risk-fraud.png)| 欺诈 | ![支持](../media/check-mark.png) | ![支持](../media/check-mark.png) |  |  |
 | ![策略违反图标](../media/ir-risk-policy-violations.png)| 策略违反 | ![支持](../media/check-mark.png) | ![支持](../media/check-mark.png) | ![支持](../media/check-mark.png) | ![支持](../media/check-mark.png) |
-| ![预览体验成员交易/握手图标](../media/ir-risk-insider-trading.png)| 内部交易 | ![受支持](../media/check-mark.png) |  |  |  |
+| ![预览体验成员交易/握手图标](../media/ir-risk-insider-trading.png)| 内部交易 | ![支持](../media/check-mark.png) |  |  |  |
 | !["利益冲突"图标](../media/ir-risk-conflicts-of-interest.png)| 利益冲突 | ![支持](../media/check-mark.png) |  | ![支持](../media/check-mark.png) |  |
 | ![敏感数据泄露/设备图标](../media/ir-risk-sensitive-data-leaks.png)| 敏感数据泄露 | ![支持](../media/check-mark.png) | ![支持](../media/check-mark.png) |  |  |
-| ![工作区骚扰/人员图标](../media/ir-risk-workplace-harassment.png)| 工作场所骚扰 | ![受支持](../media/check-mark.png) |  |  |  |
+| ![工作区骚扰/人员图标](../media/ir-risk-workplace-harassment.png)| 工作场所骚扰 | ![支持](../media/check-mark.png) |  |  |  |
 | ![安全违反图标](../media/ir-risk-security-violations.png)| 违反安全规定 |  | ![支持](../media/check-mark.png) |  | ![支持](../media/check-mark.png) |
 | ![违反法规的图标](../media/ir-risk-regulatory-compliance-violations.png)| 违反法规 | ![支持](../media/check-mark.png) | ![支持](../media/check-mark.png) | ![支持](../media/check-mark.png) |  |
 
@@ -116,7 +117,7 @@ Microsoft 365 风险防护功能是专为内部风险产品和解决方案设计
 
 ## <a name="deploy-microsoft-365-insider-risk-solutions"></a>部署 Microsoft 365 内部风险解决方案
 
-若要帮助组织抵御内部风险，请设置和部署以下 Microsoft 365 解决方案：
+为了帮助保护组织免受内部风险，请设置和部署以下 Microsoft 365 解决方案：
 
 ![内部风险解决方案深度防御](../media/ir-solution-defense-in-depth.png)
 

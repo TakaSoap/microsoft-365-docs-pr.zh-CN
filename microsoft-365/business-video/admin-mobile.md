@@ -9,25 +9,23 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
-- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: 了解如何在手机上安装 Microsoft 365 管理移动应用。
-ms.openlocfilehash: 110e691858537a90a7bee03b4318a5f415b3e83f
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 43c2c2905dec978a520e2bf2d4b9b2aa7318b7a7
+ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49927534"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50423007"
 ---
 # <a name="install-the-microsoft-365-admin-mobile-app-on-your-phone"></a>在手机上安装 Microsoft 365 管理移动应用
 
@@ -43,21 +41,21 @@ ms.locfileid: "49927534"
 
 ### <a name="reset-a-users-password"></a>重置用户密码
 
-1. 在 **"快速链接"** 下，选择 **"用户"。**
+1. 在 **"快速链接"下**，选择 **"用户"。**
 2. 在 **"用户**"页上，选择用户名，然后选择"重置 **密码"。**
 3. 如果要要求用户在首次登录时更改其新密码，请选中"首次登录时更改"复选框，然后选择"重置 **"。**
-4. 当系统要求确认时，选择 **"是**"，然后单击"**确定"。**
+4. 当系统要求确认时，选择 **"是**"，然后选择"**确定"。**
 5. 在  **"共享密码**  "窗口中，可以选择通过电子邮件或短信向用户发送新密码。
 
-### <a name="add-a-user-to-a-group"></a>向组添加用户
+### <a name="add-a-user-to-a-group"></a>将用户添加到组
 
-1. 在 **"快速链接"** 下，选择 **"组"。**
-2. 在 **"组**"页上，选择要将用户添加到的组，然后选择"编辑成员"，然后 **添加成员**。
+1. 在 **"快速链接"下**，选择 **"组"。**
+2. 在 **"组**"页上，选择要将用户添加到的组，然后选择"编辑成员"，然后选择"**添加成员"。**
 3. 选择要添加的用户。
-4. 当系统要求确认时，选择 **"是**"，然后单击"**确定"。**
+4. 当系统要求确认时，选择 **"是**"，然后选择"**确定"。**
 
 ### <a name="turn-on-notifications"></a>打开通知
 
 1. 在主菜单上，选择"**设置"。**
 2. 在 **"应用设置"** 下，选择 **"通知"。**
-3. 选中服务运行状况和 **消息中心****旁边的复选框**。
+3. 选中"服务运行状况"和"消息中心 **"旁边的复选框**。

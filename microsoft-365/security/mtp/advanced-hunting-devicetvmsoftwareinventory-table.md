@@ -1,7 +1,7 @@
 ---
 title: 高级搜寻架构中的 DeviceTvmSoftwareInventory 表
 description: 在高级搜寻架构的 DeviceTvmSoftwareInventory 表中了解设备中的软件清单。
-keywords: 高级搜寻， 威胁搜寻， 网络威胁搜寻， microsoft 威胁防护， microsoft 365， mtp， m365， 搜索， 查询， 遥测， 架构参考， kusto， 表， 列， 数据类型， 说明， 威胁 & 漏洞管理， TVM， 设备管理， 软件， 清单， 漏洞， CVE ID， OS DeviceTvmSoftwareInventoryVulnerabilities
+keywords: 高级搜寻， 威胁搜寻， 网络威胁搜寻， Microsoft 威胁防护， microsoft 365， mtp， m365， 搜索， 查询， 遥测， 架构参考， kusto， 表， 列， 数据类型， 说明， 威胁 & 漏洞管理， TVM， 设备管理， 软件， 清单， 漏洞， CVE ID， OS DeviceTvmSoftwareInventoryVulnerabilities
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -11,7 +11,7 @@ ms.pagetype: security
 f1.keywords:
 - NOCSH
 ms.author: maccruz
-author: maccruz
+author: schmurky
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 5edb6205e0392441163060aa7181ca031e1fbb0d
-ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
+ms.openlocfilehash: 445e6f767cc2269315a0b280df2f4deefa2faa08
+ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "50416773"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50423971"
 ---
 # <a name="devicetvmsoftwareinventory"></a>DeviceTvmSoftwareInventory
 
@@ -36,7 +36,7 @@ ms.locfileid: "50416773"
 - Microsoft 365 Defender
 
 >[!IMPORTANT]
-> 某些信息与预发布产品相关，在商业发布之前可能会对其进行重大修改。 Microsoft makes no warranties, express or implied, with respect to the information provided here.
+> 某些信息与预发布产品相关，该产品在商业发布之前可能会进行重大修改。 Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
 
 高级搜寻架构中的表包含&网络中设备上当前安装的软件的威胁和漏洞管理清单，包括支持 `DeviceTvmSoftwareInventory` 信息结尾。 [](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt) 例如，你可以搜寻涉及使用当前易受攻击的软件版本安装的设备的事件。 使用此参考来构建从该表返回信息的查询。

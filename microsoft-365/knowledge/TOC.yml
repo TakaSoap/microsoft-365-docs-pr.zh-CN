@@ -1,12 +1,12 @@
-- name: Microsoft Viva 入门
+- name: Microsoft Viva 主题
+  href: index.md
+- name: Microsoft Viva 主题入门
   items:
-    - name: Microsoft Viva 简介
-      href: index.md
-    - name: Microsoft Viva 概述
+    - name: Microsoft Viva 主题概述
       href: topic-experiences-overview.md
-    - name: Microsoft Viva 发现与管理
+    - name: Microsoft Viva 主题发现与策划
       href: topic-experiences-discovery-curation.md
-    - name: Microsoft Viva 角色
+    - name: Microsoft Viva 主题角色
       href: topic-experiences-roles.md
     - name: 准备好你的环境
       href: topic-experiences-get-ready.md
@@ -28,6 +28,8 @@
       href: topic-experiences-administration.md
 - name: 处理主题
   items:
+    - name: Microsoft Viva 主题入门
+      href: get-started-with-viva-topics.md
     - name: 管理中心概述
       href: topic-center-overview.md
     - name: 在主题中心管理主题

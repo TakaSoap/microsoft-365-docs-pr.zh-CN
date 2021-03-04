@@ -9,26 +9,24 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
-- okr_smb
 monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: 了解如何将用户移动到其他订阅。
-ms.openlocfilehash: b3b82dcf029395dbbe49d0e0ea87f87f4494b4f0
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 158201eb4bcdf7e4b7451c1811dcc68692f341ff
+ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49927414"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50422959"
 ---
 # <a name="move-users-to-different-subscriptions"></a>将用户移动到不同的订阅
 
@@ -40,15 +38,15 @@ ms.locfileid: "49927414"
 
 ### <a name="add-a-new-subscription"></a>添加新订阅
 
-1. 在 Microsoft 365 管理中心的左侧导航窗格中，选择"计费"，然后选择 **"购买服务"。**
+1. 在 Microsoft 365 管理中心的左侧导航窗格中，选择"计费"，**然后选择"购买服务"。**
 1. 选择要添加的订阅，然后选择"购买 **"。**
-1. 选择想要如何支付以及所需的许可证数，然后选择"**现在签出"。**
+1. 选择想要如何支付以及所需的许可证数，然后选择"现在 **签出"。**
 1. 查看你的订单，然后选择"下一 **步"。**
 1. 确认你的总数，然后选择 **下订单**。
 
 ### <a name="change-the-license-assigned-to-a-user"></a>更改分配给用户的许可证
 
-1. 在 Microsoft 365 管理中心的左侧导航窗格中，选择"用户"，然后选择"**活动用户"。**
+1. 在 Microsoft 365 管理中心的左侧导航窗格中，选择 **"** 用户"，然后选择 **"活动用户"。**
 1. 选择用户的名称，然后选择"许可证 **"和"应用**"。
 1. 在 **"** 许可证"下，你将看到新订阅。 选中新订阅旁边的复选框，并清除旧订阅旁边的复选框。
 1. 选择“**保存更改**”。 新订阅的许可证现在分配给此用户。
@@ -57,4 +55,4 @@ ms.locfileid: "49927414"
 
 1. 在 Microsoft 365 管理中心中， **选择"计费**"，然后选择& **服务**。
 1. 选择要更改的订阅，然后选择"**添加/删除许可证"。**
-1. 使用向下箭头减少此订阅的许可证数，然后选择"提交 **更改"。** 现在，你的用户拥有正确的许可证数量。
+1. 使用向下箭头减少此订阅的许可证数，然后选择"提交 **更改"。** 现在，您具有适合用户的许可证数量。

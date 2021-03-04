@@ -9,31 +9,29 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
-- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: 了解可在 Microsoft 365 商业版中存储文件的位置。
-ms.openlocfilehash: 4f9ce18ca86a59e615426b994ef440279a78990a
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: e8c0347489b3d35217b3cad38e26670d2c6023bb
+ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49927798"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50421831"
 ---
 # <a name="where-to-store-files"></a>文件存储位置
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FTHX?autoplay=false]
 
-在 Microsoft 365 中，可以将工作存储在 OneDrive for Business 或 SharePoint 网站中。 组织中的每个人都有自己的 OneDrive for Business 库来存储个人工作文件。 创建文件并将其保存到 OneDrive 文件夹时，文件会同步到云中，以便你可以从任意位置（Web 浏览器、计算机或移动设备）访问这些文件。 对于共享文件存储和团队协作，请使用 SharePoint 网站。 SharePoint 网站还会同步到云，便于从任何位置访问。
+在 Microsoft 365 中，可以将工作存储在 OneDrive for Business 或 SharePoint 网站中。 组织的每一个人都有自己的 OneDrive for Business 库来存储个人工作文件。 创建文件并将其保存到 OneDrive 文件夹时，这些文件会同步到云，以便你可以从任何位置（Web 浏览器、计算机或移动设备）访问这些文件。 对于共享文件存储和团队协作，请使用 SharePoint 网站。 SharePoint 网站还同步到云，便于从任何位置访问。
 
 ## <a name="try-it"></a>试一试！
 
@@ -44,7 +42,7 @@ ms.locfileid: "49927798"
 
 ### <a name="collaborate-with-a-sharepoint-site"></a>与 SharePoint 网站协作
 
-1. 从 [Office 365](https://www.office.com/)中，从应用启动器打开  **SharePoint，**  然后选择团队网站。
+1. 从 [Office 365](https://www.office.com/)中，从应用程序启动器打开  **SharePoint，**  然后选择团队网站。
 2. 将文件添加到默认文档位置，或创建更多文档位置（称为库）。
 
-您可以通过为特定项目、团队或客户创建子网站来自定义 SharePoint 网站。 还可以添加公司名称、徽标和外观，将网站转换为业务 Intranet。 [了解详细信息](https://support.microsoft.com/office/06bbadc3-6b04-4a60-9d14-894f6a170818)。
+您可以通过为特定项目、团队或客户创建子网站来自定义 SharePoint 网站。 您还可以添加公司名称、徽标和外观，将网站转换为业务 Intranet。 [了解详细信息](https://support.microsoft.com/office/06bbadc3-6b04-4a60-9d14-894f6a170818)。

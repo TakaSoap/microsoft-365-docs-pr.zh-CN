@@ -9,26 +9,24 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
-- okr_smb
 monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: 帮助员工了解如何设置他们通过 Microsoft 365 商业高级版获取的 Office 应用。
-ms.openlocfilehash: 1715562a648af42bff07ab9a3e62647e386125cb
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: c336e12e05a0bb2f0967c7e7591913cbb2ce6742
+ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49927246"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50422755"
 ---
 # <a name="employee-quick-setup"></a>员工快速设置
 
@@ -43,7 +41,7 @@ ms.locfileid: "49927246"
 
 ## <a name="2-download-and-install-office-apps"></a>2. 下载并安装 Office 应用
 
-1. 选择 **右上方** 的"安装 Office"。
+1. 选择 **右上角的"** 安装 Office"。
     - 在 Chrome 中，转到页面底部的下载，然后选择" **打开**"。
     - 在 Microsoft Edge/IE 中，选择" **保存**"然后选择" **运行**"。
     
@@ -63,7 +61,7 @@ ms.locfileid: "49927246"
 
 ## <a name="4-save-or-copy-files-to-onedrive"></a>4. 将文件保存或复制到 OneDrive
 
-- 从 Office 应用中的"另存为 **"菜单将** 文档保存到 **OneDrive。**
+- 从 Office 应用中的"另存为"菜单 **将** 文档保存到 **OneDrive。**
     :::image type="content" source="../media/save-onedrive.png" alt-text="请了解如何将另存为 OneDrive。":::
 
 - 或将文件从桌面或文档复制到" **OneDrive**"。
@@ -71,7 +69,7 @@ ms.locfileid: "49927246"
     :::image type="content" source="../media/save-to-onedrive-from-docs.png" alt-text="显示如何从&quot;文档&quot;文件夹保存到 OneDrive 的图像。":::
 
     > [!TIP]
-    > 还可以在 Microsoft 365 [中将](https://support.microsoft.com/office/d18d21a0-1f9f-4f6c-ac45-d52afa0a4a2e) 文件存储在网站上。
+    > 还可以在 Microsoft 365 [中的网站上](https://support.microsoft.com/office/d18d21a0-1f9f-4f6c-ac45-d52afa0a4a2e) 存储文件。
 
 ## <a name="5-share-documents"></a>5. 共享文档
 
@@ -88,4 +86,4 @@ ms.locfileid: "49927246"
 - 或者，在 iOS 或 Android 设备上打开 Outlook，然后转到" **设置**"。
 
     选择" **添加帐户**"，然后选择" **添加电子邮件帐户**"，键入电子邮件和密码。
-- 在 **Windows Phone 上**，选择"**设置****"、"电子邮件 + 帐户****"、"添加帐户**"，然后选择 **"Exchange"。**
+- 在 **Windows Phone 上**，选择"**设置****"、"电子邮件 + 帐户"、"****添加帐户**"，然后选择 **"Exchange"。**

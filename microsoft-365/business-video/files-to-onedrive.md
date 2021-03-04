@@ -9,25 +9,23 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
-- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: 了解如何将文件移动到 OneDrive。
-ms.openlocfilehash: 5a708ba797dbb735c71f181fc287fb831004112b
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: f5795ba907e2ac88136887410b5b713bd7d56d81
+ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49927210"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50422719"
 ---
 # <a name="move-files-to-onedrive"></a>将文件移动到 OneDrive
 
@@ -41,9 +39,9 @@ ms.locfileid: "49927210"
 2. 搜索 OneDrive，然后选择它。
 3. 输入你的工作电子邮件地址。
 4. 选择 **"登录"，** 然后选择"下 **一步"。**
-5. 完成简短教程，然后选择"打开我的 **OneDrive 文件夹"。** 如果你还使用 OneDrive 的个人版本，&#39;将在此处看到它。
+5. 完成简短教程，然后选择"打开我的  **OneDrive"文件夹**。 如果你还使用 OneDrive 的个人版本，&#39;将在此处看到它。
 6. 在文件资源管理器中，转到要复制的文件。
-7. 选择文件，然后将其拖放到 OneDrive 文件夹中。 文件旁边的蓝色圆形箭头意味着&#39;同步到云。 完成&#39;后，将显示绿色选中标记。
+7. 选择文件，然后将其拖放到 OneDrive 文件夹中。 文件旁边的蓝色圆形箭头表示它们&#39;同步到云。 完成&#39;后，将显示绿色选中标记。
 
 除了在本地处理 OneDrive 文件外，您还可以从 Web 浏览器访问它们：
 

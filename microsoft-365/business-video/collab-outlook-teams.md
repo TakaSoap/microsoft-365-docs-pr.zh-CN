@@ -9,36 +9,34 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
-- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: 了解如何使用 Outlook 和 Microsoft Teams 进行协作。
-ms.openlocfilehash: 3d5ac6dd157b0469800a3dd6f841ec1a5c1d1ed9
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 14a3cdf28c4e0c855671c67af36fa25ac47c6568
+ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49927342"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50422827"
 ---
 # <a name="use-outlook-and-teams-together"></a>结合使用 Outlook 和 Teams
 
-当你与小型企业的员工、合作伙伴、客户和其他人员通信时，请使用 Microsoft 365 中的 Outlook 和 Teams。 在 Outlook 中，你将找到电子邮件、日历、联系人和任务，而在 Teams 中，你将找到对话、文件、会议和快速访问 Microsoft 和第三方应用。 下面汇总了如何在业务中使用每种功能。
+当你与小型企业的员工、合作伙伴、客户和其他人员通信时，请使用 Microsoft 365 中的 Outlook 和 Teams。 在 Outlook 中，你将找到电子邮件、日历、联系人和任务，而在 Teams 中，你将找到对话、文件、会议和快速访问 Microsoft 和第三方应用。 下面汇总了如何在业务中使用每一项。
 
 ## <a name="microsoft-outlook"></a>Microsoft Outlook
 
 - 检查来自企业内外的消息，包括业务的新线索。
 - 检查日历、添加约会和安排会议。
-- 添加你作为联系人合作的人的姓名、号码和电子邮件。
-- 创建任务、注释和其他方法，以随时关注您的短期和长期项目。
+- 添加作为联系人与合作人员的姓名、号码和电子邮件。
+- 创建任务、备注和其他方法，以随时关注您的短期和长期项目。
 
 :::image type="content" source="../media/outlook-model.png" alt-text="Outlook 主页的样式化图像。":::
 
