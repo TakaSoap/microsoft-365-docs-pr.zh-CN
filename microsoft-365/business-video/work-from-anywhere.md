@@ -9,37 +9,35 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
-- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Microsoft 365 如何帮助你从任何位置工作概述。
-ms.openlocfilehash: 55327fff51b67107aab7069c0036e8ded9b73cbb
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+description: Microsoft 365 如何帮助你随时随地工作概述。
+ms.openlocfilehash: 7c3a0ee4b69f7fa4e07064f0adc108afe70bd54d
+ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49927774"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50421677"
 ---
 # <a name="work-from-anywhere---overview"></a>随时随地工作 - 概述
 
-离开桌面？ 没有更多笔记本电脑电池？ 没问题！ 在手机或平板电脑上通过 Office 从任意位置处理工作。
+离开桌面？ 不再使用笔记本电脑电池？ 没问题！ 使用手机或平板电脑上的 Office 从任何位置处理工作。
 
 **专业提示：** 通过关闭个人设备上工作应用的通知，保持工作与生活平衡。
 
-使用下面的四个提示随时随地工作：下载信息图，获取从任何位置工作的提示 [：PDF](https://go.microsoft.com/fwlink/?linkid=2079451) [、PowerPoint](https://go.microsoft.com/fwlink/?linkid=2079455)
+使用下面的四个提示随时随地工作：下载信息图，获取从任何位置工作的提示[：PDF、PowerPoint](https://go.microsoft.com/fwlink/?linkid=2079451) [](https://go.microsoft.com/fwlink/?linkid=2079455)
 
 **考虑定期在家工作？**
 
-使用此模板可以分析你习惯以及你工作的方式，以创建一个在过渡到家庭办公室时的工作方式。 收集材料与装饰以优化空间，并保持高效且能够执行任务。 [下载模板](https://templates.office.com/EN-US/work-from-home-checklist-TM77989015)
+使用此模板分析习惯以及希望的工作方式，以创建在过渡到家庭办公室时的工作方式。 收集材料与装饰，以优化空间，并保持高效和执行任务。 [下载模板](https://templates.office.com/EN-US/work-from-home-checklist-TM77989015)
 
 ## <a name="install-outlook-and-keep-in-touch"></a>安装 Outlook 并保持联系
 
@@ -56,14 +54,14 @@ ms.locfileid: "49927774"
 - 获取 [SharePoint 移动应用](https://support.microsoft.com/office/539608ac-4725-455e-aea0-9ca1f769849f)。
 - 获取 [Microsoft Teams 移动应用](https://support.microsoft.com/office/set-up-your-teams-mobile-apps-1ba8dce3-1122-47f4-8db6-00a4f93117e8)。
 
-你可以将个人文件存储在 OneDrive 中，然后从手机进行同步。
+你可以将个人文件存储在 OneDrive 中，然后从手机同步这些文件。
 
 **使用 OneDrive 同步文件**
 
 1. 打开 OneDrive 并登录。
 1. 按照说明完成设置并开始同步。
 
-需要一些帮助？ 获取有关文件 [存储位置、](https://support.microsoft.com/office/c7c20284-bc94-47f4-9728-d28e9daf0790)如何使用 [OneDrive 移动应用](https://support.microsoft.com/office/448d4051-3a43-4d2e-b1d8-de0aa03c069e) 以及如何同步 [文件和文件夹的建议](https://support.microsoft.com/office/d9262485-9bf8-4ceb-bac2-e83f68cb6a97)。
+需要一些帮助？ 获取有关文件 [存储位置、](https://support.microsoft.com/office/c7c20284-bc94-47f4-9728-d28e9daf0790)如何使用 [OneDrive 移动应用](https://support.microsoft.com/office/448d4051-3a43-4d2e-b1d8-de0aa03c069e) 以及如何同步文件和文件夹 [的建议](https://support.microsoft.com/office/d9262485-9bf8-4ceb-bac2-e83f68cb6a97)。
 
 ## <a name="open-and-edit-your-files-from-any-device"></a>从任何设备打开和编辑文件
 
@@ -73,7 +71,7 @@ ms.locfileid: "49927774"
 
 了解有关在 Android iOS 上安装[](https://support.microsoft.com/office/647909af-560f-4977-ae45-3b45ad9e8236)Office  |  [应用有关详细信息](https://support.microsoft.com/office/d1ad9f23-0fa3-4cf1-bf26-ff35336fd343)。
 
-不确定在手机或平板电脑上可以做什么？ 阅读有关使用 Office 应用的信息：
+不确定可以在手机或平板电脑上做什么？ 阅读有关使用 Office 应用的信息：
 
 | 在 iPad 或 iPhone 上工作| 在 Android 手机或平板电脑上工作| 
 | :------------------- | :------------------- |
@@ -100,10 +98,10 @@ ms.locfileid: "49927774"
 
 从笔记本电脑：
 
-- 在 Microsoft Teams中，单击应用左侧的"会议"按钮，你将看到一周的所有 :::image type="icon" source="../media/meetings-icon.png" border="false"::: 会议列表。 找到您想要的会议，然后单击"加入"。
+- 在 Microsoft Teams中，单击应用左侧的"会议"按钮，你将看到一周的所有会议 :::image type="icon" source="../media/meetings-icon.png" border="false"::: 的列表。 找到您想要的会议，然后单击"加入"。
 
 从手机：
 
 - 在会议之前和会议期间，你将在聊天列表或 Microsoft Teams 中的频道对话中看到会议通知。
 
-    你可以从会议通知或会议日历 :::image type="icon" source="../media/meetings-icon.png" border="false"::: 加入
+    可以从会议通知或会议日历 :::image type="icon" source="../media/meetings-icon.png" border="false"::: 加入
