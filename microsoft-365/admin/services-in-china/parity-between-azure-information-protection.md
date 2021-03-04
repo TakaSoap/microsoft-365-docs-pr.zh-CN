@@ -35,7 +35,7 @@ ms.locfileid: "50099674"
 
 <span data-ttu-id="c0bed-106">我们的目标是通过针对由世纪互联运营的 Office 365 的 AIP 产品，为中国客户提供所有商业特性和功能，但是我们要强调的一些缺失功能。</span><span class="sxs-lookup"><span data-stu-id="c0bed-106">While our goal is to deliver all commercial features and functionality to customers in China with our AIP for Office 365 operated by 21Vianet offer, there's some missing functionality that we'd like to highlight.</span></span>
 
-<span data-ttu-id="c0bed-107">以下列表包含世纪行运营的 Office 365 的 AIP 与 2021 年 1 月前的商业产品之间的现有缺陷：</span><span class="sxs-lookup"><span data-stu-id="c0bed-107">The following list includes the existing gaps between AIP for Office 365 operated by 21Vianet and our commercial offerings as of January 2021:</span></span>
+<span data-ttu-id="c0bed-107">以下列表包含世纪互联运营的 Office 365 的 AIP 与 2021 年 1 月前的商业产品之间的现有缺陷：</span><span class="sxs-lookup"><span data-stu-id="c0bed-107">The following list includes the existing gaps between AIP for Office 365 operated by 21Vianet and our commercial offerings as of January 2021:</span></span>
 
 - <span data-ttu-id="c0bed-108">仅 Microsoft 365 企业版应用（内部版本 11731.10000 或更高版本）支持信息权限管理 （IRM）。</span><span class="sxs-lookup"><span data-stu-id="c0bed-108">Information Rights Management (IRM) is supported only for Microsoft 365 Apps for enterprise (build 11731.10000 or higher).</span></span> <span data-ttu-id="c0bed-109">不支持 Office 2010、Office 2013 和其他 Office 2016 版本。</span><span class="sxs-lookup"><span data-stu-id="c0bed-109">Office 2010, Office 2013, and other Office 2016 versions are not supported.</span></span>
 
