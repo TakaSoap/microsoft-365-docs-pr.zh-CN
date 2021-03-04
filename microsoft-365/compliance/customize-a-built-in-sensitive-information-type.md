@@ -18,16 +18,16 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: 了解如何创建自定义敏感信息类型，以允许使用满足组织需求的规则。
-ms.openlocfilehash: 745cea9a0851168999335e27b970276726b516d0
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: 40584b430af6e822b115e014c20481c027222aae
+ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47546660"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50423401"
 ---
 # <a name="customize-a-built-in-sensitive-information-type"></a>自定义内置敏感信息类型
 
-在内容中查找敏感信息时，需要在*规则*中描述相应信息。数据丢失防护 (DLP) 包含最常见敏感信息类型对应的规则，可供立即使用。若要使用这些规则，必须将它们添加到策略中。你可能会发现，需要调整这些内置规则，才能满足组织的特定需求。为此，请创建自定义敏感信息类型。本主题介绍了如何将包含现有规则集合的 XML 文件自定义为，检测更广泛的潜在信用卡信息。 
+在内容中查找敏感信息时，需要在 *规则* 中描述相应信息。数据丢失防护 (DLP) 包含最常见敏感信息类型对应的规则，可供立即使用。若要使用这些规则，必须将它们添加到策略中。你可能会发现，需要调整这些内置规则，才能满足组织的特定需求。为此，请创建自定义敏感信息类型。本主题介绍了如何将包含现有规则集合的 XML 文件自定义为，检测更广泛的潜在信用卡信息。 
   
 可以参考本示例，自定义其他内置敏感信息类型。有关默认敏感信息类型和 XML 定义的列表，请参阅[敏感信息类型属性定义](sensitive-information-type-entity-definitions.md)。 
   
@@ -58,7 +58,7 @@ ms.locfileid: "47546660"
   
 ## <a name="find-the-rule-that-you-want-to-modify-in-the-xml"></a>在 XML 中查找要修改的规则
 
-上面的 cmdlet 导出了整个*规则集合*，其中包括我们提供的默认规则。接下来，需要专门查找要修改的“信用卡号”规则。 
+上面的 cmdlet 导出了整个 *规则集合*，其中包括我们提供的默认规则。接下来，需要专门查找要修改的“信用卡号”规则。 
   
 1. 使用文本编辑器打开在上一部分中导出的 XML 文件。
     
@@ -201,7 +201,7 @@ ms.locfileid: "47546660"
   
 1. 使用 Unicode 编码将其另存为 .xml 文件。这一点很重要，因为如果文件使用其他编码保存，将无法正常运行。
     
-2. [使用远程 PowerShell 连接到安全与合规中心](https://go.microsoft.com/fwlink/?linkid=799771)。
+2. [使用远程 PowerShell 连接到安全与合规中心](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell)。
     
 3. 在 PowerShell 中，键入下面的代码。
 
@@ -212,7 +212,7 @@ ms.locfileid: "47546660"
    > [!IMPORTANT]
    > 请务必使用规则包实际存储到的文件位置。`C:\custompath\` 是占位符。 
   
-4. 若要确认，请先键入“Y”，再按 Enter****。
+4. 若要确认，请先键入“Y”，再按 Enter。
 
 5. 请键入以下内容，验证新规则是否已上载及其显示名称：
 

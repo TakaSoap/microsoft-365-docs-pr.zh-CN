@@ -19,12 +19,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 了解如何使用 DLP (策略) 数据丢失防护来保护具有第三方系统属性的文档。
-ms.openlocfilehash: cf026e447ad1f0da3486a36dd5e36c52c09998cb
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 971d2a1dd4f69f7bbd2598e31fc99c9c5cfe1eda
+ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50288225"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50423795"
 ---
 # <a name="create-a-dlp-policy-to-protect-documents-with-fci-or-other-properties"></a>创建 DLP 策略来保护具有 FCI 或其他属性的文档
 
@@ -36,13 +36,13 @@ MICROSOFT 365 数据丢失防护 (DLP) 策略可以使用分类属性或项目�
 
 ![显示 Office 365 和外部分类系统的图表](../media/59ad0ac1-4146-4919-abd1-c74d8508d25e.png)
 
-例如，你的组织可能使用 Windows Server FCI 来标识具有个人数据（如社会保险号）的项目，然后根据文档中找到的个人数据的类型和次数将个人身份信息属性设置为高、中等、**低**、公用或不 **PII，** 对文档进行分类。
+例如，你的组织可能使用 Windows Server FCI 来标识具有个人数据（如社会保险号）的项目，然后根据文档中找到的个人数据的类型和次数将个人身份信息属性设置为"高、中等、**低**、公用"或"非 **PII"，** 对文档进行分类。 
 
-在 Microsoft 365 中，您可以创建 DLP 策略来标识将该属性设置为特定值（如"高"和"中"）的文档，然后执行阻止访问这些文件等操作。 如果将属性设置为“低”，则同一个策略可以使用其他规则来执行不同的操作，如发送电子邮件通知。 这样，DLP 与 Windows Server FCI 集成，并且可以帮助保护从基于 Windows Server 的文件服务器上载或共享到 Microsoft 365 的 Office 文档。
+在 Microsoft 365 中，您可以创建一个 DLP 策略，用于标识将该属性设置为特定值（如"高"和"中"）的文档，然后执行阻止访问这些文件等操作。 如果将属性设置为“低”，则同一个策略可以使用其他规则来执行不同的操作，如发送电子邮件通知。 这样，DLP 与 Windows Server FCI 集成，并且可以帮助保护从基于 Windows Server 的文件服务器上载或共享到 Microsoft 365 的 Office 文档。
 
 DLP 策略只需查找特定的属性名称/值对。 可以使用任何文档属性，只要该属性具有 SharePoint 搜索的相应托管属性。 例如，SharePoint 网站集可能使用名为“行程报告”的内容类型，包含名为“客户”的必填字段。 只要有人创建行程报告，就必须输入客户名称。 此属性名称/值对也可在 DLP 策略中使用，例如，如果您希望在 Customer 字段包含 **Contoso** 时阻止来宾访问文档的规则。
 
-如果要将 DLP 策略应用于具有特定 Microsoft 365 标签的内容，则不应按照此处的步骤操作。 相反，了解如何在 [DLP 策略中将](data-loss-prevention-policies.md#using-a-retention-label-as-a-condition-in-a-dlp-policy)保留标签用作条件。
+如果要将 DLP 策略应用于具有特定 Microsoft 365 标签的内容，则不应按照此处的步骤操作。 相反，了解如何在 [DLP 策略中将保留标签用作条件](data-loss-prevention-policies.md#using-a-retention-label-as-a-condition-in-a-dlp-policy)。
 
 ## <a name="before-you-create-the-dlp-policy"></a>在创建 DLP 策略之前
 
@@ -51,9 +51,9 @@ DLP 策略只需查找特定的属性名称/值对。 可以使用任何文档�
 示例
 
 > [!NOTE]
-> 在使用条件创建 DLP 规则时，请确保使用托管属性名称而不是已爬网属性 `ContentPropertyContainsWords` 名称。
+> 在使用条件创建 DLP 规则时，请确保使用托管属性名称，而不是已爬网属性 `ContentPropertyContainsWords` 名称。
 
-这一点很重要，因为 DLP 使用搜索爬网程序识别和分类您网站的敏感信息，然后将该敏感信息存储在搜索索引的安全部分。 当您将文档上载到 Office 365 时，SharePoint 会自动创建基于文档属性的已爬网属性。 但是，要在 DLP 策略中使用 FCI 或其他属性，该已爬网属性需要映射到托管属性，以便将包含该属性的内容保留在索引中。
+这一点很重要，因为 DLP 使用搜索爬网程序识别和分类您网站的敏感信息，然后将敏感信息存储在搜索索引的安全部分。 当您将文档上载到 Office 365 时，SharePoint 会自动创建基于文档属性的已爬网属性。 但是，要在 DLP 策略中使用 FCI 或其他属性，该已爬网属性需要映射到托管属性，以便将包含该属性的内容保留在索引中。
 
 有关搜索和托管属性详细信息，请参阅["在 SharePoint Online 中管理搜索架构"。](https://go.microsoft.com/fwlink/p/?LinkID=627454)
 
@@ -95,7 +95,7 @@ DLP 策略只需查找特定的属性名称/值对。 可以使用任何文档�
 
 首先，它们按照上述步骤在 SharePoint Online 中创建托管属性，该属性映射到从 FCI 属性自动创建的已爬网属性。
 
-接下来，它们使用两个规则创建 DLP 策略，这两个规则都使用 **条件 Document 属性包含以下任一值**：
+接下来，他们创建一个 DLP 策略，其中包含两个同时使用 **条件 Document 属性包含以下任一值的规则**：
 
 - **FCI PII 内容 - 高、中** 如果 FCI 分类属性"个人身份信息"等于 **"** 高"或"中等"，并且文档与组织外部人员共享，则第一个规则将限制对文档的访问。
 
@@ -105,9 +105,9 @@ DLP 策略只需查找特定的属性名称/值对。 可以使用任何文档�
 
 条件 **文档属性包含** 这些值中的任意一个暂时在安全合规中心的 UI 中不可用，但您仍可以使用 &amp; PowerShell 使用此条件。 可以使用 cmdlet 处理 DLP 策略，并使用带参数的 cmdlet 添加条件 Document 属性包含这些值  `New\Set\Get-DlpCompliancePolicy`  `New\Set\Get-DlpComplianceRule`  `ContentPropertyContainsWords` **中的任意值**。
 
-有关这些 cmdlet 的信息，请参阅[安全 &amp; 合规中心 cmdlet。](https://go.microsoft.com/fwlink/?LinkID=799772&amp;clcid=0x409)
+有关这些 cmdlet 的信息，请参阅[安全 &amp; 合规中心 cmdlet。](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell)
 
-1. [使用远程 &amp; PowerShell 连接到安全合规中心](https://go.microsoft.com/fwlink/?LinkID=799771&amp;clcid=0x409)
+1. [使用远程 &amp; PowerShell 连接到安全合规中心](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell)
 
 2. 使用  `New-DlpCompliancePolicy` 创建策略。
 
@@ -146,7 +146,7 @@ DLP 策略只需查找特定的属性名称/值对。 可以使用任何文档�
 
 ### <a name="reindex-a-site-optional"></a>为网站重新索引 (可选) 
 
-1. 在网站中 **，选择** ("网站设置"中右上角) \> **齿轮图标**。
+1. On the site， choose **Settings** (gear icon in upper right) \> **Site Settings.**
 
 2. 在 **"搜索**"下，选择 **"搜索和脱机可用性** \> **重新索引"网站**。
 
