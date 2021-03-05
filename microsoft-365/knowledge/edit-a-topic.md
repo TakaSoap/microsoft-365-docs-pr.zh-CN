@@ -11,15 +11,15 @@ ms.prod: microsoft-365-enterprise
 search.appverid: ''
 ms.collection:
 - enabler-strategic
-- m365initiative-topics
+- m365initiative-viva-topics
 ms.service: ''
 localization_priority: Normal
-ms.openlocfilehash: 9dfad7e179699c599d9320390aaefd2dac176fbb
-ms.sourcegitcommit: 88820cd2536a7da868e472d10b4d265c52e5692b
+ms.openlocfilehash: ac8e4b8cdcdfd4d2de0c48a22500338c7a8480a8
+ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "50279406"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50454167"
 ---
 # <a name="edit-an-existing-topic"></a>编辑现有主题 
 
@@ -29,7 +29,7 @@ ms.locfileid: "50279406"
 
 </br>
 
-在 Viva 主题中，可以编辑现有主题。 如果要更正现有主题页面或向现有主题页面添加其他信息，可能需要这样做。 
+在 Viva 主题中，可以编辑现有主题。 如果要更正或向现有主题页面添加其他信息，可能需要这样做。 
 
 > [!Note] 
 > 虽然 AI 收集的主题信息经过安全修整，[](topic-experiences-security-trimming.md)但请注意，编辑现有主题时手动添加的主题说明和人员信息对有权查看主题的所有用户可见。 
@@ -38,7 +38,7 @@ ms.locfileid: "50279406"
 
 若要编辑现有主题，需要：
 - 拥有 Viva 主题许可证。
-- 对可以创建或 [**编辑主题的 Who 具有权限**](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-user-permissions)。 知识管理员可以在 Viva 主题权限设置中授予用户此权限。 
+- 对可以创建或 [**编辑主题的**](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-user-permissions)Who 具有权限。 知识管理员可以在 Viva 主题权限设置中授予用户此权限。 
 
 > [!Note] 
 > 具有在主题中心管理主题的权限的用户 (知识) 已拥有创建和编辑主题的权限。
@@ -55,7 +55,7 @@ ms.locfileid: "50279406"
 
 ### <a name="to-edit-a-topic-page"></a>编辑主题页
 
-1. 在主题页上，选择"编辑 **"。** 这允许您根据对主题页的需要进行更改。
+1. 在主题页上，选择"编辑 **"。** 这样，你可根据需要对主题页进行更改。
 
    ![编辑控件](../media/knowledge-management/topic-page-edit.png) </br>  
 
@@ -67,7 +67,7 @@ ms.locfileid: "50279406"
 
     ![说明部分](../media/knowledge-management/description.png)</br>
 
-4. 在 <b>"固定人员</b> "部分，你可以"固定"人员，以将其作为主题专家显示。 首先在"添加新用户"框中键入其姓名或<b></b>电子邮件地址，然后从搜索结果中选择要添加的用户。 您还可以通过选择用户卡片上的"从列表中删除"<b></b>图标来"取消固定"它们。
+4. 在 <b>"固定人员</b> "部分，你可以"固定"人员，以将其作为主题专家显示。 首先在"添加新用户"框中键入用户名或电子邮件地址<b></b>，然后从搜索结果中选择要添加的用户。 您还可以通过选择用户卡片上的"从列表中删除"<b></b>图标来"取消固定"它们。
  
     ![添加固定人员](../media/knowledge-management/pinned-people.png)</br>
 
@@ -126,7 +126,7 @@ ms.locfileid: "50279406"
    ![画布图标](../media/knowledge-management/webpart-library.png)</br> 
 
 
-10. 选择 **"** 发布 **"或"重新发布** "保存更改。 **如果主题** 之前已发布，则重新发布将成为你的可用选项。
+10. 选择 **"** 发布 **"或"重新发布** "保存更改。 **如果主题** 之前已发布，则重新发布将是你的可用选项。
 
 
 ## <a name="see-also"></a>另请参阅

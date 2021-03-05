@@ -16,12 +16,12 @@ ms.assetid: 4250c4bc-6102-420b-9e0a-a95064837676
 ms.collection:
 - M365-security-compliance
 description: 了解如何为单个用户或整个组织启用适用于 Outlook 和 Web 上的 Outlook 的报告网络钓鱼外接程序。
-ms.openlocfilehash: 8242f3fcac27f8c76f7bef5a84c70960a204e3bd
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 12543364943321689d0efa2c2942351b3d3ec6f9
+ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50286653"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50453761"
 ---
 # <a name="enable-the-report-phishing-add-in"></a>启用“报告网络钓鱼”加载项
 
@@ -35,7 +35,7 @@ Outlook 和 Web 上的 Outlook 的"报告邮件"和"报告钓鱼"外接程序 (�
 
 Microsoft 使用这些提交来提高电子邮件保护技术的有效性。 例如，假设用户正在使用"报告网络钓鱼"外接程序报告许多邮件。 此信息在安全仪表板 [和其他](security-dashboard.md) 报告中显示。 组织的安全团队可以使用此信息来指示可能需要更新反网络钓鱼策略。
 
-可以安装"报告邮件"或"报告钓鱼"加载项。 如果希望用户同时报告垃圾邮件和网络钓鱼邮件，请在你的组织中部署报告邮件外接程序。 有关详细信息，请参阅 ["启用报告消息"加载项](enable-the-report-message-add-in.md)。
+您可以安装报告邮件或报告网络钓鱼外接程序。 如果希望用户同时报告垃圾邮件和网络钓鱼邮件，请在你的组织中部署报告邮件外接程序。 有关详细信息，请参阅 ["启用报告邮件"加载项](enable-the-report-message-add-in.md)。
 
 报告网络钓鱼外接程序提供仅报告网络钓鱼邮件的选项。 管理员可以为组织启用报告网络钓鱼外接程序，单个用户可以自行安装它。
 
@@ -49,11 +49,11 @@ Microsoft 使用这些提交来提高电子邮件保护技术的有效性。 例
 
   - Outlook 网页版
   - Outlook 2013 SP1 或更高版本
-  - Outlook 2016 for Mac
+  - Outlook 2016 for Mac 或更高版本
   - Microsoft 365 企业应用版中包含的 Outlook
   - 适用于 iOS 和 Android 的 Outlook 应用
 
-- 报告网络钓鱼外接程序对内部部署 Exchange 组织的邮箱不可用。
+- 报告网络钓鱼外接程序不适用于本地 Exchange 组织的共享邮箱或邮箱。
 
 - 可以将报告的邮件配置为复制或重定向到指定的邮箱。 有关详细信息，请参阅 [用户提交策略](user-submission.md)。
 
@@ -65,7 +65,7 @@ Microsoft 使用这些提交来提高电子邮件保护技术的有效性。 例
 
 ## <a name="get-the-report-phishing-add-in-for-yourself"></a>为自己获取报告网络钓鱼外接程序
 
-1. 转到 Microsoft AppSource， <https://appsource.microsoft.com/marketplace/apps> 然后搜索"报告钓鱼"加载项。
+1. 转到 Microsoft <https://appsource.microsoft.com/marketplace/apps> AppSource，然后搜索"报告钓鱼"加载项。
 
 2. 单击 **"立即获取"。**
 
@@ -79,7 +79,7 @@ Microsoft 使用这些提交来提高电子邮件保护技术的有效性。 例
 
   ![Outlook 的"报告网络钓鱼外接程序"图标](../../media/Outlook-ReportPhishing.png)
 
-- 在 Outlook 网页 Outlook 中，图标如下所示：
+- 在 Outlook 网页中，图标如下所示：
 
   ![Outlook 网页报告网络钓鱼外接程序图标](../../media/OWA-ReportPhishing.png)
 
@@ -88,7 +88,7 @@ Microsoft 使用这些提交来提高电子邮件保护技术的有效性。 例
 > [!NOTE]
 > 外接程序最多可能需要 12 小时才能显示在组织中。
 
-1. 在 Microsoft 365 管理中心中，转到"设置外接程序"页面，如果看不到"加载项"页，请转到"集成应用"页面顶部的"设置集成应用外接程序" \>  <https://admin.microsoft.com/AdminPortal/Home#/Settings/AddIns>  \>  \> 链接。
+1. 在 Microsoft 365 管理中心中，转到"设置加载项"页面，如果看不到外接程序页面，请转到"集成应用"页面顶部的"设置集成应用外接程序" \>  <https://admin.microsoft.com/AdminPortal/Home#/Settings/AddIns>  \>  \> 链接。
 
 2. 选择 **页面顶部的"** 部署外接程序"，然后选择"下一 **步"。**
 
@@ -132,9 +132,9 @@ Microsoft 使用这些提交来提高电子邮件保护技术的有效性。 例
 
   ![Outlook 的"报告网络钓鱼外接程序"图标](../../media/Outlook-ReportPhishing.png)
 
-- 在 Outlook 网页 Outlook 中，图标如下所示：
+- 在 Outlook 网页中，图标如下所示：
 
-  ![Outlook 网页报告钓鱼外接程序图标](../../media/OWA-ReportPhishing.png)
+  ![Outlook 网页报告网络钓鱼外接程序图标](../../media/OWA-ReportPhishing.png)
 
 ## <a name="review-or-edit-settings-for-the-report-phishing-add-in"></a>查看或编辑报告网络钓鱼外接程序的设置
 
@@ -142,7 +142,7 @@ Microsoft 使用这些提交来提高电子邮件保护技术的有效性。 例
 
 2. 查找并选择 **报告网络钓鱼** 外接程序。
 
-3. 在 **"编辑报告钓鱼"** 飞出控件中，显示、查看和编辑适用于你的组织的设置。 完成时，请单击“保存”。
+3. 在 **"编辑报告钓鱼"** 飞出控件中，显示、查看和编辑适合你的组织的设置。 完成时，请单击“保存”。
 
 ## <a name="view-and-review-reported-messages"></a>查看和查看报告的邮件
 

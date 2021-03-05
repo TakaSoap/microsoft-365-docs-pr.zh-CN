@@ -11,23 +11,23 @@ ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 5d386000fab8894dd60790d3514ae93feaa03a22
-ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
+ms.openlocfilehash: e392d071b77226a23001d8628c3b9c711b06e228
+ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49841275"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50454579"
 ---
 # <a name="microsoft-managed-desktop-archived-devices"></a>Microsoft 托管桌面存档设备
 
-为了确保最佳用户体验，Microsoft 托管桌面在特定时间点停用对设备的支持。 本文列出了在几年内即将停用的设备，我们将其称为"已存档"。 如果你已使用已有的设备开始使用 Microsoft 托管桌面，应仔细检查此列表。
+为了确保最佳的用户体验，Microsoft 托管桌面会在特定时间点停用对设备的支持。 本文列出了在几年内即将停用的设备，我们将其称为"已存档"。 如果你使用已有的设备开始使用 Microsoft 托管桌面，应仔细检查此列表。
 
 >[!IMPORTANT]
->现在，你仍然可以注册这些设备，但它们使用 Microsoft 托管桌面的服务时间将更短。 如果你要购买新设备，你应该使用活动设备 [列表中的型号](./device-list.md)。
+>现在，你仍然可以注册这些设备，但它们使用 Microsoft 托管桌面将缩短服务期。 如果你要购买新设备，你应该使用活动设备 [列表中的型号](./device-list.md)。
 
 <!-- Microsoft 365 E5; Device as a Service -->
 <!-- Split from device & technologies topic. Destination topic for aka.ms/device-list  -->
-若要在 Microsoft 托管桌面中注册，设备必须是以下型号之一，并且满足或超过列出的 RAM、处理器系列和磁盘空间规格。 不支持其他自定义。
+若要在 Microsoft 托管桌面中注册，设备必须是以下型号之一，并且必须满足或超过列出的 RAM、处理器系列和磁盘空间规范。 不支持其他自定义。
 
 
 
@@ -44,15 +44,16 @@ ms.locfileid: "49841275"
 |Dell Latitude 7200 2-in-1 | 256 GB / Intel i5 / 8 GB RAM | 需要 IR 相机 | **2024 年 5 月 1 日** |
 |Dell Latitude 7300 / 7400 / 7400 2-in-1 | 256 GB / Intel i5 / 8 GB RAM | 需要 IR 相机 | **2024 年 5 月 1 日**  |
 |Dell Latitude 7390 / 7390 2-in-1 / 7490 | 256 GB / Intel i5 / 8 GB RAM   | 需要 IR 相机 | **2023 年 1 月 9 日** |
+|Dell Latitude 7410 / 7410 2-in-1 | 256 GB / Intel i5 / 8 GB RAM | 需要 IR 相机 | **2025 年 5 月 19 日**  |
 |Dell Optiplex 3070 | 128 GB / Intel i3 / 8 GB RAM | 无 | **2025 年 5 月 1 日**  |
-|HP EliteBook 830 / 840 / 850 G5| 128 GB / Intel i5 / 8 GB RAM | 需要具有 5VS01AV、IR 相机或指纹传感器的 SKU  | **2023 年 2 月 15 日** |
-|HP EliteBook 830 / 840 / 850 G6| 128 GB / Intel i5 / 8 GB RAM | 需要具有 5VS01AV、IR 相机或指纹传感器的 SKU  | **2023 年 11 月 30 日** |
-|HP Elite x2 1013 G3| 256 GB / Intel i5 / 8 GB RAM | 需要 5VS03AV、IR 相机的 SKU |**2023 年 5 月 14 日** |
-|HP EliteBook x360 1030 G5| 256 GB / Intel i5 / 8 GB RAM | 具有 5VS01AV 的 SKU，需要 IR 相机 |**2023 年 5 月 14 日** |
-|HP EliteBook x360 1030 G6| 256 GB / Intel i5 / 8 GB RAM | 具有 5VS01AV 的 SKU，需要 IR 相机 |**2023 年 11 月 30 日** |
-|HP EliteBook x360 1040 G5| 256 GB / Intel i5 / 8 GB RAM | 具有 5VS01AV 的 SKU，需要 IR 相机 | **2023 年 10 月 23 日** |
-|HP EliteBook x360 1040 G6| 256 GB / Intel i5 / 8 GB RAM | 具有 5VS01AV 的 SKU，需要 IR 相机 | **2023 年 11 月 30 日** |
-|HP ProBook x360 440 G1| 128 GB / Intel i3 / 8 GB RAM | 需要具有 5VS04AV、IR 相机或指纹读取器的 SKU | **2023 年 6 月 6 日** |
+|HP EliteBook 830 / 840 / 850 G5| 128 GB / Intel i5 / 8 GB RAM | 需要 5VS01AV、IR 相机或指纹传感器的 SKU  | **2023 年 2 月 15 日** |
+|HP EliteBook 830 / 840 / 850 G6| 128 GB / Intel i5 / 8 GB RAM | 需要 5VS01AV、IR 相机或指纹传感器的 SKU  | **2023 年 11 月 30 日** |
+|HP Elite x2 1013 G3| 256 GB / Intel i5 / 8 GB RAM | 需要 5VS03AV、需要 IR 相机的 SKU |**2023 年 5 月 14 日** |
+|HP EliteBook x360 1030 G5| 256 GB / Intel i5 / 8 GB RAM | SKU 和 5VS01AV，需要 IR 相机 |**2023 年 5 月 14 日** |
+|HP EliteBook x360 1030 G6| 256 GB / Intel i5 / 8 GB RAM | SKU 和 5VS01AV，需要 IR 相机 |**2023 年 11 月 30 日** |
+|HP EliteBook x360 1040 G5| 256 GB / Intel i5 / 8 GB RAM | SKU 和 5VS01AV，需要 IR 相机 | **2023 年 10 月 23 日** |
+|HP EliteBook x360 1040 G6| 256 GB / Intel i5 / 8 GB RAM | SKU 和 5VS01AV，需要 IR 相机 | **2023 年 11 月 30 日** |
+|HP ProBook x360 440 G1| 128 GB / Intel i3 / 8 GB RAM | 需要 5VS04AV、IR 相机或指纹读取器的 SKU | **2023 年 6 月 6 日** |
 |HP EliteDesk 800 G4 DM | 128 GB / Intel i3 / 8 GB RAM | SKU 与 5VS04AV | **2023 年 7 月 18 日** |
 |HP EliteDesk 800 G4 SFF | 128 GB / Intel i3 / 8 GB RAM | SKU 与 5VS04AV | **2023 年 7 月 18 日** |
 |HP EliteOne 800 G4 23.8in AIO |128 GB / Intel i3 / 8 GB RAM |SKU 与 5VS04AV| **2023 年 7 月 18 日** |
@@ -66,14 +67,14 @@ ms.locfileid: "49841275"
 
 此外，设备还必须：
 
-- 具有 Microsoft 托管桌面批准的映像。 在订购设备时，请确保指定它们正用于 Microsoft 托管桌面。
+- 具有 Microsoft 托管桌面批准的映像。 在订购设备时，请确保指定它们正与 Microsoft 托管桌面一同使用。
 - 尚未完成 Windows 首次运行体验。
-- 使用设备注册功能向 Microsoft 托管[桌面注册](https://aka.ms/mmddrhelp)
+- 使用设备注册功能向 Microsoft 托管 [桌面](https://aka.ms/mmddrhelp) 注册
 
 #### <a name="more-help"></a>更多帮助
 
 这些资源可以帮助回答你可能对特定设备的问题：
 
-- 有关 Dell 设备的更多问题， [请与](mailto:MMD_at_dell@dell.com)MMD_at_dell@dell.com。
+- 有关 Dell 设备的更多问题，请与[MMD_at_dell@dell.com。](mailto:MMD_at_dell@dell.com)
 
 - 有关 HP 设备的更多问题，请联系：美洲[ (mmd-americas@hp.com) ;](mailto:mmd-americas@hp.com)欧洲/中东/非洲[ (mmd-emea@hp.com) ;](mailto:mmd-emea@hp.com)亚太地区/日本[ (mmd-apj@hp.com) ;](mailto:mmd-apj@hp.com)全局[ (mmd@hp.com) ](mailto:mmd@hp.com)

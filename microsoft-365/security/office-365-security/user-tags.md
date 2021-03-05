@@ -16,12 +16,12 @@ ms.collection:
 description: 管理员可以了解如何在 Microsoft Defender for Office 365 计划 2 中标识具有用户标记的特定用户组。 可在 Microsoft Defender for Office 365 中的警报、报告和调查之间使用标记筛选，以快速标识标记用户。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 62d858fe5962b94f536d4ccbd712e21bdd5caa57
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 6e5ddffad6405f48a9af55b5123729eb256064a7
+ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50290125"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50453641"
 ---
 # <a name="user-tags-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 中的用户标记
 
@@ -41,7 +41,7 @@ ms.locfileid: "50290125"
 - [威胁资源管理器和实时检测](threat-explorer.md)
 - [威胁防护状态报告](view-email-security-reports.md#threat-protection-status-report)
 - [市场活动视图](campaigns.md)
-- 对于优先级帐户，可以使用 Exchange[](https://docs.microsoft.com/exchange/monitoring/mail-flow-reports/mfr-email-issues-for-priority-accounts-report)管理中心中的"优先级帐户的电子邮件问题" (EAC) 。
+- 对于优先级帐户，可以使用 Exchange[](https://docs.microsoft.com/exchange/monitoring/mail-flow-reports/mfr-email-issues-for-priority-accounts-report)管理中心中的优先级帐户报告的电子邮件问题 (EAC) 。
 
 本文介绍如何在安全与合规中心&用户标记。 安全与合规中心& cmdlet 管理用户标记。
 
@@ -59,7 +59,7 @@ ms.locfileid: "50290125"
   **注意**：
 
   - 向 Microsoft 365 管理中心相应的 Azure 活动目录添加用户会向其提供安全与合规中心的必备权限 _以及_ Microsoft 365其它功能的权限。 有关详细信息，请参阅 [关于管理员角色](../../admin/add-users/about-admin-roles.md)。
-  - 用户标记管理由标记读取器、**标记** 参与者和 **标记管理器角色** 控制。
+  - 用户标记管理由标记读取器和 **标记** 管理器 **角色** 控制。
 
 - 还可以在 Microsoft 365 管理中心管理和监视优先级帐户。 有关说明，请参阅 [管理和监视优先级帐户](../../admin/setup/priority-accounts.md)。
 
@@ -78,10 +78,10 @@ ms.locfileid: "50290125"
 4. 在 **"分配用户"** 页上，执行下列任一步骤：
 
    - 单击 **"添加用户"。** 在出现的飞出中，执行下列任一步骤以添加单个用户或组：
-     - 在框中单击并滚动列表以选择用户或组。
+     - 在框中单击并滚动浏览列表以选择用户或组。
      - 在框中单击并开始键入以筛选列表并选择用户或组。
      - 若要添加其他值，请单击框中的空白区域。
-     - 若要从框中删除单个条目，请单击框中用户 ![ ](../../media/scc-remove-icon.png) 或组上的"删除"图标。
+     - 若要从框中删除单个条目，请单击框中用户或 ![ 组上的"删除 ](../../media/scc-remove-icon.png) "图标。
      - 若要从框下方的列表中删除现有条目，请单击 **"删除** ![ "图标删除该 ](../../media/scc-remove-icon.png) 条目。
 
      完成后，单击“**添加**”。
@@ -90,7 +90,7 @@ ms.locfileid: "50290125"
 
    完成后，单击“下一步”。
 
-5. 在" **审阅标记"** 页上，查看设置。 可以在特定 **部分中** 单击"编辑"进行更改。
+5. 在" **审阅标记"** 页上，查看设置。 可以单击 **特定** 节中的"编辑"进行更改。
 
    完成后，单击"提交 **"。**
 

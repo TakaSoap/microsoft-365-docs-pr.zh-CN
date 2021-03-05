@@ -10,15 +10,15 @@ ms.prod: microsoft-365-enterprise
 search.appverid: ''
 ms.collection:
 - enabler-strategic
-- m365initiative-topics
+- m365initiative-viva-topics
 localization_priority: None
 description: 了解如何查找 Microsoft Viva 主题的资源。
-ms.openlocfilehash: d5c54bda3432fc9a1ff5ce4342cc523544eb6e78
-ms.sourcegitcommit: 78f48304f990e969a052fe6536b2e8d6856e1086
+ms.openlocfilehash: 31031697b7825b725c020952a6217b278aa09f02
+ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50242862"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50454119"
 ---
 # <a name="introduction-to-microsoft-viva-topics"></a>Microsoft Viva 主题简介
 
@@ -33,7 +33,7 @@ Viva 主题是一项 Office 365 服务，可帮助组织将信息转换为知识
 
 此页上的资源旨在让你开始了解和使用组织中 Viva 主题。
 
-## <a name="get-started"></a>开始行动
+## <a name="get-started"></a>入门
 
 本节中的资源可帮助你了解有关什么是 Viva 主题以及如何提供帮助的信息。
 

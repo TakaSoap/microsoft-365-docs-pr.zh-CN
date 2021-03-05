@@ -21,34 +21,35 @@ search.appverid:
 - MET150
 - MOE150
 description: 了解 Microsoft 365 组。
-ms.openlocfilehash: 5d5c15c13d46738ac9de701b5a39f47274b9f1e5
-ms.sourcegitcommit: c0cfb9b354db56fdd329aec2a89a9b2cf160c4b0
+ms.openlocfilehash: 75bc743ed8f1965d0ed8a1967e6eac1bd6e0178b
+ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "50094729"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50453677"
 ---
 # <a name="overview-of-microsoft-365-groups-for-administrators"></a>面向管理员的 Microsoft 365 组概述
 
-Microsoft 365 组是推动 Microsoft 365 所有团队合作的基础成员身份服务。 使用 Microsoft 365 组，你可以向一组人员授予对共享资源集合的访问权限。 这些资源包括：
+Microsoft 365 组是推动 Microsoft 365 所有团队合作的基础成员身份服务。 使用 Microsoft 365 组，您可以向一组人员授予对共享资源集合的访问权限。 这些资源包括：
 
-- 共享 Outlook 收件箱
+- 共享的 Outlook 收件箱
 - 共享日历
 - SharePoint 文档库
 - A Planner
 - OneNote 笔记本
 - Power BI
-- 如果 (Yammer 对象创建组，Yammer) 
+- 如果 (Yammer 帐户创建组，Yammer) 
 - 团队 (组是否从 Teams) 
 - 如果 (Project 网页应用，路线图) 
+- Stream
 
 对于 Microsoft 365 组，不必手动为其中每个资源分配权限。 向组添加人员会自动授予他们所需的权限。
 
-任何用户都可以创建组，除非你 [将组创建限制为一组特定的人员](manage-creation-of-groups.md)。 如果限制组创建，则无法创建组的用户将无法创建 SharePoint 网站、规划人员或团队。 这些服务要求创建它们的人能够创建组。 用户仍然可以参与组活动，例如，在 Planner 中创建任务或使用 Teams 聊天，但如果他们是组的成员。
+除非将组创建限制为一组特定的人员，否则任何用户都可以 [创建组](manage-creation-of-groups.md)。 如果限制组创建，则无法创建组的用户将无法创建 SharePoint 网站、规划人员或团队。 这些服务要求创建这些服务的人能够创建组。 用户仍然可以参与组活动，例如，在 Planner 中创建任务或使用 Teams 聊天，但如果他们是组的成员。
 
 组具有以下角色：
 
-- **所有者** - 组所有者可以添加或删除成员，并且具有独特的权限，如从共享收件箱中删除对话或更改有关组的不同设置。 组所有者可以重命名组、更新说明或图片等。
+- **所有者** - 组所有者可以添加或删除成员，并且具有独特的权限，例如从共享收件箱中删除对话或更改有关组的不同设置。 组所有者可以重命名组、更新说明或图片等。
 - **Members** - 成员可以访问组内的所有内容，但无法更改组设置。 默认情况下，团队成员可以邀请来宾加入你的组，但你可以 [控制该设置](manage-guest-access-in-groups.md)。
 - **来宾** - 组来宾是组织外部的成员。
 
@@ -58,15 +59,15 @@ Microsoft 365 组是推动 Microsoft 365 所有团队合作的基础成员身份
 
 - [指定可以创建组的人](manage-creation-of-groups.md)
 - [为组织中的组创建命名策略](groups-naming-policy.md)
-- [选择创建组时要使用哪个域](choose-domain-to-create-groups.md)
+- [选择在创建组时使用哪个域](choose-domain-to-create-groups.md)
 - [管理对组的来宾访问](manage-guest-access-in-groups.md)
 - [在删除 (](restore-deleted-group.md) 30 天内恢复已删除) 
 
-如果你希望采用更自动化的方式来管理 Microsoft 365 组的生命周期，可以使用过期策略以特定时间间隔使组过期。 组的所有者将在组到期前 30、15 和 1 天收到一封电子邮件，允许他们根据需要续订组。 请参阅 [：Microsoft 365 组过期策略](office-365-groups-expiration-policy.md)。
+如果你更喜欢更自动化的方式来管理 Microsoft 365 组的生命周期，可以使用过期策略以特定时间间隔使组过期。 组的所有者将在组过期前 30、15 和 1 天收到一封电子邮件，允许他们根据需要续订组。 请参阅 [：Microsoft 365 组过期策略](office-365-groups-expiration-policy.md)。
 
 可以从 Microsoft 365 管理中心或 [PowerShell 管理组](https://docs.microsoft.com/microsoft-365/enterprise/manage-microsoft-365-groups-with-powershell)。
 
-如果您具有许多用户（如大型企业或企业中的用户），则您可能有许多用户出于各种目的创建组。 我们强烈建议你查看 [Microsoft 365](plan-for-groups-governance.md) 组中管理规划的最佳实践。
+如果您具有许多用户（例如，在大型公司或企业中）中，您可能有许多用户出于各种目的创建组。 我们强烈建议你查看 [Microsoft 365](plan-for-groups-governance.md) 组中治理规划的最佳实践。
 
 ## <a name="group-limits"></a>组限制
 
@@ -77,20 +78,20 @@ Microsoft 365 组是推动 Microsoft 365 所有团队合作的基础成员身份
 |Owners per group|100|
 |Groups a user can create|250|
 |管理员可以创建的组|最多默认租户限制为 500 K|
-|成员数目|超过 1，000 个，但只有 1，000 个可以同时访问组对话。 <br>在 Outlook 中访问日历和大型组的对话时，用户可能会注意到延迟。|
-|用户可以成为其成员组数|7,000|
+|成员数目|超过 1，000 个，但只有 1，000 个可以同时访问组对话。 <br>在 Outlook 中以大型组访问日历和对话时，用户可能会注意到延迟。|
+|用户可以是其中一个成员的组数|7,000|
 |文件存储|每个订阅用户 1 TB + 10 GB + 已购买任何其他存储。 你可以购买无限量的额外存储空间。|
 |组邮箱大小|50 GB|
 
-组织可以拥有的默认最大 Microsoft 365 组数为 500，000。 若要超出默认限制，必须联系 Microsoft 支持部门。 有关 Microsoft 365 组限制详细信息，请参阅 [Microsoft 365 组 - 管理员帮助](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2)。
+组织可以拥有的默认最大 Microsoft 365 组数为 500，000。 若要超出默认限制，必须联系 Microsoft 支持人员。 有关 Microsoft 365 组限制详细信息，请参阅 [Microsoft 365 组 - 管理员帮助](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2)。
 
-当你拥有有关组使用情况的可操作信息时，管理 Microsoft 365 组会更有效。 Microsoft 365 管理中心有一个报告工具，可用于查看存储用途、你拥有的活动组数以及用户如何使用组。 有关详细信息，请参阅： [管理中心中的 Microsoft 365](../activity-reports/office-365-groups.md) 报告。
+当你拥有有关组使用情况的可操作信息时，管理 Microsoft 365 组会更有效。 Microsoft 365 管理中心有一个报告工具，可用于查看存储用途、你拥有的活动组数以及用户如何使用组。 有关详细信息，请参阅 [：管理中心中的 Microsoft 365](../activity-reports/office-365-groups.md) 报告。
 
 ## <a name="sensitivity-labels"></a>敏感度标签
 
 可以创建组织中用户在创建 Microsoft 365 组时可以设置的敏感度标签。 使用敏感度标签，可以配置： 
 
-- 隐私 (公共或专用) 
+- 隐私 (公共或) 
 - 外部用户访问
 - 非托管设备访问
 
@@ -103,7 +104,7 @@ Microsoft 365 组是推动 Microsoft 365 所有团队合作的基础成员身份
 
 ## <a name="which-microsoft-365-plans-include-groups"></a>哪些 Microsoft 365 计划包含组？
 
-任何具有 Exchange Online 和 SharePoint Online 的 Microsoft 365 订阅都将支持组。 这包括商业基础版和商业高级版计划，以及企业版 E1、E3 和 E5 计划。 组负责授权创建组 (也称为组"组织者"的组) 。 只要组织者具有希望组具有的任何功能的正确许可证，该许可证就会传达给组。
+任何具有 Exchange Online 和 SharePoint Online 的 Microsoft 365 订阅都将支持组。 这包括商业基础版和商业高级版计划以及企业版 E1、E3 和 E5 计划。 组负责授权创建组 (也称为组"组织者"的组) 。 只要组织者拥有希望组拥有的任何功能的正确许可证，该许可证就会传达到组。
 
 > [!NOTE]
 > 有关 Microsoft 365 服务系列和计划的更多详细信息，请参阅 [Microsoft 365 计划选项](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-plan-options)。
@@ -114,7 +115,7 @@ Microsoft 365 组使用 Azure Active Directory。 你获取的组功能取决于
 
 > [!IMPORTANT]
 > 对于所有组功能，如果你有 Azure AD Premium 订阅，则用户可以加入组，无论他们是否分配有 AAD P1 许可证。 不强制执行许可。
-> 我们将定期生成使用情况报告，告知您哪些用户缺少许可证，并且需要为其分配一个许可证，以便符合许可要求。 例如，假设用户没有许可证，并且他们被添加到强制执行命名策略的组中。 该报告将标记他们需要许可证。
+> 我们将定期生成使用情况报告，告知您哪些用户缺少许可证，并且需要为其分配的许可证符合许可要求。 例如，假设用户没有许可证，他们将被添加到强制执行命名策略的组。 报告将标记你需要许可证。
 
 ## <a name="related-articles"></a>相关文章
 
@@ -125,3 +126,5 @@ Microsoft 365 组使用 Azure Active Directory。 你获取的组功能取决于
 [使用 PowerShell 管理 Microsoft 365 组](https://docs.microsoft.com/microsoft-365/enterprise/manage-microsoft-365-groups-with-powershell)
 
 [SharePoint Online 限制](https://docs.microsoft.com/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits)
+
+[在 Microsoft Stream 中组织组和频道](https://docs.microsoft.com/stream/groups-channels-organization)

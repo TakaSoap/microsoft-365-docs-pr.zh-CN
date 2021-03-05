@@ -21,12 +21,12 @@ ms.custom: seo-marvel-apr2020
 ms.reviewer: vippand
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2fd999c27598db6f17073cfe82e4c4f91ffb1667
-ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
+ms.openlocfilehash: 7b6175f507f54adf357e40ea44c39f5e495a1b14
+ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "50407200"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50454485"
 ---
 # <a name="whats-new-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 的新增功能
 
@@ -36,7 +36,7 @@ ms.locfileid: "50407200"
 - [Microsoft Defender for Office 365 计划 1 和计划 2](office-365-atp.md)
 - [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
-本文列出了最新版本的 Microsoft Defender for Office 365 中的新功能。 当前处于预览阶段的功能用预览 (**表示) 。**
+本文列出了最新版本的 Microsoft Defender for Office 365 中的新功能。 当前预览版中的功能用预览 (**表示) 。**
 
 > [!TIP]
 > 还没有适用于 Office 365 的 Microsoft Defender？ [联系销售人员以开始试用](https://info.microsoft.com/ww-landing-M365SMB-web-contact.html)。
@@ -46,6 +46,7 @@ ms.locfileid: "50407200"
 - 在搜寻 (使用警报 ID 和Alert-Explorer导航) 搜索的警报 ID [集成](threat-explorer.md)
 - 在搜寻体验中将记录导出限制从 9990 增加至 200，000 [](threat-explorer.md)
 - 将 Explorer (和实时检测) 试用租户的数据保留和搜索限制，在搜寻体验中从 (7) 到 30 [天](threat-explorer.md)
+- Explorer (中称为 **模拟** 域和 **模拟** 用户的新搜寻透视表和实时) 搜索针对受保护用户或域的模拟攻击。 有关详细信息，请参阅 [详细信息](threat-explorer.md#view-phishing-emails-sent-to-impersonated-users-and-domains)。  (Microsoft Defender for Office 365 计划 1 或计划 2) 
 
 ## <a name="december-2020"></a>2020 年 12 月
 
@@ -59,8 +60,8 @@ ms.locfileid: "50407200"
 ## <a name="septemberoctober-2020"></a>2020 年 9 月/10 月
 
 - [使用配置分析器检查策略](configuration-analyzer-for-security-policies.md)
-- 威胁资源管理器中的扩展功能，包括主要目标用户、传输规则和连接器[ (](threat-explorer.md#new-features-in-threat-explorer-and-real-time-detections)威胁资源管理器[ (](threat-explorer.md)电子邮件中的 Defender for Office 365 信息被租户/用户策略)  (Defender for Office 365 计划 2) 
-- 在威胁资源管理器中显示[](threat-explorer.md#threats-in-urls)URL 威胁 (恶意软件、网络钓鱼、垃圾邮件或无)  (Defender for Office 365 计划 2) 
+- 威胁资源管理器中的扩展功能，包括主要目标用户、传输规则和连接器[ (](threat-explorer.md#new-features-in-threat-explorer-and-real-time-detections)威胁资源管理器[ (](threat-explorer.md)电子邮件中的 Defender for Office 365 信息，租户/用户策略)  (Defender for Office 365 计划 2) 
+- 在威胁资源管理器中显示 URL [威胁 (恶意软件](threat-explorer.md#threats-in-urls) 、网络钓鱼、垃圾邮件或无)  (Defender for Office 365 计划 2) 
 - [改进了搜寻体验威胁资源管理器](threat-explorer.md#improvements-to-the-threat-hunting-experience-upcoming) ，新增了威胁、其他操作、传递位置和更新时间线视图 (Defender for Office 365 计划 2) 
 
 ## <a name="julyaugust-2020"></a>2020 年 7 月/8 月
@@ -75,7 +76,7 @@ ms.locfileid: "50407200"
 ## <a name="januaryfebruary-2020"></a>2020 年 1 月/2 月
 
 - [Microsoft Defender for Office 365](campaigns.md) 中的市场活动视图 (Microsoft Defender for Office 365 计划 2) 
-- 威胁资源管理器 [的](threat-explorer.md) 增强功能，使安全运营团队能够搜索和筛选多个字段，同时调查 [电子邮件](investigate-malicious-email-that-was-delivered.md)： (Microsoft Defender for Office 365 计划 2) 
+- 威胁 [资源管理器的](threat-explorer.md) 增强功能，使安全运营团队能够搜索和筛选多个字段，同时调查 [电子邮件](investigate-malicious-email-that-was-delivered.md)： (Microsoft Defender for Office 365 计划 2) 
   - 传递位置和特殊操作
   - 方向 (入站、出站或组织内部) 
   - 高级 NOT 筛选器 (包括不包含、不包含等高级筛选) 
@@ -101,7 +102,7 @@ ms.locfileid: "50407200"
 
 - [使用 Office 365](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema#office-365-advanced-threat-protection-and-threat-investigation-and-response-schema) 管理活动 API (Defender for Office 365 计划 2) 
 
-- [查看电子邮件头，然后从](investigate-malicious-email-that-was-delivered.md) Microsoft Defender for Office 365 (计划 1 或计划 2 中下载) 
+- [查看电子邮件头，然后从](investigate-malicious-email-that-was-delivered.md) Microsoft Defender for Office 365 (计划 1 或计划 2 下载) 
 
 ## <a name="august-2019"></a>2019 年 8 月
 

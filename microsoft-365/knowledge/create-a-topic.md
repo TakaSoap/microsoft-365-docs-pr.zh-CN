@@ -10,16 +10,16 @@ ms.topic: article
 ms.prod: microsoft-365-enterprise
 ms.collection:
 - enabler-strategic
-- m365initiative-topics
+- m365initiative-viva-topics
 ms.service: ''
 search.appverid: ''
 localization_priority: Normal
-ms.openlocfilehash: fbdd0e9b75e92d8080d9aaf43a2d1eaa8baacbc3
-ms.sourcegitcommit: 88820cd2536a7da868e472d10b4d265c52e5692b
+ms.openlocfilehash: c3ba9ce6675e81a99309243db251b34a21a4b43f
+ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "50279374"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50454155"
 ---
 # <a name="create-a-new-topic"></a>新建主题 
 
@@ -52,15 +52,17 @@ ms.locfileid: "50279374"
 
 ### <a name="to-create-a-new-topic"></a>若要创建新主题，请：
 
-1. 在 **"命名本主题"部分** ，键入新主题的名称。
+1. 选择从"管理主题"页上的功能区创建新主题页的选项。
+
+2.   在 **"命名本主题"部分** ，键入新主题的名称。
 
     ![命名本主题](../media/knowledge-management/k-new-topic-page.png) </br> 
 
 
-2. 在 <b>"备用</b> 名称"部分，键入本主题可能引用的其他任何名称。 
+3. 在 <b>"备用</b> 名称"部分，键入本主题可能引用的其他任何名称。 
 
     ![备用名称](../media/knowledge-management/alt-names.png) </br> 
-3. 在 <b>"说明</b> "部分，键入几个描述主题的句子。 
+4. 在 <b>"说明</b> "部分，键入几个描述主题的句子。 
 
     ![主题说明](../media/knowledge-management/description.png)</br>
 
@@ -99,7 +101,7 @@ ms.locfileid: "50279374"
 
    添加的相关主题将显示为已连接的主题。
 
-   ![已连接的相关主题](../media/knowledge-management/related-topics-final.png)</br> 
+   ![已连接相关主题](../media/knowledge-management/related-topics-final.png)</br> 
 
    若要删除相关主题，请选择要删除的主题，然后选择" <b>删除主题"</b> 图标。</br>
  

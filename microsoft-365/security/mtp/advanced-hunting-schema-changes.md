@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 3f03543b03dca5fe426700ffff4f5c6edb8fa3c7
-ms.sourcegitcommit: c550c1b5b9e67398fd95bfb0256c4f5c7930b2be
+ms.openlocfilehash: cd06286083297d0930270868b99a14f8ddb2f4b2
+ms.sourcegitcommit: a7d1b29a024b942c7d0d8f5fb9b5bb98a0036b68
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/01/2021
-ms.locfileid: "50066865"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50461663"
 ---
 # <a name="advanced-hunting-schema---naming-changes"></a>高级搜寻架构 - 命名更改
 
@@ -37,7 +37,7 @@ ms.locfileid: "50066865"
 
 [!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
-高级 [搜寻架构](advanced-hunting-schema-tables.md) 会定期更新以添加新的表和列。 在某些情况下，将重命名或替换现有列名称，以改进用户体验。 请参阅本文，查看可能会影响查询的命名更改。
+高级 [搜寻架构](advanced-hunting-schema-tables.md) 会定期更新以添加新表和列。 在某些情况下，重命名或替换现有列名称以改进用户体验。 请参阅本文，查看可能会影响查询的命名更改。
 
 命名更改将自动应用于保存在安全中心的查询，包括自定义检测规则使用的查询。 无需手动更新这些查询。 但是，您需要更新以下查询：
 - 使用 API 运行的查询
@@ -73,6 +73,37 @@ ms.locfileid: "50066865"
 | `ServiceSource` |Azure ATP    |Microsoft Defender for Identity | 重新品牌 |
 
 `DetectionSource` 在 [AlertInfo 表中](advanced-hunting-alertinfo-table.md) 可用。 `ServiceSource` 在 [AlertEvidence 和](advanced-hunting-alertevidence-table.md) [AlertInfo 表中](advanced-hunting-alertinfo-table.md) 可用。 
+
+## <a name="february-2021"></a>2021 年 2 月
+
+1. 在 [EmailAttachmentInfo 和](advanced-hunting-emailattachmentinfo-table.md) [EmailEvents](advanced-hunting-emailevents-table.md) 表中，我们弃用 and 列， `MalwareFilterVerdict` `PhishFilterVerdict` 并替换为 `ThreatTypes` 列。 我们还弃用 and 列 `MalwareDetectionMethod` `PhishDetectionMethod` ，并替换为 `DetectionMethods` 列。 这种简化使我们能够在新列下提供详细信息。 映射如下所示。
+
+| 表名 | 原始列名称 | 新列名称 | 更改原因
+|--|--|--|--|
+| `EmailAttachmentInfo` | `MalwareDetectionMethod` <br> `PhishDetectionMethod` | `DetectionMethods` | 包括更多检测方法 |
+| `EmailAttachmentInfo`  | `MalwareFilterVerdict` <br>`PhishFilterVerdict` | `ThreatTypes` | 包括更多威胁类型 |
+| `EmailEvents` | `MalwareDetectionMethod` <br> `PhishDetectionMethod` | `DetectionMethods` | 包括更多检测方法 |
+| `EmailEvents` | `MalwareFilterVerdict` <br>`PhishFilterVerdict` | `ThreatTypes` | 包括更多威胁类型 |
+
+
+2. 在 `EmailAttachmentInfo` and `EmailEvents` 表中，我们添加了列 `ThreatNames` ，以提供有关电子邮件威胁详细信息。 此列包含垃圾邮件或网络钓鱼等值。
+
+3. 在 [DeviceInfo 表中](advanced-hunting-deviceinfo-table.md) ，我们根据客户反馈 `DeviceObjectId` 替换 `AadDeviceId` 了列。
+
+4. 在 [DeviceEvents](advanced-hunting-deviceevents-table.md) 表中，我们更新了多个 ActionType 名称，以更好地反映操作的说明。 可在下方找到详细信息。
+
+| 表名 | 原始 ActionType 名称 | 新 ActionType 名称 | 更改原因
+|--|--|--|--|
+| `DeviceEvents` | `DlpPocPrintJob` | `FilePrinted` | 客户反馈 |
+| `DeviceEvents` | `UsbDriveMount` | `UsbDriveMounted` | 客户反馈 |
+| `DeviceEvents` | `UsbDriveUnmount` | `UsbDriveUnmounted` | 客户反馈 |
+| `DeviceEvents` | `WriteProcessMemoryApiCall` | `WriteToLsassProcessMemory` | 客户反馈 |
+| `DeviceEvents` | `AntivirusDetection` | `EdrBlock` | 客户反馈 |
+
+
+
+
+
 ## <a name="related-topics"></a>相关主题
 - [高级搜寻概述](advanced-hunting-overview.md)
 - [了解架构](advanced-hunting-schema-tables.md)

@@ -8,12 +8,12 @@ ms.localizationpriority: normal
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: ee2e473f947f35d4f0d192005718a26e89590fab
-ms.sourcegitcommit: b3bb5bf5efa197ef8b16a33401b0b4f5663d3aa0
+ms.openlocfilehash: 4a71727a21151f1c1aec23a859a91fb616ad71c5
+ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "50032653"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50453689"
 ---
 # <a name="microsoft-managed-desktop-devices"></a>Microsoft 托管桌面设备 
 
@@ -23,12 +23,12 @@ Microsoft 托管桌面会定期评估要包含在服务中的设备。 本文列
 
 <!-- Microsoft 365 E5; Device as a Service -->
 <!-- Split from device & technologies topic. Destination topic for aka.ms/device-list  -->
-若要在 Microsoft 托管桌面中注册，设备必须是以下型号之一，并且必须满足或超过列出的 RAM、处理器系列和磁盘空间规范。 
+若要在 Microsoft 托管桌面中注册，设备必须是以下型号之一，并且满足或超过列出的 RAM、处理器系列和磁盘空间规范。 
 
-此处设备的链接仅供参考。 如果要订购设备，请与商业频道联系人合作，以确保选择正确的配置。 在此表中， *存档日期* 是这些模型缩短 Microsoft 托管桌面服务使用时间的日期;在此日期之后载入的任何此类设备将不会获得来自 Microsoft 托管桌面的完整三年支持期限。 已存档的设备也列在 Microsoft [托管桌面存档设备中](archived-device-list.md)。 *停用* 日期是 Microsoft 托管桌面不再支持此模型的日期。 在此日期，此模型的所有注册设备都将从 Microsoft 托管桌面中删除，无论设备何时注册。
+此处设备的链接仅供参考。 如果你想要订购设备，请与你的商业频道联系人合作，以确保你选择了正确的配置。 在此表中，存档 *日期* 是这些模型将受较短 Microsoft 托管桌面服务生命周期影响的日期;在此日期之后载入的任何此类设备将不会收到来自 Microsoft 托管桌面的完整三年支持期限。 已存档的设备也列在 Microsoft [托管桌面存档设备中](archived-device-list.md)。 *停用日期* 是 Microsoft 托管桌面不再支持此模型的日期。 在此日期，此模型的所有注册设备都将从 Microsoft 托管桌面中删除，无论设备何时注册。
 
 >[!NOTE]
->设备可随时添加到此表中，但我们将针对影响存档或停用日期的任何更改提供 90 天通知。 最近添加的设备标有 * *\** _。
+>设备可随时添加到此表中，但我们会提供有关影响存档或停用日期的任何更改的 90 天通知。 最近添加的设备标有 **\*** 。
 
 
 ## <a name="microsoft-managed-desktop-devices"></a>Microsoft 托管桌面设备
@@ -38,15 +38,16 @@ Microsoft 托管桌面会定期评估要包含在服务中的设备。 本文列
 | 模型    | 最低规范  | 其他要求    | 存档日期   | 停用日期   |
 |----------|----------------|---------------------------|----------------|--------------------|
 | [Dell Precision 5310 2-in-1](https://www.dell.com/en-us/work/shop/2-in-1-laptops-tablets/new-latitude-5310-2-in-1-business-laptop/spd/latitude-13-5310-2-in-1-laptop) | 256 GB / Intel i5 / 8 GB RAM | 需要 IR 相机 | 2022 年 4 月 28 日  | 2025 年 4 月 28 日 |
+| [Dell Latitude 3510](https://www.dell.com/en-us/work/shop/dell-laptops-and-notebooks/latitude-3510-business-laptop/spd/latitude-15-3510-laptop) | 256 GB / Intel i5 / 8 GB RAM | 需要 IR 相机 | 2022 年 4 月 28 日 | 2025 年 4 月 28 日  |
 | [Dell Latitude 5410](https://www.dell.com/en-us/work/shop/dell-laptops-and-notebooks/new-latitude-5410-business-laptop/spd/latitude-14-5410-laptop) | 256 GB / Intel i5 / 8 GB RAM | 需要 IR 相机 | 2022 年 4 月 28 日 | 2025 年 4 月 28 日  |
-| [Dell Latitude 5510](https://www.dell.com/en-us/work/shop/laptops/15-5510/spd/latitude-15-5510-laptop)_* | 256 GB / Intel i5 / 8 GB RAM | 需要 IR 相机 | 2022 年 4 月 28 日 | 2025 年 4 月 28 日 |
+| [Dell Latitude 5510](https://www.dell.com/en-us/work/shop/laptops/15-5510/spd/latitude-15-5510-laptop)** | 256 GB / Intel i5 / 8 GB RAM | 需要 IR 相机 | 2022 年 4 月 28 日 | 2025 年 4 月 28 日 |
 | [Dell Latitude 7310 / 7310 2-in-1](https://www.dell.com/en-us/work/shop/2-in-1-laptops-tablets/latitude-7310-business-laptop-or-2-in-1/spd/latitude-13-7310-2-in-1-laptop) | 256 GB / Intel i5 / 8 GB RAM | 需要 IR 相机 | 2022 年 5 月 4 日  | 2025 年 5 月 4 日  |
-| [Dell Latitude 7410 / 7410 2-in-1](https://www.dell.com/en-us/work/shop/2-in-1-laptops-tablets/new-latitude-7410-business-laptop-or-2-in-1/spd/latitude-14-7410-2-in-1-laptop) | 256 GB / Intel i5 / 8 GB RAM | 需要 IR 相机 | 2022 年 5 月 19 日  | 2025 年 5 月 19 日  |
+| **\*[Dell Latitude 7420 / 7420 2-in-1](https://www.dell.com/en-us/work/shop/dell-laptops-and-notebooks/new-latitude-7420-business-laptop-or-2-in-1/spd/latitude-14-7420-2-in-1-laptop)** | 256 GB / Intel i5 / 8 GB RAM | 需要 IR 相机 | 2023 年 3 月 22 日  | 2026 年 3 月 22 日  |
 | [Dell Latitude 9410 2-in-1](https://www.dell.com/en-us/work/shop/laptops/new-14-9410-2-in-1/spd/latitude-14-9410-2-in-1-laptop) | 256 GB / Intel i5 / 8 GB RAM | 需要 IR 相机 | 2022 年 5 月 5 日  | 2025 年 5 月 5 日  |
 | [Dell Latitude 9510](https://www.dell.com/en-us/work/shop/2-in-1-laptops-tablets/new-latitude-9510-laptop-or-2-in-1/spd/latitude-15-9510-2-in-1-laptop) | 256 GB / Intel i5 / 8 GB RAM | 需要 IR 相机 | 2022 年 5 月 5 日  | 2025 年 5 月 5 日  |
 | [Dell Optiplex 3080](https://www.dell.com/en-us/work/shop/desktops-all-in-one-pcs/optiplex-3080-tower-and-small-form-factor/spd/optiplex-3080-desktop) | 128 GB / Intel i3 / 8 GB RAM | 无 | 2022 年 5 月 27 日  | 2025 年 5 月 27 日  |
 | [Dell Optiplex 7480](https://www.dell.com/en-us/work/shop/desktops-all-in-one-pcs/optiplex-7480-all-in-one-desktop/spd/optiplex-7480-aio) | 128 GB / Intel i3 / 8 GB RAM | 无 | 2022 年 5 月 15 日  | 2025 年 5 月 15 日  |
-| [Dell 5550 Workstation](https://www.dell.com/en-us/work/shop/laptops/new-15-5550-workstation/spd/precision-15-5550-laptop) | 256 GB / Intel i5 / 8 GB RAM | 无 | 2022 年 5 月 27 日  | 2025 年 5 月 27 日  |
+| [Dell 5550 工作站](https://www.dell.com/en-us/work/shop/laptops/new-15-5550-workstation/spd/precision-15-5550-laptop) | 256 GB / Intel i5 / 8 GB RAM | 无 | 2022 年 5 月 27 日  | 2025 年 5 月 27 日  |
 
 ### <a name="hp"></a>HP
 
@@ -60,7 +61,7 @@ Microsoft 托管桌面会定期评估要包含在服务中的设备。 本文列
 | **\*[HP EliteOne 800 G6 24/27 一合一电脑](https://store.hp.com/us/en/pdp/hp-eliteone-800-g6-all-in-one-touch-pc)** | 256 / Intel i5 / 8 GB RAM | SKU 与 9XM14AV | 2022 年 6 月 30 日 | 2025 年 6 月 30 日 |
 | **\*[HP EliteDesk 800 G6 桌面微型电脑](https://store.hp.com/us/en/pdp/hp-elitedesk-800-g6-desktop-mini-pc#!)** | 256 / Intel i5 / 8 GB RAM | SKU 与 9XM14AV | 2022 年 6 月 30 日 | 2025 年 6 月 30 日 |
 | [HP Z2 微型 G5 工作站](https://store.hp.com/us/en/pdp/hp-z2-mini-g5-workstation-customizable-9jd39av-mb) | 256 GB / Intel i5 / 8 GB RAM | SKU 与 8QR48AV| 2021 年 12 月 31 日 | 2024 年 12 月 31 日 |
-| **\*[HP ZBook Firefly 14/15 G7 移动工作站](https://store.hp.com/us/en/mdp/laptops/hp-zbook-14u-mobile-workstation)** | 256 GB / Intel i5 / 8 GB RAM | 需要 9MZ22AV 的 SKU，需要 IR 相机 | 2021 年 11 月 30 日 | 2024 年 11 月 30 日 |
+| **\*[HP ZBook Firefly 14/15 G7 移动工作站](https://store.hp.com/us/en/mdp/laptops/hp-zbook-14u-mobile-workstation)** | 256 GB / Intel i5 / 8 GB RAM | 需要 9MZ22AV、IR 相机的 SKU | 2021 年 11 月 30 日 | 2024 年 11 月 30 日 |
 
 ### <a name="microsoft"></a>Microsoft
 
@@ -80,7 +81,7 @@ Microsoft 托管桌面会定期评估要包含在服务中的设备。 本文列
 - 使用设备注册功能向 Microsoft 托管 [桌面](https://aka.ms/mmddrhelp) 注册
 
 >[!NOTE]
->具有 2.0 GHz 或更快处理器的设备将为参与这些活动的用户提供更好的体验：
+>处理器为 2.0 GHz 或更快处理器的设备将为参与这些活动的用户提供更好的体验：
 >- 将视频会议与 Teams 一同使用。 有关详细信息 [，请参阅 Microsoft Teams](https://docs.microsoft.com/microsoftteams/hardware-requirements-for-the-teams-app) 的硬件要求。
 >-  将一台设备用于多个不同的工作负载。
 >- 使用多个监视器。
@@ -89,7 +90,7 @@ Microsoft 托管桌面会定期评估要包含在服务中的设备。 本文列
 
 这些资源可以帮助回答你可能对特定设备的问题：
 
-- 有关 Dell 设备的更多问题，<a href="mailto:MMD_at_dell@dell.com">请与MMD_at_dell@dell.com。</a>
+- 有关 Dell 设备的更多问题，请与<a href="mailto:MMD_at_dell@dell.com">MMD_at_dell@dell.com。</a>
 
 - 有关 HP 设备和设备订购说明的更多问题，请联系：美洲<a href="mailto:mmd-americas@hp.com"> (mmd-americas@hp.com) ;</a>欧洲/中东/非洲<a href="mailto:mmd-emea@hp.com"> (mmd-emea@hp.com) ;</a>亚太地区/日本<a href="mailto:mmd-apj@hp.com"> (mmd-apj@hp.com) ;</a>全局<a href="mailto:mmd@hp.com"> (mmd@hp.com) </a>
 

@@ -1,7 +1,7 @@
 ---
 title: 高级搜寻架构中的 EmailAttachmentInfo 表
 description: 在高级搜寻架构的 EmailAttachmentInfo 表中，了解电子邮件附件信息
-keywords: 高级搜寻， 威胁搜寻， 网络威胁搜寻， Microsoft 威胁防护， microsoft 365， mtp， m365， 搜索， 查询， 遥测， 架构参考， kusto， 表， 列， 数据类型， 说明， EmailAttachmentInfo， 网络邮件 ID， 发件人， 收件人， 附件 ID， 附件名称， 恶意软件裁定
+keywords: 高级搜寻， 威胁搜寻， 网络威胁搜寻， microsoft 威胁防护， microsoft 365， mtp， m365， 搜索， 查询， 遥测， 架构参考， kusto， 表， 列， 数据类型， 说明， EmailAttachmentInfo， 网络邮件 ID， 发件人， 收件人， 附件 ID， 附件名称， 恶意软件裁定
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,12 +20,12 @@ mms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: b810d7b15ef47a33a0675086219d2193cea00f2e
-ms.sourcegitcommit: 005028af7c5a6b2e95f17a0037958131484d9e73
+ms.openlocfilehash: dd1af6e9ece8a3728db74eadc163ce277e6e84eb
+ms.sourcegitcommit: a7d1b29a024b942c7d0d8f5fb9b5bb98a0036b68
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "50145015"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50461607"
 ---
 # <a name="emailattachmentinfo"></a>EmailAttachmentInfo
 
@@ -47,14 +47,12 @@ ms.locfileid: "50145015"
 | `NetworkMessageId` | string | 由 Microsoft 365 生成的电子邮件的唯一标识符 |
 | `SenderFromAddress` | string | 发件人标题中的发件人电子邮件地址（电子邮件收件人在其电子邮件客户端上可以看到） |
 | `SenderDisplayName` | string | 通讯簿中显示的发件人姓名，通常是给定或名字、中间名首字母和姓氏或姓氏的组合 |
-| `SenderObjectId` | string | Azure AD 中发件人的帐户的唯一标识符 |
+| `SenderObjectId` | string | Azure AD 中发件人帐户的唯一标识符 |
 | `RecipientEmailAddress` | string | 收件人的电子邮件地址，或通讯组列表扩展后收件人的电子邮件地址 |
 | `RecipientObjectId` | string | Azure AD 中电子邮件收件人的唯一标识符 |
 | `FileName` | string | 录制操作所应用到的文件的名称 |
 | `FileType` | string | 文件扩展名类型 |
 | `SHA256` | string | 录制操作所应用到的文件的 SHA-256。 通常不会填充此字段 — 可用时使用 SHA1 列。 |
-| `MalwareFilterVerdict` | string | 关于电子邮件是否包含恶意软件的电子邮件筛选堆栈裁定：恶意软件，非恶意软件 |
-| `MalwareDetectionMethod` | string | 用于检测电子邮件中的恶意软件的方法：反恶意软件引擎、文件信誉、安全附件 |
 | `ThreatTypes` | string | 关于电子邮件是否包含恶意软件、网络钓鱼或其他威胁的电子邮件筛选堆栈裁定 |
 | `ThreatNames` | string | 找到的恶意软件或其他威胁的检测名称 |
 | `DetectionMethods` | string | 用于检测电子邮件中的恶意软件、网络钓鱼或其他威胁的方法 |

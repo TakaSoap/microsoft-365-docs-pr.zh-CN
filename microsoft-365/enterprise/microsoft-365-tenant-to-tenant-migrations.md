@@ -19,30 +19,30 @@ f1.keywords:
 - NOCSH
 description: 了解如何迁移 Microsoft 365 租户。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 17aabbd945c6dec699384eb9f203029255ae62f6
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: 09b2bc77333afaf1991064369846241328db85ff
+ms.sourcegitcommit: a7d1b29a024b942c7d0d8f5fb9b5bb98a0036b68
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48447140"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50461639"
 ---
 # <a name="microsoft-365-tenant-to-tenant-migrations"></a>Microsoft 365 租户到租户迁移
 
-在合并、收购、divestitures 和其他方案中，有几种体系结构方法可能会导致您将现有的 Microsoft 365 租户迁移到新的租户。 大多数客户可以与 Microsoft 咨询服务或 Microsoft 合作伙伴合作，以迁移租户，包括使用第三方工具迁移内容。 
+合并、收购、资产重组和其他方案有几种体系结构方法，可能会导致你将现有 Microsoft 365 租户迁移到新租户。 大多数客户与 Microsoft 咨询服务或 Microsoft 合作伙伴合作迁移租户，包括使用第三方工具迁移内容。 
 
-使用 [租户到租户迁移体系结构模型](../downloads/Microsoft-365-tenant-to-tenant-migration.pdf) 了解如何规划 Microsoft 365 租户到租户的迁移以及迁移的步骤。
+使用 [租户到租户迁移](https://download.microsoft.com/download/b/a/1/ba19dfe7-96e2-4983-8783-4dcff9cebe7b/microsoft-365-tenant-to-tenant-migration.pdf) 体系结构模型可了解如何规划 Microsoft 365 租户到租户迁移以及迁移的步骤。
 
-[![租户到租户迁移模型](../media/solutions-architecture-center/msft-tenant-to-tenant-migration-thumb.png)](../downloads/Microsoft-365-tenant-to-tenant-migration.pdf) 
+[![租户到租户迁移模型](../media/solutions-architecture-center/msft-tenant-to-tenant-migration-thumb.png)](https://download.microsoft.com/download/b/a/1/ba19dfe7-96e2-4983-8783-4dcff9cebe7b/microsoft-365-tenant-to-tenant-migration.pdf) 
 
-您还可以下载 [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/Microsoft-365-tenant-to-tenant-migration.pdf) 或 [Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/Microsoft-365-tenant-to-tenant-migration.vsdx) 格式的此模型，并将其打印在信件、法律或 tabloid (11 x 17) 大小的纸张上。
+以 [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/Microsoft-365-tenant-to-tenant-migration.pdf) 格式下载此模型，并打印在 11 x 17 (11 x 17 大小的) 上打印。
 
-此模型提供了用于规划的指南和起点，其中包含以下各节：
+此模型提供有关以下各节的规划指导和起点：
 
-- 将业务方案映射到体系结构方法
+- 业务方案与体系结构方法的映射
 - 设计注意事项
 
-此模型还包含以下各项的详细示例：
+此模型还包含以下详细示例：
 
 - 单个事件迁移流
-- 分阶段迁移流程
+- 分阶段迁移流
 - 租户移动或拆分流
