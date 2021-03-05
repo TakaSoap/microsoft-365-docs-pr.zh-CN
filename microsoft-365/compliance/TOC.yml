@@ -158,6 +158,8 @@
           href: sensitivity-labels-sharepoint-onedrive-files.md
         - name: 管理 Office 应用中的敏感度标签
           href: sensitivity-labels-office-apps.md
+        - name: 针对由敏感度标签加密的文档启用共同创造（预览版）
+          href: sensitivity-labels-coauthoring.md
     - name: 加密
       items:
         - name: 了解加密
