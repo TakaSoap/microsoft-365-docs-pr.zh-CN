@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 高级 eDiscovery 作业帮助跟踪与执行各种高级 eDiscovery 任务相关的长期运行进程状态。
-ms.openlocfilehash: f5c366b8809b1b5c08b15972118c40d7d29e33c4
-ms.sourcegitcommit: 98b889e674ad1d5fa37d4b6c5fc3eda60a1d67f3
-ms.translationtype: HT
+ms.openlocfilehash: 7b80df3f9891105d59a1741e9e0288ef0e67c25e
+ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "49750763"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50454653"
 ---
 # <a name="manage-jobs-in-advanced-ediscovery"></a>管理高级 eDiscovery 中的作业
 
@@ -54,6 +54,6 @@ ms.locfileid: "49750763"
 | 提交失败。 | 作业提交失败。  应当尝试重新运行触发此作业的操作。 |
 | 正在进行 | 作业正在进行，可在 **作业** 选项卡中监控作业的进度。 |
 | 成功 | 作业已成功完成。 **作业** 选项卡上的 **已完成** 列将显示作业完成的日期和时间。 |
-| 部分成功 | 作业部分成功。 如果作业在某些保管人数据源中未找到任何部分索引数据（也称为 *未索引数据*），一般将返回此状态。  |
+| 部分成功 | 作业成功。 如果作业在某些保管人数据源中未找到任何部分索引数据（也称为 *未索引数据*），一般将返回此状态。  |
 | 已失败 | 作业失败。  应当尝试重新运行触发此作业的操作。 如果作业再次失败，建议联系 Microsoft 支持部门，并提供作业的支持信息。 |
 |||

@@ -41,7 +41,7 @@ ms.locfileid: "50114365"
 
 可通过两种方式申请发票：
   
-1. 在由世纪航空运营的 Office 365 网站上付款后，将收到订单确认电子邮件，其中包含订单号和发票管理系统的链接。 您可以使用电子邮件中的链接在 <a href="https://go.microsoft.com/fwlink/p/?linkid=837466" target="_blank">世纪互联发票信息管理中心</a>。
+1. 在由世纪互联运营的 Office 365 网站上付款后，将收到订单确认电子邮件，其中包含订单号和发票管理系统的链接。 您可以使用电子邮件中的链接在 <a href="https://go.microsoft.com/fwlink/p/?linkid=837466" target="_blank">世纪互联发票信息管理中心</a>。
 
     或
 

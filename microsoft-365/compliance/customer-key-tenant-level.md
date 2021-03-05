@@ -15,16 +15,16 @@ ms.collection:
 - m365solution-mip
 - m365initiative-compliance
 description: 了解如何为 Microsoft 365 租户内的所有数据设置客户密钥。
-ms.openlocfilehash: 60704f77e17222de790cb397653a2275144d770e
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 7bc5403f73e2d61f47e92ab5c94509f3fe9f3e33
+ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50288143"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50454643"
 ---
 # <a name="overview-of-customer-key-for-microsoft-365-at-the-tenant-level-public-preview"></a>租户级别的 Microsoft 365 客户密钥 (公共预览版) 
 
-使用提供的密钥，您可以创建 DEP (数据) 策略并将其分配给租户。 DEP 对租户中以下工作负载的数据进行加密：
+使用提供的密钥，您可以创建 DEP (数据) 策略并将其分配给租户。 DEP 对租户中的以下工作负载的数据进行加密：
 
 - Teams 聊天消息 (一对一聊天、群聊、会议聊天和频道对话) 
 - Teams 媒体 (图像、代码段、视频消息、音频消息、wiki 图像) 
@@ -46,7 +46,7 @@ ms.locfileid: "50288143"
 
 示例：
 
-保存在 OneDrive for Business 和 SharePoint 中的 Microsoft Teams 文件和一些 Teams 通话和会议录像由 SharePoint Online DEP 进行加密。 单个 SharePoint Online DEP 对单个地理位置中的内容进行加密。
+保存在 OneDrive for Business 和 SharePoint 中的 Microsoft Teams 文件和一些 Teams 通话和会议录像由 SharePoint Online DEP 加密。 单个 SharePoint Online DEP 对单个地理位置中的内容进行加密。
 
 对于 Exchange Online，您可以创建使用客户密钥加密一个或多个用户邮箱的 DEP。 创建租户级别的策略时，该策略不会加密加密的邮箱。 但是，租户级别密钥将加密已不受 DEP 影响的邮箱。
 
@@ -54,16 +54,16 @@ ms.locfileid: "50288143"
 
 这些步骤与在应用程序级别设置客户密钥的步骤类似，但不完全相同。 应仅对此公共预览版与测试租户中的测试数据一同使用。 请勿将此版本与生产数据或生产环境一同使用。 如果你已经拥有客户密钥的生产部署，请使用这些步骤在测试环境中在租户级别设置客户密钥。
 
-你通过远程连接到 Azure PowerShell 来完成大部分任务。 为了获得最佳结果，请使用版本 4.4.0 或更高版本的 Azure PowerShell。
+你通过远程连接到 Azure PowerShell 来完成大部分任务。 为获得最佳结果，请使用版本 4.4.0 或更高版本的 Azure PowerShell。
 
-在开始使用之前，请确保执行以下操作：
+在开始使用之前，请确保以下各项：
 
 - 你需要使用具有合规性管理员角色的工作或学校帐户在租户级别设置客户密钥。
 - 确保你拥有组织的适当许可。 使用付费的已开票 Azure 订阅，企业协议云服务提供商。 客户密钥不支持使用即付即用计划或信用卡购买的 Azure 订阅。 从 2020 年 4 月 1 日起，Office 365 中的客户密钥在 Office 365 E5、M365 E5、M365 E5 合规性和 M365 E5 信息保护 & 治理 SUS 中提供。 Office 365 高级合规性 SKU 不再可用于购买新许可证。 现有 Office 365 高级合规性许可证将继续受支持。 虽然可以在具有相应许可证的租户下至少启用一个许可证来启用该服务，但您仍应确保从该服务受益的所有用户都有相应的许可证。
 
 ### <a name="create-two-new-azure-subscriptions"></a>创建两个新的 Azure 订阅
 
-对于 DEP 策略的每个数据加密策略，客户密钥 (两) 。 为此，必须创建两个 Azure 订阅。 作为最佳实践，Microsoft 建议组织单独的成员在每个订阅中配置一个密钥。 仅使用这些 Azure 订阅来管理 Microsoft 365 的加密密钥。 这样可保护组织，以防您的一个运营商意外、有意或恶意删除或以其他方式管理他们负责的密钥。
+对于 DEP 策略的每个数据加密策略，客户密钥 (两) 。 为此，必须创建两个 Azure 订阅。 作为最佳实践，Microsoft 建议组织单独的成员在每个订阅中配置一个密钥。 仅使用这些 Azure 订阅来管理 Microsoft 365 的加密密钥。 这样可保护组织，以防其中一个运营商意外、有意或恶意删除或以其他方式管理他们负责的密钥。
 
 你可以为组织创建的 Azure 订阅数量没有实际限制。 遵循此最佳做法有助于最大限度地减少人为错误的影响，同时有助于管理客户密钥使用的资源。
 
@@ -89,9 +89,9 @@ ms.locfileid: "50288143"
    **正文**：要完成其强制保留期的订阅 ID。
    每个订阅Get-AzProviderFeature输出。
 
-   一旦 Microsoft 通知 (并验证) 你已注册订阅以使用强制保留期，完成此过程的服务级别协议 (SLA) 需要五个工作日。
+   一旦 Microsoft 收到 (并验证) 你已注册订阅以使用强制保留期，完成此过程的服务级别协议 (SLA) 需要五个工作日。
 
-4. 从 Microsoft 收到注册完成通知后，通过运行 Get-AzProviderFeature 命令验证注册状态。如下所示。 如果验证，则Get-AzProviderFeature返回 **注册** 状态属性的值 **"已注册"。** 对于每个订阅执行此操作。
+4. 从 Microsoft 收到注册完成通知后，通过运行 Get-AzProviderFeature 命令验证注册状态，如下所示。 如果验证，则Get-AzProviderFeature返回 **注册** 状态属性的值 **"已注册"。** 对于每个订阅执行此操作。
 
    ```powershell
    Set-AzContext -SubscriptionId <SubscriptionId>
@@ -109,12 +109,12 @@ ms.locfileid: "50288143"
 
 Azure Key [Vault](https://azure.microsoft.com/documentation/articles/key-vault-get-started/)入门中记录了创建密钥保管库的步骤，这些步骤将指导你安装和启动 Azure PowerShell、连接到 Azure 订阅、创建资源组以及创建该资源组中的关键保管库。
   
-创建密钥保管库时，必须选择 SKU：Standard 或 Premium。 标准 SKU 允许使用软件保护 Azure 密钥保管库密钥（没有硬件安全模块 (HSM) 密钥保护）。高级 SKU 允许使用 HSM 来保护密钥保管库密钥。 客户密钥接受使用任一 SKU 的密钥保管库，但 Microsoft 强烈建议你仅使用高级 SKU。 使用任一类型的密钥的操作成本相同，因此成本的唯一差异是每个受 HSM 保护的密钥的每月成本。 有关详细信息 [，请参阅密钥保管](https://azure.microsoft.com/pricing/details/key-vault/) 库定价。
+创建密钥保管库时，必须选择 SKU：Standard 或 Premium。 标准 SKU 允许使用软件保护 Azure Key Vault 密钥（没有硬件安全模块 (HSM) 密钥保护）。高级 SKU 允许使用 HSM 来保护密钥保管库密钥。 客户密钥接受使用任一 SKU 的密钥保管库，但 Microsoft 强烈建议你仅使用高级 SKU。 使用任一类型的密钥的操作成本相同，因此成本的唯一差异是每个受 HSM 保护的密钥的每月成本。 有关详细信息 [，请参阅密钥保管](https://azure.microsoft.com/pricing/details/key-vault/) 库定价。
   
 > [!IMPORTANT]
 > 将高级 SKU 密钥保管库和受 HSM 保护的密钥用于生产数据，并且仅将标准 SKU 密钥保管库和密钥用于测试和验证目的。
 
-对密钥保管库使用通用前缀，并包括密钥保管库和密钥的使用和范围的缩写。 例如，对于将位于北美的保管库的 Contoso 服务，可能的名称对是 Contoso-O365-NA-VaultA1 和 Contoso-O365-NA-VaultA2。 保管库名称是 Azure 中的全局唯一字符串，因此你可能需要尝试所需名称的变体，以防其他 Azure 客户已声明所需的名称。 配置后，无法更改保管库名称，因此最佳做法是制定书面设置计划，并使用第二个人验证计划是否正确执行。
+对密钥保管库使用通用前缀，并包括密钥保管库和密钥的使用和范围的缩写。 例如，对于将位于北美的保管库的 Contoso 服务，可能的名称对是 Contoso-O365-NA-VaultA1 和 Contoso-O365-NA-VaultA2。 保管库名称是 Azure 中的全局唯一字符串，因此你可能需要尝试所需名称的变体，以防其他 Azure 客户已声明所需名称。 配置后，保管库名称将无法更改，因此最佳做法是制定书面设置计划，并使用第二个人验证计划是否正确执行。
 
 如果可能，在未配对区域创建保管库。 配对的 Azure 区域跨服务故障域提供高可用性。 因此，可以将区域对视为彼此的备份区域。 这意味着放置在一个地区的 Azure 资源通过配对区域自动获得容错能力。 因此，为数据加密策略中使用的两个保管库选择区域（其中区域已配对）意味着仅总共使用两个可用性区域。 大多数地理位置只有两个区域，因此尚无法选择非配对区域。 如果可能，为用于数据加密策略的两个保管库选择两个未配对区域。 这从总共四个可用性区域中获益。 有关详细信息，请参阅 BCDR (业务连续性和灾难恢复 [) ：Azure 配对](https://docs.microsoft.com/azure/best-practices-availability-paired-regions) 区域，了解区域对的当前列表。
 
@@ -122,10 +122,10 @@ Azure Key [Vault](https://azure.microsoft.com/documentation/articles/key-vault-g
 
 对于每个密钥保管库，你将需要为客户密钥定义三组单独的权限，具体取决于你的实现。 例如，您需要为以下各项定义一组权限：
   
-- **为组织** 执行密钥保管库日常管理的关键保管库管理员。 这些任务包括备份、创建、获取、导入、列表和还原。
+- **将为组织** 执行密钥保管库日常管理的关键保管库管理员。 这些任务包括备份、创建、获取、导入、列表和还原。
 
   > [!IMPORTANT]
-  > 分配给密钥保管库管理员的权限集不包括删除密钥的权限。 这是有意为之，也是一项重要做法。 通常不删除加密密钥，因为这样做会永久销毁数据。 作为最佳实践，默认情况下不要向密钥保管库管理员授予此权限。 相反，请为关键保管库参与者保留此权限，仅在明确了解后果后将其短期分配给管理员。
+  > 分配给密钥保管库管理员的权限集不包括删除密钥的权限。 这是有意的，也是一项重要的做法。 通常不删除加密密钥，因为这样做会永久销毁数据。 作为最佳实践，默认情况下不要向密钥保管库管理员授予此权限。 相反，请为关键保管库参与者保留此权限，仅在明确了解后果后将其短期分配给管理员。
   
   若要向组织中用户分配这些权限，请通过 Azure PowerShell 登录 Azure 订阅。 有关说明，请参阅 [使用 Azure PowerShell 登录](https://docs.microsoft.com/powershell/azure/authenticate-azureps)。
 
@@ -141,7 +141,7 @@ Azure Key [Vault](https://azure.microsoft.com/documentation/articles/key-vault-g
    Set-AzKeyVaultAccessPolicy -VaultName Contoso-O365EX-NA-VaultA1 -UserPrincipalName alice@contoso.com -PermissionsToKeys create,import,list,get,backup,restore
    ```
 
-- **可以更改 Azure** 密钥保管库本身权限的关键保管库参与者。 当员工离开或加入团队时，或者当密钥保管库管理员合法需要删除或还原密钥的权限时，你将需要更改这些权限。 需要向这组密钥保管库参与者授予密钥保管库的"参与者"角色。 可以使用 Azure 资源管理器分配此角色。 有关详细步骤，请参阅Role-Based [访问控制](https://docs.microsoft.com/azure/active-directory/role-based-access-control-configure) 管理对 Azure 订阅资源的访问权限。 默认情况下，创建订阅的管理员具有此访问权限，并且能够将其他管理员分配到参与者角色。
+- **可以更改 Azure** 密钥保管库本身权限的关键保管库参与者。 当员工离开或加入团队时，或者当密钥保管库管理员合法需要删除或还原密钥的权限时，你将需要更改这些权限。 需要向这组密钥保管库参与者授予密钥保管库的"参与者"角色。 可以使用 Azure 资源管理器分配此角色。 有关详细步骤，请参阅Role-Based [访问控制](https://docs.microsoft.com/azure/active-directory/role-based-access-control-configure) 来管理对 Azure 订阅资源的访问权限。 默认情况下，创建订阅的管理员具有此访问权限，并且能够将其他管理员分配到参与者角色。
 
 - **Microsoft 365** 静态数据加密服务，该服务在租户级别处理客户密钥的工作。 若要向 Microsoft 365 授予权限，请运行 **Set-AzKeyVaultAccessPolicy** cmdlet，使用以下语法：
 
@@ -194,9 +194,9 @@ Add-AzKeyVaultKey -VaultName <vault name> -Name <key name> -Destination <HSM|Sof
 
 其中：
 
-- *保管* 库名称是你想要创建密钥的保管库的名称。
+- *保管* 库名称是你想要创建密钥的密钥保管库的名称。
 
-- *键* 名称是你想要提供新密钥的名称。
+- *键* 名称是你想要提供新键的名称。
 
   > [!TIP]
   > 使用与上述密钥保管库类似的命名约定命名密钥。 这样，在只显示键名称的工具中，字符串是自描述的。
@@ -223,7 +223,7 @@ Microsoft 365 要求 Azure 密钥保管库订阅设置为"不取消"，并且客
 
 ### <a name="back-up-azure-key-vault"></a>备份 Azure 密钥保管库
 
-创建或对密钥的任何更改后，立即执行备份并存储备份的副本（联机和脱机）。 不要将脱机副本连接到任何网络。 相反，将它们存储在物理安全或商业存储设施中。 应至少将备份的一个副本存储在发生灾难时可访问的位置。 如果密钥保管库密钥被永久销毁或无法操作，备份 blob 是还原密钥材料的唯一方法。 Azure 密钥保管库外部且已导入到 Azure 密钥保管库的密钥不符合备份条件，因为客户密钥使用密钥所需的元数据不存在于外部密钥中。 只有从 Azure Key Vault 获取的备份可用于使用客户密钥执行还原操作。 因此，在上载或创建密钥后，必须备份 Azure Key Vault。
+创建或对密钥的任何更改后，立即执行备份并存储备份的副本（联机和脱机）。 不要将脱机副本连接到任何网络。 相反，将它们存储在物理安全或商业存储设施中。 应至少将一份备份副本存储在发生灾难时可访问的位置。 如果密钥保管库密钥被永久销毁或无法操作，备份 blob 是还原密钥材料的唯一方法。 Azure 密钥保管库外部且已导入到 Azure 密钥保管库的密钥不符合备份条件，因为客户密钥使用密钥所需的元数据不存在于外部密钥中。 只有从 Azure Key Vault 获取的备份可用于使用客户密钥执行还原操作。 因此，在上载或创建密钥后，对 Azure Key Vault 进行备份至关重要。
   
 若要创建 Azure Key Vault 密钥的备份，请运行 [Backup-AzKeyVaultKey](https://docs.microsoft.com/powershell/module/az.keyvault/backup-azkeyvaultkey) cmdlet，如下所示：
 
@@ -363,8 +363,8 @@ Set-M365DataAtRestEncryptionPolicy -Identity “EUR Policy” -Refresh
 | 名称 | 说明 | 可选 (Y/N)  |
 |----------|----------|---------|
 |-Identity|指定要修改的数据加密策略。|网络|
-|-Refresh|旋转 Azure 密钥保管库中的任何关联密钥后，使用 Refresh 开关更新数据加密策略。 不必为此开关指定值。|Y|
-|- 已启用|Enabled 参数启用或禁用数据加密策略。 在禁用策略之前，必须从租户取消分配它。 有效值为：</br > $true：策略已启用</br > $true：启用此策略。此为默认值。
+|-Refresh|在旋转 Azure 密钥保管库中的任何关联密钥后，使用 Refresh 开关更新数据加密策略。 不必为此开关指定值。|Y|
+|- 已启用|Enabled 参数启用或禁用数据加密策略。 在禁用策略之前，必须从租户取消分配它。 有效值为：</br > $true：已启用策略</br > $true：启用此策略。此为默认值。
 |Y|
 |-Name|Name 参数指定数据加密策略的唯一名称。|Y
 |-Description|Description 参数指定数据加密策略的可选说明。|Y|

@@ -1,7 +1,7 @@
 ---
-title: 在 Office 365 GCC High 和 DoD 中禁用 TLS 1.0 和 1.1
+title: 在 Microsoft 365 GCC High 和 DoD 中禁用 TLS 1.0 和 1.1
 description: 讨论 Microsoft 如何在 Microsoft 365 的 GCC High 和 DoD 环境中禁用对 TLS 1.1 和 1.0 的支持。
-author: workshay
+author: kccross
 manager: laurawi
 localization_priority: Normal
 search.appverid:
@@ -11,35 +11,35 @@ ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.topic: article
 ms.reviewer: krowley
-ms.author: shmehta
+ms.author: krowley
 appliesto:
 - Office 365 Business
-ms.openlocfilehash: a0b1fecc9991cd7ba4ac915d3d684d43714014af
-ms.sourcegitcommit: a62ac3c01ba700a51b78a647e2301f27ac437c5a
+ms.openlocfilehash: d4da76268791e36bd01b5d6f6140fd52c70b3b4a
+ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/12/2021
-ms.locfileid: "50233748"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50454191"
 ---
-# <a name="disabling-tls-10-and-11-in-office-365-gcc-high-and-dod"></a>在 Office 365 GCC High 和 DoD 中禁用 TLS 1.0 和 1.1
+# <a name="disabling-tls-10-and-11-in-microsoft-365-gcc-high-and-dod"></a>在 Microsoft 365 GCC High 和 DoD 中禁用 TLS 1.0 和 1.1
 
 ## <a name="summary"></a>摘要
 
-为了符合联邦风险和授权管理计划 (FedRAMP) 的最新合规性标准，我们将在 Microsoft 365 GCC High 和 DoD 环境中禁用传输层安全性 (TLS) 版本 1.1 和 1.0。 此更改之前是通过 Microsoft 支持部门在准备在 Office 365 中强制使用 [TLS 1.2](https://support.microsoft.com/help/4057306/preparing-for-tls-1-2-in-office-365)而宣布的。
+为了符合联邦风险和授权管理计划 (FedRAMP) 的最新合规性标准，我们正在 Microsoft 365 GCC High 和 DoD 环境中禁用传输层安全性 (TLS) 版本 1.1 和 1.0。 此更改之前是通过 Microsoft 支持在 Office 365 中准备强制使用 [TLS 1.2](https://support.microsoft.com/help/4057306/preparing-for-tls-1-2-in-office-365)而宣布的。
 
 数据的安全性非常重要，我们承诺实现可能影响服务使用的更改的透明度。
 
-尽管 [Microsoft TLS 1.0](https://support.microsoft.com/help/3117336) 实现没有已知的安全漏洞，但我们仍致力于遵守 FedRAMP 合规性标准。 因此，我们在 2020 年 1 月 15 日禁用了 GCC High 和 DoD 环境中 Office 365 中的 TLS 1.1 和 1.0。 若要了解如何删除 TLS 1.1 和 1.0 依赖项，请参阅以下白皮书：
+尽管 [Microsoft TLS 1.0](https://support.microsoft.com/help/3117336) 实现没有已知的安全漏洞，但我们仍致力于遵守 FedRAMP 合规性标准。 因此，我们在 2020 年 1 月 15 日禁用了 Microsoft 365 GCC High 和 DoD 环境中 TLS 1.1 和 1.0。 若要了解如何删除 TLS 1.1 和 1.0 依赖项，请参阅以下白皮书：
 
 [解决 TLS 1.0 问题](https://www.microsoft.com/download/details.aspx?id=55266)
 
-## <a name="more-information"></a>更多信息
+## <a name="more-information"></a>详细信息
 
-从 2020 年 1 月 15 日开始，GCC High 和 DoD 环境中 Office 365 将弃用 TLS 1.1 和 1.0。
+从 2020 年 1 月 15 日开始，GCC 高和 DoD 环境中 Microsoft 365 将禁用 TLS 1.1 和 1.0。
 
-到 2020 年 1 月 15 日，客户端服务器和浏览器服务器的所有组合都应使用 TLS 版本 1.2 (或更高版本) 以确保可以建立所有连接，而不会与 Office 365 服务发生问题。 这可能需要更新客户端服务器和浏览器服务器的某些组合。
+到 2020 年 1 月 15 日，客户端服务器和浏览器服务器的所有组合都应使用 TLS 版本 1.2 (或更高版本) 以确保可以建立所有连接而不会与 Microsoft 365 发生问题。 这可能需要更新客户端服务器和浏览器服务器的某些组合。
 
-如果您没有在 2020 年 1 月 15 日之前更新到 TLS 版本 1.2 (或更高版本) ，则尝试连接到 Office 365 时将遇到问题。 此外，在解决方案中，你 (更新到 TLS 1.2) 或更高版本。
+对于 SharePoint 和 OneDrive，需要更新和配置 .NET 以支持 TLS 1.2。 有关信息，请参阅[如何在客户端上启用 TLS 1.2。](https://docs.microsoft.com/mem/configmgr/core/plan-design/security/enable-tls-1-2-client)
 
 您必须更新客户端计算机，以确保保持对 Office 365 GCC High 和 DoD 的不间断访问。
 
@@ -61,6 +61,4 @@ ms.locfileid: "50233748"
 
 ## <a name="references"></a>参考
 
-以下支持文章介绍了可帮助确保客户端使用 TLS 1.2 的指南和参考：
-
-[准备在 Office 365 中强制使用 TLS 1.2](https://support.microsoft.com/help/4057306/preparing-for-tls-1-2-in-office-365)
+有关帮助确保客户端使用 TLS 1.2 的指导和参考，请参阅"准备在 Office 365 中强制使用[TLS 1.2"。](https://support.microsoft.com/help/4057306/preparing-for-tls-1-2-in-office-365)
