@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 已准备好实现保留策略和保留标签来管理组织的数据，但不确定从哪里入手？ 请阅读一些实用指南来入门。
-ms.openlocfilehash: 26568d2a603e447156aead751178555fa400db5e
-ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
+ms.openlocfilehash: bb73f0871bfc2ad707d31ef6d4d57e18218842a5
+ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "49682527"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "50406512"
 ---
 # <a name="get-started-with-retention-policies-and-retention-labels"></a>开始使用保留策略和保留标签
 
@@ -82,9 +82,11 @@ ms.locfileid: "49682527"
 
 如果将保留标签用于记录管理，则对于将内容标记为记录的保留标签，还有其他一些特有的方案。 请参阅[记录管理常见方案](get-started-with-records-management.md#common-scenarios-for-records-management)。
 
-## <a name="end-user-documentation-for-retention-labels"></a>保留标签的最终用户文档
+## <a name="end-user-documentation-for-retention"></a>保留的最终用户文档
 
-与保留策略不同，保留标签在 Microsoft 365 应用中有 UI。 请务必在将保留标签部署到生产网络前，为最终用户和技术支持人员提供指导。
+大多数保留策略在后台运行，且无需用户交互，因此用户需要的文档很少。 删除邮件后，Teams 的保留策略会通知用户，并包含指向 Teams 中有关保留策略 [保留策略](https://support.microsoft.com/office/teams-messages-about-retention-policies-c151fa2f-1558-4cf9-8e51-854e925b483b)。
+
+由于保留标签在 Microsoft 365 应用中具有 UI 状态，因此在将标签部署到生产网络之前，请确保为最终用户和技术支持人员提供指导。
 
 最有效的最终用户文档将是你针对所选保留标签名称和配置提供的定制指南和说明。 请参阅以下博客文章，获取可用于培训用户和提高采用率的下载软件包：[最终用户培训：M365 中的保留标签 – 如何提高采纳速度](https://techcommunity.microsoft.com/t5/microsoft-security-and/end-user-training-for-retention-labels-in-m365-how-to-accelerate/ba-p/1750861)。
 

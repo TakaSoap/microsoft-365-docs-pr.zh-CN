@@ -16,23 +16,26 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: 使用保留策略可以非常高效地控制用户使用电子邮件、文档和对话生成的内容。 保留所需内容并删除不需要的内容。
-ms.openlocfilehash: 1806000b47a19c07da11a6a732eeacf5d60a7da0
-ms.sourcegitcommit: a9ac702c9efc9defded3bfa65618b94bac00c237
+description: 使用保留策略有效掌控用户使用电子邮件、文档和对话生成的内容。 保留所需内容并删除不需要的内容。
+ms.openlocfilehash: 02d3fd17e4aac34546e545ec10621bc99b945b31
+ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/16/2021
-ms.locfileid: "50261321"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "50405710"
 ---
 # <a name="create-and-configure-retention-policies"></a>创建和配置保留策略
 
 >*[Microsoft 365 安全性与合规性许可指南](https://aka.ms/ComplianceSD)。*
 
-使用保留策略来主动决定是保留内容还是删除内容 — 亦或是先保留再删除内容。
+使用保留策略通过主动决定是保留内容、删除内容还是保留然后删除内容来管理组织的数据。
 
-透过将相同的保留设置依照位置如网站或信箱层级的内容进行指派，保留策略可让你工作的更有效率。 如果你不确定是使用保留策略还是保留标签，请参阅[保留策略和保留标签](retention.md#retention-policies-and-retention-labels)。
+保留策略在容器级别分配相同的保留设置，以通过该容器中的内容自动继承，使你能够高效率地完成这一操作。 例如，SharePoint 网站中的所有项目、用户的 Exchange 邮箱中的所有电子邮件、用于 Microsoft Teams 的团队的所有频道邮件。 如果不确定是使用容器级别的保留策略，还是使用项级别的保留标签，请参阅保留 [和保留标签](retention.md#retention-policies-and-retention-labels)。
 
-有关保留策略和保留的工作方式的详细信息，请参阅[了解保留策略和保留标签](retention.md)。
+若要深入了解保留策略以及 Microsoft 365 中保留的工作原理，请参阅 [保留策略和保留标签](retention.md)。
+
+> [!NOTE]
+> 本页上的信息适用于合规性管理员。 如果你不是管理员，并且希望了解为使用的应用配置保留策略的信息，请联系技术支持、IT 部门或管理员。 如果在 Teams 聊天和频道消息中看见保留策略消息，可能会发现查看 [Teams 中有关保留策略的消息](https://support.microsoft.com/office/teams-messages-about-retention-policies-c151fa2f-1558-4cf9-8e51-854e925b483b)。
 
 ## <a name="before-you-begin"></a>准备工作
 
@@ -40,7 +43,7 @@ ms.locfileid: "50261321"
 
 ## <a name="create-and-configure-a-retention-policy"></a>创建和配置保留策略
 
-虽然保留策略可支持多个位置，但你无法创建包含所有受支持位置的单个保留策略：
+虽然保留策略可以支持在保留策略中标识为"位置"的多个服务，但无法创建包含所有受支持位置的单个保留策略：
 
 - Exchange 电子邮件
 - SharePoint 网站
@@ -53,7 +56,7 @@ ms.locfileid: "50261321"
 - yammer 社区消息
 - Yammer 私人消息
 
-如果你在创建保留策略时选择 Teams 或 Yammer 位置，其他位置将被自动排除。 因此，需遵循的说明取决于你是需要包含 Teams 或 Yammer 位置：
+如果你在创建保留策略时选择 Teams 或 Yammer 位置，其他位置将被自动排除。 这意味着遵循的说明取决于你需要包括 Teams 还是 Yammer 位置：
 
 - [有关 Teams 位置的保留策略的说明](#retention-policy-for-teams-locations)
 - [有关 Yammer 位置的保留策略的说明](#retention-policy-for-yammer-locations)

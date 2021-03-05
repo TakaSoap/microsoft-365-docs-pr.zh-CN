@@ -22,12 +22,12 @@ description: 使用 Microsoft 信息保护 (MIP) 中的敏感度标签对敏感�
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 1cb11573efcb23bbac7cf54e21ee457913b21f18
-ms.sourcegitcommit: 4f40f5be140a23bacff6fd7b85536de14fc7d499
+ms.openlocfilehash: 2121c58b0105519d5dacda0c0bb39a102cf8d299
+ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "50084631"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "50407258"
 ---
 # <a name="learn-about-sensitivity-labels"></a>了解敏感度标签
 
@@ -175,11 +175,11 @@ ms.locfileid: "50084631"
 
 - **选择可查看标签的用户和组。** 可以将标签发布到任何特定用户或启用电子邮件的安全组、通讯组或 Microsoft 365 组（它们可以在 Azure AD 中具有[动态成员身份](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-create-rule)）。
 
-- 对标签策略中包含的用户和组所创建的所有新文档和电子邮件 **应用默认标签**，并对容器应用相同或不同的默认标签（如果已 [启用 Microsoft Teams、Microsoft 365 组和 SharePoint 网站的敏感度标签，则](sensitivity-labels-teams-groups-sites.md)）。 如果默认标签不是用户文档或电子邮件的正确标签，则用户始终可以进行更改。 
+- **将默认标签** 应用于标签策略中包含的用户和组创建的所有新文档和电子邮件，以及对于容器应用相同或不同的默认标签（如果您已经 [为Microsoft Teams，Microsoft 365组和SharePoint网站启用了敏感性标签](sensitivity-labels-teams-groups-sites.md)）。 如果默认标签不是用户文档或电子邮件的正确标签，则用户始终可以进行更改。 
     
     考虑使用默认标签来设置你想要应用于所有内容的基本级别的保护设置。 但是，如果没有用户培训和其他控件，此设置也会导致标签不准确。 最好不要选择应用加密的标签作为文档的默认标签。 例如，许多组织需要向外部用户发送并与其共享文档，这些用户可能不具有支持加密的应用，或者他们可能未使用可以获得授权的帐户。 有关此方案的详细信息，请参阅[与外部用户共享加密的文档](sensitivity-labels-office-apps.md#sharing-encrypted-documents-with-external-users)。
 
-- **要求提供更改标签的理由。** 如果用户尝试删除标签，或将其替换为有较低订单号的标签，则你可以要求用户提供一个理由来执行此操作。 例如，用户打开一个标记为“机密”（订单号 3）的文档，并将该标签替换为一个名为“公共”（订单号 1）的文档。 目前，理由描述仅由 [Azure 信息保护的统一标记客户端](https://docs.microsoft.com/azure/information-protection/rms-client/aip-clientv2)使用，后者将此信息发送到 [Azure 信息保护分析](https://docs.microsoft.com/azure/information-protection/reports-aip)。
+- **要求提供更改标签的理由。** 如果用户尝试删除标签，或将其替换为有较低订单号的标签，则你可以要求用户提供一个理由来执行此操作。 例如，用户打开一个标记为“机密”（订单号 3）的文档，并将该标签替换为一个名为“公共”（订单号 1）的文档。 管理员可以阅读活动资源管理器或网站中的 [更改](data-classification-activity-explorer.md)。
 
     ![提示用户输入理由的页面](../media/Sensitivity-label-justification-required.png)
 

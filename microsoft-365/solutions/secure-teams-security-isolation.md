@@ -15,12 +15,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: 了解如何创建具有唯一敏感度标签的团队来保证安全。
-ms.openlocfilehash: 439dee40d1501801fc09d570614a591259c6f09c
-ms.sourcegitcommit: 31be333178b934c519f419656f4c3a53e1beffdc
+ms.openlocfilehash: 5ddd42f9e2f2779ca6bf864554140a3f18d2cdea
+ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "49881701"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "50405698"
 ---
 # <a name="configure-a-team-with-security-isolation"></a>配置具有安全隔离的团队
 
@@ -44,6 +44,7 @@ ms.locfileid: "49881701"
 
 观看此视频以简要了解部署流程。
 <br>
+<br>
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4mGHf]
 
 <a name="poster"></a> 有关此方案的 1 页摘要，请参阅 [采用安全隔离的 Microsoft Teams 文章](../downloads/team-security-isolation-poster.pdf)。
@@ -51,6 +52,10 @@ ms.locfileid: "49881701"
 [![“采用安全隔离的 Microsoft Teams”文章](../media/secure-teams-security-isolation/team-security-isolation-poster.png)](../downloads/team-security-isolation-poster.pdf)
 
 你还可以下载 [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/team-security-isolation-poster.pdf) 或 [PowerPoint](https://download.microsoft.com/download/8/0/5/8057fc16-c044-40b6-a652-7ed555ba2895/team-security-isolation-poster.pptx) 格式的海报，并以信件、法律或小报 (11 x 17) 的纸型打印。
+
+按照以下说明，在你自己的测试实验室环境中 [此](team-security-isolation-dev-test.md)。
+
+查看 Contoso Corporation 在此次案例研究中如何使用一个 [不](contoso-team-for-top-secret-project.md)。
 
 ## <a name="initial-protections"></a>初始保护
 

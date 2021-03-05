@@ -17,16 +17,21 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解适用于 Microsoft Teams 的保留策略。
-ms.openlocfilehash: b3b0451f2f1b0950f2b2ee723025a796f1814038
-ms.sourcegitcommit: a9ac702c9efc9defded3bfa65618b94bac00c237
+ms.openlocfilehash: 5c992a988dbffc12824b2b64c1ea9a8fb6d22d67
+ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/16/2021
-ms.locfileid: "50261499"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "50406522"
 ---
 # <a name="learn-about-retention-for-microsoft-teams"></a>了解用于 Microsoft Teams 的保留
 
 >*[Microsoft 365 安全性与合规性许可指南](https://aka.ms/ComplianceSD)。*
+
+> [!NOTE]
+> 如果你是在 Teams 中看见一条消息，称你的聊天和邮件已被保留策略删除，请参阅 [Teams 中有关保留策略](https://support.microsoft.com/office/teams-messages-about-retention-policies-c151fa2f-1558-4cf9-8e51-854e925b483b)。
+> 
+> 本页上的信息适用于管理这些保留策略的 IT 管理员。
 
 本文中的信息是对[了解保留](retention.md)的补充，因为它包含特定于 Microsoft Teams 消息的信息。
 
@@ -43,7 +48,7 @@ ms.locfileid: "50261499"
 > [!NOTE]
 > 包括卡片内容是最近增加的功能，目前正在向租户推出。 有关详细信息，请参阅 [通过 Teams 中应用 Microsoft 365 用于自适应卡片内容的合规功能现已可用](https://techcommunity.microsoft.com/t5/microsoft-teams-blog/microsoft-365-compliance-capabilities-for-adaptive-card-content/ba-p/2095869)。
 
-专用频道中的 Teams 消息目前不支持保留策略。 对Teams使用保留策略（不包括代码片段）时，来自Teams移动客户端所录制的语音备忘录以及来自其他人以表情符号形式的反应。
+专用频道中的 Teams 消息目前不支持保留策略。 当你对 Teams 使用保留策略时，代码片段、来自 Teams 移动客户端的语音备忘录、缩略图、公告图像和来自其他人的图释的反应不包含在内。
 
 通过 Teams 使用的电子邮件和文件不包括在 Teams 的保留策略内。 这些项目有自己的保留策略。
 
