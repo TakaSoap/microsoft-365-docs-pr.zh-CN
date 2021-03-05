@@ -36,10 +36,6 @@
           href: communication-compliance-feature-reference.md
         - name: 案例研究 - Contoso 快速配置冒犯性语言策略
           href: communication-compliance-case-study.md
-        - name: Office 365 中的监督策略
-          href: supervision-policies.md
-        - name: 配置 Office 365 的监督策略
-          href: configure-supervision-policies.md
     - name: 内部风险管理
       items:
         - name: 概述
