@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 无论是使用处置评审还是根据配置的设置自动删除内容，都可监视和管理内容的处置。
-ms.openlocfilehash: 9c2e9055d0468270df4e46fe39115708762052f3
-ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
+ms.openlocfilehash: 092067e676c1cbae3fae6e9d6a5ff77099ce4631
+ms.sourcegitcommit: a7d1b29a024b942c7d0d8f5fb9b5bb98a0036b68
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "49682665"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50461877"
 ---
 # <a name="disposition-of-content"></a>内容的处置
 
@@ -52,15 +52,13 @@ ms.locfileid: "49682665"
 
 ## <a name="disposition-reviews"></a>处置评审
 
-内容到达其保持期结束时，有几个原因可能会让你审查该内容来确定是否可以安全地删除（"已处置"）。 例如，你可能需要：
+当内容达到保留期限结束时，你可能会希望查看该内容并确认是否可以永久删除（"处置"）有多种原因。 例如，你可能需要：
   
 - 在诉讼或审计的事件中，暂停对相关内容的删除。
-    
-- 如果内容有研究或历史价值，则从处置列表中删除该内容存储至档案中。
-    
+
 - 为内容指定不同的保留期，可能是因为原始保留设置是临时或暂时的解决方案。
-    
-- 将内容返回至客户端，或将其转移到其他组织。
+
+- 将内容从现有位置移动到存档位置，例如当内容具有研究或历史价值时。
 
 在保持期结束时触发处置评审时：
   

@@ -17,19 +17,19 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解适用于 Microsoft Teams 的保留策略。
-ms.openlocfilehash: 5c992a988dbffc12824b2b64c1ea9a8fb6d22d67
-ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
+ms.openlocfilehash: 137fcdad514e8272b99ab735a0cf1ed6f6e3e00e
+ms.sourcegitcommit: a7d1b29a024b942c7d0d8f5fb9b5bb98a0036b68
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "50406522"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50461793"
 ---
 # <a name="learn-about-retention-for-microsoft-teams"></a>了解用于 Microsoft Teams 的保留
 
 >*[Microsoft 365 安全性与合规性许可指南](https://aka.ms/ComplianceSD)。*
 
 > [!NOTE]
-> 如果你是在 Teams 中看见一条消息，称你的聊天和邮件已被保留策略删除，请参阅 [Teams 中有关保留策略](https://support.microsoft.com/office/teams-messages-about-retention-policies-c151fa2f-1558-4cf9-8e51-854e925b483b)。
+> 如果在 Teams 中显示一条消息，显示聊天或邮件已被保留策略删除，请参阅 [Teams 中有关保留策略](https://support.microsoft.com/office/teams-messages-about-retention-policies-c151fa2f-1558-4cf9-8e51-854e925b483b)。
 > 
 > 本页上的信息适用于管理这些保留策略的 IT 管理员。
 

@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 创建敏感度标签时，你可以自动为文档或电子邮件分配标签，也可以提示用户选择你建议的标签。
-ms.openlocfilehash: 4bbea7810c20d72ef75bbb5602b1daddfce45576
-ms.sourcegitcommit: 4f40f5be140a23bacff6fd7b85536de14fc7d499
+ms.openlocfilehash: 4eeedca64d1b2244355bb3e0e233969bdd02810c
+ms.sourcegitcommit: a7d1b29a024b942c7d0d8f5fb9b5bb98a0036b68
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "50084673"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50461887"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>将敏感度标签自动应用于内容
 
@@ -60,7 +60,7 @@ ms.locfileid: "50084673"
     
     特定于 SharePoint 和 OneDrive 的自动标记：
     - 支持以下 Office 文件：Word、PowerPoint 和 Excel。 支持 Open XML 格式（例如 .docx 和 .xlsx），但不支持 Microsoft Office 97-2003 格式（例如 .doc 和 .xls）。
-        - 当这些文件不属于开放会话时，无论它们是在创建自动标签策略后创建、上传或更改的，或是在创建自动标签策略后未更改的现有文件，都可自动标签。
+        - 创建自动标签策略之前或之后，这些文件可自动标记。 请注意，如果文件是打开的会话的一部分（文件已打开），则不能自动标记它们。
     - 租户中每天最多自动标记 25,000 个文件。
     - 每个租户最多可自动标记 10 个策略，每个策略最多针对 10 个网站（SharePoint 或 OneDrive）。
     - 无论是在模拟模式下还是在应用标签时，可修改的现有值、修改者和修改日期都不会因自动标记策略而发生变化。

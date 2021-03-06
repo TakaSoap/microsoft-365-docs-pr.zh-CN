@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: article
 description: 打开对 SharePoint 和 OneDrive 中标记和加密的文档启用共同创作和自动保存的设置。
-ms.openlocfilehash: a5c3e84e4ca8874f99a07294dccfd2e4ad7ed81f
-ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
+ms.openlocfilehash: 3946fa5a08011cc98e8dfad921a08ca0fa77af7a
+ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "50417351"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50423859"
 ---
 # <a name="enable-co-authoring-for-files-encrypted-with-sensitivity-labels"></a>为使用敏感度标签加密的文件启用共同创作
 
@@ -89,7 +89,7 @@ ms.locfileid: "50417351"
         - Android：尚不支持
     
     - **Azure 信息保护统一标签客户端和扫描仪：** 
-        - 可从 [Microsoft 下载中心](https://aka.ms/aip-coauth-pp) 安装的公共预览版本（最低为 2.10.45.0）和上一项中所列的适用于 Windows 的 Microsoft 365 企业版应用之一版本。
+        - 可从 [Microsoft 下载中心](https://www.microsoft.com/en-us/download/details.aspx?id=53018) 安装的公共预览版本（安装名称 AzInfoProtection_2.10.46_CoAuthoring_PublicPreview.exe）和上一项中列出的适用于 Windows 的 Microsoft 365 企业版应用之一。
     
     - **适用于 Windows 或 macOS 的 OneDrive 同步应用：**
         - 最低版本 19.002.0121.0008
@@ -122,6 +122,8 @@ ms.locfileid: "50417351"
     - **选择了双** 加密技术。
     
     对于采用以上任何加密配置的标签，标签会显示在 Office 应用中。 但是，当用户选择这些标签，而其他人正在编辑文档时，你会警告他们共同创作且自动保存将不可用。 如果其他人正在编辑文档，用户会看到一条消息，指出标签无法应用。
+
+- 如果使用 Azure 信息保护统一标签客户端：查看此标签客户端的文档， [要求或限制](https://docs.microsoft.com/azure/information-protection/known-issues#known-issues-for-co-authoring-public-preview)。
 
 ## <a name="known-issues-for-this-preview"></a>此预览的已知问题
 

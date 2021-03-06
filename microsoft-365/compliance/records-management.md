@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 description: 通过 Microsoft 365 中的记录管理，你可以将保留计划应用到文件计划中，以管理保留、记录声明和处置。
-ms.openlocfilehash: 1f6ab392abbf55851e1f084507d3f1658c3cf264
-ms.sourcegitcommit: 64262f6f42dcce6a4608b2e3c7ca6190b7009093
+ms.openlocfilehash: 857f8118bb2cc0f94065a8b8696c92bd3ae05cc4
+ms.sourcegitcommit: a7d1b29a024b942c7d0d8f5fb9b5bb98a0036b68
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/19/2021
-ms.locfileid: "49905231"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50461847"
 ---
 # <a name="learn-about-records-management-in-microsoft-365"></a>了解 Microsoft 365 中的记录管理
 
@@ -80,11 +80,11 @@ ms.locfileid: "49905231"
 
 |操作| 保留标签 |记录 - 已锁定| 记录 - 已解锁| 合规性记录 |
 |:-----|:-----|:-----|:-----|:-----|:-----|
-|编辑内容|允许 | **阻止** | Allowed | **阻止**|
+|编辑内容|允许 | **阻止** | 允许 | **阻止**|
 |编辑属性（包括重命名）|Allowed |允许 | 允许| **阻止**|
 |删除|允许 <sup>1</sup> |**阻止** |**阻止**| **阻止**|
-|复制|允许 |Allowed | 允许| 允许|
-|在容器 <sup>2</sup> 中移动|允许 |允许 | Allowed| 允许|
+|复制|允许 |允许 | 允许| 允许|
+|在容器 <sup>2</sup> 中移动|允许 |允许 | 允许| 允许|
 |围绕容器 <sup>2</sup> 移动|允许 |如果从未解锁，则允许 | **阻止** | **阻止**|
 |打开/读取|允许 |允许 | 允许| Allowed|
 |更改标签|允许 |允许 - 仅容器管理员 | 允许 - 仅容器管理员| **已阻止**
@@ -98,7 +98,7 @@ ms.locfileid: "49905231"
 
 ![指明项未从 SharePoint 中删除的消息](../media/d0020726-1593-4a96-b07c-89b275e75c49.png)
 
-<sup>2</sup>容器包括 SharePoint 文档库和 Exchange 邮箱。
+<sup>2</sup> 个容器包括 SharePoint 文档库、OneDrive 帐户和 Exchange 邮箱。
 
 >[!IMPORTANT] 
 > 合规性记录的最重要的差别是，在应用到内容后，任何人（哪怕是是全局管理员）都无法删除标签。 
