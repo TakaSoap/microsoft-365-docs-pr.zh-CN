@@ -488,6 +488,8 @@
               href: ./office-365-security/attack-simulation-training-payloads.md
             - name: 通过攻击模拟培训获得见解
               href: ./office-365-security/attack-simulation-training-insights.md
+            - name: 攻击模拟培训部署注意事项和常见问题解答
+              href: ./office-365-security/attack-simulation-training-faq.md
             - name: 用于配置 EOP 和 Defender for Office 365 安全性的建议设置
               href: ./office-365-security/recommended-settings-for-eop-and-office365-atp.md
             - name: 配置 EOP 的最佳做法
