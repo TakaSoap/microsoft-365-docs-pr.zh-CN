@@ -17,12 +17,12 @@ ms.collection:
 description: 管理员可以了解 Outlook for iOS 和 Outlook for Android 中的内置垃圾邮件（非垃圾邮件）和网络钓鱼电子邮件报告选项。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e3e3a2d77c978649e7496d09f78301add397fb9d
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: e6e63f534a9f9516c6e1a87ff82d5b0916d25778
+ms.sourcegitcommit: a6b998fef5bdb35ec6726c743a24fea721535fcd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50289169"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50509322"
 ---
 # <a name="report-junk-and-phishing-email-in-outlook-for-ios-and-android-in-exchange-online"></a>在 Exchange Online 中的 Outlook for iOS 和 Outlook for Android 中报告垃圾邮件和网络钓鱼电子邮件
 
@@ -33,7 +33,7 @@ ms.locfileid: "50289169"
 - [Microsoft Defender for Office 365 计划 1 和计划 2](office-365-atp.md)
 - [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
-在使用混合新式身份验证的 Exchange Online 或内部部署邮箱的 Microsoft 365 组织中，可以使用 Outlook for iOS 和 Outlook for Android 中的内置报告选项将误报 (良好电子邮件提交为垃圾邮件) 、漏报 (允许的) 错误电子邮件和钓鱼邮件到 Exchange Online Protection (EOP) 。 [](../../enterprise/hybrid-modern-auth-overview.md)
+在使用混合新式身份验证的 Exchange Online 或本地邮箱的 Microsoft 365 组织中，可以将标记为垃圾邮件) 的误报 (良好电子邮件、 (错误电子邮件允许的) 和网络钓鱼邮件提交到 Exchange Online Protection (EOP) 。 [](../../enterprise/hybrid-modern-auth-overview.md)
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>开始之前，你需要了解哪些信息
 

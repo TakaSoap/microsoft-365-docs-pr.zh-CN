@@ -16,12 +16,12 @@ ms.collection:
 description: 管理员可以了解如何在安全门户的租户允许/阻止列表中配置允许和阻止。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 960fbf26b610485fb46c935b04aedcc593b85752
-ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
+ms.openlocfilehash: 20e460f4e93f7b87faaead8b87ba561224e38938
+ms.sourcegitcommit: babbba2b5bf69fd3facde2905ec024b753dcd1b3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "50407246"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "50515204"
 ---
 # <a name="manage-the-tenant-allowblock-list"></a>管理租户允许/阻止列表
 
@@ -50,7 +50,7 @@ ms.locfileid: "50407246"
 
 - 使用文件的 SHA256 哈希值指定文件。 若要在 Windows 中查找文件的 SHA256 哈希值，在命令提示符中运行以下命令：
 
-  ```dos
+  ```console
   certutil.exe -hashfile "<Path>\<Filename>" SHA256
   ```
 
@@ -60,22 +60,26 @@ ms.locfileid: "50407246"
 
 - 租户允许/阻止列表最多允许 500 个 URL 条目和 500 个文件哈希条目。
 
-- 条目应在 15 分钟内处于活动状态。
+- 每个条目的最大字符数为：
+  - 文件哈希 = 64
+  - URL = 250
+
+- 条目应在 30 分钟内处于活动状态。
 
 - 默认情况下，租户允许/阻止列表中的条目将在 30 天后过期。 可以指定日期或将其设置为永不过期。
 
 - 若要连接到 Exchange Online PowerShell，请参阅[连接到 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)。 若要连接到独立 EOP PowerShell，请参阅[连接到 Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell)。
 
-- 您需要在 **Exchange Online** 中分配权限，然后才能执行本文中的过程：
+- 在 Exchange Online 网站中 **分配** 权限，才能执行本文中的步骤：
   - 若要在租户允许/阻止列表中添加和删除值，你需要是组织 **管理或****安全管理员角色组** 的成员。
   - 若要对租户允许/阻止列表进行只读访问，你需要是全局读者或安全读者 **角色组** 的成员。
 
   有关详细信息，请参阅 [Exchange Online 中权限](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo)。
 
-  **注意**：
-
-  - 将用户添加到 Microsoft 365 管理中心的相应 Azure Active Directory 角色会为用户提供Microsoft 365 中其他功能所需的权限。 有关详细信息，请参阅 [关于管理员角色](../../admin/add-users/about-admin-roles.md)。
-  - [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) 中的 **仅查看组织管理人员** 角色组也提供到该功能的只读访问。
+  > [!NOTE]
+  > 
+  > - 在 Microsoft 365 管理中心将用户添加到相应的 Azure Active Directory 角色后，将为用户提供所需的权限 _和_ Microsoft 365 中其他功能的所需权限。 有关详细信息，请参阅 [关于管理员角色](../../admin/add-users/about-admin-roles.md)。
+  > - [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) 中的 **仅查看组织管理人员** 角色组也提供到该功能的只读访问。
 
 ## <a name="use-the-security--compliance-center-to-create-url-entries-in-the-tenant-allowblock-list"></a>使用安全&合规中心在租户允许/阻止列表中创建 URL 条目
 
@@ -93,7 +97,7 @@ ms.locfileid: "50407246"
 
      - 验证该设置是否 (关闭) 并使用"过期"框指定条目 ![ ](../../media/scc-toggle-off.png) 的到期日期。 
 
-     或
+       或
 
      - 将开关向右移动以将条目配置为永不过期： ![切换开关打开](../../media/scc-toggle-on.png).
 
@@ -166,7 +170,7 @@ ms.locfileid: "50407246"
 
      - 验证该设置是否 (关闭) 并使用"过期"框指定条目 ![ ](../../media/scc-toggle-off.png) 的到期日期。 
 
-     或
+       或
 
      - 将开关向右移动以将条目配置为永不过期： ![切换开关打开](../../media/scc-toggle-on.png).
 
@@ -194,16 +198,16 @@ ms.locfileid: "50407246"
 New-TenantAllowBlockListItems -ListType <Url | FileHash> -Block -Entries <String[]> [-ExpirationDate <DateTime>] [-NoExpiration] [-Notes <String>]
 ```
 
-本示例为网站和contoso.com域添加一个阻止 URL 条目 (例如，contoso.com、www.contoso.com和xyz.abc.contoso.com) 。 因为我们不使用 ExpirationDate 或 NoExpiration 参数，所以条目将在 30 天后过期。
+本示例为网站和contoso.com域添加一个阻止 URL 条目 (例如，contoso.com、www.contoso.com和xyz.abc.contoso.com) 。 由于我们没有使用 ExpirationDate 或 NoExpiration 参数，因此条目将在 30 天后过期。
 
 ```powershell
-New-TenantAllowBlockListItem -ListType Url -Block -Entries ~contoso.com
+New-TenantAllowBlockListItems -ListType Url -Block -Entries ~contoso.com
 ```
 
 本示例为永不过期的指定文件添加阻止文件条目。
 
 ```powershell
-New-TenantAllowBlockListItem -ListType FileHash -Block -Entries "768a813668695ef2483b2bde7cf5d1b2db0423a0d3e63e498f3ab6f2eb13ea3","2c0a35409ff0873cfa28b70b8224e9aca2362241c1f0ed6f622fef8d4722fd9a" -NoExpiration
+New-TenantAllowBlockListItems -ListType FileHash -Block -Entries "768a813668695ef2483b2bde7cf5d1b2db0423a0d3e63e498f3ab6f2eb13ea3","2c0a35409ff0873cfa28b70b8224e9aca2362241c1f0ed6f622fef8d4722fd9a" -NoExpiration
 ```
 
 有关语法和参数的详细信息，请参阅[New-TenantAllowBlockListItems。](https://docs.microsoft.com/powershell/module/exchange/new-tenantallowblocklistitems)
@@ -463,11 +467,11 @@ Remove-TenantAllowBlockListItems -ListType Url -Ids "RgAAAAAI8gSyI_NmQqzeh-HXJBy
   - 1.2.3.4/b
   - 1.2.3.4/baaaa
 
-### <a name="examples-of-invalid-entries"></a>无效条目示例
+### <a name="examples-of-invalid-entries"></a>无效条目的示例
 
 以下条目无效：
 
-- **域值缺失或无效**：
+- **缺少或无效的域值**：
 
   - contoso
   - \*.contoso。\*

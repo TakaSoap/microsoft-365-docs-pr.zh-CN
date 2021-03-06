@@ -1,7 +1,7 @@
 ---
 title: Microsoft 365 Defender 的新增功能
 description: 列出 Microsoft 365 Defender 中的新增特性和功能
-keywords: Microsoft 威胁防护的新增功能， ga， 通用， 功能， 可用， 新增
+keywords: Microsoft 威胁防护中的新增功能， ga， 通常可用， 功能， 可用， 新增
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,29 +18,29 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 4e065ff4da80b50ea11ff2069e8938c59f16f962
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: 72c6ec814c5f3317f582cb4bfb21858677fbb7e1
+ms.sourcegitcommit: a6b998fef5bdb35ec6726c743a24fea721535fcd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50165987"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50509118"
 ---
 # <a name="whats-new-in-microsoft-365-defender"></a>Microsoft 365 Defender 的新增功能
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-> 想要体验 Microsoft 365 Defender？ 可以在[实验室环境中对其进行评估或在](https://aka.ms/mtp-trial-lab)[生产中运行试点项目](https://aka.ms/m365d-pilotplaybook)。
+> 想要体验 Microsoft 365 Defender？ 可以在 [实验室环境中对其进行评估，](https://aka.ms/mtp-trial-lab) 或在生产中运行 [您的试验项目](https://aka.ms/m365d-pilotplaybook)。
 >
 
 Microsoft 365 Defender (GA) 中通常提供以下功能。
 
 RSS 源：在此页面更新时收到通知，方法为将以下 URL 复制并粘贴到源阅读器中：
 ```http
-https://docs.microsoft.com/api/search/rss?search=%22Lists+the+new+features+and+functionality+in+Microsoft+Threat+Protection%22&locale=en-us
+https://docs.microsoft.com/api/search/rss?search=%22Lists+the+new+features+and+functionality+in+Microsoft+365+defender%22&locale=en-us
 ```
 
 ## <a name="february-2021"></a>2021 年 2 月
--  (预览) 增强[的 Microsoft https://security.microsoft.com) 365](https://security.microsoft.com)安全中心 (现在公开预览版中提供。 这一新体验将 Defender for Endpoint 和 Defender for Office 365 引入中心。 [了解有关更改后功能更多。](https://docs.microsoft.com/microsoft-365/security/mtp/overview-security-center)
+-  (预览) 增强[的 Microsoft https://security.microsoft.com) 365](https://security.microsoft.com)安全 (现在提供公共预览版。 这一全新体验将 Defender for Endpoint 和 Defender for Office 365 引入中心。 [了解有关更改功能更多信息](https://docs.microsoft.com/microsoft-365/security/mtp/overview-security-center)。
 
 ## <a name="september-2020"></a>2020 年 9 月
 - [IdentityDirectoryEvents 表](advanced-hunting-identitydirectoryevents-table.md) <br> 查找涉及运行 Active Directory 和 AD (本地域控制器) 。 此 [高级搜寻](advanced-hunting-overview.md) 架构表涵盖域控制器上的一系列与标识相关的事件和系统事件。
@@ -48,7 +48,7 @@ https://docs.microsoft.com/api/search/rss?search=%22Lists+the+new+features+and+f
 
 ## <a name="july-2020"></a>2020 年 7 月
 - [FileProfile () 函数](advanced-hunting-fileprofile-function.md) <br> 在高级搜寻查询中使用此函数，以使用全面的文件信息丰富结果。
-- [标识表应用程序表](advanced-hunting-schema-tables.md)<br> 通过高级搜寻架构中的[IdentityLogonEvents、IdentityQueryEvents](advanced-hunting-identitylogonevents-table.md)和[AppFileEvents](advanced-hunting-appfileevents-table.md)表了解身份验证事件、Active [Directory](advanced-hunting-identityqueryevents-table.md)查询和与应用相关的活动。
+- [标识表和应用表](advanced-hunting-schema-tables.md)<br> 通过高级搜寻架构中的[IdentityLogonEvents、IdentityQueryEvents](advanced-hunting-identitylogonevents-table.md)和[AppFileEvents](advanced-hunting-appfileevents-table.md)表了解身份验证事件、Active [Directory](advanced-hunting-identityqueryevents-table.md)查询和与应用相关的活动。
 - [转到查寻](advanced-hunting-go-hunt.md)<br> 快速透视从调查事件到检查特定事件、用户、设备或高级搜寻的其他实体类型。
 
 ## <a name="june-2020"></a>2020 年 6 月
@@ -57,7 +57,7 @@ https://docs.microsoft.com/api/search/rss?search=%22Lists+the+new+features+and+f
 - [检查高级搜寻中的记录](advanced-hunting-query-results.md#drill-down-from-query-results) <br> 使用新的详细信息面板快速检查查询结果中的记录。
 
 ## <a name="may-2020"></a>2020 年 5 月
-- [自定义检测](custom-detections-overview.md) <br> 使用高级搜寻查询可创建自定义检测规则，以自动监视和响应安全事件和系统状态。
+- [自定义检测](custom-detections-overview.md) <br> 使用高级搜寻查询创建自定义检测规则，以自动监视和响应安全事件和系统状态。
 
 ## <a name="february-2020"></a>2020 年 2 月
 - [事件](incidents-overview.md) <br> 准确了解攻击的开始位置和其他详细信息，以帮助你查看攻击的范围。
@@ -65,6 +65,6 @@ https://docs.microsoft.com/api/search/rss?search=%22Lists+the+new+features+and+f
 - [高级搜寻增强功能](advanced-hunting-overview.md) <br> 使用 Kusto 查询语言和安全优化架构，在新式工作区中主动搜寻威胁。
 
 ## <a name="march-2019"></a>2019 年 3 月
-- 高级搜寻 <br> 各种搜寻功能的登录页面，可让你主动查找影响电子邮件和数据、设备和标识的威胁。
-- [Microsoft 安全功能分数](microsoft-secure-score.md) <br> 组织安全状况的度量，数字越高，表示采取的改进措施就越高。 遵循安全分数建议可保护组织免受威胁。 
+- 高级搜寻 <br> 各种搜寻功能的登陆页面，可让你主动查找影响电子邮件和数据、设备和标识的威胁。
+- [Microsoft 安全功能分数](microsoft-secure-score.md) <br> 组织安全状况的度量，数字越高，表示采取改进措施更多。 遵循安全分数建议可保护组织免受威胁。 
 - [报表](monitoring-and-reporting.md) <br>  功能丰富的卡片涵盖安全分析师和管理员在日常操作中跟踪的一系列领域。

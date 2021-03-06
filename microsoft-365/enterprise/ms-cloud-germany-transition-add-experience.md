@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 摘要：从德国 Microsoft 云 (德国 Microsoft 云) 迁移到新的德国数据中心区域中的 Office 365 服务时的其他客户体验信息。
-ms.openlocfilehash: 26db69583bac68723d5d57b07abb856c8190d9b1
-ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
+ms.openlocfilehash: 152e9e8d8f4550b9095a7b22e1bcd4cf30fa620f
+ms.sourcegitcommit: babbba2b5bf69fd3facde2905ec024b753dcd1b3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50454463"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "50515192"
 ---
 # <a name="migration-phases-actions-and-impacts-for-the-migration-from-microsoft-cloud-deutschland-advanced"></a>迁移阶段操作和影响从 Microsoft 云德国 (高级)  
 
@@ -52,7 +52,7 @@ ms.locfileid: "50454463"
 
 | 步骤 (步骤)  | 说明 | 适用于 | 影响 |
 |:-------|:-----|:-------|:-------|
-| 新的德国区域将添加到现有组织设置中，邮箱将移动到 Office 365 服务。 | Exchange Online 配置将新的德国本地区域添加到转换组织。 此 Office 365 服务区域设置为默认区域，这使内部负载平衡服务能够将邮箱重新分发到 Office 365 服务中的相应默认区域。 在此转换中，位于德国 (Office 365 服务) 位于同一组织中，并且可以使用任一 URL 终结点。 |  Exchange Online | 如果用户邮箱已迁移，但尚未迁移管理员邮箱，或者反之亦然，则管理员将无法运行 **Set-UserPhoto（PowerShell** cmdlet）。 在这种情况下，管理员必须在使用以下语法设置连接期间传递其他 `ConnectionUri` 字符串： <br><br> `https://outlook.office.de/PowerShell-LiveID?email=<user_email>` <br><br> 其中 `<user_email>` ，是需要通过使用 **Set-UserPhoto** 更改其照片的用户的电子邮件 ID 的占位符。 |
+| 新的德国区域将添加到现有组织设置中，邮箱将移动到 Office 365 服务。 | Exchange Online 配置将新的德国本地区域添加到转换组织。 此 Office 365 服务区域设置为默认，这使内部负载平衡服务能够将邮箱重新分发到 Office 365 服务中的相应默认区域。 在此转换中，位于德国 (Office 365 服务) 位于同一组织中，并且可以使用任一 URL 终结点。 |  Exchange Online | 如果用户邮箱已迁移，但尚未迁移管理员邮箱，或者反之亦然，则管理员将无法运行 **Set-UserPhoto（PowerShell** cmdlet）。 在这种情况下，管理员必须在使用以下语法设置连接期间传递其他 `ConnectionUri` 字符串： <br><br> `https://outlook.office.de/PowerShell-LiveID?email=<user_email>` <br><br> 其中 `<user_email>` ，是需要通过使用 **Set-UserPhoto** 更改其照片的用户的电子邮件 ID 的占位符。 |
 |||||
 
 如果你使用的是混合本地部署：
@@ -61,27 +61,6 @@ ms.locfileid: "50454463"
 |:-------|:-----|:-------|:-------|
 |停止或删除邮箱的任何载入或载出移动。  | 这可确保移动请求不会失败并出现错误。 | 混合部署本地部署 (Exchange Online)  | 必需操作。 如果不这样做，可能会导致服务或软件客户端出现故障。 |
 |||||
-
-### <a name="dynamics-phase-8-of-9"></a>Dynamics (Phase 8 of 9) 
-
-| 步骤 (步骤)  | 说明 | 适用于 | 影响 |
-|:-------|:-----|:-------|:-------|
-| Microsoft Dynamics 资源 | 使用 Microsoft Dynamics 的客户将参与工程或 FastTrack，以将 Dynamics 转换为 Office 365 服务实例。* | Microsoft Dynamics 365 客户 | - 迁移后，管理员验证组织。 <br><br> - 管理员在必要时修改工作流。 <br><br> - 管理员会在适当时清除 AdminOnly 模式。 <br><br> - 管理员根据情况从 _沙_ 盒更改组织类型 <br><br> - 通知最终用户新 URL 以访问组织 (实例) 。 <br><br> - 更新到新终结点 URL 的任何入站连接。 <br><br> - 在转换期间，Dynamics 服务将不可用。 <br><br> - 用户需要在每个组织迁移后验证组织运行状况和功能。  |
-|||||
-
-\* () Microsoft Dynamics 365 的客户必须按照提供的迁移过程定义，在此迁移方案中采取措施。  (ii) 操作失败将意味着 Microsoft 无法完成迁移。  (iii) 如果 Microsoft 由于客户的不作为无法完成迁移，则客户的订阅将于 2021 年 10 月 29 日到期。 
-
-
-### <a name="power-bi-phase-8-of-9"></a>Power BI (阶段 8/9) 
-
-| 步骤 (步骤)  | 说明 | 适用于 | 影响 |
-|:-------|:-----|:-------|:-------|
-| Power BI 资源的迁移 | 在手动触发现有 PBI 迁移工具将 Power BI 转换为 Office 365 服务实例后，工程或 FastTrack 将让使用 Microsoft Power BI 的客户参与。\*\* | Microsoft Power BI 客户 | - 不会转换以下 Power  BI 项，并且必须重新创建这些项目： <br><br> - 实时数据集 (，例如流式处理或推送) 。 <br> - Power BI 本地数据网关配置和数据源。 <br> - 基于实时数据集构建的报告在迁移后将不可用，需要重新创建。 <br><br> - Power BI 服务在转换期间将不可用。 服务的不可用时间不应超过 24 小时。 <br><br> - 迁移后，用户需要使用 Power BI 服务重新配置数据源及其本地数据网关。  在执行此操作之前，用户将无法使用这些数据源来针对这些数据源执行计划刷新和/或直接查询。 <br><br> - 无法迁移容量和高级工作区。 客户需要在迁移之前删除所有容量，在迁移后重新创建它们。 将工作区移回所需的容量。  |
-|||||
-
-\*\* (我) Microsoft Power BI 的客户必须按照提供的迁移过程定义，在此迁移方案中采取措施。  (ii) 操作失败将意味着 Microsoft 无法完成迁移。  (iii) 如果 Microsoft 由于客户的不作为无法完成迁移，则客户的订阅将于 2021 年 10 月 29 日到期。 
-
-
 
 ## <a name="during-migration"></a>在迁移过程中
 
@@ -99,7 +78,7 @@ ms.locfileid: "50454463"
 
 | 步骤 (步骤)  | 说明 | 适用于 | 影响 |
 |:-------|:-----|:-------|:-------|
-| 在迁移过程中，电子数据展示搜索将失败或返回已迁移的 SharePoint Online、OneDrive for Business 和 Exchange Online 位置的 0 个结果。 | 在迁移过程中，客户可以在安全与合规中心（包括内容搜索）&案例[、保留、搜索和](https://docs.microsoft.com/microsoft-365/compliance/manage-legal-investigations)[导出](https://docs.microsoft.com/microsoft-365/compliance/search-for-content)。  但是，针对已迁移的 SharePoint Online、OneDrive for Business 和 Exchange Online 位置的搜索将返回 0 个结果或生成错误。 有关修正，请参阅"影响 _"_ 列。 | 使用电子数据展示的所有客户 |  如果搜索在迁移过程中返回 0 个结果或错误，请对 SharePoint Online 执行以下操作： <br><br>  按照从 OneDrive 或 SharePoint 下载文件和文件夹中的说明，直接从 SharePoint Online/OneDrive for Business 网站 [下载网站](https://support.office.com/article/download-files-and-folders-from-onedrive-or-sharepoint-5c7397b7-19c7-4893-84fe-d02e8fa5df05)。 此方法需要 SharePoint Online 管理员权限或网站的只读权限。 <br><br> 如果超出限制，如从 OneDrive 或 [SharePoint](https://support.office.com/article/download-files-and-folders-from-onedrive-or-sharepoint-5c7397b7-19c7-4893-84fe-d02e8fa5df05)下载文件和文件夹所解释，客户可以按照在将 [SharePoint](https://support.office.com/article/sync-sharepoint-files-with-the-new-onedrive-sync-app-6de9ede8-5b6e-4503-80b2-6190f3354a88)和 Teams 文件与计算机同步中的指南使用 OneDrive for Business 同步客户端。 <br><br> - Exchange Online <br><br> - [In-Place eDiscovery in Exchange Server](https://docs.microsoft.com/Exchange/policy-and-compliance/ediscovery/ediscovery) |
+| 在迁移过程中，电子数据展示搜索将失败或返回已迁移的 SharePoint Online、OneDrive for Business 和 Exchange Online 位置的 0 个结果。 | 在迁移过程中，客户可以在安全与合规中心（包括内容搜索）&案例[、保留、搜索和](https://docs.microsoft.com/microsoft-365/compliance/manage-legal-investigations)[导出](https://docs.microsoft.com/microsoft-365/compliance/search-for-content)。  但是，针对已迁移的 SharePoint Online、OneDrive for Business 和 Exchange Online 位置进行搜索将返回 0 个结果或生成错误。 有关修正，请参阅"影响 _"_ 列。 | 使用电子数据展示的所有客户 |  如果搜索在迁移过程中返回 0 个结果或错误，请对 SharePoint Online 执行以下操作： <br><br>  按照从 OneDrive 或 SharePoint 下载文件和文件夹中的说明，直接从 SharePoint Online/OneDrive for Business 网站 [下载网站](https://support.office.com/article/download-files-and-folders-from-onedrive-or-sharepoint-5c7397b7-19c7-4893-84fe-d02e8fa5df05)。 此方法需要 SharePoint Online 管理员权限或网站的只读权限。 <br><br> 如果超出限制，如从 OneDrive 或 [SharePoint](https://support.office.com/article/download-files-and-folders-from-onedrive-or-sharepoint-5c7397b7-19c7-4893-84fe-d02e8fa5df05)下载文件和文件夹所解释，客户可以按照将 [SharePoint](https://support.office.com/article/sync-sharepoint-files-with-the-new-onedrive-sync-app-6de9ede8-5b6e-4503-80b2-6190f3354a88)和 Teams 文件与计算机同步中的指南使用 OneDrive for Business 同步客户端。 <br><br> - Exchange Online <br><br> - [就地电子数据展示Exchange Server](https://docs.microsoft.com/Exchange/policy-and-compliance/ediscovery/ediscovery) |
 |||||
 
 
@@ -115,18 +94,18 @@ ms.locfileid: "50454463"
 
 ### <a name="azure-ad-phase-9-of-9"></a>Azure AD (阶段 9/9) 
 
-对于混合：
+对于混合 Azure 客户：
 
 | 步骤 (步骤)  | 说明 | 适用于 | 影响 |
 |:-------|:-----|:-------|:-------|
 | 更新 Azure AD Connect。 | 完成到 Azure AD 的剪切后，组织将完全使用 Office 365 服务，并且不再连接到德国 Microsoft 云。 此时，客户需要确保增量同步过程已完成，然后，在注册表路径中将字符串值从 `AzureInstance` 3 (Microsoft Cloud Deutschland) 更改为 0。 `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Azure AD Connect` | 已连接 Azure AD 的混合组织 | 更改 `AzureInstance` 注册表项的值。 如果不这样做，将导致在 Microsoft 云德国终结点不再可用后无法同步对象。 |
 |||||
 
-对于联合身份验证：
+对于使用联合身份验证的客户：
 
 | 步骤 (步骤)  | 说明 | 适用于 | 影响 |
 |:-------|:-----|:-------|:-------|
-| 从 Microsoft 云德国 AD FS 中删除信赖方信任。 | 完成到 Azure AD 的剪切后，组织将完全使用 Office 365 服务，并且不再连接到德国 Microsoft 云。 此时，客户需要删除对 Microsoft 云德国终结点的信赖方信任。 只有在客户没有将 Azure AD 用作标识提供程序或 IdP (时，才能) 。 | 联合身份验证组织 | 无。 |
+| 从 Microsoft 云德国 AD FS 中删除信赖方信任。 | 完成到 Azure AD 的剪切后，组织将完全使用 Office 365 服务，并且不再连接到德国 Microsoft 云。 此时，客户需要删除对 Microsoft 云德国终结点的信赖方信任。 只有在客户没有应用程序将 Azure AD 用作标识提供程序或 IdP (时，才能) 。 | 联合身份验证组织 | 无。 |
 |||||
 
 对于 Azure AD：
@@ -136,7 +115,7 @@ ms.locfileid: "50454463"
 | 如果原始请求未获得批准，则需要再次请求迁移前 30 天内加入 Azure AD 组的请求。 | 如果迁移前 30 天内未批准这些请求，最终用户客户将需要使用访问面板提交重新加入 Azure AD 组的请求。 | 迁移前 30 天内未批准 Azure AD 组审批请求的最终用户 |  作为最终用户： <ol><li>导航到 [Access 面板](https://account.activedirectory.windowsazure.com/r#/joinGroups)。</li><li>查找在迁移前 30 天内等待其成员身份审批的 Azure AD 组。</li><li>再次请求加入 Azure AD 组。</li></ol> 无法批准在迁移前 30 天内加入活动组的请求，除非在迁移后重新请求。 |
 |||||
 
-对于 DNS：
+对于客户管理的 DNS 区域：
 
 | 步骤 (步骤)  | 说明 | 适用于 | 影响 |
 |:-------|:-----|:-------|:-------|
@@ -147,7 +126,7 @@ ms.locfileid: "50454463"
 
 | 步骤 (步骤)  | 说明 | 适用于 | 影响 |
 |:-------|:-----|:-------|:-------|
-| 更新 Office 365 服务终结点的合作伙伴和第三方服务。 | - 需要更新指向 Office 365 Germany 的第三方服务和合作伙伴，以指向 Office 365 服务终结点。 示例：重新注册库应用版本（如果可用）以与供应商和合作伙伴一致。 <br><br> - 将利用 Graph API 的所有自定义应用程序指向 `graph.microsoft.de` `graph.microsoft.com` 。 其他具有已更改终结点的 API 也需要更新（如果已利用）。 <br><br> - 更改所有非第一方企业应用程序以重定向到全球终结点。  | 所有 Office 客户 | 必需操作。 如果不这样做，可能会导致服务或软件客户端出现故障。 |
+| 更新 Office 365 服务终结点的合作伙伴和第三方服务。 | - 需要更新指向 Office 365 Germany 的第三方服务和合作伙伴，以指向 Office 365 服务终结点。 示例：重新注册库应用版本（如果可用）以与供应商和合作伙伴一致。 <br><br> - 将利用 Graph API 的所有自定义应用程序指向 `graph.microsoft.de` `graph.microsoft.com` 。 如果利用，还需要更新具有已更改终结点的其他 API。 <br><br> - 更改所有非第一方企业应用程序以重定向到全球终结点。  | 所有 Office 客户 | 必需操作。 如果不这样做，可能会导致服务或软件客户端出现故障。 |
 |||||
 
 ### <a name="sharepoint-online-phase-4-of-9"></a>SharePoint Online (阶段 4/9) 
@@ -164,7 +143,7 @@ ms.locfileid: "50454463"
 
 | 步骤 (步骤)  | 说明 | 适用于 | 影响 |
 |:-------|:-----|:-------|:-------|
-| 针对 Office 365 服务重新 (HCW) 混合配置向导。 | 现有 HCW 配置旨在支持 Microsoft 云德国。 随着 Exchange 服务的迁移完成，我们将本地配置与 Microsoft 云德国分离。 | 运行混合部署的 Exchange Online 客户 | - 必需操作。 如果不这样做，可能会导致服务或软件客户端出现故障。 在 Exchange 邮箱迁移 (5 天或 5) ，通知客户端应停止并删除其邮箱的任何载入或载出移动。  如果没有，他们将在移动请求中看到错误。 <br><br> - Exchange 邮箱迁移完成后，通知客户端可以恢复载入和载出移动。 <br> 在将 Exchange 从 Microsoft 云德国迁移到 Office 365 服务期间运行 **Test-MigrationServerAvailabiilty（PowerShell** cmdlet）可能不起作用。 但是，迁移完成后它将正常工作。 <br><br> 如果客户端在迁移邮箱后遇到凭据或授权问题，则用户可以通过运行或通过使用 Exchange 控制面板 (ECP) 来在迁移终结点 `Set-MigrationEndpoint endpointName -Credential $(Get-Credential)` 中重新输入其本地管理员凭据。  |
+| 针对 Office 365 服务重新 (HCW) 混合配置向导。 | 现有 HCW 配置旨在支持 Microsoft 云德国。 随着 Exchange 服务的迁移完成，我们将本地配置与 Microsoft 云德国分离。 | 运行混合部署的 Exchange Online 客户 | - 必需操作。 如果不这样做，可能会导致服务或软件客户端出现故障。 在 Exchange 邮箱迁移 (5 天或 5 天以上) ，通知客户端应停止并删除其邮箱的任何载入或载出移动。  如果没有，他们将在移动请求中看到错误。 <br><br> - Exchange 邮箱迁移完成后，通知客户端可以恢复载入和载出移动。 <br> 在将 Exchange 从 Microsoft 云德国迁移到 Office 365 服务期间运行 **Test-MigrationServerAvailabiilty（PowerShell** cmdlet）可能不起作用。 但是，迁移完成后它将正常工作。 <br><br> 如果客户端在迁移邮箱后遇到凭据或授权问题，则用户可以通过运行或通过使用 Exchange 控制面板 (ECP) 来在迁移终结点 `Set-MigrationEndpoint endpointName -Credential $(Get-Credential)` 中重新输入其本地管理员凭据。  |
 
 对于电子数据展示：
 
@@ -180,7 +159,7 @@ ms.locfileid: "50454463"
 
 [了解迁移阶段的操作和影响](ms-cloud-germany-transition-phases.md)
 
-## <a name="more-information"></a>更多信息
+## <a name="more-information"></a>详细信息
 
 入门：
 
