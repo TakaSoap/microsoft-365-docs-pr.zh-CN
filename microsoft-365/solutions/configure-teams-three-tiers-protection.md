@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-jun2020
 ms.assetid: 1d51bd87-17bf-457c-b698-61821de3afa0
 description: 了解如何使用三层保护配置 Teams 以实现更好的文件共享安全性，从而平衡安全性和易于协作。
-ms.openlocfilehash: cb49c35cc1c485d45656b1716d385cf626322ce8
-ms.sourcegitcommit: 1beaf89d2faa32f11fe1613be2fa2b31c4bc4a91
+ms.openlocfilehash: d41effb6db9f8995c3c878523babf200ab9af762
+ms.sourcegitcommit: a6b998fef5bdb35ec6726c743a24fea721535fcd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "49602003"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50509238"
 ---
 # <a name="configure-teams-with-three-tiers-of-protection"></a>配置具有三层保护的 Teams
 
@@ -114,6 +114,8 @@ ms.locfileid: "49602003"
 ## <a name="access-from-unmanaged-devices"></a>非托管设备的访问
 
 对于敏感层和高度敏感层，我们使用敏感度标签限制对 SharePoint 内容的访问。 Azure AD 条件访问提供很多用于确定用户如何访问 Microsoft 365 的选项，包括基于位置、风险、设备合规性和其他因素的限制。 建议阅读[什么是条件访问？](https://docs.microsoft.com/azure/active-directory/conditional-access/overview)，并考虑哪些其他策略可能适用于你的组织。
+
+请注意，来宾通常没有组织管理的设备。 如果在任何层中允许来宾，请考虑他们将使用哪些设备访问团队和网站并相应地设置非托管设备策略。
 
 ## <a name="next-step"></a>后续步骤
 

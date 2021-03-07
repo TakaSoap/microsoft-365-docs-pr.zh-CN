@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: 了解如何创建内容中心。
-ms.openlocfilehash: 4377cbfbda8572fe9e08a079a05146961105298b
-ms.sourcegitcommit: 162c01dfaa2fdb3225ce4c24964c1065ce22ed5d
+ms.openlocfilehash: 3544bbef7cf2f898733c7aaad620487098a2dd24
+ms.sourcegitcommit: babbba2b5bf69fd3facde2905ec024b753dcd1b3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2021
-ms.locfileid: "49976527"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "50515132"
 ---
 # <a name="create-a-content-center-in-microsoft-sharepoint-syntex"></a>在 Microsoft SharePoint Syntex 中创建内容中心
 
@@ -35,18 +35,27 @@ ms.locfileid: "49976527"
 [设置](set-up-content-understanding.md)期间创建默认内容中心。 但 SharePoint 管理员也可根据需要选择创建其他中心。 虽然单个内容中心对于你想汇总所有模型活动的环境可能不错，但你可能希望组织中多个部门有其他中心，这可能对其模型有不同需求和权限要求。
 
 > [!NOTE]
-> SharePoint 管理员可以创建内容中心网站，就像通过管理中心网站预配面板 [创建任何其他 SharePoint 网站](https://docs.microsoft.com/sharepoint/create-site-collection) 一样。
+> 在 [Microsoft 365 多地理环境](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-multi-geo)中，如果中心位置中具有一个默认内容中心，则只能提供该位置内的模型活动汇总。 当前无法在多地理环境中跨服务器场边界汇总模型活动。 
+
+
+## <a name="create-a-content-center"></a>创建内容中心
+
+SharePoint 管理员可以创建内容中心网站，就像通过管理中心网站预配面板 [创建任何其他 SharePoint 网站](https://docs.microsoft.com/sharepoint/create-site-collection) 一样。
 
 创建新的内容中心：
 
 1. 在 Microsoft 365 管理中心，转到 SharePoint 管理中心。
+
 2. 在 SharePoint 管理中心的“**网站**”下，选择“**活动网站**”。
+
 3. 在“**活动网站**”页面上，单击“**创建**”，然后选择“**其他选项**”。
+
 4. 在“**选择模板**”菜单上，选择“**内容中心**”。
+
 5. 对于新网站，提供 **网站名称**、**主管理员** 和 **语言**。</br>
 
-> [!NOTE] 
-> 可选择一个内容中心网站呈现任意可用语言，但请注意，当前模型仅可为英语文件创建。 另请注意，与其他网站模板一样，网站创建后，默认网站语言不可编辑。</br>
+   > [!NOTE] 
+   > 可选择一个内容中心网站呈现任意可用语言，但请注意，当前模型仅可为英语文件创建。 另请注意，与其他网站模板一样，网站创建后，默认网站语言不可编辑。</br>
 
 6. 选择“**已完成**”。
  
