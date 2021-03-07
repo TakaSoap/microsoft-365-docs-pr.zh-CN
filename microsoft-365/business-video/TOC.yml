@@ -87,6 +87,8 @@
       items:
         - name: Bookings 概述
           href: overview-bookings.md
+        - name: 通过 Microsoft 列表跟踪业务信息
+          href: track-info-lists.md
         - name: 计划活动
           href: plan-event.md
     - name: 管理服务
