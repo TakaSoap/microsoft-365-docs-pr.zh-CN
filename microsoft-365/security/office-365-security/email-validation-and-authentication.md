@@ -19,12 +19,12 @@ localization_priority: Priority
 description: 管理员可了解 EOP 如何使用电子邮件身份验证（SPF、DKIM 和 DMARC）来帮助防止欺骗、网络钓鱼和垃圾邮件。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d1e0fbe8a00b17e871adf65f86a337a0a94493ed
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 87677608431446a4bdfe6e16ae1204163a4f582a
+ms.sourcegitcommit: a6b998fef5bdb35ec6726c743a24fea721535fcd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50286509"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50509190"
 ---
 # <a name="email-authentication-in-eop"></a>EOP 中的电子邮件身份验证
 
@@ -60,7 +60,7 @@ DMARC 通过检查邮件中的 **发件人** 地址来防止欺骗。 **发件�
 
 发布强电子邮件身份验证策略的中小型公司的比例更小。 对于北美和西欧以外的电子邮件域，该数字甚至更小。
 
-缺乏强大的电子邮件身份验证策略非同小可。 组织可能不了解电子邮件身份验证的工作原理，但攻击者完全了解，这就使他们占据了优势。 由于网络钓鱼问题，而且强电子邮件身份验证策略的采用范围有限，因此 Microsoft 将使用 *隐式电子邮件身份验证* 来检查入站电子邮件。
+缺乏强大的电子邮件身份验证策略非同小可。 虽然组织可能不知道电子邮件身份验证的工作方式，但是攻击者完全了解，并且会利用电子邮件身份验证的优势。 由于网络钓鱼问题，而且强电子邮件身份验证策略的采用范围有限，因此 Microsoft 将使用 *隐式电子邮件身份验证* 来检查入站电子邮件。
 
 隐式电子邮件身份验证是对常规电子邮件身份验证策略的扩展。 这些扩展包括发件人信誉、发件人历史记录、收件人历史记录、行为分析和其他高级技巧。 如果没有这些扩展的其他信号，从不使用电子邮件身份验证策略的域发送的邮件将被标记为欺骗。
 

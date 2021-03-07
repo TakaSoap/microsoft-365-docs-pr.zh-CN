@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: 了解 Microsoft SharePoint Syntex 中的表单处理
-ms.openlocfilehash: 4a6ecc9e6eaca6f0b61f8c04b67eabb29674f6bd
-ms.sourcegitcommit: 78f48304f990e969a052fe6536b2e8d6856e1086
+ms.openlocfilehash: 1dba8828a158a5163017ee5f37735f44e974274c
+ms.sourcegitcommit: babbba2b5bf69fd3facde2905ec024b753dcd1b3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50242442"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "50515156"
 ---
 # <a name="form-processing-overview"></a>表单处理概述
 
@@ -45,6 +45,13 @@ Office 365 管理员需要为 SharePoint 文档库[启用表单处理](https://d
 ### <a name="file-limitations"></a>文件限制
 
 使用表单处理模型时，请确保注意[文件使用的要求和限制](https://docs.microsoft.com/ai-builder/form-processing-model-requirements)。
+
+### <a name="multi-geo-environments"></a>多地理环境
+
+在 [Microsoft 365 多地理环境](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-multi-geo)中设置 SharePoint Syntex 时，只能将其配置为在中心位置使用表单处理。 如果要在卫星位置使用表单处理，请联系 Microsoft 支持人员。
+
+
+
 
 
 

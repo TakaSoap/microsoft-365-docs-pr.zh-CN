@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.author: jaimeo
 ms.localizationpriority: normal
-ms.openlocfilehash: 02f12174ef3b8a55f9642bba41c845952b1c1c48
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: 141eb16ae77c44c51358c07a74f5050eb07dc26f
+ms.sourcegitcommit: a6b998fef5bdb35ec6726c743a24fea721535fcd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47950540"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50509274"
 ---
 # <a name="get-started-with-microsoft-managed-desktop"></a>Microsoft 托管桌面入门
 
@@ -21,7 +21,7 @@ ms.locfileid: "47950540"
 > 这是推荐的执行顺序，但你也可以进行一些灵活调整。
 
 1. [在管理门户中添加和验证管理员联系人](add-admin-contacts.md)
-2. [调整条件访问](conditional-access.md)
+2. [注册后调整设置](conditional-access.md)
 3. [分配许可证](assign-licenses.md)
 4. [部署 Intune 公司门户](company-portal.md)
 5. [启用企业状态漫游](enterprise-state-roaming.md)

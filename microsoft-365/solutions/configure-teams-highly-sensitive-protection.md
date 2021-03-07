@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: 了解如何部署具有高度敏感数据保护的团队。
-ms.openlocfilehash: 2679a8a0bd8cf5cc3d35d517e8a44921fc4fdbc1
-ms.sourcegitcommit: 7ecd10b302b3b3dfa4ba3be3a6986dd3c189fbff
+ms.openlocfilehash: 7e746ebc81d1ccd9aea2953fd42004715f8d7819
+ms.sourcegitcommit: a6b998fef5bdb35ec6726c743a24fea721535fcd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "49921130"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50509262"
 ---
 # <a name="configure-teams-with-protection-for-highly-sensitive-data"></a>配置具有高度敏感数据保护的团队
 
@@ -79,7 +79,7 @@ ms.locfileid: "49921130"
 17. 单击“**下一步**”。
 18. 在“**定义外部共享和设备权限设置**”页面中，选择“**从标记的 SharePoint 站点控制外部共享**”。
 19. 如果当前允许来宾访问，在“**无法共享的内容**”下选择“**新的和当前来宾**”；如果不允许，则选择“**仅组织中的人员**”。
-20. 在“**未托管的设备的访问**”下，选择“**阻止访问**”。
+20. 在“**未托管的设备的访问**”下，选择“**阻止访问**”。 （如果允许来宾且其没有托管设备，建议选择 **仅允许仅 Web 访问"**。）
 21. 单击“**下一步**”。
 22. 在“**数据库列自动标记**”页面中，单击“**下一步**”。
 23. 单击“**创建标签**”，然后单击“**完成**”。

@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: article
 description: 打开对 SharePoint 和 OneDrive 中标记和加密的文档启用共同创作和自动保存的设置。
-ms.openlocfilehash: 3946fa5a08011cc98e8dfad921a08ca0fa77af7a
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: d26696530ed86e6608b6473fead0775fb07a060b
+ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/04/2021
-ms.locfileid: "50423859"
+ms.locfileid: "50454633"
 ---
 # <a name="enable-co-authoring-for-files-encrypted-with-sensitivity-labels"></a>为使用敏感度标签加密的文件启用共同创作
 
@@ -36,6 +36,8 @@ ms.locfileid: "50423859"
 如果不为租户启用此设置，用户必须在使用 Office 桌面应用时签出存储在 SharePoint 或 OneDrive 中的加密文档。 因此，他们无法实时协作。 或者，当为 SharePoint 和 OneDrive 中的 Office [启用敏感度标签时，必须使用 Office 网页](sensitivity-labels-sharepoint-onedrive-files.md)。
 
 此外，启用此功能可实现 [和](https://support.office.com/article/what-is-autosave-6d6bd723-ebfd-4e40-b5f6-ae6e8088f7a5) 的文件都支持自动保存和自动保存功能。
+
+若要阅读发布公告，请参阅文章《宣布 [Microsoft 信息保护加密文档共同创作》并标记](https://techcommunity.microsoft.com/t5/microsoft-security-and/announcing-co-authoring-on-microsoft-information-protection/ba-p/2164162)。
 
 ## <a name="metadata-changes-for-sensitivity-labels"></a>敏感度标签的元数据更改
 
@@ -80,16 +82,16 @@ ms.locfileid: "50423859"
 
 - 必须为租户启用 [SharePoint 和 OneDrive](sensitivity-labels-sharepoint-onedrive-files.md) 敏感度标签。 如果尚未启用此功能，则当选择为具有敏感度标签的文件启用共同创作的设置时，将自动启用此功能。
 
-- 租户中所有应用、服务和操作工具必须支持用于标记元数据 [的新](#metadata-changes-for-sensitivity-labels)：
+- 适用于企业的 Microsoft 365 应用：
+    - **Windows**[：拥有最低内部版本 16.0.13801.20182 或 [Beta 频道](https://office.com/insider) 最低版本 16.0.13819.20006 的](https://office.com/insider) 当前频道（预览版）
+    - **macOS**： [Beta](https://office.com/insider) 16.47.218.0 最低内部版本
+    - **iOS**：尚不支持
+    - **Android**：尚不支持
+
+- 租户中所有应用、服务和操作工具必须支持用于标记元数据 [的新](#metadata-changes-for-sensitivity-labels)。 如果你使用以下任一方法，请检查所需的最低版本：
     
-    - **适用于企业的 Microsoft 365 应用：**
-        - Windows：最低版本为16.0.13801.20182的[当前频道（预览版）](https://office.com/insider)，或最低版本为16.0.13819.20006的[Beta频道](https://office.com/insider)
-        - macOS： [版本](https://office.com/insider) 16.47.218.0 提供 Beta 频道版本
-        - iOS：尚不支持
-        - Android：尚不支持
-    
-    - **Azure 信息保护统一标签客户端和扫描仪：** 
-        - 可从 [Microsoft 下载中心](https://www.microsoft.com/en-us/download/details.aspx?id=53018) 安装的公共预览版本（安装名称 AzInfoProtection_2.10.46_CoAuthoring_PublicPreview.exe）和上一项中列出的适用于 Windows 的 Microsoft 365 企业版应用之一。
+    - **Azure 信息保护统一标签客户端和扫描仪：**
+        - 可从 [Microsoft 下载中心安装的公共预览版本（AzInfoProtection_2.10.46_CoAuthoring_PublicPreview.exe）](https://www.microsoft.com/en-us/download/details.aspx?id=53018)
     
     - **适用于 Windows 或 macOS 的 OneDrive 同步应用：**
         - 最低版本 19.002.0121.0008
@@ -144,9 +146,9 @@ ms.locfileid: "50423859"
 
 1. 使用以下链接，以测试租户的全局管理员角色登录 Microsoft 365 合规中心：
     
-    ````
+    ```http
     https://compliance.microsoft.com/co-authoring_for_files_with_sensitivity_labels
-    ````
+    ```
     此链接将直接进入租户设置，为具有敏感度标签 **创建共同**。
 
     > [!IMPORTANT]

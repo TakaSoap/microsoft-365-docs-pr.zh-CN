@@ -23,12 +23,12 @@ search.appverid:
 ms.assetid: 8f0454b2-f51a-4d9c-bcde-2c48e41621c6
 description: 了解如何为你的组织设置多重身份验证。
 monikerRange: o365-worldwide
-ms.openlocfilehash: 5ea367e64108e80ee7429ec700cf2ac0551aeab2
-ms.sourcegitcommit: b88ffaf3409e02a9847f030f8468f96d36efa398
+ms.openlocfilehash: d08ef54c545809bbb2277f8d0a8471245400a3ac
+ms.sourcegitcommit: babbba2b5bf69fd3facde2905ec024b753dcd1b3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "50105147"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "50514964"
 ---
 # <a name="set-up-multi-factor-authentication"></a>设置多重身份验证
 
@@ -81,10 +81,11 @@ ms.locfileid: "50105147"
 
 ### <a name="turn-on-modern-authentication-for-your-organization"></a>为你的组织启用新式验证
 
-对于大多数订阅来说，新式验证将自动被启用，但如果你在很久前购买了订阅，则可能不会。 必须先启用该功能，然后 MFA 才能使用 Office 应用适当地工作。
+对于大多数订阅，新式验证会自动启用，但如果在 2017 年 8 月之前购买了订阅，可能需要启用新式验证才能使用多重身份验证等功能，才能在 Outlook 等 Windows 客户端中正常工作。
+
 
 1. 在 Microsoft 365 管理中心中，在左侧导航栏中选择“**设置**”\>“**组织设置**”。
-1. 在“**服务**”选项卡上，选择“**新式身份验证**”，然后在“**新式身份验证**"窗格中，确保选择“**启用新式验证**”。 选择“**保存更改**”。
+2. 在 **服务** 选项卡下，选择 **新式验证**，在 **新式验证** 窗格中，确保 **启用新式验证** 选项。 选择“**保存更改**”。
 
 ### <a name="turn-off-legacy-per-user-mfa"></a>关闭旧版每用户 MFA
 
