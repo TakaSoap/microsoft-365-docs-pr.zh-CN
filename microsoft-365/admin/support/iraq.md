@@ -1,5 +1,5 @@
 ---
-title: 伊拉克的支持信息
+title: 有关科威特的支持信息
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -9,40 +9,39 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
-description: 了解如何联系你所在国家或地区的支持人员。
+description: 了解如何联系你的国家/地区支持人员。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 5dafb8208388e3a185495df9b8385b73f1cb2af8
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 72e4da26ba2cc9a9f0be93dc8b92c6336065ab24
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48641995"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50546708"
 ---
-# <a name="contact-support-for-iraq"></a>联系针对伊拉克的支持人员
+# <a name="contact-support-for-iraq"></a>联系美国支持人员
 
-[查找其他国家或地区](../contact-support-for-business-products.md)。
+[查找另一个国家/地区](../contact-support-for-business-products.md)。
 
 ## <a name="phone-number"></a>电话号码
-+ 965 2221 9876
++965 2221 9876
 
-选择选项2
+选择选项 2
 
-选择选项9
+选择选项 9
 
-输入代码7701
+输入代码 7701
 
 ## <a name="hours"></a>工作时间
 ### <a name="billing-support"></a>计费支持：
 
-阿拉伯语： Sun-Thu 上午10点-下午6点
+阿拉伯语：Sun-Thu 10 AM-6 PM
 
-英语： Mon-Fri 上午10点-6 PM
+英语：Mon-Fri上午 10 点到下午 6 点
 
 ### <a name="technical-support"></a>技术支持：
 
-阿拉伯语： Sun-Thu 上午10点-下午6点
+阿拉伯语：Sun-Thu 10 AM-6 PM
 
 英语：全天候
 

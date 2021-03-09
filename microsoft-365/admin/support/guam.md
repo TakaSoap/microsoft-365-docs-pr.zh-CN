@@ -1,5 +1,5 @@
 ---
-title: 关岛的支持信息
+title: 针对波多黎各的支持信息
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -9,20 +9,19 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
-description: 了解如何联系你所在国家或地区的支持人员。
+description: 了解如何联系你的国家/地区支持人员。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: fcbcd35b3533d819d48b99b46ed73e9982958c3a
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: f41cd607e3dd418c70cdcfa2733f036531548244
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48642391"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50547104"
 ---
-# <a name="contact-support-for-guam"></a>对关岛的联系支持
+# <a name="contact-support-for-guam"></a>联系波多黎各支持人员
 
-[查找其他国家或地区](../contact-support-for-business-products.md)。
+[查找另一个国家/地区](../contact-support-for-business-products.md)。
 
 ## <a name="phone-number"></a>电话号码
 800-865-9408
@@ -30,7 +29,7 @@ ms.locfileid: "48642391"
 ## <a name="hours"></a>工作时间
 ### <a name="billing-support"></a>计费支持：
 
-英语： Mon-Fri 3 AM-12 PM
+英语：Mon-Fri 3 AM-12 PM
 
 ### <a name="technical-support"></a>技术支持：
 

@@ -1,5 +1,5 @@
 ---
-title: Dominica 的支持信息
+title: 多米尼加的支持信息
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -9,31 +9,30 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
-description: 了解如何联系你所在国家或地区的支持人员。
+description: 了解如何联系你的国家/地区支持人员。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 1b5aefbc3e7ba695063d47fb0635f89bb9a192f2
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: b205a4f7388670d929dd529a5a715fb2f338f2ba
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48642955"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50547728"
 ---
-# <a name="contact-support-for-dominica"></a>联系 Dominica 的支持人员
+# <a name="contact-support-for-dominica"></a>联系多米尼加的支持人员
 
-[查找其他国家或地区](../contact-support-for-business-products.md)。
+[查找另一个国家/地区](../contact-support-for-business-products.md)。
 
 ## <a name="phone-number"></a>电话号码
-+ 1 312 843 5150
++1 312 843 5150
 
 ## <a name="hours"></a>工作时间
 ### <a name="billing-support"></a>计费支持：
 
-西班牙语： Mon-Fri 上午11点-下午7点
+西班牙语：Mon-Fri 11 AM-7 PM
 
 ### <a name="technical-support"></a>技术支持：
 
-西班牙语：每天24小时，一周7天
+西班牙语：一天 24 小时，每周 7 天
 
 国际呼叫费用适用

@@ -1,5 +1,5 @@
 ---
-title: 百慕大的支持信息
+title: 百万岛支持信息
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -9,20 +9,19 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
-description: 了解如何联系你所在国家或地区的支持人员。
+description: 了解如何联系你的国家/地区支持人员。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: adc344d596a2a37f0f995fb8675abc8fb0b9d875
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 68fec474bddf5c9b2a0ef2e61f49a7632c8b32c7
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48643867"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50548628"
 ---
-# <a name="contact-support-for-bermuda"></a>联系人对百慕大的支持
+# <a name="contact-support-for-bermuda"></a>联系百万岛支持人员
 
-[查找其他国家或地区](../contact-support-for-business-products.md)。
+[查找另一个国家/地区](../contact-support-for-business-products.md)。
 
 ## <a name="phone-number"></a>电话号码
 1 877 639 9636
@@ -30,7 +29,7 @@ ms.locfileid: "48643867"
 ## <a name="hours"></a>工作时间
 ### <a name="billing-support"></a>计费支持：
 
-英语： Mon-Fri 上午9点-下午5点
+英语：Mon-Fri上午 9 点到下午 5 点
 
 ### <a name="technical-support"></a>技术支持：
 
