@@ -1,5 +1,5 @@
 ---
-title: 尼日尔的支持信息
+title: 针对尼日利亚的支持信息
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -9,35 +9,34 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
-description: 了解如何联系你所在国家或地区的支持人员。
+description: 了解如何联系你的国家/地区支持人员。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 8401ceaa5de06af830119f25b3208dff1d066eb4
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 292bc415596b32c2df1d3570013cc39d5d542ab0
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48640627"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50545424"
 ---
-# <a name="contact-support-for-niger"></a><span data-ttu-id="9bcf9-103">对尼日尔的联系支持</span><span class="sxs-lookup"><span data-stu-id="9bcf9-103">Contact support for Niger</span></span>
+# <a name="contact-support-for-niger"></a><span data-ttu-id="13b90-103">联系针对尼日利亚的支持人员</span><span class="sxs-lookup"><span data-stu-id="13b90-103">Contact support for Niger</span></span>
 
-<span data-ttu-id="9bcf9-104">[查找其他国家或地区](../contact-support-for-business-products.md)。</span><span class="sxs-lookup"><span data-stu-id="9bcf9-104">[Find another country or region](../contact-support-for-business-products.md).</span></span>
+<span data-ttu-id="13b90-104">[查找另一个国家/地区](../contact-support-for-business-products.md)。</span><span class="sxs-lookup"><span data-stu-id="13b90-104">[Find another country or region](../contact-support-for-business-products.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="9bcf9-105">电话号码</span><span class="sxs-lookup"><span data-stu-id="9bcf9-105">Phone number</span></span>
-<span data-ttu-id="9bcf9-106">+ 1 312 843 5147</span><span class="sxs-lookup"><span data-stu-id="9bcf9-106">+1 312 843 5147</span></span>
+## <a name="phone-number"></a><span data-ttu-id="13b90-105">电话号码</span><span class="sxs-lookup"><span data-stu-id="13b90-105">Phone number</span></span>
+<span data-ttu-id="13b90-106">+1 312 843 5147</span><span class="sxs-lookup"><span data-stu-id="13b90-106">+1 312 843 5147</span></span>
 
-## <a name="hours"></a><span data-ttu-id="9bcf9-107">工作时间</span><span class="sxs-lookup"><span data-stu-id="9bcf9-107">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="9bcf9-108">计费支持：</span><span class="sxs-lookup"><span data-stu-id="9bcf9-108">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="13b90-107">工作时间</span><span class="sxs-lookup"><span data-stu-id="13b90-107">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="13b90-108">计费支持：</span><span class="sxs-lookup"><span data-stu-id="13b90-108">Billing Support:</span></span>
 
-<span data-ttu-id="9bcf9-109">法语： Mon-Fri 上午9点-下午5点</span><span class="sxs-lookup"><span data-stu-id="9bcf9-109">French: Mon-Fri 9 AM-5 PM</span></span>
+<span data-ttu-id="13b90-109">法语：Mon-Fri上午 9 点到下午 5 点</span><span class="sxs-lookup"><span data-stu-id="13b90-109">French: Mon-Fri 9 AM-5 PM</span></span>
 
-<span data-ttu-id="9bcf9-110">英语： Mon-Fri 上午9点-下午5点</span><span class="sxs-lookup"><span data-stu-id="9bcf9-110">English: Mon-Fri 9 AM-5 PM</span></span>
+<span data-ttu-id="13b90-110">英语：Mon-Fri上午 9 点到下午 5 点</span><span class="sxs-lookup"><span data-stu-id="13b90-110">English: Mon-Fri 9 AM-5 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="9bcf9-111">技术支持：</span><span class="sxs-lookup"><span data-stu-id="9bcf9-111">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="13b90-111">技术支持：</span><span class="sxs-lookup"><span data-stu-id="13b90-111">Technical Support:</span></span>
 
-<span data-ttu-id="9bcf9-112">法语： Mon-Fri 上午8点-9 PM</span><span class="sxs-lookup"><span data-stu-id="9bcf9-112">French: Mon-Fri 8 AM-9 PM</span></span>
+<span data-ttu-id="13b90-112">法语：Mon-Fri上午 8 点到下午 9 点</span><span class="sxs-lookup"><span data-stu-id="13b90-112">French: Mon-Fri 8 AM-9 PM</span></span>
 
-<span data-ttu-id="9bcf9-113">英语：全天候</span><span class="sxs-lookup"><span data-stu-id="9bcf9-113">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="13b90-113">英语：全天候</span><span class="sxs-lookup"><span data-stu-id="13b90-113">English: 24 hours a day, 7 days a week</span></span>
 
-<span data-ttu-id="9bcf9-114">国际呼叫费用适用</span><span class="sxs-lookup"><span data-stu-id="9bcf9-114">International call charges apply</span></span>
+<span data-ttu-id="13b90-114">国际呼叫费用适用</span><span class="sxs-lookup"><span data-stu-id="13b90-114">International call charges apply</span></span>
