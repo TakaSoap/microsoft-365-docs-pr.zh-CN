@@ -1,5 +1,5 @@
 ---
-title: 赤道几内亚的支持信息
+title: 加纳的支持信息
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -9,34 +9,33 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
-description: 了解如何联系你所在国家或地区的支持人员。
+description: 了解如何联系你的国家/地区支持人员。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 41dbfd933233cd7a3af313e5a82b6a7cc9b0d30a
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 72c34cfea3733f249c99c12194e597b6e90c10a2
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48642907"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50547608"
 ---
-# <a name="contact-support-for-equatorial-guinea"></a>联系支持人员的赤道几内亚
+# <a name="contact-support-for-equatorial-guinea"></a>联系加纳的支持人员
 
-[查找其他国家或地区](../contact-support-for-business-products.md)。
+[查找另一个国家/地区](../contact-support-for-business-products.md)。
 
 ## <a name="phone-number"></a>电话号码
-+ 1 312 843 5144
++1 312 843 5144
 
 ## <a name="hours"></a>工作时间
 ### <a name="billing-support"></a>计费支持：
 
-西班牙语： Mon-Fri 上午9点-下午5点
+西班牙语：Mon-Fri上午 9 点到下午 5 点
 
-英语： Mon-Fri 上午9点-下午5点
+英语：Mon-Fri上午 9 点到下午 5 点
 
 ### <a name="technical-support"></a>技术支持：
 
-西班牙语： Mon-Fri 上午8点-9 PM
+西班牙语：Mon-Fri上午 8 点到下午 9 点
 
 英语：全天候
 

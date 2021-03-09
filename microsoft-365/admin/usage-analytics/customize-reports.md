@@ -19,13 +19,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 9b76065f-29b9-4b89-8059-c5f9db9ddbf6
-description: 了解如何在浏览器和 Power BI Desktop 中自定义报告。
-ms.openlocfilehash: 0375b61b6922c99acf927a4283571451deabaf14
-ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
+description: 了解如何在浏览器和 Power BI 桌面中自定义报告。
+ms.openlocfilehash: 3c662dfa91939c68f0aa0a85c19a1fab003064bf
+ms.sourcegitcommit: d3c1b08b3a8af29ef19ffe77da063920f28fe290
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "50114293"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50572646"
 ---
 # <a name="customize-the-reports-in-microsoft-365-usage-analytics"></a>自定义 Microsoft 365 使用情况分析中的报告
 
@@ -48,13 +48,13 @@ Microsoft 365 使用情况分析在 Power BI 中提供了一个仪表板，可�
 
 此示例演示如何修改激活/许可报告中的 **"激活"选项卡**。 
   
-1. 在 **"激活/许可"** 报告中，选择"激活 **"** 选项卡。
+1. 在 **"激活/许可"报告中** ，选择 **"激活"** 选项卡。
     
 2. 通过选择顶部的"编辑"按钮，通过 Power BI 按钮中的"更多页面"按钮进入 ![ 编辑 ](../../media/d8da3c19-3f2d-4bf6-811e-faa804f74770.png) 模式。 
     
     ![Click Edit report on the top right navigation](../../media/e2c16663-1fbd-4d7f-887c-0cbb891d3b3d.png)
   
-3. 在右上方，选择 **"复制此页"。**
+3. 在右上方，选择"**复制此页"。**
     
     ![Choose Duplicate this page](../../media/b2d18dcd-6b82-4ce7-ab79-1b24e3721309.png)
   
@@ -68,19 +68,19 @@ Microsoft 365 使用情况分析在 Power BI 中提供了一个仪表板，可�
 
 以下示例演示如何创建新的视觉对象，以按月跟踪新的 Yammer 用户。
   
-1. 使用左侧 **导航转到"产品** 使用情况"报告，然后选择 **"Yammer"** 选项卡。
+1. 使用左侧 **导航转到** "产品使用情况"报告，然后选择 **"Yammer"** 选项卡。
     
-2. 通过选择 Power BI 中的"更多页面"按钮切换到 ![ ](../../media/d8da3c19-3f2d-4bf6-811e-faa804f74770.png) 编辑 **模式**。 
+2. 通过选择 Power BI 和 ![ "编辑"中的"更多页面" ](../../media/d8da3c19-3f2d-4bf6-811e-faa804f74770.png) 按钮切换到编辑 **模式**。 
     
 3. 在页面底部，选择 ![Power BI 中的"添加页面"按钮](../../media/d3b8c117-17d4-4f53-b078-8fefc2155b24.png) 以创建新页面。
   
-4. 在 **右边的"** 可视化"区域中，从 (上一行选择堆积条形图) 。
+4. 在 **右边的"** 可视化"区域中，选择首行的堆积条形图 (从左到左) 。
 
     ![选择条形图](../../media/214c3fed-6eae-43e6-83fb-708a2d74406e.png)
     
-5. 选择该可视化效果的右下角并拖动使其变大。
+5. 选择可视化效果的右下角并拖动使其变大。
 
-6. 在 **右侧"** 域"区域中，展开 **"日历"** 表。
+6. 在 **右侧"字段** "区域中，展开 **"日历"** 表。
 
 7. 将" **MonthName**"拖动到字段区域，该区域位于" **可视化效果**"区域中" **坐标轴**"标题的正下方。
  
@@ -104,7 +104,7 @@ Microsoft 365 使用情况分析在 Power BI 中提供了一个仪表板，可�
     
 15. 通过编辑右下角页面的名称来更改新页面的标题。
 
-16.  单击顶部的阅读视图，然后保存，以保存 **报告**。
+16.  单击顶部的阅读视图，然后保存，以保存 **报表**。
     
 ## <a name="customizing-the-reports-in-power-bi-desktop"></a>自定义 Power BI Desktop 中的报表
 
@@ -112,19 +112,19 @@ Microsoft 365 使用情况分析在 Power BI 中提供了一个仪表板，可�
   
 ### <a name="use-the-reporting-apis"></a>使用报告 API
 
-你可以从支持这些报告的 Microsoft 365 直接连接到 ODATA 报告 API 开始。
+你可以直接从支持这些报告的 Microsoft 365 连接到 ODATA 报告 API。
   
 1. 转到" **获取数据**"\>" **其他**"\>" **ODATA 源**"\>" **连接**"。
     
 2. 在 URL 窗口中输入 <i></i> \<tenantid\> "https://reports.office.com/pbi/v1.0/"
     
-    **注意：** 报告 API 为预览版，在进入生产阶段之前可能会更改。 
+    **注意：** 报告 API 在预览版中，在进入生产阶段之前可能会更改。 
   
     ![OData feed URL for Power BI desktop](../../media/c0ef967e-a454-4eba-bc8e-61e113170053.png)
   
 3. 输入你的 Microsoft 365 (或学校) 管理员凭据，以在系统提示时向 Microsoft 365 进行身份验证。
     
-    有关 [允许](usage-analytics.md#faq) 谁访问 Microsoft 365 Adoption 模板应用报告详细信息，请参阅常见问题解答。 
+    有关 [允许](usage-analytics.md#faq) 谁访问 Microsoft 365 Adoption 模板应用报告的信息，请参阅常见问题解答。 
     
 4. 授权连接后，将看到显示可连接到的数据集的"导航器"窗口。
     
@@ -138,7 +138,7 @@ Microsoft 365 使用情况分析在 Power BI 中提供了一个仪表板，可�
 
 您还可以使用与 Microsoft 365 使用情况分析报告对应的 Power BI 模板文件作为连接到数据的起点。 使用 pbit 文件的优点是它已建立连接字符串。 也可以利用已创建的所有自定义度量值，在基础架构所返回数据的基础上进一步进行构建。
   
-可以从 Microsoft 下载中心从下载中心下载 Power BI [模板文件](https://download.microsoft.com/download/7/8/2/782ba8a7-8d89-4958-a315-dab04c3b620c/Microsoft%20365%20Usage%20Analytics.pbit)。 下载 Power BI 模板文件后，请按照以下步骤开始：
+可以从 Microsoft 下载中心下载 Power BI [模板文件](https://download.microsoft.com/download/7/8/2/782ba8a7-8d89-4958-a315-dab04c3b620c/Microsoft%20365%20Usage%20Analytics.pbit)。 下载 Power BI 模板文件后，请按照以下步骤开始操作：
   
 1. 打开 pbit 文件。
     

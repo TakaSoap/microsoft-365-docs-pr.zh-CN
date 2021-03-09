@@ -9,19 +9,18 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Commerce_Pay
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
-description: 了解在何处发送订阅的付款。
+description: 了解在何处发送订阅付款。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 9cf6c9052147571c4892d34420a44b2583f3e3d3
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: ec3babde2e4175081712f957af1bcd33e0f6588d
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48637670"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50551856"
 ---
 # <a name="payment-information-for-brazil"></a>巴西的付款信息
 
-[查找其他国家或地区](../billing-and-payments/pay-for-your-subscription.md)。
+[查找另一个国家/地区](../billing-and-payments/pay-for-your-subscription.md)。
 
-请按照发票上的付款说明和参考发票编号 (s) 在付款汇款上。  
+请按照发票上的付款说明和参考发票 (付款) 付款付款说明。  
