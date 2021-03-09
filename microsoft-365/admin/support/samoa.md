@@ -9,28 +9,27 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
-description: 了解如何联系你所在国家或地区的支持人员。
+description: 了解如何联系你的国家/地区支持人员。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 3d009b2d2508e8c325acd0904990fa2abd996513
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 8ec12dff47a40e9463643dd52c7aec146a24300c
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48639907"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50544704"
 ---
-# <a name="contact-support-for-samoa"></a>联系萨摩亚支持
+# <a name="contact-support-for-samoa"></a>联系萨摩亚支持人员
 
-[查找其他国家或地区](../contact-support-for-business-products.md)。
+[查找另一个国家/地区](../contact-support-for-business-products.md)。
 
 ## <a name="phone-number"></a>电话号码
-+ 1 312 843 5148
++1 312 843 5148
 
 ## <a name="hours"></a>工作时间
 ### <a name="billing-support"></a>计费支持：
 
-英语： Mon-Fri 下午2点-下午10点
+英语：Mon-Fri 2 PM-10 PM
 
 ### <a name="technical-support"></a>技术支持：
 

@@ -9,20 +9,19 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
-description: 了解如何联系你所在国家或地区的支持人员。
+description: 了解如何联系你的国家/地区支持人员。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 5b120ae4799ab13288abe71dd71dc570db412caa
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 95dcb4b707919d8f944282f433345bd51379203b
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48641899"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50546600"
 ---
-# <a name="contact-support-for-japan"></a>联系日本的支持人员
+# <a name="contact-support-for-japan"></a>联系日本支持人员
 
-[查找其他国家或地区](../contact-support-for-business-products.md)。
+[查找另一个国家/地区](../contact-support-for-business-products.md)。
 
 ## <a name="phone-number"></a>电话号码
 0120 996 680 (Office 365 企业版) 
@@ -32,25 +31,25 @@ ms.locfileid: "48641899"
 ## <a name="hours"></a>工作时间
 ### <a name="billing-support"></a>计费支持：
 
-日语： Mon-Fri 9:00-17:00
+日语：Mon-Fri 9：00-17：00
 
- (在周末和公共假日上关闭) 
+ (周末和公共假日不工作) 
 
-英语： Mon-Fri 9:00-17:00
+英语：Mon-Fri 9：00-17：00
 
- (在周末和公共假日上关闭) 
+ (周末和公共假日不工作) 
 
 ### <a name="technical-support"></a>技术支持：
 
 **Office 365 企业版：**
 
-日语：每周7天，每天24小时
+日语：一天 24 小时，每周 7 天
 
 英语：全天候
 
 **其他计划：**
 
-从每周的9:00-17:30 可获得电话技术支持。 对于高严重性问题，每周7天、每天24小时提供技术支持。
+电话技术支持在工作日的 9：00-17：30 提供。 对于高严重性问题，技术支持每周 7 天、每天 24 小时提供。
 
 备用电话号码：
 

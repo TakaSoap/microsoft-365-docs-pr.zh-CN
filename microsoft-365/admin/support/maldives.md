@@ -9,28 +9,27 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
-description: 了解如何联系你所在国家或地区的支持人员。
+description: 了解如何联系你的国家/地区支持人员。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 77e67e297c828513a607a423e92476b958ddb9dd
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 5e0278ee3ffdbc9c761f319db9b42d4a9c43548d
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48641287"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50545976"
 ---
-# <a name="contact-support-for-maldives"></a>对马尔代夫的联系支持
+# <a name="contact-support-for-maldives"></a>联系马尔代夫支持人员
 
-[查找其他国家或地区](../contact-support-for-business-products.md)。
+[查找另一个国家/地区](../contact-support-for-business-products.md)。
 
 ## <a name="phone-number"></a>电话号码
-+ 1 312 843 5148
++1 312 843 5148
 
 ## <a name="hours"></a>工作时间
 ### <a name="billing-support"></a>计费支持：
 
-英语： Mon-Fri 上午10点-6 PM
+英语：Mon-Fri上午 10 点到下午 6 点
 
 ### <a name="technical-support"></a>技术支持：
 

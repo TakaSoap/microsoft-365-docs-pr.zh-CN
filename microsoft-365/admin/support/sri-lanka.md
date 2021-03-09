@@ -9,20 +9,19 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
-description: 了解如何联系你所在国家或地区的支持人员。
+description: 了解如何联系你的国家/地区支持人员。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 775afd861cfbd985e8a95cea3cc4c6f5e87fa396
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: e48a9eb8c2b64ac8779d953a6267a4b4ce3e412c
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48639415"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50544236"
 ---
-# <a name="contact-support-for-sri-lanka"></a>对斯里兰卡的联系支持
+# <a name="contact-support-for-sri-lanka"></a>联系斯里兰卡支持人员
 
-[查找其他国家或地区](../contact-support-for-business-products.md)。
+[查找另一个国家/地区](../contact-support-for-business-products.md)。
 
 ## <a name="phone-number"></a>电话号码
 2423 254
@@ -30,7 +29,7 @@ ms.locfileid: "48639415"
 ## <a name="hours"></a>工作时间
 ### <a name="billing-support"></a>计费支持：
 
-英语： Mon-Fri 上午9点-下午6点
+英语：Mon-Fri上午 9 点到下午 6 点
 
 ### <a name="technical-support"></a>技术支持：
 

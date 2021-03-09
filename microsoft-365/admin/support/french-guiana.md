@@ -1,5 +1,5 @@
 ---
-title: 法属圭亚那的支持信息
+title: 法语（法属法属）的支持信息
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -9,34 +9,33 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
-description: 了解如何联系你所在国家或地区的支持人员。
+description: 了解如何联系你的国家/地区支持人员。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 27541e1c0f2f9b9f5bc9a48f3f0757de3d91ceaa
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 615170c8fd6bc044bca41963502392ff2f3be57e
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48642655"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50547392"
 ---
-# <a name="contact-support-for-french-guiana"></a>与法语圭亚那联系支持
+# <a name="contact-support-for-french-guiana"></a>联系法属法属 Guiana 支持人员
 
-[查找其他国家或地区](../contact-support-for-business-products.md)。
+[查找另一个国家/地区](../contact-support-for-business-products.md)。
 
 ## <a name="phone-number"></a>电话号码
-+ 1 312 843 5147
++1 312 843 5147
 
 ## <a name="hours"></a>工作时间
 ### <a name="billing-support"></a>计费支持：
 
-法语： Mon-Fri 上午5点-下午1点
+法语：Mon-Fri上午 5 点 -下午 1 点
 
-英语： Mon-Fri 上午5点-下午1点
+英语：Mon-Fri上午 5 点到下午 1 点
 
 ### <a name="technical-support"></a>技术支持：
 
-法语： Mon-Fri 4 AM-5 PM
+法语：Mon-Fri 4 AM-5 PM
 
 英语：全天候
 

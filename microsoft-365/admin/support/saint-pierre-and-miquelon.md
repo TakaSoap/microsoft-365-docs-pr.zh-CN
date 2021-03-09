@@ -1,5 +1,5 @@
 ---
-title: 圣皮埃尔和密克隆的支持信息
+title: 圣马丁和密克隆的支持信息
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -9,34 +9,33 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
-description: 了解如何联系你所在国家或地区的支持人员。
+description: 了解如何联系你的国家/地区支持人员。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: d91c656459133e21b4e2c6fd032d582f520d1254
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: b25fafc787b7995eff933082f00a0e9ce931c518
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48640039"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50544728"
 ---
-# <a name="contact-support-for-saint-pierre-and-miquelon"></a>联系圣皮埃尔和密克隆部门的支持人员
+# <a name="contact-support-for-saint-pierre-and-miquelon"></a>联系圣基兰和密克隆的支持人员
 
-[查找其他国家或地区](../contact-support-for-business-products.md)。
+[查找另一个国家/地区](../contact-support-for-business-products.md)。
 
 ## <a name="phone-number"></a>电话号码
-+ 1 312 843 5147
++1 312 843 5147
 
 ## <a name="hours"></a>工作时间
 ### <a name="billing-support"></a>计费支持：
 
-法语： Mon-Fri 上午6点-2 下午
+法语：Mon-Fri上午 6 点到下午 2 点
 
-英语： Mon-Fri 6 AM-2 PM
+英语：Mon-Fri上午 6 点到下午 2 点
 
 ### <a name="technical-support"></a>技术支持：
 
-法语： Mon-Fri 上午5点-下午6点
+法语：Mon-Fri上午 5 点到下午 6 点
 
 英语：全天候
 

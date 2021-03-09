@@ -9,20 +9,19 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
-description: 了解如何联系你所在国家或地区的支持人员。
+description: 了解如何联系你的国家/地区支持人员。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: b047d5affdf954bc53c94be4057ea11b8658854b
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 68cef42e76f8148114f0f022b0cc8c99438c5420
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48640795"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50545496"
 ---
-# <a name="contact-support-for-nepal"></a>对尼泊尔的支持联系
+# <a name="contact-support-for-nepal"></a>联系尼泊尔支持人员
 
-[查找其他国家或地区](../contact-support-for-business-products.md)。
+[查找另一个国家/地区](../contact-support-for-business-products.md)。
 
 ## <a name="phone-number"></a>电话号码
 电话支持不可用;仅联机支持。
@@ -30,8 +29,8 @@ ms.locfileid: "48640795"
 ## <a name="hours"></a>工作时间
 ### <a name="billing-support"></a>计费支持：
 
-电话不提供
+通过电话不可用
 
 ### <a name="technical-support"></a>技术支持：
 
-电话不提供
+通过电话不可用

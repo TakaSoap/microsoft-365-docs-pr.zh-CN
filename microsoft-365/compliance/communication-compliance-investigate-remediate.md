@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: ea02f5ff95baea42bf57c01c939afe4d3e4c13a2
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: 4f0be1b416bb80bc5cd2b43f5e4c95f0dbc24142
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50423473"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50542320"
 ---
 # <a name="investigate-and-remediate-communication-compliance-alerts"></a>调查和修正通信合规性警报
 
@@ -102,7 +102,7 @@ ms.locfileid: "50423473"
 查看邮件基础知识后，可以打开一条消息来检查详细信息并确定进一步修正操作。 选择一封邮件以查看完整的邮件头和正文信息。 有几种不同的视图可以帮助你确定正确的操作过程：
 
 - **源视图**：此视图是大多数基于 Web 的邮件平台中常见的标准邮件视图。 标题信息采用正常样式设置格式，并且邮件正文支持带符号的图形文件和换行文本。 如果为策略启用了光学字符识别 [ (OCR) ， ](communication-compliance-feature-reference.md#optical-character-recognition-ocr-preview) 则包含匹配策略条件的打印或手写文本的图像将在此视图中作为关联邮件的子项进行查看。
-- **文本视图**：文本视图显示邮件的仅行号文本视图，并包括邮件和附件中与关联的通信合规性策略中匹配的字词的关键字突出显示。 关键字突出显示可以帮助您快速扫描长邮件和附件，以找到感兴趣的区域。 在某些情况下，突出显示的文本可能仅在匹配策略条件的邮件的附件中。 不显示嵌入文件，并且此视图的行号编号有助于引用多个审阅者之间的相关详细信息。
+- **文本视图**：文本视图显示邮件的行号仅文本视图，并包括邮件和附件中与关联通信合规性策略中匹配的敏感信息类型术语或关键字的关键字突出显示。 关键字突出显示可以帮助您快速扫描长邮件和附件，以找到感兴趣的区域。 在某些情况下，突出显示的文本可能仅在匹配策略条件的邮件的附件中。 分配给策略的内置分类器标识的术语不支持关键字突出显示。 不显示嵌入文件，并且此视图的行号编号有助于引用多个审阅者之间的相关详细信息。
 - **批注视图**：此视图允许审阅者直接在保存到邮件视图中的邮件上添加批注。 如果为策略启用了 [OCR，](communication-compliance-feature-reference.md#optical-character-recognition-ocr-preview) 则包含匹配策略条件的打印或手写文本的图像将在此视图中作为关联邮件的子项进行查看，并可以添加注释。
 - **用户历史记录**：用户历史记录视图显示由发送邮件的用户的任何通信合规性策略生成的所有其他警报。
 - **邮件详细信息视图**：邮件元数据和配置信息的高级视图。

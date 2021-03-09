@@ -9,20 +9,19 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
-description: 了解如何联系你所在国家或地区的支持人员。
+description: 了解如何联系你的国家/地区支持人员。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: b6f4011c318830d211aa96db05b9889c78fa4196
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 8de63fad7741171dc628ff9064796d64dccd96da
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48639559"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50544248"
 ---
-# <a name="contact-support-for-spain"></a>对西班牙的联系支持
+# <a name="contact-support-for-spain"></a>联系西班牙支持人员
 
-[查找其他国家或地区](../contact-support-for-business-products.md)。
+[查找另一个国家/地区](../contact-support-for-business-products.md)。
 
 ## <a name="phone-number"></a>电话号码
 900 814 197
@@ -30,16 +29,16 @@ ms.locfileid: "48639559"
 ## <a name="hours"></a>工作时间
 ### <a name="billing-support"></a>计费支持：
 
-西班牙语： Mon-Fri 上午9点-下午5点
+西班牙语：Mon-Fri上午 9 点到下午 5 点
 
-英语： Mon-Fri 上午9点-下午5点
+英语：Mon-Fri上午 9 点到下午 5 点
 
 ### <a name="technical-support"></a>技术支持：
 
-西班牙语： Mon-Fri 上午8点-9 PM
+西班牙语：Mon-Fri上午 8 点到下午 9 点
 
 英语：全天候
 
-备选电话号码： 912 718 160
+备用电话号码：912 718 160
 
 本地呼叫费用适用
