@@ -1,5 +1,5 @@
 ---
-title: '中国的付款信息 (中国) '
+title: '中国 (付款) '
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -9,29 +9,28 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Commerce_Pay
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
-description: 了解在何处发送订阅的付款。
+description: 了解在何处发送订阅付款。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 83e56fb079bdd2104c84de0e6d3efa519e138108
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 2342ee6fd7c75596ac1c1211f908187a43569689
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48637459"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50551724"
 ---
-# <a name="payment-information-for-china-prc"></a>中国的付款信息 (中国) 
+# <a name="payment-information-for-china-prc"></a>中国 (付款) 
 
-[查找其他国家或地区](../billing-and-payments/pay-for-your-subscription.md)。
+[查找另一个国家/地区](../billing-and-payments/pay-for-your-subscription.md)。
 
-请在 CNY 中付款，并在付款汇款中引用公司名称和发票编号 (s) 。
+请在 CNY 中付款，并参考你的公司名称和发票 (付款) 付款付款卡号。
 
 ## <a name="electronic-funds-transfer"></a>电子资金转帐
 
-**银行：** Citibank  
+**Bank：** Bank  
 **分支：** 香港特别行政区  
-**SWIFT 代码：** CITIHKHX  
-**CNAP 代码：** 989584000600   
-**帐号：** 1199527009  
-**帐户名称：** MICROSOFT 区域销售公司  
-**注释：通过香港在 RMB RTGS 频道中付款。**  
+**SWIFT 代码：** KHHKHX  
+**CNAP 代码** ：989584000600   
+**帐号** ：1199527009  
+**帐户名称：** MICROSOFT REGIONAL SALES CORP  
+**备注：通过 HK 中的"通过"的"为 RTGS"频道付费。**  

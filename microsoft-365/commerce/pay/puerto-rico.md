@@ -9,27 +9,26 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Commerce_Pay
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
-description: 了解在何处发送订阅的付款。
+description: 了解在何处发送订阅付款。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 93c537f05c088e041d7a7d3cc775de66735e84e8
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: bd9de5d56c96a4a5970b3508fcd4da0a335a62fa
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48646939"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50550332"
 ---
 # <a name="payment-information-for-puerto-rico"></a>波多黎各的付款信息
 
-[查找其他国家或地区](../billing-and-payments/pay-for-your-subscription.md)。
+[查找另一个国家/地区](../billing-and-payments/pay-for-your-subscription.md)。
 
-请仅以 USD 为单位付款，并在您的付款汇款中引用发票编号 (s) 。
+Please pay in USD only and reference invoice number () on your payment) .
 
 ## <a name="electronic-funds-transfer"></a>电子资金转帐
 
-**银行：** 美洲银行  
-**分支：** 州  
+**Bank：** 美洲银行  
+**分支：** Dallas  
 **SWIFT 代码：** BOFAUS3N  
-**帐号：** 4426587954  
-**帐户名称：** Word  
+**帐号** ：4426587954  
+**帐户名称：** Microsoft  

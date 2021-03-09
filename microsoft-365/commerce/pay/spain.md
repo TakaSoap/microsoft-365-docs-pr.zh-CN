@@ -1,5 +1,5 @@
 ---
-title: 西班牙付款信息
+title: 西班牙的付款信息
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -9,28 +9,27 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Commerce_Pay
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
-description: 了解在何处发送订阅的付款。
+description: 了解在何处发送订阅付款。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 8f45a395717dbef0d4d215877762c10b2e00f5a4
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 14f6484ac483a6177d0e0e8c2819fa85181ebb0e
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48648547"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50550092"
 ---
-# <a name="payment-information-for-spain"></a>西班牙付款信息
+# <a name="payment-information-for-spain"></a>西班牙的付款信息
 
-[查找其他国家或地区](../billing-and-payments/pay-for-your-subscription.md)。
+[查找另一个国家/地区](../billing-and-payments/pay-for-your-subscription.md)。
 
-请仅在 EUR 中付款，并在付款汇款中 (s) 引用发票编号。
+请仅以 EUR 支付，并参考 (付款) 付款金额。
 
 ## <a name="electronic-funds-transfer"></a>电子资金转帐
 
-**银行：** Citibank，伦敦  
-**SWIFT 代码/numéro：** CITIGB2L  
+**Bank：** Bank， London  
+**SWIFT 代码/BIC：** 一个 2016 年 1 月 2 日  
 **IBAN：** GB31CITI18500812207591  
-**排序代码：** 185008  
-**帐号：** 12207591  
-**帐户名称：** WORD
+**SORT 代码** ：185008  
+**帐号** ：12207591  
+**帐户名称：** MICROSOFT

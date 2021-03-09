@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 31a2f647351c05842f36198ad05b149086b53b1f
-ms.sourcegitcommit: a6b998fef5bdb35ec6726c743a24fea721535fcd
+ms.openlocfilehash: 948c8bb5c1e6b67f6de355bc532c6b14d5a83933
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50509298"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50551868"
 ---
 # <a name="advanced-hunting-schema---naming-changes"></a>高级搜寻架构 - 命名更改
 
@@ -76,7 +76,7 @@ ms.locfileid: "50509298"
 
 ## <a name="february-2021"></a>2021 年 2 月
 
-1. 在 [EmailAttachmentInfo 和](advanced-hunting-emailattachmentinfo-table.md) [EmailEvents](advanced-hunting-emailevents-table.md) 表中，列和列 `MalwareFilterVerdict` `PhishFilterVerdict` 已替换为 `ThreatTypes` 列。 The `MalwareDetectionMethod` and columns also replaced by the `PhishDetectionMethod` `DetectionMethods` column. 这种简化使我们能够在新列下提供详细信息。 映射如下所示。
+1. 在 [EmailAttachmentInfo 和](advanced-hunting-emailattachmentinfo-table.md) [EmailEvents](advanced-hunting-emailevents-table.md) 表中，列和列 `MalwareFilterVerdict` `PhishFilterVerdict` 已替换为 `ThreatTypes` 列。 The `MalwareDetectionMethod` and columns also replaced by the `PhishDetectionMethod` `DetectionMethods` column. 这种简化使我们能够在新列下提供更多信息。 映射如下所示。
 
 | 表名 | 原始列名称 | 新列名称 | 更改原因
 |--|--|--|--|
@@ -88,7 +88,7 @@ ms.locfileid: "50509298"
 
 2. 在 `EmailAttachmentInfo` and `EmailEvents` 表中，添加了 `ThreatNames` 列以提供有关电子邮件威胁详细信息。 此列包含垃圾邮件或网络钓鱼等值。
 
-3. 在 [DeviceInfo 表中](advanced-hunting-deviceinfo-table.md) ，列已根据客户反馈 `DeviceObjectId` `AadDeviceId` 替换为列。
+3. 在 [DeviceInfo 表中](advanced-hunting-deviceinfo-table.md) ，列已由基于客户反馈 `DeviceObjectId` `AadDeviceId` 的列取代。
 
 4. 在 [DeviceEvents](advanced-hunting-deviceevents-table.md) 表中，修改了多个 ActionType 名称，以更好地反映操作的说明。 可在下方找到更改的详细信息。
 
@@ -98,7 +98,7 @@ ms.locfileid: "50509298"
 | `DeviceEvents` | `UsbDriveMount` | `UsbDriveMounted` | 客户反馈 |
 | `DeviceEvents` | `UsbDriveUnmount` | `UsbDriveUnmounted` | 客户反馈 |
 | `DeviceEvents` | `WriteProcessMemoryApiCall` | `WriteToLsassProcessMemory` | 客户反馈 |
-| `DeviceEvents` | `AntivirusDetection` | `EdrBlock` | 客户反馈 |
+
 
 
 

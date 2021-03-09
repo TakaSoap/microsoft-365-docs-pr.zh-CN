@@ -9,27 +9,26 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Commerce_Pay
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
-description: 了解在何处发送订阅的付款。
+description: 了解在何处发送订阅付款。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 6d2ef3830ba88095f5062b15b524837021348f77
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 4007a97cdb2a4ac28f7eb09f037a13150fc63fcd
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48647539"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50551232"
 ---
 # <a name="payment-information-for-georgia"></a>格鲁吉亚的付款信息
 
-[查找其他国家或地区](../billing-and-payments/pay-for-your-subscription.md)。
+[查找另一个国家/地区](../billing-and-payments/pay-for-your-subscription.md)。
 
-请仅以 USD 为单位付款，并在您的付款汇款中引用发票编号 (s) 。
+Please pay in USD only and reference invoice number () on your payment) .
 
 ## <a name="electronic-funds-transfer"></a>电子资金转帐
 
-**银行：** Citibank，伦敦  
-**SWIFT 代码：** CITIGB2L  
+**Bank：** Bank， London  
+**SWIFT 代码：** 一个 2016 年 1 月 2 日  
 **IBAN：** GB95CITI18500812510049  
-**帐号：** 12510049  
-**帐户名称：** WORD  
+**帐号** ：12510049  
+**帐户名称：** MICROSOFT  

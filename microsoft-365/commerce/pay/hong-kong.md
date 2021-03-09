@@ -1,5 +1,5 @@
 ---
-title: 中国香港的付款信息
+title: 香港付款信息
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -9,28 +9,27 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Commerce_Pay
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
-description: 了解在何处发送订阅的付款。
+description: 了解在何处发送订阅付款。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 9d0b6cb118005ae7e3ae8e110a436faa9829e4b5
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: dcab44878f1627f17a20859f92eec2964ee0b4a8
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48647251"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50550956"
 ---
-# <a name="payment-information-for-hong-kong"></a>中国香港的付款信息
+# <a name="payment-information-for-hong-kong"></a>香港付款信息
 
-[查找其他国家或地区](../billing-and-payments/pay-for-your-subscription.md)。
+[查找另一个国家/地区](../billing-and-payments/pay-for-your-subscription.md)。
 
-请按照你的发票上的付款说明和参考发票编号 (s) 付款汇款。
+请按照发票上的付款说明和参考发票 () 付款。
 
 ## <a name="electronic-funds-transfer"></a>电子资金转帐
 
-**银行：** HSBC，香港特别行政区  
-**银行代码：** 004  
-**分支代码：** 848  
-**SWIFT 代码：** HSBCHKHH  
-**帐号：** 848342259001    
-**帐户名称：** Microsoft 付款 Pte Ltd-Payco 发票
+**Bank：** 中国香港特别行政区  
+**银行代码** ：004  
+**分支代码** ：848  
+**SWIFT 代码：** KHCHKHH  
+**帐号** ：848342259001    
+**帐户名称：** Microsoft 付款Ltd-Payco发票

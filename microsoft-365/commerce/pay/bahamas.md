@@ -1,5 +1,5 @@
 ---
-title: 巴哈马的付款信息
+title: 巴拿马的付款信息
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -9,27 +9,26 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Commerce_Pay
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
-description: 了解在何处发送订阅的付款。
+description: 了解在何处发送订阅付款。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: ad2356e1e1437ee6a6d727615922dc63ae7bae95
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 66b617f3812fdc73120471692c877bd257809dbb
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48637927"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50549576"
 ---
-# <a name="payment-information-for-bahamas"></a>巴哈马的付款信息
+# <a name="payment-information-for-bahamas"></a>巴拿马的付款信息
 
-[查找其他国家或地区](../billing-and-payments/pay-for-your-subscription.md)。
+[查找另一个国家/地区](../billing-and-payments/pay-for-your-subscription.md)。
 
-请仅以 USD 付款，并在发票汇款上 (s) 中引用你的发票编号。
+请仅以美元支付，并参考发票 (发票) 的发票编号。
 
 ## <a name="electronic-funds-transfer"></a>电子资金转帐
 
-**银行：** 美洲银行  
-**分支：** 州  
+**Bank：** 美洲银行  
+**分支：** Dallas  
 **SWIFT 代码：** BOFAUS3N  
-**帐号：** 4426587954  
-**帐户名称：** Word  
+**帐号** ：4426587954  
+**帐户名称：** Microsoft  
