@@ -1,5 +1,5 @@
 ---
-title: 马其顿共和国的付款信息，前南斯拉夫共和国
+title: 马其顿前马其顿共和国的付款信息
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -9,27 +9,26 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Commerce_Pay
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
-description: 了解在何处发送订阅的付款。
+description: 了解在何处发送订阅付款。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: bb80c69c985e12c8467f5c91bbe30b1005d10f12
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 595ade468c8445123cc08808bbf8c33f215e27a7
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48649327"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50543300"
 ---
-# <a name="payment-information-for-macedonia-former-yugoslav-republic-of"></a>马其顿共和国的付款信息，前南斯拉夫共和国
+# <a name="payment-information-for-macedonia-former-yugoslav-republic-of"></a>马其顿前马其顿共和国的付款信息
 
-[查找其他国家或地区](../billing-and-payments/pay-for-your-subscription.md)。 
+[查找另一个国家/地区](../billing-and-payments/pay-for-your-subscription.md)。 
 
-请仅以 USD 付款，并在发票汇款上 (s) 中引用你的发票编号。
+请仅以美元支付，并参考发票 (发票) 的发票编号。
 
 ## <a name="electronic-funds-transfer"></a>电子资金转帐
 
-**银行：** Citibank，伦敦  
-**SWIFT 代码：** CITIGB2L  
+**Bank：** Bank， London  
+**SWIFT 代码：** 一个 2016 年 1 月 2 日  
 **IBAN：** GB95CITI18500812510049  
-**帐号：** 12510049  
-**帐户名称：** WORD  
+**帐号** ：12510049  
+**帐户名称：** MICROSOFT  

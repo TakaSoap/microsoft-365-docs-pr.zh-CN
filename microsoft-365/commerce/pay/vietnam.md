@@ -9,26 +9,25 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Commerce_Pay
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
-description: 了解在何处发送订阅的付款。
+description: 了解在何处发送订阅付款。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 98212cf98051023ff6afb5612850414fd251d084
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: e4f5bd599f534f44984d3c1105abac7271fd5090
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48648031"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50542498"
 ---
 # <a name="payment-information-for-vietnam"></a>越南的付款信息
 
-[查找其他国家或地区](../billing-and-payments/pay-for-your-subscription.md)。
+[查找另一个国家/地区](../billing-and-payments/pay-for-your-subscription.md)。
 
-请仅以 USD 付款，并在发票汇款上 (s) 中引用你的发票编号。
+请仅以美元支付，并参考发票 (发票) 的发票编号。
 
 ## <a name="electronic-funds-transfer"></a>电子资金转帐
 
-**银行：** Citibank，新加坡  
-**SWIFT 代码：** CITISGSG  
-**帐号：** 0-817543-138  
-**帐户名称：** MICROSOFT 区域销售公司  
+**Bank：** 新加坡的Bank  
+**SWIFT 代码：** 中国  
+**帐号** ：0-817543-138  
+**帐户名称：** MICROSOFT REGIONAL SALES CORP  

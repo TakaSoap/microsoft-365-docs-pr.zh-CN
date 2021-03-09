@@ -1,5 +1,5 @@
 ---
-title: 中国台湾付款信息
+title: 台湾的付款信息
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -9,27 +9,26 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Commerce_Pay
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
-description: 了解在何处发送订阅的付款。
+description: 了解在何处发送订阅付款。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 015ae550440db87215148e6d65b98f64fea54963
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 4b47325f466da829ff35af5f7354d19ccfc2129b
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48648367"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50542474"
 ---
-# <a name="payment-information-for-taiwan"></a>中国台湾付款信息
+# <a name="payment-information-for-taiwan"></a>台湾的付款信息
 
-[查找其他国家或地区](../billing-and-payments/pay-for-your-subscription.md)。 
+[查找另一个国家/地区](../billing-and-payments/pay-for-your-subscription.md)。 
 
-请在 N.T. 中付款 您的付款汇款 (s) 的仅限美元和参考发票编号。
+请以 N.T 支付。 仅美元和参考发票 () 付款付款金额。
 
 ## <a name="electronic-funds-transfer"></a>电子资金转帐
 
-**受益人银行：** CITIBANK 中国台湾有限  
-**银行代码和分支代码：** 0210018  
-**SWIFT 代码：** CITITWTX  
-**帐号：** 5038946139  
-**帐户名称：** MICROSOFT 台湾公司    
+**受益银行：** BANKBANK TAIWAN LIMITED  
+**银行代码和分支机构代码** ：0210018  
+**SWIFT 代码：** 一个  
+**帐号** ：5038946139  
+**帐户名称：** MICROSOFT 中国台湾公司    

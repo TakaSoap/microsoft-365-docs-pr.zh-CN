@@ -1,5 +1,5 @@
 ---
-title: Virgin Islands 的付款信息（美国）
+title: 美属维尔京群岛的付款信息
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -9,27 +9,26 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Commerce_Pay
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
-description: 了解在何处发送订阅的付款。
+description: 了解在何处发送订阅付款。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 62ae33afde81d2beccabc9836c3ad94182705d6e
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: cfe40da53d7ffb7430f0da54dfd558e460e0d97f
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48648007"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50542450"
 ---
-# <a name="payment-information-for-virgin-islands-us"></a>Virgin Islands 的付款信息（美国）
+# <a name="payment-information-for-virgin-islands-us"></a>美属维尔京群岛的付款信息
 
-[查找其他国家或地区](../billing-and-payments/pay-for-your-subscription.md)。
+[查找另一个国家/地区](../billing-and-payments/pay-for-your-subscription.md)。
 
-请仅以 USD 为单位付款，并在您的付款汇款中引用发票编号 (s) 。
+Please pay in USD only and reference invoice number () on your payment) .
 
 ## <a name="electronic-funds-transfer"></a>电子资金转帐
 
-**银行：** 美洲银行  
-**分支：** 州  
+**Bank：** 美洲银行  
+**分支：** Dallas  
 **SWIFT 代码：** BOFAUS3N  
-**帐号：** 4426587954  
-**帐户名称：** Word  
+**帐号** ：4426587954  
+**帐户名称：** Microsoft  

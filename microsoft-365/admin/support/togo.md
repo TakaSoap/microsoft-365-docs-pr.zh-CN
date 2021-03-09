@@ -9,34 +9,33 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
-description: 了解如何联系你所在国家或地区的支持人员。
+description: 了解如何联系你的国家/地区支持人员。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: e6c85c2b32e4c4db576005f728b3c79e58c5b89e
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 8e126f8cdff6233522e94b4013703e5cda59b785
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48639139"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50543888"
 ---
-# <a name="contact-support-for-togo"></a>联系 Togo 的支持人员
+# <a name="contact-support-for-togo"></a>联系支持人员以访问多萨
 
-[查找其他国家或地区](../contact-support-for-business-products.md)。
+[查找另一个国家/地区](../contact-support-for-business-products.md)。
 
 ## <a name="phone-number"></a>电话号码
-+ 1 312 843 5147
++1 312 843 5147
 
 ## <a name="hours"></a>工作时间
 ### <a name="billing-support"></a>计费支持：
 
-法语： Mon-Fri 上午8点-4 AM
+法语：Mon-Fri上午 8 点到上午 4 点
 
-英语： Mon-Fri 上午8点-4 AM
+英语：Mon-Fri上午 8 点到上午 4 点
 
 ### <a name="technical-support"></a>技术支持：
 
-法语： Mon-Fri 上午7点-上午8点
+法语：Mon-Fri上午 7 点到上午 8 点
 
 英语：全天候
 

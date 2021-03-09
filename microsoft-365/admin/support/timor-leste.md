@@ -1,5 +1,5 @@
 ---
-title: Timor-Leste 的支持信息
+title: 支持信息Timor-Leste
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -9,34 +9,33 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
-description: 了解如何联系你所在国家或地区的支持人员。
+description: 了解如何联系你的国家/地区支持人员。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 3154c0a84e4f9efe947a57a4ac646d916dc6c13a
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 162aa205e7c58e5ea8c4b041e84e5863e5711701
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48639199"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50543972"
 ---
-# <a name="contact-support-for-timor-leste"></a>Timor-Leste 的联系支持
+# <a name="contact-support-for-timor-leste"></a>请联系支持人员Timor-Leste
 
-[查找其他国家或地区](../contact-support-for-business-products.md)。
+[查找另一个国家/地区](../contact-support-for-business-products.md)。
 
 ## <a name="phone-number"></a>电话号码
-+ 1 312 843 5155
++1 312 843 5155
 
 ## <a name="hours"></a>工作时间
 ### <a name="billing-support"></a>计费支持：
 
-葡萄牙语： Mon-Fri 晚上9点-5 AM
+葡萄牙语：Mon-Fri 9 PM-5 AM
 
-英语： Mon-Fri 晚上9点-5 AM
+英语：Mon-Fri 9 PM-5 AM
 
 ### <a name="technical-support"></a>技术支持：
 
-葡萄牙语：周一至周六和周六 noon 之间的一天24小时
+葡萄牙语：一天 24 小时，从周一中午到星期六中午
 
 英语：全天候
 

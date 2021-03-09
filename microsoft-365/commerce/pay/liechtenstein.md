@@ -9,27 +9,26 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Commerce_Pay
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
-description: 了解在何处发送订阅的付款。
+description: 了解在何处发送订阅付款。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: f286e19870a265a0036523c020e4d1891da1d9a2
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: f4f9e5844264c6c002c07fa9cb3902b9a46f0d02
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48649411"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50543348"
 ---
 # <a name="payment-information-for-liechtenstein"></a>列支敦士登的付款信息
 
-[查找其他国家或地区](../billing-and-payments/pay-for-your-subscription.md)。
+[查找另一个国家/地区](../billing-and-payments/pay-for-your-subscription.md)。
 
-请仅在 CHF 中付款，并在您的付款汇款中 (s) 中引用发票编号。
+请仅以 CHF 支付，并参考 (付款) 付款金额。
 
 ## <a name="electronic-funds-transfer"></a>电子资金转帐
 
-**银行：** Citibank，伦敦  
-**SWIFT 代码：** CITIGB2L  
-**IBAN：** GB44CITI18500812207648  
-**帐号：** 12207648  
-**帐户名称：** WORD  
+**Bank：** Bank， London  
+**SWIFT 代码：** 一个 2016 年 1 月 2 日  
+**IBAN：** GB44CITI1850081207648  
+**帐号** ：12207648  
+**帐户名称：** MICROSOFT  
