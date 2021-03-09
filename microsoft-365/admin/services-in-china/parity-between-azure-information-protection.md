@@ -1,5 +1,5 @@
 ---
-title: 适用于由世纪网运营的 Office 365 的 Azure 信息保护支持
+title: 适用于由世纪互联运营的 Office 365 的 Azure 信息保护支持
 f1.keywords:
 - NOCSH
 ms.author: sharik
@@ -18,7 +18,7 @@ search.appverid:
 - MET150
 - GEU150
 - GEA150
-description: 深入了解适用于由世纪网运营的 Office 365 的 Azure 信息保护 （AIP） 以及如何为中国客户进行配置。
+description: 深入了解适用于由世纪互联运营的 Office 365 的 Azure 信息保护 （AIP） 以及如何为中国客户进行配置。
 monikerRange: o365-21vianet
 ms.openlocfilehash: 300e7633237511fb9de64199ae7cf54594f2239e
 ms.sourcegitcommit: 3b369a44b71540c8b8214ce588a7aa6f47c3bb1e
@@ -27,15 +27,15 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 02/04/2021
 ms.locfileid: "50099674"
 ---
-# <a name="azure-information-protection-support-for-office-365-operated-by-21vianet"></a>适用于由世纪网运营的 Office 365 的 Azure 信息保护支持
+# <a name="azure-information-protection-support-for-office-365-operated-by-21vianet"></a>适用于由世纪互联运营的 Office 365 的 Azure 信息保护支持
 
-本文介绍了 Azure 信息保护 （AIP） 对由世纪网运营的 Office 365 和商业产品/服务之间的差异，以及为中国&mdash;客户配置 AIP 的详细说明，包括如何安装 AIP 本地扫描仪和管理内容扫描作业。
+本文介绍了 Azure 信息保护 （AIP） 对由世纪互联运营的 Office 365 和商业产品/服务之间的差异，以及为中国&mdash;客户配置 AIP 的详细说明，包括如何安装 AIP 本地扫描仪和管理内容扫描作业。
 
-## <a name="differences-between-aip-for-office-365-operated-by-21vianet-and-commercial-offerings"></a>由世纪网运营的 Office 365 的 AIP 与商业产品之间的差异
+## <a name="differences-between-aip-for-office-365-operated-by-21vianet-and-commercial-offerings"></a>由世纪互联运营的 Office 365 的 AIP 与商业产品之间的差异
 
-我们的目标是通过针对由世纪网运营的 Office 365 的 AIP 产品，为中国客户提供所有商业特性和功能，但是我们要强调的一些缺失功能。
+我们的目标是通过针对由世纪互联运营的 Office 365 的 AIP 产品，为中国客户提供所有商业特性和功能，但是我们要强调的一些缺失功能。
 
-以下列表包含世纪行运营的 Office 365 的 AIP 与 2021 年 1 月前的商业产品之间的现有缺陷：
+以下列表包含世纪互联运营的 Office 365 的 AIP 与 2021 年 1 月前的商业产品之间的现有缺陷：
 
 - 仅 Microsoft 365 企业版应用（内部版本 11731.10000 或更高版本）支持信息权限管理 （IRM）。 不支持 Office 2010、Office 2013 和其他 Office 2016 版本。
 
@@ -43,7 +43,7 @@ ms.locfileid: "50099674"
   
 - 支持在商业云中与用户共享受保护的电子邮件。
   
-- 目前，不可在商业云中与用户共享文档和电子邮件附件。 这包括商业云中由世纪网络用户运营的 Office 365、在商业云中由世纪网用户运营的非 Office 365 用户，以及拥有个人版 RMS 许可证的用户。
+- 目前，不可在商业云中与用户共享文档和电子邮件附件。 这包括商业云中由世纪互联络用户运营的 Office 365、在商业云中由世纪互联用户运营的非 Office 365 用户，以及拥有个人版 RMS 许可证的用户。
   
 - 具有 SharePoint（受 IRM 保护的网站和库）的 IRM 当前不可用。
   
@@ -74,8 +74,8 @@ ms.locfileid: "50099674"
 
     1. 以管理员角色启动 PowerShell。
     2. 如果未安装 AIPService 模块，请运行 `Install-Module AipService`。
-    3. 使用 <a0/ `Import-Module AipService`。
-    4. 使用 <a0/ `Connect-AipService -environmentname azurechinacloud`连接到服务。
+    3. 使用 `Import-Module AipService`。
+    4. 使用 `Connect-AipService -environmentname azurechinacloud`连接到服务。
     5. 运行 `(Get-AipServiceConfiguration).FunctionalState` ，检查状态是否 `Enabled`。
 
 2. 如果功能状态为 `Disabled`，请运行 `Enable-AipService`。
@@ -92,7 +92,7 @@ ms.locfileid: "50099674"
 
     1. 以管理员角色启动 PowerShell。
     2. 如果未安装 AIPService 模块，请运行 `Install-Module AipService`。
-    3. 使用 <a0/ `Connect-AipService -environmentname azurechinacloud`连接到服务。
+    3. 使用 `Connect-AipService -environmentname azurechinacloud`连接到服务。
     4. 运行 `(Get-AipServiceConfiguration).RightsManagementServiceId` 获得 RMS ID。
 
 2. 登录到您的 DNS 提供商，导航到域的 DNS 设置，然后添加新的 SRV 记录。
