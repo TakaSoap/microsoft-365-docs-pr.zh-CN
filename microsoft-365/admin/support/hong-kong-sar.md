@@ -1,5 +1,5 @@
 ---
-title: 中国香港特别行政区的支持信息
+title: 香港特别行政区的支持信息
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -9,39 +9,38 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
-description: 了解如何联系你所在国家或地区的支持人员。
+description: 了解如何联系你的国家/地区支持人员。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 70e6c1b69c0a5575ea171906e450fd8c8d2e629e
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 0f7cd59079edd6e578c4e209f8d2e75cfd9f9eb9
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48642175"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50546876"
 ---
-# <a name="contact-support-for-hong-kong-sar"></a><span data-ttu-id="981a0-103">联系人对中国香港特别行政区的支持</span><span class="sxs-lookup"><span data-stu-id="981a0-103">Contact support for Hong Kong SAR</span></span>
+# <a name="contact-support-for-hong-kong-sar"></a><span data-ttu-id="b83be-103">联系香港特别行政区的支持人员</span><span class="sxs-lookup"><span data-stu-id="b83be-103">Contact support for Hong Kong SAR</span></span>
 
-<span data-ttu-id="981a0-104">[查找其他国家或地区](../contact-support-for-business-products.md)。</span><span class="sxs-lookup"><span data-stu-id="981a0-104">[Find another country or region](../contact-support-for-business-products.md).</span></span>
+<span data-ttu-id="b83be-104">[查找另一个国家/地区](../contact-support-for-business-products.md)。</span><span class="sxs-lookup"><span data-stu-id="b83be-104">[Find another country or region](../contact-support-for-business-products.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="981a0-105">电话号码</span><span class="sxs-lookup"><span data-stu-id="981a0-105">Phone number</span></span>
-<span data-ttu-id="981a0-106">3 071 3055</span><span class="sxs-lookup"><span data-stu-id="981a0-106">3 071 3055</span></span>
+## <a name="phone-number"></a><span data-ttu-id="b83be-105">电话号码</span><span class="sxs-lookup"><span data-stu-id="b83be-105">Phone number</span></span>
+<span data-ttu-id="b83be-106">3 071 3055</span><span class="sxs-lookup"><span data-stu-id="b83be-106">3 071 3055</span></span>
 
-## <a name="hours"></a><span data-ttu-id="981a0-107">工作时间</span><span class="sxs-lookup"><span data-stu-id="981a0-107">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="981a0-108">计费支持：</span><span class="sxs-lookup"><span data-stu-id="981a0-108">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="b83be-107">工作时间</span><span class="sxs-lookup"><span data-stu-id="b83be-107">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="b83be-108">计费支持：</span><span class="sxs-lookup"><span data-stu-id="b83be-108">Billing Support:</span></span>
 
-<span data-ttu-id="981a0-109">Cantonese： Mon-Fri 上午9点-下午6点</span><span class="sxs-lookup"><span data-stu-id="981a0-109">Cantonese: Mon-Fri 9 AM-6 PM</span></span>
+<span data-ttu-id="b83be-109">尼泊尔语：Mon-Fri上午 9 点到下午 6 点</span><span class="sxs-lookup"><span data-stu-id="b83be-109">Cantonese: Mon-Fri 9 AM-6 PM</span></span>
 
-<span data-ttu-id="981a0-110">普通话： Mon-Fri 上午9点-下午6点</span><span class="sxs-lookup"><span data-stu-id="981a0-110">Mandarin: Mon-Fri 9 AM-6 PM</span></span>
+<span data-ttu-id="b83be-110">国语：Mon-Fri上午 9 点到下午 6 点</span><span class="sxs-lookup"><span data-stu-id="b83be-110">Mandarin: Mon-Fri 9 AM-6 PM</span></span>
 
-<span data-ttu-id="981a0-111">英语： Mon-Fri 上午9点-下午6点</span><span class="sxs-lookup"><span data-stu-id="981a0-111">English: Mon-Fri 9 AM-6 PM</span></span>
+<span data-ttu-id="b83be-111">英语：Mon-Fri上午 9 点到下午 6 点</span><span class="sxs-lookup"><span data-stu-id="b83be-111">English: Mon-Fri 9 AM-6 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="981a0-112">技术支持：</span><span class="sxs-lookup"><span data-stu-id="981a0-112">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="b83be-112">技术支持：</span><span class="sxs-lookup"><span data-stu-id="b83be-112">Technical Support:</span></span>
 
-<span data-ttu-id="981a0-113">Cantonese： Mon-Fri 上午9点-下午6点</span><span class="sxs-lookup"><span data-stu-id="981a0-113">Cantonese: Mon-Fri 9 AM-6 PM</span></span>
+<span data-ttu-id="b83be-113">尼泊尔语：Mon-Fri上午 9 点到下午 6 点</span><span class="sxs-lookup"><span data-stu-id="b83be-113">Cantonese: Mon-Fri 9 AM-6 PM</span></span>
 
-<span data-ttu-id="981a0-114">普通话： Mon-Fri 上午9点-下午6点</span><span class="sxs-lookup"><span data-stu-id="981a0-114">Mandarin: Mon-Fri 9 AM-6 PM</span></span>
+<span data-ttu-id="b83be-114">国语：Mon-Fri上午 9 点到下午 6 点</span><span class="sxs-lookup"><span data-stu-id="b83be-114">Mandarin: Mon-Fri 9 AM-6 PM</span></span>
 
-<span data-ttu-id="981a0-115">英语：全天候</span><span class="sxs-lookup"><span data-stu-id="981a0-115">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="b83be-115">英语：全天候</span><span class="sxs-lookup"><span data-stu-id="b83be-115">English: 24 hours a day, 7 days a week</span></span>
 
-<span data-ttu-id="981a0-116">本地呼叫费用适用</span><span class="sxs-lookup"><span data-stu-id="981a0-116">Local call charges apply</span></span>
+<span data-ttu-id="b83be-116">本地呼叫费用适用</span><span class="sxs-lookup"><span data-stu-id="b83be-116">Local call charges apply</span></span>

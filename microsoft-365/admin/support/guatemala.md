@@ -9,33 +9,32 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
-description: 了解如何联系你所在国家或地区的支持人员。
+description: 了解如何联系你的国家/地区支持人员。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: abe95a39cfea8443a1f27288500ec9dbc8396610
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 1ae18a1e7fcba057058850be1da605760f07bba1
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48642235"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50547080"
 ---
-# <a name="contact-support-for-guatemala"></a><span data-ttu-id="2d363-103">对危地马拉的联系支持</span><span class="sxs-lookup"><span data-stu-id="2d363-103">Contact support for Guatemala</span></span>
+# <a name="contact-support-for-guatemala"></a><span data-ttu-id="315d1-103">联系危地马拉支持人员</span><span class="sxs-lookup"><span data-stu-id="315d1-103">Contact support for Guatemala</span></span>
 
-<span data-ttu-id="2d363-104">[查找其他国家或地区](../contact-support-for-business-products.md)。</span><span class="sxs-lookup"><span data-stu-id="2d363-104">[Find another country or region](../contact-support-for-business-products.md).</span></span>
+<span data-ttu-id="315d1-104">[查找另一个国家/地区](../contact-support-for-business-products.md)。</span><span class="sxs-lookup"><span data-stu-id="315d1-104">[Find another country or region](../contact-support-for-business-products.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="2d363-105">电话号码</span><span class="sxs-lookup"><span data-stu-id="2d363-105">Phone number</span></span>
-<span data-ttu-id="2d363-106">1 800 300 0069</span><span class="sxs-lookup"><span data-stu-id="2d363-106">1 800 300 0069</span></span>
+## <a name="phone-number"></a><span data-ttu-id="315d1-105">电话号码</span><span class="sxs-lookup"><span data-stu-id="315d1-105">Phone number</span></span>
+<span data-ttu-id="315d1-106">1 800 300 0069</span><span class="sxs-lookup"><span data-stu-id="315d1-106">1 800 300 0069</span></span>
 
-<span data-ttu-id="2d363-107">选择选项4</span><span class="sxs-lookup"><span data-stu-id="2d363-107">Select option 4</span></span>
+<span data-ttu-id="315d1-107">选择选项 4</span><span class="sxs-lookup"><span data-stu-id="315d1-107">Select option 4</span></span>
 
-<span data-ttu-id="2d363-108">输入代码5002</span><span class="sxs-lookup"><span data-stu-id="2d363-108">Enter code 5002</span></span>
+<span data-ttu-id="315d1-108">输入代码 5002</span><span class="sxs-lookup"><span data-stu-id="315d1-108">Enter code 5002</span></span>
 
-## <a name="hours"></a><span data-ttu-id="2d363-109">工作时间</span><span class="sxs-lookup"><span data-stu-id="2d363-109">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="2d363-110">计费支持：</span><span class="sxs-lookup"><span data-stu-id="2d363-110">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="315d1-109">工作时间</span><span class="sxs-lookup"><span data-stu-id="315d1-109">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="315d1-110">计费支持：</span><span class="sxs-lookup"><span data-stu-id="315d1-110">Billing Support:</span></span>
 
-<span data-ttu-id="2d363-111">西班牙语： Mon-Fri 上午9点-下午5点</span><span class="sxs-lookup"><span data-stu-id="2d363-111">Spanish: Mon-Fri 9 AM-5 PM</span></span>
+<span data-ttu-id="315d1-111">西班牙语：Mon-Fri上午 9 点到下午 5 点</span><span class="sxs-lookup"><span data-stu-id="315d1-111">Spanish: Mon-Fri 9 AM-5 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="2d363-112">技术支持：</span><span class="sxs-lookup"><span data-stu-id="2d363-112">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="315d1-112">技术支持：</span><span class="sxs-lookup"><span data-stu-id="315d1-112">Technical Support:</span></span>
 
-<span data-ttu-id="2d363-113">西班牙语：每天24小时，一周7天</span><span class="sxs-lookup"><span data-stu-id="2d363-113">Spanish: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="315d1-113">西班牙语：一天 24 小时，每周 7 天</span><span class="sxs-lookup"><span data-stu-id="315d1-113">Spanish: 24 hours a day, 7 days a week</span></span>

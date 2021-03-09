@@ -9,35 +9,34 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
-description: 了解如何联系你所在国家或地区的支持人员。
+description: 了解如何联系你的国家/地区支持人员。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: b651ad2a719a08ff5d6a7427cd3ccb268f043f13
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 742b49bcc9690f85cf8a5ea626bd948ce59eae04
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48641983"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50546720"
 ---
-# <a name="contact-support-for-indonesia"></a><span data-ttu-id="b9fa5-103">联系人对印度尼西亚的支持</span><span class="sxs-lookup"><span data-stu-id="b9fa5-103">Contact support for Indonesia</span></span>
+# <a name="contact-support-for-indonesia"></a><span data-ttu-id="12942-103">联系印度尼西亚支持人员</span><span class="sxs-lookup"><span data-stu-id="12942-103">Contact support for Indonesia</span></span>
 
-<span data-ttu-id="b9fa5-104">[查找其他国家或地区](../contact-support-for-business-products.md)。</span><span class="sxs-lookup"><span data-stu-id="b9fa5-104">[Find another country or region](../contact-support-for-business-products.md).</span></span>
+<span data-ttu-id="12942-104">[查找另一个国家/地区](../contact-support-for-business-products.md)。</span><span class="sxs-lookup"><span data-stu-id="12942-104">[Find another country or region](../contact-support-for-business-products.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="b9fa5-105">电话号码</span><span class="sxs-lookup"><span data-stu-id="b9fa5-105">Phone number</span></span>
-<span data-ttu-id="b9fa5-106">007 803 011 0882 (Telkom) </span><span class="sxs-lookup"><span data-stu-id="b9fa5-106">007 803 011 0882 (Telkom)</span></span>
+## <a name="phone-number"></a><span data-ttu-id="12942-105">电话号码</span><span class="sxs-lookup"><span data-stu-id="12942-105">Phone number</span></span>
+<span data-ttu-id="12942-106">007 803 011 0882 (Telkom) </span><span class="sxs-lookup"><span data-stu-id="12942-106">007 803 011 0882 (Telkom)</span></span>
 
-<span data-ttu-id="b9fa5-107">001 803 442 304 (Indosat) </span><span class="sxs-lookup"><span data-stu-id="b9fa5-107">001 803 442 304 (Indosat)</span></span>
+<span data-ttu-id="12942-107">001 803 442 304 (Indosat) </span><span class="sxs-lookup"><span data-stu-id="12942-107">001 803 442 304 (Indosat)</span></span>
 
-## <a name="hours"></a><span data-ttu-id="b9fa5-108">工作时间</span><span class="sxs-lookup"><span data-stu-id="b9fa5-108">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="b9fa5-109">计费支持：</span><span class="sxs-lookup"><span data-stu-id="b9fa5-109">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="12942-108">工作时间</span><span class="sxs-lookup"><span data-stu-id="12942-108">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="12942-109">计费支持：</span><span class="sxs-lookup"><span data-stu-id="12942-109">Billing Support:</span></span>
 
-<span data-ttu-id="b9fa5-110">马来印度尼西亚： Mon-Fri 上午8点-下午5点</span><span class="sxs-lookup"><span data-stu-id="b9fa5-110">Bahasa Indonesia: Mon-Fri 8 AM-5 PM</span></span>
+<span data-ttu-id="12942-110">印度尼西亚语：Mon-Fri上午 8 点到下午 5 点</span><span class="sxs-lookup"><span data-stu-id="12942-110">Bahasa Indonesia: Mon-Fri 8 AM-5 PM</span></span>
 
-<span data-ttu-id="b9fa5-111">英语： Mon-Fri 上午9点-下午6点</span><span class="sxs-lookup"><span data-stu-id="b9fa5-111">English: Mon-Fri 9 AM-6 PM</span></span>
+<span data-ttu-id="12942-111">英语：Mon-Fri上午 9 点到下午 6 点</span><span class="sxs-lookup"><span data-stu-id="12942-111">English: Mon-Fri 9 AM-6 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="b9fa5-112">技术支持：</span><span class="sxs-lookup"><span data-stu-id="b9fa5-112">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="12942-112">技术支持：</span><span class="sxs-lookup"><span data-stu-id="12942-112">Technical Support:</span></span>
 
-<span data-ttu-id="b9fa5-113">马来印度尼西亚： Mon-Fri 上午8点-下午5点</span><span class="sxs-lookup"><span data-stu-id="b9fa5-113">Bahasa Indonesia: Mon-Fri 8 AM-5 PM</span></span>
+<span data-ttu-id="12942-113">印度尼西亚语：Mon-Fri上午 8 点到下午 5 点</span><span class="sxs-lookup"><span data-stu-id="12942-113">Bahasa Indonesia: Mon-Fri 8 AM-5 PM</span></span>
 
-<span data-ttu-id="b9fa5-114">英语：全天候</span><span class="sxs-lookup"><span data-stu-id="b9fa5-114">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="12942-114">英语：全天候</span><span class="sxs-lookup"><span data-stu-id="12942-114">English: 24 hours a day, 7 days a week</span></span>

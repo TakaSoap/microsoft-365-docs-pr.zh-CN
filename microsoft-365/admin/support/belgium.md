@@ -1,5 +1,5 @@
 ---
-title: 比利时支持信息
+title: 比利时的支持信息
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -9,39 +9,38 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
-description: 了解如何联系你所在国家或地区的支持人员。
+description: 了解如何联系你的国家/地区支持人员。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 58b2920b7fc8af0268d38f38467cf01db37148d1
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 7da86a19364c8bb303706b048e694d720cf0518f
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48643915"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50548664"
 ---
-# <a name="contact-support-for-belgium"></a><span data-ttu-id="716b4-103">比利时联系支持人员</span><span class="sxs-lookup"><span data-stu-id="716b4-103">Contact support for Belgium</span></span>
+# <a name="contact-support-for-belgium"></a><span data-ttu-id="4bef5-103">联系比利时的支持人员</span><span class="sxs-lookup"><span data-stu-id="4bef5-103">Contact support for Belgium</span></span>
 
-<span data-ttu-id="716b4-104">[查找其他国家或地区](../contact-support-for-business-products.md)。</span><span class="sxs-lookup"><span data-stu-id="716b4-104">[Find another country or region](../contact-support-for-business-products.md).</span></span>
+<span data-ttu-id="4bef5-104">[查找另一个国家/地区](../contact-support-for-business-products.md)。</span><span class="sxs-lookup"><span data-stu-id="4bef5-104">[Find another country or region](../contact-support-for-business-products.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="716b4-105">电话号码</span><span class="sxs-lookup"><span data-stu-id="716b4-105">Phone number</span></span>
-<span data-ttu-id="716b4-106">0800 81174</span><span class="sxs-lookup"><span data-stu-id="716b4-106">0800 81174</span></span>
+## <a name="phone-number"></a><span data-ttu-id="4bef5-105">电话号码</span><span class="sxs-lookup"><span data-stu-id="4bef5-105">Phone number</span></span>
+<span data-ttu-id="4bef5-106">0800 81174</span><span class="sxs-lookup"><span data-stu-id="4bef5-106">0800 81174</span></span>
 
-## <a name="hours"></a><span data-ttu-id="716b4-107">工作时间</span><span class="sxs-lookup"><span data-stu-id="716b4-107">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="716b4-108">计费支持：</span><span class="sxs-lookup"><span data-stu-id="716b4-108">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="4bef5-107">工作时间</span><span class="sxs-lookup"><span data-stu-id="4bef5-107">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="4bef5-108">计费支持：</span><span class="sxs-lookup"><span data-stu-id="4bef5-108">Billing Support:</span></span>
 
-<span data-ttu-id="716b4-109">荷兰语： Mon-Fri 上午9点-下午5点</span><span class="sxs-lookup"><span data-stu-id="716b4-109">Dutch: Mon-Fri 9 AM-5 PM</span></span>
+<span data-ttu-id="4bef5-109">荷兰语：Mon-Fri上午 9 点到下午 5 点</span><span class="sxs-lookup"><span data-stu-id="4bef5-109">Dutch: Mon-Fri 9 AM-5 PM</span></span>
 
-<span data-ttu-id="716b4-110">法语： Mon-Fri 上午9点-下午5点</span><span class="sxs-lookup"><span data-stu-id="716b4-110">French: Mon-Fri 9 AM-5 PM</span></span>
+<span data-ttu-id="4bef5-110">法语：Mon-Fri上午 9 点到下午 5 点</span><span class="sxs-lookup"><span data-stu-id="4bef5-110">French: Mon-Fri 9 AM-5 PM</span></span>
 
-<span data-ttu-id="716b4-111">英语： Mon-Fri 上午9点-下午5点</span><span class="sxs-lookup"><span data-stu-id="716b4-111">English: Mon-Fri 9 AM-5 PM</span></span>
+<span data-ttu-id="4bef5-111">英语：Mon-Fri上午 9 点到下午 5 点</span><span class="sxs-lookup"><span data-stu-id="4bef5-111">English: Mon-Fri 9 AM-5 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="716b4-112">技术支持：</span><span class="sxs-lookup"><span data-stu-id="716b4-112">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="4bef5-112">技术支持：</span><span class="sxs-lookup"><span data-stu-id="4bef5-112">Technical Support:</span></span>
 
-<span data-ttu-id="716b4-113">法语： Mon-Fri 上午8点-9 PM</span><span class="sxs-lookup"><span data-stu-id="716b4-113">French: Mon-Fri 8 AM-9 PM</span></span>
+<span data-ttu-id="4bef5-113">法语：Mon-Fri上午 8 点到下午 9 点</span><span class="sxs-lookup"><span data-stu-id="4bef5-113">French: Mon-Fri 8 AM-9 PM</span></span>
 
-<span data-ttu-id="716b4-114">英语：全天候</span><span class="sxs-lookup"><span data-stu-id="716b4-114">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="4bef5-114">英语：全天候</span><span class="sxs-lookup"><span data-stu-id="4bef5-114">English: 24 hours a day, 7 days a week</span></span>
 
-<span data-ttu-id="716b4-115">备选电话号码： 02 200 88 84</span><span class="sxs-lookup"><span data-stu-id="716b4-115">Alternative Phone Number: 02 200 88 84</span></span>
+<span data-ttu-id="4bef5-115">备用电话号码：02 200 88 84</span><span class="sxs-lookup"><span data-stu-id="4bef5-115">Alternative Phone Number: 02 200 88 84</span></span>
 
-<span data-ttu-id="716b4-116">本地呼叫费用适用</span><span class="sxs-lookup"><span data-stu-id="716b4-116">Local call charges apply</span></span>
+<span data-ttu-id="4bef5-116">本地呼叫费用适用</span><span class="sxs-lookup"><span data-stu-id="4bef5-116">Local call charges apply</span></span>
