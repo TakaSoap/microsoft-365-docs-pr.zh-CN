@@ -9,28 +9,27 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Commerce_Pay
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
-description: 了解在何处发送订阅的付款。
+description: 了解在何处发送订阅付款。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: d840e5341eff0259da48657b877a0c493a960933
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 55f4cbc0b4e5d3b88de084fa0db73b54caf424c4
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48646927"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50542796"
 ---
-# <a name="payment-information-for-poland"></a><span data-ttu-id="fa451-103">波兰的付款信息</span><span class="sxs-lookup"><span data-stu-id="fa451-103">Payment information for Poland</span></span>
+# <a name="payment-information-for-poland"></a><span data-ttu-id="60f27-103">波兰的付款信息</span><span class="sxs-lookup"><span data-stu-id="60f27-103">Payment information for Poland</span></span>
 
-<span data-ttu-id="fa451-104">[查找其他国家或地区](../billing-and-payments/pay-for-your-subscription.md)。</span><span class="sxs-lookup"><span data-stu-id="fa451-104">[Find another country or region](../billing-and-payments/pay-for-your-subscription.md).</span></span>
+<span data-ttu-id="60f27-104">[查找另一个国家/地区](../billing-and-payments/pay-for-your-subscription.md)。</span><span class="sxs-lookup"><span data-stu-id="60f27-104">[Find another country or region](../billing-and-payments/pay-for-your-subscription.md).</span></span>
 
-<span data-ttu-id="fa451-105">请仅在 EUR 中付款，并在付款汇款中 (s) 引用发票编号。</span><span class="sxs-lookup"><span data-stu-id="fa451-105">Please pay in EUR only and reference invoice number(s) on your payment remittance.</span></span>
+<span data-ttu-id="60f27-105">请仅以 EUR 支付，并参考 (付款) 付款金额。</span><span class="sxs-lookup"><span data-stu-id="60f27-105">Please pay in EUR only and reference invoice number(s) on your payment remittance.</span></span>
 
-## <a name="electronic-funds-transfer"></a><span data-ttu-id="fa451-106">电子资金转帐</span><span class="sxs-lookup"><span data-stu-id="fa451-106">Electronic Funds Transfer</span></span>
+## <a name="electronic-funds-transfer"></a><span data-ttu-id="60f27-106">电子资金转帐</span><span class="sxs-lookup"><span data-stu-id="60f27-106">Electronic Funds Transfer</span></span>
 
-<span data-ttu-id="fa451-107">**银行：** Citibank，伦敦</span><span class="sxs-lookup"><span data-stu-id="fa451-107">**Bank:** Citibank, London</span></span>  
-<span data-ttu-id="fa451-108">**SWIFT 代码/numéro：** CITIGB2L</span><span class="sxs-lookup"><span data-stu-id="fa451-108">**SWIFT Code/BIC:** CITIGB2L</span></span>  
-<span data-ttu-id="fa451-109">**IBAN：** GB31CITI18500812207591</span><span class="sxs-lookup"><span data-stu-id="fa451-109">**IBAN:** GB31CITI18500812207591</span></span>  
-<span data-ttu-id="fa451-110">**排序代码：** 185008</span><span class="sxs-lookup"><span data-stu-id="fa451-110">**SORT Code:** 185008</span></span>  
-<span data-ttu-id="fa451-111">**帐号：** 12207591</span><span class="sxs-lookup"><span data-stu-id="fa451-111">**Account Number:** 12207591</span></span>  
-<span data-ttu-id="fa451-112">**帐户名称：** WORD</span><span class="sxs-lookup"><span data-stu-id="fa451-112">**Account Name:** MICROSOFT</span></span>
+<span data-ttu-id="60f27-107">**Bank：** Bank， London</span><span class="sxs-lookup"><span data-stu-id="60f27-107">**Bank:** Citibank, London</span></span>  
+<span data-ttu-id="60f27-108">**SWIFT 代码/BIC：** 一个 2016 年 1 月 2 日</span><span class="sxs-lookup"><span data-stu-id="60f27-108">**SWIFT Code/BIC:** CITIGB2L</span></span>  
+<span data-ttu-id="60f27-109">**IBAN：** GB31CITI18500812207591</span><span class="sxs-lookup"><span data-stu-id="60f27-109">**IBAN:** GB31CITI18500812207591</span></span>  
+<span data-ttu-id="60f27-110">**SORT 代码** ：185008</span><span class="sxs-lookup"><span data-stu-id="60f27-110">**SORT Code:** 185008</span></span>  
+<span data-ttu-id="60f27-111">**帐号** ：12207591</span><span class="sxs-lookup"><span data-stu-id="60f27-111">**Account Number:** 12207591</span></span>  
+<span data-ttu-id="60f27-112">**帐户名称：** MICROSOFT</span><span class="sxs-lookup"><span data-stu-id="60f27-112">**Account Name:** MICROSOFT</span></span>

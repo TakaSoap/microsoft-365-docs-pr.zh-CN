@@ -1,5 +1,5 @@
 ---
-title: Virgin Islands 的付款信息（美国）
+title: 美属维尔京群岛的付款信息
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -9,27 +9,26 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Commerce_Pay
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
-description: 了解在何处发送订阅的付款。
+description: 了解在何处发送订阅付款。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 62ae33afde81d2beccabc9836c3ad94182705d6e
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: cfe40da53d7ffb7430f0da54dfd558e460e0d97f
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48648007"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50542450"
 ---
-# <a name="payment-information-for-virgin-islands-us"></a><span data-ttu-id="54876-103">Virgin Islands 的付款信息（美国）</span><span class="sxs-lookup"><span data-stu-id="54876-103">Payment information for Virgin Islands, US</span></span>
+# <a name="payment-information-for-virgin-islands-us"></a><span data-ttu-id="c3fe0-103">美属维尔京群岛的付款信息</span><span class="sxs-lookup"><span data-stu-id="c3fe0-103">Payment information for Virgin Islands, US</span></span>
 
-<span data-ttu-id="54876-104">[查找其他国家或地区](../billing-and-payments/pay-for-your-subscription.md)。</span><span class="sxs-lookup"><span data-stu-id="54876-104">[Find another country or region](../billing-and-payments/pay-for-your-subscription.md).</span></span>
+<span data-ttu-id="c3fe0-104">[查找另一个国家/地区](../billing-and-payments/pay-for-your-subscription.md)。</span><span class="sxs-lookup"><span data-stu-id="c3fe0-104">[Find another country or region](../billing-and-payments/pay-for-your-subscription.md).</span></span>
 
-<span data-ttu-id="54876-105">请仅以 USD 为单位付款，并在您的付款汇款中引用发票编号 (s) 。</span><span class="sxs-lookup"><span data-stu-id="54876-105">Please pay in USD only and reference invoice number(s) on your payment remittance.</span></span>
+<span data-ttu-id="c3fe0-105">Please pay in USD only and reference invoice number () on your payment) .</span><span class="sxs-lookup"><span data-stu-id="c3fe0-105">Please pay in USD only and reference invoice number(s) on your payment remittance.</span></span>
 
-## <a name="electronic-funds-transfer"></a><span data-ttu-id="54876-106">电子资金转帐</span><span class="sxs-lookup"><span data-stu-id="54876-106">Electronic Funds Transfer</span></span>
+## <a name="electronic-funds-transfer"></a><span data-ttu-id="c3fe0-106">电子资金转帐</span><span class="sxs-lookup"><span data-stu-id="c3fe0-106">Electronic Funds Transfer</span></span>
 
-<span data-ttu-id="54876-107">**银行：** 美洲银行</span><span class="sxs-lookup"><span data-stu-id="54876-107">**Bank:** Bank of America</span></span>  
-<span data-ttu-id="54876-108">**分支：** 州</span><span class="sxs-lookup"><span data-stu-id="54876-108">**Branch:** Dallas</span></span>  
-<span data-ttu-id="54876-109">**SWIFT 代码：** BOFAUS3N</span><span class="sxs-lookup"><span data-stu-id="54876-109">**SWIFT Code:** BOFAUS3N</span></span>  
-<span data-ttu-id="54876-110">**帐号：** 4426587954</span><span class="sxs-lookup"><span data-stu-id="54876-110">**Account Number:** 4426587954</span></span>  
-<span data-ttu-id="54876-111">**帐户名称：** Word</span><span class="sxs-lookup"><span data-stu-id="54876-111">**Account Name:** Microsoft</span></span>  
+<span data-ttu-id="c3fe0-107">**Bank：** 美洲银行</span><span class="sxs-lookup"><span data-stu-id="c3fe0-107">**Bank:** Bank of America</span></span>  
+<span data-ttu-id="c3fe0-108">**分支：** Dallas</span><span class="sxs-lookup"><span data-stu-id="c3fe0-108">**Branch:** Dallas</span></span>  
+<span data-ttu-id="c3fe0-109">**SWIFT 代码：** BOFAUS3N</span><span class="sxs-lookup"><span data-stu-id="c3fe0-109">**SWIFT Code:** BOFAUS3N</span></span>  
+<span data-ttu-id="c3fe0-110">**帐号** ：4426587954</span><span class="sxs-lookup"><span data-stu-id="c3fe0-110">**Account Number:** 4426587954</span></span>  
+<span data-ttu-id="c3fe0-111">**帐户名称：** Microsoft</span><span class="sxs-lookup"><span data-stu-id="c3fe0-111">**Account Name:** Microsoft</span></span>  
