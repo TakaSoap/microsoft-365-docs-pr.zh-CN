@@ -1,5 +1,5 @@
 ---
-title: Microsoft SharePoint 合成器采用：入门
+title: Microsoft SharePoint Syntex 采用：入门
 description: 了解如何在组织中使用和实施 SharePoint Syntex，以帮助你解决业务问题。
 ms.author: samanro
 author: samanro
@@ -14,55 +14,40 @@ ms.collection:
 ms.custom: Adopt
 search.appverid: ''
 localization_priority: Normal
-ms.openlocfilehash: 7a0bd04121d7400cced22e43a539bd21c45a7fc3
-ms.sourcegitcommit: 162c01dfaa2fdb3225ce4c24964c1065ce22ed5d
+ms.openlocfilehash: e88a7de1c81995b878dbf8a9308fbc774583289e
+ms.sourcegitcommit: 8950d3cb0f3087be7105e370ed02c7a575d00ec2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2021
-ms.locfileid: "49976565"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50597054"
 ---
-# <a name="microsoft-sharepoint-syntex-adoption-get-started"></a>Microsoft SharePoint 合成器采用：入门
+# <a name="microsoft-sharepoint-syntex-adoption-get-started"></a>Microsoft SharePoint Syntex 采用：入门
 
-将 SharePoint 合成中可用的智能内容服务视为具有三个部分：
+将 SharePoint Syntex 中可用的智能内容服务视为包含三个部分：
 
-- **内容理解：** 创建无代码 AI 模型以对内容进行分类和提取信息，以自动应用元数据进行知识发现和重用。 了解有关内容[了解的内容。](document-understanding-overview.md)
-- **内容处理：** 使用 Power Automate 自动捕获、获取和分类内容并简化以内容为中心的流程。 详细了解内容 [处理](form-processing-overview.md)。
+- **内容了解：** 创建无代码 AI 模型以对内容进行分类和提取信息，以自动应用元数据以用于知识发现和重用。 了解有关内容[了解的内容。](document-understanding-overview.md)
+- **内容处理：** 使用 Power Automate 自动化内容捕获、获取和分类，并简化以内容为中心的流程。 详细了解内容 [处理](form-processing-overview.md)。
 - **内容合规性：** 通过与 Microsoft 信息保护的集成来控制和管理内容以提高安全性和治理。
 
-借助新的 AI 服务和功能，可以使用 SharePoint Syntex 将内容理解和分类应用程序直接构建到内容管理流中。 有两种不同的内容理解方式。 使用的模型类型基于文件格式和用例：
+借助新的 AI 服务和功能，您可以使用 SharePoint Syntex 将内容理解和分类应用程序直接构建到内容管理流中。 有两种不同的内容理解方式。 使用的模型类型基于文件格式和用例：
 
 | 表单处理 | 文档理解 |
 |:-------|:-------|
-| 从文档库创建。 | 在内容中心（SharePoint 合成的一部分）中创建。 |
+| 从文档库创建。 | 在内容中心（SharePoint Syntex 的一部分）中创建。 |
 | 在 AI 生成器中创建的模型。 | 在本机界面中创建的模型。 |
 | 用于半结构化文件格式。 | 用于非结构化文件格式。 |
-| 可设置分类器。 | 带可选提取器可训练的分类器。 |
-| 仅限于单个库。 | 可应用于多个库。 |
-| 培训 PDF、JPG、PNG 格式，总计 50 MB/500 pp。 | 培训 5-10 个 PDF、Office 或电子邮件文件，包括负面示例。 |
+| 可设置的分类器。 | 带可选提取器的可训练分类器。 |
+| 限制为单个库。 | 可应用于多个库。 |
+| 培训 PDF、JPG、PNG 格式，总大小为 50 MB/500 pp。 | 培训 5-10 个 PDF、Office 或电子邮件文件，包括负面示例。 |
 
-下表介绍了 SharePoint Syntex 的可用性和许可：
-
-| 表单处理 | 文档理解 |
-|:-------|:-------|
-| 表单处理依赖于 Power Platform。 <br>有关 Power Platform 和 AI Builder 的全局可用性的信息，请参阅 [Power Platform 可用性](https://dynamics.microsoft.com/geographic-availability/)。 | 可在所有区域使用。 |
-| 使用 AI Builder 信用额度。<br>可以批量购买 1M 的信用额度。<br>购买 300 多个 SharePoint 合成器许可证时，将包含 100 万个信用额度。<br>1M 信用将允许处理 2000 个文件页。 | 模型在所有拉丁字母语言中均可用。 除了英语之外，还有德语、瑞典语、法语、西班牙语、意大利语和葡萄牙语。 |
-| 针对默认公共数据服务环境进行设置。 | 没有容量限制。 |
-
-有关 AI Builder 信用额度和单位详细信息，请参阅 [AI Builder 许可](https://docs.microsoft.com/ai-builder/administer-licensing)。
-
-SharePoint Syntex 与 Microsoft 365 合规性功能集成，如：
-
-- 根据文档期限或外部事件定义记录策略的保留标签。
-- 设置 DLP、加密、共享和条件访问策略的敏感度标签。
-
-用户可以应用标签，也可以由 SharePoint 合成 AI 模型自动应用标签。 分析和文件计划提供标签使用和策略的扩展管理。
+有关功能的更完整比较，请参阅文档理解模型和表单 [处理模型的区别](difference-between-document-understanding-and-form-processing-model.md)。
 
 ## <a name="identify-pilot-business-scenarios-to-optimize"></a>确定要优化的试点业务方案
 
-若要准备在组织中使用 SharePoint 合成，首先需要了解它很有用的方案。 原因有助于确定需要哪种模型，以及如何根据模型的应用位置构建组织。 下面是一些文档理解方案，可帮助您的组织：
+若要准备在组织中使用 SharePoint Syntex，您首先需要了解它非常有用的方案。 "原因"可帮助确定需要哪种模型，以及如何根据将应用模型的地方构建组织。 以下是一些文档理解有助于组织的方案：
 
-- 内容处理：处理合同、工作说明和其他类似表单的文档。 输入表单，训练模型以了解和映射字段，然后运行表单以自动收集数据。 有关详细信息，请参阅 [表单处理概述](form-processing-overview.md)。
-- 发票分析：从发票提取相关详细信息，并确保它们符合策略或正在适当处理。
+- **内容处理：** 处理合同、工作说明和其他类似表单的文档。 输入表单，培训模型以了解和映射字段，然后运行表单以自动收集数据。 有关详细信息，请参阅 [窗体处理概述](form-processing-overview.md)。
+- **发票分析：** 从发票中拉出相关详细信息，并确保它们符合策略或正在适当处理。
 
 考虑 SharePoint Syntex 可帮助组织的方法：
 
@@ -70,9 +55,20 @@ SharePoint Syntex 与 Microsoft 365 合规性功能集成，如：
 - 提高搜索准确度
 - 管理合规性风险
 
-### <a name="form-processing-scenario-example"></a>表单处理方案示例
+在考虑要考虑哪些业务方案时，请自问以下问题：
 
-例如，您可以使用 SharePoint 合成和 Power Automate 功能设置一个过程来跟踪和监视发票。
+- 它是否解决了一个实际问题？
+- 它将被广泛使用还是具有广泛的影响？
+- 是否可获取？
+- 能否衡量成功？
+
+根据影响和易于实现确定方案优先级。 使初始焦点区域具有更高的影响方案，这些应用场景也可轻松实现。 取消难以实现的影响较低的方案的优先级。
+
+使用以下示例方案可提示有关如何在组织中使用 SharePoint Syntex 的想法。
+
+### <a name="scenario-track-data-from-invoices-with-form-processing"></a>方案：通过表单处理跟踪发票数据
+
+例如，您可以使用 SharePoint Syntex 和 Power Automate 功能设置一个过程来跟踪和监视发票。
 
 1. 设置用于存储发票文档的库。
 1. 训练模型以识别文档中的字段。
@@ -82,52 +78,108 @@ SharePoint Syntex 与 Microsoft 365 合规性功能集成，如：
     - 发票已过期。
     - 发票用于大于自动审批金额的金额。
 
-![使用 SharePoint 合成和 Power Automate 跟踪和监视发票](../media/content-understanding/process-invoices-flow.png)
+![使用 SharePoint Syntex 和 Power Automate 跟踪和监视发票](../media/content-understanding/process-invoices-flow.png)
 
-当您自动执行此方案时，您可以：
+自动执行此方案时，可以：
 
 - 通过自动从发票中提取数据而不是手动提取数据来节省时间和资金。
-- 通过使用工作流对发票采取行动并通知您任何问题，减少潜在错误并确保更好的合规性。
+- 通过使用工作流检查发票并通知您任何问题，减少潜在错误并确保更好的合规性。
 
-### <a name="document-understanding-scenario-example"></a>文档理解方案示例
+### <a name="scenario-track-information-from-contracts-with-document-understanding"></a>方案：跟踪合同信息，了解文档
 
-另一个示例是，您可以设置一个流程来识别贵公司与其他公司或个人的合同。 您可以设置一个模型，以从这些合同中提取关键信息（如客户端名称、费用、日期或其他重要信息）并将其添加到库中作为字段，以便您可以快速查看。 还可以对文档库应用保留标签，以确保在一段特定时间之前无法删除合同，以适当遵守业务法规。
+另一个示例是，您可以设置一个流程来标识贵公司与其他公司或个人的合同。 设置一个模型以从这些合同中提取关键信息（如客户端名称、费用、日期或其他重要信息）并作为可快速查看的字段将信息添加到库中。 在文档库上应用保留标签，以确保在一段特定时间之前无法删除合同，以适当遵守业务法规。
 
 1. 从内容中心开始，为合同创建新的文档理解模型。
-1. 上载示例文档，查看正面和负面示例，然后运行培训以确定合同文档并查看结果。
+1. 上载示例文档，查看正负示例，然后运行培训以确定合同文档并查看结果。
 1. 培训提取程序以识别合同中的字段，如客户端名称、费用、日期，然后测试提取程序。
-1. 模型完成后，将模型应用到可在其中上载合同库。
-1. 将保留标签应用于日期字段，以便合同在库中保留组织需要合同的时间长度。
+1. 模型完成后，将模型应用到可在其中上载合约的库。
+1. 将保留标签应用于日期字段，以便合同在库中保留所需时间长度。
 
 ![使用 SharePoint 合成和保留标签跟踪和监视合同](../media/content-understanding/process-contracts-flow.png)
 
-当您自动执行此方案时，您可以：
+自动执行此方案时，可以：
 
 - 通过自动从合同中提取数据而不是手动提取数据来节省时间和资金。
-- 通过使用保留标签来确保更好的合规性，以确保适当地保留合同。
+- 通过使用保留标签确保更好地合规，以确保适当地保留合同。
 
-### <a name="tips-for-identifying-scenarios"></a>用于标识方案的提示
+### <a name="scenario-avoid-risk-with-records-management-document-governance-and-compliance-processes-based-on-sharepoint-syntex"></a>方案：根据 SharePoint Syntex 避免记录管理、文档管理和合规性流程的风险
 
-在考虑要考虑哪些业务方案时，请询问自己以下问题：
+降低风险是大多数公司的一个共同目标。 您可能需要：
 
-- 它是否解决了一个实际问题？
-- 它将被广泛使用还是具有广泛的影响？
-- 是否可获取？
-- 能否衡量成功？
+- 在整个租户中提供/强制执行信息治理的更好方法。
+- 改进文档、电子邮件和视为项目的"记录"的其他形式的通信分类系统。
+- 审核收据、合同等，以确保遵守公司策略。
+- 确保项目具有合规性所需的所有文档。
 
-根据影响和易于实现确定方案优先级。 使初始焦点区域具有更高的影响，这些应用场景也可以轻松实现。 取消难以实现的影响较低的方案的优先级。
+设置一些与 SharePoint Syntex 的合规性流程，以捕获和适当分类、审核和标记需要更好地管理的文档和表单。 您可以依赖 SharePoint Syntex 对内容进行自动分类，而不是依赖最终用户手动标记，或者依赖合规性团队手动应用管理规则和存档。 此外，还可以启用简化的搜索体验、管理数据卷、应用记录管理和保留策略、确保合规性以及最佳实践存档和清除实践。
 
-## <a name="identify-roles--responsibilities"></a>确定角色&职责
+当您自动执行此方案时，您感觉安全：
+
+- 合规性得到维持，并且风险降低。
+- 分类和记录管理一致且准确应用。
+- 控制内容卷。
+- 员工可以轻松地在正确的上下文中发现正确的信息。
+
+### <a name="scenario-capture-information-from-previously-inaccessible-documents"></a>方案：捕获以前无法访问的文档的信息
+
+大多数组织都有法律文档、策略、合同、HR 文档和管理准则的大型存储库。 挖掘这些数据存储以提取有价值的信息，例如：项目、部门、主题、人员、地理区域等。
+
+例如，HR 主管需要快速访问所有 HR 文档，包括简历、HR 策略和其他表单。 他们希望从简历和其他与 HR 相关的文档中快速识别必要信息，而无需手动筛选文档。 他们正在寻找一个解决方案，让他们可以快速找到所需的信息，而无需手动查看数千份可能分布于多个网站的简历、HR 策略和其他文档。
+
+自动执行此方案时，可以：
+
+- 从数字内容中解锁知识。
+- 对 HR 策略、简历、销售文档、技术蓝图、帐户计划和提取信息进行分类。
+- 快速查找要查找的正确信息或文档。
+- 获取对最新信息的即时访问。
+- 缩短搜索时间。
+
+### <a name="scenario-improve-data-processing-to-provide-insights--analytics"></a>方案：改进数据处理，以提供分析&见解
+
+例如，一家保险公司可以使用 SharePoint Syntex 从 FDA 文档中提取信息，以回答其领导的问题。 让答案更易于访问可减少生成这些答案所需的时间，并增加数据的可用性，从而生成更准确的领导问题答案。
+
+例如，项目经理需要快速提供来自我的领导团队的产品相关问题的解答。 他们需要在一个合并仪表板中查找与查询相关的信息和指标。 他们正在寻找一种解决方案，从产品标签、产品标签和其他材料中提取他们需要的信息，并生成一份合并报告，在向领导团队报告时可以使用该报告。
+
+自动执行此方案时，可以：
+
+- 减少生成答案的时间。
+- 提高数据的可用性。
+- 提供更准确的答案。
+
+### <a name="scenario-automate-order-processing"></a>方案：自动化订单处理
+
+使用 SharePoint Syntex，可以缩短手动处理客户订单的时间。 例如，您可以使用 OCR 处理将传真、电子邮件或纸张中的订单上载到 SharePoint，然后从这些订单中提取元数据，以便您可以使用自动化流程完成这些订单。
+
+例如，供应链经理希望减少由手动数据输入导致的错误。 他们希望避免手动查看入站客户订单， (传真或电子邮件) 输入数据，以减少进入业务系统的错误。 他们希望一个应用 AI 和机器学习技术的解决方案来验证传入订单信息、提取核心数据并自动推送到 ERP 系统中，以便实现订单和进行对帐。
+
+自动执行此方案时，可以确保：
+
+- 订单和发货准确度提高。
+- 减少与订单或发货错误相关的费用或处罚。
+- 发票或付款延迟减少。
+- 人员成本降低。
+
+### <a name="scenario-simplify-visa-renewal-process"></a>方案：简化续订过程
+
+SharePoint Syntex 可帮助您自动执行关键合同信息的提醒和续订。 例如，HR 主管需要确保员工的护照是最新的和/或及时续订的。 他们希望为用户提供一个简单直观的流程，用于更新其 Visa。 他们需要一个从合同中提取续订日期的解决方案，并会在员工续订日期接近时自动发送提醒。
+
+自动执行此方案时，可以确保：
+
+- 不合规级别降低。
+- 手动提醒的数量减少。
+- 针对不合规的罚款数量减少。
+
+## <a name="identify-roles--responsibilities"></a>确定&角色
 
 确定贵组织中谁将构建和管理模型？ 可能涉及以下角色：
 
-| SharePoint/知识管理员 | Power Platform 管理员 | 知识管理器 | 模型所有者 |
+| SharePoint/知识库管理员 | Power Platform admin | 知识管理器 | 模型所有者 |
 |:-------|:-------|:-------|:-------|
-| AAD 角色| ADD 角色 | AAD 角色 | 支持者 |
+| AAD 角色| AAD 角色 | AAD 角色 | 支持者 |
 | 配置表单处理 | 配置用于表单处理的常见数据服务环境 | 收集用例 | 收集业务用例 |
 | 管理内容中心和权限| 购买和分配 AIB 信用 | 建立最佳做法并查看模型分析 | 创建和应用模型 |
 
-知识管理器、业务流程所有者和内容模型所有者在组织中创建示例模型并推广采用。
+知识经理、业务流程所有者和内容模型所有者创建示例模型，并支持在组织中采用。
 可能涉及的其他人：合规性管理员、分类管理员。
 
 他们将在哪里生成和应用模型？ 是否有可以增强的现有流程或存储库？
@@ -137,10 +189,10 @@ SharePoint Syntex 与 Microsoft 365 合规性功能集成，如：
 
 ## <a name="strategic-positioning"></a>战略定位
 
-与利益干系人合作，确保他们符合使用 SharePoint 合成器的策略。 研究并提供以下资源来帮助进行此定位：
+与利益干系人合作，确保他们在使用 SharePoint Syntex 的策略上保持一致。 研究并提供以下资源来帮助实现此定位：
 
-- 业务结果：
-  - 潜在财务结果
+- 业务成果：
+  - 潜在的财政结果
   - 潜在的灵活性结果
   - 业务结果模板
 - 利益干系人/Exec 发起人购买/调整
@@ -154,22 +206,22 @@ SharePoint Syntex 与 Microsoft 365 合规性功能集成，如：
 
 |角色 |Responsibilities |Department |
 |:-------|:-------|:--------|
-| 执行发起 ()    | 向公司传达高级愿景和价值   |  管理层领导   |
+| 执行发起 ()    | 向公司传达高级愿景和价值   |  行政领导   |
 | 项目主管 ()  | 监督整个启动执行和推出过程 | 项目管理 |
 | 知识管理员| 创建和管理内容中心 | IT 或其他部门|
 | 内容管理员和模型所有者| 收集用例并创建和应用模型 | 任何部门|
 | 支持者 | 帮助宣传和管理投诉处理 | 任何部门 (员工)  |
-| 租户管理员 | 配置租户级设置 | IT 部门|
+| 租户管理员 | 配置租户级别设置 | IT 部门|
 | Power Platform 管理员| 配置常见数据服务环境 | IT 部门|
 
 > [!Note]
-> 尽管我们建议在整个推出过程中完成其中每个角色，但你可能会发现，你无需所有角色都开始使用你确定的解决方案。
+> 尽管我们建议在整个推出过程中完成其中每个角色，但你可能会发现，你无需所有角色都开始使用已识别的解决方案。
 
 ## <a name="readiness-checklist"></a>准备情况清单
 
-若要准备好实现 SharePoint 合成，需要：
+若要准备好实现 SharePoint Syntex，您需要：
 
-![内容理解的准备情况](../media/content-understanding/cu-adoption-readinesschecklist.png)
+![内容理解准备情况](../media/content-understanding/cu-adoption-readinesschecklist.png)
 
 1. 规划结束状态
     - 文档理解模型是方法，而不是结尾。
@@ -186,11 +238,11 @@ SharePoint Syntex 与 Microsoft 365 合规性功能集成，如：
     - 设计信息体系结构、托管元数据和内容类型的方法
     - 设计定义、创建、管理过程。
 
-## <a name="engage-your-organization"></a>参与你的组织
+## <a name="engage-your-organization"></a>让组织参与
 
 1. 确定持有者、确认方案并制定项目计划。
 1. 配置设置并应用许可证。
 1. 开始认知和培训 – 招募冠军。
 1. 分步推出。  
 1. 收集反馈并循环。
-1. 随着使用情况增长，根据需要规划任何 AI Builder 信用。
+1. 随着使用情况的扩大，可根据需要规划任何 AI Builder 信用额度。

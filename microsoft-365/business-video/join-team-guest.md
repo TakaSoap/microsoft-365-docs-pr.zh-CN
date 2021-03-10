@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 了解如何在 Microsoft Teams 中以来宾加入团队。
-ms.openlocfilehash: 8ed7b8c92fa9fbe22c8a4f74b89916266a4af46f
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: 51f287361877cb0b427a38c48683c064bda99126
+ms.sourcegitcommit: 9adb89206daa075af34a73bcb7e8fb86d7c2919a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50422479"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "50603956"
 ---
 # <a name="join-a-team-as-a-guest"></a>作为来宾加入团队
 
@@ -36,7 +36,7 @@ ms.locfileid: "50422479"
 如果你收到 Microsoft Teams 加入团队的邀请，则有两个步骤可以接受邀请。
 
 1. 打开电子邮件邀请，然后选择"**打开 Microsoft Teams"。** 如果看不到邀请，请检查垃圾邮件文件夹。
-  1. 如果您的电子邮件地址之前尚未用于创建 Microsoft 帐户，则需要创建一个。
+  1. 如果你的电子邮件地址之前未用于创建 Microsoft 帐户，则需要创建一个。
 
      在"**创建帐户"** 对话框中，选择 **"下** 一步"，创建密码，然后选择"下 **一步"。**
   1. 若要验证您的电子邮件地址，请打开验证电子邮件，然后复制安全代码。

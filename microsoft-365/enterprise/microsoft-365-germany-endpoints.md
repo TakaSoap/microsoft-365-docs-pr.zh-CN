@@ -3,7 +3,7 @@ title: 适用于德国的 Office 365 终结点
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 01/04/2021
+ms.date: 12/01/2020
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -18,14 +18,14 @@ ms.custom:
 - seo-marvel-apr2020
 search.appverid: MOE150
 ms.assetid: 8a113a50-0071-4155-bb8e-eba5a8dbd4c8
-description: 本文将介绍在德国使用 Office 365 的客户能够访问的终结点。
+description: 本文将介绍在德国使用 Office 365 的客户可以使用的终结点。
 hideEdit: true
-ms.openlocfilehash: 7c4a65780892d6e257c1c03832cd640bdd4573f3
-ms.sourcegitcommit: a76de3d1604d755b29053e7bf557c0008be6ad23
+ms.openlocfilehash: deabb590376a46580a2cd9d4a5dc498aacc3c5ef
+ms.sourcegitcommit: 8950d3cb0f3087be7105e370ed02c7a575d00ec2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "49787911"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50597042"
 ---
 # <a name="office-365-germany-endpoints"></a>Office 365 Germany 终结点
 
@@ -37,11 +37,11 @@ Office 365 需要连接到 Internet。 以下终结点应仅适用于使用 **Of
   
 |||
 |:-----|:-----|
-|**上次更新时间：** 2021 年 1 月 4 日 - ![RSS](../media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [更改日志订阅](https://endpoints.office.com/version/Germany?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) |**下载：** 一个 [JSON 格式](https://endpoints.office.com/endpoints/Germany?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7)列表中的所有必需和可选目标。  <br/> |
+|**Last updated：** 12/01/2020 - ![ RSS ](../media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [更改日志订阅](https://endpoints.office.com/version/Germany?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) |**下载：** 一个 [JSON 格式](https://endpoints.office.com/endpoints/Germany?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7)列表中的所有必需和可选目标。  <br/> |
 
-从 [管理 Office 365](managing-office-365-endpoints.md) 终结点开始，了解我们关于使用此数据管理网络连接的建议。 终结点数据在每月开始时更新，在处于活动状态前 30 天发布新的 IP 地址和 URL。 这使尚未自动更新的客户可以在需要新连接之前完成其流程。 如果需要解决支持升级、安全事件或其他即时操作要求，也可在一个月内更新终结点。 你始终可以参考 [更改日志订阅](https://endpoints.office.com/version/Germany?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7)。
+从 [管理 Office 365](managing-office-365-endpoints.md) 终结点开始，了解我们有关使用此数据管理网络连接的建议。 终结点数据在每月开始时根据需要更新，其中新的 IP 地址和 URL 在活动前 30 天发布。 这使尚未自动更新的客户可以在需要新连接之前完成其流程。 如果需要解决支持升级、安全事件或其他即时操作要求，当月还可以更新终结点。 你始终可以参考 [更改日志订阅](https://endpoints.office.com/version/Germany?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7)。
 
-以下页面上显示的数据都是从基于 REST 的 Web 服务生成的。 如果使用脚本或网络设备访问此数据，应直接转到 [Web](microsoft-365-ip-web-service.md) 服务。
+以下页面上显示的数据都是从基于 REST 的 Web 服务生成的。 如果使用脚本或网络设备访问此数据，应直接 [转到 Web](microsoft-365-ip-web-service.md) 服务。
 
 以下终结点数据列出了从用户计算机到 Office 365 的连接要求。 它不包括从 Microsoft 到客户网络的网络连接，有时称为混合或入站网络连接。
 

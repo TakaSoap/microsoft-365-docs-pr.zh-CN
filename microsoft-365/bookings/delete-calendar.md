@@ -9,12 +9,12 @@ ms.service: bookings
 localization_priority: Normal
 ms.assetid: 8c3a913c-2247-4519-894d-b6263eeb9920
 description: 使用 Microsoft 365 管理中心或Windows PowerShell删除 Bookings 日历。
-ms.openlocfilehash: 1f8df15eafac7867f7ae852e344e1c5730362598
-ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
+ms.openlocfilehash: 7407298adb402de79a1010b51544deee4b94cf5a
+ms.sourcegitcommit: 9adb89206daa075af34a73bcb7e8fb86d7c2919a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50454201"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "50604016"
 ---
 # <a name="delete-a-booking-calendar-in-bookings"></a>删除 Bookings 中的预订日历
 
@@ -32,7 +32,7 @@ ms.locfileid: "50454201"
 > [!WARNING]
 > 删除预订日历后，此其他信息也会永久删除且无法恢复。
 
-## <a name="delete-a-booking-calendar-in-the-microsoft-365-admin-center"></a>删除 Microsoft 365 管理中心中的预订日历
+## <a name="delete-a-booking-calendar-in-the-microsoft-365-admin-center"></a>在 Microsoft 365 管理中心中删除预订日历
 
 1. 转到 Microsoft 365 管理中心。
 
@@ -48,7 +48,7 @@ ms.locfileid: "50454201"
 
 有关 [连接到 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell-v2?view=exchange-ps) 的先决条件和指导，请参阅"连接到 Exchange Online PowerShell"。
 
-若要执行这些步骤，必须通过选择"以管理员方式运行"选项来使用运行的活动 Microsoft PowerShell 命令窗口。
+若要执行这些步骤，您必须使用通过选择"以管理员方式运行"选项运行的活动 Microsoft PowerShell 命令窗口。
 
 1. 在 Windows PowerShell 窗口中，通过运行以下命令加载 EXO V2 模块：
 
@@ -87,7 +87,7 @@ ms.locfileid: "50454201"
 6. 若要验证日历是否已删除，请输入以下命令：
 
    ```powershell
-    Get-EXOMailbox -RecipientTypeDetails Scheduling
+    Get-EXOMailbox -RecipientTypeDetails SchedulingMailbox
    ```
 
    已删除的日历将不会显示在输出中。
