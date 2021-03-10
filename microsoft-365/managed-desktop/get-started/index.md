@@ -6,19 +6,21 @@ ms.service: m365-md
 author: jaimeo
 ms.author: jaimeo
 ms.localizationpriority: normal
-ms.openlocfilehash: 141eb16ae77c44c51358c07a74f5050eb07dc26f
-ms.sourcegitcommit: a6b998fef5bdb35ec6726c743a24fea721535fcd
+ms.openlocfilehash: 49cf658c7d146f75d54d1f74f0034db64c3cc5dc
+ms.sourcegitcommit: d3c1b08b3a8af29ef19ffe77da063920f28fe290
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50509274"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50572548"
 ---
 # <a name="get-started-with-microsoft-managed-desktop"></a>Microsoft 托管桌面入门
 
-现在你已注册了该服务，请按照以下步骤确认管理员联系人、调整条件访问设置、将许可证分配给用户、启用企业状态漫游、获得和设置设备、准备用户以及将应用部署到设备。
+既然已准备好注册，请打开“[Microsoft Endpoint Manager](https://endpoint.microsoft.com/)”，并导航到“**租户管理**”。 在“**Microsoft 托管桌面**”子节下选择“**租户注册**”，然后按照向导在 Microsoft 托管桌面注册租户。
 
 > [!NOTE]
-> 这是推荐的执行顺序，但你也可以进行一些灵活调整。
+> 必须以全局管理员身份登录才能完成注册。 有关详细信息，请参阅 [访问管理员门户](access-admin-portal.md) 部分以获取详细信息。
+
+注册完成后，请按照以下步骤配置服务。 这是推荐的执行顺序，但你也可以进行一些灵活调整。 
 
 1. [在管理门户中添加和验证管理员联系人](add-admin-contacts.md)
 2. [注册后调整设置](conditional-access.md)
