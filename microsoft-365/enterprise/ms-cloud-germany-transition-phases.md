@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 摘要：了解从德国 Microsoft 云 (德国 Microsoft 云) 迁移到新的德国数据中心区域 Office 365 服务的迁移阶段操作和影响。
-ms.openlocfilehash: 045e29cba293dd74d3a77beae80d78380eaa4147
-ms.sourcegitcommit: 9adb89206daa075af34a73bcb7e8fb86d7c2919a
+ms.openlocfilehash: 98a547a9af772e880465f75d9a3b01b1795639e1
+ms.sourcegitcommit: 88ab08c0fa1acbc9e066009e131b9f2b0d506c64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/10/2021
-ms.locfileid: "50604004"
+ms.locfileid: "50711948"
 ---
 # <a name="migration-phases-actions-and-impacts-for-the-migration-from-microsoft-cloud-deutschland-general"></a>迁移阶段操作和影响从 Microsoft 云德国迁移 (常规) 
 
@@ -55,9 +55,10 @@ ms.locfileid: "50604004"
 ## <a name="opt-in"></a>Opt-In
 
 **适用于：** 拥有 Office 365 租户的所有客户托管在 Microsoft 云德国 (MCD) 
+
 | 步骤 (步骤)  | 说明 | 影响 |
 |:-------|:-----|:-------|
-| 未经同意，无法迁移在 MCD 中托管的 Office 365 租户。 | Microsoft 通过以下两种方式之一获得迁移权，这使 Microsoft 能够协调数据和服务到 Office 365 全局服务实例的转换。 <ol><li>Office 365 租户管理员选择加入 Microsoft 驱动的迁移。 </li><li> 客户在 2020 年 5 月 1 日之后续订其 MCD Office 365 租户的任何订阅。 我们将每月通知这些客户迁移，等待 30 天，让客户有机会取消迁移，然后直接选择加入。</li></ol> | <ul><li>租户标记为已同意迁移，管理中心显示确认。 </li><li>确认将发布至 Office 365 租户消息中心。 服务配置将继续从 Microsoft 云德国终结点进行。 </li><li>租户管理员必须监视 Office 365 消息中心，以更新 igration 阶段状态。 </li></ul>|
+| 未经同意，无法迁移在 MCD 中托管的 Office 365 租户。 | Microsoft 通过以下两种方式之一获得迁移权，这使 Microsoft 能够协调数据和服务到 Office 365 全局服务实例的转换。 <ol><li>Office 365 租户管理员选择加入 Microsoft 驱动的迁移。 </li><li> 客户在 2020 年 5 月 1 日之后续订其 MCD Office 365 租户的任何订阅。 我们将每月通知这些客户迁移，等待 30 天，让客户有机会取消迁移，然后直接选择加入。</li></ol> | <ul><li>租户标记为已同意迁移，管理中心显示确认。 </li><li>确认将发布至 Office 365 租户消息中心。 服务配置将继续从 Microsoft 云德国终结点进行。 </li><li>租户管理员必须监视 Office 365 消息中心，以更新迁移阶段状态。 </li></ul>|
 
 ## <a name="subscription-phase-3"></a>订阅 (阶段 3) 
 
@@ -89,9 +90,9 @@ ms.locfileid: "50604004"
 
 **适用于：** 使用 Exchange Online 的所有客户
 
-如果你使用的是 Exchange Online 混合：Exchange Online 混合管理员必须执行混合配置向导 ( **HCW**) 多次作为此转换的一部分。 请参阅 Exchange [的预工作高级迁移步骤](ms-cloud-germany-transition-add-experience.md#Exchange-Online-before-phase-5)
+如果你使用的是 Exchange Online 混合：Exchange Online 混合管理员必须执行混合配置向导 ( **HCW**) 多次作为此转换的一部分。 请参阅 Exchange [的预工作高级迁移步骤](ms-cloud-germany-transition-add-experience.md#exchange-online-before-phase-5)
 
-如迁移准备工作中所述，[](ms-cloud-germany-transition-add-pre-work.md#exchange-online)在迁移步骤 **5** 开始之前，Exchange Online 混合客户需要在"Office 365 Germany"模式下运行最新版本的 Exchange 混合配置向导 (HCW) ，以准备本地配置以迁移到 Office 365 全局服务。
+如迁移准备工作中所述，[](ms-cloud-germany-transition-add-pre-work.md#exchange-online)在迁移步骤 **阶段 5** 开始之前，Exchange Online 混合客户需要在"Office 365 Germany"模式下运行最新版本的 Exchange 混合配置向导 (HCW) ，为迁移到 Office 365 全局服务准备本地配置。
 
 完成迁移阶段 **5** (当消息中心通知发布) 时，您需要再次使用 Office 365 全球范围设置运行 HCW，以将本地系统指向 Office 365 全局服务。 如果使用自定义域，可能需要其他 DNS 更新。
 
@@ -177,7 +178,7 @@ New-PSSession
 
 **适用于：** 使用 Office 桌面应用程序的所有客户 (Word、Excel、PowerPoint、Outlook、...) 
 
-迁移到区域"Germany"的 Office 365 租户要求所有用户在租户迁移达到阶段 9 后关闭、从 Office 365 注销并返回所有 Office 桌面应用程序 (Word、Excel、PowerPoint、Outlook 等 ) 和 OneDrive for Business 客户端。 通过退出和登录，Office 服务可以获取来自全局 Azure AD 服务的新身份验证令牌。
+迁移到区域"Germany"的 Office 365 租户要求所有用户在租户迁移达到阶段 9 后关闭、注销 Office 365，然后重新登录所有 Office 桌面应用程序 (Word、Excel、PowerPoint、Outlook 等 ) 和 OneDrive for Business 客户端。 通过退出和登录，Office 服务可以获取来自全局 Azure AD 服务的新身份验证令牌。
 
 | 步骤 (步骤)  | 说明 | 影响 |
 |:-------|:-------|:-------|

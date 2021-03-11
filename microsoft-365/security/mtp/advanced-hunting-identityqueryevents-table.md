@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 48a1520e9fc6239fd3105f01a32a03e5e58df174
-ms.sourcegitcommit: 005028af7c5a6b2e95f17a0037958131484d9e73
+ms.openlocfilehash: eb1f408b61444771f5d450b46dbc9c2b4a009e4c
+ms.sourcegitcommit: 88ab08c0fa1acbc9e066009e131b9f2b0d506c64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "50145279"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "50712326"
 ---
 # <a name="identityqueryevents"></a>IdentityQueryEvents
 
@@ -38,7 +38,7 @@ ms.locfileid: "50145279"
 高级 `IdentityQueryEvents` 搜寻架构 [中的](advanced-hunting-overview.md) 表包含有关对 Active Directory 对象（如用户、组、设备和域）执行的查询的信息。 使用此参考来构建从此表返回信息的查询。
 
 >[!TIP]
-> 有关事件类型的详细信息 (表) 支持的值，请使用安全中心中提供的内置 `ActionType` 架构参考。 [](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center)
+> 有关事件类型的详细信息 (表) 支持的值，请使用安全中心中提供的内置 `ActionType` 架构引用。
 
 有关高级搜寻架构中其他表的信息，请[参阅高级搜寻参考](advanced-hunting-schema-tables.md)。
 
@@ -48,23 +48,23 @@ ms.locfileid: "50145279"
 | `ActionType` | string | 触发事件的活动类型。 有关详细信息 [，请参阅门户内架构](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) 参考 |
 | `Application` | string | 执行录制的操作的应用程序 |
 | `QueryType` | string | 查询类型，如 QueryGroup、QueryUser 或 EnumerateUsers |
-| `QueryTarget` | string | 要查询的用户、组、设备、域或其他任何实体类型的名称 |
+| `QueryTarget` | string | 要查询的用户、组、设备、域或任何其他实体类型的名称 |
 | `Query` | string | 用于运行查询的字符串 |
 | `Protocol` | string | 通信期间使用的协议 |
 | `AccountName` | string | 帐户的用户名 |
 | `AccountDomain` | string | 帐户的域 |
-| `AccountUpn` | string | 帐户的用户主体 (UPN)  |
+| `AccountUpn` | string | 帐户 (UPN) 用户主体名称 |
 | `AccountSid` | string | 帐户 (SID) 安全标识符 |
 | `AccountObjectId` | string | Azure AD 中帐户的唯一标识符 |
-| `AccountDisplayName` | string | 通讯簿中显示的帐户用户的名称。 通常是给定或名字、中间初始和姓氏或姓氏的组合。 |
+| `AccountDisplayName` | string | 通讯簿中显示的帐户的名称。 通常，给定或名字、中间初始和姓氏或姓氏的组合。 |
 | `DeviceName` | string | 终结点的 FQDN (完全) 域名 |
-| `IPAddress` | string | 分配给终结点的 IP 地址，在相关的网络通信期间使用 |
+| `IPAddress` | string | 分配给终结点的 IP 地址，在相关网络通信期间使用 |
 | `Port` | string | 通信期间使用的 TCP 端口 |
 | `DestinationDeviceName` | string | 运行处理所记录操作的服务器应用程序的设备的名称 |
 | `DestinationIPAddress` | string | 运行处理所记录操作的服务器应用程序的设备的 IP 地址 |
 | `DestinationPort` | string | 相关网络通信的目标端口 |
-| `TargetDeviceName` | string | 已记录 (的) 的设备的 FQDN 的完全限定域名 |
-| `TargetAccountUpn` | string | 用户主体 (UPN) 记录操作应用于的帐户的名称 |
+| `TargetDeviceName` | string | 已记录 (设备的 FQDN) 的完全限定域名 |
+| `TargetAccountUpn` | string | 用户主体 (UPN) 记录操作应用到的帐户的 UPN 名称 |
 | `TargetAccountDisplayName` | string | 记录的操作应用于的帐户的显示名称 |
 | `Location` | string | 与事件关联的城市、国家/地区或其他地理位置 |
 | `ReportId` | long | 事件的唯一标识符 |

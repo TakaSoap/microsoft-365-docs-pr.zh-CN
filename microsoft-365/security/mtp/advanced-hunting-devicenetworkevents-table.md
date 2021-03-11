@@ -1,7 +1,7 @@
 ---
 title: 高级搜寻架构中的 DeviceNetworkEvents 表
 description: 了解可以从高级搜寻架构的 DeviceNetworkEvents 表查询的网络连接事件
-keywords: 高级搜寻， 威胁搜寻， 网络威胁搜寻， Microsoft 威胁防护， microsoft 365， mtp， m365， 搜索， 查询， 遥测， 架构参考， kusto， 表， 列， 数据类型， devicenetworkevents， NetworkCommunicationEvents， 网络连接， 远程 ip， 本地 ip
+keywords: 高级搜寻， 威胁搜寻， 网络威胁搜寻， microsoft 威胁防护， microsoft 365， mtp， m365， 搜索， 查询， 遥测， 架构参考， kusto， 表， 列， 数据类型， devicenetworkevents， NetworkCommunicationEvents， 网络连接， 远程 ip， 本地 ip
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: c9509c76e5fa945c693e67f394b6432f939b58a5
-ms.sourcegitcommit: 005028af7c5a6b2e95f17a0037958131484d9e73
+ms.openlocfilehash: 65b9b7608b39f802cc82c62b87d7104ee4ff4304
+ms.sourcegitcommit: 88ab08c0fa1acbc9e066009e131b9f2b0d506c64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "50145321"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "50712422"
 ---
 # <a name="devicenetworkevents"></a>DeviceNetworkEvents
 
@@ -40,7 +40,7 @@ ms.locfileid: "50145321"
 高级 `DeviceNetworkEvents` 搜寻 [架构中的](advanced-hunting-overview.md) 表包含有关网络连接和相关事件的信息。 使用此参考来构建从此表返回信息的查询。
 
 >[!TIP]
-> 有关事件类型的详细信息 (表) 支持的值，请使用安全中心中提供的内置 `ActionType` 架构参考。 [](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center)
+> 有关事件类型的详细信息 (表) 支持的值，请使用安全中心中提供的内置 `ActionType` 架构引用。
 
 有关高级搜寻架构中其他表的信息，请[参阅高级搜寻参考](advanced-hunting-schema-tables.md)。
 
@@ -53,30 +53,30 @@ ms.locfileid: "50145321"
 | `RemoteIP` | string | 连接到的 IP 地址 |
 | `RemotePort` | int | 连接到的远程设备的 TCP 端口 |
 | `RemoteUrl` | string | 连接到的 URL 或完全限定域名 (FQDN) |
-| `LocalIP` | string | 分配给通信过程中使用的本地计算机 IP 地址 |
-| `LocalPort` | int | 通信过程中使用的本地计算机上 TCP 端口 |
+| `LocalIP` | string | 分配给通信期间使用的本地计算机 IP 地址 |
+| `LocalPort` | int | 通信期间使用的本地计算机上 TCP 端口 |
 | `Protocol` | string | 通信期间使用的协议 |
-| `LocalIPType` | string | IP 地址的类型，例如 Public、Private、Reserved、Loopback、Teredo、FourToSixMapping 和 Broadcast |
-| `RemoteIPType` | string | IP 地址的类型，例如 Public、Private、Reserved、Loopback、Teredo、FourToSixMapping 和 Broadcast |
-| `InitiatingProcessSHA1` | string | 启动事件 (映像) SHA-1 |
-| `InitiatingProcessSHA256` | string | 启动事件 (映像) SHA-256。 通常不会填充此字段 — 可用时使用 SHA1 列。 |
+| `LocalIPType` | string | IP 地址类型，例如 Public、Private、Reserved、Loopback、Teredo、FourToSixMapping 和 Broadcast |
+| `RemoteIPType` | string | IP 地址类型，例如 Public、Private、Reserved、Loopback、Teredo、FourToSixMapping 和 Broadcast |
+| `InitiatingProcessSHA1` | string | 启动事件 (映像) 的 SHA-1 |
+| `InitiatingProcessSHA256` | string | 进程 SHA-256 (启动) 映像文件。 通常不会填充此字段 — 可用时使用 SHA1 列。 |
 | `InitiatingProcessMD5` | string | 启动事件 (映像) 的 MD5 哈希 |
 | `InitiatingProcessFileName` | string | 启动事件的进程的名称 |
 | `InitiatingProcessFileSize` | long | 运行负责事件的进程的文件的大小 |
-| `InitiatingProcessId` | int | 启动 (PID) 进程的进程 ID |
+| `InitiatingProcessId` | int | 进程 ID (PID) 启动事件的进程的 PID |
 | `InitiatingProcessCommandLine` | string | 用于运行启动事件的进程的命令行 |
-| `InitiatingProcessCreationTime` | datetime | 启动事件的过程启动的日期和时间 |
-| `InitiatingProcessFolderPath` | string | 包含启动事件 (映像) 文件的文件夹 |
-| `InitiatingProcessParentFileName` | string | 生成负责事件的进程的父进程的名称 |
-| `InitiatingProcessParentId` | int | 进程 ID (PID) 生成负责事件的进程的父进程 |
+| `InitiatingProcessCreationTime` | datetime | 启动事件过程的日期和时间 |
+| `InitiatingProcessFolderPath` | string | 包含启动 (文件) 进程的文件夹 |
+| `InitiatingProcessParentFileName` | string | 生成负责该事件的进程的父进程的名称 |
+| `InitiatingProcessParentId` | int | 生成 () 的父进程的 PID 进程 ID |
 | `InitiatingProcessParentCreationTime` | datetime | 启动负责事件的进程的父级的日期和时间 |
 | `InitiatingProcessAccountDomain` | string | 运行负责事件的进程的帐户的域 |
 | `InitiatingProcessAccountName` | string | 运行负责事件的进程的帐户的用户名 |
 | `InitiatingProcessAccountSid` | string | 安全 (SID) 运行负责事件的进程的帐户的 SID 标识符 |
-| `InitiatingProcessAccountUpn` | string | 运行 (事件) 帐户的 UPN 帐户的用户主体名称 |
-| `InitiatingProcessIntegrityLevel` | string | 启动事件的过程的完整性级别。 Windows 根据某些特征（例如是否从 Internet 下载启动）为进程分配完整性级别。 这些完整性级别影响对资源的权限 |
-| `InitiatingProcessTokenElevation` | string | 指示 UAC 是否存在用户访问控制的令牌类型 (UAC) 启动事件的进程应用的特权提升 |
-| `ReportId` | long | 基于重复计数器的事件标识符。 若要标识唯一事件，此列必须与 DeviceName 和时间戳列一起使用 |
+| `InitiatingProcessAccountUpn` | string | 运行 (进程的帐户) UPN 帐户的用户主体名称 |
+| `InitiatingProcessIntegrityLevel` | string | 启动事件的过程的完整性级别。 Windows 根据某些特征（例如是否从 Internet 下载启动）为进程分配完整性级别。 这些完整性级别会影响对资源的权限 |
+| `InitiatingProcessTokenElevation` | string | 指示是否存在用户访问控制的令牌类型 (UAC) 权限提升应用于启动事件的进程 |
+| `ReportId` | long | 基于重复计数器的事件标识符。 若要标识唯一事件，必须将此列与 DeviceName 和时间戳列结合使用 |
 | `AppGuardContainerId` | string | 应用程序防护用于隔离浏览器活动的虚拟化容器的标识符 |
 | `AdditionalFields` | string | 有关 JSON 数组格式的事件的其他信息 |
 

@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: 描述文档理解与表单处理模型之间的主要差异
-ms.openlocfilehash: f57d220eb77a783de5ac352f3cf684364252a163
-ms.sourcegitcommit: 162c01dfaa2fdb3225ce4c24964c1065ce22ed5d
+ms.openlocfilehash: 555dfa7d76335a3b943e860e5f41ed64c9d3e874
+ms.sourcegitcommit: 8950d3cb0f3087be7105e370ed02c7a575d00ec2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2021
-ms.locfileid: "49975873"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50596976"
 ---
 # <a name="difference-between-document-understanding-and-form-processing-models"></a>文档理解与表单处理模型之间的差异 
 
@@ -66,7 +66,25 @@ ms.locfileid: "49975873"
 
 表单处理模型目前只能应用于创建它们的 SharePoint 文档库。 这使得拥有网站访问权限的许可用户能够创建表单处理模型。 请注意，管理员需要在 SharePoint 文档库中启用表单处理功能，以便供许可用户使用。
 
- ## <a name="see-also"></a>另请参阅
+## <a name="comparison-of-forms-processing-and-document-understanding"></a>表单处理和文档理解的比较
+
+使用下表了解何时使用表单处理，何时使用文档理解:
+
+| 功能 | 表单处理 | 文档理解 |
+| ------- | ------- | ------- |
+| 模型类型 - 使用每种模型时 | 用于半结构化文件格式 - 例如，Office 文档在布局上存在差异但仍类似的信息需要提取。 | 用于非结构化的文件格式，例如表单内容 (如发票或采购订单) 的 PDF，其布局和格式是相似的。 |
+| 模型创建 | 在 AI 生成器中创建的模型，可从 SharePoint 文档库中无缝访问。| 在内置到 SharePoint 内容中心的本地界面中创建模型。|
+| 分类类型| 计算机教学是用来给系统提供提取数据线索的可设置分类器。| 具有使用计算机教学来分配数据提取文档位置可选提取器的可培训分类器。|
+| 位置 | 除非使用 Power Platform 从 CDS 检索，否则仅限于单个文档库。| 可应用于多个库。|
+| 支持的文件类型| PDF、JPG、PNG 格式的培训，共50MB，500页。| 培训 5-10 个 PDF、Office 或电子邮件文件，包括反面例子。<br>Office 文件以 64k 字符为截断标准。 OCR 扫描的文件限制为 20 页以内。|
+| 与托管元数据集成 | 不支持 | 是的，通过在训练模型之前对文档库列进行设置。|
+| 启用 Microsoft 信息保护时合规性功能集成 | 设置保留标签。<br>即将设置敏感度标签。 | 设置保留标签。<br>即将设置敏感度标签。 |
+| 支持的区域| 表单处理依赖于 Power Platform。 有关 Power Platform 和 AI Builder 的全球可用性信息，请参阅 [Power Platform 可用性](https://dynamics.microsoft.com/geographic-availability/)。 | 在所有地区可用。|
+| 交易性成本 | AI 生成器点数。<br>可分批购买 1M 的积分。<br>购买 300 个以上的 SharePoint Syntex 许可证，即可获得 1M 积分。<br>1M 积分可以处理 2000 个文件页。| 不适用 |
+| 容量 | 根据默认的共同数据服务环境提供。| 没有容量限制。|
+| 支持的语言| 英语 <br>将在 2021 年晚些时候：西班牙语、德语、法语、意大利语| 模型适用于所有拉丁字母语言。 除英语外，还包括： 德语、瑞典语、法语、西班牙语、意大利语和葡萄牙语。|
+
+## <a name="see-also"></a>另请参阅
 [培训：使用 AI 生成器提高业务绩效](https://docs.microsoft.com/learn/paths/improve-business-performance-ai-builder/?source=learn)
 
 

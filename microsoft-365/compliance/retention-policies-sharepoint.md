@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解用于 SharePoint 和 OneDrive 的保留的工作原理。
-ms.openlocfilehash: 253b4f2c09468b45b8e6102f585a8e4b7bbe4e4e
-ms.sourcegitcommit: ddbc6f8ebadf2f8149dff910b743535cbc3fa3c8
+ms.openlocfilehash: ff4b4f517daccbce908411f3b5a62c0a1f11ba57
+ms.sourcegitcommit: 8950d3cb0f3087be7105e370ed02c7a575d00ec2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "49992498"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50597172"
 ---
 # <a name="learn-about-retention-for-sharepoint-and-onedrive"></a>了解用于 SharePoint 和 OneDrive 的保留
 
@@ -66,7 +66,7 @@ ms.locfileid: "49992498"
 
 若要在用户尝试更改或删除内容时保留此内容，会检查自应用保留设置起内容是否发生更改。 如果这是自应用保留设置以来的首次更改，则会将内容复制到保留库中，用户可以在其中更改或删除原始内容。 可以将网站集中的任何内容复制到保留库中，而不管保留设置如何。
   
-计时器作业会定期清理保留库。 此作业将保留库中的所有内容与保留设置对此内容使用的所有查询进行比较。 早于其配置的保留期的内容将从保存保留库和原始位置（如果仍在该位置）中删除。 此计时器作业每 7 天运行一次，这意味着删除内容可能需要长达 7 天的时间。
+计时器作业会定期清理保留库。 对于在保留库中保留超过 30 天的内容，此作业将内容与该内容的保留设置所使用的全部查询进行比较。 早于其配置的保留期的内容将从保留库和原始位置（如果仍在该位置）中删除。 此计时器作业每 7 天运行一次，这意味着在最少 30 天内，从保留库中删除内容可能需要多达 37 天。
   
 此行为适用于在应用保留设置时就存在的内容。 另外，对于保留策略，在策略中添加网站集后在网站集中创建或添加的所有新内容都会在删除后保留。 然而，新内容不会在第一次编辑时就复制到保留库，只有在删除时才会这样做。 若要保留文件的所有版本，必须启用[版本控制](#how-retention-works-with-document-versions)。
   

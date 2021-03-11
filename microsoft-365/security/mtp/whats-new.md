@@ -18,18 +18,18 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 72c6ec814c5f3317f582cb4bfb21858677fbb7e1
-ms.sourcegitcommit: a6b998fef5bdb35ec6726c743a24fea721535fcd
+ms.openlocfilehash: 1f5fa231c371ca7a8d6a22ca0b4ff388fd89004c
+ms.sourcegitcommit: 88ab08c0fa1acbc9e066009e131b9f2b0d506c64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50509118"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "50711912"
 ---
 # <a name="whats-new-in-microsoft-365-defender"></a>Microsoft 365 Defender 的新增功能
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-> 想要体验 Microsoft 365 Defender？ 可以在 [实验室环境中对其进行评估，](https://aka.ms/mtp-trial-lab) 或在生产中运行 [您的试验项目](https://aka.ms/m365d-pilotplaybook)。
+> 想要体验 Microsoft 365 Defender？ 可以在 [实验室环境中对其进行评估，](https://aka.ms/mtp-trial-lab) 或在生产中 [运行您的试验项目](https://aka.ms/m365d-pilotplaybook)。
 >
 
 Microsoft 365 Defender (GA) 中通常提供以下功能。
@@ -39,6 +39,8 @@ RSS 源：在此页面更新时收到通知，方法为将以下 URL 复制并�
 https://docs.microsoft.com/api/search/rss?search=%22Lists+the+new+features+and+functionality+in+Microsoft+365+defender%22&locale=en-us
 ```
 
+## <a name="march-2021"></a>2021 年 3 月
+- [CloudAppEvents 表](advanced-hunting-cloudappevents-table.md) <br>查找有关 Microsoft Cloud App Security 涵盖的各种云应用和服务中的事件的信息。 此表还包括之前在 中可用的信息 `AppFileEvents` 。
 ## <a name="february-2021"></a>2021 年 2 月
 -  (预览) 增强[的 Microsoft https://security.microsoft.com) 365](https://security.microsoft.com)安全 (现在提供公共预览版。 这一全新体验将 Defender for Endpoint 和 Defender for Office 365 引入中心。 [了解有关更改功能更多信息](https://docs.microsoft.com/microsoft-365/security/mtp/overview-security-center)。
 
@@ -66,5 +68,5 @@ https://docs.microsoft.com/api/search/rss?search=%22Lists+the+new+features+and+f
 
 ## <a name="march-2019"></a>2019 年 3 月
 - 高级搜寻 <br> 各种搜寻功能的登陆页面，可让你主动查找影响电子邮件和数据、设备和标识的威胁。
-- [Microsoft 安全功能分数](microsoft-secure-score.md) <br> 组织安全状况的度量，数字越高，表示采取改进措施更多。 遵循安全分数建议可保护组织免受威胁。 
+- [Microsoft 安全功能分数](microsoft-secure-score.md) <br> 组织安全状况的度量，数字越高，表示采取的改进操作更多。 遵循安全分数建议可保护组织免受威胁。 
 - [报表](monitoring-and-reporting.md) <br>  功能丰富的卡片涵盖安全分析师和管理员在日常操作中跟踪的一系列领域。

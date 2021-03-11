@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 摘要：从德国 Microsoft 云 (德国 microsoft 云) 迁移到新的德国数据中心区域中的 Office 365 服务时，工作前工作。
-ms.openlocfilehash: 94b3758bbf24133c0d01a0db9e17f9451cf2d8d2
-ms.sourcegitcommit: 9adb89206daa075af34a73bcb7e8fb86d7c2919a
+ms.openlocfilehash: e922cf3b5599e81905499db60000c5b5f34b69ad
+ms.sourcegitcommit: 88ab08c0fa1acbc9e066009e131b9f2b0d506c64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/10/2021
-ms.locfileid: "50603860"
+ms.locfileid: "50712266"
 ---
 # <a name="pre-work-for-the-migration-from-microsoft-cloud-deutschland"></a>从 Microsoft 云德国进行迁移的前期工作
 
@@ -45,10 +45,10 @@ ms.locfileid: "50603860"
 | 步骤 (步骤)  | 说明 | 影响 |
 |:-------|:-------|:-------|
 | 准备通知用户在迁移后重新启动客户端并登录和登录客户端和从客户端登录。 | 在迁移过程中，Office 客户端许可将从 Microsoft 云德国过渡到 Office 365 服务。 客户端在登录 Office 客户端和登录 Office 客户端后，将获取新的有效许可证。 | 用户的 Office 产品需要刷新 Office 365 服务的许可证。 如果未刷新许可证，Office 产品可能会遇到许可证验证错误。 |
-| 确保与 [Office 365 服务 URL 和 IP 地址的网络连接](https://aka.ms/o365urls)。 | 客户托管用于访问 Office 365 服务的所有客户端和服务都必须能够访问 Office 365 全局服务终结点。 <br>在这种情况下，您或您的协作伙伴已制定防火墙规则，阻止访问 [Office 365](https://aka.ms/o365urls) 服务 URL 中列出的 URL 和 IP 地址，并且 IP 地址必须更改防火墙规则，以允许访问 Office 365 全局服务 enpoint| 如果未在阶段 4 之前完成此操作，则可能会发生服务或客户端软件故障  |
+| 确保与 [Office 365 服务 URL 和 IP 地址的网络连接](https://aka.ms/o365urls)。 | 客户托管用于访问 Office 365 服务的所有客户端和服务都必须能够访问 Office 365 全局服务终结点。 <br>在这种情况下，您或您的协作合作伙伴已制定防火墙规则，阻止访问 [Office 365](https://aka.ms/o365urls) 服务 URL 中列出的 URL 和 IP 地址，并且 IP 地址必须更改防火墙规则，以允许访问 Office 365 全局服务终结点| 如果未在阶段 4 之前完成此操作，则可能会发生服务或客户端软件故障  |
 | 取消任何试用订阅。 | 试用版订阅将不会迁移，并且会阻止付费订阅的转移。 | 如果用户在取消后访问试用服务，则试用版服务已过期且无法正常工作。 |
 | 分析 Microsoft 云德国与 Office 365 服务之间的许可证功能差异。 | Office 365 服务包括当前 Microsoft 云德国中不可用的其他功能和服务。 在订阅转移期间，用户可以使用新功能。 | <ul><li> 分析 Microsoft 云德国和 Office 365 服务的许可证提供的不同功能。 从 [Office 365 平台服务说明开始](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-platform-service-description)。 </li><li> 确定是否应最初禁用 Office 365 服务的任何新功能以限制对用户或用户更改管理的影响，并根据需要更改用户许可证分配。 </li><li>为用户和技术支持人员准备 Office 365 服务提供的新服务和功能。 |
-| 创建组织范围的 [保留策略](https://docs.microsoft.com/microsoft-365/compliance/retention) ，防止在迁移过程中意外删除内容。  |<ul><li>为了确保内容不会在迁移过程中被最终用户意外删除，客户可以选择启用组织范围的保留策略。 </li><li>尽管不需要保留，但因为迁移期间随时放置的保留应按预期工作，所以保留策略是一种备份安全机制。 同时，保留策略可能无法由所有客户使用，尤其是关注保留的客户。</li></ul>| 应用保留策略，如 ["了解保留策略和保留标签"中所述](https://docs.microsoft.com/microsoft-365/compliance/retention-policies)。 如果未在阶段 4/9 之前完成此操作，则可能会发生服务或客户端软件故障。 </li></ul>|
+| 创建组织范围的 [保留策略](https://docs.microsoft.com/microsoft-365/compliance/retention) ，防止在迁移过程中意外删除内容。  |<ul><li>为了确保内容不会在迁移过程中被最终用户意外删除，客户可以选择启用组织范围的保留策略。 </li><li>尽管不需要保留，但因为迁移过程中随时放置的保留应按预期工作，所以保留策略是一种备份安全机制。 同时，保留策略可能无法由所有客户使用，尤其是关注保留的客户。</li></ul>| 应用保留策略，如 ["了解保留策略和保留标签"中所述](https://docs.microsoft.com/microsoft-365/compliance/retention-policies)。 如果未在阶段 4/9 之前完成此操作，则可能会发生服务或客户端软件故障。 </li></ul>|
 |||||
 
 ## <a name="active-directory-federation-services-ad-fs"></a>Active Directory 联合身份验证服务 (AD FS)
@@ -75,7 +75,7 @@ ms.locfileid: "50603860"
 
 | 步骤 (步骤)  | 说明 | 影响 |
 |:-------|:-------|:-------|
-| 在租户进入迁移阶段 5 之前 (更新到最新版本的混合配置向导) HCW 向导。 在收到消息中心通知 Office 365 租户已迁移后，可以不定期启动此活动。<br><br> Microsoft 云德国混合 Exchange Online 客户必须卸载以前版本的 HCW，然后从安装并执行最新版本 (17.0.5378.0 或更高版本 [https://aka.ms/hybridwizard](https://aka.ms/hybridwizard)) 。 |<ul><li>HCW 的最新版本包括必要的更新，以支持从 Microsoft 云德国过渡到 Office 365 服务的客户。</li><li> 更新包括对发送连接器和接收连接器本地证书设置的更改。</li><li> Exchange 管理员必须在第 5 阶段 （9 月 9 日）前随时重新安装 HCW (Exchange) 迁移。<br>在阶段 5 之前执行 HCW 时，在"Office 365 Exchange Online"下的 HCW 第 2 页上选择"Office _365_ Germany"，位于"_我的 Office 365"_ 组织下面的列表框中，</li><li>注意：完成 Office 365 租户迁移后，你将删除并重新安装 HCW，这次使用 HCW 第二个组合上的"Office 365 Worldwide"设置完成 Exchange Online 全局服务的混合设置。</li></ul>|在 Exchange 迁移迁移阶段 5 之前 (HCW) 可能会导致服务或客户端故障。 |
+| 在租户进入迁移阶段 5 之前 (更新到最新版本的混合配置向导 (HCW) 。 在收到消息中心通知 Office 365 租户迁移已开始后，您可以立即启动此活动。<br><br> Microsoft 云德国混合 Exchange Online 客户必须卸载以前版本的 HCW，然后从安装并执行最新版本 (17.0.5378.0 或更高版本 [https://aka.ms/hybridwizard](https://aka.ms/hybridwizard)) 。 |<ul><li>HCW 的最新版本包括必要的更新，以支持从 Microsoft 云德国过渡到 Office 365 服务的客户。</li><li> 更新包括对发送连接器和接收连接器本地证书设置的更改。</li><li> Exchange 管理员必须在 9 月 9 日阶段 5 之前随时重新安装 HCW (Exchange) 开始。<br>在阶段 5 之前执行 HCW 时，在"Office 365 Exchange Online"下的 HCW 第 2 页上选择"Office _365_ Germany"，位于"_我的 Office 365"_ 组织下面的列表框中，</li><li>**注意**：完成 Office 365 租户迁移后，你将删除并重新安装 HCW，这次使用 HCW 第 2 页上的"Office 365 全球范围"设置，使用 Exchange Online 全局服务完成混合设置。</li></ul>|在 Exchange 迁移迁移阶段 5 之前 (HCW) 可能会导致服务或客户端故障。 |
 ||||
 
 ## <a name="sharepoint-online"></a>SharePoint Online
@@ -145,7 +145,7 @@ ms.locfileid: "50603860"
 
 | 步骤 (步骤)  | 说明 | 影响 |
 |:-------|:-------|:-------|
-| 向现有信赖方信任 (SSO) 单一登录的标识符，并禁用 AD FS 元数据自动更新。 | 在开始迁移之前，必须将 ID 添加到 AD FS 信赖方信任中。 为了避免意外删除信赖方标识符，请禁用元数据更新的自动更新。 <br><br> 在 AD FS 服务器上以单一命令行运行此命令： <br>`Set-AdfsRelyingPartyTrust -TargetIdentifier urn:federation:microsoftonline.de -Identifier @('urn:federation:microsoftonline.de', 'https://login.microsoftonline.de/extSTS.srf', 'https://login.microsoftonline.de') -AutoUpdate $False`
+| 向现有信赖方信任 (SSO) 单一登录的标识符，并禁用 AD FS 元数据自动更新。 | 在开始迁移之前，必须将 ID 添加到 AD FS 信赖方信任中。 为了避免意外删除信赖方标识符，请禁用元数据更新的自动更新。 <br><br> 在 AD FS 服务器上以单个命令行运行此命令： <br>`Set-AdfsRelyingPartyTrust -TargetIdentifier urn:federation:microsoftonline.de -Identifier @('urn:federation:microsoftonline.de', 'https://login.microsoftonline.de/extSTS.srf', 'https://login.microsoftonline.de') -AutoUpdate $False`
 | 联合身份验证组织 | 必需操作。 在 SharePoint 9 (阶段 4 之前) 将导致迁移期间的服务影响。  |
 | 为全局 Azure AD 终结点生成信赖方信任。 | 客户需要手动创建信赖方信任 (RPT) [全局](https://nexus.microsoftonline-p.com/federationmetadata/2007-06/federationmetadata.xml) 终结点。 为此，可通过 GUI 添加新的 RPT，方法为利用全局联合元数据 URL，然后使用 AD FS 帮助) 中的 [Azure AD RPT](https://adfshelp.microsoft.com/AadTrustClaims/ClaimsGenerator#:~:text=%20Azure%20AD%20RPT%20Claim%20Rules%20%201,Azure%20AD.%20This%20will%20be%20what...%20More%20) 声明规则 (生成声明规则，并导入到 RPT 中。 | 联合身份验证组织 | 必需操作。 Inaction will result in service impact during the migration. |
 |||||
@@ -154,6 +154,7 @@ ms.locfileid: "50603860"
 
 如果在 Microsoft 云德国实例中对 Office 365 和 Microsoft Azure 使用相同的 Azure Active Directory 标识分区，请确保为 Microsoft Azure 服务的客户驱动迁移做准备。
 在 Office 365 租户达到迁移阶段 3 之前，不得启动 Microsoft Azure 服务的迁移，并且必须在迁移阶段 8 完成之前完成迁移。
+
 | 步骤 (步骤)  | 说明 | 影响 |
 |:-------|:-------|:-------|
 | 通过与合作伙伴合作，确定使用哪些 Azure 服务并准备将来从德国迁移到 Office 365 服务租户。 按照 Azure 迁移操作手册 [中所述的步骤操作](https://docs.microsoft.com/azure/germany/germany-migration-main)。 |<ul><li>Azure 资源的迁移是客户的责任，需要按照规定步骤手动完成。 了解组织中使用的服务是成功迁移 Azure 服务的关键。 </li><li> 在组织组织 (下拥有 Azure 订阅的 Office 365 Germany 客户) 必须按照 Microsoft 规定的顺序开始订阅和服务迁移。</li></ul>|<ul><li>客户可能有多个 Azure 订阅，每个订阅包含基础结构、服务和平台组件。 </li><li> 管理员应确定订阅和利益干系人，以确保作为此迁移事件的一部分，可以立即进行迁移和验证。 </li><li>未能在规定时间线内成功完成这些订阅和 Azure 组件的迁移将影响 Office 和 Azure AD 到 Office 365 服务的转换完成，并可能导致数据丢失。 </li><li> 消息中心通知将指示客户引导的迁移可以开始的点。 </li></ul>|

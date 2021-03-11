@@ -20,12 +20,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0d6dfb17-8582-4172-a9a9-aed798150263
 description: 获取定期报表，了解你组织中的人员当前是如何使用 Microsoft 365 服务的。 通过使用情况概述仪表板，可深入了解每个图表获取更多见解。
-ms.openlocfilehash: 4ec7690e5300b2ac08a98fbec3f4c253e970738c
-ms.sourcegitcommit: 7ecd10b302b3b3dfa4ba3be3a6986dd3c189fbff
+ms.openlocfilehash: a71ced2dd0aa71179c1b26cec571f3025af1ce05
+ms.sourcegitcommit: 9adb89206daa075af34a73bcb7e8fb86d7c2919a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "49921166"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "50603848"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center"></a>管理中心中的 Microsoft 365 报表
 
@@ -85,6 +85,8 @@ ms.locfileid: "49921166"
 ## <a name="which-activity-reports-are-available-in-the-admin-center"></a>管理中心提供了哪些活动报表
 
 根据你的订阅，下面是可供使用的报表。
+
+- [Microsoft 浏览器使用状况](browser-usage-report.md) 
   
 - [电子邮件活动](email-activity-ww.md)
 
@@ -125,8 +127,6 @@ ms.locfileid: "49921166"
 - [适用于美国政府的 OneDrive for Business 的使用情况](onedrive-for-business-usage.md)
 
 - [Microsoft 365 应用版使用情况](microsoft365-apps-usage-ww.md)
-
-- [适用于美国政府的 Microsoft 365 应用版使用情况](microsoft365-apps-usage.md)
   
 - [SharePoint 网站使用情况](sharepoint-site-usage-ww.md)
 

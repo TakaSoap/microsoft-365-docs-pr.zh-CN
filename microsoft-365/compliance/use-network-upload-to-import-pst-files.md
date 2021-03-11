@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 103f940c-0468-4e1a-b527-cc8ad13a5ea6
 description: 面向管理员：了解如何使用网络上传将多个 PST 文件批量导入 Microsoft 365 中的用户邮箱。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: c126a8e00ae5182d42122fb98f95ffd585360412
-ms.sourcegitcommit: 66f1f430b3dcae5f46cb362a32d6fb7da4cff5c1
+ms.openlocfilehash: 6248fcb96468ecfbb2b5454e40badc6293770003
+ms.sourcegitcommit: 8950d3cb0f3087be7105e370ed02c7a575d00ec2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "46662286"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50597079"
 ---
 # <a name="use-network-upload-to-import-your-organizations-pst-files-to-microsoft-365"></a>使用网络上传将组织的 PST 文件导入到 Microsoft 365
 
@@ -101,7 +101,7 @@ ms.locfileid: "46662286"
 2. 在安全与合规中心的左窗格中，单击“**信息管理**”\>“**导入**”\>“**导入 PST 文件**”。
     
     > [!NOTE]
-    > 你必须分配有相应的权限，才能访问安全与合规中心中的“**导入**”页面。 有关更多详细信息，请参阅**准备工作**部分。 
+    > 你必须分配有相应的权限，才能访问安全与合规中心中的“**导入**”页面。 有关更多详细信息，请参阅 **准备工作** 部分。 
     
 3. 在“**导入 PST 文件**”页面上，单击 ![添加图标](../media/ITPro-EAC-AddIcon.gif)“**新建导入作业**”。
     
@@ -182,23 +182,19 @@ Microsoft Azure 存储资源管理器处于预览阶段。
   
 1. 下载并安装 [Microsoft Azure 存储资源管理器工具](https://go.microsoft.com/fwlink/p/?LinkId=544842)。
     
-2. 启动 Microsoft Azure 存储资源管理器，右键单击左窗格中的“存储帐户”****，然后单击“连接到 Azure 存储”****。
-    
-    ![右键单击“存储帐户”，然后单击“连接到 Azure 存储”](../media/75b80cc3-c336-4f96-ad32-54ac9b96a7af.png)
+2. 启动 Microsoft Azure 存储资源管理器。
+
+3. 在“**连接到 Azure**”对话框中的“**选择源**”页上，单击“**Blob 容器**”。
   
-3. 单击“使用共享访问签名 (SAS) URI 或连接字符串”****，然后单击“下一步”****。
+4. 在“**选择身份验证方法**”页面上，选择“**共享访问签名（SAS）**”选项，然后单击“**下一步**”。
     
-4. 单击“**使用 SAS URI**”，将在步骤 1 中获得的 SAS URL 粘贴到 “**URI**”下的框中，然后单击“**下一步**”。
+5. 在“**输入连接信息**”页面上，将步骤 1 中获取的 SAS URL 粘贴到“**Blob 容器 SAS URL**”下的框中，然后单击“**下一步**”。 粘贴 SAS URL 后，通过 **ingestiondata** 自动填入“**显示名称**”下的框。
     
-5. 在“连接摘要”**** 页面上，可以查看连接信息，然后单击“连接”****。
+6. 在“**摘要**”页面上，可以查看连接信息，然后单击“**连接**”。
     
-    此时，会打开 **ingestiondata** 容器。 它包含你在步骤 2 中上传的 PST 文件。 **ingestiondata** 容器位于“存储帐户”****\>“(SAS 附加服务)”****\>“Blob 容器”**** 下。 
-    
-    ![Azure 存储资源管理器显示你上传的 PST 文件的列表](../media/12376fed-13a5-4a09-8fe6-e819e011b334.png)
+    此时，会打开 **ingestiondata** 容器。 它包含你在步骤 2 中上传的 PST 文件。 **ingestiondata** 容器位于“**存储账户**”\>“**（附加容器）**”\>“**Blob 容器**”下。 
   
-6. 使用完 Microsoft Azure 存储资源管理器后，右键单击“ingestiondata”****，然后单击“分离”**** 断开与 Azure 存储区域的连接。 否则，下次尝试附加时会收到错误消息。 
-    
-    ![右键单击“ingestion”，然后单击“分离”以断开与 Azure 存储区域的连接](../media/1e8e5e95-4215-4ce4-a13d-ab5f826a0510.png)
+7. 使用完 Microsoft Azure 存储资源管理器后，右键单击“ingestiondata”，然后单击“分离”断开与 Azure 存储区域的连接。 否则，下次尝试附加时会收到错误消息。
   
 ## <a name="step-4-create-the-pst-import-mapping-file"></a>步骤 4：创建 PST 导入映射文件
 
@@ -232,7 +228,7 @@ Microsoft Azure 存储资源管理器处于预览阶段。
     | 参数 | 说明 | 示例 |
     |:-----|:-----|:-----|
     | `Workload` <br/> |指定将数据导入到的服务。 若要将 PST 文件导入到用户邮箱，请使用 `Exchange`。  <br/> | `Exchange` <br/> |
-    | `FilePath` <br/> |指定在步骤 2 中将 PST 文件上传到的 Azure 存储位置中的文件夹位置。  <br/> 如果在步骤 2 中你未在 SAS URL 中的 `/Dest:` 参数中包含可选子文件夹名称，请在 CSV 文件中将此参数留空。 如果包含了子文件夹名称，请在此参数中指定该名称（请参阅第二个示例）。 此参数的值区分大小写。  <br/> 无论采用哪种方法，均*不要*在 `FilePath` 参数的值中包含“ingestiondata”。  <br/><br/> **重要提示**：如果在步骤 2 中你在 SAS URL 中的 `/Dest:` 参数中包含了可选子文件夹名称，则文件路径名称的大小写必须与你使用的大小写相同。 例如，如果你在步骤 2 中将 `PSTFiles` 用作子文件夹名称，然后在 CSV 文件中的 `FilePath` 参数中使用 `pstfiles`，则导入 PST 文件将会失败。 请务必在两种情况下都使用相同的大小写。  <br/> |（保留为空白）  <br/> 或  <br/>  `PSTFiles` <br/> |
+    | `FilePath` <br/> |指定在步骤 2 中将 PST 文件上传到的 Azure 存储位置中的文件夹位置。  <br/> 如果在步骤 2 中你未在 SAS URL 中的 `/Dest:` 参数中包含可选子文件夹名称，请在 CSV 文件中将此参数留空。 如果包含了子文件夹名称，请在此参数中指定该名称（请参阅第二个示例）。 此参数的值区分大小写。  <br/> 无论采用哪种方法，均 *不要* 在 `FilePath` 参数的值中包含“ingestiondata”。  <br/><br/> **重要提示**：如果在步骤 2 中你在 SAS URL 中的 `/Dest:` 参数中包含了可选子文件夹名称，则文件路径名称的大小写必须与你使用的大小写相同。 例如，如果你在步骤 2 中将 `PSTFiles` 用作子文件夹名称，然后在 CSV 文件中的 `FilePath` 参数中使用 `pstfiles`，则导入 PST 文件将会失败。 请务必在两种情况下都使用相同的大小写。  <br/> |（保留为空白）  <br/> 或  <br/>  `PSTFiles` <br/> |
     | `Name` <br/> |指定要导入到用户邮箱的 PST 文件的名称。 此参数的值区分大小写。  <br/> <br/>**重要说明：** CSV 文件中的 PST 文件名的大小写必须与在步骤 2 中上传到 Azure 存储位置的 PST 文件相同。 例如，如果在 CSV 文件中的 `Name` 参数中使用 `annb.pst`，但实际 PST 文件的名称为 `AnnB.pst`，则导入该 PST 文件将会失败。 请确保 CSV 文件中的 PST 名称使用与实际 PST 文件相同的大小写。  <br/> | `annb.pst` <br/> |
     | `Mailbox` <br/> |指定要将 PST 文件导入到的邮箱的电子邮件地址。 不能指定公用文件夹，因为 PST 导入服务不支持将 PST 文件导入公用文件夹。  <br/> 若要将 PST 文件导入到非活动邮箱，必须为此参数指定邮箱 GUID。 若要获取此 GUID，请在 Exchange Online 中运行以下 PowerShell 命令：`Get-Mailbox <identity of inactive mailbox> -InactiveMailboxOnly | FL Guid` <br/> <br/>**注意：** 有时，你可能有多个邮箱具有相同的电子邮件地址，其中一个邮箱是活动邮箱，另一个邮箱处于软删除（或非活动）状态。 在这种情况下，必须指定邮箱 GUID 来唯一标识要将 PST 文件导入到的邮箱。 若要获取活动邮箱的此 GUID，请运行以下 PowerShell 命令：`Get-Mailbox <identity of active mailbox> | FL Guid`。 若要获取软删除（或非活动）邮箱的 GUID，请运行此命令：`Get-Mailbox <identity of soft-deleted or inactive mailbox> -SoftDeletedMailbox | FL Guid`。  <br/> | `annb@contoso.onmicrosoft.com` <br/> 或  <br/>  `2d7a87fe-d6a2-40cc-8aff-1ebea80d4ae7` <br/> |
     | `IsArchive` <br/> | 指定是否要将 PST 文件导入到用户的存档邮箱。 有两个选项：  <br/><br/>**FALSE：** 将 PST 文件导入到用户的主邮箱。  <br/> **TRUE：** 将 PST 文件导入到用户的存档邮箱。 这是假设[用户的存档邮箱已启用](enable-archive-mailboxes.md)的情况。 <br/><br/>如果将此参数设置为 `TRUE`，但用户的存档邮箱未启用，则针对此用户进行的导入将失败。 如果针对某个用户的导入失败（因为他们的存档邮箱未启用，并且此属性设置为 `TRUE`），导入作业中的其他用户将不会受到影响。  <br/>  如果将此参数留空，PST 文件会导入到用户的主邮箱中。  <br/> <br/>**注意：** 若要针对主邮箱位于本地的某个用户将 PST 文件导入到基于云的存档邮箱，只需将此参数指定为 `TRUE`，并将 `Mailbox` 参数指定为该用户本地邮箱的电子邮件地址。  <br/> | `FALSE` <br/> 或  <br/>  `TRUE` <br/> |
@@ -273,7 +269,7 @@ Microsoft Azure 存储资源管理器处于预览阶段。
 
     ![单击“验证”来检查 CSV 文件是否有错误](../media/4680999d-5538-4059-b878-2736a5445037.png)
   
-    CSV 文件必须经过成功验证才能创建 PST 导入作业。 文件名在成功验证后会更改为绿色。 如果验证失败，请单击“查看日志”**** 链接。 系统将打开一个验证错误报告，显示文件中失败的每一行所对应的错误消息。
+    CSV 文件必须经过成功验证才能创建 PST 导入作业。 文件名在成功验证后会更改为绿色。 如果验证失败，请单击“查看日志”链接。 系统将打开一个验证错误报告，显示文件中失败的每一行所对应的错误消息。
 
    > [!NOTE]
    > 如前所述，映射文件最多可包含 500 行。 如果映射文件包含的行数超过 500，验证将失败。 若要导入超过 500 行的 PST 文件，必须创建多个映射文件和多个导入作业。
@@ -378,7 +374,7 @@ Microsoft Azure 存储资源管理器处于预览阶段。
   
 ![将 PST 文件导入到 Office 365 的网络上传过程的工作流](../media/9e05a19e-1e7a-4f1f-82df-9118f51588c4.png)
   
-1. **将 PST 导入工具和密钥下载到专用 Azure 存储位置：** 第一步是下载用于将 PST 文件上传到 Microsoft 云中的 Azure 存储位置的 AzCopy 命令行工具和访问密钥。 需要从安全与合规中心的“导入”**** 页获取工具和密钥。 密钥（称为安全访问签名 (SAS) 密钥）为你提供将 PST 文件上传到专用的安全 Azure 存储位置所需的权限。 此访问密钥对组织是唯一的，有助于防止在 PST 文件上传至 Microsoft 云之后对其进行未经授权的访问。 导入 PST 文件不需要你的组织拥有单独的 Azure 订阅。 
+1. **将 PST 导入工具和密钥下载到专用 Azure 存储位置：** 第一步是下载用于将 PST 文件上传到 Microsoft 云中的 Azure 存储位置的 AzCopy 命令行工具和访问密钥。 需要从安全与合规中心的“导入”页获取工具和密钥。 密钥（称为安全访问签名 (SAS) 密钥）为你提供将 PST 文件上传到专用的安全 Azure 存储位置所需的权限。 此访问密钥对组织是唯一的，有助于防止在 PST 文件上传至 Microsoft 云之后对其进行未经授权的访问。 导入 PST 文件不需要你的组织拥有单独的 Azure 订阅。 
     
 2. **将 PST 文件上传到 Azure 存储位置：** 下一步是使用 AzCopy.exe 工具（已在步骤 1 中下载）将 PST 文件上传并存储到 Azure 存储位置，该存储位置位于你组织所在的区域 Microsoft 数据中心。 若要上传，要导入的 PST 文件必须位于组织的文件共享或文件服务器上。
     

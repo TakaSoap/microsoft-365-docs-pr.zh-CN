@@ -21,12 +21,12 @@ description: Microsoft 365 管理中心 - 了解本月添加的功能。
 ms.custom:
 - MACDashWhatsNew
 - AdminSurgePortfolio
-ms.openlocfilehash: e8e743c0f3de0d7ac2eb8ebb9995596783d2d31a
-ms.sourcegitcommit: a7d1b29a024b942c7d0d8f5fb9b5bb98a0036b68
+ms.openlocfilehash: 2ecf9ddbd1257e7273da36371abb9f9e38df3f4a
+ms.sourcegitcommit: 6e4ddf35aaf747599f476f9988bcef02cacce1b6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50461824"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50717643"
 ---
 # <a name="whats-new-in-the-microsoft-365-admin-center"></a>Microsoft 365 管理中心的新增功能
 
@@ -57,11 +57,17 @@ ms.locfileid: "50461824"
 
 ### <a name="message-center"></a>消息中心
 
-我们更新了消息中心，以帮助你发现相关消息，并添加了更灵活的阅读体验。 我们添加了 **一个新的服务** 列，可帮助您扫描邮件应用于的服务，并按服务和其他元数据筛选邮件。 可以收藏邮件以将其标记为后续操作，选择邮件列表中显示哪些列，并在包含"后退"和"下一步"按钮的邮件之间导航。 我们还改进了此过程，以便更轻松地提供有关消息中心帖子的反馈。
+我们更新了消息中心，可帮助你发现相关消息，并添加了更灵活的阅读体验。 我们添加了 **一个新的服务** 列，可帮助您扫描邮件应用于的服务，并按服务和其他元数据筛选邮件。 可以收藏邮件以将其标记为后续操作，选择邮件列表中显示哪些列，并在包含"后退"和"下一步"按钮的邮件之间导航。 我们还改进了此过程，以便更轻松地提供有关消息中心帖子的反馈。
 
 :::image type="content" source="../media/message-center.png" alt-text="屏幕截图：显示收件箱和邮件的邮件中心主页":::
 
 若要了解有关新功能的信息，请查看消息中心[中的"管理邮件"。](manage/manage-messages.md)
+
+### <a name="whats-new-features"></a>新增功能
+
+我们对查看 Office 应用中用户的"新增功能"功能进行了改进。 现在，您可以在"Whats"新窗格中看到用户可以看到的丰富内容。 还可以在决定让用户了解该功能之前了解有关该功能的更多信息。 For more info, check out [Manage which Office‎ features appear in What's New](manage/show-hide-new-features.md).
+
+:::image type="content" source="../media/power-bi-whats-new2.png" alt-text="Screenshot： Office apps what's new page showing improvements to Power BI":::
 
 ## <a name="ignite-2020-august--september"></a>Ignite 2020 (&) 
 
@@ -75,7 +81,7 @@ ms.locfileid: "50461824"
 
 - **租户：** 在管理的租户之间快速切换。
 - **所有** 租户：一个新页面，可快速查看所有租户服务的运行状况、任何打开的服务请求、产品和帐单、建议的安装任务以及该租户中的用户数。
-- **安装程序**：多租户设置页提供了"设置"页的列表视图，但会针对许多租户进行组织。 你可以看到哪些功能未打开，哪些任务针对所有租户完成，哪些任务是租户仍然需要完成的任务。 此视图将帮助您跟踪功能采用，并确保始终完成建议的安全设置任务。
+- **安装程序**：多租户安装页提供了"设置"页的列表视图，但会针对许多租户进行组织。 你可以看到哪些功能未打开，哪些任务针对所有租户完成，租户仍然需要完成的任务。 此视图将帮助您跟踪功能采用，并确保始终完成建议的安全设置任务。
 - **服务运行状况**：服务运行状况视图显示是否有事件或公告影响租户。 它甚至会告诉您受影响的托管租户数。 只需选择事件，在"概述"选项卡上获取详细信息，然后切换到"受影响的租户"选项卡以向下钻取和支持该租户。
 - **跨租户邮箱迁移** 是一项新服务，现在在公共预览版中，允许你在租户之间移动邮箱，而无需离开然后载入邮箱。 
 - **跨租户域共享**：很快，你可以加入专用预览版，实现跨多个租户共享域的功能。 例如，如果 Contoso 收购 Wingtip Toys，Contoso 可以与 Wingtip Toys 共享域，以便两个租户中的用户都可以使用"contoso.com"作为他们的电子邮件地址。
@@ -113,7 +119,7 @@ ms.locfileid: "50461824"
   - **导航**：导航下的结果可以快速帮助你快速到达管理中心中的页面。 例如，搜索"角色"将让你访问 Azure AD 角色的"角色"页。
   - **设置**：搜索与组织、订阅的服务以及安全和隐私设置相关的任何设置。 
   - **域**：你可以找到指向域的快速链接，然后该链接将你指向该域的"概述和运行状况"页。
-  - **文档**：如果我们找不到结果，我们将尝试查找一些文档来提供帮助。 文章的策展列表需要更长的时间来查找匹配项，因此请稍等一下，让搜索找到结果。 
+  - **文档**：如果我们找不到结果，我们将尝试查找一些文档来提供帮助。 文章的策展列表需要更长时间来查找匹配项，因此请稍等一下，让搜索找到结果。 
   - **反馈**：找不到要查找的内容？ 从搜索向我们发送反馈。 我们将在管理中心内为更多页面和更多功能添加搜索功能。
 
 ### <a name="microsoft-365-admin-mobile-app"></a>Microsoft 365 管理移动应用
@@ -122,7 +128,7 @@ ms.locfileid: "50461824"
 
 - 支持 **Microsoft Intune** 的移动应用程序管理和条件访问策略：你现在可以使用个人设备管理 Microsoft 365，即使你组织已打开 Intune 的移动应用程序管理和条件访问策略。
 - **邮件中心通知**：如果希望收到有关新邮件中心帖子的通知，请打开"设置通知"上的消息  >  中心通知。 通过通知，我们希望确保你随时了解租户中的重要信息和事件。
-- **计费通知**：如果你希望获取设备上计费通知（如果订阅即将过期，还可以在"设置通知"  >  中打开计费通知）。
+- **计费通知**：如果你希望获取设备上计费通知（如果订阅即将过期）还可以在"设置通知"上打开  >  计费通知。
 - **深色模式**：欢迎使用移动应用的深色部分。 这是我们请求最多的功能之一。 转到 **"设置**  >  **主题**"以将其打开。
 - **报告问题**：你现在可以报告应用中的问题或查看其他管理员报告的问题。 访问 **服务运行状况** 以签出它。
 
@@ -130,13 +136,13 @@ ms.locfileid: "50461824"
 
 ### <a name="usage-recommendations-for-small-and-medium-businesses"></a>中小型企业的使用建议
 
-如果组织中的某些人员未主动使用 Teams、OneDrive 或 Office 应用，则中小型企业可能会获得主页上的建议。  当你查看建议时，你可以向非活动用户快速发送电子邮件 Microsoft 培训，以帮助他们开始使用该应用，并确保你从订阅获得全部价值。
+如果组织中的某些人员未主动使用 Teams、OneDrive 或 Office 应用，则中小型企业可能会获得主页上的建议。  当你查看建议时，你可以向非活动用户快速发送 Microsoft 培训电子邮件，以帮助他们开始使用应用，并确保你从订阅获得全部价值。
 
 ### <a name="remote-work-collection"></a>远程工作集合
 
 10 月，我们将添加远程工作集合，以帮助小型企业所有者及其员工实现联机和远程工作。  **远程工作协作设置** 是 Microsoft 建议安全启用远程工作并有效协作的所有功能的推荐列表。 在几周内，可以在"设置 **远程工作要素**  >  **"中试用它**。
 
-![安装程序中的"远程工作要素"页包含 7 个未启动的任务。](../media/MAC-WN-RemoteWork.png)
+![安装程序中的"远程工作要素"页，包含 7 个未启动的任务。](../media/MAC-WN-RemoteWork.png)
 
 若要详细了解如何安全地允许远程工作和易于记忆和共享的方便 Web 地址，请转到[aka.ms/remote-business。](https://aka.ms/remote-business)
 
@@ -155,15 +161,15 @@ ms.locfileid: "50461824"
 
 5 月，我们宣布你很快就会能够将消息中心帖子同步到 Microsoft Planner，现在可供所有人使用。  现在可以从邮件创建任务、分配任务并跟踪任务完成。 第一次选择 **Planner 同步** 时，你需要连接到相应的计划。
 
-![在首选项按钮旁边的命令栏中突出显示"planner syncing"的消息中心页面。](../media/MAC-WN-MCPlannerSync.png)
+![在首选项按钮旁边的命令栏中突出显示了"planner syncing"的消息中心页面。](../media/MAC-WN-MCPlannerSync.png)
 
 若要了解有关它的信息，请查看本文和视频，了解它的工作原理：在 Planner 中跟踪消息 [中心帖子](https://docs.microsoft.com/Office365/Planner/track-message-center-tasks-planner)
 
 ### <a name="documentation-training-and-videos"></a>文档、培训和视频
 
 - 全新的 Microsoft Ignite-虚拟中心[。](https://adoption.microsoft.com/virtual-hub/) 深入探讨为 IT 专业人员和开发人员提供的技术培训。 快速查找大约 20 个新视频作为 #SIDETRACKED 的一部分，这是 Ignite 管理员轨今年的名称。
-- [Microsoft 365](https://www.youtube.com/watch?v=OVjb2lGJ4GU&t=2s) 视频系列的新增功能：本月，我们将介绍适用于 Teams 和 Web 的 Whiteboard 中提供的新功能、如何自动将用户预配到 Azure AD、Teams 中的新 Power Automate 触发器和操作等。 请继续关注下个月，我们将回顾 Ignite 发生的所有重大事件！
-- 我们重新设计了 Microsoft [365 文档](https://docs.microsoft.com/microsoft-365) 页面，首先重点介绍解决方案。 当新解决方案在此页面上可用时，我们将突出显示它们，因此请留意。
+- [Microsoft 365](https://www.youtube.com/watch?v=OVjb2lGJ4GU&t=2s) 视频系列的新增功能：本月，我们将介绍适用于 Teams 和 Web 的 Whiteboard 中提供的新功能，如何自动将用户预配到 Azure AD、Teams 中的新 Power Automate 触发器和操作等。 请继续关注下个月，我们将回顾 Ignite 发生的所有重大事件！
+- 我们重新设计了 Microsoft [365 文档](https://docs.microsoft.com/microsoft-365) 页面，首先重点介绍解决方案。 在此页面上提供新解决方案时，我们将突出显示它们，因此请留意。
 
 ![Microsoft 365 解决方案文档的新登录页面，包含"为远程工作者提供能力"等解决方案。](../media/MAC-WN-M365Docspage.png)
 
@@ -187,7 +193,7 @@ ms.locfileid: "50461824"
 
 ### <a name="domains"></a>域
 
-域管理可能很复杂，我们发布了一项新功能来简化这一过程。 转到">域的设置"，然后选择一个域，获取有关域和域运行状况详细信息。
+域管理可能很复杂，我们发布了一项新功能来简化这一过程。 转到">域设置"，然后选择一个域，获取有关域和域运行状况详细信息。
 
 :::image type="content" source="../media/MAC-WN-DomainDNS.PNG" alt-text="域详细信息页面contoso.com":::
 
@@ -197,7 +203,7 @@ ms.locfileid: "50461824"
 
 ## <a name="june-2020"></a>2020 年 6 月
 
-### <a name="keeping-up-with-office-whats-new-management"></a>了解 Office 的新增管理
+### <a name="keeping-up-with-office-whats-new-management"></a>了解 Office 新增管理
 
 几个月之前，我们添加了一个设置，允许你管理在用户的 [Office](#office-whats-new-management)应用中显示的新邮件。 本月，我们发布了新的主页卡，可帮助你快速操作并跟踪您希望向组织用户显示的"新增功能"邮件。
 
@@ -243,8 +249,8 @@ ms.locfileid: "50461824"
 
 ### <a name="docs-training-and-videos-may"></a>5 月 (文档) 
 
-- **Microsoft 365** 视频系列中的新增功能：本月，我们将介绍 Teams 管理员和安全与合规中心的新支持体验、Planner 与消息中心的集成，以及 Microsoft Teams 中的新 3x3 视频布局。 
-- [Microsoft 365 管理中心帮助](https://docs.microsoft.com/microsoft-365/admin/)中心页面已更新，可帮助你更快找到所需的内容。 如果你立即查看该页面，我们添加了一张卡片来通知你重要更新和更改。
+- **Microsoft 365** 视频系列中的新增功能：本月，我们将介绍 Teams 管理员和安全与合规中心的新支持体验、Planner 与消息中心的集成以及 Microsoft Teams 中的新 3x3 视频布局。 
+- [Microsoft 365 管理中心帮助](https://docs.microsoft.com/microsoft-365/admin/)中心页面已更新，可帮助你更快找到所需的内容。 如果你立即查看该页面，我们添加了一张卡片，告知你重要更新和更改。
 
 ## <a name="april-2020"></a>2020 年 4 月
 
@@ -278,12 +284,12 @@ Teams 管理中心、安全中心和合规中心现在使用相同的"需要帮�
 
 - 管理中心主页上的新建议卡片显示哪些用户 30 天内未主动使用 Teams。 你可以向这些用户发送培训电子邮件，让他们开始使用 Teams。
 - **将人员与团队汇集** 在一起：转到安装程序以查看新页面，帮助你为许可用户打开 Teams 并允许来宾访问，以便你可以与 Teams 中的外部客户合作。
-- Microsoft Teams 卡现在默认固定到主页。 它显示 Teams 是否已打开，以及是否允许来宾访问。 它还允许你检查新许可的 Teams 用户的安装状态，并检查网络问题是否可能会影响 Teams 用户。
+- Microsoft Teams 卡片现在默认固定到主页。 它显示 Teams 是否已打开，以及是否允许来宾访问。 它还允许你检查新许可的 Teams 用户的安装状态，并检查网络问题是否可能会影响 Teams 用户。
 - 最后，如果你购买了包含 Teams 的许可证，则 Teams 现在是初始设置流程的一个步骤。
 
 ### <a name="productivity-score"></a>工作效率分数
 
-Productivity Score 提供人们如何使用 Microsoft 云服务和支持它们的技术体验的见解。 该分数反映你的组织与员工和技术体验度量的绩效，并将你的分数与像你这样的组织进行比较。 本月，我们将向预览体验介绍以下新概念：
+Productivity Score 提供了有关用户如何使用 Microsoft 云服务以及支持这些服务的技术体验的见解。 该分数反映你的组织与员工和技术体验度量的绩效，并将你的分数与像你这样的组织进行比较。 本月，我们将向预览体验介绍以下新概念：
 
 - 主页和类别详细信息页面上主要见解的趋势视图 -添加到技术体验的 Endpoint Analytics 和网络连接类别
 - 员工体验类别中显示的相关技术体验见解
@@ -297,9 +303,9 @@ Productivity Score 提供人们如何使用 Microsoft 云服务和支持它们�
 我们这个月的组有两个更新：
 
 - 现在，您可以编辑 Office 365 组的电子邮件地址 (在 Outlook 中称为"组"，并且很快将称为 Microsoft 365 组) 。
-- 我们收到你的反馈，并且添加了更明确的错误消息，说明为什么无法将组转换为 Microsoft 团队。
+- 我们收到你的反馈，并添加了更明确的错误消息，说明为什么无法将组转换为 Microsoft 团队的原因。
 
-### <a name="docs-videos-and-training-april"></a>) 年 4 月 (文档、视频和) 
+### <a name="docs-videos-and-training-april"></a>4 月 (文档、视频和) 
 
 **Microsoft 365** 视频系列中的新增功能：本月，我们介绍帮助小型企业过渡到远程工作的提示和资源，包括如何推出 Microsoft Teams、与客户端和合作伙伴保持联系的远程工作培训资源，以及新的 Microsoft 365 商务语音计划。 [Microsoft 365 中的新增功能](https://go.microsoft.com/fwlink/p/?linkid=2118096)
 
@@ -323,13 +329,13 @@ Productivity Score 提供人们如何使用 Microsoft 云服务和支持它们�
 
 ### <a name="featured-feedback-fix-improve-add-user-reliability-for-licensing"></a>特别推荐的反馈修复：提高许可的"添加用户"可靠性
 
-我们收到了许多来自管理员的反馈，这些反馈是，在添加用户时分配许可证有多困难。 我们已对此修补程序进行了第一次更新，并且已迁移到一个更可靠的后台服务，以处理这些请求。 如果出现错误，现在将看到一条错误消息，让您重试。
+我们收到了许多来自管理员的反馈，这些反馈都说明在添加用户时分配许可证有多困难。 我们已对此修补程序进行了第一次更新，并且已迁移到一个更可靠的后台服务，以处理这些请求。 如果出现错误，现在将看到一条错误消息，让您重试。
 
 ![添加包含错误的用户确认页面。](../media/MAC-WN-ImprovedLicensing.png)
 
 ### <a name="microsoft-teams-home-page-card"></a>Microsoft Teams 主页卡
 
-随着 Teams 使用情况的上升，一些组织将获取固定的仪表板卡，使启用 Teams 变得更加可发现。 该卡片还具有指向培训和文档的链接，可帮助组织过渡到远程工作。 只需转到 **主页** 以查看新卡片。
+随着 Teams 使用情况的上升，一些组织将获取固定的仪表板卡，使打开 Teams 变得更加可发现。 该卡片还具有指向培训和文档的链接，可帮助组织过渡到远程工作。 只需转到 **主页** 以查看新卡片。
 
 ![Microsoft Teams 主页卡](../media/MAC-WN-TeamsCard.PNG)
 
@@ -361,7 +367,7 @@ Productivity Score 提供人们如何使用 Microsoft 云服务和支持它们�
 
 ### <a name="videos-training-and-docs"></a>视频、培训和文档
 
-[Microsoft 365 Web](https://go.microsoft.com/fwlink/p/?linkid=2118096)系列中的新增功能：在本月的事件集中，我们重点介绍了 Microsoft Teams 的 3 周年纪念日，并涵盖新功能，包括联机会议中改进的音频质量、面向具有 Shifts 应用的一线经理的目标通信、Teams 和 Skype 消费者互操作性等。
+[Microsoft 365 Web](https://go.microsoft.com/fwlink/p/?linkid=2118096)系列中的新增功能：在本月的事件集中，我们重点介绍了 Microsoft Teams 3 周年纪念日，并涵盖新功能，包括联机会议中改进的音频质量、面向具有 Shifts 应用的一线经理的目标通信、Teams 和 Skype 消费者互操作性等。
 
 ## <a name="february-2020"></a>2020 年 2 月
 
@@ -383,7 +389,7 @@ Productivity Score 提供人们如何使用 Microsoft 云服务和支持它们�
 
 本月组区域中的一些更改：
 
-- **按组名称排序**：可以通过选择组名称列按字母顺序对组 **列表** 进行排序。
+- **按组名称排序**：可以通过选择组名称列，按字母顺序对 **组列表** 进行排序。
 - **还原已删除的 Microsoft 365** 组：你不再需要转到 Exchange 管理中心来还原已删除的 Microsoft 365 组。 转到 **Microsoft 365 管理** 中心"组已删除 (从"还原"组列表中选择 \>  \>  \>) \> **组**。 它将组还原回 **组列表，** 并还原组的电子邮件、对话、笔记本、文件和日历。
 
 ### <a name="videos-training-and-docs-february"></a>2 月 2 月 (视频、培训和) 
@@ -395,14 +401,14 @@ Productivity Score 提供人们如何使用 Microsoft 云服务和支持它们�
 ## <a name="january-2020---happy-new-year"></a>2020 年 1 月 - 新一年
 
 > [!NOTE]
-> 你是否知道 YouTube 上的 [Microsoft 365 视频](https://go.microsoft.com/fwlink/p/?linkid=2118096) 系列中新增了哪些功能？ 它重点介绍了我们向用户推出的最新功能。 每月，我们将开始链接到"视频、培训和文档"部分 [的最新](#videos-training-and-docs) 剧集。 <br> <br> 以下是最新的一集 [：Microsoft 365 中的新增功能](https://go.microsoft.com/fwlink/p/?linkid=2118096)
+> 你是否知道 YouTube 上的 [Microsoft 365 视频](https://go.microsoft.com/fwlink/p/?linkid=2118096) 系列中新增了哪些功能？ 它重点介绍了我们向用户推出的最新功能。 每月，我们将开始链接到"视频、培训和文档"部分 [的最新](#videos-training-and-docs) 剧集。 <br> <br> 以下是最新的一集[：Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=2118096)中的新增功能
 
 ### <a name="dark-mode"></a>深色模式
 
 当我们第一次推出深色模式时，它仅在主页上可用。 深色模式现已退出预览，并且已针对管理中心中的大多数页面进行定向发布。
 
-1. 首先，你需要打开定向发布：**转到"设置** 设置组织配置文件 \>  \>  \> **发布"首选项**。
-1. 然后，若要打开深色模式，请转到主页，然后选择"深色 **模式"** 按钮。  ("搜索"字段旁边，本文的"新增功能 **"** 链接) 
+1. 首先，你需要打开定向发布：**转到"设置** 设置" \>  \> **组织配置文件** \> **"发布首选项**。
+1. 然后，若要打开深色模式，请转到主页，然后选择"深色 **模式"** 按钮。  ("搜索" **字段旁边，** 本文的"新增功能 **"** 链接) 
 1. 对于提供深色模式的任何页面，该按钮位于页面顶部，位于新的管理 **中心切换旁边** 。
 
 ### <a name="office-whats-new-management"></a>Office 新增管理
@@ -411,18 +417,18 @@ Productivity Score 提供人们如何使用 Microsoft 云服务和支持它们�
 
 ![打开功能详细信息窗格的 Office 新增预览的屏幕截图。](../media/whatsnew-officemgmt-preview.png)
 
-此功能在 11 月首次发布预览，但应了解一些功能更新 [：Office 新增管理预览更新现已发布](https://techcommunity.microsoft.com/t5/microsoft-365-blog/office-what-s-new-management-preview/ba-p/1020438)
+此功能在 11 月首次发布以预览，但应了解一些功能更新 [：Office 新增管理预览更新现已发布](https://techcommunity.microsoft.com/t5/microsoft-365-blog/office-what-s-new-management-preview/ba-p/1020438)
 
 ### <a name="partners"></a>合作伙伴
 
-Howdy， Partners！  (不能帮助自己。) 我们这个月也收到了一个更新。 有一项新功能允许合作伙伴向云解决方案提供商客户提供在管理中心的"计费帐户"部分接受其 Microsoft 客户协议 (MCA ) 的选项。 在此新体验中：
+Howdy， Partners！  (无法帮助自己。) 我们本月也收到了更新。 有一项新功能允许合作伙伴向云解决方案提供商客户提供在管理中心的"计费帐户"部分接受其 Microsoft 客户协议 (MCA ) 的选项。 在此新体验中：
 
 1. 客户会收到一封邀请电子邮件，电子邮件包含接受合作关系和 MCA 的链接。
 2. 客户登录后，他们可以从管理中心查看并接受 MCA 和合作伙伴权限。
 
 ### <a name="resource-mailboxes"></a>资源邮箱
 
-资源邮箱列表已更新为新样式。 在 Microsoft 365 管理中心，转到 **资源**& \> **设备**。
+资源邮箱列表已更新为新样式。 在 Microsoft 365 管理中心中，转到 **资源**& \> **设备**。
 
 ### <a name="videos-training-and-docs-january"></a>1 月 1 (视频、培训和) 
 

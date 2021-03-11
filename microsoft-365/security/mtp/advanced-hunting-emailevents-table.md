@@ -1,6 +1,6 @@
 ---
 title: 高级搜寻架构中的 EmailEvents 表
-description: 了解高级搜寻架构的 EmailEvents 表中与 Microsoft 365 电子邮件关联的事件
+description: 了解与高级搜寻架构的 EmailEvents 表中的 Microsoft 365 电子邮件关联的事件
 keywords: 高级搜寻， 威胁搜寻， 网络威胁搜寻， microsoft 威胁防护， microsoft 365， mtp， m365， 搜索， 查询， 遥测， 架构参考， kusto， 表， 列， 数据类型， 说明， EmailEvents， 网络邮件 ID， 发件人， 收件人， 附件 ID， 附件名称， 恶意软件裁定， 网络钓鱼裁定， 附件计数， 链接计数， url 计数
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: a0892e03e0ac4c6fc6bcda1b7b159ce403a7ce2e
-ms.sourcegitcommit: a7d1b29a024b942c7d0d8f5fb9b5bb98a0036b68
+ms.openlocfilehash: 5e9fce199d253cf22f73ec8620c5441d8bf1305d
+ms.sourcegitcommit: 88ab08c0fa1acbc9e066009e131b9f2b0d506c64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50461603"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "50712386"
 ---
 # <a name="emailevents"></a>EmailEvents
 
@@ -38,7 +38,7 @@ ms.locfileid: "50461603"
 高级 `EmailEvents` 搜寻架构 [中的](advanced-hunting-overview.md) 表包含有关 Microsoft Defender for Office 365 上涉及电子邮件处理的事件的信息。 使用此参考来构建从此表返回信息的查询。
 
 >[!TIP]
-> 有关事件类型的详细信息 (表) 支持的值，请使用安全中心中提供的内置 `ActionType` 架构引用。 [](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center)
+> 有关事件类型的详细信息 (表) 支持的值，请使用安全中心中提供的内置 `ActionType` 架构引用。
 
 有关高级搜寻架构中其他表的信息，请[参阅高级搜寻参考](advanced-hunting-schema-tables.md)。
 
@@ -65,7 +65,7 @@ ms.locfileid: "50461603"
 | `ThreatTypes` | string | 关于电子邮件是否包含恶意软件、网络钓鱼或其他威胁的电子邮件筛选堆栈裁定 |
 | `ThreatNames` | string |找到的恶意软件或其他威胁的检测名称 |
 | `DetectionMethods` | string | 用于检测电子邮件中的恶意软件、网络钓鱼或其他威胁的方法 |
-| `ConfidenceLevel` | string | 任何垃圾邮件或网络钓鱼裁定的可信度列表。 对于垃圾邮件，此列显示垃圾邮件可信度 (SCL) ，指示电子邮件是否跳过 (-1) 、被发现不是垃圾邮件 (0，1) 、被找到为具有中等可信度的垃圾邮件 (5，6) ，或发现为高可信度 (9) 的垃圾邮件。 对于网络钓鱼，此列显示可信度是"高"还是"低"。 |
+| `ConfidenceLevel` | string | 任何垃圾邮件或网络钓鱼裁定的可信度列表。 对于垃圾邮件，此列显示垃圾邮件可信度 (SCL) ，指示电子邮件是否跳过了 (-1) 、被发现不是垃圾邮件 (0，1) 、被找到为具有中等可信度 (5，6) 的垃圾邮件，或发现为高可信度 (9) 的垃圾邮件。 对于网络钓鱼，此列显示可信度是"高"还是"低"。 |
 | `EmailAction` | string | 基于筛选器裁定、策略和用户操作对电子邮件执行的最后操作：将邮件移到垃圾邮件文件夹、添加 X 标头、修改主题、重定向邮件、删除邮件、发送到隔离区、未执行任何操作、密件抄送邮件 |
 | `EmailActionPolicy` | string | 生效的操作策略：反垃圾邮件高可信度、反垃圾邮件、反垃圾邮件批量邮件、反垃圾邮件、反垃圾邮件钓鱼、防钓鱼域模拟、防钓鱼用户模拟、防钓鱼欺骗、防钓鱼图形模拟、反恶意软件、安全附件、企业传输规则 (ETR) |
 | `EmailActionPolicyGuid` | string | 确定最后邮件操作的策略的唯一标识符 |

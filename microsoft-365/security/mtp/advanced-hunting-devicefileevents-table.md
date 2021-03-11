@@ -1,7 +1,7 @@
 ---
 title: 高级搜寻架构中的 DeviceFileEvents 表
-description: 了解高级搜寻架构的 DeviceFileEvents 表中与文件相关的事件
-keywords: 高级搜寻， 威胁搜寻， 网络威胁搜寻， Microsoft 威胁防护， microsoft 365， mtp， m365， 搜索， 查询， 遥测， 架构参考， kusto， 表， 列， 数据类型， 说明， filecreationevents， DeviceFileEvents， 文件， 路径， 哈希， sha1， sha256， md5
+description: 了解高级搜寻架构的 DeviceFileEvents 表中的文件相关事件
+keywords: 高级搜寻， 威胁搜寻， 网络威胁搜寻， microsoft 威胁防护， microsoft 365， mtp， m365， 搜索， 查询， 遥测， 架构参考， kusto， 表， 列， 数据类型， 说明， filecreationevents， DeviceFileEvents， 文件， 路径， 哈希， sha1， sha256， md5
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: cccbd268c8f69d6623df1ef4c8208d20ead2e9f5
-ms.sourcegitcommit: 005028af7c5a6b2e95f17a0037958131484d9e73
+ms.openlocfilehash: e54a6dce9765a8b87fcf2f63bbd1342beabdcf39
+ms.sourcegitcommit: 88ab08c0fa1acbc9e066009e131b9f2b0d506c64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "50145289"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "50712458"
 ---
 # <a name="devicefileevents"></a>DeviceFileEvents
 
@@ -38,7 +38,7 @@ ms.locfileid: "50145289"
 高级 `DeviceFileEvents` 搜寻架构 [中的](advanced-hunting-overview.md) 表包含有关文件创建、修改和其他文件系统事件的信息。 使用此参考来构建从此表返回信息的查询。
 
 >[!TIP]
-> 有关事件类型的详细信息 (表) 支持的值，请使用安全中心中提供的内置 `ActionType` 架构参考。 [](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center)
+> 有关事件类型的详细信息 (表) 支持的值，请使用安全中心中提供的内置 `ActionType` 架构引用。
 
 有关高级搜寻架构中其他表的信息，请[参阅高级搜寻参考](advanced-hunting-schema-tables.md)。
 
@@ -55,44 +55,44 @@ ms.locfileid: "50145289"
 | `MD5` | string | 记录的操作应用到的文件的 MD5 哈希 |
 | `FileOriginUrl` | string | 下载文件的 URL |
 | `FileOriginReferrerUrl` | string | 链接到已下载文件的网页的 URL |
-| `FileOriginIP` | string | 下载文件的 IP 地址 |
+| `FileOriginIP` | string | 从其中下载文件的 IP 地址 |
 | `PreviousFolderPath` | string | 应用录制的操作之前包含文件的原始文件夹 |
 | `PreviousFileName` | string | 由于操作而重命名的文件的原始名称 |
 | `FileSize` | long | 文件大小（以字节为单位） |
 | `InitiatingProcessAccountDomain` | string | 运行负责事件的进程的帐户的域 |
 | `InitiatingProcessAccountName` | string | 运行负责事件的进程的帐户的用户名 |
 | `InitiatingProcessAccountSid` | string | 安全 (SID) 运行负责事件的进程的帐户的 SID 标识符 |
-| `InitiatingProcessAccountUpn` | string | 运行 (事件) 帐户的 UPN 帐户的用户主体名称 |
+| `InitiatingProcessAccountUpn` | string | 运行 (进程的帐户) UPN 帐户的用户主体名称 |
 | `InitiatingProcessMD5` | string | 启动事件 (映像) 的 MD5 哈希 |
-| `InitiatingProcessSHA1` | string | 启动事件 (映像) SHA-1 |
-| `InitiatingProcessSHA256` | string | 启动事件 (映像) SHA-256。 通常不会填充此字段 — 可用时使用 SHA1 列。 |
-| `InitiatingProcessFolderPath` | string | 包含启动 (的文件) 进程的文件夹 |
+| `InitiatingProcessSHA1` | string | 启动事件 (映像) 的 SHA-1 |
+| `InitiatingProcessSHA256` | string | 进程 SHA-256 (启动) 映像文件。 通常不会填充此字段 — 可用时使用 SHA1 列。 |
+| `InitiatingProcessFolderPath` | string | 包含启动 (文件) 进程的文件夹 |
 | `InitiatingProcessFileName` | string | 启动事件的进程的名称 |
-| `InitiatingProcessId` | int | 启动 (PID) 进程的进程 ID |
+| `InitiatingProcessId` | int | 进程 ID (PID) 启动事件的进程的 PID |
 | `InitiatingProcessCommandLine` | string | 用于运行启动事件的进程的命令行 |
-| `InitiatingProcessCreationTime` | datetime | 启动事件的过程启动的日期和时间 |
-| `InitiatingProcessIntegrityLevel` | string | 启动事件的过程的完整性级别。 Windows 根据某些特征（例如是否从 Internet 下载启动）为进程分配完整性级别。 这些完整性级别影响对资源的权限 |
-| `InitiatingProcessTokenElevation` | string | 指示 UAC 中是否存在用户访问控制的令牌 (，) 启动事件的进程应用的权限提升 |
-| `InitiatingProcessParentId` | int | 进程 ID (PID) 生成负责事件的进程的父进程 |
-| `InitiatingProcessParentFileName` | string | 生成负责事件的进程的父进程的名称 |
+| `InitiatingProcessCreationTime` | datetime | 启动事件过程的日期和时间 |
+| `InitiatingProcessIntegrityLevel` | string | 启动事件的过程的完整性级别。 Windows 根据某些特征（例如是否从 Internet 下载启动）为进程分配完整性级别。 这些完整性级别会影响对资源的权限 |
+| `InitiatingProcessTokenElevation` | string | 指示是否存在用户访问控制的令牌类型 (UAC) 权限提升应用于启动事件的进程 |
+| `InitiatingProcessParentId` | int | 生成 () 的父进程的 PID 进程 ID |
+| `InitiatingProcessParentFileName` | string | 生成负责该事件的进程的父进程的名称 |
 | `InitiatingProcessParentCreationTime` | datetime | 启动负责事件的进程的父级的日期和时间 |
 | `RequestProtocol` | string | 网络协议（如果适用）用于启动活动：未知、本地、SMB 或 |
 | `ShareName` | string | 包含文件的共享文件夹的名称 |
-| `RequestSourceIP` | string | 启动活动的远程设备的 IPv4 或 IPv6 地址 |
+| `RequestSourceIP` | string | 发起活动的远程设备的 IPv4 或 IPv6 地址 |
 | `RequestSourcePort` | string | 启动活动的远程设备的源端口 |
 | `RequestAccountName` | string | 用于远程启动活动的帐户的用户名 |
 | `RequestAccountDomain` | string | 用于远程启动活动的帐户的域 |
-| `RequestAccountSid` | string | 安全 (SID) 用于远程启动活动的帐户的 SID 标识符 |
-| `ReportId` | long | 基于重复计数器的事件标识符。 若要标识唯一事件，此列必须与 DeviceName 和时间戳列一起使用。 |
+| `RequestAccountSid` | string | 安全标识符 () 启动活动的帐户的 SID 标识符 |
+| `ReportId` | long | 基于重复计数器的事件标识符。 若要标识唯一事件，必须将此列与 DeviceName 和时间戳列结合使用。 |
 | `AppGuardContainerId` | string | 应用程序防护用于隔离浏览器活动的虚拟化容器的标识符 |
 | `AdditionalFields` | string | 有关实体或事件的其他信息 |
 | `InitiatingProcessFileSize` | long | 运行负责事件的进程的文件的大小 |
-| `SensitivityLabel` | string | 应用于电子邮件、文件或其他内容的标签，用于将其分类以用于信息保护 |
-| `SensitivitySubLabel` | string | 应用于电子邮件、文件或其他内容的子标签，以将其分类以用于信息保护;敏感度子标签按敏感度标签进行分组，但单独处理 |
+| `SensitivityLabel` | string | 应用于电子邮件、文件或其他内容的标签，用于对电子邮件、文件或其他内容进行分类，以用于信息保护 |
+| `SensitivitySubLabel` | string | 应用于电子邮件、文件或其他内容的子标签，以将其分类以用于信息保护;敏感度子标签按敏感度标签分组，但单独处理 |
 | `IsAzureInfoProtectionApplied` | boolean | 指示文件是否由 Azure 信息保护进行加密 |
 
 >[!NOTE]
-> 文件哈希信息将始终在可用时显示。 但是，无法计算 SHA1、SHA256 或 MD5 的原因有多种。 例如，该文件可能位于远程存储中、由另一个进程锁定、已压缩或标记为虚拟。 在这些情况下，文件哈希信息显示为空。
+> 文件哈希信息将始终在可用时显示。 但是，无法计算 SHA1、SHA256 或 MD5 的原因有多种。 例如，该文件可能位于远程存储中、由另一个进程锁定、已压缩或标记为虚拟。 在这些情况下，文件哈希信息将显示为空。
 
 ## <a name="related-topics"></a>相关主题
 - [高级搜寻概述](advanced-hunting-overview.md)

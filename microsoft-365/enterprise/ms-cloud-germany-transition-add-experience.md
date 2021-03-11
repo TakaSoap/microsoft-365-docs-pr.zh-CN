@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 摘要：从德国 Microsoft 云 (德国 Microsoft 云) 迁移到新的德国数据中心区域中的 Office 365 服务时的其他客户体验信息。
-ms.openlocfilehash: b38ed865306eb676c8f57c1dcbb4541fae43c8df
-ms.sourcegitcommit: 9adb89206daa075af34a73bcb7e8fb86d7c2919a
+ms.openlocfilehash: 8dcb8b8ab2ec5c3dea105380858d26cfd5537d9c
+ms.sourcegitcommit: 88ab08c0fa1acbc9e066009e131b9f2b0d506c64
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/10/2021
-ms.locfileid: "50603992"
+ms.locfileid: "50712278"
 ---
 # <a name="migration-phases-actions-and-impacts-for-the-migration-from-microsoft-cloud-deutschland-advanced"></a>迁移阶段操作和影响从 Microsoft 云德国 (高级)  
 
@@ -84,7 +84,7 @@ ms.locfileid: "50603992"
 
 | 步骤 (步骤)  | 说明 | 影响 |
 |:-------|:-------|:-------|
-| 从第 4 阶段开始到阶段 9 完成，电子数据展示搜索将失败，或返回已迁移的 SharePoint Online、OneDrive for Business 和 Exchange Online 位置的 0 个结果。 | 在迁移过程中，客户可以在安全与合规中心（包括内容搜索）&案例[、保留、搜索和](https://docs.microsoft.com/microsoft-365/compliance/manage-legal-investigations)[导出](https://docs.microsoft.com/microsoft-365/compliance/search-for-content)。  但是，针对已迁移的 SharePoint Online、OneDrive for Business 和 Exchange Online 位置进行搜索将返回 0 个结果或生成错误。 有关修正，请参阅" _影响"_ 列。 | 如果搜索在迁移过程中返回零结果或错误，请对 SharePoint Online 执行下列操作： <ul><li>按照从 OneDrive 或 SharePoint 下载文件和文件夹中的说明，直接从 SharePoint Online/OneDrive for Business 网站 [下载网站](https://support.office.com/article/download-files-and-folders-from-onedrive-or-sharepoint-5c7397b7-19c7-4893-84fe-d02e8fa5df05)。 此方法需要 SharePoint Online 管理员权限或网站的只读权限。</li><li>如果超出限制，如从 OneDrive 或 [SharePoint](https://support.office.com/article/download-files-and-folders-from-onedrive-or-sharepoint-5c7397b7-19c7-4893-84fe-d02e8fa5df05)下载文件和文件夹所解释，客户可以按照在将 [SharePoint](https://support.office.com/article/sync-sharepoint-files-with-the-new-onedrive-sync-app-6de9ede8-5b6e-4503-80b2-6190f3354a88)和 Teams 文件与计算机同步中的指南使用 OneDrive for Business 同步客户端。</li><li>有关详细信息，请参阅 Exchange Server 中的就地  [电子数据展示](https://docs.microsoft.com/Exchange/policy-and-compliance/ediscovery/ediscovery) |
+| 从阶段 4 开始到阶段 9 完成，电子数据展示搜索将失败，或返回已迁移的 SharePoint Online、OneDrive for Business 和 Exchange Online 位置的 0 个结果。 | 在迁移过程中，客户可以在安全与合规中心（包括内容搜索）&案例[、保留、搜索和](https://docs.microsoft.com/microsoft-365/compliance/manage-legal-investigations)[导出](https://docs.microsoft.com/microsoft-365/compliance/search-for-content)。  但是，针对已迁移的 SharePoint Online、OneDrive for Business 和 Exchange Online 位置进行搜索将返回 0 个结果或生成错误。 有关修正，请参阅" _影响"_ 列。 | 如果搜索在迁移过程中返回零结果或错误，请对 SharePoint Online 执行下列操作： <ul><li>按照从 OneDrive 或 SharePoint 下载文件和文件夹中的说明，直接从 SharePoint Online/OneDrive for Business 网站 [下载网站](https://support.office.com/article/download-files-and-folders-from-onedrive-or-sharepoint-5c7397b7-19c7-4893-84fe-d02e8fa5df05)。 此方法需要 SharePoint Online 管理员权限或网站的只读权限。</li><li>如果超出限制，如从 OneDrive 或 [SharePoint](https://support.office.com/article/download-files-and-folders-from-onedrive-or-sharepoint-5c7397b7-19c7-4893-84fe-d02e8fa5df05)下载文件和文件夹所解释，客户可以按照在将 [SharePoint](https://support.office.com/article/sync-sharepoint-files-with-the-new-onedrive-sync-app-6de9ede8-5b6e-4503-80b2-6190f3354a88)和 Teams 文件与计算机同步中的指南使用 OneDrive for Business 同步客户端。</li><li>有关详细信息，请参阅 Exchange Server 中的就地  [电子数据展示](https://docs.microsoft.com/Exchange/policy-and-compliance/ediscovery/ediscovery) |
 ||||
 
 ## <a name="post-migration"></a>迁移后

@@ -22,12 +22,12 @@ description: 使用 Microsoft 信息保护 (MIP) 中的敏感度标签对敏感�
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 9232ccd9fd64676cea0826b05ccd7e68fcf054b9
-ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
+ms.openlocfilehash: f5c5901da44424d949062c6a2e9eecf69c48be3f
+ms.sourcegitcommit: 8950d3cb0f3087be7105e370ed02c7a575d00ec2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50454601"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50597182"
 ---
 # <a name="learn-about-sensitivity-labels"></a>了解敏感度标签
 
@@ -256,7 +256,7 @@ ms.locfileid: "50454601"
 
 - PowerShell 模块发现本地文件中的敏感信息，然后应用或删除这些文件中的标签和加密
 
-如果你不熟悉 Azure 信息保护，或者你是刚迁移标签的现有 Azure 信息保护客户，请参阅 Azure 信息保护文档中的[选择用于 Windows 计算机的标签客户端](https://docs.microsoft.com/azure/information-protection/rms-client/use-client#choose-which-labeling-client-to-use-for-windows-computers)。
+如果你不熟悉 Azure 信息保护，或者你是刚迁移标签的现有 Azure 信息保护客户，请参阅 Azure 信息保护文档中的[选择用于 Windows 计算机的标签客户端](https://docs.microsoft.com/azure/information-protection/rms-client/use-client#choose-your-windows-labeling-solution)。
 
 ## <a name="sensitivity-labels-and-microsoft-cloud-app-security"></a>灵敏度标签和 Microsoft 云应用安全性
 
