@@ -1,6 +1,6 @@
 ---
-title: 通过高级搜寻跨设备、电子邮件、应用和标识搜寻威胁
-description: 研究常见的搜寻方案和示例查询，这些查询涵盖设备、电子邮件、应用和标识。
+title: 使用高级搜寻跨设备、电子邮件、应用和标识搜寻威胁
+description: 研究涉及设备、电子邮件、应用和标识的常见搜寻方案和示例查询。
 keywords: 高级搜寻， Office365 数据， Windows 设备， Office365 电子邮件规范化， 电子邮件， 应用， 标识， 威胁搜寻， 网络威胁搜寻， 搜索， 查询， 遥测， Microsoft 365， Microsoft 威胁防护
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: b408f574ab4b89806be9154394f49c00a7fd1e99
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: a12b2dcf2de472f43e782e2064944ec774bdb9e1
+ms.sourcegitcommit: 3d48e198e706f22ac903b346cadda06b2368dd1e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49932246"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50727255"
 ---
 # <a name="hunt-for-threats-across-devices-emails-apps-and-identities"></a>跨设备、电子邮件、应用和标识搜寻威胁
 
@@ -37,26 +37,26 @@ ms.locfileid: "49932246"
 
 [](advanced-hunting-overview.md) Microsoft 365 Defender 中的高级搜寻允许你跨：
 - 由 Microsoft Defender for Endpoint 管理的设备
-- Microsoft 365 处理的电子邮件
+- 由 Microsoft 365 处理的电子邮件
 - 由 Microsoft Cloud App Security 和 Microsoft Defender for Identity 跟踪的云应用活动、身份验证事件和域控制器活动
 
-通过此可见性级别，你可以快速搜寻遍历网络各部分的威胁，包括到达电子邮件或 Web 上复杂的入侵、提升本地特权、获取特权域凭据以及横向移动到你的设备。 
+借助此可见性级别，你可以快速搜寻遍历网络各部分的威胁，包括到达电子邮件或 Web 的复杂的入侵、提升本地特权、获取特权域凭据以及横向移动到整个设备。 
 
-下面是基于各种搜寻方案的常规技术和示例查询，可帮助您了解在搜寻此类复杂威胁时如何构造查询。
+下面是基于各种搜寻方案的常规技术和示例查询，可帮助你探索在搜寻此类复杂威胁时如何构造查询。
 
 ## <a name="get-entity-info"></a>获取实体信息
 使用这些查询了解如何快速获取有关用户帐户、设备和文件的信息。 
 
 ### <a name="obtain-user-accounts-from-email-addresses"></a>从电子邮件地址获取用户帐户
-在包含 [设备和电子邮件的](advanced-hunting-schema-tables.md)表中构造查询时，可能需要从发件人或收件人电子邮件地址获取用户帐户名。 通常可以使用电子邮件地址中的本地主机为收件人 *或发件人地址* 执行此操作。
+构造跨涵盖设备和电子邮件 [的](advanced-hunting-schema-tables.md)表的查询时，你可能需要从发件人或收件人电子邮件地址获取用户帐户名称。 通常可以使用电子邮件地址中的本地主机为收件人 *或发件人地址* 进行此操作。
 
-在下面的代码段中，我们使用 [tostring () ](https://docs.microsoft.com/azure/data-explorer/kusto/query/tostringfunction) Kusto 函数从列的收件人电子邮件地址之前提取本地 `@` 主机 `RecipientEmailAddress` 。
+在下面的代码段中，我们使用 [tostring () ](https://docs.microsoft.com/azure/data-explorer/kusto/query/tostringfunction) Kusto 函数从列 中的 收件人电子邮件地址前提取本地 `@` 主机 `RecipientEmailAddress` 。
 
 ```kusto
 //Query snippet showing how to extract the account name from an email address
 AccountName = tostring(split(RecipientEmailAddress, "@")[0])
 ```
-下面的查询显示了如何使用此代码段：
+下面的查询演示如何使用此代码段：
 
 ```kusto
 EmailEvents
@@ -66,18 +66,18 @@ EmailEvents
 
 ### <a name="merge-the-identityinfo-table"></a>合并 IdentityInfo 表
 
-可以通过合并或加入 IdentityInfo 表获取帐户名 [和其他帐户信息](advanced-hunting-identityinfo-table.md)。 下面的查询从 [EmailEvents](advanced-hunting-emailevents-table.md) 表中获取网络钓鱼和恶意软件检测列表，然后将该信息与该表联接以获取有关每个收件人 `IdentityInfo` 的详细信息。 
+可以通过合并或加入 IdentityInfo 表获取帐户名 [和其他帐户信息](advanced-hunting-identityinfo-table.md)。 下面的查询从 [EmailEvents](advanced-hunting-emailevents-table.md) 表获取网络钓鱼和恶意软件检测列表，然后将该信息与该表联接以获取有关每个收件人 `IdentityInfo` 的详细信息。 
 
 ```kusto
 EmailEvents
 | where Timestamp > ago(7d)
 //Get email processing events where the messages were identified as either phishing or malware
-| where MalwareFilterVerdict == 'Malware' or PhishFilterVerdict == 'Phish'
+| where ThreatTypes has "Malware" or ThreatTypes has "Phish"
 //Merge email events with identity info to get recipient details
 | join (IdentityInfo | distinct AccountUpn, AccountDisplayName, JobTitle, 
 Department, City, Country) on $left.RecipientEmailAddress == $right.AccountUpn 
 //Show important message and recipient details
-| project Timestamp, NetworkMessageId, Subject, PhishFilterVerdict, MalwareFilterVerdict,
+| project Timestamp, NetworkMessageId, Subject, ThreatTypes, 
 SenderFromAddress, RecipientEmailAddress, AccountDisplayName, JobTitle, 
 Department, City, Country
 ```
@@ -86,7 +86,7 @@ Department, City, Country
 高级 [搜寻架构](advanced-hunting-schema-tables.md) 在各种表中提供广泛的设备信息。 例如 [，DeviceInfo 表](advanced-hunting-deviceinfo-table.md) 基于定期聚合的事件数据提供全面的设备信息。 此查询使用表检查可能受到威胁的用户 () 登录到任何设备，然后列出在这些设备上触发的 `DeviceInfo` `<account-name>` 警报。
 
 >[!Tip]
-> 此查询 `kind=inner` 用于指定 [一个内部](https://docs.microsoft.com/azure/data-explorer/kusto/query/joinoperator?pivots=azuredataexplorer#inner-join-flavor)联接，以防止对的左侧值进行重复 `DeviceId` 数据删除。
+> 此查询 `kind=inner` 用于指定 [一个内部联接](https://docs.microsoft.com/azure/data-explorer/kusto/query/joinoperator?pivots=azuredataexplorer#inner-join-flavor)，以防止对 的左侧值进行重复 `DeviceId` 。
 
 ```kusto
 DeviceInfo
@@ -104,7 +104,7 @@ DeviceInfo
 ## <a name="hunting-scenarios"></a>搜寻方案
 
 ### <a name="list-logon-activities-of-users-that-received-emails-that-were-not-zapped-successfully"></a>列出收到未成功删除的电子邮件的用户的登录活动
-[零时差自动清除 (ZAP) ](../office-365-security/zero-hour-auto-purge.md) 会在收到恶意电子邮件后进行地址处理。 如果 ZAP 失败，恶意代码可能最终在设备上运行，并且帐户会遭到入侵。 此查询将检查由 ZAP 未成功解决的电子邮件的收件人所进行登录活动。
+[零时差自动清除 (ZAP ](../office-365-security/zero-hour-auto-purge.md)) 收到恶意电子邮件后进行地址。 如果 ZAP 失败，恶意代码最终可能会运行在设备上，并且帐户会遭到入侵。 此查询将检查由 ZAP 未成功解决的电子邮件的收件人所进行登录活动。
 
 ```kusto
 EmailPostDeliveryEvents 
@@ -121,7 +121,7 @@ LogonTime = Timestamp, AccountDisplayName, Application, Protocol, DeviceName, Lo
 ```
 
 ### <a name="get-logon-attempts-by-domain-accounts-targeted-by-credential-theft"></a>获取凭据盗窃所针对的域帐户的登录尝试
-此查询首先标识表中的所有凭据访问 `AlertInfo` 警报。 然后，它合并或联接表，该表将只分析目标帐户的名称，并筛选加入 `AlertEvidence` 域的帐户。 最后，它检查表，获取已加入域的目标帐户的所有 `IdentityLogonEvents` 登录活动。
+此查询首先标识表中的所有凭据访问 `AlertInfo` 警报。 然后，它将合并或联接该表，该表将分析目标帐户的名称，并仅筛选 `AlertEvidence` 加入域的帐户。 最后，它检查 `IdentityLogonEvents` 表，获取已加入域的目标帐户的所有登录活动。
 
 ```kusto
 AlertInfo
@@ -140,8 +140,8 @@ AlertInfo
 | project AccountDisplayName, TargetAccountSid, Application, Protocol, DeviceName, LogonType
 ```
 
-### <a name="check-if-files-from-a-known-malicious-sender-are-on-your-devices"></a>检查来自已知恶意发件人的文件是否位于你的设备上
-假定你知道发送恶意文件的电子邮件地址 () ，可以运行此查询来确定你的设备上是否存在来自此发件人 `MaliciousSender@example.com` 的文件。 例如，可以使用此查询来标识受恶意软件分发活动影响的设备。
+### <a name="check-if-files-from-a-known-malicious-sender-are-on-your-devices"></a>检查你的设备上是否包含来自已知恶意发件人的文件
+假设您知道向用户发送恶意 () 的电子邮件地址，您可以运行此查询来确定此发件人的文件是否存在 `MaliciousSender@example.com` 于您的设备上。 例如，您可以使用此查询来标识受恶意软件分发活动影响的设备。
 
 ```kusto
 EmailAttachmentInfo
@@ -157,13 +157,13 @@ DeviceFileEvents
 ```
 
 ### <a name="review-logon-attempts-after-receipt-of-malicious-emails"></a>查看收到恶意电子邮件后的登录尝试
-此查询查找电子邮件收件人收到已知的恶意电子邮件后 30 分钟内执行的 10 个最新登出。 您可以使用此查询来检查电子邮件收件人的帐户是否遭到入侵。
+此查询在电子邮件收件人收到已知的恶意电子邮件后 30 分钟内找到他们最近执行的 10 次登出。 可以使用此查询检查电子邮件收件人的帐户是否遭到入侵。
 
 ```kusto
 //Define new table for malicious emails
 let MaliciousEmails=EmailEvents
 //List emails detected as malware, getting only pertinent columns
-| where MalwareFilterVerdict == "Malware"
+| where ThreatTypes has "Malware" 
 | project TimeEmail = Timestamp, Subject, SenderFromAddress, AccountName = tostring(split(RecipientEmailAddress, "@")[0]);
 MaliciousEmails
 | join (
@@ -176,8 +176,8 @@ IdentityLogonEvents
 | take 10
 ```
 
-### <a name="review-powershell-activities-after-receipt-of-emails-from-known-malicious-sender"></a>查看收到来自已知恶意发件人的电子邮件后的 PowerShell 活动
-恶意电子邮件通常包含文档和其他专门设计的附件，这些附件运行 PowerShell 命令以提供其他负载。 如果您知道来自已知恶意发件人 () 的电子邮件，您可以使用此查询列出和查看从发件人收到电子邮件后 30 分钟内发生的 `MaliciousSender@example.com` PowerShell 活动。  
+### <a name="review-powershell-activities-after-receipt-of-emails-from-known-malicious-sender"></a>收到来自已知恶意发件人的电子邮件后查看 PowerShell 活动
+恶意电子邮件通常包含文档和其他专门设计的附件，这些附件运行 PowerShell 命令以提供其他有效负载。 如果您知道来自已知恶意发件人 () 的电子邮件，您可以使用此查询列出并查看从发件人收到电子邮件后 30 分钟内发生的 `MaliciousSender@example.com` PowerShell 活动。  
 
 ```kusto
 //Define new table for emails from specific sender
