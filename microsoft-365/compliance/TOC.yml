@@ -106,6 +106,8 @@
           href: sit-edm-wizard.md
         - name: 修改精确数据匹配架构，以使用可配置匹配
           href: sit-modify-edm-schema-configurable-match.md
+        - name: 为精确数据匹配活动创建通知（预览）
+          href: sit-edm-notifications-activities.md
         - name: 创建自定义敏感信息类型 - 安全与合规中心
           href: create-a-custom-sensitive-information-type.md
         - name: 创建自定义敏感信息类型 - PowerShell
