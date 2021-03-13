@@ -1,7 +1,7 @@
 ---
 title: 重新激活订阅
 f1.keywords:
-- NOCSH
+- CSH
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
@@ -21,13 +21,13 @@ ms.custom:
 search.appverid:
 - MET150
 ms.assetid: 23aa9dd5-a2b0-42f5-8893-9541d2f3761f
-description: 了解如何在订阅过期、禁用或取消时重新激活订阅。
-ms.openlocfilehash: 01dee5e8a4c5a9ef7d30c21f66186086900b6cc1
-ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
+description: 了解如何在订阅过期、被禁用或取消时重新激活订阅。
+ms.openlocfilehash: 3e360e37a108c290e13ca3c1a147f8eb099648e6
+ms.sourcegitcommit: 89095172c9c4793d56645b4c885ac8e30936bd0a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "50114617"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50766385"
 ---
 # <a name="reactivate-your-subscription"></a>重新激活订阅
 
@@ -38,7 +38,7 @@ ms.locfileid: "50114617"
 
 ::: moniker-end
 
-如果订阅已过期、已由 Microsoft 禁用或在订阅期中间取消订阅，可以在管理中心重新激活订阅。
+如果订阅已过期、Microsoft 已禁用或在订阅期中间取消订阅，可以在管理中心重新激活订阅。
   
 ## <a name="before-you-begin"></a>准备工作
 
@@ -51,7 +51,7 @@ ms.locfileid: "50114617"
 ::: moniker range="o365-worldwide"
 
 1. 在管理中心中，转到“**计费**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">你的产品</a>”页面。
-2. 在“**产品**”选项卡上，找到要重新激活的订阅。 选择 **三个点 (** 更多操作) ，然后选择"**重新激活此订阅"。\**
+2. 在“**产品**”选项卡上，找到要重新激活的订阅。 Select **More actions (** three dots) ， then select **Reactivate this subscription**.\
     如果看不到重新激活 **此订阅，请联系**[支持人员](../../admin/contact-support-for-business-products.md)。
 3. 在“**重新激活此订阅**”窗格中，从下拉列表中选择支付方式，或选择“**添加付款方式**”。
 4. 选择“**保存**”。
@@ -62,15 +62,15 @@ ms.locfileid: "50114617"
   
 1. 在管理中心，转到“**计费**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">订阅</a>”页面。
 
-2. 找到要重新激活的订阅，然后选择"重新激活 **"。**
+2. 找到要重新激活的订阅，然后选择"重新 **激活"。**
 
-    ![使用"重新激活"按钮关闭显示"已禁用"和"缩减"功能的订阅卡。](../../media/4042c2c7-48d3-4add-963f-42f9fbcede07.png)
+    ![Close-up of a Subscription card that says Disabled and Reduced functionality with a Reactivate button.](../../media/4042c2c7-48d3-4add-963f-42f9fbcede07.png)
   
-    如果未 **将"重新** 激活"视为可用操作，请调用支持 [](../../admin/contact-support-for-business-products.md)以重新激活订阅。
+    如果未将" **重新激活"** 视为可用操作，请致电 [支持](../../admin/contact-support-for-business-products.md) 人员以重新激活订阅。
 
 3. 输入付款详细信息。 可以在此处更新现有付款信息。
 
-   如果你的订阅已过期，那么在提交付款详细信息后，你的订阅将返回到活动状态，下一个计费日期将延长一个月或一年，具体取决于你的当前订阅承诺。 如果通过信用卡或银行帐户支付，将收取信用卡或银行帐户的分机费用。 如果你通过发票付款，你将看到扩展反映在下一张发票上。 若要确保你的订阅不会再次过期， [请启用定期计费](renew-your-subscription.md#turn-recurring-billing-off-or-on)。
+   如果你的订阅已过期，则提交付款详细信息后，你的订阅将返回到活动状态，下一个计费日期将延长一个月或一年，具体取决于你的当前订阅承诺。 如果通过信用卡或银行帐户支付，则你的信用卡或银行帐户将收取分机费用。 如果你通过发票付款，你将看到你的下一张发票上反映的扩展名。 若要确保你的订阅不会再次过期，[请打开"定期计费"。](renew-your-subscription.md#turn-recurring-billing-off-or-on)
 
    > [!NOTE]
    > 在一些国家和地区，无法通过银行帐户支付。
@@ -83,15 +83,15 @@ ms.locfileid: "50114617"
   
 1. 在管理中心，转到“**计费**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">订阅</a>”页面。
 
-2. 找到要重新激活的订阅，然后选择"重新激活 **"。**
+2. 找到要重新激活的订阅，然后选择"重新 **激活"。**
 
-    ![使用"重新激活"按钮关闭显示"已禁用"和"缩减"功能的订阅卡。](../../media/4042c2c7-48d3-4add-963f-42f9fbcede07.png)
+    ![Close-up of a Subscription card that says Disabled and Reduced functionality with a Reactivate button.](../../media/4042c2c7-48d3-4add-963f-42f9fbcede07.png)
   
-    如果未 **将"重新** 激活"视为可用操作，请调用支持 [](../../admin/contact-support-for-business-products.md)以重新激活订阅。
+    如果未将" **重新激活"** 视为可用操作，请致电 [支持](../../admin/contact-support-for-business-products.md) 人员以重新激活订阅。
 
 3. 输入付款详细信息。 可以在此处更新现有付款信息。
 
-   如果你的订阅已过期，那么在提交付款详细信息后，你的订阅将返回到活动状态，下一个计费日期将延长一个月或一年，具体取决于你的当前订阅承诺。 如果通过信用卡或银行帐户支付，将收取信用卡或银行帐户的分机费用。 如果你通过发票付款，你将看到扩展反映在下一张发票上。 若要确保你的订阅不会再次过期， [请启用定期计费](renew-your-subscription.md#turn-recurring-billing-off-or-on)。
+   如果你的订阅已过期，则提交付款详细信息后，你的订阅将返回到活动状态，下一个计费日期将延长一个月或一年，具体取决于你的当前订阅承诺。 如果通过信用卡或银行帐户支付，则你的信用卡或银行帐户将收取分机费用。 如果你通过发票付款，你将看到你的下一张发票上反映的扩展名。 若要确保你的订阅不会再次过期，[请打开"定期计费"。](renew-your-subscription.md#turn-recurring-billing-off-or-on)
 
    > [!NOTE]
    > 在一些国家和地区，无法通过银行帐户支付。
@@ -102,6 +102,6 @@ ms.locfileid: "50114617"
 
 ## <a name="related-content"></a>相关内容
 
-[尝试或购买 Microsoft 365 商业版订阅 (](../try-or-buy-microsoft-365.md) 文章) \
-[续订 Microsoft 365 商业版 (](renew-your-subscription.md) 文章) \
+[试用或购买 Microsoft 365 商业版订阅 (](../try-or-buy-microsoft-365.md) 文章) \
+[续订 Microsoft 365 商业版](renew-your-subscription.md) (文章) \
 [取消订阅 (](cancel-your-subscription.md) 文章) 

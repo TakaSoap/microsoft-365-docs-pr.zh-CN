@@ -6,7 +6,7 @@ ms.author: pebaum
 author: pebaum
 manager: scotv
 audience: Admin
-ms.topic: article
+ms.topic: landing-page
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -22,18 +22,18 @@ ms.custom:
 - AdminSurgePortfolio
 - okr_smb
 description: 现在，你已设置 Microsoft 365，了解如何在 Mac、电脑或移动设备上安装各个 Office 应用程序，以及如何在 Outlook 中设置电子邮件。
-ms.openlocfilehash: dc8a4c3670dacf4b3cc85637c3e18c51a8c8e350
-ms.sourcegitcommit: cbe8724bd71d1c002395d98f1451c5f578c824f9
+ms.openlocfilehash: c1d88aa1e754424e7a4ef3e486efc8a9618d3e9b
+ms.sourcegitcommit: 89095172c9c4793d56645b4c885ac8e30936bd0a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49988028"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50766351"
 ---
 # <a name="install-office-applications"></a>安装 Office 应用程序
 
 现在，你已设置 Microsoft 365，可以在 Mac、电脑或移动设备上安装各个 Office 应用程序。
   
-若要了解如何执行下列步骤，请按照以下链接获取相关信息：
+若要了解如何执行下列步骤，请遵循以下链接：
   
 - 安装 Office 应用程序  [：在电脑或 Mac 上安装 Office](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658)
 
@@ -47,10 +47,10 @@ ms.locfileid: "49988028"
 
 ::: moniker range="o365-21vianet"
 
-如果已购买 Azure Active Directory Premium (AADP) 计划 1 或计划 2，则有资格使用 Microsoft Identity Manager (MIM) 。 若要下载 MIM，请转到下载 [中心](https://www.microsoft.com/zh-cn/download/details.aspx?id=58498)。
+如果你购买了 Azure Active Directory Premium (AADP) 计划 1 或计划 2，则符合 Microsoft Identity Manager (MIM) 。 若要下载 MIM，请转到下载 [中心](https://www.microsoft.com/zh-cn/download/details.aspx?id=58498)。
 
 ::: moniker-end
 
 存在问题？ 这些疑难解答资源可提供帮助：
   
-- [Office 和 Microsoft 365 安装疑难解答](https://support.microsoft.com/office/35ff2def-e0b2-4dac-9784-4cf212c1f6c2)
+- [安装 Office 和 Microsoft 365 疑难解答](https://support.microsoft.com/office/35ff2def-e0b2-4dac-9784-4cf212c1f6c2)

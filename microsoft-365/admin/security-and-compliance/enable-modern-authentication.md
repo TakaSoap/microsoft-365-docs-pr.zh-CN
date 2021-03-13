@@ -21,13 +21,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 7dc1c01a-090f-4971-9677-f1b192d6c910
-description: 了解如何设置注册表项以对已安装 2013 Microsoft Office新式验证。
-ms.openlocfilehash: 34078291fa237b63c391a7e90ba06ea0085c37cb
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+description: 了解如何设置注册表项，为已安装 2013 Microsoft Office新式验证。
+ms.openlocfilehash: 2a4be82328d391db7808cb9197ce259275b567c6
+ms.sourcegitcommit: bf9e0091e5bdc78d9b23be64583eb816bb059eb2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49926554"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50758924"
 ---
 # <a name="enable-modern-authentication-for-office-2013-on-windows-devices"></a>在 Windows 设备上启用适用于 Office 2013 的新式验证
 
@@ -42,10 +42,10 @@ ms.locfileid: "49926554"
   
 |**注册表项**|**类型**|**值** |
 |:-------|:------:|--------:|
-|HKCU\SOFTWARE\Microsoft\Office\15.0\Common\Identity\EnableADAL  |REG_DWORD  |1   |
-|HKCU\SOFTWARE\Microsoft\Office\15.0\Common\Identity\Version |REG_DWORD |1  |
+|HKCU\SOFTWARE\Microsoft\Office\15.0\Common\Identity\EnableADAL  |REG_DWORD  |1  |
+|HKCU\SOFTWARE\Microsoft\Office\15.0\Common\Identity\Version |REG_DWORD |1 |
    
-设置注册表项后，可以将 Office 2013 设备应用设置为在 Microsoft 365 ([MFA ](set-up-multi-factor-authentication.md)) 多重身份验证。 
+设置注册表项后，可以将 Office 2013 设备应用设置为使用 Microsoft 365 的 [MFA ](set-up-multi-factor-authentication.md) (多重) 身份验证。 
   
 如果当前登录了任何客户端应用，需注销并重新登录以使更改生效。否则，在建立 ADAL 标识之前，MRU 和漫游设置将不可用。
   
@@ -60,5 +60,6 @@ ms.locfileid: "49926554"
 ## <a name="related-articles"></a>相关文章
 [使用第二种验证方法登录 Office 2013](https://support.microsoft.com/office/2b856342-170a-438e-9a4f-3c092394d3cb)
 
-  
+[Outlook 提示输入密码，并且不使用新式验证连接到 Office 365](https://docs.microsoft.com/outlook/troubleshoot/authentication/outlook-prompt-password-modern-authentication-enabled)
 
+  
