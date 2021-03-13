@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: 审核日志保留策略是 Microsoft 365 中新增的高级审核功能的一部分。 通过审核日志保留策略，可指定组织中审核日志的保留时间。
-ms.openlocfilehash: eeddf4c963284acaa908e07ddfdae77ec0bb080c
-ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
+ms.openlocfilehash: fd7e5dc37daad220257b4203679c6bb765140385
+ms.sourcegitcommit: 88ab08c0fa1acbc9e066009e131b9f2b0d506c64
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "50114929"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "50712042"
 ---
 # <a name="manage-audit-log-retention-policies"></a>管理审核日志保留策略
 
@@ -47,7 +47,7 @@ Microsoft 365 中的高级审核功能为所有组织提供默认审核日志保
 
 - 在组织中，你最多可以拥有 50 个审核日志保留策略。
 
-- 若要将审核日志保留超过 90 天，必须为生成审核日志的用户分配 Office 365 E5 或 Microsoft 365 E5 许可证，或者该用户必须具有 Microsoft 365 E5 合规版或 E5 电子数据展示和审核加载项许可证。
+- 若要将审核日志保留超过 90 天（以及最多 1 年），必须为生成审核日志的用户（通过执行审核活动）分配 Office 365 E5 或 Microsoft 365 E5 许可证，或者该用户必须具有 Microsoft 365 E5 合规或 E5 电子数据展示和审核加载项许可证。 若要将审核日志保留 10 年，除 E5 许可证外，还必须向生成审核日志的用户分配 10 年审核日志保留附加产品许可证以及 E5 许可证。
 
 - 所有自定义审核日志保留策略（由组织创建）都优先于默认保留策略。 例如，如果为保留期短于一年的 Exchange 邮箱活动创建审核日志保留策略，则 Exchange 邮箱活动的审核记录将在自定义策略指定的较短期限内保留。
 

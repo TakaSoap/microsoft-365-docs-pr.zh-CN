@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 758759ad-63ee-4ea9-90a3-39f941897b7d
 description: 了解可以使用的组类型。
-ms.openlocfilehash: 4cbc7f15632026babec3640f021c09e901ad20b9
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: dfb726fadbfbcf69a8ff57fa3d9025cd8811e617
+ms.sourcegitcommit: 3d48e198e706f22ac903b346cadda06b2368dd1e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49925526"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50727243"
 ---
 # <a name="compare-groups"></a>比较组
 
@@ -41,7 +41,7 @@ ms.locfileid: "49925526"
 
 ## <a name="microsoft-365-groups"></a>Microsoft 365 组
 
-Microsoft 365 组用于公司内部和外部用户之间的协作。 对于每个 Microsoft 365 组，成员将获得组电子邮件和用于对话、文件和日历事件的共享工作区，以及 Planner。
+Microsoft 365 组用于公司内部和外部用户之间的协作。 对于每个 Microsoft 365 组，成员将获得组电子邮件和用于对话、文件和日历事件的共享工作区、流和规划器。
 
 只要[管理员启用](manage-guest-access-in-groups.md)了此功能，你就可以将组织外部的人员添加到组中。 还可以允许外部发件人向组电子邮件地址发送电子邮件。
 
