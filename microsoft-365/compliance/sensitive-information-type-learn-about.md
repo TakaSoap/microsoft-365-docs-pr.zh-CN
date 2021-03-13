@@ -16,12 +16,12 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: ''
-ms.openlocfilehash: 90b545f60c68ac6b76509e14daf1258df66e1c63
-ms.sourcegitcommit: 06d9e056eabfbac8fafe66cc32907b33d4ae8253
+ms.openlocfilehash: 13dee9d5744639149960a16adcf36b7ebe5718f7
+ms.sourcegitcommit: 89095172c9c4793d56645b4c885ac8e30936bd0a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50741529"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50766397"
 ---
 # <a name="learn-about-sensitive-information-types"></a>了解敏感信息类型
 
@@ -129,6 +129,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 > - 置信度在 76 和 100 之间的最低准确度或自定义 SIT 模式的所有策略都将映射到高可信度。 
 > - 置信度在 66 和 75 之间的最低准确度或自定义 SIT 模式的所有策略都将映射到中等可信度。
 > - 置信度低于或等于 65 的所有策略或自定义 SIT 模式都将映射到低可信度。 
+
 ## <a name="creating-custom-sensitive-information-types"></a>创建自定义敏感信息类型
 
 若要在安全与合规中心内创建自定义敏感信息类型，可使用以下几种方法：
