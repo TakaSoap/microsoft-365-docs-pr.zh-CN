@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 'Microsoft 365 终结点数据丢失防护可将对文件活动的监视和针对这些文件的保护措施扩展到终结点。 在 Microsoft 365 合规解决方案中将文件设为可见 '
-ms.openlocfilehash: d5394499b5514e6e0a49f958a62e70cde61ebf44
-ms.sourcegitcommit: 88820cd2536a7da868e472d10b4d265c52e5692b
+ms.openlocfilehash: c4f0d10808d564fc0ee19510c25d33caba0471ff
+ms.sourcegitcommit: 06d9e056eabfbac8fafe66cc32907b33d4ae8253
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "50279306"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50741583"
 ---
 # <a name="learn-about-microsoft-365-endpoint-data-loss-prevention"></a>了解 Microsoft 365 终结点数据丢失防护
 
@@ -43,6 +43,8 @@ Microsoft 终结点 DLP 使你可以审核和管理用户对运行 Windows 10 �
 |复制到 USB 可移动媒体 |检测用户何时尝试将项目或信息复制到可移动媒体或 USB 设备。         | 可审核且可限制|
 |拷贝到网络共享    |当用户试图将项目复制到网络共享或映射的网络驱动器时，检测该项目         |可审核且可限制|
 |打印文档    |当用户试图将受保护的项目打印到本地或网络打印机上时，检测该项目。| 可审核且可限制         |
+|复制到远程会话|检测用户是否尝试将项目复制到远程桌面会话 |  可审核且可限制|
+|复制到蓝牙设备|检测用户尝试将项目复制到未启用的蓝牙应用（如在终结点 DLP 设置中不允许的蓝牙 aps 列表中所定义）。| 可审核且可限制|
 |创建项|当用户创建项目时，检测该项目| 可审核|
 |重命名项|当用户重命名一个项目时，检测该项目| 可审核|
 

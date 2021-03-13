@@ -285,8 +285,6 @@
                   items:
                     - name: ServiceNow 集成概述
                       href: ./mtp/tickets.md
-                    - name: 安全中心中的 ServiceNow 票证
-                      href: ./mtp/tickets-security-center.md
             - name: Microsoft 365 Defender API（预览版）
               items:
                 - name: Microsoft 365 Defender API 概述（预览版）
