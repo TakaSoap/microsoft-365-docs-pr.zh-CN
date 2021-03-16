@@ -44,16 +44,18 @@
           href: insider-risk-management.md
         - name: 内部风险管理计划
           href: insider-risk-management-plan.md
-        - name: 内部风险设置入门
-          href: insider-risk-management-settings.md
         - name: 内部风险管理入门
           href: insider-risk-management-configure.md
+        - name: 内部风险设置入门
+          href: insider-risk-management-settings.md
         - name: 创建和管理内部风险策略
           href: insider-risk-management-policies.md
         - name: 调查内部风险警报
           href: insider-risk-management-alerts.md
         - name: 对内部风险案例采取措施
           href: insider-risk-management-cases.md
+        - name: 与内部风险审核日志一起查看活动
+          href: insider-risk-management-audit-log.md
         - name: 使用内部风险内容资源管理器查看数据
           href: insider-risk-management-content-explorer.md
         - name: 使用用户仪表板管理工作流
@@ -237,8 +239,12 @@
               href: data-loss-prevention-policies.md
             - name: 了解终结点数据丢失防护
               href: endpoint-dlp-learn-about.md
-            - name: 了解 Microsoft 365 数据丢失防护本地扫描程序（预览）
+            - name: 了解 Microsoft Teams (预览版) 中的默认数据丢失防护策略
+              href: dlp-teams-default-policy.md
+            - name: 了解 Microsoft 365 本地扫描仪数据丢失防护 (预览版)
               href: dlp-on-premises-scanner-learn.md
+            - name: 了解 Microsoft 合规中心扩展 (预览版)
+              href: dlp-chrome-learn-about.md
         - name: 开始使用 DLP
           items:
             - name: 开始使用默认 DLP 策略
@@ -253,6 +259,8 @@
               href: endpoint-dlp-getting-started.md
             - name: 为 Endpoint DLP 配置设备代理和 Internet 连接设置
               href: endpoint-dlp-configure-proxy.md
+            - name: Microsoft 合规中心扩展 (预览版) 入门
+              href: dlp-chrome-get-started.md
             - name: Windows 10 设备的 Endpoint DLP 载入工具和方法
               items:
                 - name: Windows 10 设备的装载工具和方法
