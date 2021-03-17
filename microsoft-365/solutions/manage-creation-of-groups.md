@@ -17,29 +17,31 @@ search.appverid:
 - MET150
 ms.assetid: 4c46c8cb-17d0-44b5-9776-005fced8e618
 description: 了解如何控制哪些用户可以创建 Microsoft 365 组。
-ms.openlocfilehash: f2d1a2062d43af750a84984aab66329ed6a4db22
-ms.sourcegitcommit: 8b1bd7ca8cd81e4270f0c1e06d2b6ca81804a6aa
+ms.openlocfilehash: 04c2b6e738ed41f8d4a2bf96716fb74b1d260497
+ms.sourcegitcommit: 8f1721de52dbe3a12c11a0fa5ed0ef5972ca8196
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "50819698"
+ms.lasthandoff: 03/17/2021
+ms.locfileid: "50838635"
 ---
 # <a name="manage-who-can-create-microsoft-365-groups"></a>管理可创建 Microsoft 365 组的人员
 
 默认情况下，所有用户都可以创建 Microsoft 365 组。 这是推荐的方法，因为它允许用户无需 IT 协助即可开始协作。
 
-如果您的企业要求您限制可以创建组的人，您可以按照本文中的过程操作。 限制可以创建组的人时，会影响依赖组访问的所有服务，包括：
+如果你的企业要求限制可以创建组的人，你可以将 Microsoft 365 组创建限制为特定 Microsoft 365 组或安全组的成员。
+
+如果你担心用户创建不符合业务标准的团队或组，请考虑要求用户完成培训课程，然后将他们添加到允许的用户组。
+
+限制可以创建组的人时，会影响依赖组访问的所有服务，包括：
 
 - Outlook
 - SharePoint
 - Yammer
 - Microsoft Teams
 - Microsoft Stream
-- Planner
+- 规划器
 - Power BI (经典) 
 - Project 网页/路线图
-
-你可以将 Microsoft 365 组创建限制为特定 Microsoft 365 组或安全组的成员。 若要配置此配置，请使用Windows PowerShell。 本文将指导你完成所需步骤。
 
 本文中的步骤不会阻止某些角色的成员创建组。 Office 365 全局管理员可以通过任何方式（如 Microsoft 365 管理中心、Planner、Teams、Exchange 和 SharePoint Online）创建组。 其他角色可以通过有限的方式创建组，如下所示。
 
@@ -141,7 +143,7 @@ Set-AzureADDirectorySetting -Id $settingsObjectID -DirectorySetting $settingsCop
 
 脚本的最后一行将显示更新的设置：
 
-![This is what your settings will look like when you're done.](../media/952cd982-5139-4080-9add-24bafca0830c.png)
+![PowerShell 脚本输出的屏幕截图。](../media/952cd982-5139-4080-9add-24bafca0830c.png)
 
 如果将来要更改使用哪个组，可以使用新组的名称重新运行脚本。
 

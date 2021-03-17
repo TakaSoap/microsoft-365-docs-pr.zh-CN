@@ -16,12 +16,12 @@ ms.custom:
 - M365solutions
 f1.keywords: NOCSH
 description: 了解如何管理 Microsoft 365 组、Teams、SharePoint 和 Yammer 中的相关功能。
-ms.openlocfilehash: a9b4767c450ffc775fb84711e48b9f6c775419e5
-ms.sourcegitcommit: 06d9e056eabfbac8fafe66cc32907b33d4ae8253
+ms.openlocfilehash: 01dea57504bf5d68c0bb13376379379f29044191
+ms.sourcegitcommit: 8f1721de52dbe3a12c11a0fa5ed0ef5972ca8196
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50741593"
+ms.lasthandoff: 03/17/2021
+ms.locfileid: "50838463"
 ---
 # <a name="what-is-collaboration-governance"></a>什么是协作管理？
 
@@ -41,6 +41,10 @@ Microsoft 365 组、Teams 和 Yammer 等服务为用户提供了支持，通过�
 
 有许多选项用于部署 Microsoft 365 组和 Teams，以在组织中实现安全协作。 我们建议你使用此管理内容以及设置与 [Microsoft 365](setup-secure-collaboration-with-teams.md) 的安全协作及其关联文章，为组织创建最佳协作解决方案。
 
+### <a name="data-residency"></a>数据派驻
+
+如果你的组织是多方组织，并且你对不同的地理位置有数据驻留要求，请包含 [Microsoft 365](/microsoft-365/enterprise/microsoft-365-multi-geo) 多地理位置作为协作治理计划的一部分。
+
 ## <a name="why-microsoft-365-groups-are-important"></a>为什么 Microsoft 365 组很重要
 
 Microsoft 365 组允许你选择要与之协作的一组人员，并轻松设置供这些人员共享的资源集合。 向组添加成员会自动向组提供的所有资产授予所需的权限。 Teams 和 Yammer 均使用 Microsoft 365 组来管理其成员身份。
@@ -54,7 +58,7 @@ Microsoft 365 组包括一套链接资源，用户可使用这些资源进行通
 |[Calendar](https://support.office.com/article/schedule-a-meeting-on-a-group-calendar-in-outlook-0cf1ad68-1034-4306-b367-d75e9818376a)|对于与组相关的计划事件|
 |[收件箱](https://support.office.com/article/have-a-group-conversation-in-outlook-a0482e24-a769-4e39-a5ba-a7c56e828b22)|对于团队成员之间的电子邮件对话。 此收件箱具有电子邮件地址，可以设置为接受来自组外部甚至组织外部人员的邮件，这非常像传统通讯组列表。|
 |[OneNote 笔记本](https://support.office.com/article/get-started-with-onenote-e768fafa-8f9b-4eac-8600-65aa10b2fe97)|收集想法、研究和信息|
-|[Planner](https://support.office.com/article/microsoft-planner-help-4a9a13c6-3adf-4a60-a6fc-15c0b15e16fc)|在团队成员之间分配和管理项目任务|
+|[计划表](https://support.office.com/article/microsoft-planner-help-4a9a13c6-3adf-4a60-a6fc-15c0b15e16fc)|在团队成员之间分配和管理项目任务|
 |[Power BI Workspace](https://docs.microsoft.com/power-bi/collaborate-share/service-new-workspaces)|包含仪表板和报表的数据协作空间|
 |[项目和路线图](https://support.microsoft.com/project)|基于 Web 的项目管理工具|
 |[SharePoint 团队网站](https://support.office.com/article/what-is-a-sharepoint-team-site-75545757-36c3-46a7-beed-0aaa74f0401e)|与组有关的信息、链接和内容的中央存储库|
@@ -109,6 +113,8 @@ Microsoft 365 支持三种主要通信方法：
 - **与业务优先级保持** 一致 - 业务目标将帮助您定义在治理方面需要投入的时间和精力。
 
 - **直接在所** 创建的解决方案中嵌入治理决策 - 许多管理决策可通过打开或关闭 Microsoft 365 中的功能实现。
+
+- **使用分阶段方法** - 首先向一小组用户推出协作功能。 从他们处获取反馈，观看技术支持票证，并更新任何所需的设置或流程，然后再进入更大的组。
 
 - **通过培训加强** - 调整解决方案（如 [Microsoft 365](https://docs.microsoft.com/office365/customlearning) 学习路径）以确保通过 Microsoft 提供的培训强化组织特定的预期。
 

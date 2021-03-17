@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 description: 了解 Microsoft 365 中的高级电子数据展示解决方案。 本文概述了 Microsoft 365 中的高级电子数据展示，这是一种可帮助您管理内部和外部调查的工具。 它还包含使用高级电子数据展示管理法律调查的业务原因。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 6623682dedd0342f1e88478127d23bbbd4ab9dbb
-ms.sourcegitcommit: 3d48e198e706f22ac903b346cadda06b2368dd1e
+ms.openlocfilehash: 80a1505bf19beb954c0746efb7fb29f99d6a916b
+ms.sourcegitcommit: 8f1721de52dbe3a12c11a0fa5ed0ef5972ca8196
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50727583"
+ms.lasthandoff: 03/17/2021
+ms.locfileid: "50838218"
 ---
 # <a name="overview-of-microsoft-365-advanced-ediscovery"></a>Microsoft 365 高级电子数据展示概述
 
@@ -103,7 +103,7 @@ Teams、Yammer、SharePoint Online、OneDrive for Business 和 Exchange Online �
 
 ### <a name="collecting-case-data"></a>收集事例数据
 
-使用 **"搜索** "选项卡创建搜索，以搜索就地查询和非查询数据源中与案例相关的内容。 您可以使用关键字和条件) 创建和运行基于查询的搜索 (，以标识一组与案例相关并且您希望在电子数据展示工作流的后续步骤中进一步查看和分析的电子邮件和文档。 可以创建一个或多个与案例关联的搜索。 您还可以使用搜索工具预览示例文档和查看搜索统计信息，以帮助您优化和改进搜索结果。 当您对搜索结果包含与案例相关的所有数据感到满意后，您将搜索结果添加到审阅集以进一步审阅、分析和剔除。 有关详细信息，请参阅 [收集案例数据](collecting-data-for-ediscovery.md)。
+使用 **"集合** "选项卡创建电子数据展示搜索，以搜索就地查询和非预发布数据源，以查找与案例相关的内容。 可以使用关键字和条件) 创建和运行基于查询的集合 (以标识一组与案例相关并且您希望在电子数据展示工作流的后续步骤中进一步查看和分析的电子邮件和文档。 可以创建一个或多个与案例关联的集合。 您还可以使用收集工具预览示例文档和查看搜索统计信息，以帮助您优化和改进搜索结果。 当您对包含与案例相关的数据的集合结果感到满意后，可以将该集合提交到审阅集，以进一步审阅、分析和剔除。 有关详细信息，请参阅 [收集案例数据](collecting-data-for-ediscovery.md)。
 
 ### <a name="reviewing-and-analyzing-case-data"></a>查看和分析案例数据
 

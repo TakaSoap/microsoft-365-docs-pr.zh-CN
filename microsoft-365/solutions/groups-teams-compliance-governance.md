@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 组、团队和 SharePoint 协作的合规性选项
+title: Microsoft 365 组、Teams 和 SharePoint 协作的合规性选项
 ms.reviewer: ''
 ms.author: mikeplum
 author: MikePlumleyMSFT
@@ -14,19 +14,19 @@ ms.collection:
 ms.custom:
 - M365solutions
 f1.keywords: NOCSH
-description: 了解 Microsoft 365 组、团队和 SharePoint 协作的合规性选项。
-ms.openlocfilehash: e1ca6e638b2d44ae3b04e2a0f13222424e89714d
-ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
+description: 了解 Microsoft 365 组、Teams 和 SharePoint 协作的合规性选项。
+ms.openlocfilehash: f68381ab45e74b9b7c8f44465387add82bd4150a
+ms.sourcegitcommit: 8f1721de52dbe3a12c11a0fa5ed0ef5972ca8196
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49613626"
+ms.lasthandoff: 03/17/2021
+ms.locfileid: "50838647"
 ---
-# <a name="compliance-options-for-microsoft-365-groups-teams-and-sharepoint-collaboration"></a>Microsoft 365 组、团队和 SharePoint 协作的合规性选项
+# <a name="compliance-options-for-microsoft-365-groups-teams-and-sharepoint-collaboration"></a>Microsoft 365 组、Teams 和 SharePoint 协作的合规性选项
 
-Microsoft 365 提供了全套工具，以在用户协作的同时保持合规性。 查看这些选项并考虑它们如何映射到您的业务需求、数据的敏感性以及用户需要与之协作的人员的范围。
+Microsoft 365 提供了一整套工具来在用户协作时保持合规性。 查看这些选项，并考虑它们如何映射到业务需求、数据的敏感度以及用户需要协作的用户范围。
 
-下表提供了适用于 Microsoft 365 中的合规性控件的快速参考。 以下各节提供了详细信息。
+下表提供了 Microsoft 365 中提供的合规性控件的快速参考。 以下各节提供了进一步的信息。
 
 |类别|说明|参考|
 |:-------|:----------|:--------|
@@ -38,45 +38,47 @@ Microsoft 365 提供了全套工具，以在用户协作的同时保持合规性
 ||自动对敏感内容进行分类|[将敏感度标签自动应用于内容](https://docs.microsoft.com/microsoft-365/compliance/apply-sensitivity-label-automatically)|
 ||加密敏感内容|[通过敏感度标签应用加密，从而限制对内容的访问](https://docs.microsoft.com/microsoft-365/compliance/encryption-sensitivity-labels)|
 |信息保护|||
-||防止敏感信息丢失|[数据丢失防护概述](https://docs.microsoft.com/microsoft-365/compliance/data-loss-prevention-policies)|
-||保护聊天中的敏感信息。|[数据丢失防护和 Microsoft 团队](https://docs.microsoft.com/microsoft-365/compliance/dlp-microsoft-teams)|
+||防止丢失敏感信息|[数据丢失防护概述](https://docs.microsoft.com/microsoft-365/compliance/data-loss-prevention-policies)|
+||保护聊天中的敏感信息。|[数据丢失防护和 Microsoft Teams](https://docs.microsoft.com/microsoft-365/compliance/dlp-microsoft-teams)|
 ||定义组织的敏感信息|[自定义敏感信息类型](https://docs.microsoft.com/microsoft-365/compliance/custom-sensitive-info-types)|
 |用户细分|||
 ||限制用户区段之间的通信|[信息屏障](https://docs.microsoft.com/microsoft-365/compliance/information-barriers)|
 
 ## <a name="information-retention"></a>信息保留
 
-保留策略可用于保留或删除组和团队中用于协作的项目，包括文件、邮件和邮件。 可以将策略设置为保留和删除、仅保留或仅删除。 当组或团队过期或被删除时，保留策略所涵盖的信息将受到保护。
+保留策略可用于保留或删除用于组和团队中协作的项目，包括文件、邮件和邮件。 可以将策略设置为保留和删除、仅保留或仅删除。 如果组或团队过期或被删除，保留策略涵盖的信息将受到保护。
 
-为 Microsoft 365 组配置保留策略将覆盖组邮箱以及关联的 SharePoint 网站和文件。
+为 Microsoft 365 组配置保留策略涵盖组邮箱以及关联的 SharePoint 网站和文件。
 
 - [了解 SharePoint 和 OneDrive 的保留策略](https://docs.microsoft.com/microsoft-365/compliance/retention-policies-sharepoint)
 
-工作组的保留策略保留聊天和频道消息。 虽然聊天和频道邮件存储在 Exchange 邮箱中，但它们不受 Exchange 保留策略的影响。 您必须设置保留策略以应用于团队聊天和团队频道邮件：
+Teams 的保留策略保留聊天和频道消息。 当聊天和频道消息存储在 Exchange 邮箱中时，它们不受 Exchange 保留策略的影响。 必须将保留策略设置为应用于 Teams 聊天和 Teams 频道消息。 
+
+即使删除了用户帐户，用户聊天也无限期保留。 如果您不想无限期保留此数据，请考虑使用保留策略在指定的时间后删除用户聊天，或将此删除操作包括在用户删除过程中。
 
 - [了解 Microsoft Teams 的保留策略](https://docs.microsoft.com/microsoft-365/compliance/retention-policies-teams)
 
 - [Microsoft Teams 中的保留策略](https://docs.microsoft.com/microsoftteams/retention-policies)
 
-可以将单个保留策略设置为适用于 Microsoft 365 组、团队聊天和团队频道消息。 
+可以将单个保留策略设置为应用于 Microsoft 365 组、Teams 聊天和 Teams 频道消息。 
 
 其他资源：
 
 - [了解有关保留策略的信息](https://docs.microsoft.com/microsoft-365/compliance/retention-policies)
 
-- Exchange 中的[保留标记和保留策略](https://docs.microsoft.com/exchange/security-and-compliance/messaging-records-management/retention-tags-and-policies)
+- Exchange[中的保留标记和](https://docs.microsoft.com/exchange/security-and-compliance/messaging-records-management/retention-tags-and-policies)保留策略
 
 ## <a name="information-classification"></a>信息分类
 
-您可以使用敏感度标签管理来宾访问、组和团队隐私，并为组和团队提供非托管设备的访问权限。 通过应用标签，这些设置将自动配置为由标签设置指定的设置。
+可以使用敏感度标签来管理来宾访问、组和团队隐私，以及组和团队的不受管理设备的访问。 通过应用标签，这些设置将按标签设置指定自动配置。
 
 - [使用敏感度标签保护 Microsoft Teams、Microsoft 365 组和 SharePoint 网站中的内容](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites)
 
-您可以根据您指定的条件，将 Microsoft 365 配置为自动将灵敏度标签应用于文件和电子邮件，包括检测敏感信息类型或与 trainable 分类程序的模式匹配。
+你可以配置 Microsoft 365，以根据指定的条件将敏感度标签自动应用于文件和电子邮件，包括检测敏感信息类型或模式与可训练分类器匹配。
 
 - [将敏感度标签自动应用于内容](https://docs.microsoft.com/microsoft-365/compliance/apply-sensitivity-label-automatically)
 
-您可以使用敏感度标签对文件进行加密，仅允许具有解密和读取这些文件的权限。
+敏感度标签可用于加密文件，仅允许具有解密和读取权限的文件。
 
 - [通过敏感度标签应用加密，从而限制对内容的访问](https://docs.microsoft.com/microsoft-365/compliance/encryption-sensitivity-labels)
 
@@ -89,34 +91,34 @@ Microsoft 365 提供了全套工具，以在用户协作的同时保持合规性
 
 ## <a name="information-protection"></a>信息保护
 
-DLP 策略可防止在 SharePoint、Exchange 和团队之间意外共享敏感信息。 您可以创建策略来指定要执行的操作 (如基于一组规则阻止访问) 。
+DLP 策略可以防止在 SharePoint、Exchange 和 Teams 之间意外共享敏感信息。 可以创建策略来指定要执行 (操作，例如) 一组规则阻止访问。
 
 - [数据丢失防护概述](https://docs.microsoft.com/microsoft-365/compliance/data-loss-prevention-policies)
 
-团队中的 DLP 可以通过删除包含敏感信息的邮件来帮助保护工作组聊天和频道消息中的敏感信息。
+Teams 中的 DLP 可以通过删除包含敏感信息的消息来帮助保护 Teams 聊天和频道消息中的敏感信息。
 
-- [数据丢失防护和 Microsoft 团队](https://docs.microsoft.com/microsoft-365/compliance/dlp-microsoft-teams)
+- [数据丢失防护和 Microsoft Teams](https://docs.microsoft.com/microsoft-365/compliance/dlp-microsoft-teams)
 
-如果您有组织特有的敏感信息（如项目代码名称），您可以创建自己的敏感信息类型，并将其应用于 DLP 策略以保护组、团队和 Sharepoint 中的内容。
+如果您有组织特有的敏感信息（如项目代码名称），您可以创建自己的敏感信息类型，并应用于 DLP 策略以保护组、团队和 Sharepoint 中的内容。
 
 - [自定义敏感信息类型](https://docs.microsoft.com/microsoft-365/compliance/custom-sensitive-info-types)
 
 ## <a name="user-segmentation"></a>用户细分
 
-通过信息障碍，您可以对数据和用户进行分段，以限制组之间的不必要的通信和协作，并避免组织中的利益冲突。 信息障碍允许您创建策略以允许或阻止组织中的人员组之间的文件协作、聊天、通话或会议邀请。
+通过信息屏障，你可以划分数据和用户，以限制组之间不需要的通信和协作，并避免组织的利益冲突。 信息屏障允许你创建策略，以允许或阻止组织中各组人员之间的文件协作、聊天、通话或会议邀请。
 
 - [信息屏障](https://docs.microsoft.com/microsoft-365/compliance/information-barriers)
 
-- [Microsoft 团队中的信息障碍](https://docs.microsoft.com/microsoftteams/information-barriers-in-teams)
+- [Microsoft Teams 中的信息屏障](https://docs.microsoft.com/microsoftteams/information-barriers-in-teams)
 
-- [在 SharePoint 中使用信息障碍](https://docs.microsoft.com/sharepoint/information-barriers)
+- [在 SharePoint 中使用信息屏障](https://docs.microsoft.com/sharepoint/information-barriers)
 
 ## <a name="related-topics"></a>相关主题
 
-[协作治理规划分步](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
+[协作治理规划分步规划](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
 
 [创建协作管理计划](collaboration-governance-first.md)
 
-[Exchange Online 的安全性和合规性](https://docs.microsoft.com/exchange/security-and-compliance/security-and-compliance)
+[Exchange Online 安全性和合规性](https://docs.microsoft.com/exchange/security-and-compliance/security-and-compliance)
 
 [保护信息](https://docs.microsoft.com/microsoft-365/compliance/protect-information)

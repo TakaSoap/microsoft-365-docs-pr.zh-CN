@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 本文介绍如何创建和管理高级电子数据展示事例。 第一步是创建案例并开始使用高级电子数据展示特性和功能。
-ms.openlocfilehash: 80cfe31a86060cb3603a101b314273cc67750bd8
-ms.sourcegitcommit: 3d48e198e706f22ac903b346cadda06b2368dd1e
+ms.openlocfilehash: 0301213cf6d7e3c30b98ad5125468c6c75ed95b1
+ms.sourcegitcommit: 8f1721de52dbe3a12c11a0fa5ed0ef5972ca8196
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50727539"
+ms.lasthandoff: 03/17/2021
+ms.locfileid: "50838251"
 ---
 # <a name="create-and-manage-an-advanced-ediscovery-case"></a>创建和管理高级电子数据展示案例
 
@@ -82,15 +82,15 @@ ms.locfileid: "50727539"
 
    - 您可以使用高级电子 [数据](managing-custodian-communications.md) 展示中的通信工作流向保管人发送合法保留通知。
 
-2. **[搜索与案例相关的数据的数据源](collecting-data-for-ediscovery.md)**。 将保管人和非托管数据源添加到案例后，使用内置搜索工具搜索这些数据源中可能与案例相关的数据。 您可以使用关键字、属性和条件来构建搜索查询[](building-search-queries.md)，这些查询使用与案例最相关的数据返回搜索结果。 还可以执行以下操作：
+2. **[从数据源中收集相关的数据](create-draft-collection.md)**。 将保管人和非托管数据源添加到案例后，使用内置集合工具搜索这些数据源中可能与案例相关的内容。 您可以使用关键字、属性和条件来构建搜索查询[](building-search-queries.md)，这些查询使用与案例最相关的数据返回搜索结果。 还可以执行以下操作：
 
-   - 查看 [可帮助您](search-statistics-in-advanced-ediscovery.md) 优化搜索查询以缩小结果范围的搜索统计信息。
+   - 查看 [可帮助您](collection-statistics-reports.md) 优化集合以缩小结果范围的集合统计信息。
 
-   - 预览搜索结果以快速验证是否已找到相关数据。
+   - 预览集合示例，以快速验证是否找到相关数据。
 
-   - 修改查询并重新运行搜索。
+   - 修改查询并重新运行集合。
 
-3. **[将数据添加到审阅集](add-data-to-review-set.md)**。 配置并验证搜索返回所需数据后，下一步是将搜索结果添加到审阅集。 向审阅集添加数据时，项目会从原始位置复制到安全的 Azure 存储位置。 再次对数据进行索引索引，以在审阅和分析审阅集内的项目时优化数据，以便进行全面而快速的搜索。 此外，您还可以将 [非 Office 365 数据添加到审阅集](load-non-office-365-data-into-a-review-set.md)。
+3. **[将集合提交到审阅集](commit-draft-collection.md)**。 配置并验证搜索返回所需数据后，下一步是将搜索结果添加到审阅集。 向审阅集添加数据时，项目会从原始位置复制到安全的 Azure 存储位置。 再次对数据进行索引索引，以在审阅和分析审阅集内的项目时优化数据，以便进行全面而快速的搜索。 此外，您还可以将 [非 Office 365 数据添加到审阅集](load-non-office-365-data-into-a-review-set.md)。
 
    还有一种特殊类型的审阅集，你可以将数据添加到 ，称为对话 *审阅集*。 这些类型的评论集提供了对话重建功能，可以重新构建、审阅和导出线程对话，如 Microsoft Teams 中的会话。 有关详细信息，请参阅 [审阅高级 eDiscovery 中的对话](conversation-review-sets.md)。
 

@@ -1,6 +1,6 @@
 ---
 title: 评估 Microsoft Defender for Office 365
-description: 评估模式下的 Defender for Office 365 创建 Defender for Office 365 电子邮件策略，用于记录裁定（如恶意软件）但不对邮件采取行动。
+description: 评估模式下的 Defender for Office 365 创建 Defender for Office 365 电子邮件策略，用于记录裁定（如恶意软件）但不对邮件执行任何操作。
 keywords: 评估 Office 365， Microsoft Defender for Office 365， office 365 评估， 试用 office 365， Microsoft Defender， ATP
 f1.keywords:
 - NOCSH
@@ -18,46 +18,46 @@ ms.collection:
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1a9bf9461e8cf6d62e4283c9112b801371242f2e
-ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
+ms.openlocfilehash: ce17f413b23ef9ef6abf79a2710a5cec9b05206c
+ms.sourcegitcommit: 8f1721de52dbe3a12c11a0fa5ed0ef5972ca8196
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50453701"
+ms.lasthandoff: 03/17/2021
+ms.locfileid: "50838527"
 ---
 # <a name="evaluate-microsoft-defender-for-office-365"></a>评估 Microsoft Defender for Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 > [!IMPORTANT]
-> Microsoft Defender for Office 365 评估为公共预览版。 提供此预览版本时没有服务级别协议。 某些功能可能不受支持，或者可能具有受限功能。
+> Microsoft Defender for Office 365 评估在公共预览版中。 提供此预览版本时没有服务级别协议。 某些功能可能不受支持，或者可能具有受限功能。
 
-执行全面的安全产品评估可帮助你做出有关升级和购买的明智决定。 它有助于试用安全产品的功能，以评估它如何有助于安全运营团队完成日常任务。
+执行全面的安全产品评估可帮助你做出有关升级和购买的明智决定。 这有助于试用安全产品的功能，以评估它如何有助于安全运营团队完成日常任务。
 
-[Microsoft Defender for Office 365](office-365-atp.md)评估体验旨在消除设备和环境配置的复杂性，以便你可以专注于评估安全解决方案的功能。 它仅适用于电子邮件保护，而仅适用于 SharePoint、Office 客户端（如 Word）或 Teams。
+[Microsoft Defender for Office 365](office-365-atp.md)评估体验旨在消除设备和环境配置的复杂性，以便你可以专注于评估 Microsoft Defender for Office 365 的功能。 使用评估模式，可以评估发送到 Exchange Online 邮箱的所有邮件，而无需将 MX 记录指向 Microsoft。 此功能仅适用于电子邮件保护，而仅适用于 Word、SharePoint 或 Teams 等 Office 客户端。
 
-如果还没有支持 Microsoft Defender for Office 365 的许可证，可以开始为期 [30](https://admin.microsoft.com/AdminPortal/Home#/catalog/offer-details/microsoft-defender-for-office-365-plan-2-/223860DC-15D6-42D9-A861-AE05473069FA) 天的免费评估，并测试 Office 36 & 5 安全与合规中心 (中的功能 https://protection.office.com/homepage) 。 您将享受快速设置，并可以在必要时轻松将其关闭。
+如果还没有支持 Microsoft Defender for Office 365 的许可证，可以启动为期[30](https://admin.microsoft.com/AdminPortal/Home#/catalog/offer-details/microsoft-defender-for-office-365-plan-2-/223860DC-15D6-42D9-A861-AE05473069FA)天的免费评估，并测试 Office 36 & 5 安全与合规中心 (中的功能。 https://protection.office.com/homepage) 你可以轻松完成快速设置，并在必要时轻松将其关闭。
 
 ## <a name="how-the-evaluation-works"></a>评估的工作原理
 
-评估模式下的 Defender for Office 365 创建 Defender for Office 365 电子邮件策略，用于记录裁定（如恶意软件）但不对邮件采取行动。 无需更改 MX 记录配置。
+评估模式下的 Defender for Office 365 创建 Defender for Office 365 电子邮件策略，用于记录裁定（如恶意软件）但不对邮件执行任何操作。 无需更改 MX 记录配置。
 
-使用评估模式，将代表你 [](atp-safe-links.md)设置安全附件、 [](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)安全链接和基于邮箱智能的模拟策略。 [](atp-safe-attachments.md) 所有 Defender for Office 365 策略均在后台非强制模式下创建，并且不可见。
+使用评估 [模式，](atp-safe-attachments.md) [将](atp-safe-links.md)代表您设置安全附件、 [](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)安全链接和基于邮箱智能的模拟策略。 所有 Defender for Office 365 策略均在后台的非强制模式下创建，并且对不可见。
 
-作为设置的一部分，评估模式还配置 [连接器的增强筛选](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors)。 它通过保留 IP 地址和发件人信息来改进筛选准确度，否则当邮件通过 Office 365 的 Defender 前面的电子邮件安全网关 (ESG) 时，这些信息会丢失。 增强的连接器筛选功能还提高了现有 Exchange Online Protection (EOP) 反垃圾邮件和防钓鱼策略的筛选准确度。
+作为设置的一部分，评估模式还配置 [连接器的增强筛选](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors)。 它通过保留 IP 地址和发件人信息来提高筛选准确度，否则当邮件通过 Office 365 Defender 前面的电子邮件安全网关 (ESG) 时，这些信息会丢失。 增强的连接器筛选功能还提高了 EOP 中的现有 Exchange Online Protection () 反垃圾邮件和防钓鱼策略的筛选准确度。
 
-为连接器启用的增强筛选可提高筛选准确度，但如果在 Defender for Office 365 前面具有 ESG，并且当前未绕过 EOP 筛选，则可能会改变某些邮件的可传递性。 影响仅限于 EOP 策略;作为评估的一部分的 MDO 策略设置是在非强制模式下创建的。 若要最大程度地降低潜在的生产影响，您可以通过创建传输规则来绕过所有 EOP 筛选，将 SCL (垃圾邮件可信度) 设置为 -1。  [有关详细信息，请参阅"使用 EAC 创建设置邮件 SCL](use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md#use-the-eac-to-create-a-mail-flow-rule-that-sets-the-scl-of-a-message)的邮件流   规则"。
+对连接器启用的增强筛选可提高筛选准确度，但如果在 Defender for Office 365 前面有 ESG，并且当前未绕过 EOP 筛选，则某些邮件可能会改变可传递性。 影响仅限于 EOP 策略;作为评估的一部分的 MDO 策略设置是在非强制模式下创建的。 为了最大限度地减少潜在的生产影响，您可以通过创建传输规则来绕过所有 EOP 筛选，将"垃圾邮件可信度" (SCL) 设置为 -1。 有关详细信息，请参阅使用 [EAC 创建设置邮件 SCL 的邮件](use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md#use-the-eac-to-create-a-mail-flow-rule-that-sets-the-scl-of-a-message)   流规则。
 
-设置评估模式后，将每天更新一个报告，其中最多包含 90 天的数据，用于量化如果策略已实施 (例如删除、发送到垃圾邮件、隔离邮件) 。 针对所有 Defender for Office 365 和 EOP 检测生成报告。 它们按检测技术聚合 (例如，模拟) 并可以按时间范围进行筛选。 此外，还可以按需创建邮件报告，以使用威胁资源管理器创建自定义透视表或深入探究邮件。
+设置评估模式后，你每天将更新一个报告，其中最多包含 90 天的数据，用于量化实施策略时可能阻止的邮件 (例如删除、发送到垃圾邮件、隔离) 。 针对所有 Defender for Office 365 和 EOP 检测生成报告。 它们根据检测技术聚合 (例如，模拟) 并可以按时间范围进行筛选。 此外，还可以按需创建邮件报告，以创建自定义透视表，或者使用威胁资源管理器深入探究邮件。
 
-借助简化的设置体验，可以专注于：
+借助简化的设置体验，你可以专注于：
 
 - 运行评估
 - 获取详细报告
-- 分析报告的操作
+- 分析要操作的报告
 - 显示评估结果
 
-## <a name="before-you-begin"></a>准备工作
+## <a name="before-you-begin"></a>开始之前
 
 ### <a name="licensing"></a>授权
 
@@ -68,46 +68,46 @@ ms.locfileid: "50453701"
 - Microsoft 365 E5、Microsoft 365 E5 安全
 - Office 365 E5
 
-如果你没有这些许可证之一，则需要获取试用版许可证。
+如果你没有这些许可证之一，则需要获取试用许可证。
 
 #### <a name="trial"></a>试用
 
-若要获取适用于 Office 365 的 Microsoft Defender 的试用许可证，你需要具有帐单管理员 **角色或****全局管理员角色**。 从具有全局管理员角色的某人请求权限。 [了解订阅和许可证](https://docs.microsoft.com/microsoft-365/commerce/licenses/subscriptions-and-licenses)
+若要获取适用于 Office 365 的 Microsoft Defender 的试用许可证，你需要具有帐单管理员 **角色或****全局管理员角色**。 向具有全局管理员角色的人请求权限。 [了解订阅和许可证](https://docs.microsoft.com/microsoft-365/commerce/licenses/subscriptions-and-licenses)
 
-获得适当的角色后，建议的路径是，通过进入"计费 > 购买服务"，在 Microsoft 365 管理中心获取适用于 Office 365 (计划 2) 的 Microsoft Defender 试用许可证。 试用版包含 25 个许可证的 30 天免费试用版。 [获取 Microsoft Defender for Office 365 (计划 2 ](https://admin.microsoft.com/AdminPortal/Home#/catalog/offer-details/microsoft-defender-for-office-365-plan-2-/223860DC-15D6-42D9-A861-AE05473069FA)) 。
+获得适当角色后，建议的路径是，通过进入"帐单"> 购买服务，在 Microsoft 365 管理中心获取适用于 Office 365 (计划 2) 的 Microsoft Defender 试用许可证。 试用版包含 25 个许可证的 30 天免费试用版。 [获取 Microsoft Defender for Office 365 (计划 2 ](https://admin.microsoft.com/AdminPortal/Home#/catalog/offer-details/microsoft-defender-for-office-365-plan-2-/223860DC-15D6-42D9-A861-AE05473069FA)) 。
 
-你将有一个 30 天的窗口，其评估用于监视并报告高级威胁。 如果需要完整的 Defender for Office 365 功能，还可以选择购买付费订阅。
+你将有一个 30 天窗口，其评估用于监视并报告高级威胁。 如果需要完整的 Defender for Office 365 功能，还可以选择购买付费订阅。
 
 ### <a name="roles"></a>角色
 
-需要 Exchange Online 角色才能在评估模式下为 Office 365 设置 Defender。
+在评估模式下设置 Defender for Office 365 需要 Exchange Online 角色。
 
 - [了解 Exchange Online 中的权限](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo)
 - [了解如何分配管理员角色](../../admin/add-users/assign-admin-roles.md)
 
 需要以下角色：
 
-|任务|角色|
+|任务|Role|
 |---|---|
-|获取免费试用版或购买 Microsoft Defender for Office 365 (计划 2) |计费管理员角色或全局管理员角色|
+|获取免费试用版或购买 Microsoft Defender for Office 365 (计划 2) |帐单管理员角色或全局管理员角色|
 |创建评估策略|远程域和接受域角色;安全管理员角色|
 |编辑评估策略|远程域和接受域角色;安全管理员角色|
 |删除评估策略|远程域和接受域角色;安全管理员角色 |
-|查看评估报告|安全管理员角色或安全读者角色|
+|查看评估报告|安全管理员角色或安全读取者角色|
 |
 
 
 ### <a name="enhanced-filtering"></a>增强的筛选
 
-Exchange Online Protection 策略（如批量和垃圾邮件保护）将保持不变。 但是，评估会启用对连接器的增强筛选，除非绕过，否则可能会影响邮件流和 Exchange Online Protection 策略。
+Exchange Online Protection 策略（如批量和垃圾邮件保护）将保持不变。 但是，评估将对连接器启用增强的筛选功能，这可能会影响邮件流和 Exchange Online Protection 策略，除非绕过。
 
-连接器的增强筛选允许租户使用反欺骗保护。 如果使用电子邮件安全网关 (ESG) 未启用连接器的增强筛选，则不支持反欺骗。
+连接器的增强筛选允许租户使用反欺骗保护。 如果在未打开连接器的增强筛选 (ESG) 电子邮件安全网关，则不支持反欺骗。
 
 ### <a name="urls"></a>URL
 
-URL 将在邮件流期间触发。 如果不希望触发特定 URL，请适当地管理允许的 URL 列表。 有关详细信息 [，请参阅"管理租户允许/阻止](tenant-allow-block-list.md) 列表"。
+URL 将在邮件流期间触发。 如果不希望触发特定 URL，请适当地管理允许的 URL 列表。 有关详细信息 [，请参阅管理租户允许/](tenant-allow-block-list.md) 阻止列表。
 
-电子邮件正文中的 URL 链接不会换行，以减少客户的影响。
+电子邮件正文中的 URL 链接不会换行，以减少客户影响。
 
 ### <a name="email-routing"></a>电子邮件路由
 
@@ -115,8 +115,8 @@ URL 将在邮件流期间触发。 如果不希望触发特定 URL，请适当�
 
 支持的电子邮件路由方案包括：
 
-- **第三方合作伙伴和/或** 本地服务提供商：要评估的入站连接器使用第三方提供商和/或正在使用用于本地电子邮件安全的解决方案。
-- **Microsoft Exchange Online保护**：要评估的租户使用 Office 365 进行电子邮件安全保护，邮件 Exchange (MX) 记录指向 Microsoft。
+- **第三方合作伙伴和/** 或本地服务提供商：要评估的入站连接器使用第三方提供商和/或你正在使用用于本地电子邮件安全的解决方案。
+- **Microsoft Exchange Online保护**：要评估的租户使用 Office 365 进行电子邮件安全保护，而邮件 Exchange (MX) 记录指向 Microsoft。
 
 ### <a name="email-security-gateway"></a>电子邮件安全网关
 
@@ -128,45 +128,45 @@ URL 将在邮件流期间触发。 如果不希望触发特定 URL，请适当�
 - IronPort
 - Mimecast
 - Proofpoint
-- 索多斯
+- S一os
 - Symantec
 - Trend Micro
 
 ### <a name="scoping"></a>界定访问权限
 
-您将能够将评估范围缩小到入站连接器。 如果未配置连接器，则评估范围将允许管理员从租户中任何用户收集数据，以评估 Office 365 的 Defender。
+你将能够将评估范围确定为入站连接器。 如果未配置连接器，则评估范围将允许管理员收集租户中任何用户的数据，以评估 Office 365 的 Defender。
 
 ## <a name="get-started-with-the-evaluation"></a>评估入门
 
-从三个访问点在 Office 365 安全与合规中心& Microsoft Defender for Office 365 (https://protection.office.com/homepage) 设置卡：
+在 Office 365 安全与合规中心内从三个访问点& Microsoft Defender for Office 365 (https://protection.office.com/homepage) 设置卡：
 
 - 威胁管理>仪表板
 - 威胁管理>策略
-- 报表>仪表板
+- 仪表板>报表
 
 ## <a name="setting-up-the-evaluation"></a>设置评估
 
-启动评估的设置流后，您将获得两个路由选项。 根据组织的邮件路由设置和评估需求，您可以选择是使用第三方和/或本地服务提供商，还是仅Microsoft Exchange Online。
+启动评估设置流后，您将获得两个路由选项。 根据组织的邮件路由设置和评估需求，您可以选择是使用第三方和/或本地服务提供商，还是仅 Microsoft Exchange Online。
 
-- 如果使用的是第三方合作伙伴和/或本地服务提供商，则需要从下拉菜单中选择供应商的名称。 提供其他与连接器相关的详细信息。
+- 如果你使用的是第三方合作伙伴和/或本地服务提供商，则需要从下拉菜单中选择供应商的名称。 提供其他与连接器相关的详细信息。
 
-- 如果Microsoft Exchange Online MX 记录指向 Microsoft 并且您拥有 Exchange Online 邮箱，请选择"
+- Select Microsoft Exchange Online if the MX record points to Microsoft and you have an Exchange Online mailbox.
 
-查看设置并编辑设置（如有必要）。 然后，选择 **"创建评估"。** 你应该会收到一条确认消息，指示你的设置已完成。
+查看设置并在必要时编辑它们。 然后，选择创建 **评估**。 应该会收到一条确认消息，指示设置已完成。
 
-Microsoft Defender for Office 365 评估报告每天生成一次。 可能需要 24 小时才能填充数据。
+你的 Microsoft Defender for Office 365 评估报告每天生成一次。 可能需要 24 小时才能填充数据。
 
 ### <a name="exchange-rules-optional"></a>Exchange 规则 (可选) 
 
-如果你有现有网关，启用评估模式将激活连接器的增强筛选。 这将通过更改传入发件人 IP 地址提高筛选准确度。 这可能会更改筛选器裁定，如果不绕过 Exchange Online Protection，可能会更改某些邮件的可传递性。 在这种情况下，您可能需要暂时绕过筛选来分析影响。 若要绕过，请导航到 Exchange 管理中心，并创建 SCL -1 策略 (如果还没有 SCL -1) 。 有关规则组件及其工作方式的详细信息，请参阅 Exchange Online 中 (传输) 规则。
+如果您已有网关，启用评估模式将激活连接器的增强筛选。 这将通过更改传入发件人 IP 地址提高筛选准确度。 这可能会更改筛选裁定，如果不绕过 Exchange Online Protection，这可能会改变某些邮件的可传递性。 在这种情况下，您可能需要暂时绕过筛选来分析影响。 若要绕过，请导航到 Exchange 管理中心，并创建 SCL -1 策略 (如果还没有 SCL -1) 。 有关规则组件及其工作方式的详细信息，请参阅 Mail flow rules (transport rules) in Exchange Online。
 
 ## <a name="evaluate-capabilities"></a>评估功能
 
 生成评估报告后，查看组织中电子邮件和协作工作区中标识了多少高级威胁链接、高级威胁附件和潜在模拟。
 
-试用版过期后，可以继续访问报告 90 天。 但是，它不会收集更多信息。 如果你希望在你的试用版过期后继续使用适用于 Office 365 的 Microsoft Defender，请确保购买 [适用于 Office 365 ](https://admin.microsoft.com/AdminPortal/Home#/catalog/offer-details/microsoft-defender-for-office-365-plan-2-/223860DC-15D6-42D9-A861-AE05473069FA)的 Microsoft Defender (计划 2) 。
+试用版过期后，可以在 90 天内继续访问报告。 但是，它不会收集更多信息。 如果你希望在你的试用版过期后继续使用 Microsoft Defender for Office 365，请确保你购买了 [Microsoft Defender for Office 365 ](https://admin.microsoft.com/AdminPortal/Home#/catalog/offer-details/microsoft-defender-for-office-365-plan-2-/223860DC-15D6-42D9-A861-AE05473069FA) (计划 2) 。
 
-你可以转到" **设置** "以随时更新路由或关闭评估。 但是，如果你决定在关闭后继续评估，则需要再次完成相同的设置过程。
+你随时都可以转到 **设置** 以更新路由或关闭评估。 但是，如果你决定在关闭评估后继续评估，则需要再次完成相同的设置过程。
 
 ## <a name="provide-feedback"></a>提供反馈
 

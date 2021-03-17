@@ -15,12 +15,12 @@ ms.collection:
 - m365solution-mip
 - m365initiative-compliance
 description: 了解如何为 Microsoft 365 租户内的所有数据设置客户密钥。
-ms.openlocfilehash: 7ffa9a8148a8ae699711b62da48cd2c856d48cac
-ms.sourcegitcommit: 3d48e198e706f22ac903b346cadda06b2368dd1e
+ms.openlocfilehash: 2fed4730e79f6e2ace827eab338bf9da8fe55260
+ms.sourcegitcommit: 8f1721de52dbe3a12c11a0fa5ed0ef5972ca8196
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50727475"
+ms.lasthandoff: 03/17/2021
+ms.locfileid: "50838237"
 ---
 # <a name="overview-of-customer-key-for-microsoft-365-at-the-tenant-level-public-preview"></a>租户级别的 Microsoft 365 客户密钥概述 (公共预览版) 
 
@@ -49,7 +49,7 @@ ms.locfileid: "50727475"
 
 ## <a name="set-up-customer-key-at-the-tenant-level-public-preview"></a>在租户级别设置客户密钥 (公共预览版) 
 
-这些步骤与在应用程序级别设置客户密钥的步骤类似，但不完全相同。 应仅将此公共预览版与测试租户中的测试数据一同使用。 不要将此版本与生产数据或生产环境一同使用。 如果你已经拥有客户密钥的生产部署，请使用以下步骤在测试环境中在租户级别设置客户密钥。
+这些步骤与在应用程序级别设置客户密钥的步骤类似，但不完全相同。 应仅将此公共预览版与测试租户中的测试数据一同使用。 不要将此版本与生产数据或生产环境一同使用。 如果你已经拥有客户密钥的生产部署，请使用以下步骤在测试环境中在租户级别设置客户密钥。 向租户分配租户级别 DEP 后，你可以启动验证过程，并联系你 m365ck@microsoft.com 任何问题或问题。 还可以在 [Microsoft 365](https://aka.ms/CustomerKey/PublicPreviewValidation)静态加密的验证说明的公共预览中查找记录验证步骤。
 
 你通过远程连接到 Azure PowerShell 完成大部分任务。 为了获得最佳结果，请使用版本 4.4.0 或更高版本的 Azure PowerShell。
 
@@ -313,12 +313,12 @@ New-M365DataAtRestEncryptionPolicy -Name "Default_Policy" -AzureKeyIDs "https://
 |----------|----------|---------|
 |名称|数据加密策略的友好名称|网络|
 |AzureKeyIDs|指定 Azure 密钥保管库密钥的两个 URI 值（用逗号分隔）以与数据加密策略关联|网络|
-|说明|数据加密策略的说明|网络|
+|描述|数据加密策略的说明|网络|
 
 ### <a name="assign-policy"></a>分配策略
 
 ```powershell
-Set-M365DataAtRestEncryptionPolicyAssignment -DataEncryptionPolicy “<Default_PolicyName or Default_PolicyID>”
+Set-M365DataAtRestEncryptionPolicyAssignment -DataEncryptionPolicy "<Default_PolicyName or Default_PolicyID>"
 ```
 
 说明：此 cmdlet 用于配置默认数据加密策略。 然后，此策略将用于加密所有支持工作负载的数据。 
@@ -326,7 +326,7 @@ Set-M365DataAtRestEncryptionPolicyAssignment -DataEncryptionPolicy “<Default_P
 示例：
 
 ```powershell
-Set-M365DataAtRestEncryptionPolicyAssignment -DataEncryptionPolicy “Default_PolicyName”
+Set-M365DataAtRestEncryptionPolicyAssignment -DataEncryptionPolicy "Default_PolicyName"
 ```
 
 参数：
@@ -354,7 +354,7 @@ Set-M365DataAtRestEncryptionPolicy -Identity "NAM Policy" -Enabled $false
 刷新数据加密策略。
 
 ```powershell
-Set-M365DataAtRestEncryptionPolicy -Identity “EUR Policy” -Refresh
+Set-M365DataAtRestEncryptionPolicy -Identity "EUR Policy" -Refresh
 ```
 
 参数：
