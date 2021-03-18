@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 准备及部署 Microsoft 合规性扩展。
-ms.openlocfilehash: d71c04433ec369856a510e9fb6382709ecb092f9
-ms.sourcegitcommit: 450661071e44854f0a0a92af648f76d907767b71
+ms.openlocfilehash: c6f56c65de6428374d912545db38337d34720c94
+ms.sourcegitcommit: 8f1721de52dbe3a12c11a0fa5ed0ef5972ca8196
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "50826226"
+ms.lasthandoff: 03/17/2021
+ms.locfileid: "50838345"
 ---
 # <a name="get-started-with-microsoft-compliance-extension-preview"></a>Microsoft 合规性扩展（预览版）入门
 
@@ -74,10 +74,6 @@ ms.locfileid: "50826226"
 - 安全读者
 - 报表阅读人员
 
-### <a name="chrome-dependency"></a>Chrome 相关性
-
-当前版本 Chrome 和之前的三个版本支持 Microsoft 合规性扩展。
-
 ### <a name="overall-installation-workflow"></a>整体安装工作流
 
 部署 Microsoft 合规性扩展是一个多阶段过程。 可选择一次在一台计算机上安装，或将 Microsoft Endpoint Manager 或组策略用于组织范围的部署。
@@ -107,30 +103,38 @@ ms.locfileid: "50826226"
 
 1. 登录到要安装 Microsoft 合规性扩展的 Windows 10 计算机，并以管理员身份运行此 PowerShell 脚本。 
 
-```powershell
-Get-Item -path "HKLM:\SOFTWARE\Microsoft\Windows Defender\Miscellaneous Configuration" | New-ItemProperty -Name DlpDisableBrowserCache -Value 0 -Force
-``` 
+   ```powershell
+   Get-Item -path "HKLM:\SOFTWARE\Microsoft\Windows Defender\Miscellaneous Configuration" | New-ItemProperty -Name DlpDisableBrowserCache -Value 0 -Force
+   ``` 
 
 2.  导航到“[Microsoft 合规性扩展 - Chrome Web Store (google.com)](https://chrome.google.com/webstore/detail/microsoft-compliance-exte/echcggldkblhodogklpincgchnpgcdco)。
+
 3.  按照 Chrome Web Store 页面上的说明安装扩展。
 
 ### <a name="deploy-using-microsoft-endpoint-manager"></a>使用 Microsoft Endpoint Manager 进行部署
 
-使用此设置方法进行组织范围的部署 
+使用此设置方法进行组织范围的部署
+
 
 ##### <a name="enabling-required-registry-key-via-microsoft-endpoint-manager"></a>通过 Microsoft Endpoint Manager 启用所需的注册表项
 
 1.  创建具有以下内容的 PowerShell 脚本：
-```powershell
-Get-Item -path "HKLM:\SOFTWARE\Microsoft\Windows Defender\Miscellaneous Configuration" | New-ItemProperty -Name DlpDisableBrowserCache -Value 0 -Force
-```
+
+    ```powershell
+    Get-Item -path "HKLM:\SOFTWARE\Microsoft\Windows Defender\Miscellaneous Configuration" | New-ItemProperty -Name DlpDisableBrowserCache -Value 0 -Force
+    ```
+
 2.  登录 [Microsoft Endpoint Manager 管理中心](https://endpoint.microsoft.com)。
+
 3.  导航到“**设备**” > “**脚本**”，并选择“**添加**”。
+
 4.  浏览到系统提示时创建的脚本位置。
+
 5.  使用以下设置：
     1. 使用登录凭据运行此脚本：是
     1. 执行脚本签名检查：否
     1. 在 64 位 PowerShell 主机中运行脚本：是
+
 6.  选择适当的设备组并应用该策略。
 
 #### <a name="microsoft-endpoint-manager-force-install-steps"></a>Microsoft Endpoint Manager 强制安装步骤
@@ -140,14 +144,24 @@ Get-Item -path "HKLM:\SOFTWARE\Microsoft\Windows Defender\Miscellaneous Configur
  引入 ADMX 后，可按照以下步骤为此扩展创建配置文件。
 
 1.  登录 Microsoft Endpoint Manager 管理中心 (https://endpoint.microsoft.com)。
+
 2.  导航到配置文件。
+
 3.  选择“**创建配置文件**”。
+
 4.  选择“**Windows 10**”平台。
+
 5.  选择“**自定义**”配置文件类型。
+
 6.  选择“**设置**”选项卡。
+
 7.  选择“**添加**”。
+
 8.  输入以下策略信息。
-OMA-URI: ./Device/Vendor/MSFT/Policy/Config/Chrome~Policy~googlechrome~Extensions/ExtensionInstallForcelist Data type: String Value: <enabled/><data id=”ExtensionInstallForcelistDesc” value=”1&#xF000; echcggldkblhodogklpincgchnpgcdco;https://clients2.google.com/service/update2/crx″/>
+    
+    OMA-URI： `./Device/Vendor/MSFT/Policy/Config/Chrome~Policy~googlechrome~Extensions/ExtensionInstallForcelist`<br/>
+    数据类型`String`<br/>
+    值：`<enabled/><data id="ExtensionInstallForcelistDesc" value="1&#xF000; echcggldkblhodogklpincgchnpgcdco;https://clients2.google.com/service/update2/crx"/>`
 
 9.  单击“创建”。
 
@@ -156,34 +170,53 @@ OMA-URI: ./Device/Vendor/MSFT/Policy/Config/Chrome~Policy~googlechrome~Extension
 如果不想使用 Microsoft Endpoint Manager，可使用组策略在组织中部署 Microsoft 合规性扩展
 
 1. 设备必须可通过组策略进行管理，并且需要将所有 Chrome ADMX 导入组策略中央存储。 有关详细信息，请参阅 [如何在 Windows 中创建和管理组策略管理模板的中央存储](https://docs.microsoft.com/troubleshoot/windows-client/group-policy/create-and-manage-central-store)。
+
 2.  使用下面的方法创建 PowerShell 脚本：
 
-```powershell
-et-Item -path "HKLM:\SOFTWARE\Microsoft\Windows Defender\Miscellaneous Configuration" | New-ItemProperty -Name DlpDisableBrowserCache -Value 0 -Force
-```
+    ```powershell
+    Get-Item -path "HKLM:\SOFTWARE\Microsoft\Windows Defender\Miscellaneous Configuration" | New-ItemProperty -Name DlpDisableBrowserCache -Value 0 -Force
+    ```
 
 3.  打开“**组策略管理控制台**”并导航到组织单位 (OU)。
+
 4.  右键单击并选择“**在此域中创建 GPO，并在此处链接它**”。 系统提示时，为此组策略对象 (GPO) 分配一个描述性名称，然后完成创建。
+
 5.  右键单击“GPO”，然后选择“**编辑**”。
+
 6.  转到“**计算机配置**” > “**首选项**” > **控制面板设置** > “**已计划任务**”。
+
 7.  通过右键单击，然后选择“**新建任务**” > “**立即任务（至少为 Windows 7）**”来创建新的立即任务。
+
 8.  命名任务并提供说明。
+
 9.  选择相应的帐户以运行立即任务，例如 NT Authority
+
 10. 选择“**以最高权限运行**”。
+
 11. 配置 Windows 10 的策略。
+
 12. 在“**操作**”选项卡中，选择“**启动程序**”。
+
 13. 输入步骤 1 中创建的程序/脚本的路径。
+
 14. 选择“**应用**”。
 
 #### <a name="adding-the-chrome-extension-to-the-forceinstall-list"></a>将 Chrome 扩展添加到 ForceInstall 列表
 
 1.  在组策略管理编辑器中，导航到“OU”。
+
 2.  展开以下路径“**计算机/用户配置**” > “**策略**” > “**管理模板**” > “**经典管理模板**” > “**Google**” > “**Google Chrome**” > “**扩展**”。 此路径可能有所不同，具体取决于你的配置。
+
 3.  选择“**配置强制安装的扩展列表**”。
+
 4.  右键单击并选择“**编辑**”。
+
 5.  选择“**已启用**”。
+
 6.  选择“**显示**”。
+
 7.  在“**值**”下添加以下条目：`echcggldkblhodogklpincgchnpgcdco;https://clients2.google.com/service/update2/crx`
+
 8.  依次选择“**确定**”和“**应用**”。
 
 ### <a name="test-the-extension"></a>测试扩展
@@ -225,6 +258,12 @@ et-Item -path "HKLM:\SOFTWARE\Microsoft\Windows Defender\Miscellaneous Configura
 
    > [!div class="mx-imgBorder"]
    > ![终结点设备的活动资源管理器筛选器](../media/endpoint-dlp-4-getting-started-activity-explorer.png)
+
+### <a name="known-issues-and-limitations"></a>已知问题和限制
+
+1. 不支持对文件夹上传执行拖放操作。
+2. 不支持对云出口执行阻止替代。
+3. 不支持并必须禁用 Incognito 模式。
 
 ## <a name="next-steps"></a>后续步骤
 现在，你已载入设备，并且可以在“活动资源管理器”中查看活动数据，那么就可以继续下一步，在其中创建保护敏感项目的 DLP 策略。

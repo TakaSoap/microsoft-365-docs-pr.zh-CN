@@ -22,12 +22,12 @@ description: 使用 Microsoft 信息保护 (MIP) 中的敏感度标签对敏感�
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: f5c5901da44424d949062c6a2e9eecf69c48be3f
-ms.sourcegitcommit: 8950d3cb0f3087be7105e370ed02c7a575d00ec2
+ms.openlocfilehash: 6cdf7a6b9e75b575abda2c93f7531c45d93a9a51
+ms.sourcegitcommit: 8f1721de52dbe3a12c11a0fa5ed0ef5972ca8196
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "50597182"
+ms.lasthandoff: 03/17/2021
+ms.locfileid: "50838625"
 ---
 # <a name="learn-about-sensitivity-labels"></a>了解敏感度标签
 
@@ -180,7 +180,7 @@ ms.locfileid: "50597182"
 
 - **选择可查看标签的用户和组。** 可以将标签发布到任何特定用户或启用电子邮件的安全组、通讯组或 Microsoft 365 组（它们可以在 Azure AD 中具有[动态成员身份](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-create-rule)）。
 
-- **将默认标签** 应用于标签策略中包含的用户和组创建的所有新文档和电子邮件，以及对于容器应用相同或不同的默认标签（如果您已经 [为Microsoft Teams，Microsoft 365组和SharePoint网站启用了敏感性标签](sensitivity-labels-teams-groups-sites.md)）。 如果默认标签不是用户文档或电子邮件的正确标签，则用户始终可以进行更改。 
+- **将默认标签** 应用于标签策略中包含的用户和组创建的所有新文档和电子邮件，以及对于容器应用相同或不同的默认标签（如果您已经 [为Microsoft Teams，Microsoft 365组和SharePoint网站启用了敏感性标签](sensitivity-labels-teams-groups-sites.md)）。 使用此设置，Azure 信息保护统一标签客户端也将默认标签应用于未标记的现有文档。 如果默认标签不是用户文档或电子邮件的正确标签，则用户始终可以进行更改。
     
     考虑使用默认标签来设置你想要应用于所有内容的基本级别的保护设置。 但是，如果没有用户培训和其他控件，此设置也会导致标签不准确。 最好不要选择应用加密的标签作为文档的默认标签。 例如，许多组织需要向外部用户发送并与其共享文档，这些用户可能不具有支持加密的应用，或者他们可能未使用可以获得授权的帐户。 有关此方案的详细信息，请参阅[与外部用户共享加密的文档](sensitivity-labels-office-apps.md#sharing-encrypted-documents-with-external-users)。
 

@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解适用于 Microsoft Teams 的保留策略。
-ms.openlocfilehash: 4296924684e13e163f28e0f952b2cd380cdcc047
-ms.sourcegitcommit: 88ab08c0fa1acbc9e066009e131b9f2b0d506c64
+ms.openlocfilehash: ec4ca9a79ee3b5674e1837d14cea4ee504cb57d5
+ms.sourcegitcommit: 8f1721de52dbe3a12c11a0fa5ed0ef5972ca8196
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "50712008"
+ms.lasthandoff: 03/17/2021
+ms.locfileid: "50838207"
 ---
 # <a name="learn-about-retention-for-microsoft-teams"></a>了解用于 Microsoft Teams 的保留
 
@@ -46,7 +46,7 @@ ms.locfileid: "50712008"
 可使用 Teams 的保留策略来保留和删除以下 Teams 项目：聊天和频道消息，包括嵌入的图像、表格、超文本链接、其它 Teams 消息和文件的链接，以及 [卡片内容](https://docs.microsoft.com/microsoftteams/platform/task-modules-and-cards/what-are-cards)。 聊天消息包括聊天中所有人员的姓名；频道消息包含团队名称和消息标题（如有提供）。 
 
 > [!NOTE]
-> 包括卡片内容是最近增加的功能，目前正在向租户推出。 有关详细信息，请参阅 [通过 Teams 中应用 Microsoft 365 用于自适应卡片内容的合规功能现已可用](https://techcommunity.microsoft.com/t5/microsoft-teams-blog/microsoft-365-compliance-capabilities-for-adaptive-card-content/ba-p/2095869)。
+> 包括卡内容是最近添加的一项功能，现在已完全推出给租户。 有关详细信息，请参阅 [通过 Teams 中应用 Microsoft 365 用于自适应卡片内容的合规功能现已可用](https://techcommunity.microsoft.com/t5/microsoft-teams-blog/microsoft-365-compliance-capabilities-for-adaptive-card-content/ba-p/2095869)。
 
 专用频道中的 Teams 消息目前不支持保留策略。 当你对 Teams 使用保留策略时，代码片段、来自 Teams 移动客户端的语音备忘录、缩略图、公告图像和来自其他人的图释的反应不包含在内。
 
