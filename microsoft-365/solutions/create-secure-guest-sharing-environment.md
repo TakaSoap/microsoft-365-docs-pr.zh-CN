@@ -17,12 +17,12 @@ ms.custom:
 localization_priority: Priority
 f1.keywords: NOCSH
 description: 了解可用于在 Microsoft 365 中创建安全来宾共享环境的选项，提供来宾访问以改进协作。
-ms.openlocfilehash: c52feeb8e5c85d38dfa1623ecdd7c2ee2a381fbd
-ms.sourcegitcommit: 1a9f0f878c045e1ddd59088ca2a94397605a242a
+ms.openlocfilehash: 28b2efba9f0c4ba17811a9871b05ab9f5a7a4839
+ms.sourcegitcommit: 8f1721de52dbe3a12c11a0fa5ed0ef5972ca8196
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "49667701"
+ms.lasthandoff: 03/17/2021
+ms.locfileid: "50838662"
 ---
 # <a name="create-a-secure-guest-sharing-environment"></a>创建安全的来宾共享环境
 
@@ -45,7 +45,7 @@ ms.locfileid: "49667701"
 
 ## <a name="set-up-multi-factor-authentication-for-guests"></a>为来宾设置多重身份验证
 
-多重身份验证可显著降低帐户被盗的机率。 由于来宾用户对个人电子邮件帐户的使用可能不符合任何管理策略或最佳做法，因此要求对来宾进行多重身份验证尤为重要。 如果来宾用户的用户名和密码被盗，则要求进行双重身份验证可显著降低未知方获得对网站和文件的访问权限的机率。
+多重身份验证可显著降低帐户被盗的机率。 由于来宾对个人电子邮件帐户的使用可能不符合任何管理策略或最佳做法，因此要求对来宾进行多重身份验证尤为重要。 如果来宾的用户名和密码被盗，则要求进行双重身份验证可大大降低未知方获得对网站和文件的访问权限的机率。
 
 在此示例中，我们将使用 Azure Active Directory 中的条件访问策略为来宾设置多重身份验证。
 
@@ -70,7 +70,7 @@ ms.locfileid: "49667701"
 
 ## <a name="set-up-a-terms-of-use-for-guests"></a>设置来宾的使用条款
 
-在某些情况中，来宾用户可能未与贵组织签署保密协议或其他法律协议。 你可以要求来宾在访问与之共享的文件之前同意使用条款。 可在他们首次尝试访问共享文件或网站时显示使用条款。
+在某些情况中，来宾可能未与贵组织签署保密协议或其他法律协议。 你可以要求来宾在访问与之共享的文件之前同意使用条款。 可在他们首次尝试访问共享文件或网站时显示使用条款。
 
 若要创建使用条款，首先需要在 Word 或其他创作程序中创建文档，然后将其另存为 pdf 文件。 然后，可将该文件上传到 Azure AD。
 
@@ -89,7 +89,7 @@ ms.locfileid: "49667701"
 9. 在“**条件访问**”下的“**强制实施条件访问策略模板**”列表中，选择“**稍后创建条件访问策略**”。
 10. 单击“**创建**”。
 
-创建使用条款后，下一步是创建用于显示来宾用户的使用条款的条件访问策略。
+创建使用条款后，下一步是创建对来宾显示使用条款的条件访问策略。
 
 创建条件访问策略
 
@@ -105,7 +105,7 @@ ms.locfileid: "49667701"
 10. 在“**授予**”边栏选项卡上，选择“**来宾使用条款**”，然后单击“**选择**”。
 11. 在“**新建**”边栏选项卡中的“**启用策略**”下面，单击“**打开**”，然后单击“**创建**”。
 
-现在，当来宾用户首次尝试访问组织中的内容、团队或网站时，必须接受使用条款。
+现在，当来宾首次尝试访问组织中的内容、团队或网站时，必须接受使用条款。
 
 > [!NOTE]
 > 使用条件访问需要 Azure AD Premium P1 许可证。 有关详细信息，请参阅[什么是条件访问](https://docs.microsoft.com/azure/active-directory/conditional-access/overview)。
@@ -116,39 +116,32 @@ ms.locfileid: "49667701"
 
 ## <a name="set-up-guest-access-reviews"></a>设置来宾访问评审
 
-借助 Azure AD 中的访问评审功能，可以自动定期评审用户对各个团队和组的访问权限。 通过特别要求对来宾进行访问评审，可帮助确保来宾用户在规定时间内拥有对组织敏感信息的访问权限。
+借助 Azure AD 中的访问评审功能，可以自动定期评审用户对各个团队和组的访问权限。 通过特别要求对来宾进行访问评审，可帮助确保来宾只在规定时间内拥有对组织敏感信息的访问权限。
 
-访问评审可以组织成计划。 计划是一组类似的访问评审，可用于组织访问评审以进行报告和审核。
-
-创建计划
-
-1. 登录到 Azure 门户并打开 [Identity Governance](https://portal.azure.com/#blade/Microsoft_AAD_ERM/DashboardBlade) 页面。
-2. 在左侧菜单中，单击“**计划**”
-3. 单击“**新建计划**”。
-4. 键入“**名称**”和“**描述**”。
-5. 单击“**创建**”。
-
-创建计划后，即可创建来宾访问评审并将其与计划关联。
-
-设置来宾用户访问评审
+设置来宾访问评审
 
 1. 在 [Identity Governance](https://portal.azure.com/#blade/Microsoft_AAD_ERM/DashboardBlade) 页面上的左侧菜单中，单击“**访问评审**”。
 2. 单击“**新建访问评审**”。
+3. 选择 “**Microsoft Teams + Microsoft 365 组**” 选项。
+4. 选择“**所有含来宾用户的Microsoft 365 组**”选项。 如果需要排除任何组，单击“**选择要排除的组**”。
+5. 选择“**仅来宾用户**”选项，然后单击“**下一步：审阅**”。
+6. 在“**选择评审员**”下，选择“**组所有者**”。
+7. 单击“**选择回退评审员**”，选择回退评审员，然后单击“**选择**”。
+8. 在“**指定定期评审**”，选择“**每季**”。
+9. 选择开始日期与持续时间。
+10. 在“**结束**”处，选择“**从不**”，然后单击“**下一步：设置**”。
 
-   ![Azure AD 访问评审设置的屏幕截图](../media/azure-ad-create-access-review.png)
+    ![Azure AD 访问评审选项卡的屏幕截图](../media/azure-ad-create-access-review.png)
 
-3. 在“**名称**”框中，键入名称。
-4. 对于“**频率**”，选择“**每季度**”。
-5. 对于“**结束**”，选择“**从不**”。
-6. 对于“**范围**”，选择“**仅限来宾用户**”。
-7. 单击“**组**”，选择要包括在访问评审中的组，然后单击“**选择**”。
-8. 在“**计划**”下，单击“**链接到计划**”。
-9. 在“**选择计划**”边栏选项卡上，选择“**来宾访问评审计划**”
-10. 单击“**开始**”。
+11. 在“**设置**”选项卡中，查看设置是否符合你的商业规则。
 
-将为你指定的每个组创建一个单独的访问评审。 每个组的组所有者将在每季度收到一封电子邮件，用于批准或拒绝来宾访问其组。
+    ![Azure AD 访问评审设置选项卡截图](../media/azure-ad-create-access-review-settings.png)
 
-请务必注意，可以向来宾授予对团队或组的访问权限，也可以授予对各个文件和文件夹的访问权限。 授予对文件和文件夹的访问权限时，可能不会将来宾添加到任何特定组。 如果想要对不属于团队或组的来宾用户执行访问评审，可在 Azure AD 中创建一个动态组，以包含所有来宾并为该组创建访问评审。 网站所有者还可以管理[网站来宾的到期时间](https://support.microsoft.com/office/25bee24f-42ad-4ee8-8402-4186eed74dea)
+12. 单击“**下一步: 评审+创建**”。
+13. 键入“**评审姓名**”然后查看设置。
+14. 单击“**创建**”。
+
+请务必注意，可以向来宾授予对团队或组的访问权限，也可以授予对各个文件和文件夹的访问权限。 授予对文件和文件夹的访问权限时，可能不会将来宾添加到任何特定组。 如果想要对不属于团队或组的来宾执行访问评审，可在 Azure AD 中创建一个动态组，以包含所有来宾并为该组创建访问评审。 网站所有者还可以管理[网站来宾的到期时间](https://support.microsoft.com/office/25bee24f-42ad-4ee8-8402-4186eed74dea)
 
 ### <a name="more-information"></a>更多信息
 
@@ -156,9 +149,9 @@ ms.locfileid: "49667701"
 
 [在 Azure AD 访问评审中针对组或应用程序创建访问评审](https://docs.microsoft.com/azure/active-directory/governance/create-access-review)
 
-## <a name="set-up-web-only-access-for-guest-users"></a>为来宾用户设置仅 Web 访问权限
+## <a name="set-up-web-only-access-for-guests"></a>为来宾用户设置仅 Web 访问权限
 
-通过要求来宾用户仅使用 Web 浏览器来访问团队、网站和文件，可以减少攻击面并简化管理。
+通过要求来宾仅使用 Web 浏览器来访问团队、网站和文件，可以减少攻击面并简化管理。
 
 对于 Microsoft 365 组和团队，这是通过 Azure AD 条件访问策略完成的。 对于 SharePoint，这是在 SharePoint 管理中心中进行配置的。 （还可[使用敏感度标签限制来宾进行仅限于 Web 的访问](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites)。）
 
@@ -192,9 +185,9 @@ ms.locfileid: "49667701"
 
 注意，SharePoint 管理中心中的此设置在 Azure AD 中创建了支持条件访问策略。
 
-## <a name="configure-a-session-timeout-for-guest-users"></a>为来宾用户配置会话超时
+## <a name="configure-a-session-timeout-for-guests"></a>为来宾配置会话超时策略
 
-如果来宾用户的设备不安全，则定期要求来宾进行身份验证可以降低未知用户访问组织内容的可能性。 可以在 Azure AD 中为来宾用户配置会话超时条件访问策略。
+如果来宾用户的设备不安全，则定期要求来宾进行身份验证可以降低未知用户访问组织内容的可能性。 可以在 Azure AD 中为来宾配置会话超时条件访问策略。
 
 配置来宾会话超时策略
 

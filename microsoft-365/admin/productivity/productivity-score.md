@@ -2,8 +2,8 @@
 title: Microsoft 生产力分数
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: pebaum
+author: pebaum
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft 生产力分数概述。
-ms.openlocfilehash: 0ce25175b3307e986c079c1614e38e8d87828e04
-ms.sourcegitcommit: a6b998fef5bdb35ec6726c743a24fea721535fcd
+ms.openlocfilehash: 72f9bcfb273912629744ec25ad9c0be720e76081
+ms.sourcegitcommit: 8f1721de52dbe3a12c11a0fa5ed0ef5972ca8196
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50509082"
+ms.lasthandoff: 03/17/2021
+ms.locfileid: "50838421"
 ---
 # <a name="microsoft-productivity-score"></a>Microsoft 生产力分数 
 
@@ -40,7 +40,7 @@ ms.locfileid: "50509082"
 
 - **人员的经验：** 量化组织如何使用如内容协作、移动性、通信、会议和团队合作等 Microsoft 365 类别进行工作。  
 
-    对于上述每一个类别，我们都要看一下公开的研究，以确定一些最佳做法和对相关的组织效率的好处。 例如，[Forrester](https://vc2prod.blob.core.windows.net/vc-resources/TEIStudies/TEI%20of%20Microsoft%20365%20E5%20-%20Oct%202018.pdf) 研究显示，当人们互相合作并在云端（而不是电子邮件附件）共享内容时，他们每周能省下100分钟。 此外，我们会量化这些最佳实践在你的组织中的使用情况，以帮助你了解在数字化转型历程中的位置。 
+    对于上述每一个类别，我们都要看一下公开的研究，以确定一些最佳做法和对组织效率的关联益处。 例如，[Forrester](https://vc2prod.blob.core.windows.net/vc-resources/TEIStudies/TEI%20of%20Microsoft%20365%20E5%20-%20Oct%202018.pdf) 研究显示，当人们互相合作并在云端（而不是电子邮件附件）共享内容时，他们每周能省下100分钟。 此外，我们会量化这些最佳实践在你的组织中的使用情况，以帮助你了解在数字化转型历程中的位置。 
 
 - **技术体验：** 你组织的工作效率取决于可靠、性能良好的技术以及对 Microsoft 365 的高效使用。 [终结点分析](https://aka.ms/endpointanalytics) 可帮助你了解硬件和软件的性能和运行状况问题如何影响你的组织。 Microsoft 365 应用程序健康状况可帮助你了解组织中的设备是否在推荐渠道上运行 Microsoft 365 应用程序。
 
@@ -72,9 +72,9 @@ ms.locfileid: "50509082"
 你的组织的分数会每天更新，反映最近 28 天（包括当天）完成的用户操作。
 
 
-## <a name="pre-requisites"></a>先决条件 
+## <a name="prerequisites"></a>先决条件 
 
-要获取人员体验数据，需要 Microsoft 365 商业版或 Office 365 企业版订阅。 要获取租户的终结点分析数据，需要将 Microsoft Intune 添加到你的订阅中。 Intune 通过管理设备和应用来帮助保护你的组织的数据。 拥有 Intune 后，可在 Intune 体验内启用终结点分析。 了解有关 [Microsoft Intune](https://docs.microsoft.com/mem/intune/)的详细信息。 
+要获取人员体验数据，需要 Microsoft 365 商业版或 Office 365 企业版订阅。 要获取租户的终结点分析数据，需要将 Microsoft Intune 添加到你的订阅中。 Intune 通过管理设备和应用来帮助保护你组织的数据。 拥有 Intune 后，可在 Intune 体验内启用终结点分析。 了解有关 [Microsoft Intune](https://docs.microsoft.com/mem/intune/)的详细信息。 
 > [!NOTE]
 > 获取生产力分数功能无需工作区分析许可证。
 
@@ -92,9 +92,9 @@ Productivity Score 仅在 Microsoft 365 管理中心中提供，并且只能由�
 > [!NOTE]
 > 只有具有全局管理员角色的 IT 专业人员才能注册或选择加入 Productivity Score 租户。
 
-请注意，该信息仅用于使用 Microsoft 365 进一步推进数字化转型，因此请谨慎分享。 
+Microsoft 生产力分数基于角色的访问控制能够帮助组织使用 Microsoft 365 推进数字转型，它提供了为组织中的 IT 专家分配角色的灵活功能。
 
-微软致力于保护个人隐私。 此[隐私文件](privacy.md)解释了我们为你，作为组织的IT管理员，提供的控制措施，以确保信息是可操作的，同时不损害你对微软的信任。
+微软致力于保护个人隐私。 此[隐私文件](privacy.md)解释了我们作为组织的IT管理员为你提供的控制措施，以确保信息是可操作的，同时不减少你对微软的信任。
 
 可在 Microsoft 365 管理员主页的“**报告** > **生产力分数**”下访问该体验。
 

@@ -1,5 +1,5 @@
 ---
-title: Microsoft Viva 主题概述
+title: Microsoft Viva Topics 概述
 ms.author: efrene
 author: efrene
 manager: pamgreen
@@ -13,7 +13,7 @@ ms.collection:
 - enabler-strategic
 - m365initiative-viva-topics
 localization_priority: None
-description: Viva 主题概述。
+description: Viva Topics 概述。
 ms.openlocfilehash: 91442ba12b3d5df1d9934022751f4bc381cd40e8
 ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
 ms.translationtype: HT
@@ -21,9 +21,9 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 03/04/2021
 ms.locfileid: "50453965"
 ---
-# <a name="microsoft-viva-topics-overview"></a>Microsoft Viva 主题概述 
+# <a name="microsoft-viva-topics-overview"></a>Microsoft Viva Topics 概述 
 
-Viva 主题使用 Microsoft AI 技术、Microsoft 365、Microsoft Graph、搜索和其他组件和服务，通过用户日常使用的 Microsoft 365 应用，从 SharePoint 新式页面和 Microsoft 搜索开始，为用户提供知识。
+Viva Topics 使用 Microsoft AI 技术、Microsoft 365、Microsoft Graph、搜索和其他组件和服务，通过用户日常使用的 Microsoft 365 应用，从 SharePoint 新式页面和 Microsoft 搜索开始，为用户提供知识。
 
 </br>
 
@@ -31,9 +31,9 @@ Viva 主题使用 Microsoft AI 技术、Microsoft 365、Microsoft Graph、搜索
 
 </br>
 
-Viva 主题可帮助解决许多公司的关键业务问题 - 需要时为用户提供信息。 例如，新员工需要快速了解许多新信息，在浏览公司信息时遇到他们不知道的术语。 要了解更多信息，用户可能需要放下手头的工作并花费宝贵时间搜索详细信息，例如，有关术语含义的信息、组织中谁是某个主题方面的专家，以及可能与术语相关的网站和文档。
+Viva Topics 可帮助解决许多公司的关键业务问题 - 需要时为用户提供信息。 例如，新员工需要快速了解许多新信息，在浏览公司信息时遇到他们不知道的术语。 要了解更多信息，用户可能需要放下手头的工作并花费宝贵时间搜索详细信息，例如，有关术语含义的信息、组织中谁是某个主题方面的专家，以及可能与术语相关的网站和文档。
 
-Viva 主题使用 AI 自动搜索和识别组织中的 **主题**。 它会编译有关它们的信息，例如简短说明、处理主题的人员，以及与此相关的网站、文件和页面。 知识经理或撰稿人可以选择根据需要更新主题信息。 用户可以访问这些主题，这意味着，在新闻和页面中的新式 SharePoint 网站上将显示该主题的所有实例。 用户可以选择主题，以便通过主题详细信息深入了解该主题。 也可在 SharePoint 搜索中查找主题。
+Viva Topics 使用 AI 自动搜索和识别组织中的 **主题**。 它会编译有关它们的信息，例如简短说明、处理主题的人员，以及与此相关的网站、文件和页面。 知识经理或撰稿人可以选择根据需要更新主题信息。 用户可以访问这些主题，这意味着，在新闻和页面中的新式 SharePoint 网站上将显示该主题的所有实例。 用户可以选择主题，以便通过主题详细信息深入了解该主题。 也可在 SharePoint 搜索中查找主题。
 
 
 ## <a name="how-topics-are-displayed-to-users"></a>如何向用户显示主题
@@ -45,7 +45,7 @@ Viva 主题使用 AI 自动搜索和识别组织中的 **主题**。 它会编�
 
 ## <a name="knowledge-indexing"></a>知识索引
 
-Viva 主题使用 Microsoft AI 技术以识别 Microsoft 365 环境中的 **主题**。
+Viva Topics 使用 Microsoft AI 技术以识别 Microsoft 365 环境中的 **主题**。
 
 主题是一个在组织方面具有重要意义的短语或术语。 它对于组织具有特定含义，而且具有相关资源，可帮助人们了解组织的含义并查找相关详细信息。 对组织来说，许多不同类型的主题都具有重要意义。 Microsoft AI 技术最初专注于以下类型：
 - 项目
@@ -70,17 +70,17 @@ Viva 主题使用 Microsoft AI 技术以识别 Microsoft 365 环境中的 **主�
 
 ## <a name="roles"></a>角色
 
-当你在 Microsoft 365 环境中使用 Viva 主题时，你的用户将具有以下角色：
+当你在 Microsoft 365 环境中使用 Viva Topics 时，你的用户将具有以下角色：
 
 - 主题查看者：可以在其至少具有 *阅读* 权限的 SharePoint 新式网站上或 Microsoft 搜索中看到主题要点的用户。 他们可以选择主题要点以查看主题页面中的主题详细信息。 主题查看者可以提供有关主题的有用性的反馈。
 
-- 撰稿人：有权限编辑现有主题或创建新主题的用户。 知识管理员通过 Microsoft 365 管理中心的 Viva 主题设置为用户分配撰稿人权限。 请注意，还可选择授予所有主题查看者编辑和创建主题的权限，以便每个人都可以为他们看到的主题撰稿。
+- 撰稿人：有权限编辑现有主题或创建新主题的用户。 知识管理员通过 Microsoft 365 管理中心的 Viva Topics 设置为用户分配撰稿人权限。 请注意，还可选择授予所有主题查看者编辑和创建主题的权限，以便每个人都可以为他们看到的主题撰稿。
 
-- 知识经理：在主题生命周期中指导主题的用户。 知识经理使用主题中心中的“**管理主题**”页面确认 AI 建议的主题，删除不再相关的主题，编辑现有主题或创建新主题，且是唯一有权访问该主题的用户。 知识管理员通过 Microsoft 365 管理中心的 Viva 主题管理设置为用户分配知识经理权限。 
+- 知识经理：在主题生命周期中指导主题的用户。 知识经理使用主题中心中的“**管理主题**”页面确认 AI 建议的主题，删除不再相关的主题，编辑现有主题或创建新主题，且是唯一有权访问该主题的用户。 知识管理员通过 Microsoft 365 管理中心的 Viva Topics 管理设置为用户分配知识经理权限。 
 
-- 知识管理员：知识管理员设置 Viva 主题，并通过 Microsoft 365 管理中心的管理控件进行管理。 目前，Microsoft 365 全局管理员或 SharePoint 服务管理员可充当知识管理员。
+- 知识管理员：知识管理员设置 Viva Topics，并通过 Microsoft 365 管理中心的管理控件进行管理。 目前，Microsoft 365 全局管理员或 SharePoint 服务管理员可充当知识管理员。
 
-有关详细信息，请参阅 [Viva 主题角色](topic-experiences-roles.md)。
+有关详细信息，请参阅 [Viva Topics 角色](topic-experiences-roles.md)。
 
 ## <a name="topic-management"></a>主题管理
 
