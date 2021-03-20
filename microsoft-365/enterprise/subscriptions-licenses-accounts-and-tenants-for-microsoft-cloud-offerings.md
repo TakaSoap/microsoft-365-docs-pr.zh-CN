@@ -3,7 +3,6 @@ title: 针对 Microsoft 云产品/服务的订阅、许可证、帐户和租户
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 06/25/2020
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
@@ -21,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 - Ent_Architecture
 description: 了解 Microsoft 云服务的组织、订阅、许可证、用户帐户和租户的关系。
-ms.openlocfilehash: c48e2ecc321f4b6e06ced13f029e344faf12650b
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: eaf1c2399b5d44ea8d6000042b3258d0e8b5a7de
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48446027"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50909510"
 ---
 # <a name="subscriptions-licenses-accounts-and-tenants-for-microsofts-cloud-offerings"></a>针对 Microsoft 云产品/服务的订阅、许可证、帐户和租户
 
@@ -66,7 +65,11 @@ ms.locfileid: "48446027"
 **图 2：组织基于 SaaS 的订阅内的许可证**
 
 ![Microsoft 基于 SaaS 的云服务订阅中的多个许可证示例。](../media/Subscriptions/Subscriptions-Fig2.png)
-  
+
+>[!Note]
+>安全最佳做法是使用为管理功能分配了特定角色的单独用户帐户。 无需为这些专用管理员帐户分配其管理的云服务的许可证。 例如，无需为 SharePoint 管理员帐户分配 Microsoft 365 许可证。
+>
+
 对于基于 Azure PaaS 的云服务，软件许可证是服务定价的一部分。
   
 对于基于 Azure IaaS 的虚拟机，使用在虚拟机映像上安装的软件或应用程序可能需要其他许可证。某些虚拟机映像安装了授权版软件，并且成本包括在服务器的每分钟费率中。例如，SQL Server 2014 和 SQL Server 2016 的虚拟机映像。 
@@ -139,9 +142,9 @@ Azure AD 租户是包含帐户和组的 Azure AD 的特定实例。 Microsoft 36
   
 1. 使用全局管理员帐户登录 Microsoft 365 管理中心 ([https://admin.microsoft.com](https://admin.microsoft.com))。
     
-2. 从“管理中心”**** 主页的左侧导航栏，依次单击“帐单”**** 和“购买服务”****。
+2. 从“管理中心”主页的左侧导航栏，依次单击“帐单”和“购买服务”。
     
-3. 在“购买服务”**** 页上，购买你的新订阅。
+3. 在“购买服务”页上，购买你的新订阅。
     
 管理中心将 Microsoft 365 订阅的组织和 Azure AD 租户分配到基于 SaaS 的云产品的新订阅。
   
@@ -149,11 +152,11 @@ Azure AD 租户是包含帐户和组的 Azure AD 的特定实例。 Microsoft 36
   
 1. 使用 Microsoft 365 全局管理员帐户登录到 Azure 门户 ([https://portal.azure.com](https://portal.azure.com))。
     
-2. 在左侧导航栏中，单击“订阅”****，然后单击“添加”****。
+2. 在左侧导航栏中，单击“订阅”，然后单击“添加”。
     
-3. 在“添加订阅”**** 页上，选择一项服务并完成付款信息和协议。
+3. 在“添加订阅”页上，选择一项服务并完成付款信息和协议。
     
-如果分别购买 Azure 和Microsoft 365 订阅并且希望从 Azure 订阅访问 Microsoft 365 Azure AD 租户，请参阅[将现有 Azure 订阅添加到 Azure Active Directory 租户](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-how-subscriptions-associated-directory)中的说明。
+如果分别购买 Azure 和Microsoft 365 订阅并且希望从 Azure 订阅访问 Microsoft 365 Azure AD 租户，请参阅[将现有 Azure 订阅添加到 Azure Active Directory 租户](/azure/active-directory/fundamentals/active-directory-how-subscriptions-associated-directory)中的说明。
  
 ## <a name="see-also"></a>另请参阅
 
@@ -166,4 +169,3 @@ Azure AD 租户是包含帐户和组的 Azure AD 的特定实例。 Microsoft 36
 ## <a name="next-step"></a>后续步骤
 
 [评估 Microsoft 365 网络连接](assessing-network-connectivity.md)
-  

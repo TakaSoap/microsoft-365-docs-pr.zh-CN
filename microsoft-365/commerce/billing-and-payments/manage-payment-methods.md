@@ -22,18 +22,18 @@ search.appverid:
 - MET150
 description: 了解如何在 Microsoft 365 管理中心管理你的付款方式。
 ms.date: ''
-ms.openlocfilehash: a6866a9691e42928a5712c3069704f11fac0546f
-ms.sourcegitcommit: 06d9e056eabfbac8fafe66cc32907b33d4ae8253
+ms.openlocfilehash: 2a53ae0bfb4806a85e03f293f58e1b575e8bcf90
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50741385"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50911838"
 ---
 # <a name="manage-payment-methods"></a>管理支付方式
 
 ::: moniker range="o365-21vianet"
 > [!NOTE]
-> 管理中心正在发生改变。 如果你的体验与此处提供的详细信息不匹配，请参阅[有关新版 Microsoft 365 管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true)。
+> 管理中心正在发生改变。 如果你的体验与此处提供的详细信息不匹配，请参阅[有关新版 Microsoft 365 管理中心](../../admin/microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet)。
 ::: moniker-end
 
 从 Microsoft 购买企业产品或服务时，可以使用现有付款方式，或添加新的付款方式。 可以使用信用卡、借记卡或银行帐户来支付所购买的东西。

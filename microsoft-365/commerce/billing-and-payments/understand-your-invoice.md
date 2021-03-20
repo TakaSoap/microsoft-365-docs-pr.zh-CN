@@ -19,19 +19,19 @@ search.appverid:
 - MET150
 description: 了解如何阅读和了解 Microsoft 商业产品的账单或发票。
 keywords: 帐单帐户，组织信息，发票
-ms.openlocfilehash: 521ef49e7f2292f8ea09210fb0edcce0d56e1b76
-ms.sourcegitcommit: eac5d9f759f290d3c51cafaf335a1a1c43ded927
+ms.openlocfilehash: 2b11cca810b17ae2dacc3ddab723725608ffceb5
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50126569"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50911694"
 ---
 # <a name="understand-your-bill-or-invoice"></a>了解你的帐单或发票
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 管理中心正在发生改变。 如果你的体验与此处提供的详细信息不匹配，请参阅[有关新版 Microsoft 365 管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true)。
+> 管理中心正在发生改变。 如果你的体验与此处提供的详细信息不匹配，请参阅[有关新版 Microsoft 365 管理中心](../../admin/microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet)。
 
 ::: moniker-end
 
@@ -60,13 +60,13 @@ ms.locfileid: "50126569"
 | --- | --- |
 | 费用|在此结算周期内购买的产品总数及其相关的费用和税款。 采购汇总以提供您的帐单的简洁视图。 |
 | 制作人员 |您从返回中获得的积分 |
-| 已应用Azure积分 |自动应用于Azure的Azure信用额度在每个计费期收费。 如果您没有任何Azure积分，则该字段将被隐藏。 有关Azure信用的详细信息，请参阅[跟踪Microsoft客户协议Azure信用余额](https://docs.microsoft.com/azure/billing/billing-mca-check-azure-credits-balance)。 |
+| 已应用Azure积分 |自动应用于Azure的Azure信用额度在每个计费期收费。 如果您没有任何Azure积分，则该字段将被隐藏。 有关Azure信用的详细信息，请参阅[跟踪Microsoft客户协议Azure信用余额](/azure/billing/billing-mca-check-azure-credits-balance)。 |
 | Subtotal |应付税前金额 |
 | 税款 |您要支付的税款类型和金额，具体取决于您的帐单资料所在的国家/地区。 如果您不必纳税，则发票上不会显示税款。 |
 
 ### <a name="understand-your-charges"></a>了解你的费用
 
-收费页面显示按产品细分的成本。 对于Azure客户，费用可以按“发票”部分进行组织。 有关Azure产品如何使用发票部分的更多信息，请参见 [Microsoft 客户协议账单帐户入门](https://docs.microsoft.com/azure/billing/billing-mca-overview)中的[发票部分](https://docs.microsoft.com/azure/billing/billing-mca-overview#invoice-sections)。 在每个产品订单中，成本按服务系列细分。
+收费页面显示按产品细分的成本。 对于Azure客户，费用可以按“发票”部分进行组织。 有关Azure产品如何使用发票部分的更多信息，请参见 [Microsoft 客户协议账单帐户入门](/azure/billing/billing-mca-overview)中的[发票部分](/azure/billing/billing-mca-overview#invoice-sections)。 在每个产品订单中，成本按服务系列细分。
 
 | 术语 |描述 |
 | --- | --- |
@@ -86,7 +86,7 @@ ms.locfileid: "50126569"
 
 > 总计=费用/额度-Azure 额度+税
 
-如果您希望发票上有Azure费用，请参见[查看Microsoft客户协议发票](https://docs.microsoft.com/azure/cost-management-billing/understand/review-customer-agreement-bill)。
+如果您希望发票上有Azure费用，请参见[查看Microsoft客户协议发票](/azure/cost-management-billing/understand/review-customer-agreement-bill)。
 
 ## <a name="understand-the-last-invoice-page"></a>了解最后的发票页面
 

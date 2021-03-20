@@ -28,12 +28,12 @@ ms.custom:
 - AdminSurgePortfolio
 description: 在 Microsoft 365 管理中心 查找你的发票或账单。 你还可以保存和打印帐单。
 ms.date: 07/31/2020
-ms.openlocfilehash: 5bf257847ec880855841035792c7714fd24d9b68
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 395c9773d4bc67ed466d7b3f8d568cecedddfd36
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49928528"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50911636"
 ---
 # <a name="view-your-bill-or-invoice"></a>查看帐单或发票
 
@@ -80,4 +80,4 @@ ms.locfileid: "49928528"
 
 [通过发票、信用卡或银行帐户支付](pay-for-your-subscription.md)（文章） \
 [管理付款方式](manage-payment-methods.md)（文章） \
-[Minecraft:Education Edition 付款方式](https://go.microsoft.com/fwlink/p/?linkid=838761)（文章）
+[Minecraft:Education Edition 付款方式](/education/windows/school-get-minecraft)（文章）

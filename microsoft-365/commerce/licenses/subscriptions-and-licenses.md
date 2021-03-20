@@ -21,20 +21,20 @@ search.appverid:
 - MET150
 description: 了解 Microsoft 365 商业版中的订阅和许可证。
 ms.date: 07/01/2020
-ms.openlocfilehash: ccfcb52548fb79267c550afba63c2f5a96b99ed1
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 6310b3e48c59da3243746cceca2d0516f511b827
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49928506"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50911430"
 ---
 # <a name="understand-subscriptions-and-licenses-in-microsoft-365-for-business"></a>了解 Microsoft 365 商业版中的订阅和许可证
 
-购买 Microsoft 365 商业版订阅时，可注册一组按月或按年付费的应用和服务。 作为订阅的一部分收到的应用程序和服务取决于您购买的产品，如 Microsoft 365 商业应用版或 Microsoft 365 商业标准版。 你可以查看 [Microsoft 365](https://products.office.com/compare-all-microsoft-office-products?&activetab=tab:primaryr1) 中小型企业页面上每个产品随附的内容。
+购买 Microsoft 365 商业版订阅时，可注册一组按月或按年付费的应用和服务。 作为订阅的一部分收到的应用程序和服务取决于您购买的产品，例如 Microsoft 365 商业应用版或 Microsoft 365 商业标准版。 可以在适用于中小型企业的 [Microsoft 365](https://products.office.com/compare-all-microsoft-office-products?&activetab=tab:primaryr1) 页面上查看每个产品随附的内容。
 
-购买订阅时，根据组织中的人数指定所需的许可证数。 购买订阅后，为组织人员创建帐户，然后将许可证分配给每个人。 随着组织需求的变化，你可以购买更多许可证来容纳新人，或在某人离开组织时将许可证重新分配给其他用户。
+购买订阅时，根据组织中的人数指定所需的许可证数。 购买订阅后，为组织成员创建帐户，然后为每个人分配许可证。 随着组织需求的变化，你可以购买更多许可证来容纳新人，或在某人离开组织时将许可证重新分配给其他用户。
 
-如果有一个以上的订阅，则可以针对每个订阅将许可证分配给不同人员。 例如，可以将所有用户分配给作为 Microsoft 365 商业标准版订阅一部分的所有 Microsoft 365 应用程序和服务。 您还可以通过单独的 Visio 订阅将部分用户分配给 Visio Online。
+如果有一个以上的订阅，则可以针对每个订阅将许可证分配给不同人员。 例如，可以将所有用户作为 Microsoft 365 商业标准版订阅的一部分分配给所有 Microsoft 365 应用程序和服务。 您还可以通过单独的 Visio 订阅将部分用户分配给 Visio Online。
 
 ## <a name="how-many-devices-can-people-install-office-on"></a>可以在多少台设备上安装 Office？
 
@@ -55,10 +55,10 @@ ms.locfileid: "49928506"
   
 |**如果订阅中有此服务**|**将会自动发生该情况**|
 |:-----|:-----|
-|Exchange Online  <br/> |将为该人员创建一个邮箱。 <br/> 若要了解要完成此任务的 SLA，请参阅" [设置..."microsoft 365 管理中心中的邮件](https://support.microsoft.com/help/2635238/setting-up-messages-in-the-office-365-admin-center)。 |
+|Exchange Online  <br/> |将为该人员创建一个邮箱。 <br/> 若要了解有关要完成此任务的 SLA，请参阅 ["设置..."。Microsoft 365 管理中心 中的邮件](https://support.microsoft.com/help/2635238/setting-up-messages-in-the-office-365-admin-center)。 |
 |SharePoint Online  <br/> |将为该人员分配默认 SharePoint Online 团队网站的编辑权限。  <br/> |
 |Skype for Business Online  <br/> |用户有权访问与许可证关联的功能。  <br/> |
-|Microsoft 365 企业应用版  <br/> |用户可以在最多五台 Mac 或 PC、五台平板电脑和五台智能手机上下载 Office 应用。  <br/> |
+|适用于企业的 Microsoft 365 应用  <br/> |用户可以在最多五台 Mac 或 PC、五台平板电脑和五台智能手机上下载 Office 应用。  <br/> |
 
 ## <a name="understand-licenses-for-non-user-mailboxes"></a>了解非用户邮箱的许可证
 
@@ -66,9 +66,9 @@ ms.locfileid: "49928506"
   
 - [创建共享邮箱](../../admin/email/create-a-shared-mailbox.md)
 - [从共享邮箱删除许可证](../../admin/email/remove-license-from-shared-mailbox.md)
-- [Exchange Online 中所有其他](https://docs.microsoft.com/exchange/collaboration-exo/shared-mailboxes) Microsoft 365 计划的共享邮箱。
-- [创建和管理会议室邮箱](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-room-mailboxes)
-- [管理设备邮箱](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-equipment-mailboxes)
+- [Exchange Online 中所有其他](/exchange/collaboration-exo/shared-mailboxes) Microsoft 365 计划的共享邮箱。
+- [创建和管理会议室邮箱](/exchange/recipients-in-exchange-online/manage-room-mailboxes)
+- [管理设备邮箱](/exchange/recipients-in-exchange-online/manage-equipment-mailboxes)
 
 ## <a name="who-can-assign-licenses"></a>谁可以分配许可证？
 
@@ -84,7 +84,7 @@ ms.locfileid: "49928506"
 
 ## <a name="related-content"></a>相关内容
 
-[购买或删除商业版订阅的许可证 (](buy-licenses.md) 文章) \
-[向用户分配许可证 (](../../admin/manage/assign-licenses-to-users.md) 文章) \
+[购买或删除商业版订阅的许可证](buy-licenses.md) (文章) \
+[向用户分配许可证](../../admin/manage/assign-licenses-to-users.md)
 [取消向用户分配许可证](../../admin/manage/remove-licenses-from-users.md)（文章）\
-[从共享邮箱中删除许可证， (](../../admin/email/remove-license-from-shared-mailbox.md) 文章) 
+[从共享邮箱中删除许可证 (](../../admin/email/remove-license-from-shared-mailbox.md) 文章) 

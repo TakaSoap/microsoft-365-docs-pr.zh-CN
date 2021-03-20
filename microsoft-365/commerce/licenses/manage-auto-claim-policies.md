@@ -18,12 +18,12 @@ ms.custom:
 - commerce
 search.appverid:
 - MET150
-ms.openlocfilehash: c1715d2420315c6e645303c959512a45d47fddfe
-ms.sourcegitcommit: bf9e0091e5bdc78d9b23be64583eb816bb059eb2
+ms.openlocfilehash: bf3f79e425b3f7cd86f1a5ab95a337ef5127e345
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50759200"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50911466"
 ---
 # <a name="manage-auto-claim-policies"></a>管理自动声明策略
 
@@ -41,9 +41,9 @@ ms.locfileid: "50759200"
 > [!IMPORTANT]
 > 自动声明策略当前仅适用于 Microsoft Teams。 将来将有更多的产品可供使用。
 
-## <a name="before-you-begin"></a>准备工作
+## <a name="before-you-begin"></a>开始之前
 
-你必须是全局管理员、帐单管理员或用户管理员才能创建和管理自动声明策略。 有关详细信息，请参阅[关于 Microsoft 365 管理员角色](../../admin/add-users/about-admin-roles.md)。
+你必须是全局管理员才能创建和管理自动声明策略。 有关详细信息，请参阅[关于 Microsoft 365 管理员角色](../../admin/add-users/about-admin-roles.md)。
 
 ## <a name="turn-the-auto-claim-policy-feature-on-or-off"></a>打开或关闭自动声明策略功能
 
@@ -160,6 +160,6 @@ ms.locfileid: "50759200"
 
 ## <a name="related-content"></a>相关内容
 
-[向用户分配许可证](../../admin/manage/assign-licenses-to-users.md) (文章) \
+[向用户分配许可证](../../admin/manage/assign-licenses-to-users.md)
 [购买或删除订阅许可证](buy-licenses.md) (文章) \
 [了解本文 (](subscriptions-and-licenses.md) 订阅和) 

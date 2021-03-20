@@ -25,75 +25,75 @@ ms.custom:
 search.appverid:
 - BCS160
 - MET150
-description: 了解 Microsoft 365 商业高级版中包含的内容，并获取注册 Microsoft 365 商业高级版的分步指南。
-ms.openlocfilehash: 5cee380998b188e7d5845becacfa46383905737f
-ms.sourcegitcommit: e5bc49f0a25954d008b6cc09c2b98bb7bfe1aa2f
+description: 了解 Microsoft 365 商业高级版包括哪些内容，并获取有关注册 Microsoft 365 商业高级版的分步指南。
+ms.openlocfilehash: 54a8e92ccced24f446e73a96f75e4aa1531a95aa
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44785664"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50912502"
 ---
 # <a name="sign-up-for-microsoft-365-business-premium"></a>注册 Microsoft 365 商业高级版
 
-若要了解 Microsoft 365 商业高级版中包含的内容，请观看[简短视频](https://go.microsoft.com/fwlink/?linkid=2109651)并查看[概述](microsoft-365-business-overview.md)。
+若要了解 Microsoft 365 商业高级版包含哪些内容，请观看简短 [视频](../business-video/what-is-microsoft-365.md) ，并观看 [概述](microsoft-365-business-overview.md)。
 
-有三种方法可以获得 Microsoft 365 商业高级版：
-- **购买 microsoft 365 商业高级版并完成你自己的设置**：若要购买 Microsoft 365 商业高级版，请[执行以下步骤](#sign-up-steps)。
-- **对于 microsoft 合作伙伴**：如果你是合作伙伴，请参阅[从 Microsoft 合作伙伴中心获取 Microsoft 365 商业高级版](get-microsoft-365-business.md)。
-- **获取 microsoft**store 的帮助：头到[microsoft store](https://go.microsoft.com/fwlink/?linkid=2109652)。 Microsoft 商店可以帮助您解决计划、帮助您购买适合您的业务需求的计划，并帮助您完成设置。
+有三种方法可获取 Microsoft 365 商业高级版：
+- **购买 Microsoft 365 商业** 高级版并完成自己的设置：若要在线购买 Microsoft 365 商业高级版， [请按照以下步骤操作](#sign-up-steps)。
+- **对于 Microsoft 合作伙伴**：如果你是合作伙伴，请参阅从 Microsoft 合作伙伴中心获取 [Microsoft 365 商业高级版](get-microsoft-365-business.md)。
+- **在 Microsoft Store 获取帮助**：前往 [Microsoft Store](https://go.microsoft.com/fwlink/?linkid=2109652)。 Microsoft 应用商店可以帮助你解决有关计划的问题，帮助你购买符合业务需求的计划，并帮助你完成设置。
 
-**需要不同的东西？** 可执行下列操作：
+**需要不同的内容？** 可以执行下列操作：
 - [将 Office 365 计划升级到 Microsoft 365 商业高级版](migrate-to-microsoft-365-business.md)。
-- 获取为期一个月的 Microsoft 365 商业高级[版免费试用版](https://go.microsoft.com/fwlink/p/?linkid=2102309)。
-- 如果你需要具有较少功能的计划，请[注册 Microsoft 365 商业标准](https://go.microsoft.com/fwlink/p/?LinkID=510935)。 了解每个业务计划在[products.office.com](https://go.microsoft.com/fwlink/?linkid=2109397)中所包含的内容。
-- 如果你不需要购买企业版，[请注册家庭或家庭计划](https://go.microsoft.com/fwlink/?linkid=2109398)。 
+- [获取一个月的](https://go.microsoft.com/fwlink/p/?linkid=2102309) Microsoft 365 商业高级版免费试用版。
+- 如果需要功能较少的计划，请注册[Microsoft 365](https://go.microsoft.com/fwlink/p/?LinkID=510935)商业标准版。 有关每个业务计划包括哪些内容[，products.office.com。](https://go.microsoft.com/fwlink/?linkid=2109397)
+- [如果你未购买](https://go.microsoft.com/fwlink/?linkid=2109398) 企业，请注册家庭或家庭计划。 
 
 ## <a name="sign-up-steps"></a>注册步骤
 
-观看此视频，了解注册过程的快速概述。<br><br>
+观看此视频，快速概览注册过程。<br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3znhX] 
 
 如果你发现此视频有帮助，请查看[适用于小型企业和 Microsoft 365 新用户的完整培训系列](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)。
 
-若要注册并购买适用于您的企业的 Microsoft 365，请完成以下步骤：
+若要注册并购买适用于你的企业 Microsoft 365，请完成以下步骤：
 
-1. 在 " [Microsoft 365 for business" 页](https://go.microsoft.com/fwlink/?linkid=2109654)上，选择 "**查看 & 定价的计划**"。 
-2. 在下一页上，查找每月费用，然后向下滚动页面，以了解有关 Microsoft 365 中包含的内容的详细信息。 在 "Microsoft 365 商业高级版" 下，选择 "**立即购买**"。
-3. 在**感谢你选择 Microsoft 365 商业高级版**页面上，输入你的信息即可开始。
-4. 在**步骤 1**中，输入您已使用的电子邮件地址。 这可以是你当前的工作电子邮件地址或你希望 Microsoft 在安装过程中用于与你进行通信的任何地址。 它还是向你发送有关帐单和续订信息的地址。 然后依次选择 ""、"**设置帐户**"。
-5. 在**步骤 2**中，输入你的姓名、业务电话号码、公司名称和位置。 你的国家或地区决定了你从 Microsoft 收到的确切服务，在完成此步骤后无法更改。 选择“**下一步**”。
+1. 在 ["Microsoft 365 商业版"页面上，](https://go.microsoft.com/fwlink/?linkid=2109654)选择 **"查看计划&定价"。** 
+2. 下一页上，找到每月成本，然后向下滚动页面，详细了解 Microsoft 365 中包含的内容。 在"Microsoft 365 商业高级版"下，选择"**立即购买"。**
+3. 在" **感谢您选择 Microsoft 365 商业** 高级版"页上，输入你的信息以开始。
+4. 在 **步骤 1** 中，输入已使用的电子邮件地址。 这可以是你当前的工作电子邮件地址，或者是你想要 Microsoft 在设置期间用于与您通信的任何地址。 这也是我们会将帐单和续订相关信息发送给你的地址。 然后选择"**设置帐户"。**
+5. 在 **步骤 2** 中，输入你的姓名、公司电话号码、公司名称和位置。 你的国家/地区确定你从 Microsoft 获得的确切服务，并且完成此步骤后无法更改。 选择“下一步”。
     > [!NOTE]
-    > 我们在管理中心显示你的公司名称;你可以在此处管理 Microsoft 365 用户、许可证等。 此外，我们还将其包含在任何内部（SharePoint）网站 Url 中。
-6. 在**步骤 3**：
+    > 我们在管理中心显示你的公司名称;这是管理 Microsoft 365 用户、许可证等的地方。 我们还在 SharePoint 网站 URL () 该 URL。
+6. 在 **步骤 3** 中：
 
-    1. 证明你不是机器人！ 选择 "**文本**" 或 "**呼叫我**"，然后输入可以与你联系的号码。 选择 "**发送验证代码**"，您将立即收到文本或呼叫。 输入您的代码，然后选择 "**验证**"。
-    2. 接下来，决定是购买新的域名还是获取一个临时域名：
+    1. 证明你不是机器人！ 选择" **给我发** 短信 **"** 或"致电我"，然后输入可以联系你的号码。 选择 **"发送验证** 码"，你将收到文本或立即呼叫。 输入代码，然后选择"验证 **"。**
+    2. 接下来，决定是购买新域名还是获取临时域名：
 
-        - **我不拥有域名** 
+        - **I don't own a domain name** 
         
-            如果你的电子邮件地址不包含你的公司名称，并且你没有使用你的公司名称的网站，你现在可以轻松购买域。 选择 "**购买新域名**"，并输入您的企业的名称。 例如，如果您的公司称为*ContosoSkis*，请尝试输入 Contosokis.com、Contososkis.org 或 Contososkis.biz。 然后，选择 "**查看可用性**" 以查看所选的域是否可用。 在做出决定之前，可以尝试多个选项。 如果你的域名可用，我们将让你知道成本，并直接向你的新计划收费。 
+            如果您的电子邮件地址不包含您的公司名称，并且您没有使用您的公司名称的网站，则现在可以轻松地购买域。 选择 **"购买新域名"，** 然后输入公司名称。 例如，如果贵公司名为 *ContosoSkis，* 请尝试 Contosokis.com、Contososkis.org 或 Contososkis.biz。 然后选择 **检查可用性** 以查看所选域是否可用。 在做出决定之前，可以尝试多个选项。 如果你的域名可用，我们将告知你费用，并直接使用你的新计划计费。 
        
             > [!TIP]
-            > 如果您不确定为新域选择什么域扩展名（例如 .com 或. org），请参阅[购买域名](https://go.microsoft.com/fwlink/?linkid=2109700)
+            > 如果你不确定为新域选择哪些域扩展名 (例如.com 或 .org) ，请参阅购买 [域名](../admin/get-help-with-domains/buy-a-domain-name.md)
         
-        - **我不确定，或者我已经拥有一个域名** 
+        - **不确定，或者我已有域名** 
         
-             选择 "**立即获取 Microsoft 域**"。 这并不会降低成本，稍后您可以为您的企业获取自定义名称，或连接到已有的自定义名称。 我们将向你介绍操作方法。
+             选择 **"获取 Microsoft 域"。** 这不会花费任何费用，稍后你可以获取你的企业自定义名称，或连接到你已拥有的名称。 我们将向您展示如何。
 
-    3. 选择 "**下一步**" 创建用户 ID 和业务电子邮件地址。 输入要使用的名称（也称为别名）。 例如，Robert 年轻人可能将 RobY 或 RobYoung 用作工作别名。 添加密码并选择 "**注册**"。 记下你的密码。 我们将向您在步骤1中输入的地址发送一封电子邮件，提醒您用户 ID。
-7. 在**步骤 4**： 
+    3. 选择 **"下** 一步"以创建用户 ID 和业务电子邮件地址。 输入 (别名) 别名。 例如，Robert Young 可能会使用 RobY 或 RobYoung 作为工作别名。 添加密码 **，然后选择注册**。 记下密码。 我们将向你在步骤 1 中输入的地址发送电子邮件，提醒你注意你的用户 ID。
+7. 在 **步骤 4** 中： 
 
-    1. 确定您的业务中有多少人需要 Microsoft 365 许可证，或者将**用户数**设置为1，稍后再添加更多人员。 
-    2. 选择 "按月或按年计费"，检查总成本，然后选择 "**下一步**"。 
-    3. 添加你的信用卡详细信息。 如果你的公司地址与信用卡地址不匹配，我们将需要你的公司地址。 您的公司地址确定要支付的税以及哪些服务可用。 有关税的详细信息，请参阅[我将收取什么税？](https://go.microsoft.com/fwlink/?linkid=2109701)。
-    4. 选择 "**下订单**"。 Microsoft 需要较短的时间才能完成新计划的设置。
+    1. 确定企业中的多少人需要 Microsoft 365 许可证，或保留"用户数"现在设置为 1，稍后添加更多人员。 
+    2. 选择"按月计费"或"按年计费"，检查总成本，然后选择"下一步 **"。** 
+    3. 添加信用卡详细信息。 如果你的公司地址与你的信用卡地址不匹配，我们还需要你的公司地址。 你的公司地址确定你支付哪些税款以及哪些服务可用。 有关税款详细信息，请参阅我应该支付[哪些税款？。](../commerce/billing-and-payments/tax-information.md)
+    4. 选择 **下订单**。 Microsoft 需要一小段时间才能完成新计划的设置。
 
 ## <a name="whats-next"></a>下一步做什么？
 
-选择 "**转到安装程序**" 以完成其他步骤，如添加更多安全性以保护您的企业，以及下载 Word 和 Excel 等 Office 应用程序。
+选择 **"转到设置** "以完成其他步骤，例如添加更多安全性以保护业务，以及下载 Office 应用（如 Word 和 Excel）。
 
-若要获取有关安装的帮助，请参阅[set up](set-up.md)。
+若要获取有关设置的帮助，请参阅 [设置](set-up.md)。
 
 ## <a name="see-also"></a>另请参阅
 

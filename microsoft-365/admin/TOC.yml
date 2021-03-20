@@ -35,7 +35,7 @@
         - name: 将数据迁移到 Microsoft 365
           href: setup/migrate-email-and-contacts-admin.md
         - name: 推出 Teams
-          href: 'https://docs.microsoft.com/microsoftteams/how-to-roll-out-teams?toc=/office365/admin/toc.json&bc=/office365/admin/breadcrumb/toc.json'
+          href: /microsoftteams/how-to-roll-out-teams?bc=%2foffice365%2fadmin%2fbreadcrumb%2ftoc.json&toc=%2foffice365%2fadmin%2ftoc.json
         - name: 面向所有人的应用培训
           href: 'https://support.microsoft.com/training'
         - name: 我有什么订阅？
@@ -232,7 +232,7 @@
             - name: Microsoft 365 应用版运行状况
               href: productivity/apps-health.md
             - name: 终结点分析
-              href: 'https://docs.microsoft.com/mem/analytics/productivity-score'
+              href: /mem/analytics/productivity-score
         - name: 更改组织联系人信息
           href: manage/change-address-contact-and-more.md
         - name: 更新管理员联系人信息
@@ -259,6 +259,8 @@
           href: manage/manage-office-scripts-settings.md
         - name: 寻找合作伙伴或经销商
           href: manage/find-your-partner-or-reseller.md
+        - name: 管理 Microsoft 奖励
+          href: manage/manage-microsoft-rewards.md
         - name: 管理消息中心消息
           href: manage/manage-messages.md
         - name: 设置发布选项
@@ -312,7 +314,7 @@
             - name: 设置合规性功能
               href: ../business/set-up-compliance.md
         - name: 安全评分
-          href: 'https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-secure-score-new'
+          href: ../security/mtp/microsoft-secure-score.md
         - name: GDPR 合规性指南
           href: security-and-compliance/gdpr-compliance.md
     - name: 管理设备和应用数据
@@ -321,7 +323,7 @@
         - name: 设备和应用数据保护方法
           href: devices/choose-device-security.md
         - name: Microsoft Intune 文档
-          href: 'https://docs.microsoft.com/mem/intune/'
+          href: /mem/intune/
         - name: Microsoft 365 商业高级版
           items:
             - name: 查看和编辑策略和设备
@@ -404,6 +406,6 @@
         - name: 加入有来宾用户参加的 Teams 会议
           href: 'https://support.microsoft.com/office/a120c282-063d-46b8-b973-851197ab75d8'
     - name: 疑难解答
-      href: 'https://docs.microsoft.com/office/troubleshoot/'
+      href: /office/troubleshoot/
     - name: 联系支持人员
       href: contact-support-for-business-products.md

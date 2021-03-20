@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 了解如何查找 Microsoft 365 商业高级版管理员帮助。
-ms.openlocfilehash: cf81ae934a35dadc895a1fc836ef1bd28f5000e0
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: 5f09d74a5447b5023b2b3286a3aae504f707d44e
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50422587"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50913630"
 ---
 # <a name="find-answers-and-help-for-admins"></a>查找管理员的答案和帮助
 
@@ -36,17 +36,17 @@ ms.locfileid: "50422587"
 
 ## <a name="try-it"></a>试一试！
 
-1. 使用工作 [office.com](https://office.com)登录并选择"管理员 **"。**
-1. 在管理中心主页上，选择 **"管理员培训** "以查看可用的培训选项。
-1. 选择 **企业所有者和管理员** 进行中小型培训。
-1. 为 **较大或** 更复杂的企业选择企业 IT 专业人员。
-1. 返回到管理中心， **这次选择"** 自定义设置指南"，查看一些指导你完成特定设置任务的指南。
-1. 返回到管理中心主页并选择 **"** 用户培训"，获取有关特定应用的帮助，并了解如何充分利用你每天使用的功能。
-1. 返回到管理中心，然后选择 **"需要帮助"** 打开支持助手。 键入问题或需要帮助的主题，然后选择"**发送"。** 选择管理中心中的链接或问题的答案文章。
-1. 如果没有找到问题的答案，你始终可以联系支持人员，并且技术支持人员将尽快回复你。
+1. 登录以 [office.com](https://office.com)工作凭据，然后选择"管理员 **"。**
+1. 在管理中心主页上，选择 **"管理员** 培训"以查看可供你使用的培训选项。
+1. 为 **中小型培训选择** 业务所有者和管理员。
+1. 为 **较大或更复杂的** 企业选择企业 IT 专业人员。
+1. 返回到管理中心， **这次选择自定义** 设置指南以查看一些指导，指导你完成特定的设置任务。
+1. 返回到管理中心主页并选择"培训 **用户** "，获取有关特定应用的帮助，并了解如何充分利用你每天使用的功能。
+1. 返回到管理中心，然后选择 **"需要帮助"** 打开支持助手。 键入问题或需要帮助的主题，然后选择"发送 **"。** 选择管理中心中的链接或指向回答你的问题的文章。
+1. 如果你未找到问题的答案，你始终可以联系支持人员，并且技术支持人员将尽快回复你。
 
 您还可以使用以下资源获取有关问题的帮助：
 
-- [aka.ms/learn365admin](https://aka.ms/learn365admin)，搜索所有与管理员相关的任务和帮助，如重置密码和分配 Microsoft 订阅。
-- [answers.microsoft.com](https://answers.microsoft.com)，以搜索答案，开始讨论，并询问其他用户的问题。
-- [techcommunity.microsoft.com，](https://techcommunity.microsoft.com)加入专家社区，并查找适用于你的企业 Microsoft 365 的最佳实践。
+- [aka.ms/learn365admin](../admin/index.yml)，以搜索所有与管理员相关的任务和帮助，如重置密码和分配 Microsoft 订阅。
+- [answers.microsoft.com](https://answers.microsoft.com)，以搜索答案、开始讨论以及提出其他用户的问题。
+- [techcommunity.microsoft.com](https://techcommunity.microsoft.com)，以加入专家社区，并查找适用于你的企业 Microsoft 365 的最佳实践。

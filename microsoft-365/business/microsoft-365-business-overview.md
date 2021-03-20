@@ -29,12 +29,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: 了解 Microsoft 365 商业高级版，这是一项订阅服务，其中包括 Office 效率类应用，以及为企业抵御网络威胁的高级保护功能。
-ms.openlocfilehash: e67ae036bf3ce7811f19c8745838bb51dde073ea
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: aa6e313f0f3db1c3401836c3e1737c219fcf6c3a
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48842172"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50912994"
 ---
 # <a name="overview-of-microsoft-365-business-premium"></a>Microsoft 365 商业高级版概述
 
@@ -48,9 +48,9 @@ Microsoft 365 商业高级版（旧称为“Microsoft 365 商业版”）是为�
   
 如果你觉得这段视频有用，请查看[适用于小型企业和 Microsoft 365 新手的完整培训系列](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)。 
 
-Microsoft 365 商业高级版最多支持 300 个许可证。 如果需要更多许可证，请参阅 [Microsoft 365 企业版](https://go.microsoft.com/fwlink/p/?linkid=860986)文档，以了解详细信息。
+Microsoft 365 商业高级版最多支持 300 个许可证。 如果需要更多许可证，请参阅 [Microsoft 365 企业版](../enterprise/index.yml)文档，以了解详细信息。
 
-有关完整的功能列表，请参阅 [Microsoft 365 商业高级版服务说明](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-business-service-description)。
+有关完整的功能列表，请参阅 [Microsoft 365 商业高级版服务说明](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-business-service-description)。
   
 ## <a name="small-business-security-needs"></a>小型企业安全需求
 
@@ -69,13 +69,13 @@ Microsoft 365 商业高级版有助于在所有这些情况下保护你的数据
 
 ## <a name="how-your-data-and-devices-are-protected"></a>数据和设备保护方式
 
-Microsoft 365 商业高级版通过以下方式 **抵御威胁** ：
+Microsoft 365 商业高级版通过以下方式 **抵御威胁**：
 
-- 实时扫描电子邮件和文档中的链接，以阻止不安全的网站 (安全链接) 。
+- 实时扫描电子邮件和文档中的链接，以阻止不安全的网站 (安全) 。
 
-- 在沙盒环境中对电子邮件附件执行高级分析，以检测新开发的恶意软件 (安全附件) 。 
+- 在沙盒环境中对电子邮件附件执行高级分析，以检测安全附件 (新开发的) 。 
 
-- 启用使用机器学习模型和模拟检测的反网络钓鱼策略，以针对 Office 365 智能) 中的 (反网络钓鱼提供高级攻击保护。 
+- 启用使用机器学习模型和模拟检测的防钓鱼策略，以防范高级攻击 (Defender for Office 365 智能中心中的防钓鱼) 。 
 
 - 设置高级策略，用于禁用来自不受信任的位置的访问，或绕过受信任的位置（如办公网络）的多重身份验证（包括受信任的 IP 和条件访问的 Azure MFA）。 
 
@@ -103,7 +103,7 @@ Microsoft 365 商业高级版通过以下方式 **抵御威胁** ：
 
 - 使用简化的控件来管理公司中所有 Windows 10 电脑的策略，强制执行 BitLocker 加密，并自动安装关键 Windows 更新（强制执行 Windows 更新策略）。
 
-若要查看完整的安全功能列表，请参阅 [Microsoft 365 商业高级版安全功能](security-features.md)。 [设置 Microsoft 365 商业高级版](set-up.md)后，请参阅[增强威胁防护](increase-threat-protection.md)和[设置合规性功能](set-up-compliance.md)，以开始使用引导式安装中没有包含的安全功能。 另请参阅[保护 Office 365 和 Microsoft 365 商业高级版计划的 10 大方法](https://docs.microsoft.com/office365/admin/security-and-compliance/secure-your-business-data)，以更好地概览如何设置保护来抵御网络罪犯和黑客。
+若要查看完整的安全功能列表，请参阅 [Microsoft 365 商业高级版安全功能](security-features.md)。 [设置 Microsoft 365 商业高级版](set-up.md)后，请参阅[增强威胁防护](increase-threat-protection.md)和[设置合规性功能](set-up-compliance.md)，以开始使用引导式安装中没有包含的安全功能。 另请参阅[保护 Office 365 和 Microsoft 365 商业高级版计划的 10 大方法](/office365/admin/security-and-compliance/secure-your-business-data)，以更好地概览如何设置保护来抵御网络罪犯和黑客。
 
 ## <a name="get-microsoft-365-business-premium"></a>获取 Microsoft 365 商业高级版
 

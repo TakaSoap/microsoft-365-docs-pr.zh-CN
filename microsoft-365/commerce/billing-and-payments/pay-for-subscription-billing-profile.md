@@ -19,52 +19,52 @@ ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
 - commerce
-ms.openlocfilehash: 15feb1b806b46d147d427256ce2416ea75b48bbe
-ms.sourcegitcommit: d739f48b991793c08522a3d5323beba27f0111b2
+ms.openlocfilehash: 750420b6fac8fff16130710ef96a9ceb6345a87a
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "50143075"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50911826"
 ---
-# <a name="how-to-pay-for-your-subscription-with-a-billing-profile"></a>如何使用计费配置文件为订阅付费
+# <a name="how-to-pay-for-your-subscription-with-a-billing-profile"></a>如何使用计费配置文件支付订阅费用
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 管理中心正在发生改变。 如果你的体验与此处提供的详细信息不匹配，请参阅[有关新版 Microsoft 365 管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true)。
+> 管理中心正在发生改变。 如果你的体验与此处提供的详细信息不匹配，请参阅[有关新版 Microsoft 365 管理中心](../../admin/microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet)。
 
 ::: moniker-end
 
 购买订阅时，使用计费配置文件支付订阅费用。 计费配置文件链接到特定的付款方式，可以是信用卡或借记卡，或者是发票，但不能是银行帐户。
 
-如果你不确定你的帐户是否具有计费配置文件，请参阅["了解计费配置文件"。](manage-billing-profiles.md) 如果你没有帐单配置文件，请参阅如何 [支付订阅费用](pay-for-your-subscription.md)。
+如果不确定账户是否具有计费配置文件，请参阅 [了解计费配置文件](manage-billing-profiles.md)。 如果你没有计费配置文件，请参阅 [如何支付订阅费用](pay-for-your-subscription.md)。
 
 ## <a name="paying-with-recurring-billing-turned-on-or-off"></a>打开或关闭定期计费进行支付
 
-默认情况下，对于使用定期计费的所有付费订阅，自动启用定期计费。 每个计费周期，我们都会自动向与计费配置文件关联的付款方式收费，以支付使用该计费配置文件的任何订阅的费用。 If your payment method is declined， you can use the **Pay now** button on your invoice to make a one-time payment for your subscription.
+默认情况下，对于使用定期计费的所有付费订阅，会自动启用定期计费。 每个计费周期，我们都会自动向与计费配置文件关联的付款方式收费，以支付使用该计费配置文件的任何订阅。 如果你的付款方式被拒绝，可以使用发票上的"现在支付"按钮为订阅进行一次付款。
 
-如果已针对帐单配置文件关闭定期计费，可以使用发票上的"现在付款"按钮来支付它每个计费周期，无论哪种付款方式与计费配置文件关联。 您还可以通过支票或电子资金 (EFT) 。 有关操作说明包含在发票的 PDF 副本中。
+如果对帐单配置文件关闭定期计费，则无论哪种付款方式与计费配置文件关联，都可以使用发票上的"现在支付"按钮来支付它。 您还可以通过支票或 EFT (电子资金) 。 有关如何执行的说明包含在发票的 PDF 副本中。
 
-## <a name="paying-by-invoice"></a>通过发票付款
+## <a name="paying-by-invoice"></a>按发票付款
 
-如果你有一个已设置为通过发票付款的计费配置文件，可以使用支票或 EFT 支付订阅费用。 您还可以使用信用卡通过发票上的"现在支付"按钮进行在线付款。 
+如果你有设置为通过发票支付的计费配置文件，可以使用支票或 EFT 支付订阅费用。 您还可以使用信用卡通过发票上的"现在支付"按钮进行在线付款。 
 
-若要有资格通过发票付款，你必须：
+若要获得按发票付款的资格，必须：
 
-- 成为已建立的客户
-- 订阅费用超过一定金额 (此金额因服务位置而异) 
+- 是固定客户
+- 订阅费用超过一定金额（此金额因服务位置而异）
 - 通过信用检查
 
-如果需要信用检查，购买订阅时将会收到通知。 如果你同意联系你，你收到一封电子邮件，其中包含有关申请信用审批详细信息。 通常会在两个工作日内完成信用检查。
+如果需要进行信用检查，在购买订阅时就会收到通知。 如果同意取得联系，则会收到一封电子邮件，其中包括更多关于申请信贷审批的信息。 通常会在两个工作日内完成信用检查。
 
-如果你的帐单配置文件由发票支持，则当你的帐单可供查看时，你收到一封电子邮件。 此电子邮件不包含帐单副本。 但是，你可以选择通过电子邮件接收帐单 [副本](view-your-bill-or-invoice.md#receive-a-copy-of-your-billing-statement-in-email)。 帐单包含有关付款选项以及付款位置的详细信息。 如果在计费配置文件中 (PO) 订单编号，该编号将显示在帐单中。 若要了解有关访问帐单的信息，请参阅[查看帐单或发票](view-your-bill-or-invoice.md)。
+如果你的计费配置文件由发票支持，则当帐单可供查看时，你收到一封电子邮件。 这封邮件不包含账单副本。 不过，可以选择[通过电子邮件接收账单副本](view-your-bill-or-invoice.md#receive-a-copy-of-your-billing-statement-in-email)。 账单中包含了关于付款选择以及付款地点的详细信息。 如果在计费配置文件中 (PO) 订单编号，该编号将显示在帐单中。 若要了解有关访问帐单的信息，请参阅[查看帐单或发票](view-your-bill-or-invoice.md)。
 
-## <a name="where-do-i-send-my-check-or-eft-payment"></a>支票或 EFT 付款应寄往何处？
+## <a name="where-do-i-send-my-check-or-eft-payment"></a>支票或 EFT 付款应发送到何处？
 
-[请查看发票，](view-your-bill-or-invoice.md) 查看付款说明。 您还可以使用下面的下拉列表查找你的国家/地区付款说明。 如果你不确定你应支付的金额，可以在"帐单和付款"页面的"发票"选项卡上在线查看帐单<a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">&历史记录。</a>
+[检查发票](view-your-bill-or-invoice.md) 以了解付款说明。 您还可以使用下面的下拉列表查找你的国家/地区付款说明。 如果不确定还款金额，可在“<a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">帐单和付款</a>”页面的“**发票**” 选项卡上在线查看帐单和计费历史记录。
 
 > [!NOTE]
-> 仅少数国家/地区提供支票支付。
+> 通过支票付款仅可用于几个国家或地区。
 
  **从以下下拉菜单选择"帐单寄往地址"所在国家/地区。**
 
@@ -222,20 +222,20 @@ ms.locfileid: "50143075"
 > - [Zambia（赞比亚）](../pay/zambia.md)
 > - [津巴布韦](../pay/zimbabwe.md)
 
-## <a name="can-i-pay-my-invoice-online"></a>我能否在线支付发票？
+## <a name="can-i-pay-my-invoice-online"></a>能否在线按发票支付？
 
 如果已针对帐单配置文件关闭定期计费，可以使用信用卡在线支付发票。 若要付款，请使用 Microsoft  365 管理中心发票上的"现在支付"按钮。 若要查找发票，请参阅 [查看帐单或发票](view-your-bill-or-invoice.md)。
 
-## <a name="can-i-change-from-my-current-payment-method-to-paying-by-invoice"></a>我能否从当前的付款方式更改为通过发票付款？
+## <a name="can-i-change-from-my-current-payment-method-to-paying-by-invoice"></a>我能否从当前的付款方式更改为按发票付款？
 
-如果你的计费配置文件受信用卡或借记卡支持，则只能将付款方式更改为另一张信用卡或借记卡。 你无法更改为通过发票付款。
+如果你的计费配置文件受信用卡或借记卡支持，则只能将付款方式更改为其他信用卡或借记卡。 你无法更改为通过发票付款。
 
-## <a name="can-i-change-from-paying-by-invoice-to-using-a-different-payment-method"></a>我能否从发票支付更改为使用不同的付款方式？
+## <a name="can-i-change-from-paying-by-invoice-to-using-a-different-payment-method"></a>我能否从按发票支付更改为使用其他付款方式？
 
-如果你的计费配置文件受发票付款支持，则你无法更改付款方式。 可以使用 **发票上的"** 现在付款"按钮通过信用卡或借记卡，或者通过支票或 EFT 付款。
+如果你的计费配置文件受发票付款支持，则你无法更改付款方式。 可以使用 **发票上的"** 现在支付"按钮通过信用卡或借记卡、支票或 EFT 付款。
 
 ## <a name="related-content"></a>相关内容
 
-[管理付款方式 (](manage-payment-methods.md) 文章) \
-[查看帐单或发票 (](view-your-bill-or-invoice.md) 文章) \
-[了解帐单或发票 (](understand-your-invoice.md) 文章) 
+[管理付款方式](manage-payment-methods.md)（文章）\
+[查看帐单或发票](view-your-bill-or-invoice.md)（文章）\
+[了解你的帐单或发票](understand-your-invoice.md)（文章）

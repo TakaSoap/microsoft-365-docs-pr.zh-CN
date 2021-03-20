@@ -20,12 +20,12 @@ search.appverid:
 description: 了解 Microsoft 365 商业版的功能。
 feedback_system: None
 ms.date: 7/28/2020
-ms.openlocfilehash: 2183c3c865b618d71e15b366f7eaed091101bbc7
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: b92e3790e83c5da62d65e6c98bf448d33862df54
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50421619"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50913534"
 ---
 # <a name="microsoft-365-business-premium"></a>Microsoft 365 商业高级版
 
@@ -46,4 +46,4 @@ Microsoft 365商业高级版是一项订阅服务，可让您在云中运行组�
 | 保护您的设备 | 您可以通过限制移动访问（例如复制和粘贴）来保护设备上的工作文件。 如果已注册的移动设备丢失或被盗，您还可以有选择地擦除业务数据。 |
 | 其他安全功能 | Microsoft 365商业高级版中的高级功能可用来帮助您保护企业免受网络威胁并保护敏感信息。 这些功能包括Office 365高级威胁防护，数据丢失防护策略（DLP），Exchange Online存档，Azure信息保护和Intune。 |
 
-有关详细信息，请参阅[Microsoft 365商业内容](https://docs.microsoft.com/microsoft-365/business/)。
+有关详细信息，请参阅[Microsoft 365商业内容](../business/index.yml)。

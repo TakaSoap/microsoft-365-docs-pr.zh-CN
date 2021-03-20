@@ -1,5 +1,5 @@
 ---
-title: 从 Microsoft 365 商业标准升级到 Microsoft 365 商业高级版
+title: 从 Microsoft 365 商业标准版升级到 Microsoft 365 商业高级版
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -23,76 +23,76 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 5b4ba843-24b8-4526-8e1f-f9b9eab89d06
-description: 了解 Microsoft 365 商业标准与 Microsoft 365 商业高级版之间的区别，以及如何升级到 Microsoft 365 商业高级版。
-ms.openlocfilehash: bdab8165623170926b17efa4cae9408b78a2f5f5
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+description: 了解 Microsoft 365 商业标准版和 Microsoft 365 商业高级版的区别以及如何升级到 Microsoft 365 商业高级版。
+ms.openlocfilehash: ef3d929164f83d4e48157065eb1ae1d2a1a9452e
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44401374"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50912914"
 ---
-# <a name="upgrade-to-microsoft-365-business-premium-from-microsoft-365-business-standard"></a>从 Microsoft 365 商业标准升级到 Microsoft 365 商业高级版
+# <a name="upgrade-to-microsoft-365-business-premium-from-microsoft-365-business-standard"></a>从 Microsoft 365 商业标准版升级到 Microsoft 365 商业高级版
 
-如果你有[microsoft 365 for business 订阅](https://products.office.com/compare-all-microsoft-office-products-4-column?activetab=tab:primaryr2)（例如，Microsoft 365 商业标准版），你可以轻松地升级到 Microsoft 365 商业高级版。 如果要添加，请升级到 Microsoft 365 商业高级版：
+如果你有 Microsoft [365 商业](https://products.office.com/compare-all-microsoft-office-products-4-column?activetab=tab:primaryr2)版订阅，例如 Microsoft 365 商业标准版，你可以轻松升级到 Microsoft 365 商业高级版。 若要添加：升级到 Microsoft 365 商业高级版：
 
-- Windows 10 专业版（对运行 Windows 8 或更高版本的电脑）
+- Windows 10 专业 (运行 Windows 8 或更高版本) 
 
-- 管理设备上的业务数据的简单控件
+- 用于管理设备上业务数据的简单控件
 
 - 高级安全功能。
-在[Microsoft.com](https://www.microsoft.com/microsoft-365/business)中查找有关 Microsoft 365 商业高级版的详细信息
+有关 Microsoft 365 商业高级版[](https://www.microsoft.com/microsoft-365/business)Microsoft.com
 
-## <a name="whats-the-difference-between-microsoft-365-business-standard-and-microsoft-365-business-premium"></a>Microsoft 365 商业标准与 Microsoft 365 商业高级版之间有何区别？
+## <a name="whats-the-difference-between-microsoft-365-business-standard-and-microsoft-365-business-premium"></a>Microsoft 365 商业标准版和 Microsoft 365 商业高级版之间有什么区别？
 
-我们已将这两个计划的并行比较添加到[Microsoft 365 Business Premium Service 说明](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-business-service-description)中。 
+我们已将这两个计划的并行比较添加到 [Microsoft 365 商业高级版服务说明 中](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-business-service-description)。 
 
-## <a name="before-you-get-started"></a>开始前的准备
+## <a name="before-you-get-started"></a>在开始使用之前
 
-- **我应该何时选择升级？** 如果要升级分配给单个计划的**所有用户**，则升级是正确的选择。 当您选择 "升级" 时，所有计划用户都会同时切换到另一个计划。 如果您不想升级分配给单个计划的每个人，请购买新计划的许可证（在本例中为 Microsoft 365 商业高级版），并[将这些许可证单独分配](../admin/manage/assign-licenses-to-users.md)给要升级的每个用户。
+- **应何时选择升级？** 当您想要升级分配给单个计划的所有用户时，升级是正确选择。 选择升级时，所有计划用户同时切换到另一个计划。 如果不希望升级分配到单个计划的每个人，请购买新计划 (（本例中为 Microsoft 365 商业高级版) ）的许可证，并将这些许可证分别分配给要[](../admin/manage/assign-licenses-to-users.md)升级的每个用户。
 
-- **某些加载项可能会阻止升级**如果您尝试启动升级且您的加载项无法继续运行，则可以先删除加载项，以后再将其添加回来（如果仍需要）。
+- **某些加载项可能会阻止升级** 如果您尝试开始升级，并且您具有阻止您继续的加载项，您可以首先删除该加载项，然后在您仍然需要它时添加回它。
 
-- **如果预付计划**预付计划没有直接的升级路径。 你会知道你是否拥有预付计划，因为你使用可能已在商店中购买的产品 ID 设置你的计划。 联系合作伙伴，转到 Microsoft Store，或等到预付计划过期，以切换到新计划。
+- **如果你预付费计划** 对于预付费计划，没有简单的升级路径。 你将知道你是否拥有预付费计划，因为你使用你可能在应用商店中购买的产品 ID 设置你的计划。 联系合作伙伴，转到 Microsoft Store，或等到预付费计划到期后切换到新计划。
 
 ## <a name="upgrade-to-microsoft-365-business-premium"></a>升级到 Microsoft 365 商业高级版
 
-1. 登录到管理员中心 <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> 。
+1. 在 登录管理中心 <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> 。
 
-2. 转到导航窗格并选择 "**付费** \> **产品**"。 查找当前订阅并将其选中以查看详细信息。
+2. 转到导航窗格，然后选择"**计费** \> **你的产品"。** 查找当前订阅并选择它以查看详细信息。
 
-3. 在下一个页面上，选择 "**升级**"。
+3. 下一页上， **选择升级**。
 
   > [!NOTE]
-  > 如果您看到一条消息，指出**在 Azure Active Directory 中不支持将订阅升级到基于组的许可证**，则可以安全地忽略此消息，除非您的组织非常大。 已选择此选项的组织将知道他们使用的是基于组的许可。
+  > 如果看到消息显示 Azure **Active Directory** 中基于组的许可不支持升级订阅，可以安全地忽略这一点，除非你的组织非常大。 已选择此选项的组织将意识到他们使用的是基于组的许可。
 
-4. 接下来，您可以查看可以升级到的计划的列表。 在这种情况下，请查找 Microsoft 365 商业高级版计划。 如果想要查看此计划中包含的所有应用和服务，可以向下滚动。 在 " **Microsoft 365 商业高级版**" 下，选择 "**升级**" 将 Microsoft 365 商业高级版添加到你的购物车。
+4. 接下来，您可以查看可升级到的计划列表。 在这种情况下，请查找 Microsoft 365 商业高级版计划。 如果你想要查看此计划中包含的所有应用和服务，可以向下滚动。 在 **"Microsoft 365 商业高级版"下**，选择" **升级** "以将 Microsoft 365 商业高级版添加到购物车。
 
 5. 在购物车中：
 
-    1. 我们将自动为你的所有当前用户包含许可证。 如果你需要更多或更少的许可证，你需要[单独购买并分配这些许可证](../admin/manage/assign-licenses-to-users.md)。  
-    2. 您可以调整您想要支付的方式：每月或每年。 选择下拉菜单以做出选择。
+    1. 我们将自动包含当前所有用户的许可证。 如果需要更多或更少的许可证，需要单独 [购买和分配这些许可证](../admin/manage/assign-licenses-to-users.md)。  
+    2. 你可以调整要支付多少费用：每月或每年支付。 选择下拉菜单进行选择。
 
-6. 选择您将看到购买摘要的 "**转到签出**"，其中包括此帐户的付款方式。 您还可以在此处添加促销代码（如果有的话）。
+6. 选择 **转到"结帐** "，你将在此看到购买摘要，包括此帐户的付款方式。 如果具有促销代码，也可以在此处添加促销代码。
 
-7. 选择 "**下订单**" 以完成购买。
-需要 Microsoft 几分钟的时间来设置新的服务计划。 若要查看进度，请选择 "**检查升级状态**"。
+7. 选择 **下订单** 以完成购买。\
+Microsoft 需要几分钟时间设置新的服务计划。 若要检查进度，请选择"**检查升级状态"。**
 
-8. 计划准备就绪后，您可能需要在管理中心完成一些额外的设置步骤。 在导航窗格中，选择 "**主页**" 以完成任何其他设置步骤。
+8. 计划就绪后，可能需要在管理中心完成一些额外的设置步骤。 在导航窗格中，选择" **主页** "完成任何其他设置步骤。
 
 > [!NOTE]
-> 你将收到一个你不再需要的 Microsoft 365 许可证的按比例退款。 在设置新计划后，您的银行帐户或信用卡将会在两天内收取费用。
+> 你将收到不再需要的 Microsoft 365 许可证按比例退款。 你的银行帐户或信用卡将在你设置新计划后大约两天内收费。
   
 ## <a name="protect-user-devices-and-files"></a>保护用户设备和文件
 
-至此，已分配了 Microsoft 365 商业高级许可证，并完成了启动保护设备和文件的步骤。 你将使用管理中心导航窗格中包含的一些新选项。
+现在已分配 Microsoft 365 商业高级版许可证，请完成开始保护设备和文件的步骤。 你将使用管理中心导航窗格中包含的一些新选项。
   
-1. 在 "管理中心" 的导航窗格中，转到 "**设备** \> **策略**"。
+1. 在管理中心的导航窗格中，转到"**设备策略** \> **"。**
 
-2. 在 "**设备策略**" 页上，选择 "**添加**"。
+2. 在"**设备策略"页上**，选择"添加 **"。**
 
-3. 在 "**添加策略**" 窗格中，为策略指定一个名称（例如，"保护工作文件"），然后从下拉列表中选择一个**策略类型**。
+3. 在 **"添加策略**"窗格中，为策略 (例如，"保护工作文件) ，然后从下拉列表中选择策略类型。 
 
-    您可以设置应用程序策略来保护 Android 和 iPhone 设备上的文件以及 Windows 10，还可以为公司拥有的 Windows 10 设备设置设备配置策略。 有关详细信息，请参阅以下链接：
+    你可以设置用于保护 Android 和 iPhone 设备以及 Windows 10 上的文件的应用程序策略，还可以为公司拥有的 Windows 10 设备设置设备配置策略。 有关详细信息，请参阅以下链接：
 
     - [设置 Android 或 iOS 设备的应用保护设置](app-protection-settings-for-android-and-ios.md)
 
@@ -100,10 +100,10 @@ ms.locfileid: "44401374"
 
     - [设置 Windows 10 电脑的设备保护设置](protection-settings-for-windows-10-pcs.md)
 
-4. 设置策略后，你和你的员工可以设置设备：
+4. 设置策略后，你和员工可以设置设备：
 
-    - 如果你的 Windows 设备尚未使用 Windows Pro Creator 更新，则需要将[其升级到 Windows Pro 创意者更新](upgrade-to-windows-pro-creators-update.md)。
+    - 如果你的 Windows 设备没有使用 Windows 专业版创意者更新，你将需要将它们 [升级到 Windows 专业版创意者更新](upgrade-to-windows-pro-creators-update.md)。
 
-    - 有关 Windows 设备的步骤，请参阅为[Microsoft 365 商业高级版用户设置 Windows 设备](set-up-windows-devices.md)。
+    - 有关 Windows 设备的步骤，请参阅为 [Microsoft 365 商业高级版](set-up-windows-devices.md) 用户设置 Windows 设备。
 
-    - 有关 Android 手机和 Iphone 的步骤，请参阅为[Microsoft 365 商业高级版用户设置移动设备](set-up-mobile-devices.md)。
+    - 有关 Android 手机和 iPhone 的步骤，请参阅为 [Microsoft 365 商业](set-up-mobile-devices.md) 高级版用户设置移动设备。
