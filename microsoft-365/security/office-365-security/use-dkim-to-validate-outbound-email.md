@@ -20,12 +20,12 @@ ms.custom:
 description: 了解如何结合使用域密钥识别邮件 (DKIM) 和 Microsoft 365，以确保目标电子邮件系统信任从自定义域发送的邮件。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 55a7bf612d121364ed64c159a450b6cf035d3837
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 7894375cf7dd7973a7c3dc0160dbaa084823e9d4
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50286425"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50918638"
 ---
 # <a name="use-dkim-to-validate-outbound-email-sent-from-your-custom-domain"></a>使用 DKIM 验证从自定义域发送的出站电子邮件
 
@@ -88,7 +88,7 @@ Microsoft 365 自动为它的初始“onmicrosoft.com”域设置 DKIM。 这意
 ## <a name="manually-upgrade-your-1024-bit-keys-to-2048-bit-dkim-encryption-keys"></a>手动将 1024 位密钥升级到 2048 位 DKIM 加密密钥
 <a name="1024to2048DKIM"> </a>
 
-由于 DKIM 键同时支持 1024 位和 2048 位版，这些说明将告诉你如何在 [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)中将 1024 位密钥升级到 2048。 以下步骤针对的是两种用例，请选择最适合你的配置的步骤。
+由于 DKIM 键同时支持 1024 位和 2048 位版，这些说明将告诉你如何在 [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)中将 1024 位密钥升级到 2048。 以下步骤针对的是两种用例，请选择最适合你的配置的步骤。
 
 - 如果 **配置了 DKIM**，请通过运行以下命令轮换位数：
 
@@ -115,7 +115,7 @@ Get-DkimSigningConfig -Identity <Domain for which the configuration was set> | F
 
 若要轮换到第二个选择器，可以采用下列方法：a) 让 Microsoft 365 服务轮换选择器，并在未来 6 个月内升级到 2048 位，或 b) 在确认使用 2048 位 4 天后，使用上面列出的相应 cmdlet 手动轮换第二个选择器密钥。
 
-有关详细语法和参数信息，请参阅以下文章： [Rotate-DkimSigningConfig](https://docs.microsoft.com/powershell/module/exchange/rotate-dkimsigningconfig)、 [New-DkimSigningConfig](https://docs.microsoft.com/powershell/module/exchange/new-dkimsigningconfig)和 [Get-DkimSigningConfig](https://docs.microsoft.com/powershell/module/exchange/get-dkimsigningconfig)。
+有关详细语法和参数信息，请参阅以下文章： [Rotate-DkimSigningConfig](/powershell/module/exchange/rotate-dkimsigningconfig)、 [New-DkimSigningConfig](/powershell/module/exchange/new-dkimsigningconfig)和 [Get-DkimSigningConfig](/powershell/module/exchange/get-dkimsigningconfig)。
 
 ## <a name="steps-you-need-to-do-to-manually-set-up-dkim"></a>手动设置 DKIM 需要执行的步骤
 <a name="SetUpDKIMO365"> </a>
@@ -132,7 +132,7 @@ Get-DkimSigningConfig -Identity <Domain for which the configuration was set> | F
 对于您要为其在 DNS 中添加 DKIM 签名的每个域，您需要发布两条 CNAME 记录。
 
 > [!NOTE]
-> 如果尚未阅读完整文章，则你可能遗漏了此节约时间的 PowerShell 连接信息： [连接到 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)。
+> 如果尚未阅读完整文章，则你可能遗漏了此节约时间的 PowerShell 连接信息： [连接到 Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)。
 
 在 Exchange Online PowerShell 中运行以下命令以创建选择器记录：
 
@@ -215,7 +215,7 @@ TTL:                3600
 >:::image type="content" source="../../media/DKIMNoKeysSavedForThisDomain.PNG" alt-text="“此域未保存 DKIM 密钥。”错误。":::
 > 如果你首次配置 DKIM，并看到错误“此域未保存 DKIM 密钥。” 请完成下面步骤 2 中的命令（例如，*Set-DkimSigningConfig -Identity contoso.com -Enabled $true*），以查看密钥。
 
-1. [连接到 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)。
+1. [连接到 Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)。
 
 2. 运行以下命令：
 
@@ -266,7 +266,7 @@ TTL:                3600
 
 ### <a name="to-disable-the-dkim-signing-policy-by-using-windows-powershell"></a>使用 Windows PowerShell 禁用 DKIM 签名策略
 
-1. [连接到 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)。
+1. [连接到 Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)。
 
 2. 为您要为其禁用 DKIM 签名的每个域运行以下命令之一。
 
@@ -359,4 +359,4 @@ Return-Path: <communication@bulkemailprovider.com>
 
 ## <a name="more-information"></a>更多信息
 
-通过 PowerShell [Rotate DkimSigningConfig](https://docs.microsoft.com/powershell/module/exchange/rotate-dkimsigningconfig) 进行密钥轮换
+通过 PowerShell [Rotate DkimSigningConfig](/powershell/module/exchange/rotate-dkimsigningconfig) 进行密钥轮换

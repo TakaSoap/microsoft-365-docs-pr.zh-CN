@@ -17,18 +17,18 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: 使用 Microsoft Endpoint Manager 管理管理设备、电脑和其他终结点。
-ms.openlocfilehash: bca3e8e79264a2218dd1036e50be1c9ab29d2b8a
-ms.sourcegitcommit: ae646779d84e993cf80b1207e76b856a21be5790
+ms.openlocfilehash: db06c7d65da1939ffbb04db64ea901e211b074f6
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "49749595"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50918334"
 ---
 # <a name="step-4-deploy-endpoint-management-for-your-devices-pcs-and-other-endpoints"></a>步骤 4. 部署设备、电脑和其他终结点的终结点管理
 
 使用远程工作者，需要支持越来越多的个人设备。 终结点管理是一种基于策略的安全方法，要求设备在获得对资源的访问权限之前满足特定条件。 Microsoft Endpoint Manager 提供新式管理功能，使你的数据在云中和本地保持安全。 
 
-[Microsoft Endpoint Manager](https://docs.microsoft.com/mem/endpoint-manager-overview) 将你可能已了解和正在使用的下列服务结合在一起，提供相关服务和工具用来管理移动设备、台式计算机、虚拟机、嵌入式设备和服务器。
+[Microsoft Endpoint Manager](/mem/endpoint-manager-overview) 将你可能已了解和正在使用的下列服务结合在一起，提供相关服务和工具用来管理移动设备、台式计算机、虚拟机、嵌入式设备和服务器。
 
 ![Microsoft 365 的终结点管理组件](../media/empower-people-to-work-remotely/endpoint-managment-step-grid.png)
 
@@ -40,13 +40,13 @@ Microsoft Intune 是一种基于云的服务，侧重于 Microsoft 365 所包含
 
 - **MAM：** 远程工作者可能不希望你对他们的个人设备（也称为自带 (BYOD) 设备）拥有完全控制权。 你可以为你的远程工作者提供各种选项，但仍保护你的组织。 例如，如果远程工作者希望拥有对组织资源的完整访问权限，则可以注册其设备。 或者，如果这些用户仅希望访问电子邮件或 Microsoft Teams，则可使用需要多重身份验证 (MFA) 的应用保护策略来使用这些应用。
 
-有关详细信息，请参阅此 [Microsoft Intune 概述](https://docs.microsoft.com/intune/fundamentals/what-is-intune)。
+有关详细信息，请参阅此 [Microsoft Intune 概述](/intune/fundamentals/what-is-intune)。
 
 ## <a name="configuration-manager"></a>Configuration Manager
 
 Configuration Manager 是一种本地管理解决方案，可用于管理网络上或基于 Internet 的台式机、服务器和笔记本电脑。 使用 Configuration Manager 部署应用程序、软件更新和操作系统。 还可以实时监视客户端上的合规性、查询和操作等。 可通过云使其与 Intune、Azure AD、Microsoft Defender 高级威胁防护和其他云服务集成。 
 
-有关详细信息，请参阅此 [Configuration Manager 概述](https://docs.microsoft.com/mem/configmgr/core/understand/introduction)。
+有关详细信息，请参阅此 [Configuration Manager 概述](/mem/configmgr/core/understand/introduction)。
 
 ## <a name="co-management"></a>协同管理
 
@@ -54,7 +54,7 @@ Configuration Manager 是一种本地管理解决方案，可用于管理网络�
 
 合作管理将使用基于 Intune 的云功能，包括条件访问和强制实施设备合规性。 你可以将某些任务保留在本地，同时在云中运行其他任务。
 
-有关详细信息，请参阅此[协同管理概述](https://docs.microsoft.com/mem/configmgr/comanage/overview)。
+有关详细信息，请参阅此[协同管理概述](/mem/configmgr/comanage/overview)。
 
 ## <a name="desktop-analytics"></a>桌面分析
 
@@ -68,7 +68,7 @@ Configuration Manager 是一种本地管理解决方案，可用于管理网络�
 - 创建可在最小的一组设备内代表全部应用程序和驱动程序的试点组。
 - 将 Windows 10 部署到试点设备和生产管理设备。
 
-有关详细信息，请参阅此[桌面分析概述](https://docs.microsoft.com/mem/configmgr/desktop-analytics/overview)。
+有关详细信息，请参阅此[桌面分析概述](/mem/configmgr/desktop-analytics/overview)。
 
 ## <a name="windows-autopilot"></a>Windows Autopilot
 
@@ -79,13 +79,13 @@ Windows Autopilot 是一个零接触、自助式的 Windows 部署平台。 它�
 - 从用户的角度来看，只需几个简单操作便可以使其设备准备就绪，以供使用。 
 - 从 IT 专业人员的角度来看，最终用户所需的交互将只有连接到网络并验证其凭据。
 
-有关详细信息，请参阅此 [Windows Autopilot 概述](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-autopilot)。
+有关详细信息，请参阅此 [Windows Autopilot 概述](/windows/deployment/windows-autopilot/windows-autopilot)。
 
 ## <a name="admin-technical-resources-for-endpoint-management"></a>用于终结点管理的管理员技术资源
 
 - [Microsoft 365 设备管理指南](../enterprise/device-management-roadmap-microsoft-365.md)
-- [如何注册用于移动设备管理的不同类型的设备](https://docs.microsoft.com/mem/intune/enrollment/device-enrollment)
-- [如何向最终用户讲解 Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/end-user-educate)
+- [如何注册用于移动设备管理的不同类型的设备](/mem/intune/enrollment/device-enrollment)
+- [如何向最终用户讲解 Microsoft Intune](/mem/intune/fundamentals/end-user-educate)
  
 ## <a name="results-of-step-4"></a>步骤 4 的结果
 

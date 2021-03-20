@@ -18,16 +18,16 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: 了解如何使用 PowerShell 从命令行来创建和发布保留标签，而不受 Microsoft 365合规中心影响。
-ms.openlocfilehash: 5b8bb7a08c9794139e840d59f9238d858e15dd4e
-ms.sourcegitcommit: 2b8c3fc39a7cbd4ca35e98dca430d2470cd2c925
+ms.openlocfilehash: 1c3a1e1b9e363659b276d2f11a929308f43737b3
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "47426979"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50918218"
 ---
 # <a name="create-and-publish-retention-labels-by-using-powershell"></a>使用 PowerShell 创建和发布保留标签
 
->*[Microsoft 365 安全性与合规性许可指南](https://aka.ms/ComplianceSD)。*
+>*[Microsoft 365 安全性与合规性许可指南](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。*
 
 决定使用[保留标签](retention.md)帮助您保留或删除 Microsoft 365 中的文档和电子邮件后，可能会经意识到要创建和发布许多甚至可能数百个保留标签。 批量创建保留标签的建议方法是使用 Microsoft 365 合规中心中的“[文件计划](file-plan-manager.md)”。 但是，你也可以使用 [PowerShell](retention.md#powershell-cmdlets-for-retention-policies-and-retention-labels)。
   
@@ -51,7 +51,7 @@ ms.locfileid: "47426979"
 
 2. 将文本转换为列： **数据** 制表符\> **文本至列** \> **分隔** \> **逗号**\> **常规**
 
-2. 将示例替换为自己的保留标签和设置的条目。 若要详细了解参数值，请参阅 [New-ComplianceTag](https://go.microsoft.com/fwlink/?linkid=866511)。
+2. 将示例替换为自己的保留标签和设置的条目。 若要详细了解参数值，请参阅 [New-ComplianceTag](/powershell/module/exchange/new-compliancetag)。
 
 3. 将工作表另存为 .csv 文件，保存在便于后续步骤的位置。 例如：C:\>Scripts\Labels.csv
 
@@ -78,7 +78,7 @@ LabelName_t_4,Record label tag - financial,$true,Keep,730,CreationAgeInDays,
 
 2. 将文本转换为列： **数据** 制表符\> **文本至列** \> **分隔** \> **逗号**\> **常规**
 
-2. 将示例替换为自己的保留标签策略和其设置的条目。 若要详细了解此 cmdlet 的参数值，请参阅 [New-RetentionCompliancePolicy](https://docs.microsoft.com/powershell/module/exchange/new-retentioncompliancepolicy)。
+2. 将示例替换为自己的保留标签策略和其设置的条目。 若要详细了解此 cmdlet 的参数值，请参阅 [New-RetentionCompliancePolicy](/powershell/module/exchange/new-retentioncompliancepolicy)。
 
 3. 将工作表另存为 .csv 文件，保存在便于后续步骤的位置。 例如：`<path>Policies.csv`
 
@@ -736,7 +736,7 @@ if ($ResultCSV)
 
 ## <a name="step-4-run-the-powershell-script"></a>第 4 步：运行 PowerShell 脚本
 
-首先，[连接到安全与合规中心 PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell)。
+首先，[连接到安全与合规中心 PowerShell](/powershell/exchange/connect-to-scc-powershell)。
 
 然后，运行创建并发布保留标签的脚本：
   
@@ -761,5 +761,3 @@ if ($ResultCSV)
 ```
 <path>.\Log_Publish_Compliance_Tag_01112018_151239.txt
 ```
-
-

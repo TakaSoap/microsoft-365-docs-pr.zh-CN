@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: 3f7dde1a-a8ea-4366-86da-8ee6777f357c
 description: 在 Exchange 混合部署中，使用安全与合规中心中的内容搜索工具搜索并导出本地用户的 Teams 聊天数据。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 7bdcba3a14b2ee6d14210d3525e20ec507166a5d
-ms.sourcegitcommit: 537e513a4a232a01e44ecbc76d86a8bcaf142482
+ms.openlocfilehash: 39951ce125f86748beab12cf1998075e26ad734b
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "50029712"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50917184"
 ---
 # <a name="search-for-teams-chat-data-for-on-premises-users"></a>搜索 Teams 中本地用户的聊天数据
 
@@ -97,7 +97,7 @@ ms.locfileid: "50029712"
 
 你可以使用安全与合规中心 PowerShell 中的 **New-ComplianceSearch** 和 **Set-ComplianceSearch** cmdlet 来搜索本地用户的 Teams 聊天数据。 如前文所述，无需提交支持请求即可使用 PowerShell 来搜索本地用户的 Teams 聊天数据。
   
-1. [连接到安全与合规中心 PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell)。
+1. [连接到安全与合规中心 PowerShell](/powershell/exchange/connect-to-scc-powershell)。
 
 2. 运行以下 PowerShell 命令以创建用于搜索本地用户 Teams 聊天数据的内容搜索。
 
@@ -117,11 +117,11 @@ ms.locfileid: "50029712"
   
 有关使用这些 cmdlet 的详细信息，请参阅：
   
-- [New-ComplianceSearch](https://docs.microsoft.com/powershell/module/exchange/new-compliancesearch)
+- [New-ComplianceSearch](/powershell/module/exchange/new-compliancesearch)
 
-- [Set-ComplianceSearch](https://docs.microsoft.com/powershell/module/exchange/set-compliancesearch)
+- [Set-ComplianceSearch](/powershell/module/exchange/set-compliancesearch)
 
-- [Start-ComplianceSearch](https://docs.microsoft.com/powershell/module/exchange/start-compliancesearch)
+- [Start-ComplianceSearch](/powershell/module/exchange/start-compliancesearch)
 
 ## <a name="known-issues"></a>已知问题
 
@@ -131,7 +131,7 @@ ms.locfileid: "50029712"
 
 **本地用户基于云的邮箱位于何处？**
   
-Teams 聊天数据存储在本地用户的“首选数据位置”（PDL）中。 PDL 同时在单一地理和多地理环境中都授予支持。 有关详细信息，请参阅 [Microsoft 365 多地理位置](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-multi-geo)。
+Teams 聊天数据存储在本地用户的“首选数据位置”（PDL）中。 PDL 同时在单一地理和多地理环境中都授予支持。 有关详细信息，请参阅 [Microsoft 365 多地理位置](../enterprise/microsoft-365-multi-geo.md)。
   
  **除了提交支持请求以外，还有其他要求吗？**
   

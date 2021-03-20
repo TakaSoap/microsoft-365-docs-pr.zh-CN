@@ -15,12 +15,12 @@ ms.collection:
 - M365-subscription-management
 ms.custom: ''
 description: 一个虚构但具有代表性的全球组织如何部署 Microsoft 365 解决方案。
-ms.openlocfilehash: 1e06da623a9d580d71823ab030976b213a9e7022
-ms.sourcegitcommit: 6fc6aaa2b7610e148f41018abd229e3c55b2f3d0
+ms.openlocfilehash: 0c11b849f75e5707c5f49762c0b279a5dbfb2fd1
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49620547"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50918414"
 ---
 # <a name="microsoft-365-solutions-for-the-contoso-corporation"></a>Contoso Corporation 的 Microsoft 365 解决方案
 
@@ -36,6 +36,6 @@ Contoso 针对 Microsoft 365 企业版的总体目标是通过使用云服务将
 
 - [负责最高机密项目的独立团队](contoso-team-for-top-secret-project.md)
 
-- [将他们的本地用户迁移到 Teams，以实现统一沟通、协作和语音](https://docs.microsoft.com/MicrosoftTeams/voice-case-study-overview)
+- [将他们的本地用户迁移到 Teams，以实现统一沟通、协作和语音](/MicrosoftTeams/voice-case-study-overview)
 
 - [为 Microsoft Teams、Exchange 和 Yammer 通信配置攻击性语言策略](../compliance/communication-compliance-case-study.md)

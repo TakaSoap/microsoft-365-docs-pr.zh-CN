@@ -1,5 +1,5 @@
 ---
-title: 使用移动设备管理工具的板载 Windows 10 设备
+title: 使用移动设备管理工具载入 Windows 10 设备
 f1.keywords: NOCSH
 ms.author: chrfox
 author: chrfox
@@ -13,69 +13,69 @@ ms.collection:
 - M365-security-compliance
 search.appverid:
 - MET150
-description: 使用移动设备管理工具在设备上部署配置包，以使其载入服务。
-ms.openlocfilehash: 1480c918589a1f00e00ceb1233e9a62887ccff32
-ms.sourcegitcommit: 6647055154002c7d3b8f7ce25ad53c9636bc8066
+description: 使用移动设备管理工具在设备上部署配置包，以便它们可以载入到服务。
+ms.openlocfilehash: 1ad1115308257fa3ce63f10edebb9129638fd52f
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "48769408"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50917988"
 ---
-# <a name="onboard-windows-10-devices-using-mobile-device-management-tools"></a>使用移动设备管理工具的板载 Windows 10 设备
+# <a name="onboard-windows-10-devices-using-mobile-device-management-tools"></a>使用移动设备管理工具载入 Windows 10 设备
 
 **适用于：**
 
-- [Microsoft 365 Endpoint data 丢失防护 (DLP) ](/microsoft-365/compliance/endpoint-dlp-learn-about)
+- [Microsoft 365 终结点数据丢失防护 (DLP) ](./endpoint-dlp-learn-about.md)
 
-您可以使用 (MDM) 解决方案的移动设备管理来配置设备。 Microsoft 365 终结点数据丢失防护通过提供 OMA-URIs 来创建用于管理设备的策略，从而支持 MDMs。
+可以使用移动设备管理 (MDM) 解决方案配置设备。 Microsoft 365 终结点数据丢失防护通过提供用于创建OMA-URIs管理设备的策略来支持 MDM。
 
 
-## <a name="before-you-begin"></a>准备工作
-如果使用的是 Microsoft Intune，则必须注册设备 MDM。 否则，将无法成功应用设置。 
+## <a name="before-you-begin"></a>开始之前
+如果你使用的是 Microsoft Intune，则必须注册设备 MDM。 否则，设置将不会成功应用。 
 
-有关使用 Microsoft Intune 启用 MDM 的详细信息，请参阅 [Device 注册 (Microsoft intune) ](https://docs.microsoft.com/mem/intune/enrollment/device-enrollment)。
+有关使用 Microsoft Intune 启用 MDM 的信息，请参阅 Microsoft [Intune (设备) 。 ](/mem/intune/enrollment/device-enrollment)
 
-## <a name="onboard-devices-using-microsoft-intune"></a>使用 Microsoft Intune 的板载设备
+## <a name="onboard-devices-using-microsoft-intune"></a>使用 Microsoft Intune 载入设备
 
-按照 [Intune](https://docs.microsoft.com/intune/advanced-threat-protection)中的说明进行操作。
-
-> [!NOTE]
-> - **载入设备策略的运行状况状态** 使用只读属性，不能修正。
-
-## <a name="offboard-and-monitor-devices-using-mobile-device-management-tools"></a>使用移动设备管理工具分离和监控设备
-
-出于安全考虑，用于分离设备的包将在下载后的30天后过期。 发送到设备的已过期的脱离程序包将被拒绝。 下载一个脱离程序包时，系统会通知你提供程序包到期日期，并且它也将包含在包名称中。
+按照 [Intune 中的说明操作](/intune/advanced-threat-protection)。
 
 > [!NOTE]
-> 无法同时在同一设备上部署载入和脱离策略，否则会导致不可预测的冲突。
+> - 载入 **设备的运行状况策略使用** 只读属性，并且无法修正。
 
-1. 从 [Microsoft 合规性中心](https://compliance.microsoft.com/)获取脱离程序包。
+## <a name="offboard-and-monitor-devices-using-mobile-device-management-tools"></a>使用移动设备管理工具离开并监视设备
 
-2. 在导航窗格中，选择 " **设置**  >  **设备加入**  >  **脱离** "。
+出于安全考虑，用于"载出"设备的程序包将在下载日期 30 天后过期。 发送到设备的过期载出包将被拒绝。 下载载出包时，你将收到程序包到期日期的通知，该日期也将包含在程序包名称中。
 
-3. 在 " **部署方法** " 字段中，选择 " **移动设备管理/Microsoft Intune** "。
+> [!NOTE]
+> 载入和载出策略不得同时部署在同一设备上，否则将导致不可预知的冲突。
+
+1. 从 Microsoft 合规性中心获取 [载出包](https://compliance.microsoft.com/)。
+
+2. 在导航窗格中，选择"**设置**  >  **""设备载入**  >  **""载出"。**
+
+3. 在"**部署方法"** 字段中，选择 **"移动设备管理/Microsoft Intune"。**
     
-4. 单击 " **下载包** "，并保存 .zip 文件。
+4. 单击 **"下载程序包**"，然后保存 .zip 文件。
 
-5. 将 .zip 文件的内容提取到一个共享的只读位置，该位置可供将部署该包的网络管理员访问。 应具有一个名为 *DEVICECOMPLIANCE_VALID_UNTIL_YYYY MM 的* 文件。
+5. 将 .zip 文件的内容提取到将部署包的网络管理员可以访问的共享只读位置。 你应该有一个名为 *DeviceCompliance_valid_until_YYYY-MM-DD.offboarding 的文件*。
 
-6. 使用 Microsoft Intune 自定义配置策略部署以下受支持的 OMA URI 设置。
+6. 使用 Microsoft Intune 自定义配置策略部署以下受支持的 OMA-URI 设置。
 
       OMA-URI：./Device/Vendor/MSFT/WindowsAdvancedThreatProtection/Offboarding      
-      日期类型： String      
-      值： [从 DeviceCompliance_valid_until_YYYY-DD 文件的内容复制并粘贴值]
+      日期类型：String      
+      值：[复制并粘贴 DeviceCompliance_valid_until_YYYY-MM-DD.offboarding 文件的内容中的值]
 
-有关 Microsoft Intune 策略设置的详细信息，请参阅 [Microsoft intune 中的 Windows 10 策略设置](https://docs.microsoft.com/intune/deploy-use/windows-10-policy-settings-in-microsoft-intune)。
+有关 Microsoft Intune 策略设置详细信息，请参阅 Microsoft Intune 中的 [Windows 10 策略设置](/intune/deploy-use/windows-10-policy-settings-in-microsoft-intune)。
 
 > [!NOTE]
-> **Offboarded 设备策略的运行状况状态** 使用只读属性，不能修正。
+> " **载出设备的运行状况状态"策略** 使用只读属性，并且无法修正。
 
 > [!IMPORTANT]
-> 脱离将导致设备停止向门户发送传感器数据，但设备中的数据（包括对其已有的任何警报的引用）将保留最长6个月。
+> "载出"会导致设备停止向门户发送传感器数据，但设备数据（包括对已保留的任何警报的引用）最多保留 6 个月。
 
 ## <a name="related-topics"></a>相关主题
-- [使用组策略的板载 Windows 10 设备](dlp-configure-endpoints-gp.md)
-- [使用 Microsoft 终结点配置管理器的板载 Windows 10 设备](dlp-configure-endpoints-sccm.md)
-- [使用本地脚本的板载 Windows 10 设备](dlp-configure-endpoints-script.md)
-- [ (VDI) 设备的板载非永久性虚拟桌面基础结构](dlp-configure-endpoints-vdi.md)
-- [解决 Microsoft Defender 高级威胁防护载入问题](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding)
+- [使用组策略载入 Windows 10 设备](dlp-configure-endpoints-gp.md)
+- [使用 Microsoft Endpoint Configuration Manager 载入 Windows 10 设备](dlp-configure-endpoints-sccm.md)
+- [使用本地脚本载入 Windows 10 设备](dlp-configure-endpoints-script.md)
+- [载入非持久性虚拟桌面基础结构 (VDI) 设备。](dlp-configure-endpoints-vdi.md)
+- [Microsoft Defender 高级威胁防护载入问题疑难解答](/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding)

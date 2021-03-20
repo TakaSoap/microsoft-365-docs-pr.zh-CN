@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: 了解如何定义和管理 DLP 策略的警报。
-ms.openlocfilehash: 7bc9d9b59c0424792f995be42591548b758c99ec
-ms.sourcegitcommit: 89095172c9c4793d56645b4c885ac8e30936bd0a
+ms.openlocfilehash: 0594cee5208049aef16dee6fa03954faae2a1cdd
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50766417"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50917858"
 ---
 # <a name="configure-and-view-alerts-for-dlp-polices-preview"></a>配置和查看 DLP 策略警报 (预览) 
 
@@ -44,7 +44,7 @@ ms.locfileid: "50766417"
     -   设备
 -   **高级警报配置选项**：这些选项是 DLP 策略创作流的一部分。 使用它们创建丰富的警报配置。 你可以根据事件数或泄露数据的大小创建单个事件警报或聚合警报。
 
-## <a name="before-you-begin"></a>准备工作
+## <a name="before-you-begin"></a>开始之前
 
 在开始之前，请确保你具有必要的先决条件：
 
@@ -54,9 +54,9 @@ ms.locfileid: "50766417"
 
 ### <a name="licensing-for-the-dlp-alert-management-dashboard"></a>DLP 警报管理仪表板的许可
 
-Office 365 DLP 的所有符合条件的租户都可以访问新的 DLP 警报管理仪表板。 To get started， you should be eligible for Office 365 DLP for Exchange Online， SharePoint Online， and OneDrive for Business. 有关 Office 365 DLP 的许可要求详细信息，请参阅哪些许可证为用户提供从服务中获益[的权利？。](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#which-licenses-provide-the-rights-for-a-user-to-benefit-from-the-service-16)
+Office 365 DLP 的所有符合条件的租户都可以访问新的 DLP 警报管理仪表板。 To get started， you should be eligible for Office 365 DLP for Exchange Online， SharePoint Online， and OneDrive for Business. 有关 Office 365 DLP 的许可要求详细信息，请参阅哪些许可证为用户提供从服务中获益[的权利？。](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#which-licenses-provide-the-rights-for-a-user-to-benefit-from-the-service-16)
 
-参与 Endpoint [DLP](https://docs.microsoft.com/microsoft-365/compliance/endpoint-dlp-learn-about?view=o365-worldwide) 公共预览版或符合 [Teams DLP](https://docs.microsoft.com/microsoft-365/compliance/dlp-microsoft-teams?view=o365-worldwide) 条件的客户将在 DLP 警报管理仪表板中查看其终结点 DLP 策略警报和 Teams DLP 策略警报。
+参与 Endpoint [DLP](./endpoint-dlp-learn-about.md?view=o365-worldwide) 公共预览版或符合 [Teams DLP](./dlp-microsoft-teams.md?view=o365-worldwide) 条件的客户将在 DLP 警报管理仪表板中查看其终结点 DLP 策略警报和 Teams DLP 策略警报。
 
 ### <a name="licensing-for-alert-configuration-options"></a>警报配置选项的许可
 

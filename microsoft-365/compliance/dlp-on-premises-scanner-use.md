@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 了解如何使用 Microsoft 365 本地扫描仪扫描停止的数据，并执行本地文件共享和本地 SharePoint 文件夹和文档库的安全操作。
-ms.openlocfilehash: 34be93f5c9980a7f8ea8ad31b708af14a8725f73
-ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
+ms.openlocfilehash: c46b67ca392732616329bad138166c892cd06640
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "50417335"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50917818"
 ---
 # <a name="use-the-microsoft-365-data-loss-prevention-on-premises-scanner-preview"></a>使用 Microsoft 365 本地扫描仪的数据丢失防护（预览）
 
@@ -47,7 +47,7 @@ DLP 本地扫描仪在几个区域出现数据
  
 #### <a name="microsoft-365-audit-log"></a>Microsoft 365 审核日志
 
-在公共预览期间，DLP 规则匹配项在审核日志 UI 中可用，请参阅 [在合规中心](search-the-audit-log-in-security-and-compliance.md)  中搜索审核日志，或由 [Search-UnifiedAuditLog](https://docs.microsoft.com/powershell/module/exchange/search-unifiedauditlog?view=exchange-ps) PowerShell 访问。
+在公共预览期间，DLP 规则匹配项在审核日志 UI 中可用，请参阅 [在合规中心](search-the-audit-log-in-security-and-compliance.md)  中搜索审核日志，或由 [Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog?view=exchange-ps) PowerShell 访问。
 
 #### <a name="aip"></a>AIP
 

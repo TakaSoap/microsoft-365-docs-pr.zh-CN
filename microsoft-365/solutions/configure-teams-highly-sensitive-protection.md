@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: 了解如何部署具有高度敏感数据保护的团队。
-ms.openlocfilehash: 7e746ebc81d1ccd9aea2953fd42004715f8d7819
-ms.sourcegitcommit: a6b998fef5bdb35ec6726c743a24fea721535fcd
+ms.openlocfilehash: fdc3c1ab2c780289b7405623779b8af89da8ba17
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50509262"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50916282"
 ---
 # <a name="configure-teams-with-protection-for-highly-sensitive-data"></a>配置具有高度敏感数据保护的团队
 
@@ -44,8 +44,8 @@ ms.locfileid: "50509262"
 
 有关与来宾安全共享的详细信息，请参阅以下资源：
 
-- [在与组织外人员共享文件时限制意外公开信息](https://docs.microsoft.com/microsoft-365/solutions/share-limit-accidental-exposure)
-- [创建安全的来宾共享环境](https://docs.microsoft.com/microsoft-365/solutions/create-secure-guest-sharing-environment)
+- [在与组织外人员共享文件时限制意外公开信息](./share-limit-accidental-exposure.md)
+- [创建安全的来宾共享环境](./create-secure-guest-sharing-environment.md)
 
 为允许或阻止来宾共享，我们将团队的敏感度标签与关联 SharePoint 网站的网站级别共享控件结合使用，这两者将在后面讨论。
 
@@ -53,7 +53,7 @@ ms.locfileid: "50509262"
 
 对于高度敏感级别的保护，我们将使用敏感度标签对团队进行分类。 此标签还可用于分类和解密此团队或其他团队，或者其他文件位置（如 SharePoint 或 OneDrive）中的单个文件。 
 
-首先，必须为 Teams 启用敏感度标签。 有关详细信息，请参阅[使用敏感度标签保护 Microsoft Teams、Office 365 组和 SharePoint 网站中的内容](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites)。
+首先，必须为 Teams 启用敏感度标签。 有关详细信息，请参阅[使用敏感度标签保护 Microsoft Teams、Office 365 组和 SharePoint 网站中的内容](../compliance/sensitivity-labels-teams-groups-sites.md)。
 
 如果已在组织中部署了敏感度标签，请考虑此标签与总体标签策略的匹配情况。 可根据需要更改名称或设置以满足组织的需求。
 
@@ -84,7 +84,7 @@ ms.locfileid: "50509262"
 22. 在“**数据库列自动标记**”页面中，单击“**下一步**”。
 23. 单击“**创建标签**”，然后单击“**完成**”。
 
-创建标签后，需要将其发布到使用它的用户。 对于敏感保护，我们将对所有用户提供该标签。 在 Microsoft 365 合规中心的“**信息保护**”页面的“**标签策略**”选项卡上发布标签。 如果你拥有适用于所有用户的现有策略，请将此标签添加到该策略。 如果需要创建新策略，请参阅[通过创建标签策略来发布灵敏度标签](https://docs.microsoft.com/microsoft-365/compliance/create-sensitivity-labels#publish-sensitivity-labels-by-creating-a-label-policy)。
+创建标签后，需要将其发布到使用它的用户。 对于敏感保护，我们将对所有用户提供该标签。 在 Microsoft 365 合规中心的“**信息保护**”页面的“**标签策略**”选项卡上发布标签。 如果你拥有适用于所有用户的现有策略，请将此标签添加到该策略。 如果需要创建新策略，请参阅[通过创建标签策略来发布灵敏度标签](../compliance/create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy)。
 
 ## <a name="create-a-team"></a>创建团队
 
@@ -108,7 +108,7 @@ ms.locfileid: "50509262"
 2. 在“**设置**”选项卡上，展开“**成员权限**”。
 3. 清除“**允许成员创建专用频道**”复选框。
 
-还可以使用“[团队策略](https://docs.microsoft.com/MicrosoftTeams/teams-policies)”来控制谁可以创建专用频道。
+还可以使用“[团队策略](/MicrosoftTeams/teams-policies)”来控制谁可以创建专用频道。
 
 ## <a name="sharepoint-settings"></a>SharePoint 设置
 
@@ -135,7 +135,7 @@ ms.locfileid: "50509262"
 6. 在“默认共享链接类型”下，清除“**与组织级别设置相同**”复选框，然后选择“**具有现有访问权限的人员**”。
 7. 单击“**保存**”。
 
-如果要将在团队创建过程中编制脚本，可使用含有以下参数的 [Set-sposite](https://docs.microsoft.com/powershell/module/sharepoint-online/set-sposite)：
+如果要将在团队创建过程中编制脚本，可使用含有以下参数的 [Set-sposite](/powershell/module/sharepoint-online/set-sposite)：
 
 - `-SharingCapability Disabled` 用于禁用来宾共享（默认启用）
 - `-DefaultSharingLinkType Internal` 用于更改“*指定人员*”的默认共享链接
@@ -159,5 +159,4 @@ ms.locfileid: "50509262"
 
 ## <a name="see-also"></a>另请参阅
 
-[创建和配置敏感度标签及其策略](https://docs.microsoft.com/microsoft-365/compliance/create-sensitivity-labels)
-
+[创建和配置敏感度标签及其策略](../compliance/create-sensitivity-labels.md)

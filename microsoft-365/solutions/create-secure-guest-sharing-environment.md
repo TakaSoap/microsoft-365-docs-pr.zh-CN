@@ -17,12 +17,12 @@ ms.custom:
 localization_priority: Priority
 f1.keywords: NOCSH
 description: 了解可用于在 Microsoft 365 中创建安全来宾共享环境的选项，提供来宾访问以改进协作。
-ms.openlocfilehash: 28b2efba9f0c4ba17811a9871b05ab9f5a7a4839
-ms.sourcegitcommit: 8f1721de52dbe3a12c11a0fa5ed0ef5972ca8196
+ms.openlocfilehash: 0eb999d48bc0976d7c2bb32ff1bdba8d63409d81
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/17/2021
-ms.locfileid: "50838662"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50918462"
 ---
 # <a name="create-a-secure-guest-sharing-environment"></a>创建安全的来宾共享环境
 
@@ -39,7 +39,7 @@ ms.locfileid: "50838662"
 - 自动为包含敏感信息类型的文档分配敏感度标签。
 - 自动从带有敏感度标签的文件中删除来宾访问。
 
-本文中所述的某些选项要求来宾在 Azure Active Directory 中具有帐户。 若要确保在与来宾共享文件和文件夹时在目录中包含这些来宾，请使用[与 Azure AD B2B 预览版的 SharePoint 和 OneDrive 集成](https://docs.microsoft.com/sharepoint/sharepoint-azureb2b-integration-preview)。
+本文中所述的某些选项要求来宾在 Azure Active Directory 中具有帐户。 若要确保在与来宾共享文件和文件夹时在目录中包含这些来宾，请使用[与 Azure AD B2B 预览版的 SharePoint 和 OneDrive 集成](/sharepoint/sharepoint-azureb2b-integration-preview)。
 
 请注意，我们不在本文中讨论如何启用来宾共享设置。 有关为不同方案启用来宾共享的详细信息，请参阅[与组织外部人员进行协作](collaborate-with-people-outside-your-organization.md)。
 
@@ -66,7 +66,7 @@ ms.locfileid: "50838662"
 
 ### <a name="more-information"></a>更多信息
 
-[规划 Azure Active Directory 多重身份验证部署](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfa-getstarted)
+[规划 Azure Active Directory 多重身份验证部署](/azure/active-directory/authentication/howto-mfa-getstarted)
 
 ## <a name="set-up-a-terms-of-use-for-guests"></a>设置来宾的使用条款
 
@@ -108,11 +108,11 @@ ms.locfileid: "50838662"
 现在，当来宾首次尝试访问组织中的内容、团队或网站时，必须接受使用条款。
 
 > [!NOTE]
-> 使用条件访问需要 Azure AD Premium P1 许可证。 有关详细信息，请参阅[什么是条件访问](https://docs.microsoft.com/azure/active-directory/conditional-access/overview)。
+> 使用条件访问需要 Azure AD Premium P1 许可证。 有关详细信息，请参阅[什么是条件访问](/azure/active-directory/conditional-access/overview)。
 
 ### <a name="more-information"></a>更多信息
 
-[Azure Active Directory 使用条款](https://docs.microsoft.com/azure/active-directory/conditional-access/terms-of-use)
+[Azure Active Directory 使用条款](/azure/active-directory/conditional-access/terms-of-use)
 
 ## <a name="set-up-guest-access-reviews"></a>设置来宾访问评审
 
@@ -145,15 +145,15 @@ ms.locfileid: "50838662"
 
 ### <a name="more-information"></a>更多信息
 
-[使用 Azure AD 访问评审管理来宾访问权限](https://docs.microsoft.com/azure/active-directory/governance/manage-guest-access-with-access-reviews)
+[使用 Azure AD 访问评审管理来宾访问权限](/azure/active-directory/governance/manage-guest-access-with-access-reviews)
 
-[在 Azure AD 访问评审中针对组或应用程序创建访问评审](https://docs.microsoft.com/azure/active-directory/governance/create-access-review)
+[在 Azure AD 访问评审中针对组或应用程序创建访问评审](/azure/active-directory/governance/create-access-review)
 
 ## <a name="set-up-web-only-access-for-guests"></a>为来宾用户设置仅 Web 访问权限
 
 通过要求来宾仅使用 Web 浏览器来访问团队、网站和文件，可以减少攻击面并简化管理。
 
-对于 Microsoft 365 组和团队，这是通过 Azure AD 条件访问策略完成的。 对于 SharePoint，这是在 SharePoint 管理中心中进行配置的。 （还可[使用敏感度标签限制来宾进行仅限于 Web 的访问](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites)。）
+对于 Microsoft 365 组和团队，这是通过 Azure AD 条件访问策略完成的。 对于 SharePoint，这是在 SharePoint 管理中心中进行配置的。 （还可[使用敏感度标签限制来宾进行仅限于 Web 的访问](../compliance/sensitivity-labels-teams-groups-sites.md)。）
 
 限制来宾对团队和组进行仅 Web 访问：
 
@@ -222,7 +222,7 @@ ms.locfileid: "50838662"
 
 ### <a name="more-information"></a>更多信息
 
-[自定义敏感信息类型](https://docs.microsoft.com/Office365/SecurityCompliance/custom-sensitive-info-types)
+[自定义敏感信息类型](/Office365/SecurityCompliance/custom-sensitive-info-types)
 
 ## <a name="create-an-auto-labeling-policy-to-assign-a-sensitivity-label-based-on-a-sensitive-information-type"></a>创建自动标记策略以基于敏感信息类型分配敏感度标签
 
@@ -252,11 +252,11 @@ ms.locfileid: "50838662"
 
 ### <a name="more-information"></a>更多信息
 
-[将敏感度标签自动应用于内容](https://docs.microsoft.com/microsoft-365/compliance/apply-sensitivity-label-automatically)
+[将敏感度标签自动应用于内容](../compliance/apply-sensitivity-label-automatically.md)
 
 ## <a name="create-a-dlp-policy-to-remove-guest-access-to-highly-sensitive-files"></a>创建 DLP 策略以删除来宾对高度敏感文件的访问
 
-可使用 [数据丢失防护（DLP）](https://docs.microsoft.com/microsoft-365/compliance/data-loss-prevention-policies) 阻止不需要的敏感内容访客共享。 数据丢失防护可以根据文件的敏感度标签采取措施并删除来宾访问权限。
+可使用 [数据丢失防护（DLP）](../compliance/data-loss-prevention-policies.md) 阻止不需要的敏感内容访客共享。 数据丢失防护可以根据文件的敏感度标签采取措施并删除来宾访问权限。
 
 创建 DLP 规则
 
@@ -287,9 +287,9 @@ ms.locfileid: "50838662"
 
 Microsoft 365 和 Azure Active Directory 中提供部分选项，可帮助保护来宾共享环境的安全。
 
-- 可创建允许或拒绝的共享域的列表，限制用户可以与之共享的人员。 有关详细信息，请参见“[按域限制共享 SharePoint 和 OneDrive 内容”](https://docs.microsoft.com/sharepoint/restricted-domains-sharing)和“[允许或组织邀请指定组织的 B2B 用户](https://docs.microsoft.com/azure/active-directory/b2b/allow-deny-list)”。
-- 可限制用户连接至的其他 Azure Active Directory 租户。 参见“[使用租户限制管理对 SaaS 云应用程序的访问权限](https://docs.microsoft.com/azure/active-directory/manage-apps/tenant-restrictions)”了解详细信息。
-- 可创建合作伙伴能够帮助管理访客用户的托管环境。 有关信息，请参见“[创建有访客用户的 B2B 外联网](https://docs.microsoft.com/Office365/Enterprise/b2b-extranet)”。
+- 可创建允许或拒绝的共享域的列表，限制用户可以与之共享的人员。 有关详细信息，请参见“[按域限制共享 SharePoint 和 OneDrive 内容”](/sharepoint/restricted-domains-sharing)和“[允许或组织邀请指定组织的 B2B 用户](/azure/active-directory/b2b/allow-deny-list)”。
+- 可限制用户连接至的其他 Azure Active Directory 租户。 参见“[使用租户限制管理对 SaaS 云应用程序的访问权限](/azure/active-directory/manage-apps/tenant-restrictions)”了解详细信息。
+- 可创建合作伙伴能够帮助管理访客用户的托管环境。 有关信息，请参见“[创建有访客用户的 B2B 外联网](/Office365/Enterprise/b2b-extranet)”。
 
 ## <a name="see-also"></a>另请参阅
 

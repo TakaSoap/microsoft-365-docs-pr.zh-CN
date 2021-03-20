@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: 了解如何部署具有基线保护级别的团队。
-ms.openlocfilehash: 11554dbd7e33a77c9f6397ae9c5e91669f537081
-ms.sourcegitcommit: 7ecd10b302b3b3dfa4ba3be3a6986dd3c189fbff
+ms.openlocfilehash: 4f38bf286b8ebd3edf6f7705299008566d2b7c8f
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "49921866"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50916330"
 ---
 # <a name="configure-teams-with-baseline-protection"></a>配置具有基线保护的团队
 
@@ -37,9 +37,9 @@ ms.locfileid: "49921866"
 
 |选项|信息|
 |:------|:-----------|
-|适用于 SPO、OneDrive 和 Teams 的安全附件|[安全附件](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-safe-attachments)<br>[Defender for Office 365 - SharePoint、OneDrive 和 Microsoft Teams](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-for-spo-odb-and-teams)|
-|安全文档|[Microsoft Defender for Office 365 中的安全文档](https://docs.microsoft.com/microsoft-365/security/office-365-security/safe-docs)|
-|适用于 Teams 的安全链接|[Teams 中 Office 365 安全链接](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-safe-links-for-teams)<br>[安全链接](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-safe-links)|
+|适用于 SPO、OneDrive 和 Teams 的安全附件|[安全附件](../security/office-365-security/atp-safe-attachments.md)<br>[Defender for Office 365 - SharePoint、OneDrive 和 Microsoft Teams](../security/office-365-security/atp-for-spo-odb-and-teams.md)|
+|安全文档|[Microsoft Defender for Office 365 中的安全文档](../security/office-365-security/safe-docs.md)|
+|适用于 Teams 的安全链接|[Teams 中 Office 365 安全链接](../security/office-365-security/atp-safe-links.md#safe-links-settings-for-microsoft-teamssafe-links-settings-for-microsoft-teams)<br>[安全链接](../security/office-365-security/atp-safe-links.md)|
 
 ## <a name="teams-guest-sharing"></a>团队来宾共享
 
@@ -59,7 +59,7 @@ ms.locfileid: "49921866"
 > [!NOTE]
 > 启用后，Teams 来宾设置最多可能需要二十四个小时才能生效。
 
-默认情况下，Office 365 组和 SharePoint 启用了来宾共享，但如果以前已更改了组织的任何来宾共享设置，建议参阅[在团队中与来宾协作](https://docs.microsoft.com/microsoft-365/solutions/collaborate-as-team)，以确保来宾共享在 Teams 中可用。
+默认情况下，Office 365 组和 SharePoint 启用了来宾共享，但如果以前已更改了组织的任何来宾共享设置，建议参阅[在团队中与来宾协作](./collaborate-as-team.md)，以确保来宾共享在 Teams 中可用。
 
 ## <a name="site-and-file-sharing"></a>网站和文件共享
 
@@ -71,7 +71,7 @@ ms.locfileid: "49921866"
 3. 在“**文件和文件夹链接**”下，选中“**仅限组织中的人员**”。
 4. 单击“**保存**”。
 
-为了获得最佳的来宾共享体验，我们还建议你启用 [SharePoint 和 OneDrive与 Azure AD B2B 集成](https://docs.microsoft.com/sharepoint/sharepoint-azureb2b-integration-preview)。
+为了获得最佳的来宾共享体验，我们还建议你启用 [SharePoint 和 OneDrive与 Azure AD B2B 集成](/sharepoint/sharepoint-azureb2b-integration-preview)。
 
 ## <a name="create-a-team"></a>创建团队
 
@@ -94,12 +94,12 @@ ms.locfileid: "49921866"
 
 Microsoft 365 提供了其他用于保护内容的方法。 考虑以下选项是否有助于提高组织的安全性。
 
-- 让来宾同意[使用条款](https://docs.microsoft.com/azure/active-directory/conditional-access/terms-of-use)。
-- 为来宾用户配置“[会话超时策略](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-session-lifetime)”。
-- 创建“[敏感信息类型](https://docs.microsoft.com/microsoft-365/compliance/custom-sensitive-info-types)”，并使用“[数据丢失保护](https://docs.microsoft.com/microsoft-365/compliance/data-loss-prevention-policies)”来设置有关访问敏感信息的策略。
+- 让来宾同意[使用条款](/azure/active-directory/conditional-access/terms-of-use)。
+- 为来宾用户配置“[会话超时策略](/azure/active-directory/conditional-access/howto-conditional-access-session-lifetime)”。
+- 创建“[敏感信息类型](../compliance/sensitive-information-type-learn-about.md)”，并使用“[数据丢失保护](../compliance/data-loss-prevention-policies.md)”来设置有关访问敏感信息的策略。
 
 ## <a name="see-also"></a>另请参阅
 
-[管理 Teams 中的会议策略](https://docs.microsoft.com/microsoftteams/meeting-policies-in-teams)
+[管理 Teams 中的会议策略](/microsoftteams/meeting-policies-in-teams)
 
-[内部风险管理入门](https://docs.microsoft.com/microsoft-365/compliance/insider-risk-management-configure)
+[内部风险管理入门](../compliance/insider-risk-management-configure.md)

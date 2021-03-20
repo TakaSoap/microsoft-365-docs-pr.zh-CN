@@ -20,12 +20,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 77d9a12f6a3620ecba8142cee331a55dfb671c3c
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: 18ab0065a4a6c90f61730a313eb8c54f538fafab
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50423239"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50918047"
 ---
 # <a name="get-started-with-communication-compliance"></a>通信合规性入门
 
@@ -128,7 +128,7 @@ ms.locfileid: "50423239"
 
 | **策略成员** | **支持的组** | **不支持的组** |
 |:-----|:-----|:-----|
-|受监督用户 <br> 不受监督用户 | 通讯组 <br> Microsoft 365 组 | 动态通讯组 <br> 嵌套通讯组 <br> 启用邮件的安全组 |
+|受监督用户 <br> 不受监督用户 | 通讯组 <br> Microsoft 365 组 | 动态通讯组 <br> 嵌套通讯组 <br> 启用邮件的安全组 <br> 具有动态成员身份的 Microsoft 365 组 |
 | 审阅者 | 无 | 通讯组 <br> 动态通讯组 <br> 嵌套通讯组 <br> 启用邮件的安全组 |
   
 在策略中分配通讯组时，策略会监视通讯组每个用户的所有电子邮件和 Teams 聊天。 在策略中分配 Microsoft 365 组时，策略会监视发送到该组的所有电子邮件和 Teams 聊天，而不是每个团队成员收到的单个电子邮件和聊天。
@@ -205,7 +205,7 @@ ms.locfileid: "50423239"
     - 选择有限条件字段，通常是要应用于该策略的敏感信息类型或关键字词典。
 
     >[!NOTE]
-    >如果要启用光学字符识别 [ (OCR)](communication-compliance-feature-reference.md#optical-character-recognition-ocr-preview)以扫描邮件中嵌入或附加的图像，以找到符合策略条件的打印或手写文本，请选择"自定义策略条件和百分比"，并启用从图像中提取打印或  >  **手写** 文本以进行评估。
+    >如果要启用光学字符识别 [ (OCR)](communication-compliance-feature-reference.md#optical-character-recognition-ocr-preview)以扫描邮件中嵌入或附加的图像，以找到符合策略条件的打印或手写文本，请选择"自定义策略条件和百分比"，并启用"从图像中提取打印或  >  **手写** 文本"进行评估。
 
     如果选择使用策略向导创建自定义策略，将需要：
 
@@ -228,7 +228,7 @@ ms.locfileid: "50423239"
       > [!CAUTION]
       > 我们正在弃用 **冒犯性语言** 内置分类器，因为它会生成大量误报。 请勿使用，如果当前正在使用，应将业务流程从其中移开。 我们建议改用 **威胁**、**猥亵** 和 **有针对性的骚扰** 内置分类器。
 
-    - 启用 [光学字符识别 (OCR) ](communication-compliance-feature-reference.md#optical-character-recognition-ocr-preview) 扫描邮件中嵌入或附加的图像，以找到符合策略条件的打印或手写文本。 对于自定义策略，必须在策略中配置一个或多个与文本、关键字、分类器或敏感信息类型关联的条件设置，以允许选择光学字符识别扫描。
+    - 启用 [光学字符识别 (OCR ](communication-compliance-feature-reference.md#optical-character-recognition-ocr-preview)) 扫描邮件中嵌入或附加的图像，以找到符合策略条件的打印或手写文本。 对于自定义策略，必须在策略中配置一个或多个与文本、关键字、分类器或敏感信息类型关联的条件设置，以允许选择光学字符识别扫描。
 
     - 定义要审阅的通信的百分比。
 

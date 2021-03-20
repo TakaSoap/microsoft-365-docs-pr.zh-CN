@@ -16,12 +16,12 @@ ms.custom:
 - M365solutions
 f1.keywords: NOCSH
 description: 了解如何管理 Microsoft 365 组、Teams、SharePoint 和 Yammer 中的相关功能。
-ms.openlocfilehash: 01dea57504bf5d68c0bb13376379379f29044191
-ms.sourcegitcommit: 8f1721de52dbe3a12c11a0fa5ed0ef5972ca8196
+ms.openlocfilehash: b31e9bf1cd46f94343a489497fb5eb00e138ce60
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/17/2021
-ms.locfileid: "50838463"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50916438"
 ---
 # <a name="what-is-collaboration-governance"></a>什么是协作管理？
 
@@ -59,7 +59,7 @@ Microsoft 365 组包括一套链接资源，用户可使用这些资源进行通
 |[收件箱](https://support.office.com/article/have-a-group-conversation-in-outlook-a0482e24-a769-4e39-a5ba-a7c56e828b22)|对于团队成员之间的电子邮件对话。 此收件箱具有电子邮件地址，可以设置为接受来自组外部甚至组织外部人员的邮件，这非常像传统通讯组列表。|
 |[OneNote 笔记本](https://support.office.com/article/get-started-with-onenote-e768fafa-8f9b-4eac-8600-65aa10b2fe97)|收集想法、研究和信息|
 |[计划表](https://support.office.com/article/microsoft-planner-help-4a9a13c6-3adf-4a60-a6fc-15c0b15e16fc)|在团队成员之间分配和管理项目任务|
-|[Power BI Workspace](https://docs.microsoft.com/power-bi/collaborate-share/service-new-workspaces)|包含仪表板和报表的数据协作空间|
+|[Power BI Workspace](/power-bi/collaborate-share/service-new-workspaces)|包含仪表板和报表的数据协作空间|
 |[项目和路线图](https://support.microsoft.com/project)|基于 Web 的项目管理工具|
 |[SharePoint 团队网站](https://support.office.com/article/what-is-a-sharepoint-team-site-75545757-36c3-46a7-beed-0aaa74f0401e)|与组有关的信息、链接和内容的中央存储库|
 |[Stream](https://support.microsoft.com/microsoft-stream)|视频流服务|
@@ -114,9 +114,10 @@ Microsoft 365 支持三种主要通信方法：
 
 - **直接在所** 创建的解决方案中嵌入治理决策 - 许多管理决策可通过打开或关闭 Microsoft 365 中的功能实现。
 
+
 - **使用分阶段方法** - 首先向一小组用户推出协作功能。 从他们处获取反馈，观看技术支持票证，并更新任何所需的设置或流程，然后再进入更大的组。
 
-- **通过培训加强** - 调整解决方案（如 [Microsoft 365](https://docs.microsoft.com/office365/customlearning) 学习路径）以确保通过 Microsoft 提供的培训强化组织特定的预期。
+- **通过培训加强** - 调整解决方案（如 [Microsoft 365](/office365/customlearning) 学习路径）以确保通过 Microsoft 提供的培训强化组织特定的预期。
 
 - **制定在组织中传达** 治理策略和指南的策略 - 在 SharePoint 通信网站中创建 Microsoft 365 采用中心，以传达策略和过程。
 
@@ -175,7 +176,7 @@ Microsoft Learn 中的这些培训模块可帮助你了解 Microsoft 365 中的�
 |![信息保护培训图标](../media/information-protection-governance.svg)|如今，生成的数据数量比以往更快地增长，员工希望任何地方都完成工作，并且法规环境不断变化。 Microsoft 的信息保护和治理解决方案可帮助组织在保持数据受保护和人员高效之间实现正确平衡。 此学习途径可帮助你准备 Microsoft 365 认证：安全管理员关联与Microsoft 365 认证：企业管理专家认证。<br><br>5 小时 13 分钟 - 学习路径 - 7 个模块|
 
 > [!div class="nextstepaction"]
-> [开始>](https://docs.microsoft.com/learn/modules/m365-compliance-information-governance/introduction/)
+> [开始>](/learn/modules/m365-compliance-information-governance/introduction/)
 
 <br><br>
 
@@ -184,16 +185,16 @@ Microsoft Learn 中的这些培训模块可帮助你了解 Microsoft 365 中的�
 |![Teams 培训图标](../media/protect-enterprise-information-microsoft-365.svg)|保护和保证组织的信息安全以往任何时候都更具挑战性。 使用 Microsoft 365 保护企业信息学习路径介绍如何防止敏感信息被意外过度分享或滥用，如何发现和分类数据，如何使用敏感度标签保护数据，以及如何同时监视和分析敏感信息以防信息丢失。 此学习路径可帮助你准备 Microsoft 365 认证：安全管理员关联和 Microsoft 365 认证：企业管理专家认证。<br><br>1 小时 - 学习路径 - 5 个模块|
 
 > [!div class="nextstepaction"]
-> [开始>](https://docs.microsoft.com/learn/modules/m365-security-info-overview/introduction/)
+> [开始>](/learn/modules/m365-security-info-overview/introduction/)
 
 #### <a name="security-and-compliance"></a>安全性和合规性
 
 |培训：|展示有关 Microsoft 365 安全和合规性功能的基本知识|
 |:---|:---|
-|![安全与合规培训图标](../media/microsoft-365-security-and-compliance-capabilities.svg)|了解 Microsoft 365 安全性和合规性解决方案领域以及可用于帮助企业保护企业并满足法规要求的功能。 如果你不熟悉基本的云计算概念，我们建议你学习云概念 [- 云计算原则](https://docs.microsoft.com/learn/modules/principles-cloud-computing/index)。<br><br>3 小时 11 分钟 - 学习路径 - 8 个模块|
+|![安全与合规培训图标](../media/microsoft-365-security-and-compliance-capabilities.svg)|了解 Microsoft 365 安全性和合规性解决方案领域以及可用于帮助企业保护企业并满足法规要求的功能。 如果你不熟悉基本的云计算概念，我们建议你学习云概念 [- 云计算原则](/learn/modules/principles-cloud-computing/index)。<br><br>3 小时 11 分钟 - 学习路径 - 8 个模块|
 
 > [!div class="nextstepaction"]
-> [开始>](https://docs.microsoft.com/learn/modules/what-is-m365/1-introduction/)
+> [开始>](/learn/modules/what-is-m365/1-introduction/)
 
 ## <a name="illustrations"></a>插图
 
@@ -248,6 +249,6 @@ Microsoft 365 包括一组广泛的信息保护和合规性功能。 这些功�
 
 ## <a name="see-also"></a>另请参阅
 
-[Microsoft 365 安全中心文档](https://docs.microsoft.com/microsoft-365/security)
+[Microsoft 365 安全中心文档](../security/index.yml)
 
-[Microsoft 365 合规性文档](https://docs.microsoft.com/microsoft-365/compliance)
+[Microsoft 365 合规性文档](../compliance/index.yml)

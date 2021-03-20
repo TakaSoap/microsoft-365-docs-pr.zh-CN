@@ -16,45 +16,45 @@ ms.custom:
 - M365solutions
 - seo-marvel-jun2020
 f1.keywords: NOCSH
-description: 了解如何为你的组织选择和部署正确的团队语音解决方案。
-ms.openlocfilehash: b5dda0ed3d9310c3c43052b9bac4996802e0ed2f
-ms.sourcegitcommit: e53234b1f64ebca00e121da1706c02b3337c35f0
+description: 了解如何为组织选择和部署正确的 Teams 语音解决方案。
+ms.openlocfilehash: ede8075767e9d0a80123ac742403f8a4d171392e
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "49580886"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50918378"
 ---
-# <a name="plan-and-deploy-a-teams-voice-solution"></a>规划和部署团队语音解决方案
+# <a name="plan-and-deploy-a-teams-voice-solution"></a>计划和部署 Teams 语音解决方案
 
-使用团队语音解决方案，组织中的人员可以在组织内部和外部进行呼叫。 完整的语音解决方案由团队、Microsoft 电话系统和用于连接到公用电话交换网的电话网络 (PSTN) 的选项组成。
+Teams 语音解决方案使贵组织内部和外部人员能够拨打电话。 完整的语音解决方案包括 Teams、Microsoft Phone System 以及用于连接到公用电话交换网和 PSTN (选项) 。
 
-![团队语音解决方案概述](..\media\solutions-architecture-center\voice-concepts.png)
+![Teams 语音解决方案概述](..\media\solutions-architecture-center\voice-concepts.png)
 
-电话系统为您的组织提供完整的专用分支 Exchange (PBX) 功能。 您的组织中的用户之间的呼叫（无论其地理位置如何）在电话系统内部进行内部处理，从而消除了这些内部呼叫的长途开销。  
+电话系统为组织 (完整的专用交换机) PBX 功能。 组织中用户之间的呼叫（无论其地理位置如何）在电话系统内部处理，因此可消除这些内部呼叫的长途成本。  
 
-通过将电话系统连接到公用电话交换网 (PSTN) ，团队用户也可以在组织外部进行呼叫。
+通过将电话系统连接到公用电话交换网 (PSTN) ，Teams 用户还可以在组织外部拨打电话。
 
-本解决方案指南可帮助您执行以下操作：
+此解决方案指南可帮助你：
 
-- 选择适合您的组织的语音解决方案
+- 选择适合贵组织的语音解决方案
 - 部署所选的语音解决方案
 
-按照以下步骤选择、规划和配置语音解决方案：
+按照以下步骤选择、计划和配置语音解决方案：
 
-![选择语音解决方案](..\media\solutions-architecture-center\voice-solutions-overview-1.png)
+![选择你的语音解决方案](..\media\solutions-architecture-center\voice-solutions-overview-1.png)
 
-1. [选择语音解决方案](https://docs.microsoft.com/MicrosoftTeams/cloud-voice-landing-page?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json)
+1. [选择你的语音解决方案](/MicrosoftTeams/cloud-voice-landing-page?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json)
 
-2. [设置电话系统](https://docs.microsoft.com/microsoftteams/setting-up-your-phone-system?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json)
+2. [设置电话系统](/microsoftteams/setting-up-your-phone-system?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json)
 
-3. 通过选择以下一种或多种方式来设置 PSTN 连接：
-   - [通话套餐](https://docs.microsoft.com/microsoftteams/set-up-calling-plans?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json) -microsoft 的云即用 MICROSOFT 作为 PSTN 运营商的云解决方案
-   - [直接路由](https://docs.microsoft.com/microsoftteams/direct-routing-configure?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json) -使用直接路由将你自己的 PSTN 运营商连接到团队 
+3. 通过选择下列选项之一或组合设置 PSTN 连接：
+   - [通话套餐](/microsoftteams/set-up-calling-plans?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json) - Microsoft 的全云解决方案，Microsoft 作为 PSTN 运营商
+   - [直接路由](/microsoftteams/direct-routing-configure?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json) - 使用直接路由将你自己的 PSTN 运营商连接到 Teams 
 
-此外，您可能希望了解在 [Contoso 个案研究](https://docs.microsoft.com/MicrosoftTeams/voice-case-study-overview?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json)中如何将大型的多国公司迁移到团队语音解决方案中。
+此外，您可能希望了解 [Contoso](/MicrosoftTeams/voice-case-study-overview?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json)案例研究中大型的跨国公司如何迁移到 Teams 语音解决方案。
 
 有关所需许可证的信息，请参阅以下内容：
 
-- [团队附加许可证](https://docs.microsoft.com/microsoftteams/teams-add-on-licensing/microsoft-teams-add-on-licensing?tabs=enterprise#what-voice-features-are-available-with-my-plan/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json)
+- [Teams 附加许可证](/microsoftteams/teams-add-on-licensing/microsoft-teams-add-on-licensing?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&tabs=enterprise#what-voice-features-are-available-with-my-plan/toc.json)
 
-- [直接路由许可要求](https://docs.microsoft.com/microsoftteams/direct-routing-plan#licensing-and-other-requirements/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json)
+- [直接路由许可要求](/microsoftteams/direct-routing-plan?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json#licensing-and-other-requirements/toc.json)

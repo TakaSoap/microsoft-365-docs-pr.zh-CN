@@ -14,27 +14,27 @@ f1.keywords:
 ms.custom: ''
 ms.assetid: ff93a341-6f0f-4f06-9690-726052e1be64
 description: 摘要：使用 PowerShell 通过策略管理 Skype for Business Online 用户帐户属性。
-ms.openlocfilehash: ca945bc05e76525b4b2df6fb0b982a8468d87810
-ms.sourcegitcommit: babbba2b5bf69fd3facde2905ec024b753dcd1b3
+ms.openlocfilehash: a10929bbdce499ad26f9714127f675beeef58765
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50515048"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50916698"
 ---
 # <a name="manage-skype-for-business-online-policies-with-powershell"></a>使用 PowerShell 管理 Skype for Business Online 策略
 
 *本文适用于 Microsoft 365 企业版和 Office 365 企业版。*
 
-若要管理 Skype for Business Online 用户帐户的许多属性，必须使用 PowerShell for Microsoft 365 将其指定为策略的属性。
+若要管理 Skype for Business Online 用户帐户的许多属性，必须使用 PowerShell for Microsoft 365 将它们指定为策略的属性。
   
 ## <a name="before-you-begin"></a>开始之前
 
-使用以下说明进行设置以运行命令 (跳过已完成) ：
+使用这些说明设置以运行命令 (跳过已完成) ：
 
   > [!Note]
   > Skype for Business Online 连接器目前是最新 Teams PowerShell 模块的一部分。 如果你使用的是最新 Teams PowerShell 公共版本，则无需安装 Skype for Business Online 连接器。
 
-1. 安装 [Teams PowerShell 模块](https://docs.microsoft.com/microsoftteams/teams-powershell-install)。
+1. 安装 [Teams PowerShell 模块](/microsoftteams/teams-powershell-install)。
     
 2. 开启 Windows PowerShell 命令提示符并运行以下命令： 
 
@@ -44,7 +44,7 @@ ms.locfileid: "50515048"
    Connect-MicrosoftTeams -Credential $userCredential
    ```
 
-   系统提示时，输入 Skype for Business Online 管理员帐户名和密码。
+   系统提示时，输入 Skype for Business Online 管理员帐户名称和密码。
     
 ## <a name="manage-user-account-policies"></a>管理用户帐户策略
 
@@ -66,13 +66,13 @@ EnablePublicCloudAudioVideoAccess : True
 EnableOutsideAccess               : True
 ```
 
-在此例中，此策略中的值确定在使用与联盟用户通信时可以或不能执行哪些功能。 例如，EnableOutsideAccess 属性必须设置为 True，用户才能与组织外部人员通信。 请注意，此属性不会显示在 Microsoft 365 管理中心中。 而是根据你做出的其他选择自动将该属性设置为 True 或 False。 其他两个关注属性是：
+本示例中，此策略中的值确定在与联盟用户通信时，使用可以或不能执行哪些用途。 例如，EnableOutsideAccess 属性必须设置为 True，用户才能与组织外部人员通信。 请注意，此属性不会显示在 Microsoft 365 管理中心中。 而是根据你做出的其他选择自动将该属性设置为 True 或 False。 其他两个感兴趣的属性是：
   
 - **EnableFederationAccess** 指示用户是否可以与联合域的用户通信。
     
 - **EnablePublicCloudAccess** 指示用户是否可以与 Windows Live 用户通信。
     
-因此，不要直接更改用户帐户上的联合 (例如 **，Set-CsUser -EnableFederationAccess $True) 。** 而是为帐户分配一个预配置了所需属性值的外部访问策略。 如果我们希望用户能够与联盟用户和Windows Live通信，则必须为用户帐户分配允许这些通信类型的策略。
+因此，不要直接更改用户帐户上与联合 (例如 **Set-CsUser -EnableFederationAccess $True) 。** 相反，您可以为帐户分配一个预配置所需属性值的外部访问策略。 如果我们希望用户能够与联盟用户和 Windows Live 用户通信，则必须为用户帐户分配允许这些类型的通信的策略。
   
 如果您想了解某人是否可以与组织外部的用户通信，您必须：
   
@@ -80,34 +80,34 @@ EnableOutsideAccess               : True
     
 - 确定此策略允许的许可范围。
     
-例如，可以通过使用此命令来执行此操作：
+例如，可以使用此命令进行此操作：
   
 ```powershell
 Get-CsOnlineUser -Identity "Alex Darrow" | ForEach {Get-CsExternalAccessPolicy -Identity $_.ExternalAccessPolicy}
 ```
 
-此命令查找分配给用户的策略，然后找到该策略中启用或禁用的功能。
+此命令查找分配给用户的策略，然后查找该策略中已启用或禁用的功能。
   
 若要使用 PowerShell 管理 Skype for Business Online 策略，请参阅以下 cmdlet：
 
-- [客户端策略](https://docs.microsoft.com/previous-versions//mt228132(v=technet.10)#client-policy-cmdlets)
-- [会议策略](https://docs.microsoft.com/previous-versions//mt228132(v=technet.10)#conferencing-policy-cmdlets)
-- [移动策略](https://docs.microsoft.com/previous-versions//mt228132(v=technet.10)#mobile-policy-cmdlets)
-- [联机语音邮件策略](https://docs.microsoft.com/previous-versions//mt228132(v=technet.10)#online-voicemail-policy-cmdlets)
-- [语音路由策略](https://docs.microsoft.com/previous-versions//mt228132(v=technet.10)#voice-routing-policy-cmdlets)
+- [客户端策略](/previous-versions//mt228132(v=technet.10)#client-policy-cmdlets)
+- [会议策略](/previous-versions//mt228132(v=technet.10)#conferencing-policy-cmdlets)
+- [移动策略](/previous-versions//mt228132(v=technet.10)#mobile-policy-cmdlets)
+- [联机语音邮件策略](/previous-versions//mt228132(v=technet.10)#online-voicemail-policy-cmdlets)
+- [语音路由策略](/previous-versions//mt228132(v=technet.10)#voice-routing-policy-cmdlets)
 
 
 > [!NOTE]
-> Skype for Business Online 拨号计划是除名称之外的所有方面的策略。 为了提供与 Office Communications Server 和 Exchange 的向后兼容性，选择了名称"拨号计划"，而不是"拨号策略"。 
+> Skype for Business Online 拨号计划是除名称以外的每个方面的策略。 为了提供与 Office Communications Server 和 Exchange 的向后兼容性，选择了名称"拨号计划"，而不是"拨号策略"。 
   
-例如，若要查看所有可用的语音策略，请运行以下命令：
+例如，若要查看所有可供使用的语音策略，请运行以下命令：
   
 ```powershell
 Get-CsVoicePolicy
 ```
 
 > [!NOTE]
-> 将返回所有可用的语音策略的列表。 但请记住，并非所有策略都可以分配给所有用户。 这是因为涉及许可和地理位置的各种限制。  (所谓的"[使用位置"。](https://msdn.microsoft.com/library/azure/dn194136.aspx)) 如果您想要了解可分配给特定用户的外部访问策略和会议策略，请使用以下类似命令： 
+> 将返回所有可用的语音策略的列表。 但请记住，并非所有策略都可以分配给所有用户。 这是因为涉及许可和地理位置的各种限制。  (所谓的"[使用位置"。](/previous-versions/azure/dn194136(v=azure.100))) 如果您想要了解可分配给特定用户的外部访问策略和会议策略，请使用以下类似命令： 
 
 ```powershell
 Get-CsConferencingPolicy -ApplicableTo "Alex Darrow"
@@ -118,7 +118,7 @@ ApplicableTo 参数可将返回的数据限制为可分配到特定用户的策�
   
 在某些情况下，策略的属性不用于 Microsoft 365，而其他属性只能由 Microsoft 支持人员管理。 
   
-使用 Skype for Business Online，用户必须由某种类型的策略管理。 如果与策略相关的有效属性为空，则意味着相关用户由全局策略管理，全局策略是自动应用于用户的策略，除非专门为其分配了每用户策略。 由于未列出用户帐户的客户端策略，因此它由全局策略管理。 可以使用此命令确定全局客户端策略：
+使用 Skype for Business Online，用户必须由某种策略进行管理。 如果与策略相关的有效属性为空，则意味着相关用户由全局策略管理，全局策略是自动应用于用户的策略，除非专门为其分配每用户策略。 因为我们未看到为用户帐户列出的客户端策略，所以它由全局策略管理。 可以使用此命令确定全局客户端策略：
   
 ```powershell
 Get-CsClientPolicy -Identity "Global"
@@ -131,4 +131,3 @@ Get-CsClientPolicy -Identity "Global"
 [使用 PowerShell 管理 Microsoft 365](manage-microsoft-365-with-microsoft-365-powershell.md)
   
 [PowerShell for Microsoft 365 入门](getting-started-with-microsoft-365-powershell.md)
-

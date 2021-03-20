@@ -15,16 +15,16 @@ search.appverid:
 - MOE150
 - MET150
 description: 有助于你满足信息治理和记录管理监管要求的资源。
-ms.openlocfilehash: e46abc4efec356cfd058414063d3e76ffe8ff224
-ms.sourcegitcommit: fa5659cb66d84dcfeebc03b47bd9d38017d8934d
+ms.openlocfilehash: a2629dbd9df4b582b2aeb7726de87d81eb726a76
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "50109931"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50917778"
 ---
 # <a name="regulatory-requirements-for-information-governance-and-records-management"></a>信息治理和记录管理的监管要求
 
->*[Microsoft 365 安全性与合规性许可指南](https://aka.ms/ComplianceSD)。*
+>*[Microsoft 365 安全性与合规性许可指南](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。*
 
 使用本页面上的资源来帮助你满足 Microsoft 365 中信息治理和记录管理的特定法规要求。 本文档的每个部分都侧重于一个或多个相关法规，并包括任何现有的指南或第三方评估如何配置 Microsoft 365，以帮助满足所概述的要求。
 

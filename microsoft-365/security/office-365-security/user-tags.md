@@ -16,12 +16,12 @@ ms.collection:
 description: 管理员可以了解如何在 Microsoft Defender for Office 365 计划 2 中标识具有用户标记的特定用户组。 可在 Microsoft Defender for Office 365 中的警报、报告和调查之间使用标签筛选，以快速识别标记的用户。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 80bd360888be3aeea42da6f9b58a119a9752d382
-ms.sourcegitcommit: bf9e0091e5bdc78d9b23be64583eb816bb059eb2
+ms.openlocfilehash: e9bb6a233f21268df860974549ecffbfd7154045
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50758888"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50916402"
 ---
 # <a name="user-tags-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 中的用户标记
 
@@ -41,7 +41,7 @@ ms.locfileid: "50758888"
 - [威胁资源管理器和实时检测](threat-explorer.md)
 - [威胁防护状态报告](view-email-security-reports.md#threat-protection-status-report)
 - [市场活动视图](campaigns.md)
-- 对于优先级帐户，可以使用 Exchange[](https://docs.microsoft.com/exchange/monitoring/mail-flow-reports/mfr-email-issues-for-priority-accounts-report)管理中心中的"优先级帐户的电子邮件问题"报告 (EAC) 。
+- 对于优先级帐户，可以使用 Exchange[](/exchange/monitoring/mail-flow-reports/mfr-email-issues-for-priority-accounts-report)管理中心中的"优先级帐户的电子邮件问题"报告 (EAC) 。
 
 本文介绍如何在安全与合规中心内配置&标记。 安全与合规中心& cmdlet 用于管理用户标记。
 

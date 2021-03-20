@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解 dlp 策略条件和例外
-ms.openlocfilehash: 93311ec369f8dd240b1e76c9e29ef8cc0a144cc2
-ms.sourcegitcommit: 06d9e056eabfbac8fafe66cc32907b33d4ae8253
+ms.openlocfilehash: 02880a89bf580d94bad4a5dbdce5027b0a194487
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50741365"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50918008"
 ---
 # <a name="dlp-policy-conditions-exceptions-and-actions-preview"></a>DLP 策略条件、例外和操作 (预览) 
 
@@ -105,7 +105,7 @@ DLP 策略中的条件和例外可标识策略应用于的敏感项目。 操作
 |邮件大小超过|condition： *MessageSizeOver* <br/> exception： *ExceptIfMessageSizeOver*| Size    |总大小（邮件和附件）大于或等于指定值的邮件。 <br/>**注意**：在确定邮件流规则之前将对邮箱的邮件大小限制进行评估。对于邮箱而言过大的邮件将被拒绝，然后此条件的规则才能对该邮件采取措施。|
 | 重要性    | condition： *WithImportance* <br/> exception： *ExceptIfWithImportance*    | Importance    | 使用指定的重要性级别标记的邮件。    |
 | 内容字符集包含单词    | condition： *ContentCharacterSetContainsWords* <br/> *ExceptIfContentCharacterSetContainsWords*    | CharacterSets    | 具有任意指定字符集名称的邮件。    |
-| 具有发件人替代    | condition： *HasSenderOverride* <br/> 例外 *：ExceptIfHasSenderOverride*    | 无    | 发件人已选择覆盖数据丢失防护 (DLP) 策略的邮件。 有关 DLP 策略详细信息，请参阅 [数据丢失防护](https://docs.microsoft.com/microsoft-365/compliance/data-loss-prevention-policies)。   |
+| 具有发件人替代    | condition： *HasSenderOverride* <br/> 例外 *：ExceptIfHasSenderOverride*    | 无    | 发件人已选择覆盖数据丢失防护 (DLP) 策略的邮件。 有关 DLP 策略详细信息，请参阅 [数据丢失防护](./data-loss-prevention-policies.md)。   |
 | 邮件类型匹配    | condition： *MessageTypeMatches* <br/> exception： *ExceptIfMessageTypeMatches*    | MessageType    | 指定类型的邮件。    |
 
 ## <a name="actions-for-dlp-policies"></a>DLP 策略的操作
@@ -124,7 +124,3 @@ DLP 策略中的条件和例外可标识策略应用于的敏感项目。 操作
 |将发件人的经理添加为收件人|AddRecipients | 第一个属性 *：AddedManagerAction*</br>Second 属性 *：Field* | 将发件人的经理添加到邮件中作为指定收件人类型 ( To 、 Cc 、 Bcc )，或在不通知发件人或收件人的情况下将邮件重定向到发件人的经理。 此操作仅在发件人的 Manager 属性于 Active Directory 中定义时适用。 此参数使用语法：@{AddManagerAsRecipientType = "<To \| Cc \| Bcc>"}|    
 Prepend subject    |PrependSubject    |String    |将指定的文本添加到邮件" Subject "字段的开头。 考虑使用空格或冒号 (:) 作为指定文本的最后一个字符以区别于原始的主题文本。</br>若要防止将同一字符串添加到主题 (中已包含文本的邮件（例如，答复) ），请向规则添加"主题包含单词" (ExceptIfSubjectContainsWords) 例外。    |
 应用 HTML 免责声明    |ApplyHtmlDisclaimer    |第一个属性 *：Text*</br>Second 属性 *：Location*</br>第三个属性 *：回退操作*    |将指定的 HTML 免责声明应用于邮件的所需位置。</br>此参数使用语法：@{ Text = " " ;Location = <Append \| Prepend>;FallbackAction = <\| Wrap Ignore \| Reject> }
-
-
-
-

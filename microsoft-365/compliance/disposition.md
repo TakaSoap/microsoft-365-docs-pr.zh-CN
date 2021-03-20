@@ -16,16 +16,16 @@ search.appverid:
 - MOE150
 - MET150
 description: 无论是使用处置评审还是根据配置的设置自动删除内容，都可监视和管理内容的处置。
-ms.openlocfilehash: 092067e676c1cbae3fae6e9d6a5ff77099ce4631
-ms.sourcegitcommit: a7d1b29a024b942c7d0d8f5fb9b5bb98a0036b68
+ms.openlocfilehash: d2c2e4e469efe16277f34a902f6720dc2b39e908
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50461877"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50918038"
 ---
 # <a name="disposition-of-content"></a>内容的处置
 
->*[Microsoft 365 安全性与合规性的许可指南](https://aka.ms/ComplianceSD)。*
+>*[Microsoft 365 安全性与合规性的许可指南](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。*
 
 使用 Microsoft 365 合规中心中 **记录管理** 中的 **处置** 选项卡来管理处置评审，并查看在保留期结束时自动删除 [记录](records-management.md#records)。 
 
@@ -128,7 +128,7 @@ ms.locfileid: "50461877"
 
 ![未经处置评审即被处置的项目](../media/records-disposed2.png)
 
-在记录标签的 **已处置项目** 选项卡中显示的项目，在该项目被处置后最多保留7年，在此期间，每条记录的上限为一百万项。 如果看到 **计数** 数字接近一百万这一限制，并且需要对记录进行处置证明，请联系 [Microsoft 支持](https://docs.microsoft.com/office365/admin/contact-support-for-business-products)。
+在记录标签的 **已处置项目** 选项卡中显示的项目，在该项目被处置后最多保留7年，在此期间，每条记录的上限为一百万项。 如果看到 **计数** 数字接近一百万这一限制，并且需要对记录进行处置证明，请联系 [Microsoft 支持](/office365/admin/contact-support-for-business-products)。
 
 > [!NOTE]
 > 此功能基于 [统一审核日志](search-the-audit-log-in-security-and-compliance.md) 中的信息，因此需要[启动并可搜索](turn-audit-log-search-on-or-off.md)审核，以便捕获相应的事件。
@@ -144,4 +144,3 @@ ms.locfileid: "50461877"
 可将任意视图中的项目的信息导出为 .csv 文件，然后即可使用 Excel 对其进行排序和管理：
 
 ![处置的导出选项](../media/retention-export-option.png)
-

@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Microsoft 365 本地扫描仪的数据丢失防护扩展了对文件活动的监视以及针对这些文件的安全操作，可扩展到本地文件共享和 SharePoint 文件夹和文档库。 通过 Azure 信息保护 （AIP） 扫描仪扫描和保护文件
-ms.openlocfilehash: 996de5ea640a16ef2a250830d7167aa316b54a21
-ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
+ms.openlocfilehash: fa1c14520c8ad0afa4856fdd8a1c59a0f71f400d
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "50417334"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50917808"
 ---
 # <a name="learn-about-the-microsoft-365-data-loss-prevention-on-premises-scanner-preview"></a>了解 Microsoft 365 本地扫描仪数据丢失防护（预览）
 
@@ -36,12 +36,12 @@ Microsoft 本地扫描仪的 Microsoft 数据丢失防护是 Microsoft 365 数�
 
 DLP 本地扫描仪依靠完整实施 Azure 信息保护 （AIP） 扫描仪来监视、标记和保护敏感项目。 如果不熟悉 AIP 扫描仪，强烈建议自己熟悉它。 请参阅以下文章：
 
-- [什么是 Azure 信息保护](https://docs.microsoft.com/azure/information-protection/what-is-information-protection)
-- [什么是 Azure 信息保护统一标签扫描仪](https://docs.microsoft.com/azure/information-protection/deploy-aip-scanner)
-- [安装和部署 Azure 信息保护统一标签扫描仪的要求](https://docs.microsoft.com/azure/information-protection/deploy-aip-scanner-prereqs)
-- [教程：安装 Azure 信息保护 （AIP） 统一标签扫描仪](https://docs.microsoft.com/azure/information-protection/tutorial-install-scanner)
-- [配置和安装 Azure 信息保护统一标记扫描器](https://docs.microsoft.com/azure/information-protection/deploy-aip-scanner-configure-install)
-- [Azure 信息保护统一标签客户端 - 版本发布历史记录和支持策略](https://docs.microsoft.com/azure/information-protection/rms-client/unifiedlabelingclient-version-release-history)
+- [什么是 Azure 信息保护](/azure/information-protection/what-is-information-protection)
+- [什么是 Azure 信息保护统一标签扫描仪](/azure/information-protection/deploy-aip-scanner)
+- [安装和部署 Azure 信息保护统一标签扫描仪的要求](/azure/information-protection/deploy-aip-scanner-prereqs)
+- [教程：安装 Azure 信息保护 （AIP） 统一标签扫描仪](/azure/information-protection/tutorial-install-scanner)
+- [配置和安装 Azure 信息保护统一标记扫描器](/azure/information-protection/deploy-aip-scanner-configure-install)
+- [Azure 信息保护统一标签客户端 - 版本发布历史记录和支持策略](/azure/information-protection/rms-client/unifiedlabelingclient-version-release-history)
 
 ## <a name="dlp-on-premises-scanner-actions"></a>DLP 本地扫描仪操作
 
@@ -56,7 +56,7 @@ DLP 本地扫描仪通过以下四种方法之一来检测文件：
 
 |操作 |说明  |
 |---------|---------|
-|**阻止这些用户访问存储在本地扫描仪中的文件 - 每个人** | 如果强制执行，此操作将阻止访问除内容所有者、最后一个修改该项目的帐户和管理员之外的所有帐户。 为此，可在文件级别删除 NTFS/SharePoint 权限的所有帐户，文件所有者、存储库所有者（在 [设置存储库所有者](https://docs.microsoft.com/azure/information-protection/deploy-aip-scanner-configure-install#use-a-data-loss-prevention-dlp-policy-public-preview) 设置的内容扫描作业中）、最后一次修改（只能在 SharePoint 中标识）和管理员。也会向扫描仪帐户授予该文件的 <2> <2> <3>操作权限。|
+|**阻止这些用户访问存储在本地扫描仪中的文件 - 每个人** | 如果强制执行，此操作将阻止访问除内容所有者、最后一个修改该项目的帐户和管理员之外的所有帐户。 为此，可在文件级别删除 NTFS/SharePoint 权限的所有帐户，文件所有者、存储库所有者（在 [设置存储库所有者](/azure/information-protection/deploy-aip-scanner-configure-install#use-a-data-loss-prevention-dlp-policy-public-preview) 设置的内容扫描作业中）、最后一次修改（只能在 SharePoint 中标识）和管理员。也会向扫描仪帐户授予该文件的 <2> <2> <3>操作权限。|
 |**阻止这些用户访问存储在本地扫描仪中的文件 - 阻止组织范围的（公共）访问**    |强制使用时，此操作从文件访问控制列表 （ACL） 中删除 **_Everyone_*_、_*_NT AUTHORITY\经过身份验证的用户_*_和 _*_Domain Users_** SIDs。 只有已明确授予文件或父文件夹权限的用户和组才能访问该文件。|
 |**设置对文件的权限**|强制使用时，此操作会强制文件继承其父文件夹的权限。 默认情况下，只有在父文件夹的权限比文件上已有的权限更加严格时，才强制实施此操作。 例如，如果文件的 ACL 设置为仅允许 **_特定用户_*_，并且父文件夹配置为允许 _*_域用户_*_ 组，则该文件不会继承父文件夹权限。可通过选择 _*"继承"来覆盖此行为，即使父权限在管理** 限制。|
 |**从不正确的位置删除文件**|强制安装后，此操作用 .txt 扩展名替换原始文件，将原始文件的副本隔离文件夹中。 

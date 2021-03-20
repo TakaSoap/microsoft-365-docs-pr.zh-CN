@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 设置 Microsoft 365 本地扫描仪数据丢失防护
-ms.openlocfilehash: e0d7bc9eeae7d701c14aaaeeed7a01cab33829ea
-ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
+ms.openlocfilehash: 7e190a1d6e902af3406f7e8f317efe80e825e7f2
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "50417337"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50917828"
 ---
 # <a name="get-started-with-the-data-loss-prevention-on-premises-scanner-preview"></a>开始进行本地扫描仪的数据丢失防护（预览）
 
@@ -41,7 +41,7 @@ ms.locfileid: "50417337"
 - Microsoft 365 E5 信息保护和管控 
 
 
-有关许可的详细信息，请参阅[适用于安全与合规性的 Microsoft 365 许可指南](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。
+有关许可的详细信息，请参阅[适用于安全与合规性的 Microsoft 365 许可指南](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。
 
 ### <a name="permissions"></a>权限
 
@@ -56,13 +56,13 @@ ms.locfileid: "50417337"
 ### <a name="dlp-on-premises-scanner-prerequisites"></a>DLP 本地扫描仪先决条件
 
 - Azure 信息保护 （AIP） 扫描仪实现 DLP 策略匹配和策略执行。 将扫描仪作为 AIP 客户端的一部分进行安装，因此安装必须满足 AIP、AIP 客户端和 AIP 统一标签扫描仪的所有先决条件。
-- 部署 AIP 客户端和扫描仪。 若要详细了解 [AIP 统一标签客户端](https://docs.microsoft.com/azure/information-protection/rms-client/install-unifiedlabelingclient-app) 和 []，请参阅 [配置和安装 Azure 信息保护统一标签扫描仪](https://docs.microsoft.com/azure/information-protection/deploy-aip-scanner-configure-install)。
+- 部署 AIP 客户端和扫描仪。 若要详细了解 [AIP 统一标签客户端](/azure/information-protection/rms-client/install-unifiedlabelingclient-app) 和 []，请参阅 [配置和安装 Azure 信息保护统一标签扫描仪](/azure/information-protection/deploy-aip-scanner-configure-install)。
 - 必须至少在租户中发布一个标签和策略，即使所有检测规则都只基于敏感信息类型。
 
 ## <a name="deploy-the-dlp-on-premises-scanner"></a>部署 DLP 本地扫描仪
 
-1. 请按照 [安装AIP统一标签客户端](https://docs.microsoft.com/azure/information-protection/rms-client/install-unifiedlabelingclient-app)中的过程。 
-2. 按照以下过程 [安装 Azure 信息保护统一标签扫描仪](https://docs.microsoft.com/azure/information-protection/deploy-aip-scanner-configure-install) 完成扫描仪安装。
+1. 请按照 [安装AIP统一标签客户端](/azure/information-protection/rms-client/install-unifiedlabelingclient-app)中的过程。 
+2. 按照以下过程 [安装 Azure 信息保护统一标签扫描仪](/azure/information-protection/deploy-aip-scanner-configure-install) 完成扫描仪安装。
     1. 网络发现作业配置是一个可选步骤。 可以跳过它，并定义要扫描内容扫描作业的特定存储库。
     2. 必须创建内容扫描作业，并指定 DLP 引擎需要评估的托管文件的存储库。
     3. 在已创建的内容扫描作业中启用 DLP 规则，将 **强制** 选项设置为 **关闭**，除非想要直接进入 DLP 强制阶段。
@@ -115,7 +115,7 @@ ms.locfileid: "50417337"
 
 2. 请参阅活动 [工具入门](data-classification-activity-explorer.md) 中的过程，以访问和筛选本地扫描仪位置的所有数据。
 
-3. 在合规 [中打开"审核"](https://security.microsoft.com/auditlogsearch)。 在公共预览期间，DLP 规则匹配项在审核日志 UI 中可用，或由 [Search-UnifiedAuditLog](https://docs.microsoft.com/powershell/module/exchange/search-unifiedauditlog?view=exchange-ps) PowerShell 访问 
+3. 在合规 [中打开"审核"](https://security.microsoft.com/auditlogsearch)。 在公共预览期间，DLP 规则匹配项在审核日志 UI 中可用，或由 [Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog?view=exchange-ps) PowerShell 访问 
 
 
 ## <a name="next-steps"></a>后续步骤

@@ -10,42 +10,45 @@ ms.topic: article
 ms.service: o365-administration
 localization_priority: None
 ms.collection:
+- M365-subscription-management
+- Adm_O365
+ms.custom:
+- AdminSurgePortfolio
 - commerce
-ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
-description: 了解如何使用 AllowSelfServicePurchase PowerShell cmdlet 启用或禁用自助购买。
+description: 了解如何使用 AllowSelfServicePurchase PowerShell cmdlet 打开或关闭自助服务购买。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 79ee2d96fa1ae6f49f0402f49ddec34e69257082
-ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
+ms.openlocfilehash: 9fb5593855f9523198a3d70548e444a831e82c80
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46653709"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50918238"
 ---
 # <a name="use-allowselfservicepurchase-for-the-mscommerce-powershell-module"></a>将 AllowSelfServicePurchase 用于 MSCommerce PowerShell 模块
 
-**MSCommerce** powershell 模块现在在[powershell 库](https://aka.ms/allowselfservicepurchase-powershell-gallery)中可用。 该模块包含**AllowSelfServicePurchase**的**PolicyID**参数值，可让您控制组织中的用户是否可以进行自助服务购买。
+**MSCommerce** PowerShell 模块现已在 [PowerShell 库上提供](https://aka.ms/allowselfservicepurchase-powershell-gallery)。 该模块包括 **AllowSelfServicePurchase** 的 **PolicyID** 参数值，它允许您控制组织中用户是否可以进行自助购买。
 
-您可以使用**MSCommerce** PowerShell 模块执行以下操作：
+您可以使用 **MSCommerce** PowerShell 模块：
 
-- 查看**AllowSelfServicePurchase**参数值的默认状态-无论是已启用还是已禁用
-- 查看适用产品的列表以及是否启用或禁用自助式购买
-- 查看或修改特定产品的当前设置以启用或禁用该产品
+- 查看 **AllowSelfServicePurchase** 参数值的默认状态 — 是启用还是禁用
+- 查看适用产品的列表，以及自助服务购买是启用还是禁用
+- 查看或修改特定产品的当前设置以启用或禁用它
 
 ## <a name="requirements"></a>Requirements
 
-若要使用**MSCommerce** PowerShell 模块，需要具备以下条件：
+若要使用 **MSCommerce** PowerShell 模块，您需要：
 
 - Windows 10 设备
-- 对设备的管理员权限
+- 设备的管理员权限
 - 租户的全局或帐单管理员角色
 
 ## <a name="install-the-mscommerce-powershell-module"></a>安装 MSCommerce PowerShell 模块
 
-您在 Windows 10 设备上安装**MSCommerce** PowerShell 模块后，再将其导入到每个启动的 PowerShell 会话中。 从[PowerShell 库](https://aka.ms/allowselfservicepurchase-powershell-gallery)下载**MSCommerce** PowerShell 模块。
+在 Windows 10 设备上安装 **MSCommerce** PowerShell 模块一次，然后导入到启动的每个 PowerShell 会话中。 从 [PowerShell](https://aka.ms/allowselfservicepurchase-powershell-gallery)库下载 **MSCommerce** PowerShell 模块。
 
-若要使用**PowerShellGet**安装**MSCommerce** PowerShell 模块，请运行以下命令：
+若要使用 **PowerShellGet** 安装 **MSCommerce** PowerShell 模块，请运行以下命令：
 
 ```powershell
 Install-Module -Name MSCommerce
@@ -53,53 +56,55 @@ Install-Module -Name MSCommerce
 
 ## <a name="import-mscommerce-into-the-powershell-session"></a>将 MSCommerce 导入 PowerShell 会话
 
-在 Windows 10 设备上安装该模块后，再将其导入到每个启动的 PowerShell 会话中。 若要将其导入 PowerShell 会话，请运行以下命令：
+在 Windows 10 设备上安装模块后，将其导入到启动的每个 PowerShell 会话中。 若要将其导入 PowerShell 会话，请运行以下命令：
 
 ```powershell
 Import-Module -Name MSCommerce
 ```
 
-## <a name="connect-to-mscommerce-with-your-credentials"></a>使用你的凭据连接到 MSCommerce
+## <a name="connect-to-mscommerce-with-your-credentials"></a>使用凭据连接到 MSCommerce
 
-若要使用你的凭据连接到 PowerShell 模块，请运行以下命令。
+若要使用凭据连接到 PowerShell 模块，请运行以下命令。
 
 ```powershell
 Connect-MSCommerce
 ```
 
-此命令将当前 PowerShell 会话连接到 Azure Active Directory 租户。 该命令将提示您输入要连接到的租户的用户名和密码。 如果为您的凭据启用了多重身份验证，则可以使用交互式选项登录。
+此命令将当前 PowerShell 会话连接到 Azure Active Directory 租户。 该命令会提示你输入要连接到的租户的用户名和密码。 如果为凭据启用了多重身份验证，则使用交互式选项登录。
 
 ## <a name="view-details-for-allowselfservicepurchase"></a>查看 AllowSelfServicePurchase 的详细信息
 
-若要查看**AllowSelfServicePurchase**参数值的说明以及基于您的组织的默认状态，请运行以下命令：
+若要查看 **AllowSelfServicePurchase** 参数值和默认状态的说明，请基于您的组织运行以下命令：
 
 ```powershell
 Get-MSCommercePolicy -PolicyId AllowSelfServicePurchase
 ```
 
-## <a name="view-a-list-of-self-service-purchase-products-and-their-status"></a>查看自助服务购买产品的列表及其状态
+## <a name="view-a-list-of-self-service-purchase-products-and-their-status"></a>查看自助服务购买产品及其状态的列表
 
-若要查看所有可用的自助服务购买产品的列表以及每个产品的状态，请运行以下命令：
+若要查看所有可用的自助式购买产品的列表以及每种产品的状态，请运行以下命令：
 
 ```powershell
 Get-MSCommerceProductPolicies -PolicyId AllowSelfServicePurchase
 ```
 
-下表列出了可用的产品及其**产品 id**。
+下表列出了可用的产品及其 **ProductId。**
 
-| 产品 | Id |
+| 产品 | ProductId |
 |-----------------------------|--------------|
-| 每个用户的电源应用程序 | CFQ7TTC0KP0P |
-| 每个用户的电源自动化 | CFQ7TTC0KP0N |
+| 每个用户的 Power Apps | CFQ7TTC0KP0P |
+| 每个用户的 Power Automate | CFQ7TTC0KP0N |
+| Power Automate RPA | CFQ7TTC0KXG6  |
+| Power BI Premium (独立)  | CFQ7TTC0KXG7  |
 | Power BI Pro | CFQ7TTC0L3PB |
-| 项目计划1 | CFQ7TTC0KXND |
-| 项目计划3 | CFQ7TTC0KXNC |
-| Visio 计划1 | CFQ7TTC0KXN9 |
-| Visio 计划2 | CFQ7TTC0KXN8 |
+| 项目计划 1 | CFQ7TTC0KXND |
+| 项目计划 3 | CFQ7TTC0KXNC |
+| Visio 计划 1 | CFQ7TTC0KXN9 |
+| Visio 计划 2 | CFQ7TTC0KXN8 |
 
 ## <a name="view-or-set-the-status-for-allowselfservicepurchase"></a>查看或设置 AllowSelfServicePurchase 的状态
 
-查看可用于自助购买的产品列表后，可以查看或修改特定产品的设置。
+查看可供自助购买的产品列表后，可以查看或修改特定产品的设置。
 
 若要获取特定产品的策略设置，请运行以下命令：
 
@@ -121,7 +126,7 @@ Update-MSCommerceProductPolicy -PolicyId AllowSelfServicePurchase -ProductId CFQ
 
 ## <a name="example-script-to-disable-allowselfservicepurchase"></a>禁用 AllowSelfServicePurchase 的示例脚本
 
-下面的示例演示如何导入**MSCommerce**模块，使用你的帐户登录，获取产品**Id**为 "自动执行" 功能，然后禁用该产品的 " **AllowSelfServicePurchase** "。
+以下示例将引导您完成如何导入 **MSCommerce** 模块、使用帐户登录、获取 Power Automate 的 **ProductId，** 然后禁用该产品的 **AllowSelfServicePurchase。**
 
 ```powershell
 Import-Module -Name MSCommerce
@@ -134,15 +139,15 @@ Update-MSCommerceProductPolicy -PolicyId AllowSelfServicePurchase -ProductId $pr
 
 ### <a name="problem"></a>问题
 
-您会看到以下错误消息：
+看到以下错误消息：
 
-> HandleError：无法使用 PolicyId ' AllowSelfServicePurchase ' 检索策略，错误-基础连接已关闭：发送时发生意外错误。
+> HandleError：未能检索 PolicyId 为"AllowSelfServicePurchase"的策略，ErrorMessage - 基础连接已关闭：发送时发生意外错误。
 
-这可能是由于较旧版本的传输层安全性 (TLS) 。 若要连接此服务，您需要使用 TLS 1.2 或更高版本
+这可能是由于传输层安全性的较旧版本 (TLS) 。 若要连接此服务，你需要使用 TLS 1.2 或更大
 
 ### <a name="solution"></a>解决方案
 
-升级到 TLS 1.2：[https://docs.microsoft.com/mem/configmgr/core/plan-design/security/enable-tls-1-2](https://docs.microsoft.com/mem/configmgr/core/plan-design/security/enable-tls-1-2)
+升级到 TLS 1.2： [https://docs.microsoft.com/mem/configmgr/core/plan-design/security/enable-tls-1-2](/mem/configmgr/core/plan-design/security/enable-tls-1-2)
 
 <!--
 ## Uninstall the MSCommerce module

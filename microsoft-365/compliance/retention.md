@@ -19,16 +19,16 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解有助于保留所需内容并删除不需要内容的保留策略和保留标签。
-ms.openlocfilehash: 67697124df7908dca2ace74dc5de921d18d817c6
-ms.sourcegitcommit: 3d48e198e706f22ac903b346cadda06b2368dd1e
+ms.openlocfilehash: 0eaf89b3f49d8b69cb7b36e4e25df90946c19e32
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50727321"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50917204"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>了解保留策略和保留标签
 
->*[Microsoft 365 安全性与合规性许可指南](https://aka.ms/ComplianceSD)。*
+>*[Microsoft 365 安全性与合规性许可指南](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。*
 
 > [!NOTE]
 > 如果在应用中看到保留策略消息，请联系 IT 部门，了解如何进行配置。 如果这些消息适用于 Teams 聊天或频道消息，请参阅 [保留策略或频道消息](https://support.microsoft.com/office/teams-messages-about-retention-policies-c151fa2f-1558-4cf9-8e51-854e925b483b)。
@@ -96,7 +96,7 @@ ms.locfileid: "50727321"
 
 - 为 SharePoint 文档应用默认标签。
 
-- 支持[处置评审](disposition-reviews.md) ，以在永久删除内容前评审内容。
+- 支持[处置评审](./disposition.md) ，以在永久删除内容前评审内容。
 
 - 将内容标记为[记录](records-management.md#records)作为标签设置的一部分，并对在保留期结束时删除的内容始终都有 [处置证明](disposition.md#disposition-of-records) 。
 
@@ -200,7 +200,7 @@ Exchange 公用文件夹、Skype、Teams 和 Yammer 消息不支持保留标签�
 电子邮件或文档一次只能应用有一个保留标签。 保留标签可以由最终用户或管理员[手动](create-apply-retention-labels.md#manually-apply-retention-labels)应用，也可以使用以下任一方法自动应用：
 
 - [自动应用标签策略](apply-retention-labels-automatically.md)
-- [Microsoft SharePoint Syntex 中的文档理解模型](https://docs.microsoft.com/microsoft-365/contentunderstanding/apply-a-retention-label-to-a-model)
+- [Microsoft SharePoint Syntex 中的文档理解模型](../contentunderstanding/apply-a-retention-label-to-a-model.md)
 - [SharePoint](create-apply-retention-labels.md#applying-a-default-retention-label-to-all-content-in-a-sharepoint-library-folder-or-document-set) 或 [Outlook 的默认标签](create-apply-retention-labels.md#applying-a-default-retention-label-to-an-outlook-folder)
 - [Outlook 规则](create-apply-retention-labels.md#automatically-applying-a-retention-label-to-email-by-using-rules)
 
@@ -376,35 +376,35 @@ Office 365 安全与合规中心的保留标签概述信息与 **“信息管理
 
 ## <a name="powershell-cmdlets-for-retention-policies-and-retention-labels"></a>用于保留策略和保留标签的 PowerShell cmdlet
 
-若要使用保留 cmdlet，必须先[连接到 Office 365 安全与合规中心 PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell)。 然后，使用以下任何 cmdlet：
+若要使用保留 cmdlet，必须先[连接到 Office 365 安全与合规中心 PowerShell](/powershell/exchange/connect-to-scc-powershell)。 然后，使用以下任何 cmdlet：
 
-- [Get-ComplianceTag](https://docs.microsoft.com/powershell/module/exchange/get-compliancetag)
+- [Get-ComplianceTag](/powershell/module/exchange/get-compliancetag)
 
-- [New-ComplianceTag](https://docs.microsoft.com/powershell/module/exchange/new-compliancetag)
+- [New-ComplianceTag](/powershell/module/exchange/new-compliancetag)
 
-- [Remove-ComplianceTag](https://docs.microsoft.com/powershell/module/exchange/remove-compliancetag)
+- [Remove-ComplianceTag](/powershell/module/exchange/remove-compliancetag)
 
-- [Set-ComplianceTag](https://docs.microsoft.com/powershell/module/exchange/set-compliancetag)
+- [Set-ComplianceTag](/powershell/module/exchange/set-compliancetag)
 
-- [Enable-ComplianceTagStorage](https://docs.microsoft.com/powershell/module/exchange/enable-compliancetagstorage)
+- [Enable-ComplianceTagStorage](/powershell/module/exchange/enable-compliancetagstorage)
 
-- [Get-ComplianceTagStorage](https://docs.microsoft.com/powershell/module/exchange/get-compliancetagstorage)
+- [Get-ComplianceTagStorage](/powershell/module/exchange/get-compliancetagstorage)
 
-- [Get-RetentionCompliancePolicy](https://docs.microsoft.com/powershell/module/exchange/get-retentioncompliancepolicy)
+- [Get-RetentionCompliancePolicy](/powershell/module/exchange/get-retentioncompliancepolicy)
 
-- [New-RetentionCompliancePolicy](https://docs.microsoft.com/powershell/module/exchange/new-retentioncompliancepolicy)
+- [New-RetentionCompliancePolicy](/powershell/module/exchange/new-retentioncompliancepolicy)
 
-- [Remove-RetentionCompliancePolicy](https://docs.microsoft.com/powershell/module/exchange/remove-retentioncompliancepolicy)
+- [Remove-RetentionCompliancePolicy](/powershell/module/exchange/remove-retentioncompliancepolicy)
 
-- [Set-RetentionCompliancePolicy](https://docs.microsoft.com/powershell/module/exchange/set-retentioncompliancepolicy)
+- [Set-RetentionCompliancePolicy](/powershell/module/exchange/set-retentioncompliancepolicy)
 
-- [Get-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/get-retentioncompliancerule)
+- [Get-RetentionComplianceRule](/powershell/module/exchange/get-retentioncompliancerule)
 
-- [New-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/new-retentioncompliancerule)
+- [New-RetentionComplianceRule](/powershell/module/exchange/new-retentioncompliancerule)
 
-- [Remove-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/remove-retentioncompliancerule)
+- [Remove-RetentionComplianceRule](/powershell/module/exchange/remove-retentioncompliancerule)
 
-- [Set-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/set-retentioncompliancerule)
+- [Set-RetentionComplianceRule](/powershell/module/exchange/set-retentioncompliancerule)
 
 ## <a name="when-to-use-retention-policies-and-retention-labels-or-ediscovery-holds"></a>何时使用保留策略和保留标签或电子数据展示保留
 
@@ -430,11 +430,11 @@ Office 365 安全与合规中心的保留标签概述信息与 **“信息管理
 如果你使用的是旧的电子数据展示工具来保留数据，请参阅以下资源：
 
 - Exchange: 
-    - [就地保留和诉讼保留](https://go.microsoft.com/fwlink/?linkid=846124)
-    - [如何识别为 Exchange Online 邮箱设置的保留类型](https://docs.microsoft.com/microsoft-365/compliance/identify-a-hold-on-an-exchange-online-mailbox)
+    - [就地保留和诉讼保留](/exchange/security-and-compliance/in-place-and-litigation-holds)
+    - [如何识别为 Exchange Online 邮箱设置的保留类型](./identify-a-hold-on-an-exchange-online-mailbox.md)
 
 - SharePoint 和 OneDrive： 
-    - [在电子数据展示中心将内容添加到事例并将源就地保留](https://docs.microsoft.com/SharePoint/governance/add-content-to-a-case-and-place-sources-on-hold-in-the-ediscovery-center)
+    - [在电子数据展示中心将内容添加到事例并将源就地保留](/SharePoint/governance/add-content-to-a-case-and-place-sources-on-hold-in-the-ediscovery-center)
 
 - [旧版电子数据展示工具的停用](legacy-ediscovery-retirement.md)
 
@@ -446,7 +446,7 @@ Office 365 安全与合规中心的保留标签概述信息与 **“信息管理
 
 **Exchange Online 中的早期功能：**
 
-- [保留标记和保留策略](https://go.microsoft.com/fwlink/?linkid=846125)，亦称为[邮件传递记录管理 (MRM)](https://go.microsoft.com/fwlink/?linkid=846126)（仅限删除）
+- [保留标记和保留策略](/exchange/security-and-compliance/messaging-records-management/retention-tags-and-policies)，亦称为[邮件传递记录管理 (MRM)](/exchange/security-and-compliance/messaging-records-management/messaging-records-management)（仅限删除）
 
 **SharePoint 和 OneDrive 中的早期功能：**
 
@@ -462,8 +462,8 @@ Office 365 安全与合规中心的保留标签概述信息与 **“信息管理
 
 ## <a name="related-information"></a>相关信息
 
-- [SharePoint Online 限制](https://docs.microsoft.com/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits)
-- [Microsoft Teams 的限制和规范](https://docs.microsoft.com/microsoftteams/limits-specifications-teams) 
+- [SharePoint Online 限制](/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits)
+- [Microsoft Teams 的限制和规范](/microsoftteams/limits-specifications-teams) 
 - [有助于你满足信息治理和记录管理监管要求的资源](retention-regulatory-requirements.md)
 
 ## <a name="configuration-guidance"></a>配置指南
@@ -473,4 +473,3 @@ Office 365 安全与合规中心的保留标签概述信息与 **“信息管理
 若要创建和应用保留标签，请执行以下操作：
 - [创建保留标签并在应用中应用它们](create-apply-retention-labels.md)
 - [自动向内容应用保留标签](apply-retention-labels-automatically.md)
-

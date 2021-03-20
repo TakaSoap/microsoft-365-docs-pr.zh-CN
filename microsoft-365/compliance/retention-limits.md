@@ -17,16 +17,16 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解策略、每个保留策略和保留标签策略项目的最大数量
-ms.openlocfilehash: 547c6396fa9bfcba6dbd271f09a7ea59f9acf170
-ms.sourcegitcommit: a9ac702c9efc9defded3bfa65618b94bac00c237
+ms.openlocfilehash: 53539df4d36fab02171e1ac06ba944ed3bea34e8
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/16/2021
-ms.locfileid: "50261581"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50917238"
 ---
 # <a name="limits-for-retention-policies-and-retention-label-policies"></a>保留策略和保留标签策略的限制
 
->*[Microsoft 365 安全性与合规性许可指南](https://aka.ms/ComplianceSD)。*
+>*[Microsoft 365 安全性与合规性许可指南](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。*
 
 使用“[保留策略和保留](retention.md#retention-policies-and-retention-labels)”来自动保留或删除组织数据时，请注意一些最大数量。
 
@@ -79,4 +79,3 @@ SharePoint 示例：
 - **解决方案**：为 SharePoint 创建20个保留策略，保留期为10年，其中包括100个特定的网站，并为 SharePoint 创建80条保留策略，保留期为4年，其中包括100个特定网站。
     
     由于无需保留所有 SharePoint 网站，因此必须创建指定特定网站的保留策略。 由于一个保留策略不支持超过100个指定网站，因此必须为两个保留期创建多个策略。 这些保留策略中包含的网站数量最多，因此下一个需要保留的新网站需要一个新的保留策略，而不考虑保留期。
-

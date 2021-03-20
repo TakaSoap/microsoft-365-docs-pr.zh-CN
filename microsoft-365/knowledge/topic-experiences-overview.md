@@ -14,12 +14,12 @@ ms.collection:
 - m365initiative-viva-topics
 localization_priority: None
 description: Viva Topics 概述。
-ms.openlocfilehash: 91442ba12b3d5df1d9934022751f4bc381cd40e8
-ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
-ms.translationtype: HT
+ms.openlocfilehash: 68a88e74a674a7bbc290ae0e8f88bfbe0277d910
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50453965"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50917376"
 ---
 # <a name="microsoft-viva-topics-overview"></a>Microsoft Viva Topics 概述 
 
@@ -66,7 +66,7 @@ Viva Topics 使用 Microsoft AI 技术以识别 Microsoft 365 环境中的 **主
 
 知识管理员可选择对租户中所有 SharePoint 网站进行主题爬网，或仅选择特定内容。
 
-请参阅 [主题发现和策展](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-discovery-curation)
+请参阅 [主题发现和策展](./topic-experiences-discovery-curation.md)
 
 ## <a name="roles"></a>角色
 
@@ -108,7 +108,7 @@ Microsoft 365 管理中心中的管理控件允许你管理知识网络。 它�
 - 控制哪些用户可以创建和编辑主题。
 - 控制哪些用户可以查看主题。
 
-请参阅 [分配用户权限](https://docs.microsoft.com/microsoft-365/knowledge/plan-topic-experiences#user-permissions)、[管理主题可见性](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-knowledge-rules)，以及 [管理主题发现](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-discovery)，以了解有关管理员控制的详细信息。
+请参阅 [分配用户权限](./plan-topic-experiences.md#user-permissions)、[管理主题可见性](./topic-experiences-knowledge-rules.md)，以及 [管理主题发现](./topic-experiences-discovery.md)，以了解有关管理员控制的详细信息。
 
 ## <a name="topic-curation--feedback"></a>主题策展和反馈
 
@@ -120,8 +120,7 @@ AI 将持续工作，以便随环境变化提供建议，以改进主题。
 
 此外，具有适当权限的用户可以标记与主题相关的项目（例如 Yammer 对话）并将其添加到特定主题。 
 
-请参阅 [主题发现和策展](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-discovery-curation)
+请参阅 [主题发现和策展](./topic-experiences-discovery-curation.md)
 
 
 ## <a name="see-also"></a>另请参阅
-
