@@ -1,5 +1,5 @@
 ---
-title: 设备列表 CSV-文件
+title: 设备列表 CSV 文件
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -22,37 +22,36 @@ search.appverid:
 - MOE150
 ms.assetid: 932e3676-2491-49f0-9177-d893d2f5276e
 ROBOTS: NOINDEX
-description: 了解如何在 Microsoft 365 for business 中为 AutoPilot 创建 CSV 文件。
-ms.openlocfilehash: 030fb96e9e60c792fb685af57d34eacd6670645a
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+description: 了解如何在 Microsoft 365 商业版中为 AutoPilot 创建 CSV 文件。
+ms.openlocfilehash: 78a9012bac054329bdb87b02757f49f30dd44f65
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399358"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50914734"
 ---
-# <a name="device-list-csv-file"></a><span data-ttu-id="c8c12-103">设备列表 CSV-文件</span><span class="sxs-lookup"><span data-stu-id="c8c12-103">Device list CSV-file</span></span>
+# <a name="device-list-csv-file"></a><span data-ttu-id="df94d-103">设备列表 CSV 文件</span><span class="sxs-lookup"><span data-stu-id="df94d-103">Device list CSV-file</span></span>
 
-## <a name="device-list-csv-file-format"></a><span data-ttu-id="c8c12-104">设备列表 .csv 文件格式</span><span class="sxs-lookup"><span data-stu-id="c8c12-104">Device list .csv file format</span></span>
+## <a name="device-list-csv-file-format"></a><span data-ttu-id="df94d-104">设备列表 .csv 文件格式</span><span class="sxs-lookup"><span data-stu-id="df94d-104">Device list .csv file format</span></span>
 
-<span data-ttu-id="c8c12-105">若要通过 Windows Autopilot 管理和部署设备，您需要一个包含有关设备的特定信息的 .csv 文件。</span><span class="sxs-lookup"><span data-stu-id="c8c12-105">To manage and deploy devices through Windows Autopilot, you'll need a .csv file that contains specific information about the devices.</span></span>
+<span data-ttu-id="df94d-105">若要通过 Windows Autopilot 管理和部署设备，你需要一个包含有关设备的特定信息的 .csv 文件。</span><span class="sxs-lookup"><span data-stu-id="df94d-105">To manage and deploy devices through Windows Autopilot, you'll need a .csv file that contains specific information about the devices.</span></span>
   
-<span data-ttu-id="c8c12-106">设备列表文件中的列必须按指定的顺序包含以下标头：</span><span class="sxs-lookup"><span data-stu-id="c8c12-106">Columns in the device list file must have the following headers in the specified order:</span></span>
+<span data-ttu-id="df94d-106">设备列表文件的列必须按指定顺序具有以下标题：</span><span class="sxs-lookup"><span data-stu-id="df94d-106">Columns in the device list file must have the following headers in the specified order:</span></span>
   
-- <span data-ttu-id="c8c12-107">列 A：设备序列号</span><span class="sxs-lookup"><span data-stu-id="c8c12-107">Column A: Device Serial Number</span></span>
+- <span data-ttu-id="df94d-107">列 A：设备序列号</span><span class="sxs-lookup"><span data-stu-id="df94d-107">Column A: Device Serial Number</span></span>
 
-- <span data-ttu-id="c8c12-108">列 B：留空</span><span class="sxs-lookup"><span data-stu-id="c8c12-108">Column B: leave blank</span></span>
+- <span data-ttu-id="df94d-108">列 B：保留为空</span><span class="sxs-lookup"><span data-stu-id="df94d-108">Column B: leave blank</span></span>
 
-- <span data-ttu-id="c8c12-109">列 C：硬件哈希</span><span class="sxs-lookup"><span data-stu-id="c8c12-109">Column C: Hardware Hash</span></span>
+- <span data-ttu-id="df94d-109">列 C：硬件哈希</span><span class="sxs-lookup"><span data-stu-id="df94d-109">Column C: Hardware Hash</span></span>
 
-<span data-ttu-id="c8c12-110">可从硬件供应商获取此信息，也可以使用将生成 CSV 文件的 [G-et-WindowsAutoPilotInfo PowerShell 脚本](https://www.powershellgallery.com/packages/Get-WindowsAutoPilotInfo)获取。</span><span class="sxs-lookup"><span data-stu-id="c8c12-110">You can get this information from your hardware vendor, or you can use the [Get-WindowsAutoPilotInfo PowerShell script](https://www.powershellgallery.com/packages/Get-WindowsAutoPilotInfo) that will generate a CSV file.</span></span> 
+<span data-ttu-id="df94d-110">可从硬件供应商获取此信息，也可以使用将生成 CSV 文件的 [G-et-WindowsAutoPilotInfo PowerShell 脚本](https://www.powershellgallery.com/packages/Get-WindowsAutoPilotInfo)获取。</span><span class="sxs-lookup"><span data-stu-id="df94d-110">You can get this information from your hardware vendor, or you can use the [Get-WindowsAutoPilotInfo PowerShell script](https://www.powershellgallery.com/packages/Get-WindowsAutoPilotInfo) that will generate a CSV file.</span></span> 
 
-<span data-ttu-id="c8c12-111">添加设备时，还需要将其添加到配置文件中。</span><span class="sxs-lookup"><span data-stu-id="c8c12-111">When you add devices, you also need to add them to a Profile.</span></span> <span data-ttu-id="c8c12-112">配置文件用于将 AutoPilot 部署配置文件应用于一个或一组设备。</span><span class="sxs-lookup"><span data-stu-id="c8c12-112">A profile is used to apply AutoPilot deployment profiles to a device or a group of devices.</span></span>
+<span data-ttu-id="df94d-111">添加设备时，还需要将它们添加到配置文件。</span><span class="sxs-lookup"><span data-stu-id="df94d-111">When you add devices, you also need to add them to a Profile.</span></span> <span data-ttu-id="df94d-112">配置文件用于将 AutoPilot 部署配置文件应用于设备或一组设备。</span><span class="sxs-lookup"><span data-stu-id="df94d-112">A profile is used to apply AutoPilot deployment profiles to a device or a group of devices.</span></span>
   
-## <a name="related-articles"></a><span data-ttu-id="c8c12-113">相关文章</span><span class="sxs-lookup"><span data-stu-id="c8c12-113">Related articles</span></span>
+## <a name="related-articles"></a><span data-ttu-id="df94d-113">相关文章</span><span class="sxs-lookup"><span data-stu-id="df94d-113">Related articles</span></span>
 
-[<span data-ttu-id="c8c12-114">适用于业务的 Microsoft 365 文档和资源</span><span class="sxs-lookup"><span data-stu-id="c8c12-114">Microsoft 365 for business documentation and resources</span></span>](https://go.microsoft.com/fwlink/p/?linkid=853701)
+[<span data-ttu-id="df94d-114">Microsoft 365 商业版文档和资源</span><span class="sxs-lookup"><span data-stu-id="df94d-114">Microsoft 365 for business documentation and resources</span></span>](../../business/index.yml)
   
-[<span data-ttu-id="c8c12-115">Microsoft 365 商业版入门</span><span class="sxs-lookup"><span data-stu-id="c8c12-115">Get started with Microsoft 365 for business</span></span>](https://docs.microsoft.com/microsoft-365/business/microsoft-365-business-overview)
+[<span data-ttu-id="df94d-115">Microsoft 365 商业版入门</span><span class="sxs-lookup"><span data-stu-id="df94d-115">Get started with Microsoft 365 for business</span></span>](../../business/microsoft-365-business-overview.md)
   
-[<span data-ttu-id="c8c12-116">管理 Microsoft 365 商业版</span><span class="sxs-lookup"><span data-stu-id="c8c12-116">Manage Microsoft 365 for business</span></span>](https://docs.microsoft.com/microsoft-365/business/manage)
-  
+[<span data-ttu-id="df94d-116">管理 Microsoft 365 商业版</span><span class="sxs-lookup"><span data-stu-id="df94d-116">Manage Microsoft 365 for business</span></span>](../../business/manage.md)

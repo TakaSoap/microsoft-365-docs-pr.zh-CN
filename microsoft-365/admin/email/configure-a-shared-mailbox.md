@@ -16,269 +16,268 @@ ms.collection:
 ms.custom:
 - MSStore_Link
 - AdminSurgePortfolio
-- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: 创建共享邮箱后，需要为用户配置一些设置，例如电子邮件转发和自动答复。 稍后，您可能需要更改其他设置，如邮箱名称或成员。
-ms.openlocfilehash: fe5d35be556b8edf5456bc2c0b820dc0ce77e323
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+description: 创建共享邮箱后，您需要为用户配置一些设置，例如电子邮件转发和自动答复。 稍后，您可能需要更改其他设置，如邮箱名称或成员。
+ms.openlocfilehash: 2d0998ba2bdc95a9f78f59527bd9bd6fa98b4c45
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49926602"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50915910"
 ---
-# <a name="configure-shared-mailbox-settings"></a><span data-ttu-id="b9db0-104">配置共享邮箱设置</span><span class="sxs-lookup"><span data-stu-id="b9db0-104">Configure shared mailbox settings</span></span>
+# <a name="configure-shared-mailbox-settings"></a><span data-ttu-id="d5444-104">配置共享邮箱设置</span><span class="sxs-lookup"><span data-stu-id="d5444-104">Configure shared mailbox settings</span></span>
 
-<span data-ttu-id="b9db0-105">创建共享 [邮箱](create-a-shared-mailbox.md)后，需要为邮箱用户配置一些设置，例如电子邮件转发和自动答复。</span><span class="sxs-lookup"><span data-stu-id="b9db0-105">After you have [created a shared mailbox](create-a-shared-mailbox.md), you'll want to configure some settings for the mailbox users, such as email forwarding and automatic replies.</span></span> <span data-ttu-id="b9db0-106">稍后，您可能需要更改其他设置，如邮箱名称、成员或成员权限。</span><span class="sxs-lookup"><span data-stu-id="b9db0-106">Later, you might want to change other settings, such as the mailbox name, members, or member permissions.</span></span> 
+<span data-ttu-id="d5444-105">创建共享 [邮箱后](create-a-shared-mailbox.md)，您需要为邮箱用户配置一些设置，例如电子邮件转发和自动答复。</span><span class="sxs-lookup"><span data-stu-id="d5444-105">After you have [created a shared mailbox](create-a-shared-mailbox.md), you'll want to configure some settings for the mailbox users, such as email forwarding and automatic replies.</span></span> <span data-ttu-id="d5444-106">稍后，您可能需要更改其他设置，如邮箱名称、成员或成员权限。</span><span class="sxs-lookup"><span data-stu-id="d5444-106">Later, you might want to change other settings, such as the mailbox name, members, or member permissions.</span></span> 
 
-## <a name="change-the-name-or-email-alias-of-a-shared-mailbox-or-change-the-primary-email-address"></a><span data-ttu-id="b9db0-107">更改共享邮箱的名称或电子邮件别名，或更改主电子邮件地址</span><span class="sxs-lookup"><span data-stu-id="b9db0-107">Change the name or email alias of a shared mailbox, or change the primary email address</span></span>
+## <a name="change-the-name-or-email-alias-of-a-shared-mailbox-or-change-the-primary-email-address"></a><span data-ttu-id="d5444-107">更改共享邮箱的名称或电子邮件别名，或更改主电子邮件地址</span><span class="sxs-lookup"><span data-stu-id="d5444-107">Change the name or email alias of a shared mailbox, or change the primary email address</span></span>
 
 ::: moniker range="o365-worldwide"
 
-1. <span data-ttu-id="b9db0-108">在管理中心，转到“**组**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">共享邮箱</a>”页面。</span><span class="sxs-lookup"><span data-stu-id="b9db0-108">In the admin center, go to the **Groups** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">Shared mailboxes</a> page.</span></span>
+1. <span data-ttu-id="d5444-108">在管理中心，转到“**组**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">共享邮箱</a>”页面。</span><span class="sxs-lookup"><span data-stu-id="d5444-108">In the admin center, go to the **Groups** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">Shared mailboxes</a> page.</span></span>
 
 ::: moniker-end 
 
 ::: moniker range="o365-germany"
 
-1. <span data-ttu-id="b9db0-109">在 <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">管理中心</a>，转到“**组**”>“**共享邮箱**”页面。</span><span class="sxs-lookup"><span data-stu-id="b9db0-109">In the <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">admin center</a>, go to the **Groups** > **Shared mailboxes** page.</span></span> 
+1. <span data-ttu-id="d5444-109">在 <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">管理中心</a>，转到“**组**”>“**共享邮箱**”页面。</span><span class="sxs-lookup"><span data-stu-id="d5444-109">In the <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">admin center</a>, go to the **Groups** > **Shared mailboxes** page.</span></span> 
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. <span data-ttu-id="b9db0-110">在 <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">管理中心</a>，转到“**组**”>“**共享邮箱**”页面。</span><span class="sxs-lookup"><span data-stu-id="b9db0-110">In the <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">admin center</a>, go to the **Groups** > **Shared mailboxes** page.</span></span> 
+1. <span data-ttu-id="d5444-110">在 <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">管理中心</a>，转到“**组**”>“**共享邮箱**”页面。</span><span class="sxs-lookup"><span data-stu-id="d5444-110">In the <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">admin center</a>, go to the **Groups** > **Shared mailboxes** page.</span></span> 
 
 ::: moniker-end
 
-2. <span data-ttu-id="b9db0-111">选择要编辑的共享邮箱，然后选择"名称、电子邮件、电子邮件别名"**旁边的"编辑"。**</span><span class="sxs-lookup"><span data-stu-id="b9db0-111">Select the shared mailbox you want to edit, and then select **Edit** next to **Name, Email, Email aliases**.</span></span>
+2. <span data-ttu-id="d5444-111">选择要编辑的共享邮箱，然后选择"名称、电子邮件、电子邮件别名"旁边的"**编辑"。**</span><span class="sxs-lookup"><span data-stu-id="d5444-111">Select the shared mailbox you want to edit, and then select **Edit** next to **Name, Email, Email aliases**.</span></span>
 
-3. <span data-ttu-id="b9db0-112">输入新名称，或添加其他别名。</span><span class="sxs-lookup"><span data-stu-id="b9db0-112">Enter a new name, or add another alias.</span></span> <span data-ttu-id="b9db0-113">如果要更改主电子邮件地址，邮箱必须具有多个电子邮件别名。</span><span class="sxs-lookup"><span data-stu-id="b9db0-113">If you want to change the primary email address, your mailbox must have more than one email alias.</span></span>
+3. <span data-ttu-id="d5444-112">输入新名称，或添加其他别名。</span><span class="sxs-lookup"><span data-stu-id="d5444-112">Enter a new name, or add another alias.</span></span> <span data-ttu-id="d5444-113">如果要更改主电子邮件地址，邮箱必须拥有多个电子邮件别名。</span><span class="sxs-lookup"><span data-stu-id="d5444-113">If you want to change the primary email address, your mailbox must have more than one email alias.</span></span>
 
-4. <span data-ttu-id="b9db0-114">选择 **“保存”**。</span><span class="sxs-lookup"><span data-stu-id="b9db0-114">Select **Save**.</span></span>
+4. <span data-ttu-id="d5444-114">选择“**保存**”。</span><span class="sxs-lookup"><span data-stu-id="d5444-114">Select **Save**.</span></span>
 
-## <a name="forward-emails-that-are-sent-to-a-shared-mailbox"></a><span data-ttu-id="b9db0-115">转发共享邮箱收到的电子邮件</span><span class="sxs-lookup"><span data-stu-id="b9db0-115">Forward emails that are sent to a shared mailbox</span></span>
+## <a name="forward-emails-that-are-sent-to-a-shared-mailbox"></a><span data-ttu-id="d5444-115">转发共享邮箱收到的电子邮件</span><span class="sxs-lookup"><span data-stu-id="d5444-115">Forward emails that are sent to a shared mailbox</span></span>
 
-<span data-ttu-id="b9db0-116">无需为共享邮箱分配许可证，就不必转发发送给它的电子邮件。</span><span class="sxs-lookup"><span data-stu-id="b9db0-116">You do not need to assign a license to the shared mailbox in order to forward email that's sent to it.</span></span> <span data-ttu-id="b9db0-117">可以将邮件转发到任何有效的电子邮件地址或通讯组列表。</span><span class="sxs-lookup"><span data-stu-id="b9db0-117">You can forward the messages to any valid email address or distribution list.</span></span>
+<span data-ttu-id="d5444-116">无需为共享邮箱分配许可证，就不必转发发送给它的电子邮件。</span><span class="sxs-lookup"><span data-stu-id="d5444-116">You do not need to assign a license to the shared mailbox in order to forward email that's sent to it.</span></span> <span data-ttu-id="d5444-117">可以将邮件转发到任何有效的电子邮件地址或通讯组列表。</span><span class="sxs-lookup"><span data-stu-id="d5444-117">You can forward the messages to any valid email address or distribution list.</span></span>
 
 ::: moniker range="o365-worldwide"
 
-1. <span data-ttu-id="b9db0-118">在管理中心，转到“**组**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">共享邮箱</a>”页面。</span><span class="sxs-lookup"><span data-stu-id="b9db0-118">In the admin center, go to the **Groups** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">Shared mailboxes</a> page.</span></span>
+1. <span data-ttu-id="d5444-118">在管理中心，转到“**组**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">共享邮箱</a>”页面。</span><span class="sxs-lookup"><span data-stu-id="d5444-118">In the admin center, go to the **Groups** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">Shared mailboxes</a> page.</span></span>
 
 ::: moniker-end 
 
 ::: moniker range="o365-germany"
 
-1. <span data-ttu-id="b9db0-119">在 <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">管理中心</a>，转到“**组**”>“**共享邮箱**”页面。</span><span class="sxs-lookup"><span data-stu-id="b9db0-119">In the <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">admin center</a>, go to the **Groups** > **Shared mailboxes** page.</span></span> 
+1. <span data-ttu-id="d5444-119">在 <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">管理中心</a>，转到“**组**”>“**共享邮箱**”页面。</span><span class="sxs-lookup"><span data-stu-id="d5444-119">In the <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">admin center</a>, go to the **Groups** > **Shared mailboxes** page.</span></span> 
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. <span data-ttu-id="b9db0-120">在 <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">管理中心</a>，转到“**组**”>“**共享邮箱**”页面。</span><span class="sxs-lookup"><span data-stu-id="b9db0-120">In the <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">admin center</a>, go to the **Groups** > **Shared mailboxes** page.</span></span> 
+1. <span data-ttu-id="d5444-120">在 <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">管理中心</a>，转到“**组**”>“**共享邮箱**”页面。</span><span class="sxs-lookup"><span data-stu-id="d5444-120">In the <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">admin center</a>, go to the **Groups** > **Shared mailboxes** page.</span></span> 
 
 ::: moniker-end
 
-2. <span data-ttu-id="b9db0-121">选择要编辑的共享邮箱，然后选择"**电子邮件转发编辑** \> **"。**</span><span class="sxs-lookup"><span data-stu-id="b9db0-121">Select the shared mailbox you want to edit, then select **Email forwarding** \> **Edit**.</span></span>
+2. <span data-ttu-id="d5444-121">选择要编辑的共享邮箱，然后选择"**电子邮件转发编辑** \> **"。**</span><span class="sxs-lookup"><span data-stu-id="d5444-121">Select the shared mailbox you want to edit, then select **Email forwarding** \> **Edit**.</span></span>
     
-3. <span data-ttu-id="b9db0-122">将开关设置为 **"打开**"，然后输入一个电子邮件地址将邮件转发到。</span><span class="sxs-lookup"><span data-stu-id="b9db0-122">Set the toggle to **On**, and enter one email address to forward the messages to.</span></span> <span data-ttu-id="b9db0-123">它可以是任何有效的电子邮件地址。</span><span class="sxs-lookup"><span data-stu-id="b9db0-123">It can be any valid email address.</span></span> <span data-ttu-id="b9db0-124">若要转发到多个地址，需要为这些地址[](https://docs.microsoft.com/office365/admin/setup/create-distribution-lists)创建通讯组，然后在此框中输入组的名称。</span><span class="sxs-lookup"><span data-stu-id="b9db0-124">To forward to multiple addresses, you need to [create a distribution group](https://docs.microsoft.com/office365/admin/setup/create-distribution-lists) for the addresses, and then enter the name of the group in this box.</span></span>
+3. <span data-ttu-id="d5444-122">将开关设置为 **"打开"，** 然后输入一个电子邮件地址以将邮件转发到 。</span><span class="sxs-lookup"><span data-stu-id="d5444-122">Set the toggle to **On**, and enter one email address to forward the messages to.</span></span> <span data-ttu-id="d5444-123">它可以是任何有效的电子邮件地址。</span><span class="sxs-lookup"><span data-stu-id="d5444-123">It can be any valid email address.</span></span> <span data-ttu-id="d5444-124">若要转发到多个地址，需要为这些地址[](/office365/admin/setup/create-distribution-lists)创建通讯组，然后在此框中输入该组的名称。</span><span class="sxs-lookup"><span data-stu-id="d5444-124">To forward to multiple addresses, you need to [create a distribution group](/office365/admin/setup/create-distribution-lists) for the addresses, and then enter the name of the group in this box.</span></span>
     
-4. <span data-ttu-id="b9db0-125">选择 **“保存”**。</span><span class="sxs-lookup"><span data-stu-id="b9db0-125">Select **Save**.</span></span>
+4. <span data-ttu-id="d5444-125">选择“**保存**”。</span><span class="sxs-lookup"><span data-stu-id="d5444-125">Select **Save**.</span></span>
 
-## <a name="send-automatic-replies-from-a-shared-mailbox"></a><span data-ttu-id="b9db0-126">从共享邮箱发送自动答复</span><span class="sxs-lookup"><span data-stu-id="b9db0-126">Send automatic replies from a shared mailbox</span></span>
+## <a name="send-automatic-replies-from-a-shared-mailbox"></a><span data-ttu-id="d5444-126">从共享邮箱发送自动答复</span><span class="sxs-lookup"><span data-stu-id="d5444-126">Send automatic replies from a shared mailbox</span></span>
 
 ::: moniker range="o365-worldwide"
 
-1. <span data-ttu-id="b9db0-127">在管理中心，转到“**组**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">共享邮箱</a>”页面。</span><span class="sxs-lookup"><span data-stu-id="b9db0-127">In the admin center, go to the **Groups** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">Shared mailboxes</a> page.</span></span>
+1. <span data-ttu-id="d5444-127">在管理中心，转到“**组**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">共享邮箱</a>”页面。</span><span class="sxs-lookup"><span data-stu-id="d5444-127">In the admin center, go to the **Groups** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">Shared mailboxes</a> page.</span></span>
 
 ::: moniker-end 
 
 ::: moniker range="o365-germany"
 
-1. <span data-ttu-id="b9db0-128">在 <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">管理中心</a>，转到“**组**”>“**共享邮箱**”页面。</span><span class="sxs-lookup"><span data-stu-id="b9db0-128">In the <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">admin center</a>, go to the **Groups** > **Shared mailboxes** page.</span></span> 
+1. <span data-ttu-id="d5444-128">在 <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">管理中心</a>，转到“**组**”>“**共享邮箱**”页面。</span><span class="sxs-lookup"><span data-stu-id="d5444-128">In the <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">admin center</a>, go to the **Groups** > **Shared mailboxes** page.</span></span> 
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. <span data-ttu-id="b9db0-129">在 <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">管理中心</a>，转到“**组**”>“**共享邮箱**”页面。</span><span class="sxs-lookup"><span data-stu-id="b9db0-129">In the <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">admin center</a>, go to the **Groups** > **Shared mailboxes** page.</span></span> 
+1. <span data-ttu-id="d5444-129">在 <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">管理中心</a>，转到“**组**”>“**共享邮箱**”页面。</span><span class="sxs-lookup"><span data-stu-id="d5444-129">In the <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">admin center</a>, go to the **Groups** > **Shared mailboxes** page.</span></span> 
 
 ::: moniker-end
 
-2. <span data-ttu-id="b9db0-130">选择要编辑的共享邮箱，然后选择"**自动答复编辑** \> **"。**</span><span class="sxs-lookup"><span data-stu-id="b9db0-130">Select the shared mailbox you want to edit, then select **Automatic replies** \> **Edit**.</span></span>
+2. <span data-ttu-id="d5444-130">选择要编辑的共享邮箱，然后选择"**自动答复""** \> **编辑"。**</span><span class="sxs-lookup"><span data-stu-id="d5444-130">Select the shared mailbox you want to edit, then select **Automatic replies** \> **Edit**.</span></span>
     
-3. <span data-ttu-id="b9db0-131">将开关切换到" **开**"，选择将答复发送给组织内部还是外部的人员。</span><span class="sxs-lookup"><span data-stu-id="b9db0-131">Set the toggle to **On**, and choose whether to send the reply to people inside your organization or outside your organization.</span></span>
+3. <span data-ttu-id="d5444-131">将开关切换到" **开**"，选择将答复发送给组织内部还是外部的人员。</span><span class="sxs-lookup"><span data-stu-id="d5444-131">Set the toggle to **On**, and choose whether to send the reply to people inside your organization or outside your organization.</span></span>
 
-4. <span data-ttu-id="b9db0-132">输入要向组织内部的人员发送的答复。</span><span class="sxs-lookup"><span data-stu-id="b9db0-132">Enter the reply you want to send to people inside your organization.</span></span> <span data-ttu-id="b9db0-133">不能添加图像，只能输入文本。</span><span class="sxs-lookup"><span data-stu-id="b9db0-133">You can't add images, only text.</span></span>
+4. <span data-ttu-id="d5444-132">输入要向组织内部的人员发送的答复。</span><span class="sxs-lookup"><span data-stu-id="d5444-132">Enter the reply you want to send to people inside your organization.</span></span> <span data-ttu-id="d5444-133">不能添加图像，只能输入文本。</span><span class="sxs-lookup"><span data-stu-id="d5444-133">You can't add images, only text.</span></span>
 
-5. <span data-ttu-id="b9db0-134">如果要同时 *向* 组织外部人员发送答复，请选中要获取答复的复选框，然后键入文本。</span><span class="sxs-lookup"><span data-stu-id="b9db0-134">If you want to *also* send a reply to people outside your organization, select the check box, who you want to get the reply, and type the text.</span></span> <span data-ttu-id="b9db0-135">不能只发送给组织外部的人员而不发送给组织内部的人员。</span><span class="sxs-lookup"><span data-stu-id="b9db0-135">There's no way to only send to people outside your organization but not to people inside your organization.</span></span>
+5. <span data-ttu-id="d5444-134">如果还要 *向* 组织外部人员发送答复，请选中要获取答复的复选框，然后键入文本。</span><span class="sxs-lookup"><span data-stu-id="d5444-134">If you want to *also* send a reply to people outside your organization, select the check box, who you want to get the reply, and type the text.</span></span> <span data-ttu-id="d5444-135">不能只发送给组织外部的人员而不发送给组织内部的人员。</span><span class="sxs-lookup"><span data-stu-id="d5444-135">There's no way to only send to people outside your organization but not to people inside your organization.</span></span>
 
-6. <span data-ttu-id="b9db0-136">选择 **“保存”**。</span><span class="sxs-lookup"><span data-stu-id="b9db0-136">Select **Save**.</span></span>
+6. <span data-ttu-id="d5444-136">选择“**保存**”。</span><span class="sxs-lookup"><span data-stu-id="d5444-136">Select **Save**.</span></span>
 
-## <a name="allow-everyone-to-see-the-sent-email-the-replies"></a><span data-ttu-id="b9db0-137">使所有人都能看到已发送的电子邮件（答复邮件）</span><span class="sxs-lookup"><span data-stu-id="b9db0-137">Allow everyone to see the Sent email (the replies)</span></span>
+## <a name="allow-everyone-to-see-the-sent-email-the-replies"></a><span data-ttu-id="d5444-137">使所有人都能看到已发送的电子邮件（答复邮件）</span><span class="sxs-lookup"><span data-stu-id="d5444-137">Allow everyone to see the Sent email (the replies)</span></span>
 
-<span data-ttu-id="b9db0-p108">默认情况下，发送自共享邮箱的邮件不会保存到共享邮箱的"已发送邮件"文件夹中。相反，它们会保存到发件人的"已发送邮件"文件夹中。</span><span class="sxs-lookup"><span data-stu-id="b9db0-p108">By default, messages sent from the shared mailbox aren't saved to the Sent Items folder of the shared mailbox. Instead, they are saved to the Sent Items folder of the person who sent the message.</span></span>
+<span data-ttu-id="d5444-p108">默认情况下，发送自共享邮箱的邮件不会保存到共享邮箱的"已发送邮件"文件夹中。相反，它们会保存到发件人的"已发送邮件"文件夹中。</span><span class="sxs-lookup"><span data-stu-id="d5444-p108">By default, messages sent from the shared mailbox aren't saved to the Sent Items folder of the shared mailbox. Instead, they are saved to the Sent Items folder of the person who sent the message.</span></span>
 
-<span data-ttu-id="b9db0-140">如果要允许所有人查看已发送的电子邮件，请在管理中心编辑共享邮箱设置，然后选择"已发送邮件编辑 \> **"。**</span><span class="sxs-lookup"><span data-stu-id="b9db0-140">If you want to allow everyone to see the Sent email, in the admin center, edit the shared mailbox settings, and select **Sent items** \> **Edit**.</span></span>
+<span data-ttu-id="d5444-140">如果要允许所有人查看"已发送电子邮件"，请在管理中心编辑共享邮箱设置，然后选择"已发送邮件""**编辑** \> **"。**</span><span class="sxs-lookup"><span data-stu-id="d5444-140">If you want to allow everyone to see the Sent email, in the admin center, edit the shared mailbox settings, and select **Sent items** \> **Edit**.</span></span>
 
 
-## <a name="choose-the-apps-that-a-shared-mailbox-can-use-to-access-microsoft-email"></a><span data-ttu-id="b9db0-141">选择共享邮箱可用于访问 Microsoft 电子邮件的应用</span><span class="sxs-lookup"><span data-stu-id="b9db0-141">Choose the apps that a shared mailbox can use to access Microsoft email</span></span>
+## <a name="choose-the-apps-that-a-shared-mailbox-can-use-to-access-microsoft-email"></a><span data-ttu-id="d5444-141">选择共享邮箱可用于访问 Microsoft 电子邮件的应用</span><span class="sxs-lookup"><span data-stu-id="d5444-141">Choose the apps that a shared mailbox can use to access Microsoft email</span></span>
 
 ::: moniker range="o365-worldwide"
 
-1. <span data-ttu-id="b9db0-142">在管理中心，转到“**组**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">共享邮箱</a>”页面。</span><span class="sxs-lookup"><span data-stu-id="b9db0-142">In the admin center, go to the **Groups** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">Shared mailboxes</a> page.</span></span>
+1. <span data-ttu-id="d5444-142">在管理中心，转到“**组**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">共享邮箱</a>”页面。</span><span class="sxs-lookup"><span data-stu-id="d5444-142">In the admin center, go to the **Groups** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">Shared mailboxes</a> page.</span></span>
 
 ::: moniker-end 
 
 ::: moniker range="o365-germany"
 
-1. <span data-ttu-id="b9db0-143">在 <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">管理中心</a>，转到“**组**”>“**共享邮箱**”页面。</span><span class="sxs-lookup"><span data-stu-id="b9db0-143">In the <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">admin center</a>, go to the **Groups** > **Shared mailboxes** page.</span></span> 
+1. <span data-ttu-id="d5444-143">在 <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">管理中心</a>，转到“**组**”>“**共享邮箱**”页面。</span><span class="sxs-lookup"><span data-stu-id="d5444-143">In the <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">admin center</a>, go to the **Groups** > **Shared mailboxes** page.</span></span> 
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. <span data-ttu-id="b9db0-144">在 <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">管理中心</a>，转到“**组**”>“**共享邮箱**”页面。</span><span class="sxs-lookup"><span data-stu-id="b9db0-144">In the <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">admin center</a>, go to the **Groups** > **Shared mailboxes** page.</span></span> 
+1. <span data-ttu-id="d5444-144">在 <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">管理中心</a>，转到“**组**”>“**共享邮箱**”页面。</span><span class="sxs-lookup"><span data-stu-id="d5444-144">In the <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">admin center</a>, go to the **Groups** > **Shared mailboxes** page.</span></span> 
 
 ::: moniker-end
 
-2. <span data-ttu-id="b9db0-145">选择要编辑的共享邮箱，然后选择"**电子邮件应用** 编辑 \> **"。**</span><span class="sxs-lookup"><span data-stu-id="b9db0-145">Select the shared mailbox you want to edit, then select **Email apps** \> **Edit**.</span></span>
+2. <span data-ttu-id="d5444-145">选择要编辑的共享邮箱，然后选择"**电子邮件应用** 编辑 \> **"。**</span><span class="sxs-lookup"><span data-stu-id="d5444-145">Select the shared mailbox you want to edit, then select **Email apps** \> **Edit**.</span></span>
 
-3. <span data-ttu-id="b9db0-146">对于 **希望成员能够** 用于访问共享邮箱的所有应用，将开关设置为"打开"。</span><span class="sxs-lookup"><span data-stu-id="b9db0-146">Set the toggle to **On** for all of the apps you want members to be able to use to access the shared mailbox.</span></span> <span data-ttu-id="b9db0-147">对于你不希望 **他们** 使用的任何应用，将开关设置为"关闭"。</span><span class="sxs-lookup"><span data-stu-id="b9db0-147">Set the toggle to **Off** for any apps you don't want them to use.</span></span> 
+3. <span data-ttu-id="d5444-146">对于您希望成员能够用于访问共享邮箱的所有应用，将开关设置为"打开"。</span><span class="sxs-lookup"><span data-stu-id="d5444-146">Set the toggle to **On** for all of the apps you want members to be able to use to access the shared mailbox.</span></span> <span data-ttu-id="d5444-147">对于你 **不希望他们** 使用的任何应用，将开关设置为"关闭"。</span><span class="sxs-lookup"><span data-stu-id="d5444-147">Set the toggle to **Off** for any apps you don't want them to use.</span></span> 
 
-4. <span data-ttu-id="b9db0-148">选择 **“保存”**。</span><span class="sxs-lookup"><span data-stu-id="b9db0-148">Select **Save**.</span></span>
+4. <span data-ttu-id="d5444-148">选择“**保存**”。</span><span class="sxs-lookup"><span data-stu-id="d5444-148">Select **Save**.</span></span>
 
 
-## <a name="put-a-shared-mailbox-on-litigation-hold"></a><span data-ttu-id="b9db0-149">将共享邮箱置于诉讼保留状态</span><span class="sxs-lookup"><span data-stu-id="b9db0-149">Put a shared mailbox on litigation hold</span></span>
+## <a name="put-a-shared-mailbox-on-litigation-hold"></a><span data-ttu-id="d5444-149">将共享邮箱置于诉讼保留状态</span><span class="sxs-lookup"><span data-stu-id="d5444-149">Put a shared mailbox on litigation hold</span></span>
 
-<span data-ttu-id="b9db0-150">若要了解有关诉讼保留的更多信息，请参阅["创建诉讼保留"。](https://docs.microsoft.com/microsoft-365/compliance/create-a-litigation-hold)</span><span class="sxs-lookup"><span data-stu-id="b9db0-150">To learn more about litigation hold, see [Create a Litigation Hold](https://docs.microsoft.com/microsoft-365/compliance/create-a-litigation-hold).</span></span>
+<span data-ttu-id="d5444-150">若要了解有关诉讼保留的更多信息，请参阅 [创建诉讼保留](../../compliance/create-a-litigation-hold.md)。</span><span class="sxs-lookup"><span data-stu-id="d5444-150">To learn more about litigation hold, see [Create a Litigation Hold](../../compliance/create-a-litigation-hold.md).</span></span>
 
 ::: moniker range="o365-worldwide"
 
-1. <span data-ttu-id="b9db0-151">在管理中心，转到“**组**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">共享邮箱</a>”页面。</span><span class="sxs-lookup"><span data-stu-id="b9db0-151">In the admin center, go to the **Groups** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">Shared mailboxes</a> page.</span></span>
+1. <span data-ttu-id="d5444-151">在管理中心，转到“**组**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">共享邮箱</a>”页面。</span><span class="sxs-lookup"><span data-stu-id="d5444-151">In the admin center, go to the **Groups** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">Shared mailboxes</a> page.</span></span>
 
 ::: moniker-end 
 
 ::: moniker range="o365-germany"
 
-1. <span data-ttu-id="b9db0-152">在 <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">管理中心</a>，转到“**组**”>“**共享邮箱**”页面。</span><span class="sxs-lookup"><span data-stu-id="b9db0-152">In the <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">admin center</a>, go to the **Groups** > **Shared mailboxes** page.</span></span> 
+1. <span data-ttu-id="d5444-152">在 <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">管理中心</a>，转到“**组**”>“**共享邮箱**”页面。</span><span class="sxs-lookup"><span data-stu-id="d5444-152">In the <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">admin center</a>, go to the **Groups** > **Shared mailboxes** page.</span></span> 
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. <span data-ttu-id="b9db0-153">在 <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">管理中心</a>，转到“**组**”>“**共享邮箱**”页面。</span><span class="sxs-lookup"><span data-stu-id="b9db0-153">In the <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">admin center</a>, go to the **Groups** > **Shared mailboxes** page.</span></span> 
+1. <span data-ttu-id="d5444-153">在 <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">管理中心</a>，转到“**组**”>“**共享邮箱**”页面。</span><span class="sxs-lookup"><span data-stu-id="d5444-153">In the <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">admin center</a>, go to the **Groups** > **Shared mailboxes** page.</span></span> 
 
 ::: moniker-end
 
-2. <span data-ttu-id="b9db0-154">选择要编辑的共享邮箱，然后选择"**诉讼保留编辑** \> **"。**</span><span class="sxs-lookup"><span data-stu-id="b9db0-154">Select the shared mailbox you want to edit, then select **Litigation hold** \> **Edit**.</span></span>
+2. <span data-ttu-id="d5444-154">选择要编辑的共享邮箱，然后选择"**诉讼保留""** \> **编辑"。**</span><span class="sxs-lookup"><span data-stu-id="d5444-154">Select the shared mailbox you want to edit, then select **Litigation hold** \> **Edit**.</span></span>
 
-3. <span data-ttu-id="b9db0-155">将开关设置为 **"打开"。**</span><span class="sxs-lookup"><span data-stu-id="b9db0-155">Set the toggle to **On**.</span></span> 
+3. <span data-ttu-id="d5444-155">将开关设置为 **"打开"。**</span><span class="sxs-lookup"><span data-stu-id="d5444-155">Set the toggle to **On**.</span></span> 
 
-4. <span data-ttu-id="b9db0-156">（可选）输入持续时间、关于保留的注释和包含详细信息的 URL。</span><span class="sxs-lookup"><span data-stu-id="b9db0-156">Optionally, enter a duration, s note about the hold, and a URL with more information.</span></span>  
+4. <span data-ttu-id="d5444-156">（可选）输入持续时间、保留说明和包含详细信息的 URL。</span><span class="sxs-lookup"><span data-stu-id="d5444-156">Optionally, enter a duration, s note about the hold, and a URL with more information.</span></span>  
 
-5. <span data-ttu-id="b9db0-157">选择 **“保存”**。</span><span class="sxs-lookup"><span data-stu-id="b9db0-157">Select **Save**.</span></span>
+5. <span data-ttu-id="d5444-157">选择“**保存**”。</span><span class="sxs-lookup"><span data-stu-id="d5444-157">Select **Save**.</span></span>
 
 
-## <a name="add-or-remove-members"></a><span data-ttu-id="b9db0-158">添加或删除成员</span><span class="sxs-lookup"><span data-stu-id="b9db0-158">Add or remove members</span></span>
+## <a name="add-or-remove-members"></a><span data-ttu-id="d5444-158">添加或删除成员</span><span class="sxs-lookup"><span data-stu-id="d5444-158">Add or remove members</span></span>
 
 ::: moniker range="o365-worldwide"
 
-1. <span data-ttu-id="b9db0-159">在管理中心，转到“**组**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">共享邮箱</a>”页面。</span><span class="sxs-lookup"><span data-stu-id="b9db0-159">In the admin center, go to the **Groups** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">Shared mailboxes</a> page.</span></span>
+1. <span data-ttu-id="d5444-159">在管理中心，转到“**组**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">共享邮箱</a>”页面。</span><span class="sxs-lookup"><span data-stu-id="d5444-159">In the admin center, go to the **Groups** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">Shared mailboxes</a> page.</span></span>
 
 ::: moniker-end 
 
 ::: moniker range="o365-germany"
 
-1. <span data-ttu-id="b9db0-160">在 <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">管理中心</a>，转到“**组**”>“**共享邮箱**”页面。</span><span class="sxs-lookup"><span data-stu-id="b9db0-160">In the <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">admin center</a>, go to the **Groups** > **Shared mailboxes** page.</span></span> 
+1. <span data-ttu-id="d5444-160">在 <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">管理中心</a>，转到“**组**”>“**共享邮箱**”页面。</span><span class="sxs-lookup"><span data-stu-id="d5444-160">In the <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">admin center</a>, go to the **Groups** > **Shared mailboxes** page.</span></span> 
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. <span data-ttu-id="b9db0-161">在 <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">管理中心</a>，转到“**组**”>“**共享邮箱**”页面。</span><span class="sxs-lookup"><span data-stu-id="b9db0-161">In the <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">admin center</a>, go to the **Groups** > **Shared mailboxes** page.</span></span> 
+1. <span data-ttu-id="d5444-161">在 <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">管理中心</a>，转到“**组**”>“**共享邮箱**”页面。</span><span class="sxs-lookup"><span data-stu-id="d5444-161">In the <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">admin center</a>, go to the **Groups** > **Shared mailboxes** page.</span></span> 
 
 ::: moniker-end
 
-2. <span data-ttu-id="b9db0-162">选择要编辑的共享邮箱，然后选择"**成员编辑** \> **"。**</span><span class="sxs-lookup"><span data-stu-id="b9db0-162">Select the shared mailbox you want to edit, then select **Members** \> **Edit**.</span></span>
+2. <span data-ttu-id="d5444-162">选择要编辑的共享邮箱，然后选择"成员 **编辑** \> **"。**</span><span class="sxs-lookup"><span data-stu-id="d5444-162">Select the shared mailbox you want to edit, then select **Members** \> **Edit**.</span></span>
 
-3. <span data-ttu-id="b9db0-163">执行下列操作之一：</span><span class="sxs-lookup"><span data-stu-id="b9db0-163">Do one of the following:</span></span>
-   - <span data-ttu-id="b9db0-164">若要添加成员，请选择 **"添加成员**"，搜索或选择要添加的成员，然后选择"保存 **"。**</span><span class="sxs-lookup"><span data-stu-id="b9db0-164">To add members, select **Add members**, search for or select a member to add, and then select **Save**.</span></span>
-   - <span data-ttu-id="b9db0-165">若要删除成员，请使用"搜索"框搜索成员（如有必要）。选择成员名称旁边的 **X，** 然后选择"保存 **"。**</span><span class="sxs-lookup"><span data-stu-id="b9db0-165">To remove members, use the Search box to search for the member if necessary, select the **X** next to the member's name, and then select **Save**.</span></span> 
+3. <span data-ttu-id="d5444-163">执行下列操作之一：</span><span class="sxs-lookup"><span data-stu-id="d5444-163">Do one of the following:</span></span>
+   - <span data-ttu-id="d5444-164">若要添加成员，请选择"**添加成员"，** 搜索或选择要添加的成员，然后选择"保存 **"。**</span><span class="sxs-lookup"><span data-stu-id="d5444-164">To add members, select **Add members**, search for or select a member to add, and then select **Save**.</span></span>
+   - <span data-ttu-id="d5444-165">若要删除成员，请使用"搜索"框在必要时搜索成员，选择成员名称旁边的 **"X"，** 然后选择"保存 **"。**</span><span class="sxs-lookup"><span data-stu-id="d5444-165">To remove members, use the Search box to search for the member if necessary, select the **X** next to the member's name, and then select **Save**.</span></span> 
 
-4. <span data-ttu-id="b9db0-166">再次 **选择"保存** "。</span><span class="sxs-lookup"><span data-stu-id="b9db0-166">Select **Save** again.</span></span>
+4. <span data-ttu-id="d5444-166">再次 **选择"保存** "。</span><span class="sxs-lookup"><span data-stu-id="d5444-166">Select **Save** again.</span></span>
 
-## <a name="add-or-remove-permissions-of-members"></a><span data-ttu-id="b9db0-167">添加或删除成员的权限</span><span class="sxs-lookup"><span data-stu-id="b9db0-167">Add or remove permissions of members</span></span>
+## <a name="add-or-remove-permissions-of-members"></a><span data-ttu-id="d5444-167">添加或删除成员的权限</span><span class="sxs-lookup"><span data-stu-id="d5444-167">Add or remove permissions of members</span></span>
 
 ::: moniker range="o365-worldwide"
 
-1. <span data-ttu-id="b9db0-168">在管理中心，转到“**组**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">共享邮箱</a>”页面。</span><span class="sxs-lookup"><span data-stu-id="b9db0-168">In the admin center, go to the **Groups** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">Shared mailboxes</a> page.</span></span>
+1. <span data-ttu-id="d5444-168">在管理中心，转到“**组**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">共享邮箱</a>”页面。</span><span class="sxs-lookup"><span data-stu-id="d5444-168">In the admin center, go to the **Groups** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">Shared mailboxes</a> page.</span></span>
 
 ::: moniker-end 
 
 ::: moniker range="o365-germany"
 
-1. <span data-ttu-id="b9db0-169">在 <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">管理中心</a>，转到“**组**”>“**共享邮箱**”页面。</span><span class="sxs-lookup"><span data-stu-id="b9db0-169">In the <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">admin center</a>, go to the **Groups** > **Shared mailboxes** page.</span></span> 
+1. <span data-ttu-id="d5444-169">在 <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">管理中心</a>，转到“**组**”>“**共享邮箱**”页面。</span><span class="sxs-lookup"><span data-stu-id="d5444-169">In the <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">admin center</a>, go to the **Groups** > **Shared mailboxes** page.</span></span> 
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. <span data-ttu-id="b9db0-170">在 <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">管理中心</a>，转到“**组**”>“**共享邮箱**”页面。</span><span class="sxs-lookup"><span data-stu-id="b9db0-170">In the <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">admin center</a>, go to the **Groups** > **Shared mailboxes** page.</span></span> 
+1. <span data-ttu-id="d5444-170">在 <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">管理中心</a>，转到“**组**”>“**共享邮箱**”页面。</span><span class="sxs-lookup"><span data-stu-id="d5444-170">In the <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">admin center</a>, go to the **Groups** > **Shared mailboxes** page.</span></span> 
 
 ::: moniker-end
 
-2. <span data-ttu-id="b9db0-171">选择要编辑的共享邮箱，然后选择"**成员** \> **自定义权限"。**</span><span class="sxs-lookup"><span data-stu-id="b9db0-171">Select the shared mailbox you want to edit, then select **Members** \> **Customize permissions**.</span></span>
+2. <span data-ttu-id="d5444-171">选择要编辑的共享邮箱，然后选择"**成员** \> **自定义权限"。**</span><span class="sxs-lookup"><span data-stu-id="d5444-171">Select the shared mailbox you want to edit, then select **Members** \> **Customize permissions**.</span></span>
 
-3. <span data-ttu-id="b9db0-172">选择要 **为** 成员更改的权限旁边的"编辑"。</span><span class="sxs-lookup"><span data-stu-id="b9db0-172">Select **Edit** next to the permission you want to change for a member.</span></span> 
+3. <span data-ttu-id="d5444-172">选择要 **为** 成员更改的权限旁边的"编辑"。</span><span class="sxs-lookup"><span data-stu-id="d5444-172">Select **Edit** next to the permission you want to change for a member.</span></span> 
 
-4. <span data-ttu-id="b9db0-173">执行下列操作之一：</span><span class="sxs-lookup"><span data-stu-id="b9db0-173">Do one of the following:</span></span>
-   - <span data-ttu-id="b9db0-174">若要向其他成员授予该权限，请选择"添加权限"，搜索或选择要添加的成员，然后选择"保存 **"。**</span><span class="sxs-lookup"><span data-stu-id="b9db0-174">To give that permission to an additional member, select **Add permissions**, search for or select a member to add, and then select **Save**.</span></span>
-   - <span data-ttu-id="b9db0-175">若要从成员中删除权限，请使用搜索框搜索成员（如有必要）。选择成员名称旁边的 **X，** 然后选择"保存 **"。**</span><span class="sxs-lookup"><span data-stu-id="b9db0-175">To remove the permission from a member, use the Search box to search for the member if necessary,  select the **X** next to the member's name, and then select **Save**.</span></span> 
+4. <span data-ttu-id="d5444-173">执行下列操作之一：</span><span class="sxs-lookup"><span data-stu-id="d5444-173">Do one of the following:</span></span>
+   - <span data-ttu-id="d5444-174">若要向其他会员授予该权限，请选择"添加权限"，搜索或选择要添加的成员，然后选择"保存 **"。**</span><span class="sxs-lookup"><span data-stu-id="d5444-174">To give that permission to an additional member, select **Add permissions**, search for or select a member to add, and then select **Save**.</span></span>
+   - <span data-ttu-id="d5444-175">若要从成员中删除权限，请使用"搜索"框搜索该成员（如有必要，请选择成员名称旁边的 **"X"，** 然后选择"保存 **"。**</span><span class="sxs-lookup"><span data-stu-id="d5444-175">To remove the permission from a member, use the Search box to search for the member if necessary,  select the **X** next to the member's name, and then select **Save**.</span></span> 
 
-4. <span data-ttu-id="b9db0-176">再次 **选择"保存** "。</span><span class="sxs-lookup"><span data-stu-id="b9db0-176">Select **Save** again.</span></span>
+4. <span data-ttu-id="d5444-176">再次 **选择"保存** "。</span><span class="sxs-lookup"><span data-stu-id="d5444-176">Select **Save** again.</span></span>
 
-## <a name="show-or-hide-a-shared-mailbox-in-the-global-address-list"></a><span data-ttu-id="b9db0-177">在全局地址列表中显示或隐藏共享邮箱</span><span class="sxs-lookup"><span data-stu-id="b9db0-177">Show or hide a shared mailbox in the global address list</span></span>
+## <a name="show-or-hide-a-shared-mailbox-in-the-global-address-list"></a><span data-ttu-id="d5444-177">在全局地址列表中显示或隐藏共享邮箱</span><span class="sxs-lookup"><span data-stu-id="d5444-177">Show or hide a shared mailbox in the global address list</span></span>
 
-<span data-ttu-id="b9db0-178">如果选择不在全局地址列表中显示共享邮箱，邮箱将不会显示在组织的地址列表中，但仍会收到发送给它的电子邮件。</span><span class="sxs-lookup"><span data-stu-id="b9db0-178">If you choose not to show the shared mailbox in the global address list, the mailbox won't appear in your organization's address list, but it will still receive email sent to it.</span></span> 
+<span data-ttu-id="d5444-178">如果选择不在全局地址列表中显示共享邮箱，则邮箱不会显示在组织的地址列表中，但仍会收到发送给它的电子邮件。</span><span class="sxs-lookup"><span data-stu-id="d5444-178">If you choose not to show the shared mailbox in the global address list, the mailbox won't appear in your organization's address list, but it will still receive email sent to it.</span></span> 
 
 ::: moniker range="o365-worldwide"
 
-1. <span data-ttu-id="b9db0-179">在管理中心，转到“**组**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">共享邮箱</a>”页面。</span><span class="sxs-lookup"><span data-stu-id="b9db0-179">In the admin center, go to the **Groups** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">Shared mailboxes</a> page.</span></span>
+1. <span data-ttu-id="d5444-179">在管理中心，转到“**组**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">共享邮箱</a>”页面。</span><span class="sxs-lookup"><span data-stu-id="d5444-179">In the admin center, go to the **Groups** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">Shared mailboxes</a> page.</span></span>
 
 ::: moniker-end 
 
 ::: moniker range="o365-germany"
 
-1. <span data-ttu-id="b9db0-180">在 <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">管理中心</a>，转到“**组**”>“**共享邮箱**”页面。</span><span class="sxs-lookup"><span data-stu-id="b9db0-180">In the <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">admin center</a>, go to the **Groups** > **Shared mailboxes** page.</span></span> 
+1. <span data-ttu-id="d5444-180">在 <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">管理中心</a>，转到“**组**”>“**共享邮箱**”页面。</span><span class="sxs-lookup"><span data-stu-id="d5444-180">In the <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">admin center</a>, go to the **Groups** > **Shared mailboxes** page.</span></span> 
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. <span data-ttu-id="b9db0-181">在 <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">管理中心</a>，转到“**组**”>“**共享邮箱**”页面。</span><span class="sxs-lookup"><span data-stu-id="b9db0-181">In the <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">admin center</a>, go to the **Groups** > **Shared mailboxes** page.</span></span> 
+1. <span data-ttu-id="d5444-181">在 <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">管理中心</a>，转到“**组**”>“**共享邮箱**”页面。</span><span class="sxs-lookup"><span data-stu-id="d5444-181">In the <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">admin center</a>, go to the **Groups** > **Shared mailboxes** page.</span></span> 
 
 ::: moniker-end
 
-2. <span data-ttu-id="b9db0-182">选择要编辑的共享邮箱，然后选择"在 **全局地址列表中显示编辑** \> **"。**</span><span class="sxs-lookup"><span data-stu-id="b9db0-182">Select the shared mailbox you want to edit, then select **Show in global address list** \> **Edit**.</span></span>
+2. <span data-ttu-id="d5444-182">选择要编辑的共享邮箱，然后选择"**在全局地址列表中显示""编辑** \> **"。**</span><span class="sxs-lookup"><span data-stu-id="d5444-182">Select the shared mailbox you want to edit, then select **Show in global address list** \> **Edit**.</span></span>
 
-3. <span data-ttu-id="b9db0-183">将开关设置为 **"开**"或 **"关"。**</span><span class="sxs-lookup"><span data-stu-id="b9db0-183">Set the toggle to **On**  or **Off**.</span></span> 
+3. <span data-ttu-id="d5444-183">将开关设置为 **开**  或 **关**。</span><span class="sxs-lookup"><span data-stu-id="d5444-183">Set the toggle to **On**  or **Off**.</span></span> 
 
-4. <span data-ttu-id="b9db0-184">选择 **“保存”**。</span><span class="sxs-lookup"><span data-stu-id="b9db0-184">Select **Save**.</span></span>
+4. <span data-ttu-id="d5444-184">选择“**保存**”。</span><span class="sxs-lookup"><span data-stu-id="d5444-184">Select **Save**.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="b9db0-185">从地址列表中隐藏共享邮箱会使新的共享邮箱成员无法将隐藏邮箱添加到其 Outlook 配置文件中，直到共享邮箱再次显示在地址列表中。</span><span class="sxs-lookup"><span data-stu-id="b9db0-185">Hiding a shared mailbox from address list will make it impossible for new shared mailbox members to add the hidden mailbox to their Outlook profile until the shared mailbox is again shown in the address list.</span></span> 
+> <span data-ttu-id="d5444-185">隐藏地址列表中的共享邮箱会使新的共享邮箱成员无法将隐藏邮箱添加到其 Outlook 配置文件中，直到共享邮箱再次显示在地址列表中。</span><span class="sxs-lookup"><span data-stu-id="d5444-185">Hiding a shared mailbox from address list will make it impossible for new shared mailbox members to add the hidden mailbox to their Outlook profile until the shared mailbox is again shown in the address list.</span></span> 
 
-## <a name="related-articles"></a><span data-ttu-id="b9db0-186">相关文章</span><span class="sxs-lookup"><span data-stu-id="b9db0-186">Related articles</span></span>
+## <a name="related-articles"></a><span data-ttu-id="d5444-186">相关文章</span><span class="sxs-lookup"><span data-stu-id="d5444-186">Related articles</span></span>
 
-[<span data-ttu-id="b9db0-187">关于共享邮箱</span><span class="sxs-lookup"><span data-stu-id="b9db0-187">About shared mailboxes</span></span>](about-shared-mailboxes.md)
+[<span data-ttu-id="d5444-187">关于共享邮箱</span><span class="sxs-lookup"><span data-stu-id="d5444-187">About shared mailboxes</span></span>](about-shared-mailboxes.md)
 
-[<span data-ttu-id="b9db0-188">创建共享邮箱</span><span class="sxs-lookup"><span data-stu-id="b9db0-188">Create a shared mailbox</span></span>](create-a-shared-mailbox.md)
+[<span data-ttu-id="d5444-188">创建共享邮箱</span><span class="sxs-lookup"><span data-stu-id="d5444-188">Create a shared mailbox</span></span>](create-a-shared-mailbox.md)
 
-[<span data-ttu-id="b9db0-189">将用户邮箱转换为共享邮箱</span><span class="sxs-lookup"><span data-stu-id="b9db0-189">Convert a user mailbox to a shared mailbox</span></span>](convert-user-mailbox-to-shared-mailbox.md)
+[<span data-ttu-id="d5444-189">将用户邮箱转换为共享邮箱</span><span class="sxs-lookup"><span data-stu-id="d5444-189">Convert a user mailbox to a shared mailbox</span></span>](convert-user-mailbox-to-shared-mailbox.md)
 
-[<span data-ttu-id="b9db0-190">从共享邮箱删除许可证</span><span class="sxs-lookup"><span data-stu-id="b9db0-190">Remove a license from a shared mailbox</span></span>](remove-license-from-shared-mailbox.md)
+[<span data-ttu-id="d5444-190">从共享邮箱删除许可证</span><span class="sxs-lookup"><span data-stu-id="d5444-190">Remove a license from a shared mailbox</span></span>](remove-license-from-shared-mailbox.md)
 
-[<span data-ttu-id="b9db0-191">解决共享邮箱问题</span><span class="sxs-lookup"><span data-stu-id="b9db0-191">Resolve issues with shared mailboxes</span></span>](resolve-issues-with-shared-mailboxes.md)
+[<span data-ttu-id="d5444-191">解决共享邮箱问题</span><span class="sxs-lookup"><span data-stu-id="d5444-191">Resolve issues with shared mailboxes</span></span>](resolve-issues-with-shared-mailboxes.md)

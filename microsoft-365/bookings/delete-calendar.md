@@ -8,86 +8,86 @@ ms.topic: article
 ms.service: bookings
 localization_priority: Normal
 ms.assetid: 8c3a913c-2247-4519-894d-b6263eeb9920
-description: 使用 Microsoft 365 管理中心或Windows PowerShell删除 Bookings 日历。
-ms.openlocfilehash: 7407298adb402de79a1010b51544deee4b94cf5a
-ms.sourcegitcommit: 9adb89206daa075af34a73bcb7e8fb86d7c2919a
+description: 使用 Microsoft 365 管理中心或 Windows PowerShell删除 Bookings 日历。
+ms.openlocfilehash: 7b79628327797d2e315d31e1b1a2671f0b24e447
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "50604016"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50913774"
 ---
-# <a name="delete-a-booking-calendar-in-bookings"></a><span data-ttu-id="fd536-103">删除 Bookings 中的预订日历</span><span class="sxs-lookup"><span data-stu-id="fd536-103">Delete a booking calendar in Bookings</span></span>
+# <a name="delete-a-booking-calendar-in-bookings"></a><span data-ttu-id="52b06-103">删除 Bookings 中的预订日历</span><span class="sxs-lookup"><span data-stu-id="52b06-103">Delete a booking calendar in Bookings</span></span>
 
-<span data-ttu-id="fd536-104">本文介绍如何删除不需要的预定日历。</span><span class="sxs-lookup"><span data-stu-id="fd536-104">This article explains how you can delete an unwanted booking calendar.</span></span> <span data-ttu-id="fd536-105">可以在 Microsoft 365 管理中心中删除预订日历，也可以使用 PowerShell。</span><span class="sxs-lookup"><span data-stu-id="fd536-105">You can delete the booking calendar in the Microsoft 365 admin center or you can use PowerShell.</span></span> <span data-ttu-id="fd536-106">Bookings 日历是 Exchange Online 中的邮箱，因此删除相应的用户帐户以删除预订日历。</span><span class="sxs-lookup"><span data-stu-id="fd536-106">The Bookings calendar is a mailbox in Exchange Online so you delete the corresponding user account to delete the booking calendar.</span></span>
+<span data-ttu-id="52b06-104">本文介绍如何删除不需要的预订日历。</span><span class="sxs-lookup"><span data-stu-id="52b06-104">This article explains how you can delete an unwanted booking calendar.</span></span> <span data-ttu-id="52b06-105">可以在 Microsoft 365 管理中心中删除预订日历，或使用 PowerShell。</span><span class="sxs-lookup"><span data-stu-id="52b06-105">You can delete the booking calendar in the Microsoft 365 admin center or you can use PowerShell.</span></span> <span data-ttu-id="52b06-106">Bookings 日历是 Exchange Online 中的邮箱，因此删除相应的用户帐户以删除预订日历。</span><span class="sxs-lookup"><span data-stu-id="52b06-106">The Bookings calendar is a mailbox in Exchange Online so you delete the corresponding user account to delete the booking calendar.</span></span>
 
 > [!IMPORTANT]
-> <span data-ttu-id="fd536-107">必须使用本主题上的 PowerShell 说明删除在 2017 年或之前创建的所有预订日历。</span><span class="sxs-lookup"><span data-stu-id="fd536-107">All booking calendars that you created in 2017 or before must be deleted using the PowerShell instructions on this topic.</span></span> <span data-ttu-id="fd536-108">可在 Microsoft 365 管理中心中删除在 2018 年或之后创建的所有预订日历。</span><span class="sxs-lookup"><span data-stu-id="fd536-108">All booking calendars created in 2018 or after can be deleted in the Microsoft 365 admin center.</span></span>
+> <span data-ttu-id="52b06-107">必须使用本主题中的 PowerShell 说明删除在 2017 年或之前创建的所有预订日历。</span><span class="sxs-lookup"><span data-stu-id="52b06-107">All booking calendars that you created in 2017 or before must be deleted using the PowerShell instructions on this topic.</span></span> <span data-ttu-id="52b06-108">在 2018 年或之后创建的所有预订日历都可以在 Microsoft 365 管理中心中删除。</span><span class="sxs-lookup"><span data-stu-id="52b06-108">All booking calendars created in 2018 or after can be deleted in the Microsoft 365 admin center.</span></span>
 
-<span data-ttu-id="fd536-109">预订日历是存储有关预订日历和数据的所有相关信息的位置，包括：</span><span class="sxs-lookup"><span data-stu-id="fd536-109">The booking calendar is where all relevant information about that booking calendar and data are stored, including:</span></span>
+<span data-ttu-id="52b06-109">预订日历是存储有关该预订日历和数据的所有相关信息的位置，包括：</span><span class="sxs-lookup"><span data-stu-id="52b06-109">The booking calendar is where all relevant information about that booking calendar and data are stored, including:</span></span>
 
-- <span data-ttu-id="fd536-110">创建预订日历时添加的业务信息、徽标和工作时间</span><span class="sxs-lookup"><span data-stu-id="fd536-110">Business information, logo, and working hours added when the booking calendar was created</span></span>
-- <span data-ttu-id="fd536-111">创建预订日历时添加的相关员工和服务</span><span class="sxs-lookup"><span data-stu-id="fd536-111">Relevant staff and services added when the booking calendar was created</span></span>
-- <span data-ttu-id="fd536-112">创建预订日历后添加到预订日历的所有预订和假约会。</span><span class="sxs-lookup"><span data-stu-id="fd536-112">All bookings and time off appointments added to the booking calendar once it was created.</span></span>
+- <span data-ttu-id="52b06-110">创建预订日历时添加的业务信息、徽标和工作时间</span><span class="sxs-lookup"><span data-stu-id="52b06-110">Business information, logo, and working hours added when the booking calendar was created</span></span>
+- <span data-ttu-id="52b06-111">创建预订日历时添加的相关员工和服务</span><span class="sxs-lookup"><span data-stu-id="52b06-111">Relevant staff and services added when the booking calendar was created</span></span>
+- <span data-ttu-id="52b06-112">创建预订日历后添加到预订日历的所有预订和请假约会。</span><span class="sxs-lookup"><span data-stu-id="52b06-112">All bookings and time off appointments added to the booking calendar once it was created.</span></span>
 
 > [!WARNING]
-> <span data-ttu-id="fd536-113">删除预订日历后，此其他信息也会永久删除且无法恢复。</span><span class="sxs-lookup"><span data-stu-id="fd536-113">Once a booking calendar is deleted, this additional information is also permanently deleted and can't be recovered.</span></span>
+> <span data-ttu-id="52b06-113">一旦删除了预订日历，此其他信息也会永久删除且无法恢复。</span><span class="sxs-lookup"><span data-stu-id="52b06-113">Once a booking calendar is deleted, this additional information is also permanently deleted and can't be recovered.</span></span>
 
-## <a name="delete-a-booking-calendar-in-the-microsoft-365-admin-center"></a><span data-ttu-id="fd536-114">在 Microsoft 365 管理中心中删除预订日历</span><span class="sxs-lookup"><span data-stu-id="fd536-114">Delete a booking calendar in the Microsoft 365 admin center</span></span>
+## <a name="delete-a-booking-calendar-in-the-microsoft-365-admin-center"></a><span data-ttu-id="52b06-114">删除 Microsoft 365 管理中心中的预订日历</span><span class="sxs-lookup"><span data-stu-id="52b06-114">Delete a booking calendar in the Microsoft 365 admin center</span></span>
 
-1. <span data-ttu-id="fd536-115">转到 Microsoft 365 管理中心。</span><span class="sxs-lookup"><span data-stu-id="fd536-115">Go to the Microsoft 365 admin center.</span></span>
+1. <span data-ttu-id="52b06-115">转到 Microsoft 365 管理中心。</span><span class="sxs-lookup"><span data-stu-id="52b06-115">Go to the Microsoft 365 admin center.</span></span>
 
-1. <span data-ttu-id="fd536-116">在管理中心，选择" **用户** "。</span><span class="sxs-lookup"><span data-stu-id="fd536-116">In the Admin center, select **Users**.</span></span>
+1. <span data-ttu-id="52b06-116">在管理中心，选择" **用户** "。</span><span class="sxs-lookup"><span data-stu-id="52b06-116">In the Admin center, select **Users**.</span></span>
 
-   ![Microsoft 365 管理中心中的用户 UI 图像](../media/bookings-admin-center-users.png)
+   ![Microsoft 365 管理中心中用户 UI 的图像](../media/bookings-admin-center-users.png)
 
-1. <span data-ttu-id="fd536-118">在" **活动用户**"页面上，选择要删除的用户的姓名，然后选择" **删除用户**"。</span><span class="sxs-lookup"><span data-stu-id="fd536-118">On the **Active Users** page, choose the names of the users that you want to delete, and then select **Delete user**.</span></span>
+1. <span data-ttu-id="52b06-118">在" **活动用户**"页面上，选择要删除的用户的姓名，然后选择" **删除用户**"。</span><span class="sxs-lookup"><span data-stu-id="52b06-118">On the **Active Users** page, choose the names of the users that you want to delete, and then select **Delete user**.</span></span>
 
    ![Microsoft 365 管理中心中删除用户 UI 的图像](../media/bookings-delete-user.png)
 
-## <a name="delete-a-booking-calendar-using-exchange-online-powershell"></a><span data-ttu-id="fd536-120">使用 Exchange Online PowerShell 删除预订日历</span><span class="sxs-lookup"><span data-stu-id="fd536-120">Delete a booking calendar using Exchange Online PowerShell</span></span>
+## <a name="delete-a-booking-calendar-using-exchange-online-powershell"></a><span data-ttu-id="52b06-120">使用 Exchange Online PowerShell 删除预订日历</span><span class="sxs-lookup"><span data-stu-id="52b06-120">Delete a booking calendar using Exchange Online PowerShell</span></span>
 
-<span data-ttu-id="fd536-121">有关 [连接到 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell-v2?view=exchange-ps) 的先决条件和指导，请参阅"连接到 Exchange Online PowerShell"。</span><span class="sxs-lookup"><span data-stu-id="fd536-121">See [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell-v2?view=exchange-ps) for prerequisites and guidance for connecting to Exchange Online PowerShell.</span></span>
+<span data-ttu-id="52b06-121">有关 [连接到 Exchange Online PowerShell](/powershell/exchange/exchange-online-powershell-v2?view=exchange-ps) 的先决条件和指南，请参阅连接到 Exchange Online PowerShell。</span><span class="sxs-lookup"><span data-stu-id="52b06-121">See [Connect to Exchange Online PowerShell](/powershell/exchange/exchange-online-powershell-v2?view=exchange-ps) for prerequisites and guidance for connecting to Exchange Online PowerShell.</span></span>
 
-<span data-ttu-id="fd536-122">若要执行这些步骤，您必须使用通过选择"以管理员方式运行"选项运行的活动 Microsoft PowerShell 命令窗口。</span><span class="sxs-lookup"><span data-stu-id="fd536-122">To perform these steps, you must be using an active Microsoft PowerShell command window that you ran by choosing the “Run as administrator” option.</span></span>
+<span data-ttu-id="52b06-122">若要执行这些步骤，您必须使用活动的 Microsoft PowerShell 命令窗口，通过选择"以管理员方式运行"选项运行。</span><span class="sxs-lookup"><span data-stu-id="52b06-122">To perform these steps, you must be using an active Microsoft PowerShell command window that you ran by choosing the “Run as administrator” option.</span></span>
 
-1. <span data-ttu-id="fd536-123">在 Windows PowerShell 窗口中，通过运行以下命令加载 EXO V2 模块：</span><span class="sxs-lookup"><span data-stu-id="fd536-123">In a PowerShell window, load the EXO V2 module by running the following command:</span></span>
+1. <span data-ttu-id="52b06-123">在 Windows PowerShell 窗口中，通过运行以下命令加载 EXO V2 模块：</span><span class="sxs-lookup"><span data-stu-id="52b06-123">In a PowerShell window, load the EXO V2 module by running the following command:</span></span>
 
    ```powershell
    Import-Module ExchangeOnlineManagement
    ```
 
    > [!NOTE]
-   > <span data-ttu-id="fd536-124">如果已[安装 EXO V2 模块](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell-v2?view=exchange-ps#install-and-maintain-the-exo-v2-module)，则上一个命令将按书面工作。</span><span class="sxs-lookup"><span data-stu-id="fd536-124">If you've already [installed the EXO V2 module](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell-v2?view=exchange-ps#install-and-maintain-the-exo-v2-module), the previous command will work as written.</span></span>
+   > <span data-ttu-id="52b06-124">如果已[安装 EXO V2 模块](/powershell/exchange/exchange-online-powershell-v2?view=exchange-ps#install-and-maintain-the-exo-v2-module)，则上一个命令将按书面工作。</span><span class="sxs-lookup"><span data-stu-id="52b06-124">If you've already [installed the EXO V2 module](/powershell/exchange/exchange-online-powershell-v2?view=exchange-ps#install-and-maintain-the-exo-v2-module), the previous command will work as written.</span></span>
    
-2. <span data-ttu-id="fd536-125">需要运行的命令使用以下语法：</span><span class="sxs-lookup"><span data-stu-id="fd536-125">The command that you need to run uses the following syntax:</span></span>
+2. <span data-ttu-id="52b06-125">需要运行的命令使用以下语法：</span><span class="sxs-lookup"><span data-stu-id="52b06-125">The command that you need to run uses the following syntax:</span></span>
 
    ```powershell
    Connect-ExchangeOnline -UserPrincipalName <UPN> 
    ```
 
-   - <span data-ttu-id="fd536-126">_\<UPN\>_ 是采用用户主体名称格式的帐户（例如 `john@contoso.com`）。</span><span class="sxs-lookup"><span data-stu-id="fd536-126">_\<UPN\>_ is your account in user principal name format (for example, `john@contoso.com`).</span></span>
+   - <span data-ttu-id="52b06-126">_\<UPN\>_ 是采用用户主体名称格式的帐户（例如 `john@contoso.com`）。</span><span class="sxs-lookup"><span data-stu-id="52b06-126">_\<UPN\>_ is your account in user principal name format (for example, `john@contoso.com`).</span></span>
 
-3. <span data-ttu-id="fd536-127">系统提示时，使用租户管理员凭据登录到托管要永久删除的预订日历的 Microsoft 365 租户。</span><span class="sxs-lookup"><span data-stu-id="fd536-127">When you are prompted, log on with tenant administrator credentials to the Microsoft 365 tenant that hosts the booking calendar you want to permanently delete.</span></span>
+3. <span data-ttu-id="52b06-127">系统提示时，使用租户管理员凭据登录托管要永久删除的预订日历的 Microsoft 365 租户。</span><span class="sxs-lookup"><span data-stu-id="52b06-127">When you are prompted, log on with tenant administrator credentials to the Microsoft 365 tenant that hosts the booking calendar you want to permanently delete.</span></span>
 
-4. <span data-ttu-id="fd536-128">完成此命令处理后，输入以下命令，获取租户中的预订邮箱列表：</span><span class="sxs-lookup"><span data-stu-id="fd536-128">Once this command is done processing, enter the following command to get a list of the booking mailboxes in your tenant:</span></span>
+4. <span data-ttu-id="52b06-128">处理完此命令后，输入以下命令，获取租户中的预订邮箱列表：</span><span class="sxs-lookup"><span data-stu-id="52b06-128">Once this command is done processing, enter the following command to get a list of the booking mailboxes in your tenant:</span></span>
 
    ```powershell
    Get-EXOMailbox -RecipientTypeDetails Scheduling
    ```
 
-5. <span data-ttu-id="fd536-129">键入以下命令：</span><span class="sxs-lookup"><span data-stu-id="fd536-129">Type the following command:</span></span>
+5. <span data-ttu-id="52b06-129">键入以下命令：</span><span class="sxs-lookup"><span data-stu-id="52b06-129">Type the following command:</span></span>
 
    ```powershell
    remove-mailbox [BookingCalendarToDelete]
    ```
 
    > [!IMPORTANT]
-   > <span data-ttu-id="fd536-130">请注意键入要永久删除的预定邮箱别名的确切名称。</span><span class="sxs-lookup"><span data-stu-id="fd536-130">Be careful to type the exact name of the booking mailbox alias that you want to permanently delete.</span></span>
+   > <span data-ttu-id="52b06-130">请注意，键入要永久删除的预订邮箱别名的确切名称。</span><span class="sxs-lookup"><span data-stu-id="52b06-130">Be careful to type the exact name of the booking mailbox alias that you want to permanently delete.</span></span>
 
-6. <span data-ttu-id="fd536-131">若要验证日历是否已删除，请输入以下命令：</span><span class="sxs-lookup"><span data-stu-id="fd536-131">To verify that the calendar has been deleted, enter the following command:</span></span>
+6. <span data-ttu-id="52b06-131">若要验证日历是否已删除，请输入以下命令：</span><span class="sxs-lookup"><span data-stu-id="52b06-131">To verify that the calendar has been deleted, enter the following command:</span></span>
 
    ```powershell
     Get-EXOMailbox -RecipientTypeDetails SchedulingMailbox
    ```
 
-   <span data-ttu-id="fd536-132">已删除的日历将不会显示在输出中。</span><span class="sxs-lookup"><span data-stu-id="fd536-132">The deleted calendar will not appear in the output.</span></span>
+   <span data-ttu-id="52b06-132">已删除的日历不会显示在输出中。</span><span class="sxs-lookup"><span data-stu-id="52b06-132">The deleted calendar will not appear in the output.</span></span>

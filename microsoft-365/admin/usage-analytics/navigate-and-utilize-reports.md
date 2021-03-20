@@ -20,70 +20,70 @@ search.appverid:
 - MOE150
 ms.assetid: 286fcf0b-ffc7-4593-8073-d7a4a5dd2b45
 description: 了解如何使用导航选项卡和筛选器查看报告。
-ms.openlocfilehash: aa7508b65d2a2b949c8e6737e92171ebb95812e1
-ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
+ms.openlocfilehash: d3f080bdf2ec5544a0ef9d06139cad682962d57d
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "50114269"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50913906"
 ---
-# <a name="navigate-and-utilize-the-reports-in-microsoft-365-usage-analytics"></a><span data-ttu-id="8cfee-103">导航和利用 Microsoft 365 使用情况分析中的报表</span><span class="sxs-lookup"><span data-stu-id="8cfee-103">Navigate and utilize the reports in Microsoft 365 usage analytics</span></span>
+# <a name="navigate-and-utilize-the-reports-in-microsoft-365-usage-analytics"></a><span data-ttu-id="0aab1-103">导航和利用 Microsoft 365 使用情况分析中的报表</span><span class="sxs-lookup"><span data-stu-id="0aab1-103">Navigate and utilize the reports in Microsoft 365 usage analytics</span></span>
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> <span data-ttu-id="8cfee-104">管理中心正在发生改变。</span><span class="sxs-lookup"><span data-stu-id="8cfee-104">The admin center is changing.</span></span> <span data-ttu-id="8cfee-105">如果你的体验与此处提供的详细信息不匹配，请参阅[有关新版 Microsoft 365 管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true)。</span><span class="sxs-lookup"><span data-stu-id="8cfee-105">If your experience doesn't match the details presented here, see [About the new Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true).</span></span>
+> <span data-ttu-id="0aab1-104">管理中心正在发生改变。</span><span class="sxs-lookup"><span data-stu-id="0aab1-104">The admin center is changing.</span></span> <span data-ttu-id="0aab1-105">如果你的体验与此处提供的详细信息不匹配，请参阅[有关新版 Microsoft 365 管理中心](../microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet)。</span><span class="sxs-lookup"><span data-stu-id="0aab1-105">If your experience doesn't match the details presented here, see [About the new Microsoft 365 admin center](../microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet).</span></span>
 
 ::: moniker-end
 
-<span data-ttu-id="8cfee-106">仪表板提供有关主要用途和采用指标的快速概述。</span><span class="sxs-lookup"><span data-stu-id="8cfee-106">The dashboard provides you with a quick overview of the main usage and adoption metrics.</span></span> <span data-ttu-id="8cfee-107">通过选择顶级指标，可以访问可提供更多详细信息和见解的报告。</span><span class="sxs-lookup"><span data-stu-id="8cfee-107">By selecting the top-level metrics, you can access reports that provide more details and insights.</span></span> <span data-ttu-id="8cfee-108">每个报告选项卡都包含特定于组织的使用和采用方面的数据可视化。</span><span class="sxs-lookup"><span data-stu-id="8cfee-108">Each report tab contains data visualizations specific to an aspect of usage and adoption for your organization.</span></span> <span data-ttu-id="8cfee-109">收集的数据在每个报表的标题中进行了说明，并且会显示一个磁贴，其中包含有关正在查看的报表选项卡上的可视化效果的进一步信息。</span><span class="sxs-lookup"><span data-stu-id="8cfee-109">The data collected is explained in the title of each report and a tile appears that contains further information about the visualizations on the report tab that you are viewing.</span></span>
+<span data-ttu-id="0aab1-106">仪表板提供有关主要用途和采用指标的快速概述。</span><span class="sxs-lookup"><span data-stu-id="0aab1-106">The dashboard provides you with a quick overview of the main usage and adoption metrics.</span></span> <span data-ttu-id="0aab1-107">通过选择顶级指标，可以访问可提供更多详细信息和见解的报告。</span><span class="sxs-lookup"><span data-stu-id="0aab1-107">By selecting the top-level metrics, you can access reports that provide more details and insights.</span></span> <span data-ttu-id="0aab1-108">每个报告选项卡都包含特定于组织的使用和采用方面的数据可视化。</span><span class="sxs-lookup"><span data-stu-id="0aab1-108">Each report tab contains data visualizations specific to an aspect of usage and adoption for your organization.</span></span> <span data-ttu-id="0aab1-109">收集的数据在每个报告的标题中进行了说明，并且将显示一个图块，其中包含有关正在查看的报告选项卡上的可视化效果的进一步信息。</span><span class="sxs-lookup"><span data-stu-id="0aab1-109">The data collected is explained in the title of each report and a tile appears that contains further information about the visualizations on the report tab that you are viewing.</span></span>
 
-<span data-ttu-id="8cfee-110">若要开始使用报表，下面是一些提示：</span><span class="sxs-lookup"><span data-stu-id="8cfee-110">To get started with your reports, here are some tips:</span></span>
+<span data-ttu-id="0aab1-110">若要开始使用报表，下面是一些提示：</span><span class="sxs-lookup"><span data-stu-id="0aab1-110">To get started with your reports, here are some tips:</span></span>
 
-- <span data-ttu-id="8cfee-111">使用"执行摘要"页上左侧或相关指标上的导航选项卡导航到每个顶级报告。</span><span class="sxs-lookup"><span data-stu-id="8cfee-111">Use the navigation tabs on the left or on a related metric on the **Executive Summary** page to navigate to each top-level report.</span></span>
+- <span data-ttu-id="0aab1-111">使用左侧或"执行摘要"页上相关指标上的导航选项卡导航到每个顶级报告。</span><span class="sxs-lookup"><span data-stu-id="0aab1-111">Use the navigation tabs on the left or on a related metric on the **Executive Summary** page to navigate to each top-level report.</span></span>
 
     ![在左侧显示导航选项卡](../../media/navigate-usage-analytics1.png)
 
-- <span data-ttu-id="8cfee-113">使用每个顶级报告顶部的导航选项卡导航到该级别内的不同报告。</span><span class="sxs-lookup"><span data-stu-id="8cfee-113">Use the navigation tabs at the top of each top-level report to navigate to different reports within that level.</span></span>
+- <span data-ttu-id="0aab1-113">使用每个顶级报告顶部的导航选项卡导航到该级别中的不同报告。</span><span class="sxs-lookup"><span data-stu-id="0aab1-113">Use the navigation tabs at the top of each top-level report to navigate to different reports within that level.</span></span>
 
-    ![在每个报表顶部显示导航选项卡](../../media/navigate-usage-analytics2.png)
+    ![显示每个报表顶部的导航选项卡](../../media/navigate-usage-analytics2.png)
 
-- <span data-ttu-id="8cfee-115">许多报表都包含一个切片器，您可以在其中筛选要查看的产品、AAD 属性或活动。</span><span class="sxs-lookup"><span data-stu-id="8cfee-115">Many reports contain a slicer where you can filter on the product, AAD attribute, or activity that you want to view.</span></span> <span data-ttu-id="8cfee-116">可以是单选或多选。</span><span class="sxs-lookup"><span data-stu-id="8cfee-116">These can be either single-select or multi-select.</span></span>
+- <span data-ttu-id="0aab1-115">许多报表都包含一个切片器，您可以在其中筛选要查看的产品、AAD 属性或活动。</span><span class="sxs-lookup"><span data-stu-id="0aab1-115">Many reports contain a slicer where you can filter on the product, AAD attribute, or activity that you want to view.</span></span> <span data-ttu-id="0aab1-116">可以是单选或多选。</span><span class="sxs-lookup"><span data-stu-id="0aab1-116">These can be either single-select or multi-select.</span></span>
 
     ![显示切片器](../../media/navigate-usage-analytics3.png)
 
     ![显示切片器](../../media/navigate-usage-analytics4.png)
 
 
-- <span data-ttu-id="8cfee-119">将鼠标悬停在数据点上，以查看包含详细信息的标注。</span><span class="sxs-lookup"><span data-stu-id="8cfee-119">Hover over data points to view a callout that contains details.</span></span>
+- <span data-ttu-id="0aab1-119">将鼠标悬停在数据点上，以查看包含详细信息的标注。</span><span class="sxs-lookup"><span data-stu-id="0aab1-119">Hover over data points to view a callout that contains details.</span></span>
 
     ![显示悬停示例](../../media/navigate-usage-analytics6.png)
 
-<span data-ttu-id="8cfee-121">实例化模板应用的用户将能够根据自己的需要自定义报告。</span><span class="sxs-lookup"><span data-stu-id="8cfee-121">The user who has instantiated the template app will have the ability to customize the report to their needs.</span></span> <span data-ttu-id="8cfee-122">自定义模板应用：</span><span class="sxs-lookup"><span data-stu-id="8cfee-122">To customize the template app:</span></span>
+<span data-ttu-id="0aab1-121">实例化模板应用的用户将能够根据自己的需求自定义报告。</span><span class="sxs-lookup"><span data-stu-id="0aab1-121">The user who has instantiated the template app will have the ability to customize the report to their needs.</span></span> <span data-ttu-id="0aab1-122">自定义模板应用：</span><span class="sxs-lookup"><span data-stu-id="0aab1-122">To customize the template app:</span></span>
 
-- <span data-ttu-id="8cfee-123">选择 **报表顶部的** "编辑报告"。</span><span class="sxs-lookup"><span data-stu-id="8cfee-123">Select **Edit report** at the top of the report.</span></span>
+- <span data-ttu-id="0aab1-123">选择 **报告顶部的** "编辑报告"。</span><span class="sxs-lookup"><span data-stu-id="0aab1-123">Select **Edit report** at the top of the report.</span></span>
 
-    ![显示"编辑"报表](../../media/navigate-usage-analytics7.png)
+    ![显示编辑报告](../../media/navigate-usage-analytics7.png)
 
 
-- <span data-ttu-id="8cfee-125">使用基础[数据集](usage-analytics-data-model.md)创建自己的视觉对象。</span><span class="sxs-lookup"><span data-stu-id="8cfee-125">Create your own visuals by using the underlying [datasets](usage-analytics-data-model.md).</span></span>
+- <span data-ttu-id="0aab1-125">使用基础[数据集](usage-analytics-data-model.md)创建自己的视觉对象。</span><span class="sxs-lookup"><span data-stu-id="0aab1-125">Create your own visuals by using the underlying [datasets](usage-analytics-data-model.md).</span></span>
 
-- <span data-ttu-id="8cfee-126">使用 PowerBI Desktop 引入自己的数据源。</span><span class="sxs-lookup"><span data-stu-id="8cfee-126">Use PowerBI Desktop to bring in your own data sources.</span></span>
+- <span data-ttu-id="0aab1-126">使用 PowerBI Desktop 引入自己的数据源。</span><span class="sxs-lookup"><span data-stu-id="0aab1-126">Use PowerBI Desktop to bring in your own data sources.</span></span>
 
-<span data-ttu-id="8cfee-127">若要共享报告，只需选择"共享"按钮</span><span class="sxs-lookup"><span data-stu-id="8cfee-127">To share your reports, just select the share button</span></span> ![Power BI Share icon](../../media/dbb0569d-2013-4f9d-ab9d-d01b09631b92.png) <span data-ttu-id="8cfee-129">位于页面顶部。</span><span class="sxs-lookup"><span data-stu-id="8cfee-129">at the top of the page.</span></span>
+<span data-ttu-id="0aab1-127">若要共享报告，只需选择"共享"按钮</span><span class="sxs-lookup"><span data-stu-id="0aab1-127">To share your reports, just select the share button</span></span> ![Power BI Share icon](../../media/dbb0569d-2013-4f9d-ab9d-d01b09631b92.png) <span data-ttu-id="0aab1-129">位于页面顶部。</span><span class="sxs-lookup"><span data-stu-id="0aab1-129">at the top of the page.</span></span>
 
-<span data-ttu-id="8cfee-130">若要了解如何自定义报告，请参阅自定义 [Microsoft 365 使用情况分析中的报表](customize-reports.md)。</span><span class="sxs-lookup"><span data-stu-id="8cfee-130">To learn how to customize the reports, see [Customizing the reports in Microsoft 365 usage analytics](customize-reports.md).</span></span>
+<span data-ttu-id="0aab1-130">若要了解如何自定义报告，请参阅自定义 [Microsoft 365 使用情况分析中的报告](customize-reports.md)。</span><span class="sxs-lookup"><span data-stu-id="0aab1-130">To learn how to customize the reports, see [Customizing the reports in Microsoft 365 usage analytics](customize-reports.md).</span></span>
 
-<span data-ttu-id="8cfee-131">可以在 Power BI 帮助文档中找到许多额外信息：</span><span class="sxs-lookup"><span data-stu-id="8cfee-131">You can find lots of additional information in the Power BI help documentation:</span></span>
+<span data-ttu-id="0aab1-131">可以在 Power BI 帮助文档中找到许多额外信息：</span><span class="sxs-lookup"><span data-stu-id="0aab1-131">You can find lots of additional information in the Power BI help documentation:</span></span>
 
-- [<span data-ttu-id="8cfee-132">Power BI 基本概念</span><span class="sxs-lookup"><span data-stu-id="8cfee-132">Power BI basic concepts</span></span>](https://docs.microsoft.com/power-bi/service-basic-concepts)
+- [<span data-ttu-id="0aab1-132">Power BI 基本概念</span><span class="sxs-lookup"><span data-stu-id="0aab1-132">Power BI basic concepts</span></span>](/power-bi/service-basic-concepts)
 
-    <span data-ttu-id="8cfee-133">了解仪表板、数据集、报表和其他 Power BI 概念。</span><span class="sxs-lookup"><span data-stu-id="8cfee-133">Learn about dashboard, datasets, reports, and other Power BI concepts.</span></span>
+    <span data-ttu-id="0aab1-133">了解仪表板、数据集、报表和其他 Power BI 概念。</span><span class="sxs-lookup"><span data-stu-id="0aab1-133">Learn about dashboard, datasets, reports, and other Power BI concepts.</span></span>
 
-- [<span data-ttu-id="8cfee-134">Power BI 入门</span><span class="sxs-lookup"><span data-stu-id="8cfee-134">Get started with Power BI</span></span>](https://docs.microsoft.com/power-bi/service-get-started?wt.mc_id=O365_Reports_PBI_contentpack)
+- [<span data-ttu-id="0aab1-134">Power BI 入门</span><span class="sxs-lookup"><span data-stu-id="0aab1-134">Get started with Power BI</span></span>](/power-bi/service-get-started?wt.mc_id=O365_Reports_PBI_contentpack)
 
-    <span data-ttu-id="8cfee-p105">了解 Power BI 中的基本功能。查找关于如何使用 Power BI Desktop 的链接。</span><span class="sxs-lookup"><span data-stu-id="8cfee-p105">Learn the basic functionality in Power BI. Find links to how to use Power BI Desktop.</span></span>
+    <span data-ttu-id="0aab1-p105">了解 Power BI 中的基本功能。查找关于如何使用 Power BI Desktop 的链接。</span><span class="sxs-lookup"><span data-stu-id="0aab1-p105">Learn the basic functionality in Power BI. Find links to how to use Power BI Desktop.</span></span>
 
-- [<span data-ttu-id="8cfee-137">共享仪表板和报表</span><span class="sxs-lookup"><span data-stu-id="8cfee-137">Share dashboards and reports</span></span>](https://docs.microsoft.com/power-bi/service-share-dashboards)
+- [<span data-ttu-id="0aab1-137">共享仪表板和报表</span><span class="sxs-lookup"><span data-stu-id="0aab1-137">Share dashboards and reports</span></span>](/power-bi/service-share-dashboards)
 
-    <span data-ttu-id="8cfee-138">了解如何与组织外部的同事或人员共享报告。</span><span class="sxs-lookup"><span data-stu-id="8cfee-138">Learn how to share reports with your colleagues or people outside your organization.</span></span> <span data-ttu-id="8cfee-139">您还可以共享报告或已筛选的报告版本。</span><span class="sxs-lookup"><span data-stu-id="8cfee-139">You can also share the report or a filtered version of the report.</span></span>
+    <span data-ttu-id="0aab1-138">了解如何与组织外部的同事或人员共享报告。</span><span class="sxs-lookup"><span data-stu-id="0aab1-138">Learn how to share reports with your colleagues or people outside your organization.</span></span> <span data-ttu-id="0aab1-139">您还可以共享报告或已筛选的报告版本。</span><span class="sxs-lookup"><span data-stu-id="0aab1-139">You can also share the report or a filtered version of the report.</span></span>

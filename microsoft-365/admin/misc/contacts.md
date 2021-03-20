@@ -20,46 +20,46 @@ search.appverid:
 - MOE150
 ms.assetid: e64ceac2-ae62-4d29-a9ee-6aab9870ae2b
 ROBOTS: NOINDEX
-description: 了解如何在管理中心中创建联系人并管理全局地址列表。
-ms.openlocfilehash: ecbeb508519fa20e70e9768874d7be57aa2be481
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+description: 了解如何在管理中心创建联系人和管理全局地址列表。
+ms.openlocfilehash: 74618056c0b8635922c9f957dc8cd6d16c320fe3
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44780009"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50914806"
 ---
-# <a name="quick-help-contacts"></a><span data-ttu-id="9c034-103">快速帮助：联系人</span><span class="sxs-lookup"><span data-stu-id="9c034-103">Quick help: Contacts</span></span>
+# <a name="quick-help-contacts"></a><span data-ttu-id="768e9-103">快速帮助：联系人</span><span class="sxs-lookup"><span data-stu-id="768e9-103">Quick help: Contacts</span></span>
 
-<span data-ttu-id="9c034-104">如果你需要组织中的每个人都可以访问的共享联系人，请在 Microsoft 365 管理中心中创建它们。</span><span class="sxs-lookup"><span data-stu-id="9c034-104">If you need shared contacts that everyone in your organization can get to, create them in the Microsoft 365 admin center.</span></span> <span data-ttu-id="9c034-105">在此处创建的联系人将列在全局地址列表中，你和你的和用户都可以查看。</span><span class="sxs-lookup"><span data-stu-id="9c034-105">The contacts you create here can be seen by you and your users as part of the global address list.</span></span>
+<span data-ttu-id="768e9-104">如果你需要组织中每个人都可以到达的共享联系人，可在 Microsoft 365 管理中心创建它们。</span><span class="sxs-lookup"><span data-stu-id="768e9-104">If you need shared contacts that everyone in your organization can get to, create them in the Microsoft 365 admin center.</span></span> <span data-ttu-id="768e9-105">在此处创建的联系人将列在全局地址列表中，你和你的和用户都可以查看。</span><span class="sxs-lookup"><span data-stu-id="768e9-105">The contacts you create here can be seen by you and your users as part of the global address list.</span></span>
   
-## <a name="how-do-i-add-contacts-in-the-admin-center"></a><span data-ttu-id="9c034-106">如何在管理中心添加联系人？</span><span class="sxs-lookup"><span data-stu-id="9c034-106">How do I add contacts in the admin center?</span></span>
+## <a name="how-do-i-add-contacts-in-the-admin-center"></a><span data-ttu-id="768e9-106">如何在管理中心添加联系人？</span><span class="sxs-lookup"><span data-stu-id="768e9-106">How do I add contacts in the admin center?</span></span>
 
-1. <span data-ttu-id="9c034-107">在管理中心中，转到 "**用户** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2053302" target="_blank">联系人</a>" 页。</span><span class="sxs-lookup"><span data-stu-id="9c034-107">In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2053302" target="_blank">Contacts</a> page.</span></span>
+1. <span data-ttu-id="768e9-107">在管理中心，转到" **用户** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2053302" target="_blank">联系人"</a> 页面。</span><span class="sxs-lookup"><span data-stu-id="768e9-107">In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2053302" target="_blank">Contacts</a> page.</span></span>
 
-2. <span data-ttu-id="9c034-108">在 "**联系人**" 页上，选择 "**添加联系人**"。</span><span class="sxs-lookup"><span data-stu-id="9c034-108">On the **Contacts** page, select **Add a contact**.</span></span>
+2. <span data-ttu-id="768e9-108">在"**联系人"** 页上，选择 **"添加联系人"。**</span><span class="sxs-lookup"><span data-stu-id="768e9-108">On the **Contacts** page, select **Add a contact**.</span></span>
   
-3. <span data-ttu-id="9c034-109">在 "**新建联系人**" 页上，填写 "详细信息"，然后选择 "**添加**" 以创建联系人。</span><span class="sxs-lookup"><span data-stu-id="9c034-109">On the **New Contact** page, fill in details and select **Add** to create a contact.</span></span>
+3. <span data-ttu-id="768e9-109">在" **新建联系人** "页上，填写详细信息并选择" **添加** "以创建联系人。</span><span class="sxs-lookup"><span data-stu-id="768e9-109">On the **New Contact** page, fill in details and select **Add** to create a contact.</span></span>
   
-## <a name="how-are-these-contacts-different-from-my-contacts"></a><span data-ttu-id="9c034-110">这些联系人与"我的联系人"有何区别？</span><span class="sxs-lookup"><span data-stu-id="9c034-110">How are these contacts different from My Contacts?</span></span>
+## <a name="how-are-these-contacts-different-from-my-contacts"></a><span data-ttu-id="768e9-110">这些联系人与"我的联系人"有何区别？</span><span class="sxs-lookup"><span data-stu-id="768e9-110">How are these contacts different from My Contacts?</span></span>
 
-<span data-ttu-id="9c034-111">"我的联系人" 是您为自己创建的联系人，而您的用户自己创建的联系人，但其他人无法查看。</span><span class="sxs-lookup"><span data-stu-id="9c034-111">My Contacts are contacts that you create for yourself and your users create for themselves but others can't see.</span></span> <span data-ttu-id="9c034-112">您在管理中心中创建的联系人是组织的联系人，每个人都可以看到他们自己的联系人。</span><span class="sxs-lookup"><span data-stu-id="9c034-112">The contacts you create in the admin center are contacts for the organization and everyone can see them in addition to their own.</span></span> <span data-ttu-id="9c034-113">若要了解详细信息，请参阅[人员概述-Outlook Web App](https://support.microsoft.com/office/5fe173cf-e620-4f62-9bf6-da5041f651bf)。</span><span class="sxs-lookup"><span data-stu-id="9c034-113">To learn more, see [People overview - Outlook Web App](https://support.microsoft.com/office/5fe173cf-e620-4f62-9bf6-da5041f651bf).</span></span>
+<span data-ttu-id="768e9-111">我的联系人是你自己和用户为自己创建的联系人，但其他人看不到。</span><span class="sxs-lookup"><span data-stu-id="768e9-111">My Contacts are contacts that you create for yourself and your users create for themselves but others can't see.</span></span> <span data-ttu-id="768e9-112">你在管理中心创建的联系人是组织的联系人，除了他们自己的联系人外，每个人都可以看到他们。</span><span class="sxs-lookup"><span data-stu-id="768e9-112">The contacts you create in the admin center are contacts for the organization and everyone can see them in addition to their own.</span></span> <span data-ttu-id="768e9-113">若要了解更多信息，请参阅人员[概述 - Outlook Web App。](https://support.microsoft.com/office/5fe173cf-e620-4f62-9bf6-da5041f651bf)</span><span class="sxs-lookup"><span data-stu-id="768e9-113">To learn more, see [People overview - Outlook Web App](https://support.microsoft.com/office/5fe173cf-e620-4f62-9bf6-da5041f651bf).</span></span>
   
-## <a name="how-does-everyone-get-to-the-contacts-i-created-in-the-admin-center"></a><span data-ttu-id="9c034-114">其他人如何查看我在管理中心创建的联系人？</span><span class="sxs-lookup"><span data-stu-id="9c034-114">How does everyone get to the contacts I created in the admin center?</span></span>
+## <a name="how-does-everyone-get-to-the-contacts-i-created-in-the-admin-center"></a><span data-ttu-id="768e9-114">其他人如何查看我在管理中心创建的联系人？</span><span class="sxs-lookup"><span data-stu-id="768e9-114">How does everyone get to the contacts I created in the admin center?</span></span>
 
- <span data-ttu-id="9c034-115">他们可以转到 Microsoft 365 中的 "**人员**"，展开 "**目录**"，然后选择 "**所有联系人**"。</span><span class="sxs-lookup"><span data-stu-id="9c034-115">They can go to **People** in Microsoft 365, expand **Directory** and select **All Contacts**.</span></span> <span data-ttu-id="9c034-116">他们可以从那里查看每个联系人及其信息。</span><span class="sxs-lookup"><span data-stu-id="9c034-116">They can view each contact and their information from there.</span></span>
+ <span data-ttu-id="768e9-115">他们可以转到"Microsoft  365 中的人员"，展开 **"目录**"，然后选择"**所有联系人"。**</span><span class="sxs-lookup"><span data-stu-id="768e9-115">They can go to **People** in Microsoft 365, expand **Directory** and select **All Contacts**.</span></span> <span data-ttu-id="768e9-116">他们可以从那里查看每个联系人及其信息。</span><span class="sxs-lookup"><span data-stu-id="768e9-116">They can view each contact and their information from there.</span></span>
   
-## <a name="can-anyone-create-and-edit-these-organizational-contacts"></a><span data-ttu-id="9c034-117">是否任何人都可以创建和编辑这些组织联系人？</span><span class="sxs-lookup"><span data-stu-id="9c034-117">Can anyone create and edit these organizational contacts?</span></span>
+## <a name="can-anyone-create-and-edit-these-organizational-contacts"></a><span data-ttu-id="768e9-117">是否任何人都可以创建和编辑这些组织联系人？</span><span class="sxs-lookup"><span data-stu-id="768e9-117">Can anyone create and edit these organizational contacts?</span></span>
 
-<span data-ttu-id="9c034-118">否。</span><span class="sxs-lookup"><span data-stu-id="9c034-118">No.</span></span> <span data-ttu-id="9c034-119">仅 **全局**管理员和 **Exchange** 管理员可以创建、编辑或删除这些联系人。</span><span class="sxs-lookup"><span data-stu-id="9c034-119">Only **Global** and **Exchange** administrators can create, edit, or delete these contacts.</span></span> <span data-ttu-id="9c034-120">其他人只能进行查看。</span><span class="sxs-lookup"><span data-stu-id="9c034-120">Everyone else can only view them.</span></span>
+<span data-ttu-id="768e9-118">否。</span><span class="sxs-lookup"><span data-stu-id="768e9-118">No.</span></span> <span data-ttu-id="768e9-119">仅 **全局** 管理员和 **Exchange** 管理员可以创建、编辑或删除这些联系人。</span><span class="sxs-lookup"><span data-stu-id="768e9-119">Only **Global** and **Exchange** administrators can create, edit, or delete these contacts.</span></span> <span data-ttu-id="768e9-120">其他人只能进行查看。</span><span class="sxs-lookup"><span data-stu-id="768e9-120">Everyone else can only view them.</span></span>
   
-## <a name="can-i-use-this-to-manage-my-business-clients"></a><span data-ttu-id="9c034-121">此功能可否用于管理客户？</span><span class="sxs-lookup"><span data-stu-id="9c034-121">Can I use this to manage my business clients?</span></span>
+## <a name="can-i-use-this-to-manage-my-business-clients"></a><span data-ttu-id="768e9-121">此功能可否用于管理客户？</span><span class="sxs-lookup"><span data-stu-id="768e9-121">Can I use this to manage my business clients?</span></span>
 
-<span data-ttu-id="9c034-122">你可以使用 Microsoft 365 联系人，但你喜欢，但有一些限制。</span><span class="sxs-lookup"><span data-stu-id="9c034-122">You can use Microsoft 365 contacts however you like, but there are limitations.</span></span> <span data-ttu-id="9c034-123">了解[管理联系人的其他方式](ways-to-manage-contacts.md)</span><span class="sxs-lookup"><span data-stu-id="9c034-123">Learn about [other ways to manage contacts](ways-to-manage-contacts.md)</span></span>
+<span data-ttu-id="768e9-122">可以视需要使用 Microsoft 365 联系人，但存在一些限制。</span><span class="sxs-lookup"><span data-stu-id="768e9-122">You can use Microsoft 365 contacts however you like, but there are limitations.</span></span> <span data-ttu-id="768e9-123">了解[管理联系人的其他方式](ways-to-manage-contacts.md)</span><span class="sxs-lookup"><span data-stu-id="768e9-123">Learn about [other ways to manage contacts](ways-to-manage-contacts.md)</span></span>
   
-## <a name="how-do-i-bulk-import-organizational-contacts"></a><span data-ttu-id="9c034-124">如何批量导入组织联系人？</span><span class="sxs-lookup"><span data-stu-id="9c034-124">How do I bulk import organizational contacts?</span></span>
+## <a name="how-do-i-bulk-import-organizational-contacts"></a><span data-ttu-id="768e9-124">如何批量导入组织联系人？</span><span class="sxs-lookup"><span data-stu-id="768e9-124">How do I bulk import organizational contacts?</span></span>
 
-<span data-ttu-id="9c034-125">使用 Windows PowerShell 和 CSV（逗号分隔值）文件批量导入外部联系人，如[Bulk import external contacts to Exchange Online](../../compliance/bulk-import-external-contacts.md) 中所述。</span><span class="sxs-lookup"><span data-stu-id="9c034-125">Use Windows PowerShell and a CSV (Comma Separated Value) file to bulk import external contacts as described in [Bulk import external contacts to Exchange Online](../../compliance/bulk-import-external-contacts.md).</span></span>
+<span data-ttu-id="768e9-125">使用 Windows PowerShell 和 CSV（逗号分隔值）文件批量导入外部联系人，如[Bulk import external contacts to Exchange Online](../../compliance/bulk-import-external-contacts.md) 中所述。</span><span class="sxs-lookup"><span data-stu-id="768e9-125">Use Windows PowerShell and a CSV (Comma Separated Value) file to bulk import external contacts as described in [Bulk import external contacts to Exchange Online](../../compliance/bulk-import-external-contacts.md).</span></span>
   
-## <a name="what-if-my-question-still-hasnt-been-answered"></a><span data-ttu-id="9c034-126">如果以上内容仍未解决问题，怎么办？</span><span class="sxs-lookup"><span data-stu-id="9c034-126">What if my question still hasn't been answered?</span></span>
+## <a name="what-if-my-question-still-hasnt-been-answered"></a><span data-ttu-id="768e9-126">如果以上内容仍未解决问题，怎么办？</span><span class="sxs-lookup"><span data-stu-id="768e9-126">What if my question still hasn't been answered?</span></span>
 
-<span data-ttu-id="9c034-127">请访问[管理员帮助](../admin-home.md)的其余部分，或在下面提供反馈。</span><span class="sxs-lookup"><span data-stu-id="9c034-127">Visit the rest of our [admin help](../admin-home.md) or give us your feedback below.</span></span>
+<span data-ttu-id="768e9-127">请访问[管理员帮助](/microsoft-365/admin/misc/index)的其余部分，或在下面提供反馈。</span><span class="sxs-lookup"><span data-stu-id="768e9-127">Visit the rest of our [admin help](/microsoft-365/admin/misc/index) or give us your feedback below.</span></span>
