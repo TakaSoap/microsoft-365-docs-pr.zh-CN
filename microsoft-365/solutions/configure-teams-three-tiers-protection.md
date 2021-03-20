@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-jun2020
 ms.assetid: 1d51bd87-17bf-457c-b698-61821de3afa0
 description: 了解如何使用三层保护配置 Teams 以实现更好的文件共享安全性，从而平衡安全性和易于协作。
-ms.openlocfilehash: d41effb6db9f8995c3c878523babf200ab9af762
-ms.sourcegitcommit: a6b998fef5bdb35ec6726c743a24fea721535fcd
+ms.openlocfilehash: 37d59d968d3a8e83a5b42fcce4c0400940314a41
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50509238"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50916210"
 ---
 # <a name="configure-teams-with-three-tiers-of-protection"></a>配置具有三层保护的 Teams
 
@@ -42,7 +42,7 @@ ms.locfileid: "50509238"
 
 - 高度敏感保护
 
-有关这些保护层以及针对每层建议的功能的详细信息，请参阅[面向企业架构师的 Microsoft 云图解](https://docs.microsoft.com/microsoft-365/solutions/cloud-architecture-models)。
+有关这些保护层以及针对每层建议的功能的详细信息，请参阅[面向企业架构师的 Microsoft 云图解](./cloud-architecture-models.md)。
 
 
 ## <a name="three-tiers-at-a-glance"></a>三个层级概览
@@ -68,11 +68,11 @@ ms.locfileid: "50509238"
 
 ## <a name="sensitivity-labels"></a>敏感度标签
 
-敏感层和高度敏感层使用敏感度标签来帮助保护团队和其文件。 为实现这些层，必须启用[用于保护 Microsoft Teams、Office 365 和 SharePoint 网站中内容的敏感度标签](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites)。
+敏感层和高度敏感层使用敏感度标签来帮助保护团队和其文件。 为实现这些层，必须启用[用于保护 Microsoft Teams、Office 365 和 SharePoint 网站中内容的敏感度标签](../compliance/sensitivity-labels-teams-groups-sites.md)。
 
 虽然基线层不需要敏感度标签，但请考虑创建“常规”标签，然后要求标记所有团队。 这将有助于确保用户在创建团队时就敏感度做出有意识的选择。 如果计划部署敏感或高度敏感层，建议创建一个“常规”标签，该标签可用于基线团队和不敏感的文件。
 
-如果不熟悉敏感度标签，建议阅读[敏感度标签](https://docs.microsoft.com/microsoft-365/compliance/get-started-with-sensitivity-labels)以开始使用。 
+如果不熟悉敏感度标签，建议阅读[敏感度标签](../compliance/get-started-with-sensitivity-labels.md)以开始使用。 
 
 如果已经在组织中推出了敏感度标签，请考虑敏感和高度敏感层中所使用的标签如何与整体标签策略配合使用。 
 
@@ -95,7 +95,7 @@ ms.locfileid: "50509238"
 
 ## <a name="guest-sharing"></a>来宾共享
 
-如果需要与组织外部人员进行协作，建议配置 [SharePoint 和 OneDrive 与 Azure AD B2B](https://docs.microsoft.com/sharepoint/sharepoint-azureb2b-integration-preview) 集成，以获得最佳的共享和管理体验。
+如果需要与组织外部人员进行协作，建议配置 [SharePoint 和 OneDrive 与 Azure AD B2B](/sharepoint/sharepoint-azureb2b-integration-preview) 集成，以获得最佳的共享和管理体验。
 
 默认情况下，团队来宾共享处于关闭状态，但 Office 365 组（存储团队成员资格）和 SharePoint 的共享处于打开状态。 我们在基线层中启用 Teams共享，如果需要，可以使用敏感度标签在敏感层和高度敏感层中将其关闭。
 
@@ -113,7 +113,7 @@ ms.locfileid: "50509238"
 
 ## <a name="access-from-unmanaged-devices"></a>非托管设备的访问
 
-对于敏感层和高度敏感层，我们使用敏感度标签限制对 SharePoint 内容的访问。 Azure AD 条件访问提供很多用于确定用户如何访问 Microsoft 365 的选项，包括基于位置、风险、设备合规性和其他因素的限制。 建议阅读[什么是条件访问？](https://docs.microsoft.com/azure/active-directory/conditional-access/overview)，并考虑哪些其他策略可能适用于你的组织。
+对于敏感层和高度敏感层，我们使用敏感度标签限制对 SharePoint 内容的访问。 Azure AD 条件访问提供很多用于确定用户如何访问 Microsoft 365 的选项，包括基于位置、风险、设备合规性和其他因素的限制。 建议阅读[什么是条件访问？](/azure/active-directory/conditional-access/overview)，并考虑哪些其他策略可能适用于你的组织。
 
 请注意，来宾通常没有组织管理的设备。 如果在任何层中允许来宾，请考虑他们将使用哪些设备访问团队和网站并相应地设置非托管设备策略。
 
@@ -123,6 +123,6 @@ ms.locfileid: "50509238"
 
 ## <a name="see-also"></a>另请参阅
 
-[Microsoft Teams 中的安全性和合规性](https://docs.microsoft.com/microsoftteams/security-compliance-overview)
+[Microsoft Teams 中的安全性和合规性](/microsoftteams/security-compliance-overview)
 
-[安全与合规中心警报策略](https://docs.microsoft.com/microsoft-365/compliance/alert-policies)
+[安全与合规中心警报策略](../compliance/alert-policies.md)

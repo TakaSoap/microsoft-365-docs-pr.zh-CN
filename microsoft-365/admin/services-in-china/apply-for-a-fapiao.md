@@ -21,17 +21,17 @@ search.appverid:
 ms.assetid: c80a315a-af87-4996-94b9-fd2194f58a93
 description: 了解如何在由世纪互联运营的 Office 365 中付款后，向世纪互联发票管理系统提交发票申请。
 monikerRange: o365-21vianet
-ms.openlocfilehash: 7145b4c223e7cb9347d38d6399fc8a3338651d42
-ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
-ms.translationtype: HT
+ms.openlocfilehash: 681d2d79c510c773d7597c62811256458e3d166d
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "50114365"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50914470"
 ---
 # <a name="apply-for-a-fapiao-for-office-365-operated-by-21vianet"></a>申请由世纪互联运营的 Office 365 的发票
 
 > [!NOTE]
-> 管理中心正在发生改变。 如果你的体验与此处提供的详细信息不匹配，请参阅[有关新版 Microsoft 365 管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true)。
+> 管理中心正在发生改变。 如果你的体验与此处提供的详细信息不匹配，请参阅[有关新版 Microsoft 365 管理中心](../microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet)。
 
 可以在付款后三天左右向世纪互联发票管理系统提交发票申请。 提交发票申请后，会在两天内对此请求进行处理。
   

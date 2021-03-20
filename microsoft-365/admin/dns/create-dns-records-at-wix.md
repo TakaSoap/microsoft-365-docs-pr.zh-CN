@@ -20,13 +20,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 7173c635-58b3-400f-95e0-97abe915565e
-description: 了解如何验证域，并设置电子邮件、Skype for Business Online 和其他 Microsoft Wix 服务的 DNS 记录。
-ms.openlocfilehash: 01317f7e2da87b532c93f12269fd65b7d4fe2dd6
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+description: 了解如何验证域，并设置电子邮件、Skype for Business Online 和 Microsoft Wix 的其他服务的 DNS 记录。
+ms.openlocfilehash: 3ec2ea0dc24e1872ba22e591fae96b39a9a0deee
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49656875"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50916102"
 ---
 # <a name="create-dns-records-at-wix-for-microsoft"></a>在 Wix 为 Microsoft 创建 DNS 记录
 
@@ -63,11 +63,11 @@ ms.locfileid: "49656875"
 > [!NOTE]
 > WIX 不支持子域的 DNS 条目。
   
-1. To get started， go to your domains page at Wix by using [this link.](https://premium.wix.com/wix/api/mpContainerStaticController#/domains?referralAdditionalInfo=account) 系统将会提示您先登录。
+1. To get started， go to your domains page at Wix by using [this link](https://premium.wix.com/wix/api/mpContainerStaticController#/domains?referralAdditionalInfo=account). 系统将会提示您先登录。
     
-2. 在 **"我的域"** 页上的 **"高级** "区域中，选择 **"编辑 DNS"** 按钮。 
+2. 在" **我的域"** 页上的" **高级"** 区域中，选择" **编辑 DNS"** 按钮。 
     
-3. Select **+ Add another** in the **TXT (Text)** row of the DNS editor. 
+3. 在 **DNS 编辑器的****"TXT** 文本 (文本) 行中选择+ 添加另一个。 
     
 4. In the boxes for the new record, type or copy and paste the values from the following table. 
     
@@ -76,7 +76,7 @@ ms.locfileid: "49656875"
    | 主机名 <br/> | TXT Value <br/> | TTL <br/> |
    |自动填充  <br/> |MS=ms *XXXXXXXX*  <br/> **注意：** 这是一个示例。 在这里使用表中的特定“**目标地址或指向的地址**”值。  [如何查找此项？](../get-help-with-domains/information-for-dns-records.md)|1 小时 <br/> |          |
    
-5. 选择 **DNS** 编辑器顶部的"保存 DNS"按钮。 
+5. 选择 **DNS 编辑器** 顶部的"保存 DNS"按钮。 
     
 6. 请在继续之前等待数分钟，以便您刚刚创建的记录可以通过 Internet 完成更新。
     
@@ -99,11 +99,11 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
 ## <a name="add-an-mx-record-so-email-for-your-domain-will-come-to-microsoft"></a>添加一条 MX 记录，确保发往你的域的电子邮件将会发送到 Microsoft
 <a name="BKMK_mx"> </a>
 
-1. To get started， go to your domains page at Wix by using [this link.](https://premium.wix.com/wix/api/mpContainerStaticController#/domains?referralAdditionalInfo=account) 系统将会提示您先登录。
+1. To get started， go to your domains page at Wix by using [this link](https://premium.wix.com/wix/api/mpContainerStaticController#/domains?referralAdditionalInfo=account). 系统将会提示您先登录。
     
-2. 在 **"我的域** "页上的" **邮箱** "区域中，选择" **配置 MX 记录** "链接。 
+2. 在" **我的域** "页上的" **邮箱"** 区域中，选择" **配置 MX 记录"** 链接。 
     
-3. 从 **"** 电子邮件提供商 **"** 下拉列表中选择"其他"。 
+3. 从 **"** 您的电子邮件提供商 **"下拉列表中选择** "其他"。 
     
 4. 选择 **+ 添加另一个**。
     
@@ -111,23 +111,23 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
     
    | 主机名 | Points to  | 优先级 | TTL |
    |:-----|:-----|:-----|:-----|
-   |自动填充 <br/> | *\<domain-key\>*  .mail.protection.outlook.com  <br/> **注意：** 从  *\<domain-key\>*  Microsoft 帐户获取你的帐户。   如何查找此内容？[](../get-help-with-domains/information-for-dns-records.md) |0  <br/> 有关优先级的详细信息，请参阅[什么是 MX 优先级？](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) | 1 Hour|
+   |自动填充 <br/> | *\<domain-key\>*  .mail.protection.outlook.com  <br/> **注意：** 从  *\<domain-key\>*  Microsoft 帐户获取你的信息。   如何查找此内容？[](../get-help-with-domains/information-for-dns-records.md) |0  <br/> 有关优先级的详细信息，请参阅[什么是 MX 优先级？](../setup/domains-faq.yml) | 1 Hour|
    
 6. 如果列出了任何其他 MX 记录，请删除其中每个记录。 
     
-7. 选择“**确定**”。
+7. 选择“确定”。
     
-8. 在确认对话框中，选择"**确定"。**
+8. 在确认对话框中，**选择确定。**
     
     
 ## <a name="add-the-five-cname-records-that-are-required-for-microsoft"></a>添加 Microsoft 所需的 5 条 CNAME 记录
 <a name="BKMK_cname"> </a>
 
-1. To get started， go to your domains page at Wix by using [this link.](https://premium.wix.com/wix/api/mpContainerStaticController#/domains?referralAdditionalInfo=account) You'll be prompted to login first.
+1. To get started， go to your domains page at Wix by using [this link](https://premium.wix.com/wix/api/mpContainerStaticController#/domains?referralAdditionalInfo=account). You'll be prompted to login first.
     
-2. 在 **"我的域"** 页上的 **"高级** "区域中，选择 **"编辑 DNS"** 按钮。 
+2. 在" **我的域"** 页上的" **高级"** 区域中，选择" **编辑 DNS"** 按钮。 
     
-3. Select **+ Add another** in the **CNAME (Aliases)** row of the DNS editor for each CNAME record. 
+3. 在每个 **CNAME 记录的** DNS 编辑器的 **"CNAME (别名")** 行中选择"+ 添加另一个"。 
     
 4. 在新记录的框中，键入或复制并粘贴下表中的值：
     
@@ -139,7 +139,7 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
    |enterpriseregistration  <br/> |enterpriseregistration.windows.net  <br/> |1 Hour <br/> |
    |enterpriseenrollment  <br/> |enterpriseenrollment-s.manage.microsoft.com  <br/> |1 Hour  <br/> |
    
-5. 选择 **DNS** 编辑器顶部的"保存 DNS"按钮。 
+5. 选择 **DNS 编辑器** 顶部的"保存 DNS"按钮。 
     
 6. 请在继续之前等待数分钟，以便您刚刚创建的记录可以通过 Internet 完成更新。
     
@@ -148,21 +148,21 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
 <a name="BKMK_spf"> </a>
 
 > [!IMPORTANT]
-> 一个域所拥有的 SPF 的 TXT 记录不能超过一个。 如果域具有多个 SPF 记录，你将收到电子邮件错误，其中随附发送和垃圾邮件分类问题。 如果你的域已有 SPF 记录，请不要为 Microsoft 创建新记录。 相反，将所需的 Microsoft 值添加到当前记录，以便具有一个  *包含这*  两组值的 SPF 记录。  
+> 一个域所拥有的 SPF 的 TXT 记录不能超过一个。 如果域具有多个 SPF 记录，你将收到电子邮件错误，其中随附发送和垃圾邮件分类问题。 如果你的域已有 SPF 记录，请不要为 Microsoft 创建新记录。 相反，将所需的 Microsoft 值添加到当前记录，以便你有一个  *包含这*  两组值的 SPF 记录。  
   
-1. To get started， go to your domains page at Wix by using [this link.](https://premium.wix.com/wix/api/mpContainerStaticController#/domains?referralAdditionalInfo=account) 系统将会提示您先登录。
+1. To get started， go to your domains page at Wix by using [this link](https://premium.wix.com/wix/api/mpContainerStaticController#/domains?referralAdditionalInfo=account). 系统将会提示您先登录。
     
-2. 在 **"我的域"** 页上的 **"高级** "区域中，选择 **"编辑 DNS"** 按钮。 
+2. 在" **我的域"** 页上的" **高级"** 区域中，选择" **编辑 DNS"** 按钮。 
     
-3. Select **+ Add another** in the **TXT (Text)** row of the DNS editor. 
+3. 在 **DNS 编辑器的****"TXT** 文本 (文本) 行中选择+ 添加另一个。 
     
 4. 在新记录的框中，键入或复制并粘贴下表中的值：
     
    | 主机名 | TXT Value | TTL |
    |:-----|:-----|:-----|
-   |[保留此空白]  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/> **注意：** 建议复制粘贴此条目，以保证正确保留所有空格。<br/> |TXT  <br/> | 1 Hour |
+   |[保留此为空白]  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/> **注意：** 建议复制粘贴此条目，以保证正确保留所有空格。<br/> |TXT  <br/> | 1 Hour |
    
-5. 选择 **DNS** 编辑器顶部的"保存 DNS"按钮。 
+5. 选择 **DNS 编辑器** 顶部的"保存 DNS"按钮。 
     
 6. 请在继续之前等待数分钟，以便您刚刚创建的记录可以通过 Internet 完成更新。
     
@@ -170,23 +170,22 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
 ## <a name="add-the-two-srv-records-that-are-required-for-microsoft"></a>添加 Microsoft 所需的两条 SRV 记录
 <a name="BKMK_srv"> </a>
 
-1. To get started， go to your domains page at Wix by using [this link.](https://premium.wix.com/wix/api/mpContainerStaticController#/domains?referralAdditionalInfo=account) 系统将会提示您先登录。
+1. To get started， go to your domains page at Wix by using [this link](https://premium.wix.com/wix/api/mpContainerStaticController#/domains?referralAdditionalInfo=account). 系统将会提示您先登录。
     
-2. 在 **"我的域"** 页上的 **"高级** "区域中，选择 **"编辑 DNS"** 按钮。 
+2. 在" **我的域"** 页上的" **高级"** 区域中，选择" **编辑 DNS"** 按钮。 
     
-3. Select **+ Add another** in the **SRV** row of the DNS editor. 
+3. 在 **DNS 编辑器的** **SRV** 行中选择+ 添加另一个。 
     
 4. 在新记录的框中，键入或复制并粘贴下表中的值：
     
    | 服务 | 协议 | 名称 | 粗细 | 端口 | Target | 优先级 | TTL |
    |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-   |sip  |tls  |自动填充 |1   |443   |sipdir.online.lync.com |100 |1 Hour |
-   |sipfed|tcp |自动填充|1  |5061 |sipfed.online.lync.com|100 | 1 Hour |
+   |sip  |tls  |自动填充 |1  |443   |sipdir.online.lync.com |100 |1 Hour |
+   |sipfed|tcp |自动填充|1 |5061 |sipfed.online.lync.com|100 | 1 Hour |
    
-5. 选择 **DNS** 编辑器顶部的"保存 DNS"按钮。 
+5. 选择 **DNS 编辑器** 顶部的"保存 DNS"按钮。 
     
 6. 请在继续之前等待数分钟，以便您刚刚创建的记录可以通过 Internet 完成更新。
     
 > [!NOTE]
 > DNS 更改通常需要 15 分钟左右才能生效。 但是，有时可能需要更长时间，您所做的更改才会在 Internet 的 DNS 系统中更新。 如果添加 DNS 记录后遇到邮件流问题或其他问题，请参阅 [更改域名或 DNS 记录后出现的问题的疑难解答](../get-help-with-domains/find-and-fix-issues.md)。 
-  

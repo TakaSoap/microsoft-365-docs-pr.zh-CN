@@ -22,29 +22,29 @@ search.appverid:
 - MOE150
 ms.assetid: bb229ee9-e7be-4990-b3eb-354e75740496
 description: '从共享邮箱中删除许可证以将其分配给其他用户。 '
-ms.openlocfilehash: 11d5185cc3f79899a737ddccc0a93160acb380bc
-ms.sourcegitcommit: 884ac262443c50362d0c3ded961d36d6b15d8b73
+ms.openlocfilehash: 1acd549936212db7f722355ed1f2518ff6bbac18
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49698299"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50915682"
 ---
 # <a name="remove-a-license-from-a-shared-mailbox"></a>从共享邮箱中删除许可证
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 管理中心正在发生改变。 如果你的体验与此处提供的详细信息不匹配，请参阅[有关新版 Microsoft 365 管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true)。
+> 管理中心正在发生改变。 如果你的体验与此处提供的详细信息不匹配，请参阅[有关新版 Microsoft 365 管理中心](../microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet)。
 
 ::: moniker-end
 
-共享邮箱通常不需要许可证。 按照以下说明从共享邮箱中删除许可证，以便你可以将其分配给用户或返回许可证，这样你无需支付不需要的许可证。
+共享邮箱通常不需要许可证。 按照以下说明从共享邮箱中删除许可证，以便你可以将其分配给用户或返回许可证，以便无需为不需要的许可证付费。
 
 > [!NOTE]
-> 以下方案需要许可证：
+> 在下列情况下需要许可证：
 > 1. 共享邮箱使用的存储空间超过 50 GB。
 > 2. 共享邮箱使用就地存档。
-> 3. 共享邮箱被置于诉讼保留中。
+> 3. 共享邮箱置于诉讼保留状态。
 > 4. 共享邮箱分配有 Microsoft Defender 许可证。
 
   
@@ -59,13 +59,13 @@ ms.locfileid: "49698299"
   
 2. 选择共享邮箱。
 
-3. 在 **"许可证和应用"选项卡** 中，展开 **"** 许可证"并取消选中要删除的许可证的框。
+3. 在" **许可证和应用"** 选项卡中，展开 **"许可证** "并取消选中要删除的许可证的框。
 
 4. 选择“**保存更改**”。
 
-5. 当您返回到" **活动用户"** 页时，共享邮箱的状态将是未授权 **的**。
+5. 返回到"**活动用户"** 页面时，共享邮箱的状态将为 **"未授权"。**
 
-6. 你仍然支付许可证费用。 若要停止付费， [请从订阅中删除许可证](../../commerce/licenses/remove-licenses-from-subscription.md)。
+6. 你仍然支付许可证费用。 若要停止付费， [请从订阅中删除许可证](../../commerce/licenses/buy-licenses.md)。
 
 ::: moniker-end
 
@@ -76,15 +76,15 @@ ms.locfileid: "49698299"
     > [!NOTE]
     > 您需要从"活动用户"页中删除许可证。 无法从"共享邮箱"页面删除许可证，因为许可证是用户设置。
 
-2. 选择共享邮箱，然后选择"**产品许可证**"**旁边的"编辑"。**
+2. 选择共享邮箱，**然后选择"产品** 许可证"旁边的 **"编辑"。**
 
-3. 在 **"产品许可证"** 页中，将要 **删除** 的许可证的开关设置为"关闭"。
+3. 在"**产品许可证"** 页中，将要删除的许可证的开关设置为"关闭"。
 
 4. 选择“**保存**”。
 
-5. 当您返回到" **活动用户"** 页时，共享邮箱的状态将是未授权 **的**。
+5. 返回到"**活动用户"** 页面时，共享邮箱的状态将为 **"未授权"。**
 
-6. 你仍然支付许可证费用。 若要停止付费， [请从订阅中删除许可证](../../commerce/licenses/remove-licenses-from-subscription.md)。
+6. 你仍然支付许可证费用。 若要停止付费， [请从订阅中删除许可证](../../commerce/licenses/buy-licenses.md)。
 
 ::: moniker-end
 
@@ -95,15 +95,15 @@ ms.locfileid: "49698299"
     > [!NOTE]
     > 您需要从"活动用户"页中删除许可证。 无法从"共享邮箱"页面删除许可证，因为许可证是用户设置。
 
-2. 选择共享邮箱，然后选择"**产品许可证**"**旁边的"编辑"。**
+2. 选择共享邮箱，**然后选择"产品** 许可证"旁边的 **"编辑"。**
 
-3. 在 **"产品许可证"** 页中，将要 **删除** 的许可证的开关设置为"关闭"。
+3. 在"**产品许可证"** 页中，将要删除的许可证的开关设置为"关闭"。
 
 4. 选择“**保存**”。
 
-5. 当您返回到" **活动用户"** 页时，共享邮箱的状态将是未授权 **的**。
+5. 返回到"**活动用户"** 页面时，共享邮箱的状态将为 **"未授权"。**
 
-6. 你仍然支付许可证费用。 若要停止付费， [请从订阅中删除许可证](../../commerce/licenses/remove-licenses-from-subscription.md)。
+6. 你仍然支付许可证费用。 若要停止付费， [请从订阅中删除许可证](../../commerce/licenses/buy-licenses.md)。
 
 ::: moniker-end 
 

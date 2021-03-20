@@ -1,5 +1,5 @@
 ---
-title: 以通讯组列表的形式发送电子邮件
+title: 以通讯组列表方式发送电子邮件
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -20,34 +20,32 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: a7c98273-067e-4162-b3a1-4ba081796012
-description: 了解如何在 Microsoft 365 中将电子邮件作为通讯组列表发送。
-ms.openlocfilehash: a917e59bbac40846fa289a97465f6d6e065b87ee
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+description: 了解如何在 Microsoft 365 中以通讯组列表方式发送电子邮件。
+ms.openlocfilehash: 379f2471fd38da5098bf8f2ca82f4f76ee82bd8e
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399586"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50915154"
 ---
-# <a name="send-email-as-a-distribution-list"></a>以通讯组列表的形式发送电子邮件
+# <a name="send-email-as-a-distribution-list"></a>以通讯组列表方式发送电子邮件
 
-在 Microsoft 365 中，可以将电子邮件作为通讯组列表发送。 当通讯组列表的成员答复发送到通讯组列表的邮件时，该电子邮件似乎来自通讯组列表，而不是来自单个用户。 本主题介绍如何执行此操作。
+在 Microsoft 365 中，你可以以通讯组列表方式发送电子邮件。 当通讯组列表成员答复发送到通讯组列表的邮件时，电子邮件看起来好像来自通讯组列表，而不是来自单个用户。 本主题演示如何执行此工作。
   
-## <a name="send-email-as-a-distribution-list"></a>以通讯组列表的形式发送电子邮件
+## <a name="send-email-as-a-distribution-list"></a>以通讯组列表方式发送电子邮件
 
-在执行这些步骤之前，请确保已将您添加到 Microsoft 365 通讯组列表，并且已向您授予 "代理发送" 权限。
+执行这些步骤之前，请确保你已添加到 Microsoft 365 通讯组列表，并且你已被授予以发送方式发送权限。
   
- **管理员**：确保已按照 "[向列表中添加 Microsoft 365 用户或联系人](../email/add-user-or-contact-to-distribution-list.md)" 中的步骤操作，并[允许成员以 Microsoft 365 组主题的形式发送电子邮件](../create-groups/allow-members-to-send-as-or-send-on-behalf-of-group.md#allow-members-to-send-email-as-a-group)，并向通讯组列表添加了正确的人员。
+ **管理员**：确保你已按照将 [Microsoft 365](../email/add-user-or-contact-to-distribution-list.md) 用户或联系人添加到列表和允许成员以 Microsoft [365](../../solutions/allow-members-to-send-as-or-send-on-behalf-of-group.md#allow-members-to-send-email-as-a-group) 组组方式发送电子邮件主题中的步骤操作，并将正确的人员添加到通讯组列表。
   
-1. 打开 web 上的 Outlook 并转到 "收件箱"。 
+1. 打开 Outlook 网页，然后转到收件箱。 
     
 2. 打开发送到通讯组列表的邮件。 
     
-3. 选择 "**答复**"。 
+3. 选择 **"答复"。** 
     
-4. 在邮件底部，选择 "**更多** \> **显示来自**"。<br/> ![选择 "更多"，然后选择 "显示来源"](../../media/534f13b7-9f15-48ea-8835-ea2ed1863ece.png)
+4. 在邮件底部，从 中选择 **"** \> **更多显示"。**<br/> ![选择"更多"，然后选择"显示自"](../../media/534f13b7-9f15-48ea-8835-ea2ed1863ece.png)
   
-5. 右键单击 "发件人地址-例如 `Ina@weewalter.me` -"，然后选择 "**删除**"。<br/> ![删除 FROM 别名](../../media/9b8d8e8f-dc46-499c-89bd-0a480603bf1f.png)
+5. 右键单击"From"地址（如 ） `Ina@weewalter.me` 并选择"删除 **"。**<br/> ![删除 FROM 别名](../../media/9b8d8e8f-dc46-499c-89bd-0a480603bf1f.png)
   
-6. 然后键入通讯组列表地址，如 support@contoso.com，并发送邮件。 下次从通讯组列表中答复时，其地址将显示为 "**发件**人" 列表中的一个选项。<br/>![共享邮箱的别名显示](../../media/f7632a9a-9cab-446c-9e37-23ef50c5b975.png)
-  
-
+6. 然后键入通讯组列表地址（如 support@contoso.com 地址）并发送邮件。 下次您从通讯组列表答复时，其地址将显示为"自"列表中的 **一** 个选项。<br/>![显示共享邮箱的别名](../../media/f7632a9a-9cab-446c-9e37-23ef50c5b975.png)

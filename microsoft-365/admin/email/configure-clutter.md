@@ -1,5 +1,5 @@
 ---
-title: 为您的组织配置邮件筛选
+title: 为组织配置待筛选邮件
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -19,90 +19,88 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 832276bd-d024-47b6-a80a-a6b884907a5b
-description: '了解如何使用 Exchange PowerShell 为组织中的所有用户或特定用户启用或禁用杂乱功能。 '
-ms.openlocfilehash: 67267b0865dfcfd6c0ba66d59ce1d0d111d59325
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+description: '了解如何使用 Exchange PowerShell 为组织中所有用户或特定用户启用或禁用待筛选邮件功能。 '
+ms.openlocfilehash: ac68893bc0aeea5ab214698c54524921e2b1921d
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44780273"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50915898"
 ---
-# <a name="configure-clutter-for-your-organization"></a>为您的组织配置邮件筛选
+# <a name="configure-clutter-for-your-organization"></a>为组织配置待筛选邮件
 
 > [!TIP]
-> [重点收件箱](../setup/configure-focused-inbox.md)将替换混乱。 了解详细信息：[更新重点收件箱和我们关于待筛选计划](https://techcommunity.microsoft.com/t5/Outlook-Blog/Update-on-Focused-Inbox-and-our-plans-for-Clutter/ba-p/136448)
+> [重点收件箱](../setup/configure-focused-inbox.md) 将替换待筛选邮件。 了解更多信息 [：更新重点收件箱和待筛选邮件计划](https://techcommunity.microsoft.com/t5/Outlook-Blog/Update-on-Focused-Inbox-and-our-plans-for-Clutter/ba-p/136448)
   
-作为管理员，您可能需要在 Microsoft 365 中管理邮件筛选功能。 若要为组织中的用户打开/关闭筛选功能，必须使用 Exchange PowerShell。 （个人可以使用以下说明打开/关闭它：[关闭/打开 Outlook 中的杂乱功能](https://support.microsoft.com/office/a9c72a77-1bc4-40e6-ba6d-103c1d1aba4c)。
+作为管理员，您可能必须管理 Microsoft 365 中的待筛选邮件功能。 若要为组织的用户打开/关闭待筛选邮件功能，必须使用 Exchange PowerShell。  (个人可以使用以下说明打开/关闭它：在 Outlook 中关闭 [/打开待筛选邮件](https://support.microsoft.com/office/a9c72a77-1bc4-40e6-ba6d-103c1d1aba4c)。
   
-请查看[使用 PowerShell With Exchange online](https://go.microsoft.com/fwlink/?LinkID=402831) ，并[连接到 Exchange online PowerShell](https://go.microsoft.com/fwlink/?LinkID=722415) ，以了解有关使用 exchange PowerShell 的详细信息。 您需要拥有至少具有 Exchange 服务管理员角色的帐户，并且能够使用 PowerShell 连接到 Exchange Online。 
+有关使用 [Exchange PowerShell](/powershell/exchange/exchange-online-powershell) 的详细信息，请参阅将 PowerShell 与 Exchange Online 一同使用和连接到 Exchange [Online](/powershell/exchange/connect-to-exchange-online-powershell) PowerShell。 您需要具有至少具有 Exchange 服务管理员角色且具有使用 PowerShell 连接到 Exchange Online 的能力的帐户。 
   
-## <a name="turn-clutter-on-using-exchange-powershell"></a>使用 Exchange PowerShell 打开杂乱
+## <a name="turn-clutter-on-using-exchange-powershell"></a>使用 Exchange PowerShell 启用待筛选邮件功能
 
-您可以通过运行 "[设置筛选](https://go.microsoft.com/fwlink/?LinkID=834446)" cmdlet 对邮箱手动启用筛选。 您还可以通过运行 "邮件[筛选](https://go.microsoft.com/fwlink/?LinkID=834759)" cmdlet 来查看组织中邮箱的杂乱设置。 
+可以通过运行 [Set-Clutter](/powershell/module/exchange/set-clutter) cmdlet 手动为邮箱启用待筛选邮件功能。 您还可以通过运行 [Get-Clutter](/powershell/module/exchange/get-clutter) cmdlet 查看组织中邮箱的待筛选邮件设置。 
   
-为名为 Allie Bellew 的单个用户打开杂乱的邮件
+为名为 Allie Bellew 的单个用户打开待筛选邮件功能
     
 `Set-Clutter -Identity "Allie Bellew" -Enable $true`
 
 
-## <a name="turn-clutter-off-using-exchange-powershell"></a>使用 Exchange PowerShell 禁用混乱
+## <a name="turn-clutter-off-using-exchange-powershell"></a>使用 Exchange PowerShell 关闭待筛选邮件功能
 
-您可以通过运行 "[设置筛选](https://go.microsoft.com/fwlink/?LinkID=834446)" cmdlet 对邮箱手动禁用垃圾邮件。 您还可以通过运行 "邮件[筛选](https://go.microsoft.com/fwlink/?LinkID=834759)" cmdlet 来查看组织中邮箱的**杂乱**设置。 
+可以通过运行 [Set-Clutter](/powershell/module/exchange/set-clutter) cmdlet 手动禁用邮箱的待筛选邮件功能。 您还可以通过运行[Get-Clutter](/powershell/module/exchange/get-clutter) cmdlet 查看组织中邮箱的待筛选邮件设置。 
   
-对名为 Allie Bellew 的单个用户关闭筛选：
+关闭名为 Allie Bellew 的单个用户的待筛选邮件功能：
     
 `Set-Clutter -Identity "Allie Bellew" -Enable $false`
 
-如果使用 PowerShell 批量创建用户，则需要对每个用户的邮箱运行[设置混乱](https://go.microsoft.com/fwlink/?LinkID=834446)，以管理杂乱。 
+如果使用 PowerShell 批量创建用户，则需要针对每个用户的邮箱运行 [Set-Clutter](/powershell/module/exchange/set-clutter) 来管理待筛选邮件。 
   
-## <a name="when-does-the-clutter-onoff-switch-appear-to-users-in-outlook-on-the-web"></a>何时对 web 上的 Outlook 中的用户显示 "杂乱" 开关？
+## <a name="when-does-the-clutter-onoff-switch-appear-to-users-in-outlook-on-the-web"></a>何时在 Outlook 网页中向用户显示待筛选邮件打开/关闭开关？
 <a name="bkmk_onoff"> </a>
 
-作为管理员，你可以使用 Exchange PowerShell 重新启用筛选。 完成此操作后，将关闭重点收件箱，并再次激活杂乱的垃圾邮件。 
+作为管理员，您可以使用 Exchange PowerShell 重新启用待筛选邮件功能。 完成此操作后，重点收件箱将关闭，待筛选邮件功能将再次处于活动状态。 
   
- **如果您使用的是 Microsoft 365 商业高级订阅的 web 上的 Outlook：**
+ **如果你将 Outlook 网页版与 Microsoft 365 商业高级版订阅一同使用：**
   
-- 如果用户当前启用了邮件筛选： 
+- 如果用户当前已启用待筛选邮件功能： 
     
-  - 出现 "邮件" 设置
+  - 将显示待筛选邮件设置
     
-- 如果用户当前启用了重点收件箱： 
+- 如果用户当前已启用重点收件箱： 
     
-  - 杂乱设置不会显示
+  - 不会显示待筛选邮件设置
     
-- 如果没有启用 "杂乱" 或 "重点收件箱"： 
+- 如果"待筛选邮件"或"重点收件箱"均未启用： 
     
-  - "杂乱" 和 "重点收件箱" 显示为用户的邮件设置中的选项
+  - 待筛选邮件和重点收件箱均显示为用户的邮件设置中的选项
     
- **如果您使用的是 Outlook.com：**
+ **如果你使用的是 Outlook.com：**
   
-- 如果用户当前启用了邮件筛选： 
+- 如果用户当前已启用待筛选邮件功能： 
     
-  - 出现 "邮件" 设置
+  - 将显示待筛选邮件设置
     
-- 如果用户当前启用了重点收件箱： 
+- 如果用户当前已启用重点收件箱： 
     
-  - 杂乱设置不会显示
+  - 不会显示待筛选邮件设置
     
-- 如果没有启用 "杂乱" 或 "重点收件箱"： 
+- 如果"待筛选邮件"或"重点收件箱"均未启用： 
     
-  - "杂乱" 和 "重点收件箱" 显示为用户的邮件设置中的选项
+  - 待筛选邮件和重点收件箱均显示为用户的邮件设置中的选项
     
-- 如果用户在过去某一点启用了重点收件箱：
+- 如果用户在过去某一时间点启用重点收件箱：
     
-  - 垃圾邮件设置将永远不会出现
+  - 永远不会显示待筛选邮件设置
     
-    无权 
+    否则， 
     
-  - 将显示 "杂乱" 设置
+  - 将显示待筛选邮件设置
     
 ## <a name="related-articles"></a>相关文章
 <a name="bkmk_onoff"> </a>
 
-[使用杂乱在 Outlook 中对低优先级邮件进行排序](https://support.microsoft.com/office/7b50c5db-7704-4e55-8a1b-dfc7bf1eafa0)
+[使用待筛选邮件对 Outlook 中的低优先级邮件进行排序](https://support.microsoft.com/office/7b50c5db-7704-4e55-8a1b-dfc7bf1eafa0)
     
-[使用杂乱在 OWA 中对低优先级邮件进行排序](https://support.microsoft.com/office/fe4d64ca-bf73-48f1-91b4-9a659e008bce)
+[使用待筛选邮件对 OWA 中的低优先级邮件进行排序](https://support.microsoft.com/office/fe4d64ca-bf73-48f1-91b4-9a659e008bce)
     
-[关闭 Outlook 中的杂乱功能](https://support.microsoft.com/office/a9c72a77-1bc4-40e6-ba6d-103c1d1aba4c)
-    
-
+[关闭 Outlook 中的待筛选邮件功能](https://support.microsoft.com/office/a9c72a77-1bc4-40e6-ba6d-103c1d1aba4c)

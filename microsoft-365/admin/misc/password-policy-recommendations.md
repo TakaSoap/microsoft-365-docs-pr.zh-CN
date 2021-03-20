@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9fa2539a-2211-41fd-85a0-bc37b9619ca4
 description: 了解如何加强组织对密码攻击的防护，学习应如何禁用常见密码并实现基于风险的多重身份验证。
-ms.openlocfilehash: 66a4048ac1add3a0d47f256dc29519a91ae6cb11
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: ca9a88b0bb154416837254d785cf9cfee8876ae6
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49926710"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50914722"
 ---
 # <a name="password-policy-recommendations"></a>密码策略建议
 
@@ -136,10 +136,10 @@ ms.locfileid: "49926710"
 
 ## <a name="related-articles"></a>相关文章
 
-[重置密码](https://docs.microsoft.com/microsoft-365/admin/add-users/reset-passwords)
+[重置密码](../add-users/reset-passwords.md)
 
-[将个人用户密码设置为永不过期](https://docs.microsoft.com/microsoft-365/admin/add-users/set-password-to-never-expire)
+[将个人用户密码设置为永不过期](../add-users/set-password-to-never-expire.md)
 
-[允许用户重置自己的密码](https://docs.microsoft.com/microsoft-365/admin/add-users/let-users-reset-passwords)
+[允许用户重置自己的密码](../add-users/let-users-reset-passwords.md)
 
-[重新发送用户密码 - 管理员帮助](https://docs.microsoft.com/microsoft-365/admin/add-users/resend-user-password)
+[重新发送用户密码 - 管理员帮助](../add-users/resend-user-password.md)

@@ -18,56 +18,56 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 7dc5d983-84b2-4802-bef0-602ae1780a42
-description: 了解在更改计划或公司名称时如何在两个 Microsoft 365 帐户之间手动转移数据，或将多个订阅组合为一个。
-ms.openlocfilehash: b7b0bb9c9b95b31d98040ae90632ef87a7fb0e3b
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+description: 了解如何在更改计划或公司名称，或将多个订阅合并为一个时，在两个 Microsoft 365 帐户之间手动传输数据。
+ms.openlocfilehash: 9916da50f4589f949d35466ca6aa8f1d79cc40ea
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48645139"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50915502"
 ---
 # <a name="transfer-data-manually-between-two-accounts"></a>在两个帐户之间手动传输数据
 
-准备汇总你的 sleeves，并在日历上阻止一段时间：在两个 Microsoft 365 帐户之间传输数据是一个手动、复杂且耗时的过程。 这不是自动或受支持的过程。 我们将开始着手。
+准备在日历上汇总并阻止一段时间：在两个 Microsoft 365 帐户之间传输数据是一个手动、复杂且耗时的过程。 这不是自动化或受支持的过程。 我们将开始。
   
 > [!CAUTION]
-> 在流程的过程中，Microsoft 365 上托管的电子邮件、Skype for Business 和公共网站将不起作用。 用户将获取新的用户名和密码，并将需要重置 Outlook。
+> 在此过程期间，电子邮件、Skype for Business 和 Microsoft 365 上托管的公共网站将不起作用。 用户将获取新的用户名和密码，并且他们需要重置 Outlook。
 
-**如果应用了以下任一情况，则仅使用本主题中的说明手动传输数据：**
+**仅在以下条件之一适用时，使用本主题中的说明手动传输数据：**
   
 - 您需要更改为其他服务系列中的计划。
 
-- 您的公司名称已更改，并且您决定创建新的订阅并迁移数据，因为您要使用不同的初始域名称。
+- 您的公司名称已更改，您决定创建新订阅并迁移数据，因为您想要使用不同的初始域名。
 
-- 您需要将多个订阅合并为一个新的。
+- 你需要将多个订阅合并为一个新订阅。
 
 > [!IMPORTANT]
-> 如果您需要 [更改订阅计划](../../commerce/subscriptions/switch-to-a-different-plan.md) 并可以使用 "切换计划向导"，或者如果您需要转移到同一订阅系列中的新订阅计划，即使 "切换计划向导" 不起作用，您也不需要手动传输数据，并且没有停机时间。
+> 如果你需要更改订阅计划[](../../commerce/subscriptions/switch-to-a-different-plan.md)，并且可以使用切换计划向导，或者如果需要转移到同一订阅系列中的新订阅计划，即使切换计划向导不起作用，也无需手动传输数据，并且没有故障时间。
 
 |**Tasks**|**Steps**|
 |:-----|:-----|
-|购买要移到的计划。  <br/> |当你注册时，请在初始域名中指定要使用的公司名称：  *yourcompany*  、  *yourcompany*  -public.sharepoint.com 和  *yourcompany*  。 您需要使用与为任何现有订阅所做的  *yourcompany*  不同的名称。  <br/> > [!NOTE]> 在取消订阅以释放从我们的系统中使用  *yourcompany*  的初始域名时，通常至少需要几个月。 即使您计划保存旧 Microsoft 365 订阅中的所有数据，并取消该订阅，旧的  *yourcompany*  值也不会立即可用于新的订阅。           |
-|从旧 Microsoft 365 订阅中删除你的自定义域。  <br/> | 在删除域以从用户电子邮件地址中删除域名并删除自定义域的电子邮件和 Lync 的 DNS 记录之前，请执行 [所需的步骤](remove-a-domain.md) 。 如果你在 Microsoft 365 上托管你的公共网站，你还需要删除指向它的 CNAME 记录。  <br/> > [!IMPORTANT]> 删除了将电子邮件路由到此自定义域的 MX 记录后，电子邮件将停止工作，直到您向新帐户添加了域、设置新的 MX 记录并设置您的用户。 当您删除 Lync 的 DNS 记录时，Lync 将停止工作。 删除指向公共网站的 CNAME 记录后，该记录将不可用。           [删除域](remove-a-domain.md) 。  <br/> |
-|为新订阅设置自定义域，并设置您的用户。  <br/> | 设置新的订阅，包括为自定义域创建所需的 DNS 记录。  <br/>  创建您的用户并在自定义域上使用电子邮件地址。  <br/> |
-|将数据从旧订阅传输到新订阅。  <br/> | 在单独的浏览器窗口中登录两个帐户：  <br/>  右键单击浏览器图标，打开两个专用浏览器窗口。 您可以在两个窗口中使用不同的凭据登录这两个帐户。  <br/> [在订阅之间传输管理设置](#email) <br/> [传输团队网站结构和数据](#transfer-team-site-structure-and-data) <br/> [在订阅之间传输公共网站](#transfer-a-public-website-between-subscriptions) <br/> [在订阅之间传输管理设置](#email) <br/> |
-|通过调用 microsoft Microsoft Microsoft 支持 for Microsoft 365，取消已完成计划的订阅。  <br/> | 验证新订阅是否正常工作以及是否已传输所有数据。  <br/>  [联系客户支持](../contact-support-for-business-products.md) 以取消旧订阅。  <br/> |
+|购买要移动到的计划。  <br/> |注册时，指定要用于初始域名的公司名称  *：yourcompany*  *.onmicrosoft.com、yourcompany*  -public.sharepoint.com 和  *yourcompany*  .sharepoint.com。 你需要使用与任何现有  *订阅*  不同的公司名称。  <br/> > [!NOTE]>取消订阅后，通常需要至少几个月的时间从系统发布使用  *你的*  公司的初始域名。 即使你计划保存旧 Microsoft 365 订阅的所有数据并取消该订阅，旧  *你的*  公司值不会立即用于新订阅。           |
+|从旧 Microsoft 365 订阅中删除自定义域。  <br/> | 在 [删除域](remove-a-domain.md) 之前，请按照所需步骤从用户电子邮件地址中删除域名，并删除电子邮件的 DNS 记录以及自定义域的 Lync 记录。 如果在 Microsoft 365 上托管公共网站，则还需要删除指向它的 CNAME 记录。  <br/> > [!IMPORTANT]>删除将电子邮件路由到此自定义域的 MX 记录后，电子邮件将停止工作，直到你将域添加到新帐户、设置新的 MX 记录并设置用户。 删除 Lync 的 DNS 记录时，Lync 将停止工作。 删除指向公共网站的 CNAME 记录后，该记录将不可用。           [删除域](remove-a-domain.md) 。  <br/> |
+|设置新订阅的自定义域，并设置用户。  <br/> | 设置新订阅，包括为自定义域创建所需的 DNS 记录。  <br/>  使用自定义域上的电子邮件地址创建用户。  <br/> |
+|将数据从旧订阅转移到新订阅。  <br/> | 在单独的浏览器窗口中登录这两个帐户：  <br/>  右键单击浏览器图标，然后打开两个专用浏览器窗口。 可以在两个窗口中使用不同的凭据登录这两个帐户。  <br/> [在订阅之间传输管理设置](#email) <br/> [转移团队网站结构和数据](#transfer-team-site-structure-and-data) <br/> [在订阅之间传输公共网站](#transfer-a-public-website-between-subscriptions) <br/> [在订阅之间传输管理设置](#email) <br/> |
+|通过致电 Microsoft 支持 Microsoft 365 取消你已完成计划的订阅。  <br/> | 验证新订阅是否正常工作，并且所有数据已转移。  <br/>  [联系客户支持](../contact-support-for-business-products.md) 以取消旧订阅。  <br/> |
 
 ## <a name="transfer-administrative-settings-between-subscriptions"></a>在订阅之间传输管理设置
 
-转到每个帐户上的以下页面，并根据旧帐户的设置设置新帐户。
+转到每个帐户上的以下页面，然后根据旧帐户的设置设置新帐户。
   
-如果要将数据从 Microsoft 365 传输到 Microsoft 365 中型企业版或 Microsoft 365 企业版，则管理页面的结构各不相同。 观看 [视频：介绍 Microsoft 365 企业版](https://docs.microsoft.com/microsoft-365/admin/)，并转到以下位置以查看管理员设置。
+如果要将数据从 Microsoft 365 传输到 Microsoft 365 中型企业版或 Microsoft 365 企业版，则管理页面的结构会有所不同。 观看视频 [：介绍 Microsoft 365 企业](../index.yml)版，然后转到以下位置查看管理员设置。
   
 对于 Microsoft 365 企业版和 Microsoft 365 中型企业版：
   
 |**位置**|**用途**|
 |:-----|:-----|
-|**管理员** \>**Microsoft 365** \>**服务设置** <br/> |选择每个选项卡，以获取邮件、网站、Lync、用户软件、密码、社区、权限管理和移动的设置。  <br/> |
+|**管理员** \>**Microsoft 365** \>**服务设置** <br/> |为邮件、网站、Lync、用户软件、密码、社区、权限管理和移动设置选择每个选项卡。  <br/> |
 |**管理员** \>**Exchange** <br/> | Exchange Online 设置  <br/> |
 |**管理员** \>**SharePoint** <br/> | SharePoint Online 设置  <br/> |
-|**管理员** \>**Skype For business** <br/> |其他 Skype for Business 设置  <br/> |
+|**管理员** \>**Skype for Business** <br/> |其他 Skype for Business 设置  <br/> |
 
-适用于 Microsoft 365 小型企业版
+对于 Microsoft 365 小型企业版
   
 |**位置**|**用途**|
 |:-----|:-----|
@@ -75,38 +75,38 @@ ms.locfileid: "48645139"
 
 ## <a name="transfer-a-public-website-between-subscriptions"></a>在订阅之间传输公共网站
 
-如果在 Microsoft 365 上托管了一个公共网站，则需要将其保存并在新订阅上重新创建它。
+如果你有一个公共网站托管在 Microsoft 365 上，你需要保存它，然后在你的新订阅上重新创建它。
   
 > [!NOTE]
-> 如果您的公共网站托管在 DNS 托管提供商处，则不需要进行任何更改。 您的转换不会受到影响。
+> 如果公共网站托管在 DNS 托管提供商中，则无需进行更改。 它将不会受你的转换影响。
   
-若要将文档库或列表内容从 SharePoint Online 环境保存到文件共享或本地计算机，请参阅 [SharePoint online 内容的手动迁移](https://go.microsoft.com/fwlink/p/?LinkId=402910)。
+若要将文档库或列表内容从 SharePoint Online 环境保存到文件共享或本地计算机，请参阅 [手动迁移 SharePoint Online 内容](/sharepoint/troubleshoot/migration-tool/content-manual-migration)。
   
 > [!NOTE]
-> 公共网站迁移应用无法将数据传输到其他订阅。
+> 公共网站迁移应用无法将数据转移到其他订阅。
   
-## <a name="transfer-team-site-structure-and-data"></a>传输团队网站结构和数据
+## <a name="transfer-team-site-structure-and-data"></a>转移团队网站结构和数据
 
 有几种方法可以保存或传输团队网站数据：
   
-- 您可以将旧网站另存为模板，并将该模板导入到新网站。
+- 您可以将旧网站另存为模板，将模板导入新网站。
 
-- 若要传输文档，请首先手动在新网站上重新创建层次结构。 然后，您可以同时打开这两个 SharePoint 团队网站，同时使用 Windows 资源管理器打开文档库，并复制并粘贴文档。 请参阅 [视频：使用 "使用资源管理器打开" 复制或移动库文件](https://support.microsoft.com/office/c7c20284-bc94-47f4-9728-d28e9daf0790)。
+- 若要传输文档，请首先手动在新建网站上重新创建层次结构。 然后，可以同时打开两个 SharePoint 团队网站，使用 Windows 资源管理器打开这两个文档库，并复制和粘贴文档。 请参阅 [视频：使用资源管理器打开来复制或移动库文件](https://support.microsoft.com/office/c7c20284-bc94-47f4-9728-d28e9daf0790)。
 
-- 若要转移列表数据，请保存 [列表模板](https://support.microsoft.com/office/c3884ad1-bc49-44b8-b3d6-3bc6a01eb393)，并使用保存的模板在新网站上重新创建列表。
+- 若要传输列表数据，请保存 [列表模板](https://support.microsoft.com/office/c3884ad1-bc49-44b8-b3d6-3bc6a01eb393)，并使用保存的模板在新建网站上重新创建列表。
 
-- 若要将文档库或列表内容从 SharePoint Online 环境中保存 (OneDrive for Business 或工作组网站) 到文件共享或本地计算机，请参阅 [有关手动迁移 SharePoint Online 内容的信息](https://support.microsoft.com/kb/2783484)。
+- 若要将 SharePoint Online 环境 (OneDrive for Business 或团队网站) 中的文档库或列表内容保存到文件共享或本地计算机，请参阅有关 [手动迁移 SharePoint Online](https://support.microsoft.com/kb/2783484)内容的信息。
 
 ## <a name="transfer-users-data-between-subscriptions"></a>在订阅之间传输用户数据
 
 ### <a name="email"></a>电子邮件：
 
-在设置新的订阅之后，要求用户 [移动其电子邮件、联系人、任务和日历信息](https://support.microsoft.com/office/0996ece3-57c6-49bc-977b-0d1892e2aacc) 。 他们可以使用其初始用户名（如 sue@contoso.onmicrosoft.com）访问其旧的电子邮件。
+要求用户在 [设置新订阅](https://support.microsoft.com/office/0996ece3-57c6-49bc-977b-0d1892e2aacc) 后移动其电子邮件、联系人、任务和日历信息。 他们可以使用其初始用户名访问旧电子邮件，例如 sue@contoso.onmicrosoft.com。
   
-### <a name="onedrive-for-business-data"></a>OneDrive For Business 数据：
+### <a name="onedrive-for-business-data"></a>OneDrive for Business 数据：
 
-请用户将 OneDrive for business 内容复制/同步 [到其计算机](https://support.microsoft.com/office/59b1de2b-519e-4d3a-8f45-51647cf291cd)，然后将其添加回其新订阅。
+要求用户将 [OneDrive for Business](https://support.microsoft.com/office/59b1de2b-519e-4d3a-8f45-51647cf291cd)内容复制/同步到其计算机，然后重新将其添加到新订阅。
 
 ### <a name="onenote"></a>OneNote 
 
-要求用户 [备份 OneNote](https://support.microsoft.com/office/back-up-notes-f58b34b0-611d-435e-87fa-7942a1767af4?ui=en-us&rs=en-us&ad=us) 并将 [笔记从备份还原](https://support.microsoft.com/en-us/office/restore-notes-from-a-backup-5daf9cb0-6769-4998-a5de-f044fdd0d831?ui=en-us&rs=en-us&ad=us) 到其新订阅。
+要求用户 [备份 OneNote](https://support.microsoft.com/office/back-up-notes-f58b34b0-611d-435e-87fa-7942a1767af4?ui=en-us&rs=en-us&ad=us) 以及 [将笔记从](https://support.microsoft.com/en-us/office/restore-notes-from-a-backup-5daf9cb0-6769-4998-a5de-f044fdd0d831?ui=en-us&rs=en-us&ad=us) 备份还原到其新订阅。

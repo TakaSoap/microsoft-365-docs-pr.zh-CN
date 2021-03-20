@@ -24,20 +24,20 @@ search.appverid:
 - BEA160
 - GEA150
 ms.assetid: f4d8cae9-6d06-4c4b-b4e5-6581fd05ea82
-description: '将初始电子邮件地址更改为友好电子邮件地址，如tom@fourthcoffee.com。 为此，需要购买域名，并将其添加到 Microsoft 365。 '
-ms.openlocfilehash: 445b78f759cee79a794f9656afd5b26051534e26
-ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
+description: '将初始电子邮件地址更改为友好电子邮件地址，如 tom@fourthcoffee.com。 为此，需要购买域名，并将其添加到 Microsoft 365。 '
+ms.openlocfilehash: 10dff4e0523062ae763c08a972563dc8b5582038
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "50114017"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50915922"
 ---
 # <a name="change-your-email-address-to-use-your-custom-domain"></a>将电子邮件地址更改为使用您的自定义域
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 管理中心正在发生改变。 如果你的体验与此处提供的详细信息不匹配，请参阅[有关新版 Microsoft 365 管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true)。
+> 管理中心正在发生改变。 如果你的体验与此处提供的详细信息不匹配，请参阅[有关新版 Microsoft 365 管理中心](../microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet)。
 
 ::: moniker-end
 
@@ -51,17 +51,17 @@ Microsoft 365 中的初始电子邮件地址包括 .onmicrosoft.com，tom@fourth
 
 ::: moniker range="o365-germany"
 
-Office 365 Germany 中的初始电子邮件地址包括 .onmicrosoft.de，如 tom@fourthcoffee.onmicrosoft.de。 你可以将地址更改为更友好的地址，tom@fourthcoffee.de。 你将需要自己的域名，如fourthcoffee.de域名。 如果您已有一个，太好了！ 如果没有，您可以了解如何[从域注册机构购买](../get-help-with-domains/buy-a-domain-name.md)。
+Office 365 Germany 中的初始电子邮件地址包括 .onmicrosoft.de，tom@fourthcoffee.onmicrosoft.de。 你可以将地址更改为更友好的地址，tom@fourthcoffee.de。 你将需要自己的域名，如 fourthcoffee.de 域名。 如果您已有一个，太好了！ 如果没有，您可以了解如何[从域注册机构购买](../get-help-with-domains/buy-a-domain-name.md)。
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-由世纪银行运营的 Office 365 中的初始电子邮件地址包括partner.onmschina.cn，tom@fourthcoffee.partner.onmschina.cn。 你可以将地址更改为更友好的地址，tom@fourthcoffee.cn。 你将需要你自己的域名，如fourthcoffee.cn域名。 如果您已有一个，太好了！ 如果没有，您可以了解如何[从域注册机构购买](../get-help-with-domains/buy-a-domain-name.md)。
+由世纪互联网运营的 Office 365 中的初始电子邮件地址包括 partner.onmschina.cn，tom@fourthcoffee.partner.onmschina.cn。 你可以将地址更改为更友好的地址，tom@fourthcoffee.cn。 你将需要你自己的域名，如 fourthcoffee.cn 域名。 如果您已有一个，太好了！ 如果没有，您可以了解如何[从域注册机构购买](../get-help-with-domains/buy-a-domain-name.md)。
 
 ::: moniker-end
 
-在设置期间通过更新域的 MX 记录将域的电子邮件更改为发送到 Microsoft 365 时，发送到该域的所有电子邮件都将开始发往 Microsoft 365。 在更改 MX 记录之前，请确保你在 Microsoft 365 中为域中拥有电子邮件的每个人添加了用户并创建了邮箱。 不想将域中的每个人的电子邮件移动到 Microsoft 365？ 你可以采取一些步骤来试用 [Microsoft 365，](https://docs.microsoft.com/microsoft-365/admin/misc/pilot-microsoft-365-from-my-custom-domain?view=o365-worldwide)而只需使用几个电子邮件地址。
+当你将域的电子邮件更改为发往 Microsoft 365 时，通过设置期间更新域的 MX 记录，发送到该域的所有电子邮件都将开始发往 Microsoft 365。 在更改 MX 记录之前，请确保你在 Microsoft 365 中为在你的域中拥有电子邮件的每个人添加了用户并创建了邮箱。 不想将域中每个人的电子邮件移动到 Microsoft 365？ 你可以采取一些措施，改为使用几个电子邮件地址来试用[Microsoft 365。](../misc/pilot-microsoft-365-from-my-custom-domain.md?view=o365-worldwide)
   
 ## <a name="change-your-email-address-to-use-your-custom-domain-using-the-microsoft-365-admin-center"></a>使用 Microsoft 365 管理中心更改电子邮件地址以使用自定义域
 
@@ -81,7 +81,7 @@ Office 365 Germany 中的初始电子邮件地址包括 .onmicrosoft.de，如 to
 
 ::: moniker range="o365-21vianet"
 
-1. 转到管理中心。 <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank"> https://portal.partner.microsoftonline.cn </a> 
+1. 转到 管理中心 。 <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank"> https://portal.partner.microsoftonline.cn </a> 
 
 ::: moniker-end 
 
@@ -99,4 +99,3 @@ Office 365 Germany 中的初始电子邮件地址包括 .onmicrosoft.de，如 to
 ## <a name="related-articles"></a>相关文章
 
 [使用 Microsoft 365 购买自定义域](../get-help-with-domains/buy-a-domain-name.md)
- 

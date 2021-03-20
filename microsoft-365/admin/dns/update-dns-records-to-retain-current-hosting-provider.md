@@ -20,26 +20,26 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: 2c4cf347-b897-45c1-a71f-210bdc8f1061
-description: 如果你已将 Microsoft 设置为管理自定义域的 DNS 记录，则了解如何将流量路由到 Microsoft 外部的现有公共网站。
-ms.openlocfilehash: 5d2bf23d4052815fae210d0fdf6635288ff46b57
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+description: 了解如何将流量路由到 Microsoft 外部托管的现有公共网站（如果已设置 Microsoft 管理自定义域的 DNS 记录）。
+ms.openlocfilehash: ceef82345e562e2aa4c291f416c454fb831ee45b
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48645559"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50915970"
 ---
 # <a name="update-dns-records-to-keep-your-website-with-your-current-hosting-provider"></a>更新 DNS 记录以便利用当前的托管提供商继续托管网站
 
- **如果您在 DNS 托管提供程序中管理您的域的 Microsoft 记录**，则无需担心本主题中的步骤。 您的网站将保留在原处，供用户继续正常访问。 
+ **如果在 DNS** 托管提供商中管理域的 Microsoft 记录，则无需担心本主题中的步骤。 您的网站将保留在原处，供用户继续正常访问。 
   
- **如果 microsoft 管理您的 DNS 记录**，若要将流量路由到 microsoft 外部的现有公共网站，在将您的域添加到 microsoft 之后，请执行以下操作： 
+ **如果 Microsoft 管理 DNS 记录**，若要将流量路由到在 Microsoft 外部托管的现有公共网站，在将域添加到 Microsoft 后，请执行下列操作： 
   
-## <a name="update-dns-records-in-the-microsoft-365-admin-center"></a>更新 Microsoft 365 管理中心中的 DNS 记录
+## <a name="update-dns-records-in-the-microsoft-365-admin-center"></a>在 Microsoft 365 管理中心更新 DNS 记录
 1. 在管理中心，转到“**设置**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">域</a>”页面。
 
-2. 在 " **域** " 页上，选择域，然后选择 " **DNS 记录**"。
+2. 在"**域**"页面上，选择域，然后选择 **"DNS 记录"。**
 
-3. 在 " **DNS 设置**" 下，选择 " **自定义记录**"。
+3. 在 **"DNS 设置"** 下，选择 **"自定义记录"。**
 
 4. 选择" **+ 新增自定义记录** "，然后输入以下信息： 
     
@@ -67,7 +67,6 @@ ms.locfileid: "48645559"
     
 最后，请执行下列操作：
   
-将[您的域的 NS 记录更新](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/set-up-your-domain-host-specific-instructions)为指向 Microsoft。 
+[将域的 NS 记录更新](../get-help-with-domains/set-up-your-domain-host-specific-instructions.md) 为指向 Microsoft。 
   
-当已将 NS 记录更新为指向 Microsoft 时，您的域将全部设置。 电子邮件将路由到 Microsoft，并且指向你的网站地址的流量将继续转到你的当前网站主机。
- 
+当 NS 记录更新为指向 Microsoft 时，域已全部设置。 电子邮件将路由到 Microsoft，并且发送到你的网站地址的流量将继续转到你的当前网站主机。

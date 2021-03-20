@@ -25,12 +25,12 @@ search.appverid:
 - MOE150
 ms.assetid: 2d75860f-c527-4352-a7f6-73eba54c0c72
 description: 了解如何管理电子邮件签名，包括进入或离开组织的所有电子邮件的法律免责声明或披露声明。
-ms.openlocfilehash: c8d63a11a75b9b53de9cabdf1f4baabc61cc3e42
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: b599ef8b6d0bb236b6111bae86c92409601e00d0
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49926914"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50914230"
 ---
 # <a name="create-organization-wide-signatures-and-disclaimers"></a>创建组织范围内的签名和免责声明
 
@@ -45,7 +45,7 @@ ms.locfileid: "49926914"
 ## <a name="create-a-signature-that-applies-to-all-messages"></a>创建一个应用于所有邮件的签名
 
 > [!TIP]
-> 组织范围内的签名称为"免责声明"，无论它们包含什么内容。 例如，它们只能是一个签名，也可以包括你的地址、法律免责声明或其他你需要的信息。
+> 组织范围内的签名称为"免责声明"，无论它们包含何种内容。 例如，它们只能是一个签名，也可以包括你的地址、法律免责声明或其他你需要的信息。
     
 ::: moniker range="o365-worldwide"
 
@@ -65,31 +65,31 @@ ms.locfileid: "49926914"
 
 ::: moniker-end
 
-1. 选择应用启动器 ![ 应用启动器图标 ](../../media/7502f4ec-3c9a-435d-a7b4-b9cda85189a7.png) ，然后选择"**管理"。**
+1. 选择应用启动器 ![ 应用启动器图标 ](../../media/7502f4ec-3c9a-435d-a7b4-b9cda85189a7.png) ，然后选择管理。
    
-    找不到需要的应用？ 从应用启动器中， **选择"所有** 应用"以查看可用应用的字母列表。 可在此处搜索特定应用。 
+    找不到需要的应用？ 从应用启动器中，选择 **"** 所有应用"以查看可用应用的字母列表。 可在此处搜索特定应用。 
     
-2. 选择 **管理中心**，然后选择 **Exchange。**
+2. 选择 **"管理中心"，** 然后选择 **"Exchange"。**
     
-3. 在"邮件流"下，选择 **"规则"。**
+3. 在"邮件流"下，选择"**规则"。**
     
-4. 选择 **+** " (添加) 图标，然后选择 **"应用免责声明"。**
+4. 选择 **+** " (添加) "图标，然后选择"**应用免责声明"。**
     
 5. 为规则命名。
     
-6. 在 **"应用此规则"** 下，选择 **"应用于所有邮件"。**
+6. 在 **"应用此规则"** 下，选择 **"[应用于所有邮件]"。**
     
     > [!TIP]
-    > [了解](https://docs.microsoft.com/Exchange/policy-and-compliance/mail-flow-rules/signatures#Scoping)有关应用条件的详细信息。  (此范围文章适用于Exchange Server，但也适用于 Microsoft 365.)  
+    > [了解](/Exchange/policy-and-compliance/mail-flow-rules/signatures#Scoping)有关应用条件的详细信息。  (此范围文章适用于Exchange Server，但也适用于 Microsoft 365.)  
   
 7. 在"执行以下操作"下，保留" **附加免责声明**"处于选中状态。 
     
 8.  选择 **"输入文本** "并键入免责声明。 
     
     > [!TIP]
-    > [深入了解](https://docs.microsoft.com/Exchange/policy-and-compliance/mail-flow-rules/signatures#FormatDisclaimer)如何设置免责声明格式。  (本文适用于Exchange Server，但也适用于 Microsoft 365.)  
+    > [深入了解](/Exchange/policy-and-compliance/mail-flow-rules/signatures#FormatDisclaimer)如何设置免责声明格式。  (本文适用于Exchange Server，但也适用于 Microsoft 365.)  
 
-9. 选择 **"选择一** 个 **"，** 然后选择"自动换行"作为回退选项。 然后选择" **确定**"。 这意味着如果由于加密或其他邮件设置而无法添加免责声明，免责声明将封装在邮件信封中。
+9. 选择 **"选择一** 个"，然后选择 **"自动** 换行"作为回退选项。 然后选择" **确定**"。 这意味着如果由于加密或其他邮件设置而无法添加免责声明，免责声明将封装在邮件信封中。
     
 10. 保留" **用安全性级别审核此规则**"处于选中状态。然后选择要在邮件日志中使用的" **低**"、" **中**"或" **高**"。 
     
@@ -109,10 +109,10 @@ ms.locfileid: "49926914"
     
 - 在电子邮件签名中嵌入图像
     
-- 跳过包含无法更新的 (行，例如，由于未为用户或用户提供) 
+- 跳过包含无法更新的变量 (例如，由于未为用户或用户提供值) 
     
-若要获取用于管理电子邮件签名的这些功能和其他功能，请使用第三方工具。 请执行 Internet 搜索电子邮件 **签名软件**。 其中一些提供商是 Microsoft 金牌合作伙伴，其软件提供这些功能。 
+若要获得这些和管理电子邮件签名的其他功能，请使用第三方工具。 请对电子邮件签名软件 **执行 Internet 搜索**。 许多提供商是 Microsoft 金牌合作伙伴，其软件提供这些功能。 
   
 ## <a name="more-resources"></a>更多资源
 
-- 有关 [使用](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/disclaimers-signatures-footers-or-headers) PowerShell 的信息，请参阅 Exchange Online 中的组织范围内的邮件免责声明、签名、页脚或标头。
+- 有关 [使用](/exchange/security-and-compliance/mail-flow-rules/disclaimers-signatures-footers-or-headers) PowerShell 的信息，请参阅 Exchange Online 中的组织范围邮件免责声明、签名、页脚或标头。

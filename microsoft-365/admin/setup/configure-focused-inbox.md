@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 613a845c-4b71-41de-b331-acdcf5b6625d
 description: '了解如何为组织的所有或特定用户配置重点收件箱。 '
-ms.openlocfilehash: e6c77bdff00e7cd98f5034267699e19d8582db27
-ms.sourcegitcommit: 38d828ae8d4350ae774a939c8decf30cb36c3bea
+ms.openlocfilehash: 7059fbb886669af99c1471789cbbc623dc9719b8
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "49551897"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50914278"
 ---
 # <a name="configure-focused-inbox-for-everyone-in-your-organization"></a>为组织中的每个人配置重点收件箱
 
@@ -41,9 +41,9 @@ ms.locfileid: "49551897"
   
 以下 PowerShell 示例演示如何在组织中 **关闭** 重点收件箱。但是，它不会阻止用户使用此功能。如果用户想使用，仍可在其每个客户端上重新启用重点收件箱。 
   
-1. [使用远程 PowerShell 连接到 Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=396554)。
+1. [使用远程 PowerShell 连接到 Exchange Online](/powershell/exchange/connect-to-exchange-online-powershell)。
 
-2. 需要分配有权限，然后才可执行此程序。要查看需要哪些权限，请参阅[邮件策略和符合性权限](https://go.microsoft.com/fwlink/p/?LinkId=829796)中的"传输规则"条目。
+2. 需要分配有权限，然后才可执行此程序。要查看需要哪些权限，请参阅[邮件策略和符合性权限](/exchange/messaging-policy-and-compliance-permissions-exchange-2013-help)中的"传输规则"条目。
 
 3. 运行 **Get-OrganizationConfig** cmdlet。 
 
@@ -87,7 +87,7 @@ Get-OrganizationConfig
 
 本示例会为 Contoso 组织中的 Tim Matthews **关闭** 重点收件箱。但是，它并不禁止他使用此功能。如果他想使用，仍可在其每个客户端上重新启用重点收件箱。 
   
-1. [使用远程 PowerShell 连接到 Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=396554)。
+1. [使用远程 PowerShell 连接到 Exchange Online](/powershell/exchange/connect-to-exchange-online-powershell)。
 
 2. 需要分配有权限，然后才可执行此程序。要查看需要哪些权限，请参阅邮件策略和合规性权限主题中的“传输规则”条目。
 
@@ -128,11 +128,11 @@ Get-OrganizationConfig
 > [!NOTE]
 > 此示例中的邮件头值文本为 **X-MS-Exchange-Organization-BypassFocusedInbox**。
   
-## <a name="use-powershell-to-create-a-transport-rule-to-direct-email-messages-to-the-focused-view-for-all-your-users"></a>使用 PowerShell 创建传输规则，为所有用户将电子邮件定向到“重点”收件箱视图
+## <a name="use-powershell-to-create-a-transport-rule-to-direct-email-messages-to-the-focused-view-for-all-your-users"></a>使用 PowerShell 创建传输规则，将电子邮件定向到所有用户的“重点”视图
 
-1. [使用远程 PowerShell 连接到 Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=396554)。
+1. [使用远程 PowerShell 连接到 Exchange Online](/powershell/exchange/connect-to-exchange-online-powershell)。
 
-2. 需要分配有权限，然后才可执行此程序。要查看需要哪些权限，请参阅[邮件策略和符合性权限](https://go.microsoft.com/fwlink/p/?LinkId=829796)中的"传输规则"条目。
+2. 需要分配有权限，然后才可执行此程序。要查看需要哪些权限，请参阅[邮件策略和符合性权限](/exchange/messaging-policy-and-compliance-permissions-exchange-2013-help)中的"传输规则"条目。
 
 3. 例如，运行以下命令即可允许所有来自"工资单管理部门"的邮件定向到重点收件箱。
 
@@ -142,7 +142,7 @@ Get-OrganizationConfig
 
 > [!IMPORTANT]
 > 在本例中，"X-MS-Exchange-Organization-BypassFocusedInbox"和"true"都需区分大小写。
-> 此外，重点收件箱将遵循绕过待筛选邮件的 X 标头，因此若在待筛选邮件中使用此设置，则此设置将用于重点收件箱。 有关语法和参数的详细信息，请参阅 [New-TransportRule](https://go.microsoft.com/fwlink/p/?LinkId=830194)。
+> 此外，重点收件箱将遵循绕过待筛选邮件的 X 标头，因此若在待筛选邮件中使用此设置，则此设置将用于重点收件箱。 有关语法和参数的详细信息，请参阅 [New-TransportRule](/powershell/module/exchange/new-transportrule)。
 
 ### <a name="how-do-you-know-this-worked"></a>如何判断是否生效？
 

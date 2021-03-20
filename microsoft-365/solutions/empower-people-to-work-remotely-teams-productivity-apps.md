@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: 使用户可通过 Teams、Exchange、SharePoint 和其他 Microsoft 365 服务高效工作。
-ms.openlocfilehash: ce19085a358861238e9a7cd4d650246d08fd272d
-ms.sourcegitcommit: 1ac884d8470b2f2a58b6f79e324fd91e4d11dceb
+ms.openlocfilehash: 7b62191d08e5ff91e54bb16b06a0511e02f16b6d
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2021
-ms.locfileid: "50055483"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50916174"
 ---
 # <a name="step-5-deploy-remote-worker-productivity-apps-and-services"></a>步骤 5. 部署远程工作者生产力应用和服务
 
@@ -42,7 +42,7 @@ ms.locfileid: "50055483"
 
 Teams 让你可以在一个位置聊天、开会、呼叫和协作。 数百万人每天在 Teams 中完成自己的工作，因为它能将远程工作所需的所有内容整合到一个中心，以进行团队合作。 
 
-有关详细指南，请参阅[使用 Microsoft Teams 支持远程工作者](https://docs.microsoft.com/microsoftteams/support-remote-work-with-teams)。 
+有关详细指南，请参阅[使用 Microsoft Teams 支持远程工作者](/microsoftteams/support-remote-work-with-teams)。 
 
 观看[“使用 Microsoft Teams 网站实现混合型工作”网络直播](https://resources.techcommunity.microsoft.com/enabling-hybrid-work/)，获取有关使用 Teams 实现远程工作的指南和演示。
 
@@ -76,10 +76,10 @@ Teams 提供了一个可从桌面版、Web 版和移动版 Teams 访问应用和
 
 可能需要将文档从以下位置迁移到 SharePoint 或 OneDrive：
 
-- [SharePoint Server 团队网站](https://docs.microsoft.com/sharepointmigration/sp-teams-sites-migration-guide)
-- [MySites](https://docs.microsoft.com/sharepointmigration/mysites-to-onedrive-migration-guide)
-- [文件共享](https://docs.microsoft.com/sharepointmigration/fileshare-to-odsp-migration-guide)
-- [Box](https://docs.microsoft.com/sharepointmigration/box-to-onedrive-and-sharepoint-migration-guide)
+- [SharePoint Server 团队网站](/sharepointmigration/sp-teams-sites-migration-guide)
+- [MySites](/sharepointmigration/mysites-to-onedrive-migration-guide)
+- [文件共享](/sharepointmigration/fileshare-to-odsp-migration-guide)
+- [Box](/sharepointmigration/box-to-onedrive-and-sharepoint-migration-guide)
 
 请参阅[本文](../security/office-365-security/sharepoint-file-access-policies.md)，了解用于保护 SharePoint 和 OneDrive 的建议身份验证和设备访问策略。
 
@@ -87,15 +87,15 @@ Teams 提供了一个可从桌面版、Web 版和移动版 Teams 访问应用和
 
 Microsoft 365 应用版是适用于企业的最高效、最安全的 Office 体验，可让用户随时随地无缝协作。 远程工作者可与多人同时协作处理文档、实时查看编辑和更改，以及在任何便携式电脑、电脑或移动设备上与其他人共同创作。
 
-有关详细信息，请参阅 [Microsoft 365 应用版部署指南](https://docs.microsoft.com/deployoffice/deployment-guide-microsoft-365-apps)。
+有关详细信息，请参阅 [Microsoft 365 应用版部署指南](/deployoffice/deployment-guide-microsoft-365-apps)。
 
 ## <a name="admin-technical-resources-for-productivity-apps-and-services"></a>面向生产力应用和服务的管理员技术资源
 
-- [使用 Microsoft Teams 支持远程工作者](https://docs.microsoft.com/microsoftteams/support-remote-work-with-teams)
+- [使用 Microsoft Teams 支持远程工作者](/microsoftteams/support-remote-work-with-teams)
 - [“使用 Microsoft Teams 网站实现混合型工作”网络直播](https://resources.techcommunity.microsoft.com/enabling-hybrid-work/)
 - [Teams 客户成功工具包下载](https://www.microsoft.com/download/details.aspx?id=54244)
-- [用于促进 Teams 采用的工具](https://docs.microsoft.com/microsoftteams/adopt-tools-and-downloads) 
-- [为 Microsoft Teams 创建变更管理策略](https://docs.microsoft.com/MicrosoftTeams/change-management-strategy)
+- [用于促进 Teams 采用的工具](/microsoftteams/adopt-tools-and-downloads) 
+- [为 Microsoft Teams 创建变更管理策略](/MicrosoftTeams/change-management-strategy)
 - [部署具有三层保护的 Teams](configure-teams-three-tiers-protection.md)
 
 ## <a name="user-training-resources-for-productivity-apps-and-services"></a>面向生产力应用和服务的用户培训资源

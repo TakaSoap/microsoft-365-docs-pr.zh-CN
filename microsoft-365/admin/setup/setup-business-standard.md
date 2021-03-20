@@ -24,12 +24,12 @@ search.appverid:
 - MOE150
 - BEA160
 description: 了解如何设置 Microsoft 365 商业标准版订阅。
-ms.openlocfilehash: 7dce8fd4572e8434dd1396f98d94e3eaf0ddf7dc
-ms.sourcegitcommit: eac5d9f759f290d3c51cafaf335a1a1c43ded927
+ms.openlocfilehash: 51bd06a3ac23a794c71aa7d0ba682f65d48c913e
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50126113"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50914014"
 ---
 # <a name="set-up-microsoft-business-standard"></a>设置 Microsoft 商业标准版
 
@@ -53,15 +53,15 @@ ms.locfileid: "50126113"
     > 如果你在注册期间购买了域，则此处不会看到“**添加域**”步骤。 转到“[添加用户](#add-users-and-assign-licenses)”。
 
     
-4. 按照向导[在任何 DNS 托管提供商处为 Office 365 创建 DNS 记录](https://docs.microsoft.com/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider)中的步骤验证你是否拥有该域。 如果你知道域主机，另请参阅[主机特定说明](https://docs.microsoft.com/office365/admin/get-help-with-domains/set-up-your-domain-host-specific-instructions)。
+4. 按照向导[在任何 DNS 托管提供商处为 Office 365 创建 DNS 记录](/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider)中的步骤验证你是否拥有该域。 如果你知道域主机，另请参阅[主机特定说明](/office365/admin/get-help-with-domains/set-up-your-domain-host-specific-instructions)。
 
-    如果你的托管服务提供商是 GoDaddy 或启用了 [domain connect](https://docs.microsoft.com/office365/admin/get-help-with-domains/domain-connect) 的其他主机，则此过程很简单，系统会自动要求你登录并让 Microsoft 代表你进行身份验证。
+    如果你的托管服务提供商是 GoDaddy 或启用了 [domain connect](/office365/admin/get-help-with-domains/domain-connect) 的其他主机，则此过程很简单，系统会自动要求你登录并让 Microsoft 代表你进行身份验证。
 
     ![在 GoDaddy“确认访问”页面上，选择“授权”。](../../media/godaddyauth.png)
 
 ## <a name="add-users-and-assign-licenses"></a>添加用户并分配许可证
 
-你可以在向导中添加用户，但你也可以[以后在管理中心添加用户](../add-users/add-users.md)。 此外，如果你具有本地域控制器，则可以使用 [Azure AD Connect](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-install-express) 添加用户。
+你可以在向导中添加用户，但你也可以[以后在管理中心添加用户](../add-users/add-users.md)。 此外，如果你具有本地域控制器，则可以使用 [Azure AD Connect](/azure/active-directory/hybrid/how-to-connect-install-express) 添加用户。
 
 ## <a name="add-users-in-the-wizard"></a>在向导中添加用户
 
@@ -78,10 +78,10 @@ ms.locfileid: "50126113"
   
 必须更新 DNS 主机或域注册机构的一些记录才能设置服务。
   
-1. 安装向导通常将检测你的注册机构，并提供更新注册机构网站上 NS 记录分步说明的链接。 如果没有，请[将名称服务器更改为使用任意域名注册机构设置 Office 365](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/change-nameservers-at-any-domain-registrar)。 
+1. 安装向导通常将检测你的注册机构，并提供更新注册机构网站上 NS 记录分步说明的链接。 如果没有，请[将名称服务器更改为使用任意域名注册机构设置 Office 365](../get-help-with-domains/change-nameservers-at-any-domain-registrar.md)。 
 
-    - 如果你有现有的 DNS 记录（例如现有网站），但你的 DNS 主机已启用 [domain connect](https://docs.microsoft.com/office365/admin/get-help-with-domains/domain-connect)，请选择“**为我添加记录**”。 在“**选择联机服务**”页面上，接受所有默认设置，选择“**下一步**”，然后在DNS 主机页面上选择“**授权**”。
-    - 如果你具有用于其他 DNS 主机的现有 DNS 记录（未启用 domain connect），则需要管理自己的 DNS 记录以确保现有服务保持连接状态。 有关详细信息，请参阅[域基础知识](https://docs.microsoft.com/office365/admin/get-help-with-domains/dns-basics)。
+    - 如果你有现有的 DNS 记录（例如现有网站），但你的 DNS 主机已启用 [domain connect](/office365/admin/get-help-with-domains/domain-connect)，请选择“**为我添加记录**”。 在“**选择联机服务**”页面上，接受所有默认设置，选择“**下一步**”，然后在DNS 主机页面上选择“**授权**”。
+    - 如果你具有用于其他 DNS 主机的现有 DNS 记录（未启用 domain connect），则需要管理自己的 DNS 记录以确保现有服务保持连接状态。 有关详细信息，请参阅[域基础知识](/office365/admin/get-help-with-domains/dns-basics)。
 
 2. 请按照向导中的步骤进行操作，然后将为你设置电子邮件和其他服务。
 
@@ -127,7 +127,7 @@ ms.locfileid: "50126113"
   
 请参阅[使用 Outlook 导入电子邮件](https://support.microsoft.com/office/6a3771d4-4c1d-4a25-92a6-0b8e476335de)，了解有关详细信息。
 
-还可以使用 Exchange 管理中心导入每个人的电子邮件。 有关详细信息，请参阅[迁移多个电子邮件帐户](https://docs.microsoft.com/Exchange/mailbox-migration/mailbox-migration)。
+还可以使用 Exchange 管理中心导入每个人的电子邮件。 有关详细信息，请参阅[迁移多个电子邮件帐户](/Exchange/mailbox-migration/mailbox-migration)。
   
 ### <a name="use-a-public-website"></a>使用公共网站
 

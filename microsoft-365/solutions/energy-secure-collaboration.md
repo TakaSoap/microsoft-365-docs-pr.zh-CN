@@ -13,12 +13,12 @@ ms.prod: microsoft-365-enterprise
 localization_priority: Priority
 description: Microsoft 365 可帮助能源组织迁移到新式协作平台，同时帮助保持数据和系统的安全性和法规遵从性。
 ms.custom: seo-marvel-jun2020
-ms.openlocfilehash: 1e5acc09c72b47f583c2ee9330f78bf3e68aaa33
-ms.sourcegitcommit: c1dd5be42fe0c5dcc7c05817c941edd9076febf8
+ms.openlocfilehash: 086cc176190549f2ec8e49ea992744059c5d9005
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "49558486"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50916114"
 ---
 # <a name="key-compliance-and-security-considerations-for-the-energy-industry"></a>针对能源行业的关键合规性与安全性注意事项
 ![使用云的各种行业的全局视图的图示比拟](../media/solution-arch-center/MSC17_global_016.png)
@@ -38,7 +38,7 @@ ms.locfileid: "49558486"
 - Azure 和 Azure 政府版均被授予 FedRAMP 高 P-ATO（临时授权运营），后者代表最高级别的 FedRAMP 授权。 
 
 有关 Microsoft 云服务和 FedRAMP 的详细信息，请参阅以下资源：
-- [Microsoft FedRAMP 概述](https://docs.microsoft.com/microsoft-365/compliance/offering-fedramp?view=o365-worldwide)
+- [Microsoft FedRAMP 概述](/compliance/regulatory/offering-FedRAMP?view=o365-worldwide)
 - [Office 365 FedRAMP 报告](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuideV3?docTab=7027ead0-3d6b-11e9-b9e1-290b1eb4cdeb_FedRAMP_Reports)
 
 

@@ -21,12 +21,12 @@ search.appverid:
 ms.assetid: 481b460e-f799-4fac-9592-4d5c51bdcbd8
 ROBOTS: NOINDEX
 description: 了解如何删除或还原用户的 Microsoft 365 帐户。
-ms.openlocfilehash: 13908a83ffa39369b2aea71e7212fd0d41488c44
-ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
+ms.openlocfilehash: 3b078b782246229d1ddfb1f1fa51282140e71eb0
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/31/2020
-ms.locfileid: "44432179"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50914782"
 ---
 # <a name="quick-help-deleted-user"></a>快速帮助：已删除的用户
 
@@ -36,46 +36,46 @@ ms.locfileid: "44432179"
 
 ::: moniker range="o365-worldwide"
   
-1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。
+1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。
 
-2. 选择一个用户，然后在用户列表的上方选择 "**更多选项**（**...**）"，然后选择 "**删除用户**"。
+2. 选择一个用户，然后在用户列表上方选择"更多选项"" (...) "，然后选择"删除 **用户"。** 
   
-3. 在 "删除确认" 窗格中，选择 "**删除用户**"。 <br/>[阅读完整文章。](../add-users/delete-a-user.md)
+3. 在删除确认窗格中，选择"**删除用户"。** <br/>[阅读完整文章。](../add-users/delete-a-user.md)
   
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">活动用户</a>”页面。  
+1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">活动用户</a>”页面。  
 
-2. 选择用户，然后在用户列表上方选择 "**更多** > **删除用户**"。
+2. 选择用户，然后在用户列表上方选择"更多 > **删除用户"。**
   
-3. 在 "删除确认" 窗格中，选择 "**删除用户**"。 <br/>[阅读完整文章。](../add-users/delete-a-user.md)
+3. 在删除确认窗格中，选择"**删除用户"。** <br/>[阅读完整文章。](../add-users/delete-a-user.md)
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">活动用户</a>”页面。 
+1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">活动用户</a>”页面。 
 
-2. 选择用户，然后在用户列表上方选择 "**更多** > **删除用户**"。
+2. 选择用户，然后在用户列表上方选择"更多 > **删除用户"。**
   
-3. 在 "删除确认" 窗格中，选择 "**删除用户**"。 <br/>[阅读完整文章。](../add-users/delete-a-user.md)
+3. 在删除确认窗格中，选择"**删除用户"。** <br/>[阅读完整文章。](../add-users/delete-a-user.md)
 
 ::: moniker-end
 
   
 ## <a name="restore-a-user"></a>还原用户
 
-您可以通过在主页上搜索**已删除**的用户并在结果中选择 "**已删除用户**"，或者转到左侧导航栏中的 "**已删除**用户" 页面，然后选择要还原的用户，来还原用户。 [阅读完整文章](../add-users/delete-a-user.md)。
+您可以通过在主页上搜索已删除的用户，在结果中选择"已删除用户"，或者从左侧导航导航到"已删除用户"页面并选择要还原的用户来还原用户。  [阅读完整文章](../add-users/delete-a-user.md)。
   
 ## <a name="what-are-deleted-users"></a>什么是已删除的用户？
 
 已删除的[用户](../add-users/add-users.md)是要从组织中删除的工作或学校帐户。 
   
-## <a name="does-deleting-a-user-free-up-their-microsoft-365-license"></a>删除用户后，用户是否释放了其 Microsoft 365 许可证？
+## <a name="does-deleting-a-user-free-up-their-microsoft-365-license"></a>删除用户是否将释放其 Microsoft 365 许可证？
 
-是的，删除用户将释放分配给该用户的 Microsoft 365 许可证。 然后，您可以分配该许可证给另一个用户。 [阅读完整文章](../../commerce/licenses/remove-licenses-from-subscription.md)。
+可以，删除用户会释放分配给该用户的 Microsoft 365 许可证。 然后，您可以分配该许可证给另一个用户。 [阅读完整文章](../../commerce/licenses/buy-licenses.md)。
   
 ## <a name="i-had-a-deleted-user-listed-in-deleted-users-and-then-it-disappeared-what-happened"></a>"已删除的用户"中列有一个已删除的用户，然后它消失了。 发生了什么？
 
@@ -91,6 +91,4 @@ ms.locfileid: "44432179"
   
 ## <a name="how-do-i-restore-a-user"></a>如何还原用户？
 
-您可以通过在主页上搜索**已删除**的用户并在结果中选择 "**已删除用户**"，或者转到左侧导航栏中的 "**已删除**用户" 页面，然后选择要还原的用户，来还原用户。 [阅读完整文章](../add-users/delete-a-user.md)。
-  
-
+您可以通过在主页上搜索已删除的用户，在结果中选择"已删除用户"，或者从左侧导航导航到"已删除用户"页面并选择要还原的用户来还原用户。  [阅读完整文章](../add-users/delete-a-user.md)。

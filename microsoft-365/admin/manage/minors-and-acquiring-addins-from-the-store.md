@@ -1,5 +1,5 @@
 ---
-title: 向应用商店中的未成年人和收购外接程序
+title: 次要加载项和从应用商店获取加载项
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -19,63 +19,62 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
-description: 了解常规数据保护法规 (GDPR) 管理未成年人的个人数据的管理法规。
-ms.openlocfilehash: a738e22a0ac0b995c8e44fcf4cc5a2eb47375be5
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+description: 了解 GDPR 一般数据保护 () 管理未成年人个人数据的法规。
+ms.openlocfilehash: c49ea719bc85166cc8082200eb833273b0ab5835
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47306547"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50915250"
 ---
-# <a name="minors-and-acquiring-add-ins-from-the-store"></a>向应用商店中的未成年人和收购外接程序
+# <a name="minors-and-acquiring-add-ins-from-the-store"></a>次要加载项和从应用商店获取加载项
 
-一般数据保护法规 (GDPR) 是一种欧洲联合法规，生效时间可能为25，2018。 它向用户提供对其数据的权限并加以保护。 GDPR 的其中一个方面是，未成年人的个人数据不能发送给其家长或监护人尚未批准的当事人。 定义为次要的特定年龄取决于个人所在的区域。
+GDPR 一般 (条例) 于 2018 年 5 月 25 日生效的欧盟法规。 它为用户提供了访问和保护其数据的权利。 GDPR 的一个方面是，未成年人无法将他们的个人数据发送给其家长或监护人尚未批准的各方。 定义为未成年人的特定年龄取决于个人所在的地区。
   
-具有关于家长同意的法令法规的地区包括美国、韩国、英国和欧盟。 对于这些区域，将通过 Azure Active Directory)  (阻止从存储中获取任何新的 Office 外接程序，并运行之前获取的外接程序，从而阻止了次要区域。 对于没有法令法规的国家/地区，将不提供下载限制。
+具有有关家长同意的法规的区域包括美国、韩国、英国和欧盟。 对于这些区域，将阻止 (Azure Active Directory) 从应用商店获取任何新的 Office 外接程序并运行之前获取的外接程序。 对于没有法规的国家/地区，将没有下载限制。
   
-根据 Azure Active Directory 中指定的数据，将用户确定为次要用户。 组织管理员负责声明法律年龄组和该用户的家长同意。
+根据 Azure Active Directory 中指定的数据，将用户确定为次要用户。 组织管理员负责声明法定年龄组和该用户的家长同意。
   
-如果父/监护人同意使用特定的外接程序，组织管理员可以使用集中部署将该外接程序部署到所有已同意的未成年人。
+如果家长/监护人同意使用特定加载项的未成年人，则组织管理员可以使用集中部署将加载项部署到所有获得同意的未成年人。
   
-若要符合 GDPR 的要求，您需要确保在学校/组织中部署以下 Office 内部版本之一。
+若要使未成年人符合 GDPR，你需要确保在学校/组织中部署以下 Office 内部版本之一。
  
- **对于 Word、Excel、PowerPoint 和 Project**： 
+ **对于 Word、Excel、PowerPoint 和 Project：** 
 
 |**平台** <br/> |**内部版本号** <br/> |
 |:-----|:-----|
-|适用于企业版 (当前频道) 的 Microsoft 365 应用程序  <br/> |9001.2138   <br/> |
-|适用于企业版的 Microsoft 365 应用 (半年企业频道)   <br/> |8431.2159  <br/> |
+|Microsoft 365 企业应用版 (当前频道)   <br/> |9001.2138   <br/> |
+|Microsoft 365 企业应用版 (半年企业频道)   <br/> |8431.2159  <br/> |
 |Office 2016 for Windows  <br/> |16.0.4672.1000  <br/> |
 |Office 2013 for Windows  <br/> |15.0.5023.1000  <br/> |
 |Office 2016 for Mac  <br/> |16.11.18020200  <br/> |
-|Office 网页版  <br/> |无  <br/> |
+|Office 网页版  <br/> |不适用  <br/> |
    
- **对于 Outlook**： 
+ **对于 Outlook：** 
   
 |**平台** <br/> |**内部版本号** <br/> |
 |:-----|:-----|
-|适用于 Windows (MSI) 的 Outlook 2016  <br/> |生成不 TBD  <br/> |
+|Outlook 2016 for Windows (MSI)   <br/> |生成无 TBD  <br/> |
 |Outlook 2016 for Windows (C2R)   <br/> |16.0.9323.1000  <br/> |
 |Office 2016 for Mac  <br/> |16.0.9318.1000  <br/> |
-|适用于 iOS 的 Outlook mobile  <br/> |2.75.0  <br/> |
-|Outlook mobile for Android  <br/> |2.2.145  <br/> |
-|Outlook.com  <br/> |无  <br/> |
+|Outlook mobile for iOS  <br/> |2.75.0  <br/> |
+|适用于 Android 的 Outlook 移动版  <br/> |2.2.145  <br/> |
+|Outlook.com  <br/> |不适用  <br/> |
 
  **Office 2013 要求**
   
-Word、Excel 和 PowerPoint 2013 for Windows 将支持相同的未成年人检查（如果 Active Directory 身份验证库 (ADAL) 已启用）。 有两种合规性选项，如下所述。
+如果启用了 Active Directory 身份验证库 (ADAL，Word、Excel 和 PowerPoint 2013 for Windows) 相同的次要检查。 有两种合规性选项，如下文说明。
   
-- **启用 ADAL**。 本文介绍如何为 Office 2013 启用 ADAL：使用适用 [于 office 客户端的 Microsoft 365 新式验证](https://docs.microsoft.com/microsoft-365/enterprise/modern-auth-for-office-2013-and-2016)。<br/>您还需要将注册表项设置为启用 ADAL，如在 [Windows 设备上为 Office 2013 启用新式验证](../security-and-compliance/enable-modern-authentication.md)中所述。<br/>此外，还需要为 Office 2013 安装以下四月份更新：
+- **启用 ADAL**。 本文介绍了如何为 Office 2013 启用 ADAL：将 [Microsoft 365 新式身份验证与 Office 客户端一同使用](../../enterprise/modern-auth-for-office-2013-and-2016.md)。<br/>还需要设置注册表项以启用 ADAL，如在 Windows 设备上启用[Office 2013 新式验证中介绍。](../security-and-compliance/enable-modern-authentication.md)<br/>此外，还需要为 Office 2013 安装以下 4 月更新：
     
-  - [Office 2013 安全更新说明：4月10日，2018](https://support.microsoft.com/help/4018330/description-of-the-security-update-for-office-2013-april-10-2018)
+  - [Office 2013 安全更新说明：2018 年 4 月 10 日](https://support.microsoft.com/help/4018330/description-of-the-security-update-for-office-2013-april-10-2018)
     
-  - [2018年4月3日，Office 2013 (KB4018333) 的更新 ](https://support.microsoft.com/help/4018333/april-3-2018-update-for-office-2013-kb4018333)
+  - [2018 年 4 月 3 日，Office 2013 更新 (KB4018333) ](https://support.microsoft.com/help/4018333/april-3-2018-update-for-office-2013-kb4018333)
     
-- **不启用 ADAL**。 如果无法在 Office 2013 中启用 ADAL，我们建议使用组策略关闭 Office 客户端的存储。 有关如何关闭 "Office 相关应用程序" 设置的信息位于 [此处](https://technet.microsoft.com/library/cc178992.aspx)。
+- **不要启用 ADAL**。 如果无法在 Office 2013 中启用 ADAL，则建议使用组策略关闭 Office 客户端的应用商店。 有关如何关闭 Office 应用设置的信息，请参阅 [此处](/previous-versions/office/office-2013-resource-kit/cc178992(v=office.15))。
 
 ## <a name="related-articles"></a>相关文章
 
-[在管理中心部署加载项](https://docs.microsoft.com/microsoft-365/admin/manage/manage-deployment-of-add-ins)
+[在管理中心部署加载项](./manage-deployment-of-add-ins.md)
 
-[在管理中心管理加载项](https://docs.microsoft.com/microsoft-365/admin/manage/manage-addins-in-the-admin-center)
-    
+[在管理中心管理加载项](./manage-addins-in-the-admin-center.md)

@@ -24,12 +24,12 @@ search.appverid:
 ms.assetid: 854b6b2b-0255-4089-8019-b765cff70377
 ROBOTS: NOINDEX
 description: 了解有关域及其关联的 DNS 记录，帮助你管理域。
-ms.openlocfilehash: 093641a5c80c70264c1d64ee27cb7621e5f7b2cb
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: f8d8171e306a0206facec1621bf2b1a9f8085757
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49926410"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50915658"
 ---
 # <a name="dns-basics"></a>DNS 基础
 
@@ -69,7 +69,7 @@ ms.locfileid: "49926410"
     
 为什么使用第三级域名？ 可能希望针对市场营销或博客使用不同的域名。 例如 blog.contoso.com。 通常添加二级域（如 contoso.com）以与 Microsoft 一起使用，但也可以根据需要使用第三级域。
   
-在 [Microsoft 365 和 Office 365 平台服务说明](https://go.microsoft.com/fwlink/?LinkId=402693)中了解有关对于每种类型的服务你可以使用域执行的操作的更多信息。
+在 [Microsoft 365 和 Office 365 平台服务说明](/office365/servicedescriptions/office-365-platform-service-description/domains)中了解有关对于每种类型的服务你可以使用域执行的操作的更多信息。
   
 ## <a name="understand-dns-record-types"></a>了解 DNS 记录类型
 
@@ -150,14 +150,14 @@ DNS 记录就是域信息的数据库。 记录及其数值保存在区域文件
 ## <a name="why-add-a-domain-in-microsoft-365"></a>为什么要在 Microsoft 365 中添加域？
 
 
-添加自定义域（如 fourthcoffee.com）至 Microsoft 365，让你能够使用更短、更熟悉的电子邮件和 userID 及服务。 注册 Microsoft 365 帐户时，将会[提供一个域供使用](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq)，但它包含 "onmicrosoft.com"。 如果计划将 Microsoft 365 用于电子邮件，许多人更愿意添加组织或商业域。 
+添加自定义域（如 fourthcoffee.com）至 Microsoft 365，让你能够使用更短、更熟悉的电子邮件和 userID 及服务。 注册 Microsoft 365 帐户时，将会[提供一个域供使用](../setup/domains-faq.yml)，但它包含 "onmicrosoft.com"。 如果计划将 Microsoft 365 用于电子邮件，许多人更愿意添加组织或商业域。 
   
 > [!NOTE]
 > 如果只希望下载和使用 Microsoft 应用（如 Outlook 或 Word），则不需要添加域：[在 PC 或 Mac 上安装 Office](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658) 即可。 
   
 您可以在 Microsoft 365 中为您的电子邮件、公共网站和即时消息地址使用您的域名。
   
-- **电子邮件：** 域名可以让你自定义电子邮件，因此可以使用比附带账户的 [初始 onmicrosoft.com 电子邮件](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq)更短、更易记的地址。 因此替代 joe@contoso.onmicrosoft.com，电子邮件地址（也是用于登录到 Microsoft 365 的工作帐户）可能是 joe@contoso.com。 
+- **电子邮件：** 域名可以让你自定义电子邮件，因此可以使用比附带账户的 [初始 onmicrosoft.com 电子邮件](../setup/domains-faq.yml)更短、更易记的地址。 因此替代 joe@contoso.onmicrosoft.com，电子邮件地址（也是用于登录到 Microsoft 365 的工作帐户）可能是 joe@contoso.com。 
     
 - **网站：** 如果你有包含 SharePoint Online 公共网站的 Microsoft 365 订阅（不能再购买），你的公共网站附带有如下初始地址：contoso-public.sharepoint.com。 如果你为你的企业设置网站，则可以使用自定义域名将网站地址重命名为类似于 www.contoso.com 的地址。 
     
@@ -169,14 +169,14 @@ DNS 记录就是域信息的数据库。 记录及其数值保存在区域文件
 ## <a name="why-add-a-domain-in-microsoft-365"></a>为什么要在 Microsoft 365 中添加域？
 
 
-添加自定义域（如 fourthcoffee.com）至 Microsoft 365，让你能够使用更短、更熟悉的电子邮件和 userID 及服务。 注册 Microsoft 365 帐户时，将会[提供一个域供使用](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq)，但它包含 "onmicrosoft.com"。 如果计划将 Microsoft 365 用于电子邮件，许多人更愿意添加组织或商业域。 
+添加自定义域（如 fourthcoffee.com）至 Microsoft 365，让你能够使用更短、更熟悉的电子邮件和 userID 及服务。 注册 Microsoft 365 帐户时，将会[提供一个域供使用](../setup/domains-faq.yml)，但它包含 "onmicrosoft.com"。 如果计划将 Microsoft 365 用于电子邮件，许多人更愿意添加组织或商业域。 
   
 > [!NOTE]
 > 如果只希望下载和使用 Microsoft 365 应用（如 Outlook 或 Word），则不需要添加域：[在 PC 或 Mac 上安装 Office](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658) 即可。 
   
 您可以在 Microsoft 365 中为您的电子邮件、公共网站和即时消息地址使用您的域名。
   
-- **电子邮件：** 域名可以让你自定义电子邮件，因此可以使用比附带账户的 [初始 onmicrosoft.com 电子邮件](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq)更短、更易记的地址。 因此替代 joe@contoso.onmicrosoft.com，电子邮件地址（也是用于登录到 Microsoft 365 的工作帐户）可能是 joe@contoso.com。 
+- **电子邮件：** 域名可以让你自定义电子邮件，因此可以使用比附带账户的 [初始 onmicrosoft.com 电子邮件](../setup/domains-faq.yml)更短、更易记的地址。 因此替代 joe@contoso.onmicrosoft.com，电子邮件地址（也是用于登录到 Microsoft 365 的工作帐户）可能是 joe@contoso.com。 
     
 - **网站：** 如果你有包含 SharePoint Online 公共网站的订阅（不能再购买），你的公共网站附带有如下初始地址：contoso-public.sharepoint.com。 如果你为你的企业设置网站，则可以使用自定义域名将网站地址重命名为类似于 www.contoso.com 的地址。 
     
@@ -190,7 +190,7 @@ DNS 记录就是域信息的数据库。 记录及其数值保存在区域文件
   
 可[查找值列表](information-for-dns-records.md)来设置域。 它们包含在 Microsoft 365 管理中心中。 
   
-或者，如果您正在筹划部署，您可能希望查看 Microsoft 365 所需的所有 DNS 记录的列表、其函数和示例值。 查看 “[Microsoft 365 的外部域名系统记录](https://docs.microsoft.com/microsoft-365/enterprise/external-domain-name-system-records)”。
+或者，如果您正在筹划部署，您可能希望查看 Microsoft 365 所需的所有 DNS 记录的列表、其函数和示例值。 查看 “[Microsoft 365 的外部域名系统记录](../../enterprise/external-domain-name-system-records.md)”。
   
 ## <a name="how-can-i-learn-more"></a>如何了解更多信息？
 

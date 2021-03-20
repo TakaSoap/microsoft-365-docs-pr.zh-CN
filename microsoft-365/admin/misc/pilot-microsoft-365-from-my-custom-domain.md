@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 了解如何仅使用两个测试帐户将电子邮件功能试点从我的自定义域到 Microsoft 365 邮箱的电子邮件功能。
-ms.openlocfilehash: 6cc5b1163f666af4bd13047ab3b1fda7fd747b5f
-ms.sourcegitcommit: 849b365bd3eaa9f3c3a9ef9f5973ef81af9156fa
+ms.openlocfilehash: 019f1786756a036132f95fd5e8ef8a1d42cd515b
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49688213"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50914710"
 ---
 # <a name="pilot-microsoft-365-from-my-custom-domain"></a>从我的自定义域试点 Microsoft 365
 
@@ -32,7 +32,7 @@ ms.locfileid: "49688213"
 
 - 必须在 DNS 托管提供商处管理 Microsoft 365 DNS记录，而不是让 Microsoft 365 为你管理这些记录。
 
-    要了解更多信息，请参阅[添加 DNS 记录以连接你的域](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider)。
+    要了解更多信息，请参阅[添加 DNS 记录以连接你的域](../get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md)。
 
 - 没有其他电子邮件服务器上的用户的忙/闲信息。
 
@@ -115,22 +115,22 @@ Microsoft 365 使用 Exchange Online Protection (EOP) 进行垃圾邮件防护�
 
 请务必在 Microsoft 365 或 Office365 中完成以下操作：
 
-1. 如需设置连接器，则必须先获得分配的权限，然后才能开始设置。 若要查看您需要获得哪些权限，请参阅 [Feature permissions in EOP](https://docs.microsoft.com/microsoft-365/security/office-365-security/feature-permissions-in-eop) 主题中的“Microsoft 365 和 Office 365 连接器”条目。
+1. 如需设置连接器，则必须先获得分配的权限，然后才能开始设置。 若要查看您需要获得哪些权限，请参阅 [Feature permissions in EOP](../../security/office-365-security/feature-permissions-in-eop.md) 主题中的“Microsoft 365 和 Office 365 连接器”条目。
 
 2. 如果你希望 EOP 或 Exchange Online 将电子邮件从你的电子邮件服务器中继到互联网，则：
 
-   - 使用在 Microsoft 365 或 Office 365 中用与接受的域相匹配的主题名称配置的证书。 我们建议证书的公用名或者使用者备用名称与您组织的主 SMTP 域相匹配。 有关详细信息，请参阅[本地电子邮件环境](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-to-route-mail#prerequisites-for-your-on-premises-email-environment)的必备组件。
+   - 使用在 Microsoft 365 或 Office 365 中用与接受的域相匹配的主题名称配置的证书。 我们建议证书的公用名或者使用者备用名称与您组织的主 SMTP 域相匹配。 有关详细信息，请参阅[本地电子邮件环境](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-to-route-mail#prerequisites-for-your-on-premises-email-environment)的必备组件。
 
    - 或者 -
 
    - 确保所有组织发件人域和子域配置为 Microsoft 365 或 Office 365 中的接受域。
 
-   有关定义接受域的详细信息，请参阅[在 Exchange Online 中管理接受的域](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) 和 [在 Exchange Online 中为子域启用邮件流](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/enable-mail-flow-for-subdomains)。
+   有关定义接受域的详细信息，请参阅[在 Exchange Online 中管理接受的域](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) 和 [在 Exchange Online 中为子域启用邮件流](/exchange/mail-flow-best-practices/manage-accepted-domains/enable-mail-flow-for-subdomains)。
 
-3. 确定是否希望使用邮件流规则（也称为传输规则）或域名将邮件从 Microsoft 365 或 Office 365 传递到你的电子邮件服务器。 大多数企业都会选择针对所有接受的域传递邮件。 有关详细信息，请参阅[方案： Exchange Online 中的条件邮件路由](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/conditional-mail-routing)。
+3. 确定是否希望使用邮件流规则（也称为传输规则）或域名将邮件从 Microsoft 365 或 Office 365 传递到你的电子邮件服务器。 大多数企业都会选择针对所有接受的域传递邮件。 有关详细信息，请参阅[方案： Exchange Online 中的条件邮件路由](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/conditional-mail-routing)。
 
 > [!NOTE]
-> 可按照 [Exchange Online 中邮件流规则操作](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions)中所述设置邮件流规则。 例如，如果当前你的邮件通过通讯组列表定向到多个站点，那么你不妨结合使用邮件流规则和连接器。
+> 可按照 [Exchange Online 中邮件流规则操作](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions)中所述设置邮件流规则。 例如，如果当前你的邮件通过通讯组列表定向到多个站点，那么你不妨结合使用邮件流规则和连接器。
 
 ### <a name="2-set-up-a-connector-from-microsoft-365-or-office-365-to-your-email-server"></a>2. 设置从 Microsoft 365 或 Office 365 指向你的电子邮件服务器的连接器
 
@@ -140,13 +140,13 @@ Microsoft 365 使用 Exchange Online Protection (EOP) 进行垃圾邮件防护�
 
 若要启动向导，请单击加号“+”**+**。 在第一个屏幕上，选择 **从** Office 365 和 **至** 组织邮件服务器。
 
-单击“下一步”，然后按照向导中的说明执行操作。 如需了解详细信息，请单击“帮助”或“了解详情”链接。 此向导会指导您逐步完成设置。 结束时，请务必验证您的连接器。 如果您无法验证此连接器，请双击所显示的消息了解详细信息，并参阅[验证服务器](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/validate-connectors)了解如何解决问题。
+单击“下一步”，然后按照向导中的说明执行操作。 如需了解详细信息，请单击“帮助”或“了解详情”链接。 此向导会指导您逐步完成设置。 结束时，请务必验证您的连接器。 如果您无法验证此连接器，请双击所显示的消息了解详细信息，并参阅[验证服务器](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/validate-connectors)了解如何解决问题。
 
 
 
 ### <a name="step-7-update-dns-records-at-your-dns-hosting-provider"></a>步骤 7：更新 DNS 托管提供商处的 DNS 记录
 
-登录到 DNS 托管提供商的网站，然后按照[添加 DNS 记录以连接你的域](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider)上的说明进行操作。
+登录到 DNS 托管提供商的网站，然后按照[添加 DNS 记录以连接你的域](../get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md)上的说明进行操作。
 
 **注意以下两项例外：**
 
@@ -190,4 +190,3 @@ Microsoft 365 使用 Exchange Online Protection (EOP) 进行垃圾邮件防护�
 因为你仅移动两个测试用户，并且用户 A 和用户 B 都在使用Outlook，因此可以通过在新的 Outlook 配置文件中打开旧的 .PST 文件并复制邮件、日历项、联系人等来移动电子邮件。 有关更多信息，请参阅[从 Outlook .pst 文件导入电子邮件、联系人和日历](https://support.microsoft.com/office/import-email-contacts-and-calendar-from-an-outlook-pst-file-431a8e9a-f99f-4d5f-ae48-ded54b3440ac)。
 
 将项目导入到 Microsoft 365 邮箱中的适当位置后，可以从任何位置的任何设备访问这些项目。
-

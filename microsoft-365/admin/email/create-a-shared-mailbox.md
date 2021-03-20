@@ -23,17 +23,17 @@ search.appverid:
 - MOE150
 ms.assetid: 871a246d-3acd-4bba-948e-5de8be0544c9
 description: 创建共享邮箱，让企业中的多名人员分担查看和答复发送到同一地址的电子邮件的责任。
-ms.openlocfilehash: d71e33aa0a04bd52f707038ac31e98bef68f27b0
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 004473b329b14be9287f249b1d640c3b0803412a
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50287229"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50915874"
 ---
 # <a name="create-a-shared-mailbox"></a>创建共享邮箱 
 
 > [!NOTE]
-> 如果你的组织使用的是混合 Exchange 环境，则你应使用本地 Exchange 管理中心 (EAC) 创建和管理共享邮箱。 请参阅[在 Exchange 管理中心创建共享邮箱](https://docs.microsoft.com/Exchange/collaboration/shared-mailboxes/create-shared-mailboxes?view=exchserver-2019&preserve-view=true.)<br><br>
+> 如果你的组织使用的是混合 Exchange 环境，则你应使用本地 Exchange 管理中心 (EAC) 创建和管理共享邮箱。 请参阅[在 Exchange 管理中心创建共享邮箱](/Exchange/collaboration/shared-mailboxes/create-shared-mailboxes?preserve-view=true.&view=exchserver-2019)<br><br>
 > 如果不确定是应为 Outlook 创建共享邮箱还是 Microsoft 365 组，可参阅[比较组](../create-groups/compare-groups.md)获取一些指导。 请注意，暂无法将共享邮箱迁移到 Microsoft 365 组中。 如果这不是你想要的结果，请通过[在此处投票](https://go.microsoft.com/fwlink/?linkid=871518)告诉我们。
 
 创建共享邮箱很容易，通过共享邮箱，多位人员可以从一个公用电子邮件地址（如 info@contoso.com）监控和发送电子邮件。当群组中的某个人员答复发送到共享邮箱的邮件时，系统显示电子邮件来自共享邮箱，而不是单个用户。
@@ -153,13 +153,13 @@ ms.locfileid: "50287229"
 4. 在“**登录状态**”浮出控件中，验证确定已选择“阻止用户登录”，选择“**保存**”，然后选择“**关闭**”。
 ::: moniker-end
 
-有关如何使用 Azure AD PowerShell 阻止登录帐户（包括同时登录多个帐户）的说明，请参阅 [使用 Office 365 PowerShell 阻止用户帐户](https://docs.microsoft.com/microsoft-365/enterprise/block-user-accounts-with-microsoft-365-powershell)。
+有关如何使用 Azure AD PowerShell 阻止登录帐户（包括同时登录多个帐户）的说明，请参阅 [使用 Office 365 PowerShell 阻止用户帐户](../../enterprise/block-user-accounts-with-microsoft-365-powershell.md)。
 
 ## <a name="add-the-shared-mailbox-to-outlook"></a>向 Outlook 添加共享邮箱
 
 如果企业启用了自动映射（默认情况下，大部分用户都会启用此功能），共享邮箱将在用户关闭并重启 Outlook 后自动出现在其 Outlook 应用中。 
 
-在用户邮箱（而非共享邮箱）上设置自动映射。   这意味着如果尝试使用安全组来管理有权访问共享邮箱的人员，自动映射将无法正常工作。 因此，如果想要自动映射，必须显式分配权限。 自动映射默认启用。 要了解如何将其关闭，请参阅 [删除共享邮箱的自动映射](https://docs.microsoft.com/office365/troubleshoot/administration/remove-automapping-for-shared-mailbox)。
+在用户邮箱（而非共享邮箱）上设置自动映射。   这意味着如果尝试使用安全组来管理有权访问共享邮箱的人员，自动映射将无法正常工作。 因此，如果想要自动映射，必须显式分配权限。 自动映射默认启用。 要了解如何将其关闭，请参阅 [删除共享邮箱的自动映射](/office365/troubleshoot/administration/remove-automapping-for-shared-mailbox)。
 
 要详细了解 Outlook 中的共享邮箱，请参阅：
 
@@ -209,5 +209,3 @@ ms.locfileid: "50287229"
 [从共享邮箱删除许可证](remove-license-from-shared-mailbox.md)
 
 [解决共享邮箱问题](resolve-issues-with-shared-mailboxes.md)
-
-

@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: a8ab5061-3346-4da0-bb7c-5260822b53ae
 description: 了解更多关于由世纪互联运营的，旨在满足中国对安全、可靠和可扩展的云服务的需求的 Office 365 的信息。
 monikerRange: o365-21vianet
-ms.openlocfilehash: 5906bf961e246f1d707b030ffb4c788da353200c
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
-ms.translationtype: HT
+ms.openlocfilehash: 92b69cc77f5c48af63651f2fd37761981ca45ad5
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48644647"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50914338"
 ---
 # <a name="office-365-operated-by-21vianet"></a>由世纪互联运营的 Office 365
 
@@ -46,7 +46,7 @@ Microsoft 本身并不运营此服务。 世纪互联负责运营、提供和管
   
  **关于由世纪互联运营的 Office 365服务**
   
-以下部分着重介绍在每项服务中会出现的一些差异。 最终我们的目标是实现与全球服务的对等。 鉴于中国服务的独特性（由合作伙伴在中国境内的数据中心运营），有些功能尚未启用。 随着时间的推移，客户将能使用功能越来越完整的服务。 有关世纪互联运营的每个Office 365计划所提供的服务的更多详情，请参阅 [Office 365 服务说明](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-operated-by-21vianet)。
+以下部分着重介绍在每项服务中会出现的一些差异。 最终我们的目标是实现与全球服务的对等。 鉴于中国服务的独特性（由合作伙伴在中国境内的数据中心运营），有些功能尚未启用。 随着时间的推移，客户将能使用功能越来越完整的服务。 有关世纪互联运营的每个Office 365计划所提供的服务的更多详情，请参阅 [Office 365 服务说明](/office365/servicedescriptions/office-365-platform-service-description/office-365-operated-by-21vianet)。
   
     
 如果想要了解如何开始使用常规 Office 365服务，请参阅[开始使用](../admin-overview/get-started-with-office-365.md)。
@@ -55,7 +55,7 @@ Microsoft 本身并不运营此服务。 世纪互联负责运营、提供和管
 
 |||
 |:-----|:-----|
-|自定义域  <br/> |管理员可以创建和/或使用通过中国特定的域提供商注册的自定义域。 如果没有自定义域名，则可以从域名注册机构处[如何购买域名](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/buy-a-domain-name)。 如果已经拥有一个域名，[查找域注册机构或 DNS 托管提供商](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/find-your-domain-registrar)。  <br/> 此外，如果使用Office 365 SharePoint Online服务创建公共网站，中国 Internet 合规政策要求获得 Internet 内容提供商（ICP）编号。  **注意：** 自定义域名中的不允许的词不能进行自动验证。           |
+|自定义域  <br/> |管理员可以创建和/或使用通过中国特定的域提供商注册的自定义域。 如果没有自定义域名，则可以从域名注册机构处[如何购买域名](../get-help-with-domains/buy-a-domain-name.md)。 如果已经拥有一个域名，[查找域注册机构或 DNS 托管提供商](../get-help-with-domains/find-your-domain-registrar.md)。  <br/> 此外，如果使用Office 365 SharePoint Online服务创建公共网站，中国 Internet 合规政策要求获得 Internet 内容提供商（ICP）编号。  **注意：** 自定义域名中的不允许的词不能进行自动验证。           |
 |订阅、帐单和技术支持  <br/> |由世纪互联提供。 有关如何联系支持人员的信息，请参阅[联系 Office 365 商业版支持人员](../contact-support-for-business-products.md)。  <br/> |
 |自助式密码重置  <br/> |仅供管理员使用。 有关详细信息，请参阅[在由世纪互联运营的 Office 365 中更改或重置密码](https://support.microsoft.com/office/d8eb5b62-9d0e-4267-a9bf-2aa491ee6d0b)。  <br/> |
 |安全性、隐私、合规性和关于支持级别的详细信息  <br/> |由世纪互联提供。  <br/> |
@@ -82,10 +82,10 @@ Microsoft 本身并不运营此服务。 世纪互联负责运营、提供和管
 |公共网站 ICP 注册  <br/> |中国 Internet 合规政策要求公众号必须获得 Internet 内容提供商（ICP）编号。  |
 |公共网站功能  <br/> |只有在 2015 年 3 月 9 日之前购买Office 365的用户才可以使用公共网站。 但是，必应地图、外部共享和注释在公共网站中不可用，因为这些功能可能会将数据发送到您所在的国家/地区之外。  <br/> |
 |新闻源和 Yammer（企业社交网络）  <br/> |新闻源（社交中心，在这里可以看到所关注的人员、文档、网站和标签的更新）是可用的。 Yammer 不可用。  <br/> |
-|自动托管的应用  <br/> |可以部署使用 SharePoint 和 SQL Azure 的提供商托管的应用程序。 有关详细信息，请参阅 [为 SharePoint 创建基本的提供商托管应用程序](https://msdn.microsoft.com/library/office/apps/fp142381.aspx)。 即将支持开发者部署一个使用自动托管网站的应用程序。  <br/> |
+|自动托管的应用  <br/> |可以部署使用 SharePoint 和 SQL Azure 的提供商托管的应用程序。 有关详细信息，请参阅 [为 SharePoint 创建基本的提供商托管应用程序](/sharepoint/dev/sp-add-ins/get-started-creating-provider-hosted-sharepoint-add-ins)。 即将支持开发者部署一个使用自动托管网站的应用程序。  <br/> |
 |InfoPath  <br/> |不可用。  <br/> |
 |SharePoint 应用商店  <br/> |Office和SharePoint应用商店是由Microsoft公司或其附属机构通过Microsoft全球任何设施运营的可选服务。 商店中的应用程序由不同的应用程序发行商提供，并受应用程序发行商的条款和条件以及隐私声明的约束。 使用任何这些应用都可能会导致数据被传送到该应用发布者及其关联公司或服务提供商维护其设施的任何国家/地区，或者在其中存储或处理数据。 在下载和使用此类应用之前，请仔细阅读应用发布者的条款和条件以及隐私声明。  <br/> |
-|Office 365 开发者网站：使用卖方控制面板\*发布到SharePoint 商店   <br/> |了解世纪互联运营的 Office 365 用户 [ 向 SharePoint 提交应用程序以便分发的要求](https://go.microsoft.com/fwlink/?LinkId=518102)。  <br/> |
+|Office 365 开发者网站：使用卖方控制面板\*发布到SharePoint 商店   <br/> |了解世纪互联运营的 Office 365 用户 [ 向 SharePoint 提交应用程序以便分发的要求](/office/dev/store/submit-sharepoint-add-ins-for-office-365-operated-by-21vianet-in-china)。  <br/> |
    
 \*由 Microsoft 直接提供且受 Microsoft 的服务条款和隐私声明约束的可选服务。
   
@@ -141,12 +141,12 @@ Microsoft 本身并不运营此服务。 世纪互联负责运营、提供和管
   
  此外，在世纪互联托管的Office 365租户的混合部署中，一些Exchange消息策略和合规性功能也并不完全支持。 这些功能包括：
 
-- [Messaging Records Management (MRM)](https://go.microsoft.com/fwlink/?LinkId=506754) 
-- [就地电子数据展示](https://go.microsoft.com/fwlink/?LinkID=506755) 
-- [就地保留](https://go.microsoft.com/fwlink/?LinkId=506758) 
-- [就地存档](https://go.microsoft.com/fwlink/?LinkId=506759)
-- [邮箱审核](https://go.microsoft.com/fwlink/?LinkId=506760)
-- 使用 [Outlook Web App (OWA)](https://go.microsoft.com/fwlink/?LinkId=506762) 访问在线档案 
+- [Messaging Records Management (MRM)](/exchange/security-and-compliance/messaging-records-management/messaging-records-management) 
+- [就地电子数据展示](/exchange/security-and-compliance/in-place-ediscovery/in-place-ediscovery) 
+- [就地保留](/exchange/security-and-compliance/in-place-and-litigation-holds) 
+- [就地存档](/exchange/in-place-archiving-in-exchange-2013-exchange-2013-help)
+- [邮箱审核](/exchange/security-and-compliance/exchange-auditing-reports/exchange-auditing-reports)
+- 使用 [Outlook Web App (OWA)](/exchange/clients-and-mobile-in-exchange-online/outlook-on-the-web/outlook-on-the-web) 访问在线档案 
 
 在不同的 Exchange 部署场景中，对功能的支持也有所不同。请参考下表： 
 
@@ -160,9 +160,9 @@ Microsoft 本身并不运营此服务。 世纪互联负责运营、提供和管
 <sup>1</sup> 需要在本地和 Exchange Online 邮箱中分别进行搜索。  <br/> <sup>2</sup> MRM 迁移存档策略可以用于 Exchange 2013 CU5 或更高版本服务器中的邮箱。 
 
 要了解更多关于在由世纪互联运营的 Office 365 上配置混合部署的信息，请参考以下文章： 
-- [混合部署先决条件](https://go.microsoft.com/fwlink/?LinkId=506764)
-- [混合部署的证书要求](https://go.microsoft.com/fwlink/?LinkId=506766) 
-- [使用混合配置向导创建混合部署](https://go.microsoft.com/fwlink/?LinkId=506767)
+- [混合部署先决条件](/exchange/hybrid-deployment-prerequisites)
+- [混合部署的证书要求](/exchange/certificate-requirements) 
+- [使用混合配置向导创建混合部署](/exchange/hybrid-deployment/deploy-hybrid)
 
 > [!IMPORTANT]
 >  [Exchange Server 部署助理](https://go.microsoft.com/fwlink/?LinkId=506768)是一款基于 Web 且免费的工具，可帮助在内部部署组织和 Office 365 之间配置混合部署，或完全迁移到 Office 365。 该工具会询问您一些简单的问题，然后根据您的回答，创建一个自定义检查表，其中包含配置混合部署的说明。 强烈建议使用部署助理来配置混合部署。 > 对于不希望升级或添加 Exchange 2013 CU5 服务器的组织，Exchange 2013 SP1 组织可以在其内部组织和 Exchange Online 组织之间配置共享日历免费/繁忙共享。 如果要配置此混合部署功能，请参阅[使用世纪互联运营的 Office 365 配置 Exchange 混合部署功能](https://support.microsoft.com/office/26e7cc26-c980-4cc5-a082-c333de544b6d)。 
@@ -170,7 +170,7 @@ Microsoft 本身并不运营此服务。 世纪互联负责运营、提供和管
 |||  
 |---|---|
 |共存和闲/忙共享|不支持在两个或多个内部Exchange组织之间共享日历空闲/繁忙信息，也不支持在两个世纪互联 Office 365租户之间共享。 即将推出此功能！ | 
-|日历共享|Exchange 2013 SP1 及更高版本支持与其他内部 Exchange 或 Exchange Online 组织手动配置互联网日历共享。 有关手动配置此功能的详细信息，请参见[启用 Internet 日历发布](https://go.microsoft.com/fwlink/?LinkId=506769)。 | 
+|日历共享|Exchange 2013 SP1 及更高版本支持与其他内部 Exchange 或 Exchange Online 组织手动配置互联网日历共享。 有关手动配置此功能的详细信息，请参见[启用 Internet 日历发布](/exchange/enable-internet-calendar-publishing-exchange-2013-help)。 | 
 将 Apple 移动设备上的 Exchange 联系人数据共享到 Apple iCloud。 |此设置/功能默认为启用。 管理员应关闭此功能，以帮助防止用户在组织之外共享Exchange数据。 |
 |Exchange 托管电子邮件加密  |不可用。  |
 |Office 365 邮件加密  |即将推出。  |
@@ -211,7 +211,7 @@ Microsoft 本身并不运营此服务。 世纪互联负责运营、提供和管
 
 |||
 |:-----|:-----|
-|为 Skype for Business 提供支持的域提供商  <br/> |需要向支持SRV记录的中文域名提供商注册域名。 有关如何注册域名的更多信息，请参阅 [查找域名注册商或DNS托管提供商](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/find-your-domain-registrar)。  <br/> |
+|为 Skype for Business 提供支持的域提供商  <br/> |需要向支持SRV记录的中文域名提供商注册域名。 有关如何注册域名的更多信息，请参阅 [查找域名注册商或DNS托管提供商](../get-help-with-domains/find-your-domain-registrar.md)。  <br/> |
 |拨入式会议（为无法使用计算机的用户添加电话拨入到会议的功能）。  <br/> |可能会在Skype for Business和Skype for Business管理中心中看到有关拨号会议和提供商的选项，但这些功能尚不可用。 即将推出它们。  <br/> |
 |Skype for Business 桌面版帮助  <br/> |可以在[此处](https://support.microsoft.com/office/6ae5853c-f0fd-4710-aecf-f46def8377ad)找到Skype for Business桌面的帮助。 但是，除非使用Office 即点即用，否则无法从产品中获得桌面帮助。  <br/> |
 |Lync 2010  <br/> |不可用。  <br/> |
@@ -233,5 +233,3 @@ GDPR 授予个人（或数据主体）与处理个人数据相关的某些权限
 - 世纪互联操作的 Microsoft 服务的系统生成的日志可以由租户管理员使用数据日志导出。
     
 有关详细信息和说明，请参阅 [针对GDRP的数据主体请求（DSR）](https://www.trustcenter.cn/privacy/gdpr-office365.mdl)。
-  
-

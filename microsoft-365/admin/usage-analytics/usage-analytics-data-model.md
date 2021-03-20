@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 08c5307c-4a6b-4761-8410-a6c96725760f
 description: '了解使用情况分析如何连接到 API 并提供各种 Microsoft 365 服务的每月使用情况趋势。  '
-ms.openlocfilehash: 7d1e797fc388934f66ddc45d2e7f51566e89ad23
-ms.sourcegitcommit: bf9e0091e5bdc78d9b23be64583eb816bb059eb2
+ms.openlocfilehash: 1975fc0bdba279b281fb45c8aec22255579ef414
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50758936"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50913846"
 ---
 # <a name="microsoft-365-usage-analytics-data-model"></a>Microsoft 365 使用情况分析数据模型
 
@@ -35,7 +35,7 @@ ms.locfileid: "50758936"
 Microsoft 365 使用情况分析连接到公开多维数据模型的 API。 Microsoft 365 使用情况分析用于生成其数据的 API 来自各种通常可用的 Graph API。 Microsoft 365 使用情况分析 API 本身的功能并不普遍可用。
   
 > [!NOTE]
-> 有关详细信息，请参阅在 Microsoft Graph 中处理 [Microsoft 365 使用情况报告](https://go.microsoft.com/fwlink/p/?linkid=864336)。 
+> 有关详细信息，请参阅在 Microsoft Graph 中处理 [Microsoft 365 使用情况报告](/graph/api/resources/report)。 
   
 此 API 提供有关各种 Microsoft 365 服务的每月使用情况趋势的信息。 有关 API 返回的确切数据，请参考以下部分中的表。
   
@@ -295,5 +295,3 @@ Microsoft 365 使用情况分析连接到公开多维数据模型的 API。 Micr
 |WinRtCount  <br/> |在时间范围结束时，Windows Mobile 设备上每个服务计划的激活次数。  <br/> |
 |Timeframe  <br/> |此列包含日期值。用作日历表的多对一关系。  <br/> |
 |Content Date  <br/> |如果时间范围显示当前月，则此值表示数据可供使用的当前月的最后一天。  <br/> 如果时间范围显示上个月，则此值表示上个月的最后一天。  <br/> |
-   
-

@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 97af2932-0868-4ccf-8f6b-21a94946c58a
 description: 了解如何管理消息中心邮件以帮助管理更改。
-ms.openlocfilehash: 3f0a3c5fe20e76d0fff63cefe7e6eaa687696426
-ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
-ms.translationtype: HT
+ms.openlocfilehash: ee3df1b2f4855421dab4d6715add6503027b24bc
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "50405947"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50915274"
 ---
 # <a name="manage-messages-in-message-center"></a>在消息中心管理邮件
 
@@ -171,6 +171,6 @@ ms.locfileid: "50405947"
 
 ## <a name="track-your-message-center-tasks-in-planner"></a>在 Planner 中跟踪你的消息中心任务
 
-有关 Microsoft 365 服务更改的许多可操作信息都会传送到 Microsoft 365 消息中心。 可能很难跟踪哪些更改需要完成任务、何时由谁完成以及跟踪每个任务需由谁完成。 你可能还想记下某些内容并标记它以便以后查看。 将邮件从 Microsoft 365 管理中心同步到 Microsoft Planner 时，可以执行所有这些操作以及执行更多操作。 有关详细信息，请参阅在 Planner [中跟踪消息中心](https://docs.microsoft.com/office365/planner/track-message-center-tasks-planner)。
+有关 Microsoft 365 服务更改的许多可操作信息都会传送到 Microsoft 365 消息中心。 可能很难跟踪哪些更改需要完成任务、何时由谁完成以及跟踪每个任务需由谁完成。 你可能还想记下某些内容并标记它以便以后查看。 将邮件从 Microsoft 365 管理中心同步到 Microsoft Planner 时，可以执行所有这些操作以及执行更多操作。 有关详细信息，请参阅在 Planner [中跟踪消息中心](/office365/planner/track-message-center-tasks-planner)。
 
-有关消息中心的概述，请参阅 [365 消息中心中的](message-center.md)。 或者，若要了解如何设置语言首选项以启用消息中心帖子机器翻译，请参阅 [中心帖子的语言](language-translation-for-message-center-posts.md)。 若要规划一种实时服务运行状况信息和消息中心通信的替代方式，请参阅 [Microsoft 365 服务通信 API](https://go.microsoft.com/fwlink/p/?linkid=848507)。
+有关消息中心的概述，请参阅 [365 消息中心中的](message-center.md)。 或者，若要了解如何设置语言首选项以启用消息中心帖子机器翻译，请参阅 [中心帖子的语言](language-translation-for-message-center-posts.md)。 若要规划一种实时服务运行状况信息和消息中心通信的替代方式，请参阅 [Microsoft 365 服务通信 API](/previous-versions/office/developer/o365-enterprise-developers/jj984343(v=office.15))。

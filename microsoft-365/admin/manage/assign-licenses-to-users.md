@@ -23,19 +23,19 @@ search.appverid:
 - MET150
 description: 了解如何向用户分配许可证。
 ms.date: 08/14/2020
-ms.openlocfilehash: b5179006da896dbadab10d43a43b094acedcb806
-ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
+ms.openlocfilehash: 9f044f29cabf4976d5fbf17b22777da62e4414c5
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "50113981"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50915490"
 ---
 # <a name="assign-licenses-to-users"></a>向用户分配许可证
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 管理中心正在发生改变。 如果你的体验与此处提供的详细信息不匹配，请参阅[有关新版 Microsoft 365 管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true)。
+> 管理中心正在发生改变。 如果你的体验与此处提供的详细信息不匹配，请参阅[有关新版 Microsoft 365 管理中心](../microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet)。
 
 ::: moniker-end
 
@@ -50,8 +50,8 @@ ms.locfileid: "50113981"
 ## <a name="before-you-begin"></a>准备工作
 
 - 你必须是全局、许可证或用户管理员才能分配许可证。 有关详细信息，请参阅[关于 Microsoft 365 管理员角色](../add-users/about-admin-roles.md)。
-- 你可以[使用 Office 365 PowerShell 向用户帐户分配许可证](https://go.microsoft.com/fwlink/p/?linkid=850410)。
-- 若要使用基于组的许可，请参阅[在 Azure Active Directory 中按组成员身份向用户分配许可证](https://docs.microsoft.com/azure/active-directory/users-groups-roles/licensing-groups-assign)
+- 你可以[使用 Office 365 PowerShell 向用户帐户分配许可证](../../enterprise/assign-licenses-to-user-accounts-with-microsoft-365-powershell.md)。
+- 若要使用基于组的许可，请参阅[在 Azure Active Directory 中按组成员身份向用户分配许可证](/azure/active-directory/users-groups-roles/licensing-groups-assign)
 - 某些服务（如 Sway）会自动分配给用户，无需单独分配。
 
 ::: moniker range="o365-worldwide"
@@ -163,7 +163,7 @@ ms.locfileid: "50113981"
 
 ## <a name="assign-a-license-to-a-guest-user"></a>向来宾用户分配许可证
 
-可在 Azure Active directory 管理中心中邀请来宾用户与你的组织进行协作。 若要了解有关来宾用户的信息，请参阅 [Azure Active Directory B2B 中的来宾用户访问是什么？](https://docs.microsoft.com/azure/active-directory/external-identities/what-is-b2b)。 如果你没有任何来宾用户，请参阅[快速入门：在 Azure 门户中将来宾用户添加到你的目录](https://docs.microsoft.com/azure/active-directory/external-identities/b2b-quickstart-add-guest-users-portal)。
+可在 Azure Active directory 管理中心中邀请来宾用户与你的组织进行协作。 若要了解有关来宾用户的信息，请参阅 [Azure Active Directory B2B 中的来宾用户访问是什么？](/azure/active-directory/external-identities/what-is-b2b)。 如果你没有任何来宾用户，请参阅[快速入门：在 Azure 门户中将来宾用户添加到你的目录](/azure/active-directory/external-identities/b2b-quickstart-add-guest-users-portal)。
 
 > [!IMPORTANT]
 > 必须是全局管理员才能执行这些步骤。

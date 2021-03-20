@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft 生产力分数概述。
-ms.openlocfilehash: 72f9bcfb273912629744ec25ad9c0be720e76081
-ms.sourcegitcommit: 8f1721de52dbe3a12c11a0fa5ed0ef5972ca8196
+ms.openlocfilehash: d818bd766f76f3df6c67a740d6ad1994a2be66de
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/17/2021
-ms.locfileid: "50838421"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50914578"
 ---
 # <a name="microsoft-productivity-score"></a>Microsoft 生产力分数 
 
@@ -44,7 +44,7 @@ ms.locfileid: "50838421"
 
 - **技术体验：** 你组织的工作效率取决于可靠、性能良好的技术以及对 Microsoft 365 的高效使用。 [终结点分析](https://aka.ms/endpointanalytics) 可帮助你了解硬件和软件的性能和运行状况问题如何影响你的组织。 Microsoft 365 应用程序健康状况可帮助你了解组织中的设备是否在推荐渠道上运行 Microsoft 365 应用程序。
 
-有关概述和先决条件的详细信息，请参阅[什么是终结点分析](https://docs.microsoft.com/mem/analytics/overview)。 若要了解有关 Microsoft 365 网络连接见解的详细信息，请参阅 [网络连接概述](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-networking-overview)。
+有关概述和先决条件的详细信息，请参阅[什么是终结点分析](/mem/analytics/overview)。 若要了解有关 Microsoft 365 网络连接见解的详细信息，请参阅 [网络连接概述](../../enterprise/microsoft-365-networking-overview.md)。
   
 
 ## <a name="how-the-score-is-calculated"></a>计算分数的方式
@@ -74,7 +74,8 @@ ms.locfileid: "50838421"
 
 ## <a name="prerequisites"></a>先决条件 
 
-要获取人员体验数据，需要 Microsoft 365 商业版或 Office 365 企业版订阅。 要获取租户的终结点分析数据，需要将 Microsoft Intune 添加到你的订阅中。 Intune 通过管理设备和应用来帮助保护你组织的数据。 拥有 Intune 后，可在 Intune 体验内启用终结点分析。 了解有关 [Microsoft Intune](https://docs.microsoft.com/mem/intune/)的详细信息。 
+要获取人员体验数据，需要 Microsoft 365 商业版或 Office 365 企业版订阅。 要获取租户的终结点分析数据，需要将 Microsoft Intune 添加到你的订阅中。 Intune 通过管理设备和应用来帮助保护你的组织的数据。 拥有 Intune 后，可在 Intune 体验内启用终结点分析。 了解有关 [Microsoft Intune](/mem/intune/)的详细信息。 
+
 > [!NOTE]
 > 获取生产力分数功能无需工作区分析许可证。
 
@@ -129,7 +130,7 @@ Microsoft 生产力分数基于角色的访问控制能够帮助组织使用 Mic
 - [移动性-人员体验](mobility.md)
 - [团队合作-人员体验](teamwork.md)
 - [Microsoft 365 应用版运行状况–技术体验](apps-health.md)
-- [终结点分析](https://docs.microsoft.com/mem/analytics/productivity-score)
+- [终结点分析](/mem/analytics/productivity-score)
 
 ## <a name="business-continuity-special-report"></a>业务连续性特殊报告
 
@@ -143,12 +144,12 @@ Microsoft 生产力分数基于角色的访问控制能够帮助组织使用 Mic
 
 - 远程会议是否能支持有效的决策制定。
 
-[了解有关业务连续性报告的详细信息](https://aka.ms/bcrps)
+[了解有关业务连续性报告的详细信息](/Workplace-Analytics/tutorials/bcrps)
 
-[了解有关 Microsoft Graph 的详细信息](https://docs.microsoft.com/graph/)
+[了解有关 Microsoft Graph 的详细信息](/graph/)
 
 > [!NOTE]
-> 用户也可以选择从 [MyAnalytics 仪表板](https://docs.microsoft.com/workplace-analytics/myanalytics/use/dashboard-2)获取生产力见解。
+> 用户也可以选择从 [MyAnalytics 仪表板](/workplace-analytics/myanalytics/use/dashboard-2)获取生产力见解。
 
 
 ## <a name="we-want-to-hear-from-you"></a>欢迎提出宝贵意见

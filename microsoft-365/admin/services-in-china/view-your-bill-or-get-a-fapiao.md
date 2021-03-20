@@ -21,17 +21,17 @@ search.appverid:
 ms.assetid: c29d38b5-53a6-4bd9-b7aa-ce12c902da83
 description: 查看您的帐单或发票，了解您的由世纪互联运营的 Office 365。
 monikerRange: o365-21vianet
-ms.openlocfilehash: 402634941180fbe7abf26637b8fa7096d8c8eb7c
-ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
-ms.translationtype: HT
+ms.openlocfilehash: aa6a83f7054488b4e8944010a24341daeb83c690
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "50114245"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50914290"
 ---
 # <a name="view-your-bill-or-get-a-fapiao-in-office-365-operated-by-21vianet"></a>在由世纪互联运营的 Office 365 中查看帐单或获取发票
 
 > [!NOTE]
-> 管理中心正在发生改变。 如果你的体验与此处提供的详细信息不匹配，请参阅[有关新版 Microsoft 365 管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true)。
+> 管理中心正在发生改变。 如果你的体验与此处提供的详细信息不匹配，请参阅[有关新版 Microsoft 365 管理中心](../microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet)。
 
 你可以查看你的帐单或发票以关于你的由世纪互联运营的 Office 365 订阅费用的信息。 您也可以获取发票（最终的购买证明）。 您可以在付款大约三天后向 [发票管理系统](https://go.microsoft.com/fwlink/p/?linkid=837465) 提交发票请求。 
   

@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: 培训用户，并确保快速处理问题。
-ms.openlocfilehash: a987a08b2ebd27f7a9cc299e5c8fbae0376437a3
-ms.sourcegitcommit: 554755bc9ce40228ce6e34bde6fc6e226869b6a1
+ms.openlocfilehash: 662b0d6d7a40a69b3e5c10f3aeea63c2e5237d6d
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48681380"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50916162"
 ---
 # <a name="step-6-train-remote-workers-and-address-usage-feedback"></a>步骤 6：培训远程工作者和处理使用情况反馈
 
@@ -32,7 +32,7 @@ ms.locfileid: "48681380"
 - 对设备的使用，以及如何使用终结点管理策略阻止访问不合规或未托管的设备。
 - 对允许的应用的使用，以及如何使用终结点管理应用程序策略阻止使用某些应用。
 - Windows 10 企业版安全功能。
-- 如何使用 [Teams](https://docs.microsoft.com/microsoftteams/training-microsoft-teams-landing-page) 进行聊天、基于视频的会议、文档共享和线程对话。
+- 如何使用 [Teams](/microsoftteams/training-microsoft-teams-landing-page) 进行聊天、基于视频的会议、文档共享和线程对话。
 - 如何将 [Outlook](https://support.office.com/article/outlook-training-8a5b816d-9052-4190-a5eb-494512343cca) 用于电子邮件和计划。
 - 如何使用 [SharePoint](https://support.office.com/article/sharepoint-online-video-training-cb8ef501-84db-4427-ac77-ec2009fb8e23) 团队或通信网站和 [OneDrive](https://support.office.com/article/onedrive-video-training-1f608184-b7e6-43ca-8753-2ff679203132) 文件夹浏览和协作处理用户库中的文件以及组中包含的文件。
 
@@ -50,4 +50,3 @@ ms.locfileid: "48681380"
 ## <a name="results-of-step-6"></a>步骤 6 的结果
 
 已对远程工作者进行培训，他们可通过一个响应迅速的开放式论坛提供反馈并发布远程访问和生产力应用方面的问题。
-

@@ -23,21 +23,21 @@ search.appverid:
 ms.assetid: 043807b2-21db-4d5c-b430-c8a6dee0e6ba
 ROBOTS: NOINDEX, NOFOLLOW
 description: 了解 Microsoft 365 中的多重身份验证。
-ms.openlocfilehash: 5e72e3990db533b49041dc4167283b9487f23426
-ms.sourcegitcommit: b88ffaf3409e02a9847f030f8468f96d36efa398
+ms.openlocfilehash: e1635e48e3948425a6d91f80fd07d50c474b73d7
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "50105181"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50914506"
 ---
 # <a name="multi-factor-authentication-for-microsoft-365"></a>适用于 Microsoft 365 的 Multi-Factor Authentication
 
-密码是验证计算机或联机服务登录的最常见方法，但它们也是最易受攻击的方法。 用户可以选择简单密码，并针对不同计算机和服务的多个登录使用相同的密码。
+密码是验证计算机或联机服务的登录的最常见方法，但它们也是最易受攻击的。 用户可以选择简单密码，并使用相同的密码进行不同计算机和服务的多个登录。
 
-若要为登录提供额外的安全级别，必须使用多重身份验证 (MFA) ，它同时使用密码（应该很强）和基于：
+若要为登录提供一个额外的安全级别，必须使用多重身份验证 (MFA) ，它同时使用应强的密码和基于：
 
-- 你拥有无法轻松复制的项，例如智能手机。
-- 你唯一且具有的一些功能，例如指纹、面部或其他生物识别属性。
+- 你拥有且不易复制的项，例如智能手机。
+- 你唯一且明显拥有的属性，例如指纹、面部或其他生物识别属性。
 
 在验证用户密码之前，不会采用其他验证方法。 使用 MFA，即使强用户密码受到威胁，攻击者也无需智能手机或指纹来完成登录。
 
@@ -49,7 +49,7 @@ ms.locfileid: "50105181"
 - 电话呼叫。
 - Microsoft Authenticator 智能手机应用。
 
-在这两种情况下，MFA 登录都使用"你拥有且不可轻易复制的一些内容"方法进行其他验证。 可以通过多种方式为 Microsoft 365 和 Office 365 启用 MFA：
+在这两种情况下，MFA 登录都使用"你拥有且不可轻易复制的项"方法进行附加验证。 有多种方法可以启用 Microsoft 365 和 Office 365 的 MFA：
 
 - 使用安全默认值
 - 使用条件访问策略
@@ -60,28 +60,28 @@ ms.locfileid: "50105181"
 |计划|建议|客户类型|
 |---|---|---|
 |所有 Microsoft 365 计划|使用安全默认值，这要求所有用户帐户使用 MFA。 <p> 还可以对单个用户帐户配置每用户 MFA，但不建议这样做。|小型企业|
-|Microsoft 365 商业高级版 <p> Microsoft 365 E3 <p> Azure Active Directory (Azure AD) 高级 P1 许可证|使用条件访问策略根据组成员身份、应用或其他条件要求用户帐户使用 MFA。|小型企业到企业|
+|Microsoft 365 商业高级版 <p> Microsoft 365 E3 <p> Azure Active Directory (Azure AD) Premium P1 许可证|使用条件访问策略根据组成员身份、应用或其他条件要求用户帐户进行 MFA。|小型企业到企业|
 |Microsoft 365 E5 <p> Azure AD Premium P2 许可证|使用 Azure AD Identity Protection 根据登录风险条件要求 MFA。|企业版|
 ||||
 
 ### <a name="security-defaults"></a>安全性默认值
 
-安全性默认值是在 2019 年 10 月 21 日之后创建的 Microsoft 365 和 Office 365 付费或试用版订阅的一项新功能。 这些订阅启用安全默认值，这将：
+安全性默认值是在 2019 年 10 月 21 日之后创建的 Microsoft 365 和 Office 365 付费或试用版订阅的一项新功能。 这些订阅启用安全默认值，即：
 
 - 要求所有用户将 MFA 与 Microsoft Authenticator 应用一同使用。
 - 阻止旧式身份验证。
 
 用户有 14 天的时间从其智能手机中通过 Microsoft Authenticator 应用登录 MFA，自启用安全性默认值后首次登录起计。 14 天后，除非 MFA 注册完成，否则用户将无法登录。
 
-安全性默认值可确保所有组织均对默认启用的用户登录具有基本的安全级别。 可以使用条件访问策略禁用安全默认值，以支持 MFA。
+安全性默认值可确保所有组织均对默认启用的用户登录具有基本的安全级别。 可以禁用安全默认值，以使用条件访问策略支持 MFA。
 
-你可以从 Azure 门户的 Azure  AD 的属性窗格中启用或禁用安全默认值。
+可以在 Azure 门户的 Azure  AD 的"属性"窗格中启用或禁用安全默认值。
 
 ![目录属性页的图片。](../../media/multi-factor-authentication-microsoft-365/security-defaults-mfa.png)
 
 可以将安全默认值用于任何 Microsoft 365 计划。
 
-有关详细信息，请参阅此[安全性默认值概述](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)。
+有关详细信息，请参阅此[安全性默认值概述](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)。
 
 ### <a name="conditional-access-policies"></a>条件访问策略
 
@@ -91,58 +91,58 @@ ms.locfileid: "50105181"
 
 通过此策略，当为用户分配或取消分配了上述管理员角色时，你可以根据其组成员身份要求进行 MFA，而不是针对单个用户帐户进行 MFA 配置。
 
-还可以将条件访问策略用于更高级的功能，例如要求特定应用使用 MFA，或者从兼容设备（如运行 Windows 10 的笔记本电脑）进行登录。
+还可以将条件访问策略用于更高级的功能，例如要求特定应用使用 MFA，或者从兼容设备（如运行 Windows 10 的笔记本电脑）完成登录。
 
-从 Azure 门户中的Azure AD 安全窗格中配置条件访问策略。
+在 Azure 门户的Azure AD 安全窗格中配置条件访问策略。
 
 ![条件访问的菜单选项的图片](../../media/multi-factor-authentication-microsoft-365/conditional-access-mfa.png)
 
-条件访问策略可用于：
+可以将条件访问策略与：
 
 - Microsoft 365 商业高级版
 - Microsoft 365 E3 和 E5
 - Azure AD Premium P1 和 Azure AD Premium P2 许可证
 
-对于使用 Microsoft 365 商业高级版的小型企业，可通过以下步骤轻松使用条件访问策略：
+对于使用 Microsoft 365 商业高级版的小型企业，可以通过以下步骤轻松使用条件访问策略：
 
 1. 创建一个组以包含需要 MFA 的用户帐户。
-2. 为全局 **管理员策略启用"要求 MFA"。**
+2. 启用" **要求全局管理员使用 MFA"** 策略。
 3. 使用这些设置创建基于组的条件访问策略：
     - 分配>用户和组：上面的步骤 1 中的组名称。
-    - 分配>应用或操作：所有云应用。
-    - 访问控制>授予>授予>需要多重身份验证的权限。
+    - 分配>云应用或操作：所有云应用。
+    - 访问控制>授予>授予>要求多重身份验证的权限。
 4. 启用策略。
-5. 将用户帐户添加到上面的步骤 1 中创建的组并进行测试。
+5. 将用户帐户添加到上述步骤 1 中创建的组并进行测试。
 6. 若要要求为其他用户帐户使用 MFA，请将其添加到步骤 1 中创建的组中。
 
 此条件访问策略允许你按自己的节奏向用户推出 MFA 要求。
 
-企业应该 [使用常见条件访问策略](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-policy-common) 来配置以下策略：
+企业应该 [使用常见条件访问策略](/azure/active-directory/conditional-access/concept-conditional-access-policy-common) 来配置以下策略：
 
-- [要求对管理员执行 MFA](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-admin-mfa)
-- [要求对所有用户执行 MFA](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa)
-- [阻止传统身份验证](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-block-legacy)
+- [要求对管理员执行 MFA](/azure/active-directory/conditional-access/howto-conditional-access-policy-admin-mfa)
+- [要求对所有用户执行 MFA](/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa)
+- [阻止旧身份验证](/azure/active-directory/conditional-access/howto-conditional-access-policy-block-legacy)
 
-有关详细信息，请参阅此[条件访问概述](https://docs.microsoft.com/azure/active-directory/conditional-access/overview)。
+有关详细信息，请参阅此[条件访问概述](/azure/active-directory/conditional-access/overview)。
 
 ### <a name="azure-ad-identity-protection"></a>Azure AD Identity Protection
 
-使用 Azure AD Identity Protection，可以创建其他条件访问策略，以在登录风险为中等或高时要求[MFA。](https://docs.microsoft.com/microsoft-365/enterprise/identity-access-policies#require-mfa-based-on-sign-in-risk)
+借助 Azure AD Identity Protection，你可以创建其他条件访问策略，要求在登录风险中等或较高时[进行 MFA。](../../security/office-365-security/identity-access-policies.md#require-mfa-based-on-sign-in-risk)
 
 可以将 Azure AD Identity Protection 和基于风险的条件访问策略与：
 
 - Microsoft 365 E5
 - Azure AD Premium P2 许可证
 
-有关详细信息，请参阅此 [Azure AD 标识保护概述](https://docs.microsoft.com/azure/active-directory/identity-protection/overview-identity-protection)。
+有关详细信息，请参阅此 [Azure AD 标识保护概述](/azure/active-directory/identity-protection/overview-identity-protection)。
 
-### <a name="legacy-per-user-mfa-not-recommended"></a>不建议使用旧版每用户 MFA () 
+### <a name="legacy-per-user-mfa-not-recommended"></a>不建议使用旧版每 (MFA) 
 
-你应该使用安全默认值或条件访问策略来要求用户帐户登录使用 MFA。但是，如果其中任何一个无法使用，Microsoft 强烈建议为具有管理员角色的用户帐户（尤其是具有管理员角色的用户帐户全局管理员角色大小订阅使用 MFA。
+你应该使用安全默认值或条件访问策略来要求用户帐户登录使用 MFA。但是，如果无法使用其中任何一个，Microsoft 强烈建议为具有管理员角色的用户帐户（尤其是 全局管理员角色）执行 MFA。
 
 从 Microsoft 365 管理中心的 **"** 活动用户"窗格为单个用户帐户启用 MFA。
 
-!["活动用户"页上多重身份验证选项的图片](../../media/multi-factor-authentication-microsoft-365/per-user-mfa.png)
+!["活动用户"页面上多重身份验证选项的图片](../../media/multi-factor-authentication-microsoft-365/per-user-mfa.png)
 
 启用后，用户下次登录时，系统将提示他们注册 MFA，并选择并测试其他验证方法。
 
@@ -152,12 +152,12 @@ ms.locfileid: "50105181"
 
 ||已启用|Disabled|辅助身份验证方法|
 |---|---|---|---|
-|**安全性默认值**|无法使用条件访问策略|可以使用条件访问策略|Microsoft Authenticator 应用|
+|**安全性默认值**|不使用条件访问策略|可以使用条件访问策略|Microsoft Authenticator 应用|
 |**条件访问策略**|如果启用了任何安全默认值，则不能启用安全默认值|如果已禁用所有条件访问策略，则可以启用安全性默认值|由用户在 MFA 注册期间指定|
-|**不建议使用旧版每用户 MFA (方法)**|替代每次登录时要求 MFA 的安全默认值和条件访问策略|由安全默认值和条件访问策略替代|由用户在 MFA 注册期间指定|
+|**不建议使用旧版每 (MFA)**|替代每次登录时要求 MFA 的安全默认值和条件访问策略|由安全默认值和条件访问策略替代|由用户在 MFA 注册期间指定|
 ||||
 
-如果启用安全默认值，则系统会提示所有新用户进行 MFA 注册，并提示他们在下次登录时使用 Microsoft Authenticator 应用。
+如果启用安全默认值，将提示所有新用户进行 MFA 注册，并提示他们在下次登录时使用 Microsoft Authenticator 应用。
 
 ## <a name="ways-to-manage-mfa-settings"></a>管理 MFA 设置的方法
 
@@ -176,6 +176,6 @@ ms.locfileid: "50105181"
 
 ## <a name="related-topics"></a>相关主题
 
-[视频：启用多重身份验证](https://docs.microsoft.com/microsoft-365/business-video/turn-on-mfa)
+[i视频：开启多重身份验证](../../business-video/turn-on-mfa.md)
 
-[视频：为手机启用多重身份验证](https://docs.microsoft.com/microsoft-365/business-video/set-up-mfa)
+[i视频：为手机开启多重身份验证](../../business-video/set-up-mfa.md)
