@@ -15,12 +15,12 @@ ms.custom:
 description: 本文将了解如何将域和设置从一个 Microsoft Exchange Online Protection (EOP) 组织 (租户) 另一个。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 42a212c1826f63f9e7ed8395fe1d6b6564625b7b
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 4a9209f71905a858bb631a3c2901b7bfa62551d7
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50287769"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50909054"
 ---
 # <a name="move-domains-and-settings-from-one-eop-organization-to-another"></a>将域和设置从一个 EOP 组织移动到另一个 EOP 组织
 
@@ -59,9 +59,9 @@ ms.locfileid: "50287769"
 - 邮件流规则 (也称为传输规则) 
 
   > [!NOTE]
-  > 当前仅 EOP Premium 订阅计划支持对导出和导入邮件流规则集合的 Cmdlet 支持。
+  > 目前，仅 EOP Premium 订阅计划支持对邮件流规则集合的导出和导入的 Cmdlet 支持。
 
-收集所有设置的最简单方法是使用 PowerShell。 若要连接到独立 EOP PowerShell，请参阅[连接到 Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell)。
+收集所有设置的最简单方法是使用 PowerShell。 若要连接到独立 EOP PowerShell，请参阅[连接到 Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell)。
 
 接下来，您就可以收集所有设置，并将其导出到 .xml 文件，此文件将导入目标租户。通常，您可以通过管道将每个设置的 **Get** cmdlet 的输出传递到 **Export-Clixml** cmdlet，以将设置保存到 .xml 文件中，如以下代码示例中所示。
 
@@ -179,13 +179,13 @@ Foreach ($domain in $Domains) {
 }
 ```
 
-现在，你可以查看并收集目标组织的 Microsoft 365 管理中心的信息，以便你可以快速验证域，此时：
+现在，你可以从目标组织的 Microsoft 365 管理中心查看和收集信息，以便可以在此时快速验证域：
 
-1. 登录 Microsoft 365 管理中心 <https://portal.office.com> 。
+1. 在 登录 Microsoft 365 管理中心 <https://portal.office.com> 。
 
 2. Click **Domains**.
 
-   如果看不到域，请单击"自定义 **导航**"，选择 **"** 设置"，然后单击"**保存"。**
+   如果看不到域，请单击"自定义导航"，**选择"****设置**"，然后单击"保存 **"。**
 
 3. Click each **Start setup** link, and then proceed through the setup wizard.
 
@@ -193,7 +193,7 @@ Foreach ($domain in $Domains) {
 
 5. 记录您将用来验证域的 MX 记录或 TXT 记录，并完成安装向导。
 
-6. 将验证 TXT 记录添加到你的 DNS 记录。 这将使你在从目标组织中删除域后，可以更快速地验证源组织中的域。 有关配置 DNS 的信息，请参阅在任何 DNS 托管提供商上为 [Microsoft 365](../../admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md)创建 DNS 记录。
+6. 将验证 TXT 记录添加到你的 DNS 记录。 这将使你在从目标组织中删除域后，可以更快速地验证源组织中的域。 有关配置 DNS 的信息，请参阅在任何 DNS 托管提供商中为 [Microsoft 365](../../admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md)创建 DNS 记录。
 
 ## <a name="step-3-force-senders-to-queue-mail"></a>步骤 3：强制发件人对邮件进行排队
 
@@ -203,7 +203,7 @@ Foreach ($domain in $Domains) {
 
 另一个选择是在每个域中放置一个无效的 MX 记录，这些域中都保留了域的 DNS 记录（也称为 DNS 托管服务）。这将使发件人对邮件进行排队，并进行重试（通常重试时间为 48 小时，但具体可能因提供程序而异）。您可以使用 invalid.outlook.com 作为无效的 MX 目标。将 MX 记录的生存时间 (TTL) 值降低为五分钟，这将有助于更快速地将更改传播到 DNS 提供程序。
 
-有关配置 DNS 的信息，请参阅在任何 DNS 托管提供商上为 [Microsoft 365](../../admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md)创建 DNS 记录。
+有关配置 DNS 的信息，请参阅在任何 DNS 托管提供商中为 [Microsoft 365](../../admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md)创建 DNS 记录。
 
 > [!IMPORTANT]
 > 不同的提供程序对邮件进行排队的时间段均不同。您将需要快速设置新租户，并还原 DNS 设置，以避免如果排队时间到期向发件人发送未送达报告 (NDR)。
@@ -251,7 +251,7 @@ Remove-MsolDomain -DomainName $Domain.Name -Force
 
 ## <a name="step-5-verify-domains-for-the-target-organization"></a>步骤 5：验证目标组织的域
 
-1. 登录管理中心， at <https://portal.office.com> .
+1. 在 登录管理中心 <https://portal.office.com> 。
 
 2. Click **Domains**.
 
@@ -259,7 +259,7 @@ Remove-MsolDomain -DomainName $Domain.Name -Force
 
 ## <a name="step-6-add-mail-users-and-groups-to-the-target-organization"></a>步骤 6：将邮件用户和组添加到目标组织
 
-EOP 的最佳实践是使用 Azure Active Directory 将本地 Active Directory 同步到目标租户。 若要详细了解如何这样做，请参阅"在 EOP 中管理邮件用户"中的"使用目录同步管理邮件[用户"。](manage-mail-users-in-eop.md) 您还可以使用以下脚本从源租户重新创建用户和组。 注意：不能移动用户密码。 新用户密码将创建并保存在名为 UsersAndGroups.ps1 的文件中。
+EOP 的最佳实践是使用 Azure Active Directory 将本地 Active Directory 同步到目标租户。 若要详细了解如何操作，请参阅在 EOP 中管理邮件用户中的"使用目录同步[管理邮件用户"。](manage-mail-users-in-eop.md) 您还可以使用以下脚本从源租户重新创建用户和组。 注意：不能移动用户密码。 新用户密码将创建并保存在名为 UsersAndGroups.ps1 的文件中。
 
 若要使用脚本，可以将以下文本复制并粘贴到记事本等文本编辑器，将文件另存为 C:\EOP\Export\Add_Users_and_Groups.ps1，然后运行以下命令：
 
@@ -933,4 +933,4 @@ if($HostedContentFilterPolicyCount -gt 0){
 
 ## <a name="step-8-revert-your-dns-settings-to-stop-mail-queuing"></a>步骤 8：还原 DNS 设置以停止邮件排队
 
-如果选择将 MX 记录设置为无效地址，导致发件人在转换期间对邮件进行排队，则需要将它们重新设置为管理中心中指定的 [正确值](https://admin.microsoft.com)。 有关配置 DNS 的信息，请参阅在任何 DNS 托管提供商上为 [Microsoft 365](../../admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md)创建 DNS 记录。
+如果选择将 MX 记录设置为无效地址，导致发件人在转换期间对邮件进行排队，则需要将它们设置回管理中心中指定的 [正确值](https://admin.microsoft.com)。 有关配置 DNS 的信息，请参阅在任何 DNS 托管提供商中为 [Microsoft 365](../../admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md)创建 DNS 记录。

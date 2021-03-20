@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 0db29490-2612-48bc-9b77-1862e7a41a8c
 description: 了解如何在 Google Domains 验证你的域并为 Microsoft 设置电子邮件、Lync 和其他服务的 DNS 记录。
-ms.openlocfilehash: a20b08d92814865cee5b169cb435b898a6b068ac
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+ms.openlocfilehash: 9a1d0a8513f6071a3c9c686c10f6fd282f1a0e96
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49657859"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50910218"
 ---
 # <a name="create-dns-records-at-google-domains-for-microsoft"></a>在 Google Domains 为 Microsoft 创建 DNS 记录
 
@@ -120,7 +120,7 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
     
     |**名称**|**类型**|**TTL**|**数据**|
     |:-----|:-----|:-----|:-----|
-    |@  <br/> |MX  <br/> |1H  <br/> |0  *\<domain-key\>*  .mail.protection.outlook.com.  <br/> **此值必须以句点 (.) 结尾。** <br/> **0** 是 MX 优先级值。将其添加到 MX 值的开头，使用一个空格将其与其余部分隔开。  <br/> **注意：** 从 Microsoft 帐户获取 \<*domain-key*\>。  [如何查找此项？](../get-help-with-domains/information-for-dns-records.md)          有关优先级的详细信息，请参阅[什么是 MX 优先级？](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/> |
+    |@  <br/> |MX  <br/> |1H  <br/> |0  *\<domain-key\>*  .mail.protection.outlook.com.  <br/> **此值必须以句点 (.) 结尾。** <br/> **0** 是 MX 优先级值。将其添加到 MX 值的开头，使用一个空格将其与其余部分隔开。  <br/> **注意：** 从 Microsoft 帐户获取 \<*domain-key*\>。  [如何查找此项？](../get-help-with-domains/information-for-dns-records.md)          有关优先级的详细信息，请参阅[什么是 MX 优先级？](../setup/domains-faq.yml) <br/> |
    
     ![在“自定义资源记录”部分键入或粘贴值](../../media/b660ca9e-984d-449f-ae59-a65fe4e2c6bd.png)
   
@@ -181,7 +181,7 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
 ## <a name="add-a-txt-record-for-spf-to-help-prevent-email-spam"></a>为 SPF 添加 TXT 记录以帮助防止垃圾邮件
 
 > [!IMPORTANT]
-> 一个域所拥有的 SPF 的 TXT 记录不能超过一个。 如果域具有多个 SPF 记录，你将收到电子邮件错误，其中随附发送和垃圾邮件分类问题。 如果你的域已有 SPF 记录，请不要为 Microsoft 创建新记录。 可以将所需的 Microsoft 值添加到当前记录，这样就拥有包含两组值的单个 SPF 记录。 需要示例吗？ 请查看 [Microsoft 的外部域名系统记录](https://docs.microsoft.com/microsoft-365/enterprise/external-domain-name-system-records#bkmk_spfrecords)。 若要验证 SPF 记录，可使用以下任一 [SPF 验证工具](../setup/domains-faq.yml)。 
+> 一个域所拥有的 SPF 的 TXT 记录不能超过一个。 如果域具有多个 SPF 记录，你将收到电子邮件错误，其中随附发送和垃圾邮件分类问题。 如果你的域已有 SPF 记录，请不要为 Microsoft 创建新记录。 可以将所需的 Microsoft 值添加到当前记录，这样就拥有包含两组值的单个 SPF 记录。 需要示例吗？ 请查看 [Microsoft 的外部域名系统记录](../../enterprise/external-domain-name-system-records.md#bkmk_spfrecords)。 若要验证 SPF 记录，可使用以下任一 [SPF 验证工具](../setup/domains-faq.yml)。 
   
 1. 要开始，请使用[此链接](https://domains.google.com/registrar)转到你在 Google Domains 上的域页面。 系统将会提示您登录。 为此，请执行以下操作：
     
@@ -257,4 +257,3 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
     
     > [!NOTE]
     > Typically it takes about 15 minutes for DNS changes to take effect. 但是，有时可能需要更长时间，您所做的更改才会在 Internet 的 DNS 系统中更新。 如果在添加 DNS 记录后遇到邮件流问题或其他问题，请参阅[查找在添加域或 DNS 记录后遇到的问题并进行修复](../get-help-with-domains/find-and-fix-issues.md)。 
-  

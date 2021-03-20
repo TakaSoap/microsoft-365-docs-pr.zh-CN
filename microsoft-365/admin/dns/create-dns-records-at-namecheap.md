@@ -20,13 +20,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 54ae2002-b38e-43a1-82fa-3e49d78fda56
-description: 了解如何在 Namecheap for Microsoft 中验证域并设置电子邮件、Skype for Business Online 和其他服务的 DNS 记录。
-ms.openlocfilehash: 1e0fa8839e4ceae5074059d6ae05e3c7456611c2
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+description: Learn to verify your domain and set up DNS records for email， Skype for Business Online， and other services at Namecheap for Microsoft.
+ms.openlocfilehash: 3de8c4fb7809423848564590193e00537362c034
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49657835"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50910146"
 ---
 # <a name="create-dns-records-at-namecheap-for-microsoft"></a>在 Namecheap 为 Microsoft 创建 DNS 记录
 
@@ -34,7 +34,7 @@ ms.locfileid: "49657835"
   
 如果 Namecheap 是 DNS 托管提供商，请按照本文中的步骤验证域，并设置电子邮件、Skype for Business Online 等的 DNS 记录。
   
-在 Namecheap 添加这些记录后，域将设置为使用 Microsoft 服务。
+在 Namecheap 添加这些记录后，您的域将设置为使用 Microsoft 服务。
   
 > [!NOTE]
 > DNS 更改通常需要 15 分钟左右才能生效。 但是，有时可能需要更长时间，您所做的更改才会在 Internet 的 DNS 系统中更新。 如果添加 DNS 记录后遇到邮件流问题或其他问题，请参阅 [更改域名或 DNS 记录后出现的问题的疑难解答](../get-help-with-domains/find-and-fix-issues.md)。 
@@ -49,11 +49,11 @@ ms.locfileid: "49657835"
   
 按照下面的步骤操作。
   
-1. To get started， go to your domains page at Namecheap by using [this link.](https://www.namecheap.com/myaccount/login.aspx?ReturnUrl=%2f) 系统将提示你登录并继续。
+1. To get started， go to your domains page at Namecheap by using [this link](https://www.namecheap.com/myaccount/login.aspx?ReturnUrl=%2f). 系统将提示你登录并继续。
     
     ![Namecheap-BP-Configure-1-1](../../media/1827f9fc-4dc9-4f9d-a392-7817c47b00b3.png)
   
-2. 在" **登录** "页上 **的"帐户**"下 **，** 从下拉列表中选择"域列表"。 
+2. On the **Landing** page， under **Account**， choose **Domain List** from the drop-down list. 
     
     ![Namecheap-BP-Configure-1-2](../../media/3f457d64-4589-422c-ae34-fc24b0e819eb.png)
   
@@ -65,14 +65,14 @@ ms.locfileid: "49657835"
     
     ![Namecheap-BP-Configure-1-4](../../media/05a4f0b9-1d27-448e-9954-2b23304c5f65.png)
   
-5. 在 **"主机记录**"部分，选择 **"添加新记录"。**
+5. 在"**主机记录"** 部分，选择"**添加新记录"。**
     
     ![Namecheap-BP-Configure-1-5](../../media/8849abfe-deb6-4f6a-b56d-e69be9a28b0f.png)
   
-6. 在"**类型**"下拉列表中，选择 **"TXT 记录"。**
+6. 在"**类型"** 下拉列表中，选择 **"TXT 记录"。**
     
     > [!NOTE]
-    > 选择 **"** 添加新记录"时，将自动显示"类型 **"下拉列表**。 
+    > 选择 **"添加新** 记录"时，将自动显示"类型 **"下拉列表**。 
   
     ![Namecheap-BP-Verify-1-1](../../media/a5b40973-19b5-4c32-8e1b-1521aa971836.png)
   
@@ -119,11 +119,11 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
 
 按照下面的步骤操作。
   
-1. To get started， go to your domains page at Namecheap by using [this link.](https://www.namecheap.com/myaccount/login.aspx?ReturnUrl=%2f) 系统将提示你登录并继续。
+1. To get started， go to your domains page at Namecheap by using [this link](https://www.namecheap.com/myaccount/login.aspx?ReturnUrl=%2f). 系统将提示你登录并继续。
     
     ![Namecheap-BP-Configure-1-1](../../media/1827f9fc-4dc9-4f9d-a392-7817c47b00b3.png)
   
-2. 在" **登录** "页上 **的"帐户**"下 **，** 从下拉列表中选择"域列表"。 
+2. On the **Landing** page， under **Account**， choose **Domain List** from the drop-down list. 
     
     ![Namecheap-BP-Configure-1-2](../../media/3f457d64-4589-422c-ae34-fc24b0e819eb.png)
   
@@ -135,7 +135,7 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
     
     ![Namecheap-BP-Configure-1-4](../../media/05a4f0b9-1d27-448e-9954-2b23304c5f65.png)
   
-5. 在 **"邮件设置**"部分，从"电子邮件转发"下拉列表 **中选择**"自定义 **MX"。** 
+5. 在"**邮件设置"** 部分，从"电子邮件转发"下拉列表 **中选择**"自定义 **MX"。** 
     
     （您可能需要向下滚动。）
     
@@ -147,11 +147,11 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
   
 7. 在新记录的框中，键入或复制并粘贴下表中的值。
     
-    **("优先级**"框是"值"框右侧未 **命名的框**。 从 **下拉列表中选择 TTL** 值。)  
+    **("优先级"** 框是"值"框右边 **的未命名** 框。 从 **下拉列表中选择 TTL** 值。)  
     
     |**类型**|**主机**|**值**|**优先级**|**TTL**|
     |:-----|:-----|:-----|:-----|:-----|
-    |MX 记录  <br/> |@  <br/> |\<*domain-key*\>.mail.protection.outlook.com。  <br/> **此值必须以句点 (.) 结尾。** <br/> **注意：** 从  *\<domain-key\>*  Microsoft 帐户获取你的帐户。  如何查找此内容？[](../get-help-with-domains/information-for-dns-records.md)          |0  <br/> 有关优先级的详细信息，请参阅[什么是 MX 优先级？](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/> |30 分钟  <br/> |
+    |MX 记录  <br/> |@  <br/> |\<*domain-key*\>.mail.protection.outlook.com。  <br/> **此值必须以句点 (.) 结尾。** <br/> **注意：** 从  *\<domain-key\>*  Microsoft 帐户获取你的信息。  如何查找此内容？[](../get-help-with-domains/information-for-dns-records.md)          |0  <br/> 有关优先级的详细信息，请参阅[什么是 MX 优先级？](../setup/domains-faq.yml) <br/> |30 分钟  <br/> |
        
     ![Namecheap-BP-Configure-2-2-2](../../media/f3b76d62-5022-48c1-901b-8615a8571309.png)
   
@@ -161,15 +161,15 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
   
 9. 如果存在任何其他 MX 记录，请使用以下两步过程删除其中每个记录：
     
-    首先 **，选择要删除** (记录) 回收站中的"删除"图标。 
+    首先 **，选择要删除** (的) "删除"图标。 
     
     ![Namecheap-BP-Configure-2-4](../../media/7a7a751f-29c2-495f-8f55-98ca37ce555a.png)
   
-    第二步 **，选择"是** "以确认删除。 
+    第二步 **，选择"** 是"以确认删除。 
     
     ![Namecheap-BP-Configure-2-5](../../media/85ebc0c7-8787-43ee-9e7b-647375b3345c.png)
   
-    删除除之前在此过程中添加的所有 MX 记录之外的所有 MX 记录。
+    删除除之前在此过程中添加的 MX 记录之外的所有 MX 记录。
 
   
 ## <a name="add-the-six-cname-records-that-are-required-for-microsoft"></a>添加 Microsoft 所需的六条 CNAME 记录
@@ -177,11 +177,11 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
 
 按照下面的步骤操作。
   
-1. To get started， go to your domains page at Namecheap by using [this link.](https://www.namecheap.com/myaccount/login.aspx?ReturnUrl=%2f) 系统将提示你登录并继续。
+1. To get started， go to your domains page at Namecheap by using [this link](https://www.namecheap.com/myaccount/login.aspx?ReturnUrl=%2f). 系统将提示你登录并继续。
     
     ![Namecheap-BP-Configure-1-1](../../media/1827f9fc-4dc9-4f9d-a392-7817c47b00b3.png)
   
-2. 在" **登录** "页上 **的"帐户**"下 **，** 从下拉列表中选择"域列表"。 
+2. On the **Landing** page， under **Account**， choose **Domain List** from the drop-down list. 
     
     ![Namecheap-BP-Configure-1-2](../../media/3f457d64-4589-422c-ae34-fc24b0e819eb.png)
   
@@ -193,18 +193,18 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
     
     ![Namecheap-BP-Configure-1-4](../../media/05a4f0b9-1d27-448e-9954-2b23304c5f65.png)
   
-5. 在 **"主机记录**"部分，选择 **"添加新记录"。**
+5. 在"**主机记录"** 部分，选择"**添加新记录"。**
     
     ![Namecheap-BP-Configure-1-5](../../media/8849abfe-deb6-4f6a-b56d-e69be9a28b0f.png)
   
-6. 在"**类型**"下拉列表中，选择 **"CNAME 记录"。**
+6. 在"**类型"** 下拉列表中，选择 **"CNAME 记录"。**
     
     > [!NOTE]
-    > 选择 **"** 添加新记录"时，将自动显示"类型 **"下拉列表**。 
+    > 选择 **"添加新** 记录"时，将自动显示"类型 **"下拉列表**。 
   
     ![Namecheap-BP-Configure-3-1](../../media/0898f3b2-06ab-4364-a86a-a603a25b39f4.png)
   
-7. 在新记录的空框中，选择"记录类型"**的 CNAME，** 然后键入或复制粘贴下表中第一行的值。 
+7. In the empty boxes for the new record， select **CNAME** for the **Record Type**， and then type or copy and paste the values from the first row in the following table.
     
     |**类型**|**主机**|**值**|**TTL**|
     |:-----|:-----|:-----|:-----|
@@ -220,20 +220,20 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
     
     ![Namecheap-BP-Configure-3-3](../../media/91a5cce4-ca41-41ec-b976-aafe681a4d68.png)
   
-9. 使用前四个步骤和表中其他五行的值，添加其他五条 CNAME 记录。
+9. 使用上述四个步骤以及表中其他五行的值，添加其他五条 CNAME 记录。
 
   
 ## <a name="add-a-txt-record-for-spf-to-help-prevent-email-spam"></a>为 SPF 添加 TXT 记录以帮助防止垃圾邮件
 <a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]
-> 一个域所拥有的 SPF 的 TXT 记录不能超过一个。 如果域具有多个 SPF 记录，你将收到电子邮件错误，其中随附发送和垃圾邮件分类问题。 如果你的域已有 SPF 记录，请不要为 Microsoft 创建新记录。 相反，将所需的 Microsoft 值添加到当前记录，以便具有一个  *包含这*  两组值的 SPF 记录。 
+> 一个域所拥有的 SPF 的 TXT 记录不能超过一个。 如果域具有多个 SPF 记录，你将收到电子邮件错误，其中随附发送和垃圾邮件分类问题。 如果你的域已有 SPF 记录，请不要为 Microsoft 创建新记录。 相反，将所需的 Microsoft 值添加到当前记录，以便你有一个  *包含这*  两组值的 SPF 记录。 
 
 按照下面的步骤操作。
   
-1. To get started， go to your domains page at Namecheap by using [this link.](https://www.namecheap.com/myaccount/login.aspx?ReturnUrl=%2f) 系统将提示你登录并继续。
+1. To get started， go to your domains page at Namecheap by using [this link](https://www.namecheap.com/myaccount/login.aspx?ReturnUrl=%2f). 系统将提示你登录并继续。
     
-2. 在" **登录** "页上 **的"帐户**"下 **，** 从下拉列表中选择"域列表"。 
+2. On the **Landing** page， under **Account**， choose **Domain List** from the drop-down list. 
     
     ![Namecheap-BP-Configure-1-2](../../media/3f457d64-4589-422c-ae34-fc24b0e819eb.png)
   
@@ -245,18 +245,18 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
     
     ![Namecheap-BP-Configure-1-4](../../media/05a4f0b9-1d27-448e-9954-2b23304c5f65.png)
   
-5. 在 **"主机记录**"部分，选择 **"添加新记录"。**
+5. 在"**主机记录"** 部分，选择"**添加新记录"。**
     
     ![Namecheap-BP-Configure-1-5](../../media/8849abfe-deb6-4f6a-b56d-e69be9a28b0f.png)
   
-6. 在"**类型**"下拉列表中，选择 **"TXT 记录"。**
+6. 在"**类型"** 下拉列表中，选择 **"TXT 记录"。**
     
     > [!NOTE]
-    > 选择 **"** 添加新记录"时，将自动显示"类型 **"下拉列表**。 
+    > 选择 **"添加新** 记录"时，将自动显示"类型 **"下拉列表**。 
   
     ![Namecheap-BP-Configure-4-1](../../media/c5d1fddb-28b5-48ec-91c9-3e5d3955ac80.png)
   
-7. 在新记录的框中，键入或复制粘贴下表中的下列值。
+7. 在新记录的框中，键入或复制并粘贴下表中的以下值。
     
      (从下拉列表中选择 **TTL** 值。)  
     
@@ -273,11 +273,11 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
 ## <a name="add-the-two-srv-records-that-are-required-for-microsoft"></a>添加 Microsoft 所需的两条 SRV 记录
 <a name="BKMK_add_SRV"> </a>
 
-1. To get started， go to your domains page at Namecheap by using [this link.](https://www.namecheap.com/myaccount/login.aspx?ReturnUrl=%2f) You'll be prompted to sign in.
+1. To get started， go to your domains page at Namecheap by using [this link](https://www.namecheap.com/myaccount/login.aspx?ReturnUrl=%2f). You'll be prompted to sign in.
     
     ![Namecheap-BP-Configure-1-1](../../media/1827f9fc-4dc9-4f9d-a392-7817c47b00b3.png)
   
-2. 在" **登录** "页上 **的"帐户**"下 **，** 从下拉列表中选择"域列表"。 
+2. On the **Landing** page， under **Account**， choose **Domain List** from the drop-down list. 
     
     ![Namecheap-BP-Configure-1-2](../../media/3f457d64-4589-422c-ae34-fc24b0e819eb.png)
   
@@ -289,14 +289,14 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
     
     ![Namecheap-BP-Configure-1-4](../../media/05a4f0b9-1d27-448e-9954-2b23304c5f65.png)
   
-5. 在 **"主机记录**"部分，选择 **"添加新记录"。**
+5. 在"**主机记录"** 部分，选择"**添加新记录"。**
     
     ![Namecheap-BP-Configure-1-5](../../media/8849abfe-deb6-4f6a-b56d-e69be9a28b0f.png)
   
-6. 在"**类型**"下拉列表中，选择 **"SRV 记录"。**
+6. 在"**类型"** 下拉列表中，选择 **"SRV 记录"。**
     
     > [!NOTE]
-    > 选择 **"** 添加新记录"时，将自动显示"类型 **"下拉列表**。 
+    > 选择 **"添加新** 记录"时，将自动显示"类型 **"下拉列表**。 
   
     ![Namecheap-BP-Configure-5-1](../../media/fd55cd7c-2243-4de1-8d39-2c3f7ea3ae51.png)
   
@@ -304,8 +304,8 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
     
     |**服务**|**协议**|**优先级**|**权重**|**端口**|**目标**|**TTL**|
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-    |_sip  <br/> |_tls  <br/> |100  <br/> |1   <br/> |443  <br/> |sipdir.online.lync.com.  <br/> **此值必须以句点 (.) 结尾。** <br/> |30 分钟  <br/> |
-    |_sipfederationtls  <br/> |_tcp  <br/> |100  <br/> |1   <br/> |5061  <br/> |sipfed.online.lync.com。  <br/> **此值必须以句点 (.) 结尾。** <br/> |30 分钟  <br/> |
+    |_sip  <br/> |_tls  <br/> |100  <br/> |1  <br/> |443  <br/> |sipdir.online.lync.com.  <br/> **此值必须以句点 (.) 结尾。** <br/> |30 分钟  <br/> |
+    |_sipfederationtls  <br/> |_tcp  <br/> |100  <br/> |1  <br/> |5061  <br/> |sipfed.online.lync.com。  <br/> **此值必须以句点 (.) 结尾。** <br/> |30 分钟  <br/> |
        
     ![Namecheap-BP-Configure-5-2](../../media/ff9566ea-0096-4b7f-873c-027080a23b56.png)
   
@@ -313,10 +313,9 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
     
     ![Namecheap-BP-Configure-5-3](../../media/48a8dee4-c66d-449d-8759-9e9784c82b13.png)
   
-9. 使用前四个步骤和表中第二行的值，添加另一条 SRV 记录。
+9. 使用前四个步骤以及表中第二行的值，添加其他 SRV 记录。
     
 > [!NOTE]
 > DNS 更改通常需要 15 分钟左右才能生效。 但是，有时可能需要更长时间，您所做的更改才会在 Internet 的 DNS 系统中更新。 如果添加 DNS 记录后遇到邮件流问题或其他问题，请参阅 [更改域名或 DNS 记录后出现的问题的疑难解答](../get-help-with-domains/find-and-fix-issues.md)。 
   
 
-  

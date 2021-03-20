@@ -14,69 +14,69 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Contoso 如何利用标识即服务 (IDaaS)，并为其员工提供基于云的身份验证以及为其合作伙伴和客户提供联合身份验证。
-ms.openlocfilehash: dea0f53ef1c3fdc2ea32256303c6120c614c904d
-ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
+ms.openlocfilehash: accd60f6699e7ebf04963213128d1ca1ffc8f7fe
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "48754629"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50911068"
 ---
 # <a name="identity-for-the-contoso-corporation"></a>Contoso Corporation 的标识
 
-Microsoft 通过 Azure Active Directory (Azure AD) 将标识作为服务 (IDaaS) 通过其云产品提供。 若要采用 Microsoft 365 for enterprise，Contoso IDaaS 解决方案必须使用其内部部署标识提供程序，并将联合身份验证包括在其现有的受信任的第三方标识提供程序中。
+Microsoft 通过 Azure Active Directory (Azure AD) 在其云产品/服务中提供标识即服务 (IDaaS) 。 若要采用 Microsoft 365 企业版，Contoso IDaaS 解决方案必须使用其本地标识提供程序，并包括具有其现有受信任的第三方标识提供程序的联合身份验证。
 
 ## <a name="the-contoso-active-directory-domain-services-forest"></a>Contoso Active Directory 域服务林
 
-Contoso 使用单个 Active Directory 域服务 (AD DS) 林，为 contoso \. com 提供七个子域，每个区域适用于世界的每个区域一个。 总部、区域中心办事处和分支办事处包含用于本地身份验证和授权的域控制器。
+Contoso 将单个 Active Directory 域服务 (AD DS) 林用于具有七个子域的 contoso com，每个子域分别用于世界上的一 \. 个子域。 总部、区域中心办事处和分支办事处包含用于本地身份验证和授权的域控制器。
 
-以下是包含区域中心的全球不同部分的带有地区性域的 Contoso 林。
+下面是 Contoso 林，其中包含包含区域中心的世界不同区域的区域域。
 
 ![全球的 Contoso 林和域](../media/contoso-identity/contoso-identity-fig1.png)
  
-Contoso 决定使用 contoso com 林中的帐户和组 \. 进行身份验证，并授权其 Microsoft 365 工作负载和服务。
+Contoso 决定使用 contoso com 林中的帐户和组来验证和授权 \. 其 Microsoft 365 工作负载和服务。
 
 ## <a name="the-contoso-federated-authentication-infrastructure"></a>Contoso 联合身份验证基础结构
 
 Contoso 允许：
 
-- 客户使用其 Microsoft、Facebook 或 Google 邮件帐户登录到公司的公共网站。
-- 供应商和合作伙伴使用其 LinkedIn、Salesforce 或 Google Mail 帐户登录到公司的合作伙伴 extranet。
+- 客户使用其 Microsoft、Facebook 或 Google Mail 帐户登录到公司的公共网站。
+- 供应商和合作伙伴使用其 LinkedIn、Salesforce 或 Google Mail 帐户登录到公司的合作伙伴 Extranet。
 
-以下是包含公共网站、合作伙伴 extranet 以及一组 Active Directory 联合身份验证服务 (AD FS) 服务器的 Contoso DMZ。 DMZ 连接到包含客户、合作伙伴和 internet 服务的 internet。
+下面是 Contoso DMZ，其中包含公共网站、合作伙伴 Extranet 和一组 Active Directory 联合身份验证服务 (AD FS) 服务器。 DMZ 连接到包含客户、合作伙伴和 Internet 服务的 Internet。
 
-![Contoso 支持客户和合作伙伴的联合身份验证](../media/contoso-identity/contoso-identity-fig2.png)
+![针对客户和合作伙伴的联合身份验证的 Contoso 支持](../media/contoso-identity/contoso-identity-fig2.png)
  
-DMZ 中的 AD FS 服务器通过其标识提供商访问公用网站的身份验证和合作伙伴凭据，从而简化了客户凭据的身份验证，以访问合作伙伴 extranet。
+DMZ 中的 AD FS 服务器便于其标识提供程序验证客户凭据，以便访问公共网站，使用合作伙伴凭据访问合作伙伴 Extranet。
 
-Contoso 决定保留此基础结构并将其专用于客户和合作伙伴身份验证。 Contoso 标识架构师正在研究如何将此基础结构转换为 Azure AD [B2B](https://docs.microsoft.com/azure/active-directory/b2b/hybrid-organizations) 和 [B2C](https://docs.microsoft.com/azure/active-directory-b2c/solution-articles) 解决方案。
+Contoso 决定保留此基础结构，并专用于客户和合作伙伴身份验证。 Contoso 标识架构师正在研究如何将此基础结构转换为 Azure AD [B2B](/azure/active-directory/b2b/hybrid-organizations) 和 [B2C](/azure/active-directory-b2c/solution-articles) 解决方案。
 
 ## <a name="hybrid-identity-with-password-hash-synchronization-for-cloud-based-authentication"></a>通过混合标识和密码哈希同步实现基于云的身份验证
 
-Contoso 想要使用其内部部署 AD DS 林进行身份验证，以进行 Microsoft 365 云资源的身份验证。 它决定使用密码哈希同步 (PHS) 。
+Contoso 想要使用其本地 AD DS 林对 Microsoft 365 云资源进行身份验证。 它决定在 PHS (密码哈希) 。
 
-PHS 将本地 AD DS 林与 Microsoft 365 for enterprise 订阅的 Azure AD 租户同步，复制用户和组帐户以及用户帐户密码的哈希版本。
+PHS 将本地 AD DS 林与 Microsoft 365 企业版订阅的 Azure AD 租户同步，复制用户和组帐户以及哈希版本的用户帐户密码。
 
-为了执行目录同步，Contoso 在巴黎 datacenter 中的服务器上部署了 Azure AD Connect 工具。
+为执行目录同步，Contoso 在其巴黎数据中心的服务器上部署了 Azure AD Connect 工具。
 
-以下是运行 Azure AD 的服务器连接轮询 Contoso AD DS 林以进行更改，然后将这些更改与 Azure AD 租户同步。
+下面是运行 Azure AD Connect 的服务器，该服务器轮询 Contoso AD DS 林中的更改，然后将这些更改与 Azure AD 租户同步。
 
 ![Contoso PHS 目录同步基础结构](../media/contoso-identity/contoso-identity-fig4.png)
  
 ## <a name="conditional-access-policies-for-identity-and-device-access"></a>针对标识和设备访问的条件访问策略
 
-Contoso 为以下三种保护级别创建了一组 Azure AD 和 Intune [条件访问策略](identity-access-policies.md)：
+Contoso 为以下三种保护级别创建了一组 Azure AD 和 Intune [条件访问策略](../security/office-365-security/identity-access-policies.md)：
 
-- *基准* 保护适用于所有用户帐户。
-- *敏感* 保护适用于高级领导和执行人员。
-- *高度管控* 保护适用于财务、法律和研究部门中有权访问高度管控数据的特定用户。
+- *基线* 保护适用于所有用户帐户。
+- *敏感* 保护适用于高层领导和管理人员。
+- *高度管控* 保护适用于金融、法律和研究部门中有权访问高度管控数据的特定用户。
 
-以下是 Contoso identity and device 条件访问策略的结果集。
+下面是生成的 Contoso 标识和设备条件访问策略集。
 
 ![Contoso 的标识和设备条件访问策略](../media/contoso-identity/contoso-identity-fig5.png)
  
 ## <a name="next-step"></a>后续步骤
 
-了解 Contoso 如何使用其 Microsoft 终结点配置管理器基础结构在其整个组织中 [部署和保留当前的 Windows 10 企业版](contoso-win10.md) 。
+了解 Contoso 如何使用其 Microsoft Endpoint Configuration Manager 基础结构在整个组织中部署和保持最新的 [Windows 10](contoso-win10.md) 企业版。
 
 ## <a name="see-also"></a>另请参阅
 

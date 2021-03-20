@@ -1,7 +1,7 @@
 ---
 title: 运行试点 Microsoft 365 Defender 项目
 description: 在生产中运行试点 Microsoft 365 Defender 项目，以有效确定 Microsoft 365 Defender 的好处和采用。
-keywords: Microsoft 威胁防护试点， 运行试点 Microsoft 威胁防护项目， 评估生产中的 Microsoft 威胁防护， Microsoft 威胁防护试点项目， 网络安全， 高级永久性威胁， 企业安全， 设备， 设备， 标识， 用户， 数据， 应用程序， 事件， 自动调查和修正， 高级搜寻
+keywords: Microsoft 威胁防护试点， 运行 Microsoft 威胁防护试点项目， 评估生产中的 Microsoft 威胁防护， Microsoft 威胁防护试点项目， 网络安全， 高级永久性威胁， 企业安全， 设备， 设备， 标识， 用户， 数据， 应用程序， 事件， 自动调查和修正， 高级搜寻
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-pilotmtpproject
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 9c0635058539e464a76f1720f041c205a05fa9b2
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: c6c373d084c7f7cf12073c6402695af644944bad
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49933026"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50910866"
 ---
 # <a name="run-your-pilot-microsoft-365-defender-project"></a>运行试点 Microsoft 365 Defender 项目 
 
@@ -37,27 +37,27 @@ ms.locfileid: "49933026"
 - Microsoft 365 Defender
 
 
-本指南通过提供指针来帮助你运行试点项目，以确保你拥有一个结构良好的计划，指导你完成使用攻击模拟功能，最后结束试点，并提供关键方法，让你进行思考并记录结果。
+本指南通过提供指针来帮助你运行试点项目，以确保你有一个结构良好的计划，指导你完成使用攻击模拟功能，最后结束试点，并提供关键方法，让你反映和记录结果。
 
 ![运行 Microsoft 365 Defender 试点的阶段](../../media/pilotphases.png)
 
 
-运行试点有助于有效确定采用 Microsoft 365 Defender 的好处。 在生产环境中启用 Microsoft 365 Defender 并启动用例之前，最好先计划确定要为试点项目完成的任务并设置成功条件。 
+运行试点有助于有效地确定采用 Microsoft 365 Defender 的好处。 在生产环境中启用 Microsoft 365 Defender 并启动用例之前，最好先计划确定为试点项目完成的任务并设置成功标准。 
 
 
 ## <a name="how-to-use-this-pilot-playbook"></a>如何使用此试点手册
 
 本指南概述了 Microsoft 365 Defender 以及如何设置试点项目的分步说明。 
 
-Microsoft 365 Defender 是一个统一的入侵前和入侵后企业防御套件，在本机协调跨终结点、标识、电子邮件和应用程序的保护、检测、预防、调查和响应，以提供针对复杂攻击的集成保护。 它通过将以下功能组合并组织到单个安全解决方案中来实现此要求：
-  - Microsoft Defender for Endpoint，Microsoft Defender 高级威胁防护 (终结点的新) 
-  - Microsoft Defender for Office 365，Office 365 ATP 的新名称 (电子邮件)  
+Microsoft 365 Defender 是一个统一的攻破前和入侵后企业防御套件，在本机协调跨终结点、标识、电子邮件和应用程序的保护、检测、预防、调查和响应，以提供针对复杂攻击的集成保护。 它通过将以下功能组合并协调到单个安全解决方案中来这样做：
+  - Microsoft Defender for Endpoint， the new name for Microsoft Defender Advanced Threat Protection (endpoints) 
+  - Microsoft Defender for Office 365，Office 365 ATP 电子邮件 (的新)  
   - Microsoft Defender for Identity，Azure ATP 的新名称 (标识)  
   - Microsoft Cloud App Security (应用) 
 
 ![适用于of_Microsoft、Microsoft Defender for Identity、终结点 Microsoft Defender for Endpoint、云应用、Microsoft Cloud App Security 和数据、Microsoft Defender for Office 365 的 365 Defender 解决方案的图像](../../media/mtp/m365pillars.png)
 
-借助集成的 Microsoft 365 Defender 解决方案，安全专业人员可以将 Microsoft Defender for Endpoint、Microsoft Defender for Office 365、Microsoft Defender for Identity 和 Microsoft Cloud App Security 接收的威胁信号拼接在一起，并确定威胁的完整范围和影响、威胁进入环境方式、受影响内容以及威胁当前对组织的影响。 Microsoft 365 Defender 采取自动操作来阻止或停止攻击和自我修复受影响的邮箱、终结点和用户标识。 有关详细信息，请参阅 [Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-threat-protection) 概述。
+借助集成的 Microsoft 365 Defender 解决方案，安全专业人员可以将 Microsoft Defender for Endpoint、Microsoft Defender for Office 365、Microsoft Defender for Identity 和 Microsoft Cloud App Security 接收的威胁信号汇集在一起，并确定威胁的完整范围和影响、威胁进入环境的方法、其影响以及威胁当前对组织的影响。 Microsoft 365 Defender 采取自动操作来阻止或停止攻击和自我修复受影响的邮箱、终结点和用户标识。 有关详细信息，请参阅 [Microsoft 365 Defender](./microsoft-threat-protection.md) 概述。
 
 
 
@@ -76,7 +76,7 @@ Microsoft 365 Defender 是一个统一的入侵前和入侵后企业防御套件
 |阶段 | 说明 | 
 |:-------|:-----|
 | [规划](mtp-pilot-plan.md)<br> ~ 1 天| 了解在运行 Microsoft 365 Defender 试点项目之前需要考虑的问题： <br><br>- 范围 <br> - 用例 <br>- 要求： <br>- 测试计划 <br> - 成功条件 <br> - 记分卡 
-| [准备](mtp-evaluation.md) <br>~2 天|  访问 Microsoft 365 安全中心以设置 Microsoft 365 Defender 试点环境。 将指导你：<br><br>- 确定利益干系人并寻求试点的注销 <br> - 环境注意事项 <br>- Access <br>- Azure Active Directory 设置 <br> - 配置顺序 <br> - 注册 Microsoft 365 E5 试用版 <br> - 配置域 <br>- 分配 Microsoft 365 E5 许可证 <br> - 在门户中完成安装向导|
+| [准备](mtp-evaluation.md) <br>~2 天|  访问 Microsoft 365 安全中心以设置 Microsoft 365 Defender 试点环境。 将指导你：<br><br>- 确定利益干系人并寻求试点签署 <br> - 环境注意事项 <br>- Access <br>- Azure Active Directory 设置 <br> - 配置顺序 <br> - 注册 Microsoft 365 E5 试用版 <br> - 配置域 <br>- 分配 Microsoft 365 E5 许可证 <br> - 在门户中完成安装向导|
 | [攻击模拟](mtp-pilot-simulate.md) <br>~2 天| 要模拟攻击，将指导你：<br><br>- 验证测试环境要求 <br>- 运行模拟 <br>- 调查事件 <br>- 解决事件 
 | [结束和摘要](mtp-pilot-close.md) <br>~ 1 天| 完成此过程后，将指导你：<br><br>- 完成最终输出<br>- 将输出呈现给利益干系人 <br>- 提供反馈 <br>- 执行以下步骤 
 

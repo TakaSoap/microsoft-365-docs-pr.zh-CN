@@ -1,5 +1,5 @@
 ---
-title: 在 Microsoft name.com创建 DNS 记录
+title: 在 Microsoft name.com 创建 DNS 记录
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -20,21 +20,21 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 9ddcc2fc-9433-4335-8192-6ffb1f541087
-description: 了解如何验证域，并设置电子邮件、Skype for Business Online 和其他 Microsoft name.com DNS 记录。
-ms.openlocfilehash: 2330755412abfe262ac79c4acbfc12e33af76fe2
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+description: 了解如何验证你的域，并设置电子邮件、Skype for Business Online 和其他服务的 DNS 记录，name.com Microsoft。
+ms.openlocfilehash: 97cc83fe060f8fbfe78decff584bded3102b09b5
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49657823"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50910170"
 ---
-# <a name="create-dns-records-at-namecom-for-microsoft"></a>在 Microsoft name.com创建 DNS 记录
+# <a name="create-dns-records-at-namecom-for-microsoft"></a>在 Microsoft name.com 创建 DNS 记录
 
  **如果找不到要查找的内容，请 [查看域常见问题解答](../setup/domains-faq.yml)** 。 
   
 如果 DNS 托管提供者是 name.com，请按本文中的步骤验证域并为电子邮件、Skype for Business Online 等设置 DNS 记录。
   
-在网站中添加这些name.com，域将设置为使用 Microsoft 服务。
+在添加这些记录 name.com，域将设置为使用 Microsoft 服务。
 
   
 > [!NOTE]
@@ -52,7 +52,7 @@ ms.locfileid: "49657823"
     
     ![Name-BP-Configure-1-1](../../media/1869b416-1d3f-4fb1-99c6-62b74ca7a4c7.png)
   
-2. 在 **"** 我的域"下，选择要修改的域的名称。
+2. 在 **"我的** 域"下，选择要修改的域的名称。
     
     ![Name-BP-Configure-1-2](../../media/c8b96e1e-aa35-4fb1-8209-450f587fec4d.png)
   
@@ -105,7 +105,7 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
     
     ![Name-BP-Configure-1-1](../../media/1869b416-1d3f-4fb1-99c6-62b74ca7a4c7.png)
   
-2. 在 **"** 我的域"下，选择要修改的域的名称。
+2. 在 **"我的** 域"下，选择要修改的域的名称。
     
     ![Name-BP-Configure-1-2](../../media/c8b96e1e-aa35-4fb1-8209-450f587fec4d.png)
   
@@ -119,7 +119,7 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
     
     |**类型**|**主机**|**应答**|**TTL**|**优先级**|
     |:-----|:-----|:-----|:-----|:-----|
-    |MX  <br/> |（将此字段留空。）  <br/> | *\<domain-key\>*  .mail.protection.outlook.com  <br/> **注意：** 从  *\<domain-key\>*  Microsoft 帐户获取你的帐户。           [如何查找此内容？](../get-help-with-domains/information-for-dns-records.md)          |使用默认值 (300)。  <br/> |0  <br/> 有关优先级的详细信息，请参阅[什么是 MX 优先级？](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/> |
+    |MX  <br/> |（将此字段留空。）  <br/> | *\<domain-key\>*  .mail.protection.outlook.com  <br/> **注意：** 从  *\<domain-key\>*  Microsoft 帐户获取你的信息。           [如何查找此内容？](../get-help-with-domains/information-for-dns-records.md)          |使用默认值 (300)。  <br/> |0  <br/> 有关优先级的详细信息，请参阅[什么是 MX 优先级？](../setup/domains-faq.yml) <br/> |
    
    ![Name-BP-Configure-2-1](../../media/11ba2160-fc8e-4196-bb15-2b7c6d49c8fc.png)
   
@@ -129,11 +129,11 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
   
 6. 如果存在任何其他 MX 记录，请使用以下两步操作删除这些记录：
     
-    对于其他 MX 记录，在" **操作** "列中 **选择"删除** "。 
+    对于其他 MX 记录，选择" **操作** "列中的 **"删除** "。 
     
     ![Name-BP-Configure-2-3](../../media/16734a98-31c4-4023-a2a5-10b7c95bc58e.png)
   
-    若要确认每次删除 **，请再次** 选择"操作"列中 **的** "删除"。 
+    若要确认每个删除操作，请再次 **选择** "操作 **"列中的** "删除"。 
     
     ![Name-BP-Configure-2-4](../../media/409c21c5-51f4-4244-bb84-5d32084224b2.png)
   
@@ -146,7 +146,7 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
     
     ![Name-BP-Configure-1-1](../../media/1869b416-1d3f-4fb1-99c6-62b74ca7a4c7.png)
   
-2. 在 **"** 我的域"下，选择要修改的域的名称。
+2. 在 **"我的** 域"下，选择要修改的域的名称。
     
     ![Name-BP-Configure-1-2](../../media/c8b96e1e-aa35-4fb1-8209-450f587fec4d.png)
   
@@ -170,13 +170,13 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
    
    ![Name-BP-Configure-3-1](../../media/4e34caaf-b418-40ec-abfa-fe62175a87c2.png)
   
-5. 选择 **"添加记录** "可添加第一条记录。 
+5. 选择 **"添加记录** "添加第一条记录。 
     
     ![Name-BP-Configure-3-2](../../media/1053c2a7-07c3-4c1b-b54a-1c02881fb0ec.png)
   
 6. 添加第二条 CNAME 记录。
     
-    使用上表中第二行的值，然后选择"添加 **记录** "添加第二条记录。 
+    使用上表中第二行的值，然后选择" **添加记录** "添加第二条记录。 
     
     按同样的方法，使用表中第 3 到 6 行的值添加其余记录。
     
@@ -184,13 +184,13 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
 <a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]
-> 一个域所拥有的 SPF 的 TXT 记录不能超过一个。 如果域具有多个 SPF 记录，你将收到电子邮件错误，其中随附发送和垃圾邮件分类问题。 如果你的域已有 SPF 记录，请不要为 Microsoft 创建新记录。 相反，将所需的 Microsoft 值添加到当前记录，以便具有一个  *包含这*  两组值的 SPF 记录。 
+> 一个域所拥有的 SPF 的 TXT 记录不能超过一个。 如果域具有多个 SPF 记录，你将收到电子邮件错误，其中随附发送和垃圾邮件分类问题。 如果你的域已有 SPF 记录，请不要为 Microsoft 创建新记录。 相反，将所需的 Microsoft 值添加到当前记录，以便你有一个  *包含这*  两组值的 SPF 记录。 
   
 1. 若要开始，请使用[此链接](https://www.name.com/account/domain)转到 name.com 上你的域页面。系统将会提示你首先登录。
     
     ![Name-BP-Configure-1-1](../../media/1869b416-1d3f-4fb1-99c6-62b74ca7a4c7.png)
   
-2. 在 **"** 我的域"下，选择要修改的域的名称。
+2. 在 **"我的** 域"下，选择要修改的域的名称。
 
     ![Name-BP-Configure-1-2](../../media/c8b96e1e-aa35-4fb1-8209-450f587fec4d.png)
   
@@ -219,7 +219,7 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
     
     ![Name-BP-Configure-1-1](../../media/1869b416-1d3f-4fb1-99c6-62b74ca7a4c7.png)
   
-2. 在 **"** 我的域"下，选择要修改的域的名称。
+2. 在 **"我的** 域"下，选择要修改的域的名称。
     
     ![Name-BP-Configure-1-2](../../media/c8b96e1e-aa35-4fb1-8209-450f587fec4d.png)
   
@@ -235,8 +235,8 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
     
     |**类型**|**服务**|**权重**|**TTL**|**优先级**|**协议**|**端口**|**目标**|
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-    |SRV|sip|1 |使用默认值 (300)。|100|tls|443|sipdir.online.lync.com <br> **注意：** 建议复制粘贴此条目，以保证正确保留所有空格。           |
-    |SRV|sipfederationtls|1 |使用默认值 (300)。|100|tcp|5061|sipfed.online.lync.com <br>**注意：** 建议复制粘贴此条目，以保证正确保留所有空格。           |
+    |SRV|sip|1|使用默认值 (300)。|100|tls|443|sipdir.online.lync.com <br> **注意：** 建议复制粘贴此条目，以保证正确保留所有空格。           |
+    |SRV|sipfederationtls|1|使用默认值 (300)。|100|tcp|5061|sipfed.online.lync.com <br>**注意：** 建议复制粘贴此条目，以保证正确保留所有空格。           |
    
    ![Name-BP-Configure-5-1](../../media/d9a885fd-7300-45b6-ad4c-0b4bf1067560.png)
   
@@ -246,7 +246,7 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
   
 6. 添加第二条 SRV 记录：
 
-使用上表中下一行的值，然后选择"添加 **记录** "添加第二条记录。
+使用上表中下一行的值，然后选择" **添加** 记录"添加第二条记录。
 
 >[!NOTE]
 >DNS 更改通常需要 15 分钟左右才能生效。 但是，有时可能需要更长时间，您所做的更改才会在 Internet 的 DNS 系统中更新。 如果添加 DNS 记录后遇到邮件流问题或其他问题，请参阅 [更改域名或 DNS 记录后出现的问题的疑难解答](../get-help-with-domains/find-and-fix-issues.md)。

@@ -13,14 +13,14 @@ ms.collection:
 localization_priority: Normal
 f1.keywords:
 - NOCSH
-description: 了解如何将 SharePoint 网站移至多地理位置环境中的不同地理位置，并传达对用户所做的更改的预期。
+description: 了解如何将 SharePoint 网站移动到多地理位置环境中的不同地理位置，并告知用户更改的预期。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 819496b9f7612afa1db902e6fc5a0844e99d7a8e
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: eed323b2e2b8f68a4a603052657e17495bb17690
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47545632"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50910926"
 ---
 # <a name="move-a-sharepoint-site-to-a-different-geo-location"></a>将 SharePoint 站点移到其他地理位置
 
@@ -74,13 +74,13 @@ ms.locfileid: "47545632"
 
 SharePoint 站点地理位置移动要求你通过站点所在的地理位置中的 SharePoint 管理 URL 连接并执行移动。
 
-例如，如果网站 URL 为 <https://contosohealthcare.sharepoint.com/sites/Turbines> ，请连接到以下位置的 SharePoint 管理 URL <https://contosohealthcare-admin.sharepoint.com> ：
+例如，如果网站 URL 为 <https://contosohealthcare.sharepoint.com/sites/Turbines> ，请连接到 位于 的 SharePoint 管理 <https://contosohealthcare-admin.sharepoint.com> URL：
 
 ```powershell
 Connect-SPOService -Url https://contosohealthcare-admin.sharepoint.com
 ```
 
-![显示 Connect-sposervice 命令的 SharePoint Online 命令行管理程序窗口](../media/move-onedrive-between-geo-locations-image1.png)
+![显示命令的 SharePoint Online 命令行管理Connect-SPOService窗口](../media/move-onedrive-between-geo-locations-image1.png)
 
 ### <a name="validating-the-environment"></a>验证环境
 
@@ -145,8 +145,8 @@ Start-SPOUnifiedGroupMove -GroupAlias <GroupAlias> -DestinationDataLocation <Des
 
 通过使用以下 cmdlet，你可以确定站点移入或移出所连接到的地理位置的状态：
 
-- [Get-SPOSiteContentMoveState](https://docs.microsoft.com/powershell/module/sharepoint-online/get-spositecontentmovestate)（非组连接的站点）
-- [SPOUnifiedGroupMoveState](https://docs.microsoft.com/powershell/module/sharepoint-online/get-spounifiedgroupmovestate) (组连接的网站) 
+- [Get-SPOSiteContentMoveState](/powershell/module/sharepoint-online/get-spositecontentmovestate)（非组连接的站点）
+- [Get-SPOUnifiedGroupMoveState](/powershell/module/sharepoint-online/get-spounifiedgroupmovestate) (组连接的站点) 
 
 使用 `-SourceSiteUrl` 参数来指定要查看其移动状态的站点。
 

@@ -1,5 +1,5 @@
 ---
-title: 在 Microsoft 123-reg.co.uk创建 DNS 记录
+title: 在 Microsoft 123-reg.co.uk 创建 DNS 记录
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -20,21 +20,21 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 1f2d08c9-2a88-4d2f-ae1f-e39f9e358b17
-description: 了解如何验证域，并设置电子邮件、Skype for Business Online 和 Microsoft 123-reg.co.uk的其他服务的 DNS 记录。
-ms.openlocfilehash: 3c9af6909f37082a63170adac94ac3d92b717ad1
-ms.sourcegitcommit: bf9e0091e5bdc78d9b23be64583eb816bb059eb2
+description: 了解如何验证域，并设置电子邮件、Skype for Business Online 和 Microsoft 123-reg.co.uk 的其他服务的 DNS 记录。
+ms.openlocfilehash: d1e4d3d01a5e6b4f72c98fe09cf57374dd2417a0
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50758900"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50910422"
 ---
-# <a name="create-dns-records-at-123-regcouk-for-microsoft"></a>在 Microsoft 123-reg.co.uk创建 DNS 记录
+# <a name="create-dns-records-at-123-regcouk-for-microsoft"></a>在 Microsoft 123-reg.co.uk 创建 DNS 记录
 
  **如果找不到要查找的内容，请 [查看域常见问题解答](../setup/domains-faq.yml)** 。 
   
 如果 DNS 托管提供者是 123-reg.co.uk，请按本文中的步骤验证域并为电子邮件、Skype for Business Online 等设置 DNS 记录。
   
-在添加这些记录123-reg.co.uk，域将设置为使用 Microsoft 服务。
+在添加这些记录 123-reg.co.uk，域将设置为使用 Microsoft 服务。
   
   
 > [!NOTE]
@@ -102,7 +102,7 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
     
     |**主机名**|**类型**|**优先级**|**目标 MX**|
     |:-----|:-----|:-----|:-----|
-    |@  <br/> |MX  <br/> |1  <br/> 有关优先级的详细信息，请参阅[什么是 MX 优先级？](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/> | *\<domain-key\>*  .mail.protection.outlook.com。  <br/> **此值必须以句点 (.) 结尾。** <br/> **注意：** 从 Microsoft 帐户获取 \<domain-key\>。 [如何查找此项？](../get-help-with-domains/information-for-dns-records.md)          |
+    |@  <br/> |MX  <br/> |1  <br/> 有关优先级的详细信息，请参阅[什么是 MX 优先级？](../setup/domains-faq.yml) <br/> | *\<domain-key\>*  .mail.protection.outlook.com。  <br/> **此值必须以句点 (.) 结尾。** <br/> **注意：** 从 Microsoft 帐户获取 \<domain-key\>。 [如何查找此项？](../get-help-with-domains/information-for-dns-records.md)          |
    
     ![复制并粘贴表中的值](../../media/65366165-85a6-4a39-b9a7-6c5f47fbe790.png)
   
@@ -155,7 +155,7 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
 <a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]
-> 一个域所拥有的 SPF 的 TXT 记录不能超过一个。 如果域具有多个 SPF 记录，你将收到电子邮件错误，其中随附发送和垃圾邮件分类问题。 如果你的域已有 SPF 记录，请不要为 Microsfot 创建新的 SPF 记录。 相反，将所需的 Microsoft 值添加到当前记录，以便你有一个  *包含这*  两组值的 SPF 记录。 需要示例吗？ 请查看 [Microsoft 的外部域名系统记录](https://docs.microsoft.com/microsoft-365/enterprise/external-domain-name-system-records#external-dns-records-required-for-spf)。 若要验证 SPF 记录，可使用以下任一 [SPF 验证工具](../setup/domains-faq.yml)。 
+> 一个域所拥有的 SPF 的 TXT 记录不能超过一个。 如果域具有多个 SPF 记录，你将收到电子邮件错误，其中随附发送和垃圾邮件分类问题。 如果你的域已有 SPF 记录，请不要为 Microsoft 创建新记录。 相反，将所需的 Microsoft 值添加到当前记录，以便你有一个  *包含这*  两组值的 SPF 记录。 需要示例吗？ 请查看 [Microsoft 的外部域名系统记录](../../enterprise/external-domain-name-system-records.md#external-dns-records-required-for-spf)。 若要验证 SPF 记录，可使用以下任一 [SPF 验证工具](../setup/domains-faq.yml)。 
   
 1. 要开始，请使用[此链接](https://www.123-reg.co.uk/secure/cpanel/domain/overview)转到您在 123-reg.co.uk 上的域页面。 系统将会提示您先登录。
     
@@ -214,4 +214,3 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
     
 > [!NOTE]
 > Typically it takes about 15 minutes for DNS changes to take effect. 但是，有时可能需要更长时间，您所做的更改才会在 Internet 的 DNS 系统中更新。 如果在添加 DNS 记录后遇到邮件流问题或其他问题，请参阅[查找在添加域或 DNS 记录后遇到的问题并进行修复](../get-help-with-domains/find-and-fix-issues.md)。 
-  

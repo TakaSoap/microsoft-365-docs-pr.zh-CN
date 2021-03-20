@@ -13,12 +13,12 @@ localization_priority: Normal
 f1.keywords:
 - NOCSH
 description: 利用 Microsoft 365 多地理位置将 Microsoft 365 触及范围扩展到多个地理区域。
-ms.openlocfilehash: 6d16d222a97f309eafdd79a2b107978ce7b4f242
-ms.sourcegitcommit: 0867495cb02d0b38b439b16bdce97e6eda483ba9
+ms.openlocfilehash: 2805470f1a35bb5978f3d25c30aa07523ad21afb
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "49712493"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50909546"
 ---
 # <a name="microsoft-365-multi-geo"></a>Microsoft 365 多地理位置
 
@@ -50,7 +50,7 @@ ms.locfileid: "49712493"
 
 ## <a name="licensing"></a>许可
 
-Microsoft 365 多地理位置作为以下 Microsoft 365 订阅计划的附加项提供，适用于租户中至少具有 250 个 Microsoft 365 席位的 企业协议 客户，以及使用多地理位置的至少 5% 的这些席位。 用户订阅许可证必须与多企业协议服务许可证位于同一位置。 有关详细信息，请与 Microsoft 帐户团队联系。
+Microsoft 365 多地理位置作为以下 Microsoft 365 订阅计划的加载项提供，适用于租户中至少具有 250 个 Microsoft 365 席位的 企业协议 客户，以及使用多地理位置的至少 5% 的席位。 用户订阅许可证必须与多地理位置企业协议许可证位于同一位置。 有关详细信息，请与 Microsoft 帐户团队联系。
 
 - Microsoft 365 F1, F3, E3, or E5
 - Office 365 F3, E1, E3, or E5
@@ -70,7 +70,7 @@ Microsoft 365 多地理位置当前在以下国家和地区提供：
 
 1. 与你的帐户团队协作，_在 Microsoft 365 服务计划中添加多地理位置功能_。 他们将指导你添加需要的许可证数量。 Microsoft 365 订阅数至少为 250 个的 EA 客户可以使用多地理位置功能。
 
-   Microsoft 需要为多地理位置支持配置你的 Exchange Online 租户，然后你才能开始使用 Microsoft 365 多地理位置。 这个一次性配置流程在你订购“*Microsoft 365 中的多地理位置功能*”服务计划之后触发，并且许可证将显示在你的租户中。 一旦租户完成每个工作负荷的配置过程，你将收到 [Microsoft 365](https://support.office.com/article/38FB3333-BFCC-4340-A37B-DEDA509C2093) 消息中心中特定于工作负荷的通知，然后你可以开始配置和使用 Microsoft 365 多地理位置功能。 为Multi-Geo支持配置租户所需的时间因租户而异，但是大多数租户在收到功能许可后的一个月内完成。 更大或更复杂的租户可能需要更多时间才能完成配置过程。 如果您需要特定租户的详细信息，请与您的客户团队联系。
+   Microsoft 需要为多地理位置支持配置你的 Exchange Online 租户，然后你才能开始使用 Microsoft 365 多地理位置。 这个一次性配置流程在你订购“*Microsoft 365 中的多地理位置功能*”服务计划之后触发，并且许可证将显示在你的租户中。 一旦租户完成每个工作负载的配置过程，你将在 [Microsoft 365](https://support.office.com/article/38FB3333-BFCC-4340-A37B-DEDA509C2093) 消息中心收到特定于工作负载的通知，然后你可以开始配置和使用 Microsoft 365 多地理位置功能。 为Multi-Geo支持配置租户所需的时间因租户而异，但是大多数租户在收到功能许可后的一个月内完成。 更大或更复杂的租户可能需要更多时间才能完成配置过程。 如果您需要特定租户的详细信息，请与您的客户团队联系。
 
 2. 阅读[规划多地理位置环境](plan-for-multi-geo.md)。
 
@@ -88,4 +88,4 @@ Microsoft 365 多地理位置当前在以下国家和地区提供：
 
 [Exchange Online 中的多地理位置功能](multi-geo-capabilities-in-exchange-online.md)
 
-[多地理位置环境中的 Teams 体验](https://docs.microsoft.com/microsoftteams/teams-experience-o365odb-spo-multi-geo)
+[多地理位置环境中的 Teams 体验](/microsoftteams/teams-experience-o365odb-spo-multi-geo)

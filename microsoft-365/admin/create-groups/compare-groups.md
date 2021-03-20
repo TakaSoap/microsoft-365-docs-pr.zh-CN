@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 758759ad-63ee-4ea9-90a3-39f941897b7d
 description: 了解可以使用的组类型。
-ms.openlocfilehash: dfb726fadbfbcf69a8ff57fa3d9025cd8811e617
-ms.sourcegitcommit: 3d48e198e706f22ac903b346cadda06b2368dd1e
+ms.openlocfilehash: 8565b567706a70bb014fab42b23e9c55fb0efc45
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50727243"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50908742"
 ---
 # <a name="compare-groups"></a>比较组
 
@@ -45,19 +45,19 @@ Microsoft 365 组用于公司内部和外部用户之间的协作。 对于每�
 
 只要[管理员启用](manage-guest-access-in-groups.md)了此功能，你就可以将组织外部的人员添加到组中。 还可以允许外部发件人向组电子邮件地址发送电子邮件。
 
-可[为 Azure Active Directory中的动态成员身份](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-change-type)配置 Microsoft 365 组，以便根据部门、位置、职衔等等用户属性自动添加或删除组成员。
+可[为 Azure Active Directory中的动态成员身份](/azure/active-directory/users-groups-roles/groups-change-type)配置 Microsoft 365 组，以便根据部门、位置、职衔等等用户属性自动添加或删除组成员。
 
 可通过移动应用（如 Outlook for iOS 和 Outlook for Android）访问 Microsoft 365 组。
 
-如果[管理员启用了](allow-members-to-send-as-or-send-on-behalf-of-group.md)此功能，则组成员可以作为组或代表组发送电子邮件地址。
+如果[管理员启用了](../../solutions/allow-members-to-send-as-or-send-on-behalf-of-group.md)此功能，则组成员可以作为组或代表组发送电子邮件地址。
 
 ## <a name="distribution-groups"></a>通讯组
 
-[通讯组](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-distribution-groups/manage-distribution-groups) 用于向一组人员发送通知。 如果管理员启用，则可以接收外部电子邮件。
+[通讯组](/exchange/recipients-in-exchange-online/manage-distribution-groups/manage-distribution-groups) 用于向一组人员发送通知。 如果管理员启用，则可以接收外部电子邮件。
 
 通讯组最适用于需要将信息广播给一组人员的情况，例如 "构建 A 中的人" 或 "Contoso 中的每个人"。
 
-通讯组可[升级到 Microsoft 365 组](https://docs.microsoft.com/microsoft-365/admin/manage/upgrade-distribution-lists)。
+通讯组可[升级到 Microsoft 365 组](../manage/upgrade-distribution-lists.md)。
 
 ## <a name="security-groups"></a>安全组
 
@@ -65,7 +65,7 @@ Microsoft 365 组用于公司内部和外部用户之间的协作。 对于每�
 
 安全组可以包含用户或设备。 可将创建设备安全组用于移动设备管理服务（如 Intune）。
 
-可为[ Azure Active Directory 中的动态成员身份配置](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-change-type)安全组，以便根据部门、位置或职衔等用户属性自动添加或删除组成员或设备；或设备属性（如操作系统版本）。
+可为[ Azure Active Directory 中的动态成员身份配置](/azure/active-directory/users-groups-roles/groups-change-type)安全组，以便根据部门、位置或职衔等用户属性自动添加或删除组成员或设备；或设备属性（如操作系统版本）。
 
 ## <a name="mail-enabled-security-groups"></a>启用邮件的安全组
 

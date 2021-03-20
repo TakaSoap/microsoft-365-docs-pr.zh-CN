@@ -13,16 +13,16 @@ f1.keywords:
 ms.author: jaimeo
 ms.article: article
 ms.localizationpriority: normal
-ms.openlocfilehash: d2ce8ecc12c73969a6ad9b939dc02c6b9cb360f4
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 9176bfbbd015243266ba1c8cbad9d04787f6a6cc
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50288403"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50909246"
 ---
 # <a name="change-history-for-microsoft-managed-desktop-documentation"></a>Microsoft 托管桌面文档更改历史记录
 
-本文列出了 Microsoft 托管桌面文档中新增 [和更新的文章](index.yml)。 "已更新"文章有实质性的新增内容或更正，例如更正拼写错误、样式或格式设置问题等次要修复未列出。 你始终可以通过访问 [GitHub](https://github.com/MicrosoftDocs/microsoft-365-docs/tree/public/microsoft-365/managed-desktop)上的存储库 (特定提交历史记录) 更改的详细信息。
+本文列出了 Microsoft 托管桌面文档中新增 [和更新的文章](index.yml)。 "已更新"的文章有重大新增内容或更正，例如拼写错误、样式或格式设置问题的更正未列出。 通过访问 GitHub 上的存储库， (查看特定提交历史记录，) [更改的详细信息](https://github.com/MicrosoftDocs/microsoft-365-docs/tree/public/microsoft-365/managed-desktop)。
 
 ## <a name="january-2021"></a>2021 年 1 月
 新增或已更改的文章 | 说明
@@ -40,7 +40,7 @@ ms.locfileid: "50288403"
 ## <a name="december-2020"></a>2020 年 12 月
 新增或已更改的文章 | 说明
 --- | ---
-[什么是 Microsoft 托管桌面？](https://docs.microsoft.com/microsoft-365/managed-desktop/intro/index) | 更新的文章
+[什么是 Microsoft 托管桌面？](./intro/index.md) | 更新的文章
 [处理报告](working-with-managed-desktop/reports.md) | 更新的文章
 [隐私和个人数据](service-description/privacy-personal-data.md) | 更新的文章
 [合规性](intro/compliance.md) | 更新的文章
@@ -93,7 +93,7 @@ ms.locfileid: "50288403"
 新增或已更改的文章 | 说明
 --- | ---
 [设备清点报告](working-with-managed-desktop/device-inventory-report.md) | 新增文章
-[新的 Microsoft Edge 应用](get-started/edge-browser-app.md) | 更新的文章
+[新 Microsoft Edge 应用](get-started/edge-browser-app.md) | 更新的文章
 [自行注册新设备](get-started/register-devices-self.md) | 更新的文章
 [自行注册现有设备](get-started/register-reused-devices-self.md) | 更新的文章
 [Microsoft 托管桌面的先决条件](get-ready/prerequisites.md) | 更新的文章
@@ -112,7 +112,7 @@ ms.locfileid: "50288403"
 [Microsoft 托管桌面的先决条件](get-ready/prerequisites.md) | 更新的文章
 [应用程序控制](service-description/app-control.md) | 更新的文章
 [Microsoft 托管桌面的网络配置](get-ready/network.md) | 更新的文章
-[新的 Microsoft Edge 应用](get-started/edge-browser-app.md) | 更新的文章
+[新 Microsoft Edge 应用](get-started/edge-browser-app.md) | 更新的文章
 [访问管理门户](get-started/access-admin-portal.md) | 新增文章
 [应用程序控制](service-description/app-control.md) | 新增文章
 [在 Microsoft 托管桌面设备上安装 Microsoft Project 或 Microsoft Visio](get-started/project-visio.md) | 更新的文章
@@ -120,7 +120,7 @@ ms.locfileid: "50288403"
 ## <a name="june-2020"></a>2020 年 6 月
 新增或已更改的文章 | 说明
 --- | ---
-[新的 Microsoft Edge 应用](get-started/edge-browser-app.md) | 新增文章
+[新 Microsoft Edge 应用](get-started/edge-browser-app.md) | 新增文章
 [设备配置](service-description/device-policies.md) | 更新的文章
 
 
@@ -156,7 +156,7 @@ ms.locfileid: "50288403"
 ## <a name="february-2020"></a>2020 年 2 月
 新增或已更改的文章 | 说明
 --- | ---
-[Microsoft 托管桌面中的安全性](service-description/security.md)| 更新的文章
+[Microsoft 托管桌面的安全性](service-description/security.md)| 更新的文章
 [使用见解](working-with-managed-desktop/insights.md) | 更新的文章
 [Windows 安全更新见解](working-with-managed-desktop/security-update-insights.md) | 新增文章
 [如何在 Microsoft 托管桌面中处理更新](service-description/updates.md) | 更新的文章
@@ -167,7 +167,7 @@ ms.locfileid: "50288403"
 ## <a name="january-2020"></a>2020 年 1 月
 新增或已更改的文章 | 说明
 --- | ---
-[为用户做好使用设备的准备](get-started/get-started-devices.md)| 更新的文章
+[让用户做好使用设备的准备](get-started/get-started-devices.md)| 更新的文章
 [在管理门户中添加和验证管理员联系人](get-started/add-admin-contacts.md) | 更新的文章
 [设备配置](service-description/device-policies.md) | 更新的文章
 
@@ -188,9 +188,9 @@ ms.locfileid: "50288403"
 [使用情况见解](working-with-managed-desktop/usage-insights.md) | 新增文章
 [可靠性见解](working-with-managed-desktop/reliability-insights.md) | 新增文章
 [Microsoft 托管桌面设备](service-description/device-list.md) | 更新的文章
-[Microsoft 托管桌面主页](https://docs.microsoft.com/microsoft-365/managed-desktop/) | 更新的文章
-[什么是 Microsoft 托管桌面？](https://docs.microsoft.com/microsoft-365/managed-desktop/intro/index) | 更新的文章
-[为用户做好使用设备的准备](get-started/get-started-devices.md) | 更新的文章
+[Microsoft 托管桌面主页](./index.yml) | 更新的文章
+[什么是 Microsoft 托管桌面？](./intro/index.md) | 更新的文章
+[让用户做好使用设备的准备](get-started/get-started-devices.md) | 更新的文章
 [服务计划的例外情况](service-description/customizing.md) | 更新的文章
 
 
@@ -282,7 +282,7 @@ ms.locfileid: "50288403"
 新增或已更改的文章 | 说明
 --- | ---
 [程序设备](service-description/device-list.md) | 通过对某些 Dell 和 HP 设备的支持进行了更新。
-[可配置设置概述](working-with-managed-desktop/config-setting-overview.md) | 新增文章
+[可配置的设置概述](working-with-managed-desktop/config-setting-overview.md) | 新增文章
 [可配置设置参考](working-with-managed-desktop/config-setting-ref.md) | 新增文章
 [跟踪和部署可配置设置](working-with-managed-desktop/config-setting-deploy.md) | 新增文章
 [设备入门](get-started/get-started-devices.md) | 新增文章
@@ -291,7 +291,7 @@ ms.locfileid: "50288403"
 新增或已更改的文章 | 说明
 --- | ---
 [部署适用于 Microsoft 托管桌面设备的应用](get-started/deploy-apps.md) | 新文章。
-[管理 Microsoft 托管桌面的应用](working-with-managed-desktop/manage-apps.md) | 使用有关如何更新或回滚到以前版本的业务线应用的信息进行了更新。 
+[管理 Microsoft 托管桌面的应用](working-with-managed-desktop/manage-apps.md) | 使用更新或回滚到以前版本的业务线应用的信息进行了更新。 
 
 ## <a name="december-2018"></a>2018 年 12 月
 新增或已更改的文章 | 说明
@@ -303,8 +303,7 @@ ms.locfileid: "50288403"
 
 新增或已更改的文章 | 说明
 --- | ---
-[对 Microsoft 托管桌面的支持](service-description/support.md)<br />和 [用户对 Microsoft 托管桌面的支持](working-with-managed-desktop/end-user-support.md) | 进行了更新以包括澳大利亚。
+[对 Microsoft 托管桌面的支持](service-description/support.md)<br />和 [Microsoft 托管桌面的用户支持](working-with-managed-desktop/end-user-support.md) | 进行了更新以包括澳大利亚。
 
 ## <a name="october-30-2018"></a>2018 年 10 月 30 日
-内容重新组织：添加了 [Microsoft 托管桌面服务说明部分](service-description/index.md)。 
-
+内容重新组织：添加了 [Microsoft 托管桌面服务说明 部分](service-description/index.md)。

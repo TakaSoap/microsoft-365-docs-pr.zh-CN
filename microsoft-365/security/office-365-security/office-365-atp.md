@@ -21,12 +21,12 @@ ms.custom:
 description: Microsoft Defender for Office 365 包括安全附件、安全链接、高级防钓鱼工具、报告工具和威胁智能功能。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 741b00a55ee73d16c82abd4806d06660d49be65b
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 1a2cb40184de170263a52e52b704b30b0731c868
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50287661"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50909030"
 ---
 # <a name="microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365
 
@@ -37,7 +37,7 @@ ms.locfileid: "50287661"
 - [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 > [!IMPORTANT]
-> 本文适用于拥有 [Microsoft Defender for Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)的企业客户。 如果你使用的是 Outlook.com、Microsoft 365 家庭版或 Microsoft 365 个人版，并且正在查找有关 Outlook 中安全链接或安全附件的信息，请参阅[适用于 Microsoft 365 订阅者的高级 Outlook.com 安全机制](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2)。
+> 本文适用于拥有 [Microsoft Defender for Office 365](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)的企业客户。 如果你使用的是 Outlook.com、Microsoft 365 家庭版或 Microsoft 365 个人版，并且正在查找有关 Outlook 中安全链接或安全附件的信息，请参阅[适用于 Microsoft 365 订阅者的高级 Outlook.com 安全机制](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2)。
 
 Microsoft Defender for Office 365 可保护你的组织免受电子邮件、链接 (URL) 和协作工具带来的恶意威胁。 Defender for Office 365 包括：
 
@@ -88,7 +88,7 @@ Microsoft Defender for Office 365 可保护你的组织免受电子邮件、链�
 
 - Microsoft Defender for Office 365 计划 1 包含在 Microsoft 365 商业高级版中。
 
-- Microsoft Defender for Office 365 计划 1 和 Microsoft Defender for Office 365 计划 2 均可用作特定订阅的加载项。 若要了解详细信息，请参阅[Microsoft Defender for Office 365 计划的功能可用性](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans)。
+- Microsoft Defender for Office 365 计划 1 和 Microsoft Defender for Office 365 计划 2 均可用作特定订阅的加载项。 若要了解详细信息，请参阅[Microsoft Defender for Office 365 计划的功能可用性](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans)。
 
 - 只有拥有 Microsoft 365 E5 或 Microsoft 365 E5 安全性许可证（未包括在 Microsoft Defender for Office 365 计划内）的用户才能使用[安全文档](safe-docs.md)功能。
 
@@ -150,8 +150,8 @@ Microsoft Defender for Office 365 计划 2 包括同类最佳的[威胁调查和
 |角色或角色组|了解详细信息的资源|
 |---|---|
 |全局管理员（可以在 Azure Active Directory 或安全与合规中心内分配此权限）|[关于 Microsoft 365 管理员角色](../../admin/add-users/about-admin-roles.md)|
-|安全管理员（可以在 Azure Active Directory 或安全与合规中心内分配此权限）|[Azure Active Directory 中的管理员角色权限](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles) <p> [安全与合规中心内的权限](permissions-in-the-security-and-compliance-center.md)|
-|Exchange Online 组织管理（在 Exchange Online 中分配此权限）|[Exchange Online 中的权限](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo) <p> [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell)|
+|安全管理员（可以在 Azure Active Directory 或安全与合规中心内分配此权限）|[Azure Active Directory 中的管理员角色权限](/azure/active-directory/users-groups-roles/directory-assign-admin-roles) <p> [安全与合规中心内的权限](permissions-in-the-security-and-compliance-center.md)|
+|Exchange Online 组织管理（在 Exchange Online 中分配此权限）|[Exchange Online 中的权限](/exchange/permissions-exo/permissions-exo) <p> [Exchange Online PowerShell](/powershell/exchange/exchange-online-powershell)|
 |搜索和清除（仅在安全与合规中心内分配此权限）|[安全与合规中心内的权限](permissions-in-the-security-and-compliance-center.md)|
 
 有关详细信息，请参阅[安全与合规中心中的权限](permissions-in-the-security-and-compliance-center.md)。
@@ -160,9 +160,9 @@ Microsoft Defender for Office 365 计划 2 包括同类最佳的[威胁调查和
 
 Microsoft Defender for Office 365 包含在特定订阅中，如 Microsoft 365 E5、Office 365 E5、Office 365 A5 和 Microsoft 365 商业高级版。 如果你的订阅不包含 Defender for Office 365，可以购买 Defender for Office 365 计划 1 或 Defender for Office 365 计划 2 作为特定订阅的加载项。 若要了解详细信息，请参阅以下资源：
 
-- [Microsoft Defender for Office 365 可用性](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#office-365-advanced-threat-protection-atp-availability)获取包括 Defender for Office 365 计划的订阅列表。
+- [Microsoft Defender for Office 365 可用性](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#office-365-advanced-threat-protection-atp-availability)获取包括 Defender for Office 365 计划的订阅列表。
 
-- 有关计划 1 和 2 中所含功能的列表，请参阅[Microsoft Defender for Office 365 计划的功能可用性](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans)。
+- 有关计划 1 和 2 中所含功能的列表，请参阅[Microsoft Defender for Office 365 计划的功能可用性](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans)。
 
 - [获取合适的 Microsoft Defender for Office 365](https://products.office.com/exchange/advance-threat-protection#pmg-allup-content) 以便比较计划并购买 Defender for Office 365。
 
@@ -174,7 +174,7 @@ Microsoft Defender for Office 365 包含在特定订阅中，如 Microsoft 365 E
 
 - [Microsoft 365 路线图](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=advanced%2Cthreat%2Cprotection)提供了正在开发和即将推出的新功能列表。
 
-- [Microsoft Defender for Office 365 服务说明](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#whats-new-in-office-365-advanced-threat-protection-atp)介绍了 Defender for Office 365 计划的功能和可用性。
+- [Microsoft Defender for Office 365 服务说明](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#whats-new-in-office-365-advanced-threat-protection-atp)介绍了 Defender for Office 365 计划的功能和可用性。
 
 ## <a name="see-also"></a>另请参阅
 

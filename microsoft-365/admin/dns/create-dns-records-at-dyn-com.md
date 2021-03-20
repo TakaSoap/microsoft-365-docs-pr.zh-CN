@@ -1,5 +1,5 @@
 ---
-title: 在 Microsoft Dyn.com创建 DNS 记录
+title: 在 Microsoft Dyn.com 创建 DNS 记录
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -20,15 +20,15 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 34e57a00-2a7d-469c-beec-089423f18369
-description: 了解如何验证域，并设置电子邮件、Skype for Business Online 和其他 Microsoft Dyn.com DNS 记录。
-ms.openlocfilehash: d1b77d6b4f38dd3e0979f448a77b293564841f45
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+description: 了解如何验证你的域，并设置电子邮件、Skype for Business Online 和其他服务的 DNS 记录，Dyn.com Microsoft。
+ms.openlocfilehash: 432dc630d49cc3494d17b3f007f813d66dc6b1c3
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49657932"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50910326"
 ---
-# <a name="create-dns-records-at-dyncom-for-microsoft"></a>在 Microsoft Dyn.com创建 DNS 记录
+# <a name="create-dns-records-at-dyncom-for-microsoft"></a>在 Microsoft Dyn.com 创建 DNS 记录
 
  **如果找不到要查找的内容，请 [查看域常见问题解答](../setup/domains-faq.yml)** 。 
   
@@ -46,11 +46,11 @@ ms.locfileid: "49657932"
     
     ![Dyn-BP-Configure-1-1](../../media/77597d44-9b04-43b1-8e23-d4fad238def2.png)
   
-2. 在 **"区域级别服务** "页上，选择要编辑的域的 **Dyn** 标准 DNS 服务。 
+2. 在" **区域级别服务** "页上，为要编辑的域选择 **"Dyn** 标准 DNS 服务"。 
     
-3. 在 **域的 DNS** 页面上，选择 **"首选项"。**
+3. 在域 **的"DNS"** 页面上，选择 **"首选项"。**
     
-4. 选择 **"启用专家接口"。**
+4. 选择 **启用专家接口**。
     
 5. In the **Add DNS Record** section, in the boxes for the new record, type or copy and paste the values from the following table. 
     
@@ -97,11 +97,11 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
     
     ![Dyn-BP-Configure-1-1](../../media/77597d44-9b04-43b1-8e23-d4fad238def2.png)
   
-2. 在 **"区域级别服务** "页上，选择要编辑的域的 **Dyn** 标准 DNS 服务。 
+2. 在" **区域级别服务** "页上，为要编辑的域选择 **"Dyn** 标准 DNS 服务"。 
     
-3. 在域的 DNS 页面上，选择 **"首选项"。**
+3. 在域的"DNS"页面上，选择 **"首选项"。**
     
-4. 选择 **"启用专家接口"。**
+4. 选择 **启用专家接口**。
     
 5. In the **Add DNS Record** section, in the boxes for the new record, type or copy and paste the values from the following table. 
     
@@ -109,7 +109,7 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
     
     |**主机**|**TTL**|**类型**|**数据**|
     |:-----|:-----|:-----|:-----|
-    |(Leave this field empty.)  <br/> |600  <br/> |MX  <br/> |10  *\<domain-key\>*  .mail.protection.outlook.com。  <br/> **此值必须以句点 (.) 结尾。** <br/> **10** 是 MX 优先级值。将其添加到 MX 值的开头，使用一个空格将其与其余部分隔开。  <br/> **注意：** 从  *\<domain-key\>*  Microsoft 帐户获取你的帐户。           [如何查找此项？](../get-help-with-domains/information-for-dns-records.md)      <br>    有关优先级的详细信息，请参阅[什么是 MX 优先级？](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/> |
+    |(Leave this field empty.)  <br/> |600  <br/> |MX  <br/> |10  *\<domain-key\>*  .mail.protection.outlook.com。  <br/> **此值必须以句点 (.) 结尾。** <br/> **10** 是 MX 优先级值。将其添加到 MX 值的开头，使用一个空格将其与其余部分隔开。  <br/> **注意：** 从  *\<domain-key\>*  Microsoft 帐户获取你的信息。           [如何查找此项？](../get-help-with-domains/information-for-dns-records.md)      <br>    有关优先级的详细信息，请参阅[什么是 MX 优先级？](../setup/domains-faq.yml) <br/> |
    
     ![Dyn-BP-Configure-2-1](../../media/62ac77b7-c84d-426d-9ec4-a28d6479ad04.png)
   
@@ -132,11 +132,11 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
     
     ![Dyn-BP-Configure-1-1](../../media/77597d44-9b04-43b1-8e23-d4fad238def2.png)
   
-2. 在 **"区域级别服务** "页上，选择要编辑的域的 **Dyn** 标准 DNS 服务。 
+2. 在" **区域级别服务** "页上，为要编辑的域选择 **"Dyn** 标准 DNS 服务"。 
     
-3. 在 **域的 DNS** 页面上，选择 **"首选项"。**
+3. 在域 **的"DNS"** 页面上，选择 **"首选项"。**
     
-4. 选择 **"启用专家接口"。**
+4. 选择 **启用专家接口**。
     
 5. 添加第一条 CNAME 记录（共 6 条）。
     
@@ -160,7 +160,7 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
   
 7. 添加其他五条 CNAME 记录。
     
-    在 **"添加 DNS 记录**"部分，使用表中下一行的值创建记录，然后再次选择"创建记录"以完成该记录。 
+    在" **添加 DNS 记录** "部分，使用表中下一行的值创建记录，然后再次选择" **创建记录** "以完成该记录。 
     
     重复该过程，直到创建完全部 6 条 CNAME 记录。
     
@@ -168,17 +168,17 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
 <a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]
-> 一个域所拥有的 SPF 的 TXT 记录不能超过一个。 如果域具有多个 SPF 记录，你将收到电子邮件错误，其中随附发送和垃圾邮件分类问题。 如果你的域已有 SPF 记录，请不要为 Microsoft 创建新记录。 相反，将所需的 Microsoft 值添加到当前记录，以便具有一个  *包含这*  两组值的 SPF 记录。
+> 一个域所拥有的 SPF 的 TXT 记录不能超过一个。 如果域具有多个 SPF 记录，你将收到电子邮件错误，其中随附发送和垃圾邮件分类问题。 如果你的域已有 SPF 记录，请不要为 Microsoft 创建新记录。 相反，将所需的 Microsoft 值添加到当前记录，以便你有一个  *包含这*  两组值的 SPF 记录。
   
 1. 若要开始，请使用[此链接](https://account.dyn.com/dns/)转到你在 Dyn.com 上的域页面。系统会提示你先进行登录。
     
     ![Dyn-BP-Configure-1-1](../../media/77597d44-9b04-43b1-8e23-d4fad238def2.png)
   
-2. 在 **"区域级别服务** "页上，选择要编辑的域的 **Dyn** 标准 DNS 服务。 
+2. 在" **区域级别服务** "页上，为要编辑的域选择 **"Dyn** 标准 DNS 服务"。 
     
-3. 在 **域的 DNS** 页面上，选择 **"首选项"。**
+3. 在域 **的"DNS"** 页面上，选择 **"首选项"。**
     
-4. 选择 **"启用专家接口"。**
+4. 选择 **启用专家接口**。
     
 5. In the **Add DNS Record** section, in the boxes for the new record, type or copy and paste the values from the following table. 
     
@@ -201,11 +201,11 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
     
     ![Dyn-BP-Configure-1-1](../../media/77597d44-9b04-43b1-8e23-d4fad238def2.png)
   
-2. 在 **"区域级别服务** "页上，选择要编辑的域的 **Dyn** 标准 DNS 服务。 
+2. 在" **区域级别服务** "页上，为要编辑的域选择 **"Dyn** 标准 DNS 服务"。 
     
-3. 在 **域的 DNS** 页面上，选择 **"首选项"。**
+3. 在域 **的"DNS"** 页面上，选择 **"首选项"。**
     
-4. 选择 **"启用专家接口"。**
+4. 选择 **启用专家接口**。
     
 5. 添加两条 SRV 记录中的第一条。
     
@@ -226,8 +226,7 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
   
 7. 添加另一条 SRV 记录。
     
-    在 **"添加 DNS 记录**"部分，使用表中第二行的值创建记录，然后再次选择"创建记录"以完成该记录。 
+    在" **添加 DNS 记录** "部分，使用表中第二行的值创建记录，然后再次选择"创建 **记录** "以完成该记录。 
     
 > [!NOTE]
 >  DNS 更改通常需要 15 分钟左右才能生效。 但是，有时可能需要更长时间，您所做的更改才会在 Internet 的 DNS 系统中更新。 如果添加 DNS 记录后遇到邮件流问题或其他问题，请参阅 [更改域名或 DNS 记录后出现的问题的疑难解答](../get-help-with-domains/find-and-fix-issues.md)。 
-  

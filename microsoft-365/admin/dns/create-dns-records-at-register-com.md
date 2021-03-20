@@ -1,5 +1,5 @@
 ---
-title: 在 Microsoft Register.com创建 DNS 记录
+title: 在 Microsoft Register.com 创建 DNS 记录
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -20,15 +20,15 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 55bd8c38-3316-48ae-a368-4959b2c1684e
-description: 了解如何验证域，并设置电子邮件、Skype for Business Online 和其他 Microsoft Register.com DNS 记录。
-ms.openlocfilehash: dd2f3d516b5309fee85dd572470fe610ff277a68
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+description: 了解如何验证域，并设置电子邮件、Skype for Business Online 和 Microsoft Register.com 的其他服务的 DNS 记录。
+ms.openlocfilehash: 439b96ef7ad2fd70b94c3945519d4fa270e43fd2
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49657588"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50910050"
 ---
-# <a name="create-dns-records-at-registercom-for-microsoft"></a>在 Microsoft Register.com创建 DNS 记录
+# <a name="create-dns-records-at-registercom-for-microsoft"></a>在 Microsoft Register.com 创建 DNS 记录
 
  **如果找不到要查找的内容，请 [查看域常见问题解答](../setup/domains-faq.yml)** 。 
   
@@ -46,7 +46,7 @@ ms.locfileid: "49657588"
 
 - [添加 Microsoft 所需的两条 SRV 记录](#add-the-two-srv-records-that-are-required-for-microsoft)
     
-在网站中添加这些Register.com，域将设置为使用 Microsoft 服务。
+在添加这些记录 Register.com，域将设置为使用 Microsoft 服务。
   
 
   
@@ -61,17 +61,17 @@ ms.locfileid: "49657588"
 > [!NOTE]
 > 此记录仅用于验证您是否拥有自己的域；它不会影响其他任何内容。 如果需要，您可以以后将其删除。 
   
-按照以下步骤操作，或观看视频 ([0：44) 。 ](https://support.microsoft.com/office/7448dd9e-c0e7-4d5e-a7e9-f0e4715433c4)
+按照以下步骤操作或 [观看视频， (从 0：44 开始 ](https://support.microsoft.com/office/7448dd9e-c0e7-4d5e-a7e9-f0e4715433c4)) 。
   
 1. 若要开始，请使用[此链接](https://www.register.com/myaccount/)转到 Register.com 上您的域页面。 系统将会提示您登录。
     
 2. 选择" **域**"。
     
-3. 选择 **"管理"。**
+3. 选择"**管理"。**
     
-4. 查找包含要修改的域的名称的行;然后，在该行中，选择"**管理"。**
+4. 查找包含要修改的域名称的行;然后，在该行中，选择"管理 **"。**
     
-5. 向下滚动到"**高级技术设置**"部分，然后选择"编辑 **SPF (TXT) 。**
+5. 向下滚动到"**高级技术设置"** 部分，然后选择"编辑 SPF (**TXT) "。**
     
 6. In the boxes for the new record, type or copy and paste the values from the following table.
     
@@ -80,9 +80,9 @@ ms.locfileid: "49657588"
     |**Host Name** <br/> |**TXT Record** <br/> |
     |@  <br/> |MS=ms *XXXXXXXX*  <br/> **注意：** 这是一个示例。 在这里使用表中的特定“**目标地址或指向的地址**”值。 [如何查找此项？](../get-help-with-domains/information-for-dns-records.md)          |
    
-7. 选择 **"继续"。**
+7. 选择"**继续"。**
     
-8. 下一页上 **，再次选择** "继续"以确认所做的更改。 
+8. 下一页上，再次 **选择"继续** "以确认更改。 
     
 9. 请在继续之前等待数分钟，以便您刚刚创建的记录可以通过 Internet 完成更新。
     
@@ -104,27 +104,27 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
 ## <a name="add-an-mx-record-so-email-for-your-domain-will-come-to-microsoft"></a>添加一条 MX 记录，确保发往你的域的电子邮件将会发送到 Microsoft
 <a name="BKMK_add_MX"> </a>
 
-按照以下步骤操作，或 [观看 (3：32 ](https://support.microsoft.com/office/7448dd9e-c0e7-4d5e-a7e9-f0e4715433c4)开始) 。
+按照以下步骤操作或 [观看视频， (3：32 开始 ](https://support.microsoft.com/office/7448dd9e-c0e7-4d5e-a7e9-f0e4715433c4)) 。
   
 1. 若要开始，请使用[此链接](https://www.register.com/myaccount/)转到 Register.com 上您的域页面。 系统将会提示您登录。
     
 2. 选择" **域**"。
     
-3. 选择 **"管理"。**
+3. 选择"**管理"。**
     
-4. 查找包含要修改的域的名称的行;然后，在该行中，选择"**管理"。**
+4. 查找包含要修改的域名称的行;然后，在该行中，选择"管理 **"。**
     
-5. 滚动到 **"高级技术设置"** 部分，然后选择 **"编辑邮件交换器记录"。**
+5. 滚动到"**高级技术设置"** 部分，然后选择"编辑 **邮件交换器记录"。**
     
     ![选择"编辑邮件交换器记录"](../../media/366b96a1-9147-4bbb-9f8f-50856466cc61.png)
   
 6. 在新记录的框中，键入或复制并粘贴下表中的值。
     
-     (**从下拉列表中选择** 优先级值。)  
+     (从下拉列表 **中选择** 优先级值。)  
     
-    |****主机名****|Priority****|邮件服务器****|
+    |****主机名****|优先级****|邮件服务器****|
     |:-----|:-----|:-----|
-    |@  <br/> |高  <br/> 有关优先级的详细信息，请参阅[什么是 MX 优先级？](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/> | *\<domain-key\>*  .mail.protection.outlook.com  <br/>  <br/>**注意：** 从 Microsoft 帐户获取 \<*domain-key*\>。 <br> [如何查找此项？](../get-help-with-domains/information-for-dns-records.md)          |
+    |@  <br/> |高  <br/> 有关优先级的详细信息，请参阅[什么是 MX 优先级？](../setup/domains-faq.yml) <br/> | *\<domain-key\>*  .mail.protection.outlook.com  <br/>  <br/>**注意：** 从 Microsoft 帐户获取 \<*domain-key*\>。 <br> [如何查找此项？](../get-help-with-domains/information-for-dns-records.md)          |
    
     ![复制并粘贴表中的值](../../media/a1a15a14-c3dc-45dc-adcd-90fdb3f7455d.png)
   
@@ -132,28 +132,28 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
     
     ![选择要删除的每个记录](../../media/0708d03e-346f-4ae7-8cc4-01589efc00ce.png)
   
-8. 选择 **"继续"。**
+8. 选择"**继续"。**
     
     ![选择"继续"](../../media/6ef6ce01-ce21-4e3c-8209-4aa9a3dd4b76.png)
   
-9. 下一页上， **再次** 选择"继续"以确认并保存更改。 
+9. 下一页上，再次 **选择"继续** "以确认并保存更改。 
     
     ![选择"继续"](../../media/adba4a60-bf61-44fc-9ad9-360e66f8a2ee.png)
   
 ## <a name="add-the-cname-records-that-are-required-for-microsoft"></a>添加 Microsoft 所需的 CNAME 记录
 <a name="BKMK_add_CNAME"> </a>
 
-按照以下步骤操作或观看视频 ([从 4：23 开始 ](https://support.microsoft.com/office/7448dd9e-c0e7-4d5e-a7e9-f0e4715433c4)) 。
+按照以下步骤操作或[观看视频， (4：23) 。 ](https://support.microsoft.com/office/7448dd9e-c0e7-4d5e-a7e9-f0e4715433c4)
   
 1. 若要开始，请使用[此链接](https://www.register.com/myaccount/)转到 Register.com 上您的域页面。 系统将会提示您登录。
     
 2. 选择" **域**"。
     
-3. 选择 **"管理"。**
+3. 选择"**管理"。**
     
-4. 查找包含要修改的域的名称的行;然后，在该行中，选择"**管理"。**
+4. 查找包含要修改的域名称的行;然后，在该行中，选择"管理 **"。**
     
-5. 滚动到 **"高级技术设置"** 部分，然后选择"**编辑域别名记录"。**
+5. 滚动到"**高级技术设置"** 部分，然后选择"编辑 **域别名记录"。**
     
     ![选择"编辑域别名记录"](../../media/9fbc31ed-d67c-4828-8bd4-b51068f1e0ca.png)
   
@@ -165,7 +165,7 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
     
     在新记录的框中，键入或复制并粘贴下表中第一行的值。
     
-    |第一个 (未标记) ****|指向****|
+    |未标记 (字段) ****|指向****|
     |:-----|:-----|
     |自动发现  <br/> |autodiscover.outlook.com  <br/>  <br/> |
     |sip  <br/> |sipdir.online.lync.com  <br/>  <br/> |
@@ -179,7 +179,7 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
     
     ![选择"继续"](../../media/1942612b-338a-48fa-a45d-2d5434516723.png)
   
-9. 下一页上， **再次** 选择"继续"以确认并保存更改。 
+9. 下一页上，再次 **选择"继续** "以确认并保存更改。 
     
     ![选择"继续"](../../media/3342b570-0633-49c5-9175-5cc8e4a67b53.png)
   
@@ -189,19 +189,19 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
 > [!IMPORTANT]
 > 一个域所拥有的 SPF 的 TXT 记录不能超过一个。 如果域具有多个 SPF 记录，你将收到电子邮件错误，其中随附发送和垃圾邮件分类问题。 如果你的域已有 SPF 记录，请不要为 Microsoft 创建新记录。 可以将所需的 Microsoft 值添加到当前记录，这样就拥有包含两组值的单个 SPF 记录。  
   
-按照以下步骤操作，或观看视频 ([5：12 开始 ](https://support.microsoft.com/office/7448dd9e-c0e7-4d5e-a7e9-f0e4715433c4)) 。
+按照以下步骤操作或 [观看视频， (5：12 开始 ](https://support.microsoft.com/office/7448dd9e-c0e7-4d5e-a7e9-f0e4715433c4)) 。
   
 1. 若要开始，请使用[此链接](https://www.register.com/myaccount/)转到 Register.com 上您的域页面。 系统将会提示您登录。
     
 2. 选择" **域**"。
     
-3. 选择 **"管理"。**
+3. 选择"**管理"。**
     
-4. 查找包含要修改的域的名称的行;然后，在该行中，选择"**管理"。**
+4. 查找包含要修改的域名称的行;然后，在该行中，选择"管理 **"。**
     
-5. 滚动到 **"高级技术设置**"部分，然后选择"编辑 **SPF (TXT) 。**
+5. 滚动到"**高级技术设置"** 部分，然后选择"编辑 **SPF (TXT) "。**
     
-    ![Select Edit TXT Records (SPF) ](../../media/c917577a-8b3a-4210-ab6e-776e84f926d0.png)
+    ![选择"编辑 SPF (TXT 记录) ](../../media/c917577a-8b3a-4210-ab6e-776e84f926d0.png)
   
 6. 在新记录的框中，键入或复制并粘贴下表中的值。
     
@@ -211,28 +211,28 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
    
      ![复制并粘贴表中的值](../../media/b1dc5036-c13c-4306-b1e3-5a38a74643b7.png)
   
-7. 选择 **"继续"。**
+7. 选择"**继续"。**
     
     ![选择"继续"](../../media/08250c98-1a86-48a8-ad94-f96cf338126b.png)
   
-8. 下一页上， **再次** 选择"继续"以确认并保存更改。 
+8. 下一页上，再次 **选择"继续** "以确认并保存更改。 
     
     ![选择"继续"](../../media/56be3b0a-dc71-471c-9be3-6ab927296f67.png)
   
 ## <a name="add-the-two-srv-records-that-are-required-for-microsoft"></a>添加 Microsoft 所需的两条 SRV 记录
 <a name="BKMK_add_SRV"> </a>
 
-按照下面的步骤操作或 [观看视频， (5：55 开始 ](https://support.microsoft.com/office/7448dd9e-c0e7-4d5e-a7e9-f0e4715433c4)) 。
+按照以下步骤操作或[观看视频， (5：55) 。 ](https://support.microsoft.com/office/7448dd9e-c0e7-4d5e-a7e9-f0e4715433c4)
   
 1. 若要开始，请使用[此链接](https://www.register.com/myaccount/)转到 Register.com 上您的域页面。 系统将会提示您登录。
     
 2. 选择" **域**"。
     
-3. 选择 **"管理"。**
+3. 选择"**管理"。**
     
-4. 查找包含要修改的域的名称的行;然后，在该行中，选择"**管理"。**
+4. 查找包含要修改的域名称的行;然后，在该行中，选择"管理 **"。**
     
-5. 滚动到 **"高级技术设置"** 部分，然后选择"**编辑 SRV 记录"。**
+5. 滚动到"**高级技术设置"** 部分，然后选择"**编辑 SRV 记录"。**
     
     ![选择"编辑 SRV 记录"](../../media/73c149ae-f0d6-460e-880a-7e04a995acc3.png)
   
@@ -240,12 +240,12 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
     
     在新记录的框中，键入或复制并粘贴下表中第一行的值。
     
-     (**从下拉列表中选择** 优先级值。)  
+     (从下拉列表 **中选择** 优先级值。)  
     
-    |服务****|Proto****|****名称****|Priority****|Weight****|Port****|Target****|
+    |服务****|Proto****|****名称****|优先级****|Weight****|端口****|目标****|
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-    |_sip  <br/> |_tls  <br/> |@  <br/> |高  <br/> |1   <br/> |443  <br/> |sipdir.online.lync.com  <br/>  <br/> |
-    |_sipfederationtls  <br/> |_tcp  <br/> |@  <br/> |高  <br/> |1   <br/> |5061  <br/> |sipfed.online.lync.com  <br/>  <br/> |
+    |_sip  <br/> |_tls  <br/> |@  <br/> |高  <br/> |1  <br/> |443  <br/> |sipdir.online.lync.com  <br/>  <br/> |
+    |_sipfederationtls  <br/> |_tcp  <br/> |@  <br/> |高  <br/> |1  <br/> |5061  <br/> |sipfed.online.lync.com  <br/>  <br/> |
    
     ![复制并粘贴表中的值](../../media/71304c81-5845-4a8f-b969-d9efc8721184.png)
   
@@ -255,16 +255,15 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
   
 8. 添加第二条 SRV 记录：
     
-    键入或复制上表中第二行的值，并将其粘贴到第二条记录的框中。
+    键入或复制并粘贴上表中第二行的值到第二条记录的框中。
     
 9. 添加这两条 SRV 记录后，选择"继续 **"。**
     
     ![选择"继续"](../../media/008b255a-42d3-442d-83ea-3ffcb7c8fc5d.png)
   
-10. 下一页上， **再次** 选择"继续"以确认并保存更改。 
+10. 下一页上，再次 **选择"继续** "以确认并保存更改。 
     
     ![选择"继续"](../../media/b4166e3d-7e4b-41ef-b616-747e95aefc37.png)
   
 > [!NOTE]
 > Typically it takes about 15 minutes for DNS changes to take effect. 但是，有时可能需要更长时间，您所做的更改才会在 Internet 的 DNS 系统中更新。 如果在添加 DNS 记录后遇到邮件流问题或其他问题，请参阅[查找在添加域或 DNS 记录后遇到的问题并进行修复](../get-help-with-domains/find-and-fix-issues.md)。 
-  

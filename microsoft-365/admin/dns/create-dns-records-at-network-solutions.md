@@ -1,5 +1,5 @@
 ---
-title: 在 Microsoft 网络解决方案创建 DNS 记录
+title: 在 Network Solutions for Microsoft 创建 DNS 记录
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -20,19 +20,19 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 1dc55f9f-5309-450f-acc3-b2b4119c8be3
-description: 了解如何在 Microsoft 网络解决方案中验证域并设置电子邮件、Skype for Business Online 和其他服务的 DNS 记录。
-ms.openlocfilehash: 9cb403bb8b469f2d7f4e6138ba5833120ea53585
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+description: 了解在 Network Solutions for Microsoft 中验证域并设置电子邮件、Skype for Business Online 和其他服务的 DNS 记录。
+ms.openlocfilehash: f25e21037695c99489adc9038bf70629a103ec7a
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49657787"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50910134"
 ---
-# <a name="create-dns-records-at-network-solutions-for-microsoft"></a>在 Microsoft 网络解决方案创建 DNS 记录
+# <a name="create-dns-records-at-network-solutions-for-microsoft"></a>在 Network Solutions for Microsoft 创建 DNS 记录
 
  如果找不到要查找的内容，请 **[查看域常见问题解答](../setup/domains-faq.yml)**。 
   
-如果 Network Solutions 是 DNS 托管提供商，请按照本文中的步骤验证域，并设置电子邮件、Skype for Business Online 等的 DNS 记录。
+如果 Network Solutions 是 DNS 托管提供商，请按照本文中的步骤验证域并设置电子邮件、Skype for Business Online 等的 DNS 记录。
   
 下面是要添加的主要记录。 请按下列步骤操作或[观看视频](https://support.microsoft.com/office/c49698c2-6991-47fb-b5ac-18e49a505099)。 
   
@@ -66,7 +66,7 @@ ms.locfileid: "49657787"
 1. 若要开始，请使用[此链接](https://www.networksolutions.com/manage-it)转到 Network Solutions 上你的域页面。系统将会提示您登录。
     
     > [!IMPORTANT]
-    > 在选择"**登录"** 按钮之前，首先在"登录："下拉列表中选择"管理我的域名"。 
+    > 选择"登录 **"按钮之前**，**先在"** 登录："下拉列表中选择"管理我的域名"。 
   
     ![选择'管理我的域名'并登录到 Network Solutions](../../media/fda7d4a1-9445-4086-be9c-87c6983ef2aa.png)
   
@@ -84,7 +84,7 @@ ms.locfileid: "49657787"
     
     ![选择"管理高级 DNS 记录"](../../media/fd2956d6-eec3-47ea-b60a-266bab14f51f.png)
   
-5. 向下滚动到 **"TXT 记录 (** 文本) 部分，然后选择"编辑 **TXT 记录"。**
+5. 向下滚动到 **"TXT** 记录 (文本) 部分，然后选择"编辑 **TXT 记录"。**
     
     ![选择"编辑 TXT 记录"](../../media/240a01d6-750a-4da6-8554-641b571e4b71.png)
   
@@ -94,9 +94,9 @@ ms.locfileid: "49657787"
     |:-----|:-----|:-----|
     |@  <br/> (The system will change this value to **@ (None)** when you save the record.)  <br/> |3600  <br/> |MS=ms *XXXXXXXX*  <br/> **注意：** 这是一个示例。 在这里使用表中的特定“**目标地址或指向的地址**”值。  [如何查找此项？](../get-help-with-domains/information-for-dns-records.md)   |
        
-    ![在新记录的框中键入或粘贴值](../../media/8a76daab-b6ff-4c82-ba68-192b24fbb934.png)
+    ![键入或粘贴新记录的框中的值](../../media/8a76daab-b6ff-4c82-ba68-192b24fbb934.png)
   
-7. 选择 **"继续"。**
+7. 选择"**继续"。**
     
     ![选择"继续"](../../media/89e7fb38-b4d9-4949-a1bb-d0dd10b361e0.png)
   
@@ -130,12 +130,12 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
 ## <a name="add-an-mx-record-so-email-for-your-domain-will-come-to-microsoft"></a>添加一条 MX 记录，确保发往你的域的电子邮件将会发送到 Microsoft
 <a name="BKMK_add_MX"> </a>
 
-按照下面的步骤操作或 [观看视频， (3：51 开始 ](https://support.microsoft.com/office/c49698c2-6991-47fb-b5ac-18e49a505099)) 。
+按照以下步骤操作或[观看视频， (3：51) 。 ](https://support.microsoft.com/office/c49698c2-6991-47fb-b5ac-18e49a505099)
   
 1. 若要开始，请使用[此链接](https://www.networksolutions.com/manage-it)转到 Network Solutions 上你的域页面。 系统将会提示您登录。
     
     > [!IMPORTANT]
-    > 在选择"**登录"** 按钮之前，首先在"登录："下拉列表中选择"管理我的域名"。 
+    > 选择"登录 **"按钮之前**，**先在"** 登录："下拉列表中选择"管理我的域名"。 
   
     ![选择'管理我的域名'并登录到 Network Solutions](../../media/fda7d4a1-9445-4086-be9c-87c6983ef2aa.png)
   
@@ -153,7 +153,7 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
     
     ![选择"管理高级 DNS 记录"](../../media/fd2956d6-eec3-47ea-b60a-266bab14f51f.png)
   
-5. 向下滚动到"邮件 **服务器 (MX** 记录) 部分，然后选择"编辑 **MX 记录"。**
+5. 向下滚动到"邮件服务器 (**MX** 记录) 部分，然后选择"编辑 **MX 记录"。**
     
     ![选择"编辑 MX 记录"](../../media/74b4e412-9073-4d2d-8710-fe340b223798.png)
   
@@ -161,11 +161,11 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
     
     |**Priority**|**TTL**|**邮件服务器**|
     |:-----|:-----|:-----|
-    |10   <br/> 有关优先级的详细信息，请参阅[什么是 MX 优先级？](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/> |3600  <br/> | *\<domain-key\>*  .mail.protection.outlook.com。  <br/> **此值必须以句点 (.) 结尾。** <br/> **注意：** 从  *\<domain-key\>*  Microsoft 帐户获取你的帐户。 [如何查找此项？](../get-help-with-domains/information-for-dns-records.md)          |
+    |10    <br/> 有关优先级的详细信息，请参阅[什么是 MX 优先级？](../setup/domains-faq.yml) <br/> |3600  <br/> | *\<domain-key\>*  .mail.protection.outlook.com。  <br/> **此值必须以句点 (.) 结尾。** <br/> **注意：** 从  *\<domain-key\>*  Microsoft 帐户获取你的信息。 [如何查找此项？](../get-help-with-domains/information-for-dns-records.md)          |
        
-    ![在新记录的框中键入或粘贴值](../../media/0bb96872-cc6e-4dfa-a649-fb7efbbf0012.png)
+    ![键入或粘贴新记录的框中的值](../../media/0bb96872-cc6e-4dfa-a649-fb7efbbf0012.png)
   
-7. 选择 **"继续"。**
+7. 选择"**继续"。**
     
     ![选择"继续"](../../media/963f758b-e79d-4452-8340-7eba8a3972c9.png)
   
@@ -173,11 +173,11 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
     
     ![选择"保存更改"](../../media/7c2f784a-6dee-4364-866c-ad7202ef1fc2.png)
   
-9. 如果存在任何其他 MX 记录，请通过选择"删除"来 **删除所有** MX 记录。 
+9. 如果存在任何其他 MX 记录，则通过选择"删除每条记录 **"来** 删除所有记录。 
     
     ![选中其他 MX 记录的"删除"复选框](../../media/709d6133-9f5d-490a-a91e-95e21ca94695.png)
   
-10. 当它们全部选中时，选择"继续 **"。**
+10. 选择它们后，选择"继续 **"。**
     
     ![选择"继续"](../../media/4710f988-0bbc-4ba7-bf31-ca2392b2900e.png)
   
@@ -188,12 +188,12 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
 ## <a name="add-the-cname-records-that-are-required-for-microsoft"></a>添加 Microsoft 所需的 CNAME 记录
 <a name="BKMK_add_CNAME"> </a>
 
-按照下面的步骤操作或 [观看视频， (4：43 开始 ](https://support.microsoft.com/office/c49698c2-6991-47fb-b5ac-18e49a505099)) 。
+按照以下步骤操作或 [观看视频， (4：43 开始 ](https://support.microsoft.com/office/c49698c2-6991-47fb-b5ac-18e49a505099)) 。
   
 1. 若要开始，请使用[此链接](https://www.networksolutions.com/manage-it)转到 Network Solutions 上你的域页面。 系统将会提示您登录。
     
     > [!IMPORTANT]
-    > 在选择"**登录"** 按钮之前，首先在"登录："下拉列表中选择"管理我的域名"。 
+    > 选择"登录 **"按钮之前**，**先在"** 登录："下拉列表中选择"管理我的域名"。 
   
     ![选择'管理我的域名'并登录到 Network Solutions](../../media/fda7d4a1-9445-4086-be9c-87c6983ef2aa.png)
   
@@ -211,7 +211,7 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
     
     ![选择"管理高级 DNS 记录"](../../media/fd2956d6-eec3-47ea-b60a-266bab14f51f.png)
   
-5. 向下滚动到 **"CNAME** 记录 (的主机别名) 部分，然后选择"编辑 **CNAME 记录"。**
+5. Scroll down to the **Host Aliases (CNAME Records)** section， and then select Edit **CNAME Records**.
     
     ![选择"主机别名"下的"编辑 CNAME 记录"](../../media/2d0a4666-8d40-48f4-886c-64a5157baaf5.png)
   
@@ -239,14 +239,14 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
 <a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]
-> 一个域所拥有的 SPF 的 TXT 记录不能超过一个。 如果域具有多个 SPF 记录，你将收到电子邮件错误，其中随附发送和垃圾邮件分类问题。 如果你的域已有 SPF 记录，请不要为 Microsoft 创建新记录。 相反，将所需的 Microsoft 值添加到当前记录，以便具有一个  *包含这*  两组值的 SPF 记录。 
+> 一个域所拥有的 SPF 的 TXT 记录不能超过一个。 如果域具有多个 SPF 记录，你将收到电子邮件错误，其中随附发送和垃圾邮件分类问题。 如果你的域已有 SPF 记录，请不要为 Microsoft 创建新记录。 相反，将所需的 Microsoft 值添加到当前记录，以便你有一个  *包含这*  两组值的 SPF 记录。 
   
-按照下面的步骤操作或 [观看视频， (5：35 开始 ](https://support.microsoft.com/office/c49698c2-6991-47fb-b5ac-18e49a505099)) 。
+按照以下步骤操作或[观看视频， (5：35) 。 ](https://support.microsoft.com/office/c49698c2-6991-47fb-b5ac-18e49a505099)
   
 1. 若要开始，请使用[此链接](https://www.networksolutions.com/manage-it)转到 Network Solutions 上你的域页面。 系统将会提示您登录。
     
     > [!IMPORTANT]
-    > 在选择"**登录"** 按钮之前，首先在"登录："下拉列表中选择"管理我的域名"。 
+    > 选择"登录 **"按钮之前**，**先在"** 登录："下拉列表中选择"管理我的域名"。 
   
     ![选择'管理我的域名'并登录到 Network Solutions](../../media/fda7d4a1-9445-4086-be9c-87c6983ef2aa.png)
   
@@ -264,7 +264,7 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
     
     ![选择"管理高级 DNS 记录"](../../media/fd2956d6-eec3-47ea-b60a-266bab14f51f.png)
   
-5. 向下滚动到 **"TXT 记录 (** 文本) 部分，然后选择"编辑 **TXT 记录"。**
+5. 向下滚动到 **"TXT** 记录 (文本) 部分，然后选择"编辑 **TXT 记录"。**
     
     ![选择"文本"下的"编辑 TXT 记录"](../../media/a69a2631-6da2-4e81-99ab-9a9ab9b30b07.png)
   
@@ -276,7 +276,7 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
        
     ![键入或粘贴新记录的值](../../media/11564eca-e2ee-4f17-af2b-a00eb7c157db.png)
   
-7. 选择 **"继续"。**
+7. 选择"**继续"。**
     
     ![选择"继续"](../../media/482a8dae-0c79-47c4-8bd8-87965683de24.png)
   
@@ -287,12 +287,12 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
 ## <a name="add-the-two-srv-records-that-are-required-for-microsoft"></a>添加 Microsoft 所需的两条 SRV 记录
 <a name="BKMK_add_SRV"> </a>
 
-按照下面的步骤操作，或观看 ([6：18 ](https://support.microsoft.com/office/c49698c2-6991-47fb-b5ac-18e49a505099)开始) 。
+按照以下步骤操作或[观看视频， (6：18 开始) 。 ](https://support.microsoft.com/office/c49698c2-6991-47fb-b5ac-18e49a505099)
   
 1. 若要开始，请使用[此链接](https://www.networksolutions.com/manage-it)转到 Network Solutions 上你的域页面。 系统将会提示您登录。
     
     > [!IMPORTANT]
-    > 在选择"**登录"** 按钮之前，首先在"登录："下拉列表中选择"管理我的域名"。 
+    > 选择"登录 **"按钮之前**，**先在"** 登录："下拉列表中选择"管理我的域名"。 
   
     ![选择'管理我的域名'并登录到 Network Solutions](../../media/fda7d4a1-9445-4086-be9c-87c6983ef2aa.png)
   
@@ -310,22 +310,22 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
     
     ![选择"管理高级 DNS 记录"](../../media/fd2956d6-eec3-47ea-b60a-266bab14f51f.png)
   
-5. 向下滚动到 **"SRV 记录 ("** 部分，) "编辑 **SRV 记录"。**
+5. 向下滚动到"**服务" ("SRV 记录) "** 部分，然后选择"编辑 **SRV 记录"。**
     
     ![选择"服务"下的"编辑 SRV 记录"](../../media/9a9248ea-5de5-4e16-9364-f7600fa371f5.png)
   
 6. 在两条新记录的框中，键入或复制并粘贴下表中的值。
     
-     (从 **下拉列表****中选择** 服务和协议值。)  
+     (下拉列表 **中选择**"服务和协议"值。)  
     
     |**服务**|**协议**|**TTL**|**优先级**|**权重**|**端口**|**目标**|
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-    |_sip  <br/> |_tls  <br/> |3600  <br/> |100  <br/> |1   <br/> |443  <br/> |sipdir.online.lync.com.  <br/> **此值必须以句点 (.) 结尾。** <br/> |
-    |_sipfederationtls  <br/> |_tcp  <br/> |3600  <br/> |100  <br/> |1   <br/> |5061  <br/> |sipfed.online.lync.com。  <br/> **此值必须以句点 (.) 结尾。** <br/> |
+    |_sip  <br/> |_tls  <br/> |3600  <br/> |100  <br/> |1  <br/> |443  <br/> |sipdir.online.lync.com.  <br/> **此值必须以句点 (.) 结尾。** <br/> |
+    |_sipfederationtls  <br/> |_tcp  <br/> |3600  <br/> |100  <br/> |1  <br/> |5061  <br/> |sipfed.online.lync.com。  <br/> **此值必须以句点 (.) 结尾。** <br/> |
        
     ![键入或粘贴新记录的值](../../media/86968d1c-8e43-4e61-aeaa-37fc7d7ef7a7.png)
   
-7. 选择 **"继续"。**
+7. 选择"**继续"。**
     
     ![选择"继续"](../../media/bfe2c778-5d2b-4bb6-a79d-c3ff9caf9e1e.png)
   
@@ -335,4 +335,3 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
   
 > [!NOTE]
 >  DNS 更改通常需要 15 分钟左右才能生效。 但是，有时可能需要更长时间，您所做的更改才会在 Internet 的 DNS 系统中更新。 如果添加 DNS 记录后遇到邮件流问题或其他问题，请参阅 [更改域名或 DNS 记录后出现的问题的疑难解答](../get-help-with-domains/find-and-fix-issues.md)。 
-  

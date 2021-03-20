@@ -20,13 +20,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 5176feef-36dc-4d84-842f-1f2b5a21ba96
-description: 了解如何在 OVH for Microsoft 中验证域并设置电子邮件、Skype for Business Online 和其他服务的 DNS 记录。
-ms.openlocfilehash: 14c3796ff6686ae0d98ec32ec6ddf6afc004a3c3
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+description: 了解如何验证域，并设置电子邮件、Skype for Business Online 和 OVH for Microsoft 的其他服务的 DNS 记录。
+ms.openlocfilehash: a43593af80d2f651e4407de64ed9aab51f1c1ecb
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49657775"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50910062"
 ---
 # <a name="create-dns-records-at-ovh-for-microsoft"></a>在 OVH 为 Microsoft 创建 DNS 记录
 
@@ -60,7 +60,7 @@ ms.locfileid: "49657775"
 > [!NOTE]
 > 此记录仅用于验证您是否拥有自己的域；它不会影响其他任何内容。 如果需要，您可以以后将其删除。 
   
-1. To get started， go to your domains page in OVH by using [this link.](https://www.ovh.com/manager/) You'll be prompted to log in.
+1. To get started， go to your domains page in OVH by using [this link](https://www.ovh.com/manager/). You'll be prompted to log in.
     
     ![OVH 登录](../../media/1424cc15-720d-49d1-b99b-8ba63b216238.png)
   
@@ -68,7 +68,7 @@ ms.locfileid: "49657775"
     
     ![OVH 选择域](../../media/fe407909-4ea6-4b92-a3bd-dec4022b1d8d.png)
   
-3. 选择 **DNS 区域**。
+3. 选择 **"DNS 区域"。**
     
     ![OVH 选择 DNS 区域](../../media/45218cbe-f3f8-4804-87f9-cfcef89ea113.png)
   
@@ -80,7 +80,7 @@ ms.locfileid: "49657775"
     
     ![OVH 选择 TXT 条目](../../media/3aaa9dae-0b1d-436b-a980-b67a970f31a9.png)
   
-6. 在新记录的框中，键入或复制并粘贴下表中的值。 若要分配 TTL 值， **请从** 下拉列表中选择"个性化"，然后在文本框中键入该值。 
+6. 在新记录的框中，键入或复制并粘贴下表中的值。 若要分配 TTL 值， **请从下拉列表** 中选择"个性化"，然后在文本框中键入该值。 
     
     |**记录类型**|**子域**|**TTL**|**值**|
     |:-----|:-----|:-----|:-----|
@@ -116,7 +116,7 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
 ## <a name="add-an-mx-record-so-email-for-your-domain-will-come-to-microsoft"></a>添加一条 MX 记录，确保发往你的域的电子邮件将会发送到 Microsoft
 <a name="bkmk_mx"> </a>
 
-1. To get started， go to your domains page in OVH by using [this link.](https://www.ovh.com/manager/) You'll be prompted to log in.
+1. To get started， go to your domains page in OVH by using [this link](https://www.ovh.com/manager/). You'll be prompted to log in.
     
     ![OVH 登录](../../media/1424cc15-720d-49d1-b99b-8ba63b216238.png)
   
@@ -124,7 +124,7 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
     
     ![OVH 选择域](../../media/fe407909-4ea6-4b92-a3bd-dec4022b1d8d.png)
   
-3. 选择 **DNS 区域**。
+3. 选择 **"DNS 区域"。**
     
     ![OVH 选择 DNS 区域](../../media/45218cbe-f3f8-4804-87f9-cfcef89ea113.png)
   
@@ -136,26 +136,26 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
     
     ![OVH MX 记录类型](../../media/29b5e54e-440a-41f2-9eb9-3de573922ddf.png)
   
-6. 在新记录的框中，键入或复制并粘贴下表中的值。 若要分配 TTL 值， **请从** 下拉列表中选择"个性化"，然后在文本框中键入该值。 
+6. 在新记录的框中，键入或复制并粘贴下表中的值。 若要分配 TTL 值， **请从下拉列表** 中选择"个性化"，然后在文本框中键入该值。 
     
     > [!NOTE]
-    > 默认情况下，OVH 对目标使用相对表示法，从而将域名添加到目标记录的末尾。 若要改为使用绝对表示法，请为目标记录添加一个点，如下表所示。 
+    > 默认情况下，OVH 对目标使用相对表示法，它将域名添加到目标记录的末尾。 若要改为使用绝对表示法，请为目标记录添加一个点，如下表所示。 
   
     |**记录类型**|**子域**|**TTL**|**Priority**|**Target**|
     |:-----|:-----|:-----|:-----|:-----|
-    |MX  <br/> |（保留为空白）  <br/> |3600 (秒)   <br/> |10   <br/> 有关优先级的详细信息，请参阅[什么是 MX 优先级？](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/> |\<domain-key\>.mail.protection.outlook.com。  <br/> **注意：** 从  *\<domain-key\>*  Microsoft 帐户获取你的帐户。  [如何查找此项？](../get-help-with-domains/information-for-dns-records.md)  |
+    |MX  <br/> |（保留为空白）  <br/> |3600 (秒)   <br/> |10    <br/> 有关优先级的详细信息，请参阅[什么是 MX 优先级？](../setup/domains-faq.yml) <br/> |\<domain-key\>.mail.protection.outlook.com。  <br/> **注意：** 从  *\<domain-key\>*  Microsoft 帐户获取你的信息。  [如何查找此项？](../get-help-with-domains/information-for-dns-records.md)  |
    
     ![邮件的 OVH MX 记录](../../media/6e2f5655-93e2-4620-8f19-c452e7edf8f0.png)
   
-7. 选择“**下一步**”。
+7. 选择“下一步”。
     
-    ![OVH MX 记录选择"下一步"](../../media/4db62d07-0dc4-49f6-bd19-2b4a07fd764a.png)
+    ![OVH MX 记录选择下一步](../../media/4db62d07-0dc4-49f6-bd19-2b4a07fd764a.png)
   
 8. 选择“**确认**”。
     
-    ![OVH MX 记录选择"确认"](../../media/090bfb11-a753-4af0-8982-582a4069a169.png)
+    ![OVH MX 记录选择确认](../../media/090bfb11-a753-4af0-8982-582a4069a169.png)
   
-9. 如果存在任何其他 MX 记录，请将它们全部删除在 DNS 区域页上 **的** 列表中。 选择每条记录，然后在"操作" **列中选择** "回收站可以 **删除"** 图标。 
+9. 如果存在任何其他 MX 记录，请将它们全部删除在 DNS 区域页面上 **的** 列表中。 选择每条记录，然后在"操作" **列中，** 选择"回收站可以 **删除"** 图标。 
     
     ![OVH 删除 MX 记录](../../media/892b328b-7057-4828-b8c5-fe26284dc8c2.png)
   
@@ -164,7 +164,7 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
 ## <a name="add-the-cname-records-that-are-required-for-microsoft"></a>添加 Microsoft 所需的 CNAME 记录
 <a name="bkmk_cname"> </a>
 
-1. To get started， go to your domains page in OVH by using [this link.](https://www.ovh.com/manager/) You'll be prompted to log in.
+1. To get started， go to your domains page in OVH by using [this link](https://www.ovh.com/manager/). You'll be prompted to log in.
     
     ![OVH 登录](../../media/1424cc15-720d-49d1-b99b-8ba63b216238.png)
   
@@ -172,7 +172,7 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
     
     ![OVH 选择域](../../media/fe407909-4ea6-4b92-a3bd-dec4022b1d8d.png)
   
-3. 选择 **DNS 区域**。
+3. 选择 **"DNS 区域"。**
     
     ![OVH 选择 DNS 区域](../../media/45218cbe-f3f8-4804-87f9-cfcef89ea113.png)
   
@@ -180,13 +180,13 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
     
     ![OVH 添加条目](../../media/13ded54b-9e48-4c98-8e1b-8c4a99633bc0.png)
   
-5. 选择 **CNAME**。
+5. 选择 **"CNAME"。**
     
     ![OVH 添加 CNAME 记录类型](../../media/33c7ac74-18d7-4ae1-9e27-1c0f9773a3c3.png)
   
 6. 创建第一条 CNAME 记录。
     
-    在新记录的框中，键入或复制并粘贴下表中第一行的值。 若要分配 TTL 值， **请从** 下拉列表中选择"个性化"，然后在文本框中键入该值。 
+    在新记录的框中，键入或复制并粘贴下表中第一行的值。 若要分配 TTL 值， **请从下拉列表** 中选择"个性化"，然后在文本框中键入该值。 
     
     |**记录类型**|**子域**|**Target**|**TTL**|
     |:-----|:-----|:-----|:-----|
@@ -198,9 +198,9 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
    
     ![OVH CNAME 记录](../../media/516938b3-0b12-4736-a631-099e12e189f5.png)
   
-7. 选择“**下一步**”。
+7. 选择“下一步”。
     
-    ![OVH 添加 CNAME 值并选择"下一步"](../../media/f9481cb1-559d-4da1-9643-9cacb0d80d29.png)
+    ![OVH 添加 CNAME 值并选择下一步](../../media/f9481cb1-559d-4da1-9643-9cacb0d80d29.png)
   
 8. 选择“**确认**”。
     
@@ -212,9 +212,9 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
 <a name="bkmk_spf"> </a>
 
 > [!IMPORTANT]
-> 一个域所拥有的 SPF 的 TXT 记录不能超过一个。 如果域具有多个 SPF 记录，你将收到电子邮件错误，其中随附发送和垃圾邮件分类问题。 如果你的域已有 SPF 记录，请不要为 Microsoft 创建新记录。 相反，将所需的 Microsoft 值添加到当前记录，以便具有一个  *包含这*  两组值的 SPF 记录。 
+> 一个域所拥有的 SPF 的 TXT 记录不能超过一个。 如果域具有多个 SPF 记录，你将收到电子邮件错误，其中随附发送和垃圾邮件分类问题。 如果你的域已有 SPF 记录，请不要为 Microsoft 创建新记录。 相反，将所需的 Microsoft 值添加到当前记录，以便你有一个  *包含这*  两组值的 SPF 记录。 
   
-1. To get started， go to your domains page in OVH by using [this link.](https://www.ovh.com/manager/) You'll be prompted to log in.
+1. To get started， go to your domains page in OVH by using [this link](https://www.ovh.com/manager/). You'll be prompted to log in.
     
     ![OVH 登录](../../media/1424cc15-720d-49d1-b99b-8ba63b216238.png)
   
@@ -222,7 +222,7 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
     
     ![OVH 选择域](../../media/fe407909-4ea6-4b92-a3bd-dec4022b1d8d.png)
   
-3. 选择 **DNS 区域**。
+3. 选择 **"DNS 区域"。**
     
     ![OVH 选择 DNS 区域](../../media/45218cbe-f3f8-4804-87f9-cfcef89ea113.png)
   
@@ -240,9 +240,9 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
    
     ![OVH 为 SPF 添加 TXT 记录](../../media/f50466e9-1557-4548-8a39-e98978a5ee2e.png)
   
-7. 选择“**下一步**”。
+7. 选择“下一步”。
     
-    ![OVH 为 SPF 添加 TXT 记录，然后选择"下一步"](../../media/7937eb7c-114f-479f-a916-bcbe476d6108.png)
+    ![OVH 为 SPF 添加 TXT 记录并选择下一步](../../media/7937eb7c-114f-479f-a916-bcbe476d6108.png)
   
 8. 选择“**确认**”。
     
@@ -251,7 +251,7 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
 ## <a name="add-the-two-srv-records-that-are-required-for-microsoft"></a>添加 Microsoft 所需的两条 SRV 记录
 <a name="bkmk_srv"> </a>
 
-1. To get started， go to your domains page in OVH by using [this link.](https://www.ovh.com/manager/) You'll be prompted to log in.
+1. To get started， go to your domains page in OVH by using [this link](https://www.ovh.com/manager/). You'll be prompted to log in.
     
     ![OVH 登录](../../media/1424cc15-720d-49d1-b99b-8ba63b216238.png)
   
@@ -259,7 +259,7 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
     
     ![OVH 选择域](../../media/fe407909-4ea6-4b92-a3bd-dec4022b1d8d.png)
   
-3. 选择 **DNS 区域**。
+3. 选择 **"DNS 区域"。**
     
     ![OVH 选择 DNS 区域](../../media/45218cbe-f3f8-4804-87f9-cfcef89ea113.png)
   
@@ -273,23 +273,22 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
   
 6. 创建第一条 SRV 记录。
     
-    在新记录的框中，键入或复制并粘贴下表中第一行的值。 若要分配 TTL 值， **请从** 下拉列表中选择"个性化"，然后在文本框中键入该值。 
+    在新记录的框中，键入或复制并粘贴下表中第一行的值。 若要分配 TTL 值， **请从下拉列表** 中选择"个性化"，然后在文本框中键入该值。 
     
     |**记录类型**|**子域**|**优先级**|**权重**|**端口**|**TTL**|**Target**|
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-    |SRV（服务）  <br/> |_sip._tls  <br/> |100  <br/> |1   <br/> |443  <br/> |3600 (秒)   <br/> |sipdir.online.lync.com.  <br/> |
-    |SRV（服务）  <br/> |_sipfederationtls._tcp  <br/> |100  <br/> |1   <br/> |5061  <br/> |3600 (秒)   <br/> |sipfed.online.lync.com。  <br/> |
+    |SRV（服务）  <br/> |_sip._tls  <br/> |100  <br/> |1  <br/> |443  <br/> |3600 (秒)   <br/> |sipdir.online.lync.com.  <br/> |
+    |SRV（服务）  <br/> |_sipfederationtls._tcp  <br/> |100  <br/> |1  <br/> |5061  <br/> |3600 (秒)   <br/> |sipfed.online.lync.com。  <br/> |
        
     ![OVH SRV 记录](../../media/73956b9e-9e4f-40a5-803e-c4ead2f77fa6.png)
   
-7. 选择“**下一步**”。
+7. 选择“下一步”。
     
-    ![OVH SRV 记录选择"下一步"](../../media/cb4ad7e2-a8f0-4ab1-9797-d1b51c1d2da9.png)
+    ![OVH SRV 记录选择下一步](../../media/cb4ad7e2-a8f0-4ab1-9797-d1b51c1d2da9.png)
   
 8. 选择“**确认**”。
     
-9. 重复上述步骤以创建其他 SRV 记录。 键入或复制上表中第二行的值，并将其粘贴到第二条记录的框中。
+9. 重复上述步骤以创建其他 SRV 记录。 键入或复制并粘贴上表中第二行的值到第二条记录的框中。
     
 > [!NOTE]
 >  DNS 更改通常需要 15 分钟左右才能生效。 但是，有时可能需要更长时间，您所做的更改才会在 Internet 的 DNS 系统中更新。 如果添加 DNS 记录后遇到邮件流问题或其他问题，请参阅 [更改域名或 DNS 记录后出现的问题的疑难解答](../get-help-with-domains/find-and-fix-issues.md)。 
-  

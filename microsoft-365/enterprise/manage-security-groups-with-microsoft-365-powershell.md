@@ -17,25 +17,25 @@ ms.custom:
 - Ent_Office_Other
 - O365ITProTrain
 description: 了解如何使用 PowerShell 管理安全组。
-ms.openlocfilehash: a52fcf6a20598e92f9d5ac8d673a4b1c026030f8
-ms.sourcegitcommit: fcc1b40732f28f075d95faffc1655473e262dd95
+ms.openlocfilehash: 64a02a1472fdeb0d61cfb4f380cbe61dd7b557b6
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/14/2020
-ms.locfileid: "49073193"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50909498"
 ---
 # <a name="manage-security-groups-with-powershell"></a>使用 PowerShell 管理安全组
 
 *本文适用于 Microsoft 365 企业版和 Office 365 企业版。*
 
-您可以使用 PowerShell for Microsoft 365 作为 Microsoft 365 管理中心管理安全组的替代方法。 
+可以使用适用于 Microsoft 365 的 PowerShell 作为 Microsoft 365 管理中心的替代项来管理安全组。 
 
-本文介绍了如何列出、创建、更改设置和删除安全组。 
+本文介绍列出、创建、更改设置和删除安全组。 
 
-当本文中的命令块要求您指定变量值时，请按照这些步骤操作。
+当本文中的命令块要求您指定变量值时，请使用这些步骤。
 
-1. 将命令块复制到剪贴板，并将其粘贴到记事本或 PowerShell 集成脚本环境中 (ISE) 。
-2. 填写变量值，并删除 "<" 和 ">" 字符。
+1. 将命令块复制到剪贴板并将其粘贴到记事本或 ISE (PowerShell 集成脚本) 。
+2. 填写变量值并删除"<"和">"字符。
 3. 在 PowerShell 窗口或 PowerShell ISE 中运行命令。
 
 请参阅 [维护安全组成员身份](maintain-group-membership-with-microsoft-365-powershell.md) 以使用 PowerShell 管理组成员身份。
@@ -46,12 +46,12 @@ ms.locfileid: "49073193"
 
 ### <a name="list-your-groups"></a>列出你的组
 
-使用此命令可列出你的所有组。
+使用此命令列出所有组。
 
 ```powershell
 Get-AzureADGroup
 ```
-使用这些命令显示特定组的显示名称的设置。
+使用这些命令按特定组的组名称显示显示名称。
 
 ```powershell
 $groupName="<display name of the group>"
@@ -60,7 +60,7 @@ Get-AzureADGroup | Where { $_.DisplayName -eq $groupName }
 
 ### <a name="create-a-new-group"></a>创建新组
 
-使用此命令创建新的安全组。
+使用此命令可创建新的安全组。
 
 ```powershell
 New-AzureADGroup -Description "<group purpose>" -DisplayName "<name>" -MailEnabled $false -SecurityEnabled $true -MailNickName "<email name>"
@@ -75,7 +75,7 @@ $groupName="<display name of the group>"
 Get-AzureADGroup | Where { $_.DisplayName -eq $groupName } | Select *
 ```
 
-然后，使用 [AzureADGroup](https://docs.microsoft.com/powershell/module/azuread/set-azureadgroup) 文章来确定如何更改设置。
+然后，使用 [Set-AzureADGroup](/powershell/module/azuread/set-azureadgroup) 文章确定如何更改设置。
 
 ### <a name="remove-a-security-group"></a>删除安全组
 
@@ -94,21 +94,21 @@ Remove-AzureADGroup -ObjectId (Get-AzureADGroup | Where { $_.DisplayName -eq $gr
 $groupName="<display name of the group>"
 Get-AzureADGroupOwner -ObjectId (Get-AzureADGroup | Where { $_.DisplayName -eq $groupName }).ObjectId
 ```
-使用这些命令通过其用户主体名称将用户帐户添加 **(UPN)** 到安全组的当前所有者。
+使用这些命令按用户帐户的用户主体 (名称将 **UPN**) 添加到安全组的当前所有者。
 
 ```powershell
 $userUPN="<UPN of the user account to add>"
 $groupName="<display name of the group>"
 Add-AzureADGroupOwner -ObjectId (Get-AzureADGroup | Where { $_.DisplayName -eq $groupName }).ObjectId -RefObjectId (Get-AzureADUser | Where { $_.UserPrincipalName -eq $userUPN }).ObjectId
 ```
-使用这些命令将用户帐户的 **显示名称** 添加到安全组的当前所有者。
+使用这些命令按用户帐户的当前所有者显示名称用户帐户。 
 
 ```powershell
 $userName="<Display name of the user account to add>"
 $groupName="<display name of the group>"
 Add-AzureADGroupOwner -ObjectId (Get-AzureADGroup | Where { $_.DisplayName -eq $groupName }).ObjectId -RefObjectId (Get-AzureADUser | Where { $_.DisplayName -eq $userName }).ObjectId
 ```
-使用这些命令可通过其 **UPN** 将用户帐户删除到安全组的当前所有者。
+使用这些命令，通过 **UPN** 将用户帐户删除给安全组的当前所有者。
 
 ```powershell
 $userUPN="<UPN of the user account to remove>"
@@ -116,7 +116,7 @@ $groupName="<display name of the group>"
 Remove-AzureADGroupOwner -ObjectId (Get-AzureADGroup | Where { $_.DisplayName -eq $groupName }).ObjectId -OwnerId (Get-AzureADUser | Where { $_.UserPrincipalName -eq $userUPN }).ObjectId
 ```
 
-使用这些命令将用户帐户的 **显示名称** 删除到安全组的当前所有者。
+使用这些命令通过向安全组的当前显示名称用户帐户删除用户帐户。
 
 ```powershell
 $userName="<Display name of the user account to remove>"
@@ -130,12 +130,12 @@ Remove-AzureADGroupOwner -ObjectId (Get-AzureADGroup | Where { $_.DisplayName -e
 
 ### <a name="list-your-groups"></a>列出你的组
 
-使用此命令可列出你的所有组。
+使用此命令列出所有组。
 
 ```powershell
 Get-MsolGroup
 ```
-使用这些命令显示特定组的显示名称的设置。
+使用这些命令按特定组的组名称显示显示名称。
 
 ```powershell
 $groupName="<display name of the group>"
@@ -144,7 +144,7 @@ Get-MsolGroup | Where { $_.DisplayName -eq $groupName }
 
 ### <a name="create-a-new-group"></a>创建新组
 
-使用此命令创建新的安全组。
+使用此命令可创建新的安全组。
 
 ```powershell
 New-MsolGroup -Description "<group purpose>" -DisplayName "<name>"
@@ -159,7 +159,7 @@ $groupName="<display name of the group>"
 Get-MsolGroup | Where { $_.DisplayName -eq $groupName } | Select *
 ```
 
-然后，使用 [MsolGroup](https://docs.microsoft.com/powershell/module/msonline/set-msolgroup) 文章来确定如何更改设置。
+然后，使用 [Set-MsolGroup](/powershell/module/msonline/set-msolgroup) 文章确定如何更改设置。
 
 ### <a name="remove-a-security-group"></a>删除安全组
 
@@ -177,4 +177,3 @@ Remove-MsolGroup -ObjectId (Get-AzureADGroup | Where { $_.DisplayName -eq $group
 [使用 PowerShell 管理 Microsoft 365](manage-microsoft-365-with-microsoft-365-powershell.md)
   
 [PowerShell for Microsoft 365 入门](getting-started-with-microsoft-365-powershell.md)
-

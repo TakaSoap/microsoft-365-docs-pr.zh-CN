@@ -20,16 +20,16 @@ search.appverid:
 - MOE150
 ms.assetid: b7c66b59-657a-4e1a-8aa0-8163b1f4eb54
 description: 了解如何还原已删除的 Microsoft 365 组。
-ms.openlocfilehash: 091697be54b1127a5cb336179733d51519947e14
-ms.sourcegitcommit: 3cdb670f10519f7af4015731e7910954ba9f70dc
+ms.openlocfilehash: f3b6435d82d5beddf44f5920011b076b39c7dcd5
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "48753239"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50910542"
 ---
 # <a name="restore-a-deleted-microsoft-365-group"></a>还原已删除的 Microsoft 365 组
 
-如果已删除某个组，默认情况下它将保留30天。 这30天的期限被视为 "软删除"，因为您仍可以还原组。 30天后，该组及其关联的内容将被永久删除且无法还原。
+如果已删除某个组，默认情况下该组将保留 30 天。 此 30 天期限被视为"软删除"，因为您仍可以还原组。 30 天后，该组及其关联内容将永久删除且无法还原。
 
 还原组时，还可还原以下内容：
   
@@ -37,7 +37,7 @@ ms.locfileid: "48753239"
     
 - 组的电子邮件地址。
     
-- Exchange Online 共享的收件箱和日历。
+- Exchange Online 共享收件箱和日历。
     
 - SharePoint Online 团队网站和文件。
     
@@ -47,45 +47,45 @@ ms.locfileid: "48753239"
     
 - Teams
 
-- Yammer group and group content (如果 Microsoft 365 组是从 Yammer 创建的) 
+- Yammer 组和组内容 (如果 Microsoft 365 组是从 Yammer) 
 
 > [!NOTE]
-> 本文介绍仅还原 Microsoft 365 组。 删除后，所有其他组都不能还原。
+> 本文介绍仅还原 Microsoft 365 组。 所有其他组在删除后无法还原。
 
 ## <a name="restore-a-group"></a>还原组
 
 # <a name="outlook"></a>[Outlook](#tab/outlook)
 
-如果你是 Microsoft 365 组的所有者，则可以通过执行以下步骤，在 web 上的 Outlook 中自行还原组：
+如果你是 Microsoft 365 组的所有者，可以按照以下步骤操作，在 Outlook 网页版中自己还原组：
 
-1. 在 "[已删除的组" 页](https://outlook.office.com/people/group/deleted)上，选择 "**组**" 节点下的 "**管理组**" 选项，然后选择 "**已删除**"。
+1. 在"[已删除的组"页上](https://outlook.office.com/people/group/deleted)**，选择"** 组"节点下的"管理组"选项，然后选择"**已删除"。**
 
-2. 单击要还原的组旁边的 " **还原** " 选项卡。
+2. 单击要 **还原** 的组旁边的"还原"选项卡。
 
 如果此处未显示已删除的组，请与管理员联系。
 
 # <a name="admin-center"></a>[管理中心](#tab/admin-center)
 
-如果您是全局管理员或组管理员，则可以在 Microsoft 365 管理中心中还原已删除的组：
+如果你是全局管理员或组管理员，可以在 Microsoft 365 管理中心还原已删除的组：
 
 1. 转到[管理中心](https://admin.microsoft.com)。
-2. 展开 " **组**"，然后单击 " **已删除组**"。
-3. 选择要还原的组，然后单击 " **还原组**"。
+2. 展开 **"组**"，然后单击"**已删除组"。**
+3. 选择要还原的组，然后单击"还原 **组"。**
 
 > [!NOTE]
-> 在某些情况下，可能需要长达24小时才能还原组及其所有数据。 
+> 在某些情况下，可能需要 24 小时才能还原组及其所有数据。 
 
 ---
 
-## <a name="got-questions-about-microsoft-365-groups"></a>遇到有关 Microsoft 365 组的问题？
+## <a name="got-questions-about-microsoft-365-groups"></a>对 Microsoft 365 组有疑问？
 
-访问 [Microsoft 技术社区](https://techcommunity.microsoft.com/t5/Office-365-Groups/ct-p/Office365Groups) 以发布问题，并参与有关 Microsoft 365 组的对话。 
+访问 [Microsoft 技术社区，](https://techcommunity.microsoft.com/t5/Office-365-Groups/ct-p/Office365Groups) 发布问题并参与有关 Microsoft 365 组的对话。 
   
 ## <a name="related-articles"></a>相关文章
 
-[使用 PowerShell 管理 Microsoft 365 组](https://docs.microsoft.com/microsoft-365/enterprise/manage-microsoft-365-groups-with-powershell)
+[使用 PowerShell 管理 Microsoft 365 组](../../enterprise/manage-microsoft-365-groups-with-powershell.md)
   
-[使用 Remove-UnifiedGroup cmdlet 删除组](https://technet.microsoft.com/library/mt238270%28v=exchg.160%29.aspx)
+[使用 Remove-UnifiedGroup cmdlet 删除组](/powershell/module/exchange/remove-unifiedgroup)
   
 [管理连接了组的团队网站设置](https://support.microsoft.com/office/8376034d-d0c7-446e-9178-6ab51c58df42)
   

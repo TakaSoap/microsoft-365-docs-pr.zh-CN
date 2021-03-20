@@ -1,5 +1,5 @@
 ---
-title: 为你的 Microsoft 365 提高企业测试环境的 Microsoft 365 安全性
+title: 为 Microsoft 365 企业版测试环境增强 Microsoft 365 安全性
 f1.keywords:
 - NOCSH
 ms.author: josephd
@@ -13,109 +13,109 @@ localization_priority: Normal
 ms.collection: M365-security-compliance
 ms.custom: Ent_TLGs
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
-description: 使用此测试实验室指南可启用 Microsoft 365 企业版测试环境的其他 Microsoft 365 安全设置。
-ms.openlocfilehash: d385688a6e59ee500442bcf1b815dfd165102242
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+description: 使用此测试实验室指南启用 Microsoft 365 企业版测试环境的其他 Microsoft 365 安全设置。
+ms.openlocfilehash: 928deae34dc16c70776eb512188d1a36ae169da5
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48846996"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50909782"
 ---
-# <a name="increased-microsoft-365-security-for-your-microsoft-365-for-enterprise-test-environment"></a>为你的 Microsoft 365 提高企业测试环境的 Microsoft 365 安全性
+# <a name="increased-microsoft-365-security-for-your-microsoft-365-for-enterprise-test-environment"></a>为 Microsoft 365 企业版测试环境增强 Microsoft 365 安全性
 
-*此测试实验室指南仅可用于企业测试环境的 Microsoft 365。*
+*本测试实验室指南仅适用于 Microsoft 365 企业版测试环境。*
 
-使用本文中的说明，您可以配置其他 Microsoft 365 设置，以提高 Microsoft 365 for 企业测试环境中的安全性。
+按照本文中的说明，配置其他 Microsoft 365 设置以提高 Microsoft 365 企业版测试环境中的安全性。
 
 ![Microsoft 云测试实验室指南](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
 > [!TIP]
 > 单击[此处](../downloads/Microsoft365EnterpriseTLGStack.pdf)可查看 Microsoft 365 企业版测试实验室指南集合中所有文章的直观图。
   
-## <a name="phase-1-build-out-your-microsoft-365-for-enterprise-test-environment"></a>第1阶段：构建您的 Microsoft 365 企业版测试环境
+## <a name="phase-1-build-out-your-microsoft-365-for-enterprise-test-environment"></a>第 1 阶段：构建 Microsoft 365 企业版测试环境
 
-如果只想使用最低要求以轻型方式配置增加的 Microsoft 365 安全，请按照 [轻型基本配置](lightweight-base-configuration-microsoft-365-enterprise.md)中的说明进行操作。
+如果你只想按最低要求以轻型方式配置增强的 Microsoft 365 安全性，请按照轻型基本配置 [中的说明操作](lightweight-base-configuration-microsoft-365-enterprise.md)。
   
-如果要在模拟的企业中配置增加的 Microsoft 365 安全，请按照 [传递身份验证](pass-through-auth-m365-ent-test-environment.md)中的说明进行操作。
+如果要在模拟的企业中配置增强的 Microsoft 365 安全性，请按照传递身份验证 [中的说明操作](pass-through-auth-m365-ent-test-environment.md)。
   
 > [!NOTE]
-> 测试增强的 Microsoft 365 安全不需要模拟企业测试环境，其中包括连接到 Internet 的模拟 intranet 和 Active Directory 域服务 (AD DS) 林的目录同步。 此处提供了此选项，以便您可以测试自动授权和组成员身份，并在代表典型组织的环境中进行试验。 
+> 测试提高了 Microsoft 365 安全性不需要模拟的企业测试环境，该环境中包括连接到 Internet 的模拟 Intranet 和 Active Directory 域服务 (AD DS) 目录同步。 它在此处作为一个选项提供，以便你可以测试自动许可和组成员身份，并尝试在代表典型组织的环境中进行试验。 
 
-## <a name="phase-2-configure-increased-microsoft-365-security"></a>第2阶段：配置增强的 Microsoft 365 安全性
+## <a name="phase-2-configure-increased-microsoft-365-security"></a>第 2 阶段：配置增强的 Microsoft 365 安全性
 
-在这一阶段，您为 Microsoft 365 启用了增强的 Microsoft 365 安全性，适用于企业测试环境。 有关其他详细信息和设置，请参阅 [Configure a 租户以提高安全性](https://docs.microsoft.com/office365/securitycompliance/tenant-wide-setup-for-increased-security)。
+在此阶段，你将为 Microsoft 365 企业版测试环境启用增强的 Microsoft 365 安全性。 有关其他详细信息和设置，请参阅 [配置租户以提升安全性](/office365/securitycompliance/tenant-wide-setup-for-increased-security)。
 
-### <a name="configure-sharepoint-online-to-block-apps-that-dont-support-modern-authentication"></a>配置 SharePoint Online 以阻止不支持新式身份验证的应用程序
+### <a name="configure-sharepoint-online-to-block-apps-that-dont-support-modern-authentication"></a>配置 SharePoint Online 以阻止不支持新式验证的应用
 
-不支持新式身份验证的应用程序不能对其应用 [标识和设备访问配置](../security/office-365-security/microsoft-365-policies-configurations.md) ，这是保护 Microsoft 365 订阅及其数字资产的重要因素。 
+不支持新式身份验证的应用无法应用 [标识](../security/office-365-security/microsoft-365-policies-configurations.md) 和设备访问配置，这是保护 Microsoft 365 订阅及其数字资产的重要元素。 
 
-1. 请转到 Microsoft 365 管理中心 ([https://portal.microsoft.com](https://portal.microsoft.com)) 并使用全局管理员帐户登录到你的 microsoft 365 测试实验室订阅。
+1. 转到 Microsoft 365 管理中心 () 全局管理员帐户登录 [https://portal.microsoft.com](https://portal.microsoft.com) Microsoft 365 测试实验室订阅。
     
-  - 如果使用的是轻型 Microsoft 365 测试环境，请从你的本地计算机登录。
+  - 如果你使用的是轻型 Microsoft 365 测试环境，请从本地计算机登录。
     
-  - 如果使用的是模拟企业 Microsoft 365 测试环境，请使用 [Azure 门户](https://portal.azure.com) 连接到 CLIENT1 虚拟机，然后从 CLIENT1 登录。
+  - 如果你使用的是模拟的企业 Microsoft 365 测试环境，请使用 [Azure](https://portal.azure.com) 门户连接到 CLIENT1 虚拟机，然后从 CLIENT1 登录。
  
-2. 在 "新建 **Microsoft 365 管理中心** " 选项卡上的左侧导航窗格中的 " **管理中心** " 下，单击 " **SharePoint** "。
-3. 在 "新建 **SharePoint 管理中心** " 选项卡上，单击 " **策略 > 访问控制** "。
-4. 单击 " **不支持新式身份验证的应用** "，选择 " **阻止访问** "，然后单击 " **保存** "。
+2. 在新的 **Microsoft 365 管理** 中心选项卡上，在左侧导航窗格中的"管理中心"下，单击 **"SharePoint"。** 
+3. 在新的 **"SharePoint 管理中心"选项卡** 上，单击">**访问控制"。**
+4. 单击 **不支持新式验证的应用，选择**"**阻止访问**"，然后单击"保存 **"。**
 
 
-### <a name="enable-defender-for-office-365-for-sharepoint-onedrive-for-business-and-microsoft-teams"></a>启用适用于 SharePoint、OneDrive for Business 和 Microsoft 团队的 Office 365 的 Defender
+### <a name="enable-defender-for-office-365-for-sharepoint-onedrive-for-business-and-microsoft-teams"></a>为 SharePoint、OneDrive for Business 和 Microsoft Teams 启用适用于 Office 365 的 Defender
 
-适用于 SharePoint、OneDrive 和 Microsoft 团队的 Office 365 的 Defender 可防止您的组织无意中共享恶意文件。
+适用于 SharePoint、OneDrive 和 Microsoft Teams 的 Office 365 Defender 可保护你的组织避免无意中共享恶意文件。
 
-1. 转到 [安全 & 合规性中心](https://protection.office.com) ，并使用全局管理员帐户登录。
+1. 转到安全 [与&](https://protection.office.com) 中心，然后使用全局管理员帐户登录。
 
-2. 在左侧导航窗格中的 " **威胁管理** " 下，单击 " **策略** "，然后单击 " **安全附件** "。 
+2. 在左侧导航窗格中的 **"威胁管理**"下，单击"**策略**"，然后单击"**安全附件"。** 
 
-3. 在 " **保护 SharePoint、OneDrive 和 Microsoft 团队中的文件** " 下。 选择 " **为 SharePoint、OneDrive 和 Microsoft 团队启用 ATP** "。
+3. 在 **"保护 SharePoint、OneDrive 和 Microsoft Teams 中的文件"下**。 选择 **"打开适用于 SharePoint、OneDrive 和 Microsoft Teams 的 ATP"。**
 
-4. 单击“ **保存** ”。
+4. 单击“**保存**”。
 
 
 ### <a name="enable-anti-malware"></a>启用反恶意软件
 
 "恶意软件"包括病毒和间谍软件。 "病毒"会感染其他程序与数据，且会在整个计算机中寻找程序进行感染。 “间谍软件”指收集您的个人信息（如登录信息和个人数据），并将其发送给恶意软件作者的恶意软件。 
 
-Microsoft 365 具有内置的恶意软件和垃圾邮件筛选功能，可帮助保护入站和出站邮件免受恶意软件的攻击，并帮助保护您免受垃圾邮件的攻击。 有关详细信息，请参阅 [反垃圾邮件 & 反恶意软件保护](../security/office-365-security/anti-spam-and-anti-malware-protection.md)。
+Microsoft 365 具有内置的恶意软件和垃圾邮件筛选功能，可帮助保护入站和出站邮件免受恶意软件的攻击，并保护您免受垃圾邮件的侵害。 有关详细信息，请参阅 [反垃圾邮件&反恶意软件保护](../security/office-365-security/anti-spam-and-anti-malware-protection.md)。
 
-若要确保正在对具有常见附件文件类型的文件执行反恶意软件处理，请执行以下操作：
+为确保对具有常见附件文件类型的文件执行反恶意软件处理：
 
-1. 单击浏览器上的 "后退" 按钮返回到 " **策略** " 页。
-2. 单击 " **反恶意软件** "。
-3. 双击名为 " **默认** " 的策略。
-4. 在 " **反恶意软件策略** " 窗口中，单击 " **设置** "。
-4. 在 " **常用附件类型筛选器** " 下，选择 **"启用** "，然后单击 " **保存** "。
-
-
-## <a name="phase-3-examine-the-security-dashboard"></a>第3阶段：检查安全仪表板
-
-Microsoft 365 中的威胁管理可帮助您控制和管理对组织数据的移动设备访问，帮助保护您的组织不会丢失数据，并帮助保护入站和出站邮件免受恶意软件和垃圾邮件的攻击。 您还可以使用威胁管理来保护您的域的信誉，并确定发件人是否是您的域中的恶意欺骗帐户。 
-
-若要查看安全仪表板：
-
-1. 如果需要，请转到 [安全 & 合规性中心](https://protection.office.com) ，并使用全局管理员帐户登录。
-
-2. 在左侧导航窗格中的 " **威胁管理** " 下，单击 " **仪表板** "。
-
-仔细查看仪表板上的所有卡片以熟悉提供的信息。
-
-有关详细信息，请参阅 [安全仪表板](https://docs.microsoft.com/microsoft-365/security/office-365-security/security-dashboard)。
+1. 单击浏览器上的后退按钮返回到"策略 **"** 页面。
+2. 单击 **"反恶意软件"。**
+3. 双击名为"默认" **的策略**。
+4. 在"**反恶意软件策略"窗口中**，单击"设置 **"。**
+4. 在"**常见附件类型"筛选器** 下，选择 **"打开"，** 然后单击"保存 **"。**
 
 
-## <a name="phase-4-examine-microsoft-secure-score"></a>第4阶段：检查 Microsoft 安全分数
+## <a name="phase-3-examine-the-security-dashboard"></a>阶段 3：检查安全仪表板
 
-Microsoft 安全分数将安全状态显示为一个数字，表示您的当前级别相对于订阅中可用的功能。 此外，它还提供了可执行的改进操作的列表，以提高成绩。
+Microsoft 365 中的威胁管理可帮助您控制和管理对组织数据的移动设备访问，帮助保护组织免受数据丢失，并帮助保护入站和出站邮件免受恶意软件和垃圾邮件的攻击。 您还可以使用威胁管理来保护域的信誉，并确定发件人是否恶意欺骗域中的帐户。 
 
-1. 在浏览器中创建新的选项卡，然后转到 [Microsoft 365 安全中心](https://security.microsoft.com/)，然后单击 " **安全得分** "。
-2. 在 " **概述**  " 选项卡上，记下当前安全分数以及它与全局平均和订阅（具有相似数量的许可证）的比较方式。
-3. 在 " **改进操作** " 选项卡上，阅读可执行的操作列表，以增加成绩。
+查看安全仪表板：
 
-有关详细信息，请参阅 [Microsoft 安全分数](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-secure-score)。
+1. 如果需要，请转到安全与 [&](https://protection.office.com) 中心，然后使用全局管理员帐户登录。
+
+2. 在左侧导航窗格中的 **"威胁管理**"下，单击"仪表板 **"。**
+
+仔细查看仪表板上的所有卡片，以熟悉提供的信息。
+
+有关详细信息，请参阅安全 [仪表板](../security/office-365-security/security-dashboard.md)。
+
+
+## <a name="phase-4-examine-microsoft-secure-score"></a>阶段 4：检查 Microsoft 安全分数
+
+Microsoft 安全功能分数以数字显示安全状态，它指明了相对于订阅中可用功能的当前级别。 它还为你提供了可用于提高分数的改进操作列表。
+
+1. 在浏览器中创建新选项卡，然后转到 [Microsoft 365](https://security.microsoft.com/)安全中心，然后单击"安全 **分数"。**
+2. 在" **概述**  "选项卡上，记下当前的安全分数及其与全局平均值和许可证数量相似的订阅之间的比较方式。
+3. 在 **"改进操作** "选项卡上，通读可采取的操作列表以提高分数。
+
+有关详细信息，请参阅 [Microsoft 安全分数](../security/mtp/microsoft-secure-score.md)。
 
 ## <a name="next-steps"></a>后续步骤
 
-在您的测试环境中浏览其他 [信息保护](m365-enterprise-test-lab-guides.md#information-protection) 特性和功能。
+探索 [测试环境中](m365-enterprise-test-lab-guides.md#information-protection) 的其他信息保护特性和功能。
 
 ## <a name="see-also"></a>另请参阅
 
@@ -123,4 +123,4 @@ Microsoft 安全分数将安全状态显示为一个数字，表示您的当前�
 
 [Microsoft 365 企业版概述](microsoft-365-overview.md)
 
-[适用于企业的 Microsoft 365 文档](https://docs.microsoft.com/microsoft-365-enterprise/)
+[适用于企业的 Microsoft 365 文档](/microsoft-365-enterprise/)

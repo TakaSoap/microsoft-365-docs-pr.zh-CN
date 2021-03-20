@@ -18,12 +18,12 @@ ms.collection:
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ce17f413b23ef9ef6abf79a2710a5cec9b05206c
-ms.sourcegitcommit: 8f1721de52dbe3a12c11a0fa5ed0ef5972ca8196
+ms.openlocfilehash: 1151cddbad2f5b8633b0e0f19a24c470f85d7614
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/17/2021
-ms.locfileid: "50838527"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50908974"
 ---
 # <a name="evaluate-microsoft-defender-for-office-365"></a>评估 Microsoft Defender for Office 365
 
@@ -44,7 +44,7 @@ ms.locfileid: "50838527"
 
 使用评估 [模式，](atp-safe-attachments.md) [将](atp-safe-links.md)代表您设置安全附件、 [](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)安全链接和基于邮箱智能的模拟策略。 所有 Defender for Office 365 策略均在后台的非强制模式下创建，并且对不可见。
 
-作为设置的一部分，评估模式还配置 [连接器的增强筛选](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors)。 它通过保留 IP 地址和发件人信息来提高筛选准确度，否则当邮件通过 Office 365 Defender 前面的电子邮件安全网关 (ESG) 时，这些信息会丢失。 增强的连接器筛选功能还提高了 EOP 中的现有 Exchange Online Protection () 反垃圾邮件和防钓鱼策略的筛选准确度。
+作为设置的一部分，评估模式还配置 [连接器的增强筛选](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors)。 它通过保留 IP 地址和发件人信息来提高筛选准确度，否则当邮件通过 Office 365 Defender 前面的电子邮件安全网关 (ESG) 时，这些信息会丢失。 增强的连接器筛选功能还提高了 EOP 中的现有 Exchange Online Protection () 反垃圾邮件和防钓鱼策略的筛选准确度。
 
 对连接器启用的增强筛选可提高筛选准确度，但如果在 Defender for Office 365 前面有 ESG，并且当前未绕过 EOP 筛选，则某些邮件可能会改变可传递性。 影响仅限于 EOP 策略;作为评估的一部分的 MDO 策略设置是在非强制模式下创建的。 为了最大限度地减少潜在的生产影响，您可以通过创建传输规则来绕过所有 EOP 筛选，将"垃圾邮件可信度" (SCL) 设置为 -1。 有关详细信息，请参阅使用 [EAC 创建设置邮件 SCL 的邮件](use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md#use-the-eac-to-create-a-mail-flow-rule-that-sets-the-scl-of-a-message)   流规则。
 
@@ -72,7 +72,7 @@ ms.locfileid: "50838527"
 
 #### <a name="trial"></a>试用
 
-若要获取适用于 Office 365 的 Microsoft Defender 的试用许可证，你需要具有帐单管理员 **角色或****全局管理员角色**。 向具有全局管理员角色的人请求权限。 [了解订阅和许可证](https://docs.microsoft.com/microsoft-365/commerce/licenses/subscriptions-and-licenses)
+若要获取适用于 Office 365 的 Microsoft Defender 的试用许可证，你需要具有帐单管理员 **角色或****全局管理员角色**。 向具有全局管理员角色的人请求权限。 [了解订阅和许可证](../../commerce/licenses/subscriptions-and-licenses.md)
 
 获得适当角色后，建议的路径是，通过进入"帐单"> 购买服务，在 Microsoft 365 管理中心获取适用于 Office 365 (计划 2) 的 Microsoft Defender 试用许可证。 试用版包含 25 个许可证的 30 天免费试用版。 [获取 Microsoft Defender for Office 365 (计划 2 ](https://admin.microsoft.com/AdminPortal/Home#/catalog/offer-details/microsoft-defender-for-office-365-plan-2-/223860DC-15D6-42D9-A861-AE05473069FA)) 。
 
@@ -80,14 +80,14 @@ ms.locfileid: "50838527"
 
 ### <a name="roles"></a>角色
 
-在评估模式下设置 Defender for Office 365 需要 Exchange Online 角色。
+**在评估模式下设置** Defender for Office 365 需要 Exchange Online 角色。 分配 Microsoft 365 合规性或安全管理员角色不起作用。
 
-- [了解 Exchange Online 中的权限](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo)
+- [了解 Exchange Online 中的权限](/exchange/permissions-exo/permissions-exo)
 - [了解如何分配管理员角色](../../admin/add-users/assign-admin-roles.md)
 
 需要以下角色：
 
-|任务|Role|
+|任务|Exchange Online (中的角色) |
 |---|---|
 |获取免费试用版或购买 Microsoft Defender for Office 365 (计划 2) |帐单管理员角色或全局管理员角色|
 |创建评估策略|远程域和接受域角色;安全管理员角色|
@@ -95,7 +95,6 @@ ms.locfileid: "50838527"
 |删除评估策略|远程域和接受域角色;安全管理员角色 |
 |查看评估报告|安全管理员角色或安全读取者角色|
 |
-
 
 ### <a name="enhanced-filtering"></a>增强的筛选
 
@@ -111,7 +110,7 @@ URL 将在邮件流期间触发。 如果不希望触发特定 URL，请适当�
 
 ### <a name="email-routing"></a>电子邮件路由
 
-准备设置电子邮件当前路由方式所需的相应详细信息，包括路由邮件的入站连接器的名称。 如果您只是使用 Exchange Online Protection，则没有连接器。 [了解邮件流和电子邮件路由](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/mail-flow)
+准备设置电子邮件当前路由方式所需的相应详细信息，包括路由邮件的入站连接器的名称。 如果您只是使用 Exchange Online Protection，则没有连接器。 [了解邮件流和电子邮件路由](/office365/servicedescriptions/exchange-online-service-description/mail-flow)
 
 支持的电子邮件路由方案包括：
 

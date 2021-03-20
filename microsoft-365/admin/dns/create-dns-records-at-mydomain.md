@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9982191d-ed79-46a9-b2e7-317d1a3a9867
 description: 了解如何在 MyDomain 处验证你的域并设置电子邮件、Skype for Business Online 和其他 Microsoft 服务的 DNS 记录。
-ms.openlocfilehash: 13fa707f28fcc6de24c3fdf58e56174d7a271776
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+ms.openlocfilehash: 1e7f9c5705e535c1558273be5bfdc99841e0ea4b
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49657847"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50910158"
 ---
 # <a name="create-dns-records-at-mydomain-for-microsoft"></a>在 MyDomain 处为 Microsoft 创建 DNS 记录
 
@@ -35,7 +35,7 @@ ms.locfileid: "49657847"
  如果找不到要查找的内容，请 **[查看域常见问题解答](../setup/domains-faq.yml)**。 
   
 > [!CAUTION]
-> MyDomain 网站不支持 SRV 记录，这意味着多个 Skype for Business Online 和 Outlook Web App 功能将不起作用。无论使用哪个 Microsoft 计划，如果在 MyDomain 处管理 DNS 记录，则有[较大的服务限制](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq)，用户可能会想要切换为其他 DNS 托管提供商。 
+> MyDomain 网站不支持 SRV 记录，这意味着多个 Skype for Business Online 和 Outlook Web App 功能将不起作用。无论使用哪个 Microsoft 计划，如果在 MyDomain 处管理 DNS 记录，则有[较大的服务限制](../setup/domains-faq.yml)，用户可能会想要切换为其他 DNS 托管提供商。 
   
 如果忽略服务限制，选择在 MyDomain 处管理自己的 Microsoft DNS 记录，请按本文中的步骤为电子邮件、Skype for Business Online 等设置 DNS 记录。
     
@@ -109,7 +109,7 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
     
     |**Priority**|**Host**|**指向：**|
     |:-----|:-----|:-----|
-    |0  <br/> 有关优先级的详细信息，请参阅[什么是 MX 优先级？](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/> |@  <br/> | *\<domain-key\>*  .mail.protection.outlook.com  <br/> **注意：** 从 Microsoft 帐户获取 \<*domain-key*\>。 > [如何查找此项？](../get-help-with-domains/information-for-dns-records.md)          |
+    |0  <br/> 有关优先级的详细信息，请参阅[什么是 MX 优先级？](../setup/domains-faq.yml) <br/> |@  <br/> | *\<domain-key\>*  .mail.protection.outlook.com  <br/> **注意：** 从 Microsoft 帐户获取 \<*domain-key*\>。 > [如何查找此项？](../get-help-with-domains/information-for-dns-records.md)          |
    
     ![MyDomain-BP-Configure-2-2](../../media/3e19cec3-7f3b-493d-81f7-cda30ba007d5.png)
   
@@ -168,7 +168,7 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
 <a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]
-> 一个域所拥有的 SPF 的 TXT 记录不能超过一个。 如果域具有多个 SPF 记录，你将收到电子邮件错误，其中随附发送和垃圾邮件分类问题。 如果你的域已有 SPF 记录，请不要为 Microsoft 创建新记录。 可以将所需的 Microsoft 值添加到当前记录，这样就拥有包含两组值的单个 SPF 记录。 需要示例吗？ 请查看 [Microsoft 的外部域名系统记录](https://docs.microsoft.com/microsoft-365/enterprise/external-domain-name-system-records#bkmk_spfrecords)。 若要验证 SPF 记录，可使用以下任一 [SPF 验证工具](../setup/domains-faq.yml)。 
+> 一个域所拥有的 SPF 的 TXT 记录不能超过一个。 如果域具有多个 SPF 记录，你将收到电子邮件错误，其中随附发送和垃圾邮件分类问题。 如果你的域已有 SPF 记录，请不要为 Microsoft 创建新记录。 可以将所需的 Microsoft 值添加到当前记录，这样就拥有包含两组值的单个 SPF 记录。 需要示例吗？ 请查看 [Microsoft 的外部域名系统记录](../../enterprise/external-domain-name-system-records.md#bkmk_spfrecords)。 若要验证 SPF 记录，可使用以下任一 [SPF 验证工具](../setup/domains-faq.yml)。 
   
 1. 若要开始，请使用[此链接](https://www.mydomain.com/controlpanel)转到你在 MyDomain 上的域页面。系统将会提示你先登录。
     
@@ -198,8 +198,7 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
 <a name="BKMK_add_SRV"> </a>
 
 > [!CAUTION]
-> MyDomain 网站不支持 SRV 记录，这意味着多个 Skype for Business Online 和 Outlook Web App 功能将不起作用。无论使用哪个 Microsoft 计划，如果在 MyDomain 处管理 DNS 记录，则有[较大的服务限制](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq)，用户可能会想要切换为其他 DNS 托管提供商。 
+> MyDomain 网站不支持 SRV 记录，这意味着多个 Skype for Business Online 和 Outlook Web App 功能将不起作用。无论使用哪个 Microsoft 计划，如果在 MyDomain 处管理 DNS 记录，则有[较大的服务限制](../setup/domains-faq.yml)，用户可能会想要切换为其他 DNS 托管提供商。 
   
 > [!NOTE]
 > Typically it takes about 15 minutes for DNS changes to take effect. 但是，有时可能需要更长时间，您所做的更改才会在 Internet 的 DNS 系统中更新。 如果在添加 DNS 记录后遇到邮件流问题或其他问题，请参阅[查找在添加域或 DNS 记录后遇到的问题并进行修复](../get-help-with-domains/find-and-fix-issues.md)。 
-  

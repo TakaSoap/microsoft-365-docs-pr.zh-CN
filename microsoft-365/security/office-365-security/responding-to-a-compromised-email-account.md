@@ -20,12 +20,12 @@ search.appverid:
 description: 了解如何使用 Microsoft 365 中的工具来识别并响应遭到入侵的电子邮件帐户。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 5dfb40c195cb9df9c8f2ac5d1cfbacdda022d416
-ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
+ms.openlocfilehash: 774d96fb22bb13d4b4edcfab45f27ca9e52c5e88
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "50406720"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50908826"
 ---
 # <a name="responding-to-a-compromised-email-account"></a>响应遭到入侵的电子邮件帐户
 
@@ -102,7 +102,7 @@ ms.locfileid: "50406720"
 >
 > - 如果你的本地标识已与 Microsoft 365 联合，则必须在本地更改密码，然后通知管理员帐户遭到入侵。
 >
-> - 务必更新应用密码。 重置用户帐户密码后，不会自动撤消应用密码。 用户应删除现有应用程序密码并创建新密码。 有关说明，请参阅[从其他安全验证页面创建和删除应用密码](https://docs.microsoft.com/azure/active-directory/user-help/multi-factor-authentication-end-user-app-passwords#create-and-delete-app-passwords-from-the-additional-security-verification-page)。
+> - 务必更新应用密码。 重置用户帐户密码后，不会自动撤消应用密码。 用户应删除现有应用程序密码并创建新密码。 有关说明，请参阅[从其他安全验证页面创建和删除应用密码](/azure/active-directory/user-help/multi-factor-authentication-end-user-app-passwords#create-and-delete-app-passwords-from-the-additional-security-verification-page)。
 >
 > - 强烈建议启用多重身份验证 (MFA)，以防发生泄漏，特别是对于拥有管理权限的帐户。 若要了解有关 MFA 的详细信息，请转到[设置多重身份验证](../../admin/security-and-compliance/set-up-multi-factor-authentication.md)。
 

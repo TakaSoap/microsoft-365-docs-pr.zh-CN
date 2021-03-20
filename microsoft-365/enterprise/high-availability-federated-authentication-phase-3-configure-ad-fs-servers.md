@@ -1,5 +1,5 @@
 ---
-title: 高可用性联合身份验证阶段3配置 AD FS 服务器
+title: 高可用性联合身份验证阶段 3 配置 AD FS 服务器
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -15,19 +15,19 @@ ms.custom:
 - Ent_Solutions
 - seo-marvel-apr2020
 ms.assetid: 202b76ff-74a6-4486-ada1-a9bf099dab8f
-description: 了解如何在 Microsoft Azure 中为 Microsoft Azure 中的 Microsoft 365 的高可用性联合身份验证创建和配置 AD FS 服务器。
-ms.openlocfilehash: bf8b52f4cd0dead0c264b71363fd5248397ae88d
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+description: 了解如何在 Microsoft Azure 中为 Microsoft 365 的高可用性联合身份验证创建和配置 AD FS 服务器。
+ms.openlocfilehash: 388a99aa496c4ecd9145759d4dfb1b9441b4fb2c
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46688202"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50909794"
 ---
 # <a name="high-availability-federated-authentication-phase-3-configure-ad-fs-servers"></a>高可用性联合身份验证阶段 3：配置 AD FS 服务器
 
-在此阶段，在 Azure 基础结构服务中为 Microsoft 365 联合身份验证部署高可用性时，将创建内部负载平衡器和两个 AD FS 服务器。
+在部署 Azure 基础结构服务中 Microsoft 365 联合身份验证的高可用性的这一阶段，将创建一个内部负载平衡器以及两个 AD FS 服务器。
   
-必须先完成此阶段，然后才能进入 [第4阶段：配置 web 应用程序代理](high-availability-federated-authentication-phase-4-configure-web-application-pro.md)。 有关所有阶段，请参阅 [在 Azure 中为 Microsoft 365 部署高可用性联合身份验证](deploy-high-availability-federated-authentication-for-microsoft-365-in-azure.md) 。
+必须先完成此阶段，然后才能进入阶段 [4：配置 Web 应用程序代理](high-availability-federated-authentication-phase-4-configure-web-application-pro.md)。 有关 [所有阶段，请参阅在 Azure 中为 Microsoft 365](deploy-high-availability-federated-authentication-for-microsoft-365-in-azure.md) 部署高可用性联合身份验证。
   
 ## <a name="create-the-ad-fs-server-virtual-machines-in-azure"></a>在 Azure 中创建 AD FS 服务器虚拟机
 
@@ -45,15 +45,15 @@ ms.locfileid: "46688202"
     
 - 表 A（针对可用性集）
     
-回想一下在 [阶段2：配置域控制器](high-availability-federated-authentication-phase-2-configure-domain-controllers.md) 和表 R、V、S、I 和 A [阶段1： configure Azure](high-availability-federated-authentication-phase-1-configure-azure.md)中定义了表 M。
+回想一下，你在阶段[2：](high-availability-federated-authentication-phase-2-configure-domain-controllers.md)配置域控制器中定义了表 M，在第 1 阶段：配置 Azure 中定义了表 R、V、S、I 和[A。](high-availability-federated-authentication-phase-1-configure-azure.md)
   
 > [!NOTE]
-> [!注意] 下面的命令集使用最新版 Azure PowerShell。 请参阅 [Azure PowerShell 入门](https://docs.microsoft.com/powershell/azure/get-started-azureps)。 
+> [!注意] 下面的命令集使用最新版 Azure PowerShell。 请参阅 [Azure PowerShell 入门](/powershell/azure/get-started-azureps)。 
   
-首先，为两个 AD FS 服务器创建 Azure 内部负载均衡器。 指定变量的值，并删除 \< and > 字符。 提供所有正确值后，在 Azure PowerShell 命令提示符处或 PowerShell ISE 上运行生成块。
+首先，为两个 AD FS 服务器创建 Azure 内部负载均衡器。 指定变量的值，删除 \< and > 字符。 提供所有正确值后，在 Azure PowerShell 命令提示符处或 PowerShell ISE 上运行生成块。
   
 > [!TIP]
-> 若要基于自定义设置生成可随时运行的 PowerShell 命令块，请使用此 [Microsoft Excel 配置工作簿](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/O365FedAuthInAzure_Config.xlsx)。 
+> 若要根据自定义设置生成可运行的 PowerShell 命令块，请使用此 Microsoft [Excel 配置工作簿](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/O365FedAuthInAzure_Config.xlsx)。 
 
 ```powershell
 # Set up key variables
@@ -131,11 +131,11 @@ New-AzVM -ResourceGroupName $rgName -Location $locName -VM $vm
 ```
 
 > [!NOTE]
-> 由于这些虚拟机用于 Intranet 应用程序，所以不会为它们分配公用 IP 地址或 DNS 域名称标签，也不会将它们公开到 Internet。但是，这也意味着你无法从 Azure 门户与它们进行连接。查看虚拟机的属性时“连接”**** 选项不可用。使用远程桌面连接附件或另一个远程桌面工具连接使用其专用 IP 地址或 Intranet DNS 名称的虚拟机。
+> 由于这些虚拟机用于 Intranet 应用程序，所以不会为它们分配公用 IP 地址或 DNS 域名称标签，也不会将它们公开到 Internet。但是，这也意味着你无法从 Azure 门户与它们进行连接。查看虚拟机的属性时“连接”选项不可用。使用远程桌面连接附件或另一个远程桌面工具连接使用其专用 IP 地址或 Intranet DNS 名称的虚拟机。
   
 对于每个虚拟机，请使用所选择的远程桌面客户端并创建远程桌面连接。使用其 Intranet DNS 或计算机名称以及本地管理员帐户的凭据。
   
-对于每个虚拟机，请通过 Windows PowerShell 提示符下的这些命令将它们加入相应的 Active Directory 域服务 (AD DS) 域。
+对于每个虚拟机，在 Windows PowerShell 提示符下，使用这些命令 (AD DS) 相应的 Active Directory 域服务。
   
 ```powershell
 $domName="<AD DS domain name to join, such as corp.contoso.com>"
@@ -148,16 +148,14 @@ Restart-Computer
   
 **阶段 3：Azure 中用于高可用性联合身份验证基础结构的 AD FS 服务器和内部负载均衡器**
 
-![在 Azure 中使用 AD FS 服务器的高可用性 Microsoft 365 联合身份验证基础结构的第3阶段](../media/f39b2d2f-8a5b-44da-b763-e1f943fcdbc4.png)
+![Azure 中具有 AD FS 服务器的高可用性 Microsoft 365 联合身份验证基础结构的第 3 阶段](../media/f39b2d2f-8a5b-44da-b763-e1f943fcdbc4.png)
   
 ## <a name="next-step"></a>后续步骤
 
-使用 [阶段4：配置 web 应用程序代理](high-availability-federated-authentication-phase-4-configure-web-application-pro.md) 以继续配置此工作负载。
+使用 [阶段 4：配置 Web](high-availability-federated-authentication-phase-4-configure-web-application-pro.md) 应用程序代理以继续配置此工作负载。
   
 ## <a name="see-also"></a>另请参阅
 
 [在 Azure 中为 Microsoft 365 部署高可用性联合身份验证](deploy-high-availability-federated-authentication-for-microsoft-365-in-azure.md)
   
 [Microsoft 365 开发/测试环境的联合身份](federated-identity-for-your-microsoft-365-dev-test-environment.md)
-
-

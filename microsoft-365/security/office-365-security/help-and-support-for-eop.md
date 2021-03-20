@@ -13,12 +13,12 @@ ms.assetid: 64535a0a-1044-413f-8bc2-ed8e8a0bc54c
 description: Microsoft 在多处通过多种方法为 EOP 提供帮助，包括自助支持和协助支持。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 945f3c4e32a6c41193e3df4813cc4ed4fe9f7b1f
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 0b48c9fadb53fbb7b392c7d4711efc6136509444
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50289789"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50910734"
 ---
 # <a name="help-and-support-for-eop"></a>EOP 帮助与支持
 
@@ -29,11 +29,11 @@ ms.locfileid: "50289789"
 - [Microsoft Defender for Office 365 计划 1 和计划 2](office-365-atp.md)
 - [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
-在具有 Exchange Online 邮箱的 Microsoft 365 组织或没有 Exchange Online 邮箱的独立 Exchange Online Protection (EOP) 组织中，如果在使用 EOP 时遇到困难，本文中列出的技术支持资源将帮助您找到答案。 Microsoft 在多处通过多种方法为 EOP 提供帮助，包括自助支持和协助支持。
+在具有 Exchange Online 邮箱的 Microsoft 365 组织中或没有 Exchange Online 邮箱的独立 Exchange Online Protection (EOP) 组织中，如果在使用 EOP 时遇到困难，本文中列出的技术支持资源将帮助您找到答案。 Microsoft 在多处通过多种方法为 EOP 提供帮助，包括自助支持和协助支持。
 
 ## <a name="self-support-options"></a>自助支持选项
 
-登录后，Microsoft 365 管理中心提供有关组织服务状态的信息。 此外，服务运行状况部分还显示服务的当前状态、有关中断和中断的详细信息，并列出计划的维护时间。 Microsoft 365 管理中心还提供已知问题和预期解决方案的信息。 如果受服务级事件影响，应查看通信警报（通常标有钟形图标）。 我们建议你阅读所有项的信息，然后酌情进行处理。 有关服务运行状况区域详细信息，请参阅["服务运行状况和连续性"。](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/service-health-and-continuity) 您可以使用此处列出的工具、论坛和社区网站自行查找更多帮助。
+登录后，Microsoft 365 管理中心提供有关组织服务状态的信息。 此外，服务运行状况部分还显示服务的当前状态、有关中断和中断的详细信息，并列出计划的维护时间。 Microsoft 365 管理中心还提供有关已知问题和预期解决方案的信息。 如果受服务级事件影响，应查看通信警报（通常标有钟形图标）。 我们建议你阅读所有项的信息，然后酌情进行处理。 有关服务运行状况区域详细信息，请参阅服务 [运行状况和连续性](/office365/servicedescriptions/office-365-platform-service-description/service-health-and-continuity)。 您可以使用此处列出的工具、论坛和社区网站自行查找更多帮助。
 
 [Exchange Online Protection 产品概述](https://products.office.com/exchange/exchange-email-security-spam-protection)
 
@@ -41,13 +41,13 @@ ms.locfileid: "50289789"
 
 [Microsoft 365 社区](https://techcommunity.microsoft.com/t5/Office-365/ct-p/Office365)
 
-[Microsoft 支持和恢复助手 (SaRA) ](https://support.microsoft.com/office/e90bb691-c2a7-4697-a94f-88836856c72f)
+[SaRA (Microsoft 支持和恢复) ](https://support.microsoft.com/office/e90bb691-c2a7-4697-a94f-88836856c72f)
 
 [邮件流疑难解答程序](https://aka.ms/FixEmail)
 
 ## <a name="assisted-support-from-microsoft"></a>Microsoft 协助支持
 
-可以通过在 Microsoft 365 管理中心内启动新服务请求或通过电话获取 Microsoft 帮助。 顶级支持订阅者具有额外的支持选项。
+可以通过在 Microsoft 365 管理中心内启动新服务请求或通过电话获得 Microsoft 帮助。 Premier Support 订阅者具有额外的支持选项。
 
 ### <a name="support-for-microsoft-premier-support-subscribers"></a>对 Microsoft Premier Support 订阅者的支持
 
@@ -67,11 +67,11 @@ ms.locfileid: "50289789"
 
 1. 登录到 Microsoft 365 管理中心。
 
-2. 有关常规产品问题，请转到 **"客户支持** 呼叫 \> **技术支持人员支持** 请求 \> **"。**
+2. 有关常规产品问题， **请转到支持** \> **人员询问客户支持** \> **致电技术支持** 人员。
 
    For questions before you buy EOP, or questions about billing and subscriptions, go to **Support** \> **Ask for Customer Support** \> **Call billing and subscription support**.
 
-3. 使用虚拟代理搜索最新的适当电话号码。
+3. 使用虚拟代理搜索最新的相应电话号码。
 
 ## <a name="support-telephone-numbers"></a>支持电话号码
 
@@ -93,4 +93,4 @@ Microsoft 针对全球产品支持提供本地或免费电话号码。 很多支
 
 ## <a name="for-more-information-about-eop-documentation"></a>有关 EOP 文件的详细信息
 
-[Exchange Online 中的辅助功能](https://docs.microsoft.com/Exchange/accessibility/accessibility)
+[Exchange Online 中的辅助功能](/Exchange/accessibility/accessibility)

@@ -20,19 +20,19 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: a6626053-a9c8-445b-81ee-eeb6672fae77
-description: 了解如何在 eNomCentral for Microsoft 上验证域并设置电子邮件、Skype for Business Online 和其他服务的 DNS 记录。
-ms.openlocfilehash: e6e05b987a893da582ea7fb062eafe421861b970
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+description: 了解如何在 eNomCentral for Microsoft 中验证域并设置电子邮件、Skype for Business Online 和其他服务的 DNS 记录。
+ms.openlocfilehash: 528659667ee062c8cf767bed0989558020032924
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49658107"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50910362"
 ---
 # <a name="create-dns-records-at-enomcentral-for-microsoft"></a>在 eNomCentral 为 Microsoft 创建 DNS 记录
 
  如果找不到要查找的内容，请 **[查看域常见问题解答](../setup/domains-faq.yml)**。
 
-如果 eNomCentral 是 DNS 托管提供商，请按照本文中的步骤验证域并设置电子邮件、Skype for Business Online 等的 DNS 记录。
+如果 eNomCentral 是 DNS 托管提供商，请按照本文中的步骤验证域，并设置电子邮件、Skype for Business Online 等的 DNS 记录。
 
 在 eNomCentral 添加这些记录后，域将设置为使用 Microsoft 服务。
 
@@ -53,7 +53,7 @@ ms.locfileid: "49658107"
 
    ![eNom-BP-Configure-1-1](../../media/6f754710-fd29-4a0a-b362-fa7a5c5ff74f.png)
 
-2. 在我的 **域** 下，选择要编辑的域的名称。
+2. 在 **"我的** 域"下，选择要编辑的域的名称。
 
    ![eNom-BP-Configure-1-2](../../media/09d53e84-371c-4704-a8ce-e429ce9e133a.png)
 
@@ -71,7 +71,7 @@ ms.locfileid: "49658107"
 
    ![eNom-BP-Verify-1-2](../../media/e1f95529-46a6-40f9-9709-9fe66f373bcf.png)
 
-5. 选择 **"保存"。**
+5. 选择"**保存"。**
 
    ![eNom-BP-Verify-1-3](../../media/d6277ab0-5d03-44e0-968f-fd5de1905423.png)
 
@@ -95,13 +95,13 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
 ## <a name="add-an-mx-record-so-email-for-your-domain-will-come-to-microsoft"></a>添加一条 MX 记录，确保发往你的域的电子邮件将会发送到 Microsoft
 <a name="BKMK_add_MX"> </a>
 
-按照下面的步骤操作或 [观看视频， (3：40 ](https://support.microsoft.com/office/3766a9e8-77dd-4a42-908d-89b076143e7d)开始) 。
+按照以下步骤操作或 [观看视频， (3：40 开始 ](https://support.microsoft.com/office/3766a9e8-77dd-4a42-908d-89b076143e7d)) 。
 
 1. 若要开始，请使用[此链接](https://www.enomcentral.com/domains/Domain-Manager.aspx?tab=registered)转到 eNom Central 上您的域页面。系统将会提示您登录。
 
    ![eNom-BP-Configure-1-1](../../media/6f754710-fd29-4a0a-b362-fa7a5c5ff74f.png)
 
-2. 在我的 **域** 下，选择要编辑的域的名称。
+2. 在 **"我的** 域"下，选择要编辑的域的名称。
 
    ![eNom-BP-Configure-1-2](../../media/09d53e84-371c-4704-a8ce-e429ce9e133a.png)
 
@@ -109,7 +109,7 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
 
    ![eNom-BP-Configure-1-3](../../media/4b438629-afdf-4a47-ab11-56644cdb6158.png)
 
-4. 在"**服务选择**"下拉列表中，选择"用户 (**MX) 。**
+4. 在"**服务选择"** 下拉列表中，选择"用户 (**MX) "。**
 
    ![eNom-BP-Configure-1-4](../../media/7680ab48-b8d1-4573-b20f-4745a5d7c079.png)
 
@@ -117,32 +117,32 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
 
    |主机名|地址|Pref|
    |---|---|---|
-   |@| *\<domain-key\>*  .mail.protection.outlook.com。  <br/> **此值必须以句点 (.) 结尾。** <br/> **注意：** 从  *\<domain-key\>*  Microsoft 帐户获取你的帐户。 如何查找此内容？[](../get-help-with-domains/information-for-dns-records.md)|10   <br/> 有关优先级的详细信息，请参阅[什么是 MX 优先级？](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq)|
+   |@| *\<domain-key\>*  .mail.protection.outlook.com。  <br/> **此值必须以句点 (.) 结尾。** <br/> **注意：** 从  *\<domain-key\>*  Microsoft 帐户获取你的信息。 如何查找此内容？[](../get-help-with-domains/information-for-dns-records.md)|10    <br/> 有关优先级的详细信息，请参阅[什么是 MX 优先级？](../setup/domains-faq.yml)|
 
    ![eNom-BP-Configure-2-1](../../media/c32e8954-8209-4f77-a3a8-4b7aeea325d5.png)
 
-6. 选择 **"保存"。**
+6. 选择"**保存"。**
 
    ![eNom-BP-Configure-2-2](../../media/cf3058ea-9d30-4747-8cf0-2bc13d5ec6be.png)
 
-7. 如果存在任何其他现有 MX 记录，请选中这些记录的复选框以选中它们。
+7. 如果存在任何其他现有 MX 记录，请选中这些记录的复选框以选择它们。
 
    ![eNom-BP-Configure-2-3](../../media/5017ed03-ca76-4c5c-93a7-84ffe24125dc.png)
 
-8. 选中 **"删除已选中"。**
+8. 选择 **"删除已选中"。**
 
    ![eNom-BP-Configure-2-4](../../media/072dc039-bddb-4c1f-bb44-5660e77f14b0.png)
 
 ## <a name="add-the-cname-records-that-are-required-for-microsoft"></a>添加 Microsoft 所需的 CNAME 记录
 <a name="BKMK_add_CNAME"> </a>
 
-按照下面的步骤操作或 [观看视频， (4：24 开始 ](https://support.microsoft.com/office/3766a9e8-77dd-4a42-908d-89b076143e7d)) 。
+按照以下步骤操作或[观看视频， (4：24) 。 ](https://support.microsoft.com/office/3766a9e8-77dd-4a42-908d-89b076143e7d)
 
 1. 若要开始，请使用[此链接](https://www.enomcentral.com/domains/Domain-Manager.aspx?tab=registered)转到 eNom Central 上您的域页面。系统将会提示您登录。
 
    ![eNom-BP-Configure-1-1](../../media/6f754710-fd29-4a0a-b362-fa7a5c5ff74f.png)
 
-2. 在我的 **域** 下，选择要编辑的域的名称。
+2. 在 **"我的** 域"下，选择要编辑的域的名称。
 
    ![eNom-BP-Configure-1-2](../../media/09d53e84-371c-4704-a8ce-e429ce9e133a.png)
 
@@ -168,7 +168,7 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
 
    ![eNom-BP-Configure-3-2](../../media/672371c0-51af-44ba-bb18-80286b7676c1.png)
 
-6. 选择 **"保存"。**
+6. 选择"**保存"。**
 
    ![eNom-BP-Configure-3-3](../../media/027b57ce-5699-408b-993b-e46a9ac31090.png)
 
@@ -176,15 +176,15 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
 <a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]
-> 一个域所拥有的 SPF 的 TXT 记录不能超过一个。 如果域具有多个 SPF 记录，你将收到电子邮件错误，其中随附发送和垃圾邮件分类问题。 如果你的域已有 SPF 记录，请不要为 Microsoft 创建新记录。 相反，将所需的 Microsoft 值添加到当前记录，以便具有一个  *包含这*  两组值的 SPF 记录。
+> 一个域所拥有的 SPF 的 TXT 记录不能超过一个。 如果域具有多个 SPF 记录，你将收到电子邮件错误，其中随附发送和垃圾邮件分类问题。 如果你的域已有 SPF 记录，请不要为 Microsoft 创建新记录。 相反，将所需的 Microsoft 值添加到当前记录，以便你有一个  *包含这*  两组值的 SPF 记录。
 
-按照以下步骤操作，或观看视频 ([5：12 开始 ](https://support.microsoft.com/office/3766a9e8-77dd-4a42-908d-89b076143e7d)) 。
+按照以下步骤操作或 [观看视频， (5：12 开始 ](https://support.microsoft.com/office/3766a9e8-77dd-4a42-908d-89b076143e7d)) 。
 
 1. 若要开始，请使用[此链接](https://www.enomcentral.com/domains/Domain-Manager.aspx?tab=registered)转到 eNom Central 上您的域页面。系统将会提示您登录。
 
    ![eNom-BP-Configure-1-1](../../media/6f754710-fd29-4a0a-b362-fa7a5c5ff74f.png)
 
-2. 在我的 **域** 下，选择要编辑的域的名称。
+2. 在 **"我的** 域"下，选择要编辑的域的名称。
 
    ![eNom-BP-Configure-1-2](../../media/09d53e84-371c-4704-a8ce-e429ce9e133a.png)
 
@@ -202,20 +202,20 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
 
    ![eNom-BP-Configure-4-1](../../media/64c68697-258d-4044-84b1-c28f4a402e3b.png)
 
-5. 选择 **"保存"。**
+5. 选择"**保存"。**
 
    ![eNom-BP-Configure-4-2](../../media/89f4effa-349e-4734-96a5-cd80b0cecd60.png)
 
 ## <a name="add-the-two-srv-records-that-are-required-for-microsoft"></a>添加 Microsoft 所需的两条 SRV 记录
 <a name="BKMK_add_SRV"> </a>
 
-按照下面的步骤操作或 [观看视频， (5：50 ](https://support.microsoft.com/office/3766a9e8-77dd-4a42-908d-89b076143e7d)开始) 。
+按照以下步骤操作或[观看视频， (5：50 开始) 。 ](https://support.microsoft.com/office/3766a9e8-77dd-4a42-908d-89b076143e7d)
 
 1. 若要开始，请使用[此链接](https://www.enomcentral.com/domains/Domain-Manager.aspx?tab=registered)转到 eNom Central 上您的域页面。系统将会提示您登录。
 
    ![eNom-BP-Configure-1-1](../../media/6f754710-fd29-4a0a-b362-fa7a5c5ff74f.png)
 
-2. 在我的 **域** 下，选择要编辑的域的名称。
+2. 在 **"我的** 域"下，选择要编辑的域的名称。
 
    ![eNom-BP-Configure-1-2](../../media/09d53e84-371c-4704-a8ce-e429ce9e133a.png)
 
@@ -223,7 +223,7 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
 
    ![eNom-BP-Configure-1-5](../../media/c92c514c-8166-4cba-97e3-ee1d9847d255.png)
 
-4. 在新建行 **的右侧，** 选择 **添加 SRV 或 SPF 记录**。
+4. 在新建行 **的右侧，** 选择 **"添加 SRV 或 SPF 记录"。**
 
    ![eNom-BP-Configure-5-1](../../media/c73c154d-5aa0-41ef-be25-f43129eb178c.png)
 
@@ -231,8 +231,8 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
 
    |服务|协议|Priority|粗细|端口|目标 (主机名) |
    |---|---|---|---|---|---|
-   |_sip|_tls|100|1 |443|sipdir.online.lync.com.  <br/> **此值必须以句点 (.) 结尾。**|
-   |_sipfederationtls|_tcp|100|1 |5061|sipfed.online.lync.com。  <br/> **此值必须以句点 (.) 结尾。**|
+   |_sip|_tls|100|1|443|sipdir.online.lync.com.  <br/> **此值必须以句点 (.) 结尾。**|
+   |_sipfederationtls|_tcp|100|1|5061|sipfed.online.lync.com。  <br/> **此值必须以句点 (.) 结尾。**|
 
    ![eNom-BP-Configure-5-2](../../media/4d478f40-780f-43b9-940b-712b09da8c63.png)
 

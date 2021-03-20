@@ -17,45 +17,45 @@ ms.custom:
 - Ent_TLGs
 - seo-marvel-apr2020
 ms.assetid: 6f916a77-301c-4be2-b407-6cec4d80df76
-description: 使用此测试实验室指南创建用于测试适用于企业的 Microsoft 365 的轻型测试环境。
-ms.openlocfilehash: 2b8505e142c3c1b87578db7342ed299b95d8c049
-ms.sourcegitcommit: 53ff1fe6d6143b0bf011031eea9b85dc01ae4f74
+description: 使用此测试实验室指南创建用于测试 Microsoft 365 企业版的轻型测试环境。
+ms.openlocfilehash: 2de0760cef7339f62229575b1e0a54b3c67a4e9f
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "48487384"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50909702"
 ---
 # <a name="the-lightweight-base-configuration"></a>轻型基本配置
 
-*此测试实验室指南可用于适用于企业和 Office 365 企业测试环境的 Microsoft 365。*
+*此测试实验室指南可用于 Microsoft 365 企业版和 Office 365 企业版测试环境。*
 
 本文介绍如何使用 Microsoft 365 E5 订阅和运行 Windows 10 企业版的计算机创建简化的环境。
 
 ![轻量级 Microsoft 365 企业版测试环境](../media/lightweight-base-configuration-microsoft-365-enterprise/Phase4.png)
 
-创建轻型测试环境涉及五个阶段：
-- [第1阶段：创建 Microsoft 365 E5 订阅](#phase-1-create-your-microsoft-365-e5-subscription)
+创建轻型测试环境包括五个阶段：
+- [第 1 阶段：创建 Microsoft 365 E5 订阅](#phase-1-create-your-microsoft-365-e5-subscription)
 - [第 2 阶段：配置 Office 365 试用版订阅](#phase-2-configure-your-office-365-trial-subscription)
 - [第 3 阶段：添加 Microsoft 365 E5 试用版订阅](#phase-3-add-a-microsoft-365-e5-trial-subscription)
 - [第 4 阶段：创建 Windows 10 企业版计算机](#phase-4-create-a-windows-10-enterprise-computer)
 - [第 5 阶段：将 Windows 10 计算机加入到 Azure AD](#phase-5-join-your-windows-10-computer-to-azure-ad)
 
-使用生成的环境测试 [适用于企业的 Microsoft 365](https://www.microsoft.com/microsoft-365/enterprise)的特性和功能。
+使用生成的环境来测试 [Microsoft 365](https://www.microsoft.com/microsoft-365/enterprise)企业版 的特性和功能。
 
 ![Microsoft 云测试实验室指南](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
   
 > [!TIP]
-> 有关指向 Microsoft 365 for 企业版测试实验室指南堆栈中的所有文章的可视化地图，请参阅 [适用于企业测试实验室指南堆栈的 microsoft 365](../downloads/Microsoft365EnterpriseTLGStack.pdf)。
+> 有关 Microsoft 365 企业版测试实验室指南堆栈中所有文章的直观地图，请参阅 [Microsoft 365 企业版测试实验室指南堆栈](../downloads/Microsoft365EnterpriseTLGStack.pdf)。
 
 >[!NOTE]
 >不妨打印这篇文章，以便记录在 30 天的 Office 365 试用版订阅期内需要对此环境使用的特定信息。 可以轻松地将该订阅的试用期再延长 30 天。 对于永久性测试环境，请创建一个包含单独 Azure AD 租户和少量许可证的新付费订阅。
 
-## <a name="phase-1-create-your-microsoft-365-e5-subscription"></a>第1阶段：创建 Microsoft 365 E5 订阅
+## <a name="phase-1-create-your-microsoft-365-e5-subscription"></a>第 1 阶段：创建 Microsoft 365 E5 订阅
 
-我们首先使用 Microsoft 365 E5 试用订阅，然后向其添加 Microsoft 365 E5 订阅。
+我们从 Microsoft 365 E5 试用订阅开始，然后向它添加 Microsoft 365 E5 订阅。
 
 >[!NOTE]
->我们建议您创建 Office 365 的试用订阅，以便您的测试环境具有来自您当前拥有的任何付费订阅的单独的 Azure AD 租户。 这种分离意味着您可以在不影响生产订阅的情况下，在测试租户中添加和删除用户和组。
+>我们建议你创建 Office 365 的试用订阅，以便你的测试环境具有独立于你当前拥有的任何付费订阅的 Azure AD 租户。 这种分离意味着可以在测试租户中添加和删除用户和组，而不会影响生产订阅。
 
 要启动 Microsoft 365 E5 试用版订阅，你首先需要一个虚构公司名称和一个新的 Microsoft 帐户。
   
@@ -71,15 +71,15 @@ ms.locfileid: "48487384"
 
 1. 在浏览器中，转到 [https://aka.ms/e5trial](https://aka.ms/e5trial) 。
     
-2. 在 " **感谢您选择 Office 365 E5** " 页的步骤1中，输入新的电子邮件帐户地址。
-3. 在跟踪订阅过程的第2步中，输入请求的信息，然后执行验证。
-4. 在步骤3中，输入组织名称，然后输入将成为订阅全局管理员的帐户名称。
+2. 在"感谢您选择 **Office 365 E5"** 页面的步骤 1 中，输入新的电子邮件帐户地址。
+3. 在跟踪订阅过程的步骤 2 中，输入请求的信息，然后执行验证。
+4. 在步骤 3 中，输入组织名称，然后输入将成为订阅全局管理员的帐户名称。
 5. 在第 4 步中，在此记录登录页面（选择并复制）： ![折线图](../media/Common-Images/TableLine.png)
 6. 在此记录用户 ID：![Line](../media/Common-Images/TableLine.png).onmicrosoft.com  
-   记录您在安全位置输入的密码。
+   记录在安全位置输入的密码。
    此值被称为 **“全局管理员名称”**。
-7. 选择 " **转到安装程序**"。
-8. 在 "Office 365 E5 设置" 中，选择 " **继续使用 *您的组织*onmicrosoft.com 电子邮件并登录**"，然后选择 " **退出并继续**"。
+7. 选择 **"转到设置"。**
+8. In Office 365 E5 Setup， select **Continue using your *organization*.onmicrosoft.com for email and signing in**， and then select Exit and continue **later**.
 
 你应当查看 Microsoft 365 管理中心。
     
@@ -87,11 +87,11 @@ ms.locfileid: "48487384"
 
 在这个阶段，你为订阅配置其他用户，并向这些用户分配 Office 365 E5 许可证。
   
-若要从计算机连接到使用 Azure Active Directory PowerShell for Graph 模块的订阅，请按照 [connect To Microsoft 365 With PowerShell](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)中的说明操作。
+若要从计算机使用 Azure Active Directory PowerShell graph 模块连接到订阅，请使用使用 [PowerShell 连接到 Microsoft 365 中的说明](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)。
     
-在 " **Windows PowerShell 凭据请求** " 对话框中，输入全局管理员名称 (例如，" *Jdoe@contosotoycompany.onmicrosoft.com* ") 和 "密码"。
+在 **"Windows PowerShell凭据** 请求"对话框中，输入全局管理员 (例如，jdoe@contosotoycompany.onmicrosoft.com) 密码。 
   
-填写你的组织名称 (例如， *contosotoycompany*) ，用于您的位置的双字符国家/地区代码，一个公用帐户密码，然后从 PowerShell 提示符处运行以下命令：
+填写组织名称 (例如 *contosotoycompany*) 、位置的两字符国家/地区代码、公用帐户密码，然后从 PowerShell 提示符处运行以下命令：
 
 ```powershell
 $orgName="<organization name>"
@@ -129,7 +129,7 @@ Set-AzureADUserLicense -ObjectId $userUPN -AssignedLicenses $LicensesToAssign
 
 ### <a name="record-key-information-for-future-reference"></a>记录关键信息供将来参考
 
-如果尚未记录这些值，请立即记录这些值：
+如果尚未记录这些值，请现在录制它们：
   
 - 全局管理员名称： ![折线图](../media/Common-Images/TableLine.png).onmicrosoft.com（在第 1 阶段的第 6 步中）
     
@@ -159,7 +159,7 @@ Set-AzureADUserLicense -ObjectId $userUPN -AssignedLicenses $LicensesToAssign
 
 如果只需要 Office 365 测试环境，则无需阅读本文的其余部分。
 
-有关适用于 Office 365 和 Microsoft 365 的其他测试实验室指南，请参阅适用于 [企业测试实验室指南的 microsoft 365](m365-enterprise-test-lab-guides.md)。
+有关适用于 Office 365 和 Microsoft 365 的其他测试实验室指南，请参阅 [Microsoft 365 企业版测试实验室指南](m365-enterprise-test-lab-guides.md)。
   
 ## <a name="phase-3-add-a-microsoft-365-e5-trial-subscription"></a>第 3 阶段：添加 Microsoft 365 E5 试用版订阅
 
@@ -167,32 +167,32 @@ Set-AzureADUserLicense -ObjectId $userUPN -AssignedLicenses $LicensesToAssign
   
 首先，请添加 Microsoft 365 E5 试用版订阅并向全局管理员帐户分配一个新的 Microsoft 365 许可证。
   
-1. 在 internet 浏览器专用窗口中，使用全局管理员帐户凭据登录到 Microsoft 365 管理中心 [https://admin.microsoft.com](https://admin.microsoft.com) 。
+1. 在 Internet 浏览器专用窗口中，使用全局管理员帐户凭据登录到位于 的 Microsoft 365 管理中心 [https://admin.microsoft.com](https://admin.microsoft.com) 。
     
-2. 在 " **Microsoft 365 管理中心** " 页的左侧导航栏中，选择 " **付费 > 购买服务**"。
+2. 在 **Microsoft 365** 管理中心页面的左侧导航中，选择"帐单>**购买服务"。**
     
-3. 在 " **购买服务** " 页上，选择 " **Microsoft 365 E5**"，然后选择 " **获取免费试用版**"。
+3. 在"**购买服务"** 页上，选择 **"Microsoft 365 E5"，** 然后选择"**获取免费试用版"。**
 
-4. 在 **Microsoft 365 E5 试用** 页面上，决定接收短信或电话呼叫，输入你的电话号码，然后选择 "向 **我发出文本** " 或 " **呼叫我**"。 执行验证。
+4. 在 **"Microsoft 365 E5** 试用版"页面上，决定接收短信或电话呼叫，输入电话号码，然后选择"**给我** 发短信"或"**呼叫我"。** 执行验证。
 
-5. 在 " **确认订单** " 页上，选择 " **立即试用**"。
+5. 在"**确认订单"页上**，选择"**立即试用"。**
 
-6. 在 " **订单接收** " 页上，选择 " **继续**"。
+6. 在"**订单收据"** 页上，选择"继续 **"。**
 
-7. 在 Microsoft 365 管理中心，选择 " **用户" > 活动用户**"。
+7. 在 Microsoft 365 管理中心中，选择">**活动用户"。**
 
-8. 在 " **活动用户**" 中，选择管理员帐户。
+8. 在 **"活动用户"** 中，选择管理员帐户。
 
-9. 选择 " **许可证和应用**"。
+9. 选择 **"许可证和应用"。**
 
 10. 禁用 Office 365 企业版 E5 的许可证，并启用 Microsoft 365 E5 的许可证。
 
-11. 选择 " **保存更改**"，然后关闭 "用户帐户信息" 窗格。
+11. 选择 **"保存更改**"，然后关闭用户帐户信息窗格。
 
 接下来，对其他所有帐户（用户 2、用户 3、用户 4 和用户 5）重复执行上面过程的第 8 步到第 11 步。
   
 > [!NOTE]
-> Microsoft 365 E5 试用订阅的长度为30天。 对于永久测试环境，将此试用版订阅转换为带少量许可证的付费订阅。
+> Microsoft 365 E5 试用版订阅的时长为 30 天。 对于永久测试环境，将此试用版订阅转换为带少量许可证的付费订阅。
   
 测试环境现在包含：
   
@@ -209,18 +209,18 @@ Set-AzureADUserLicense -ObjectId $userUPN -AssignedLicenses $LicensesToAssign
   
 ### <a name="physical-computer"></a>物理计算机
 
-在个人计算机上，安装 Windows 10 企业版。 你可以在 [此处](https://www.microsoft.com/evalcenter/evaluate-windows-10-enterprise)下载 Windows 10 企业版试用版。
+在个人计算机上，安装 Windows 10 企业版。 你可以在此处下载 Windows 10 企业版 [试用版](https://www.microsoft.com/evalcenter/evaluate-windows-10-enterprise)。
   
 ### <a name="virtual-machine"></a>虚拟机
 
-使用您选择的虚拟机管理程序创建虚拟机，然后在其上安装 Windows 10 企业版。 你可以在 [此处](https://www.microsoft.com/evalcenter/evaluate-windows-10-enterprise)下载 Windows 10 企业版试用版。
+使用你选择的虚拟机监控程序创建虚拟机，然后在虚拟机上安装 Windows 10 企业版。 你可以在此处下载 Windows 10 企业版 [试用版](https://www.microsoft.com/evalcenter/evaluate-windows-10-enterprise)。
   
 ### <a name="virtual-machine-in-azure"></a>Azure 中的虚拟机
 
-要在 Microsoft Azure 中创建 Windows 10 虚拟机，***你必须拥有基于 Visual Studio 的订阅***，以便有权访问 Windows 10 企业版的映像。其他类型的 Azure 订阅（如试用版和付费订阅）均无权访问此映像。有关最新信息，请参阅[在 Azure 中使用 Windows 客户端实现开发/测试方案](https://docs.microsoft.com/azure/virtual-machines/windows/client-images)。
+要在 Microsoft Azure 中创建 Windows 10 虚拟机，***你必须拥有基于 Visual Studio 的订阅***，以便有权访问 Windows 10 企业版的映像。其他类型的 Azure 订阅（如试用版和付费订阅）均无权访问此映像。有关最新信息，请参阅 [在 Azure 中使用 Windows 客户端实现开发/测试方案](/azure/virtual-machines/windows/client-images)。
   
 > [!NOTE]
-> [!注意] 下面的命令集使用最新版 Azure PowerShell。 请参阅 [Get started with Azure PowerShell cmdlets](https://docs.microsoft.com/powershell/azureps-cmdlets-docs/)（Azure PowerShell cmdlet 使用入门）。 这些命令集构建一个名为 WIN10 的 Windows 10 企业版虚拟机及其所有所需的基础结构，包括资源组、存储帐户和虚拟网络。 如果你已熟悉 Azure 基础结构服务，请修改这些说明以适应当前部署的基础结构。
+> [!注意] 下面的命令集使用最新版 Azure PowerShell。 请参阅 [Get started with Azure PowerShell cmdlets](/powershell/azureps-cmdlets-docs/)（Azure PowerShell cmdlet 使用入门）。 这些命令集生成名为 WIN10 的 Windows 10 企业版虚拟机及其所有必需的基础结构，包括资源组、存储帐户和虚拟网络。 如果你已熟悉 Azure 基础结构服务，请根据当前部署的基础结构调整这些说明。
   
 首先，启动 Microsoft PowerShell 提示符。
   
@@ -236,7 +236,7 @@ Connect-AzAccount
 Get-AzSubscription | Sort Name | Select Name
 ```
 
-设置 Azure 订阅。 使用正确的名称替换引号内的所有内容（包括 \< and > 字符）。
+设置 Azure 订阅。 用正确的名称替换引号内 \< and > 的所有内容（包括字符）。
   
 ```powershell
 $subscr="<subscription name>"
@@ -249,7 +249,7 @@ Get-AzSubscription -SubscriptionName $subscr | Select-AzSubscription
 Get-AzResourceGroup | Sort ResourceGroupName | Select ResourceGroupName
 ```
 
-使用这些命令创建新的资源组。 使用正确的名称替换引号内的所有内容（包括 \< and > 字符）。
+使用这些命令创建新的资源组。 用正确的名称替换引号内 \< and > 的所有内容（包括字符）。
   
 ```powershell
 $rgName="<resource group name>"
@@ -257,7 +257,7 @@ $locName="<location name, such as West US>"
 New-AzResourceGroup -Name $rgName -Location $locName
 ```
 
-接下来，使用这些命令创建新的虚拟网络和 WIN10 虚拟机。 出现提示时，提供 WIN10 的本地管理员帐户的名称和密码，并将它们存储在安全位置。
+接下来，使用这些命令创建新的虚拟网络和 WIN10 虚拟机。 当系统提示时，提供 WIN10 的本地管理员帐户的名称和密码，并存储在安全的位置。
   
 ```powershell
 $corpnetSubnet=New-AzVirtualNetworkSubnetConfig -Name Corpnet -AddressPrefix 10.0.0.0/24
@@ -284,31 +284,31 @@ New-AzVM -ResourceGroupName $rgName -Location $locName -VM $vm
 在创建具有 Windows 10 企业版的物理计算机或虚拟机之后，使用本地管理员帐户登录。
   
 > [!NOTE]
-> 对于 Azure 中的虚拟机，请使用  [以下说明](https://docs.microsoft.com/azure/virtual-machines/windows/connect-logon) 连接到它。
+> 对于 Azure 中的虚拟机，请使用  [以下](/azure/virtual-machines/windows/connect-logon) 说明连接到它。
   
 接下来，将 WIN10 计算机联接到 Microsoft 365 E5 订阅的 Azure AD 租户中。
   
-1. 在 WIN10 计算机的桌面上，选择 " **开始 > 设置" > 帐户 > 访问 "工作或学校 > 连接**"。
+1. 在 WIN10 计算机的桌面上，选择"开始>设置 **>帐户>访问工作或学校>连接"。**
     
-2. 在 " **设置工作或学校帐户** " 对话框中，选择 "将 **此设备加入 Azure Active Directory**"。
+2. 在 **"设置工作或学校帐户**"对话框中，选择 **"将此设备加入 Azure Active Directory"。**
     
-3. 在 " **工作或学校帐户**" 中，输入 Microsoft 365 E5 订阅的全局管理员帐户名称，然后选择 " **下一步**"。
+3. 在 **"工作或学校帐户**"中，输入 Microsoft 365 E5 订阅的全局管理员帐户名称，然后选择"下一步 **"。**
     
-4. 在 " **输入密码**" 中，输入全局管理员帐户的密码，然后选择 " **登录**"。
+4. 在 **"输入密码**"中，输入全局管理员帐户的密码，然后选择"**登录"。**
     
-5. 当系统提示您确保这是你的组织时，请选择 " **加入**"，然后选择 " **完成**"。
+5. 当系统提示确保这是您的组织时，请选择"**加入**"，然后选择"完成 **"。**
     
 6. 关闭“设置”窗口。
     
-接下来，在 WIN10 计算机上安装适用于企业的 Microsoft 365 应用程序：
+接下来，在 WIN10 计算机上安装 Microsoft 365 企业应用版：
   
-1. 打开 Microsoft Edge 浏览器，并使用全局管理员帐户凭据登录 [Microsoft 365 管理中心](https://admin.microsoft.com) 。
+1. 打开 Microsoft Edge 浏览器，然后使用全局管理员帐户凭据登录 [Microsoft 365](https://admin.microsoft.com) 管理中心。
     
-2. 在 " **Microsoft Office 主页** " 选项卡上，选择 " **安装 Office**"。
+2. 在 **"Microsoft Office主页"** 选项卡上，选择"**安装 Office"。**
     
-3. 在系统提示时，选择 "**运行**"，然后为 "**用户帐户控制** **" 选择 "是"** 。
+3. 当系统提示要执行哪些操作时，请选择"**运行**"，然后 **为"用户帐户** 控制 **"选择"是"。**
     
-4. 等待 Office 完成安装。 如果看到 " **全是**"，请选择 " **关闭** " 两次。
+4. 等待 Office 完成安装。 当你看到" **你已全部设置！"时，** 选择"关闭 **"两** 次。
     
 生成的环境如下所示：
 
@@ -318,9 +318,9 @@ New-AzVM -ResourceGroupName $rgName -Location $locName -VM $vm
 
 - 已联接 Microsoft 365 E5 订阅的 Azure AD 租户。
 - 已注册为 Microsoft Intune (EMS) 中的 Azure AD 设备。
-- 安装了适用于企业的 Microsoft 365 应用程序。
+- 已安装 Microsoft 365 企业应用版。
   
-现在，你可以试用 [Microsoft 365 for 企业版](https://www.microsoft.com/microsoft-365/enterprise)的其他功能。
+现在，你已准备好试用 [Microsoft 365 企业版的其他功能](https://www.microsoft.com/microsoft-365/enterprise)。
   
 ## <a name="next-steps"></a>后续步骤
 
@@ -337,4 +337,4 @@ New-AzVM -ResourceGroupName $rgName -Location $locName -VM $vm
 
 [Microsoft 365 企业版概述](microsoft-365-overview.md)
 
-[适用于企业的 Microsoft 365 文档](https://docs.microsoft.com/microsoft-365-enterprise/)
+[适用于企业的 Microsoft 365 文档](/microsoft-365-enterprise/)

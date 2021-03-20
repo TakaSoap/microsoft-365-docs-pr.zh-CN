@@ -1,9 +1,9 @@
 ### YamlMime:Landing
-title: 保护和管理设备和应用程序数据
-summary: 请查看这些资源，以帮助管理员在设备和应用程序数据管理方法之间进行选择。
+title: 保护和管理设备和应用数据
+summary: 查看这些资源以帮助管理员在设备和应用数据管理方法之间选择。
 metadata:
-  title: 保护和管理设备和应用程序数据
-  description: 管理和保护设备和应用程序数据
+  title: 保护和管理设备和应用数据
+  description: 管理和保护设备和应用数据
   ms.service: O365-administration
   ms.topic: landing-page
   author: Sirkkuw
@@ -11,56 +11,56 @@ metadata:
   ms.date: 09/09/2020
   localization_priority: Priority
   ms.custom: AdminSurgePortfolio
-  ms.openlocfilehash: a70d8471d8344f7bf479e050c59d6c6b3d97f5fe
-  ms.sourcegitcommit: 5a355bde865369f64ea1788a378da23c65b1d249
+  ms.openlocfilehash: 2b15d19025f42db0b4f79adb6f4156f7a115f227
+  ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/06/2020
-  ms.locfileid: "48930246"
+  ms.lasthandoff: 03/19/2021
+  ms.locfileid: "50910434"
 landingContent:
 - title: 不同的 MDM 和 MAM 方法
   linkLists:
   - linkListType: overview
     links:
-    - text: 查看设备和应用程序数据保护选项
+    - text: 查看设备和应用数据保护选项
       url: choose-device-security.md
 - title: 使用 Microsoft Intune 管理设备和应用数据
   linkLists:
   - linkListType: overview
     links:
     - text: 设备注册概述
-      url: https://docs.microsoft.com/mem/intune/enrollment/device-enrollment
+      url: /mem/intune/enrollment/device-enrollment
   - linkListType: how-to-guide
     links:
     - text: 设置 Windows 10 设备的自动注册
-      url: https://docs.microsoft.com/mem/intune/enrollment/quickstart-setup-auto-enrollment
+      url: /mem/intune/enrollment/quickstart-setup-auto-enrollment
     - text: 设置 Android 注册
-      url: https://docs.microsoft.com/mem/intune/enrollment/android-enroll
+      url: /mem/intune/enrollment/android-enroll
     - text: 设置 iOS/iPadOS 注册
-      url: https://docs.microsoft.com/mem/intune/enrollment/ios-enroll
-- title: 使用 Microsoft 365 商业高级版管理设备和应用程序数据
+      url: /mem/intune/enrollment/ios-enroll
+- title: 使用 Microsoft 365 商业高级版管理设备和应用数据
   linkLists:
   - linkListType: how-to-guide
     links:
-    - text: 查看和管理应用程序和设备管理策略
+    - text: 查看和管理应用和设备管理策略
       url: ../../business/view-policies-and-devices.md
     - text: 从设备中删除公司数据
       url: ../../business/remove-company-data.md
     - text: 将 Windows 设备重置为出厂设置
       url: ../../business/reset-devices-to-factory-settings.md
-- title: 使用适用于企业的 Microsoft 365 管理设备和应用数据
+- title: 使用 Microsoft 365 企业版管理设备和应用数据
   linkLists:
   - linkListType: overview
     links:
     - text: Microsoft 365 企业版概述
       url: ../../enterprise/microsoft-365-overview.md
-    - text: 适用于企业的 Microsoft 365 的设备管理路线图映射
+    - text: Microsoft 365 企业版的设备管理路线图
       url: ../../enterprise/device-management-roadmap-microsoft-365.md
-- title: 使用基本移动性和安全性管理设备和应用程序数据
+- title: 使用基本移动性和安全性管理设备和应用数据
   linkLists:
   - linkListType: overview
     links:
-    - text: 基本移动性和安全性概述
+    - text: 基本移动性和安全性概览
       url: ../basic-mobility-security/overview.md
     - text: 设置基本移动性和安全性
       url: ../basic-mobility-security/set-up.md

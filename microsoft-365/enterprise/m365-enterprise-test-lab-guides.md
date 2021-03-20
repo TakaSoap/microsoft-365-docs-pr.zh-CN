@@ -18,12 +18,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 使用这些测试实验室指南为 Microsoft 365 企业版设置演示、概念验证或开发/测试环境。
-ms.openlocfilehash: fefbb18fd108dceba6f387fb8244619c4bb1c167
-ms.sourcegitcommit: 53ff1fe6d6143b0bf011031eea9b85dc01ae4f74
+ms.openlocfilehash: a006f549d0ac68562faee9c935df7f15161b2f12
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "48487466"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50909594"
 ---
 # <a name="microsoft-365-for-enterprise-test-lab-guides"></a>Microsoft 365 企业版测试实验室指南
 
@@ -31,23 +31,23 @@ ms.locfileid: "48487466"
 
 测试实验室指南 (TLG) 可帮助你快速了解 Microsoft 产品。它们提供了用于配置已简化但具有代表性的测试环境的说明性指南。可以在试用版或付费订阅期间使用这些环境进行演示、自定义或创建概念的复杂论证。
 
-Tlg 设计为模块化。它们彼此之间建立，以创建与您的学习或测试配置需求更接近的多个配置。"我自己构建了它，并且工作正常" 体验可帮助您了解新产品或方案的部署要求，以便您可以更好地规划在生产环境中托管它。
+TTL 设计为模块化。 它们基于彼此构建，以创建更符合你的学习或测试配置需求的多个配置。 "我亲自构建，它可运行"的动手体验可帮助你了解新产品或方案的部署要求，以便你可以更好地规划在生产中托管它。
 
-您还可以使用 Tlg 创建用于开发和测试应用程序的代表性环境，也称为开发/测试环境。
+您还可以使用 TTL 创建具有代表性的环境来开发和测试应用程序，也称为开发/测试环境。
   
 ![Microsoft 云测试实验室指南](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
-若要查看 Microsoft 365 for 企业测试实验室指南堆栈中的所有文章的可视化地图，请展开下图或转到 [microsoft 365 以获取企业测试实验室指南堆栈](../downloads/Microsoft365EnterpriseTLGStack.pdf)。
+有关 Microsoft 365 企业版测试实验室指南堆栈中所有文章的直观地图，请展开下图或转到 Microsoft [365 企业版测试实验室指南堆栈](../downloads/Microsoft365EnterpriseTLGStack.pdf)。
 
 [![Microsoft 365 企业版测试实验室指南堆栈](../media/m365-enterprise-test-lab-guides/microsoft-365-enterprise-tlg-stack.png)](../downloads/Microsoft365EnterpriseTLGStack.pdf)
 
 ## <a name="base-configuration"></a>基本配置
 
-首先，为适用于企业的 [Microsoft 365](https://docs.microsoft.com/microsoft-365-enterprise/)创建一个测试环境。您可以创建两种不同类型的基本配置：
+首先，为 [Microsoft 365 企业版创建测试环境](/microsoft-365-enterprise/)。 可以创建两种不同类型的基本配置：
 
-- [轻型基本配置](lightweight-base-configuration-microsoft-365-enterprise.md) -如果您想要在仅云环境中配置和365演示适用于企业的功能和功能（不包括任何本地组件），请使用此设置。
+- [轻型基本配置](lightweight-base-configuration-microsoft-365-enterprise.md) - 当你想要在仅云环境中配置和演示 Microsoft 365 企业版特性和功能（不包括任何本地组件）时，可使用此配置。
 
-- [模拟企业基本配置](simulated-ent-base-configuration-microsoft-365-enterprise.md) -如果要在混合云环境中配置和365演示适用于企业的功能的功能和功能，请使用此功能; 在混合云环境中使用本地组件（如 Active Directory 域服务 (AD DS) 域）。
+- 模拟企业[基础](simulated-ent-base-configuration-microsoft-365-enterprise.md)配置 - 在混合云环境中配置和演示 Microsoft 365 企业版特性和功能时使用此配置，该环境使用 Active Directory 域服务 (AD DS) 域等本地组件。
 
 此外，还可通过不将 Microsoft 365 E5 许可证添加到试用版或产品测试环境中，来创建 Office 365 E5 的测试环境。
     
@@ -69,7 +69,7 @@ Tlg 设计为模块化。它们彼此之间建立，以创建与您的学习或�
 
 - [Azure AD 无缝单一登录](single-sign-on-m365-ent-test-environment.md)
   
-   启用和测试 Azure AD 无缝单一登录 (与 AD DS 域控制器之间的无缝 SSO) 。
+   使用 AD DS 域控制器启用 (Azure AD 无缝单一登录) 无缝 SSO 登录。
 
 - [多重身份验证](multi-factor-authentication-microsoft-365-test-environment.md)
   
@@ -85,7 +85,7 @@ Tlg 设计为模块化。它们彼此之间建立，以创建与您的学习或�
 
 - [密码重置](password-reset-m365-ent-test-environment.md)
 
-   使用自助密码重置重置密码。
+   使用自助服务密码重置重置密码。
 
 - [自动许可和组成员身份](automate-licenses-group-membership-microsoft-365-test-environment.md)
 

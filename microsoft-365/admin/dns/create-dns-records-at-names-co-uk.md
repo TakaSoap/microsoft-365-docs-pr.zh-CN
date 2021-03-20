@@ -1,5 +1,5 @@
 ---
-title: 在 Microsoft Names.co.uk创建 DNS 记录
+title: 在 Microsoft Names.co.uk 创建 DNS 记录
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -20,21 +20,21 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: b6c15128-b456-49b4-8b5e-5b823c700f26
-description: 了解如何验证域，并设置电子邮件、Skype for Business Online 和其他 Microsoft Names.co.uk DNS 记录。
-ms.openlocfilehash: 51dc9b3271468d42e82f98a1b85de5104416b015
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+description: 了解如何验证域，并设置电子邮件、Skype for Business Online 和 Microsoft Names.co.uk 的其他服务的 DNS 记录。
+ms.openlocfilehash: ddd7286d983a0f180c9aefdbf5218eb9765c8669
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49657811"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50910038"
 ---
-# <a name="create-dns-records-at-namescouk-for-microsoft"></a>在 Microsoft Names.co.uk创建 DNS 记录
+# <a name="create-dns-records-at-namescouk-for-microsoft"></a>在 Microsoft Names.co.uk 创建 DNS 记录
 
  如果找不到要查找的内容，请 **[查看域常见问题解答](../setup/domains-faq.yml)**。 
   
-如果Names.co.uk DNS 托管提供商，请按照本文中的步骤验证域并设置电子邮件、Skype for Business Online 等的 DNS 记录。
+如果 Names.co.uk DNS 托管提供商，请按照本文中的步骤验证域，并设置电子邮件、Skype for Business Online 等的 DNS 记录。
     
-在网站中添加这些Names.co.uk，域将设置为使用 Microsoft 服务。
+在添加这些记录 Names.co.uk，域将设置为使用 Microsoft 服务。
   
 
   
@@ -115,13 +115,13 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
     
     ![NamesUK-BP-Configure-1-2](../../media/b618f8e5-404e-466a-9e71-acd7479f3994.png)
   
-3. 在 **"添加/修改 DNS** 区域"页上的" **邮件交换** 记录"部分，在新记录的框内，键入或复制并粘贴下表中的值。 
+3. 在" **添加/修改 DNS** 区域"页上的" **邮件交换** 记录"部分，在新记录的框内键入或复制并粘贴下表中的值。 
     
     （可能需要向下滚动。）
     
     |**主机名**|**Priority**|**结果**|
     |:-----|:-----|:-----|
-    |（将此字段留空。）  <br/> |1   <br/> 有关优先级的详细信息，请参阅[什么是 MX 优先级？](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/> | *\<domain-key\>*  .mail.protection.outlook.com  <br/> > [!NOTE]>从  *\<domain-key\>*  Microsoft 帐户获取你的帐户。           [如何查找此项？](../get-help-with-domains/information-for-dns-records.md)          |
+    |（将此字段留空。）  <br/> |1  <br/> 有关优先级的详细信息，请参阅[什么是 MX 优先级？](../setup/domains-faq.yml) <br/> | *\<domain-key\>*  .mail.protection.outlook.com  <br/> > [!NOTE]>从  *\<domain-key\>*  Microsoft 帐户获取你的帐户。           [如何查找此项？](../get-help-with-domains/information-for-dns-records.md)          |
        
     ![NamesUK-BP-Configure-2-1](../../media/e211d73d-864f-4114-864b-8e636c69f595.png)
   
@@ -180,7 +180,7 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
 <a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]
-> 一个域所拥有的 SPF 的 TXT 记录不能超过一个。 如果域具有多个 SPF 记录，你将收到电子邮件错误，其中随附发送和垃圾邮件分类问题。 如果你的域已有 SPF 记录，请不要为 Microsoft 创建新记录。 相反，将所需的 Microsoft 值添加到当前记录，以便具有一个  *包含这*  两组值的 SPF 记录。
+> 一个域所拥有的 SPF 的 TXT 记录不能超过一个。 如果域具有多个 SPF 记录，你将收到电子邮件错误，其中随附发送和垃圾邮件分类问题。 如果你的域已有 SPF 记录，请不要为 Microsoft 创建新记录。 相反，将所需的 Microsoft 值添加到当前记录，以便你有一个  *包含这*  两组值的 SPF 记录。
   
 1. 若要开始使用，请使用[此链接](https://account.names.co.uk/dashboard#/)转到 Names.co.uk 上的域页面。系统将提示你先登录。
     
@@ -192,7 +192,7 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
     
     ![NamesUK-BP-Configure-1-2](../../media/b618f8e5-404e-466a-9e71-acd7479f3994.png)
   
-3. 在 **"帐户上的 DNS** 区域"页上的"域名 **"列中，** 选择要更新的域的名称。 
+3. 在"**帐户上的 DNS** 区域"页上的"域名"列中，选择要更新的域的名称。 
     
     ![NamesUK-BP-Configure-1-2-1](../../media/20254eec-6952-47ba-b12b-da32860ee7ef.png)
   
@@ -229,14 +229,14 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
     
     ![NamesUK-BP-Configure-1-2](../../media/b618f8e5-404e-466a-9e71-acd7479f3994.png)
   
-3. 在 **"添加/修改 DNS** 区域"页上的"服务记录"部分，在新记录的框内，键入或复制并粘贴下表中的值。 
+3. 在"**添加/修改 DNS** 区域"页上的"服务记录"部分，在新记录的框内，键入或复制并粘贴下表中的值。 
     
     （您可能需要向下滚动。）
     
     |**名称**|**优先级**|**权重**|**端口**|**结果**|
     |:-----|:-----|:-----|:-----|:-----|
-    |_sip._tls  <br/> |100  <br/> |1   <br/> |443  <br/> |sipdir.online.lync.com  <br/> |
-    |_sipfederationtls._tcp  <br/> |100  <br/> |1   <br/> |5061  <br/> |sipfed.online.lync.com  <br/> |
+    |_sip._tls  <br/> |100  <br/> |1  <br/> |443  <br/> |sipdir.online.lync.com  <br/> |
+    |_sipfederationtls._tcp  <br/> |100  <br/> |1  <br/> |5061  <br/> |sipfed.online.lync.com  <br/> |
        
     ![NamesUK-BP-Configure-5-1](../../media/97a96523-005a-4058-9e12-19f6c3bf9b3b.png)
   
@@ -248,4 +248,3 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
   
 > [!NOTE]
 >  DNS 更改通常需要 15 分钟左右才能生效。 但是，有时可能需要更长时间，您所做的更改才会在 Internet 的 DNS 系统中更新。 如果添加 DNS 记录后遇到邮件流问题或其他问题，请参阅 [更改域名或 DNS 记录后出现的问题的疑难解答](../get-help-with-domains/find-and-fix-issues.md)。 
-  

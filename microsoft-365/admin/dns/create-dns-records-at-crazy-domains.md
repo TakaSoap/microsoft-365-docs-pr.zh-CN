@@ -20,19 +20,19 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 6386d63e-b78f-4736-90e7-b99a2c116a9f
-description: 了解如何验证你的域，并设置电子邮件、Skype for Business Online 以及 Microsoft 的 Crazy Domains 的其他服务的 DNS 记录。
-ms.openlocfilehash: 4b39a51f96299879207b96d1e15d039905440b0a
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+description: 了解如何在 Crazy Domains for Microsoft 中验证域并设置电子邮件、Skype for Business Online 和其他服务的 DNS 记录。
+ms.openlocfilehash: 425ecfa6f8b6c4085bdffb3d2701008ecb895b84
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49658491"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50910452"
 ---
 # <a name="create-dns-records-at-crazy-domains-for-microsoft"></a>在 Microsoft 的 Crazy Domains 创建 DNS 记录
 
  如果找不到要查找的内容，请 **[查看域常见问题解答](../setup/domains-faq.yml)**。 
   
-If Crazy Domains is your DNS hosting provider， follow the steps in this article to verify your domain and set up DNS records for email， Skype for Business Online， and so on.
+如果 Crazy Domains 是 DNS 托管提供商，请按照本文中的步骤验证域，并设置电子邮件、Skype for Business Online 等的 DNS 记录。
   
 在 Crazy Domains 添加这些记录后，你的域将设置为使用 Microsoft 服务。
   
@@ -53,15 +53,15 @@ If Crazy Domains is your DNS hosting provider， follow the steps in this articl
     
     ![CrazyDomains-BP-Configure-1-1](../../media/40c5117c-acad-4fe5-bf0d-d3c362b08a16.png)
   
-2. 在"**我的帐户"** 部分，选择"**域"。**
+2. 在"**我的帐户"部分**，选择"**域"。**
     
     ![CrazyDomains-BP-Configure-1-2](../../media/778576c3-560e-4ffb-b3b4-bd92fc6a6bd4.png)
   
-3. 在 **"域名"** 页上的"域"部分，选择要更新的域的名称。 
+3. 在 **"域名"** 页上的"域 **"部分，** 选择要更新的域的名称。 
     
     ![CrazyDomains-BP-Configure-1-3](../../media/4dd7bb74-c8ed-4b4a-b4c1-d9538fc6bd9a.png)
   
-4. 在 **"DNS 设置** "部分，选择下拉列表图标。 
+4. 在 **"DNS 设置"** 部分，选择下拉列表图标。 
     
     ![CrazyDomains-BP-Configure-1-4-1](../../media/c7573fbf-467d-49c1-abb6-8c7b9b4af83d.png)
   
@@ -120,15 +120,15 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
     
     ![CrazyDomains-BP-Configure-1-1](../../media/40c5117c-acad-4fe5-bf0d-d3c362b08a16.png)
   
-2. 在"**我的帐户"** 部分，选择"**域"。**
+2. 在"**我的帐户"部分**，选择"**域"。**
     
     ![CrazyDomains-BP-Configure-1-2](../../media/778576c3-560e-4ffb-b3b4-bd92fc6a6bd4.png)
   
-3. 在 **"域名"** 页上的"域"部分，选择要更新的域的名称。 
+3. 在 **"域名"** 页上的"域 **"部分，** 选择要更新的域的名称。 
     
     ![CrazyDomains-BP-Configure-1-3](../../media/4dd7bb74-c8ed-4b4a-b4c1-d9538fc6bd9a.png)
   
-4. 在 **"DNS 设置** "部分，选择下拉列表图标。 
+4. 在 **"DNS 设置"** 部分，选择下拉列表图标。 
     
     ![CrazyDomains-BP-Configure-1-4-1](../../media/c7573fbf-467d-49c1-abb6-8c7b9b4af83d.png)
   
@@ -136,7 +136,7 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
     
     ![CrazyDomains-BP-Configure-1-4-2](../../media/7bef31f5-f180-4b61-a462-9326789e770f.png)
   
-6. 从 **"添加记录****：** "下拉列表中选择"MX 记录"。 
+6. 从 **"添加记录****："下拉列表** 中选择"MX 记录"。 
     
     ![CrazyDomains-BP-Configure-2-1](../../media/63f7ab77-e686-4e7b-a3a2-1ac28a02d5f3.png)
   
@@ -146,11 +146,11 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
   
 8. 在新记录的框中，键入或复制并粘贴下表中的值。
     
-     (**从下拉列表中选择** 优先级值。)  
+     (从下拉列表 **中选择** 优先级值。)  
     
     |**区域邮件**|**Priority**|**分配给服务器**|
     |:-----|:-----|:-----|
-    |(Leave this field empty.)  <br/> |1   <br/> 有关优先级的详细信息，请参阅[什么是 MX 优先级？](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/> | *\<domain-key\>*  .mail.protection.outlook.com  <br/> **注意：** 从  *\<domain-key\>*  Microsoft 帐户获取你的帐户。           [如何查找此项？](../get-help-with-domains/information-for-dns-records.md)          |
+    |(Leave this field empty.)  <br/> |1  <br/> 有关优先级的详细信息，请参阅[什么是 MX 优先级？](../setup/domains-faq.yml) <br/> | *\<domain-key\>*  .mail.protection.outlook.com  <br/> **注意：** 从  *\<domain-key\>*  Microsoft 帐户获取你的信息。           [如何查找此项？](../get-help-with-domains/information-for-dns-records.md)          |
        
    ![CrazyDomains-BP-Configure-2-3](../../media/e27df6a6-19a6-4e58-9716-a74be1c3f8da.png)
   
@@ -158,15 +158,15 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
     
     ![CrazyDomains-BP-Configure-2-4](../../media/ba25cdef-a436-48bf-b0e9-5dffd03234a4.png)
   
-10. 如果 **"MX** 记录"部分列出了任何其他 MX 记录，请选择 **"** 修改"作为其中一条记录。 
+10. 如果"MX 记录"部分列出了任何其他 **MX** 记录，请为其中一条记录选择"修改"。 
     
     ![CrazyDomains-BP-Configure-2-5](../../media/9acdda39-33ec-4b24-ad83-91c26f9c599b.png)
   
-11. 选择“删除”。
+11. 选择“**删除**”。
     
     ![CrazyDomains-BP-Configure-2-6](../../media/50b0e263-6f21-41b3-8fa0-7dd55dbe6c2e.png)
   
-12. 选择 **"** 更新"以确认删除。 
+12. 选择 **"更新** "以确认删除。 
     
     ![CrazyDomains-BP-Configure-2-7](../../media/db751bfe-31c2-4632-a491-6893eda38a51.png)
   
@@ -179,15 +179,15 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
     
     ![CrazyDomains-BP-Configure-1-1](../../media/40c5117c-acad-4fe5-bf0d-d3c362b08a16.png)
   
-2. 在"**我的帐户"** 部分，选择"**域"。**
+2. 在"**我的帐户"部分**，选择"**域"。**
     
     ![CrazyDomains-BP-Configure-1-2](../../media/778576c3-560e-4ffb-b3b4-bd92fc6a6bd4.png)
   
-3. 在 **"域名"** 页上的"域"部分，选择要更新的域的名称。 
+3. 在 **"域名"** 页上的"域 **"部分，** 选择要更新的域的名称。 
     
     ![CrazyDomains-BP-Configure-1-3](../../media/4dd7bb74-c8ed-4b4a-b4c1-d9538fc6bd9a.png)
   
-4. 在 **"DNS 设置** "部分，选择下拉列表图标。 
+4. 在 **"DNS 设置"** 部分，选择下拉列表图标。 
     
     ![CrazyDomains-BP-Configure-1-4-1](../../media/c7573fbf-467d-49c1-abb6-8c7b9b4af83d.png)
   
@@ -195,7 +195,7 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
     
     ![CrazyDomains-BP-Configure-1-4-2](../../media/7bef31f5-f180-4b61-a462-9326789e770f.png)
   
-6. 从 **"添加记录** ： **"下拉列表** 中选择 CNAME 记录。 
+6. 从 **"添加记录****："下拉列表** 中选择"CNAME 记录"。 
     
     ![CrazyDomains-BP-Configure-3-1](../../media/2f02538b-fc79-46d2-a2b7-1022eaf0fb08.png)
   
@@ -223,11 +223,11 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
   
 10. 添加第二条 CNAME 记录。
     
-    In the boxes for the new record， use the values from the next row in the table， and then again select **Add CNAME Record.**
+    In the boxes for the new record， use the values from the next row in the table， and then again select **Add CNAME Record**.
     
     重复该过程，直到创建完全部 6 条 CNAME 记录。
     
-11. 选择 **"** 更新"保存更改。 
+11. 选择 **"更新** "保存更改。 
     
     ![CrazyDomains-BP-Configure-3-5](../../media/dbe578f6-359c-428c-b296-ca624cecfc3c.png)
   
@@ -235,21 +235,21 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
 <a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]
-> 一个域所拥有的 SPF 的 TXT 记录不能超过一个。 如果域具有多个 SPF 记录，你将收到电子邮件错误，其中随附发送和垃圾邮件分类问题。 如果你的域已有 SPF 记录，请不要为 Microsoft 创建新记录。 相反，将所需的 Microsoft 值添加到当前记录，以便具有一个  *包含这*  两组值的 SPF 记录。 
+> 一个域所拥有的 SPF 的 TXT 记录不能超过一个。 如果域具有多个 SPF 记录，你将收到电子邮件错误，其中随附发送和垃圾邮件分类问题。 如果你的域已有 SPF 记录，请不要为 Microsoft 创建新记录。 相反，将所需的 Microsoft 值添加到当前记录，以便你有一个  *包含这*  两组值的 SPF 记录。 
   
 1. 要开始，请使用[此链接](https://manage.crazydomains.com/members/domains/)转到你在 Crazy Domains 上的域页面。系统将会提示你首先登录。
     
     ![CrazyDomains-BP-Configure-1-1](../../media/40c5117c-acad-4fe5-bf0d-d3c362b08a16.png)
   
-2. 在"**我的帐户"** 部分，选择"**域"。**
+2. 在"**我的帐户"部分**，选择"**域"。**
     
     ![CrazyDomains-BP-Configure-1-2](../../media/778576c3-560e-4ffb-b3b4-bd92fc6a6bd4.png)
   
-3. 在 **"域名"** 页上的"域"部分，选择要更新的域的名称。 
+3. 在 **"域名"** 页上的"域 **"部分，** 选择要更新的域的名称。 
     
     ![CrazyDomains-BP-Configure-1-3](../../media/4dd7bb74-c8ed-4b4a-b4c1-d9538fc6bd9a.png)
   
-4. 在 **"DNS 设置** "部分，选择下拉列表图标。 
+4. 在 **"DNS 设置"** 部分，选择下拉列表图标。 
     
     ![CrazyDomains-BP-Configure-1-4-1](../../media/c7573fbf-467d-49c1-abb6-8c7b9b4af83d.png)
   
@@ -257,7 +257,7 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
     
     ![CrazyDomains-BP-Configure-1-4-2](../../media/7bef31f5-f180-4b61-a462-9326789e770f.png)
   
-6. 从 **"添加记录****：** "下拉列表中选择"TXT 记录"。 
+6. 从 **添加记录** ： 下拉列表 **中选择** TXT 记录。 
     
     ![CrazyDomains-BP-Configure-4-1](../../media/7f2461e2-0468-49bd-9eb0-981e9b2f72d6.png)
   
@@ -284,15 +284,15 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
     
     ![CrazyDomains-BP-Configure-1-1](../../media/40c5117c-acad-4fe5-bf0d-d3c362b08a16.png)
   
-2. 在"**我的帐户"** 部分，选择"**域"。**
+2. 在"**我的帐户"部分**，选择"**域"。**
     
     ![CrazyDomains-BP-Configure-1-2](../../media/778576c3-560e-4ffb-b3b4-bd92fc6a6bd4.png)
   
-3. 在 **"域名"** 页上的"域"部分，选择要更新的域的名称。 
+3. 在 **"域名"** 页上的"域 **"部分，** 选择要更新的域的名称。 
     
     ![CrazyDomains-BP-Configure-1-3](../../media/4dd7bb74-c8ed-4b4a-b4c1-d9538fc6bd9a.png)
   
-4. 在 **"DNS 设置** "部分，选择下拉列表图标。 
+4. 在 **"DNS 设置"** 部分，选择下拉列表图标。 
     
     ![CrazyDomains-BP-Configure-1-4-1](../../media/c7573fbf-467d-49c1-abb6-8c7b9b4af83d.png)
   
@@ -300,7 +300,7 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
     
     ![CrazyDomains-BP-Configure-1-4-2](../../media/7bef31f5-f180-4b61-a462-9326789e770f.png)
   
-6. 从 **"添加记录** ： **"下拉列表** 中选择"SRV 记录"。 
+6. 从 **添加记录** ： 下拉列表 **中选择** SRV 记录。 
     
     ![CrazyDomains-BP-Configure-5-1](../../media/156acebc-7f6d-4b5e-8493-6bc62ca0ee27.png)
   
@@ -314,8 +314,8 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
     
     |**记录类型**|**子域**|**优先级**|**权重**|**端口**|**目标**|
     |:-----|:-----|:-----|:-----|:-----|:-----|
-    |SRV 记录  <br/> |_sip._tls  <br/> |100  <br/> |1   <br/> |443  <br/> |sipdir.online.lync.com  <br/> |
-    |SRV 记录  <br/> |_sipfederationtls._tcp  <br/> |100  <br/> |1   <br/> |5061  <br/> |sipfed.online.lync.com  <br/> |
+    |SRV 记录  <br/> |_sip._tls  <br/> |100  <br/> |1  <br/> |443  <br/> |sipdir.online.lync.com  <br/> |
+    |SRV 记录  <br/> |_sipfederationtls._tcp  <br/> |100  <br/> |1  <br/> |5061  <br/> |sipfed.online.lync.com  <br/> |
    
     ![CrazyDomains-BP-Configure-5-3](../../media/cc0ea6eb-7358-434e-bd1a-2737725c6d41.png)
   
@@ -325,12 +325,11 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
   
 10. 添加另一条 SRV 记录。
     
-    在新建记录的框中，使用表中第二行的值。
+    在新记录的框中，使用表中第二行的值。
     
-11. 选择 **"** 更新"保存更改。 
+11. 选择 **"更新** "保存更改。 
     
     ![CrazyDomains-BP-Configure-5-5](../../media/f0bb1dd6-3772-4293-bf74-710f635e0658.png)
   
 > [!NOTE]
 > DNS 更改通常需要 15 分钟左右才能生效。 但是，有时可能需要更长时间，您所做的更改才会在 Internet 的 DNS 系统中更新。 如果添加 DNS 记录后遇到邮件流问题或其他问题，请参阅 [更改域名或 DNS 记录后出现的问题的疑难解答](../get-help-with-domains/find-and-fix-issues.md)。 
-  

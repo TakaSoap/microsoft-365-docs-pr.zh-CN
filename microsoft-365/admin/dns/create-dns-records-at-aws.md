@@ -1,5 +1,5 @@
 ---
-title: 在 Amazon Web Services (AWS) Microsoft 创建 DNS 记录
+title: 在 Amazon Web Services (AWS) For Microsoft 创建 DNS 记录
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -20,15 +20,15 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 7a2efd75-0771-4897-ba7b-082fe5bfa9da
-description: 了解如何在 Amazon Web Services (AWS for Microsoft) 中验证域并设置电子邮件、Skype for Business Online 和其他服务的 DNS 记录。
-ms.openlocfilehash: bb687b8685aed79f5f768c12d652205bbbed0f59
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+description: 了解在 Amazon Web Services (AWS) for Microsoft 中验证域并设置电子邮件、Skype for Business Online 和其他服务的 DNS 记录。
+ms.openlocfilehash: 12f9341ab381324266cf2da1ca6b5423df9973dd
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49657968"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50910410"
 ---
-# <a name="create-dns-records-at-amazon-web-services-aws-for-microsoft"></a>在 Amazon Web Services (AWS) Microsoft 创建 DNS 记录
+# <a name="create-dns-records-at-amazon-web-services-aws-for-microsoft"></a>在 Amazon Web Services (AWS) For Microsoft 创建 DNS 记录
 
  如果找不到要查找的内容，请 **[查看域常见问题解答](../setup/domains-faq.yml)**。 
   
@@ -51,9 +51,9 @@ ms.locfileid: "49657968"
   
 1. 要开始，请使用[此链接](https://console.aws.amazon.com/route53/home)转到你在 AWS 上的域页面。 系统将会提示您先登录。
     
-2. 在"**资源"** 页上，选择 **"托管区域"。**
+2. 在"**资源"** 页上，选择"**托管区域"。**
     
-3. 在 **"托管区域"** 页上的"域名 **"列中，** 选择要编辑的域的名称。 
+3. 在 **"托管区域"** 页上的" **域名** "列中，选择要编辑的域的名称。 
     
 4. 选择 **"创建记录集"。**
     
@@ -94,9 +94,9 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
 
 1. 要开始，请使用[此链接](https://console.aws.amazon.com/route53/home)转到你在 AWS 上的域页面。 系统将会提示您先登录。
     
-2. 在"**资源"** 页上，选择 **"托管区域"。**
+2. 在"**资源"** 页上，选择"**托管区域"。**
     
-3. 在 **"托管区域"** 页上的"域名 **"列中，** 选择要编辑的域的名称。 
+3. 在 **"托管区域"** 页上的" **域名** "列中，选择要编辑的域的名称。 
     
 4. 选择 **"创建记录集"。**
     
@@ -106,7 +106,7 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
     
     |**名称**|**类型**|**别名**|**TTL（秒）**|**值**|**路由策略**|
     |:-----|:-----|:-----|:-----|:-----|:-----|
-    |（将此字段留空。）  <br/> |MX - 邮件交换  <br/> |否  <br/> |300  <br/> |0  *\<domain-key\>*  .mail.protection.outlook.com.  <br/> 0 是 MX 优先级值。 将其添加到 MX 值的开头，使用一个空格将其与其余部分隔开。  <br/> **此值必须以句点 (.) 结尾。** <br/> **注意：** 从 \<*domain-key*\> Microsoft 365 帐户获取你的帐户。 [如何查找此内容？](../get-help-with-domains/information-for-dns-records.md)          |简单  <br/> |
+    |（将此字段留空。）  <br/> |MX - 邮件交换  <br/> |否  <br/> |300  <br/> |0  *\<domain-key\>*  .mail.protection.outlook.com.  <br/> 0 是 MX 优先级值。 将其添加到 MX 值的开头，使用一个空格将其与其余部分隔开。  <br/> **此值必须以句点 (.) 结尾。** <br/> **注意：** 从 \<*domain-key*\> Microsoft 365 帐户获取你的。 [如何查找此内容？](../get-help-with-domains/information-for-dns-records.md)          |简单  <br/> |
        
     ![AWS-BP-Configure-2-1](../../media/94a71ce7-1b3b-4b1a-9ad3-9592db133075.png)
   
@@ -136,9 +136,9 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
 
 1. 要开始，请使用[此链接](https://console.aws.amazon.com/route53/home)转到你在 AWS 上的域页面。 系统将会提示您先登录。
     
-2. 在"**资源"** 页上，选择 **"托管区域"。**
+2. 在"**资源"** 页上，选择"**托管区域"。**
     
-3. 在 **"托管区域"** 页上的"域名 **"列中，** 选择要编辑的域的名称。 
+3. 在 **"托管区域"** 页上的" **域名** "列中，选择要编辑的域的名称。 
     
 4. 选择 **"创建记录集"。**
     
@@ -164,21 +164,21 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
   
 7. 添加其他 4 条 CNAME 记录。
     
-    在 **"托管** 区域"页中，选择"创建记录集"，使用表中下一行的值创建记录，然后再次选择"创建"以完成该记录。 
+    在"**托管区域**"页中，选择"创建记录集"，使用表中下一行的值创建记录，然后再次选择"创建"以完成该记录。 
     
-    重复此过程，直到创建所有五条 CNAME 记录。
+    重复此过程，直到创建了全部五条 CNAME 记录。
     
 ## <a name="add-a-txt-record-for-spf-to-help-prevent-email-spam"></a>为 SPF 添加 TXT 记录以帮助防止垃圾邮件
 <a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]
-> 一个域所拥有的 SPF 的 TXT 记录不能超过一个。 如果域具有多个 SPF 记录，你将收到电子邮件错误，其中随附发送和垃圾邮件分类问题。 如果你的域已有 SPF 记录，请不要为 Microsoft 创建新记录。 相反，将所需的 Microsoft 值添加到当前记录，以便具有一个  *包含这*  两组值的 SPF 记录。 需要示例吗？ 请查看 [Microsoft 的外部域名系统记录](https://docs.microsoft.com/microsoft-365/enterprise/external-domain-name-system-records)。 若要验证 SPF 记录，可以使用以下[SPF 验证工具之一](../setup/domains-faq.yml)。 
+> 一个域所拥有的 SPF 的 TXT 记录不能超过一个。 如果域具有多个 SPF 记录，你将收到电子邮件错误，其中随附发送和垃圾邮件分类问题。 如果你的域已有 SPF 记录，请不要为 Microsoft 创建新记录。 相反，将所需的 Microsoft 值添加到当前记录，以便你有一个  *包含这*  两组值的 SPF 记录。 需要示例吗？ 请查看 [Microsoft 的外部域名系统记录](../../enterprise/external-domain-name-system-records.md)。 若要验证 SPF 记录，可以使用以下[SPF 验证工具之一](../setup/domains-faq.yml)。 
   
 1. 要开始，请使用[此链接](https://console.aws.amazon.com/route53/home)转到你在 AWS 上的域页面。 系统将会提示您先登录。
     
-2. 在"**资源"** 页上，选择 **"托管区域"。**
+2. 在"**资源"** 页上，选择"**托管区域"。**
     
-3. 在 **"托管区域"** 页上的"域名 **"列中，** 选择要编辑的域的名称。 
+3. 在 **"托管区域"** 页上的" **域名** "列中，选择要编辑的域的名称。 
     
 4. 选择 **TXT** 记录集。 
     
@@ -201,9 +201,9 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
 
 1. 要开始，请使用[此链接](https://console.aws.amazon.com/route53/home)转到你在 AWS 上的域页面。 系统将会提示您先登录。
     
-2. 在"**资源"** 页上，选择 **"托管区域"。**
+2. 在"**资源"** 页上，选择"**托管区域"。**
     
-3. 在 **"托管区域"** 页上的"域名 **"列中，** 选择要编辑的域的名称。 
+3. 在 **"托管区域"** 页上的" **域名** "列中，选择要编辑的域的名称。 
     
 4. 选择 **"创建记录集"。**
     
@@ -226,8 +226,7 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
   
 7. 添加其他 SRV 记录：
     
-    在 **"托管** 区域"页中，选择"创建记录集"，使用表中下一行的值创建记录，然后再次选择"创建"以完成该记录。 
+    在"**托管区域**"页中，选择"创建记录集"，使用表中下一行的值创建记录，然后再次选择"创建"以完成该记录。 
     
 > [!NOTE]
 > Typically it takes about 15 minutes for DNS changes to take effect. 但是，有时可能需要更长时间，您所做的更改才会在 Internet 的 DNS 系统中更新。 如果在添加 DNS 记录后遇到邮件流问题或其他问题，请参阅[查找在添加域或 DNS 记录后遇到的问题并进行修复](../get-help-with-domains/find-and-fix-issues.md)。 
-  
