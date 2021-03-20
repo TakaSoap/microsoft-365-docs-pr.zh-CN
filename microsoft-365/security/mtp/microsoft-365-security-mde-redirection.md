@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 626bc9950512438bfa43e6500adf72940ddcbfec
-ms.sourcegitcommit: 3d48e198e706f22ac903b346cadda06b2368dd1e
+ms.openlocfilehash: bdad55a98dba868d45ecea383ba379108ee5305a
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50727561"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50906754"
 ---
 # <a name="redirecting-accounts-from-microsoft-defender-for-endpoint-to-the-microsoft-365-security-center"></a>将帐户从 Microsoft Defender for Endpoint 重定向到 Microsoft 365 安全中心
 
@@ -42,7 +42,7 @@ ms.locfileid: "50727561"
 本指南介绍如何通过启用从以前的 Microsoft Defender for Endpoint 门户 (securitycenter.windows.com 或 securitycenter.microsoft.com) 到 Microsoft 365 安全中心门户 (security.microsoft.com) 的自动重定向，将帐户路由到 Microsoft 365 安全中心。
 
 > [!NOTE]
-> Microsoft 365 安全中心中的 Microsoft Defender for Endpoint 支持向托管安全服务提供商 [ (MSSP) ](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/grant-mssp-access) 授予访问权限，方式与在 [Microsoft Defender](https://docs.microsoft.com/microsoft-365/security/mtp/mssp-access)安全中心授予访问权限的方式相同。
+> Microsoft 365 安全中心中的 Microsoft Defender for Endpoint 支持向托管安全服务提供商 [ (MSSP) ](/windows/security/threat-protection/microsoft-defender-atp/grant-mssp-access) 授予访问权限，方式与在 [Microsoft Defender](./mssp-access.md)安全中心授予访问权限的方式相同。
 
 ## <a name="what-to-expect"></a>预期结果
 启用自动重定向后，访问位于 securitycenter.windows.com 或 securitycenter.microsoft.com 的以前 Microsoft Defender 终结点门户的帐户将自动路由到位于 security.microsoft.com 的 Microsoft 365 安全中心门户。
@@ -58,19 +58,19 @@ ms.locfileid: "50727561"
 
 |**属性**  |**重定向关闭时的目标**  |**重定向打开时的目标** | 
 |---------|---------|---------|
-| LinkToWDATP | 警报页securitycenter.windows.com | 警报页security.microsoft.com  |
-| IncidentLinkToWDATP | 事件页面中securitycenter.windows.com  | 事件页面中security.microsoft.com  |
-| LinkToMTP | 警报页security.microsoft.com | 警报页security.microsoft.com  |
-| IncidentLinkToMTP | 事件页面中security.microsoft.com  | 事件页面中security.microsoft.com  
+| LinkToWDATP | 警报页 securitycenter.windows.com | 警报页 security.microsoft.com  |
+| IncidentLinkToWDATP | 事件页面中 securitycenter.windows.com  | 事件页面中 security.microsoft.com  |
+| LinkToMTP | 警报页 security.microsoft.com | 警报页 security.microsoft.com  |
+| IncidentLinkToMTP | 事件页面中 security.microsoft.com  | 事件页面中 security.microsoft.com  
 
 ## <a name="email-alert-notifications"></a>电子邮件通知
 
 |**属性**  |**重定向关闭时的目标**  |**重定向打开时的目标** |
 |---------|---------|---------|
-| 警报页面  | 警报页securitycenter.windows.com  | 警报页security.microsoft.com  |
-| 事件页面  |事件页面中securitycenter.windows.com  | 事件页面中security.microsoft.com  
-| 安全中心门户中的警报页面 | 警报页security.microsoft.com | 警报页security.microsoft.com | 
-| 安全中心门户中的事件页面 | 事件页面中security.microsoft.com  | 事件页面中security.microsoft.com  |
+| 警报页面  | 警报页 securitycenter.windows.com  | 警报页 security.microsoft.com  |
+| 事件页面  |事件页面中 securitycenter.windows.com  | 事件页面中 security.microsoft.com  
+| 安全中心门户中的警报页面 | 警报页 security.microsoft.com | 警报页 security.microsoft.com | 
+| 安全中心门户中的事件页面 | 事件页面中 security.microsoft.com  | 事件页面中 security.microsoft.com  |
 
 ## <a name="when-does-this-take-effect"></a>这何时生效？ 
 启用后，此更新可能会立即对一些帐户生效。 但是，重定向可能需要更长时间才能传播到组织的每一个帐户。 应用此设置时的活动会话中的帐户不会从会话弹出，并且仅在结束当前会话并再次登录后路由到 Microsoft 365 安全中心。  
@@ -108,7 +108,7 @@ ms.locfileid: "50727561"
 
 可以随时再次启用此设置。 
 
-禁用后，帐户将不再路由到security.microsoft.com，并且你将再次有权访问以前的门户 -securitycenter.windows.com 或 securitycenter.microsoft.com。 
+禁用后，帐户将不再路由到 security.microsoft.com，并且你将再次有权访问以前的门户 -securitycenter.windows.com 或 securitycenter.microsoft.com。 
 
 ## <a name="related-information"></a>相关信息
 - [Microsoft 365 安全中心概述](overview-security-center.md)

@@ -12,31 +12,31 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection:
 - M365-security-compliance
-- m365solution-ediscovery
+- m365solution-aed
 - m365initiative-compliance
-- m365initiative-scenario
+- m365solution-scenario
 search.appverid:
 - MOE150
 - MET150
 description: 本文介绍如何创建和管理高级电子数据展示事例。 第一步是创建案例并开始使用高级电子数据展示特性和功能。
-ms.openlocfilehash: 0301213cf6d7e3c30b98ad5125468c6c75ed95b1
-ms.sourcegitcommit: 8f1721de52dbe3a12c11a0fa5ed0ef5972ca8196
+ms.openlocfilehash: d0f63bca90945c3dfe13b08fa0f1d139da8a9189
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/17/2021
-ms.locfileid: "50838251"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50908357"
 ---
 # <a name="create-and-manage-an-advanced-ediscovery-case"></a>创建和管理高级电子数据展示案例
 
 设置高级电子数据展示并将权限分配给将[](get-started-with-advanced-ediscovery.md#step-2-assign-ediscovery-permissions)管理事例的组织中电子数据展示管理员之后，下一步是创建和管理事例。
 
-本文还提供了使用事例管理高级电子数据展示工作流进行法律调查的高级概述。
+本文还简要概述了使用事例管理法律案件或其他类型的调查的高级电子数据展示工作流。
 
 ## <a name="create-a-case"></a>创建案例
 
-完成以下步骤以创建案例并添加成员。 创建案例的用户将自动添加为成员。
+完成以下步骤以创建案例并添加成员。 创建案例的用户将自动添加为成员。 案例的成员可以在 Microsoft 365 合规中心访问该案例并执行高级电子数据展示任务。
 
-1. 转到 [https://compliance.microsoft.com](https://compliance.microsoft.com) ，然后使用已分配有电子数据展示权限的用户帐户的凭据登录。 组织管理角色组的成员还可以创建高级电子数据展示事例。
+1. 转到 <https://compliance.microsoft.com> ，然后使用已分配有电子数据展示权限的用户帐户的凭据登录。 组织管理角色组的成员还可以创建高级电子数据展示事例。
 
 2. 在 Microsoft 365 合规中心的左侧导航窗格中，单击"全部显示"，然后单击"电子数据展示>**高级"。**
 
@@ -82,7 +82,7 @@ ms.locfileid: "50838251"
 
    - 您可以使用高级电子 [数据](managing-custodian-communications.md) 展示中的通信工作流向保管人发送合法保留通知。
 
-2. **[从数据源中收集相关的数据](create-draft-collection.md)**。 将保管人和非托管数据源添加到案例后，使用内置集合工具搜索这些数据源中可能与案例相关的内容。 您可以使用关键字、属性和条件来构建搜索查询[](building-search-queries.md)，这些查询使用与案例最相关的数据返回搜索结果。 还可以执行以下操作：
+2. **[从数据源中收集相关内容](create-draft-collection.md)**。 将保管人和非托管数据源添加到案例后，使用内置集合工具搜索这些数据源中可能与案例相关的内容。 您可以使用关键字、属性和条件来构建搜索查询[](building-search-queries.md)，这些查询使用与案例最相关的数据返回搜索结果。 还可以执行以下操作：
 
    - 查看 [可帮助您](collection-statistics-reports.md) 优化集合以缩小结果范围的集合统计信息。
 
@@ -107,3 +107,15 @@ ms.locfileid: "50838251"
    - [分析案例数据](analyzing-data-in-review-set.md)。 高级电子数据展示中的分析功能很强大。 对审阅集内的数据运行分析后，我们执行分析，如接近重复检测、电子邮件线程和主题，可帮助减少必须查看的文档量。 我们还生成了一个分析报告，汇总了运行分析的结果。 如前所述，运行分析还会运行 [律师-客户特权检测模型](attorney-privilege-detection.md#use-the-attorney-client-privilege-detection-model)。
 
 5. **导出和下载案例数据**。 收集、审阅和分析案件集数据后的最后一步是从高级电子数据展示中导出数据，以用于外部审阅或供调查团队外部人员查看。 导出数据的过程包含两个步骤。 第一步是将数据从[](export-documents-from-review-set.md)审阅集中导出，并复制到其他 Azure 存储位置 (Microsoft 提供的位置或由组织托管的 Azure 存储) 。 然后，使用 Azure 存储资源管理器 [将数据](download-export-jobs.md) 下载到本地计算机。 除了导出的数据文件之外，导出包的 包含还包含导出报告、摘要报表和错误报告。
+
+## <a name="advanced-ediscovery-architecture"></a>高级电子数据展示体系结构
+
+下面的体系结构图显示了单地理位置环境和多地理位置环境中的高级电子数据展示端到端工作流，以及与电子数据展示参考模型一致的端到端 [数据流](overview-ediscovery-20.md#advanced-ediscovery-alignment-with-the-electronic-discovery-reference-model)。
+
+[![模型海报：Microsoft 365 中的高级电子数据展示体系结构](../media/solutions-architecture-center/ediscovery-poster-thumb.png)](../media/solutions-architecture-center/m365-advanced-ediscovery-architecture.png)
+
+[以图像视图](../media/solutions-architecture-center/m365-advanced-ediscovery-architecture.png)
+
+[下载为 PDF 文件](https://download.microsoft.com/download/d/1/c/d1ce536d-9bcf-4d31-b75b-fcf0dc560665/m365-advanced-ediscovery-architecture.pdf)
+
+[下载为 Visio 文件](https://download.microsoft.com/download/d/1/c/d1ce536d-9bcf-4d31-b75b-fcf0dc560665/m365-advanced-ediscovery-architecture.vsdx)

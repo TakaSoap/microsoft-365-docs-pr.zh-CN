@@ -12,75 +12,75 @@ ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid: MET150
 ms.assetid: 39db1659-0b12-4243-a21c-2614512dcb44
-description: 了解如何将邮箱置于诉讼保留状态，以在调查过程中保留所有邮箱内容。
+description: 了解如何将邮箱置于诉讼保留状态，在调查期间保留所有邮箱内容。
 ms.custom:
 - seo-marvel-mar2020
 - seo-marvel-apr2020
-ms.openlocfilehash: 4bcb857095a63c06caa6e9762496ca74afeead04
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: 046ee6fdc7c42026b1a69805883175982e3100b7
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47546984"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50908396"
 ---
 # <a name="create-a-litigation-hold"></a>创建诉讼保留
 
-您可以将邮箱置于诉讼保留状态，以保留所有邮箱内容，包括已删除项目和已修改项目的原始版本。 将用户邮箱置于诉讼保留状态时，用户存档邮箱中的内容 (（如果已启用）也会保留) 。 创建保留时，可以指定保留持续时间 (也称为 *基于时间的保留*) ，以便在指定时间段内保留已删除和已修改的项目，然后从邮箱中永久删除。 或者，您可以只保留内容 (被称为 *无限保留*) 或在删除诉讼保留之前。 如果您指定保留持续时间段，则它将根据接收邮件的日期或创建邮箱项目计算得出。 
+可以将邮箱置于诉讼保留状态，以保留所有邮箱内容，包括已删除项目和已修改项目的原始版本。 当您将用户邮箱置于诉讼保留时，用户的存档邮箱中的内容 (如果已启用，) 内容也会保留。 创建保留时，您可以指定保留持续时间 *(也称为* 基于时间保留) 以便已删除和修改的项目保留指定的时间段，然后从邮箱中永久删除。 或者，您可以无限期地保留 (称为"无限期保留") 或删除诉讼保留。 如果您指定了保留持续时间，则从收到邮件或创建邮箱项目的日期开始计算。 
   
-以下是创建诉讼保留时发生的情况。
+下面是创建诉讼保留时发生的情况。
   
-- 被用户永久删除的项目将保留在用户邮箱中的 "可恢复的项目" 文件夹中的保留期。
+- 在保留期间，用户永久删除的项目将保留在用户邮箱的"可恢复的项目"文件夹中。
     
-- 用户在 "可恢复的项目" 文件夹中清除的项目将在保留期间保留。
+- 用户从"可恢复的项目"文件夹中清除的项目将在保留期间保留。
     
-- "可恢复的项目" 文件夹的存储配额从 30 GB 增加到 110 GB。
+- "可恢复的项目"文件夹的存储配额从 30 GB 增加到 110 GB。
     
-- 用户主和存档邮箱中的项目将保留
+- 用户的主邮箱和存档邮箱中的项目将保留
     
-## <a name="assign-an-exchange-online-plan-2-license"></a>分配 Exchange Online 计划2许可证
+## <a name="assign-an-exchange-online-plan-2-license"></a>分配 Exchange Online 计划 2 许可证
 
-- 若要在诉讼保留中放置 Exchange Online 邮箱，必须为其分配 Exchange Online 计划2许可证。 如果向某个邮箱分配了 Exchange Online 计划1许可证，则必须为其分配一个单独的 Exchange Online 存档许可证以将其置于保留状态。
+- 若要将 Exchange Online 邮箱置于诉讼保留状态，必须为其分配 Exchange Online 计划 2 许可证。 如果为邮箱分配了 Exchange Online 计划 1 许可证，必须为其分配单独的 Exchange Online Archiving 许可证才能将其置于保留状态。
     
 
 ## <a name="place-a-mailbox-on-litigation-hold"></a>将邮箱置于诉讼保留
 
-以下是使用 Exchange 管理中心将邮箱置于诉讼保留状态的步骤。
+下面是使用 Exchange 管理中心将邮箱置于诉讼保留中的步骤。
 
-1. 转到 [https://outlook.office.com/ecp](https://outlook.office.com/ecp) 并使用全局管理员帐户登录。
+1. 转到 [https://outlook.office.com/ecp](https://outlook.office.com/ecp) ，然后使用全局管理员帐户登录。
 
-2. 单击左侧导航窗格中的 " **收件人 > 邮箱** "。
+2. 单击 **左侧>窗格中的** "收件人""邮箱"。
 
-3. 选择要置于诉讼保留状态的邮箱，然后单击 " **编辑**"。
+3. 选择要置于诉讼保留的邮箱，然后单击"编辑 **"。**
 
-4. 在邮箱属性页上，单击 " **邮箱功能**"。
+4. 在"邮箱属性"页上，单击"**邮箱功能"。**
     
-5. 在 " **诉讼保留：已禁用**" 下，单击 " **启用** " 以将邮箱置于诉讼保留状态。
+5. 在 **"诉讼保留： 已禁用"** 下，单击 **"启用** "将邮箱置于诉讼保留状态。
     
-6. 在 " **诉讼保留** " 页上，输入以下可选信息： 
+6. 在" **诉讼保留"** 页上，输入以下可选信息： 
     
-    - **诉讼保留持续时间 (天) ** -使用此框可以创建基于时间的保留，并指定在将邮箱置于诉讼保留状态时邮箱项目的保留时间。 持续时间从接收或创建邮箱项目的日期开始计算。 当特定项目的保留持续时间过期时，将不再保留该项目。 如果将此框保留为空，则会无限期保留项目或删除保留。 使用天指定持续时间。
+    - **诉讼保留 (天)** - 使用此框可以创建基于时间保留，并指定邮箱项目在置于诉讼保留时保留的时间。 持续时间从接收或创建邮箱项目的日期开始计算。 当特定项目的保留期到期时，将不再保留该项目。 如果保留此框为空，项目将无限期保留或一直保留到删除保留。 使用天指定持续时间。
     
-    - **注意** -使用此框可通知用户其邮箱处于诉讼保留状态。 如果用户使用的是 Outlook 2010 或更高版本，注释将显示在用户邮箱中的 "帐户信息" 页面上。 若要访问此页面，用户可以在 Outlook 中单击 " **文件** "。
+    - **注意** - 使用此框通知用户其邮箱已置于诉讼保留状态。 如果用户使用的是 Outlook 2010 或更高版本，则注释将显示在用户邮箱的"帐户信息"页上。 若要访问此页面，用户可以单击"Outlook **中的** 文件"。
     
-    - **URL** -使用此框可将用户定向到网站，以获取有关诉讼保留的详细信息。 如果用户使用的是 Outlook 2010 或更高版本，则此 URL 将显示在用户邮箱中的 "帐户信息" 页面上。 若要访问此页面，用户可以在 Outlook 中单击 " **文件** "。
+    - **URL** - 使用此框将用户引导到网站，详细了解诉讼保留。 如果用户使用的是 Outlook 2010 或更高版本，则此 URL 将显示在用户邮箱的"帐户信息"页上。 若要访问此页面，用户可以 **单击"Outlook** 中的文件"。
 
-7. 单击 "**诉讼保留**" 页上的 "**保存**"，然后单击 "邮箱属性" 页上的 "**保存**"。
+7. 在 **"诉讼** 保留 **"** 页上单击"保存"，然后在 **邮箱属性页上** 单击"保存"。
 
 ### <a name="create-a-litigation-hold-using-powershell"></a>使用 PowerShell 创建诉讼保留
 
-您还可以通过在 [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)中运行以下命令来创建诉讼保留：
+您还可以在 [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)中运行以下命令来创建诉讼保留：
 
 ```powershell
 Set-Mailbox <username> -LitigationHoldEnabled $true
 ```
 
-由于未指定保留持续时间，上一个命令将无限期保留项目。 若要创建基于时间的保留，请使用以下命令：
+上一个命令无限期保留项目，因为未指定保留持续时间。 若要创建基于时间保留，请运行以下命令：
 
 ```powershell
 Set-Mailbox <username> -LitigationHoldEnabled $true -LitigationHoldDuration <number of days>
 ```
 
-有关详细信息，请参阅 [Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/set-mailbox)。
+有关详细信息，请参阅 [Set-Mailbox](/powershell/module/exchange/set-mailbox)。
 
 ## <a name="how-does-litigation-hold-work"></a>诉讼保留的工作原理是什么？
 
@@ -93,5 +93,4 @@ Set-Mailbox <username> -LitigationHoldEnabled $true -LitigationHoldDuration <num
 ![诉讼保留生命周期](../media/LitigationHoldLifeCycle.png)
 
 > [!NOTE]
-> 如果将与电子数据展示事例关联的保留放在邮箱中，清除的项目将从 "删除" 子文件夹移动到 "DiscoveryHolds" 子文件夹，并在邮箱从电子数据展示保留中释放之前保留。
-  
+> 如果邮箱上放置了与电子数据展示案例关联的保留，则清除的项目会从"删除"子文件夹移动到 DiscoveryHolds 子文件夹，并一直保留，直到邮箱从电子数据展示保留中释放。

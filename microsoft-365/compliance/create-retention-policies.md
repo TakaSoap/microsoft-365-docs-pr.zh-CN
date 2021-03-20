@@ -17,16 +17,16 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用保留策略有效掌控用户使用电子邮件、文档和对话生成的内容。 保留所需内容并删除不需要的内容。
-ms.openlocfilehash: 02d3fd17e4aac34546e545ec10621bc99b945b31
-ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
+ms.openlocfilehash: 63670b157a66bad963f02355cbed2bdd95690081
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "50405710"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50908286"
 ---
 # <a name="create-and-configure-retention-policies"></a>创建和配置保留策略
 
->*[Microsoft 365 安全性与合规性许可指南](https://aka.ms/ComplianceSD)。*
+>*[Microsoft 365 安全性与合规性许可指南](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。*
 
 使用保留策略通过主动决定是保留内容、删除内容还是保留然后删除内容来管理组织的数据。
 
@@ -72,7 +72,7 @@ ms.locfileid: "50405710"
 
 3. 在“**选择要应用策略的位置**” 页面上，选择 Teams 的一个或两个位置：“**Teams 频道消息**”和“**Teams 聊天**”。
 
-   请注意，对于 **Teams 频道消息**，将包括来自标准频道的消息，但不包括来自 [专用频道](https://docs.microsoft.com/microsoftteams/private-channels)的消息。 保留策略目前不支持专用频道。
+   请注意，对于 **Teams 频道消息**，将包括来自标准频道的消息，但不包括来自 [专用频道](/microsoftteams/private-channels)的消息。 保留策略目前不支持专用频道。
 
    默认情况下，[所有团队和所有用户](#a-policy-that-applies-to-entire-locations)会被选择，但你但是你可以通过选择 [“**选择**”和“**排除**” 选项](#a-policy-with-specific-inclusions-or-exclusions)”来进行优化。
 
@@ -82,7 +82,7 @@ ms.locfileid: "50405710"
 
 5. 完成向导以保存设置。
 
-有关 Teams 保留策略的详细信息，请参阅[Microsoft Teams 中的 保留策略](https://docs.microsoft.com/microsoftteams/retention-policies)来自 Teams 文档。
+有关 Teams 保留策略的详细信息，请参阅[Microsoft Teams 中的 保留策略](/microsoftteams/retention-policies)来自 Teams 文档。
 
 #### <a name="additional-retention-policy-needed-to-support-teams"></a>支持团队所需的其他保留策略
 
@@ -104,7 +104,7 @@ Teams 不只是聊天和频道消息。 如果你有从 Microsoft 365 组（以�
 > [!NOTE]
 > Yammer 的保留策略推出预览版。 如果你还没有看到 Yammer 的新位置，请几周后重试。
 >
-> 若要使用此功能，Yammer 网络必须为[“本机模式”](https://docs.microsoft.com/yammer/configure-your-yammer-network/overview-native-mode)，而不是“混合模式”。
+> 若要使用此功能，Yammer 网络必须为[“本机模式”](/yammer/configure-your-yammer-network/overview-native-mode)，而不是“混合模式”。
 
 1. 从 [Microsoft 365 合规中心](https://compliance.microsoft.com/)中，选择 **策略** > **保留**。
 
@@ -190,7 +190,7 @@ Yammer 不仅仅是社区消息和私人消息。 若要保留和删除 Yammer �
 
 例如，对于 contoso 租户中用户名为“rsimone”的用户：`https://contoso-my.sharepoint.com/personal/rsimone_contoso_onmicrosoft_com`
 
-要验证租户的语法并标识用户的 URL，请参阅[获取组织中所有用户 OneDrive URL 的列表](https://docs.microsoft.com/onedrive/list-onedrive-urls)。
+要验证租户的语法并标识用户的 URL，请参阅[获取组织中所有用户 OneDrive URL 的列表](/onedrive/list-onedrive-urls)。
 
 ### <a name="configuration-information-for-microsoft-365-groups"></a>Microsoft 365 组的配置信息
 

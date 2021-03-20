@@ -23,14 +23,14 @@ search.appverid:
 - GEA150
 ms.assetid: d6466f0d-5d13-464a-adcb-00906ae87029
 description: 了解如何在计算机、手机和平板电脑上设置和使用 Microsoft 365。
-ms.openlocfilehash: 437e644190017a0031d7c91d239f5b4f0a8d3773
-ms.sourcegitcommit: d739f48b991793c08522a3d5323beba27f0111b2
+ms.openlocfilehash: 8df5170190a464c71030c938be61df591032c45c
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "50142069"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50906284"
 ---
-# <a name="get-started"></a>开始行动
+# <a name="get-started"></a>入门
 
 你的组织最近获得 Microsoft 365，现在你需要使用它，以便你可以开始阅读电子邮件、共享文档等。 了解如何在计算机、手机和平板电脑上设置和使用 Microsoft 365。
   
@@ -56,15 +56,14 @@ ms.locfileid: "50142069"
     
 ## <a name="training-resources-for-you-the-admin"></a>适用于你（管理员）的培训资源
 
-下面是帮助你入门的一些资源。
+下面是帮助您入门的一些资源。
   
-- [针对管理员的培训](https://docs.microsoft.com/microsoft-365/admin)：获取指向适用于管理员的免费在线课程的链接。
+- [管理员培训](../index.yml)：获取适用于管理员的免费在线课程的链接。
     
-- [管理员帮助](https://docs.microsoft.com/microsoft-365/admin/admin-home)：获取有关首要任务、管理工具入门和疑难解答的信息。
+- [管理员帮助](./admin-overview.md)：获取有关首要任务、管理工具入门和问题疑难解答的信息。
     
-- [联系支持人员 - 管理员帮助](../contact-support-for-business-products.md) ：致电我们、打开联机请求或让社区提供帮助。 
+- [联系支持人员 - 管理员帮助](../contact-support-for-business-products.md) ：致电我们，打开在线请求，或让社区帮助。 
     
 ## <a name="related-articles"></a>相关文章
 
 [设置 Microsoft 365 商业版 - 管理员帮助](../setup/setup.md)
-

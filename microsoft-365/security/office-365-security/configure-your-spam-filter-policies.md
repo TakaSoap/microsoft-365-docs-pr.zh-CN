@@ -17,12 +17,12 @@ ms.collection:
 description: 管理员可以了解如何在 Exchange Online Protection (EOP) 中查看、创建、修改和删除反垃圾邮件策略。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 9808a60d0d6c18ee183524e2ad10ed6b2a749db4
-ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
+ms.openlocfilehash: 0406c7893d2ef6a141f9988df87a56171296eff0
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "50406098"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50906512"
 ---
 # <a name="configure-anti-spam-policies-in-eop"></a>在 EOP 中配置反垃圾邮件策略
 
@@ -64,18 +64,18 @@ ms.locfileid: "50406098"
 
 - 安全与合规中心的打开网址为 <https://protection.office.com/>。 若要直接转到 **“反垃圾邮件设置”** 页，请访问 <https://protection.office.com/antispam>。
 
-- 若要连接到 Exchange Online PowerShell，请参阅[连接到 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)。 若要连接到独立 EOP PowerShell，请参阅[连接到 Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell)。
+- 若要连接到 Exchange Online PowerShell，请参阅[连接到 Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)。 若要连接到独立 EOP PowerShell，请参阅[连接到 Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell)。
 
 - 在 Exchange Online 网站中 **分配** 权限，才能执行本文中的步骤：
   - 必须是 **“组织管理”** 或 **“安全管理员”** 角色组的成员，才能添加、修改和删除反垃圾邮件策略。
   - 若要获得对受限用户门户的只读访问权限，必须成为 **全球读者** 或 **安全读者** 角色组的成员。
 
-  有关详细信息，请参阅 [Exchange Online 中权限](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo)。
+  有关详细信息，请参阅 [Exchange Online 中权限](/exchange/permissions-exo/permissions-exo)。
 
   **注意**：
 
   - 在 Microsoft 365 管理中心将用户添加到相应的 Azure Active Directory 角色后，将为用户提供所需的权限 _和_ Microsoft 365 中其他功能的所需权限。 有关详细信息，请参阅 [关于管理员角色](../../admin/add-users/about-admin-roles.md)。
-  - [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) 中的 **仅查看组织管理人员** 角色组也提供到该功能的只读访问。
+  - [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) 中的 **仅查看组织管理人员** 角色组也提供到该功能的只读访问。
 
 - 有关建议的反垃圾软件策略设置，请参阅 [EOP 反垃圾邮件策略设置](recommended-settings-for-eop-and-office365-atp.md#eop-anti-spam-policy-settings)。
 
@@ -434,7 +434,7 @@ New-HostedContentFilterPolicy -Name "Contoso Executives" -HighConfidenceSpamActi
 > [!NOTE]
 > **New-HostedContentFilterPolicy** 和 **Set-HostedContentFilterPolicy** 包含旧的 _ZapEnabled_ 参数，以及新的 _PhishZapEnabled_ 和 _SpamZapEnabled_ 参数。 _ZapEnabled_ 参数已在 2020 年 2 月遭弃用。 _PhishZapEnabled_ 和 _SpamZapEnabled_ 参数用于继承 _ZapEnabled_ 参数的值。 不过，如果你在命令中使用 _PhishZapEnabled_ 和 _SpamZapEnabled_ 参数，或在安全与合规中心内的反垃圾邮件策略中使用 **“垃圾邮件 ZAP”** 或 **“钓鱼邮件 ZAP”** 设置，_ZapEnabled_ 参数的值会遭忽略。 也就是说，请勿使用 _ZapEnabled_ 参数；而是改用 _PhishZapEnabled_ 和 _SpamZapEnabled_ 参数。
 
-若要详细了解语法和参数，请参阅 [New-HostedContentFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/new-hostedcontentfilterpolicy)。
+若要详细了解语法和参数，请参阅 [New-HostedContentFilterPolicy](/powershell/module/exchange/new-hostedcontentfilterpolicy)。
 
 #### <a name="step-2-use-powershell-to-create-a-spam-filter-rule"></a>第 2 步：使用 PowerShell 创建垃圾邮件筛选规则
 
@@ -454,7 +454,7 @@ New-HostedContentFilterRule -Name "<RuleName>" -HostedContentFilterPolicy "<Poli
 New-HostedContentFilterRule -Name "Contoso Executives" -HostedContentFilterPolicy "Contoso Executives" -SentToMemberOf "Contoso Executives Group"
 ```
 
-若要详细了解语法和参数，请参阅 [New-HostedContentFilterRule](https://docs.microsoft.com/powershell/module/exchange/new-hostedcontentfilterrule)。
+若要详细了解语法和参数，请参阅 [New-HostedContentFilterRule](/powershell/module/exchange/new-hostedcontentfilterrule)。
 
 ### <a name="use-powershell-to-view-spam-filter-policies"></a>使用 PowerShell 查看垃圾邮件筛选策略
 
@@ -476,7 +476,7 @@ Get-HostedContentFilterPolicy -Identity "<PolicyName>" | Format-List [<Specific 
 Get-HostedContentFilterPolicy -Identity "Executives" | Format-List
 ```
 
-若要详细了解语法和参数，请参阅 [Get-HostedContentFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/get-hostedcontentfilterpolicy)。
+若要详细了解语法和参数，请参阅 [Get-HostedContentFilterPolicy](/powershell/module/exchange/get-hostedcontentfilterpolicy)。
 
 ### <a name="use-powershell-to-view-spam-filter-rules"></a>使用 PowerShell 查看垃圾邮件筛选规则
 
@@ -514,7 +514,7 @@ Get-HostedContentFilterRule -Identity "<RuleName>" | Format-List [<Specific prop
 Get-HostedContentFilterRule -Identity "Contoso Executives" | Format-List
 ```
 
-若要详细了解语法和参数，请参阅 [Get-HostedContentFilterRule](https://docs.microsoft.com/powershell/module/exchange/get-hostedcontentfilterrule)。
+若要详细了解语法和参数，请参阅 [Get-HostedContentFilterRule](/powershell/module/exchange/get-hostedcontentfilterrule)。
 
 ### <a name="use-powershell-to-modify-spam-filter-policies"></a>使用 PowerShell 修改垃圾邮件筛选策略
 
@@ -530,7 +530,7 @@ Get-HostedContentFilterRule -Identity "Contoso Executives" | Format-List
 Set-HostedContentFilterPolicy -Identity "<PolicyName>" <Settings>
 ```
 
-若要详细了解语法和参数，请参阅 [Set-HostedContentFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/set-hostedcontentfilterpolicy)。
+若要详细了解语法和参数，请参阅 [Set-HostedContentFilterPolicy](/powershell/module/exchange/set-hostedcontentfilterpolicy)。
 
 ### <a name="use-powershell-to-modify-spam-filter-rules"></a>使用 PowerShell 修改垃圾邮件筛选规则
 
@@ -550,7 +550,7 @@ Set-HostedContentFilterRule -Identity "<RuleName>" <Settings>
 Set-HostedContentFilterRule -Identity "{Fabrikam Spam Filter}" -Name "Fabrikam Spam Filter"
 ```
 
-若要详细了解语法和参数，请参阅 [Set-HostedContentFilterRule](https://docs.microsoft.com/powershell/module/exchange/set-hostedcontentfilterrule)。
+若要详细了解语法和参数，请参阅 [Set-HostedContentFilterRule](/powershell/module/exchange/set-hostedcontentfilterrule)。
 
 ### <a name="use-powershell-to-enable-or-disable-spam-filter-rules"></a>使用 PowerShell 启用或禁用垃圾邮件筛选规则
 
@@ -574,7 +574,7 @@ Disable-HostedContentFilterRule -Identity "Marketing Department"
 Enable-HostedContentFilterRule -Identity "Marketing Department"
 ```
 
-若要详细了解语法和参数，请参阅 [Enable-HostedContentFilterRule](https://docs.microsoft.com/powershell/module/exchange/enable-hostedcontentfilterrule) 和 [Disable-HostedContentFilterRule](https://docs.microsoft.com/powershell/module/exchange/disable-hostedcontentfilterrule)。
+若要详细了解语法和参数，请参阅 [Enable-HostedContentFilterRule](/powershell/module/exchange/enable-hostedcontentfilterrule) 和 [Disable-HostedContentFilterRule](/powershell/module/exchange/disable-hostedcontentfilterrule)。
 
 ### <a name="use-powershell-to-set-the-priority-of-spam-filter-rules"></a>使用 PowerShell 设置垃圾邮件筛选规则的优先级
 
@@ -614,7 +614,7 @@ Remove-HostedContentFilterPolicy -Identity "<PolicyName>"
 Remove-HostedContentFilterPolicy -Identity "Marketing Department"
 ```
 
-若要详细了解语法和参数，请参阅 [Remove-HostedContentFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/remove-hostedcontentfilterpolicy)。
+若要详细了解语法和参数，请参阅 [Remove-HostedContentFilterPolicy](/powershell/module/exchange/remove-hostedcontentfilterpolicy)。
 
 ### <a name="use-powershell-to-remove-spam-filter-rules"></a>使用 PowerShell 删除垃圾邮件筛选规则
 
@@ -632,7 +632,7 @@ Remove-HostedContentFilterRule -Identity "<PolicyName>"
 Remove-HostedContentFilterRule -Identity "Marketing Department"
 ```
 
-若要详细了解语法和参数，请参阅 [Remove-HostedContentFilterRule](https://docs.microsoft.com/powershell/module/exchange/remove-hostedcontentfilterrule)。
+若要详细了解语法和参数，请参阅 [Remove-HostedContentFilterRule](/powershell/module/exchange/remove-hostedcontentfilterrule)。
 
 ## <a name="how-do-you-know-these-procedures-worked"></a>如何判断这些过程生效了？
 

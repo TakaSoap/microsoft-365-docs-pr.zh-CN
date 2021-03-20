@@ -18,16 +18,16 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: e9d14cb2-ff28-4a18-a444-cebf891880ea
 description: 本文介绍如何使用 Azure 为本地 SharePoint 场创建灾难恢复环境。
-ms.openlocfilehash: d1643f3fa0275ef9fbb01372869ca551b9fed495
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 01a49cfa19711caa36190a795792635431dd7d04
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46687713"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50907428"
 ---
 # <a name="sharepoint-server-2013-disaster-recovery-in-microsoft-azure"></a>Microsoft Azure 中的 SharePoint Server 2013 灾难恢复
 
- 使用 Azure，可以为本地 SharePoint 服务器场创建灾难恢复环境。 本文介绍如何设计和实施此解决方案。
+ 使用 Azure，你可以为本地 SharePoint 场创建灾难恢复环境。 本文介绍如何设计和实施此解决方案。
 
  **观看 SharePoint Server 2013 灾难恢复概述视频**
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/1b73ec8f-29bd-44eb-aa3a-f7932784bfd9?autoplay=false]
@@ -66,7 +66,7 @@ ms.locfileid: "46687713"
   
 本文中的指南介绍如何实现温备用环境。你也可以对其进行调整使其适合冷备用环境，尽管你需要执行一些其他步骤才能支持此类环境。本文不会介绍如何实现热备用环境。
   
-有关灾难恢复解决方案的详细信息，请参阅 [High availability and disaster recovery concepts in SharePoint 2013](https://go.microsoft.com/fwlink/p/?LinkID=393114)和[Choose a disaster recovery strategy for SharePoint 2013](https://go.microsoft.com/fwlink/p/?linkid=203228)。
+有关灾难恢复解决方案的详细信息，请参阅 [High availability and disaster recovery concepts in SharePoint 2013](/SharePoint/administration/high-availability-and-disaster-recovery-concepts)和[Choose a disaster recovery strategy for SharePoint 2013](/SharePoint/administration/plan-for-disaster-recovery)。
   
 ## <a name="solution-description"></a>解决方案描述
 
@@ -196,17 +196,17 @@ Azure 中的环境可以是生产服务器场的较小版本。如果你计划�
 
 此灾难恢复解决方案中使用了多种技术。要确保这些技术按预期交互，内部部署和 Azure 环境中的每个组件都必须正确安装和配置。我们建议设置此解决方案的用户或团队具有下列文章中所述技术的丰富工作知识和动手技能：
   
-- [分布式文件系统 (DFS) 复制服务](https://go.microsoft.com/fwlink/p/?LinkId=392698)
+- [分布式文件系统 (DFS) 复制服务](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/jj127250(v=ws.11))
     
-- [Windows Server 故障转移群集 (WSFC) 与 SQL Server](https://go.microsoft.com/fwlink/p/?LinkId=392701)
+- [Windows Server 故障转移群集 (WSFC) 与 SQL Server](/sql/sql-server/failover-clusters/windows/windows-server-failover-clustering-wsfc-with-sql-server)
     
-- [AlwaysOn 可用性组 (SQL Server)](https://go.microsoft.com/fwlink/p/?LinkId=392725)
+- [AlwaysOn 可用性组 (SQL Server)](/sql/database-engine/availability-groups/windows/always-on-availability-groups-sql-server)
     
-- [SQL Server 数据库的备份和还原](https://go.microsoft.com/fwlink/p/?LinkId=392728)
+- [SQL Server 数据库的备份和还原](/sql/relational-databases/backup-restore/back-up-and-restore-of-sql-server-databases)
     
-- [SharePoint Server 2013 安装和服务器场部署](https://go.microsoft.com/fwlink/p/?LinkId=393119)
+- [SharePoint Server 2013 安装和服务器场部署](/SharePoint/install/installation-and-configuration-overview)
     
-- [Microsoft Azure](https://go.microsoft.com/fwlink/p/?LinkId=392729)
+- [Microsoft Azure](/azure/)
     
 最后，我们建议使用脚本编程技能，你可以用于将与这些技术相关的任务自动化。可以使用可用的用户界面完成此解决方案中所述的所有任务。但是，手动方法可能非常耗时且容易出现错误，并会交付不一致的结果。
   
@@ -232,14 +232,14 @@ Azure 中的环境可以是生产服务器场的较小版本。如果你计划�
    
 ## <a name="phase-1-design-the-disaster-recovery-environment"></a>阶段 1：设计灾难恢复环境
 
-使用 [SharePoint 2013 的 Microsoft Azure 体系结构](microsoft-azure-architectures-for-sharepoint-2013.md)中的指导设计灾难恢复环境，包括 SharePoint 恢复场。 您可以使用 Azure Visio 文件 [中的 SharePoint 灾难恢复解决方案](https://go.microsoft.com/fwlink/p/?LinkId=392554) 中的图形来启动设计过程。 我们建议你先设计整个环境，然后开始在 Azure 环境中执行任何工作。
+使用 [SharePoint 2013 的 Microsoft Azure 体系结构](microsoft-azure-architectures-for-sharepoint-2013.md)中的指导设计灾难恢复环境，包括 SharePoint 恢复场。 可以使用 Azure Visio 文件中 [SharePoint 灾难恢复解决方案](https://go.microsoft.com/fwlink/p/?LinkId=392554) 中的图形开始设计过程。 我们建议你先设计整个环境，然后开始在 Azure 环境中执行任何工作。
   
 除了 [SharePoint 2013 的 Microsoft Azure 体系结构](microsoft-azure-architectures-for-sharepoint-2013.md)中提供的虚拟网络、VPN 连接、Active Directory 和 SharePoint 服务器场设计指导外，请务必将文件共享角色添加到 Azure 环境。
   
 要在灾难恢复解决方案中支持日志传送，应将文件共享虚拟机添加到数据库角色驻留的子网。文件共享还充当 SQL Server AlwaysOn 可用性组多数节点的第三个节点。对于使用 SQL Server AlwaysOn 可用性组的标准 SharePoint 服务器场，这是建议配置。 
   
 > [!NOTE]
-> 必须查看使数据库参与 SQL Server AlwaysOn 可用性组的先决条件。有关详细信息，请参阅[针对 AlwaysOn 可用性组的先决条件、限制和建议](https://go.microsoft.com/fwlink/p/?LinkId=510870)。 
+> 必须查看使数据库参与 SQL Server AlwaysOn 可用性组的先决条件。有关详细信息，请参阅[针对 AlwaysOn 可用性组的先决条件、限制和建议](/sql/database-engine/availability-groups/windows/prereqs-restrictions-recommendations-always-on-availability)。 
   
 **图：用于灾难恢复解决方案的文件服务器的放置**
 
@@ -247,7 +247,7 @@ Azure 中的环境可以是生产服务器场的较小版本。如果你计划�
   
 在此图中，文件共享虚拟机将添加到 Azure 中包含数据库服务器角色的相同子网中。请勿将文件共享虚拟机添加到具有其他服务器角色的可用性集，例如 SQL Server 角色。
   
-如果你关注日志的高可用性，请考虑采取其他方法，即[使用 Azure Blob 存储服务进行 SQL Server 备份和还原](https://go.microsoft.com/fwlink/p/?LinkId=393113)。这是 Azure 中的新增功能，可将日志直接保存到 Blob 存储 URL。此解决方案不包括有关使用此功能的指导。
+如果你关注日志的高可用性，请考虑采取其他方法，即[使用 Azure Blob 存储服务进行 SQL Server 备份和还原](/sql/relational-databases/backup-restore/sql-server-backup-and-restore-with-microsoft-azure-blob-storage-service)。这是 Azure 中的新增功能，可将日志直接保存到 Blob 存储 URL。此解决方案不包括有关使用此功能的指导。
   
 在设计恢复场时，请牢记，成功的灾难恢复环境能够准确反映你想要恢复的生产服务器场。恢复场的大小不是恢复场设计、部署和测试中最重要的因素。恢复场规模因组织而异，具体取决于组织的需求。在出现短暂中断时，它可能会使用向下伸缩的服务器场，或者直到性能和容量需求要求你扩展服务器场。
   
@@ -273,19 +273,19 @@ Azure 中的环境可以是生产服务器场的较小版本。如果你计划�
   
 **图：混合 Active Directory 域配置**
 
-![部署到 Azure 虚拟网络和 SharePoint 服务器场子网的两个虚拟机是副本域控制器和 DNS 服务器](../media/AZarch-HyADdomainConfig.png)
+![部署到 Azure 虚拟网络和 SharePoint 场子网的两个虚拟机是副本域控制器和 DNS 服务器](../media/AZarch-HyADdomainConfig.png)
   
 在此图中，将两个虚拟机部署到相同的子网中。这两个虚拟机分别托管两个角色：Active Directory 和 DNS。
   
-在 Azure 中部署 Active Directory 之前，阅读[在 Azure 虚拟机上部署 Windows Server Active Directory 的指南](https://go.microsoft.com/fwlink/p/?linkid=392681)。这些指南将帮助你确定你的解决方案是否需要不同的体系结构或不同的配置设置。
+在 Azure 中部署 Active Directory 之前，阅读[在 Azure 虚拟机上部署 Windows Server Active Directory 的指南](/windows-server/identity/ad-ds/introduction-to-active-directory-domain-services-ad-ds-virtualization-level-100)。这些指南将帮助你确定你的解决方案是否需要不同的体系结构或不同的配置设置。
   
-有关在 Azure 中设置域控制器的详细指导，请参阅[在 Azure 虚拟网络中安装副本 Active Directory 域控制器](https://go.microsoft.com/fwlink/p/?LinkId=392687)。
+有关在 Azure 中设置域控制器的详细指导，请参阅[在 Azure 虚拟网络中安装副本 Active Directory 域控制器](/windows-server/identity/ad-ds/introduction-to-active-directory-domain-services-ad-ds-virtualization-level-100)。
   
 在此阶段之前，你没有向虚拟网络部署虚拟机。用于承载 Active Directory 和 DNS 的虚拟机可能不是你的解决方案需要的最大虚拟机。在部署这些虚拟机之前，首先创建你计划在虚拟网络中使用的最大虚拟机。这有助于确保你的解决方案在 Azure 中被标记为允许你需要的最大大小。目前不需要配置此虚拟机。只需进行创建，然后放到一旁。如果不这样做，你稍后在尝试创建更大的虚拟机时可能会受到限制，编写本文时此问题尚未解决。 
   
 ## <a name="phase-4-deploy-the-sharepoint-recovery-farm-in-azure"></a>阶段 4：在 Azure 中部署 SharePoint 恢复场
 
-根据你的设计规划，在 虚拟网络 中部署 SharePoint 服务器场。在 Azure 中部署 SharePoint 角色之前，查看[在 Azure 基础结构服务上规划 SharePoint 2013](https://go.microsoft.com/fwlink/p/?LinkId=400984) 对你有一定的帮助。
+根据你的设计规划，在 虚拟网络 中部署 SharePoint 服务器场。在 Azure 中部署 SharePoint 角色之前，查看[在 Azure 基础结构服务上规划 SharePoint 2013](/previous-versions/azure/dn275958(v=azure.100)) 对你有一定的帮助。
   
 考虑在构建概念证明环境时了解到的以下做法：
   
@@ -327,18 +327,18 @@ Azure 中的环境可以是生产服务器场的较小版本。如果你计划�
 
 |**标题**|**说明**|
 |:-----|:-----|
-|[复制](https://go.microsoft.com/fwlink/p/?LinkId=392732) <br/> |DFS 管理 TechNet 主题，包含复制链接  <br/> |
+|[复制](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc770278(v=ws.11)) <br/> |DFS 管理 TechNet 主题，包含复制链接  <br/> |
 |[DFS 复制：生存指南](https://go.microsoft.com/fwlink/p/?LinkId=392737) <br/> |Wiki，包含 DFS 信息的链接  <br/> |
-|[DFS 复制：常见问题](https://go.microsoft.com/fwlink/p/?LinkId=392738) <br/> |DFS 复制 TechNet 主题  <br/> |
-|[Jose Barreto 的博客](https://go.microsoft.com/fwlink/p/?LinkId=392739) <br/> |由 Microsoft 文件服务器团队首席项目经理撰写的博客  <br/> |
+|[DFS 复制：常见问题](/previous-versions/windows/it-pro/windows-server-2003/cc773238(v=ws.10)) <br/> |DFS 复制 TechNet 主题  <br/> |
+|[Jose Barreto 的博客](/archive/blogs/josebda/) <br/> |由 Microsoft 文件服务器团队首席项目经理撰写的博客  <br/> |
 |[Microsoft 存储团队 - 文件柜博客](https://go.microsoft.com/fwlink/p/?LinkId=392740) <br/> |关于 Windows Server 中的文件服务和存储功能的博客  <br/> |
    
 ## <a name="phase-6-set-up-log-shipping-to-the-recovery-farm"></a>阶段 6：设置到恢复场的日志传送
 
-日志传送是在此环境中设置灾难恢复的关键组件。你可以使用日志传送，将数据库的事务日志文件从主数据库服务器实例自动传送到辅助数据库服务器实例。要设置日志传送，请参阅[Configure log shipping in SharePoint 2013](https://docs.microsoft.com/sharepoint/administration/configure-log-shipping)。 
+日志传送是在此环境中设置灾难恢复的关键组件。你可以使用日志传送，将数据库的事务日志文件从主数据库服务器实例自动传送到辅助数据库服务器实例。要设置日志传送，请参阅[Configure log shipping in SharePoint 2013](/sharepoint/administration/configure-log-shipping)。 
   
 > [!IMPORTANT]
-> SharePoint Server 中的日志传送支持仅限于特定数据库。有关详细信息，请参阅 [SharePoint 数据库的受支持的高可用性和灾难恢复选项 (SharePoint 2013)](https://go.microsoft.com/fwlink/p/?LinkId=393121)。 
+> SharePoint Server 中的日志传送支持仅限于特定数据库。有关详细信息，请参阅 [SharePoint 数据库的受支持的高可用性和灾难恢复选项 (SharePoint 2013)](/SharePoint/administration/supported-high-availability-and-disaster-recovery-options-for-sharepoint-databas)。 
   
 ## <a name="phase-7-validate-failover-and-recovery"></a>阶段 7：验证故障转移和恢复
 
@@ -403,7 +403,7 @@ restore database WSS_Content with recovery
 > [!IMPORTANT]
 > 明确使用 T-SQL 时，在每个 RESTORE 语句中指定 **WITH NORECOVERY** 或 **WITH RECOVERY** 以消除歧义这在编写脚本时非常重要。还原完整和差异备份后，可以在 SQL Server Management Studio 中还原事务日志。此外，由于日志传送已停止，内容数据库处于备用状态，因为你必须将状态更改为完全访问。
   
-在 SQL Server Management Studio 中，右键单击“WSS_Content”**** 数据库，依次指向“任务”**** > “还原”****，再单击“事务日志”****（如果还没有还原完整备份，则不可用）。有关详细信息，请参阅[还原事务日志备份 (SQL Server)](https://go.microsoft.com/fwlink/p/?LinkId=392778)。
+在 SQL Server Management Studio 中，右键单击“WSS_Content”数据库，依次指向“任务” > “还原”，再单击“事务日志”（如果还没有还原完整备份，则不可用）。有关详细信息，请参阅[还原事务日志备份 (SQL Server)](/sql/relational-databases/backup-restore/restore-a-transaction-log-backup-sql-server)。
   
 ### <a name="crawl-the-content-source"></a>对内容源进行爬网
 
@@ -452,7 +452,7 @@ restore database WSS_Content with recovery
   
 通常情况下，当你设置网络负载平衡时，将向群集分配单个 IP 地址。然后你在 DNS 提供程序中为指向群集的网络创建 DNS 主机。（在此项目中，我们将 DNS 服务器放置在 Azure 中，确保在出现内部部署数据中心故障时能够恢复。）例如，你可以在 DNS 管理器的 Active Directory 中创建指向负载平衡群集的 IP 地址的 DNS 记录（例如，称为  `https://sharepoint.contoso.com`）。
   
-对于 SharePoint 服务器场的外部访问，可以在外部 DNS 服务器上创建一个主机记录，该服务器具有客户端在 intranet 上使用的相同 URL (例如， `https://sharepoint.contoso.com` 指向防火墙中的外部 IP 地址的) 。 使用此示例，最佳做法是设置拆分 DNS，以使内部 DNS 服务器对 `contoso.com` 直接指向 SharePoint 场群集的请求进行权威，而不是将 DNS 请求路由到外部 DNS 服务器。 ) 然后，可以将外部 IP 地址映射到本地群集的内部 ip 地址，以便客户端能够找到他们要查找的资源。 (
+对于对 SharePoint 场的外部访问，可以在外部 DNS 服务器上创建主机记录，该记录与客户端在 Intranet (上使用的 URL 相同 (例如，指向防火墙中的外部 IP 地址的 `https://sharepoint.contoso.com`) 。  (使用此示例的最佳实践是设置拆分 DNS，以便内部 DNS 服务器对 DNS 服务器具有权威性，并直接将请求路由到 SharePoint 场群集，而不是将 DNS 请求路由到外部 DNS 服务器。) 然后，可以将外部 IP 地址映射到内部部署群集的内部 IP 地址，以便客户端找到所需的资源。 `contoso.com`
   
 接下来，将介绍几种不同的灾难恢复应用场景：
   
@@ -460,7 +460,7 @@ restore database WSS_Content with recovery
   
  **示例场景：内部部署数据中心会完全中断。** 此场景可能是由于自然灾害所致，例如火灾或水灾。这种情况下，对于企业来说，可能希望有一个辅助数据中心承载在另一个区域，还有具有自己的目录服务和 DNS 的 Azure 子网。与前一个灾难场景中一样，你可以将内部和外部 DNS 记录重定向为指向 Azure SharePoint 服务器场。同样，记下该 DNS 记录传播可能需要一些时间。
   
-如果使用以主机命名的网站集（如在以 [主机命名的网站集体系结构和部署 (SharePoint 2013) ](https://docs.microsoft.com/SharePoint/administration/host-named-site-collection-architecture-and-deployment)中所示），则您的 sharepoint 服务器场中的同一 web 应用程序可能会有多个网站集，其中包含唯一 DNS 名称 (例如 `https://sales.contoso.com` 和 `https://marketing.contoso.com`) 。 在这种情况下，你可以为每个网站集创建指向群集 IP 地址的 DNS 记录。 请求到达 SharePoint Web 前端服务器之后，它们会将每个请求路由到相应的网站集。
+如果您使用以主机命名的网站集，如以主机命名的网站集体系结构和部署[ (SharePoint 2013) ](/SharePoint/administration/host-named-site-collection-architecture-and-deployment)中推荐，则 SharePoint 场中的同一 Web 应用程序可能承载多个网站集，其中唯一 DNS 名称为 (，) 。 `https://sales.contoso.com` `https://marketing.contoso.com` 在这种情况下，你可以为每个网站集创建指向群集 IP 地址的 DNS 记录。 请求到达 SharePoint Web 前端服务器之后，它们会将每个请求路由到相应的网站集。
   
 ## <a name="microsoft-proof-of-concept-environment"></a>Microsoft 概念证明环境
 
@@ -528,7 +528,7 @@ SharePoint 服务器场分两个阶段部署，以便在必要时简化环境稳
 我们在创建 SharePoint 2013 服务器之前创建安装了 SQL Server 的数据库服务器。因为这是一个新部署，我们在部署 SharePoint 之前创建了可用性组。我们根据 MCS 最佳实践指南创建了三个组。 
   
 > [!NOTE]
-> 创建占位符数据库，以便你可以在执行 SharePoint 安装之前创建可用性组。有关详细信息，请参阅[为 SharePoint 2013 配置 SQL Server 2012 AlwaysOn 可用性组](https://go.microsoft.com/fwlink/p/?LinkId=517626)
+> 创建占位符数据库，以便你可以在执行 SharePoint 安装之前创建可用性组。有关详细信息，请参阅[为 SharePoint 2013 配置 SQL Server 2012 AlwaysOn 可用性组](/SharePoint/administration/configure-an-alwayson-availability-group)
   
 我们创建了服务器场并按以下顺序加入其他服务器：
   
@@ -540,7 +540,7 @@ SharePoint 服务器场分两个阶段部署，以便在必要时简化环境稳
     
 - 将 SP-WFE1 和 SP-WFE2 设置为承载分布式缓存。 
     
-在命令行运行 _psconfig.exe_ 时，我们使用了 **skipRegisterAsDistributedCachehost** 参数。 有关详细信息，请参阅[在 SharePoint 中规划源和分布式缓存服务 (SharePoint Server 2013)](https://docs.microsoft.com/sharepoint/administration/plan-for-feeds-and-the-distributed-cache-service)。 
+在命令行运行 _psconfig.exe_ 时，我们使用了 **skipRegisterAsDistributedCachehost** 参数。 有关详细信息，请参阅[在 SharePoint 中规划源和分布式缓存服务 (SharePoint Server 2013)](/sharepoint/administration/plan-for-feeds-and-the-distributed-cache-service)。 
   
 在恢复环境中重复以下步骤：
   
@@ -608,7 +608,7 @@ SharePoint 服务器场分两个阶段部署，以便在必要时简化环境稳
   
 ### <a name="the-get-adforest-windows-powershell-command-generates-the-error-the-term-get-adforest-is-not-recognized-as-the-name-of-a-cmdlet-function-script-file-or-operable-program"></a>Get-ADForest Windows PowerShell 命令会生成错误："术语'Get-ADForest'未识别为 cmdlet、函数、脚本文件或可运行程序的名称。"
 
-设置用户配置文件时，需要 Active Directory 林名称。在“添加角色和功能”向导中，确保已启用用于 Windows PowerShell 的 Active Directory 模块（依次转到“远程服务器管理工具”>“角色管理工具”>“AD DS 和 AD LDS 工具”**** 部分下）。此外，先运行以下命令，再使用 **Get-ADForest**，以确保已加载软件依赖项。
+设置用户配置文件时，需要 Active Directory 林名称。在“添加角色和功能”向导中，确保已启用用于 Windows PowerShell 的 Active Directory 模块（依次转到“远程服务器管理工具”>“角色管理工具”>“AD DS 和 AD LDS 工具”部分下）。此外，先运行以下命令，再使用 **Get-ADForest**，以确保已加载软件依赖项。
   
 ```
 Import-module servermanager
@@ -630,7 +630,7 @@ Import-module activedirectory
   
 ### <a name="managed-metadata-service-or-other-sharepoint-service-fails-to-start-automatically-after-installation"></a>Managed Metadata Service（或其他 SharePoint 服务）在安装后无法自动启动
 
-服务可能需要几分钟才能启动，具体取决于你的 SharePoint Server 的性能和当前负载。 手动单击服务的" **启动**"按钮，留出足够的时间让服务器启动，并时常刷新一下服务器上的服务屏幕以监视其状态。 如果服务仍处于停止状态，启用 SharePoint 诊断日志记录，再次尝试启动服务，然后检查日志中是否包含错误。 有关详细信息，请参阅 [在 SharePoint 2013 中配置诊断日志记录](https://docs.microsoft.com/sharepoint/administration/configure-diagnostic-logging)
+服务可能需要几分钟才能启动，具体取决于你的 SharePoint Server 的性能和当前负载。 手动单击服务的" **启动**"按钮，留出足够的时间让服务器启动，并时常刷新一下服务器上的服务屏幕以监视其状态。 如果服务仍处于停止状态，启用 SharePoint 诊断日志记录，再次尝试启动服务，然后检查日志中是否包含错误。 有关详细信息，请参阅在[SharePoint 2013](/sharepoint/administration/configure-diagnostic-logging)中配置诊断日志记录
   
 ### <a name="after-changing-dns-to-the-azure-failover-environment-client-browsers-continue-to-use-the-old-ip-address-for-the-sharepoint-site"></a>将 DNS 更改为 Azure 故障转移环境之后，客户端浏览器继续使用 SharePoint 网站的旧 IP 地址
 
@@ -642,13 +642,10 @@ Ipconfig /flushdns
 
 ## <a name="additional-resources"></a>其他资源
 
-[SharePoint 数据库受支持的高可用性和灾难恢复选项](https://docs.microsoft.com/sharepoint/administration/supported-high-availability-and-disaster-recovery-options-for-sharepoint-databas)
+[SharePoint 数据库受支持的高可用性和灾难恢复选项](/sharepoint/administration/supported-high-availability-and-disaster-recovery-options-for-sharepoint-databas)
   
-[为 SharePoint 2013 配置 SQL Server 2012 AlwaysOn 可用性组](https://go.microsoft.com/fwlink/p/?LinkId=393122)
+[为 SharePoint 2013 配置 SQL Server 2012 AlwaysOn 可用性组](/SharePoint/administration/configure-an-alwayson-availability-group)
   
 ## <a name="see-also"></a>另请参阅
 
-[Microsoft 365 解决方案和体系结构中心](../solutions/solution-architecture-center.md)
-
-
-
+[Microsoft 365 解决方案和体系结构中心](../solutions/index.yml)

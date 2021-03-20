@@ -22,12 +22,12 @@ ms.custom:
 description: 管理员可以了解零时差自动清除 (ZAP) 如何以反向方式将 Exchange Online 邮箱中的已送达邮件移动到垃圾邮件文件夹或被反向发现为垃圾邮件或网络钓鱼的隔离邮箱。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: be47d8dfda68bfb6819b6423542970c7768c6ffb
-ms.sourcegitcommit: 8b1bd7ca8cd81e4270f0c1e06d2b6ca81804a6aa
+ms.openlocfilehash: b5744fdd4ce371f62fcb4b07a4cbcd003405c3db
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "50820254"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50907967"
 ---
 # <a name="zero-hour-auto-purge-zap-in-exchange-online"></a>Exchange Online 中的零时差 (ZAP) 清除
 
@@ -121,4 +121,4 @@ ZAP 将基于反垃圾邮件策略的配置对邮件采取措施，如本文前�
 
 ZAP 不会隔离来自保留邮箱的邮件。 ZAP 可以基于为反垃圾邮件策略中的垃圾邮件或网络钓鱼裁定配置的操作，将邮件移动到"垃圾邮件"文件夹。
 
-有关 Exchange Online 中的保留功能详细信息，请参阅 Exchange Online 中的就地保留 [和诉讼保留](https://docs.microsoft.com/Exchange/security-and-compliance/in-place-and-litigation-holds)。
+有关 Exchange Online 中的保留功能详细信息，请参阅 Exchange Online 中的就地保留 [和诉讼保留](/Exchange/security-and-compliance/in-place-and-litigation-holds)。

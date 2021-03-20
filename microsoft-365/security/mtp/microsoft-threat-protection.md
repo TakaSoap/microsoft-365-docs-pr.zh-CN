@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: e80a3d094ac8f5724bbe7daf72a0ded7d30091ba
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 254d3b9abc4a356e5a0fd429d6505faacafd3a8f
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49930566"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50906708"
 ---
 # <a name="microsoft-365-defender"></a>Microsoft 365 Defender
 
@@ -35,42 +35,42 @@ ms.locfileid: "49930566"
 **适用于：**
 - Microsoft 365 Defender
 
-> 想要体验 Microsoft 365 Defender？ 可以在[实验室环境中对其进行评估或在](https://aka.ms/mtp-trial-lab)[生产中运行试点项目](https://aka.ms/m365d-pilotplaybook)。
+> 想要体验 Microsoft 365 Defender？ 可以在[实验室环境中评估它或在](./mtp-evaluation.md?ocid=cx-docs-MTPtriallab)[生产中运行你的试验项目](./mtp-pilot.md?ocid=cx-evalpilot)。
 >
 
-Microsoft 365 Defender 是一个统一的入侵前和入侵后企业防御套件，在本机协调跨终结点、标识、电子邮件和应用程序进行检测、预防、调查和响应，以提供针对复杂攻击的集成保护。
+Microsoft 365 Defender 是一个统一的攻破前和入侵后企业防御套件，在本机协调跨终结点、标识、电子邮件和应用程序进行检测、预防、调查和响应，以提供针对复杂攻击的集成保护。
 
-借助集成的 Microsoft 365 Defender 解决方案，安全专业人员可以将每个产品接收的威胁信号拼接在一起，并确定威胁的完整范围和影响;它如何进入环境、它的影响以及它当前对组织的影响。 Microsoft 365 Defender 采取自动操作来阻止或停止攻击和自我修复受影响的邮箱、终结点和用户标识。  
+借助集成的 Microsoft 365 Defender 解决方案，安全专业人员可以整合每个产品接收的威胁信号，并确定威胁的完整范围和影响;它如何进入环境、对环境的影响以及它当前对组织的影响。 Microsoft 365 Defender 采取自动操作来阻止或停止攻击和自我修复受影响的邮箱、终结点和用户标识。  
 
 
 <center><h2>Microsoft 365 Defender 服务</center></h2>
 <table><tr><td><center><b><a href="https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection"><b>Microsoft Defender for Endpoint</b></center></a></td>
 <td><center><b><a href="https://docs.microsoft.com/office365/securitycompliance/office-365-atp"><b>Microsoft Defender for Office 365</b></center></a></td>
-<td><center><b><a href="https://docs.microsoft.com/azure-advanced-threat-protection/"><b>Microsoft Defender for Identity</b></a></center></td>
-<td><center><b><a href="https://docs.microsoft.com/cloud-app-security/"><b>Microsoft Cloud App Security</b></a></center></td>
+<td><center><b><a href="/azure-advanced-threat-protection/"><b>Microsoft Defender for Identity</b></a></center></td>
+<td><center><b><a href="/cloud-app-security/"><b>Microsoft Cloud App Security</b></a></center></td>
 </tr>
 </table>
 <br>
 
 ## <a name="microsoft-365-defender-interactive-guide"></a>Microsoft 365 Defender 交互式指南
 
-在此交互式指南中，你将了解如何使用 Microsoft 365 Defender 保护你的组织。 你将了解 Microsoft 365 Defender 如何帮助您检测安全风险、调查对组织的攻击以及自动防止有害的活动。
+在此交互式指南中，你将了解如何使用 Microsoft 365 Defender 保护你的组织。 你将看到 Microsoft 365 Defender 如何自动帮助检测安全风险、调查组织攻击和防止有害的活动。
 
 > [!VIDEO https://aka.ms/M365Defender-InteractiveGuide]
 
 
 
-Microsoft 365 Defender 套件可保护： 
-- **具有 Microsoft Defender for Endpoint** 的终结点 - Microsoft Defender for Endpoint 是一个统一的终结点平台，用于预防性保护、泄露后检测、自动调查和响应。 
-- 与 **Microsoft Defender for Office 365** - Office 365 的 Defender 之间的电子邮件和协作可保护你的组织免受电子邮件、链接 (URL) 和协作工具造成的恶意威胁。 
-- 具有 Microsoft Defender for Identity 和 **Azure AD Identity Protection** 的标识 - Microsoft Defender for Identity 使用 Active Directory 信号来识别、检测和调查针对组织的高级威胁、遭到入侵的标识和恶意内部操作。 
-- **具有 Microsoft Cloud App 安全性** 的应用程序 - Microsoft Cloud App 安全性是一个全面的跨 SaaS 解决方案，为云应用提供深入可见性、强大的数据控制和增强的威胁防护。 
+Microsoft 365 Defender 套件保护： 
+- **具有 Microsoft Defender for Endpoint** 的终结点 - Microsoft Defender for Endpoint 是一个统一的终结点平台，用于预防性保护、攻破后检测、自动调查和响应。 
+- 使用 **Microsoft Defender for Office 365** 的电子邮件和协作 - 适用于 Office 365 的 Defender 可保护你的组织免受电子邮件、链接 (URL 和协作) 造成的恶意威胁。 
+- Identity 为 Microsoft Defender 和 **Azure AD Identity Protection** 的标识 - Microsoft Defender for Identity 使用 Active Directory 信号来标识、检测和调查针对你的组织的高级威胁、遭到入侵的标识和恶意内部行为。 
+- **具有 Microsoft Cloud App 安全性的应用程序** - Microsoft Cloud App security 是一个全面的跨 SaaS 解决方案，为云应用提供深入了解、强数据控制和增强的威胁防护。 
 
 >[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4Bzww] 
 
-Microsoft 365 Defender 的独特跨产品层增强了各个套件组件，以：
-- 通过信号共享和自动操作帮助抵御攻击，并在整个套件中协调防御响应
-- 通过将警报、可疑事件和受影响资产的数据加入"事件"，为安全团队讲述跨产品警报、行为和上下文的攻击的完整情景
+Microsoft 365 Defender 的独特跨产品层补充了各个套件组件，以：
+- 通过信号共享和自动操作帮助抵御攻击，并协调套件中的防御响应
+- 通过将警报、可疑事件和受影响资产的数据加入"事件"，为安全团队跨产品警报、行为和上下文进行攻击的完整情景旁白
 - 通过自动修正触发受影响资产的自我修复，自动响应泄露
 - 使安全团队能够跨终结点和 Office 数据执行详细有效的威胁搜寻
 
@@ -85,14 +85,14 @@ Microsoft 365 Defender 的独特跨产品层增强了各个套件组件，以：
 
 
 Microsoft 365 Defender 跨产品功能包括： 
-- **跨产品单** 一窗格的透明 - 集中查看检测、受影响的资产、自动操作以及单个队列和单个窗格中的相关证据 [security.microsoft.com。](https://security.microsoft.com) 
-- **组合事件队列** - 通过确保完整攻击范围、受影响的资产和自动修正操作组合在一起并及时出现，帮助安全专业人员专注于关键问题。 
-- **威胁自动响应** - 关键威胁信息在 Microsoft 365 Defender 产品之间实时共享，以帮助停止攻击进度。 例如，如果在受 Microsoft Defender for Endpoint 保护的终结点上检测到恶意文件，它将指示 Defender for Office 365 扫描该文件并从所有电子邮件中删除该文件。 整个 Microsoft 365 安全套件将在看到文件时阻止该文件。
-- 对损坏的设备、用户标识和邮箱进行自我修复 **-** Microsoft 365 Defender 使用 AI 支持的自动操作和操作手册将受影响的资产修正回安全状态。 Microsoft 365 Defender 利用套件产品的自动修正功能，以确保尽可能自动修正与事件相关的所有受影响资产。
-- **跨产品威胁** 搜寻 - 安全团队可以利用自己独特的组织知识，通过针对各种保护产品收集的原始数据创建自己的自定义查询来搜寻泄露的迹象。 Microsoft 365 Defender 提供对终结点和 Microsoft Defender for Office 365 数据之间 30 天的历史原始信号和警报数据的基于查询的访问。 
+- **跨产品单** 一窗格的"工具"- 集中查看检测、受影响资产、自动操作以及单个队列和单个窗格中的相关证据 [security.microsoft.com。](https://security.microsoft.com) 
+- **联合事件队列** - 通过确保完整攻击范围、受影响的资产和自动修正操作组合在一起并及时出现，帮助安全专业人员重点关注关键问题。 
+- **自动响应威胁** - 关键威胁信息在 Microsoft 365 Defender 产品之间实时共享，以帮助停止攻击进度。 例如，如果在受 Microsoft Defender for Endpoint 保护的终结点上检测到恶意文件，它将指示 Defender for Office 365 扫描该文件并从所有电子邮件中删除该文件。 整个 Microsoft 365 安全套件将阻止该文件在看到时进行阻止。
+- 对损坏的设备、用户标识和邮箱进行自我修复 **-** Microsoft 365 Defender 使用 AI 支持的自动操作和操作手册将受影响的资产修正回安全状态。 Microsoft 365 Defender 利用套件产品的自动修正功能，以确保尽可能自动修复与事件相关的所有受影响资产。
+- **跨产品威胁搜寻** - 安全团队可以利用其独特的组织知识，通过针对各种保护产品收集的原始数据创建自己的自定义查询来搜寻泄露的迹象。 Microsoft 365 Defender 提供对终结点和 Microsoft Defender for Office 365 数据之间 30 天的历史原始信号和警报数据的基于查询的访问。 
 
 
-## <a name="get-started"></a>开始行动
-必须先满足 Microsoft 365 Defender 许可要求，然后才能在 Microsoft 365 安全中心内启用[security.microsoft.com。](https://security.microsoft.com) 有关详细信息，请阅读：
+## <a name="get-started"></a>入门
+必须先满足 Microsoft 365 Defender 许可要求，然后才能在 Microsoft 365 安全中心中[](https://security.microsoft.com)启用该服务，security.microsoft.com。 有关详细信息，请阅读：
 - [授权要求](prerequisites.md#licensing-requirements)
 - [打开 Microsoft 365 Defender](mtp-enable.md)

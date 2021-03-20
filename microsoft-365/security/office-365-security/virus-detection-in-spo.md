@@ -20,12 +20,12 @@ description: 了解 SharePoint Online 如何在用户上载的文件中检测到
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 9ba3d19c6b04b93d9b1089540b7483d8b2e7246c
-ms.sourcegitcommit: 3d48e198e706f22ac903b346cadda06b2368dd1e
+ms.openlocfilehash: a651d198f441c26525cbfb5d7406ae350db8b79e
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50727495"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50908078"
 ---
 # <a name="built-in-virus-protection-in-sharepoint-online-onedrive-and-microsoft-teams"></a>SharePoint Online、OneDrive 和 Microsoft Teams 中的内置病毒防护
 
@@ -62,7 +62,7 @@ Microsoft 365 病毒检测引擎以异步方式运行， (与 SharePoint Online 
 
 > [!NOTE]
 >
-> 管理员可以在 SharePoint Online PowerShell 中 [对 Set-SPOTenant](https://docs.microsoft.com/powershell/module/sharepoint-online/Set-SPOTenant) cmdlet 使用 *DisallowInfectedFileDownload* 参数，以防止用户下载受感染的文件，即使在防病毒警告窗口中也可以。 有关说明，请参阅 [使用 SharePoint Online PowerShell 阻止用户下载恶意文件](turn-on-atp-for-spo-odb-and-teams.md#step-2-recommended-use-sharepoint-online-powershell-to-prevent-users-from-downloading-malicious-files)。
+> 管理员可以在 SharePoint Online PowerShell 中 [对 Set-SPOTenant](/powershell/module/sharepoint-online/Set-SPOTenant) cmdlet 使用 *DisallowInfectedFileDownload* 参数，以防止用户下载受感染的文件，即使在防病毒警告窗口中也可以。 有关说明，请参阅 [使用 SharePoint Online PowerShell 阻止用户下载恶意文件](turn-on-atp-for-spo-odb-and-teams.md#step-2-recommended-use-sharepoint-online-powershell-to-prevent-users-from-downloading-malicious-files)。
 >
 > 一旦启用 *DisallowInfectedFileDownload* 参数，用户和管理员将完全阻止访问检测到/阻止的文件。
 
@@ -76,6 +76,6 @@ OneDrive 同步客户端不会下载包含病毒的文件。 同步客户端将�
 
 ## <a name="related-articles"></a>相关文章
 
-[Microsoft 365 中的恶意软件和勒索软件保护](https://docs.microsoft.com/compliance/assurance/assurance-malware-and-ransomware-protection)
+[Microsoft 365 中的恶意软件和勒索软件保护](/compliance/assurance/assurance-malware-and-ransomware-protection)
 
 有关 SharePoint Online、OneDrive 和 Microsoft Teams 中的防病毒功能详细信息[](protect-against-threats.md)，请参阅防止威胁和启用[SharePoint、OneDrive](turn-on-atp-for-spo-odb-and-teams.md)和 Microsoft Teams 的安全附件。

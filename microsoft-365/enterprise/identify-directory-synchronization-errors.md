@@ -23,34 +23,33 @@ search.appverid:
 - GPA150
 ms.assetid: b4fc07a5-97ea-4ca6-9692-108acab74067
 description: 了解如何在 Microsoft 365 管理中心中查看目录同步错误和可能的修补程序。
-ms.openlocfilehash: 5103b1f8a8f0514ca30fd71b94dee2530f0b082f
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 76717fc158aa0cee47f784919f19a295378bbd5b
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46688059"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50907500"
 ---
 # <a name="view-directory-synchronization-errors-in-microsoft-365"></a>在 Microsoft 365 中查看目录同步错误
 
-您可以在 Microsoft 365 管理中心中查看目录同步错误。 仅显示用户对象错误。 若要查看 PowerShell 中的错误，请参阅 [使用 DirSyncProvisioningErrors 标识对象](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-syncservice-duplicate-attribute-resiliency)。
+可以在 Microsoft 365 管理中心中查看目录同步错误。 只显示 User 对象错误。 若要查看 PowerShell 错误，请参阅 [使用 DirSyncProvisioningErrors](/azure/active-directory/hybrid/how-to-connect-syncservice-duplicate-attribute-resiliency)标识对象。
 
 ## <a name="view-directory-synchronization-errors-in-the-microsoft-365-admin-center"></a>在 Microsoft 365 管理中心中查看目录同步错误
 
-若要查看 Microsoft 365 管理中心中的任何错误，请执行以下操作：
+若要在 Microsoft 365 管理中心中查看任何错误：
   
-1. 使用全局管理员帐户登录到 [Microsoft 365 管理中心](https://admin.microsoft.com) 。 
+1. 使用全局管理员帐户登录到 [Microsoft 365](https://admin.microsoft.com) 管理中心。 
     
-2. 在 **主页** 上，您将看到 " **用户管理** 卡"。 
+2. 在 **主页** 上，你将看到用户 **管理** 卡。 
     
     ![Microsoft 365 管理中心中的用户管理卡](../media/060006e9-de61-49d5-8979-e77cda198e71.png)
   
-3. 在卡片上，选择 " **AZURE AD Connect** " 下的 "**同步错误**" 以查看 "**目录同步错误**" 页上的错误。   
+3. On the card， choose **Sync errors** under **Azure AD Connect** to see the errors on the **Directory sync errors** page.   
     
-    !["目录同步错误" 页的示例](../media/882094a3-80d3-4aae-b90b-78b27047974c.png)
+    ![目录同步错误页面的示例](../media/882094a3-80d3-4aae-b90b-78b27047974c.png)
 
-4. 选择任何错误以显示详细信息窗格，其中包含有关错误的信息以及如何修复该错误的提示。
+4. 选择任何错误以显示详细信息窗格，其中包含有关错误的信息以及如何修复错误的提示。
 
    ![目录同步错误的详细信息示例](../media/a6e302d4-6be7-4e3a-b4b5-81c5a2c02952.png)
   
-查看后，请参阅 [解决 Microsoft 365 的目录同步问题](fix-problems-with-directory-synchronization.md) 以更正任何已确定的问题。
-
+查看后，请参阅 [修复 Microsoft 365](fix-problems-with-directory-synchronization.md) 的目录同步问题，以更正任何确定的问题。

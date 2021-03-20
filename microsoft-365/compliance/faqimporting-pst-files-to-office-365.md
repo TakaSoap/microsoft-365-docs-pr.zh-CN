@@ -16,27 +16,27 @@ search.appverid:
 - MET150
 ms.assetid: 2fe71b05-f5a2-4182-ade7-4dc5cabdfd51
 ms.custom: seo-marvel-apr2020
-description: 本文包含针对管理员使用 Office 365 导入服务将 PST 文件导入到 Microsoft 365 的一些常见问题解答。
-ms.openlocfilehash: b6d00bf58225ca016f6debbeeac8468c558c3556
-ms.sourcegitcommit: 37da941919036a714da42eaa039682ccbe0da670
+description: 本文包含管理员有关使用 Office 365 导入服务将 PST 文件导入到 Microsoft 365 的一些常见问题的解答。
+ms.openlocfilehash: adcc84df7aed25f0d51c8fb6a1899bfa56453854
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/23/2020
-ms.locfileid: "46860697"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50906786"
 ---
 # <a name="faq-about-importing-pst-files"></a>有关导入 PST 文件的常见问题解答
 
-**这篇文章适用于对象为管理员。您要将 PST 文件导入到您自己的邮箱吗？请参阅 ["从 Outlook .pst 导入电子邮件、联系人和日历"](https://go.microsoft.com/fwlink/p/?LinkID=785075)**
+**本文适用于管理员。是否要将 PST 文件导入到您自己的邮箱？请参阅 [从 Outlook .pst](https://go.microsoft.com/fwlink/p/?LinkID=785075)文件导入电子邮件、联系人和日历**
    
-以下是与使用 Office 365 导入服务将 PST 文件批量上传至 Microsoft 365 邮箱有关的常见问题。 For more information about how to import PST files， see [Overview of importing PST files to Office 365](https://docs.microsoft.com/microsoft-365/compliance/importing-pst-files-to-office-365).
+以下是有关使用 Office 365 导入服务将 PST 文件批量导入到 Microsoft 365 邮箱的一些常见问题。 若要详细了解如何导入 PST 文件，请参阅 [将 PST 文件导入到 Office 365 的概述](./importing-pst-files-to-office-365.md)。
   
 ## <a name="using-network-upload-to-import-pst-files"></a>使用网络上传导入 PST 文件
 
-有关分步说明，请参阅"使用[网络上载将 PST 文件导入到 Office 365。"](use-network-upload-to-import-pst-files.md)
+有关分步说明，请参阅使用网络上传将[PST 文件导入到 Office 365。](use-network-upload-to-import-pst-files.md)
   
  **在 Office 365 导入服务中创建导入作业需要哪些权限？**
   
-必须分配有 Exchange Online 中的邮箱导入导出角色，才能将 PST 文件导入到 Microsoft 365 邮箱。 默认情况下，不会向 Exchange Online 中任何角色组分配此角色。 您可以向“组织管理”角色组添加“邮箱导入导出”角色。 或者可以创建新的角色组，分配邮箱导入导出角色，然后将自己或其他用户添加为成员。 有关详细信息，请参阅[管理 Exchange Online 中的角色组](https://go.microsoft.com/fwlink/p/?LinkId=730688)中的“向角色组添加角色”或“创建角色组”部分。
+必须分配有 Exchange Online 中的邮箱导入导出角色，才能将 PST 文件导入到 Microsoft 365 邮箱。 默认情况下，不会向 Exchange Online 中任何角色组分配此角色。 您可以向“组织管理”角色组添加“邮箱导入导出”角色。 或者可以创建新的角色组，分配邮箱导入导出角色，然后将自己或其他用户添加为成员。 有关详细信息，请参阅[管理 Exchange Online 中的角色组](/Exchange/permissions-exo/role-groups)中的“向角色组添加角色”或“创建角色组”部分。
   
 此外，若要在安全与合规中心创建导入作业，必须满足以下条件之一：
   
@@ -51,7 +51,7 @@ ms.locfileid: "46860697"
   
  **网络上传在哪些地区提供？**
   
-网络上传当前在以下地区可用：美国， 加拿大、巴西、英国、法国、德国、瑞士、挪威、欧洲、印度、东亚地址、东南亚、东南亚、日本、加利亚、澳大利亚和阿拉伯语 (UAE) 。 Network upload will be available in more regions soon.
+目前，在以下区域提供网络上传功能：美国、加拿大、巴西、英国、法国、德国、瑞士、挪威、欧洲、印度、东亚、东南亚、日本、韩国、澳大利亚和阿拉伯联合酋长国 (UAE)。该功能将很快在更多区域中提供。
   
  **使用网络上传导入 PST 文件的定价如何？**
   
@@ -61,7 +61,7 @@ Using network upload to import PST files is free.
   
  **哪个版本的 PST 文件格式支持导入到 Office 365？**
   
-可选两个版本的 PST 文件格式：ANSI 和 Unicode。 建议导入使用 Unicode PST 文件格式的文件。 但是，采用 ANSI PST 文件格式的文件也可以导入到 Office 365，如语言采用双字节字符集 (DBCS) 的文件。 有关导入 ANSI PST 文件的详细信息，请参阅"使用网络上传将组织的 PST 文件导入到 [Office 365"中的步骤](use-network-upload-to-import-pst-files.md#step-4-create-the-pst-import-mapping-file)4。
+可选两个版本的 PST 文件格式：ANSI 和 Unicode。 建议导入使用 Unicode PST 文件格式的文件。 但是，采用 ANSI PST 文件格式的文件也可以导入到 Office 365，如语言采用双字节字符集 (DBCS) 的文件。 有关导入 ANSI PST 文件的信息，请参阅使用网络上传将组织的 PST 文件导入 [到 Office 365](use-network-upload-to-import-pst-files.md#step-4-create-the-pst-import-mapping-file)中的步骤 4。
   
 此外，来自 Outlook 2007 和更高版本 Outlook 的 PST 文件可导入到 Office 365。
   
@@ -73,7 +73,7 @@ Using network upload to import PST files is free.
   
  **将 PST 文件导入到邮箱需要多长时间？**
   
-这取决于你的网络容量，但每 TB 数据通常需要几个小时才能上传到组织的 Azure 存储区域。 PST 文件复制到 Azure 存储区域后，PST 文件将以每天至少 24 GB 的速度导入到 Microsoft 365 邮箱。 如果此速度不满足你的需求，可能需要考虑采用其他方法将电子邮件数据迁移到 Office 365。 有关详细信息，请参阅[将多个电子邮件帐户迁移到 Office 365 的方法](https://docs.microsoft.com/Exchange/mailbox-migration/mailbox-migration)。
+这取决于你的网络容量，但每 TB 数据通常需要几个小时才能上传到组织的 Azure 存储区域。 PST 文件复制到 Azure 存储区域后，PST 文件将以每天至少 24 GB 的速度导入到 Microsoft 365 邮箱。 如果此速度不满足你的需求，可能需要考虑采用其他方法将电子邮件数据迁移到 Office 365。 有关详细信息，请参阅[将多个电子邮件帐户迁移到 Office 365 的方法](/Exchange/mailbox-migration/mailbox-migration)。
   
 如果不同的 PST 文件导入到不同的目标邮箱中，则导入过程将以并行方式进行；也就是说，每个 PST/邮箱对是同时导入的。 同样，如果多个 PST 文件导入到同一个邮箱中，也将同时导入这些文件。
   
@@ -107,11 +107,11 @@ Using network upload to import PST files is free.
   
 ## <a name="using-drive-shipping-to-import-pst-files"></a>使用驱动器寄送导入 PST 文件
 
-有关分步说明，请参阅"[使用驱动器传送将 PST 文件导入到 Office 365。"](use-drive-shipping-to-import-pst-files-to-office-365.md)
+有关分步说明，请参阅使用驱动器寄送将[PST 文件导入到 Office 365。](use-drive-shipping-to-import-pst-files-to-office-365.md)
   
  **在 Office 365 导入服务中创建导入作业需要哪些权限？**
   
-必须分配有邮箱导入导出角色，才能将 PST 文件导入到 Microsoft 365 邮箱。 默认情况下，不会向 Exchange Online 中任何角色组分配此角色。 您可以向“组织管理”角色组添加“邮箱导入导出”角色。 或者可以创建新的角色组，分配邮箱导入导出角色，然后将自己或其他用户添加为成员。 有关详细信息，请参阅[管理 Exchange Online 中的角色组](https://go.microsoft.com/fwlink/p/?LinkId=730688)中的“向角色组添加角色”或“创建角色组”部分。
+必须分配有邮箱导入导出角色，才能将 PST 文件导入到 Microsoft 365 邮箱。 默认情况下，不会向 Exchange Online 中任何角色组分配此角色。 您可以向“组织管理”角色组添加“邮箱导入导出”角色。 或者可以创建新的角色组，分配邮箱导入导出角色，然后将自己或其他用户添加为成员。 有关详细信息，请参阅[管理 Exchange Online 中的角色组](/Exchange/permissions-exo/role-groups)中的“向角色组添加角色”或“创建角色组”部分。
   
 此外，若要在安全与合规中心创建导入作业，必须满足以下条件之一：
   
@@ -137,11 +137,11 @@ Using network upload to import PST files is free.
   
  **使用驱动器传送将 PST 文件导入到 Microsoft 365 的定价如何？**
   
-使用驱动器传送将 PST 文件导入到 Microsoft 365 邮箱的费用为每 GB 数据 2 美元。 例如，如果发运的硬盘包含 1,000 GB (1 TB) 的 PST 文件，则费用为 2,000 美元。 您可以与合作伙伴共同协作来支付导入费用。 有关查找合作伙伴的信息，请参阅[查找 Microsoft 合作伙伴或经销商](https://go.microsoft.com/fwlink/p/?LinkId=785197)。
+使用驱动器传送将 PST 文件导入到 Microsoft 365 邮箱的费用为每 GB 数据 2 美元。 例如，如果发运的硬盘包含 1,000 GB (1 TB) 的 PST 文件，则费用为 2,000 美元。 您可以与合作伙伴共同协作来支付导入费用。 有关查找合作伙伴的信息，请参阅[查找 Microsoft 合作伙伴或经销商](../admin/manage/find-your-partner-or-reseller.md)。
   
  **哪类硬盘支持驱动器发运？**
   
-仅支持将 2.5 inch solid-state 驱动器 (SSD) 或 2.5 999 或 3.5 inch SATA II/III 内部硬盘与 Office 365 导入服务一起使用。 可使用最多 10 TB 的硬盘。 对于导入作业，仅将处理硬盘上的第一个数据卷。 必须使用 NTFS 格式化数据卷。 将数据复制到硬盘时，可使用 2.5 个接着 SSD 或 2.5 99 分解或 3.5 inch SATA II/III 连接器直接连接，或可使用外部 2.5 缩略 SSD 或 2.5 缩寸或 3.5 缩寸 SATA II/III USB 适应器在外部将其连接。
+仅支持将 2.5 英寸固态硬盘 (SSD) 或 2.5 英寸或 3.5 英寸 SATA II/III 内部硬盘驱动器与 Office 365 导入服务一同使用。 可使用最多 10 TB 的硬盘。 对于导入作业，仅将处理硬盘上的第一个数据卷。 必须使用 NTFS 格式化数据卷。 将数据复制到硬盘驱动器时，可以使用 2.5 英寸 SSD 或 2.5 英寸或 3.5 英寸 SATA II/III 连接器直接连接它，或者可以使用外部 2.5 英寸 SSD 或 2.5 英寸或 3.5 英寸 SATA II/III USB 适配器将其外部连接。
   
 > [!IMPORTANT]
 > Office 365 导入服务中不支持内置 USB 适配器随附的外部硬盘。 此外，无法使用外部硬盘盒内的磁盘。 请不要发运外部硬盘。 
@@ -156,11 +156,11 @@ Using network upload to import PST files is free.
   
  **硬盘驱动器到达 Microsoft 数据中心后，需要多久才能将 PST文件上传到 Azure？**
   
-Microsoft 数据中心收到你的硬盘后，需要 7 到 10 个工作日将 PST 文件上传到你组织的 Azure 存储区域。 PST 文件将上传到名为 `ingestiondata` 的 Azure Blob 容器。 
+在 Microsoft 数据中心收到硬盘驱动器后，需要 7 到 10 个工作日将 PST 文件上传到组织的 Azure 存储区域。 PST 文件将上传到名为 `ingestiondata` 的 Azure Blob 容器。 
   
  **将 PST 文件导入到邮箱需要多长时间？**
   
-将 PST 文件上传到 Azure 存储区域后，Microsoft 365 采用安全方式分析 PST 文件中的数据，确定 PST 文件中所含项目的存在时长以及各种邮件类型。 分析完成后，可以选择将所有数据导入 PST 文件，或设置筛选器控制导入的数据。 开始导入作业后，PST 文件将以每天至少 24 GB 的速度导入到 Microsoft 365 邮箱。 如果此速度不满足你的需求，可能需要考虑采用其他方法将电子邮件数据导入 Office 365。 有关详细信息，请参阅[将多个电子邮件帐户迁移到 Office 365 的方法](https://docs.microsoft.com/Exchange/mailbox-migration/mailbox-migration)。
+将 PST 文件上传到 Azure 存储区域后，Microsoft 365 采用安全方式分析 PST 文件中的数据，确定 PST 文件中所含项目的存在时长以及各种邮件类型。 分析完成后，可以选择将所有数据导入 PST 文件，或设置筛选器控制导入的数据。 开始导入作业后，PST 文件将以每天至少 24 GB 的速度导入到 Microsoft 365 邮箱。 如果此速度不满足你的需求，可能需要考虑采用其他方法将电子邮件数据导入 Office 365。 有关详细信息，请参阅[将多个电子邮件帐户迁移到 Office 365 的方法](/Exchange/mailbox-migration/mailbox-migration)。
   
 如果不同的 PST 文件导入到不同的目标邮箱中，则导入过程将以并行方式进行；也就是说，每个 PST/邮箱对是同时导入的。 同样，如果多个 PST 文件导入到同一个邮箱中，也将同时导入这些文件。
   
@@ -172,7 +172,7 @@ Microsoft 数据中心收到你的硬盘后，需要 7 到 10 个工作日将 PS
   
  **哪个版本的 PST 文件格式支持导入到 Microsoft 365？**
   
-可选两个版本的 PST 文件格式：ANSI 和 Unicode。 建议导入使用 Unicode PST 文件格式的文件。 但是，采用 ANSI PST 文件格式的文件也可以导入到 Microsoft 365，如语言采用双字节字符集 (DBCS) 的文件。 有关导入 ANSI PST 文件的详细信息，请参阅"使用驱动器传送将 PST 文件导入 [到 Office 365"中的步骤](use-drive-shipping-to-import-pst-files-to-office-365.md#step-3-create-the-pst-import-mapping-file)3。
+可选两个版本的 PST 文件格式：ANSI 和 Unicode。 建议导入使用 Unicode PST 文件格式的文件。 但是，采用 ANSI PST 文件格式的文件也可以导入到 Microsoft 365，如语言采用双字节字符集 (DBCS) 的文件。 有关导入 ANSI PST 文件的信息，请参阅使用驱动器寄送将 PST 文件导入 [到 Office 365](use-drive-shipping-to-import-pst-files-to-office-365.md#step-3-create-the-pst-import-mapping-file)中的步骤 3。
   
 此外，来自 Outlook 2007 和更高版本 Outlook 的 PST 文件可导入到 Office 365。
   

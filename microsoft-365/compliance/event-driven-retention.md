@@ -20,16 +20,16 @@ ms.custom:
 - seo-marvel-may2020
 - seo-marvel-jun2020
 description: 通常，它是记录管理解决方案的一部分，你可以配置保留标签以根据所识别的事件开始保留期。
-ms.openlocfilehash: cf8ce1dc2ca77e2ba028d0c35f58cd0ab419b32d
-ms.sourcegitcommit: 5ce64d510b15c6e2df32b78e6086f77156731e3c
+ms.openlocfilehash: 49fe330fa6844361a77caaebb0e6a411297ee643
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "49477621"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50907012"
 ---
 # <a name="start-retention-when-an-event-occurs"></a>从事件发生时开始计算保留期
 
->*[Microsoft 365 安全性与合规性许可指南](https://aka.ms/ComplianceSD)。*
+>*[Microsoft 365 安全性与合规性许可指南](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。*
 
 如果你保留内容，保留期通常是以内容年限为依据。例如，可以先将文档自创建起保留 7 年，再删除它们。不过配置[保留标签](retention.md#retention-labels)时，还能让保留期以特定类型事件何时发生为依据。也就是说，事件触发开始计算保留期，并对所有包含针对相应事件类型应用的保留标签的内容强制执行标签的保留操作。
   
@@ -89,7 +89,7 @@ ms.locfileid: "49477621"
 
 ### <a name="step-1-create-a-label-whose-retention-period-is-based-on-an-event"></a>第 1 步：创建保留期以事件为依据的标签
 
-若要创建和配置保留标签，请使用“[创建和配置保留标签](create-retention-labels.md#create-and-configure-retention-labels)”中的说明。 但是特定于基于事件的保留，在“创建保留标签向导”的“**定义保留设置**”页面上，在“**启动保留期，基于：**”后，从下拉列表中选择一个默认事件类型，或选择“**创建新事件类型**”来自行创建：
+若要创建和配置保留标签，请使用“[创建和配置保留标签](./create-apply-retention-labels.md#create-and-configure-retention-labels)”中的说明。 但是特定于基于事件的保留，在“创建保留标签向导”的“**定义保留设置**”页面上，在“**启动保留期，基于：**”后，从下拉列表中选择一个默认事件类型，或选择“**创建新事件类型**”来自行创建：
 
 ![为保留标签创建新事件类型](../media/SPRetention6.png)
 
@@ -185,24 +185,24 @@ ms.locfileid: "49477621"
 
 可以使用 PowerShell 脚本从业务应用程序中自动执行基于事件的保留。 适用于基于事件的保留的 PowerShell cmdlet：
   
-- [Get-ComplianceRetentionEventType](https://go.microsoft.com/fwlink/?linkid=873002)
+- [Get-ComplianceRetentionEventType](/powershell/module/exchange/get-complianceretentioneventtype)
     
-- [New-ComplianceRetentionEventType](https://go.microsoft.com/fwlink/?linkid=873004)
+- [New-ComplianceRetentionEventType](/powershell/module/exchange/new-complianceretentioneventtype)
     
-- [Remove-ComplianceRetentionEventType](https://go.microsoft.com/fwlink/?linkid=873005)
+- [Remove-ComplianceRetentionEventType](/powershell/module/exchange/remove-complianceretentioneventtype)
     
-- [Set-ComplianceRetentionEventType](https://go.microsoft.com/fwlink/?linkid=873006)
+- [Set-ComplianceRetentionEventType](/powershell/module/exchange/set-complianceretentioneventtype)
     
-- [Get-ComplianceRetentionEvent](https://go.microsoft.com/fwlink/?linkid=873001)
+- [Get-ComplianceRetentionEvent](/powershell/module/exchange/get-complianceretentionevent)
     
-- [New-ComplianceRetentionEvent](https://go.microsoft.com/fwlink/?linkid=873003)
+- [New-ComplianceRetentionEvent](/powershell/module/exchange/new-complianceretentionevent)
     
 
 ## <a name="automate-events-by-using-a-rest-api"></a>使用 REST API 自动触发事件
 
 可使用 REST API 自动创建用于触发保留期开始的事件。
 
-REST API 是一个支持多组 HTTP 操作（方法）的服务终结点，提供对服务资源的创建/检索/更新/删除操作权限。 有关详细信息，请参阅 [REST API 请求/响应组件](https://docs.microsoft.com/rest/api/gettingstarted/#components-of-a-rest-api-requestresponse)。 通过使用 Microsoft 365 REST API，可以使用 POST 和 GET 方法来创建和检索事件。
+REST API 是一个支持多组 HTTP 操作（方法）的服务终结点，提供对服务资源的创建/检索/更新/删除操作权限。 有关详细信息，请参阅 [REST API 请求/响应组件](/rest/api/gettingstarted/#components-of-a-rest-api-requestresponse)。 通过使用 Microsoft 365 REST API，可以使用 POST 和 GET 方法来创建和检索事件。
 
 使用 REST API 有两种选择：
 
@@ -450,4 +450,3 @@ $event = Invoke-RestMethod -Body $body -Method 'POST' -Uri $url -ContentType "ap
 $event | fl *
 
 ```
-

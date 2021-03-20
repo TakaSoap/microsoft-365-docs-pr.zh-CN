@@ -17,22 +17,22 @@ search.appverid:
 - MET150
 ms.custom: seo-marvel-apr2020
 description: 使用在 Exchange Online 中运行 Search-UnifiedAuditLog cmdlet 的 PowerShell 脚本搜索审核日志。 此脚本经过优化，可返回大量（最多 50,000 个）审核记录。 该脚本会将这些记录导出为 CSV 文件，可在 Excel 中使用 Power Query 查看或转换这些文件。
-ms.openlocfilehash: 3d44054d8d1111fe86e06460f5ca4d442d0d1625
-ms.sourcegitcommit: a62ac3c01ba700a51b78a647e2301f27ac437c5a
+ms.openlocfilehash: 7ac3903abffc0bedb28363159c81b1f67a199f32
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/12/2021
-ms.locfileid: "50233326"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50907760"
 ---
 # <a name="use-a-powershell-script-to-search-the-audit-log"></a>使用 PowerShell 脚本搜索审核日志
 
 安全性、合规性和审核成为当今 IT 管理员的首要任务。 Microsoft 365 具有多种内置功能，可帮助组织管理安全性、合规性和审核。 具体来说，统一审核日志记录可以帮助调查安全事件和合规性问题。 可以使用以下方法检索审核日志：
 
-- [Office 365 管理活动 API](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference)
+- [Office 365 管理活动 API](/office/office-365-management-api/office-365-management-activity-api-reference)
 
 - Microsoft 365 合规中心的[审核日志搜索工具](search-the-audit-log-in-security-and-compliance.md)
 
-- Exchange Online PowerShell 中的 [Search-UnifiedAuditLog](https://docs.microsoft.com/powershell/module/exchange/search-unifiedauditlog) cmdle
+- Exchange Online PowerShell 中的 [Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog) cmdle
 
 如果需要定期检索审核日志，应考虑使用 Office 365 管理活动 API 的解决方案，因为它可以为大型组织提供持续检索数百万条审核记录所需的可扩展性和性能。 使用 Microsoft 365 合规中心中的审核日志搜索工具是快速查找较在短时间范围内发生的特定操作的审核记录的好方法。 在审核日志搜索工具中使用较长的时间范围（尤其是对于大型组织），可能会返回过多记录，无法轻松管理或导出。
 
@@ -56,7 +56,7 @@ ms.locfileid: "50233326"
 
 ## <a name="step-1-connect-to-exchange-online-powershell"></a>步骤 1：连接到 Exchange Online PowerShell
 
-第一步是连接到 Exchange Online PowerShell。 可以使用新式身份验证或多重身份验证 (MFA) 进行连接。 有关分步说明，请参阅[连接 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)。
+第一步是连接到 Exchange Online PowerShell。 可以使用新式身份验证或多重身份验证 (MFA) 进行连接。 有关分步说明，请参阅[连接 Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)。
 
 ## <a name="step-2-modify-and-run-the-script-to-retrieve-audit-records"></a>步骤 2：修改并运行脚本以检索审核记录
 
@@ -146,12 +146,12 @@ Write-Host "Script complete! Finished retrieving audit records for the date rang
    |`$logFile`|"d:\temp\AuditSearchLog.txt"|指定日志文件的名称和位置，其中包含有关脚本执行的审核日志搜索的进度信息。 该脚本将 UTC 时间戳写入日志文件。|
    |`$outputFile`|"d:\temp\AuditRecords.csv"|指定包含脚本所返回的审核记录的 CSV 文件的名称和位置。|
    |`[DateTime]$start` 和 `[DateTime]$end`|[DateTime]::UtcNow.AddDays(-1) <br/>[DateTime]::UtcNow|指定审核日志搜索的日期范围。 该脚本将返回指定日期范围内发生的审核活动的记录。 例如，若要返回 2021 年 1 月执行的活动，可使用 `"2021-01-01"` 的开始日期和 `"2021-01-31"` 的结束日期（请确保用双引号括起值）脚本中的示例值将返回过去 24 小时内执行的活动的记录。 如果值中不包含时间戳，则指定日期的默认时间戳为凌晨 12:00（午夜）。|
-   |`$record`|"AzureActiveDirectory"|指定要搜索的审计活动（也称为 *操作*）的记录类型。 此属性指示触发了活动的服务或功能。 有关可用于此变量的记录类型的列表，请参阅[审核日志记录类型](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema#auditlogrecordtype)。 可以使用记录类型名称或 ENUM 值。 <br/><br/>**提示：** 若要返回所有记录类型的审核记录，请使用 `$null` 值（不带双引号）。|
+   |`$record`|"AzureActiveDirectory"|指定要搜索的审计活动（也称为 *操作*）的记录类型。 此属性指示触发了活动的服务或功能。 有关可用于此变量的记录类型的列表，请参阅[审核日志记录类型](/office/office-365-management-api/office-365-management-activity-api-schema#auditlogrecordtype)。 可以使用记录类型名称或 ENUM 值。 <br/><br/>**提示：** 若要返回所有记录类型的审核记录，请使用 `$null` 值（不带双引号）。|
    |`$resultSize`|5000|指定脚本每次调用 **Search-UnifiedAuditLog** cmdlet 时返回的结果数（称为 *结果集*）。 cmdlet 支持的最大值是 5,000。 保留该值。|
    |`$intervalMinutes`|60|为了帮助克服返回 5000 条记录的限制，此变量将采用你指定的数据范围并将其划分到更小的时间间隔中。 现在，每个间隔（并非整个日期范围）都受命令的 5000 条记录输出限制约束。 对于大多数组织来说，日期范围内每 60 分钟间隔 5000 条记录的默认值应该已经足够。 但是，如果脚本返回 `maximum results limitation reached` 的错误，请缩短时间间隔（例如，减少到 30 分钟甚至 15 分钟），然后重新运行脚本。|
    ||||
 
-   上表中列出的大多数变量都对应于 **Search-UnifiedAuditLog** cmdlet 的参数。 有关这些参数的详细信息，请参阅 [Search-UnifiedAuditLog](https://docs.microsoft.com/powershell/module/exchange/search-unifiedauditlog)。
+   上表中列出的大多数变量都对应于 **Search-UnifiedAuditLog** cmdlet 的参数。 有关这些参数的详细信息，请参阅 [Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog)。
 
 3. 在本地计算机上，打开 Windows PowerShell，然后转到保存修改后的脚本的文件夹。
 

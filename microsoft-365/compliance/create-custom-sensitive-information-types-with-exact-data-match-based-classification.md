@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: 了解如何使用基于精确数据匹配的分类来创建自定义敏感信息类型。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 4ce10483f2a2f6e3a461f0ab32eba0ed954cd484
-ms.sourcegitcommit: 89095172c9c4793d56645b4c885ac8e30936bd0a
+ms.openlocfilehash: 583419f6808d5b3d54d1f48d380e5b4110898ded
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50766407"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50908346"
 ---
 # <a name="create-custom-sensitive-information-types-with-exact-data-match-based-classification"></a>使用基于精确数据匹配的分类创建自定义敏感信息类型
 
@@ -46,7 +46,7 @@ ms.locfileid: "50766407"
 
 ![基于 EDM 的分类](../media/EDMClassification.png)
 
-基于 EDM 的分类允许你创建自定义敏感信息类型，它们将引用敏感信息数据库中的精确值。 数据库可以每天刷新一次，最多可包含 1 亿行数据。 因此，当员工、患者或客户往来并且记录发生更改时，你的自定义敏感信息类型仍将保持最新并且适用。 你还可以将基于 EDM 的分类与策略一起使用，例如[数据丢失防护策略](data-loss-prevention-policies.md) (DLP) 或[Microsoft Cloud App Security 文件策略](https://docs.microsoft.com/cloud-app-security/data-protection-policies)。
+基于 EDM 的分类允许你创建自定义敏感信息类型，它们将引用敏感信息数据库中的精确值。 数据库可以每天刷新一次，最多可包含 1 亿行数据。 因此，当员工、患者或客户往来并且记录发生更改时，你的自定义敏感信息类型仍将保持最新并且适用。 你还可以将基于 EDM 的分类与策略一起使用，例如[数据丢失防护策略](data-loss-prevention-policies.md) (DLP) 或[Microsoft Cloud App Security 文件策略](/cloud-app-security/data-protection-policies)。
 
 > [!NOTE]
 > Microsoft 365 信息保护可为以下语言提供双字节字符集语言支持（预览）：
@@ -173,7 +173,7 @@ ms.locfileid: "50766407"
 
 在此示例中，如果同时使用 `caseInsensitive` 和 `ignoredDelimiters`，EDM 会将 **FOO-1234** 和 **fOo#1234** 视为完全相同，并将项目归类为患者记录敏感信息类型。 
 
-4. 使用[连接到安全与合规中心 PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell) 中的步骤连接到安全与合规中心。
+4. 使用[连接到安全与合规中心 PowerShell](/powershell/exchange/connect-to-scc-powershell) 中的步骤连接到安全与合规中心。
 
 5. 要上传数据库架构，请逐一运行下列 cmdlet：
 
@@ -204,7 +204,7 @@ ms.locfileid: "50766407"
 
       设置规则包时，请确保正确引用 .csv 文件和 **edm.xml** 文件。 可复制、修改和使用我们的示例。 在此示例 xml 中，需要对以下字段进行自定义，以创建 EDM 敏感类型：
 
-      - **RulePack id & ExactMatch id**：使用 [New-GUID](https://docs.microsoft.com/powershell/module/microsoft.powershell.utility/new-guid?view=powershell-6) 生成 GUID。
+      - **RulePack id & ExactMatch id**：使用 [New-GUID](/powershell/module/microsoft.powershell.utility/new-guid?view=powershell-6) 生成 GUID。
 
       - **数据存储**：此字段指定要使用的 EDM 查找数据存储。 提供已配置的 EDM 架构的数据源名称。
 
@@ -308,7 +308,7 @@ ms.locfileid: "50766407"
 
 1. 编辑 **edm.mxl** 文件（即本文的 [定义架构](#define-the-schema-for-your-database-of-sensitive-information)部分中讨论的文件）。
 
-2. 使用[连接到安全与合规中心 PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell) 中的步骤连接到安全与合规中心。
+2. 使用[连接到安全与合规中心 PowerShell](/powershell/exchange/connect-to-scc-powershell) 中的步骤连接到安全与合规中心。
 
 3. 要更新数据库架构，请逐一运行下列 cmdlet：
 
@@ -337,7 +337,7 @@ ms.locfileid: "50766407"
 
 （根据需要）若想删除正在对基于 EDM 的分类使用的架构，请按照以下步骤操作：
 
-1. 使用[连接到安全与合规中心 PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell) 中的步骤连接到安全与合规中心。
+1. 使用[连接到安全与合规中心 PowerShell](/powershell/exchange/connect-to-scc-powershell) 中的步骤连接到安全与合规中心。
 
 2. 运行下列 PowerShell cmdlet，用“patient records”的数据存储名称替换要删除的名称：
 
@@ -384,7 +384,7 @@ ms.locfileid: "50766407"
 
 #### <a name="set-up-the-security-group-and-user-account"></a>设置安全组和用户帐户
 
-1. 作为全局管理员，使用相应的 [订阅链接](#portal-links-for-your-subscription)转到管理中心并 [创建安全组](https://docs.microsoft.com/office365/admin/email/create-edit-or-delete-a-security-group?view=o365-worldwide)，名为 **EDM\_DataUploaders**。
+1. 作为全局管理员，使用相应的 [订阅链接](#portal-links-for-your-subscription)转到管理中心并 [创建安全组](/office365/admin/email/create-edit-or-delete-a-security-group?view=o365-worldwide)，名为 **EDM\_DataUploaders**。
 
 2. 将一个或多个用户添加到 **EDM\_DataUploaders** 安全组。 （这些用户将管理敏感信息的数据库。）
 
@@ -505,12 +505,12 @@ ms.locfileid: "50766407"
       > [!NOTE]
       > 如果 .csv 文件的结构（字段名称）未发生更改，则刷新数据时无需对数据库架构文件进行任何更改。 但是，如果必须进行更改，请确保相应地编辑数据库架和规则包。
 
-3. 使用[任务计划程序](https://docs.microsoft.com/windows/desktop/TaskSchd/task-scheduler-start-page)自动执行[创建哈希并上载敏感数据](#part-2-hash-and-upload-the-sensitive-data)流程中的步骤 2 和 3。 你可以使用多种方法来计划任务：
+3. 使用[任务计划程序](/windows/desktop/TaskSchd/task-scheduler-start-page)自动执行[创建哈希并上载敏感数据](#part-2-hash-and-upload-the-sensitive-data)流程中的步骤 2 和 3。 你可以使用多种方法来计划任务：
 
       | 方法             | 需执行的操作 |
       | ---------------------- | ---------------- |
-      | Windows PowerShell     | 请参阅本文中的[计划任务](https://docs.microsoft.com/powershell/module/scheduledtasks/?view=win10-ps)文档和[示例 PowerShell 脚本](#example-powershell-script-for-task-scheduler) |
-      | 任务计划程序 API     | 请参阅[任务计划程序](https://docs.microsoft.com/windows/desktop/TaskSchd/using-the-task-scheduler)文档                                                                                                                                                                                                                                                                                |
+      | Windows PowerShell     | 请参阅本文中的[计划任务](/powershell/module/scheduledtasks/?view=win10-ps)文档和[示例 PowerShell 脚本](#example-powershell-script-for-task-scheduler) |
+      | 任务计划程序 API     | 请参阅[任务计划程序](/windows/desktop/TaskSchd/using-the-task-scheduler)文档                                                                                                                                                                                                                                                                                |
       | Windows 用户界面 | 在 Windows 中单击“**开始**”，然后键入 Task Scheduler。 然后，在结果列表中，右键单击“**任务计划程序**”，然后选择“**以管理员身份运行**”。                                                                                                                                                                                                                                                                           |
 
 #### <a name="example-powershell-script-for-task-scheduler"></a>任务计划程序的示例 PowerShell 脚本
@@ -650,6 +650,6 @@ Register-ScheduledTask -TaskName $taskName -InputObject $scheduledTask -User $us
 - [敏感信息类型属性定义](sensitive-information-type-entity-definitions.md)
 - [了解敏感信息类型](sensitive-information-type-learn-about.md)
 - [DLP 策略概述](data-loss-prevention-policies.md)
-- [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security)
-- [New-DlpEdmSchema](https://docs.microsoft.com/powershell/module/exchange/new-dlpedmschema)
+- [Microsoft Cloud App Security](/cloud-app-security)
+- [New-DlpEdmSchema](/powershell/module/exchange/new-dlpedmschema)
 - [修改精确数据匹配架构，以使用可配置匹配项](sit-modify-edm-schema-configurable-match.md)

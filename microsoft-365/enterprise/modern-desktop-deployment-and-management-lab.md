@@ -15,28 +15,28 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解有关 Windows 和 Office 部署实验室工具包的信息，以及访问的位置。
-ms.openlocfilehash: 9b558ad20a84bc902dd9a4a78ebafdbcecd8a9bb
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: dd066339ccfefdc58eb241bb9fdb69cdd5a458d8
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50288259"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50907452"
 ---
 # <a name="windows-and-office-deployment-lab-kit"></a>Windows 和 Office 部署实验室工具包
 
 Windows 和 Office 部署实验室工具包旨在帮助你规划、测试和验证运行 Windows 10 企业版和 Microsoft 365 企业应用版桌面的部署和管理。 工具包中的实验室包括使用 Microsoft Endpoint Configuration Manager、桌面分析、Office 自定义工具、OneDrive、Windows Autopilot 等。
 
-强烈建议准备升级到 Windows 10 的 Windows 8.1 的组织使用此工具包。 如果你当前使用的是 Windows 10、Microsoft 365 企业应用版 (以前是 Office 365 专业增强版) 或 Office 2019，则也适用。 作为独立环境，生成的实验室非常适合探索部署工具更新和测试与部署相关的自动化。
+强烈建议准备升级到 Windows 10 的 Windows 8.1 的组织使用本工具包。 如果你当前使用的是 Windows 10、Microsoft 365 企业应用版（以前 (Office 365 专业增强版) 或 Office 2019，则适用。 作为隔离环境，生成的实验室非常适合探索部署工具更新和测试与部署相关的自动化。
 
 [下载 Windows 和 Office 部署实验室工具包](https://www.microsoft.com/evalcenter/evaluate-lab-kit)。
 
 ## <a name="a-complete-lab-environment"></a>完整的实验室环境
 
-该工具包可为您提供自动预配的虚拟实验室环境，包括已加入域的桌面客户端、域控制器、Internet 网关和完全配置的 Configuration Manager 实例。 该工具包包含以下产品的最新评估版本：
+该工具包提供自动配置的虚拟实验室环境，包括加入域的桌面客户端、域控制器、Internet 网关和完全配置的 Configuration Manager 实例。 该工具包包含以下产品的最新评估版本：
 
   - 新增内容！ Windows 10 企业版版本 20H2
   - Windows 7 企业版
-  - Microsoft Endpoint Configuration Manager 版本 2010*
+  - Microsoft Endpoint Configuration Manager，版本 2010*
   - 适用于 Windows 10 的 Windows 评估和部署工具包
   - Microsoft Deployment Toolkit
   - Microsoft Application Virtualization (App-V)
@@ -72,12 +72,12 @@ Windows 和 Office 部署实验室工具包旨在帮助你规划、测试和验�
 ### <a name="prepare-applications"></a>准备应用程序    
 
 - Office Toolkit准备情况  
-- Win32 应用程序的 MSIX 打包和转换   
+- WIN32 应用程序的 MSIX 打包和转换   
 
 ### <a name="deploy-windows-10"></a>部署 Windows 10   
 
 - Configuration Manager 中的 OS 部署任务序列
-- Microsoft Deployment Toolkit (MDT) 中的操作系统部署任务序列
+- Microsoft Deployment Toolkit (MDT) 
 - Windows Autopilot
 - 部署和管理新的 Microsoft Edge  
 
@@ -99,19 +99,19 @@ Windows 和 Office 部署实验室工具包旨在帮助你规划、测试和验�
 
 [下载 Windows 和 Office 部署实验室工具包](https://www.microsoft.com/evalcenter/evaluate-lab-kit)。
 
-* 可以使用控制台内更新将已安装的比较基准版本 2002 更新到版本 2010。 请使用宽带宽 Internet 连接下载此内容，并允许 30-45 分钟进行自动预配。 实验室环境至少需要 16 GB 的可用内存和 150 GB 的可用磁盘空间。 为获得最佳性能，建议使用 32 GB 的可用内存和 300 GB 的可用空间。 工具包将于 2021 年 5 月 2 日过期。 新版本将在过期前发布。
+* 可以使用和控制台内更新将安装的基线版本 2002 更新到版本 2010。 请使用宽带宽 Internet 连接下载此内容，并允许 30-45 分钟进行自动预配。 实验室环境至少需要 16 GB 的可用内存和 150 GB 的可用磁盘空间。 为获得最佳性能，建议使用 32 GB 的可用内存和 300 GB 的可用空间。 工具包将于 2021 年 5 月 2 日过期。 新版本将在过期前发布。
 
 ## <a name="additional-guidance"></a>其他指南
 
   - [Microsoft Mechanics 的桌面部署系列视频](https://www.aka.ms/watchhowtoshift)
 
-  - [Microsoft Endpoint Configuration Manager 操作系统部署](https://docs.microsoft.com/mem/configmgr/osd/understand/introduction-to-operating-system-deployment)
+  - [Microsoft Endpoint Configuration Manager 操作系统部署](/mem/configmgr/osd/understand/introduction-to-operating-system-deployment)
 
-  - [Windows 10 部署计划](https://docs.microsoft.com/windows/deployment/planning/index)
+  - [Windows 10 部署计划](/windows/deployment/planning/index)
 
-  - [Microsoft 365 应用部署指南](https://docs.microsoft.com/deployoffice/deployment-guide-microsoft-365-apps)
+  - [Microsoft 365 应用部署指南](/deployoffice/deployment-guide-microsoft-365-apps)
 
-  - [Intune 入门](https://docs.microsoft.com/intune/get-started-evaluation)
+  - [Intune 入门](/intune/get-started-evaluation)
 
 ## <a name="related-resources"></a>相关资源
 

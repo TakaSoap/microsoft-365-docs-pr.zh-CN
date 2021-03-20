@@ -16,12 +16,12 @@ ms.collection:
 description: Office 365 中的安全性, 从 EOP 到 Defender for Office 365 计划 1 和 2, 标准与严格安全配置等。 了解自己拥有的财产以及如何保护财产。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e1c6e768098cd59892c2572fb52497c873aef1a3
-ms.sourcegitcommit: 88ab08c0fa1acbc9e066009e131b9f2b0d506c64
-ms.translationtype: HT
+ms.openlocfilehash: f8e929fde2908ba0d436c71c2caeb1be94b1338f
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "50711936"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50907176"
 ---
 # <a name="office-365-security-overview"></a>Office 365 安全性概览
 
@@ -44,7 +44,7 @@ ms.locfileid: "50711936"
 1. Microsoft Defender for Office 365 计划 2（Defender for Office 计划 2）
 
 > [!NOTE]
-> 如果购买了订阅，并且需要 *立即* 推出安全功能，请跳至[抵御威胁​​](protect-against-threats.md)一文中的步骤。 如果第一次使用订阅，并且想在开始之前了解许可证，请在 [Microsoft 365 管理员中心](https://admin.microsoft.com/AdminPortal/#/homepage)中浏览账单 > 你的产品。
+> 如果购买了订阅，并且需要 *立即* 推出安全功能，请跳至 [抵御威胁​​](protect-against-threats.md)一文中的步骤。 如果第一次使用订阅，并且想在开始之前了解许可证，请在 [Microsoft 365 管理员中心](https://admin.microsoft.com/AdminPortal/#/homepage)中浏览账单 > 你的产品。
 
 Office 365 安全基于 EOP 提供的核心保护创建。 EOP 可用于可找到 Exchange Online 邮箱的任何订阅（请记住此处讨论的所有安全产品均基于云）。
 
@@ -65,7 +65,7 @@ Office 365 安全基于 EOP 提供的核心保护创建。 EOP 可用于可找�
 
 Office 365 安全性的核心是 EOP 保护。 Microsoft Defender for Office 365 P1 中包含 EOP。 Defender for Office 365 P2 中包含 P1 和 EOP。 结构是累积的。 因此，配置此产品时，应先从 EOP 开始，然后是 Defender for Office 365。
 
-虽然电子邮件身份验证配置是在公共 DNS 中进行，但配置此功能有助于防御欺骗至关重要。 *如果拥有 EOP ，* ***应[配置电子邮件身份验证](email-validation-and-authentication.md)***。
+虽然电子邮件身份验证配置是在公共 DNS 中进行，但配置此功能有助于防御欺骗至关重要。 *如果拥有 EOP ，* ***应 [配置电子邮件身份验证](email-validation-and-authentication.md)***。
 
 如果拥有 Office 365 E3 或更低版本，则拥有 EOP，但可以选择通过升级购买单机版 Defender for Office 365 计划 1。 如果拥有 Office 365 E5，则已经拥有 Defender for Office 365 计划 2。
 
@@ -137,7 +137,7 @@ Microsoft Defender for Office 365 计划 1 还添加了 **实时检测** 以进�
 
 - Microsoft Defender for Office 365 计划 1 包含在 Microsoft 365 商业高级版中。
 
-- Microsoft Defender for Office 365 计划 1 和 Defender for Office 365 计划 2 均可用作特定订阅的加载项。 若要了解详细信息，请参阅另一个链接[Microsoft Defender for Office 365 计划的功能可用性](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans)。
+- Microsoft Defender for Office 365 计划 1 和 Defender for Office 365 计划 2 均可用作特定订阅的加载项。 若要了解详细信息，请参阅另一个链接[Microsoft Defender for Office 365 计划的功能可用性](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans)。
 
 - 只有拥有 Microsoft 365 E5 或 Microsoft 365 E5 安全性许可证（未包括在 Microsoft Defender for Office 365 计划内）的用户才能使用[安全文档](safe-docs.md)功能。
 

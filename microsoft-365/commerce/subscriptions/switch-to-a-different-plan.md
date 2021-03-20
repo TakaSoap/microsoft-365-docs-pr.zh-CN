@@ -24,29 +24,29 @@ search.appverid:
 - BEA160
 - GEA150
 ms.assetid: 73318661-8f33-478b-bcc7-fb8d69dbb22a
-description: 了解如何切换到新的 Microsoft 365 for business 订阅。
-ms.openlocfilehash: 1cbdcafc2ef337546f31d2d8f8fc9ef0bf7722f8
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+description: 了解如何切换到新的 Microsoft 365 商业版订阅。
+ms.openlocfilehash: fb0ab9d26a7fe32796307d35af0ed1fc28735fa9
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48647743"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50906224"
 ---
 # <a name="switch-to-a-different-microsoft-365-for-business-plan"></a>切换到其他 Microsoft 365 商业版计划
 
-当您的业务发生变化，或者您需要更多功能时，您可以切换计划。  
+当业务发生变化或需要更多功能时，可以切换计划。  
 
-切换计划最简单的方法是使用管理中心的“**切换计划**”按钮。 但是，在所有情况下都不支持使用 " **切换计划** " 按钮。 在某些情况下，您可能能够手动切换计划。
+切换计划最简单的方法是使用管理中心的“**切换计划**”按钮。 但是， **并非所有情况下都** 支持使用"切换计划"按钮。 在某些情况下，你或许可以手动切换计划。
 
 
-**需要其他内容吗？**
+**需要其他内容？**
 - [取消订阅](cancel-your-subscription.md)
-- [将 Microsoft 365 系列升级到业务订阅](https://support.microsoft.com/office/9322ffb8-a35d-4407-8ebe-ed6ea0859b9f.aspx)
+- [将 Microsoft 365 系列升级到商业版订阅](https://support.microsoft.com/office/9322ffb8-a35d-4407-8ebe-ed6ea0859b9f.aspx)
 - [致电 Microsoft 支持部门](../../admin/contact-support-for-business-products.md)
 
-## <a name="use-the-switch-plans-button"></a>使用 "切换计划" 按钮
+## <a name="use-the-switch-plans-button"></a>使用"切换计划"按钮
 
-使用 " **切换计划** " 按钮时，可以通过购买新计划（您可以将当前计划切换到该计划）的过程，在新计划中自动为所有用户分配许可证，并为您取消旧计划。
+使用"切换计划"按钮时，将引导你完成购买可切换当前计划的新计划的过程，新计划中会自动为所有用户分配许可证，并取消旧计划。
 
 ::: moniker range="o365-worldwide"
 
@@ -66,41 +66,41 @@ ms.locfileid: "48647743"
 
 ::: moniker-end
 
-2. 选择 " **切换计划** " 以查看可用的新计划的列表。
+2. 选择 **"切换** 计划"以查看可用的新计划列表。
 
-    未提供 "[切换计划" 按钮](#the-switch-plans-button-isnt-there)  | [我看不到所需的计划](#i-dont-see-the-plan-i-want)
+    ["切换计划"按钮不存在](#the-switch-plans-button-isnt-there)  | [我看不到想要的计划](#i-dont-see-the-plan-i-want)
 
-3. 选择一个计划以查看每月的新总成本。 请务必阅读 **密钥信息**，然后选择 " **下一步** " 以签出。
+3. 选择一个计划以查看每月的新总成本。 请务必阅读密钥 **信息，然后选择**"下 **一步** "进行签出。
 
-    [帮助我选择新计划](https://go.microsoft.com/fwlink/p/?linkid=842056)。
+    [帮助选择新计划](https://go.microsoft.com/fwlink/p/?linkid=842056)。
 
-4. 如果需要帮助，请选择 "**签出**" 页面上的 "**立即聊天**"。
+4. 如果需要 **帮助，****请在"** 签出"页面上选择"现在聊天"。
 
-    完成签出后，Microsoft 365 将需要几分钟的时间来完成切换。 你可以立即开始使用你的新订阅。
+    完成签出后，Microsoft 365 需要几分钟才能完成切换。 你可以立即开始使用新订阅。
 
-## <a name="the-switch-plans-button-isnt-there"></a>未提供 "切换计划" 按钮
+## <a name="the-switch-plans-button-isnt-there"></a>"切换计划"按钮不存在
 
-如果 " **切换计划** " 按钮不可用，则可以尝试 [手动切换计划](switch-plans-manually.md) 或 [致电支持部门](../../admin/contact-support-for-business-products.md)。 有关详细信息，请参阅 [为什么我无法切换计划？](why-can-t-i-switch-plans.md)
+如果 **切换计划** 按钮不可用，可以尝试手动切换 [计划或](switch-plans-manually.md)[致电支持](../../admin/contact-support-for-business-products.md)人员。 有关详细信息，请参阅 [为什么我无法切换计划？](why-can-t-i-switch-plans.md)
   
-以下是可能会发生这种情况的原因：
+以下是发生这种情况的原因：
   
-- 你正在使用多个 Microsoft 365 计划。 仅当所有用户订阅同一计划时，才能使用 " **切换计划** " 按钮。
+- 你正在使用多个 Microsoft 365 计划。 只有当所有用户订阅同一个 **计划** 时，你才能使用切换计划按钮。
 
 - 你已在使用 Office 365 企业版 E5，因此你已拥有 Office 365 中提供的所有功能。
 
-## <a name="i-dont-see-the-plan-i-want"></a>我看不到所需的计划
+## <a name="i-dont-see-the-plan-i-want"></a>我看不到想要的计划
 
-使用 " **切换计划** " 按钮时，您可以切换到的计划将根据当前计划中的服务显示。 您只能使用 " **切换计划** " 按钮切换到具有相同数据相关服务的计划，或切换到更高版本。 这可确保在切换期间，用户不会丢失与这些服务相关的数据。
+使用" **切换计划"** 按钮时，可切换到的计划将基于当前计划中的服务显示。 只能使用" **切换** 计划"按钮切换到具有相同数据相关服务的计划，或切换到较高版本。 这可确保在切换期间，用户不会丢失与这些服务相关的数据。
   
-若要在切换前比较计划，请参阅 [Microsoft 365 for business 产品比较](https://go.microsoft.com/fwlink/p/?linkid=842056) 页。 有关技术规范的详细说明，请参阅 [Microsoft 365 服务说明](https://go.microsoft.com/fwlink/p/?linkid=842275)。
+若要在切换前比较计划，请参阅 [Microsoft 365 商业版产品比较](https://go.microsoft.com/fwlink/p/?linkid=842056) 页。 有关技术规范，请参阅 [Microsoft 365 服务说明](/office365/servicedescriptions/office-365-service-descriptions-technet-library)。
   
-如果要使用较少的服务切换到计划，则可以 [手动切换计划](switch-plans-manually.md)，也可以 [致电 Microsoft 支持部门](../../admin/contact-support-for-business-products.md) 寻求帮助。
+如果要切换到服务较少的计划，可以手动切换计划，或致电[](switch-plans-manually.md)[Microsoft 支持](../../admin/contact-support-for-business-products.md)部门寻求帮助。
   
 ## <a name="why-some-switches-take-longer"></a>为什么某些开关需要更长时间
 
- **切换计划时的信用检查**：如果通过发票支付或达到某一特定成本水平，可能需要进行信用检查。 信用检查最长可能需要两个工作日。 用户将拥有对其当前计划的完全访问权限，直到你将其切换到新计划。
+ **切换计划时进行** 信用检查：如果你通过发票支付，或达到一定的成本级别，可能需要进行信用检查。 信用检查最多可能需要两个工作日。 在切换到新计划之前，用户将拥有对当前计划的完全访问权限。
   
- **非盈利状态的验证**：通常需要30天才能完成非盈利状态的验证过程。 如果超过30天，请联系支持人员。
+ **验证非盈利状态**：通常需要 30 天才能完成您的非营利组织状态的验证过程。 如果已过 30 天，请联系支持人员。
   
 ## <a name="call-support-to-help-you-switch-plans"></a>致电支持部门，获取切换计划的支持
 

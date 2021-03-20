@@ -20,19 +20,19 @@ search.appverid:
 - MET150
 - MOE150
 description: 了解如何在 Microsoft 365 管理中心中填充来宾用户列表。
-ms.openlocfilehash: 7610e22be5cf229c9c0b71dd1282f8138452fe67
-ms.sourcegitcommit: eac5d9f759f290d3c51cafaf335a1a1c43ded927
+ms.openlocfilehash: f7baf3f9714df49d045579a66bc947f394e1eda0
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50126089"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50906332"
 ---
 # <a name="guest-users-in-microsoft-365-admin-center"></a>Microsoft 365 管理中心中的来宾用户
 
-添加到 Microsoft Teams、SharePoint 或 Azure Active Directory 的任何来宾也会添加到Microsoft 管理中心的来宾用户列表中。 来宾可以在受邀加入的 Teams 中参加会议、查看文档和聊天。
-一旦用户显示在"来宾用户"列表中，你可以删除其访问权。
+添加到 Microsoft Teams、SharePoint 或 Azure Active Directory 的任何来宾也会添加到Microsoft 管理中心中的来宾用户列表中。 来宾可以在受邀加入的 Teams 中参加会议、查看文档和聊天。
+一旦用户显示在" **来宾用户"** 列表中，你可以从该列表中删除其访问权限。
 
-若要查看来宾用户，在 Microsoft 365 管理中心中的左侧导航中，展开"用户"，然后选择"**来宾用户"。**
+若要查看来宾用户，在 Microsoft 365 管理中心的左侧导航中，展开"用户"，然后选择"**来宾用户"。**
 
 ## <a name="add-guests-to-teams"></a>将来宾添加到 Teams
 
@@ -48,17 +48,17 @@ ms.locfileid: "50126089"
 
 ## <a name="add-guests-in-azure-active-directory"></a>在 Azure Active Directory 中添加来宾
 
-若要在 Azure Active Directory 中添加来宾，请参阅 [添加来宾用户](https://docs.microsoft.com/azure/active-directory/b2b/b2b-quickstart-add-guest-users-portal)。
+若要在 Azure Active Directory 中添加来宾，请参阅 [添加来宾用户](/azure/active-directory/b2b/b2b-quickstart-add-guest-users-portal)。
 
-添加用户后，还可以将其分配给组，或授予他们访问组织中应用的访问权限。 在 Azure AD 门户中添加用户后，该用户还将在 Microsoft 365 管理中心的"来宾用户"页面上列出。 
-将用户添加到来宾 **用户列表后**，他们可添加到 Microsoft [](../create-groups/manage-guest-access-in-groups.md#add-guests-to-a-microsoft-365-group-from-the-admin-center) 365 管理中心中的组。
+添加用户后，还可以将其分配给组，或授予他们访问组织中应用的访问权限。 在 Azure AD 门户中添加用户后，该用户也将在 Microsoft 365 管理中心的来宾用户页面上列出。 
+将用户添加到来宾用户 **列表** 后，他们可添加到 Microsoft [](../create-groups/manage-guest-access-in-groups.md#add-guests-to-a-microsoft-365-group-from-the-admin-center) 365 管理中心中的组。
 
-请参阅 [批量添加来宾](https://docs.microsoft.com/azure/active-directory/b2b/tutorial-bulk-invite) 以邀请多个来宾与组织协作。
+请参阅 [批量添加来宾以](/azure/active-directory/b2b/tutorial-bulk-invite) 邀请多个来宾与组织协作。
 
 
 ## <a name="remove-a-guest"></a>删除来宾
 
-1. 在 Microsoft 365 管理中心中，展开 **"用户**"，然后选择"**来宾用户"。**
-1. 在 **"来宾用户"** 页上，选择要删除的用户，然后选择"**删除用户"。** 
+1. 在 Microsoft 365 管理中心，展开"**用户"，** 然后选择"**来宾用户"。**
+1. 在"**来宾用户"** 页面上，选择要删除的用户，然后选择"**删除用户"。** 
 
-若要在 Azure AD 门户中删除用户，请参阅 [删除来宾用户和资源](https://docs.microsoft.com/azure/active-directory/b2b/b2b-quickstart-add-guest-users-portal#clean-up-resources)。
+若要在 Azure AD 门户中删除用户，请参阅 [删除来宾用户和资源](/azure/active-directory/b2b/b2b-quickstart-add-guest-users-portal#clean-up-resources)。

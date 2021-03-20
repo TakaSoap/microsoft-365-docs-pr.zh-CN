@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 'Microsoft 365 终结点数据丢失防护可将对文件活动的监视和针对这些文件的保护措施扩展到终结点。 在 Microsoft 365 合规解决方案中将文件设为可见 '
-ms.openlocfilehash: c4f0d10808d564fc0ee19510c25d33caba0471ff
-ms.sourcegitcommit: 06d9e056eabfbac8fafe66cc32907b33d4ae8253
+ms.openlocfilehash: d4a3fef03322912bf169cd195984a17d8dfe3b17
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50741583"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50907046"
 ---
 # <a name="learn-about-microsoft-365-endpoint-data-loss-prevention"></a>了解 Microsoft 365 终结点数据丢失防护
 
@@ -95,7 +95,7 @@ Microsoft 终结点 DLP 使你可以审核和管理用户对运行 Windows 10 �
 
  使用 [Microsoft 365 终结点 DLP入门](endpoint-dlp-getting-started.md)中的程序载入设备。
 
-如果你已通过 [Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/) 加入设备，则这些设备将自动显示在设备列表中。
+如果你已通过 [Microsoft Defender for Endpoint](/windows/security/threat-protection/) 加入设备，则这些设备将自动显示在设备列表中。
 
 > [!div class="mx-imgBorder"]
 > ![托管设备列表](../media/endpoint-dlp-learn-about-2-device-list.png)
@@ -163,5 +163,5 @@ Microsoft 终结点 DLP 使你可以审核和管理用户对运行 Windows 10 �
 - [数据丢失防护概述](data-loss-prevention-policies.md)
 - [创建、测试和优化 DLP 策略](create-test-tune-dlp-policy.md)
 - [活动资源管理器入门](data-classification-activity-explorer.md)
-- [Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/)
+- [Microsoft Defender for Endpoint](/windows/security/threat-protection/)
 - [内部风险管理](insider-risk-management.md)

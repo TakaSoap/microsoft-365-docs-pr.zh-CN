@@ -1,7 +1,7 @@
 ---
 title: 高级搜寻架构中的 DeviceNetworkInfo 表
 description: 了解高级搜寻架构的 DeviceNetworkInfo 表中的网络配置信息
-keywords: 高级搜寻， 威胁搜寻， 网络威胁搜寻， Microsoft 威胁防护， microsoft 365， mtp， m365， 搜索， 查询， 遥测， 架构参考， kusto， 表， 列， 数据类型， 说明， machinenetworkinfo， DeviceNetworkInfo， 设备， 计算机， mac， ip， 适配器， dns， dhcp， 网关， 隧道
+keywords: 高级搜寻， 威胁搜寻， 网络威胁搜寻， Microsoft 威胁防护， microsoft 365， mtp， m365， 搜索， 查询， 遥测， 架构参考， kusto， 表格， 列， 数据类型， 说明， machinenetworkinfo， DeviceNetworkInfo， 设备， 计算机， mac， ip， 适配器， dns， dhcp， 网关， 隧道
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 9e2657631eb2ba8c784f38f76fad46166a450bf0
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 3e3b657d1c33e411f38a8f583adb96139cc85207
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49931202"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50907392"
 ---
 # <a name="devicenetworkinfo"></a>DeviceNetworkInfo
 
@@ -37,7 +37,7 @@ ms.locfileid: "49931202"
 
 
 
-高级搜寻架构中的表包含有关计算机网络配置的信息，包括网络适配器、IP 和 MAC 地址以及连接的 `DeviceNetworkInfo` 网络或域。 [](advanced-hunting-overview.md) 使用此参考来构建从此表返回信息的查询。
+高级 `DeviceNetworkInfo` 搜寻 [架构中的](advanced-hunting-overview.md) 表包含有关计算机网络配置的信息，包括网络适配器、IP 和 MAC 地址以及连接的网络或域。 使用此参考来构建从此表返回信息的查询。
 
 有关高级搜寻架构中其他表的信息，请[参阅高级搜寻参考](advanced-hunting-schema-tables.md)。
 
@@ -46,13 +46,13 @@ ms.locfileid: "49931202"
 | `Timestamp` | datetime | 记录事件的日期和时间 |
 | `DeviceId` | string | 服务中的计算机的唯一标识符 |
 | `DeviceName` | string | 计算机的完全限定域名 (FQDN) |
-| `ReportId` | long | 基于重复计数器的事件标识符。 若要标识唯一事件，此列必须与 DeviceName 和时间戳列一起使用 |
+| `ReportId` | long | 基于重复计数器的事件标识符。 若要标识唯一事件，此列必须与 DeviceName 和 Timestamp 列一起使用 |
 | `NetworkAdapterName` | string | 网络适配器的名称 |
 | `MacAddress` | string | 网络适配器的 MAC 地址 |
-| `NetworkAdapterType` | string | 网络适配器类型。 有关可能的值，请参阅 [此枚举](https://docs.microsoft.com/dotnet/api/system.net.networkinformation.networkinterfacetype?view=netframework-4.7.2) |
-| `NetworkAdapterStatus` | string | 网络适配器的运行状态。 有关可能的值，请参阅 [此枚举](https://docs.microsoft.com/dotnet/api/system.net.networkinformation.operationalstatus?view=netframework-4.7.2) |
+| `NetworkAdapterType` | string | 网络适配器类型。 有关可能的值，请参阅 [此枚举](/dotnet/api/system.net.networkinformation.networkinterfacetype?view=netframework-4.7.2) |
+| `NetworkAdapterStatus` | string | 网络适配器的运行状态。 有关可能的值，请参阅 [此枚举](/dotnet/api/system.net.networkinformation.operationalstatus?view=netframework-4.7.2) |
 | `TunnelType` | string | 隧道协议（如果接口用于此目的，例如 6to4、Teredo、ISATAP、PPTP、SSTP 和 SSH） |
-| `ConnectedNetworks` | string | 适配器连接到的网络。 每个 JSON 数组都包含网络名称、 (公共、专用或域) 、说明和指示其是否公开连接到 Internet 的标志 |
+| `ConnectedNetworks` | string | 适配器连接到的网络。 每个 JSON 数组都包含网络名称、类别 (公共、专用或域) 、说明以及指示其是否公开连接到 Internet 的标志 |
 | `DnsAddresses` | string | JSON 数组格式的 DNS 服务器地址 |
 | `IPv4Dhcp` | string | DHCP 服务器的 IPv4 地址 |
 | `IPv6Dhcp` | string | DHCP 服务器的 IPv6 地址 |

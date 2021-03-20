@@ -15,13 +15,13 @@ ms.collection:
 f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
-description: 本文将介绍混合新式验证以及用于本地 Skype for Business 和 Exchange 服务器的先决条件。
-ms.openlocfilehash: b9b48f591f74bd508b20a851ec48a0d7132d6a84
-ms.sourcegitcommit: 8e696c084d097520209c864140af11aa055b979e
+description: 本文将介绍混合新式验证，以及用于本地 Skype for Business 和 Exchange 服务器的先决条件。
+ms.openlocfilehash: 33bcf9bde2cda0388160337d3ffe6b81ab94eb12
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "50097100"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50907524"
 ---
 # <a name="hybrid-modern-authentication-overview-and-prerequisites-for-using-it-with-on-premises-skype-for-business-and-exchange-servers"></a>混合新式验证概述以及将其与本地 Skype for Business和 Exchange 服务器一起使用的先决条件
 
@@ -48,7 +48,7 @@ _新式验证_ 是一种标识管理，它提供更安全的用户身份验证�
 
 请注意，由于 Skype for Business 与 Exchange 紧密合作，因此 Skype for Business 客户端用户将看到的登录行为将受 Exchange 的新式验证状态影响。 如果你具有 Skype for Business _拆分域_ 混合体系结构，你在其中同时拥有本地 Skype for Business Online 和本地 Skype for Business，并且用户同时位于两个位置，则此方式也适用。
 
-有关 Office 365 中的新式身份验证详细信息，请参阅 [Office 365 客户端应用支持 - 多重身份验证](microsoft-365-client-support-multi-factor-authentication.md)。
+有关 Office 365 中的新式验证详细信息，请参阅 [Office 365 客户端应用支持 - 多重身份验证](microsoft-365-client-support-multi-factor-authentication.md)。
 
 > [!IMPORTANT]
 > 自 2017 年 8 月起，包括 Skype for Business Online 和 Exchange Online 在内的所有新 Office 365 租户都将默认启用新式验证。 既有租户的默认 MA 状态不会发生变化，但是所有新租户都会自动支持上面列出的一组扩展身份功能。 若要查看你的 MA 状态，请参阅[检查本地环境的新式验证状态](hybrid-modern-auth-overview.md#BKMK_CheckStatus)部分。
@@ -67,7 +67,7 @@ _新式验证_ 是一种标识管理，它提供更安全的用户身份验证�
 哪些方面没有发生更改？ 无论你是在拆分域混合环境还是在本地使用 Skype for Business 和 Exchange 服务器，所有用户都必须首先在 *本地* 进行身份验证。 在新式验证的混合实施中，_Lyncdiscovery_ 和 _Autodiscovery_ 都指向本地服务器。
 
 > [!IMPORTANT]
-> 如果你需要了解 MA 支持的特定 Skype for Business 拓扑，请在[此处](https://technet.microsoft.com/library/mt803262.aspx)进行文档说明。
+> 如果你需要了解 MA 支持的特定 Skype for Business 拓扑，请在[此处](/skypeforbusiness/plan-your-deployment/modern-authentication/topologies-supported)进行文档说明。
 
 ## <a name="check-the-modern-authentication-status-of-your-on-premises-environment"></a>检查本地环境的新式验证状态
 <a name="BKMK_CheckStatus"> </a>
@@ -80,7 +80,7 @@ Get-OrganizationConfig | ft OAuth*
 
 如果 _OAuth2ClientProfileEnabled_ 属性的值为 **False**，则可以进行新式验证。
 
-有关 OrganizationConfig cmdlet 的详细信息，请参阅 [OrganizationConfig](https://docs.microsoft.com/powershell/module/exchange/get-organizationconfig)。
+有关 OrganizationConfig cmdlet 的详细信息，请参阅 [OrganizationConfig](/powershell/module/exchange/get-organizationconfig)。
 
 可以通过运行以下 PowerShell 命令来检查 Skype for Business 服务器：
 
@@ -90,7 +90,7 @@ Get-CSOAuthConfiguration
 
 如果命令返回空的 _OAuthServers_ 属性，或者如果 _ClientADALAuthOverride_ 属性的值不是 **Allowed**，则表示新式验证已禁用。
 
-有关 CsOAuthConfiguration cmdlet 的详细信息，请参阅 [CsOAuthConfiguration](https://docs.microsoft.com/powershell/module/skype/get-csoauthconfiguration)。
+有关 CsOAuthConfiguration cmdlet 的详细信息，请参阅 [CsOAuthConfiguration](/powershell/module/skype/get-csoauthconfiguration)。
 
 ## <a name="do-you-meet-modern-authentication-prerequisites"></a>是否满足新式验证先决条件？
 
@@ -108,7 +108,7 @@ Get-CSOAuthConfiguration
   - 最多具有两个不同服务器版本的部署，如下所示：
     - Skype for Business Server 2015
     - Skype for Business Server 2019
-  - 所有 Skype for Business 服务器都必须安装最新的累积更新，请参阅 [Skype for Business服务器更新](https://docs.microsoft.com/skypeforbusiness/sfb-server-updates)以查找和管理所有可用更新。
+  - 所有 Skype for Business 服务器都必须安装最新的累积更新，请参阅 [Skype for Business服务器更新](/skypeforbusiness/sfb-server-updates)以查找和管理所有可用更新。
   - 混合环境中没有 Lync Server 2010 或 2013。
 
 >[!NOTE]
@@ -136,29 +136,29 @@ Get-CSOAuthConfiguration
   - 你正在使用 Exchange Server 2013 CU19 及更高版本、Exchange Server 2016 CU8 及更高版本或 Exchange Server 2019 CU1 及更高版本。
   - 环境中没有 Exchange server 2010。
   - 未配置 SSL 卸载。 支持 SSL 终止和重新加密。
-  - 如果你的环境利用代理服务器基础结构来允许服务器连接到 Internet，请确保所有 Exchange 服务器都具有 [InternetWebProxy ](https://technet.microsoft.com/library/bb123716%28v=exchg.160%29.aspx) 属性中定义的代理服务器。
+  - 如果你的环境利用代理服务器基础结构来允许服务器连接到 Internet，请确保所有 Exchange 服务器都具有 [InternetWebProxy ](/powershell/module/exchange/set-exchangeserver) 属性中定义的代理服务器。
 
 - **混合 Office 365 环境中的本地 Exchange Server**
 
   - 如果你使用的是 Exchange Server 2013，则必须有至少一台服务器安装了邮箱和客户端访问服务器角色。 虽然可以在单独的服务器上安装邮箱和客户端访问角色，但我们强烈建议你在同一服务器上安装这两个角色，这样可以提供额外的可靠性和更好的性能。
   - 如果你使用的是 Exchange Server 2016 或更高版本，则必须有至少一台服务器安装了邮箱服务器角色。
   - 混合环境中没有 Exchange server 2007 或 2010。
-  - 所有 Exchange 服务器都必须安装最新的累积更新，请参阅 [将 Exchange 升级到最新累积更新](https://docs.microsoft.com/exchange/plan-and-deploy/install-cumulative-updates)以查找和管理所有可用更新。
+  - 所有 Exchange 服务器都必须安装最新的累积更新，请参阅 [将 Exchange 升级到最新累积更新](/exchange/plan-and-deploy/install-cumulative-updates)以查找和管理所有可用更新。
 
 - **Exchange 客户端和协议要求**
 
-    新式验证的可用性由客户端、协议和配置的组合决定。 如果客户端、协议和/或配置不支持新式验证，则客户端将继续利用旧式身份验证。
+    新式验证的可用性由客户端、协议和配置的组合决定。 如果客户端、协议和/或配置不支持新式验证，则客户端将继续利用旧身份验证。
   
-    在环境中启用新式验证时，以下客户端和协议支持使用本地 Exchange 进行新式验证：
+    在环境中启用新式验证时，以下客户端和协议支持使用内部部署 Exchange 进行新式验证：
 
   |**客户端**|**主协议**|**备注**|
   |:-----|:-----|:-----|
-  |Outlook 2013 及更高版本  <br/> |MAPI over HTTP  <br/> |必须在 Exchange 中启用 MAPI over HTTP，以对这些客户端使用新式验证（对于新安装的 Exchange 2013 Service Pack 1 和更高版本，通常已启用或为“True”）；有关详细信息，请参阅[如何将新式验证用于 Office 2013 和 Office 2016 客户端应用](modern-auth-for-office-2013-and-2016.md)。  <br/> 确保运行的是最低要求的 Outlook 内部版本；请参阅[使用 Windows Installer (MSI) 的 Outlook 版本的最新更新](https://docs.microsoft.com/officeupdates/outlook-updates-msi)。  <br/> |
+  |Outlook 2013 及更高版本  <br/> |MAPI over HTTP  <br/> |必须在 Exchange 中启用 MAPI over HTTP，以对这些客户端使用新式验证（对于新安装的 Exchange 2013 Service Pack 1 和更高版本，通常已启用或为“True”）；有关详细信息，请参阅[如何将新式验证用于 Office 2013 和 Office 2016 客户端应用](modern-auth-for-office-2013-and-2016.md)。  <br/> 确保运行的是最低要求的 Outlook 内部版本；请参阅[使用 Windows Installer (MSI) 的 Outlook 版本的最新更新](/officeupdates/outlook-updates-msi)。  <br/> |
   |Outlook 2016 for Mac 及更高版本  <br/> |Exchange Web 服务  <br/> |  <br/> |
-  |Outlook for iOS 和 Outlook for Android  <br/> | Microsoft 同步技术 <br/> |有关详细信息，请参阅[将混合新式验证用于 Outlook for iOS 和 Outlook for Android](https://docs.microsoft.com/Exchange/clients/outlook-for-ios-and-android/use-hybrid-modern-auth)。  <br/> |
+  |Outlook for iOS 和 Outlook for Android  <br/> | Microsoft 同步技术 <br/> |有关详细信息，请参阅[将混合新式验证用于 Outlook for iOS 和 Outlook for Android](/Exchange/clients/outlook-for-ios-and-android/use-hybrid-modern-auth)。  <br/> |
   |Exchange ActiveSync 客户端（例如，iOS11 邮件）  <br/> |Exchange ActiveSync  <br/> |对于支持新式验证的 Exchange ActiveSync 客户端，必须重新创建配置文件才能从基本身份验证切换到新式验证。  <br/> |
 
-    未列出的客户端和/或协议 (例如，POP3) 不支持使用本地 Exchange 进行新式验证，并且即使在环境中启用了新式身份验证之后，仍继续使用旧身份验证机制。
+    未列出的客户端和/或协议 (例如 POP3) 不支持使用内部部署 Exchange 的新式验证，并且即使在环境中启用了新式验证之后，仍继续使用旧身份验证机制。
 
 - **一般先决条件**
   - 资源林方案将需要与帐户林的双向信任，以确保在混合新式身份验证请求期间执行正确的 SID 查找。 
@@ -167,7 +167,7 @@ Get-CSOAuthConfiguration
   - 已配置 Azure AD Connect 并可正常进行用户复制和同步。
   - 已验证已使用 Exchange 经典混合拓扑模式在本地和 Office 365 环境之间配置了混合部署。 Exchange混合部署的官方支持声明指明必须拥有当前 CU 或当前 CU-1。
     > [!NOTE]
-    > [混合代理](https://docs.microsoft.com/exchange/hybrid-deployment/hybrid-agent)不支持混合新式验证。
+    > [混合代理](/exchange/hybrid-deployment/hybrid-agent)不支持混合新式验证。
 
   - 确保本地测试用户以及 Office 365 中的混合测试用户都可以登录到 Skype for Business 桌面客户端（如果要对 Skype 使用新式验证）和 Microsoft Outlook（如果要对 Exchange 使用新式验证）。
 
@@ -181,6 +181,6 @@ Get-CSOAuthConfiguration
 <a name="BKMK_URLListforMA"> </a>
 
 - [如何配置本地 Exchange Server 以使用新式验证](configure-exchange-server-for-hybrid-modern-authentication.md)
-- [新式验证支持的 Skype for Business 拓扑](https://technet.microsoft.com/library/mt803262.aspx)
+- [新式验证支持的 Skype for Business 拓扑](/skypeforbusiness/plan-your-deployment/modern-authentication/topologies-supported)
 - [如何配置本地 Skype for Business 以使用新式验证](configure-skype-for-business-for-hybrid-modern-authentication.md)
 - [从 Skype for Business 和 Exchange 删除或禁用混合新式验证](remove-or-disable-hybrid-modern-authentication-from-skype-for-business-and-excha.md)

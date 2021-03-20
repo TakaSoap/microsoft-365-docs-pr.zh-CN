@@ -20,13 +20,13 @@ ms.custom:
 ms.reviewer: sstewart
 search.appverid:
 - MET150
-description: 了解如何使用页面诊断工具在 SharePoint Online 新式网站页面中优化页面权重。
-ms.openlocfilehash: 64fb3c90db78a23c7f1c3fcfe604c8ef58703be0
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+description: 了解如何使用页面诊断工具优化 SharePoint Online 新式网站页面中的页面权重。
+ms.openlocfilehash: 780d8ca0debbc5efb834f8f3543b9a5a8d168108
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46687637"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50907440"
 ---
 # <a name="optimize-page-weight-in-sharepoint-online-modern-site-pages"></a>在 SharePoint Online 新式网页上优化页面权重
 
@@ -35,7 +35,7 @@ SharePoint Online 新式网页包括呈现导航/命令栏下内容区域中的�
 本文将帮助你了解如何减少新式页面中的页面权重。
 
 >[!NOTE]
->要详细了解 SharePoint Online 新式门户中的性能，请参阅[新式 SharePoint 体验中的性能](https://docs.microsoft.com/sharepoint/modern-experience-performance)。
+>要详细了解 SharePoint Online 新式门户中的性能，请参阅[新式 SharePoint 体验中的性能](/sharepoint/modern-experience-performance)。
 
 ## <a name="use-the-page-diagnostics-for-sharepoint-tool-to-analyze-page-weight"></a>使用适用于 SharePoint 的页面诊断工具分析页面权重
 
@@ -44,7 +44,7 @@ SharePoint Online 新式网页包括呈现导航/命令栏下内容区域中的�
 >[!NOTE]
 >页面诊断工具仅适用于 SharePoint Online，无法用于 SharePoint 系统页面。
 
-通过适用于 SharePoint 的页面诊断工具分析 SharePoint 网页时，可在“_诊断测试_”窗格的“**页面权重小于 500KB **”结果中查看页面相关信息。 如果页面权重低于基线值，则结果将显示为绿色；如果页面权重大于基线值，则结果显示为红色。
+通过适用于 SharePoint 的页面诊断工具分析 SharePoint 网页时，可在“_诊断测试_”窗格的“**页面权重小于 500KB**”结果中查看页面相关信息。 如果页面权重低于基线值，则结果将显示为绿色；如果页面权重大于基线值，则结果显示为红色。
 
 可能的结果包括：
 
@@ -68,7 +68,7 @@ SharePoint Online 新式网页包括呈现导航/命令栏下内容区域中的�
 
 可在以下文章中找到有关限制权重的其他指南：
 
-- [优化 SharePoint 中的页面性能](https://docs.microsoft.com/sharepoint/dev/general-development/optimize-page-performance-in-sharepoint)
+- [优化 SharePoint 中的页面性能](/sharepoint/dev/general-development/optimize-page-performance-in-sharepoint)
 
 在修改页面来修正性能问题之前，请在分析结果中记下页面加载时间。 修改后再次运行工具，查看新结果是否在基线标准范围内，同时检查新的页面加载时间，查看是否有提升。
 
@@ -83,7 +83,7 @@ SharePoint Online 新式网页包括呈现导航/命令栏下内容区域中的�
 
 [优化 Office 365 性能](tune-microsoft-365-performance.md)
 
-[新式 SharePoint 体验中的性能](https://docs.microsoft.com/sharepoint/modern-experience-performance)
+[新式 SharePoint 体验中的性能](/sharepoint/modern-experience-performance)
 
 [内容分发网络](content-delivery-networks.md)
 

@@ -21,12 +21,12 @@ ms.assetid: 53390468-eec6-45cb-b6cd-7511f9c909e4
 ms.custom:
 - seo-marvel-apr2020
 description: 使用 Microsoft 合规中心的“内容搜索”工具，搜索各种 Microsoft 365 服务中的内容。
-ms.openlocfilehash: b497c584dce02279e0d2a0e68a8f5ada415164e5
-ms.sourcegitcommit: cbe8724bd71d1c002395d98f1451c5f578c824f9
+ms.openlocfilehash: 2e9dcde65a4f2728782fd300f962dfb3e80ed3c9
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49988202"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50908624"
 ---
 # <a name="content-search"></a>内容搜索
 
@@ -228,9 +228,9 @@ ms.locfileid: "49988202"
   
 ### <a name="searching-onedrive-accounts"></a>搜索 OneDrive 帐户
 
-- 若要收集组织中的 OneDrive 网站 URL 列表，请参阅[在组织中创建所有 OneDrive 位置的列表](https://docs.microsoft.com/onedrive/list-onedrive-urls)。 本文中的脚本将创建包含所有 OneDrive 网站的文本文件。 若要运行此脚本，必须安装并使用 SharePoint Online Management Shell。 请务必将你组织的 MySite 域的 URL 附加到你想要搜索的每个 OneDrive 网站。 这是包含你所有的 OneDrive 的域；例如，`https://contoso-my.sharepoint.com`。 下面是用户的 OneDrive 网站的 URL 示例：`https://contoso-my.sharepoint.com/personal/sarad_contoso_onmicrosoft.com`。
+- 若要收集组织中的 OneDrive 网站 URL 列表，请参阅[在组织中创建所有 OneDrive 位置的列表](/onedrive/list-onedrive-urls)。 本文中的脚本将创建包含所有 OneDrive 网站的文本文件。 若要运行此脚本，必须安装并使用 SharePoint Online Management Shell。 请务必将你组织的 MySite 域的 URL 附加到你想要搜索的每个 OneDrive 网站。 这是包含你所有的 OneDrive 的域；例如，`https://contoso-my.sharepoint.com`。 下面是用户的 OneDrive 网站的 URL 示例：`https://contoso-my.sharepoint.com/personal/sarad_contoso_onmicrosoft.com`。
     
-    在某用户的用户主体名称 (UPN) 发生更改的情况下（这种情况很罕见），其 OneDrive 位置的 URL 将发生更改，以包含新的 UPN。 如果发生这种情况，则必须通过添加该用户的新 OneDrive URL 并删除旧 URL 来修改内容搜索。 有关详细信息，请参阅 [UPN 更改如何影响 OneDrive URL](https://docs.microsoft.com/onedrive/upn-changes)。
+    在某用户的用户主体名称 (UPN) 发生更改的情况下（这种情况很罕见），其 OneDrive 位置的 URL 将发生更改，以包含新的 UPN。 如果发生这种情况，则必须通过添加该用户的新 OneDrive URL 并删除旧 URL 来修改内容搜索。 有关详细信息，请参阅 [UPN 更改如何影响 OneDrive URL](/onedrive/upn-changes)。
   
 ### <a name="searching-microsoft-teams-and-microsoft-365-groups"></a>搜索 Microsoft Teams 和 Microsoft 365 组
 
@@ -240,7 +240,7 @@ ms.locfileid: "49988202"
   
 - 若要搜索 Teams 和 Microsoft 365 组中的内容，必须指定与团队或组关联的邮箱和 SharePoint 网站。
 
-- 私人频道的内容将存储在每个用户的邮箱中，而不是团队邮箱中。 若要搜索私人频道中的内容，请参阅[私人频道的电子数据展示](https://docs.microsoft.com/microsoftteams/ediscovery-investigation#ediscovery-of-private-channels)。
+- 私人频道的内容将存储在每个用户的邮箱中，而不是团队邮箱中。 若要搜索私人频道中的内容，请参阅[私人频道的电子数据展示](/microsoftteams/ediscovery-investigation#ediscovery-of-private-channels)。
     
 - 在 Exchange Online 中运行 **Get-UnifiedGroup** cmdlet，以查看团队或 Microsoft 365 组的属性。 这是一种获取与团队或组关联的网站 URL 的好方法。 例如，以下命令显示名为“高层领导团队”的 Microsoft 365 组的选定属性： 
     
@@ -298,7 +298,7 @@ ms.locfileid: "49988202"
 
    有关详细信息，请参阅 [Microsoft Teams 针对通话和会议推出电子数据展示](https://techcommunity.microsoft.com/t5/microsoft-teams-blog/microsoft-teams-launches-ediscovery-for-calling-and-meetings/ba-p/210947)。
 
-- Teams 频道中应用、一对一聊天以及一对多人聊天生成的卡片内容存储在邮箱中，并且可以被搜索。 *卡片* 是一个 UI 容器，用于存放内容短片。 卡片可具有多个属性和附件，并且可以包括能够触发卡片操作的按钮。 有关详细信息，请参阅 [卡片](https://docs.microsoft.com/microsoftteams/platform/task-modules-and-cards/what-are-cards)
+- Teams 频道中应用、一对一聊天以及一对多人聊天生成的卡片内容存储在邮箱中，并且可以被搜索。 *卡片* 是一个 UI 容器，用于存放内容短片。 卡片可具有多个属性和附件，并且可以包括能够触发卡片操作的按钮。 有关详细信息，请参阅 [卡片](/microsoftteams/platform/task-modules-and-cards/what-are-cards)
 
   和其他 Teams 内容一样，卡片内容的存储位置由卡片用在何处来确定。 用于 Teams 频道中的卡片内容存储在 Teams 组邮箱中。 一对一和一对多聊天的卡片内容存储在聊天参与者的邮箱中。
 
@@ -412,14 +412,14 @@ ms.locfileid: "49988202"
 
 ### <a name="searching-for-content-in-a-sharepoint-multi-geo-environment"></a>在 SharePoint 多地理位置环境中搜索内容
 
-如果电子数据展示管理器需要在 [ 多地理位置环境](https://go.microsoft.com/fwlink/?linkid=860840)中的不同区域内搜索 SharePoint 和 OneDrive 中的内容，则需要执行以下操作来实现这一点：
+如果电子数据展示管理器需要在 [ 多地理位置环境](../enterprise/multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-microsoft-365.md)中的不同区域内搜索 SharePoint 和 OneDrive 中的内容，则需要执行以下操作来实现这一点：
 
 1. 为电子数据展示管理器需要搜索的每个卫星地理位置创建单独的用户帐户。 若要在该地理位置搜索网站中的内容，电子数据展示管理器必须登录到为该位置创建的帐户，然后运行内容搜索。
 
 2. 为电子数据展示管理器需要搜索的每个卫星地理位置（和相应用户帐户）创建搜索权限筛选器。 当电子数据展示管理器登录到与该位置相关联的用户帐户时，其中每一个搜索权限筛选器都会将内容搜索的范围限制为特定地理位置。
 
 > [!TIP]
-> 使用[高级电子数据展示](overview-ediscovery-20.md)中的搜索工具时，无需使用此策略。 这是因为在高级电子数据展示中搜索 SharePoint 网站和 OneDrive 帐户时，将搜索所有数据中心。 仅当使用内容搜索工具并运行与[电子数据展示事例](ediscovery-cases.md)相关联的搜索时，才必须使用特定于区域的用户帐户的策略和搜索权限筛选器。
+> 使用[高级电子数据展示](overview-ediscovery-20.md)中的搜索工具时，无需使用此策略。 这是因为在高级电子数据展示中搜索 SharePoint 网站和 OneDrive 帐户时，将搜索所有数据中心。 仅当使用内容搜索工具并运行与[电子数据展示事例](./get-started-core-ediscovery.md)相关联的搜索时，才必须使用特定于区域的用户帐户的策略和搜索权限筛选器。
 
 例如，假设电子数据展示管理器需要在北美、欧洲和亚太的卫星位置搜索 SharePoint 和 OneDrive 内容。 第一步是创建三个用户帐户，每个帐户对应一个位置。 下一步是创建三个搜索权限筛选器，分别对应每个位置 *和* 相应的用户帐户。 下面是这种情况下三个搜索权限筛选器的示例。 在上述每个示例中，“**区域**”指定该地理位置的 SharePoint 数据中心位置，而“**Users**”参数指定相应的用户帐户。
 

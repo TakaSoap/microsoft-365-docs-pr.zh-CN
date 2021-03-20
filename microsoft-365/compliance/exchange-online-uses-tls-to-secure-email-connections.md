@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_IP
 description: 了解 Exchange Online 和 Microsoft 365 如何使用传输层安全性 (TLS) 和向前保密 (FS) 保护电子邮件通信。 此外，还获取有关 Microsoft 颁发的 Exchange Online 证书的信息。
-ms.openlocfilehash: 6e23ebc6451b9d139f1b18838007411028a059f3
-ms.sourcegitcommit: 3d48e198e706f22ac903b346cadda06b2368dd1e
+ms.openlocfilehash: cc7ca631f9322fdc8a85cfaba197e63d06d08aee
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50727453"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50906948"
 ---
 # <a name="how-exchange-online-uses-tls-to-secure-email-connections"></a>Exchange Online 如何使用 TLS 保护电子邮件连接
 
@@ -45,17 +45,17 @@ Exchange Online 服务器始终通过 TLS 1.2 加密到我们数据中心其他 
   
 ## <a name="how-microsoft-365-uses-tls-between-microsoft-365-and-external-trusted-partners"></a>Microsoft 365 如何在 Microsoft 365 和外部受信任合作伙伴之间使用 TLS
 
-默认情况下，Exchange Online 始终使用操作 TLS。 这意味着 Exchange Online 会始终尝试首先通过最安全的 TLS 版本加密连接，而后沿着 TLS 密码列表一直往下，直到找到一个双方都同意的版本进行加密。 除非您已配置 Exchange Online 以确保仅通过安全连接发送发送给该收件人的邮件，否则默认情况下，如果收件人组织不支持 TLS 加密，则邮件将发送未加密。 操作 TLS 对于多数企业已够用。 但是，对于具有合规性要求（如医疗、银行或政府组织）的企业，可以将 Exchange Online 配置为要求或强制 TLS。 有关说明，请参阅 [在 Office 365 中配置使用连接器的邮件流](https://technet.microsoft.com/library/ms.exch.eac.connectorselection%28v=exchg.150%29.aspx)。
+默认情况下，Exchange Online 始终使用操作 TLS。 这意味着 Exchange Online 会始终尝试首先通过最安全的 TLS 版本加密连接，而后沿着 TLS 密码列表一直往下，直到找到一个双方都同意的版本进行加密。 除非您已配置 Exchange Online 以确保仅通过安全连接发送发送给该收件人的邮件，否则默认情况下，如果收件人组织不支持 TLS 加密，则邮件将发送未加密。 操作 TLS 对于多数企业已够用。 但是，对于具有合规性要求（如医疗、银行或政府组织）的企业，可以将 Exchange Online 配置为要求或强制 TLS。 有关说明，请参阅 [在 Office 365 中配置使用连接器的邮件流](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow)。
   
-如果您决定在您的组织和受信任合作伙伴组织之间配置 TLS，Exchange Online 可以使用强制 TLS 创建受信任的通信通道。 “强制 TLS”要求您的合作伙伴组织使用安全证书对 Exchange Online 进行身份验证，以便向您发送邮件。 若要这么做，您的合作伙伴将需要管理其自己的证书。 在 Exchange Online 中，我们使用连接器保护你在到达收件人的电子邮件提供商之前发送的邮件，防止其受到未经授权的访问。 有关使用连接器配置邮件流的信息，请参阅在 [Office 365](https://technet.microsoft.com/library/ms.exch.eac.connectorselection%28v=exchg.150%29.aspx)中配置使用连接器的邮件流。
+如果您决定在您的组织和受信任合作伙伴组织之间配置 TLS，Exchange Online 可以使用强制 TLS 创建受信任的通信通道。 “强制 TLS”要求您的合作伙伴组织使用安全证书对 Exchange Online 进行身份验证，以便向您发送邮件。 若要这么做，您的合作伙伴将需要管理其自己的证书。 在 Exchange Online 中，我们使用连接器保护你在到达收件人的电子邮件提供商之前发送的邮件，防止其受到未经授权的访问。 有关使用连接器配置邮件流的信息，请参阅在 [Office 365](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow)中配置使用连接器的邮件流。
   
 ## <a name="tls-and-hybrid-exchange-server-deployments"></a>TLS 和混合 Exchange Server 部署
 
-如果要管理混合 Exchange 部署，本地 Exchange 服务器需要使用安全证书向 Microsoft 365 进行身份验证，以便向邮箱仅位于 Office 365 中的收件人发送邮件。 因此，您需要为内部部署 Exchange 服务器管理您自己的安全证书。 您还必须以安全的方式存储并维护这些服务器证书。 有关在混合部署中管理证书的信息，请参阅混合 [部署的证书要求](https://technet.microsoft.com/library/hh563848%28v=exchg.150%29.aspx)。
+如果要管理混合 Exchange 部署，本地 Exchange 服务器需要使用安全证书向 Microsoft 365 进行身份验证，以便向邮箱仅位于 Office 365 中的收件人发送邮件。 因此，您需要为内部部署 Exchange 服务器管理您自己的安全证书。 您还必须以安全的方式存储并维护这些服务器证书。 有关在混合部署中管理证书的信息，请参阅混合 [部署的证书要求](/exchange/certificate-requirements)。
   
 ## <a name="how-to-set-up-forced-tls-for-exchange-online-in-office-365"></a>如何在 Office 365 中为 Exchange Online 设置强制 TLS
 
-对于 Exchange Online 客户，为了启用强制 TLS 以保护所有您发送和接收的电子邮件，您需要设置多个要求 TLS 的连接器。 其中一个连接器适用于发送至您的用户邮箱的电子邮件，另一个连接器适用于来自您的用户邮箱的电子邮件。 在 Office 365 中的 Exchange 管理中心内创建这些连接器。 有关说明，请参阅 [在 Office 365 中配置使用连接器的邮件流](https://technet.microsoft.com/library/ms.exch.eac.connectorselection%28v=exchg.150%29.aspx)。
+对于 Exchange Online 客户，为了启用强制 TLS 以保护所有您发送和接收的电子邮件，您需要设置多个要求 TLS 的连接器。 其中一个连接器适用于发送至您的用户邮箱的电子邮件，另一个连接器适用于来自您的用户邮箱的电子邮件。 在 Office 365 中的 Exchange 管理中心内创建这些连接器。 有关说明，请参阅 [在 Office 365 中配置使用连接器的邮件流](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow)。
   
 ## <a name="tls-certificate-information-for-exchange-online"></a>Exchange Online 的 TLS 证书信息
 
@@ -111,10 +111,8 @@ Exchange Online 服务器始终通过 TLS 1.2 加密到我们数据中心其他 
 
 有关受支持的密码套件的列表，请参阅有关 [加密的技术参考详细信息](technical-reference-details-about-encryption.md)。
   
-[将连接器设置为确保与合作伙伴组织之间实现安全的邮件流](https://technet.microsoft.com/library/dn751021%28v=exchg.150%29.aspx)
+[将连接器设置为确保与合作伙伴组织之间实现安全的邮件流](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-for-secure-mail-flow-with-a-partner)
   
-[电子邮件安全性已提高的连接器](https://technet.microsoft.com/library/261d92e4-7371-4555-b781-2062b5bb5278.aspx)
+[电子邮件安全性已提高的连接器](/previous-versions/exchange-server/exchange-150/dn942516(v=exchg.150))
   
 [Microsoft 365 中的加密](encryption.md)
-  
-

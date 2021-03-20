@@ -21,19 +21,19 @@ search.appverid:
 - MET150
 description: 了解如何同时添加用户和为 Microsoft 365 分配许可证。
 ms.date: 07/01/2020
-ms.openlocfilehash: 71695c47bbc34a94f0040c37dd0c0bb0ab72fbba
-ms.sourcegitcommit: 06d9e056eabfbac8fafe66cc32907b33d4ae8253
+ms.openlocfilehash: 3c752bd12c0aeb3806ad7d5d90373aad13730944
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50741409"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50906296"
 ---
 # <a name="add-users-and-assign-licenses-at-the-same-time"></a>同时添加用户和分配许可证
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 管理中心正在发生改变。 如果你的体验与此处提供的详细信息不匹配，请参阅[有关新版 Microsoft 365 管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true)。
+> 管理中心正在发生改变。 如果你的体验与此处提供的详细信息不匹配，请参阅[有关新版 Microsoft 365 管理中心](../microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet)。
 
 ::: moniker-end
 
@@ -100,10 +100,10 @@ ms.locfileid: "50741409"
 
 可以使用以下任意方法同时添加多个用户：
 
-- **使用电子表格批量添加人员。** 请参阅 [同时添加若干用户](https://docs.microsoft.com/microsoft-365/enterprise/add-several-users-at-the-same-time)。
-- **自动添加帐户并分配许可证。** 请参阅 [通过 Microsoft 365 PowerShell 创建用户账户](https://docs.microsoft.com/microsoft-365/enterprise/create-user-accounts-with-microsoft-365-powershell)。 如果可以熟练使用 Windows PowerShell cmdlet，请选择此方法。
-- **使用 ActiveDirectory？** [设置 Microsoft 365 的目录同步](https://docs.microsoft.com/microsoft-365/enterprise/set-up-directory-synchronization)。 在 Microsoft 365 中，使用 Azure AD Connect 工具复制 Active Directory 用户帐户（和其他 Active Directory 对象）。 同步只添加用户帐户。 你必须向同步用户分配许可证，然后他们才能使用电子邮件和其他 Office 应用。
-- **从 Exchange 迁移？** 请参阅 [将多个电子邮件帐户迁移到 Office 365 的方法](https://docs.microsoft.com/Exchange/mailbox-migration/mailbox-migration)。 通过使用直接转换、分阶段或混合 Exchange 方法将多个邮箱迁移到 Microsoft 365 时，将在迁移期间自动添加用户。 迁移只添加用户帐户。 你必须向用户分配许可证，然后他们才能使用电子邮件和其他 Office 应用。 如果不向用户分配许可证，则其邮箱在 30 天的宽限期后将处于禁用状态。 了解如何在 Microsoft 365 管理中心内 [向用户分配许可证](../manage/assign-licenses-to-users.md)。
+- **使用电子表格批量添加人员。** 请参阅 [同时添加若干用户](../../enterprise/add-several-users-at-the-same-time.md)。
+- **自动添加帐户并分配许可证。** 请参阅 [通过 Microsoft 365 PowerShell 创建用户账户](../../enterprise/create-user-accounts-with-microsoft-365-powershell.md)。 如果可以熟练使用 Windows PowerShell cmdlet，请选择此方法。
+- **使用 ActiveDirectory？** [设置 Microsoft 365 的目录同步](../../enterprise/set-up-directory-synchronization.md)。 在 Microsoft 365 中，使用 Azure AD Connect 工具复制 Active Directory 用户帐户（和其他 Active Directory 对象）。 同步只添加用户帐户。 你必须向同步用户分配许可证，然后他们才能使用电子邮件和其他 Office 应用。
+- **从 Exchange 迁移？** 请参阅 [将多个电子邮件帐户迁移到 Office 365 的方法](/Exchange/mailbox-migration/mailbox-migration)。 通过使用直接转换、分阶段或混合 Exchange 方法将多个邮箱迁移到 Microsoft 365 时，将在迁移期间自动添加用户。 迁移只添加用户帐户。 你必须向用户分配许可证，然后他们才能使用电子邮件和其他 Office 应用。 如果不向用户分配许可证，则其邮箱在 30 天的宽限期后将处于禁用状态。 了解如何在 Microsoft 365 管理中心内 [向用户分配许可证](../manage/assign-licenses-to-users.md)。
 
 ## <a name="next-steps"></a>后续步骤
 
@@ -112,7 +112,7 @@ ms.locfileid: "50741409"
 ## <a name="related-content"></a>相关内容
 
 [向 Microsoft 365 添加新员工](add-new-employee.md)（文章）\
-[同时向 Microsoft 365 网站添加若干用户](https://docs.microsoft.com/microsoft-365/enterprise/add-several-users-at-the-same-time)（文章）\
+[同时向 Microsoft 365 网站添加若干用户](../../enterprise/add-several-users-at-the-same-time.md)（文章）\
 [在 Microsoft 365 网站中还原用户](restore-user.md)（文章）\
 [向用户分配许可证](../manage/assign-licenses-to-users.md)
 [从组织删除用户](delete-a-user.md)（文章）

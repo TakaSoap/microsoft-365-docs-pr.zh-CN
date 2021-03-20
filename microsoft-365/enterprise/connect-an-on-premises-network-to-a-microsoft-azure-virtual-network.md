@@ -20,18 +20,18 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 81190961-5454-4a5c-8b0e-6ae75b9fb035
 description: 摘要：了解如何使用站点间 VPN 连接为 Office 服务器工作负载配置跨界 Azure 虚拟网络。
-ms.openlocfilehash: cddb9cfcff02f91ef76f989b87e9dda049cc1b08
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 00fd1c2246e9e9ac3eb55ca5ece9d84ecf49a1d3
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46695454"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50907704"
 ---
 # <a name="connect-an-on-premises-network-to-a-microsoft-azure-virtual-network"></a>将本地网络连接到 Microsoft Azure 虚拟网络
 
 Azure 跨界虚拟网络连接到本地网络，从而可扩展网络以包含在 Azure 基础结构服务中托管的子网和虚拟机。上述连接可让本地网络中的计算机直接访问 Azure 中的虚拟机，反之亦然。 
 
-例如，在 Azure 虚拟机上运行的目录同步服务器需要查询内部部署域控制器以进行帐户更改，并将这些更改与 Microsoft 365 订阅同步。本文介绍如何使用已准备好托管 Azure 虚拟机的站点到站点虚拟专用网络 (VPN) 连接来设置跨界 Azure 虚拟网络。
+例如，在 Azure 虚拟机上运行的目录同步服务器需要查询本地域控制器以查询帐户更改，以及将这些更改与 Microsoft 365 订阅同步。 本文演示如何使用准备好托管 Azure 虚拟机的站点间虚拟专用网络 (VPN) 连接设置跨界 Azure 虚拟网络。
 
 ## <a name="configure-a-cross-premises-azure-virtual-network"></a>配置跨界 Azure 虚拟网络
 
@@ -52,11 +52,11 @@ Azure 虚拟网络托管虚拟机。Azure 虚拟网络上从虚拟机发出的�
   
 要设置 Azure 虚拟网络和本地网络之间的 VPN 连接，请按照以下步骤进行操作： 
   
-1. **** 本地：为指向本地 VPN 设备的 Azure 虚拟网络的地址空间定义并创建本地网络路由。
+1. 本地：为指向本地 VPN 设备的 Azure 虚拟网络的地址空间定义并创建本地网络路由。
     
-2. **** Microsoft Azure：使用站点间 VPN 连接创建一个 Azure 虚拟网络。 
+2. Microsoft Azure：使用站点间 VPN 连接创建一个 Azure 虚拟网络。 
     
-3. **** 本地：将本地硬件或软件 VPN 设备配置为终止使用遵循 Internet 协议安全性 (IPsec) 的 VPN 连接。
+3. 本地：将本地硬件或软件 VPN 设备配置为终止使用遵循 Internet 协议安全性 (IPsec) 的 VPN 连接。
     
 建立站点到站点 VPN 连接后，将 Azure 虚拟机添加到虚拟网络子网。
   
@@ -70,7 +70,7 @@ Azure 虚拟网络托管虚拟机。Azure 虚拟网络上从虚拟机发出的�
     
 - 可用的专用 IPv4 地址空间，将分配给虚拟网络及其子网，具有足够的空间容纳现在和将来所需的虚拟机。
     
-- 本地网络中的可用 VPN 设备，用于终止支持 IPsec 要求的站点间 VPN 连接。有关详细信息，请参阅[有关用于站点间虚拟网络连接的 VPN 设备](https://go.microsoft.com/fwlink/p/?LinkId=393093)。
+- 本地网络中的可用 VPN 设备，用于终止支持 IPsec 要求的站点间 VPN 连接。有关详细信息，请参阅[有关用于站点间虚拟网络连接的 VPN 设备](/azure/vpn-gateway/vpn-gateway-about-vpn-devices)。
     
 - 对路由基础结构的变更，以便路由到 Azure 虚拟网络地址空间的流量转发到承载站点间 VPN 连接的 VPN 设备。
     
@@ -129,10 +129,10 @@ Azure 虚拟网络的专用 IP 地址空间必须能够容纳 Azure 用于承载
 |**所需的虚拟机数量**|**所需的主机位数**|**子网大小**|
 |:-----|:-----|:-----|
 |1-3  <br/> |3  <br/> |/29  <br/> |
-|4-11  <br/> |4  <br/> |/28  <br/> |
-|12-27  <br/> |5  <br/> |/27  <br/> |
-|28-59  <br/> |6  <br/> |/26  <br/> |
-|60-123  <br/> |7  <br/> |/25  <br/> |
+|4-11  <br/> |4   <br/> |/28  <br/> |
+|12-27  <br/> |5   <br/> |/27  <br/> |
+|28-59  <br/> |6   <br/> |/26  <br/> |
+|60-123  <br/> |7   <br/> |/25  <br/> |
    
 ### <a name="planning-worksheet-for-configuring-your-azure-virtual-network"></a>用于配置 Azure 虚拟网络的规划工作表
 <a name="worksheet"> </a>
@@ -153,7 +153,7 @@ Azure 虚拟网络的专用 IP 地址空间必须能够容纳 Azure 用于承载
    
 此解决方案的子网请填写表 S。
   
-- 对于第一个子网，请为 Azure 网关子网确定 28 位的地址空间（带有 /28 前缀长度）。有关如何确定此地址空间的信息，请参阅 [Calculating the gateway subnet address space for Azure virtual networks](https://blogs.technet.microsoft.com/solutions_advisory_board/2016/12/01/calculating-the-gateway-subnet-address-space-for-azure-virtual-networks/)（计算 Azure 虚拟网络的网关子网地址空间）。
+- 对于第一个子网，请为 Azure 网关子网确定 28 位的地址空间（带有 /28 前缀长度）。有关如何确定此地址空间的信息，请参阅 [Calculating the gateway subnet address space for Azure virtual networks](/archive/blogs/solutions_advisory_board/calculating-the-gateway-subnet-address-space-for-azure-virtual-networks)（计算 Azure 虚拟网络的网关子网地址空间）。
     
 - 对于第二个子网，请指定友好名称（基于虚拟网络地址空间的单一 IP 地址空间）和描述性目的。
     
@@ -210,7 +210,7 @@ Azure 虚拟网络的专用 IP 地址空间必须能够容纳 Azure 用于承载
 ### <a name="phase-2-create-the-cross-premises-virtual-network-in-azure"></a>阶段 2：在 Azure 中创建跨部署虚拟网络
 <a name="Phase2"></a>
 
-首先，请打开 Azure PowerShell 提示符。如果没有安装 Azure PowerShell，请参阅 [Azure PowerShell 使用入门](https://docs.microsoft.com/powershell/azure/get-started-azureps)。
+首先，请打开 Azure PowerShell 提示符。如果没有安装 Azure PowerShell，请参阅 [Azure PowerShell 使用入门](/powershell/azure/get-started-azureps)。
 
  
 下一步，使用此命令登录 Azure 帐户。
@@ -306,7 +306,7 @@ $vnetConnection=New-AzVirtualNetworkGatewayConnection -Name $vnetConnectionName 
   
 ![虚拟网络现有一个网关。](../media/82dd66b2-a4b7-48f6-a89b-cfdd94630980.png)
   
-接下来，请将本地 VPN 设备配置为连接到 Azure VPN 网关。有关详细信息，请参阅[有关用于站点间 Azure 虚拟网络连接的 VPN 设备](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpn-devices)。
+接下来，请将本地 VPN 设备配置为连接到 Azure VPN 网关。有关详细信息，请参阅[有关用于站点间 Azure 虚拟网络连接的 VPN 设备](/azure/vpn-gateway/vpn-gateway-about-vpn-devices)。
   
 若要配置 VPN 设备，您需要以下各项:
   
@@ -324,9 +324,9 @@ $vnetConnection=New-AzVirtualNetworkGatewayConnection -Name $vnetConnectionName 
   
 使用以下设置：
   
-- 在****“基本信息”选项卡中，选择与虚拟网络相同的订阅和资源组。稍后将需要使用这些信息登录到虚拟机。在“实例详细信息”**** 部分中，选择适当的虚拟机大小。在安全位置记录管理员帐户用户名和密码。 
+- 在“基本信息”选项卡中，选择与虚拟网络相同的订阅和资源组。稍后将需要使用这些信息登录到虚拟机。在“实例详细信息”部分中，选择适当的虚拟机大小。在安全位置记录管理员帐户用户名和密码。 
     
-- 在“网络”**** 选项卡中，选择虚拟网络的名称和托管虚拟机（非网关子网）的子网。将所有其他设置保留为其默认值。
+- 在“网络”选项卡中，选择虚拟网络的名称和托管虚拟机（非网关子网）的子网。将所有其他设置保留为其默认值。
     
 请检查内部 DNS 验证虚拟机是否正确使用 DNS，确保已为新虚拟机添加地址 (A) 记录。要访问 Internet，必须将 Azure 虚拟机配置为使用本地网络的代理服务器。有关要在服务器上执行的其他配置步骤，请与网络管理员联系。
   

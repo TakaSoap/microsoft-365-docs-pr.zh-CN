@@ -20,12 +20,12 @@ description: 管理员可以了解如何在 Office 365 中从“受限的用户�
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 7ebc0cd1d6440673ec453322d3e4c3af2e88a028
-ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
+ms.openlocfilehash: 2b4f77f1edf0024a0324736adb2a8bfd6cc51470
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "50406708"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50908214"
 ---
 # <a name="remove-blocked-users-from-the-restricted-users-portal-in-office-365"></a>在 Office 365 中从“受限的用户”门户中删除被阻止的用户
 
@@ -36,9 +36,9 @@ ms.locfileid: "50406708"
 - [Microsoft Defender for Office 365 计划 1 和计划 2](office-365-atp.md)
 - [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
-如果某用户超过[服务限制](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits-across-office-365-options)或[出站垃圾邮件策略](configure-the-outbound-spam-policy.md)中指定的出站发送限制之一，此用户就会被限制发送电子邮件，但仍可以接收电子邮件。
+如果某用户超过[服务限制](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits-across-office-365-options)或[出站垃圾邮件策略](configure-the-outbound-spam-policy.md)中指定的出站发送限制之一，此用户就会被限制发送电子邮件，但仍可以接收电子邮件。
 
-此用户会被添加到安全与合规中心内的“受限用户”门户。 如果此用户试图发送电子邮件，邮件就会以未送达报告（亦称为“NDR”或“退回邮件”）形式返回，并显示错误代码 [5.1.8](https://docs.microsoft.com/Exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/fix-error-code-5-1-8-in-exchange-online) 和以下文本：
+此用户会被添加到安全与合规中心内的“受限用户”门户。 如果此用户试图发送电子邮件，邮件就会以未送达报告（亦称为“NDR”或“退回邮件”）形式返回，并显示错误代码 [5.1.8](/Exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/fix-error-code-5-1-8-in-exchange-online) 和以下文本：
 
 > “你的邮件无法送达，因为系统认为你不是有效的发件人。 这种情形最常见的原因是怀疑你的电子邮件地址正在发送垃圾邮件，且不再允许它发送电子邮件。  请联系电子邮件管理员获取帮助。 远程服务器返回“550 5.1.8 拒绝访问，错误出站发件人”。
 
@@ -48,19 +48,19 @@ ms.locfileid: "50406708"
 
 - 安全与合规中心的打开网址为 <https://protection.office.com/>。 若要直接转到“受限的用户”页，请访问 <https://protection.office.com/restrictedusers>。
 
-- 若要连接到 Exchange Online PowerShell，请参阅[连接到 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)。
+- 若要连接到 Exchange Online PowerShell，请参阅[连接到 Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)。
 
 - 在 Exchange Online 网站中 **分配** 权限，才能执行本文中的步骤：
   - 若要从受限用户门户中删除用户，需要成为 **组织管理人员** 或 **安全管理员** 角色组的成员。
   - 若要获得对受限用户门户的只读访问权限，必须成为 **全球读者** 或 **安全读者** 角色组的成员。
 
-  有关详细信息，请参阅 [Exchange Online 中权限](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo)。
+  有关详细信息，请参阅 [Exchange Online 中权限](/exchange/permissions-exo/permissions-exo)。
 
   > [!NOTE]
   >
   > - 在 Microsoft 365 管理中心将用户添加到相应的 Azure Active Directory 角色后，将为用户提供所需的权限 _和_ Microsoft 365 中其他功能的所需权限。 有关详细信息，请参阅 [关于管理员角色](../../admin/add-users/about-admin-roles.md)。
   >
-  > - [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) 中的 **仅查看组织管理人员** 角色组也提供到该功能的只读访问。
+  > - [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) 中的 **仅查看组织管理人员** 角色组也提供到该功能的只读访问。
 
 - 发件人超过出站电子邮件限制是帐户遭到入侵的标志。 请务必先按照必需步骤操作来重新获得对帐户的控制，再从“受限的用户”门户中删除用户。 有关详细信息，请参阅[在 Office 365 中响应遭入侵的电子邮件帐户](responding-to-a-compromised-email-account.md)。
 
@@ -120,7 +120,7 @@ Get-BlockedSenderAddress
 Get-BlockedSenderAddress -SenderAddress <emailaddress>
 ```
 
-若要详细了解语法和参数，请参阅 [Get-BlockedSenderAddress](https://docs.microsoft.com/powershell/module/exchange/get-blockedsenderaddress)。
+若要详细了解语法和参数，请参阅 [Get-BlockedSenderAddress](/powershell/module/exchange/get-blockedsenderaddress)。
 
 若要从“受限的用户”列表中删除用户，请将 \<emailaddress\> 替换为相应用户的电子邮件地址，并运行以下命令：
 
@@ -128,4 +128,4 @@ Get-BlockedSenderAddress -SenderAddress <emailaddress>
 Remove-BlockedSenderAddress -SenderAddress <emailaddress>
 ```
 
-若要详细了解语法和参数，请参阅 [Remove-BlockedSenderAddress](https://docs.microsoft.com/powershell/module/exchange/remove-blockedsenderaddress)。
+若要详细了解语法和参数，请参阅 [Remove-BlockedSenderAddress](/powershell/module/exchange/remove-blockedsenderaddress)。

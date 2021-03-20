@@ -1,5 +1,5 @@
 ---
-title: 为 Microsoft 365 组和 Microsoft 团队规划组织和生命周期管理
+title: 为 Microsoft 365 组和 Microsoft Teams 规划组织和生命周期管理
 ms.reviewer: arvaradh
 ms.author: mikeplum
 author: MikePlumleyMSFT
@@ -14,69 +14,69 @@ ms.collection:
 ms.custom:
 - M365solutions
 f1.keywords: NOCSH
-description: 有关 Microsoft 365 中的协作工具的生命周期管理选项的精益
-ms.openlocfilehash: 4d779701d241fc7178ab759063be1b8cdf2e960c
-ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
+description: 了解 Microsoft 365 中协作工具的生命周期管理选项
+ms.openlocfilehash: ff3a3a60ce49c423410b51dc6fee2137ebf8952a
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49613016"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50907924"
 ---
-# <a name="plan-organization-and-lifecycle-governance-for-microsoft-365-groups-and-microsoft-teams"></a>为 Microsoft 365 组和 Microsoft 团队规划组织和生命周期管理
+# <a name="plan-organization-and-lifecycle-governance-for-microsoft-365-groups-and-microsoft-teams"></a>为 Microsoft 365 组和 Microsoft Teams 规划组织和生命周期管理
 
-Microsoft 365 组提供了一组丰富的工具来实施您的组织所需的治理功能。 
+Microsoft 365 组具有一组丰富的工具来实施组织所需的管理功能。 
 
-下一节介绍了功能、建议最佳做法，并提供了指导以确定对调控的要求以及如何满足这些要求的指导。
+下一节介绍这些功能、推荐最佳实践，并提供指导，以提出正确的问题以确定管理要求以及如何满足这些要求。
 
-## <a name="control-who-can-create-microsoft-365-groups"></a>控制可以创建 Microsoft 365 组的用户
+## <a name="control-who-can-create-microsoft-365-groups"></a>控制可以创建 Microsoft 365 组的人
 
-最终用户可以从多个终结点（包括 Outlook、SharePoint、团队和其他环境）创建组。
+最终用户可以从多个终端创建组，包括 Outlook、SharePoint、Teams 和其他环境。
 
 ![图像 desc](../media/04.png)
 
-强烈建议使用自助服务所有者，并帮助用户更轻松地完成其工作。 限制组和团队创建会降低用户工作效率，因为许多 Microsoft 365 服务都需要创建组才能使服务正常工作。
+我们强烈建议自助服务，为组所有者提供能力并帮助用户更轻松地完成工作。 限制组和团队创建可能会降低用户的工作效率，因为许多 Microsoft 365 服务都要求创建组，服务才能正常运行。
 
-考虑用于创建组的以下管理选项：
+考虑以下组创建管理选项：
 
-- 若要限制组的数量增加，请使用 [组过期策略](microsoft-365-groups-expiration-policy.md) 自动删除未使用的组。
-- 将组创建限制为包含 [动态成员身份的安全组](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-create-rule) 的成员，例如，所有全职员工。
-- 将组创建限制为安全组，并要求用户在组织的组使用策略中完成培训，以便成为安全组的成员。
+- 若要限制组移动，请使用 [组过期策略](microsoft-365-groups-expiration-policy.md) 自动删除不使用的组。
+- 将组创建限制为包含动态成员身份[](/azure/active-directory/users-groups-roles/groups-create-rule)（例如，所有全职员工）的安全组的成员。
+- 将组创建限制为安全组，并要求用户完成组织的组使用策略中的培训，以便成为安全组的成员。
 
-如果要限制可以创建组的用户，请参阅 [管理可创建 Microsoft 365 组的用户](manage-creation-of-groups.md) ，以了解有关如何配置此操作的信息。
+如果要限制可以创建组的人，请参阅管理 [可以创建 Microsoft 365](manage-creation-of-groups.md) 组的人，了解如何配置此组。
 
 ## <a name="group-delete-restore-and-archiving"></a>组删除、还原和存档
 
-删除 Microsoft 365 组时，默认情况下它将保留30天。 这 30 天时间被称为"软删除"，因为仍然可以对组进行还原。 30 天后，组和相关内容将永久删除且无法还原。
+删除 Microsoft 365 组后，默认情况下该组将保留 30 天。 这 30 天时间被称为"软删除"，因为仍然可以对组进行还原。 30 天后，组和相关内容将永久删除且无法还原。
 
-如果保留了保留策略以保留聊天、文件或邮件，则在删除组后将保留这些项目。 有关详细信息，请参阅 [了解保留策略](https://docs.microsoft.com/microsoft-365/compliance/retention-policies) 。
+如果已制定保留策略来保留聊天、文件或邮件，则删除组后将保留这些项目。 有关详细信息 [，请参阅了解](../compliance/retention.md) 保留策略。
 
-如果要删除一个组，但保留一个或多个组连接服务的内容，请参阅 [存档组、团队和 Yammer](end-life-cycle-groups-teams-sites-yammer.md) 获取信息。
+如果要删除组，但保留一个或多个与组连接的服务中的内容，请参阅存档组、团队和 [Yammer](end-life-cycle-groups-teams-sites-yammer.md) 了解相关信息。
 
 ## <a name="group-naming-policy"></a>组命名策略
 
-组命名策略可帮助您以两种方式管理组：
+组命名策略可以通过两种方式帮助您管理组：
 
-- 可以使用前缀/后缀命名策略在组名称的开头或结尾强制实施固定字符串或 Azure AD 属性及其关联的电子邮件地址。 通过执行此操作，可以确保包含，例如，部门名称或组名称中的区域。
-- 阻止的词策略可确保在组名称中不使用某些词（例如，行政人员姓名）。
+- 前缀/后缀命名策略可用于在组名称及其关联电子邮件地址的开头或结尾强制执行固定字符串或 Azure AD 属性。 通过执行此操作，可以确保在组名称中加入部门名称或区域等。
+- 阻止的词语策略可以确保某些词语（如主管的姓名）不会用于组名。
 
-当从任何组连接服务创建组时，将应用命名策略。
+从任何组连接的服务创建组时，将应用命名策略。
 
-如果决定使用组的命名策略，请参阅 [Microsoft 365 组命名策略](groups-naming-policy.md)。
+如果你决定对组使用命名策略，请参阅 Microsoft [365 组命名策略](groups-naming-policy.md)。
 
 ## <a name="group-expiration-policy"></a>组过期策略
 
-您可以指定过期期限和任何到达该时间段结束的组，并且不会被更新。 过期时间是在创建组时开始，或在上次续订日期时开始。
+你可以指定过期期限，达到该期限到期且未续订的任何组都将被删除。 过期期限从组创建时或上次续订日期开始。
 
 将组设置为过期后：
-- 在临近过期时，会通知组的所有者续订组。
+- 该组的所有者将收到通知，以在即将过期时续订组。
 - 自动续订活动组。
 - 任何未续订的组都将被删除。
-- 可以通过组所有者或管理员在30天内恢复删除的任何组。
+- 任何已删除的组都可以在 30 天内由组所有者或管理员还原。
 
-过期策略是通过确保删除不再使用的组来限制组数量剧增的一种有效方式。 如果要创建组过期策略，请参阅 [Microsoft 365 组过期策略](microsoft-365-groups-expiration-policy.md)。
+过期策略是一种通过确保删除不再使用的组来限制组过期的一个好方法。 如果要创建组过期策略，请参阅 [Microsoft 365 组过期策略](microsoft-365-groups-expiration-policy.md)。
 
 ## <a name="related-topics"></a>相关主题
 
-[协作治理规划分步](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
+[协作治理规划分步规划](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
 
 [创建协作管理计划](collaboration-governance-first.md)

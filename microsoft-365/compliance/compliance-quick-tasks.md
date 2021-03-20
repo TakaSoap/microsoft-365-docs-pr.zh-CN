@@ -12,19 +12,19 @@ ms.collection:
 - m365-security-compliance
 - m365initiative-compliance
 localization_priority: Normal
-description: 了解将帮助您快速开始使用 Microsoft 365 中的合规性的任务。
-ms.openlocfilehash: 36b6e2bd0d0339241748499826edf061a7259317
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+description: 了解可帮助你快速开始使用 Microsoft 365 中的合规性的任务。
+ms.openlocfilehash: 69aef07e65f5644f9aa294025c8388410f160243
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49928626"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50908582"
 ---
 # <a name="quick-tasks-for-getting-started-with-microsoft-365-compliance"></a>Microsoft 365 合规性入门快速任务
 
-如果你对 Microsoft 365 合规性很了解，并想知道从何处开始，本文将提供有关基础知识的指南，并设置重要合规性任务的优先级。 本文将帮助你快速开始管理和监视数据、保护信息以及最大程度地降低内部风险。
+如果你对 Microsoft 365 合规性很了解，并且想知道从何处开始，本文将提供有关基本信息的指导，并优先执行重要的合规性任务。 本文将帮助你快速开始管理和监视数据、保护信息并最大限度地减少内部风险。
 
-如果你正在找出如何最好地管理风险、保护数据，并符合新远程员工的法规和标准，本文也很有用。 员工现在以新方式相互协作和联系，这意味着现有合规性流程和控制措施可能需要进行调整。 在组织中识别和管理这些新合规性风险对于保护数据并将威胁和风险最小化至关重要。
+如果你正在找出如何以最佳方式管理风险、保护数据并符合新远程员工的法规和标准，本文也很有用。 员工现在以新方式相互协作和联系，这意味着你现有的合规性流程和控制措施可能需要进行调整。 在组织中识别和管理这些新合规性风险对于保护数据并最大限度地减少威胁和风险至关重要。
 
 完成这些基本合规性任务后，请考虑通过实施其他 Microsoft 365 合规性解决方案来扩大组织的合规性范围。
 
@@ -32,20 +32,20 @@ ms.locfileid: "49928626"
 
 管理组织中有权访问 Microsoft 365 合规中心以查看内容和执行管理任务的人非常重要。 Microsoft 365 提供特定于合规性和使用 Microsoft 365 合规中心中包含的工具的管理角色。
 
-首先，向组织人员分配合规性权限，以便他们可以执行这些任务，并防止未经授权的人员访问他们职责之外的区域。 在开始配置和实施 Microsoft 365 中包含的合规性解决方案之前，需要确保已将合适的人员分配给合规性数据管理员和合规性管理员管理员角色。 你还需要将用户分配到 Azure Active Directory 全局读者角色，以在合规性管理器中查看数据。
+首先，向组织人员分配合规性权限，以便他们可以执行这些任务，并防止未经授权的人员访问其职责之外的区域。 在开始配置和实施 Microsoft 365 中包含的合规性解决方案之前，需要确保向合规性数据管理员和合规性管理员管理员角色分配合适的人员。 你还需要将用户分配到 Azure Active Directory 全局读者角色，以查看合规性管理器中的数据。
 
 有关配置权限和将人员分配给管理员角色的分步指南，请参阅安全与合规中心& [权限](../security/office-365-security/permissions-in-the-security-and-compliance-center.md)。
 
 ## <a name="task-2-know-your-state-of-compliance"></a>任务 2：了解合规性状态
 
-如果你不了解你在哪里，很难知道去往何处。 满足合规性需求包括了解当前风险级别以及在这些不断变化的时间可能需要哪些更新。 无论你的组织是遵从性要求还是具有管理行业标准和法规的丰富经验，改进合规性的一个最佳操作就是了解组织在什么位置。
+如果您不知道您在哪里，则很难知道在哪里。 满足合规性需求包括了解当前风险级别以及在这些不断变化的时间可能需要哪些更新。 无论你的组织是了解合规性要求还是对管理你的行业的标准和法规有丰富经验，改进合规性可以做的一个最佳操作就是了解你的组织在什么位置。
 
-[Microsoft 合规性管理器](compliance-manager.md) 可帮助你了解组织的合规性状态，并突出显示可能需要改进的方面。 合规性管理器使用集中式仪表板来计算基于风险的分数，从而衡量完成有助于降低数据保护和监管标准风险的操作的进度。 您还可以使用合规性管理器作为工具来跟踪所有风险评估。 它提供工作流功能，以帮助您通过通用工具高效地完成风险评估。
+[Microsoft 合规性管理器](compliance-manager.md) 可帮助你了解组织的合规性状态，并突出显示可能需要改进的领域。 合规性管理器使用集中式仪表板计算基于风险的分数，以衡量完成有助于降低数据保护和监管标准风险的操作的进度。 您还可以使用合规性管理器作为工具来跟踪所有风险评估。 它提供了工作流功能，可帮助你通过常用工具高效地完成风险评估。
 
-有关合规性管理器入门的分步指南，请参阅合规性 [管理器入门](compliance-manager-setup.md)。
+有关合规性管理器的分步指南，请参阅合规性管理器 [入门](compliance-manager-setup.md)。
 
 >[!IMPORTANT]
->对于大多数组织来说，安全性和合规性紧密集成。 组织应解决基本安全、威胁防护、标识和访问管理方面的问题，以帮助提供针对安全性和合规性的深层防御方法，这一点非常重要。
+>大多数组织都紧密集成了安全性和合规性。 组织解决基本安全、威胁防护、标识和访问管理方面的问题非常重要，这有助于提供针对安全性和合规性的深层防御方法。
 >
 >检查 [Microsoft 365](../security/mtp/microsoft-secure-score.md) 安全中心中的 Microsoft 365 安全分数，并完成以下文章中概述的任务：
 >
@@ -56,7 +56,7 @@ ms.locfileid: "49928626"
 
 现在，你已确定组织的当前状态以及谁可以管理合规性功能，下一步是确保你拥有数据以执行合规性调查并生成组织中网络和用户活动的报告。 启用审核也是本文稍后介绍的合规性解决方案的重要先决条件。
 
-组织提供的审核日志是一个有价值的工具，有助于将合规性要求与解决方案相匹配，从而帮助您管理和监视需要改进的合规性领域。 必须先启用审核日志记录，然后才能记录活动，然后才能搜索审核日志。 启用后，组织的用户和管理员活动将记录在 审核日志 中，并保留 90 天，最多保留一年，具体取决于分配给用户的许可证。
+由组织提供的审核日志是一个有价值的工具，有助于将合规性要求与解决方案相匹配，从而帮助您管理和监视需要改进的合规性领域。 审核日志记录必须先启用，然后才能记录活动，然后才能搜索审核日志。 启用后，组织的用户和管理员活动将记录在 审核日志 中，并保留 90 天，最多保留一年，具体取决于分配给用户的许可证。
 
 有关启用审核的逐步操作说明，请参阅 [打开或关闭审核日志搜索](turn-audit-log-search-on-or-off.md)。
 
@@ -64,7 +64,7 @@ ms.locfileid: "49928626"
 
 Microsoft 提供了几个内置警报策略，可帮助识别管理员权限滥用、恶意软件活动、潜在的外部和内部威胁以及信息治理风险。 这些策略默认启用，但可能需要配置自定义警报以帮助管理特定于组织的合规性要求。
 
-使用警报策略和警报仪表板工具创建自定义警报策略，并查看当用户执行符合策略条件的活动时生成的警报。 一些示例可能是使用警报策略来跟踪影响组织中合规性要求、权限和数据丢失事件的用户和管理员活动。
+使用警报策略和警报仪表板工具创建自定义警报策略，并查看当用户执行符合策略条件的活动时生成的警报。 一些示例可能是使用警报策略跟踪影响组织中合规性要求、权限和数据丢失事件的用户和管理员活动。
 
 有关创建自定义警报策略的分步指南，请参阅安全与合规中心中的警报 [策略](alert-policies.md)。
 
@@ -74,39 +74,39 @@ Microsoft 提供了几个内置警报策略，可帮助识别管理员权限滥�
 
 [敏感度标签](sensitivity-labels.md) 可让你对组织的数据进行分类和保护，同时确保用户工作效率及其协作能力不受阻碍。 使用敏感度标签强制实施加密和使用限制，应用视觉标记，并保护跨平台和设备、本地和云的信息。
 
-有关配置和使用敏感度标签的分步指南，请参阅敏感度 [标签入门](get-started-with-sensitivity-labels.md)。 有关敏感度标签许可信息，请参阅 [Microsoft 365 安全与合规&指南](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection)。
+有关配置和使用敏感度标签的分步指南，请参阅敏感度 [标签入门](get-started-with-sensitivity-labels.md)。 有关敏感度标签许可信息，请参阅 [Microsoft 365](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection)安全与合规&指南。
 
 ## <a name="task-6-configure-a-retention-policy"></a>任务 6：配置保留策略
 
-保留 [策略](retention.md) 允许你主动决定是保留内容还是删除内容，还是同时保留内容，然后在指定的保留期结束时删除内容。 可能需要执行这些操作才能遵守行业法规和内部策略，并降低诉讼或安全漏洞的风险。
+保留 [策略](retention.md) 允许你主动决定是保留内容还是删除内容，或同时保留内容，然后在指定的保留期结束时删除内容。 可能需要这些操作来遵守行业法规和内部策略，并降低诉讼或安全漏洞的风险。
 
-当内容受保留策略影响时，用户可以继续编辑内容并处理内容，就像没有任何更改一样。 内容将就地保留在其原始位置。 但是，如果有人编辑或删除受保留策略限制的内容，原始内容的副本将保存到该内容保留的安全位置，同时该内容的保留策略生效。
+当内容受保留策略影响时，用户可以继续编辑和操作内容，就像没有任何变化一样。 内容将就地保留在其原始位置。 但是，如果有人编辑或删除受保留策略限制的内容，原始内容的副本将保存到保留该内容的安全位置，同时该内容的保留策略生效。
 
-您可以快速为 Microsoft 365 环境中的多个位置（如 Exchange 邮件、SharePoint 网站、OneDrive 帐户和 Microsoft 365 组）设置保留策略。 此策略可以自动包含的邮箱或网站数没有限制。 但是，如果需要更具选择性，可以通过为特定位置配置保留策略并包括或排除网站或用户来这样做。
+可以在 Microsoft 365 环境中为多个位置快速放置保留策略，例如 Exchange 邮件、SharePoint 网站、OneDrive 帐户和 Microsoft 365 组。 此策略可自动包含的邮箱或网站数没有限制。 但是，如果需要更具选择性，可以通过为特定位置配置保留策略并包括或排除网站或用户来这样做。
 
-有关配置保留策略的分步指南，请参阅["创建和配置保留策略"。](create-retention-policies.md) 如果你刚开始在 Microsoft 365 中配置保留，请参阅[开始使用保留策略和保留标签](get-started-with-retention.md)。
+有关配置保留策略的分步指南，请参阅创建 [和配置保留策略](create-retention-policies.md)。 如果你刚开始在 Microsoft 365 中配置保留，请参阅[开始使用保留策略和保留标签](get-started-with-retention.md)。
 
 ## <a name="task-7-configure-sensitive-information-and-offensive-language-policies"></a>任务 7：配置敏感信息和冒犯性语言策略
 
-保护敏感信息以及检测和处理工作场所暴力事件是遵守内部策略和标准的重要部分。 [](communication-compliance-feature-reference.md) Microsoft 365 中的通信合规性可帮助你快速检测、捕获和采取针对电子邮件和 Microsoft Teams 通信的修正操作，从而最大限度地降低这些风险。 其中包括包含亵亵、威胁和骚扰的不当通信，以及在组织内外共享敏感信息的通信。
+保护敏感信息以及检测和处理工作场所骚扰事件是遵守内部策略和标准的重要组成部分。 [](communication-compliance-feature-reference.md) Microsoft 365 中的通信合规性可帮助你快速检测、捕获电子邮件和 Microsoft Teams 通信并执行修正操作，从而最大限度地降低这些风险。 其中包括包含亵亵、威胁、骚扰和在组织内外共享敏感信息的不当通信。
 
-预定义的冒犯性语言和 *反* 冒犯性策略模板允许你扫描内部和外部通信中的策略匹配项，以便指定的审阅者可以检查它们。 审阅者可以调查组织中扫描的电子邮件、Microsoft Teams、Yammer 或第三方通信，并采取适当的修正措施，以确保他们符合组织标准。
+预定义的 *冒犯性* 语言和反冒犯性策略模板允许你扫描内部和外部通信中的策略匹配项，以便指定的审阅者可以检查这些匹配。 审阅者可以调查组织中扫描的电子邮件、Microsoft Teams、Yammer 或第三方通信，并采取适当的修正措施以确保他们符合组织标准。
 
 预定义的敏感信息策略模板可帮助你快速创建策略，以扫描包含已定义的敏感信息类型或关键字的电子邮件和 Microsoft Teams 通信，以帮助确保重要数据不会与不应具有访问权限的人共享。 这些活动可能包括有关机密项目的未经授权的通信，或有关内部交易或其他合作活动的行业特定规则。
 
-有关计划和配置通信合规性的分步指南，请参阅"规划通信合规性[](communication-compliance-plan.md)"和"通信[合规性入门"。](communication-compliance-configure.md) 有关通信合规性许可信息，请参阅 [Microsoft 365 安全与合规&指南](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#communication-compliance)。
+有关计划和配置通信合规性的分步指南，请参阅规划通信合规性和[](communication-compliance-plan.md)[通信合规性入门](communication-compliance-configure.md)。 有关通信合规性许可信息，请参阅 [Microsoft 365](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#communication-compliance)安全与合规&指南。
 
 ## <a name="task-8-see-whats-happening-with-your-sensitive-items"></a>任务 8：查看敏感项目发生了什么
 
-敏感度标签、敏感信息类型、保留标签和策略以及可训练分类器可用于跨 Exchange、SharePoint 和 OneDrive 对敏感项目进行分类和标记，如前面的任务所见。 快速任务旅程的最后一步是查看哪些项目已标记，以及用户对敏感项目采取的操作。 [内容资源管理器](data-classification-content-explorer.md)[和活动资源管理器](data-classification-activity-explorer.md)提供此可见性。
+敏感度标签、敏感信息类型、保留标签和策略以及可训练分类器可用于跨 Exchange、SharePoint 和 OneDrive 对敏感项目进行分类和标记，如前面的任务所见。 快速任务旅程中的最后一步是查看哪些项目已标记，以及用户正在针对这些敏感项目采取的操作。 [内容资源管理器](data-classification-content-explorer.md)[和活动资源管理器](data-classification-activity-explorer.md)提供此可见性。
 
 ### <a name="content-explorer"></a>内容资源管理器
- 内容资源管理器允许您以本机格式查看已分类为敏感信息类型或由可训练分类器属于特定分类的所有项目，以及应用了敏感度或保留标签的所有项目。
+ 内容资源管理器允许你以本机格式查看已分类为敏感信息类型或属于可训练分类器特定分类的所有项目，以及应用了敏感度或保留标签的所有项目。
 
-有关使用内容资源管理器的分步指南，请参阅"了解数据[-](data-classification-overview.md)数据分类概述"和"内容[资源管理器入门"。](data-classification-content-explorer.md)
+有关使用内容资源管理器的分步指南，请参阅了解数据 [-](data-classification-overview.md)数据分类概述和内容 [资源管理器入门](data-classification-content-explorer.md)。
 
 ### <a name="activity-explorer"></a>活动资源管理器
-活动资源管理器可帮助你监视对分类和标记的敏感项执行哪些操作，包括：
+活动资源管理器可帮助你监视已分类和已标记敏感项正在完成的工作，包括：
 - SharePoint
 - Exchange
 - OneDrive
@@ -122,40 +122,40 @@ Microsoft 提供了几个内置警报策略，可帮助识别管理员权限滥�
 - 文件路径
 - DLP 策略
 
-有关使用活动资源管理器的分步指南，请参阅 [活动资源管理器入门](data-classification-activity-explorer.md)。
+有关使用活动资源管理器的分步指南，请参阅活动 [资源管理器入门](data-classification-activity-explorer.md)。
 
 ## <a name="next-steps"></a>后续步骤
 
-现在，你已为组织配置了合规性管理的基础知识，请考虑 Microsoft 365 中的以下合规性解决方案，以帮助你保护敏感信息，并检测和处理其他内部风险。
+现在，你已为组织配置了合规性管理的基础知识，请考虑 Microsoft 365 中的以下合规性解决方案，以帮助你保护敏感信息并检测和处理其他内部风险。
 
 ### <a name="configure-retention-labels"></a>配置保留标签
 
-虽然保留策略在容器级别应用于 SharePoint 网站和 Exchange 邮箱等位置，但[](retention.md#retention-labels)保留标签允许对保留和删除策略进行更具体的目标设定。 例如，除了管理员自动应用外，最终用户还可以手动应用的文档或电子邮件级别。 您还可以将保留标签应用于 SharePoint 中的文档库、文件夹或文档集，以便存储在该位置的所有文档继承默认保留标签。
+虽然保留策略在容器级别应用于 SharePoint 网站和 Exchange 邮箱等位置，但[](retention.md#retention-labels)保留标签允许更具体的保留和删除策略目标设定。 例如，在文档或电子邮件级别，除了管理员自动应用外，最终用户还可以手动应用。 您还可以将保留标签应用于 SharePoint 中的文档库、文件夹或文档集，以便存储在该位置的所有文档继承默认保留标签。
 
-此外，保留标签还 [支持记录管理](records-management.md) ，以将内容标记为记录。 发生这种情况时，标签对可帮助组织遵守法规要求可能需要的内容施加其他限制。
+此外，保留标签还 [支持记录管理](records-management.md) 以将内容标记为记录。 发生这种情况时，标签对可能帮助组织遵守法规要求的内容设置其他限制。
 
 有关创建和发布保留标签的分步指南，请参阅以下指南：
 - [创建保留标签并在应用中应用它们](create-apply-retention-labels.md)
 - [自动向内容应用保留标签](apply-retention-labels-automatically.md)
 
-若要开始使用记录管理，请参阅 [记录管理入门](get-started-with-records-management.md)。
+若要开始使用记录管理，请参阅记录 [管理入门](get-started-with-records-management.md)。
 
 ### <a name="identify-and-define-sensitive-information-types"></a>标识和定义敏感信息类型
 
-根据组织数据中信息中包含的模式定义敏感信息类型。 使用 [内置敏感信息类型](what-the-sensitive-information-types-look-for.md) 有助于识别和保护信用卡号、银行帐号、护照号等。 或创建自己的 [特定于组织的](create-a-custom-sensitive-information-type.md) 自定义敏感度信息类型。
+根据组织数据中信息中包含的模式定义敏感信息类型。 使用 [内置敏感信息类型](./sensitive-information-type-entity-definitions.md) 有助于识别和保护信用卡号、银行帐号、护照号等。 或创建自己的 [特定于您的组织的自定义](create-a-custom-sensitive-information-type.md) 敏感度信息类型。
 
-有关定义自定义敏感信息类型的分步指南，请参阅安全与合规中心中的& [敏感信息类型](https://docs.microsoft.com/microsoft-365/compliance/create-a-custom-sensitive-information-type)。
+有关定义自定义敏感信息类型的分步指南，请参阅在安全与合规中心内& [敏感信息类型](./create-a-custom-sensitive-information-type.md)。
 
 ### <a name="prevent-data-loss"></a>防止数据丢失
 
-[利用 DLP (策略) ](data-loss-prevention-policies.md) 数据丢失防护，可以识别、监视和自动保护 Microsoft 365 组织中敏感信息。 使用 DLP 策略识别 Microsoft 服务中的敏感项目，防止意外共享敏感项目，并帮助用户了解如何保持合规性而不中断其工作流。
+[数据丢失防护 (DLP) ](data-loss-prevention-policies.md) 策略允许您识别、监视和自动保护 Microsoft 365 组织中敏感信息。 使用 DLP 策略识别 Microsoft 服务中的敏感项目，防止意外共享敏感项目，并帮助用户了解如何保持合规性，而不会中断其工作流。
 
-有关配置 DLP 策略、创建、 [测试和调整 DLP 策略的分步指南](create-test-tune-dlp-policy.md)。 有关数据丢失管理许可信息，请参阅 [Microsoft 365 安全与合规&指南](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#office-365-data-loss-prevention-for-exchange-online-sharepoint-online-and-onedrive-for-business)。
+有关配置 DLP 策略的分步指南，请 [创建](create-test-tune-dlp-policy.md)、测试和调整 DLP 策略。 有关数据丢失管理许可信息，请参阅 [Microsoft 365](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#office-365-data-loss-prevention-for-exchange-online-sharepoint-online-and-onedrive-for-business)安全与合规&指南。
 
 ### <a name="detect-and-act-on-insider-risks"></a>检测内部风险并采取行动
 
-越来越多的员工具有跨各种平台和服务创建、管理和共享数据的访问权限。 在大多数情况下，组织具有有限的资源和工具来识别和缓解组织范围内的风险，同时还满足合规性要求和员工隐私标准。 这些风险可能包括员工离职造成的数据盗窃，以及因意外过度共享或恶意意图而泄露组织外部的信息。
+越来越多的员工具有创建、管理和共享各种平台和服务的数据的访问权。 在大多数情况下，组织具有有限的资源和工具来识别和缓解组织范围内的风险，同时还满足合规性要求和员工隐私标准。 这些风险可能包括因离职员工而窃取数据，以及因意外泄露或恶意意图而泄露组织外部信息。
 
-[](insider-risk-management-policies.md) Microsoft 365 中的内部风险管理使用全面的服务和第三方指标，帮助你快速识别、分类和操作有风险的用户活动。 通过使用 Microsoft 365 和 Microsoft Graph 中的日志，内部风险管理允许你定义特定策略，以确定风险指标并采取措施来缓解这些风险。
+[](insider-risk-management-policies.md) Microsoft 365 中的内部风险管理使用整个服务和第三方指标来帮助你快速识别、会审和操作有风险的用户活动。 通过使用 Microsoft 365 和 Microsoft Graph 中的日志，内部风险管理允许你定义特定策略，以确定风险指标并采取措施缓解这些风险。
 
-有关计划和配置内部风险管理策略的分步指南，请参阅规划内部风险管理和内部[](insider-risk-management-plan.md)[风险管理入门](insider-risk-management-configure.md)。 有关内部风险管理许可信息，请参阅 [Microsoft 365 安全与合规&指南](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#insider-risk-management)。
+有关计划和配置内部风险管理策略的分步指南，请参阅规划内部风险管理和内部[](insider-risk-management-plan.md)[风险管理入门](insider-risk-management-configure.md)。 有关内部风险管理许可信息，请参阅 [Microsoft 365](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#insider-risk-management)安全与合规&指南。

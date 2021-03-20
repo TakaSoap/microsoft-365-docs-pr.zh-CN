@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: 了解如何在安全与合规中心的图形用户界面中为 DLP 创建、修改、删除和测试自定义敏感信息类型。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 049c3c123053b4bd833ea95a2413b81366586870
-ms.sourcegitcommit: 89095172c9c4793d56645b4c885ac8e30936bd0a
+ms.openlocfilehash: 36238d14d3d6a1f84b0fdcae62635922f62b58d3
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50766363"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50908486"
 ---
 # <a name="get-started-with-custom-sensitive-information-types"></a>自定义敏感信息类型入门
 
@@ -45,9 +45,9 @@ ms.locfileid: "50766363"
     - [函数](what-the-dlp-functions-look-for.md)
     - [可信度](sensitive-information-type-learn-about.md#more-on-confidence-levels)
  
-- 必须拥有全局管理员或合规性管理员权限，以便可以通过 UI 创建、测试和部署自定义的敏感信息类型。 请参阅 Office 365 中的[关于管理员角色](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles?view=o365-worldwide)。
+- 必须拥有全局管理员或合规性管理员权限，以便可以通过 UI 创建、测试和部署自定义的敏感信息类型。 请参阅 Office 365 中的[关于管理员角色](/office365/admin/add-users/about-admin-roles?view=o365-worldwide)。
 
-- 组织必须具有包含数据丢失防护 (DLP) 的订阅（如 Office 365 企业版）。 请参阅[邮件策略和合规性服务说明](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/messaging-policy-and-compliance-servicedesc)。 
+- 组织必须具有包含数据丢失防护 (DLP) 的订阅（如 Office 365 企业版）。 请参阅[邮件策略和合规性服务说明](/office365/servicedescriptions/exchange-online-protection-service-description/messaging-policy-and-compliance-servicedesc)。 
 
 
 > [!IMPORTANT]
@@ -71,7 +71,7 @@ ms.locfileid: "50766363"
 12. 检查设置并选择“**提交**”。
 
 > [!IMPORTANT]
-> Microsoft 365 使用搜索爬网程序来确定 SharePoint Online 和 OneDrive for Business 网站中的敏感信息并对其分类。 要确定现有内容中新的自定义敏感信息类型，必须对该内容重新爬网。 根据计划对内容进行爬网，但你可手动重新爬网内容来查找网站集、列表或库。 有关详细信息，请参阅[Manually request crawling and re-indexing of a site, a library or a list](https://docs.microsoft.com/sharepoint/crawl-site-content)（手动请求对网站、库或列表进行爬网和重新编制索引）。
+> Microsoft 365 使用搜索爬网程序来确定 SharePoint Online 和 OneDrive for Business 网站中的敏感信息并对其分类。 要确定现有内容中新的自定义敏感信息类型，必须对该内容重新爬网。 根据计划对内容进行爬网，但你可手动重新爬网内容来查找网站集、列表或库。 有关详细信息，请参阅[Manually request crawling and re-indexing of a site, a library or a list](/sharepoint/crawl-site-content)（手动请求对网站、库或列表进行爬网和重新编制索引）。
 
 13. 在“**数据分类**”页面上，将看到列出的所有敏感信息类型。 选择“**刷新**”，然后浏览或使用搜索工具查找你创建的敏感信息类型。
 

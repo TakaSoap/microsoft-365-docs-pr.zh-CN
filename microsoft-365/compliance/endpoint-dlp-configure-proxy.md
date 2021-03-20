@@ -19,19 +19,19 @@ ms.collection:
 search.appverid:
 - MET150
 description: 了解如何为 Endpoint DLP 配置设备代理和 Internet 连接设置。
-ms.openlocfilehash: 1e723adfbf16ba1180558e34b0fe4867e6337c57
-ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
+ms.openlocfilehash: 3b8ebdbb08a6a866cc84df2031e77378925eaa0e
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49841595"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50907002"
 ---
 # <a name="configure-device-proxy-and-internet-connection-settings-for-endpoint-dlp"></a>为 Endpoint DLP 配置设备代理和 Internet 连接设置
 
 Microsoft Endpoint DLP 使用 Microsoft Windows HTTP (WinHTTP) 报告数据并与 Microsoft Endpoint 云服务通信。 嵌入的 Endpoint DLP 使用 LocalSystem 账户在系统上下文中运行。
 
 > [!TIP]
-> 对于使用正向代理作为 Internet 网关的组织，可以使用网络保护来调查代理背后的情况。 有关详细信息，请参阅[调查正向代理背后发生的连接事件](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/investigate-behind-proxy)。
+> 对于使用正向代理作为 Internet 网关的组织，可以使用网络保护来调查代理背后的情况。 有关详细信息，请参阅[调查正向代理背后发生的连接事件](/windows/security/threat-protection/microsoft-defender-atp/investigate-behind-proxy)。
 
 WinHTTP 配置设置独立于 Windows Internet (WinINet) Internet 浏览代理设置，并且只能使用以下自动发现方法来发现代理服务器：
 
@@ -89,7 +89,7 @@ WinHTTP 配置设置独立于 Windows Internet (WinINet) Internet 浏览代理�
 
      `netsh winhttp reset proxy`
 
-若要了解详细信息。，请参见 [Netsh 命令语法、上下文和格式](https://docs.microsoft.com/windows-server/networking/technologies/netsh/netsh-contexts)。
+若要了解详细信息。，请参见 [Netsh 命令语法、上下文和格式](/windows-server/networking/technologies/netsh/netsh-contexts)。
 
 
 ## <a name="enable-access-to-endpoint-dlp-cloud-service-urls-in-the-proxy-server"></a>在代理服务器中启用对端点 DLP 云服务 URL 的访问
@@ -129,7 +129,7 @@ WinHTTP 配置设置独立于 Windows Internet (WinINet) Internet 浏览代理�
 如果至少有一个连接选项返回 (200) 状态，则 Defender for Endpoint 客户端可以使用此连接方法与测试的 URL 正确通信。 
 
 但是，如果连接检查结果显示失败，则会显示 HTTP 错误（请参阅 HTTP 状态代码）。 然后可以使用[启用对端点 DLP 云服务 URL 的访问](#enable-access-to-endpoint-dlp-cloud-service-urls-in-the-proxy-server)中所示的表中的 URL。 你将使用的 URL 将取决于载入过程中选择的区域。
-[!NOTE]Connectivity Analyzer 工具与 ASR 规则不兼容[阻止源自 PSExec 和 WMI 命令的进程创建](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction#attack-surface-reduction-rules)。 需要暂时禁用此规则才能运行连接工具。
+[!NOTE]Connectivity Analyzer 工具与 ASR 规则不兼容[阻止源自 PSExec 和 WMI 命令的进程创建](/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction#attack-surface-reduction-rules)。 需要暂时禁用此规则才能运行连接工具。
 
 [!NOTE] 在注册表中或通过组策略设置 TelemetryProxyServer 时，如果 Defender for Endpoint 无法访问定义的代理，它将回退到 direct。
 相关主题 • 载入 Windows 10 设备 • Microsoft Endpoint DLP 登录问题疑难解答
@@ -145,8 +145,8 @@ WinHTTP 配置设置独立于 Windows Internet (WinINet) Internet 浏览代理�
 - [数据丢失防护概述](data-loss-prevention-policies.md)
 - [创建、测试和优化 DLP 策略](create-test-tune-dlp-policy.md)
 - [活动资源管理器入门](data-classification-activity-explorer.md)
-- [Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/)
-- [Windows 10 设备的装载工具和方法](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints)
+- [Microsoft Defender for Endpoint](/windows/security/threat-protection/)
+- [Windows 10 设备的装载工具和方法](/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints)
 - [Microsoft 365 订阅](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=1)
-- [已建立 Azure AD 联接的设备](https://docs.microsoft.com/azure/active-directory/devices/concept-azure-ad-join)
+- [已建立 Azure AD 联接的设备](/azure/active-directory/devices/concept-azure-ad-join)
 - [下载基于 Chromium 的新 Microsoft Edge](https://support.microsoft.com/help/4501095/download-the-new-microsoft-edge-based-on-chromium)
