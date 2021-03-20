@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 确定你的 Microsoft 365 客户数据在欧盟内的存储位置
-ms.openlocfilehash: 78c2ae75656df017631fce0a189f6e25ee44f20f
-ms.sourcegitcommit: 4cbb4ec26f022f5f9d9481f55a8a6ee8406968d2
+ms.openlocfilehash: 28bfa7c18aff485e084e4d77bb2a36f0f5b7e95f
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49527681"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50905676"
 ---
 # <a name="data-locations-for-the-european-union"></a>欧盟的数据位置
 
@@ -74,14 +74,14 @@ Microsoft 认识到维护业务数据的隐私和机密性的重要性。 你的
 
 如果需要临时传输，我们将始终在传输中采用最先进的加密技术，并且我们将始终在传输后立即将你的数据返回到你选择的数据存储位置。 对于这些临时传输，我们依靠通过标准合同条款 (SCC) 遵守欧洲法律的方式以及我们采取的补充措施来确保数据受到保护。 
 
-若要了解详细信息，请参阅[欧盟模式条款](https://docs.microsoft.com/microsoft-365/compliance/offering-eu-model-clauses)。
+若要了解详细信息，请参阅[欧盟模式条款](/compliance/regulatory/offering-EU-Model-Clauses)。
 
 >[!Note]
 >如果你选择使用 Sway 和 Workplace Analytics，则这些服务的客户数据将在美国存储和计算。
 >
 
 >[!Note]
->为推行某些方案，必要时，Microsoft 365 服务可能会在欧盟以外的区域查询和存储部分租户目录/标识数据信息。 例如，在跨区域电子邮件路由、呼叫路由和身份验证方案中，Microsoft 365 系统可能需要一些有关欧盟收件人的信息才能正确路由这些请求。 Microsoft 365 系统还依赖 Azure Active Directory 来实现标识和身份验证功能。 若要了解详细信息，请参阅 [Azure Active Directory 中欧洲客户的标识数据存储](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-data-storage-eu)。
+>为推行某些方案，必要时，Microsoft 365 服务可能会在欧盟以外的区域查询和存储部分租户目录/标识数据信息。 例如，在跨区域电子邮件路由、呼叫路由和身份验证方案中，Microsoft 365 系统可能需要一些有关欧盟收件人的信息才能正确路由这些请求。 Microsoft 365 系统还依赖 Azure Active Directory 来实现标识和身份验证功能。 若要了解详细信息，请参阅 [Azure Active Directory 中欧洲客户的标识数据存储](/azure/active-directory/fundamentals/active-directory-data-storage-eu)。
 >
 
 ## <a name="how-microsoft-protects-your-data"></a>Microsoft 如何保护你的数据
@@ -126,8 +126,7 @@ Microsoft 使用多层安全和加密协议来保护你的数据。 请在 [Micr
 ## <a name="additional-resources"></a>其他资源
  
 - [受信任的数据保护](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4FhZn)概括介绍了在你使用 Microsoft Online Services 和专业服务时 Microsoft 如何保护你的数据。 另外，建议参考 [ Microsoft 在线服务条款 (OST) 和数据保护附录(DPA)](https://www.microsoft.com/licensing/product-licensing/products)，它们管控你对这些服务的使用。
-- [符合 GDPR 的 Office 365 数据主体请求](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-office365)可帮助你查找个人数据或个人信息并对其采取行动，从而使用 Microsoft 365 产品、服务和管理工具响应 CSR。 
-- [数据保护影响评估：使用 Microsoft Office 365 的数据控制器指南](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dpia-office365)可帮助你确定你的组织是否需要草拟 DPIA，提供“操作方法”指导，包括可自定义的 DPIA 模板文档，并为许多 Microsoft 365 服务提供 DPIA 服务元素矩阵。
-- [了解操作方法模块](https://docs.microsoft.com/learn/paths/audit-safeguard-customer-data/)是专为寻求全面了解的审计、合规、风险和法律角色人员设计的，深入回顾了 Microsoft 365 的基本安全和隐私实践如何保护客户数据。
-- [Microsoft 合规性产品/服务](https://docs.microsoft.com/microsoft-365/compliance/offering-home)介绍了 Microsoft 365 服务如何帮助你的组织满足合规性标准。 
-
+- [符合 GDPR 的 Office 365 数据主体请求](/compliance/regulatory/gdpr-dsr-Office365)可帮助你查找个人数据或个人信息并对其采取行动，从而使用 Microsoft 365 产品、服务和管理工具响应 CSR。 
+- [数据保护影响评估：使用 Microsoft Office 365 的数据控制器指南](/compliance/regulatory/gdpr-dpia-office365)可帮助你确定你的组织是否需要草拟 DPIA，提供“操作方法”指导，包括可自定义的 DPIA 模板文档，并为许多 Microsoft 365 服务提供 DPIA 服务元素矩阵。
+- [了解操作方法模块](/learn/paths/audit-safeguard-customer-data/)是专为寻求全面了解的审计、合规、风险和法律角色人员设计的，深入回顾了 Microsoft 365 的基本安全和隐私实践如何保护客户数据。
+- [Microsoft 合规性产品/服务](/compliance/regulatory/offering-home)介绍了 Microsoft 365 服务如何帮助你的组织满足合规性标准。

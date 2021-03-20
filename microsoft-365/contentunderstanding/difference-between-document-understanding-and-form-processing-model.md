@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: 描述文档理解与表单处理模型之间的主要差异
-ms.openlocfilehash: a50941ec117480be586ba828e7b49c4a88a310ab
-ms.sourcegitcommit: 88ab08c0fa1acbc9e066009e131b9f2b0d506c64
+ms.openlocfilehash: 9640b028e4b5a9cbd914b183e61de9b8a7ba00bc
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "50712290"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50905786"
 ---
 # <a name="difference-between-document-understanding-and-form-processing-models"></a>文档理解与表单处理模型之间的差异 
 
@@ -34,7 +34,7 @@ ms.locfileid: "50712290"
 虽然这两种模型通常用于相同的用途，但下面列出的主要差异会影响你使用的区别。
 
 > [!NOTE]
-> 有关表单处理和文档理解方案示例的详细信息，请参阅 [SharePoint Syntex 采纳：入门指南](https://docs.microsoft.com/microsoft-365/contentunderstanding/adoption-getstarted#form-processing-scenario-example)。
+> 有关表单处理和文档理解方案示例的详细信息，请参阅 [SharePoint Syntex 采纳：入门指南](./adoption-getstarted.md#form-processing-scenario-example)。
 
 
 ## <a name="structured-versus-unstructured-and-semi-structured-content"></a>结构化内容与非结构化和半结构化内容的比较
@@ -52,9 +52,9 @@ ms.locfileid: "50712290"
 文档理解模型在 SharePoint 内容中心站点中创建和管理。 
 
 > [!NOTE]
-> 有关输入文档的详细信息，请参阅 [表单处理模型的要求和限制](https://docs.microsoft.com/ai-builder/form-processing-model-requirements)。 
+> 有关输入文档的详细信息，请参阅 [表单处理模型的要求和限制](/ai-builder/form-processing-model-requirements)。 
 
-表单处理模型在 PowerApps [AI 生成器](https://docs.microsoft.com/ai-builder/overview)中创建而成，但创建活动是直接从 SharePoint 文档库开始的。 文档库必须启用表单处理模型创建，用户才能为其创建表单处理模型。 管理员可以在内容理解管理员设置中启用表单处理模型创建。 当文件上传到文档库时，表格处理模型会使用 PowerAutomate 流来处理文件。
+表单处理模型在 PowerApps [AI 生成器](/ai-builder/overview)中创建而成，但创建活动是直接从 SharePoint 文档库开始的。 文档库必须启用表单处理模型创建，用户才能为其创建表单处理模型。 管理员可以在内容理解管理员设置中启用表单处理模型创建。 当文件上传到文档库时，表格处理模型会使用 PowerAutomate 流来处理文件。
 
 创建文档理解模型时，将创建一个新的 [SharePoint 内容类型](https://support.microsoft.com/office/use-content-types-to-manage-content-consistently-on-a-site-48512bcb-6527-480b-b096-c03b7ec1d978) 保存到 SharePoint 内容类型库中。 或者如果需要的话，可使用现有的内容类型来定义模型。
 
@@ -85,7 +85,7 @@ ms.locfileid: "50712290"
 | 支持的语言| 英语 <br>2021 年的晚些时候推出：拉丁文字母语言 | 模型适用于所有拉丁字母语言。 除英语外，还包括： 德语、瑞典语、法语、西班牙语、意大利语和葡萄牙语。|
 
 ## <a name="see-also"></a>另请参阅
-[培训：使用 AI 生成器提高业务绩效](https://docs.microsoft.com/learn/paths/improve-business-performance-ai-builder/?source=learn)
+[培训：使用 AI 生成器提高业务绩效](/learn/paths/improve-business-performance-ai-builder/?source=learn)
 
 
 

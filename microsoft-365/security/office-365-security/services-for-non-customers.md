@@ -17,21 +17,21 @@ ms.collection:
 description: 为了维护用户对使用电子邮件的信任，Microsoft 已出台多项帮助保护我们的用户的策略和技术。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 879d2c9d3bc2af0f78a25eb1381a74b67171e939
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 3213cae1b04b3f1a1b861e8f2cfc698576013546
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "50290759"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50903794"
 ---
 # <a name="services-for-non-customers-sending-mail-to-microsoft-365"></a>非客户向 Microsoft 365 发送邮件的服务
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
-电子邮件滥用、垃圾邮件和欺诈邮件（网络钓鱼）继续增加整个电子邮件系统的负担。 为了帮助保持用户对电子邮件使用的信任，Microsoft 已制定各种策略和技术来帮助保护我们的用户。 然而，Microsoft 知道合法的电子邮件不应受到负面影响。 因此，我们建立了一套服务，通过主动管理发件人的发送信誉来帮助发件人提高向 Microsoft 365 用户传递电子邮件的能力。
+电子邮件滥用、垃圾邮件和欺诈邮件（网络钓鱼）继续增加整个电子邮件系统的负担。 为帮助保持用户对电子邮件使用的信任，Microsoft 已制定各种策略和技术来帮助保护我们的用户。 然而，Microsoft 知道合法的电子邮件不应受到负面影响。 因此，我们建立了一套服务，通过主动管理发件人的发送信誉，帮助发件人提高向 Microsoft 365 用户传递电子邮件的能力。
 
-本概述提供有关我们向组织提供的好处的信息，即使你不是客户。
+本概述提供有关我们为您的组织提供的好处的信息，即使您不是客户。
 
 ## <a name="sender-solutions"></a>发件人解决方案
 
@@ -53,18 +53,18 @@ Microsoft 为向 Microsoft 365 收件人发送邮件时遇到问题的人提供�
 
 - 请查看[向 Office 365 发送故障排除邮件](troubleshooting-mail-sent-to-office-365.md)中非客户遇到的最常见的问题。
 
-- 使用 [Microsoft 365](https://sender.office.com) 除名门户提交从阻止的发件人列表中删除 IP 的请求。
+- 使用 [Microsoft 365](https://sender.office.com) 除名门户提交将 IP 从阻止的发件人列表中删除的请求。
 
 - 参阅 [Microsoft 社区论坛](https://community.office365.com/f/)。
 
-- 使用另一种方法联系你尝试发送电子邮件的客户，让他们联系 Microsoft 支持部门并代表你打开支持票证。 在某些情况下，出于法律原因，Microsoft 支持必须与拥有被阻止的 IP 空间的发件人直接沟通。 但是，非客户通常无法开立支持票证。
+- 使用另一种方法联系你尝试通过电子邮件发送的客户，让他们联系 Microsoft 支持并代表你打开支持票证。 在某些情况下，出于法律原因，Microsoft 支持必须与拥有被阻止的 IP 空间的发件人直接沟通。 但是，非客户通常无法开立支持票证。
 
-  有关对 Office 365 的 Microsoft 技术支持的详细信息，请参阅 [支持](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/support)。
+  有关对 Office 365 的 Microsoft 技术支持的详细信息，请参阅 [支持](/office365/servicedescriptions/office-365-platform-service-description/support)。
 
 ## <a name="anti-spam-ip-delist-portal"></a>反垃圾邮件 IP 除名门户
 
-这是一个自助服务门户，可用于将自己从 Microsoft 365 阻止的发件人名单中删除。 如果你尝试向电子邮件地址在 Microsoft 365 中的收件人发送电子邮件，并且你认为你不应是收件人，请使用此门户。 有关详细信息，请参阅[使用除名门户来将自己从阻止的发件人名单中删除](use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis.md)。
+这是自助服务门户，可用于将自己从 Microsoft 365 阻止的发件人名单中删除。 如果您尝试向电子邮件地址在 Microsoft 365 中的收件人发送电子邮件，并且认为不应发送电子邮件，请使用此门户。 有关详细信息，请参阅[使用除名门户来将自己从阻止的发件人名单中删除](use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis.md)。
 
 ## <a name="abuse-and-spam-reporting-for-junk-email-originating-from-exchange-online"></a>源自 Exchange Online 的垃圾邮件的滥用和垃圾邮件报告
 
-有时，第三方会使用 Microsoft365 发送垃圾邮件，这违反了我们的使用条款和策略。 如果收到来自 Office 365 的任何垃圾邮件，可以将这些邮件报告给 Microsoft。 有关说明，请参阅 [向 Microsoft 报告邮件和文件](report-junk-email-messages-to-microsoft.md)。
+有时，第三方会使用 Microsoft365 发送垃圾邮件，这违反我们的使用条款和策略。 如果您收到来自 Office 365 的任何垃圾邮件，您可以向 Microsoft 报告这些邮件。 有关说明，请参阅 [向 Microsoft 报告邮件和文件](report-junk-email-messages-to-microsoft.md)。

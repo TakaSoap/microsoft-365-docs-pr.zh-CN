@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid: met150
 ms.custom: seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: 7db9b9762830384370a4bedf220d7a52112ab1ea
-ms.sourcegitcommit: 3d48e198e706f22ac903b346cadda06b2368dd1e
+ms.openlocfilehash: 43e341111ad1cb9b64ac257903d0e79bf24df5bd
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50727207"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50903877"
 ---
 # <a name="the-unified-microsoft-365-security-center-overview"></a>统一 Microsoft 365 安全中心概述
 
@@ -34,18 +34,18 @@ ms.locfileid: "50727207"
 
 **适用于：**
 
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft 365 Defender](./microsoft-threat-protection.md)
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
-- [Microsoft Defender for Office 365](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft Defender for Office 365](../office-365-security/office-365-atp.md)
 
-> 想要体验 Microsoft 365 Defender？ 可以在[实验室环境中评估它或在](https://aka.ms/mtp-trial-lab)[生产中运行你的试验项目](https://aka.ms/m365d-pilotplaybook)。
+> 想要体验 Microsoft 365 Defender？ 可以在[实验室环境中评估它或在](./mtp-evaluation.md?ocid=cx-docs-MTPtriallab)[生产中运行你的试验项目](./mtp-pilot.md?ocid=cx-evalpilot)。
 
 改进的 **Microsoft 365** 安全中心 () 中心门户中对电子邮件、协作、标识和设备威胁的保护、检测、调查和 [https://security.microsoft.com](https://security.microsoft.com) 响应。   
 
 Microsoft 365 安全中心将现有 Microsoft 安全门户（如 Microsoft Defender 安全中心和 Office 365 安全与合规中心）&功能。 安全中心强调快速访问信息、简化布局以及将相关信息汇集在一起以便于使用。 此中心包括：
 
-- **[Microsoft Defender for Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)** Microsoft Defender for Office 365 通过一组保护电子邮件和 Office 365 资源的预防、检测、调查和搜寻功能帮助组织保护其企业。
-- **[Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)** 为贵组织的设备提供预防性保护、攻破后检测、自动调查和响应。
+- **[Microsoft Defender for Office 365](../office-365-security/office-365-atp.md)** Microsoft Defender for Office 365 通过一组保护电子邮件和 Office 365 资源的预防、检测、调查和搜寻功能帮助组织保护其企业。
+- **[Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)** 为贵组织的设备提供预防性保护、攻破后检测、自动调查和响应。
 - **[Microsoft 365 Defender](microsoft-threat-protection.md)** 是 Microsoft 扩展检测和响应 *(* XDR) 解决方案的一部分，该解决方案利用 Microsoft 365 安全项目组合自动分析跨域的威胁数据，并生成单个仪表板上攻击的图片。
 
 如果需要有关 Office 365 安全中心或 Microsoft Defender 安全中心&更改的信息，请参阅：
@@ -103,13 +103,13 @@ Microsoft 365 安全中心在将 Microsoft Defender for Office 365 和 Microsoft
 
 !["&角色"页显示终结点角色&组、角色和设备组。](../../media/converged-roles-5.png)
 
- 访问 Microsoft 365 安全中心使用 Azure Active Directory 全局角色或自定义角色进行配置。 对于适用于终结点的 Defender，请参阅 [分配用户对 Microsoft Defender 安全中心的访问权限](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/assign-portal-access)。 对于适用于 Office 365 的 Defender，请参阅 [Microsoft 365 合规中心和 Microsoft 365 安全中心中的权限](../office-365-security/permissions-microsoft-365-compliance-security.md)。
+ 访问 Microsoft 365 安全中心使用 Azure Active Directory 全局角色或自定义角色进行配置。 对于适用于终结点的 Defender，请参阅 [分配用户对 Microsoft Defender 安全中心的访问权限](/windows/security/threat-protection/microsoft-defender-atp/assign-portal-access)。 对于适用于 Office 365 的 Defender，请参阅 [Microsoft 365 合规中心和 Microsoft 365 安全中心中的权限](../office-365-security/permissions-microsoft-365-compliance-security.md)。
 
 - 详细了解如何管理对 [Microsoft 365 Defender 的访问权限](mtp-permissions.md)
 - 详细了解如何在 Microsoft 365 [安全中心](custom-roles.md) 创建自定义角色
 
 > [!NOTE]
-> Microsoft 365 安全中心中的 Microsoft Defender for Endpoint 支持向托管安全服务提供商 [ (MSSP) ](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/grant-mssp-access) 授予访问权限，方式与在 [Microsoft Defender](https://docs.microsoft.com/microsoft-365/security/mtp/mssp-access)安全中心授予访问权限的方式相同。
+> Microsoft 365 安全中心中的 Microsoft Defender for Endpoint 支持向托管安全服务提供商 [ (MSSP) ](/windows/security/threat-protection/microsoft-defender-atp/grant-mssp-access) 授予访问权限，方式与在 [Microsoft Defender](./mssp-access.md)安全中心授予访问权限的方式相同。
 
 ### <a name="integrated-reports"></a>集成报告
 
@@ -123,10 +123,10 @@ Microsoft 365 安全中心也统一了报告。 管理员可以从一般安全�
 
 卡片分为以下类别：
 
-- **标识**- 监视组织中的身份，并跟踪可疑或有风险的行为。 [了解有关标识保护的更多信息](https://docs.microsoft.com/azure/active-directory/identity-protection/overview-identity-protection)。
+- **标识**- 监视组织中的身份，并跟踪可疑或有风险的行为。 [了解有关标识保护的更多信息](/azure/active-directory/identity-protection/overview-identity-protection)。
 - **数据** - 帮助跟踪可能导致未经授权的数据泄露的用户活动。
 - **设备** - 获取有关设备上警报、泄露活动和其他威胁最新信息。
-- **应用** - 深入了解在组织中如何使用云应用。 [了解有关 Cloud App Security 发现的应用的更多信息](https://docs.microsoft.com/cloud-app-security/discovered-apps)。
+- **应用** - 深入了解在组织中如何使用云应用。 [了解有关 Cloud App Security 发现的应用的更多信息](/cloud-app-security/discovered-apps)。
 
 ## <a name="threat-analytics-with-better-data-coverage"></a>具有更好的数据覆盖范围的威胁分析
 通过以下 Microsoft 365 Defender 威胁分析集成体验跟踪和响应新出现的威胁：
@@ -175,11 +175,11 @@ Microsoft 365 安全中心包括一个学习中心，从 Microsoft 安全博客�
 
 - [管理事件和警报](manage-incidents.md)
 - [使用威胁分析跟踪和响应新出现的威胁](threat-analytics.md)
-- [操作中心](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-action-center)
-- [跨设备、电子邮件、应用和标识搜寻威胁](https://docs.microsoft.com/microsoft-365/security/mtp/advanced-hunting-query-emails-devices)
-- [自定义检测规则](https://docs.microsoft.com/microsoft-365/security/mtp/custom-detection-rules)
-- [电子邮件&协作警报](https://docs.microsoft.com/microsoft-365/compliance/alert-policies#default-alert-policies)
-- [创建网络钓鱼攻击模拟](https://docs.microsoft.com/microsoft-365/security/office-365-security/attack-simulation-training)[并创建用于培训团队的有效负载](https://docs.microsoft.com/microsoft-365/security/office-365-security/attack-simulation-training-payloads)
+- [操作中心](./mtp-action-center.md)
+- [跨设备、电子邮件、应用和标识搜寻威胁](./advanced-hunting-query-emails-devices.md)
+- [自定义检测规则](./custom-detection-rules.md)
+- [电子邮件&协作警报](../../compliance/alert-policies.md#default-alert-policies)
+- [创建网络钓鱼攻击模拟](../office-365-security/attack-simulation-training.md)[并创建用于培训团队的有效负载](../office-365-security/attack-simulation-training-payloads.md)
  
 ### <a name="related-information"></a>相关信息
 - [Microsoft 365 安全中心](overview-security-center.md)

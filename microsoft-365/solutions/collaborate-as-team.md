@@ -17,12 +17,12 @@ ms.custom:
 localization_priority: Priority
 f1.keywords: NOCSH
 description: 了解在 Teams 中设置团队与来宾进行任务、对话及文档协作所必需的 Microsoft 365 配置步骤。
-ms.openlocfilehash: 986f9c1f343c8ccc3d76557291938d170923c89b
-ms.sourcegitcommit: 88ab08c0fa1acbc9e066009e131b9f2b0d506c64
+ms.openlocfilehash: 4e734af198563d0bc4599b4476b3823384989212
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "50712314"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50904656"
 ---
 # <a name="collaborate-with-guests-in-a-team"></a>在团队中与来宾协作
 
@@ -38,7 +38,7 @@ ms.locfileid: "50712314"
 
 ## <a name="azure-external-collaboration-settings"></a>Azure 外部协作设置
 
-Microsoft 365 中的共享在最高级别由 [Azure Active Directory 中的 B2B 外部协作设置](https://docs.microsoft.com/azure/active-directory/external-identities/delegate-invitations) 管理。 如果在 Azure AD 中禁用或限制来宾共享，此设置将覆盖你在 Microsoft 365 中配置的任何共享设置。
+Microsoft 365 中的共享在最高级别由 [Azure Active Directory 中的 B2B 外部协作设置](/azure/active-directory/external-identities/delegate-invitations) 管理。 如果在 Azure AD 中禁用或限制来宾共享，此设置将覆盖你在 Microsoft 365 中配置的任何共享设置。
 
 检查 B2B 外部协作设置设置以确保不会阻止与来宾共享。
 
@@ -74,7 +74,7 @@ Teams 具有用于来宾访问的主 “开/关” 开关，以及可用于控�
 5. 确保 **在 Teams 中允许来宾访问** 设置为“**开**”。
 6. 对其他来宾设置进行任何所需的更改，然后单击“**保存**”。
 
-启用 Teams 来宾访问后，可以选择使用敏感度标签控制对各个团队及其关联 SharePoint 网站的来宾访问。 有关详细信息，请参阅 [使用敏感度标签保护 Microsoft Teams、Microsoft 365 组和 SharePoint 网站中的内容](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites)。
+启用 Teams 来宾访问后，可以选择使用敏感度标签控制对各个团队及其关联 SharePoint 网站的来宾访问。 有关详细信息，请参阅 [使用敏感度标签保护 Microsoft Teams、Microsoft 365 组和 SharePoint 网站中的内容](../compliance/sensitivity-labels-teams-groups-sites.md)。
 
 > [!NOTE]
 > Teams 来宾设置将在启用后 24 小时内生效。
@@ -187,6 +187,6 @@ Teams 内容（如文件、文件夹和列表）均存储在 SharePoint 中。 �
 
 [创建有托管来宾的 B2B 外网](b2b-extranet.md)
 
-[SharePoint 和 OneDrive 与 Azure AD B2B 的集成](https://docs.microsoft.com/sharepoint/sharepoint-azureb2b-integration-preview)
+[SharePoint 和 OneDrive 与 Azure AD B2B 的集成](/sharepoint/sharepoint-azureb2b-integration-preview)
 
-[从 SharePoint 或 OneDrive 共享时，共享选项呈灰色](https://docs.microsoft.com/sharepoint/troubleshoot/administration/sharing-options-grayed-out-when-sharing-from-sharepoint-online-or-onedrive)
+[从 SharePoint 或 OneDrive 共享时，共享选项呈灰色](/sharepoint/troubleshoot/administration/sharing-options-grayed-out-when-sharing-from-sharepoint-online-or-onedrive)

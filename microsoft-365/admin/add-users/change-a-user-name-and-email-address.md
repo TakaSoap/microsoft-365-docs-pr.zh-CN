@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: fb5ac074-e203-4e1f-9843-b9d1a3e03297
 description: '了解全局管理员可以如何更改用户的电子邮件地址和显示名称。 '
-ms.openlocfilehash: 7f894af3778964dfa6c696c1f467bc0dd8313f32
-ms.sourcegitcommit: 98146c67a1d99db5510fa130340d3b7be8d81b21
+ms.openlocfilehash: 6a5498f4e480802f8770f7b7adde55fe7c996dc8
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2020
-ms.locfileid: "49585290"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50904476"
 ---
 # <a name="change-a-user-name-and-email-address"></a>更改用户名和电子邮件地址
 
@@ -221,7 +221,7 @@ ms.locfileid: "49585290"
 
 ### <a name="a-parameter-cannot-be-found-that-matches-parameter-name-emailaddresses"></a>“找不到与参数名称‘EmailAddresses’匹配的参数”
 
-如果收到错误消息：“**找不到与参数名称‘EmailAddresses’匹配的参数**”，则表明完成租户或自定义域设置（如果最近添加了一个）所需的时间会更长。设置过程最多需要 4 个小时才能完成。稍等片刻，待设置过程完成后重试。如果问题仍然存在，请致电 [支持人员](https://docs.microsoft.com/microsoft-365/admin/contact-support-for-business-products)，让他们为你执行完全同步。
+如果收到错误消息：“**找不到与参数名称‘EmailAddresses’匹配的参数**”，则表明完成租户或自定义域设置（如果最近添加了一个）所需的时间会更长。设置过程最多需要 4 个小时才能完成。稍等片刻，待设置过程完成后重试。如果问题仍然存在，请致电 [支持人员](../contact-support-for-business-products.md)，让他们为你执行完全同步。
   
 ### <a name="were-sorry-the-user-couldnt-be-edited-review-the-user-information-and-try-again"></a>“很抱歉，无法编辑该用户。 请查看用户信息，请查看用户信息并重试”
 
@@ -249,7 +249,7 @@ Set-MsolUserPrincipalName -UserPrincipalName anne.wallace@contoso.onmicrosoft.co
 > [!TIP]
 > 这会更改用户的 **userPrincipalName** 属性，不会影响其 Microsoft 联机电子邮件路由地址 (MOERA) 电子邮件地址。 但是，最佳做法是使用户的登录 UPN 与其主要 SMTP 地址相匹配。 
   
-若要了解如何使用 Windows Server 2003 及更早版本在 Active Directory 中更改用户的用户名，请参阅[重命名用户帐户](https://go.microsoft.com/fwlink/?LinkId=809091)。
+若要了解如何使用 Windows Server 2003 及更早版本在 Active Directory 中更改用户的用户名，请参阅[重命名用户帐户](/previous-versions/windows/it-pro/windows-server-2003/cc772952(v=ws.10))。
   
 ## <a name="related-articles"></a>相关文章
 

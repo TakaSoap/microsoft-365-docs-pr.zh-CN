@@ -17,16 +17,16 @@ ms.custom:
 localization_priority: Priority
 f1.keywords: NOCSH
 description: 在本文中，你将了解与身份未经验证的用户共享文件和文件夹的最佳做法。
-ms.openlocfilehash: eeee1ca0ddbb37525c86f44a3d02ab95de20e9fc
-ms.sourcegitcommit: 8a726ed7ec19a8728c079780fa4d343a5f759fbb
+ms.openlocfilehash: 3fbe48159dab7fd9ebb072feab7724c3186f7847
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "49030061"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50904800"
 ---
 # <a name="best-practices-for-sharing-files-and-folders-with-unauthenticated-users"></a>有关与身份未经验证用户共享文件和文件夹的最佳做法
 
-未经身份验证共享（ *任何人* 链接）非常方便，在各种情景中都很有用。 *任何人* 链接是最简单的共享方式：用户无需身份验证即可打开链接，并可将其自由传递给其他人。
+未经身份验证共享（*任何人* 链接）非常方便，在各种情景中都很有用。 *任何人* 链接是最简单的共享方式：用户无需身份验证即可打开链接，并可将其自由传递给其他人。
 
 通常情况下，并非组织中的所有内容都适合未经身份验证共享。 本文介绍了一些可用选项，这些选项可帮助你创建一个环境，让你的用户能在其中未经身份验证共享文件和文件夹，但其中也有安全措施来帮助你保护组织的内容。
 
@@ -42,90 +42,90 @@ ms.locfileid: "49030061"
 设置组织中“任何人”链接到期日期
 
 1. 打开 [SharePoint 管理中心](https://admin.microsoft.com/sharepoint)。
-2. 在左侧导航中，单击“ **共享** ”。
+2. 在左侧导航中，单击“**共享**”。
 3. 在 **“任何人链接的选择到期和权限”** 下，选中 **“这些链接必须在这些天数内过期”** 复选框。</br>
    ![SharePoint 组织级别的“任何人”链接到期设置的屏幕截图](../media/sharepoint-organization-anyone-link-expiration.png)
-4. 在输入框中键入天数，然后单击“ **保存** ”。
+4. 在输入框中键入天数，然后单击“**保存**”。
 
 设置特定站点“任何人”链接的到期日期
 
 1. 打开 [SharePoint 管理中心](https://admin.microsoft.com/sharepoint)。
-2. 在左侧导航中，展开“ **站点** ”，然后单击“ **活动站点** ”。
-3. 选择要更改的站点，然后单击“ **共享** ”。
-4. 在“ **“任何人”链接的高级设置** ” 的“ **”任何人“链接到期** ”下，取消选中“ **与组织级设置相同** ”复选框。</br>
+2. 在左侧导航中，展开“**站点**”，然后单击“**活动站点**”。
+3. 选择要更改的站点，然后单击“**共享**”。
+4. 在“**“任何人”链接的高级设置**” 的“**”任何人“链接到期**”下，取消选中“**与组织级设置相同**”复选框。</br>
    ![SharePoint 网站级别的“任何人”链接到期设置的屏幕截图](../media/sharepoint-organization-anyone-link-expiration-site.png)
-5. 选择“ **这些链接必须在该天数内过期** ”选项，然后再框中输入天数。
-6. 单击“ **保存** ”。
+5. 选择“**这些链接必须在该天数内过期**”选项，然后再框中输入天数。
+6. 单击“**保存**”。
 
-请注意， *任何人* 链接到期后，可以使用新的“ *任何人* ”链接重新共享该文件或文件夹。
+请注意，*任何人* 链接到期后，可以使用新的“*任何人*”链接重新共享该文件或文件夹。
 
-可使用 [Set-SPOSite](https://docs.microsoft.com/powershell/module/sharepoint-online/set-sposite) 设置特定 OneDrive 的“ *任何人* ”链接的到期时间。
+可使用 [Set-SPOSite](/powershell/module/sharepoint-online/set-sposite) 设置特定 OneDrive 的“*任何人*”链接的到期时间。
 
 ## <a name="set-link-permissions"></a>设置链接权限
 
 默认情况下，文件的 *任何人* 链接允许用户编辑文件，而文件夹的 *任何人* 链接允许用户编辑和查看其中的文件以及向文件夹上传新文件。 可单独将这些文件和文件夹的权限更改为“仅查看”。
 
-如果希望允许未经身份验证共享，但担心未经身份验证的人员修改组织的内容，可考虑将文件和文件夹权限设置为“ **查看** ”。
+如果希望允许未经身份验证共享，但担心未经身份验证的人员修改组织的内容，可考虑将文件和文件夹权限设置为“**查看**”。
 
 设置组织中“任何人”链接权限
 
 1. 打开 [SharePoint 管理中心](https://admin.microsoft.com/sharepoint)。
-2. 在左侧导航中，单击“ **共享** ”。
-3. 在“ **‘任何人’链接的高级设置** ”下，选择要使用的文件和文件夹权限。</br>
+2. 在左侧导航中，单击“**共享**”。
+3. 在“**‘任何人’链接的高级设置**”下，选择要使用的文件和文件夹权限。</br>
    ![SharePoint 组织级别的“任何人”链接权限设置的屏幕截图](../media/sharepoint-organization-anyone-link-permissions.png)
 
-“ *任何人* ”链接设置为“ **查看** ”后，用户仍可与来宾共享文件和文件夹，并可使用 *特定人员* 链接为其提供编辑权限。 这些链接要求组织外人员作为来宾进行身份验证，并且你可以跟踪和审核使用这些链接共享的文件和文件夹上的来宾活动。
+“*任何人*”链接设置为“**查看**”后，用户仍可与来宾共享文件和文件夹，并可使用 *特定人员* 链接为其提供编辑权限。 这些链接要求组织外人员作为来宾进行身份验证，并且你可以跟踪和审核使用这些链接共享的文件和文件夹上的来宾活动。
 
 ## <a name="set-default-link-type-to-only-work-for-people-in-your-organization"></a>将默认链接类型设置为仅适用于组织内部人员
 
-为组织启用 *任何人* 共享后，通常将默认共享链接设置为“ **任何人** ”。 虽然这对用户来说非常方便，但是会增加意外的未经身份验证的共享风险。 如果用户忘记在共享敏感文档时更改链接类型，可能会意外地创建不需要身份验证的共享链接。
+为组织启用 *任何人* 共享后，通常将默认共享链接设置为“**任何人**”。 虽然这对用户来说非常方便，但是会增加意外的未经身份验证的共享风险。 如果用户忘记在共享敏感文档时更改链接类型，可能会意外地创建不需要身份验证的共享链接。
 
 你可以通过将默认链接设置更改为仅适用于组织内部人员的链接来降低此风险。 确实需要未经身份验证共享的用户，则必须明确选择该选项。
 
 为组织设置默认文件和文件夹共享链接
 1. 打开 [SharePoint 管理中心](https://admin.microsoft.com/sharepoint)。
-2. 在左侧导航中，单击“ **共享** ”。
-3. 在“ **文件和文件夹链接** ”下，选中“ **仅限组织中的人员** ”。
+2. 在左侧导航中，单击“**共享**”。
+3. 在“**文件和文件夹链接**”下，选中“**仅限组织中的人员**”。
 
    ![SharePoint 默认链接类型设置的屏幕截图](../media/sharepoint-default-sharing-link-company-link.png)
 
-4. 单击“ **保存** ”
+4. 单击“**保存**”
 
 为特定站点设置默认文件和文件夹共享链接
 1. 打开 [SharePoint 管理中心](https://admin.microsoft.com/sharepoint)。
-2. 在左侧导航中，展开“ **站点** ”，然后单击“ **活动站点** ”。
-3. 选择要更改的站点，然后单击“ **共享** ”。
-4. 在“ **默认共享链接类型** ”下，清除“ **与组织级别设置相同** ”复选框。
+2. 在左侧导航中，展开“**站点**”，然后单击“**活动站点**”。
+3. 选择要更改的站点，然后单击“**共享**”。
+4. 在“**默认共享链接类型**”下，清除“**与组织级别设置相同**”复选框。
 
    ![SharePoint 网站级默认链接类型设置的屏幕快照](../media/sharepoint-organization-anyone-link-permissions-site.png)
 
-5. 选择“ **仅限组织中的人员** ”选项，然后单击“ **保存** ”。
+5. 选择“**仅限组织中的人员**”选项，然后单击“**保存**”。
 
 ## <a name="prevent-unauthenticated-sharing-of-sensitive-content"></a>阻止未经身份验证共享敏感内容
 
-可使用 [数据丢失防护（DLP）](https://docs.microsoft.com/microsoft-365/compliance/data-loss-prevention-policies) 阻止未经身份验证共享敏感内容。 数据丢失防护可以根据文件的敏感度标签、保留标签或文件本身中的敏感信息采取措施。
+可使用 [数据丢失防护（DLP）](../compliance/data-loss-prevention-policies.md) 阻止未经身份验证共享敏感内容。 数据丢失防护可以根据文件的敏感度标签、保留标签或文件本身中的敏感信息采取措施。
 
 创建 DLP 规则
 1. 在 Microsoft 365 合规性管理中心中，转到“[数据丢失防护页面](https://compliance.microsoft.com/datalossprevention)”。
-2. 单击“ **创建策略** ”。
-3. 选择“ **自定义** ”，然后单击“ **下一步** ”。
-4. 键入策略名称，并单击“ **下一步** ”。
-5. 在“ **要应用该策略的位置** ”页面上，关闭除 “ **SharePoint 网站** ”和 “ **OneDrive 帐户** ”之外的所有设置，然后单击“ **下一步** ”。
-6. 在“ **定义策略设置** ”页面上，单击“ **下一步** ”。
-7. 在“ **自定义高级 DLP 规则** ”页面上，单击“ **创建规则** ”并输入规则名称。
-8. 在“ **条件** ”下，单击“ **添加条件** ”，然后选择“ **内容包含** ”。
-9. 单击“ **添加** ”，然后选择要阻止未经身份验证共享的信息类型。
+2. 单击“**创建策略**”。
+3. 选择“**自定义**”，然后单击“**下一步**”。
+4. 键入策略名称，并单击“**下一步**”。
+5. 在“**要应用该策略的位置**”页面上，关闭除 “**SharePoint 网站**”和 “**OneDrive 帐户**”之外的所有设置，然后单击“**下一步**”。
+6. 在“**定义策略设置**”页面上，单击“**下一步**”。
+7. 在“**自定义高级 DLP 规则**”页面上，单击“**创建规则**”并输入规则名称。
+8. 在“**条件**”下，单击“**添加条件**”，然后选择“**内容包含**”。
+9. 单击“**添加**”，然后选择要阻止未经身份验证共享的信息类型。
 
    ![条件选项、敏感信息类型、敏感度标签和保留标签的屏幕截图。](../media/limit-accidental-exposure-dlp-conditions.png)
 
-10. 在“ **操作** ”下，单击“ **添加操作** ”，然后选择“ **限制访问或对 Microsoft 365 位置中的内容进行加密** ”。
-11. 选中“ **限制访问或对 Microsoft 365 位置中的内容进行加密** ”复选框，然后选择“ **仅限通过“使用此链接的任何人”选项提供内容访问权限的人员** ”选项。
+10. 在“**操作**”下，单击“**添加操作**”，然后选择“**限制访问或对 Microsoft 365 位置中的内容进行加密**”。
+11. 选中“**限制访问或对 Microsoft 365 位置中的内容进行加密**”复选框，然后选择“**仅限通过“使用此链接的任何人”选项提供内容访问权限的人员**”选项。
 
       ![DLP 规则操作选项屏幕截图](../media/limit-accidental-exposure-dlp-anyone-links.png)
 
-12. 单击“ **保存** ”，然后单击“ **下一步** ”。
-13. 选择测试选项，然后单击“ **下一步** ”。
-14. 单击“ **提交** ”，然后单击“ **完成** ”。
+12. 单击“**保存**”，然后单击“**下一步**”。
+13. 选择测试选项，然后单击“**下一步**”。
+14. 单击“**提交**”，然后单击“**完成**”。
 
 ## <a name="protect-against-malicious-files"></a>防范恶意文件
 
@@ -133,14 +133,14 @@ ms.locfileid: "49030061"
 
 启用安全附件
 1. 在安全性和合规性管理中心中打开 “[ATP 安全附件页面](https://protection.office.com/safeattachmentv2)”。
-2. 单击“ **全局设置** ”。
+2. 单击“**全局设置**”。
 3. 启用适用于 SharePoint、OneDrive 和 Microsoft Teams 的 ATP。
 
    ![安全与合规中心的安全附件设置的屏幕截图](../media/safe-attachments-setting.png)
 
-4. 也可以选择打开安全文档，然后单击“ **保存** ”
+4. 也可以选择打开安全文档，然后单击“**保存**”
 
-请参阅[适用于 SharePoint、OneDrive 和 Microsoft Teams 的 ATP](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-for-spo-odb-and-teams) 和[启用适用于 SharePoint、OneDrive 和 Microsoft Teams 的 ATP](https://docs.microsoft.com/microsoft-365/security/office-365-security/turn-on-atp-for-spo-odb-and-teams) 以获取其他指导。
+请参阅[适用于 SharePoint、OneDrive 和 Microsoft Teams 的 ATP](../security/office-365-security/atp-for-spo-odb-and-teams.md) 和[启用适用于 SharePoint、OneDrive 和 Microsoft Teams 的 ATP](../security/office-365-security/turn-on-atp-for-spo-odb-and-teams.md) 以获取其他指导。
 
 ## <a name="add-copyright-information-to-your-files"></a>将版权信息添加到文件
 
@@ -149,20 +149,20 @@ ms.locfileid: "49030061"
 向带标签的文件添加页脚
 
 1. 打开 [Microsoft 365 合规管理中心](https://compliance.microsoft.com)。
-2. 在左侧导航栏中的“ **解决方案** ”下，单击“ **信息保护** ”。
-3. 单击要添加页脚的标签，然后单击“ **编辑标签** ”。
-4. 单击“ **下一步** ”以进入“ **内容标记** ”选项卡，然后“ **启用** ”内容标记。
-5. 选中要添加的文本类型的复选框，然后单击“ **自定义文本** ”。
-6. 键入要添加到文档中的文本，选择所需的文本选项，然后单击“ **保存** ”。</br>
+2. 在左侧导航栏中的“**解决方案**”下，单击“**信息保护**”。
+3. 单击要添加页脚的标签，然后单击“**编辑标签**”。
+4. 单击“**下一步**”以进入“**内容标记**”选项卡，然后“**启用**”内容标记。
+5. 选中要添加的文本类型的复选框，然后单击“**自定义文本**”。
+6. 键入要添加到文档中的文本，选择所需的文本选项，然后单击“**保存**”。</br>
    ![灵敏度标签的内容标记设置的屏幕截图](../media/content-marking-for-anonymous-sharing.png)
-7. 单击“ **下一步** ”以到达向导的结尾，然后单击“ **保存标签** ”。
+7. 单击“**下一步**”以到达向导的结尾，然后单击“**保存标签**”。
 
 为标签启用内容标记后，用户应用该标签时，你指定的文本将添加到 Office 文档。
 
 ## <a name="see-also"></a>另请参阅
 
-[敏感度标签概述](https://docs.microsoft.com/Office365/SecurityCompliance/sensitivity-labels)
+[敏感度标签概述](/Office365/SecurityCompliance/sensitivity-labels)
 
 [与来宾共享时限制文件意外曝光](share-limit-accidental-exposure.md)
 
-[创建安全的来宾共享环境](create-secure-guest-sharing-environment.md)
+[Create a secure guest sharing environment](create-secure-guest-sharing-environment.md)（创建安全的来宾共享环境）

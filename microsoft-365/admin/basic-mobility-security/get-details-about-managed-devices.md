@@ -1,5 +1,5 @@
 ---
-title: 获取有关基本移动和安全托管设备的详细信息
+title: 获取有关基本移动性和安全性托管设备的详细信息
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -17,39 +17,39 @@ ms.custom:
 - AdminSurgePortfolio
 search.appverid:
 - MET150
-description: 使用Windows PowerShell获取有关组织中基本移动性和安全设备的详细信息。
-ms.openlocfilehash: 7c6a0365dfd573377c3675bbcee8ee8280e33816
-ms.sourcegitcommit: 8849dd6f80217c29f427c7f008d918f30c792240
+description: 使用Windows PowerShell获取有关组织中基本移动和安全设备的详细信息。
+ms.openlocfilehash: 92fcd6f39ffff97d7a4ecd2a69626ece54b481b2
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49876884"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50904248"
 ---
-# <a name="get-details-about-basic-mobility-and-security-managed-devices"></a>获取有关基本移动和安全托管设备的详细信息
+# <a name="get-details-about-basic-mobility-and-security-managed-devices"></a>获取有关基本移动性和安全性托管设备的详细信息
 
-本文演示如何使用 Windows PowerShell 获取有关组织中为基本移动性和安全性设置的设备的详细信息。
+本文演示如何使用 Windows PowerShell获取有关您为基本移动性和安全性设置的组织中设备的详细信息。
 
 以下是可供你使用的设备详细信息的细目。
 
 |**详细信息**|**在 PowerShell 中查找什么**|
 |:----------------|:------------------------------------------------------------------------------|
-|设备在基本移动性和安全性中注册。 有关详细信息，请参阅使用基本移动性和安全性 [注册移动设备](enroll-your-mobile-device.md)| *isManaged 参数*   的值为：<br/>**True**= 设备已注册。<br/>**False**= 设备未注册。 |
-|设备符合设备安全策略。 有关详细信息，请参阅" [创建设备安全策略"](create-device-security-policies.md)| *isCompliant* 参数   的值为：<br/>**True**  = 设备符合策略。<br/>**False**  = 设备不符合策略。|
+|设备已注册基本移动性和安全性。 有关详细信息，请参阅使用基本 [移动性和安全性注册移动设备](enroll-your-mobile-device.md)| *isManaged 参数*   的值为：<br/>**True**= 设备已注册。<br/>**False**= 设备未注册。 |
+|设备符合设备安全策略。 有关详细信息，请参阅 [创建设备安全策略](create-device-security-policies.md)| *isCompliant* 参数   的值为：<br/>**True**  = 设备符合策略。<br/>**False**  = 设备不符合策略。|
 
 :::image type="content" source="../../media/basic-mobility-security/bms-7-powershell-parameters.png" alt-text="基本移动性和安全性 PowerShell 参数":::
 
 >[!NOTE]
 >本文中的命令和脚本还返回有关 [由 Microsoft Intune](https://www.microsoft.com/cloud-platform/microsoft-intune)管理的任何设备的详细信息。
 
-## <a name="before-you-begin"></a>准备工作
+## <a name="before-you-begin"></a>开始之前
 
-需要设置一些操作来运行本文中所述的命令和脚本。
+需要设置一些操作以运行本文中所述的命令和脚本。
 
 ### <a name="step-1-download-and-install-the-azure-active-directory-module-for-windows-powershell"></a>步骤 1：下载并安装 Azure Active Directory 模块Windows PowerShell
 
-有关这些步骤详细信息，请参阅使用 PowerShell 连接到 [Microsoft 365。](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell)
+有关这些步骤详细信息，请参阅使用 PowerShell 连接到 [Microsoft 365。](/office365/enterprise/powershell/connect-to-office-365-powershell)
 
-1. 转到Microsoft Online Services Sign-In IT 专业人员 [RTWl](https://www.microsoft.com/download/details.aspx?id=41950)的助理，然后选择   "Microsoft Online Services **登录助手"。**   
+1. 转到"Microsoft Online Services Sign-In IT 专业人员 [RTWl"，](https://www.microsoft.com/download/details.aspx?id=41950)然后选择   "下载 **Microsoft Online Services登录助手"。**
 
 2. 安装用于 Windows PowerShell 的 Microsoft Azure Active Directory 模块，具体步骤如下：
 
@@ -65,11 +65,11 @@ ms.locfileid: "49876884"
 
 ### <a name="step-2-connect-to-your-microsoft-365-subscription"></a>步骤 2：连接到 Microsoft 365 订阅
 
-1. 在Windows Azure Active Directory 模块中Windows PowerShell，运行以下命令。  
+1. 在Windows Azure Active Directory 模块中Windows PowerShell运行以下命令。  
 
     $UserCredential = Get-Credential
 
-2. 在Windows PowerShell凭据请求对话框中，键入 Microsoft 365 全局管理员帐户的用户名和密码，然后选择"**确定"。**
+2. 在"Windows PowerShell凭据请求"对话框中，键入 Microsoft 365 全局管理员帐户的用户名和密码，然后选择"确定 **"。**
 
 3. 运行以下命令。
 
@@ -82,7 +82,7 @@ ms.locfileid: "49876884"
 
 若要运行 Get-MsolUserDeviceComplianceStatus.ps1 脚本，需要启用 PowerShell 脚本的运行。
 
-1. 在 Windows 桌面版 **中，** 选择"开始"，然后键入Windows PowerShell。 右键单击Windows PowerShell，然后选择"以 **管理员角色运行"。**
+1. 在 Windows 桌面版中， **选择"开始**"，然后键入Windows PowerShell。 右键单击"Windows PowerShell"，然后选择"以 **管理员角色运行"。**
 
 2. 运行以下命令。
 
@@ -98,7 +98,7 @@ ms.locfileid: "49876884"
 
     Get-MsolDevice -All -ReturnRegisteredOwners |Where-Object {$_.RegisteredOwners.Count -gt 0}
 
-有关更多示例，请参阅  [Get-MsolDevice](https://go.microsoft.com/fwlink/?linkid=841721)。
+有关更多示例，请参阅  [Get-MsolDevice](https://go.microsoft.com/fwlink/?linkid=2157939)。
 
 ## <a name="run-a-script-to-get-device-details"></a>运行脚本获取设备详细信息
 
@@ -149,7 +149,7 @@ ms.locfileid: "49876884"
 23.  }
     
 
-25.  function createResultObject
+25.  函数 createResultObject
     
 
 26.  {
@@ -185,7 +185,7 @@ ms.locfileid: "49876884"
 41.  [PSObject]$devices = get-msoldevice -RegisteredOwnerUpn $u.UserPrincipalName
     
 
-42.  foreach ($d $devices) 
+42.  foreach ($d in $devices) 
     
 
 43.  {
@@ -269,7 +269,7 @@ ms.locfileid: "49876884"
 
 1. 打开用于 Windows PowerShell 的 Microsoft Azure Active Directory 模块。
     
-2. 转到保存脚本的文件夹。 例如，如果保存到 C：\PS-Scripts，请运行以下命令。
+2. 转到保存脚本的文件夹。 例如，如果已保存到 C：\PS-Scripts，请运行以下命令。
     
     cd C：\PS-Scripts
 
@@ -287,7 +287,7 @@ ms.locfileid: "49876884"
 
 1. 打开用于 Windows PowerShell 的 Microsoft Azure Active Directory 模块。
     
-2. 转到保存脚本的文件夹。 例如，如果保存到 C：\PS-Scripts，请运行以下命令。   
+2. 转到保存脚本的文件夹。 例如，如果已保存到 C：\PS-Scripts，请运行以下命令。   
 
     cd C：\PS-Scripts
 
@@ -295,7 +295,7 @@ ms.locfileid: "49876884"
 
     $u = Get-MsolGroupMember -SearchString "FinanceStaff" |% { Get-MsolUser -ObjectId $_。ObjectId }
 
-4. 运行以下命令以启动脚本。   
+4. 运行以下命令以启动脚本。
 
     .\Get-MsolUserDeviceComplianceStatus.ps1 -User $u -Export
 
@@ -303,8 +303,8 @@ ms.locfileid: "49876884"
 
 ## <a name="related-topics"></a>相关主题
 
-[Microsoft Connect 已停用](https://docs.microsoft.com/collaborate/connect-redirect)
+[Microsoft Connect 已停用](/collaborate/connect-redirect)
 
 [基本移动性和安全性概览](overview.md)
 
-[Get-MsolDevice](https://go.microsoft.com/fwlink/?linkid=841721)
+[Get-MsolDevice](https://go.microsoft.com/fwlink/?linkid=2157939)

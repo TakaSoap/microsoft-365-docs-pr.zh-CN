@@ -15,118 +15,118 @@ ms.collection:
 ms.custom: ''
 localization_priority: Normal
 f1.keywords: NOCSH
-description: 了解如何使用来自合作伙伴组织的受管理的来宾创建 B2B extranet 网站或团队。
-ms.openlocfilehash: cfb7cc4310cb83f9ce7761c95f021724b7d75faf
-ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
+description: 了解如何使用合作伙伴组织的托管来宾创建 B2B Extranet 站点或团队。
+ms.openlocfilehash: f9b8d9326f302233ed85c9d168fdf6f343dc6cbf
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49613592"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50904752"
 ---
 # <a name="create-a-b2b-extranet-with-managed-guests"></a>创建托管有来宾的 B2B 外联网
 
-您可以使用 [Azure Active Directory 权限管理](https://docs.microsoft.com/azure/active-directory/governance/entitlement-management-overview) 创建 B2B extranet，以与使用 Azure Active Directory 的合作伙伴组织进行协作。 这样，用户可以在 extranet 网站或团队中自行注册，并通过审批工作流接收访问权限。
+可以使用 [Azure Active Directory 权利管理](/azure/active-directory/governance/entitlement-management-overview) 创建 B2B Extranet，以与使用 Azure Active Directory 的合作伙伴组织进行协作。 这允许用户在 Extranet 网站或团队中自行注册，并可以通过审批工作流接收访问权限。
 
-通过这种共享资源进行协作的方法，合作伙伴组织可以帮助他们在最终环境中维护和批准来宾，从而减少 IT 部门的负担，并允许最熟悉协作协议的人管理用户访问。
+通过这种共享协作资源的方法，合作伙伴组织可以帮助维护和批准来宾，从而减少 IT 部门的负担，并允许最熟悉协作协议的人管理用户访问。
 
-本文逐步介绍了在此示例中创建资源包的步骤 (在此示例中，可以通过自助服务访问注册模型与合作伙伴组织共享的网站或团队) 。 
+本文逐步介绍了创建资源包的步骤 (在这种情况下，创建一个站点或工作组) 可通过自助服务访问注册模型与合作伙伴组织共享。 
 
-在开始之前，请创建要与合作伙伴组织共享的网站或团队，并为其启用来宾共享。 有关详细信息，请参阅 [在网站中与来宾进行协作](collaborate-in-site.md) 或 [与团队中的来宾协作](collaborate-as-team.md) 。 我们还建议您查看 " [创建安全来宾共享环境](create-secure-guest-sharing-environment.md) "，以获取有关安全和合规性功能的信息，您可以使用这些功能来帮助维护与来宾协作时的管理策略。
+在开始之前，创建要与合作伙伴组织共享的站点或团队，并启用它进行来宾共享。 有关详细信息 [，请参阅在网站](collaborate-in-site.md) 中与来宾协作或与 [团队中的](collaborate-as-team.md) 来宾协作。 我们还建议您 [查看创建安全的](create-secure-guest-sharing-environment.md) 来宾共享环境，了解可用于在与来宾协作时维护治理策略的安全与合规性功能。
 
 ## <a name="license-requirements"></a>许可要求
 
-若要使用此功能，需要使用 Azure AD 高级 P2 许可证。 
+使用此功能需要 Azure AD Premium P2 许可证。 
 
-专用云（如 Azure 德国和 Azure 中国世纪）目前不可使用。
+专用云（如 Azure Germany 和 Azure China 21Vianet）目前不可用。
 
 ## <a name="video-demonstration"></a>视频演示
 
-该视频演示了本文中介绍的过程。
+此视频演示了本文中介绍的过程。
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4wKUj?autoplay=false]
 
 ## <a name="connect-the-partner-organization"></a>连接合作伙伴组织
 
-为了从合作伙伴组织中邀请来宾，您需要在 Azure Active Directory 中将合作伙伴的域添加为连接的组织。
+若要邀请合作伙伴组织的来宾，你需要将合作伙伴的域添加为 Azure Active Directory 中的已连接组织。
 
 添加已连接的组织
-1. 在 " [Azure Active Directory](https://aad.portal.azure.com)" 中，单击 " **身份治理**"。
-2. 单击 " **连接的组织**"。
-4. 单击 " **添加已连接的组织**"。
-5. 键入组织的名称和说明，然后单击 " **下一步： Directory + 域**"。
-6. 单击 " **添加目录 + 域**"。
-7. 键入要连接的组织的域，然后单击 " **添加**"。
-8. 单击 " **连接**"，然后单击 " **下一步：主办方**"。
-9. 添加你的组织或你要连接到的组织中的人员，以批准对来宾的访问权限。
-10. 单击 " **下一步：审阅 + 创建**"。
-11. 查看您选择的设置，然后单击 " **创建**"。
+1. 在 [Azure Active Directory 中，](https://aad.portal.azure.com)单击 **"标识治理"。**
+2. 单击"**连接的组织"。**
+4. 单击 **"添加已连接的组织"。**
+5. 键入组织的名称和说明，然后单击"下一步：**目录 + 域"。**
+6. 单击 **"添加目录 + 域"。**
+7. 键入要连接的组织的域，然后单击"添加 **"。**
+8. 单击 **"连接**"，然后单击"**下一步： 发起人"。**
+9. 添加来自组织或要连接到要批准来宾访问的组织的人员。
+10. 单击“**下一步: 评审+创建**”。
+11. 查看已选择的设置，然后单击"创建 **"。**
 
-    ![Azure Active Directory 中的 "连接的组织" 页面的屏幕截图](../media/identity-governance-connected-organizations.png)
+    ![Azure Active Directory 中已连接组织页面的屏幕截图](../media/identity-governance-connected-organizations.png)
 
 ## <a name="choose-the-resources-to-share"></a>选择要共享的资源
 
-选择要与合作伙伴组织共享的资源的第一步是创建要包含它们的目录。
+选择要与合作伙伴组织共享的资源的第一步是创建包含这些资源的目录。
 
 创建目录
-1. 在 " [Azure Active Directory](https://aad.portal.azure.com)" 中，单击 " **身份治理**"。
-2. 单击 " **目录**"。
-3. 单击 " **新建目录**"。
-4. 键入目录的名称和说明，并确保 **为外部用户****启用** 和启用两者都设置为 **"是"**。
+1. 在 [Azure Active Directory 中，](https://aad.portal.azure.com)单击 **"标识治理"。**
+2. 单击 **"目录"。**
+3. 单击 **"新建目录"。**
+4. 键入目录的名称和说明，并确保为外部用户启用和启用 **两者** 都设置为 **是**。
 5. 单击“**创建**”。
 
-   ![Azure Active Directory 标识管理中的目录页面的屏幕截图](../media/identity-governance-catalogs.png)
+   ![Azure Active Directory Identity Governance 中的目录页面屏幕截图](../media/identity-governance-catalogs.png)
 
-创建目录后，添加要与合作伙伴组织共享的 SharePoint 网站或团队。
+创建目录后，添加要与合作伙伴组织共享 SharePoint 站点或团队。
 
-将资源添加到目录
-1. 在 Azure AD 标识管理中，单击 " **目录**"，然后单击要在其中添加资源的目录。
-2. 单击 " **资源** "，然后单击 " **添加资源**"。
-3. 选择要包含在 extranet 中的团队或 SharePoint 网站，然后单击 " **添加**"。
+向目录添加资源
+1. 在 Azure AD Identity Governance 中，单击 **"目录"，** 然后单击要添加资源的目录。
+2. 单击 **"资源**"，然后单击"**添加资源"。**
+3. 选择要包括在 Extranet 中的团队或 SharePoint 网站，然后单击"添加 **"。**
 
-   ![Azure Active Directory 标识管理中的 "目录资源" 页面的屏幕截图](../media/identity-governance-catalog-resource.png)
+   ![Azure Active Directory Identity Governance 中的目录资源页面屏幕截图](../media/identity-governance-catalog-resource.png)
 
-在定义了要共享的资源后，下一步是创建访问包，该程序包将定义合作伙伴用户授予的访问类型和请求访问的新合作伙伴用户的审批流程。
+定义要共享的资源后，下一步是创建访问包，该包定义授予合作伙伴用户的访问权限类型以及请求访问的新合作伙伴用户的审批过程。
 
 创建访问包
-1. 在 Azure AD 标识管理中，单击 " **目录**"，然后单击要在其中创建访问包的目录。
-2. 单击 " **访问包**"，然后单击 " **新建 Access 程序包**"。
-3. 键入访问包的名称和说明，然后单击 " **下一步：资源角色**"。
-4. 从目录中选择要用于 extranet 的资源。
-5. 对于每个资源，在 " **角色** " 列中，选择要为使用 extranet 的来宾授予的用户角色。
-6. 单击 " **下一步：请求**"。
-7. 在 " **可请求访问权限的用户**" 下，选择 " **不在你的目录中的用户**"。
-8. 确保选择了 " **连接的特定组织** " 选项，然后单击 " **添加目录**"。
-9. 选择您之前添加的已连接的组织，然后单击 "**选择**"
-10. 在 " **审批**" 下，选择 **"是" 以 "** **需要审批**"。
-11. 在 " **首次审批者**" 下，选择您之前添加的某个发起人或选择特定用户。
-12. 单击 " **添加回退** " 并选择一个回退审批者。
-13. 在 " **启用**" 下，选择 **"是"**。
-14. 单击 " **下一步：生命周期**"。
-15. 选择要使用的过期和访问检查设置，然后单击 " **下一步：审阅 + 创建**"。
-16. 查看您的设置，然后单击 " **创建**"。
+1. 在 Azure AD Identity Governance 中，单击 **"目录"，** 然后单击要创建访问包的目录。
+2. 单击 **"访问程序包**"，然后单击"**新建访问包"。**
+3. 键入访问包的名称和说明，然后单击下一步： **资源角色**。
+4. 从目录中选择要用于 Extranet 的资源。
+5. 对于每个资源，在" **角色** "列中，选择要授予使用 Extranet 的来宾的用户角色。
+6. 单击 **"下一步：请求"。**
+7. 在 **"可以请求访问的用户"下**，**选择"对于不在目录中的用户"。**
+8. 确保选中"**特定连接的组织**"选项，然后单击"添加 **目录"。**
+9. 选择之前添加的已连接组织，然后单击"选择 **"**
+10. 在 **"审批"** 下，**为"需要****审批"选择"是"。**
+11. 在 **"第一个审批者**"下，选择之前添加的发起人之一或选择特定用户。
+12. 单击 **"添加回退** "并选择回退审批者。
+13. 在 **"启用"** 下，选择"**是"。**
+14. 单击 **下一步： 生命周期**。
+15. Choose the expiration and access review settings that you want to use， and then click **Next： Review + Create**.
+16. 查看设置，然后单击"创建 **"。**
 
-    ![Azure Active Directory 标识管理中的 access 程序包屏幕的屏幕截图](../media/identity-governance-access-packages.png)
+    ![Azure Active Directory Identity Governance 中的访问包屏幕屏幕截图](../media/identity-governance-access-packages.png)
 
-如果要与大型组织合作，您可能希望隐藏该访问包。 如果包处于隐藏状态，则合作伙伴组织中的用户将不会在其 *"我的 Access* " 门户上看到该程序包。 相反，必须向其发送直接链接以注册该包。 隐藏访问包可以减少不适当的访问请求数，还可以帮助保留组织在合作伙伴组织门户中的可用访问包。
+如果你正在与大型组织合作，你可能想要隐藏访问包。 如果包处于隐藏状态，则合作伙伴组织的用户将不会在"我的访问"门户 *上看到该* 包。 相反，必须发送直接链接以注册程序包。 隐藏访问包可以减少不恰当的访问请求数，还有助于保留在合作伙伴组织的门户中组织的可用访问包。
 
 将访问包设置为隐藏
-1. 在 Azure AD 标识管理中，单击 " **访问包**"，然后单击您的访问包。
-2. 在 " **概述** " 页上，单击 " **编辑**"。
-3. 在 "**属性**" 下，为 "**隐藏** **" 选择 "是"** ，然后单击 "**保存**"。
+1. 在 Azure AD Identity Governance 中，单击 **"访问程序包"，** 然后单击访问包。
+2. 在"**概述"页上**，单击"编辑 **"。**
+3. 在 **"属性"** 下，**为"隐藏**"**选择**"是"，然后单击"保存 **"。**
 
    ![编辑访问包属性屏幕的屏幕截图](../media/identity-governance-access-package-hidden.png)
 
 ## <a name="invite-partner-users"></a>邀请合作伙伴用户
 
-如果将访问包设置为 "隐藏"，则需要向合作伙伴组织发送直接链接，以便他们可以请求访问您的网站或团队。
+如果将访问包设置为隐藏，则需要向合作伙伴组织发送直接链接，以便他们可以请求访问你的站点或团队。
 
 查找访问门户链接
-1. 在 Azure AD 标识管理中，单击 " **访问包**"，然后单击您的访问包。
-2. 在 "**概述**" 页上，单击 "**我的访问门户" 链接** 的 "**复制到剪贴板**" 链接。
+1. 在 Azure AD Identity Governance 中，单击 **"访问程序包"，** 然后单击访问包。
+2. 在" **概述"** 页上，单击"我的访问门户"链接 **的** "复制到 **剪贴板"链接**。
 
-   ![具有访问门户链接的 access 程序包属性的屏幕截图](../media/identity-governance-access-portal-link.png)
+   ![包含访问门户链接的访问包属性的屏幕截图](../media/identity-governance-access-portal-link.png)
 
-复制链接后，可以将其与合作伙伴组织的联系人共享，并可将其发送给协作团队中的用户。
+复制链接后，你可以将其与合作伙伴组织的联系人共享，他们可以将其发送给协作团队中的用户。
 
 ## <a name="see-also"></a>另请参阅
 

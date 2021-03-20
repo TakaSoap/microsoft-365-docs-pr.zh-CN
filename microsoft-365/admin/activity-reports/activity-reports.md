@@ -20,12 +20,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0d6dfb17-8582-4172-a9a9-aed798150263
 description: 获取定期报表，了解你组织中的人员当前是如何使用 Microsoft 365 服务的。 通过使用情况概述仪表板，可深入了解每个图表获取更多见解。
-ms.openlocfilehash: a71ced2dd0aa71179c1b26cec571f3025af1ce05
-ms.sourcegitcommit: 9adb89206daa075af34a73bcb7e8fb86d7c2919a
+ms.openlocfilehash: 9b58c6fa51fbca5d78680b4b13cbbc2129d9c393
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "50603848"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50903720"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center"></a>管理中心中的 Microsoft 365 报表
 
@@ -136,13 +136,13 @@ ms.locfileid: "50603848"
 
 - [适用于美国政府的 SharePoint 的活动](sharepoint-activity.md)
   
-- [Skype for Business Online 活动](https://docs.microsoft.com/SkypeForBusiness/skype-for-business-online-reporting/activity-report)
+- [Skype for Business Online 活动](/SkypeForBusiness/skype-for-business-online-reporting/activity-report)
   
-- [Skype for Business Online 会议组织活动](https://docs.microsoft.com/SkypeForBusiness/skype-for-business-online-reporting/conference-organizer-activity-report)
+- [Skype for Business Online 会议组织活动](/SkypeForBusiness/skype-for-business-online-reporting/conference-organizer-activity-report)
   
-- [Skype for Business Online 会议参与者活动](https://docs.microsoft.com/SkypeForBusiness/skype-for-business-online-reporting/conference-participant-activity-report)
+- [Skype for Business Online 会议参与者活动](/SkypeForBusiness/skype-for-business-online-reporting/conference-participant-activity-report)
   
-- [Skype for Business Online 点对点活动](https://docs.microsoft.com/SkypeForBusiness/skype-for-business-online-reporting/peer-to-peer-activity-report)
+- [Skype for Business Online 点对点活动](/SkypeForBusiness/skype-for-business-online-reporting/peer-to-peer-activity-report)
   
 ::: moniker range="o365-worldwide"
 
@@ -242,5 +242,4 @@ ms.locfileid: "50603848"
   
 ## <a name="related-articles"></a>相关文章
 
-[安全与合规中心中的报表](https://docs.microsoft.com/microsoft-365/compliance/reports-in-security-and-compliance)
-  
+[安全与合规中心中的报表](../../compliance/reports-in-security-and-compliance.md)

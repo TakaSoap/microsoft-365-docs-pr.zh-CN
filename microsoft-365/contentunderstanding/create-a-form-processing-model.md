@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: 在 Microsoft SharePoint Syntex 中创建表单处理模型。
-ms.openlocfilehash: c025317a5eb88199b849f90b51fac9779e1c97a2
-ms.sourcegitcommit: 162c01dfaa2fdb3225ce4c24964c1065ce22ed5d
+ms.openlocfilehash: d71273e416bf7922627e44d9423eaa8903411689
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2021
-ms.locfileid: "49976005"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50905842"
 ---
 # <a name="create-a-form-processing-model-in-microsoft-sharepoint-syntex"></a>在 Microsoft SharePoint Syntex 中创建表单处理模型
 
@@ -27,7 +27,7 @@ ms.locfileid: "49976005"
 
 </br>
 
-使用[AI Builder](https://docs.microsoft.com/ai-builder/overview) - Microsoft PowerApps 中的一项功能 - SharePoint Syntex 用户可以直接从 SharePoint 文档库中创建[表单处理模型](form-processing-overview.md)。 
+使用[AI Builder](/ai-builder/overview) - Microsoft PowerApps 中的一项功能 - SharePoint Syntex 用户可以直接从 SharePoint 文档库中创建[表单处理模型](form-processing-overview.md)。 
 
 创建表单处理模型涉及以下操作：
  - 步骤 1：创建表单处理模型以创建内容类型
@@ -68,7 +68,7 @@ ms.locfileid: "49976005"
 创建新的表单处理模型后，浏览器将打开一个新的 PowerApps AI Builder 表单处理模型页面。 在此页面上，你可以添加和分析示例文档。 </br>
 
 > [!NOTE]
-> 查找要使用的示例文件时，请参阅[表单处理模型输入文档要求和优化提示](https://docs.microsoft.com/ai-builder/form-processing-model-requirements)。 
+> 查找要使用的示例文件时，请参阅[表单处理模型输入文档要求和优化提示](/ai-builder/form-processing-model-requirements)。 
 
    ![Power Apps AI Builder](../media/content-understanding/powerapps.png)</br> 
  
@@ -148,6 +148,6 @@ ms.locfileid: "49976005"
 
 ## <a name="see-also"></a>另请参阅
   
-[Power Automate 文档](https://docs.microsoft.com/power-automate/)
+[Power Automate 文档](/power-automate/)
 
-[培训：使用 AI Builder 改善业务绩效](https://docs.microsoft.com/learn/paths/improve-business-performance-ai-builder/?source=learn)
+[培训：使用 AI Builder 改善业务绩效](/learn/paths/improve-business-performance-ai-builder/?source=learn)

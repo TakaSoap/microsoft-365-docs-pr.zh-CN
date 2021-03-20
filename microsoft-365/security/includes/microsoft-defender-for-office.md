@@ -4,12 +4,12 @@ ms.author: dansimp
 author: dansimp
 ms.prod: m365-security
 ms.topic: include
-ms.openlocfilehash: daa127237416ffa97680d2eaa46c88eadf83caa9
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 12c2f3692c3e2e0a0374efd3276da6dfecba1b04
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50286318"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50903793"
 ---
 > [!IMPORTANT]
-> 改进的 [Microsoft 365 安全中心](https://security.microsoft.com)现已提供公共预览版。 此新体验将 Defender for Endpoint、Defender for Office、365 Microsoft 365 Defender 等引入了 Microsoft 365 安全中心。 [了解新增功能](https://docs.microsoft.com/microsoft-365/security/mtp/overview-security-center)。 本主题可能同时适用于 Microsoft Defender for Office 365 和 Microsoft 365 Defender。 请参阅 **适用对象** 部分，并查找本文中可能存在差异的特定标注。
+> 改进的 [Microsoft 365 安全中心](https://security.microsoft.com)现已提供公共预览版。 此新体验将 Defender for Endpoint、Defender for Office、365 Microsoft 365 Defender 等引入了 Microsoft 365 安全中心。 [了解新增功能](../mtp/overview-security-center.md)。 本主题可能同时适用于 Microsoft Defender for Office 365 和 Microsoft 365 Defender。 请参阅 **适用对象** 部分，并查找本文中可能存在差异的特定标注。

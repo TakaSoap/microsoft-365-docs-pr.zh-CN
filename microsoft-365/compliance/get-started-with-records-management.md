@@ -17,16 +17,16 @@ search.appverid:
 - MOE150
 - MET150
 description: 需要用于管理高价值内容的 Microsoft 365 记录管理解决方案以满足法律、业务或法规方面的义务，但不确定从哪里入手？ 请阅读一些实用指南来完成入门。
-ms.openlocfilehash: 0dc0258ed53aa07df778f5d0883b02b7635f50d8
-ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
+ms.openlocfilehash: a757cabf13e85731bd16ccd84f1eea3dbe7e432a
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "49682719"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50906004"
 ---
 # <a name="get-started-with-records-management"></a>记录管理入门
 
->*[Microsoft 365 安全性与合规性许可指南](https://aka.ms/ComplianceSD)。*
+>*[Microsoft 365 安全性与合规性许可指南](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。*
 
 准备好开始使用 Microsoft 365 中的记录管理解决方案来管理组织的高价值内容以满足法律、业务或法规方面的义务了吗？ 请遵循下面的简要指南来完成入门：
 
@@ -45,7 +45,7 @@ ms.locfileid: "49682719"
 
 许多不同的订阅都支持记录管理，并且用户的许可要求取决于你使用的功能。
 
-若要查看许可用户以便受益于 Microsoft 365 合规性功能的选项，请参阅 [Microsoft 365 安全性与合规性许可指南](https://aka.ms/ComplianceSD)。 对于记录保留，请参阅[记录管理](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#records-management)部分和相关 PDF 或 Excel 下载内容，以了解功能级别许可要求。
+若要查看许可用户以便受益于 Microsoft 365 合规性功能的选项，请参阅 [Microsoft 365 安全性与合规性许可指南](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。 对于记录保留，请参阅[记录管理](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#records-management)部分和相关 PDF 或 Excel 下载内容，以了解功能级别许可要求。
 
 ## <a name="permissions-required-for-records-management"></a>记录管理所需的权限
 
@@ -53,9 +53,9 @@ ms.locfileid: "49682719"
 
 对于只读角色，可以创建新的角色组，并将 **只读记录管理** 角色添加到该组中。 
 
-有关角色组和角色的更多信息，请参阅[安全与合规中心内的权限](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center#roles-in-the-security--compliance-center)。
+有关角色组和角色的更多信息，请参阅[安全与合规中心内的权限](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)。
 
-有关将用户添加到角色组并分配角色的说明，请参阅[向用户授予对安全与合规中心的访问权限](https://docs.microsoft.com/microsoft-365/security/office-365-security/grant-access-to-the-security-and-compliance-center)。
+有关将用户添加到角色组并分配角色的说明，请参阅[向用户授予对安全与合规中心的访问权限](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md)。
 
 只有在创建、配置和应用用于声明记录和管理处置的保留标签时才需要这些权限。 配置这些标签的人员不需要访问该内容。
 

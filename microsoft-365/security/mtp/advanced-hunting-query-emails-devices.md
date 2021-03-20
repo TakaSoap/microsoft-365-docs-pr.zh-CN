@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: a12b2dcf2de472f43e782e2064944ec774bdb9e1
-ms.sourcegitcommit: 3d48e198e706f22ac903b346cadda06b2368dd1e
+ms.openlocfilehash: 1149d8fa614854bdbbd2c154f0e92f6a9c28ce00
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50727255"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50904063"
 ---
 # <a name="hunt-for-threats-across-devices-emails-apps-and-identities"></a>跨设备、电子邮件、应用和标识搜寻威胁
 
@@ -50,7 +50,7 @@ ms.locfileid: "50727255"
 ### <a name="obtain-user-accounts-from-email-addresses"></a>从电子邮件地址获取用户帐户
 构造跨涵盖设备和电子邮件 [的](advanced-hunting-schema-tables.md)表的查询时，你可能需要从发件人或收件人电子邮件地址获取用户帐户名称。 通常可以使用电子邮件地址中的本地主机为收件人 *或发件人地址* 进行此操作。
 
-在下面的代码段中，我们使用 [tostring () ](https://docs.microsoft.com/azure/data-explorer/kusto/query/tostringfunction) Kusto 函数从列 中的 收件人电子邮件地址前提取本地 `@` 主机 `RecipientEmailAddress` 。
+在下面的代码段中，我们使用 [tostring () ](/azure/data-explorer/kusto/query/tostringfunction) Kusto 函数从列 中的 收件人电子邮件地址前提取本地 `@` 主机 `RecipientEmailAddress` 。
 
 ```kusto
 //Query snippet showing how to extract the account name from an email address
@@ -86,7 +86,7 @@ Department, City, Country
 高级 [搜寻架构](advanced-hunting-schema-tables.md) 在各种表中提供广泛的设备信息。 例如 [，DeviceInfo 表](advanced-hunting-deviceinfo-table.md) 基于定期聚合的事件数据提供全面的设备信息。 此查询使用表检查可能受到威胁的用户 () 登录到任何设备，然后列出在这些设备上触发的 `DeviceInfo` `<account-name>` 警报。
 
 >[!Tip]
-> 此查询 `kind=inner` 用于指定 [一个内部联接](https://docs.microsoft.com/azure/data-explorer/kusto/query/joinoperator?pivots=azuredataexplorer#inner-join-flavor)，以防止对 的左侧值进行重复 `DeviceId` 。
+> 此查询 `kind=inner` 用于指定 [一个内部联接](/azure/data-explorer/kusto/query/joinoperator?pivots=azuredataexplorer#inner-join-flavor)，以防止对 的左侧值进行重复 `DeviceId` 。
 
 ```kusto
 DeviceInfo

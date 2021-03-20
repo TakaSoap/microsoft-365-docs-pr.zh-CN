@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 7dcf446b5e1014d411fc8af08dd15506a2b04e49
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: ccf2b52c744e2ae8e7ccfc631268d79a375c91d4
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49932186"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50904038"
 ---
 # <a name="use-shared-queries-in-advanced-hunting"></a>使用高级搜寻的共享查询
 
@@ -66,13 +66,13 @@ ms.locfileid: "49932186"
 2. 选择“删除”，并确认删除。 或者选择“重命名”，并为查询提供新名称。
 
 ## <a name="create-a-direct-link-to-a-query"></a>创建指向查询的直接链接
-若要生成直接在高级搜寻查询编辑器中打开查询的链接，请完成查询并选择 **"共享"链接**。
+若要生成直接在高级搜寻查询编辑器中打开查询的链接，请完成查询并选择"**共享链接"。**
 
 ## <a name="access-queries-in-the-github-repository"></a>访问 GitHub 存储库中的查询  
 Microsoft 安全研究人员定期在[指定的 GitHub 公共存储库](https://aka.ms/hunting-queries)中共享高级搜寻查询。 此存储库可自行参与。 [免费加入 GitHub](https://github.com/)，即可参与。
 
 >[!tip]
->此外，Microsoft 研究人员还提供了高级搜寻查询，你可以使用它们查找与存在的威胁关联的活动和指示器。 将这些查询作为 Microsoft Defender 安全中心[威胁分析](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/threat-analytics)报告的一部分提供。
+>此外，Microsoft 研究人员还提供了高级搜寻查询，你可以使用它们查找与存在的威胁关联的活动和指示器。 将这些查询作为 Microsoft Defender 安全中心[威胁分析](/windows/security/threat-protection/microsoft-defender-atp/threat-analytics)报告的一部分提供。
 
 ## <a name="related-topics"></a>相关主题
 - [高级搜寻概述](advanced-hunting-overview.md)

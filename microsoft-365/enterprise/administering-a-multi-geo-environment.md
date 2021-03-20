@@ -15,12 +15,12 @@ ms.collection:
 - SPO_Content
 localization_priority: Normal
 description: 管理员可以了解如何在多地理位置环境中管理 SharePoint 和 OneDrive 服务。
-ms.openlocfilehash: 1b6d2cb1cb9511677f717f0e58553abc4473e1ad
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 213070f2f7a04e15a1e2ac3cd9a3ae697b66a718
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46687584"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50905592"
 ---
 # <a name="administering-a-multi-geo-environment"></a>管理多地理位置环境
 
@@ -60,7 +60,7 @@ DLP 策略将基于每个地理位置的适用性自动同步。
 
 ## <a name="onedrive-administrator-experience"></a>OneDrive 管理员体验
 
-[OneDrive 管理中心](https://admin.onedrive.com)的左侧导航栏中有一个“地理位置”**** 选项卡，其中包含地理位置地图，你可在其中查看和管理地理位置。使用此页面可添加或删除租户的地理位置。
+[OneDrive 管理中心](https://admin.onedrive.com)的左侧导航栏中有一个“地理位置”选项卡，其中包含地理位置地图，你可在其中查看和管理地理位置。使用此页面可添加或删除租户的地理位置。
 
 ## <a name="security-and-compliance-admin-center"></a>安全与合规管理中心
 
@@ -76,17 +76,17 @@ DLP 策略将基于每个地理位置的适用性自动同步。
 
 ## <a name="taxonomy"></a>分类
 
-我们支持跨地理位置为企业托管的元数据使用统一[分类](https://docs.microsoft.com/sharepoint/managed-metadata)，并将主分类托管在公司的中心位置中。 我们建议你通过中心位置管理全局分类，并仅向附属位置分类中添加特定于位置的术语。 全局分类术语将同步到附属位置。
+我们支持跨地理位置为企业托管的元数据使用统一[分类](/sharepoint/managed-metadata)，并将主分类托管在公司的中心位置中。 我们建议你通过中心位置管理全局分类，并仅向附属位置分类中添加特定于位置的术语。 全局分类术语将同步到附属位置。
 
-有关附加详细信息及开发人员指南，请参阅[管理多地理位置租户中的元数据](https://docs.microsoft.com/sharepoint/dev/solution-guidance/multigeo-managedmetadata)。
+有关附加详细信息及开发人员指南，请参阅[管理多地理位置租户中的元数据](/sharepoint/dev/solution-guidance/multigeo-managedmetadata)。
 
 ## <a name="user-profile-application"></a>用户配置文件应用程序
 
-每个地理位置都有一个[用户配置文件应用程序](https://docs.microsoft.com/sharepoint/manage-user-profiles)。 每个用户的配置文件信息都托管在其地理位置中，并可供该地理位置的管理员使用。
+每个地理位置都有一个[用户配置文件应用程序](/sharepoint/manage-user-profiles)。 每个用户的配置文件信息都托管在其地理位置中，并可供该地理位置的管理员使用。
 
-如果你有自定义配置文件属性，建议跨地区使用同一配置文件架构并在所有地理位置或所需的位置填充自定义配置文件属性。 有关如何以编程方式填充用户配置文件数据的指导，请参阅[批量用户配置文件更新 API](https://docs.microsoft.com/sharepoint/dev/solution-guidance/bulk-user-profile-update-api-for-sharepoint-online)。
+如果你有自定义配置文件属性，建议跨地区使用同一配置文件架构并在所有地理位置或所需的位置填充自定义配置文件属性。 有关如何以编程方式填充用户配置文件数据的指导，请参阅[批量用户配置文件更新 API](/sharepoint/dev/solution-guidance/bulk-user-profile-update-api-for-sharepoint-online)。
 
-有关附加信息及开发人员指南，请参阅[在多地理位置租户中使用用户配置文件](https://docs.microsoft.com/sharepoint/dev/solution-guidance/multigeo-userprofileexperience)。
+有关附加信息及开发人员指南，请参阅[在多地理位置租户中使用用户配置文件](/sharepoint/dev/solution-guidance/multigeo-userprofileexperience)。
 
 ## <a name="video-portal"></a>视频门户
 
@@ -107,4 +107,4 @@ Stream 当前可在以下地区使用：
 
 ## <a name="yammer"></a>Yammer
 
-Yammer 不是多地理位置工作负载。 将 Yammer 中存储的 yammer 线程放置在租户的中心位置。 Yammer 正在滚动文件存储更改，这将在 SharePoint 中存储 Yammer 文件。 将在 SharePoint 中存储的 yammer 文件将与 Yammer 组相关联的 SharePoint 网站放置。 SharePoint 组网站以 [Sharepoint 网站和组](multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-microsoft-365.md#sharepoint-sites-and-groups)中所述的 PDL 逻辑为依据。
+Yammer 不是多地理位置工作负载。 Yammer 中存储的 Yammer 线程将放置在租户的中心位置。 Yammer 正在推出文件存储更改，它将在 SharePoint 中存储 Yammer 文件。 存储在 SharePoint 中的 Yammer 文件将置于与 Yammer 组关联的 SharePoint 网站。 SharePoint 组网站基于 [SharePoint](multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-microsoft-365.md#sharepoint-sites-and-groups)网站和组中列出的 PDL 逻辑。

@@ -18,12 +18,12 @@ ms.custom:
 - httpsfix
 ms.assetid: 53d3eef6-4a16-4fb9-903c-816d5d98d7e8
 description: 摘要：在单个 PowerShell 窗口中连接所有 Microsoft 365 服务。
-ms.openlocfilehash: cd030018dabff628af18d173cf542a3d375b27d0
-ms.sourcegitcommit: babbba2b5bf69fd3facde2905ec024b753dcd1b3
+ms.openlocfilehash: 18ff8e1789242b4dde3b4b31aaccf2462e4c5d74
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50515108"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50905124"
 ---
 # <a name="connect-to-all-microsoft-365-services-in-a-single-powershell-window"></a>在单个 PowerShell 窗口中连接所有 Microsoft 365 服务
 
@@ -38,7 +38,7 @@ ms.locfileid: "50515108"
 
 在可以从 PowerShell 的单个实例管理所有 Microsoft 365 之前，请考虑以下先决条件：
   
-- 你使用的 Microsoft 365 工作或学校帐户必须是 Microsoft 365 管理员角色的成员。 有关详细信息，请参阅[关于管理员角色](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)。 这是对 PowerShell for Microsoft 365 的要求，但不一定适用于所有其他 Microsoft 365 服务。
+- 你使用的 Microsoft 365 工作或学校帐户必须是 Microsoft 365 管理员角色的成员。 有关详细信息，请参阅[关于管理员角色](../admin/add-users/about-admin-roles.md)。 这是对 PowerShell for Microsoft 365 的要求，但不一定适用于所有其他 Microsoft 365 服务。
     
 - 可以使用以下 64 位版本的 Windows：
     
@@ -56,7 +56,7 @@ ms.locfileid: "50515108"
     
   - Windows Server 2008 R2 SP1*
     
-    \*需要安裝 Microsoft.NET Framework 4.5.*x* 然後是 Windows Management Framework 3.0 或 4.0。 有关详细信息，请参阅 [Windows Management Framework](https://docs.microsoft.com/powershell/scripting/windows-powershell/wmf/overview)。
+    \*需要安裝 Microsoft.NET Framework 4.5.*x* 然後是 Windows Management Framework 3.0 或 4.0。 有关详细信息，请参阅 [Windows Management Framework](/powershell/scripting/windows-powershell/wmf/overview)。
     
     出于对 Skype for Business Online 模块和一个 Microsoft 365 模块的要求，你需要使用 64 位版本的 Windows。
     
@@ -64,9 +64,9 @@ ms.locfileid: "50515108"
     
   - [Azure Active Directory V2](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)
   - [SharePoint Online 命令行管理程序](https://go.microsoft.com/fwlink/p/?LinkId=255251)
-  - [Skype for Business Online、PowerShell 模块](https://docs.microsoft.com/microsoftteams/teams-powershell-overview)
-  - [Exchange Online PowerShell V2](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell-v2#install-and-maintain-the-exchange-online-powershell-v2-module)
-  - [Teams PowerShell 概览](https://docs.microsoft.com/microsoftteams/teams-powershell-overview)
+  - [Skype for Business Online、PowerShell 模块](/microsoftteams/teams-powershell-overview)
+  - [Exchange Online PowerShell V2](/powershell/exchange/exchange-online-powershell-v2#install-and-maintain-the-exchange-online-powershell-v2-module)
+  - [Teams PowerShell 概览](/microsoftteams/teams-powershell-overview)
     
 -  必须对 PowerShell 进行配置才能为 Skype for Business Online 和安全 &amp; 合规中心运行签名的脚本。 在提升的 PowerShell 会话（**以管理员身份运行** 的 PowerShell 会话）中运行以下命令。
     
@@ -128,7 +128,7 @@ ms.locfileid: "50515108"
    ```
 
    > [!Note]
-   > 若要连接到除全球云以外的其他 Microsoft 365 云的 Exchange Online，请参阅[连接到 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)。
+   > 若要连接到除全球云以外的其他 Microsoft 365 云的 Exchange Online，请参阅[连接到 Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)。
 
 7. 运行以下命令以连接到安全 &amp; 合规中心。
     
@@ -138,7 +138,7 @@ ms.locfileid: "50515108"
    ```
 
    > [!Note]
-   > 若要连接到除全球云以外的其他 Microsoft 365 云的安全 &amp; 合规中心，请参阅[连接到安全与合规中心 PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell)。
+   > 若要连接到除全球云以外的其他 Microsoft 365 云的安全 &amp; 合规中心，请参阅[连接到安全与合规中心 PowerShell](/powershell/exchange/connect-to-scc-powershell)。
 
 8. 运行以下命令以连接到 Teams PowerShell。
     
@@ -149,7 +149,7 @@ ms.locfileid: "50515108"
    ```
   
    > [!Note]
-   > 若要连接到除 *全球* 云以外的其他 Microsoft Teams 云，请参阅 [Connect-MicrosoftTeams](https://docs.microsoft.com/powershell/module/teams/connect-microsoftteams)。
+   > 若要连接到除 *全球* 云以外的其他 Microsoft Teams 云，请参阅 [Connect-MicrosoftTeams](/powershell/module/teams/connect-microsoftteams)。
   
 
 

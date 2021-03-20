@@ -1,5 +1,5 @@
 ---
-title: 在 SharePoint Online 中规划门户启动滚动计划
+title: 在 SharePoint Online 中规划门户启动推出计划
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
@@ -16,59 +16,59 @@ ms.custom: Adm_O365
 search.appverid:
 - SPO160
 - MET150
-description: 本文介绍如何在 SharePoint Online 中规划门户启动以及成功启动所需的步骤
-ms.openlocfilehash: e22fa4d9cbfed79841d844f111e3eb91a708512e
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+description: 本文介绍了如何在 SharePoint Online 中规划门户启动，以及成功启动要执行的步骤
+ms.openlocfilehash: d77baac6209a4002bb1c27513d5ccfdf5c4ac28a
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46688169"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50905688"
 ---
-# <a name="planning-your-portal-launch-roll-out-plan-in-sharepoint-online"></a>在 SharePoint Online 中规划门户启动滚动计划
+# <a name="planning-your-portal-launch-roll-out-plan-in-sharepoint-online"></a>在 SharePoint Online 中规划门户启动推出计划
 
 门户是 Intranet 上的一个 SharePoint 网站，其中包含大量使用网站内容的网站查看者。 在大型组织中，可能有几种；例如公司门户和人力资源门户。 通常，门户创建和创作网站及其内容的人员相对较少。 门户的大多数访问者仅读取和使用内容。
 
-本文介绍如何规划部署和向 SharePoint Online 计划。 它还提供了在 SharePoint Online 上不允许进行传统负载测试时遵循的方法。 SharePoint Online 是云服务，服务中负载的负载功能、运行状况和总体平衡由 Microsoft 进行管理。
+本文介绍如何规划 SharePoint Online 的部署和推出计划。 它还提供了遵循的方法，因为 SharePoint Online 上不允许传统负载测试。 SharePoint Online 是一项云服务，该服务中的负载功能、运行状况和总体负载平衡由 Microsoft 管理。
 
-若要帮助创建成功的门户，请遵循[创建、启动和维护正常门户](https://go.microsoft.com/fwlink/?linkid=2105838)中详细介绍的基本原则、做法和建议 
+为了帮助创建成功的门户，请遵循创建、启动和维护正常运行的门户中详述的 [指导原则、实践和建议](/sharepoint/portal-health) 
 
-下面突出显示了部署方法。
+下面重点介绍了部署方法。
 
 ## <a name="overview-of-capacity-planning-in-sharepoint-online"></a>SharePoint Online 中的容量规划概述
-为了高效地使用容量并处理意外增长，在任何服务器场中，我们都具有跟踪特定使用方案的自动化。 在任何一个服务器场中的任何一个租户的确切增长不可预测的情况下，累积的请求总数将随时间推移而预测。 通过确定 SharePoint Online 中的增长趋势，我们可以规划未来的扩展。 有关 [SharePoint Online 的容量规划和负载测试](capacity-planning-and-load-testing-sharepoint-online.md)的详细信息。
+为了高效地使用容量并应对意外增长，在任何服务器场中，我们都有用于跟踪特定使用方案的自动化。 尽管任何一个服务器场中的任一租户的确切增长不可预测，但随着时间的推移，请求总数是可预测的。 通过确定 SharePoint Online 中的增长趋势，我们可以规划未来的扩展。 有关容量规划和 [负载测试 SharePoint Online 详细信息](capacity-planning-and-load-testing-sharepoint-online.md)。
 
-成功启动的关键部分是以下详细说明的 "波形" 或 "分阶段式输出" 方法。 
+成功启动的关键部分是下面详述的"wave"或"阶段性推出"方法。 
 
-## <a name="can-i-load-test-sharepoint-online"></a>我可以加载测试 SharePoint Online 吗？
-SharePoint Online 是一个共享的多租用环境，它在服务器场之间平衡，并在不断调整规模。 负载测试环境（如 SharePoint Online）的缩放更改不会持续提供意外结果，但不允许这样做。 
+## <a name="can-i-load-test-sharepoint-online"></a>能否加载测试 SharePoint Online？
+SharePoint Online 是一个共享的多租户环境，它跨服务器场和规模进行平衡，并定期进行调整。 负载测试环境（如 SharePoint Online）的扩展会不断更改，不仅会获得意外结果，而且不允许进行。 
 
-了解详细信息：  [容量规划和负载测试 SharePoint Online](capacity-planning-and-load-testing-sharepoint-online.md)
+了解更多信息  [：SharePoint Online 的容量规划和负载测试](capacity-planning-and-load-testing-sharepoint-online.md)
 
 ## <a name="optimize-pages-by-following-recommended-guidelines"></a>按照建议的准则优化页面
-本地部署中的页面不应简单地移动到 SharePoint Online 中，而无需针对 SharePoint Online 的建议准则进行评审。 最佳方法是始终为 SharePoint 中的任何网站或门户优化任何主页，因为您的组织中的大多数用户都将作为您的网站 (s) 的起始点来访问该页面。
+不应简单地将本地部署中的页面移动到 SharePoint Online，而不要根据针对 SharePoint Online 的建议准则查看这些页面。 最佳方法是始终为 SharePoint 中任何网站或门户优化任何主页，因为这是组织中大多数用户将访问作为网站集 (的起点) 。
 
-应考虑以下几个基本因素：
-- 内部部署可以利用传统的服务器端缓存，如对象缓存、输出缓存和 blob 缓存。 由于云中的拓扑差异，这些选项不一定可用作非常大的规模差异，从而使其不是可行的方法。
-- 用于云使用的任何页面/功能/自定义应针对较高的延迟和用户的分布式位置进行优化，以便不同区域或区域中的用户具有更一致的体验。 云提供了优化，如内容传递网络 (CDN) 以优化分布式用户库和新式 SharePoint，我们的 OOTB () web 部件将使用最后一种已知良好 (LKG) 。
+应考虑一些基本因素：
+- 本地部署可以利用传统的服务器端缓存，如对象缓存、输出缓存和 blob 缓存。 由于云中的拓扑差异，这些选项不一定可用，因为范围差异使这些方法不太可行。
+- 对于用于云使用的任何页面/功能/自定义，应针对更高的延迟以及用户的分布式位置进行优化，以便不同区域或区域的用户拥有更加一致的体验。 云提供内容交付网络 (CDN) 等优化，以针对分布式用户群和新式 SharePoint 进行优化，我们的开箱即用 (OOTB) Web 部件利用上一个已知的良好 (LKG) 。
 
-### <a name="what-to-do"></a>要执行的操作：
- - 对于 SharePoint Online 中的所有网站页面，使用 [页面诊断工具](https://aka.ms/perftool)，这是一种 Chromium 扩展，可帮助分析和提供指导。 这可供网站所有者、编辑者、管理员和开发人员使用，因为它旨在作为分析和优化的起始点。
- - 开发人员还应在新式页面的浏览器中使用类似于 F12 浏览器开发人员工具和 CTRL-F12 的开发工具。 [Fiddler](https://www.telerik.com/download/fiddler) 还可用于查看大小权重 (页面) 的大小，以及影响整个页面负载的呼叫和元素的数量。 
+### <a name="what-to-do"></a>要执行哪些工作：
+ - 对于 SharePoint Online 中所有网站[](./page-diagnostics-for-spo.md)页面，请使用页面诊断工具，该工具是 Chromium 扩展，可帮助分析和提供指导。 网站所有者、编辑者、管理员和开发人员可以使用此功能，因为它旨在作为分析和优化的起点。
+ - 开发人员还应在新式页面上使用开发工具（如 F12 浏览器开发人员工具）以及浏览器中的 Ctrl-F12。 [Fiddler](https://www.telerik.com/download/fiddler) 还可用于查看大小权重 (页面的大小（以 MB 为单位）) 以及影响整个页面负载的调用和元素数。 
 
-此部分是优化页面的简短摘要。  若要了解详细信息  [，请参阅创建、启动和维护正常的门户](https://go.microsoft.com/fwlink/?linkid=2105838)。
+本节是优化页面的简短摘要。  若要了解更多信息，请参阅：  [创建、启动和维护正常运行的门户](/sharepoint/portal-health)。
 
-## <a name="follow-a-wave--phased-roll-out-approach"></a>遵循波形/分阶段的滚动方法
-用于网站启动的传统的大方法将不允许验证自定义项、外部源、服务或进程是否已在适当的规模进行测试。 这并不意味着需要几个月即可启动，但建议在至少几天内取决于您的组织的规模。 因此，在执行下一阶段时，可以选择暂停和解决问题，从而减少受任何问题影响的潜在用户数。 SharePoint as service 根据使用情况和预测使用率扩展了你的容量，同时我们不需要你通知我们你的产品发布，你应遵循确保成功的指南。
+## <a name="follow-a-wave--phased-roll-out-approach"></a>遵循 Wave/分阶段推出方法
+网站启动的传统重大方法不允许验证自定义项、外部源、服务或流程是否经过适当的测试。 这并不意味着启动需要几个月的时间，但建议至少几天时间，这取决于您的组织规模。 因此，按照一波推出计划，您可以选择在继续下一阶段之前暂停并解决问题，从而降低受任何问题影响的潜在用户数。 SharePoint 即服务根据使用情况和预测的使用情况扩展容量，尽管我们不需要你通知我们你的启动，你应该遵循指南以确保成功。
   
-如下图所示，通常受邀的用户数量明显高于实际使用网站的用户数量。 此图显示了有关如何推出发布的策略。 此方法可帮助您确定在大多数用户看到 SharePoint 网站之前改进 SharePoint 网站的方法。
+如下图所示，受邀用户的数量通常明显高于实际使用该网站的用户数。 此图显示了如何推出版本的策略。 此方法可帮助确定在大部分用户看到 SharePoint 网站之前改进 SharePoint 网站的方法。
   
 ![显示受邀并且处于活动状态的用户的图形](../media/0bc14a20-9420-4986-b9b9-fbcd2c6e0fb9.png)
   
-在试验阶段，最好从组织信任和知道将参与的用户获取反馈。 通过这种方式，可以测量系统的使用情况及其执行方式。
+在试点阶段，应该从用户反馈组织信任并知道将参与。 这样，可以评估系统的使用方式以及系统执行方式。
   
-在每个波形过程中，收集有关功能的用户反馈，以及每个部署浪潮期间的性能。 这样做的优势在于系统在获得更多使用时慢慢引入系统并进行改进。 这还使我们能够在向越来越多的用户推出网站时对增加的负载做出响应，并将其与遵循页面优化的准则结合起来，以确保为用户提供积极的体验。
+在每个阶段中，收集用户有关功能以及每波部署期间的性能的反馈。 这有一个优势，即随着系统的使用变慢，系统引入缓慢并进行了改进。 这还允许我们在向越来越多的用户推出网站时对增加的负载做出反应，并结合遵循页面优化指南，以确保为用户带来积极的体验。
 
-### <a name="what-to-do"></a>要执行的操作：
-- 确定每个阶段的时间，并确保您有应急/暂停机会，应在继续进行调整前进行调整
-- 规划您要启用的第一组用户，以确保您收到要向前移动的反馈。 这意味着，在可能的情况下，选择将及时提供反馈的一组活动用户。
-- 在规划每个浪潮时，请尝试并从 (小于5000个用户) 的小型用户基础开始，然后在每个浪潮继续时增加组大小。 这有助于创建交错的方法，并允许更轻松地暂停可能需要的商机。
+### <a name="what-to-do"></a>要执行哪些工作：
+- 确定每个阶段的时间，并确保您具有应变/暂停机会（在继续之前需要进行调整）
+- 规划要启用的第一组用户，以确保收到继续工作所需的反馈。 这意味着，在可能的情况下，选择一组将及时提供反馈的活动用户
+- 在规划每一波时，请尝试从少于 5000 位用户 (用户开始) ，然后在继续每一波时增加组大小。 这有助于创建错开的方法，并允许所需的更轻松的暂停机会。

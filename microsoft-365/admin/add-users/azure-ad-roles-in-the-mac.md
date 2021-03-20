@@ -16,16 +16,16 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 description: 在 Microsoft 365 管理中心中管理这些 Azure 管理员角色。
-ms.openlocfilehash: 7a4e28667bc16d6619fe87451cd48ea77d89c81d
-ms.sourcegitcommit: eac5d9f759f290d3c51cafaf335a1a1c43ded927
+ms.openlocfilehash: b07174763384150a7ae8cda6709f5d0ec5cb40ec
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50126101"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50904488"
 ---
 # <a name="azure-active-directory-roles-in-the-microsoft-365-admin-center"></a>Microsoft 365 管理中心中的 Azure Active Directory 角色
 
-Microsoft 365 管理中心可让你管理 30 多个 Azure AD 角色。 然而，这些角色是 Azure 门户中可用角色的子集。 如果你有一家大型企业，则 Azure 门户可能具有可满足贵组织需求的角色。 是否在查找 Azure AD 的详细角色说明？ 请参阅 [Azure Active Directory 中的管理员角色权限](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)。
+Microsoft 365 管理中心可让你管理 30 多个 Azure AD 角色。 然而，这些角色是 Azure 门户中可用角色的子集。 如果你有一家大型企业，则 Azure 门户可能具有可满足贵组织需求的角色。 是否在查找 Azure AD 的详细角色说明？ 请参阅 [Azure Active Directory 中的管理员角色权限](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)。
 
 分配有管理员角色的用户在组织所订阅的云服务中拥有相同的访问权限级别，不管该角色是通过 Office 365 管理中心、Azure 门户还是适用于 Windows PowerShell 的 Azure AD 模块分配的。
 
@@ -37,7 +37,7 @@ Microsoft 365 管理中心可让你管理 30 多个 Azure AD 角色。 然而，
 
 ## <a name="all-azure-ad-roles"></a>所有 Azure AD 角色
 
-以下是 Microsoft 365 管理中心提供的所有管理员角色的列表。 正在查找 Microsoft 365 管理员角色的详细角色说明？ 查看[关于管理员角色](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide)。
+以下是 Microsoft 365 管理中心提供的所有管理员角色的列表。 正在查找 Microsoft 365 管理员角色的详细角色说明？ 查看[关于管理员角色](./about-admin-roles.md?view=o365-worldwide)。
 
 |管理员角色     |说明  |
 |---------|---------|
@@ -57,7 +57,7 @@ Microsoft 365 管理中心可让你管理 30 多个 Azure AD 角色。 然而，
 |Exchange 管理员     |  可完全访问 Exchange Online、创建和管理组、管理服务请求和监视服务运行状况。    |
 |外部标识提供程序管理员    |     可配置标识提供程序以便在直接联盟中使用。    |
 |全局管理员     |    可无限制地访问所有管理中心内的全部管理功能和大部分数据。     |
-|全局读取者     |    对管理中心内的全部管理功能和大部分数据具有只读访问权限。 有关此角色的访问权限和限制的详细说明，请参阅 [Azure Active Directory 中的管理员角色权限](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#global-reader)。    |
+|全局读取者     |    对管理中心内的全部管理功能和大部分数据具有只读访问权限。 有关此角色的访问权限和限制的详细说明，请参阅 [Azure Active Directory 中的管理员角色权限](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#global-reader)。    |
 |组管理员   |在管理中心创建组并管理所有组设置。|
 |来宾邀请者     |    管理 Azure Active Directory B2B 来宾用户邀请。     |
 |支持管理员     | 为所有非管理员和某些管理员角色重置密码并重新进行身份验证、管理服务请求和监视服务运行状况。      |
@@ -99,7 +99,7 @@ Microsoft 365 管理中心可让你管理 30 多个 Azure AD 角色。 然而，
 
 - 有限管理，其权限等同于支持管理员。
 
-在合作伙伴将这些角色分配给用户之前，必须先将合作伙伴作为委派管理员添加到你的帐户中。 此过程由授权合作伙伴发起。 合作伙伴将向你发送一封电子邮件，询问你是否要授予其作为委派管理员的权限。有关说明，请参阅[授权或删除合作伙伴关系](https://docs.microsoft.com/microsoft-365/admin/misc/add-partner)。
+在合作伙伴将这些角色分配给用户之前，必须先将合作伙伴作为委派管理员添加到你的帐户中。 此过程由授权合作伙伴发起。 合作伙伴将向你发送一封电子邮件，询问你是否要授予其作为委派管理员的权限。有关说明，请参阅[授权或删除合作伙伴关系](../misc/add-partner.md)。
   
 ## <a name="related-articles"></a>相关文章
 

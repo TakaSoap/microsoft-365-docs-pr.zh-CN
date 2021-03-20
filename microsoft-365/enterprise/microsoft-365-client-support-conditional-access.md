@@ -16,68 +16,28 @@ f1.keywords:
 - NOCSH
 description: 本文将了解哪些平台、客户端和 PowerShell 模块支持 Microsoft 365 的条件访问。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 969dd9d712fe124458273144b3e7974e03ade9e0
-ms.sourcegitcommit: 8e696c084d097520209c864140af11aa055b979e
+ms.openlocfilehash: c7b0b65ea25091aad01fd8741f9925f2b545e9c4
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "50097242"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50904957"
 ---
 # <a name="microsoft-365-client-app-support-conditional-access"></a>Microsoft 365 客户端应用支持：条件访问
 
-在新式工作场所中，用户可以从任何位置使用各种设备和应用访问组织的资源。 因此，仅关注谁可以访问资源是不够的。 您的组织还必须支持在访问控制基础结构中访问资源以及如何访问资源。
+在现代工作场所中，用户可以从任何位置使用各种设备和应用访问组织的资源。 因此，只关注谁可以访问资源已不够用。 您的组织还必须支持在访问控制基础结构中访问资源以及如何访问资源。
 
-借助 Azure Active Directory 设备、位置和基于多重身份验证的条件访问，可以满足此新要求。 条件访问是 Azure Active Directory 的一项功能，使你能够强制执行对环境中应用的访问权限控制，所有这些操作都基于特定条件，并且从中心位置进行管理。
+借助 Azure Active Directory 设备、位置和基于多重身份验证的条件访问，你可以满足此新要求。 条件访问是 Azure Active Directory 的一项功能，它使你能够强制执行对环境中应用的访问权限控制，所有这些操作都基于特定条件，并且从中心位置进行管理。
 
 详细了解 [Azure Active Directory 条件访问](/azure/active-directory/conditional-access/)。
 
-## <a name="supported-clients--platforms"></a>支持的客户端&平台
+## <a name="supported-clients--platforms"></a>受支持的客户端&平台
 
 以下客户端和平台的最新版本支持条件访问。 有关 Microsoft 365 中的平台支持详细信息，请参阅 [Microsoft 365](/microsoft-365/microsoft-365-and-office-resources)的系统要求。
-
 <br>
 <br>
 
-| 客户端 | Android | iOS | Mac| Windows 10 <br> 新式应用| Windows 10 <br> 桌面 |
-|:---|:---:|:---:|:---:|:---:|:---:|
-| Azure Active Directory 管理员 | 不适用 | 不适用 | 不适用 | 不适用 | ![受支持](../media/check-mark.png) |
-| Access | 不适用 | 不适用 | 不适用 | 不适用 | ![受支持](../media/check-mark.png) |
-| Azure 管理员 | 不适用 | 不适用 | 不适用 | 不适用 | 不适用 |
-| 公司门户 | ![支持](../media/check-mark.png) | ![支持](../media/check-mark.png) | ![支持](../media/check-mark.png) | ![支持](../media/check-mark.png) | 不适用 |
-| Cortana | 计划 | 计划 | 不适用 | ![支持](../media/check-mark.png) | 不适用 |
-| Delve | ![支持](../media/check-mark.png) | ![支持](../media/check-mark.png) | 不适用 | 不适用 | 不适用 |
-| Microsoft Edge | ![支持](../media/check-mark.png) | ![支持](../media/check-mark.png) | 不适用 | 不适用 | ![受支持](../media/check-mark.png) |
-| Excel | ![支持](../media/check-mark.png) | ![支持](../media/check-mark.png) | ![支持](../media/check-mark.png) | ![支持](../media/check-mark.png) | ![支持](../media/check-mark.png) |
-| Exchange Online 管理员 | 不适用 | 不适用 | 不适用 | 不适用 | ![受支持](../media/check-mark.png) |
-| Forms | 不适用 | 不适用 | 不适用 | 不适用 | 不适用 |
-| Office 365 Admin | 不适用 | 不适用 | 不适用 | 不适用 | ![受支持](../media/check-mark.png) |  |
-| Kaizala | ![支持](../media/check-mark.png) | ![支持](../media/check-mark.png) | 不适用 | 不适用 | 不适用 |
-| Office Lens| ![支持](../media/check-mark.png) | ![支持](../media/check-mark.png) | 不适用 | ![支持](../media/check-mark.png) | 不适用 |
-| Office mobile | ![支持](../media/check-mark.png) | ![支持](../media/check-mark.png) | 不适用 | 不适用 | 不适用 |
-| Office 门户 | 不适用 | 不适用 | 不适用 | ![支持](../media/check-mark.png) | 不适用 |
-| OneDrive | ![支持](../media/check-mark.png) | ![支持](../media/check-mark.png) | ![支持](../media/check-mark.png) | ![支持](../media/check-mark.png) | ![支持](../media/check-mark.png) |
-| OneNote | ![支持](../media/check-mark.png) | ![支持](../media/check-mark.png) | ![支持](../media/check-mark.png) | ![支持](../media/check-mark.png) | ![支持](../media/check-mark.png) |
-| Outlook | ![支持](../media/check-mark.png) | ![支持](../media/check-mark.png) | ![支持](../media/check-mark.png) | ![支持](../media/check-mark.png) | ![支持](../media/check-mark.png) |
-| Planner | ![支持](../media/check-mark.png) | ![支持](../media/check-mark.png) | 不适用 | 不适用 | 不适用 |
-| Power Apps | ![支持](../media/check-mark.png) | ![支持](../media/check-mark.png) | 不适用 | 计划 | 不适用 |
-| Power Automate | ![支持](../media/check-mark.png) | ![支持](../media/check-mark.png) | 不适用 | 不适用 | 不适用 |
-| Power BI | ![支持](../media/check-mark.png) | ![支持](../media/check-mark.png) | 不适用 | ![支持](../media/check-mark.png) | ![支持](../media/check-mark.png) |
-| PowerPoint | ![支持](../media/check-mark.png) | ![支持](../media/check-mark.png) | ![支持](../media/check-mark.png) | ![支持](../media/check-mark.png) | ![支持](../media/check-mark.png) |
-| Project | 不适用 | 不适用 | 不适用 | 不适用 | ![受支持](../media/check-mark.png) |
-| Publisher | 不适用 | 不适用 | 不适用 | 不适用 | ![受支持](../media/check-mark.png) |
-| Skype for Business | ![支持](../media/check-mark.png) | ![支持](../media/check-mark.png) | 不适用 | 不适用 | 不适用 ||
-| SharePoint | ![支持](../media/check-mark.png) | ![支持](../media/check-mark.png) | 不适用 | 不适用 | 不适用 |
-| SharePoint Online 管理员 | 不适用 | 不适用 | 不适用 | 不适用 | ![受支持](../media/check-mark.png) |
-| 便笺 | 不适用 | 不适用 | 不适用 | ![支持](../media/check-mark.png) | 不适用 |
-| Stream | ![支持](../media/check-mark.png) | ![支持](../media/check-mark.png) | 不适用 | 不适用 | 不适用 |
-| Sway | 不适用 | 不适用 | 不适用 | ![支持](../media/check-mark.png) | 不适用 |
-| Teams | ![支持](../media/check-mark.png) | ![支持](../media/check-mark.png) | ![支持](../media/check-mark.png) | 不适用 | ![受支持](../media/check-mark.png) |
-| 待办事项 | ![支持](../media/check-mark.png) | ![支持](../media/check-mark.png) | ![支持](../media/check-mark.png) | ![支持](../media/check-mark.png) | 不适用 |
-| Visio | 不适用 | ![支持](../media/check-mark.png) | 不适用 | 不适用 | ![受支持](../media/check-mark.png) |
-| Whiteboard | 计划 | ![支持](../media/check-mark.png) | 不适用 | ![支持](../media/check-mark.png) | 不适用 |
-| Word | ![支持](../media/check-mark.png) | ![支持](../media/check-mark.png) | ![支持](../media/check-mark.png) | ![支持](../media/check-mark.png) | ![支持](../media/check-mark.png) |
-| 工作区分析 | 不适用 | 不适用 | 不适用 | 不适用 | 不适用 |
-| Yammer | ![支持](../media/check-mark.png) | ![支持](../media/check-mark.png) | ![支持](../media/check-mark.png) | 不适用 | ![受支持](../media/check-mark.png) |
+[!INCLUDE [Conditional access services support table](../includes/microsoft-365-client-support-conditional-access-include.md)]
 
 ## <a name="supported-powershell-modules"></a>支持的 PowerShell 模块
 

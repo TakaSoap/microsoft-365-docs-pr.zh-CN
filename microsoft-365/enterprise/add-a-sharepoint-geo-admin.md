@@ -11,14 +11,14 @@ ms.collection: SPO_Content
 localization_priority: Normal
 f1.keywords:
 - NOCSH
-description: 是否需要为每个地理位置配置单独的管理员？ 了解如何在 Microsoft 365 多地理位置中添加或删除地理位置管理员。
+description: 需要为每个地理位置配置单独的管理员？ 了解如何在 Microsoft 365 多地理位置中添加或删除地理位置管理员。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 9a3d916bfec2c53850f923fb5322298e9ff440ca
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 32fe5e934e6a3d6f18c802c3c427974e67c1b454
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46688163"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50905596"
 ---
 # <a name="add-or-remove-a-geo-administrator-in-microsoft-365-multi-geo"></a>在 Microsoft 365 多地理位置中添加或删除地理位置管理员。
 
@@ -32,7 +32,7 @@ ms.locfileid: "46688163"
 
 配置地理位置管理员需要 SharePoint Online PowerShell 模块。
 
-使用 [Connect SPOService](https://docs.microsoft.com/powershell/module/sharepoint-online/Connect-SPOService) 连接到想在其中添加地理位置管理员的地理位置的管理中心（例如，Connect SPOService  https://ContosoEUR-admin.sharepoint.com.)
+使用 [Connect SPOService](/powershell/module/sharepoint-online/Connect-SPOService) 连接到想在其中添加地理位置管理员的地理位置的管理中心（例如，Connect SPOService  https://ContosoEUR-admin.sharepoint.com.)
 
 若要查看某个位置的现有地理位置管理员，请运行 `Get-SPOGeoAdministrator`
 
@@ -50,7 +50,7 @@ ms.locfileid: "46688163"
 
 若要将组作为地理位置管理员删除，请运行 `Remove-SPOGeoAdministrator -GroupAlias <alias>`
 
-请注意，并非所有安全组都有组别名。 如果要添加没有别名的安全组，请运行 [Get-MsolGroup](https://docs.microsoft.com/powershell/module/msonline/get-msolgroup) 来检索组列表，找到安全组的对象 ID，然后运行：
+请注意，并非所有安全组都有组别名。 如果要添加没有别名的安全组，请运行 [Get-MsolGroup](/powershell/module/msonline/get-msolgroup) 来检索组列表，找到安全组的对象 ID，然后运行：
 
 `Add-SPOGeoAdministrator -ObjectID <ObjectID>`
 
@@ -58,10 +58,10 @@ ms.locfileid: "46688163"
 
 ## <a name="related-topics"></a>相关主题
 
-[Add-SPOGeoAdministrator](https://docs.microsoft.com/powershell/module/sharepoint-online/add-spogeoadministrator)
+[Add-SPOGeoAdministrator](/powershell/module/sharepoint-online/add-spogeoadministrator)
 
-[Get-SPOGeoAdministrator](https://docs.microsoft.com/powershell/module/sharepoint-online/get-spogeoadministrator)
+[Get-SPOGeoAdministrator](/powershell/module/sharepoint-online/get-spogeoadministrator)
 
-[Remove-SPOGeoAdministrator](https://docs.microsoft.com/powershell/module/sharepoint-online/remove-spogeoadministrator)
+[Remove-SPOGeoAdministrator](/powershell/module/sharepoint-online/remove-spogeoadministrator)
 
-[为安全组设置别名 (MailNickName)](https://docs.microsoft.com/powershell/module/azuread/set-azureadgroup)
+[为安全组设置别名 (MailNickName)](/powershell/module/azuread/set-azureadgroup)

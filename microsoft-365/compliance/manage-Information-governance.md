@@ -14,16 +14,16 @@ search.appverid:
 - MOE150
 - MET150
 description: 实施 Microsoft 信息治理功能，以管理数据，满足合规性或监管要求。
-ms.openlocfilehash: 6b06de54f18ce4081c3b13d108a5c0ceae6d24a7
-ms.sourcegitcommit: e7bf23df4852b78912229d1d38ec475223597f34
+ms.openlocfilehash: 8a104775cd9bfc75af5b5af9840274f5f84509f0
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "49087111"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50903488"
 ---
 # <a name="microsoft-information-governance-in-microsoft-365"></a>Microsoft 365 中的 Microsoft 信息治理
 
->*[Microsoft 365 安全性与合规性许可指南](https://aka.ms/ComplianceSD)。*
+>*[Microsoft 365 安全性与合规性许可指南](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。*
 
 使用 Microsoft 信息管理（有时缩写为 MIG）功能来管理数据，以满足合规性或监管要求。
 
@@ -49,4 +49,3 @@ ms.locfileid: "49087111"
 |功能|它能解决什么问题？|开始行动|
 |:------|:------------|---------------------|:----------------------------|
 |[记录管理](records-management.md)| 针对电子邮件和文档的单一解决方案，可将保留计划和要求纳入文件计划中，通过记录声明、保留和处置来支持内容完整生命周期。 <br /><br />示例方案：[记录的处置](disposition.md#disposition-of-records)|[开始进行记录管理](get-started-with-records-management.md) |
-

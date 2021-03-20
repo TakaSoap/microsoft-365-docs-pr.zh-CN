@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: 了解如何创建内容中心。
-ms.openlocfilehash: 3544bbef7cf2f898733c7aaad620487098a2dd24
-ms.sourcegitcommit: babbba2b5bf69fd3facde2905ec024b753dcd1b3
+ms.openlocfilehash: 34ba45cd62214743e5a6784893e0f24e9815fdfb
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50515132"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50905820"
 ---
 # <a name="create-a-content-center-in-microsoft-sharepoint-syntex"></a>在 Microsoft SharePoint Syntex 中创建内容中心
 
@@ -35,12 +35,12 @@ ms.locfileid: "50515132"
 [设置](set-up-content-understanding.md)期间创建默认内容中心。 但 SharePoint 管理员也可根据需要选择创建其他中心。 虽然单个内容中心对于你想汇总所有模型活动的环境可能不错，但你可能希望组织中多个部门有其他中心，这可能对其模型有不同需求和权限要求。
 
 > [!NOTE]
-> 在 [Microsoft 365 多地理环境](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-multi-geo)中，如果中心位置中具有一个默认内容中心，则只能提供该位置内的模型活动汇总。 当前无法在多地理环境中跨服务器场边界汇总模型活动。 
+> 在 [Microsoft 365 多地理环境](../enterprise/microsoft-365-multi-geo.md)中，如果中心位置中具有一个默认内容中心，则只能提供该位置内的模型活动汇总。 当前无法在多地理环境中跨服务器场边界汇总模型活动。 
 
 
 ## <a name="create-a-content-center"></a>创建内容中心
 
-SharePoint 管理员可以创建内容中心网站，就像通过管理中心网站预配面板 [创建任何其他 SharePoint 网站](https://docs.microsoft.com/sharepoint/create-site-collection) 一样。
+SharePoint 管理员可以创建内容中心网站，就像通过管理中心网站预配面板 [创建任何其他 SharePoint 网站](/sharepoint/create-site-collection) 一样。
 
 创建新的内容中心：
 
@@ -63,7 +63,7 @@ SharePoint 管理员可以创建内容中心网站，就像通过管理中心网
 
 ### <a name="give-access-to-additional-users"></a>授予其他用户访问权限
  
-创建网站后，可通过标准的 [SharePoint 网站权限模型](https://docs.microsoft.com/sharepoint/modern-experience-sharing-permissions)授予其他用户网站访问权限。
+创建网站后，可通过标准的 [SharePoint 网站权限模型](/sharepoint/modern-experience-sharing-permissions)授予其他用户网站访问权限。
 
 ## <a name="see-also"></a>另请参阅
 [创建分类器](create-a-classifier.md)
@@ -76,4 +76,4 @@ SharePoint 管理员可以创建内容中心网站，就像通过管理中心网
 
 [创建表单处理模型](create-a-form-processing-model.md)
 
-[应用模型](apply-a-model.md)    
+[应用模型](apply-a-model.md)

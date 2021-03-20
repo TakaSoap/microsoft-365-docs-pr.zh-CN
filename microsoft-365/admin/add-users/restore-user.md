@@ -23,19 +23,19 @@ search.appverid:
 - GEA150
 ms.assetid: 2c261e42-5dd1-48b0-845f-2a016d29cfc1
 description: 了解如何还原已删除的用户帐户以及所有关联的数据。
-ms.openlocfilehash: d14995c8ee2d62c1d722ef0bcc7577745a747082
-ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
+ms.openlocfilehash: f3986ed1ba007dcac87bdfb9322ba5c5bf081b35
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "50113993"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50903708"
 ---
 # <a name="restore-a-user"></a>还原用户
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 管理中心正在发生改变。 如果你的体验与此处提供的详细信息不匹配，请参阅[有关新版 Microsoft 365 管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true)。
+> 管理中心正在发生改变。 如果你的体验与此处提供的详细信息不匹配，请参阅[有关新版 Microsoft 365 管理中心](../microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet)。
 
 ::: moniker-end
    
@@ -54,19 +54,19 @@ ms.locfileid: "50113993"
  
 ::: moniker range="o365-worldwide"
 
-1. 在管理中心，转到" **用户** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2071581" target="_blank">已删除用户"</a> 页。
+1. 在管理中心，转到 **"用户** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2071581" target="_blank">""已删除用户"</a> 页面。
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. 转到管理 [中心](https://go.microsoft.com/fwlink/p/?linkid=848041)，**然后选择"已删除** \> **用户的用户"。**
+1. 转到管理 [中心，](https://go.microsoft.com/fwlink/p/?linkid=848041)然后选择 **"用户** \> **""已删除用户"。**
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. 转到管理 [中心](https://go.microsoft.com/fwlink/p/?linkid=850627)，**然后选择"已删除** \> **用户的用户"。**
+1. 转到管理 [中心，](https://go.microsoft.com/fwlink/p/?linkid=850627)然后选择 **"用户** \> **""已删除用户"。**
 
 ::: moniker-end
 
@@ -75,7 +75,7 @@ ms.locfileid: "50113993"
  
 3. 按照提示设置其密码，然后选择"还原 **"。**
     
-4. 如果用户已成功还原，请选择"发送电子邮件 **"并关闭**。 如果遇到名称冲突或代理地址冲突，请参阅下述说明获取还原这些帐户的方法。
+4. 如果成功还原用户，请选择" **发送电子邮件"并关闭**。 如果遇到名称冲突或代理地址冲突，请参阅下述说明获取还原这些帐户的方法。
     
 还原用户后，请确保通知他们其密码已更改，然后跟进。
   
@@ -89,19 +89,19 @@ ms.locfileid: "50113993"
 
 ::: moniker range="o365-worldwide"
 
-1. 在管理中心，转到" **用户** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2071581" target="_blank">已删除用户"</a> 页。
+1. 在管理中心，转到 **"用户** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2071581" target="_blank">""已删除用户"</a> 页面。
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. 转到管理 [中心](https://go.microsoft.com/fwlink/p/?linkid=848041)，**然后选择"已删除** \> **用户的用户"。**
+1. 转到管理 [中心，](https://go.microsoft.com/fwlink/p/?linkid=848041)然后选择 **"用户** \> **""已删除用户"。**
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. 转到管理 [中心](https://go.microsoft.com/fwlink/p/?linkid=850627)，**然后选择"已删除** \> **用户的用户"。**
+1. 转到管理 [中心，](https://go.microsoft.com/fwlink/p/?linkid=850627)然后选择 **"用户** \> **""已删除用户"。**
 
 ::: moniker-end
 
@@ -117,7 +117,7 @@ ms.locfileid: "50113993"
     
   - 取消还原并重命名当前活动用户。然后再次尝试还原。
     
-  - 或者，键入用户的新主电子邮件地址，然后选择"**还原"。**
+  - 或者，键入用户的新主电子邮件地址，然后选择"还原 **"。**
     
 5. 查看结果，然后选择" **关闭**"。
     
@@ -125,34 +125,33 @@ ms.locfileid: "50113993"
 
 删除包含代理地址的用户帐户后，又将相同的代理地址分配给另一个帐户，那么当你尝试还原已删除的帐户时会出现代理地址冲突。请按照以下步骤操作以修复此问题。
   
-必须在 Microsoft 365 [中具有](about-admin-roles.md) 管理员权限才能执行此操作。 
+必须在 Microsoft [](about-admin-roles.md) 365 中拥有管理员权限才能这样做。 
   
 
 ::: moniker range="o365-worldwide"
 
-1. 在管理中心，转到" **用户** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2071581" target="_blank">已删除用户"</a> 页。
+1. 在管理中心，转到 **"用户** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2071581" target="_blank">""已删除用户"</a> 页面。
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-转到管理 [中心](https://go.microsoft.com/fwlink/p/?linkid=848041)，**然后选择"已删除** \> **用户的用户"。**
+转到管理 [中心，](https://go.microsoft.com/fwlink/p/?linkid=848041)然后选择 **"用户** \> **""已删除用户"。**
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. 转到管理 [中心](https://go.microsoft.com/fwlink/p/?linkid=850627)，**然后选择"已删除** \> **用户的用户"。**
+1. 转到管理 [中心，](https://go.microsoft.com/fwlink/p/?linkid=850627)然后选择 **"用户** \> **""已删除用户"。**
 
 ::: moniker-end
 
 2. 在" **已删除的用户**"页上，选择要还原的用户，然后选择" **还原**"。 
     
-3. 在"**还原**"页上，按照说明设置密码，然后选择"**还原"。** 将从要还原的用户自动删除任何冲突的代理地址。
+3. 在"**还原**"页上，按照说明设置密码，然后选择"还原 **"。** 将从要还原的用户自动删除任何冲突的代理地址。
     
 4. 查看结果，然后选择" **关闭**"。
 
 ## <a name="related-articles"></a>相关文章
 
 [删除用户](delete-a-user.md)
-  

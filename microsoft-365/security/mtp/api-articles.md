@@ -1,7 +1,7 @@
 ---
 title: 其他安全和威胁防护 API
 description: 查看与 Microsoft 安全和威胁防护产品相关的 API 列表。
-keywords: api， 安全性， 威胁防护， mde， microsoft defender for endpoint， microsoft defender atp， office 365 高级威胁防护， microsoft defender 高级威胁防护， 云应用安全
+keywords: api， 安全性， 威胁防护， mde， microsoft defender for endpoint， microsoft defender atp， office 365 高级威胁防护， Microsoft defender 高级威胁防护， 云应用安全
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 3d9eb6b255aefa55da811e779503242c240baf58
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 5bc1aee05cb0dc184fdc972fbb1a091f4004fb38
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49929762"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50903960"
 ---
 # <a name="other-security-and-threat-protection-apis"></a>其他安全和威胁防护 API
 
@@ -40,6 +40,6 @@ ms.locfileid: "49929762"
 
 以下资源提供有关可用于 Microsoft 365 Defender API 之外的其他 Microsoft 安全解决方案 API 的更多信息。
 
-- [Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/apis-intro)
-- [Microsoft Defender for Office 365](https://docs.microsoft.com/office/office-365-management-api/)
-- [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/api-introduction)
+- [Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/apis-intro)
+- [Microsoft Defender for Office 365](/office/office-365-management-api/)
+- [Microsoft Cloud App Security](/cloud-app-security/api-introduction)

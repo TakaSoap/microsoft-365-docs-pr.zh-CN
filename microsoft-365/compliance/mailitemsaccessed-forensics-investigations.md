@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: 使用 MailItemsAccessed 邮箱审核操作对被盗用的用户账户进行司法鉴定调查。
-ms.openlocfilehash: 15379a5c24ee222cf097e94d46dc46de0e385820
-ms.sourcegitcommit: c1f9a1b2a34146c51c9e33c4119a388b249ce7a9
+ms.openlocfilehash: e9dda101b330f6632e66c226156df3497ac38453
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "49868000"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50903478"
 ---
 # <a name="use-advanced-audit-to-investigate-compromised-accounts"></a>使用“高级审核”来调查被盗用的帐户
 
@@ -31,7 +31,7 @@ ms.locfileid: "49868000"
 
 ## <a name="the-mailitemsaccessed-mailbox-auditing-action"></a>MailItemsAccessed 邮箱审核操作
 
-新的 MailItemsAccessed 操作是新“[高级审核](advanced-audit.md)”功能的一部分。 它是“[Exchange 邮箱审核](https://docs.microsoft.com/office365/securitycompliance/enable-mailbox-auditing#mailbox-auditing-actions)”的一部分，并默认为分配了 Office 365 或 Microsoft 365 E5 许可证的用户或拥有 Microsoft 365 E5 合规加载项订阅的组织启用。
+新的 MailItemsAccessed 操作是新“[高级审核](advanced-audit.md)”功能的一部分。 它是“[Exchange 邮箱审核](/office365/securitycompliance/enable-mailbox-auditing#mailbox-auditing-actions)”的一部分，并默认为分配了 Office 365 或 Microsoft 365 E5 许可证的用户或拥有 Microsoft 365 E5 合规加载项订阅的组织启用。
 
 MailItemsAccessed 邮箱审核操作包含所有邮件协议：POP、IMAP、 MAPI、EWS、Exchange ActiveSync 和 REST。 还包含了两种存取邮件的类型：*同步* 和 *绑定*。
 
@@ -67,7 +67,7 @@ MailItemsAccessed 邮箱审核操作包含所有邮件协议：POP、IMAP、 MAP
 
 Mailbox 审核生成用于存取电子邮件的审核记录，因此可以自信保证电子邮件未被泄露。 因此，在无法确定某些数据已被访问的情况中，我们假设其记录了所有邮件存取活动。
 
-使用 MailItemsAccessed 审核记录进行司法鉴定目的，通常在解决了数据泄露且攻击者被逐出后进行。 若要开始调查，应确定被盗用的一组邮箱并确定攻击者存取组织中邮箱的时间范围。 然后可在 [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell) 中使用 **Search-UnifiedAuditLog** 或 **Search-MailboxAuditLog** cmdlet 搜索与数据泄漏对应的审核记录。 
+使用 MailItemsAccessed 审核记录进行司法鉴定目的，通常在解决了数据泄露且攻击者被逐出后进行。 若要开始调查，应确定被盗用的一组邮箱并确定攻击者存取组织中邮箱的时间范围。 然后可在 [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) 中使用 **Search-UnifiedAuditLog** 或 **Search-MailboxAuditLog** cmdlet 搜索与数据泄漏对应的审核记录。 
 
 可运行下列之一命令来搜索 MailItemsAccessed 审核记录：
 
@@ -192,4 +192,4 @@ Search-MailboxAuditLog -Identity <user> -StartDate 01/06/2020 -EndDate 01/20/202
 
 ```powershell
 Search-MailboxAuditLog -Identity admin -ShowDetails -Operations MailItemsAccessed -ResultSize 2000 | Select LastAccessed,Operation,AuditOperationsCountInAggregatedRecord,ClientInfoString
-``` 
+```
