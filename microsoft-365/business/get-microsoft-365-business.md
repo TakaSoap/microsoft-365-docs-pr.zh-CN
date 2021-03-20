@@ -24,39 +24,36 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
-description: 了解用于购买 Microsoft 365 商业高级版和分步说明的选项，以便从 Microsoft 合作伙伴中心进行购买。
-ms.openlocfilehash: 550ab62b46ffc09f8c4822a2e1741ee51b4579ca
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+description: 了解购买 Microsoft 365 商业高级版的选项，以及从 Microsoft 合作伙伴中心购买它的分步说明。
+ms.openlocfilehash: 9f29846a7017259340b2125b09bc9fa5f935501b
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400934"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50913318"
 ---
-# <a name="get-microsoft-365-business-premium"></a><span data-ttu-id="a23b3-103">获取 Microsoft 365 商业高级版</span><span class="sxs-lookup"><span data-stu-id="a23b3-103">Get Microsoft 365 Business Premium</span></span>
+# <a name="get-microsoft-365-business-premium"></a><span data-ttu-id="8e551-103">获取 Microsoft 365 商业高级版</span><span class="sxs-lookup"><span data-stu-id="8e551-103">Get Microsoft 365 Business Premium</span></span>
 
-## <a name="get-microsoft-365-business-premium-from-microsoft"></a><span data-ttu-id="a23b3-104">从 Microsoft 获取 Microsoft 365 商业高级版</span><span class="sxs-lookup"><span data-stu-id="a23b3-104">Get Microsoft 365 Business Premium from Microsoft</span></span>
+## <a name="get-microsoft-365-business-premium-from-microsoft"></a><span data-ttu-id="8e551-104">从 Microsoft 获取 Microsoft 365 商业高级版</span><span class="sxs-lookup"><span data-stu-id="8e551-104">Get Microsoft 365 Business Premium from Microsoft</span></span>
 
-<span data-ttu-id="a23b3-105">如果你没有合作伙伴并且想要获取 Microsoft 365 商业高级版，你可以在[此处购买](https://www.microsoft.com/en-US/microsoft-365/business)。</span><span class="sxs-lookup"><span data-stu-id="a23b3-105">If you don't have a partner and want to get Microsoft 365 Business Premium, you can [buy it here](https://www.microsoft.com/en-US/microsoft-365/business).</span></span>
+<span data-ttu-id="8e551-105">如果你没有合作伙伴并且想要获取 Microsoft 365 商业高级版，可以 [在此处购买](https://www.microsoft.com/en-US/microsoft-365/business)。</span><span class="sxs-lookup"><span data-stu-id="8e551-105">If you don't have a partner and want to get Microsoft 365 Business Premium, you can [buy it here](https://www.microsoft.com/en-US/microsoft-365/business).</span></span>
 
-<span data-ttu-id="a23b3-106">有关详细说明，请参阅[注册 Microsoft 365 商业高级版](sign-up.md)。</span><span class="sxs-lookup"><span data-stu-id="a23b3-106">See [sign up for Microsoft 365 Business Premium](sign-up.md) for detailed instructions.</span></span>
+<span data-ttu-id="8e551-106">有关 [详细说明，请参阅注册 Microsoft 365 商业高级](sign-up.md) 版。</span><span class="sxs-lookup"><span data-stu-id="8e551-106">See [sign up for Microsoft 365 Business Premium](sign-up.md) for detailed instructions.</span></span>
 
-<span data-ttu-id="a23b3-107">你也可以转到[Microsoft Store](https://www.microsoft.com/en-us/store/locations/find-a-store?icid=en_US_Store_UH_FAS)购买 Microsoft 365 商业高级版，获取设置帮助。</span><span class="sxs-lookup"><span data-stu-id="a23b3-107">You can also head over to a [Microsoft Store](https://www.microsoft.com/en-us/store/locations/find-a-store?icid=en_US_Store_UH_FAS) to buy Microsoft 365 Business Premium and get setup help.</span></span>
+<span data-ttu-id="8e551-107">还可以前往 [Microsoft Store](https://www.microsoft.com/en-us/store/locations/find-a-store?icid=en_US_Store_UH_FAS) 购买 Microsoft 365 商业高级版并获取设置帮助。</span><span class="sxs-lookup"><span data-stu-id="8e551-107">You can also head over to a [Microsoft Store](https://www.microsoft.com/en-us/store/locations/find-a-store?icid=en_US_Store_UH_FAS) to buy Microsoft 365 Business Premium and get setup help.</span></span>
   
-## <a name="get-microsoft-365-business-premium-from-microsoft-partner-center"></a><span data-ttu-id="a23b3-108">从 Microsoft 合作伙伴中心获取 Microsoft 365 商业高级版</span><span class="sxs-lookup"><span data-stu-id="a23b3-108">Get Microsoft 365 Business Premium from Microsoft Partner Center</span></span>
+## <a name="get-microsoft-365-business-premium-from-microsoft-partner-center"></a><span data-ttu-id="8e551-108">从 Microsoft 合作伙伴中心获取 Microsoft 365 商业高级版</span><span class="sxs-lookup"><span data-stu-id="8e551-108">Get Microsoft 365 Business Premium from Microsoft Partner Center</span></span>
 
-1. <span data-ttu-id="a23b3-109">通过使用注册参加云服务提供商 (CSP) 计划时创建的凭据，登录 [Microsoft 合作伙伴中心](https://go.microsoft.com/fwlink/p/?linkid=849910)。</span><span class="sxs-lookup"><span data-stu-id="a23b3-109">Sign in at [Microsoft Partner Center](https://go.microsoft.com/fwlink/p/?linkid=849910) by using the credentials you created when you enrolled to the Cloud Service Provider (CSP) program.</span></span> 
+1. <span data-ttu-id="8e551-109">通过使用注册参加云服务提供商 (CSP) 计划时创建的凭据，登录 [Microsoft 合作伙伴中心](https://go.microsoft.com/fwlink/p/?linkid=849910)。</span><span class="sxs-lookup"><span data-stu-id="8e551-109">Sign in at [Microsoft Partner Center](https://go.microsoft.com/fwlink/p/?linkid=849910) by using the credentials you created when you enrolled to the Cloud Service Provider (CSP) program.</span></span> 
     
-2. <span data-ttu-id="a23b3-110">在 "合作伙伴仪表板" 中，选择 "**客户**"，然后选择您的客户或添加新客户，然后再获取 Microsoft 365 商业高级版。</span><span class="sxs-lookup"><span data-stu-id="a23b3-110">On the Partner Dashboard, choose **Customers**, then select your customer or add a new customer before you get Microsoft 365 Business Premium.</span></span>
+2. <span data-ttu-id="8e551-110">在合作伙伴仪表板上， **选择** 客户 ，然后选择你的客户或添加新客户，然后再获取 Microsoft 365 商业高级版。</span><span class="sxs-lookup"><span data-stu-id="8e551-110">On the Partner Dashboard, choose **Customers**, then select your customer or add a new customer before you get Microsoft 365 Business Premium.</span></span>
     
-    ![在 Microsoft 合作伙伴中心中，添加客户。](../media/ec807d07-bbd2-411f-8fe1-c644cf9a3882.png)
+    ![在 Microsoft 合作伙伴中心，添加客户。](../media/ec807d07-bbd2-411f-8fe1-c644cf9a3882.png)
   
-3. <span data-ttu-id="a23b3-112">在 "客户**订阅**" 页上，选择 "**添加订阅**"，选择 "目录" 下的 "小型企业" 选项，然后选择 " **Microsoft 365 商业高级版**"。</span><span class="sxs-lookup"><span data-stu-id="a23b3-112">On the customer's **Subscription** page, select **Add subscription**, choose the Small business option under Catalog, and then choose **Microsoft 365 Business Premium**.</span></span>
+3. <span data-ttu-id="8e551-112">在客户的订阅页面上，选择添加 **订阅，选择** 目录下的小型企业选项，然后选择 **Microsoft 365 商业高级版**。</span><span class="sxs-lookup"><span data-stu-id="8e551-112">On the customer's **Subscription** page, select **Add subscription**, choose the Small business option under Catalog, and then choose **Microsoft 365 Business Premium**.</span></span>
     
-    <span data-ttu-id="a23b3-113">选择所需的许可证数（不超过 300 个）。</span><span class="sxs-lookup"><span data-stu-id="a23b3-113">Select the number of licenses you need (up to 300).</span></span> <span data-ttu-id="a23b3-114">如果用户数超过300，请参阅[Microsoft 365 Enterprise](https://go.microsoft.com/fwlink/p/?linkid=862316) 。</span><span class="sxs-lookup"><span data-stu-id="a23b3-114">If you have more than 300 users, see [Microsoft 365 Enterprise](https://go.microsoft.com/fwlink/p/?linkid=862316) instead.</span></span> 
+    <span data-ttu-id="8e551-113">选择所需的许可证数（不超过 300 个）。</span><span class="sxs-lookup"><span data-stu-id="8e551-113">Select the number of licenses you need (up to 300).</span></span> <span data-ttu-id="8e551-114">如果你的用户数超过 300，请参阅 [Microsoft 365 企业版](../enterprise/index.yml) 。</span><span class="sxs-lookup"><span data-stu-id="8e551-114">If you have more than 300 users, see [Microsoft 365 Enterprise](../enterprise/index.yml) instead.</span></span> 
     
-    ![在 "新建订阅" 页上，选择 "小型企业"。](../media/52d99e89-2175-4974-84bb-dd626048541b.png)
+    ![在"新建订阅"页面上，选择"小型企业"。](../media/52d99e89-2175-4974-84bb-dd626048541b.png)
   
-    <span data-ttu-id="a23b3-116">完成添加新客户（包括公司名称）的其余步骤。</span><span class="sxs-lookup"><span data-stu-id="a23b3-116">Complete the rest of the steps for adding a new customer, including the business name.</span></span>
-    
-
-
+    <span data-ttu-id="8e551-116">完成添加新客户（包括公司名称）的其余步骤。</span><span class="sxs-lookup"><span data-stu-id="8e551-116">Complete the rest of the steps for adding a new customer, including the business name.</span></span>

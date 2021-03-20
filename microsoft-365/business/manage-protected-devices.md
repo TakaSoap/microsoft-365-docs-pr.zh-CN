@@ -27,24 +27,22 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 018a2a96-3811-4b5d-b751-3b6330b34256
-description: 了解如何从通过保护策略管理的设备中删除公司数据，以及如何将 Windows 10 设备重置为其出厂设置。
-ms.openlocfilehash: 88311a2cf08ee0b1ceb4ef3eb599efe5ebccdb05
-ms.sourcegitcommit: a5ed189fa789975f8c3ed39db1d52f2ef7d671aa
+description: 了解如何从通过保护策略管理的设备上删除公司数据，以及将 Windows 10 设备重置为出厂设置。
+ms.openlocfilehash: 8c5472eada4cded3a6869c031ab902928876095f
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "45101613"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50913206"
 ---
-# <a name="manage-protected-devices-with-microsoft-365-business-premium"></a><span data-ttu-id="a7424-103">使用 Microsoft 365 商业高级版管理受保护的设备</span><span class="sxs-lookup"><span data-stu-id="a7424-103">Manage protected devices with Microsoft 365 Business Premium</span></span>
+# <a name="manage-protected-devices-with-microsoft-365-business-premium"></a><span data-ttu-id="5d3a8-103">使用 Microsoft 365 商业高级版管理受保护的设备</span><span class="sxs-lookup"><span data-stu-id="5d3a8-103">Manage protected devices with Microsoft 365 Business Premium</span></span>
 
-<span data-ttu-id="a7424-104">在用户通过将其工作帐户登录到设备或设备上的 Office 应用将其设备连接到你的组织后，可以使用你设置的策略保护设备。</span><span class="sxs-lookup"><span data-stu-id="a7424-104">After a user connects their device to your organization by signing in with their work account to the device or to Office apps on the device, you can protect the device with the policies you set up.</span></span> <span data-ttu-id="a7424-105">连接的设备在 "**设备**" 页面上列出。</span><span class="sxs-lookup"><span data-stu-id="a7424-105">Connected devices are listed on the **Devices** page.</span></span> <span data-ttu-id="a7424-106">如果设备丢失或被盗，可以从此页管理该设备，删除任何公司数据。</span><span class="sxs-lookup"><span data-stu-id="a7424-106">If a device is lost or stolen, you can manage it from this page to remove any company data.</span></span> <span data-ttu-id="a7424-107">也可以将 Windows 10 设备重置为出厂设置，擦除任何自定义设置。</span><span class="sxs-lookup"><span data-stu-id="a7424-107">You can also reset Windows 10 devices to their factory settings to wipe out any custom settings.</span></span> 
+<span data-ttu-id="5d3a8-104">用户使用工作帐户登录设备或设备上 Office 应用，将其设备连接到组织后，可以使用设置的策略保护设备。</span><span class="sxs-lookup"><span data-stu-id="5d3a8-104">After a user connects their device to your organization by signing in with their work account to the device or to Office apps on the device, you can protect the device with the policies you set up.</span></span> <span data-ttu-id="5d3a8-105">连接的设备在"设备" **页上** 列出。</span><span class="sxs-lookup"><span data-stu-id="5d3a8-105">Connected devices are listed on the **Devices** page.</span></span> <span data-ttu-id="5d3a8-106">如果设备丢失或被盗，可以从此页管理该设备，删除任何公司数据。</span><span class="sxs-lookup"><span data-stu-id="5d3a8-106">If a device is lost or stolen, you can manage it from this page to remove any company data.</span></span> <span data-ttu-id="5d3a8-107">也可以将 Windows 10 设备重置为出厂设置，擦除任何自定义设置。</span><span class="sxs-lookup"><span data-stu-id="5d3a8-107">You can also reset Windows 10 devices to their factory settings to wipe out any custom settings.</span></span> 
 
-<span data-ttu-id="a7424-108">有关可用于管理设备的任务的详细信息，请参阅以下文章：</span><span class="sxs-lookup"><span data-stu-id="a7424-108">For more information on the tasks you can use to manage devices, see these articles:</span></span> 
+<span data-ttu-id="5d3a8-108">有关可用于管理设备的任务详细信息，请参阅以下文章：</span><span class="sxs-lookup"><span data-stu-id="5d3a8-108">For more information on the tasks you can use to manage devices, see these articles:</span></span> 
   
-[<span data-ttu-id="a7424-109">从设备中删除公司数据</span><span class="sxs-lookup"><span data-stu-id="a7424-109">Remove company data from devices</span></span>](remove-company-data.md)
+[<span data-ttu-id="5d3a8-109">从设备中删除公司数据</span><span class="sxs-lookup"><span data-stu-id="5d3a8-109">Remove company data from devices</span></span>](remove-company-data.md)
   
-[<span data-ttu-id="a7424-110">将 Windows 10 设备重置为其出厂设置</span><span class="sxs-lookup"><span data-stu-id="a7424-110">Reset Windows 10 devices to their factory settings</span></span>](reset-devices-to-factory-settings.md)
+[<span data-ttu-id="5d3a8-110">将 Windows 10 设备重置为其出厂设置</span><span class="sxs-lookup"><span data-stu-id="5d3a8-110">Reset Windows 10 devices to their factory settings</span></span>](reset-devices-to-factory-settings.md)
 
-[<span data-ttu-id="a7424-111">添加托管设备</span><span class="sxs-lookup"><span data-stu-id="a7424-111">Add a managed device</span></span>](https://docs.microsoft.com/microsoft-365/business/app-protection-settings-for-android-and-ios)
-  
-
+[<span data-ttu-id="5d3a8-111">添加托管设备</span><span class="sxs-lookup"><span data-stu-id="5d3a8-111">Add a managed device</span></span>](./app-protection-settings-for-android-and-ios.md)

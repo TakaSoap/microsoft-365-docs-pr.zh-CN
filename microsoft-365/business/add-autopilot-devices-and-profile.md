@@ -24,74 +24,73 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: be5b6d90-3344-4c5e-bf40-5733eb845beb
-description: 了解如何使用 Windows AutoPilot 为企业设置新的 Windows 10 设备，以便它们可供员工使用。
-ms.openlocfilehash: f263cc90656ae5e7be1a89e3c7f56bfb2d0e3651
-ms.sourcegitcommit: 3b369a44b71540c8b8214ce588a7aa6f47c3bb1e
+description: 了解如何使用 Windows AutoPilot 为企业设置新的 Windows 10 设备，以便员工可以使用这些设备。
+ms.openlocfilehash: 75cc51b889f8673de8dba2357c777de47fd0d296
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "50099742"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50913494"
 ---
-# <a name="use-the-step-by-step-guide-to-add-autopilot-devices-and-profile"></a><span data-ttu-id="c15f2-103">使用分步指南添加 Autopilot 设备和配置文件</span><span class="sxs-lookup"><span data-stu-id="c15f2-103">Use the step-by-step guide to add Autopilot devices and profile</span></span>
+# <a name="use-the-step-by-step-guide-to-add-autopilot-devices-and-profile"></a><span data-ttu-id="89d75-103">使用分步指南添加 Autopilot 设备和配置文件</span><span class="sxs-lookup"><span data-stu-id="89d75-103">Use the step-by-step guide to add Autopilot devices and profile</span></span>
 
-<span data-ttu-id="c15f2-104">可以使用 Windows AutoPilot 为企业设置新的 **Windows** 10 设备，以便当你将这些设备授予员工时，这些设备可供使用。</span><span class="sxs-lookup"><span data-stu-id="c15f2-104">You can use Windows AutoPilot to set up **new** Windows 10 devices for your business so they're ready for use when you give them to your employees.</span></span>
+<span data-ttu-id="89d75-104">可以使用 Windows AutoPilot 为企业设置新的 **Windows** 10 设备，以便当你将这些设备授予你的员工时，这些设备可供使用。</span><span class="sxs-lookup"><span data-stu-id="89d75-104">You can use Windows AutoPilot to set up **new** Windows 10 devices for your business so they're ready for use when you give them to your employees.</span></span>
   
-## <a name="device-requirements"></a><span data-ttu-id="c15f2-105">设备要求</span><span class="sxs-lookup"><span data-stu-id="c15f2-105">Device requirements</span></span>
+## <a name="device-requirements"></a><span data-ttu-id="89d75-105">设备要求</span><span class="sxs-lookup"><span data-stu-id="89d75-105">Device requirements</span></span>
 
-<span data-ttu-id="c15f2-106">设备必须满足以下要求：</span><span class="sxs-lookup"><span data-stu-id="c15f2-106">Devices must meet these requirements:</span></span>
+<span data-ttu-id="89d75-106">设备必须满足以下要求：</span><span class="sxs-lookup"><span data-stu-id="89d75-106">Devices must meet these requirements:</span></span>
   
-- <span data-ttu-id="c15f2-107">Windows 10 版本 1703 或更高版本</span><span class="sxs-lookup"><span data-stu-id="c15f2-107">Windows 10, version 1703 or later</span></span>
+- <span data-ttu-id="89d75-107">Windows 10 版本 1703 或更高版本</span><span class="sxs-lookup"><span data-stu-id="89d75-107">Windows 10, version 1703 or later</span></span>
     
-- <span data-ttu-id="c15f2-108">尚未通过 Windows 全新体验的新设备</span><span class="sxs-lookup"><span data-stu-id="c15f2-108">New devices that haven't been through Windows out-of-box experience</span></span>
+- <span data-ttu-id="89d75-108">尚未通过 Windows 全新体验的新设备</span><span class="sxs-lookup"><span data-stu-id="89d75-108">New devices that haven't been through Windows out-of-box experience</span></span>
     
-## <a name="use-the-setup-guide-to-create-devices-and-profiles"></a><span data-ttu-id="c15f2-109">使用设置指南创建设备和配置文件</span><span class="sxs-lookup"><span data-stu-id="c15f2-109">Use the setup guide to create devices and profiles</span></span>
+## <a name="use-the-setup-guide-to-create-devices-and-profiles"></a><span data-ttu-id="89d75-109">使用设置指南创建设备和配置文件</span><span class="sxs-lookup"><span data-stu-id="89d75-109">Use the setup guide to create devices and profiles</span></span>
 
-<span data-ttu-id="c15f2-110">[![显示管理中心正在更改且你可在 aka.ms/aboutM365preview 找到更多详细信息的标签。](../media/m365admincenterchanging.png)](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview)</span><span class="sxs-lookup"><span data-stu-id="c15f2-110">[![Label to let you know the admin center is changing and you can find more details at aka.ms/aboutM365preview.](../media/m365admincenterchanging.png)](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview)</span></span>
+<span data-ttu-id="89d75-110">[![显示管理中心正在更改且你可在 aka.ms/aboutM365preview 找到更多详细信息的标签。](../media/m365admincenterchanging.png)](/office365/admin/microsoft-365-admin-center-preview)</span><span class="sxs-lookup"><span data-stu-id="89d75-110">[![Label to let you know the admin center is changing and you can find more details at aka.ms/aboutM365preview.](../media/m365admincenterchanging.png)](/office365/admin/microsoft-365-admin-center-preview)</span></span>
 
-<span data-ttu-id="c15f2-111">如果尚未创建设备组或配置文件，则开始使用最佳方法就是使用分步指南。</span><span class="sxs-lookup"><span data-stu-id="c15f2-111">If you haven't created device groups or profiles yet, the best way to get started is by using the step-by-step guide.</span></span> <span data-ttu-id="c15f2-112">还可以添加[设备并](create-and-edit-autopilot-devices.md)[为其分配配置文件](create-and-edit-autopilot-profiles.md)，而无需使用指南。</span><span class="sxs-lookup"><span data-stu-id="c15f2-112">You can also [add devices](create-and-edit-autopilot-devices.md) and [assign profiles](create-and-edit-autopilot-profiles.md) to them without using the guide.</span></span> 
+<span data-ttu-id="89d75-111">如果你尚未创建设备组或配置文件，则开始使用最佳方法就是使用分步指南。</span><span class="sxs-lookup"><span data-stu-id="89d75-111">If you haven't created device groups or profiles yet, the best way to get started is by using the step-by-step guide.</span></span> <span data-ttu-id="89d75-112">还可以添加[设备并](create-and-edit-autopilot-devices.md)[为其分配配置文件](create-and-edit-autopilot-profiles.md)，而无需使用指南。</span><span class="sxs-lookup"><span data-stu-id="89d75-112">You can also [add devices](create-and-edit-autopilot-devices.md) and [assign profiles](create-and-edit-autopilot-profiles.md) to them without using the guide.</span></span> 
   
-1. <span data-ttu-id="c15f2-113">转到位于 <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> 的管理中心。</span><span class="sxs-lookup"><span data-stu-id="c15f2-113">Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>.</span></span>
+1. <span data-ttu-id="89d75-113">转到位于 <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> 的管理中心。</span><span class="sxs-lookup"><span data-stu-id="89d75-113">Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>.</span></span>
 
-2. <span data-ttu-id="c15f2-114">在左侧导航窗格中，选择 **"设备** \> **AutoPilot"。**</span><span class="sxs-lookup"><span data-stu-id="c15f2-114">On the left navigation pane, choose **Devices** \> **AutoPilot**.</span></span>
+2. <span data-ttu-id="89d75-114">在左侧导航窗格中，选择 **设备** \> **AutoPilot**。</span><span class="sxs-lookup"><span data-stu-id="89d75-114">On the left navigation pane, choose **Devices** \> **AutoPilot**.</span></span>
 
-    ![在管理中心，选择设备，然后选择 AutoPilot。](../media/AutoPilot.png)
+    ![在管理中心，选择"设备"，然后选择"AutoPilot"。](../media/AutoPilot.png)
   
-2. <span data-ttu-id="c15f2-116">在 **AutoPilot 页面上** ，单击或点击 **"开始"指南**。</span><span class="sxs-lookup"><span data-stu-id="c15f2-116">On the **AutoPilot** page, click or tap **Start guide**.</span></span>
+2. <span data-ttu-id="89d75-116">在 **AutoPilot** 页面上，单击或点击"开始 **指南"。**</span><span class="sxs-lookup"><span data-stu-id="89d75-116">On the **AutoPilot** page, click or tap **Start guide**.</span></span>
     
     ![Click Start guide for step-by-step instructions for Autopilot.](../media/31662655-d1e6-437d-87ea-c0dec5da56f7.png)
   
-3. <span data-ttu-id="c15f2-118">在" **上传包含设备列表的 .csv** 文件"页上，浏览到准备好的位置。CSV 文件，然后 **打开下** \> **一个**。</span><span class="sxs-lookup"><span data-stu-id="c15f2-118">On the **Upload .csv file with list of devices** page, browse to a location where you have the prepared .CSV file, then **Open** \> **Next**.</span></span> <span data-ttu-id="c15f2-119">文件必须具有三个标头：</span><span class="sxs-lookup"><span data-stu-id="c15f2-119">The file must have three headers:</span></span>
+3. <span data-ttu-id="89d75-118">在" **上传包含设备列表的 .csv** 文件"页上，浏览到准备好的位置。CSV 文件，然后打开 **下** \> **一个**。</span><span class="sxs-lookup"><span data-stu-id="89d75-118">On the **Upload .csv file with list of devices** page, browse to a location where you have the prepared .CSV file, then **Open** \> **Next**.</span></span> <span data-ttu-id="89d75-119">文件必须具有三个标头：</span><span class="sxs-lookup"><span data-stu-id="89d75-119">The file must have three headers:</span></span>
     
-    - <span data-ttu-id="c15f2-120">列 A：设备序列号</span><span class="sxs-lookup"><span data-stu-id="c15f2-120">Column A: Device Serial Number</span></span>
+    - <span data-ttu-id="89d75-120">列 A：设备序列号</span><span class="sxs-lookup"><span data-stu-id="89d75-120">Column A: Device Serial Number</span></span>
     
-    - <span data-ttu-id="c15f2-121">列 B：Windows 产品 ID</span><span class="sxs-lookup"><span data-stu-id="c15f2-121">Column B: Windows Product ID</span></span>
+    - <span data-ttu-id="89d75-121">列 B：Windows 产品 ID</span><span class="sxs-lookup"><span data-stu-id="89d75-121">Column B: Windows Product ID</span></span>
     
-    - <span data-ttu-id="c15f2-122">列 C：硬件哈希</span><span class="sxs-lookup"><span data-stu-id="c15f2-122">Column C: Hardware Hash</span></span>
+    - <span data-ttu-id="89d75-122">列 C：硬件哈希</span><span class="sxs-lookup"><span data-stu-id="89d75-122">Column C: Hardware Hash</span></span>
     
-    <span data-ttu-id="c15f2-123">你可以从硬件供应商获取此信息，或者可以使用 [Get-WindowsAutoPilotInfo PowerShell](https://www.powershellgallery.com/packages/Get-WindowsAutoPilotInfo) 脚本生成 CSV 文件。</span><span class="sxs-lookup"><span data-stu-id="c15f2-123">You can get this information from your hardware vendor, or you can use the [Get-WindowsAutoPilotInfo PowerShell script](https://www.powershellgallery.com/packages/Get-WindowsAutoPilotInfo) to generate a CSV file.</span></span> 
+    <span data-ttu-id="89d75-123">你可以从硬件供应商获取此信息，或者可以使用 [Get-WindowsAutoPilotInfo PowerShell](https://www.powershellgallery.com/packages/Get-WindowsAutoPilotInfo) 脚本生成 CSV 文件。</span><span class="sxs-lookup"><span data-stu-id="89d75-123">You can get this information from your hardware vendor, or you can use the [Get-WindowsAutoPilotInfo PowerShell script](https://www.powershellgallery.com/packages/Get-WindowsAutoPilotInfo) to generate a CSV file.</span></span> 
     
-    <span data-ttu-id="c15f2-p103">有关详细信息，请参阅 [设备列表 CSV 文件](https://docs.microsoft.com/microsoft-365/admin/misc/device-list)。还可在" **上传设备列表 .csv 文件**"页面下载示例文件。</span><span class="sxs-lookup"><span data-stu-id="c15f2-p103">For more information, see [Device list CSV-file](https://docs.microsoft.com/microsoft-365/admin/misc/device-list). You can also download a sample file on the **Upload .csv file with list of devices** page.</span></span> 
+    <span data-ttu-id="89d75-p103">有关详细信息，请参阅 [设备列表 CSV 文件](../admin/misc/device-list.md)。还可在" **上传设备列表 .csv 文件**"页面下载示例文件。</span><span class="sxs-lookup"><span data-stu-id="89d75-p103">For more information, see [Device list CSV-file](../admin/misc/device-list.md). You can also download a sample file on the **Upload .csv file with list of devices** page.</span></span> 
     
 > [!NOTE]
-> <span data-ttu-id="c15f2-126">此脚本使用 WMI 检索客户向 Windows Autopilot 注册设备所需的属性。</span><span class="sxs-lookup"><span data-stu-id="c15f2-126">This script uses WMI to retrieve properties needed for a customer to register a device with Windows Autopilot.</span></span> <span data-ttu-id="c15f2-127">请注意，生成的 CSV 文件不收集 Windows 产品 ID (PKID) 值是正常的，因为注册设备不需要这样做，并且输出 CSV 中的 PKID 为 NULL 完全正常。</span><span class="sxs-lookup"><span data-stu-id="c15f2-127">Note that it is normal for the resulting CSV file to not collect a Windows Product ID (PKID) value since this is not required to register a device and PKID being NULL in the output CSV is totally fine.</span></span> <span data-ttu-id="c15f2-128">将仅填充序列号和硬件哈希。</span><span class="sxs-lookup"><span data-stu-id="c15f2-128">Only the serial number and hardware hash will be populated.</span></span>
+> <span data-ttu-id="89d75-126">此脚本使用 WMI 检索客户在 Windows Autopilot 中注册设备所需的属性。</span><span class="sxs-lookup"><span data-stu-id="89d75-126">This script uses WMI to retrieve properties needed for a customer to register a device with Windows Autopilot.</span></span> <span data-ttu-id="89d75-127">请注意，生成的 CSV 文件不收集 Windows 产品 ID (PKID) 值是正常的，因为注册设备不需要这样做，并且输出 CSV 中的 PKID 为 NULL 完全正常。</span><span class="sxs-lookup"><span data-stu-id="89d75-127">Note that it is normal for the resulting CSV file to not collect a Windows Product ID (PKID) value since this is not required to register a device and PKID being NULL in the output CSV is totally fine.</span></span> <span data-ttu-id="89d75-128">将仅填充序列号和硬件哈希。</span><span class="sxs-lookup"><span data-stu-id="89d75-128">Only the serial number and hardware hash will be populated.</span></span>
     
-4. <span data-ttu-id="c15f2-129">在 **"分配配置文件"** 页上，您可以选择现有配置文件或新建配置文件。</span><span class="sxs-lookup"><span data-stu-id="c15f2-129">On the **Assign a profile** page, you can either pick an existing profile or create a new one.</span></span> <span data-ttu-id="c15f2-130">如果还没有，系统将提示你创建一个。</span><span class="sxs-lookup"><span data-stu-id="c15f2-130">If you don't have one yet, you'll be prompted to create one.</span></span> 
+4. <span data-ttu-id="89d75-129">在 **"分配配置文件"** 页上，您可以选择现有配置文件或创建新配置文件。</span><span class="sxs-lookup"><span data-stu-id="89d75-129">On the **Assign a profile** page, you can either pick an existing profile or create a new one.</span></span> <span data-ttu-id="89d75-130">如果还没有，系统将提示你创建一个。</span><span class="sxs-lookup"><span data-stu-id="89d75-130">If you don't have one yet, you'll be prompted to create one.</span></span> 
     
-    <span data-ttu-id="c15f2-131">配置文件是可应用到单个设备或一组设备的一系列设置。</span><span class="sxs-lookup"><span data-stu-id="c15f2-131">A profile is a collection of settings that can be applied to a single device or to a group of devices.</span></span>
+    <span data-ttu-id="89d75-131">配置文件是可应用到单个设备或一组设备的一系列设置。</span><span class="sxs-lookup"><span data-stu-id="89d75-131">A profile is a collection of settings that can be applied to a single device or to a group of devices.</span></span>
     
-    <span data-ttu-id="c15f2-132">默认功能是必需的，并且会自动设置。</span><span class="sxs-lookup"><span data-stu-id="c15f2-132">The default features are required and are set automatically.</span></span> <span data-ttu-id="c15f2-133">默认功能是：</span><span class="sxs-lookup"><span data-stu-id="c15f2-133">The default features are:</span></span>
+    <span data-ttu-id="89d75-132">默认功能是必需的，并且会自动设置。</span><span class="sxs-lookup"><span data-stu-id="89d75-132">The default features are required and are set automatically.</span></span> <span data-ttu-id="89d75-133">默认功能是：</span><span class="sxs-lookup"><span data-stu-id="89d75-133">The default features are:</span></span>
     
-    - <span data-ttu-id="c15f2-134">跳过 Cortana、OneDrive 和 OEM 注册。</span><span class="sxs-lookup"><span data-stu-id="c15f2-134">Skip Cortana, OneDrive, and OEM registration.</span></span>
+    - <span data-ttu-id="89d75-134">跳过 Cortana、OneDrive 和 OEM 注册。</span><span class="sxs-lookup"><span data-stu-id="89d75-134">Skip Cortana, OneDrive, and OEM registration.</span></span>
     
-    - <span data-ttu-id="c15f2-135">使用公司品牌创建登录体验。</span><span class="sxs-lookup"><span data-stu-id="c15f2-135">Create sign-in experience with your company brand.</span></span>
+    - <span data-ttu-id="89d75-135">使用公司品牌创建登录体验。</span><span class="sxs-lookup"><span data-stu-id="89d75-135">Create sign-in experience with your company brand.</span></span>
     
-    - <span data-ttu-id="c15f2-136">将设备连接到 Azure Active Directory 帐户，并自动注册它们以由 Microsoft 365 商业高级版管理。</span><span class="sxs-lookup"><span data-stu-id="c15f2-136">Connect your devices to Azure Active Directory accounts, and automatically enroll them to be managed by Microsoft 365 Business Premium.</span></span>
+    - <span data-ttu-id="89d75-136">将设备连接到 Azure Active Directory 帐户，并自动注册它们以由 Microsoft 365 商业高级版管理。</span><span class="sxs-lookup"><span data-stu-id="89d75-136">Connect your devices to Azure Active Directory accounts, and automatically enroll them to be managed by Microsoft 365 Business Premium.</span></span>
     
-    <span data-ttu-id="c15f2-137">有关详细信息，请参阅关于 [AutoPilot 配置文件设置](autopilot-profile-settings.md)。</span><span class="sxs-lookup"><span data-stu-id="c15f2-137">For more information, see [About AutoPilot Profile settings](autopilot-profile-settings.md).</span></span> 
+    <span data-ttu-id="89d75-137">有关详细信息，请参阅关于 [AutoPilot 配置文件设置](autopilot-profile-settings.md)。</span><span class="sxs-lookup"><span data-stu-id="89d75-137">For more information, see [About AutoPilot Profile settings](autopilot-profile-settings.md).</span></span> 
     
-5. <span data-ttu-id="c15f2-138">其他设置是" **跳过隐私设置**"和" **不允许用户成为本地管理员**"。默认情况下，这两者设置为" **关**"。</span><span class="sxs-lookup"><span data-stu-id="c15f2-138">The other settings are **Skip privacy settings** and **Don't allow user to become the local admin**. These are both set to **Off** by default.</span></span> 
+5. <span data-ttu-id="89d75-138">其他设置是" **跳过隐私设置**"和" **不允许用户成为本地管理员**"。默认情况下，这两者设置为" **关**"。</span><span class="sxs-lookup"><span data-stu-id="89d75-138">The other settings are **Skip privacy settings** and **Don't allow user to become the local admin**. These are both set to **Off** by default.</span></span> 
     
-    <span data-ttu-id="c15f2-139">选择" **下一步**"。</span><span class="sxs-lookup"><span data-stu-id="c15f2-139">Choose **Next**.</span></span>
+    <span data-ttu-id="89d75-139">选择" **下一步**"。</span><span class="sxs-lookup"><span data-stu-id="89d75-139">Choose **Next**.</span></span>
     
-6. <span data-ttu-id="c15f2-140">**你已完成指示** 你 (或选择) 的配置文件将应用到通过上传设备列表创建的设备组。</span><span class="sxs-lookup"><span data-stu-id="c15f2-140">**You're done** indicates that the profile you created (or chose) will be applied to the device group you created by uploading the list of devices.</span></span> <span data-ttu-id="c15f2-141">设置将在设备用户下次登录时生效。</span><span class="sxs-lookup"><span data-stu-id="c15f2-141">The settings will be in effect when the device users sign in next.</span></span> <span data-ttu-id="c15f2-142">选择“关闭”。</span><span class="sxs-lookup"><span data-stu-id="c15f2-142">Choose **Close**.</span></span>
-    
+6. <span data-ttu-id="89d75-140">**你已完成指示** 你创建 (或选择) 的配置文件将应用到通过上传设备列表创建的设备组。</span><span class="sxs-lookup"><span data-stu-id="89d75-140">**You're done** indicates that the profile you created (or chose) will be applied to the device group you created by uploading the list of devices.</span></span> <span data-ttu-id="89d75-141">设置将在设备用户下次登录时生效。</span><span class="sxs-lookup"><span data-stu-id="89d75-141">The settings will be in effect when the device users sign in next.</span></span> <span data-ttu-id="89d75-142">选择“关闭”。</span><span class="sxs-lookup"><span data-stu-id="89d75-142">Choose **Close**.</span></span>
