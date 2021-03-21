@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 摘要：从德国 Microsoft 云 (德国) 迁移到新的德国数据中心区域中的 Office 365 服务时，需要提前工作。
-ms.openlocfilehash: 5110c6bd86d5df35a7ceccb4abfedf059cb826d0
-ms.sourcegitcommit: 450661071e44854f0a0a92af648f76d907767b71
+ms.openlocfilehash: 37fde0119dfc84cbe9120cf922cbac469a0a50f1
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "50826172"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50923834"
 ---
 # <a name="pre-work-for-the-migration-from-microsoft-cloud-deutschland"></a>从德国 Microsoft 云进行迁移的前期工作
 
@@ -45,10 +45,10 @@ ms.locfileid: "50826172"
 | 步骤 (步骤)  | 说明 | 影响 |
 |:-------|:-------|:-------|
 | 准备通知用户迁移后重启客户端并登录和退出客户端。 | 迁移过程中，Office 客户端许可将从德国 Microsoft 云转换为 Office 365 服务。 客户端在退出并登录 Office 客户端后获取新的有效许可证。 | 用户的 Office 产品需要刷新 Office 365 服务中的许可证。 如果未刷新许可证，Office 产品可能会遇到许可证验证错误。 |
-| 确保与 [Office 365 服务 URL 和 IP 地址的网络连接](https://aka.ms/o365urls)。 | 客户托管用于访问 Office 365 服务的所有客户端和服务都必须能够访问 Office 365 全局服务终结点。 <br>在这种情况下，你或你的协作伙伴已制定防火墙规则，以阻止访问 [Office 365](https://aka.ms/o365urls) 服务 URL 中列出的 URL 和 IP 地址，并且 IP 地址必须更改防火墙规则，以允许访问 Office 365 全局服务终结点| 如果未在阶段 4 之前完成此操作，则可能会发生服务或客户端软件故障  |
+| 确保与 [Office 365 服务 URL 和 IP 地址的网络连接](./urls-and-ip-address-ranges.md)。 | 客户托管用于访问 Office 365 服务的所有客户端和服务都必须能够访问 Office 365 全局服务终结点。 <br>在这种情况下，你或你的协作伙伴已制定防火墙规则，以阻止访问 [Office 365](./urls-and-ip-address-ranges.md) 服务 URL 中列出的 URL 和 IP 地址，并且 IP 地址必须更改防火墙规则，以允许访问 Office 365 全局服务终结点| 如果未在阶段 4 之前完成此操作，则可能会发生服务或客户端软件故障  |
 | 取消任何试用订阅。 | 试用版订阅将不会迁移，并且将阻止传输付费订阅。 | 如果取消后用户访问试用服务，则试用服务已过期且无法正常工作。 |
-| 分析德国 Microsoft 云与 Office 365 服务之间的许可证功能差异。 | Office 365 服务包括当前德国 Microsoft 云中不可用的其他功能和服务。 在订阅转移期间，用户可以使用新功能。 | <ul><li> 分析 Microsoft 云德国和 Office 365 服务的许可证提供的不同功能。 从 Office [365 平台服务说明开始](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-platform-service-description)。 </li><li> 确定是否应最初禁用 Office 365 服务的任何新功能，以限制对用户或用户更改管理的影响，并根据需要更改用户许可证分配。 </li><li>为用户和技术支持人员准备 Office 365 服务提供的新服务和功能。 |
-| 创建组织范围的 [保留策略](https://docs.microsoft.com/microsoft-365/compliance/retention) ，防止在迁移过程中意外删除内容。  |<ul><li>为确保最终用户不会在迁移过程中意外删除内容，客户可以选择启用组织范围的保留策略。 </li><li>尽管不需要保留，因为迁移过程中随时设置保留应按预期工作，但保留策略是一种备份安全机制。 同时，保留策略可能不会由所有客户使用，尤其是关注保留的客户。</li></ul>| 应用保留策略，如 [了解保留策略和保留标签中所述](https://docs.microsoft.com/microsoft-365/compliance/retention-policies)。 如果未在阶段 4/9 之前完成此操作，则可能会发生服务或客户端软件故障。 </li></ul>|
+| 分析德国 Microsoft 云与 Office 365 服务之间的许可证功能差异。 | Office 365 服务包括当前德国 Microsoft 云中不可用的其他功能和服务。 在订阅转移期间，用户可以使用新功能。 | <ul><li> 分析 Microsoft 云德国和 Office 365 服务的许可证提供的不同功能。 从 Office [365 平台服务说明开始](/office365/servicedescriptions/office-365-platform-service-description/office-365-platform-service-description)。 </li><li> 确定是否应最初禁用 Office 365 服务的任何新功能，以限制对用户或用户更改管理的影响，并根据需要更改用户许可证分配。 </li><li>为用户和技术支持人员准备 Office 365 服务提供的新服务和功能。 |
+| 创建组织范围的 [保留策略](../compliance/retention.md) ，防止在迁移过程中意外删除内容。  |<ul><li>为确保最终用户不会在迁移过程中意外删除内容，客户可以选择启用组织范围的保留策略。 </li><li>尽管不需要保留，因为迁移过程中随时设置保留应按预期工作，但保留策略是一种备份安全机制。 同时，保留策略可能不会由所有客户使用，尤其是关注保留的客户。</li></ul>| 应用保留策略，如 [了解保留策略和保留标签中所述](../compliance/retention.md)。 如果未在阶段 4/9 之前完成此操作，则可能会发生服务或客户端软件故障。 </li></ul>|
 | 正确的许可证过度使用 | 在某些情况下，客户可能能够使用比购买的服务更多的服务。 此条件称为许可证过度使用。 Microsoft 无法将许可证过度使用条件的客户从德国 Microsoft 云迁移到德国数据中心区域。 为了确保对服务和数据的持续访问，每个分配的用户都需要许可证。 | 所有客户 | 客户必须通过购买其他许可证或取消分配用户许可证来评估和解决许可证过度分配情况。 |
 |||||
 
@@ -58,7 +58,7 @@ ms.locfileid: "50826172"
 
 | 步骤 (步骤)  | 说明 | 影响 |
 |:-------|:-------|:-------|
-| [针对灾难恢复方案的 Active Directory 联合身份验证 (AD FS) ](ms-cloud-germany-transition-add-adfs.md#backup) 备份。 | 客户需要适当地备份 AD FS 场，以确保可以还原对全局 & Germany 终结点的信赖方信任，而不会接触域的颁发者 URI。 如有必要，Microsoft 建议使用 AD FS 快速还原来备份服务器场和相应的还原。 | 必需操作。 如果客户的 AD FS 场失败，则 Inaction 将导致迁移期间的服务影响。 有关详细信息，请参阅 [ADFS 迁移步骤](https://docs.microsoft.com/microsoft-365/enterprise/ms-cloud-germany-transition-add-adfs) |
+| [针对灾难恢复方案的 Active Directory 联合身份验证 (AD FS) ](ms-cloud-germany-transition-add-adfs.md#backup) 备份。 | 客户需要适当地备份 AD FS 场，以确保可以还原对全局 & Germany 终结点的信赖方信任，而不会接触域的颁发者 URI。 如有必要，Microsoft 建议使用 AD FS 快速还原来备份服务器场和相应的还原。 | 必需操作。 如果客户的 AD FS 场失败，则 Inaction 将导致迁移期间的服务影响。 有关详细信息，请参阅 [ADFS 迁移步骤](./ms-cloud-germany-transition-add-adfs.md) |
 ||||
 
 ## <a name="exchange-online"></a>Exchange Online
@@ -158,13 +158,13 @@ ms.locfileid: "50826172"
 
 | 步骤 (步骤)  | 说明 | 影响 |
 |:-------|:-------|:-------|
-| 通过与合作伙伴合作，确定使用哪些 Azure 服务，并准备将来从德国迁移到 Office 365 服务租户。 按照 Azure 迁移操作手册 [中所述的步骤操作](https://docs.microsoft.com/azure/germany/germany-migration-main)。 |<ul><li>Azure 资源的迁移是客户的责任，需要按照规定步骤执行手动操作。 了解组织中使用的服务是成功迁移 Azure 服务的关键。 </li><li> 在组织 (组织) 下拥有 Azure 订阅的 Office 365 Germany 客户在可以开始订阅和服务迁移时必须遵循 Microsoft 规定的顺序。</li></ul>|<ul><li>客户可能有多个 Azure 订阅，每个订阅包含基础结构、服务和平台组件。 </li><li> 管理员应确定订阅和利益干系人，以确保作为此迁移事件的一部分，可以进行快速迁移和验证。 </li><li>未能成功完成这些订阅和 Azure 组件在规定时间线内的迁移将影响 Office 和 Azure AD 到 Office 365 服务的转换完成，并可能导致数据丢失。 </li><li> 消息中心通知将指示客户引导的迁移可以开始的时间点。 </li></ul>|
+| 通过与合作伙伴合作，确定使用哪些 Azure 服务，并准备将来从德国迁移到 Office 365 服务租户。 按照 Azure 迁移操作手册 [中所述的步骤操作](/azure/germany/germany-migration-main)。 |<ul><li>Azure 资源的迁移是客户的责任，需要按照规定步骤执行手动操作。 了解组织中使用的服务是成功迁移 Azure 服务的关键。 </li><li> 在组织 (组织) 下拥有 Azure 订阅的 Office 365 Germany 客户在可以开始订阅和服务迁移时必须遵循 Microsoft 规定的顺序。</li></ul>|<ul><li>客户可能有多个 Azure 订阅，每个订阅包含基础结构、服务和平台组件。 </li><li> 管理员应确定订阅和利益干系人，以确保作为此迁移事件的一部分，可以进行快速迁移和验证。 </li><li>未能成功完成这些订阅和 Azure 组件在规定时间线内的迁移将影响 Office 和 Azure AD 到 Office 365 服务的转换完成，并可能导致数据丢失。 </li><li> 消息中心通知将指示客户引导的迁移可以开始的时间点。 </li></ul>|
 ||||
 
 <!--
 Reworked as text:
 
-**Step:** Determine which Azure services are in use and prepare for future migration from Germany to the Office 365 services tenant by working with your partners. Follow the steps described in the [Azure migration playbook](https://docs.microsoft.com/azure/germany/germany-migration-main).
+**Step:** Determine which Azure services are in use and prepare for future migration from Germany to the Office 365 services tenant by working with your partners. Follow the steps described in the [Azure migration playbook](/azure/germany/germany-migration-main).
 
 **Description:** Migration of Azure resources is a customer responsibility and requires manual effort following prescribed steps. Understanding what services are in use in the organization is key to successful migration of Azure services. 
 
@@ -181,7 +181,7 @@ Office 365 Germany customers who have Azure subscriptions under the same identit
 - A Message center notification will signal the point at which customer-led migration can begin.
 -->
 
-## <a name="more-information"></a>详细信息
+## <a name="more-information"></a>更多信息
 
 入门：
 
@@ -198,6 +198,6 @@ Office 365 Germany customers who have Azure subscriptions under the same identit
 
 云应用：
 
-- [Dynamics 365 迁移计划信息](https://aka.ms/d365ceoptin)
-- [Power BI 迁移计划信息](https://aka.ms/pbioptin)
-- [开始 Microsoft Teams 升级](https://aka.ms/SkypeToTeams-Home)
+- [Dynamics 365 迁移计划信息](/dynamics365/get-started/migrate-data-german-region)
+- [Power BI 迁移计划信息](/power-bi/admin/service-admin-migrate-data-germany)
+- [开始 Microsoft Teams 升级](/microsoftteams/upgrade-start-here)

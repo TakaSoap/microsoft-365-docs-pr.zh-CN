@@ -22,18 +22,18 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: 了解如何在 Office 365 中识别、监视和自动保护组织中的敏感信息。
-ms.openlocfilehash: 75c2f4d81b3378d031adc394a9c8f7615d51079c
-ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
+ms.openlocfilehash: 7d526d5eeb74f0d31f375974824e7a76344bcd76
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "49682795"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50925806"
 ---
 # <a name="overview-of-data-loss-prevention"></a>数据丢失防护概述
 <!-- this topic needs to be split into smaller, more coherent ones. It is confusing as it is. -->
 <!-- move this note to a more appropriate place, no topic should start with a note -->
 > [!NOTE]
-> 对于具有 Office 365 高级合规版许可证的用户，最近为 Microsoft Teams 聊天和频道消息添加了数据丢失防护功能。它是一种独立选项，包含在 Office 365 E5 和 Microsoft 365 E5 合规版中。 要详细了解许可要求，请参阅 [Microsoft 365 租户级服务许可指南](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance)。
+> 对于具有 Office 365 高级合规版许可证的用户，最近为 Microsoft Teams 聊天和频道消息添加了数据丢失防护功能。它是一种独立选项，包含在 Office 365 E5 和 Microsoft 365 E5 合规版中。 要详细了解许可要求，请参阅 [Microsoft 365 租户级服务许可指南](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance)。
 
 为了符合业务标准和行业法规，组织必须保护敏感信息，防止由于疏忽而泄露。 敏感信息包括财务数据或个人身份信息 (PII)，如信用卡号、社会保险号或健康记录。 通过 Office 365 安全 &amp; 合规中心的数据丢失防护 (DLP) 策略，可在 Office 365 内识别、监视和自动保护敏感数据。
   
@@ -204,7 +204,7 @@ DLP 策略可帮助保护定义为 **敏感信息类型** 的敏感信息。 Mic
   
 ![用于配置事件报告的页面](../media/Alerts-and-incident-report.png)
 
-DLP 扫描电子邮件的方式与 SharePoint Online 或 OneDrive for Business 中的项目不同。 在 SharePoint Online 和 OneDrive for Business 中，DLP 可扫描现有项目以及新项目，并在找到匹配项时生成警报和事件报告。 在 Exchange Online 中，DLP 仅扫描新电子邮件，并在存在策略匹配项时生成报告。 DLP **_不会_* _ 扫描或匹配先前存储在邮箱或存档中的电子邮件项目。
+DLP 扫描电子邮件的方式与 SharePoint Online 或 OneDrive for Business 中的项目不同。 在 SharePoint Online 和 OneDrive for Business 中，DLP 可扫描现有项目以及新项目，并在找到匹配项时生成警报和事件报告。 在 Exchange Online 中，DLP 仅扫描新电子邮件，并在存在策略匹配项时生成报告。 DLP ***不会*** 扫描或匹配邮箱或存档中存储的先前存在的电子邮件项目。
   
 ## <a name="grouping-and-logical-operators"></a>分组和逻辑运算符
 
@@ -240,7 +240,7 @@ DLP 策略的要求通常比较简单，例如标识包含美国社会安全号�
 
 在组之间，为使内容与规则匹配，可选择只需满足一个组中的条件，还是必须满足所有组的条件。
   
-例如，内置_“*美国 HIPAA*”*策略有一项规则，规定在组之间使用 **AND** 运算符，因此它标识的内容将包括： 
+例如，内置“**美国 HIPAA**”政策有一项规则，规定在组之间使用 **AND** 运算符，因此它标识的内容将包括： 
   
 - 从组“**PII 标识符**”（至少一个 SSN 数字 **OR** DEA 数字） 
     
@@ -354,20 +354,20 @@ DLP 策略的要求通常比较简单，例如标识包含美国社会安全号�
 
 - 必须先创建和发布保留标签，然后才能尝试将它用作 DLP 策略中的条件。
 - 已发布的保留标签可能需要一到七天的时间才能同步。有关详细信息，请参阅[当保留标签可应用时](create-apply-retention-labels.md#when-retention-labels-become-available-to-apply)（对于已在保留策略中发布的保留标签），以及[保留标签多长时间生效](apply-retention-labels-automatically.md#how-long-it-takes-for-retention-labels-to-take-effect)（对于已自动发布的保留标签）。
-- **只有 SharePoint 和 OneDrive 中的项才支持** _在策略中使用保留标签。
+- **只有 SharePoint 和 OneDrive 中的项才支持***在策略中使用保留标签。
 
   ![用作条件的标签](../media/5b1752b4-a129-4a88-b010-8dcf8a38bb09.png)
 
   如果你有项目处于保留和处置状态，并且还希望为其应用其他控件，则可能需要在 DLP 策略中使用保留标签，例如：
 
-  - 你发布了一个名为_*2018 纳税年度**的保留标签，当它应用于存储在 SharePoint 中的 2018 年税务文档后，系统会将其保留 10 年，并在此期限后处置它们。 你也不希望在组织外部共享这些项目，你可以使用 DLP 策略来完成此操作。
+  - 你发布了一个名为“**2018 纳税年度**”的保留标签，当它应用于存储在 SharePoint 中的 2018 年税务文档后，系统会将其保留 10 年，并在此期限后处置它们。 你也不希望在组织外部共享这些项目，你可以使用 DLP 策略来完成此操作。
 
   > [!IMPORTANT]
   > 如果在 DLP 策略中将保留标签指定为条件，而且你还包含 Exchange 和/或 Teams 作为位置，则你将收到以下错误：**“不支持保护电子邮件和团队消息中带标签的内容。请删除下述标签或取消将 Exchange 和 Teams 设为位置。”** 这是因为 Exchange 传输在消息提交和传递过程中不会评估标签元数据。 
 
 ### <a name="using-a-sensitivity-label-as-a-condition-in-a-dlp-policy"></a>使用敏感度标签作为在DLP策略中的条件
 
-敏感度标签作为DLP策略中的一个条件，目前正在预览中。 [了解详细信息](https://docs.microsoft.com/microsoft-365/compliance/dlp-sensitivity-label-as-condition)。
+敏感度标签作为DLP策略中的一个条件，目前正在预览中。 [了解详细信息](./dlp-sensitivity-label-as-condition.md)。
   
 ### <a name="how-this-feature-relates-to-other-features"></a>此功能与其他功能的联系
 
@@ -497,10 +497,10 @@ DLP 使用深入内容分析（而不仅仅是简单的文本扫描）来检测�
   
 <!-- conflict with a DLP policy is bad wording --> 最后，文档可能与 DLP 策略相冲突，但也可能符合 DLP 策略。例如，如果用户将信用卡号添加到文档，可能会导致 DLP 策略自动阻止对该文档的访问。但是，如果该用户稍后删除此敏感信息，则下一次根据此策略对此文档进行评估时，该操作（在这种情况下，阻止操作）将自动撤消。
   
-DLP 评估可编制索引的任何内容。 有关默认的爬网文件类型的详细信息，请参阅 [SharePoint Server 中的默认爬网文件扩展名和分析文件类型](https://docs.microsoft.com/SharePoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types)。
+DLP 评估可编制索引的任何内容。 有关默认的爬网文件类型的详细信息，请参阅 [SharePoint Server 中的默认爬网文件扩展名和分析文件类型](/SharePoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types)。
 
 > [!NOTE]
-> 默认情况下，SharePoint 中新文件的外部共享可被阻止，直至至少有一个 DLP 策略扫描新项目。 有关详细信息，请参阅[默认情况下，将新文件标记为敏感](https://docs.microsoft.com/sharepoint/sensitive-by-default)。 
+> 默认情况下，SharePoint 中新文件的外部共享可被阻止，直至至少有一个 DLP 策略扫描新项目。 有关详细信息，请参阅[默认情况下，将新文件标记为敏感](/sharepoint/sensitive-by-default)。 
   
 ### <a name="policy-evaluation-in-exchange-online-outlook-and-outlook-on-the-web"></a>Exchange Online、Outlook 和 Outlook 网页版中的策略评估
 
@@ -542,19 +542,19 @@ Office 中的 DLP 策略评估旨在不对程序的性能或处理内容的用�
 
 若要使用安全 &amp; 合规中心的大多数 cmdlet，你需要执行以下操作：
   
-1. [使用远程 PowerShell 连接到 Office 365 安全与合规中心](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell)。
+1. [使用远程 PowerShell 连接到 Office 365 安全与合规中心](/powershell/exchange/connect-to-scc-powershell)。
     
-2. 使用任一 [policy-and-compliance-dlp cmdlet](https://docs.microsoft.com/powershell/module/exchange/export-dlppolicycollection)。
+2. 使用任一 [policy-and-compliance-dlp cmdlet](/powershell/module/exchange/export-dlppolicycollection)。
     
 但是，DLP 报告需要从 Microsoft 365（包括 Exchange Online）提取数据。 因此，**可以在 Exchange Online Powershell 中使用 DLP 报告的 cmdlet，而不能在安全 &amp; 合规中心 Powershell 中使用**。 因此，若要使用适用于 DLP 报告的 cmdlet，你需要执行以下操作：
   
-1. [使用远程 PowerShell 连接到 Exchange Online](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)。
+1. [使用远程 PowerShell 连接到 Exchange Online](/powershell/exchange/connect-to-exchange-online-powershell)。
     
 2. 对 DLP 报告使用以下任意 cmdlet：
     
-    - [Get-DlpDetectionsReport](https://docs.microsoft.com/powershell/module/exchange/Get-DlpDetectionsReport)
+    - [Get-DlpDetectionsReport](/powershell/module/exchange/Get-DlpDetectionsReport)
 
-    - [Get-DlpDetailReport](https://docs.microsoft.com/powershell/module/exchange/Get-DlpDetailReport)
+    - [Get-DlpDetailReport](/powershell/module/exchange/Get-DlpDetailReport)
     
 ## <a name="more-information"></a>更多信息
 

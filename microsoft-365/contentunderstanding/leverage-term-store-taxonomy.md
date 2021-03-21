@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: 使用 SharePoint Syntex 在文档理解模型中创建提取器时，请使用术语库分类。
-ms.openlocfilehash: aff2df6a96fdfee7380651f68e647019e9485658
-ms.sourcegitcommit: 162c01dfaa2fdb3225ce4c24964c1065ce22ed5d
+ms.openlocfilehash: b8dfc028e0a18f3345fec466ec5e0079ed2d11ce
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2021
-ms.locfileid: "49975735"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50925340"
 ---
 # <a name="leverage-term-store-taxonomy-when-creating-an-extractor"></a>创建提取器时利用术语库分类
 
@@ -27,7 +27,7 @@ ms.locfileid: "49975735"
 
 </br>
 
-使用 SharePoint Syntex 在文档理解模型中创建提取器时，可利用 [术语库](https://docs.microsoft.com/sharepoint/managed-metadata) 中的全局性术语集显示提取数据的首选术语。  
+使用 SharePoint Syntex 在文档理解模型中创建提取器时，可利用 [术语库](/sharepoint/managed-metadata) 中的全局性术语集显示提取数据的首选术语。  
 
 例如，你的模型标识并分类上传到文档库的所有 **合同** 文档。  此外，该模型还会提取每个合同中的 **合同服务** 值，并将其显示在库视图中的一列中。 在合同中的各种合同服务值之间，有一些你的公司不再使用且已重命名了的旧值。 例如，对术语 *Design*、*Graphics* 或 *Topography* 合同服务的所有引用现在都应称为 *创意*。 每当你的模型提取合同文档中的某个过时字词时，你都希望它在你的库视图中显示当前术语“Creative ”。 在下面的示例中，对模型进行训练时，我们看到的是一个示例文档，其中包含已过时的 *Design* 条款。
 
@@ -35,7 +35,7 @@ ms.locfileid: "49975735"
 
 ## <a name="use-a-managed-metadata-column-in-your-extractor"></a>在提取器使用托管元数据列
 
-在 SharePoint 管理中心的托管元数据服务术语库中配置术语集。 在下面的示例中，“*合同服务*”[术语集](https://docs.microsoft.com/sharepoint/managed-metadata#term-set)被配置为包含多个术语，包括“*创意*”。  它的详细信息显示该术语有三个同义词（*Design*、*Graphics* 和 *Topography*），并且同义词应翻译为 *创意*。 
+在 SharePoint 管理中心的托管元数据服务术语库中配置术语集。 在下面的示例中，“*合同服务*”[术语集](/sharepoint/managed-metadata#term-set)被配置为包含多个术语，包括“*创意*”。  它的详细信息显示该术语有三个同义词（*Design*、*Graphics* 和 *Topography*），并且同义词应翻译为 *创意*。 
 
    ![术语集](../media/content-understanding/term-store.png)</br>
 
@@ -52,13 +52,8 @@ ms.locfileid: "49975735"
 
 
 ## <a name="see-also"></a>另请参阅
-[托管元数据简介](https://docs.microsoft.com/sharepoint/managed-metadata#terms)
+[托管元数据简介](/sharepoint/managed-metadata#terms)
 
 [创建提取器](create-an-extractor.md)
 
 [创建托管元数据列](https://support.microsoft.com/office/create-a-managed-metadata-column-8fad9e35-a618-4400-b3c7-46f02785d27f?redirectSourcePath=%252farticle%252fc2a06717-8105-4aea-890d-3082853ab7b7&ui=en-US&rs=en-US&ad=US)
-
-
-
-
-

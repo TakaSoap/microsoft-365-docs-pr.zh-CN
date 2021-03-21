@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: d104fb44-1c42-4541-89a6-1f67be22e4ad
 description: 了解如何访问组织已购买付费订阅中包含的 Azure Active Directory。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: c968d4ae8cc5f0798b6ba7d5bcb52ca6fe7d6116
-ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
+ms.openlocfilehash: 5bc1c57c0c40df03d27471aafd222908ba9d5887
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46528148"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50925448"
 ---
 # <a name="use-your-free-azure-active-directory-subscription"></a>使用免费的 Azure Active Directory 订阅
 
@@ -40,7 +40,7 @@ ms.locfileid: "46528148"
 
 1. 转到 [portal.azure.com](https://portal.azure.com) 并使用工作或学生帐户登录。
 
-2. 在 Azure 门户内的左侧导航窗格中，单击“Azure Active Directory”****。
+2. 在 Azure 门户内的左侧导航窗格中，单击“Azure Active Directory”。
 
     ![在 Azure 门户内的左侧导航窗格中，单击“Azure Active Directory”。](../media/97d2d72f-ac20-46ab-898c-851f6009b453.png)
 
@@ -48,8 +48,8 @@ ms.locfileid: "46528148"
 
 ## <a name="more-information"></a>更多信息
 
-- 免费 Azure Active Directory 订阅不包括登录活动报告。 若要记录登录活动（这在数据泄露时可能非常有用），需要 Azure Active Directory Premium 订阅。 有关详细信息，请参阅“[Azure AD 存储数据多长时间？](https://docs.microsoft.com/azure/active-directory/reports-monitoring/reference-reports-data-retention#how-long-does-azure-ad-store-the-data)”
+- 免费 Azure Active Directory 订阅不包括登录活动报告。 若要记录登录活动（这在数据泄露时可能非常有用），需要 Azure Active Directory Premium 订阅。 有关详细信息，请参阅“[Azure AD 存储数据多长时间？](/azure/active-directory/reports-monitoring/reference-reports-data-retention#how-long-does-azure-ad-store-the-data)”
 
 - 也可以从 Microsoft 365 管理中心访问“**Azure Active Directory**”管理中心。 在 Microsoft 365 管理中心的左侧导航窗格中，单击“**管理中心**”\>“**Azure Active Directory**”。
 
-- 若要了解如何管理用户和组，并执行其他目录管理任务，请参阅[管理 Azure AD 目录](https://docs.microsoft.com/azure/active-directory/active-directory-administer)。
+- 若要了解如何管理用户和组，并执行其他目录管理任务，请参阅[管理 Azure AD 目录](/azure/active-directory/active-directory-administer)。

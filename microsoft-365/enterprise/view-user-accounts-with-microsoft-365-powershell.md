@@ -20,18 +20,18 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: bb12f49d-a85d-4f3b-ada2-5c4e33977b10
 description: 了解如何使用 PowerShell 以不同方式查看、列出或显示 Microsoft 365 用户帐户。
-ms.openlocfilehash: 312e9fb983c4d1f4de8bc74586c88f1e669eb90a
-ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
+ms.openlocfilehash: de91195afeb8480bf231d9536e4b3a94502a6da1
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "48754068"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50924644"
 ---
 # <a name="view-microsoft-365-user-accounts-with-powershell"></a>使用 PowerShell 查看 Microsoft 365 用户帐户
 
 *本文适用于 Microsoft 365 企业版和 Office 365 企业版。*
 
-您可以使用 Microsoft 365 管理中心来查看您的 Microsoft 365 租户的帐户。 PowerShell for Microsoft 365 启用此功能，但还提供其他功能。
+可以使用 Microsoft 365 管理中心查看 Microsoft 365 租户的帐户。 PowerShell for Microsoft 365 支持此功能，但也提供其他功能。
   
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>使用用于图表模块的 Azure Active Directory PowerShell
 
@@ -45,7 +45,7 @@ ms.locfileid: "48754068"
 Get-AzureADUser
 ```
 
-应获取与以下内容类似的信息：
+应获取与以下类似的信息：
   
 ```powershell
 ObjectId                             DisplayName                                           UserPrincipalName
@@ -60,7 +60,7 @@ be4bdddd-c790-424c-9f96-a0cf609b7815 Allan Deyoung                              
 
 ### <a name="view-a-specific-account"></a>查看特定帐户
 
-若要显示特定的用户帐户，请运行以下命令。 填写用户帐户的登录帐户名，该帐户也称为用户主体名称 (UPN) 。 删除 "<" 和 ">" 字符。
+若要显示特定用户帐户，请运行以下命令。 填写用户帐户的登录帐户名称，也称为 UPN (用户) 。 删除"<"和">"字符。
   
 ```powershell
 Get-AzureADUser -ObjectID <sign-in name of the user account>
@@ -74,9 +74,9 @@ Get-AzureADUser -ObjectID BelindaN@litwareinc.onmicosoft.com
 
 ### <a name="view-additional-property-values-for-a-specific-account"></a>查看特定帐户的其他属性值
 
-默认情况下， **AzureADUser** cmdlet 仅显示帐户的 *ObjectID*、 *DisplayName*和 *UserPrincipalName* 属性。
+默认情况下 **，Get-AzureADUser** cmdlet 仅显示帐户的 *ObjectID、DisplayName* 和 *UserPrincipalName* 属性。 
 
-若要更好地选择要显示的属性，请结合使用 **Select** Cmdlet 和 **AzureADUser** cmdlet。 若要组合这两个 cmdlet，请使用 "管道" 字符 ( "|") ，它指示 Azure Active Directory PowerShell for Graph 获取一个命令的结果，并将其发送到下一个命令。 下面的命令示例显示了每个用户帐户的 *DisplayName*、 *部门*和 *UsageLocation* ：
+若要对要显示的属性更具选择性，请结合使用 **Select** cmdlet 和 **Get-AzureADUser** cmdlet。 若要组合这两个 cmdlet，请使用"pipe"字符 ("|") ，它指示 Azure Active Directory PowerShell for Graph 获取一个命令的结果并将其发送到下一个命令。 下面是显示每个用户帐户的 *DisplayName、Department* 和 *UsageLocation* 的示例命令：
   
 ```powershell
 Get-AzureADUser | Select DisplayName,Department,UsageLocation
@@ -84,17 +84,17 @@ Get-AzureADUser | Select DisplayName,Department,UsageLocation
 
 此命令指示 PowerShell：
   
-1. 获取用户帐户 (**AzureADUser**) 的所有信息，并将其发送到下一个命令 (**|**) 。
+1. 获取 **Get-AzureADUser** (用户帐户) 并将其发送到下一个 **|** () 。
     
-1.  仅显示用户帐户名称、部门和使用位置 (**选择 "DisplayName"、"部门"、"UsageLocation"**) 。
+1.  仅显示用户帐户名、部门以及使用情况位置 (**选择 DisplayName、Department、UsageLocation**) 。
   
-若要查看特定用户帐户的所有属性，请使用 **Select** cmdlet 和通配符 ( * ) 。 下面是一个示例：
+To see all the properties for a specific user account， use the **Select** cmdlet and the wildcard character (*) . 下面是一个示例：
   
 ```powershell
 Get-AzureADUser -ObjectID BelindaN@litwareinc.onmicosoft.com | Select *
 ```
 
-作为另一个示例，请运行以下命令以检查特定用户帐户的启用状态：
+再如，运行以下命令以检查特定用户帐户的启用状态：
   
 ```powershell
 Get-AzureADUser -ObjectID <sign-in name of the user account> | Select DisplayName,UserPrincipalName,AccountEnabled
@@ -102,53 +102,53 @@ Get-AzureADUser -ObjectID <sign-in name of the user account> | Select DisplayNam
 
 ### <a name="view-account-synchronization-status"></a>查看帐户同步状态
 
-用户帐户有两个源： 
+用户帐户有两个来源： 
 
-- Windows Server Active Directory (AD) ，它是从本地 AD 同步到云的帐户。
+- Windows Server Active Directory (AD) ，这是从本地 AD 同步到云的帐户。
 
-- Azure Active Directory (Azure AD) AD 帐户，这些帐户是直接在云中创建的。
+- Azure Active Directory (Azure AD) AD 帐户，直接在云中创建。
 
 
-以下命令指示 PowerShell 获取属性 *DirSyncEnabled* 设置为 *True*的所有用户。 您可以使用它来查找与内部部署 AD 同步的帐户。
+以下命令指示 PowerShell 获取属性 *DirSyncEnabled* 设置为 True 的 *所有用户*。 可以使用它查找正在从本地 AD 同步的帐户。
 
 ```powershell
 Get-AzureADUser | Where {$_.DirSyncEnabled -eq $true}
 ```
 
-以下命令指示 PowerShell 获取属性 *DirSyncEnabled* 设置为 *False*的所有用户。 您可以使用它查找仅云帐户。
+以下命令指示 PowerShell 获取属性 *DirSyncEnabled* 设置为 False 的 *所有用户*。 可以使用它查找仅云帐户。
 
 ```powershell
 Get-AzureADUser | Where {$_.DirSyncEnabled -ne $false}
 ```
 
-### <a name="view-accounts-based-on-a-common-property"></a>基于通用属性查看帐户
+### <a name="view-accounts-based-on-a-common-property"></a>查看基于通用属性的帐户
 
-若要更好地选择要显示的帐户列表，可以结合使用 **Where** Cmdlet 和 **AzureADUser** cmdlet。 若要组合这两个 cmdlet，请使用 "管道" 字符 ( "|") ，它指示 Azure Active Directory PowerShell for Graph 获取一个命令的结果，并将其发送到下一个命令。 下面的示例命令仅显示具有未指定的使用位置的用户帐户：
+若要对要显示的帐户列表更具选择性，可以将 **Where** cmdlet 与 **Get-AzureADUser** cmdlet 结合使用。 若要组合这两个 cmdlet，请使用"pipe"字符 ("|") ，它指示 Azure Active Directory PowerShell for Graph 获取一个命令的结果并将其发送到下一个命令。 下面是一个示例命令，该命令仅显示未指定使用位置的用户帐户：
   
 ```powershell
 Get-AzureADUser | Where {$_.UsageLocation -eq $Null}
 ```
 
-此命令将 Azure Active Directory PowerShell for Graph 指示为：
+此命令指示 Azure Active Directory PowerShell graph：
   
-1. 获取用户帐户 (**AzureADUser**) 的所有信息，并将其发送到下一个命令 (**|**) 。
+1. 获取 **Get-AzureADUser** (用户帐户) 并将其发送到下一个 **|** () 。
     
-1. 查找未指定使用位置 (的所有用户帐户 **{$ \_ 。UsageLocation-eq $Null}**) 。 在大括号内，该命令指示 PowerShell 仅查找 UsageLocation 用户帐户属性 (的帐户集** $ \_ 。** 未 (**-eq $Null**) 指定 UsageLocation) 。
+1. 在 Where {$ 中查找未指定使用位置 (**用户帐户 \_ 。UsageLocation -eq $Null}**) 。 在大括号内，该命令指示 PowerShell 仅查找 UsageLocation 用户帐户属性所针对的帐户 **$ \_ (。UsageLocation**) 未指定 -eq (**-eq** $Null) 。
     
-**UsageLocation**属性只是与用户帐户关联的很多属性中的一个。 若要显示特定用户帐户的所有属性，请使用 **Select** cmdlet 和通配符 ( * ) 。 下面是一个示例：
+**UsageLocation** 属性只是与用户帐户关联的众多属性之一。 若要显示特定用户帐户的所有属性，请使用 **Select** cmdlet 和通配符 (*) 。 下面是一个示例：
   
 ```powershell
 Get-AzureADUser -ObjectID BelindaN@litwareinc.onmicosoft.com | Select *
 ```
 
-例如， **City** 是用户帐户属性的名称。 您可以使用以下命令列出居住在伦敦的用户的所有帐户：
+例如 **，City** 是用户帐户属性的名称。 可以使用以下命令列出居住在伦敦的用户的所有帐户：
   
 ```powershell
 Get-AzureADUser | Where {$_.City -eq "London"}
 ```
 
 > [!TIP]
->  在这些示例中， **where** cmdlet 的语法为 **{$ \_ 。** [用户帐户属性名称][比较运算符]增值 **}**. > [比较运算符] 为 **-eq** for equals， **-ne** 不等于， **-lt** 表示小于， **-gt** 表示大于，其他。  [value] 通常是一个字符串， (字母、数字和其他字符的序列) 、数字值或未指定的 **$Null** 。 有关详细信息，请参阅 [Where](https://docs.microsoft.com/powershell/module/microsoft.powershell.core/where-object?view=powershell-7)。
+>  这些示例中 **Where** cmdlet 的语法为 **Where {$ \_ 。** [用户帐户属性名称][比较运算符][value] **}**.> [comparison operator] is **-eq** for equals， **-ne** for not equals， **-lt** for less than， **-gt** for greater than， and others.  [value] 通常是一个字符串， (字母、数字和其他字符序列、) 、数字值 **$Null未指定。** 有关详细信息，请参阅 [Where](/powershell/module/microsoft.powershell.core/where-object?view=powershell-7)。
   
 
 ## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>使用用于 Windows PowerShell 的 Microsoft Azure Active Directory 模块
@@ -164,10 +164,10 @@ Get-MsolUser
 ```
 
 >[!Note]
->PowerShell Core 不支持 Windows PowerShell 模块的 Microsoft Azure Active Directory 模块以及在其名称中带有 *Msol* 的 cmdlet。 从 Windows PowerShell 运行这些 cmdlet。
+>PowerShell Core 不支持用于 Windows PowerShell 和 cmdlet 的其名称中包含 *Msol* 的 Microsoft Azure Active Directory 模块。 从 Windows PowerShell 运行这些 cmdlet。
 >
 
-应获取与以下内容类似的信息：
+应获取与以下类似的信息：
   
 ```powershell
 UserPrincipalName                     DisplayName           isLicensed
@@ -179,13 +179,13 @@ AnneWlitwareinc.onmicrosoft.com       Anne Wallace          True
 ScottW@litwareinc.onmicrosoft.com     Scott Wallace         False
 ```
 
-**Get-MsolUser** cmdlet 也有一组参数可用于筛选显示的用户帐户组。 例如，对于已添加到 Microsoft 365 但尚未许可使用任何服务) 的用户，未授权用户的列表 (，请运行以下命令：
+**Get-MsolUser** cmdlet 也有一组参数可用于筛选显示的用户帐户组。 例如，对于未授权用户列表 (已添加到 Microsoft 365 但尚未获得使用任何服务许可证的用户) ，请运行以下命令：
   
 ```powershell
 Get-MsolUser -UnlicensedUsersOnly
 ```
 
-应获取与以下内容类似的信息：
+应获取与以下类似的信息：
   
 ```powershell
 UserPrincipalName                     DisplayName           isLicensed
@@ -194,19 +194,19 @@ BrianJ@litwareinc.onmicrosoft.com     Brian Johnson         False
 ScottW@litwareinc.onmicrosoft.com     Scott Wallace         False
 ```
 
-有关用于筛选所显示的用户帐户集的其他参数的信息，请参阅 [get-msoluser](https://docs.microsoft.com/previous-versions/azure/dn194133(v=azure.100))。
+有关用于筛选显示的用户帐户集的其他参数的信息，请参阅 [Get-MsolUser](/previous-versions/azure/dn194133(v=azure.100))。
   
 ### <a name="view-a-specific-account"></a>查看特定帐户
 
-若要显示特定的用户帐户，请运行以下命令。 填写用户帐户的登录名，该帐户也称为用户主体名称 (UPN) 。 删除 "<" 和 ">" 字符。
+若要显示特定用户帐户，请运行以下命令。 填写用户帐户的登录名，也称为 UPN (用户) 。 删除"<"和">"字符。
   
 ```powershell
 Get-MsolUser -UserPrincipalName <sign-in name of the user account>
 ```
 
-### <a name="view-accounts-based-on-a-common-property"></a>基于通用属性查看帐户
+### <a name="view-accounts-based-on-a-common-property"></a>查看基于通用属性的帐户
 
-若要更好地选择要显示的帐户列表，可以结合使用 **Where** Cmdlet 和 **get-msoluser** cmdlet。 若要组合这两个 cmdlet，请使用 "管道" 字符 ( "|") ，它指示 PowerShell 获取一个命令的结果，并将其发送到下一个命令。 下面的示例展示了仅显示具有未指定的使用位置的用户帐户：
+若要对要显示的帐户列表更具选择性，可以将 **Where** cmdlet 与 **Get-MsolUser** cmdlet 结合使用。 若要组合这两个 cmdlet，请使用"pipe"字符 ("|") ，指示 PowerShell 接受一个命令的结果并将其发送到下一个命令。 下面的示例仅显示未指定使用位置的用户帐户：
   
 ```powershell
 Get-MsolUser | Where {$_.UsageLocation -eq $Null}
@@ -214,11 +214,11 @@ Get-MsolUser | Where {$_.UsageLocation -eq $Null}
 
 此命令指示 PowerShell：
   
-1. 获取用户帐户 (**get-msoluser**) 的所有信息，并将其发送到下一个命令 (**|**) 。
+1. 获取 **Get-MsolUser** (用户帐户) 并将其发送到下一个 **|** () 。
     
-1. 查找未指定使用位置的所有用户帐户 (**其中 {$ \_ 。UsageLocation-eq $Null}**) 。 在大括号内，该命令指示 PowerShell 仅查找 UsageLocation 用户帐户属性 (的帐户集** $ \_ 。** 未 (**-eq $Null**) 指定 UsageLocation) 。
+1. 在 Where {$ 中查找未指定使用位置 (**用户帐户 \_ 。UsageLocation -eq $Null}**) 。 在括号内，该命令指示 PowerShell 仅查找 UsageLocation 用户帐户属性所针对的帐户 **$ \_ (。UsageLocation**) 未指定 -eq (**-eq** $Null) 。
     
-应获取与以下内容类似的信息：
+应获取与以下类似的信息：
   
 ```powershell
 UserPrincipalName                     DisplayName           isLicensed
@@ -228,20 +228,20 @@ ScottW@litwareinc.onmicrosoft.com     Scott Wallace         False
 
 ```
 
-*UsageLocation*属性只是与用户帐户关联的很多属性中的一个。 若要查看用户帐户的所有属性，请使用 **Select** cmdlet 和通配符 ( * ) 为特定用户帐户显示所有属性。 下面是一个示例：
+*UsageLocation* 属性只是与用户帐户关联的众多属性之一。 To see all the properties for user accounts， use the **Select** cmdlet and the wildcard character (*) to display them all for a specific user account. 下面是一个示例：
   
 ```powershell
 Get-MsolUser -UserPrincipalName BelindaN@litwareinc.onmicosoft.com | Select *
 ```
 
-例如， *City* 是用户帐户属性的名称。 您可以使用以下命令为居住在伦敦的用户列出所有用户帐户：
+例如 *，City* 是用户帐户属性的名称。 可以使用以下命令列出居住在伦敦的用户的所有用户帐户：
   
 ```powershell
 Get-MsolUser | Where {$_.City -eq "London"}
 ```
 
 > [!TIP]
->  在这些示例中， **where** cmdlet 的语法为 **{$ \_ 。** [用户帐户属性名称][比较运算符]增值 **}**.  [比较运算符] 为 **-eq** ，等于， **-ne** 表示不等于， **-lt** 表示小于， **-gt** 表示大于，其他。  [value] 通常是一个字符串， (字母、数字和其他字符的序列) 、数字值或未指定的 **$Null** 。 有关详细信息，请参阅 [Where](https://docs.microsoft.com/powershell/module/microsoft.powershell.core/where-object?view=powershell-7)。
+>  这些示例中 **Where** cmdlet 的语法为 **Where {$ \_ 。** [用户帐户属性名称][比较运算符][value] **}**.  [comparison operator] is **-eq** for equals， **-ne** for not equals， **-lt** for less than， **-gt** for greater than， and others.  [value] 通常是一个字符串， (字母、数字和其他字符序列、) 、数字值 **$Null未指定。** 有关详细信息，请参阅 [Where](/powershell/module/microsoft.powershell.core/where-object?view=powershell-7)。
   
 若要检查用户帐户的阻止状态，请使用以下命令：
   
@@ -251,7 +251,7 @@ Get-MsolUser -UserPrincipalName <UPN of user account> | Select DisplayName,Block
 
 ### <a name="view-additional-property-values-for-accounts"></a>查看帐户的其他属性值
 
-默认情况下， **get-msoluser** cmdlet 显示用户帐户的以下三个属性：
+默认情况下 **，Get-MsolUser** cmdlet 显示用户帐户的以下三个属性：
   
 - UserPrincipalName
     
@@ -259,7 +259,7 @@ Get-MsolUser -UserPrincipalName <UPN of user account> | Select DisplayName,Block
     
 - isLicensed
     
-如果您需要其他属性（例如，用户所在的部门以及使用 Microsoft 365 服务的国家/地区），则可以同时运行 **get-msoluser** ，并使用 **Select** cmdlet 指定用户帐户属性列表。 下面是一个示例：
+如果需要其他属性（如用户工作部门以及他们使用 Microsoft 365 服务的国家/地区），可以结合 **Select** cmdlet 运行 **Get-MsolUser** 以指定用户帐户属性列表。 下面是一个示例：
   
 ```powershell
 Get-MsolUser | Select DisplayName, Department, UsageLocation
@@ -267,11 +267,11 @@ Get-MsolUser | Select DisplayName, Department, UsageLocation
 
 此命令指示 PowerShell：
   
-1. 获取有关用户帐户的所有信息 (**get-msoluser**) 并将其发送到下一个命令 (**|**) 。
+1. 获取 **Get-MsolUser** (用户帐户的所有信息) 并将其发送到下一个 **|** () 。
     
-1. 仅显示用户帐户名称、部门和使用位置 (**选择 "DisplayName"、"部门"、"UsageLocation"**) 。
+1. 仅显示用户帐户名、部门以及使用情况位置 (**选择 DisplayName、Department、UsageLocation**) 。
     
-应获取与以下内容类似的信息：
+应获取与以下类似的信息：
   
 ```powershell
 DisplayName             Department                       UsageLocation
@@ -284,13 +284,13 @@ Alex Darrow             Sales & Marketing                    US
 Scott Wallace           Operations
 ```
 
-**选择**cmdlet 允许您选择要显示的属性。 若要显示特定用户帐户的所有属性，请使用通配符 ( * ) 。 下面是一个示例：
+Select  cmdlet 允许您选择要显示的属性。 若要显示特定用户帐户的所有属性，请使用通配符 (*) 。 下面是一个示例：
   
 ```powershell
 Get-MsolUser -UserPrincipalName BelindaN@litwareinc.onmicosoft.com | Select *
 ```
 
-若要更好地选择要显示的帐户列表，您还可以使用 **Where** cmdlet。 下面的示例命令仅显示具有未指定的使用位置的用户帐户：
+若要对要显示的帐户列表进行更多选择，您还可以使用 **Where** cmdlet。 下面是一个示例命令，该命令仅显示未指定使用位置的用户帐户：
   
 ```powershell
 Get-MsolUser | Where {$_.UsageLocation -eq $Null} | Select DisplayName, Department, UsageLocation
@@ -298,13 +298,13 @@ Get-MsolUser | Where {$_.UsageLocation -eq $Null} | Select DisplayName, Departme
 
 此命令指示 PowerShell：
   
-1. 获取有关用户帐户的所有信息 (**get-msoluser**) 并将其发送到下一个命令 (**|**) 。
+1. 获取 **Get-MsolUser** (用户帐户的所有信息) 并将其发送到下一个 **|** () 。
     
-1. 查找未指定使用位置的所有用户帐户 (**其中 {$ \_ 。UsageLocation-eq $Null}**) ，并将生成的信息发送到下一个命令 (**|**) 。 在大括号内，该命令指示 PowerShell 仅查找 UsageLocation 用户帐户属性 (的帐户集** $ \_ 。** 未 (**-eq $Null**) 指定 UsageLocation) 。
+1. 在 Where {$ 中查找未指定使用位置 (**用户帐户 \_ 。UsageLocation -eq $Null}**) ，并将结果信息发送到下一个命令 **|** () 。 在大括号内，该命令指示 PowerShell 仅查找 UsageLocation 用户帐户属性所针对的帐户 **$ \_ (。UsageLocation**) 未指定 -eq (**-eq** $Null) 。
     
-1. 仅显示用户帐户名称、部门和使用位置 (**选择 "DisplayName"、"部门"、"UsageLocation"**) 。
+1. 仅显示用户帐户名、部门以及使用情况位置 (**选择 DisplayName、Department、UsageLocation**) 。
     
-应获取与以下内容类似的信息：
+应获取与以下类似的信息：
   
 ```powershell
 DisplayName              Department                      UsageLocation
@@ -313,10 +313,10 @@ Brian Johnson
 Scott Wallace            Operations
 ```
 
-如果要使用目录同步来创建和管理 Microsoft 365 用户，则可以显示已投影 Microsoft 365 用户的本地帐户。 下面的示例假定：
+如果使用目录同步创建和管理 Microsoft 365 用户，可以显示已计划 Microsoft 365 用户的本地帐户。 以下示例假定：
 
-- Azure AD Connect 配置为使用 ObjectGUID 的默认源定位点。  (有关配置源锚点的详细信息，请参阅 [AZURE AD Connect：设计概念](https://docs.microsoft.com/azure/active-directory/hybrid/plan-connect-design-concepts)) 。
-- 已安装 PowerShell 的 Active Directory 域服务模块 (请参阅 [RSAT tools](https://www.microsoft.com/en-gb/download/details.aspx?id=45520)) 。
+- Azure AD Connect 配置为使用 ObjectGUID 的默认源定位标记。  (有关配置源定位标记的信息，请参阅 [Azure AD Connect：设计概](/azure/active-directory/hybrid/plan-connect-design-concepts) 念) 。
+- 已安装用于 PowerShell 的 Active Directory 域服务模块 ([RSAT 工具](https://www.microsoft.com/en-gb/download/details.aspx?id=45520)) 。
 
 ```powershell
 Get-ADUser ([guid][System.Convert]::FromBase64String((Get-MsolUser -UserPrincipalName <UPN of user account>).ImmutableID)).guid

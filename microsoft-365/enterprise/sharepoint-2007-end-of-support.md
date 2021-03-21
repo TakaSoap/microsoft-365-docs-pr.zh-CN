@@ -36,243 +36,242 @@ search.appverid:
 - BSA160
 - OSU160
 ms.assetid: ba124775-d5c0-4d68-b88d-8458ad4c3717
-description: 对 SharePoint Server 2007 的支持在10月2017结束。 在本文中，了解你的升级、迁移和支持选项。
-ms.openlocfilehash: aa09669d1c7b90f70e6c136a85d06ef2a516e4b5
-ms.sourcegitcommit: d3ca8021f7da00a474ac14aac5f1358204a848f2
+description: 对 SharePoint Server 2007 的支持已于 2017 年 10 月结束。 本文介绍升级、迁移和支持选项。
+ms.openlocfilehash: 224b0af90d6a314aa15a2c0dab7b60626e5abde8
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49519630"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50924864"
 ---
 # <a name="sharepoint-server-2007-end-of-support-roadmap"></a>SharePoint Server 2007 停止提供支持路线图
 
 *本文适用于 Microsoft 365 企业版和 Office 365 企业版。*
 
-在 **2017 年10月 10** 日，Microsoft Office SharePoint Server 2007 已到达支持终止。 如果尚未从 SharePoint Server 2007 迁移到 Microsoft 365 或本地 SharePoint Server 的更新版本，现在是开始规划的时间。 本文提供的资源可帮助您将数据迁移到 SharePoint Online 或升级本地 SharePoint Server。
+**2017 年 10 月 10** Microsoft Office，SharePoint Server 2007 停止提供支持。 如果尚未从 SharePoint Server 2007 迁移到 Microsoft 365 或本地 SharePoint Server 的更高版本，那么现在可以开始规划了。 本文提供的资源可帮助您将数据迁移到 SharePoint Online 或在本地升级 SharePoint Server。
   
-## <a name="what-does-end-of-support-mean"></a>*支持终止的* 含义是什么？
+## <a name="what-does-end-of-support-mean"></a>停止 *提供支持意味着什么* ？
 
-与大多数 Microsoft 产品一样，SharePoint Server 也具有支持生命周期，在此期间，Microsoft 提供了新的功能、缺陷修补程序、安全修补程序等。 此生命周期通常是从产品的初始版本中持续10年的时间。 此生命周期的结束被称为产品的支持终止。 在支持结束后，Microsoft 不再提供：
+与大多数 Microsoft 产品一样，SharePoint Server 具有支持生命周期，在此期间 Microsoft 提供新功能、Bug 修复、安全修补程序等。 此生命周期通常自产品初始发布起持续 10 年。 此生命周期的结束称为产品的停止支持。 在停止提供支持后，Microsoft 将不再提供：
   
-- 可能出现的问题的技术支持。
+- 针对可能会出现的问题的技术支持。
     
-- 针对可能会影响服务器稳定性和可用性的问题的 Bug 修补程序。
+- 对可能会影响服务器稳定性和可用性的问题进行 Bug 修复。
     
-- 安全修补程序可能会使服务器易受安全漏洞破坏。
+- 针对可能导致服务器易受安全漏洞的漏洞进行安全修复。
     
 - 时区更新。
     
-在10月 10 2017 日之后，你的 SharePoint Server 2007 场仍将运行，但不会为产品发布任何进一步的更新、修补程序或修补程序，包括安全修补程序/修补程序。 Microsoft 支持已将其支持工作完全转移到产品的较新版本。 因为您的安装不再受支持或修补，所以应升级产品或迁移重要数据。
+SharePoint Server 2007 场在 2017 年 10 月 10 日之后仍可运行，但不会发布产品的任何进一步更新、修补程序或修补程序，包括安全修补程序/修补程序。 Microsoft 支持已将支持工作完全转移到产品的最新版本。 由于不再支持或修补安装，因此应升级产品或迁移重要数据。
   
 > [!TIP]
-> 如果尚未计划升级或迁移，请参阅： [SharePoint 2007 迁移选项，以](sharepoint-2007-migration-options.md) 了解开始位置的一些示例。 你还可以搜索可帮助升级或 Microsoft 365 迁移的 [Microsoft 合作伙伴](https://go.microsoft.com/fwlink/?linkid=841249) (或同时使用这两种) 。
+> 如果尚未规划升级或迁移，请参阅 [：SharePoint 2007](sharepoint-2007-migration-options.md) 迁移选项需要考虑，了解开始位置的一些示例。 还可以搜索可帮助升级 [或 Microsoft](https://go.microsoft.com/fwlink/?linkid=841249) 365 迁移和/或迁移 (Microsoft) 。
   
-有关 Office 2007 服务器和支持结束的详细信息，请参阅可 [帮助您从 Office 2007 服务器和客户端进行升级的资源](upgrade-from-office-2007-servers-and-products.md)。
+有关 Office 2007 服务器和支持终止的信息，请参阅帮助您从 [Office 2007](upgrade-from-office-2007-servers-and-products.md)服务器和客户端升级的资源。
   
 ## <a name="what-are-my-options"></a>我的选项是什么？
 
-您的第一位应是 [产品生命周期网站](https://go.microsoft.com/fwlink/?linkid=843148)。 如果你的本地 Microsoft 产品已过期，请检查其支持日期的结束日期，以便在一年中安排升级或迁移。 选择下一步时，请考虑哪些产品功能足够好、更好且最佳。 下面是一个示例： 
+你的第一个停止位置应该是 [产品生命周期网站](/lifecycle/products/?alpha=Microsoft+Office+SharePoint+Server+2007)。 如果你有一个过期本地 Microsoft 产品，请检查其支持结束日期，以便你有一年左右的时间计划升级或迁移。 选择下一步时，请考虑哪些产品功能足够好、更好、最好。 下面是一个示例： 
   
-|**Good**|**能**|**最好**|
+|**Good**|**更好**|**最好**|
 |:-----|:-----|:-----|
 |SharePoint Server 2010  <br/> |SharePoint Server 2013  <br/> |SharePoint Online  <br/> |
 ||SharePoint 混合  <br/> |SharePoint Server 2016  <br/> |
 | | |SharePoint 混合  <br/> |
    
-如果选择 "足够好" 选项，则在从 SharePoint Server 2007 迁移完成后，您很快需要开始规划另一次升级。 
+如果选择"足够好"选项，则很快需要在从 SharePoint Server 2007 迁移完成后开始规划其他升级。 
 
 >[!NOTE] 
->支持终止日期可能会发生变化。 检查 [产品生命周期网站](https://support.microsoft.com/lifecycle)。
+>支持结束日期可能会发生变化。 查看产品 [生命周期网站](https://support.microsoft.com/lifecycle)。
   
 ## <a name="where-can-i-go-next"></a>接下来如何操作？
 
-可以在自己的服务器上的本地安装 SharePoint Server。 或者，您可以使用 SharePoint Online，这是 Microsoft 365 中的一种联机服务。 可用的选项包括：
+SharePoint Server 可以本地安装在您自己的服务器上。 或者，可以使用 SharePoint Online，这是属于 Microsoft 365 的联机服务。 可用的选项包括：
   
 - 迁移到 SharePoint Online。
     
-- 升级本地 SharePoint Server。
+- 在本地升级 SharePoint Server。
     
-- 执行上述两项操作。
+- 执行上述两项。
     
 - 实现 [SharePoint 混合](https://support.office.com/article/4c89a95a-a58c-4fc1-974a-389d4f195383.aspx) 解决方案。
     
-请注意与维护服务器场、维护或迁移自定义项相关的隐藏成本，以及升级 SharePoint Server 所需的硬件。 如果需要，可获得内部部署 SharePoint Server 服务器场的回报。 但是，如果在不进行大量自定义的旧版 SharePoint 服务器上运行服务器场，则可以从迁移到 SharePoint Online 中受益。
+请注意与维护服务器场、维护或迁移自定义项以及升级 SharePoint Server 所需的硬件相关的隐藏成本。 必要时，拥有本地 SharePoint Server 场是一种奖励。 但是，如果在旧版 SharePoint 服务器上运行服务器场而不进行大量自定义，则可以从迁移到 SharePoint Online 中获益。
   
 > [!IMPORTANT]
-> 如果不经常使用 SharePoint 2007 中的内容，也可以选择其他选项。 一些 SharePoint 管理员选择创建 Microsoft 365 订阅，设置新的 SharePoint Online 网站，然后将其完全从 SharePoint 2007 中裁出，仅将必要的文档带到全新的 SharePoint Online 网站。 然后，可以将数据从 SharePoint 2007 网站中排出到存档中。 考虑您的用户如何使用 SharePoint 2007 安装中的数据。 可能有一些创造性的方法可以管理您的需求。
+> 如果 SharePoint 2007 中的内容很少使用，则还有另一个选项。 一些 SharePoint 管理员选择创建 Microsoft 365 订阅，设置一个新的 SharePoint Online 网站，然后完全离开 SharePoint 2007，仅将基本文档提交到全新的 SharePoint Online 网站。 然后，可以将 SharePoint 2007 网站的数据排入存档。 考虑用户如何处理 SharePoint 2007 安装的数据。 可能有一些用于管理需求的创意方法。
   
 |**SharePoint Online (SPO)**|**SharePoint Server 本地**|
 |:-----|:-----|
-|高成本的时间 (规划/执行/验证)   <br/> |高成本的时间 (规划/执行/验证)   <br/> |
-|降低资金成本， (不购买硬件)   <br/> |资金的成本较高 (硬件 + devs/admins)   <br/> |
-|迁移的一次性成本  <br/> |每次迁移时重复的一次性成本  <br/> |
-|低总拥有成本/维护  <br/> |高总拥有成本/维护  <br/> |
+|计划/执行/验证 (时间成本高)   <br/> |计划/执行/验证 (时间成本高)   <br/> |
+|无需购买硬件 (也降低了资金)   <br/> |硬件 +开发人员/ (的资金成本更高)   <br/> |
+|迁移中的一次成本  <br/> |每次未来迁移重复一次成本  <br/> |
+|较低的总拥有/维护成本  <br/> |高总拥有/维护成本  <br/> |
    
-当您迁移到 Microsoft 365 时，一次性移动将具有较高的成本，而您可以对数据进行组织，并决定在云和背后留下的内容。 但未来的升级将自动进行，并且您将不再需要管理硬件和软件更新。 此外，您的服务器场的启动时间将由 Microsoft 服务级别协议 ([SLA](https://go.microsoft.com/fwlink/?linkid=843153)) 支持。
+迁移到 Microsoft 365 时，一次移动会在前面花费更高昂的成本，同时组织数据并决定对云采取哪些操作以及留下哪些内容。 但是，将来的升级是自动的，你不再需要管理硬件和软件更新。 此外，服务器场的启动时间将受 SLA ([Microsoft](/office365/servicedescriptions/office-365-platform-service-description/service-level-agreement) 服务级别协议) 。
   
 ### <a name="migrate-to-sharepoint-online"></a>迁移到 SharePoint Online
 
-确保 SharePoint Online 具有所需的所有功能。 请参阅 [Microsoft 365 和 Office 365 服务说明](https://docs.microsoft.com/office365/servicedescriptions/office-365-service-descriptions-technet-library)。
+确保 SharePoint Online 具有所有所需的功能。 请参阅 [Microsoft 365 和 Office 365 服务说明](/office365/servicedescriptions/office-365-service-descriptions-technet-library)。
   
-您不能直接从 SharePoint 2007 迁移到 SharePoint Online。 您的迁移到 SharePoint Online 将手动执行。 如果升级到 SharePoint Server 2013 或 SharePoint Server 2016，则可以使用 SharePoint 迁移 API (将信息迁移到 OneDrive for business 中，例如) 。
+不能直接从 SharePoint 2007 迁移到 SharePoint Online。 将手动移动到 SharePoint Online。 如果升级到 SharePoint Server 2013 或 SharePoint Server 2016，可以使用 SharePoint 迁移 API (将信息迁移到 OneDrive for Business 中，例如) 。
   
-|**Online pro**|**联机 con**|
+|**在线专业人员**|**Online con**|
 |:-----|:-----|
-|Microsoft 提供 SPO 硬件和所有硬件管理。  <br/> |可用功能在本地 SharePoint Server 和 SPO 之间可能有所不同。  <br/> |
-|你是订阅的全局管理员，并且可以将管理员分配给 SPO 网站。  <br/> |在本地 SharePoint Server 中，服务器场管理员可使用的某些操作不存在，或者不一定包含在 Microsoft 365 中的 SharePoint 管理员角色中。  <br/> |
-|Microsoft 对底层硬件和软件应用修补程序、修补程序和更新。 <br/> |由于在服务中没有对基础文件系统的访问权限，因此自定义项受到限制。  <br/> |
-|Microsoft 发布 [服务级别协议](https://go.microsoft.com/fwlink/?linkid=843153) 并快速移动以解决服务级别事件。 <br/> |SharePoint Online 中的服务将自动执行备份和还原以及其他恢复选项。 如果不使用备份，则将其覆盖。 <br/> |
-|Microsoft 在服务中不断执行安全测试和服务器性能调整。 <br/> |对用户界面和其他 SharePoint 功能的更改由服务安装，并且可能需要开启或关闭。 <br/> |
-|Microsoft 365 符合多种行业标准： [microsoft 合规性服务](https://go.microsoft.com/fwlink/?linkid=843165)。  <br/> |迁移的[FastTrack](https://www.microsoft.com/fasttrack/microsoft-365)协助受到限制。  <br/> 大部分升级都是手动进行的，也可以通过 [SharePoint Online 和 OneDrive 迁移内容路线图](https://go.microsoft.com/fwlink/?linkid=843184)中介绍的 SPO 迁移 API 进行。  <br/> |
-|Microsoft 支持工程师和数据中心员工不会对你的订阅进行无限制的管理员访问。 <br/> |如果需要升级硬件以支持较新版本的 SharePoint，或者如果升级需要辅助服务器场，则可能会有额外的成本。  <br/> |
-|合作伙伴可协助将数据迁移到 SharePoint Online 的一次性作业。  <br/> ||
-|在线产品将自动更新。 尽管功能可能弃用，但也没有真正的支持结束。 <br/> ||
+|Microsoft 提供 SPO 硬件以及所有硬件管理。  <br/> |SharePoint Server 本地和 SPO 之间的可用功能可能会有所不同。  <br/> |
+|你是订阅的全局管理员，并且可以将管理员分配到 SPO 网站。  <br/> |SharePoint Server 本地管理员可用的某些操作不存在，或不一定包含在 Microsoft 365 的 SharePoint 管理员角色中。  <br/> |
+|Microsoft 对基础硬件和软件应用修补程序、修补程序和更新。 <br/> |由于服务中无法访问基础文件系统，因此自定义受到限制。  <br/> |
+|Microsoft 发布了 [服务级别协议，](/office365/servicedescriptions/office-365-platform-service-description/service-level-agreement) 并快速移动以解决服务级别事件。 <br/> |备份和还原以及其他恢复选项由 SharePoint Online 中的服务自动执行。 如果未使用，则覆盖备份。 <br/> |
+|Microsoft 在服务中持续执行安全测试和服务器性能调整。 <br/> |对用户界面和其他 SharePoint 功能所做的更改由服务安装，可能需要打开或关闭。 <br/> |
+|Microsoft 365 符合许多行业标准 [：Microsoft 合规性产品/服务](/compliance/regulatory/offering-home)。  <br/> |[FastTrack](https://www.microsoft.com/fasttrack/microsoft-365) 迁移协助有限。  <br/> 大部分升级是手动的，或通过 SharePoint Online 和 OneDrive 迁移内容路线图中所述的 SPO[迁移 API。](/sharepointmigration/upload-on-premises-content-to-sharepoint-online-using-powershell-cmdlets)  <br/> |
+|Microsoft 支持工程师和数据中心员工将不能不受限制地访问你的订阅。 <br/> |如果需要升级硬件以支持较新版本的 SharePoint，或者需要辅助服务器场进行升级，则可能会增加额外的成本。  <br/> |
+|合作伙伴可帮助完成将数据迁移到 SharePoint Online 的一次工作。  <br/> ||
+|联机产品将自动更新。 虽然功能可能会弃用，但不存在真正停止提供支持的情况。 <br/> ||
    
-如果你已决定创建新的 Microsoft 365 网站，并将向其手动迁移数据，请查看你的 [Microsoft 365 选项](https://www.microsoft.com/microsoft-365/)。
+如果你已决定创建新的 Microsoft 365 网站，并根据需要手动将数据迁移到它，请检查 [Microsoft 365 选项](https://www.microsoft.com/microsoft-365/)。
   
 ### <a name="upgrade-sharepoint-server-on-premises"></a>升级本地 SharePoint Server
 
-没有办法跳过 SharePoint 升级中的版本。 升级以串行的顺序进行：
+无法跳过 SharePoint 升级中的版本。 升级序列化：
   
-- SharePoint 2007 \> Sharepoint server 2010 \> sharepoint server 2013 \> sharepoint server 2016
+- SharePoint 2007 \> SharePoint Server 2010 \> SharePoint Server 2013 \> SharePoint Server 2016
    
-从 SharePoint 2007 迁移到 SharePoint Server 2016 意味着需要大量的时间，并且会涉及硬件的成本 (SQL server 也必须升级) 、软件和管理。 需要升级或放弃自定义项。
+从 SharePoint 2007 升级到 SharePoint Server 2016 意味着需要大量时间投入，并且涉及硬件 (SQL 服务器的成本也必须) 、软件和管理。 自定义项将需要升级或放弃。
   
 > [!NOTE]
-> 可以维护您的生命期结束的 SharePoint 2007 场，将 SharePoint Server 2016 场安装在新的硬件 (，以便单独的服务器场并行运行) ，然后规划和执行内容 (的手动迁移，以下载和重新上载内容，例如) 。 但请注意，手动移动的一些陷阱，例如，文档移动将上次修改的帐户替换为执行手动移动的帐户别名。 还要考虑必须提前完成的工作，如重新创建网站、子网站、权限和列表结构。 提前考虑可以移动到存储或删除的数据，以降低迁移的影响。
+> 可以维护您的生命周期结束 SharePoint 2007 服务器场，在新硬件 (上安装 SharePoint Server 2016 服务器场，以便单独的服务器场并行运行) ，然后计划并执行内容 (的手动迁移以下载和重新上载内容，例如) 。 但请注意手动移动的一些错误，例如将最后修改的帐户替换为执行手动移动的帐户别名的文档移动。 还要考虑必须提前完成的工作，例如重新创建网站、子网站、权限和列表结构。 提前考虑可以移入存储或删除哪些数据，以减少迁移的影响。
   
-在升级之前清理环境非常重要。 一定要确保现有服务器场在升级之前正常运行，当然不应在停止之前运行！
+在升级之前清理环境很重要。 在升级之前，一定要确保现有服务器场正常运行，并且一定在停用之前运行！
   
-请记住查看 *支持的和不受支持的升级路径*： 
+请记住查看 *受支持和不受支持的升级路径*： 
   
-- [SharePoint Server 2007](https://go.microsoft.com/fwlink/?linkid=843156)
+- [SharePoint Server 2007](/previous-versions/office/sharepoint-2007-products-and-technologies/cc262747(v=office.12))
     
-- [SharePoint Server 2010](https://go.microsoft.com/fwlink/?linkid=843156)
+- [SharePoint Server 2010](/previous-versions/office/sharepoint-2007-products-and-technologies/cc262747(v=office.12))
     
-- [SharePoint Server 2013](https://go.microsoft.com/fwlink/?linkid=843157)
+- [SharePoint Server 2013](/SharePoint/upgrade-and-update/review-supported-editions-and-products-for-upgrading-to-sharepoint-2013)
     
-如果您具有自定义项，则在迁移路径中为每个步骤制定一个计划至关重要： 
+如果有自定义项，则制定迁移路径中每个步骤的计划至关重要： 
   
-- [SharePoint 2007](https://go.microsoft.com/fwlink/?linkid=843158)
+- [SharePoint 2007](/previous-versions/office/sharepoint-2007-products-and-technologies/cc263203(v=office.12))
     
-- [SharePoint Server 2010](https://go.microsoft.com/fwlink/?linkid=843160)
+- [SharePoint Server 2010](/previous-versions/office/sharepoint-server-2010/cc263203(v=office.14))
     
-- [SharePoint Server 2013](https://go.microsoft.com/fwlink/?linkid=843162)
+- [SharePoint Server 2013](/SharePoint/upgrade-and-update/create-a-communication-plan-for-the-upgrade-to-sharepoint-2013)
     
-|**本地 pro**|**本地 con**|
+|**本地专业人员**|**本地 con**|
 |:-----|:-----|
-|从服务器硬件上完全控制 SharePoint 场的各个方面。  <br/> |所有中断和修复都是贵公司的责任 (如果你的产品不是支持的结束) ，你可以联系付费 Microsoft 支持部门。  <br/> |
-|SharePoint Server 本地的完整功能集以及通过混合将本地服务器场连接到 SharePoint Online 订阅的选项。  <br/> |在本地托管的 SharePoint Server 的升级、修补程序、安全修补程序和所有维护。  <br/> |
-|完全访问权限以进行更好的自定义。  <br/> |[Microsoft 合规性产品](https://go.microsoft.com/fwlink/?linkid=843165) 必须在本地手动配置。  <br/> |
-|在您的控制) 下，对您的本地 (执行安全测试和服务器性能调整。  <br/> |Microsoft 365 可能会对 SharePoint Online 可用的功能，这些功能不能与本地 SharePoint Server 进行互操作。  <br/> |
-|合作伙伴可以协助将数据迁移到下一版本的 SharePoint Server (，但不能迁移到) 之外。  <br/> |您的 SharePoint Server 站点不会自动使用在 SharePoint Online 中显示的 [SSL/TLS](https://go.microsoft.com/fwlink/?linkid=843167) 证书。  <br/> |
-|完全控制命名约定、备份和还原以及本地 SharePoint Server 中的其他恢复选项。  <br/> |本地 SharePoint Server 对产品生命周期非常敏感。  <br/> |
+|完全控制 SharePoint 场的各个方面，从服务器硬件开始。  <br/> |所有中断和修复都是你的公司的责任 (如果你的产品未结束对 Microsoft 的支持，你可以参与付费的 Microsoft) 。  <br/> |
+|本地 SharePoint Server 的完整功能集，通过混合将本地场连接到 SharePoint Online 订阅的选项。  <br/> |升级、修补程序、安全修补程序以及本地托管的 SharePoint Server 的所有维护。  <br/> |
+|可进行更大自定义的完全访问权限。  <br/> |[必须在本地](/compliance/regulatory/offering-home) 手动配置 Microsoft 合规性产品/服务。  <br/> |
+|安全测试和服务器性能调整在内部部署服务器上 (控制) 。  <br/> |Microsoft 365 可能会向 SharePoint Online 提供不与本地 SharePoint Server 互操作的功能。  <br/> |
+|合作伙伴可帮助将数据迁移到下一版本的 SharePoint Server (及) 。  <br/> |SharePoint Server 网站不会自动使用 [SSL/TLS](/SharePoint/security-for-sharepoint-server/enable-tls-1-1-and-tls-1-2-support-in-sharepoint-server-2016) 证书，如 SharePoint Online 中所见。  <br/> |
+|完全控制命名约定、备份和还原以及 SharePoint Server 本地的其他恢复选项。  <br/> |本地 SharePoint Server 对产品生命周期很敏感。  <br/> |
    
 ### <a name="upgrade-resources"></a>升级资源
 
-确保您的环境满足硬件和软件要求，然后遵循受支持的升级方法。
+确保您的环境满足硬件和软件要求，然后遵循支持的升级方法。
   
 - **的硬件/软件要求**： 
     
-    [SharePoint Server 2010](https://go.microsoft.com/fwlink/?linkid=843204)  | [SharePoint Server 2010](https://go.microsoft.com/fwlink/?linkid=843204)  | [SharePoint Server 2013](https://go.microsoft.com/fwlink/?linkid=843206)  | [SharePoint Server 2016](https://go.microsoft.com/fwlink/?linkid=843207)
+    [SharePoint Server 2010](/previous-versions/office/sharepoint-server-2010/cc262485(v=office.14))  | [SharePoint Server 2010](/previous-versions/office/sharepoint-server-2010/cc262485(v=office.14))  | [SharePoint Server 2013](/SharePoint/install/hardware-and-software-requirements-0)  | [SharePoint Server 2016](/SharePoint/install/hardware-and-software-requirements)
     
 - **的软件边界和限制**： 
     
-    [SharePoint Server 2007](https://go.microsoft.com/fwlink/?linkid=843245)  | [SharePoint Server 2010](https://go.microsoft.com/fwlink/?linkid=843247)  | [SharePoint Server 2013](https://go.microsoft.com/fwlink/?linkid=843248)  | [SharePoint Server 2016](https://go.microsoft.com/fwlink/?linkid=843249)
+    [SharePoint Server 2007](/previous-versions/office/sharepoint-2007-products-and-technologies/cc262787(v=office.12))  | [SharePoint Server 2010](/previous-versions/office/sharepoint-server-2010/cc262787(v=office.14))  | [SharePoint Server 2013](/SharePoint/install/software-boundaries-and-limits)  | [SharePoint Server 2016](/SharePoint/install/software-boundaries-and-limits-0)
     
-- 以下项 **的升级过程概述**： 
+- **的升级过程概述**： 
     
-    [SharePoint Server 2007](https://go.microsoft.com/fwlink/?linkid=843250)  | [SharePoint Server 2010](https://go.microsoft.com/fwlink/?linkid=843251)  | [SharePoint Server 2013](https://go.microsoft.com/fwlink/?linkid=843252)  | [SharePoint Server 2016](https://go.microsoft.com/fwlink/?linkid=843359)
+    [SharePoint Server 2007](/previous-versions/office/sharepoint-2007-products-and-technologies/cc303420(v=office.12))  | [SharePoint Server 2010](/previous-versions/office/sharepoint-server-2010/cc303420(v=office.14))  | [SharePoint Server 2013](/SharePoint/upgrade-and-update/upgrade-to-sharepoint-server-2016)  | [SharePoint Server 2016](/SharePoint/upgrade-and-update/upgrade-to-sharepoint-server-2016)
     
-### <a name="create-a-sharepoint-hybrid-solution-between-sharepoint-online-and-on-premises"></a>在 SharePoint Online 和本地部署之间创建 SharePoint 混合解决方案
+### <a name="create-a-sharepoint-hybrid-solution-between-sharepoint-online-and-on-premises"></a>在 SharePoint Online 和本地之间创建 SharePoint 混合解决方案
 
-如果迁移的答案需要在本地提供的自控制和 SharePoint Online 提供的更低的所有权之间，则可以通过混合将 SharePoint Server 2013 或2016服务器场连接到 SharePoint Online。 [了解 SharePoint 混合解决方案](https://support.office.com/article/4c89a95a-a58c-4fc1-974a-389d4f195383.aspx)。
+如果迁移需求的答案介于本地提供的自控制与 SharePoint Online 提供的所有权成本较低之间，您可以通过混合将 SharePoint Server 2013 或 SharePoint Online 场连接到 SharePoint Online。 [了解 SharePoint 混合解决方案](https://support.office.com/article/4c89a95a-a58c-4fc1-974a-389d4f195383.aspx)。
   
-如果你确定混合 SharePoint 服务器场将对你的业务有益，请熟悉现有的混合类型，以及如何配置你的本地 SharePoint 场和 Microsoft 365 订阅之间的连接。
+如果您确定混合 SharePoint Server 服务器场将有利于您的业务，请熟悉现有的混合类型以及如何在本地 SharePoint 场和 Microsoft 365 订阅之间配置连接。
   
 | 选项 | 说明 |
 |:-----|:-----|
-[Microsoft 合规性产品/服务](https://go.microsoft.com/fwlink/?linkid=843165)  <br/> |迁移的[FastTrack](https://www.microsoft.com/fasttrack/microsoft-365)协助受到限制。  <br/> 大部分升级都是手动进行的，也可以通过 [SharePoint Online 和 OneDrive 迁移内容路线图](https://go.microsoft.com/fwlink/?linkid=843184)中介绍的 SPO 迁移 API 进行。  <br/> |
-|Microsoft 支持工程师和数据中心员工对你的订阅没有无限制的管理员访问权限。<br/> |如果需要升级硬件基础结构以支持较新版本的 SharePoint，或者如果升级需要辅助服务器场，则可能会有额外的成本。  <br/> |
-|合作伙伴可协助将数据迁移到 SharePoint Online 的一次性作业。  <br/> ||
-|在线产品通过服务自动更新。 尽管功能可能弃用，但也没有真正的支持结束。<br/> ||
+[Microsoft 合规性产品/服务](/compliance/regulatory/offering-home)  <br/> |[FastTrack](https://www.microsoft.com/fasttrack/microsoft-365) 迁移协助有限。  <br/> 大部分升级是手动的，或通过 SharePoint Online 和 OneDrive 迁移内容路线图中所述的 SPO[迁移 API。](/sharepointmigration/upload-on-premises-content-to-sharepoint-online-using-powershell-cmdlets)  <br/> |
+|Microsoft 支持工程师和数据中心员工对订阅没有不受限制的管理员访问权限。<br/> |如果需要升级硬件基础结构以支持较新版本的 SharePoint，或者需要辅助服务器场进行升级，则可能会增加额外的成本。  <br/> |
+|合作伙伴可帮助完成将数据迁移到 SharePoint Online 的一次工作。  <br/> ||
+|联机产品会在整个服务中自动更新。 虽然功能可能会弃用，但不存在真正停止提供支持的情况。<br/> ||
    
-如果你已决定创建新的 Microsoft 365 网站，并将向其手动迁移数据，请查看你的 [Microsoft 365 选项](https://www.microsoft.com/microsoft-365/)。
+如果你已决定创建新的 Microsoft 365 网站，并根据需要手动将数据迁移到它，请检查 [Microsoft 365 选项](https://www.microsoft.com/microsoft-365/)。
   
 ### <a name="upgrade-sharepoint-server-on-premises"></a>升级本地 SharePoint Server
 
-没有办法跳过 SharePoint 升级中的版本。 升级以串行的顺序进行：
+无法跳过 SharePoint 升级中的版本。 升级序列化：
   
-- SharePoint 2007 \> Sharepoint server 2010 \> sharepoint server 2013 \> sharepoint server 2016
+- SharePoint 2007 \> SharePoint Server 2010 \> SharePoint Server 2013 \> SharePoint Server 2016
    
-从 SharePoint 2007 迁移到 SharePoint Server 2016 意味着需要大量的时间，并将涉及硬件的成本 (SQL server 也必须升级) 、软件和管理。 需要升级或放弃自定义项。
+从 SharePoint 2007 升级到 SharePoint Server 2016 意味着需要大量时间投入，并且涉及硬件 (SQL 服务器的成本也必须) 、软件和管理。 自定义项将需要升级或放弃。
   
 > [!NOTE]
-> 可以维护您的生命期结束的 SharePoint 2007 场，将 SharePoint Server 2016 场安装在新的硬件 (，以便单独的服务器场并行运行) ，然后规划和执行内容 (的手动迁移，以下载和重新上载内容，例如) 。 但是，请注意手动移动的潜在缺陷，例如，文档移动将上次修改的帐户替换为执行手动移动的帐户别名，并且必须提前完成的工作（如重新创建网站、子网站、权限和列表结构）。 考虑可以移动到存储或删除的数据，以降低迁移的影响。
+> 可以维护您的生命周期结束 SharePoint 2007 服务器场，在新硬件 (上安装 SharePoint Server 2016 服务器场，以便单独的服务器场并行运行) ，然后计划并执行内容 (的手动迁移以下载和重新上载内容，例如) 。 但请注意手动移动的潜在错误，例如将上次修改的帐户替换为执行手动移动的帐户别名的文档移动，以及必须提前完成的工作，如重新创建网站、子网站、权限和列表结构。 请考虑可以移入存储或删除哪些数据，以减少迁移的影响。
   
-在升级之前清理环境。 一定要确保您的现有服务器场在升级之前正常运行，并且在您停止工作之前！ 
+在升级之前清理环境。 在升级之前以及停用之前，一定要确保现有服务器场正常运行！ 
   
-请记住查看 *支持的和不受支持的升级路径*： 
+请记住查看 *受支持和不受支持的升级路径*： 
   
-- [SharePoint Server 2007](https://go.microsoft.com/fwlink/?linkid=843156)
+- [SharePoint Server 2007](/previous-versions/office/sharepoint-2007-products-and-technologies/cc262747(v=office.12))
     
-- [SharePoint Server 2010](https://go.microsoft.com/fwlink/?linkid=843156)
+- [SharePoint Server 2010](/previous-versions/office/sharepoint-2007-products-and-technologies/cc262747(v=office.12))
     
-- [SharePoint Server 2013](https://go.microsoft.com/fwlink/?linkid=843157)
+- [SharePoint Server 2013](/SharePoint/upgrade-and-update/review-supported-editions-and-products-for-upgrading-to-sharepoint-2013)
     
-如果您具有 *自定义项*，则在迁移路径中为每个步骤规划升级都很重要： 
+如果有 *自定义项*，则规划迁移路径中每个步骤的升级至关重要： 
   
-- [SharePoint 2007](https://go.microsoft.com/fwlink/?linkid=843158)
+- [SharePoint 2007](/previous-versions/office/sharepoint-2007-products-and-technologies/cc263203(v=office.12))
     
-- [SharePoint Server 2010](https://go.microsoft.com/fwlink/?linkid=843160)
+- [SharePoint Server 2010](/previous-versions/office/sharepoint-server-2010/cc263203(v=office.14))
     
-- [SharePoint Server 2013](https://go.microsoft.com/fwlink/?linkid=843162)
+- [SharePoint Server 2013](/SharePoint/upgrade-and-update/create-a-communication-plan-for-the-upgrade-to-sharepoint-2013)
     
-|**本地 Pro**|**本地 Con**|
+|**本地专业版**|**本地 Con**|
 |:-----|:-----|
-|从服务器硬件上完全控制 SharePoint 场的各个方面。  <br/> |所有中断和修复都是贵公司的责任。  (如果你的产品尚不支持，你可以联系付费 Microsoft 支持部门。 )   <br/> |
-|SharePoint Server 本地的完整功能集以及通过混合将本地服务器场连接到 SharePoint Online 订阅的选项。  <br/> |在本地托管的 SharePoint Server 的升级、修补程序、安全修补程序和所有维护。  <br/> |
-|完全访问权限以进行更好的自定义。  <br/> |[Microsoft 合规性产品](https://go.microsoft.com/fwlink/?linkid=843165) 必须在本地手动配置。  <br/> |
-|安全测试和服务器性能调整在您的内部部署下执行。  <br/> |Microsoft 365 可能会对 SharePoint Online 可用的功能，这些功能不能与本地 SharePoint Server 进行互操作  <br/> |
-|合作伙伴可以帮助将数据迁移到 SharePoint Server 的下一个版本 (和) 之外。  <br/> |您的 SharePoint Server 网站不会自动使用在 SharePoint Online 中显示的 [SSL/TLS](https://go.microsoft.com/fwlink/?linkid=843167) 证书。  <br/> |
-|完全控制命名约定、备份和还原以及本地 SharePoint Server 中的其他恢复选项。  <br/> |本地 SharePoint Server 对产品生命周期非常敏感。  <br/> |
+|完全控制 SharePoint 场的各个方面，从服务器硬件开始。  <br/> |所有中断和修复都由你的公司负责。  (如果你的产品未停止提供支持，你可以参加付费 Microsoft 支持。)   <br/> |
+|本地 SharePoint Server 的完整功能集，通过混合将本地场连接到 SharePoint Online 订阅的选项。  <br/> |升级、修补程序、安全修补程序以及本地托管的 SharePoint Server 的所有维护。  <br/> |
+|可进行更大自定义的完全访问权限。  <br/> |[必须在本地](/compliance/regulatory/offering-home) 手动配置 Microsoft 合规性产品/服务。  <br/> |
+|安全测试和服务器性能调整在本地由你控制。  <br/> |Microsoft 365 可能会向 SharePoint Online 提供不与本地 SharePoint Server 互操作的功能  <br/> |
+|合作伙伴可帮助将数据迁移到下一版本的 SharePoint Server (及) 。  <br/> |SharePoint Server 网站不会自动使用 [SSL/TLS](/SharePoint/security-for-sharepoint-server/enable-tls-1-1-and-tls-1-2-support-in-sharepoint-server-2016) 证书，如 SharePoint Online 中所见。  <br/> |
+|完全控制命名约定、备份和还原以及 SharePoint Server 本地的其他恢复选项。  <br/> |本地 SharePoint Server 对产品生命周期很敏感。  <br/> |
    
 ### <a name="upgrade-resources"></a>升级资源
 
-请确保您的环境满足硬件和软件要求。 然后遵循受支持的升级方法。
+确保您的环境满足硬件和软件要求。 然后按照支持的升级方法操作。
   
-- **的硬件/软件要求：** 
+- **针对：的硬件/软件要求：** 
     
-    [SharePoint Server 2010](https://go.microsoft.com/fwlink/?linkid=843204)  | [SharePoint Server 2010](https://go.microsoft.com/fwlink/?linkid=843204)  | [SharePoint Server 2013](https://go.microsoft.com/fwlink/?linkid=843206)  | [SharePoint Server 2016](https://go.microsoft.com/fwlink/?linkid=843207)
+    [SharePoint Server 2010](/previous-versions/office/sharepoint-server-2010/cc262485(v=office.14))  | [SharePoint Server 2010](/previous-versions/office/sharepoint-server-2010/cc262485(v=office.14))  | [SharePoint Server 2013](/SharePoint/install/hardware-and-software-requirements-0)  | [SharePoint Server 2016](/SharePoint/install/hardware-and-software-requirements)
     
-- **的软件边界和限制：** 
+- **针对： 的软件边界和限制：** 
     
-    [SharePoint Server 2007](https://go.microsoft.com/fwlink/?linkid=843245)  | [SharePoint Server 2010](https://go.microsoft.com/fwlink/?linkid=843247)  | [SharePoint Server 2013](https://go.microsoft.com/fwlink/?linkid=843248)  | [SharePoint Server 2016](https://go.microsoft.com/fwlink/?linkid=843249)
+    [SharePoint Server 2007](/previous-versions/office/sharepoint-2007-products-and-technologies/cc262787(v=office.12))  | [SharePoint Server 2010](/previous-versions/office/sharepoint-server-2010/cc262787(v=office.14))  | [SharePoint Server 2013](/SharePoint/install/software-boundaries-and-limits)  | [SharePoint Server 2016](/SharePoint/install/software-boundaries-and-limits-0)
     
-- **以下项的升级过程概述：** 
+- **以下的升级过程概述：** 
     
-    [SharePoint Server 2007](https://go.microsoft.com/fwlink/?linkid=843250)  | [SharePoint Server 2010](https://go.microsoft.com/fwlink/?linkid=843251)  | [SharePoint Server 2013](https://go.microsoft.com/fwlink/?linkid=843252)  | [SharePoint Server 2016](https://go.microsoft.com/fwlink/?linkid=843359)
+    [SharePoint Server 2007](/previous-versions/office/sharepoint-2007-products-and-technologies/cc303420(v=office.12))  | [SharePoint Server 2010](/previous-versions/office/sharepoint-server-2010/cc303420(v=office.14))  | [SharePoint Server 2013](/SharePoint/upgrade-and-update/upgrade-to-sharepoint-server-2016)  | [SharePoint Server 2016](/SharePoint/upgrade-and-update/upgrade-to-sharepoint-server-2016)
     
-### <a name="create-a-sharepoint-hybrid-solution-between-sharepoint-online-and-on-premises"></a>在 SharePoint Online 和本地部署之间创建 SharePoint 混合解决方案
+### <a name="create-a-sharepoint-hybrid-solution-between-sharepoint-online-and-on-premises"></a>在 SharePoint Online 和本地之间创建 SharePoint 混合解决方案
 
-如果迁移的答案需要在本地提供的自控制和 SharePoint Online 提供的更低的所有权之间，则可以通过混合将 SharePoint Server 2013 或2016服务器场连接到 SharePoint Online。 [了解 SharePoint 混合解决方案](https://support.office.com/article/4c89a95a-a58c-4fc1-974a-389d4f195383.aspx)
+如果迁移需求的答案介于本地提供的自控制与 SharePoint Online 提供的所有权成本较低之间，您可以通过混合将 SharePoint Server 2013 或 SharePoint Online 场连接到 SharePoint Online。 [了解 SharePoint 混合解决方案](https://support.office.com/article/4c89a95a-a58c-4fc1-974a-389d4f195383.aspx)
   
-如果你确定混合 SharePoint 服务器场将对你的业务有益，请熟悉现有的混合类型，以及如何配置你的本地 SharePoint 场和 Microsoft 365 订阅之间的连接。
+如果您确定混合 SharePoint Server 服务器场将有利于您的业务，请熟悉现有的混合类型以及如何在本地 SharePoint 场和 Microsoft 365 订阅之间配置连接。
   
-若要了解其工作原理，一种很好的方法是创建 Microsoft 365 开发/测试环境，您可以使用 [测试实验室指南](m365-enterprise-test-lab-guides.md)对其进行设置。 在获取试用版或购买的 Microsoft 365 订阅后，可以在 SharePoint Online 中创建可将数据迁移到的网站集、web 和文档库。 您可以通过使用迁移 API 手动迁移，或者如果要通过混合向导将我的网站内容迁移到 OneDrive for business，则可以进行手动迁移。
+查看工作原理的一个好方法就是创建一个 Microsoft 365 开发/测试环境，可以使用测试实验室指南 [进行设置](m365-enterprise-test-lab-guides.md)。 获取试用版或购买 Microsoft 365 订阅后，可以在 SharePoint Online 中创建网站集、Web 和文档库，可以将数据迁移到其中。 可以使用迁移 API 手动迁移，或者，如果要通过混合向导将"我的网站"内容迁移到 OneDrive for Business。
   
 > [!NOTE]
-> 请记住，若要使用 "混合" 选项，您的 SharePoint 2007 服务器场将需要升级到 SharePoint Server 2013 或 SharePoint Server 2016 （本地）。
+> 请记住，若要使用混合选项，SharePoint 2007 服务器场需要在本地升级到 SharePoint Server 2013 或 SharePoint Server 2016。
   
 ## <a name="related-topics"></a>相关主题
 
-[ (Office SharePoint Server 2007 的疑难解答和恢复升级) ](https://go.microsoft.com/fwlink/?linkid=843192)
+[Office SharePoint Server 2007 (疑难解答和恢复) ](/previous-versions/office/sharepoint-2007-products-and-technologies/cc262967(v=office.12))
   
-[解决 SharePoint Server 2010 (的升级问题) ](https://go.microsoft.com/fwlink/?linkid=843194)
+[解决 SharePoint Server 2010 (升级) ](/previous-versions/office/sharepoint-server-2010/cc262967(v=office.14))
   
-[在 SharePoint 2013 中解决数据库升级问题](https://go.microsoft.com/fwlink/?linkid=843195)
+[在 SharePoint 2013 中解决数据库升级问题](/SharePoint/upgrade-and-update/troubleshoot-database-upgrade-issues-in-sharepoint-2013)
   
-[搜索 Microsoft 合作伙伴以帮助进行升级](https://go.microsoft.com/fwlink/?linkid=841249)
+[搜索 Microsoft 合作伙伴以帮助升级](https://go.microsoft.com/fwlink/?linkid=841249)
   
-[可帮助您从 Office 2007 服务器和客户端进行升级的资源](upgrade-from-office-2007-servers-and-products.md)
-  
+[帮助您从 Office 2007 服务器和客户端升级的资源](upgrade-from-office-2007-servers-and-products.md)

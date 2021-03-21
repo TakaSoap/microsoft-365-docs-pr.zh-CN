@@ -11,13 +11,13 @@ f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
 localization_priority: Normal
-description: 了解 Exchange Online 中的多地理位置功能，如功能限制和邮箱放置。
-ms.openlocfilehash: ca7203c72f23fd03512bf23eaa5a4687e4bac1b5
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+description: 了解 Exchange Online 中的多地理位置功能，例如功能限制和邮箱放置。
+ms.openlocfilehash: bf1c3c8f510c57f47cbfc7b2609d97f5932e05d3
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46687904"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50923728"
 ---
 # <a name="multi-geo-capabilities-in-exchange-online"></a>Exchange Online 中的多地理位置功能
 
@@ -53,10 +53,10 @@ Exchange Online 将 **PreferredDataLocation** 属性从 Azure AD 同步到 Excha
 
 - 当你将 Outlook for Mac 用户的邮箱移动到新的地理位置时，他们可能会暂时无法访问其在线存档文件夹。 当用户的主邮箱和存档邮箱位于不同的地理位置时，会出现这种情况，因为跨地理位置邮箱移动可能会在不同时间完成。
 
-- 用户无法在 Web 上的 Outlook（以前称为 Outlook Web App 或 OWA）中跨地理位置共享*邮箱文件夹*。 例如，欧盟的用户无法使用 Web 上的 Outlook 打开位于美国的邮箱中的共享文件夹。 不过，Outlook 网页版用户可以使用单独的浏览器窗口打开不同地理位置中的*其他邮箱*，如[在 Outlook Web App 的单独浏览器窗口中打开其他人的邮箱](https://support.office.com/article/A909AD30-E413-40B5-A487-0EA70B763081#__toc372210362)中所述。
+- 用户无法在 Web 上的 Outlook（以前称为 Outlook Web App 或 OWA）中跨地理位置共享 *邮箱文件夹*。 例如，欧盟的用户无法使用 Web 上的 Outlook 打开位于美国的邮箱中的共享文件夹。 不过，Outlook 网页版用户可以使用单独的浏览器窗口打开不同地理位置中的 *其他邮箱*，如 [在 Outlook Web App 的单独浏览器窗口中打开其他人的邮箱](https://support.office.com/article/A909AD30-E413-40B5-A487-0EA70B763081#__toc372210362)中所述。
 
   **注意**：Windows 上的 Outlook 支持跨地理位置邮箱文件夹共享。
 
 - 多地理位置组织支持公用文件夹。 但是，公用文件夹必须保留在中心地理位置。 无法将公用文件夹移动到卫星地理位置。
 
-- 在多地理位置环境中，不支持跨地理位置邮箱审核。 例如，如果为某用户分配了访问其他地理位置的共享邮箱的权限，此用户执行的邮箱操作不会记录在共享邮箱的邮箱审核日志中。 有关详细信息，请参阅[管理邮箱审核](https://docs.microsoft.com/microsoft-365/compliance/enable-mailbox-auditing?view=o365-worldwide)。
+- 在多地理位置环境中，不支持跨地理位置邮箱审核。 例如，如果为某用户分配了访问其他地理位置的共享邮箱的权限，此用户执行的邮箱操作不会记录在共享邮箱的邮箱审核日志中。 有关详细信息，请参阅[管理邮箱审核](../compliance/enable-mailbox-auditing.md?view=o365-worldwide)。

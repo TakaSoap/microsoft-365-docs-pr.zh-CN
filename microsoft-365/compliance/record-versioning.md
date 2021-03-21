@@ -17,23 +17,23 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解有关记录的信息，以便在 Microsoft 365 中实现记录管理解决方案。
-ms.openlocfilehash: 4b8209108564f0a75f8d70efecd57d2526d9face
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: f622e7e6a75cacf5b9cf283847e6b3eea718d542
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48200523"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50925568"
 ---
 # <a name="use-record-versioning-to-update-records-stored-in-sharepoint-or-onedrive"></a>使用记录版本控制来更新存储在 SharePoint 或 OneDrive 中的记录
 
->*[Microsoft 365 安全性与合规性许可指南](https://aka.ms/ComplianceSD)。*
+>*[Microsoft 365 安全性与合规性许可指南](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。*
 
 >[!NOTE] 
 > 由于监管记录会阻止编辑，因此不提供适用于监管记录的版本控制。
 
 能够将文档标记为[记录](records-management.md#records)并限制可对该记录执行的操作是任何记录管理解决方案的重要目标。 但是，用户创建后续版本时也可能需要开展协作。
 
-例如，你可以将销售合同标记为记录，但需要使用新条款更新合同，并将最新版本标记为新记录，同时保留先前的记录版本。 对于这些类型的方案，SharePoint 和 OneDrive 现在支持*记录版本控制*。 OneNote 笔记本文件夹不支持记录版本控制。
+例如，你可以将销售合同标记为记录，但需要使用新条款更新合同，并将最新版本标记为新记录，同时保留先前的记录版本。 对于这些类型的方案，SharePoint 和 OneDrive 现在支持 *记录版本控制*。 OneNote 笔记本文件夹不支持记录版本控制。
 
 若要使用记录版本控制，首先[标记文档并将其标记为记录](declare-records.md)。 完成此操作后，名为“*记录状态*”的文档属性将显示在保留标签旁边，初始记录状态为“**已锁定**”。 
 
@@ -65,7 +65,7 @@ ms.locfileid: "48200523"
 
 2. 如果保留库没有“记录”文件夹，将会创建一个。
 
-3. “复制到”**** 操作会将文档的最新版本复制到“记录”文件夹。 “复制到”**** 操作仅包含最新版本，不包含先前版本。 此复制的文档现在被视为文档的记录版本，其文件名格式为：\[标题 GUID 版本\#\]
+3. “复制到”操作会将文档的最新版本复制到“记录”文件夹。 “复制到”操作仅包含最新版本，不包含先前版本。 此复制的文档现在被视为文档的记录版本，其文件名格式为：\[标题 GUID 版本\#\]
 
 4. 在“记录”文件夹中创建的副本已添加到原始文档的版本历史记录中，此版本将在注释字段中显示“**记录**”一词。
 
@@ -75,12 +75,12 @@ ms.locfileid: "48200523"
 
 ## <a name="record-versions"></a>记录版本
 
-每次用户解锁记录时，都会将最新版本复制到保留库的“记录”文件夹中，该版本在版本历史记录的“注释”**** 字段中的值为“记录”****。
+每次用户解锁记录时，都会将最新版本复制到保留库的“记录”文件夹中，该版本在版本历史记录的“注释”字段中的值为“记录”。
 <br/><br/>
 
 ![保留库中显示的记录](../media/recordversioning10.png)
 
-要查看版本历史记录，请在文档库中选择一个文档，然后在项菜单中单击“版本历史记录”****。
+要查看版本历史记录，请在文档库中选择一个文档，然后在项菜单中单击“版本历史记录”。
 
 ## <a name="where-records-are-stored"></a>存储记录的位置。
 
@@ -97,7 +97,7 @@ ms.locfileid: "48200523"
 
 ## <a name="searching-the-audit-log-for-record-versioning-events"></a>搜索记录版本控制事件的审核日志
 
-锁定和解锁记录的操作会记录在审核日志中。 你可以搜索特定活动“将记录状态更改为已锁定”**** 和“将记录状态更改为已解锁”****，这些活动位于安全与合规性中心“审核日志搜索”**** 页面“活动”**** 下拉列表中的“文件和页面活动”**** 部分。
+锁定和解锁记录的操作会记录在审核日志中。 你可以搜索特定活动“将记录状态更改为已锁定”和“将记录状态更改为已解锁”，这些活动位于安全与合规性中心“审核日志搜索”页面“活动”下拉列表中的“文件和页面活动”部分。
 <br/><br/>
 
 ![在审核日志中搜索记录版本控制事件](../media/recordversioning13.png)

@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: 本文讨论如何将保留标签应用于 SharePoint Syntex 中的模型
-ms.openlocfilehash: 48c0b983316cfe29019d09cb20546fa4b325b3b0
-ms.sourcegitcommit: 78f48304f990e969a052fe6536b2e8d6856e1086
+ms.openlocfilehash: 796130bfa967663b5696f49279154cfe9b16f703
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50242757"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50925364"
 ---
 # <a name="apply-a-retention-label-to-a-model-in-sharepoint-syntex"></a>在 SharePoint 整合中向模型应用保留标签
 
@@ -28,14 +28,14 @@ ms.locfileid: "50242757"
 </br>
 
 
-可以轻松将 [保留标签](https://docs.microsoft.com/microsoft-365/compliance/retention) 应用于 Microsoft SharePoint Syntex 中的文档理解模型。 这可同时针对文档了解和表单处理模型执行这一操作。
+可以轻松将 [保留标签](../compliance/retention.md) 应用于 Microsoft SharePoint Syntex 中的文档理解模型。 这可同时针对文档了解和表单处理模型执行这一操作。
 
 保留标签允许将保留设置应用于模型识别的文档。  例如，希望模型不仅可以识别上传到文档库的任何 *保险通知* 文档，还可将 *商务* 保留标记应用于这些文档，以便在指定时间段（如接下来的五个月）中不能从文档库中删除这些文档。
 
 可以通过模型主页上的模型设置将预先存在的保留标签应用于模型。 
 
 > [!Important]
-> 对于可应用于内容理解模型的保留标签，需[在 Microsoft 365 合规中心中创建和发布](https://docs.microsoft.com/microsoft-365/compliance/create-apply-retention-labels#how-to-create-and-publish-retention-labels)。
+> 对于可应用于内容理解模型的保留标签，需[在 Microsoft 365 合规中心中创建和发布](../compliance/create-apply-retention-labels.md#how-to-create-and-publish-retention-labels)。
 
 ## <a name="to-add-a-retention-label-to-a-document-understanding-model"></a>将保留标签添加到文档理解模型
 
@@ -73,13 +73,13 @@ ms.locfileid: "50242757"
 ## <a name="to-add-a-retention-label-to-a-form-processing-model"></a>向表单处理模型添加保留标签
 
 > [!Important]
-> 对于可应用于内容理解模型的保留标签，需[在 Microsoft 365 合规中心中创建和发布](https://docs.microsoft.com/microsoft-365/compliance/create-apply-retention-labels#how-to-create-and-publish-retention-labels)。
+> 对于可应用于内容理解模型的保留标签，需[在 Microsoft 365 合规中心中创建和发布](../compliance/create-apply-retention-labels.md#how-to-create-and-publish-retention-labels)。
 
 创建模型时，可以将保留标签应用于窗体处理模型，或将标签应用于现有模型。
 
 ### <a name="to-add-a-retention-label-when-you-create-a-form-processing-model"></a>创建表单处理模型时添加保留标签
 
-1. 在新建 [窗体处理模型时，](https://docs.microsoft.com/microsoft-365/contentunderstanding/create-a-form-processing-model)" <b>"设置。</b>
+1. 在新建 [窗体处理模型时，](./create-a-form-processing-model.md)" <b>"设置。</b>
 2. 在 <b>高级设置</b>中，在 <b>"保留标签</b> "部分中，选择菜单，然后选择要应用到模型的保留标签。</b>
 
  
@@ -132,5 +132,3 @@ ms.locfileid: "50242757"
 [创建提取程序](create-an-extractor.md)
 
 [文档理解概述](document-understanding-overview.md)
-
-

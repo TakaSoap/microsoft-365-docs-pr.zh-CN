@@ -17,16 +17,16 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: seo-marvel-apr2020
 description: 摘要：在 Microsoft Azure 中创建模拟跨界虚拟网络作为 Microsoft 365 测试环境。
-ms.openlocfilehash: ce8b1963e97decc58820bff7b563bb835a843772
-ms.sourcegitcommit: 53ff1fe6d6143b0bf011031eea9b85dc01ae4f74
+ms.openlocfilehash: 545cce668df66b594de6b45ddd506b87afcf44ac
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "48487644"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50926028"
 ---
 # <a name="simulated-cross-premises-virtual-network-in-a-microsoft-365-test-environment"></a>Microsoft 365 测试环境中的模拟跨界虚拟网络
 
-*此测试实验室指南可用于适用于企业和 Office 365 企业测试环境的 Microsoft 365。*
+*此测试实验室指南可用于 Microsoft 365 企业版和 Office 365 企业版测试环境。*
 
 本文逐步介绍了如何使用两个 Azure 虚拟网络来创建 Microsoft Azure 模拟混合云环境。下面是生成的配置。 
   
@@ -59,16 +59,16 @@ ms.locfileid: "48487644"
 > [!NOTE]
 > 此配置需要付费的 Azure 订阅。 
 
-您可以使用生成的环境，通过其他[测试实验室指南](m365-enterprise-test-lab-guides.md)或在您自己的环境中测试[适用于企业的 Microsoft 365](https://www.microsoft.com/microsoft-365/enterprise)的特性和功能。
+可以使用生成的环境通过其他测试实验室指南或自行测试 Microsoft [365](https://www.microsoft.com/microsoft-365/enterprise)企业版的特性和功能[](m365-enterprise-test-lab-guides.md)。
 
 ![Microsoft 云测试实验室指南](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
 > [!TIP]
-> 转到 [microsoft 365 for enterprise Test Lab Guide stack](../downloads/Microsoft365EnterpriseTLGStack.pdf) For the microsoft 365 For 企业测试实验室指南堆栈中的所有文章。
+> 转到 [Microsoft 365 企业](../downloads/Microsoft365EnterpriseTLGStack.pdf) 版测试实验室指南堆栈，直观映射到 Microsoft 365 企业版测试实验室指南堆栈中所有文章。
 
 ## <a name="phase-1-configure-the-testlab-virtual-network"></a>第 1 阶段：配置 TestLab 虚拟网络
 
-请按[模拟企业基础配置](simulated-ent-base-configuration-microsoft-365-enterprise.md)的**第 1 阶段**中的说明操作，在名为 TestLab 的 Azure 虚拟网络中配置 DC1、APP1 和 CLIENT1 计算机。
+请按 [模拟企业基础配置](simulated-ent-base-configuration-microsoft-365-enterprise.md)的 **第 1 阶段** 中的说明操作，在名为 TestLab 的 Azure 虚拟网络中配置 DC1、APP1 和 CLIENT1 计算机。
   
 当前配置如下。 
   
@@ -81,7 +81,7 @@ ms.locfileid: "48487644"
 首先，在本地计算机上启动 Azure PowerShell 提示符。
   
 > [!NOTE]
-> 下面的命令集使用最新版 Azure PowerShell。请参阅 [Get started with Azure PowerShell cmdlets](https://docs.microsoft.com/powershell/azureps-cmdlets-docs/)（Azure PowerShell cmdlet 使用入门）。 
+> 下面的命令集使用最新版 Azure PowerShell。请参阅 [Get started with Azure PowerShell cmdlets](/powershell/azureps-cmdlets-docs/)（Azure PowerShell cmdlet 使用入门）。 
   
 使用此命令登录 Azure 帐户。
   
@@ -205,7 +205,7 @@ New-ADReplicationSubnet -Name "192.168.0.0/16" -Site "XPrem"
   
 此时，你的模拟 Azure 混合云环境就可供测试了。
   
-现在，你可以试用 [Microsoft 365 for 企业版](https://www.microsoft.com/microsoft-365/enterprise)的其他功能。
+现在，你已准备好试用 [Microsoft 365 企业版的其他功能](https://www.microsoft.com/microsoft-365/enterprise)。
   
 ## <a name="next-steps"></a>后续步骤
 
@@ -221,4 +221,4 @@ New-ADReplicationSubnet -Name "192.168.0.0/16" -Site "XPrem"
 
 [Microsoft 365 企业版概述](microsoft-365-overview.md)
 
-[适用于企业的 Microsoft 365 文档](https://docs.microsoft.com/microsoft-365-enterprise/)
+[适用于企业的 Microsoft 365 文档](/microsoft-365-enterprise/)

@@ -22,18 +22,18 @@ search.appverid:
 - BCS160
 ms.assetid: c0531a6f-9e25-4f2d-ad0e-a70bfef09ac0
 description: 规划 Office 365 部署时要使用的外部域名系统记录的引用列表。
-ms.openlocfilehash: da5a9a1095e50de779ee2fc148803e31583426a2
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: c2384f1e330692d43c923a7932db4c3ff2bc99ae
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46688130"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50924208"
 ---
 # <a name="external-domain-name-system-records-for-office-365"></a>Office 365 的外部域名系统记录
 
 |||
 |:-----|:-----|
-|![域](../media/e05b1c78-1df0-4200-ba40-6e26b7ead68f.png)|**想要查看 Office 365 组织的 DNS 记录的自定义列表？** 可以在 Office 365 中找到为你的域[创建 Office 365 DNS 记录所需的信息](https://support.office.microsoft.com/article/Gather-the-information-you-need-to-create-Office-365-DNS-records-77f90d4a-dc7f-4f09-8972-c1b03ea85a67)。<br/> **需要在你的域的 DNS 主机（例如 GoDaddy 或 eNom）中添加这些记录的分步帮助？**[查找有关许多热门 DNS 主机的分步说明的链接](https://go.microsoft.com/fwlink/?LinkId=286745)。 <br/>  **是否坚持使用自己自定义部署的引用列表？** 下方的列表应该用作你的自定义 Office 365 部署的引用。需要选择将哪些记录应用于你的组织并填写适当的值。 <br/> **返回到** [Office 365 的网络规划和性能优化](https://aka.ms/tune)。  <br/> |
+|![域](../media/e05b1c78-1df0-4200-ba40-6e26b7ead68f.png)|**想要查看 Office 365 组织的 DNS 记录的自定义列表？** 可以在 Office 365 中找到为你的域 [创建 Office 365 DNS 记录所需的信息](https://support.office.microsoft.com/article/Gather-the-information-you-need-to-create-Office-365-DNS-records-77f90d4a-dc7f-4f09-8972-c1b03ea85a67)。<br/> **需要在你的域的 DNS 主机（例如 GoDaddy 或 eNom）中添加这些记录的分步帮助？**[查找有关许多热门 DNS 主机的分步说明的链接](../admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md)。 <br/>  **是否坚持使用自己自定义部署的引用列表？** 下方的列表应该用作你的自定义 Office 365 部署的引用。需要选择将哪些记录应用于你的组织并填写适当的值。 <br/> **返回到** [Office 365 的网络规划和性能优化](./network-planning-and-performance.md)。  <br/> |
 
 通常最难找出 SPF 和 MX 记录。我们已在本文末尾更新了 SPF 记录指南。请注意，_只能为你的域使用单个 SPF 记录_。可以使用多个 MX 记录；不过，这可能会造成邮件传递问题。使用将电子邮件定向到一个邮件系统的单个 MX 记录会减少很多潜在的问题。
   
@@ -47,8 +47,8 @@ ms.locfileid: "46688130"
 ||||
 |:-----|:-----|:-----|
 |**DNS 记录** <br/> |**用途** <br/> |**要使用的值** <br/> |
-|**CNAME** <br/> **（套件）** <br/> |由 Office 365 用来指导向正确的标识平台进行身份验证。[详细信息](https://go.microsoft.com/fwlink/p/?LinkId=322005) <br/> **注意：** 此 CNAME 仅适用于由世纪互联运营的 Office 365。 [详细信息](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-operated-by-21vianet)  |**别名：** msoid  <br/> **目标：** clientconfig.partner.microsoftonline-p.net.cn  <br/> |
-|**TXT** <br/> **（域验证）** <br/> |由 Office 365 仅用来确你拥有你的域。它不影响其他任何内容。  <br/> |**主机：**@（或者，对于某些 DNS 托管提供程序，为你的域名）  <br/> **TXT 值：**_由 Office 365 提供的文本字符串_  <br/> Office 365 **域设置向导**提供了用于创建此记录的值。  <br/> |
+|**CNAME** <br/> **（套件）** <br/> |由 Office 365 用来指导向正确的标识平台进行身份验证。[详细信息](../admin/services-in-china/purpose-of-cname.md?viewFallbackFrom=o365-worldwide) <br/> **注意：** 此 CNAME 仅适用于由世纪互联运营的 Office 365。 [详细信息](/office365/servicedescriptions/office-365-platform-service-description/office-365-operated-by-21vianet)  |**别名：** msoid  <br/> **目标：** clientconfig.partner.microsoftonline-p.net.cn  <br/> |
+|**TXT** <br/> **（域验证）** <br/> |由 Office 365 仅用来确你拥有你的域。它不影响其他任何内容。  <br/> |**主机：**@（或者，对于某些 DNS 托管提供程序，为你的域名）  <br/> **TXT 值：**_由 Office 365 提供的文本字符串_  <br/> Office 365 **域设置向导** 提供了用于创建此记录的值。  <br/> |
 
 
 ## <a name="external-dns-records-required-for-email-in-office-365-exchange-online"></a>Office 365 (Exchange Online) 中的电子邮件所需的外部 DNS 记录
@@ -56,12 +56,12 @@ ms.locfileid: "46688130"
 
 Office 365 中的电子邮件需要几个不同的记录。所有客户应该使用的三个主要记录为自动发现、MX 和 SPF 记录。
   
-- **自动发现记录**可允许客户端计算机自动查找 Exchange 并正确配置客户端。
+- **自动发现记录** 可允许客户端计算机自动查找 Exchange 并正确配置客户端。
 
-- **MX 记录**告知其他邮件系统向您的域发送电子邮件的位置。**注意：** 当通过更新域的 MX 记录将电子邮件更改为 Office 365 时，发送到该域的所有电子邮件都将开始传送到 Office 365。  
+- **MX 记录** 告知其他邮件系统向您的域发送电子邮件的位置。**注意：** 当通过更新域的 MX 记录将电子邮件更改为 Office 365 时，发送到该域的所有电子邮件都将开始传送到 Office 365。  
 你是否只是想要将几个电子邮件地址切换到 Office 365？ 你可以[通过在自定义域中使用少量电子邮件地址试行 Office 365](https://support.office.com/article/39cee536-6a03-40cf-b9c1-f301bb6001d7)。
 
-- **SPF 的 TXT 记录**由收件人的电子邮件系统用于验证发送电子邮件的服务器是批准的服务器。 这将有助于防止电子邮件欺诈和钓鱼等问题。 请参阅本文中[SPF 所需的外部 DNS 记录](external-domain-name-system-records.md#BKMK_SPFrecords)，帮助了解记录中应包含的内容。
+- **SPF 的 TXT 记录** 由收件人的电子邮件系统用于验证发送电子邮件的服务器是批准的服务器。 这将有助于防止电子邮件欺诈和钓鱼等问题。 请参阅本文中[SPF 所需的外部 DNS 记录](external-domain-name-system-records.md#BKMK_SPFrecords)，帮助了解记录中应包含的内容。
 
 使用 Exchange Federation 的电子邮件客户也将需要使用其他 CNAME 和 TXT 记录（列于表格底部）。
   
@@ -69,7 +69,7 @@ Office 365 中的电子邮件需要几个不同的记录。所有客户应该使
 |:-----|:-----|:-----|
 |**DNS 记录** <br/> |**用途** <br/> |**要使用的值** <br/> |
 |**CNAME** <br/> **(Exchange Online)** <br/> |帮助 Outlook 客户端轻松使用“自动发现”服务连接到 Exchange Online 服务。“自动发现”自动查找正确的 Exchange Server 主机并为用户配置 Outlook。  <br/> |**别名：** Autodiscover  <br/> **目标：** autodiscover.outlook.com  <br/> |
-|**MX** <br/> **(Exchange Online)** <br/> |将域的传入邮件发送到 Office 365 中的 Exchange Online 服务。  <br/> [!NOTE] 电子邮件流向 Exchange Online 后，应该删除指向你的旧版系统的 MX 记录。   |**域：** 例如，contoso.com  <br/> **目标电子邮件服务器：**\<MX token\>.mail.protection.outlook.com  <br/> **首选项/优先级：** 低于其他任何 MX 记录（这会确保将邮件传递到 Exchange Online）- 例如，1 或“低”  <br/>  通过以下步骤找到 \<MX token\>：  <br/>  登录到 Office 365，转到“Office 365 管理员”\>“域”。  <br/>  在你的域的“操作”列中，选择修复问题。  <br/>   在“MX 记录”部分中，选择“修复什么?”  <br/>  按照此页面上的说明来更新你的 MX 记录。  <br/> [什么是 MX 优先级？](https://go.microsoft.com/fwlink/p/?LinkId=396471) <br/> |
+|**MX** <br/> **(Exchange Online)** <br/> |将域的传入邮件发送到 Office 365 中的 Exchange Online 服务。  <br/> [!NOTE] 电子邮件流向 Exchange Online 后，应该删除指向你的旧版系统的 MX 记录。   |**域：** 例如，contoso.com  <br/> **目标电子邮件服务器：**\<MX token\>.mail.protection.outlook.com  <br/> **首选项/优先级：** 低于其他任何 MX 记录（这会确保将邮件传递到 Exchange Online）- 例如，1 或“低”  <br/>  通过以下步骤找到 \<MX token\>：  <br/>  登录到 Office 365，转到“Office 365 管理员”\>“域”。  <br/>  在你的域的“操作”列中，选择修复问题。  <br/>   在“MX 记录”部分中，选择“修复什么?”  <br/>  按照此页面上的说明来更新你的 MX 记录。  <br/> [什么是 MX 优先级？](../admin/setup/domains-faq.yml) <br/> |
 |**SPF (TXT)** <br/> **(Exchange Online)**  <br/> |有助于防止其他人使用您的域发送垃圾邮件或其他恶意电子邮件。发送方策略框架 (SPF) 通过标识有权从您的域发送电子邮件的服务器来记录工作。  <br/> |[SPF 所需的外部 DNS 记录](external-domain-name-system-records.md#BKMK_SPFrecords) <br/> |
 |**TXT** <br/> **（Exchange 联合身份验证）** <br/> |用于混合部署的 Exchange 联合身份验证。  <br/> |**TXT 记录 1：** 例如，contoso.com 和相关自定义生成的域证明哈希文本（例如，Y96nu89138789315669824）  <br/> **TXT 记录 2：** 例如，exchangedelegation.contoso.com 和相关的自定义生成的域证明哈希文本（例如，Y3259071352452626169）  <br/> |
 |**CNAME** <br/> **（Exchange 联合身份验证）** <br/> |当你的公司使用 Exchange 联合身份验证时，帮助 Outlook 客户端轻松使用“自动发现”服务连接到 Exchange Online 服务。“自动发现”自动查找正确的 Exchange Server 主机并为你的用户配置 Outlook。  <br/> |**别名：** 例如，Autodiscover.service.contoso.com  <br/> **目标：** autodiscover.outlook.com  <br/> |
@@ -103,7 +103,7 @@ Office 365 中的电子邮件需要几个不同的记录。所有客户应该使
 <a name="BKMK_SPFrecords"> </a>
 
 > [!IMPORTANT]
->  SPF 旨在帮助防止欺骗，但还有 SPF 无法防止的欺骗技术。为了防止这些欺骗，在你设置 SPF 后，也应该为 Office 365 配置 DKIM 和 DMARC。请参阅[Use DKIM to validate outbound email sent from your domain in Office 365](https://technet.microsoft.com/library/mt695945%28v=exchg.150%29.aspx)，了解入门知识。之后，请参阅[Use DMARC to validate email in Office 365](https://technet.microsoft.com/library/mt734386%28v=exchg.150%29.aspx)。
+>  SPF 旨在帮助防止欺骗，但还有 SPF 无法防止的欺骗技术。为了防止这些欺骗，在你设置 SPF 后，也应该为 Office 365 配置 DKIM 和 DMARC。请参阅[Use DKIM to validate outbound email sent from your domain in Office 365](../security/office-365-security/use-dkim-to-validate-outbound-email.md)，了解入门知识。之后，请参阅[Use DMARC to validate email in Office 365](../security/office-365-security/use-dmarc-to-validate-email.md)。
   
 SPF 记录是有助于防止其他人使用你的域发送垃圾邮件或其他恶意电子邮件的 TXT 记录。发送方策略框架 (SPF) 通过标识有权从你的域发送电子邮件的服务器来记录工作。
   
@@ -125,7 +125,7 @@ Values: v=spf1 include:spf.protection.outlook.com -all
 对于不只针对 Office 365 使用 Exchange Online 电子邮件的应用场景（例如，当你还使用源自 SharePoint Online 的电子邮件时），请使用下表来确定要在记录的值中包括的内容。
   
 > [!NOTE]
-> 如果你拥有一个复杂的应用场景（例如，包括跨防火墙管理电子邮件流量的边缘电子邮件服务器），则需设置一个更为详细的 SPF 记录。了解[如何：在 Office 365 中设置 SPF 记录以帮助预防欺骗](https://go.microsoft.com/fwlink/?LinkId=787656)。也可以阅读 [Office 365 如何使用发件人策略框架来帮助预防欺骗](https://go.microsoft.com/fwlink/?LinkId=787065)，详细了解如何在 Office 365 中使用 SPF。
+> 如果你拥有一个复杂的应用场景（例如，包括跨防火墙管理电子邮件流量的边缘电子邮件服务器），则需设置一个更为详细的 SPF 记录。了解[如何：在 Office 365 中设置 SPF 记录以帮助预防欺骗](../security/office-365-security/set-up-spf-in-office-365-to-help-prevent-spoofing.md)。也可以阅读 [Office 365 如何使用发件人策略框架来帮助预防欺骗](../security/office-365-security/how-office-365-uses-spf-to-prevent-spoofing.md)，详细了解如何在 Office 365 中使用 SPF。
   
 | 数字|如果你使用的是...  <br/> |用途  <br/> |添加以下包含项  <br/> |
 |:-----|:-----|:-----|:-----|
@@ -181,6 +181,6 @@ TXT Name @
 Values: v=spf1 include:spf.protection.outlook.com include:mail.contoso.com -all
 ```
 
-这些是一些常见示例，在你针对电子邮件向 Office 365 添加域时，可以帮助你采用现有 SPF 记录。例如，如果你拥有一个复杂的应用场景，该场景包括跨防火墙管理电子邮件流量的边缘电子邮件服务器，则需设置一个更为详细的 SPF 记录。了解[如何：在 Office 365 中设置 SPF 记录以帮助预防欺骗](https://go.microsoft.com/fwlink/?LinkId=787656)。
+这些是一些常见示例，在你针对电子邮件向 Office 365 添加域时，可以帮助你采用现有 SPF 记录。例如，如果你拥有一个复杂的应用场景，该场景包括跨防火墙管理电子邮件流量的边缘电子邮件服务器，则需设置一个更为详细的 SPF 记录。了解[如何：在 Office 365 中设置 SPF 记录以帮助预防欺骗](../security/office-365-security/set-up-spf-in-office-365-to-help-prevent-spoofing.md)。
   
-以下是可以用于返回的简短链接：[https://aka.ms/o365edns](https://aka.ms/o365edns)
+以下是可以用于返回的简短链接：[https://aka.ms/o365edns]()

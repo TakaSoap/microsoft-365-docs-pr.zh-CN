@@ -12,19 +12,19 @@ f1.keywords:
 ms.custom: seo-marvel-apr2020
 localization_priority: Normal
 ms.collection: Strat_SP_gtc
-description: 了解如何使用 Region 参数配置电子数据展示，以便在 Microsoft 365 多地理位置的附属位置使用。
-ms.openlocfilehash: d1d66a9e7953b540e318c8364bdcb8d72654b482
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+description: 了解如何使用 Region 参数配置电子数据展示以在 Microsoft 365 多地理位置的附属位置使用。
+ms.openlocfilehash: 4d3481fe8b72bb970893ce065293a7a2cc717331
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48636801"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50923716"
 ---
 # <a name="microsoft-365-multi-geo-ediscovery-configuration"></a>Microsoft 365 多地理位置电子数据展示配置
 
-[高级电子数据展示功能](https://docs.microsoft.com/microsoft-365/compliance/overview-ediscovery-20) 允许多地理电子数据展示管理员搜索所有信息，而无需使用 "区域" 安全筛选器。 将数据导出到多地理位置租户的中央位置的 Azure 实例。 
+[高级电子数据展示功能](../compliance/overview-ediscovery-20.md) 允许多地理位置电子数据展示管理员搜索所有地理位置，而无需使用"区域"安全筛选器。 数据将导出到多地理位置租户的中心位置的 Azure 实例。 
 
-如果没有高级电子数据展示功能，则多地理位置租户的电子数据展示管理者或管理员将能够仅在该租户的中心位置执行电子数据展示。 若要支持对附属位置进行电子数据展示的能力，可通过 PowerShell 获取一个新的合规性安全筛选器参数，名为 "Region"。 此参数可由其中心位置在北美、欧洲或亚太地区的租户使用。 对于其中心位置不在北美、欧洲或亚太地区且需要跨卫星地理位置执行电子数据展示的租户，建议使用高级电子数据展示。 
+如果没有高级电子数据展示功能，多地理位置租户的电子数据展示管理员或管理员将只能在该租户的中心位置执行电子数据展示。 为了支持对附属位置执行电子数据展示，可通过 PowerShell 获取名为"Region"的新合规性安全筛选器参数。 其中心位置位于北美、欧洲或亚太地区的租户可以使用此参数。 对于中心位置不在北美、欧洲或亚太地区且需要跨附属地理位置执行电子数据展示的租户，建议使用高级电子数据展示。 
 
 Microsoft 365 全局管理员必须分配电子数据展示管理者权限，以允许其他人员执行电子数据展示，并在其适用的合规性安全筛选器中分配“Region”参数，以便将要进行电子数据展示的区域指定为附属位置，否则，不会对该附属位置执行任何电子数据展示。
 
@@ -37,7 +37,7 @@ Microsoft 365 全局管理员必须分配电子数据展示管理者权限，以
 
 针对区域设置合规性安全筛选器：
 
-1. [连接到 Microsoft 365 安全与合规中心 PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell)
+1. [连接到 Microsoft 365 安全与合规中心 PowerShell](/powershell/exchange/connect-to-scc-powershell)
 
 2. 使用以下语法：
 
@@ -51,4 +51,4 @@ Microsoft 365 全局管理员必须分配电子数据展示管理者权限，以
    New-ComplianceSecurityFilter -Action All -FilterName "NAM eDiscovery Managers" -Region NAM -Users adwood@contoso.onmicrosoft.com
    ```
 
-请参阅 [New-ComplianceSecurityFilter](https://docs.microsoft.com/powershell/module/exchange/new-compliancesecurityfilter) 一文了解其他参数和语法。
+请参阅 [New-ComplianceSecurityFilter](/powershell/module/exchange/new-compliancesecurityfilter) 一文了解其他参数和语法。

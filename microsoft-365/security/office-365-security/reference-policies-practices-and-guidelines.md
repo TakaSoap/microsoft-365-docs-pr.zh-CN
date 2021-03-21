@@ -14,15 +14,15 @@ search.appverid:
 ms.assetid: ff3f140b-b005-445f-bfe0-7bc3f328aaf0
 ms.collection:
 - M365-security-compliance
-description: Microsoft 已制定各种策略、过程，并采用多个行业最佳做法来帮助保护我们的用户免受滥用、不需要或恶意电子邮件的攻击。
+description: Microsoft 已制定各种策略、过程，并采用多个行业最佳做法来帮助保护我们的用户免受滥用、不需要或恶意电子邮件的干扰。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: f53b1c36417b15e366b527dd1c12e4f23c06f632
-ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
+ms.openlocfilehash: 8ed78e4a0f233e8d04fbcfb7d7fa7b3859bc0e17
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "50406592"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50925228"
 ---
 # <a name="reference-policies-practices-and-guidelines"></a>参考：策略、实践和指南
 
@@ -35,7 +35,7 @@ ms.locfileid: "50406592"
 
 Microsoft 致力于在 Web 上提供最可信赖的用户体验。 因此，Microsoft 已开发了多种策略、过程并采用多个行业的最佳实践，以保护我们的用户免受滥用、不必要或恶意的电子邮件的侵扰。 尝试向用户发送电子邮件的发件人应确保他们完全理解并遵循本文中的指导，以帮助进行此工作并帮助避免潜在的传递问题。
 
-如果您不遵从这些策略和指南，我们的支持小组可能无法协助您。 如果您遵循本文中介绍的指南、实践和策略，但基于您的发送 IP 地址仍然遇到传送问题，请按步骤提交除名请求。 有关说明， [请参阅使用除名门户将自己从阻止的发件人列表中删除](use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis.md)。
+如果您不遵从这些策略和指南，我们的支持小组可能无法协助您。 如果您遵循本文中介绍的指南、实践和策略，但基于您的发送 IP 地址仍然遇到传送问题，请按步骤提交除名请求。 有关说明 [，请参阅使用除名门户将自己从阻止的发件人名单中删除](use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis.md)。
 
 ## <a name="general-microsoft-policies"></a>Microsoft 一般性策略
 
@@ -55,7 +55,7 @@ Microsoft 致力于在 Web 上提供最可信赖的用户体验。 因此，Micr
 
 ## <a name="technical-guidelines"></a>技术指南
 
-发送到 Microsoft 365 的电子邮件应遵守以下文档中列出的适用建议 (某些链接仅提供英语) 。
+发送给 Microsoft 365 的电子邮件应遵循以下文档中所列的适用建议 (某些链接仅提供英文版) 。
 
 - [RFC 2505:Anti-Spam Recommendations for SMTP MTAs](https://www.ietf.org/rfc/rfc2505.txt)
 
@@ -83,7 +83,7 @@ Microsoft 致力于在 Web 上提供最可信赖的用户体验。 因此，Micr
 
 ## <a name="microsoft-365-limits"></a>Microsoft 365 限制
 
-发件人必须遵守 Exchange Online Protection 限制中列出的 Microsoft 365 [限制](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-limits)。
+发件人必须遵守 Exchange [Online Protection](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-limits)Limits 中列出的 Microsoft 365 限制。
 
 ## <a name="email-delivery-resources-and-organizations"></a>电子邮件传送资源和组织
 
@@ -91,13 +91,13 @@ Microsoft 积极与行业机构和服务提供商合作，以改善互联网和�
 
 - [信息传送、恶意软件和移动反滥用工作组](https://www.m3aawg.org/)
 
-- [联机信任联盟](https://www.internetsociety.org/ota/)
+- [在线信任联盟](https://www.internetsociety.org/ota/)
 
 - [电子邮件发件人&提供商联盟](https://www.espcoalition.org/)
 
 ## <a name="abuse-and-spam-reporting"></a>滥用和垃圾邮件报告
 
-若要报告非法、滥用、不需要或恶意的电子邮件，请参阅向 Microsoft 报告邮件 [和文件](report-junk-email-messages-to-microsoft.md)。 发送这些类型的通信违反了 Microsoft 策略，将针对已确认的报告采取相应操作。
+若要报告非法、滥用、不需要或恶意的电子邮件，请参阅 [向 Microsoft 报告邮件和文件](report-junk-email-messages-to-microsoft.md)。 发送这些类型的通信违反 Microsoft 策略，将针对已确认的报告采取适当的措施。
 
 ## <a name="law-enforcement"></a>法律执行
 

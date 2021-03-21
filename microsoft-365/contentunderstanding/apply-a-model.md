@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: 了解如何将已发布的模型应用于 SharePoint 文档库
-ms.openlocfilehash: 17da1e37f72504ac5e0e26c0dd190efced08d285
-ms.sourcegitcommit: d354727303d9574991b5a0fd298d2c9414e19f6c
+ms.openlocfilehash: 42168537c8d449a075b5e29ef9905b6b98b8d714
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "50080760"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50925396"
 ---
 # <a name="apply-a-document-understanding-model-in-microsoft-sharepoint-syntex"></a>在 Microsoft SharePoint Syntex 中应用文档理解模型
 
@@ -94,7 +94,7 @@ SharePoint Syntex 文档理解模型或表单处理模型应用于文档库时�
 
    ![分类日期列](../media/content-understanding/class-date-column.png)</br> 
 
-分类日期字段由[<b>“内容理解模型对文件进行分类时”</b>触发器](https://docs.microsoft.com/connectors/sharepointonline/#when-a-file-is-classified-by-a-content-understanding-model)使用，以便在 Syntex 内容理解模型完成处理文件并更新“分类日期”字段后运行 Power Automate 流程。
+分类日期字段由[<b>“内容理解模型对文件进行分类时”</b>触发器](/connectors/sharepointonline/#when-a-file-is-classified-by-a-content-understanding-model)使用，以便在 Syntex 内容理解模型完成处理文件并更新“分类日期”字段后运行 Power Automate 流程。
 
    ![流程触发器](../media/content-understanding/trigger.png)</br>
 
@@ -108,5 +108,3 @@ SharePoint Syntex 文档理解模型或表单处理模型应用于文档库时�
 [创建提取程序](create-an-extractor.md)
 
 [文档理解概述](document-understanding-overview.md)
-
-

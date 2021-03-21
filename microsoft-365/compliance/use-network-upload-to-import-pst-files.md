@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 103f940c-0468-4e1a-b527-cc8ad13a5ea6
 description: 面向管理员：了解如何使用网络上传将多个 PST 文件批量导入 Microsoft 365 中的用户邮箱。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 6248fcb96468ecfbb2b5454e40badc6293770003
-ms.sourcegitcommit: 8950d3cb0f3087be7105e370ed02c7a575d00ec2
+ms.openlocfilehash: b59ffc9d665091a5de1e5e23ab8e32be6d86f1a5
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "50597079"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50925458"
 ---
 # <a name="use-network-upload-to-import-your-organizations-pst-files-to-microsoft-365"></a>使用网络上传将组织的 PST 文件导入到 Microsoft 365
 
@@ -49,7 +49,7 @@ ms.locfileid: "50597079"
 
 ## <a name="before-you-import-pst-files"></a>导入 PST 文件前
   
-- 必须分配有 Exchange Online 中的邮箱导入导出角色，才能将 PST 文件导入到 Microsoft 365 邮箱。 默认情况下，不会向 Exchange Online 中任何角色组分配此角色。 可以向“组织管理”角色组添加“邮箱导入导出”角色。 或者，可以创建一个角色组，分配“邮箱导入导出”角色，然后将自己添加为成员。 有关详细信息，请参阅[管理角色组](https://go.microsoft.com/fwlink/p/?LinkId=730688)中的“向角色组添加角色”或“创建角色组”部分。
+- 必须分配有 Exchange Online 中的邮箱导入导出角色，才能将 PST 文件导入到 Microsoft 365 邮箱。 默认情况下，不会向 Exchange Online 中任何角色组分配此角色。 可以向“组织管理”角色组添加“邮箱导入导出”角色。 或者，可以创建一个角色组，分配“邮箱导入导出”角色，然后将自己添加为成员。 有关详细信息，请参阅[管理角色组](/Exchange/permissions-exo/role-groups)中的“向角色组添加角色”或“创建角色组”部分。
     
     此外，若要在安全与合规中心创建导入作业，必须满足以下条件之一：
     
@@ -233,7 +233,7 @@ Microsoft Azure 存储资源管理器处于预览阶段。
     | `Mailbox` <br/> |指定要将 PST 文件导入到的邮箱的电子邮件地址。 不能指定公用文件夹，因为 PST 导入服务不支持将 PST 文件导入公用文件夹。  <br/> 若要将 PST 文件导入到非活动邮箱，必须为此参数指定邮箱 GUID。 若要获取此 GUID，请在 Exchange Online 中运行以下 PowerShell 命令：`Get-Mailbox <identity of inactive mailbox> -InactiveMailboxOnly | FL Guid` <br/> <br/>**注意：** 有时，你可能有多个邮箱具有相同的电子邮件地址，其中一个邮箱是活动邮箱，另一个邮箱处于软删除（或非活动）状态。 在这种情况下，必须指定邮箱 GUID 来唯一标识要将 PST 文件导入到的邮箱。 若要获取活动邮箱的此 GUID，请运行以下 PowerShell 命令：`Get-Mailbox <identity of active mailbox> | FL Guid`。 若要获取软删除（或非活动）邮箱的 GUID，请运行此命令：`Get-Mailbox <identity of soft-deleted or inactive mailbox> -SoftDeletedMailbox | FL Guid`。  <br/> | `annb@contoso.onmicrosoft.com` <br/> 或  <br/>  `2d7a87fe-d6a2-40cc-8aff-1ebea80d4ae7` <br/> |
     | `IsArchive` <br/> | 指定是否要将 PST 文件导入到用户的存档邮箱。 有两个选项：  <br/><br/>**FALSE：** 将 PST 文件导入到用户的主邮箱。  <br/> **TRUE：** 将 PST 文件导入到用户的存档邮箱。 这是假设[用户的存档邮箱已启用](enable-archive-mailboxes.md)的情况。 <br/><br/>如果将此参数设置为 `TRUE`，但用户的存档邮箱未启用，则针对此用户进行的导入将失败。 如果针对某个用户的导入失败（因为他们的存档邮箱未启用，并且此属性设置为 `TRUE`），导入作业中的其他用户将不会受到影响。  <br/>  如果将此参数留空，PST 文件会导入到用户的主邮箱中。  <br/> <br/>**注意：** 若要针对主邮箱位于本地的某个用户将 PST 文件导入到基于云的存档邮箱，只需将此参数指定为 `TRUE`，并将 `Mailbox` 参数指定为该用户本地邮箱的电子邮件地址。  <br/> | `FALSE` <br/> 或  <br/>  `TRUE` <br/> |
     | `TargetRootFolder` <br/> | 指定要将 PST 文件导入到的邮箱文件夹。  <br/> <br/> 如果将此参数留空，则 PST 文件将被导入到位于邮箱根级别的名为“**导入**”的新文件夹中（与“收件箱”文件夹和其他默认邮箱文件夹属于同一级别）。  <br/> <br/> 如果指定 `/`，会将 PST 文件中的文件夹和邮件导入到目标邮箱或存档中的文件夹结构的顶部。 如果目标邮箱中存在一个文件夹（例如，默认文件夹“收件箱”、“已发送邮件”和“已删除邮件”），则 PST 中该文件夹中的邮件将合并到目标邮箱中的现有文件夹中。 例如，如果 PST 文件包含一个“收件箱”文件夹，则该文件夹中的邮件将导入到目标邮箱中的“收件箱”文件夹中。 如果目标邮箱的文件夹结构中不存在新文件夹，则会创建新文件夹。  <br/><br/>  如果指定 `/<foldername>`，PST 文件中的邮件和文件夹将被导入到名为 *\<foldername\>* 的文件夹中。 例如，如果使用 `/ImportedPst`，项目将被导入到名为 **ImportedPst** 的文件夹中。 此文件夹将位于用户邮箱内，与“收件箱”文件夹属于同一级别。  <br/><br/> **提示：** 请考虑运行几个测试批次来试验此参数，以便确定要将 PST 文件导入到的最佳文件夹位置。  <br/> |（保留为空白）  <br/> 或  <br/>  `/` <br/> 或  <br/>  `/ImportedPst` <br/> |
-    | `ContentCodePage` <br/> |此可选参数指定用于导入 ANSI 文件格式的 PST 文件的代码页的数值。 此参数用于从中国、日本和韩国 (CJK) 组织导入 PST 文件，因为这些语言通常使用双字节字符集 (DBCS) 进行字符编码。 对于为邮箱文件夹名使用 DBCS 的语言，如果此参数未用于导入 PST 文件，则在导入文件后，这些文件夹名通常会混淆。  <br/><br/> 有关要用于此参数的受支持值的列表，请参阅[代码页标识符](https://go.microsoft.com/fwlink/p/?LinkId=328514)。  <br/> <br/>**注意：** 如前所述，这是一个可选参数，不一定非要在 CSV 文件中包含该参数。 或者，你可以包含该参数，并在一行或多行中将其值留空。  <br/> |（保留为空白）  <br/> 或  <br/>  `932`（这是 ANSI/OEM 日语的代码页标识符）  <br/> |
+    | `ContentCodePage` <br/> |此可选参数指定用于导入 ANSI 文件格式的 PST 文件的代码页的数值。 此参数用于从中国、日本和韩国 (CJK) 组织导入 PST 文件，因为这些语言通常使用双字节字符集 (DBCS) 进行字符编码。 对于为邮箱文件夹名使用 DBCS 的语言，如果此参数未用于导入 PST 文件，则在导入文件后，这些文件夹名通常会混淆。  <br/><br/> 有关要用于此参数的受支持值的列表，请参阅[代码页标识符](/windows/win32/intl/code-page-identifiers)。  <br/> <br/>**注意：** 如前所述，这是一个可选参数，不一定非要在 CSV 文件中包含该参数。 或者，你可以包含该参数，并在一行或多行中将其值留空。  <br/> |（保留为空白）  <br/> 或  <br/>  `932`（这是 ANSI/OEM 日语的代码页标识符）  <br/> |
     | `SPFileContainer` <br/> |对于 PST 导入，将该参数留空。  <br/> |不适用  <br/> |
     | `SPManifestContainer` <br/> |对于 PST 导入，将该参数留空。  <br/> |不适用  <br/> |
     | `SPSiteUrl` <br/> |对于 PST 导入，将该参数留空。  <br/> |不适用  <br/> |
@@ -328,7 +328,7 @@ Microsoft Azure 存储资源管理器处于预览阶段。
     
   - 启用[存档邮箱](enable-archive-mailboxes.md)和[自动展开存档](enable-unlimited-archiving.md)，从而向用户提供额外的邮箱存储空间来存储你导入的数据。 
     
-  - 使邮箱处于“[诉讼保留](https://go.microsoft.com/fwlink/?linkid=856286)”状态以保留导入的数据。 
+  - 使邮箱处于“[诉讼保留](./create-a-litigation-hold.md)”状态以保留导入的数据。 
     
   - 使用 Microsoft [电子数据展示工具](search-for-content.md)搜索你导入的数据。 
     
@@ -360,9 +360,9 @@ Microsoft Azure 存储资源管理器处于预览阶段。
 
 - 如前所述，在 PST 文件导入到邮箱之后，Office 365 导入服务将启用保留挂起设置（对于无限期）。 这意味着 *RetentionHoldEnabled* 属性设置为 **True**，因此不会处理分配给该邮箱的保留策略。 这样可以防止某条删除或存档策略将旧邮件删除或存档，让邮箱所有者有时间管理新导入的邮件。 可采用以下步骤来管理此保留挂起： 
     
-    - 一段时间后，可通过运行 **Set-Mailbox -RetentionHoldEnabled $false** 命令来关闭保留挂起。 有关说明，请参阅[将邮箱置于保留挂起](https://go.microsoft.com/fwlink/p/?LinkId=544749)。
+    - 一段时间后，可通过运行 **Set-Mailbox -RetentionHoldEnabled $false** 命令来关闭保留挂起。 有关说明，请参阅[将邮箱置于保留挂起](/exchange/security-and-compliance/messaging-records-management/mailbox-retention-hold)。
     
-   - 可配置保留挂起，使其在将来某一天关闭。 运行 **Set-Mailbox -EndDateForRetentionHold *date*** 命令即可实现此目的。 例如，假设当前日期为 2016 年 6 月 1 日，并希望在 30 天后关闭保留挂起，则可运行以下命令：**Set-Mailbox -EndDateForRetentionHold 7/1/2016**。 在这种情况下，需要将 **RetentionHoldEnabled** 属性设置为 *True*。 有关详细信息，请参阅 [Set-Mailbox](https://go.microsoft.com/fwlink/p/?LinkId=150317)。
+   - 可配置保留挂起，使其在将来某一天关闭。 运行 **Set-Mailbox -EndDateForRetentionHold *date*** 命令即可实现此目的。 例如，假设当前日期为 2016 年 6 月 1 日，并希望在 30 天后关闭保留挂起，则可运行以下命令：**Set-Mailbox -EndDateForRetentionHold 7/1/2016**。 在这种情况下，需要将 **RetentionHoldEnabled** 属性设置为 *True*。 有关详细信息，请参阅 [Set-Mailbox](/powershell/module/exchange/set-mailbox)。
     
    - 可更改分配给邮箱的保留策略的设置，使导入的旧项目不会立即被删除或移到用户的存档邮箱。 例如，可以延长分配给邮箱的删除或存档策略的保留期。 在这种情况下，需要在更改保留策略的设置后关闭邮箱的保留挂起。 有关详细信息，请参阅[为组织中的邮箱设置存档和删除策略](set-up-an-archive-and-deletion-policy-for-mailboxes.md)。
 

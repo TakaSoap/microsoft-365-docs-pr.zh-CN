@@ -16,56 +16,54 @@ search.appverid:
 ms.assetid: a6ef28a4-2447-4b43-aae2-f5af6d53c68e
 description: 了解如何保护用户和设备对 Microsoft 365 数据和服务的访问并防御数据丢失。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 64baa2c9e49a9b24841ec50db3e5592ba3d7d55d
-ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
+ms.openlocfilehash: bd8bbb62bc87ff59594e2fb2a3e21311c2452d9f
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48399021"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50925538"
 ---
 # <a name="protect-user-and-device-access"></a>保护用户和设备的访问权限
 
-保护对 Microsoft 365 数据和服务的访问对于防御 cyberattacks 和防止数据丢失至关重要。 可以将相同的保护应用于环境中的其他 SaaS 应用程序，甚至应用于使用 Azure Active Directory 应用程序代理发布的本地应用程序。
+保护对 Microsoft 365 数据和服务的访问对于防御网络攻击和防止数据丢失至关重要。 相同的保护可应用于环境中的其他 SaaS 应用程序，甚至适用于使用 Azure Active Directory 应用程序代理发布的本地应用程序。
   
-## <a name="step-1-review-recommendations"></a>步骤1：查看建议
+## <a name="step-1-review-recommendations"></a>步骤 1：查看建议
 
 用于保护访问 Office 365 设备、其他 SaaS 服务以及使用 Azure AD 应用代理发布的本地应用的标识和设备的推荐功能。
   
 [PDF](https://go.microsoft.com/fwlink/p/?linkid=841656) | [Visio](https://go.microsoft.com/fwlink/p/?linkid=841657) | [更多语言](https://www.microsoft.com/download/details.aspx?id=55032)
   
-## <a name="step-2-protect-administrator-accounts-and-access"></a>步骤2：保护管理员帐户和访问权限
-用于管理 Microsoft 365 环境的管理帐户包括提升的权限。 这些是黑客和 cyberattackers 的有用目标。 
+## <a name="step-2-protect-administrator-accounts-and-access"></a>步骤 2：保护管理员帐户和访问权限
+用于管理 Microsoft 365 环境的管理帐户包括提升的权限。 这些是黑客和网络攻击的有价值目标。 
 
-首先使用管理员帐户进行管理。 管理员应使用单独的用户帐户进行常规的非管理，并且仅在必要时才使用其管理帐户完成与工作职能相关联的任务。
+首先，仅将管理员帐户用于管理。 管理员应具有单独的用户帐户，用于常规的非管理用途，并且仅在必要时使用其管理帐户来完成与其工作职能相关联的任务。
 
-使用多重身份验证和条件访问来保护您的管理员帐户。 有关详细信息，请参阅 [保护管理员帐户](https://docs.microsoft.com/microsoft-365/enterprise/identity-access-prerequisites#protecting-administrator-accounts)。 
+使用多重身份验证和条件访问保护管理员帐户。 有关详细信息，请参阅 [保护管理员帐户](../security/office-365-security/identity-access-prerequisites.md#protecting-administrator-accounts)。 
 
-接下来，在 Office 365 中配置特权访问管理。 特权访问管理允许对 Office 365 中的特权管理任务进行精确的访问控制。 它可以帮助保护您的组织免受可能使用现有特权管理员帐户访问敏感数据或访问关键配置设置的访问的危害。
+接下来，在 Office 365 中配置特权访问管理。 Privileged access management allows granular access control over privileged admin tasks in Office 365. 它可以帮助保护组织免受可能使用现有特权管理员帐户（长期访问敏感数据或访问关键配置设置）的泄露。
 
 - [特权访问管理概述](privileged-access-management-overview.md)
 - [配置特权访问管理](privileged-access-management-configuration.md)
 
-另一个主要建议是使用专为管理工作配置的工作站。 这些是仅用于管理任务的专用设备。 请参阅 [保护特权访问](https://docs.microsoft.com/windows-server/identity/securing-privileged-access/securing-privileged-access)。
+另一个首要建议是使用专为管理工作配置的工作站。 这些是仅用于管理任务的专用设备。 请参阅 [保护特权访问](/windows-server/identity/securing-privileged-access/securing-privileged-access)。
 
-最后，您可以通过在租户中创建两个或多个紧急访问帐户来缓解无意中缺少管理访问权限造成的影响。 请参阅 [管理 AZURE AD 中的紧急访问帐户](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-emergency-access)。 
+最后，可以通过在租户中创建两个或多个紧急访问帐户来缓解意外缺少管理访问的影响。 请参阅 [在 Azure AD 中管理紧急访问帐户](/azure/active-directory/users-groups-roles/directory-emergency-access)。 
 
-## <a name="step-3-configure-recommended-identity-and-device-access-policies"></a>步骤3：配置推荐的标识和设备访问策略
-多重身份验证 (MFA) 和条件访问策略是强大的工具，可缓解受到损坏的帐户和未经授权的访问。 我们建议实现一组已经过测试的策略。 有关详细信息（包括部署步骤），请参阅 [Identity and device access 配置](../security/office-365-security/microsoft-365-policies-configurations.md)。
+## <a name="step-3-configure-recommended-identity-and-device-access-policies"></a>步骤 3：配置推荐的标识和设备访问策略
+MFA (和) 访问策略的多重身份验证是抵御帐户损坏和未授权访问的强大工具。 我们建议实现一组已一起测试的策略。 有关详细信息（包括部署步骤，请参阅 [标识和设备访问配置](../security/office-365-security/microsoft-365-policies-configurations.md)）。
 
  这些策略实现以下功能：
-- 多身份验证
+- 多重身份验证
 - 条件访问
-- Intune 应用保护 (设备的应用和数据保护) 
+- Intune 应用 (应用和数据保护功能，适用于) 
 - Intune 设备合规性
 - Azure AD Identity Protection
 
-实施 Intune 设备合规性需要设备注册。 管理设备使您能够在允许用户访问您的环境中的资源之前确保它们的健康和合规性。 请参阅 [在 Intune 中注册设备以进行管理](https://docs.microsoft.com/intune-classic/deploy-use/enroll-devices-in-microsoft-intune)
+实现 Intune 设备合规性需要设备注册。 通过管理设备，可以确保设备正常运行且合规，然后再允许它们访问环境中的资源。 请参阅 [在 Intune 中注册设备以管理](/intune-classic/deploy-use/enroll-devices-in-microsoft-intune)
 
-## <a name="step-4-configure-sharepoint-device-access-policies"></a>步骤4：配置 SharePoint 设备访问策略
+## <a name="step-4-configure-sharepoint-device-access-policies"></a>步骤 4：配置 SharePoint 设备访问策略
 
-Microsoft 建议使用设备访问控制保护 SharePoint 网站中的内容与敏感和高度管控的内容。 有关详细信息，请参阅 [保护 SharePoint 网站和文件的策略建议](../security/office-365-security/sharepoint-file-access-policies.md)。
+Microsoft 建议通过设备访问控制使用敏感和高度管控的内容保护 SharePoint 网站中的内容。 有关详细信息，请参阅用于保护 [SharePoint 网站和文件的策略建议](../security/office-365-security/sharepoint-file-access-policies.md)。
 
 
-
-    
 

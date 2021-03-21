@@ -16,31 +16,31 @@ f1.keywords:
 ms.custom: seo-marvel-apr2020
 ms.assetid: c28de4a5-1e8e-4491-9421-af066cde7cdd
 description: 了解如何使用 PowerShell 执行 Internet 邮件访问协议 (IMAP) 迁移到 Microsoft 365。
-ms.openlocfilehash: 67621ecfca7ec323a73b91a530f848dd7571f9b2
-ms.sourcegitcommit: bcb88a6171f9e7bdb5b2d8c03cd628d11c5e7bbf
+ms.openlocfilehash: fbfc0340e80ce70aa8a706d89a4d27729b91535b
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48464440"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50924764"
 ---
 # <a name="use-powershell-to-perform-an-imap-migration-to-microsoft-365"></a>使用 PowerShell 将 IMAP 迁移到 Microsoft 365
 
-*此文章适用于 Microsoft 365 企业版和 Office 365 企业版。* 
+*本文适用于 Microsoft 365 企业版和 Office 365 企业版。*
 
-作为部署 Microsoft 365 的过程的一部分，您可以选择将用户邮箱的内容从 Internet 邮件访问协议 (IMAP) email service 迁移到 Microsoft 365。 本文将向您介绍如何通过 Exchange Online PowerShell 执行电子邮件 IMAP 迁移的任务。 
+作为 Microsoft 365 部署过程的一部分，可以选择将 Internet 邮件访问协议 (IMAP) 电子邮件服务中的用户邮箱内容迁移到 Microsoft 365。 本文将向您介绍如何通过 Exchange Online PowerShell 执行电子邮件 IMAP 迁移的任务。 
   
 > [!NOTE]
-> 您还可以使用 Exchange 管理中心来执行 IMAP 迁移。 请参阅 [迁移 IMAP 邮箱](https://go.microsoft.com/fwlink/p/?LinkId=536685)。 
+> 您还可以使用 Exchange 管理中心来执行 IMAP 迁移。 请参阅 [迁移 IMAP 邮箱](/Exchange/mailbox-migration/migrating-imap-mailboxes/migrating-imap-mailboxes)。 
   
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>在开始之前，您需要知道什么？
 
-估计完成该任务的时间：2-5 分钟，用于创建迁移批处理。 迁移批处理启动后，迁移的持续时间会有所不同，具体取决于批处理中邮箱的数量、每个邮箱的大小和可用网络容量。 有关影响将邮箱迁移到 Microsoft 365 所需时间的其他因素的信息，请参阅 [迁移性能](https://go.microsoft.com/fwlink/p/?LinkId=275079)。
+估计完成该任务的时间：2-5 分钟，用于创建迁移批处理。 迁移批处理启动后，迁移的持续时间会有所不同，具体取决于批处理中邮箱的数量、每个邮箱的大小和可用网络容量。 有关影响将邮箱迁移到 Microsoft 365 所花的时间的其他因素的信息，请参阅迁移 [性能](/Exchange/mailbox-migration/office-365-migration-best-practices)。
   
-你必须先获得权限，然后才能执行此过程。要查看你需要哪些权限，请参阅[收件人权限](https://go.microsoft.com/fwlink/p/?LinkId=534105)主题的一个表中的"迁移"条目。
+你必须先获得权限，然后才能执行此过程。要查看你需要哪些权限，请参阅[收件人权限](/exchange/recipients-permissions-exchange-2013-help)主题的一个表中的"迁移"条目。
   
-若要使用 Exchange Online PowerShell cmdlet，你需要登录并将 cmdlet 导入你的本地 Windows PowerShell 会话。有关说明，请参阅[使用远程 PowerShell 连接到 Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=534121)。
+若要使用 Exchange Online PowerShell cmdlet，你需要登录并将 cmdlet 导入你的本地 Windows PowerShell 会话。有关说明，请参阅[使用远程 PowerShell 连接到 Exchange Online](/powershell/exchange/connect-to-exchange-online-powershell)。
   
-有关迁移命令的完整列表，请参阅[移动和迁移 cmdlet](https://go.microsoft.com/fwlink/p/?LinkId=534750)。
+有关迁移命令的完整列表，请参阅[移动和迁移 cmdlet](/powershell/exchange/)。
   
 以下限制适用于 IMAP 迁移：
   
@@ -55,19 +55,19 @@ ms.locfileid: "48464440"
 ### <a name="step-1-prepare-for-an-imap-migration"></a>步骤 1：准备 IMAP 迁移
 <a name="BK_Step1"> </a>
 
-- **如果你有 IMAP 组织的域，请将其添加为 Microsoft 365 组织的接受域。** 如果要对 Microsoft 365 邮箱使用已拥有的相同域，首先必须将其作为接受域添加到 Microsoft 365。 添加后，可以在 Microsoft 365 中创建用户。 有关详细信息，请参阅[验证您的域](https://go.microsoft.com/fwlink/p/?LinkId=534110)。
+- **如果你有 IMAP 组织的域，请将其添加为 Microsoft 365 组织的接受域。** 如果要对 Microsoft 365 邮箱使用已拥有的同一域，首先必须将其添加为 Microsoft 365 接受域。 添加后，可以在 Microsoft 365 中创建用户。 有关详细信息，请参阅验证[域](../admin/setup/add-domain.md)。
     
-- **将每个用户添加到 Microsoft 365，使其具有邮箱。** 有关说明，请参阅[向 Microsoft 365 for Business 添加用户](https://go.microsoft.com/fwlink/p/?LinkId=535065)。
+- **将每个用户添加到 Microsoft 365，以便他们拥有一个邮箱。** 有关说明，请参阅[将用户添加到 Microsoft 365 商业版](../admin/add-users/add-users.md)。
     
 - **获取 IMAP 服务器的 FQDN**。在创建 IMAP 迁移终结点时，你需要提供从中迁移邮箱数据的 IMAP 服务器的完全限定域名 (FQDN)（也称为完整的计算机名称）。可使用 IMAP 客户端或 PING 命令来验证你能否使用此 FQDN 通过 Internet 与 IMAP 服务器进行通信。
     
-- **配置防火墙以允许 IMAP 连接**。你可能必须打开托管 IMAP 服务器的组织的防火墙中的端口，以便于迁移期间来自 Microsoft 数据中心的网络通信被允许进入托管 IMAP 服务器的组织。有关 Microsoft 数据中心使用的 IP 地址列表，请参阅 [Exchange Online URL 和 IP 地址范围](https://go.microsoft.com/fwlink/p/?LinkId=535066)。
+- **配置防火墙以允许 IMAP 连接**。你可能必须打开托管 IMAP 服务器的组织的防火墙中的端口，以便于迁移期间来自 Microsoft 数据中心的网络通信被允许进入托管 IMAP 服务器的组织。有关 Microsoft 数据中心使用的 IP 地址列表，请参阅 [Exchange Online URL 和 IP 地址范围](./urls-and-ip-address-ranges.md)。
     
 - **分配管理员帐户权限以访问 IMAP 组织中的邮箱**。如果你在 CSV 文件中使用管理员凭据，则你使用的帐户必须具有必要的权限才能访问内部部署邮箱。访问用户邮箱所需的权限将由特定的 IMAP 服务器决定。 
     
-- **要使用 Exchange Online PowerShell cmdlet**，你需要登录并将 cmdlet 导入到你的本机 Windows PowerShell 会话。有关说明，请参阅[使用远程 PowerShell 连接到 Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=534121)。
+- **要使用 Exchange Online PowerShell cmdlet**，你需要登录并将 cmdlet 导入到你的本机 Windows PowerShell 会话。有关说明，请参阅 [使用远程 PowerShell 连接到 Exchange Online](/powershell/exchange/connect-to-exchange-online-powershell)。
     
-    有关迁移命令的完整列表，请参阅[移动和迁移 cmdlet](https://go.microsoft.com/fwlink/p/?LinkId=534750)。
+    有关迁移命令的完整列表，请参阅[移动和迁移 cmdlet](/powershell/exchange/)。
     
 - **验证你是否可以连接到 IMAP 服务器**。在 Exchange Online PowerShell 中运行以下命令以测试到 IMAP 服务器的连接设置。
     
@@ -103,7 +103,7 @@ paulc@contoso.edu,paul.cannon,3281986
   
  **Microsoft Exchange：**
   
-如果你正在从 Microsoft Exchange 的 IMAP 实施迁移电子邮件，请在 CSV 文件中为 **UserName** 属性使用格式 **Domain/Admin_UserName/User_UserName** 。 假设你正在从 Exchange 迁移 Terry Adams、Ann Beebe 和 Paul Cannon 的电子邮件。 您有一个邮件管理员帐户，其中用户名是 **mailadmin** ，密码是 **P \@ ssw0rd**。 您的 CSV 文件应如下所示：
+如果你正在从 Microsoft Exchange 的 IMAP 实施迁移电子邮件，请在 CSV 文件中为 **UserName** 属性使用格式 **Domain/Admin_UserName/User_UserName** 。 假设你正在从 Exchange 迁移 Terry Adams、Ann Beebe 和 Paul Cannon 的电子邮件。 你有一个邮件管理员帐户，其中用户名是 **mailadmin，** 密码是 **P \@ ssw0rd**。 您的 CSV 文件应如下所示：
   
 ```powershell
 EmailAddress,UserName,Password
@@ -114,7 +114,7 @@ paulc@contoso.edu,contoso-students/mailadmin/paul.cannon,P@ssw0rd
 
  **Dovecot：**
   
-对于支持简单身份验证和安全层 (SASL) 的 IMAP 服务器（如 Dovecot IMAP 服务器），使用格式 **User_UserName*Admin_UserName** ，其中星号 ( * ) 为可配置的分隔符。 假设您要使用管理员凭据 **mailadmin** 和 **P \@ ssw0rd**从 Dovecot IMAP 服务器迁移这些相同的用户电子邮件。 您的 CSV 文件应如下所示：
+对于支持简单身份验证和安全层 (SASL) 的 IMAP 服务器（如 Dovecot IMAP 服务器），使用格式 **User_UserName*Admin_UserName** ，其中星号 ( * ) 为可配置的分隔符。 假设您使用管理员凭据 **mailadmin** 和 **P \@ ssw0rd** 从 Dovecot IMAP 服务器迁移这些相同用户的电子邮件。 您的 CSV 文件应如下所示：
   
 ```powershell
 EmailAddress,UserName,Password
@@ -125,7 +125,7 @@ paulc@contoso.edu,paul.cannon*mailadmin,P@ssw0rd
 
  **Mirapoint：**
   
-如果要从 Mirapoint 邮件服务器迁移电子邮件，请使用 " **#user \@ 域 # Admin_UserName #** " 的格式，以获取管理员凭据。 若要使用管理员凭据 **mailadmin** 和 **P \@ ssw0rd**从 Mirapoint 迁移电子邮件，您的 CSV 文件将如下所示：
+如果要从 Mirapoint 邮件服务器迁移电子邮件，请使用 #user **\@ domain#Admin_UserName#** 格式作为管理员凭据。 若要使用管理员凭据 **mailadmin** 和 **P \@ ssw0rd** 从 Mirapoint 迁移电子邮件，您的 CSV 文件将如下所示：
   
 ```powershell
 EmailAddress,UserName,Password
@@ -136,7 +136,7 @@ paulc@contoso.edu,#paul.cannon@contoso-students.edu#mailadmin#,P@ssw0rd
 
  **Courier IMAP：**
   
-一些源电子邮件系统（如 "宋体"）不支持使用邮箱管理员凭据将邮箱迁移到 Microsoft 365。 相反，您可以将源电子邮件系统设置为使用虚拟共享文件夹。 通过使用虚拟共享文件夹，您可以使用邮箱管理员凭据来访问源电子邮件系统上的用户邮箱。 有关如何配置 Courier IMAP 的虚拟共享文件夹的详细信息，请参阅[共享文件夹](https://go.microsoft.com/fwlink/p/?LinkId=398870)。
+一些源电子邮件系统（如 Courier IMAP）不支持使用邮箱管理员凭据将邮箱迁移到 Microsoft 365。 相反，您可以将源电子邮件系统设置为使用虚拟共享文件夹。 通过使用虚拟共享文件夹，您可以使用邮箱管理员凭据来访问源电子邮件系统上的用户邮箱。 有关如何配置 Courier IMAP 的虚拟共享文件夹的详细信息，请参阅[共享文件夹](https://go.microsoft.com/fwlink/p/?LinkId=398870)。
   
 若要在源电子邮件系统上设置虚拟共享文件夹后迁移邮箱，你必须将可选的 **UserRoot** 属性包含在迁移文件中。此属性可指定每个用户的邮箱在源电子邮件系统上的虚拟共享文件夹结构中所处的位置。例如，指向 Terry 的邮箱的路径是 /users/terry.adams。
   
@@ -152,9 +152,9 @@ paulc@contoso.edu,mailadmin,P@ssw0rd,/users/paul.cannon
 ### <a name="step-3-create-an-imap-migration-endpoint"></a>步骤 3：创建 IMAP 迁移终结点
 <a name="BK_Step3"> </a>
 
-若要成功迁移电子邮件，Microsoft 365 需要连接到源电子邮件系统并与之通信。 为此，Microsoft 365 使用迁移终结点。 迁移终结点还定义同时迁移的邮箱数和每 24 小时执行一次的增量同步过程中同时同步的邮箱数。 要创建用于 IMAP 迁移的迁移终结点，首先[连接到 Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=534121)。 
+若要成功迁移电子邮件，Microsoft 365 需要与源电子邮件系统连接并进行通信。 为此，Microsoft 365 使用迁移终结点。 迁移终结点还定义同时迁移的邮箱数和每 24 小时执行一次的增量同步过程中同时同步的邮箱数。 要创建用于 IMAP 迁移的迁移终结点，首先[连接到 Exchange Online](/powershell/exchange/connect-to-exchange-online-powershell)。 
   
-有关迁移命令的完整列表，请参阅[移动和迁移 cmdlet](https://go.microsoft.com/fwlink/p/?LinkId=534750)。
+有关迁移命令的完整列表，请参阅[移动和迁移 cmdlet](/powershell/exchange/)。
   
 要在 Exchange Online PowerShell 中创建名为“IMAPEndpoint”的 IMAP 迁移终结点，运行以下命令：
   
@@ -170,7 +170,7 @@ New-MigrationEndpoint -IMAP -Name IMAPEndpoint -RemoteServer imap.contoso.com -P
 50 -MaxConcurrentIncrementalSyncs 25
 ```
 
-有关 **New-MigrationEndpoint** cmdlet 的详细信息，请参阅[New-MigrationEndpoint](https://go.microsoft.com/fwlink/p/?LinkId=536437)。
+有关 **New-MigrationEndpoint** cmdlet 的详细信息，请参阅 [New-MigrationEndpoint](/powershell/module/exchange/new-migrationendpoint)。
   
 #### <a name="verify-it-worked"></a>验证它是否起作用
 
@@ -183,7 +183,7 @@ Get-MigrationEndpoint IMAPEndpoint | Format-List EndpointType,RemoteServer,Port,
 ### <a name="step-4-create-and-start-an-imap-migration-batch"></a>步骤 4：创建并启动 IMAP 迁移批处理
 <a name="BK_Step4"> </a>
 
-你可以使用 [New-MigrationBatch](https://go.microsoft.com/fwlink/p/?LinkId=536439) cmdlet 为 IMAP 迁移创建迁移批处理。你可以通过包括 _AutoStart_ 参数来创建迁移批处理并自动启动。或者，你可以创建迁移批处理，然后通过使用[Start-MigrationBatch](https://go.microsoft.com/fwlink/p/?LinkId=536440) cmdlet 启动它。
+你可以使用 [New-MigrationBatch](/powershell/module/exchange/new-migrationbatch) cmdlet 为 IMAP 迁移创建迁移批处理。你可以通过包括 _AutoStart_ 参数来创建迁移批处理并自动启动。或者，你可以创建迁移批处理，然后通过使用 [Start-MigrationBatch](/powershell/module/exchange/start-migrationbatch) cmdlet 启动它。
   
 以下 Exchange Online PowerShell 命令会自动使用名为“IMAPEndpoint”的 IMAP 终结点来启动名为“IMAPBatch1”的迁移批处理。
   
@@ -193,7 +193,7 @@ New-MigrationBatch -Name IMAPBatch1 -SourceEndpoint IMAPEndpoint -CSVData ([Syst
 
 #### <a name="verify-it-worked"></a>验证它是否起作用
 
-运行 [Get-MigrationBatch](https://go.microsoft.com/fwlink/p/?LinkId=536441) cmdlet 以显示有关"IMAPBatch1"的信息：
+运行 [Get-MigrationBatch](/powershell/module/exchange/get-migrationbatch) cmdlet 以显示有关"IMAPBatch1"的信息：
   
 ```powershell
 Get-MigrationBatch -Identity IMAPBatch1 | Format-List
@@ -205,10 +205,10 @@ Get-MigrationBatch -Identity IMAPBatch1 | Format-List
 Get-MigrationBatch -Identity IMAPBatch1 | Format-List Status
 ```
 
-### <a name="step-5-route-your-email-to-microsoft-365"></a>第5步：将电子邮件路由到 Microsoft 365
+### <a name="step-5-route-your-email-to-microsoft-365"></a>步骤 5：将电子邮件路由到 Microsoft 365
 <a name="BK_Step5"> </a>
 
-电子邮件系统使用称为 MX 记录的 DNS 记录来查明电子邮件的传递位置。 在电子邮件迁移过程中，MX 记录指向您的源电子邮件系统。 现在已完成将电子邮件迁移到 Microsoft 365，现在是时候将 MX 记录指向 Microsoft 365 了。 这有助于确保将电子邮件传递到 Microsoft 365 邮箱。 通过移动 MX 记录，您还可以在准备就绪的时候关闭旧的电子邮件系统。 
+电子邮件系统使用称为 MX 记录的 DNS 记录来查明电子邮件的传递位置。 在电子邮件迁移过程中，MX 记录指向您的源电子邮件系统。 至 Microsoft 365 的电子邮件迁移已完成，现在可以将 MX 记录指向 Microsoft 365。 这可帮助确保电子邮件已传递到 Microsoft 365 邮箱。 通过移动 MX 记录，您还可以在准备就绪的时候关闭旧的电子邮件系统。 
   
 对于很多 DNS 提供商而言，更改您的 MX 记录需要遵循特定的说明。 如果您的 DNS 提供商不包括在内或您要获取统一指导，我们也会提供 [MX 记录的统一说明](https://go.microsoft.com/fwlink/?LinkId=397449)。
   
@@ -217,11 +217,11 @@ Get-MigrationBatch -Identity IMAPBatch1 | Format-List Status
 ### <a name="step-6-delete-imap-migration-batch"></a>步骤 6：删除 IMAP 迁移批处理
 <a name="BK_Step6"> </a>
 
-在更改 MX 记录并确认所有电子邮件都路由到 Microsoft 365 邮箱后，请通知用户其邮件将转到 Microsoft 365。 此后，您可以删除 IMAP 迁移批处理。 在删除迁移批处理之前验证以下内容。
+更改 MX 记录并验证所有电子邮件是否路由到 Microsoft 365 邮箱后，通知用户他们的邮件将发送到 Microsoft 365。 此后，您可以删除 IMAP 迁移批处理。 在删除迁移批处理之前验证以下内容。
   
-- 所有用户都在使用 Microsoft 365 邮箱。 删除批处理后，发送到内部部署 Exchange 服务器上的邮箱的邮件不会复制到相应的 Microsoft 365 邮箱中。
+- 所有用户都使用 Microsoft 365 邮箱。 删除批处理后，发送到本地邮箱Exchange Server不会复制到相应的 Microsoft 365 邮箱。
     
-- 将邮件直接发送给这些邮箱后，至少已同步一次 Microsoft 365 邮箱。 为此，请确保迁移批处理的 "上次同步时间" 框中的值比直接将邮件路由到 Microsoft 365 邮箱的时间更新。
+- 在邮件开始直接发送到 Microsoft 365 邮箱后，至少同步一次。 为此，请确保迁移批处理的"上次同步时间"框中的值比邮件开始直接路由到 Microsoft 365 邮箱时更新。
     
 要从 Exchange Online PowerShell 中删除“IMAPBatch1”迁移批处理，请运行以下命令：
   
@@ -229,7 +229,7 @@ Get-MigrationBatch -Identity IMAPBatch1 | Format-List Status
 Remove-MigrationBatch -Identity IMAPBatch1
 ```
 
-有关 **Remove-MigrationBatch** cmdlet 的详细信息，请参阅[Remove-MigrationBatch](https://go.microsoft.com/fwlink/p/?LinkId=536481)。
+有关 **Remove-MigrationBatch** cmdlet 的详细信息，请参阅 [Remove-MigrationBatch](/powershell/module/exchange/remove-migrationbatch)。
   
 #### <a name="verify-it-worked"></a>验证它是否起作用
 
@@ -241,9 +241,8 @@ Get-MigrationBatch IMAPBatch1"
 
 此命令会返回状态为 **Removing** 的迁移批处理或返回错误消息，指出未找到该迁移批处理，验证该批处理已删除。
   
-有关 **Get-MigrationBatch** cmdlet 的详细信息，请参阅[Get-MigrationBatch](https://go.microsoft.com/fwlink/p/?LinkId=536441)。
+有关 **Get-MigrationBatch** cmdlet 的详细信息，请参阅 [Get-MigrationBatch](/powershell/module/exchange/get-migrationbatch)。
   
 ## <a name="see-also"></a>另请参阅
 
-[IMAP 迁移故障排除程序](https://go.microsoft.com/fwlink/p/?LinkId=536482)
-
+[IMAP 迁移故障排除程序](/exchange/troubleshoot/move-or-migrate-mailboxes/troubleshoot-issues-with-imap-mailbox-migration)

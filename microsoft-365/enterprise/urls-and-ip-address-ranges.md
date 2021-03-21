@@ -24,12 +24,12 @@ search.appverid:
 ms.assetid: 8548a211-3fe7-47cb-abb1-355ea5aa88a2
 description: 摘要：Office 365 需要连接到 Internet。对于使用 Office 365 计划（包括政府社区云 (GCC)）的客户，应该可以访问以下终结点。
 hideEdit: true
-ms.openlocfilehash: 826da75ea4f6991a3291e8b1e36d644fb19a7704
-ms.sourcegitcommit: 8950d3cb0f3087be7105e370ed02c7a575d00ec2
+ms.openlocfilehash: 1c0a2a486bf6964edc9b94fd670c96ade161cacd
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "50596952"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50925264"
 ---
 # <a name="office-365-urls-and-ip-address-ranges"></a>Office 365 URL 和 IP 地址范围
 
@@ -69,9 +69,9 @@ Office 365 需要连接到 Internet。对于使用 Office 365 计划（包括政
 
 [管理 Office 365 终结点](managing-office-365-endpoints.md)
 
-[通用 Microsoft Stream 终结点](https://docs.microsoft.com/stream/network-overview#general-microsoft-stream-endpoints)
+[通用 Microsoft Stream 终结点](/stream/network-overview#general-microsoft-stream-endpoints)
   
-[监视 Microsoft 365 连接性](https://docs.microsoft.com/microsoft-365/enterprise/monitor-connectivity)
+[监视 Microsoft 365 连接性](./monitor-connectivity.md)
 
 [第三方应用程序系统中的根 CA 和中级 CA 捆绑](../compliance/encryption-office-365-certificate-chains.md)
   

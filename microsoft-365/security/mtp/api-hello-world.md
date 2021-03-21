@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 66afa27d0fa7a092d3f9e9ed6c3b6abc6020cb8d
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 65319d46871282c454287af225647f89e3535c78
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49928374"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50924334"
 ---
 # <a name="hello-world-for-microsoft-365-defender-rest-api"></a>Microsoft 365 Defender REST API 的 Hello World
 
@@ -44,49 +44,49 @@ ms.locfileid: "49928374"
 
 ### <a name="register-an-app-in-azure-active-directory"></a>在 Azure Active Directory 中注册应用
 
-1. 以具有 [全局管理员](https://portal.azure.com)角色的用户登录 **Azure。**
+1. 以具有全局管理员角色的用户 **登录** [Azure。](https://portal.azure.com)
 
 2. 导航到 **Azure Active Directory**  >  **应用注册**  >  **新注册**。
 
-   ![Microsoft Azure 的图像和到应用程序注册的导航](../../media/atp-azure-new-app2.png)
+   ![Microsoft Azure 的图像和应用程序注册导航](../../media/atp-azure-new-app2.png)
 
 3. 在注册表单中，选择应用程序的名称，然后选择"注册 **"。** 选择重定向 URI 是可选的。 完成此示例不需要一个。
 
-4. 在应用程序页面上，选择 **"API** 权限添加我的组织使用> API，键入 Microsoft 威胁防护，然后选择  >    >  Microsoft **威胁防护**。  你的应用现在可以访问 Microsoft 365 Defender。
+4. 在应用程序页面上，选择 **"API** 权限""添加我的组织使用>  >    >   API"，键入 **"Microsoft 威胁** 防护"，然后选择 **"Microsoft 威胁防护"。** 你的应用现在可以访问 Microsoft 365 Defender。
 
    > [!TIP]
    > *Microsoft 威胁防护* 是 Microsoft 365 Defender 的以前名称，不会显示在原始列表中。 你需要开始在文本框中写入其名称，以查看其显示。
    ![API 权限选择的图像](../../media/apis-in-my-org-tab.PNG)
 
-   - 选择 **"应用程序权限**  >  **Incident.Read.All"，** 然后选择 **"添加权限"。**
+   - 选择 **"应用程序权限**  >  **""Incident.Read.All"，** 然后选择"**添加权限"。**
 
    ![API 访问和 API 选择的图像](../../media/request-api-permissions.PNG)
 
-5. 选择 **"授予管理员同意"。** 每次添加权限时，都必须选择"授予 **管理员同意** "，它才能生效。
+5. 选择 **"授予管理员同意"。** 每次添加权限时，都必须选择"授予管理员 **同意** ，让权限生效"。
 
     ![授予权限的图像](../../media/grant-consent.PNG)
 
-6. 向应用程序添加密码。 选择 **证书&** 密码，向密码添加说明，然后选择"**添加"。**
+6. 向应用程序添加密码。 选择 **"&** 密码"，向密码添加说明，然后选择"添加 **"。**
 
     > [!TIP]
-    > 选择"添加 **"** 后， **选择复制生成的密码值**。 离开后将无法检索密码值。
+    > 选择"添加 **"后**，**选择"复制生成的机密值"。** 离开后将无法检索密码值。
 
     ![创建应用密钥的图像](../../media/webapp-create-key2.png)
 
-7. 将应用程序 ID 和租户 ID 记录在安全位置。 它们列在应用程序 **页上的"** 概述"下。
+7. 在安全的地方记录应用程序 ID 和租户 ID。 它们列在应用程序 **页面上的"** 概述"下。
 
    ![已创建应用 ID 的图像](../../media/app-and-tenant-ids.png)
 
-### <a name="get-a-token-using-the-app-and-use-the-token-to-access-the-api"></a>使用应用获取令牌并使用令牌访问 API
+### <a name="get-a-token-using-the-app-and-use-the-token-to-access-the-api"></a>使用应用获取令牌，并使用令牌访问 API
 
-有关 Azure Active Directory 令牌详细信息，请参阅 [Azure AD 教程](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds)。
+有关 Azure Active Directory 令牌详细信息，请参阅 [Azure AD 教程](/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds)。
 
 > [!IMPORTANT]
-> 尽管此演示应用中的示例鼓励你粘贴密码值以进行测试，但绝不应硬编码密码到生产中运行的应用程序。 第三方可以使用你的密码访问资源。 通过使用 Azure 密钥保管库，可帮助保护 [应用密钥的安全](https://docs.microsoft.com/azure/key-vault/general/about-keys-secrets-certificates)。 有关如何保护应用的实际示例，请参阅使用 Azure Key Vault 管理服务器 [应用中的密钥](https://docs.microsoft.com/learn/modules/manage-secrets-with-azure-key-vault/)。
+> 尽管此演示应用中的示例鼓励你为了测试目的粘贴密码值，但不应将密码硬编码为在生产中运行的应用程序。 第三方可以使用你的密码访问资源。 通过使用 Azure 密钥保管库，可帮助保护 [应用密钥的安全](/azure/key-vault/general/about-keys-secrets-certificates)。 有关如何保护应用的实际示例，请参阅使用 Azure Key Vault 管理 [服务器应用中的密钥](/learn/modules/manage-secrets-with-azure-key-vault/)。
 
-1. 复制下面的脚本并将其粘贴到你最喜爱的文本编辑器中。 另存为 **Get-Token.ps1**。 还可以在 PowerShell ISE 中像现在一样运行代码，但应保存它，因为我们需要在下一节中使用事件提取脚本时再次运行它。
+1. 复制下面的脚本并将其粘贴到最喜爱的文本编辑器中。 另存 **为Get-Token.ps1。** 您还可以在 PowerShell ISE 中像现在一样运行代码，但应保存它，因为我们将在下一节中使用事件提取脚本时再次运行它。
 
-    此脚本将生成令牌并将其保存在工作文件夹中的名称下 *，Latest-token.txt。*
+    此脚本将生成一个令牌，并将其保存在工作文件夹中的名称下 *，Latest-token.txt。*
 
     ```PowerShell
     # This script gets the app context token and saves it to a file named "Latest-token.txt" under the current directory.
@@ -113,18 +113,18 @@ ms.locfileid: "49928374"
 #### <a name="validate-the-token"></a>验证令牌
 
 1. 将收到的令牌复制并粘贴到 [JWT](https://jwt.ms) 中以解码它。
-1. *JWT* 代表 *JSON Web 令牌*。 解码的令牌将包含许多 JSON 格式的项目或声明。 确保解码 *令牌中* 的角色声明包含所需的权限。
+1. *JWT* 表示 *JSON Web 令牌*。 解码的令牌将包含许多 JSON 格式的项目或声明。 确保解码 *令牌* 中的角色声明包含所需的权限。
 
-    在下图中，你可以看到从应用获取的解码令牌，具有 ```Incidents.Read.All``` ```Incidents.ReadWrite.All``` 、 和 ```AdvancedHunting.Read.All``` 权限：
+    在下图中，你可以看到从应用获取的解码令牌，具有 、 和 ```Incidents.Read.All``` ```Incidents.ReadWrite.All``` ```AdvancedHunting.Read.All``` 权限：
 
-    ![图像jwt.ms](../../media/api-jwt-ms.png)
+    ![图像 jwt.ms](../../media/api-jwt-ms.png)
 
 ### <a name="get-a-list-of-recent-incidents"></a>获取最近事件的列表
 
-下面的 **脚本将使用Get-Token.ps1** API。 然后，它将检索过去 48 小时内最后更新的事件列表，然后将该列表另存为 JSON 文件。
+下面的 **脚本将使用Get-Token.ps1** 访问 API。 然后，它将检索过去 48 小时内最后更新的事件列表，然后将该列表另存为 JSON 文件。
 
 > [!IMPORTANT]
-> 将此脚本保存在保存该脚本的同 **一Get-Token.ps1。**
+> 在保存脚本的同一文件夹中保存此 **Get-Token.ps1。**
 
 ```PowerShell
 # This script returns incidents last updated within the past 48 hours.
@@ -163,10 +163,10 @@ $outputJsonPath = "./Latest Incidents $dateTimeForFileName.json"
 Out-File -FilePath $outputJsonPath -InputObject $incidents
 ```
 
-全部完成！ 你已成功：
+全部完成！ 已成功：
 
 - 创建并注册应用程序。
-- 授予该应用程序读取警报的权限。
+- 已授予该应用程序读取警报的权限。
 - 已连接到 API。
 - 使用 PowerShell 脚本返回过去 48 小时内更新的事件。
 
@@ -177,5 +177,5 @@ Out-File -FilePath $outputJsonPath -InputObject $incidents
 - [创建应用以在没有用户的情况下访问 Microsoft 365 Defender](api-create-app-web.md)
 - [创建应用以代表用户访问 Microsoft 365 Defender API](api-create-app-user-context.md)
 - [创建具有对 Microsoft 365 Defender API 的多租户合作伙伴访问权限的应用](api-partner-access.md)
-- [使用 Azure Key Vault 管理服务器应用中的密钥](https://docs.microsoft.com/learn/modules/manage-secrets-with-azure-key-vault/)
-- [用户登录和 API 访问的 OAuth 2.0 授权](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-code)
+- [使用 Azure Key Vault 管理服务器应用中的密钥](/learn/modules/manage-secrets-with-azure-key-vault/)
+- [OAuth 2.0 用户登录和 API 访问授权](/azure/active-directory/develop/active-directory-v2-protocols-oauth-code)
