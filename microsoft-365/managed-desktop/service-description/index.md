@@ -8,12 +8,12 @@ ms.localizationpriority: normal
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: b5c5757c5e07e6edd546c0553028ccf56eb1b4f8
-ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
+ms.openlocfilehash: c51ebdbcd2a8d6d13f5ba0009d470581e317a365
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49840309"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50920428"
 ---
 # <a name="microsoft-managed-desktop-service-description"></a>Microsoft 托管桌面服务说明
 
@@ -23,13 +23,13 @@ Microsoft 托管桌面服务为用户提供安全的新式体验，并总是提�
 - 配置设备
 - 根据 Microsoft 最佳实践，保证用户和设备安全的功能，包括 Windows Hello、BitLocker、SecureBoot 和基于虚拟化的安全功能
 - 设备安全监控和修正服务
-- 应用程序兼容性，通过[桌面应用保证](https://docs.microsoft.com/fasttrack/win-10-desktop-app-assure)实现
+- 应用程序兼容性，通过[桌面应用保证](/fasttrack/win-10-desktop-app-assure)实现
 - Windows 10 和 Microsoft 365 企业应用版的更新管理
 - 设备和应用使用情况的分析数据
 - 面向用户的 IT 支持
 - 为 IT 专业人员提供操作支持
 
-如需 Microsoft 托管桌面特定服务的详细信息，请参阅本节中其他文章。 如已决定使用 Microsoft 托管桌面，可通过 [Microsoft 托管桌面注册须知](https://docs.microsoft.com/microsoft-365/managed-desktop/get-ready/)中的文章了解加入该服务的步骤。
+如需 Microsoft 托管桌面特定服务的详细信息，请参阅本节中其他文章。 如已决定使用 Microsoft 托管桌面，可通过 [Microsoft 托管桌面注册须知](../get-ready/index.md)中的文章了解加入该服务的步骤。
 
 - [Microsoft 托管桌面支持的区域和语言](regions-languages.md)介绍该服务支持的区域和语言。
 - 为保证用户获得最佳体验，Microsoft 托管桌面仅支持某些设备。 [程序设备](device-list.md)指定可使用该服务的确切设备模型和配置，无论是由你提供还是与合作伙伴合作。

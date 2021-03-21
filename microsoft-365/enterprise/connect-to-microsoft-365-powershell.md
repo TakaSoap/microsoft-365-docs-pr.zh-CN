@@ -17,12 +17,12 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: 5ebc0e21-b72d-46d8-96fa-00643b18eaec
 description: 使用 PowerShell for Microsoft 365 连接到 Microsoft 365 租户，从命令行执行管理中心任务。
-ms.openlocfilehash: 0691304a2d40f7ae4262e6761902f16b4f6d5ee2
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 58af42958e9b50ee8e39cbd7bd5aab53812e444c
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50288109"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50919172"
 ---
 # <a name="connect-to-microsoft-365-with-powershell"></a>使用 PowerShell 连接 Microsoft 365
 
@@ -60,17 +60,17 @@ PowerShell for Microsoft 365 可让你从命令行管理您的 Microsoft 365 设
 - 对于用于 Windows PowerShell 的 Microsoft Azure Active Directory 模块，必须使用 PowerShell 版本 5.1 或以上版本（最高版本 6）。 你无法使用 PowerShell 版本 7。
        
 >[!Note]
->这些步骤适合于属于 Microsoft 365 管理员角色成员的用户。 有关详细信息，请参阅[关于管理员角色](https://go.microsoft.com/fwlink/p/?LinkId=532367)。
+>这些步骤适合于属于 Microsoft 365 管理员角色成员的用户。 有关详细信息，请参阅[关于管理员角色](../admin/add-users/about-admin-roles.md)。
 
 
 ## <a name="connect-with-the-azure-active-directory-powershell-for-graph-module"></a>连接到 Azure Active Directory PowerShell Graph 模块
 
-Azure Active Directory PowerShell Graph 模块中的命令在其 cmdlet 名称中包含 *AzureAD*。 可安装[Azure Active Directory PowerShell for Graph](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2) 模块或 [Azure PowerShell](https://docs.microsoft.com/powershell/azure/install-az-ps)。
+Azure Active Directory PowerShell Graph 模块中的命令在其 cmdlet 名称中包含 *AzureAD*。 可安装[Azure Active Directory PowerShell for Graph](/powershell/azure/active-directory/install-adv2) 模块或 [Azure PowerShell](/powershell/azure/install-az-ps)。
 
 有关在 Azure Active Directory PowerShell Graph 模块中需要新 cmdlet 的过程，请按照以下步骤安装该模块并连接到 Microsoft 365 订阅。
 
 > [!Note]
-> 有关不同版本的 Microsoft Windows 的支持信息，请参阅 [Azure Active Directory PowerShell Graph 模块](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2)。
+> 有关不同版本的 Microsoft Windows 的支持信息，请参阅 [Azure Active Directory PowerShell Graph 模块](/powershell/azure/active-directory/install-adv2)。
 
 ### <a name="step-1-install-the-required-software"></a>步骤 1：安装所需软件
 
@@ -102,7 +102,7 @@ Azure Active Directory PowerShell Graph 模块中的命令在其 cmdlet 名称�
 
 如果使用多重身份验证，请按照说明提供其他身份验证信息，例如验证码。
 
-连接后，可对 [Azure Active Directory PowerShell Graph 模块](https://docs.microsoft.com/powershell/module/azuread)使用这些 cmdlet。
+连接后，可对 [Azure Active Directory PowerShell Graph 模块](/powershell/module/azuread)使用这些 cmdlet。
 
 ## <a name="connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>与用于 Windows PowerShell 的 Microsoft Azure Active Directory 模块连接
 
@@ -152,11 +152,11 @@ PowerShell Core 不支持用于 Windows PowerShell 和 cmdlet 的其名称中包
     
 - **用于 Windows PowerShell 的 Microsoft Azure Active Directory 模块要求在计算机上启用 Microsoft .NET Framework 3.5.* x*。很可能你的计算机已安装了较新的版本（例如 4 或 4.5.* x*）。 但可以启用或禁用与 .NET Framework 的早期版本的向后兼容性。 有关详细信息，请参阅以下文章：
     
-  - 对于 Windows Server 2012 或 Windows Server 2012 R2，请参阅[使用“添加角色和功能”向导启用 .NET Framework 3.5](https://go.microsoft.com/fwlink/p/?LinkId=532368)。
+  - 对于 Windows Server 2012 或 Windows Server 2012 R2，请参阅[使用“添加角色和功能”向导启用 .NET Framework 3.5](/previous-versions/windows/it-pro/windows-8.1-and-8/dn482071(v=win.10))。
     
-  - 对于 Windows 7 或 Windows Server 2008 R2，请参阅[不能打开用于 Windows PowerShell 的 Azure Active Directory 模块](https://go.microsoft.com/fwlink/p/?LinkId=532370)。
+  - 对于 Windows 7 或 Windows Server 2008 R2，请参阅[不能打开用于 Windows PowerShell 的 Azure Active Directory 模块](/troubleshoot/azure/active-directory/cant-open-aad-module-powershell)。
 
-  - 对于 Windows 10、Windows 8.1 和 Windows 8，请参阅[在 Windows 10、Windows 8.1 和 Windows 8 上安装 .NET Framework 3.5](https://docs.microsoft.com/dotnet/framework/install/dotnet-35-windows-10)。
+  - 对于 Windows 10、Windows 8.1 和 Windows 8，请参阅[在 Windows 10、Windows 8.1 和 Windows 8 上安装 .NET Framework 3.5](/dotnet/framework/install/dotnet-35-windows-10)。
 
   
 - **你的用于 Windows PowerShell 的 Microsoft Azure Active Directory 模块版本可能已过期。** 若要进行检查，请在 PowerShell for Microsoft 365 或用于 Windows PowerShell 的 Microsoft Azure Active Directory 模块中运行以下命令：
@@ -167,7 +167,7 @@ PowerShell Core 不支持用于 Windows PowerShell 和 cmdlet 的其名称中包
 
     如果返回的版本号低于 *1.0.8070.2*，请卸载用于 Windows PowerShell 的 Microsoft Azure Active Directory 模块，并通过上述 [第 1 步](#step-1-install-the-required-software)进行安装。
 
-- **如果收到连接错误，请参阅**[“Connect-MsolService：抛出类型异常”错误](https://go.microsoft.com/fwlink/p/?LinkId=532377)。
+- **如果收到连接错误，请参阅**[“Connect-MsolService：抛出类型异常”错误](/office365/troubleshoot/active-directory/connect-msoservice-throw-exception)。
     
 - **如果收到“Get-Item：找不到路径”错误消息**，请运行以下命令：
 

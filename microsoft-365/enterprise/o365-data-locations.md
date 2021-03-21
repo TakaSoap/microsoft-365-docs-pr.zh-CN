@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 确定 Microsoft 365 客户数据在全球范围内的存储位置
-ms.openlocfilehash: dc74393eadbd5f1abc62efe7411434d0b919e5fe
-ms.sourcegitcommit: cbe8724bd71d1c002395d98f1451c5f578c824f9
+ms.openlocfilehash: a93f83e7efafa06aa65675342471c26f1b197864
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49988100"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50920784"
 ---
 <!--
 Note to new owner: Links in the Notes and FAQ sections need to be added from the source document at https://microsoft.sharepoint.com/:w:/t/golocalteam/Ebv6_Lw6FvNKucfA1eESTPUBy6O1MdvWEeT-L8O5a2HsIg?e=4%3AUfF1Uj&at=9&xsdata=MDR8MDF8am9zZXBoZEBtaWNyb3NvZnQuY29tfGM1ZTg1ODI0ZWRmMTRlN2E3MDkzMDhkNzgzNDMxYTczfDcyZjk4OGJmODZmMTQxYWY5MWFiMmQ3Y2QwMTFkYjQ3fDF8MHw2MzcxMjIxOTY1MzQ5NjM5NDl8VW5rbm93bnxUV0ZwYkdac2IzZDhleUpXSWpvaU1DNHdMakF3TURBaUxDSlFJam9pVjJsdU16SWlMQ0pCVGlJNklrMWhhV3dpTENKWFZDSTZNbjA9fC0x&sdata=MkxOUXhlZEdyR0I1SzBvd044d2hkd2RPaGN2RUpaS09jMkZTcys0dkZQRT0%3D
@@ -58,11 +58,11 @@ Microsoft 不会披露其数据中心的确切地址。 我们制定这项政策
 
 ### <a name="does-the-location-of-your-customer-data-have-a-direct-impact-on-your-end-users-experience"></a>客户数据的位置是否对最终用户的体验有直接影响？
 
-Microsoft 365 的性能与用户离数据中心位置的距离并无简单的比例关系。 Microsoft 在其全球云网络、全球云基础结构和 Microsoft 365 服务体系结构方面持续投资，旨在为用户提供卓越且一致的体验，而不受客户数据的静态存储位置的影响。 如果你的用户遇到性能问题，则应进一步对这些问题进行故障排除。 Microsoft 已在 [Office 支持网站](https://go.microsoft.com/fwlink/p/?linkid=862645)上发布面向 Microsoft 365 客户的指南，旨在规划和优化为最终用户提供的性能。
+Microsoft 365 的性能与用户离数据中心位置的距离并无简单的比例关系。 Microsoft 在其全球云网络、全球云基础结构和 Microsoft 365 服务体系结构方面持续投资，旨在为用户提供卓越且一致的体验，而不受客户数据的静态存储位置的影响。 如果你的用户遇到性能问题，则应进一步对这些问题进行故障排除。 Microsoft 已在 [Office 支持网站](./network-planning-and-performance.md)上发布面向 Microsoft 365 客户的指南，旨在规划和优化为最终用户提供的性能。
 
 ### <a name="how-does-microsoft-help-me-comply-with-my-national-regional-and-industry-specific-regulations"></a>Microsoft 如何帮助我遵守国家、地区和行业特定的法规？
 
-为帮助你遵守关于管理个人数据的收集和使用的国家、地区和行业特定的要求，Microsoft 365 提供了全球云生产力提供商中最全面的一套合规性产品/服务。 请在 Microsoft 信任中心的“[Microsoft 365 合规性](https://go.microsoft.com/fwlink/p/?linkid=862317)”部分中查看[我们的合规性产品/服务](https://go.microsoft.com/fwlink/p/?linkid=864391)和更多详细信息。 此外，某些 Microsoft 365 计划还提供了其他合规性解决方案，以帮助你管理数据、遵守法律和法规要求并监视对数据执行的操作。
+为帮助你遵守关于管理个人数据的收集和使用的国家、地区和行业特定的要求，Microsoft 365 提供了全球云生产力提供商中最全面的一套合规性产品/服务。 请在 Microsoft 信任中心的“[Microsoft 365 合规性](https://go.microsoft.com/fwlink/p/?linkid=862317)”部分中查看[我们的合规性产品/服务](/compliance/regulatory/offering-home)和更多详细信息。 此外，某些 Microsoft 365 计划还提供了其他合规性解决方案，以帮助你管理数据、遵守法律和法规要求并监视对数据执行的操作。
 
 ### <a name="who-can-access-your-data-and-according-to-what-rules"></a>谁可以按照什么规定访问你的数据？
 
@@ -2594,7 +2594,7 @@ Microsoft 不会存储指定地理位置之外的静态 Intune 客户数据。 �
 </p></details>
 
 ## <a name="hungary"></a>匈牙利
-<details><summary>点击展开</summary><p>
+<details><summary>单击展开</summary><p>
 
 | 服务 | 位置 |
 | --- | --- |
@@ -4178,7 +4178,7 @@ Microsoft 不会存储指定地理位置之外的静态 Intune 客户数据。 �
 </p></details>
 
 ## <a name="palestinian-authority"></a>巴勒斯坦民族权力机构
-<details><summary>点击展开</summary><p>
+<details><summary>单击展开</summary><p>
 
 | 服务 | 位置 |
 | --- | --- |
@@ -4826,7 +4826,7 @@ Microsoft 不会存储指定地理位置之外的静态 Intune 客户数据。 �
 </p></details>
 
 ## <a name="senegal"></a>塞内加尔
-<details><summary>点击展开</summary><p>
+<details><summary>单击展开</summary><p>
 
 | 服务 | 位置 |
 | --- | --- |

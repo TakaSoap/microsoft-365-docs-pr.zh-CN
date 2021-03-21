@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: b98d2385ee0ae130df115c85010366a5100ab78d
-ms.sourcegitcommit: 8f1721de52dbe3a12c11a0fa5ed0ef5972ca8196
+ms.openlocfilehash: 30363b544d9016b10dd9aad463d33c40065da0f3
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/17/2021
-ms.locfileid: "50838443"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50919808"
 ---
 # <a name="learn-about-insider-risk-management-in-microsoft-365"></a>了解 Microsoft 365 中的内部风险管理
 
@@ -125,7 +125,6 @@ ms.locfileid: "50838443"
 在更严重的情况下，可能需要与组织的其他审阅者或服务共享内部风险管理案例信息。 内部风险管理与其他 Microsoft 365 合规性解决方案紧密集成，以帮助你解决端到端风险。
 
 - **高级电子数据展示**：通过升级案例进行调查，你可以将案件的数据和管理转移到 Microsoft 365 中的高级电子数据展示。 高级电子数据展示提供端到端工作流，以保留、收集、审阅、分析和导出对组织内部和外部调查做出响应的内容。 它允许法律团队管理整个法定保留通知工作流。 若要详细了解高级电子数据展示事例，请参阅 Microsoft [365](overview-ediscovery-20.md)中的高级电子数据展示概述。
-- **ServiceNow (预览**) ：ServiceNow 是一个受欢迎的云计算平台，可帮助组织管理企业运营的数字工作流。 内部风险管理支持与 ServiceNow 服务共享案例警报，并允许您创建与单个内部风险案例相关的事件和更改请求。 若要了解有关与 ServiceNow 共享警报信息的信息，请参阅 [与 ServiceNow 共享案例](insider-risk-management-cases.md#share-the-case)。
 - **Office 365** 管理 API 集成 (预览版) ：内部风险管理支持通过 Office 365 管理 API 将警报信息导出到安全信息和事件管理 (SIEM) 服务。 通过访问平台中最适合组织风险流程的警报信息，可以更灵活地操作风险活动。 若要了解有关使用 Office 365 管理 API 导出警报信息的信息，请参阅 [导出警报](insider-risk-management-settings.md#export-alerts-preview)。
 
 >[!NOTE]

@@ -13,16 +13,16 @@ ms.collection:
 - M365-security-compliance
 ms.topic: article
 description: 打开对 SharePoint 和 OneDrive 中标记和加密的文档启用共同创作和自动保存的设置。
-ms.openlocfilehash: d26696530ed86e6608b6473fead0775fb07a060b
-ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
+ms.openlocfilehash: 90c00eb448d6d8f02170a37062af05cb0c0db59d
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50454633"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50919568"
 ---
 # <a name="enable-co-authoring-for-files-encrypted-with-sensitivity-labels"></a>为使用敏感度标签加密的文件启用共同创作
 
->*[Microsoft 365 安全性与合规性许可指南](https://aka.ms/ComplianceSD)。*
+>*[Microsoft 365 安全性与合规性许可指南](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。*
 
 > [!NOTE]
 > 此功能暂处于预览阶段，可能会发生变更。 
@@ -58,7 +58,7 @@ ms.locfileid: "50454633"
 
 - 博客文章： [即将推出的 Microsoft 信息保护元数据存储更改](https://techcommunity.microsoft.com/t5/microsoft-security-and/upcoming-changes-to-microsoft-information-protection-metadata/ba-p/1904418)
 
-- 打开规范： [2.6.3 LabelInfo 与自定义文档属性对比](https://docs.microsoft.com/openspecs/office_file_formats/ms-offcrypto/13939de6-c833-44ab-b213-e0088bf02341)
+- 打开规范： [2.6.3 LabelInfo 与自定义文档属性对比](/openspecs/office_file_formats/ms-offcrypto/13939de6-c833-44ab-b213-e0088bf02341)
 
 由于这些更改，如果你的组织具有将标签元数据读或写到旧位置的任何应用、服务、脚本或工具，则不要启用此设置。 如果这样做，某些示例会产生什么影响：
 
@@ -68,7 +68,7 @@ ms.locfileid: "50454633"
 
 - 如果其他用户在不支持新标签元数据的 Office 桌面应用中打开标签文档，则共同创作和自动保存将不起作用
 
-- 将标签标识为 Office 附件中的自定义 [Exchange Online 邮件流规则](https://docs.microsoft.com/azure/information-protection/configure-exo-rules#example-2-rule-that-applies-the-encrypt-only-option-to-emails-when-they-have-attachments-that-are-labeled-confidential--partners-and-these-emails-are-sent-outside-the-organization) 无法加密电子邮件和附件，或错误地加密它们
+- 将标签标识为 Office 附件中的自定义 [Exchange Online 邮件流规则](/azure/information-protection/configure-exo-rules#example-2-rule-that-applies-the-encrypt-only-option-to-emails-when-they-have-attachments-that-are-labeled-confidential--partners-and-these-emails-are-sent-outside-the-organization) 无法加密电子邮件和附件，或错误地加密它们
 
 查看下一部分，查看支持此设置以及标签元数据的更改的应用和服务列表。
 
@@ -108,7 +108,7 @@ ms.locfileid: "50454633"
 
 - [自动标记策略](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-policies-for-sharepoint-onedrive-and-exchange)
 - [使用敏感度标签作为条件的 DLP 策略](dlp-sensitivity-label-as-condition.md)
-- [Microsoft 云应用安全性已配置为应用敏感度标签](https://docs.microsoft.com/cloud-app-security/best-practices#discover-classify-label-and-protect-regulated-and-sensitive-data-stored-in-the-cloud)
+- [Microsoft 云应用安全性已配置为应用敏感度标签](/cloud-app-security/best-practices#discover-classify-label-and-protect-regulated-and-sensitive-data-stored-in-the-cloud)
 
 ## <a name="limitations"></a>限制
 
@@ -125,7 +125,7 @@ ms.locfileid: "50454633"
     
     对于采用以上任何加密配置的标签，标签会显示在 Office 应用中。 但是，当用户选择这些标签，而其他人正在编辑文档时，你会警告他们共同创作且自动保存将不可用。 如果其他人正在编辑文档，用户会看到一条消息，指出标签无法应用。
 
-- 如果使用 Azure 信息保护统一标签客户端：查看此标签客户端的文档， [要求或限制](https://docs.microsoft.com/azure/information-protection/known-issues#known-issues-for-co-authoring-public-preview)。
+- 如果使用 Azure 信息保护统一标签客户端：查看此标签客户端的文档， [要求或限制](/azure/information-protection/known-issues#known-issues-for-co-authoring-public-preview)。
 
 ## <a name="known-issues-for-this-preview"></a>此预览的已知问题
 
@@ -171,7 +171,7 @@ ms.locfileid: "50454633"
 
 ![显示针对敏感度标签开启共同创作的选项](../media/co-authoring-tenant-option-set-for-sensitivity-labels.png)
 
-如在打开此设置时从屏幕截图中看到的，可联系 Microsoft [支持人员](https://docs.microsoft.com/office365/admin/contact-support-for-business-products) 请求关闭此设置。 此请求可能需要几天时间，并且你需要证明你是租户的全局管理员。 通常需要支付支持费用。 
+如在打开此设置时从屏幕截图中看到的，可联系 Microsoft [支持人员](/office365/admin/contact-support-for-business-products) 请求关闭此设置。 此请求可能需要几天时间，并且你需要证明你是租户的全局管理员。 通常需要支付支持费用。 
 
 如果支持工程师为租户禁用此设置：
 

@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: eea8454a02667a42020f9ac1d54402e7b8a06b9b
-ms.sourcegitcommit: 8b1bd7ca8cd81e4270f0c1e06d2b6ca81804a6aa
+ms.openlocfilehash: 1e6642113ddba9c9110a65e9032ec59db435ac7f
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "50820035"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50919858"
 ---
 # <a name="get-started-with-insider-risk-management-settings"></a>内部风险管理设置入门
 
@@ -242,7 +242,7 @@ ms.locfileid: "50820035"
 | AlertType | 警报的类型为 *"自定义"。*  |
 | AlertId | 警报的 GUID。 内部风险管理警报是可变的。 当警报状态更改时，将生成一个同一 AlertID 的新日志。 此 AlertID 可用于关联警报的更新。 |
 | 类别 | 警报的类别为 *InsiderRiskManagement*。 此类别可用于区别于其他安全与合规&警报。 |
-| Comments | 警报的默认注释。 值为"*新建* (警报"，当警报) 更新 (警报更新时，会记录警报) 。  使用 AlertID 关联警报的更新。 |
+| 备注 | 警报的默认注释。 值为"*新建* (警报"，当警报) 更新 (警报更新时，会记录警报) 。  使用 AlertID 关联警报的更新。 |
 | Data | 警报的数据包括唯一用户 ID、用户主体名称以及将用户触发到策略 (UTC) 日期和时间。 |
 | 名称 | 生成警报的内部风险管理策略的策略名称。 |
 | PolicyId | 触发警报的内部风险管理策略的 GUID。 |
@@ -483,7 +483,7 @@ ms.locfileid: "50820035"
 
 如果你在拥有现有案例后启用对内部风险管理的 Microsoft Teams 支持，你将需要根据需要为每个案例手动创建一个团队。 在内部风险管理设置中启用 Microsoft Teams 支持后，新案例将自动创建新的 Microsoft Teams 团队。
 
-用户需要有权在组织中创建 Microsoft 365 组，才能根据情况创建 Microsoft Teams 团队。 有关管理 Microsoft 365 组的权限详细信息，请参阅管理 [可以创建 Microsoft 365 组的用户](/microsoft-365/solutions/manage-creation-of-groups)。
+用户需要有权在组织中创建 Microsoft 365 组，才能根据情况创建 Microsoft Teams 团队。 有关管理 Microsoft 365 组的权限详细信息，请参阅管理 [可以创建 Microsoft 365 组的用户](../solutions/manage-creation-of-groups.md)。
 
 若要为案例创建团队，你将在直接处理现有案例时使用"创建 Microsoft 团队"控件。 完成以下步骤以创建新团队：
 

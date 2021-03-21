@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 30ad9bf968fa91218d15a6f71785d5299e664ddc
-ms.sourcegitcommit: 8f1721de52dbe3a12c11a0fa5ed0ef5972ca8196
+ms.openlocfilehash: 48cc75276e4e3791fa16520df5a4c392c23a0cd5
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/17/2021
-ms.locfileid: "50838495"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50919908"
 ---
 # <a name="communication-compliance-feature-reference"></a>通信合规性功能参考
 
@@ -88,7 +88,7 @@ ms.locfileid: "50838495"
 
 ## <a name="supervised-users"></a>受监督用户
 
-在开始使用通信合规性之前，必须确定需要审阅其通信的哪些人。 在策略中，用户电子邮件地址标识要监督的个人或人员组。 这些组的一些示例包括 Microsoft 365 组、基于 Exchange 的通讯组列表、Yammer 社区和 Microsoft Teams 频道。 您还可以使用特定排除组或组列表将特定用户或组排除在扫描之外。
+在开始使用通信合规性之前，必须确定需要审阅其通信的哪些人。 在策略中，用户电子邮件地址标识要监督的个人或人员组。 这些组的一些示例包括 Microsoft 365 组、基于 Exchange 的通讯组列表、Yammer 社区和 Microsoft Teams 频道。 您还可以使用特定排除组或组列表将特定用户或组排除在扫描之外。 有关通信合规性策略中支持的组类型详细信息，请参阅 [通信合规性入门](communication-compliance-configure.md#step-3-optional-set-up-groups-for-communication-compliance)。
 
 >[!IMPORTANT]
 >通信合规性策略涵盖的用户必须具有 Microsoft 365 E5 合规性许可证、具有高级合规性加载项的 Office 365 企业版 E3 许可证，或包含在 Office 365 企业版 E5 订阅中。 如果你没有现有的企业版 E5 计划，并且想要尝试通信合规性，可以注册 Office [365 企业版 E5 试用版](https://go.microsoft.com/fwlink/p/?LinkID=698279)。
@@ -112,7 +112,7 @@ ms.locfileid: "50838495"
 - **Microsoft Teams：** 可以扫描公共和专用 Microsoft Teams 频道和个人聊天中的聊天通信。 在将用户分配到通信合规性策略时，如果用户是其中的成员，则会自动监视用户的所有 Microsoft Teams 中的聊天通信。 Microsoft Teams 覆盖范围将自动包含在预定义的策略模板中，并且默认情况下会在自定义策略模板中选中。 与通信合规性策略条件匹配的 Teams 聊天最多可能需要 48 小时处理。 使用以下组管理配置来监督 Teams 中的单个用户聊天和频道通信：
 
     - **对于 Teams 聊天通信：** 分配单个用户或 [将通讯组](https://support.office.com/article/Distribution-groups-E8BA58A8-FAB2-4AAF-8AA1-2A304052D2DE) 分配给通信合规性策略。 此设置适用于一对一或一对多用户/聊天关系。
-    - **对于 Teams 频道通信：** 将要扫描的包含特定用户的每个 Microsoft Teams 频道或 Microsoft 365 组分配给通信合规性策略。 如果将同一用户添加到其他 Microsoft Teams 频道或 Microsoft 365 组，请务必将这些新频道和组添加到通信合规性策略。
+    - **对于 Teams 频道通信：** 将要扫描的包含特定用户的每个 Microsoft Teams 频道或 Microsoft 365 组分配给通信合规性策略。 如果将同一用户添加到其他 Microsoft Teams 频道或 Microsoft 365 组，请务必将这些新频道和组添加到通信合规性策略。 如果频道的任何成员是策略中的受监督用户，并且策略中配置了入站方向，那么在频道内发送的所有邮件都需接受审阅，并且可能的策略与 (即使对于未明确监督) 的频道中的用户也一样。 例如，用户 A 是频道的所有者或成员。 用户 B 和用户 C 是同一频道的成员，并且使用与仅监督用户 A 的冒犯性语言策略相匹配的语言。用户 B 和用户 C 为频道内的对话创建策略匹配，即使这些对话未在冒犯性语言策略中直接监督。 在包含用户 A 的频道之外的用户 B 和用户 C 之间，团队对话不会受包含用户 A 的冒犯性语言策略影响。若要在频道的其他成员受到明确监督时排除频道成员监督，请关闭适用通信合规性策略中的入站通信方向设置。
     - **对于与混合电子邮件环境的 Teams** 聊天通信：通信合规性可以监视具有 Exchange 本地部署的组织或已启用 Microsoft Teams 的外部电子邮件提供商的用户的聊天消息。 您必须为具有要监视本地邮箱或外部邮箱的用户创建通讯组。 创建通信合规性策略时，您将此通讯组分配为策略向导中的监督用户和组选择。
 
     >[!IMPORTANT]
@@ -428,7 +428,7 @@ ms.locfileid: "50838495"
 4. 在 **"Power Automate 流"** 页上，选择要删除的流。 从 **流控制** 菜单中选择"删除"。
 5. 在删除确认对话框中，选择 **"删除** "以删除流，或选择" **取消** "退出删除操作。
 
-## <a name="reports-preview"></a>报表 (预览) 
+## <a name="reports"></a>报表
 
 新的 **"报告** "仪表板是查看所有通信合规性报告的中央位置。 报告小组件提供对通信合规性活动状态进行总体评估最常用的见解的快速视图。 报表小部件中包含的信息不可导出。 详细报告提供与特定通信合规性领域相关的深入信息，并提供在查看时筛选、分组、排序和导出信息的能力。
 

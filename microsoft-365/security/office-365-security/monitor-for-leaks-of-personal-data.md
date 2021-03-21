@@ -19,12 +19,12 @@ search.appverid:
 description: 了解可用于监视个人数据泄露的三种工具。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a8fb8557d6cd2677aeb6dcda75d34e86ada8f68c
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: b51bc5d5d3cbfa8951392f88edc6e178778206df
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50290665"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50921248"
 ---
 # <a name="monitor-for-leaks-of-personal-data"></a>监视个人数据泄露
 
@@ -83,7 +83,7 @@ DLP 报告位于安全中心和合规中心中。 导航到“报告”\>“查�
 
 信息安全团队还可以搜索审核日志来调查可疑的数据泄露并确定泄露的根本原因和程度。此内置功能有助于遵守 GDPR 条款 33 和 34 的规定，其中要求在特定时间段内向 GDPR 监管机构和数据泄露的数据主体自身提供通知。通常的建议是，仅将审核日志条目在服务内保留 90 天，但许多组织都要求将这些日志保留更长的时间。
 
-有些解决方案可以通过 Microsoft 管理活动 API 来订阅统一审核日志，而且可以按需存储日志条目并提供高级仪表板和警报。例如：[Microsoft Operations Management Suite (OMS)](https://docs.microsoft.com/azure/operations-management-suite/oms-solution-office-365)。
+有些解决方案可以通过 Microsoft 管理活动 API 来订阅统一审核日志，而且可以按需存储日志条目并提供高级仪表板和警报。例如：[Microsoft Operations Management Suite (OMS)](/azure/operations-management-suite/oms-solution-office-365)。
 
 有关警报策略和搜索审核日志的更多信息：
 
@@ -95,7 +95,7 @@ DLP 报告位于安全中心和合规中心中。 导航到“报告”\>“查�
 
 - [搜索审核日志](../../compliance/search-the-audit-log-in-security-and-compliance.md)
 
-- [Search-UnifiedAuditLog](https://docs.microsoft.com/powershell/module/exchange/search-unifiedauditlog) (cmdlet)
+- [Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog) (cmdlet)
 
 - [审核日志中的详细属性](../../compliance/detailed-properties-in-the-office-365-audit-log.md)
 
@@ -130,11 +130,11 @@ Microsoft Cloud App Security 是一项可为云应用提供深层可见性、细
 
 详细信息：
 
-- [部署 Cloud App Security](https://docs.microsoft.com/cloud-app-security/getting-started-with-cloud-app-security)
+- [部署 Cloud App Security](/cloud-app-security/getting-started-with-cloud-app-security)
 
 - [有关 Microsoft Cloud App Security 的更多信息](https://www.microsoft.com/cloud-platform/cloud-app-security)
 
-- [使用 Microsoft Cloud App Security 代理阻止下载敏感信息](https://docs.microsoft.com/cloud-app-security/use-case-proxy-block-session-aad)
+- [使用 Microsoft Cloud App Security 代理阻止下载敏感信息](/cloud-app-security/use-case-proxy-block-session-aad)
 
 ## <a name="example-file-and-activity-policies-to-detect-sharing-of-personal-data"></a>用于检测个人数据共享的示例文件和活动策略
 

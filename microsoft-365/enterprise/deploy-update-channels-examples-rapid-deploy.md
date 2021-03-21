@@ -15,12 +15,12 @@ ms.collection:
 - M365-subscription-management
 ms.custom: ''
 description: 部署最新版本的组织如何使用 Windows 10 和 Microsoft 365 应用的频道。
-ms.openlocfilehash: fd1d8ddd342b2781470378c879ef70d2ba304316
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 29bda1651a83f0e043cf8a0d2a102c6c2e461bfd
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46686162"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50919070"
 ---
 # <a name="example-of-broad-deployment-for-the-latest-releases"></a>最新版本的广泛部署示例
 
@@ -61,7 +61,7 @@ ms.locfileid: "46686162"
 
 总体目标是在一组代表用户验证发布预览频道更改后，广泛部署最新的半年频道版本。
 
-了解更多关于 Windows 10 部署方法和策略的信息，请参阅[Windows 10 部署](https://docs.microsoft.com/windows/deployment/)。
+了解更多关于 Windows 10 部署方法和策略的信息，请参阅[Windows 10 部署](/windows/deployment/)。
 
 | 阶段 | 频道 | 部署组 |
 |:-------|:-------|:-----|
@@ -85,7 +85,7 @@ ms.locfileid: "46686162"
 
 总体目标是一组代表用户验证当前频道（预览版）更改后，广泛部署最新的当前频道版本。
 
-了解更多 Microsoft 365 应用版部署方法和策略的信息，请参阅[Microsoft 365 应用版部署](https://docs.microsoft.com/deployoffice/plan-office-365-proplus)。 
+了解更多 Microsoft 365 应用版部署方法和策略的信息，请参阅[Microsoft 365 应用版部署](/deployoffice/plan-office-365-proplus)。 
 
 | 阶段 | 频道 | 部署组 |
 |:-------|:-------|:-----|

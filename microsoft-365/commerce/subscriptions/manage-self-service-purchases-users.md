@@ -14,60 +14,60 @@ ms.collection:
 ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
-description: 用户可以了解如何管理自助购买。
-ms.openlocfilehash: 5f541706c2b4787e5add53b34a90c0f2113efb11
-ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
+description: 用户可以了解如何管理其自助购买。
+ms.openlocfilehash: 73b044ab9954744e89a13ccff0145f35bc1b821b
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "50114677"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50920188"
 ---
 # <a name="manage-self-service-purchases-users"></a>管理自助购买（用户）
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 管理中心正在发生改变。 如果你的体验与此处提供的详细信息不匹配，请参阅[有关新版 Microsoft 365 管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true)。
+> 管理中心正在发生改变。 如果你的体验与此处提供的详细信息不匹配，请参阅[有关新版 Microsoft 365 管理中心](../../admin/microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet)。
 
 ::: moniker-end
 
-作为用户，你可以购买某些产品的订阅，并将这些订阅的许可证分配给团队中的人员。 你负责支付你进行的任何自助服务购买。 可以在 Microsoft 365 管理中心内管理<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">admin.microsoft.com。</a>
+作为用户，你可以购买某些产品的订阅，并将这些订阅的许可证分配给团队中的人员。 你负责支付你进行的任何自助服务购买。 可以在 Microsoft 365 管理中心中管理订阅<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">，admin.microsoft.com。</a>
 
-你的管理员具有你购买的任何订阅的只读视图。 他们可以看到你购买的每个订阅的产品、购买者名称、购买的订阅、到期日期、购买价格以及分配的用户。
+你的管理员具有你购买的任何订阅的只读视图。 他们可以看到所购买的每个订阅的产品、购买者名称、购买的订阅、到期日期、购买价格以及分配的用户。
 
 ## <a name="view-your-subscriptions"></a>查看订阅
 
 可以查看已购买的所有自助购买订阅的列表。
 
 1. 在管理中心中，转到“**账单**” > “<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">你的产品</a>”页面。
-2. 在"**产品**"选项卡上，选择筛选器图标，然后选择 **"自助服务"。**
+2. 在"**产品**"选项卡上，选择筛选器图标，然后选择"**自助服务"。**
 
 ## <a name="how-to-buy-more-or-reduce-licenses"></a>如何购买更多或减少许可证
 
 1. 在管理中心中，转到“**账单**” > “<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">你的产品</a>”页面。
 2. 在 **"产品** "选项卡上，选择要购买更多订阅或减少许可证的订阅。
-3. 选择 **"购买许可证****"或删除许可证**。
-4. 在右侧窗格中的"许可证总数 **"框中，** 输入此订阅的许可证总数，然后选择"保存 **"。** 例如，如果你有 100 个许可证，并且希望再添加 5 个，请输入 105。
+3. 选择 **"购买许可证**"**或"删除许可证"。**
+4. 在右窗格中的"许可证 **总数**"框中，输入此订阅的许可证总数，然后选择"保存 **"。** 例如，如果你有 100 个许可证，并且你想要再添加 5 个，请输入 105。
 
 ## <a name="assign-or-unassign-licenses"></a>分配或取消分配许可证
 
 ### <a name="to-assign-licenses"></a>分配许可证
 
-1. 在管理中心，转到"帐单  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">许可证"</a>页。
+1. 在管理中心，转到"帐单  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">""许可证"</a>页面。
 2. 选择要为其分配许可证的订阅。
-3. 选择 **"分配许可证"。**
+3. 选择 **分配许可证**。
 4. 在“**向用户分配许可证**”窗格中，开始键入名称，然后从结果中将其选中，将其添加到列表中。 一次最多可添加 20 名用户。
     > [!NOTE]
-    > 只能将许可证分配给组织人员。
-5. 选择 **"分配**"，然后选择"**关闭"。**
+    > 只能向组织人员分配许可证。
+5. 选择 **"分配"，** 然后选择"**关闭"。**
 
 ### <a name="to-unassign-licenses"></a>取消分配许可证
 
-1. 在管理中心，转到"帐单  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">许可证"</a>页。
+1. 在管理中心，转到"帐单  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">""许可证"</a>页面。
 2. 选择要取消分配许可证的产品。
 3. 选择要取消分配许可证的用户。
 4. 选择 **"取消分配许可证"。**
-5. 在 **"取消分配许可证"** 框中，选择 **"取消分配"。**
+5. 在"**取消分配许可证"** 框中，选择"**取消分配"。**
 
 ## <a name="cancel-a-subscription"></a>取消订阅
 
@@ -78,33 +78,33 @@ ms.locfileid: "50114677"
 
 ## <a name="manage-your-payment-details"></a>管理付款详细信息
 
-1. 在管理中心中，转到"帐单  >  **"&"付款**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2103629" target="_blank">计费配置文件"</a>页。
+1. In the admin center， go to the **Billing**  >  **Billing & payments** Billing  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2103629" target="_blank">profiles</a> page.
 2. 从列表中选择计费配置文件。
-3. 在计费配置文件详细信息页面的 **"付款方式**"下，选择以下选项之一：
-    - 如果要更新现有的付款方式，请选择"编辑 **"。**
+3. 在"计费配置文件详细信息"页面的" **付款方式"** 下，选择以下选项之一：
+    - 如果要更新现有付款方式，请选择"编辑 **"。**
     - 如果要添加新的付款方式，请选择"替换 **"。**
 4. 在右侧窗格中，输入卡片详细信息，然后选择"保存 **"。**
 
 ### <a name="update-an-existing-payment-method"></a>更新现有的付款方式
 
-1. 在管理中心，转到"帐单&  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">付款</a>页面。
-2. 在 **"付款方式"** 选项卡上，从列表中选择现有的付款方式。
+1. In the admin center， go to the **Billing**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Billing & payments</a> page.
+2. 在" **付款方式"** 选项卡上，从列表中选择现有的付款方式。
 3. 在右侧窗格中，选择"编辑 **"。** 你可以更改安全代码、到期日期、卡片上的名称和地址。
-4. 进行所需的任何更改，然后选择"保存 **"。**
+4. 进行任何所需的更改，然后选择"保存 **"。**
 
 ### <a name="add-a-new-payment-method"></a>添加新的付款方式
 
-1. 在管理中心，转到"帐单&  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">付款</a>页面。
+1. In the admin center， go to the **Billing**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Billing & payments</a> page.
 2. 在"**付款方式"** 选项卡上，选择 **"添加付款方式"。**
 3. 在 **"添加付款方式"** 窗格中，输入新付款方式的信息，然后选择"添加 **"。**
 
 ## <a name="view-your-invoices"></a>查看发票
 
-1. 在管理中心，**转到"帐单**&  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">付款</a>页面。
-2. 在 **"发票"** 选项卡上，选择要查看的发票。 如果没有发票可见，将 **过去 3** 个月更改为过去 **6** 个月或 **指定日期范围**。
+1. In the admin center， go to **Billing**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Billing & payments</a> page.
+2. 在 **"发票"** 选项卡上，选择要查看的发票。 如果没有发票可见，将过去 **3** 个月更改为过去 **6** 个月或 **指定日期范围**。
 
-## <a name="need-help-contact-us"></a>需要帮助? 联系我们。
+## <a name="need-help-contact-us"></a>需要帮助？ 请联系我们。
 
-有关自助服务购买的常见问题，请参阅 [自助服务购买常见问题解答](self-service-purchase-faq.md)。
+有关自助服务购买的常见问题，请参阅 [自助服务购买常见问题](self-service-purchase-faq.md)解答。
 
-如果对自助购买有疑问或需要帮助，请联系 [支持人员](https://docs.microsoft.com/microsoft-365/admin/contact-support-for-business-products)。
+如果你有问题或需要自助服务购买帮助， [请联系支持](../../admin/contact-support-for-business-products.md)人员。

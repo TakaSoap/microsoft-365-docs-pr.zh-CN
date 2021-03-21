@@ -12,15 +12,15 @@ localization_priority: Normal
 ms.assetid: f40253f2-50a1-426e-9979-be74ba74cb61
 ms.custom:
 - seo-marvel-apr2020
-description: 本文将介绍适用于 EOP 管理员的 Microsoft Exchange Online (报告和) 工具。
+description: 本文将介绍适用于 EOP 管理员的 Microsoft Exchange Online Protection (和) 工具。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 783c7ea0aca47c805daf66592b401a98f739d071
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 1307fa1431a4fdd46c9ab070a2986a015891568f
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50288075"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50918674"
 ---
 # <a name="reporting-and-message-trace-in-eop"></a>EOP 中的报告和邮件跟踪
 
@@ -35,45 +35,45 @@ ms.locfileid: "50288075"
 
 ## <a name="usage-reports"></a>使用率报告
 
-**Microsoft 365** 组活动：查看有关创建和使用的 Microsoft 365 组数的信息。
+**Microsoft 365 组活动**：查看有关创建和使用的 Microsoft 365 组数的信息。
 
-**电子邮件活动**：查看有关整个组织中以及特定用户发送、接收和读取的邮件数的信息。
+**电子邮件活动**：查看有关整个组织中以及特定用户发送、接收和阅读的邮件数的信息。
 
-**电子邮件应用使用情况**：查看有关使用的电子邮件应用的信息。 这包括每个应用的连接总数以及连接的 Outlook 版本。
+**电子邮件应用** 使用情况：查看有关使用的电子邮件应用的信息。 这包括每个应用程序的连接总数以及连接的 Outlook 版本。
 
-**邮箱使用情况**：查看有关已使用的存储、配额消耗、项目计数和上次 (发送或读取活动) 邮箱的信息。
+**邮箱使用情况**：查看有关已使用的存储、配额消耗、项目计数以及邮箱发送 (读取活动) 活动的信息。
 
 有关详细信息，请参阅下列资源：
 
-- [管理中心中的 Microsoft 365 报告 - Microsoft 365 组](../../admin/activity-reports/office-365-groups.md)
+- [管理中心中的 Microsoft 365 报表 - Microsoft 365 组](../../admin/activity-reports/office-365-groups.md)
 
-- [管理中心中的 Microsoft 365 报告 - 电子邮件活动](../../admin/activity-reports/email-activity.md)
+- [管理中心中的 Microsoft 365 报表 - 电子邮件活动](../../admin/activity-reports/email-activity.md)
 
-- [管理中心中的 Microsoft 365 报告 - 电子邮件应用使用情况](../../admin/activity-reports/email-apps-usage.md)
+- [管理中心中的 Microsoft 365 报表 - 电子邮件应用使用情况](../../admin/activity-reports/email-apps-usage.md)
 
-- [管理中心中的 Microsoft 365 报告 - 邮箱使用情况](../../admin/activity-reports/mailbox-usage.md)
+- [管理中心中的 Microsoft 365 报表 - 邮箱使用情况](../../admin/activity-reports/mailbox-usage.md)
 
-## <a name="security--compliance-reports-in-the-microsoft-365-admin-center"></a>Microsoft 365 &中的安全与合规报告
+## <a name="security--compliance-reports-in-the-microsoft-365-admin-center"></a>Microsoft 365 &中心中的安全与合规性报告
 
-这些增强的报告为 EOP 管理员提供了交互式报告体验，其中包括摘要信息以及深入了解更多详细信息的能力。
+这些增强的报告为 EOP 管理员提供了交互式报告体验，其中包括摘要信息，以及深入了解更多详细信息的能力。
 
-**Defender for Office 365：** 查看属于 Microsoft Defender for Office 365 的安全链接和安全附件的信息。
+**适用于 Office 365** 的 Defender：查看有关属于 Microsoft Defender for Office 365 的安全链接和安全附件的信息。
 
-**EOP：** 查看有关恶意软件检测、欺骗邮件、垃圾邮件检测以及发送到组织以及从组织发送的邮件流的信息。
+**EOP：** 查看有关您组织的恶意软件检测、欺骗邮件、垃圾邮件检测和邮件流的信息。
 
 [查看适用于 Office 365 的 Defender 报告](view-reports-for-atp.md)
 
 ## <a name="custom-reports-using-microsoft-graph"></a>使用 Microsoft Graph 的自定义报告
 
-使用 Microsoft Graph 以编程方式创建管理中心中可用的报告。 有关详细信息，请参阅 [Microsoft Graph 概述](https://docs.microsoft.com/graph/overview) 和使用 Microsoft Graph 中的 Office [365 使用情况报告](https://docs.microsoft.com/graph/api/resources/report)。
+使用 Microsoft Graph 以编程方式创建管理中心中可用的报告。 有关详细信息，请参阅 [Microsoft Graph 概述](/graph/overview) 和在 Microsoft Graph 中处理 Office [365 使用情况报告](/graph/api/resources/report)。
 
 ## <a name="message-trace"></a>邮件跟踪
 
-在电子邮件通过 EOP 时，追踪电子邮件信息。 您可以确定电子邮件是否被接收、拒绝、延迟或由服务传递。 它还显示邮件在达到最终状态之前对邮件采取的操作。
+在电子邮件通过 EOP 时，追踪电子邮件信息。 您可以确定电子邮件是否被接收、拒绝、延迟或由服务传递。 它还显示在邮件达到最终状态之前对邮件采取的操作。
 
 您可以使用此信息有效回答用户的问题、解决邮件流问题、验证策略更改，以及减少联系技术支持寻求帮助的需要。
 
-请参阅 [安全与合规中心&跟踪](message-trace-scc.md)。
+请参阅 [安全与合规中心&邮件跟踪](message-trace-scc.md)。
 
 ## <a name="audit-logging"></a>审核日志记录
 

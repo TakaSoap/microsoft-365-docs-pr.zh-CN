@@ -21,12 +21,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: c82b0a84582d18f8b08b369ff76ba34046c40eba
-ms.sourcegitcommit: 3d48e198e706f22ac903b346cadda06b2368dd1e
+ms.openlocfilehash: 96a4a8ae902f0b8e4767ea3fd42079322d661208
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50727111"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50918806"
 ---
 # <a name="understand-the-analyst-report-in-threat-analytics"></a>了解威胁分析中的分析员报告
 
@@ -35,7 +35,7 @@ ms.locfileid: "50727111"
 **适用于：**
 - Microsoft 365 Defender
 
-> 想要体验 Microsoft 365 Defender？ 可以在[实验室环境中评估它或在](https://aka.ms/mtp-trial-lab)[生产中运行你的试验项目](https://aka.ms/m365d-pilotplaybook)。
+> 想要体验 Microsoft 365 Defender？ 可以在[实验室环境中评估它或在](./mtp-evaluation.md?ocid=cx-docs-MTPtriallab)[生产中运行你的试验项目](./mtp-pilot.md?ocid=cx-evalpilot)。
 >
 
 [!INCLUDE [Prerelease](../includes/prerelease.md)]
@@ -68,7 +68,7 @@ _威胁分析报告的分析员报告部分_
 - 阻止带有 _.lnk_ 附件或其他可疑文件类型的电子邮件
 - 随机化本地管理员密码
 - 向最终用户就网络钓鱼电子邮件和其他威胁矢量进行培训
-- 打开特定 [攻击面减少规则](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction)
+- 打开特定 [攻击面减少规则](/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction)
 
 虽然可以使用"缓解" **选项卡评估** 针对威胁的安全状态，但这些建议可让你采取其他步骤改善安全状况。 仔细阅读分析员报告中的所有缓解指南，并尽可能应用它们。
 
@@ -76,13 +76,13 @@ _威胁分析报告的分析员报告部分_
 分析员报告还提供来自 Microsoft Defender for Endpoint 防病毒的检测以及终结点检测和响应 (EDR) 功能。
 
 ### <a name="antivirus-detections"></a>防病毒检测
-这些检测在 Microsoft [Defender 防病毒](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10) 打开的设备上可用。 当这些检测发生在已载入到 Microsoft Defender for Endpoint 的设备上时，它们还会触发警报，以点亮报告中的图表。
+这些检测在 Microsoft [Defender 防病毒](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10) 打开的设备上可用。 当这些检测发生在已载入到 Microsoft Defender for Endpoint 的设备上时，它们还会触发警报，以点亮报告中的图表。
 
 >[!NOTE]
 >除特定于跟踪的威胁的组件或行为外，分析员报告还列出了可标识各种威胁的通用检测。 这些常规检测不会在图表中反映出来。
 
 ### <a name="endpoint-detection-and-response-edr-alerts"></a>终结点检测和响应 (EDR) 警报
-对于载入到 Microsoft Defender [for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/onboard-configure)的设备，将引发 EDR 警报。 这些警报通常依赖于 Microsoft Defender for Endpoint 传感器收集的安全信号和其他充当强大信号源的终结点功能（如防病毒、网络保护、防篡改保护）。
+对于载入到 Microsoft Defender [for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/onboard-configure)的设备，将引发 EDR 警报。 这些警报通常依赖于 Microsoft Defender for Endpoint 传感器收集的安全信号和其他充当强大信号源的终结点功能（如防病毒、网络保护、防篡改保护）。
 
 与防病毒检测列表一样，一些 EDR 警报旨在一般标记可能未与跟踪威胁关联的可疑行为。 在这种情况下，报告将清楚地将警报标识为"通用"，并且它并不影响报告中的任何图表。
 
@@ -100,7 +100,7 @@ _威胁分析报告的分析员报告部分_
 
 
 >[!NOTE]
-> Microsoft Defender for Endpoint 中也提供 [威胁分析](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/threat-analytics)。 但是，它在 Microsoft 365 Defender 威胁分析具有的 Microsoft Defender for Office 和 Microsoft Defender for Endpoint 之间没有数据集成。
+> Microsoft Defender for Endpoint 中也提供 [威胁分析](/windows/security/threat-protection/microsoft-defender-atp/threat-analytics)。 但是，它在 Microsoft 365 Defender 威胁分析具有的 Microsoft Defender for Office 和 Microsoft Defender for Endpoint 之间没有数据集成。
 
 
 ## <a name="related-topics"></a>相关主题

@@ -12,12 +12,12 @@ ms.custom: seo-marvel-jun2020
 localization_priority: Priority
 description: 了解金融服务机构如何通过使用 Microsoft 365 和 Teams 来维持财务安全合规性并高效协作。
 f1.keywords: NOCSH
-ms.openlocfilehash: 1d1c3886a38636e7e72774f8b2bb5ce574d1c7a6
-ms.sourcegitcommit: 537e513a4a232a01e44ecbc76d86a8bcaf142482
+ms.openlocfilehash: 1418eef664f30cf1e3bdffc8ca7856cf825934bb
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "50029950"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50921152"
 ---
 # <a name="key-compliance-and-security-considerations-for-us-banking-and-capital-markets"></a>针对美国银行业和资本市场的关键合规性与安全性注意事项
 
@@ -109,19 +109,19 @@ FINRA 建议的有效做法包括以下内容：
 
 FINRA 针对数字通信的发现和观测结果直接与组织遵循 [SEC 条例 17a-4](https://www.law.cornell.edu/cfr/text/17/240.17a-4)（用于保留所有业务相关的通信）、FINRA 条例 [3110](https://www.finra.org/rules-guidance/rulebooks/finra-rules/3110) 和 [3120](https://www.finra.org/rules-guidance/rulebooks/finra-rules/3120)（用于监督和审查通信）以及条例系列 [4510](https://www.finra.org/rules-guidance/rulebooks/finra-rules/4510)（用于保留记录）的能力相关。 商品期货交易委员会 (CFTC) 颁布了与 17 CFR 131 类似的要求。 本文后面将深入讨论这些规章。
 
-***Teams 及一整套 Microsoft 365 安全性与合规性产品/服务提供一个公司数字通信频道，使金融服务机构有效开展业务并遵守法规。** _ 本文其余部分介绍了 Microsoft 365 内置的记录管理、信息保护、信息屏障和监管控制等功能如何为 Teams 提供一个可靠工具集，帮助满足这些监管义务。
+***Teams 和全面的 Microsoft 365 安全与合规产品套件为金融服务机构提供企业数字通信频道，以便高效地开展业务并遵守法规。*** 本文的其余部分介绍了 Microsoft 365 内置的记录管理功能、信息保护、信息屏障和监管控制是如何为 Teams 提供强大的工具集来帮助实现这些法规义务的。
 
 ## <a name="protect-modern-collaboration-with-microsoft-365"></a>使用 Microsoft 365 保护新式协作
 
 ### <a name="secure-user-identities-and-control-access"></a>保护用户标识和控制访问
 
-_*_保护对客户信息、财务文档和应用程序的访问从加强对用户标识的保护开始。_*_ 这需要为企业提供一个安全平台来存储和管理标识，进而提供受信任的身份验证方法，并动态控制对这些应用程序的访问。
+***保护对客户信息、财务文档和应用程序的访问从加强对用户标识的保护开始。*** 这需要为企业提供一个安全平台来存储和管理标识，进而提供受信任的身份验证方法，并动态控制对这些应用程序的访问。
 
 员工工作时，他们可以从一个应用程序移动到另一个应用程序，或在多个位置和设备间移动。 必须在此过程的每个步骤中对数据访问进行身份验证。 身份验证过程必须支持强协议和多重身份验证（例如一次性短信密码、身份验证器应用和证书），以确保不会泄露标识。 强制实施基于风险的访问策略对保护财务数据和应用程序免受内部威胁、意外数据泄露和数据外泄至关重要。
 
-Microsoft 365 在 [Azure Active Directory (Azure AD)](https://docs.microsoft.com/azure/active-directory/) 中提供了安全标识平台，在其中集中存储并安全管理标识。 Azure AD 以及一系列相关的 Microsoft 365 安全服务构成了为员工提供安全工作所需的访问权限的基础，同时也保护了组织免受威胁。
+Microsoft 365 在 [Azure Active Directory (Azure AD)](/azure/active-directory/) 中提供了安全标识平台，在其中集中存储并安全管理标识。 Azure AD 以及一系列相关的 Microsoft 365 安全服务构成了为员工提供安全工作所需的访问权限的基础，同时也保护了组织免受威胁。
 
-[Azure Active Directory 多重身份验证 (MFA)](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-mfa-get-started) 内置于平台中，提供了一种额外的身份验证证明，可在用户访问敏感财务数据和应用程序时帮助确认用户标识。 Azure MFA 要求至少两种形式的身份验证，如密码和已知移动设备。 它支持多种双重身份验证选项，包括：
+[Azure Active Directory 多重身份验证 (MFA)](/azure/active-directory/fundamentals/concept-fundamentals-mfa-get-started) 内置于平台中，提供了一种额外的身份验证证明，可在用户访问敏感财务数据和应用程序时帮助确认用户标识。 Azure MFA 要求至少两种形式的身份验证，如密码和已知移动设备。 它支持多种双重身份验证选项，包括：
 
 - Microsoft Authenticator 应用
 - 通过短信发送的一次性密码
@@ -133,14 +133,14 @@ Microsoft 365 在 [Azure Active Directory (Azure AD)](https://docs.microsoft.com
 
 密码是安全链中最薄弱的环节。 如果没有其他验证，它们可能是单一故障点。 Microsoft 支持广泛的身份验证选项，以满足金融机构的需求。
 
-_无密码* 方法有助于用户更方便地使用 MFA。 虽然不是所有 MFA 都是无密码的，但无密码技术采用多重身份验证。 Microsoft、Google 和其他业界领袖制定了一些标准，可在名为“Fast IDentity Online (FIDO)”的组中跨 Web 和移动设备实现更简单、更强大的身份验证体验。 最近开发的 FIDO2 标准使用户能够轻松、安全地进行身份验证，而无需使用密码来消除网络钓鱼。
+*无密码* 方法有助于用户更方便地使用 MFA。 虽然不是所有 MFA 都是无密码的，但无密码技术采用多重身份验证。 Microsoft、Google 和其他业界领袖制定了一些标准，可在名为“Fast IDentity Online (FIDO)”的组中跨 Web 和移动设备实现更简单、更强大的身份验证体验。 最近开发的 FIDO2 标准使用户能够轻松、安全地进行身份验证，而无需使用密码来消除网络钓鱼。
 
 无密码 Microsoft MFA 方法包括：
-* [Microsoft Authenticator](https://docs.microsoft.com/azure/active-directory/user-help/user-help-auth-app-overview)：出于灵活性、便利性和成本的考量，我们建议使用 Microsoft Authenticator 移动应用。 对于任何 Azure AD 连接的应用，Microsoft Authenticator 支持生物识别、推送通知和一次性密码。 可从 Apple 和 Android 应用商店获取这些功能。
-*  [Windows Hello](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-overview)：对于电脑内置体验，建议使用 Windows Hello。 它使用生物特征信息（如人脸或指纹）自动登录。  
-* 现在可以从几个 Microsoft 合作伙伴那里获得 [FIDO2 安全密钥](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/microsoft-compatible-security-key)：Yubico、Feitian Technologies 和 HID Global，他们提供了启用了 USB NFC 的徽章或生物识别密钥。
+* [Microsoft Authenticator](/azure/active-directory/user-help/user-help-auth-app-overview)：出于灵活性、便利性和成本的考量，我们建议使用 Microsoft Authenticator 移动应用。 对于任何 Azure AD 连接的应用，Microsoft Authenticator 支持生物识别、推送通知和一次性密码。 可从 Apple 和 Android 应用商店获取这些功能。
+*  [Windows Hello](/windows/security/identity-protection/hello-for-business/hello-overview)：对于电脑内置体验，建议使用 Windows Hello。 它使用生物特征信息（如人脸或指纹）自动登录。  
+* 现在可以从几个 Microsoft 合作伙伴那里获得 [FIDO2 安全密钥](/windows/security/identity-protection/hello-for-business/microsoft-compatible-security-key)：Yubico、Feitian Technologies 和 HID Global，他们提供了启用了 USB NFC 的徽章或生物识别密钥。
 
-[Azure AD 条件访问](https://docs.microsoft.com/azure/active-directory/conditional-access/)提供了可靠的解决方案，可自动执行访问控制决策并实施组织策略来保护公司资产。 典型的示例是，理财规划师希望访问包含敏感客户数据的应用程序。 会自动要求他们进行多重身份验证，以便专门访问该应用程序，并且必须从公司管理的设备进行访问。 Azure 条件访问将有关用户访问请求的信号集中在一起，如有关用户、设备、位置和网络的属性，以及用户尝试访问的应用程序。 它会根据配置的策略动态评估访问应用程序的举措。 如果用户或设备风险增加，或未满足其他条件，Azure AD 可自动实施策略，如要求 MFA、要求重置安全密码，或者限制或阻止访问。 这有助于确保在动态变化的环境中保护敏感的组织资产。
+[Azure AD 条件访问](/azure/active-directory/conditional-access/)提供了可靠的解决方案，可自动执行访问控制决策并实施组织策略来保护公司资产。 典型的示例是，理财规划师希望访问包含敏感客户数据的应用程序。 会自动要求他们进行多重身份验证，以便专门访问该应用程序，并且必须从公司管理的设备进行访问。 Azure 条件访问将有关用户访问请求的信号集中在一起，如有关用户、设备、位置和网络的属性，以及用户尝试访问的应用程序。 它会根据配置的策略动态评估访问应用程序的举措。 如果用户或设备风险增加，或未满足其他条件，Azure AD 可自动实施策略，如要求 MFA、要求重置安全密码，或者限制或阻止访问。 这有助于确保在动态变化的环境中保护敏感的组织资产。
  
 Azure AD 和相关的 Microsoft 365 安全服务奠定了向金融机构推出新式云协作平台的基础，以便确保对数据和应用程序的访问的安全性，并满足监管机构的合规义务。 这些工具提供下列关键功能：
 
@@ -179,7 +179,7 @@ Microsoft 365 允许所有组织通过一组强大的功能来识别组织内的
 
 将灵敏度标签应用于文档和电子邮件将嵌入标识对象内所选灵敏度的元数据。 然后，灵敏度与数据一起移动。 因此，即使标记的文档存储在用户桌面或本地系统中，它仍会受到保护。 此功能可使其他 Microsoft 365 解决方案（如 Microsoft Cloud App Security）或网络边缘设备识别敏感数据并自动实施安全控制。 灵敏度标签具有额外的优势，那就是让员工了解组织内哪些数据被视为敏感数据，以及如何在接收数据时对其进行处理。
 
-**[Office 365 数据丢失防护 (DLP)](https://docs.microsoft.com/microsoft-365/compliance/data-loss-prevention-policies?view=o365-worldwide)** 会通过扫描敏感数据并对这些对象强制执行策略来识别包含敏感数据的文档、电子邮件和对话。 会对 SharePoint 和 OneDrive for Business 中的文档实施策略。 当用户发送电子邮件，以及在 Teams 聊天和频道对话中，也会实施这些策略。 可配置策略来查找关键字、敏感数据类型、保留标签，以及数据是在组织内共享，还是在外部共享。 提供了一些控制，可帮助组织微调 DLP 策略以减少误报。 找到敏感数据后，可向 Microsoft 365 应用程序中的用户显示可自定义的策略提示，通知他们其内容包含敏感数据，然后提出纠正措施。 策略还可以防止用户访问文档、共享文档或发送包含特定类型敏感数据的电子邮件。 Microsoft 365 支持 100 多种内置敏感数据类型。 组织可以配置自定义敏感数据类型以满足其策略。
+**[Office 365 数据丢失防护 (DLP)](../compliance/data-loss-prevention-policies.md?view=o365-worldwide)** 会通过扫描敏感数据并对这些对象强制执行策略来识别包含敏感数据的文档、电子邮件和对话。 会对 SharePoint 和 OneDrive for Business 中的文档实施策略。 当用户发送电子邮件，以及在 Teams 聊天和频道对话中，也会实施这些策略。 可配置策略来查找关键字、敏感数据类型、保留标签，以及数据是在组织内共享，还是在外部共享。 提供了一些控制，可帮助组织微调 DLP 策略以减少误报。 找到敏感数据后，可向 Microsoft 365 应用程序中的用户显示可自定义的策略提示，通知他们其内容包含敏感数据，然后提出纠正措施。 策略还可以防止用户访问文档、共享文档或发送包含特定类型敏感数据的电子邮件。 Microsoft 365 支持 100 多种内置敏感数据类型。 组织可以配置自定义敏感数据类型以满足其策略。
 
 向组织推出 MIP 和 DLP 策略需要周密的计划和用户教育计划，以便员工了解组织的数据分类架构和哪些类型的数据被视为敏感数据。 为员工提供工具和教育计划，帮助他们识别敏感数据并了解如何处理这些数据，使他们成为解决方案中缓解信息安全风险的一部分。
 
@@ -196,13 +196,13 @@ Microsoft 最近推出了 Microsoft 365 Defender 解决方案，该解决方案�
 ### <a name="the-intelligent-security-graph"></a>[Intelligent Security Graph](https://www.microsoft.com/security/business/intelligence) 
 Microsoft 365 中的安全服务由 Intelligent Security Graph 提供支持。 为了对抗网络威胁，Intelligent Security Graph 使用高级分析链接来自 Microsoft 及其合作伙伴的威胁情报和安全信号。 Microsoft 大规模地运营全局服务，收集数万亿在栈中提供强大保护层的安全信号。 机器学习模型对此情报进行评估，信号和威胁见解在我们的产品和服务中广泛共享。 这使我们能够快速检测和响应威胁，并为客户提供可操作的警报和信息，以便进行补救。 我们的机器学习模型使用新的见解进行持续训练和更新，帮助我们构建更安全的产品并提供更主动的安全性。
 
-[Microsoft Defender for Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp?view=o365-worldwide) 提供了一项集成的 Microsoft 365 服务，保护组织免受通过电子邮件和 Office 文档传递的恶意链接和恶意软件的攻击。 影响当前用户的最常见的攻击途径之一是电子邮件钓鱼攻击。 这些攻击可以针对特定用户，并且可能非常有说服力，其中一些命令会提示用户单击恶意链接或打开包含恶意软件的附件。 计算机受到感染后，攻击者可以窃取用户的凭据并在组织中横向移动，或窃取电子邮件和数据来查找敏感信息。 Defender for Office 365 通过在单击时评估文档和链接是否存在潜在的恶意意图来支持安全附件和安全链接，并阻止访问。 将在受保护的沙箱中打开电子邮件附件，然后将其发送到用户邮箱。 此外，它还会评估 Office 文档中的恶意 URL 链接。 Defender for Office 365 还保护 SharePoint Online、OneDrive for Business 和 Teams 中的链接和文件。 如果检测到恶意文件，Defender for Office 365 会自动锁定该文件以减少潜在的损害。
+[Microsoft Defender for Office 365](../security/office-365-security/office-365-atp.md?view=o365-worldwide) 提供了一项集成的 Microsoft 365 服务，保护组织免受通过电子邮件和 Office 文档传递的恶意链接和恶意软件的攻击。 影响当前用户的最常见的攻击途径之一是电子邮件钓鱼攻击。 这些攻击可以针对特定用户，并且可能非常有说服力，其中一些命令会提示用户单击恶意链接或打开包含恶意软件的附件。 计算机受到感染后，攻击者可以窃取用户的凭据并在组织中横向移动，或窃取电子邮件和数据来查找敏感信息。 Defender for Office 365 通过在单击时评估文档和链接是否存在潜在的恶意意图来支持安全附件和安全链接，并阻止访问。 将在受保护的沙箱中打开电子邮件附件，然后将其发送到用户邮箱。 此外，它还会评估 Office 文档中的恶意 URL 链接。 Defender for Office 365 还保护 SharePoint Online、OneDrive for Business 和 Teams 中的链接和文件。 如果检测到恶意文件，Defender for Office 365 会自动锁定该文件以减少潜在的损害。
 
-[Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) 是一个统一的终结点安全平台，可用于预防性保护、入侵后检测，以及自动调查和响应。 Defender for Endpoint 提供了内置功能，可在企业终结点上发现和保护敏感数据。
+[Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) 是一个统一的终结点安全平台，可用于预防性保护、入侵后检测，以及自动调查和响应。 Defender for Endpoint 提供了内置功能，可在企业终结点上发现和保护敏感数据。
 
-[Microsoft Cloud App Security (MCAS)](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security) 使组织能够在粒度级别实施策略，并基于通过机器学习自动定义的单个用户配置文件来检测行为异常。 MCAS 策略可基于 Azure 条件访问策略生成，通过评估与所访问文档的用户行为和属性相关的其他信号来保护敏感公司资产。 随着时间的推移，MCAS 将了解每位员工对其所访问的数据和所使用的应用程序的典型行为。 根据已知的行为模式，如果员工行为超出该行为配置文件的范围，则策略可自动实施安全控制。 例如，如果员工通常在周一至周五上午 9 点至下午 5 点访问会计应用程序，但突然在星期天晚上频繁访问该应用程序，则 MCAS 可动态执行策略，要求用户重新进行身份验证。 这有助于确保用户凭据没有遭到泄漏。 MCAS 还可帮助识别组织中的“影子 IT”，帮助信息安全团队确保员工在处理敏感数据时使用批准的工具。 最后，MCAS 可以保护云中任意位置的敏感数据，甚至是 Microsoft 365 平台之外的数据。 它使组织能够批准（或不批准）特定的外部云应用，从而控制访问和监视使用。
+[Microsoft Cloud App Security (MCAS)](/cloud-app-security/what-is-cloud-app-security) 使组织能够在粒度级别实施策略，并基于通过机器学习自动定义的单个用户配置文件来检测行为异常。 MCAS 策略可基于 Azure 条件访问策略生成，通过评估与所访问文档的用户行为和属性相关的其他信号来保护敏感公司资产。 随着时间的推移，MCAS 将了解每位员工对其所访问的数据和所使用的应用程序的典型行为。 根据已知的行为模式，如果员工行为超出该行为配置文件的范围，则策略可自动实施安全控制。 例如，如果员工通常在周一至周五上午 9 点至下午 5 点访问会计应用程序，但突然在星期天晚上频繁访问该应用程序，则 MCAS 可动态执行策略，要求用户重新进行身份验证。 这有助于确保用户凭据没有遭到泄漏。 MCAS 还可帮助识别组织中的“影子 IT”，帮助信息安全团队确保员工在处理敏感数据时使用批准的工具。 最后，MCAS 可以保护云中任意位置的敏感数据，甚至是 Microsoft 365 平台之外的数据。 它使组织能够批准（或不批准）特定的外部云应用，从而控制访问和监视使用。
  
-[Microsoft Defender for Identity](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp) 是一种基于云的安全解决方案，可利用本地 Active Directory 信号来识别、检测和调查针对组织的高级威胁、已遭入侵标识和恶意内部行为。 AATP 使 SecOp 分析师和安全专家能够在混合环境中检测高级攻击，从而实现以下目的：
+[Microsoft Defender for Identity](/azure-advanced-threat-protection/what-is-atp) 是一种基于云的安全解决方案，可利用本地 Active Directory 信号来识别、检测和调查针对组织的高级威胁、已遭入侵标识和恶意内部行为。 AATP 使 SecOp 分析师和安全专家能够在混合环境中检测高级攻击，从而实现以下目的：
 * 使用基于学习的分析来监视用户、实体行为和活动。
 * 保护存储在 Active Directory 中的用户标识和凭据。
 * 发现并调查整个击杀链中的可疑用户活动和高级攻击。
@@ -218,15 +218,15 @@ Microsoft 365 中的安全服务由 Intelligent Security Graph 提供支持。 �
  
 金融机构管理大量数据。 有些保留期是由事件触发的，如合同到期或员工离开组织。 在这种情况下，应用记录保留策略可能会比较困难。 在组织文档中准确分配记录保留期的方法可能有所不同。 有些组织广泛应用保留策略，或者利用自动分类和机器学习技术。 其他组织则标识需要更精细的过程的方法，将保留期单独分配给各个文档。
 
-***Microsoft 365 提供灵活的功能来定义保留标签和策略，以智能地实施记录管理要求。** _ 记录管理员定义保留标签，该标签代表传统保留计划中的“记录类型”。 保留标签包含定义这些详细信息的设置：
+***Microsoft 365 提供了灵活的功能，可定义保留标签和策略，以智能地实现记录管理要求。*** 记录管理器定义了一个保留标签，它代表了传统保留计划中的一个“记录类型”。 保留标签包含定义这些详细信息的设置：
 
 - 记录保留的时间
 - 保留期到期时发生的情况（删除文档、启动处置评审或不执行任何操作）
 -  什么触发了保留期开始（创建日期、上次修改日期、标记日期或事件），并将文档或电子邮件标记为记录（这意味着不能编辑或删除）
 
-然后将保留标签发布到 SharePoint 或 OneDrive 站点、Exchange 邮箱和 Microsoft 365 组。 用户可以手动将保留标签应用于文档和电子邮件。 记录管理员可以使用智能来自动应用标签。 智能功能可基于 [90 多个内置的敏感信息类型](https://docs.microsoft.com/microsoft-365/compliance/content-search?view=o365-worldwide)（如 ABA 路由号码、美国银行帐号或美国社会保险号码）。 还可以根据文档或电子邮件中的关键字或敏感数据（如信用卡号或其他个人身份信息）或基于 SharePoint 元数据对这些功能进行自定义。 对于不能通过手动或自动模式匹配轻松识别的数据，可以使用可训练分类器基于机器学习技术对文档进行智能分类。
+然后将保留标签发布到 SharePoint 或 OneDrive 站点、Exchange 邮箱和 Microsoft 365 组。 用户可以手动将保留标签应用于文档和电子邮件。 记录管理员可以使用智能来自动应用标签。 智能功能可基于 [90 多个内置的敏感信息类型](../compliance/content-search.md?view=o365-worldwide)（如 ABA 路由号码、美国银行帐号或美国社会保险号码）。 还可以根据文档或电子邮件中的关键字或敏感数据（如信用卡号或其他个人身份信息）或基于 SharePoint 元数据对这些功能进行自定义。 对于不能通过手动或自动模式匹配轻松识别的数据，可以使用可训练分类器基于机器学习技术对文档进行智能分类。
  
-_ *证券交易委员会 (SEC)** 要求经纪人代理商和其他受监管的金融机构保留所有业务相关的通信。 这些要求适用于多种类型的通信和数据，包括电子邮件、文档、即时消息、传真等。 **SEC 条例 17a-4** 定义这些组织必须满足的条件，以便将记录存储在电子数据存储系统中。 2003 年，SEC 发布了一篇阐明这些要求的文稿。 其中包含以下条件：
+**证券交易委员会 (SEC)** 要求经纪人代理商和其他受监管的金融机构保留所有业务相关的通信。 这些要求适用于多种类型的通信和数据，包括电子邮件、文档、即时消息、传真等。 **SEC 条例 17a-4** 定义这些组织必须满足的条件，以便将记录存储在电子数据存储系统中。 2003 年，SEC 发布了一篇阐明这些要求的文稿。 其中包含以下条件：
 
 * 电子存储系统保存的数据必须是不可重写和不可擦除的。 这称为 WORM 要求（写入一次，多次读取）。
 * 在接到传票或其他法律命令时，存储系统必须能够存储超过条例要求的保留期的数据。
@@ -268,7 +268,7 @@ _ *证券交易委员会 (SEC)** 要求经纪人代理商和其他受监管的�
 
 最后，这些条例要求组织建立策略，并在银行服务、销售或贸易中涉及的角色之间实施信息屏障，以避免与分析人员交换信息和通信。
 
-[信息屏障](https://docs.microsoft.com/microsoft-365/compliance/information-barriers?view=o365-worldwide)提供了在 Office 365 环境中建立信息隔离墙的能力，允许合规性管理员或其他授权的管理员定义允许或阻止 Teams 中的用户组之间通信的策略。 信息屏障对特定操作执行检查以防止未经授权的通信。 在内部团队从事合并/收购或敏感交易，或处理必须严格限制的敏感内部信息的情况下，信息屏障也会限制通信。
+[信息屏障](../compliance/information-barriers.md?view=o365-worldwide)提供了在 Office 365 环境中建立信息隔离墙的能力，允许合规性管理员或其他授权的管理员定义允许或阻止 Teams 中的用户组之间通信的策略。 信息屏障对特定操作执行检查以防止未经授权的通信。 在内部团队从事合并/收购或敏感交易，或处理必须严格限制的敏感内部信息的情况下，信息屏障也会限制通信。
 
 Microsoft 365 中的信息屏障支持 Teams 中的对话和文件。 他们可以阻止以下类型的通信相关操作，以帮助遵守 FINRA 法规：
 
@@ -319,14 +319,14 @@ Microsoft 365 最近启动了一个内部风险管理解决方案，它将 Micro
 
 例如，Microsoft 365 中的内部风险管理可将来自用户 Windows 10 桌面版的信号关联起来（例如，将文件复制到 USB 驱动器，或通过电子邮件发送个人电子邮件帐户，其中包括 Office 365 电子邮件、SharePoint Online、Microsoft Teams 或 OneDrive for Business 等联机服务中的活动），以识别数据泄漏模式。 它还可以将这些活动与离开组织的员工关联起来，这是一种常见的数据泄漏模式。 它可监控一段时间内的多个活动和行为。 当常见模式出现时，它会发出警报，帮助调查人员专注于主要活动，以高可信度验证是否违反了策略。 内部风险管理可以对调查人员的数据进行伪匿名化处理，以帮助满足数据隐私规定，同时还可以提供帮助他们有效开展调查的关键活动。 它允许调查人员将关键活动数据打包并安全地发送给 HR 和法律部门，遵循常见的升级工作流程，以对出现的案例实施补救行动。
 
-Microsoft 365 中的内部风险管理显著增强了组织的功能，可监视和调查内部风险，同时允许组织继续满足数据隐私法规要求，并在需要更高级别操作的情况下遵循既定的升级途径。 有关 Microsoft 365 中预览体验计划风险管理的详细信息，请参阅 [Microsoft 365 中预览体验计划风险管理的新式风险痛点和工作流](https://docs.microsoft.com/microsoft-365/compliance/insider-risk-management?view=o365-worldwide)。
+Microsoft 365 中的内部风险管理显著增强了组织的功能，可监视和调查内部风险，同时允许组织继续满足数据隐私法规要求，并在需要更高级别操作的情况下遵循既定的升级途径。 有关 Microsoft 365 中预览体验计划风险管理的详细信息，请参阅 [Microsoft 365 中预览体验计划风险管理的新式风险痛点和工作流](../compliance/insider-risk-management.md?view=o365-worldwide)。
 
 ![在小隔间里的呼叫中心工作人员一边看屏幕一边打字。](../media/clo17-call-center-006.jpg)
  
 ### <a name="tenant-restrictions"></a>租户限制
 处理敏感数据并严格重视安全性的组织通常希望控制用户可访问的联机资源。 同时，他们希望通过诸如 Office 365 之类的联机服务启用安全协作。 因此，控制用户可访问的 Office 365 环境将成为一个挑战，因为非企业 Office 365 环境可用于恶意或无意地从企业设备中窃取数据。 过去，组织将限制用户可从公司设备访问的域或 IP 地址。 但在以云为中心的世界里，用户需要合法访问 Office 365 服务，因此，此方法并不适用。
 
-Microsoft 365 提供的租户[限制](https://docs.microsoft.com/azure/active-directory/manage-apps/tenant-restrictions)可以解决此问题。 可通过配置租户限制来限制员工使用未经授权的身份（不属于公司目录的身份）访问外部 Office 365 企业租户。 目前，租户限制适用于租户，仅允许访问配置列表中出现的租户。 Microsoft 将继续开发此解决方案，以提高控制粒度并增强其提供的保护。
+Microsoft 365 提供的租户[限制](/azure/active-directory/manage-apps/tenant-restrictions)可以解决此问题。 可通过配置租户限制来限制员工使用未经授权的身份（不属于公司目录的身份）访问外部 Office 365 企业租户。 目前，租户限制适用于租户，仅允许访问配置列表中出现的租户。 Microsoft 将继续开发此解决方案，以提高控制粒度并增强其提供的保护。
 
 ![图形](../media/clo1717-corporate-office-001.jpg)
  

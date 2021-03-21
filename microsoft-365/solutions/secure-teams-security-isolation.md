@@ -15,12 +15,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: 了解如何创建具有唯一敏感度标签的团队来保证安全。
-ms.openlocfilehash: 5ddd42f9e2f2779ca6bf864554140a3f18d2cdea
-ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
+ms.openlocfilehash: 2ecd8e0458f6ebef9ebd1b0c3724195cc70f6378
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "50405698"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50920924"
 ---
 # <a name="configure-a-team-with-security-isolation"></a>配置具有安全隔离的团队
 
@@ -40,7 +40,7 @@ ms.locfileid: "50405698"
     - 加密团队所应用的文件
 
 > [!IMPORTANT]
-> 继续执行本文中的步骤之前，确保启用[敏感度标签来保护 Microsoft Teams、Office 365 组和 SharePoint 网站中的内容](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites)。
+> 继续执行本文中的步骤之前，确保启用[敏感度标签来保护 Microsoft Teams、Office 365 组和 SharePoint 网站中的内容](../compliance/sensitivity-labels-teams-groups-sites.md)。
 
 观看此视频以简要了解部署流程。
 <br>
@@ -70,8 +70,8 @@ ms.locfileid: "50405698"
 
 有关与来宾安全共享的详细信息，请参阅以下资源：
 
-- [在与组织外人员共享文件时限制意外公开信息](https://docs.microsoft.com/microsoft-365/solutions/share-limit-accidental-exposure)
-- [创建安全的来宾共享环境](https://docs.microsoft.com/microsoft-365/solutions/create-secure-guest-sharing-environment)
+- [在与组织外人员共享文件时限制意外公开信息](./share-limit-accidental-exposure.md)
+- [创建安全的来宾共享环境](./create-secure-guest-sharing-environment.md)
 
 为允许或阻止来宾共享，我们将团队的敏感度标签与关联 SharePoint 网站的网站级别共享控件结合使用，这两者将在后面讨论。
 
@@ -98,7 +98,7 @@ ms.locfileid: "50405698"
 2. 在“**设置**”选项卡上，展开“**成员权限**”。
 3. 清除“**允许成员创建专用频道**”复选框。
 
-还可以使用“[团队策略](https://docs.microsoft.com/MicrosoftTeams/teams-policies)”来控制谁可以创建专用频道。
+还可以使用“[团队策略](/MicrosoftTeams/teams-policies)”来控制谁可以创建专用频道。
 
 ## <a name="create-a-sensitivity-label"></a>创建敏感度标签
 
@@ -194,7 +194,7 @@ ms.locfileid: "50405698"
 
 #### <a name="private-channels"></a>专用频道
 
-如果向团队添加私人频道，则每个私人频道都会使用默认共享设置创建新的 SharePoint 网站。 这些网站在 SharePoint 管理中心中不可见，因此必须使用含有以下参数的 [Set-SPOSite ](https://docs.microsoft.com/powershell/module/sharepoint-online/set-sposite) PowerShell cmdlet 来更新来宾共享设置：
+如果向团队添加私人频道，则每个私人频道都会使用默认共享设置创建新的 SharePoint 网站。 这些网站在 SharePoint 管理中心中不可见，因此必须使用含有以下参数的 [Set-SPOSite ](/powershell/module/sharepoint-online/set-sposite) PowerShell cmdlet 来更新来宾共享设置：
 
 - `-SharingCapability Disabled` 用于禁用来宾共享（默认启用）
 - `-DefaultSharingLinkType Internal` 用于更改“*指定人员*”的默认共享链接
@@ -229,10 +229,10 @@ ms.locfileid: "50405698"
 
 Microsoft 365 提供了其他用于保护内容的方法。 考虑以下选项是否有助于提高组织的安全性。
 
-- 让你的来宾用户同意[使用条款](https://docs.microsoft.com/azure/active-directory/conditional-access/terms-of-use)。
-- 为来宾用户配置“[会话超时策略](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-session-lifetime)”。
-- 创建“[敏感信息类型](https://docs.microsoft.com/microsoft-365/compliance/custom-sensitive-info-types)”，并使用“[数据丢失保护](https://docs.microsoft.com/microsoft-365/compliance/data-loss-prevention-policies)”来设置有关访问敏感信息的策略。
-- 使用 [Azure Active Directory 访问](https://docs.microsoft.com/azure/active-directory/governance/access-reviews-overview)审核，定期审核团队访问权限和成员资格。
+- 让你的来宾用户同意[使用条款](/azure/active-directory/conditional-access/terms-of-use)。
+- 为来宾用户配置“[会话超时策略](/azure/active-directory/conditional-access/howto-conditional-access-session-lifetime)”。
+- 创建“[敏感信息类型](../compliance/sensitive-information-type-learn-about.md)”，并使用“[数据丢失保护](../compliance/data-loss-prevention-policies.md)”来设置有关访问敏感信息的策略。
+- 使用 [Azure Active Directory 访问](/azure/active-directory/governance/access-reviews-overview)审核，定期审核团队访问权限和成员资格。
 
 ## <a name="drive-user-adoption-for-team-members"></a>驱动团队成员的用户采用
 
@@ -266,4 +266,4 @@ Microsoft 365 提供了其他用于保护内容的方法。 考虑以下选项�
 
 ## <a name="see-also"></a>另请参阅
 
-[Azure AD Privileged Identity Management](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-configure)
+[Azure AD Privileged Identity Management](/azure/active-directory/privileged-identity-management/pim-configure)

@@ -19,12 +19,12 @@ f1.keywords: NOCSH
 ms.custom: ''
 localization_priority: Priority
 description: 了解在 Microsoft 365 中用于限制或禁用共享的选项。
-ms.openlocfilehash: 388d354886805f593b1c7815f16d1e0156e12fe0
-ms.sourcegitcommit: a62ac3c01ba700a51b78a647e2301f27ac437c5a
+ms.openlocfilehash: 46cef1aac6d3387366a5e8ce9f9c1129f6c83e61
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/12/2021
-ms.locfileid: "50233526"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50920200"
 ---
 # <a name="limit-sharing-in-microsoft-365"></a>限制 Microsoft 365 中的共享
 
@@ -45,9 +45,9 @@ ms.locfileid: "50233526"
 
 你还可以限制人员访问共享内容的条件。 有关详细信息，请参阅本文后面的[条件访问](#conditional-access)。
 
-虽然可使用本文中介绍的管理员控制措施来限制组织内的共享，但我们强烈建议考虑使用 Microsoft 365 中提供的安全和合规性功能，以创建安全的共享环境。 有关信息，请参阅[使用 Microsoft 365 在 SharePoint 中进行文件协作](https://docs.microsoft.com/sharepoint/deploy-file-collaboration)和[使用安全隔离配置团队](secure-teams-security-isolation.md)。
+虽然可使用本文中介绍的管理员控制措施来限制组织内的共享，但我们强烈建议考虑使用 Microsoft 365 中提供的安全和合规性功能，以创建安全的共享环境。 有关信息，请参阅[使用 Microsoft 365 在 SharePoint 中进行文件协作](/sharepoint/deploy-file-collaboration)和[使用安全隔离配置团队](secure-teams-security-isolation.md)。
 
-若要了解组织中如何使用共享，请[运行文件和文件夹共享报告](https://docs.microsoft.com/sharepoint/sharing-reports)。
+若要了解组织中如何使用共享，请[运行文件和文件夹共享报告](/sharepoint/sharing-reports)。
 
 ## <a name="microsoft-365-group-or-team"></a>Microsoft 365 组或团队
 
@@ -73,9 +73,9 @@ ms.locfileid: "50233526"
     ![Microsoft 365 管理中心中内的 Microsoft 365 组共享设置的屏幕截图](../media/office-365-groups-guest-settings-off.png)
 
 > [!NOTE]
-> 如果想要阻止特定组或团队的来宾共享，可使用 [Microsoft PowerShell](per-group-guest-access.md) 或[敏感性标签](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites)来执行此操作。
+> 如果想要阻止特定组或团队的来宾共享，可使用 [Microsoft PowerShell](per-group-guest-access.md) 或[敏感性标签](../compliance/sensitivity-labels-teams-groups-sites.md)来执行此操作。
 
-可通过在 Azure Active Directory 中允许或阻止域，将来宾共享限制为指定域的用户。 如果已启用 [Azure AD B2B 的 SharePoint 和 OneDrive 集成](https://docs.microsoft.com/sharepoint/sharepoint-azureb2b-integration-preview)，该操作还会影响 SharePoint 中的来宾共享。
+可通过在 Azure Active Directory 中允许或阻止域，将来宾共享限制为指定域的用户。 如果已启用 [Azure AD B2B 的 SharePoint 和 OneDrive 集成](/sharepoint/sharepoint-azureb2b-integration-preview)，该操作还会影响 SharePoint 中的来宾共享。
 
 仅允许向指定域发出共享邀请
 1. 在 Azure Active Directory 中的“概述”页面上，单击“**组织关系**”。
@@ -118,11 +118,11 @@ ms.locfileid: "50233526"
 
 ### <a name="block-access-to-a-site"></a>阻止访问网站
 
-可通过更改网站的锁定状态，阻止访问网站或将网站设置为只读。 有关详细信息，请参阅[锁定和解除锁定网站](https://docs.microsoft.com/sharepoint/manage-lock-status)。
+可通过更改网站的锁定状态，阻止访问网站或将网站设置为只读。 有关详细信息，请参阅[锁定和解除锁定网站](/sharepoint/manage-lock-status)。
 
 ### <a name="permissions-inheritance"></a>权限继承
 
-虽然不推荐，但你可以使用 [SharePoint 权限继承](https://docs.microsoft.com/sharepoint/what-is-permissions-inheritance)自定义网站和子网站的访问级别。
+虽然不推荐，但你可以使用 [SharePoint 权限继承](/sharepoint/what-is-permissions-inheritance)自定义网站和子网站的访问级别。
 
 ## <a name="sharing-with-specific-people"></a>与特定人员共享
 
@@ -193,15 +193,15 @@ Set-SPOSite -Identity https://contoso.sharepoint.com -DisableCompanyWideSharingL
 
 默认情况下，用户可以创建他们可以共享内容的新网站、组和团队（具体取决于你的共享设置）。 你可限制可创建网站、组和团队的人员。 请参阅以下参考：
 
-- [管理 SharePoint 中的网站创建](https://docs.microsoft.com/sharepoint/manage-site-creation)
-- [管理可创建 Microsoft 365 组的人员](https://docs.microsoft.com/microsoft-365/solutions/manage-creation-of-groups)
+- [管理 SharePoint 中的网站创建](/sharepoint/manage-site-creation)
+- [管理可创建 Microsoft 365 组的人员](./manage-creation-of-groups.md)
 
 > [!NOTE]
 > 限制组创建将限制团队创建。
 
 ## <a name="email"></a>电子邮件
 
-可通过加密防止不必要的电子邮件共享。 这将防止电子邮件被转发或与未经授权的用户共享。 你可以使用敏感度标签来启用电子邮件加密。 有关详细信息，请参阅[使用敏感度标签中的加密限制对内容的访问](https://docs.microsoft.com/microsoft-365/compliance/encryption-sensitivity-labels)。
+可通过加密防止不必要的电子邮件共享。 这将防止电子邮件被转发或与未经授权的用户共享。 你可以使用敏感度标签来启用电子邮件加密。 有关详细信息，请参阅[使用敏感度标签中的加密限制对内容的访问](../compliance/encryption-sensitivity-labels.md)。
 
 ## <a name="download-or-file-copy"></a>下载或文件复制
 
@@ -209,12 +209,12 @@ Set-SPOSite -Identity https://contoso.sharepoint.com -DisableCompanyWideSharingL
 
 ## <a name="conditional-access"></a>条件访问
 
-Azure Active Directory 条件访问提供的选项可根据网络位置、设备运行状况、登录风险和其他因素限制或防止与人员共享。 查看[什么是条件访问？](https://docs.microsoft.com/azure/active-directory/conditional-access/overview)
+Azure Active Directory 条件访问提供的选项可根据网络位置、设备运行状况、登录风险和其他因素限制或防止与人员共享。 查看[什么是条件访问？](/azure/active-directory/conditional-access/overview)
 
 SharePoint 提供与 Azure AD 条件访问的直接集成，适用于未托管的设备和网络位置。 有关详细信息，请参阅以下参考：
 
-- [控制来自非托管设备的访问](https://docs.microsoft.com/sharepoint/control-access-from-unmanaged-devices)
-- [根据网络位置控制对 SharePoint 和 OneDrive 数据的访问](https://docs.microsoft.com/sharepoint/control-access-based-on-network-location)
+- [控制来自非托管设备的访问](/sharepoint/control-access-from-unmanaged-devices)
+- [根据网络位置控制对 SharePoint 和 OneDrive 数据的访问](/sharepoint/control-access-based-on-network-location)
 
 ## <a name="see-also"></a>另请参阅
 

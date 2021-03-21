@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 摘要：Active Directory 联合身份验证 (AD FS) Microsoft 云德国迁移的迁移步骤。
-ms.openlocfilehash: 852fc8f93158d7b6080f1add5a05e7367539f889
-ms.sourcegitcommit: 8f1721de52dbe3a12c11a0fa5ed0ef5972ca8196
+ms.openlocfilehash: 146f476a43e46925d87763a800467bf52adc73e5
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/17/2021
-ms.locfileid: "50838409"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50918902"
 ---
 # <a name="ad-fs-migration-steps-for-the-migration-from-microsoft-cloud-deutschland"></a>从德国 Microsoft 云迁移的 AD FS 迁移步骤
 
@@ -89,7 +89,8 @@ ms.locfileid: "50838409"
 
 ## <a name="ad-fs-disaster-recovery-wid-database"></a>AD FS 灾难恢复 (WID 数据库) 
 
-若要在灾难中还原 AD FS 场，需使用 [AD FS](https://docs.microsoft.com/windows-server/identity/ad-fs/operations/ad-fs-rapid-restore-tool) 快速还原工具。 因此，必须下载该工具，并且必须在开始迁移之前创建并安全地存储备份。 本示例中，已运行以下命令来备份在 WID 数据库上运行的服务器场：
+
+若要在灾难中还原 AD FS 场，需使用 [AD FS](/windows-server/identity/ad-fs/operations/ad-fs-rapid-restore-tool) 快速还原工具。 因此，必须下载该工具，并且必须在开始迁移之前创建并安全地存储备份。 本示例中，已运行以下命令来备份在 WID 数据库上运行的服务器场：
 
 <h2 id="backup"></h2>
 
@@ -127,7 +128,7 @@ ms.locfileid: "50838409"
 3. 将新的 DNS 记录或负载平衡器指向新的 AD FS 服务器。
 
 
-## <a name="more-information"></a>详细信息
+## <a name="more-information"></a>更多信息
 
 入门：
 
@@ -144,6 +145,6 @@ ms.locfileid: "50838409"
 
 云应用：
 
-- [Dynamics 365 迁移计划信息](https://aka.ms/d365ceoptin)
-- [Power BI 迁移计划信息](https://aka.ms/pbioptin)
-- [开始 Microsoft Teams 升级](https://aka.ms/SkypeToTeams-Home)
+- [Dynamics 365 迁移计划信息](/dynamics365/get-started/migrate-data-german-region)
+- [Power BI 迁移计划信息](/power-bi/admin/service-admin-migrate-data-germany)
+- [开始 Microsoft Teams 升级](/microsoftteams/upgrade-start-here)

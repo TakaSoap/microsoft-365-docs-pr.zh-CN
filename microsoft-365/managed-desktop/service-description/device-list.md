@@ -8,18 +8,18 @@ ms.localizationpriority: normal
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 729e9dc9ab512a7e93bc291a9a52222c15a42b79
-ms.sourcegitcommit: 3d48e198e706f22ac903b346cadda06b2368dd1e
+ms.openlocfilehash: b0aa619f09f2d6b32289e037283a0dc6578d0150
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50727417"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50920500"
 ---
 # <a name="microsoft-managed-desktop-devices"></a>Microsoft 托管桌面设备 
 
 Microsoft 托管桌面会定期评估要包含在服务中的设备。 本文列出了当前支持的特定设备。 有关设备要求的更一般声明，请参阅 [设备要求](device-requirements.md)。
 
-有关 Microsoft 托管桌面的信息，请参阅 [Microsoft 托管桌面文档和资源](https://docs.microsoft.com/microsoft-365/managed-desktop/)。 
+有关 Microsoft 托管桌面的信息，请参阅 [Microsoft 托管桌面文档和资源](../index.yml)。 
 
 <!-- Microsoft 365 E5; Device as a Service -->
 <!-- Split from device & technologies topic. Destination topic for aka.ms/device-list  -->
@@ -78,11 +78,11 @@ Microsoft 托管桌面会定期评估要包含在服务中的设备。 本文列
 
 - 如果特定 SKU 在设备要求中列出，请确保在订购时使用它。 这样做可确保设备符合 Microsoft 托管桌面软件要求。 
 - 尚未完成 Windows 首次运行体验。
-- 使用设备注册功能向 Microsoft 托管[桌面注册](https://aka.ms/mmddrhelp)
+- 使用设备注册功能向 Microsoft 托管[桌面注册](../get-started/register-devices-self.md)
 
 >[!NOTE]
 >具有 2.0 GHz 或更快处理器的设备将为参与这些活动的用户提供更好的体验：
->- 将视频会议与 Teams 一同使用。 有关详细信息 [，请参阅 Microsoft Teams](https://docs.microsoft.com/microsoftteams/hardware-requirements-for-the-teams-app) 的硬件要求。
+>- 将视频会议与 Teams 一同使用。 有关详细信息 [，请参阅 Microsoft Teams](/microsoftteams/hardware-requirements-for-the-teams-app) 的硬件要求。
 >-  将一台设备用于多个不同的工作负载。
 >- 使用多个监视器。
 
@@ -93,8 +93,3 @@ Microsoft 托管桌面会定期评估要包含在服务中的设备。 本文列
 - 有关 Dell 设备的更多问题<a href="mailto:MMD_at_dell@dell.com">，MMD_at_dell@dell.com。</a>
 
 - 有关 HP 设备和设备订购说明的更多问题，请联系：美洲<a href="mailto:mmd-americas@hp.com"> (mmd-americas@hp.com) ;</a>欧洲/中东/非洲<a href="mailto:mmd-emea@hp.com"> (mmd-emea@hp.com) ;</a>亚太地区/日本<a href="mailto:mmd-apj@hp.com"> (mmd-apj@hp.com) ;</a>全局<a href="mailto:mmd@hp.com"> (mmd@hp.com) </a>
-
-
-
-
-

@@ -15,12 +15,12 @@ ms.collection:
 - M365-subscription-management
 ms.custom: ''
 description: 示例组织如何使用频道部署和更新。
-ms.openlocfilehash: 88567fedd92f01885c4971acc273a676c3e82de8
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: a91ee948ca2051ceccb3883b2dd0198c1070bc03
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46686150"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50919058"
 ---
 # <a name="deployment-and-update-channel-example-configurations"></a>部署和更新频道示例配置
 
@@ -41,9 +41,9 @@ ms.locfileid: "46686150"
 
 | 客户/频道产品和服务 | Windows 10 | Microsoft 365 企业应用版 (Windows 10) | 示例 |
 |:-------|:-------|:-----|:-------|
-| 适用于希望在最新版本就绪后立即使用的客户。 | 半年频道 | [当前频道](https://docs.microsoft.com/deployoffice/overview-update-channels#current-channel-overview) | [最新版本](deploy-update-channels-examples-rapid-deploy.md) |
-| 适用于希望最新版本具有更高可预测性的企业。 | 半年频道 | [每月企业频道](https://docs.microsoft.com/deployoffice/overview-update-channels#monthly-enterprise-channel-overview) |  |
-| 适用于需要在每次更新之前进行大量 IT 测试的企业。 | 半年频道 | [半年企业频道](https://docs.microsoft.com/deployoffice/overview-update-channels#semi-annual-enterprise-channel-overview) |  |
+| 适用于希望在最新版本就绪后立即使用的客户。 | 半年频道 | [当前频道](/deployoffice/overview-update-channels#current-channel-overview) | [最新版本](deploy-update-channels-examples-rapid-deploy.md) |
+| 适用于希望最新版本具有更高可预测性的企业。 | 半年频道 | [每月企业频道](/deployoffice/overview-update-channels#monthly-enterprise-channel-overview) |  |
+| 适用于需要在每次更新之前进行大量 IT 测试的企业。 | 半年频道 | [半年企业频道](/deployoffice/overview-update-channels#semi-annual-enterprise-channel-overview) |  |
 |||||
 
 

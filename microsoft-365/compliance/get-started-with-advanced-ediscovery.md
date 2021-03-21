@@ -12,49 +12,33 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection:
 - M365-security-compliance
-- m365solution-ediscovery
+- m365solution-aed
 - m365initiative-compliance
+- m365solution-scenario
 search.appverid:
 - MOE150
 - MET150
 description: 本文介绍如何设置高级电子数据展示，以便你可以开始创建和管理事例。 它还介绍了所需的 Microsoft 订阅和许可。 完成几个快速步骤后，即可使用高级电子数据展示工具。
-ms.openlocfilehash: 29a220f36a55a04d1c1a24add03b2e013a5c60ba
-ms.sourcegitcommit: 3d48e198e706f22ac903b346cadda06b2368dd1e
+ms.openlocfilehash: 6c6aed482da8f203154d94313ec04519d6a330ea
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50727407"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50919739"
 ---
 # <a name="set-up-microsoft-365-advanced-ediscovery"></a>设置 Microsoft 365 高级电子数据展示
 
-Microsoft 365 中的高级电子数据展示提供[](overview-ediscovery-20.md#advanced-ediscovery-workflow)端到端工作流，以保留、收集、审阅、分析和导出对组织内部和外部调查做出响应的数据。 部署高级电子数据展示不需要任何内容，但 IT 管理员和电子数据展示管理员必须完成一些先决条件任务，组织才能开始创建和使用高级电子数据展示事例来管理调查。
+Microsoft 365 中的高级电子数据展示提供端到端工作流，以保留、收集、审阅、分析和导出对组织内部和外部调查做出响应的数据。 部署高级电子数据展示不需要任何内容，但 IT 管理员和电子数据展示管理员必须完成一些先决条件任务，组织才能开始创建和使用高级电子数据展示事例来管理调查。
 
-本文讨论设置高级电子数据展示所需的步骤。 这包括确保访问高级电子数据展示和将保管人添加到事例所需的适当许可，以及向法律和调查团队分配权限，以便他们可以访问和管理事例。
+本文讨论设置高级电子数据展示所需的以下步骤。
+
+![设置高级电子数据展示的步骤](../media/set-up-advanced-ediscovery.png)
+
+这包括确保访问高级电子数据展示和将保管人添加到事例所需的适当许可，以及向法律和调查团队分配权限，以便他们可以访问和管理事例。
 
 ## <a name="step-1-verify-and-assign-appropriate-licenses"></a>步骤 1：验证并分配适当的许可证
 
-高级电子数据展示的许可需要相应的组织订阅和每用户许可。
-
-- **组织订阅：** 若要访问 Microsoft 365 合规中心或安全与合规中心&高级电子数据展示，你的组织必须具有以下项之一：
-
-  - Microsoft 365 E5 或 Office 365 E5 订阅
-  
-  - 具有 E5 合规性附加设备的 Microsoft 365 E3 订阅
-
-  - 具有 E5 电子数据展示和审核加载项的 Microsoft 365 E3 订阅
-
-  如果你没有现有的 Microsoft 365 E5 计划，并且想要试用高级电子数据展示，可以将[Microsoft 365](https://docs.microsoft.com/office365/admin/try-or-buy-microsoft-365)添加到现有订阅或注册 Microsoft [](https://www.microsoft.com/microsoft-365/enterprise) 365 E5 试用版。
-
-- **每用户许可：** 若要在高级电子数据展示案例中将用户添加为保管人，必须为该用户分配以下许可证之一，具体取决于你的组织订阅：
-
-  - Microsoft 365：必须为用户分配 Microsoft 365 E5 许可证、E5 合规性附加许可证或 E5 电子数据展示和审核加载项许可证。
-
-  - Office 365：必须为用户分配 Office 365 E5 许可证。
-
-   若要了解如何分配许可证，请参阅 [向用户分配许可证](https://docs.microsoft.com/microsoft-365/admin/manage/assign-licenses-to-users)。
-
-> [!NOTE]
-> 用户只需要 E5 许可证 (或相应的附加许可证) 作为保管人添加到高级电子数据展示案例。 使用高级电子数据展示来管理事例和审查事例数据的 IT 管理员、电子数据展示管理员、律师、律师或律师不需要 E5 或附加许可证。
+高级电子数据展示的许可需要相应的组织订阅和每用户许可。 有关高级电子数据展示的许可要求列表，请参阅 [订阅和许可](overview-ediscovery-20.md#subscriptions-and-licensing)。
 
 ## <a name="step-2-assign-ediscovery-permissions"></a>步骤 2：分配电子数据展示权限
 
@@ -62,7 +46,7 @@ Microsoft 365 中的高级电子数据展示提供[](overview-ediscovery-20.md#a
 
 完成以下步骤以将用户添加到电子数据展示管理员角色组：
 
-1. 转到 [https://protection.office.com/permissions](https://protection.office.com/permissions) ，然后使用 Microsoft 365 组织中管理员帐户的凭据登录。
+1. 转到 <https://protection.office.com/permissions> ，然后使用 Microsoft 365 组织中管理员帐户的凭据登录。
 
 2. 在" **权限"** 页上，选择 **电子数据展示管理员角色** 组。
 
@@ -80,9 +64,9 @@ Microsoft 365 中的高级电子数据展示提供[](overview-ediscovery-20.md#a
 
 电子数据展示管理员角色组中有两个子组。 这些子组之间的差异基于作用域。
 
-- **电子数据展示管理器：** 可查看和管理他们创建或作为成员的高级电子数据展示事例。 如果另一个电子数据展示管理员创建了一个案例，但没有将第二个电子数据展示管理员添加为该案例的成员，则第二个电子数据展示管理员将无法在合规中心的"高级电子数据展示"页上查看或打开该案例。 通常，可以将您组织中的大多数人员添加到电子数据展示管理员子组。
+- **电子数据展示管理员**：可以查看和管理他们创建或作为成员的高级电子数据展示事例。 如果另一个电子数据展示管理员创建了一个案例，但没有将第二个电子数据展示管理员添加为该案例的成员，则第二个电子数据展示管理员将无法在合规中心的"高级电子数据展示"页上查看或打开该案例。 通常，可以将您组织中的大多数人员添加到电子数据展示管理员子组。
 
-- **电子数据展示管理员：** 可以执行电子数据展示管理员可执行的所有案例管理任务。 此外，电子数据展示管理员可以：
+- **电子数据展示管理员**：可以执行电子数据展示管理员可以执行的所有案例管理任务。 此外，电子数据展示管理员可以：
 
   - 查看"高级电子数据展示"页上列出的所有事例。
   

@@ -11,12 +11,12 @@ ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: bbb3814a973bec53a877bc70d0299ce7b2eb87b5
-ms.sourcegitcommit: 3d48e198e706f22ac903b346cadda06b2368dd1e
+ms.openlocfilehash: f3e4b434f1ca267d5bbfbc7e67cb20c7e2b9dbbb
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50727549"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50920560"
 ---
 # <a name="microsoft-managed-desktop-archived-devices"></a>Microsoft 托管桌面存档设备
 
@@ -75,7 +75,7 @@ ms.locfileid: "50727549"
 
 - 具有 Microsoft 托管桌面批准的映像。 在订购设备时，请确保指定它们正与 Microsoft 托管桌面一同使用。
 - 尚未完成 Windows 首次运行体验。
-- 使用设备注册功能向 Microsoft 托管[桌面注册](https://aka.ms/mmddrhelp)
+- 使用设备注册功能向 Microsoft 托管[桌面注册](../get-started/register-devices-self.md)
 
 #### <a name="more-help"></a>更多帮助
 

@@ -19,16 +19,16 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: 34b1ab9c-814c-434d-8fd0-e5a82cd9bff6
 description: 摘要：在 Microsoft Azure 中为 Microsoft 365 订阅配置高可用性联合身份验证。
-ms.openlocfilehash: abe01445b8963dcdc5693b45a680e273f5084446
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 3989ebb06b4ac5dfa1cded5e07c086c4778f94e7
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46687953"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50919148"
 ---
 # <a name="deploy-high-availability-federated-authentication-for-microsoft-365-in-azure"></a>在 Azure 中为 Microsoft 365 部署高可用性联合身份验证
 
-本文提供了一些链接，这些链接指向通过这些虚拟机在 Azure 基础结构服务中为 Microsoft Microsoft Microsoft 365 部署高可用性联合身份验证的分步说明：
+本文包含指向使用这些虚拟机在 Azure 基础结构服务中为 Microsoft Microsoft 365 部署高可用性联合身份验证的分步说明的链接：
   
 - 两个 Web 应用程序代理服务器
     
@@ -40,21 +40,21 @@ ms.locfileid: "46687953"
     
 下面是包含每个服务器的占位符名称的配置。
   
-**Azure 中的 Microsoft 365 基础结构的高可用性联合身份验证**
+**Azure 中 Microsoft 365 基础结构的高可用性联合身份验证**
 
 ![Azure 中高可用性 Microsoft 365 联合身份验证基础结构的最终配置](../media/c5da470a-f2aa-489a-a050-df09b4d641df.png)
   
 所有虚拟机都位于一个跨界 Azure 虚拟网络 (VNet) 中。 
   
 > [!NOTE]
-> 各个用户的联合身份验证不依赖任何本地资源。不过，如果跨界连接变得不可用，VNet 中的域控制器将无法接收本地 Active Directory 域服务 (AD DS) 中执行的用户帐户和组更新。若要确保此问题不会发生，可以为跨界连接配置高可用性设置。有关详细信息，请参阅[高可用性跨界连接与 VNet 到 VNet 连接](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-highlyavailable)
+> 各个用户的联合身份验证不依赖任何本地资源。不过，如果跨界连接变得不可用，VNet 中的域控制器将无法接收本地 Active Directory 域服务 (AD DS) 中执行的用户帐户和组更新。若要确保此问题不会发生，可以为跨界连接配置高可用性设置。有关详细信息，请参阅[高可用性跨界连接与 VNet 到 VNet 连接](/azure/vpn-gateway/vpn-gateway-highlyavailable)
   
 用于特定角色的每对虚拟机都位于自己的子网和可用性集中。
   
 > [!NOTE]
-> 由于此 VNet 连接到本地网络，所以此配置不包括管理子网上的跳转框或监视虚拟机。有关详细信息，请参阅 [Running Windows VMs for an N-tier architecture](https://docs.microsoft.com/azure/guidance/guidance-compute-n-tier-vm)（运行用于 N 层体系结构的 Windows VM）。 
+> 由于此 VNet 连接到本地网络，所以此配置不包括管理子网上的跳转框或监视虚拟机。有关详细信息，请参阅 [Running Windows VMs for an N-tier architecture](/azure/guidance/guidance-compute-n-tier-vm)（运行用于 N 层体系结构的 Windows VM）。 
   
-此配置的结果是，您对所有 Microsoft 365 用户都具有联合身份验证，在这些用户中，他们可以使用其 AD DS 凭据登录而不是 Microsoft 365 帐户。 联合身份验证基础结构使用冗余的一组服务器，它们更易于在 Azure 基础结构服务（而非本地边缘网络）中进行部署。
+此配置的结果是，你将拥有所有 Microsoft 365 用户的联合身份验证，在此身份验证中，他们可以使用其 AD DS 凭据而不是 Microsoft 365 帐户登录。 联合身份验证基础结构使用冗余的一组服务器，它们更易于在 Azure 基础结构服务（而非本地边缘网络）中进行部署。
   
 ## <a name="bill-of-materials"></a>物料清单
 
@@ -96,17 +96,16 @@ ms.locfileid: "46687953"
     
 - [阶段 4：配置 Web 应用程序代理](high-availability-federated-authentication-phase-4-configure-web-application-pro.md)。创建和配置两个 Web 应用程序代理服务器。
     
-- [第5阶段：为 Microsoft 365 配置联合身份验证](high-availability-federated-authentication-phase-5-configure-federated-authentic.md)。 为 Microsoft 365 订阅配置联合身份验证。
+- [第 5 阶段：为 Microsoft 365 配置联合身份验证](high-availability-federated-authentication-phase-5-configure-federated-authentic.md)。 为 Microsoft 365 订阅配置联合身份验证。
     
-这些文章提供了预定义体系结构的说明性的分阶段指南，用于在 Azure 基础结构服务中创建适用于 Microsoft 365 的功能高可用性联合身份验证。 请注意下列事项：
+这些文章提供了预定义体系结构的规范性分阶段指南，以在 Azure 基础结构服务中为 Microsoft 365 创建功能型、高可用性联合身份验证。 请注意下列事项：
   
 - 如果你是有经验的 AD FS 实施者，则可以自由调整第 3 阶段和第 4 阶段的说明，构建最符合你需求的服务器集。
     
 - 如果你已经拥有现有的 Azure 混合云部署以及现有的跨界虚拟网络，则可以随意调整或跳过第 1 阶段和第 2 阶段中的说明，并将 AD FS 和 Web 应用程序代理服务器置于相应的子网上。
     
-若要构建开发/测试环境或此配置的概念证明，请参阅 [适用于 Microsoft 365 开发/测试环境的联合身份](federated-identity-for-your-microsoft-365-dev-test-environment.md)。
+若要构建开发/测试环境或此配置的概念证明，请参阅 [Microsoft 365](federated-identity-for-your-microsoft-365-dev-test-environment.md)开发/测试环境的联合标识。
   
 ## <a name="next-step"></a>后续步骤
 
 使用[阶段 1：配置 Azure](high-availability-federated-authentication-phase-1-configure-azure.md) 开始配置此工作负载。 
-  

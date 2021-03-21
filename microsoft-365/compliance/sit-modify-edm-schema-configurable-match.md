@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: 了解如何修改 edm 架构以使用可配置匹配项。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 2211e4d99d97fcce241a5f4c3ea7c9d8122ca9d7
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+ms.openlocfilehash: e00466e4648ebe93f0658383515d1543f858e1b0
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49656796"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50919368"
 ---
 # <a name="modify-exact-data-match-schema-to-use-configurable-match"></a>修改精确数据匹配架构，以使用可配置匹配项
 
@@ -101,7 +101,7 @@ ms.locfileid: "49656796"
 - \"
 - \,
 
-6. 使用[连接到安全与合规中心 PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell) 中的步骤连接到安全与合规中心。
+6. 使用[连接到安全与合规中心 PowerShell](/powershell/exchange/connect-to-scc-powershell) 中的步骤连接到安全与合规中心。
 
 7. 通过一次运行以下 cmdlet 中的一个来更新架构：
 
@@ -129,7 +129,7 @@ ms.locfileid: "49656796"
 
 - [使用基于精确数据匹配的分类创建自定义敏感信息类型](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)
 - [敏感信息类型属性定义](sensitive-information-type-entity-definitions.md)
-- [自定义敏感信息类型](custom-sensitive-info-types.md)
+- [自定义敏感信息类型](./sensitive-information-type-learn-about.md)
 - [DLP 策略概述](data-loss-prevention-policies.md)
-- [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security)
-- [New-DlpEdmSchema](https://docs.microsoft.com/powershell/module/exchange/new-dlpedmschema)
+- [Microsoft Cloud App Security](/cloud-app-security)
+- [New-DlpEdmSchema](/powershell/module/exchange/new-dlpedmschema)

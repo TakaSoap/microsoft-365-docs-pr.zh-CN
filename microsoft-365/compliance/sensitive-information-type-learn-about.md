@@ -16,16 +16,16 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: ''
-ms.openlocfilehash: 13dee9d5744639149960a16adcf36b7ebe5718f7
-ms.sourcegitcommit: 89095172c9c4793d56645b4c885ac8e30936bd0a
+ms.openlocfilehash: 12a4e8873cb7212bfa7dde12bba9e98528cd859a
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50766397"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50919668"
 ---
 # <a name="learn-about-sensitive-information-types"></a>了解敏感信息类型
 
-标识和分类组织控制下的敏感项目是信息保护规范的第一 [步](protect-information.md)。  Microsoft 365 提供了三种标识项目的方法，以便可以将其分类：
+标识和分类组织控制下的敏感项目是信息保护规范的第一 [步](./information-protection.md)。  Microsoft 365 提供了三种标识项目的方法，以便可以将其分类：
 
 - 用户手动执行
 - 自动模式识别，如敏感信息类型

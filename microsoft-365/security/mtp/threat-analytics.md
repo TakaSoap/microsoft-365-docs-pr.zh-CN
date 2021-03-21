@@ -21,12 +21,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: e27659517f8c7b5cbc7936b825ac867a2888e251
-ms.sourcegitcommit: 3d48e198e706f22ac903b346cadda06b2368dd1e
+ms.openlocfilehash: 288be30aa9592ba7feed92b9ad49955406f59f10
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50727109"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50918794"
 ---
 # <a name="track-and-respond-to-emerging-threats-with-threat-analytics"></a>使用威胁分析跟踪和响应新出现的威胁 
 
@@ -35,7 +35,7 @@ ms.locfileid: "50727109"
 **适用于：**
 - Microsoft 365 Defender
 
-> 想要体验 Microsoft 365 Defender？ 可以在[实验室环境中评估它或在](https://aka.ms/mtp-trial-lab)[生产中运行你的试验项目](https://aka.ms/m365d-pilotplaybook)。
+> 想要体验 Microsoft 365 Defender？ 可以在[实验室环境中评估它或在](./mtp-evaluation.md?ocid=cx-docs-MTPtriallab)[生产中运行你的试验项目](./mtp-pilot.md?ocid=cx-evalpilot)。
 >
 
 [!INCLUDE [Prerelease](../includes/prerelease.md)]
@@ -155,7 +155,7 @@ _威胁分析报告的"阻止的电子邮件尝试"部分_
   - PUA 保护 (可能不需要) 应用程序
   - 实时保护
  
-本节中的缓解信息包含来自 [威胁和](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)漏洞管理的数据，它还提供报告中各个链接的详细向下钻取信息。
+本节中的缓解信息包含来自 [威胁和](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)漏洞管理的数据，它还提供报告中各个链接的详细向下钻取信息。
 
 ![显示安全配置详细信息的威胁分析报告的缓解部分的图像 显示漏洞详细信息的威胁分析报告的缓解 ](../../media/threat-analytics/ta_mitigations_mtp.png)
  ![ 部分的图像](../../media/threat-analytics/ta_mitigations_mtp2.png)
@@ -181,4 +181,4 @@ _威胁分析报告的缓解部分_
 ## <a name="related-topics"></a>相关主题
 - [使用高级搜寻主动查找威胁](advanced-hunting-overview.md) 
 - [了解分析员报告部分](threat-analytics-analyst-reports.md)
-- [评估和解决安全漏洞和曝光](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)
+- [评估和解决安全漏洞和曝光](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)

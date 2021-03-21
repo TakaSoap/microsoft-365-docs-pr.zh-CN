@@ -20,33 +20,33 @@ search.appverid:
 - SPO160
 - MET150
 ms.assetid: 74d327e5-755f-4135-b9a5-7b79578c1bf9
-description: 了解如何通过使用 JavaScript 延迟加载图像和不重要的 JavaScript 来缩短 SharePoint Online 页面的加载时间。
-ms.openlocfilehash: ee86ae0813c11fbfd836d7d38ea124c1e3f277d0
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+description: 了解如何通过使用 JavaScript 延迟加载图像和非必要的 JavaScript 来缩短 SharePoint Online 页面的加载时间。
+ms.openlocfilehash: 86b93c4e1e102132bb0c1bfb9a413233529adecb
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46687957"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50919160"
 ---
 # <a name="delay-loading-images-and-javascript-in-sharepoint-online"></a>在 SharePoint Online 中延迟加载图像和 JavaScript
 
-本文介绍如何通过使用 JavaScript 来延迟加载图像以及在页面加载后等待加载非基本 JavaScript，从而减少 SharePoint Online 页面的加载时间。
+本文介绍如何通过使用 JavaScript 延迟加载图像，以及等到页面加载后加载非必要的 JavaScript 来缩短 SharePoint Online 页面的加载时间。
   
-图像会对 SharePoint Online 上的页面加载速度产生负面影响。 默认情况下，大多数新式 Internet 浏览器在加载 HTML 页面时预提取映像。 如果在用户向下滚动之前图像在屏幕上不可见，则这可能会导致页面的加载速度不必要。 图像可以阻止浏览器加载页面的可见部分。 若要解决此问题，可以使用 JavaScript 先跳过加载图像。 此外，加载非基本 JavaScript 也可能会减慢 SharePoint 页面上的下载时间。 本主题介绍可用于在 SharePoint Online 中使用 JavaScript 改进页面加载时间的一些方法。
+图像可能会对 SharePoint Online 上的页面加载速度产生负面影响。 默认情况下，大多数现代 Internet 浏览器在加载 HTML 页面时预取图像。 如果图像在屏幕上不可见，直到用户向下滚动，这可能会导致页面加载速度不必要地变慢。 图像可以阻止浏览器加载页面的可见部分。 若要解决此问题，可以先使用 JavaScript 跳过加载图像。 此外，加载非必要的 JavaScript 也会减慢 SharePoint 页面上的下载时间。 本主题介绍一些可用于在 SharePoint Online 中通过 JavaScript 改进页面加载时间的方法。
   
-## <a name="improve-page-load-times-by-delaying-image-loading-in-sharepoint-online-pages-by-using-javascript"></a>通过使用 JavaScript 延迟 SharePoint Online 页面中的图像加载，提高页面加载时间
+## <a name="improve-page-load-times-by-delaying-image-loading-in-sharepoint-online-pages-by-using-javascript"></a>使用 JavaScript 延迟 SharePoint Online 页面中的图像加载，以改进页面加载时间
 
-您可以使用 JavaScript 阻止 web 浏览器预先获取图像。 这将加快整体文档呈现速度。 若要执行此操作，请从标记中删除 src 属性的值 \<img\> ，并将其替换为 data 属性中的文件的路径，如 data-src。 例如：
+可以使用 JavaScript 阻止 Web 浏览器预取图像。 这将加快文档呈现的总体速度。 为此，请从 标记中删除 src 属性的值，并将其替换为数据属性中文件的路径，例如 \<img\> ：data-src。 例如：
   
 ```html
 <img src="" data-src="/sites/NavigationBySearch/_catalogs/masterpage/media/microsoft-white-8.jpg" />
 ```
 
-通过使用此方法，浏览器不会立即下载图像。 如果图像已在视区中，JavaScript 会通知浏览器从数据属性中检索 URL，并将其作为 src 属性的值插入。 仅当用户滚动并进入视图中时，才会加载图像。
+通过使用此方法，浏览器不会立即下载图像。 如果图像已位于视口中，JavaScript 会通知浏览器从 data 属性检索 URL 并将其作为 src 属性的值插入。 图像仅在用户滚动并进入视图时加载。
   
-若要执行所有操作，需要使用 JavaScript。
+若要实现所有这些功能，你需要使用 JavaScript。
   
-在文本文件中，定义 **isElementInViewport ( # B1 ** 函数以检查元素是否在浏览器中对用户可见的部分。
+在文本文件中，定义 **isElementInViewport ()** 函数以检查元素是否位于用户可见的浏览器部分。
   
 ```javascript
 function isElementInViewport(el) {
@@ -62,7 +62,7 @@ function isElementInViewport(el) {
 }
 ```
 
-接下来，使用**loadItemsInView ( # B3**函数中的**IsElementInViewport ( # B1** 。 **LoadItemsInView ( # B1**函数将加载包含数据 src 属性值的所有图像（如果它们位于浏览器中对用户可见的部分）。 将以下函数添加到文本文件中：
+接下来，在 **loadItemsInView ()** 函数中，使用 **isElementInViewport ()** 对象。 **loadItemsInView ()** 函数将加载具有 data-src 属性的值的所有图像（如果它们位于用户可见的浏览器部分）。 将以下函数添加到文本文件：
   
 ```javascript
 function loadItemsInView() {
@@ -78,7 +78,7 @@ function loadItemsInView() {
 }
 ```
 
-最后，从窗口中调用 **loadItemsInView ( # B1 ** **。 Onscroll ( # B3 ** ，如下面的示例所示。 这样可确保视区中的任何图像在用户需要时加载，但不会在之前加载。 将以下内容添加到文本文件中：
+最后，从 **window.onscroll** () 调用 **loadItemsInView** () ，如以下示例所示。 这可确保视口中任何图像在用户需要时加载，而不是之前加载。 将以下内容添加到文本文件：
   
 ```javascript
 //Example of calling loadItemsInView() from within window.onscroll()
@@ -88,7 +88,7 @@ $(window).on("scroll", function () {
 
 ```
 
-对于 SharePoint Online，需要将以下函数附加到 #s4 workspace 标记上的 scroll 事件中 \<div\> 。 这是因为窗口事件将被重写，以确保功能区仍附加在页面顶部。
+对于 SharePoint Online，您需要将以下函数附加到 #s4-workspace 标记上的滚动 \<div\> 事件。 这是因为窗口事件被重写，以确保功能区仍附加到页面顶部。
   
 ```javascript
 //Keep the ribbon at the top of the page
@@ -97,34 +97,34 @@ $('#s4-workspace').on("scroll", function () {
 });
 ```
 
-将文本文件另存为带有扩展名 .js 的 JavaScript 文件，例如 delayLoadImages.js。
+将文本文件另存为扩展名 .js 的 JavaScript 文件，delayLoadImages.js。
   
-编写完 delayLoadImages.js 后，可以将文件的内容添加到 SharePoint Online 中的母版页。 为此，请将脚本链接添加到母版页中的标头。 在母版页中，JavaScript 将应用于使用该母版页布局的 SharePoint Online 网站中的所有页面。 或者，如果您打算仅在网站的一个页面上使用此项，请使用脚本编辑器 Web 部件将 JavaScript 嵌入到页面中。 有关详细信息，请参阅以下主题：
+编写完文件delayLoadImages.js，您可以将文件内容添加到 SharePoint Online 中的母版页。 为此，在母版页中添加指向页眉的脚本链接。 进入母版页后，JavaScript 将应用于 SharePoint Online 网站中使用该母版页布局的所有页面。 或者，如果你希望仅在网站的一个页面上使用它，请使用脚本编辑器Web 部件 JavaScript 嵌入页面。 有关详细信息，请参阅以下主题：
   
-- [如何：向 SharePoint 2013 中的网站应用母版页](https://go.microsoft.com/fwlink/p/?LinkId=525627)
+- [如何：向 SharePoint 2013 中的网站应用母版页](/sharepoint/dev/general-development/how-to-apply-a-master-page-to-a-site-in-sharepoint)
 
-- [如何：在 SharePoint 2013 中创建页面布局](https://go.microsoft.com/fwlink/p/?LinkId=525628)
+- [如何：在 SharePoint 2013 中创建页面布局](/sharepoint/dev/general-development/how-to-create-a-page-layout-in-sharepoint)
 
-### <a name="example-referencing-the-javascript-delayloadimagesjs-file-from-a-master-page-in-sharepoint-online"></a>示例：在 SharePoint Online 中引用母版页中的 JavaScript delayLoadImages.js 文件
+### <a name="example-referencing-the-javascript-delayloadimagesjs-file-from-a-master-page-in-sharepoint-online"></a>示例：在 SharePoint Online delayLoadImages.js母版页引用 JavaScript 文件
   
-若要使其正常工作，您还需要在母版页中引用 jQuery。 在下面的示例中，您可以在初始页面加载中看到仅加载了一个图像，但在页面上有多个。
+为此，还需要在母版页中引用 jQuery。 在下面的示例中，在初始页面加载中，可以看到仅加载了一个图像，但页面上还有多个图像。
   
 ![显示在页面上加载一个图像的屏幕截图](../media/3d177ddb-67e5-43a7-b327-c9f9566ca937.png)
   
-下面的屏幕截图显示在用户滚动查看后下载的图像的其余部分。
+以下屏幕截图显示了滚动到视图后下载的其余图像。
   
 ![显示在页面上加载多个图像的屏幕截图](../media/95eb2b14-f6a1-4eac-a5cb-96097e49514c.png)
   
-延迟使用 JavaScript 加载图像可能是一种提高性能的有效技术;但是，如果在公共网站上应用了技术，搜索引擎将无法对图像进行爬网，这与对定期生成的图像进行爬网的方式相同。 这可能会影响搜索引擎上的排名，因为在页面加载之前，图像本身的元数据实际上并不在此处。 搜索引擎爬网程序仅读取 HTML，因此不会在页面上看到图像内容。 图像是用于对搜索结果中的页面进行排名的因素之一。 解决此种情况的一种方法是使用图像的介绍性文本。
+使用 JavaScript 延迟图像加载是提高性能的有效技术;但是，如果技术应用于公共网站，则搜索引擎将无法按对常规格式的图像进行爬网的方式来爬网图像。 这可能会影响搜索引擎的排名，因为图像本身的元数据在页面加载之前并不存在。 搜索引擎爬网程序仅读取 HTML，因此不会将图像视为页面上的内容。 图像是用于在搜索结果中对页面进行排名的因素之一。 解决此问题的方法之一是为图像使用介绍性文本。
   
 ## <a name="github-code-sample-injecting-javascript-to-improve-performance"></a>GitHub 代码示例：注入 JavaScript 以提高性能
 
-请勿错过 GitHub 上提供的 [JavaScript 注入](https://go.microsoft.com/fwlink/p/?LinkId=524759) 中的文章和代码示例。
+不要错过 GitHub 上提供的有关 [JavaScript 注入](https://go.microsoft.com/fwlink/p/?LinkId=524759) 的文章和代码示例。
   
 ## <a name="see-also"></a>另请参阅
 
-[Office 2013 中支持的浏览器和适用于企业的 Microsoft 365 应用](https://support.office.com/article/57342811-0dc4-4316-b773-20082ced8a82)
+[Office 2013 和 Microsoft 365 企业应用版中支持的浏览器](https://support.office.com/article/57342811-0dc4-4316-b773-20082ced8a82)
   
-[如何：向 SharePoint 2013 中的网站应用母版页](https://go.microsoft.com/fwlink/p/?LinkId=525627)
+[如何：向 SharePoint 2013 中的网站应用母版页](/sharepoint/dev/general-development/how-to-apply-a-master-page-to-a-site-in-sharepoint)
   
-[如何：在 SharePoint 2013 中创建页面布局](https://go.microsoft.com/fwlink/p/?LinkId=525628)
+[如何：在 SharePoint 2013 中创建页面布局](/sharepoint/dev/general-development/how-to-create-a-page-layout-in-sharepoint)

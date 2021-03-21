@@ -22,16 +22,16 @@ description: 使用 Microsoft 信息保护 (MIP) 中的敏感度标签对敏感�
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 6cdf7a6b9e75b575abda2c93f7531c45d93a9a51
-ms.sourcegitcommit: 8f1721de52dbe3a12c11a0fa5ed0ef5972ca8196
+ms.openlocfilehash: 6c1f8b404ddcda45d782a6517880955a6199025d
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/17/2021
-ms.locfileid: "50838625"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50919588"
 ---
 # <a name="learn-about-sensitivity-labels"></a>了解敏感度标签
 
->*[Microsoft 365 安全性与合规性许可指南](https://aka.ms/ComplianceSD)。*
+>*[Microsoft 365 安全性与合规性许可指南](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。*
 
 > [!NOTE]
 > 如果要查找 Office 应用中可看到的敏感度标签的信息，请参阅 [Office](https://support.microsoft.com/topic/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)中的文件和电子邮件应用敏感度标签。
@@ -49,9 +49,9 @@ ms.locfileid: "50838625"
 若要应用敏感度标签，用户必须使用其 Microsoft 365 工作或学校帐户登录。
 
 > [!NOTE]
-> 敏感度标签新近支持用于美国政府租户（GCC 和 GCC-H）。 有关详细信息，请参阅 Microsoft 365 企业应用版 [版本2101：1 月 26 日](https://docs.microsoft.com/officeupdates/current-channel#version-2101-january-26)。
+> 敏感度标签新近支持用于美国政府租户（GCC 和 GCC-H）。 有关详细信息，请参阅 Microsoft 365 企业应用版 [版本2101：1 月 26 日](/officeupdates/current-channel#version-2101-january-26)。
 >
-> 关于 Azure 信息保护统一标签客户端和扫描器，请参阅 [Azure 信息保护高级版政府服务说明](https://docs.microsoft.com/enterprise-mobility-security/solutions/ems-aip-premium-govt-service-description)。
+> 关于 Azure 信息保护统一标签客户端和扫描器，请参阅 [Azure 信息保护高级版政府服务说明](/enterprise-mobility-security/solutions/ems-aip-premium-govt-service-description)。
 
 借助敏感度标签，你可以：
   
@@ -118,7 +118,7 @@ ms.locfileid: "50838625"
     
     ![提示分配所需的标签](../media/Sensitivity-label-Prompt-for-required-label.png)
     
-    有关创建或编辑敏感度标签时的“**文件和电子邮件的自动标记**”设置的详细信息，请参阅 [将敏感度标签自动应用于内容](apply-sensitivity-label-automatically.md)（对于 Office 应用）和 [在 Azure Purview 中自动标记数据](https://docs.microsoft.com/azure/purview/create-sensitivity-label)。
+    有关创建或编辑敏感度标签时的“**文件和电子邮件的自动标记**”设置的详细信息，请参阅 [将敏感度标签自动应用于内容](apply-sensitivity-label-automatically.md)（对于 Office 应用）和 [在 Azure Purview 中自动标记数据](/azure/purview/create-sensitivity-label)。
 
 ### <a name="label-scopes"></a>标记范围
 
@@ -134,7 +134,7 @@ ms.locfileid: "50838625"
 
 - **组和网站**: [为容器启用敏感度标签和同步标签](sensitivity-labels-teams-groups-sites.md#how-to-enable-sensitivity-labels-for-containers-and-synchronize-labels)
 
-- **Azure Purview 素材（预览版）**：[在 Azure Purview 中自动标记内容](https://go.microsoft.com/fwlink/?linkid=2148989)
+- **Azure Purview 素材（预览版）**：[在 Azure Purview 中自动标记内容](/azure/purview/create-sensitivity-label)
 
 如果更改默认值，以便未选择所有作用域，则会看到尚未选择的范围的配置设置的第一页，但无法配置这些设置。 例如，如果未选中“文件和电子邮件”的范围，则不能选择下一页上的选项：
 
@@ -178,7 +178,7 @@ ms.locfileid: "50838625"
 
 配置标签策略时，可以执行以下操作：
 
-- **选择可查看标签的用户和组。** 可以将标签发布到任何特定用户或启用电子邮件的安全组、通讯组或 Microsoft 365 组（它们可以在 Azure AD 中具有[动态成员身份](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-create-rule)）。
+- **选择可查看标签的用户和组。** 可以将标签发布到任何特定用户或启用电子邮件的安全组、通讯组或 Microsoft 365 组（它们可以在 Azure AD 中具有[动态成员身份](/azure/active-directory/users-groups-roles/groups-create-rule)）。
 
 - **将默认标签** 应用于标签策略中包含的用户和组创建的所有新文档和电子邮件，以及对于容器应用相同或不同的默认标签（如果您已经 [为Microsoft Teams，Microsoft 365组和SharePoint网站启用了敏感性标签](sensitivity-labels-teams-groups-sites.md)）。 使用此设置，Azure 信息保护统一标签客户端也将默认标签应用于未标记的现有文档。 如果默认标签不是用户文档或电子邮件的正确标签，则用户始终可以进行更改。
     
@@ -236,7 +236,7 @@ ms.locfileid: "50838625"
 > [!NOTE]
 > Azure 门户中的 Azure 信息保护标签的标签管理将于 **2021 年 3 月 31 日** 弃用。 有关详细信息，请参阅官方[弃用通知](https://techcommunity.microsoft.com/t5/azure-information-protection/announcing-timelines-for-sunsetting-label-management-in-the/ba-p/1226179)。
 
-如果由于租户尚未使用[统一标签平台](https://docs.microsoft.com/azure/information-protection/faqs#how-can-i-determine-if-my-tenant-is-on-the-unified-labeling-platform)而使用 Azure 信息保护标签，则建议你避免创建敏感度标签，直到激活统一标签。 在此方案中，Azure 门户中看到的标签是 Azure 信息保护标签，而不是敏感度标签。 这些标签可由 Windows 计算机上的 Azure 信息保护客户端（经典）使用，但无法由运行 macOS、iOS 或 Android 的设备使用。 若要解决此问题，请 [将这些标签迁移](/azure/information-protection/configure-policy-migrate-labels) 到灵敏度标签。 
+如果由于租户尚未使用[统一标签平台](/azure/information-protection/faqs#how-can-i-determine-if-my-tenant-is-on-the-unified-labeling-platform)而使用 Azure 信息保护标签，则建议你避免创建敏感度标签，直到激活统一标签。 在此方案中，Azure 门户中看到的标签是 Azure 信息保护标签，而不是敏感度标签。 这些标签可由 Windows 计算机上的 Azure 信息保护客户端（经典）使用，但无法由运行 macOS、iOS 或 Android 的设备使用。 若要解决此问题，请 [将这些标签迁移](/azure/information-protection/configure-policy-migrate-labels) 到灵敏度标签。 
 
 两组标签应用的元数据是兼容的，因此在迁移完成后，无需重新标记文档和电子邮件。
 
@@ -256,7 +256,7 @@ ms.locfileid: "50838625"
 
 - PowerShell 模块发现本地文件中的敏感信息，然后应用或删除这些文件中的标签和加密
 
-如果你不熟悉 Azure 信息保护，或者你是刚迁移标签的现有 Azure 信息保护客户，请参阅 Azure 信息保护文档中的[选择用于 Windows 计算机的标签客户端](https://docs.microsoft.com/azure/information-protection/rms-client/use-client#choose-your-windows-labeling-solution)。
+如果你不熟悉 Azure 信息保护，或者你是刚迁移标签的现有 Azure 信息保护客户，请参阅 Azure 信息保护文档中的[选择用于 Windows 计算机的标签客户端](/azure/information-protection/rms-client/use-client#choose-your-windows-labeling-solution)。
 
 ## <a name="sensitivity-labels-and-microsoft-cloud-app-security"></a>灵敏度标签和 Microsoft 云应用安全性
 
@@ -268,11 +268,11 @@ ms.locfileid: "50838625"
 
 - 如果标签管理中心未发布敏感度标签：将使用 Azure 信息保护标签。
 
-有关将 Cloud App Security 与这些标签一起使用的说明，请参阅 [Azure 信息保护集成](https://docs.microsoft.com/cloud-app-security/azip-integration)。
+有关将 Cloud App Security 与这些标签一起使用的说明，请参阅 [Azure 信息保护集成](/cloud-app-security/azip-integration)。
 
 ## <a name="sensitivity-labels-and-the-microsoft-information-protection-sdk"></a>敏感度标签和 Microsoft 信息保护 SDK
 
-由于灵敏度标签在文档的元数据中存储为明文，因此第三方应用和服务可以读取和写入此标签元数据，为标签部署提供补充。 此外，软件开发人员可以使用 [Microsoft 信息保护 SDK](https://docs.microsoft.com/information-protection/develop/overview#microsoft-information-protection-sdk) 在多个平台之间全面支持标签和加密功能。 若要了解详细信息，请参阅[技术社区博客上的“正式发布”公告](https://techcommunity.microsoft.com/t5/Microsoft-Information-Protection/Microsoft-Information-Protection-SDK-Now-Generally-Available/ba-p/263144)。 
+由于灵敏度标签在文档的元数据中存储为明文，因此第三方应用和服务可以读取和写入此标签元数据，为标签部署提供补充。 此外，软件开发人员可以使用 [Microsoft 信息保护 SDK](/information-protection/develop/overview#microsoft-information-protection-sdk) 在多个平台之间全面支持标签和加密功能。 若要了解详细信息，请参阅[技术社区博客上的“正式发布”公告](https://techcommunity.microsoft.com/t5/Microsoft-Information-Protection/Microsoft-Information-Protection-SDK-Now-Generally-Available/ba-p/263144)。 
 
 你还可以了解[与 Microsoft 信息保护集成的合作伙伴解决方案](https://techcommunity.microsoft.com/t5/Azure-Information-Protection/Microsoft-Information-Protection-showcases-integrated-partner/ba-p/262657)。
 
