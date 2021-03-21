@@ -16,16 +16,16 @@ search.appverid:
 - MET150
 description: 配置加密的敏感度标签，以便通过限制访问和使用来保护你的数据。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 602b4b3abd2b07386ad130e4b2cd21bb593eee7e
-ms.sourcegitcommit: a9ac702c9efc9defded3bfa65618b94bac00c237
+ms.openlocfilehash: 6f906e2a3ddd8a0847174a61e9f2b28238e5dc19
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/16/2021
-ms.locfileid: "50261569"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50928070"
 ---
 # <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>通过敏感度标签应用加密，从而限制对内容的访问
 
->*[Microsoft 365 安全性与合规性许可指南](https://aka.ms/ComplianceSD)。*
+>*[Microsoft 365 安全性与合规性许可指南](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。*
 
 创建敏感度标签时，可以限制对将要应用标签的内容的访问。例如，通过敏感度标签的加密设置，可以保护内容，以便：
 
@@ -49,9 +49,9 @@ ms.locfileid: "50261569"
 
 ## <a name="understand-how-the-encryption-works"></a>了解加密的工作方式
 
-加密使用了 Azure 信息保护中的 Azure 权限管理服务 (Azure RMS)。 该保护解决方案使用了加密、标识和身份验证策略。 要了解详细信息，请参阅 Azure 信息保护文档中的[什么是 Azure 权限管理？](https://docs.microsoft.com/azure/information-protection/what-is-azure-rms)。 
+加密使用了 Azure 信息保护中的 Azure 权限管理服务 (Azure RMS)。 该保护解决方案使用了加密、标识和身份验证策略。 要了解详细信息，请参阅 Azure 信息保护文档中的[什么是 Azure 权限管理？](/azure/information-protection/what-is-azure-rms)。 
 
-使用此加密解决方案时，**超级用户** 功能确保了获得授权的用户和服务始终可读取和检测已针对你的组织进行加密的数据。 必要时，可删除或更改加密。 有关详细信息，请参阅[为 Azure 信息保护和发现服务或数据恢复配置超级用户](https://docs.microsoft.com/azure/information-protection/configure-super-users)。
+使用此加密解决方案时，**超级用户** 功能确保了获得授权的用户和服务始终可读取和检测已针对你的组织进行加密的数据。 必要时，可删除或更改加密。 有关详细信息，请参阅[为 Azure 信息保护和发现服务或数据恢复配置超级用户](/azure/information-protection/configure-super-users)。
 
 ## <a name="how-to-configure-a-label-for-encryption"></a>如何配置加密标签
 
@@ -93,8 +93,8 @@ ms.locfileid: "50261569"
 
 请注意，如果应用了新的标签加密或删除了原有加密，则仅在应用标签的用户具有支持此操作的使用权限或角色时才会发生此情况：
 
-- “导出”或“完全控制”[使用权限](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#usage-rights-and-descriptions)。
-- [权限管理颁发者/权限管理所有者](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner)或[超级用户](https://docs.microsoft.com/azure/information-protection/configure-super-users)角色。
+- “导出”或“完全控制”[使用权限](/azure/information-protection/configure-usage-rights#usage-rights-and-descriptions)。
+- [权限管理颁发者/权限管理所有者](/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner)或[超级用户](/azure/information-protection/configure-super-users)角色。
 
 如果用户没有上述权限或角色之一，则无法应用标签，因此原有加密将保留。 用户会看到以下消息：**你无权对敏感度标签进行此更改。请联系内容所有者。**
 
@@ -141,7 +141,7 @@ ms.locfileid: "50261569"
 
 除重新进行身份验证以外，还将重新评估策略和用户组成员身份。 这意味着，如果自他们最后一次访问内容时在加密设置或组成员身份中出现更改，则对于同一文档或电子邮件，他们可能会收到不同的访问结果。
 
-若要了解如何更改默认的 30 天设置，请参阅 [Rights Management 使用许可证](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#rights-management-use-license)。
+若要了解如何更改默认的 30 天设置，请参阅 [Rights Management 使用许可证](/azure/information-protection/configure-usage-rights#rights-management-use-license)。
 
 ### <a name="assign-permissions-to-specific-users-or-groups"></a>向特定用户或组分配权限
 
@@ -163,7 +163,7 @@ ms.locfileid: "50261569"
 
 - 所有经过身份验证的用户。 选择前，请确保你了解此设置的相关[要求和限制](#requirements-and-limitations-for-add-any-authenticated-users)。
 
-- Azure AD 中的任何特定用户或启用了电子邮件的安全组、通讯组、或 Microsoft 365 组（[旧称为“Office 365 组”](https://techcommunity.microsoft.com/t5/microsoft-365-blog/office-365-groups-will-become-microsoft-365-groups/ba-p/1303601)）。 Microsoft 365 组可以有静态或[动态成员资格](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-create-rule)。 请注意，不能使用[来自 Exchange 的动态通讯组](https://docs.microsoft.com/Exchange/recipients/dynamic-distribution-groups/dynamic-distribution-groups)，因为此组类型不会同步到 Azure AD，并且不能使用未启用电子邮件的安全组。
+- Azure AD 中的任何特定用户或启用了电子邮件的安全组、通讯组、或 Microsoft 365 组（[旧称为“Office 365 组”](https://techcommunity.microsoft.com/t5/microsoft-365-blog/office-365-groups-will-become-microsoft-365-groups/ba-p/1303601)）。 Microsoft 365 组可以有静态或[动态成员资格](/azure/active-directory/users-groups-roles/groups-create-rule)。 请注意，不能使用[来自 Exchange 的动态通讯组](/Exchange/recipients/dynamic-distribution-groups/dynamic-distribution-groups)，因为此组类型不会同步到 Azure AD，并且不能使用未启用电子邮件的安全组。
 
 - 任何电子邮件地址或域。 借助此选项，通过输入 Azure AD 使用的另一组织中的任何域名，指定该组织中的所有用户。 你可使用此选项处理社交提供商，方式是输入其域名，例如 **gmail.com**、**hotmail.com** 或 **outlook.com**。
 
@@ -179,7 +179,7 @@ ms.locfileid: "50261569"
 此设置不会限制谁可访问标签加密的内容，但仍会加密内容并向你提供用来限制内容使用方式（权限）和访问方式（过期和脱机访问）的选项。 但是，打开加密内容的应用程序必须能够支持正在使用的身份验证。 由此，联合社交提供商（如 Google）和一次性密码身份验证仅适用于电子邮件，且仅在你使用 Exchange Online 时才适用。 Microsoft 帐户可与 Office 365 应用和 [Azure 信息保护查看器](https://portal.azurerms.com/#/download)一起使用。
 
 > [!NOTE]
-> 当为 [SharePoint 和 OneDrive 中的 Office 文件启用](sensitivity-labels-sharepoint-onedrive-files.md)敏感度标签时，请考虑将此设置与 [SharePoint 和 OneDrive 与 Azure AD B2B 集成](https://docs.microsoft.com/sharepoint/sharepoint-azureb2b-integration-preview)。
+> 当为 [SharePoint 和 OneDrive 中的 Office 文件启用](sensitivity-labels-sharepoint-onedrive-files.md)敏感度标签时，请考虑将此设置与 [SharePoint 和 OneDrive 与 Azure AD B2B 集成](/sharepoint/sharepoint-azureb2b-integration-preview)。
 
 “所有经过身份验证的用户”设置的一些典型场景：
 
@@ -191,10 +191,10 @@ ms.locfileid: "50261569"
 
 选择允许为这些用户或组使用哪些权限时，可以选择：
 
-- 具有预设权限组的[预定义权限级别](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#rights-included-in-permissions-levels)，例如共同创作或审阅者。
+- 具有预设权限组的[预定义权限级别](/azure/information-protection/configure-usage-rights#rights-included-in-permissions-levels)，例如共同创作或审阅者。
 - 自定义权限，可在其中选择一个或多个使用权限。
 
-有关帮助你选择适当权限的详细信息，请参阅[使用权限和说明](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#usage-rights-and-descriptions)。  
+有关帮助你选择适当权限的详细信息，请参阅[使用权限和说明](/azure/information-protection/configure-usage-rights#usage-rights-and-descriptions)。  
 
 ![选择预设权限或自定义权限的选项。](../media/Sensitivity-Choose-permissions-settings.png)
 
@@ -214,7 +214,7 @@ ms.locfileid: "50261569"
 - Rights Management 颁发者可以始终在脱机状态下访问文档或电子邮件。
 - 在文档被撤销后，Rights Management 颁发者仍然可以打开该文档。
 
-有关详细信息，请参阅 [Rights Management 颁发者和 Rights Management 所有者](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner)。
+有关详细信息，请参阅 [Rights Management 颁发者和 Rights Management 所有者](/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner)。
 
 ### <a name="double-key-encryption"></a>双密钥加密
 
@@ -229,7 +229,7 @@ ms.locfileid: "50261569"
 
 可使用下述选项来允许用户在向内容手动应用敏感度标签时分配权限：
 
-- 在 Outlook 中，用户可为其所选收件人选择与“[请勿转发](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#do-not-forward-option-for-emails)”选项等效的限制。
+- 在 Outlook 中，用户可为其所选收件人选择与“[请勿转发](/azure/information-protection/configure-usage-rights#do-not-forward-option-for-emails)”选项等效的限制。
 
 - 在 Word、PowerPoint 和 Excel 中，系统会提示用户为特定用户、组或组织选择他们自己的权限。
 
@@ -406,7 +406,7 @@ ms.locfileid: "50261569"
 
 - 激活 Azure 信息保护中的保护
     
-    要使敏感度标签应用加密，必须为租户激活 Azure 信息保护中的保护服务（即 Azure 权限管理）。 在较新的租户中，这是默认设置，但你可能需要手动激活该服务。 有关详细信息，请参阅[激活 Azure 信息保护中的保护服务](https://docs.microsoft.com/azure/information-protection/activate-service)。
+    要使敏感度标签应用加密，必须为租户激活 Azure 信息保护中的保护服务（即 Azure 权限管理）。 在较新的租户中，这是默认设置，但你可能需要手动激活该服务。 有关详细信息，请参阅[激活 Azure 信息保护中的保护服务](/azure/information-protection/activate-service)。
 
 - 配置用于 Azure 信息保护的 Exchange
     
@@ -416,8 +416,8 @@ ms.locfileid: "50261569"
     
     为确保 Exchange 可以支持这些其他应用场景，请参阅以下内容：
     
-    - 对于 Exchange Online，请参阅 [Exchange Online：IRM 配置](https://docs.microsoft.com/azure/information-protection/configure-office365#exchangeonline-irm-configuration)的说明。
-    - 对于本地 Exchange，必须部署 [RMS 连接器并配置你的 Exchange 服务器](https://docs.microsoft.com/azure/information-protection/deploy-rms-connector)。 
+    - 对于 Exchange Online，请参阅 [Exchange Online：IRM 配置](/azure/information-protection/configure-office365#exchangeonline-irm-configuration)的说明。
+    - 对于本地 Exchange，必须部署 [RMS 连接器并配置你的 Exchange 服务器](/azure/information-protection/deploy-rms-connector)。 
 
 ## <a name="next-steps"></a>后续步骤
 

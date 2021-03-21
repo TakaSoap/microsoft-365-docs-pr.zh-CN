@@ -16,12 +16,12 @@ search.appverid:
 ms.assetid: 429e686f-d8a6-455e-a2b6-3791d763f000
 description: 了解如何使用 Microsoft 服务信任门户中的合规性管理器来满足数据保护和管理法规要求。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f527aae2d36e392ecd646d48263a01b20a0785e8
-ms.sourcegitcommit: b8e9b2ecdc4927b67088c5fffb1585424c66fb10
+ms.openlocfilehash: e308de5bdf3441a602002e2fd6f216c361f64286
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2021
-ms.locfileid: "50050396"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50926522"
 ---
 # <a name="microsoft-compliance-manager-classic"></a>Microsoft 合规性管理器（经典）
 
@@ -30,7 +30,7 @@ ms.locfileid: "50050396"
 
 *由世纪互联运营的 Office 365、Office 365 Germany、Office 365 U.S. Government Community High (GCC High) 或 Office 365 Department of Defense 不提供合规性管理器。*
 
-合规性管理器是 Microsoft [服务信任门户](https://docs.microsoft.com/microsoft-365/compliance/get-started-with-service-trust-portal)中基于工作流的风险评估工具，可跟踪、分配和验证组织的合规性活动，这些活动与 Microsoft 专业服务和 Microsoft 云服务（如 Microsoft Office 365、Microsoft Dynamics 365 和 Microsoft Azure）相关。
+合规性管理器是 Microsoft [服务信任门户](./get-started-with-service-trust-portal.md)中基于工作流的风险评估工具，可跟踪、分配和验证组织的合规性活动，这些活动与 Microsoft 专业服务和 Microsoft 云服务（如 Microsoft Office 365、Microsoft Dynamics 365 和 Microsoft Azure）相关。
 
 合规性管理器：
 

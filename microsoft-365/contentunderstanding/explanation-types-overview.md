@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: 深入了解 Microsoft SharePoint Syntex 中的说明类型
-ms.openlocfilehash: caba92b635feaf8f87e2c487559f70be3fab6df9
-ms.sourcegitcommit: 78f48304f990e969a052fe6536b2e8d6856e1086
+ms.openlocfilehash: 5187b27438f25db1a2714f1fbc7b31db6d060ccc
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50242578"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50928396"
 ---
 # <a name="introduction-to-explanation-types"></a>说明类型简介
 
@@ -71,7 +71,7 @@ ms.locfileid: "50242578"
    ![仅完全匹配的大写](../media/content-understanding/exact-caps.png)
 
 > [!NOTE]
-> 请使用 [说明库](https://docs.microsoft.com/microsoft-365/contentunderstanding/explanation-types-overview#use-explanation-templates)，以便从常见模式列表中使用模式列表模板，如 *日期*、*电话号码*、*信用卡号码* 等等，而不是手动创建模式列表说明。
+> 请使用 [说明库](#use-explanation-templates)，以便从常见模式列表中使用模式列表模板，如 *日期*、*电话号码*、*信用卡号码* 等等，而不是手动创建模式列表说明。
 
 ## <a name="proximity"></a>邻近度 
 

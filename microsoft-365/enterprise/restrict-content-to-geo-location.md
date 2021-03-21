@@ -12,19 +12,19 @@ f1.keywords:
 ms.custom: seo-marvel-apr2020
 ms.collection: Strat_SP_gtc
 localization_priority: Normal
-description: 在本文中，您将了解如何将 SharePoint 网站限制为多地理位置环境中的指定地理位置。
-ms.openlocfilehash: f2a09f177c68d30121c207287e053b2b25405fbc
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+description: 本文将了解如何将 SharePoint 网站限制到多地理位置环境中指定的地理位置。
+ms.openlocfilehash: 74255db19b2ecf9b333d33208c63da260b2bd747
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46687652"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50927260"
 ---
 # <a name="restrict-sharepoint-site-content-to-a-geo-location"></a>将 SharePoint 网站内容限制到某个地理位置
 
 在某些情况下，你可能会选择通过以下方式将某个站点及其文件内容强制保留在（在其中创建了站点的）地理位置中：防止转移站点，或者防止将站点的文件内容缓存在另一个地理位置中。
 
-可使用 **RestrictedToGeo** 参数通过 [Set-SPOSite](https://docs.microsoft.com/powershell/module/sharepoint-online/set-sposite) cmdlet 来执行此操作。 此参数的默认值为 NULL，但你可以将其更改为以下值之一：
+可使用 **RestrictedToGeo** 参数通过 [Set-SPOSite](/powershell/module/sharepoint-online/set-sposite) cmdlet 来执行此操作。 此参数的默认值为 NULL，但你可以将其更改为以下值之一：
 
 |限制|说明|
 |:----------|:----------|

@@ -1,5 +1,5 @@
 ---
-title: 使用 Windows PowerShell 为 "联盟" 合作伙伴检索客户租户报告数据
+title: 通过 DAP 合作伙伴的 Windows PowerShell检索客户租户报告数据
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -15,27 +15,27 @@ f1.keywords:
 ms.custom: seo-marvel-apr2020
 ms.assetid: 893e5275-30b3-433f-8ecd-644f78f513e2
 description: 摘要：使用适用于 Microsoft Exchange Online 的远程 Windows PowerShell 从各个客户租户中检索报表。
-ms.openlocfilehash: 24d56fffa60232c4ea39f4fe7769131cab23be2f
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 8ea5f9834bfcc0d517fc1e0938c3547d88d1d8a8
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46687651"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50927212"
 ---
 # <a name="retrieve-customer-tenant-reporting-data-with-windows-powershell-for-delegated-access-permissions-dap-partners"></a>通过 Windows PowerShell 为委派访问权限 (DAP) 合作伙伴检索客户报告数据
 
-*此文章适用于 Microsoft 365 企业版和 Office 365 企业版。* 
+*本文适用于 Microsoft 365 企业版和 Office 365 企业版。*
 
-使用适用于 Microsoft Exchange Online 的远程 Windows PowerShell 从各个客户租户检索报告。
+使用远程Windows PowerShell Microsoft Exchange Online从单个客户租户检索报告。
   
-联合和云解决方案提供商 (CSP) 合作伙伴可以直接通过远程 Windows PowerShell for Exchange Online PowerShell 访问构成客户租户报告的数据。 这样，合作伙伴可以收集并保存报告数据，然后对其执行其他操作。 打开远程连接后，检索有关客户租赁的报告数据与在客户租赁中运行任何 cmdlet 的效果是一样的。
+联合和云解决方案提供商 (云解决方案提供商) 合作伙伴可以直接通过 Exchange Online PowerShell 的远程 Windows PowerShell访问客户租户报告的数据。 这样，合作伙伴可以收集并保存报告数据，然后对其执行其他操作。 打开远程连接后，检索有关客户租赁的报告数据与在客户租赁中运行任何 cmdlet 的效果是一样的。
   
-在本文中，可以使用适用于 Exchange Online 的远程 Windows PowerShell 连接到单个客户租赁并检索报告。 默认情况下，Windows PowerShell 不支持聚合多个客户租赁中的报告数据。 通过此过程检索的报告仅适用于您连接到的  _DelegatedOrg_。
+本文使用 Exchange Online Windows PowerShell远程租户连接到单个客户租赁并检索报告。 默认情况下，Windows PowerShell 不支持聚合多个客户租赁中的报告数据。 通过此过程检索的报告仅适用于您连接到的  _DelegatedOrg_。
   
  
 ## <a name="before-you-begin"></a>准备工作
 
-- 您需要使用远程 Windows PowerShell 连接到您的 Exchange Online 租户。有关说明，请参阅[通过远程 Windows PowerShell 为委派访问权限 (DAP) 合作伙伴连接到 Exchange Online 租户](connect-to-exchange-online-tenants-with-remote-windows-powershell-for-delegated.md)。
+- 您需要使用远程 Windows PowerShell 连接到您的 Exchange Online 租户。有关说明，请参阅[通过远程 Windows PowerShell 为委派访问权限 (DAP) 合作伙伴连接到 Exchange Online 租户](/powershell/exchange/connect-to-exchange-online-powershell)。
     
 ## <a name="run-the-get-stalemailboxreport-sample"></a>运行 Get-StaleMailboxReport 示例
 
@@ -51,9 +51,8 @@ Get-StaleMailboxReport -StartDate 03/25/2015 -EndDate 03/31/2015
 
 #### 
 
-[Office 365 报告 Web 服务](https://go.microsoft.com/fwlink/p/?LinkId=532777)
+[Office 365 报告 Web 服务](/previous-versions/office/developer/o365-enterprise-developers/jj984325(v=office.15))
   
-[Exchange Online 中的报告 cmdlet](https://go.microsoft.com/fwlink/p/?LinkId=526430)
+[Exchange Online 中的报告 cmdlet](/powershell/module/exchange/get-csclientdevicedetailreport)
   
 [适于合作伙伴的帮助](https://go.microsoft.com/fwlink/p/?LinkID=533477)
-

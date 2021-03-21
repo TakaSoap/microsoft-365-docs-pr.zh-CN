@@ -13,12 +13,12 @@ ms.author: shmehta
 ms.reviewer: krowley
 appliesto:
 - Office 365 Business
-ms.openlocfilehash: 8078f5de698adf437e843a423fe9e82c5e4dd8de
-ms.sourcegitcommit: a62ac3c01ba700a51b78a647e2301f27ac437c5a
+ms.openlocfilehash: 708e5dc68b777db42696c6791124b2a8dd1d3b87
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/12/2021
-ms.locfileid: "50233116"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50927948"
 ---
 # <a name="preparing-for-tls-12-in-office-365-and-office-365-gcc"></a>在 Office 365 和 Office 365 GCC 中准备 TLS 1.2
 
@@ -32,11 +32,11 @@ ms.locfileid: "50233116"
 
 ## <a name="more-information"></a>更多信息
 
-自 2020 年 1 月起，我们已经开始弃用 TLS 1.0 和 1.1。 不支持通过 TLS 1.0 或 1.1 在我们的 DoD 或 GCC High 实例中连接到 Office 365 的任何客户端、设备或服务。 对于 Office 365 的商业客户，TLS 1.0 和 1.1 的弃用将于 2020 年 10 月 15 日开始，并且将在随后几周和几个月内继续推出。 
+自 2020 年 1 月起，我们已经开始弃用 TLS 1.0 和 1.1。 不支持通过 TLS 1.0 或 1.1 在我们的 DoD 或 GCC High 实例中连接到 Office 365 的任何客户端、设备或服务。 对于 Office 365 的商业客户，TLS 1.0 和 1.1 弃用将于 2020 年 10 月 15 日开始，并持续数周和数月推出。 
 
 我们建议所有客户端-服务器和浏览器-服务器组合使用 TLS1.2（或更高版本）以保持与 Office 365 服务的连接。 你可能必须更新某些客户端-服务器和浏览器-服务器组合。
 
-你需要更新通过 TLS 1.0 或 TLS 1.1 调用 Microsoft 365 API 的应用程序以使用 TLS 1.2。 .NET 4.5 默认为 TLS 1.1。 若要更新 .NET 配置，请参阅如何在客户端上启用传输层安全性 (TLS) [1.2。](https://docs.microsoft.com/mem/configmgr/core/plan-design/security/enable-tls-1-2-client)
+你需要通过 TLS 1.0 或 TLS 1.1 更新调用 Microsoft 365 API 的应用程序以使用 TLS 1.2。 .NET 4.5 默认为 TLS 1.1。 若要更新 .NET 配置，请参阅如何在客户端上启用传输层安全性[ (TLS) 1.2。](/mem/configmgr/core/plan-design/security/enable-tls-1-2-client)
 
 以下是已知的无法使用 TLS 1.2 的客户端。 更新这些客户端以确保对服务的访问不会间断。
 
@@ -48,7 +48,7 @@ ms.locfileid: "50233116"
 
 ### <a name="tls-12-for-microsoft-teams-rooms-and-surface-hub"></a>适用于 Microsoft Teams Rooms 和 Surface Hub 的 TLS 1.2
 
-自 2018 年 12 月以来，Microsoft Teams Room（以前称为 Skype Room System V2 SRS V2）就一直支持 TLS 1.2。 我们建议 Room 设备安装 Microsoft Teams Rooms 应用版本 4.0.64.0 或更高版本。 有关更多信息，请参阅[发行说明](https://docs.microsoft.com/microsoftteams/room-systems/srs2-release-note)。 更改是向后和向前兼容的。
+自 2018 年 12 月以来，Microsoft Teams Room（以前称为 Skype Room System V2 SRS V2）就一直支持 TLS 1.2。 我们建议 Room 设备安装 Microsoft Teams Rooms 应用版本 4.0.64.0 或更高版本。 有关更多信息，请参阅[发行说明](/microsoftteams/room-systems/srs2-release-note)。 更改是向后和向前兼容的。
 
 2019 年 5 月，Surface Hub 发布了 TLS 1.2 支持。
 
@@ -78,4 +78,4 @@ ms.locfileid: "50233116"
 - [Exchange Server TLS 指南，第 1 部分：为 TLS 1.2 做好准备](https://techcommunity.microsoft.com/t5/exchange-team-blog/exchange-server-tls-guidance-part-1-getting-ready-for-tls-1-2/ba-p/607649)
 - [Exchange Server TLS 指南，第 2 部分：启用 TLS 1.2 并识别不使用它的客户端](https://techcommunity.microsoft.com/t5/exchange-team-blog/exchange-server-tls-guidance-part-2-enabling-tls-1-2-and/ba-p/607761)
 - [Exchange Server TLS 指南，第 3 部分：关闭 TLS 1.0/1.1](https://techcommunity.microsoft.com/t5/exchange-team-blog/exchange-server-tls-guidance-part-3-turning-off-tls-1-0-1-1/ba-p/607898)
-- [在 Office Online Server 中启用 TLS 1.1 和 TLS 1.2 支持](https://docs.microsoft.com/officeonlineserver/enable-tls-1-1-and-tls-1-2-support-in-office-online-server)
+- [在 Office Online Server 中启用 TLS 1.1 和 TLS 1.2 支持](/officeonlineserver/enable-tls-1-1-and-tls-1-2-support-in-office-online-server)

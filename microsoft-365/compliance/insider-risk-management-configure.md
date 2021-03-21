@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: d1ac0bd289185f47fc5eb0bbe34c16fbe28bba84
-ms.sourcegitcommit: 8b1bd7ca8cd81e4270f0c1e06d2b6ca81804a6aa
+ms.openlocfilehash: a995b6fdbbff36c6466f5e55cda9d7e196fa2c02
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "50819888"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50927026"
 ---
 # <a name="get-started-with-insider-risk-management"></a>内部风险管理入门
 
@@ -227,7 +227,7 @@ DLP 策略可帮助识别用户，以在针对敏感信息的高风险性 DLP �
 
 11. 如果在上一步中选择了"我希望将 **SharePoint** 网站、敏感度标签和/或敏感信息类型指定为优先内容"，你将看到 *有关 SharePoint* 网站、敏感信息类型和敏感度标签的详细信息 *页面。* 使用这些详细信息页定义 SharePoint、敏感信息类型和敏感度标签，以在策略中设置优先级。
 
-    - **SharePoint 网站**： **选择"添加 SharePoint** 网站"，然后选择有权访问并想要确定优先级的 SharePoint 组织。 例如 *，"group1@contoso.sharepoint.com/sites/group1"。*
+    - **SharePoint 网站**： **选择"添加 SharePoint** 网站"，然后选择有权访问并想要确定优先级的 SharePoint 网站。 例如 *，"group1@contoso.sharepoint.com/sites/group1"。*
     - **敏感信息类型**：选择 **"添加敏感信息类型** "，然后选择要确定优先级的敏感度类型。 例如 *，"美国银行帐号"* 和 *"信用卡号"。*
     - **敏感度标签**：选择 **"添加敏感度** 标签"，然后选择要设置优先级的标签。 例如 *，"机密"和**"机密"。*
 

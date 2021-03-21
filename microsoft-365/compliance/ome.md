@@ -19,12 +19,12 @@ ms.assetid: f87cb016-7876-4317-ae3c-9169b311ff8a
 ms.custom:
 - seo-marvel-apr2020
 description: 了解如何在组织内外人员之间发送和接收加密电子邮件。
-ms.openlocfilehash: 8d1803442428f3061c686afa0b790d3f468abde8
-ms.sourcegitcommit: 06d9e056eabfbac8fafe66cc32907b33d4ae8253
+ms.openlocfilehash: 504fa9918636cd596cde0d242083ccb7b9817e69
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50741323"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50927710"
 ---
 # <a name="message-encryption"></a>邮件加密
 
@@ -36,7 +36,7 @@ ms.locfileid: "50741323"
 
 本文的其余部分适用于新的 OME 功能。
 
-Office 365 邮件加密是一项基于 Microsoft Azure 权限管理 (Azure RMS) 的联机服务，它是 Azure 信息保护的一部分。 此服务包括加密、标识和授权策略，以帮助保护电子邮件的安全。 可以使用权限管理模板、"不要转发"选项和仅[](https://docs.microsoft.com/information-protection/deploy-use/configure-usage-rights#do-not-forward-option-for-emails)[加密选项加密邮件](https://docs.microsoft.com/information-protection/deploy-use/configure-usage-rights#encrypt-only-option-for-emails)。
+Office 365 邮件加密是一项基于 Microsoft Azure 权限管理 (Azure RMS) 的联机服务，它是 Azure 信息保护的一部分。 此服务包括加密、标识和授权策略，以帮助保护电子邮件的安全。 可以使用权限管理模板、"不要转发"选项和仅[](/information-protection/deploy-use/configure-usage-rights#do-not-forward-option-for-emails)[加密选项加密邮件](/information-protection/deploy-use/configure-usage-rights#encrypt-only-option-for-emails)。
 
 然后，用户可以使用这些选项加密电子邮件和各种附件。 有关受支持的附件类型的完整列表，请参阅电子邮件的 IRM 简介中的"IRM 策略在附加到邮件时覆盖[的文件类型"。](https://support.office.com/article/bb643d33-4a3f-4ac7-9770-fd50d95f58dc#FileTypesforIRM)
 
@@ -54,7 +54,7 @@ Office 365 邮件加密是一项基于 Microsoft Azure 权限管理 (Azure RMS) 
 
 如果受保护邮件的发件人位于 GCC High 中，并且收件人位于 GCC High 外部，包括商业用户、Outlook.com 用户和其他电子邮件提供商（如 Gmail）的用户，收件人将收到包装邮件。 包装邮件将收件人引导到收件人能够阅读和回复邮件的 OME 门户。 否则，如果发件人和收件人都位于 GCC High 环境中，即使他们并不在同一个组织中，则使用 Outlook 客户端读取邮件的收件人将收到加密和受权限保护的邮件的本机一流阅读体验。 有关 GCC High 中不同体验的信息，请参阅 [比较 OME 的版本](ome-version-comparison.md)。
 
-有关可以使用 OME 加密的邮件和附件的大小限制详细信息，请参阅 [Exchange Online 限制](https://technet.microsoft.com/library/exchange-online-limits.aspx)。
+有关可以使用 OME 加密的邮件和附件的大小限制详细信息，请参阅 [Exchange Online 限制](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits)。
 
 ## <a name="how-office-365-advanced-message-encryption-works-on-top-of-ome"></a>Office 365 高级邮件加密在 OME 上的工作方式
 

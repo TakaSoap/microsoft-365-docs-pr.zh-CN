@@ -12,25 +12,25 @@ localization_priority: None
 search.appverid:
 - MET150
 ms.collection: Strat_O365_Enterprise
-description: 了解在 microsoft 数据库中和在传输过程中，Microsoft 如何使用加密技术来保护 Microsoft Dynamics 365 中的客户数据。
+description: 了解 Microsoft 如何使用加密技术在 Microsoft 数据库中和传输过程中静态保护 Microsoft Dynamics 365 中的客户数据。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: bd349890fc7fc1ae7f1f7eaf07f90c22423637cf
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: b1c55c4ac233c61f7a583f4f1a94222133f1d7c1
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44031408"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50926211"
 ---
 # <a name="encryption-in-microsoft-dynamics-365"></a>Microsoft Dynamics 365 中的加密
 
-Microsoft 使用加密技术保护动态365中的客户数据，而不是 Microsoft 数据库中的静态，同时在用户设备和我们的数据中心之间传输。 在客户和 Microsoft 数据中心之间建立的连接将进行加密，并使用工业标准 TLS 来保护所有公用终结点。 TLS 可有效建立安全性增强的浏览器到服务器连接，以帮助确保桌面和数据中心之间的数据机密性和完整性。 在激活数据加密之后，将无法关闭该功能。 有关详细信息，请参阅[字段级数据加密](https://msdn.microsoft.com/library/dn481562.aspx)。
+Microsoft 使用加密技术保护 Dynamics 365 中的客户数据，同时在 Microsoft 数据库中处于静态状态，并且客户数据正在用户设备和我们的数据中心之间传输。 客户与 Microsoft 数据中心建立的连接已加密，所有公共终结点都使用行业标准 TLS 进行保护。 TLS 有效地建立了安全性增强的浏览器到服务器连接，以帮助确保桌面和数据中心之间的数据机密性和完整性。 数据加密激活后，无法将其关闭。 有关详细信息，请参阅字段 [级数据加密](/previous-versions/dynamicscrm-2016/developers-guide/dn481562(v=crm.8))。
 
-Dynamics 365 对包含敏感信息（如用户名和电子邮件密码）的一组默认实体属性使用标准的 Microsoft SQL Server cell 级加密。 此功能可帮助组织满足与 FIPS 140-2 相关的合规性要求。 在利用[Microsoft DYNAMICS CRM 电子邮件路由器](https://technet.microsoft.com/library/hh699800.aspx)的方案中，字段级数据加密尤为重要，后者必须存储用户名和密码，才能在 Dynamics 365 实例和电子邮件服务之间实现集成。 
+Dynamics 365 对一组包含敏感信息（如用户名和电子邮件密码）的默认实体属性Microsoft SQL Server标准单元格级别加密。 此功能可帮助组织满足与 FIPS 140-2 关联的合规性要求。 字段级数据加密在利用 [Microsoft Dynamics CRM](/previous-versions/dynamicscrm-2016/administering-dynamics-365/hh699800(v=crm.8))电子邮件路由器的方案中尤为重要，该路由器必须存储用户名和密码，才能在 Dynamics 365 实例和电子邮件服务之间实现集成。 
 
-Dynamics 365 的所有实例都使用[MICROSOFT SQL Server 透明数据加密](https://docs.microsoft.com/sql/relational-databases/security/encryption/transparent-data-encryption?view=sql-server-2017)（TDE），在写入磁盘（静态）时执行数据的实时加密。 TDE 对 SQL Server、Azure SQL 数据库和 Azure SQL 数据仓库数据文件进行加密。 默认情况下，Microsoft 存储和管理 Dynamics 365 实例的数据库加密密钥。 （Dynamics 365 for 金融使用的键由 .NET Framework 数据保护 API 生成。） 
+Dynamics 365 的所有实例都使用 [Microsoft SQL Server Transparent Data Encryption](/sql/relational-databases/security/encryption/transparent-data-encryption?view=sql-server-2017) (TDE) 在静态数据写入磁盘时执行数据 (实时) 。 TDE 对SQL Server、Azure SQL 数据库和 Azure SQL数据仓库数据文件进行加密。 默认情况下，Microsoft 存储和管理 Dynamics 365 实例的数据库加密密钥。  (Dynamics 365 for Financials 使用的密钥由 .NET Framework Data Protection API.)  
 
-Dynamics 365 管理中心中的 "管理密钥" 功能使管理员能够自行管理与 Dynamics 365 实例关联的数据库加密密钥。 （自托管数据库加密密钥仅适用于 Microsoft Dynamics 365 的2017年1月版更新，可能不适用于更高版本。 有关详细信息，请参阅[管理 Dynamics 365 （online）实例的加密密钥](https://docs.microsoft.com/dynamics365/customer-engagement/admin/manage-encryption-keys-instance)。密钥管理功能支持 PFX 和 BYOK 加密密钥文件，如存储在 HSM 中的密钥。 （有关在 Internet 上生成和传输受 HSM 保护的密钥的详细信息，请参阅[如何为 Azure Key Vault 生成和传输受 hsm 保护的](https://docs.microsoft.com/azure/key-vault/key-vault-hsm-protected-keys)密钥。） 
+Dynamics 365 管理中心中的管理密钥功能使管理员能够自行管理与 Dynamics 365 实例关联的数据库加密密钥。  (自管理数据库加密密钥仅适用于 Microsoft Dynamics 365 的 2017 年 1 月更新，可能不会在更高版本中提供。 有关详细信息，请参阅管理 [Dynamics 365 (online) ](/dynamics365/customer-engagement/admin/manage-encryption-keys-instance)实例 .) 密钥管理功能支持 PFX 和 BYOK 加密密钥文件，如 HSM 中存储的文件。  (有关通过 Internet 生成和传输受 HSM 保护的密钥的信息，请参阅如何为 Azure 密钥保管库生成和传输 [受 HSM](/azure/key-vault/key-vault-hsm-protected-keys)保护的密钥)  
 
-若要使用 "上载加密密钥" 选项，您需要公钥和私钥加密密钥。
+若要使用上传加密密钥选项，需要公钥和私钥加密密钥。
 
-密钥管理功能通过使用 Azure Key Vault 安全存储加密密钥来降低加密密钥管理的复杂性。 Azure Key Vault 可帮助保护云应用程序和服务使用的加密密钥和机密。 密钥管理功能不要求您拥有 Azure Key Vault 订阅，并且在大多数情况下，无需访问保管库中用于 Dynamics 365 的加密密钥。
+密钥管理功能通过使用 Azure 密钥保管库安全存储加密密钥，使加密密钥管理的复杂性降低。 Azure Key Vault 有助于保护云应用程序和服务使用的加密密钥和密钥。 密钥管理功能不需要你拥有 Azure 密钥保管库订阅，在大多数情况下，无需访问保管库中用于 Dynamics 365 的加密密钥。

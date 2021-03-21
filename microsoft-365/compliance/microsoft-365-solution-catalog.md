@@ -9,26 +9,26 @@ audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
-description: 了解 Microsoft 365 解决方案目录，包括其中包含的内容、如何获取它以及你的下一步。
+description: 了解 Microsoft 365 解决方案目录，包括其中包含的内容、如何获取它以及你的下一步步骤。
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 7d1d52356bd3b165c24f10a20a57373a6171b8b3
-ms.sourcegitcommit: 98b889e674ad1d5fa37d4b6c5fc3eda60a1d67f3
+ms.openlocfilehash: ea184b406c721601c76829c02496b2d9201eb1d1
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "49751467"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50926340"
 ---
 # <a name="microsoft-365-solution-catalog"></a>Microsoft 365 解决方案目录
 
-您是否正在寻找一种快速开始使用 Microsoft 365 中的合规性任务的方法？ 查看 [Microsoft 365](https://compliance.microsoft.com/solutioncatalog) 解决方案目录，以发现、学习并快速开始使用合规性和风险管理解决方案。
+是否正在寻找快速开始使用 Microsoft 365 中的合规性任务的方法？ 查看 [Microsoft 365](https://compliance.microsoft.com/solutioncatalog) 解决方案目录，以发现、学习并快速开始使用合规性和风险管理解决方案。
 
 Microsoft 365 中的合规性解决方案是集成功能的集合，可用于帮助你管理端到端合规性方案。 解决方案的功能和工具可能包括策略、警报、报告等的组合。
 
-阅读本文，了解 Microsoft 365 合规中心中的新解决方案目录、如何获取它[](#how-do-i-get-this)、常见问题以及您的下[](#frequently-asked-questions)一[步](#next-steps)。
+阅读本文，了解 Microsoft 365 合规中心中的新解决方案目录、如何获取、[](#how-do-i-get-this)常见问题以及下[一步步骤](#next-steps)。 [](#frequently-asked-questions)
 
 ## <a name="catalog-organization"></a>目录组织
 
-解决方案目录分为各部分，其中包含 Microsoft 365 订阅中可用的每个合规性解决方案的信息卡。 每个部分都包含按合规性区域分组的解决方案的卡片。
+解决方案目录分为各部分，其中包含 Microsoft 365 订阅中可用的每个合规性解决方案的信息卡。 每个部分都包含针对按合规性区域分组的解决方案的卡片。
 
 ![Microsoft 365 解决方案目录主页](../media/m365-solution-catalog-home.png)
 
@@ -38,68 +38,68 @@ Microsoft 365 中的合规性解决方案是集成功能的集合，可用于帮
 
 ## <a name="information-protection--governance-section"></a>信息保护&管理部分
 
-信息 **保护&** 管理部分一目了然地显示了如何使用 Microsoft 365 合规性解决方案来保护和管理组织数据。
+信息 **保护&** 治理部分一目了然地展示了如何使用 Microsoft 365 合规性解决方案来保护和管理组织数据。
 
-![Microsoft 365 解决方案目录信息保护和治理部分](../media/m365-solution-catalog-information-protection-governance.png)
+![Microsoft 365 解决方案目录信息保护和管理部分](../media/m365-solution-catalog-information-protection-governance.png)
 
 在这里，你将看到以下解决方案的卡片：
 
-- [数据丢失防护](data-loss-prevention-policies.md)：在组织、云和设备上使用和共享敏感内容时检测敏感内容，并帮助防止意外数据丢失。
-- [信息治理](manage-information-governance.md)：使用解决方案导入、存储和分类业务关键数据，管理内容生命周期，以便保留所需的数据并删除不需要的内容。
+- [数据丢失防护](data-loss-prevention-policies.md)：检测整个组织、云和设备上使用的和共享的敏感内容，并帮助防止意外丢失数据。
+- [信息治理](manage-information-governance.md)：使用解决方案导入、存储和分类关键业务数据，管理内容生命周期，以便保留所需的内容并删除不需要的内容。
 - [信息保护](information-protection.md)：在整个组织生命周期内发现、分类和保护敏感内容和业务关键内容。
 - [记录管理](records-management.md)：使用智能分类自动执行并简化组织中法规、法律和业务关键记录的保留计划。
 
-## <a name="insider-risk-management-section"></a>"内部风险管理"部分
+## <a name="insider-risk-management-section"></a>内部风险管理部分
 
-主页 **上的"** 内部风险管理"部分一目了然地显示了组织如何在内部风险造成危害之前识别、分析和采取措施。
+主页 **上的"** 内部风险管理"部分一目了然地显示了组织如何在内部风险导致危害之前识别、分析和采取措施。
 
 ![Microsoft 365 解决方案目录内部风险管理部分](../media/m365-solution-catalog-insider-risk-management.png)
 
 在这里，你将看到以下解决方案的卡片：
 
-- [通信合规性](communication-compliance.md)：通过帮助您自动捕获不恰当的消息、调查可能的策略违反情况并采取措施将损害降至最低，从而最大程度地降低通信风险。
-- [内部风险管理](insider-risk-management.md)：检测整个组织中存在风险的活动，以帮助你快速识别、调查和对内部风险和威胁采取行动。
+- [通信合规性](communication-compliance.md)：通过帮助您自动捕获不恰当的消息、调查可能的策略违反情况并采取措施最大程度地减小损害，从而最大程度地降低通信风险。
+- [内部风险管理](insider-risk-management.md)：检测整个组织中存在风险的活动，帮助你快速识别、调查和应对内部风险和威胁。
 
 ## <a name="discovery--response-section"></a>发现&响应部分
 
-主页 **&的** "发现与响应"部分可一目了然地显示组织如何快速查找、调查和响应有关数据的合规性问题。
+主页 **上的** "发现&响应"部分一目了然地显示了组织如何快速查找、调查和响应与数据相关的合规性问题。
 
 ![Microsoft 365 解决方案目录发现和响应部分](../media/m365-solution-catalog-discovery-response.png)
 
 在这里，你将看到以下解决方案的卡片：
 
-- [审核](search-the-audit-log-in-security-and-compliance.md)：记录组织的用户和管理员活动，以便你可以搜索审核日志并调查所有位置和服务中活动的综合列表。
-- [数据主体请求](manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md)：查找和导出用户的个人数据，以帮助你响应针对 GDPR 的数据主体请求。
+- [审核](search-the-audit-log-in-security-and-compliance.md)：记录组织的用户和管理员活动，以便你可以搜索审核日志并调查所有位置和服务中的活动的综合列表。
+- [数据主体请求](/compliance/regulatory/gdpr-manage-gdpr-data-subject-requests-with-the-dsr-case-tool)：查找和导出用户的个人数据，以帮助你响应针对 GDPR 的数据主体请求。
 - [电子数据展示](manage-legal-investigations.md)
-    - [核心电子数据展示](ediscovery-cases.md)：跨内容位置进行搜索，以标识、保留和导出数据以响应法律发现请求和电子数据展示事例。
-    - [高级电子数据展示](overview-ediscovery-20.md)：通过提供智能分析和机器学习来构建电子数据展示功能，以帮助您进一步分析与发现请求相关的数据。
+    - [核心电子数据展示](./get-started-core-ediscovery.md)：跨内容位置进行搜索，以标识、保留和导出数据以响应法律发现请求和电子数据展示事例。
+    - [高级电子数据展示](overview-ediscovery-20.md)：基于电子数据展示功能构建，提供智能分析和机器学习，帮助你进一步分析与发现请求相关的数据。
 
 ## <a name="how-do-i-get-this"></a>如何获取此要求？
 
-若要访问 Microsoft 365 解决方案目录，请转到全局管理员、合规性管理员或合规性数据管理员并 [https://compliance.microsoft.com](https://compliance.microsoft.com) 登录。 在 **屏幕** 左侧的导航窗格中选择目录以打开目录主页。
+若要访问 Microsoft 365 解决方案目录，请转到 全局管理员、合规性管理员或合规性数据管理员并 [https://compliance.microsoft.com](https://compliance.microsoft.com) 登录。 选择 **屏幕** 左侧导航窗格中的"目录"以打开目录主页。
 
-## <a name="frequently-asked-questions"></a>常见问题解答
+## <a name="frequently-asked-questions"></a>常见问题
 
 **为什么我看不到 Microsoft 365 解决方案目录？**
 
-首先，确保你拥有相应的许可证和权限。 然后，以全局管理员、合规性管理员或合规性 [https://compliance.microsoft.com](https://compliance.microsoft.com) 数据管理员登录。
+首先，请确保你拥有相应的许可证和权限。 然后，以全局管理员 [https://compliance.microsoft.com](https://compliance.microsoft.com) 、合规性管理员或合规性数据管理员的登录名登录。
 
-**解决方案目录页面上列出的某些合规性功能在 Microsoft 365 合规中心中不可用。我该怎么办？**
+**解决方案目录页面上列出的某些合规性功能在 Microsoft 365 合规中心不可用。我该怎么办？**
 
-我们始终致力于向 Microsoft 365 合规中心和解决方案目录添加新功能。 如果在导航区域中找不到特定解决方案，则当解决方案在订阅中可用时可访问它。
+我们始终致力于向 Microsoft 365 合规中心和解决方案目录添加新功能。 如果在导航区域中找不到特定解决方案，则当解决方案在你的订阅中可用时可以访问它。
 
-如果你正在寻找现有合规性解决方案，但 Microsoft 365 合规中心尚未提供它，则始终可以通过前往访问现有安全合规中心 &amp; 中的解决方案 [https://protection.office.com](https://protection.office.com) 。 或者，可以单击 Microsoft 365 合规中心左侧导航中的"更多资源"选项卡，然后选择 Office 365 安全与合规中心卡。   
+如果你正在查找现有的合规性解决方案，但它在 Microsoft 365 合规中心尚不可用，则始终可以通过访问 现有安全与合规中心 &amp; 中的解决方案，访问 [https://protection.office.com](https://protection.office.com) 。 或者，可以单击 Microsoft 365 合规中心左侧导航中的"更多资源"选项卡，然后选择 Office 365 安全与合规中心卡。   
 
 ## <a name="next-steps"></a>后续步骤
 
-- **访问 Microsoft 合规性管理器**，它可帮助你了解组织遵守关键标准和法规的状态。 它提供了建议的操作，您可以采取这些操作来增强整体合规性状态，并提供工作流功能以帮助您高效地执行这些操作。 若要了解更多信息，请参阅 [合规性管理器](compliance-manager.md)。
+- **请访问 Microsoft 合规性管理器**，它可帮助你了解组织在遵守关键标准和法规时的状态。 它提供了建议的操作，可增强整体合规性状态，并提供工作流功能以帮助您有效执行这些操作。 若要了解更多信息，请参阅 [合规性管理器](compliance-manager.md)。
 
-- **配置内部风险管理策略** 以帮助最大程度地降低内部风险，并使您能够检测、调查和对组织中存在风险的活动采取行动。 请参阅 [内部风险管理](insider-risk-management.md)。
+- **配置内部风险管理策略以帮助** 最大程度地降低内部风险，并使您能够检测、调查和对组织中存在风险的活动采取行动。 请参阅 [预览体验成员风险管理](insider-risk-management.md)。
 
-- **了解并创建通信合规性策略** ，以快速识别和修正公司行为准则策略违反行为。 请参阅 [通信合规性](communication-compliance.md)。
+- **了解并创建通信合规性策略** ，以快速识别和修正公司行为准则违反策略的行为。 请参阅 [通信合规性](communication-compliance.md)。
 
-- **Microsoft 信息保护**，了解 Microsoft 365 解决方案如何帮助您发现、分类和保护敏感信息，无论它身在何处或出差。
-    - **熟悉并设置 Microsoft Cloud App Security。** 请参阅 [快速入门：Microsoft Cloud App Security 入门](https://docs.microsoft.com/cloud-app-security/getting-started-with-cloud-app-security)。
-    - **分类器入门**。 对内容进行分类，然后标记内容以便进行保护和正确处理是信息保护规范的起点。 请参阅[了解可训练分类器 (预览) 。 ](classifier-learn-about.md)
+- **Microsoft 信息保护**，了解 Microsoft 365 解决方案如何帮助你发现、分类和保护敏感信息，无论它身在何处或出差。
+    - **熟悉并设置 Microsoft Cloud App Security。** 请参阅 [快速入门：Microsoft Cloud App Security 入门](/cloud-app-security/getting-started-with-cloud-app-security)。
+    - **分类器入门**。 对内容进行分类，然后标记内容以便进行保护并正确处理内容是信息保护规范的起点。 请参阅[了解可训练分类器 (预览) 。 ](classifier-learn-about.md)
 
-- **经常访问 Microsoft 365** 解决方案目录，并确保查看新解决方案，以帮助你满足合规性需求。 登录， [https://compliance.microsoft.com](https://compliance.microsoft.com) 然后选择左侧导航窗格中的"目录"。
+- **经常访问你的 Microsoft 365** 解决方案目录，并确保查看新解决方案来帮助你满足合规性需求。 登录位置 [https://compliance.microsoft.com](https://compliance.microsoft.com) ，然后选择左侧导航窗格中的"目录"。

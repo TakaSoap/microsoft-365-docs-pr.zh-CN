@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: ''
 description: 了解如何保留保管人及其数据源，以保留高级电子数据展示案例的相关内容。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: fbad81e93635f823fab1c4f44867760d00fc59ed
-ms.sourcegitcommit: 8f1721de52dbe3a12c11a0fa5ed0ef5972ca8196
+ms.openlocfilehash: 07edcb2707d1dffecfa5a2aac6c4340ac6cbe53f
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/17/2021
-ms.locfileid: "50838583"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50926370"
 ---
 # <a name="manage-holds-in-advanced-ediscovery"></a>在高级电子数据展示中管理保留项
 
@@ -80,7 +80,7 @@ ms.locfileid: "50838583"
       有关将 Microsoft 365 组和 Microsoft Teams 置于保留状态的技巧，请参阅 **常见问题** 部分。
 
       > [!NOTE]
-      > 用户的 OneDrive 帐户的 URL 包括其用户主体名称 (UPN)  (例如 `https://alpinehouse-my.sharepoint.com/personal/sarad_alpinehouse_onmicrosoft_com` ，) 。 在极少数情况下，更改了某个人的 UPN，其 OneDrive URL 也将更改以合并新的 UPN。 如果用户的 OneDrive 帐户属于非安全保留，并且其 UPN 已更改，则需要更新保留并指向新的 OneDrive URL。 有关详细信息，请参阅 [UPN 更改如何影响 OneDrive URL](https://docs.microsoft.com/onedrive/upn-changes)。
+      > 用户的 OneDrive 帐户的 URL 包括其用户主体名称 (UPN)  (例如 `https://alpinehouse-my.sharepoint.com/personal/sarad_alpinehouse_onmicrosoft_com` ，) 。 在极少数情况下，更改了某个人的 UPN，其 OneDrive URL 也将更改以合并新的 UPN。 如果用户的 OneDrive 帐户属于非安全保留，并且其 UPN 已更改，则需要更新保留并指向新的 OneDrive URL。 有关详细信息，请参阅 [UPN 更改如何影响 OneDrive URL](/onedrive/upn-changes)。
 
    1. **Exchange 公用文件夹** - 将切换开关移动到"所有"位置，将 Exchange Online 组织的所有公用文件夹置于保留状态。 请注意，你无法选择要置于保留状态的特定公用文件夹。 如果不想将 **公用文件夹置于** 保留状态，将切换开关设置为"无"。
 
@@ -92,7 +92,7 @@ ms.locfileid: "50838583"
 
     - 单击  **"** 添加条件"添加一个或多个条件以缩小保留的搜索查询范围。 每个条件向创建保留时创建和运行的 KQL 搜索查询添加一个子句。 例如，可以指定日期范围，以便保留在日期范围内创建的电子邮件或网站文档。 可通过使用 AND 运算符在逻辑上将条件连接至关键字查询（在关键字框中指定）。 这意味着项目必须满足关键字查询和要置于保留状态的条件。
 
-     有关创建搜索查询和使用条件的信息，请参阅内容搜索的关键字查询和 [搜索条件](https://docs.microsoft.com/office365/SecurityCompliance/keyword-queries-and-search-conditions)。
+     有关创建搜索查询和使用条件的信息，请参阅内容搜索的关键字查询和 [搜索条件](/office365/SecurityCompliance/keyword-queries-and-search-conditions)。
 
 11. 配置基于查询的保留后，单击"下一 **步"。**
 

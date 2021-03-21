@@ -15,12 +15,12 @@ localization_priority: None
 f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 65fa24d0a69e43cbdb2deeed8362b83d6b097413
-ms.sourcegitcommit: 8f1721de52dbe3a12c11a0fa5ed0ef5972ca8196
+ms.openlocfilehash: b245a0f7ca0845024fec0c498aca4c7d447f14ad
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/17/2021
-ms.locfileid: "50838355"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50928012"
 ---
 # <a name="define-information-barrier-policies"></a>定义信息屏障策略
 
@@ -60,7 +60,7 @@ ms.locfileid: "50838355"
 - 目录数据 - 确保组织的结构反映在目录数据中。 若要采取此操作，请确保用户帐户属性（如组成员身份、部门名称等）正确填充在 Azure Active Directory (或 Exchange Online) 。 若要了解详细信息，请参阅以下资源：
   - [信息屏障策略的属性](information-barriers-attributes.md)
   - [使用 Azure Active Directory 添加或更新用户的个人资料信息](/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal)
-  - [使用 Office 365 PowerShell 配置用户帐户的属性](/microsoft-365/enterprise/configure-user-account-properties-with-microsoft-365-powershell)
+  - [使用 Office 365 PowerShell 配置用户帐户的属性](../enterprise/configure-user-account-properties-with-microsoft-365-powershell.md)
 
 - 作用域目录搜索 - 在定义组织的第一个信息屏障策略之前，必须在 Microsoft Teams 中启用作用域 [目录搜索](/MicrosoftTeams/teams-scoped-directory-search)。 在启用作用域目录搜索后至少等待 24 小时，然后再设置或定义信息屏障策略。
 
@@ -124,7 +124,7 @@ ms.locfileid: "50838355"
 确定要用于定义分段的组织目录数据中的哪些属性。 可以使用 *Department、MemberOf* 或任何受支持的属性。  请确保你在为用户选择的 属性中具有值。 [有关信息屏障，请参阅受支持的属性列表](information-barriers-attributes.md)。
 
 > [!IMPORTANT]
-> **在继续下一节之前**，请确保目录数据具有可用于定义分段的属性值。 如果您的目录数据没有您想要使用的属性的值，则必须先更新用户帐户以包含该信息，然后才能继续信息屏障。 若要获取有关此内容的帮助，请参阅以下资源：<br/>- [使用 Office 365 PowerShell 配置用户帐户属性](/microsoft-365/enterprise/configure-user-account-properties-with-microsoft-365-powershell)<br/>- [使用 Azure Active Directory 添加或更新用户的个人资料信息](/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal)
+> **在继续下一节之前**，请确保目录数据具有可用于定义分段的属性值。 如果您的目录数据没有您想要使用的属性的值，则必须先更新用户帐户以包含该信息，然后才能继续信息屏障。 若要获取有关此内容的帮助，请参阅以下资源：<br/>- [使用 Office 365 PowerShell 配置用户帐户属性](../enterprise/configure-user-account-properties-with-microsoft-365-powershell.md)<br/>- [使用 Azure Active Directory 添加或更新用户的个人资料信息](/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal)
 
 ### <a name="define-segments-using-powershell"></a>使用 PowerShell 定义分段
 

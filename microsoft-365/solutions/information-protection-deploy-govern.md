@@ -1,5 +1,5 @@
 ---
-title: 管理受数据隐私法规约束的信息
+title: 管理受数据隐私条例约束的信息
 ms.author: bcarter
 author: brendacarter
 f1.keywords:
@@ -16,79 +16,78 @@ ms.collection:
 - m365solution-infoprotection
 - m365solution-scenario
 ms.custom: ''
-description: 使用 Microsoft 365 保留标签和策略来管理 Microsoft 365 环境中的个人数据。
-ms.openlocfilehash: c2a933e556213ae4b78db9dc5f903885df969b27
-ms.sourcegitcommit: 9841058fcc95f7c2fed6af92bc3c3686944829b6
+description: 使用 Microsoft 365 保留标签和策略管理 Microsoft 365 环境中的个人数据。
+ms.openlocfilehash: 62c2386ac8f9c5b31650df8be2c2a411d8b75959
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48377041"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50928432"
 ---
-# <a name="govern-information-subject-to-data-privacy-regulation"></a>管理受数据隐私法规约束的信息
+# <a name="govern-information-subject-to-data-privacy-regulation"></a>管理受数据隐私条例约束的信息
 
-可以在您的环境中使用信息控制控件，以帮助满足数据隐私合规性需求，包括特定于常规 Data Protection 规章的数字 (GDPR) 、HIPAA-高科技 (美国卫生保健隐私法案) 、加利福尼亚消费者保护法 (CCPA) 和巴西 Data Protection 法案 (LGPD) 。 
+可以在环境中使用信息治理控制来帮助满足数据隐私合规性需求，包括特定于一般数据保护条例 (GDPR) 、HIPAA-HITECH (美国医疗保健隐私法案) 、加州消费者保护法案 (CCPA) 和巴西数据保护法案 (LGPD) 等。 
 
-这些控件主要分为以下几个解决方案领域：
+这些控件主要属于以下解决方案区域：
 
 - 保留策略
 - 保留标签
 - 记录管理
 
-## <a name="data-privacy-regulations-impacting-information-governance-controls"></a>影响信息治理控制的数据隐私条例
+## <a name="data-privacy-regulations-impacting-information-governance-controls"></a>影响信息治理控制的数据隐私法规
 
-下面的示例列出了可能与信息治理控制相关的数据隐私法规：
+下面是可能与信息治理控制相关的数据隐私法规示例列表：
 
-- GDPR 文章 (13) # B2 2) # B4 a) 
-- GDPR 文章 (5) # B2 1) # B4 f) 
-- HIPAA-高科技 (45 CFR 164.312 (c) # B3 2) # A5
-- HIPAA-高科技 (45 CFR 164.316 (b) # B3 1) # B5 i) # A7
-- HIPAA-高科技 (45 CFR 164.316 (b) # B3 1) # B5 ii) # A7
-- LGPD 文章46
+- GDPR 文章 (2)  (2)  (13) 
+- GDPR 文章 (5)  (1)  (f) 
+- HIPAA-HITECH (45 CFR 164.312 (c)  (2) ) 
+- HIPAA-HITECH (45 CFR 164.316 (b)  (1)  (i) ) 
+- HIPAA-HITECH (45 CFR 164.316 (b)  (1)  (ii) ) 
+- LGPD 文章 46
 
-有关这些管理法规的详细信息，请参阅 [评估数据隐私风险和确定敏感信息文章](information-protection-deploy-assess.md)。
+有关这些法规详细信息，请参阅评估数据 [隐私风险并识别敏感信息文章](information-protection-deploy-assess.md)。
 
-对于信息治理，数据隐私规章通常会调用以下内容：
+对于信息治理，数据隐私法规通常要求：
 
-- 对于存储在 Microsoft 365 中的个人数据，应采用一种技术方案进行保留和删除。
-- 如果要存储个人数据，请通知主题将存储数据的时间长度，这是前端 web 系统上现在的标准做法。
-- 应保护个人数据，防止使用可验证的方法意外处理、丢失或更改。
-- 应记录对个人数据执行的任何操作，并且文档应在指定时间段内保留。
+- 你应该为 Microsoft 365 中存储的个人数据采用保留和删除技术方案。
+- 如果要存储个人数据，请告知主体数据将存储多久，这是现在前端 Web 系统上的标准做法。
+- 应该防止个人数据使用可验证的方法意外处理、丢失或更改。
+- 对个人数据执行的任何操作都应进行记录，并且该文档应保留指定的期限。
 
-由于数据隐私法规在数据保留和删除方面不是非常特定的，因此需要考虑其他因素，这可能规定了 Microsoft 365 订阅中存储的个人信息的信息治理准则。 下面是一些示例：
+由于数据隐私法规在数据保留和删除方面并不十分具体，因此需要考虑其他因素，这些因素可能规定 Microsoft 365 订阅中存储的个人信息的信息治理准则。 下面是一些示例：
 
-- 在5年的不活动后，需要删除或 anonymization 帐户数据的情况下，在该时间点之后对消费者帐户进行老化，要求在存储与通知和其他自动化相关的数据和工作流的系统之间进行业务流程。
-- 配置用于保留与 GDPR 相关的策略和过程的规则，这些规则和过程已被取代（与组织的策略和程序的保留计划一致）的三年。
-- 维护单独的订阅，以便通过其支持组织与使用者进行通信。 两周后所有的电子邮件通信都将保留并删除，以减少系统中的任何隐私债务堆积。
+- 在 5 年不活动后对使用者帐户进行注销，并且要求在此后删除或匿名处理帐户数据，这要求系统在存储数据与与通知和其他自动化相关的工作流之间协调工作。
+- 配置与 GDPR 相关的策略和过程在被取代后保留三年的规则，这符合组织的策略和程序的保留计划。
+- 维护单独的订阅，以通过其支持组织与消费者进行通信。 所有电子邮件通信在两周后保留和删除，以减少系统内的任何隐私债务增加。
 
-要回答的主要问题是： 
+要回答的一个关键问题是： 
 
-- 出于有效的业务原因，包含个人数据的信息需要多长时间才能保持，以避免 "永远不应保留" 做法？ 这必须与业务连续性的保留需求平衡。
+- 出于有效的业务原因，包含个人数据的信息需要保留多久，以避免"永久保留"做法？ 这必须与业务连续性的保留需求相平衡。
 
-无论个人信息保留或删除个人信息的法律和商业原因如何，Microsoft 都提供了多种在 Microsoft 365 中实施您的数据管理方案的功能。
+无论保留或删除个人信息的法律和业务原因如何，Microsoft 都提供了许多功能来实现 Microsoft 365 中的数据管理方案。
 
 ## <a name="managing-information-governance-in-microsoft-365"></a>在 Microsoft 365 中管理信息治理
 
-若要开始，请参阅在 Microsoft 365 中 [管理信息](../compliance/manage-information-governance.md) 管理和 [数据保留、删除和销毁](https://docs.microsoft.com/office365/Enterprise/office-365-data-retention-deletion-and-destruction-overview)。
+首先，请参阅管理 [信息治理](../compliance/manage-information-governance.md) 和 [Microsoft 365 中的数据保留、删除和销毁](/office365/Enterprise/office-365-data-retention-deletion-and-destruction-overview)。
 
-### <a name="develop-data-retention-schedules-for-containers-email-and-content"></a>为容器、电子邮件和内容开发数据保留计划
+### <a name="develop-data-retention-schedules-for-containers-email-and-content"></a>制定容器、电子邮件和内容的数据保留计划
 
-请注意以下几点：
+请注意下列事项：
 
-- 若要为定义的信息类型建立数据保留计划，应考虑实施任何保留或删除方案的先决条件。
+- 为定义的信息类型建立数据保留计划应被视为实施任何保留或删除方案的先决条件。
 
-- 根据大多数组织认为重要的信息类型的数量以及与他们一起提供的相应大型记录保留计划，实现数据保留和记录管理策略需要进行规划。 
+- 鉴于大多数组织认为重要的信息类型以及相应的大型记录保留计划，实施数据保留和记录管理策略需要进行规划。 
 
-- 建立此类型的有效数据管理策略的关键是重点关注需要更正式管理的最高优先级的业务功能和信息类型。 例如法律合同、财务报表和法规遵从性文档。 尽量避免为每种信息类型提供单独的保留计划。 请尽量充分利用常规类别，例如，将常规业务内容的保留计划安排为7年。
+- 建立此类型的有效数据管理策略的关键是重点关注需要更正式的管理的最高优先级业务功能和信息类型。 示例包括法律合同、财务报表和监管合规性文档。 尝试避免对每种信息类型使用单独的保留计划。 尽量利用常规类别，例如，常规业务内容的保留计划为 7 年。
 
-- 一旦环境中的个人信息类型更清楚，请为此类型的内容建立保留和删除计划，并调整您的信息体系结构以使此类信息的管理更容易。 例如，使用受控制的访问隔离单独的网站、库或文件夹中的个人信息。
+- 在更好地了解环境中的个人信息类型后，为此类内容制定保留和删除计划，并调整信息体系结构，以便更轻松地管理此类信息。 例如，将个人信息隔离在具有受控访问权限的单独网站、库或文件夹中。
 
 ### <a name="retention-policies-and-retention-labels"></a>保留策略和保留标签
 
-使用 [保留策略和保留标签](../compliance/retention.md) 在 Microsoft 365 中保留或删除包含或预期包含个人数据的内容。
+使用 [保留策略和保留标签](../compliance/retention.md) 保留或删除 Microsoft 365 中包含或预期包含个人数据的内容。
 
 ### <a name="records-management"></a>记录管理
 
-使用保留标签声明内容 a 记录，以在 Microsoft 365 中为数据实现 [记录管理解决方案](../compliance/records-management.md) 。
+使用声明内容记录的保留标签，为 Microsoft [](../compliance/records-management.md) 365 中的数据实现记录管理解决方案。
 
-对于数据隐私，法律部门收到 (Dsr) 的数据主体请求被声明为记录，可以无限期存储或处理证据，以符合法规活动的保留规范。
-
+对于数据隐私， (部门收到的) DSR 的数据主体请求将被声明为记录，并可以无限期存储或经过证明处理，以遵守法规活动保留规范。

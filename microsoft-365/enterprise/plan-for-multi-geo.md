@@ -15,12 +15,12 @@ ms.collection:
 - SPO_Content
 localization_priority: Normal
 description: 了解 Microsoft 365 多地理位置、多地理位置的工作原理，以及什么地理位置可用于数据存储。
-ms.openlocfilehash: ce8b752cc6a335249f9d8e03289fd16b04756ce9
-ms.sourcegitcommit: 88ab08c0fa1acbc9e066009e131b9f2b0d506c64
+ms.openlocfilehash: 9625d55015cc0f18801d59e82fc8ca7090b3b721
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "50712338"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50927528"
 ---
 # <a name="plan-for-microsoft-365-multi-geo"></a>Microsoft 365 多地理位置计划
 
@@ -69,13 +69,13 @@ ms.locfileid: "50712338"
 
 创建一个用户列表，并包含他们的用户主体名称 (UPN) 和相应首选数据位置的位置代码。首先包含你的测试用户和初始试点组。在配置过程中你将需要使用这个列表。
 
-如果用户是从本地 Active Directory 系统同步到 Azure Active Directory，你必须将首选数据位置设置为 Active Directory 属性，并使用 Azure Active Directory Connect 同步它。 无法使用 Azure AD PowerShell 直接为同步用户配置首选数据位置。 [Azure Active Directory Connect 同步：配置 Microsoft 365 资源的首选数据位置](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnectsync-feature-preferreddatalocation)中介绍了在 Active Directory 中设置并同步 PDL 的步骤。
+如果用户是从本地 Active Directory 系统同步到 Azure Active Directory，你必须将首选数据位置设置为 Active Directory 属性，并使用 Azure Active Directory Connect 同步它。 无法使用 Azure AD PowerShell 直接为同步用户配置首选数据位置。 [Azure Active Directory Connect 同步：配置 Microsoft 365 资源的首选数据位置](/azure/active-directory/connect/active-directory-aadconnectsync-feature-preferreddatalocation)中介绍了在 Active Directory 中设置并同步 PDL 的步骤。
 
 多地理位置租户的管理可能与非多地理位置租户不同，因为许多 SharePoint 和 OneDrive 设置和服务都具有多地理位置意识。我们建议你在继续配置之前先查看[管理多地理位置环境](administering-a-multi-geo-environment.md)。
 
-阅读 [多地理位置环境中用户体验，](multi-geo-user-experience.md) 详细了解最终用户在多地理位置环境中的体验。
+阅读 [多地理位置环境的用户体验，](multi-geo-user-experience.md) 详细了解最终用户在多地理位置环境中的体验。
 
-要详细了解 Microsoft 365 多地理位置租户中的 Teams 体验，请参阅 [Microsoft 365 OneDrive 和 SharePoint Online 支持多地理位置的租户中的 Teams 体验](https://docs.microsoft.com/microsoftteams/teams-experience-o365odb-spo-multi-geo)。
+要详细了解 Microsoft 365 多地理位置租户中的 Teams 体验，请参阅 [Microsoft 365 OneDrive 和 SharePoint Online 支持多地理位置的租户中的 Teams 体验](/microsoftteams/teams-experience-o365odb-spo-multi-geo)。
 
 若要开始配置 Microsoft 365 多地理位置，请参阅[配置 Microsoft 365 多地理位置](multi-geo-tenant-configuration.md)。
 
@@ -83,4 +83,4 @@ ms.locfileid: "50712338"
 
 ## <a name="related-topics"></a>相关主题
 
-[Microsoft 365 多地理位置电子数据展示配置](https://docs.microsoft.com/microsoft-365/enterprise/multi-geo-ediscovery-configuration)
+[Microsoft 365 多地理位置电子数据展示配置](./multi-geo-ediscovery-configuration.md)

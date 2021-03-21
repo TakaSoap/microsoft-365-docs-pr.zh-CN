@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 58c8d2cdebdef6c0307b0c234951f6d32e5009df
-ms.sourcegitcommit: 8b1bd7ca8cd81e4270f0c1e06d2b6ca81804a6aa
+ms.openlocfilehash: f6f01a1bed296b6af2e6be973de6605910809fc3
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "50820157"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50926400"
 ---
 # <a name="insider-risk-management-cases"></a>内部风险管理案例
 
@@ -241,27 +241,6 @@ Select an alert from the queue to display the **Alert detail** page.
 解决案例后，关联的 Microsoft 团队将自动存档 (隐藏，并打开为只读) 。
 
 若要了解有关用于内部风险管理的 Microsoft Teams 的信息，请参阅内部 [风险管理设置入门](insider-risk-management-settings.md#microsoft-teams-preview)。
-
-### <a name="share-the-case"></a>共享案例
-
-通过共享内部风险管理案例，风险研究人员和分析师可以轻松与组织的其他合规性利益干系人协作。 你可以与案例管理领域的外部利益干系人快速共享内部风险管理案例的链接。 若要从链接访问内部风险管理案例，利益干系人必须包含在任何内部风险管理角色组中。
-
->[!NOTE]
->感谢你在预览 ServiceNow 连接器期间提供的反馈和支持。 我们决定在 2020 年 11 月 30 日停止预览 ServiceNow 连接器并停止支持内部风险管理。 我们正在积极评估替代方法，以为客户提供内部风险管理中的 ServiceNow 集成。
-
-可以使用以下共享选项：
-
-- **ServiceNow：** 为 Microsoft 365 组织配置 Microsoft 365 ServiceNow 连接器后，你可以轻松地与 ServiceNow 组织共享指向该案例的链接、打开事件或请求更改。 若要与 ServiceNow 共享案例，请从案例操作中选择"**案例操作**  >  **""共享**  >  服务 **Now"。** ServiceNow 与内部风险管理的集成支持包括以下案例信息和操作：
-    - **任务名称**：新 ServiceNow 任务的名称。
-    - **任务说明**：新 ServiceNow 任务的说明。 此可编辑的说明字段自动包含指向内部风险管理案例的链接。
-    - **任务类型**：新 ServiceNow 任务的任务类型，事件 *或**更改请求*。
-    - **优先级**：新 ServiceNow 任务的优先级，包括 *规划*、*低*、中等 *、高* 或 *关键*。
-    - **截止日期**：完成 ServiceNow 任务的请求日期。
-
-![与 ServiceNow 共享内部风险管理](../media/insider-risk-share-servicenow.png)
-
-- **电子邮件**：共享电子邮件中内部风险管理案例的链接。 可以使用此共享选项选择任何本地配置的电子邮件客户端。 若要与电子邮件共享案例链接 **，请从**  >  案例操作工具栏中选择"共享电子邮件"。
-- **复制链接**：将指向内部风险管理案例的链接复制到剪贴板。 若要将案例链接复制到剪贴板，**请从案例** 操作工具栏  >  **中选择**"共享复制链接"。
 
 ### <a name="resolve-the-case"></a>解决这种情况
 

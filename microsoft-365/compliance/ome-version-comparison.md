@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: 本文帮助说明不同版本的 Office 365 邮件加密之间的差异。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a587e27460d949811f9f30af0244cf325aaadac6
-ms.sourcegitcommit: 06d9e056eabfbac8fafe66cc32907b33d4ae8253
+ms.openlocfilehash: e75a709be6141c4bd1df4e63df677dd263c0777a
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50741333"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50927730"
 ---
 # <a name="compare-versions-of-ome"></a>比较 OME 的版本
 
@@ -41,7 +41,7 @@ Exchange Online 包括信息权限管理 (IRM) 功能，可为电子邮件和附
 
 ### <a name="prepare-for-ad-rms-deprecation"></a>准备弃用 AD RMS
 
-如果已设置 Azure 信息保护，但没有使用它，则使用 Exchange Online PowerShell 启用该服务。 在本地计算机上，使用在组织中具有全局管理员权限的工作或学校帐户，在远程窗口中Windows PowerShell Exchange [Online PowerShell。](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)
+如果已设置 Azure 信息保护，但没有使用它，则使用 Exchange Online PowerShell 启用该服务。 在本地计算机上，使用在组织中具有全局管理员权限的工作或学校帐户，在远程窗口中Windows PowerShell Exchange [Online PowerShell。](/powershell/exchange/connect-to-exchange-online-powershell)
 
 若要启用 Azure 信息保护，请通过Set-IrmConfiguration命令使用 azure 信息保护 cmdlet。
 
@@ -49,7 +49,7 @@ Exchange Online 包括信息权限管理 (IRM) 功能，可为电子邮件和附
 Set-IrmConfiguration -AzureRMSLicensingEnabled $true
 ```
 
-如果组织尚未设置 Azure 信息保护，则需要从 AD RMS 迁移到 Azure 信息保护。 有关说明，请参阅 [从 AD RMS 迁移到 Azure 信息保护](https://docs.microsoft.com/azure/information-protection/migrate-from-ad-rms-to-azure-rms)。
+如果组织尚未设置 Azure 信息保护，则需要从 AD RMS 迁移到 Azure 信息保护。 有关说明，请参阅 [从 AD RMS 迁移到 Azure 信息保护](/azure/information-protection/migrate-from-ad-rms-to-azure-rms)。
 
 ## <a name="side-by-side-comparison-of-features-and-capabilities"></a>特性和功能并行比较
 
@@ -104,7 +104,7 @@ GCC High 内的收件人在 Outlook for PC 和 Mac 以及 Web 上的 Outlook 中
 
 GCC High 内的发件人可以在 GCC High 边界外发送加密电子邮件，反之亦然。
 
-GCC High 外部的所有收件人（包括商业 Microsoft 365 用户、Outlook.com用户和其他电子邮件提供商（如 Gmail 和 Yahoo）的其他用户）将收到包装邮件。 此包装邮件将收件人重定向到 OME 门户，收件人可以在其中阅读和回复邮件。 GCC High sending OME encrypted mail to GCC High 外部的发件人也是如此。
+GCC High 外部的所有收件人（包括商业 Microsoft 365 用户、Outlook.com 用户和其他电子邮件提供商（如 Gmail 和 Yahoo）的其他用户）将收到包装邮件。 此包装邮件将收件人重定向到 OME 门户，收件人可以在其中阅读和回复邮件。 GCC High sending OME encrypted mail to GCC High 外部的发件人也是如此。
 
 ## <a name="coexistence-of-legacy-ome-and-the-new-capabilities-in-the-same-tenant"></a>旧版 OME 与同一租户中的新功能共存
 

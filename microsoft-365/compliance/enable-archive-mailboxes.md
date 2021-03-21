@@ -20,12 +20,12 @@ search.appverid:
 ms.assetid: 268a109e-7843-405b-bb3d-b9393b2342ce
 ms.custom: seo-marvel-apr2020
 description: 了解如何使用合规性中心来启用存档邮箱，以支持组织的邮件保留、电子数据展示和法定保留要求。
-ms.openlocfilehash: d7506b92cc16120f1d40a6d5a1744ab38d446a76
-ms.sourcegitcommit: a62ac3c01ba700a51b78a647e2301f27ac437c5a
+ms.openlocfilehash: 2bc80d347d1324a317cc2cc2712d475781adc492
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/12/2021
-ms.locfileid: "50233812"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50926512"
 ---
 # <a name="enable-archive-mailboxes-in-the-compliance-center"></a>在合规性中心中启用存档邮箱
 
@@ -102,7 +102,7 @@ Microsoft 365 中的存档（又称为 *就地存档*）为用户提供额外的
 
 此外, 还可使用 Exchange Online PowerShell 启用存档邮箱。 使用 Windows PowerShell 的主要原因是，可以为贵公司所有用户快速启用存档邮箱。
 
-第一步是连接到 Exchange Online PowerShell。 有关说明，请参阅[连接 PowerShell Exchange Online](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)。
+第一步是连接到 Exchange Online PowerShell。 有关说明，请参阅[连接 PowerShell Exchange Online](/powershell/exchange/connect-to-exchange-online-powershell)。
 
 连接到 Exchange Online 后, 可运行以下部分中的命令来启用或禁用存档邮箱。
 
@@ -150,8 +150,8 @@ Get-Mailbox -Filter {ArchiveGuid -Ne "00000000-0000-0000-0000-000000000000" -AND
 
 - 有关存档邮箱和 Exchange 保留策略的详细信息, 请参阅:
 
-  - [ Exchange Online中的保留标记和保留策略 ](https://docs.microsoft.com/exchange/security-and-compliance/messaging-records-management/retention-tags-and-policies)
+  - [ Exchange Online中的保留标记和保留策略 ](/exchange/security-and-compliance/messaging-records-management/retention-tags-and-policies)
 
-  - [Exchange Online 中的默认保留策略](https://docs.microsoft.com/exchange/security-and-compliance/messaging-records-management/default-retention-policy)
+  - [Exchange Online 中的默认保留策略](/exchange/security-and-compliance/messaging-records-management/default-retention-policy)
 
   - [为组织中的邮箱设置存档和删除策略](set-up-an-archive-and-deletion-policy-for-mailboxes.md)

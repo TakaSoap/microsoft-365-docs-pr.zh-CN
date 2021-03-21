@@ -18,12 +18,12 @@ ms.collection:
 - Strat_O365_Enterprise
 description: 了解如何使用 Office 365 邮件加密为组织创建敏感信息类型策略。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 22aec87b149c58b2537f6921fb7c37552ef72f98
-ms.sourcegitcommit: 06d9e056eabfbac8fafe66cc32907b33d4ae8253
+ms.openlocfilehash: ad570f64122aecd245b912b1b6545a5950e838cc
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50741375"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50927740"
 ---
 # <a name="create-a-sensitive-information-type-policy-for-your-organization-using-message-encryption"></a>使用邮件加密为组织创建敏感信息类型策略
 
@@ -35,7 +35,7 @@ ms.locfileid: "50741375"
 
 ### <a name="to-create-the-policy-by-using-mail-flow-rules-in-powershell"></a>使用 PowerShell 中的邮件流规则创建策略
 
-使用在组织中具有全局管理员权限的工作或学校帐户，启动Windows PowerShell会话并连接到 Exchange Online。 有关说明，请参阅[连接 PowerShell Exchange Online](https://aka.ms/exopowershell)。 使用 Set-IRMConfiguration 和 New-TransportRule cmdlet 创建策略。
+使用在组织中具有全局管理员权限的工作或学校帐户，启动Windows PowerShell会话并连接到 Exchange Online。 有关说明，请参阅[连接 PowerShell Exchange Online](/powershell/exchange/connect-to-exchange-online-powershell)。 使用 Set-IRMConfiguration 和 New-TransportRule cmdlet 创建策略。
 
 ## <a name="example-mail-flow-rule-created-with-powershell"></a>使用 PowerShell 创建的邮件流规则示例
 
@@ -54,7 +54,7 @@ Set-IRMConfiguration -DecryptAttachmentForEncryptOnly $true
 New-TransportRule -Name "Encrypt outbound sensitive emails (out of box rule)" -SentToScope  NotInOrganization  -ApplyRightsProtectionTemplate "Encrypt" -MessageContainsDataClassifications @(@{Name="ABA Routing Number"; minCount="1"},@{Name="Credit Card Number"; minCount="1"},@{Name="Drug Enforcement Agency (DEA) Number"; minCount="1"},@{Name="U.S. / U.K. Passport Number"; minCount="1"},@{Name="U.S. Bank Account Number"; minCount="1"},@{Name="U.S. Individual Taxpayer Identification Number (ITIN)"; minCount="1"},@{Name="U.S. Social Security Number (SSN)"; minCount="1"}) -SenderNotificationType "NotifyOnly"
 ```
 
-有关详细信息，请参阅[Set-IRMConfiguration](https://docs.microsoft.com/powershell/module/exchange/set-irmconfiguration)和[New-TransportRule。](https://docs.microsoft.com/powershell/module/exchange/new-transportrule)
+有关详细信息，请参阅[Set-IRMConfiguration](/powershell/module/exchange/set-irmconfiguration)和[New-TransportRule。](/powershell/module/exchange/new-transportrule)
 
 ## <a name="how-recipients-access-attachments"></a>收件人如何访问附件
 
@@ -77,4 +77,4 @@ Microsoft 365 审核此活动，并提供给管理员使用。 操作为"New-Tra
 
 ## <a name="to-disable-or-customize-the-sensitive-information-types-policy"></a>禁用或自定义敏感信息类型策略
 
-创建 Exchange 邮件流规则后，可以通过在 Exchange [](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules#enable-or-disable-a-mail-flow-rule)管理中心 (EAC ) 中访问"邮件流规则"来禁用或编辑该规则) 并禁用规则"加密出站敏感电子邮件 (开箱即用规则  >  *) "。*
+创建 Exchange 邮件流规则后，可以通过在 Exchange [](/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules#enable-or-disable-a-mail-flow-rule)管理中心 (EAC ) 中访问"邮件流规则"来禁用或编辑该规则) 并禁用规则"加密出站敏感电子邮件 (开箱即用规则  >  *) "。*

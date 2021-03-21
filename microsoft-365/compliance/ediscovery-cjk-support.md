@@ -1,5 +1,5 @@
 ---
-title: 针对高级电子数据展示的 CJK/双字节支持
+title: 高级电子数据展示的 CJK/Double 字节支持
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -15,70 +15,70 @@ search.appverid:
 - MET150
 ms.custom:
 - seo-marvel-apr2020
-description: 了解 Microsoft 365 中的高级电子数据展示如何支持中文、日语和朝鲜语 (CJK) 语言，这些语言使用双字节字符集。
-ms.openlocfilehash: cef91001f48512545ce528d6f43de97c28c4c495
-ms.sourcegitcommit: e17fd18b01d70e6428263c20cbce4b92e2a97765
+description: 了解 Microsoft 365 中的高级电子数据展示如何支持使用双字节字符集的 CJK (CJK) 中文、日语和朝鲜语。
+ms.openlocfilehash: ee47c5cd7f1a378ccfff05b8f7712e91092907cb
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "48626930"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50926598"
 ---
-# <a name="cjk-language-support-for-advanced-ediscovery"></a>适用于高级电子数据展示的 CJK 语言支持
+# <a name="cjk-language-support-for-advanced-ediscovery"></a>高级电子数据展示的 CJK 语言支持
 
-高级电子数据展示支持双字节字符集语言 (这些语言包括简体中文、繁体中文、日语和朝鲜语，在审阅集中统称为以下高级方案的 *CJK* 语言) ：
+高级电子数据展示支持双字节字符集语言 (包括简体中文、繁体中文、日语和朝鲜语，这些语言统称为 *CJK* 语言) ，用于审阅集的以下高级方案：
 
-- [查询评审集中的数据](review-set-search.md)时。
+- 查询 [审阅集 内的数据时](review-set-search.md)。
 
-- 在 [审阅集中标记文档](tagging-documents.md)时。
+- 在审阅 [集 内标记文档时](tagging-documents.md)。
 
-- 通过使用接近重复检测、电子邮件线程和主题分析来 [分析评审集合中的事例数据](analyzing-data-in-review-set.md) 时。
+- 当你 [使用近重复检测、](analyzing-data-in-review-set.md) 电子邮件线程和主题分析来分析审阅集内的情况数据时。
 
-## <a name="frequently-asked-questions"></a>常见问题解答
+## <a name="frequently-asked-questions"></a>常见问题
 
 **如何创建搜索以收集包含 CJK 字符的项目？**
 
-在高级电子数据展示中搜索内容时，可以使用 CJK 字符进行 [关键字搜索](building-search-queries.md#keyword-searches)、 [关键字查询和搜索条件](keyword-queries-and-search-conditions.md) 。 搜索核心电子数据展示和内容搜索中的内容时，也支持搜索 CJK 字符。
+在高级电子数据展示中搜索内容[](building-search-queries.md#keyword-searches)时，可以将[](keyword-queries-and-search-conditions.md)CJK 字符用于关键字搜索、关键字查询和搜索条件。 在核心电子数据展示和内容搜索中搜索内容时，也支持搜索 CJK 字符。
 
-我们为所有 [搜索运算符](keyword-queries-and-search-conditions.md#search-operators) 和 [搜索条件](keyword-queries-and-search-conditions.md#search-conditions)（包括布尔运算符 **and**、 **OR**、 **NOT**和 **NEAR**）提供 CJK 支持。
+我们针对所有搜索运算符和搜索条件 [](keyword-queries-and-search-conditions.md#search-operators)（包括布尔 [](keyword-queries-and-search-conditions.md#search-conditions)运算符 **AND** **、OR、NOT** 和 **NEAR）** 提供 CJK 支持。 
 
-如果你确信内容位置或项目包含 CJK 字符，但搜索不返回任何结果，请单击 "查询语言-国家/地区" 图标 ![查询语言-内容搜索中的国家/地区图标](../media/8d4b60c8-e1f1-40f9-88ae-ee2a7eca0886.png) 并为搜索选择对应的语言国家区域性代码值。 默认语言/区域是中性的。
+如果您确定内容位置或项目包含 CJK 字符，但搜索不会返回任何结果，请单击查询语言-国家/地区图标 ![内容搜索中的查询语言国家/地区图标](../media/8d4b60c8-e1f1-40f9-88ae-ee2a7eca0886.png) 并选择相应的语言国家/地区区域性代码值进行搜索。 默认语言/区域是中性的。
 
-**是否可以一次搜索多个语言？**
+**能否同时搜索多种语言？**
 
-这取决于您的搜索方案。
+这取决于你的搜索方案。
 
-- 当您在高级电子数据展示中 [查询审阅集中的数据](review-set-search.md) 时，您可以搜索多种语言。
+- 在 [高级电子数据展示中](review-set-search.md) 查询审阅集内的数据时，可以搜索多种语言。
 
-- [创建用于收集数据的搜索](create-search-to-collect-data.md)时，请为目标的每种语言创建单独的搜索。 例如，如果要搜索同时包含中文和朝鲜语的文档，请选择 "中文" 作为第一个查询，然后选择 "朝鲜语" 作为第二个查询。
+- 创建 [搜索以收集数据时](create-search-to-collect-data.md)，请为所面向的每种语言创建单独的搜索。 例如，如果要搜索同时包含中文和朝鲜语的文档，请选择"中文"作为第一个查询，并选择"朝鲜语"作为第二个查询。
 
-**我看不到查询语言-国家/地区图标在审阅集中选择查询的语言。如何在审阅集搜索中指定查询语言？**
+**我看不到查询语言-国家/地区图标来选择审阅集内查询的语言。如何在审阅集搜索中指定查询语言？**
 
-对于审阅集查询，无需指定文档语言。 将内容添加到审阅集时，高级电子数据展示将自动检测文档语言。 这有助于优化评审集中的查询结果。
+对于审阅集查询，无需指定文档语言。 向审阅集添加内容时，高级电子数据展示自动检测文档语言。 这有助于在审阅集内优化查询结果。
 
-**是否可以查看 [文件元数据](view-documents-in-review-set.md#file-metadata)中检测到的语言？**
+**能否在文件元数据中查看 [检测到的语言](view-documents-in-review-set.md#file-metadata)？**
 
 否，在文件元数据中看不到检测到的语言。
 
-**能否按文档语言在审阅集中进行筛选**？
+**我能否在审阅集内按文档语言进行筛选**？
 
-否，不能在审阅集中对文档语言进行筛选、排序或搜索。
+否，不能按审阅集内的文档语言进行筛选、排序或搜索。
 
-**此 CJK 发布的检查集方案是否会影响我现有的搜索和审阅集？**
+**此 CJK 版本用于审阅集方案是否会影响我的任何现有搜索和审阅集？**
 
-否，现有搜索和审阅集都不会更改。 您无需对现有数据重新编制索引，英语文本的搜索结果也将相同。
+否，现有的搜索和审阅集不会更改。 无需对现有数据重新索引，英文文本的搜索结果将相同。
 
-**如何将我的显示语言更改为中文、日语或朝鲜语？**
+**如何将显示语言更改为中文、日语或朝鲜语？**
 
-有关如何更改显示语言和时区的信息，请参阅 [如何设置 Office 365 的语言和区域设置](https://docs.microsoft.com/office365/troubleshoot/access-management/set-language-and-region)。
+若要了解如何更改显示语言和时区，请参阅如何为 [Office 365](/office365/troubleshoot/access-management/set-language-and-region)设置语言和地区设置。
 
 ## <a name="known-issues"></a>已知问题
 
-- OCR 不支持从图像文件中 CJK 字符
+- OCR 不支持图像文件的 CJK 字符
 
-- CJK 语言不支持电子邮件文件 (例如，* .eml 和 * .msg) 中的 [批注视图](view-documents-in-review-set.md#annotate-view) 。
+- CJK (不支持批注视图中) *.eml 和 *.msg[](view-documents-in-review-set.md#annotate-view)等电子邮件文件。
 
-- CJK 语言不支持 [文本视图](view-documents-in-review-set.md#text-view) 中的搜索词突出显示。
+- CJK 语言不支持 [在](view-documents-in-review-set.md#text-view) 文本视图中突出显示搜索词。
 
-- 用于分析数据的 [相关性模块](using-relevance.md) 不支持 CJK 语言。
+- [用于分析数据](using-relevance.md)的相关性模块不支持 CJK 语言。
 
-- CJK 语言不支持[基于查询的保留](managing-holds.md#manage-non-custodial-holds)。 
+- [CJK](managing-holds.md#manage-non-custodial-holds) 语言不支持基于查询的保留。

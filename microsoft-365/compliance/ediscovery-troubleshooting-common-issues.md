@@ -19,26 +19,26 @@ ms.assetid: ''
 description: 了解解决 Office 365 电子数据展示中的常见问题时可以执行的基本疑难解答步骤。
 siblings_only: true
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: e1fbda23b730956db42d8e7a92218fb9837868b8
-ms.sourcegitcommit: cbe8724bd71d1c002395d98f1451c5f578c824f9
+ms.openlocfilehash: a867ed2e55c73fe4bbd890273d78cf57f4bfbd2c
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49988136"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50926542"
 ---
 # <a name="investigate-troubleshoot-and-resolve-common-ediscovery-issues"></a>调查、排查并解决常见的电子数据展示问题
 
-本主题介绍可用于识别和解决在电子数据展示搜索过程中或电子数据展示过程中其他位置可能遇到的问题的基本疑难解答步骤。 解决其中某些方案需要 Microsoft 支持人员的帮助。 有关何时联系 Microsoft 支持部门的信息包含在解决步骤中。
+本主题介绍为识别和解决在电子数据展示搜索过程中或电子数据展示过程中其他位置可能遇到的问题而可以执行的基本疑难解答步骤。 解决其中某些方案需要 Microsoft 支持人员的帮助。 有关何时联系 Microsoft 支持的信息包含在解决方案步骤中。
 
 ## <a name="errorissue-ambiguous-location"></a>错误/问题：位置不明确
 
-如果您尝试添加用户的邮箱位置进行搜索，并且 Exchange Online Protection (EOP) 目录中存在重复或冲突的对象，则会收到 `The compliance search contains the following invalid location(s):useralias@contoso.com. The location "useralias@contoso.com" is ambiguous` 此错误：
+如果您尝试添加要搜索的用户邮箱位置，并且 Exchange Online Protection (EOP) 目录中存在具有相同 userID 的重复或冲突对象，则会收到此错误 `The compliance search contains the following invalid location(s):useralias@contoso.com. The location "useralias@contoso.com" is ambiguous` ：。
 
 ### <a name="resolution"></a>解决方案
 
 检查具有相同用户 ID 的重复用户或通讯组列表。
 
-1. 连接到安全[&合规中心 PowerShell。](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell)
+1. 连接到安全[&合规中心 PowerShell。](/powershell/exchange/connect-to-scc-powershell)
 
 2. 运行以下命令以检索用户名的所有实例：
 
@@ -46,13 +46,13 @@ ms.locfileid: "49988136"
     Get-Recipient <username>
     ```
 
-   "useralias@contoso.com"的输出如下所示：
+   "useralias@contoso.com"的输出将类似于以下内容：
 
    > 
    > |名称|RecipientType|
    > |---|---|
    > |别名、用户|MailUser|
-   > |别名、用户|用户|
+   > |别名、用户|User|
 
 3. 如果返回多个用户，请找到并修复冲突对象。
 
@@ -64,9 +64,9 @@ ms.locfileid: "49988136"
 
 ### <a name="resolution"></a>解决方案
 
-如果收到此错误，建议您验证搜索失败的位置，然后仅在失败的位置重新运行搜索。
+如果您收到此错误，我们建议您验证搜索失败的位置，然后仅在失败的位置重新运行搜索。
 
-1. 连接到 [安全&合规中心 PowerShell，](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell) 然后运行以下命令：
+1. 连接到 [安全&合规中心 PowerShell，](/powershell/exchange/connect-to-scc-powershell) 然后运行以下命令：
 
    ```powershell
    Get-ComplianceSearch <searchname> | FL
@@ -76,43 +76,43 @@ ms.locfileid: "49988136"
 
 3. 仅对失败的位置重试电子数据展示搜索。
 
-4. 如果继续收到这些错误，请参阅" [重试失败位置](https://docs.microsoft.com/Office365/SecurityCompliance/retry-failed-content-search) "了解更多疑难解答步骤。
+4. 如果继续收到这些错误，请参阅重试失败 [位置](/Office365/SecurityCompliance/retry-failed-content-search) 了解更多疑难解答步骤。
 
 ## <a name="errorissue-file-not-found"></a>错误/问题：未找到文件
 
-运行包括 SharePoint Online 和 One Drive For Business 位置的电子数据展示搜索时，您可能会收到错误，尽管该文件 `File Not Found` 位于网站上。 此错误将位于导出警告中，errors.csv或跳过items.csv。 如果网站上找不到该文件或索引过期，则可能会发生这种情况。 下面是实际错误的文本， (添加了) 。
+运行包括 SharePoint Online 和 One Drive For Business 位置的电子数据展示搜索时，您可能会收到错误，尽管该文件 `File Not Found` 位于网站上。 此错误将位于导出警告中，errors.csv或跳过items.csv。 如果网站上找不到该文件或索引已过期，则可能会发生这种情况。 下面是实际错误的文本，其中 (强调) 。
 
-> 28.06.2019 10：02：19_FailedToExportItem_Failed下载内容。 其他诊断信息：Microsoft.Office.Compliance.EDiscovery.ExportWorker.Exceptions.ContentDownloadTemporaryFailure：无法从文档类型的内容 6ea52149-91cd-4965-b5bb-82ca6a3ec9be 下载。 相关 ID：3bd84722-937b-4c23-b61b-08d6fba9ec32。 ServerErrorCode： -2147024894 ---> Microsoft.SharePoint.Client.ServerException： ***找不到文件***。 位于 Microsoft.SharePoint.Client.Client.ClientRequest.ProcessResponseStream (Stream responseStream) at Microsoft.SharePoint.Client.ClientRequest.ProcessResponse () --- End of inner exception stack trace ---
+> 28.06.2019 10：02：19_FailedToExportItem_Failed下载内容。 其他诊断信息：Microsoft.Office.Compliance.EDiscovery.ExportWorker.Exceptions.ContentDownloadTemporaryFailure：无法从类型为 Document 的内容 6ea52149-91cd-4965-b5bb-82ca6a3ec9be 下载。 相关 ID：3bd84722-937b-4c23-b61b-08d6fba9ec32。 ServerErrorCode：-2147024894 ---> Microsoft.SharePoint.Client.ServerException： ***未找到文件***。 位于 Microsoft.SharePoint.Client.ClientRequest.ProcessResponse (Stream responseStream) at Microsoft.SharePoint.Client.ClientRequest.ProcessResponse () --- End of inner exception stack trace ---
 
 ### <a name="resolution"></a>解决方案
 
 1. 检查搜索中标识的位置，以确保文件的位置正确无误，并添加到搜索位置。
 
-2. 使用手动 [请求](https://docs.microsoft.com/sharepoint/crawl-site-content) 对网站、库或列表进行爬网和重新编制索引的过程对网站重新编制索引。
+2. 使用 [Manually request crawling and re-indexing of a site， a library， or a list](/sharepoint/crawl-site-content) 中的过程对网站重新编制索引。
 
 ## <a name="errorissue-search-fails-because-recipient-is-not-found"></a>错误/问题：搜索失败，因为未找到收件人
 
-电子数据展示搜索失败，错误为 `recipient not found` 。 如果由于用户对象尚未同步，在 Exchange Online Protection (EOP) ，则可能会发生此错误。
+电子数据展示搜索失败，出现错误 `recipient not found` 。 如果由于用户对象尚未同步，在 Exchange Online Protection (EOP) 可能发生此错误。
 
 ### <a name="resolution"></a>解决方案
 
-1. 连接到 [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)。
+1. 连接到 [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)。
 
-2. 运行以下命令以检查用户是否同步到 Exchange Online Protection：
+2. 运行以下命令检查用户是否同步到 Exchange Online Protection：
 
    ```powershell
    Get-Recipient <userId> | FL
    ```
 
-3. 应存在用户问题的邮件用户对象。 如果未返回任何值，则调查用户对象。 如果对象无法同步，请联系 Microsoft 支持人员。
+3. 应存在用户问题的邮件用户对象。 如果未返回任何值，请调查用户对象。 如果对象无法同步，请与 Microsoft 支持部门联系。
 
-## <a name="errorissue-exporting-search-results-is-slow"></a>错误/问题：导出搜索结果缓慢
+## <a name="errorissue-exporting-search-results-is-slow"></a>错误/问题：导出搜索结果的速度很慢
 
-在安全与合规中心中从电子数据展示或内容搜索导出搜索结果时，下载所花的时间超过预期。  你可以检查要下载的数据量，并可能提高导出速度。
+在安全与合规中心内从电子数据展示或内容搜索导出搜索结果时，下载时间超过预期。  你可以查看要下载的数据量，并可能提高导出速度。
 
 ### <a name="resolution"></a>解决方案
 
-1. 连接到 [安全&合规中心 PowerShell，](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell) 然后运行以下命令：
+1. 连接到 [安全&合规中心 PowerShell，](/powershell/exchange/connect-to-scc-powershell) 然后运行以下命令：
 
    ```powershell
    Get-ComplianceSearch <searchname> | FL
@@ -128,13 +128,13 @@ ms.locfileid: "49988136"
 
 4. 在结果字段中，查找已导出的数据并查看遇到的任何错误。
 
-5. 检查位于日志文件目录中的 trace.日志文件，了解是否有错误。
+5. 检查位于日志文件的目录中的 trace.日志文件，了解是否有错误。
 
-6. 如果仍有问题，请考虑将返回大量结果的搜索划分为较小的搜索。 例如，您可以在搜索查询中使用日期范围返回一组可以更快下载的较小结果。
+6. 如果仍有问题，请考虑将返回大量结果的搜索划分为较小的搜索。 例如，您可以使用搜索查询中的日期范围返回一组较小的结果，可以更快地下载结果。
 
-## <a name="errorissue-internal-server-error-500-occurred"></a>错误/问题："发生内部服务器 (500) 错误"
+## <a name="errorissue-internal-server-error-500-occurred"></a>错误/问题："发生了 500 (内部) 错误"
 
-运行电子数据展示搜索时，如果搜索不断失败，并出现类似于"发生内部服务器错误 (500) "的错误，可能需要仅在特定邮箱位置重新运行搜索。
+在运行电子数据展示搜索时，如果搜索不断失败，出现错误类似于"发生内部服务器错误 (500) "，可能需要仅在特定邮箱位置重新运行搜索。
 
 ![内部服务器错误 500 屏幕截图](../media/edisc-tshoot-error-500.png)
 
@@ -142,7 +142,7 @@ ms.locfileid: "49988136"
 
 1. 将搜索分解为较小的搜索，然后再次运行搜索。  请尝试使用较小的日期范围或限制要搜索的位置数。
 
-2. 连接到 [安全&合规中心 PowerShell，](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell) 然后运行以下命令：
+2. 连接到 [安全&合规中心 PowerShell，](/powershell/exchange/connect-to-scc-powershell) 然后运行以下命令：
 
    ```powershell Set-CaseHoldPolicy <policyname> -RetryDistribution
    Get-ComplianceSearch <searchname> | FL
@@ -158,11 +158,11 @@ ms.locfileid: "49988136"
 
 电子数据展示案例保留策略同步分发错误。 错误显示为：
 
-> "资源：部署策略所花时间超过预期。 更新最终部署状态可能需要额外 2 个小时，因此请在几个小时后重新检查。"
+> "资源：部署策略所花时间超过预期。 更新最终部署状态可能需要另外 2 个小时，因此请在几小时后重新检查。"
 
 ### <a name="resolution"></a>解决方案
 
-1. 连接到 [安全&合规中心 PowerShell，](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell) 然后对电子数据展示案例保留运行以下命令：
+1. 连接到 [安全&合规中心 PowerShell，](/powershell/exchange/connect-to-scc-powershell) 然后针对电子数据展示案例保留运行以下命令：
 
    ```powershell
    Get-CaseHoldPolicy <policyname> - DistributionDetail | FL
@@ -176,7 +176,7 @@ ms.locfileid: "49988136"
 
 2. 检查 DistributionDetail 参数中的值，了解错误，如下所示：
 
-   > 错误：资源：部署策略所花时间超过预期。 更新最终部署状态可能需要额外 2 个小时，因此请在几个小时后重新检查。"
+   > 错误：资源：部署策略所花时间超过预期。 更新最终部署状态可能需要另外 2 个小时，因此请在几小时后重新检查。"
 
 3. 尝试对问题策略运行 RetryDistribution 参数：
 
@@ -194,15 +194,15 @@ ms.locfileid: "49988136"
 
 4. 与 Microsoft 技术支持联系。
 
-## <a name="error-the-condition-specified-using-http-conditional-headers-is-not-met"></a>错误："不满足使用 HTTP 条件标头 () 条件"
+## <a name="error-the-condition-specified-using-http-conditional-headers-is-not-met"></a>错误："不满足使用 HTTP (标头) 条件"
 
 使用电子数据展示导出工具下载搜索结果时，可能会收到以下错误：这是暂时性错误，通常发生在 Azure 存储 `System.Net.WebException: The remote server returned an error: (412) The condition specified using HTTP conditional header(s) is not met.` 位置。
 
 ### <a name="resolution"></a>解决方案
 
-若要解决此问题，请 [重试下载](export-search-results.md#step-2-download-the-search-results)搜索结果，这将重新启动电子数据展示导出工具。
+若要解决此问题，请 [重试下载搜索结果](export-search-results.md#step-2-download-the-search-results)，这将重新启动电子数据展示导出工具。
 
-## <a name="errorissue-downloaded-export-shows-no-results"></a>错误/问题：下载的导出未显示任何结果
+## <a name="errorissue-downloaded-export-shows-no-results"></a>错误/问题：已下载的导出未显示任何结果
 
 成功导出后，通过导出工具完成的下载将在结果中显示零文件。
 
@@ -210,13 +210,13 @@ ms.locfileid: "49988136"
 
 这是一个客户端问题，为了修正此问题，请尝试以下步骤：
 
-1. 尝试使用其他客户端/计算机进行下载。
+1. 请尝试使用另一个客户端/计算机进行下载。
 
 2. 确保下载到本地驱动器。
 
 3. 确保病毒扫描程序未运行。
 
-4. 确保没有任何其他导出正在下载到同一文件夹或任何父文件夹。
+4. 确保没有任何其他导出内容下载到同一文件夹或任何父文件夹。
 
 5. 如果上述步骤不起作用，则禁用压缩和重复数据删除。
 
