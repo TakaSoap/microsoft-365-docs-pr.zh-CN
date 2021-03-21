@@ -40,6 +40,8 @@
       href: ../admin/manage/remove-licenses-from-users.md
     - name: 将用户移动到其他订阅
       href: subscriptions/move-users-different-subscription.md
+    - name: 管理自动声明策略
+      href: licenses/manage-auto-claim-policies.md
     - name: 了解订阅和许可证
       href: licenses/subscriptions-and-licenses.md
 - name: 帐单和付款
@@ -67,7 +69,7 @@
     - name: 管理计费帐户
       href: manage-billing-accounts.md
     - name: 将租户与你的计费帐户相关联
-      href: 'https://docs.microsoft.com/microsoft-store/manage-mpsa-software-microsoft-store-for-business'
+      href: /microsoft-store/manage-mpsa-software-microsoft-store-for-business
 - name: 管理与合作伙伴的关系
   href: manage-partners.md
 - name: 关闭你的帐户

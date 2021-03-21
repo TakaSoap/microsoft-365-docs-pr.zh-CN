@@ -1,7 +1,7 @@
 ---
-title: 汇总试点 Microsoft 365 Defender 项目结果
-description: 结束试点 Microsoft 365 Defender 项目，完成记分卡，分析报告结果，并决定如何前进。
-keywords: Microsoft 威胁防护试点，决定试点 Microsoft 威胁防护项目后下一步应做什么，在评估生产中的 Microsoft 威胁防护后应该怎么办，从 Microsoft 威胁防护试点转换到部署，网络安全，高级永久性威胁，企业安全，设备，设备，标识，用户，数据，应用程序，事件，自动调查和修正，高级搜寻
+title: 总结试点 Microsoft 365 Defender 项目结果
+description: 结束试点 Microsoft 365 Defender 项目，完成记分卡，分析报告结果，并决定如何继续。
+keywords: Microsoft 威胁防护试点，决定在试点 Microsoft 威胁防护项目后下一步应执行哪些操作，评估生产中的 Microsoft 威胁防护后应执行哪些操作，从 Microsoft 威胁防护试点转换到部署、网络安全、高级永久性威胁、企业安全、设备、设备、标识、用户、数据、应用程序、事件、自动调查和修正、高级搜寻
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -21,47 +21,47 @@ ms.collection:
 - m365solution-pilotmtpproject
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: c8608568301f11a20c940a5ff9f1c205ce6e48f1
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: f646fe7061fb0793fd9922068c9037be21a236cb
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49930158"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50920392"
 ---
-# <a name="closing-and-summarizing-your-microsoft-365-defender-pilot"></a><span data-ttu-id="108bc-104">结束和总结 Microsoft 365 Defender 试点</span><span class="sxs-lookup"><span data-stu-id="108bc-104">Closing and summarizing your Microsoft 365 Defender pilot</span></span>  
+# <a name="closing-and-summarizing-your-microsoft-365-defender-pilot"></a><span data-ttu-id="0796d-104">结束和总结 Microsoft 365 Defender 试点</span><span class="sxs-lookup"><span data-stu-id="0796d-104">Closing and summarizing your Microsoft 365 Defender pilot</span></span>  
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
-<span data-ttu-id="108bc-105">**适用于：**</span><span class="sxs-lookup"><span data-stu-id="108bc-105">**Applies to:**</span></span>
-- <span data-ttu-id="108bc-106">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="108bc-106">Microsoft 365 Defender</span></span>
+<span data-ttu-id="0796d-105">**适用于：**</span><span class="sxs-lookup"><span data-stu-id="0796d-105">**Applies to:**</span></span>
+- <span data-ttu-id="0796d-106">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="0796d-106">Microsoft 365 Defender</span></span>
 
 
 
-|<span data-ttu-id="108bc-107">[![规划](../../media/phase-diagrams/1-planning.png)](mtp-pilot-plan.md)</span><span class="sxs-lookup"><span data-stu-id="108bc-107">[![Planning](../../media/phase-diagrams/1-planning.png)](mtp-pilot-plan.md)</span></span><br/>[<span data-ttu-id="108bc-108">规划</span><span class="sxs-lookup"><span data-stu-id="108bc-108">Planning</span></span>](mtp-pilot-plan.md) |<span data-ttu-id="108bc-109">[![准备](../../media/phase-diagrams/2-prepare.png)](prepare-mtpeval.md)</span><span class="sxs-lookup"><span data-stu-id="108bc-109">[![Prepare](../../media/phase-diagrams/2-prepare.png)](prepare-mtpeval.md)</span></span><br/>[<span data-ttu-id="108bc-110">准备</span><span class="sxs-lookup"><span data-stu-id="108bc-110">Preparation</span></span>](prepare-mtpeval.md) | <span data-ttu-id="108bc-111">[![模拟攻击](../../media/phase-diagrams/3-simluate.png)](mtp-pilot-simulate.md)</span><span class="sxs-lookup"><span data-stu-id="108bc-111">[![Simulate attack](../../media/phase-diagrams/3-simluate.png)](mtp-pilot-simulate.md)</span></span><br/>[<span data-ttu-id="108bc-112">模拟攻击</span><span class="sxs-lookup"><span data-stu-id="108bc-112">Simulate attack</span></span>](mtp-pilot-simulate.md) | ![结束和汇总](../../media/phase-diagrams/4-summary.png)<br/><span data-ttu-id="108bc-114">结束和汇总</span><span class="sxs-lookup"><span data-stu-id="108bc-114">Close and summarize</span></span>|
+|<span data-ttu-id="0796d-107">[![规划](../../media/phase-diagrams/1-planning.png)](mtp-pilot-plan.md)</span><span class="sxs-lookup"><span data-stu-id="0796d-107">[![Planning](../../media/phase-diagrams/1-planning.png)](mtp-pilot-plan.md)</span></span><br/>[<span data-ttu-id="0796d-108">规划</span><span class="sxs-lookup"><span data-stu-id="0796d-108">Planning</span></span>](mtp-pilot-plan.md) |<span data-ttu-id="0796d-109">[![准备](../../media/phase-diagrams/2-prepare.png)](prepare-mtpeval.md)</span><span class="sxs-lookup"><span data-stu-id="0796d-109">[![Prepare](../../media/phase-diagrams/2-prepare.png)](prepare-mtpeval.md)</span></span><br/>[<span data-ttu-id="0796d-110">准备</span><span class="sxs-lookup"><span data-stu-id="0796d-110">Preparation</span></span>](prepare-mtpeval.md) | <span data-ttu-id="0796d-111">[![模拟攻击](../../media/phase-diagrams/3-simluate.png)](mtp-pilot-simulate.md)</span><span class="sxs-lookup"><span data-stu-id="0796d-111">[![Simulate attack](../../media/phase-diagrams/3-simluate.png)](mtp-pilot-simulate.md)</span></span><br/>[<span data-ttu-id="0796d-112">模拟攻击</span><span class="sxs-lookup"><span data-stu-id="0796d-112">Simulate attack</span></span>](mtp-pilot-simulate.md) | ![结束和汇总](../../media/phase-diagrams/4-summary.png)<br/><span data-ttu-id="0796d-114">结束和汇总</span><span class="sxs-lookup"><span data-stu-id="0796d-114">Close and summarize</span></span>|
 |--|--|--|--|
-|| | |<span data-ttu-id="108bc-115">*你在这里！*</span><span class="sxs-lookup"><span data-stu-id="108bc-115">*You are here!*</span></span>|
+|| | |<span data-ttu-id="0796d-115">*你在这里！*</span><span class="sxs-lookup"><span data-stu-id="0796d-115">*You are here!*</span></span>|
 
 
-<span data-ttu-id="108bc-116">你当前处于结束和汇总阶段。</span><span class="sxs-lookup"><span data-stu-id="108bc-116">You're currently in the closing and summarizing phase.</span></span>
+<span data-ttu-id="0796d-116">你目前处于结束和总结阶段。</span><span class="sxs-lookup"><span data-stu-id="0796d-116">You're currently in the closing and summarizing phase.</span></span>
 
-<span data-ttu-id="108bc-117">你刚刚运行了一个仅内存攻击模拟，该模拟在域控制器上远程执行代码。</span><span class="sxs-lookup"><span data-stu-id="108bc-117">You’ve just ran an advanced memory-only attack simulation that executed code remotely on a domain controller.</span></span> <span data-ttu-id="108bc-118">你已了解 Microsoft Defender for Endpoint 和 Microsoft Defender for Identity 如何检测和创建有关恶意恶意活动的警报。</span><span class="sxs-lookup"><span data-stu-id="108bc-118">You’ve seen how Microsoft Defender for Endpoint and Microsoft Defender for Identity detect and create alerts on stealthy malicious activity.</span></span> <span data-ttu-id="108bc-119">你还了解如何将来自不同源的警报与其他上下文信息一起传递到 Microsoft 365 安全中心门户中的单个事件。</span><span class="sxs-lookup"><span data-stu-id="108bc-119">You’ve also seen how alerts from different sources are delivered along with other contextual information into a single incident in the Microsoft 365 Security Center portal.</span></span> <span data-ttu-id="108bc-120">通过体验此类集成，SOC 分析员可以进行调查并进行必要的操作。</span><span class="sxs-lookup"><span data-stu-id="108bc-120">Experiencing such integration enables SOC analysts to investigate and take necessary action.</span></span> <span data-ttu-id="108bc-121">你还创建了高级搜寻查询，该查询将标识用户打开或保存附件并基于该查询创建的检测的入站电子邮件。</span><span class="sxs-lookup"><span data-stu-id="108bc-121">You’ve also created an advanced hunting query that will identify inbound emails where the user opened or saved the attachment and created detection based on that query.</span></span>
+<span data-ttu-id="0796d-117">你刚刚运行了仅内存的高级攻击模拟，该模拟在域控制器上远程执行代码。</span><span class="sxs-lookup"><span data-stu-id="0796d-117">You’ve just ran an advanced memory-only attack simulation that executed code remotely on a domain controller.</span></span> <span data-ttu-id="0796d-118">你已了解 Microsoft Defender for Endpoint 和 Microsoft Defender for Identity 如何检测并创建有关恶意活动的警报。</span><span class="sxs-lookup"><span data-stu-id="0796d-118">You’ve seen how Microsoft Defender for Endpoint and Microsoft Defender for Identity detect and create alerts on stealthy malicious activity.</span></span> <span data-ttu-id="0796d-119">你还了解如何将来自不同来源的警报以及其他上下文信息传递到 Microsoft 365 安全中心门户中的单个事件。</span><span class="sxs-lookup"><span data-stu-id="0796d-119">You’ve also seen how alerts from different sources are delivered along with other contextual information into a single incident in the Microsoft 365 Security Center portal.</span></span> <span data-ttu-id="0796d-120">通过体验此类集成，SOC 分析师可以进行调查并进行必要的操作。</span><span class="sxs-lookup"><span data-stu-id="0796d-120">Experiencing such integration enables SOC analysts to investigate and take necessary action.</span></span> <span data-ttu-id="0796d-121">你还创建了一个高级搜寻查询，该查询将标识用户打开或保存附件并基于该查询创建检测的入站电子邮件。</span><span class="sxs-lookup"><span data-stu-id="0796d-121">You’ve also created an advanced hunting query that will identify inbound emails where the user opened or saved the attachment and created detection based on that query.</span></span>
 
-<span data-ttu-id="108bc-122">所有测试都结束之后，你已结束该过程。</span><span class="sxs-lookup"><span data-stu-id="108bc-122">You’ve reached the end of the process after all tests have concluded.</span></span>
+<span data-ttu-id="0796d-122">在所有测试结束之后，你已到达该过程的结束。</span><span class="sxs-lookup"><span data-stu-id="0796d-122">You’ve reached the end of the process after all tests have concluded.</span></span>
 
-<span data-ttu-id="108bc-123">最终输出应为：</span><span class="sxs-lookup"><span data-stu-id="108bc-123">The final output should be:</span></span>
+<span data-ttu-id="0796d-123">最终输出应为：</span><span class="sxs-lookup"><span data-stu-id="0796d-123">The final output should be:</span></span>
 
-- <span data-ttu-id="108bc-124">已完成的记分卡</span><span class="sxs-lookup"><span data-stu-id="108bc-124">A completed scorecard</span></span>
-- <span data-ttu-id="108bc-125">试点结果的详细报告</span><span class="sxs-lookup"><span data-stu-id="108bc-125">A detailed report of the findings of the pilot</span></span>
-- <span data-ttu-id="108bc-126">如何向前推进的决定</span><span class="sxs-lookup"><span data-stu-id="108bc-126">A decision on how to move forward</span></span>
+- <span data-ttu-id="0796d-124">完成的记分卡</span><span class="sxs-lookup"><span data-stu-id="0796d-124">A completed scorecard</span></span>
+- <span data-ttu-id="0796d-125">试点结果的详细报告</span><span class="sxs-lookup"><span data-stu-id="0796d-125">A detailed report of the findings of the pilot</span></span>
+- <span data-ttu-id="0796d-126">如何前进的决定</span><span class="sxs-lookup"><span data-stu-id="0796d-126">A decision on how to move forward</span></span>
 
-<span data-ttu-id="108bc-127">将最终输出中的报告呈现给内部利益干系人 (在准备阶段确定的报告) Microsoft[](https://docs.microsoft.com/microsoft-365/security/mtp/prepare-mtpeval)联系人。</span><span class="sxs-lookup"><span data-stu-id="108bc-127">Present the reports from your final output to internal stakeholders (which you’ve identified during the [preparation](https://docs.microsoft.com/microsoft-365/security/mtp/prepare-mtpeval) phase) and Microsoft contacts.</span></span> <span data-ttu-id="108bc-128">这样做可确保任何反馈都可用于改进产品和文档。</span><span class="sxs-lookup"><span data-stu-id="108bc-128">Such an effort ensures that any feedback can be used to improve products and documentation.</span></span>
+<span data-ttu-id="0796d-127">将最终输出中的报告呈现给内部利益干系 (在 Microsoft 联系人和 Microsoft 联系人[](./prepare-mtpeval.md)的准备阶段) 确定的报告。</span><span class="sxs-lookup"><span data-stu-id="0796d-127">Present the reports from your final output to internal stakeholders (which you’ve identified during the [preparation](./prepare-mtpeval.md) phase) and Microsoft contacts.</span></span> <span data-ttu-id="0796d-128">这样做可确保任何反馈都可用于改进产品和文档。</span><span class="sxs-lookup"><span data-stu-id="0796d-128">Such an effort ensures that any feedback can be used to improve products and documentation.</span></span>
 
-<span data-ttu-id="108bc-129">我们希望您喜欢此模拟。</span><span class="sxs-lookup"><span data-stu-id="108bc-129">We hope you enjoyed this simulation.</span></span> <span data-ttu-id="108bc-130">开始在组织中大规模实现你学到的知识，以充分使用集成安全解决方案。</span><span class="sxs-lookup"><span data-stu-id="108bc-130">Start implementing what you've learned on a larger scale in your organization to get the most out of the integrated security solution.</span></span>
+<span data-ttu-id="0796d-129">我们希望您喜欢此模拟。</span><span class="sxs-lookup"><span data-stu-id="0796d-129">We hope you enjoyed this simulation.</span></span> <span data-ttu-id="0796d-130">开始在组织中大规模实现你学到的知识，以充分使用集成的安全解决方案。</span><span class="sxs-lookup"><span data-stu-id="0796d-130">Start implementing what you've learned on a larger scale in your organization to get the most out of the integrated security solution.</span></span>
 
-## <a name="next-step"></a><span data-ttu-id="108bc-131">后续步骤</span><span class="sxs-lookup"><span data-stu-id="108bc-131">Next step</span></span>
-<span data-ttu-id="108bc-132">通过以下交互式指南详细了解 Microsoft 365 Defender 支柱：</span><span class="sxs-lookup"><span data-stu-id="108bc-132">Learn more about the Microsoft 365 Defender pillars through the following interactive guides:</span></span>
-- [<span data-ttu-id="108bc-133">使用 Microsoft Defender for Office 365 保护组织</span><span class="sxs-lookup"><span data-stu-id="108bc-133">Safeguard your organization with Microsoft Defender for Office 365</span></span>](https://aka.ms/O365ATP-Interactive-Guide)
-- [<span data-ttu-id="108bc-134">使用 Microsoft Defender for Identity 检测可疑活动和潜在攻击</span><span class="sxs-lookup"><span data-stu-id="108bc-134">Detect suspicious activities and potential attacks with Microsoft Defender for Identity</span></span>](https://aka.ms/AATP-Interactive-Guide)
-- [<span data-ttu-id="108bc-135">使用 Microsoft Cloud App Security 检测威胁和管理警报</span><span class="sxs-lookup"><span data-stu-id="108bc-135">Detect threats and manage alerts with Microsoft Cloud App Security</span></span>](https://aka.ms/DetectThreatsAndAlertsMCAS-InteractiveGuide)
-- [<span data-ttu-id="108bc-136">使用 Microsoft Defender for Endpoint 调查和修正威胁</span><span class="sxs-lookup"><span data-stu-id="108bc-136">Investigate and remediate threats with Microsoft Defender for Endpoint</span></span>](https://aka.ms/MDATP-IR-Interactive-Guide)
+## <a name="next-step"></a><span data-ttu-id="0796d-131">后续步骤</span><span class="sxs-lookup"><span data-stu-id="0796d-131">Next step</span></span>
+<span data-ttu-id="0796d-132">通过以下交互式指南详细了解 Microsoft 365 Defender 支柱：</span><span class="sxs-lookup"><span data-stu-id="0796d-132">Learn more about the Microsoft 365 Defender pillars through the following interactive guides:</span></span>
+- [<span data-ttu-id="0796d-133">使用 Microsoft Defender for Office 365 保护组织</span><span class="sxs-lookup"><span data-stu-id="0796d-133">Safeguard your organization with Microsoft Defender for Office 365</span></span>](https://aka.ms/O365ATP-Interactive-Guide)
+- [<span data-ttu-id="0796d-134">了解如何通过 Microsoft Defender for Identity 检测可疑活动和潜在攻击</span><span class="sxs-lookup"><span data-stu-id="0796d-134">Detect suspicious activities and potential attacks with Microsoft Defender for Identity</span></span>](https://aka.ms/AATP-Interactive-Guide)
+- [<span data-ttu-id="0796d-135">使用 Microsoft Cloud App Security 检测威胁和管理警报</span><span class="sxs-lookup"><span data-stu-id="0796d-135">Detect threats and manage alerts with Microsoft Cloud App Security</span></span>](https://aka.ms/DetectThreatsAndAlertsMCAS-InteractiveGuide)
+- [<span data-ttu-id="0796d-136">使用 Microsoft Defender for Endpoint 调查和修正威胁</span><span class="sxs-lookup"><span data-stu-id="0796d-136">Investigate and remediate threats with Microsoft Defender for Endpoint</span></span>](https://aka.ms/MDATP-IR-Interactive-Guide)
