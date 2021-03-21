@@ -108,6 +108,8 @@
           href: get-started/get-started-devices.md
         - name: 使用 Autopilot 和注册状态页的首次运行体验
           href: get-started/esp-first-run.md
+        - name: Windows 10 位置服务
+          href: get-started/device-location.md
         - name: 开始使用应用程序控制
           href: get-started/get-started-app-control.md
         - name: 部署应用
