@@ -17,16 +17,16 @@ search.appverid:
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: 文件计划为保留标签提供了高级管理功能。
 ms.custom: seo-marvel-may2020
-ms.openlocfilehash: c56f71032ccf154e5d9f416b42df1345da03d9a4
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 422a76db5705e80c67803b798275e1faedd1d7aa
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48199013"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50906869"
 ---
 # <a name="use-file-plan-to-manage-retention-labels"></a>使用文件计划管理保留标签
 
->*[Microsoft 365 安全性与合规性许可指南](https://aka.ms/ComplianceSD)。*
+>*[Microsoft 365 安全性与合规性许可指南](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。*
 
 尽管可以从 Microsoft 365 合规性中心的“**信息管理**”创建和管理保留标签，但是“**记录管理**”中的文件计划具有其他管理功能：
 
@@ -62,7 +62,7 @@ ms.locfileid: "48199013"
 
 如果已经从 Microsoft 365 合规性中心中的“**信息治理**”创建了保留标签，则这些标签会自动显示在文件计划中。 
 
-同样，如果现在在文件计划中创建保留标签，则如果未将标签配置为将内容标记为记录，则也可以从**信息治理**中使用。
+同样，如果现在在文件计划中创建保留标签，则如果未将标签配置为将内容标记为记录，则也可以从 **信息治理** 中使用。
 
 在“**文件计划**”页面上，将看到所有标签及其状态和设置、可选的文件计划描述符、用于分析或启用标签脱机审阅的导出选项，以及用于创建保留标签的导入选项。 
 
@@ -70,20 +70,20 @@ ms.locfileid: "48199013"
 
 通过选择“**自定义列**”选项，可以显示或隐藏除标签“**名称**”之外的所有列。 但是默认情况下，前几列显示有关标签状态及其设置的信息： 
 
-- **状态**标识标签是包含在标签策略中还是自动应用策略中（**活动**）或不（**非活动**）。
+- **状态** 标识标签是包含在标签策略中还是自动应用策略中（**活动**）或不（**非活动**）。
 
-- **基于**标识保留期的方式或时间。 有效值：
+- **基于** 标识保留期的方式或时间。 有效值：
     - 事件
     - 创建时间
     - 上次修改时间
     - 标记时间
 
-- **是记录**标识在应用标签时是否将该项目标记为记录。 有效值：
+- **是记录** 标识在应用标签时是否将该项目标记为记录。 有效值：
     - 否
     - 是
     - 是(法规)
 
-- **保留期限**标识保留期限。 有效值：
+- **保留期限** 标识保留期限。 有效值：
     - 天
     - 月
     - 年限
@@ -143,8 +143,13 @@ ms.locfileid: "48199013"
 
    ![在 Excel 中打开空白文件计划模板](../media/file-plan-blank-template.png)
 
-3. 使用以下描述属性的信息以及每个属性的有效值填写模板。 对于导入，每个值最多可以有 64 个字符。 <br/>
-
+3. 使用以下描述属性的信息以及每个属性的有效值填写模板。 对于导入，某些值具有最大长度：
+    
+    - **LabelName**：最大长度为 64 个字符
+    - **Comment** 和 **Notes**：最大程度为 1024 个字符
+    - 所有其他值：长度不受限制
+    <br/>
+    
    |属性|类型|有效值|
    |:-----|:-----|:-----|
    |LabelName|字符串|此属性指定保留标签的名称。|
@@ -152,26 +157,26 @@ ms.locfileid: "48199013"
    |注释|字符串|使用此属性可以添加有关用户的保留标签的说明。 当用户将鼠标悬停在 Outlook、SharePoint 和 OneDrive 等应用的标签上时，将显示此说明。 如果将此属性保留为空白，则会显示默认说明，用于说明标签的保留设置。 |
    |IsRecordLabel|字符串|此属性指定标签是否将内容标记为记录。 有效值为： </br>**TRUE**: 标签将该项目标记为记录和结果，因此此项目无法删除。 </br>**FALSE**: 标签不会将内容标记为记录。 此值为默认值。|
    |RetentionAction|字符串|此属性指定在 RetentionDuration 属性指定的值到期后要采取的操作。 有效值为： </br>**Delete**：早于 RetentionDuration 属性指定的值的项目将被删除。</br>**Keep**：在 RetentionDuration 属性指定的保留期内保留项目，然后在保留期到期时不执行任何操作。 </br>**KeepAndDelete**：在 RetentionDuration 属性指定的保留期内保留项目，然后在保留期到期时删除这些项目。   |
-   |RetentionDuration|String|此属性指定内容保留的天数。 有效值为： </br>**Unlimited**：项目将无限期保留。 </br>***n***：正整数，例如 **365**。 
+   |RetentionDuration|String|此属性指定内容保留的天数。 有效值为： </br>**Unlimited**：项目将无限期保留。 </br>**_n_*_：正整数，例如 _* 365**。 
    |RetentionType|字符串|此属性指定保留期限是从内容创建日期、事件日期、标记的日期还是从上次修改日期开始计算。 有效值为： </br>**CreationAgeInDays**</br>**EventAgeInDays**</br>**TaggedAgeInDays**</br>**ModificationAgeInDays** |
-   |ReviewerEmail|SmtpAddress|填充此属性后，在保留期到期时将触发处置评审。 此属性指定 **KeepAndDelete**保留操作的审阅者的电子邮件地址。 你可以包含单个用户、分发组或安全组的电子邮件地址。 可以指定多个电子邮件地址，中间用分号分隔。|
+   |ReviewerEmail|SmtpAddress|填充此属性后，在保留期到期时将触发处置评审。 此属性指定 **KeepAndDelete** 保留操作的审阅者的电子邮件地址。 你可以包含单个用户、分发组或安全组的电子邮件地址。 可以指定多个电子邮件地址，中间用分号分隔。|
    |ReferenceId|字符串|该属性指定在 **参考 ID** 文件计划描述符中显示的值，可将其用作组织的唯一值。| 
-   |Departmentname|字符串|该属性指定在**功能/部门**文件计划描述符中显示的值。|
-   |类别|字符串|该属性指定在**类别**文件计划描述符中显示的值。|
-   |SubCategory|字符串|该属性指定在**子类别**文件计划描述符中显示的值。|
-   |AuthorityType|字符串|该属性指定在**权限类型**文件计划描述符中显示的值。|
-   |CitationName|字符串|该属性指定在**预配/引文**文件计划描述符中显示的引文名称。 例如，“2002 年萨班斯-奥克斯利法案”。 |
-   |CitationUrl|字符串|该属性指定在**预配/引文**文件计划描述符中显示的 URL。|
-   |CitationJurisdiction|字符串|该属性指定在**预配/引文**文件计划描述符中显示的司法管辖区或机构。 例如，“美国证券交易委员会 (SEC)”。|
+   |Departmentname|字符串|该属性指定在 **功能/部门** 文件计划描述符中显示的值。|
+   |类别|字符串|该属性指定在 **类别** 文件计划描述符中显示的值。|
+   |SubCategory|字符串|该属性指定在 **子类别** 文件计划描述符中显示的值。|
+   |AuthorityType|字符串|该属性指定在 **权限类型** 文件计划描述符中显示的值。|
+   |CitationName|字符串|该属性指定在 **预配/引文** 文件计划描述符中显示的引文名称。 例如，“2002 年萨班斯-奥克斯利法案”。 |
+   |CitationUrl|字符串|该属性指定在 **预配/引文** 文件计划描述符中显示的 URL。|
+   |CitationJurisdiction|字符串|该属性指定在 **预配/引文** 文件计划描述符中显示的司法管辖区或机构。 例如，“美国证券交易委员会 (SEC)”。|
    |Regulatory|字符串|保留为空白。 此属性目前不可用。|
-   |EventType|String|此属性指定与标签关联的保留规则。 可以使用唯一标识该规则的任何值。 例如：</br>**名称**</br>**可分辨名称 (DN)**</br>**GUID** </br>可使用 [Get-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/get-retentioncompliancerule) cmdlet 来查看可用的保留规则。 请注意，因为 EventType 值是组织唯一的，如果从某个组织导出标签，则将该标签导入其他组织时，不能使用该组织中的 EventType 属性值。|
+   |EventType|String|此属性指定与标签关联的保留规则。 可以使用唯一标识该规则的任何值。 例如：</br>**名称**</br>**可分辨名称 (DN)**</br>**GUID** </br>可使用 [Get-RetentionComplianceRule](/powershell/module/exchange/get-retentioncompliancerule) cmdlet 来查看可用的保留规则。 请注意，因为 EventType 值是组织唯一的，如果从某个组织导出标签，则将该标签导入其他组织时，不能使用该组织中的 EventType 属性值。|
    |||
 
    下面是包含有关保留标签的信息的模板示例。
 
    ![填写了信息的文件计划模板](../media/file-plan-filled-out-template.png)
 
-4. 在**填写并导入文件计划**页上的第 3 步，单击“**浏览文件**”以上传填好的模板。 
+4. 在 **填写并导入文件计划** 页上的第 3 步，单击“**浏览文件**”以上传填好的模板。 
 
    文件计划验证条目并显示导入统计信息。
 
