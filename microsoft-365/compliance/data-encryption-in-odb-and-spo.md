@@ -19,20 +19,20 @@ ms.collection:
 - SPO_Content
 description: 了解 OneDrive for Business 和 SharePoint Online 中数据安全加密的基本元素。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f0c78a9ca6e6bad1e4aea707f8be5dec818b7a27
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: ca93d04fa21487ad054cd9cb924dff1fc15abfbd
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44817921"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50922626"
 ---
 # <a name="data-encryption-in-onedrive-for-business-and-sharepoint-online"></a>OneDrive for Business 和 SharePoint Online 中的数据加密
 
 了解 OneDrive for Business 和 SharePoint Online 中数据安全加密的基本元素。
   
-## <a name="security-and-data-encryption-in-office-365"></a>Office 365 中的安全性和数据加密
+## <a name="security-and-data-encryption-in-office-365"></a>Office 365 中的安全和数据加密
 
-Microsoft 365 是一个高度安全的环境，可在多个层中提供广泛保护：物理数据中心安全性、网络安全性、访问安全性、应用程序安全性和数据安全性。 本文特别侧重于 OneDrive for Business 和 SharePoint Online 数据安全的中转和静态加密端。
+Microsoft 365 是高度安全的环境，提供多层的广泛保护：物理数据中心安全、网络安全、访问安全、应用程序安全和数据安全。 本文特别侧重于 OneDrive for Business 和 SharePoint Online 数据安全的中转和静态加密端。
   
 观看以下视频，了解数据加密的工作方式。
   
@@ -50,11 +50,11 @@ Microsoft 365 是一个高度安全的环境，可在多个层中提供广泛保
 
 静态加密包括两个组件：BitLocker 磁盘级别加密和客户内容的每个文件加密。
   
-已为 OneDrive for Business 和 SharePoint Online 跨服务部署 BitLocker。 在 Microsoft 365 多租户和基于多租户技术的新专用环境中，每个文件加密也位于 OneDrive for Business 和 SharePoint Online 中。
+已为 OneDrive for Business 和 SharePoint Online 跨服务部署 BitLocker。 每文件加密也在 Microsoft 365 多租户和新专用环境（基于多租户技术构建）中的 OneDrive for Business 和 SharePoint Online 中。
   
 虽然 BitLocker 加密磁盘上的所有数据，每个文件加密还是会通过包含唯一加密密钥来进一步加密每个文件。此外，对每个文件的每次更新都使用其自己的加密密钥进行加密。在存储之前，加密内容的密钥存储在与内容不同的单独物理位置中。此加密的每一个步骤都使用带有 256 位密钥的高级加密标准 (AES)，并且符合美国联邦信息处理标准 (FIPS) 140-2。加密的内容分布在整个数据中心的多个容器中，每个容器都有唯一的凭据。这些凭据存储在与内容和内容密钥存储位置不同的单独物理位置中。
   
-有关 FIPS 140-2 合规性的详细信息，请参阅[FIPS 140-2 合规性](https://go.microsoft.com/fwlink/?LinkId=517625)。
+有关 FIPS 140-2 合规性的其他信息，请参阅 [FIPS 140-2 合规性](/previous-versions/sql/sql-server-2008-r2/bb326611(v=sql.105))。
   
 静态文件级加密利用 blob 存储提供几乎不受限制的存储增长，并启用前所未有的保护。OneDrive for Business 和 SharePoint Online 中的所有客户内容都将被迁移到 blob 存储。下面介绍了保护此数据的方法：
   

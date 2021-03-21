@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: ee03e5a255a88c084403842e7bf0319c06c0517b
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: a162226793cc63a9e7e4d490c721a2c488ac64fc
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49926194"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50922170"
 ---
 # <a name="supported-microsoft-365-defender-apis"></a>支持的 Microsoft 365 Defender API 
 
@@ -46,15 +46,15 @@ ms.locfileid: "49926194"
 
 ### <a name="endpoint-uris"></a>终结点 URI
 
-两个主要 API 的基 URI 为： https://api.security.microsoft.com 。 为了提高性能，请使用距离地理位置更近的服务器：
+这两个主要 API 的基本 URI 是 https://api.security.microsoft.com ：。 为了提高性能，请使用距离地理位置更近的服务器：
 
 - 美国：api-us.security.microsoft.com
 - 欧洲：api-eu.security.microsoft.com
 - 英国：api-uk.security.microsoft.com
 
-可以通过访问获取令牌 https://api.security.microsoft.com 。
+可以通过访问 获取令牌 https://api.security.microsoft.com 。
 
-路径上的所有 API `/api` 都使用[OData](https://docs.microsoft.com/odata/overview)协议;例如， https://api.security.microsoft.com/api/incidents
+路径上的所有 `/api` API 都使用 [OData](/odata/overview) 协议;例如， https://api.security.microsoft.com/api/incidents 。
 
 ## <a name="related-articles"></a>相关文章
 

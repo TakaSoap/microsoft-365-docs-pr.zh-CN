@@ -19,19 +19,19 @@ ms.reviewer: sstewart
 search.appverid:
 - MET150
 description: 了解如何优化 iFrame 在SharePoint Online 新式发布网页和经典发布网页中的性能。
-ms.openlocfilehash: 8985eb1038bbdfc53dc3c6a8ea9350fa6df33556
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: d6e9aefa23972589c752540959b17f5d20ed0889
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46688195"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50923050"
 ---
 # <a name="optimize-iframes-in-sharepoint-online-modern-and-classic-publishing-site-pages"></a>在 SharePoint Online 新式发布网页和经典发布网页中优化 iFrame
 
 iFrame 非常适合用于预览视频或其他媒体等丰富的内容。 但是，由于 iFrame 会在 SharePoint 网站中加载单独的页面，因此在 iFrame 中加载的内容可包含大型图像、视频，或者包含会拖慢整体页面加载时间且你无法在页面上控制的其他元素。 本文将帮助你了解如何确定页面内 iFrame 在哪些方面影响了用户感知到的延迟，以及如何修正常见问题。
 
 >[!NOTE]
->要详细了解 SharePoint Online 新式网站中的性能，请参阅[新式 SharePoint 体验中的性能](https://docs.microsoft.com/sharepoint/modern-experience-performance)。
+>要详细了解 SharePoint Online 新式网站中的性能，请参阅[新式 SharePoint 体验中的性能](/sharepoint/modern-experience-performance)。
 
 ## <a name="use-the-page-diagnostics-for-sharepoint-tool-to-analyze-web-parts-using-iframes"></a>通过适用于 SharePoint 的页面诊断工具分析使用 iFrame 的 Web 部件
 
@@ -40,12 +40,12 @@ iFrame 非常适合用于预览视频或其他媒体等丰富的内容。 但是
 >[!NOTE]
 >页面诊断工具仅适用于 SharePoint Online，无法用于 SharePoint 系统页面。
 
-通过适用于 SharePoint 的页面诊断工具分析 SharePoint 网页时，可在_诊断测试_窗格中查看包含 iFrame 的 Web 部件的相关信息。 新式页面和经典页面采用相同的基线指标。
+通过适用于 SharePoint 的页面诊断工具分析 SharePoint 网页时，可在 _诊断测试_ 窗格中查看包含 iFrame 的 Web 部件的相关信息。 新式页面和经典页面采用相同的基线指标。
 
 可能的结果包括：
 
-- **需要注意**（红色）：页面包含 **3 个或更多**使用 iFrame 的 Web 部件
-- **改进机会**（黄色）：页面包含**一两个**使用 iFrame 的 Web 部件
+- **需要注意**（红色）：页面包含 **3 个或更多** 使用 iFrame 的 Web 部件
+- **改进机会**（黄色）：页面包含 **一两个** 使用 iFrame 的 Web 部件
 - **无需任何操作**（绿色）：页面不包含任何使用 iFrame 的 Web 部件
 
 如果结果的“**改进机会**”或“**需要注意**”部分显示了“**检测到使用 iFrame 的 Web 部件**”结果，可单击该结果，查看包含 iFrame 的 Web 部件。
@@ -80,4 +80,4 @@ iFrame 天生缓慢，这是因为它们会加载包含 javascript、CSS 和框�
 
 [优化 Office 365 性能](tune-microsoft-365-performance.md)
 
-[新式 SharePoint 体验中的性能](https://docs.microsoft.com/sharepoint/modern-experience-performance)
+[新式 SharePoint 体验中的性能](/sharepoint/modern-experience-performance)

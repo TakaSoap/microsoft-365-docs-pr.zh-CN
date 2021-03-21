@@ -15,12 +15,12 @@ ms.custom:
 - M365solutions
 f1.keywords: NOCSH
 description: 了解如何管理 Microsoft 365 组、Teams 和 SharePoint 中的访问。
-ms.openlocfilehash: 24a8a43f05206c9f1c0cd07aef480b330d968935
-ms.sourcegitcommit: 8f1721de52dbe3a12c11a0fa5ed0ef5972ca8196
+ms.openlocfilehash: 44b90e461c81875fa5ccf728c890d5eaebf7d613
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/17/2021
-ms.locfileid: "50838705"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50922276"
 ---
 # <a name="governing-access-in-microsoft-365-groups-teams-and-sharepoint"></a>管理 Microsoft 365 组、Teams 和 SharePoint 中的访问
 
@@ -31,38 +31,38 @@ ms.locfileid: "50838705"
 |类别|说明|参考|
 |:-------|:----------|:--------|
 |成员身份|||
-||发现私人团队|[在 Microsoft Teams 中管理私人团队发现](https://docs.microsoft.com/microsoftteams/manage-discovery-of-private-teams)|
-||基于规则的动态组成员身份|[在 Azure Active Directory 创建或更新动态组](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-create-rule)|
+||发现私人团队|[在 Microsoft Teams 中管理私人团队发现](/microsoftteams/manage-discovery-of-private-teams)|
+||基于规则的动态组成员身份|[在 Azure Active Directory 创建或更新动态组](/azure/active-directory/users-groups-roles/groups-create-rule)|
 ||控制谁可以共享文件、文件夹和网站。|[设置和管理访问请求](https://support.microsoft.com/office/94b26e0b-2822-49d4-929a-8455698654b3)|
 |条件访问|||
-||多重身份验证|[Azure AD Multi-Factor Authentication](https://docs.microsoft.com/azure/active-directory/authentication/concept-mfa-howitworks)|
-||根据组、团队或网站敏感度控制设备访问。|[使用敏感度标签保护 Microsoft Teams、Microsoft 365 组和 SharePoint 网站中的内容](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites)|
-||限制非托管设备的站点访问。|[控制非托管设备的 SharePoint 访问](https://docs.microsoft.com/sharepoint/control-access-from-unmanaged-devices)|
-||根据位置控制网站访问|[根据网络位置控制对 SharePoint 和 OneDrive 数据的访问](https://docs.microsoft.com/sharepoint/control-access-based-on-network-location)|
+||多重身份验证|[Azure AD Multi-Factor Authentication](/azure/active-directory/authentication/concept-mfa-howitworks)|
+||根据组、团队或网站敏感度控制设备访问。|[使用敏感度标签保护 Microsoft Teams、Microsoft 365 组和 SharePoint 网站中的内容](../compliance/sensitivity-labels-teams-groups-sites.md)|
+||限制非托管设备的站点访问。|[控制非托管设备的 SharePoint 访问](/sharepoint/control-access-from-unmanaged-devices)|
+||根据位置控制网站访问|[根据网络位置控制对 SharePoint 和 OneDrive 数据的访问](/sharepoint/control-access-based-on-network-location)|
 |来宾访问权限|||
-||允许或阻止来自指定域的 SharePoint 共享。|[按域限制共享 SharePoint 和 OneDrive 内容](https://docs.microsoft.com/sharepoint/restricted-domains-sharing)|
-||允许或阻止来自指定域的团队或组成员身份。|[允许或阻止来自特定组织的 B2B 用户的邀请](https://docs.microsoft.com/azure/active-directory/b2b/allow-deny-list)|
-||阻止匿名共享。|[关闭“任何人”链接](https://docs.microsoft.com/microsoft-365/solutions/share-limit-accidental-exposure#turn-off-anyone-links)|
-||控制匿名访问链接的权限。|[设置"任何人"链接的链接权限](https://docs.microsoft.com/microsoft-365/solutions/best-practices-anonymous-sharing#set-link-permissions)|
-||控制匿名共享链接的过期时间。|[设置“任何人”链接的到期日期](https://docs.microsoft.com/microsoft-365/solutions/best-practices-anonymous-sharing#set-an-expiration-date-for-anyone-links)|
-||控制默认向用户显示的共享链接的类型。|[更改网站的默认链接类型](https://docs.microsoft.com/sharepoint/change-default-sharing-link)|
-||将外部共享限制为特定人员。|[将外部共享限制为指定安全组](https://docs.microsoft.com/microsoft-365/solutions/share-limit-accidental-exposure#limit-sharing-of-files-folders-and-sites-with-people-outside-your-organization-to-specified-security-groups)|
-||根据信息敏感度控制对组、团队或网站的来宾访问。|[使用敏感度标签保护 Microsoft Teams、Microsoft 365 组和 SharePoint 网站中的内容](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites)|
-||关闭共享选项。|[限制 Microsoft 365 中的共享](https://docs.microsoft.com/microsoft-365/solutions/microsoft-365-limit-sharing)|
+||允许或阻止来自指定域的 SharePoint 共享。|[按域限制共享 SharePoint 和 OneDrive 内容](/sharepoint/restricted-domains-sharing)|
+||允许或阻止来自指定域的团队或组成员身份。|[允许或阻止来自特定组织的 B2B 用户的邀请](/azure/active-directory/b2b/allow-deny-list)|
+||阻止匿名共享。|[关闭“任何人”链接](./share-limit-accidental-exposure.md#turn-off-anyone-links)|
+||控制匿名访问链接的权限。|[设置"任何人"链接的链接权限](./best-practices-anonymous-sharing.md#set-link-permissions)|
+||控制匿名共享链接的过期时间。|[设置“任何人”链接的到期日期](./best-practices-anonymous-sharing.md#set-an-expiration-date-for-anyone-links)|
+||控制默认向用户显示的共享链接的类型。|[更改网站的默认链接类型](/sharepoint/change-default-sharing-link)|
+||将外部共享限制为特定人员。|[将外部共享限制为指定安全组](./share-limit-accidental-exposure.md#limit-sharing-of-files-folders-and-sites-with-people-outside-your-organization-to-specified-security-groups)|
+||根据信息敏感度控制对组、团队或网站的来宾访问。|[使用敏感度标签保护 Microsoft Teams、Microsoft 365 组和 SharePoint 网站中的内容](../compliance/sensitivity-labels-teams-groups-sites.md)|
+||关闭共享选项。|[限制 Microsoft 365 中的共享](./microsoft-365-limit-sharing.md)|
 |用户管理|||
-||定期查看团队和组成员身份。|[什么是 Azure AD 访问评审？](https://docs.microsoft.com/azure/active-directory/governance/access-reviews-overview)|
-||自动管理对组和团队的访问。|[什么是 Azure AD 权利管理？](https://docs.microsoft.com/azure/active-directory/governance/entitlement-management-overview)|
-||允许或阻止用户创建 Teams 中的私人频道。|[在 Microsoft Teams 中管理私人频道的生命周期](https://docs.microsoft.com/MicrosoftTeams/private-channels-life-cycle-management)|
+||定期查看团队和组成员身份。|[什么是 Azure AD 访问评审？](/azure/active-directory/governance/access-reviews-overview)|
+||自动管理对组和团队的访问。|[什么是 Azure AD 权利管理？](/azure/active-directory/governance/entitlement-management-overview)|
+||允许或阻止用户创建 Teams 中的私人频道。|[在 Microsoft Teams 中管理私人频道的生命周期](/MicrosoftTeams/private-channels-life-cycle-management)|
 
 ## <a name="membership"></a>成员身份
 
 团队和组的成员身份由所有者控制。 成员可以邀请其他人，但邀请将发送给所有者进行审批。 尽管组织中任何人都可以发现公共团队和组，但你可以控制私人团队和组是否可发现：
 
-- [在 Microsoft Teams 中管理私人团队发现](https://docs.microsoft.com/microsoftteams/manage-discovery-of-private-teams)
+- [在 Microsoft Teams 中管理私人团队发现](/microsoftteams/manage-discovery-of-private-teams)
 
 你可以根据某些条件（如部门）动态管理组或团队的成员身份。 在这种情况下，成员和所有者无法邀请人员加入团队。 动态组使用你在 Azure Active Directory 中定义的元数据来控制组的成员。 请确保你使用的元数据已完成且是最新的，因为不正确的元数据可能会导致用户被排除在组外或添加不正确的用户。
 
-- [在 Azure Active Directory 创建或更新动态组](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-create-rule)
+- [在 Azure Active Directory 创建或更新动态组](/azure/active-directory/users-groups-roles/groups-create-rule)
 
 SharePoint 网站提供除组或团队成员身份外添加所有者、成员和访问者的能力。 根据您的要求，您可能需要限制可以邀请人员访问网站的人。 此外，根据给定网站中信息的敏感度，你可能希望限制可以共享文件和文件夹的人。 这些限制由团队、组或网站所有者配置：
 
@@ -73,53 +73,53 @@ SharePoint 网站提供除组或团队成员身份外添加所有者、成员和
 
 使用 Microsoft 365，你可以要求对组织内外的用户进行多重身份验证。 当系统提示用户进行第二种身份验证时，有许多选项可供选择。 强烈建议为组织部署多重身份验证：
 
-- [Azure AD Multi-Factor Authentication](https://docs.microsoft.com/azure/active-directory/authentication/concept-mfa-howitworks)
+- [Azure AD Multi-Factor Authentication](/azure/active-directory/authentication/concept-mfa-howitworks)
 
 如果你在某些组和团队中具有敏感信息，可以基于组或团队的敏感度标签强制执行设备管理策略。 你可以完全阻止来自非托管设备的访问，或允许受限的仅 Web 访问：
 
-- [使用敏感度标签保护 Microsoft Teams、Microsoft 365 组和 SharePoint 网站中的内容](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites)
+- [使用敏感度标签保护 Microsoft Teams、Microsoft 365 组和 SharePoint 网站中的内容](../compliance/sensitivity-labels-teams-groups-sites.md)
 
 在 SharePoint 中，可以限制从指定网络位置访问网站。
 
-- [根据网络位置控制对 SharePoint 和 OneDrive 数据的访问](https://docs.microsoft.com/sharepoint/control-access-based-on-network-location)
+- [根据网络位置控制对 SharePoint 和 OneDrive 数据的访问](/sharepoint/control-access-based-on-network-location)
 
 
 其他资源：
 
-- [规划条件访问部署](https://docs.microsoft.com/azure/active-directory/conditional-access/plan-conditional-access)
+- [规划条件访问部署](/azure/active-directory/conditional-access/plan-conditional-access)
 
-- [Microsoft Intune 概述](https://docs.microsoft.com/mem/intune/fundamentals/what-is-intune)
+- [Microsoft Intune 概述](/mem/intune/fundamentals/what-is-intune)
 
-- [控制非托管设备的 SharePoint 访问](https://docs.microsoft.com/sharepoint/control-access-from-unmanaged-devices)
+- [控制非托管设备的 SharePoint 访问](/sharepoint/control-access-from-unmanaged-devices)
 
 
 ## <a name="guest-access"></a>来宾访问权限
 
 你可以根据来宾的电子邮件地址的域来限制来宾。 SharePoint 提供组织范围的和特定于网站的域限制设置。 组和 Teams 使用 Azure AD 中的域允许和拒绝列表。 请确保配置这两个设置以避免不必要的共享，并确保一致的用户体验：
 
-- [按域限制共享 SharePoint 和 OneDrive 内容](https://docs.microsoft.com/sharepoint/restricted-domains-sharing)
+- [按域限制共享 SharePoint 和 OneDrive 内容](/sharepoint/restricted-domains-sharing)
 
-- [允许或阻止来自特定组织的 B2B 用户的邀请](https://docs.microsoft.com/azure/active-directory/b2b/allow-deny-list)
+- [允许或阻止来自特定组织的 B2B 用户的邀请](/azure/active-directory/b2b/allow-deny-list)
 
 Microsoft 365 允许使用任何人共享链接匿名 *共享文件和* 文件夹。 *可以* 转发"任何人"链接，具有该链接的任何人都可以访问共享项目。 根据数据的敏感度，考虑管理"任何人"链接的使用方式，包括完全关闭链接、将链接权限限制为只读或为链接设置过期时间：
 
-- [关闭“任何人”链接](https://docs.microsoft.com/microsoft-365/solutions/share-limit-accidental-exposure#turn-off-anyone-links)
+- [关闭“任何人”链接](./share-limit-accidental-exposure.md#turn-off-anyone-links)
 
-- [设置"任何人"链接的链接权限](https://docs.microsoft.com/microsoft-365/solutions/best-practices-anonymous-sharing#set-link-permissions)
+- [设置"任何人"链接的链接权限](./best-practices-anonymous-sharing.md#set-link-permissions)
 
-- [设置“任何人”链接的到期日期](https://docs.microsoft.com/microsoft-365/solutions/best-practices-anonymous-sharing#set-an-expiration-date-for-anyone-links)
+- [设置“任何人”链接的到期日期](./best-practices-anonymous-sharing.md#set-an-expiration-date-for-anyone-links)
 
 共享文件或文件夹时，用户可以从多个链接类型中选择。 若要降低意外不当共享的风险，可以更改共享时向用户显示的默认链接类型。 例如，将默认值从"任何人"链接（允许匿名访问）更改到"组织人员"链接可降低不需要的外部共享敏感信息的风险：
 
-- [更改网站的默认链接类型](https://docs.microsoft.com/sharepoint/change-default-sharing-link)
+- [更改网站的默认链接类型](/sharepoint/change-default-sharing-link)
 
 如果组织具有需要与来宾共享的敏感数据，但担心共享不当，可以将文件和文件夹的外部共享限制为指定安全组的成员。 这样，您可以将外部共享限制为特定人员组，或要求用户在将适当的外部共享添加到安全组之前接受有关相应外部共享的培训：
 
-- [将外部共享限制为指定安全组](https://docs.microsoft.com/microsoft-365/solutions/share-limit-accidental-exposure#limit-sharing-of-files-folders-and-sites-with-people-outside-your-organization-to-specified-security-groups)
+- [将外部共享限制为指定安全组](./share-limit-accidental-exposure.md#limit-sharing-of-files-folders-and-sites-with-people-outside-your-organization-to-specified-security-groups)
 
 组和 Teams 具有允许或拒绝来宾访问的组织级别设置。 虽然可以使用 [Microsoft PowerShell](per-group-guest-access.md)限制对特定团队或组的来宾访问，但我们建议通过敏感度标签执行此操作。 使用敏感度标签，你可以根据应用的标签自动允许或拒绝来宾访问：
 
-- [使用敏感度标签保护 Microsoft Teams、Microsoft 365 组和 SharePoint 网站中的内容](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites)
+- [使用敏感度标签保护 Microsoft Teams、Microsoft 365 组和 SharePoint 网站中的内容](../compliance/sensitivity-labels-teams-groups-sites.md)
 
 在经常邀请来宾加入组和团队的环境中，请考虑设置定期安排的来宾访问评审。 可以提示所有者查看其组和团队中的来宾，并批准或拒绝访问。
 
@@ -127,39 +127,39 @@ Microsoft 365 允许使用任何人共享链接匿名 *共享文件和* 文件�
 
 Microsoft 365 提供了许多不同的信息共享方法。 如果你有敏感信息并且想要限制其共享方式，请查看用于限制共享的选项：
 
-- [限制 Microsoft 365 中的共享](https://docs.microsoft.com/microsoft-365/solutions/microsoft-365-limit-sharing)
+- [限制 Microsoft 365 中的共享](./microsoft-365-limit-sharing.md)
 
 其他资源：
 
-- [使用 Microsoft 365 建立安全协作](https://docs.microsoft.com/microsoft-365/solutions/setup-secure-collaboration-with-teams)
+- [使用 Microsoft 365 建立安全协作](./setup-secure-collaboration-with-teams.md)
 
-- [有关与未经认证用户共享文件和文件夹的最佳做法](https://docs.microsoft.com/microsoft-365/solutions/best-practices-anonymous-sharing)
+- [有关与未经认证用户共享文件和文件夹的最佳做法](./best-practices-anonymous-sharing.md)
 
-- [在与组织外人员共享文件时限制意外公开信息](https://docs.microsoft.com/microsoft-365/solutions/share-limit-accidental-exposure)
+- [在与组织外人员共享文件时限制意外公开信息](./share-limit-accidental-exposure.md)
 
-- [创建安全的来宾共享环境](https://docs.microsoft.com/microsoft-365/solutions/create-secure-guest-sharing-environment)
+- [创建安全的来宾共享环境](./create-secure-guest-sharing-environment.md)
 
-- [启用 B2B 外部协作以及管理谁可邀请来宾](https://docs.microsoft.com/azure/active-directory/b2b/delegate-invitations)
+- [启用 B2B 外部协作以及管理谁可邀请来宾](/azure/active-directory/b2b/delegate-invitations)
 
 ## <a name="user-management"></a>用户管理
 
 随着你的组织中团队的发展，一个好的做法是定期查看团队和组成员身份。 这可能对成员身份发生变化的团队和组、包含敏感信息的团队和组或包含来宾的团队和组特别有用。 请考虑为这些团队和组设置访问评审：
 
-- [什么是 Azure AD 访问评审？](https://docs.microsoft.com/azure/active-directory/governance/access-reviews-overview)
+- [什么是 Azure AD 访问评审？](/azure/active-directory/governance/access-reviews-overview)
 
 许多组织与其他组织或重要供应商建立了业务合作关系，他们与之深度协作。 在这些情况下，管理用户和访问资源可能充满挑战。 请考虑自动执行一些用户管理任务，甚至将其中一些任务转换到合作伙伴组织：
 
-- [什么是 Azure AD 权利管理？](https://docs.microsoft.com/azure/active-directory/governance/entitlement-management-overview)
+- [什么是 Azure AD 权利管理？](/azure/active-directory/governance/entitlement-management-overview)
 
 Teams 中的私人频道允许在团队成员子集之间进行范围对话和文件共享。 根据您的特定业务需求，您可能需要允许或阻止此功能。
 
-- [Microsoft Teams 中的私人频道](https://docs.microsoft.com/MicrosoftTeams/private-channels)
+- [Microsoft Teams 中的私人频道](/MicrosoftTeams/private-channels)
 
-- [在 Microsoft Teams 中管理私人频道的生命周期](https://docs.microsoft.com/MicrosoftTeams/private-channels-life-cycle-management)
+- [在 Microsoft Teams 中管理私人频道的生命周期](/MicrosoftTeams/private-channels-life-cycle-management)
 
 其他资源：
 
-- [Azure Active Directory Identity Governance](https://docs.microsoft.com/azure/active-directory/governance)
+- [Azure Active Directory Identity Governance](/azure/active-directory/governance)
 
 ## <a name="related-topics"></a>相关主题
 
@@ -167,10 +167,10 @@ Teams 中的私人频道允许在团队成员子集之间进行范围对话和�
 
 [创建协作管理计划](collaboration-governance-first.md)
 
-[Microsoft Teams 中的安全性和合规性](https://docs.microsoft.com/microsoftteams/security-compliance-overview)
+[Microsoft Teams 中的安全性和合规性](/microsoftteams/security-compliance-overview)
 
-[在 SharePoint 中管理共享设置](https://docs.microsoft.com/sharepoint/turn-external-sharing-on-or-off)
+[在 SharePoint 中管理共享设置](/sharepoint/turn-external-sharing-on-or-off)
 
-[在 Yammer 中创建和管理外部网络](https://docs.microsoft.com/yammer/work-with-external-users/create-and-manage-an-external-network)
+[在 Yammer 中创建和管理外部网络](/yammer/work-with-external-users/create-and-manage-an-external-network)
 
-[配置具有三层保护的 Teams](https://docs.microsoft.com/microsoft-365/solutions/configure-teams-three-tiers-protection)
+[配置具有三层保护的 Teams](./configure-teams-three-tiers-protection.md)

@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-coredeploy
 ms.custom: ''
 description: 要求用户通过多重身份验证（MFA）和其他功能安全地登录。
-ms.openlocfilehash: 8426d902ff8be8541b5d770af6d34cdf71868047
-ms.sourcegitcommit: c1dd5be42fe0c5dcc7c05817c941edd9076febf8
+ms.openlocfilehash: c470a8bb1e67925ced929225796ac30191db247e
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "49558522"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50923132"
 ---
 # <a name="secure-user-sign-ins-to-your-microsoft-365-tenant"></a>安全地让用户登录到 Microsoft 365 租户
 
@@ -37,14 +37,14 @@ ms.locfileid: "49558522"
 
 Windows 10 企业版中的 Windows Hello 企业版在 Windows 设备上签名时，会将密码替换为强双因素身份验证。 这两个因素是一种与设备和生物识别或 PIN 相关联的新型用户凭据。
 
-有关详细信息，请参阅 [Windows Hello 企业版概述](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-overview)。
+有关详细信息，请参阅 [Windows Hello 企业版概述](/windows/security/identity-protection/hello-for-business/hello-overview)。
 
 
 ## <a name="azure-ad-password-protection"></a>Azure AD 密码保护
 
 Azure AD 密码保护会检测并阻止已知的弱密码及其变体，还会阻止特定于你组织的额外弱项。 默认全局禁止使用的密码列表将自动应用于 Azure AD 租户中的所有用户。 可在自定义禁止密码列表中定义额外条目。 用户更改或重置其密码时，将检查这些禁止的密码列表，强制使用强密码。
 
-有关详细信息，请参阅“[配置 Azure AD 密码保护](https://docs.microsoft.com/azure/active-directory/authentication/concept-password-ban-bad)”。
+有关详细信息，请参阅“[配置 Azure AD 密码保护](/azure/active-directory/authentication/concept-password-ban-bad)”。
 
 ## <a name="mfa"></a>MFA
 
@@ -52,7 +52,7 @@ MFA 要求用户登录受用户帐户密码之外的其他验证约束。 即使
 
 ![正确的密码和其他验证会导致登录成功](../media/empower-people-to-work-remotely/remote-workers-mfa.png)
 
-使用 MFA 的第一步是***对所有管理员帐户要求使用 MFA** _，这些帐户也被称为特权帐户。
+使用 MFA 的第一步是 ***对所有管理员帐户要求使用 MFA***，这些帐户也被称为特权帐户。
 
 比第一步更好的是，Microsoft 建议对所有用户要求使用 MFA。
 
@@ -60,20 +60,20 @@ MFA 要求用户登录受用户帐户密码之外的其他验证约束。 即使
 
 | 计划 | 建议 |
 |---------|---------|
-|所有 Microsoft 365 套餐（无 Azure AD Premium P1 或 P2 许可证）     |[在 Azure AD 中启用安全性默认值](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)。 Azure AD 中的安全性默认值于用户和管理员的 MFA。   |
-|Microsoft 365 E3 （包括 Azure AD Premium P1 许可证）     | 使用[常用条件访问策略](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-policy-common)配置以下策略： <br>- [要求对管理员执行 MFA](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-admin-mfa) <br>- [要求对所有用户执行 MFA](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa) <br> - [阻止传统身份验证](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-block-legacy)       |
+|所有 Microsoft 365 套餐（无 Azure AD Premium P1 或 P2 许可证）     |[在 Azure AD 中启用安全性默认值](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)。 Azure AD 中的安全性默认值于用户和管理员的 MFA。   |
+|Microsoft 365 E3 （包括 Azure AD Premium P1 许可证）     | 使用[常用条件访问策略](/azure/active-directory/conditional-access/concept-conditional-access-policy-common)配置以下策略： <br>- [要求对管理员执行 MFA](/azure/active-directory/conditional-access/howto-conditional-access-policy-admin-mfa) <br>- [要求对所有用户执行 MFA](/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa) <br> - [阻止传统身份验证](/azure/active-directory/conditional-access/howto-conditional-access-policy-block-legacy)       |
 |Microsoft 365 E5 （包括 Azure AD Premium P2 许可证）     | 利用 Azure AD 标识保护，通过创建以下两个策略开始实施 Microsoft [推荐的一组条件访问和相关策略](../security/office-365-security/identity-access-policies.md)：<br> - [要求在登录风险为“中等”或“高”时执行 MFA](../security/office-365-security/identity-access-policies.md#require-mfa-based-on-sign-in-risk) <br>- [高风险用户必须更改密码](../security/office-365-security/identity-access-policies.md#high-risk-users-must-change-password)       |
 | | |
 
 ### <a name="security-defaults"></a>安全性默认值
 
-安全性默认值是在 2019 年 10 月 21 日之后创建的 Microsoft 365 和 Office 365 付费或试用版订阅的一项新功能。 这些订阅启用了安全性默认值，这 _*_要求所有用户将 MFA 与 Microsoft Authenticator 应用配合使用。_*_
+安全性默认值是在 2019 年 10 月 21 日之后创建的 Microsoft 365 和 Office 365 付费或试用版订阅的一项新功能。 这些订阅启用了安全性默认值，这 ***要求所有用户将 MFA 与 Microsoft Authenticator 应用配合使用***。
  
 用户有 14 天的时间从其智能手机中通过 Microsoft Authenticator 应用登录 MFA，自启用安全性默认值后首次登录起计。 14 天后，除非 MFA 注册完成，否则用户将无法登录。
 
 安全性默认值可确保所有组织均对默认启用的用户登录具有基本的安全级别。 可使用条件访问策略或针对个别帐户禁用安全性默认值，以支持 MFA。
 
-有关详细信息，请参阅[安全性默认值概述](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)。
+有关详细信息，请参阅[安全性默认值概述](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)。
 
 ### <a name="conditional-access-policies"></a>条件访问策略
 
@@ -87,7 +87,7 @@ MFA 要求用户登录受用户帐户密码之外的其他验证约束。 即使
 
 条件访问需要 Microsoft 365 E3 和 E5 随附的 Azure AD Premium P1 许可证。
 
-有关详细信息，请参阅[条件访问概述](https://docs.microsoft.com/azure/active-directory/conditional-access/overview)。
+有关详细信息，请参阅[条件访问概述](/azure/active-directory/conditional-access/overview)。
 
 ### <a name="using-these-methods-together"></a>结合使用这些方法
 
@@ -102,7 +102,7 @@ MFA 要求用户登录受用户帐户密码之外的其他验证约束。 即使
 
 | 方法 | 已启用 | 禁用 | 其他身份验证方法 |
 |:-------|:-----|:-------|:-------|
-| _ *安全性默认值**  | 无法使用条件访问策略 | 可以使用条件访问策略 | Microsoft Authenticator 应用 |
+| **安全性默认值**  | 无法使用条件访问策略 | 可以使用条件访问策略 | Microsoft Authenticator 应用 |
 | **条件访问策略** | 如果已启用任何条件访问策略，则无法启用安全性默认值 | 如果已禁用所有条件访问策略，则可以启用安全性默认值  | 由用户在 MFA 注册期间指定  |
 ||||
 
@@ -137,16 +137,16 @@ Microsoft 强烈建议在组织中配置和推出标识和设备访问策略，�
 | 调查可疑事件并使用管理操作加以解决 | 可以使用有关安全事件的信息来调查风险事件。提供的基本工作流可用于跟踪调查和启动修正操作（如密码重置）。 |
 |||
 
-请参阅[有关 Azure AD Identity Protection 的详细信息](https://docs.microsoft.com/azure/active-directory/active-directory-identityprotection)。
+请参阅[有关 Azure AD Identity Protection 的详细信息](/azure/active-directory/active-directory-identityprotection)。
 
-请参阅[启用 Azure AD Identity Protection 的步骤](https://docs.microsoft.com/azure/active-directory/active-directory-identityprotection-enable)。
+请参阅[启用 Azure AD Identity Protection 的步骤](/azure/active-directory/active-directory-identityprotection-enable)。
 
 ## <a name="admin-technical-resources-for-mfa-and-secure-sign-ins"></a>用于 MFA 和身份验证的管理员技术资源
 
 - [适用于 Microsoft 365 的 MFA](../admin/security-and-compliance/multi-factor-authentication-microsoft-365.md)
 - [Microsoft 365 的识别指南](identity-roadmap-microsoft-365.md)
 - [Azure Academy Azure AD 培训视频](https://www.youtube.com/watch?v=pN8o0owHfI0&list=PL-V4YVm6AmwUFpC3rXr2i2piRQ708q_ia)
-- [配置  Azure AD 多重身份验证注册策略](https://docs.microsoft.com/azure/active-directory/identity-protection/howto-identity-protection-configure-mfa-policy)
+- [配置  Azure AD 多重身份验证注册策略](/azure/active-directory/identity-protection/howto-identity-protection-configure-mfa-policy)
 - [标识和设备访问配置](../security/office-365-security/microsoft-365-policies-configurations.md)
 
 ## <a name="next-step"></a>后续步骤

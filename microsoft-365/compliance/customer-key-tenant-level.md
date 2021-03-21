@@ -15,12 +15,12 @@ ms.collection:
 - m365solution-mip
 - m365initiative-compliance
 description: 了解如何为 Microsoft 365 租户内的所有数据设置客户密钥。
-ms.openlocfilehash: 2fed4730e79f6e2ace827eab338bf9da8fe55260
-ms.sourcegitcommit: 8f1721de52dbe3a12c11a0fa5ed0ef5972ca8196
+ms.openlocfilehash: f50986b4e72808d4a1cd4dc8ee0182eb9c0a2455
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/17/2021
-ms.locfileid: "50838237"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50922686"
 ---
 # <a name="overview-of-customer-key-for-microsoft-365-at-the-tenant-level-public-preview"></a>租户级别的 Microsoft 365 客户密钥概述 (公共预览版) 
 
@@ -68,9 +68,9 @@ ms.locfileid: "50838237"
 
 根加密密钥的临时或永久丢失可能会导致服务操作中断甚至出现灾难性问题，并可能导致数据丢失。 因此，用于客户密钥的资源需要强大的保护。 与客户密钥一起使用的所有 Azure 资源都提供除默认配置以外的保护机制。 Azure 订阅可以通过防止立即和不可撤销取消的方式进行标记或注册。 这称为注册强制保留期。 为 Azure 订阅注册强制保留期所需的步骤需要与 Microsoft 协作。 此过程最多可能需要 5 个工作日。 以前，这有时称为"不取消"。
   
-在联系 Microsoft 365 团队之前，你必须对使用客户密钥的每个 Azure 订阅执行以下步骤。 在启动之前，请确保已安装 [Azure PowerShell Az](https://docs.microsoft.com/powershell/azure/new-azureps-module-az) 模块。
+在联系 Microsoft 365 团队之前，你必须对使用客户密钥的每个 Azure 订阅执行以下步骤。 在启动之前，请确保已安装 [Azure PowerShell Az](/powershell/azure/new-azureps-module-az) 模块。
 
-1. 使用 Azure PowerShell 登录。 有关说明，请参阅 [使用 Azure PowerShell 登录](https://docs.microsoft.com/powershell/azure/authenticate-azureps)。
+1. 使用 Azure PowerShell 登录。 有关说明，请参阅 [使用 Azure PowerShell 登录](/powershell/azure/authenticate-azureps)。
 
 2. 运行 Register-AzProviderFeature cmdlet 注册订阅以使用强制保留期。 对于每个订阅执行此操作。
 
@@ -104,7 +104,7 @@ ms.locfileid: "50838237"
 
 ### <a name="create-a-premium-azure-key-vault-in-each-subscription"></a>在每个订阅中创建高级 Azure 密钥保管库
 
-[Azure](https://azure.microsoft.com/documentation/articles/key-vault-get-started/)密钥保管库入门中记录了创建密钥保管库的步骤，可指导你完成安装和启动 Azure PowerShell、连接到 Azure 订阅、创建资源组以及创建该资源组中密钥保管库的步骤。
+[Azure](/azure/key-vault/general/overview)密钥保管库入门中记录了创建密钥保管库的步骤，可指导你完成安装和启动 Azure PowerShell、连接到 Azure 订阅、创建资源组以及创建该资源组中密钥保管库的步骤。
   
 创建密钥保管库时，必须选择 SKU：Standard 或 Premium。 标准 SKU 允许使用软件保护 Azure 密钥保管库密钥（没有硬件安全模块 (HSM) 密钥保护）并且高级 SKU 允许使用 HSM 来保护密钥保管库密钥。 客户密钥接受使用任一 SKU 的密钥保管库，但 Microsoft 强烈建议你仅使用高级 SKU。 使用任一类型的密钥的操作成本相同，因此成本的唯一差别是每个受 HSM 保护的密钥的每月成本。 有关详细信息 [，请参阅密钥保管](https://azure.microsoft.com/pricing/details/key-vault/) 库定价。
   
@@ -113,7 +113,7 @@ ms.locfileid: "50838237"
 
 对密钥保管库使用通用前缀，并包括密钥保管库和密钥的使用和范围的缩写。 例如，对于保管库将位于北美的 Contoso 服务，可能的名称对是 Contoso-O365-NA-VaultA1 和 Contoso-O365-NA-VaultA2。 保管库名称是 Azure 中的全局唯一字符串，因此你可能需要尝试所需名称的变体，以防其他 Azure 客户已声明所需的名称。 配置后，无法更改保管库名称，因此最佳做法是制定一份书面设置计划，并使用第二个人验证计划是否正确执行。
 
-如果可能，在非配对区域创建保管库。 成对的 Azure 区域跨服务失败域提供高可用性。 因此，可以将区域对视为彼此的备份区域。 这意味着，放置在一个地区的 Azure 资源通过配对区域自动获得容错能力。 因此，为数据加密策略中使用的两个保管库选择区域（这些区域已配对）意味着总共只有两个可用性区域在使用。 大多数地理位置只有两个区域，因此尚无法选择非配对区域。 如果可能，请为与数据加密策略一同使用的两个保管库选择两个非配对区域。 这从共四个可用性区域中获益。 有关详细信息，请参阅 BCDR (业务连续性和灾难恢复 [) ：当前](https://docs.microsoft.com/azure/best-practices-availability-paired-regions) 区域对列表的 Azure 配对区域。
+如果可能，在非配对区域创建保管库。 成对的 Azure 区域跨服务失败域提供高可用性。 因此，可以将区域对视为彼此的备份区域。 这意味着，放置在一个地区的 Azure 资源通过配对区域自动获得容错能力。 因此，为数据加密策略中使用的两个保管库选择区域（这些区域已配对）意味着总共只有两个可用性区域在使用。 大多数地理位置只有两个区域，因此尚无法选择非配对区域。 如果可能，请为与数据加密策略一同使用的两个保管库选择两个非配对区域。 这从共四个可用性区域中获益。 有关详细信息，请参阅 BCDR (业务连续性和灾难恢复 [) ：当前](/azure/best-practices-availability-paired-regions) 区域对列表的 Azure 配对区域。
 
 ### <a name="assign-permissions-to-each-key-vault"></a>为每个密钥保管库分配权限
 
@@ -124,7 +124,7 @@ ms.locfileid: "50838237"
   > [!IMPORTANT]
   > 分配给密钥保管库管理员的权限集不包括删除密钥的权限。 这是有意为之，也是一项重要的做法。 通常不删除加密密钥，因为这样做会永久破坏数据。 作为最佳实践，默认情况下不要向密钥保管库管理员授予此权限。 相反，请为密钥保管库参与者保留此策略，并且仅在明确了解后果后将其短期分配给管理员。
   
-  若要向贵组织的用户分配这些权限，请通过 Azure PowerShell 登录 Azure 订阅。 有关说明，请参阅 [使用 Azure PowerShell 登录](https://docs.microsoft.com/powershell/azure/authenticate-azureps)。
+  若要向贵组织的用户分配这些权限，请通过 Azure PowerShell 登录 Azure 订阅。 有关说明，请参阅 [使用 Azure PowerShell 登录](/powershell/azure/authenticate-azureps)。
 
    运行 Set-AzKeyVaultAccessPolicy cmdlet 以分配必要的权限。
 
@@ -138,7 +138,7 @@ ms.locfileid: "50838237"
    Set-AzKeyVaultAccessPolicy -VaultName Contoso-O365EX-NA-VaultA1 -UserPrincipalName alice@contoso.com -PermissionsToKeys create,import,list,get,backup,restore
    ```
 
-- **可以更改 Azure** 密钥保管库本身权限的密钥保管库参与者。 当员工离开或加入团队时，或者当密钥保管库管理员合法需要删除或还原密钥的极少数情况下，你将需要更改这些权限。 需要向这组密钥保管库参与者授予密钥保管库上的参与者角色。 可以使用 Azure 资源管理器分配此角色。 有关详细步骤，请参阅使用 [Role-Based访问控制](https://docs.microsoft.com/azure/active-directory/role-based-access-control-configure) 管理对 Azure 订阅资源的访问权限。 默认情况下，创建订阅的管理员具有此访问权限，并且能够将其他管理员分配到参与者角色。
+- **可以更改 Azure** 密钥保管库本身权限的密钥保管库参与者。 当员工离开或加入团队时，或者当密钥保管库管理员合法需要删除或还原密钥的极少数情况下，你将需要更改这些权限。 需要向这组密钥保管库参与者授予密钥保管库上的参与者角色。 可以使用 Azure 资源管理器分配此角色。 有关详细步骤，请参阅使用 [Role-Based访问控制](/azure/active-directory/role-based-access-control-configure) 管理对 Azure 订阅资源的访问权限。 默认情况下，创建订阅的管理员具有此访问权限，并且能够将其他管理员分配到参与者角色。
 
 - **Microsoft 365** 静态数据加密服务，该服务在租户级别处理客户密钥的工作。 若要向 Microsoft 365 授予权限，请运行 **Set-AzKeyVaultAccessPolicy** cmdlet，使用下列语法：
 
@@ -162,9 +162,9 @@ ms.locfileid: "50838237"
   
 若要在密钥保管库上启用软删除，请完成以下步骤：
   
-1. 使用 Windows PowerShell 登录 Azure 订阅。 有关说明，请参阅 [使用 Azure PowerShell 登录](https://docs.microsoft.com/powershell/azure/authenticate-azureps)。
+1. 使用 Windows PowerShell 登录 Azure 订阅。 有关说明，请参阅 [使用 Azure PowerShell 登录](/powershell/azure/authenticate-azureps)。
 
-2. 运行 [Get-AzKeyVault](https://docs.microsoft.com/powershell/module/az.keyvault/get-azkeyvault) cmdlet。 本示例中， *保管库* 名称是要启用软删除的密钥保管库的名称：
+2. 运行 [Get-AzKeyVault](/powershell/module/az.keyvault/get-azkeyvault) cmdlet。 本示例中， *保管库* 名称是要启用软删除的密钥保管库的名称：
 
    ```powershell
    $v = Get-AzKeyVault -VaultName <vault name>
@@ -183,7 +183,7 @@ ms.locfileid: "50838237"
 
 有两种方法可以将密钥添加到 Azure 密钥保管库;可以直接在密钥保管库中创建密钥，也可以导入密钥。 直接在密钥保管库中创建密钥是不太复杂的方法，而导入密钥可提供对密钥生成方式的总控制。 使用 RSA 密钥。 Azure Key Vault 不支持使用椭圆曲线键换行和取消环绕。
   
-若要直接在密钥保管库中创建密钥，请运行 [Add-AzKeyVaultKey](https://docs.microsoft.com/powershell/module/az.keyvault/add-azkeyvaultkey) cmdlet，如下所示：
+若要直接在密钥保管库中创建密钥，请运行 [Add-AzKeyVaultKey](/powershell/module/az.keyvault/add-azkeyvaultkey) cmdlet，如下所示：
   
 ```powershell
 Add-AzKeyVaultKey -VaultName <vault name> -Name <key name> -Destination <HSM|Software> -KeyOps wrapKey,unwrapKey
@@ -222,7 +222,7 @@ Microsoft 365 要求 Azure 密钥保管库订阅设置为"不取消"，并且客
 
 创建或更改密钥后，立即执行备份并存储备份副本（联机和脱机）。 不要将脱机副本连接到任何网络。 相反，将它们存储在物理安全或商业存储设备中。 应至少将一份备份副本存储在发生灾难时可访问的位置。 如果密钥保管库密钥被永久销毁或呈现为不可操作，备份 blob 是还原密钥材料的唯一方法。 Azure 密钥保管库外部且已导入 Azure 密钥保管库的密钥不符合备份条件，因为外部密钥中不存在客户密钥使用该密钥所需的元数据。 只有从 Azure 密钥保管库获取的备份可用于使用客户密钥执行还原操作。 因此，在上载或创建密钥后对 Azure 密钥保管库进行备份至关重要。
   
-若要创建 Azure 密钥保管库密钥的备份，请运行 [Backup-AzKeyVaultKey](https://docs.microsoft.com/powershell/module/az.keyvault/backup-azkeyvaultkey) cmdlet，如下所示：
+若要创建 Azure 密钥保管库密钥的备份，请运行 [Backup-AzKeyVaultKey](/powershell/module/az.keyvault/backup-azkeyvaultkey) cmdlet，如下所示：
 
 ```powershell
 Backup-AzKeyVaultKey -VaultName <vault name> -Name <key name>
@@ -245,7 +245,7 @@ Backup-AzKeyVaultKey -VaultName Contoso-O365EX-NA-VaultA1 -Name Contoso-O365EX-N
   
 若要验证密钥是否已启用 get、wrapKey 和 unwrapKey 操作：
   
-运行 [Get-AzKeyVault](https://docs.microsoft.com/powershell/module/az.keyvault/get-azkeyvault) cmdlet，如下所示：
+运行 [Get-AzKeyVault](/powershell/module/az.keyvault/get-azkeyvault) cmdlet，如下所示：
   
 ```powershell
 Get-AzKeyVault -VaultName <vault name>
@@ -265,7 +265,7 @@ Set-AzKeyVaultAccessPolicy -VaultName <vault name> -PermissionsToKeys wrapKey,un
   Set-AzKeyVaultAccessPolicy -VaultName Contoso-O365EX-NA-VaultA1 -PermissionsToKeys wrapKey,unwrapKey,get -ServicePrincipalName c066d759-24ae-40e7-a56f-027002b5d3e4
   ```
 
-若要验证未为密钥设置到期日期，请运行 [Get-AzKeyVaultKey](https://docs.microsoft.com/powershell/module/az.keyvault/get-azkeyvault) cmdlet，如下所示：
+若要验证未为密钥设置到期日期，请运行 [Get-AzKeyVaultKey](/powershell/module/az.keyvault/get-azkeyvault) cmdlet，如下所示：
   
 ```powershell
 Get-AzKeyVaultKey -VaultName <vault name>
@@ -273,7 +273,7 @@ Get-AzKeyVaultKey -VaultName <vault name>
 
 客户密钥无法使用过期密钥，尝试使用过期密钥的操作将失败，并可能导致服务中断。 我们强烈建议用于客户密钥的密钥没有过期日期。 一旦设置过期日期，就无法删除，但可以更改为其他日期。 如果必须使用设置了过期日期的密钥，将过期值更改为 12/31/9999。 到期日期设置为 12/31/9999 外日期的密钥无法通过 Microsoft 365 验证。
   
-若要更改已设置为 12/31/9999 外的任何值的到期日期，请运行 [Update-AzKeyVaultKey](https://docs.microsoft.com/powershell/module/az.keyvault/update-azkeyvaultkey) cmdlet，如下所示：
+若要更改已设置为 12/31/9999 外的任何值的到期日期，请运行 [Update-AzKeyVaultKey](/powershell/module/az.keyvault/update-azkeyvaultkey) cmdlet，如下所示：
   
 ```powershell
 Update-AzKeyVaultKey -VaultName <vault name> -Name <key name> -Expires (Get-Date -Date "12/31/9999")
@@ -291,7 +291,7 @@ Update-AzKeyVaultKey -VaultName <vault name> -Name <key name> -Expires (Get-Date
 
 ## <a name="set-up-the-customer-key-encryption-policy-for-your-tenant"></a>为租户设置客户密钥加密策略
 
-您需获得权限，然后才能运行这些 cmdlet。 虽然本文列出了 cmdlet 的所有参数，但如果这些参数未包含在分配给您的权限中，则您可能无法访问这些参数。 若要查找在贵组织中运行任何 cmdlet 或参数所需的权限，请参阅 [Find the permissions required to run any Exchange cmdlet](https://docs.microsoft.com/powershell/exchange/exchange-server/find-exchange-cmdlet-permissions)。
+您需获得权限，然后才能运行这些 cmdlet。 虽然本文列出了 cmdlet 的所有参数，但如果这些参数未包含在分配给您的权限中，则您可能无法访问这些参数。 若要查找在贵组织中运行任何 cmdlet 或参数所需的权限，请参阅 [Find the permissions required to run any Exchange cmdlet](/powershell/exchange/exchange-server/find-exchange-cmdlet-permissions)。
 
 ### <a name="create-policy"></a>创建策略
 
@@ -313,7 +313,7 @@ New-M365DataAtRestEncryptionPolicy -Name "Default_Policy" -AzureKeyIDs "https://
 |----------|----------|---------|
 |名称|数据加密策略的友好名称|网络|
 |AzureKeyIDs|指定 Azure 密钥保管库密钥的两个 URI 值（用逗号分隔）以与数据加密策略关联|网络|
-|描述|数据加密策略的说明|网络|
+|说明|数据加密策略的说明|网络|
 
 ### <a name="assign-policy"></a>分配策略
 

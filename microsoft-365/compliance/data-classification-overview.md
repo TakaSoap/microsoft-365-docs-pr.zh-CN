@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 借助数据分类仪表板，你可以了解组织中已发现和分类了多少敏感数据。
-ms.openlocfilehash: 7bf9a7151f8df45716ab032dd3c62a33f4f5adc8
-ms.sourcegitcommit: da34ac08c7d029c2c42d4428d0bb03fd57c448be
+ms.openlocfilehash: 8f3bb2da1e7011fef334ec345a02d7facedc25fc
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "48999392"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50922676"
 ---
 # <a name="know-your-data---data-classification-overview"></a>了解你的数据 - 数据分类概述
 
@@ -37,7 +37,7 @@ ms.locfileid: "48999392"
 
 此外，还可在数据分类页面上管理以下功能：
 - [可训练的分类器](classifier-learn-about.md)
-- [敏感信息类型](what-the-sensitive-information-types-look-for.md)
+- [敏感信息类型](./sensitive-information-type-entity-definitions.md)
 
 可以在“**Microsoft 365 合规中心**”或“**Microsoft 365 安全中心**” > “**分类**” > “**数据分类**”中找到数据分类。
 
@@ -49,7 +49,7 @@ ms.locfileid: "48999392"
 
 ## <a name="prerequisites"></a>先决条件
 
-许多不同的订阅都支持终结点 DLP。 若要查看终结点 DLP 的许可选项，请参阅[信息保护许可指南](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection)。 
+许多不同的订阅都支持终结点 DLP。 若要查看终结点 DLP 的许可选项，请参阅[信息保护许可指南](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection)。 
 
 ### <a name="permissions"></a>权限
 
@@ -97,7 +97,7 @@ Microsoft 365 附带了许多敏感信息类型的定义，例如包含社会安
 
 > [!NOTE]
 > 如果尚未创建或发布任何敏感度标签，或者任何内容均未应用敏感度标签，则此卡片将显示消息“未检测到任何敏感度标签”。 若要开始使用敏感度标签，请参阅：
->- [开始使用敏感度标签](get-started-with-sensitivity-labels.md)或[配置 Azure 信息保护策略](https://docs.microsoft.com/azure/information-protection/configure-policy)（对于 AIP）
+>- [开始使用敏感度标签](get-started-with-sensitivity-labels.md)或[配置 Azure 信息保护策略](/azure/information-protection/configure-policy)（对于 AIP）
 
 ## <a name="top-retention-labels-applied-to-content"></a>应用于内容的最常用保留标签
 

@@ -13,12 +13,12 @@ localization_priority: Priority
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: 介绍 Microsoft 365 企业版的组件、计划和部署路径。
-ms.openlocfilehash: 324e5166dd722f9fcd682db7e536a4b864365025
-ms.sourcegitcommit: 2c4c7ebe9bea52765ece0ed27d3ea77313711b10
+ms.openlocfilehash: 19bc4763f60fae1db914ab7c1f10354e7904cb50
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/01/2021
-ms.locfileid: "50068963"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50923166"
 ---
 # <a name="microsoft-365-for-enterprise-overview"></a>Microsoft 365 企业版概述
 
@@ -87,7 +87,7 @@ Microsoft 365 E3 用户可以使用这些加载项来利用 Microsoft 365 E5 包
 
 我们于 **2020 年 10 月 13 日** 终止对以下产品的支持：
 
-- [Office 2010](https://docs.microsoft.com/DeployOffice/office-2010-end-support-roadmap)
+- [Office 2010](/DeployOffice/office-2010-end-support-roadmap)
 - [Exchange Server 2010](exchange-2010-end-of-support.md)
 
 对 [SharePoint Server 2010](upgrade-from-sharepoint-2010.md) 的支持将于 **2021 年 4 月 13 日** 终止。
@@ -120,11 +120,11 @@ Microsoft 365 E3 用户可以使用这些加载项来利用 Microsoft 365 E5 包
 
 ## <a name="additional-microsoft-365-products"></a>其他 Microsoft 365 产品
 
-- [Microsoft 365 商业高级版](https://docs.microsoft.com/microsoft-365/business/)
+- [Microsoft 365 商业高级版](../business/index.yml)
 
   将一流的生产力和协作功能与设备管理和安全解决方案汇集在了一起，可为中小型企业保护业务数据的安全。
 
-- [Microsoft 365 教育版](https://docs.microsoft.com/education)
+- [Microsoft 365 教育版](/education)
 
   通过为教育版构建单一、价格合理的解决方案，使教育工作者可以充分发挥创造力、提升团队合作，并提供安全易用的用户体验。
 
@@ -154,7 +154,7 @@ Microsoft 365 E3 用户可以使用这些加载项来利用 Microsoft 365 E5 包
 
 ![Microsoft 365 基础知识培训](../media/microsoft-365-overview/m365-fundamentals.svg)
 
-若要了解有关 Microsoft 365 的更多信息并努力获得 Microsoft 365 认证，可以从 [Microsoft 365认证：基础知识](https://docs.microsoft.com/learn/paths/m365-fundamentals/)开始。
+若要了解有关 Microsoft 365 的更多信息并努力获得 Microsoft 365 认证，可以从 [Microsoft 365认证：基础知识](/learn/paths/m365-fundamentals/)开始。
 
 ## <a name="see-also"></a>另请参阅
 

@@ -19,21 +19,21 @@ ms.reviewer: sstewart
 search.appverid:
 - MET150
 description: 了解如何通过限制到 SharePoint Online 服务终结点的调用数量来优化 SharePoint Online 中的新式和经典发布网页。
-ms.openlocfilehash: b3c41dfe308f1546887f28cf0e8fbe9ab4dc2761
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: cab0f6a020bd1148a0e852b5a393a6ad907f9771
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46688175"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50921614"
 ---
 # <a name="optimize-page-calls-in-sharepoint-online-modern-and-classic-publishing-site-pages"></a>在 SharePoint Online 新式发布网页和经典发布网页中优化页面调用
 
-SharePoint Online 新式和经典发布网页都包含从 SharePoint 功能和 CDN 加载数据（或对其进行调用）的链接。 页面调用次数越多，页面加载所耗时间越长。 这称为**最终用户感知延迟** (**EUPL**)。
+SharePoint Online 新式和经典发布网页都包含从 SharePoint 功能和 CDN 加载数据（或对其进行调用）的链接。 页面调用次数越多，页面加载所耗时间越长。 这称为 **最终用户感知延迟** (**EUPL**)。
 
 本文将帮助你了解如何确定从新式和经典发布网页调用外部终结点的次数及所造成的影响，以及如何限制其对最终用户感知延迟的影响。
 
 >[!NOTE]
->要详细了解 SharePoint Online 新式门户中的性能，请参阅[新式 SharePoint 体验中的性能](https://docs.microsoft.com/sharepoint/modern-experience-performance)。
+>要详细了解 SharePoint Online 新式门户中的性能，请参阅[新式 SharePoint 体验中的性能](/sharepoint/modern-experience-performance)。
 
 ## <a name="use-the-page-diagnostics-for-sharepoint-tool-to-analyze-page-calls"></a>使用适用于 SharePoint 的页面诊断工具分析页面调用
 
@@ -60,9 +60,9 @@ SharePoint Online 新式和经典发布网页都包含从 SharePoint 功能和 C
 
 如果页面包含太多调用，可在“**对 Sharepoint 的请求**”结果中使用 URL 列表，以确定是否有任何重复的调用、应批处理的调用或返回应缓存的数据的调用。
 
-“**批处理 REST 调用**”可帮助减少性能开销。 要详细了解 API 调用批处理，请参阅[使用 REST API 进行批处理请求](https://docs.microsoft.com/sharepoint/dev/sp-add-ins/make-batch-requests-with-the-rest-apis)。
+“**批处理 REST 调用**”可帮助减少性能开销。 要详细了解 API 调用批处理，请参阅[使用 REST API 进行批处理请求](/sharepoint/dev/sp-add-ins/make-batch-requests-with-the-rest-apis)。
 
-通过**使用缓存**来存储 API 调用的结果，让客户端能够使用缓存的数据而不是对每个后续页面加载进行额外的调用，从而提升热请求的性能。 可通过多种方法，根据业务要求处理此解决方案。 通常情况下，如果数据对所有用户都一样，很好的选择是使用 [_Azure Redis_ 缓存](https://azure.microsoft.com/services/cache/)等中间层缓存服务来显著减少对网站的 API 流量，因为用户会从缓存服务中请求数据，而不是直接从 SPO 中请求。 唯一需要的 SPO 调用就是刷新中间层的缓存。 如果每个用户的数据不同，则最好是实现客户端缓存，例如 LocalStorage 或甚至是 Cookie。 这样，同一用户无需在缓存持续时间内发出后续请求，从而减少调用量，但与专用缓存服务相比效率更低。 借助 PnP，几乎无需额外的开发即可使用 LocalStorage。
+通过 **使用缓存** 来存储 API 调用的结果，让客户端能够使用缓存的数据而不是对每个后续页面加载进行额外的调用，从而提升热请求的性能。 可通过多种方法，根据业务要求处理此解决方案。 通常情况下，如果数据对所有用户都一样，很好的选择是使用 [_Azure Redis_ 缓存](https://azure.microsoft.com/services/cache/)等中间层缓存服务来显著减少对网站的 API 流量，因为用户会从缓存服务中请求数据，而不是直接从 SPO 中请求。 唯一需要的 SPO 调用就是刷新中间层的缓存。 如果每个用户的数据不同，则最好是实现客户端缓存，例如 LocalStorage 或甚至是 Cookie。 这样，同一用户无需在缓存持续时间内发出后续请求，从而减少调用量，但与专用缓存服务相比效率更低。 借助 PnP，几乎无需额外的开发即可使用 LocalStorage。
 
 在修改页面来修正性能问题之前，请在分析结果中记下页面加载时间。 修改后再次运行工具，查看新结果是否在基线标准范围内，同时检查新的页面加载时间，查看是否有提升。
 
@@ -77,7 +77,7 @@ SharePoint Online 新式和经典发布网页都包含从 SharePoint 功能和 C
 
 [优化 Office 365 性能](tune-microsoft-365-performance.md)
 
-[新式 SharePoint 体验中的性能](https://docs.microsoft.com/sharepoint/modern-experience-performance)
+[新式 SharePoint 体验中的性能](/sharepoint/modern-experience-performance)
 
 [内容分发网络](content-delivery-networks.md)
 

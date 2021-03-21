@@ -1,5 +1,5 @@
 ---
-title: 使用促销代码降低价格
+title: 使用促销代码来降低价格
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -23,33 +23,33 @@ search.appverid:
 - MOE150
 - BEA160
 ms.assetid: fce1510d-9ea5-4aff-8752-1676ec7fede3
-description: 了解如何将促销代码应用于 Microsoft 365 订阅以降低价格，以及如何在发生错误时解决促销代码问题。
-ms.openlocfilehash: 09f39b6f82153c6b23525ab41cfb94e77437d062
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+description: 了解如何将促销代码应用到 Microsoft 365 订阅来降低价格，以及如何在出现错误时对促销代码进行故障排除。
+ms.openlocfilehash: c526d5fd44db5e653f79c4987a35c72cdd6fdcad
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48646735"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50921752"
 ---
-# <a name="use-your-promo-code-to-reduce-price"></a>使用促销代码降低价格
+# <a name="use-your-promo-code-to-reduce-price"></a>使用促销代码来降低价格
 
-在购买订阅时，可以使用促销代码来降低价格。 阅读本文，了解如何将促销代码应用到订阅、了解 [促销代码条款](#promo-code-terms)以及如何 [解决促销代码问题](#troubleshooting-promo-codes)。
+购买订阅时，可以使用促销代码来降低价格。 阅读本文，了解如何将促销代码应用到订阅、了解促销代码条款以及促销[代码疑难解答](#troubleshooting-promo-codes)。 [](#promo-code-terms)
   
 ## <a name="apply-a-promo-code-to-your-subscription"></a>将促销代码应用到订阅
 
-1. 通过购买新的订阅或将服务添加到现有订阅中，可以开始购买。
+1. 通过购买新订阅或向现有订阅添加服务开始购买。
     
-2. 在签出时，请选择 "* * 有促销或折扣代码？"，然后在框中输入您的代码。 
+2. 签出时，选择**拥有促销或折扣代码？，然后在框中输入你的代码。 
   
-3. 选择 " **应用促销代码**"。 您应该会看到已成功应用的确认信息。 如果看到其他消息，请参阅[促销代码疑难解答](#troubleshooting-promo-codes)以查明原因。 
+3. 选择 **应用促销代码**。 应看到确认已成功应用它。 如果看到其他消息，请参阅[促销代码疑难解答](#troubleshooting-promo-codes)以查明原因。 
     
-4. 继续签出。在 "订单确认" 页上，您将看到包含金额的折扣代码。 
+4. 继续签出。在订单确认页面上，你将看到金额包含的折扣代码。 
     
-完成购买后，可随时在帐单上查看促销代码产生的折扣。 若要了解详细信息，请参阅 [查看](billing-and-payments/view-your-bill-or-invoice.md)。
+完成购买后，可随时在帐单上查看促销代码产生的折扣。 若要了解更多信息，请参阅[查看 。](billing-and-payments/view-your-bill-or-invoice.md)
   
 ## <a name="promo-code-terms"></a>促销代码期限
 
-以下准则适用于适用于 Microsoft 365 商业版订阅的促销代码。
+以下指南适用于 Microsoft 365 商业版订阅的促销代码。
   
 - **每个订阅的促销代码数** 您可以对同一个订单中的多个订阅使用一个促销代码，但是不能对同一订阅使用多个促销代码。 
     
@@ -73,8 +73,8 @@ ms.locfileid: "48646735"
   
 ## <a name="related-articles"></a>相关文章
 
-[从免费试用版购买订阅](buy-a-subscription-from-your-free-trial.md)
+[从免费试用版购买订阅](./try-or-buy-microsoft-365.md)
   
-[购买另一个订阅](buy-another-subscription.md)
+[购买另一个订阅](./try-or-buy-microsoft-365.md)
   
 [购买或编辑附加设备](buy-or-edit-an-add-on.md)

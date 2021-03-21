@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 Defender 高级搜寻中的 assignedIPAddresses () 函数
+title: AssignedIPAddresses () Microsoft 365 Defender 高级搜寻中的函数
 description: 了解如何使用 AssignedIPAddresses () 函数获取分配给设备的最新 IP 地址
 keywords: 高级搜寻， 威胁搜寻， 网络威胁搜寻， Microsoft 威胁防护， microsoft 365， mtp， m365， 搜索， 查询， 遥测， 架构参考， kusto， FileProfile， 文件配置文件， 函数， 扩充
 search.product: eADQiWindows 10XVcnh
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: d16cd7efc49cc2498eff3f705bb43fa62f37d975
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: c52f7b8bf5a93a75b3330a3377f3fab34b8e7837
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49933014"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50922916"
 ---
 # <a name="assignedipaddresses"></a>AssignedIPAddresses()
 
@@ -39,13 +39,13 @@ ms.locfileid: "49933014"
 
 此函数返回具有以下列的表：
 
-| 列 | 数据类型 | 说明 |
+| Column | 数据类型 | 说明 |
 |------------|-------------|-------------|
 | `Timestamp` | datetime | 使用 IP 地址观测到设备的最新时间 |
 | `IPAddress` | string | 设备使用的 IP 地址 |
 | `IPType` | string | 指示 IP 地址是公用地址还是专用地址 |
-| `NetworkAdapterType` | int | 已分配 IP 地址的设备使用的网络适配器类型。 有关可能的值，请参阅 [此枚举](https://docs.microsoft.com/dotnet/api/system.net.networkinformation.networkinterfacetype) |
-| `ConnectedNetworks` | int | 具有分配 IP 地址的适配器所连接到的网络。 每个 JSON 数组都包含网络名称、类别 (公共、专用或域) 、说明和指示其是否公开连接到 Internet 的标志 |
+| `NetworkAdapterType` | int | 已分配 IP 地址的设备使用的网络适配器类型。 有关可能的值，请参阅 [此枚举](/dotnet/api/system.net.networkinformation.networkinterfacetype) |
+| `ConnectedNetworks` | int | 具有分配 IP 地址的适配器所连接至的网络。 每个 JSON 数组都包含网络名称、类别 (公共、专用或域) 、说明以及指示其是否公开连接到 Internet 的标志 |
 
 ## <a name="syntax"></a>语法
 
@@ -55,8 +55,8 @@ AssignedIPAddresses(x, y)
 
 ## <a name="arguments"></a>参数
 
-- **x** `DeviceId` — `DeviceName` 或标识设备的值
-- **y**— (日期时间) 指示函数从特定时间获取最新分配的 `Timestamp` IP 地址的值。 如果未指定，函数将返回最新的 IP 地址。
+- **x** `DeviceId` — `DeviceName` 或用于标识设备的值
+- **y**— (datetime) 指示函数从特定时间获取最新分配的 `Timestamp` IP 地址的值。 如果未指定，函数将返回最新的 IP 地址。
 
 ## <a name="examples"></a>示例
 
@@ -67,7 +67,7 @@ AssignedIPAddresses('example-device-name', ago(1d))
 ```
 
 ### <a name="get-ip-addresses-used-by-a-device-and-find-devices-communicating-with-it"></a>获取设备使用的 IP 地址并查找与设备通信的设备
-此查询使用该函数获取特定日期之前或 () 设备分配的 `AssignedIPAddresses()` IP `example-device-name` `example-date` 地址 () 。 然后，它使用 IP 地址查找与其他设备启动的设备的连接。 
+此查询使用 函数获取特定日期或 () 或之前为设备分配的 `AssignedIPAddresses()` IP `example-device-name` `example-date` () 。 然后，它使用 IP 地址查找与其他设备启动的设备的连接。 
 
 ```kusto
 let Date = datetime(example-date);

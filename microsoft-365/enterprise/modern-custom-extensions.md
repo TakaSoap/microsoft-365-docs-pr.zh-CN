@@ -19,12 +19,12 @@ ms.reviewer: sstewart
 search.appverid:
 - MET150
 description: 了解如何在 SharePoint Online 新式网站页面上优化自定义扩展的性能。
-ms.openlocfilehash: 92d328c64c89a1a01bbcd50fb7ad04affdf69af8
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 05d9b9cd9ad70630169595dc42080c718b39dbc8
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50287193"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50923049"
 ---
 # <a name="optimize-custom-extension-performance-in-sharepoint-online-modern-site-pages"></a>在 SharePoint Online 新式网站页面中优化自定义扩展的性能
 
@@ -45,17 +45,17 @@ ms.locfileid: "50287193"
 - **改进机会**（黄色）如果使用了 **五个** 或多个扩展名，它们将在本节中被突出显示为警告，直到七个或更多扩展名被使用，然后将其突出显示为“需要注意”。
 - **无需执行任何操作**（绿色）：加载扩展所需的时间不超过一秒钟。
 
-如果扩展影响页面加载时间或页面上的扩展过多，则结果将显示在结果的"需要注意"部分。  单击结果，以查看有关哪个扩展正在缓慢加载的详细信息或已突出显示太多扩展。 适用于 SharePoint 的页面诊断工具的未来更新可能包括更新分析规则，因此请确保始终拥有该工具的最新版本。
+如果扩展影响页面加载时间或页面上的扩展过多，则结果将显示在结果的" **需要注意** "部分。 单击结果，以查看有关哪个扩展正在缓慢加载的详细信息或已突出显示太多扩展。 适用于 SharePoint 的页面诊断工具的未来更新可能包括更新分析规则，因此请确保始终拥有该工具的最新版本。
 
 ![页面加载时间结果](../media/page-diagnostics-for-spo/pagediag-extensions-load-time.png)
 
 结果中的可用信息包括：
 
 - **名称和 ID** 显示可帮助你在页面上查找扩展的标识信息
-- **总计** 显示模块加载和初始化扩展的总时间。 它是扩展从开始到结束在页面上执行的总相对时间。
+- **Total** 显示模块加载和初始化扩展的总时间。 它是扩展在页面上从开始到结束执行所花时间的总相对时间。
 - **模块** 加载显示下载、评估和加载扩展 JavaScript 和 CSS 文件所花时间。 然后，它将启动 Init 进程。
 - **Init** 显示扩展初始化数据所花时间。
-    它是异步调用，Init 时间是解决返回的承诺时 onInit 函数的时间计算。
+    它是异步调用，init 时间是返回的承诺解析时 onInit 函数的时间计算。
 
 提供此信息是为了帮助设计人员和开发人员解决问题。 此信息应提供给你的设计和开发团队。
 
@@ -88,7 +88,7 @@ ms.locfileid: "50287193"
 
 - **扩展大小和依赖项**
   - 最佳静态资源下载需要使用 Office 365 CDN。 公用 CDN 来源更适合 _js/css_ 文件。 有关使用 Office 365 CDN 的详细信息，请参阅[结合使用 Office 365 内容分发网络 (CDN) 和 SharePoint Online](use-microsoft-365-cdn-with-spo.md)。
-  - 重复使用作为 SharePoint 框架 (SPFx) 一部分的 _React_ 和 _Fabric 导入_ 等框架。 有关详细信息，请参阅 [SharePoint 框架概述](https://docs.microsoft.com/sharepoint/dev/spfx/sharepoint-framework-overview)。
+  - 重复使用作为 SharePoint 框架 (SPFx) 一部分的 _React_ 和 _Fabric 导入_ 等框架。 有关详细信息，请参阅 [SharePoint 框架概述](/sharepoint/dev/spfx/sharepoint-framework-overview)。
   - 确保你使用的是最新版本的 SharePoint 框架，并在新版本推出时进行升级。
 - **数据提取/缓存**
   - 如果扩展依赖额外的服务器调用来提取数据以进行显示，请确保这些服务器 API 运行快速且/或实施客户端缓存（例如，对于较大的集使用 _localStorage_ 或 _IndexDB_）。
@@ -115,7 +115,7 @@ ms.locfileid: "50287193"
 
 [优化 Office 365 性能](tune-microsoft-365-performance.md)
 
-[新式 SharePoint 体验中的性能](https://docs.microsoft.com/sharepoint/modern-experience-performance)
+[新式 SharePoint 体验中的性能](/sharepoint/modern-experience-performance)
 
 [内容分发网络](content-delivery-networks.md)
 

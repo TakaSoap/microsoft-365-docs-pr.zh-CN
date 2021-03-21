@@ -17,12 +17,12 @@ ms.collection:
 description: 管理员可以了解如何配置邮箱以收集用户报告的垃圾邮件和网络钓鱼电子邮件。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 37b473e2cfffff3984ff81245f09e98ee18685ea
-ms.sourcegitcommit: 450661071e44854f0a0a92af648f76d907767b71
+ms.openlocfilehash: 0ac1028ca3485f75518ccca298a1fd85a7bf40ec
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "50826194"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50922386"
 ---
 # <a name="user-submissions-policy"></a>用户提交策略
 
@@ -75,7 +75,7 @@ ms.locfileid: "50826194"
 - 若要修改用户提交的配置，你需要是以下角色组之一的成员：
 
   - [安全和合规中心](permissions-in-the-security-and-compliance-center.md)中的“**组织管理**”或“**安全管理员**”。
-  - **Exchange** Online 中的 [组织管理](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups)。
+  - **Exchange** Online 中的 [组织管理](/Exchange/permissions-exo/permissions-exo#role-groups)。
 
 - 您需要访问 Exchange Online PowerShell。 如果您尝试使用的帐户无法访问 Exchange Online PowerShell，则指定提交邮箱时将收到如下所示的错误：
 
@@ -83,8 +83,8 @@ ms.locfileid: "50826194"
 
   有关启用或禁用对 Exchange Online PowerShell 的访问权的信息，请参阅下列主题：
 
-  - [启用或禁用对 Exchange Online PowerShell 的访问](https://docs.microsoft.com/powershell/exchange/disable-access-to-exchange-online-powershell) 
-  - [Exchange Online 中的客户端访问规则](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/client-access-rules/client-access-rules)
+  - [启用或禁用对 Exchange Online PowerShell 的访问](/powershell/exchange/disable-access-to-exchange-online-powershell) 
+  - [Exchange Online 中的客户端访问规则](/exchange/clients-and-mobile-in-exchange-online/client-access-rules/client-access-rules)
 
 ## <a name="use-the-security--compliance-center-to-configure-the-user-submissions-mailbox"></a>使用安全&合规中心配置用户提交邮箱
 
@@ -155,4 +155,3 @@ ms.locfileid: "50826194"
 `3|49871234-6dc6-43e8-abcd-08d797f20abe|167.220.232.101|test@contoso.com|(test phishing submission)`
 
 不遵循此格式的邮件将不会在提交门户中正确显示。
-

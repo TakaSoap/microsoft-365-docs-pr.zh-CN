@@ -18,12 +18,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: 了解如何创建自定义敏感信息类型，以允许使用满足组织需求的规则。
-ms.openlocfilehash: 40584b430af6e822b115e014c20481c027222aae
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: 79d79a220e0cd8de0755f6cdac99cf7cceb2997f
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50423401"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50922656"
 ---
 # <a name="customize-a-built-in-sensitive-information-type"></a>自定义内置敏感信息类型
 
@@ -33,7 +33,7 @@ ms.locfileid: "50423401"
   
 ## <a name="export-the-xml-file-of-the-current-rules"></a>导出当前规则的 XML 文件
 
-必须[通过远程 PowerShell 连接到安全与合规中心](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell)，才能导出 XML。
+必须[通过远程 PowerShell 连接到安全与合规中心](/powershell/exchange/connect-to-scc-powershell)，才能导出 XML。
   
 1. 在 PowerShell 中，键入下面的代码，以在屏幕上显示组织的规则。如果还没有创建你自己的规则，就只会看到标记为“Microsoft 规则包”默认内置规则。
 
@@ -201,7 +201,7 @@ ms.locfileid: "50423401"
   
 1. 使用 Unicode 编码将其另存为 .xml 文件。这一点很重要，因为如果文件使用其他编码保存，将无法正常运行。
     
-2. [使用远程 PowerShell 连接到安全与合规中心](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell)。
+2. [使用远程 PowerShell 连接到安全与合规中心](/powershell/exchange/connect-to-scc-powershell)。
     
 3. 在 PowerShell 中，键入下面的代码。
 

@@ -22,12 +22,12 @@ localization_priority: Priority
 description: 管理员可以了解 Exchange Online Protection (EOP) 中提供的防欺骗功能，该功能有助于缓解来自虚假发件人和域的网络钓鱼攻击。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2b20ae766ee308e9c59ed0d495df7c5a97c79b00
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 1d048a65b34bc97a619855216945d1cc988bf9e2
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50287061"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50921380"
 ---
 # <a name="anti-spoofing-protection-in-eop"></a>EOP 中的防欺骗防护
 
@@ -94,7 +94,7 @@ Microsoft 区分两种不同类型的欺骗邮件：
   - 发件人和收件人位于同一域的子域：
     > 发件人：laura@marketing.fabrikam.com <br> 收件人：julia@engineering.fabrikam.com
 
-  - 发件人和收件人位于属于同一组织的不同域（即，两个域均配置为同一组织中的[接受域](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)）：
+  - 发件人和收件人位于属于同一组织的不同域（即，两个域均配置为同一组织中的[接受域](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)）：
     > 发件人：sender @ microsoft.com <br> 收件人：recipient @ bing.com
 
     电子邮件地址中使用空格，以防垃圾邮件机器人收集邮件。
@@ -150,7 +150,7 @@ Microsoft Defender for Office 365 组织可使用安全与合规中心中的威�
 
   - 查看 DMARC.org 上的常见问题解答：[我在操作邮件列表时想与 DMARC 进行交互，应该怎么办？](https://dmarc.org/wiki/FAQ#I_operate_a_mailing_list_and_I_want_to_interoperate_with_DMARC.2C_what_should_I_do.3F)。
 
-  - 阅读此博客文章中的说明：[关于邮件列表操作员与 DMARC 进行交互以避免失败的提示](https://blogs.msdn.microsoft.com/tzink/2017/03/22/a-tip-for-mailing-list-operators-to-interoperate-with-dmarc-to-avoid-failures/)。
+  - 阅读此博客文章中的说明：[关于邮件列表操作员与 DMARC 进行交互以避免失败的提示](/archive/blogs/tzink/a-tip-for-mailing-list-operators-to-interoperate-with-dmarc-to-avoid-failures)。
 
   - 考虑在邮件列表服务器上安装更新以支持 ARC，请参阅 <http://arc-spec.org>
 

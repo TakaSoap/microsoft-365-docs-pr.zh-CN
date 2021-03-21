@@ -18,16 +18,16 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: ''
 description: 摘要：配置 Microsoft 365 测试环境的传递身份验证。
-ms.openlocfilehash: d83de4ece4d1eaeddac882cf46a4fe85b8ba7cd4
-ms.sourcegitcommit: 53ff1fe6d6143b0bf011031eea9b85dc01ae4f74
+ms.openlocfilehash: cdbb6927fb8ca0001e3089c7169ce9046208e8f8
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "48487442"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50921524"
 ---
 # <a name="pass-through-authentication-for-your-microsoft-365-test-environment"></a>Microsoft 365 测试环境的传递身份验证
 
-*此测试实验室指南可用于适用于企业和 Office 365 企业测试环境的 Microsoft 365。*
+*此测试实验室指南可用于 Microsoft 365 企业版和 Office 365 企业版测试环境。*
 
 想要直接使用本地 Active Directory 域服务 (AD DS) 基础结构来进行对 Microsoft 云服务的身份验证的组织可以使用直通身份验证。 本文介绍了如何为直通身份验证配置 Microsoft 365 测试环境，生成的配置如下：
   
@@ -76,17 +76,17 @@ ms.locfileid: "48487442"
 
 8.    在“**配置完成**”页面上，单击“**退出**”。
 
-9.    在 Azure 门户的左窗格中，单击“**Azure Active Directory > Azure AD Connect**”。请验证**传递身份验证**功能的状态为“**已启用**”。
+9.    在 Azure 门户的左窗格中，单击“**Azure Active Directory > Azure AD Connect**”。请验证 **传递身份验证** 功能的状态为“**已启用**”。
 
 10.    单击“**传递身份验证**”。“**传递身份验证**”窗格中会列出身份验证代理所安装到的服务器。APP1 应该会出现在该列表中。关闭“**传递身份验证**”窗格。
 
-接下来，测试使用 user1@testlab 登录订阅的功能 <strong>。</strong>\<your public domain> 测试能否登录订阅。
+接下来，测试能否使用 user1@testlab <strong>登录订阅。</strong>\<your public domain> 测试能否登录订阅。
 
 1. 在 APP1 中，注销，再重新登录，这次指定不同的帐户。
 
 2. 当系统提示输入用户名和密码时，指定 <strong>user1@testlab.</strong>\<your public domain> 和 User1 密码。 你应该能以 User1 身份成功登录。
 
-请注意，虽然 User1 具有 TESTLAB AD DS 域的域管理员权限，但它不是全局管理员。 因此，不会看到作为一个选项的**管理员**图标。
+请注意，虽然 User1 具有 TESTLAB AD DS 域的域管理员权限，但它不是全局管理员。 因此，不会看到作为一个选项的 **管理员** 图标。
 
 下面是生成的配置：
 
@@ -94,7 +94,7 @@ ms.locfileid: "48487442"
  
 此配置包括：
 
-- 使用 DNS 域 testlab 的 Microsoft 365 E5 试用版或付费订阅。\<your domain name> 。
+- 具有 DNS 域 testlab 的 Microsoft 365 E5 试用版或付费订阅。\<your domain name> 。
 - 连接到 Internet 的简化的组织 Intranet，包含 Azure 虚拟网络子网中的 DC1、APP1 和 CLIENT1 虚拟机。身份验证代理在 APP1 上运行，以处理 Microsoft 365 订阅的 Azure AD 租户发出的直通身份验证请求。
 
 ## <a name="next-step"></a>后续步骤
@@ -107,4 +107,4 @@ ms.locfileid: "48487442"
 
 [Microsoft 365 企业版概述](microsoft-365-overview.md)
 
-[适用于企业的 Microsoft 365 文档](https://docs.microsoft.com/microsoft-365-enterprise/)
+[适用于企业的 Microsoft 365 文档](/microsoft-365-enterprise/)

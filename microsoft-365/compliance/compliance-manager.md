@@ -16,128 +16,128 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Microsoft 合规性管理器可帮助组织简化和自动化风险评估，并建议用于帮助解决风险的建议措施。
-ms.openlocfilehash: 7bff6a2a7a150a08b98fe7a92cd71d266df9fda7
-ms.sourcegitcommit: 20d1158c54a5058093eb8aac23d7e4dc68054688
+description: Microsoft 合规性管理器可帮助组织简化和自动化风险评估，并建议采取建议操作来帮助应对风险。
+ms.openlocfilehash: 80d955f3d321ef8f82fe3654e4d7d08572ec72cc
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "49376543"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50922726"
 ---
 # <a name="microsoft-compliance-manager"></a>Microsoft 合规性管理器
 
-**本文内容：** 了解什么是合规性管理器、它如何帮助简化合规性并降低风险以及关键组件。
+**本文内容：** 了解什么是合规性管理器，它如何有助于简化合规性和降低风险及其关键组件。
 
-## <a name="whats-new-the-ga-release-of-compliance-manager"></a>新增功能：合规性管理器的正式发行版
+## <a name="whats-new-the-ga-release-of-compliance-manager"></a>新增功能：合规性管理器的 GA 版本
 
-合规性管理器现已推出 (GA) 作为 [Microsoft 365 合规性中心](microsoft-365-compliance-center.md)内的端到端合规性管理解决方案。 在此版本中，合规性管理器将从 Microsoft 服务信任门户中先前的位置完成转换。 合规性管理器现在也可用于美国政府社区 (GCC) 中型和 GCC 高级客户。
+合规性管理器现已在 GA (中) ，作为 [Microsoft 365](microsoft-365-compliance-center.md)合规中心内的端到端合规性管理解决方案。 在此版本中，合规性管理器完成从以前位置到 Microsoft 服务信任门户的转换。 合规性管理器现在还可用于美国政府社区 (GCC) 中等和 GCC 高客户。
 
-由于合规性分数的公开预览发展成为集中式工具，具有增强的合规性管理功能和更易于使用的功能。  GA 发行版中引入了一个更大的预建评估集合，可帮助您扩展合规性活动。
+从合规性分数的公共预览版开始，它已发展为具有增强的合规性管理功能和更好的易用性的集中式工具。  GA 版本提供更大的预建评估集合，可帮助你扩展合规性活动。
 
-**了解有关 GA 版本的详细信息：**
-- 我们的 [常见问题](compliance-manager-faq.md) 将更详细地引导您完成发展。
-- 阅读 [此博客文章](https://aka.ms/compliancemanager/GAblog)中的 "GA 功能增强"。
+**详细了解 GA 版本：**
+- 我们的 [常见问题将](compliance-manager-faq.md) 详细介绍发展过程。
+- 阅读此博客文章中的 GA [功能增强功能](https://aka.ms/compliancemanager/GAblog)。
 
-观看以下视频，了解合规性管理器如何帮助简化组织管理合规性的方式：
+观看下面的视频，了解合规性管理器如何有助于简化组织管理合规性的情况：
 <br>
 <br>
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4FGYZ]
 
 ## <a name="what-is-compliance-manager"></a>什么是合规性管理器
 
-[Microsoft 合规性管理器](https://compliance.microsoft.com/compliancemanager) 是 [microsoft 365 合规性中心](microsoft-365-compliance-center.md) 中的一项功能，可帮助您更轻松、方便地管理组织的合规性要求。 合规性管理器可帮助你在法规遵从性旅程中进行，从获取数据保护风险的清单到管理实施控制的复杂性，保持最新的管理法规和证书，并向审计员报告。
+[Microsoft 合规性管理器](https://compliance.microsoft.com/compliancemanager) 是 Microsoft [365](microsoft-365-compliance-center.md) 合规中心中的一项功能，可帮助您更轻松、更方便地管理组织的合规性要求。 合规性管理器可以帮助你在整个合规性旅程中，从清点数据保护风险到管理实施控制措施的复杂性、及时获得法规和认证，以及向审核员报告。
 
-合规性管理器通过提供以下功能帮助简化合规性并降低风险：
+合规性管理器通过提供：
 
-- 针对常见行业和区域标准和管理法规的预建评估，或自定义评估以满足您的独特合规性需求 (可用评估取决于您的许可协议; [了解详细](https://go.microsoft.com/fwlink/?linkid=2132371)) 。
+- 针对常见行业和区域标准和法规的预建评估，或为满足唯一合规性需求而 (评估取决于许可协议;[了解) 。](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)
 
-- 工作流功能，可帮助您通过单一工具高效地完成风险评估。
+- 工作流功能，可帮助您通过单个工具高效地完成风险评估。
 
-- 有关建议的改进措施的详细分步指南，可帮助您遵守与贵组织最相关的标准和法规。 对于由 Microsoft 管理的操作，你将看到 "实施详细信息" 和 "审核结果"。
+- 有关建议改进操作的详细分步指南，可帮助您遵守与组织最相关的标准和法规。 对于由 Microsoft 管理的操作，你将看到实现详细信息和审核结果。
 
-- 基于风险的符合性分数，可帮助您了解完成改进措施中的进度，以帮助您了解合规性状态。
+- 基于风险的合规性分数，通过衡量完成改进操作的进度，帮助你了解合规性状态。
 
-合规性管理器仪表板显示了你当前的合规性分数，可帮助你查看需要注意的事项，并指导你执行关键改进操作。 下面是合规性管理器仪表板外观的示例：
+合规性管理器仪表板显示当前的合规性分数，帮助你查看需要关注的问题，并指导你执行关键改进操作。 下面是合规性管理器仪表板外观的示例：
 
-![合规性管理器-仪表板](../media/compliance-manager-dashboard.png "合规性管理器仪表板")
+![合规性管理器 - 仪表板](../media/compliance-manager-dashboard.png "合规性管理器仪表板")
 
 ## <a name="understanding-your-compliance-score"></a>了解合规性分数
 
-合规性管理者奖项您要为符合法规、标准或策略的措施完成改进措施，并将这些点组合到整体合规性分数中。 每个操作对你的分数有不同的影响，具体取决于所涉及的潜在风险。 您的合规性分数可帮助您确定重点关注的操作，以改进您的总体合规性状态。
+合规性管理器会奖励你完成为遵守法规、标准或策略而采取的改进措施，并且将这些分数组合到一个总体合规性分数中。 每项操作对分数的影响各不相同，具体取决于所涉及的潜在风险。 合规性分数可帮助确定重点操作优先级，以改善整体合规性状态。
 
-合规性管理器为你提供了基于 Microsoft 365 数据保护基准的初始分数。 此基准是一组控件，包括用于数据保护和常规数据管理的关键法规和标准。
+合规性管理器根据 Microsoft 365 数据保护基线提供初始分数。 此基线是一组控制措施，其中包括数据保护和一般数据管理的关键法规和标准。
 
-##### <a name="learn-more"></a>了解详细信息
+##### <a name="learn-more"></a>了解更多
 
 [了解如何计算合规性分数](compliance-score-calculation.md)。
 
-[了解如何处理改进操作](compliance-manager-improvement-actions.md)。
+[了解如何使用改进操作](compliance-manager-improvement-actions.md)。
 
-## <a name="key-elements-controls-assessments-templates-improvement-actions"></a>关键元素：控件、评估、模板、改进操作
+## <a name="key-elements-controls-assessments-templates-improvement-actions"></a>关键要素：控制措施、评估、模板、改进操作
 
-合规性管理器使用多个数据元素来帮助您管理合规性活动。 在使用合规性管理器分配、测试和监视合规性活动时，对关键元素有一个基本的了解是很有帮助的：控件、评估、模板和改进操作。
+合规性管理器使用多个数据元素来帮助管理合规性活动。 使用合规性管理器分配、测试和监视合规性活动时，对关键要素有基本的了解会有所帮助：控制措施、评估、模板和改进操作。
 
 ### <a name="controls"></a>控件
 
-控件是法规、标准或策略的要求。 它定义了如何评估和管理系统配置、组织过程以及负责满足法规、标准或策略的特定要求的人员。
+控制是法规、标准或策略的要求。 它定义了如何评估和管理系统配置、组织过程以及负责满足法规、标准或策略的特定要求的人。
 
 合规性管理器跟踪以下类型的控件：
 
-1. **Microsoft 托管控件**： microsoft 云服务的控件，microsoft 负责实现
-2. **您的控件**：有时称为 "客户托管控件"，它们是由您的组织实现和管理的控件
-3. **共享控件**：这些控件是你的组织和 Microsoft 共同负责实施的控制
+1. **Microsoft 管理的控制措施**：Microsoft 负责实现 Microsoft 云服务的控制措施
+2. **你的控件**：有时称为客户管理的控制措施，这些控件是由你的组织实现和管理的控件
+3. **共享控件**：这些是您的组织和 Microsoft 共同负责实现的控制
 
-##### <a name="learn-more"></a>了解详细信息
+##### <a name="learn-more"></a>了解更多
 
 [监视控件的进度](compliance-manager-assessments.md#monitor-assessment-progress-and-controls)。
 
-[了解合规性管理器如何持续评估控件](compliance-score-calculation.md#how-compliance-manager-continuously-assesses-controls)。
+[了解合规性管理器如何持续评估控制措施](compliance-score-calculation.md#how-compliance-manager-continuously-assesses-controls)。
 
 ### <a name="assessments"></a>评估
 
-评估是从特定的法规、标准或策略中对控件进行分组。 完成评估中的操作可帮助您满足标准、法规或法律的要求。 例如，您可能有一个评估，在完成其中的所有操作后，可帮助您将 Microsoft 365 设置为符合 ISO 27001 的要求。
+评估是按特定法规、标准或策略对控制措施进行分组。 完成评估中的操作有助于满足标准、法规或法律的要求。 例如，你可能有一项评估，在完成其中的所有操作后，有助于使 Microsoft 365 设置符合 ISO 27001 要求。
 
-评估具有以下几个组件：
+评估有几个组成部分：
 
-- **范围内的服务**：适用于评估的一组特定的 Microsoft 服务
-- **Microsoft 托管控件**： microsoft 云服务的控件，microsoft 云服务代表你代表你实施
-- **您的控件**：有时称为 "客户托管控件"，它们是由您的组织实现和管理的控件
-- **共享控件**：这些控件是你的组织和 Microsoft 共同负责实施的控制
-- **评估成绩**：显示从评估中的操作（由组织和 Microsoft 管理）获得的可能积分总数的进度
+- **范围内服务**：适用于评估的特定 Microsoft 服务集
+- **Microsoft 管理的控制措施**：Microsoft 代表你实现 Microsoft 云服务的控制措施
+- **你的控件**：有时称为客户管理的控制措施，这些控件是由你的组织实现和管理的控件
+- **共享控件**：这些是您的组织和 Microsoft 共同负责实现的控制
+- **评估分数**：显示你在从由组织和 Microsoft 管理的评估内的操作获得可能的总分数方面的进度
 
-在创建评估时，您需要将其分配给一个组。 您可以按对组织的最逻辑的任何方式配置组。 例如，您可以按审核年、区域、解决方案、组织内的团队或其他某种方式对评估进行分组。 创建组后，您可以对 [合规性管理器仪表板进行筛选](compliance-manager-setup.md#filtering-your-dashboard-view) ，以查看一个或多个组的分数。
+创建评估时，你将将其分配给组。 您可以使用对组织最符合逻辑的任何方式配置组。 例如，你可以按审核年份、区域、解决方案、贵组织中团队或其他某种方式对评估进行分组。 创建组后，可以 [筛选合规性管理器](compliance-manager-setup.md#filtering-your-dashboard-view) 仪表板，以便按一个或多个组查看分数。
 
-##### <a name="learn-more"></a>了解详细信息
+##### <a name="learn-more"></a>了解更多
 
-[在合规性管理器中构建和管理评估](compliance-manager-assessments.md)。
+[在合规性管理器 中生成和管理评估](compliance-manager-assessments.md)。
 
 ### <a name="templates"></a>模板
 
-合规性管理器提供可帮助您快速创建评估的模板。 您可以修改这些模板以创建针对您的需求而优化的评估。 您还可以通过创建包含自己的控件和操作的模板来构建自定义评估。 例如，您可能希望模板涵盖内部业务流程控制，或者是我们的150个预构建的评估模板中的一个不包含的区域数据保护标准。
+合规性管理器提供了模板，可帮助你快速创建评估。 你可以修改这些模板，以创建已针对你的需求优化的评估。 您还可以通过使用自己的控件和操作创建模板来构建自定义评估。 例如，你可能希望模板涵盖内部 业务流程 控件，或我们的 150 多个预建评估模板之一未涵盖的区域数据保护标准。
 
-##### <a name="learn-more"></a>了解详细信息
+##### <a name="learn-more"></a>了解更多
 
-[查看合规性管理器提供的评估模板的列表](compliance-manager-templates-list.md)。
+[查看合规性管理器提供的评估模板列表](compliance-manager-templates-list.md)。
 
-[获取创建和修改用于评估的模板的详细说明](compliance-manager-templates.md)。
+[获取有关创建和修改评估模板的详细说明](compliance-manager-templates.md)。
 
 ### <a name="improvement-actions"></a>改进操作
 
-改进操作可帮助您集中执行合规性活动。 每个改进操作都提供了建议的指南，旨在帮助您与数据保护法规和标准保持一致。 可将改进操作分配给组织中的用户，以执行实施和测试工作。 您还可以在 "改进" 操作中存储文档、注释和记录状态更新。
+改进操作有助于集中您的合规性活动。 每项改进操作都提供建议指导，旨在帮助您遵守数据保护法规和标准。 可以将改进操作分配给贵组织的用户，以执行实施和测试工作。 您还可以在改进操作中存储文档、备注和记录状态更新。
 
-##### <a name="learn-more"></a>了解详细信息
+##### <a name="learn-more"></a>了解更多
 
-[使用提高操作来管理合规性工作流](compliance-manager-improvement-actions.md)。
+[使用改进操作来管理合规性工作流](compliance-manager-improvement-actions.md)。
 
-[了解操作对合规性分数的影响](compliance-score-calculation.md#action-types-and-points)。
+[了解操作如何影响合规性分数](compliance-score-calculation.md#action-types-and-points)。
 
 ## <a name="supported-languages"></a>支持的语言
 
-合规性管理器可采用以下语言：
+合规性管理器提供以下语言版本：
 
 - 英语
-- 马来印度尼西亚语
-- 马来马来语
+- 印度尼西亚语
+- 马来语
 - 中文（简体）
 - 中文（繁体）
 - 捷克语
@@ -160,8 +160,8 @@ ms.locfileid: "49376543"
 - 泰语
 - 土耳其语
 
-## <a name="next-steps-set-up-and-customize"></a>后续步骤：设置和自定义
+## <a name="next-steps-set-up-and-customize"></a>下一步：设置和自定义
 
-了解如何登录、分配权限和角色、配置设置以及在 [合规性管理器开始](compliance-manager-setup.md)时自定义仪表板视图。
+若要了解如何登录、分配权限和角色、配置设置以及个性化仪表板视图，可了解合规性 [管理器入门](compliance-manager-setup.md)。
 
-然后，开始自定义合规性管理器，以帮助您遵循与您的组织最重要的行业标准（通过 [设置评估](compliance-manager-assessments.md)）。
+然后开始自定义合规性管理器，通过设置评估来帮助你遵守对组织最重要的 [行业标准](compliance-manager-assessments.md)。

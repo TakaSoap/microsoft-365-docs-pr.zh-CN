@@ -20,18 +20,18 @@ search.appverid:
 - MET150
 ms.assetid: 4436582f-211a-45ec-b72e-33647f97d8a3
 description: 了解 Microsoft 365 for Business 订阅到期、禁用或取消后对我的数据的影响。
-ms.openlocfilehash: a9e2e68c0eee119126af93552a50f1859f708c1f
-ms.sourcegitcommit: 06d9e056eabfbac8fafe66cc32907b33d4ae8253
+ms.openlocfilehash: 7560e715a9b1951915866f96c8df3bd1f884a475
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50741353"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50921812"
 ---
 # <a name="what-happens-to-my-data-and-access-when-my-microsoft-365-for-business-subscription-ends"></a>Microsoft 365 for Business 订阅结束后对我的数据和访问有何影响？
 
 如果订阅结束 (无论是因为过期，还是因为你决定取消) 对 Microsoft 365 服务、应用程序和客户数据的访问都会在完全关闭订阅或 *删除* 订阅之前经历多个状态。 如果你意识到这一进展，则会更好地准备好在无法挽回之前将订阅恢复到活动状态，或者 — 如果你要离开 Microsoft 365 — 则可以在最终删除之前备份你的数据。
 
-在联系 [Microsoft 365 支持](https://docs.microsoft.com/microsoft-365/admin/contact-support-for-business-products) 之前，请阅读这些重要信息。
+在联系 [Microsoft 365 支持](../../admin/contact-support-for-business-products.md) 之前，请阅读这些重要信息。
   
 ## <a name="what-happens-to-data-when-a-subscription-expires"></a>订阅到期后，对数据会有何影响？
 
@@ -51,7 +51,7 @@ ms.locfileid: "50741353"
 *对于大多数国家和地区的大多数优惠。
   
 > [!NOTE]
-> **什么是"客户数据"？** 根据 [Microsoft 在线服务条款的定义](https://go.microsoft.com/fwlink/p/?LinkId=613649)，客户数据是指所有数据，包括客户或代表客户通过使用 Microsoft 365 服务向 Microsoft 提供的所有文本、声音或图像文件。 如果要了解有关客户数据保护的更多信息，请参阅 [开始使用 Microsoft 服务信任门户](https://docs.microsoft.com/microsoft-365/compliance/get-started-with-service-trust-portal)。
+> **什么是"客户数据"？** 根据 [Microsoft 在线服务条款的定义](https://go.microsoft.com/fwlink/p/?LinkId=613649)，客户数据是指所有数据，包括客户或代表客户通过使用 Microsoft 365 服务向 Microsoft 提供的所有文本、声音或图像文件。 如果要了解有关客户数据保护的更多信息，请参阅 [开始使用 Microsoft 服务信任门户](../../compliance/get-started-with-service-trust-portal.md)。
 
 ## <a name="what-happens-if-i-cancel-a-subscription"></a>如果取消订阅会发生什么情况？
 
@@ -78,7 +78,7 @@ ms.locfileid: "50741353"
   
 - **为订阅启用定期计费**。
 
-  - 如果已打开 **定期计费**，则无需执行任何操作。 系统自动对你的订阅计费，并且根据你当前的缴费频率，向你额外收取一年或一个月的费用。 如果由于某种原因关闭了 **定期计费**，可随时[重新开启定期计费](renew-your-subscription.md)。
+  - 如果已打开 **定期计费**，则无需执行任何操作。 系统自动对你的订阅计费，并且根据你当前的缴费频率，向你额外收取一年或一个月的费用。 如果由于某种原因关闭了 **定期计费**，可随时 [重新开启定期计费](renew-your-subscription.md)。
 
   - 如果通过预付卡购买了 Microsoft 365 商业应用版，则可以为你的订阅[打开定期计费](renew-your-subscription.md)。
 
@@ -102,7 +102,7 @@ ms.locfileid: "50741353"
   
 - **管理订阅的定期计费**。
 
-  - 如果已打开 **定期计费**，则无需执行任何操作。 系统将自动对你的订阅计费，并且将根据你当前的付款频率，向你另外收取一年或一个月的费用。 如果由于某种原因关闭了 **定期计费**，可随时[重新开启定期计费](renew-your-subscription.md)。
+  - 如果已打开 **定期计费**，则无需执行任何操作。 系统将自动对你的订阅计费，并且将根据你当前的付款频率，向你另外收取一年或一个月的费用。 如果由于某种原因关闭了 **定期计费**，可随时 [重新开启定期计费](renew-your-subscription.md)。
 
   - 如果通过预付卡购买了 Microsoft 365 商业应用版，则可以为你的订阅[打开定期计费](renew-your-subscription.md)。
 
@@ -124,7 +124,7 @@ ms.locfileid: "50741353"
 
 ::: moniker range="o365-21vianet"
   
-- **续订订阅。** 如果已打开 **定期计费**，则无需执行任何操作。 系统将自动对你的订阅计费，并且将根据你当前的付款频率，向你另外收取一年或一个月的费用。 如果由于某种原因关闭了 **定期计费**，可随时[重新开启定期计费](renew-your-subscription.md)。
+- **续订订阅。** 如果已打开 **定期计费**，则无需执行任何操作。 系统将自动对你的订阅计费，并且将根据你当前的付款频率，向你另外收取一年或一个月的费用。 如果由于某种原因关闭了 **定期计费**，可随时 [重新开启定期计费](renew-your-subscription.md)。
 
 - **让订阅过期。** 如果使用信用卡或发票支付，而又不想继续订阅，请将 [“定时计费”关闭](renew-your-subscription.md)。 你的订阅将在到期日失效，可以忽略所有相关的邮件通知。
 
@@ -210,13 +210,13 @@ ms.locfileid: "50741353"
 
 ::: moniker range="o365-worldwide"
 
-- **购买 Microsoft 365。** 试用版到期时，将进入宽限期，再向你提供 30 天 (对于大多数国家和地区中的大多数订阅如此) 时间考虑产品购买Microsoft 365。 若要了解如何将试用版转换为付费订阅，请参阅[购买 Microsoft 365 商业试用版](../buy-a-subscription-from-your-free-trial.md)。
+- **购买 Microsoft 365。** 试用版到期时，将进入宽限期，再向你提供 30 天 (对于大多数国家和地区中的大多数订阅如此) 时间考虑产品购买Microsoft 365。 若要了解如何将试用版转换为付费订阅，请参阅[购买 Microsoft 365 商业试用版](../try-or-buy-microsoft-365.md)。
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-- **购买 Microsoft 365。** 试用版到期时，将进入宽限期，再向你提供 30 天 (对于大多数国家和地区中的大多数订阅如此) 时间考虑产品购买Microsoft 365。 若要了解如何将试用版转换为付费订阅，请参阅[购买 Microsoft 365 商业试用版](../buy-a-subscription-from-your-free-trial.md)。
+- **购买 Microsoft 365。** 试用版到期时，将进入宽限期，再向你提供 30 天 (对于大多数国家和地区中的大多数订阅如此) 时间考虑产品购买Microsoft 365。 若要了解如何将试用版转换为付费订阅，请参阅[购买 Microsoft 365 商业试用版](../try-or-buy-microsoft-365.md)。
 
 ::: moniker-end
 
@@ -235,7 +235,6 @@ ms.locfileid: "50741353"
 
 ## <a name="related-content"></a>相关内容 
 
-[取消订阅](https://docs.microsoft.com/microsoft-365/commerce/subscriptions/cancel-your-subscription) (文章)\
-[续订 Microsoft 365 商业版](https://docs.microsoft.com/microsoft-365/commerce/subscriptions/renew-your-subscription) (文章)\
-[重新激活订阅](https://docs.microsoft.com/microsoft-365/commerce/subscriptions/reactivate-your-subscription) (文章)
-
+[取消订阅](./cancel-your-subscription.md) (文章)\
+[续订 Microsoft 365 商业版](./renew-your-subscription.md) (文章)\
+[重新激活订阅](./reactivate-your-subscription.md) (文章)

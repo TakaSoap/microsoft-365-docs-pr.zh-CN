@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: 审核日志保留策略是 Microsoft 365 中新增的高级审核功能的一部分。 通过审核日志保留策略，可指定组织中审核日志的保留时间。
-ms.openlocfilehash: fd7e5dc37daad220257b4203679c6bb765140385
-ms.sourcegitcommit: 88ab08c0fa1acbc9e066009e131b9f2b0d506c64
+ms.openlocfilehash: 53449b6b83373eb2f749a4547845866dbea4a2af
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "50712042"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50922848"
 ---
 # <a name="manage-audit-log-retention-policies"></a>管理审核日志保留策略
 
@@ -104,7 +104,7 @@ Microsoft 365 中的高级审核功能为所有组织提供默认审核日志保
 
 
 > [!IMPORTANT]
-> 如果使用 **New UnifiedAuditLogRetentionPolicy** cmdlet，则可以为仪表板中“**创建审核保留策略**”工具中不可用的记录类型或活动创建审核日志保留策略。 在这种情况下，你将无法从“**审核保留策略**”仪表板编辑策略（例如，更改保留期或添加和删除活动）。 只能在合规中心中查看和删除策略。 若要编辑策略，必须在安全与合规中心 PowerShell 中使用 [Set-UnifiedAuditLogRetentionPolicy](https://docs.microsoft.com/powershell/module/exchange/set-unifiedauditlogretentionpolicy) cmdlet。<br/><br/>**提示**：对于必须使用 PowerShell 编辑的策略，浮出页面顶部会显示一条消息。
+> 如果使用 **New UnifiedAuditLogRetentionPolicy** cmdlet，则可以为仪表板中“**创建审核保留策略**”工具中不可用的记录类型或活动创建审核日志保留策略。 在这种情况下，你将无法从“**审核保留策略**”仪表板编辑策略（例如，更改保留期或添加和删除活动）。 只能在合规中心中查看和删除策略。 若要编辑策略，必须在安全与合规中心 PowerShell 中使用 [Set-UnifiedAuditLogRetentionPolicy](/powershell/module/exchange/set-unifiedauditlogretentionpolicy) cmdlet。<br/><br/>**提示**：对于必须使用 PowerShell 编辑的策略，浮出页面顶部会显示一条消息。
 
 ### <a name="delete-policies-in-the-dashboard"></a>在仪表板中删除策略
 
@@ -118,7 +118,7 @@ Microsoft 365 中的高级审核功能为所有组织提供默认审核日志保
 
 请按照以下步骤在 PowerShell 中创建审核日志保留策略：
 
-1. [连接到安全与合规中心 PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell)。
+1. [连接到安全与合规中心 PowerShell](/powershell/exchange/connect-to-scc-powershell)。
 
 2. 运行以下命令以创建审核日志保留策略。
 
@@ -142,11 +142,11 @@ Microsoft 365 中的高级审核功能为所有组织提供默认审核日志保
 New-UnifiedAuditLogRetentionPolicy -Name "SixMonth retention for admin logons" -RecordTypes AzureActiveDirectoryStsLogon -Operations UserLoggedIn -UserIds admin@contoso.onmicrosoft.com -RetentionDuration SixMonths -Priority 25
 ```
 
-有关详细信息，请参阅 [New-UnifiedAuditLogRetentionPolicy](https://docs.microsoft.com/powershell/module/exchange/new-unifiedauditlogretentionpolicy)。
+有关详细信息，请参阅 [New-UnifiedAuditLogRetentionPolicy](/powershell/module/exchange/new-unifiedauditlogretentionpolicy)。
 
 ### <a name="view-policies-in-powershell"></a>在 PowerShell 中查看策略
 
-使用安全与合规中心 PowerShell 中的 [Get-UnifiedAuditLogRetentionPolicy](https://docs.microsoft.com/powershell/module/exchange/get-unifiedauditlogretentionpolicy) cmdlet 查看审核日志保留策略。
+使用安全与合规中心 PowerShell 中的 [Get-UnifiedAuditLogRetentionPolicy](/powershell/module/exchange/get-unifiedauditlogretentionpolicy) cmdlet 查看审核日志保留策略。
 
 下面是用于显示组织中所有审核日志保留策略的设置的示例命令。 此命令从最高优先级到最低优先级对策略进行排序。
 
@@ -159,11 +159,11 @@ Get-UnifiedAuditLogRetentionPolicy | Sort-Object -Property Priority -Descending 
 
 ### <a name="edit-policies-in-powershell"></a>在 PowerShell 中编辑策略
 
-使用安全与合规中心 PowerShell 中的 [Set-UnifiedAuditLogRetentionPolicy](https://docs.microsoft.com/powershell/module/exchange/set-unifiedauditlogretentionpolicy) cmdlet 编辑现有审核日志保留策略。
+使用安全与合规中心 PowerShell 中的 [Set-UnifiedAuditLogRetentionPolicy](/powershell/module/exchange/set-unifiedauditlogretentionpolicy) cmdlet 编辑现有审核日志保留策略。
 
 ### <a name="delete-policies-in-powershell"></a>在 PowerShell 中删除策略
 
-使用安全与合规中心 PowerShell 中的 [Remove-UnifiedAuditLogRetentionPolicy](https://docs.microsoft.com/powershell/module/exchange/remove-unifiedauditlogretentionpolicy) cmdlet 删除审核日志保留策略。 从组织中删除策略最长可能需要 30 分钟。
+使用安全与合规中心 PowerShell 中的 [Remove-UnifiedAuditLogRetentionPolicy](/powershell/module/exchange/remove-unifiedauditlogretentionpolicy) cmdlet 删除审核日志保留策略。 从组织中删除策略最长可能需要 30 分钟。
 
 ## <a name="more-information"></a>详细信息
 

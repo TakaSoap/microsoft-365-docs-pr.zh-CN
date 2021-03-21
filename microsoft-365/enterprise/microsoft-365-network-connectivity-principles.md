@@ -17,12 +17,12 @@ f1.keywords:
 - NOCSH
 description: 本文提供了有关安全优化 Microsoft 365 网络连接的最新指南。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a6f104f53abd0a9aa2376b09c93af96d7f8178e8
-ms.sourcegitcommit: d3ca8021f7da00a474ac14aac5f1358204a848f2
+ms.openlocfilehash: e0391133721270c0fdfb288b5d26ab23f301a844
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49519735"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50923286"
 ---
 # <a name="microsoft-365-network-connectivity-principles"></a>Microsoft 365 网络连接原则
 
@@ -228,7 +228,7 @@ Microsoft 提供了一系列 Microsoft 365 安全功能，并提供了采用安�
   - 确保 Microsoft 365 流量的本地出口
 - 可按照[增量优化](microsoft-365-network-connectivity-principles.md#BKMK_IncOpt)章节中的说明逐步解决改进。 某些优化技术可提供更好的成本/收益率，具体取决于你的网络体系结构，并且应选择最适合你组织的优化。
 
-有关 Microsoft 365 安全性和合规性的详细信息，请参阅文章 [Microsoft 365 安全中心](https://docs.microsoft.com/microsoft-365/security)和 [Microsoft 365 合规中心](https://docs.microsoft.com/microsoft-365/compliance)。
+有关 Microsoft 365 安全性和合规性的详细信息，请参阅文章 [Microsoft 365 安全中心](../security/index.yml)和 [Microsoft 365 合规中心](../compliance/index.yml)。
   
 ## <a name="incremental-optimization"></a>增量优化
 <a name="BKMK_IncOpt"> </a>

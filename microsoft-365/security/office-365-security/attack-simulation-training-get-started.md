@@ -20,12 +20,12 @@ ms.custom:
 description: 管理员可以了解如何使用攻击模拟培训在 Microsoft 365 E5 或 Microsoft Defender for Office 365 计划 2 组织中运行模拟网络钓鱼和密码攻击。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 38e16ecd8185b9e8542f58613790585b5aab73ee
-ms.sourcegitcommit: 8b1bd7ca8cd81e4270f0c1e06d2b6ca81804a6aa
+ms.openlocfilehash: 6e344153ef433bc13b16136e584ec4da73fcef6a
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "50820230"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50921344"
 ---
 # <a name="get-started-using-attack-simulation-training"></a>开始使用攻击模拟培训
 
@@ -40,7 +40,7 @@ ms.locfileid: "50820230"
 
 - 若要打开 Microsoft 安全中心，请转到 <https://security.microsoft.com/> 。 攻击模拟培训位于电子邮件和 **协作** \> **攻击模拟培训中**。 若要直接转到攻击模拟培训，请打开 <https://security.microsoft.com/attacksimulator> 。
 
-- 有关不同 Microsoft 365 订阅中攻击模拟培训的可用性详细信息，请参阅 [Microsoft Defender for Office 365 服务说明](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)。
+- 有关不同 Microsoft 365 订阅中攻击模拟培训的可用性详细信息，请参阅 [Microsoft Defender for Office 365 服务说明](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)。
 
 - 您需在安全与合规中心或 Azure Active Directory &分配权限，然后才能执行本文中的过程。 具体来说，你需要是组织管理、安全 **管理员** 或以下角色之一的成员： 
   - **攻击模拟器管理员**：创建和管理攻击模拟活动的所有方面。

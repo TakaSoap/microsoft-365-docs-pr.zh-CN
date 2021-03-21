@@ -21,12 +21,12 @@ ms.reviewer: sstewart
 search.appverid:
 - MET150
 description: 了解如何使用 SharePoint Online 中包含的工具优化 SharePoint Online 新式网站页面中的图像。
-ms.openlocfilehash: 09122dfd0bc832cf9a09cfb05bf0540e323797d9
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: a4f2def86e1378a9fb76ae9ecbe6a55da75ecffc
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46688078"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50923012"
 ---
 # <a name="optimize-images-in-sharepoint-online-modern-site-pages"></a>在 SharePoint Online 新式网站页面中优化图像
 
@@ -35,7 +35,7 @@ ms.locfileid: "46688078"
 有关在经典发布网站中优化图像的信息，请参阅 [SharePoint Online 的图像优化](image-optimization-for-sharepoint-online.md)。
 
 >[!NOTE]
->要详细了解 SharePoint Online 新式门户中的性能，请参阅[新式 SharePoint 体验中的性能](https://docs.microsoft.com/sharepoint/modern-experience-performance)。
+>要详细了解 SharePoint Online 新式门户中的性能，请参阅[新式 SharePoint 体验中的性能](/sharepoint/modern-experience-performance)。
 
 ## <a name="use-the-page-diagnostics-for-sharepoint-tool-to-analyze-image-optimization"></a>使用适用于 SharePoint 的页面诊断工具分析图像优化
 
@@ -48,7 +48,7 @@ ms.locfileid: "46688078"
 
 可能的结果包括：
 
-- **需要注意**（红色）：页面包含**一个或多个**大小超过 300KB 的图像
+- **需要注意**（红色）：页面包含 **一个或多个** 大小超过 300KB 的图像
 - **不需要执行任何操作**（绿色）：页面不包含大小超过 300KB 的图像
 
 如果“**检测到大图像**”结果显示在结果的“**需要注意**”部分，则可以单击结果以查看其他详细信息。
@@ -72,7 +72,7 @@ ms.locfileid: "46688078"
 
 [优化 Office 365 性能](tune-microsoft-365-performance.md)
 
-[新式 SharePoint 体验中的性能](https://docs.microsoft.com/sharepoint/modern-experience-performance)
+[新式 SharePoint 体验中的性能](/sharepoint/modern-experience-performance)
 
 [内容分发网络](content-delivery-networks.md)
 
