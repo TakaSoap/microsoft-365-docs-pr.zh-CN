@@ -23,7 +23,7 @@
     - name: 部署
       items:
         - name: 添加域
-          href: 'https://docs.microsoft.com/microsoft-365/admin/setup/add-domain'
+          href: ../admin/setup/add-domain.md
         - name: 配置要跳过的终结点
           items:
             - name: Office 365 IP 地址和 URL Web 服务
@@ -49,7 +49,7 @@
             - name: 面向中国用户的 Microsoft 365 优化
               href: microsoft-365-networking-china.md
             - name: 使用本机 Windows 10 VPN 客户端为远程工作者优化 Microsoft 365 流量
-              href: 'https://docs.microsoft.com/windows/security/identity-protection/vpn/vpn-office-365-optimization'
+              href: /windows/security/identity-protection/vpn/vpn-office-365-optimization
         - name: 适用于 Office 365 的 ExpressRoute
           href: azure-expressroute.md
           items:
@@ -126,7 +126,7 @@
             - name: 单一登录
               href: microsoft-365-client-support-single-sign-on.md
             - name: 在基本移动安全性和 Intune 之间进行选择
-              href: 'https://docs.microsoft.com/office365/securitycompliance/choose-between-mdm-and-intune'
+              href: /office365/securitycompliance/choose-between-mdm-and-intune
         - name: 混合新式验证
           items:
             - name: 使用 Skype for Business Server 和 Exchange Server 的先决条件
@@ -147,13 +147,13 @@
                 - name: 从 Office 2007 服务器和客户端进行升级
                   href: upgrade-from-office-2007-servers-and-products.md
                 - name: Office 2007 桌面版
-                  href: 'https://docs.microsoft.com/DeployOffice/endofsupport/office-2007-end-support-roadmap'
+                  href: /DeployOffice/endofsupport/office-2007-end-support-roadmap
                 - name: Exchange 2007
                   href: exchange-2007-end-of-support.md
                 - name: SharePoint 2007
                   href: sharepoint-2007-end-of-support.md
                 - name: Office Communications Server
-                  href: 'https://docs.microsoft.com/skypeforbusiness/plan-your-deployment/upgrade'
+                  href: /skypeforbusiness/plan-your-deployment/upgrade
                 - name: PerformancePoint Server 2007
                   href: pps-2007-end-of-support.md
                 - name: Project Server 2007
@@ -163,13 +163,13 @@
                 - name: 从 Office 2010 服务器和客户端进行升级
                   href: upgrade-from-office-2010-servers-and-products.md
                 - name: Office 2010 桌面版
-                  href: 'https://docs.microsoft.com/DeployOffice/endofsupport/office-2010-end-support-roadmap'
+                  href: /DeployOffice/endofsupport/office-2010-end-support-roadmap
                 - name: Exchange 2010
                   href: exchange-2010-end-of-support.md
                 - name: SharePoint 2010
                   href: upgrade-from-sharepoint-2010.md
                 - name: Lync Server 2010
-                  href: 'https://docs.microsoft.com/skypeforbusiness/plan-your-deployment/upgrade'
+                  href: /skypeforbusiness/plan-your-deployment/upgrade
                 - name: Project Server 2010
                   href: project-server-2010-end-of-support.md
         - name: Microsoft 365 中的租户隔离
@@ -178,9 +178,9 @@
             - name: Azure Active Directory 中的隔离和访问控制
               href: microsoft-365-isolation-in-azure-active-directory.md
             - name: 监视和测试租户边界
-              href: microsoft-365-monitoring-and-testing.md
+              href: /compliance/assurance/assurance-monitoring-and-testing
             - name: 资源限制
-              href: microsoft-365-resource-limits.md
+              href: /compliance/assurance/assurance-resource-limits
             - name: 隔离和访问控制
               href: microsoft-365-isolation-in-microsoft-365.md
             - name: “搜索”中的租户隔离
@@ -192,7 +192,7 @@
     - name: 部署
       items:
         - name: 添加域
-          href: 'https://docs.microsoft.com/microsoft-365/admin/setup/add-domain'
+          href: ../admin/setup/add-domain.md
     - name: 管理
       items:
         - name: Microsoft 365 服务运行状况
@@ -321,7 +321,7 @@
                 - name: 概述
                   href: hybrid-solutions.md
                 - name: 将 Azure Active Directory 用于 SharePoint Server 2016 身份验证
-                  href: using-azure-ad-for-sharepoint-server-authentication.md
+                  href: /azure/active-directory/saas-apps/sharepoint-on-premises-tutorial
                 - name: 将本地网络连接到 Azure 虚拟网络
                   href: connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md
                 - name: 在 Azure IaaS 中部署目录同步服务器
@@ -386,13 +386,13 @@
             - name: 从 Office 2007 服务器和客户端进行升级
               href: upgrade-from-office-2007-servers-and-products.md
             - name: Office 2007 桌面版
-              href: 'https://docs.microsoft.com/DeployOffice/office-2007-end-support-roadmap'
+              href: /DeployOffice/office-2007-end-support-roadmap
             - name: Exchange 2007
               href: exchange-2007-end-of-support.md
             - name: SharePoint 2007
               href: sharepoint-2007-end-of-support.md
             - name: Office Communications Server
-              href: 'https://docs.microsoft.com/skypeforbusiness/plan-your-deployment/upgrade'
+              href: /skypeforbusiness/plan-your-deployment/upgrade
             - name: PerformancePoint Server 2007
               href: pps-2007-end-of-support.md
             - name: Project Server 2007
@@ -402,13 +402,13 @@
             - name: 从 Office 2010 服务器和客户端进行升级
               href: upgrade-from-office-2010-servers-and-products.md
             - name: Office 2010 桌面版
-              href: 'https://docs.microsoft.com/DeployOffice/office-2010-end-support-roadmap'
+              href: /DeployOffice/office-2010-end-support-roadmap
             - name: Exchange 2010
               href: exchange-2010-end-of-support.md
             - name: SharePoint 2010
               href: upgrade-from-sharepoint-2010.md
             - name: Lync Server 2010
-              href: 'https://docs.microsoft.com/skypeforbusiness/plan-your-deployment/upgrade'
+              href: /skypeforbusiness/plan-your-deployment/upgrade
             - name: Project Server 2010
               href: project-server-2010-end-of-support.md
 - name: 合规性
@@ -424,13 +424,13 @@
         - name: 准备就绪
           href: configure-services-and-applications.md
         - name: Exchange Online
-          href: 'https://docs.microsoft.com/Exchange/exchange-online'
+          href: /Exchange/exchange-online
         - name: SharePoint
-          href: 'https://docs.microsoft.com/sharepoint/sharepoint-online'
+          href: /sharepoint/sharepoint-online
         - name: Skype for Business
-          href: 'https://docs.microsoft.com/SkypeForBusiness/skype-for-business-online'
+          href: /SkypeForBusiness/skype-for-business-online
         - name: Microsoft Teams
-          href: 'https://docs.microsoft.com/MicrosoftTeams/Teams-overview'
+          href: /MicrosoftTeams/Teams-overview
         - name: Yammer
           href: 'https://support.office.com/article/e1464355-1f97-49ac-b2aa-dd320b179dbe'
         - name: 激活权限管理
@@ -438,7 +438,7 @@
         - name: 配置发布选项
           href: 'https://support.office.com/article/365-3b3adfa4-1777-4ff0-b606-fb8732101f47'
         - name: 培训用户
-          href: 'https://docs.microsoft.com/office365/admin/admin-overview/get-started-with-office-365#training-resources-for-your-users'
+          href: /office365/admin/admin-overview/get-started-with-office-365#training-resources-for-your-users
     - name: 管理
       items:
         - name: 如何查看服务运行状况
@@ -446,13 +446,13 @@
         - name: 支持选项
           href: 'https://support.office.com/article/Contact-support-for-business-products-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b'
         - name: Exchange Online
-          href: 'https://docs.microsoft.com/Exchange/exchange-online'
+          href: /Exchange/exchange-online
         - name: SharePoint
           href: 'https://support.office.com/article/79eb0420-8cbd-4bcb-a90b-ddc7d3ab4b3a'
         - name: Skype for Business
-          href: 'https://docs.microsoft.com/SkypeForBusiness/skype-for-business-online'
+          href: /SkypeForBusiness/skype-for-business-online
         - name: Microsoft Teams
-          href: 'https://docs.microsoft.com//MicrosoftTeams/quality-of-experience-review-guide'
+          href: //MicrosoftTeams/quality-of-experience-review-guide
         - name: Yammer
           href: 'https://support.office.com/article/e1464355-1f97-49ac-b2aa-dd320b179dbe'
         - name: 性能和优化
@@ -473,21 +473,21 @@
             - name: 优化 Skype for Business Online 性能
               href: tune-skype-for-business-online-performance.md
             - name: 优化 Project Online 性能
-              href: 'https://docs.microsoft.com/ProjectOnline/tune-project-online-performance'
+              href: /ProjectOnline/tune-project-online-performance
             - name: 性能故障排除计划
               href: performance-troubleshooting-plan.md
 - name: Windows 10
-  href: 'https://docs.microsoft.com/windows/deployment/'
+  href: /windows/deployment/
 - name: Microsoft 365 企业应用版
-  href: 'https://docs.microsoft.com/deployoffice/deployment-guide-microsoft-365-apps'
+  href: /deployoffice/deployment-guide-microsoft-365-apps
 - name: Surface 设备
-  href: 'https://docs.microsoft.com/surface/deploy'
+  href: /surface/deploy
 - name: 设备管理
   items:
     - name: 路线图
       href: device-management-roadmap-microsoft-365.md
 - name: Microsoft Edge
-  href: 'https://docs.microsoft.com/deployedge/deploy-edge-plan-deployment'
+  href: /deployedge/deploy-edge-plan-deployment
 - name: 部署和更新频道示例配置
   items:
     - name: 概述
@@ -568,7 +568,7 @@
         - name: 管理 SharePoint Online 网站用户组
           href: manage-sharepoint-site-groups-with-powershell.md
     - name: 管理 Exchange Online
-      href: 'https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell'
+      href: /powershell/exchange/connect-to-exchange-online-powershell
     - name: 使用 PowerShell 将电子邮件迁移到 Microsoft 365
       href: use-powershell-for-email-migration-to-microsoft-365.md
       items:
@@ -586,11 +586,11 @@
         - name: 使用 Windows PowerShell 为委派访问权限合作伙伴将域添加到客户端租赁
           href: add-a-domain-to-a-client-tenancy-with-windows-powershell-for-delegated-access-pe.md
         - name: 通过远程 Windows PowerShell 为委派访问权限合作伙伴连接到 Exchange Online
-          href: 'https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell'
+          href: /powershell/exchange/connect-to-exchange-online-powershell
         - name: 通过 Windows PowerShell 为委派访问权限合作伙伴检索客户报告数据
           href: retrieve-customer-tenant-reporting-data-with-windows-powershell-for-delegated-ac.md
     - name: 管理 Microsoft Teams
-      href: 'https://docs.microsoft.com/microsoftteams/teams-powershell-install'
+      href: /microsoftteams/teams-powershell-install
     - name: 管理 Skype for Business Online
       href: manage-skype-for-business-online-with-microsoft-365-powershell.md
       items:
@@ -678,15 +678,15 @@
 - name: Microsoft 365 体系结构和解决方案
   href: ../solutions/index.yml
 - name: 企业业务连续性管理 (EBCM) 和云服务
-  href: ebcm-understanding-ebcm-with-cloud-services.md
+  href: /compliance/assurance/assurance-understanding-ebcm-with-cloud-services
   items:
     - name: 客户和云合作伙伴 EBCM 职责
-      href: ebcm-customer-and-cloud-partner-ebcm-responsibilities.md
+      href: /compliance/assurance/assurance-customer-and-cloud-partner-ebcm-responsibilities
     - name: Microsoft 365 云服务灵活性
-      href: ebcm-m365-service-resiliency.md
+      href: /compliance/assurance/assurance-m365-service-resiliency
     - name: 开发连续性计划
-      href: ebcm-developing-your-ebcm-plan.md
+      href: /compliance/assurance/assurance-developing-your-ebcm-plan
     - name: 服务事件缓解方案
-      href: ebcm-microsoft-365-mitigations.md
+      href: /compliance/assurance/assurance-microsoft-365-mitigations
 - name: Microsoft 365 商业版
   href: ../admin/index.yml
