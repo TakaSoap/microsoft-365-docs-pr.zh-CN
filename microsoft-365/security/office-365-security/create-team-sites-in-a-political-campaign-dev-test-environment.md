@@ -19,12 +19,12 @@ ms.assetid: c2112ce8-1c4b-424f-b200-59e161db2d21
 description: 摘要：在政治宣传活动开发/测试环境中创建公共、专用、敏感和高度机密的 SharePoint Online 团队网站。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1c12970fb3ff6d5616201ff153085d411068d11c
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: a8a7002b7d482c987f77907787c5233dcb8d11e9
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50288391"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50929380"
 ---
 # <a name="create-team-sites-in-a-political-campaign-devtest-environment"></a>在政治宣传活动开发/测试环境中创建团队网站
 
@@ -370,7 +370,7 @@ ms.locfileid: "50288391"
 
 20. 在“**查看设置**”窗格中，单击“**创建**”，然后单击“**关闭**”。
 
-请按照[使用 Microsoft 365 管理中心激活 Azure RMS](https://docs.microsoft.com/information-protection/deploy-use/activate-office365) 中的说明执行操作。
+请按照[使用 Microsoft 365 管理中心激活 Azure RMS](/information-protection/deploy-use/activate-office365) 中的说明执行操作。
 
 接下来，通过执行以下步骤，使用新作用域内策略以及保护和权限的子标签来配置 Azure 信息保护：
 
@@ -416,7 +416,7 @@ ms.locfileid: "50288391"
 
 现在，可以在这四个网站中创建文档，并使用各种用户帐户进行访问测试。
 
-若要使用 Azure 信息保护和新标签保护文档，必须在测试计算机上 [安装 Azure 信息保护客户端](https://docs.microsoft.com/information-protection/rms-client/install-client-app)，从管理中心安装 Office，然后使用试用订阅的“**高级和策略人员**”组中的帐户从 Microsoft Word 登录。
+若要使用 Azure 信息保护和新标签保护文档，必须在测试计算机上 [安装 Azure 信息保护客户端](/information-protection/rms-client/install-client-app)，从管理中心安装 Office，然后使用试用订阅的“**高级和策略人员**”组中的帐户从 Microsoft Word 登录。
 
 ## <a name="see-also"></a>另请参阅
 

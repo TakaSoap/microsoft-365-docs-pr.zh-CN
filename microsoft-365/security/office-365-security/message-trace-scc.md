@@ -14,12 +14,12 @@ ms.custom:
 description: 管理员可以使用安全与合规中心&跟踪来了解邮件发生了什么。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 9c3f7e4bc9624b9fae48074203da525d7a504a12
-ms.sourcegitcommit: 06d9e056eabfbac8fafe66cc32907b33d4ae8253
+ms.openlocfilehash: 587e111a71b321c131d0e63a0510ec7e1afa289a
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50741571"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50929392"
 ---
 # <a name="message-trace-in-the-security--compliance-center"></a>安全与合规中心内的消息跟踪
 
@@ -40,7 +40,7 @@ ms.locfileid: "50741571"
 >
 > - 若要执行邮件跟踪，您必须是组织管理、合规性管理或技术支持角色组的成员。 有关详细信息，请参阅[安全与合规中心中的权限](permissions-in-the-security-and-compliance-center.md)。
 >
-> - 结果中显示的邮件的最大数量取决于您选择的报告类型 ("选择报告类型"部分了解详细信息) 。 [](#choose-report-type) Exchange Online PowerShell 或独立 EOP PowerShell 中的 [Get-HistoricalSearch](https://docs.microsoft.com/powershell/module/exchange/get-historicalsearch) cmdlet 在结果中返回所有邮件。
+> - 结果中显示的邮件的最大数量取决于您选择的报告类型 ("选择报告类型"部分了解详细信息) 。 [](#choose-report-type) Exchange Online PowerShell 或独立 EOP PowerShell 中的 [Get-HistoricalSearch](/powershell/module/exchange/get-historicalsearch) cmdlet 在结果中返回所有邮件。
 
 ## <a name="open-message-trace"></a>打开邮件跟踪
 
@@ -231,7 +231,7 @@ You can export the results after you've selected one or more rows by clicking **
   > 
   > - 成功传递的无事件邮件将在邮件 **跟踪** 中生成多个事件条目。
   > 
-  > - 此列表并不详尽。 有关更多事件的说明，请参阅 [邮件跟踪日志中的事件类型](https://docs.microsoft.com/Exchange/mail-flow/transport-logs/message-tracking#event-types-in-the-message-tracking-log)。 请注意，此链接是Exchange Server (Exchange) 主题。
+  > - 此列表并不详尽。 有关更多事件的说明，请参阅 [邮件跟踪日志中的事件类型](/Exchange/mail-flow/transport-logs/message-tracking#event-types-in-the-message-tracking-log)。 请注意，此链接是Exchange Server (Exchange) 主题。
 
 - **详细信息 ：** 此部分包含以下详细信息：
 
@@ -271,7 +271,7 @@ You can export the results after you've selected one or more rows by clicking **
 
 - **方向** 性：指示邮件是 (1) 发送到组织的入站邮件，还是从组织 (2) 出站邮件。
 
-- **connector_id**：源连接器或目标连接器的名称。 有关 Exchange Online 中的连接器详细信息，请参阅 [在 Office 365](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow)中配置使用连接器的邮件流。
+- **connector_id**：源连接器或目标连接器的名称。 有关 Exchange Online 中的连接器详细信息，请参阅 [在 Office 365](/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow)中配置使用连接器的邮件流。
 
 - **delivery_priority：** <sup>*</sup> 邮件是使用高、**低还是** 普通优先级 **发送**。
 
@@ -413,7 +413,7 @@ Available (completed) Extended reports are available in the **Downloadable repor
 |---|---|
 |`ETR|ruleId=<guid>`|匹配的规则 ID。|
 |`St=<datetime>`|规则匹配发生时的日期和时间（UTC）。|
-|`Action=<ActionDefinition>`|应用的操作。 有关可用操作的列表，请参阅[Mail flow rule actions in Exchange Online。](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions)|
+|`Action=<ActionDefinition>`|应用的操作。 有关可用操作的列表，请参阅[Mail flow rule actions in Exchange Online。](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions)|
 |`Mode=<Mode>`|规则模式。 有效值为：<ul><li>**强制**：将强制执行对规则执行的所有操作。</li><li>**使用策略提示进行测试：** 将发送任何策略提示操作，但不执行其他强制操作。</li><li>**不带策略提示的测试**：操作将列在日志文件，但不会以任何方式通知发件人，并且不会对强制操作采取行动。</li></ul>|
 |
 

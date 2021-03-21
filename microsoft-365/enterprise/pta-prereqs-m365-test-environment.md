@@ -14,22 +14,22 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 创建一个 Microsoft 365 环境来测试标识和设备访问情况，其中内附传递身份验证的先决条件。
-ms.openlocfilehash: 71ba116ee45f031b156934e0924a0c3d460110d5
-ms.sourcegitcommit: a62ac3c01ba700a51b78a647e2301f27ac437c5a
+ms.openlocfilehash: 3d7b92bb064ee1b008ac98f836aff6e0287739af
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/12/2021
-ms.locfileid: "50233758"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50928996"
 ---
 # <a name="identity-and-device-access-prerequisites-for-pass-through-authentication-in-your-microsoft-365-test-environment"></a>Microsoft 365 测试环境中传递身份验证的标识和设备访问先决条件
 
 *本测试实验室指南仅适用于 Microsoft 365 企业版测试环境。*
 
-[标识](../security/office-365-security/microsoft-365-policies-configurations.md) 和设备访问配置是一组配置和条件访问策略，用于保护对 Microsoft 365 企业版中与 Azure Active Directory (Azure AD) 集成的所有服务的访问。
+[](../security/office-365-security/microsoft-365-policies-configurations.md)标识和设备访问配置是一组配置和条件访问策略，用于保护对 Microsoft 365 企业版中与 Azure Active Directory (Azure AD) 集成的所有服务的访问。
 
 本文介绍了可以如何配置 Microsoft 365 测试环境，以使其满足标识和设备访问的[传递身份验证先决条件配置](../security/office-365-security/identity-access-prerequisites.md#prerequisites)要求。
 
-设置此测试环境有十个阶段：
+设置此测试环境有 10 个阶段：
 
 1. 构建传递身份验证的模拟企业 Microsoft 365 测试环境
 2. 配置 Azure AD 无缝单一登录
@@ -58,7 +58,7 @@ ms.locfileid: "50233758"
 
 首先，确定组织使用的公共 IP 地址或地址范围。
 
-接下来，按照[在 Azure Active Directory 中配置命名位置](https://docs.microsoft.com/azure/active-directory/reports-monitoring/quickstart-configure-named-locations)中的说明将地址或地址范围添加为命名位置。 
+接下来，按照[在 Azure Active Directory 中配置命名位置](/azure/active-directory/reports-monitoring/quickstart-configure-named-locations)中的说明将地址或地址范围添加为命名位置。 
 
 ## <a name="phase-4-configure-password-writeback"></a>阶段 4：配置密码写回服务
 
@@ -90,23 +90,23 @@ ms.locfileid: "50233758"
 
 ## <a name="phase-7-enable-automatic-device-registration-of-domain-joined-windows-computers"></a>阶段 7：启用已加入域的 Windows 计算机的自动设备注册 
 
-按照 [以下说明](https://docs.microsoft.com/azure/active-directory/devices/hybrid-azuread-join-plan) 启用已加入域的 Windows 计算机的自动设备注册。
+按照 [以下说明](/azure/active-directory/devices/hybrid-azuread-join-plan) 启用已加入域的 Windows 计算机的自动设备注册。
 
 ## <a name="phase-8-configure-azure-ad-password-protection"></a>第 8 阶段：配置 Azure AD 密码保护 
 
-按照 [以下说明](https://docs.microsoft.com/azure/active-directory/authentication/concept-password-ban-bad) 阻止已知的弱密码及其变体。
+按照 [以下说明](/azure/active-directory/authentication/concept-password-ban-bad) 阻止已知的弱密码及其变体。
 
-## <a name="phase-9-enable-azure-ad-identity-protection"></a>第 9 阶段：启用 Azure AD 标识保护
+## <a name="phase-9-enable-azure-ad-identity-protection"></a>第 9 阶段：启用 Azure AD Identity Protection
 
 按照[“Azure AD Identity Protection”测试实验室指南的阶段 2](azure-ad-identity-protection-microsoft-365-test-environment.md#phase-2-use-azure-ad-identity-protection) 中的说明操作。 
 
 ## <a name="phase-10-enable-modern-authentication-for-exchange-online-and-skype-for-business-online"></a>第 10 阶段：为 Exchange Online 和 Skype for Business Online 启用新式验证
 
-对于 Exchange Online，请按照[这些说明](https://docs.microsoft.com/Exchange/clients-and-mobile-in-exchange-online/enable-or-disable-modern-authentication-in-exchange-online#enable-or-disable-modern-authentication-in-exchange-online-for-client-connections-in-outlook-2013-or-later)操作。 
+对于 Exchange Online，请按照[这些说明](/Exchange/clients-and-mobile-in-exchange-online/enable-or-disable-modern-authentication-in-exchange-online#enable-or-disable-modern-authentication-in-exchange-online-for-client-connections-in-outlook-2013-or-later)操作。 
 
 对于 Skype for Business Online：
 
-1. 连接到 [Skype for Business Online](https://docs.microsoft.com/SkypeForBusiness/set-up-your-computer-for-windows-powershell/set-up-your-computer-for-windows-powershell)。
+1. 连接到 [Skype for Business Online](/SkypeForBusiness/set-up-your-computer-for-windows-powershell/set-up-your-computer-for-windows-powershell)。
 
 2. 运行以下命令。
 
@@ -124,7 +124,7 @@ ms.locfileid: "50233758"
 
 ## <a name="next-step"></a>后续步骤
 
-使用[常见标识和设备访问策略](identity-access-policies.md)配置基于这些先决条件构建的策略并保护标识和设备。
+使用[常见标识和设备访问策略](../security/office-365-security/identity-access-policies.md)配置基于这些先决条件构建的策略并保护标识和设备。
 
 ## <a name="see-also"></a>另请参阅
 
@@ -136,5 +136,4 @@ ms.locfileid: "50233758"
 
 [Microsoft 365 企业版概述](microsoft-365-overview.md)
 
-[适用于企业的 Microsoft 365 文档](https://docs.microsoft.com/microsoft-365-enterprise/)
-
+[适用于企业的 Microsoft 365 文档](/microsoft-365-enterprise/)

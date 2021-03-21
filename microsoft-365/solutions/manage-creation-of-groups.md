@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 4c46c8cb-17d0-44b5-9776-005fced8e618
 description: 了解如何控制哪些用户可以创建 Microsoft 365 组。
-ms.openlocfilehash: 04c2b6e738ed41f8d4a2bf96716fb74b1d260497
-ms.sourcegitcommit: 8f1721de52dbe3a12c11a0fa5ed0ef5972ca8196
+ms.openlocfilehash: 9c3edf335ce09f04e9b0b538e69fa607a9c34044
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/17/2021
-ms.locfileid: "50838635"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50929152"
 ---
 # <a name="manage-who-can-create-microsoft-365-groups"></a>管理可创建 Microsoft 365 组的人员
 
@@ -63,7 +63,7 @@ ms.locfileid: "50838635"
 - 允许创建组的组的成员
 
 > [!NOTE]
-> 若要 [详细了解如何分配 Azure 许可证，请参阅在 Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/license-users-groups) 门户中分配或删除许可证。
+> 若要 [详细了解如何分配 Azure 许可证，请参阅在 Azure Active Directory](/azure/active-directory/fundamentals/license-users-groups) 门户中分配或删除许可证。
 
 以下人员不需要分配给他们的 Azure AD Premium 或 Azure AD Basic EDU 许可证：
 
@@ -83,19 +83,19 @@ ms.locfileid: "50838635"
 
 4. 完成组设置，添加要能够在组织内创建组的人或其他组。
 
-有关详细说明，请参阅在 [Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/email/create-edit-or-delete-a-security-group)管理中心创建、编辑或删除安全组。
+有关详细说明，请参阅在 [Microsoft 365](../admin/email/create-edit-or-delete-a-security-group.md)管理中心创建、编辑或删除安全组。
 
 ## <a name="step-2-run-powershell-commands"></a>步骤 2：运行 PowerShell 命令
 
-必须使用 Azure [Active Directory PowerShell graph (AzureAD](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2))  (模块名称 **AzureADPreview**) 预览版更改组级别来宾访问设置：
+必须使用 Azure [Active Directory PowerShell graph (AzureAD](/powershell/azure/active-directory/install-adv2))  (模块名称 **AzureADPreview**) 预览版更改组级别来宾访问设置：
 
-- 如果之前未安装任何 Azure AD PowerShell 模块版本，请参阅[安装 Azure AD 模块](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2?view=azureadps-2.0-preview&preserve-view=true)并按照说明安装公共预览版。
+- 如果之前未安装任何 Azure AD PowerShell 模块版本，请参阅[安装 Azure AD 模块](/powershell/azure/active-directory/install-adv2?preserve-view=true&view=azureadps-2.0-preview)并按照说明安装公共预览版。
 
 - 如果已安装 Azure AD PowerShell 模块 (AzureAD) 的 2.0 正式发布版本，则必须通过在 PowerShell 会话中运行 `Uninstall-Module AzureAD` 来卸载它，然后通过运行 `Install-Module AzureADPreview` 来安装预览版。
 
 - 如果已安装预览版，请运行 `Install-Module AzureADPreview`，确保它是此模块的最新版本。
 
-将下面的脚本复制到文本编辑器（如记事本）或 [ISE](https://docs.microsoft.com/powershell/scripting/components/ise/introducing-the-windows-powershell-ise)Windows PowerShell中。
+将下面的脚本复制到文本编辑器（如记事本）或 [ISE](/powershell/scripting/components/ise/introducing-the-windows-powershell-ise)Windows PowerShell中。
 
 将 *\<GroupName\>* 替换为您创建的组的名称。 例如：
 
@@ -109,7 +109,7 @@ ms.locfileid: "50838635"
 
 `.\GroupCreators.ps1`
 
-[，当系统提示时，使用](https://docs.microsoft.com/microsoft-365/enterprise/connect-to-microsoft-365-powershell#step-2-connect-to-azure-ad-for-your-microsoft-365-subscription)管理员帐户登录。
+[，当系统提示时，使用](../enterprise/connect-to-microsoft-365-powershell.md#step-2-connect-to-azure-ad-for-your-microsoft-365-subscription)管理员帐户登录。
 
 ```PowerShell
 $GroupName = "<GroupName>"
@@ -164,7 +164,7 @@ Set-AzureADDirectorySetting -Id $settingsObjectID -DirectorySetting $settingsCop
 请再次与组的成员尝试相同的过程。
 
 > [!NOTE]
-> 如果组的成员无法创建组，请检查他们是否未通过 OWA 邮箱策略 [被阻止](https://go.microsoft.com/fwlink/?linkid=852135)。
+> 如果组的成员无法创建组，请检查他们是否未通过 OWA 邮箱策略 [被阻止](/powershell/module/exchange/set-owamailboxpolicy)。
 
 ## <a name="related-topics"></a>相关主题
 
@@ -172,10 +172,10 @@ Set-AzureADDirectorySetting -Id $settingsObjectID -DirectorySetting $settingsCop
 
 [创建协作管理计划](collaboration-governance-first.md)
 
-[Office 365 PowerShell 入门](https://go.microsoft.com/fwlink/p/?LinkId=808033)
+[Office 365 PowerShell 入门](../enterprise/getting-started-with-microsoft-365-powershell.md)
 
-[在 Azure Active Directory 中设置自助服务组管理](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-self-service-management)
+[在 Azure Active Directory 中设置自助服务组管理](/azure/active-directory/users-groups-roles/groups-self-service-management)
 
-[Set-ExecutionPolicy](https://docs.microsoft.com/powershell/module/microsoft.powershell.security/set-executionpolicy)
+[Set-ExecutionPolicy](/powershell/module/microsoft.powershell.security/set-executionpolicy)
 
-[用于配置组设置的 Azure Active Directory cmdlet](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-settings-cmdlets)
+[用于配置组设置的 Azure Active Directory cmdlet](/azure/active-directory/users-groups-roles/groups-settings-cmdlets)

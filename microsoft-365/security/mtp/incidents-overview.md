@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 7fcbecddd5e8f83e9c78d6db90939fbfc2f2df07
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: de3fba2692f5b6df7c7192c328a3911287cd7ce2
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49929278"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50928720"
 ---
 # <a name="incidents-overview-in-microsoft-365-defender"></a>Microsoft 365 Defender 中的事件概述
 
@@ -37,26 +37,26 @@ ms.locfileid: "49929278"
 **适用于：**
 - Microsoft 365 Defender
 
-> 想要体验 Microsoft 365 Defender？ 可以在[实验室环境中对其进行评估或在](https://aka.ms/mtp-trial-lab)[生产中运行试点项目](https://aka.ms/m365d-pilotplaybook)。
+> 想要体验 Microsoft 365 Defender？ 可以在[实验室环境中评估它或在](./mtp-evaluation.md?ocid=cx-docs-MTPtriallab)[生产中运行你的试验项目](./mtp-pilot.md?ocid=cx-evalpilot)。
 >
 
 
-事件基于相关警报。 当网络中出现恶意事件或活动时，将创建警报。 个别警报提供有关进行中攻击的有价值的线索。 但是，攻击通常使用各种矢量和技术来实施入侵。 将各个线索拼合在一起可能非常困难且耗时。
+事件基于相关警报。 当网络中出现恶意事件或活动时，将创建警报。 个别警报提供有关进行中攻击的有价值的线索。 但是，攻击通常使用各种矢量和技术来实施入侵。 将单个线索分在一起可能充满挑战且耗时。
 
 此简短视频概述了 Microsoft 365 Defender 中的事件。
 <br>
 
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Bzwz?]
 
-事件是相关警报的集合，这些警报是攻击的一部分。 Microsoft 365 Defender 会自动聚合网络中不同设备、用户和邮箱实体中的恶意和可疑事件。 将相关警报分组到事件后，安全防御者可以全面查看攻击。 
+事件是关联警报的集合，这些警报是攻击的一部分。 Microsoft 365 Defender 会自动聚合网络中不同设备、用户和邮箱实体中的恶意和可疑事件。 将相关警报分组到事件中，使安全防御者可以全面查看攻击。 
 
-例如，安全防御者可以看到攻击的开始位置、使用的策略以及攻击已进入网络多远。 他们还可以查看攻击的范围，如受影响的设备、用户和邮箱数量、影响严重，以及受影响实体的其他详细信息。
+例如，安全防御者可以看到攻击的开始位置、使用了什么策略以及攻击已进入网络多远。 他们还可以查看攻击的范围，如受影响的设备、用户和邮箱数量、影响严重，以及受影响实体的其他详细信息。
 
 如果启用，Microsoft 365 Defender 可以通过自动化和人工智能自动调查和解决个别警报。 安全防御者还可以执行其他修正步骤，直接从事件视图解决攻击。 
 
-最近 30 天的事件显示在事件队列中。 从此处，安全防御者可以看到哪些事件应基于风险级别和其他因素确定优先级。 
+最近 30 天的事件显示在事件队列中。 从此处，安全防御者可以了解哪些事件应基于风险级别和其他因素确定优先级。 
 
-安全防御者还可以重命名事件、将其分配给各个分析员、对事件进行分类和添加标记，以提供更好的和自定义的事件管理体验。
+安全防御者还可以重命名事件、将其分配给各个分析员、对事件进行分类和添加标记，以提供更好的且更加自定义的事件管理体验。
 
 
 

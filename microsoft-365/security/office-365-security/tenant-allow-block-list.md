@@ -16,12 +16,12 @@ ms.collection:
 description: 管理员可以了解如何在安全门户的租户允许/阻止列表中配置允许和阻止。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 20e460f4e93f7b87faaead8b87ba561224e38938
-ms.sourcegitcommit: babbba2b5bf69fd3facde2905ec024b753dcd1b3
+ms.openlocfilehash: 2f97308bfc3600e4e85f5ac92d951b12d9a50f24
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50515204"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50928528"
 ---
 # <a name="manage-the-tenant-allowblock-list"></a>管理租户允许/阻止列表
 
@@ -34,19 +34,19 @@ ms.locfileid: "50515204"
 
 > [!NOTE]
 >
-> 本文中介绍的功能在预览版中，可能会更改，并且并非在所有组织中都可用。
+> 本文中所述的功能在预览版中，可能会更改，并且并非在所有组织中都可用。
 >
-> 此时， **你无法** 配置租户允许/阻止列表中的允许项。
+> 目前，你 **无法** 配置租户允许/阻止列表中的允许项。
 
-在具有 Exchange Online 邮箱的 Microsoft 365 组织或具有独立 Exchange Online Protection (EOP) 组织（没有 Exchange Online 邮箱）中，您可能会对 EOP 筛选裁定不一致。 例如，一条好邮件可能标记为错误 (误报) ，或者可能允许错误邮件通过 (误报) 。
+在具有 Exchange Online 邮箱或独立 Exchange Online Protection (EOP) （没有 Exchange Online 邮箱）的 Microsoft 365 组织中，您可能对 EOP 筛选裁定有意见不一致。 例如，一条好邮件可能标记为 (误报) ，或者可能允许错误消息通过 (漏报) 。
 
-安全与合规中心中的租户允许/阻止&提供了一种手动覆盖 Microsoft 365 筛选裁定的方法。 租户允许/阻止列表在邮件流期间和用户单击时使用。 可以指定要始终阻止的 URL 或文件。
+安全与合规中心中的租户允许/阻止&提供了一种手动替代 Microsoft 365 筛选裁定的方法。 租户允许/阻止列表在邮件流期间和用户单击时使用。 您可以指定要始终阻止的 URL 或文件。
 
 本文介绍如何在安全与合规中心或 PowerShell & (Exchange Online PowerShell 中为在 Exchange Online 中拥有邮箱的 Microsoft 365 组织配置租户允许/阻止列表中的条目;适用于没有 Exchange Online 邮箱的组织的独立 EOP PowerShell) 。
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>开始前，有必要了解什么？
 
-- 安全与合规中心的打开网址为 <https://protection.office.com/>。 若要直接转到" **租户允许/阻止列表"** 页，请使用 <https://protection.office.com/tenantAllowBlockList> 。
+- 安全与合规中心的打开网址为 <https://protection.office.com/>。 若要直接转到租户 **允许/阻止列表** 页面，请使用 <https://protection.office.com/tenantAllowBlockList> 。
 
 - 使用文件的 SHA256 哈希值指定文件。 若要在 Windows 中查找文件的 SHA256 哈希值，在命令提示符中运行以下命令：
 
@@ -54,11 +54,11 @@ ms.locfileid: "50515204"
   certutil.exe -hashfile "<Path>\<Filename>" SHA256
   ```
 
-  示例值为 `768a813668695ef2483b2bde7cf5d1b2db0423a0d3e63e498f3ab6f2eb13ea3a` 。 不支持感知哈希 (哈希) 哈希值。
+  示例值为 `768a813668695ef2483b2bde7cf5d1b2db0423a0d3e63e498f3ab6f2eb13ea3a` 。 不支持感知哈希 (pHash) 值。
 
-- 本文稍后的"租户允许/阻止列表"一节的 [URL](#url-syntax-for-the-tenant-allowblock-list) 语法中介绍了可用的 URL 值。
+- 本文稍后的租户允许/阻止列表一节的 [URL](#url-syntax-for-the-tenant-allowblock-list) 语法中介绍了可用的 URL 值。
 
-- 租户允许/阻止列表最多允许 500 个 URL 条目和 500 个文件哈希条目。
+- 租户允许/阻止列表允许最多 500 个 URL 条目和 500 个文件哈希条目。
 
 - 每个条目的最大字符数为：
   - 文件哈希 = 64
@@ -68,48 +68,48 @@ ms.locfileid: "50515204"
 
 - 默认情况下，租户允许/阻止列表中的条目将在 30 天后过期。 可以指定日期或将其设置为永不过期。
 
-- 若要连接到 Exchange Online PowerShell，请参阅[连接到 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)。 若要连接到独立 EOP PowerShell，请参阅[连接到 Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell)。
+- 若要连接到 Exchange Online PowerShell，请参阅[连接到 Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)。 若要连接到独立 EOP PowerShell，请参阅[连接到 Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell)。
 
 - 在 Exchange Online 网站中 **分配** 权限，才能执行本文中的步骤：
-  - 若要在租户允许/阻止列表中添加和删除值，你需要是组织 **管理或****安全管理员角色组** 的成员。
-  - 若要对租户允许/阻止列表进行只读访问，你需要是全局读者或安全读者 **角色组** 的成员。
+  - 若要在租户允许/阻止列表中添加和删除值，你需要是组织管理或安全 **管理员角色****组** 的成员。
+  - 若要对租户允许/阻止列表进行只读访问，你需要是全局读取 **者** 或安全读者 **角色组的成员** 。
 
-  有关详细信息，请参阅 [Exchange Online 中权限](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo)。
+  有关详细信息，请参阅 [Exchange Online 中权限](/exchange/permissions-exo/permissions-exo)。
 
   > [!NOTE]
   > 
   > - 在 Microsoft 365 管理中心将用户添加到相应的 Azure Active Directory 角色后，将为用户提供所需的权限 _和_ Microsoft 365 中其他功能的所需权限。 有关详细信息，请参阅 [关于管理员角色](../../admin/add-users/about-admin-roles.md)。
-  > - [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) 中的 **仅查看组织管理人员** 角色组也提供到该功能的只读访问。
+  > - [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) 中的 **仅查看组织管理人员** 角色组也提供到该功能的只读访问。
 
-## <a name="use-the-security--compliance-center-to-create-url-entries-in-the-tenant-allowblock-list"></a>使用安全&合规中心在租户允许/阻止列表中创建 URL 条目
+## <a name="use-the-security--compliance-center-to-create-url-entries-in-the-tenant-allowblock-list"></a>使用安全&中心在租户允许/阻止列表中创建 URL 条目
 
-有关 URL 条目语法的详细信息，请参阅本文稍后介绍的 ["租户允许/阻止](#url-syntax-for-the-tenant-allowblock-list) 列表"一节的 URL 语法。
+有关 URL 条目的语法的详细信息，请参阅本文稍后介绍的租户 [允许/阻止列表的 URL](#url-syntax-for-the-tenant-allowblock-list) 语法部分。
 
-1. 在安全&，转到 **"威胁管理** \> **策略** \> **租户允许/阻止列表"。**
+1. 在安全与&中心，转到威胁 **管理** \> **策略** \> **租户允许/阻止列表**。
 
-2. 在 **"租户允许/阻止列表** "页上，验证是否选择了 **"URL"** 选项卡，然后单击"阻止 **"**
+2. 在" **租户允许/阻止列表** "页上，验证 **"URL"** 选项卡是否被选中，然后单击"阻止 **"**
 
 3. 在 **出现的"阻止 URL"** 飞出中，配置以下设置：
 
-   - **添加要阻止的 URL：** 每行输入一个 URL，最多 20 个。
+   - **添加要阻止的 URL：** 每行输入一个 URL，最多输入 20 个。
 
    - **永不过期**：执行下列步骤之一：
 
-     - 验证该设置是否 (关闭) 并使用"过期"框指定条目 ![ ](../../media/scc-toggle-off.png) 的到期日期。 
+     - 验证是否关闭该设置 (关闭) 并使用"过期时间"框指定条目 ![ ](../../media/scc-toggle-off.png) 的到期日期。 
 
        或
 
-     - 将开关向右移动以将条目配置为永不过期： ![切换开关打开](../../media/scc-toggle-on.png).
+     - 将开关移到右侧，将条目配置为永不过期： ![切换开关打开](../../media/scc-toggle-on.png).
 
-   - **可选注意**：输入条目的描述性文本。
+   - **可选说明**：输入条目的描述性文本。
 
 4. 完成后，单击“**添加**”。
 
-## <a name="use-the-security--compliance-center-to-create-file-entries-in-the-tenant-allowblock-list"></a>使用安全&合规中心在租户允许/阻止列表中创建文件条目
+## <a name="use-the-security--compliance-center-to-create-file-entries-in-the-tenant-allowblock-list"></a>使用安全&中心在租户允许/阻止列表中创建文件条目
 
-1. 在安全&，转到 **"威胁管理** \> **策略** \> **租户允许/阻止列表"。**
+1. 在安全与&中心，转到威胁 **管理** \> **策略** \> **租户允许/阻止列表**。
 
-2. 在"**租户允许/阻止列表"** 页上，**选择"** 文件"选项卡，然后单击"阻止 **"。**
+2. 在"**租户允许/阻止列表"页上**，选择"**文件"** 选项卡，然后单击"阻止 **"。**
 
 3. 在 **"添加文件以阻止** 出现的飞出"中，配置以下设置：
 
@@ -117,19 +117,19 @@ ms.locfileid: "50515204"
 
    - **永不过期**：执行下列步骤之一：
 
-     - 验证该设置是否 (关闭) 并使用"过期"框指定条目 ![ ](../../media/scc-toggle-off.png) 的到期日期。 
+     - 验证是否关闭该设置 (关闭) 并使用"过期时间"框指定条目 ![ ](../../media/scc-toggle-off.png) 的到期日期。 
 
      或
 
-     - 将开关向右移动以将条目配置为永不过期： ![切换开关打开](../../media/scc-toggle-on.png).
+     - 将开关移到右侧，将条目配置为永不过期： ![切换开关打开](../../media/scc-toggle-on.png).
 
-   - **可选注意**：输入条目的描述性文本。
+   - **可选说明**：输入条目的描述性文本。
 
 4. 完成后，单击“**添加**”。
 
-## <a name="use-the-security--compliance-center-to-view-entries-in-the-tenant-allowblock-list"></a>使用安全&合规中心查看租户允许/阻止列表中的条目
+## <a name="use-the-security--compliance-center-to-view-entries-in-the-tenant-allowblock-list"></a>使用安全&中心查看租户允许/阻止列表中的条目
 
-1. 在安全&，转到 **"威胁管理** \> **策略** \> **租户允许/阻止列表"。**
+1. 在安全与&中心，转到威胁 **管理** \> **策略** \> **租户允许/阻止列表**。
 
 2. 选择 **"URL"** 选项卡或" **文件"** 选项卡。
 
@@ -140,51 +140,51 @@ ms.locfileid: "50515204"
 - **到期日期**
 - **注意**
 
-单击 **"搜索**"，输入值的一部分或全部，然后按 Enter 查找特定值。 完成后，单击"清除 **搜索清除** ![ 搜索"图标 ](../../media/b6512677-5e7b-42b0-a8a3-3be1d7fa23ee.gif) 。
+单击 **"搜索**"，输入值的全部或一部分，然后按 Enter 查找特定值。 完成后，单击"清除搜索 **""** ![ 清除搜索图标 ](../../media/b6512677-5e7b-42b0-a8a3-3be1d7fa23ee.gif) "。
 
-单击 **"筛选"。** 在 **出现的"** 筛选器"飞出中，配置以下任一设置：
+单击"**筛选器"。** 在出现的 **"** 筛选器"飞出中，配置以下任一设置：
 
-- **永不过期**： 选择关闭： ![ 关闭 ](../../media/scc-toggle-off.png) 或打开： ![ 打开 ](../../media/scc-toggle-on.png) 。
+- **永不过期**：选择关闭： ![ 关闭 ](../../media/scc-toggle-off.png) 或打开： ![ 打开切换 ](../../media/scc-toggle-on.png) 。
 
 - **Last updated**： Select a start date (**From**) ， an end date (**To**) both.
 
-- **到期日期：** 选择开始日期 (开始日期) 开始日期，选择结束日期 (") "或同时选择两者。 
+- **到期日期：** 选择开始日期 (**From**) ，结束日期 (**到**) 两者。
 
 完成后，单击"应用 **"。**
 
-若要清除现有筛选器，请单击 **"筛选器**"，在出现的 **"** 筛选器"飞出中，单击 **"清除筛选器"。**
+若要清除现有筛选器，请单击 **"筛选器"，** 在出现的"筛选器"飞出中，单击"清除 **筛选器"。**
 
-## <a name="use-the-security--compliance-center-to-modify-block-entries-in-the-tenant-allowblock-list"></a>使用安全&合规中心修改租户允许/阻止列表中的阻止条目
+## <a name="use-the-security--compliance-center-to-modify-block-entries-in-the-tenant-allowblock-list"></a>使用安全&中心修改租户允许/阻止列表中的阻止条目
 
 不能修改条目中的现有阻止 URL 或文件值。 若要修改这些值，需要删除并重新创建条目。
 
-1. 在安全&，转到 **"威胁管理** \> **策略** \> **租户允许/阻止列表"。**
+1. 在安全与&中心，转到威胁 **管理** \> **策略** \> **租户允许/阻止列表**。
 
 2. 选择 **"URL"** 选项卡或" **文件"** 选项卡。
 
 3. 选择要修改的阻止条目，然后单击"编辑 **编辑"** ![ 图标 ](../../media/0cfcb590-dc51-4b4f-9276-bb2ce300d87e.png) 。
 
-4. 在出现的飞出中，配置以下设置：
+4. 在出现的"飞出"中，配置以下设置：
 
    - **永不过期**：执行下列步骤之一：
 
-     - 验证该设置是否 (关闭) 并使用"过期"框指定条目 ![ ](../../media/scc-toggle-off.png) 的到期日期。 
+     - 验证是否关闭该设置 (关闭) 并使用"过期 ![ ](../../media/scc-toggle-off.png) **时间"** 框指定条目的到期日期。
 
        或
 
-     - 将开关向右移动以将条目配置为永不过期： ![切换开关打开](../../media/scc-toggle-on.png).
+     - 将开关移到右侧，将条目配置为永不过期： ![切换开关打开](../../media/scc-toggle-on.png).
 
-   - **可选注意**：输入条目的描述性文本。
+   - **可选说明**：输入条目的描述性文本。
 
-5. 完成时，请单击“保存”。
+5. 完成后，单击“**保存**”。
 
-## <a name="use-the-security--compliance-center-to-remove-block-entries-from-the-tenant-allowblock-list"></a>使用安全&合规中心从租户允许/阻止列表中删除阻止条目
+## <a name="use-the-security--compliance-center-to-remove-block-entries-from-the-tenant-allowblock-list"></a>使用安全&中心从租户允许/阻止列表中删除阻止条目
 
-1. 在安全&，转到 **"威胁管理** \> **策略** \> **租户允许/阻止列表"。**
+1. 在安全与&中心，转到威胁 **管理** \> **策略** \> **租户允许/阻止列表**。
 
 2. 选择 **"URL"** 选项卡或" **文件"** 选项卡。
 
-3. 选择要删除的阻止条目，然后单击"删除 **"** ![ 图标 ](../../media/87565fbb-5147-4f22-9ed7-1c18ce664392.png) 。
+3. 选择要删除的阻止条目，然后单击"删除 **删除"** ![ 图标 ](../../media/87565fbb-5147-4f22-9ed7-1c18ce664392.png) 。
 
 4. 在出现的警告对话框中，单击"删除 **"。**
 
@@ -198,7 +198,7 @@ ms.locfileid: "50515204"
 New-TenantAllowBlockListItems -ListType <Url | FileHash> -Block -Entries <String[]> [-ExpirationDate <DateTime>] [-NoExpiration] [-Notes <String>]
 ```
 
-本示例为网站和contoso.com域添加一个阻止 URL 条目 (例如，contoso.com、www.contoso.com和xyz.abc.contoso.com) 。 由于我们没有使用 ExpirationDate 或 NoExpiration 参数，因此条目将在 30 天后过期。
+此示例为 contoso.com 及其所有子域（例如， (、contoso.com、www.contoso.com 和 xyz.abc.contoso.com) ）添加一个阻止 URL 条目。 由于我们没有使用 ExpirationDate 或 NoExpiration 参数，因此条目将在 30 天后过期。
 
 ```powershell
 New-TenantAllowBlockListItems -ListType Url -Block -Entries ~contoso.com
@@ -210,7 +210,7 @@ New-TenantAllowBlockListItems -ListType Url -Block -Entries ~contoso.com
 New-TenantAllowBlockListItems -ListType FileHash -Block -Entries "768a813668695ef2483b2bde7cf5d1b2db0423a0d3e63e498f3ab6f2eb13ea3","2c0a35409ff0873cfa28b70b8224e9aca2362241c1f0ed6f622fef8d4722fd9a" -NoExpiration
 ```
 
-有关语法和参数的详细信息，请参阅[New-TenantAllowBlockListItems。](https://docs.microsoft.com/powershell/module/exchange/new-tenantallowblocklistitems)
+有关语法和参数的详细信息，请参阅 [New-TenantAllowBlockListItems](/powershell/module/exchange/new-tenantallowblocklistitems)。
 
 ### <a name="use-powershell-to-view-entries-in-the-tenant-allowblock-list"></a>使用 PowerShell 查看租户允许/阻止列表中的条目
 
@@ -232,7 +232,7 @@ Get-TenantAllowBlockListItems -ListType Url -Block
 Get-TenantAllowBlockListItems -ListType FileHash -Entry "9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08"
 ```
 
-有关语法和参数的详细信息，请参阅[Get-TenantAllowBlockListItems。](https://docs.microsoft.com/powershell/module/exchange/get-tenantallowblocklistitems)
+有关语法和参数的详细信息，请参阅 [Get-TenantAllowBlockListItems](/powershell/module/exchange/get-tenantallowblocklistitems)。
 
 ### <a name="use-powershell-to-modify-block-entries-in-the-tenant-allowblock-list"></a>使用 PowerShell 修改租户允许/阻止列表中的阻止条目
 
@@ -250,7 +250,7 @@ Set-TenantAllowBlockListItems -ListType <Url | FileHash> -Ids <"Id1","Id2",..."I
 Set-TenantAllowBlockListItems -ListType Url -Ids "RgAAAAAI8gSyI_NmQqzeh-HXJBywBwCqfQNJY8hBTbdlKFkv6BcUAAAl_QCZAACqfQNJY8hBTbdlKFkv6BcUAAAl_oSRAAAA" -ExpirationDate (Get-Date "5/30/2020 9:30 AM").ToUniversalTime()
 ```
 
-有关语法和参数的详细信息，请参阅[Set-TenantAllowBlockListItems。](https://docs.microsoft.com/powershell/module/exchange/set-tenantallowblocklistitems)
+有关语法和参数的详细信息，请参阅 [Set-TenantAllowBlockListItems](/powershell/module/exchange/set-tenantallowblocklistitems)。
 
 ### <a name="use-powershell-to-remove-block-entries-from-the-tenant-allowblock-list"></a>使用 PowerShell 从租户允许/阻止列表中删除阻止条目
 
@@ -266,36 +266,36 @@ Remove-TenantAllowBlockListItems -ListType <Url | FileHash> -Ids <"Id1","Id2",..
 Remove-TenantAllowBlockListItems -ListType Url -Ids "RgAAAAAI8gSyI_NmQqzeh-HXJBywBwCqfQNJY8hBTbdlKFkv6BcUAAAl_QCZAACqfQNJY8hBTbdlKFkv6BcUAAAl_oSPAAAA0"
 ```
 
-有关语法和参数的详细信息，请参阅[Remove-TenantAllowBlockListItems。](https://docs.microsoft.com/powershell/module/exchange/remove-tenantallowblocklistitems)
+有关语法和参数的详细信息，请参阅 [Remove-TenantAllowBlockListItems](/powershell/module/exchange/remove-tenantallowblocklistitems)。
 
 ## <a name="url-syntax-for-the-tenant-allowblock-list"></a>租户允许/阻止列表的 URL 语法
 
 - 允许 IP4v 和 IPv6 地址，但不允许 TCP/UDP 端口。
 
-- 不允许使用文件名扩展名 (例如，test.pdf) 。
+- 例如，不允许使用文件名 (，例如test.pdf) 。
 
 - 不支持 Unicode，但 Punycode 支持。
 
-- 如果以下所有语句都为 true，则允许使用主机名：
+- 如果下列所有语句都为 true，则允许使用主机名：
   - 主机名包含一个时间段。
-  - 在时间段的左侧至少有一个字符。
+  - 在周期的左侧至少有一个字符。
   - 此期间右侧至少有两个字符。
 
-  例如， `t.co` 允许; `.com` `contoso.` 或不允许。
+  例如， `t.co` 是允许的 `.com` ; `contoso.` 或者是不允许的。
 
 - 不隐含子路径。
 
   例如， `contoso.com` 不包括 `contoso.com/a` 。
 
-- 以下 (允许) *通配符：
+- 在 () 允许使用通配符或*通配符：
 
-  - 左通配符后跟一个时间段以指定子域。
+  - 左通配符后面必须后跟一个时间段，以指定子域。
 
-    例如， `*.contoso.com` 允许; `*contoso.com` 不允许。
+    例如， `*.contoso.com` 允许 ; `*contoso.com` 不允许。
 
   - 右通配符必须按照正斜杠 (/) 指定路径。
 
-    例如， `contoso.com/*` 允许; `contoso.com*` `contoso.com/ab*` 或不允许。
+    例如， `contoso.com/*` 是允许的 `contoso.com*` ; `contoso.com/ab*` 或者是不允许的。
 
   - 右通配符不隐含所有子路径。
 
@@ -305,19 +305,19 @@ Remove-TenantAllowBlockListItems -ListType Url -Ids "RgAAAAAI8gSyI_NmQqzeh-HXJBy
 
   - IP 地址中不允许使用通配符。
 
-- tilde (~) 字符在下列情况下可用：
+- 在下列 (提供了) ~ 字符：
 
-  - 左波浪符表示域和所有子域。
+  - 左波浪符表示域及其所有子域。
 
     例如， `~contoso.com` 包括 `contoso.com` `*.contoso.com` 和 。
 
-- 包含协议（例如， (，或) ）的 URL 条目将失败，因为 URL 条目 `http://` `https://` `ftp://` 适用于所有协议。
+- 包含协议（如 、 (）的 URL) 将失败，因为 URL 条目 `http://` `https://` `ftp://` 适用于所有协议。
 
 - 不支持或不需要用户名或密码。
 
 - 引号 ("或") 无效字符。
 
-- URL 应包含所有重定向（如果可能）。
+- 如果可能，URL 应包含所有重定向。
 
 ### <a name="url-entry-scenarios"></a>URL 条目方案
 
@@ -339,7 +339,7 @@ Remove-TenantAllowBlockListItems -ListType Url -Ids "RgAAAAAI8gSyI_NmQqzeh-HXJBy
   - www.contoso.com
   - www.contoso.com/q=a@contoso.com
 
-- **块匹配**：
+- **阻止匹配**：
 
   - contoso.com
   - contoso.com/a
@@ -349,7 +349,7 @@ Remove-TenantAllowBlockListItems -ListType Url -Ids "RgAAAAAI8gSyI_NmQqzeh-HXJBy
   - www.contoso.com
   - www.contoso.com/q=a@contoso.com
 
-- **块不匹配**： abc-contoso.com
+- **阻止不匹配**： abc-contoso.com
 
 #### <a name="scenario-left-wildcard-subdomain"></a>方案：将通配符 (子域) 
 
@@ -375,7 +375,7 @@ Remove-TenantAllowBlockListItems -ListType Url -Ids "RgAAAAAI8gSyI_NmQqzeh-HXJBy
 
   - contoso.com/a/b
   - contoso.com/a/b/c
-  - contoso.com/a/？q=joe@t.com
+  - contoso.com/a/?q=joe@t.com
 
 - **允许不匹配和****阻止不匹配**：
 
@@ -384,7 +384,7 @@ Remove-TenantAllowBlockListItems -ListType Url -Ids "RgAAAAAI8gSyI_NmQqzeh-HXJBy
   - www.contoso.com
   - www.contoso.com/q=a@contoso.com
 
-#### <a name="scenario-left-tilde"></a>方案：左波浪符
+#### <a name="scenario-left-tilde"></a>应用场景：左波浪符
 
 **条目**： `~contoso.com`
 
@@ -400,13 +400,13 @@ Remove-TenantAllowBlockListItems -ListType Url -Ids "RgAAAAAI8gSyI_NmQqzeh-HXJBy
   - contoso.com/abc
   - www.contoso.com/abc
 
-#### <a name="scenario-right-wildcard-suffix"></a>方案：右通配符后缀
+#### <a name="scenario-right-wildcard-suffix"></a>应用场景：右通配符后缀
 
 **条目**： `contoso.com/*`
 
 - **允许匹配** 和 **阻止匹配**：
 
-  - contoso.com/？q=whatever@fabrikam.com
+  - contoso.com/?q=whatever@fabrikam.com
   - contoso.com/a
   - contoso.com/a/b/c
   - contoso.com/ab
@@ -414,9 +414,9 @@ Remove-TenantAllowBlockListItems -ListType Url -Ids "RgAAAAAI8gSyI_NmQqzeh-HXJBy
   - contoso.com/b/a/c
   - contoso.com/ba
 
-- **允许不匹配和****阻止不匹配**： contoso.com
+- **允许不匹配和****阻止不匹配**：contoso.com
 
-#### <a name="scenario-left-wildcard-subdomain-and-right-wildcard-suffix"></a>方案：左通配符子域和右通配符后缀
+#### <a name="scenario-left-wildcard-subdomain-and-right-wildcard-suffix"></a>应用场景：左通配符子域和右通配符后缀
 
 **条目**： `*.contoso.com/*`
 
@@ -428,9 +428,9 @@ Remove-TenantAllowBlockListItems -ListType Url -Ids "RgAAAAAI8gSyI_NmQqzeh-HXJBy
   - www.contoso.com/b/a/c
   - xyz.contoso.com/ba
 
-- **允许不匹配和****阻止不匹配**： contoso.com/b
+- **允许不匹配和****阻止不匹配**：contoso.com/b
 
-#### <a name="scenario-left-and-right-tilde"></a>方案：左右波浪符
+#### <a name="scenario-left-and-right-tilde"></a>应用场景：左右波浪符
 
 **条目**： `~contoso.com~`
 
@@ -471,7 +471,7 @@ Remove-TenantAllowBlockListItems -ListType Url -Ids "RgAAAAAI8gSyI_NmQqzeh-HXJBy
 
 以下条目无效：
 
-- **缺少或无效的域值**：
+- **域值缺失或无效**：
 
   - contoso
   - \*.contoso。\*

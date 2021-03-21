@@ -1,5 +1,5 @@
 ---
-title: 高可用性联合身份验证阶段4配置 web 应用程序代理
+title: 高可用性联合身份验证阶段 4 配置 Web 应用程序代理
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -13,31 +13,31 @@ f1.keywords:
 - CSH
 ms.custom: Ent_Solutions
 ms.assetid: 1c903173-67cd-47da-86d9-d333972dda80
-description: 摘要：为 microsoft Azure 中的 Microsoft 365 的高可用性联合身份验证配置 web 应用程序代理服务器。
-ms.openlocfilehash: fd63274ffb9528cedb88fc2ba77834cfd56664d4
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+description: 摘要：在 Microsoft Azure 中为 Microsoft 365 的高可用性联合身份验证配置 Web 应用程序代理服务器。
+ms.openlocfilehash: 95d73d05f2eef087e606df14db180b24c69d5932
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46687973"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50929068"
 ---
 # <a name="high-availability-federated-authentication-phase-4-configure-web-application-proxies"></a>高可用性联合身份验证阶段 4：配置 Web 应用程序代理
 
-在此阶段，在 Azure 基础结构服务中为 Microsoft 365 联合身份验证部署高可用性时，将创建内部负载平衡器和两个 AD FS 服务器。
+在部署 Azure 基础结构服务中 Microsoft 365 联合身份验证的高可用性的这一阶段，将创建一个内部负载平衡器以及两个 AD FS 服务器。
   
-您必须先完成此阶段，然后再转到 [第5阶段： Configure 联合身份验证 For Microsoft 365](high-availability-federated-authentication-phase-5-configure-federated-authentic.md)。 有关所有阶段，请参阅 [在 Azure 中为 Microsoft 365 部署高可用性联合身份验证](deploy-high-availability-federated-authentication-for-microsoft-365-in-azure.md) 。
+必须先完成此阶段，然后才能进入阶段 [5：为 Microsoft 365 配置联合身份验证](high-availability-federated-authentication-phase-5-configure-federated-authentic.md)。 有关 [所有阶段，请参阅在 Azure 中为 Microsoft 365](deploy-high-availability-federated-authentication-for-microsoft-365-in-azure.md) 部署高可用性联合身份验证。
   
 ## <a name="create-the-internet-facing-load-balancer-in-azure"></a>在 Azure 中创建面向 Internet 的负载均衡器
 
 必须创建面向 Internet 的负载均衡器，以便 Azure 在两个 Web 应用程序代理服务器之间平均分发来自 Internet 的传入客户端身份验证通信。
   
 > [!NOTE]
-> [!注意] 下面的命令集使用最新版 Azure PowerShell。 请参阅 [Azure PowerShell 入门](https://docs.microsoft.com/powershell/azure/get-started-azureps)。 
+> [!注意] 下面的命令集使用最新版 Azure PowerShell。 请参阅 [Azure PowerShell 入门](/powershell/azure/get-started-azureps)。 
   
 提供位置和资源组值后，在 Azure PowerShell 命令提示符处或 PowerShell ISE 中运行生成块。
   
 > [!TIP]
-> 若要基于自定义设置生成可随时运行的 PowerShell 命令块，请使用此 [Microsoft Excel 配置工作簿](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/O365FedAuthInAzure_Config.xlsx)。 
+> 若要根据自定义设置生成可运行的 PowerShell 命令块，请使用此 Microsoft [Excel 配置工作簿](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/O365FedAuthInAzure_Config.xlsx)。 
 
 ```powershell
 # Set up key variables
@@ -60,7 +60,7 @@ Write-Host (Get-AzPublicIpaddress -Name "WebProxyPublicIP" -ResourceGroup $rgNam
 
 ## <a name="determine-your-federation-service-fqdn-and-create-dns-records"></a>确定联合身份验证服务 FQDN 并创建 DNS 记录
 
-需要确定 DNS 名称以在 Internet 上标识联合身份验证服务名称。 Azure AD Connect 将在第5阶段将 Microsoft 365 配置为使用此名称，这将成为 Microsoft 365 发送到连接客户端以获取安全令牌的 URL 的一部分。 例如，fs.contoso.com（fs 代表联合身份验证服务）。
+需要确定 DNS 名称以在 Internet 上标识联合身份验证服务名称。 Azure AD Connect 将在阶段 5 中用此名称配置 Microsoft 365，该名称将成为 Microsoft 365 发送到连接客户端以获取安全令牌的 URL 的一部分。 例如，fs.contoso.com（fs 代表联合身份验证服务）。
   
 在拥有联合身份验证服务 FDQN 之后，创建联合身份验证服务 FDQN 的公用 DNS 域 A 记录，该完全限定的域名可解析为面向 Internet 的 Azure 负载均衡器的公用 IP 地址。
   
@@ -94,7 +94,7 @@ Write-Host (Get-AzPublicIpaddress -Name "WebProxyPublicIP" -ResourceGroup $rgNam
     
 - 表 A（针对可用性集）
     
-回想一下在 [阶段2：配置域控制器](high-availability-federated-authentication-phase-2-configure-domain-controllers.md) 和表 R、V、S、I 和 A [阶段1： configure Azure](high-availability-federated-authentication-phase-1-configure-azure.md)中定义了表 M。
+回想一下，你在阶段[2：](high-availability-federated-authentication-phase-2-configure-domain-controllers.md)配置域控制器中定义了表 M，在第 1 阶段：配置 Azure 中定义了表 R、V、S、I 和[A。](high-availability-federated-authentication-phase-1-configure-azure.md)
   
 提供所有正确值后，在 Azure PowerShell 命令提示符处或 PowerShell ISE 上运行生成块。
   
@@ -150,17 +150,17 @@ New-AzVM -ResourceGroupName $rgName -Location $locName -VM $vm
 ```
 
 > [!NOTE]
-> 由于这些虚拟机用于 Intranet 应用程序，所以不会为它们分配公用 IP 地址或 DNS 域名称标签，也不会将它们公开到 Internet。但是，这也意味着你无法从 Azure 门户与它们进行连接。查看虚拟机的属性时“连接”**** 选项不可用。使用远程桌面连接附件或其他远程桌面工具连接使用其专用 IP 地址或 Intranet DNS 名称及本地 Administrator 帐户凭据的虚拟机。
+> 由于这些虚拟机用于 Intranet 应用程序，所以不会为它们分配公用 IP 地址或 DNS 域名称标签，也不会将它们公开到 Internet。但是，这也意味着你无法从 Azure 门户与它们进行连接。查看虚拟机的属性时“连接”选项不可用。使用远程桌面连接附件或其他远程桌面工具连接使用其专用 IP 地址或 Intranet DNS 名称及本地 Administrator 帐户凭据的虚拟机。
   
 以下是因成功完成这一阶段后生成的配置，包含占位符计算机名称。
   
 **阶段 4：Azure 中用于高可用性联合身份验证基础结构的面向 Internet 的负载均衡器和 Web 应用程序代理服务器**
 
-![在 Azure 中使用 web 应用程序代理服务器的高可用性 Microsoft 365 联合身份验证基础结构的第4阶段](../media/7e03183f-3b3b-4cbe-9028-89cc3f195a63.png)
+![Azure 中具有 Web 应用程序代理服务器的高可用性 Microsoft 365 联合身份验证基础结构的第 4 阶段](../media/7e03183f-3b3b-4cbe-9028-89cc3f195a63.png)
   
 ## <a name="next-step"></a>后续步骤
 
-使用 [阶段5：为 Microsoft 365 配置联合身份验证](high-availability-federated-authentication-phase-5-configure-federated-authentic.md) 以继续配置此工作负载。
+使用 [阶段 5：为 Microsoft 365](high-availability-federated-authentication-phase-5-configure-federated-authentic.md) 配置联合身份验证以继续配置此工作负载。
   
 ## <a name="see-also"></a>另请参阅
 
@@ -168,5 +168,4 @@ New-AzVM -ResourceGroupName $rgName -Location $locName -VM $vm
   
 [Microsoft 365 开发/测试环境的联合身份](federated-identity-for-your-microsoft-365-dev-test-environment.md)
   
-[Microsoft 365 解决方案和体系结构中心](../solutions/solution-architecture-center.md)
-
+[Microsoft 365 解决方案和体系结构中心](../solutions/index.yml)
