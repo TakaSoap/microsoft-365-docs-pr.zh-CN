@@ -15,12 +15,12 @@ ms.collection:
 description: 管理员可以了解如何创建、修改和删除 Microsoft Defender for Office 365 组织中可用的高级防钓鱼策略。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2985766cf3388382dbe1d2217843504b2bfd1a1c
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 9f9fe04b2c3b6db3681212d678c8e827f6a83f41
+ms.sourcegitcommit: 3d3c446d5e2e90369be1339dd0a33e71432fbc36
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50906584"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "50994566"
 ---
 # <a name="configure-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>在 Microsoft Defender for Office 365 中配置防钓鱼策略
 
@@ -152,7 +152,7 @@ Microsoft Defender for [Office 365](office-365-atp.md) 中的防钓鱼策略可�
    - **名称**
    - **说明**
    - **应用于**
-   - **查看设置**
+   - **查看您的设置**
 
    完成后，单击任意 **页面上** 的"保存"。
 
@@ -220,11 +220,11 @@ Microsoft Defender for [Office 365](office-365-atp.md) 中的防钓鱼策略可�
 
      - **启用邮箱智能？：** 默认值为 **On。** 若要关闭它，将切换开关滑动到 **关闭**。
 
-     - **启用基于邮箱智能的模拟保护？：** 此设置仅在启用邮箱智能 **时可用？** 为 **"启用"。**
+     - **启用基于邮箱智能的模拟保护？：** 此设置仅在启用 **邮箱智能时可用？** 为 **On**。 打开此设置可指定对邮件执行的操作，以从邮箱智能结果进行模拟检测。
 
-       在 **"** 如果电子邮件由模拟用户发送"中，可以指定对未通过邮箱智能的邮件执行下列操作之一 (这些操作与对受保护用户和受保护的域) ：
+       在 **"** 如果电子邮件由模拟用户发送"中，可以指定以下操作之一 (保护用户和受保护的域可执行) ：
 
-       - **不应用任何操作**
+       - **不要应用任何操作**：请注意，此值与启用邮箱智能具有相同的结果 **？但关闭** 启用基于邮箱 **智能的模拟保护？。**
        - **将邮件重定向到其他电子邮件地址**
        - **将邮件移动到"垃圾邮件"文件夹**
        - **隔离邮件**

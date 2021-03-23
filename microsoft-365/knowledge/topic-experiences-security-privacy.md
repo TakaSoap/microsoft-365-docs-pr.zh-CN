@@ -10,12 +10,12 @@ ms.service: o365-administration
 search.appverid: MET150
 localization_priority: Normal
 description: 了解如何规划 Microsoft Viva 主题安全和隐私
-ms.openlocfilehash: 9ac7ea085be115ef06244422713099c01ec50a36
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 91d0d5c25502a1938976b9457f8a5dafc6ab957b
+ms.sourcegitcommit: 3d3c446d5e2e90369be1339dd0a33e71432fbc36
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50917340"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "50994542"
 ---
 # <a name="microsoft-viva-topics-security-and-privacy"></a>Microsoft Viva 主题安全和隐私
 
@@ -51,7 +51,7 @@ ms.locfileid: "50917340"
 
 |主题项|用户可以看到哪些内容|
 |:---------|:------------------|
-|主题名称|用户可以在主题中心查看所有主题的主题名称。 如果某些主题与用户相关性较低，则这些主题可能不可见。|
+|主题名称|用户可以在主题中心查看主题的主题名称。 如果用户对源内容没有权限或与用户相关性较低，则某些主题可能不可见。|
 |主题说明|AI 生成的说明仅对具有源内容权限的用户可见。 手动输入或编辑的说明对所有用户可见。|
 |人员|固定人员对所有用户可见。 建议人员仅对对源内容具有权限的用户可见。|
 |文件|文件仅对具有源内容权限的用户可见。|

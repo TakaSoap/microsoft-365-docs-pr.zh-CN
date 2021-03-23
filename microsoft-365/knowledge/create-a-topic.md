@@ -14,12 +14,12 @@ ms.collection:
 ms.service: ''
 search.appverid: ''
 localization_priority: Normal
-ms.openlocfilehash: d6e953c86939d732632e87573fc2aa5392f09aa2
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 6a182556c68a472145f9d4eac69c8915653a67df
+ms.sourcegitcommit: 3d3c446d5e2e90369be1339dd0a33e71432fbc36
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50904932"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "50994590"
 ---
 # <a name="create-a-new-topic"></a>新建主题 
 
@@ -29,7 +29,7 @@ ms.locfileid: "50904932"
 > 虽然 AI 收集的主题中的信息是经过安全[](topic-experiences-security-trimming.md)修整的，但请注意，手动创建的主题中的主题说明和人员信息对有权查看该主题的所有用户可见。 
 
 
-## <a name="requirements"></a>Requirements
+## <a name="requirements"></a>要求
 
 若要创建新主题，您需要：
 - 拥有 Viva 主题许可证。
@@ -66,7 +66,7 @@ ms.locfileid: "50904932"
 
     ![主题的说明](../media/knowledge-management/description.png)</br>
 
-4. 在 <b>"固定人员</b> "部分中，你可以"固定"一个人，以将其作为主题专家显示。 首先在"添加新用户"框中键入用户的姓名或<b></b>电子邮件地址，然后从搜索结果中选择要添加的用户。 您还可以通过选择用户卡片上的"从列表中删除" <b>图标来</b> "取消固定"它们。 还可以拖动人员以更改联系人列表的显示顺序。
+4. 在 <b>"固定人员</b> "部分中，你可以"固定"一个人，以将其显示与主题 (例如，已连接资源的所有者) 。 首先在"添加新用户"框中键入用户的姓名或<b></b>电子邮件地址，然后从搜索结果中选择要添加的用户。 您还可以通过选择用户卡片上的"从列表中删除" <b>图标来</b> "取消固定"它们。 还可以拖动人员以更改联系人列表的显示顺序。
  
     ![固定人员](../media/knowledge-management/pinned-people.png)</br>
 

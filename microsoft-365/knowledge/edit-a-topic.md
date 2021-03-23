@@ -14,12 +14,12 @@ ms.collection:
 - m365initiative-viva-topics
 ms.service: ''
 localization_priority: Normal
-ms.openlocfilehash: 34c6551dd3a40852368b40d960bf921c52f46372
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 36af6e0f882c87d05c5f397982533fb48875b0da
+ms.sourcegitcommit: 3d3c446d5e2e90369be1339dd0a33e71432fbc36
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50921512"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "50994602"
 ---
 # <a name="edit-an-existing-topic"></a>编辑现有主题 
 
@@ -34,7 +34,7 @@ ms.locfileid: "50921512"
 > [!Note] 
 > 虽然 AI 收集的主题信息是经过安全修整[](topic-experiences-security-trimming.md)的，但请注意，编辑现有主题时手动添加的主题说明和人员信息对有权查看主题的所有用户可见。 
 
-## <a name="requirements"></a>Requirements
+## <a name="requirements"></a>要求
 
 若要编辑现有主题，您需要：
 - 拥有 Viva 主题许可证。
@@ -67,11 +67,11 @@ ms.locfileid: "50921512"
 
     !["说明"部分](../media/knowledge-management/description.png)</br>
 
-4. 在 <b>"固定人员</b> "部分中，你可以"固定"一个人，以将其作为主题专家显示。 首先，在"添加新用户"框中键入用户的姓名<b></b>或电子邮件地址，然后从搜索结果中选择要添加的用户。 您还可以通过选择用户卡片上的"从列表中删除" <b>图标来</b> "取消固定"它们。
+4. 在 <b>"固定人员</b> "部分中，你可以"固定"一个人，以显示他们具有主题 (例如，已连接资源的所有者) 。 首先，在"添加新用户"框中键入用户的姓名<b></b>或电子邮件地址，然后从搜索结果中选择要添加的用户。 您还可以通过选择用户卡片上的"从列表中删除" <b>图标来</b> "取消固定"它们。
  
     ![添加固定人员](../media/knowledge-management/pinned-people.png)</br>
 
-    建议 <b>人员部分</b> 显示用户，AI 认为他们可能是主题主题专家，他们与有关主题的资源的连接。 通过选择用户卡片上的固定图标，你可以将其状态从"建议"更改为"固定"。
+    建议 <b>人员部分</b> 向用户显示 AI 认为可能从他们连接到有关该主题的资源来连接到该主题的用户。 通过选择用户卡片上的固定图标，你可以将其状态从"建议"更改为"固定"。
 
    ![固定建议的人](../media/knowledge-management/suggested-people.png)</br>
 

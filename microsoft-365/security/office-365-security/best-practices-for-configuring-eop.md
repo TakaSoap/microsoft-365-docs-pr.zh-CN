@@ -12,12 +12,12 @@ ms.assetid: faf1efd1-3b0c-411a-804d-17f37292eac0
 description: 请遵循这些适用于独立 Exchange Online Protection (EOP) 的最佳实践建议，以便成功设置并避免常见的配置错误。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 6a6a9fd0dfc654ca37fdd5168b3ecc0c4486f9d0
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: e968316e23fe2d8e68795318f8e0785a662c8aea
+ms.sourcegitcommit: 3d3c446d5e2e90369be1339dd0a33e71432fbc36
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50924452"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "50994554"
 ---
 # <a name="best-practices-for-configuring-standalone-eop"></a>配置独立 EOP 的最佳实践
 
@@ -44,6 +44,8 @@ ms.locfileid: "50924452"
 
 这些设置涵盖安全策略之外的一系列功能。
 
+<br>
+
 ****
 
 |安全功能名称|标准|Strict|评论|
@@ -57,8 +59,8 @@ ms.locfileid: "50924452"
 |应启用统一审核|是|是||
 |[与邮箱的 IMAP 连接](/Exchange/clients-and-mobile-in-exchange-online/pop3-and-imap4/enable-or-disable-pop3-or-imap4-access)|已禁用|已禁用||
 |[与邮箱的 POP 连接](/Exchange/clients-and-mobile-in-exchange-online/pop3-and-imap4/enable-or-disable-pop3-or-imap4-access)|已禁用|已禁用||
-|经过身份验证的 SMTP 提交|已禁用|已禁用|POP3 和 IMAP4 (POP3 和 IMAP4 客户端需要经过身份验证 (客户端 SMTP 提交或 SMTP) AUTH 提交。|
-|与邮箱的 EWS 连接|已禁用|已禁用||
+|经过身份验证的 SMTP 提交|已禁用|已禁用|生成和发送电子邮件 (POP3 和 IMAP4 客户端以及应用程序和设备需要经过身份验证 (客户端 SMTP 提交或 SMTP AUTH) 。 <p> 有关全局或选择性地启用和禁用 SMTP AUTH 的说明，请参阅在 Exchange Online 中启用或禁用经过身份验证的 [客户端 SMTP 提交](/exchange/clients-and-mobile-in-exchange-online/authenticated-client-smtp-submission)。|
+|与邮箱的 EWS 连接|已禁用|已禁用|Outlook 使用 Exchange Web 服务进行忙/闲、外出设置和日历共享。 如果无法全局禁用 EWS，则有以下选项： <ul><li>如果你 [的客户端](/exchange/clients-and-mobile-in-exchange-online/disable-basic-authentication-in-exchange-online) 支持新式身份验证和新式身份验证，请使用身份验证策略 (EWS) 。</li><li>使用 [客户端访问规则](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/client-access-rules/client-access-rules) 将 EWS 限制为特定用户或源 IP 地址。</li><li>控制全局或每个用户对特定应用程序的 EWS 访问。 有关说明，请参阅 [控制对 Exchange 中 EWS 的访问](/exchange/client-developer/exchange-web-services/how-to-control-access-to-ews-in-exchange)。</li></ul> <p> 报告[邮件外接程序和](enable-the-report-message-add-in.md)"报告网络钓鱼外接程序[](enable-the-report-phish-add-in.md)"默认在支持的环境中使用 REST，但如果 REST 不可用，将回退到 EWS。 使用 REST 的受支持环境包括：<ul><li>Exchange Online</li><li>Exchange 2019 或 Exchange 2016</li><li>当前 Outlook for Windows 从 Microsoft 365 订阅或一次购买 Outlook 2019。</li><li>当前 Outlook for Mac 从 Microsoft 365 订阅或一次购买 Outlook for Mac 2016 或更高版本。</li><li>IOS 和 Android 版 Outlook</li><li>Outlook 网页版</li></ul>|
 |[PowerShell 连接](/powershell/exchange/disable-access-to-exchange-online-powershell)|已禁用|已禁用|适用于由 [Get-User](/powershell/module/exchange/get-user) cmdlet (返回的用户对象的邮箱用户或邮件) 。|
 |使用 [欺骗智能](learn-about-spoof-intelligence.md) 将发件人添加到允许列表|是|是||
 |[基于目录的边缘阻止 (DBEB) ](/Exchange/mail-flow-best-practices/use-directory-based-edge-blocking)|已启用|已启用|域类型 = 权威|

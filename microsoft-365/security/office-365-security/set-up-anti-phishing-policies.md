@@ -17,12 +17,12 @@ ms.custom:
 description: 管理员可以了解 Exchange Online Protection (EOP) 和 Microsoft Defender for Office 365 中提供的防钓鱼策略。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: eeb15040f0e47f7d51852dadf68c4b0c37de0975
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 3458d6702dab48072e4846038400b087b1a4a8f1
+ms.sourcegitcommit: 3d3c446d5e2e90369be1339dd0a33e71432fbc36
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50929224"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "50994578"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>Microsoft 365 中的防钓鱼策略
 
@@ -206,17 +206,21 @@ EOP 和 Microsoft Defender for Office 365 中的防钓鱼策略中提供了以�
   - **模拟域**："自"地址包含受保护的域。
   - 异常 **字符**：发件人地址包含特殊字符集 (例如，数学符号和文本，或者大写和小写字母) 或域中的混合字符。
 
-
   > [!IMPORTANT]
   >
-  > 建议启用在发件人和收件人 **()** 首次联系期间出现的安全提示：即使禁用了模拟安全提示，也建议您使用邮件流规则 (也称为传输规则) 向邮件添加名为 **X-MS-Exchange-EnableFirstContactSafetyTip** 的邮件头，值为 **enable。** 安全提示将在收件人第一次收到来自发件人的邮件时或他们经常不从发件人获取邮件时通知收件人。 此功能添加了一层额外的安全保护，防止潜在的模拟攻击。 
+  > 即使禁用了模拟安全提示，也建议您使用邮件流规则 (也称为传输规则) 向邮件添加名为 **X-MS-Exchange-EnableFirstContactSafetyTip** 的邮件头，并启用值。  安全提示将在收件人第一次收到来自发件人的邮件时或他们经常不从发件人获取邮件时通知收件人。 此功能添加了一层额外的安全保护，防止潜在的模拟攻击。
+  >
   > :::image type="content" source="../../media/safety-tip-first-contact-multiple-recipients.png" alt-text="用于对多个收件人进行模拟保护的安全提示文本。":::
 
-- **邮箱智能**：启用或禁用 ai (AI) ，该智能智能功能可确定具有常用联系人的用户电子邮件模式。 此设置可帮助 AI 区分合法电子邮件和欺骗性电子邮件与这些联系人。 邮箱智能仅适用于 Exchange Online 邮箱。
+- **邮箱智能**：启用或禁用 ai (AI) ，该智能智能功能可确定具有常用联系人的用户电子邮件模式。 此设置可帮助 AI 区分来自合法发件人和模拟发件人的邮件。
 
-- **基于邮箱智能的模拟保护**：启用或禁用基于每个用户的单个发件人映射的增强模拟结果。 此智能允许 Microsoft 365 自定义用户模拟检测并更好地处理误报。 检测到用户模拟时，可以定义对邮件执行的特定操作：
+  例如，一 (glaureano@contoso.com) 一位用户是贵公司的 CEO，因此在"用户"中添加她作为受保护发件人来保护策略设置。  但是，应用该策略的一些收件人会定期与一个名为"一名为一名的 Vendora Laureano (glaureano@fabrikam.com) "。 由于这些收件人具有与 glaureano@fabrikam.com 的通信历史记录，因此邮箱智能不会将来自 glaureano@fabrikam.com 的邮件识别为这些 glaureano@contoso.com 的模拟尝试。
 
-  - **不应用任何操作**
+  若要使用邮箱智能 (了解的常用联系人和缺少不为) 来帮助保护用户免受模拟攻击，可以启用基于邮箱智能的模拟保护，并指定在启用邮箱智能时要采取 **的操作。** 
+
+- **基于邮箱智能的模拟保护**：打开此设置可指定对邮件执行哪些操作以从邮箱智能结果进行模拟检测：
+
+  - **不要应用任何操作**：请注意，此值与启用邮箱智能但关闭基于邮箱智能的 **模拟保护具有相同的结果**。
   - **将邮件重定向到其他电子邮件地址**
   - **将邮件移动到"垃圾邮件"文件夹**
   - **隔离邮件**
