@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 如何通过以下方法使用保留标签来管理 SharePoint 中的文档的生命周期：使用元数据对内容进行分类、自动应用标签，以及使用基于事件的保留来开始保留期。
-ms.openlocfilehash: 5962b02468b31dda247d03807ef184955c53b83c
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 6c58658378fd0def9a56783e7b8b35db3323b135
+ms.sourcegitcommit: 8998f70d3f7bd673f93f8d1cf12ce981b1b771c3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50907854"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51034211"
 ---
 # <a name="use-retention-labels-to-manage-the-lifecycle-of-documents-stored-in-sharepoint"></a>使用保留标签管理存储在 SharePoint 中的文档的生命周期
 
@@ -269,7 +269,7 @@ KQL 不能在搜索查询中使用已爬网属性。 它必须使用托管属性
 
 可以通过转到“**记录管理**” > “**事件**”，在 Microsoft 365 合规中心手动创建事件。 可选择事件类型、设置正确的资产 ID 并输入事件的日期。 有关详细信息，请参阅[从事件发生时开始计算保留期](event-driven-retention.md)。
 
-对于此方案，我们将从外部生产系统自动生成事件。 系统是一个简单的 SharePoint 列表，用于指示产品是否已投入生产。 与列表关联的 [Power Automate](/flow/getting-started) 流将触发事件。 在现实方案中，它可以使用各种系统（例如 HR 或 CRM 系统）生成事件。 Power Automate 包含许多可供 Microsoft 365 工作负载（例如 Microsoft Exchange、SharePoint、Teams 和 Dynamics 365）及第三方应用（例如 Twitter、Box、Salesforce 和 Workdays）使用的交互和构建块。 此功能使你可以轻松地将 Power Automate 与各种系统集成。 有关详细信息，请参阅[自动执行事件驱动的保留](./event-driven-retention.md#automate-events-by-using-a-rest-apiautomate-events-by-using-a-rest-api)。
+对于此方案，我们将从外部生产系统自动生成事件。 系统是一个简单的 SharePoint 列表，用于指示产品是否已投入生产。 与列表关联的 [Power Automate](/flow/getting-started) 流将触发事件。 在现实方案中，它可以使用各种系统（例如 HR 或 CRM 系统）生成事件。 Power Automate 包含许多可供 Microsoft 365 工作负载（例如 Microsoft Exchange、SharePoint、Teams 和 Dynamics 365）及第三方应用（例如 Twitter、Box、Salesforce 和 Workdays）使用的交互和构建块。 此功能使你可以轻松地将 Power Automate 与各种系统集成。 有关详细信息，请参阅[自动执行事件驱动的保留](./event-driven-retention.md#automate-events-by-using-a-rest-api)。
 
 以下屏幕截图显示将用于触发事件的 SharePoint 列表：
 

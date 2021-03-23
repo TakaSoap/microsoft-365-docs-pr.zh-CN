@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 48cc75276e4e3791fa16520df5a4c392c23a0cd5
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 298300de8581d3eea185f05b92bb69cb6e7a69eb
+ms.sourcegitcommit: 8998f70d3f7bd673f93f8d1cf12ce981b1b771c3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50919908"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51034201"
 ---
 # <a name="communication-compliance-feature-reference"></a>通信合规性功能参考
 
@@ -78,7 +78,7 @@ ms.locfileid: "50919908"
 - 监管审核管理员
 - 案例管理
 - 合规性管理员
-- Review
+- 审阅
 
 若要为这些用户更新新角色组结构的角色，并分隔用户的访问和管理权限，可以考虑使用三个新组和关联的新角色组分配：
 
@@ -262,7 +262,7 @@ ms.locfileid: "50919908"
 
 对于通信合规性匹配的用户，可以在通信合规性设置中选择以下 **设置之一**：
 
-- **显示用户名的** 匿名版本：用户名被匿名处理，以防止 *Communication Compliance Analyst* 角色组的用户看到与策略警报相关联的用户。 通信合规 *调查角色* 组的用户将始终看到用户名，而不是匿名版本。 例如，在通信合规性体验的所有方面，用户"Grace Grace"都会显示随机化假名，如"AnonIS8-988"。 选择此设置将匿名处理具有当前和过去策略匹配项的所有用户，并适用于所有策略。 选择此选项后，通信合规性警报详细信息中的用户配置文件信息将不可用。 但是，将新用户添加到现有策略或向新策略分配用户时，将显示用户名。 如果选择关闭此设置，将显示具有当前或过去策略匹配项的所有用户的用户名。
+- **显示用户名的** 匿名版本：用户名被匿名处理，以防止 *Communication Compliance Analyst* 角色组的用户看到与策略警报相关联的用户。 通信合规 *调查角色* 组的用户将始终看到用户名，而不是匿名版本。 例如，在通信合规性体验的所有方面，用户"Grace Grace"都会显示随机化假名，如"AnonIS8-988"。 选择此设置会匿名处理具有当前和过去策略匹配项的所有用户，并适用于所有策略。 选择此选项后，通信合规性警报详细信息中的用户配置文件信息将不可用。 但是，将新用户添加到现有策略或向新策略分配用户时，将显示用户名。 如果选择关闭此设置，将显示具有当前或过去策略匹配项的所有用户的用户名。
 - **不显示用户名的** 匿名版本：将显示通信合规性警报的所有当前和过去策略匹配项的用户名。 用户配置文件信息 (所有通信合规性警报) 显示的名称、职务、别名以及组织或部门信息。
 
 ## <a name="notice-templates"></a>通知模板
@@ -527,6 +527,21 @@ Search-UnifiedAuditLog -StartDate $startDate -EndDate $endDate -RecordType Disco
 Search-UnifiedAuditLog -StartDate $startDate -EndDate $endDate -Operations SupervisionRuleMatch 
 ```
 
+通信合规性策略匹配项存储在每个策略的监督邮箱中。 在某些情况下，可能需要检查监督邮箱的大小，以确保未接近当前 50 GB 的限制。 如果达到邮箱限制，则不捕获策略匹配项，并且您需要创建一个使用相同设置 (的新策略) 以继续捕获相同活动的匹配项。
+
+若要检查策略监督邮箱的大小，请完成以下操作：
+
+1. 使用 Exchange Online PowerShell V2 模块中的 [Connect-ExchangeOnline](/powershell/module/exchange/connect-exchangeonline) cmdlet，使用新式验证连接到 Exchange Online PowerShell。
+2. 在 PowerShell 中运行以下代码：
+
+    ```PowerShell
+    ForEach ($p in Get-SupervisoryReviewPolicyV2 | Sort-Object Name) 
+    {
+       "<Name of your communication compliance policy>: " + $p.Name
+       Get-MailboxStatistics $p.ReviewMailbox | ft ItemCount,TotalItemSize
+    }
+    ```
+
 ## <a name="transitioning-from-supervision-in-office-365"></a>在 Office 365 中从监督转换
 
 在 Office 365 中使用监督策略的组织应立即计划过渡到 Microsoft 365 中的通信合规性策略，并需要了解以下要点：
@@ -537,6 +552,6 @@ Search-UnifiedAuditLog -StartDate $startDate -EndDate $endDate -Operations Super
 
 有关 Office 365 中监督的停用信息，请参阅 [Microsoft 365 路线图](https://www.microsoft.com/microsoft-365/roadmap) 了解详细信息。
 
-## <a name="ready-to-get-started"></a>准备好开始了吗？
+## <a name="ready-to-get-started"></a>准备好开始了吗?
 
 若要为 Microsoft 365 组织配置通信合规性，请参阅 [为 Microsoft 365](communication-compliance-configure.md)组织配置通信合规性。
