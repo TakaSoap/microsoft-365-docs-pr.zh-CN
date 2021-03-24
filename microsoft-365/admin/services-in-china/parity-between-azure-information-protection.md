@@ -22,7 +22,7 @@ description: 深入了解适用于由世纪互联运营的 Office 365 的 Azure 
 monikerRange: o365-21vianet
 ms.openlocfilehash: 77790249cbd544b2f11e9a16dd77bab297cac509
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/19/2021
 ms.locfileid: "50914314"

@@ -1,5 +1,5 @@
 ---
-title: 对数据隐私法规使用标识、设备和威胁防护
+title: 使用标识、设备和威胁防护进行数据隐私管理
 ms.author: bcarter
 author: brendacarter
 f1.keywords:
@@ -16,73 +16,73 @@ ms.collection:
 - m365solution-infoprotection
 - m365solution-scenario
 ms.custom: ''
-description: 使用 Microsoft 365 的标识、设备和威胁防护服务防止个人数据泄露。
-ms.openlocfilehash: 321b60efbdabe62b14502df4a16dd2dcec4b9cef
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+description: 使用 Microsoft 365 的身份、设备和威胁防护服务防止个人数据泄露。
+ms.openlocfilehash: 145b8a59f7eafb95adf71dc24613ee15ef1c2cca
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48847174"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51052346"
 ---
-# <a name="use-identity-device-and-threat-protection-for-data-privacy-regulation"></a>对数据隐私法规使用标识、设备和威胁防护
+# <a name="use-identity-device-and-threat-protection-for-data-privacy-regulation"></a>使用标识、设备和威胁防护进行数据隐私管理
 
-Microsoft 365 提供了大量标识、设备和威胁防护功能，组织可以使用这些功能来帮助遵守与数据隐私相关的合规性管理法规。 本文介绍了这些方面的数据隐私法规所需的内容，并提供了相关 Microsoft 365 功能和服务的列表，并提供了可帮助您解决实现要求的详细信息的链接。
+Microsoft 365 提供了许多标识、设备和威胁防护功能，组织可以使用这些功能来帮助遵守与数据隐私相关的合规性法规。 本文介绍数据隐私法规在这些方面要求哪些内容，并提供相关 Microsoft 365 功能和服务列表以及指向可帮助你满足实现要求详细信息的链接。
 
-## <a name="how-identity-device-and-threat-protection-relate-to-data-privacy-regulation"></a>标识、设备和威胁防护与数据隐私法规的关系
+## <a name="how-identity-device-and-threat-protection-relate-to-data-privacy-regulation"></a>标识、设备和威胁防护与数据隐私法规如何关联
 
-尽管数据隐私条例的具体程度各不相同，但它们调用的内容的本质是在 GDPR 的文章 5 (1) # B2 f) 中体现，这表明： 
+虽然数据隐私法规的特有性有所不同，但它们所要求的本质是，GDPR 第 5 (1)  (f) 条，其中规定：
 
-- 应以确保个人数据的适当安全性的方式处理个人数据，包括防止未经授权或非法处理的保护，以及防止意外丢失、损坏或损坏、使用适当的技术或组织措施 ( "完整性和机密性" ) 。
+- 个人数据的处理方式应可确保个人数据的适当安全性，包括防止未经授权的或非法处理，以及防止意外丢失、销毁或损坏，使用适当的技术或组织措施 (完整性和保密性) 。
 
-由于个人数据泄露通常是由管理或最终用户帐户泄露和恶意系统访问导致的。 例如，管理员帐户黑客攻击可能会导致 exfiltration 的客户信用卡号码或其他个人信息。 可能应实施 Microsoft 365 提供的所有通常建议的标识、设备和威胁防护，这将反映在合规性管理器中找到的合规性分数中。
+因为个人数据泄露通常是由管理帐户或最终用户帐户泄露和恶意系统访问造成的。 例如，管理员帐户黑客攻击可能会导致客户信用卡号或其他个人信息的窃取。 应实施 Microsoft 365 中提供的所有可能提供的身份、设备和威胁防护，这些将反映在合规性分数中，可在合规性管理器中找到。
 
 ## <a name="using-the-results-of-your-assessment-work-and-compliance-manager"></a>使用评估工作和合规性管理器的结果
 
 合规性管理器包括使用以下类别的标识、设备和威胁防护：
 
-- 标识对应于 **控件访问** 类别
-- 设备对应于 " **管理设备** " 类别
-- 威胁防护对应于 " **针对威胁进行保护** " 类别
+- Identity 对应于" **控制访问"** 类别
+- 设备对应于 **"管理设备"** 类别
+- 威胁防护对应于" **防范威胁"** 类别
  
-如果在我们的四个主要数据隐私法规的示例集中选择这些选项，合规性管理器将指定90改进操作，其中大多数被评分为 "27"。 由于这些类别的合规性管理器会调用此类较大的数字，因此在此处列出了一些较常见的数字，以供参考。
+如果在包含四个主要数据隐私法规的示例集合中选择了这些策略，合规性管理器会指定 90 项改进操作，其中大多数改进措施的分数为"27"。 由于合规性管理器针对这些类别调用了此类数量，因此此处列出了一些更常见的数字，仅供参考。
 
-使用 [Azure Active Directory (AZURE AD)](https://azure.microsoft.com/services/active-directory/) for Identity And **Control Access** 类别，您可以：
+将 [Azure Active Directory (Azure AD](https://azure.microsoft.com/services/active-directory/)) 用于标识 **和控件** 访问类别，可以使用这些类别：
 
-- 实施不能重放的身份验证 (以防止 "中间人" 攻击) 
+- 实施防重播的 (，以防止"中间人"攻击) 
 - 阻止旧式身份验证。
 - 配置用户风险和用户登录风险策略。
-- 为管理员和非管理员启用条件访问和多重身份验证 (MFA) 。
+- 为管理员和非管理员启用 MFA (条件) 多重身份验证。
 - 配置和强制实施密码策略。
-- 使用 Azure AD 特权标识管理限制对特权帐户的访问。
+- 使用 Azure AD Privileged Identity Management 限制对特权帐户的访问。
 - 终止时禁用访问。
 - 审核用户帐户和状态更改。
-- 审阅角色组和管理更改。
+- 查看角色组和管理更改。
 
-使用适用于设备的 [Microsoft 终结点管理器](https://www.microsoft.com/microsoft-365/microsoft-endpoint-manager) 和 " **管理设备** " 类别，您可以：
+将 [Microsoft Endpoint Manager](https://www.microsoft.com/microsoft-365/microsoft-endpoint-manager) 用于设备和 **"管理设备"** 类别，通过该类别，你可以：
 
-- 阻止越狱断开的和根的移动设备。
-- 为移动设备管理配置 Intune。
+- 阻止已越狱且具有 root 权限的移动设备。
+- 配置 Intune 进行移动设备管理。
 - 为 Android、iOS、macOS 和 Windows 设备创建合规性策略。
 - 为 Android、iOS、macOS 和 Windows 设备创建设备配置文件。
-- 为 iOS 和 Windows 创建应用保护策略。
-- 使用锁屏屏蔽信息。
+- 创建适用于 iOS 和 Windows 的应用保护策略。
+- 使用锁屏界面隐藏信息。
 - 为移动设备实施密码策略。
-- 要求移动设备在不活动时锁定。
-- 要求移动设备在出现多个登录失败时擦除。
+- 要求移动设备在处于非活动状态时锁定。
+- 要求移动设备在多个登录失败时进行擦除。
 
-使用 [Exchange Online Protection 和 Microsoft Defender For Office 365](../security/office-365-security/office-365-atp.md) For The **防御威胁** 类别，您可以：
+将 [Exchange Online Protection 和 Microsoft Defender for Office 365](../security/defender-365-security/defender-for-office-365.md) 用于"抵御威胁 **"类别，** 通过这两种类别，可以：
 
-- 启用 (SPF、DMARC 和 DKIM) 的发件人身份验证。
-- 设置 Microsoft Defender for Office 365 反网络钓鱼策略。
-- 实施安全附件。
+- 启用 SPF (DMARC 和 DKIM 身份验证) 。
+- 为 Office 365 设置 Microsoft Defender 防钓鱼策略。
+- 实现安全附件。
 - 实现安全链接。
 - 实施恶意软件检测和响应策略。
 - 实施出站和入站垃圾邮件策略。
 
-### <a name="references"></a>参照
+### <a name="references"></a>引用：
 
-- [常见标识和设备访问策略](../security/office-365-security/identity-access-policies.md)
-- [防御 Office 365 中的威胁](https://support.office.com/article/protect-against-threats-in-office-365-b10023f6-f30f-45d3-b3ad-b71aa4aa0d58)
-- [安全附件](../security/office-365-security/atp-safe-attachments.md)
-- [安全链接](../security/office-365-security/atp-safe-links.md)
-- [安全文档](../security/office-365-security/safe-docs.md)
+- [常见标识和设备访问策略](../security/defender-365-security/identity-access-policies.md)
+- [在 Office 365 中抵御威胁](https://support.office.com/article/protect-against-threats-in-office-365-b10023f6-f30f-45d3-b3ad-b71aa4aa0d58)
+- [安全附件](../security/defender-365-security/safe-attachments.md)
+- [安全链接](../security/defender-365-security/safe-links.md)
+- [安全文档](../security/defender-365-security/safe-docs.md)

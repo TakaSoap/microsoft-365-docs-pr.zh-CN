@@ -20,12 +20,12 @@ ROBOTS: NOINDEX, NOFOLLOW
 description: 了解如何使用 Microsoft 365 验证域和创建 DNS 记录。
 ms.custom:
 - AdminSurgePortfolio
-ms.openlocfilehash: 506ee887edbc59956aee11059a7085bc4b22624e
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 95b1caadfe0e5b331b2bd777263bd86a88bb581f
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50914590"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51050650"
 ---
 # <a name="connect-your-domain-to-microsoft-365"></a>将你的域连接到 Microsoft 365
 
@@ -76,6 +76,6 @@ ms.locfileid: "50914590"
 
 SPF 旨在帮助防骗，但有些骗术是 SPF 所无法防范的。 为了防范这些骗术，在设置 SPF 后，还应为 Microsoft 365 设置 DKIM 和 DMARC。
 
-若要开始进行设置，请参阅[使用 DKIM 验证从 Microsoft 365 中的域发送的出站电子邮件](../../security/office-365-security/use-dkim-to-validate-outbound-email.md)和[使用 DMARC 验证 Microsoft 365 中的电子邮件](../../security/office-365-security/use-dmarc-to-validate-email.md)。
+若要开始进行设置，请参阅[使用 DKIM 验证从 Microsoft 365 中的域发送的出站电子邮件](../../security/defender-365-security/use-dkim-to-validate-outbound-email.md)和[使用 DMARC 验证 Microsoft 365 中的电子邮件](../../security/defender-365-security/use-dmarc-to-validate-email.md)。
 
 最后，请返回管理中心域设置向导以完成设置。

@@ -23,7 +23,7 @@ description: 了解如何在由世纪互联运营的 Office 365 中付款后，�
 monikerRange: o365-21vianet
 ms.openlocfilehash: 681d2d79c510c773d7597c62811256458e3d166d
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/19/2021
 ms.locfileid: "50914470"

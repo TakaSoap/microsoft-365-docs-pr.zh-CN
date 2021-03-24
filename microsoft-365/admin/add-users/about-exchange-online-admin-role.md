@@ -21,12 +21,12 @@ search.appverid:
 - GEA150
 ms.assetid: 097ae285-c4af-4319-9770-e2559d66e4c8
 description: 'Exchange Online 管理员管理组织的电子邮件和邮箱。 例如，他们恢复用户邮箱中的已删除项目。 '
-ms.openlocfilehash: 4db7b55f6bb5bb75149a3b91bd7855565ca1be46
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 5b63f2b0a58fdce75e5d70e329b8a0d02fb94a1a
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50906344"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51050966"
 ---
 # <a name="about-the-exchange-online-admin-role"></a>关于 Exchange Online 管理员角色
 
@@ -34,7 +34,7 @@ ms.locfileid: "50906344"
   
  **提示**：将某人分配到 Exchange 管理员角色时，还要将其分配到服务管理员角色。 这样，他们就可以在 Microsoft 365 管理中心查看重要信息，如 Exchange Online 服务的运行状况，以及更改和发布通知。
   
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>准备工作
 
 下面是用户在被分配到 Exchange 管理员角色时可以执行的主要任务：
   
@@ -48,7 +48,7 @@ ms.locfileid: "50906344"
 
 - [创建共享邮箱](../email/create-a-shared-mailbox.md) ，以便一组人员可以从公用电子邮件地址监视和发送电子邮件。
 
-- [组织的电子邮件反垃圾邮件](../../security/office-365-security/anti-spam-protection.md) 保护和恶意软件筛选器。
+- [组织的电子邮件反垃圾邮件](https://docs.microsoft.com/microsoft-365/security/defender-365-security/anti-spam-protection) 保护和恶意软件筛选器。
 
 - 管理 Microsoft 365 组
 

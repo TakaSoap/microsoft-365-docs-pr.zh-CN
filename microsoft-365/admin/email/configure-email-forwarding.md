@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: ab5eb117-0f22-4fa7-a662-3a6bdb0add74
 description: 使用 Office365 设置电子邮件转发到一个或多个电子邮件帐户。
-ms.openlocfilehash: 593a4d1ca906bdee44ec00e260949ff75b582340
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: cdefab3df59f1c57abbc221943b58c978ff582a9
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50915886"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51050710"
 ---
 # <a name="configure-email-forwarding-in-microsoft-365"></a>在 Microsoft 365 中配置电子邮件转发
 
@@ -42,7 +42,7 @@ ms.locfileid: "50915886"
 作为组织的管理员，您可能有公司要求为用户邮箱设置电子邮件转发。 通过电子邮件转发，你可以将发送到用户邮箱的电子邮件转发到组织内部或外部的其他用户邮箱。
 
 > [!IMPORTANT]
-> 您可以使用出站垃圾邮件筛选器策略来控制自动转发给外部收件人。 有关详细信息，请参阅在 [Microsoft 365 中控制自动外部电子邮件转发](../../security/office-365-security/external-email-forwarding.md?preserve-view=true&view=o365-worldwide#how-the-outbound-spam-filter-policy-settings-work-with-other-automatic-email-forwarding-controls)。
+> 您可以使用出站垃圾邮件筛选器策略来控制自动转发给外部收件人。 有关详细信息，请参阅在 [Microsoft 365 中控制自动外部电子邮件转发](https://docs.microsoft.com/microsoft-365/security/defender-365-security/external-email-forwarding?view=o365-worldwide&preserve-view=true#how-the-outbound-spam-filter-policy-settings-work-with-other-automatic-email-forwarding-controls)。
 
 ## <a name="configure-email-forwarding"></a>配置电子邮件转发
 

@@ -17,12 +17,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: 如何实现 Office 365 的 VPN 拆分隧道
-ms.openlocfilehash: 2feb03f2142639a1c1de4ff9a69768e23f282546
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 93adc70882e0c8ce9752cb471b13c301a4a59bd4
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50924220"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51051278"
 ---
 # <a name="implementing-vpn-split-tunneling-for-office-365"></a>实现 Office 365 的 VPN 拆分隧道
 
@@ -304,7 +304,7 @@ Microsoft 安全团队 [发布了一篇文章](https://www.microsoft.com/securit
 
 ### <a name="how-do-i-protect-against-viruses-and-malware"></a>如何防范病毒和恶意软件？
 
-同样，Office 365 为服务自身各层中标记为“优化”的终结点提供了保护，[本文档对此进行了概述](/office365/Enterprise/office-365-malware-and-ransomware-protection)。 如前所述，在服务本身中提供这些安全元素的效率要高一些，而不是尝试在可能完全了解协议/流量的设备中执行。默认情况下，SharePoint Online [自动扫描文件上传中的](../security/office-365-security/virus-detection-in-spo.md) 已知恶意软件
+同样，Office 365 为服务自身各层中标记为“优化”的终结点提供了保护，[本文档对此进行了概述](/office365/Enterprise/office-365-malware-and-ransomware-protection)。 如前所述，在服务本身中提供这些安全元素的效率要高一些，而不是尝试在可能完全了解协议/流量的设备中执行。默认情况下，SharePoint Online [自动扫描文件上传中的](../security/defender-365-security/virus-detection-in-spo.md) 已知恶意软件
 
 对于上面列出的 Exchange 终结点 [，Exchange Online Protection](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description) 和 [Microsoft Defender for Office 365](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description) 出色地为服务通信提供安全保护。
 

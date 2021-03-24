@@ -13,12 +13,12 @@ ms.collection:
 search.appverid: MET150
 localization_priority: Priority
 description: 在Project Cortex中设置对内容的理解
-ms.openlocfilehash: db6340e8bf4dc23163b67e749f60567f7841a943
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: cc6fbfbfc130cc6e64b5d7c30e0a9db5f39036ac
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50911182"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51051563"
 ---
 # <a name="set-up-sharepoint-syntex"></a>设置 SharePoint Syntex
 
@@ -52,6 +52,14 @@ ms.locfileid: "50911182"
 - 用于 SharePoint 整合的常用数据服务
 
 如果将来（或试用版过期）取消 SharePoint Syntex 订阅，用户将无法创建或运行文档了解或表单处理模型，且内容中心模板将不再可用。 此外，术语库报表、SKOS 分类导入和内容类型推送将不再可用。 不会删除任何内容，且网站权限不会更改。
+
+### <a name="ai-builder-credits"></a>AI 生成器点数
+
+如果你的组织中的 SharePoint Syntex有300或更多SharePoint Syntex 许可证，则会分配一百万个 AI 生成器点数。 如果许可证少于300个，则必须购买AI 生成器点数才能使用表单处理。
+
+可使用 [AI 生成器计算器](https://powerapps.microsoft.com/ai-builder-calculator)来估算出适合你的AI 生成器容量。
+
+转到[电源平台管理中心](https://admin.powerplatform.microsoft.com/resources/capacity)查询积分和使用情况。
 
 ## <a name="to-set-up-sharepoint-syntex"></a>对设置 SharePoint Syntex
 
@@ -112,14 +120,6 @@ ms.locfileid: "50911182"
     > ![Microsoft 365 管理中心的 SharePoint Syntex 许可证](../media/content-understanding/sharepoint-syntex-licenses.png)
 
 5. 单击 **保存更改**。
-
-## <a name="ai-builder-credits"></a>AI 生成器点数
-
-如果你的组织中的 SharePoint Syntex有300或更多SharePoint Syntex 许可证，则会分配一百万个 AI 生成器点数。 如果许可证少于300个，则必须购买AI 生成器点数才能使用表单处理。
-
-可使用 [AI 生成器计算器](https://powerapps.microsoft.com/ai-builder-calculator)来估算出适合你的AI 生成器容量。
-
-转到[电源平台管理中心](https://admin.powerplatform.microsoft.com/resources/capacity)查询积分和使用情况。
 
 ## <a name="see-also"></a>另请参阅
 

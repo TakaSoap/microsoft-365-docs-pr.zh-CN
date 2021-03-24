@@ -19,12 +19,12 @@ f1.keywords:
 - NOCSH
 description: 配置 Microsoft 365 企业版服务和应用程序，如 SharePoint、Exchange 和 Skype for Business。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 1aab85f049385a9569eb88f6feade6e6653da1e9
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: ab05267b88528709335aff9c02f4080aaca12bb4
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50911134"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51051504"
 ---
 # <a name="configure-microsoft-365-enterprise-services-and-applications"></a>配置 Microsoft 365 企业版服务和应用程序
 
@@ -35,7 +35,7 @@ ms.locfileid: "50911134"
 |**服务和应用程序**|**资源**|
 |:-----|:-----|
 |**Microsoft 365 套件** |- [将公司品牌添加到 Microsoft 365 登录页面](https://support.office.com/article/Add-your-company-branding-to-Office-365-Sign-In-Page-a1229cdb-ce19-4da5-90c7-2b9b146aef0a) <br> - [将自定义技术支持信息添加到 Microsoft 365 帮助窗格](https://support.office.com/article/Add-customized-help-desk-info-to-the-Office-365-help-pane-9dd9b104-68f7-4d49-9a30-82561c7d79a3) <br> - [添加与 Azure AD 和其他应用程序的集成](https://support.office.com/article/Integrated-Apps-and-Azure-AD-for-Office-365-administrators-cb2250e3-451e-416f-bf4e-363549652c2a)。  <br> - [详细了解如何使用组](https://support.office.com/Article/Learn-more-about-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2)协作使用电子邮件、日历、文档和聊天 <br> - [在 Microsoft 365 中激活和使用移动设备管理](https://support.office.microsoft.com/article/Manage-mobile-devices-in-Office-365-dd892318-bc44-4eb1-af00-9db5430be3cd) <br> - [监视 Microsoft 365 连接](monitor-connectivity.md) |
-|**电子邮件** <br> (Exchange Online) | - 准备好[使用 Exchange 部署助理](https://technet.microsoft.com/exdeploy2013)通过 Exchange 混合进行迁移  <br> - 使用 [Exchange 迁移顾问](https://aka.ms/office365setup)获取自定义设置指南  <br> - [设置 Exchange Online Protection](../security/office-365-security/set-up-your-eop-service.md) |
+|**电子邮件** <br> (Exchange Online) | - 准备好[使用 Exchange 部署助理](https://technet.microsoft.com/exdeploy2013)通过 Exchange 混合进行迁移  <br> - 使用 [Exchange 迁移顾问](https://aka.ms/office365setup)获取自定义设置指南  <br> - [设置 Exchange Online Protection](../security/defender-365-security/set-up-your-eop-service.md) |
 |**网站** <br> (SharePoint Online) | -配置 [SharePoint Server 2013 的混合功能](/SharePoint/hybrid/hybrid)<br> - [创建并使用网站模板](https://support.office.com/article/Create-and-use-site-templates-60371B0F-00E0-4C49-A844-34759EBDD989)来自定义 SharePoint Online 的外观 <br> - 使用 [SharePoint Online 规划指南](https://support.office.com/article/SharePoint-Online-Planning-Guide-for-Office-365-for-business-d5089cdf-3fd2-4230-acbd-20ecda2f9bb8)或 [SharePoint Online 部署顾问](https://aka.ms/spoguidance)来规划和配置其他功能 <br> - 管理 [视频门户](https://support.office.com/article/Manage-your-Office-365-Video-portal-c059465b-eba9-44e1-b8c7-8ff7793ff5da) |
 |**IM 和在线会议** <br> (Skype for Business Online) | - 为 Lync [Server 2013](/previous-versions/office/lync-server-2013/lync-server-2013-lync-server-2013-hybrid) 或 [Skype for Business 2015 配置混合功能](/skypeforbusiness/hybrid/plan-hybrid-connectivity?bc=%2fSkypeForBusiness%2fbreadcrumb%2ftoc.json&toc=%2fSkypeForBusiness%2ftoc.json)<br> - [设置 Skype for Business Online](https://support.office.com/article/Set-up-Skype-for-Business-Online-40296968-e779-4259-980b-c2de1c044c6e) 并配置通用功能，如呼叫路由、电话会议和共享  <br> - 使用 [Skype for Business 部署顾问](/MicrosoftTeams/faq-journey)获取自定义设置指南 |
 | **文件存储和共享** <br> （OneDrive for Business 和 SharePoint Online） | - [设置 Microsoft 365](https://support.office.com/article/7aa9cdc8-2245-4218-81ee-86fa7c35f1de#BKMK_WhatDif)文件存储和共享：了解何时应该使用 OneDrive for Business 存储文件以及何时使用 ShharePoint Online 团队网站 <br> - [设置文件存储和共享](https://support.office.com/article/7aa9cdc8-2245-4218-81ee-86fa7c35f1de#BKMK_MoveDocsVideo)：了解在 OneDrive for Business 和 SharePoint 团队网站中上传文件有多简单 <br> - [设置文件存储和共享](https://support.office.com/article/7aa9cdc8-2245-4218-81ee-86fa7c35f1de#BKMK_Store)：获取将文件上传到 OneDrive for Business 和团队网站的所有步骤。 了解文件共享的提示 <br> - 使用 [OneDrive for Business 设置指南](https://aka.ms/OD4Bguidance)获取自定义设置指南 |

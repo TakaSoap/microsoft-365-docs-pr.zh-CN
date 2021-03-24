@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: de2da300-dbb6-4725-bb12-b85a9d296e75
 description: '保护你的业务电子邮件和数据免受网络威胁，包括勒索软件、网络钓鱼和恶意附件。 '
-ms.openlocfilehash: 5607d301ceda44fd582055d49daa9082ee321cb9
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 7affa7a2adaa166861c2932ebe32177335236114
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50914482"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51050674"
 ---
 # <a name="top-10-ways-to-secure-microsoft-365-for-business-plans"></a>保护 Microsoft 365 商业版计划的十大方法
 
@@ -55,7 +55,7 @@ Microsoft 建议你完成下表中列出的适用于你的服务计划的任务�
 |9 |[防范恶意附件和带安全附件的文件](secure-your-business-data.md#atp)||![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |10  |[使用安全链接抵御网络钓鱼攻击](secure-your-business-data.md#phishingatp)||![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
 
-开始之前，请查看 Microsoft [365](../../security/mtp/microsoft-secure-score.md) 安全中心中的 Microsoft 365 安全分数。 通过集中式仪表板，你可以监视和提高 Microsoft 365 标识、数据、应用、设备和基础结构的安全性。 您将获得配置建议安全功能、执行与安全相关的任务 (如查看报告) ，或者使用第三方应用程序或软件解决建议。 通过进一步深入了解一组更广泛的 Microsoft 产品和服务，你可以确信地报告组织的安全运行状况。
+开始之前，请查看 Microsoft [365](https://docs.microsoft.com/microsoft-365/security/defender/microsoft-secure-score) 安全中心中的 Microsoft 365 安全分数。 通过集中式仪表板，你可以监视和提高 Microsoft 365 标识、数据、应用、设备和基础结构的安全性。 您将获得配置建议安全功能、执行与安全相关的任务 (如查看报告) ，或者使用第三方应用程序或软件解决建议。 通过进一步深入了解一组更广泛的 Microsoft 产品和服务，你可以确信地报告组织的安全运行状况。
 
 ![Microsoft 安全分数的屏幕截图](../../media/secure-score.png)
 
@@ -132,7 +132,7 @@ Microsoft 365 环境包括恶意软件防护，但您可以通过阻止包含恶
 
 6. 选择 **"保存"。**
 
-有关详细信息，请参阅 EOP 中的反 [恶意软件保护](../../security/office-365-security/anti-malware-protection.md)。
+有关详细信息，请参阅 EOP 中的反 [恶意软件保护](https://docs.microsoft.com/microsoft-365/security/defender-365-security/anti-malware-protection)。
 
 ## <a name="5-protect-against-ransomware"></a>5：防范勒索软件
 <a name="ransomware"> </a>
@@ -254,7 +254,7 @@ Office 邮件加密在发送邮件时提供两种保护选项：
 
 4. 在"防钓鱼"页面上，选择 **"+ 创建"。** 向导将启动，可分步定义防钓鱼策略。
 
-5. 指定策略的名称、说明和设置，如下图所示。 有关 [更多详细信息，请参阅了解 Microsoft Defender for Office 365](../../security/office-365-security/set-up-anti-phishing-policies.md) 选项中的防钓鱼策略。
+5. 指定策略的名称、说明和设置，如下图所示。 有关 [更多详细信息，请参阅了解 Microsoft Defender for Office 365](https://docs.microsoft.com/microsoft-365/security/defender-365-security/set-up-anti-phishing-policies) 选项中的防钓鱼策略。
 
 6. 查看设置后，选择"创建 **此策略"或** " **保存**"（如果适用）。
 
@@ -270,7 +270,7 @@ Office 邮件加密在发送邮件时提供两种保护选项：
 |应用于|选择“收件人域为”。 在“以下任何项”中，选择“选择”。 选择“+ 添加”。 选中域名称旁边的复选框，例如，contoso.com，再选择"添加 **"。** 选择“**完成**”。|
 |
 
-有关详细信息，请参阅在 [Defender for Office 365](../../security/office-365-security/configure-atp-anti-phishing-policies.md)中设置防钓鱼策略。
+有关详细信息，请参阅在 [Defender for Office 365](https://docs.microsoft.com/microsoft-365/security/defender-365-security/configure-atp-anti-phishing-policies)中设置防钓鱼策略。
 
 ## <a name="9-protect-against-malicious-attachments-and-files-with-safe-attachments"></a>9：防范恶意附件和带安全附件的文件
 <a name="atp"> </a>
@@ -302,7 +302,7 @@ Office 邮件加密在发送邮件时提供两种保护选项：
 |应用于|收件人域为 。 . . 选择你的域。|
 |
 
-有关详细信息，请参阅在 [Defender for Office 365](../../security/office-365-security/configure-atp-anti-phishing-policies.md)中设置防钓鱼策略。
+有关详细信息，请参阅在 [Defender for Office 365](https://docs.microsoft.com/microsoft-365/security/defender-365-security/configure-atp-anti-phishing-policies)中设置防钓鱼策略。
 
 ## <a name="10-protect-against-phishing-attacks-with-safe-links"></a>10：使用安全链接抵御网络钓鱼攻击
 <a name="phishingatp"> </a>
@@ -349,4 +349,4 @@ Office 邮件加密在发送邮件时提供两种保护选项：
 |应用于|收件人域为 。 . . 选择你的域。|
 |
 
-有关详细信息，请参阅 [Microsoft Defender for Office 365 中的安全链接](../../security/office-365-security/atp-safe-links.md)。
+有关详细信息，请参阅 [Microsoft Defender for Office 365 中的安全链接](https://docs.microsoft.com/microsoft-365/security/defender-365-security/atp-safe-links)。

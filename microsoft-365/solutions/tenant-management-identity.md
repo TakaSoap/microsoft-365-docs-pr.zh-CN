@@ -16,14 +16,14 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: 为 Microsoft 365 租户部署正确的标识模型，并强制执行强用户登录。
-ms.openlocfilehash: 18d950bcca0c4f24e4777d0e29bd8e319d0de77f
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 57e84b38715c4fbe29f9aa362e363663b0401f91
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50920864"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51052358"
 ---
-# <a name="step-3-identity-for-your-microsoft-365-for-enterprise-tenants"></a>第 3 步： Microsoft 365 企业版租户的标识
+# <a name="step-3-identity-for-your-microsoft-365-for-enterprise-tenants"></a>步骤 3. Microsoft 365 企业版租户的标识
 
 Microsoft 365 租户包括 Azure Active Directory (Azure AD) ，用于管理登录的标识和身份验证。正确配置标识基础结构对于管理组织的 Microsoft 365 用户访问和权限至关重要。
 
@@ -77,7 +77,7 @@ Microsoft 365 租户包括 Azure Active Directory (Azure AD) ，用于管理登�
 | Windows Hello 企业版 | 在 Windows 设备上签名时，将密码替换为强双因素身份验证。 这两个因素是一种与设备和生物识别或 PIN 相关联的新型用户凭据。 | [Windows Hello 企业版概述](/windows/security/identity-protection/hello-for-business/hello-overview) | Microsoft 365 E3 或 E5 |
 | Azure AD 密码保护 | 检测并阻止已知的弱密码及其变体，还可以阻止特定于您的组织的其他弱术语。 | [配置 Azure AD 密码保护](/azure/active-directory/authentication/concept-password-ban-bad) | Microsoft 365 E3 或 E5 |
 | 使用多重身份验证 (MFA) | MFA 要求用户登录需要除用户帐户密码之外的其他验证，例如使用智能手机应用进行验证或发送到智能手机的短信。 有关 [用户](https://support.microsoft.com/office/set-up-multi-factor-authentication-in-microsoft-365-business-a32541df-079c-420d-9395-9d59354f7225) 如何设置 MFA 的说明，请参阅此视频。 | [适用于 Microsoft 365 企业版 MFA](../enterprise/microsoft-365-secure-sign-in.md#mfa) | Microsoft 365 E3 或 E5 |
-| 标识和设备访问配置 | 由建议的先决条件功能及其设置以及条件访问、Intune 和 Azure AD Identity Protection 策略组成的设置和策略，这些策略确定是否应授予给定访问请求以及应在哪些条件下授予。  | [标识和设备访问配置](../security/office-365-security/microsoft-365-policies-configurations.md) | Microsoft 365 E3 或 E5 |
+| 标识和设备访问配置 | 由建议的先决条件功能及其设置以及条件访问、Intune 和 Azure AD Identity Protection 策略组成的设置和策略，这些策略确定是否应授予给定访问请求以及应在哪些条件下授予。  | [标识和设备访问配置](../security/defender-365-security/microsoft-365-policies-configurations.md) | Microsoft 365 E3 或 E5 |
 | Azure AD Identity Protection | 防止凭据泄露，攻击者可确定用户帐户名和密码，以访问组织的云服务和数据。 | [Azure AD Identity Protection](/azure/active-directory/active-directory-identityprotection) | Identity 为 & 威胁防护加载项的 Microsoft 365 E5 或 Microsoft 365 E3 |
 |  |  |  |
 

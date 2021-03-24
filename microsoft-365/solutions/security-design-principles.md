@@ -14,12 +14,12 @@ ms.collection:
 - M365solutions
 ms.custom: seo-marvel-jun2020
 f1.keywords: NOCSH
-ms.openlocfilehash: b6696d15d728e6b66be5e54a9a3c372564c9f187
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 7cd9098766024093a0b9fa2d6e95131bf13d09df
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50920852"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51052478"
 ---
 # <a name="security-hurdles-you-can-sail-overone-architects-viewpoint"></a>可以克服的安全障碍 - 一个架构师的见解
 
@@ -49,7 +49,7 @@ Microsoft 网络安全架构师 [Kozeta Garrett](https://www.linkedin.com/in/koz
 
 接下来，采用零信任体系结构方法。 首先构建一个基于身份的新式安全外围。 设计安全体系结构，在验证每次访问尝试（无论是 On-prem 还是云）之前，都会被视为不受信任的—"从不信任，始终验证"。 此设计方法不仅提高了安全性和工作效率，还允许用户从任何位置使用任意设备类型。 Microsoft 365 中包含的复杂云控件可帮助你保护用户的身份，同时根据用户风险级别控制对有价值资源的访问。
 
-有关建议的配置，请参阅 [标识和设备访问配置](../security/office-365-security/microsoft-365-policies-configurations.md)。
+有关建议的配置，请参阅 [标识和设备访问配置](../security/defender-365-security/microsoft-365-policies-configurations.md)。
 
 ## <a name="transition-security-controls-to-the-cloud"></a>将安全控件转换到云
 

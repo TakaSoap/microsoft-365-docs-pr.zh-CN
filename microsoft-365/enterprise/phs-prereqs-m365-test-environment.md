@@ -14,20 +14,20 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 创建 Microsoft 365 环境以测试标识和设备访问，含密码哈希同步身份验证的先决条件。
-ms.openlocfilehash: 3236c79e308f269c07146ff094c7ae27271b97fc
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 2ca83b6ab715a752d3d9620af631263eb5d84fa3
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50928046"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51051242"
 ---
 # <a name="identity-and-device-access-prerequisites-for-password-hash-synchronization-in-your-microsoft-365-test-environment"></a>Microsoft 365 测试环境中密码哈希同步的标识和设备访问先决条件
 
 *本测试实验室指南仅适用于 Microsoft 365 企业版测试环境。*
 
-[](../security/office-365-security/microsoft-365-policies-configurations.md)标识和设备访问配置是一组配置和条件访问策略，用于保护对 Microsoft 365 企业版中与 Azure Active Directory (Azure AD) 集成的所有服务的访问。
+[](../security/defender-365-security/microsoft-365-policies-configurations.md)标识和设备访问配置是一组配置和条件访问策略，用于保护对 Microsoft 365 企业版中与 Azure Active Directory (Azure AD) 集成的所有服务的访问。
 
-本文介绍如何配置 Microsoft 365 测试环境，该环境满足标识和设备访问的混合密码哈希 [同步](../security/office-365-security/identity-access-prerequisites.md#prerequisites) 身份验证先决条件配置的要求。
+本文介绍如何配置 Microsoft 365 测试环境，该环境满足标识和设备访问的混合密码哈希 [同步](../security/defender-365-security/identity-access-prerequisites.md#prerequisites) 身份验证先决条件配置的要求。
 
 设置此测试环境有 10 个阶段：
 
@@ -119,11 +119,11 @@ ms.locfileid: "50928046"
   Get-CsOAuthConfiguration
   ```
 
-结果是满足 [Active Directory 和用于标识和设备访问的密码哈希同步先决条件配置](../security/office-365-security/identity-access-prerequisites.md#prerequisites)的要求的环境。 
+结果是满足 [Active Directory 和用于标识和设备访问的密码哈希同步先决条件配置](../security/defender-365-security/identity-access-prerequisites.md#prerequisites)的要求的环境。 
 
 ## <a name="next-step"></a>后续步骤
 
-使用[常见标识和设备访问策略](../security/office-365-security/identity-access-policies.md)配置基于这些先决条件构建的策略并保护标识和设备。
+使用[常见标识和设备访问策略](../security/defender-365-security/identity-access-policies.md)配置基于这些先决条件构建的策略并保护标识和设备。
 
 ## <a name="see-also"></a>另请参阅
 

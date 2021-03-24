@@ -14,12 +14,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 组织当前针对其 Microsoft 365 环境所面临的最常见威胁和攻击方案，以及用于缓解这些风险的建议操作。
-ms.openlocfilehash: b238ed744d4998d940af456418dbb14ff31360a9
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 328bd4c079531ee57b41422fd2d3f2c53ef8dc18
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50909078"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51051086"
 ---
 # <a name="microsoft-365-security-for-business-decision-makers-bdms"></a>Microsoft 365 商业版决策者 (BDM) 
 
@@ -29,7 +29,7 @@ ms.locfileid: "50909078"
 
 [![缩略图 Microsoft 365 BDM 安全建议电子表格](../downloads/microsoft-365-bdm-security-recommendations-spreadsheet-thumb.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/Microsoft-365-BDM-security-recommendations-spreadsheet.xlsx)
 
-Microsoft 在租户中提供了安全分数工具，可基于常规活动自动分析安全状态、分配分数并提供安全改进建议。 在采取本文建议的操作之前，请记下当前的分数和建议。 本文中建议的操作将提高分数。 目标不是获得最大分数，而是注意以不会对用户工作效率造成负面影响的方式保护环境的机会。 请参阅 [Microsoft 安全分数](mtp/microsoft-secure-score.md)。
+Microsoft 在租户中提供了安全分数工具，可基于常规活动自动分析安全状态、分配分数并提供安全改进建议。 在采取本文建议的操作之前，请记下当前的分数和建议。 本文中建议的操作将提高分数。 目标不是获得最大分数，而是注意以不会对用户工作效率造成负面影响的方式保护环境的机会。 请参阅 [Microsoft 安全分数](defender/microsoft-secure-score.md)。
 
 ![按照以下步骤降低业务风险。](../media/security/security-for-bdms-overview.png)
 
@@ -70,7 +70,7 @@ Microsoft 在租户中提供了安全分数工具，可基于常规活动自动�
 
 |建议  |E3  |E5  |
 |---------|---------|---------|
-|**设置多重身份验证并使用建议的条件访问策略，包括登录风险策略**。 Microsoft 推荐并测试了一组协同工作以保护所有云应用（包括 Office 365 和 Microsoft 365 服务）的策略。 请参阅 [标识和设备访问配置](./office-365-security/microsoft-365-policies-configurations.md)。 | |![绿色选中标记](../media/green-check-mark.png)|
+|**设置多重身份验证并使用建议的条件访问策略，包括登录风险策略**。 Microsoft 推荐并测试了一组协同工作以保护所有云应用（包括 Office 365 和 Microsoft 365 服务）的策略。 请参阅 [标识和设备访问配置](./defender-365-security/microsoft-365-policies-configurations.md)。 | |![绿色选中标记](../media/green-check-mark.png)|
 |**要求所有用户进行多重身份验证**。 如果您没有实施建议的条件访问策略所需的许可，则至少需要为所有用户进行多重身份验证。|![绿色选中标记](../media/green-check-mark.png)|![绿色选中标记](../media/green-check-mark.png)|
 |**提高邮件中恶意软件防护的级别**。 Office 365 或 Microsoft 365 环境包括恶意软件防护，但您可以通过阻止包含通常用于恶意软件的文件类型的附件来增强此保护。|![绿色选中标记](../media/green-check-mark.png)|![绿色选中标记](../media/green-check-mark.png)|
 |**保护你的电子邮件免受目标网络钓鱼攻击**。 如果为 Office 365 或 Microsoft 365 环境配置了一个或多个自定义域，可以配置目标防钓鱼保护。 防钓鱼保护是 Office 365 Defender 的一部分，可帮助保护你的组织免受基于恶意模拟的网络钓鱼攻击和其他网络钓鱼攻击。 如果您尚未配置自定义域，则无需这样做。| |![绿色选中标记](../media/green-check-mark.png)|
@@ -116,7 +116,7 @@ Microsoft 365 信息保护功能可帮助你发现你拥有的信息、存储位
 
 |建议 |E3|E5 |
 |---------|---------|---------|
-|**查看并优化条件访问和相关策略，以与零信任网络的目标保持一致**。 防范已知威胁包括实现一组建议 [的策略](./office-365-security/microsoft-365-policies-configurations.md)。 查看这些策略的实现，以确保保护应用和数据免受获得网络访问权限的黑客的攻击。 请注意，为 Windows 10 建议的 Intune 应用保护策略支持 Windows 信息保护 (WIP) 。 WIP 防止通过应用和服务（如电子邮件、社交媒体和公共云）意外泄露组织数据。 |         |![绿色选中标记](../media/green-check-mark.png)|
+|**查看并优化条件访问和相关策略，以与零信任网络的目标保持一致**。 防范已知威胁包括实现一组建议 [的策略](./defender-365-security/microsoft-365-policies-configurations.md)。 查看这些策略的实现，以确保保护应用和数据免受获得网络访问权限的黑客的攻击。 请注意，为 Windows 10 建议的 Intune 应用保护策略支持 Windows 信息保护 (WIP) 。 WIP 防止通过应用和服务（如电子邮件、社交媒体和公共云）意外泄露组织数据。 |         |![绿色选中标记](../media/green-check-mark.png)|
 |**禁用外部电子邮件转发**。 获取用户邮箱访问权限的黑客可以通过将邮箱设置为自动转发电子邮件来窃取您的邮件。 即使没有用户感知，也可能发生此情况。 您可以通过配置邮件流规则来防止发生这种情况。|![绿色选中标记](../media/green-check-mark.png) |![绿色选中标记](../media/green-check-mark.png)|
 |**禁用匿名外部日历共享**。 默认情况下，允许外部匿名日历共享。 [禁用日历](/exchange/sharing/sharing-policies/modify-a-sharing-policy) 共享以减少敏感信息的潜在泄露。|![绿色选中标记](../media/green-check-mark.png) |![绿色选中标记](../media/green-check-mark.png)|
 |**为敏感数据配置数据丢失防护策略**。 在安全与合规中心创建数据丢失防护策略，以发现和保护敏感数据，如信用卡号、社会保险号 &amp; 和银行帐号。 Microsoft 365 包括许多可在数据丢失防护策略中使用的预定义敏感信息类型。 您还可以为环境自定义的敏感数据创建自己的敏感信息类型。 |![绿色选中标记](../media/green-check-mark.png)|![绿色选中标记](../media/green-check-mark.png)|

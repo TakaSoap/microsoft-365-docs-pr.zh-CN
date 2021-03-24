@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 ms.assetid: c123694a-1efb-459e-a8d5-2187975373dc
 description: 了解 Microsoft 365 商业高级版提供的安全功能，以帮助保护电脑、手机和平板电脑上的数据。
-ms.openlocfilehash: 74a22b654e60e4a980e397598117bb4c435e833b
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: d641fc66e27f3c5e0a7c8609e4fa25fac93d8561
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50912542"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51052246"
 ---
 # <a name="microsoft-365-business-premium-security-and-compliance-features"></a>Microsoft 365 商业高级版安全性和合规性功能
 
@@ -63,7 +63,7 @@ Microsoft 365 商业高级版提供简化的安全功能，以帮助保护电脑
 
 Microsoft 365商业高级版中的高级功能可用来帮助您保护企业免受网络威胁并保护敏感信息。
   
-- **[Microsoft Defender for Office 365](../security/office-365-security/office-365-atp.md)**
+- **[Microsoft Defender for Office 365](../security/defender-365-security/defender-for-office-365.md)**
     
     Microsoft Defender for Office 365 可帮助你的企业抵御旨在泄露员工或客户信息的复杂的网络钓鱼和勒索软件攻击。 这些功能包括： 
     

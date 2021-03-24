@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解 Contoso 如何使用 Microsoft 365 企业版中的信息保护功能保护云中的数字资产。
-ms.openlocfilehash: 90a82fbd4dd77ff0f8faa024ced177a640a10b80
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 3bd778708e30253e53cc465e89f7b783141771de
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50911034"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51051492"
 ---
 # <a name="information-protection-for-the-contoso-corporation"></a>Contoso Corporation 的信息保护
 
@@ -76,9 +76,9 @@ Contoso 按照以下步骤为 Microsoft 365 企业版准备其信息保护要求
 
 作为推出 Exchange Online 和 SharePoint 的一部分，Contoso 配置了以下一组条件访问策略，并应用于相应的组：
 
-- [设备策略上的托管和非托管应用程序访问](../security/office-365-security/identity-access-policies.md)
-- [Exchange Online 访问策略](../security/office-365-security/secure-email-recommended-policies.md)
-- [SharePoint 访问策略](../security/office-365-security/sharepoint-file-access-policies.md)
+- [设备策略上的托管和非托管应用程序访问](../security/defender-365-security/identity-access-policies.md)
+- [Exchange Online 访问策略](../security/defender-365-security/secure-email-recommended-policies.md)
+- [SharePoint 访问策略](../security/defender-365-security/sharepoint-file-access-policies.md)
 
 下面是一组 Contoso 信息保护策略。
 
@@ -117,7 +117,7 @@ Contoso 按照以下步骤为 Microsoft 365 企业版准备其信息保护要求
 
 ## <a name="see-also"></a>另请参阅
 
-[安全性路线图](../security/office-365-security/security-roadmap.md)
+[安全性路线图](../security/defender-365-security/security-roadmap.md)
 
 [Microsoft 365 企业版概述](microsoft-365-overview.md)
 

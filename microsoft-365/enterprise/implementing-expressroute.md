@@ -20,12 +20,12 @@ search.appverid:
 - BCS160
 ms.assetid: 77735c9d-8b80-4d2f-890e-a8598547dea6
 description: 了解如何实现适用于 Office 365 的 ExpressRoute，从而提供许多面向 Internet 的 Office 365 服务的备用路由路径。
-ms.openlocfilehash: d0f0b5156aae5a3e2c38f51ba0b74738918593e9
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: d75fe3a6dab4926babeef61fc14894566ff819b0
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50909828"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51051362"
 ---
 # <a name="implementing-expressroute-for-office-365"></a>实现适用于 Office 365 的 ExpressRoute
 
@@ -225,7 +225,7 @@ ExpressRoute for Office 365 提供了指向许多面向 Internet 的 Office 365 
 
 - 确定 ExpressRoute 路由将在你的网络中播发多远，以及客户端选择 Internet 或 ExpressRoute 路径的机制是什么;例如，直接路由或应用程序代理。
 
-- 规划 DNS 记录更改，包括 [发件人策略框架](../security/office-365-security/set-up-spf-in-office-365-to-help-prevent-spoofing.md) 条目。
+- 规划 DNS 记录更改，包括 [发件人策略框架](../security/defender-365-security/set-up-spf-in-office-365-to-help-prevent-spoofing.md) 条目。
 
 - 规划 NAT 策略，包括出站和入站源 NAT。
 

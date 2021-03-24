@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 ms.assetid: c0531a6f-9e25-4f2d-ad0e-a70bfef09ac0
 description: 规划 Office 365 部署时要使用的外部域名系统记录的引用列表。
-ms.openlocfilehash: c2384f1e330692d43c923a7932db4c3ff2bc99ae
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 3aa6bf3362005eb0dae5bca40322fe2178d5d69f
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50924208"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51051374"
 ---
 # <a name="external-domain-name-system-records-for-office-365"></a>Office 365 的外部域名系统记录
 
@@ -103,7 +103,7 @@ Office 365 中的电子邮件需要几个不同的记录。所有客户应该使
 <a name="BKMK_SPFrecords"> </a>
 
 > [!IMPORTANT]
->  SPF 旨在帮助防止欺骗，但还有 SPF 无法防止的欺骗技术。为了防止这些欺骗，在你设置 SPF 后，也应该为 Office 365 配置 DKIM 和 DMARC。请参阅[Use DKIM to validate outbound email sent from your domain in Office 365](../security/office-365-security/use-dkim-to-validate-outbound-email.md)，了解入门知识。之后，请参阅[Use DMARC to validate email in Office 365](../security/office-365-security/use-dmarc-to-validate-email.md)。
+>  SPF 旨在帮助防止欺骗，但还有 SPF 无法防止的欺骗技术。为了防止这些欺骗，在你设置 SPF 后，也应该为 Office 365 配置 DKIM 和 DMARC。请参阅[Use DKIM to validate outbound email sent from your domain in Office 365](../security/defender-365-security/use-dkim-to-validate-outbound-email.md)，了解入门知识。之后，请参阅[Use DMARC to validate email in Office 365](../security/defender-365-security/use-dmarc-to-validate-email.md)。
   
 SPF 记录是有助于防止其他人使用你的域发送垃圾邮件或其他恶意电子邮件的 TXT 记录。发送方策略框架 (SPF) 通过标识有权从你的域发送电子邮件的服务器来记录工作。
   
@@ -125,7 +125,7 @@ Values: v=spf1 include:spf.protection.outlook.com -all
 对于不只针对 Office 365 使用 Exchange Online 电子邮件的应用场景（例如，当你还使用源自 SharePoint Online 的电子邮件时），请使用下表来确定要在记录的值中包括的内容。
   
 > [!NOTE]
-> 如果你拥有一个复杂的应用场景（例如，包括跨防火墙管理电子邮件流量的边缘电子邮件服务器），则需设置一个更为详细的 SPF 记录。了解[如何：在 Office 365 中设置 SPF 记录以帮助预防欺骗](../security/office-365-security/set-up-spf-in-office-365-to-help-prevent-spoofing.md)。也可以阅读 [Office 365 如何使用发件人策略框架来帮助预防欺骗](../security/office-365-security/how-office-365-uses-spf-to-prevent-spoofing.md)，详细了解如何在 Office 365 中使用 SPF。
+> 如果你拥有一个复杂的应用场景（例如，包括跨防火墙管理电子邮件流量的边缘电子邮件服务器），则需设置一个更为详细的 SPF 记录。了解[如何：在 Office 365 中设置 SPF 记录以帮助预防欺骗](../security/defender-365-security/set-up-spf-in-office-365-to-help-prevent-spoofing.md)。也可以阅读 [Office 365 如何使用发件人策略框架来帮助预防欺骗](../security/defender-365-security/how-office-365-uses-spf-to-prevent-spoofing.md)，详细了解如何在 Office 365 中使用 SPF。
   
 | 数字|如果你使用的是...  <br/> |用途  <br/> |添加以下包含项  <br/> |
 |:-----|:-----|:-----|:-----|
@@ -181,6 +181,6 @@ TXT Name @
 Values: v=spf1 include:spf.protection.outlook.com include:mail.contoso.com -all
 ```
 
-这些是一些常见示例，在你针对电子邮件向 Office 365 添加域时，可以帮助你采用现有 SPF 记录。例如，如果你拥有一个复杂的应用场景，该场景包括跨防火墙管理电子邮件流量的边缘电子邮件服务器，则需设置一个更为详细的 SPF 记录。了解[如何：在 Office 365 中设置 SPF 记录以帮助预防欺骗](../security/office-365-security/set-up-spf-in-office-365-to-help-prevent-spoofing.md)。
+这些是一些常见示例，在你针对电子邮件向 Office 365 添加域时，可以帮助你采用现有 SPF 记录。例如，如果你拥有一个复杂的应用场景，该场景包括跨防火墙管理电子邮件流量的边缘电子邮件服务器，则需设置一个更为详细的 SPF 记录。了解[如何：在 Office 365 中设置 SPF 记录以帮助预防欺骗](../security/defender-365-security/set-up-spf-in-office-365-to-help-prevent-spoofing.md)。
   
 以下是可以用于返回的简短链接：[https://aka.ms/o365edns]()

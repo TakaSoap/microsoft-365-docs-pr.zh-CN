@@ -20,12 +20,12 @@ description: 了解如何验证域和在任何 DNS 托管提供商处为 Microso
 ms.custom:
 - okr_smb
 - AdminSurgePortfolio
-ms.openlocfilehash: d6e8a5a0e23bf9bb9e302566a72b9e1cc6b7bff4
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 06a5e7d081a16cd8d5aae28268b3aaf737981a43
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50915646"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51051038"
 ---
 # <a name="add-dns-records-to-connect-your-domain"></a>添加 DNS 记录以连接你的域
 
@@ -129,7 +129,7 @@ ms.locfileid: "50915646"
 
 SPF 旨在帮助防骗，但有些骗术是 SPF 所无法防范的。 为了防范这些骗术，在设置 SPF 后，还应为 Microsoft 365 设置 DKIM 和 DMARC。 
 
-若要开始进行设置，请参阅[使用 DKIM 验证从 Microsoft 365 中的域发送的出站电子邮件](../../security/office-365-security/use-dkim-to-validate-outbound-email.md)和[使用 DMARC 验证 Microsoft 365 中的电子邮件](../../security/office-365-security/use-dmarc-to-validate-email.md)。
+若要开始进行设置，请参阅[使用 DKIM 验证从 Microsoft 365 中的域发送的出站电子邮件](../../security/defender-365-security/use-dkim-to-validate-outbound-email.md)和[使用 DMARC 验证 Microsoft 365 中的电子邮件](../../security/defender-365-security/use-dmarc-to-validate-email.md)。
 
 ### <a name="add-srv-records-for-communications-services-teams-skype-for-business"></a>为通信服务（Teams、Skype for Business）添加 SRV 记录
 

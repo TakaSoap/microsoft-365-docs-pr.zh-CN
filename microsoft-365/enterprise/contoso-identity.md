@@ -14,12 +14,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Contoso 如何利用标识即服务 (IDaaS)，并为其员工提供基于云的身份验证以及为其合作伙伴和客户提供联合身份验证。
-ms.openlocfilehash: accd60f6699e7ebf04963213128d1ca1ffc8f7fe
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: f3c8746345683652ce601400ae7297e96fff2ee3
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50911068"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51051516"
 ---
 # <a name="identity-for-the-contoso-corporation"></a>Contoso Corporation 的标识
 
@@ -64,7 +64,7 @@ PHS 将本地 AD DS 林与 Microsoft 365 企业版订阅的 Azure AD 租户同�
  
 ## <a name="conditional-access-policies-for-identity-and-device-access"></a>针对标识和设备访问的条件访问策略
 
-Contoso 为以下三种保护级别创建了一组 Azure AD 和 Intune [条件访问策略](../security/office-365-security/identity-access-policies.md)：
+Contoso 为以下三种保护级别创建了一组 Azure AD 和 Intune [条件访问策略](../security/defender-365-security/identity-access-policies.md)：
 
 - *基线* 保护适用于所有用户帐户。
 - *敏感* 保护适用于高层领导和管理人员。

@@ -13,12 +13,12 @@ ms.collection:
 - Adm_O365
 ms.custom: AdminSurgePortfolio
 description: 监视发送到或发送自对业务影响较高的帐户的失败和延迟的电子邮件。
-ms.openlocfilehash: b31cbf79b5b1b8f882c4c7bc8926779410baefe3
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 0bba1f87f80de9fea249ce2604e83ceeadfb79ee
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50914050"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51050638"
 ---
 # <a name="manage-and-monitor-priority-accounts"></a>管理和监视优先级帐户
 
@@ -26,12 +26,12 @@ ms.locfileid: "50914050"
 
 为了帮助你的组织保护这些帐户，你现在可以将特定用户指定为优先帐户，并利用特定于应用的功能，这些功能可以提供额外的保护。 将来，更多应用和功能将支持优先帐户，首先，我们宣布有两项功能：优先级帐户保护和高级邮件 **流监视**。 
 
-- 优先级帐户保护 **-** Microsoft Defender for Office 365 (以前是 Office 365 高级威胁防护) 支持将优先级帐户作为标记，这些标记可用于警报、报告和调查的筛选器。 有关详细信息，请查看 Microsoft [Defender for Office 365](../../security/office-365-security/user-tags.md)中的用户标记。
+- 优先级帐户保护 **-** Microsoft Defender for Office 365 (以前是 Office 365 高级威胁防护) 支持将优先级帐户作为标记，这些标记可用于警报、报告和调查的筛选器。 有关详细信息，请查看 Microsoft [Defender for Office 365](../../security/defender-365-security/user-tags.md)中的用户标记。
 - **高级邮件流监视** - 正常邮件流对于业务成功至关重要，传递延迟或失败会对业务产生负面影响。 您可以选择失败或延迟电子邮件的阈值，在超出该阈值时接收警报，并查看优先级帐户的电子邮件问题报告。 有关详细信息，请查看新式 EAC 中的优先级帐户电子邮件 [问题报告](/exchange/monitoring/mail-flow-reports/mfr-email-issues-for-priority-accounts-report)
 
-有关优先级帐户的安全最佳做法，请参阅安全 [建议优先级帐户](../../security/office-365-security/security-recommendations-for-priority-accounts.md)。
+有关优先级帐户的安全最佳做法，请参阅安全 [建议优先级帐户](../../security/defender-365-security/security-recommendations-for-priority-accounts.md)。
 
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>准备工作
 
 本主题 **中所述** 的优先级帐户保护功能仅适用于满足以下要求的组织：
 

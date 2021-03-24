@@ -15,12 +15,12 @@ ms.collection:
 ms.custom: AdminSurgePortfolio
 search.appverid: MET150
 description: 了解 Microsoft Defender 防病毒如何保护 Windows 设备免受软件威胁（如病毒、恶意软件和间谍软件）的侵害。
-ms.openlocfilehash: ce88e4f7b1caf3a98ebd6dc56d66f0d0fc99a9ad
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 5fe55817018eeae49e6e41c95d93006b6f05ece0
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50912426"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51052214"
 ---
 # <a name="threats-detected-by-microsoft-defender-antivirus"></a>Microsoft Defender 防病毒 检测到的威胁
 
@@ -89,4 +89,4 @@ Microsoft Defender 防病毒是操作系统的一部分，在运行 Windows 10 �
 [如何打开和使用 Windows](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-security-center-antivirus) 安全中心应用中的 Microsoft Defender 防病毒 (文章) \
 [如何使用组策略启用 Microsoft Defender](/mem/intune/user-help/turn-on-defender-windows#turn-on-windows-defender) 防病毒 (文章) \
 [如何更新防病毒定义 (](/mem/intune/user-help/turn-on-defender-windows#update-your-antivirus-definitions) 文章) \
-[如何将恶意软件和非](../security/office-365-security/submitting-malware-and-non-malware-to-microsoft-for-analysis.md) 恶意软件提交给 Microsoft 进行分析 (文章) 
+[如何将恶意软件和非](/microsoft-365/security/defender-365-security/submitting-malware-and-non-malware-to-microsoft-for-analysis) 恶意软件提交给 Microsoft 进行分析 (文章) 

@@ -23,7 +23,7 @@ description: '了解如何在管理 DNS 记录时为由世纪网运营的 Office
 monikerRange: o365-21vianet
 ms.openlocfilehash: 1eaa2bcc7263eaa12e53131246abd591006b0536
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/19/2021
 ms.locfileid: "50914350"

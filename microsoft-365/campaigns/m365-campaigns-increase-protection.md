@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: 获取有关在 Microsoft 365 中提高保护级别的帮助
-ms.openlocfilehash: aff5491bd8319be2daf9c9c4ed0fc6e49b27ee27
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 0e8b63fec3b764f10039e9f738fd047ff2c513a4
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50912206"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51052202"
 ---
 # <a name="increase-threat-protection-for-microsoft-365-subscription"></a>增强 Microsoft 365 订阅的威胁防护
 
@@ -36,7 +36,7 @@ ms.locfileid: "50912206"
 
 开始之前，请检查 Microsoft 安全分数。 Microsoft 安全分数根据常规活动和安全设置分析组织的安全性，并分配分数。 首先记下当前分数。 执行本文中推荐的操作会增加分数。 目标不是达到最高分，而是注意保护环境的机会，这些机会不会对用户的工作效率产生负面影响。
 
-有关详细信息，请参阅 [Microsoft 安全分数](../security/mtp/microsoft-secure-score.md)。
+有关详细信息，请参阅 [Microsoft 安全分数](../security/defender/microsoft-secure-score.md)。
 
 ## <a name="raise-the-level-of-protection-against-malware-in-mail"></a>提高邮件中恶意软件防护级别
 
@@ -58,7 +58,7 @@ Office 365 或 Microsoft 365 环境包括恶意软件防护，但您可以通过
 
 6. 单击“保存”。
 
-有关详细信息，请参阅 EOP 中的反 [恶意软件保护](../security/office-365-security/anti-malware-protection.md)。
+有关详细信息，请参阅 EOP 中的反 [恶意软件保护](../security/defender-365-security/anti-malware-protection.md)。
 
 ## <a name="protect-against-ransomware"></a>防范勒索软件
 
@@ -138,7 +138,7 @@ Office 365 或 Microsoft 365 环境包括恶意软件防护，但您可以通过
 
 4. 在"**防钓鱼"页面上**，选择 **"+ 创建"。** 向导将启动，可分步定义防钓鱼策略。
 
-5. 指定策略的名称、说明和设置，如下图所示。 有关详细信息，请参阅了解 [Microsoft Defender for Office 365](../security/office-365-security/set-up-anti-phishing-policies.md)选项中的防钓鱼策略。
+5. 指定策略的名称、说明和设置，如下图所示。 有关详细信息，请参阅了解 [Microsoft Defender for Office 365](../security/defender-365-security/set-up-anti-phishing-policies.md)选项中的防钓鱼策略。
 
 6. 查看设置后，选择"创建此策略" **或** " **保存**"（如果适用）。
 
@@ -153,7 +153,7 @@ Office 365 或 Microsoft 365 环境包括恶意软件防护，但您可以通过
 |添加受信任的发件人和域|可以在此处添加您自己的域，或任何其他受信任域。|
 |应用于|选择“收件人域为”。 在“以下任何项”中，选择“选择”。 选择“+ 添加”。 选中域名称旁边的复选框，例如 *contoso。 <span> <span>com*，在列表中，**然后选择添加**。 选择“**完成**”。|
 
-有关详细信息，请参阅在 [Defender for Office 365](../security/office-365-security/set-up-anti-phishing-policies.md)中设置防钓鱼策略。
+有关详细信息，请参阅在 [Defender for Office 365](../security/defender-365-security/set-up-anti-phishing-policies.md)中设置防钓鱼策略。
 
 ## <a name="protect-against-malicious-attachments-files-and-links-with-defender-for-office-365"></a>使用 Defender for Office 365 防止恶意附件、文件和链接
 
@@ -207,7 +207,7 @@ Office 365 或 Microsoft 365 环境包括恶意软件防护，但您可以通过
 |检测时重定向附件|启用重定向 (选中此框)  <br/> 输入管理员帐户或邮箱设置以隔离。 <br/> 如果恶意软件扫描附件出现时间过或出现错误，请应用 (选中此框) 。|
 |应用于|收件人域为 。 . . 选择你的域。|
 
-有关详细信息，请参阅在 [Defender for Office 365](../security/office-365-security/set-up-anti-phishing-policies.md)中设置防钓鱼策略。
+有关详细信息，请参阅在 [Defender for Office 365](../security/defender-365-security/set-up-anti-phishing-policies.md)中设置防钓鱼策略。
 
 ### <a name="set-up-safe-links-in-the-security--compliance-center"></a>在安全与合规中心&安全链接
 
@@ -250,7 +250,7 @@ Office 365 或 Microsoft 365 环境包括恶意软件防护，但您可以通过
 |使用安全附件扫描可下载内容|选中此框。|
 |应用于|收件人域为 。 . . 选择你的域。|
 
-有关详细信息，请参阅适用于 [Office 365 的 Defender 中的安全链接](../security/office-365-security/atp-safe-links.md)。
+有关详细信息，请参阅适用于 [Office 365 的 Defender 中的安全链接](../security/defender-365-security/safe-links.md)。
 
 ## <a name="turn-on-the-unified-audit-log"></a>打开统一审核日志
 

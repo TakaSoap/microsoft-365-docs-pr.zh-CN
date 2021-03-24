@@ -16,12 +16,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 了解 Microsoft 365 组过期策略。
-ms.openlocfilehash: 8232e7df2a8390b905386773ed0656eb8239d5c5
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 65a746751cd523a5dadce3eca573e6a9bfce0166
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50920912"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51052298"
 ---
 # <a name="microsoft-365-group-expiration-policy"></a>Microsoft 365 组过期策略
 
@@ -37,6 +37,8 @@ ms.locfileid: "50920912"
 - SharePoint - 查看、编辑、下载、移动、共享或上载文件。  (查看 SharePoint 页面不作为自动续订的操作。) 
 - Outlook - 加入组、从组读取或写入组邮件，就像 Outlook 网页 (邮件) 。
 - Teams - 访问团队频道。
+
+请注意，将触发自动组续订的唯一 Yammer 活动是，将文档上传到社区内的 SharePoint。
 
 > [!IMPORTANT]
 > 更改过期策略时，该服务将重新计算每个组的到期日期。 它始终从组创建日期开始计数，然后应用新的过期策略。
