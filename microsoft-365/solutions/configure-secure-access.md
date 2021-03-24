@@ -12,13 +12,13 @@ ms.collection:
 - M365-security-compliance
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: 11cd4222978487b23a12262ec3b7e8d6a0fcf230
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 8c31aa5bd255fa1c220ae3e7643ffe5b2e4b0b25
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50916354"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51050882"
 ---
-# <a name="configure-secure-access-to-microsoft-365-services"></a><span data-ttu-id="b940e-103">配置对 Microsoft 365 服务的安全访问</span><span class="sxs-lookup"><span data-stu-id="b940e-103">Configure secure access to Microsoft 365 services</span></span>
+# <a name="configure-secure-access-to-microsoft-365-services"></a><span data-ttu-id="cf262-103">配置对 Microsoft 365 服务的安全访问</span><span class="sxs-lookup"><span data-stu-id="cf262-103">Configure secure access to Microsoft 365 services</span></span>
 
-<span data-ttu-id="b940e-104">此解决方案基于["M365 黄金配置](../security/office-365-security/microsoft-365-policies-configurations.md)" -- 针对三层保护实现 MFA、条件访问和相关策略的指导：基线、敏感、高度敏感。</span><span class="sxs-lookup"><span data-stu-id="b940e-104">This solution is based on the "[M365 golden config](../security/office-365-security/microsoft-365-policies-configurations.md)" -- prescriptive guidance for implementing MFA, conditional access, and related policies for three tiers of protection: baseline, sensitive, highly sensitive.</span></span>
+<span data-ttu-id="cf262-104">此解决方案基于["M365 黄金配置](../security/defender-365-security/microsoft-365-policies-configurations.md)" -- 针对三层保护实现 MFA、条件访问和相关策略的指导：基线、敏感、高度敏感。</span><span class="sxs-lookup"><span data-stu-id="cf262-104">This solution is based on the "[M365 golden config](../security/defender-365-security/microsoft-365-policies-configurations.md)" -- prescriptive guidance for implementing MFA, conditional access, and related policies for three tiers of protection: baseline, sensitive, highly sensitive.</span></span>
