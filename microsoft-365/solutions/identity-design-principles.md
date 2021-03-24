@@ -14,12 +14,12 @@ ms.collection:
 - M365solutions
 ms.custom: seo-marvel-jun2020
 f1.keywords: NOCSH
-ms.openlocfilehash: 10cebf0ab74936d7275586f2e8f09c841c8c653f
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 746ca59fd0e9eb0d93d93c00b6a279a9156cc524
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50918310"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51050734"
 ---
 # <a name="to-identity-and-beyondone-architects-viewpoint"></a>为了标识和超越 — 一个架构师的见解
 
@@ -135,9 +135,9 @@ Azure AD 的策略引擎是使用条件 [访问策略实现的](/azure/active-di
 - [Azure AD Identity Protection](/azure/active-directory/identity-protection/) 
 - [Microsoft Defender for Identity](/azure-advanced-threat-protection/)
 - [Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)
-- [Microsoft Defender for Office 365](../security/office-365-security/office-365-atp.md?view=o365-worldwide)
+- [Microsoft Defender for Office 365](../security/defender-365-security/defender-for-office-365.md?view=o365-worldwide)
 - [Microsoft Cloud App Security](/cloud-app-security/) (MCAS) 
-- [Microsoft 365 Defender](../security/mtp/microsoft-threat-protection.md?view=o365-worldwide)
+- [Microsoft 365 Defender](../security/defender/microsoft-365-defender.md?view=o365-worldwide)
 - [Microsoft Intune](/mem/intune/)
 - [Microsoft 信息保护](../compliance/information-protection.md?view=o365-worldwide) (MIP) 
 - [Azure Sentinel](/azure/sentinel/)
@@ -227,7 +227,7 @@ Azure AD 具有 [详细的审核和报告](/azure/active-directory/reports-monit
 
 ### <a name="security-and-compliance-center-scc"></a>安全与合规中心 (SCC) 
 
-[Office 365](../security/office-365-security/permissions-in-the-security-and-compliance-center.md) 安全与&中心中的权限是"角色组"的集合，它们与 Azure AD 角色不同。 这可能会令人困惑，因为其中一些角色组的名称与 Azure AD 角色 (例如，Security Reader) ，但是它们可以具有不同的成员身份。 我想要使用 Azure AD 角色。 每个角色组由一个或多个"角色"组成 (查看我有关重新使用同一单词的含义？) 并拥有 Azure AD（即启用电子邮件的对象）的成员。 此外，可以创建与角色同名的角色组，该角色组可能包含也可能不包含该角色 (避免这种混淆) 。
+[Office 365](../security/defender-365-security/permissions-in-the-security-and-compliance-center.md) 安全与&中心中的权限是"角色组"的集合，它们与 Azure AD 角色不同。 这可能会令人困惑，因为其中一些角色组的名称与 Azure AD 角色 (例如，Security Reader) ，但是它们可以具有不同的成员身份。 我想要使用 Azure AD 角色。 每个角色组由一个或多个"角色"组成 (查看我有关重新使用同一单词的含义？) 并拥有 Azure AD（即启用电子邮件的对象）的成员。 此外，可以创建与角色同名的角色组，该角色组可能包含也可能不包含该角色 (避免这种混淆) 。
 
 从某种意义上说，这些是 Exchange 角色组模型的发展过程。 但是，Exchange Online 有自己的角色 [组管理](/exchange/permissions-exo) 界面。 Exchange Online 中的某些角色组从 Azure AD 或安全 & 合规中心锁定和管理，但其他角色组可能具有相同的或相似的名称，并且这些角色组在 Exchange Online (中进行管理，这进一步增加了) 。 建议避免使用 Exchange Online 用户界面，除非需要 Exchange 管理作用域。
 
@@ -262,7 +262,7 @@ Azure AD 具有 [详细的审核和报告](/azure/active-directory/reports-monit
 注意：数据平台安全性和委派 (Power BI 是一个) 是一个复杂区域。
 - **MEM/Intune**  - [https://docs.microsoft.com/mem/intune/fundamentals/role-based-access-control](/mem/intune/fundamentals/role-based-access-control)
 - **Microsoft Defender for Endpoint**  - [https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/user-roles](/windows/security/threat-protection/microsoft-defender-atp/user-roles)
-- **Microsoft 365 Defender** - [https://docs.microsoft.com/microsoft-365/security/mtp/mtp-permissions](../security/mtp/mtp-permissions.md)
+- **Microsoft 365 Defender** - [https://docs.microsoft.com/microsoft-365/security/mtp/mtp-permissions](../security/defender/m365d-permissions.md)
 - **Microsoft Cloud App Security** - [https://docs.microsoft.com/cloud-app-security/manage-admins](/cloud-app-security/manage-admins)
 - **Stream**  - [https://docs.microsoft.com/stream/assign-administrator-user-role](/stream/assign-administrator-user-role)
 - **信息屏障**  - [https://docs.microsoft.com/microsoft-365/compliance/information-barriers](../compliance/information-barriers.md)
@@ -296,7 +296,7 @@ Office 365 具有统一[审核日志。](../compliance/search-the-audit-log-in-s
 
 日志不需要仅定向到一处。 在 Power BI 中将 [Office 365](/cloud-app-security/connect-office-365-to-microsoft-cloud-app-security) 日志与 Microsoft Cloud App Security 或自定义 RBAC 模型 [集成可能也有好处](../admin/usage-analytics/usage-analytics.md?view=o365-worldwide)。 不同的存储库具有不同的优势和受众。
 
-值得一提的是，在名为 [Microsoft 365 Defender](../security/mtp/microsoft-threat-protection.md?view=o365-worldwide)的服务中，有一个非常丰富的内置分析系统用于安全、威胁、漏洞等。
+值得一提的是，在名为 [Microsoft 365 Defender](../security/defender/microsoft-365-defender.md?view=o365-worldwide)的服务中，有一个非常丰富的内置分析系统用于安全、威胁、漏洞等。
 
 许多大型客户希望将此日志数据传输给第三方系统 (例如 SIEM) 。 虽然存在不同的方法，但 Azure 事件中心和[](/azure/azure-monitor/platform/stream-monitoring-data-event-hubs) [Graph](/graph/security-integration)一般都是不错的起点。
 

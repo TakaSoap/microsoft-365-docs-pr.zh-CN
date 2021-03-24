@@ -1,5 +1,5 @@
 ---
-title: Contoso Corporation 的主要机密项目的独立团队
+title: Contoso Corporation 最高机密项目的隔离团队
 f1.keywords:
 - NOCSH
 ms.author: josephd
@@ -15,92 +15,92 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 ms.custom: Ent_Architecture
-description: 摘要： Contoso 如何使用安全隔离的团队对主要项目进行安全隔离，以开发一套新的产品和服务。
-ms.openlocfilehash: b8794502afcb77a8e597a1b05dfc92acd093f23a
-ms.sourcegitcommit: 3b1bd8aa1430bc9565743a446bbc27b199f30f73
+description: 摘要：Contoso 如何使用具有最高机密项目安全隔离的团队来开发一套新的产品和服务。
+ms.openlocfilehash: d5ab2808251ff6a53f8975ea868431691d3301e2
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48656061"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51051002"
 ---
-# <a name="isolated-team-for-a-top-secret-project-of-the-contoso-corporation"></a>Contoso Corporation 的主要机密项目的独立团队
+# <a name="isolated-team-for-a-top-secret-project-of-the-contoso-corporation"></a>Contoso Corporation 最高机密项目的隔离团队
 
-在执行异地异地工作时，Contoso 首席执行官订购了一系列新产品和服务，在接下来的五年中，这可能会导致 Contoso 的利润加倍。 开发业务、工程和市场计划的首要项目称为 **Project 2x** ，而整个公司的主要员工均为 recruited。 
+在公司外执行人员之后，Contoso 的 CEO 订购了一套新的产品和服务的开发，这些产品和服务在接下来五年内可能会使 Contoso 利润翻倍。 开发业务、工程和市场计划的顶级机密项目名为 **Project 2X，** 公司中的主要员工已招聘。 
 
-用于研究和开发的时间线是紧密的，这意味着协作必须高效，并提供安全会议、持续会话和文件存储。
+研发的日程表很紧，这意味着协作必须高效，并提供安全会议、正在进行的对话和文件存储。
 
-项目2的结果可交付项是商业计划、产品和工程规范，以及 Word、Excel 和 PowerPoint 文件的格式的营销材料和计划。 
+Project 2X 生成的可交付结果为业务计划、产品和工程规范，以及 Word、Excel 和 PowerPoint 文件形式的营销材料及计划。 
 
-由于其敏感性，对这些文件的访问权限为：
+由于这些文件的敏感性质，对这些文件的访问包括：
 
-- 限制为项目2个团队成员和高级领导。
-- 使用权限进行加密和保护，以仅允许访问 Project 2X 团队成员和高级领导，即使这些文件是在其安全文件夹之外分发的也是如此。
+- 仅限于 Project 2X 团队成员和高层领导。
+- 使用允许仅访问 Project 2X 团队成员和高层领导的权限进行加密和保护，即使文件分发到其安全文件夹之外。
 
-Contoso IT 员工使用项目2的 [安全隔离团队](secure-teams-security-isolation.md) 和这些步骤。
+Contoso IT 员工使用具有 Project 2X [安全](secure-teams-security-isolation.md) 隔离和这些步骤的团队。
 
-## <a name="step-1-created-a-private-team"></a>步骤1：创建专用团队
+## <a name="step-1-created-a-private-team"></a>步骤 1：创建了私人团队
 
-首先，为了保护对团队的基础 SharePoint 网站的访问，Contoso IT 管理员配置了 [建议的 SharePoint 访问策略](../security/office-365-security/sharepoint-file-access-policies.md)。
+首先，为了保护团队对基础 SharePoint 网站的访问，Contoso IT 管理员配置了建议的 [SharePoint 访问策略](../security/defender-365-security/sharepoint-file-access-policies.md)。
 
-接下来，Contoso IT 管理员创建了一个名为 Project 2 的新私人团队，并将 Project 2X 员工的用户帐户添加为成员。 他们还配置了团队，以便只有项目2组的所有者才能创建专用频道。
+接下来，Contoso IT 管理员创建了一个名为 Project 2X 的新专用团队，并添加了 Project 2X 员工的用户帐户作为成员。 他们还配置了团队，以便只有 Project 2X 团队所有者可以创建私人频道。
 
-有关配置的详细信息，请参阅 [创建专用团队](secure-teams-security-isolation.md#create-a-private-team)。
+有关配置的详细信息，请参阅 [创建私人团队](secure-teams-security-isolation.md#create-a-private-team)。
 
-## <a name="step-2-created-a-sensitivity-label-for-the-project-2x-team"></a>步骤2：为项目2组创建敏感度标签
+## <a name="step-2-created-a-sensitivity-label-for-the-project-2x-team"></a>步骤 2：为 Project 2X 团队创建了敏感度标签
 
-Contoso admins 创建了一个名为 " **Project 2** " 的新敏感度标签，其类型为：
+Contoso 管理员创建了一个名为 **Project 2X** 的新敏感度标签，该标签：
 
-- 已启用加密。
-- 允许项目2个 Microsoft 365 组的 Co-Author 权限。
-- 允许高级领导组的查看器权限。
-- 阻止了对非托管设备的访问。
+- 启用加密。
+- 允许Co-Author Project 2X Microsoft 365 组的权限。
+- Senior Leadership 组允许的查看者权限。
+- 阻止访问非托管设备。
 
-受以下条件保护的基础 Project 2X SharePoint 网站的 " **文档** " 部分中的文件：
+基础 Project  2X SharePoint 网站的"文档"部分中的文件受以下保护：
 
-- 网站权限，仅允许对项目2个 Microsoft 365 组的成员拥有完全权限，并为高级领导组读取权限。
-- Project 2-2 敏感度标签，带有文件移动或复制到网站时携带的加密和权限。
+- 网站权限，仅允许对 Project 2X Microsoft 365 组的成员具有完全权限，并且对 Senior Leadership 组具有读取权限。
+- Project 2X 敏感度标签，如果从网站移动或复制文件，则其加密和权限随文件一起移动。
 
-有关配置的详细信息，请参阅 [创建灵敏度标签](secure-teams-security-isolation.md#create-a-sensitivity-label)。
+有关配置的详细信息，请参阅 [创建敏感度标签](secure-teams-security-isolation.md#create-a-sensitivity-label)。
 
-## <a name="step-3-configured-the-underlying-sharepoint-site"></a>步骤3：配置基础 SharePoint 网站
+## <a name="step-3-configured-the-underlying-sharepoint-site"></a>步骤 3：配置基础 SharePoint 网站
 
-首先，为了保护对团队的基础 SharePoint 网站的访问，Contoso IT 管理员配置了 [建议的 SharePoint 访问策略](../security/office-365-security/sharepoint-file-access-policies.md)。
+首先，为了保护团队对基础 SharePoint 网站的访问，Contoso IT 管理员配置了建议的 [SharePoint 访问策略](../security/defender-365-security/sharepoint-file-access-policies.md)。
 
 接下来，他们为网站配置了其他权限设置：
 
-- 以防止项目2X 组成员共享对网站的访问权限。 有关配置的详细信息，请参阅 [具有安全隔离的团队的 SharePoint 设置](secure-teams-security-isolation.md#sharepoint-settings)。
-- 用于高级领导组的读取权限。
+- 阻止 Project 2X 组的成员共享对网站的访问权限。 有关配置的详细信息，请参阅 [安全隔离团队的 SharePoint 设置](secure-teams-security-isolation.md#sharepoint-settings)。
+- 对于 Senior Leadership 组的读取权限。
 
-接下来，他们为网站配置了其他权限设置，以防止 Project 2X 组成员共享对网站的访问权限。 
+接下来，他们为网站配置了其他权限设置，以防止 Project 2X 组的成员共享对网站的访问权限。 
 
-由于已创建项目2X 的专用通道，组所有者禁用了来宾共享，并将默认共享链接设置为 " **特定人员** " 值。
+创建 Project 2X 私人频道后，组所有者禁用了来宾共享，将默认共享链接设置为 **"特定人员"** 值。
 
-下面是具有安全隔离的 Project 2X 团队的结果配置。
+下面是具有安全隔离的 Project 2X 团队的配置结果。
 
-![项目2组的结果配置](../media/contoso-team-for-top-secret-project.png)
+![生成的 Project 2X 团队配置](../media/contoso-team-for-top-secret-project.png)
 
- ## <a name="step-4-trained-project-2x-team-members"></a>步骤4：训练有素的项目2组成员
+ ## <a name="step-4-trained-project-2x-team-members"></a>步骤 4：经过培训的 Project 2X 团队成员
 
-Contoso 安全员工在强制性课程中培训了 Project 2X 团队成员，其中包括：
+Contoso 安全人员通过必填课程对 Project 2X 团队成员进行培训，以通过以下方式进行介绍：
 
-- 如何：访问新的 Project 2X 团队、使用会议和聊天以及如何在团队文件中进行协作。
-- 如何：在团队中创建新文件并上载本地创建的新文件。
+- 如何访问新的 Project 2X 团队、使用会议和聊天，以及如何协作处理工作组文件。
+- 如何在团队中创建新文件并上载在本地创建的新文件。
 - 如何使用 Project 2X 敏感度标签标记文件。
-- 演示 Project 2X 标签如何保护文件（即使是在离开团队时）。
+- 演示 Project 2X 标签如何保护文件，即使文件离开团队。
 
-最终结果是一个安全的环境，在此环境中，Project 2X 团队成员在安全环境中共同参与聊天、会议和文件。
+最终结果是一个安全环境，Project 2X 团队成员在安全环境中协作处理聊天、会议和文件。
 
-下面的示例展示了存储在基础项目2X 网站中的文件，并分配了 Project 2/2 敏感度标签。
+下面是一个在基础 Project 2X 网站中存储并分配了 Project 2X 敏感度标签的文件示例。
 
-![存储在基础项目2X 网站中的文件的示例](../media/contoso-team-for-top-secret-project-example.png)
+![存储在基础 Project 2X 网站中的文件示例](../media/contoso-team-for-top-secret-project-example.png)
 
-在几个实例中，Project 2X 工作组成员将受 Project 2X 标签保护的文件下载到本地驱动器以供脱机工作。 
+在一些实例中，Project 2X 团队成员将受 Project 2X 标签保护的文件下载到本地驱动器以脱机工作。 
 
-但是，在打开凭据后收到凭据提示时，他们会意识到它们的错误并将其删除。
+但是，在打开凭据时提示输入凭据后，他们意识到自己的错误并将其删除。
 
-由于团队的协作环境和 Microsoft 365 的安全功能，project 2X 的详细信息在项目的持续时间内保持秘密。 Contoso 宣布了其计划，正在将新产品和服务推出给其客户和投资者的欣喜及其竞争对手的 chagrin 的过程。
+由于 Teams 的协作环境和 Microsoft 365 的安全功能，Project 2X 的详细信息在项目期间一直保密。 Contoso 宣布其计划，并正在推出新产品和服务，以令其客户和对手的满意以及其竞争对手的 <6>念。
 
 ## <a name="next-step"></a>后续步骤
 
-在您的组织中[部署具有安全隔离的团队](secure-teams-security-isolation.md)。
+[在组织中部署具有安全隔离](secure-teams-security-isolation.md) 的团队。
 

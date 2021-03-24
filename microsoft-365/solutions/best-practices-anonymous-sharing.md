@@ -17,12 +17,12 @@ ms.custom:
 localization_priority: Priority
 f1.keywords: NOCSH
 description: 在本文中，你将了解与身份未经验证的用户共享文件和文件夹的最佳做法。
-ms.openlocfilehash: 3fbe48159dab7fd9ebb072feab7724c3186f7847
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: af0cc59813c76e4ed6a3c0e50140e7fa26c91080
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50904800"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51051062"
 ---
 # <a name="best-practices-for-sharing-files-and-folders-with-unauthenticated-users"></a>有关与身份未经验证用户共享文件和文件夹的最佳做法
 
@@ -140,7 +140,7 @@ ms.locfileid: "50904800"
 
 4. 也可以选择打开安全文档，然后单击“**保存**”
 
-请参阅[适用于 SharePoint、OneDrive 和 Microsoft Teams 的 ATP](../security/office-365-security/atp-for-spo-odb-and-teams.md) 和[启用适用于 SharePoint、OneDrive 和 Microsoft Teams 的 ATP](../security/office-365-security/turn-on-atp-for-spo-odb-and-teams.md) 以获取其他指导。
+请参阅[适用于 SharePoint、OneDrive 和 Microsoft Teams 的 ATP](../security/defender-365-security/mdo-for-spo-odb-and-teams.md) 和[启用适用于 SharePoint、OneDrive 和 Microsoft Teams 的 ATP](../security/defender-365-security/turn-on-mdo-for-spo-odb-and-teams.md) 以获取其他指导。
 
 ## <a name="add-copyright-information-to-your-files"></a>将版权信息添加到文件
 
@@ -165,4 +165,4 @@ ms.locfileid: "50904800"
 
 [与来宾共享时限制文件意外曝光](share-limit-accidental-exposure.md)
 
-[Create a secure guest sharing environment](create-secure-guest-sharing-environment.md)（创建安全的来宾共享环境）
+[创建安全的来宾共享环境](create-secure-guest-sharing-environment.md)

@@ -15,12 +15,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: 了解如何创建具有唯一敏感度标签的团队来保证安全。
-ms.openlocfilehash: 2ecd8e0458f6ebef9ebd1b0c3724195cc70f6378
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 7c9b770c712d2468369482ba3a6256e57f621f74
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50920924"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51042682"
 ---
 # <a name="configure-a-team-with-security-isolation"></a>配置具有安全隔离的团队
 
@@ -60,8 +60,8 @@ ms.locfileid: "50920924"
 ## <a name="initial-protections"></a>初始保护
 
 为了帮助保护对团队及其基础 SharePoint 网站的访问，请查看以下最佳做法：
-- [标识和设备访问策略](../security/office-365-security/identity-access-policies.md)
-- [SharePoint Online 访问策略](../security/office-365-security/sharepoint-file-access-policies.md)
+- [标识和设备访问策略](../security/defender-365-security/identity-access-policies.md)
+- [SharePoint Online 访问策略](../security/defender-365-security/sharepoint-file-access-policies.md)
 - [部署具有基线保护的团队](configure-teams-baseline-protection.md)
 
 ## <a name="guest-sharing"></a>来宾共享

@@ -16,18 +16,18 @@ ms.collection:
 - m365solution-threatprotection
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: 3156e6bc7715db9847b295add7850dcbd0ff6642
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: b5dba3aa5db6a687a195f866d1cabe1138f9aa66
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50918402"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51050894"
 ---
 # <a name="deploy-threat-protection-capabilities-across-microsoft-365"></a>跨 Microsoft 365 部署威胁防护功能
 
 [恶意软件](/windows/security/threat-protection/intelligence/understanding-malware)和复杂的网络攻击（如无文件威胁）[](/windows/security/threat-protection/intelligence/fileless-threats)是常见事件。 企业需要使用有效的 IT 安全性功能来保护自己及其客户。 网络攻击可能会给组织带来严重问题，包括失去信任、财务问题、业务损失停机时间等。 防范威胁非常重要，但确定组织的时间、工作量和资源重点在哪些方面是一项挑战。 
 
-Microsoft 安全解决方案内置在我们的产品和服务中。 自动化和机器学习功能可减少安全团队的负载，以确保正确的项目已解决。 Microsoft 安全解决方案的优势基于我们的 Intelligent [Security Graph](https://cloud-platform-assets.azurewebsites.net/intelligent-security-graph)中每天处理数十万个信号。 Microsoft 365 安全解决方案包括 [Microsoft 365 Defender，](../security/mtp/microsoft-threat-protection.md)这是一种将电子邮件、数据、设备和标识中的信号汇集在一起的解决方案，以绘制针对组织的高级威胁的图片。
+Microsoft 安全解决方案内置在我们的产品和服务中。 自动化和机器学习功能可减少安全团队的负载，以确保正确的项目已解决。 Microsoft 安全解决方案的优势基于我们的 Intelligent [Security Graph](https://cloud-platform-assets.azurewebsites.net/intelligent-security-graph)中每天处理数十万个信号。 Microsoft 365 安全解决方案包括 [Microsoft 365 Defender，](../security/defender/microsoft-365-defender.md)这是一种将电子邮件、数据、设备和标识中的信号汇集在一起的解决方案，以绘制针对组织的高级威胁的图片。
 
 
 观看此视频以简要了解部署流程。

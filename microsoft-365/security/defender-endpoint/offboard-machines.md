@@ -1,0 +1,61 @@
+---
+title: 从 Microsoft Defender ATP 服务载出设备
+description: 从 Microsoft Defender ATP 服务载入 Windows 10 设备、服务器和非 Windows 设备
+keywords: offboarding， microsoft defender for endpoint offboarding， windows atp offboarding
+search.product: eADQiWindows 10XVcnh
+search.appverid: met150
+ms.prod: m365-security
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.pagetype: security
+ms.author: macapara
+author: mjcaparas
+localization_priority: Normal
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance
+ms.topic: conceptual
+ms.technology: mde
+ms.openlocfilehash: db22a19da58ba70ff09af781ca56e0b3c0d88dfd
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51054687"
+---
+# <a name="offboard-devices-from-the-microsoft-defender-for-endpoint-service"></a>从 Microsoft Defender for Endpoint 服务载出设备
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+
+**适用于：**
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+
+**平台**
+- macOS
+- Linux
+- Windows Server 2012 R2
+- Windows Server 2016
+
+>想要体验适用于终结点的 Defender？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-offboarddevices-abovefoldlink)
+
+按照相应说明进行操作，具体取决于你的首选部署方法。
+
+>[!NOTE]
+> 在载出 7 天后，设备[](fix-unhealthy-sensors.md#inactive-devices)的状态将切换到非活动状态。 <br> 已载出设备的数据 (时间线、警报、漏洞等) 将保留在门户中，直到配置的保留[期过期。](data-storage-privacy.md#how-long-will-microsoft-store-my-data-what-is-microsofts-data-retention-policy) <br>
+> 不带数据 (设备配置文件) 将在设备 [列表中](machines-view-overview.md) 保留不超过 180 天。
+> 此外，过去 30 天内未处于活动状态的设备不会在反映组织的威胁和漏洞管理曝光分数和 Microsoft 设备安全分数的数据中考虑。 [](tvm-exposure-score.md) <br>
+> 若要仅查看活动设备，可以按运行状况 [状态](machines-view-overview.md#health-state)、 [设备标记](machine-tags.md) 或计算机 [组进行筛选](machine-groups.md)。 
+
+## <a name="offboard-windows-10-devices"></a>载出 Windows 10 设备
+- [使用本地脚本的载出设备](configure-endpoints-script.md#offboard-devices-using-a-local-script)
+- [使用组策略的载出设备](configure-endpoints-gp.md#offboard-devices-using-group-policy)
+- [使用移动设备管理工具的载出设备](configure-endpoints-mdm.md#offboard-and-monitor-devices-using-mobile-device-management-tools)
+
+## <a name="offboard-servers"></a>载出服务器
+- [载出服务器](configure-server-endpoints.md#offboard-windows-servers)
+
+## <a name="offboard-non-windows-devices"></a>载出非 Windows 设备
+- [载出非 Windows 设备](configure-endpoints-non-windows.md#offboard-non-windows-devices)
+
