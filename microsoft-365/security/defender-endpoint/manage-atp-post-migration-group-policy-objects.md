@@ -1,0 +1,78 @@
+---
+title: 使用组策略对象管理 Microsoft Defender for Endpoint
+description: 了解如何使用组策略对象管理 Microsoft Defender for Endpoint
+keywords: 迁移后， 管理， 操作， 维护， 利用率， PowerShell， windows defender 高级威胁防护， atp， edr
+search.product: eADQiWindows 10XVcnh
+search.appverid: met150
+ms.prod: m365-security
+ms.technology: mde
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.pagetype: security
+ms.author: deniseb
+author: denisebmsft
+localization_priority: Normal
+manager: dansimp
+audience: ITPro
+ms.collection:
+- M365-security-compliance
+- m365solution-scenario
+ms.topic: article
+ms.date: 09/22/2020
+ms.reviewer: chventou
+ms.openlocfilehash: c21ac21f4369934375d44f5792afb874070ab074
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51056528"
+---
+# <a name="manage-microsoft-defender-for-endpoint-with-group-policy-objects"></a><span data-ttu-id="07586-104">使用组策略对象管理 Microsoft Defender for Endpoint</span><span class="sxs-lookup"><span data-stu-id="07586-104">Manage Microsoft Defender for Endpoint with Group Policy Objects</span></span>
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+<span data-ttu-id="07586-105">**适用于：**</span><span class="sxs-lookup"><span data-stu-id="07586-105">**Applies to:**</span></span>
+- [<span data-ttu-id="07586-106">Microsoft Defender for Endpoint</span><span class="sxs-lookup"><span data-stu-id="07586-106">Microsoft Defender for Endpoint</span></span>](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [<span data-ttu-id="07586-107">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="07586-107">Microsoft 365 Defender</span></span>](https://go.microsoft.com/fwlink/?linkid=2118804)
+
+> <span data-ttu-id="07586-108">想要体验 Microsoft Defender for Endpoint？</span><span class="sxs-lookup"><span data-stu-id="07586-108">Want to experience Microsoft Defender for Endpoint?</span></span> [<span data-ttu-id="07586-109">注册免费试用版。</span><span class="sxs-lookup"><span data-stu-id="07586-109">Sign up for a free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+
+
+> [!NOTE]
+> <span data-ttu-id="07586-110">我们建议使用 [Microsoft Endpoint Manager](https://docs.microsoft.com/mem) 来管理组织针对设备的威胁防护功能 (也称为终结点) 。</span><span class="sxs-lookup"><span data-stu-id="07586-110">We recommend using [Microsoft Endpoint Manager](https://docs.microsoft.com/mem) to manage your organization's threat protection features for devices (also referred to as endpoints).</span></span> <span data-ttu-id="07586-111">Endpoint Manager 包括[Microsoft Intune 和](https://docs.microsoft.com/mem/intune/fundamentals/what-is-intune) [Microsoft Endpoint Configuration Manager。](https://docs.microsoft.com/mem/configmgr/core/understand/introduction)</span><span class="sxs-lookup"><span data-stu-id="07586-111">Endpoint Manager includes [Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/what-is-intune) and [Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/mem/configmgr/core/understand/introduction).</span></span> <span data-ttu-id="07586-112">**[了解有关 Endpoint Manager 的更多信息](https://docs.microsoft.com/mem/endpoint-manager-overview)**。</span><span class="sxs-lookup"><span data-stu-id="07586-112">**[Learn more about Endpoint Manager](https://docs.microsoft.com/mem/endpoint-manager-overview)**.</span></span> 
+
+<span data-ttu-id="07586-113">可以使用 Azure Active Directory 域服务中的组策略对象来管理 Microsoft Defender for Endpoint 中的某些设置。</span><span class="sxs-lookup"><span data-stu-id="07586-113">You can use Group Policy Objects in Azure Active Directory Domain Services to manage some settings in Microsoft Defender for Endpoint.</span></span>
+
+## <a name="configure-microsoft-defender-for-endpoint-with-group-policy-objects"></a><span data-ttu-id="07586-114">使用组策略对象配置 Microsoft Defender for Endpoint</span><span class="sxs-lookup"><span data-stu-id="07586-114">Configure Microsoft Defender for Endpoint with Group Policy Objects</span></span>
+
+<span data-ttu-id="07586-115">下表列出了可以使用组策略对象配置 Microsoft Defender for Endpoint 时可执行的各种任务。</span><span class="sxs-lookup"><span data-stu-id="07586-115">The following table lists various tasks you can perform to configure Microsoft Defender for Endpoint with Group Policy Objects.</span></span>
+
+|<span data-ttu-id="07586-116">任务</span><span class="sxs-lookup"><span data-stu-id="07586-116">Task</span></span>  |<span data-ttu-id="07586-117">了解详细信息的资源</span><span class="sxs-lookup"><span data-stu-id="07586-117">Resources to learn more</span></span>  |
+|---------|---------|
+|<span data-ttu-id="07586-118">**管理用户和计算机对象的设置**</span><span class="sxs-lookup"><span data-stu-id="07586-118">**Manage settings for user and computer objects**</span></span> <br/><br/><span data-ttu-id="07586-119">*自定义内置组策略对象，或创建自定义组策略对象和组织单位以满足组织需求。*</span><span class="sxs-lookup"><span data-stu-id="07586-119">*Customize built-in Group Policy Objects, or create custom Group Policy Objects and organizational units to suit your organizational needs.*</span></span>     |[<span data-ttu-id="07586-120">管理 Azure Active Directory 域服务托管域中的组策略</span><span class="sxs-lookup"><span data-stu-id="07586-120">Administer Group Policy in an Azure Active Directory Domain Services managed domain</span></span>](https://docs.microsoft.com/azure/active-directory-domain-services/manage-group-policy)   |
+|<span data-ttu-id="07586-121">**配置 Microsoft Defender 防病毒**</span><span class="sxs-lookup"><span data-stu-id="07586-121">**Configure Microsoft Defender Antivirus**</span></span> <br/><br/><span data-ttu-id="07586-122">*在组织设备上配置&功能，包括策略设置、排除、修正和计划扫描 (也称为终结点) 。*</span><span class="sxs-lookup"><span data-stu-id="07586-122">*Configure antivirus features & capabilities, including policy settings, exclusions, remediation, and scheduled scans on your organization's devices (also referred to as endpoints).*</span></span>   |[<span data-ttu-id="07586-123">使用组策略设置配置和管理 Microsoft Defender 防病毒</span><span class="sxs-lookup"><span data-stu-id="07586-123">Use Group Policy settings to configure and manage Microsoft Defender Antivirus</span></span>](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/use-group-policy-microsoft-defender-antivirus) <br/><br/>[<span data-ttu-id="07586-124">使用组策略启用云保护</span><span class="sxs-lookup"><span data-stu-id="07586-124">Use Group Policy to enable cloud-delivered protection</span></span>](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus#use-group-policy-to-enable-cloud-delivered-protection)      |
+|<span data-ttu-id="07586-125">**管理组织的攻击面减少规则**</span><span class="sxs-lookup"><span data-stu-id="07586-125">**Manage your organization's attack surface reduction rules**</span></span> <br/><br/><span data-ttu-id="07586-126">*自定义攻击面减少规则，&文件夹中的文件，或者向显示在用户设备上的通知警报添加自定义文本。*</span><span class="sxs-lookup"><span data-stu-id="07586-126">*Customize your attack surface reduction rules by excluding files & folders, or by adding custom text to notification alerts that appear on users' devices.*</span></span> |[<span data-ttu-id="07586-127">使用组策略对象自定义攻击面减少规则</span><span class="sxs-lookup"><span data-stu-id="07586-127">Customize attack surface reduction rules with Group Policy Objects</span></span>](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/customize-attack-surface-reduction#use-group-policy-to-exclude-files-and-folders) |
+|<span data-ttu-id="07586-128">**管理 Exploit Protection 设置**</span><span class="sxs-lookup"><span data-stu-id="07586-128">**Manage exploit protection settings**</span></span><br/><br/><span data-ttu-id="07586-129">*你可以自定义 Exploit Protection 设置、导入配置文件，然后使用组策略部署该配置文件。*</span><span class="sxs-lookup"><span data-stu-id="07586-129">*You can customize your exploit protection settings, import a configuration file, and then use Group Policy to deploy that configuration file.*</span></span>  |[<span data-ttu-id="07586-130">自定义 Exploit Protection 设置</span><span class="sxs-lookup"><span data-stu-id="07586-130">Customize exploit protection settings</span></span>](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/customize-exploit-protection) <br/><br/>[<span data-ttu-id="07586-131">导入、导出和部署 Exploit Protection 配置</span><span class="sxs-lookup"><span data-stu-id="07586-131">Import, export, and deploy exploit protection configurations</span></span>](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/import-export-exploit-protection-emet-xml)<br/><br/>[<span data-ttu-id="07586-132">使用组策略分发配置</span><span class="sxs-lookup"><span data-stu-id="07586-132">Use Group Policy to distribute the configuration</span></span>](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/import-export-exploit-protection-emet-xml#use-group-policy-to-distribute-the-configuration)  |
+|<span data-ttu-id="07586-133">**启用网络** 保护以帮助防止员工使用 Internet 上恶意内容的应用</span><span class="sxs-lookup"><span data-stu-id="07586-133">**Enable Network Protection** to help prevent employees from using apps that malicious content on the Internet</span></span> <br/><br/><span data-ttu-id="07586-134">*我们建议在 [测试环境中首先](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/evaluate-network-protection) 使用审核模式进行网络保护，以查看在推出之前哪些应用将被阻止。*</span><span class="sxs-lookup"><span data-stu-id="07586-134">*We recommend using [audit mode](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/evaluate-network-protection) at first for network protection in a test environment to see which apps would be blocked before rolling out.*</span></span> |[<span data-ttu-id="07586-135">使用组策略打开网络保护</span><span class="sxs-lookup"><span data-stu-id="07586-135">Turn on network protection using Group Policy</span></span>](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/enable-network-protection#group-policy)  |
+|<span data-ttu-id="07586-136">**配置受控文件夹访问权限** 以防范勒索软件</span><span class="sxs-lookup"><span data-stu-id="07586-136">**Configure controlled folder access** to protect against ransomware</span></span> <br/><br/><span data-ttu-id="07586-137">*[受控文件夹访问权限](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/controlled-folders) 也称为反反somware保护。*</span><span class="sxs-lookup"><span data-stu-id="07586-137">*[Controlled folder access](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/controlled-folders) is also referred to as antiransomware protection.*</span></span>  |[<span data-ttu-id="07586-138">使用组策略启用受控文件夹访问权限</span><span class="sxs-lookup"><span data-stu-id="07586-138">Enable controlled folder access using Group Policy</span></span>](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/enable-controlled-folders#group-policy) |
+|<span data-ttu-id="07586-139">**配置 Microsoft Defender SmartScreen** 以防范 Internet 上的恶意站点和文件。</span><span class="sxs-lookup"><span data-stu-id="07586-139">**Configure Microsoft Defender SmartScreen** to protect against malicious sites and files on the internet.</span></span>  |[<span data-ttu-id="07586-140">使用组策略配置 Microsoft Defender SmartScreen 组策略和移动设备 (MDM) 设置</span><span class="sxs-lookup"><span data-stu-id="07586-140">Configure Microsoft Defender SmartScreen Group Policy and mobile device management (MDM) settings using Group Policy</span></span>](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-available-settings#group-policy-settings)  |
+|<span data-ttu-id="07586-141">**配置加密和 BitLocker** 以保护运行 Windows 的组织设备上的信息</span><span class="sxs-lookup"><span data-stu-id="07586-141">**Configure encryption and BitLocker** to protect information on your organization's devices running Windows</span></span> |[<span data-ttu-id="07586-142">BitLocker 组策略设置</span><span class="sxs-lookup"><span data-stu-id="07586-142">BitLocker Group Policy settings</span></span>](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-group-policy-settings) |
+|<span data-ttu-id="07586-143">**配置 Microsoft Defender Credential Guard** 以防止凭据盗窃攻击</span><span class="sxs-lookup"><span data-stu-id="07586-143">**Configure Microsoft Defender Credential Guard** to protect against credential theft attacks</span></span> |[<span data-ttu-id="07586-144">使用Windows Defender启用 Credential Guard</span><span class="sxs-lookup"><span data-stu-id="07586-144">Enable Windows Defender Credential Guard by using Group Policy</span></span>](https://docs.microsoft.com/windows/security/identity-protection/credential-guard/credential-guard-manage#enable-windows-defender-credential-guard-by-using-group-policy) |
+
+## <a name="configure-your-microsoft-defender-security-center"></a><span data-ttu-id="07586-145">配置 Microsoft Defender 安全中心</span><span class="sxs-lookup"><span data-stu-id="07586-145">Configure your Microsoft Defender Security Center</span></span>
+
+<span data-ttu-id="07586-146">如果尚未配置，请配置 Microsoft **Defender** 安全中心 () 以查看警报、配置威胁防护功能以及查看有关组织整体安全状况 [https://securitycenter.windows.com](https://securitycenter.windows.com) 的详细信息。</span><span class="sxs-lookup"><span data-stu-id="07586-146">If you haven't already done so, **configure your Microsoft Defender Security Center** ([https://securitycenter.windows.com](https://securitycenter.windows.com)) to view alerts, configure threat protection features, and view detailed information about your organization's overall security posture.</span></span> 
+
+<span data-ttu-id="07586-147">还可以配置最终用户是否可以在 Microsoft Defender 安全中心看到的功能以及这些功能。</span><span class="sxs-lookup"><span data-stu-id="07586-147">You can also configure whether and what features end users can see in the Microsoft Defender Security Center.</span></span>
+
+- [<span data-ttu-id="07586-148">Microsoft Defender 安全中心概述</span><span class="sxs-lookup"><span data-stu-id="07586-148">Overview of the Microsoft Defender Security Center</span></span>](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/use)
+
+- [<span data-ttu-id="07586-149">终结点保护：Microsoft Defender 安全中心</span><span class="sxs-lookup"><span data-stu-id="07586-149">Endpoint protection: Microsoft Defender Security Center</span></span>](https://docs.microsoft.com/mem/intune/protect/endpoint-protection-windows-10#microsoft-defender-security-center)
+
+## <a name="next-steps"></a><span data-ttu-id="07586-150">后续步骤</span><span class="sxs-lookup"><span data-stu-id="07586-150">Next steps</span></span>
+
+- [<span data-ttu-id="07586-151">获取威胁和漏洞管理的概述</span><span class="sxs-lookup"><span data-stu-id="07586-151">Get an overview of threat and vulnerability management</span></span>](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
+
+- [<span data-ttu-id="07586-152">访问 Microsoft Defender 安全中心安全操作仪表板</span><span class="sxs-lookup"><span data-stu-id="07586-152">Visit the Microsoft Defender Security Center security operations dashboard</span></span>](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/security-operations-dashboard)
+
+- [<span data-ttu-id="07586-153">使用 Intune 管理 Microsoft Defender for Endpoint</span><span class="sxs-lookup"><span data-stu-id="07586-153">Manage Microsoft Defender for Endpoint with Intune</span></span>](manage-atp-post-migration-intune.md)
