@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: 适用于管理 Office 应用中针对桌面、移动和 Web 的敏感度标签的 IT 管理员的信息。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 41716fecd0c70c99fd61b090421cb3dc0277cb48
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 72b5422de2ee4b01e3209ec78ea0c10f1285d682
+ms.sourcegitcommit: 8998f70d3f7bd673f93f8d1cf12ce981b1b771c3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50919548"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51034191"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>管理 Office 应用中的敏感度标签
 
@@ -63,7 +63,7 @@ Office for iOS 和 Office for Android：敏感度标签内置于 [Office 应用]
 |[标记内容](sensitivity-labels.md#what-sensitivity-labels-can-do)                                              | 1910+          | 16.21+     | 2.21+ | 16.0.11231+ | [支持 - 选择加入](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[带变量的动态标记](#dynamic-markings-with-variables)                                              | 2010+           | 16.42+     | 2.42+ | 16.0.13328+ | 审阅中 |
 |[现在分配权限](encryption-sensitivity-labels.md#assign-permissions-now)                                 | 1910+          | 16.21+     | 2.21+ | 16.0.11231+ | [支持 - 选择加入](sensitivity-labels-sharepoint-onedrive-files.md) |
-|[允许用户分配权限](encryption-sensitivity-labels.md#let-users-assign-permissions)                     |2004+ | 16.35+   | 审阅中   | 审阅中         | 审阅中                                                        |
+|[允许用户分配权限：权限 <br /> - 提示用户](encryption-sensitivity-labels.md#let-users-assign-permissions)                     |2004+ | 16.35+   | 审阅中   | 审阅中         | 审阅中                                                        |
 |[审核标签相关的用户活动](data-classification-activity-explorer.md)                      | 2011+ | 16.43+ | 2.46+ | 推出时间：16.0.13628 及以上 | 是的 <sup>\*</sup>                                                        |
 |[要求用户将标签应用于其电子邮件和文档](#require-users-to-apply-a-label-to-their-email-and-documents)   | 2101+             | 推出时间：16.45 及以上         | 预览： [Beta 频道](https://office.com/insider) | 推出时间：16.0.13628 及以上 | 审阅中                                            
 |[将敏感度标签自动应用于内容](apply-sensitivity-label-automatically.md)                    | 2009+                                  | 推出时间：16.44 及以上 | 审阅中 | 审阅中 | [支持 - 选择加入](sensitivity-labels-sharepoint-onedrive-files.md) |
@@ -87,7 +87,8 @@ Office for iOS 和 Office for Android：敏感度标签内置于 [Office 应用]
 |[标记内容](sensitivity-labels.md#what-sensitivity-labels-can-do)                                              | 1910+                     | 16.21+                 | 4.7.1+         | 4.0.39+           | 是               |
 |[带变量的动态标记](#dynamic-markings-with-variables)                                              | 审阅中                     | 审阅中                 | 审阅中         | 审阅中           | 审阅中               |
 |[现在分配权限](encryption-sensitivity-labels.md#assign-permissions-now)                                 | 1910+                     | 16.21+                 | 4.7.1+         | 4.0.39+           | 是               |
-|[允许用户分配权限](encryption-sensitivity-labels.md#let-users-assign-permissions)                     | 1910+                     | 16.21+                 | 4.7.1+         | 4.0.39+           | 是               |
+|[允许用户分配权限： <br /> - 不转发](encryption-sensitivity-labels.md#let-users-assign-permissions)                     | 1910+                     | 16.21+                 | 4.7.1+         | 4.0.39+           | 是               |
+|[允许用户分配权限： <br /> - 仅加密](encryption-sensitivity-labels.md#let-users-assign-permissions)  |2011+ | 审阅中 | 审阅中  | 审阅中 | 即将推出 |
 |[要求用户将标签应用于其电子邮件和文档](#require-users-to-apply-a-label-to-their-email-and-documents)   | 推出时间：2101+                        | 16.43+ <sup>\*</sup>                    | 审阅中            | 审阅中                | 是                |
 |[审核标签相关的用户活动](data-classification-activity-explorer.md) | 2011+ | 审阅中 | 审阅中           | 审阅中               | 审阅中 |
 |[将敏感度标签自动应用于内容](apply-sensitivity-label-automatically.md)                    | 2009+                      | 16.44+ <sup>\*</sup>                    | 审阅中           | 审阅中               | 是 |
@@ -120,7 +121,7 @@ Office 内置标签客户端从以下管理中心下载敏感度标签和敏感�
 
 如果用户安装了其中一个 Azure 信息保护客户端（[统一标签客户端](/azure/information-protection/rms-client/aip-clientv2) 或 [经典客户端](/azure/information-protection/rms-client/aip-client)），默认情况下，其 Office 应用中将关闭内置标签客户端。 
 
-若要对 Office 应用程序使用内置标签而非 Azure 信息保护客户端，建议你使用组策略设置 **托管加载项列表**，如[由于 Office 2013 和 Office 2016 程序的组策略设置，未加载任何加载项](https://support.microsoft.com/help/2733070/no-add-ins-loaded-due-to-group-policy-settings-for-office-2013-and-off)中所述。
+若要对 Office 应用程序使用内置标签而非 Azure 信息保护客户端，建议你使用组策略设置 **托管加载项列表**，如 [由于 Office 2013 和 Office 2016 程序的组策略设置，未加载任何加载项](https://support.microsoft.com/help/2733070/no-add-ins-loaded-due-to-group-policy-settings-for-office-2013-and-off)中所述。
 
 对于 Microsoft Word 2016、Excel 2016、PowerPoint 2016 和 Outlook 2016，请为 Azure 信息保护客户端指定以下编程标识符 (ProgID)，并将选项设置为“**0：始终禁用（阻止）加载项**”
 

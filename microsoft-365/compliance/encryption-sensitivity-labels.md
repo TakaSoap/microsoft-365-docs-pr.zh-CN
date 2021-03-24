@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: 配置加密的敏感度标签，以便通过限制访问和使用来保护你的数据。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 6f906e2a3ddd8a0847174a61e9f2b28238e5dc19
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 4b5d25c51560cfe7a4d55419a7de9ce36321e78f
+ms.sourcegitcommit: 8998f70d3f7bd673f93f8d1cf12ce981b1b771c3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50928070"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51034171"
 ---
 # <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>通过敏感度标签应用加密，从而限制对内容的访问
 
@@ -227,27 +227,33 @@ ms.locfileid: "50928070"
 
 ## <a name="let-users-assign-permissions"></a>允许用户分配权限
 
+> [!IMPORTANT]
+> 并非所有的标签客户端都支持让用户自己分配权限所有的选项。 请使用本节了解更多信息。
+
 可使用下述选项来允许用户在向内容手动应用敏感度标签时分配权限：
 
-- 在 Outlook 中，用户可为其所选收件人选择与“[请勿转发](/azure/information-protection/configure-usage-rights#do-not-forward-option-for-emails)”选项等效的限制。
+- 在 Outlook 中，用户可以为他们选择的收件人选择相当于 [“不转发”](/azure/information-protection/configure-usage-rights#do-not-forward-option-for-emails) 或 [“只加密”](/azure/information-protection/configure-usage-rights#encrypt-only-option-for-emails) 的限制。
+    
+    所有支持敏感标签的电子邮件客户端都支持 “不转发” 选项。 不过，应用灵敏度标签的 **Encrypt-Only** 选项是最近发布的版本，只支持内置标签，而不支持 Azure 信息保护统一标签客户端。 对于不支持此功能的邮件客户端，标签将不可见。
+    
+    要检查哪些使用内置标签的 Outlook 应用支持应用带有敏感度标签的 Encrypt-Only 选项，请使用 [“Outlook 能力表”](sensitivity-labels-office-apps.md#sensitivity-label-capabilities-in-outlook) 和 **“让用户分配权限: - 只加密”** 行。
 
 - 在 Word、PowerPoint 和 Excel 中，系统会提示用户为特定用户、组或组织选择他们自己的权限。
 
-    > [!NOTE]
-    > Azure 信息保护统一标记客户端支持对 Word、PowerPoint 和 Excel 使用此选项。 对于使用内置标记的应用，[检查哪些应用支持它](sensitivity-labels-office-apps.md#sensitivity-label-capabilities-in-word-excel-and-powerpoint)。
-    >
-    > 如果已选中此选项，但用户的应用不支持这一选项，则该标签不会向用户显示，或者会显示标签以确保一致性，但无法随说明消息一起应用到用户。
+    Azure 信息保护统一标签客户端和一些使用内置标签的应用程序都支持该选项。 对于不支持该功能的应用，标签对于用户来说要么是不可见，要么是为了保持一致性，即使标签是可见的也无法应用于向用户解释信息。
+    
+    要检查哪些使用内置标签的应用支持此选项，请使用 [Word、Excel 和 PowerPoint 功能表](sensitivity-labels-office-apps.md#sensitivity-label-capabilities-in-word-excel-and-powerpoint) 和 **“让用户分配权限: - 提示用户”** 行。
 
 在这些选择受到支持时，请使用以下标签确定用户何时回看到敏感度标签：
 
 |设置 |标签在 Outlook 中可见|标签在 Word、Excel 和 PowerPoint 中可见|
 |:-----|:-----|:-----|:-----|
-|**在 Outlook 中，强制实施与“请勿转发”选项等效的限制**|是 |否 |
+|**在 Outlook 中，使用“不转发”或“仅加密”选项实施限制**|是 |否 |
 |**在 Word、PowerPoint 和 Excel 中提示用户指定权限**|否 |是|
 
 同时选中这两个选项时，标签在 Outlook 和 Word、Exce、PowerPoint 中都可见。
 
-允许用户分配权限的敏感度标签仅可由用户手动应用于内容；它不能自动应用，也不能用作建议的标签。
+让用户分配权限的敏感性标签必须由用户手动应用于内容，不能自动应用或作为推荐标签使用。
 
 配置用户分配的权限：
 
@@ -255,13 +261,21 @@ ms.locfileid: "50928070"
 
 ### <a name="outlook-restrictions"></a>Outlook 限制
 
-在 Outlook 中，当用户向邮件应用允许其分配权限的敏感度标签时，需遵守的限制与“请勿转发”选项相同。 用户将在邮件顶部看到标签名称和说明，这表示正在保护该内容。 与 Word、PowerPoint 和 Excel 不同（详见[下一部分](#word-powerpoint-and-excel-permissions)），系统不会提示用户选择特定权限。
+在 Outlook 中，当用户应用一个让他们为邮件分配权限的敏感标签时，可以选择 **“不转发”选项** 或 **“只加密”**。 用户将在邮件顶部看到标签名称和说明，这表示正在保护该内容。 与 Word、PowerPoint 和 Excel 不同（详见[下一部分](#word-powerpoint-and-excel-permissions)），系统不会提示用户选择特定权限。
 
 ![应用于 Outlook 中的邮件的敏感度标签](../media/sensitivity-label-outlook-protection-applied.png)
 
-向电子邮件应用“请勿转发”选项时，电子邮件将被加密，且收件人必须通过身份验证。 其次，收件人不得转发、打印和复制该邮件。 例如，在 Outlook 客户端中，“转发”按钮不可用，“另存为”和“打印”菜单选项也不可用，并且你不可在“收件人”、“抄送”和“密件抄送”框中添加或更改收件人。
+当这些选项中的任何一个应用于电子邮件时，都会加密电子邮件且收件人必须经过身份验证。 然后，收件人自动拥有受限制的使用权限:
 
-自动附加到电子邮件但未加密的 Office 文档会自动继承相同的限制。 应用于这些文档的使用权限为“编辑内容”、“编辑”，“保存”，“视图”、“打开”、“阅读”，以及“允许宏”。 如果用户对附件实施其他使用权限，或者附件并非支持该继承权限的 Office 文档，则用户需要在将文件附加到电子邮件之前保护该文件。
+- **不转发**: 收件人无法转发、打印或复制该邮件。 例如，在 Outlook 客户端中，“转发”按钮不可用，“另存为”和“打印”菜单选项也不可用，并且你不可在“收件人”、“抄送”和“密件抄送”框中添加或更改收件人。
+    
+    有关此选项工作方式的更多信息，请参阅 [电子邮件的 “不转发” 选项](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#do-not-forward-option-for-emails)。
+
+- **只加密密**: 收件人拥有除 “另存为”、“导出” 和 “完全控制” 以外的所有使用权。 这种使用权的组合意味着收件人除了无法取消保护外，没有任何限制。 例如，收件人可以从邮件中复制、打印和转发。
+    
+    有关此选项工作方式的更多信息，请参见 [电子邮件的 “只加密” 选项](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#encrypt-only-option-for-emails)。
+
+自动附加到电子邮件但未加密的 Office 文档会自动继承相同的限制。 对于“请勿转发”，适用于这些文件的使用权限是“编辑内容”，“编辑”; “保存”; “查看”、“打开”、“读取”; 以及“允许宏”。 如果用户希望对附件有不同的使用权限，或者附件并非支持该继承保护的 Office 文档，用户则需要在将文件附加到电子邮件之前对文件进行加密。
 
 ### <a name="word-powerpoint-and-excel-permissions"></a>Word、PowerPoint 和 Excel 权限
 

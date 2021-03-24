@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-may2020
 - seo-marvel-jun2020
 description: 通常，它是记录管理解决方案的一部分，你可以配置保留标签以根据所识别的事件开始保留期。
-ms.openlocfilehash: 49fe330fa6844361a77caaebb0e6a411297ee643
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: ee828b6852440f5be07fdf34df2fb6a11253ae1c
+ms.sourcegitcommit: 8998f70d3f7bd673f93f8d1cf12ce981b1b771c3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50907012"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51034243"
 ---
 # <a name="start-retention-when-an-event-occurs"></a>从事件发生时开始计算保留期
 
@@ -89,7 +89,7 @@ ms.locfileid: "50907012"
 
 ### <a name="step-1-create-a-label-whose-retention-period-is-based-on-an-event"></a>第 1 步：创建保留期以事件为依据的标签
 
-若要创建和配置保留标签，请使用“[创建和配置保留标签](./create-apply-retention-labels.md#create-and-configure-retention-labels)”中的说明。 但是特定于基于事件的保留，在“创建保留标签向导”的“**定义保留设置**”页面上，在“**启动保留期，基于：**”后，从下拉列表中选择一个默认事件类型，或选择“**创建新事件类型**”来自行创建：
+若要创建和配置保留标签，请参阅 [创建保留标签](./create-apply-retention-labels.md#step-1-create-retention-labels) 的说明。 但是特定于基于事件的保留，在“创建保留标签向导”的“**定义保留设置**”页面上，在“**启动保留期，基于：**”后，从下拉列表中选择一个默认事件类型，或选择“**创建新事件类型**”来自行创建：
 
 ![为保留标签创建新事件类型](../media/SPRetention6.png)
 
@@ -212,7 +212,7 @@ REST API 是一个支持多组 HTTP 操作（方法）的服务终结点，提�
 
 在使用 REST API 之前，请以全局管理员身份，确认要用于保留事件调用的 URL。 为此，请使用 REST API URL 运行 GET 保留事件调用：
 
-```console
+```http
 https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent
 ```
 
