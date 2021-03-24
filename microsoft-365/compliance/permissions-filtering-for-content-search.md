@@ -20,12 +20,12 @@ search.appverid:
 ms.assetid: 1adffc35-38e5-4f7d-8495-8e0e8721f377
 description: 使用内容搜索权限筛选，让电子数据展示管理员仅搜索组织中邮箱和网站的子集。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: be1daa4785f67ef54f107319bf88438c134896ec
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 78d36ccd602ea546099e768d7e91594a668df586
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50927980"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51051724"
 ---
 # <a name="configure-permissions-filtering-for-content-search"></a>配置内容搜索的权限筛选
 
@@ -45,7 +45,7 @@ ms.locfileid: "50927980"
 
 ## <a name="requirements-to-configure-permissions-filtering"></a>配置权限筛选的要求
 
-- 若要运行合规性安全筛选器 cmdlet，您必须是安全与合规中心内组织管理&组的成员。 有关详细信息，请参阅[安全与合规中心中的权限](../security/office-365-security/permissions-in-the-security-and-compliance-center.md)。
+- 若要运行合规性安全筛选器 cmdlet，您必须是安全与合规中心内组织管理&组的成员。 有关详细信息，请参阅[安全与合规中心中的权限](../security/defender-365-security/permissions-in-the-security-and-compliance-center.md)。
 
 - 必须同时连接到 Exchange Online 和安全&中心 PowerShell，以使用合规性安全筛选器 cmdlet。 这是必需的，因为这些 cmdlet 需要访问邮箱属性，这就是您必须连接到 Exchange Online PowerShell 的原因。 请参阅下一节中的步骤。
 

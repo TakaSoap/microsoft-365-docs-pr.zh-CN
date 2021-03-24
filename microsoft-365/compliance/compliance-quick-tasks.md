@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-compliance
 localization_priority: Normal
 description: 了解可帮助你快速开始使用 Microsoft 365 中的合规性的任务。
-ms.openlocfilehash: 69aef07e65f5644f9aa294025c8388410f160243
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: b8a6f98a38dcb6096287cbc2389648c0e7457e5c
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50908582"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51052100"
 ---
 # <a name="quick-tasks-for-getting-started-with-microsoft-365-compliance"></a>Microsoft 365 合规性入门快速任务
 
@@ -34,22 +34,22 @@ ms.locfileid: "50908582"
 
 首先，向组织人员分配合规性权限，以便他们可以执行这些任务，并防止未经授权的人员访问其职责之外的区域。 在开始配置和实施 Microsoft 365 中包含的合规性解决方案之前，需要确保向合规性数据管理员和合规性管理员管理员角色分配合适的人员。 你还需要将用户分配到 Azure Active Directory 全局读者角色，以查看合规性管理器中的数据。
 
-有关配置权限和将人员分配给管理员角色的分步指南，请参阅安全与合规中心& [权限](../security/office-365-security/permissions-in-the-security-and-compliance-center.md)。
+有关配置权限和将人员分配给管理员角色的分步指南，请参阅安全与合规中心& [权限](../security/defender-365-security/permissions-in-the-security-and-compliance-center.md)。
 
 ## <a name="task-2-know-your-state-of-compliance"></a>任务 2：了解合规性状态
 
 如果您不知道您在哪里，则很难知道在哪里。 满足合规性需求包括了解当前风险级别以及在这些不断变化的时间可能需要哪些更新。 无论你的组织是了解合规性要求还是对管理你的行业的标准和法规有丰富经验，改进合规性可以做的一个最佳操作就是了解你的组织在什么位置。
 
-[Microsoft 合规性管理器](compliance-manager.md) 可帮助你了解组织的合规性状态，并突出显示可能需要改进的领域。 合规性管理器使用集中式仪表板计算基于风险的分数，以衡量完成有助于降低数据保护和监管标准风险的操作的进度。 您还可以使用合规性管理器作为工具来跟踪所有风险评估。 它提供了工作流功能，可帮助你通过常用工具高效地完成风险评估。
+[Microsoft 合规性管理器](compliance-manager.md) 可帮助你了解组织的合规性状态，并突出显示可能需要改进的领域。 合规性管理器使用集中式仪表板计算基于风险的分数，以衡量完成有助于降低数据保护和监管标准风险的操作的进度。 您还可以使用合规性管理器作为工具来跟踪所有风险评估。 它提供帮助你通过通用工具有效完成风险评估的工作流功能。
 
 有关合规性管理器的分步指南，请参阅合规性管理器 [入门](compliance-manager-setup.md)。
 
 >[!IMPORTANT]
 >大多数组织都紧密集成了安全性和合规性。 组织解决基本安全、威胁防护、标识和访问管理方面的问题非常重要，这有助于提供针对安全性和合规性的深层防御方法。
 >
->检查 [Microsoft 365](../security/mtp/microsoft-secure-score.md) 安全中心中的 Microsoft 365 安全分数，并完成以下文章中概述的任务：
+>检查 [Microsoft 365](../security/defender/microsoft-secure-score.md) 安全中心中的 Microsoft 365 安全分数，并完成以下文章中概述的任务：
 >
-> - [安全路线图 - 前 30 天、前 90 天及以后的首要任务](../security/office-365-security/security-roadmap.md)
+> - [安全路线图 - 前 30 天、前 90 天及以后的首要任务](../security/defender-365-security/security-roadmap.md)
 > - [支持在家工作的安全团队的 12 大任务](../security/top-security-tasks-for-remote-work.md)
 
 ## <a name="task-3-enable-auditing-for-your-organization"></a>任务 3：为组织启用审核
@@ -100,7 +100,7 @@ Microsoft 提供了几个内置警报策略，可帮助识别管理员权限滥�
 
 敏感度标签、敏感信息类型、保留标签和策略以及可训练分类器可用于跨 Exchange、SharePoint 和 OneDrive 对敏感项目进行分类和标记，如前面的任务所见。 快速任务旅程中的最后一步是查看哪些项目已标记，以及用户正在针对这些敏感项目采取的操作。 [内容资源管理器](data-classification-content-explorer.md)[和活动资源管理器](data-classification-activity-explorer.md)提供此可见性。
 
-### <a name="content-explorer"></a>内容资源管理器
+### <a name="content-explorer"></a>内容浏览器
  内容资源管理器允许你以本机格式查看已分类为敏感信息类型或属于可训练分类器特定分类的所有项目，以及应用了敏感度或保留标签的所有项目。
 
 有关使用内容资源管理器的分步指南，请参阅了解数据 [-](data-classification-overview.md)数据分类概述和内容 [资源管理器入门](data-classification-content-explorer.md)。

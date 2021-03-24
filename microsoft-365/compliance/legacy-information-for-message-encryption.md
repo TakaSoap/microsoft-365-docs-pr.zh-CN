@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 了解如何为组织将旧式文件 (OME) Office 365 邮件加密。
-ms.openlocfilehash: 0b9c32b8b30753b02a5a0cdaa40b644ca89cfba3
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: eabf655b6fa92a6f502ebe1e071d41f394f78929
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50905914"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51051824"
 ---
 # <a name="legacy-information-for-office-365-message-encryption"></a>Office 365 邮件加密的旧信息
 
@@ -293,7 +293,7 @@ Office 365 邮件加密使用权限管理服务 (RMS) 作为其加密基础结�
   
  **问：我是 Exchange Hosted Encryption (EHE) 订阅者。在哪里可以了解有关升级到 Office 365 邮件加密的信息？**
   
-所有 EHE 客户已升级为 Office 365 邮件加密客户。 有关详细信息，请访问 Exchange [Hosted Encryption Upgrade Center](../security/office-365-security/exchange-online-protection-overview.md)。
+所有 EHE 客户已升级为 Office 365 邮件加密客户。 有关详细信息，请访问 Exchange [Hosted Encryption Upgrade Center](../security/defender-365-security/exchange-online-protection-overview.md)。
   
  **问：是否需要打开组织防火墙中任何 URL、IP 地址或端口以支持 Office 365 邮件加密？**
   

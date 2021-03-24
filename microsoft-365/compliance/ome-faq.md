@@ -15,12 +15,12 @@ search.appverid:
 ms.assetid: 0432dce9-d9b6-4e73-8a13-4a932eb0081e
 description: 对新的邮件保护功能如何工作有疑问？ 请在此处查看答案。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: fdfcc2e7454b1243016754ba32dcc2622b876672
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 13d4181482bf8ad7460480a70c762fe60fd28ad0
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50927750"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51051744"
 ---
 # <a name="message-encryption-faq"></a>邮件加密常见问题解答
 
@@ -165,7 +165,7 @@ Outlook 网页页面支持吊销受保护的邮件。  有关详细信息 [，�
   
 ## <a name="are-there-any-reporting-capabilities-or-insights-for-encrypted-emails"></a>是否有加密电子邮件的报告功能或见解？
 
-安全与合规中心有一个加密报告。 请参阅 [查看安全与合规中心&电子邮件安全报告](../security/office-365-security/view-email-security-reports.md)。
+安全与合规中心有一个加密报告。 请参阅 [查看安全与合规中心&电子邮件安全报告](../security/defender-365-security/view-email-security-reports.md)。
   
 ## <a name="can-i-use-message-encryption-with-compliance-features-such-as-ediscovery"></a>能否将邮件加密与电子数据展示等合规性功能一同使用？
 

@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 设置 Microsoft 合规性管理器用户权限和角色，并配置操作自动化测试。 管理用户历史记录并筛选仪表板视图。
-ms.openlocfilehash: d8eb1d7d8245aa31cb5429452128cedc0adf4684
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 08a62a12e5f412781595ba7d54c3b63a03ae19aa
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50925700"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51052130"
 ---
 # <a name="get-started-with-compliance-manager"></a>合规性管理器入门
 
@@ -32,7 +32,7 @@ ms.locfileid: "50925700"
 
 合规性管理器适用于具有 Office 365 和 Microsoft 365 许可证的组织，以及美国政府社区云 (GCC) 中等和 GCC 高客户。 评估可用性和管理功能取决于您的许可协议。  [查看服务说明详细信息](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。
 
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>准备工作
 
 组织的 Microsoft 365 全局管理员可能是第一个访问合规性管理器的用户。 我们建议全局管理员登录并设置用户权限，如第一次访问合规性管理器时所述。
 
@@ -72,7 +72,7 @@ ms.locfileid: "50925700"
 
 ##### <a name="more-about-the-office-365-security--compliance-center"></a>有关 Office 365 安全与&中心
 
-详细了解 Office [365 安全](../security/office-365-security/permissions-in-the-security-and-compliance-center.md)与合规中心&权限。
+详细了解 Office [365 安全](../security/defender-365-security/permissions-in-the-security-and-compliance-center.md)与合规中心&权限。
 
 如果您无法访问 Office 365 安全与合规中心，或者您需要访问 Microsoft 服务信任门户中的经典版本的合规性管理器，则服务信任门户中的管理员设置提供了另一种分配角色 (查看说明[) 。](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md#assigning-compliance-manager-roles-to-users) 请注意，此类角色的功能更加有限。
 
@@ -104,7 +104,7 @@ Microsoft 365 合规中心中的合规性管理器设置允许你启用和禁用
 
 ### <a name="set-up-automated-testing"></a>设置自动测试
 
-合规性管理器中的一些改进操作也受 [Microsoft 安全](../security/mtp/microsoft-secure-score.md)分数 监视。 可以设置对共同监视的操作的自动测试，这意味着在安全分数中对操作进行测试和更新时，这些结果会与合规性管理器中的相同操作同步，并计入合规性分数。
+合规性管理器中的一些改进操作也受 [Microsoft 安全](../security/defender/microsoft-secure-score.md)分数 监视。 可以设置对共同监视的操作的自动测试，这意味着在安全分数中对操作进行测试和更新时，这些结果会与合规性管理器中的相同操作同步，并计入合规性分数。
 
 默认情况下，对使用合规性管理器的组织启用自动测试。 首次部署 Microsoft 365 或 Office 365 时，安全分数需要大约 7 天的时间，以完全收集数据，并纳入合规性分数中。  启用自动测试后，不会更新该操作的测试日期，但其测试状态将更新。 创建新评估后，分数将自动包含 Microsoft 控制分数和安全分数集成。
 

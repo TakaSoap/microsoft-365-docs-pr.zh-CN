@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 description: 了解 Microsoft 合规性管理器如何根据为应对风险和改进合规性状态而采取的操作计算个性化分数。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 75d340c31b4f5477df845531bfb933883f331198
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 756ce207b1e9583bf63f19351e85955950487404
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50908572"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51052110"
 ---
 # <a name="compliance-score-calculation"></a>合规性分数计算
 
@@ -61,7 +61,7 @@ ms.locfileid: "50908572"
 
 例如，如果你在 Azure AD 门户 (MFA) 多重身份验证，合规性管理器将检测该设置，并反映在控制访问解决方案详细信息中。 相反，如果未打开 MFA，合规性管理器会将其标记为建议的操作。
 
-详细了解安全 [分数及其工作方式](../security/mtp/microsoft-secure-score.md)。
+详细了解安全 [分数及其工作方式](../security/defender/microsoft-secure-score.md)。
   
 ## <a name="action-types-and-points"></a>操作类型和点
 

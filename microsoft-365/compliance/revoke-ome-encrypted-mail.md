@@ -16,12 +16,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 作为管理员和邮件发件人，可以吊销某些使用 Office 365 高级邮件加密加密的电子邮件。
-ms.openlocfilehash: b49915b6ef72d366a4b2718319150d2d5b640b9f
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 340a9e73dba50e28223ee561db749a089c649df6
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50917194"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51051714"
 ---
 # <a name="revoke-email-encrypted-by-advanced-message-encryption"></a>撤销通过高级邮件加密加密的电子邮件
 
@@ -75,7 +75,7 @@ Microsoft 365 管理员按照以下常规步骤吊销符合条件的加密电子
 - 验证您是否可以撤销邮件。
 - 撤销邮件。
 
-### <a name="step-1-obtain-the-message-id-of-the-email"></a>第 1 步： 获取电子邮件的邮件 ID
+### <a name="step-1-obtain-the-message-id-of-the-email"></a>步骤 1. 获取电子邮件的邮件 ID
 
 在可以撤销加密邮件之前，请收集邮件的邮件 ID。 MessageId 的格式通常为：
 
@@ -91,13 +91,13 @@ Microsoft 365 管理员按照以下常规步骤吊销符合条件的加密电子
 
 #### <a name="to-identify-the-message-id-of-the-email-you-want-to-revoke-by-using-office-message-encryption-reports-in-the-security-amp-compliance-center"></a>使用安全与合规中心中的 Office 邮件加密报告标识要撤销的电子邮件 &amp; 的邮件 ID
 
-1. 在安全 &amp; 与合规中心中，导航到"**邮件加密报告"。** 有关此报告的信息，请参阅在安全与 [合规中心查看电子邮件 &amp; 安全报告](../security/office-365-security/view-email-security-reports.md)。
+1. 在安全 &amp; 与合规中心中，导航到"**邮件加密报告"。** 有关此报告的信息，请参阅在安全与 [合规中心查看电子邮件 &amp; 安全报告](../security/defender-365-security/view-email-security-reports.md)。
 
 2. 选择 **"查看详细信息** "表，并确定要撤销的邮件。
 
 3. 双击邮件以查看包含邮件 ID 的详细信息。
 
-### <a name="step-2-verify-that-the-mail-is-revocable"></a>第 2 步： 验证邮件是否可撤销
+### <a name="step-2-verify-that-the-mail-is-revocable"></a>步骤 2. 验证邮件是否可撤销
 
 若要验证是否可以吊销邮件，请检查安全与合规中心的"详细信息"表中的"加密"报告中是否显示"吊销状态 &amp; "字段。
 
@@ -119,7 +119,7 @@ Microsoft 365 管理员按照以下常规步骤吊销符合条件的加密电子
      "Test message" True
      ```
 
-### <a name="step-3-revoke-the-mail"></a>第 3 步： 撤销邮件
+### <a name="step-3-revoke-the-mail"></a>步骤 3. 撤销邮件
 
 一旦知道要撤销的电子邮件的邮件 ID，并且已验证该邮件是可撤销的，可以使用安全与合规中心或 &amp; Windows PowerShell。
 

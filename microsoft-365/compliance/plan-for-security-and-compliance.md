@@ -17,12 +17,12 @@ ms.assetid: dc4f704c-6fcc-4cab-9a02-95a824e4fb57
 description: 此登录页提供了 Office 365 中安全性和合规性的链接和规划信息。
 ms.collection: M365-security-compliance
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f050d8bb7052ec2f62a9e33c35bcbe43546a40c2
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 90f4083bdf38f4b1390ee31d0853ad65e3fe236f
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50927958"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51051704"
 ---
 # <a name="plan-for-security-amp-compliance"></a>规划安全 &amp; 合规性
 
@@ -38,7 +38,7 @@ ms.locfileid: "50927958"
 
 设置 Microsoft 365 订阅后，记下起始分数。 安全分数提供了可用于增加分数的配置建议。 目标是了解您可以利用的一些机会来保护环境，这些机会不会对用户的工作效率产生负面影响。
   
-- [Office 365 安全分数介绍](../security/mtp/microsoft-secure-score.md)
+- [Office 365 安全分数介绍](../security/defender/microsoft-secure-score.md)
     
 ## <a name="step-3-plan-access-protection-for-identity-and-devices"></a>步骤 3：规划标识和设备的访问保护
 
@@ -46,7 +46,7 @@ ms.locfileid: "50927958"
   
 - [保护对 Office 365 数据和服务的访问](protect-access-to-data-and-services.md)
     
-- [保护电子邮件策略和配置](../security/office-365-security/secure-email-recommended-policies.md)
+- [保护电子邮件策略和配置](../security/defender-365-security/secure-email-recommended-policies.md)
     
 [PDF](https://go.microsoft.com/fwlink/p/?linkid=841656) | [Visio](https://go.microsoft.com/fwlink/p/?linkid=841657) | [更多语言](https://www.microsoft.com/download/details.aspx?id=55032)
   
@@ -62,15 +62,15 @@ ms.locfileid: "50927958"
   
 - [转到安全 &amp; 与合规中心](./microsoft-365-compliance-center.md)
     
-- [安全与合规中心 &amp; 内的权限](~/security/office-365-security/protect-against-threats.md)
+- [安全与合规中心 &amp; 内的权限](~/security/defender-365-security/protect-against-threats.md)
     
-- [向用户授予对安全 &amp; 与合规中心的访问权限](~/security/office-365-security/grant-access-to-the-security-and-compliance-center.md)
+- [向用户授予对安全 &amp; 与合规中心的访问权限](~/security/defender-365-security/grant-access-to-the-security-and-compliance-center.md)
     
 ## <a name="step-6-use-end-to-end-security-scenarios-as-starting-points"></a>步骤 6：使用端到端安全方案作为起点
 
 使用这些建议的配置作为企业规模或复杂的访问安全方案的起点。
   
-- [保护电子邮件策略和配置](../security/office-365-security/secure-email-recommended-policies.md)
+- [保护电子邮件策略和配置](../security/defender-365-security/secure-email-recommended-policies.md)
     
 - [Microsoft 云中的 Contoso](../enterprise/contoso-case-study.md)
     

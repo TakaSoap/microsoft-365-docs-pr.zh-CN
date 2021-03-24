@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: d945f7dd-f62f-4ca7-b3e7-469824cfd493
 description: 使用电子数据展示和搜索工具管理和响应组织中发生的数据泄漏事件。
-ms.openlocfilehash: 9ca637dcd3b4b07846d977d64f535b7b5319d884
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: da473fcdf553176d3c6d4dfa2a4c4b17b2bcce03
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50925678"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51051974"
 ---
 # <a name="ediscovery-solution-series-data-spillage-scenario---search-and-purge"></a>电子数据展示解决方案系列：数据泄漏方案 - 搜索和清除
 
@@ -121,7 +121,7 @@ ms.locfileid: "50925678"
   
 可以在安全与合规中心内使用邮件跟踪，或在 Exchange Online PowerShell 中使用相应的 cmdlet。 需要注意的是，邮件跟踪无法完全保证返回的数据的完整性。 有关使用邮件跟踪的信息，请参阅： 
   
-- [安全与合规中心内的消息跟踪](../security/office-365-security/message-trace-scc.md)
+- [安全与合规中心内的消息跟踪](../security/defender-365-security/message-trace-scc.md)
     
 - [安全与合规中心&邮件跟踪](https://blogs.technet.microsoft.com/exchange/2018/05/02/new-message-trace-in-office-365-security-compliance-center/)
     

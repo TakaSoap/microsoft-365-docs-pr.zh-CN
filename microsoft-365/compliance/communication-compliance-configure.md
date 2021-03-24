@@ -20,12 +20,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 18ab0065a4a6c90f61730a313eb8c54f538fafab
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: aa3af1e3cf507178a5747cca28fbda543aecd334
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50918047"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51052120"
 ---
 # <a name="get-started-with-communication-compliance"></a>通信合规性入门
 
@@ -112,7 +112,7 @@ ms.locfileid: "50918047"
 
 9. 选择“**关闭**”以完成步骤。
 
-有关角色组和权限的详细信息，请参阅 [合规中心中的权限](../security/office-365-security/protect-against-threats.md)。
+有关角色组和权限的详细信息，请参阅 [合规中心中的权限](../security/defender-365-security/protect-against-threats.md)。
 
 ## <a name="step-2-required-enable-the-audit-log"></a>步骤 2（必选）：启用审核日志
 

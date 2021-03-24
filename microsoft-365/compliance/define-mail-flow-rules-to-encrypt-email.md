@@ -16,12 +16,12 @@ ms.assetid: 9b7daf19-d5f2-415b-bc43-a0f5f4a585e8
 ms.collection:
 - M365-security-compliance
 description: 管理员可以了解如何创建邮件流规则 (传输规则) Office 365 邮件加密来加密和解密邮件。
-ms.openlocfilehash: 5c0f67acdb5d8fbfff216742cab1c49732c4ab24
-ms.sourcegitcommit: 30c3054004ddc9d6059c11d55577552aa2464810
+ms.openlocfilehash: 63b1b0ba3b13f5beecd049a8ef81d6355855626f
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50939643"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51051934"
 ---
 # <a name="define-mail-flow-rules-to-encrypt-email-messages"></a>定义用于加密电子邮件的邮件流规则
 
@@ -132,4 +132,4 @@ ms.locfileid: "50939643"
 
 [Exchange Online 中的邮件流规则（传输规则）](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules)
 
-[邮件流规则 (Exchange Online Protection) 传输规则](../security/office-365-security/mail-flow-rules-transport-rules-0.md)
+[邮件流规则 (Exchange Online Protection) 传输规则](../security/defender-365-security/mail-flow-rules-transport-rules-0.md)

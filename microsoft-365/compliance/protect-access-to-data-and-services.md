@@ -16,12 +16,12 @@ search.appverid:
 ms.assetid: a6ef28a4-2447-4b43-aae2-f5af6d53c68e
 description: 了解如何保护用户和设备对 Microsoft 365 数据和服务的访问并防御数据丢失。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: bd8bbb62bc87ff59594e2fb2a3e21311c2452d9f
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 9ff7bd2ff8b4b333eb30a6cc82797a8968941e0b
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50925538"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51051694"
 ---
 # <a name="protect-user-and-device-access"></a>保护用户和设备的访问权限
 
@@ -38,7 +38,7 @@ ms.locfileid: "50925538"
 
 首先，仅将管理员帐户用于管理。 管理员应具有单独的用户帐户，用于常规的非管理用途，并且仅在必要时使用其管理帐户来完成与其工作职能相关联的任务。
 
-使用多重身份验证和条件访问保护管理员帐户。 有关详细信息，请参阅 [保护管理员帐户](../security/office-365-security/identity-access-prerequisites.md#protecting-administrator-accounts)。 
+使用多重身份验证和条件访问保护管理员帐户。 有关详细信息，请参阅 [保护管理员帐户](../security/defender-365-security/identity-access-prerequisites.md#protecting-administrator-accounts)。 
 
 接下来，在 Office 365 中配置特权访问管理。 Privileged access management allows granular access control over privileged admin tasks in Office 365. 它可以帮助保护组织免受可能使用现有特权管理员帐户（长期访问敏感数据或访问关键配置设置）的泄露。
 
@@ -50,7 +50,7 @@ ms.locfileid: "50925538"
 最后，可以通过在租户中创建两个或多个紧急访问帐户来缓解意外缺少管理访问的影响。 请参阅 [在 Azure AD 中管理紧急访问帐户](/azure/active-directory/users-groups-roles/directory-emergency-access)。 
 
 ## <a name="step-3-configure-recommended-identity-and-device-access-policies"></a>步骤 3：配置推荐的标识和设备访问策略
-MFA (和) 访问策略的多重身份验证是抵御帐户损坏和未授权访问的强大工具。 我们建议实现一组已一起测试的策略。 有关详细信息（包括部署步骤，请参阅 [标识和设备访问配置](../security/office-365-security/microsoft-365-policies-configurations.md)）。
+MFA (和) 访问策略的多重身份验证是抵御帐户损坏和未授权访问的强大工具。 我们建议实现一组已一起测试的策略。 有关详细信息（包括部署步骤，请参阅 [标识和设备访问配置](../security/defender-365-security/microsoft-365-policies-configurations.md)）。
 
  这些策略实现以下功能：
 - 多重身份验证
@@ -63,7 +63,7 @@ MFA (和) 访问策略的多重身份验证是抵御帐户损坏和未授权访�
 
 ## <a name="step-4-configure-sharepoint-device-access-policies"></a>步骤 4：配置 SharePoint 设备访问策略
 
-Microsoft 建议通过设备访问控制使用敏感和高度管控的内容保护 SharePoint 网站中的内容。 有关详细信息，请参阅用于保护 [SharePoint 网站和文件的策略建议](../security/office-365-security/sharepoint-file-access-policies.md)。
+Microsoft 建议通过设备访问控制使用敏感和高度管控的内容保护 SharePoint 网站中的内容。 有关详细信息，请参阅用于保护 [SharePoint 网站和文件的策略建议](../security/defender-365-security/sharepoint-file-access-policies.md)。
 
 
 

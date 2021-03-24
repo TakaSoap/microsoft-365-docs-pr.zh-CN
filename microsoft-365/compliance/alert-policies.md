@@ -19,12 +19,12 @@ ms.assetid: 8927b8b9-c5bc-45a8-a9f9-96c732e58264
 ms.custom:
 - seo-marvel-apr2020
 description: 在 Office 365 和 Microsoft 365 的安全与合规中心创建警报策略，以监视潜在威胁、数据丢失和权限问题。
-ms.openlocfilehash: e2f0749efc78ccb2129294bc14c8b7a0a8511e8b
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: acdda84ff23755a664bc599fa737e68098c797aa
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50920106"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51052152"
 ---
 # <a name="alert-policies-in-the-security-and-compliance-center"></a>安全与合规中心警报策略
 
@@ -67,7 +67,7 @@ ms.locfileid: "50920106"
 - **警报正在跟踪的活动** - 创建一个策略来跟踪活动或在某些情况下跟踪一些相关活动，例如通过共享文件、分配访问权限或创建匿名链接与外部用户共享文件。 当用户执行策略定义的活动时，将基于警报阈值设置触发警报。
 
     > [!NOTE]
-    > 你可以跟踪的活动取决于组织的 Office 365 企业版或 Office 365 美国政府版计划。 通常，与恶意软件市场活动和网络钓鱼攻击相关的活动需要 E5/G5 订阅或具有 [Defender for Office 365](../security/office-365-security/office-365-atp.md) 计划 2 附加订阅的 E1/F1/G1 或 E3/F3/G3 订阅。
+    > 你可以跟踪的活动取决于组织的 Office 365 企业版或 Office 365 美国政府版计划。 通常，与恶意软件市场活动和网络钓鱼攻击相关的活动需要 E5/G5 订阅或具有 [Defender for Office 365](../security/defender-365-security/defender-for-office-365.md) 计划 2 附加订阅的 E1/F1/G1 或 E3/F3/G3 订阅。
 
 - **活动** 条件 - 对于大多数活动，可以定义触发警报所必须满足的其他条件。 常见条件包括 IP 地址 (以便当用户在具有特定 IP 地址的计算机上或 IP 地址范围) 内执行活动时触发警报、特定用户执行该活动时是否触发警报，以及是否对特定文件名或 URL 执行活动。 还可以配置在组织中任何用户执行活动时触发警报的条件。 可用条件取决于所选活动。
 
@@ -84,7 +84,7 @@ ms.locfileid: "50920106"
 
   - 数据丢失防护
 
-  - 信息管理政策
+  - 信息治理
 
   - 邮件流
 
@@ -113,16 +113,16 @@ Microsoft 提供了内置警报策略，可帮助识别 Exchange 管理员权限
 
 | 默认警报策略 | 说明 | 类别 | 企业订阅 |
 |:-----|:-----|:-----|:-----|
-|**检测到潜在恶意 URL 单击**|当组织中受安全链接保护的用户单击恶意链接[](../security/office-365-security/atp-safe-links.md)时生成警报。 当用户根据组织的 Microsoft 365 商业安全链接策略) 识别 URL 裁定更改时，或当用户替代安全链接页面 (时，将触发此事件。 此警报策略具有 **"高** 严重性"设置。 对于 Defender for Office 365 P2、E5、G5 客户，此警报会自动触发 [Office 365](../security/office-365-security/office-365-air.md)中的自动调查和响应。 有关触发此警报的事件详细信息，请参阅设置 [安全链接策略](../security/office-365-security/set-up-atp-safe-links-policies.md)。|威胁管理|E5/G5 或 Defender for Office 365 P2 附加订阅|
-|**管理员提交结果已完成**|当管理员提交完成已 [提交](../security/office-365-security/admin-submission.md) 实体的重新扫描时，生成警报。 每次从管理员提交呈现重新扫描结果时，都会触发警报。 这些警报旨在提醒你查看以前的提交结果[](https://protection.office.com/reportsubmission)、提交用户报告的邮件以获得最新的策略检查和重新扫描裁定，以及帮助你确定你的组织中筛选策略是否具有预期的影响。 此策略具有 **"低** 严重性"设置。|威胁管理|E1/F1、E3/F3 或 E5|
-|**管理员触发的电子邮件手动调查**|当管理员触发来自威胁资源管理器的电子邮件的手动调查时，生成警报。 有关详细信息，请参阅[示例：安全管理员从威胁资源管理器触发调查 https://docs.microsoft.com/microsoft-365/security/office-365-security/automated-investigation-response-office#example-a-security-administrator-triggers-an-investigation-from-threat-explorer) ] (。 此警报通知您的组织已启动调查。 该警报提供有关触发它的人的信息，并包含指向调查的链接。 此策略具有 **信息** 严重性设置。|威胁管理| E5/G5 或 Microsoft Defender for Office 365 P2 附加订阅| 
+|**检测到潜在恶意 URL 单击**|当组织中受安全链接保护的用户单击恶意链接[](../security/defender-365-security/safe-links.md)时生成警报。 当用户根据组织的 Microsoft 365 商业安全链接策略) 识别 URL 裁定更改时，或当用户替代安全链接页面 (时，将触发此事件。 此警报策略具有 **"高** 严重性"设置。 对于 Defender for Office 365 P2、E5、G5 客户，此警报会自动触发 [Office 365](../security/defender-365-security/office-365-air.md)中的自动调查和响应。 有关触发此警报的事件详细信息，请参阅设置 [安全链接策略](../security/defender-365-security/set-up-safe-links-policies.md)。|威胁管理|E5/G5 或 Defender for Office 365 P2 附加订阅|
+|**管理员提交结果已完成**|当管理员提交完成已 [提交](../security/defender-365-security/admin-submission.md) 实体的重新扫描时，生成警报。 每次从管理员提交呈现重新扫描结果时，都会触发警报。 这些警报旨在提醒你查看以前的提交结果[](https://protection.office.com/reportsubmission)、提交用户报告的邮件以获得最新的策略检查和重新扫描裁定，以及帮助你确定你的组织中筛选策略是否具有预期的影响。 此策略具有 **"低** 严重性"设置。|威胁管理|E1/F1、E3/F3 或 E5|
+|**管理员触发的电子邮件手动调查**|当管理员触发来自威胁资源管理器的电子邮件的手动调查时，生成警报。 有关详细信息，请参阅[示例：安全管理员从威胁资源管理器触发调查 https://docs.microsoft.com/microsoft-365/security/defender-365-security/automated-investigation-response-office#example-a-security-administrator-triggers-an-investigation-from-threat-explorer) ] (。 此警报通知您的组织已启动调查。 该警报提供有关触发它的人的信息，并包含指向调查的链接。 此策略具有 **信息** 严重性设置。|威胁管理| E5/G5 或 Microsoft Defender for Office 365 P2 附加订阅| 
 |**创建转发/重定向规则**|当组织中有人为邮箱创建收件箱规则以将邮件转发或重定向到其他电子邮件帐户时，生成警报。 此策略仅跟踪使用 Outlook 网页版创建的收件箱 (以前称为 Outlook Web App) 或 Exchange Online PowerShell。 此策略具有 **"低** 严重性"设置。 有关使用收件箱规则在 Outlook 网页中转发和重定向电子邮件的信息，请参阅使用 Outlook 网页中的规则自动将邮件转发 [到另一个帐户](https://support.office.com/article/1433e3a0-7fb0-4999-b536-50e05cb67fed)。|威胁管理|E1/F1/G1、E3/F3/G3 或 E5/G5|
 |**启动或导出电子数据展示搜索**|当某人使用安全与合规中心的内容搜索工具时生成警报。 执行以下内容搜索活动时将触发警报： <br/><br/>* 内容搜索已启动<br/>* 导出内容搜索的结果<br/>* 导出内容搜索报告<br/><br/>与电子数据展示案例一起执行以前的内容搜索活动时，也会触发警报。 此 **策略具有中等** 严重性设置。 有关内容搜索活动详细信息，请参阅在搜索中搜索电子数据[审核日志。](search-for-ediscovery-activities-in-the-audit-log.md#ediscovery-activities)|威胁管理|E1/F1/G1、E3/F3/G3 或 E5/G5|
 |**提升 Exchange 管理员权限**|在 Exchange Online 组织中为某人分配管理权限时，生成警报。 例如，将用户添加到 Exchange Online 中的"组织管理"角色组时。 此策略具有 **"低** 严重性"设置。|权限|E1/F1/G1、E3/F3/G3 或 E5/G5|
-|**包含在传递后删除的恶意软件的电子邮件**|将包含恶意软件的任何邮件传递到您组织的邮箱时生成警报。 如果发生此事件，Microsoft 会使用零时差自动清除从 Exchange Online 邮箱中删除 [受感染的邮件](../security/office-365-security/zero-hour-auto-purge.md)。 此策略具有 **信息** 严重性设置，并自动触发 [Office 365 中的自动调查和响应](../security/office-365-security/office-365-air.md)。|威胁管理|E5/G5 或 Microsoft Defender for Office 365 P2 附加订阅|
-|**包含传递后删除的网络钓鱼 URL 的电子邮件**|将包含网络钓鱼邮件的任何邮件传递到您组织的邮箱时，生成警报。 如果发生此事件，Microsoft 会使用零时差自动清除从 Exchange Online 邮箱中删除 [受感染的邮件](../security/office-365-security/zero-hour-auto-purge.md)。 此策略具有 **信息** 严重性设置，并自动触发 [Office 365 中的自动调查和响应](../security/office-365-security/office-365-air.md)。|威胁管理|E5/G5 或 Defender for Office 365 P2 附加订阅|
-|**用户报告为恶意软件或网络钓鱼的电子邮件**|当贵组织的用户使用报告邮件外接程序将邮件报告为网络钓鱼电子邮件时，生成警报。 此策略具有 **信息** 严重性设置。 有关此外接程序详细信息，请参阅 [使用报告邮件外接程序](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)。 对于 Defender for Office 365 P2、E5、G5 客户，此警报会自动触发 [Office 365](../security/office-365-security/office-365-air.md)中的自动调查和响应。|威胁管理|E1/F1/G1、E3/F3/G3 或 E5/G5|
-|**超出电子邮件发送限制**|如果组织中有人发送的邮件超过出站垃圾邮件策略允许的邮件数，则生成警报。 这通常表示用户正在发送过多电子邮件或帐户可能受到威胁。 此 **策略具有中等** 严重性设置。 如果收到此警报策略生成的警报，则建议检查用户帐户 [是否受到威胁](../security/office-365-security/responding-to-a-compromised-email-account.md)。|威胁管理|E1/F1/G1、E3/F3/G3 或 E5/G5|
+|**包含在传递后删除的恶意软件的电子邮件**|将包含恶意软件的任何邮件传递到您组织的邮箱时生成警报。 如果发生此事件，Microsoft 会使用零时差自动清除从 Exchange Online 邮箱中删除 [受感染的邮件](../security/defender-365-security/zero-hour-auto-purge.md)。 此策略具有 **信息** 严重性设置，并自动触发 [Office 365 中的自动调查和响应](../security/defender-365-security/office-365-air.md)。|威胁管理|E5/G5 或 Microsoft Defender for Office 365 P2 附加订阅|
+|**包含传递后删除的网络钓鱼 URL 的电子邮件**|将包含网络钓鱼邮件的任何邮件传递到您组织的邮箱时，生成警报。 如果发生此事件，Microsoft 会使用零时差自动清除从 Exchange Online 邮箱中删除 [受感染的邮件](../security/defender-365-security/zero-hour-auto-purge.md)。 此策略具有 **信息** 严重性设置，并自动触发 [Office 365 中的自动调查和响应](../security/defender-365-security/office-365-air.md)。|威胁管理|E5/G5 或 Defender for Office 365 P2 附加订阅|
+|**用户报告为恶意软件或网络钓鱼的电子邮件**|当贵组织的用户使用报告邮件外接程序将邮件报告为网络钓鱼电子邮件时，生成警报。 此策略具有 **信息** 严重性设置。 有关此外接程序详细信息，请参阅 [使用报告邮件外接程序](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)。 对于 Defender for Office 365 P2、E5、G5 客户，此警报会自动触发 [Office 365](../security/defender-365-security/office-365-air.md)中的自动调查和响应。|威胁管理|E1/F1/G1、E3/F3/G3 或 E5/G5|
+|**超出电子邮件发送限制**|如果组织中有人发送的邮件超过出站垃圾邮件策略允许的邮件数，则生成警报。 这通常表示用户正在发送过多电子邮件或帐户可能受到威胁。 此 **策略具有中等** 严重性设置。 如果收到此警报策略生成的警报，则建议检查用户帐户 [是否受到威胁](../security/defender-365-security/responding-to-a-compromised-email-account.md)。|威胁管理|E1/F1/G1、E3/F3/G3 或 E5/G5|
 |**表单因潜在的网络钓鱼尝试被阻止**|如果由于检测到重复的网络钓鱼尝试行为而限制您组织中的某人共享表单和使用 Microsoft Forms 收集响应，则生成警报。 此策略具有 **高严重性** 设置。|威胁管理|E1、E3/F3 或 E5|
 |**已标记并确认为网络钓鱼的表单**|如果从组织内部在 Microsoft Forms 中创建的表单通过报告滥用被识别为潜在网络钓鱼，并且 Microsoft 确认为网络钓鱼，将生成警报。 此策略具有 **高** 严重性设置。|威胁管理|E1、E3/F3 或 E5|
 |**邮件已延迟**|当 Microsoft 无法通过使用连接器将电子邮件发送到本地组织或合作伙伴服务器时，生成警报。 发生这种情况时，邮件在 Office 365 中排队。 当 2，000 条或多条消息排入队列超过一小时时，将触发此警报。 此策略具有 **高** 严重性设置。|邮件流|E1/F1/G1、E3/F3/G3 或 E5/G5|
@@ -132,15 +132,15 @@ Microsoft 提供了内置警报策略，可帮助识别 Exchange 管理员权限
 |**由于 ZAP 已禁用，因此未删除恶意软件**| 当 Microsoft 检测到恶意软件邮件发送到邮箱时，生成警报，因为Zero-Hour电子邮件的自动清除功能。 此策略具有 **信息** 严重性设置。 |威胁管理|E5/G5 或 Defender for Office 365 P2 附加订阅|
 |**由于禁用用户的"垃圾邮件"文件夹而传递的网络钓鱼**|当 Microsoft 检测到禁用用户的"垃圾邮件"文件夹时，生成警报，从而允许将高可信度网络钓鱼邮件发送到邮箱。 此策略具有 **信息** 严重性设置。|威胁管理|适用于 Office 365 P1 或 P2 加载项订阅的 E5/G5 或 Defender|
 |**由于 ETR 覆盖而传递的网络钓鱼**|当 Microsoft 检测到允许将高可信度网络钓鱼邮件 (ETR) Exchange 传输规则时，生成警报。 此策略具有 **信息** 严重性设置。 有关 Exchange 传输规则 (邮件流规则) ，请参阅 Mail flow rules [ (transport rules) in Exchange Online](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules)。|威胁管理|适用于 Office 365 P1 或 P2 加载项订阅的 E5/G5 或 Defender|
-|**由于 IP 允许策略而传递的网络钓鱼**|当 Microsoft 检测到允许将高可信度网络钓鱼邮件发送到邮箱的 IP 允许策略时，生成警报。 此策略具有 **信息** 严重性设置。 有关 IP 允许策略和连接 (筛选) ，请参阅配置默认连接筛选器策略[- Office 365。](../security/office-365-security/configure-the-connection-filter-policy.md)|威胁管理|适用于 Office 365 P1 或 P2 加载项订阅的 E5/G5 或 Defender|
+|**由于 IP 允许策略而传递的网络钓鱼**|当 Microsoft 检测到允许将高可信度网络钓鱼邮件发送到邮箱的 IP 允许策略时，生成警报。 此策略具有 **信息** 严重性设置。 有关 IP 允许策略和连接 (筛选) ，请参阅配置默认连接筛选器策略[- Office 365。](../security/defender-365-security/configure-the-connection-filter-policy.md)|威胁管理|适用于 Office 365 P1 或 P2 加载项订阅的 E5/G5 或 Defender|
 |**由于 ZAP 已禁用，因此未进行钓鱼**| 当 Microsoft 检测到将高可信度网络钓鱼邮件发送到邮箱时生成警报，因为Zero-Hour网络钓鱼邮件的自动清除功能。 此策略具有 **信息** 严重性设置。|威胁管理|E5/G5 或 Defender for Office 365 P2 附加订阅|
 |**由于租户或用户覆盖**<sup>1</sup>而传递的网络钓鱼|当 Microsoft 检测到管理员或用户覆盖允许将网络钓鱼邮件发送到邮箱时，生成警报。 替代示例包括允许来自特定发件人或域的邮件的收件箱或邮件流规则，或者允许来自特定发件人或域的邮件的反垃圾邮件策略。 此策略具有 **高** 严重性设置。|威胁管理|E5/G5 或 Defender for Office 365 P2 附加订阅|
-|**可疑电子邮件转发活动**|当组织中有人向可疑外部帐户自动前向电子邮件时，生成警报。 这是一个针对行为的早期警告，该行为可能指示帐户受到威胁，但不够严重，无法限制用户。 此 **策略具有中等** 严重性设置。 尽管这种情况很少见，但此策略生成的警报可能是异常情况。 建议检查用户帐户 [是否遭到入侵](../security/office-365-security/responding-to-a-compromised-email-account.md)。|威胁管理|E1/F1/G1、E3/F3/G3 或 E5/G5|
-|**检测到可疑的电子邮件发送模式**|如果组织中有人已发送可疑电子邮件，并且存在被限制发送电子邮件的风险，则生成警报。 这是一个针对行为的早期警告，该行为可能指示帐户受到威胁，但不够严重，无法限制用户。 此 **策略具有中等** 严重性设置。 尽管这种情况很少见，但此策略生成的警报可能是异常情况。 但是，建议检查用户帐户 [是否遭到入侵](../security/office-365-security/responding-to-a-compromised-email-account.md)。|威胁管理|E1/F1/G1、E3/F3/G3 或 E5/G5  |
+|**可疑电子邮件转发活动**|当组织中有人向可疑外部帐户自动前向电子邮件时，生成警报。 这是一个针对行为的早期警告，该行为可能指示帐户受到威胁，但不够严重，无法限制用户。 此 **策略具有中等** 严重性设置。 尽管这种情况很少见，但此策略生成的警报可能是异常情况。 建议检查用户帐户 [是否遭到入侵](../security/defender-365-security/responding-to-a-compromised-email-account.md)。|威胁管理|E1/F1/G1、E3/F3/G3 或 E5/G5|
+|**检测到可疑的电子邮件发送模式**|如果组织中有人已发送可疑电子邮件，并且存在被限制发送电子邮件的风险，则生成警报。 这是一个针对行为的早期警告，该行为可能指示帐户受到威胁，但不够严重，无法限制用户。 此 **策略具有中等** 严重性设置。 尽管这种情况很少见，但此策略生成的警报可能是异常情况。 但是，建议检查用户帐户 [是否遭到入侵](../security/defender-365-security/responding-to-a-compromised-email-account.md)。|威胁管理|E1/F1/G1、E3/F3/G3 或 E5/G5  |
 |**限制发送电子邮件的租户**|当来自组织的电子邮件通信被检测为可疑且 Microsoft 已限制你的组织发送电子邮件时，生成警报。 调查任何可能受到威胁的用户和管理员帐户、新连接器或开放中继，然后联系 Microsoft 支持以取消阻止你的组织。 此策略具有 **高** 严重性设置。 有关阻止组织的原因的详细信息，请参阅修复 Exchange Online 中错误代码 [为 5.7.7xx 的电子邮件传递问题](/Exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/fix-error-code-5-7-700-through-5-7-750)。|威胁管理|E1/F1/G1、E3/F3/G3 或 E5/G5|
-|**异常外部用户文件活动**|当组织外部的用户对 SharePoint 或 OneDrive 中的文件执行了非常多的活动时，生成警报。 这包括访问文件、下载文件和删除文件等活动。 此策略具有 **高** 严重性设置。|信息管理政策|E5/G5、Microsoft Defender for Office 365 P2 或 Microsoft 365 E5 附加订阅|
-|**外部文件共享的异常量**|与组织外部的用户共享 SharePoint 或 OneDrive 中的大量文件时，生成警报。 此 **策略具有中等** 严重性设置。|信息管理政策|E5/G5、适用于 Office 365 P2 的 Defender 或 Microsoft 365 E5 附加订阅|
-|**异常的文件删除量**|如果在短时间内在 SharePoint 或 OneDrive 中删除了非常多的文件，则生成警报。 此 **策略具有中等** 严重性设置。|信息管理政策|E5/G5、适用于 Office 365 P2 的 Defender 或 Microsoft 365 E5 附加订阅|
+|**异常外部用户文件活动**|当组织外部的用户对 SharePoint 或 OneDrive 中的文件执行了非常多的活动时，生成警报。 这包括访问文件、下载文件和删除文件等活动。 此策略具有 **高** 严重性设置。|信息治理|E5/G5、Microsoft Defender for Office 365 P2 或 Microsoft 365 E5 附加订阅|
+|**外部文件共享的异常量**|与组织外部的用户共享 SharePoint 或 OneDrive 中的大量文件时，生成警报。 此 **策略具有中等** 严重性设置。|信息治理|E5/G5、适用于 Office 365 P2 的 Defender 或 Microsoft 365 E5 附加订阅|
+|**异常的文件删除量**|如果在短时间内在 SharePoint 或 OneDrive 中删除了非常多的文件，则生成警报。 此 **策略具有中等** 严重性设置。|信息治理|E5/G5、适用于 Office 365 P2 的 Defender 或 Microsoft 365 E5 附加订阅|
 |**报告为网络钓鱼的电子邮件异常增加**|当组织中使用 Outlook 中的"报告邮件"外接程序将邮件报告为网络钓鱼邮件的数量显著增加时，生成警报。 此策略具有 **高** 严重性设置。 有关此外接程序详细信息，请参阅 [使用报告邮件外接程序](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)。|威胁管理|E5/G5 或 Defender for Office 365 P2 附加订阅|
 |**传递到收件箱/文件夹**<sup>1、2</sup>的用户 <sup>模拟网络钓鱼</sup>|当 Microsoft 检测到管理员或用户替代已允许将用户模拟网络钓鱼邮件发送到邮箱的收件箱 (或其他用户访问的文件夹时) 警报。 替代示例包括允许来自特定发件人或域的邮件的收件箱或邮件流规则，或者允许来自特定发件人或域的邮件的反垃圾邮件策略。 此 **策略具有中等** 严重性设置。|威胁管理|E5/G5 或 Defender for Office 365 P2 附加订阅|
 |**被限制发送电子邮件的用户**|当组织内部人员被限制发送出站邮件时，生成警报。 这通常会导致帐户泄露，并且用户在安全与合规中心的"受限用户"&列出。  (若要访问此页面，请转到威胁管理 **>查看>受限**) 。 此策略具有 **高** 严重性设置。 有关受限用户的信息，请参阅在发送垃圾邮件后从阻止列表中删除用户、域或 [IP 地址](/office365/securitycompliance/removing-user-from-restricted-users-portal-after-spam)。|威胁管理|E1/F1/G1、E3/F3/G3 或 E5/G5|
@@ -148,7 +148,7 @@ Microsoft 提供了内置警报策略，可帮助识别 Exchange 管理员权限
 |||||
 
 > [!NOTE]
-> <sup>1</sup> 我们已根据客户反馈暂时删除了此默认警报策略。 我们正在努力改进它，并将于近期将其替换为新版本。 在此之前，您可以通过使用下列设置创建自定义警报策略以替换此功能：<br/>&nbsp; * 活动是在送达时检测到的钓鱼电子邮件<br/>&nbsp; * Mail is not ZAP'd<br/>&nbsp; * 邮件方向为入站<br/>&nbsp; * 邮件传递状态为已送达<br/>&nbsp; * 检测技术为恶意 URL 保留、URL 触发、高级钓鱼筛选器、常规钓鱼筛选器、域模拟、用户模拟和品牌模拟<br/><br/>&nbsp;&nbsp;&nbsp;有关 Office 365 中的防钓鱼功能详细信息，请参阅设置防钓鱼 [和防钓鱼策略](../security/office-365-security/set-up-anti-phishing-policies.md)。<br/><br/><sup>2</sup> 若要重新创建此警报策略，请按照上一脚注中的指南操作，但选择"用户模拟"作为唯一的检测技术。
+> <sup>1</sup> 我们已根据客户反馈暂时删除了此默认警报策略。 我们正在努力改进它，并将于近期将其替换为新版本。 在此之前，您可以通过使用下列设置创建自定义警报策略以替换此功能：<br/>&nbsp; * 活动是在送达时检测到的钓鱼电子邮件<br/>&nbsp; * Mail is not ZAP'd<br/>&nbsp; * 邮件方向为入站<br/>&nbsp; * 邮件传递状态为已送达<br/>&nbsp; * 检测技术为恶意 URL 保留、URL 触发、高级钓鱼筛选器、常规钓鱼筛选器、域模拟、用户模拟和品牌模拟<br/><br/>&nbsp;&nbsp;&nbsp;有关 Office 365 中的防钓鱼功能详细信息，请参阅设置防钓鱼 [和防钓鱼策略](../security/defender-365-security/set-up-anti-phishing-policies.md)。<br/><br/><sup>2</sup> 若要重新创建此警报策略，请按照上一脚注中的指南操作，但选择"用户模拟"作为唯一的检测技术。
 
 某些内置策略监视的异常活动基于与之前描述的警报阈值设置相同的过程。 Microsoft 建立了一个基线值，用于定义"常规"活动的正常频率。 然后，当内置警报策略跟踪的活动频率大大超过基线值时，将触发警报。
 
@@ -172,7 +172,7 @@ Microsoft 提供了内置警报策略，可帮助识别 Exchange 管理员权限
 
 - **类别。** 使用此筛选器显示来自一个或多个警报类别的警报。
 
-- **标记。** 使用此筛选器显示来自一个或多个用户标记的警报。 标记基于标记的邮箱或显示在警报中的用户进行反映。 有关详细信息 [，请参阅 Office 356 ATP](..\security\office-365-security\user-tags.md) 中的用户标记。
+- **标记。** 使用此筛选器显示来自一个或多个用户标记的警报。 标记基于标记的邮箱或显示在警报中的用户进行反映。 有关详细信息 [，请参阅 Office 356 ATP](../security/defender-365-security/user-tags.md) 中的用户标记。
 
 - **源。** 使用此筛选器显示由安全与合规中心中的警报策略触发的警报，或 Office 365 云应用安全策略触发的警报，或同时显示这两者。 有关 Office 365 云应用安全警报详细信息，请参阅 [查看云应用安全警报](#viewing-cloud-app-security-alerts)。
 
@@ -223,7 +223,7 @@ Microsoft 提供了内置警报策略，可帮助识别 Exchange 管理员权限
 
 To see which category a default alert policy is assigned to， see the table in [Default alert policies](#default-alert-policies).
 
-|Role|信息管理政策|数据丢失防护|邮件流|权限|威胁管理|其他|
+|Role|信息治理|数据丢失防护|邮件流|权限|威胁管理|其他|
 |:---------|:---------:|:---------:|:---------:|:---------:|:---------:|:---------:|
 |审核日志|||||||
 |案例管理|||||||
@@ -239,7 +239,7 @@ To see which category a default alert policy is assigned to， see the table in 
 |预览|||||||
 |记录管理|![复选标记](../media/checkmark.png)||||||
 |保留管理|![复选标记](../media/checkmark.png)||||||
-|Review|||||||
+|审阅|||||||
 |RMS 解密|||||||
 |角色管理||||![复选标记](../media/checkmark.png)|||
 |搜索和清除|||||||
