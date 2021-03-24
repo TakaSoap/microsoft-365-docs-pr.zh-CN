@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 description: 通过 Microsoft 365 中的记录管理，你可以将保留计划应用到文件计划中，以管理保留、记录声明和处置。
-ms.openlocfilehash: 4f07732e403d711e2fa89bfb7c61c9eadfb2bd0b
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: ac8e9bf2ac9ac47518788cd19a197818c13078a1
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50926180"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51051684"
 ---
 # <a name="learn-about-records-management-in-microsoft-365"></a>了解 Microsoft 365 中的记录管理
 
@@ -48,7 +48,7 @@ ms.locfileid: "50926180"
 
 - 使用 [导出选项](disposition.md#filter-and-export-the-views)**导出有关所有已处置项的信息**。
 
-- 为组织中的记录管理器功能 **设置特定权限**，以便 [具有正确的访问权限](../security/office-365-security/permissions-in-the-security-and-compliance-center.md)。
+- 为组织中的记录管理器功能 **设置特定权限**，以便 [具有正确的访问权限](../security/defender-365-security/permissions-in-the-security-and-compliance-center.md)。
 
 借助这些功能，你可以将组织的保留计划和要求合并到用以管理保留、记录声明和处置的记录管理解决方案中，从而支持完整的内容生命周期。
 

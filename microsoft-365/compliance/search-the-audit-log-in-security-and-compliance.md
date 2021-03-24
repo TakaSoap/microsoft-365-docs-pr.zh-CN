@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: 使用 Microsoft 365 合规中心搜索统一审计日志来查看组织中用户和管理员的活动。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: eabc9a59592ed2b1849bac8c7b716e68d4b9e214
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: f61a67b29dec114d222dfc7b25e44c163859ba41
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50922546"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51051734"
 ---
 # <a name="search-the-audit-log-in-the-compliance-center"></a>在合规中心搜索审核日志
 
@@ -900,7 +900,7 @@ FilePreviewed 和 FileAccessed 事件都表明用户的调用导致了对文件�
 
 ### <a name="quarantine-activities"></a>隔离活动
 
-下表列出了可在审核日志中搜索的隔离活动。 有关隔离的详细信息，请参阅 [Office 365 中的隔离电子邮件](../security/office-365-security/quarantine-email-messages.md)。
+下表列出了可在审核日志中搜索的隔离活动。 有关隔离的详细信息，请参阅 [Office 365 中的隔离电子邮件](../security/defender-365-security/quarantine-email-messages.md)。
 
 |友好名称|操作|说明|
 |:-----|:-----|:-----|

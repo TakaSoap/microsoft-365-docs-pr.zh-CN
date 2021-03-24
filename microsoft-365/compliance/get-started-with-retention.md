@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 已准备好实现保留策略和保留标签来管理组织的数据，但不确定从哪里入手？ 请阅读一些实用指南来入门。
-ms.openlocfilehash: 27f361ba98cdaecb5b7788283c8d4244583ee82c
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 65c196f8838378a10263370b1377b3eb43b14915
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50922616"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51051904"
 ---
 # <a name="get-started-with-retention-policies-and-retention-labels"></a>开始使用保留策略和保留标签
 
@@ -56,9 +56,9 @@ ms.locfileid: "50922616"
 
 除了使用该默认角色，还可创建一个新的角色组，并将 **保留管理** 角色添加到该组。 对于只读角色，请使用 **只读保留管理**。 
 
-有关角色组和角色的更多信息，请参阅[安全与合规中心内的权限](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)。
+有关角色组和角色的更多信息，请参阅[安全与合规中心内的权限](../security/defender-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)。
 
-有关将用户添加到角色组并分配角色的说明，请参阅[向用户授予对安全与合规中心的访问权限](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md)。
+有关将用户添加到角色组并分配角色的说明，请参阅[向用户授予对安全与合规中心的访问权限](../security/defender-365-security/grant-access-to-the-security-and-compliance-center.md)。
 
 只有在创建、配置和应用保留策略和保留标签时才需要这些权限。 配置这些策略及标签的人员不需要访问该内容。
 

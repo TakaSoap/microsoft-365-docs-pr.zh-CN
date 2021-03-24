@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 已准备好实现敏感度标签以帮助保护组织的数据，但不确定从哪里开始？ 请阅读一些可帮助你使用标签的实用指导。
-ms.openlocfilehash: b88e32ccfc0f82749ede2b0919001e9c29f7f7be
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: a6b04bcce7d0fe505173a807fbc2d4105831419c
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50906014"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51051884"
 ---
 # <a name="get-started-with-sensitivity-labels"></a>开始使用敏感度标签
 
@@ -64,7 +64,7 @@ ms.locfileid: "50906014"
 
 如果不使用这些默认角色，可以创建新的角色组，然后将“**敏感度标签管理员**”或“**组织配置**”角色添加到此组。 对于只读角色，请使用 **敏感度标签阅读器**。 
 
-有关将用户添加到默认角色或创建自己的角色组的说明，请参阅[向用户授予对 Office 365 安全与合规中心的访问权限](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md)。
+有关将用户添加到默认角色或创建自己的角色组的说明，请参阅[向用户授予对 Office 365 安全与合规中心的访问权限](../security/defender-365-security/grant-access-to-the-security-and-compliance-center.md)。
 
 只有在创建和配置灵敏度标签及其标签策略时才需要这些权限。 在应用或服务中应用标这些签时不需要这些权限。 如果与敏感度标签相关的特定配置需要其他权限，则这些权限将在其各自的文档说明中列出。
 

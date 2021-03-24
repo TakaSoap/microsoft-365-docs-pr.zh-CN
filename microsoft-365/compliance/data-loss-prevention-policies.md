@@ -22,12 +22,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: 了解如何在 Office 365 中识别、监视和自动保护组织中的敏感信息。
-ms.openlocfilehash: 7d526d5eeb74f0d31f375974824e7a76344bcd76
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 9ef369786aa4b79dbdec551c9750500f9c092906
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50925806"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51052070"
 ---
 # <a name="overview-of-data-loss-prevention"></a>数据丢失防护概述
 <!-- this topic needs to be split into smaller, more coherent ones. It is confusing as it is. -->
@@ -534,7 +534,7 @@ Office 中的 DLP 策略评估旨在不对程序的性能或处理内容的用�
 
 此外，还可通过授予“**仅查看 DLP 合规性管理**”角色，创建对 DLP 策略和 DLP 报告具有仅查看权限的角色组。
 
-有关详细信息，请访问[向用户授予对 Office 365 合规中心的访问权限](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md)。
+有关详细信息，请访问[向用户授予对 Office 365 合规中心的访问权限](../security/defender-365-security/grant-access-to-the-security-and-compliance-center.md)。
   
 只有在创建和应用 DLP 策略时才需要这些权限。 策略执行不需要访问此内容。
   
