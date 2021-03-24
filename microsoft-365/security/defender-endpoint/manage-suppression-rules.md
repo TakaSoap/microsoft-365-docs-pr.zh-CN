@@ -1,0 +1,58 @@
+---
+title: 管理 Microsoft Defender 终结点抑制规则
+description: 你可能需要使用抑制规则阻止警报在门户中显示。 了解如何在 Microsoft Defender ATP 中管理抑制规则。
+keywords: 管理抑制， 规则， 规则名称， 范围， 操作， 警报， 打开， 关闭
+search.product: eADQiWindows 10XVcnh
+search.appverid: met150
+ms.prod: m365-security
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.pagetype: security
+ms.author: macapara
+author: mjcaparas
+localization_priority: Normal
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance
+ms.topic: article
+ms.technology: mde
+ms.openlocfilehash: 3b65b71cc90d8e79b5de02822a12d8a44cf6c0a6
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51055384"
+---
+# <a name="manage-suppression-rules"></a><span data-ttu-id="f56a7-105">管理抑制规则</span><span class="sxs-lookup"><span data-stu-id="f56a7-105">Manage suppression rules</span></span>
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+
+<span data-ttu-id="f56a7-106">**适用于：**</span><span class="sxs-lookup"><span data-stu-id="f56a7-106">**Applies to:**</span></span>
+- [<span data-ttu-id="f56a7-107">Microsoft Defender for Endpoint</span><span class="sxs-lookup"><span data-stu-id="f56a7-107">Microsoft Defender for Endpoint</span></span>](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [<span data-ttu-id="f56a7-108">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="f56a7-108">Microsoft 365 Defender</span></span>](https://go.microsoft.com/fwlink/?linkid=2118804)
+
+> <span data-ttu-id="f56a7-109">想要体验 Microsoft Defender for Endpoint？</span><span class="sxs-lookup"><span data-stu-id="f56a7-109">Want to experience Microsoft Defender for Endpoint?</span></span> [<span data-ttu-id="f56a7-110">注册免费试用版。</span><span class="sxs-lookup"><span data-stu-id="f56a7-110">Sign up for a free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+
+
+<span data-ttu-id="f56a7-111">在某些情况下，可能需要禁止警报显示在门户中。</span><span class="sxs-lookup"><span data-stu-id="f56a7-111">There might be scenarios where you need to suppress alerts from appearing in the portal.</span></span> <span data-ttu-id="f56a7-112">你可以为已知不安全的特定警报（如组织中已知的工具或流程）创建抑制规则。</span><span class="sxs-lookup"><span data-stu-id="f56a7-112">You can create suppression rules for specific alerts that are known to be innocuous such as known tools or processes in your organization.</span></span> <span data-ttu-id="f56a7-113">若要详细了解如何抑制警报，请参阅 [抑制警报](manage-alerts.md)。</span><span class="sxs-lookup"><span data-stu-id="f56a7-113">For more information on how to suppress alerts, see [Suppress alerts](manage-alerts.md).</span></span>
+
+<span data-ttu-id="f56a7-114">可以查看所有抑制规则的列表，并可在一个地方管理它们。</span><span class="sxs-lookup"><span data-stu-id="f56a7-114">You can view a list of all the suppression rules and manage them in one place.</span></span> <span data-ttu-id="f56a7-115">还可以打开或关闭警报抑制规则。</span><span class="sxs-lookup"><span data-stu-id="f56a7-115">You can also turn an alert suppression rule on or off.</span></span>
+
+
+1. <span data-ttu-id="f56a7-116">在导航窗格中，选择"设置  >  **""警报抑制"。**</span><span class="sxs-lookup"><span data-stu-id="f56a7-116">In the navigation pane, select **Settings** > **Alert suppression**.</span></span> <span data-ttu-id="f56a7-117">将显示组织中用户创建的抑制规则列表。</span><span class="sxs-lookup"><span data-stu-id="f56a7-117">The list of suppression rules that users in your organization have created is displayed.</span></span>
+
+2. <span data-ttu-id="f56a7-118">通过单击规则名称旁边的复选框选择规则。</span><span class="sxs-lookup"><span data-stu-id="f56a7-118">Select a rule by clicking on the check-box beside the rule name.</span></span>
+
+3. <span data-ttu-id="f56a7-119">单击 **"打开规则\*\*\*\*"、"编辑** 规则"或"**删除规则"。**</span><span class="sxs-lookup"><span data-stu-id="f56a7-119">Click **Turn rule on**, **Edit rule**, or  **Delete rule**.</span></span> <span data-ttu-id="f56a7-120">更改规则时，可以选择释放已取消的警报，而无论这些警报是否匹配新条件。</span><span class="sxs-lookup"><span data-stu-id="f56a7-120">When making changes to a rule, you can choose to release alerts that it has already suppressed, regardless whether or not these alerts match the new criteria.</span></span> 
+
+
+## <a name="view-details-of-a-suppression-rule"></a><span data-ttu-id="f56a7-121">查看抑制规则的详细信息</span><span class="sxs-lookup"><span data-stu-id="f56a7-121">View details of a suppression rule</span></span>
+
+1. <span data-ttu-id="f56a7-122">在导航窗格中，选择"设置  >  **""警报抑制"。**</span><span class="sxs-lookup"><span data-stu-id="f56a7-122">In the navigation pane, select **Settings** > **Alert suppression**.</span></span> <span data-ttu-id="f56a7-123">将显示组织中用户创建的抑制规则列表。</span><span class="sxs-lookup"><span data-stu-id="f56a7-123">The list of suppression rules that users in your organization have created is displayed.</span></span>
+
+2. <span data-ttu-id="f56a7-124">单击规则名称。</span><span class="sxs-lookup"><span data-stu-id="f56a7-124">Click on a rule name.</span></span> <span data-ttu-id="f56a7-125">将显示规则的详细信息。</span><span class="sxs-lookup"><span data-stu-id="f56a7-125">Details of the rule is displayed.</span></span> <span data-ttu-id="f56a7-126">你将看到规则详细信息，如状态、范围、操作、匹配警报数、创建时间以及创建规则的日期。</span><span class="sxs-lookup"><span data-stu-id="f56a7-126">You'll see the rule details such as  status, scope, action, number of matching alerts, created by, and date when the rule was created.</span></span> <span data-ttu-id="f56a7-127">您还可以查看关联的警报和规则条件。</span><span class="sxs-lookup"><span data-stu-id="f56a7-127">You can also view associated alerts and the rule conditions.</span></span>
+
+## <a name="related-topics"></a><span data-ttu-id="f56a7-128">相关主题</span><span class="sxs-lookup"><span data-stu-id="f56a7-128">Related topics</span></span>
+
+- [<span data-ttu-id="f56a7-129">管理警报</span><span class="sxs-lookup"><span data-stu-id="f56a7-129">Manage alerts</span></span>](manage-alerts.md)
