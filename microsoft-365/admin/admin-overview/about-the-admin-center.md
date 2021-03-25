@@ -24,12 +24,12 @@ search.appverid:
 - GEA150
 ms.assetid: 758befc4-0888-4009-9f14-0d147402fd23
 description: 使用管理中心在云中设置组织，还可用它来管理用户和订阅。 首先使用管理员权限登录帐户。
-ms.openlocfilehash: dca9e5dd4cc8a35721014fa06c0bb844b608778c
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 7d326629de4859819784af015292f99b044658d0
+ms.sourcegitcommit: 3d2261af22bebbbf7efa8a0d3135225a15bd6ba8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50903544"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51215488"
 ---
 # <a name="about-the-microsoft-365-admin-center"></a>关于 Microsoft 365 管理中心
 
@@ -84,7 +84,7 @@ ms.locfileid: "50903544"
 |**Settings** <br/> |管理应用（如电子邮件、网站和 Office 套件）的全局设置。 更改你的密码策略和到期日期。 添加和更新域名，如 contoso.com。 更改组织配置文件和发布首选项。 选择合作伙伴能否访问你的管理中心。  <br/> |
 |**设置** <br/> |管理现有域、启用和管理多重身份验证、管理管理员访问权限、将用户邮箱迁移到 Office 365、管理功能更新，并帮助用户安装其 Office 应用。 |
 |**报表** <br/> |一目了然地查看组织如何使用 Microsoft 365，并提供有关电子邮件使用、Office 激活等的详细报告。 了解如何使用新[活动报表](../activity-reports/activity-reports.md)。  <br/> |
-|**运行状况** <br/> |一目了然地查看服务运行状况。 还可查看更多详细信息和服务运行状况历史记录。 请参阅[如何查看服务运行状况](../../enterprise/view-service-health.md)。  <br/> 使用消息中心跟踪即将推出的功能和服务更改。 我们会在该中心发布公告，其中含有帮助你规划更改和了解更改可能对用户产生的影响的信息。 请在 [Office 365 中的消息中心](../manage/message-center.md)获取更多详细信息。  <br/> |
+|**运行状况** <br/> |一目了然地查看运行状况。 还可以查看更多详细信息和运行状况历史记录。 有关详细信息[，请参阅如何检查服务运行状况](https://docs.microsoft.com/microsoft-365/enterprise/view-service-health)[和如何检查 Windows 版本](https://docs.microsoft.com/windows/deployment/update/check-release-health)运行状况。  <br/><br/>使用消息中心跟踪即将推出的功能和服务更改。 我们会在该中心发布公告，其中含有帮助你规划更改和了解更改可能对用户产生的影响的信息。 在消息中心 [获取更多详细信息](../manage/message-center.md)。 <br/> |
 |**管理中心** <br/> |为 Exchange、Skype for Business、SharePoint、Yammer 和 Azure AD 打开单独的管理中心。 每个管理中心均包含可用于此服务的所有设置。  <br/> 例如,在 Exchange 管理中心中，设置和管理电子邮件、日历、通讯组等。在 SharePoint 管理中心中，创建和管理网站集、网站设置和 OneDrive for Business。在 Skype for Business 管理中心中，设置即时消息通知、电话拨入式会议和联机状态。  <br/> 深入了解 [Exchange 管理中心](/exchange/exchange-admin-center)和 [SharePoint 管理中心](/sharepoint/sharepoint-online)。<br/> **注意：** 可使用哪些管理中心取决于你的计划和区域。           |
    
 ## <a name="common-tasks-in-the-admin-center"></a>管理中心内的常见任务
