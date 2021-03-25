@@ -1,0 +1,214 @@
+---
+title: 启用攻击面减少规则
+description: 启用攻击面 (ASR) 规则，以保护你的设备免受使用宏、脚本和常见注入技术的攻击。
+keywords: 攻击面减少， hips， 主机入侵防护系统， 保护规则， 反攻击， 攻击， 感染防护， 启用， 打开
+search.product: eADQiWindows 10XVcnh
+ms.prod: m365-security
+ms.mktglfcycl: manage
+ms.sitesec: library
+ms.pagetype: security
+localization_priority: Normal
+audience: ITPro
+author: levinec
+ms.author: ellevin
+ms.reviewer: ''
+manager: dansimp
+ms.technology: mde
+ms.openlocfilehash: 1deec767c6af777b23ab5a91c9e719f690e0c048
+ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51165137"
+---
+# <a name="enable-attack-surface-reduction-rules"></a><span data-ttu-id="1ffd1-104">启用攻击面减少规则</span><span class="sxs-lookup"><span data-stu-id="1ffd1-104">Enable attack surface reduction rules</span></span>
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+<span data-ttu-id="1ffd1-105">**适用于：**</span><span class="sxs-lookup"><span data-stu-id="1ffd1-105">**Applies to:**</span></span>
+- [<span data-ttu-id="1ffd1-106">Microsoft Defender for Endpoint</span><span class="sxs-lookup"><span data-stu-id="1ffd1-106">Microsoft Defender for Endpoint</span></span>](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [<span data-ttu-id="1ffd1-107">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="1ffd1-107">Microsoft 365 Defender</span></span>](https://go.microsoft.com/fwlink/?linkid=2118804)
+
+><span data-ttu-id="1ffd1-108">想要体验适用于终结点的 Defender？</span><span class="sxs-lookup"><span data-stu-id="1ffd1-108">Want to experience Defender for Endpoint?</span></span> [<span data-ttu-id="1ffd1-109">注册免费试用版。</span><span class="sxs-lookup"><span data-stu-id="1ffd1-109">Sign up for a free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
+
+<span data-ttu-id="1ffd1-110">[攻击面减少规则](attack-surface-reduction.md) (ASR 规则) 有助于防止恶意软件经常滥用以损害设备和网络的操作。</span><span class="sxs-lookup"><span data-stu-id="1ffd1-110">[Attack surface reduction rules](attack-surface-reduction.md) (ASR rules) help prevent actions that malware often abuses to compromise devices and networks.</span></span> <span data-ttu-id="1ffd1-111">你可以为运行以下任一版本的 Windows 的设备设置 ASR 规则：</span><span class="sxs-lookup"><span data-stu-id="1ffd1-111">You can set ASR rules for devices running any of the following editions and versions of Windows:</span></span>
+- <span data-ttu-id="1ffd1-112">Windows 10 专业 [版版本 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) 或更高版本</span><span class="sxs-lookup"><span data-stu-id="1ffd1-112">Windows 10 Pro, [version 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) or later</span></span>
+- <span data-ttu-id="1ffd1-113">Windows 10 企业版 [版本 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) 或更高版本</span><span class="sxs-lookup"><span data-stu-id="1ffd1-113">Windows 10 Enterprise, [version 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) or later</span></span>
+- <span data-ttu-id="1ffd1-114">Windows Server [版本 1803 (半年 ](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1803) 频道) 或更高版本</span><span class="sxs-lookup"><span data-stu-id="1ffd1-114">Windows Server, [version 1803 (Semi-Annual Channel)](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1803) or later</span></span>
+- [<span data-ttu-id="1ffd1-115">Windows Server 2019</span><span class="sxs-lookup"><span data-stu-id="1ffd1-115">Windows Server 2019</span></span>](https://docs.microsoft.com/windows-server/get-started-19/whats-new-19)
+
+<span data-ttu-id="1ffd1-116">每个 ASR 规则都包含以下三个设置之一：</span><span class="sxs-lookup"><span data-stu-id="1ffd1-116">Each ASR rule contains one of three settings:</span></span>
+
+- <span data-ttu-id="1ffd1-117">未配置：禁用 ASR 规则</span><span class="sxs-lookup"><span data-stu-id="1ffd1-117">Not configured: Disable the ASR rule</span></span>
+- <span data-ttu-id="1ffd1-118">阻止：启用 ASR 规则</span><span class="sxs-lookup"><span data-stu-id="1ffd1-118">Block: Enable the ASR rule</span></span>
+- <span data-ttu-id="1ffd1-119">审核：评估 ASR 规则在启用后对组织的影响</span><span class="sxs-lookup"><span data-stu-id="1ffd1-119">Audit: Evaluate how the ASR rule would impact your organization if enabled</span></span>
+
+<span data-ttu-id="1ffd1-120">强烈建议你将 ASR 规则与 Windows E5 许可证 (或类似的许可 SKU) 一同使用，以利用适用于 Endpoint (Defender for Endpoint) 的 [Microsoft Defender](https://docs.microsoft.com/windows/security/threat-protection) 中提供的高级监视和报告功能。</span><span class="sxs-lookup"><span data-stu-id="1ffd1-120">It's highly recommended you use ASR rules with a Windows E5 license (or similar licensing SKU) to take advantage of the advanced monitoring and reporting capabilities available in [Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection) (Defender for Endpoint).</span></span> <span data-ttu-id="1ffd1-121">但是，对于无法访问高级监视和报告功能的其他许可证（如 Windows Professional 或 E3），可以在触发 AS (R 规则时在每个终结点生成的事件（如事件转发) ）上开发自己的监视和报告工具。</span><span class="sxs-lookup"><span data-stu-id="1ffd1-121">However, for other licenses like Windows Professional or E3 that don't have access to advanced monitoring and reporting capabilities, you can develop your own monitoring and reporting tools on top of the events that are generated at each endpoint when ASR rules are triggered (e.g., Event Forwarding).</span></span>
+
+> [!TIP]
+> <span data-ttu-id="1ffd1-122">若要了解有关 Windows 许可的更多信息，请参阅 [Windows 10](https://www.microsoft.com/licensing/product-licensing/windows10?activetab=windows10-pivot:primaryr5) 许可并获取 [适用于 Windows 10 的批量许可指南](https://download.microsoft.com/download/2/D/1/2D14FE17-66C2-4D4C-AF73-E122930B60F6/Windows-10-Volume-Licensing-Guide.pdf)。</span><span class="sxs-lookup"><span data-stu-id="1ffd1-122">To learn more about Windows licensing, see [Windows 10 Licensing](https://www.microsoft.com/licensing/product-licensing/windows10?activetab=windows10-pivot:primaryr5) and get the [Volume Licensing guide for Windows 10](https://download.microsoft.com/download/2/D/1/2D14FE17-66C2-4D4C-AF73-E122930B60F6/Windows-10-Volume-Licensing-Guide.pdf).</span></span>
+
+<span data-ttu-id="1ffd1-123">可以使用以下任一方法启用攻击面减少规则：</span><span class="sxs-lookup"><span data-stu-id="1ffd1-123">You can enable attack surface reduction rules by using any of these methods:</span></span>
+
+- [<span data-ttu-id="1ffd1-124">Microsoft Intune</span><span class="sxs-lookup"><span data-stu-id="1ffd1-124">Microsoft Intune</span></span>](#intune)
+- [<span data-ttu-id="1ffd1-125">移动设备管理 (MDM)</span><span class="sxs-lookup"><span data-stu-id="1ffd1-125">Mobile Device Management (MDM)</span></span>](#mdm)
+- [<span data-ttu-id="1ffd1-126">Microsoft Endpoint Configuration Manager</span><span class="sxs-lookup"><span data-stu-id="1ffd1-126">Microsoft Endpoint Configuration Manager</span></span>](#microsoft-endpoint-configuration-manager)
+- [<span data-ttu-id="1ffd1-127">组策略</span><span class="sxs-lookup"><span data-stu-id="1ffd1-127">Group Policy</span></span>](#group-policy)
+- [<span data-ttu-id="1ffd1-128">PowerShell</span><span class="sxs-lookup"><span data-stu-id="1ffd1-128">PowerShell</span></span>](#powershell)
+
+<span data-ttu-id="1ffd1-129">建议使用企业级管理，如 Intune 或 Microsoft Endpoint Manager。</span><span class="sxs-lookup"><span data-stu-id="1ffd1-129">Enterprise-level management such as Intune or Microsoft Endpoint Manager is recommended.</span></span> <span data-ttu-id="1ffd1-130">启动时，企业级管理将覆盖任何冲突的组策略或 PowerShell 设置。</span><span class="sxs-lookup"><span data-stu-id="1ffd1-130">Enterprise-level management will overwrite any conflicting Group Policy or PowerShell settings on startup.</span></span>
+
+## <a name="exclude-files-and-folders-from-asr-rules"></a><span data-ttu-id="1ffd1-131">从 ASR 规则中排除文件和文件夹</span><span class="sxs-lookup"><span data-stu-id="1ffd1-131">Exclude files and folders from ASR rules</span></span>
+
+<span data-ttu-id="1ffd1-132">你可以排除大多数攻击面减少规则评估的文件和文件夹。</span><span class="sxs-lookup"><span data-stu-id="1ffd1-132">You can exclude files and folders from being evaluated by most attack surface reduction rules.</span></span> <span data-ttu-id="1ffd1-133">这意味着，即使 ASR 规则确定文件或文件夹包含恶意行为，它将不会阻止文件运行。</span><span class="sxs-lookup"><span data-stu-id="1ffd1-133">This means that even if an ASR rule determines the file or folder contains malicious behavior, it will not block the file from running.</span></span> <span data-ttu-id="1ffd1-134">这可能会允许不安全的文件运行并感染你的设备。</span><span class="sxs-lookup"><span data-stu-id="1ffd1-134">This could potentially allow unsafe files to run and infect your devices.</span></span>
+
+<span data-ttu-id="1ffd1-135">通过允许指定的 Defender for Endpoint 文件和证书指示器，还可以从基于证书和文件哈希触发的 ASR 规则排除。</span><span class="sxs-lookup"><span data-stu-id="1ffd1-135">You can also exclude ASR rules from triggering based on certificate and file hashes by allowing specified Defender for Endpoint file and certificate indicators.</span></span> <span data-ttu-id="1ffd1-136"> (请参阅 [管理指示器](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/manage-indicators).) </span><span class="sxs-lookup"><span data-stu-id="1ffd1-136">(See [Manage indicators](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/manage-indicators).)</span></span>
+
+> [!IMPORTANT]
+> <span data-ttu-id="1ffd1-137">排除文件或文件夹会大大降低 ASR 规则所提供的保护。</span><span class="sxs-lookup"><span data-stu-id="1ffd1-137">Excluding files or folders can severely reduce the protection provided by ASR rules.</span></span> <span data-ttu-id="1ffd1-138">将允许运行排除的文件，并且不会记录任何报告或事件。</span><span class="sxs-lookup"><span data-stu-id="1ffd1-138">Excluded files will be allowed to run, and no report or event will be recorded.</span></span>
+> <span data-ttu-id="1ffd1-139">如果 ASR 规则正在检测你认为不应检测的文件，应首先使用审核模式 [测试规则](evaluate-attack-surface-reduction.md)。</span><span class="sxs-lookup"><span data-stu-id="1ffd1-139">If ASR rules are detecting files that you believe shouldn't be detected, you should [use audit mode first to test the rule](evaluate-attack-surface-reduction.md).</span></span>
+
+
+<span data-ttu-id="1ffd1-140">可以使用文件夹路径或完全限定的资源 (指定单个文件或文件夹) ，但无法指定排除项应用于的规则。</span><span class="sxs-lookup"><span data-stu-id="1ffd1-140">You can specify individual files or folders (using folder paths or fully qualified resource names), but you can't specify which rules the exclusions apply to.</span></span> <span data-ttu-id="1ffd1-141">仅在已排除的应用程序或服务启动时应用排除。</span><span class="sxs-lookup"><span data-stu-id="1ffd1-141">An exclusion is applied only when the excluded application or service starts.</span></span> <span data-ttu-id="1ffd1-142">例如，如果为已在运行的更新服务添加排除项，则更新服务将继续触发事件，直到停止并重新启动该服务。</span><span class="sxs-lookup"><span data-stu-id="1ffd1-142">For example, if you add an exclusion for an update service that is already running, the update service will continue to trigger events until the service is stopped and restarted.</span></span>
+
+<span data-ttu-id="1ffd1-143">ASR 规则支持环境变量和通配符。</span><span class="sxs-lookup"><span data-stu-id="1ffd1-143">ASR rules support environment variables and wildcards.</span></span> <span data-ttu-id="1ffd1-144">有关使用通配符的信息，请参阅在文件名和文件夹路径或扩展名排除列表中 [使用通配符](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-extension-file-exclusions-microsoft-defender-antivirus#use-wildcards-in-the-file-name-and-folder-path-or-extension-exclusion-lists)。</span><span class="sxs-lookup"><span data-stu-id="1ffd1-144">For information about using wildcards, see [Use wildcards in the file name and folder path or extension exclusion lists](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-extension-file-exclusions-microsoft-defender-antivirus#use-wildcards-in-the-file-name-and-folder-path-or-extension-exclusion-lists).</span></span>
+
+<span data-ttu-id="1ffd1-145">以下用于启用 ASR 规则的过程包括有关如何排除文件和文件夹的说明。</span><span class="sxs-lookup"><span data-stu-id="1ffd1-145">The following procedures for enabling ASR rules include instructions for how to exclude files and folders.</span></span>
+
+## <a name="intune"></a><span data-ttu-id="1ffd1-146">Intune</span><span class="sxs-lookup"><span data-stu-id="1ffd1-146">Intune</span></span>
+
+1. <span data-ttu-id="1ffd1-147">选择 **设备配置文件**  >  。</span><span class="sxs-lookup"><span data-stu-id="1ffd1-147">Select **Device configuration** > **Profiles**.</span></span> <span data-ttu-id="1ffd1-148">选择现有的终结点保护配置文件或创建新的终结点保护配置文件。</span><span class="sxs-lookup"><span data-stu-id="1ffd1-148">Choose an existing endpoint protection profile or create a new one.</span></span> <span data-ttu-id="1ffd1-149">若要创建新的配置文件，请选择" **创建配置文件** "并为此配置文件输入信息。</span><span class="sxs-lookup"><span data-stu-id="1ffd1-149">To create a new one, select **Create profile** and enter information for this profile.</span></span> <span data-ttu-id="1ffd1-150">对于 **"配置文件类型"，** 选择"**终结点保护"。**</span><span class="sxs-lookup"><span data-stu-id="1ffd1-150">For **Profile type**, select **Endpoint protection**.</span></span> <span data-ttu-id="1ffd1-151">如果已选择现有配置文件，请选择"**属性"，** 然后选择"设置 **"。**</span><span class="sxs-lookup"><span data-stu-id="1ffd1-151">If you've chosen an existing profile, select **Properties** and then select **Settings**.</span></span>
+
+2. <span data-ttu-id="1ffd1-152">在终结点 **保护窗格中，** 选择Windows Defender **攻击防护"，** 然后选择攻击 **面减少**。</span><span class="sxs-lookup"><span data-stu-id="1ffd1-152">In the **Endpoint protection** pane, select **Windows Defender Exploit Guard**, then select **Attack Surface Reduction**.</span></span> <span data-ttu-id="1ffd1-153">选择每个 ASR 规则所需的设置。</span><span class="sxs-lookup"><span data-stu-id="1ffd1-153">Select the desired setting for each ASR rule.</span></span>
+
+3. <span data-ttu-id="1ffd1-154">在 **"攻击面减少异常"** 下，输入单个文件和文件夹。</span><span class="sxs-lookup"><span data-stu-id="1ffd1-154">Under **Attack Surface Reduction exceptions**, enter individual files and folders.</span></span> <span data-ttu-id="1ffd1-155">还可以选择导入 **以** 导入 CSV 文件，其中包含要从 ASR 规则中排除的文件和文件夹。</span><span class="sxs-lookup"><span data-stu-id="1ffd1-155">You can also select **Import** to import a CSV file that contains files and folders to exclude from ASR rules.</span></span> <span data-ttu-id="1ffd1-156">CSV 文件的每一行的格式应如下所示：</span><span class="sxs-lookup"><span data-stu-id="1ffd1-156">Each line in the CSV file should be formatted as follows:</span></span>
+
+   <span data-ttu-id="1ffd1-157">`C:\folder`, `%ProgramFiles%\folder\file`, `C:\path`</span><span class="sxs-lookup"><span data-stu-id="1ffd1-157">`C:\folder`, `%ProgramFiles%\folder\file`, `C:\path`</span></span>
+
+4. <span data-ttu-id="1ffd1-158">在 **三** 个配置窗格中选择"确定"。</span><span class="sxs-lookup"><span data-stu-id="1ffd1-158">Select **OK** on the three configuration panes.</span></span> <span data-ttu-id="1ffd1-159">然后，**如果要** 创建新的终结点保护文件，请选择"创建";如果要编辑现有终结点保护文件，请选择"保存"。</span><span class="sxs-lookup"><span data-stu-id="1ffd1-159">Then select **Create** if you're creating a new endpoint protection file or **Save** if you're editing an existing one.</span></span>
+
+## <a name="mdm"></a><span data-ttu-id="1ffd1-160">MDM</span><span class="sxs-lookup"><span data-stu-id="1ffd1-160">MDM</span></span>
+
+<span data-ttu-id="1ffd1-161">使用 [./Vendor/MSFT/Policy/Config/Defender/AttackSurfaceReductionRules](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-attacksurfacereductionrules) 配置服务提供程序 (CSP) 单独启用和设置每个规则的模式。</span><span class="sxs-lookup"><span data-stu-id="1ffd1-161">Use the [./Vendor/MSFT/Policy/Config/Defender/AttackSurfaceReductionRules](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-attacksurfacereductionrules) configuration service provider (CSP) to individually enable and set the mode for each rule.</span></span>
+
+<span data-ttu-id="1ffd1-162">下面是使用 ASR 规则的 [GUID 值进行引用的示例](attack-surface-reduction.md#attack-surface-reduction-rules)。</span><span class="sxs-lookup"><span data-stu-id="1ffd1-162">The following is a sample for reference, using [GUID values for ASR rules](attack-surface-reduction.md#attack-surface-reduction-rules).</span></span>
+
+`OMA-URI path: ./Vendor/MSFT/Policy/Config/Defender/AttackSurfaceReductionRules`
+
+`Value: 75668C1F-73B5-4CF0-BB93-3ECF5CB7CC84=2|3B576869-A4EC-4529-8536-B80A7769E899=1|D4F940AB-401B-4EfC-AADC-AD5F3C50688A=2|D3E037E1-3EB8-44C8-A917-57927947596D=1|5BEB7EFE-FD9A-4556-801D-275E5FFC04CC=0|BE9BA2D9-53EA-4CDC-84E5-9B1EEEE46550=1`
+
+<span data-ttu-id="1ffd1-163">在审核模式下启用、禁用或启用的值包括：</span><span class="sxs-lookup"><span data-stu-id="1ffd1-163">The values to enable, disable, or enable in audit mode are:</span></span>
+
+- <span data-ttu-id="1ffd1-164">Disable = 0</span><span class="sxs-lookup"><span data-stu-id="1ffd1-164">Disable = 0</span></span>
+- <span data-ttu-id="1ffd1-165">阻止 (启用 ASR 规则) = 1</span><span class="sxs-lookup"><span data-stu-id="1ffd1-165">Block (enable ASR rule) = 1</span></span>
+- <span data-ttu-id="1ffd1-166">审核 = 2</span><span class="sxs-lookup"><span data-stu-id="1ffd1-166">Audit = 2</span></span>
+
+<span data-ttu-id="1ffd1-167">使用 [./Vendor/MSFT/Policy/Config/Defender/AttackSurfaceReductionOnlyExclusions](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-attacksurfacereductiononlyexclusions) 配置服务提供程序 (CSP) 添加排除项。</span><span class="sxs-lookup"><span data-stu-id="1ffd1-167">Use the [./Vendor/MSFT/Policy/Config/Defender/AttackSurfaceReductionOnlyExclusions](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-attacksurfacereductiononlyexclusions) configuration service provider (CSP) to add exclusions.</span></span>
+
+<span data-ttu-id="1ffd1-168">示例：</span><span class="sxs-lookup"><span data-stu-id="1ffd1-168">Example:</span></span>
+
+`OMA-URI path: ./Vendor/MSFT/Policy/Config/Defender/AttackSurfaceReductionOnlyExclusions`
+
+`Value: c:\path|e:\path|c:\Exclusions.exe`
+
+> [!NOTE]
+> <span data-ttu-id="1ffd1-169">请务必输入不带空格的 OMA-URI 值。</span><span class="sxs-lookup"><span data-stu-id="1ffd1-169">Be sure to enter OMA-URI values without spaces.</span></span>
+
+## <a name="microsoft-endpoint-configuration-manager"></a><span data-ttu-id="1ffd1-170">Microsoft Endpoint Configuration Manager</span><span class="sxs-lookup"><span data-stu-id="1ffd1-170">Microsoft Endpoint Configuration Manager</span></span>
+
+1. <span data-ttu-id="1ffd1-171">在 Microsoft Endpoint Configuration Manager 中，转到 **"资产和** 合规性  >  **Endpoint Protection**  >  **Windows Defender攻击防护"。**</span><span class="sxs-lookup"><span data-stu-id="1ffd1-171">In Microsoft Endpoint Configuration Manager, go to **Assets and Compliance** > **Endpoint Protection** > **Windows Defender Exploit Guard**.</span></span>
+
+2. <span data-ttu-id="1ffd1-172">选择 **"主页**  >  **创建攻击防护策略"。**</span><span class="sxs-lookup"><span data-stu-id="1ffd1-172">Select **Home** > **Create Exploit Guard Policy**.</span></span>
+
+3. <span data-ttu-id="1ffd1-173">输入名称和说明，选择攻击 **面** 减少，然后选择下一 **步**。</span><span class="sxs-lookup"><span data-stu-id="1ffd1-173">Enter a name and a description, select **Attack Surface Reduction**, and select **Next**.</span></span>
+
+4. <span data-ttu-id="1ffd1-174">选择将阻止或审核操作的规则，然后选择下一 **步**。</span><span class="sxs-lookup"><span data-stu-id="1ffd1-174">Choose which rules will block or audit actions and select **Next**.</span></span>
+
+5. <span data-ttu-id="1ffd1-175">查看设置，然后选择" **下一** 步"以创建策略。</span><span class="sxs-lookup"><span data-stu-id="1ffd1-175">Review the settings and select **Next** to create the policy.</span></span>
+
+6. <span data-ttu-id="1ffd1-176">创建策略后 **，关闭**。</span><span class="sxs-lookup"><span data-stu-id="1ffd1-176">After the policy is created, **Close**.</span></span>
+
+## <a name="group-policy"></a><span data-ttu-id="1ffd1-177">组策略</span><span class="sxs-lookup"><span data-stu-id="1ffd1-177">Group Policy</span></span>
+
+> [!WARNING]
+> <span data-ttu-id="1ffd1-178">如果使用 Intune、Configuration Manager 或其他企业级管理平台管理计算机和设备，则管理软件将在启动时覆盖任何冲突的组策略设置。</span><span class="sxs-lookup"><span data-stu-id="1ffd1-178">If you manage your computers and devices with Intune, Configuration Manager, or other enterprise-level management platform, the management software will overwrite any conflicting Group Policy settings on startup.</span></span>
+
+1. <span data-ttu-id="1ffd1-179">在组策略管理计算机上，打开组 [策略管理控制台](https://technet.microsoft.com/library/cc731212.aspx)，右键单击要配置的组策略对象， **然后选择编辑**。</span><span class="sxs-lookup"><span data-stu-id="1ffd1-179">On your Group Policy management computer, open the [Group Policy Management Console](https://technet.microsoft.com/library/cc731212.aspx), right-click the Group Policy Object you want to configure and select **Edit**.</span></span>
+
+2. <span data-ttu-id="1ffd1-180">在组 **策略管理编辑器中**，转到计算机 **配置，** 然后选择 **管理模板**。</span><span class="sxs-lookup"><span data-stu-id="1ffd1-180">In the **Group Policy Management Editor**, go to **Computer configuration** and select **Administrative templates**.</span></span>
+
+3. <span data-ttu-id="1ffd1-181">将树展开到 **Windows 组件** Microsoft Defender  >  **防病毒**  >  **Windows Defender攻击防护**  >  **攻击面减少**。</span><span class="sxs-lookup"><span data-stu-id="1ffd1-181">Expand the tree to **Windows components** > **Microsoft Defender Antivirus** > **Windows Defender Exploit Guard** > **Attack surface reduction**.</span></span>
+
+4. <span data-ttu-id="1ffd1-182">选择 **配置攻击面减少规则，** 然后选择 **已启用。**</span><span class="sxs-lookup"><span data-stu-id="1ffd1-182">Select **Configure Attack surface reduction rules** and select **Enabled**.</span></span> <span data-ttu-id="1ffd1-183">然后，您可以为选项部分的每个规则设置单个状态。</span><span class="sxs-lookup"><span data-stu-id="1ffd1-183">You can then set the individual state for each rule in the options section.</span></span>
+
+   <span data-ttu-id="1ffd1-184">选择 **"显示..."，** 在"值名称"列中输入规则 ID，在"值"列中输入 **所选状态**，如下所示：</span><span class="sxs-lookup"><span data-stu-id="1ffd1-184">Select **Show...** and enter the rule ID in the **Value name** column and your chosen state in the **Value** column as follows:</span></span>
+
+   - <span data-ttu-id="1ffd1-185">Disable = 0</span><span class="sxs-lookup"><span data-stu-id="1ffd1-185">Disable = 0</span></span>
+   - <span data-ttu-id="1ffd1-186">阻止 (启用 ASR 规则) = 1</span><span class="sxs-lookup"><span data-stu-id="1ffd1-186">Block (enable ASR rule) = 1</span></span>
+   - <span data-ttu-id="1ffd1-187">审核 = 2</span><span class="sxs-lookup"><span data-stu-id="1ffd1-187">Audit = 2</span></span>
+
+   ![显示空白攻击面减少规则 ID 和值 1 的组策略设置](/microsoft-365/security/defender-endpoint/images/asr-rules-gp)
+
+5. <span data-ttu-id="1ffd1-189">若要从 ASR 规则中排除文件和文件夹，请选择"从攻击 **面** 减少规则中排除文件和路径"设置，将选项设置为 **"已启用"。**</span><span class="sxs-lookup"><span data-stu-id="1ffd1-189">To exclude files and folders from ASR rules, select the **Exclude files and paths from Attack surface reduction rules** setting and set the option to **Enabled**.</span></span> <span data-ttu-id="1ffd1-190">选择 **"显示** "，在"值名称"列中 **输入每个文件或** 文件夹。</span><span class="sxs-lookup"><span data-stu-id="1ffd1-190">Select **Show** and enter each file or folder in the **Value name** column.</span></span> <span data-ttu-id="1ffd1-191">在"值"**列中为** 每个项目输入 **0。**</span><span class="sxs-lookup"><span data-stu-id="1ffd1-191">Enter **0** in the **Value** column for each item.</span></span>
+
+> [!WARNING]
+> <span data-ttu-id="1ffd1-192">请勿使用引号，因为"值名称"列或"值"列不支持 **引号**。</span><span class="sxs-lookup"><span data-stu-id="1ffd1-192">Do not use quotes as they are not supported for either the **Value name** column or the **Value** column.</span></span>
+
+## <a name="powershell"></a><span data-ttu-id="1ffd1-193">PowerShell</span><span class="sxs-lookup"><span data-stu-id="1ffd1-193">PowerShell</span></span>
+
+> [!WARNING]
+> <span data-ttu-id="1ffd1-194">如果使用 Intune、Configuration Manager 或其他企业级管理平台管理计算机和设备，则管理软件将在启动时覆盖任何冲突的 PowerShell 设置。</span><span class="sxs-lookup"><span data-stu-id="1ffd1-194">If you manage your computers and devices with Intune, Configuration Manager, or another enterprise-level management platform, the management software will overwrite any conflicting PowerShell settings on startup.</span></span> <span data-ttu-id="1ffd1-195">若要允许用户使用 PowerShell 定义值，请使用管理平台中规则的"用户定义"选项。</span><span class="sxs-lookup"><span data-stu-id="1ffd1-195">To allow users to define the value using PowerShell, use the "User Defined" option for the rule in the management platform.</span></span>
+
+1. <span data-ttu-id="1ffd1-196">在 **"开始"菜单中键入 powershell，** 右 **键单击**"Windows PowerShell并选择"以 **管理员角色运行"。**</span><span class="sxs-lookup"><span data-stu-id="1ffd1-196">Type **powershell** in the Start menu, right-click **Windows PowerShell** and select **Run as administrator**.</span></span>
+
+2. <span data-ttu-id="1ffd1-197">输入以下 cmdlet：</span><span class="sxs-lookup"><span data-stu-id="1ffd1-197">Enter the following cmdlet:</span></span>
+
+    ```PowerShell
+    Set-MpPreference -AttackSurfaceReductionRules_Ids <rule ID> -AttackSurfaceReductionRules_Actions Enabled
+    ```
+
+    <span data-ttu-id="1ffd1-198">若要在审核模式下启用 ASR 规则，请使用以下 cmdlet：</span><span class="sxs-lookup"><span data-stu-id="1ffd1-198">To enable ASR rules in audit mode, use the following cmdlet:</span></span>
+
+    ```PowerShell
+    Add-MpPreference -AttackSurfaceReductionRules_Ids <rule ID> -AttackSurfaceReductionRules_Actions AuditMode
+    ```
+
+    <span data-ttu-id="1ffd1-199">若要关闭 ASR 规则，请使用以下 cmdlet：</span><span class="sxs-lookup"><span data-stu-id="1ffd1-199">To turn off ASR rules, use the following cmdlet:</span></span>
+
+    ```PowerShell
+    Add-MpPreference -AttackSurfaceReductionRules_Ids <rule ID> -AttackSurfaceReductionRules_Actions Disabled
+    ```
+
+    > [!IMPORTANT]
+    > <span data-ttu-id="1ffd1-200">必须单独为每个规则指定状态，但可以在逗号分隔列表中组合规则和状态。</span><span class="sxs-lookup"><span data-stu-id="1ffd1-200">You must specify the state individually for each rule, but you can combine rules and states in a comma-separated list.</span></span>
+    >
+    > <span data-ttu-id="1ffd1-201">在下面的示例中，将启用前两个规则，第三个规则将被禁用，第四个规则将在审核模式下启用：</span><span class="sxs-lookup"><span data-stu-id="1ffd1-201">In the following example, the first two rules will be enabled, the third rule will be disabled, and the fourth rule will be enabled in audit mode:</span></span>
+    >
+    > ```PowerShell
+    > Set-MpPreference -AttackSurfaceReductionRules_Ids <rule ID 1>,<rule ID 2>,<rule ID 3>,<rule ID 4> -AttackSurfaceReductionRules_Actions Enabled, Enabled, Disabled, AuditMode
+    > ```
+
+    <span data-ttu-id="1ffd1-202">您还可以使用 `Add-MpPreference` PowerShell 谓词将新规则添加到现有列表中。</span><span class="sxs-lookup"><span data-stu-id="1ffd1-202">You can also use the `Add-MpPreference` PowerShell verb to add new rules to the existing list.</span></span>
+
+    > [!WARNING]
+    > <span data-ttu-id="1ffd1-203">`Set-MpPreference` 将始终覆盖现有的规则集。</span><span class="sxs-lookup"><span data-stu-id="1ffd1-203">`Set-MpPreference` will always overwrite the existing set of rules.</span></span> <span data-ttu-id="1ffd1-204">如果要添加到现有集合，应改为 `Add-MpPreference` 使用 。</span><span class="sxs-lookup"><span data-stu-id="1ffd1-204">If you want to add to the existing set, you should use `Add-MpPreference` instead.</span></span>
+    > <span data-ttu-id="1ffd1-205">可以使用 获取规则列表及其当前状态 `Get-MpPreference` 。</span><span class="sxs-lookup"><span data-stu-id="1ffd1-205">You can obtain a list of rules and their current state by using `Get-MpPreference`.</span></span>
+
+3. <span data-ttu-id="1ffd1-206">若要从 ASR 规则中排除文件和文件夹，请使用以下 cmdlet：</span><span class="sxs-lookup"><span data-stu-id="1ffd1-206">To exclude files and folders from ASR rules, use the following cmdlet:</span></span>
+
+    ```PowerShell
+    Add-MpPreference -AttackSurfaceReductionOnlyExclusions "<fully qualified path or resource>"
+    ```
+
+    <span data-ttu-id="1ffd1-207">继续使用 向 `Add-MpPreference -AttackSurfaceReductionOnlyExclusions` 列表中添加更多文件和文件夹。</span><span class="sxs-lookup"><span data-stu-id="1ffd1-207">Continue to use `Add-MpPreference -AttackSurfaceReductionOnlyExclusions` to add more files and folders to the list.</span></span>
+
+    > [!IMPORTANT]
+    > <span data-ttu-id="1ffd1-208">用于 `Add-MpPreference` 向列表中追加或添加应用。</span><span class="sxs-lookup"><span data-stu-id="1ffd1-208">Use `Add-MpPreference` to append or add apps to the list.</span></span> <span data-ttu-id="1ffd1-209">使用 `Set-MpPreference` cmdlet 将覆盖现有列表。</span><span class="sxs-lookup"><span data-stu-id="1ffd1-209">Using the `Set-MpPreference` cmdlet will overwrite the existing list.</span></span>
+
+## <a name="related-articles"></a><span data-ttu-id="1ffd1-210">相关文章</span><span class="sxs-lookup"><span data-stu-id="1ffd1-210">Related articles</span></span>
+
+- [<span data-ttu-id="1ffd1-211">使用攻击面减少规则减少攻击面</span><span class="sxs-lookup"><span data-stu-id="1ffd1-211">Reduce attack surfaces with attack surface reduction rules</span></span>](attack-surface-reduction.md)
+
+- [<span data-ttu-id="1ffd1-212">评估攻击面减少</span><span class="sxs-lookup"><span data-stu-id="1ffd1-212">Evaluate attack surface reduction</span></span>](evaluate-attack-surface-reduction.md)
+
+- [<span data-ttu-id="1ffd1-213">攻击面减少常见问题解答</span><span class="sxs-lookup"><span data-stu-id="1ffd1-213">Attack surface reduction FAQ</span></span>](attack-surface-reduction.md)
