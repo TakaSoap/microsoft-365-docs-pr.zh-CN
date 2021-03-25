@@ -22,12 +22,12 @@ ms.topic: conceptual
 ms.custom: autoir
 ms.reviewer: evaldm, isco
 ms.date: 02/02/2021
-ms.openlocfilehash: c11d9cd1ce4c2ca49315ec62b51c23ef981555f4
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: b66640736e9dc3835919e39d482b2d38b0c9dcc7
+ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51056224"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51183677"
 ---
 # <a name="details-and-results-of-an-automated-investigation"></a>自动调查的详细信息和结果
 
@@ -38,7 +38,7 @@ ms.locfileid: "51056224"
 
 ## <a name="new-unified-investigation-page"></a> ("新建！) 统一调查"页
 
-最近更新了调查页面，以包含跨设备、电子邮件和协作内容的信息。 新的统一调查页面定义通用语言，并提供跨 [Microsoft Defender for Endpoint](microsoft-defender-advanced-threat-protection.md)  和 Microsoft Defender [for Office 365](/microsoft-365/security/defender-365-security/office-365-atp)自动调查的统一体验。 
+最近更新了调查页面，以包含跨设备、电子邮件和协作内容的信息。 新的统一调查页面定义通用语言，并提供跨 [Microsoft Defender for Endpoint](microsoft-defender-endpoint.md)  和 Microsoft Defender [for Office 365](/microsoft-365/security/defender-365-security/office-365-atp)自动调查的统一体验。 
 
 > [!TIP]
 > 若要了解有关变化内容的信息，请参阅 ([ NEW！) 统一调查页](/microsoft-365/security/mtp/mtp-autoir-results)。

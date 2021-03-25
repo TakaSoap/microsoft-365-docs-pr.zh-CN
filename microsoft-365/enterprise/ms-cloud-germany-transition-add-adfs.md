@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 摘要：Active Directory 联合身份验证 (AD FS) Microsoft 云德国迁移的迁移步骤。
-ms.openlocfilehash: 146f476a43e46925d87763a800467bf52adc73e5
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 12465acf5b4afe7e252586ddd076250628b57dd3
+ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50918902"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51165653"
 ---
 # <a name="ad-fs-migration-steps-for-the-migration-from-microsoft-cloud-deutschland"></a>从德国 Microsoft 云迁移的 AD FS 迁移步骤
 
@@ -59,11 +59,11 @@ ms.locfileid: "50918902"
 
 8. 对于 AD FS 2012：在"**选择颁发授权** 规则"上，保留选中"允许所有用户访问此 **信赖** 方"，然后单击"下一 **步"。**
 
-8. 对于 AD FS 2016 和 AD FS 2019：在"**选择访问控制** 策略"页上，选择相应的访问控制策略，然后单击"下一步 **"。** 如果未选择任何选项，则信赖方信任 **将不起作用** 。
+9. 对于 AD FS 2016 和 AD FS 2019：在"**选择访问控制** 策略"页上，选择相应的访问控制策略，然后单击"下一步 **"。** 如果未选择任何选项，则信赖方信任 **将不起作用** 。
 
-9. 单击 **"** 准备添加 **信任"页上** 的"下一步"以完成向导。
+10. 单击 **"** 准备添加 **信任"页上** 的"下一步"以完成向导。
 
-10. 单击 **"完成** " **页上的"关闭** "。
+11. 单击 **"完成** " **页上的"关闭** "。
 
 通过关闭向导，可建立与 Office 365 全局服务之间的信赖方信任。 但是，尚未配置任何颁发转换规则。
 
@@ -74,7 +74,19 @@ ms.locfileid: "50918902"
 
 1. 在 [AD FS](https://adfshelp.microsoft.com/AadTrustClaims/ClaimsGenerator)帮助上运行"生成声明"，然后使用脚本右上角的"复制"选项复制 PowerShell 脚本。
 
-2. 按照 [AD FS](https://adfshelp.microsoft.com/AadTrustClaims/ClaimsGenerator) 帮助中概述的步骤操作，了解如何在 AD FS 场中运行 PowerShell 脚本以生成全局信赖方信任。
+2. 按照 [AD FS](https://adfshelp.microsoft.com/AadTrustClaims/ClaimsGenerator) 帮助中概述的步骤操作，了解如何在 AD FS 场中运行 PowerShell 脚本以生成全局信赖方信任。 在运行脚本之前，请替换生成的脚本中的以下代码行，如下所示：
+
+   ```powershell
+   # AD FS Help generated value
+   $claims = Get-AdfsRelyingPartyTrust -Identifier $(Get-RpIdentifier) | Select-Object IssuanceTransformRules;
+   # replace with
+   $claims = Get-AdfsRelyingPartyTrust -Identifier urn:federation:MicrosoftOnline | Select-Object IssuanceTransformRules;
+
+   # AD FS Help generated value
+   Set-AdfsRelyingPartyTrust -TargetIdentifier $(Get-RpIdentifier) -IssuanceTransformRules $RuleSet.ClaimRulesString;
+   # replace with
+   Set-AdfsRelyingPartyTrust -TargetIdentifier urn:federation:MicrosoftOnline -IssuanceTransformRules $RuleSet.ClaimRulesString;
+   ```
 
 3. 确认存在两个信赖方Ttrusts;一个适用于德国 Microsoft 云，另一个适用于 Office 365 全球服务。 以下命令可用于检查。 它应返回两行以及各自的名称和标识符。
 
@@ -86,9 +98,7 @@ ms.locfileid: "50918902"
 
 5. 当你的租户进行迁移时，请定期验证在各种支持的迁移步骤中 AD FS 身份验证是否与德国 Microsoft 云和 Microsoft 全球云一起运行。
 
-
 ## <a name="ad-fs-disaster-recovery-wid-database"></a>AD FS 灾难恢复 (WID 数据库) 
-
 
 若要在灾难中还原 AD FS 场，需使用 [AD FS](/windows-server/identity/ad-fs/operations/ad-fs-rapid-restore-tool) 快速还原工具。 因此，必须下载该工具，并且必须在开始迁移之前创建并安全地存储备份。 本示例中，已运行以下命令来备份在 WID 数据库上运行的服务器场：
 
@@ -112,7 +122,6 @@ ms.locfileid: "50918902"
 
 4. 将备份安全地存储在所需目标上。
 
-
 ### <a name="restore-an-ad-fs-farm"></a>还原 AD FS 场
 
 如果服务器场完全失败，并且无法返回到旧服务器场，请执行下列操作。 
@@ -126,7 +135,6 @@ ms.locfileid: "50918902"
    ```
 
 3. 将新的 DNS 记录或负载平衡器指向新的 AD FS 服务器。
-
 
 ## <a name="more-information"></a>更多信息
 

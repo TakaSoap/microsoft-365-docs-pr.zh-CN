@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.custom: asr
 ms.technology: mde
-ms.openlocfilehash: d090c82e8c76da8f2e19dc9189006fdea3d6990d
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: cc8c66665740449e499c11e1db4403caef20cf9c
+ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51056095"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51183761"
 ---
 # <a name="troubleshoot-attack-surface-reduction-rules"></a>攻击面减少规则疑难解答
 
@@ -29,7 +29,7 @@ ms.locfileid: "51056095"
 
 
 **适用于：**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > 想要体验适用于终结点的 Defender？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-pullalerts-abovefoldlink) 

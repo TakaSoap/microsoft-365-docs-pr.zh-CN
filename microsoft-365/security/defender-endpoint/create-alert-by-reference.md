@@ -1,0 +1,120 @@
+---
+title: 从事件 API 创建警报
+description: 了解如何使用创建警报 API 在 Microsoft Defender for Endpoint 中的事件顶部创建新的警报。
+keywords: api， 图形 api， 受支持的 api， 获取， 警报， 信息， id
+search.product: eADQiWindows 10XVcnh
+ms.prod: m365-security
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.pagetype: security
+ms.author: macapara
+author: mjcaparas
+localization_priority: Normal
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance
+ms.topic: article
+ms.technology: mde
+ms.openlocfilehash: 9066bcdae549f7a6b1372714d567674eb03c1e51
+ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51166443"
+---
+# <a name="create-alert-api"></a>创建警报 API
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+**适用于：**
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+
+- 想要体验 Microsoft Defender for Endpoint？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+
+[!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
+
+[!include[Improve request performance](../../includes/improve-request-performance.md)]
+
+
+## <a name="api-description"></a>API 说明
+在事件 [顶部](alerts.md) 创建新的 **警报**。
+<br>**创建警报需要 Microsoft Defender for Endpoint** 事件。
+<br>你将需要提供请求中的事件中的 3 个参数：**事件** 时间、计算机 **ID** 和 **报告 ID。** 请参阅下面的示例。
+<br>可以使用高级搜寻 API 或门户中的事件。
+<br>如果同一设备上存在具有相同标题的打开警报，则新创建的警报将合并到该警报中。
+<br>自动调查将在通过 API 创建的警报上自动启动。
+
+
+## <a name="limitations"></a>限制
+1. 此 API 的速率限制是每分钟 15 次调用。
+
+
+## <a name="permissions"></a>权限
+
+若要调用此 API，需要以下权限之一。 若要了解更多信息（包括如何选择权限），请参阅使用 [Microsoft Defender for Endpoint API](apis-intro.md)
+
+权限类型 |   权限  |   权限显示名称
+:---|:---|:---
+Application |   Alerts.ReadWrite.All |  "读取和写入所有警报"
+委派（工作或学校帐户） | Alert.ReadWrite | "读取和写入警报"
+
+>[!Note]
+> 使用用户凭据获取令牌时：
+>- 用户至少需要具有以下角色权限："警报调查" (有关详细信息，请参阅创建和管理) [](user-roles.md)
+>- 用户需要具有与警报关联的设备的访问权限，根据设备组设置 (请参阅创建和管理 [设备](machine-groups.md) 组，了解) 
+
+## <a name="http-request"></a>HTTP 请求
+
+```
+POST https://api.securitycenter.microsoft.com/api/alerts/CreateAlertByReference
+```
+
+## <a name="request-headers"></a>请求标头
+
+名称 | 类型 | 说明
+:---|:---|:---
+Authorization | String | Bearer {token}。 **必需**。
+Content-Type | String | application/json. **必需**。
+
+## <a name="request-body"></a>请求正文
+
+在请求正文中，提供以下值 (所有请求) ：
+
+属性 | 类型 | 说明
+:---|:---|:---
+eventTime | DateTime (UTC)  | 事件作为字符串的精确时间，从高级搜寻获取。 例如， ```2018-08-03T16:45:21.7115183Z``` **必需**。
+reportId | String | 事件的 reportId，从高级搜寻获取。 **必需**。
+machineId | String | 标识事件的设备 ID。 **必需**。
+severity | String | 警报的严重性。 属性值为："Low"、Medium 和"High"。 **必需**。
+title | String | 警报的标题。 **必需**。
+说明 | String | 警报的说明。 **必需**。
+recommendedAction| String | 建议安全人员在分析警报时采取的操作。 **必需**。
+“类别”| String | 警报的类别。 属性值包括："General"、"CommandAndControl"、"Collection"、"CredentialAccess"、"DefenseEvasion"、"Discovery"、"Exfiltration"、"Exploit"、"Execution"、"InitialAccess"、"DefenseMovement"、"Malware"、"Persistence"、"PrivilegeEscalation"、"Ransomware"、"SuspiciousActivity"（ **必需**）。
+
+## <a name="response"></a>响应
+
+如果成功，此方法在响应正文中返回 200 OK 和一个新的 [alert](alerts.md) 对象。 如果具有指定属性的事件 (_reportId_ _、eventTime_ 和 _machineId_) 未找到 - 404 未找到。
+
+## <a name="example"></a>示例
+
+**请求**
+
+下面是一个请求示例。
+
+```http
+POST https://api.securitycenter.microsoft.com/api/alerts/CreateAlertByReference
+```
+
+```json
+{
+    "machineId": "1e5bc9d7e413ddd7902c2932e418702b84d0cc07",
+    "severity": "Low",
+    "title": "example",
+    "description": "example alert",
+    "recommendedAction": "nothing",
+    "eventTime": "2018-08-03T16:45:21.7115183Z",
+    "reportId": "20776",
+    "category": "Exploit"
+}
+```

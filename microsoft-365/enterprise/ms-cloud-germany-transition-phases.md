@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 摘要：了解从德国 Microsoft 云 (德国) 迁移到新的德国数据中心区域 Office 365 服务的迁移阶段操作和影响。
-ms.openlocfilehash: 5e1bf9257cfd4751333e2e01789bb7dbaf2685fa
-ms.sourcegitcommit: 30c3054004ddc9d6059c11d55577552aa2464810
+ms.openlocfilehash: 53a8c9470093db9d57d8dc18f4242d1a596c6efd
+ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50939631"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51165629"
 ---
 # <a name="migration-phases-actions-and-impacts-for-the-migration-from-microsoft-cloud-deutschland-general"></a>迁移阶段从德国 Microsoft 云迁移的操作和影响 (常规) 
 
@@ -36,7 +36,7 @@ ms.locfileid: "50939631"
 |步骤|持续时间|负责方|说明|
 |:--------|:--------|:--------|:--------|
 |Opt-In|工作时间|客户|选择你的组织加入迁移。|
-|预工作|天数|客户|完成为迁移准备用户、工作站和网络所需的工作。|
+|预工作|天|客户|完成为迁移准备用户、工作站和网络所需的工作。|
 |Azure Active Directory (Azure AD) |1-2 天|Microsoft|将 Azure AD 组织迁移到全球。|
 |Azure|周|客户|创建新的全球 Azure 订阅并转换 Azure 服务。|
 |订阅&许可证转换|1-2 天|Microsoft|购买全球订阅、取消德国 Microsoft 云订阅和转换用户许可证。|
@@ -62,7 +62,7 @@ ms.locfileid: "50939631"
 
 ## <a name="before-the-migration-starts"></a>迁移开始之前
 
-确保你熟悉适用于所有客户的迁移 [准备步骤](ms-cloud-germany-transition-add-pre-work.md#applies-to-everyone)。
+确保您熟悉适用于所有客户的 [迁移准备步骤](ms-cloud-germany-transition-add-pre-work.md)。
 
 如果你拥有一个或多个 DNS 命名空间中设置了名为 _msoid_ 的 DNS CNAME，必须删除 CNAME，直到最晚阶段 8 结束。 可以在阶段 8 结束之前随时删除 CNAME _msoid。_ 请参阅 [DNS 的预工作](ms-cloud-germany-transition-add-pre-work.md#dns)。
 
@@ -111,7 +111,7 @@ ms.locfileid: "50939631"
 
 完成迁移阶段 **9** (当消息中心通知发布) 时，你需要使用 Office 365 全球设置再次运行 HCW，以将本地系统指向 Office 365 全球服务。
 
-如果要在阶段 5 期间修改用户照片，请参阅 [Set-UserPhoto](ms-cloud-germany-transition-add-experience.md#exchange-online-before-phase-5)
+如果要在阶段 5 期间修改用户照片，请参阅 [Exchange Online Set-UserPhoto阶段](ms-cloud-germany-transition-add-experience.md#exchange-online-set-userphoto-during-phase-5)
 
 | 步骤 (步骤)  | 说明 | 影响 |
 |:-------|:-------|:-------|
@@ -211,11 +211,11 @@ Connect-MicrosoftTeams -Credential $userCredential -OverridePowershellUri "https
 
 迁移到"德国"地区的 Office 365 租户要求所有用户在租户迁移到达阶段 9 后关闭、注销 Office 365，然后重新登录所有 Office 桌面应用程序 (Word、Excel、PowerPoint、Outlook 等 ) 和 OneDrive for Business 客户端。 通过登录和登录，Office 服务可以获取来自全局 Azure AD 服务的新身份验证令牌。
 
-确保您已完成移动设备 [的前期工作](ms-cloud-germany-transition-add-pre-work.md#mobile) 过程。
+确保您已完成移动设备 [的前期工作](ms-cloud-germany-transition-add-pre-work.md#mobile-device-management) 过程。
 
 | 步骤 (步骤)  | 说明 | 影响 |
 |:-------|:-------|:-------|
-| 客户端、Office Online 和 Office 客户端切换期间，Azure AD 将完成租户范围以指向 Office 365 服务。 | 此配置更改允许 Office 客户端更新并指向 Office 365 服务终结点。 | <ul><li>通知用户关闭 _所有_ Office 应用，然后重新登录 (或强制客户端重新启动，并强制用户登录) 以使 Office 客户端能够选取更改。 </li><li>通知用户和技术支持人员，用户可能会看到一个 Office 横幅，提示他们在转换后 72 小时内重新激活 Office 应用。 </li><li>个人计算机上的所有 Office 应用程序都必须关闭，用户必须注销然后重新登录。 在黄色激活栏中，登录以重新激活 Office 365 服务。</li><li>共享计算机需要类似于个人计算机的操作，并且不需要特殊过程。 </li><li>在移动设备上，用户必须注销应用，关闭它们，然后重新登录。 </li></ul>|
+| 客户端、Office Online 和 Office 客户端切换期间，Azure AD 将完成租户范围以指向 Office 365 服务。 | 此配置更改允许 Office 客户端更新并指向 Office 365 服务终结点。 | <ul><li>通知用户关闭 _所有_ Office 应用，然后重新登录 (或强制客户端重新启动，并强制用户登录) 以使 Office 客户端能够选取更改。 </li><li>通知用户和技术支持人员，用户可能会看到一个 Office 横幅，提示他们在转换后 72 小时内重新激活 Office 应用。 </li><li>个人计算机上的所有 Office 应用程序都必须关闭，用户必须注销然后重新登录。 在黄色激活栏中，登录以重新激活 Office 365 服务。</li><li>共享计算机需要类似于个人计算机的操作，并且不需要特殊过程。 </li><li>在移动设备上，用户必须注销应用，关闭它们，然后重新登录。</li></ul>|
 ||||
 
 ## <a name="line-of-business-apps"></a>业务线应用

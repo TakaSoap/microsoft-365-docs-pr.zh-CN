@@ -1,0 +1,150 @@
+---
+title: 与 Power BI 的 Microsoft Defender ATP API 连接
+ms.reviewer: ''
+description: 在 Microsoft Defender for Endpoint API (BI) 报告。
+keywords: api， 受支持的 api， Power BI， 报告
+search.product: eADQiWindows 10XVcnh
+ms.prod: m365-security
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.pagetype: security
+ms.author: macapara
+author: mjcaparas
+localization_priority: Normal
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance
+ms.topic: article
+ms.technology: mde
+ms.openlocfilehash: 696782ca03e5494c3fc5ca08943d1079c5d78f8a
+ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51166431"
+---
+# <a name="create-custom-reports-using-power-bi"></a>使用 Power BI 创建自定义报告
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+**适用于：**
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+
+
+- 想要体验 Microsoft Defender for Endpoint？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+
+[!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
+
+[!include[Improve request performance](../../includes/improve-request-performance.md)]
+
+在此部分中，你将了解在 Defender for Endpoint API 顶部创建 Power BI 报告。
+
+第一个示例演示了如何将 Power BI 连接到高级搜寻 API，第二个示例演示了与 OData API（如计算机操作或警报）的连接。
+
+## <a name="connect-power-bi-to-advanced-hunting-api"></a>将 Power BI 连接到高级搜寻 API
+
+- 打开 Microsoft Power BI
+
+- 单击 **"获取**  >  **数据空白查询"**
+
+    ![创建空白查询的图像](images/power-bi-create-blank-query.png)
+
+- 单击 **"高级编辑器"**
+
+    ![打开的高级编辑器的图像](images/power-bi-open-advanced-editor.png)
+
+- 复制以下内容并将其粘贴到编辑器中：
+
+```
+    let 
+        AdvancedHuntingQuery = "DeviceEvents | where ActionType contains 'Anti' | limit 20",
+
+        HuntingUrl = "https://api.securitycenter.microsoft.com/api/advancedqueries",
+
+        Response = Json.Document(Web.Contents(HuntingUrl, [Query=[key=AdvancedHuntingQuery]])),
+
+        TypeMap = #table(
+            { "Type", "PowerBiType" },
+            {
+                { "Double",   Double.Type },
+                { "Int64",    Int64.Type },
+                { "Int32",    Int32.Type },
+                { "Int16",    Int16.Type },
+                { "UInt64",   Number.Type },
+                { "UInt32",   Number.Type },
+                { "UInt16",   Number.Type },
+                { "Byte",     Byte.Type },
+                { "Single",   Single.Type },
+                { "Decimal",  Decimal.Type },
+                { "TimeSpan", Duration.Type },
+                { "DateTime", DateTimeZone.Type },
+                { "String",   Text.Type },
+                { "Boolean",  Logical.Type },
+                { "SByte",    Logical.Type },
+                { "Guid",     Text.Type }
+            }),
+
+        Schema = Table.FromRecords(Response[Schema]),
+        TypedSchema = Table.Join(Table.SelectColumns(Schema, {"Name", "Type"}), {"Type"}, TypeMap , {"Type"}),
+        Results = Response[Results],
+        Rows = Table.FromRecords(Results, Schema[Name]),
+        Table = Table.TransformColumnTypes(Rows, Table.ToList(TypedSchema, (c) => {c{0}, c{2}}))
+
+    in Table
+
+```
+
+- 单击 **完成**
+
+- 单击 **"编辑凭据"**
+
+    ![编辑凭据的图像0](images/power-bi-edit-credentials.png)
+
+- 选择 **"组织**  >  **帐户""登录"**
+
+    ![集凭据的图像1](images/power-bi-set-credentials-organizational.png)
+
+- 输入凭据并等待登录
+
+- 单击 **"连接"**
+
+    ![集凭据的图像2](images/power-bi-set-credentials-organizational-cont.png)
+
+- 现在，查询结果将显示为表格，你可以开始在它上面生成可视化效果！
+
+- 你可以复制此表、重命名该表并编辑内部的高级搜寻查询，以获取任何你想获取的数据。
+
+## <a name="connect-power-bi-to-odata-apis"></a>将 Power BI 连接到 OData API
+
+- 与上述示例的唯一区别是编辑器内的查询。 
+
+- 复制以下内容并将其粘贴到编辑器中以拉取 **组织** 的所有计算机操作：
+
+```
+    let
+
+        Query = "MachineActions",
+
+        Source = OData.Feed("https://api.securitycenter.microsoft.com/api/" & Query, null, [Implementation="2.0", MoreColumns=true])
+    in
+        Source
+
+```
+
+- 你可以对警报和 **计算机** 执行相同的 **操作**。
+
+- 您还可以将 OData 查询用于查询筛选器，请参阅使用 [OData 查询](exposed-apis-odata-samples.md)
+
+
+## <a name="power-bi-dashboard-samples-in-github"></a>GitHub 中的 Power BI 仪表板示例
+有关详细信息，请参阅 [Power BI 报告模板](https://github.com/microsoft/MicrosoftDefenderATP-PowerBI)。
+
+## <a name="sample-reports"></a>示例报告
+查看 Microsoft Defender ATP Power BI 报告示例。 有关详细信息，请参阅浏览 [代码示例](https://docs.microsoft.com/samples/browse/?products=mdatp)。
+
+
+## <a name="related-topic"></a>相关主题
+- [适用于终结点的 Defender API](apis-intro.md)
+- [高级搜寻 API](run-advanced-query-api.md)
+- [使用 OData 查询](exposed-apis-odata-samples.md)

@@ -18,80 +18,115 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 摘要：从德国 Microsoft 云 (德国) 迁移到新的德国数据中心区域中的 Office 365 服务时，需要提前工作。
-ms.openlocfilehash: 37fde0119dfc84cbe9120cf922cbac469a0a50f1
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: d05b3fc06c4530a69c49962b0d2b793353033c99
+ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50923834"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51165605"
 ---
 # <a name="pre-work-for-the-migration-from-microsoft-cloud-deutschland"></a>从德国 Microsoft 云进行迁移的前期工作
 
 使用这些链接可了解与组织相关的预工作步骤：
 
-- 对于在 Microsoft 云德国使用 Office 365 的所有客户，请 [执行以下步骤](#applies-to-everyone)。
-- 如果使用的是 Exchange Online 或 Exchange 混合，请 [执行此步骤](#exchange-online)。
-- 如果使用的是 SharePoint Online，请 [执行此步骤](#sharepoint-online)。
-- 如果你使用 MDM 解决方案的第三方移动设备 (，) 执行 [此步骤](#mobile)。
-- 如果你使用的是与 Office 365 集成的第三方服务或业务线 (LOB) ，请执行 [此步骤](#line-of-business-apps)。
-- 如果你使用的是除 Office 365 订阅中包含的服务之外的 Azure 服务，请 [执行此步骤](#microsoft-azure)。
-- 如果你还使用 Dynamics 365，请 [执行此步骤](#dynamics365)。
-- 如果你还使用 Power BI，请 [执行此步骤](#power-bi)。
-- 对于 DNS 更改，请 [执行此步骤](#dns)。
-- 如果使用的是联合身份，请 [执行以下步骤](#federated-identity)。
+- 对于 **在** Microsoft 云德国使用 Office 365 的所有客户，请 [执行以下步骤](#general-tenant-migration-considerations)。
+- 对于 **DNS 更改**，请 [执行此步骤](#dns)。
+- 如果使用的是 **本地 Active Directory 联合** 身份验证服务，请 [执行以下步骤](#active-directory-federation-services-ad-fs)。
+- 如果使用的是 **SharePoint Online，** 请 [执行此步骤](#sharepoint-online)。
+- 如果使用的是 Exchange **Online** 或 **Exchange 混合，** 请 [执行此步骤](#exchange-online)。
+- 如果你使用的是 Skype **for Business Online，** 请 [执行此步骤](#skype-for-business-online)
+- 如果你使用 MDM 解决方案的第三方移动设备 (，) 执行 [此步骤](#mobile-device-management)。
+- 如果你使用的是与 Office  365 集成的第三方服务或业务线 **(LOB**) 应用，请 [执行此步骤](#line-of-business-apps)。
+- 如果你还使用 **Dynamics 365，** 请 [执行此步骤](#dynamics365)。
+- 如果你还使用 Power **BI，** 请 [执行此步骤](#power-bi)。
+- 如果你还要将 **Azure** 服务与 Office 365 订阅一同使用，请 [执行此步骤](#microsoft-azure)。
 
-## <a name="applies-to-everyone"></a>适用于所有人
+## <a name="general-tenant-migration-considerations"></a>一般租户迁移注意事项
+
+**适用于：** 在 Microsoft 德国云实例中使用 Office 365 的所有客户
+
+迁移期间将保留 Office 365 租户和用户标识符。 Azure AD 服务调用从德国 Microsoft 云重定向到 Office 365 全局服务，并且对于 Office 365 服务是透明的。
+
+- GDPR (一) 数据保护条例 (DSR) 从 Azure 管理门户执行，供将来请求使用。 在 30 天后或之前，将删除位于德国 Microsoft 云的任何旧诊断数据或非客户诊断数据。
+- 当租户复制到 Office 365 (时，使用 Microsoft Authenticator 的多重身份验证) 请求显示为用户 ObjectID (GUID) 。 尽管存在此显示行为，但 MFA 请求将如期执行。  使用 Office 365 服务终结点激活的 Microsoft Authenticator 帐户将显示 UPN (用户) 。  使用德国 Microsoft 云终结点添加的帐户将显示用户 ObjectID，但将同时用于德国 Microsoft 云和 Office 365 服务终结点。
 
 | 步骤 (步骤)  | 说明 | 影响 |
 |:-------|:-------|:-------|
 | 准备通知用户迁移后重启客户端并登录和退出客户端。 | 迁移过程中，Office 客户端许可将从德国 Microsoft 云转换为 Office 365 服务。 客户端在退出并登录 Office 客户端后获取新的有效许可证。 | 用户的 Office 产品需要刷新 Office 365 服务中的许可证。 如果未刷新许可证，Office 产品可能会遇到许可证验证错误。 |
-| 确保与 [Office 365 服务 URL 和 IP 地址的网络连接](./urls-and-ip-address-ranges.md)。 | 客户托管用于访问 Office 365 服务的所有客户端和服务都必须能够访问 Office 365 全局服务终结点。 <br>在这种情况下，你或你的协作伙伴已制定防火墙规则，以阻止访问 [Office 365](./urls-and-ip-address-ranges.md) 服务 URL 中列出的 URL 和 IP 地址，并且 IP 地址必须更改防火墙规则，以允许访问 Office 365 全局服务终结点| 如果未在阶段 4 之前完成此操作，则可能会发生服务或客户端软件故障  |
+| 确保与 [Office 365 服务 URL 和 IP 地址的网络连接](https://aka.ms/o365urls)。 | 客户托管用于访问 Office 365 服务的所有客户端和服务都必须能够访问 Office 365 全局服务终结点。 <br>如果你或你的协作伙伴具有防火墙规则，阻止访问 [Office 365](https://aka.ms/o365urls) 服务 URL 中列出的 URL 和 IP 地址，则 IP 地址必须更改防火墙规则以允许访问 Office 365 全局服务终结点| 如果未在阶段 4 之前完成此操作，则可能会发生服务或客户端软件故障  |
 | 取消任何试用订阅。 | 试用版订阅将不会迁移，并且将阻止传输付费订阅。 | 如果取消后用户访问试用服务，则试用服务已过期且无法正常工作。 |
-| 分析德国 Microsoft 云与 Office 365 服务之间的许可证功能差异。 | Office 365 服务包括当前德国 Microsoft 云中不可用的其他功能和服务。 在订阅转移期间，用户可以使用新功能。 | <ul><li> 分析 Microsoft 云德国和 Office 365 服务的许可证提供的不同功能。 从 Office [365 平台服务说明开始](/office365/servicedescriptions/office-365-platform-service-description/office-365-platform-service-description)。 </li><li> 确定是否应最初禁用 Office 365 服务的任何新功能，以限制对用户或用户更改管理的影响，并根据需要更改用户许可证分配。 </li><li>为用户和技术支持人员准备 Office 365 服务提供的新服务和功能。 |
-| 创建组织范围的 [保留策略](../compliance/retention.md) ，防止在迁移过程中意外删除内容。  |<ul><li>为确保最终用户不会在迁移过程中意外删除内容，客户可以选择启用组织范围的保留策略。 </li><li>尽管不需要保留，因为迁移过程中随时设置保留应按预期工作，但保留策略是一种备份安全机制。 同时，保留策略可能不会由所有客户使用，尤其是关注保留的客户。</li></ul>| 应用保留策略，如 [了解保留策略和保留标签中所述](../compliance/retention.md)。 如果未在阶段 4/9 之前完成此操作，则可能会发生服务或客户端软件故障。 </li></ul>|
-| 正确的许可证过度使用 | 在某些情况下，客户可能能够使用比购买的服务更多的服务。 此条件称为许可证过度使用。 Microsoft 无法将许可证过度使用条件的客户从德国 Microsoft 云迁移到德国数据中心区域。 为了确保对服务和数据的持续访问，每个分配的用户都需要许可证。 | 所有客户 | 客户必须通过购买其他许可证或取消分配用户许可证来评估和解决许可证过度分配情况。 |
+| 分析德国 Microsoft 云与 Office 365 全球服务之间的许可证功能差异。 | Office 365 服务包括当前德国 Microsoft 云中不可用的其他功能和服务。 在订阅转移期间，用户可以使用新功能。 | <ul><li> 分析 Microsoft 云德国和 Office 365 全球服务的许可证提供的不同功能。 从 Office [365 平台服务说明开始](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-platform-service-description)。 </li><li> 确定是否应最初禁用 Office 365 服务的任何新功能，以限制对用户或用户更改管理的影响，并根据需要更改用户许可证分配。 </li><li>为用户和技术支持人员准备 Office 365 服务提供的新服务和功能。 |
+| 创建组织范围的 [保留策略](https://docs.microsoft.com/microsoft-365/compliance/retention) ，防止在迁移过程中意外删除内容。  |<ul><li>为确保最终用户不会在迁移过程中意外删除内容，客户可以选择启用组织范围的保留策略。 </li><li>尽管不需要保留，因为迁移过程中随时设置保留应按预期工作，但保留策略是一种备份安全机制。 同时，保留策略可能不会由所有客户使用，尤其是关注保留的客户。</li></ul>| 应用保留策略，如 [了解保留策略和保留标签中所述](https://docs.microsoft.com/microsoft-365/compliance/retention-policies)。 如果未在阶段 4/9 之前完成此操作，则可能会发生服务或客户端软件故障。 </li></ul>|
 |||||
+
+## <a name="dns"></a>DNS
+
+<!-- before phase 9 -->
+
+**适用于：** 在其自己的 DNS 域中设置 _自定义 msoid_ CNAME 的客户
+
+如果配置 _，msoid_ CNAME 将仅影响使用 Office 桌面客户端 (Microsoft 365 应用版、Office 365 专业增强版、Office 2019、2016...) 的客户。
+
+如果你拥有一个或多个 DNS 命名空间中设置了名为 _msoid_ 的 DNS CNAME，必须删除 CNAME，直到最晚阶段 8 结束。 可以在阶段 8 结束之前随时删除 CNAME _msoid。_
+
+若要验证是否在你的 DNS 命名空间中设置了 CNAME，请按照以下步骤操作，contoso.com替换为你自己的域名：
+
+```console
+nslookup -querytype=CNMAE msoid.contoso.com
+```
+
+如果命令行返回 DNS 记录，请从 _域中删除 msoid_ CNAME。
 
 ## <a name="active-directory-federation-services-ad-fs"></a>Active Directory 联合身份验证服务 (AD FS)
 
-**适用于：** 使用本地 AD FS 验证连接到 Microsoft Office 365 的用户的客户
+<!-- before phase 4 -->
 
-| 步骤 (步骤)  | 说明 | 影响 |
-|:-------|:-------|:-------|
-| [针对灾难恢复方案的 Active Directory 联合身份验证 (AD FS) ](ms-cloud-germany-transition-add-adfs.md#backup) 备份。 | 客户需要适当地备份 AD FS 场，以确保可以还原对全局 & Germany 终结点的信赖方信任，而不会接触域的颁发者 URI。 如有必要，Microsoft 建议使用 AD FS 快速还原来备份服务器场和相应的还原。 | 必需操作。 如果客户的 AD FS 场失败，则 Inaction 将导致迁移期间的服务影响。 有关详细信息，请参阅 [ADFS 迁移步骤](./ms-cloud-germany-transition-add-adfs.md) |
-||||
+**适用于：** 使用本地 AD FS 验证连接到 Microsoft Office 365 的用户的客户<br>
+**应用时**：阶段 4 之前的任何时间
 
-## <a name="exchange-online"></a>Exchange Online
-
-**适用于：** 已启用共享日历和可用性地址空间的 Exchange Online 客户。
-
-| 步骤 (步骤)  | 说明 | 影响 |
-|:-------|:-------|:-------|
-| 通知外部合作伙伴即将过渡到 Office 365 服务。 | 可用性地址空间配置允许与 Office 365 共享忙/闲信息。 | 如果不这样做，可能会导致客户迁移的稍后阶段出现服务或客户端故障。 |
-|||||
-
-### <a name="exchange-online-hybrid-configuration"></a>Exchange Online 混合配置
-
-**适用于：** 具有活动 Exchange 混合配置的 Exchange Online 客户
-
-| 步骤 (步骤)  | 说明 | 影响 |
-|:-------|:-------|:-------|
-| 在租户进入迁移阶段 5 之前 (更新到最新版本的混合配置向导 (HCW) 。 你可以在收到消息中心通知 Office 365 租户迁移已开始后立即启动此活动。<br><br> Microsoft Cloud Deutschland hybrid Exchange Online customers must uninstall previous versions of HCW， and then install and execute the latest version (17.0.5378.0 or higher) from [https://aka.ms/hybridwizard](https://aka.ms/hybridwizard) . |<ul><li>HCW 的最新版本包括必要的更新，以支持从德国 Microsoft 云过渡到 Office 365 服务的客户。</li><li> 更新包括更改发送连接器和接收连接器本地证书设置。</li><li> Exchange 管理员必须在第 5 阶段（9 月 9 日）开始前随时重新安装 HCW (Exchange) 迁移。<br>在阶段 5 之前执行 HCW 时，在"Office _365 Exchange Online"_ 下 HCW 的第 2 页中选择"Office 365 Germany"，在"我的 Office 365 组织"下的列表框中选择  _"Office 365 Germany"，_</li><li>**注意**：完成 Office 365 租户迁移后，将再次删除并重新安装 HCW，这次使用 HCW 第 2 页上的"Office 365 全球"设置，通过 Exchange Online 全局服务完成混合设置。</li></ul>|在 Exchange 迁移迁移阶段 5 之前 (HCW) 可能会导致服务或客户端故障。 |
-||||
+阅读和应用 [ADFS 迁移步骤](ms-cloud-germany-transition-add-adfs.md)
 
 ## <a name="sharepoint-online"></a>SharePoint Online
 
-**适用于：** 在本地使用 SharePoint 2013 的客户
+<!-- before phase 4 -->
 
+**适用于：** 使用本地 SharePoint 2013 的客户<br>
+**应用时**：阶段 4 之前的任何时间
 
 | 步骤 (步骤)  | 说明 | 影响 |
 |:-------|:-------|:-------|
 | 限制 SharePoint 2013 工作流，在 SharePoint Online 迁移过程中使用。 | 在转换之前减少 SharePoint 2013 工作流并完成运行中的工作流。 | 不操作可能会导致用户混淆和技术支持呼叫。 |
 ||||
 
+## <a name="exchange-online"></a>Exchange Online
+
+<!-- before phase 5 -->
+
+**适用于：** 已启用共享日历和可用性地址空间的 Exchange Online 客户<br>
+**应用时**：阶段 9 结束之前的任何时间
+
+| 步骤 (步骤)  | 说明 | 影响 |
+|:-------|:-------|:-------|
+| 通知外部合作伙伴即将过渡到 Office 365 服务。 | 可用性地址空间配置允许与 Office 365 共享忙/闲信息。 | 如果不这样做，可能会导致客户迁移的稍后阶段出现服务或客户端故障。 |
+||||
+
+### <a name="exchange-online-hybrid-configuration"></a>Exchange Online 混合配置
+
+**适用于：** 将活动 Exchange 混合配置与本地 Exchange 服务器一同使用的所有客户<br>
+**应用时**：阶段 5 之前的任何时间
+
+| 步骤 (步骤)  | 说明 | 影响 |
+|:-------|:-------|:-------|
+| 在租户进入迁移阶段 5 之前 (更新到最新版本的混合配置向导 (HCW) 。 收到消息中心通知 Office 365 租户迁移已开始后，你可以立即启动此活动， (第 1 阶段) 。<br>Exchange 管理员必须卸载 HCW 的以前版本，然后从 安装并执行最新版本 (17.0.5378.0 或) 版本 [https://aka.ms/hybridwizard](https://aka.ms/hybridwizard) 。 |<ul><li>HCW 的最新版本包括必要的更新，以支持从德国 Microsoft 云实例到 Office 365 全局服务的 Exchange Online 迁移。</li><li> 更新包括对发送连接器和接收连接器本地证书 _设置的更改_。 </li><li>在阶段 5 之前执行 HCW 时，在"Office _365 Exchange Online"_ 下 HCW 的第 2 页中选择"Office 365 Germany"，在"我的 Office 365 组织"下的列表框中选择  _"Office 365 Germany"，_</li><li>**注意**：在第 9 阶段后完成 Office 365 租户迁移后，将删除并重新安装 HCW，这次使用 HCW 第 2 页上的"Office 365 全球"设置，通过 Exchange Online 全局服务完成混合设置。</li></ul>|在 Exchange 迁移迁移阶段 5 之前 (HCW) 可能会导致服务或客户端故障。 |
+| 建立指向全局安全令牌服务本地的 AuthServer (STS) 进行身份验证 | 这可确保对来自迁移状态（面向混合本地环境）的用户的 Exchange 可用性请求的身份验证请求进行身份验证以访问内部部署服务。 同样，这将确保对从本地到 Office 365 全局服务终结点的请求进行身份验证。 | Azure AD 迁移 (阶段 2) 完成后，本地 Exchange (混合) 拓扑的管理员必须为 Office 365 全局服务添加新的身份验证服务终结点。 通过 Exchange PowerShell 中的此命令，将 替换为 Azure Active Directory 上的 Azure 门户中的组织的 `<TenantID>` 租户 ID。<br>`New-AuthServer GlobalMicrosoftSts -AuthMetadataUrl https://accounts.accesscontrol.windows.net/<TenantId>/metadata/json/1`<br> 未能完成此任务可能会导致混合忙/闲请求无法为从 Microsoft 云德国迁移到 Office 365 服务的邮箱用户提供信息。  |
+||||
+
 ## <a name="skype-for-business-online"></a>Skype for Business Online
 
-**适用于：Skype** For Business Online 客户
+<!-- before phase 7 -->
+
+**适用于：Skype** For Business Online 客户<br>
+**应用时**：阶段 7 之前的任何时间
 
 | 步骤 (步骤)  | 说明 | 影响 |
 |:-------|:-------|:-------|
@@ -100,9 +135,11 @@ ms.locfileid: "50923834"
 | 准备最终用户和管理培训和准备过渡到 Microsoft Teams。 | 通过规划用户沟通和准备情况，成功从 Skype 过渡到 Teams。 | <ul><li>客户端需要了解新服务，以及一旦其服务转换到 Office 365 服务后如何使用。 </li><li>在客户虚域和初始域都进行了 DNS 更改后，用户将登录到 Skype for Business，并看到他们现在已迁移到 Teams。 这还会在后台下载 Teams 桌面客户端。 </li></ul>|
 ||||
 
-## <a name="mobile"></a>移动版
+## <a name="mobile-device-management"></a>移动设备管理
 
-如果你使用 MDM 解决方案的第三方移动设备 () 解决方案：
+<!-- before phase 5 -->
+**适用于：** 使用 MDM 解决方案的第三方移动设备 () 客户<br>
+**应用时**：阶段 5 之前的任何时间
 
 | 步骤 (步骤)  | 说明 | 适用于 | 影响 |
 |:-------|:-----|:-------|:-------|
@@ -112,7 +149,10 @@ ms.locfileid: "50923834"
 
 ## <a name="line-of-business-apps"></a>业务线应用
 
-如果你使用的是第三方服务或业务线 (与 Office 365) LOB 应用： 
+**适用于：** 使用业务线或 LOB (LOB) Microsoft 云德国提供终结点的应用<br>
+**应用后**：阶段 2 完成之后和阶段 9 结束之前
+
+如果使用的是与 Office 365 集成的第三方服务或业务线 (LOB) 应用，则必须解决 Microsoft 云德国实例提供的终结点上的所有依赖项。 例如，如果你的 LOB 应用连接到 `https://graph.microsoft.de/` ，则必须将 终结点更改为 `https://graph.microsoft.com/` 。 第 2 阶段Microsoft Office租户可以使用 365 全局服务终结点。
 
 | 步骤 (步骤)  | 说明 | 影响 |
 |:-------|:-------|:-------|
@@ -121,7 +161,7 @@ ms.locfileid: "50923834"
 
 ## <a name="dynamics-365"></a>Dynamics 365
 
-**适用于：** 使用 Microsoft Dynamics 的客户
+**适用于：** 使用 Microsoft Dynamics 365 的客户
 
 | 步骤 (步骤)  | 说明 | 影响 |
 |:-------|:-------|:-------|
@@ -130,31 +170,21 @@ ms.locfileid: "50923834"
 
 ## <a name="power-bi"></a>Power BI
 
-**适用于 ：** Power BI 客户 
+**适用于：** 使用 Power BI 的客户
 
 | 步骤 (步骤)  | 说明 | 影响 |
 |:-------|:-------|:-------|
 | 从 Power BI 订阅删除不会从 Power BI Microsoft 云德国迁移到 Office 365 服务的对象。 | Power BI 服务的迁移需要客户操作来删除某些项目，如数据集和仪表板。 | <ul><li>管理员可能必须删除其订阅中的以下项目： </li><li>Real-Time数据集 (，例如流式处理或推送)  </li><li>Power BI 本地数据网关配置和数据源 </li></ul>|
 ||||
 
-## <a name="dns"></a>DNS
-
-**适用于**：使用 Office 桌面客户端 (Microsoft 365 应用版、Office 365 专业增强版、Office 2019、2016、...) <br>
-在 Azure Active Directory (Azure AD 之前随时从客户拥有的 DNS) CName。 可以设置 5 分钟的 TTL，以便更改可以快速生效。
-
-## <a name="federated-identity"></a>联合身份
-
-| 步骤 (步骤)  | 说明 | 影响 |
-|:-------|:-------|:-------|
-| 向现有信赖方信任 (SSO) 单一登录的标识符，并禁用 AD FS 元数据自动更新。 | 在开始迁移之前，必须将 ID 添加到 AD FS 信赖方信任中。 为了避免意外删除信赖方标识符，请禁用元数据更新的自动更新。 <br><br> 在 AD FS 服务器上，将此命令作为单个命令行运行： <br>`Set-AdfsRelyingPartyTrust -TargetIdentifier urn:federation:microsoftonline.de -Identifier @('urn:federation:microsoftonline.de', 'https://login.microsoftonline.de/extSTS.srf', 'https://login.microsoftonline.de') -AutoUpdate $False`
-| 联合身份验证组织 | 必需操作。 在 SharePoint 9 (阶段 4 之前) 操作将导致迁移期间的服务影响。  |
-| 为全局 Azure AD 终结点生成信赖方信任。 | 客户需要手动创建依赖方信任 (RPT) [全局](https://nexus.microsoftonline-p.com/federationmetadata/2007-06/federationmetadata.xml) 终结点。 这是通过 GUI 添加新的 RPT，从而利用全局联合元数据 URL，然后使用 AD FS 帮助) 中的 [Azure AD RPT](https://adfshelp.microsoft.com/AadTrustClaims/ClaimsGenerator#:~:text=%20Azure%20AD%20RPT%20Claim%20Rules%20%201,Azure%20AD.%20This%20will%20be%20what...%20More%20) 声明规则 (生成声明规则并导入到 RPT 中来完成此操作。 | 联合身份验证组织 | 必需操作。 Inaction will result in service impact during the migration. |
-|||||
-
 ## <a name="microsoft-azure"></a>Microsoft Azure
 
 如果你正在为德国 Microsoft 云实例中的 Office 365 和 Microsoft Azure 使用相同的 Azure Active Directory 标识分区，请确保你正在准备客户驱动的 Microsoft Azure 服务迁移。
-在 Office 365 租户进入迁移阶段 3 之前，不得启动 Microsoft Azure 服务的迁移，并且必须在迁移阶段 8 完成之前完成迁移。
+
+> [!NOTE]
+> 在 Office 365 租户进入迁移阶段 3 之前，不得启动 Microsoft Azure 服务的迁移，并且必须在迁移阶段 8 完成之前完成迁移。
+
+使用 Office 365 和 Azure (例如网络、计算和存储) 的客户将执行资源到 Office 365 服务实例的迁移。 此迁移是客户的责任。 消息中心帖子将发出开始信号。 迁移必须在 Office 365 服务环境中完成 Azure AD 组织之前完成。 有关 Azure 迁移，请参阅 Azure 迁移操作手册 [（Azure 德国的迁移指南概述](https://docs.microsoft.com/azure/germany/germany-migration-main)）。
 
 | 步骤 (步骤)  | 说明 | 影响 |
 |:-------|:-------|:-------|
