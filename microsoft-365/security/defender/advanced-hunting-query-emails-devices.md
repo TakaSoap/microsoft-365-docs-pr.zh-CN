@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 60de6ed5a53a5d778f041b1c609019d110d6b64b
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: e494bfe57c31c1d5044f72a8adb3e2548d531604
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51056469"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51199145"
 ---
 # <a name="hunt-for-threats-across-devices-emails-apps-and-identities"></a>跨设备、电子邮件、应用和标识搜索威胁
 
@@ -104,7 +104,7 @@ DeviceInfo
 ## <a name="hunting-scenarios"></a>搜寻方案
 
 ### <a name="list-logon-activities-of-users-that-received-emails-that-were-not-zapped-successfully"></a>列出收到未成功删除的电子邮件的用户的登录活动
-[零时差自动清除 (ZAP ](../defender-365-security/zero-hour-auto-purge.md)) 收到恶意电子邮件后进行地址。 如果 ZAP 失败，恶意代码最终可能会运行在设备上，并且帐户会遭到入侵。 此查询将检查由 ZAP 未成功解决的电子邮件的收件人所进行登录活动。
+[零时差自动清除 (ZAP ](../office-365-security/zero-hour-auto-purge.md)) 收到恶意电子邮件后进行地址。 如果 ZAP 失败，恶意代码最终可能会运行在设备上，并且帐户会遭到入侵。 此查询将检查由 ZAP 未成功解决的电子邮件的收件人所进行登录活动。
 
 ```kusto
 EmailPostDeliveryEvents 

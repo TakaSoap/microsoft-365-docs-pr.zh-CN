@@ -14,18 +14,18 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 创建一个 Microsoft 365 环境来测试标识和设备访问情况。
-ms.openlocfilehash: e90c27edbf4ad5a78c337bf2488956ce82a1ec3e
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 5a9e9ef9ea6b8f6dc80aa7fea225f3573b8fcadc
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51051314"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51197871"
 ---
 # <a name="identity-and-device-access-for-your-microsoft-365-test-environment"></a>针对 Microsoft 365 的标识和设备访问测试环境
 
 *本测试实验室指南仅适用于 Microsoft 365 企业版测试环境。*
 
-[标识和设备访问](../security/defender-365-security/microsoft-365-policies-configurations.md) 配置是一组建议配置和条件访问策略，用于保护对与 Azure AD (Azure Active Directory 集成的所有服务) 。
+[标识和设备访问](../security/office-365-security/microsoft-365-policies-configurations.md) 配置是一组建议配置和条件访问策略，用于保护对与 Azure AD (Azure Active Directory 集成的所有服务) 。
 
 若要创建具有通用标识和设备访问配置的测试环境，请执行以下操作：
 
@@ -35,7 +35,7 @@ ms.locfileid: "51051314"
   - [PHS (密码哈希) ](phs-prereqs-m365-test-environment.md)
   - [直通身份验证 (PTA)](pta-prereqs-m365-test-environment.md)
 
-2. 使用 [通用标识和设备](../security/defender-365-security/identity-access-policies.md) 访问策略配置基于为测试环境配置的先决条件构建的策略，并探索并验证标识和设备保护。
+2. 使用 [通用标识和设备](../security/office-365-security/identity-access-policies.md) 访问策略配置基于为测试环境配置的先决条件构建的策略，并探索并验证标识和设备保护。
 
 ## <a name="see-also"></a>另请参阅
 

@@ -22,12 +22,12 @@ ms.topic: conceptual
 ms.custom: autoir
 ms.reviewer: evaldm, isco
 ms.date: 02/08/2021
-ms.openlocfilehash: 3d278c7fd06b2dd14bd9a8c0dcbe639d3c911828
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 05208dd8ba893d65db50430861ad5dd5ad9d34fb
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51053548"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51198965"
 ---
 # <a name="details-and-results-of-an-automated-investigation"></a>自动调查的详细信息和结果
 
@@ -42,7 +42,7 @@ ms.locfileid: "51053548"
 
 ## <a name="new-unified-investigation-page"></a> ("新建！) 统一调查"页
 
-最近更新了调查页面，以包含跨设备、电子邮件和协作内容的信息。 新的统一调查页面定义通用语言，并提供跨 [Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) 和 Microsoft Defender [for Office 365](../defender-365-security/defender-for-office-365.md)自动调查的统一体验。 若要访问统一调查页面，请选择你将在以下位置看到的黄色横幅中的链接：
+最近更新了调查页面，以包含跨设备、电子邮件和协作内容的信息。 新的统一调查页面定义通用语言，并提供跨 [Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) 和 Microsoft Defender [for Office 365](../office-365-security/defender-for-office-365.md)自动调查的统一体验。 若要访问统一调查页面，请选择你将在以下位置看到的黄色横幅中的链接：
 - Office 365 安全与合规中心&调查 [https://protection.office.com](https://protection.office.com) () 
 - Microsoft Defender 安全中心内的任何调查 [https://securitycenter.windows.com](https://securitycenter.windows.com) () 
 - 改进的 Microsoft 365 安全中心安全中心 () [https://security.microsoft.com](https://security.microsoft.com)

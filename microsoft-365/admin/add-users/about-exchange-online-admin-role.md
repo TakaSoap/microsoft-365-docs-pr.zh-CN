@@ -21,12 +21,12 @@ search.appverid:
 - GEA150
 ms.assetid: 097ae285-c4af-4319-9770-e2559d66e4c8
 description: 'Exchange Online 管理员管理组织的电子邮件和邮箱。 例如，他们恢复用户邮箱中的已删除项目。 '
-ms.openlocfilehash: 5b63f2b0a58fdce75e5d70e329b8a0d02fb94a1a
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 4dc1f435571650ae4a805198782c3c24a92024fb
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51050966"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51197645"
 ---
 # <a name="about-the-exchange-online-admin-role"></a>关于 Exchange Online 管理员角色
 
@@ -48,7 +48,7 @@ ms.locfileid: "51050966"
 
 - [创建共享邮箱](../email/create-a-shared-mailbox.md) ，以便一组人员可以从公用电子邮件地址监视和发送电子邮件。
 
-- [组织的电子邮件反垃圾邮件](https://docs.microsoft.com/microsoft-365/security/defender-365-security/anti-spam-protection) 保护和恶意软件筛选器。
+- [组织的电子邮件反垃圾邮件](https://docs.microsoft.com/microsoft-365/security/office-365-security/anti-spam-protection) 保护和恶意软件筛选器。
 
 - 管理 Microsoft 365 组
 

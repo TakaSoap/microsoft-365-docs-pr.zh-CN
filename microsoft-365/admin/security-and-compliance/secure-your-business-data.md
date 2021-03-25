@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: de2da300-dbb6-4725-bb12-b85a9d296e75
 description: '保护你的业务电子邮件和数据免受网络威胁，包括勒索软件、网络钓鱼和恶意附件。 '
-ms.openlocfilehash: 7affa7a2adaa166861c2932ebe32177335236114
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: e45130d101c6e730fd2d487f5f8898c7cd268ab8
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51050674"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51197847"
 ---
 # <a name="top-10-ways-to-secure-microsoft-365-for-business-plans"></a>保护 Microsoft 365 商业版计划的十大方法
 
@@ -132,7 +132,7 @@ Microsoft 365 环境包括恶意软件防护，但您可以通过阻止包含恶
 
 6. 选择 **"保存"。**
 
-有关详细信息，请参阅 EOP 中的反 [恶意软件保护](https://docs.microsoft.com/microsoft-365/security/defender-365-security/anti-malware-protection)。
+有关详细信息，请参阅 EOP 中的反 [恶意软件保护](https://docs.microsoft.com/microsoft-365/security/office-365-security/anti-malware-protection)。
 
 ## <a name="5-protect-against-ransomware"></a>5：防范勒索软件
 <a name="ransomware"> </a>
@@ -159,7 +159,7 @@ Microsoft 365 环境包括恶意软件防护，但您可以通过阻止包含恶
 
 6. 选择“**保存**”。
     
-| Setting | 在打开 Office 文件的附件之前警告用户 | 阻止可能包含勒索软件或其他恶意代码的文件类型 |
+| 设置 | 在打开 Office 文件的附件之前警告用户 | 阻止可能包含勒索软件或其他恶意代码的文件类型 |
 |:-----|:-----|:-----|
 |名称  <br/> |反勒索软件规则：警告用户  <br/> |反勒索软件规则：阻止文件类型  <br/> |
 |在 中应用此规则。 . .  <br/> |任何附件 。 . . 文件扩展名匹配 。 . .  <br/> |任何附件 。 . . 文件扩展名匹配 。 . .  <br/> |
@@ -195,7 +195,7 @@ Microsoft 365 环境包括恶意软件防护，但您可以通过阻止包含恶
 
 6. 选择“**保存**”。
 
-|Setting|拒绝自动将电子邮件转发到外部域|
+|设置|拒绝自动将电子邮件转发到外部域|
 |---|---|
 |名称|阻止电子邮件自动转发到外部域|
 |如果 ...|发件人 。 . . 是外部/内部 。 . . 组织内部|
@@ -254,7 +254,7 @@ Office 邮件加密在发送邮件时提供两种保护选项：
 
 4. 在"防钓鱼"页面上，选择 **"+ 创建"。** 向导将启动，可分步定义防钓鱼策略。
 
-5. 指定策略的名称、说明和设置，如下图所示。 有关 [更多详细信息，请参阅了解 Microsoft Defender for Office 365](https://docs.microsoft.com/microsoft-365/security/defender-365-security/set-up-anti-phishing-policies) 选项中的防钓鱼策略。
+5. 指定策略的名称、说明和设置，如下图所示。 有关 [更多详细信息，请参阅了解 Microsoft Defender for Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-anti-phishing-policies) 选项中的防钓鱼策略。
 
 6. 查看设置后，选择"创建 **此策略"或** " **保存**"（如果适用）。
 
@@ -270,7 +270,7 @@ Office 邮件加密在发送邮件时提供两种保护选项：
 |应用于|选择“收件人域为”。 在“以下任何项”中，选择“选择”。 选择“+ 添加”。 选中域名称旁边的复选框，例如，contoso.com，再选择"添加 **"。** 选择“**完成**”。|
 |
 
-有关详细信息，请参阅在 [Defender for Office 365](https://docs.microsoft.com/microsoft-365/security/defender-365-security/configure-atp-anti-phishing-policies)中设置防钓鱼策略。
+有关详细信息，请参阅在 [Defender for Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-atp-anti-phishing-policies)中设置防钓鱼策略。
 
 ## <a name="9-protect-against-malicious-attachments-and-files-with-safe-attachments"></a>9：防范恶意附件和带安全附件的文件
 <a name="atp"> </a>
@@ -302,7 +302,7 @@ Office 邮件加密在发送邮件时提供两种保护选项：
 |应用于|收件人域为 。 . . 选择你的域。|
 |
 
-有关详细信息，请参阅在 [Defender for Office 365](https://docs.microsoft.com/microsoft-365/security/defender-365-security/configure-atp-anti-phishing-policies)中设置防钓鱼策略。
+有关详细信息，请参阅在 [Defender for Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-atp-anti-phishing-policies)中设置防钓鱼策略。
 
 ## <a name="10-protect-against-phishing-attacks-with-safe-links"></a>10：使用安全链接抵御网络钓鱼攻击
 <a name="phishingatp"> </a>
@@ -349,4 +349,4 @@ Office 邮件加密在发送邮件时提供两种保护选项：
 |应用于|收件人域为 。 . . 选择你的域。|
 |
 
-有关详细信息，请参阅 [Microsoft Defender for Office 365 中的安全链接](https://docs.microsoft.com/microsoft-365/security/defender-365-security/atp-safe-links)。
+有关详细信息，请参阅 [Microsoft Defender for Office 365 中的安全链接](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-safe-links)。

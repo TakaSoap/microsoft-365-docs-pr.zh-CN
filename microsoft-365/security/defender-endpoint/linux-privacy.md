@@ -16,19 +16,19 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 34a06a964baa475c5dedd019e40a6e31e44c0dd9
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: b56e8a74875b3377b6f3228bbefb339680dbc6e1
+ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51055826"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51187777"
 ---
 # <a name="privacy-for-microsoft-defender-for-endpoint-for-linux"></a>适用于 Linux 的 Microsoft Defender 终结点的隐私
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **适用于：**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > 想要体验适用于终结点的 Defender？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)

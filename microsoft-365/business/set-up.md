@@ -30,12 +30,12 @@ search.appverid:
 - MET150
 ms.assetid: 6e7a2dfd-8ec4-4eb7-8390-3ee103e5fece
 description: 了解 Microsoft 365 商业高级版设置步骤，包括添加域和用户、设置安全策略等。
-ms.openlocfilehash: 4d49ba7ccdb65691756aaa505d0856deb115595b
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: a06fb48ef5e1386a5c7b4df08500125f37943df6
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51052226"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51198423"
 ---
 # <a name="set-up-microsoft-365-business-premium-in-the-setup-wizard"></a>在设置向导中设置 Microsoft 365 商业高级版
 
@@ -107,7 +107,7 @@ ms.locfileid: "51052226"
 
 在向导中设置的策略将自动应用于名为 ["](/office365/admin/create-groups/compare-groups#security-groups) 所有用户" *的安全组*。 还可以创建其他组，以在管理中心向分配策略。
 
-1. 在" **增强对高级网络** 威胁的保护"上，建议接受默认设置，让 [Office 365 高级](../security/defender-365-security/defender-for-office-365.md) 威胁防护扫描 Office 应用中的文件和链接。
+1. 在" **增强对高级网络** 威胁的保护"上，建议接受默认设置，让 [Office 365 高级](../security/office-365-security/defender-for-office-365.md) 威胁防护扫描 Office 应用中的文件和链接。
 
     !["增强保护"页面的屏幕截图。](../media/increasetreatprotection.png)
 

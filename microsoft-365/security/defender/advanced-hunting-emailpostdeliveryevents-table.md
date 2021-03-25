@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 25f1a177571862e92c502b584bbd51801141069a
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 8940d1dd370f804f8539bf4e753b1112d3c8d3bf
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51056558"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51198193"
 ---
 # <a name="emailpostdeliveryevents"></a>EmailPostDeliveryEvents
 
@@ -48,9 +48,9 @@ ms.locfileid: "51056558"
 | `NetworkMessageId` | string | 由 Microsoft 365 生成的电子邮件的唯一标识符 |
 | `InternetMessageId` | string | 发送电子邮件系统设置的电子邮件的面向公众的标识符 |
 | `Action` | string | 对实体采取的操作 |
-| `ActionType` | string | 触发事件的活动类型：手动修正、钓鱼邮件 ZAP、恶意软件 ZAP |
-| `ActionTrigger` | string | 指示操作是由管理员手动触发 (还是通过审批挂起的自动操作) 触发，还是由某些特殊机制（如 ZAP 或动态传递）触发 |
-| `ActionResult` | string | 操作结果 |
+| `ActionType` | 字符串 | 触发事件的活动类型：手动修正、钓鱼邮件 ZAP、恶意软件 ZAP |
+| `ActionTrigger` | 字符串 | 指示操作是由管理员手动触发 (还是通过审批挂起的自动操作) 触发，还是由某些特殊机制（如 ZAP 或动态传递）触发 |
+| `ActionResult` | 字符串 | 操作结果 |
 | `RecipientEmailAddress` | string | 收件人的电子邮件地址，或通讯组列表扩展后收件人的电子邮件地址 |
 | `DeliveryLocation` | string | 发送电子邮件的位置：收件箱/文件夹、本地/外部、垃圾箱、隔离区、已失败、已弃用、已删除的邮件 |
 | `ReportId` | long | 基于重复计数器的事件标识符。 若要标识唯一事件，此列必须与 DeviceName 和 Timestamp 列一起使用。 |
@@ -58,8 +58,8 @@ ms.locfileid: "51056558"
 ## <a name="supported-event-types"></a>支持的事件类型
 此表捕获具有以下值 `ActionType` 的事件：
 
-- **手动** 修正 – 管理员在将电子邮件传递到用户邮箱后对电子邮件手动采取操作。 这包括通过威胁资源管理器手动 [采取的](../defender-365-security/threat-explorer.md) 操作，或者 AIR ([自动](m365d-autoir-actions.md)调查和) 批准。
-- **钓鱼邮件 ZAP** [– 零时差自动清除 (ZAP](../defender-365-security/zero-hour-auto-purge.md)) 对发送后对网络钓鱼电子邮件采取操作。
+- **手动** 修正 – 管理员在将电子邮件传递到用户邮箱后对电子邮件手动采取操作。 这包括通过威胁资源管理器手动 [采取的](../office-365-security/threat-explorer.md) 操作，或者 AIR ([自动](m365d-autoir-actions.md)调查和) 批准。
+- **钓鱼邮件 ZAP** [– 零时差自动清除 (ZAP](../office-365-security/zero-hour-auto-purge.md)) 对发送后对网络钓鱼电子邮件采取操作。
 - **恶意软件 ZAP** – 零时差自动清除 (ZAP) 对在传递后发现包含恶意软件的电子邮件采取操作。
 
 ## <a name="related-topics"></a>相关主题

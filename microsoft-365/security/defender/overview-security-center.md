@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid: met150
 ms.custom: seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: 3b2e5d834caab9973006eda64e369a2a6aa17b5d
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 142bc305950f9322c90e0d207f255c14abbc6b8c
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51163311"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51197929"
 ---
 # <a name="the-unified-microsoft-365-security-center-overview"></a>统一 Microsoft 365 安全中心概述
 
@@ -36,7 +36,7 @@ ms.locfileid: "51163311"
 
 - [Microsoft 365 Defender](microsoft-365-defender.md)
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft Defender for Office 365](/microsoft-365/security/defender-365-security/defender-for-office-365)
+- [Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/defender-for-office-365)
 
 > 想要体验 Microsoft 365 Defender？ 可以在[实验室环境中评估它或在](m365d-evaluation.md?ocid=cx-docs-MTPtriallab)[生产中运行你的试验项目](m365d-pilot.md?ocid=cx-evalpilot)。
 
@@ -44,7 +44,7 @@ ms.locfileid: "51163311"
 
 Microsoft 365 安全中心将现有 Microsoft 安全门户（如 Microsoft Defender 安全中心和 Office 365 安全与合规中心）&功能。 安全中心强调快速访问信息、简化布局以及将相关信息汇集在一起以便于使用。 此中心包括：
 
-- **[Microsoft Defender for Office 365](/microsoft-365/security/defender-365-security/defender-for-office-365)** Microsoft Defender for Office 365 通过一组保护电子邮件和 Office 365 资源的预防、检测、调查和搜寻功能帮助组织保护其企业。
+- **[Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/defender-for-office-365)** Microsoft Defender for Office 365 通过一组保护电子邮件和 Office 365 资源的预防、检测、调查和搜寻功能帮助组织保护其企业。
 - **[Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/microsoft-defender-advanced-threat-protection)** 为贵组织的设备提供预防性保护、攻破后检测、自动调查和响应。
 - **[Microsoft 365 Defender](microsoft-365-defender.md)** 是 Microsoft 扩展检测和响应 *(* XDR) 解决方案的一部分，该解决方案利用 Microsoft 365 安全项目组合自动分析跨域的威胁数据，并生成单个仪表板上攻击的图片。
 
@@ -103,7 +103,7 @@ Microsoft 365 安全中心在将 Microsoft Defender for Office 365 和 Microsoft
 
 !["&角色"页显示终结点角色&组、角色和设备组。](../../media/converged-roles-5.png)
 
- 访问 Microsoft 365 安全中心使用 Azure Active Directory 全局角色或自定义角色进行配置。 对于适用于终结点的 Defender，请参阅 [分配用户对 Microsoft Defender 安全中心的访问权限](/microsoft-365/security/defender-endpoint/assign-portal-access)。 对于适用于 Office 365 的 Defender，请参阅 [Microsoft 365 合规中心和 Microsoft 365 安全中心中的权限](../defender-365-security/permissions-microsoft-365-compliance-security.md)。
+ 访问 Microsoft 365 安全中心使用 Azure Active Directory 全局角色或自定义角色进行配置。 对于适用于终结点的 Defender，请参阅 [分配用户对 Microsoft Defender 安全中心的访问权限](/microsoft-365/security/defender-endpoint/assign-portal-access)。 对于适用于 Office 365 的 Defender，请参阅 [Microsoft 365 合规中心和 Microsoft 365 安全中心中的权限](../office-365-security/permissions-microsoft-365-compliance-security.md)。
 
 - 详细了解如何管理对 [Microsoft 365 Defender 的访问权限](m365d-permissions.md)
 - 详细了解如何在 Microsoft 365 [安全中心](custom-roles.md) 创建自定义角色
@@ -179,7 +179,7 @@ Microsoft 365 安全中心包括一个学习中心，从 Microsoft 安全博客�
 - [跨设备、电子邮件、应用和标识搜索威胁](./advanced-hunting-query-emails-devices.md)
 - [自定义检测规则](./custom-detection-rules.md)
 - [电子邮件和协作警报](../../compliance/alert-policies.md#default-alert-policies)
-- [创建网络钓鱼攻击模拟](../defender-365-security/attack-simulation-training.md)[并创建用于培训团队的有效负载](/microsoft-365/security/defender-365-security/attack-simulation-training-payloads)
+- [创建网络钓鱼攻击模拟](../office-365-security/attack-simulation-training.md)[并创建用于培训团队的有效负载](/microsoft-365/security/office-365-security/attack-simulation-training-payloads)
  
 ### <a name="related-information"></a>相关信息
 - [Microsoft 365 安全中心](overview-security-center.md)

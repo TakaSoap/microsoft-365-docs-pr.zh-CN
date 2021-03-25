@@ -17,12 +17,12 @@ ms.assetid: dc4f704c-6fcc-4cab-9a02-95a824e4fb57
 description: 此登录页提供了 Office 365 中安全性和合规性的链接和规划信息。
 ms.collection: M365-security-compliance
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 90f4083bdf38f4b1390ee31d0853ad65e3fe236f
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 3e5e0f5f13511e0890a69c48ab7738f2b1ebab60
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51051704"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51198055"
 ---
 # <a name="plan-for-security-amp-compliance"></a>规划安全 &amp; 合规性
 
@@ -46,7 +46,7 @@ ms.locfileid: "51051704"
   
 - [保护对 Office 365 数据和服务的访问](protect-access-to-data-and-services.md)
     
-- [保护电子邮件策略和配置](../security/defender-365-security/secure-email-recommended-policies.md)
+- [保护电子邮件策略和配置](../security/office-365-security/secure-email-recommended-policies.md)
     
 [PDF](https://go.microsoft.com/fwlink/p/?linkid=841656) | [Visio](https://go.microsoft.com/fwlink/p/?linkid=841657) | [更多语言](https://www.microsoft.com/download/details.aspx?id=55032)
   
@@ -62,15 +62,15 @@ ms.locfileid: "51051704"
   
 - [转到安全 &amp; 与合规中心](./microsoft-365-compliance-center.md)
     
-- [安全与合规中心 &amp; 内的权限](~/security/defender-365-security/protect-against-threats.md)
+- [安全与合规中心 &amp; 内的权限](~/security/office-365-security/protect-against-threats.md)
     
-- [向用户授予对安全 &amp; 与合规中心的访问权限](~/security/defender-365-security/grant-access-to-the-security-and-compliance-center.md)
+- [向用户授予对安全 &amp; 与合规中心的访问权限](~/security/office-365-security/grant-access-to-the-security-and-compliance-center.md)
     
 ## <a name="step-6-use-end-to-end-security-scenarios-as-starting-points"></a>步骤 6：使用端到端安全方案作为起点
 
 使用这些建议的配置作为企业规模或复杂的访问安全方案的起点。
   
-- [保护电子邮件策略和配置](../security/defender-365-security/secure-email-recommended-policies.md)
+- [保护电子邮件策略和配置](../security/office-365-security/secure-email-recommended-policies.md)
     
 - [Microsoft 云中的 Contoso](../enterprise/contoso-case-study.md)
     

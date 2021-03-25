@@ -22,12 +22,12 @@ ms.topic: how-to
 ms.custom: autoir
 ms.reviewer: evaldm, isco
 ms.technology: m365d
-ms.openlocfilehash: 8658b08f0d3948d6d23486ec885486e8bbfdf273
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 851fd05f0fec4b8d113e515783092eed0114db0f
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51053549"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51199109"
 ---
 # <a name="handle-false-positivesnegatives-in-automated-investigation-and-response-capabilities"></a>处理自动调查和响应功能中的误报/负面影响
 
@@ -48,14 +48,14 @@ ms.locfileid: "51053549"
 
 |未接或检测错误的项目 |服务  |需执行的操作  |
 |---------|---------|---------|
-|- 电子邮件 <br/>- 电子邮件附件 <br/>- 电子邮件中的 URL<br/>- Office 文件的 URL      |[Microsoft Defender for Office 365](/microsoft-365/security/defender-365-security/defender-for-office-365)        |[将可疑的垃圾邮件、网络钓鱼、URL 和文件提交给 Microsoft 进行扫描](../defender-365-security/admin-submission.md)         |
+|- 电子邮件 <br/>- 电子邮件附件 <br/>- 电子邮件中的 URL<br/>- Office 文件的 URL      |[Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/defender-for-office-365)        |[将可疑的垃圾邮件、网络钓鱼、URL 和文件提交给 Microsoft 进行扫描](../office-365-security/admin-submission.md)         |
 |设备上的文件或应用    |[Microsoft Defender for Endpoint](/windows/security/threat-protection)         |[将文件提交给 Microsoft 进行恶意软件分析](https://www.microsoft.com/wdsi/filesubmission)         |
 
 ## <a name="adjust-an-alert-to-prevent-false-positives-from-recurring"></a>调整警报以防止误报重复发生
 
 |方案 |服务 |需执行的操作 |
 |--------|--------|--------|
-|- 通过合法使用触发警报 <br/>- 警报不准确    |[Microsoft Cloud App Security](/cloud-app-security)<br/> 或 <br/>[Azure 高级威胁检测](/azure/security/fundamentals/threat-detection)         |[在云应用安全门户中管理警报](/cloud-app-security/managing-alerts)         |
+|- 通过合法使用触发警报 <br/>- 警报不准确    |[Microsoft Cloud App Security](/cloud-app-security)<br/> 或者 <br/>[Azure 高级威胁检测](/azure/security/fundamentals/threat-detection)         |[在云应用安全门户中管理警报](/cloud-app-security/managing-alerts)         |
 |文件、IP 地址、URL 或域在设备上被视为恶意软件，即使安全|[Microsoft Defender for Endpoint](/windows/security/threat-protection) |[使用"允许"操作创建自定义指示器](/windows/security/threat-protection/microsoft-defender-atp/manage-indicators) |
 
 ## <a name="undo-a-remediation-action-that-was-taken-on-a-device"></a>撤消在设备上采取的修正操作

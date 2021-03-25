@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 0902dce0af3c101cbaf7ff526beb71e9f46a1bf4
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 434c318be404ffb04cac7a05664c8f001bb46507
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51187513"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51198857"
 ---
 # <a name="deploy-supported-services"></a>部署支持的服务
 
@@ -78,7 +78,7 @@ Microsoft 365 E5、E5 安全、A5 或 A5 安全许可证或有效的许可证组
 | 服务 | 设置说明 | 初始配置 |
 | ------ | ------ | ------ |
 | Microsoft Defender for Endpoint | [Microsoft Defender for Endpoint 部署指南](../defender-endpoint/deployment-phases.md) | *请参阅预配说明* |
-|Microsoft Defender for Office 365 | *无，使用 Office 365 预配* | [配置 Microsoft Defender for Office 365 策略](/microsoft-365/security/defender-365-security/defender-for-office-365#configure-atp-policies) |
+|Microsoft Defender for Office 365 | *无，使用 Office 365 预配* | [配置 Microsoft Defender for Office 365 策略](/microsoft-365/security/office-365-security/defender-for-office-365#configure-atp-policies) |
 | Microsoft Defender for Identity | [快速入门：创建 Microsoft Defender for Identity 实例](/azure-advanced-threat-protection/install-atp-step1) | *请参阅预配说明* |
 | Microsoft Cloud App Security | *无* | [快速入门：Microsoft Cloud App Security 入门](/cloud-app-security/getting-started-with-cloud-app-security) |
 
@@ -89,6 +89,6 @@ Microsoft 365 E5、E5 安全、A5 或 A5 安全许可证或有效的许可证组
 - [Microsoft 365 Defender 概述](microsoft-365-defender.md)
 - [打开 Microsoft 365 Defender](m365d-enable.md)
 - [Microsoft Defender for Endpoint 概述](../defender-endpoint/microsoft-defender-endpoint.md)
-- [Microsoft Defender for Office 365 概述](../defender-365-security/defender-for-office-365.md)
+- [Microsoft Defender for Office 365 概述](../office-365-security/defender-for-office-365.md)
 - [Microsoft Cloud App Security 概述](/cloud-app-security/what-is-cloud-app-security)
 - [Microsoft Defender for Identity 概述](/azure-advanced-threat-protection/what-is-atp)

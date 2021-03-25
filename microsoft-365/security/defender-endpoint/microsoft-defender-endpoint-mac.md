@@ -2,7 +2,7 @@
 title: 适用于 Mac 的 Microsoft Defender ATP
 ms.reviewer: ''
 description: 了解如何安装、配置、更新和使用 Microsoft Defender for Endpoint for Mac。
-keywords: microsoft， defender， atp， mac， 安装， 部署， 卸载， intune， jamf， macos， catalina， mojave， high sierra
+keywords: microsoft， defender， atp， mac， 安装， 部署， 卸载， intune， jamf， macos， big sur， catalina， mojave
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 6af8a6e0e23201f3c5861cb6a28b2bffa0f04ea4
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 34150088379445d66006c757b2c8ea607865bf4c
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51186433"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51198989"
 ---
 # <a name="microsoft-defender-for-endpoint-for-mac"></a>Microsoft Defender for Endpoint for Mac
 
@@ -80,9 +80,9 @@ ms.locfileid: "51186433"
 > 在 macOS 11 (Sur) 上，Microsoft Defender for Endpoint 需要额外的配置文件。 如果你是从 macOS 早期版本升级的现有客户，请确保部署 [macOS Catalina](mac-sysext-policies.md)的新配置文件和较新版本的 macOS 中列出的其他配置文件。
 
 > [!IMPORTANT]
-> 对 MacOS 10.13 (High Sierra) 将于 2021 年 2 月 15 日停止提供支持。
+> 截至 2021 年 2 月 15 (对) MacOS 10.13) 的支持已终止。
 
-- 11 (大) ，10.15 (加泰罗尼亚语) ，10.14 (Mojave) ，10.13 (High Sierra) 
+- 11 (大) ，10.15 (加泰罗尼亚语) ，10.14 (Mojave) 
 - 磁盘空间：1GB
 
 不支持 macOS 的 Beta 版本。

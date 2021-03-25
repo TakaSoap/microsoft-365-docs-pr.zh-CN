@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 08dd8a3ff5f0b55d7fec8decd41f1120ca05077a
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 7196053ffef3dffc3c737d0df26a5d12bdfe8a4c
+ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51055824"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51187753"
 ---
 # <a name="resources"></a>资源
 
@@ -32,7 +32,7 @@ ms.locfileid: "51055824"
 
 
 **适用于：**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > 想要体验适用于终结点的 Defender？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
@@ -120,8 +120,8 @@ ms.locfileid: "51055824"
 |配置         |打开 PUA 保护                                  |`mdatp threat policy set --type potentially_unwanted_application --action block` |
 |配置         |关闭 PUA 保护                                 |`mdatp threat policy set --type potentially_unwanted_application --action off` |
 |配置         |打开 PUA 保护的审核模式                   |`mdatp threat policy set --type potentially_unwanted_application --action audit` |
-|Diagnostics           |更改日志级别                                    |`mdatp log level set --level verbose [error|warning|info|verbose]`     |
-|Diagnostics           |生成诊断日志                                |`mdatp diagnostic create --path [directory]`                           |
+|诊断           |更改日志级别                                    |`mdatp log level set --level verbose [error|warning|info|verbose]`     |
+|诊断           |生成诊断日志                                |`mdatp diagnostic create --path [directory]`                           |
 |健康                |检查产品的运行状况                              |`mdatp health`                                                         |
 |Protection            |扫描路径                                             |`mdatp scan custom --path [path] [--ignore-exclusions]`                |
 |Protection            |执行快速扫描                                         |`mdatp scan quick`                                                     |

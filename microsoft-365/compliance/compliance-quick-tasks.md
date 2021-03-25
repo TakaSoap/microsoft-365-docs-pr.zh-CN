@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-compliance
 localization_priority: Normal
 description: 了解可帮助你快速开始使用 Microsoft 365 中的合规性的任务。
-ms.openlocfilehash: b8a6f98a38dcb6096287cbc2389648c0e7457e5c
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 503e15c8b363dcd63c010d31384565f6e1a8af61
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51052100"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51197919"
 ---
 # <a name="quick-tasks-for-getting-started-with-microsoft-365-compliance"></a>Microsoft 365 合规性入门快速任务
 
@@ -34,7 +34,7 @@ ms.locfileid: "51052100"
 
 首先，向组织人员分配合规性权限，以便他们可以执行这些任务，并防止未经授权的人员访问其职责之外的区域。 在开始配置和实施 Microsoft 365 中包含的合规性解决方案之前，需要确保向合规性数据管理员和合规性管理员管理员角色分配合适的人员。 你还需要将用户分配到 Azure Active Directory 全局读者角色，以查看合规性管理器中的数据。
 
-有关配置权限和将人员分配给管理员角色的分步指南，请参阅安全与合规中心& [权限](../security/defender-365-security/permissions-in-the-security-and-compliance-center.md)。
+有关配置权限和将人员分配给管理员角色的分步指南，请参阅安全与合规中心& [权限](../security/office-365-security/permissions-in-the-security-and-compliance-center.md)。
 
 ## <a name="task-2-know-your-state-of-compliance"></a>任务 2：了解合规性状态
 
@@ -49,7 +49,7 @@ ms.locfileid: "51052100"
 >
 >检查 [Microsoft 365](../security/defender/microsoft-secure-score.md) 安全中心中的 Microsoft 365 安全分数，并完成以下文章中概述的任务：
 >
-> - [安全路线图 - 前 30 天、前 90 天及以后的首要任务](../security/defender-365-security/security-roadmap.md)
+> - [安全路线图 - 前 30 天、前 90 天及以后的首要任务](../security/office-365-security/security-roadmap.md)
 > - [支持在家工作的安全团队的 12 大任务](../security/top-security-tasks-for-remote-work.md)
 
 ## <a name="task-3-enable-auditing-for-your-organization"></a>任务 3：为组织启用审核

@@ -19,12 +19,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: f0e0bf29068bea0f213f8b00403213969f5b9106
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: dada110faca71c9e8fcf384eb5bb0a78faefaad9
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51056080"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51199133"
 ---
 # <a name="prepare-your-microsoft-365-defender-trial-lab-or-pilot-environment"></a>准备 Microsoft 365 Defender 试用实验室或试验环境
 
@@ -85,10 +85,10 @@ ms.locfileid: "51056080"
 4. 导航到 **快速设置**。
 ![快速设置页面的图像](../../media/mtp-eval-4.png) <br>
 
-5. 输入全局管理员凭据。 单击“**下一步**”。
+5. 输入全局管理员凭据。 单击"下一步"。
 ![连接到 Azure AD 页面的图像，应在其中输入全局管理员凭据](../../media/mtp-eval-5.png) <br>
 
-6. 输入 Active Directory 域服务企业管理员凭据。 单击“**下一步**”。
+6. 输入 Active Directory 域服务企业管理员凭据。 单击"下一步"。
 ![连接到 AD DS 页面的图像，应在其中输入凭据](../../media/mtp-eval-6.png) <br>
 
 7. 单击 **"安装** "以确认配置。
@@ -105,7 +105,7 @@ ms.locfileid: "51056080"
 
 | 组件                               | 说明                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              | 配置顺序排名 |
 |-----------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------|
-|Microsoft Defender for Office 365|Microsoft Defender for Office 365 可保护你的组织免受电子邮件、链接 (URL) 和协作工具带来的恶意威胁。 <br> [了解更多信息。](/microsoft-365/security/defender-365-security/defender-for-office-365)                                                                                                                                                                                                                                             | 1                   |
+|Microsoft Defender for Office 365|Microsoft Defender for Office 365 可保护你的组织免受电子邮件、链接 (URL) 和协作工具带来的恶意威胁。 <br> [了解更多信息。](/microsoft-365/security/office-365-security/defender-for-office-365)                                                                                                                                                                                                                                             | 1                   |
 |Microsoft Defender for Identity|Microsoft Defender for Identity 使用 Active Directory 信号来识别、检测和调查针对你的组织的高级威胁、泄露的身份和恶意预览体验成员操作。 <br> [了解详细信息](/azure-advanced-threat-protection/)。| 2 |
 |Microsoft Cloud App Security| Microsoft Cloud App Security 是 CASB (在) 云中操作的云访问安全代理。 它提供了丰富的可见性、控制数据传输和复杂的分析，以识别和防御所有云服务中的网络威胁。 <br> [了解详细信息](/cloud-app-security/)。                                                                                                                                                                                                                                                                                                                                                                       |3                   |
 |Microsoft Defender for Endpoint | 用于终结点检测和响应的 Microsoft Defender 提供了几乎实时和可操作的高级攻击检测。 安全分析员可以有效地确定警报的优先级，了解整个泄露范围，并采取响应措施来修正威胁。 <br> [了解更多信息。](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)                                     |4                    |                                                                                                                                                                                                                                    

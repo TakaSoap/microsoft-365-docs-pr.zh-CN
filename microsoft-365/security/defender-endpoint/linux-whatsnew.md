@@ -18,16 +18,22 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 43324b0f3a0d5d351d7164bb05415899bf7d181c
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: dc3d775aced2ea3da42312cbf5a4d5e5af9fae50
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51055005"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51198773"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-for-linux"></a>适用于 Linux 的 Microsoft Defender 终结点的新增功能
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+## <a name="1012364-30121021123640"></a>101.23.64 (30.121021.12364.0) 
+
+- 针对将整个装入点添加到防病毒排除列表的情况的性能改进。 在此版本之前，源自装入点的文件活动仍由产品进行处理。 从此版本开始，将禁止排除装入点的文件活动，从而提升产品性能
+- 向命令行工具添加了一个新选项，用于查看有关上次按需扫描的信息。 若要查看有关上次按需扫描的信息，请运行 `mdatp health --details antivirus`
+- Bug 修复&性能改进
 
 ## <a name="1011853"></a>101.18.53
 

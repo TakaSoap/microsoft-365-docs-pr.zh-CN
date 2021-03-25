@@ -14,12 +14,12 @@ ms.collection: M365-security-compliance
 ms.custom: Ent_TLGs
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
 description: 使用此测试实验室指南启用 Microsoft 365 企业版测试环境的其他 Microsoft 365 安全设置。
-ms.openlocfilehash: 186452396af4227a94a7f6cd0fa0109e9d6a7e17
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: d1bff8b736e5074f621a173d206f7c5f77841b25
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51051266"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51198347"
 ---
 # <a name="increased-microsoft-365-security-for-your-microsoft-365-for-enterprise-test-environment"></a>为 Microsoft 365 企业版测试环境增强 Microsoft 365 安全性
 
@@ -47,7 +47,7 @@ ms.locfileid: "51051266"
 
 ### <a name="configure-sharepoint-online-to-block-apps-that-dont-support-modern-authentication"></a>配置 SharePoint Online 以阻止不支持新式验证的应用
 
-不支持新式身份验证的应用无法应用 [标识](../security/defender-365-security/microsoft-365-policies-configurations.md) 和设备访问配置，这是保护 Microsoft 365 订阅及其数字资产的重要元素。 
+不支持新式身份验证的应用无法应用 [标识](../security/office-365-security/microsoft-365-policies-configurations.md) 和设备访问配置，这是保护 Microsoft 365 订阅及其数字资产的重要元素。 
 
 1. 转到 Microsoft 365 管理中心 () 全局管理员帐户登录 [https://portal.microsoft.com](https://portal.microsoft.com) Microsoft 365 测试实验室订阅。
     
@@ -77,7 +77,7 @@ ms.locfileid: "51051266"
 
 "恶意软件"包括病毒和间谍软件。 "病毒"会感染其他程序与数据，且会在整个计算机中寻找程序进行感染。 “间谍软件”指收集您的个人信息（如登录信息和个人数据），并将其发送给恶意软件作者的恶意软件。 
 
-Microsoft 365 具有内置的恶意软件和垃圾邮件筛选功能，可帮助保护入站和出站邮件免受恶意软件的攻击，并保护您免受垃圾邮件的侵害。 有关详细信息，请参阅 [反垃圾邮件&反恶意软件保护](../security/defender-365-security/anti-spam-and-anti-malware-protection.md)。
+Microsoft 365 具有内置的恶意软件和垃圾邮件筛选功能，可帮助保护入站和出站邮件免受恶意软件的攻击，并保护您免受垃圾邮件的侵害。 有关详细信息，请参阅 [反垃圾邮件&反恶意软件保护](../security/office-365-security/anti-spam-and-anti-malware-protection.md)。
 
 为确保对具有常见附件文件类型的文件执行反恶意软件处理：
 
@@ -100,7 +100,7 @@ Microsoft 365 中的威胁管理可帮助您控制和管理对组织数据的移
 
 仔细查看仪表板上的所有卡片，以熟悉提供的信息。
 
-有关详细信息，请参阅安全 [仪表板](../security/defender-365-security/security-dashboard.md)。
+有关详细信息，请参阅安全 [仪表板](../security/office-365-security/security-dashboard.md)。
 
 
 ## <a name="phase-4-examine-microsoft-secure-score"></a>阶段 4：检查 Microsoft 安全分数
