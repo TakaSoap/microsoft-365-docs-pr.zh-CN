@@ -1,6 +1,6 @@
 ---
 title: Microsoft Defender 终结点服务问题疑难解答
-description: 查找解决方案并解决已知问题，如尝试访问服务时出现的服务器错误。
+description: 查找已知问题（如尝试访问服务时的服务器错误）的解决方案和解决方法。
 keywords: microsoft defender for endpoint 疑难解答， Windows ATP 疑难解答， 服务器错误， 访问被拒绝， 凭据无效， 无数据， 仪表板门户， 允许， 事件查看器
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -16,19 +16,19 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: bd211a56ee9ed6aa871c8d55149247a4755bc863
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 112f682836da37ddfb51c103282518ff74563727
+ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51055609"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51186013"
 ---
 # <a name="troubleshoot-service-issues"></a>解决服务问题
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **适用于：**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > 想要体验适用于终结点的 Defender？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-pullalerts-abovefoldlink) 
@@ -41,7 +41,7 @@ ms.locfileid: "51055609"
 配置浏览器以允许 Cookie。
 
 ## <a name="elements-or-data-missing-on-the-portal"></a>门户上缺少的元素或数据
-如果 Microsoft Defender 安全中心上缺少某些 UI 元素或数据，则代理设置可能会阻止它。
+如果 Microsoft Defender 安全中心中缺少某些元素或数据，则代理设置可能会阻止它。
 
 确保包括 `*.securitycenter.windows.com` 代理允许列表。
 
@@ -51,7 +51,7 @@ ms.locfileid: "51055609"
 
 ## <a name="microsoft-defender-for-endpoint-service-shows-event-or-error-logs-in-the-event-viewer"></a>Microsoft Defender for Endpoint 服务在事件查看器中显示事件或错误日志
 
-有关 Microsoft [](event-error-codes.md) Defender for Endpoint 服务报告的事件 ID 列表，请参阅主题使用事件查看器查看事件和错误。 本主题还包含事件错误的疑难解答步骤。
+有关 Microsoft Defender [for](event-error-codes.md) Endpoint 服务报告的事件 ID 列表，请参阅使用事件查看器查看事件和错误。 本文还包含事件错误的疑难解答步骤。
 
 ## <a name="microsoft-defender-for-endpoint-service-fails-to-start-after-a-reboot-and-shows-error-577"></a>Microsoft Defender for Endpoint 服务在重启后无法启动，并且显示错误 577
 

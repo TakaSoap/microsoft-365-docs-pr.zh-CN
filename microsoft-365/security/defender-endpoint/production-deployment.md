@@ -19,12 +19,12 @@ ms.collection:
 - m365solution-scenario
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 6e5430d409f1f8212491657b0e4ff7ec52622576
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 4af84c21977e4b90c8b6d9ec4c785339ff229e7d
+ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51055367"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51186145"
 ---
 # <a name="set-up-microsoft-defender-for-endpoint-deployment"></a>设置 Microsoft Defender for Endpoint 部署
 
@@ -32,7 +32,7 @@ ms.locfileid: "51055367"
 
 
 **适用于：**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > 想要体验 Microsoft Defender for Endpoint？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -202,7 +202,7 @@ Down-Level包括 Windows 7 SP1 和 Windows 8.1 工作站以及 Windows Server 20
 
 以下可下载的电子表格列出了网络必须能够连接到的服务及其关联 URL。 确保没有拒绝访问这些 URL 的防火墙或网络筛选规则，或者您可能需要专门为它们创建允许规则。 
 
-|**域列表电子表格**|**说明**|
+|**域列表电子表格**|**描述**|
 |:-----|:-----|
 |![适用于终结点 URL 电子表格的 Microsoft Defender 缩略图](images/mdatp-urls.png)<br/>  | 服务位置、地理位置和操作系统的特定 DNS 记录的电子表格。 <br><br>[在此处下载电子表格。](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx) 
 

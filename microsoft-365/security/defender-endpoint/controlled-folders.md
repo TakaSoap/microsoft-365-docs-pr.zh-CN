@@ -16,12 +16,12 @@ ms.reviewer: v-maave
 manager: dansimp
 ms.custom: asr
 ms.technology: mde
-ms.openlocfilehash: ae50d53fbc9bf01d4cd16b939461eecc9ec1a568
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: cd662dc130adc37b3bf8bd06839242ccc9a49f8e
+ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/24/2021
-ms.locfileid: "51165173"
+ms.locfileid: "51185965"
 ---
 # <a name="protect-important-folders-with-controlled-folder-access"></a>使用受控文件夹访问权限保护重要文件夹
 
@@ -40,7 +40,7 @@ ms.locfileid: "51165173"
 > [!NOTE]
 > 脚本引擎不受信任，你无法允许它们访问受控的受保护文件夹。  例如，即使允许使用证书和文件指示器，PowerShell 也不受受控文件夹访问权限 [信任](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/indicator-certificates)。 
 
-受控文件夹访问权限最适用于 [Microsoft Defender for Endpoint](microsoft-defender-advanced-threat-protection.md)，它为你提供有关受控文件夹访问权限事件的详细报告，并作为常用的警报调查方案的一 [部分进行阻止](investigate-alerts.md)。
+受控文件夹访问权限最适用于 [Microsoft Defender for Endpoint](microsoft-defender-endpoint.md)，它为你提供有关受控文件夹访问权限事件的详细报告，并作为常用的警报调查方案的一 [部分进行阻止](investigate-alerts.md)。
 
 > [!TIP]
 > 受控文件夹访问块不会在警报队列中 [生成警报](alerts-queue.md)。 但是，可以在设备时间线视图中查看有关受控文件夹访问块的信息[](investigate-machines.md)，同时使用高级搜寻或[](advanced-hunting-overview.md)[自定义检测规则](custom-detection-rules.md)。

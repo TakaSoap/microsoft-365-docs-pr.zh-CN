@@ -1,7 +1,7 @@
 # [Microsoft Defender for Endpoint](index.yml)
 
 ## [概述]()
-### [什么是 Microsoft Defender for Endpoint？](microsoft-defender-advanced-threat-protection.md)
+### [什么是 Microsoft Defender for Endpoint？](microsoft-defender-endpoint.md)
 ### [最低要求](minimum-requirements.md)
 ### [Microsoft Defender for Endpoint 中的新增功能](whats-new-in-microsoft-defender-atp.md)
 ### [预览功能](preview.md)

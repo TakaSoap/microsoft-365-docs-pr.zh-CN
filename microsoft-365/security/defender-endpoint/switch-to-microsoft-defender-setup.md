@@ -21,17 +21,17 @@ ms.topic: article
 ms.custom: migrationguides
 ms.date: 03/03/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
-ms.openlocfilehash: 71428db81d5cd98e02cdb7c878c1f60562653ae3
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: fb6edf33b02671396fa4d078770d5b502e59d087
+ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51054630"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51185511"
 ---
 # <a name="switch-to-microsoft-defender-for-endpoint---phase-2-setup"></a>切换到 Microsoft Defender for Endpoint - 阶段 2：设置
 
 **适用于：**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 |[![阶段 1：准备](images/phase-diagrams/prepare.png)](switch-to-microsoft-defender-prepare.md)<br/>[阶段 1：准备](switch-to-microsoft-defender-prepare.md) |![阶段 2：设置](images/phase-diagrams/setup.png)<br/>阶段 2：设置 |[![阶段 3：Onboard3](images/phase-diagrams/onboard.png)](switch-to-microsoft-defender-onboard.md)<br/>[阶段 3：载入](switch-to-microsoft-defender-onboard.md) |
@@ -100,7 +100,7 @@ ms.locfileid: "51054630"
 `mpcmdrun -wdenable`
 
 > [!TIP]
-> 是否仍需要帮助？ 请参阅 [Windows Server 上的 Microsoft Defender 防病毒](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-on-windows-server-2016)。
+> 仍然需要帮助？ 请参阅 [Windows Server 上的 Microsoft Defender 防病毒](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-on-windows-server-2016)。
 
 ### <a name="set-microsoft-defender-antivirus-to-passive-mode-on-windows-server"></a>在 Windows Server 上将 Microsoft Defender 防病毒设置为被动模式
 
@@ -128,7 +128,7 @@ ms.locfileid: "51054630"
 |---------|---------|
 |[Intune](https://docs.microsoft.com/mem/intune/fundamentals/tutorial-walkthrough-endpoint-manager) <br/>**注意**：Intune 现在是 Microsoft Endpoint Manager。 |1. 转到 [Microsoft Endpoint Manager 管理中心](https://go.microsoft.com/fwlink/?linkid=2109431) 并登录。<br/>2.**选择"设备**  >  **配置文件"，** 然后选择要配置的配置文件类型。 如果你尚未创建设备限制配置文件类型，或者如果你想要创建新的配置文件类型，请参阅在 Microsoft Intune 中配置设备[限制设置](https://docs.microsoft.com/intune/device-restrictions-configure)。<br/>3. 选择 **"属性"，** 然后选择"**配置设置：编辑"。**<br/>4. 展开 **Microsoft Defender 防病毒**。 <br/>5. 启用 **云保护**。<br/>6. 在"**在示例提交前提示用户"** 下拉列表中，选择"自动 **发送所有示例"。**<br/>7. 在"**检测可能不需要的应用程序"** 下拉列表中，选择"**启用"** 或"审核 **"。**<br/>8. 选择 **"审阅 + 保存"，** 然后选择"保存 **"。**<br/>**提示**：有关 Intune 设备配置文件（包括如何创建和配置其设置）的信息，请参阅 [什么是 Microsoft Intune 设备配置文件？。](https://docs.microsoft.com/intune/device-profiles)|
 |Windows 中的控制面板     |请按照以下指南： [打开 Microsoft Defender 防病毒](https://docs.microsoft.com/mem/intune/user-help/turn-on-defender-windows)。 <br/>**注意**：你可能会在某些 *版本的* Windows Windows Defender *看到防病毒，而不是 Microsoft Defender* 防病毒。        |
-|[高级组策略管理](https://docs.microsoft.com/microsoft-desktop-optimization-pack/agpm/) <br/>或<br/>[组策略管理控制台](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/use-group-policy-microsoft-defender-antivirus)  |1. 转到 `Computer configuration > Administrative templates > Windows components > Microsoft Defender Antivirus` 。 <br/>2. 查找名为"关闭 Microsoft Defender 防病毒 **"的策略**。<br/>3. 选择 **"编辑策略设置**"，并确保策略已禁用。 这将启用 Microsoft Defender 防病毒。 <br/>**注意**：你可能会在某些 *版本的* Windows Windows Defender *看到防病毒，而不是 Microsoft Defender* 防病毒。 |
+|[高级组策略管理](https://docs.microsoft.com/microsoft-desktop-optimization-pack/agpm/) <br/>或者<br/>[组策略管理控制台](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/use-group-policy-microsoft-defender-antivirus)  |1. 转到 `Computer configuration > Administrative templates > Windows components > Microsoft Defender Antivirus` 。 <br/>2. 查找名为"关闭 Microsoft Defender 防病毒 **"的策略**。<br/>3. 选择 **"编辑策略设置**"，并确保策略已禁用。 这将启用 Microsoft Defender 防病毒。 <br/>**注意**：你可能会在某些 *版本的* Windows Windows Defender *看到防病毒，而不是 Microsoft Defender* 防病毒。 |
 
 ### <a name="confirm-that-microsoft-defender-antivirus-is-in-passive-mode"></a>确认 Microsoft Defender 防病毒处于被动模式
 

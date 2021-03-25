@@ -22,17 +22,17 @@ ms.topic: article
 ms.custom: migrationguides
 ms.date: 03/03/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
-ms.openlocfilehash: c87ed20dd1d0c959a9af52fd766d0a34232747b2
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: adc8c1259be1e226bf1c2592090cf6008c976cf8
+ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51054801"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51186625"
 ---
 # <a name="migrate-from-mcafee---phase-1-prepare-for-your-migration"></a>从 McAfee 迁移 - 第 1 阶段：准备迁移
 
 **适用于：**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 |![阶段 1：准备](images/phase-diagrams/prepare.png)<br/>阶段 1：准备 |[![阶段 2：设置](images/phase-diagrams/setup.png)](mcafee-to-microsoft-defender-setup.md)<br/>[阶段 2：设置](mcafee-to-microsoft-defender-setup.md) |[![阶段 3：载入](images/phase-diagrams/onboard.png)](mcafee-to-microsoft-defender-onboard.md)<br/>[阶段 3：载入](mcafee-to-microsoft-defender-onboard.md) |
@@ -68,7 +68,7 @@ ms.locfileid: "51054801"
 
 需要更新组织设备的帮助？ 参阅以下资源：
 
-|操作系统 | Resource |
+|操作系统 | 资源 |
 |:--|:--|
 |Windows |[Microsoft Update](https://www.update.microsoft.com) |
 |macOS | [如何在 Mac 上更新软件](https://support.apple.com/HT201541)|

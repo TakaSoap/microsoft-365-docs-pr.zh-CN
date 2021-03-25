@@ -16,18 +16,18 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: d6e2c18bd3710e659b5f9887844bc92528da4607
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 6b080c209292c8cac1aa64d748926734f4be964c
+ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51054918"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51185463"
 ---
 # <a name="techniques-in-the-device-timeline"></a>设备时间线中的技术
 
 
 **适用于：**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 
 通过分析特定设备上发生的事件，你可以获取调查的更多见解。 首先，从设备列表中选择 [感兴趣的设备](machines-view-overview.md)。 在设备页面上，可以选择"时间线"选项卡以查看设备上发生的所有事件。

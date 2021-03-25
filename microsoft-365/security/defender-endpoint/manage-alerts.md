@@ -16,19 +16,19 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 5acec4e9b43c8af7f85fadd31caefbb15e227029
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: f03c2209b369e6fb9e001452c53073daeb5fe1c6
+ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51054946"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51186997"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-alerts"></a>管理 Microsoft Defender for Endpoint 警报
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **适用于：**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
@@ -65,7 +65,7 @@ Defender for Endpoint 通过警报通知你可能的恶意事件、属性和上�
 
 可以使用下表中的示例来帮助你选择抑制规则的上下文：
 
-| **Context**                           | **定义**                                                                                                                                              | **示例方案**                                                                                                                                                                                                  |
+| **Context**                           | **定义**                                                                                                                                              | **示例场景**                                                                                                                                                                                                  |
 |:--------------------------------------|:------------------------------------------------------------------------------------------------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **抑制此设备的警报**    | 将仅抑制具有相同的警报标题和特定设备的警报。 <br /><br />不会抑制该设备上所有其他警报。 | <ul><li>安全研究人员正在调查用于攻击组织中其他设备的恶意脚本。</li><li>开发人员定期为团队创建 PowerShell 脚本。</li></ul> |
 | **抑制我的组织的警报** | 将抑制任何设备上具有相同的警报标题的警报。                                                                                         | <ul><li>组织中的每个人都使用良好的管理工具。</li></ul>                                                                                                                               |

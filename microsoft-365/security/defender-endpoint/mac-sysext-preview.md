@@ -19,17 +19,17 @@ ms.collection:
 ms.topic: conceptual
 ROBOTS: noindex,nofollow
 ms.technology: mde
-ms.openlocfilehash: 8b644e27c5a36d2175ab18ae92424e7c70f39d0f
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 6becdd995d70c0b8193e8df097c9256dc38c72a2
+ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51054950"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51185893"
 ---
 # <a name="microsoft-defender-for-endpoint-for-mac---system-extensions-public-preview"></a>适用于 Mac 的 Microsoft Defender for Endpoint - 系统扩展公共预览) 
 
 **适用于：**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > 想要体验 Microsoft Defender for Endpoint？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -150,7 +150,7 @@ $ mdatp health --field real_time_protection_subsystem
 
    验证在计算机页面上针对 EICAR 和 EDR DIY 方案在门户中弹出的两个警报。
 
-## <a name="frequently-asked-questions"></a>常见问题解答
+## <a name="frequently-asked-questions"></a>常见问题
 
 - 问：为什么运行时 `kernel_extension` 仍看到 `mdatp health --field real_time_protection_subsystem` ？
 

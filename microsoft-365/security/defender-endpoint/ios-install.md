@@ -19,19 +19,19 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: c7f60df38ce9f34fecae975be40206d7270b0863
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 7887f26cb8ca7e0e769249a10f008308149aaa42
+ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51055026"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51186685"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-for-ios"></a>部署适用于 iOS 的 Microsoft Defender for Endpoint
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **适用于：**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > 想要体验适用于终结点的 Defender？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
@@ -128,7 +128,7 @@ Intune 允许你通过应用配置策略配置适用于 iOS 的 Defender 应用�
 
    部署到用户组时，用户必须在应用策略之前登录设备。
 
-   单击“**下一步**”。
+   单击"下一步"。
 
 1. 在"**审阅 + 创建**"页上，完成后，选择"创建 **"。** 新配置文件显示在配置文件列表中。
 
@@ -140,7 +140,7 @@ Intune 允许你通过应用配置策略配置适用于 iOS 的 Defender 应用�
     > ![Microsoft Endpoint Manager 管理中心的图像7](images/ios-deploy-7.png)
 
     - 提供配置文件的名称。 当系统提示导入配置文件时，请选择上面下载的文件。
-    - 在 **"分配** "部分，选择要应用此配置文件的设备组。 最佳做法是，这应该应用于所有托管的 iOS 设备。 单击“**下一步**”。
+    - 在 **"分配** "部分，选择要应用此配置文件的设备组。 最佳做法是，这应该应用于所有托管的 iOS 设备。 单击"下一步"。
     - 在"**审阅 + 创建**"页上，完成后，选择"创建 **"。** 新配置文件显示在配置文件列表中。
 
 ## <a name="next-steps"></a>后续步骤
