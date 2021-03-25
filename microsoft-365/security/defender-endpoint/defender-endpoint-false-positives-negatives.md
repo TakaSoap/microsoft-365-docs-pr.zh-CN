@@ -23,12 +23,12 @@ ms.collection:
 ms.topic: how-to
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs, yonghree, jcedola
 ms.custom: FPFN
-ms.openlocfilehash: 85e9a47c0180fd7582b2bc107ddf7d78f57e6329
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 3ef625e813961c09bb6f74d85fd5a7c8033f9c2a
+ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51056211"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51183869"
 ---
 # <a name="address-false-positivesnegatives-in-microsoft-defender-for-endpoint"></a>在 Microsoft Defender for Endpoint 中解决误报/负数
 
@@ -55,7 +55,7 @@ ms.locfileid: "51056211"
 ![解决误报和负面影响的步骤](images/false-positives-step-diagram.png)
 
 > [!NOTE]
-> 本文旨在指导使用 [Microsoft Defender for Endpoint](microsoft-defender-advanced-threat-protection.md)的安全操作员和安全管理员。
+> 本文旨在指导使用 [Microsoft Defender for Endpoint](microsoft-defender-endpoint.md)的安全操作员和安全管理员。
 
 ## <a name="part-1-review-and-classify-alerts"></a>第 1 部分：查看警报并分类
 
@@ -355,7 +355,7 @@ PUA (可能不需要) 是一类软件，可能会导致设备运行缓慢、显�
 > [!IMPORTANT]
 > 我们建议使用 *完全自动化* 进行自动调查和修正。 不要因为误报而关闭这些功能。 相反， [使用"允许"指示器定义](#indicators-for-microsoft-defender-for-endpoint)例外，并保留自动调查和修正集以自动采取适当操作。 遵循 [本指南](automation-levels.md#levels-of-automation) 有助于减少安全操作团队必须处理的警报数。 
 
-## <a name="still-need-help"></a>是否仍需要帮助？
+## <a name="still-need-help"></a>仍然需要帮助？
 
 如果已执行本文中所有步骤，但仍需要帮助，请联系技术支持人员。
 
