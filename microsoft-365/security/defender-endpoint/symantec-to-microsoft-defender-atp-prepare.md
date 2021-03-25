@@ -21,12 +21,12 @@ ms.topic: article
 ms.date: 03/03/2021
 ms.custom: migrationguides
 ms.reviewer: depicker, yongrhee, chriggs
-ms.openlocfilehash: 8784c8d608666946461ddc27aa2e7f2b740276a0
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 87da8a558e1295f793600aae2fdd836667374052
+ms.sourcegitcommit: 8685b0f7d53c99577fa65144ab60295dfa60f46f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51185486"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51218720"
 ---
 # <a name="migrate-from-symantec---phase-1-prepare-for-your-migration"></a>从 Symantec 迁移 - 阶段 1：准备迁移
 
@@ -39,7 +39,7 @@ ms.locfileid: "51185486"
 |*你在这里！*| | |
 
 
-**欢迎使用从 [Symantec 迁移到 Microsoft Defender for Endpoint 的"准备"阶段](symantec-to-microsoft-defender-atp-migration.md#the-migration-process)**。 
+**欢迎使用从 [Symantec 迁移到 Microsoft Defender for Endpoint 的"准备"阶段](symantec-to-microsoft-defender-endpoint-migration.md#the-migration-process)**。 
 
 此迁移阶段包括以下步骤：
 1. [获取 Microsoft Defender for Endpoint](#get-microsoft-defender-for-endpoint)。
@@ -89,5 +89,5 @@ Microsoft Defender 安全中心 () 访问和配置 [https://aka.ms/MDATPportal](
 
 ## <a name="next-step"></a>后续步骤
 
-**恭喜！** 你已完成从[Symantec](symantec-to-microsoft-defender-atp-migration.md#the-migration-process)迁移到 Microsoft Defender for Endpoint 的"准备"阶段！ 
+**恭喜！** 你已完成从[Symantec](symantec-to-microsoft-defender-endpoint-migration.md#the-migration-process)迁移到 Microsoft Defender for Endpoint 的"准备"阶段！ 
 - [继续设置适用于终结点的 Microsoft Defender。](symantec-to-microsoft-defender-atp-setup.md)

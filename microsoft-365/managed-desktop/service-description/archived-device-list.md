@@ -11,12 +11,12 @@ ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: f3e4b434f1ca267d5bbfbc7e67cb20c7e2b9dbbb
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 79b4d343326d722e42e09ae2794c05dcdd8eb603
+ms.sourcegitcommit: 8685b0f7d53c99577fa65144ab60295dfa60f46f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50920560"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51218732"
 ---
 # <a name="microsoft-managed-desktop-archived-devices"></a>Microsoft 托管桌面存档设备
 
@@ -40,11 +40,14 @@ ms.locfileid: "50920560"
 |---------|---------|---------|---------|
 |Dell Precision 3530| 256 GB / Intel i5 / 8 GB RAM | 需要 IR 相机 | **2023 年 5 月 22 日** |
 |Dell Latitude 5300 / 5300 2-in-1 / 5400 / 5500 | 256 GB / Intel i5 / 8 GB RAM | 需要 IR 相机 | **2024 年 6 月 1 日**  |
+|Dell Latitude 5310 / 5310 2-in-1 / 256 GB / Intel i5 / 8 GB RAM | 需要 IR 相机 | **2025 年 4 月 28 日**  |
+|Dell Latitude 5410 / 5410 2-in-1 / 256 GB / Intel i5 / 8 GB RAM | 需要 IR 相机 | **2025 年 4 月 28 日**  |
 |Dell Latitude 5490 | 256 GB / Intel i5 / 8 GB RAM | 需要 IR 相机 | **2023 年 1 月 9 日** |
 |Dell Latitude 7200 2-in-1 | 256 GB / Intel i5 / 8 GB RAM | 需要 IR 相机 | **2024 年 5 月 1 日** |
 |Dell Latitude 7300 / 7400 / 7400 2-in-1 | 256 GB / Intel i5 / 8 GB RAM | 需要 IR 相机 | **2024 年 5 月 1 日**  |
 |Dell Latitude 7390 / 7390 2-in-1 / 7490 | 256 GB / Intel i5 / 8 GB RAM   | 需要 IR 相机 | **2023 年 1 月 9 日** |
 |Dell Latitude 7410 / 7410 2-in-1 | 256 GB / Intel i5 / 8 GB RAM | 需要 IR 相机 | **2025 年 5 月 19 日**  |
+|Dell Latitude 9410 / 9410 2-in-1 | 256 GB / Intel i5 / 8 GB RAM | 需要 IR 相机 | **05.05.25**  |
 |Dell Optiplex 3070 | 128 GB / Intel i3 / 8 GB RAM | 无 | **2025 年 5 月 1 日**  |
 |HP EliteBook 830 / 840 / 850 G5| 128 GB / Intel i5 / 8 GB RAM | 需要 5VS01AV、IR 相机或指纹传感器的 SKU  | **2023 年 2 月 15 日** |
 |HP EliteBook 830 / 840 / 850 G6| 128 GB / Intel i5 / 8 GB RAM | 需要 5VS01AV、IR 相机或指纹传感器的 SKU  | **2023 年 11 月 30 日** |

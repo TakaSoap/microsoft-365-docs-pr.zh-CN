@@ -13,12 +13,12 @@ ms.author: ellevin
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: e5da8ec3e4555af062aad1a4ebfa96d972bee23b
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: e965e1a882dadfb565231074165507a6727b45c1
+ms.sourcegitcommit: 8685b0f7d53c99577fa65144ab60295dfa60f46f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51055861"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51218744"
 ---
 # <a name="evaluate-controlled-folder-access"></a>评估受控文件夹访问权限
 
@@ -76,5 +76,5 @@ Set-MpPreference -EnableControlledFolderAccess AuditMode
 ## <a name="see-also"></a>另请参阅
 
 * [使用受控文件夹访问权限保护重要文件夹](controlled-folders.md)
-* [评估 Microsoft Defender for Endpoint](evaluate-atp.md)
+* [评估 Microsoft Defender for Endpoint](evaluate-mde.md)
 * [使用审核模式](audit-windows-defender.md)

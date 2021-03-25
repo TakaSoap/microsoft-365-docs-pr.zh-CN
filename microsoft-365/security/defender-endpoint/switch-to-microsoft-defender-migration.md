@@ -22,12 +22,12 @@ ms.custom: migrationguides
 ms.date: 02/11/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 ms.technology: mde
-ms.openlocfilehash: 6e5b79e447579631e4aa2eaf02352dc3fa6a8daa
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 2c6029a1aada8f5f5fb27723c868f28c3de6f8aa
+ms.sourcegitcommit: 8685b0f7d53c99577fa65144ab60295dfa60f46f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51055915"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51218648"
 ---
 # <a name="make-the-switch-from-a-non-microsoft-endpoint-solution-to-microsoft-defender-for-endpoint"></a>将非 Microsoft 终结点解决方案切换到 Microsoft Defender for Endpoint
 
@@ -39,7 +39,7 @@ ms.locfileid: "51055915"
 
 > [!TIP]
 > - 如果你当前正在使用 McAfee Endpoint Security (McAfee) ，请参阅从 [McAfee](mcafee-to-microsoft-defender-migration.md)迁移到 Microsoft Defender for Endpoint 。
-> - 如果你当前正在使用 Symantec Endpoint Protection (Symantec) ，请参阅从 [Symantec](symantec-to-microsoft-defender-atp-migration.md)迁移到 Microsoft Defender for Endpoint 。
+> - 如果你当前正在使用 Symantec Endpoint Protection (Symantec) ，请参阅从 [Symantec](symantec-to-microsoft-defender-endpoint-migration.md)迁移到 Microsoft Defender for Endpoint 。
 
 ## <a name="the-migration-process"></a>迁移过程
 
