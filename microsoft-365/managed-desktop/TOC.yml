@@ -21,6 +21,8 @@
           href: service-description/device-lifecycle.md
         - name: 设备要求
           href: service-description/device-requirements.md
+        - name: 设备图像
+          href: service-description/device-images.md
         - name: 程序设备
           href: service-description/device-list.md
           items:

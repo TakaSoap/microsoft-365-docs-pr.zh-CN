@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: ed6f6b42570a908a1f4a83d46ef5b2de0c558692
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 059cfbf37c79ff9f99b5e46c8d4329c203aa9665
+ms.sourcegitcommit: 3d2261af22bebbbf7efa8a0d3135225a15bd6ba8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/25/2021
-ms.locfileid: "51199737"
+ms.locfileid: "51215524"
 ---
 # <a name="configure-advanced-features-in-defender-for-endpoint"></a>在 Defender for Endpoint 中配置高级功能
 
@@ -206,7 +206,7 @@ Defender for Endpoint 可以与 [Microsoft Intune](https://docs.microsoft.com/in
 
 将终结点安全警报及其会审状态转发到 Microsoft 合规中心，从而通过警报增强内部风险管理策略，并修正内部风险，然后再造成危害。 转发的数据将处理并存储在与 Office 365 数据相同的位置。
 
-在内部风险管理 [设置中](https://docs.microsoft.com/microsoft-365/compliance/insider-risk-management-settings.md#indicators) 配置安全策略违反指示器后，适用于终结点的 Defender 警报将共享与适用用户的内部风险管理。
+在内部风险管理 [设置中](/microsoft-365/compliance/insider-risk-management-settings#indicators) 配置安全策略违反指示器后，适用于终结点的 Defender 警报将共享与适用用户的内部风险管理。
 
 ## <a name="related-topics"></a>相关主题
 

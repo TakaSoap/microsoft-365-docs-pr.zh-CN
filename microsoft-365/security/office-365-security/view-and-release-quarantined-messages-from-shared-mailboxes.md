@@ -17,12 +17,12 @@ ROBOTS: NOINDEX
 description: 用户可以了解如何查看和操作发送到他们有权访问的共享邮箱的隔离邮件。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 9490a9d5b2b4191d6c039be2758e2e0ba0c981cd
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 6e3bf4c84e7a762f7f54f42ff61f0fbdb9dc1edd
+ms.sourcegitcommit: 3d2261af22bebbbf7efa8a0d3135225a15bd6ba8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/25/2021
-ms.locfileid: "51203771"
+ms.locfileid: "51215500"
 ---
 # <a name="view-and-release-quarantined-messages-from-shared-mailboxes"></a>查看并释放共享邮箱中的隔离邮件
 
@@ -50,6 +50,8 @@ ms.locfileid: "51203771"
 - 第一个处理隔离邮件的用户决定使用共享邮箱的所有人的邮件的传递。 例如，如果 10 个用户访问共享邮箱，而用户决定删除隔离邮件，则删除所有 10 个用户的邮件。 同样，如果用户决定释放邮件，邮件将释放到共享邮箱，并且共享邮箱的所有其他用户访问。
 
 - 目前，"**阻止发件人**"按钮在发送到共享邮箱的隔离邮件的"详细信息"飞出控件中不可用。
+
+- 对于共享邮箱的隔离操作，如果使用嵌套安全组授予对共享邮箱的访问权限，建议嵌套组不要超过两个级别。 例如，组 A 是组 B 的成员，它是组 C 的成员。若要向共享邮箱分配权限，请勿将用户添加到组 A，然后将组 C 分配给共享邮箱。  
 
 - 若要在 [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)中管理共享邮箱的隔离邮件，最终用户需要将 [Get-QuarantineMessage](/powershell/module/exchange/get-quarantinemessage) cmdlet 与共享邮箱电子邮件地址一同用于 _RecipientAddress_ 参数的值，以标识这些邮件。 例如：
 

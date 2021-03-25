@@ -12,12 +12,12 @@ ms.custom: seo-marvel-jun2020
 localization_priority: Priority
 description: 了解金融服务机构如何通过使用 Microsoft 365 和 Teams 来维持财务安全合规性并高效协作。
 f1.keywords: NOCSH
-ms.openlocfilehash: f0d5697e5582c8e165e35920cf010648ea942274
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: f7e32502994f89451d8016ed5664ebe3591dcc8d
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51052514"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51200337"
 ---
 # <a name="key-compliance-and-security-considerations-for-us-banking-and-capital-markets"></a>针对美国银行业和资本市场的关键合规性与安全性注意事项
 
@@ -196,7 +196,7 @@ Microsoft 最近推出了 Microsoft 365 Defender 解决方案，该解决方案�
 ### <a name="the-intelligent-security-graph"></a>[Intelligent Security Graph](https://www.microsoft.com/security/business/intelligence) 
 Microsoft 365 中的安全服务由 Intelligent Security Graph 提供支持。 为了对抗网络威胁，Intelligent Security Graph 使用高级分析链接来自 Microsoft 及其合作伙伴的威胁情报和安全信号。 Microsoft 大规模地运营全局服务，收集数万亿在栈中提供强大保护层的安全信号。 机器学习模型对此情报进行评估，信号和威胁见解在我们的产品和服务中广泛共享。 这使我们能够快速检测和响应威胁，并为客户提供可操作的警报和信息，以便进行补救。 我们的机器学习模型使用新的见解进行持续训练和更新，帮助我们构建更安全的产品并提供更主动的安全性。
 
-[Microsoft Defender for Office 365](../security/defender-365-security/defender-for-office-365.md?view=o365-worldwide) 提供了一项集成的 Microsoft 365 服务，保护组织免受通过电子邮件和 Office 文档传递的恶意链接和恶意软件的攻击。 影响当前用户的最常见的攻击途径之一是电子邮件钓鱼攻击。 这些攻击可以针对特定用户，并且可能非常有说服力，其中一些命令会提示用户单击恶意链接或打开包含恶意软件的附件。 计算机受到感染后，攻击者可以窃取用户的凭据并在组织中横向移动，或窃取电子邮件和数据来查找敏感信息。 Defender for Office 365 通过在单击时评估文档和链接是否存在潜在的恶意意图来支持安全附件和安全链接，并阻止访问。 将在受保护的沙箱中打开电子邮件附件，然后将其发送到用户邮箱。 此外，它还会评估 Office 文档中的恶意 URL 链接。 Defender for Office 365 还保护 SharePoint Online、OneDrive for Business 和 Teams 中的链接和文件。 如果检测到恶意文件，Defender for Office 365 会自动锁定该文件以减少潜在的损害。
+[Microsoft Defender for Office 365](../security/office-365-security/defender-for-office-365.md?view=o365-worldwide) 提供了一项集成的 Microsoft 365 服务，保护组织免受通过电子邮件和 Office 文档传递的恶意链接和恶意软件的攻击。 影响当前用户的最常见的攻击途径之一是电子邮件钓鱼攻击。 这些攻击可以针对特定用户，并且可能非常有说服力，其中一些命令会提示用户单击恶意链接或打开包含恶意软件的附件。 计算机受到感染后，攻击者可以窃取用户的凭据并在组织中横向移动，或窃取电子邮件和数据来查找敏感信息。 Defender for Office 365 通过在单击时评估文档和链接是否存在潜在的恶意意图来支持安全附件和安全链接，并阻止访问。 将在受保护的沙箱中打开电子邮件附件，然后将其发送到用户邮箱。 此外，它还会评估 Office 文档中的恶意 URL 链接。 Defender for Office 365 还保护 SharePoint Online、OneDrive for Business 和 Teams 中的链接和文件。 如果检测到恶意文件，Defender for Office 365 会自动锁定该文件以减少潜在的损害。
 
 [Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) 是一个统一的终结点安全平台，可用于预防性保护、入侵后检测，以及自动调查和响应。 Defender for Endpoint 提供了内置功能，可在企业终结点上发现和保护敏感数据。
 
