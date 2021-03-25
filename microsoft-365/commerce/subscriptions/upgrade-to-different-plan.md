@@ -20,12 +20,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: 了解如何升级到其他计划。
-ms.openlocfilehash: 62d6da5713a7785fde9e795bc22956d73616c3c3
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 5f853dcd0d247a6422489cbe5d0287765bfd72a6
+ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50924310"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51164445"
 ---
 # <a name="upgrade-to-a-different-plan"></a>升级到其他计划
 
@@ -92,7 +92,7 @@ ms.locfileid: "50924310"
 
 #### <a name="you-cant-upgrade-subscriptions-now-because-you-have-more-users-than-licenses"></a>现在无法升级订阅，因为用户数多于许可证数。
 
-若要自动升级计划，需要为所有用户分配有效许可证。 如果你分配的许可证多于你已购买的许可证，你将在许可证页面上看到一条警报，指出你<a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank"></a>具有需要解决的许可冲突。 [了解如何解决许可证冲突](../../admin/manage/resolve-license-conflicts.md)。 解决任何许可冲突后，应看到"升级"选项卡 **上列出的计划** 。如果没有更改，可以 [手动更改计划](change-plans-manually.md)，或 [致电支持人员](../../admin/contact-support-for-business-products.md)。
+若要自动升级计划，需要为所有用户分配有效许可证。 如果你分配的许可证多于你已购买的许可证，你将在许可证页面上看到一条警报，指出你<a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank"></a>具有需要解决的许可冲突。 [了解如何解决许可证冲突](../../commerce/licenses/buy-licenses.md)。 解决任何许可冲突后，应看到"升级"选项卡 **上列出的计划** 。如果没有更改，可以 [手动更改计划](change-plans-manually.md)，或 [致电支持人员](../../admin/contact-support-for-business-products.md)。
 
 #### <a name="you-cant-upgrade-subscriptions-right-now-because-this-subscription-isnt-fully-set-up-or-the-service-isnt-available"></a>由于此订阅未完全设置或服务不可用，你当前无法升级订阅。
 

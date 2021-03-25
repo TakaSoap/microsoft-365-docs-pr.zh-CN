@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
 description: 了解如何设置自定义连接器以从数据源（如 Salesforce Chatter、Yahoo Messenger 或 Yammer）导入第三方数据。
-ms.openlocfilehash: adf6583f397296361e8f0cb6f12e7054436fa34f
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 6e93ff765129296f62b43c93937701169bbf4b03
+ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50928376"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51164937"
 ---
 # <a name="work-with-a-partner-to-archive-third-party-data"></a>与合作伙伴联系以存档第三方数据
 
@@ -70,7 +70,7 @@ ms.locfileid: "50928376"
   
 [ArchiveSocial](#archivesocial)
   
-[Globanet](#globanet)
+[百里达](#veritas)
   
 [OpenText](#opentext)
   
@@ -142,9 +142,9 @@ ms.locfileid: "50928376"
     
 - Vimeo
   
-### <a name="globanet"></a>Globanet
+### <a name="veritas"></a>百里达
 
-[Globanet](https://www.globanet.com) 支持以下第三方数据源： 
+[百](https://www.globanet.com) 年支持以下第三方数据源： 
   
 - 使用 Pivot 客户端的 AOL 
     
@@ -198,7 +198,7 @@ ms.locfileid: "50928376"
     
 - Mobile Guard
     
-- Pivot
+- 透视
     
 - Salesforce Chatter
 
@@ -372,7 +372,7 @@ ms.locfileid: "50928376"
     
 - Pinterest
     
-- Pivot
+- 透视
     
 - QQ
     

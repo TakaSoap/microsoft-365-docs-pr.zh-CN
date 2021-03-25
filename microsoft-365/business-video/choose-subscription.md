@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 了解哪种 Microsoft 365 订阅适合你的组织。
-ms.openlocfilehash: 0ac7dbcad1f2d7fa99db607e6d4696c9f8fcb542
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 19da01142bfe0abf2ad02c3a0ccab4ef25e09df4
+ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50913750"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51164641"
 ---
 # <a name="choose-a-microsoft-365-subscription"></a>选择 Microsoft 365 订阅
 
@@ -54,7 +54,6 @@ ms.locfileid: "50913750"
 | **社交、视频、网站** | Stream、Yammer、Planner、SharePoint \* Online、PowerApps、Microsoft \* Flow\* | 是 | 是 | 是 |
 | **业务应用** | 计划应用 - 预订\*\* | 是 | 是 | 是 |
 |
- | 业务应用 - MileIQ\*\* | 是 | 是 | 否 |
 | **威胁防护** | Office 365 高级威胁防护 | 否 | 是 | 否 |
  | Windows 攻击防护强制 | 否 | 是 | 否 |
 | **身份管理** | 混合 Azure Active Directory 帐户的自助服务密码重置 | 否 | 是 | 否 |

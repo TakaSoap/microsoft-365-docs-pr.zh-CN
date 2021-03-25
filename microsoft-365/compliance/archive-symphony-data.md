@@ -11,17 +11,17 @@ ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
-description: 管理员可以设置连接器，以将数据从 Globanet 用户导入和存档到 Microsoft 365。 此连接器允许你在 Microsoft 365 中存档来自第三方数据源的数据。 在存档此数据后，可以使用合规性功能（如合法保留、内容搜索和保留策略）管理第三方数据。
-ms.openlocfilehash: 5a23e88b0240bd47b552aa62cd704a0560b01206
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+description: 管理员可以设置一个连接器，以将数据从 Microsoft 365 导入和存档。 此连接器允许你在 Microsoft 365 中存档来自第三方数据源的数据。 在存档此数据后，可以使用合规性功能（如合法保留、内容搜索和保留策略）管理第三方数据。
+ms.openlocfilehash: b3ddb6826f7ef68808a819ee1d860b020efea98a
+ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50925026"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51163972"
 ---
 # <a name="set-up-a-connector-to-archive-symphony-data"></a>设置连接器以存档云数据
 
-使用 Microsoft 365 合规中心中的 Globanet 连接器将"小米"数据导入并存档到 Microsoft 365 组织的用户邮箱。 百年是金融服务行业使用的消息和协作平台。 Globanet 在 Microsoft 365 合规中心中提供了 [一个部署](https://globanet.com/symphony) 数据连接器，你可以将其配置为定期捕获第三方数据源 (中的项目) 然后将这些项目导入到用户邮箱。 连接器将项目的内容从"小米"帐户转换为电子邮件格式，然后将该项目导入到 Microsoft 365 中的邮箱。
+使用 Microsoft 365 合规中心中的一个 Microsoft 365 连接器将"小米"数据导入并存档到 Microsoft 365 组织的用户邮箱。 百年是金融服务行业使用的消息和协作平台。 Microsoft 365 合规中心提供 [一个部署](https://globanet.com/symphony) 数据连接器，你可以将其配置为定期捕获第三方数据源 (中的项目) 然后将这些项目导入到用户邮箱。 连接器将项目的内容从"小米"帐户转换为电子邮件格式，然后将该项目导入到 Microsoft 365 中的邮箱。
 
 将百年通信存储在用户邮箱中后，可以应用 Microsoft 365 合规性功能，如诉讼保留、电子数据展示、保留策略和保留标签以及通信合规性。 使用一个安装连接器在 Microsoft 365 中导入和存档数据可帮助你的组织遵守政府法规策略。
 
@@ -33,15 +33,15 @@ ms.locfileid: "50925026"
 
 1. 你的组织与用户一起设置和配置一个"百年"网站。
 
-2. 每 24 小时一次，来自 Everyy 的聊天消息将复制到 Globanet Merge1 网站。 连接器还会将聊天消息的内容转换为电子邮件格式。
+2. 每 24 小时发送一次，来自 Everyy 的聊天消息将复制到"改进""合并 1"网站。 连接器还会将聊天消息的内容转换为电子邮件格式。
 
-3. 在 Microsoft 365 合规中心创建的部署连接器每天连接到 Globanet Merge1 网站，将邮件传输至 Microsoft 云中的安全 Azure 存储位置。
+3. 在 Microsoft 365 合规中心内创建的部署连接器每天连接到 Microsoft Merge1 网站，将邮件传输至 Microsoft 云中的安全 Azure 存储位置。
 
 4. 连接器使用自动用户映射的 *Email* 属性值将转换后的邮件项目导入特定用户的邮箱，如步骤 3 中所述。 在用户邮箱中创建名为 **"Inboxy"** 的"收件箱"文件夹中的新子文件夹，邮件项目将导入该文件夹。 连接器使用 Email 属性的值确定将项目导入到哪个 *邮箱* 。 每个聊天消息都包含此属性，其中填充了每个参与者的电子邮件地址。
 
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>准备工作
 
-- 为 Microsoft 连接器创建 Globanet Merge1 帐户。 若要创建帐户，请联系 [Globanet 客户支持](https://globanet.com/ms-connectors-contact)。 在步骤 1 中创建连接器时，将登录到此帐户。
+- 为 Microsoft 连接器创建一个 Microsoft Merge1 帐户。 若要创建帐户，请联系["用户支持人员"。](https://globanet.com/ms-connectors-contact) 在步骤 1 中创建连接器时，将登录到此帐户。
 
 - 必须在步骤 1 (步骤 3) 创建"邮箱导入导出"角色的用户分配到 Exchange Online 中的邮箱导入导出角色。 在 Microsoft 365 合规中心的"数据连接器"页面上添加连接器需要此角色。 默认情况下，此角色不会分配给 Exchange Online 中的角色组。 可以将"邮箱导入导出"角色添加到 Exchange Online 中的"组织管理"角色组。 也可以创建角色组，分配邮箱导入导出角色，然后将相应的用户添加为成员。 有关详细信息，请参阅"在[](/Exchange/permissions-exo/role-groups#create-role-groups)Exchange Online[](/Exchange/permissions-exo/role-groups#modify-role-groups)中管理角色组"一文的创建角色组或修改角色组部分。
 
@@ -59,9 +59,9 @@ ms.locfileid: "50925026"
 
 5. 登录到 Merge1 帐户以配置连接器。
 
-## <a name="configure-the-symphony-connector-on-the-globanet-merge1-site"></a>在 Globanet Merge1 网站上配置部署连接器
+## <a name="configure-the-symphony-connector-on-the-veritas-merge1-site"></a>在"部署合并 1"网站上配置"百年"连接器
 
-第二步是在 Merge1 网站上配置部署连接器。 有关在 Globanet Merge1 网站上配置安装连接器的信息，请参阅 [Merge1 第三方连接器用户指南](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20Symphony%20User%20Guide%20.pdf)。
+第二步是在 Merge1 网站上配置部署连接器。 有关在"网吧 Merge1"网站上配置"安装连接器"的信息，请参阅 [Merge1 第三方连接器用户指南](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20Symphony%20User%20Guide%20.pdf)。
 
 单击 **"保存&** 完成"后，将显示 Microsoft  365 合规中心中的连接器向导中的"用户映射"页。
 

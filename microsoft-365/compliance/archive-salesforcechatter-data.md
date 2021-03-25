@@ -11,17 +11,17 @@ ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
-description: 管理员可以设置连接器以将 Salesforce Chatter 数据从 Globanet 导入和存档到 Microsoft 365。 此连接器允许你在 Microsoft 365 中存档来自第三方数据源的数据。 在存档此数据后，可以使用合规性功能（如合法保留、内容搜索和保留策略）管理第三方数据。
-ms.openlocfilehash: 14f1f190acef1036ebe29e43a7df4005242f8c23
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+description: 管理员可以设置连接器，以将 Salesforce Chatter 数据从 Microsoft 365 导入和存档。 此连接器允许你在 Microsoft 365 中存档来自第三方数据源的数据。 在存档此数据后，可以使用合规性功能（如合法保留、内容搜索和保留策略）管理第三方数据。
+ms.openlocfilehash: c04dc3026eaa5abb23b332dbae826c052344da31
+ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50925114"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51164052"
 ---
 # <a name="set-up-a-connector-to-archive-salesforce-chatter-data"></a>设置连接器以存档 Salesforce Chatter 数据
 
-使用 Microsoft 365 合规中心中的 Globanet 连接器，将数据从 Salesforce Chatter 平台导入并存档到 Microsoft 365 组织的用户邮箱。 Globanet 提供了 [Salesforce Chatter](http://globanet.com/chatter/) 连接器，可捕获第三方数据源中的项目，并导入到 Microsoft 365。 连接器将内容（如聊天、附件和帖子）从 Salesforce Chatter 转换为电子邮件格式，然后将这些项目导入到 Microsoft 365 中的用户邮箱。
+使用 Microsoft 365 合规中心中的一个 Microsoft 365 连接器，将数据从 Salesforce Chatter 平台导入并存档到 Microsoft 365 组织的用户邮箱。 Microsoft 提供 [Salesforce Chatter](http://globanet.com/chatter/) 连接器，可捕获第三方数据源中的项目，并导入到 Microsoft 365。 连接器将内容（如聊天、附件和帖子）从 Salesforce Chatter 转换为电子邮件格式，然后将这些项目导入到 Microsoft 365 中的用户邮箱。
 
 在 Salesforce Chatter 数据存储在用户邮箱中后，可以应用 Microsoft 365 合规性功能，如诉讼保留、电子数据展示、保留策略和保留标签。 使用 Salesforce Chatter 连接器在 Microsoft 365 中导入和存档数据可帮助组织遵守政府法规策略。
 
@@ -33,15 +33,15 @@ ms.locfileid: "50925114"
 
 1. 您的组织与 Salesforce Chatter 合作，以设置和配置 Salesforce Chatter 网站。
 
-2. 每 24 小时一次，Salesforce Chatter 项将复制到 Globanet Merge1 网站。 连接器还会将 Salesforce Chatter 项目作为电子邮件格式。
+2. 每 24 小时复制一次 Salesforce Chatter 项，然后复制到该网吧。 连接器还会将 Salesforce Chatter 项目作为电子邮件格式。
 
-3. 在 Microsoft 365 合规中心创建的 Salesforce Chatter 连接器每天连接到 Globanet Merge1 网站，将 Chatter 内容转移到 Microsoft 云中的安全 Azure 存储位置。
+3. 在 Microsoft 365 合规中心内创建的 Salesforce Chatter 连接器每天连接到 Microsoft Merge1 网站，将 Chatter 内容传输至 Microsoft 云中的安全 Azure 存储位置。
 
 4. 连接器使用自动用户映射的 *Email* 属性值将转换的项目导入到特定用户的邮箱，如步骤 [3 中所述](#step-3-map-users-and-complete-the-connector-setup)。 在用户邮箱中创建名为 **Salesforce Chatter** 的收件箱文件夹中的子文件夹，项目将导入到该文件夹中。 连接器使用 Email 属性的值确定将项目导入到哪个 *邮箱* 。 每个 Chatter 项目都包含此属性，该属性用项目每个参与者的电子邮件地址填充。
 
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>准备工作
 
-- 为 Microsoft 连接器创建 Merge1 帐户。 若要创建帐户，请联系 [Globanet 客户支持](https://globanet.com/contact-us/)。 在步骤 1 中创建连接器时，需要登录此帐户。
+- 为 Microsoft 连接器创建 Merge1 帐户。 若要创建帐户，请联系["用户支持人员"。](https://www.veritas.com/content/support/) 在步骤 1 中创建连接器时，需要登录此帐户。
 
 - 创建 Salesforce 应用程序，并获取 令牌 [https://salesforce.com](https://salesforce.com) 。 你将需要以管理员角色登录到 Salesforce 帐户，并获取用户个人令牌以导入数据。 此外，需要在 Chatter 网站上发布触发器，以捕获更新、删除和编辑。 这些触发器将在频道上创建帖子，Merge1 将捕获该频道的信息。 有关如何创建应用程序和获取令牌的分步说明，请参阅[Merge1 Third-Party Connectors User Guide。](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20SalesForce%20Chatter%20User%20Guide%20.pdf)
 
@@ -61,9 +61,9 @@ ms.locfileid: "50925114"
 
 5. 登录到 Merge1 帐户以配置连接器。
 
-## <a name="step-2-configure-the-salesforce-chatter-on-the-globanet-merge1-site"></a>步骤 2：在 Globanet Merge1 网站上配置 Salesforce Chatter
+## <a name="step-2-configure-the-salesforce-chatter-on-the-veritas-merge1-site"></a>步骤 2：在"完成"合并 1 网站中配置 Salesforce Chatter
 
-第二步是在 Globanet Merge1 网站上配置 Salesforce Chatter 连接器。 若要了解如何配置 Salesforce Chatter 连接器，请参阅 [Merge1 第三方连接器用户指南](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20SalesForce%20Chatter%20User%20Guide%20.pdf)。
+第二步是在"网吧 Merge1"网站上配置 Salesforce Chatter 连接器。 若要了解如何配置 Salesforce Chatter 连接器，请参阅 [Merge1 第三方连接器用户指南](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20SalesForce%20Chatter%20User%20Guide%20.pdf)。
 
 单击"保存 **&** 完成"后，将显示Microsoft 365 合规中心中的连接器向导中的"用户映射"页。
 

@@ -1,0 +1,82 @@
+---
+title: 配置托管安全服务提供商支持
+description: 执行必要步骤以配置 MSSP 与 Microsoft Defender for Endpoint 的集成
+keywords: 托管安全服务提供程序， mssp， 配置， 集成
+search.product: eADQiWindows 10XVcnh
+search.appverid: met150
+ms.prod: m365-security
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.pagetype: security
+ms.author: macapara
+author: mjcaparas
+localization_priority: Normal
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance
+ms.topic: article
+ms.technology: mde
+ms.openlocfilehash: 6786d423d20ec90c12d2ea712003acc787ed599d
+ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51165245"
+---
+# <a name="configure-managed-security-service-provider-integration"></a>配置托管安全服务提供程序集成
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+**适用于：**
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+
+>想要体验适用于终结点的 Defender？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-mssp-support-abovefoldlink)
+ 
+[!include[Prerelease information](../../includes/prerelease.md)]
+
+您需要执行以下配置步骤以启用 MSSP 托管服务提供程序 (MSSP) 集成。
+
+>[!NOTE]
+>本文中的以下术语用于区分服务提供商和服务使用者：
+> - MSSP：提供监视和管理组织的安全设备的安全组织。
+> - MSSP 客户：使用 MSSP 服务的组织。
+
+该集成将允许 MSSP 执行以下操作：
+
+- 获取对 MSSP 客户的 Microsoft Defender 安全中心门户的访问权限
+- 获取电子邮件通知和 
+- 使用 SIEM 工具通过安全信息和事件管理 (警报) 警报
+
+MSSP 客户需要授予对 Defender for Endpoint 租户的访问权限，以便 MSSP 可以访问门户，MSSP 客户才能执行这些操作。 
+ 
+
+通常，MSSP 客户执行初始配置步骤以授予 MSSP 访问其 Windows Defender 安全中心租户的权限。 授予访问权限后，MSSP 客户或 MSSP 可以执行其他配置步骤。
+
+
+通常，需要执行以下配置步骤：
+
+
+- **向 MICROSOFT Defender 安全中心授予 MSSP 访问权限** <br>
+此操作需要由 MSSP 客户执行。 它向 MSSP 客户授予对 MSSP 客户的 Defender for Endpoint 租户的访问权限。
+ 
+
+- **配置发送到 MSSP 的警报通知** <br>
+MSSP 客户或 MSSP 可以执行此操作。 这使 MSSP 知道需要为 MSSP 客户解决哪些警报。
+
+- **将警报从 MSSP 客户的租户提取到 SIEM 系统** <br> 此操作由 MSSP 执行。 它允许 MSSP 在 SIEM 工具中获取警报。
+
+- **使用 API 从 MSSP 客户的租户提取警报** <br>
+此操作由 MSSP 执行。 它允许 MSSP 使用 API 获取警报。
+
+## <a name="multi-tenant-access-for-mssps"></a>MSSP 的多租户访问
+若要了解如何实现多租户委派访问，请参阅S [multi-tenant access for Managed Security Service Providers](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/multi-tenant-access-for-managed-security-service-providers/ba-p/1533440)。
+
+
+
+## <a name="related-topics"></a>相关主题
+- [授予对门户的 MSSP 访问权限](grant-mssp-access.md)
+- [访问 MSSP 客户门户](access-mssp-portal.md)
+- [配置警报通知](configure-mssp-notifications.md)
+- [从客户租户提取警报](fetch-alerts-mssp.md)
+

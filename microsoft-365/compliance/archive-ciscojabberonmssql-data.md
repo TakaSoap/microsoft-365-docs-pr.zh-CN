@@ -11,17 +11,17 @@ ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
-description: 管理员可以设置连接器以从 Microsoft 365 中的 Globanet 导入和存档 Cisco Jabber 数据。 此连接器允许你在 Microsoft 365 中存档来自第三方数据源的数据。 在存档此数据后，可以使用合规性功能（如合法保留、内容搜索和保留策略）管理第三方数据。
-ms.openlocfilehash: ae94c7c48a229f7257f16deee391aade3413da53
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+description: 管理员可以设置连接器以在 Microsoft 365 中导入和存档来自 Microsoft 365 的 Cisco Jabber 数据。 此连接器允许你在 Microsoft 365 中存档来自第三方数据源的数据。 在存档此数据后，可以使用合规性功能（如合法保留、内容搜索和保留策略）管理第三方数据。
+ms.openlocfilehash: 7465d1f8d80d67e2a284200cbf1628178609b3c3
+ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50923998"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51164402"
 ---
 # <a name="set-up-a-connector-to-archive-cisco-jabber-data"></a>设置连接器以存档 Cisco Jabber 数据
 
-使用 Microsoft 365 合规中心中的 Globanet 连接器，将数据从 Cisco Jabber 平台导入并存档到 Microsoft 365 组织的用户邮箱。 Globanet 为您提供了一个 [Cisco Jabber](https://globanet.com/jabber/) 连接器，该连接器配置为从 Jabber 的 MS SQL 数据库中捕获项目，例如一对一聊天消息和群聊，然后将这些项目导入到 Microsoft 365。 连接器从 Cisco Jabber 的 MS SQL 数据库中检索数据，处理这些数据，并将内容从用户的 Cisco Jabber 帐户转换为电子邮件格式，然后将这些项目导入到 Microsoft 365 中的用户邮箱。
+使用 Microsoft 365 合规中心中的一个 Microsoft 365 连接器，将数据从 Cisco Jabber 平台导入并存档到 Microsoft 365 组织的用户邮箱。 Microsoft 为您提供了一个 [Cisco Jabber](https://globanet.com/jabber/) 连接器，该连接器配置为从 Jabber 的 MS SQL 数据库中捕获项目，例如一对一聊天消息和群聊，然后将这些项目导入到 Microsoft 365。 连接器从 Cisco Jabber 的 MS SQL 数据库中检索数据，处理这些数据，并将内容从用户的 Cisco Jabber 帐户转换为电子邮件格式，然后将这些项目导入到 Microsoft 365 中的用户邮箱。
 
 Cisco Jabber 数据存储在用户邮箱中后，可以应用 Microsoft 365 合规性功能，如诉讼保留、电子数据展示、保留策略和保留标签以及通信合规性。 使用 Cisco Jabber 连接器在 Microsoft 365 中导入和存档数据可帮助组织遵守政府法规策略。
 
@@ -33,15 +33,15 @@ Cisco Jabber 数据存储在用户邮箱中后，可以应用 Microsoft 365 合�
 
 1. 你的组织与 Cisco 合作，在 MS 数据库上设置和配置 Cisco Jabber SQL数据库。
 
-2. 每 24 小时一次，Cisco Jabber 项目从 MS SQL 数据库复制到 Globanet Merge1 网站。 连接器还会将聊天消息的内容转换为电子邮件格式。
+2. Cisco Jabber 项目每 24 小时复制一次，从 MS SQL 数据库复制到其 Merge1 网站。 连接器还会将聊天消息的内容转换为电子邮件格式。
 
-3. 在 Microsoft 365 合规中心创建的 Cisco Jabber 连接器每天连接到 Globanet Merge1 网站，将项目转移到 Microsoft 云中的安全 Azure 存储位置。
+3. 在 Microsoft 365 合规中心内创建的 Cisco Jabber 连接器每天连接到 Microsoft Merge1 网站，将项目转移到 Microsoft 云中的安全 Azure 存储位置。
 
 4. 作为连接器的自动用户映射使用步骤 [3](#step-3-map-users-and-complete-the-connector-setup)中所述 *的 Email* 属性的值将项目导入特定用户的邮箱。 MS 邮箱上名为 **Cisco Jabber SQL** 文件夹的子文件夹是在用户邮箱中创建的，邮件项目将导入到该文件夹。 连接器使用 Email 属性的值确定将项目导入到哪个 *邮箱* 。 每个 Cisco Jabber 项都包含此属性，其中填充了每个参与者的电子邮件地址。
 
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>准备工作
 
-- 为 Microsoft 连接器创建 Globanet Merge1 帐户。 若要创建此帐户，请联系 [Globanet 客户支持](https://globanet.com/ms-connectors-contact/)。 在步骤 1 中创建连接器时，将登录到此帐户。
+- 为 Microsoft 连接器创建一个 Microsoft Merge1 帐户。 若要创建此帐户，请联系["用户支持人员"。](https://www.veritas.com/content/support/) 在步骤 1 中创建连接器时，将登录到此帐户。
 
 - 设置 MS SQL 数据库，以在步骤 1 中创建连接器之前从检索 Jabber 项目。 在步骤 2 中配置 Cisco Jabber 连接器时，SQL数据库的连接设置。 有关详细信息，请参阅 [Merge1 第三方连接器用户指南](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20Cisco%20Jabber%20on%20MS%20SQL%20User%20Guide%20.pdf)。
 
@@ -61,9 +61,9 @@ Cisco Jabber 数据存储在用户邮箱中后，可以应用 Microsoft 365 合�
 
 5. 登录到 Merge1 帐户以配置连接器。
 
-## <a name="step-2-configure-the-cisco-jabber-connector-on-the-globanet-merge1-site"></a>步骤 2：在 Globanet Merge1 网站上配置 Cisco Jabber 连接器
+## <a name="step-2-configure-the-cisco-jabber-connector-on-the-veritas-merge1-site"></a>步骤 2：在"Cisco Merge1"网站上配置 Cisco Jabber 连接器
 
-第二步是在 GLobanet Merge1 网站上配置 MS SQL Connector 上的 Cisco Jabber。 若要了解如何在 MS 连接器上配置 Cisco Jabber SQL，请参阅 [Merge1 第三方连接器用户指南](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20Cisco%20Jabber%20on%20MS%20SQL%20User%20Guide%20.pdf)。
+第二步是在 Ms 上的 Cisco Jabber 配置 SQL Merge1 站点上的连接器。 若要了解如何在 MS 连接器上配置 Cisco Jabber SQL，请参阅 [Merge1 第三方连接器用户指南](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20Cisco%20Jabber%20on%20MS%20SQL%20User%20Guide%20.pdf)。
 
 单击 **"保存&** 完成"后，将显示 Microsoft  365 合规中心中的连接器向导中的"用户映射"页。
 

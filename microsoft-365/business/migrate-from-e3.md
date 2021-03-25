@@ -22,14 +22,14 @@ search.appverid:
 - BCS160
 - MET150
 description: 了解如何从 Office 365 E3 将业务移动到 Microsoft 365 商业高级版。
-ms.openlocfilehash: f655037891bf8ec42e7b927256025c89c9354e98
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 3f9fd70b2d31b32027981e638de249d92e98ea08
+ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50912934"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51164525"
 ---
-# <a name="migrating-from-office-365-e3-to-microsoft-365-business-premium"></a>从 Office 365 E3 迁移到 Microsoft 365 商业高级版 
+# <a name="migrating-from-office-365-e3-to-microsoft-365-business-premium"></a>从 Office 365 E3 迁移到 Microsoft 365 商业高级版
 
 Microsoft 365 商业高级版具有小型企业所需的一切，将一流的基于云的生产力应用与简单的设备管理和安全性相结合。 如果当前拥有 Office 365 E3 订阅，但员工不超过 300 人，请考虑切换到 Microsoft 365 商业高级版，以添加安全功能。
 
@@ -42,14 +42,14 @@ Microsoft 365 商业高级版具有小型企业所需的一切，将一流的基
 | 功能    | Microsoft 365 商业高级版中的支持    | Office 365 E3 中的支持 | 
 |:-------|:-----|:-----|
 | **本地**        | | | 
-| Office 应用<sup>1</sup>    | Microsoft 365 商业应用版    | 适用于企业的 Microsoft 365 应用 | 
+| Office 应用<sup>1</sup>    | Microsoft 365 商业应用版    | Microsoft 365 企业应用版 | 
 | **云生产力应用**        | | | 
 | Exchange Online 和 Outlook    | 每个邮箱 50 GB 存储限制和无限Exchange Online Archiving    | 每个邮箱 100 GB 存储限制和无限制Exchange Online Archiving | 
 | Teams    | ![包含在 Microsoft 365 商业高级版中](../media/check-mark.png)    | ![随 Office 365 E3 一起提供](../media/check-mark.png) | 
 | OneDrive for Business    | 每个用户 1 TB 存储限制    | 无限制 | 
 | Yammer、SharePoint Online、Planner、Stream    | ![包含在 Microsoft 365 商业高级版中](../media/check-mark.png)    | ![随 Office 365 E3 一起提供](../media/check-mark.png) | 
 | StaffHub    | ![包含在 Microsoft 365 商业高级版中](../media/check-mark.png)    | ![随 Office 365 E3 一起提供](../media/check-mark.png) | 
-| Outlook Customer Manager，MileIQ    | ![包含在 Microsoft 365 商业高级版中](../media/check-mark.png)    | | 
+| Outlook Customer Manager    | ![包含在 Microsoft 365 商业高级版中](../media/check-mark.png)    | | 
 | **威胁防护**        | | | 
 | Defender for Office 365 计划 1 | ![包含在 Microsoft 365 商业高级版中](../media/check-mark.png)    | 不包含，但可添加到 | 
 | **身份管理**        | | | 
@@ -122,7 +122,7 @@ Microsoft 365 商业高级版具有 50 GB 存储空间限制，因为它使用 E
 
 ### <a name="threat-protection"></a>威胁防护
 
-迁移到 Microsoft 365 商业高级版后，你拥有适用于 Office 365 的 Defender。 有关[概述，请参阅 Microsoft Defender for Office 365。](../security/office-365-security/office-365-atp.md) 若要设置[，请参阅在](https://support.microsoft.com/office/61492713-53c2-47da-a6e7-fa97479e97fa)Defender for [](https://support.microsoft.com/office/e7e68934-23dc-4b9c-b714-e82e27a8f8a5) [Office 365](https://support.microsoft.com/office/86c425e1-1686-430a-9151-f7176cce4f2c)中设置安全链接、设置安全附件和设置防钓鱼。
+迁移到 Microsoft 365 商业高级版后，你拥有适用于 Office 365 的 Defender。 有关[概述，请参阅 Microsoft Defender for Office 365。](../security/defender-365-security/defender-for-office-365.md) 若要设置[，请参阅在](https://support.microsoft.com/office/61492713-53c2-47da-a6e7-fa97479e97fa)Defender for [](https://support.microsoft.com/office/e7e68934-23dc-4b9c-b714-e82e27a8f8a5) [Office 365](https://support.microsoft.com/office/86c425e1-1686-430a-9151-f7176cce4f2c)中设置安全链接、设置安全附件和设置防钓鱼。
 
 ### <a name="sensitivity-labels"></a>敏感度标签
 

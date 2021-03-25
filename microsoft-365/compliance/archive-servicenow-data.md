@@ -11,17 +11,17 @@ ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
-description: 管理员可以设置连接器以将 ServiceNow 数据从 Globanet 导入和存档到 Microsoft 365。 此连接器允许你在 Microsoft 365 中存档来自第三方数据源的数据。 在存档此数据后，可以使用合规性功能（如合法保留、内容搜索和保留策略）管理第三方数据。
-ms.openlocfilehash: d9cc40e8d7660be96cefb8ec0d13e2b95bb8f31a
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+description: 管理员可以设置连接器以将 ServiceNow 数据从 Microsoft 365 导入和存档。 此连接器允许你在 Microsoft 365 中存档来自第三方数据源的数据。 在存档此数据后，可以使用合规性功能（如合法保留、内容搜索和保留策略）管理第三方数据。
+ms.openlocfilehash: 8f1f56f79d3cdd0e198f03d948837249d3e0ff3b
+ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50925104"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51164033"
 ---
 # <a name="set-up-a-connector-to-archive-servicenow-data"></a>设置连接器以存档 ServiceNow 数据
 
-使用 Microsoft 365 合规中心中的 Globanet 连接器，将数据从 ServiceNow 平台导入并存档到 Microsoft 365 组织的用户邮箱。 Globanet 提供了 [一个 ServiceNow](https://globanet.com/servicenow/) 连接器，可捕获第三方数据源中的项目，并导入到 Microsoft 365。 连接器将内容（如实时邮件、附件和帖子）从 ServiceNow 转换为电子邮件格式，然后将这些项目导入 Microsoft 365 中的用户邮箱。
+使用 Microsoft 365 合规中心中的一个 Microsoft 365 连接器，将数据从 ServiceNow 平台导入并存档到 Microsoft 365 组织的用户邮箱。 Microsoft 提供 [一个 ServiceNow](https://globanet.com/servicenow/) 连接器，用于捕获第三方数据源中的项，并导入到 Microsoft 365。 连接器将内容（如实时邮件、附件和帖子）从 ServiceNow 转换为电子邮件格式，然后将这些项目导入 Microsoft 365 中的用户邮箱。
 
 将 ServiceNow 数据存储在用户邮箱中后，可以应用 Microsoft 365 合规性功能，如诉讼保留、电子数据展示、保留策略和保留标签。 使用 ServiceNow 连接器在 Microsoft 365 中导入和存档数据可帮助组织遵守政府法规策略。
 
@@ -33,15 +33,15 @@ ms.locfileid: "50925104"
 
 1. 您的组织与 ServiceNow 一起设置和配置 ServiceNow 网站。
 
-2. 每 24 小时复制一次 ServiceNow 项目到 Globanet Merge1 网站。 连接器还会将 ServiceNow 项目转换为电子邮件格式。
+2. 每 24 小时复制一次 ServiceNow 项，然后复制到该"是否合并 1"网站。 连接器还会将 ServiceNow 项目转换为电子邮件格式。
 
-3. 在 Microsoft 365 合规中心创建的 ServiceNow 连接器每天连接到 Globanet Merge1 网站，将 ServiceNow 内容传输至 Microsoft 云中的安全 Azure 存储位置。
+3. 在 Microsoft 365 合规中心创建的 ServiceNow 连接器每天连接到 Microsoft Merge1 网站，将 ServiceNow 内容传输至 Microsoft 云中的安全 Azure 存储位置。
 
 4. 连接器使用自动用户映射的 *Email* 属性值将转换的项目导入到特定用户的邮箱，如步骤 [3 中所述](#step-3-map-users-and-complete-the-connector-setup)。 在用户邮箱中创建名为 **ServiceNow** 的收件箱文件夹中的子文件夹，项目将导入到该文件夹。 连接器使用 Email 属性的值确定将项目导入到哪个 *邮箱* 。 每个 ServiceNow 项都包含此属性，该属性用项目每个参与者的电子邮件地址填充。
 
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>准备工作
 
-- 为 Microsoft 连接器创建 Merge1 帐户。 若要创建帐户，请联系 [Globanet 客户支持](https://globanet.com/contact-us/)。 在步骤 1 中创建连接器时，需要登录此帐户。
+- 为 Microsoft 连接器创建 Merge1 帐户。 若要创建帐户，请联系["用户支持人员"。](https://www.veritas.com/content/support/) 在步骤 1 中创建连接器时，需要登录此帐户。
 
 - 创建 ServiceNow 应用程序以从 ServiceNow 帐户提取数据。 有关创建应用程序的分步说明，请参阅[Merge1 Third-Party Connectors User Guide。](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20ServiceNow%20User%20Guide%20.pdf)
 
@@ -61,9 +61,9 @@ ms.locfileid: "50925104"
 
 5. 登录到 Merge1 帐户以配置连接器。
 
-## <a name="step-2-configure-the-servicenow-on-the-globanet-merge1-site"></a>步骤 2：在 Globanet Merge1 网站上配置 ServiceNow
+## <a name="step-2-configure-the-servicenow-on-the-veritas-merge1-site"></a>步骤 2：在"完成"合并 1 网站中配置 ServiceNow
 
-第二步是在 Globanet Merge1 网站上配置 ServiceNow 连接器。 若要了解如何配置 ServiceNow 连接器，请参阅 [Merge1 第三方连接器用户指南](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20ServiceNow%20User%20Guide%20.pdf)。
+第二步是在"则 Iss Merge1"网站上配置 ServiceNow 连接器。 若要了解如何配置 ServiceNow 连接器，请参阅 [Merge1 第三方连接器用户指南](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20ServiceNow%20User%20Guide%20.pdf)。
 
 单击"保存 **&** 完成"后，将显示Microsoft 365 合规中心中的连接器向导中的"用户映射"页。
 

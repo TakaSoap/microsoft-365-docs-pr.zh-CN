@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: 无论是将新解决方案添加到合规中心、根据反馈更新现有功能，还是推出最新更新的文档，Microsoft 365 都可以帮助你随时了解不断变化的合规性环境。 了解我们本月已经进行了哪些工作。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: ed29ad5186972f56609a596d88a48c7c460f295f
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: c695bc2632e766eb6f14c4e9f7eabbbddff66fd2
+ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50905854"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51164971"
 ---
 # <a name="whats-new-in-microsoft-365-compliance"></a>Microsoft 365 合规中心更新信息
 
@@ -33,7 +33,7 @@ ms.locfileid: "50905854"
 > 一些合规性功能以不同的速度为客户提供推出。 如果尚未看到功能，请尝试将自己添加到 [定向发布](/office365/admin/manage/release-options-in-office-365)。
 
 > [!TIP]
-> 有兴趣了解其他管理中心中如何工作？ 请查看以下文章：<br>[Microsoft 365 管理中心的新增功能](/office365/admin/whats-new-in-preview)<br>[SharePoint 管理中心的新增功能](/sharepoint/what-s-new-in-admin-center)<br>[Microsoft 365 Defender 的新增功能](../security/mtp/whats-new.md)<br><br>
+> 有兴趣了解其他管理中心中如何工作？ 请查看以下文章：<br>[Microsoft 365 管理中心的新增功能](/office365/admin/whats-new-in-preview)<br>[SharePoint 管理中心的新增功能](/sharepoint/what-s-new-in-admin-center)<br>[Microsoft 365 Defender 的新增功能](../security/defender/whats-new.md)<br><br>
 请访问 [Microsoft 365 路线图](https://www.microsoft.com/en-us/microsoft-365/roadmap) ，了解已启动、即将推出、正在开发、已取消或之前发布的 Microsoft 365 功能。
 
 ## <a name="january-2021"></a>2021 年 1 月
@@ -78,7 +78,7 @@ Microsoft 365 合规性内容团队努力创建"内容解决方案"文档，以�
 
 ### <a name="data-connectors"></a>数据连接器
 
-[发布了四个新的 Globanet 连接器](archiving-third-party-data.md#third-party-data-connectors)：Redtail Speak、Salesforce Chatter、ServiceNow 和 Yieldbroker。
+[发布了四个新的开发连接器](archiving-third-party-data.md#third-party-data-connectors)：Redtail Speak、Salesforce Chatter、ServiceNow 和 Yieldbroker。
 
 ### <a name="encryption"></a>加密
 
@@ -122,7 +122,7 @@ Microsoft 365 合规性内容团队努力创建"内容解决方案"文档，以�
 
 ### <a name="data-connectors"></a>数据连接器
 
-[预览版中五个新的 Globanet 连接器](archiving-third-party-data.md#third-party-data-connectors)。 新连接器包括 Reuters Dealing、Reuters FX、CellTrust、XIP、通用 MS SQL Database 数据。
+[预览版中新增了五个"为"的"下一版"连接器](archiving-third-party-data.md#third-party-data-connectors)。 新连接器包括 Reuters Dealing、Reuters FX、CellTrust、XIP、通用 MS SQL Database 数据。
 
 ### <a name="retention-labels-disposition-review"></a>保留标签 (处置评审) 
 
@@ -169,14 +169,14 @@ Microsoft 365 合规性内容团队努力创建"内容解决方案"文档，以�
 
 ### <a name="data-connectors"></a>数据连接器
 
-- [新的第三方数据连接器](archiving-third-party-data.md#third-party-data-connectors)。 25 个新的数据连接器，包括 14 个来自 Globanet 的连接器和 8 个来自 Telemessage 的连接器。
+- [新的第三方数据连接器](archiving-third-party-data.md#third-party-data-connectors)。 25 个新的数据连接器，包括 14 个来自都斯的连接器和 8 个来自 Telemessage 的连接器。
 - [物理保护连接器](import-physical-badging-data.md)。 导入物理密码数据，例如员工的原始物理访问事件或由组织的密码系统生成的任何物理访问警报。 示例包括建筑物、服务器会议室或数据中心的条目。 内部风险管理解决方案可以使用物理保护数据来帮助保护组织免受组织内部恶意活动或数据盗窃的攻击。
 
 ### <a name="insider-risk-management"></a>内部风险管理
 
 - [Microsoft Teams 集成](insider-risk-management-settings.md#microsoft-teams-preview)。 在内部风险设置中启用 Teams 集成后，你可以与 Teams 中其他利益干系人就安全共享和存储与个别案例相关的数据、跟踪和查看来自分析员和调查人员的响应活动等任务进行协调和协作。
 - [Power Automate 流](insider-risk-management-settings.md#power-automate-flows-preview)。 设置流程以自动执行事例和用户的重要任务，例如检索要与利益干系人和其他应用共享的用户、警报和事例信息、自动执行诸如发布到事例笔记等操作。
-- [活动资源管理器](insider-risk-management-alerts.md#activity-explorer-preview)。 查看警报时可用，活动资源管理器为研究人员和分析师提供了一个全面的分析工具，可用于深入查看每个警报。 快速查看检测到的风险活动的日程表，并识别并筛选与警报关联的所有风险活动。
+- [活动浏览器](insider-risk-management-alerts.md#activity-explorer-preview)。 查看警报时可用，活动资源管理器为研究人员和分析师提供了一个全面的分析工具，可用于深入查看每个警报。 快速查看检测到的风险活动的日程表，并识别并筛选与警报关联的所有风险活动。
 
 ### <a name="retention-policies-and-retention-labels"></a>保留策略和保留标签
 
@@ -202,7 +202,7 @@ Microsoft 365 合规性内容团队努力创建"内容解决方案"文档，以�
 
 - [可训练分类器](classifier-learn-about.md#retraining-classifiers)。 若要提高已发布分类器的准确性，您可以提供有关检测到的项目是否与分类器匹配的反馈。
 - [通信合规性](classifier-how-to-retrain-comms-compliance.md)。 新的 **改进分类** 修正操作可使你提供通信合规性警报中的项目是否与通信合规性策略中配置的分类器匹配的反馈。
-- [内容资源管理器](classifier-how-to-retrain-content-explorer.md)。 如果将保留自动标记策略设置为自动将标签应用于与可训练分类器匹配的电子邮件，可以使用内容资源管理器查看标记的项目并提供这些项目是否与分类器匹配的反馈。
+- [内容浏览器](classifier-how-to-retrain-content-explorer.md)。 如果将保留自动标记策略设置为自动将标签应用于与可训练分类器匹配的电子邮件，可以使用内容资源管理器查看标记的项目并提供这些项目是否与分类器匹配的反馈。
 
 ## <a name="august-2020"></a>2020 年 8 月
 
