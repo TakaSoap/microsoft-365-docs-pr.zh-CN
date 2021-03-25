@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: 423840ae62d0531da76044238bbeef05078a82c8
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: cc526371fdf12314f762c885ba1775fcf3f00d00
+ms.sourcegitcommit: 3d2261af22bebbbf7efa8a0d3135225a15bd6ba8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50907984"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51215548"
 ---
 # <a name="microsoft-365-productivity-illustrations"></a>Microsoft 365 生产力插图
 
@@ -33,7 +33,7 @@ Microsoft 365 中生产力服务的逻辑体系结构，以 Microsoft Teams 为�
 
 
 ### <a name="groups-in-microsoft-365-for-it-architects"></a>面向 IT 架构师的 Microsoft 365 中的组
-对于 Microsoft 365 中的组，IT 架构师需要了解的信息
+此图包括 IT 架构师有关 Microsoft 365 组的信息。 若要了解如何在组织中配置和管理 Microsoft 365 组和团队进行协作，请参阅设置[与 Microsoft 365](/microsoft-365/solutions/setup-secure-collaboration-with-teams)的安全协作和[什么是协作治理？。](/microsoft-365/solutions/collaboration-governance-overview)
 
 | Item | 说明 |
 |:-----|:-----|
@@ -52,7 +52,7 @@ Microsoft 365 包括一组广泛的信息保护和合规性功能。 这些功�
 
 
 ### <a name="security-and-information-protection-for-multi-region-organizations"></a>多区域组织安全和信息保护
-拥有单一 microsoft 365 租户的多区域组织安全和信息保护
+具有单个 Microsoft 365 租户的多地区组织的安全和信息保护
 
 | Item | 说明 |
 |:-----|:-----|
