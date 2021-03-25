@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 25647e65f9d031a68b9133df68573eac56f8ff24
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 7cf9d391533f52a3011698112d4e5be1495118c2
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51055593"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51200025"
 ---
 # <a name="supported-operating-systems-and-platforms---threat-and-vulnerability-management"></a>支持的操作系统和平台 - 威胁和漏洞管理
 
@@ -52,7 +52,7 @@ Windows Server 2008 R2 | 操作系统 (操作系统) 漏洞<br/>软件产品漏�
 Windows Server 2012 R2 | 操作系统 (操作系统) 漏洞<br/>软件产品漏洞<br/>操作系统 (操作系统) 配置评估<br/>安全控制配置评估<br/>软件产品配置评估
 Windows Server 2016 | 操作系统 (操作系统) 漏洞<br/>软件产品漏洞<br/>操作系统 (操作系统) 配置评估<br/>安全控制配置评估<br/>软件产品配置评估
 Windows Server 2019 | 操作系统 (操作系统) 漏洞<br/>软件产品漏洞<br/>操作系统 (操作系统) 配置评估<br/>安全控制配置评估<br/>软件产品配置评估
-macOS 10.13"High Sierra"及以上 | 操作系统 (操作系统) 漏洞<br/>软件产品漏洞 
+macOS 10.14 "Mojave"及以上 | 操作系统 (操作系统) 漏洞<br/>软件产品漏洞 
 Linux | 计划 (不支持) 
 
 ## <a name="related-articles"></a>相关文章

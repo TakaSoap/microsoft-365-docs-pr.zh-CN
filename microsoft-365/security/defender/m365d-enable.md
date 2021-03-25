@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 399da6fd54145f73ac72fdac04e8d25148f76507
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 18564b2a5a47b2cf4a8bbd94a3e3a315c8f269ec
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51186745"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51200253"
 ---
 # <a name="turn-on-microsoft-365-defender"></a>打开 Microsoft 365 Defender
 
@@ -96,7 +96,7 @@ Microsoft 支持人员可帮助在租户上设置或取消设置服务和相关�
 - [部署支持的服务](deploy-supported-services.md)
 - [Microsoft 365 Defender 概述](microsoft-365-defender.md)
 - [Microsoft Defender for Endpoint 概述](../defender-endpoint/microsoft-defender-endpoint.md)
-- [Defender for Office 365 概述](../defender-365-security/defender-for-office-365.md)
+- [Defender for Office 365 概述](../office-365-security/defender-for-office-365.md)
 - [Microsoft Cloud App Security 概述](/cloud-app-security/what-is-cloud-app-security)
 - [Microsoft Defender for Identity 概述](/azure-advanced-threat-protection/what-is-atp)
 - [Microsoft Defender for Endpoint 数据存储](../defender-endpoint/data-storage-privacy.md)

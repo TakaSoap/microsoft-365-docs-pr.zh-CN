@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: d54ab8eaa1e17be82752c480c963d3a24af56389
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: a04f3be1f13fb57cd76cda7115d014f2ba3aa8d6
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51187573"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51198821"
 ---
 # <a name="create-indicators"></a>创建指示器
 
@@ -33,13 +33,14 @@ ms.locfileid: "51187573"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
+> [!TIP]
 > 想要体验 Microsoft Defender for Endpoint？ [注册免费试用版。](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-automationexclusionlist-abovefoldlink)
 
 ICS (泄露) 是每个终结点保护解决方案中的重要功能。 此功能使 SecOps 能够设置指示器列表，用于检测并阻止 (防护和响应) 。
 
 创建定义实体的检测、防护和排除的指示器。 你可以定义要采取的操作以及何时应用该操作的持续时间，以及要应用该操作的设备组的范围。
 
-当前支持的源是 Defender for Endpoint 的云检测引擎、自动调查和修正引擎以及 Microsoft Defender AV (终结点) 。
+当前支持的源是 Defender for Endpoint 的云检测引擎、自动调查和修正引擎以及 Microsoft Defender 防病毒 (终结点) 。
 
 **云检测引擎**<br>
 Defender for Endpoint 的云检测引擎会定期扫描收集的数据并尝试匹配你设置的指示器。 当有匹配时，将按照你为 IoC 指定的设置来采取措施。
@@ -63,8 +64,8 @@ Defender for Endpoint 的云检测引擎会定期扫描收集的数据并尝试�
 - [证书](indicator-certificates.md)
 
 
->[!NOTE]
->每个租户限制为 15，000 个指示器。
+> [!NOTE]
+> 每个租户限制为 15，000 个指示器。 文件和证书指示器不会阻止为 [Microsoft Defender 防病毒定义的排除项](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-exclusions-microsoft-defender-antivirus)。 Microsoft Defender 防病毒处于被动模式时不支持指示器。 
 
 
 ## <a name="related-topics"></a>相关主题

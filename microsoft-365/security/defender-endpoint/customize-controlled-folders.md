@@ -12,19 +12,17 @@ author: denisebmsft
 ms.author: deniseb
 ms.reviewer: jcedola, dbodorin, vladiso, nixanm, anvascon
 manager: dansimp
-ms.date: 01/06/2021
+ms.date: 03/24/2021
 ms.technology: mde
-ms.openlocfilehash: 64f96544361a672881c590716adea80f40777c6e
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.topic: how-to
+ms.openlocfilehash: 0962913df63e6837664cdb8ff79710d66e66977c
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51163335"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51199897"
 ---
 # <a name="customize-controlled-folder-access"></a>自定义受控文件夹访问权限
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
-
 
 **适用于：**
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
@@ -120,7 +118,7 @@ ms.locfileid: "51163335"
 
 4. 选择 **添加允许的应用** 并按照提示添加应用。
 
-    ![如何添加允许的应用按钮的屏幕截图](/microsoft-365/security/defender-endpoint/images/cfa-allow-app)
+   :::image type="content" source="images/cfa-allow-app.png" alt-text="添加允许的应用按钮":::
 
 ### <a name="use-group-policy-to-allow-specific-apps"></a>使用组策略允许特定应用
 
@@ -149,7 +147,7 @@ ms.locfileid: "51163335"
 
    继续使用 向 `Add-MpPreference -ControlledFolderAccessAllowedApplications` 列表中添加更多应用。 使用此 cmdlet 添加的应用将显示在 Windows 安全应用中。
 
-![输入了上述 cmdlet 的 PowerShell 窗口屏幕截图](/microsoft-365/security/defender-endpoint/images/cfa-allow-app-ps)
+   :::image type="content" source="images/cfa-allow-app-ps.png" alt-text="允许应用的 PowerShell cmdlet":::
 
 > [!IMPORTANT]
 > 用于 `Add-MpPreference` 向列表中追加或添加应用。 使用 `Set-MpPreference` cmdlet 将覆盖现有列表。

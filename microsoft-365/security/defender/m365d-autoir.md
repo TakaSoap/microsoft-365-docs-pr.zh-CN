@@ -22,12 +22,12 @@ ms.custom: autoir
 ms.date: 01/29/2021
 ms.reviewer: evaldm, isco
 ms.technology: m365d
-ms.openlocfilehash: c12937c016875c26a7212117e41aac4349cb540d
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 8ed6f1ccd6587d6c618974a123f0d5d42a44e753
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51055868"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51199629"
 ---
 # <a name="automated-investigation-and-response-in-microsoft-365-defender"></a>Microsoft 365 Defender 中的自动调查和响应
 
@@ -90,7 +90,7 @@ ms.locfileid: "51055868"
 |实体 |威胁防护服务  |
 |:---------|:---------|
 |设备 (也称为终结点，有时也称为计算机)      |[Microsoft Defender for Endpoint](../defender-endpoint/automated-investigations.md)<br/>[Microsoft Defender for Identity](/azure-advanced-threat-protection/what-is-atp) |      
-|电子邮件 (可能包含文件和 URL 的电子邮件)      |[Microsoft Defender for Office 365](../defender-365-security/defender-for-office-365.md)         |
+|电子邮件 (可能包含文件和 URL 的电子邮件)      |[Microsoft Defender for Office 365](../office-365-security/defender-for-office-365.md)         |
 
 > [!NOTE]
 > 不是每个警报都会触发自动调查，并且并非所有调查都会触发自动修正操作;这取决于如何为组织配置自动调查和响应。 请参阅 [在 Microsoft 365 Defender](m365d-configure-auto-investigation-response.md)中配置自动调查和响应功能。

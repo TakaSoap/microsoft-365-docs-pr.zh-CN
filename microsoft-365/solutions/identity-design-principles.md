@@ -14,12 +14,12 @@ ms.collection:
 - M365solutions
 ms.custom: seo-marvel-jun2020
 f1.keywords: NOCSH
-ms.openlocfilehash: 746ca59fd0e9eb0d93d93c00b6a279a9156cc524
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: da70bbfe5c4dfa4f9eda16adec709826de1247b7
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51050734"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51200013"
 ---
 # <a name="to-identity-and-beyondone-architects-viewpoint"></a>为了标识和超越 — 一个架构师的见解
 
@@ -135,7 +135,7 @@ Azure AD 的策略引擎是使用条件 [访问策略实现的](/azure/active-di
 - [Azure AD Identity Protection](/azure/active-directory/identity-protection/) 
 - [Microsoft Defender for Identity](/azure-advanced-threat-protection/)
 - [Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)
-- [Microsoft Defender for Office 365](../security/defender-365-security/defender-for-office-365.md?view=o365-worldwide)
+- [Microsoft Defender for Office 365](../security/office-365-security/defender-for-office-365.md?view=o365-worldwide)
 - [Microsoft Cloud App Security](/cloud-app-security/) (MCAS) 
 - [Microsoft 365 Defender](../security/defender/microsoft-365-defender.md?view=o365-worldwide)
 - [Microsoft Intune](/mem/intune/)
@@ -227,7 +227,7 @@ Azure AD 具有 [详细的审核和报告](/azure/active-directory/reports-monit
 
 ### <a name="security-and-compliance-center-scc"></a>安全与合规中心 (SCC) 
 
-[Office 365](../security/defender-365-security/permissions-in-the-security-and-compliance-center.md) 安全与&中心中的权限是"角色组"的集合，它们与 Azure AD 角色不同。 这可能会令人困惑，因为其中一些角色组的名称与 Azure AD 角色 (例如，Security Reader) ，但是它们可以具有不同的成员身份。 我想要使用 Azure AD 角色。 每个角色组由一个或多个"角色"组成 (查看我有关重新使用同一单词的含义？) 并拥有 Azure AD（即启用电子邮件的对象）的成员。 此外，可以创建与角色同名的角色组，该角色组可能包含也可能不包含该角色 (避免这种混淆) 。
+[Office 365](../security/office-365-security/permissions-in-the-security-and-compliance-center.md) 安全与&中心中的权限是"角色组"的集合，它们与 Azure AD 角色不同。 这可能会令人困惑，因为其中一些角色组的名称与 Azure AD 角色 (例如，Security Reader) ，但是它们可以具有不同的成员身份。 我想要使用 Azure AD 角色。 每个角色组由一个或多个"角色"组成 (查看我有关重新使用同一单词的含义？) 并拥有 Azure AD（即启用电子邮件的对象）的成员。 此外，可以创建与角色同名的角色组，该角色组可能包含也可能不包含该角色 (避免这种混淆) 。
 
 从某种意义上说，这些是 Exchange 角色组模型的发展过程。 但是，Exchange Online 有自己的角色 [组管理](/exchange/permissions-exo) 界面。 Exchange Online 中的某些角色组从 Azure AD 或安全 & 合规中心锁定和管理，但其他角色组可能具有相同的或相似的名称，并且这些角色组在 Exchange Online (中进行管理，这进一步增加了) 。 建议避免使用 Exchange Online 用户界面，除非需要 Exchange 管理作用域。
 

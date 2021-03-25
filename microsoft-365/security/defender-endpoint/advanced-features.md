@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 41c97d122362ec1fa945fc012ab7a1da46a43b68
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: ed6f6b42570a908a1f4a83d46ef5b2de0c558692
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51165581"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51199737"
 ---
 # <a name="configure-advanced-features-in-defender-for-endpoint"></a>在 Defender for Endpoint 中配置高级功能
 
@@ -141,7 +141,7 @@ ms.locfileid: "51165581"
 > [!NOTE]
 > 你需要具有相应的许可证才能启用此功能。
 
-若要在 Office 365 威胁智能中接收上下文设备集成，你需要在安全与合规中心仪表板中启用适用于终结点& Defender。 有关详细信息，请参阅威胁 [调查和响应](https://docs.microsoft.com/microsoft-365/security/defender-365-security/office-365-ti)。
+若要在 Office 365 威胁智能中接收上下文设备集成，你需要在安全与合规中心仪表板中启用适用于终结点& Defender。 有关详细信息，请参阅威胁 [调查和响应](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-ti)。
 
 ## <a name="microsoft-threat-experts"></a>Microsoft 威胁专家
 

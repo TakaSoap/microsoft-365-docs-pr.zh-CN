@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: d78f90e78a50d5902070f441a1d60693a5f531c8
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 35a0b66a4cdc4cf39c15329eda2e0aafced79f34
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51185715"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51199605"
 ---
 # <a name="create-indicators-for-files"></a>创建文件指示器
 
@@ -35,7 +35,8 @@ ms.locfileid: "51185715"
 
 
 
->想要体验适用于终结点的 Defender？ [注册免费试用版。](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-automationexclusionlist-abovefoldlink)
+> [!TIP]
+> 想要体验适用于终结点的 Defender？ [注册免费试用版。](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-automationexclusionlist-abovefoldlink)
 
 通过禁止潜在恶意文件或可疑恶意软件，可防止攻击在组织中进一步传播。 如果你知道 PE 文件中可能存在恶意 (可执行) ，可以阻止它。 此操作将阻止在组织中计算机上读取、写入或执行该操作。
 
@@ -52,13 +53,13 @@ ms.locfileid: "51185715"
 - 若要开始阻止文件，首先需要打开"设置"[**中的"阻止或**](advanced-features.md)允许"功能。
 - 此功能旨在防止从 web (可疑恶意软件) 潜在恶意文件。 它当前支持可移植的可执行 (PE) 文件，包括 _.exe_ 和 _.dll_ 文件。 覆盖范围将随着时间的推移而延长。
 
->[!IMPORTANT]
->- 如果文件分类存在于允许或阻止操作之前的设备的缓存中，则不能对文件执行允许或阻止功能 
->- 受信任的已签名文件将受到不同的处理。 Defender for Endpoint 经过优化，可处理恶意文件。 在某些情况下，尝试阻止受信任的已签名文件可能有性能影响。
+如果将大型文件从网络共享复制到本地设备，尤其是通过 VPN 连接，则性能可能会受到影响。 
 
- 
->[!NOTE]
->通常，文件块将在几分钟内强制执行，但可能需要 30 分钟以上的时间。
+> [!IMPORTANT]
+> - 如果文件分类存在于允许或阻止操作之前的设备的缓存中，则不能对文件执行允许或阻止功能 
+> - 受信任的已签名文件将受到不同的处理。 Defender for Endpoint 经过优化，可处理恶意文件。 在某些情况下，尝试阻止受信任的已签名文件可能有性能影响。
+> - 通常，文件块将在几分钟内强制执行，但可能需要 30 分钟以上的时间。
+> - 如果存在冲突的文件指示器策略，则应用更安全的策略的强制策略。 例如，如果两种哈希类型都定义了相同的文件，则 SHA-256 文件哈希指示器策略优先于 MD5 文件哈希指示器策略。
 
 ### <a name="create-an-indicator-for-files-from-the-settings-page"></a>从设置页创建文件指示器
 

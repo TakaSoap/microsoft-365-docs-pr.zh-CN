@@ -16,12 +16,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: a5ff570439dfecd287a5a5975358262af71d8025
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: bd7c98f5888f8dc93a8aa341b186ea744d5b2882
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51051014"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51199929"
 ---
 # <a name="configure-threat-protection-capabilities-across-microsoft-365"></a>配置 Microsoft 365 中的威胁防护功能
 
@@ -42,13 +42,13 @@ Microsoft 已测试并推荐了一组特定的条件访问和相关策略，用�
 
 ![部署基线保护的过程](../media/deploy-threat-protection/deploy-threat-protection-identity-access-steps.png) 
 
-1. [配置先决条件，包括 Azure AD Identity Protection。](../security/defender-365-security/identity-access-prerequisites.md)
-2. [配置用于基线保护的常见标识和设备](../security/defender-365-security/identity-access-policies.md) 访问策略。
-3. 为来宾用户 [、Microsoft](../security/defender-365-security/identity-access-policies-guest-access.md) [Teams、Exchange](../security/defender-365-security/teams-access-policies.md) [Online](../security/defender-365-security/secure-email-recommended-policies.md)和 [SharePoint Online 和 OneDrive 配置策略](../security/defender-365-security/sharepoint-file-access-policies.md)。
+1. [配置先决条件，包括 Azure AD Identity Protection。](../security/office-365-security/identity-access-prerequisites.md)
+2. [配置用于基线保护的常见标识和设备](../security/office-365-security/identity-access-policies.md) 访问策略。
+3. 为来宾用户 [、Microsoft](../security/office-365-security/identity-access-policies-guest-access.md) [Teams、Exchange](../security/office-365-security/teams-access-policies.md) [Online](../security/office-365-security/secure-email-recommended-policies.md)和 [SharePoint Online 和 OneDrive 配置策略](../security/office-365-security/sharepoint-file-access-policies.md)。
 
 ### <a name="more-information-about-protecting-identities"></a>有关保护标识的信息
 
-- [标识和设备访问配置](../security/defender-365-security/microsoft-365-policies-configurations.md)
+- [标识和设备访问配置](../security/office-365-security/microsoft-365-policies-configurations.md)
 - [Azure MFA 安全指南](/azure/active-directory/authentication/multi-factor-authentication-security-best-practices)
 
 ## <a name="step-2-configure-microsoft-defender-for-identity"></a>步骤 2：为标识配置 Microsoft Defender
@@ -71,7 +71,7 @@ Microsoft Defender for Identity 支持使用 SecOps (安全) 分析人员和安�
 
 ### <a name="more-information-about-microsoft-defender-for-identity"></a>有关 Microsoft Defender for Identity 详细信息
 
-- [什么是 Microsoft Defender for Identity？](/azure-advanced-threat-protection/what-is-atp)
+- [什么是 Microsoft Defender for Identity?](/azure-advanced-threat-protection/what-is-atp)
 - [视频：Microsoft Defender 标识简介](https://www.youtube.com/watch?reload=9&v=EGY2m8yU_KE)
 - [Microsoft Defender for Identity 部署](/azure-advanced-threat-protection/what-is-atp#whats-next)
 
@@ -96,11 +96,11 @@ Microsoft 365 Defender 将跨工作负载的警报、事件、自动调查和响
 
 ## <a name="step-4-configure-microsoft-defender-for-office-365"></a>步骤 4：为 Office 365 配置 Microsoft Defender
 
-[Microsoft Defender for Office 365](../security/defender-365-security/defender-for-office-365.md) 保护您的组织免受电子邮件、附件 (URL、Office 文档和协作) 中的恶意威胁。 下表列出了 Microsoft 365 E5 中包含的 Microsoft Defender for Office 365 特性和功能：
+[Microsoft Defender for Office 365](../security/office-365-security/defender-for-office-365.md) 保护您的组织免受电子邮件、附件 (URL、Office 文档和协作) 中的恶意威胁。 下表列出了 Microsoft 365 E5 中包含的 Microsoft Defender for Office 365 特性和功能：
 
 |配置、保护和检测功能|自动化、调查、修正和教育功能|
 |---|---|
-|[安全附件](../security/defender-365-security/safe-attachments.md)<br/>[安全链接](../security/defender-365-security/safe-links.md)<br/>[安全文档](../security/defender-365-security/safe-docs.md)<br/>[适用于 SharePoint、OneDrive 和 Microsoft Teams 的 ATP](../security/defender-365-security/mdo-for-spo-odb-and-teams.md)<br/>[Defender for Office 365 保护中的防钓鱼](../security/defender-365-security/set-up-anti-phishing-policies.md#Exclusive-settings-in-anti-phishing-policies-in Microsoft-Defender-for-Office-365)|[威胁跟踪器](../security/defender-365-security/threat-trackers.md)<br/>[威胁资源管理器](../security/defender-365-security/threat-explorer.md)<br/>[自动调查和响应](../security/defender-365-security/office-365-air.md)<br/>[攻击模拟器](../security/defender-365-security/attack-simulator.md)|
+|[安全附件](../security/office-365-security/safe-attachments.md)<br/>[安全链接](../security/office-365-security/safe-links.md)<br/>[安全文档](../security/office-365-security/safe-docs.md)<br/>[适用于 SharePoint、OneDrive 和 Microsoft Teams 的 ATP](../security/office-365-security/mdo-for-spo-odb-and-teams.md)<br/>[Defender for Office 365 保护中的防钓鱼](../security/office-365-security/set-up-anti-phishing-policies.md#Exclusive-settings-in-anti-phishing-policies-in Microsoft-Defender-for-Office-365)|[威胁跟踪器](../security/office-365-security/threat-trackers.md)<br/>[威胁资源管理器](../security/office-365-security/threat-explorer.md)<br/>[自动调查和响应](../security/office-365-security/office-365-air.md)<br/>[攻击模拟器](../security/office-365-security/attack-simulator.md)|
 |
 
 借助适用于 Office 365 的 Microsoft Defender，整个组织人员可以更安全地进行通信和协作，并针对他们的电子邮件内容和 Office 文档进行威胁防护。
@@ -109,14 +109,14 @@ Microsoft 365 Defender 将跨工作负载的警报、事件、自动调查和响
 
 ![部署 Microsoft Defender for Office 365 的过程](../media/deploy-threat-protection/deploy-office365-atp-steps.png) 
 
-1. [设置和配置适用于 Office 365 的 Microsoft Defender 策略](../security/defender-365-security/protect-against-threats.md)。
-2. [查看和使用适用于 Office 365](../security/defender-365-security/view-reports-for-mdo.md)的 Microsoft Defender 报告。
-3. [使用威胁调查和响应功能](../security/defender-365-security/office-365-ti.md)。
+1. [设置和配置适用于 Office 365 的 Microsoft Defender 策略](../security/office-365-security/protect-against-threats.md)。
+2. [查看和使用适用于 Office 365](../security/office-365-security/view-reports-for-mdo.md)的 Microsoft Defender 报告。
+3. [使用威胁调查和响应功能](../security/office-365-security/office-365-ti.md)。
 
 ### <a name="more-information-about-microsoft-defender-for-office-365"></a>有关 Microsoft Defender for Office 365 详细信息
 
-- [Microsoft Defender for Office 365 概述](../security/defender-365-security/defender-for-office-365.md)
-- [Microsoft Defender for Office 365 的新增功能](../security/defender-365-security/whats-new-in-defender-for-office-365.md)
+- [Microsoft Defender for Office 365 概述](../security/office-365-security/defender-for-office-365.md)
+- [Microsoft Defender for Office 365 的新增功能](../security/office-365-security/whats-new-in-defender-for-office-365.md)
 
 ## <a name="step-5-configure-microsoft-defender-for-endpoint"></a>步骤 5：为终结点配置 Microsoft Defender
 

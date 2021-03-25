@@ -14,20 +14,20 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 创建一个 Microsoft 365 环境来测试标识和设备访问情况，其中内附仅限云的身份验证的先决条件。
-ms.openlocfilehash: 537718eb0efcffc296162a4458158efcbdad9986
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 927aa032e4181206b3a744da7076b696ac5cf4d4
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51051540"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51199545"
 ---
 # <a name="identity-and-device-access-prerequisites-for-cloud-only-in-your-microsoft-365-test-environment"></a>Microsoft 365 测试环境中仅限云的标识和设备访问先决条件
 
 *本测试实验室指南仅适用于 Microsoft 365 企业版测试环境。*
 
-[标识和设备访问](../security/defender-365-security/microsoft-365-policies-configurations.md) 配置是一组建议配置和条件访问策略，用于保护对与 Azure AD (Azure Active Directory 集成的所有服务) 。
+[标识和设备访问](../security/office-365-security/microsoft-365-policies-configurations.md) 配置是一组建议配置和条件访问策略，用于保护对与 Azure AD (Azure Active Directory 集成的所有服务) 。
 
-本文介绍了如何配置 Microsoft 365 测试环境，使其满足标识和设备访问[仅限云的先决条件配置](../security/defender-365-security/identity-access-prerequisites.md#prerequisites)的要求。
+本文介绍了如何配置 Microsoft 365 测试环境，使其满足标识和设备访问[仅限云的先决条件配置](../security/office-365-security/identity-access-prerequisites.md#prerequisites)的要求。
 
 此测试环境的设置分为以下八个阶段：
 
@@ -109,11 +109,11 @@ ms.locfileid: "51051540"
   Get-CsOAuthConfiguration
   ```
 
-结果是测试环境满足标识和设备访问的仅云 [先决条件](../security/defender-365-security/identity-access-prerequisites.md#prerequisites) 配置的要求。 
+结果是测试环境满足标识和设备访问的仅云 [先决条件](../security/office-365-security/identity-access-prerequisites.md#prerequisites) 配置的要求。 
 
 ## <a name="next-step"></a>后续步骤
 
-使用[常见标识和设备访问策略](../security/defender-365-security/identity-access-policies.md)配置基于这些先决条件构建的策略并保护标识和设备。
+使用[常见标识和设备访问策略](../security/office-365-security/identity-access-policies.md)配置基于这些先决条件构建的策略并保护标识和设备。
 
 ## <a name="see-also"></a>另请参阅
 

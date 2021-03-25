@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: cb2923c3f2cb3f27a864fdc3c5070107998823d5
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 94cb92974b0e73a1254fd024c39d9a6ee620aad3
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51056104"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51199533"
 ---
 # <a name="intune-based-deployment-for-microsoft-defender-for-endpoint-for-mac"></a>适用于适用于 Mac 的 Microsoft Defender for Endpoint 的基于 Intune 的部署
 
@@ -137,7 +137,7 @@ ms.locfileid: "51056104"
 
 1. 确认设备管理。
 
-    ![确认设备管理屏幕截图](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-3-confirmdevicemgmt)
+    ![确认设备管理屏幕截图](./images/mdatp-3-confirmdevicemgmt.png)
 
     选择 **"打开系统首选项"，** 在列表中找到"**管理配置文件**"，然后选择"批准 **..."。** 你的管理配置文件将显示为 **"已验证"：**
 
@@ -160,9 +160,9 @@ ms.locfileid: "51056104"
 
 2. 选择配置文件的名称。 将 **Platform=macOS** 更改为 **Profile type=Extensions**。 选择“创建”。
 
-3. 在 `Basics` 选项卡中，为此新配置文件命名。
+3. 在 **"基本"** 选项卡中，为此新配置文件命名。
 
-4. 在 `Configuration settings` 选项卡中，在 部分中添加以下 `Allowed system extensions` 条目：
+4. 在" **配置设置** "选项卡中，在"允许的系统扩展" **部分添加以下** 条目：
 
     捆绑包标识符         | 团队标识符
     --------------------------|----------------
@@ -170,9 +170,9 @@ ms.locfileid: "51056104"
     com.microsoft.wdav.netext | UBF8T346G9
 
     > [!div class="mx-imgBorder"]
-    > !["配置设置"选项卡的屏幕截图，包括"允许的团队标识符"部分](images/mac-system-extension-intune2.png)
+    > !["基本"选项卡上的"配置"设置中的扩展设置的屏幕截图](images/mac-system-extension-intune2.png)
 
-5. 在 `Assignments` 选项卡中，将此配置文件分配给"所有用户 **&所有设备"。**
+5. 在"**分配"** 选项卡中，将此配置文件分配给"所有 **&所有用户"。**
 
 6. 查看并创建此配置文件。
 
@@ -186,7 +186,7 @@ ms.locfileid: "51056104"
 
 4. 选择“**确定**”。
 
-    ![系统配置文件屏幕截图](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-6-systemconfigurationprofiles)
+    ![从文件导入自定义配置文件的配置](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-6-systemconfigurationprofiles)
 
 5. 选择 **"管理**  >  **工作分配"。** 在"**包含"** 选项卡中，**选择"分配给&所有设备"。**
 
@@ -194,14 +194,14 @@ ms.locfileid: "51056104"
 
 7. 创建另一个配置文件，为它命名，然后上载 intune/WindowsDefenderATPOnboarding.xml文件。
 
-8. 从 `fulldisk.mobileconfig` [GitHub 存储库下载并将其](https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/mobileconfig/profiles/fulldisk.mobileconfig) 另存为 `tcc.xml` 。 创建另一个配置文件，提供任意名称，然后向该文件上载此文件。<a name="create-system-configuration-profiles-step-8" id = "create-system-configuration-profiles-step-8"></a>
+8. 从 [GitHub](https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/mobileconfig/profiles/fulldisk.mobileconfig)存储库下载 **fulldisk.mobileconfig** 并将其另存为 **tcc.xml。** 创建另一个配置文件，提供任意名称，然后向该文件上载此文件。<a name="create-system-configuration-profiles-step-8" id = "create-system-configuration-profiles-step-8"></a>
 
    > [!CAUTION]
    > macOS 10.15 (Catalina) 新增了安全和隐私增强功能。 从此版本开始，默认情况下，应用程序无法访问磁盘上的某些位置 (如文档、下载、桌面等) 未经明确同意。 如果没有此同意，Microsoft Defender for Endpoint 将无法完全保护你的设备。
    >
    > 此配置文件授予对 Microsoft Defender for Endpoint 的完全磁盘访问权限。 如果你之前通过 Intune 配置了适用于 Endpoint 的 Microsoft Defender，我们建议你通过此配置文件更新部署。
 
-9. 作为终结点检测和响应功能的一部分，Microsoft Defender for Mac 终结点会检查套接字流量，将此信息报告给 Microsoft Defender 安全中心门户。 以下策略允许网络扩展执行此功能。 从 `netfilter.mobileconfig` [我们的 GitHub 存储库下载](https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/mobileconfig/profiles/netfilter.mobileconfig)，将其另存为netext.xml，然后使用与前面部分中相同的步骤部署它。 <a name = "create-system-configuration-profiles-step-9" id = "create-system-configuration-profiles-step-9"></a>
+9. 作为终结点检测和响应功能的一部分，Microsoft Defender for Mac 终结点会检查套接字流量，将此信息报告给 Microsoft Defender 安全中心门户。 以下策略允许网络扩展执行此功能。 从 [GitHub](https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/mobileconfig/profiles/netfilter.mobileconfig)存储库下载 **netfilter.mobileconfig，** 将其另存为netext.xml，然后使用与前面部分中相同的步骤部署它。 <a name = "create-system-configuration-profiles-step-9" id = "create-system-configuration-profiles-step-9"></a>
 
 10. 若要允许 Microsoft Defender for Endpoint for Mac 和 Microsoft 自动更新在 macOS 10.15 (Catalina) 上的 UI 中显示通知，请从 `notif.mobileconfig` [GitHub](https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/mobileconfig/profiles/notif.mobileconfig) 存储库下载并作为自定义负载导入。 <a name = "create-system-configuration-profiles-step-10" id = "create-system-configuration-profiles-step-10"></a>
 
@@ -210,7 +210,7 @@ ms.locfileid: "51056104"
 将 Intune 更改传播到已注册的设备后，你可以看到它们列在监视  >  **设备状态下**：
 
 > [!div class="mx-imgBorder"]
-> ![kext 的屏幕截图 - 设备状态](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-7-devicestatusblade)
+> ![监视器中的设备状态视图](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-7-devicestatusblade.png)
 
 ## <a name="publish-application"></a>发布应用程序
 
@@ -222,7 +222,7 @@ ms.locfileid: "51056104"
 
 4. 选择 **"** 配置"并添加所需信息。
 
-5. 使用 **macOS High Sierra 10.13** 作为最低操作系统。
+5. 使用 **macOS High Sierra 10.14** 作为最低操作系统。
 
 6. 将 *忽略应用版本设置为***是**。 其他设置可以是任意值。
 
@@ -232,12 +232,12 @@ ms.locfileid: "51056104"
     > 如果 Intune 上传的版本低于设备上的版本，将安装较低版本，从而有效地降级适用于 Endpoint 的 Microsoft Defender。 这可能会导致应用程序无法正常工作。 有关 [产品更新方法的其他](mac-updates.md) 信息，请参阅部署适用于 Mac 的 Microsoft Defender for Endpoint 的更新。 如果你部署了 Microsoft Defender for Endpoint， *忽略应用* 版本设置为 **否**，请将其更改为 **是**。 如果客户端设备上仍无法安装 Microsoft Defender for Endpoint，请卸载 Microsoft Defender for Endpoint 并推送更新的策略。
      
     > [!div class="mx-imgBorder"]
-    > !["添加应用程序"对话框中"配置应用信息"选项的屏幕截图](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-8-intuneappinfo)
+    > ![应用程序添加中的应用程序信息显示](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-8-intuneappinfo)
 
 7. 选择 **"确定"** 和"**添加"。**
 
     > [!div class="mx-imgBorder"]
-    > ![示例概述的屏幕截图](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-9-intunepkginfo)
+    > ![通知窗口中显示的设备状态](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-9-intunepkginfo)
 
 8. 上载程序包可能需要一些时间。 完成后，从列表中选择程序包，然后转到 **分配和****添加组**。
 
@@ -270,7 +270,7 @@ ms.locfileid: "51056104"
     > [!div class="mx-imgBorder"]
     > ![状态栏中的 Microsoft Defender 图标屏幕截图](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-icon-bar)
 
-## <a name="troubleshooting"></a>疑难解答
+## <a name="troubleshooting"></a>故障排除
 
 问题：未找到许可证
 

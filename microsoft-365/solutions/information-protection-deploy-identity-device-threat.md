@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: 使用 Microsoft 365 的身份、设备和威胁防护服务防止个人数据泄露。
-ms.openlocfilehash: 145b8a59f7eafb95adf71dc24613ee15ef1c2cca
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 5e08ef574e199769e572b3836b3323dc88fc4bbd
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51052346"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51199461"
 ---
 # <a name="use-identity-device-and-threat-protection-for-data-privacy-regulation"></a>使用标识、设备和威胁防护进行数据隐私管理
 
@@ -70,7 +70,7 @@ Microsoft 365 提供了许多标识、设备和威胁防护功能，组织可以
 - 要求移动设备在处于非活动状态时锁定。
 - 要求移动设备在多个登录失败时进行擦除。
 
-将 [Exchange Online Protection 和 Microsoft Defender for Office 365](../security/defender-365-security/defender-for-office-365.md) 用于"抵御威胁 **"类别，** 通过这两种类别，可以：
+将 [Exchange Online Protection 和 Microsoft Defender for Office 365](../security/office-365-security/defender-for-office-365.md) 用于"抵御威胁 **"类别，** 通过这两种类别，可以：
 
 - 启用 SPF (DMARC 和 DKIM 身份验证) 。
 - 为 Office 365 设置 Microsoft Defender 防钓鱼策略。
@@ -81,8 +81,8 @@ Microsoft 365 提供了许多标识、设备和威胁防护功能，组织可以
 
 ### <a name="references"></a>引用：
 
-- [常见标识和设备访问策略](../security/defender-365-security/identity-access-policies.md)
+- [常见标识和设备访问策略](../security/office-365-security/identity-access-policies.md)
 - [在 Office 365 中抵御威胁](https://support.office.com/article/protect-against-threats-in-office-365-b10023f6-f30f-45d3-b3ad-b71aa4aa0d58)
-- [安全附件](../security/defender-365-security/safe-attachments.md)
-- [安全链接](../security/defender-365-security/safe-links.md)
-- [安全文档](../security/defender-365-security/safe-docs.md)
+- [安全附件](../security/office-365-security/safe-attachments.md)
+- [安全链接](../security/office-365-security/safe-links.md)
+- [安全文档](../security/office-365-security/safe-docs.md)

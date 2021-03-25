@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 17d55a434cc0499b9b24039f19ec7ed3c94310e8
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 6582e4e940dc9910e7d341c92b525379b924f35b
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51053555"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51199953"
 ---
 # <a name="custom-roles-in-role-based-access-control-for-microsoft-365-defender"></a>Microsoft 365 Defender 基于角色的访问控制中的自定义角色
 
@@ -53,7 +53,7 @@ ms.locfileid: "51053555"
 可以通过以下每个安全门户创建并单独管理自定义角色和权限： 
 
 - Microsoft Defender for Endpoint – [编辑 Microsoft Defender for Endpoint 中的角色](../defender-endpoint/user-roles.md)
-- Microsoft Defender for Office 365 – 安全与 [合规&中的权限](../defender-365-security/permissions-in-the-security-and-compliance-center.md?preserve-view=true&view=o365-worldwide)
+- Microsoft Defender for Office 365 – 安全与 [合规&中的权限](../office-365-security/permissions-in-the-security-and-compliance-center.md?preserve-view=true&view=o365-worldwide)
 - Microsoft Cloud App Security – [管理管理员访问权限](/cloud-app-security/manage-admins)
 
 通过单个门户创建的每个自定义角色都允许访问相关产品门户的数据。 例如，通过 Microsoft Defender for Endpoint 创建的自定义角色将仅允许访问 Defender for Endpoint 数据。

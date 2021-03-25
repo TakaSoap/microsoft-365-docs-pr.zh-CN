@@ -17,12 +17,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.prod: m365-security
 ms.technology: m365d
-ms.openlocfilehash: 6a40b80faef124a3a03e84a749b901a01791f6fb
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 85afc0dedd4fea9ea11c378ca35523d668acc84c
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51165077"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51199179"
 ---
 # <a name="microsoft-defender-for-office-365-in-the-microsoft-365-security-center"></a>Microsoft 365 安全中心中适用于 Office 365 的 Microsoft Defender
 
@@ -33,7 +33,7 @@ ms.locfileid: "51165077"
 **适用于：**
 - [Microsoft 365 Defender](microsoft-365-defender.md)
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft Defender for Office 365](/microsoft-365/security/defender-365-security/defender-for-office-365)
+- [Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/defender-for-office-365)
 
 [https://security.microsoft.com](https://security.microsoft.com) 改进的 [Microsoft 365 安全中心](./overview-security-center.md) 结合了现有 Microsoft 安全门户（包括 Microsoft Defender 安全中心和 Office 365 安全与合规中心）的安全性功能。 此改进的中心有助于安全团队更高效地保护组织免遭威胁侵害。
 
@@ -49,18 +49,18 @@ ms.locfileid: "51165077"
 
 |**区域**  |**更改说明**  |
 |---------|---------|
-| [电子邮件实体页面](../defender-365-security/mdo-email-entity-page.md) | 本 **将** 分散在不同页或视图中的所有电子邮件信息。 调查电子邮件中的威胁和趋势是 *集中*。 可在同一电子邮件页面上访问邮件头信息和电子邮件预览，以及其他有用的电子邮件相关信息。 同样，可在同一页面的选项卡上找到恶意文件附件或 URL 的阻止状态。 电子邮件实体页面使管理员和安全运营团队能够快速了解电子邮件威胁及其状态，然后快速确定处理情况。  |
-| [调查](../defender-365-security/office-365-air.md#changes-are-coming-soon-in-your-security-center) | 将 [Defender for Office 365](/microsoft-365/security/defender-365-security/defender-for-office-365) 和 [Defender for Endpoint](../defender-endpoint/automated-investigations.md)。 通过这些更新和改进，安全操作团队将能够在一处查看电子邮件、协作内容、用户帐户和设备中的自动调查和修正操作的详细信息。  | 
+| [电子邮件实体页面](../office-365-security/mdo-email-entity-page.md) | 本 **将** 分散在不同页或视图中的所有电子邮件信息。 调查电子邮件中的威胁和趋势是 *集中*。 可在同一电子邮件页面上访问邮件头信息和电子邮件预览，以及其他有用的电子邮件相关信息。 同样，可在同一页面的选项卡上找到恶意文件附件或 URL 的阻止状态。 电子邮件实体页面使管理员和安全运营团队能够快速了解电子邮件威胁及其状态，然后快速确定处理情况。  |
+| [调查](../office-365-security/office-365-air.md#changes-are-coming-soon-in-your-security-center) | 将 [Defender for Office 365](/microsoft-365/security/office-365-security/defender-for-office-365) 和 [Defender for Endpoint](../defender-endpoint/automated-investigations.md)。 通过这些更新和改进，安全操作团队将能够在一处查看电子邮件、协作内容、用户帐户和设备中的自动调查和修正操作的详细信息。  | 
 | [警报视图](../../compliance/alert-policies.md) | Office **和** 中心中的"视图警报"窗格现在包含指向 Microsoft 365 安全中心的链接。 单击"打开 **通知** 链接，Microsoft 365 安全中心将打开。 可以通过单击警报 **中** Office 365 警报来访问通知页面。 |
-| [攻击模拟培训](../defender-365-security/attack-simulation-training-insights.md)   | 使用"攻击攻击"培训在组织中运行实际攻击方案。 这些模拟攻击可帮助在真正攻击对组织造成攻击之前对员工进行培训。 攻击攻击培训包括更多选项、增强的报告以及改进的培训课程，有助于更轻松地提供和管理攻击攻击方案和培训方案。  |
+| [攻击模拟培训](../office-365-security/attack-simulation-training-insights.md)   | 使用"攻击攻击"培训在组织中运行实际攻击方案。 这些模拟攻击可帮助在真正攻击对组织造成攻击之前对员工进行培训。 攻击攻击培训包括更多选项、增强的报告以及改进的培训课程，有助于更轻松地提供和管理攻击攻击方案和培训方案。  |
 
 这些方面未发生变化：
-- [资源管理器](../defender-365-security/threat-explorer.md)
+- [资源管理器](../office-365-security/threat-explorer.md)
 - [策略和规则](../../compliance/alert-policies.md)
-- [市场活动](../defender-365-security/campaigns.md)
-- [提交](../defender-365-security/admin-submission.md)
+- [市场活动](../office-365-security/campaigns.md)
+- [提交](../office-365-security/admin-submission.md)
 - [审阅](./m365d-action-center.md)
-- [威胁跟踪器](../defender-365-security/threat-trackers.md)
+- [威胁跟踪器](../office-365-security/threat-trackers.md)
 
 此外，请查看 **底部的** "相关信息"部分。
 
@@ -135,7 +135,7 @@ ms.locfileid: "51165077"
 ## <a name="advanced-hunting-example-for-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 高级搜索示例
 想要开始使用高级搜索搜索电子邮件威胁？ 请尝试使用以下命令：
 
-[Microsoft Defender for Office 365文章](/microsoft-365/security/defender-365-security/defender-for-office-365)的[“入门”](/microsoft-365/security/defender-365-security/defender-for-office-365.md#getting-started)部分具有如下所示的逻辑早期配置块：
+[Microsoft Defender for Office 365文章](/microsoft-365/security/office-365-security/defender-for-office-365)的[“入门”](/microsoft-365/security/office-365-security/defender-for-office-365.md#getting-started)部分具有如下所示的逻辑早期配置块：
 
 1. 为所有内容的名称配置“anti”。
 - 反恶意软件
@@ -147,7 +147,7 @@ ms.locfileid: "51165077"
 3. 保护工作负载（例如 SharePoint Online、OneDrive 和 Teams）
 4. 通过零时差自动清除进行保护
 
-以及一 [链接](../defender-365-security/protect-against-threats.md) 一起跳入，在"第 1 天"进行配置。
+以及一 [链接](../office-365-security/protect-against-threats.md) 一起跳入，在"第 1 天"进行配置。
 
 **入门** 最后一步是通过 **0 小时自动清除清除**（也称为 ZAP）保护用户。 了解你为 ZAP 提供可疑或恶意邮件、发送后成功这一操作是否非常重要。
 
@@ -182,4 +182,4 @@ LogonTime = Timestamp, AccountDisplayName, Application, Protocol, DeviceName, Lo
 - [电子邮件和协作警报](../../compliance/alert-policies.md#default-alert-policies)
 - [跨设备、电子邮件、应用和标识搜索威胁](./advanced-hunting-query-emails-devices.md)
 - [自定义检测规则](/microsoft-365/security/defender-endpoint/custom-detection-rules)
-- [创建钓鱼欺诈欺诈](../defender-365-security/attack-simulation-training.md)[有效负载，给员工提供培训](../defender-365-security/attack-simulation-training-payloads.md)
+- [创建钓鱼欺诈欺诈](../office-365-security/attack-simulation-training.md)[有效负载，给员工提供培训](../office-365-security/attack-simulation-training-payloads.md)

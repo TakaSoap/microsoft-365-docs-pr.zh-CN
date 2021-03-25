@@ -17,12 +17,12 @@ ms.custom: autoir
 ms.reviewer: evaldm, isco
 f1.keywords: CSH
 ms.technology: m365d
-ms.openlocfilehash: 7a33fdf1436d88906257c8b603a5da579c2e3846
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: afdf4b4ec8824fa49843074880bcd6f4f1857cca
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51056556"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51200265"
 ---
 # <a name="configure-automated-investigation-and-response-capabilities-in-microsoft-365-defender"></a>在 Microsoft 365 Defender 中配置自动调查和响应功能
 
@@ -46,7 +46,7 @@ Microsoft 365 Defender 包括强大的自动调查和响应 [功能](m365d-autoi
 |订阅要求 |以下订阅之一： <br/>- Microsoft 365 E5<br/>- Microsoft 365 A5<br/>- Microsoft 365 E5 安全中心<br/>- Microsoft 365 A5 安全中心<br/>- Office 365 E5 以及企业移动性 + 安全性 E5 以及 Windows E5<p> 请参阅 [Microsoft 365 Defender 许可要求](./prerequisites.md#licensing-requirements)。|
 |网络要求 |- [已启用 Microsoft Defender for Identity](/azure-advanced-threat-protection/what-is-atp)<br/>- [已配置 Microsoft Cloud App Security](/cloud-app-security/what-is-cloud-app-security)<br/>- [Microsoft Defender for Identity 集成](/cloud-app-security/mdi-integration) |
 |Windows 计算机要求 |- 已安装 Windows 10 版本 1709 或更高版本（请参阅 [Windows 10 发行信息](/windows/release-information/)） <br/>- 已配置以下威胁防护服务：<br/>- [Microsoft Defender for Endpoint](../defender-endpoint/configure-endpoints.md)<br/>- [Microsoft Defender 防病毒](/windows/security/threat-protection/windows-defender-antivirus/configure-windows-defender-antivirus-features) |
-|保护电子邮件内容和 Office 文件 |[配置了 Microsoft Defender for Office 365](/microsoft-365/security/defender-365-security/defender-for-office-365#configure-atp-policies) |
+|保护电子邮件内容和 Office 文件 |[配置了 Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/defender-for-office-365#configure-atp-policies) |
 |权限 | 若要配置自动调查和响应功能，必须在 Azure Active Directory () 或 [https://portal.azure.com](https://portal.azure.com) Microsoft 365 管理中心 () 中分配全局管理员或安全管理员 [https://admin.microsoft.com](https://admin.microsoft.com) 角色。<p>若要获取使用自动调查和响应功能（如审阅、批准或拒绝挂起操作）所需的权限，请参阅操作中心任务所需的 [权限](m365d-action-center.md#required-permissions-for-action-center-tasks)。 |
 
 ## <a name="review-or-change-the-automation-level-for-device-groups"></a>查看或更改设备组的自动化级别
@@ -61,21 +61,21 @@ Microsoft 365 Defender 包括强大的自动调查和响应 [功能](m365d-autoi
 
 ## <a name="review-your-security-and-alert-policies-in-office-365"></a>查看 Office 365 中的安全和警报策略
 
-Microsoft 提供可帮助识别 [特定](../../compliance/alert-policies.md) 风险的内置警报策略。 这些风险包括 Exchange 管理员权限滥用、恶意软件活动、潜在的外部和内部威胁以及信息治理风险。 某些警报可能会触发 [Office 365 中的自动调查和响应](../defender-365-security/office-365-air.md)。 确保正确 [配置了适用于 Office 365](/microsoft-365/security/defender-365-security/defender-for-office-365) 的 Microsoft Defender 功能。
+Microsoft 提供可帮助识别 [特定](../../compliance/alert-policies.md) 风险的内置警报策略。 这些风险包括 Exchange 管理员权限滥用、恶意软件活动、潜在的外部和内部威胁以及信息治理风险。 某些警报可能会触发 [Office 365 中的自动调查和响应](../office-365-security/office-365-air.md)。 确保正确 [配置了适用于 Office 365](/microsoft-365/security/office-365-security/defender-for-office-365) 的 Microsoft Defender 功能。
 
 尽管某些警报和安全策略可能会触发自动调查，但不会自动对电子邮件和内容执行任何修正操作。 相反，电子邮件和电子邮件内容的所有修正操作都等待操作中心的安全运营团队 [批准](m365d-action-center.md)。
 
-Office 365 中的安全设置有助于保护电子邮件和内容。 若要查看或更改这些设置，请按照防止 [威胁中的指南操作](../defender-365-security/protect-against-threats.md)。
+Office 365 中的安全设置有助于保护电子邮件和内容。 若要查看或更改这些设置，请按照防止 [威胁中的指南操作](../office-365-security/protect-against-threats.md)。
 
 1. 在 Microsoft 365 安全中心 [https://security.microsoft.com](https://security.microsoft.com) () ，转到"策略  >  **""威胁防护"。**
-2. 确保已配置以下所有策略。 若要获取帮助和建议，请参阅 [防止威胁](/microsoft-365/security/defender-365-security/protect-against-threats)。
-   - [Office 365 (反恶意软件) ](../defender-365-security/protect-against-threats.md#part-1---anti-malware-protection)
-   - [Defender for Office 365) ](../defender-365-security/protect-against-threats.md#part-2---anti-phishing-protection)
-   - [Office 365 (安全附件) ](../defender-365-security/protect-against-threats.md#safe-attachments-policies-in-microsoft-defender-for-office-365)
-   - [Office 365 (安全) ](../defender-365-security/protect-against-threats.md#safe-links-policies-in-microsoft-defender-for-office-365)
-   - [Office 365 (反垃圾邮件) ](../defender-365-security/protect-against-threats.md#part-3---anti-spam-protection)
-3. 确保 [Microsoft Defender for Office 365 for SharePoint、OneDrive](../defender-365-security/protect-against-threats.md#part-5---verify-safe-attachments-for-sharepoint-onedrive-and-microsoft-teams-is-turned-on) 和 Microsoft Teams 已打开。
-4. 确保 [电子邮件保护的零时差自动](../defender-365-security/protect-against-threats.md#zero-hour-auto-purge-for-email-in-eop) 清除有效。
+2. 确保已配置以下所有策略。 若要获取帮助和建议，请参阅 [防止威胁](/microsoft-365/security/office-365-security/protect-against-threats)。
+   - [Office 365 (反恶意软件) ](../office-365-security/protect-against-threats.md#part-1---anti-malware-protection)
+   - [Defender for Office 365) ](../office-365-security/protect-against-threats.md#part-2---anti-phishing-protection)
+   - [Office 365 (安全附件) ](../office-365-security/protect-against-threats.md#safe-attachments-policies-in-microsoft-defender-for-office-365)
+   - [Office 365 (安全) ](../office-365-security/protect-against-threats.md#safe-links-policies-in-microsoft-defender-for-office-365)
+   - [Office 365 (反垃圾邮件) ](../office-365-security/protect-against-threats.md#part-3---anti-spam-protection)
+3. 确保 [Microsoft Defender for Office 365 for SharePoint、OneDrive](../office-365-security/protect-against-threats.md#part-5---verify-safe-attachments-for-sharepoint-onedrive-and-microsoft-teams-is-turned-on) 和 Microsoft Teams 已打开。
+4. 确保 [电子邮件保护的零时差自动](../office-365-security/protect-against-threats.md#zero-hour-auto-purge-for-email-in-eop) 清除有效。
 5.  (可选步骤。) Microsoft 365 合规中心中的 [Office 365](../../compliance/alert-policies.md) 警报策略 [https://compliance.microsoft.com/compliancepolicies](https://compliance.microsoft.com/compliancepolicies) () 。 多个默认警报策略都属于威胁管理类别。 其中一些警报可以触发自动调查和响应。 若要了解更多信息，请参阅默认 [警报策略](../../compliance/alert-policies.md#default-alert-policies)。
 
 ## <a name="make-sure-microsoft-365-defender-is-turned-on"></a>确保 Microsoft 365 Defender 已打开

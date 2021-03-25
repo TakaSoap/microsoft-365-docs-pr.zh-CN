@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 设置 Microsoft 合规性管理器用户权限和角色，并配置操作自动化测试。 管理用户历史记录并筛选仪表板视图。
-ms.openlocfilehash: 08a62a12e5f412781595ba7d54c3b63a03ae19aa
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 3b32ac5a82bbc726c5bf61859266e0561ca7f53c
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51052130"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51199215"
 ---
 # <a name="get-started-with-compliance-manager"></a>合规性管理器入门
 
@@ -72,7 +72,7 @@ ms.locfileid: "51052130"
 
 ##### <a name="more-about-the-office-365-security--compliance-center"></a>有关 Office 365 安全与&中心
 
-详细了解 Office [365 安全](../security/defender-365-security/permissions-in-the-security-and-compliance-center.md)与合规中心&权限。
+详细了解 Office [365 安全](../security/office-365-security/permissions-in-the-security-and-compliance-center.md)与合规中心&权限。
 
 如果您无法访问 Office 365 安全与合规中心，或者您需要访问 Microsoft 服务信任门户中的经典版本的合规性管理器，则服务信任门户中的管理员设置提供了另一种分配角色 (查看说明[) 。](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md#assigning-compliance-manager-roles-to-users) 请注意，此类角色的功能更加有限。
 
