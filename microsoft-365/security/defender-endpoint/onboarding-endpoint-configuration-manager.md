@@ -18,227 +18,227 @@ ms.collection:
 - m365solution-scenario
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 6e6f3cfbf471e7b99e2ce5215491e32c955e3833
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 31c946ccad84aca3b2fc86c95655cea9e66e182f
+ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51054661"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51186397"
 ---
-# <a name="onboarding-using-microsoft-endpoint-configuration-manager"></a><span data-ttu-id="84856-104">使用 Microsoft Endpoint Configuration Manager 载入</span><span class="sxs-lookup"><span data-stu-id="84856-104">Onboarding using Microsoft Endpoint Configuration Manager</span></span>
+# <a name="onboarding-using-microsoft-endpoint-configuration-manager"></a><span data-ttu-id="664cf-104">使用 Microsoft Endpoint Configuration Manager 载入</span><span class="sxs-lookup"><span data-stu-id="664cf-104">Onboarding using Microsoft Endpoint Configuration Manager</span></span>
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-<span data-ttu-id="84856-105">**适用于：**</span><span class="sxs-lookup"><span data-stu-id="84856-105">**Applies to:**</span></span>
-- [<span data-ttu-id="84856-106">Microsoft Defender for Endpoint</span><span class="sxs-lookup"><span data-stu-id="84856-106">Microsoft Defender for Endpoint</span></span>](https://go.microsoft.com/fwlink/p/?linkid=2146631)
-- [<span data-ttu-id="84856-107">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="84856-107">Microsoft 365 Defender</span></span>](https://go.microsoft.com/fwlink/?linkid=2118804)
+<span data-ttu-id="664cf-105">**适用于：**</span><span class="sxs-lookup"><span data-stu-id="664cf-105">**Applies to:**</span></span>
+- [<span data-ttu-id="664cf-106">Microsoft Defender for Endpoint</span><span class="sxs-lookup"><span data-stu-id="664cf-106">Microsoft Defender for Endpoint</span></span>](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [<span data-ttu-id="664cf-107">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="664cf-107">Microsoft 365 Defender</span></span>](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> <span data-ttu-id="84856-108">想要体验 Microsoft Defender for Endpoint？</span><span class="sxs-lookup"><span data-stu-id="84856-108">Want to experience Microsoft Defender for Endpoint?</span></span> [<span data-ttu-id="84856-109">注册免费试用版。</span><span class="sxs-lookup"><span data-stu-id="84856-109">Sign up for a free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> <span data-ttu-id="664cf-108">想要体验 Microsoft Defender for Endpoint？</span><span class="sxs-lookup"><span data-stu-id="664cf-108">Want to experience Microsoft Defender for Endpoint?</span></span> [<span data-ttu-id="664cf-109">注册免费试用版。</span><span class="sxs-lookup"><span data-stu-id="664cf-109">Sign up for a free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 
-<span data-ttu-id="84856-110">本文是部署指南的一部分，并作为示例载入方法。</span><span class="sxs-lookup"><span data-stu-id="84856-110">This article is part of the Deployment guide and acts as an example onboarding method.</span></span> 
+<span data-ttu-id="664cf-110">本文是部署指南的一部分，并作为示例载入方法。</span><span class="sxs-lookup"><span data-stu-id="664cf-110">This article is part of the Deployment guide and acts as an example onboarding method.</span></span> 
 
-<span data-ttu-id="84856-111">在 [规划主题](deployment-strategy.md) 中，提供了多种方法将设备载入服务。</span><span class="sxs-lookup"><span data-stu-id="84856-111">In the [Planning](deployment-strategy.md) topic, there were several methods provided to onboard devices to the service.</span></span> <span data-ttu-id="84856-112">本主题介绍共同管理体系结构。</span><span class="sxs-lookup"><span data-stu-id="84856-112">This topic covers the co-management architecture.</span></span> 
+<span data-ttu-id="664cf-111">在 [规划主题](deployment-strategy.md) 中，提供了多种方法将设备载入服务。</span><span class="sxs-lookup"><span data-stu-id="664cf-111">In the [Planning](deployment-strategy.md) topic, there were several methods provided to onboard devices to the service.</span></span> <span data-ttu-id="664cf-112">本主题介绍共同管理体系结构。</span><span class="sxs-lookup"><span data-stu-id="664cf-112">This topic covers the co-management architecture.</span></span> 
 
-<span data-ttu-id="84856-113">![云本机体系结构的图像 ](images/co-management-architecture.png)
- *环境体系结构关系图*</span><span class="sxs-lookup"><span data-stu-id="84856-113">![Image of cloud-native architecture](images/co-management-architecture.png)
+<span data-ttu-id="664cf-113">![云本机体系结构的图像 ](images/co-management-architecture.png)
+ *环境体系结构关系图*</span><span class="sxs-lookup"><span data-stu-id="664cf-113">![Image of cloud-native architecture](images/co-management-architecture.png)
 *Diagram of environment architectures*</span></span>
 
 
-<span data-ttu-id="84856-114">尽管 Defender for Endpoint 支持载入各种终结点和工具，但本文并未涵盖它们。</span><span class="sxs-lookup"><span data-stu-id="84856-114">While Defender for Endpoint supports onboarding of various endpoints and tools, this article does not cover them.</span></span> <span data-ttu-id="84856-115">有关使用其他受支持的部署工具和方法进行常规载入的信息，请参阅 [载入概述](onboarding.md)。</span><span class="sxs-lookup"><span data-stu-id="84856-115">For information on general onboarding using other supported deployment tools and methods, see [Onboarding overview](onboarding.md).</span></span>
+<span data-ttu-id="664cf-114">尽管 Defender for Endpoint 支持载入各种终结点和工具，但本文并未涵盖它们。</span><span class="sxs-lookup"><span data-stu-id="664cf-114">While Defender for Endpoint supports onboarding of various endpoints and tools, this article does not cover them.</span></span> <span data-ttu-id="664cf-115">有关使用其他受支持的部署工具和方法进行常规载入的信息，请参阅 [载入概述](onboarding.md)。</span><span class="sxs-lookup"><span data-stu-id="664cf-115">For information on general onboarding using other supported deployment tools and methods, see [Onboarding overview](onboarding.md).</span></span>
 
 
 
-<span data-ttu-id="84856-116">本主题指导用户：</span><span class="sxs-lookup"><span data-stu-id="84856-116">This topic guides users in:</span></span>
-- <span data-ttu-id="84856-117">步骤 1：将 Windows 设备载入服务</span><span class="sxs-lookup"><span data-stu-id="84856-117">Step 1: Onboarding Windows devices to the service</span></span> 
-- <span data-ttu-id="84856-118">步骤 2：为终结点功能配置 Defender</span><span class="sxs-lookup"><span data-stu-id="84856-118">Step 2: Configuring Defender for Endpoint capabilities</span></span>
+<span data-ttu-id="664cf-116">本主题指导用户：</span><span class="sxs-lookup"><span data-stu-id="664cf-116">This topic guides users in:</span></span>
+- <span data-ttu-id="664cf-117">步骤 1：将 Windows 设备载入服务</span><span class="sxs-lookup"><span data-stu-id="664cf-117">Step 1: Onboarding Windows devices to the service</span></span> 
+- <span data-ttu-id="664cf-118">步骤 2：为终结点功能配置 Defender</span><span class="sxs-lookup"><span data-stu-id="664cf-118">Step 2: Configuring Defender for Endpoint capabilities</span></span>
 
-<span data-ttu-id="84856-119">此载入指南将指导你完成使用 Microsoft Endpoint Configuration Manager 时需要执行以下基本步骤：</span><span class="sxs-lookup"><span data-stu-id="84856-119">This onboarding guidance will walk you through the following basic steps that you need to take when using Microsoft Endpoint Configuration Manager:</span></span>
-- <span data-ttu-id="84856-120">**在 Microsoft Endpoint Configuration Manager 中创建集合**</span><span class="sxs-lookup"><span data-stu-id="84856-120">**Creating a collection in Microsoft Endpoint Configuration Manager**</span></span>
-- <span data-ttu-id="84856-121">**使用 Microsoft Endpoint Configuration Manager 为终结点配置 Microsoft Defender 功能**</span><span class="sxs-lookup"><span data-stu-id="84856-121">**Configuring Microsoft Defender for Endpoint capabilities using Microsoft Endpoint Configuration Manager**</span></span>
+<span data-ttu-id="664cf-119">此载入指南将指导你完成使用 Microsoft Endpoint Configuration Manager 时需要执行以下基本步骤：</span><span class="sxs-lookup"><span data-stu-id="664cf-119">This onboarding guidance will walk you through the following basic steps that you need to take when using Microsoft Endpoint Configuration Manager:</span></span>
+- <span data-ttu-id="664cf-120">**在 Microsoft Endpoint Configuration Manager 中创建集合**</span><span class="sxs-lookup"><span data-stu-id="664cf-120">**Creating a collection in Microsoft Endpoint Configuration Manager**</span></span>
+- <span data-ttu-id="664cf-121">**使用 Microsoft Endpoint Configuration Manager 为终结点配置 Microsoft Defender 功能**</span><span class="sxs-lookup"><span data-stu-id="664cf-121">**Configuring Microsoft Defender for Endpoint capabilities using Microsoft Endpoint Configuration Manager**</span></span>
 
 >[!NOTE]
-><span data-ttu-id="84856-122">此示例部署中仅涵盖 Windows 设备。</span><span class="sxs-lookup"><span data-stu-id="84856-122">Only Windows devices are covered in this example deployment.</span></span> 
+><span data-ttu-id="664cf-122">此示例部署中仅涵盖 Windows 设备。</span><span class="sxs-lookup"><span data-stu-id="664cf-122">Only Windows devices are covered in this example deployment.</span></span> 
 
 
 
-## <a name="step-1-onboard-windows-devices-using-microsoft-endpoint-configuration-manager"></a><span data-ttu-id="84856-123">步骤 1：使用 Microsoft Endpoint Configuration Manager 载入 Windows 设备</span><span class="sxs-lookup"><span data-stu-id="84856-123">Step 1: Onboard Windows devices using Microsoft Endpoint Configuration Manager</span></span>
+## <a name="step-1-onboard-windows-devices-using-microsoft-endpoint-configuration-manager"></a><span data-ttu-id="664cf-123">步骤 1：使用 Microsoft Endpoint Configuration Manager 载入 Windows 设备</span><span class="sxs-lookup"><span data-stu-id="664cf-123">Step 1: Onboard Windows devices using Microsoft Endpoint Configuration Manager</span></span>
 
-### <a name="collection-creation"></a><span data-ttu-id="84856-124">集合创建</span><span class="sxs-lookup"><span data-stu-id="84856-124">Collection creation</span></span>
-<span data-ttu-id="84856-125">若要使用 Microsoft Endpoint Configuration Manager 载入 Windows 10 设备，部署可以面向现有集合，也可以创建一个新集合进行测试。</span><span class="sxs-lookup"><span data-stu-id="84856-125">To onboard Windows 10 devices with Microsoft Endpoint Configuration Manager, the deployment can target an existing collection or a new collection can be created for testing.</span></span> 
+### <a name="collection-creation"></a><span data-ttu-id="664cf-124">集合创建</span><span class="sxs-lookup"><span data-stu-id="664cf-124">Collection creation</span></span>
+<span data-ttu-id="664cf-125">若要使用 Microsoft Endpoint Configuration Manager 载入 Windows 10 设备，部署可以面向现有集合，也可以创建一个新集合进行测试。</span><span class="sxs-lookup"><span data-stu-id="664cf-125">To onboard Windows 10 devices with Microsoft Endpoint Configuration Manager, the deployment can target an existing collection or a new collection can be created for testing.</span></span> 
 
-<span data-ttu-id="84856-126">使用组策略或手动方法等工具载入不会在系统上安装任何代理。</span><span class="sxs-lookup"><span data-stu-id="84856-126">Onboarding using tools such as Group policy or manual method does not install any agent on the system.</span></span> 
+<span data-ttu-id="664cf-126">使用组策略或手动方法等工具载入不会在系统上安装任何代理。</span><span class="sxs-lookup"><span data-stu-id="664cf-126">Onboarding using tools such as Group policy or manual method does not install any agent on the system.</span></span> 
 
-<span data-ttu-id="84856-127">在 Microsoft Endpoint Configuration Manager 控制台中，载入过程将配置为控制台内合规性设置的一部分。</span><span class="sxs-lookup"><span data-stu-id="84856-127">Within the Microsoft Endpoint Configuration Manager console the onboarding process will be configured as part of the compliance settings within the console.</span></span>
+<span data-ttu-id="664cf-127">在 Microsoft Endpoint Configuration Manager 控制台中，载入过程将配置为控制台内合规性设置的一部分。</span><span class="sxs-lookup"><span data-stu-id="664cf-127">Within the Microsoft Endpoint Configuration Manager console the onboarding process will be configured as part of the compliance settings within the console.</span></span>
 
-<span data-ttu-id="84856-128">只要 Configuration Manager 客户端继续从管理点接收此策略，接收此必需配置的任何系统都将保持该配置。</span><span class="sxs-lookup"><span data-stu-id="84856-128">Any system that receives this required configuration will maintain that configuration for as long as the Configuration Manager client continues to receive this policy from the management point.</span></span> 
+<span data-ttu-id="664cf-128">只要 Configuration Manager 客户端继续从管理点接收此策略，接收此必需配置的任何系统都将保持该配置。</span><span class="sxs-lookup"><span data-stu-id="664cf-128">Any system that receives this required configuration will maintain that configuration for as long as the Configuration Manager client continues to receive this policy from the management point.</span></span> 
 
-<span data-ttu-id="84856-129">按照以下步骤使用 Microsoft Endpoint Configuration Manager 载入终结点。</span><span class="sxs-lookup"><span data-stu-id="84856-129">Follow the steps below to onboard endpoints using Microsoft Endpoint Configuration Manager.</span></span>
+<span data-ttu-id="664cf-129">按照以下步骤使用 Microsoft Endpoint Configuration Manager 载入终结点。</span><span class="sxs-lookup"><span data-stu-id="664cf-129">Follow the steps below to onboard endpoints using Microsoft Endpoint Configuration Manager.</span></span>
 
-1. <span data-ttu-id="84856-130">在 Microsoft Endpoint Configuration Manager 控制台中，导航到 **"资产"和"合规性 \> 概述 \> ""设备集合"。**</span><span class="sxs-lookup"><span data-stu-id="84856-130">In Microsoft Endpoint Configuration Manager console, navigate to **Assets and Compliance \> Overview \> Device Collections**.</span></span>            
+1. <span data-ttu-id="664cf-130">在 Microsoft Endpoint Configuration Manager 控制台中，导航到 **"资产"和"合规性 \> 概述 \> ""设备集合"。**</span><span class="sxs-lookup"><span data-stu-id="664cf-130">In Microsoft Endpoint Configuration Manager console, navigate to **Assets and Compliance \> Overview \> Device Collections**.</span></span>            
 
     ![Microsoft Endpoint Configuration Manager 向导的图像1](images/configmgr-device-collections.png)
 
-2. <span data-ttu-id="84856-132">右键单击 **设备集合** ，然后选择 **创建设备集合**。</span><span class="sxs-lookup"><span data-stu-id="84856-132">Right Click **Device Collection** and select **Create Device Collection**.</span></span>
+2. <span data-ttu-id="664cf-132">右键单击 **设备集合** ，然后选择 **创建设备集合**。</span><span class="sxs-lookup"><span data-stu-id="664cf-132">Right Click **Device Collection** and select **Create Device Collection**.</span></span>
 
     ![Microsoft Endpoint Configuration Manager 向导的图像2](images/configmgr-create-device-collection.png)
 
-3. <span data-ttu-id="84856-134">提供名称和 **限制集合，** 然后选择下一 **步**。</span><span class="sxs-lookup"><span data-stu-id="84856-134">Provide a **Name** and **Limiting Collection**, then select **Next**.</span></span>
+3. <span data-ttu-id="664cf-134">提供名称和 **限制集合，** 然后选择下一 **步**。</span><span class="sxs-lookup"><span data-stu-id="664cf-134">Provide a **Name** and **Limiting Collection**, then select **Next**.</span></span>
 
     ![Microsoft Endpoint Configuration Manager 向导的图像3](images/configmgr-limiting-collection.png)
 
-4. <span data-ttu-id="84856-136">选择 **"添加规则**"，然后选择"**查询规则"。**</span><span class="sxs-lookup"><span data-stu-id="84856-136">Select **Add Rule** and choose **Query Rule**.</span></span>
+4. <span data-ttu-id="664cf-136">选择 **"添加规则**"，然后选择"**查询规则"。**</span><span class="sxs-lookup"><span data-stu-id="664cf-136">Select **Add Rule** and choose **Query Rule**.</span></span>
 
     ![Microsoft Endpoint Configuration Manager 向导的图像4](images/configmgr-query-rule.png)
 
-5.  <span data-ttu-id="84856-138">在 **"直接** 成员身份向导"上单击"下一步 **"，** 然后单击"**编辑查询语句"。**</span><span class="sxs-lookup"><span data-stu-id="84856-138">Click **Next** on the **Direct Membership Wizard** and click on **Edit Query Statement**.</span></span>
+5.  <span data-ttu-id="664cf-138">在 **"直接** 成员身份向导"上单击"下一步 **"，** 然后单击"**编辑查询语句"。**</span><span class="sxs-lookup"><span data-stu-id="664cf-138">Click **Next** on the **Direct Membership Wizard** and click on **Edit Query Statement**.</span></span>
 
      ![Microsoft Endpoint Configuration Manager 向导的图像5](images/configmgr-direct-membership.png)
 
-6. <span data-ttu-id="84856-140">选择 **条件** ，然后选择星形图标。</span><span class="sxs-lookup"><span data-stu-id="84856-140">Select **Criteria** and then choose the star icon.</span></span>
+6. <span data-ttu-id="664cf-140">选择 **条件** ，然后选择星形图标。</span><span class="sxs-lookup"><span data-stu-id="664cf-140">Select **Criteria** and then choose the star icon.</span></span>
 
      ![Microsoft Endpoint Configuration Manager 向导的图像6](images/configmgr-criteria.png)
 
-7. <span data-ttu-id="84856-142">将条件类型保留为 **简单值**，选择"操作系统 **-** 内部版本号"，运算符为大于或等于值 **14393，** 然后单击"确定 **"。** </span><span class="sxs-lookup"><span data-stu-id="84856-142">Keep criterion type as **simple value**, choose where as **Operating System - build number**, operator as **is greater than or equal to** and value **14393** and click on **OK**.</span></span>
+7. <span data-ttu-id="664cf-142">将条件类型保留为 **简单值**，选择"操作系统 **-** 内部版本号"，运算符为大于或等于值 **14393，** 然后单击"确定 **"。** </span><span class="sxs-lookup"><span data-stu-id="664cf-142">Keep criterion type as **simple value**, choose where as **Operating System - build number**, operator as **is greater than or equal to** and value **14393** and click on **OK**.</span></span>
 
     ![Microsoft Endpoint Configuration Manager 向导的图像7](images/configmgr-simple-value.png)
 
-8. <span data-ttu-id="84856-144">选择 **"下一步**"和"**关闭"。**</span><span class="sxs-lookup"><span data-stu-id="84856-144">Select **Next** and **Close**.</span></span>
+8. <span data-ttu-id="664cf-144">选择 **"下一步**"和"**关闭"。**</span><span class="sxs-lookup"><span data-stu-id="664cf-144">Select **Next** and **Close**.</span></span>
 
     ![Microsoft Endpoint Configuration Manager 向导的图像8](images/configmgr-membership-rules.png)
 
-9. <span data-ttu-id="84856-146">选择“**下一步**”。</span><span class="sxs-lookup"><span data-stu-id="84856-146">Select **Next**.</span></span>
+9. <span data-ttu-id="664cf-146">选择 **下一步**。</span><span class="sxs-lookup"><span data-stu-id="664cf-146">Select **Next**.</span></span>
 
     ![Microsoft Endpoint Configuration Manager 向导的图像9](images/configmgr-confirm.png)
 
 
-<span data-ttu-id="84856-148">完成此任务后，你现在拥有环境中具有所有 Windows 10 终结点的设备集合。</span><span class="sxs-lookup"><span data-stu-id="84856-148">After completing this task, you now have a device collection with all the Windows 10 endpoints in the environment.</span></span> 
+<span data-ttu-id="664cf-148">完成此任务后，你现在拥有环境中具有所有 Windows 10 终结点的设备集合。</span><span class="sxs-lookup"><span data-stu-id="664cf-148">After completing this task, you now have a device collection with all the Windows 10 endpoints in the environment.</span></span> 
 
 
-## <a name="step-2-configure-microsoft-defender-for-endpoint-capabilities"></a><span data-ttu-id="84856-149">步骤 2：为终结点功能配置 Microsoft Defender</span><span class="sxs-lookup"><span data-stu-id="84856-149">Step 2: Configure Microsoft Defender for Endpoint capabilities</span></span> 
-<span data-ttu-id="84856-150">本部分指导你在 Windows 设备上使用 Microsoft Endpoint Configuration Manager 配置以下功能：</span><span class="sxs-lookup"><span data-stu-id="84856-150">This section guides you in configuring the following capabilities using Microsoft Endpoint Configuration Manager on Windows devices:</span></span>
+## <a name="step-2-configure-microsoft-defender-for-endpoint-capabilities"></a><span data-ttu-id="664cf-149">步骤 2：为终结点功能配置 Microsoft Defender</span><span class="sxs-lookup"><span data-stu-id="664cf-149">Step 2: Configure Microsoft Defender for Endpoint capabilities</span></span> 
+<span data-ttu-id="664cf-150">本部分指导你在 Windows 设备上使用 Microsoft Endpoint Configuration Manager 配置以下功能：</span><span class="sxs-lookup"><span data-stu-id="664cf-150">This section guides you in configuring the following capabilities using Microsoft Endpoint Configuration Manager on Windows devices:</span></span>
 
-- [<span data-ttu-id="84856-151">**终结点检测和响应**</span><span class="sxs-lookup"><span data-stu-id="84856-151">**Endpoint detection and response**</span></span>](#endpoint-detection-and-response)
-- [<span data-ttu-id="84856-152">**下一代保护**</span><span class="sxs-lookup"><span data-stu-id="84856-152">**Next-generation protection**</span></span>](#next-generation-protection)
-- [<span data-ttu-id="84856-153">**攻击面减少**</span><span class="sxs-lookup"><span data-stu-id="84856-153">**Attack surface reduction**</span></span>](#attack-surface-reduction)
-
-
-### <a name="endpoint-detection-and-response"></a><span data-ttu-id="84856-154">终结点检测和响应</span><span class="sxs-lookup"><span data-stu-id="84856-154">Endpoint detection and response</span></span>
-#### <a name="windows-10"></a><span data-ttu-id="84856-155">Windows 10</span><span class="sxs-lookup"><span data-stu-id="84856-155">Windows 10</span></span>
-<span data-ttu-id="84856-156">在 Microsoft Defender 安全中心内，可以下载".onboarding"策略，该策略可用于在 System Center Configuration Manager 中创建策略，并部署该策略到 Windows 10 设备。</span><span class="sxs-lookup"><span data-stu-id="84856-156">From within the Microsoft Defender Security Center it is possible to download the '.onboarding' policy that can be used to create the policy in System Center Configuration Manager and deploy that policy to Windows 10 devices.</span></span>
-
-1. <span data-ttu-id="84856-157">在 Microsoft Defender 安全中心门户中，选择"[设置"，然后选择"载入"。](https://securitycenter.windows.com/preferences2/onboarding)</span><span class="sxs-lookup"><span data-stu-id="84856-157">From a Microsoft Defender Security Center Portal, select [Settings and then Onboarding](https://securitycenter.windows.com/preferences2/onboarding).</span></span>
+- [<span data-ttu-id="664cf-151">**终结点检测和响应**</span><span class="sxs-lookup"><span data-stu-id="664cf-151">**Endpoint detection and response**</span></span>](#endpoint-detection-and-response)
+- [<span data-ttu-id="664cf-152">**下一代保护**</span><span class="sxs-lookup"><span data-stu-id="664cf-152">**Next-generation protection**</span></span>](#next-generation-protection)
+- [<span data-ttu-id="664cf-153">**攻击面减少**</span><span class="sxs-lookup"><span data-stu-id="664cf-153">**Attack surface reduction**</span></span>](#attack-surface-reduction)
 
 
+### <a name="endpoint-detection-and-response"></a><span data-ttu-id="664cf-154">终结点检测和响应</span><span class="sxs-lookup"><span data-stu-id="664cf-154">Endpoint detection and response</span></span>
+#### <a name="windows-10"></a><span data-ttu-id="664cf-155">Windows 10</span><span class="sxs-lookup"><span data-stu-id="664cf-155">Windows 10</span></span>
+<span data-ttu-id="664cf-156">在 Microsoft Defender 安全中心内，可以下载".onboarding"策略，该策略可用于在 System Center Configuration Manager 中创建策略，并部署该策略到 Windows 10 设备。</span><span class="sxs-lookup"><span data-stu-id="664cf-156">From within the Microsoft Defender Security Center it is possible to download the '.onboarding' policy that can be used to create the policy in System Center Configuration Manager and deploy that policy to Windows 10 devices.</span></span>
 
-2. <span data-ttu-id="84856-158">在部署方法下，选择受支持的 **Microsoft Endpoint Configuration Manager 版本**。</span><span class="sxs-lookup"><span data-stu-id="84856-158">Under Deployment method select the supported version of **Microsoft Endpoint Configuration Manager**.</span></span>
+1. <span data-ttu-id="664cf-157">在 Microsoft Defender 安全中心门户中，选择"[设置"，然后选择"载入"。](https://securitycenter.windows.com/preferences2/onboarding)</span><span class="sxs-lookup"><span data-stu-id="664cf-157">From a Microsoft Defender Security Center Portal, select [Settings and then Onboarding](https://securitycenter.windows.com/preferences2/onboarding).</span></span>
+
+
+
+2. <span data-ttu-id="664cf-158">在部署方法下，选择受支持的 **Microsoft Endpoint Configuration Manager 版本**。</span><span class="sxs-lookup"><span data-stu-id="664cf-158">Under Deployment method select the supported version of **Microsoft Endpoint Configuration Manager**.</span></span>
 
     ![适用于终结点载入向导的 Microsoft Defender 的图像10](images/mdatp-onboarding-wizard.png)
 
-3. <span data-ttu-id="84856-160">选择 **下载程序包**。</span><span class="sxs-lookup"><span data-stu-id="84856-160">Select **Download package**.</span></span>
+3. <span data-ttu-id="664cf-160">选择 **下载程序包**。</span><span class="sxs-lookup"><span data-stu-id="664cf-160">Select **Download package**.</span></span>
 
     ![适用于终结点载入向导的 Microsoft Defender 的图像11](images/mdatp-download-package.png)
 
-4. <span data-ttu-id="84856-162">将程序包保存到可访问的位置。</span><span class="sxs-lookup"><span data-stu-id="84856-162">Save the package to an accessible location.</span></span>
-5. <span data-ttu-id="84856-163">在 Microsoft Endpoint Configuration Manager 中，导航到 **：Assets and Compliance > Overview > Endpoint Protection > Microsoft Defender ATP Policies**。</span><span class="sxs-lookup"><span data-stu-id="84856-163">In  Microsoft Endpoint Configuration Manager, navigate to: **Assets and Compliance > Overview > Endpoint Protection > Microsoft Defender ATP Policies**.</span></span>
+4. <span data-ttu-id="664cf-162">将程序包保存到可访问的位置。</span><span class="sxs-lookup"><span data-stu-id="664cf-162">Save the package to an accessible location.</span></span>
+5. <span data-ttu-id="664cf-163">在 Microsoft Endpoint Configuration Manager 中，导航到 **：Assets and Compliance > Overview > Endpoint Protection > Microsoft Defender ATP Policies**。</span><span class="sxs-lookup"><span data-stu-id="664cf-163">In  Microsoft Endpoint Configuration Manager, navigate to: **Assets and Compliance > Overview > Endpoint Protection > Microsoft Defender ATP Policies**.</span></span>
 
-6. <span data-ttu-id="84856-164">右键单击 **Microsoft Defender ATP 策略** ，然后选择创建 Microsoft Defender **ATP 策略**。</span><span class="sxs-lookup"><span data-stu-id="84856-164">Right-click **Microsoft Defender ATP Policies** and select **Create Microsoft Defender ATP Policy**.</span></span>
+6. <span data-ttu-id="664cf-164">右键单击 **Microsoft Defender ATP 策略** ，然后选择创建 Microsoft Defender **ATP 策略**。</span><span class="sxs-lookup"><span data-stu-id="664cf-164">Right-click **Microsoft Defender ATP Policies** and select **Create Microsoft Defender ATP Policy**.</span></span>
 
     ![Microsoft Endpoint Configuration Manager 向导的图像12](images/configmgr-create-policy.png)
 
-7. <span data-ttu-id="84856-166">输入名称和说明，确认 **已选择载入** ，然后选择下一 **步**。</span><span class="sxs-lookup"><span data-stu-id="84856-166">Enter the name and description, verify **Onboarding** is selected, then select **Next**.</span></span>
+7. <span data-ttu-id="664cf-166">输入名称和说明，确认 **已选择载入** ，然后选择下一 **步**。</span><span class="sxs-lookup"><span data-stu-id="664cf-166">Enter the name and description, verify **Onboarding** is selected, then select **Next**.</span></span>
 
     ![Microsoft Endpoint Configuration Manager 向导的图像13](images/configmgr-policy-name.png)
 
 
-8. <span data-ttu-id="84856-168">单击"浏览"。</span><span class="sxs-lookup"><span data-stu-id="84856-168">Click **Browse**.</span></span>
+8. <span data-ttu-id="664cf-168">单击"浏览"。</span><span class="sxs-lookup"><span data-stu-id="664cf-168">Click **Browse**.</span></span>
 
-9. <span data-ttu-id="84856-169">从上面的步骤 4 导航到已下载文件的位置。</span><span class="sxs-lookup"><span data-stu-id="84856-169">Navigate to the location of the downloaded file from step 4 above.</span></span>
+9. <span data-ttu-id="664cf-169">从上面的步骤 4 导航到已下载文件的位置。</span><span class="sxs-lookup"><span data-stu-id="664cf-169">Navigate to the location of the downloaded file from step 4 above.</span></span>
 
-10. <span data-ttu-id="84856-170">单击“**下一步**”。</span><span class="sxs-lookup"><span data-stu-id="84856-170">Click **Next**.</span></span>
-11. <span data-ttu-id="84856-171">使用"无"或"所有文件类型 (**相应的示例配置代理) 。** </span><span class="sxs-lookup"><span data-stu-id="84856-171">Configure the Agent with the appropriate samples (**None** or **All file types**).</span></span>
+10. <span data-ttu-id="664cf-170">单击"下一步"。</span><span class="sxs-lookup"><span data-stu-id="664cf-170">Click **Next**.</span></span>
+11. <span data-ttu-id="664cf-171">使用"无"或"所有文件类型 (**相应的示例配置代理) 。** </span><span class="sxs-lookup"><span data-stu-id="664cf-171">Configure the Agent with the appropriate samples (**None** or **All file types**).</span></span>
 
     ![配置设置的图像1](images/configmgr-config-settings.png)
 
-12. <span data-ttu-id="84856-173">Select the appropriate telemetry (**Normal** or **Expedited**) then click **Next**.</span><span class="sxs-lookup"><span data-stu-id="84856-173">Select the appropriate telemetry (**Normal** or **Expedited**) then click **Next**.</span></span>
+12. <span data-ttu-id="664cf-173">Select the appropriate telemetry (**Normal** or **Expedited**) then click **Next**.</span><span class="sxs-lookup"><span data-stu-id="664cf-173">Select the appropriate telemetry (**Normal** or **Expedited**) then click **Next**.</span></span>
 
     ![配置设置的图像2](images/configmgr-telemetry.png)
 
-14. <span data-ttu-id="84856-175">验证配置，然后单击下一 **步**。</span><span class="sxs-lookup"><span data-stu-id="84856-175">Verify the configuration, then click **Next**.</span></span>
+14. <span data-ttu-id="664cf-175">验证配置，然后单击下一 **步**。</span><span class="sxs-lookup"><span data-stu-id="664cf-175">Verify the configuration, then click **Next**.</span></span>
 
      ![配置设置的图像3](images/configmgr-verify-configuration.png)
 
-15. <span data-ttu-id="84856-177">向导 **完成后** ，单击"关闭"。</span><span class="sxs-lookup"><span data-stu-id="84856-177">Click **Close** when the Wizard completes.</span></span>
+15. <span data-ttu-id="664cf-177">向导 **完成后** ，单击"关闭"。</span><span class="sxs-lookup"><span data-stu-id="664cf-177">Click **Close** when the Wizard completes.</span></span>
 
-16.  <span data-ttu-id="84856-178">在 Microsoft Endpoint Configuration Manager 控制台中，右键单击刚创建的 Defender for Endpoint 策略， **然后选择部署**。</span><span class="sxs-lookup"><span data-stu-id="84856-178">In the Microsoft Endpoint Configuration Manager console, right-click the Defender for Endpoint policy you just created and select **Deploy**.</span></span>
+16.  <span data-ttu-id="664cf-178">在 Microsoft Endpoint Configuration Manager 控制台中，右键单击刚创建的 Defender for Endpoint 策略， **然后选择部署**。</span><span class="sxs-lookup"><span data-stu-id="664cf-178">In the Microsoft Endpoint Configuration Manager console, right-click the Defender for Endpoint policy you just created and select **Deploy**.</span></span>
 
      ![配置设置的图像4](images/configmgr-deploy.png)
 
-17. <span data-ttu-id="84856-180">在右侧面板上，选择之前创建的集合，**然后单击确定。**</span><span class="sxs-lookup"><span data-stu-id="84856-180">On the right panel, select the previously created collection and click **OK**.</span></span>
+17. <span data-ttu-id="664cf-180">在右侧面板上，选择之前创建的集合，**然后单击确定。**</span><span class="sxs-lookup"><span data-stu-id="664cf-180">On the right panel, select the previously created collection and click **OK**.</span></span>
 
     ![配置设置的图像5](images/configmgr-select-collection.png)
 
 
-#### <a name="previous-versions-of-windows-client-windows-7-and-windows-81"></a><span data-ttu-id="84856-182">以前版本的 Windows 客户端 (Windows 7 和 Windows 8.1) </span><span class="sxs-lookup"><span data-stu-id="84856-182">Previous versions of Windows Client (Windows 7 and Windows 8.1)</span></span>
-<span data-ttu-id="84856-183">按照以下步骤标识适用于终结点工作区 ID 的 Defender 和工作区密钥，这是载入以前版本的 Windows 所需的。</span><span class="sxs-lookup"><span data-stu-id="84856-183">Follow the steps below to identify the Defender for Endpoint Workspace ID and Workspace Key, that will be required for the onboarding of previous versions of Windows.</span></span>
+#### <a name="previous-versions-of-windows-client-windows-7-and-windows-81"></a><span data-ttu-id="664cf-182">以前版本的 Windows 客户端 (Windows 7 和 Windows 8.1) </span><span class="sxs-lookup"><span data-stu-id="664cf-182">Previous versions of Windows Client (Windows 7 and Windows 8.1)</span></span>
+<span data-ttu-id="664cf-183">按照以下步骤标识适用于终结点工作区 ID 的 Defender 和工作区密钥，这是载入以前版本的 Windows 所需的。</span><span class="sxs-lookup"><span data-stu-id="664cf-183">Follow the steps below to identify the Defender for Endpoint Workspace ID and Workspace Key, that will be required for the onboarding of previous versions of Windows.</span></span>
 
-1. <span data-ttu-id="84856-184">从 Microsoft Defender 安全中心门户中，选择">**载入"。**</span><span class="sxs-lookup"><span data-stu-id="84856-184">From a Microsoft Defender Security Center Portal, select **Settings > Onboarding**.</span></span>
+1. <span data-ttu-id="664cf-184">从 Microsoft Defender 安全中心门户中，选择">**载入"。**</span><span class="sxs-lookup"><span data-stu-id="664cf-184">From a Microsoft Defender Security Center Portal, select **Settings > Onboarding**.</span></span>
 
-2. <span data-ttu-id="84856-185">在操作系统下，**选择 Windows 7 SP1 和 8.1。**</span><span class="sxs-lookup"><span data-stu-id="84856-185">Under operating system choose **Windows 7 SP1 and 8.1**.</span></span>
+2. <span data-ttu-id="664cf-185">在操作系统下，**选择 Windows 7 SP1 和 8.1。**</span><span class="sxs-lookup"><span data-stu-id="664cf-185">Under operating system choose **Windows 7 SP1 and 8.1**.</span></span>
 
-3. <span data-ttu-id="84856-186">复制 **工作区 ID 和\*\*\*\*工作区密钥并** 保存它们。</span><span class="sxs-lookup"><span data-stu-id="84856-186">Copy the **Workspace ID** and **Workspace Key** and save them.</span></span> <span data-ttu-id="84856-187">稍后将在过程中使用。</span><span class="sxs-lookup"><span data-stu-id="84856-187">They will be used later in the process.</span></span>
+3. <span data-ttu-id="664cf-186">复制 **工作区 ID 和\*\*\*\*工作区密钥并** 保存它们。</span><span class="sxs-lookup"><span data-stu-id="664cf-186">Copy the **Workspace ID** and **Workspace Key** and save them.</span></span> <span data-ttu-id="664cf-187">稍后将在过程中使用。</span><span class="sxs-lookup"><span data-stu-id="664cf-187">They will be used later in the process.</span></span>
 
     ![载入图像](images/91b738e4b97c4272fd6d438d8c2d5269.png)
 
-4. <span data-ttu-id="84856-189">安装 Microsoft Monitoring Agent (MMA) 。</span><span class="sxs-lookup"><span data-stu-id="84856-189">Install the Microsoft Monitoring Agent (MMA).</span></span> <br>
-    <span data-ttu-id="84856-190">MMA 当前 (2019 年 1) Windows 操作系统支持：</span><span class="sxs-lookup"><span data-stu-id="84856-190">MMA is currently (as of January 2019) supported on the following Windows Operating Systems:</span></span>
+4. <span data-ttu-id="664cf-189">安装 Microsoft Monitoring Agent (MMA) 。</span><span class="sxs-lookup"><span data-stu-id="664cf-189">Install the Microsoft Monitoring Agent (MMA).</span></span> <br>
+    <span data-ttu-id="664cf-190">MMA 当前 (2019 年 1) Windows 操作系统支持：</span><span class="sxs-lookup"><span data-stu-id="664cf-190">MMA is currently (as of January 2019) supported on the following Windows Operating Systems:</span></span>
 
-    -   <span data-ttu-id="84856-191">服务器 SKUs：Windows Server 2008 SP1 或更高版本</span><span class="sxs-lookup"><span data-stu-id="84856-191">Server SKUs: Windows Server 2008 SP1 or Newer</span></span>
+    -   <span data-ttu-id="664cf-191">服务器 SKUs：Windows Server 2008 SP1 或更高版本</span><span class="sxs-lookup"><span data-stu-id="664cf-191">Server SKUs: Windows Server 2008 SP1 or Newer</span></span>
 
-    -   <span data-ttu-id="84856-192">客户端 SKUS：Windows 7 SP1 及更高版本</span><span class="sxs-lookup"><span data-stu-id="84856-192">Client SKUs: Windows 7 SP1 and later</span></span>
+    -   <span data-ttu-id="664cf-192">客户端 SKUS：Windows 7 SP1 及更高版本</span><span class="sxs-lookup"><span data-stu-id="664cf-192">Client SKUs: Windows 7 SP1 and later</span></span>
 
-    <span data-ttu-id="84856-193">MMA 代理将需要安装在 Windows 设备上。</span><span class="sxs-lookup"><span data-stu-id="84856-193">The MMA agent will need to be installed on Windows devices.</span></span> <span data-ttu-id="84856-194">若要安装代理，某些系统将需要下载客户体验更新和诊断[](https://support.microsoft.com/help/3080149/update-for-customer-experience-and-diagnostic-telemetry)遥测，以便使用 MMA 收集数据。</span><span class="sxs-lookup"><span data-stu-id="84856-194">To install the agent, some systems will need to download the [Update for customer experience and diagnostic telemetry](https://support.microsoft.com/help/3080149/update-for-customer-experience-and-diagnostic-telemetry) in order to collect the data with MMA.</span></span> <span data-ttu-id="84856-195">这些系统版本包括但不限于：</span><span class="sxs-lookup"><span data-stu-id="84856-195">These system versions include but may not be limited to:</span></span>
+    <span data-ttu-id="664cf-193">MMA 代理将需要安装在 Windows 设备上。</span><span class="sxs-lookup"><span data-stu-id="664cf-193">The MMA agent will need to be installed on Windows devices.</span></span> <span data-ttu-id="664cf-194">若要安装代理，某些系统将需要下载客户体验更新和诊断[](https://support.microsoft.com/help/3080149/update-for-customer-experience-and-diagnostic-telemetry)遥测，以便使用 MMA 收集数据。</span><span class="sxs-lookup"><span data-stu-id="664cf-194">To install the agent, some systems will need to download the [Update for customer experience and diagnostic telemetry](https://support.microsoft.com/help/3080149/update-for-customer-experience-and-diagnostic-telemetry) in order to collect the data with MMA.</span></span> <span data-ttu-id="664cf-195">这些系统版本包括但不限于：</span><span class="sxs-lookup"><span data-stu-id="664cf-195">These system versions include but may not be limited to:</span></span>
 
-    -   <span data-ttu-id="84856-196">Windows 8.1</span><span class="sxs-lookup"><span data-stu-id="84856-196">Windows 8.1</span></span>
+    -   <span data-ttu-id="664cf-196">Windows 8.1</span><span class="sxs-lookup"><span data-stu-id="664cf-196">Windows 8.1</span></span>
 
-    -   <span data-ttu-id="84856-197">Windows 7</span><span class="sxs-lookup"><span data-stu-id="84856-197">Windows 7</span></span>
+    -   <span data-ttu-id="664cf-197">Windows 7</span><span class="sxs-lookup"><span data-stu-id="664cf-197">Windows 7</span></span>
 
-    -   <span data-ttu-id="84856-198">Windows Server 2016</span><span class="sxs-lookup"><span data-stu-id="84856-198">Windows Server 2016</span></span>
+    -   <span data-ttu-id="664cf-198">Windows Server 2016</span><span class="sxs-lookup"><span data-stu-id="664cf-198">Windows Server 2016</span></span>
 
-    -   <span data-ttu-id="84856-199">Windows Server 2012 R2</span><span class="sxs-lookup"><span data-stu-id="84856-199">Windows Server 2012 R2</span></span>
+    -   <span data-ttu-id="664cf-199">Windows Server 2012 R2</span><span class="sxs-lookup"><span data-stu-id="664cf-199">Windows Server 2012 R2</span></span>
 
-    -   <span data-ttu-id="84856-200">Windows Server 2008 R2</span><span class="sxs-lookup"><span data-stu-id="84856-200">Windows Server 2008 R2</span></span>
+    -   <span data-ttu-id="664cf-200">Windows Server 2008 R2</span><span class="sxs-lookup"><span data-stu-id="664cf-200">Windows Server 2008 R2</span></span>
 
-    <span data-ttu-id="84856-201">具体而言，对于 Windows 7 SP1，必须安装以下修补程序：</span><span class="sxs-lookup"><span data-stu-id="84856-201">Specifically, for Windows 7 SP1, the following patches must be installed:</span></span>
+    <span data-ttu-id="664cf-201">具体而言，对于 Windows 7 SP1，必须安装以下修补程序：</span><span class="sxs-lookup"><span data-stu-id="664cf-201">Specifically, for Windows 7 SP1, the following patches must be installed:</span></span>
 
-    -   <span data-ttu-id="84856-202">安装 [KB4074598](https://support.microsoft.com/help/4074598/windows-7-update-kb4074598)</span><span class="sxs-lookup"><span data-stu-id="84856-202">Install [KB4074598](https://support.microsoft.com/help/4074598/windows-7-update-kb4074598)</span></span>
+    -   <span data-ttu-id="664cf-202">安装 [KB4074598](https://support.microsoft.com/help/4074598/windows-7-update-kb4074598)</span><span class="sxs-lookup"><span data-stu-id="664cf-202">Install [KB4074598](https://support.microsoft.com/help/4074598/windows-7-update-kb4074598)</span></span>
 
-    -   <span data-ttu-id="84856-203">安装 .NET Framework [4.5](https://www.microsoft.com/download/details.aspx?id=30653) (或更高版本)  
-         [KB3154518。](https://support.microsoft.com/help/3154518/support-for-tls-system-default-versions-included-in-the-net-framework)</span><span class="sxs-lookup"><span data-stu-id="84856-203">Install either [.NET Framework 4.5](https://www.microsoft.com/download/details.aspx?id=30653) (or later) **or**
+    -   <span data-ttu-id="664cf-203">安装 .NET Framework [4.5](https://www.microsoft.com/download/details.aspx?id=30653) (或更高版本)  
+         [KB3154518。](https://support.microsoft.com/help/3154518/support-for-tls-system-default-versions-included-in-the-net-framework)</span><span class="sxs-lookup"><span data-stu-id="664cf-203">Install either [.NET Framework 4.5](https://www.microsoft.com/download/details.aspx?id=30653) (or later) **or**
         [KB3154518](https://support.microsoft.com/help/3154518/support-for-tls-system-default-versions-included-in-the-net-framework).</span></span>
-        <span data-ttu-id="84856-204">不要在同一个系统中同时安装这两者。</span><span class="sxs-lookup"><span data-stu-id="84856-204">Do not install both on the same system.</span></span>
+        <span data-ttu-id="664cf-204">不要在同一个系统中同时安装这两者。</span><span class="sxs-lookup"><span data-stu-id="664cf-204">Do not install both on the same system.</span></span>
 
-5. <span data-ttu-id="84856-205">如果使用代理连接到 Internet，请参阅配置代理设置部分。</span><span class="sxs-lookup"><span data-stu-id="84856-205">If you're using a proxy to connect to the Internet see the Configure proxy settings section.</span></span>
+5. <span data-ttu-id="664cf-205">如果使用代理连接到 Internet，请参阅配置代理设置部分。</span><span class="sxs-lookup"><span data-stu-id="664cf-205">If you're using a proxy to connect to the Internet see the Configure proxy settings section.</span></span>
 
-<span data-ttu-id="84856-206">完成后，你应该在一小时内在门户中看到已载入的终结点。</span><span class="sxs-lookup"><span data-stu-id="84856-206">Once completed, you should see onboarded endpoints in the portal within an hour.</span></span>
+<span data-ttu-id="664cf-206">完成后，你应该在一小时内在门户中看到已载入的终结点。</span><span class="sxs-lookup"><span data-stu-id="664cf-206">Once completed, you should see onboarded endpoints in the portal within an hour.</span></span>
 
-### <a name="next-generation-protection"></a><span data-ttu-id="84856-207">下一代保护</span><span class="sxs-lookup"><span data-stu-id="84856-207">Next generation protection</span></span> 
-<span data-ttu-id="84856-208">Microsoft Defender 防病毒是内置反恶意软件解决方案，为台式机、便携式计算机和服务器提供安全提供下一代防护。</span><span class="sxs-lookup"><span data-stu-id="84856-208">Microsoft Defender Antivirus is a built-in antimalware solution that provides next generation protection for desktops, portable computers, and servers.</span></span>
+### <a name="next-generation-protection"></a><span data-ttu-id="664cf-207">下一代保护</span><span class="sxs-lookup"><span data-stu-id="664cf-207">Next generation protection</span></span> 
+<span data-ttu-id="664cf-208">Microsoft Defender 防病毒是内置反恶意软件解决方案，为台式机、便携式计算机和服务器提供安全提供下一代防护。</span><span class="sxs-lookup"><span data-stu-id="664cf-208">Microsoft Defender Antivirus is a built-in antimalware solution that provides next generation protection for desktops, portable computers, and servers.</span></span>
 
-1. <span data-ttu-id="84856-209">在 Microsoft Endpoint Configuration Manager 控制台中，导航到 **"资产和合规性概述"" \> 终结点保护 \> \> 反恶意软件** 策略"，然后选择"**创建反恶意软件策略"。**</span><span class="sxs-lookup"><span data-stu-id="84856-209">In the Microsoft Endpoint Configuration Manager console, navigate to **Assets and Compliance \> Overview \> Endpoint Protection \> Antimalware Polices** and choose **Create Antimalware Policy**.</span></span>
+1. <span data-ttu-id="664cf-209">在 Microsoft Endpoint Configuration Manager 控制台中，导航到 **"资产和合规性概述"" \> 终结点保护 \> \> 反恶意软件** 策略"，然后选择"**创建反恶意软件策略"。**</span><span class="sxs-lookup"><span data-stu-id="664cf-209">In the Microsoft Endpoint Configuration Manager console, navigate to **Assets and Compliance \> Overview \> Endpoint Protection \> Antimalware Polices** and choose **Create Antimalware Policy**.</span></span>
 
     ![反恶意软件策略的图像](images/9736e0358e86bc778ce1bd4c516adb8b.png)
 
-2. <span data-ttu-id="84856-211">选择 **计划扫描**、**扫描** 设置、**默认** 操作、**实时保护**、**排除** 设置、**高级**、威胁覆盖、**云保护** 服务 **和安全智能更新**，**然后选择确定。**</span><span class="sxs-lookup"><span data-stu-id="84856-211">Select **Scheduled scans**, **Scan settings**, **Default actions**, **Real-time protection**, **Exclusion settings**, **Advanced**, **Threat overrides**, **Cloud Protection Service** and **Security intelligence   updates** and choose **OK**.</span></span>
+2. <span data-ttu-id="664cf-211">选择 **计划扫描**、**扫描** 设置、**默认** 操作、**实时保护**、**排除** 设置、**高级**、威胁覆盖、**云保护** 服务 **和安全智能更新**，**然后选择确定。**</span><span class="sxs-lookup"><span data-stu-id="664cf-211">Select **Scheduled scans**, **Scan settings**, **Default actions**, **Real-time protection**, **Exclusion settings**, **Advanced**, **Threat overrides**, **Cloud Protection Service** and **Security intelligence   updates** and choose **OK**.</span></span>
 
     ![下一代保护窗格的图像1](images/1566ad81bae3d714cc9e0d47575a8cbd.png)
 
-    <span data-ttu-id="84856-213">在某些行业或某些选择的企业中，客户可能对如何配置防病毒有特定需求。</span><span class="sxs-lookup"><span data-stu-id="84856-213">In certain industries or some select enterprise customers might have specific needs on how Antivirus is configured.</span></span>
+    <span data-ttu-id="664cf-213">在某些行业或某些选择的企业中，客户可能对如何配置防病毒有特定需求。</span><span class="sxs-lookup"><span data-stu-id="664cf-213">In certain industries or some select enterprise customers might have specific needs on how Antivirus is configured.</span></span>
 
   
-    [<span data-ttu-id="84856-214">快速扫描与完全扫描和自定义扫描</span><span class="sxs-lookup"><span data-stu-id="84856-214">Quick scan versus full scan and custom scan</span></span>](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/scheduled-catch-up-scans-microsoft-defender-antivirus#quick-scan-versus-full-scan-and-custom-scan)
+    [<span data-ttu-id="664cf-214">快速扫描与完全扫描和自定义扫描</span><span class="sxs-lookup"><span data-stu-id="664cf-214">Quick scan versus full scan and custom scan</span></span>](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/scheduled-catch-up-scans-microsoft-defender-antivirus#quick-scan-versus-full-scan-and-custom-scan)
 
-    <span data-ttu-id="84856-215">有关更多详细信息，请参阅 [Windows 安全配置框架](https://docs.microsoft.com/windows/security/threat-protection/windows-security-configuration-framework/windows-security-configuration-framework)</span><span class="sxs-lookup"><span data-stu-id="84856-215">For more details, see [Windows Security configuration framework](https://docs.microsoft.com/windows/security/threat-protection/windows-security-configuration-framework/windows-security-configuration-framework)</span></span>
+    <span data-ttu-id="664cf-215">有关更多详细信息，请参阅 [Windows 安全配置框架](https://docs.microsoft.com/windows/security/threat-protection/windows-security-configuration-framework/windows-security-configuration-framework)</span><span class="sxs-lookup"><span data-stu-id="664cf-215">For more details, see [Windows Security configuration framework](https://docs.microsoft.com/windows/security/threat-protection/windows-security-configuration-framework/windows-security-configuration-framework)</span></span>
   
     ![下一代保护窗格的图像2](images/cd7daeb392ad5a36f2d3a15d650f1e96.png)
 
@@ -256,139 +256,139 @@ ms.locfileid: "51054661"
 
     ![下一代保护窗格的图像9](images/3876ca687391bfc0ce215d221c683970.png)
 
-3. <span data-ttu-id="84856-224">右键单击新创建的反恶意软件策略， **然后选择部署**。</span><span class="sxs-lookup"><span data-stu-id="84856-224">Right-click on the newly created antimalware policy and select **Deploy**.</span></span>
+3. <span data-ttu-id="664cf-224">右键单击新创建的反恶意软件策略， **然后选择部署**。</span><span class="sxs-lookup"><span data-stu-id="664cf-224">Right-click on the newly created antimalware policy and select **Deploy**.</span></span>
 
     ![下一代保护窗格的图像10](images/f5508317cd8c7870627cb4726acd5f3d.png)
 
-4. <span data-ttu-id="84856-226">将新的反恶意软件策略定向到 Windows 10 集合，**然后单击确定。**</span><span class="sxs-lookup"><span data-stu-id="84856-226">Target the new antimalware policy to your Windows 10 collection and click **OK**.</span></span>
+4. <span data-ttu-id="664cf-226">将新的反恶意软件策略定向到 Windows 10 集合，**然后单击确定。**</span><span class="sxs-lookup"><span data-stu-id="664cf-226">Target the new antimalware policy to your Windows 10 collection and click **OK**.</span></span>
 
      ![下一代保护窗格的图像11](images/configmgr-select-collection.png)
 
-<span data-ttu-id="84856-228">完成此任务后，现在已成功配置Windows Defender防病毒。</span><span class="sxs-lookup"><span data-stu-id="84856-228">After completing this task, you now have successfully configured Windows Defender Antivirus.</span></span>
+<span data-ttu-id="664cf-228">完成此任务后，现在已成功配置Windows Defender防病毒。</span><span class="sxs-lookup"><span data-stu-id="664cf-228">After completing this task, you now have successfully configured Windows Defender Antivirus.</span></span>
 
-### <a name="attack-surface-reduction"></a><span data-ttu-id="84856-229">攻击面减少</span><span class="sxs-lookup"><span data-stu-id="84856-229">Attack surface reduction</span></span>
-<span data-ttu-id="84856-230">适用于终结点的 Defender 的攻击面减少支柱包括攻击防护下提供的功能集。</span><span class="sxs-lookup"><span data-stu-id="84856-230">The attack surface reduction pillar of Defender for Endpoint includes the feature set that is available under Exploit Guard.</span></span> <span data-ttu-id="84856-231">攻击面减少 (ASR) 规则、受控文件夹访问权限、网络保护和 Exploit Protection。</span><span class="sxs-lookup"><span data-stu-id="84856-231">Attack surface reduction (ASR) rules, Controlled Folder Access, Network Protection and Exploit Protection.</span></span> 
+### <a name="attack-surface-reduction"></a><span data-ttu-id="664cf-229">攻击面减少</span><span class="sxs-lookup"><span data-stu-id="664cf-229">Attack surface reduction</span></span>
+<span data-ttu-id="664cf-230">适用于终结点的 Defender 的攻击面减少支柱包括攻击防护下提供的功能集。</span><span class="sxs-lookup"><span data-stu-id="664cf-230">The attack surface reduction pillar of Defender for Endpoint includes the feature set that is available under Exploit Guard.</span></span> <span data-ttu-id="664cf-231">攻击面减少 (ASR) 规则、受控文件夹访问权限、网络保护和 Exploit Protection。</span><span class="sxs-lookup"><span data-stu-id="664cf-231">Attack surface reduction (ASR) rules, Controlled Folder Access, Network Protection and Exploit Protection.</span></span> 
 
-<span data-ttu-id="84856-232">所有这些功能都提供审核模式和阻止模式。</span><span class="sxs-lookup"><span data-stu-id="84856-232">All these features provide an audit mode and a block mode.</span></span> <span data-ttu-id="84856-233">在审核模式下，对最终用户没有影响。</span><span class="sxs-lookup"><span data-stu-id="84856-233">In audit mode there is no end-user impact.</span></span> <span data-ttu-id="84856-234">它仅收集其他遥测，使其在 Microsoft Defender 安全中心中可用。</span><span class="sxs-lookup"><span data-stu-id="84856-234">All it does is collect additional telemetry and make it available in the Microsoft Defender Security Center.</span></span> <span data-ttu-id="84856-235">部署的目标是将安全控件分步移动到阻止模式。</span><span class="sxs-lookup"><span data-stu-id="84856-235">The goal with a deployment is to step-by-step move security controls into block mode.</span></span>
+<span data-ttu-id="664cf-232">所有这些功能都提供审核模式和阻止模式。</span><span class="sxs-lookup"><span data-stu-id="664cf-232">All these features provide an audit mode and a block mode.</span></span> <span data-ttu-id="664cf-233">在审核模式下，对最终用户没有影响。</span><span class="sxs-lookup"><span data-stu-id="664cf-233">In audit mode there is no end-user impact.</span></span> <span data-ttu-id="664cf-234">它仅收集其他遥测，使其在 Microsoft Defender 安全中心中可用。</span><span class="sxs-lookup"><span data-stu-id="664cf-234">All it does is collect additional telemetry and make it available in the Microsoft Defender Security Center.</span></span> <span data-ttu-id="664cf-235">部署的目标是将安全控件分步移动到阻止模式。</span><span class="sxs-lookup"><span data-stu-id="664cf-235">The goal with a deployment is to step-by-step move security controls into block mode.</span></span>
 
-<span data-ttu-id="84856-236">在审核模式下设置 ASR 规则：</span><span class="sxs-lookup"><span data-stu-id="84856-236">To set ASR rules in Audit mode:</span></span>
+<span data-ttu-id="664cf-236">在审核模式下设置 ASR 规则：</span><span class="sxs-lookup"><span data-stu-id="664cf-236">To set ASR rules in Audit mode:</span></span>
 
-1. <span data-ttu-id="84856-237">在 Microsoft Endpoint Configuration Manager 控制台中，导航到"资产和合规性概述终结点保护 **\> \> \> "Windows Defender攻击防护"，** 然后选择"**创建攻击防护策略"。**</span><span class="sxs-lookup"><span data-stu-id="84856-237">In the Microsoft Endpoint Configuration Manager console, navigate to **Assets and Compliance \> Overview \> Endpoint Protection \> Windows Defender Exploit Guard** and choose **Create Exploit Guard Policy**.</span></span>
+1. <span data-ttu-id="664cf-237">在 Microsoft Endpoint Configuration Manager 控制台中，导航到"资产和合规性概述终结点保护 **\> \> \> "Windows Defender攻击防护"，** 然后选择"**创建攻击防护策略"。**</span><span class="sxs-lookup"><span data-stu-id="664cf-237">In the Microsoft Endpoint Configuration Manager console, navigate to **Assets and Compliance \> Overview \> Endpoint Protection \> Windows Defender Exploit Guard** and choose **Create Exploit Guard Policy**.</span></span>
 
    ![Microsoft Endpoint Configuration Manager 控制台的图像](images/728c10ef26042bbdbcd270b6343f1a8a.png)
 
-2.  <span data-ttu-id="84856-239">选择 **攻击面减少**。</span><span class="sxs-lookup"><span data-stu-id="84856-239">Select **Attack Surface Reduction**.</span></span>
+2.  <span data-ttu-id="664cf-239">选择 **攻击面减少**。</span><span class="sxs-lookup"><span data-stu-id="664cf-239">Select **Attack Surface Reduction**.</span></span>
    
 
-3. <span data-ttu-id="84856-240">将规则设置为 **审核，** 然后单击下一 **步**。</span><span class="sxs-lookup"><span data-stu-id="84856-240">Set rules to **Audit** and click **Next**.</span></span>
+3. <span data-ttu-id="664cf-240">将规则设置为 **审核，** 然后单击下一 **步**。</span><span class="sxs-lookup"><span data-stu-id="664cf-240">Set rules to **Audit** and click **Next**.</span></span>
 
 
     ![Microsoft Endpoint Configuration Manager 控制台的图像1](images/d18e40c9e60aecf1f9a93065cb7567bd.png)
 
-4. <span data-ttu-id="84856-242">通过单击下一步确认新的攻击 **防护策略**。</span><span class="sxs-lookup"><span data-stu-id="84856-242">Confirm the new Exploit Guard policy by clicking on **Next**.</span></span>
+4. <span data-ttu-id="664cf-242">通过单击下一步确认新的攻击 **防护策略**。</span><span class="sxs-lookup"><span data-stu-id="664cf-242">Confirm the new Exploit Guard policy by clicking on **Next**.</span></span>
 
     ![Microsoft Endpoint Configuration Manager 控制台 2 的图像](images/0a6536f2c4024c08709cac8fcf800060.png)
 
     
-5. <span data-ttu-id="84856-244">创建策略后，单击"关闭 **"。**</span><span class="sxs-lookup"><span data-stu-id="84856-244">Once the policy is created click **Close**.</span></span>
+5. <span data-ttu-id="664cf-244">创建策略后，单击"关闭 **"。**</span><span class="sxs-lookup"><span data-stu-id="664cf-244">Once the policy is created click **Close**.</span></span>
 
     ![Microsoft Endpoint Configuration Manager 控制台的图像3](images/95d23a07c2c8bc79176788f28cef7557.png)
 
     ![Microsoft Endpoint Manager 控制台的图像1](images/95d23a07c2c8bc79176788f28cef7557.png)
    
 
-6.  <span data-ttu-id="84856-247">右键单击新创建的策略， **然后选择部署**。</span><span class="sxs-lookup"><span data-stu-id="84856-247">Right-click on the newly created policy and choose **Deploy**.</span></span>
+6.  <span data-ttu-id="664cf-247">右键单击新创建的策略， **然后选择部署**。</span><span class="sxs-lookup"><span data-stu-id="664cf-247">Right-click on the newly created policy and choose **Deploy**.</span></span>
     
     ![Microsoft Endpoint Configuration Manager 控制台的图像4](images/8999dd697e3b495c04eb911f8b68a1ef.png)
 
-7. <span data-ttu-id="84856-249">将策略定向到新创建的 Windows 10 集合，**然后单击确定。**</span><span class="sxs-lookup"><span data-stu-id="84856-249">Target the policy to the newly created Windows 10 collection and click **OK**.</span></span>
+7. <span data-ttu-id="664cf-249">将策略定向到新创建的 Windows 10 集合，**然后单击确定。**</span><span class="sxs-lookup"><span data-stu-id="664cf-249">Target the policy to the newly created Windows 10 collection and click **OK**.</span></span>
 
     ![Microsoft Endpoint Configuration Manager 控制台的图像5](images/0ccfe3e803be4b56c668b220b51da7f7.png)
 
-<span data-ttu-id="84856-251">完成此任务后，现在可以在审核模式下成功配置 ASR 规则。</span><span class="sxs-lookup"><span data-stu-id="84856-251">After completing this task, you now have successfully configured ASR rules in audit mode.</span></span>  
+<span data-ttu-id="664cf-251">完成此任务后，现在可以在审核模式下成功配置 ASR 规则。</span><span class="sxs-lookup"><span data-stu-id="664cf-251">After completing this task, you now have successfully configured ASR rules in audit mode.</span></span>  
   
-<span data-ttu-id="84856-252">下面是验证 ASR 规则是否已正确应用到终结点的其他步骤。</span><span class="sxs-lookup"><span data-stu-id="84856-252">Below are additional steps to verify whether ASR rules are correctly applied to endpoints.</span></span> <span data-ttu-id="84856-253"> (这可能需要几分钟) </span><span class="sxs-lookup"><span data-stu-id="84856-253">(This may take few minutes)</span></span>
+<span data-ttu-id="664cf-252">下面是验证 ASR 规则是否已正确应用到终结点的其他步骤。</span><span class="sxs-lookup"><span data-stu-id="664cf-252">Below are additional steps to verify whether ASR rules are correctly applied to endpoints.</span></span> <span data-ttu-id="664cf-253"> (这可能需要几分钟) </span><span class="sxs-lookup"><span data-stu-id="664cf-253">(This may take few minutes)</span></span>
 
 
-1. <span data-ttu-id="84856-254">在 Web 浏览器中，导航到 <https://securitycenter.windows.com> 。</span><span class="sxs-lookup"><span data-stu-id="84856-254">From a web browser, navigate to <https://securitycenter.windows.com>.</span></span>
+1. <span data-ttu-id="664cf-254">在 Web 浏览器中，导航到 <https://securitycenter.windows.com> 。</span><span class="sxs-lookup"><span data-stu-id="664cf-254">From a web browser, navigate to <https://securitycenter.windows.com>.</span></span>
 
-2.  <span data-ttu-id="84856-255">从 **左侧菜单中选择** 配置管理。</span><span class="sxs-lookup"><span data-stu-id="84856-255">Select **Configuration management** from left side menu.</span></span>
+2.  <span data-ttu-id="664cf-255">从 **左侧菜单中选择** 配置管理。</span><span class="sxs-lookup"><span data-stu-id="664cf-255">Select **Configuration management** from left side menu.</span></span>
 
-3. <span data-ttu-id="84856-256">单击 **攻击面管理面板中的** 转到攻击面管理。</span><span class="sxs-lookup"><span data-stu-id="84856-256">Click **Go to attack surface management** in the Attack surface management panel.</span></span> 
+3. <span data-ttu-id="664cf-256">单击 **攻击面管理面板中的** 转到攻击面管理。</span><span class="sxs-lookup"><span data-stu-id="664cf-256">Click **Go to attack surface management** in the Attack surface management panel.</span></span> 
     
     ![攻击面管理的图像](images/security-center-attack-surface-mgnt-tile.png)
 
-4. <span data-ttu-id="84856-258">单击 **攻击面** 减少规则报告中的"配置"选项卡。</span><span class="sxs-lookup"><span data-stu-id="84856-258">Click **Configuration** tab in Attack surface reduction rules reports.</span></span> <span data-ttu-id="84856-259">它显示每台设备的 ASR 规则配置概述和 ASR 规则状态。</span><span class="sxs-lookup"><span data-stu-id="84856-259">It shows ASR rules configuration overview and ASR rules status on each devices.</span></span>
+4. <span data-ttu-id="664cf-258">单击 **攻击面** 减少规则报告中的"配置"选项卡。</span><span class="sxs-lookup"><span data-stu-id="664cf-258">Click **Configuration** tab in Attack surface reduction rules reports.</span></span> <span data-ttu-id="664cf-259">它显示每台设备的 ASR 规则配置概述和 ASR 规则状态。</span><span class="sxs-lookup"><span data-stu-id="664cf-259">It shows ASR rules configuration overview and ASR rules status on each devices.</span></span>
 
     ![攻击面减少规则报告屏幕截图1](images/f91f406e6e0aae197a947d3b0e8b2d0d.png)
 
-5. <span data-ttu-id="84856-261">单击每台设备可显示 ASR 规则的配置详细信息。</span><span class="sxs-lookup"><span data-stu-id="84856-261">Click each device shows configuration details of ASR rules.</span></span>
+5. <span data-ttu-id="664cf-261">单击每台设备可显示 ASR 规则的配置详细信息。</span><span class="sxs-lookup"><span data-stu-id="664cf-261">Click each device shows configuration details of ASR rules.</span></span>
 
     ![攻击面减少规则报告屏幕截图2](images/24bfb16ed561cbb468bd8ce51130ca9d.png)
 
-<span data-ttu-id="84856-263">有关 [更多详细信息，请参阅优化 ASR 规则](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/configure-machines-asr)   部署和检测。</span><span class="sxs-lookup"><span data-stu-id="84856-263">See [Optimize ASR rule deployment and detections](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/configure-machines-asr)   for more details.</span></span>  
+<span data-ttu-id="664cf-263">有关 [更多详细信息，请参阅优化 ASR 规则](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/configure-machines-asr)   部署和检测。</span><span class="sxs-lookup"><span data-stu-id="664cf-263">See [Optimize ASR rule deployment and detections](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/configure-machines-asr)   for more details.</span></span>  
 
 
-#### <a name="set-network-protection-rules-in-audit-mode"></a><span data-ttu-id="84856-264">在审核模式下设置网络保护规则：</span><span class="sxs-lookup"><span data-stu-id="84856-264">Set Network Protection rules in Audit mode:</span></span>
-1. <span data-ttu-id="84856-265">在 Microsoft Endpoint Configuration Manager 控制台中，导航到"资产和合规性概述终结点保护 **\> \> \> "Windows Defender攻击防护"，** 然后选择"**创建攻击防护策略"。**</span><span class="sxs-lookup"><span data-stu-id="84856-265">In the Microsoft Endpoint Configuration Manager console, navigate to **Assets and  Compliance \> Overview \> Endpoint Protection \> Windows Defender Exploit Guard** and choose **Create Exploit Guard Policy**.</span></span>
+#### <a name="set-network-protection-rules-in-audit-mode"></a><span data-ttu-id="664cf-264">在审核模式下设置网络保护规则：</span><span class="sxs-lookup"><span data-stu-id="664cf-264">Set Network Protection rules in Audit mode:</span></span>
+1. <span data-ttu-id="664cf-265">在 Microsoft Endpoint Configuration Manager 控制台中，导航到"资产和合规性概述终结点保护 **\> \> \> "Windows Defender攻击防护"，** 然后选择"**创建攻击防护策略"。**</span><span class="sxs-lookup"><span data-stu-id="664cf-265">In the Microsoft Endpoint Configuration Manager console, navigate to **Assets and  Compliance \> Overview \> Endpoint Protection \> Windows Defender Exploit Guard** and choose **Create Exploit Guard Policy**.</span></span>
 
     ![System Center Configuration Manager1 屏幕截图](images/728c10ef26042bbdbcd270b6343f1a8a.png)
 
-2. <span data-ttu-id="84856-267">选择 **"网络保护"。**</span><span class="sxs-lookup"><span data-stu-id="84856-267">Select **Network protection**.</span></span>
+2. <span data-ttu-id="664cf-267">选择 **"网络保护"。**</span><span class="sxs-lookup"><span data-stu-id="664cf-267">Select **Network protection**.</span></span>
 
-3. <span data-ttu-id="84856-268">将设置设置为审核 **，** 然后单击下一 **步**。</span><span class="sxs-lookup"><span data-stu-id="84856-268">Set the setting to **Audit** and click **Next**.</span></span> 
+3. <span data-ttu-id="664cf-268">将设置设置为审核 **，** 然后单击下一 **步**。</span><span class="sxs-lookup"><span data-stu-id="664cf-268">Set the setting to **Audit** and click **Next**.</span></span> 
 
     ![A screenshot System Center Confirugatiom Manager2](images/c039b2e05dba1ade6fb4512456380c9f.png)
 
-4. <span data-ttu-id="84856-270">通过单击下一步确认新的攻击防护 **策略**。</span><span class="sxs-lookup"><span data-stu-id="84856-270">Confirm the new Exploit Guard Policy by clicking **Next**.</span></span>
+4. <span data-ttu-id="664cf-270">通过单击下一步确认新的攻击防护 **策略**。</span><span class="sxs-lookup"><span data-stu-id="664cf-270">Confirm the new Exploit Guard Policy by clicking **Next**.</span></span>
     
     ![Screenshot Exploit GUard policy1](images/0a6536f2c4024c08709cac8fcf800060.png)
 
-5. <span data-ttu-id="84856-272">创建策略后，单击"关闭 **"。**</span><span class="sxs-lookup"><span data-stu-id="84856-272">Once the policy is created click on **Close**.</span></span>
+5. <span data-ttu-id="664cf-272">创建策略后，单击"关闭 **"。**</span><span class="sxs-lookup"><span data-stu-id="664cf-272">Once the policy is created click on **Close**.</span></span>
 
     ![Screenshot Exploit GUard policy2](images/95d23a07c2c8bc79176788f28cef7557.png)
 
-6. <span data-ttu-id="84856-274">右键单击新创建的策略， **然后选择部署**。</span><span class="sxs-lookup"><span data-stu-id="84856-274">Right-click on the newly created policy and choose **Deploy**.</span></span>
+6. <span data-ttu-id="664cf-274">右键单击新创建的策略， **然后选择部署**。</span><span class="sxs-lookup"><span data-stu-id="664cf-274">Right-click on the newly created policy and choose **Deploy**.</span></span>
 
     ![Microsoft Endpoint Configuration Manager1 屏幕截图](images/8999dd697e3b495c04eb911f8b68a1ef.png)
 
-7. <span data-ttu-id="84856-276">选择新创建的 Windows 10 集合的策略，然后选择"确定 **"。**</span><span class="sxs-lookup"><span data-stu-id="84856-276">Select the policy to the newly created Windows 10 collection and choose **OK**.</span></span>
+7. <span data-ttu-id="664cf-276">选择新创建的 Windows 10 集合的策略，然后选择"确定 **"。**</span><span class="sxs-lookup"><span data-stu-id="664cf-276">Select the policy to the newly created Windows 10 collection and choose **OK**.</span></span>
 
     ![Microsoft Endpoint Configuration Manager2 屏幕截图](images/0ccfe3e803be4b56c668b220b51da7f7.png)
 
 
 
-<span data-ttu-id="84856-278">完成此任务后，现在可以在审核模式下成功配置网络保护。</span><span class="sxs-lookup"><span data-stu-id="84856-278">After completing this task, you now have successfully configured Network Protection in audit mode.</span></span>
+<span data-ttu-id="664cf-278">完成此任务后，现在可以在审核模式下成功配置网络保护。</span><span class="sxs-lookup"><span data-stu-id="664cf-278">After completing this task, you now have successfully configured Network Protection in audit mode.</span></span>
 
-#### <a name="to-set-controlled-folder-access-rules-in-audit-mode"></a><span data-ttu-id="84856-279">在审核模式下设置受控文件夹访问权限规则：</span><span class="sxs-lookup"><span data-stu-id="84856-279">To set Controlled Folder Access rules in Audit mode:</span></span>
+#### <a name="to-set-controlled-folder-access-rules-in-audit-mode"></a><span data-ttu-id="664cf-279">在审核模式下设置受控文件夹访问权限规则：</span><span class="sxs-lookup"><span data-stu-id="664cf-279">To set Controlled Folder Access rules in Audit mode:</span></span>
 
-1. <span data-ttu-id="84856-280">在 Microsoft Endpoint Configuration Manager 控制台中，导航到"资产和合规性概述终结点保护 **\> \> \> "Windows Defender攻击防护"，** 然后选择"**创建攻击防护策略"。**</span><span class="sxs-lookup"><span data-stu-id="84856-280">In the Microsoft Endpoint Configuration Manager console, navigate to **Assets and Compliance \> Overview \> Endpoint Protection \> Windows Defender Exploit Guard** and choose **Create Exploit Guard Policy**.</span></span>
+1. <span data-ttu-id="664cf-280">在 Microsoft Endpoint Configuration Manager 控制台中，导航到"资产和合规性概述终结点保护 **\> \> \> "Windows Defender攻击防护"，** 然后选择"**创建攻击防护策略"。**</span><span class="sxs-lookup"><span data-stu-id="664cf-280">In the Microsoft Endpoint Configuration Manager console, navigate to **Assets and Compliance \> Overview \> Endpoint Protection \> Windows Defender Exploit Guard** and choose **Create Exploit Guard Policy**.</span></span>
 
     ![Microsoft Endpoint Configuration Manager3 的屏幕截图](images/728c10ef26042bbdbcd270b6343f1a8a.png)
 
-2. <span data-ttu-id="84856-282">选择 **受控文件夹访问权限**。</span><span class="sxs-lookup"><span data-stu-id="84856-282">Select **Controlled folder access**.</span></span>
+2. <span data-ttu-id="664cf-282">选择 **受控文件夹访问权限**。</span><span class="sxs-lookup"><span data-stu-id="664cf-282">Select **Controlled folder access**.</span></span>
     
-3. <span data-ttu-id="84856-283">将配置设置为审核 **，** 然后单击下一 **步**。</span><span class="sxs-lookup"><span data-stu-id="84856-283">Set the configuration to **Audit** and click **Next**.</span></span>
+3. <span data-ttu-id="664cf-283">将配置设置为审核 **，** 然后单击下一 **步**。</span><span class="sxs-lookup"><span data-stu-id="664cf-283">Set the configuration to **Audit** and click **Next**.</span></span>
 
     ![Microsoft Endpoint Configuration Manager4 的屏幕截图](images/a8b934dab2dbba289cf64fe30e0e8aa4.png)    
     
-4. <span data-ttu-id="84856-285">通过单击下一步确认新的攻击防护 **策略**。</span><span class="sxs-lookup"><span data-stu-id="84856-285">Confirm the new Exploit Guard Policy by clicking on **Next**.</span></span>
+4. <span data-ttu-id="664cf-285">通过单击下一步确认新的攻击防护 **策略**。</span><span class="sxs-lookup"><span data-stu-id="664cf-285">Confirm the new Exploit Guard Policy by clicking on **Next**.</span></span>
 
     ![Microsoft Endpoint Configuration Manager5 的屏幕截图](images/0a6536f2c4024c08709cac8fcf800060.png)
 
-5. <span data-ttu-id="84856-287">创建策略后，单击"关闭 **"。**</span><span class="sxs-lookup"><span data-stu-id="84856-287">Once the policy is created click on **Close**.</span></span>
+5. <span data-ttu-id="664cf-287">创建策略后，单击"关闭 **"。**</span><span class="sxs-lookup"><span data-stu-id="664cf-287">Once the policy is created click on **Close**.</span></span>
 
     ![Microsoft Endpoint Configuration Manager6 的屏幕截图](images/95d23a07c2c8bc79176788f28cef7557.png)
 
-6. <span data-ttu-id="84856-289">右键单击新创建的策略， **然后选择部署**。</span><span class="sxs-lookup"><span data-stu-id="84856-289">Right-click on the newly created policy and choose **Deploy**.</span></span>
+6. <span data-ttu-id="664cf-289">右键单击新创建的策略， **然后选择部署**。</span><span class="sxs-lookup"><span data-stu-id="664cf-289">Right-click on the newly created policy and choose **Deploy**.</span></span>
 
     ![Microsoft Endpoint Configuration Manager7 的屏幕截图](images/8999dd697e3b495c04eb911f8b68a1ef.png)
 
-7.  <span data-ttu-id="84856-291">将策略定向到新创建的 Windows 10 集合，**然后单击确定。**</span><span class="sxs-lookup"><span data-stu-id="84856-291">Target the policy to the newly created Windows 10 collection and click **OK**.</span></span>
+7.  <span data-ttu-id="664cf-291">将策略定向到新创建的 Windows 10 集合，**然后单击确定。**</span><span class="sxs-lookup"><span data-stu-id="664cf-291">Target the policy to the newly created Windows 10 collection and click **OK**.</span></span>
 
     ![Microsoft Endpoint Configuration Manager8 的屏幕截图](images/0ccfe3e803be4b56c668b220b51da7f7.png)
 
-<span data-ttu-id="84856-293">现在，你已成功在审核模式下配置受控文件夹访问权限。</span><span class="sxs-lookup"><span data-stu-id="84856-293">You have now successfully configured Controlled folder access in audit mode.</span></span>
+<span data-ttu-id="664cf-293">现在，你已成功在审核模式下配置受控文件夹访问权限。</span><span class="sxs-lookup"><span data-stu-id="664cf-293">You have now successfully configured Controlled folder access in audit mode.</span></span>
 
-## <a name="related-topic"></a><span data-ttu-id="84856-294">相关主题</span><span class="sxs-lookup"><span data-stu-id="84856-294">Related topic</span></span>
-- [<span data-ttu-id="84856-295">使用 Microsoft Endpoint Manager 载入</span><span class="sxs-lookup"><span data-stu-id="84856-295">Onboarding using Microsoft Endpoint Manager</span></span>](onboarding-endpoint-manager.md)
+## <a name="related-topic"></a><span data-ttu-id="664cf-294">相关主题</span><span class="sxs-lookup"><span data-stu-id="664cf-294">Related topic</span></span>
+- [<span data-ttu-id="664cf-295">使用 Microsoft Endpoint Manager 载入</span><span class="sxs-lookup"><span data-stu-id="664cf-295">Onboarding using Microsoft Endpoint Manager</span></span>](onboarding-endpoint-manager.md)
