@@ -1,0 +1,115 @@
+---
+title: 获取 IP 统计信息 API
+description: 使用 Microsoft Defender for Endpoint 获取你的 IP 的最新统计信息。
+keywords: api， 图形 api， 受支持的 api， 获取， ip， 统计信息， 普遍程度
+search.product: eADQiWindows 10XVcnh
+ms.prod: m365-security
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.pagetype: security
+ms.author: macapara
+author: mjcaparas
+localization_priority: Normal
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance
+ms.topic: article
+ms.technology: mde
+ms.openlocfilehash: c47a5e58b1888447a4428fad78e71b85cfe79b69
+ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51166480"
+---
+# <a name="get-ip-statistics-api"></a><span data-ttu-id="06561-104">获取 IP 统计信息 API</span><span class="sxs-lookup"><span data-stu-id="06561-104">Get IP statistics API</span></span>
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+<span data-ttu-id="06561-105">**适用于：**</span><span class="sxs-lookup"><span data-stu-id="06561-105">**Applies to:**</span></span>
+- [<span data-ttu-id="06561-106">Microsoft Defender for Endpoint</span><span class="sxs-lookup"><span data-stu-id="06561-106">Microsoft Defender for Endpoint</span></span>](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [<span data-ttu-id="06561-107">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="06561-107">Microsoft 365 Defender</span></span>](https://go.microsoft.com/fwlink/?linkid=2118804)
+
+> <span data-ttu-id="06561-108">想要体验适用于终结点的 Defender？</span><span class="sxs-lookup"><span data-stu-id="06561-108">Want to experience Defender for Endpoint?</span></span> [<span data-ttu-id="06561-109">注册免费试用版。</span><span class="sxs-lookup"><span data-stu-id="06561-109">Sign up for a free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+
+[!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
+
+[!include[Improve request performance](../../includes/improve-request-performance.md)]
+
+## <a name="api-description"></a><span data-ttu-id="06561-110">API 说明</span><span class="sxs-lookup"><span data-stu-id="06561-110">API description</span></span>
+<span data-ttu-id="06561-111">检索给定 IP 的统计信息。</span><span class="sxs-lookup"><span data-stu-id="06561-111">Retrieves the statistics for the given IP.</span></span>
+
+## <a name="limitations"></a><span data-ttu-id="06561-112">限制</span><span class="sxs-lookup"><span data-stu-id="06561-112">Limitations</span></span>
+1. <span data-ttu-id="06561-113">此 API 的速率限制是每分钟 100 个调用和每小时 1500 个调用。</span><span class="sxs-lookup"><span data-stu-id="06561-113">Rate limitations for this API are 100 calls per minute and 1500 calls per hour.</span></span>
+
+## <a name="permissions"></a><span data-ttu-id="06561-114">权限</span><span class="sxs-lookup"><span data-stu-id="06561-114">Permissions</span></span>
+<span data-ttu-id="06561-115">若要调用此 API，需要以下权限之一。</span><span class="sxs-lookup"><span data-stu-id="06561-115">One of the following permissions is required to call this API.</span></span> <span data-ttu-id="06561-116">若要了解更多信息（包括如何选择权限），请参阅使用 [Microsoft Defender for Endpoint API](apis-intro.md)</span><span class="sxs-lookup"><span data-stu-id="06561-116">To learn more, including how to choose permissions, see [Use Microsoft Defender for Endpoint APIs](apis-intro.md)</span></span>
+
+<span data-ttu-id="06561-117">权限类型</span><span class="sxs-lookup"><span data-stu-id="06561-117">Permission type</span></span> |   <span data-ttu-id="06561-118">权限</span><span class="sxs-lookup"><span data-stu-id="06561-118">Permission</span></span>  |   <span data-ttu-id="06561-119">权限显示名称</span><span class="sxs-lookup"><span data-stu-id="06561-119">Permission display name</span></span>
+:---|:---|:---
+<span data-ttu-id="06561-120">Application</span><span class="sxs-lookup"><span data-stu-id="06561-120">Application</span></span> |   <span data-ttu-id="06561-121">Ip.Read.All</span><span class="sxs-lookup"><span data-stu-id="06561-121">Ip.Read.All</span></span> |   <span data-ttu-id="06561-122">"读取 IP 地址配置文件"</span><span class="sxs-lookup"><span data-stu-id="06561-122">'Read IP address profiles'</span></span>
+<span data-ttu-id="06561-123">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="06561-123">Delegated (work or school account)</span></span> | <span data-ttu-id="06561-124">Ip.Read.All</span><span class="sxs-lookup"><span data-stu-id="06561-124">Ip.Read.All</span></span> |  <span data-ttu-id="06561-125">"读取 IP 地址配置文件"</span><span class="sxs-lookup"><span data-stu-id="06561-125">'Read IP address profiles'</span></span>
+
+>[!NOTE]
+> <span data-ttu-id="06561-126">使用用户凭据获取令牌时：</span><span class="sxs-lookup"><span data-stu-id="06561-126">When obtaining a token using user credentials:</span></span>
+>- <span data-ttu-id="06561-127">用户至少需要具有以下角色权限："查看数据"权限 (有关详细信息，请参阅创建和管理) [](user-roles.md)</span><span class="sxs-lookup"><span data-stu-id="06561-127">The user needs to have at least the following role permission: 'View Data' (See [Create and manage roles](user-roles.md) for more information)</span></span>
+
+## <a name="http-request"></a><span data-ttu-id="06561-128">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="06561-128">HTTP request</span></span>
+
+```http
+GET /api/ips/{ip}/stats
+```
+
+## <a name="request-headers"></a><span data-ttu-id="06561-129">请求标头</span><span class="sxs-lookup"><span data-stu-id="06561-129">Request headers</span></span>
+
+<span data-ttu-id="06561-130">名称</span><span class="sxs-lookup"><span data-stu-id="06561-130">Name</span></span> | <span data-ttu-id="06561-131">类型</span><span class="sxs-lookup"><span data-stu-id="06561-131">Type</span></span> | <span data-ttu-id="06561-132">说明</span><span class="sxs-lookup"><span data-stu-id="06561-132">Description</span></span>
+:---|:---|:---
+<span data-ttu-id="06561-133">Authorization</span><span class="sxs-lookup"><span data-stu-id="06561-133">Authorization</span></span> | <span data-ttu-id="06561-134">String</span><span class="sxs-lookup"><span data-stu-id="06561-134">String</span></span> | <span data-ttu-id="06561-135">Bearer {token}。</span><span class="sxs-lookup"><span data-stu-id="06561-135">Bearer {token}.</span></span> <span data-ttu-id="06561-136">**必需**。</span><span class="sxs-lookup"><span data-stu-id="06561-136">**Required**.</span></span>
+
+## <a name="request-uri-parameters"></a><span data-ttu-id="06561-137">请求 URI 参数</span><span class="sxs-lookup"><span data-stu-id="06561-137">Request URI parameters</span></span>
+
+<span data-ttu-id="06561-138">名称</span><span class="sxs-lookup"><span data-stu-id="06561-138">Name</span></span> | <span data-ttu-id="06561-139">类型</span><span class="sxs-lookup"><span data-stu-id="06561-139">Type</span></span> | <span data-ttu-id="06561-140">说明</span><span class="sxs-lookup"><span data-stu-id="06561-140">Description</span></span>
+:---|:---|:---
+<span data-ttu-id="06561-141">lookBackHours</span><span class="sxs-lookup"><span data-stu-id="06561-141">lookBackHours</span></span> | <span data-ttu-id="06561-142">Int32</span><span class="sxs-lookup"><span data-stu-id="06561-142">Int32</span></span> | <span data-ttu-id="06561-143">定义我们重新搜索以获取统计信息的小时数。</span><span class="sxs-lookup"><span data-stu-id="06561-143">Defines the hours we search back to get the statistics.</span></span> <span data-ttu-id="06561-144">默认为 30 天。</span><span class="sxs-lookup"><span data-stu-id="06561-144">Defaults to 30 days.</span></span> <span data-ttu-id="06561-145">**可选。**</span><span class="sxs-lookup"><span data-stu-id="06561-145">**Optional**.</span></span>
+
+## <a name="request-body"></a><span data-ttu-id="06561-146">请求正文</span><span class="sxs-lookup"><span data-stu-id="06561-146">Request body</span></span>
+<span data-ttu-id="06561-147">Empty</span><span class="sxs-lookup"><span data-stu-id="06561-147">Empty</span></span>
+
+## <a name="response"></a><span data-ttu-id="06561-148">响应</span><span class="sxs-lookup"><span data-stu-id="06561-148">Response</span></span>
+<span data-ttu-id="06561-149">如果成功且 ip 存在 - 200 正常，正文中具有统计数据。</span><span class="sxs-lookup"><span data-stu-id="06561-149">If successful and ip exists - 200 OK with statistical data in the body.</span></span> <span data-ttu-id="06561-150">IP 不存在 - 404 未找到。</span><span class="sxs-lookup"><span data-stu-id="06561-150">IP do not exist - 404 Not Found.</span></span>
+
+
+## <a name="example"></a><span data-ttu-id="06561-151">示例</span><span class="sxs-lookup"><span data-stu-id="06561-151">Example</span></span>
+
+<span data-ttu-id="06561-152">**请求**</span><span class="sxs-lookup"><span data-stu-id="06561-152">**Request**</span></span>
+
+<span data-ttu-id="06561-153">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="06561-153">Here is an example of the request.</span></span>
+
+```http
+GET https://api.securitycenter.microsoft.com/api/ips/10.209.67.177/stats?lookBackHours=48
+```
+
+<span data-ttu-id="06561-154">**响应**</span><span class="sxs-lookup"><span data-stu-id="06561-154">**Response**</span></span>
+
+<span data-ttu-id="06561-155">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="06561-155">Here is an example of the response.</span></span>
+
+
+```json
+{
+    "@odata.context": "https://api.securitycenter.microsoft.com/api/$metadata#microsoft.windowsDefenderATP.api.InOrgIPStats",
+    "ipAddress": "10.209.67.177",
+    "orgPrevalence": "63515",
+    "orgFirstSeen": "2017-07-30T13:36:06Z",
+    "orgLastSeen": "2017-08-29T13:32:59Z"
+}
+```
+
+
+| <span data-ttu-id="06561-156">名称</span><span class="sxs-lookup"><span data-stu-id="06561-156">Name</span></span> | <span data-ttu-id="06561-157">说明</span><span class="sxs-lookup"><span data-stu-id="06561-157">Description</span></span> |
+| :--- | :---------- |
+| <span data-ttu-id="06561-158">组织普遍程度</span><span class="sxs-lookup"><span data-stu-id="06561-158">Org prevalence</span></span> | <span data-ttu-id="06561-159">打开到此 IP 的网络连接的设备数。</span><span class="sxs-lookup"><span data-stu-id="06561-159">the distinct count of devices that opened network connection to this IP.</span></span> |
+| <span data-ttu-id="06561-160">首次看到组织</span><span class="sxs-lookup"><span data-stu-id="06561-160">Org first seen</span></span> | <span data-ttu-id="06561-161">组织中此 IP 的第一个连接。</span><span class="sxs-lookup"><span data-stu-id="06561-161">the first connection for this IP in the organization.</span></span> |
+| <span data-ttu-id="06561-162">上次查看组织</span><span class="sxs-lookup"><span data-stu-id="06561-162">Org last seen</span></span>  | <span data-ttu-id="06561-163">组织中此 IP 的最后一个连接。</span><span class="sxs-lookup"><span data-stu-id="06561-163">the last connection for this IP in the organization.</span></span> |
+
+> [!NOTE]
+> <span data-ttu-id="06561-164">此统计信息基于过去 30 天的数据。</span><span class="sxs-lookup"><span data-stu-id="06561-164">This statistic information is based on data from the past 30 days.</span></span> 
