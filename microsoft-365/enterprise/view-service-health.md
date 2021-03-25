@@ -26,12 +26,12 @@ search.appverid:
 - IWA160
 ms.assetid: 932ad3ad-533c-418a-b938-6e44e8bc33b0
 description: 在致电支持部门之前，查看 Microsoft 365 服务的运行状况，以查看是否有活动服务中断。
-ms.openlocfilehash: 3802ca01902d5b0d457d2a3d75b784d38f71bd42
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 30b677a80e5a08d75534a91aa04d735443660f18
+ms.sourcegitcommit: 3d2261af22bebbbf7efa8a0d3135225a15bd6ba8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50924680"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51215476"
 ---
 # <a name="how-to-check-microsoft-365-service-health"></a>如何检查 Microsoft 365 服务运行状况
 
@@ -47,7 +47,7 @@ ms.locfileid: "50924680"
 1. 转到 Microsoft 365 管理中心 ，然后 [https://admin.microsoft.com](https://go.microsoft.com/fwlink/p/?linkid=2024339) 使用管理员帐户登录。
 
     > [!NOTE]
-    > 分配为全局管理员或服务管理员角色的人员可以查看服务运行状况。 若要允许 Exchange、SharePoint 和 Skype for Business 管理员查看服务运行状况，必须向他们分配服务管理员角色。 有关可以查看服务运行状况的角色详细信息，请参阅关于 [管理员角色](../admin/add-users/about-admin-roles.md?preserve-view=true&view=o365-worldwide#roles-available-in-the-microsoft-365-admin-center)。
+    > 分配为全局管理员或服务管理员角色的人员可以查看服务运行状况。 若要允许 Exchange、SharePoint 和 Skype for Business 管理员查看服务运行状况，必须向他们分配服务管理员角色。 有关可以查看服务运行状况的角色详细信息，请参阅关于 [管理员角色](../admin/add-users/about-admin-roles.md?preserve-view=true&view=o365-worldwide#commonly-used-microsoft-365-admin-center-roles)。
   
 2. 如果未使用新的管理中心，请在主页上，选择右上角的"试用新的管理中心"切换。
 
@@ -153,4 +153,5 @@ ms.locfileid: "50924680"
 ## <a name="related-topics"></a>相关主题
 
 [Microsoft 365 管理中心中的活动报告](https://support.office.com/article/0d6dfb17-8582-4172-a9a9-aed798150263) 
-[消息中心首选项](../admin/manage/message-center.md?preserve-view=true&view=o365-worldwide#preferences11)
+[消息中心首选项](../admin/manage/message-center.md?preserve-view=true&view=o365-worldwide#preferences)<br/>
+[如何在管理中心上检查 Windows 版本运行状况](https://docs.microsoft.com/windows/deployment/update/check-release-health)

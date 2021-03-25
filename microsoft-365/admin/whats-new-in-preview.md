@@ -21,12 +21,12 @@ description: Microsoft 365 管理中心 - 了解本月添加的功能。
 ms.custom:
 - MACDashWhatsNew
 - AdminSurgePortfolio
-ms.openlocfilehash: 833f782e071e06d837ca5eacfcb72e2d6e16c8fb
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: b670c6a333485bc3a19ae14b8e7c71f08181cac5
+ms.sourcegitcommit: 3d2261af22bebbbf7efa8a0d3135225a15bd6ba8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50913930"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51215572"
 ---
 # <a name="whats-new-in-the-microsoft-365-admin-center"></a>Microsoft 365 管理中心的新增功能
 
@@ -48,6 +48,7 @@ ms.locfileid: "50913930"
 - [Microsoft 365 Defender 的新增功能](../security/mtp/whats-new.md)
 - [SharePoint 管理中心的新增功能](/sharepoint/what-s-new-in-admin-center)
 - [Office 更新](/OfficeUpdates/)
+- [如何检查 Windows 版本运行状况](https://docs.microsoft.com/windows/deployment/update/check-release-health)
 
 ## <a name="ignite-2021-march"></a>Ignite 2021 (3) 
 
