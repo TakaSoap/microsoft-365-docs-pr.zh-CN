@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 从 Microsoft 365 管理中心查看有关集中部署的常见问题解答。
-ms.openlocfilehash: 9f4841508701d4dd5878e99fcc51a436bc5824e2
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 06e3b7973a209cdf40446c5a9511713d779373b8
+ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50915466"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51221831"
 ---
 # <a name="centralized-deployment-faq"></a>集中部署常见问题解答
 
@@ -72,7 +72,7 @@ ms.locfileid: "50915466"
 
 是。 管理员可以上载新的清单文件以支持管理员部署的 LOB 加载项的元数据更改。外接程序在下次启动 Office 应用程序时更新。 Web 应用程序可以随时更改。  
  
-有关详细信息，请参阅 [业务线加载项](./manage-addins-in-the-admin-center.md#more-about-office-add-ins-security)。  
+有关详细信息，请参阅 [业务线加载项](./manage-addins-in-the-admin-center.md)。  
 
 ## <a name="can-admins-turn-off-add-ins"></a>管理员可以关闭加载项吗？  
 

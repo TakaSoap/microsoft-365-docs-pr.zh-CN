@@ -14,12 +14,12 @@ ms.collection:
 - m365initiative-viva-topics
 localization_priority: None
 description: 在 Viva 主题中了解用户角色。
-ms.openlocfilehash: 6d93046a96b60779c3cd3bd6c6aa600cb443118f
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: e91eda6807634ad27bf6c15c2dd0d1c9434ce299
+ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50917352"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51222763"
 ---
 # <a name="microsoft-viva-topics-roles"></a>Microsoft Viva 主题角色 
 
@@ -49,7 +49,7 @@ ms.locfileid: "50917352"
 若要创建和编辑主题，用户必须：
 
 -   由 Microsoft 365[管理员分配 Viva](./set-up-topic-experiences.md#assign-licenses)主题许可证。
--   [分配有创建和编辑主题的权限](./topic-experiences-user-permissions.md#change-who-has-permissions-to-do-tasks-on-the-topic-center)。 此任务由知识管理员在 Microsoft 365 管理中心的 Viva 主题设置页面中完成。
+-   [分配有创建和编辑主题的权限](./topic-experiences-user-permissions.md)。 此任务由知识管理员在 Microsoft 365 管理中心的 Viva 主题设置页面中完成。
 
 ## <a name="knowledge-managers"></a>知识经理
 
@@ -64,7 +64,7 @@ ms.locfileid: "50917352"
 
 若要管理主题，用户必须：
 -   由 Microsoft 365[管理员分配 Viva](./set-up-topic-experiences.md#assign-licenses)主题许可证。
--   [分配有管理主题) 。](./topic-experiences-user-permissions.md#change-who-has-permissions-to-do-tasks-on-the-topic-center) 此任务由知识管理员在 Microsoft 365 管理中心的 Viva 主题设置页面中完成。
+-   [分配有管理主题) 。](./topic-experiences-user-permissions.md) 此任务由知识管理员在 Microsoft 365 管理中心的 Viva 主题设置页面中完成。
 
 对业务有全面了解的用户可能是担任知识经理角色的良好候选者。 这些人员不仅可能了解主题是否有效，还可能会了解公司内与这些主题相关的人员。
 

@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: 了解如何在 Microsoft SharePoint Syntex 中创建提取程序。
-ms.openlocfilehash: 8218d04d2f5cb4e8f8f67bdcd744b7f1a4a4d18a
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: e95df00c2601bccc5041f96c745048adc8dfc91f
+ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50905808"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51222787"
 ---
 # <a name="create-an-extractor-in-microsoft-sharepoint-syntex"></a>在 Microsoft SharePoint Syntex 中创建提取程序
 
@@ -91,7 +91,7 @@ ms.locfileid: "50905808"
 
 ### <a name="use-the-explanation-library"></a>使用“说明库”
 
-若要创建日期等项目的说明，[使用说明库](./explanation-types-overview.md#use-the-explanation-library)比手动输入所有变体来得更加简单。 说明库是一组预建短语和模式说明。 库会尝试为常见短语或模式列表提供所有格式，如日期、电话号码、邮政编码和其他许多格式。 
+若要创建日期等项目的说明，[使用说明库](./explanation-types-overview.md)比手动输入所有变体来得更加简单。 说明库是一组预建短语和模式说明。 库会尝试为常见短语或模式列表提供所有格式，如日期、电话号码、邮政编码和其他许多格式。 
 
 对于“*服务开始日期*”示例，在说明库中使用“*日期”* 的预建说明会更高效 ：
 

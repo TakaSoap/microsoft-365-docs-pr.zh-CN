@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 ms.assetid: e1da26c6-2d39-4379-af6f-4da213218408
 description: 本文介绍与 Office 365 一同使用的 Azure ExpressRoute 路由要求、电路和路由域。
-ms.openlocfilehash: 1091ca5e1d48c9837f83e83d4c747c2cbcd523e3
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 9d3c381cfb6e24c1c87ef3dcfb83a9b93f991b93
+ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50924924"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51222403"
 ---
 # <a name="routing-with-expressroute-for-office-365"></a>通过适用于 Office 365 的 ExpressRoute 进行路由
 
@@ -41,7 +41,7 @@ ms.locfileid: "50924924"
 
 - ExpressRoute 电路和客户密钥之间的映射为 1：1。
 
-- 每个电路可以支持 2 个独立的对等 (Azure 专用对等和 Microsoft 对等) ;Office 365 需要 Microsoft 对等。
+- 每个电路可以支持两个独立的对等 (Azure 专用对等和 Microsoft 对等) ;Office 365 需要 Microsoft 对等。
 
 - 每个电路都有一个在所有对等关系中共享的固定带宽。
 
@@ -75,7 +75,7 @@ Office 365 前端服务器可通过 Internet 和 ExpressRoute 访问。 当两�
 
 对于这些双向流量，Microsoft 要路由回网络，到本地设备的 BGP 路由必须与 Microsoft 共享。 通过 ExpressRoute 向 Microsoft 播发路由前缀时，应遵循以下最佳做法：
 
-1) 不要向公共 Internet 和 ExpressRoute 公布相同的公共 IP 地址路由前缀。 强烈建议通过 ExpressRoute 向 Microsoft 发送的 IP BGP 路由前缀广告来自一个完全未向 Internet 播发的范围。 如果由于可用的 IP 地址空间无法实现此目的，则必须确保通过 ExpressRoute 播发比任何 Internet 线路更具体的范围。
+1) 不要向公共 Internet 和 ExpressRoute 公布相同的公共 IP 地址路由前缀。 建议通过 ExpressRoute 向 Microsoft 发送的 IP BGP 路由前缀广告来自一个完全未向 Internet 播发的范围。 如果由于可用的 IP 地址空间无法实现此目的，则必须确保通过 ExpressRoute 播发比任何 Internet 线路更具体的范围。
 
 2) 每个 ExpressRoute 电路使用单独的 NAT IP 池，并独立于 Internet 线路。
 
@@ -95,7 +95,7 @@ Office 365 前端服务器可通过 Internet 和 ExpressRoute 访问。 当两�
 
 Office 365 终结点文章中按应用程序类型和 FQDN 列出了使用 Microsoft 对等的每个 [Office 365](https://support.office.com/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2) 功能。 使用表中 FQDN 的原因是允许客户使用 PAC 文件或其他代理配置管理流量，请参阅管理 [Office 365](./managing-office-365-endpoints.md) 终结点（例如 PAC 文件）的指南。
   
-在某些情况下，我们使用了通配符域，其中一个或多个子 FQDN 的播发方式与更高级别的通配符域不同。 当通配符表示所有播发到 ExpressRoute 和 Internet 的服务器长列表，而一小部分目标仅向 Internet 播发或反向播发时，通常会发生这种情况。 请参阅下面的表以了解区别。
+在某些情况下，我们使用了通配符域，其中一个或多个子 FQDN 的播发方式与更高级别的通配符域不同。 当通配符表示所有播发到 ExpressRoute 和 Internet 的服务器长列表，而仅向 Internet 播发一小部分目标或反向播发目标时，通常会发生这种情况。 请参阅下面的表以了解区别。
   
 此表显示向 Internet 和 Azure ExpressRoute 播发的通配符 FQDN 以及仅向 Internet 播发的子 FQDN。
 
@@ -112,7 +112,7 @@ Office 365 终结点文章中按应用程序类型和 FQDN 列出了使用 Micro
 
 3. 包括这两个条目下方的任何其他网络终结点或规则，向代理发送流量。
 
-此表只显示在向 Azure ExpressRoute 和 Internet 线路播发的子 FQN 旁边公布到 Internet 线路的通配符域。 对于上面的 PAC 文件，下表第二列中的 FQDN 在引用的链接中列为向 ExpressRoute 播发，这意味着它们将包含在文件的第二组条目中。
+此表只显示在向 Azure ExpressRoute 和 Internet 线路播发的子 FQN 旁边公布到 Internet 线路的通配符域。 对于上面的 PAC 文件，下表第 2 列的 FQDN 将在引用的链接中列为向 ExpressRoute 播发，这意味着它们将包含在文件的第二组条目中。
 
 |**仅向 Internet 线路播发的通配符域**|**向 ExpressRoute 和 Internet 线路播发的子 FQDN**|
 |:-----|:-----|
@@ -130,7 +130,7 @@ Office 365 终结点文章中按应用程序类型和 FQDN 列出了使用 Micro
 
 2. 您希望网络流量 () 的出口位置。 应计划最大程度地降低与 Office 365 的连接的网络延迟，因为这样做会影响性能。 由于 Skype for Business 使用实时语音和视频，因此它特别容易受到较差的网络延迟的影响。
 
-3. 如果你希望所有或部分网络位置利用 ExpressRoute。
+3. 如果你希望所有或部分网络位置使用 ExpressRoute。
 
 4. 所选网络提供商从什么位置提供 ExpressRoute。
 
@@ -142,11 +142,11 @@ Office 365 终结点文章中按应用程序类型和 FQDN 列出了使用 Micro
   
 Trey Research 的员工只能连接到安全部门明确允许的 Internet 上的服务和网站，这些代理对位于企业网络与 ISP 之间的出站代理对上。
   
-Trey Research 计划将 Azure ExpressRoute 用于 Office 365，并意识到某些流量（如发往内容交付网络的流量）将无法通过 ExpressRoute for Office 365 连接进行路由。 由于默认情况下，所有流量已路由到代理设备，因此这些请求将继续像以前一样工作。 Trey Research 确定他们可以满足 Azure ExpressRoute 路由要求后，他们继续创建电路、配置路由以及将新的 ExpressRoute 电路链接到虚拟网络。 基本 Azure ExpressRoute 配置就位后，Trey Research 将使用我们发布的 [#2 PAC](./managing-office-365-endpoints.md#ID0EACAAA=2._Proxies) 文件，通过直接 ExpressRoute for Office 365 连接来路由客户特定数据的流量。
+Trey Research 计划将 Azure ExpressRoute 用于 Office 365，并意识到某些流量（如发往内容交付网络的流量）将无法通过 ExpressRoute for Office 365 连接进行路由。 由于默认情况下，所有流量已路由到代理设备，因此这些请求将继续像以前一样工作。 Trey Research 确定他们可以满足 Azure ExpressRoute 路由要求后，他们继续创建电路、配置路由以及将新的 ExpressRoute 电路链接到虚拟网络。 基本 Azure ExpressRoute 配置就位后，Trey Research 将使用我们发布的 [#2 PAC](./managing-office-365-endpoints.md)  文件，通过直接 ExpressRoute for Office 365 连接路由包含客户特定数据的流量。
   
 如下图所示，Trey Research 能够满足通过 Internet 路由 Office 365 流量和通过 ExpressRoute 的流量子集（结合使用路由和出站代理配置更改）的要求。
   
-1. 使用#2 [PAC](./managing-office-365-endpoints.md#ID0EACAAA=2._Proxies) 文件，通过适用于 Office 365 的 Azure ExpressRoute 的单独 Internet 出口点路由流量。
+1. 使用#2 [PAC](./managing-office-365-endpoints.md) 文件，通过适用于 Office 365 的 Azure ExpressRoute 的单独 Internet 出口点路由流量。
 
 2. 客户端配置了针对 Trey Research 代理的默认路由。
 
@@ -166,7 +166,7 @@ Exchange Online、SharePoint Online 和 Skype for Business Online 的 FQDN 最�
 
 了解有关在 [Windows 8](/archive/blogs/deploymentguys/windows-8-supporting-proxy-services-with-static-configurations-web-hosted-pac-files-and-domain-policy-configured-proxy) 中部署和管理代理设置以及 [确保 Office 365 不会受代理限制的更多信息](https://blogs.technet.com/b/onthewire/archive/2014/03/28/ensuring-your-office-365-network-connection-isn-t-throttled-by-your-proxy.aspx)。
   
-对于单个 ExpressRoute 电路，Trey Research 没有高可用性。 如果为 ExpressRoute 连接提供服务的边缘设备的 Trey 的冗余对出现故障，则没有要故障转移到的其他 ExpressRoute 电路。 这会将 Trey Research 保留为无法通过 Internet 进行故障处理，这需要进行手动重新配置，在某些情况下需要新的 IP 地址。 如果 Trey 要添加高可用性，最简单的解决方案是为每个位置添加额外的 ExpressRoute 电路，并主动/主动地配置这些电路。
+对于单个 ExpressRoute 电路，Trey Research 没有高可用性。 如果为 ExpressRoute 连接提供服务的边缘设备的 Trey 的冗余对出现故障，则没有要故障转移到的其他 ExpressRoute 电路。 这使得 Trey Research 在预先开发中无法通过 Internet 进行重新配置，在某些情况下需要新的 IP 地址。 如果 Trey 要添加高可用性，最简单的解决方案是为每个位置添加额外的 ExpressRoute 电路，并主动/主动地配置这些电路。
   
 ## <a name="routing-expressroute-for-office-365-with-multiple-locations"></a>通过多个位置路由适用于 Office 365 的 ExpressRoute
 
@@ -174,13 +174,13 @@ Exchange Online、SharePoint Online 和 Skype for Business Online 的 FQDN 最�
   
 对于位于多个地理位置的客户，必须回答的其他问题包括：
   
-1. 是否需要每个位置的 ExpressRoute 电路？ 如果你使用的是 Skype for Business Online 或担心 SharePoint Online 或 Exchange Online 的延迟敏感度，建议在每个位置使用主动/主动 ExpressRoute 电路的冗余对。 有关详细信息，请参阅 Skype for Business 媒体质量和网络连接指南。
+1. 是否需要每个位置的 ExpressRoute 电路？ 如果你使用的是 Skype for Business Online 或关注 SharePoint Online 或 Exchange Online 的延迟敏感度，建议在每个位置使用主动/主动 ExpressRoute 电路的冗余对。 有关详细信息，请参阅 Skype for Business 媒体质量和网络连接指南。
 
 2. 如果 ExpressRoute 电路不可用于特定区域，那么如何路由发往 Office 365 的流量？
 
 3. 在具有很多较小位置的网络的情况下，合并流量的首选方法是什么？
 
-每一项都提出了一个独特挑战，要求你评估自己的网络以及 Microsoft 提供的选项。
+每一项都提出了一个独特挑战，要求你评估自己的网络和 Microsoft 提供的选项。
 
 |**注意事项**|**要评估的网络组件**|
 |:-----|:-----|
@@ -197,23 +197,23 @@ Exchange Online、SharePoint Online 和 Skype for Business Online 的 FQDN 最�
   
 此示例是一个虚构公司 Humongous Insurance 的方案，该公司具有多个地理位置。
   
-Humongous Insurance 地理位置分散，办事处分布于全球。 他们希望实现适用于 Office 365 的 Azure ExpressRoute，以将大部分 Office 365 流量保持在直接网络连接上。 Humongous Insurance 还在另外两个洲设有办事处。 远程办公室（其中 ExpressRoute 不可行）的员工将需要路由回一个或两个主要设施，以使用 ExpressRoute 连接。
+Humongous Insurance 地理位置分散，办事处分布于全球。 他们希望实现适用于 Office 365 的 Azure ExpressRoute，以在直接网络连接上保留大部分 Office 365 流量。 Humongous Insurance 还在另外两个洲设有办事处。 远程办公室（其中 ExpressRoute 不可行）的员工将需要路由回一个或两个主要设施，以使用 ExpressRoute 连接。
   
 指导原则是尽快将 Office 365 发往 Microsoft 数据中心的流量。 在此例中，Humongous Insurance 必须决定其远程办公室是应尽快通过 Internet 路由到 Microsoft 数据中心，还是其远程办公室应尽快通过内部网络路由，以通过 ExpressRoute 连接到达 Microsoft 数据中心。
   
 Microsoft 的数据中心、网络和应用程序体系结构旨在采用全球不同的通信，并尽可能以最有效的方式提供服务。 这是世界上最大的网络之一。 发往 Office 365 的请求在客户网络上保留的时间超过所需时间将无法利用此体系结构。
   
-在 Humongous Insurance 的情况中，他们应按照打算通过 ExpressRoute 使用的应用程序继续操作。 例如，如果他们是 Skype for Business Online 客户，或者计划在连接到外部 Skype for Business Online 会议时利用 ExpressRoute 连接，Skype for Business Online 媒体质量和网络连接指南中推荐的设计就是为第三个位置设置额外的 ExpressRoute 电路。 从网络的角度来看，这可能更昂贵;但是，在传送至 Microsoft 数据中心之前，将请求从一个洲路由到另一个洲可能会导致 Skype for Business Online 会议和通信期间体验不佳或不可用。
+在 Humongous Insurance 的情况中，他们应按照打算通过 ExpressRoute 使用的应用程序继续操作。 例如，如果他们是 Skype for Business Online 客户，或者计划在连接到外部 Skype for Business Online 会议时使用 ExpressRoute 连接，Skype for Business Online 媒体质量和网络连接指南中推荐的设计就是为第三个位置设置额外的 ExpressRoute 电路。 从网络的角度来看，这可能更昂贵;但是，在传送至 Microsoft 数据中心之前，将请求从一个洲路由到另一个洲可能会导致 Skype for Business Online 会议和通信期间体验不佳或不可用。
   
-如果 Humongous Insurance 未使用或计划以任何方式利用 Skype for Business Online，将发往 Office 365 的网络流量路由回使用 ExpressRoute 连接的洲可能可行，但可能会导致不必要的延迟或 TCP 拥塞。 在这两种情况下，建议将 Internet 目标流量路由到本地站点的 Internet，以利用 Office 365 所依赖的内容交付网络。
+如果 Humongous Insurance 未使用或计划以任何方式使用 Skype for Business Online，将发往 Office 365 的网络流量路由回使用 ExpressRoute 连接的洲可能可行，但可能会导致不必要的延迟或 TCP 拥塞。 在这两种情况下，建议将 Internet 目标流量路由到本地站点的 Internet，以利用 Office 365 所依赖的内容交付网络。
   
 ![ExpressRoute 多地理位置](../media/98fdd883-2c5a-4df7-844b-bd28cd0b9f50.png)
   
 当 Humongous Insurance 规划其多地理位置策略时，需要考虑大量有关电路大小、电路数量、故障转移等内容。
   
-由于 ExpressRoute 位于一个位置，且多个区域试图使用该电路，Humongous Insurance 希望确保从远程办公室连接到 Office 365 时发送到最近的总部的 Office 365 数据中心，并且由总部位置接收。 为此，Humongous Insurance 实施了 DNS 转发，以减少与最接近总部 Internet 出口点的 Office 365 环境建立适当连接所需的往返次数和 DNS 查找次数。 这将阻止客户端解析本地前端服务器，并确保用户连接到的前端服务器位于 Humongous Insurance 与 Microsoft 对等的总部附近。 还可以了解如何为 [域名分配条件转发器](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc794735(v=ws.10))。
+由于 ExpressRoute 位于一个位置，且多个区域试图使用该电路，Humongous Insurance 希望确保从远程办公室连接到 Office 365 时发送到最近的总部的 Office 365 数据中心，并且由总部位置接收。 为此，Humongous Insurance 实施了 DNS 转发，以减少与最接近总部 Internet 出口点的 Office 365 环境建立适当连接所需的往返次数和 DNS 查找次数。 这可以防止客户端解析本地前端服务器，并确保Front-End连接到的 Front-End 服务器靠近 Humongous Insurance 与 Microsoft 对等的总部。 还可以了解如何为 [域名分配条件转发器](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc794735(v=ws.10))。
   
-在此方案中，来自远程办公室的流量将解析北美的 Office 365 前端基础结构，并利用 Office 365 根据 Office 365 应用程序的体系结构连接到后端服务器。 例如，Exchange Online 将终止北美的连接，并且这些前端服务器将连接到租户驻留的后端邮箱服务器。 所有服务都有广泛分布的由单播和单播目标组成的前端服务。
+在此方案中，来自远程办公室的流量将解析北美的 Office 365 前端基础结构，并使用 Office 365 根据 Office 365 应用程序的体系结构连接到后端服务器。 例如，Exchange Online 将终止北美的连接，并且这些前端服务器将连接到租户驻留的后端邮箱服务器。 所有服务都有广泛分布的由单播和单播目标组成的前端服务。
   
 如果 Humongous 在多个洲有主要办事处，建议每个区域至少存在两个活动/活动电路，以减少敏感应用程序（如 Skype for Business Online）的延迟。 如果所有办事处都位于单个洲，或者没有使用实时协作，则具有合并或分布式出口点是客户特定的决定。 当多个电路可用时，BGP 路由将确保在任何单个电路不可用时进行故障转移。
   
@@ -225,7 +225,7 @@ Microsoft 的数据中心、网络和应用程序体系结构旨在采用全球�
   
 1. **路由筛选/分离** - 允许 BGP 路由到 Office 365，通过 ExpressRoute 路由到子网或路由器的子集。 这将按客户网络段或物理办公地点选择性地路由。 这通常用于错开适用于 Office 365 的 ExpressRoute，并配置在 BGP 设备上。
 
-2. **PAC 文件/URL** - 将发往 Office 365 的网络流量指示给特定 FQN 以路由到特定路径。 这会选择性地按客户端计算机进行路由，由 [PAC](./managing-office-365-endpoints.md#ID0EACAAA=2._Proxies)文件部署 标识。
+2. **PAC 文件/URL** - 将发往 Office 365 的网络流量指示给特定 FQN 以路由到特定路径。 这会选择性地按客户端计算机进行路由，由 [PAC](./managing-office-365-endpoints.md)文件部署 标识。
 
 3. **路由筛选**  - [路由](/azure/expressroute/how-to-routefilter-portal)筛选器是一种通过 Microsoft 对等使用受支持服务的子集的方法。
 

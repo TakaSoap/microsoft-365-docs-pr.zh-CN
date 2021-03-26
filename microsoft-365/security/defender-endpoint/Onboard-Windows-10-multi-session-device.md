@@ -16,20 +16,18 @@ ms.custom: nextgen
 ms.date: 09/10/2020
 ms.reviewer: ''
 manager: dansimp
-ms.openlocfilehash: 30e664aed74ed01944c67b139e6268fc3340ada4
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: bfd447120e171fed063b3224e3a47c2ef38f0f16
+ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51054848"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51222607"
 ---
 # <a name="onboard-windows-10-multi-session-devices-in-windows-virtual-desktop"></a>在 Windows 虚拟桌面中载入 Windows 10 多会话设备 
 6 分钟阅读 
 
 应用于： 
 - 在 Windows 虚拟桌面和 WVD (上运行的 Windows 10 多)  
-> [!IMPORTANT]
-> 欢迎使用 Microsoft Defender for Endpoint，这是 Microsoft Defender for Endpoint 的新名称。 在此处阅读有关此内容和其他更新的详细信息。 我们将在不久的将来更新产品和文档中的名称。
 
 > [!WARNING]
 > Microsoft Defender for Endpoint 对 Windows 虚拟桌面多会话方案的支持目前处于预览阶段，每个主机/VM 最多只能有 25 个并发会话。 但是，Windows 虚拟桌面上的单个会话方案完全受支持。
@@ -37,7 +35,7 @@ ms.locfileid: "51054848"
 Microsoft Defender for Endpoint 支持监视 VDI 和 Windows 虚拟桌面会话。 根据组织的需求，你可能需要实现 VDI 或 Windows 虚拟桌面会话，以帮助你的员工从非托管设备、远程位置或类似方案访问公司数据和应用。 通过 Microsoft Defender for Endpoint，你可以监视这些虚拟机的异常活动。
 
  ## <a name="before-you-begin"></a>准备工作
-熟悉非永久性 [VDI 的注意事项](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/configure-endpoints-vdi#onboard-non-persistent-virtual-desktop-infrastructure-vdi-devices-1)。 尽管 [Windows 虚拟](https://docs.microsoft.com/azure/virtual-desktop/overview) 桌面不提供非持久性选项，但它确实提供了使用黄金 Windows 映像的方法，该映像可用于预配新主机和重新部署计算机。 这会增加环境中的变化，从而影响在 Microsoft Defender 终结点门户中创建和维护的条目，从而可能降低安全分析师的可见性。
+熟悉非永久性 [VDI 的注意事项](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/configure-endpoints-vdi#onboard-non-persistent-virtual-desktop-infrastructure-vdi-devices-1)。 虽然 [Windows 虚拟](https://docs.microsoft.com/azure/virtual-desktop/overview) 桌面不提供非持久性选项，但它确实提供了使用黄金 Windows 映像的方法，该映像可用于预配新主机和重新部署计算机。 这会增加环境中的变化，从而影响在 Microsoft Defender 终结点门户中创建和维护的条目，从而可能降低安全分析师的可见性。
 
 > [!NOTE]
 > 根据你选择的载入方法，设备可以在 Microsoft Defender for Endpoint 门户中显示为： 
@@ -103,7 +101,7 @@ Microsoft 建议将 Microsoft Defender for Endpoint 载入脚本添加到 WVD �
 
 #### <a name="tagging-your-machines-when-building-your-golden-image"></a>生成黄金映像时标记计算机 
 
-作为载入的一部分，你可能要考虑设置计算机标记，以便可以在 Microsoft 安全中心更轻松地区分 WVD 计算机。 有关详细信息，请参阅通过 [设置注册表项值添加设备标记](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/machine-tags#add-device-tags-by-setting-a-registry-key-value)。 
+作为载入的一部分，你可能要考虑设置计算机标记，以在 Microsoft 安全中心更轻松地区分 WVD 计算机。 有关详细信息，请参阅通过 [设置注册表项值添加设备标记](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/machine-tags#add-device-tags-by-setting-a-registry-key-value)。 
 
 #### <a name="other-recommended-configuration-settings"></a>其他建议的配置设置 
 

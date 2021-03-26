@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 94cb92974b0e73a1254fd024c39d9a6ee620aad3
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 08cb16f6ae6e259d1bc92e7d2bed96f093a435f0
+ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51199533"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51222509"
 ---
 # <a name="intune-based-deployment-for-microsoft-defender-for-endpoint-for-mac"></a>适用于适用于 Mac 的 Microsoft Defender for Endpoint 的基于 Intune 的部署
 
@@ -136,8 +136,6 @@ ms.locfileid: "51199533"
 除了标准公司门户安装之外，不需要为 Mac 设备进行 [任何特殊预配](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-macos-cp)。
 
 1. 确认设备管理。
-
-    ![确认设备管理屏幕截图](./images/mdatp-3-confirmdevicemgmt.png)
 
     选择 **"打开系统首选项"，** 在列表中找到"**管理配置文件**"，然后选择"批准 **..."。** 你的管理配置文件将显示为 **"已验证"：**
 
@@ -270,7 +268,7 @@ ms.locfileid: "51199533"
     > [!div class="mx-imgBorder"]
     > ![状态栏中的 Microsoft Defender 图标屏幕截图](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-icon-bar)
 
-## <a name="troubleshooting"></a>故障排除
+## <a name="troubleshooting"></a>疑难解答
 
 问题：未找到许可证
 

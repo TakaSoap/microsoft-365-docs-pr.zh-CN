@@ -16,19 +16,19 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 1fd128a9b734606039438db1f6d9fbc36e93a3b9
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 059ff9ca6f0c93c6adbac3b1d552cbedcf308759
+ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51199003"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51222703"
 ---
 # <a name="microsoft-defender-for-endpoint-for-us-government-customers"></a>适用于美国政府客户的 Microsoft Defender for Endpoint
 
 **适用于：**
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
-美国政府客户 Microsoft Defender for Endpoint 内置于美国政府环境中，使用与 Azure 商业中的 Defender for Endpoint 相同的基础技术。
+美国政府客户 Microsoft Defender for Endpoint 内置于 Azure 美国政府环境中，使用与 Azure 商业中的 Defender for Endpoint 相同的基础技术。
 
 此产品适用于 GCC、GCC High 和 DoD 客户，并且基于与商业版本相同的预防、检测、调查和修正。 但是，此产品/服务的功能可用性存在一些差异。
 
@@ -42,8 +42,8 @@ Microsoft Defender for Endpoint for US Government 客户需要以下 Microsoft �
 GCC | GCC 高 | DoD
 :---|:---|:---
 Windows 10 企业版 E5 GCC | 适用于 GCC High 的 Windows 10 企业版 E5 | 适用于 DOD 的 Windows 10 企业版 E5
-| | 适用于 GCC High 的 Microsoft 365 E5 | 
-| | 适用于 GCC High 的 Microsoft 365 G5 安全性 | 
+| | 适用于 GCC High 的 Microsoft 365 E5 | Microsoft 365 G5 for DOD
+| | 适用于 GCC High 的 Microsoft 365 G5 安全性 | 适用于 DOD 的 Microsoft 365 G5 安全性
 Microsoft Defender for Endpoint - GCC | Microsoft Defender for Endpoint for GCC High | Microsoft Defender for Endpoint for DOD
 
 ### <a name="server-licensing"></a>服务器许可
@@ -51,9 +51,6 @@ GCC | GCC 高 | DoD
 :---|:---|:---
 Microsoft Defender for Endpoint Server GCC | Microsoft Defender for Endpoint Server for GCC High | Microsoft Defender for Endpoint Server for DOD
 Azure Defender for Servers | Azure Defender for Servers - 政府 | Azure Defender for Servers - 政府
-
-> [!NOTE]
-> DoD 许可仅在 DoD 通用版本提供。
 
 <br>
 
@@ -64,7 +61,7 @@ Azure Defender for Servers | Azure Defender for Servers - 政府 | Azure Defende
 :---|:---
 GCC | https://gcc.securitycenter.microsoft.us
 GCC 高 | https://securitycenter.microsoft.us
-DoD (PREVIEW)  | https://securitycenter.microsoft.us
+DoD | https://securitycenter.microsoft.us
 
 <br>
 
@@ -73,7 +70,7 @@ DoD (PREVIEW)  | https://securitycenter.microsoft.us
 ### <a name="standalone-os-versions"></a>独立操作系统版本
 支持以下操作系统版本：
 
-操作系统版本 | GCC | GCC 高 | DoD (PREVIEW) 
+操作系统版本 | GCC | GCC 高 | DoD
 :---|:---|:---|:---
 Windows 10 版本 20H2 ([KB4586853](https://support.microsoft.com/help/4586853))  | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg)
 Windows 10 版本 2004 ([KB4586853](https://support.microsoft.com/help/4586853))  | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg)
@@ -91,8 +88,8 @@ Windows 8.1 企业版 | ![是](images/svg/check-yes.svg) | ![是](images/svg/che
 Windows 8 专业版 | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg)
 Windows 7 SP1 企业版 | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg)
 Windows 7 SP1 专业版 | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg)
-Linux | ![否](images/svg/check-no.svg) 开发中 | ![否](images/svg/check-no.svg) 开发中 | ![否](images/svg/check-no.svg) 开发中
-macOS | ![否](images/svg/check-no.svg) 开发中 | ![否](images/svg/check-no.svg) 开发中 | ![否](images/svg/check-no.svg) 开发中
+Linux | ![否](images/svg/check-no.svg) 即将推出 | ![否](images/svg/check-no.svg) 即将推出 | ![否](images/svg/check-no.svg) 即将推出
+macOS | ![否](images/svg/check-no.svg) 即将推出 | ![否](images/svg/check-no.svg) 即将推出 | ![否](images/svg/check-no.svg) 即将推出
 Android | ![否](images/svg/check-no.svg) 工程积压工作 | ![否](images/svg/check-no.svg) 工程积压工作 | ![否](images/svg/check-no.svg) 工程积压工作
 iOS | ![否](images/svg/check-no.svg) 工程积压工作 | ![否](images/svg/check-no.svg) 工程积压工作 | ![否](images/svg/check-no.svg) 工程积压工作
 
@@ -105,7 +102,7 @@ iOS | ![否](images/svg/check-no.svg) 工程积压工作 | ![否](images/svg/che
 ### <a name="os-versions-when-using-azure-defender-for-servers"></a>使用 Azure Defender for Servers 时的操作系统版本
 使用 Azure Defender for Servers 时支持以下 [操作系统版本](https://docs.microsoft.com/azure/security-center/security-center-wdatp)：
 
-操作系统版本 | GCC | GCC 高 | DoD (PREVIEW) 
+操作系统版本 | GCC | GCC 高 | DoD
 :---|:---|:---|:---
 Windows Server 2016 | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg)
 Windows Server 2012 R2 | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg)
@@ -125,14 +122,30 @@ Windows Server 2008 R2 SP1 | ![是](images/svg/check-yes.svg) | ![是](images/sv
 有关详细信息，请参阅配置 [设备代理和 Internet 连接设置](configure-proxy-internet.md)。
 
 > [!NOTE]
-> 电子表格还包含商业 URL，请务必检查"US Gov"选项卡。 <br> 筛选时，在地理位置列下查找标记为"US Gov"的记录和您的特定云。
+> 电子表格还包含商业 URL，请务必检查"US Gov"选项卡。
+> 
+> 筛选时，在地理位置列下查找标记为"US Gov"的记录和您的特定云。
+
+### <a name="service-backend-ip-ranges"></a>服务后端 IP 范围
+
+如果网络设备不支持基于 DNS 的规则，请改为使用 IP 范围。
+
+适用于美国政府客户的 Defender for Endpoint 内置于 Azure 美国政府环境中，部署在以下地区：
+
+- AzureCloud.usgovtexas
+- AzureCloud.usgovvirginia
+
+可以在 Azure IP 范围和服务标记 - 美国政府云 中查找 Azure IP [范围](https://www.microsoft.com/download/details.aspx?id=57063)。
+
+> [!NOTE]
+> 作为基于云的解决方案，IP 地址范围可能会更改。 建议移动到基于 DNS 的规则。
 
 <br>
 
 ## <a name="api"></a>API
 你需要使用以下 URI，而不是我们的 [API](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/apis-intro)文档中列出的公共 URI：
 
-终结点类型 | GCC | GCC High & DoD (PREVIEW) 
+终结点类型 | GCC | GCC High & DoD
 :---|:---|:---
 登录 | `https://login.microsoftonline.com` | `https://login.microsoftonline.us`
 Defender for Endpoint API | `https://api-gcc.securitycenter.microsoft.us` | `https://api-gov.securitycenter.microsoft.us`
@@ -141,18 +154,18 @@ SIEM | `https://wdatp-alertexporter-us.gcc.securitycenter.windows.us` | `https:/
 <br>
 
 ## <a name="feature-parity-with-commercial"></a>功能与商业奇偶校验
-Defender for Endpoint 与商业产品/服务没有完全对等。 尽管我们的目标是向美国政府客户提供所有商业特性和功能，但我们要重点说明一些功能。
+适用于美国政府客户的 Defender for Endpoint 与商业产品/服务没有完全同等价值。 尽管我们的目标是向美国政府客户提供所有商业特性和功能，但我们要重点说明一些功能。
 
-这些就是截至 2021 年 2 月已知差距：
+这些是截至 2021 年 3 月已知差距：
 
-功能名称 | GCC | GCC 高 | DoD (PREVIEW) 
+功能名称 | GCC | GCC 高 | DoD
 :---|:---|:---|:---
 自动调查和修正：实时响应 | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg)
 自动调查和修正：Office 365 警报响应 | ![否](images/svg/check-no.svg) 工程积压工作 | ![否](images/svg/check-no.svg) 工程积压工作 | ![否](images/svg/check-no.svg) 工程积压工作
-电子邮件通知 | ![否](images/svg/check-no.svg) 即将推出 | ![否](images/svg/check-no.svg) 即将推出 | ![否](images/svg/check-no.svg) 即将推出
+电子邮件通知 | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg)
 评估实验室 | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg)
 管理和 API：设备运行状况和合规性报告 | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg)
-管理和 API：和第三方产品集成 | ![否](images/svg/check-no.svg) 开发中 | ![否](images/svg/check-no.svg) 开发中 | ![否](images/svg/check-no.svg) 开发中
+管理和 API：和第三方产品集成 | ![否](images/svg/check-no.svg) 即将推出 | ![否](images/svg/check-no.svg) 即将推出 | ![否](images/svg/check-no.svg) 即将推出
 管理和 API：流式处理 API | ![是](images/svg/check-yes.svg) | ![否](images/svg/check-no.svg) 开发中 | ![否](images/svg/check-no.svg) 开发中
 管理和 API：威胁防护报告 | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg)
 威胁&漏洞管理 | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg)

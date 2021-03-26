@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 4e216f841c8728b1cabd98a931e7326f53344a74
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 3edc7e52e93bc08d46536a520bf57735983f493b
+ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51055562"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51222619"
 ---
 # <a name="manage-incidents-in-microsoft-365-defender"></a>在 Microsoft 365 Defender 中管理事件
 
@@ -82,4 +82,4 @@ ms.locfileid: "51055562"
 添加的备注会立即显示在窗格中。
 
 ## <a name="add-incident-tags"></a>添加事件标记
-可以向事件添加自定义标记，例如，标记一组具有共同特征的事件。 以后可以筛选包含特定标记的所有事件的事件队列。
+可以将自定义标记添加到事件，例如，标记一组具有共同特征的事件。 以后可以筛选包含特定标记的所有事件的事件队列。

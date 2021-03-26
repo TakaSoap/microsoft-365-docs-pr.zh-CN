@@ -23,12 +23,12 @@ search.appverid:
 - GEA150
 ms.assetid: d6466f0d-5d13-464a-adcb-00906ae87029
 description: 了解如何在计算机、手机和平板电脑上设置和使用 Microsoft 365。
-ms.openlocfilehash: 8df5170190a464c71030c938be61df591032c45c
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 74821886832e699a90d9a54a9b8c7ce9a8cfab75
+ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50906284"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51222023"
 ---
 # <a name="get-started"></a>入门
 
@@ -60,7 +60,7 @@ ms.locfileid: "50906284"
   
 - [管理员培训](../index.yml)：获取适用于管理员的免费在线课程的链接。
     
-- [管理员帮助](./admin-overview.md)：获取有关首要任务、管理工具入门和问题疑难解答的信息。
+- [管理员帮助](https://docs.microsoft.com/microsoft-365/business-video/admin-center-overview)：获取有关首要任务、管理工具入门和问题疑难解答的信息。
     
 - [联系支持人员 - 管理员帮助](../contact-support-for-business-products.md) ：致电我们，打开在线请求，或让社区帮助。 
     

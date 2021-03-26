@@ -22,12 +22,12 @@ search.appverid:
 description: 通过使用针对你所在国家或地区列出的电话号码或在线提交服务请求获取技术和帐单支持。
 feedback_system: None
 ms.date: 7/28/2020
-ms.openlocfilehash: aa843f0c81f38e53b525b6e56d7f3fa69696de79
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 6e355a07584d45a85c363956d1bb4e45eae708be
+ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50907034"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51222035"
 ---
 # <a name="ways-to-contact-support-for-business-products---admin-help"></a>联系商业版产品支持人员的方式 - 管理员帮助
 
@@ -42,7 +42,7 @@ ms.locfileid: "50907034"
 
 可通过在线发起服务请求节省时间。 我们将帮助你查找解决方案或连接到技术支持人员。
 
-1. 转到位于 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> 的管理中心。 如果收到消息，显示你无权访问此页或执行此操作，那么你应该不是管理员。[谁在我的公司中拥有管理员权限？](admin-overview/admin-overview.md#who-has-admin-permissions-in-my-business)
+1. 转到位于 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> 的管理中心。 如果收到消息，显示你无权访问此页或执行此操作，那么你应该不是管理员。[谁在我的公司中拥有管理员权限？](https://docs.microsoft.com/microsoft-365/business-video/admin-center-overview?#who-has-admin-permissions-in-my-business)
 
 2. 选择“**需要帮助?**”按钮。
 

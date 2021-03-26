@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 370048586c5ddfa6fa9ea265e929608357adf5df
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 4aab7f12b250c1415ad65a9e706edf6b68050b2f
+ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51186877"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51222644"
 ---
 # <a name="microsoft-defender-for-endpoint-preview-features"></a>适用于终结点的 Microsoft Defender 预览功能
 
@@ -40,9 +40,6 @@ ms.locfileid: "51186877"
 
 
 Defender for Endpoint 服务会不断更新，以包含新功能增强功能和功能。
-
-> [!TIP]
-> 想要体验适用于终结点的 Defender？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-preview-abovefoldlink)
 
 了解 Defender for Endpoint 预览版中的新功能，并首先通过打开预览体验来试用即将推出的功能。
 
@@ -68,15 +65,6 @@ Defender for Endpoint 服务会不断更新，以包含新功能增强功能和�
 - [Web 内容筛选](web-content-filtering.md) <br> Web 内容筛选是 Microsoft Defender for Endpoint 中的 Web 保护功能的一部分。 它使组织能够根据网站的内容类别跟踪和监管对网站的访问。 许多此类网站虽然不是恶意网站，但由于合规性法规、带宽使用情况或其他问题，可能存在问题。
 
 - [设备运行状况和合规性报告](machine-reports.md) <br/> 设备运行状况和合规性报告提供有关组织中设备的高级别信息。
-
-- [信息保护](information-protection-in-windows-overview.md)<BR>
-信息保护是 Microsoft 365 企业版套件的组成部分，可提供智能保护，在保证敏感数据安全的同时在工作场所中提高工作效率。 Microsoft Defender for Endpoint 无缝集成在 Microsoft 威胁防护中，为 Windows 设备提供完整全面的数据丢失防护 (DLP) 解决方案。
-
-    >[!NOTE]
-    >部分提供 Windows 10 版本 1809。
-
-- [载入 Windows Server 2019](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/configure-server-endpoints#windows-server-version-1803-and-windows-server-2019) <BR> Microsoft Defender for Endpoint 现在增加了对 Windows Server 2019 的支持。 你将能够使用可用于 Windows 10 客户端设备的相同方法载入 Windows Server 2019。
-
 
 > [!TIP] 
 > 想要体验 Microsoft Defender for Endpoint？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-preview-belowfoldlink)  

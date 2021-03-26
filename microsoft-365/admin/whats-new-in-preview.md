@@ -21,12 +21,12 @@ description: Microsoft 365 管理中心 - 了解本月添加的功能。
 ms.custom:
 - MACDashWhatsNew
 - AdminSurgePortfolio
-ms.openlocfilehash: b670c6a333485bc3a19ae14b8e7c71f08181cac5
-ms.sourcegitcommit: 3d2261af22bebbbf7efa8a0d3135225a15bd6ba8
+ms.openlocfilehash: 7b802556e051200bf39bc4bd9b97974d4d2d4c47
+ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51215572"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51221999"
 ---
 # <a name="whats-new-in-the-microsoft-365-admin-center"></a>Microsoft 365 管理中心的新增功能
 
@@ -37,7 +37,7 @@ ms.locfileid: "51215572"
 
 ::: moniker-end
 
-我们正在不断将新功能添加到 Microsoft [365](microsoft-365-admin-center-preview.md)管理中心，修复我们了解的问题，并基于你的反馈进行更改。 请看下面的内容，了解现在可供你使用的信息。 一些功能以不同的速度为客户提供推出。 如果尚未看到功能，请尝试 [将自己添加到定向发布](manage/release-options-in-office-365.md)。
+我们正在不断将新功能添加到 Microsoft [365](https://docs.microsoft.com/microsoft-365/business-video/admin-center-overview)管理中心，修复我们了解的问题，并基于你的反馈进行更改。 请看下面的内容，了解现在可供你使用的信息。 一些功能以不同的速度为客户提供推出。 如果尚未看到功能，请尝试 [将自己添加到定向发布](manage/release-options-in-office-365.md)。
 
 如果你希望了解其他 Microsoft 云服务的新增功能：
 

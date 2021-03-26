@@ -1,6 +1,6 @@
 ---
-title: 设置 Microsoft Defender ATP 部署
-description: 了解如何设置 Microsoft Defender ATP 的部署
+title: 设置 Microsoft Defender for Endpoint 部署
+description: 了解如何设置 Microsoft Defender for Endpoint 的部署
 keywords: 部署， 设置， 许可验证， 租户配置， 网络配置
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -19,12 +19,12 @@ ms.collection:
 - m365solution-scenario
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 4af84c21977e4b90c8b6d9ec4c785339ff229e7d
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 8965594789c3c96c043e3cd1a8922d9ba996ef47
+ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51186145"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51222437"
 ---
 # <a name="set-up-microsoft-defender-for-endpoint-deployment"></a>设置 Microsoft Defender for Endpoint 部署
 
@@ -106,7 +106,7 @@ ms.locfileid: "51186145"
 
     ![设置中的地理位置图像](images/setup-preferences.png)
 
-5. 选择 **下一步**。
+5. 选择“下一步”。
 
      ![最终首选项设置的图像](images/setup-preferences2.png)
 
@@ -124,10 +124,7 @@ Microsoft Defender for Endpoint 感官方案需要 Microsoft Windows HTTP （Win
 
 -   Web 代理自动发现协议 (WPAD) 
 
-如果在网络拓扑中实施了透明代理或 WPAD，则不需要特殊的配置设置。 有关代理中用于终结点 URL 排除的 Microsoft Defender 详细信息，请参阅本文档的附录部分了解 URL 允许列表或[Microsoft Docs。](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/configure-proxy-internet-windows-defender-advanced-threat-protection#enable-access-to-windows-defender-atp-service-urls-in-the-proxy-server)
-
-> [!NOTE]
-> 有关需要允许的 URL 的详细列表，请参阅 [本文](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-network-connections-microsoft-defender-antivirus)。
+如果在网络拓扑中实施了透明代理或 WPAD，则不需要特殊的配置设置。 有关代理中终结点 URL 排除的 Microsoft Defender 详细信息，请参阅本文档中的代理服务 [URL](production-deployment.md#proxy-service-urls) 部分，了解 URL 允许列表或配置设备代理和 [Internet 连接设置](configure-proxy-internet.md#enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server)。
 
 **手动静态代理配置：**
 
@@ -202,29 +199,32 @@ Down-Level包括 Windows 7 SP1 和 Windows 8.1 工作站以及 Windows Server 20
 
 以下可下载的电子表格列出了网络必须能够连接到的服务及其关联 URL。 确保没有拒绝访问这些 URL 的防火墙或网络筛选规则，或者您可能需要专门为它们创建允许规则。 
 
-|**域列表电子表格**|**描述**|
+|**域列表电子表格**|**说明**|
 |:-----|:-----|
 |![适用于终结点 URL 电子表格的 Microsoft Defender 缩略图](images/mdatp-urls.png)<br/>  | 服务位置、地理位置和操作系统的特定 DNS 记录的电子表格。 <br><br>[在此处下载电子表格。](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx) 
 
 
-###  <a name="microsoft-defender-for-endpoint-service-backend-ip-range"></a>Microsoft Defender for Endpoint 服务后端 IP 范围
+###  <a name="microsoft-defender-for-endpoint-service-backend-ip-ranges"></a>Microsoft Defender for Endpoint 服务后端 IP 范围
 
-如果网络设备不支持上一节中列出的 URL，可以使用以下信息。
+如果网络设备不支持基于 DNS 的规则，请改为使用 IP 范围。
 
-Defender for Endpoint 基于 Azure 云构建，部署在以下区域：
+Defender for Endpoint 内置于 Azure 云中，部署在以下区域：
 
-- \+\<Region Name="uswestcentral">
-- \+\<Region Name="useast2">
-- \+\<Region Name="useast">
-- \+\<Region Name="europenorth">
-- \+\<Region Name="europewest">
-- \+\<Region Name="uksouth">
-- \+\<Region Name="ukwest">
+- AzureCloud.eastus
+- AzureCloud.eastus2
+- AzureCloud.westcentralus
+- AzureCloud.northeurope
+- AzureCloud.westeurope
+- AzureCloud.uksouth
+- AzureCloud.ukwest
 
-可以在 Microsoft Azure 数据中心 IP 范围 [上找到 Azure IP 范围](https://www.microsoft.com/en-us/download/details.aspx?id=41653)。
+可以在 Azure IP 范围和服务标记 - 公共云 [中查找 Azure](https://www.microsoft.com/download/details.aspx?id=56519)IP 范围。
 
 > [!NOTE]
-> 作为基于云的解决方案，IP 地址范围可能会更改。 建议移动到 DNS 解析设置。
+> 作为基于云的解决方案，IP 地址范围可能会更改。 建议移动到基于 DNS 的规则。
+
+> [!NOTE]
+> 如果你是美国政府客户，请参阅美国政府终结点 [Defender 页面中的相应](gov.md#service-backend-ip-ranges) 部分。
 
 ## <a name="next-step"></a>后续步骤
 

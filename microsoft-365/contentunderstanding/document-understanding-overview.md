@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: 获取 Microsoft SharePoint Syntex 中的文档理解概述。
-ms.openlocfilehash: e3b239260953837f70663bb6f7e2dba1676c49eb
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 73e217e458fb9e1ccad8b64ffc81a6c9522a04f4
+ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50911194"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51222751"
 ---
 # <a name="document-understanding-overview"></a>文档理解概述
 
@@ -31,7 +31,7 @@ ms.locfileid: "50911194"
 文档理解使用人工智能 (AI) 模型自动对文件和提取信息进行分类。 它最适用于非结构化文档，例如字母或协定。 这些文档必须包含可以根据短语或图案进行识别的文本。 标识的文本将指定文件类型（分类）和要提取的内容（提取程序）。
 
 > [!NOTE]
-> 有关文档理解方案示例的详细信息，请参阅 [SharePoint Syntex 采用：入门指南](./adoption-getstarted.md#document-understanding-scenario-example)。
+> 有关文档理解方案示例的详细信息，请参阅 [SharePoint Syntex 采用：入门指南](./adoption-getstarted.md)。
 
 文档理解模型在一种称为 *内容中心* 的 SharePoint 网站中创建和管理。 应用于 SharePoint 文档库时，该模型与内容类型关联，包含用于存储所提取信息的列。 你创建的内容类型存储在 SharePoint 内容类型库中。 也可以选择使用现有内容类型来使用其架构。
 

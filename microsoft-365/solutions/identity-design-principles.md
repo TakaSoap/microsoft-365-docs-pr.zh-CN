@@ -14,12 +14,12 @@ ms.collection:
 - M365solutions
 ms.custom: seo-marvel-jun2020
 f1.keywords: NOCSH
-ms.openlocfilehash: da70bbfe5c4dfa4f9eda16adec709826de1247b7
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: c94b387bbd73e2c4f9b3de243131ae023ddb4cb8
+ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51200013"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51222521"
 ---
 # <a name="to-identity-and-beyondone-architects-viewpoint"></a>为了标识和超越 — 一个架构师的见解
 
@@ -231,7 +231,7 @@ Azure AD 具有 [详细的审核和报告](/azure/active-directory/reports-monit
 
 从某种意义上说，这些是 Exchange 角色组模型的发展过程。 但是，Exchange Online 有自己的角色 [组管理](/exchange/permissions-exo) 界面。 Exchange Online 中的某些角色组从 Azure AD 或安全 & 合规中心锁定和管理，但其他角色组可能具有相同的或相似的名称，并且这些角色组在 Exchange Online (中进行管理，这进一步增加了) 。 建议避免使用 Exchange Online 用户界面，除非需要 Exchange 管理作用域。
 
-无法创建自定义角色。 角色由 Microsoft 创建的服务定义，随着新服务的引入，角色将增长。 这一点在概念上类似于 Azure AD [中的应用程序定义](/azure/active-directory/develop/howto-add-app-roles-in-azure-ad-apps) 的角色。 启用新服务后，通常需要新建角色组，才能授予或委派这些角色的访问权限 (例如，内部风险管理) 。 [](../compliance/insider-risk-management-configure.md?view=o365-worldwide#step-1-required-enable-permissions-for-insider-risk-management)
+无法创建自定义角色。 角色由 Microsoft 创建的服务定义，随着新服务的引入，角色将增长。 这一点在概念上类似于 Azure AD [中的应用程序定义](/azure/active-directory/develop/howto-add-app-roles-in-azure-ad-apps) 的角色。 启用新服务后，通常需要新建角色组，才能授予或委派这些角色的访问权限 (例如，内部风险管理) 。 [](../compliance/insider-risk-management-configure.md?view=o365-worldwide)
 
 这些角色组还需要直接成员身份，并且不能包含 Azure AD 组。 遗憾的是，现在 Azure AD PIM 不支持这些角色组。 与 Azure AD 角色一样，我倾向于建议通过 API 或合作伙伴管理产品（如 Saviynt 或其他）管理这些角色。
 
