@@ -16,53 +16,53 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 1ea4d4ec-af89-496f-9678-701867f5a6fc
 description: 摘要：使用适用于 Microsoft 365 的 PowerShell 创建无法通过 Microsoft 365 管理中心生成的报告。
-ms.openlocfilehash: 12cba74d114ea03804741335bd34ece403926033
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: dc183ae8a315bf788befc85474d0647802ac91ee
+ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50924692"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51222775"
 ---
-# <a name="use-powershell-to-create-reports-for-microsoft-365"></a><span data-ttu-id="8d053-103">使用 PowerShell 创建 Microsoft 365 报告</span><span class="sxs-lookup"><span data-stu-id="8d053-103">Use PowerShell to create reports for Microsoft 365</span></span>
+# <a name="use-powershell-to-create-reports-for-microsoft-365"></a><span data-ttu-id="19fb1-103">使用 PowerShell 创建 Microsoft 365 报告</span><span class="sxs-lookup"><span data-stu-id="19fb1-103">Use PowerShell to create reports for Microsoft 365</span></span>
 
-<span data-ttu-id="8d053-104">*本文适用于 Microsoft 365 企业版和 Office 365 企业版。*</span><span class="sxs-lookup"><span data-stu-id="8d053-104">*This article applies to both Microsoft 365 Enterprise and Office 365 Enterprise.*</span></span>
+<span data-ttu-id="19fb1-104">*本文适用于 Microsoft 365 企业版和 Office 365 企业版。*</span><span class="sxs-lookup"><span data-stu-id="19fb1-104">*This article applies to both Microsoft 365 Enterprise and Office 365 Enterprise.*</span></span>
 
-<span data-ttu-id="8d053-105">Microsoft 365 管理中心提供了许多不同的报告。</span><span class="sxs-lookup"><span data-stu-id="8d053-105">Many different reports are available in the Microsoft 365 admin center.</span></span> <span data-ttu-id="8d053-106">但是这些报告仅提供太多信息，有时你还需要更多信息。</span><span class="sxs-lookup"><span data-stu-id="8d053-106">But these reports only provide so much information, and sometimes you need more.</span></span> <span data-ttu-id="8d053-107">这就是需要 PowerShell for Microsoft 365 的时候。</span><span class="sxs-lookup"><span data-stu-id="8d053-107">That's when you need PowerShell for Microsoft 365.</span></span>
+<span data-ttu-id="19fb1-105">Microsoft 365 管理中心提供了许多不同的报告。</span><span class="sxs-lookup"><span data-stu-id="19fb1-105">Many different reports are available in the Microsoft 365 admin center.</span></span> <span data-ttu-id="19fb1-106">但是这些报告仅提供太多信息，有时你还需要更多信息。</span><span class="sxs-lookup"><span data-stu-id="19fb1-106">But these reports only provide so much information, and sometimes you need more.</span></span> <span data-ttu-id="19fb1-107">这就是需要 PowerShell for Microsoft 365 的时候。</span><span class="sxs-lookup"><span data-stu-id="19fb1-107">That's when you need PowerShell for Microsoft 365.</span></span>
   
-<span data-ttu-id="8d053-108">这些文章介绍如何使用适用于 Microsoft 365 的 PowerShell 从 Microsoft 365 租户获取信息：</span><span class="sxs-lookup"><span data-stu-id="8d053-108">These articles describe how to use PowerShell for Microsoft 365 to get information from your Microsoft 365 tenant:</span></span>
+<span data-ttu-id="19fb1-108">这些文章介绍如何使用适用于 Microsoft 365 的 PowerShell 从 Microsoft 365 租户获取信息：</span><span class="sxs-lookup"><span data-stu-id="19fb1-108">These articles describe how to use PowerShell for Microsoft 365 to get information from your Microsoft 365 tenant:</span></span>
   
-- <span data-ttu-id="8d053-109">开始使用适用于 Microsoft 365 的 PowerShell 报告：</span><span class="sxs-lookup"><span data-stu-id="8d053-109">Get started with reporting using PowerShell for Microsoft 365:</span></span>
+- <span data-ttu-id="19fb1-109">开始使用适用于 Microsoft 365 的 PowerShell 报告：</span><span class="sxs-lookup"><span data-stu-id="19fb1-109">Get started with reporting using PowerShell for Microsoft 365:</span></span>
     
-  - [<span data-ttu-id="8d053-110">为什么需要使用 PowerShell for Microsoft 365</span><span class="sxs-lookup"><span data-stu-id="8d053-110">Why you need to use PowerShell for Microsoft 365</span></span>](./why-you-need-to-use-microsoft-365-powershell.md#reveal)
-    
-    
-- <span data-ttu-id="8d053-111">用户帐户和许可证报告：</span><span class="sxs-lookup"><span data-stu-id="8d053-111">Reports for user accounts and licenses:</span></span>
-    
-  - [<span data-ttu-id="8d053-112">使用 PowerShell 查看 Microsoft 365 许可证和服务</span><span class="sxs-lookup"><span data-stu-id="8d053-112">View Microsoft 365 licenses and services with PowerShell</span></span>](view-licenses-and-services-with-microsoft-365-powershell.md)
-    
-  - [<span data-ttu-id="8d053-113">使用 PowerShell 查看 Microsoft 365 许可和未授权的用户</span><span class="sxs-lookup"><span data-stu-id="8d053-113">View Microsoft 365 licensed and unlicensed users with PowerShell</span></span>](view-licensed-and-unlicensed-users-with-microsoft-365-powershell.md)
-    
-  - [<span data-ttu-id="8d053-114">使用 PowerShell 查看 Microsoft 365 帐户许可证和服务详细信息</span><span class="sxs-lookup"><span data-stu-id="8d053-114">View Microsoft 365 account license and service details with PowerShell</span></span>](view-account-license-and-service-details-with-microsoft-365-powershell.md)
-    
-  - [<span data-ttu-id="8d053-115">使用 PowerShell 查看 Microsoft 365 用户帐户</span><span class="sxs-lookup"><span data-stu-id="8d053-115">View Microsoft 365 user accounts with PowerShell</span></span>](view-user-accounts-with-microsoft-365-powershell.md)
-    
-- <span data-ttu-id="8d053-116">SharePoint Online 报告：</span><span class="sxs-lookup"><span data-stu-id="8d053-116">Reports for SharePoint Online:</span></span>
-    
-  - [<span data-ttu-id="8d053-117">SharePoint Online 命令行管理程序入门</span><span class="sxs-lookup"><span data-stu-id="8d053-117">Get started with SharePoint Online Management Shell</span></span>](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)
-    
-  - [<span data-ttu-id="8d053-118">Get-SPOSiteGroup - 获取指定网站集上的所有组</span><span class="sxs-lookup"><span data-stu-id="8d053-118">Get-SPOSiteGroup - Gets all the groups on a specified site collection</span></span>](/powershell/module/sharepoint-online/get-spositegroup)
-    
-- <span data-ttu-id="8d053-119">Exchange Online 报告：</span><span class="sxs-lookup"><span data-stu-id="8d053-119">Reports for Exchange Online:</span></span>
-    
-  - [<span data-ttu-id="8d053-120">使用 Exchange Online PowerShell 显示邮箱</span><span class="sxs-lookup"><span data-stu-id="8d053-120">Use Exchange Online PowerShell to display mailbox</span></span>](/exchange/recipients-in-exchange-online/manage-user-mailboxes/use-powershell-to-display-mailbox-information)
+  - [<span data-ttu-id="19fb1-110">为什么需要使用 PowerShell for Microsoft 365</span><span class="sxs-lookup"><span data-stu-id="19fb1-110">Why you need to use PowerShell for Microsoft 365</span></span>](./why-you-need-to-use-microsoft-365-powershell.md)
     
     
-## <a name="related-articlesl"></a><span data-ttu-id="8d053-121">相关文章l</span><span class="sxs-lookup"><span data-stu-id="8d053-121">Related articlesl</span></span>
+- <span data-ttu-id="19fb1-111">用户帐户和许可证报告：</span><span class="sxs-lookup"><span data-stu-id="19fb1-111">Reports for user accounts and licenses:</span></span>
+    
+  - [<span data-ttu-id="19fb1-112">使用 PowerShell 查看 Microsoft 365 许可证和服务</span><span class="sxs-lookup"><span data-stu-id="19fb1-112">View Microsoft 365 licenses and services with PowerShell</span></span>](view-licenses-and-services-with-microsoft-365-powershell.md)
+    
+  - [<span data-ttu-id="19fb1-113">使用 PowerShell 查看 Microsoft 365 许可和未授权的用户</span><span class="sxs-lookup"><span data-stu-id="19fb1-113">View Microsoft 365 licensed and unlicensed users with PowerShell</span></span>](view-licensed-and-unlicensed-users-with-microsoft-365-powershell.md)
+    
+  - [<span data-ttu-id="19fb1-114">使用 PowerShell 查看 Microsoft 365 帐户许可证和服务详细信息</span><span class="sxs-lookup"><span data-stu-id="19fb1-114">View Microsoft 365 account license and service details with PowerShell</span></span>](view-account-license-and-service-details-with-microsoft-365-powershell.md)
+    
+  - [<span data-ttu-id="19fb1-115">使用 PowerShell 查看 Microsoft 365 用户帐户</span><span class="sxs-lookup"><span data-stu-id="19fb1-115">View Microsoft 365 user accounts with PowerShell</span></span>](view-user-accounts-with-microsoft-365-powershell.md)
+    
+- <span data-ttu-id="19fb1-116">SharePoint Online 报告：</span><span class="sxs-lookup"><span data-stu-id="19fb1-116">Reports for SharePoint Online:</span></span>
+    
+  - [<span data-ttu-id="19fb1-117">SharePoint Online 命令行管理程序入门</span><span class="sxs-lookup"><span data-stu-id="19fb1-117">Get started with SharePoint Online Management Shell</span></span>](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)
+    
+  - [<span data-ttu-id="19fb1-118">Get-SPOSiteGroup - 获取指定网站集上的所有组</span><span class="sxs-lookup"><span data-stu-id="19fb1-118">Get-SPOSiteGroup - Gets all the groups on a specified site collection</span></span>](/powershell/module/sharepoint-online/get-spositegroup)
+    
+- <span data-ttu-id="19fb1-119">Exchange Online 报告：</span><span class="sxs-lookup"><span data-stu-id="19fb1-119">Reports for Exchange Online:</span></span>
+    
+  - [<span data-ttu-id="19fb1-120">使用 Exchange Online PowerShell 显示邮箱</span><span class="sxs-lookup"><span data-stu-id="19fb1-120">Use Exchange Online PowerShell to display mailbox</span></span>](/exchange/recipients-in-exchange-online/manage-user-mailboxes/use-powershell-to-display-mailbox-information)
+    
+    
+## <a name="related-articlesl"></a><span data-ttu-id="19fb1-121">相关文章l</span><span class="sxs-lookup"><span data-stu-id="19fb1-121">Related articlesl</span></span>
 
-[<span data-ttu-id="8d053-122">使用 PowerShell 管理 Microsoft 365</span><span class="sxs-lookup"><span data-stu-id="8d053-122">Manage Microsoft 365 with PowerShell</span></span>](manage-microsoft-365-with-microsoft-365-powershell.md)
+[<span data-ttu-id="19fb1-122">使用 PowerShell 管理 Microsoft 365</span><span class="sxs-lookup"><span data-stu-id="19fb1-122">Manage Microsoft 365 with PowerShell</span></span>](manage-microsoft-365-with-microsoft-365-powershell.md)
   
-[<span data-ttu-id="8d053-123">PowerShell for Microsoft 365 入门</span><span class="sxs-lookup"><span data-stu-id="8d053-123">Get started with PowerShell for Microsoft 365</span></span>](getting-started-with-microsoft-365-powershell.md)
+[<span data-ttu-id="19fb1-123">PowerShell for Microsoft 365 入门</span><span class="sxs-lookup"><span data-stu-id="19fb1-123">Get started with PowerShell for Microsoft 365</span></span>](getting-started-with-microsoft-365-powershell.md)
   
-[<span data-ttu-id="8d053-124">使用 PowerShell 管理 SharePoint</span><span class="sxs-lookup"><span data-stu-id="8d053-124">Manage SharePoint with PowerShell</span></span>](manage-sharepoint-online-with-microsoft-365-powershell.md)
+[<span data-ttu-id="19fb1-124">使用 PowerShell 管理 SharePoint</span><span class="sxs-lookup"><span data-stu-id="19fb1-124">Manage SharePoint with PowerShell</span></span>](manage-sharepoint-online-with-microsoft-365-powershell.md)
   
-[<span data-ttu-id="8d053-125">使用 PowerShell 管理 Microsoft 365 用户帐户、许可证和组</span><span class="sxs-lookup"><span data-stu-id="8d053-125">Manage Microsoft 365 user accounts, licenses, and groups with PowerShell</span></span>](manage-user-accounts-and-licenses-with-microsoft-365-powershell.md)
+[<span data-ttu-id="19fb1-125">使用 PowerShell 管理 Microsoft 365 用户帐户、许可证和组</span><span class="sxs-lookup"><span data-stu-id="19fb1-125">Manage Microsoft 365 user accounts, licenses, and groups with PowerShell</span></span>](manage-user-accounts-and-licenses-with-microsoft-365-powershell.md)
