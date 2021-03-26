@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 了解如何为 Endpoint DLP 配置设备代理和 Internet 连接设置。
-ms.openlocfilehash: 3b8ebdbb08a6a866cc84df2031e77378925eaa0e
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 4d1aa3b75ec0a0720f3d92c847bf7c6cde6d966f
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50907002"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51199271"
 ---
 # <a name="configure-device-proxy-and-internet-connection-settings-for-endpoint-dlp"></a>为 Endpoint DLP 配置设备代理和 Internet 连接设置
 
@@ -76,7 +76,7 @@ WinHTTP 配置设置独立于 Windows Internet (WinINet) Internet 浏览代理�
 > [!NOTE]
 > 这将影响所有应用程序，包括使用带默认代理的 WinHTTP 的 Windows 服务。 -正在改变拓扑的笔记本电脑（例如：从办公室到家）将出现 netsh 故障。 使用基于注册表的静态代理配置。
 
-1. 打开提升的命令行：
+1. 打开提升的命令行:
     1. 转到“**开始**”并键入“**cmd**”
     1. 右键单击“**命令提示符**”，然后选择“**以管理员身份运行**”。
 2.  输入以下命令，再按 **Enter**：
@@ -96,7 +96,7 @@ WinHTTP 配置设置独立于 Windows Internet (WinINet) Internet 浏览代理�
 
 如果代理或防火墙在默认情况下阻止所有通信，并且只允许特定域通过，请将可下载工作表中列出的域添加到允许的域列表中。
 
-此[可下载的电子表格](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/security/threat-protection/microsoft-defender-atp/downloads/mdatp-urls.xlsx)列出了网络必须能够连接到的服务及其关联的 URL。 应该确保没有防火墙或网络过滤规则会拒绝访问这些 URL，或者可能需要专门为它们创建允许规则。
+此[可下载的电子表格](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx)列出了网络必须能够连接到的服务及其关联的 URL。 应该确保没有防火墙或网络过滤规则会拒绝访问这些 URL，或者可能需要专门为它们创建允许规则。
 
 如果代理或防火墙启用了 HTTPS 扫描（SSL 检查），则从 HTTPS 扫描中排除上表中列出的域。
 如果代理或防火墙阻止匿名通信，因为端点 DLP 是从系统上下文连接的，请确保前面列出的 URL 中允许匿名通信。
@@ -107,7 +107,7 @@ WinHTTP 配置设置独立于 Windows Internet (WinINet) Internet 浏览代理�
 
 1. 将 [MDATP 客户端分析器工具](https://aka.ms/mdatpanalyzer)下载到运行端点 DLP 的电脑上。
 2. 提取设备上 MDATPClientAnalyzer.zip 的内容。
-3. 打开提升的命令行：
+3. 打开提升的命令行:
     1. 转到“**开始**”并键入“**cmd**”。
     1. 右键单击“**命令提示符**”，然后选择“**以管理员身份运行**”。
 4.  输入以下命令，再按 **Enter**：

@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: 配置加密的敏感度标签，以便通过限制访问和使用来保护你的数据。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 4b5d25c51560cfe7a4d55419a7de9ce36321e78f
-ms.sourcegitcommit: 8998f70d3f7bd673f93f8d1cf12ce981b1b771c3
+ms.openlocfilehash: e8080a282ef734490214dc5f2b9e18a1946b314c
+ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51034171"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51185823"
 ---
 # <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>通过敏感度标签应用加密，从而限制对内容的访问
 
@@ -232,7 +232,7 @@ ms.locfileid: "51034171"
 
 可使用下述选项来允许用户在向内容手动应用敏感度标签时分配权限：
 
-- 在 Outlook 中，用户可以为他们选择的收件人选择相当于 [“不转发”](/azure/information-protection/configure-usage-rights#do-not-forward-option-for-emails) 或 [“只加密”](/azure/information-protection/configure-usage-rights#encrypt-only-option-for-emails) 的限制。
+- 在 Outlook 中，用户可以为他们选择的收件人选择相当于“[不转发](/azure/information-protection/configure-usage-rights#do-not-forward-option-for-emails)”或“[只加密](/azure/information-protection/configure-usage-rights#encrypt-only-option-for-emails)”（目前正在推出）的限制。
     
     所有支持敏感标签的电子邮件客户端都支持 “不转发” 选项。 不过，应用灵敏度标签的 **Encrypt-Only** 选项是最近发布的版本，只支持内置标签，而不支持 Azure 信息保护统一标签客户端。 对于不支持此功能的邮件客户端，标签将不可见。
     
