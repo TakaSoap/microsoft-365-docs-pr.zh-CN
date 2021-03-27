@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-mip
 - m365initiative-compliance
 description: 实施 Microsoft 信息保护 (MIP)，无论在何处生活或旅居在外，均可助你保护敏感信息。
-ms.openlocfilehash: 285b5885f56151bcbd877eb6ede04447c7a405dc
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: e8487bf443592fa45b887929f947b701406dba55
+ms.sourcegitcommit: 94fa3e57fa6505551d84ae7b458150dceff30db7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50927036"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51394690"
 ---
 # <a name="microsoft-information-protection-in-microsoft-365"></a>Microsoft 365 中的 Microsoft 信息保护
 
@@ -47,8 +47,8 @@ MIP 功能包含在 Microsoft 365 合规性中，提供了[了解数据](#know-y
 若要了解在混合环境中的数据全景并发现重要数据，请使用以下功能：
  
 |功能|它能解决什么问题？|开始行动|
-|:------|:------------|:--------------------|:-----------------------------|
-|[敏感信息类型](sensitive-information-type-entity-definitions.md)| 通过使用内置或自定义正则表达式或函数识别敏感数据。 补强证据包括关键字、置信水平和接近度。| [自定义内置敏感信息类型](customize-a-built-in-sensitive-information-type.md)|
+|:------|:------------|:--------------------|
+|[敏感信息类型](sensitive-information-type-learn-about.md)| 通过使用内置或自定义正则表达式或函数识别敏感数据。 补强证据包括关键字、置信水平和接近度。| [自定义内置敏感信息类型](customize-a-built-in-sensitive-information-type.md)|
 |[可训练的分类器](classifier-learn-about.md)| 通过使用您感兴趣的数据示例而不是识别项中的元素来标识敏感数据（模式匹配）。 可使用内置分类器，或使用自己的内容培训分类器。| [可训练的分类器入门](classifier-get-started-with.md) |
 |[数据分类](data-classification-overview.md) | 组织中具有敏感度标签、保留标签或已分类的项目的图形标识。 此信息还可用于深入了解用户正在针对这些项目采取的操作。 | [内容资源管理器入门](data-classification-content-explorer.md)<br /><br /> [活动资源管理器入门](data-classification-activity-explorer.md) |
 
@@ -57,7 +57,7 @@ MIP 功能包含在 Microsoft 365 合规性中，提供了[了解数据](#know-y
 若要应用包含加密、访问限制和视觉标记的灵活保护操作，请使用以下功能：
 
 |功能|它能解决什么问题？|开始行动|
-|:------|:------------|---------------------|:----------------------------|
+|:------|:------------|---------------------|
 |[敏感度标签](sensitivity-labels.md)| 跨应用、服务和设备的单一解决方案可在行经组织内外时标记并保护你的数据。 <br /><br />示例方案： <br /> [管理 Office 应用的敏感度标签](sensitivity-labels-office-apps.md)<br /> [加密文档和电子邮件](encryption-sensitivity-labels.md )<br /> [在 Power BI 中应用和查看标签](/power-bi/admin/service-security-apply-data-sensitivity-labels) <br /><br /> 有关敏感度标签的方案综合列表，请参阅入门文档。|[开始使用敏感度标签](get-started-with-sensitivity-labels.md) |
 |[Azure 信息保护统一标记客户端](/azure/information-protection/rms-client/aip-clientv2)| 对于 Windows 计算机，扩展了其他特性和功能的敏感标签，包括标记和保护文件资源管理器和 PowerShell 中的所有文件类型<br /><br /> 示例附加功能：[自定义配置 Azure 信息保护统一标记客户端](/azure/information-protection/rms-client/clientv2-admin-guide-customizations)| [Azure 信息保护统一标记客户端管理员指南](/azure/information-protection/rms-client/clientv2-admin-guide)|
 |[双密钥加密](double-key-encryption.md)| 在所有情况下，只有你可以解密受保护的内容，或者为了满足监管要求，你必须在某一地理范围内持有加密的密钥。 | [部署双密钥加密](double-key-encryption.md#deploy-dke)|
@@ -76,6 +76,9 @@ MIP 功能包含在 Microsoft 365 合规性中，提供了[了解数据](#know-y
 
 
 |功能|它能解决什么问题？|开始行动|
-|:------|:------------|:---------------------|:-----------------------------|
-|[数据丢失防护 (DLP)](data-loss-prevention-policies.md)| 帮助防止意外共享敏感项目。 <br /><br />示例方案： [保护 Microsoft Teams 聊天和频道消息中的敏感信息](dlp-microsoft-teams.md) | [开始使用默认 DLP 策略](get-started-with-the-default-dlp-policy.md)|
+|:------|:------------|:---------------------|
+|[数据丢失防护 (DLP)](data-loss-prevention-policies.md)| 帮助防止意外共享敏感项目。 | [开始使用默认 DLP 策略](get-started-with-the-default-dlp-policy.md)|
 |[了解终结点数据丢失防护](endpoint-dlp-learn-about.md)| 将 DLP 功能扩展到 Windows 10 计算机上使用和共享的项目。 | [终结点数据丢失防护入门](endpoint-dlp-getting-started.md)|
+|[了解 Microsoft 合规性扩展（预览版）](dlp-chrome-learn-about.md) | 将 DLP 功能扩展到 Chrome 浏览器 | [Microsoft 合规性扩展（预览版）入门](dlp-chrome-get-started.md)|
+|[了解 Microsoft 365 本地扫描仪数据丢失防护（预览）](dlp-on-premises-scanner-learn.md)|将 DLP 对文件活动的监视以及针对这些文件的安全操作扩展到本地文件共享和 SharePoint 文件夹和文档库。|[Microsoft 365 本地扫描仪数据丢失防护入门（预览）](dlp-on-premises-scanner-get-started.md)|
+|[保护 Microsoft Teams 聊天和频道消息中的敏感信息](dlp-microsoft-teams.md) | 将一些 DLP 功能扩展到 Teams 聊天和频道消息 | [了解 Microsoft Teams（预览版）中的默认数据丢失防护策略](dlp-teams-default-policy.md)| 
