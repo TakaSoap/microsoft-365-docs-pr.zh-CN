@@ -33,7 +33,7 @@
 #### [阶段 2：设置](mcafee-to-microsoft-defender-setup.md)
 #### [阶段 3：开始使用](mcafee-to-microsoft-defender-onboard.md)
 ### [从 Symantec 切换到 Microsoft Defender for Endpoint]()
-#### [迁移概述](symantec-to-microsoft-defender-atp-migration.md)
+#### [迁移概述](symantec-to-microsoft-defender-endpoint-migration.md)
 #### [阶段 1：准备](symantec-to-microsoft-defender-atp-prepare.md)
 #### [阶段 2：设置](symantec-to-microsoft-defender-atp-setup.md)
 #### [阶段 3：开始使用](symantec-to-microsoft-defender-atp-onboard.md)
@@ -115,7 +115,7 @@
 ##### [启用受控文件夹访问](enable-controlled-folders.md)
 ##### [自定义受控文件夹访问](customize-controlled-folders.md)
 
-### [Mac 版 Microsoft Defender 高级威胁防护]()
+### [适用于 Mac 的终结点的 Microsoft Defender]()
 #### [Mac 版 Microsoft Defender for Endpoint 概述](microsoft-defender-endpoint-mac.md)
 #### [新增功能](mac-whatsnew.md)
 
@@ -140,7 +140,7 @@
 ###### [设备控制概述](mac-device-control-overview.md)
 ###### [JAMF 示例](mac-device-control-jamf.md)
 ###### [Intune 示例](mac-device-control-intune.md)
-##### [定期扫描](mac-schedule-scan-atp.md)
+##### [定期扫描](mac-schedule-scan.md)
 
 #### [疑难解答]()
 ##### [解决安装问题](mac-support-install.md)
@@ -354,7 +354,7 @@
 #### [常规]()
 ##### [验证数据存储位置并更新数据保留设置](data-retention-settings.md)
 ##### [配置警报通知](configure-email-notifications.md)
-##### [配置高级功能]（advanced-features.md
+##### [配置高级功能](advanced-features.md)
 
 #### [权限]()
 ##### [使用基本权限访问门户](basic-permissions.md)
@@ -378,6 +378,8 @@
 ##### [载出设备](offboard-machines.md)
 
 #### [配置 Microsoft Defender 安全中心时区设置](time-settings.md)
+
+### [解决 Microsoft Defender for终结点的误报/负数](defender-endpoint-false-positives-negatives.md)
 
 ### [配置与其他 Microsoft 解决方案的集成]()
 #### [配置条件访问](configure-conditional-access.md)
@@ -585,5 +587,5 @@
 ##### [攻击面减少规则](troubleshoot-asr.md)
 
 # [Microsoft 365 安全中心](../index.yml)
-# [Microsoft 365 Defender](../defender/index.yml)
+# [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 # [Defender for Office 365](../office-365-security/overview.md)
