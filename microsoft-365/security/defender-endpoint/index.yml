@@ -1,9 +1,9 @@
 ### YamlMime:Landing
 title: Microsoft Defender for Endpoint 文档
-summary: Microsoft Defender for Endpoint 提供预防性保护、攻破后检测、自动调查和响应。
+summary: Microsoft Defender for Endpoint 是一个统一的平台，可用于预防性保护、入侵后检测、自动调查和响应。
 metadata:
   title: Microsoft Defender for Endpoint 文档
-  description: 了解适用于终结点的 Microsoft Defender，并最大化内置管理功能，以保护设备、检测恶意活动并修正威胁# 必需;显示在搜索结果中的文章说明。 < 160 个字符。
+  description: 了解 Microsoft Defender for Endpoint，并最大限度增强内置安全性功能，保护设备、检测恶意活动并修正威胁#必需；显示在搜索结果中的文章说明。 < 160 个字符。
   services: office-365-security-compliance
   ms.service: O365-seccomp
   ms.subservice: subservice
@@ -15,7 +15,7 @@ metadata:
   localization_priority: Priority
   ms.openlocfilehash: efa23f4c40021d95185203c22c8bba5009e15f2f
   ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
-  ms.translationtype: MT
+  ms.translationtype: HT
   ms.contentlocale: zh-CN
   ms.lasthandoff: 03/24/2021
   ms.locfileid: "51185739"
@@ -34,7 +34,7 @@ landingContent:
     links:
     - text: 概述视频
       url: https://www.microsoft.com/videoplayer/embed/RE4vnC4?rel=0
-- title: 评估&服务
+- title: 评估和部署服务
   linkLists:
   - linkListType: get-started
     links:
@@ -62,9 +62,9 @@ landingContent:
     links:
     - text: 终结点检测和响应
       url: overview-endpoint-detection-response.md
-    - text: 阻止和阻止
+    - text: 行为阻止和控制
       url: behavioral-blocking-containment.md
-    - text: 'AIR (自动调查和) '
+    - text: 自动调查和响应 (AIR)
       url: automated-investigations.md
     - text: 高级搜寻
       url: advanced-hunting-overview.md
@@ -78,7 +78,7 @@ landingContent:
     links:
     - text: Microsoft Defender for Endpoint for Mac
       url: microsoft-defender-endpoint-mac.md
-    - text: 适用于 iOS 的 Microsoft Defender for Endpoint
+    - text: Microsoft Defender for Endpoint for iOS
       url: microsoft-defender-endpoint-ios.md
     - text: Microsoft Defender for Endpoint for Linux
       url: microsoft-defender-endpoint-linux.md
@@ -90,13 +90,13 @@ landingContent:
     links:
     - text: 管理和 API
       url: management-apis.md
-    - text: 合作伙伴集成
+    - text: 合作伙伴集成模型
       url: partner-integration.md
 - title: 安全管理
   linkLists:
   - linkListType: overview
     links:
-    - text: 威胁&漏洞管理
+    - text: 威胁和漏洞管理
       url: next-gen-threat-and-vuln-mgt.md
     - text: 攻击面减少
       url: overview-attack-surface-reduction.md
