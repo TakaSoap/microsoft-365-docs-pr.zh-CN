@@ -2,10 +2,10 @@
 title: 保护管理员帐户
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: sirkkuw
+ms.author: sharik
+author: SKjerland
 manager: scotv
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 - MET150
 description: 了解如何设置和保护管理员帐户。
-ms.openlocfilehash: ec5b971ba4f1fdc8834e10ddf90ff219f763f805
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 0d687407fad1cec5da49dbc33ffeb84366f1c309
+ms.sourcegitcommit: c5d1528559953c6db7dca1d5cb453e0aa3215f02
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50912170"
+ms.lasthandoff: 03/27/2021
+ms.locfileid: "51398237"
 ---
 # <a name="protect-your-administrator-accounts"></a>保护管理员帐户
 
@@ -53,7 +53,7 @@ ms.locfileid: "50912170"
  2. 在 **"活动用户**"页上，选择页面顶部的"添加用户"，在"新建用户"面板中，输入名称和其他信息。
  3. 展开" **角色"** 部分，然后选择" **全局管理员** "为此用户授予全局管理员访问权限。 还可以选择" **自定义管理员"** 并选择显示的任何角色。
 
-    在"备用电子邮件地址" **文本框中输入备用** 电子邮件。 如果锁定，可以使用此地址恢复密码信息。对于全局管理员，帐单也将发送到此地址。
+    在"备用电子邮件地址" **文本框中输入备用** 电子邮件。 如果锁定，可以使用此地址恢复密码信息。对于全局管理员，帐单也会发送到此地址。
 
     ![选择管理员角色](../media/adminroles.png)
 
@@ -76,12 +76,11 @@ ms.locfileid: "50912170"
 3. 展开"**角色"** 部分，然后选择" (**没有管理访问权限) 。**
 4. 在"**产品许可证"** 部分，将 **"Microsoft 365 商业版"的选择器移动到****"打开"。**
 
-## <a name="register-each-of-these-accounts-for-multi-factor-authentication"></a>注册其中每个帐户进行多重身份验证
+## <a name="turn-on-security-defaults"></a>打开安全默认值
 
-确保这些帐户使用的是 [多重身份验证](m365-campaigns-multifactor-authenication.md)。
+安全默认值通过提供 Microsoft 代表组织管理的预配置安全设置来帮助保护组织免受与标识相关的攻击。 这些设置包括在所有管理员和用户帐户 (MFA) 多重身份验证。 有关安全默认值和如何启用安全默认值的信息，请参阅 [启用安全默认值](m365-campaigns-conditional-access.md)。
 
 ## <a name="additional-recommendations"></a>其他建议
 
-- 请确保管理员帐户还设置为多重身份验证。 我们将在配置条件访问策略 中向您展示 [如何这样做](m365-campaigns-conditional-access.md)。
 - 使用管理员帐户之前，请关闭所有不相关的浏览器会话和应用，包括个人电子邮件帐户。 还可以在专用或隐身浏览器窗口中使用。
 - 完成管理员任务后，请务必注销浏览器会话。

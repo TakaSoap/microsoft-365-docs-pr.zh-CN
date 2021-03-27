@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 089614fab57950af5f60181ce7ed2116046ad347
-ms.sourcegitcommit: a965c498e6b3890877f895d5197898b306092813
+ms.openlocfilehash: 320913058f1d3cab36b3a279996443c2e4ef117f
+ms.sourcegitcommit: ef98b8a18d275e5b5961e63d2b0743d046321737
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/26/2021
-ms.locfileid: "51379366"
+ms.locfileid: "51382909"
 ---
 # <a name="microsoft-defender-for-endpoint-for-us-government-customers"></a>适用于美国政府客户的 Microsoft Defender for Endpoint
 
@@ -100,7 +100,7 @@ iOS | ![否](images/svg/check-no.svg) 工程积压工作 | ![否](images/svg/che
 > 尝试使用 Microsoft 监视代理载入低于 Windows 10 或 Windows Server 2019 [的 Windows 设备](configure-server-endpoints.md#option-1-onboard-by-installing-and-configuring-microsoft-monitoring-agent-mma)？ 如果使用安装向导，或者使用命令行或脚本-将"OPINSIGHTS_WORKSPACE_AZURE_CLOUD_TYPE"参数设置为 1，则需要在"Azure 云[](https://docs.microsoft.com/azure/log-analytics/log-analytics-windows-agents#install-agent-using-command-line)"下选择"Azure 美国政府"。 [](https://docs.microsoft.com/azure/log-analytics/log-analytics-windows-agents#install-agent-using-setup-wizard) [](https://docs.microsoft.com/azure/log-analytics/log-analytics-windows-agents#install-agent-using-dsc-in-azure-automation)
 
 > [!NOTE]
-> 需要 Linux 版本 101.25.72 及以上版本，macOS 需要版本 101.25.69 及以上版本。 当我们预览时，这些版本仅在"预览体验成员 - 快"频道中可用。 有关 [说明，](linux-install-manually.md#configure-the-linux-software-repository) 请参阅配置 Linux 软件存储库或 ([macOS) ](mac-updates.md#set-the-channel-name) 频道名称。
+> 需要 Linux 版本 101.25.72 及以上版本，macOS 需要版本 101.25.69 及以上版本。 在预览版中，这些版本仅在"预览体验成员 - 快"频道中可用。 有关 [说明，](linux-install-manually.md#configure-the-linux-software-repository) 请参阅配置 Linux 软件存储库或 ([macOS) ](mac-updates.md#set-the-channel-name) 频道名称。
 
 ### <a name="os-versions-when-using-azure-defender-for-servers"></a>使用 Azure Defender for Servers 时的操作系统版本
 使用 Azure Defender for Servers 时支持以下 [操作系统版本](https://docs.microsoft.com/azure/security-center/security-center-wdatp)：
@@ -168,7 +168,7 @@ SIEM | `https://wdatp-alertexporter-us.gcc.securitycenter.windows.us` | `https:/
 电子邮件通知 | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg)
 评估实验室 | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg)
 管理和 API：设备运行状况和合规性报告 | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg)
-管理和 API：和第三方产品集成 | ![否](images/svg/check-no.svg) 即将推出 | ![否](images/svg/check-no.svg) 即将推出 | ![否](images/svg/check-no.svg) 即将推出
+管理和 API：和第三方产品集成 | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg)
 管理和 API：流式处理 API | ![是](images/svg/check-yes.svg) | ![否](images/svg/check-no.svg) 开发中 | ![否](images/svg/check-no.svg) 开发中
 管理和 API：威胁防护报告 | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg)
 威胁&漏洞管理 | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg)

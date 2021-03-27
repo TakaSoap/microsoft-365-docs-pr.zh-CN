@@ -10,26 +10,24 @@ ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
+- M365-subscription-management
+- Adm_O365
+- Adm_TOC
+ms.custom:
+- AdminSurgePortfolio
+- okr_smb
 - commerce
-ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 description: 管理员可以了解如何管理其组织中用户购买的自助服务。
-ms.openlocfilehash: 2ce12b7dba4e765745a94fa10f4ba15e7013e3c8
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: febf0ee470e735a454dc7a9e747de5025c7a4a51
+ms.sourcegitcommit: c5d1528559953c6db7dca1d5cb453e0aa3215f02
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50920176"
+ms.lasthandoff: 03/27/2021
+ms.locfileid: "51398170"
 ---
 # <a name="manage-self-service-purchases-admin"></a>管理自助购买（管理员）
-
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> 管理中心正在发生改变。 如果你的体验与此处提供的详细信息不匹配，请参阅[有关新版 Microsoft 365 管理中心](../../admin/microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet)。
-
-::: moniker-end
 
 作为管理员，你可以查看组织中人员购买的自助服务。 你会看到产品名称、购买者名称、购买的订阅、到期日期、购买价格以及每个自助购买的已分配用户。 如果组织要求，可以通过 PowerShell 关闭按产品进行自助购买。 对于通过自助购买或集中购买的产品，您具有相同的数据管理和访问策略。
 
@@ -37,13 +35,49 @@ ms.locfileid: "50920176"
 
 ## <a name="view-self-service-subscriptions"></a>查看自助服务订阅
 
-1. 在管理中心中，转到“**账单**” > “<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">你的产品</a>”页面。
+::: moniker range="o365-worldwide"
+
+1. 在管理中心中，转到“**计费**”>“<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">你的产品</a>”页面。
+
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+1. 在 <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">管理中心</a>中，转到" **帐单** > **""产品"** 页面。
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. 在 <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">管理中心</a>中，转到" **帐单** > **""产品"** 页面。
+
+::: moniker-end
+
 2. 在"**产品**"选项卡上，选择筛选器图标，然后选择"**自助服务"。**
 3. 若要查看有关订阅的更多详细信息，请从列表中选择一个。
 
 ## <a name="view-who-has-licenses-for-a-self-service-purchase-subscription"></a>查看谁拥有自助服务购买订阅的许可证
 
-1. 在管理中心，转到"帐单  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">""许可证"</a>页面。
+> [!NOTE]
+> 作为管理员，你无法分配或取消分配组织中用户购买的自助购买订阅的许可证。 你可以 [接管自助服务购买订阅](#take-over-a-self-service-purchase-subscription)，然后分配或取消分配许可证。
+
+::: moniker range="o365-worldwide"
+
+1. 在管理中心，转到“**计费**”>“<a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">许可证</a>”页面。
+
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+1. 在管理 <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">中心</a>中，转到"帐单 > **""许可证"** 页面。
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. 在管理 <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">中心</a>中，转到"帐单 > **""许可证"** 页面。
+
+::: moniker-end
+
 2. 选择筛选器图标，然后选择 **"自助服务"。**
 3. 选择一个产品以查看分配给人员的许可。
     > [!NOTE]
@@ -67,7 +101,24 @@ ms.locfileid: "50920176"
 
 可以通过分配给自助服务购买的用户的现有协议分配现有许可证或购买其他订阅。 分配这些集中购买的许可证后，你可以请求购买者取消其现有订阅。
 
-1. In the admin center go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">Purchase services</a> page.
+::: moniker range="o365-worldwide"
+
+1. In the admin center go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">Purchase services</a> page.
+
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+1. 在 <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">管理中心</a>，转到 **账单** > **购买服务** 页面。
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. 在 <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">管理中心</a>，转到 **账单** > **购买服务** 页面。
+
+::: moniker-end
+
 2. 找到并选择要购买的产品，然后选择"购买 **"。**
 3. 完成其余步骤以完成购买。
 4. 按照查看 [谁拥有](#view-who-has-licenses-for-a-self-service-purchase-subscription) 自助购买订阅的许可证中的步骤导出要下一步引用的用户列表。
@@ -88,7 +139,24 @@ ms.locfileid: "50920176"
 > [!NOTE]
 > 对于要移动用户的订阅中的每个用户，你必须拥有可用的许可证。
 
-1. 在管理中心中，转到“**账单**” > “<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">你的产品</a>”页面。
+::: moniker range="o365-worldwide"
+
+1. 在管理中心中，转到“**计费**”>“<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">你的产品</a>”页面。
+
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+1. 在 <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">管理中心</a>中，转到" **帐单** > **""产品"** 页面。
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. 在 <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">管理中心</a>中，转到" **帐单** > **""产品"** 页面。
+
+::: moniker-end
+
 2. 在"**产品**"选项卡上，选择筛选器图标，然后选择"**自助服务"。**
 3. 选择要接管的订阅。
 4. On the subscription details page， in the **Subscriptions and settings** section， select **Take control of this subscription**.
@@ -102,7 +170,24 @@ ms.locfileid: "50920176"
 
 当你选择取消自助购买订阅时，具有许可证的用户将失去对该产品的访问权限。 最初购买自助服务购买订阅的用户将收到一封电子邮件，指出订阅已取消。
 
-1. 在管理中心中，转到“**账单**” > “<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">你的产品</a>”页面。
+::: moniker range="o365-worldwide"
+
+1. 在管理中心中，转到“**计费**”>“<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">你的产品</a>”页面。
+
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+1. 在 <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">管理中心</a>中，转到" **帐单** > **""产品"** 页面。
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. 在 <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">管理中心</a>中，转到" **帐单** > **""产品"** 页面。
+
+::: moniker-end
+
 2. 在"**产品**"选项卡上，选择筛选器图标，然后选择"**自助服务"。**
 3. 选择要取消的订阅。
 4. On the subscription details page， in the **Subscriptions and settings** section， select **Take control of this subscription**.

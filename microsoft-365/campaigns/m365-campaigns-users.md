@@ -2,10 +2,10 @@
 title: 这些安全建议如何影响用户
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: sharik
+author: SKjerland
 manager: scotv
-ms.audience: Admin
+audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
@@ -23,43 +23,43 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: 了解这些 Microsoft 365 商业高级版安全建议如何影响用户并保护你的数据。
-ms.openlocfilehash: 91f6b1fb9ddd5938eb8a788ce7594ec8ab9908c3
-ms.sourcegitcommit: 1b30ac6e05906c8a014b1fed33fc71e1821f6ad2
+description: 了解这些适用于 Microsoft 365 商业高级版的安全建议如何影响你的用户并保护你的数据。
+ms.openlocfilehash: b8464396887daa408e94cfb6c151d998dd8b1ae2
+ms.sourcegitcommit: c5d1528559953c6db7dca1d5cb453e0aa3215f02
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2021
-ms.locfileid: "50044225"
+ms.lasthandoff: 03/27/2021
+ms.locfileid: "51398225"
 ---
 # <a name="how-these-security-recommendations-affect-your-users"></a>这些安全建议如何影响用户
 
-此解决方案中针对 Microsoft 365 的安全建议使黑客更加难以访问你的环境。 权衡的是，用户需要了解如何在此更安全的环境中工作。 我们知道需要稍多一点耐心，但保护你的组织是值得的。
+此解决方案中针对 Microsoft 365 的安全建议使黑客更加难以访问你的环境。 权衡的是，用户需要了解如何在此更安全的环境中工作。 我们知道需要多一点耐心，但保护你的组织是值得的。
 
-![下图汇总了以下针对 iPhone、Android 设备、Mac、Windows 10、共享和关键人员的关键点](../media/M365-democracy-Users_900px.png)
+![插图汇总了下面针对 iPhone、Android 设备、Mac、Windows 10、共享和关键人员的关键点](../media/M365-democracy-Users_900px.png)
 
 ## <a name="use-secure-email-practices"></a>使用安全电子邮件实践
 
-所有用户都应了解并使用这些电子邮件做法来帮助确保他们的电子邮件安全：
+所有用户都应了解并使用这些电子邮件实践来帮助确保他们的电子邮件安全：
 
-- 设置电子邮件以将多重身份验证与验证器应用一同使用。
-- 在 Defender for Office 365 保护中验证合法电子邮件并查找高级网络钓鱼的安全提示。
-- 仅打开安全链接和附件，由安全链接和安全附件验证。
+- 将电子邮件设置为对验证器应用使用多重身份验证。
+- 在 Defender for Office 365 Protection 中验证合法电子邮件并查找高级网络钓鱼的安全提示。
+- 仅打开安全链接和附件，如安全链接和安全附件所验证。
 
-了解有关多重[身份验证、网络钓鱼](m365-campaigns-multifactor-authenication.md)[和其他攻击的更多信息](m365-campaigns-phishing-and-attacks.md)。
+详细了解多重 [身份验证、](m365-campaigns-multifactor-authenication.md) 网络钓鱼 [和其他攻击](m365-campaigns-phishing-and-attacks.md)。
 
-下载 [信息图](m365-campaigns-protect-campaign-infographic.md) ，并提示你和团队成员。
+下载 [信息图](m365-campaigns-protect-campaign-infographic.md) ，其中提供了你和团队成员的提示。
 
 ## <a name="set-up-iphones-and-android-devices"></a>设置 iPhone 和 Android 设备
 
 添加到您的环境的所有用户都需要几分钟来设置 [iPhone 和 Android](../business/set-up-mobile-devices.md?toc=%2Fmicrosoft-365%2Fcampaigns%2Ftoc.json) 设备，以便安全工作：
 
-- 将设备设置为将多重身份验证与验证器应用一同使用。
-- 使用 Microsoft 移动应用，包括 Outlook Mobile、Word、OneDrive 和应用商店的其他 Microsoft 应用。 iPhone 和 Android 设备上包含的本机邮件应用程序不受支持。 
-- 用户需要 PIN 才能解锁其设备。
+- 将设备设置为对验证器应用使用多重身份验证。
+- 使用 Microsoft 移动应用，包括 Outlook Mobile、Word、OneDrive 以及应用商店的其他 Microsoft 应用。 iPhone 和 Android 设备上包含的本机邮件应用程序不受支持。 
+- 需要 PIN，以便用户解锁其设备。
 
-设置这些设置后，在这些设备（包括邮件）上访问组织数据时，系统会提示用户使用验证器应用。
+设置这些设置后，在这些设备（包括邮件）上访问组织数据时，将提示用户使用验证器应用。
 
-## <a name="keep-byod-macs-and-windows-10-pcs-fresh"></a>使 BYOD Mac 和 Windows 10 电脑保持新鲜度
+## <a name="keep-byod-macs-and-windows-10-pcs-fresh"></a>保持 BYOD Mac 和 Windows 10 电脑的新鲜度
 
 用户使主要工作设备保持最新也很重要：
 
@@ -78,8 +78,8 @@ ms.locfileid: "50044225"
 
 ## <a name="collaborate-using-microsoft-teams-onedrive-sharepoint-online-and-other-tools"></a>使用 Microsoft Teams、OneDrive、SharePoint Online 和其他工具进行协作
 
-你的用户可能会尝试在 Microsoft 365 外的其他位置共享和存储组织文件。 Microsoft 365 使安全协作和共享尽可能简单。 你可以 [直接从](share-files-and-videos.md) Microsoft Teams、OneDrive、Stream 甚至文件内共享文件和视频。 在这些工具中共享有助于防止数据泄露。 你可以向敏感数据添加其他保护，以防止在组织外部共享。
+用户可能会尝试在 Microsoft 365 外的其他位置共享和存储组织文件。 Microsoft 365 使安全协作和共享尽可能简单。 可以直接 [从](share-files-and-videos.md) Microsoft Teams、OneDrive、Stream 甚至文件内共享文件和视频。 从这些工具中共享有助于防止数据泄露。 你可以向敏感数据添加其他保护，以防止在组织外部共享。
 
 ## <a name="set-up-managed-windows-10-devices"></a>设置托管的 Windows 10 设备
 
-我们建议你最重要的员工使用最新获取的你管理的 Windows 10 设备。 我们将向您展示如何 [管理和保护这些设备](../business/set-up-windows-devices.md?toc=/microsoft-365/campaigns/toc.json)。 这可确保对黑客具有最高价值的员工得到最大保护。
+我们建议你最重要的员工使用最新获取的你管理的 Windows 10 设备。 我们将向您展示如何 [管理和保护这些设备](../business/set-up-windows-devices.md?toc=/microsoft-365/campaigns/toc.json)。 这可确保作为黑客最高价值目标的员工得到最大保护。

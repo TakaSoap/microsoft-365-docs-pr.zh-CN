@@ -1,11 +1,11 @@
 ---
-title: 设置条件访问策略
+title: 打开安全默认值
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: sharik
+author: SKjerland
 manager: scotv
-ms.audience: Admin
+audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
@@ -23,62 +23,65 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: 了解如何要求 MFA，以及如何为 Microsoft 365 商业版设置条件访问策略。
-ms.openlocfilehash: dcb79ed060dd15fd288cdcfb9e3739a788f5fbc2
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+description: 了解安全默认值如何通过提供预配置的安全设置来帮助保护组织免受与标识相关的攻击。
+ms.openlocfilehash: ea36ba45af26a767b08ee1e75931dca54dacea64
+ms.sourcegitcommit: c5d1528559953c6db7dca1d5cb453e0aa3215f02
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50912182"
+ms.lasthandoff: 03/27/2021
+ms.locfileid: "51398286"
 ---
-# <a name="require-multi-factor-authentication-and-set-up-conditional-access-policies"></a>需要多重身份验证并设置条件访问策略
+# <a name="turn-on-security-defaults"></a>打开安全默认值
 
-使用多重身份验证和条件访问策略保护对数据的访问。 这些额外的安全性会大大增加。 Microsoft 提供了一组建议用于所有客户的基准条件访问策略。 基线策略是一组预定义的策略，可帮助保护组织免受许多常见攻击。 这些常见攻击可能包括密码加密、重播和网络钓鱼。
+安全默认值通过提供 Microsoft 代表组织管理的预配置安全设置来帮助保护组织免受与标识相关的攻击。 这些设置包括在所有管理员和用户帐户 (MFA) 多重身份验证。 对于大多数组织来说，安全默认值提供了良好的附加登录安全级别。
 
-这些策略要求管理员和用户输入第二种形式的身份验证 (多重身份验证，或在某些情况下) MFA 身份验证。 例如，如果贵组织的用户尝试从不同的国家/地区或未知设备登录 Microsoft 365，则登录可能会被视为有风险。 用户必须提供一种额外形式的身份验证 (如指纹或代码) 证明其身份。
+有关安全默认值及其强制策略详细信息，请参阅 [什么是安全默认值？](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)
 
-目前，基准策略包括以下策略：
+如果订阅是在 2019 年 10 月 22 日当天或之后创建的，则可能会自动启用安全默认值，你应该 &mdash; 检查设置以确认。
 
-- 在 Microsoft 365 管理中心中设置：
-  - **要求管理员使用 MFA：** 要求对特权最大的管理员角色（包括全局管理员）进行多重身份验证。
-  - **最终用户保护**：只有当登录存在风险时，才需要为用户进行多重身份验证。 
-- 在 Azure Active Directory 门户中设置：
-  - **阻止旧身份验证**：较旧的客户端应用和一些新应用不使用更新、更安全的身份验证协议。 这些较旧的应用可以绕过条件访问策略并获取对环境的未经授权的访问。 此策略阻止来自不支持条件访问的客户端的访问。 
-  - **需要 MFA 进行服务管理**：需要多重身份验证，以访问管理工具，包括 Azure 门户 (配置基线策略) 。
+若要在 Azure AD (Azure Active Directory 中启用) 或检查它们是否已启用：
 
-我们建议您启用所有这些基线策略。 启用这些策略后，将提示管理员和用户注册 Azure AD 多重身份验证。
+1. 使用全局管理员凭据登录 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365</a> 管理中心。
 
-有关这些策略详细信息，请参阅 [什么是基准策略](/azure/active-directory/conditional-access/concept-baseline-protection)？
+2. 在左侧窗格中，选择"**全部显示**"，然后在"**管理中心**"下，选择 **"Azure Active Directory"。**
 
-## <a name="require-mfa"></a>需要使用 MFA
+3. 在 Azure Active **Directory** 管理中心的左侧窗格中，选择 **"Azure Active Directory"。**
 
-若要要求所有用户使用第二种形式的 ID 登录：
+4. 从仪表板的左侧菜单中的"管理"**部分**，选择"属性 **"。**
 
-1. 转到管理中心 ，然后选择 <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> "设置 **"。**
+    :::image type="content" source="../media/m365-campaigns-conditional-access/azure-ad-properties.png" alt-text="显示&quot;属性&quot;菜单项位置的 Azure Active Directory 管理中心的屏幕截图。":::
 
-2. 在"设置" **页上，选择** " **使登录更安全"卡中的"查看** "。
+5. 在"属性"页 **底部**，选择"**管理安全性默认值"。**
 
-    ![使登录更加安全。](../media/setupmfa.png)
-3. 在"使登录更安全"页上，选择"**开始使用"。**
-
-4. 在"加强登录安全"窗格中，选中"要求管理员进行多重身份验证"和"要求用户注册多重身份验证"旁边的复选框，如果检测到风险，则阻止 **访问**。
-    请务必从"查找用户 [](m365-campaigns-protect-admin-accounts.md#create-an-emergency-admin-account)"框中的 MFA 要求中排除紧急或"断 **点"管理员** 帐户。
-
-    ![加强登录安全页面。](../media/requiremfa.png)
-
-5. 选择 **页面底部的** "创建策略"。
-
-## <a name="set-up-baseline-policies"></a>设置基线策略
-
-1. 转到 [Azure 门户](https://portal.azure.com)，然后导航到 **Azure Active Directory** \> **安全** \> **条件访问** 以创建新 **策略**。
-
-请参阅每个策略的以下特定说明： <br>
-    - [要求管理员使用 MFA](/azure/active-directory/conditional-access/howto-baseline-protect-administrators) <br>
-    - [要求用户进行 MFA](/azure/active-directory/conditional-access/howto-baseline-protect-end-users) <br>
-    - [阻止旧身份验证](/azure/active-directory/conditional-access/howto-baseline-protect-legacy-auth) <br>
-    - [需要 MFA 进行服务管理](/azure/active-directory/conditional-access/howto-baseline-protect-azure)
+6. 在右侧窗格中，你将看到" **启用安全性默认设置"** 设置。 如果 **选择了** "是"，则已启用安全默认值，无需执行任何进一步的操作。 如果当前未启用安全默认值，请选择"是"以启用它们，然后选择"保存 **"。**
 
 > [!NOTE]
-> 预览策略不再存在，用户将需要创建自己的策略。
+> 如果一直使用条件访问策略，则需要在使用安全默认值之前将其关闭。
+>
+> 可以使用安全默认值或条件访问策略，但不能同时使用这两者。
 
-你可以设置额外的策略，例如要求批准客户端应用。 有关详细信息，请参阅条件 [访问文档](/azure/active-directory/conditional-access/)。
+## <a name="consider-using-conditional-access"></a>考虑使用条件访问
+
+如果您的组织具有复杂的安全要求，或者您需要更精细地控制安全策略，则应考虑使用条件访问而非安全默认值来实现类似或更高的安全状况。 
+
+条件访问允许你创建和定义对登录事件做出反应的策略，并请求执行其他操作，然后再向用户授予应用程序或服务的访问权限。 条件访问策略可以精细具体化，使用户能够随时随地高效工作，还可以保护组织。
+
+安全默认值可供所有客户使用，而条件访问需要以下计划之一的许可证：
+
+- Azure Active Directory Premium P1 或 P2
+- Microsoft 365 商业高级版
+- Microsoft 365 E3 或 E5
+- 企业移动性&安全性 E3 或 E5
+
+如果要使用条件访问配置与安全默认值启用的策略等效的策略，请查看以下分步指南：
+
+- [要求对管理员执行 MFA](/azure/active-directory/conditional-access/howto-conditional-access-policy-admin-mfa)
+- [需要 MFA 进行 Azure 管理](/azure/active-directory/conditional-access/howto-conditional-access-policy-azure-management)
+- [阻止旧身份验证](/azure/active-directory/conditional-access/howto-conditional-access-policy-block-legacy)
+- [要求对所有用户执行 MFA](/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa)
+- [需要 Azure AD MFA 注册](/azure/active-directory/identity-protection/howto-identity-protection-configure-mfa-policy) - 需要 Azure AD Identity Protection，这是 Azure Active Directory Premium P2 的一部分
+
+若要详细了解条件访问，请参阅 [什么是条件访问？](/azure/active-directory/conditional-access/overview) 有关创建条件访问策略的信息，请参阅 [创建条件访问策略](/azure/active-directory/authentication/tutorial-enable-azure-mfa#create-a-conditional-access-policy)。
+
+> [!NOTE]
+> 如果你有提供条件访问但尚未创建任何条件访问策略的计划或许可证，则欢迎使用安全默认值。 但是，您需要先关闭安全默认值，然后才能使用条件访问策略。
