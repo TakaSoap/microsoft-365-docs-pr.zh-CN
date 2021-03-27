@@ -1,11 +1,11 @@
 ---
-title: 设置条件访问策略
+title: 打开安全默认值
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: sharik
+author: SKjerland
 manager: scotv
-ms.audience: Admin
+audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
@@ -23,62 +23,65 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: 了解如何要求 MFA，以及如何为 Microsoft 365 商业版设置条件访问策略。
-ms.openlocfilehash: dcb79ed060dd15fd288cdcfb9e3739a788f5fbc2
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+description: 了解安全默认值如何通过提供预配置的安全设置来帮助保护组织免受与标识相关的攻击。
+ms.openlocfilehash: ea36ba45af26a767b08ee1e75931dca54dacea64
+ms.sourcegitcommit: c5d1528559953c6db7dca1d5cb453e0aa3215f02
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50912182"
+ms.lasthandoff: 03/27/2021
+ms.locfileid: "51398286"
 ---
-# <a name="require-multi-factor-authentication-and-set-up-conditional-access-policies"></a><span data-ttu-id="f7d60-103">需要多重身份验证并设置条件访问策略</span><span class="sxs-lookup"><span data-stu-id="f7d60-103">Require multi-factor authentication and set up conditional access policies</span></span>
+# <a name="turn-on-security-defaults"></a><span data-ttu-id="333b8-103">打开安全默认值</span><span class="sxs-lookup"><span data-stu-id="333b8-103">Turn on security defaults</span></span>
 
-<span data-ttu-id="f7d60-104">使用多重身份验证和条件访问策略保护对数据的访问。</span><span class="sxs-lookup"><span data-stu-id="f7d60-104">You protect access to your data with multi-factor authentication and conditional access policies.</span></span> <span data-ttu-id="f7d60-105">这些额外的安全性会大大增加。</span><span class="sxs-lookup"><span data-stu-id="f7d60-105">These add substantial additional security.</span></span> <span data-ttu-id="f7d60-106">Microsoft 提供了一组建议用于所有客户的基准条件访问策略。</span><span class="sxs-lookup"><span data-stu-id="f7d60-106">Microsoft provides a set of baseline conditional access policies that are recommended for all customers.</span></span> <span data-ttu-id="f7d60-107">基线策略是一组预定义的策略，可帮助保护组织免受许多常见攻击。</span><span class="sxs-lookup"><span data-stu-id="f7d60-107">Baseline policies are a set of predefined policies that help protect organizations against many common attacks.</span></span> <span data-ttu-id="f7d60-108">这些常见攻击可能包括密码加密、重播和网络钓鱼。</span><span class="sxs-lookup"><span data-stu-id="f7d60-108">These common attacks can include password spray, replay, and phishing.</span></span>
+<span data-ttu-id="333b8-104">安全默认值通过提供 Microsoft 代表组织管理的预配置安全设置来帮助保护组织免受与标识相关的攻击。</span><span class="sxs-lookup"><span data-stu-id="333b8-104">Security defaults help protect your organization from identity-related attacks by providing preconfigured security settings that Microsoft manages on behalf of your organization.</span></span> <span data-ttu-id="333b8-105">这些设置包括在所有管理员和用户帐户 (MFA) 多重身份验证。</span><span class="sxs-lookup"><span data-stu-id="333b8-105">These settings include enabling multi-factor authentication (MFA) for all admins and user accounts.</span></span> <span data-ttu-id="333b8-106">对于大多数组织来说，安全默认值提供了良好的附加登录安全级别。</span><span class="sxs-lookup"><span data-stu-id="333b8-106">For most organizations, security defaults offer a good level of additional sign-in security.</span></span>
 
-<span data-ttu-id="f7d60-109">这些策略要求管理员和用户输入第二种形式的身份验证 (多重身份验证，或在某些情况下) MFA 身份验证。</span><span class="sxs-lookup"><span data-stu-id="f7d60-109">These policies require admins and users to enter a second form of authentication (called multi-factor authentication, or MFA) under certain conditions.</span></span> <span data-ttu-id="f7d60-110">例如，如果贵组织的用户尝试从不同的国家/地区或未知设备登录 Microsoft 365，则登录可能会被视为有风险。</span><span class="sxs-lookup"><span data-stu-id="f7d60-110">For example, if a user in your organization tries to sign in to Microsoft 365 from a different country or from an unknown device, the sign-in might be considered risky.</span></span> <span data-ttu-id="f7d60-111">用户必须提供一种额外形式的身份验证 (如指纹或代码) 证明其身份。</span><span class="sxs-lookup"><span data-stu-id="f7d60-111">The user must provide an extra form of authentication (such as a fingerprint or a code) to prove their identity.</span></span>
+<span data-ttu-id="333b8-107">有关安全默认值及其强制策略详细信息，请参阅 [什么是安全默认值？](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)</span><span class="sxs-lookup"><span data-stu-id="333b8-107">For more information about security defaults and the policies they enforce, see [What are security defaults?](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)</span></span>
 
-<span data-ttu-id="f7d60-112">目前，基准策略包括以下策略：</span><span class="sxs-lookup"><span data-stu-id="f7d60-112">Currently, the baseline policies include the following policies:</span></span>
+<span data-ttu-id="333b8-108">如果订阅是在 2019 年 10 月 22 日当天或之后创建的，则可能会自动启用安全默认值，你应该 &mdash; 检查设置以确认。</span><span class="sxs-lookup"><span data-stu-id="333b8-108">If your subscription was created on or after October 22, 2019, security defaults might have been automatically enabled for you&mdash;you should check your settings to confirm.</span></span>
 
-- <span data-ttu-id="f7d60-113">在 Microsoft 365 管理中心中设置：</span><span class="sxs-lookup"><span data-stu-id="f7d60-113">Set up in Microsoft 365 admin center:</span></span>
-  - <span data-ttu-id="f7d60-114">**要求管理员使用 MFA：** 要求对特权最大的管理员角色（包括全局管理员）进行多重身份验证。</span><span class="sxs-lookup"><span data-stu-id="f7d60-114">**Require MFA for admins**: Requires multi-factor authentication for the most privileged administrator roles, including global administrator.</span></span>
-  - <span data-ttu-id="f7d60-115">**最终用户保护**：只有当登录存在风险时，才需要为用户进行多重身份验证。</span><span class="sxs-lookup"><span data-stu-id="f7d60-115">**End-user protection**: Requires multi-factor authentication for users only when a sign-in is risky.</span></span> 
-- <span data-ttu-id="f7d60-116">在 Azure Active Directory 门户中设置：</span><span class="sxs-lookup"><span data-stu-id="f7d60-116">Set up in Azure Active Directory portal:</span></span>
-  - <span data-ttu-id="f7d60-117">**阻止旧身份验证**：较旧的客户端应用和一些新应用不使用更新、更安全的身份验证协议。</span><span class="sxs-lookup"><span data-stu-id="f7d60-117">**Block legacy authentication**: Older client apps and some new apps don't use newer, more secure, authentication protocols.</span></span> <span data-ttu-id="f7d60-118">这些较旧的应用可以绕过条件访问策略并获取对环境的未经授权的访问。</span><span class="sxs-lookup"><span data-stu-id="f7d60-118">These older apps can bypass conditional access policies and gain unauthorized access to your environment.</span></span> <span data-ttu-id="f7d60-119">此策略阻止来自不支持条件访问的客户端的访问。</span><span class="sxs-lookup"><span data-stu-id="f7d60-119">This policy blocks access from clients that don't support conditional access.</span></span> 
-  - <span data-ttu-id="f7d60-120">**需要 MFA 进行服务管理**：需要多重身份验证，以访问管理工具，包括 Azure 门户 (配置基线策略) 。</span><span class="sxs-lookup"><span data-stu-id="f7d60-120">**Require MFA for Service Management**: Requires multi-factor authentication for access to management tools, including Azure portal (where you configure baseline policies).</span></span>
+<span data-ttu-id="333b8-109">若要在 Azure AD (Azure Active Directory 中启用) 或检查它们是否已启用：</span><span class="sxs-lookup"><span data-stu-id="333b8-109">To enable security defaults in your Azure Active Directory (Azure AD) or to check to see if they're already enabled:</span></span>
 
-<span data-ttu-id="f7d60-121">我们建议您启用所有这些基线策略。</span><span class="sxs-lookup"><span data-stu-id="f7d60-121">We recommend that you enable all of these baseline policies.</span></span> <span data-ttu-id="f7d60-122">启用这些策略后，将提示管理员和用户注册 Azure AD 多重身份验证。</span><span class="sxs-lookup"><span data-stu-id="f7d60-122">After these policies are enabled, admins and users will be prompted to register for Azure AD Multifactor Authentication.</span></span>
+1. <span data-ttu-id="333b8-110">使用全局管理员凭据登录 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365</a> 管理中心。</span><span class="sxs-lookup"><span data-stu-id="333b8-110">Sign in to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a> with Global admin credentials.</span></span>
 
-<span data-ttu-id="f7d60-123">有关这些策略详细信息，请参阅 [什么是基准策略](/azure/active-directory/conditional-access/concept-baseline-protection)？</span><span class="sxs-lookup"><span data-stu-id="f7d60-123">For more information about these policies, see [What are baseline policies](/azure/active-directory/conditional-access/concept-baseline-protection)?</span></span>
+2. <span data-ttu-id="333b8-111">在左侧窗格中，选择"**全部显示**"，然后在"**管理中心**"下，选择 **"Azure Active Directory"。**</span><span class="sxs-lookup"><span data-stu-id="333b8-111">In the left pane, select **Show All,** and then under **Admin centers**, select **Azure Active Directory**.</span></span>
 
-## <a name="require-mfa"></a><span data-ttu-id="f7d60-124">需要使用 MFA</span><span class="sxs-lookup"><span data-stu-id="f7d60-124">Require MFA</span></span>
+3. <span data-ttu-id="333b8-112">在 Azure Active **Directory** 管理中心的左侧窗格中，选择 **"Azure Active Directory"。**</span><span class="sxs-lookup"><span data-stu-id="333b8-112">In the left pane of the **Azure Active Directory admin center,** select **Azure Active Directory**.</span></span>
 
-<span data-ttu-id="f7d60-125">若要要求所有用户使用第二种形式的 ID 登录：</span><span class="sxs-lookup"><span data-stu-id="f7d60-125">To require that all users sign in with a second form of ID:</span></span>
+4. <span data-ttu-id="333b8-113">从仪表板的左侧菜单中的"管理"**部分**，选择"属性 **"。**</span><span class="sxs-lookup"><span data-stu-id="333b8-113">From the left menu of the Dashboard, in the **Manage** section, select **Properties**.</span></span>
 
-1. <span data-ttu-id="f7d60-126">转到管理中心 ，然后选择 <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> "设置 **"。**</span><span class="sxs-lookup"><span data-stu-id="f7d60-126">Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> and choose **Setup**.</span></span>
+    :::image type="content" source="../media/m365-campaigns-conditional-access/azure-ad-properties.png" alt-text="显示&quot;属性&quot;菜单项位置的 Azure Active Directory 管理中心的屏幕截图。":::
 
-2. <span data-ttu-id="f7d60-127">在"设置" **页上，选择** " **使登录更安全"卡中的"查看** "。</span><span class="sxs-lookup"><span data-stu-id="f7d60-127">On the Setup page, choose **View** in the **Make sign-in more secure** card.</span></span>
+5. <span data-ttu-id="333b8-115">在"属性"页 **底部**，选择"**管理安全性默认值"。**</span><span class="sxs-lookup"><span data-stu-id="333b8-115">At the bottom of the **Properties** page, select **Manage Security defaults**.</span></span>
 
-    ![使登录更加安全。](../media/setupmfa.png)
-3. <span data-ttu-id="f7d60-129">在"使登录更安全"页上，选择"**开始使用"。**</span><span class="sxs-lookup"><span data-stu-id="f7d60-129">On the Make sign-in more secure page, choose **Get started**.</span></span>
-
-4. <span data-ttu-id="f7d60-130">在"加强登录安全"窗格中，选中"要求管理员进行多重身份验证"和"要求用户注册多重身份验证"旁边的复选框，如果检测到风险，则阻止 **访问**。</span><span class="sxs-lookup"><span data-stu-id="f7d60-130">On the Strengthen sign-in security pane, select the check boxes next to **Require multi-factor authentication for admins** and **Require users to register for multi-factor authentication and block access if risk is detected**.</span></span>
-    <span data-ttu-id="f7d60-131">请务必从"查找用户 [](m365-campaigns-protect-admin-accounts.md#create-an-emergency-admin-account)"框中的 MFA 要求中排除紧急或"断 **点"管理员** 帐户。</span><span class="sxs-lookup"><span data-stu-id="f7d60-131">Be sure to exclude the [emergency](m365-campaigns-protect-admin-accounts.md#create-an-emergency-admin-account) or "break-glass" admin account from the MFA requirement in the **Find users** box.</span></span>
-
-    ![加强登录安全页面。](../media/requiremfa.png)
-
-5. <span data-ttu-id="f7d60-133">选择 **页面底部的** "创建策略"。</span><span class="sxs-lookup"><span data-stu-id="f7d60-133">Choose **Create policy** on the bottom of the page.</span></span>
-
-## <a name="set-up-baseline-policies"></a><span data-ttu-id="f7d60-134">设置基线策略</span><span class="sxs-lookup"><span data-stu-id="f7d60-134">Set up baseline policies</span></span>
-
-1. <span data-ttu-id="f7d60-135">转到 [Azure 门户](https://portal.azure.com)，然后导航到 **Azure Active Directory** \> **安全** \> **条件访问** 以创建新 **策略**。</span><span class="sxs-lookup"><span data-stu-id="f7d60-135">Go to the [Azure portal](https://portal.azure.com), and then navigate to **Azure Active Directory** \> **Security** \> **Conditional Access** to create a **new policy**.</span></span>
-
-<span data-ttu-id="f7d60-136">请参阅每个策略的以下特定说明：</span><span class="sxs-lookup"><span data-stu-id="f7d60-136">See the following specific instructions for each policy:</span></span> <br>
-    - [<span data-ttu-id="f7d60-137">要求管理员使用 MFA</span><span class="sxs-lookup"><span data-stu-id="f7d60-137">Require MFA for admins</span></span>](/azure/active-directory/conditional-access/howto-baseline-protect-administrators) <br>
-    - [<span data-ttu-id="f7d60-138">要求用户进行 MFA</span><span class="sxs-lookup"><span data-stu-id="f7d60-138">Require MFA for users</span></span>](/azure/active-directory/conditional-access/howto-baseline-protect-end-users) <br>
-    - [<span data-ttu-id="f7d60-139">阻止旧身份验证</span><span class="sxs-lookup"><span data-stu-id="f7d60-139">Block legacy authentication</span></span>](/azure/active-directory/conditional-access/howto-baseline-protect-legacy-auth) <br>
-    - [<span data-ttu-id="f7d60-140">需要 MFA 进行服务管理</span><span class="sxs-lookup"><span data-stu-id="f7d60-140">Require MFA for service management</span></span>](/azure/active-directory/conditional-access/howto-baseline-protect-azure)
+6. <span data-ttu-id="333b8-116">在右侧窗格中，你将看到" **启用安全性默认设置"** 设置。</span><span class="sxs-lookup"><span data-stu-id="333b8-116">In the right pane, you'll see the **Enable Security defaults** setting.</span></span> <span data-ttu-id="333b8-117">如果 **选择了** "是"，则已启用安全默认值，无需执行任何进一步的操作。</span><span class="sxs-lookup"><span data-stu-id="333b8-117">If **Yes** is selected, then security defaults are already enabled and no further action is required.</span></span> <span data-ttu-id="333b8-118">如果当前未启用安全默认值，请选择"是"以启用它们，然后选择"保存 **"。**</span><span class="sxs-lookup"><span data-stu-id="333b8-118">If security defaults are not currently enabled, then select **Yes** to enable them, and then select **Save**.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="f7d60-141">预览策略不再存在，用户将需要创建自己的策略。</span><span class="sxs-lookup"><span data-stu-id="f7d60-141">Preview policies no longer exist and users will need to create their own policies.</span></span>
+> <span data-ttu-id="333b8-119">如果一直使用条件访问策略，则需要在使用安全默认值之前将其关闭。</span><span class="sxs-lookup"><span data-stu-id="333b8-119">If you've been using Conditional Access policies, you'll need to turn them off before using security defaults.</span></span>
+>
+> <span data-ttu-id="333b8-120">可以使用安全默认值或条件访问策略，但不能同时使用这两者。</span><span class="sxs-lookup"><span data-stu-id="333b8-120">You can use either security defaults or Conditional Access policies, but you can't use both at the same time.</span></span>
 
-<span data-ttu-id="f7d60-142">你可以设置额外的策略，例如要求批准客户端应用。</span><span class="sxs-lookup"><span data-stu-id="f7d60-142">You can set up extra policies, such as requiring approved client apps.</span></span> <span data-ttu-id="f7d60-143">有关详细信息，请参阅条件 [访问文档](/azure/active-directory/conditional-access/)。</span><span class="sxs-lookup"><span data-stu-id="f7d60-143">For more information, see the [Conditional Access documentation](/azure/active-directory/conditional-access/).</span></span>
+## <a name="consider-using-conditional-access"></a><span data-ttu-id="333b8-121">考虑使用条件访问</span><span class="sxs-lookup"><span data-stu-id="333b8-121">Consider using Conditional Access</span></span>
+
+<span data-ttu-id="333b8-122">如果您的组织具有复杂的安全要求，或者您需要更精细地控制安全策略，则应考虑使用条件访问而非安全默认值来实现类似或更高的安全状况。</span><span class="sxs-lookup"><span data-stu-id="333b8-122">If your organization has complex security requirements or you need more granular control over your security policies, then you should consider using Conditional Access instead of security defaults to achieve a similar or higher security posture.</span></span> 
+
+<span data-ttu-id="333b8-123">条件访问允许你创建和定义对登录事件做出反应的策略，并请求执行其他操作，然后再向用户授予应用程序或服务的访问权限。</span><span class="sxs-lookup"><span data-stu-id="333b8-123">Conditional Access lets you create and define policies that react to sign-in events and request additional actions before a user is granted access to an application or service.</span></span> <span data-ttu-id="333b8-124">条件访问策略可以精细具体化，使用户能够随时随地高效工作，还可以保护组织。</span><span class="sxs-lookup"><span data-stu-id="333b8-124">Conditional Access policies can be granular and specific, empowering users to be productive wherever and whenever, but also protecting your organization.</span></span>
+
+<span data-ttu-id="333b8-125">安全默认值可供所有客户使用，而条件访问需要以下计划之一的许可证：</span><span class="sxs-lookup"><span data-stu-id="333b8-125">Security defaults are available to all customers, while Conditional Access requires a license for one of the following plans:</span></span>
+
+- <span data-ttu-id="333b8-126">Azure Active Directory Premium P1 或 P2</span><span class="sxs-lookup"><span data-stu-id="333b8-126">Azure Active Directory Premium P1 or P2</span></span>
+- <span data-ttu-id="333b8-127">Microsoft 365 商业高级版</span><span class="sxs-lookup"><span data-stu-id="333b8-127">Microsoft 365 Business Premium</span></span>
+- <span data-ttu-id="333b8-128">Microsoft 365 E3 或 E5</span><span class="sxs-lookup"><span data-stu-id="333b8-128">Microsoft 365 E3 or E5</span></span>
+- <span data-ttu-id="333b8-129">企业移动性&安全性 E3 或 E5</span><span class="sxs-lookup"><span data-stu-id="333b8-129">Enterprise Mobility & Security E3 or E5</span></span>
+
+<span data-ttu-id="333b8-130">如果要使用条件访问配置与安全默认值启用的策略等效的策略，请查看以下分步指南：</span><span class="sxs-lookup"><span data-stu-id="333b8-130">If you want to use Conditional Access to configure policies equivalent to those enabled by security defaults, check out the following step-by-step guides:</span></span>
+
+- [<span data-ttu-id="333b8-131">要求对管理员执行 MFA</span><span class="sxs-lookup"><span data-stu-id="333b8-131">Require MFA for administrators</span></span>](/azure/active-directory/conditional-access/howto-conditional-access-policy-admin-mfa)
+- [<span data-ttu-id="333b8-132">需要 MFA 进行 Azure 管理</span><span class="sxs-lookup"><span data-stu-id="333b8-132">Require MFA for Azure management</span></span>](/azure/active-directory/conditional-access/howto-conditional-access-policy-azure-management)
+- [<span data-ttu-id="333b8-133">阻止旧身份验证</span><span class="sxs-lookup"><span data-stu-id="333b8-133">Block legacy authentication</span></span>](/azure/active-directory/conditional-access/howto-conditional-access-policy-block-legacy)
+- [<span data-ttu-id="333b8-134">要求对所有用户执行 MFA</span><span class="sxs-lookup"><span data-stu-id="333b8-134">Require MFA for all users</span></span>](/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa)
+- <span data-ttu-id="333b8-135">[需要 Azure AD MFA 注册](/azure/active-directory/identity-protection/howto-identity-protection-configure-mfa-policy) - 需要 Azure AD Identity Protection，这是 Azure Active Directory Premium P2 的一部分</span><span class="sxs-lookup"><span data-stu-id="333b8-135">[Require Azure AD MFA registration](/azure/active-directory/identity-protection/howto-identity-protection-configure-mfa-policy) - Requires Azure AD Identity Protection, which is part of Azure Active Directory Premium P2</span></span>
+
+<span data-ttu-id="333b8-136">若要详细了解条件访问，请参阅 [什么是条件访问？](/azure/active-directory/conditional-access/overview)</span><span class="sxs-lookup"><span data-stu-id="333b8-136">To learn more about Conditional Access, see [What is Conditional Access?](/azure/active-directory/conditional-access/overview)</span></span> <span data-ttu-id="333b8-137">有关创建条件访问策略的信息，请参阅 [创建条件访问策略](/azure/active-directory/authentication/tutorial-enable-azure-mfa#create-a-conditional-access-policy)。</span><span class="sxs-lookup"><span data-stu-id="333b8-137">For more information about creating Conditional Access policies, see [Create a Conditional Access policy](/azure/active-directory/authentication/tutorial-enable-azure-mfa#create-a-conditional-access-policy).</span></span>
+
+> [!NOTE]
+> <span data-ttu-id="333b8-138">如果你有提供条件访问但尚未创建任何条件访问策略的计划或许可证，则欢迎使用安全默认值。</span><span class="sxs-lookup"><span data-stu-id="333b8-138">If you have a plan or license that provides Conditional Access but haven't yet created any Conditional Access policies, you're welcome to use security defaults.</span></span> <span data-ttu-id="333b8-139">但是，您需要先关闭安全默认值，然后才能使用条件访问策略。</span><span class="sxs-lookup"><span data-stu-id="333b8-139">However, you'll need to turn off security defaults before you can use Conditional Access policies.</span></span>
