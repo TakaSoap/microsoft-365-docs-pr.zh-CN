@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 1c8a3f3ab91add9e057c4661677997e658f42386
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 9a3806d3e2bff66e04f4adb50217fc1c6f267364
+ms.sourcegitcommit: ef98b8a18d275e5b5961e63d2b0743d046321737
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51055270"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51382591"
 ---
 # <a name="devicenetworkinfo"></a>DeviceNetworkInfo
 
@@ -46,7 +46,6 @@ ms.locfileid: "51055270"
 | `Timestamp` | datetime | 记录事件的日期和时间 |
 | `DeviceId` | string | 服务中的计算机的唯一标识符 |
 | `DeviceName` | string | 计算机的完全限定域名 (FQDN) |
-| `ReportId` | long | 基于重复计数器的事件标识符。 若要标识唯一事件，此列必须与 DeviceName 和 Timestamp 列一起使用 |
 | `NetworkAdapterName` | string | 网络适配器的名称 |
 | `MacAddress` | string | 网络适配器的 MAC 地址 |
 | `NetworkAdapterType` | string | 网络适配器类型。 有关可能的值，请参阅 [此枚举](/dotnet/api/system.net.networkinformation.networkinterfacetype?view=netframework-4.7.2) |
@@ -58,6 +57,7 @@ ms.locfileid: "51055270"
 | `IPv6Dhcp` | string | DHCP 服务器的 IPv6 地址 |
 | `DefaultGateways` | string | JSON 数组格式的默认网关地址 |
 | `IPAddresses` | string | 包含分配给适配器的所有 IP 地址及其各自的子网前缀和 IP 地址空间（如公共、专用或链接本地）的 JSON 数组 |
+| `ReportId` | long | 基于重复计数器的事件标识符。 若要标识唯一事件，此列必须与 DeviceName 和 Timestamp 列一起使用 |
 
 ## <a name="related-topics"></a>相关主题
 - [高级搜寻概述](advanced-hunting-overview.md)

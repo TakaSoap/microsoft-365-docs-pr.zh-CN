@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 247b8b8d8e18c8eecb09029581635ae907433f55
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: df96b57b9898dd973fab053918d763d1972bd50d
+ms.sourcegitcommit: ef98b8a18d275e5b5961e63d2b0743d046321737
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51056477"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51382801"
 ---
 # <a name="get-expert-training-on-advanced-hunting"></a>获取高级搜寻方面的专家培训
 
@@ -37,8 +37,7 @@ ms.locfileid: "51056477"
 
 通过跟踪攻击者快速提升高级搜寻的知识，这是一个针对新安全分析师和经验丰富的威胁情报人员的网络广播系列。 本系列将指导您完成创建您自己的复杂查询的基础知识。 从基础的第一个视频开始，或跳转到适合您的体验级别的更高级视频。
 
-
-| Title | 说明 | Watch | 查询 | 
+| 标题 | 说明 | Watch | 查询 | 
 |--|--|--|--|
 | 第 1 节：KQL 基础知识 | 此部分介绍了 Microsoft 365 Defender 中高级搜寻的基础知识。 了解可用的高级搜寻数据和基本 KQL 语法和运算符。 | [YouTube](https://youtu.be/0D9TkGjeJwM?t=351) (54：14)  | [CSL 文件](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%201%20-%20KQL%20Fundamentals.csl) |
 | 第 2 集：加入 | 继续了解高级搜寻数据以及如何将表联接在一起。 了解 `inner` 、 、 和 联接，并了解默认 `outer` `unique` Kusto 联接的 `semi` `innerunique` 细微差别。 | [YouTube](https://youtu.be/LMrO6K5TWOU?t=297) (53：33)  | [CSL 文件](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%202%20-%20Joins.csl) |
@@ -48,7 +47,7 @@ ms.locfileid: "51056477"
 
 使用 *L33TSP3AK 获取更多专家培训：Microsoft 365 Defender* 中的高级搜寻，这是一个网络广播系列，供希望扩展其技术知识和实用技能以在 Microsoft 365 Defender 中使用高级搜寻执行安全调查的分析师。 
 
-| Title | 说明 | Watch | 查询 | 
+| 标题 | 说明 | Watch | 查询 | 
 |--|--|--|--|
 | 第 1 集  | 在此集中，你将了解运行高级搜寻查询的不同最佳做法。 涵盖的主题包括：如何优化查询、使用高级勒索软件搜寻、将 JSON 作为动态类型处理以及使用外部数据运算符。 | [YouTube](https://www.youtube.com/watch?v=nMGbK-ALaVg&feature=youtu.be) (56：34)  | [CSL 文件](https://github.com/microsoft/Microsoft-365-Defender-Hunting-Queries/blob/master/Webcasts/l33tSpeak/Performance%2C%20Json%20and%20dynamics%20operator%2C%20external%20data.csl)
 

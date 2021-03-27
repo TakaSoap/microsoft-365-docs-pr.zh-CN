@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 059cfbf37c79ff9f99b5e46c8d4329c203aa9665
-ms.sourcegitcommit: 3d2261af22bebbbf7efa8a0d3135225a15bd6ba8
+ms.openlocfilehash: 684025441c8400775f469515df1bcd0423d6460b
+ms.sourcegitcommit: 94fa3e57fa6505551d84ae7b458150dceff30db7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51215524"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51394742"
 ---
 # <a name="configure-advanced-features-in-defender-for-endpoint"></a>在 Defender for Endpoint 中配置高级功能
 
@@ -63,6 +63,14 @@ ms.locfileid: "51215524"
 ## <a name="live-response-unsigned-script-execution"></a>实时响应未签名脚本执行
 
 启用此功能后，您可以在实时响应会话中运行未签名的脚本。
+
+
+## <a name="restrict-correlation-to-within-scoped-device-groups"></a>限制与作用域内设备组之间的关联
+启用此设置后，警报将基于其作用域的设备组关联到单独的事件。 默认情况下，在整个租户范围内发生事件关联。
+
+>[!NOTE]
+>更改此设置仅影响未来的警报关联。
+
 
 ## <a name="autoresolve-remediated-alerts"></a>Autoresolve 修正警报
 

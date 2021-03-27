@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 9699b5e2bc2e33b94795b7c23bd3f34f0383a8cc
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 12a35a9f80da6b401495fcae7c245436b35b991c
+ms.sourcegitcommit: ef98b8a18d275e5b5961e63d2b0743d046321737
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51054609"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51382885"
 ---
 # <a name="create-and-manage-custom-detections-rules"></a>创建和管理自定义检测规则
 
@@ -116,12 +116,16 @@ DeviceEvents
 - **建议的操作**- 响应者为响应警报可能执行的其他操作
 
 #### <a name="rule-frequency"></a>规则频率
-保存或编辑新规则时，它将运行并检查过去 30 天的数据中的匹配项。 然后，该规则以固定间隔再次运行，并基于你选择的频率应用回看持续时间：
+保存新规则时，它将运行并检查过去 30 天的数据中的匹配。 然后，该规则以固定间隔再次运行，并基于你选择的频率应用回看持续时间：
 
 - **每 24 小时** 运行一次 ，每 24 小时运行一次，检查过去 30 天的数据
 - **每 12 小时** 运行一次，每 12 小时运行一次，检查过去 24 小时内的数据
 - **每 3 小时** 运行一次，每 3 小时运行一次，检查过去 6 小时的数据
 - **每小时** 运行一次，每小时运行一次，检查过去 2 小时的数据
+
+编辑规则时，它将在计划的下一个运行时中根据设置的频率运行应用的更改。
+
+
 
 >[!TIP]
 > 将查询中的时间筛选器与回看持续时间相匹配。 将忽略超出回视持续时间的结果。  

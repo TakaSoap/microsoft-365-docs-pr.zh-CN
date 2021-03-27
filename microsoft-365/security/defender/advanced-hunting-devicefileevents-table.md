@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 10009edab33d04ca01da9459c394634d0622cf3d
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 62989eca2fd00757ea02d03bf24a0049135d97b0
+ms.sourcegitcommit: ef98b8a18d275e5b5961e63d2b0743d046321737
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51055278"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51382861"
 ---
 # <a name="devicefileevents"></a>DeviceFileEvents
 
@@ -63,11 +63,19 @@ ms.locfileid: "51055278"
 | `InitiatingProcessAccountName` | string | 运行负责事件的进程的帐户的用户名 |
 | `InitiatingProcessAccountSid` | string | 安全 (SID) 运行负责事件的进程的帐户的 SID 标识符 |
 | `InitiatingProcessAccountUpn` | string | 用户主体 (UPN) 运行负责事件的进程的帐户的名称 |
+| `InitiatingProcessAccountObjectId` | string | 运行负责事件的进程的用户帐户的 Azure AD 对象 ID |
 | `InitiatingProcessMD5` | string | 启动事件的进程 (MD5) 文件哈希 |
 | `InitiatingProcessSHA1` | string | 启动事件 (映像) 的 SHA-1 |
 | `InitiatingProcessSHA256` | string | 启动事件 (映像文件) SHA-256。 通常不会填充此字段 — 可用时使用 SHA1 列。 |
 | `InitiatingProcessFolderPath` | string | 包含启动事件 (进程) 文件的文件夹 |
 | `InitiatingProcessFileName` | string | 启动事件的进程的名称 |
+| `InitiatingProcessFileSize` | long | 启动事件 (进程) 文件的大小 |
+| `InitiatingProcessVersionInfoCompanyName` | string | 进程版本信息中的公司名称 (负责) 文件 |
+| `InitiatingProcessVersionInfoProductName` | string | 负责事件的进程版本信息中的 (名称) 映像文件 |
+|` InitiatingProcessVersionInfoProductVersion` | string | 进程版本信息中的产品版本 (负责) 文件 |
+|` InitiatingProcessVersionInfoInternalFileName` | string | 负责事件的进程版本信息 (文件) 文件的内部文件名 |
+| `InitiatingProcessVersionInfoOriginalFileName` | string | 进程版本信息的原始文件名 (负责) 文件 |
+| `InitiatingProcessVersionInfoFileDescription` | string | 负责事件的进程版本信息 (映像) 说明 |
 | `InitiatingProcessId` | int | 进程 ID (PID) 启动事件的过程的 PID |
 | `InitiatingProcessCommandLine` | string | 用于运行启动事件的进程的命令行 |
 | `InitiatingProcessCreationTime` | datetime | 启动事件的过程的日期和时间 |
@@ -77,20 +85,19 @@ ms.locfileid: "51055278"
 | `InitiatingProcessParentFileName` | string | 生成负责事件的进程的父进程的名称 |
 | `InitiatingProcessParentCreationTime` | datetime | 启动负责事件的进程的父级的日期和时间 |
 | `RequestProtocol` | string | 网络协议（如果适用）用于启动活动：Unknown、Local、SMB 或 NFS |
-| `ShareName` | string | 包含文件的共享文件夹的名称 |
 | `RequestSourceIP` | string | 发起活动的远程设备的 IPv4 或 IPv6 地址 |
 | `RequestSourcePort` | string | 启动活动的远程设备的源端口 |
 | `RequestAccountName` | string | 用于远程启动活动的帐户的用户名 |
 | `RequestAccountDomain` | string | 用于远程启动活动的帐户的域 |
 | `RequestAccountSid` | string | 安全 (用于) 启动活动的帐户的 SID 标识符 |
-| `ReportId` | long | 基于重复计数器的事件标识符。 若要标识唯一事件，此列必须与 DeviceName 和 Timestamp 列一起使用。 |
-| `AppGuardContainerId` | string | 应用程序防护用于隔离浏览器活动的虚拟化容器的标识符 |
-| `AdditionalFields` | string | 有关实体或事件的其他信息 |
+| `ShareName` | string | 包含文件的共享文件夹的名称 |
 | `InitiatingProcessFileSize` | long | 运行负责事件的进程的文件的大小 |
 | `SensitivityLabel` | string | 应用于电子邮件、文件或其他内容的标签，用于将其分类以用于信息保护 |
 | `SensitivitySubLabel` | string | 应用于电子邮件、文件或其他内容的子标签，用于将其分类以用于信息保护;敏感度子标签按敏感度标签分组，但单独处理 |
 | `IsAzureInfoProtectionApplied` | boolean | 指示文件是否由 Azure 信息保护进行加密 |
-
+| `ReportId` | long | 基于重复计数器的事件标识符。 若要标识唯一事件，此列必须与 DeviceName 和 Timestamp 列一起使用。 |
+| `AppGuardContainerId` | string | 应用程序防护用于隔离浏览器活动的虚拟化容器的标识符 |
+| `AdditionalFields` | string | 有关实体或事件的其他信息 |
 >[!NOTE]
 > 文件哈希信息将始终在可用时显示。 但是，无法计算 SHA1、SHA256 或 MD5 的原因有多种。 例如，该文件可能位于远程存储中、由另一个进程锁定、已压缩或标记为虚拟。 在这些情况下，文件哈希信息显示为空。
 

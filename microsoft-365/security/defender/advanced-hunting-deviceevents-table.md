@@ -20,22 +20,19 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 48958726528d3db00d705f5d7db9a3315bf52213
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 4926b6e742be273637150ebe2fa700e5d4e6f54e
+ms.sourcegitcommit: ef98b8a18d275e5b5961e63d2b0743d046321737
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51055280"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51382873"
 ---
 # <a name="deviceevents"></a>DeviceEvents
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-
 **适用于：**
 - Microsoft 365 Defender
-
-
 
 高级搜寻架构中的杂项设备事件或表包含有关各种事件类型的信息，包括安全控件触发的事件 `DeviceEvents` ，Windows Defender防病毒和 exploit Protection。 [](advanced-hunting-overview.md) 使用此参考来构建从此表返回信息的查询。
 
@@ -56,6 +53,7 @@ ms.locfileid: "51055280"
 | `SHA1` | string | 录制操作所应用到的文件的 SHA-1 |
 | `SHA256` | string | 录制操作所应用到的文件的 SHA-256。 通常不会填充此字段 — 可用时使用 SHA1 列。 |
 | `MD5` | string | 已记录操作所应用到的文件的 MD5 哈希 |
+| `FileSize` | long | 文件大小（以字节为单位） |
 | `AccountDomain` | string | 帐户的域 |
 | `AccountName` | string | 帐户的用户名 |
 | `AccountSid` | string | 帐户 (SID) 安全标识符 |
@@ -75,28 +73,33 @@ ms.locfileid: "51055280"
 | `LocalPort` | int | 通信过程中使用的本地计算机上 TCP 端口 |
 | `FileOriginUrl` | string | 下载文件的 URL |
 | `FileOriginIP` | string | 从其中下载文件的 IP 地址 |
-| `AdditionalFields` | string | 有关 JSON 数组格式的事件的其他信息 |
-| `InitiatingProcessFileSize` | long | 运行负责事件的进程的文件的大小 |
-| `FileSize` | long | 文件大小（以字节为单位） |
 | `InitiatingProcessSHA1` | string | 启动事件 (映像) 的 SHA-1 |
 | `InitiatingProcessSHA256` | string | 启动事件 (映像文件) SHA-256。 通常不会填充此字段 — 可用时使用 SHA1 列。 |
+| `InitiatingProcessMD5` | string | 启动事件的进程 (MD5) 文件哈希 |
 | `InitiatingProcessFileName` | string | 启动事件的进程的名称 |
+| `InitiatingProcessFileSize` | long | 运行负责事件的进程的文件的大小 |
 | `InitiatingProcessFolderPath` | string | 包含启动事件 (进程) 文件的文件夹 |
 | `InitiatingProcessId` | int | 进程 ID (PID) 启动事件的过程的 PID |
 | `InitiatingProcessCommandLine` | string | 用于运行启动事件的进程的命令行 |
 | `InitiatingProcessCreationTime` | datetime | 启动事件的过程的日期和时间 |
-| `InitiatingProcessParentId` | int | 进程 ID (PID) 生成负责事件的进程的父进程的 PID |
-| `InitiatingProcessParentFileName` | string | 生成负责事件的进程的父进程的名称 |
-| `InitiatingProcessParentCreationTime` | datetime | 启动负责事件的进程的父级的日期和时间 |
-| `InitiatingProcessMD5` | string | 启动事件的进程 (MD5) 文件哈希 |
 | `InitiatingProcessAccountDomain` | string | 运行负责事件的进程的帐户的域 |
 | `InitiatingProcessAccountName` | string | 运行负责事件的进程的帐户的用户名 |
 | `InitiatingProcessAccountSid` | string | 安全 (SID) 运行负责事件的进程的帐户的 SID 标识符 |
 | `InitiatingProcessAccountUpn` | string | 用户主体 (UPN) 运行负责事件的进程的帐户的名称 |
 | `InitiatingProcessAccountObjectId` | string | 运行负责事件的进程的用户帐户的 Azure AD 对象 ID |
+| `InitiatingProcessVersionInfoCompanyName` | string | 进程版本信息中的公司名称 (负责) 文件 |
+| `InitiatingProcessVersionInfoProductName` | string | 负责事件的进程版本信息中的 (名称) 映像文件 |
+| `InitiatingProcessVersionInfoProductVersion` | string | 进程版本信息中的产品版本 (负责) 文件 |
+|` InitiatingProcessVersionInfoInternalFileName` | string | 负责事件的进程版本信息 (文件) 文件的内部文件名 |
+| `InitiatingProcessVersionInfoOriginalFileName` | string | 进程版本信息的原始文件名 (负责) 文件 |
+| `InitiatingProcessVersionInfoFileDescription` | string | 负责事件的进程版本信息 (映像) 说明 |
+| `InitiatingProcessParentId` | int | 进程 ID (PID) 生成负责事件的进程的父进程的 PID |
+| `InitiatingProcessParentFileName` | string | 生成负责事件的进程的父进程的名称 |
+| `InitiatingProcessParentCreationTime` | datetime | 启动负责事件的进程的父级的日期和时间 |
 | `InitiatingProcessLogonId` | string | 启动事件的进程的登录会话的标识符。 此标识符仅在重新启动之间的同一计算机上是唯一的 |
 | `ReportId` | long | 基于重复计数器的事件标识符。 若要标识唯一事件，此列必须与 DeviceName 和 Timestamp 列一起使用 |
 | `AppGuardContainerId` | string | 应用程序防护用于隔离浏览器活动的虚拟化容器的标识符 |
+| `AdditionalFields` | string | 有关 JSON 数组格式的事件的其他信息 |
 
 ## <a name="related-topics"></a>相关主题
 - [高级搜寻概述](advanced-hunting-overview.md)

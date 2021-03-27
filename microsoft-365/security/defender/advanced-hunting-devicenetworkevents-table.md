@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 3e09ace7130e5a58d3c386a57951dbf2ea5f5f2a
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: ffa79ea7e3c75887531020e83d081ee3206d1a11
+ms.sourcegitcommit: ef98b8a18d275e5b5961e63d2b0743d046321737
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51055272"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51382849"
 ---
 # <a name="devicenetworkevents"></a>DeviceNetworkEvents
 
@@ -63,6 +63,12 @@ ms.locfileid: "51055272"
 | `InitiatingProcessMD5` | string | 启动事件的进程 (MD5) 文件哈希 |
 | `InitiatingProcessFileName` | string | 启动事件的进程的名称 |
 | `InitiatingProcessFileSize` | long | 运行负责事件的进程的文件的大小 |
+| `InitiatingProcessVersionInfoCompanyName` | string | 进程版本信息中的公司名称 (负责) 文件 |
+| `InitiatingProcessVersionInfoProductName` | string | 负责事件的进程版本信息中的 (名称) 映像文件 |
+| `InitiatingProcessVersionInfoProductVersion` | string | 进程版本信息中的产品版本 (负责) 文件 |
+| `InitiatingProcessVersionInfoInternalFileName` | string | 负责事件的进程版本信息 (文件) 文件的内部文件名 |
+| `InitiatingProcessVersionInfoOriginalFileName` | string | 进程版本信息的原始文件名 (负责) 文件 |
+| `InitiatingProcessVersionInfoFileDescription` | string | 负责事件的进程版本信息 (映像) 说明 |
 | `InitiatingProcessId` | int | 进程 ID (PID) 启动事件的过程的 PID |
 | `InitiatingProcessCommandLine` | string | 用于运行启动事件的进程的命令行 |
 | `InitiatingProcessCreationTime` | datetime | 启动事件的过程的日期和时间 |
@@ -74,6 +80,7 @@ ms.locfileid: "51055272"
 | `InitiatingProcessAccountName` | string | 运行负责事件的进程的帐户的用户名 |
 | `InitiatingProcessAccountSid` | string | 安全 (SID) 运行负责事件的进程的帐户的 SID 标识符 |
 | `InitiatingProcessAccountUpn` | string | 用户主体 (UPN) 运行负责事件的进程的帐户的名称 |
+| `InitiatingProcessAccountObjectId` | string | 运行负责事件的进程的用户帐户的 Azure AD 对象 ID |
 | `InitiatingProcessIntegrityLevel` | string | 启动事件的过程的完整性级别。 Windows 根据某些特征（例如是否从 Internet 下载启动）将完整性级别分配给进程。 这些完整性级别影响对资源的权限 |
 | `InitiatingProcessTokenElevation` | string | 指示是否存在用户访问控制的令牌类型 (UAC) 启动事件的进程应用的特权提升 |
 | `ReportId` | long | 基于重复计数器的事件标识符。 若要标识唯一事件，此列必须与 DeviceName 和 Timestamp 列一起使用 |

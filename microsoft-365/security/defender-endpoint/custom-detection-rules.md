@@ -18,12 +18,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 09/20/2020
 ms.technology: mde
-ms.openlocfilehash: fc4c15d2e391176ed0b4420c13fb865674da0361
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 48b1f1bf9506acc8491887fca49295d5e4ccbd69
+ms.sourcegitcommit: ef98b8a18d275e5b5961e63d2b0743d046321737
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51163583"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51382705"
 ---
 # <a name="create-custom-detection-rules"></a>创建自定义检测规则
 
@@ -98,8 +98,8 @@ DeviceEvents
 - **每 3 小时** 运行一次，每 3 小时运行一次，检查过去 6 小时的数据
 - **每小时** 运行一次，每小时运行一次，检查过去 2 小时的数据
 
-> [!IMPORTANT]
-> 更改已计划为自定义检测的查询时，它的下一个即时执行将具有 30 天的回视窗口，就像正在创建一个新查询一样。 对大量查询的更改以及时间筛选器高于选定频率的默认回发持续时间，可能会影响高级搜寻的总体配额消耗，从而导致耗尽每日配额。
+编辑规则时，它将在计划的下一个运行时中根据设置的频率运行应用的更改。
+
 
 > [!TIP]
 > 将查询中的时间筛选器与回看持续时间相匹配。 将忽略超出回视持续时间的结果。

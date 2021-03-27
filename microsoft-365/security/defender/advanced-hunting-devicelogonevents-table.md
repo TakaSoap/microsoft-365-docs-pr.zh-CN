@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: c1c9bac0fe29587bbc02c7974b83e2725a69c02b
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: e1d1284fa6132e37b31245bd45557e180d0135f2
+ms.sourcegitcommit: ef98b8a18d275e5b5961e63d2b0743d046321737
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51055273"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51382669"
 ---
 # <a name="devicelogonevents"></a>DeviceLogonEvents
 
@@ -50,19 +50,18 @@ ms.locfileid: "51055273"
 | `DeviceId` | string | 服务中的计算机的唯一标识符 |
 | `DeviceName` | string | 计算机的完全限定域名 (FQDN) |
 | `ActionType` | string |触发事件的活动类型 |
+| `LogonType` | string | 登录会话的类型，特别是：<br><br> - **交互式** - 用户使用本地键盘和屏幕与计算机进行物理交互<br><br> - **远程交互式 (RDP) 登录** - 用户使用远程桌面、终端服务、远程协助或其他 RDP 客户端与计算机远程交互<br><br> - **网络** - 使用 PsExec 访问计算机或访问计算机上的共享资源（如打印机和共享文件夹）时启动的会话<br><br> - **Batch** - 由计划任务启动的会话<br><br> - **服务** - 服务启动时启动的会话<br> |
 | `AccountDomain` | string | 帐户的域 |
 | `AccountName` | string | 帐户的用户名 |
 | `AccountSid` | string | 帐户 (SID) 安全标识符 |
 | `Protocol` | string | 通信期间使用的协议 |
 | `FailureReason` | string | 说明所记录操作失败原因的信息 |
-| `LogonType` | string | 登录会话的类型，特别是：<br><br> - **交互式** - 用户使用本地键盘和屏幕与计算机进行物理交互<br><br> - **远程交互式 (RDP) 登录** - 用户使用远程桌面、终端服务、远程协助或其他 RDP 客户端与计算机远程交互<br><br> - **网络** - 使用 PsExec 访问计算机或访问计算机上的共享资源（如打印机和共享文件夹）时启动的会话<br><br> - **Batch** - 由计划任务启动的会话<br><br> - **服务** - 服务启动时启动的会话<br> |
+| `IsLocalAdmin` | boolean | 用于指示用户是否是计算机上本地管理员的布尔指示器 |
 | `LogonId` | string | 登录会话的标识符。 此标识符仅在重新启动之间的同一计算机上是唯一的 |
 | `RemoteDeviceName` | string | 在受影响的计算机上执行远程操作计算机的名称。 根据报告的事件，此名称可以是完全限定的域名 (FQDN) 、NetBIOS 名称或主机名（不含域信息） |
 | `RemoteIP` | string | 连接到的 IP 地址 |
 | `RemoteIPType` | string | IP 地址的类型，例如 Public、Private、Reserved、Loopback、Teredo、FourToSixMapping 和 Broadcast |
 | `RemotePort` | int | 连接到的远程设备的 TCP 端口 |
-| `AdditionalFields` | string | 有关 JSON 数组格式的事件的其他信息 |
-| `InitiatingProcessFileSize` | long | 运行负责事件的进程的文件的大小 |
 | `InitiatingProcessAccountDomain` | string | 运行负责事件的进程的帐户的域 |
 | `InitiatingProcessAccountName` | string | 运行负责事件的进程的帐户的用户名 |
 | `InitiatingProcessAccountSid` | string | 安全 (SID) 运行负责事件的进程的帐户的 SID 标识符 |
@@ -74,6 +73,13 @@ ms.locfileid: "51055273"
 | `InitiatingProcessSHA256` | string | 启动事件 (映像文件) SHA-256。 通常不填充此字段 -使用 SHA1 列（如果可用） |
 | `InitiatingProcessMD5` | string | 启动事件的进程 (MD5) 文件哈希 |
 | `InitiatingProcessFileName` | string | 启动事件的进程的名称 |
+| `InitiatingProcessFileSize` | long | 运行负责事件的进程的文件的大小 |
+| `InitiatingProcessVersionInfoCompanyName` | string | 进程版本信息中的公司名称 (负责) 文件 |
+| `InitiatingProcessVersionInfoProductName` | string | 负责事件的进程版本信息中的 (名称) 映像文件 |
+| `InitiatingProcessVersionInfoProductVersion` | string | 进程版本信息中的产品版本 (负责) 文件 |
+| `InitiatingProcessVersionInfoInternalFileName` | string | 负责事件的进程版本信息 (文件) 文件的内部文件名 |
+| `InitiatingProcessVersionInfoOriginalFileName` | string | 进程版本信息的原始文件名 (负责) 文件 |
+| `InitiatingProcessVersionInfoFileDescription` | string | 负责事件的进程版本信息 (映像) 说明 |
 | `InitiatingProcessId` | int | 进程 ID (PID) 启动事件的过程的 PID |
 | `InitiatingProcessCommandLine` | string | 用于运行启动事件的进程的命令行 |
 | `InitiatingProcessCreationTime` | datetime | 启动事件的过程的日期和时间 |
@@ -83,7 +89,7 @@ ms.locfileid: "51055273"
 | `InitiatingProcessParentCreationTime` | datetime | 启动负责事件的进程的父级的日期和时间 |
 | `ReportId` | long | 基于重复计数器的事件标识符。 若要标识唯一事件，此列必须与 DeviceName 和 Timestamp 列一起使用 |
 | `AppGuardContainerId` | string | 应用程序防护用于隔离浏览器活动的虚拟化容器的标识符 |
-| `IsLocalAdmin` | boolean | 用于指示用户是否是计算机上本地管理员的布尔指示器 |
+| `AdditionalFields` | string | 有关 JSON 数组格式的事件的其他信息 |
 
 ## <a name="related-topics"></a>相关主题
 - [高级搜寻概述](advanced-hunting-overview.md)

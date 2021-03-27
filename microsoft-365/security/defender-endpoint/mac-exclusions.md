@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 0ce77d55ece955fbf97b5c9f32859514b55acb5a
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: fb0cffb9716b2d0940e816dc69217486fd51a21d
+ms.sourcegitcommit: a965c498e6b3890877f895d5197898b306092813
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51187645"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51379323"
 ---
 # <a name="configure-and-validate-exclusions-for-microsoft-defender-for-endpoint-for-mac"></a>配置和验证适用于 Mac 的 Microsoft Defender for Endpoint 的排除项
 
@@ -79,7 +79,7 @@ Folder | 指定文件夹下的所有 (以递归)  | `/var/log/`<br/>`/var/*/`
 
 打开 Defender for Endpoint 应用程序并导航到"管理 **设置**  >  **""** 添加或删除排除..."，如以下屏幕截图所示：
 
-![管理排除项屏幕截图](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-37-exclusions)
+![管理排除项屏幕截图](images/mdatp-37-exclusions.png)
 
 选择要添加的排除类型并按照提示操作。
 

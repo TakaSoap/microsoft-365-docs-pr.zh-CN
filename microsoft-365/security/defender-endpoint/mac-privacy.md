@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 83a56a74ff949b23843417942923d2b4b810b4ee
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 1386809778edeb92521a8656e9ece78591a682a4
+ms.sourcegitcommit: ef98b8a18d275e5b5961e63d2b0743d046321737
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51185919"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51382897"
 ---
 # <a name="privacy-for-microsoft-defender-for-endpoint-for-mac"></a>适用于 Mac 的 Microsoft Defender 终结点的隐私
 
@@ -156,6 +156,18 @@ The privacy controls for the various types of data described in the preceding se
 | reason           | 如果更新的存档，则显示错误消息。 |
 
 #### <a name="product-and-service-performance-data-events"></a>产品和服务性能事件
+
+**应用程序意外退出（崩溃）**
+
+在应用程序意外退出时收集系统信息和应用程序的状态。
+
+将会收集以下字段：
+
+| 字段                          | 说明 |
+| ------------------------------ | ----------- |
+| v1_crash_count                 | 每小时 V1 引擎进程在客户端计算机上崩溃次数  |
+| v2_crash_count                 | 每小时 V2 引擎进程在客户端计算机上崩溃次数  |
+| EDR_crash_count                | 每小时在客户端计算机上 EDR 进程崩溃次数        |
 
 **内核扩展统计信息**
 

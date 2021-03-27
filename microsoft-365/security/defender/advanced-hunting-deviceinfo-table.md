@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 46efb531331cf76472c67c769c96804d11fb9e4b
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: d56710f4933a8971230c78d7b3570f14b9bda335
+ms.sourcegitcommit: ef98b8a18d275e5b5961e63d2b0743d046321737
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51055274"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51382621"
 ---
 # <a name="deviceinfo"></a>DeviceInfo
 
@@ -55,10 +55,10 @@ ms.locfileid: "51055274"
 | `AadObjectId` | string | Azure AD 中设备的唯一标识符 |
 | `LoggedOnUsers` | string | 事件时以 JSON 数组格式登录的所有用户的列表 |
 | `RegistryDeviceTag` | string | 通过注册表添加的机器标记 |
-| `ReportId` | long | 基于重复计数器的事件标识符。 若要标识唯一事件，此列必须与 DeviceName 和 Timestamp 列一起使用 |
-|`AdditionalFields` | string | 有关 JSON 数组格式的事件的其他信息 |
 | `OSVersion` | string | 计算机上运行的操作系统版本 |
 | `MachineGroup` | string | 计算机的机器组。 基于角色的访问控制使用该组来确定对计算机的访问权限 |
+| `ReportId` | long | 基于重复计数器的事件标识符。 若要标识唯一事件，此列必须与 DeviceName 和 Timestamp 列一起使用 |
+|`AdditionalFields` | string | 有关 JSON 数组格式的事件的其他信息 |
 
 `DeviceInfo`该表提供基于检测信号的设备信息，检测信号是定期报告或来自设备的信号。 每隔十五分钟，设备发送包含经常更改的属性（如 ）的部分检测信号 `LoggedOnUsers` 。 每天发送一次包含设备属性的完整检测信号。
 

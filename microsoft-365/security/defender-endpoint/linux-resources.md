@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 7196053ffef3dffc3c737d0df26a5d12bdfe8a4c
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: ab5400a197a1f0ac61c8b298a06165d217f44fd1
+ms.sourcegitcommit: 94fa3e57fa6505551d84ae7b458150dceff30db7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51187753"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51394730"
 ---
 # <a name="resources"></a>资源
 
@@ -105,6 +105,7 @@ ms.locfileid: "51187753"
 |Group                 |方案                                                |命令                                                                |
 |----------------------|--------------------------------------------------------|-----------------------------------------------------------------------|
 |配置         |打开/关闭实时保护                        |`mdatp config real-time-protection --value [enabled\|disabled]`        |
+|配置         |打开/关闭行为监视                         |`mdatp config behavior-monitoring --value [enabled\|disabled]` 
 |配置         |打开/关闭云保护                            |`mdatp config cloud --value [enabled\|disabled]`                       |
 |配置         |打开/关闭产品诊断                         |`mdatp config cloud-diagnostic --value [enabled\|disabled]`            |
 |配置         |打开/关闭自动提交示例                 |`mdatp config cloud-automatic-sample-submission [enabled\|disabled]`   |

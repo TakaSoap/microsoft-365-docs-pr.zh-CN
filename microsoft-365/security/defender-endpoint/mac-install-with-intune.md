@@ -1,5 +1,5 @@
 ---
-title: 适用于 Mac 的 Microsoft Defender ATP 的基于 Intune 的部署
+title: 适用于适用于 Mac 的 Microsoft Defender for Endpoint 的基于 Intune 的部署
 description: 使用 Microsoft Intune 安装适用于 Mac 的 Microsoft Defender for Endpoint。
 keywords: microsoft， defender， atp， mac， 安装， 部署， 卸载， intune， jamf， macos， catalina， mojave， high sierra
 search.product: eADQiWindows 10XVcnh
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 08cb16f6ae6e259d1bc92e7d2bed96f093a435f0
-ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
+ms.openlocfilehash: bd74f3a487de4febecb2086cb126c50b8432c342
+ms.sourcegitcommit: a965c498e6b3890877f895d5197898b306092813
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/26/2021
-ms.locfileid: "51222509"
+ms.locfileid: "51379543"
 ---
 # <a name="intune-based-deployment-for-microsoft-defender-for-endpoint-for-mac"></a>适用于适用于 Mac 的 Microsoft Defender for Endpoint 的基于 Intune 的部署
 
@@ -133,13 +133,15 @@ ms.locfileid: "51222509"
 
 ## <a name="client-device-setup"></a>客户端设备设置
 
-除了标准公司门户安装之外，不需要为 Mac 设备进行 [任何特殊预配](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-macos-cp)。
+除了标准公司门户安装之外，不需要对 Mac 设备进行 [任何特殊预配](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-macos-cp)。
 
 1. 确认设备管理。
 
+   ![确认设备管理屏幕截图](images/mdatp-3-confirmdevicemgmt.png)
+
     选择 **"打开系统首选项"，** 在列表中找到"**管理配置文件**"，然后选择"批准 **..."。** 你的管理配置文件将显示为 **"已验证"：**
 
-    ![管理配置文件屏幕截图](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-4-managementprofile)
+    ![管理配置文件屏幕截图](images/mdatp-4-managementprofile.png)
 
 2. 选择 **"继续** "并完成注册。
 
@@ -148,7 +150,7 @@ ms.locfileid: "51222509"
 3. 在 Intune 中，打开 **"**  >  **管理设备**  >  **""所有设备"。** 你可以在此处查看列出的设备：
 
    > [!div class="mx-imgBorder"]
-   > ![添加设备屏幕截图](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-5-alldevices)
+   > ![添加设备屏幕截图](images/mdatp-5-alldevices.png)
 
 ## <a name="approve-system-extensions"></a>批准系统扩展
 
@@ -184,7 +186,7 @@ ms.locfileid: "51222509"
 
 4. 选择“**确定**”。
 
-    ![从文件导入自定义配置文件的配置](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-6-systemconfigurationprofiles)
+    ![从文件导入自定义配置文件的配置](images/mdatp-6-systemconfigurationprofiles.png)
 
 5. 选择 **"管理**  >  **工作分配"。** 在"**包含"** 选项卡中，**选择"分配给&所有设备"。**
 
@@ -208,7 +210,7 @@ ms.locfileid: "51222509"
 将 Intune 更改传播到已注册的设备后，你可以看到它们列在监视  >  **设备状态下**：
 
 > [!div class="mx-imgBorder"]
-> ![监视器中的设备状态视图](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-7-devicestatusblade.png)
+> ![监视器中的设备状态视图](images/mdatp-7-devicestatusblade.png)
 
 ## <a name="publish-application"></a>发布应用程序
 
@@ -230,43 +232,43 @@ ms.locfileid: "51222509"
     > 如果 Intune 上传的版本低于设备上的版本，将安装较低版本，从而有效地降级适用于 Endpoint 的 Microsoft Defender。 这可能会导致应用程序无法正常工作。 有关 [产品更新方法的其他](mac-updates.md) 信息，请参阅部署适用于 Mac 的 Microsoft Defender for Endpoint 的更新。 如果你部署了 Microsoft Defender for Endpoint， *忽略应用* 版本设置为 **否**，请将其更改为 **是**。 如果客户端设备上仍无法安装 Microsoft Defender for Endpoint，请卸载 Microsoft Defender for Endpoint 并推送更新的策略。
      
     > [!div class="mx-imgBorder"]
-    > ![应用程序添加中的应用程序信息显示](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-8-intuneappinfo)
+    > ![应用程序添加中的应用程序信息显示](images/mdatp-8-intuneappinfo.png)
 
 7. 选择 **"确定"** 和"**添加"。**
 
     > [!div class="mx-imgBorder"]
-    > ![通知窗口中显示的设备状态](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-9-intunepkginfo)
+    > ![通知窗口中显示的设备状态](images/mdatp-9-intunepkginfo.png)
 
 8. 上载程序包可能需要一些时间。 完成后，从列表中选择程序包，然后转到 **分配和****添加组**。
 
     > [!div class="mx-imgBorder"]
-    > ![客户端应用屏幕截图](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-10-clientapps)
+    > ![客户端应用屏幕截图](images/mdatp-10-clientapps.png)
 
 9. 将 **"工作分配类型"****更改为"必需"。**
 
 10. 选择 **"包含的组"。** 选择 **"使此应用成为所有设备必需的设备=是"。** 选择 **"选择要包含的** 组"并添加包含要面向的用户的组。 选择 **"确定"** 和"**保存"。**
 
     > [!div class="mx-imgBorder"]
-    > ![Intune 作业信息屏幕截图](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-11-assignments)
+    > ![Intune 作业信息屏幕截图](images/mdatp-11-assignments.png)
 
 11. 一段时间之后，应用程序将发布到所有注册的设备。 你可以看到它列在 **监视设备，** 在  >  **设备安装状态下**：
 
     > [!div class="mx-imgBorder"]
-    > ![Intune 设备状态屏幕截图](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-12-deviceinstall)
+    > ![Intune 设备状态屏幕截图](images/mdatp-12-deviceinstall.png)
 
 ## <a name="verify-client-device-state"></a>验证客户端设备状态
 
 1. 将配置文件部署到设备后，在 Mac 设备上打开系统  >  首选项配置文件。
 
-    ![系统首选项屏幕截图](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-13-systempreferences)<br/>
-    ![系统首选项配置文件屏幕截图](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-14-systempreferencesprofiles)
+    ![系统首选项屏幕截图](images/mdatp-13-systempreferences.png)<br/>
+    ![系统首选项配置文件屏幕截图](images/mdatp-14-systempreferencesprofiles.png)
 
-2. 确认存在并安装了以下配置文件。 管理 **配置文件** 应为 Intune 系统配置文件。 _Wdav-config_ 和 _wdav-kext_ 是在 Intune 中添加的系统配置文件： ![ 配置文件屏幕截图](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-15-managementprofileconfig)
+2. 确认存在并安装了以下配置文件。 管理 **配置文件** 应为 Intune 系统配置文件。 _Wdav-config_ 和 _wdav-kext_ 是在 Intune 中添加的系统配置文件： ![ 配置文件屏幕截图](images/mdatp-15-managementprofileconfig.png)
 
 3. 你还应在右上角看到 Microsoft Defender 图标：
 
     > [!div class="mx-imgBorder"]
-    > ![状态栏中的 Microsoft Defender 图标屏幕截图](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-icon-bar)
+    > ![状态栏中的 Microsoft Defender 图标屏幕截图](images/mdatp-icon-bar.png)
 
 ## <a name="troubleshooting"></a>疑难解答
 

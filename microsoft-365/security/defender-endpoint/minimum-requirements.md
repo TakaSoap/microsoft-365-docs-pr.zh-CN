@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: c6afa48fcee80c0b8fb7ed0563264932566b6321
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 6a8e1091490cb9f3fe1eedadec0b76a56ada936e
+ms.sourcegitcommit: a965c498e6b3890877f895d5197898b306092813
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51185787"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51379486"
 ---
 # <a name="minimum-requirements-for-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint 的最低要求
 
@@ -31,12 +31,10 @@ ms.locfileid: "51185787"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> 想要体验 Microsoft Defender for Endpoint？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> 想要体验 Microsoft Defender for Endpoint？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-minreqs-abovefoldlink)
 
 
 将设备载入到服务有一些最低要求。 了解许可、硬件和软件要求以及其他配置设置，以将设备载入服务。
-
-> 想要体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-minreqs-abovefoldlink)。
 
 > [!TIP]
 > - 了解 Defender for Endpoint： Defender [for Endpoint 技术社区中的最新增强功能](https://techcommunity.microsoft.com/t5/Windows-Defender-Advanced-Threat/ct-p/WindowsDefenderAdvanced)。
@@ -80,7 +78,6 @@ Microsoft Defender for Endpoint 需要以下 Microsoft 批量许可优惠之一�
 通过浏览器（支持以下浏览器）访问 Defender for Endpoint：
 
 - Microsoft Edge
-- Internet Explorer版本 11
 - Google Chrome
 
 > [!NOTE]
@@ -121,11 +118,12 @@ Microsoft Defender for Endpoint 需要以下 Microsoft 批量许可优惠之一�
 
 ### <a name="other-supported-operating-systems"></a>其他支持的操作系统
 - Android
+- iOS
 - Linux
 - macOS
 
 > [!NOTE]
-> 你需要了解与 Defender for Endpoint 兼容的 Android 和 macOS 的确切 Linux 分发和版本，集成工作。
+> 你需要确认你已与 Defender for Endpoint 兼容的 Android、iOS 和 macOS 的 Linux 分发和版本，以便集成正常工作。
 
 
 
@@ -191,7 +189,7 @@ Microsoft Defender for Endpoint 需要以下 Microsoft 批量许可优惠之一�
 #### <a name="internet-connectivity"></a>Internet 连接
 可直接或通过代理在设备上建立 Internet 连接。
 
-Defender for Endpoint 传感器可以利用每日平均带宽 5 MB 与 Defender for Endpoint 云服务进行通信并报告网络数据。 此每日平均带宽中不包含文件上载和调查包收集等一次活动。
+Defender for Endpoint 传感器可以使用每日平均带宽 5 MB 与 Defender for Endpoint 云服务进行通信并报告网络数据。 此每日平均带宽中不包含文件上载和调查包收集等一次活动。
 
 有关其他代理配置设置的信息，请参阅配置 [设备代理和 Internet 连接设置](configure-proxy-internet.md)。
 

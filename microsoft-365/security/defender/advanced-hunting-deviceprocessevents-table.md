@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: f014eea240e3c8e52c424be36402c2826cb131d1
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 363d80431c14bc550cba34850c85593163aea1b1
+ms.sourcegitcommit: ef98b8a18d275e5b5961e63d2b0743d046321737
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51055261"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51382837"
 ---
 # <a name="deviceprocessevents"></a>DeviceProcessEvents
 
@@ -55,6 +55,13 @@ ms.locfileid: "51055261"
 | `SHA1` | string | 录制操作所应用到的文件的 SHA-1 |
 | `SHA256` | string | 录制操作所应用到的文件的 SHA-256。 通常不会填充此字段 — 可用时使用 SHA1 列。 |
 | `MD5` | string | 已记录操作所应用到的文件的 MD5 哈希 |
+| `FileSize` | long | 文件大小（以字节为单位） |
+| `ProcessVersionInfoCompanyName` | string | 新创建的过程的版本信息中的公司名称 |
+| `ProcessVersionInfoProductName` | string | 新创建的过程的版本信息中的产品名称 |
+| `ProcessVersionInfoProductVersion` | string | 新创建的过程的版本信息中的产品版本 |
+| `ProcessVersionInfoInternalFileName` | string | 新创建的过程的版本信息中的内部文件名 |
+| `ProcessVersionInfoOriginalFileName` | string | 新创建的进程的版本信息中的原始文件名 |
+| `ProcessVersionInfoFileDescription` | string | 新创建的过程的版本信息中的说明 |
 | `ProcessId` | int | 新 (的进程) PID 进程 ID |
 | `ProcessCommandLine` | string | 用于创建新过程的命令行 |
 | `ProcessIntegrityLevel` | string | 新创建的过程的完整性级别。 Windows 根据某些特征（例如是否从下载的 Internet 启动）将完整性级别分配给进程。 这些完整性级别影响对资源的权限 |
@@ -79,6 +86,12 @@ ms.locfileid: "51055261"
 | `InitiatingProcessMD5` | string | 启动事件的进程 (MD5) 文件哈希 |
 | `InitiatingProcessFileName` | string | 启动事件的进程的名称 |
 | `InitiatingProcessFileSize` | long | 运行负责事件的进程的文件的大小 |
+| `InitiatingProcessVersionInfoCompanyName` | string | 进程版本信息中的公司名称 (负责) 文件 |
+| `InitiatingProcessVersionInfoProductName` | string | 负责事件的进程版本信息中的 (名称) 映像文件 |
+| `InitiatingProcessVersionInfoProductVersion` | string | 进程版本信息中的产品版本 (负责) 文件 |
+| `InitiatingProcessVersionInfoInternalFileName` | string | 负责事件的进程版本信息 (文件) 文件的内部文件名 |
+| `InitiatingProcessVersionInfoOriginalFileName` | string | 进程版本信息的原始文件名 (负责) 文件 |
+| `InitiatingProcessVersionInfoFileDescription` | string | 负责事件的进程版本信息 (映像) 说明 |
 | `InitiatingProcessId` | int | 进程 ID (PID) 启动事件的过程的 PID |
 | `InitiatingProcessCommandLine` | string | 用于运行启动事件的进程的命令行 |
 | `InitiatingProcessCreationTime` | datetime | 启动事件的过程的日期和时间 |
@@ -86,10 +99,12 @@ ms.locfileid: "51055261"
 | `InitiatingProcessParentId` | int | 进程 ID (PID) 生成负责事件的进程的父进程的 PID |
 | `InitiatingProcessParentFileName` | string | 生成负责事件的进程的父进程的名称 |
 | `InitiatingProcessParentCreationTime` | datetime | 启动负责事件的进程的父级的日期和时间 |
+| `InitiatingProcessSignerType` | string | 启动事件的进程 (文件) 签名者的类型 |
+| `InitiatingProcessSignatureStatus` | string | 有关启动事件的进程 (文件) 状态的信息 |
 | `ReportId` | long | 基于重复计数器的事件标识符。 若要标识唯一事件，此列必须与 DeviceName 和 Timestamp 列一起使用 |
 | `AppGuardContainerId` | string | 应用程序防护用于隔离浏览器活动的虚拟化容器的标识符 |
 | `AdditionalFields` | string | 有关 JSON 数组格式的事件的其他信息 |
-| `FileSize` | long | 文件大小（以字节为单位） |
+
 
 ## <a name="related-topics"></a>相关主题
 - [高级搜寻概述](advanced-hunting-overview.md)

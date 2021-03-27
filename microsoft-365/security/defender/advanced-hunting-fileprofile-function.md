@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: e511c12240512af772b3552f63ad9ed98ff105af
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: a9ca0af0c522205309ffdcbfd1ac28638bd197c7
+ms.sourcegitcommit: ef98b8a18d275e5b5961e63d2b0743d046321737
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51054913"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51382789"
 ---
 # <a name="fileprofile"></a>FileProfile()
 
@@ -38,23 +38,24 @@ ms.locfileid: "51054913"
 函数 `FileProfile()` 是高级搜寻中的扩充 [函数](advanced-hunting-overview.md) ，用于将以下数据添加到查询找到的文件。
 
 | Column | 数据类型 | 说明 |
-|------------|-------------|-------------|
-| SHA1 | string | 录制操作所应用到的文件的 SHA-1 |
-| SHA256 | string | 已记录操作应用于的文件的 SHA-256 |
-| MD5 | string | 已记录操作所应用到的文件的 MD5 哈希 |
-| FileSize | int | 文件大小（以字节为单位） |
-| GlobalPrevalence | int | Microsoft 全局观察到的实体实例数 |
-| GlobalFirstSeen | datetime | Microsoft 全局首次观测到实体的日期和时间 |
-| GlobalLastSeen | datetime | Microsoft 全局上次观测到实体的日期和时间 |
-| 签名者 | string | 有关文件签名者的信息 |
-| 颁发者 | string | 有关 CA 证书颁发机构 (的信息)  |
-| SignerHash | string | 标识签名者的唯一哈希值 |
-| IsCertificateValid | boolean | 用于对文件进行签名的证书是否有效 |
-| IsRootSignerMicrosoft | boolean | 指示根证书的签名者是否是 Microsoft |
-| IsExecutable | boolean | 文件是否是可移植可执行 (PE) 文件 |
-| ThreatName | string | 找到的任何恶意软件或其他威胁的检测名称 |
-| Publisher | string | 发布该文件的组织的名称 |
-| SoftwareName | string | 软件产品的名称 |
+|------------|---------------|-------------|
+| `SHA1` | string | 录制操作所应用到的文件的 SHA-1 |
+| `SHA256` | string | 已记录操作应用于的文件的 SHA-256 |
+| `MD5` | string | 已记录操作所应用到的文件的 MD5 哈希 |
+| `FileSize` | int | 文件大小（以字节为单位） |
+| `GlobalPrevalence` | int | Microsoft 全局观察到的实体实例数 |
+| `GlobalFirstSeen` | datetime | Microsoft 全局首次观测到实体的日期和时间 |
+| `GlobalLastSeen` | datetime | Microsoft 全局上次观测到实体的日期和时间 |
+| `Signer` | string | 有关文件签名者的信息 |
+| `Issuer` | string | 有关 CA 证书颁发机构 (的信息)  |
+| `SignerHash` | string | 标识签名者的唯一哈希值 |
+| `IsCertificateValid` | boolean | 用于对文件进行签名的证书是否有效 |
+| `IsRootSignerMicrosoft` | boolean | 指示根证书的签名者是否是 Microsoft |
+| `SignatureState` | string | 文件签名的状态：SignedValid - 使用有效签名对文件进行签名，SignedInvalid - 文件已签名，但证书无效，未签名 - 文件未签名，未知 - 无法检索有关文件的信息
+| `IsExecutable` | boolean | 文件是否是可移植可执行 (PE) 文件 |
+| `ThreatName` | string | 找到的任何恶意软件或其他威胁的检测名称 |
+| `Publisher` | string | 发布该文件的组织的名称 |
+| `SoftwareName` | string | 软件产品的名称 |
 
 ## <a name="syntax"></a>语法
 

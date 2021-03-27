@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: c2cc0fe7746c7574b427e3f546050ab4756fb525
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 31bcd6764bd1f32085928b2b37e613248ee8a9f8
+ms.sourcegitcommit: ef98b8a18d275e5b5961e63d2b0743d046321737
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51055275"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51382657"
 ---
 # <a name="deviceimageloadevents"></a>DeviceImageLoadEvents
 
@@ -55,6 +55,7 @@ ms.locfileid: "51055275"
 | `SHA1` | string | 录制操作所应用到的文件的 SHA-1 |
 | `SHA256` | string | 录制操作所应用到的文件的 SHA-256。 通常不会填充此字段 — 可用时使用 SHA1 列。 |
 | `MD5` | string | 已记录操作所应用到的文件的 MD5 哈希 |
+| `FileSize` | long | 文件大小（以字节为单位） |
 | `InitiatingProcessAccountDomain` | string | 运行负责事件的进程的帐户的域 |
 | `InitiatingProcessAccountName` | string | 运行负责事件的进程的帐户的用户名 |
 | `InitiatingProcessAccountSid` | string | 安全 (SID) 运行负责事件的进程的帐户的 SID 标识符 |
@@ -66,6 +67,13 @@ ms.locfileid: "51055275"
 | `InitiatingProcessSHA256` | string | 启动事件 (映像文件) SHA-256。 通常不会填充此字段 — 可用时使用 SHA1 列。 |
 | `InitiatingProcessMD5` | string | 启动事件的进程 (MD5) 文件哈希 |
 | `InitiatingProcessFileName` | string | 启动事件的进程的名称 |
+| `InitiatingProcessFileSize` | long | 运行负责事件的进程的文件的大小 |
+| `InitiatingProcessVersionInfoCompanyName` | string | 进程版本信息中的公司名称 (负责) 文件 |
+| `InitiatingProcessVersionInfoProductName` | string | 负责事件的进程版本信息中的 (名称) 映像文件 |
+| `InitiatingProcessVersionInfoProductVersion`| string | 进程版本信息中的产品版本 (负责) 文件 |
+| `InitiatingProcessVersionInfoInternalFileName` | string | 负责事件的进程版本信息 (文件) 文件的内部文件名 |
+| `InitiatingProcessVersionInfoOriginalFileName` | string | 进程版本信息的原始文件名 (负责) 文件 |
+| `InitiatingProcessVersionInfoFileDescription` | string | 负责事件的进程版本信息 (映像) 说明 |
 | `InitiatingProcessId` | int | 进程 ID (PID) 启动事件的过程的 PID |
 | `InitiatingProcessCommandLine` | string | 用于运行启动事件的进程的命令行 |
 | `InitiatingProcessCreationTime` | datetime | 启动事件的过程的日期和时间 |
@@ -75,8 +83,6 @@ ms.locfileid: "51055275"
 | `InitiatingProcessParentCreationTime` | datetime | 启动负责事件的进程的父级的日期和时间 |
 | `ReportId` | long | 基于重复计数器的事件标识符。 若要标识唯一事件，此列必须与 DeviceName 和 Timestamp 列一起使用 |
 | `AppGuardContainerId` | string | 应用程序防护用于隔离浏览器活动的虚拟化容器的标识符 |
-| `InitiatingProcessFileSize` | long | 运行负责事件的进程的文件的大小 |
-| `FileSize` | long | 文件大小（以字节为单位） |
 
 ## <a name="related-topics"></a>相关主题
 - [高级搜寻概述](advanced-hunting-overview.md)

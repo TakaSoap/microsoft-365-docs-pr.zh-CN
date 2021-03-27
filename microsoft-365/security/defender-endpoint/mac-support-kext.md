@@ -1,6 +1,6 @@
 ---
-title: 解决 Microsoft Defender ATP for Mac 中的内核扩展问题
-description: 解决 Microsoft Defender ATP for Mac 中与内核扩展相关的问题。
+title: 解决 Microsoft Defender for Endpoint for Mac 中的内核扩展问题
+description: 解决 Microsoft Defender for Endpoint for Mac 中与内核扩展相关的问题。
 keywords: microsoft， defender， atp， mac， 内核， 扩展
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: bdd5c6309a19863339b00e846c1c2670fc4f261b
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 877cc619d3ba048cdf6ecc8149f073461d9eac8e
+ms.sourcegitcommit: a965c498e6b3890877f895d5197898b306092813
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51187597"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51379500"
 ---
 # <a name="troubleshoot-kernel-extension-issues-in-microsoft-defender-for-endpoint-for-mac"></a>解决 Microsoft Defender for Endpoint for Mac 中的内核扩展问题
 
@@ -42,9 +42,9 @@ ms.locfileid: "51187597"
 
 从 macOS High Sierra (10.13) 开始，macOS 要求在允许所有内核扩展在设备上运行之前得到明确批准。
 
-如果在部署/安装 Microsoft Defender for Endpoint for Mac 期间未批准内核扩展，则应用程序将显示横幅提示你启用它：
+如果在部署/安装 Microsoft Defender for Endpoint for Mac 期间未批准内核扩展，应用程序将显示横幅提示你启用它：
 
-   ![RTP 已禁用屏幕截图](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-32-main-app-fix)
+   ![RTP 已禁用屏幕截图](images/mdatp-32-main-app-fix.png)
 
 还可以运行 ```mdatp health``` 。 它报告实时保护是否已启用，但不可用。 这表示未批准在设备上运行内核扩展。
 
@@ -73,7 +73,7 @@ real_time_protection_available              : true
 
 如果未看到此提示，则意味着 30 分钟或更长的时间已过，并且内核扩展尚未获得批准，无法在你的设备上运行：
 
-![提示过期屏幕截图后的安全和隐私窗口](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-33-securityprivacysettings-noprompt)
+![提示过期屏幕截图后的安全和隐私窗口](images/mdatp-33-securityprivacysettings-noprompt.png)
 
 在这种情况下，您需要执行以下步骤以再次触发审批流程。
 

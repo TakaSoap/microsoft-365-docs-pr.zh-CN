@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 556e408eb176a2c215252379d539ec82b67e85cc
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 2d6904d47e58a7cf7a1b7fce5083da43c9a01a76
+ms.sourcegitcommit: ef98b8a18d275e5b5961e63d2b0743d046321737
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51056473"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51382503"
 ---
 # <a name="identitylogonevents"></a>IdentityLogonEvents
 
@@ -49,8 +49,8 @@ ms.locfileid: "51056473"
 |-------------|-----------|-------------|
 | `Timestamp` | datetime | 记录事件的日期和时间 |
 | `ActionType` | string | 触发事件的活动类型。 有关详细信息 [，请参阅门户内架构](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) 参考 |
-| `LogonType` | string | 登录会话的类型，特别是：<br><br> - **交互式** - 用户使用本地键盘和屏幕与计算机进行物理交互<br><br> - **远程交互式 (RDP) 登录** - 用户使用远程桌面、终端服务、远程协助或其他 RDP 客户端与计算机远程交互<br><br> - **网络** - 使用 PsExec 访问计算机或访问计算机上的共享资源（如打印机和共享文件夹）时启动的会话<br><br> - **Batch** - 由计划任务启动的会话<br><br> - **服务** - 服务启动时启动的会话 |
 | `Application` | string | 执行录制的操作的应用程序 |
+| `LogonType` | string | 登录会话的类型，特别是：<br><br> - **交互式** - 用户使用本地键盘和屏幕与计算机进行物理交互<br><br> - **远程交互式 (RDP) 登录** - 用户使用远程桌面、终端服务、远程协助或其他 RDP 客户端与计算机远程交互<br><br> - **网络** - 使用 PsExec 访问计算机或访问计算机上的共享资源（如打印机和共享文件夹）时启动的会话<br><br> - **Batch** - 由计划任务启动的会话<br><br> - **服务** - 服务启动时启动的会话 |
 | `Protocol` | string | 使用的网络协议 |
 | `FailureReason` | string | 说明所记录操作失败原因的信息 |
 | `AccountName` | string | 帐户的用户名 |
