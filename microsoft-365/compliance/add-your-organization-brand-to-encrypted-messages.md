@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 description: 了解 Office 365 全局管理员如何将组织的品牌应用到加密电子邮件&加密门户的内容。
-ms.openlocfilehash: 3c5dc089363a7dfe895e79f03e5a01cb57c2ad57
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 2898e12ad00d11cd9eb2f3be5d817ef113607e79
+ms.sourcegitcommit: 94fa3e57fa6505551d84ae7b458150dceff30db7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50923502"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51394710"
 ---
 # <a name="add-your-organizations-brand-to-your-microsoft-365-for-business-message-encryption-encrypted-messages"></a>将组织的品牌添加到 Microsoft 365 商业版邮件加密加密邮件中
 
@@ -121,14 +121,13 @@ ms.locfileid: "50923502"
 
    下表介绍了加密自定义选项默认值。
 
-   **将加密体验的此功能还原到默认的文本和图片**|**使用这些命令**|
+   |将加密体验的此功能还原到默认的文本和图片|使用这些命令|
    |:-----|:-----|
-   |加密电子邮件随附的默认文本  <br/> 默认文本显示在说明的上方，以查看加密邮件|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" -EmailText "<empty string>"` <br/> **示例：** <br/>  `Set-OMEConfiguration -Identity "OME Configuration" -EmailText ""`|
+   |加密电子邮件随附的默认文本。  默认文本显示在说明的上方，以查看加密邮件|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" -EmailText "<empty string>"` <br/> **示例：** <br/>  `Set-OMEConfiguration -Identity "OME Configuration" -EmailText ""`|
    |包含加密邮件的电子邮件中的免责声明|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" DisclaimerText "<empty string>"` <br/> **示例：** <br/>  `Set-OMEConfiguration -Identity "OME Configuration" -DisclaimerText ""`|
    |显示在加密邮件查看门户顶部的文本|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" -PortalText "<empty string>"` <br/> **还原为默认值的示例：** <br/>  `Set-OMEConfiguration -Identity "OME Configuration" -PortalText ""`|
    |徽标|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" -Image <"$null">` <br/> **还原为默认值的示例：** <br/>  `Set-OMEConfiguration -Identity "OME configuration" -Image $null`|
    |背景色|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" -BackgroundColor "$null">` <br/> **还原为默认值的示例：** <br/> `Set-OMEConfiguration -Identity "OME configuration" -BackgroundColor $null`|
-   |
 
 ## <a name="remove-a-custom-branding-template-advanced-message-encryption"></a>使用高级邮件加密 (自定义品牌模板) 
 

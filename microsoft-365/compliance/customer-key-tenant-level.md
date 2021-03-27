@@ -3,7 +3,7 @@ title: 租户级 Microsoft 365 客户密钥（公共预览版）
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 2/17/2021
+ms.date: 3/26/2021
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -14,17 +14,17 @@ ms.collection:
 - M365-security-compliance
 - m365solution-mip
 - m365initiative-compliance
-description: 了解如何为 Microsoft 365 租户内的所有数据设置客户密钥。
-ms.openlocfilehash: f50986b4e72808d4a1cd4dc8ee0182eb9c0a2455
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+description: 了解如何在租户级别为 Microsoft 365 数据设置客户密钥。
+ms.openlocfilehash: 811b153d5b0a472c6e542851fec45f1f42bca59b
+ms.sourcegitcommit: 94fa3e57fa6505551d84ae7b458150dceff30db7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50922686"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51394700"
 ---
 # <a name="overview-of-customer-key-for-microsoft-365-at-the-tenant-level-public-preview"></a>租户级别的 Microsoft 365 客户密钥概述 (公共预览版) 
 
-使用你提供的密钥，可以在 DEP (创建) 策略并将其分配给租户。 DEP 为以下工作负载加密租户内的数据：
+使用你提供的密钥，可以在 DEP (创建) 策略并将其分配给租户。 创建的租户范围的 DEP 对以下数据进行加密：
 
 - Teams 聊天消息 (一对一聊天、群聊、会议聊天和频道对话) 
 - Teams 媒体消息 (图像、代码段、视频消息、音频消息、wiki 图像) 
@@ -34,39 +34,51 @@ ms.locfileid: "50922686"
 - Teams 状态消息
 - Exchange Online 的用户和信号信息
 - 在应用程序级别未加密客户密钥 DEP 的 Exchange Online 邮箱
+- MIP 精确数据 (EDM) 数据 – (数据文件架构、规则包和用于对敏感数据进行哈希运算的) 
 
-对于 Microsoft Teams，租户级别的客户密钥从 DEP 分配给租户时对新数据进行加密。 公共预览版不支持加密过去的数据。 对于 Exchange Online，客户密钥会加密所有现有和新数据。
+对于 Microsoft 信息保护和 Microsoft Teams，租户级别的客户密钥会从将 DEP 分配给租户时对新数据进行加密。 公共预览版不支持加密过去的数据。 对于 Exchange Online，客户密钥会加密所有现有和新数据。
 
-你可以为每个租户创建多个 DEP，但在任何时间点只能分配一个 DEP。 分配 DEP 时，加密将自动开始，但可能需要一段时间才能完成，具体取决于租户的大小。
+可以为每个租户创建多个 DEP，但一次只能分配一个 DEP。 分配 DEP 时，加密将自动开始，但需要一段时间才能完成，具体取决于租户的大小。
 
 ## <a name="tenant-level-policies-add-broader-control-to-customer-key-for-microsoft-365"></a>租户级别策略为 Microsoft 365 的客户密钥添加了更广泛的控制
 
 如果你已设置 Exchange Online 和 Sharepoint Online 的客户密钥，下面将说明新的租户级别公共预览的适用方式。
 
-你创建的租户级加密策略对 Microsoft 365 中的 Microsoft Teams 和 Exchange Online 工作负载的所有数据进行加密。 但是，对于 Exchange Online，如果已经将客户密钥 DEP 分配给各个邮箱，租户级别的策略将不会覆盖这些 DECP。 租户级别的策略将仅加密未分配邮箱级别的客户密钥 DEP 的邮箱。
+你创建的租户级加密策略对 Microsoft 365 中的 Microsoft Teams 和 Exchange Online 工作负载的所有数据进行加密。 但是，对于 Exchange Online，如果已经将客户密钥 DEP 分配给各个邮箱，租户级别的策略将不会覆盖这些 DECP。 租户级别的策略将仅加密未分配邮箱级别的客户密钥 DEP 的邮箱。 使用租户级别 DEP 加密用户邮箱时，其所有内容都将被加密。 有关在应用程序级别使用 DEP 加密内容的信息，请参阅使用客户密钥 [进行服务加密](customer-key-overview.md)。
 
-例如，保存在 OneDrive for Business 和 SharePoint 中的 Microsoft Teams 文件和一些 Teams 通话和会议录像由 SharePoint Online DEP 加密。 单个 SharePoint Online DEP 对单个地理位置中的内容进行加密。
+## <a name="data-that-isnt-encrypted-with-customer-key-at-the-tenant-level"></a>在租户级别未使用客户密钥加密的数据
+
+客户密钥不会在租户级别加密以下类型的数据。 相反，Microsoft 365 使用其他类型的加密来保护此数据。
+
+- 已在应用程序级别使用客户密钥 DEP 加密的 Exchange Online 邮箱。 未为其分配客户密钥 DEP 的邮箱将使用租户级别的 DEP 进行加密。 这种安排意味着你可能有一些使用租户级别 DEP 加密的邮箱，还有一些使用应用程序级别 DEP 加密的邮箱。
+- SharePoint 和 OneDrive for Business 在应用程序级别使用客户密钥。 单个 DEP 对单个地理位置的 SharePoint 中的内容进行加密。
+- 保存在 OneDrive for Business 和 SharePoint 中的 Microsoft Teams 文件和一些 Teams 通话和会议录像由 SharePoint Online DEP 进行加密。
+
+Microsoft 365 客户密钥当前不支持的任何工作负载或方案。
+
+- 其他 Microsoft 365 工作负载，如 Yammer、Planner 等。
+- Teams 实时事件和&实时事件的问答。 对于 Teams，此方案是唯一一个未通过租户级别的客户密钥加密的方案。
 
 ## <a name="set-up-customer-key-at-the-tenant-level-public-preview"></a>在租户级别设置客户密钥 (公共预览版) 
 
-这些步骤与在应用程序级别设置客户密钥的步骤类似，但不完全相同。 应仅将此公共预览版与测试租户中的测试数据一同使用。 不要将此版本与生产数据或生产环境一同使用。 如果你已经拥有客户密钥的生产部署，请使用以下步骤在测试环境中在租户级别设置客户密钥。 向租户分配租户级别 DEP 后，你可以启动验证过程，并联系你 m365ck@microsoft.com 任何问题或问题。 还可以在 [Microsoft 365](https://aka.ms/CustomerKey/PublicPreviewValidation)静态加密的验证说明的公共预览中查找记录验证步骤。
+这些步骤与在应用程序级别设置客户密钥的步骤类似，但不完全相同。 仅对测试租户中的测试数据使用此公共预览。 不要将此版本与生产数据或生产环境一同使用。 如果你已经拥有客户密钥的生产部署，请使用以下步骤在测试环境中在租户级别设置客户密钥。 向租户分配租户级别 DEP 后，你可以启动验证过程，并联系你 m365ck@microsoft.com 或问题。 还可以在 [Microsoft 365](https://aka.ms/CustomerKey/PublicPreviewValidation)静态加密的验证说明的公共预览中查找记录验证步骤。
 
 你通过远程连接到 Azure PowerShell 完成大部分任务。 为了获得最佳结果，请使用版本 4.4.0 或更高版本的 Azure PowerShell。
 
-在开始使用之前，请确保执行以下操作：
+开始之前：
 
 - 你需要使用具有合规性管理员角色的工作或学校帐户在租户级别设置客户密钥。
-- 确保你的组织具有适当的许可。 使用付费的、已开票的 Azure 订阅，企业协议云服务提供商。 客户密钥不支持使用即付即用计划或信用卡购买的 Azure 订阅。 从 2020 年 4 月 1 日起，Office 365 中的客户密钥在 Office 365 E5、M365 E5、M365 E5 合规性和 M365 E5 信息保护 & SK 中提供。 Office 365 高级合规性 SKU 不再可用于购买新许可证。 现有 Office 365 高级合规性许可证将继续受支持。 虽然该服务可以在具有相应许可证的租户下至少具有一个许可证进行启用，但仍应确保从该服务受益的所有用户都有相应的许可证。
+- 确保你的组织具有适当的许可。 使用付费的、已开票的 Azure 订阅，企业协议云服务提供商。 客户密钥不支持使用即付即用计划或信用卡购买的 Azure 订阅。 从 2020 年 4 月 1 日起，Office 365 中的客户密钥在 Office 365 E5、Microsoft 365 E5、Microsoft 365 E5 合规性和 Microsoft 365 E5 信息保护 & 治理 SK 中提供。 Office 365 高级合规性 SKU 不再可用于新许可证。 现有 Office 365 高级合规性许可证将继续受支持。 虽然该服务可以在租户下至少具有一个经过适当许可的用户进行启用，但仍应确保从该服务受益的所有用户都有相应的许可证。
 
 ### <a name="create-two-new-azure-subscriptions"></a>创建两个新的 Azure 订阅
 
-客户密钥要求 DEP 策略中每个数据加密策略 (两) 。 为此，你必须创建两个 Azure 订阅。 最佳做法是，Microsoft 建议你组织单独的成员在每个订阅中配置一个密钥。 仅使用这些 Azure 订阅来管理 Microsoft 365 的加密密钥。 这可保护你的组织，以防你的其中一个运营者意外、有意或恶意删除或以其他方式管理他们负责的密钥。
+客户密钥要求 DEP 策略中每个数据加密策略 (两) 。 若要创建两个密钥，必须创建两个 Azure 订阅。 最佳做法是，Microsoft 建议你组织单独的成员在每个订阅中配置一个密钥。 仅使用这些 Azure 订阅来管理 Microsoft 365 的加密密钥。 如果你的一个运营者意外、有意或恶意删除或以其他方式管理他们负责的密钥，遵循这些准则有助于保护你的组织。
 
 对于你可以为组织创建的 Azure 订阅数没有实际限制。 遵循此最佳做法有助于最大限度地减少人为错误的影响，同时有助于管理客户密钥使用的资源。
 
 ### <a name="register-azure-subscriptions-to-use-a-mandatory-retention-period"></a>注册 Azure 订阅以使用强制保留期
 
-根加密密钥的临时或永久丢失可能会导致服务操作中断甚至出现灾难性问题，并可能导致数据丢失。 因此，用于客户密钥的资源需要强大的保护。 与客户密钥一起使用的所有 Azure 资源都提供除默认配置以外的保护机制。 Azure 订阅可以通过防止立即和不可撤销取消的方式进行标记或注册。 这称为注册强制保留期。 为 Azure 订阅注册强制保留期所需的步骤需要与 Microsoft 协作。 此过程最多可能需要 5 个工作日。 以前，这有时称为"不取消"。
+根加密密钥的临时或永久丢失可能会导致服务操作中断甚至出现灾难性问题，并可能导致数据丢失。 因此，用于客户密钥的资源需要强大的保护。 与客户密钥一起使用的所有 Azure 资源都提供除默认配置以外的保护机制。 Azure 订阅可以通过防止立即和不可撤销取消的方式进行标记或注册。 此过程称为注册强制保留期。 为 Azure 订阅注册强制保留期所需的步骤需要与 Microsoft 协作。 此过程最多可能需要 5 个工作日。 以前，此过程有时称为"不取消"。
   
 在联系 Microsoft 365 团队之前，你必须对使用客户密钥的每个 Azure 订阅执行以下步骤。 在启动之前，请确保已安装 [Azure PowerShell Az](/powershell/azure/new-azureps-module-az) 模块。
 
@@ -113,11 +125,11 @@ ms.locfileid: "50922686"
 
 对密钥保管库使用通用前缀，并包括密钥保管库和密钥的使用和范围的缩写。 例如，对于保管库将位于北美的 Contoso 服务，可能的名称对是 Contoso-O365-NA-VaultA1 和 Contoso-O365-NA-VaultA2。 保管库名称是 Azure 中的全局唯一字符串，因此你可能需要尝试所需名称的变体，以防其他 Azure 客户已声明所需的名称。 配置后，无法更改保管库名称，因此最佳做法是制定一份书面设置计划，并使用第二个人验证计划是否正确执行。
 
-如果可能，在非配对区域创建保管库。 成对的 Azure 区域跨服务失败域提供高可用性。 因此，可以将区域对视为彼此的备份区域。 这意味着，放置在一个地区的 Azure 资源通过配对区域自动获得容错能力。 因此，为数据加密策略中使用的两个保管库选择区域（这些区域已配对）意味着总共只有两个可用性区域在使用。 大多数地理位置只有两个区域，因此尚无法选择非配对区域。 如果可能，请为与数据加密策略一同使用的两个保管库选择两个非配对区域。 这从共四个可用性区域中获益。 有关详细信息，请参阅 BCDR (业务连续性和灾难恢复 [) ：当前](/azure/best-practices-availability-paired-regions) 区域对列表的 Azure 配对区域。
+如果可能，在非配对区域创建保管库。 成对的 Azure 区域跨服务失败域提供高可用性。 因此，可以将区域对视为彼此的备份区域。 放置在一个地区的 Azure 资源通过配对区域自动获得容错能力。 为数据加密策略中使用的两个区域选择区域（这些区域已配对）意味着总共只有两个可用性区域在使用。 大多数地理位置只有两个区域，因此尚无法选择非配对区域。 如果可能，请为与数据加密策略一同使用的两个保管库选择两个非配对区域。 此方案从共四个可用性区域中获益。 有关详细信息，请参阅 BCDR (业务连续性和灾难恢复 [) ：当前](/azure/best-practices-availability-paired-regions) 区域对列表的 Azure 配对区域。
 
 ### <a name="assign-permissions-to-each-key-vault"></a>为每个密钥保管库分配权限
 
-对于每个密钥保管库，你将需要为客户密钥定义三组单独的权限，具体取决于你的实现。 例如，您需要为以下各项定义一组权限：
+对于每个密钥保管库，你将需要为客户密钥定义三组单独的权限，具体取决于你的实现。 例如，需要为每个权限集定义一组权限：
   
 - **将为组织执行** 密钥保管库日常管理的关键保管库管理员。 这些任务包括备份、创建、获取、导入、列表和还原。
 
@@ -208,7 +220,7 @@ Add-AzKeyVaultKey -VaultName Contoso-O365EX-NA-VaultA1 -Name Contoso-O365EX-NA-V
 
 ### <a name="check-the-recovery-level-of-your-keys"></a>检查密钥的恢复级别
 
-Microsoft 365 要求 Azure 密钥保管库订阅设置为"不取消"，并且客户密钥使用的密钥已启用软删除。 可以通过查看密钥的恢复级别来确认这一点。
+Microsoft 365 要求 Azure 密钥保管库订阅设置为"不取消"，并且客户密钥使用的密钥已启用软删除。 可以通过查看密钥上的恢复级别来确认这些设置。
   
 若要检查密钥的恢复级别，请在 Azure PowerShell 中运行 Get-AzKeyVaultKey cmdlet，如下所示：
   
@@ -220,7 +232,7 @@ Microsoft 365 要求 Azure 密钥保管库订阅设置为"不取消"，并且客
 
 ### <a name="back-up-azure-key-vault"></a>备份 Azure Key Vault
 
-创建或更改密钥后，立即执行备份并存储备份副本（联机和脱机）。 不要将脱机副本连接到任何网络。 相反，将它们存储在物理安全或商业存储设备中。 应至少将一份备份副本存储在发生灾难时可访问的位置。 如果密钥保管库密钥被永久销毁或呈现为不可操作，备份 blob 是还原密钥材料的唯一方法。 Azure 密钥保管库外部且已导入 Azure 密钥保管库的密钥不符合备份条件，因为外部密钥中不存在客户密钥使用该密钥所需的元数据。 只有从 Azure 密钥保管库获取的备份可用于使用客户密钥执行还原操作。 因此，在上载或创建密钥后对 Azure 密钥保管库进行备份至关重要。
+创建密钥或更改密钥后，立即备份密钥并存储备份副本（联机和脱机）。 不要将脱机副本连接到任何网络。 相反，将它们存储在物理安全或商业存储设备中。 应至少将一份备份副本存储在发生灾难时可访问的位置。 如果密钥保管库密钥被永久销毁或呈现为不可操作，备份 blob 是还原密钥材料的唯一方法。 Azure 密钥保管库外部且已导入 Azure 密钥保管库的密钥不符合备份条件，因为客户密钥使用密钥所需的元数据不存在于外部密钥中。 只有从 Azure 密钥保管库获取的备份可用于使用客户密钥执行还原操作。 因此，在上载或创建密钥后，必须备份 Azure 密钥保管库。
   
 若要创建 Azure 密钥保管库密钥的备份，请运行 [Backup-AzKeyVaultKey](/powershell/module/az.keyvault/backup-azkeyvaultkey) cmdlet，如下所示：
 
@@ -321,7 +333,7 @@ New-M365DataAtRestEncryptionPolicy -Name "Default_Policy" -AzureKeyIDs "https://
 Set-M365DataAtRestEncryptionPolicyAssignment -DataEncryptionPolicy "<Default_PolicyName or Default_PolicyID>"
 ```
 
-说明：此 cmdlet 用于配置默认数据加密策略。 然后，此策略将用于加密所有支持工作负载的数据。 
+说明：此 cmdlet 用于配置默认数据加密策略。 然后，此策略将用于加密所有支持工作负载的数据。
 
 示例：
 
@@ -404,11 +416,11 @@ Get-M365DataAtRestEncryptionPolicyAssignment
 
 说明：此 cmdlet 列出当前分配给租户的策略。
 
-## <a name="offboarding-from-customer-key"></a>从客户密钥中载出
+## <a name="offboarding-from-customer-key-at-the-tenant-level"></a>从租户级别的客户密钥载出
 
-如果需要恢复为 Microsoft 管理的密钥，可以。 当你离开时，你的数据会使用每个工作负荷支持的默认加密重新加密。 例如，Exchange Online 支持使用 Microsoft 管理的密钥进行默认加密。
+如果需要还原到 Microsoft 管理的密钥，可以。 当你离开时，你的数据会使用每个工作负荷支持的默认加密重新加密。 例如，Exchange Online 支持使用 Microsoft 管理的密钥进行默认加密。
 
-如果你决定从租户级别的客户密钥退出租户，请通过电子邮件请求联系 Microsoft，以"禁用 ["](mailto:m365ck@microsoft.com)租户服务，m365ck@microsoft.com。
+如果你决定从租户级别的"客户密钥 ["](mailto:m365ck@microsoft.com) 中注销租户，请 m365ck@microsoft.com 请求"禁用"租户的服务。
 
 > [!IMPORTANT]
 > 载出与数据清除不同。 数据清除会从 Microsoft 365 中永久加密删除组织的数据，但无法从载出中删除。 无法对租户级别的策略执行数据清除。 有关数据清除路径的信息，请参阅 [撤销密钥并开始数据清除路径过程](customer-key-manage.md#revoke-your-keys-and-start-the-data-purge-path-process)。
@@ -419,9 +431,13 @@ Get-M365DataAtRestEncryptionPolicyAssignment
 
 ## <a name="key-rotation"></a>密钥旋转
 
-有关旋转或滚动客户密钥使用密钥的信息，请参阅滚动或旋转 [客户密钥或可用性密钥](customer-key-availability-key-roll.md)。 更新 DEP 以使用新版本的密钥时，将运行 Set-M365DataAtRestEncryptionPolicy cmdlet，如本文前面所述。
+有关旋转或滚动用于客户密钥的密钥的信息，请参阅滚动或旋转 [客户密钥或可用性密钥](customer-key-availability-key-roll.md)。 更新 DEP 以使用新版本的密钥时，将运行 Set-M365DataAtRestEncryptionPolicy cmdlet，如本文前面所述。
 
-## <a name="related-articles"></a>相关文章：
+## <a name="known-issues"></a>已知问题
+
+当你在租户级别启用客户密钥时，你无法在 Microsoft Teams 中创建新团队。
+
+## <a name="related-articles"></a>相关文章
 
 - [使用客户密钥执行服务加密](customer-key-overview.md)
 

@@ -15,12 +15,12 @@ search.appverid:
 ms.assetid: 0432dce9-d9b6-4e73-8a13-4a932eb0081e
 description: 对新的邮件保护功能如何工作有疑问？ 请在此处查看答案。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 13d4181482bf8ad7460480a70c762fe60fd28ad0
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 2ad0ef4f16e5b458da80227b93fab574e3ce8dde
+ms.sourcegitcommit: 94fa3e57fa6505551d84ae7b458150dceff30db7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51051744"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51394680"
 ---
 # <a name="message-encryption-faq"></a>邮件加密常见问题解答
 
@@ -62,7 +62,7 @@ OME 结合了电子邮件加密和权限管理功能。 权限管理功能由 Az
   
 ## <a name="do-ome-and-byok-with-azure-information-protection-change-microsofts-approach-to-third-party-data-requests-such-as-subpoenas"></a>使用 Azure 信息保护的 OME 和 BYOK 是否更改了 Microsoft 对第三方数据请求（如子请求）的方法？
 
-不正确。 OME 以及提供和控制你自己的加密密钥的选项（称为 BYOK）来自 Azure 信息保护，并非旨在响应执法机构的子请求。 OME 和用于 Azure 信息保护的 BYOK 专为以合规性为中心的客户设计。 Microsoft 非常对待客户数据的第三方请求。 作为云服务提供商，我们始终宣传客户数据的隐私。 如果我们收到一个副发，我们始终尝试将第三方重定向到客户以获取信息。  (请参阅 Brad Smith 的博客：保护客户数据免受 [政府](https://blogs.microsoft.com/blog/2013/12/04/protecting-customer-data-from-government-snooping/) 窥探) 。 我们会定期发布收到的请求的详细信息。 有关第三方数据请求详细信息，请参阅响应访问 Microsoft[](https://www.microsoft.com/trustcenter/privacy/govt-requests-for-data)信任中心上的客户数据的政府请求和执法机构请求。 另请参阅 OST 联机服务条款中的"客户数据 ([披露) 。 ](https://www.microsoft.com/Licensing/product-licensing/products.aspx)
+不正确。 OME 以及提供和控制你自己的加密密钥的选项（称为 BYOK）来自 Azure 信息保护，并非旨在响应执法机构的子请求。 OME 和用于 Azure 信息保护的 BYOK 专为以合规性为中心的客户设计。 Microsoft 非常重视客户数据的第三方请求。 作为云服务提供商，我们始终宣传客户数据的隐私。 如果我们收到一个副发，我们始终尝试将第三方重定向到客户以获取信息。  (Brad Smith 的博客：保护客户数据免受 [政府](https://blogs.microsoft.com/blog/2013/12/04/protecting-customer-data-from-government-snooping/) 窥探) 。 我们会定期发布收到的请求的详细信息。 有关第三方数据请求详细信息，请参阅响应访问 Microsoft[](https://www.microsoft.com/trustcenter/privacy/govt-requests-for-data)信任中心上的客户数据的政府请求和执法机构请求。 另请参阅 OST 联机服务条款中的"客户数据 ([披露) 。 ](https://www.microsoft.com/Licensing/product-licensing/products.aspx)
   
 ## <a name="how-is-this-feature-related-to-legacy-office-365-message-encryption-ome-and-information-rights-management-irm-features"></a>此功能与旧版 Office 365 邮件加密 (OME) 和信息权限管理 (IRM) 功能相关？
 
@@ -120,7 +120,7 @@ Microsoft 365 用户可以使用 Outlook for PC 版本 2019 和 Microsoft 365 �
 
 简短回答是"是"！ PDF 加密允许您通过安全通信或安全协作来保护敏感的 PDF 文档。 发送电子邮件时，Office 365 服务加密 PDF 文件附件，而不是 Outlook 客户端。
 
-对于 Outlook 网页版、Outlook for iOS 和 Outlook for Android，可以加密发送的 PDF，而无需执行任何其他步骤。 这些客户端本机支持 PDF 加密。
+对于 Outlook 网页版、Outlook for iOS 和 Outlook for Android，无需任何步骤即可加密发送的 PDF。 这些客户端本机支持 PDF 加密。
 
 Outlook 桌面在本机不支持加密 PDF 文件附件。 相反，您需要设置 Exchange 邮件流规则或 DLP，以首先将加密应用于 PDF 附件。 当您从 Outlook 桌面版发送带 PDF 附件的邮件时，客户端会首先将包含附件的邮件发送到服务。 当服务收到文件时，该服务在 Exchange Online 中对数据丢失防护应用 OME 保护 (DLP) 策略或邮件流规则。 接下来，Exchange Online 发送带受保护 PDF 文件附件的邮件。
 
@@ -165,7 +165,7 @@ Outlook 网页页面支持吊销受保护的邮件。  有关详细信息 [，�
   
 ## <a name="are-there-any-reporting-capabilities-or-insights-for-encrypted-emails"></a>是否有加密电子邮件的报告功能或见解？
 
-安全与合规中心有一个加密报告。 请参阅 [查看安全与合规中心&电子邮件安全报告](../security/defender-365-security/view-email-security-reports.md)。
+安全与合规中心有一个加密报告。 请参阅 [查看安全与合规中心&电子邮件安全报告](../security/office-365-security/view-email-security-reports.md)。
   
 ## <a name="can-i-use-message-encryption-with-compliance-features-such-as-ediscovery"></a>能否将邮件加密与电子数据展示等合规性功能一同使用？
 
@@ -173,7 +173,7 @@ Outlook 网页页面支持吊销受保护的邮件。  有关详细信息 [，�
 
 ## <a name="can-i-remove-encryption-from-email"></a>能否从电子邮件中删除加密？
 
-管理员可以设置邮件流规则以删除加密。 不能从由另一个组织应用的邮件中删除使用邮件流规则的加密，除非邮件是使用仅加密保护进行接收的。
+管理员可以设置邮件流规则以删除加密。 不能从另一个组织应用的邮件中删除使用邮件流规则的加密，除非使用仅加密保护对邮件进行加密。
 
 ## <a name="is-delegated-access-supported"></a>是否支持委派访问？
 

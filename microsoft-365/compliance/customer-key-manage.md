@@ -13,12 +13,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: 设置客户密钥后，了解如何通过还原 AKV 密钥来管理它，以及如何管理权限和数据加密策略。
-ms.openlocfilehash: 8f55667254ce7f5cbd9d4de274623ca4a3c4aa9d
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 284a8ff24fef2f7e8b807477c99e20aaf593552e
+ms.sourcegitcommit: 94fa3e57fa6505551d84ae7b458150dceff30db7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50909944"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51394660"
 ---
 # <a name="manage-customer-key"></a>管理客户密钥
 
@@ -168,9 +168,11 @@ Get-SPODataEncryptionPolicy -Identity <SPOAdminSiteUrl>
 
   - **滚动：** 密钥滚动正在进行中。 如果地理位置的密钥正在滚动，你还将看到有关完成密钥滚动操作的网站百分比的信息，以便你可以监视进度。
 
-## <a name="unassign-a-dep-from-a-mailbox"></a>从邮箱取消分配 DEP
+## <a name="roll-back-from-customer-key-to-microsoft-managed-keys"></a>从客户密钥回滚到 Microsoft 托管密钥
 
-使用 Set-mailbox PowerShell cmdlet 从邮箱取消分配 DEP，将 `DataEncryptionPolicy` 设置为 `$NULL` 。 运行此 cmdlet 可取消分配当前分配的 DEP，然后使用与默认 Microsoft 托管密钥关联的 DEP 重新加密邮箱。 不能取消分配 Microsoft 托管密钥使用的 DEP。 如果您不想使用 Microsoft 托管密钥，您可以为邮箱分配另一个 DEP。
+对于租户级别的客户密钥，你需要通过客户密钥的"离开"请求联系 Microsoft。 该请求将由 On Call Engineering 团队处理。
+
+对于应用程序级别的客户密钥，为此，可以使用 Set-mailbox PowerShell cmdlet 从邮箱取消分配 DEP，将 `DataEncryptionPolicy` 设置为 `$NULL` 。 运行此 cmdlet 可取消分配当前分配的 DEP，然后使用与默认 Microsoft 托管密钥关联的 DEP 重新加密邮箱。 不能取消分配 Microsoft 托管密钥使用的 DEP。 如果您不想使用 Microsoft 托管密钥，您可以为邮箱分配另一个客户密钥 DEP。
 
 若要使用 PowerShell cmdlet 从邮箱取消Set-Mailbox DEP，请完成这些步骤。
 
@@ -184,7 +186,7 @@ Get-SPODataEncryptionPolicy -Identity <SPOAdminSiteUrl>
 
 ## <a name="revoke-your-keys-and-start-the-data-purge-path-process"></a>撤销密钥并开始数据清除路径过程
 
-控制所有根密钥（包括可用性密钥）的吊销。 客户密钥可控制法规要求的退出计划方面。 如果决定撤销密钥以清除数据并退出服务，则服务会在数据清除过程完成后删除可用性密钥。
+控制所有根密钥（包括可用性密钥）的吊销。 客户密钥可控制法规要求的退出计划方面。 如果决定撤销密钥以清除数据并退出服务，则服务会在数据清除过程完成后删除可用性密钥。 无法对租户级别的策略执行数据清除。
 
 Microsoft 365 审核并验证数据清除路径。 有关详细信息，请参阅服务信任门户上提供的 SSAE 18 SOC 2 [报告](https://servicetrust.microsoft.com/)。 此外，Microsoft 建议以下文档：
 
