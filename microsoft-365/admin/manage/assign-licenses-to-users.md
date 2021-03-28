@@ -5,45 +5,36 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Priority
 ms.collection:
 - M365-subscription-management
 - Adm_TOC
-- commerce
 ms.custom:
+- AdminSurgePortfolio
 - TopSMBIssues
 - SaRA
 - okr_SMB
-- AdminSurgePortfolio
 - manage_licenses
+- commerce
 search.appverid:
 - MET150
 description: 了解如何向用户分配许可证。
-ms.date: 08/14/2020
-ms.openlocfilehash: 9f044f29cabf4976d5fbf17b22777da62e4414c5
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 3622be180ae622d5d08066cc03773a8175fe9342
+ms.sourcegitcommit: c5d1528559953c6db7dca1d5cb453e0aa3215f02
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50915490"
+ms.lasthandoff: 03/27/2021
+ms.locfileid: "51398153"
 ---
 # <a name="assign-licenses-to-users"></a>向用户分配许可证
 
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> 管理中心正在发生改变。 如果你的体验与此处提供的详细信息不匹配，请参阅[有关新版 Microsoft 365 管理中心](../microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet)。
-
-::: moniker-end
-
-::: moniker range="o365-worldwide"
-
 可在“**活动用户**”页面或“**许可证**”页面上向用户分配许可证。 所使用的方法取决于是要向特定用户分配产品许可证还是向特定产品分配用户许可证。
 
-::: moniker-end
+> [!NOTE]
+> 作为管理员，你不能为组织中用户购买的自助购买订阅分配或取消分配许可证。 你可以 [接管自助购买订阅](../../commerce/subscriptions/manage-self-service-purchases-admins.md#take-over-a-self-service-purchase-subscription)，然后分配或取消分配许可证。
 
 [了解如何同时添加用户帐户和分配许可证](../add-users/add-users.md)。
 
@@ -54,31 +45,58 @@ ms.locfileid: "50915490"
 - 若要使用基于组的许可，请参阅[在 Azure Active Directory 中按组成员身份向用户分配许可证](/azure/active-directory/users-groups-roles/licensing-groups-assign)
 - 某些服务（如 Sway）会自动分配给用户，无需单独分配。
 
-::: moniker range="o365-worldwide"
-
 ## <a name="use-the-licenses-page-to-assign-licenses-to-users"></a>使用“许可证”页面向用户分配许可证
 
 使用“**许可证**”页面分配许可证时，最多可向 20 名用户分配特定产品的许可证。 在“**许可证**”页面上，你将看到你所订阅的所有产品的列表。 你还将看到每个产品的许可证总数、分配的许可证数以及可用的许可证数量。
 
+::: moniker range="o365-worldwide"
+
 1. 在管理中心，转到“**计费**”>“<a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">许可证</a>”页面。
+
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+1. 在 <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">管理中心</a> 内，转到“**计费**”>“**许可证**”页面。
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. 在 <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">管理中心</a> 内，转到“**计费**”>“**许可证**”页面。
+
+::: moniker-end
+
 2. 选择产品。
 3. 在产品详细信息页面上，选择“**分配许可证**”。
 4. 在“**向用户分配许可证**”窗格中，开始键入名称，然后从结果中将其选中，将其添加到列表中。 一次最多可添加 20 名用户。
-5. 选择“**打开或关闭应用和服务**”，向特定项目分配访问权限或删除其访问权限。
+4. 选择“**打开或关闭应用和服务**”，向特定项目分配访问权限或删除其访问权限。
 6. 完成后，选择“分配”，然后选择“关闭”。
 
 如果出现冲突，则将显示一则消息，指出问题是什么以及如何修复它。 例如，如果选择包含冲突服务的许可证，错误消息将指示审阅随每个许可证包含的服务并重试。
 
 ## <a name="change-the-apps-and-services-a-user-has-access-to"></a>更改用户有权访问的应用和服务
 
+::: moniker range="o365-worldwide"
+
 1. 在管理中心，转到“**计费**”>“<a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">许可证</a>”页面。
-2. 在“**许可证**”页面上，选择特定用户所对应的行。
-3. 在右侧窗格中，选择或取消选择要授予或取消访问权限的应用和服务。
-4. 完成后，选择“**保存**”，然后选择“**关闭**”。
 
 ::: moniker-end
 
-::: moniker range="o365-worldwide"
+::: moniker range="o365-germany"
+
+1. 在 <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">管理中心</a> 内，转到“**计费**”>“**许可证**”页面。
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. 在 <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">管理中心</a> 内，转到“**计费**”>“**许可证**”页面。
+
+::: moniker-end
+
+2. 在“**许可证**”页面上，选择特定用户所对应的行。
+3. 在右侧窗格中，选择或取消选择要授予或取消访问权限的应用和服务。
+4. 完成后，选择“**保存**”，然后选择“**关闭**”。
 
 ## <a name="use-the-active-users-page-to-assign-licenses"></a>使用“活动用户”页面分配许可证
 
@@ -86,7 +104,24 @@ ms.locfileid: "50915490"
 
 ### <a name="assign-licenses-to-multiple-users"></a>向多个用户分配许可证
 
+::: moniker range="o365-worldwide"
+
 1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。
+
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+1. 在 <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">管理中心</a> 内，转到“**计费**”>“**活动用户**”页面。
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. 在 <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">管理中心</a> 内，转到“**计费**”>“**活动用户**”页面。
+
+::: moniker-end
+
 2. 选中要向其分配许可证的用户姓名旁边的圆圈。
 3. 在顶部选择“**更多选项(...)**”，然后选择“**管理产品许可证**”。
 4. 在“**管理产品许可证**”窗格中，选择“**添加到现有产品许可证分配**”\>“**下一步**”。
@@ -94,72 +129,29 @@ ms.locfileid: "50915490"
     默认情况下，与这些许可证关联的所有服务都将自动分配给该用户。 可限制能提供给用户的具体服务。 将不希望所选用户具备的服务的开关切换到“**关**”。
 6. 在窗格底部，选择“**添加**”\>“**关闭**”。  
 
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-## <a name="assign-licenses-to-multiple-users"></a>向多个用户分配许可证
-
-1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">活动用户</a>”页面。
-2. 选中要向其分配许可证的用户姓名旁边的框。
-3. 在“**批量操作**”窗格中，选择“**编辑产品许可证**”。
-4. 在“**分配产品**”窗格中，选择“**添加到现有产品许可证分配**”\>“**下一步**”。
-5. 将希望所选用户具备的许可证的开关切换到“**开**”位置。\
-    默认情况下，与这些许可证关联的所有服务都将自动分配给该用户。 可限制能提供给用户的具体服务。 将不希望所选用户具备的服务的开关切换到“**关**”。
-6. 在“**添加到现有产品**”窗格底部，选择“**添加**”\>“**关闭**”\>“**关闭**”。
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-## <a name="assign-licenses-to-multiple-users"></a>向多个用户分配许可证
-
-1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">活动用户</a>”页面。
-2. 选中要向其分配许可证的用户姓名旁边的框。
-3. 在“**批量操作**”窗格中，选择“**编辑产品许可证**”。
-4. 在“**分配产品**”窗格中，选择“**添加到现有产品许可证分配**”\>“**下一步**”。
-5. 将希望所选用户具备的许可证的开关切换到“**开**”位置。\
-    默认情况下，与这些许可证关联的所有服务都将自动分配给该用户。 可限制能提供给用户的具体服务。 将不希望所选用户具备的服务的开关切换到“**关**”。
-6. 在“**添加到现有产品**”窗格底部，选择“**添加**”\>“**关闭**”\>“**关闭**”。
-
-::: moniker-end
+### <a name="assign-licenses-to-one-user"></a>向一个用户分配许可证
 
 ::: moniker range="o365-worldwide"
 
-### <a name="assign-licenses-to-one-user"></a>向一个用户分配许可证
-
 1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。
-2. 选择要向其分配许可证的用户所对应的行。
-3. 在右侧窗格，选择“**许可证和应用**”。
-4. 展开“**许可证**”部分，选择要分配的许可证的框，然后选择“**保存更改**”。
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-## <a name="assign-licenses-to-one-user"></a>向一个用户分配许可证
-
-1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">活动用户</a>”页面。
-2. 选中要向其分配许可证的用户姓名旁边的框。
-3. 在右侧窗格的“**产品许可证**”行中，选择“**编辑**”。
-4. 在“**产品许可证**”窗格中，将要分配给此用户的许可证的开关切换到“**开**”位置。\
-    默认情况下，与该许可证关联的所有服务都将自动分配给该用户。 可限制能提供给用户的具体服务。 将不希望所选用户具备的服务的开关切换到“**关**”。
-5. 在“**产品许可证**”窗格底部，选择“**保存**”\>“**关闭**”\>“**关闭**”。
+1. 在 <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">管理中心</a> 内，转到“**计费**”>“**活动用户**”页面。
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-## <a name="assign-licenses-to-one-user"></a>向一个用户分配许可证
-
-1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">活动用户</a>”页面。
-2. 选中要向其分配许可证的用户姓名旁边的框。
-3. 在右侧窗格的“**产品许可证**”行中，选择“**编辑**”。
-4. 在“**产品许可证**”窗格中，将要分配给此用户的许可证的开关切换到“**开**”位置。\
-    默认情况下，与该许可证关联的所有服务都将自动分配给该用户。 可限制能提供给用户的具体服务。 将不希望所选用户具备的服务的开关切换到“**关**”。
-5. 在“**产品许可证**”窗格底部，选择“**保存**”\>“**关闭**”\>“**关闭**”。
+1. 在 <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">管理中心</a> 内，转到“**计费**”>“**活动用户**”页面。
 
 ::: moniker-end
+
+2. 选择要向其分配许可证的用户所对应的行。
+3. 在右侧窗格，选择“**许可证和应用**”。
+4. 展开“**许可证**”部分，选择要分配的许可证的框，然后选择“**保存更改**”。
 
 ## <a name="assign-a-license-to-a-guest-user"></a>向来宾用户分配许可证
 
