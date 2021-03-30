@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 684025441c8400775f469515df1bcd0423d6460b
-ms.sourcegitcommit: 94fa3e57fa6505551d84ae7b458150dceff30db7
+ms.openlocfilehash: bcb96ea29649bf3525b2ffcf6d5cbb5d299bacf3
+ms.sourcegitcommit: b56a8ff9bb496bf2bc1991000afca3d251f45b72
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51394742"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "51418112"
 ---
 # <a name="configure-advanced-features-in-defender-for-endpoint"></a>在 Defender for Endpoint 中配置高级功能
 
@@ -72,6 +72,9 @@ ms.locfileid: "51394742"
 >更改此设置仅影响未来的警报关联。
 
 
+## <a name="enable-edr-in-block-mode"></a>在阻止模式下启用 EDR
+在阻止模式下 (EDR) 终结点检测和响应功能可提供对恶意项目的保护，即使 Microsoft Defender 防病毒在被动模式下运行。 打开后，阻止模式下的 EDR 将阻止在设备上检测到的恶意项目或行为。 阻止模式下的 EDR 在后台工作，可修正在泄露后检测到的恶意项目。
+
 ## <a name="autoresolve-remediated-alerts"></a>Autoresolve 修正警报
 
 对于在 Windows 10 版本 1809 或之后创建的租户，自动调查和修正功能默认配置为解决自动分析结果状态为"未找到威胁"或"已修正"的警报。  如果不希望自动解决警报，需要手动关闭该功能。
@@ -115,6 +118,14 @@ ms.locfileid: "51394742"
 
 > [!NOTE]
 > 网络保护利用信誉服务，在可能超出你为 Defender for Endpoint 数据选择的位置之外的位置处理请求。
+
+
+## <a name="tamper-protection"></a>防篡改保护
+在某些类型的网络攻击期间，不良参与者会尝试在你的计算机上禁用安全功能，如防病毒保护。 不良操作者希望禁用安全功能，以便更轻松地访问数据、安装恶意软件，或者以其他方式利用你的数据、标识和设备。
+
+防篡改保护实质上会锁定 Microsoft Defender 防病毒，并阻止通过应用和方法更改安全设置。
+
+保持防篡改功能打开，以防止对安全解决方案及其基本功能进行不必要的更改。
 
 ## <a name="show-user-details"></a>显示用户详细信息
 

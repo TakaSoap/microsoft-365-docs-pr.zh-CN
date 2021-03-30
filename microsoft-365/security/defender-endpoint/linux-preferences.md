@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: ed28d3b5b7bafaea2d72b7a8c45f66bf69033bc2
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: a8595bae216911350d3f18fcceef729ef020a424
+ms.sourcegitcommit: c75aac39ee8d93218a79585113ef6b36f47c9ddf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51187789"
+ms.lasthandoff: 03/29/2021
+ms.locfileid: "51408161"
 ---
 # <a name="set-preferences-for-microsoft-defender-for-endpoint-for-linux"></a>设置适用于 Linux 的 Microsoft Defender 终结点的首选项
 
@@ -61,6 +61,7 @@ ms.locfileid: "51187789"
 | **注册表项** | antivirusEngine |
 | **数据类型** | 字典 (嵌套首选项)  |
 | **Comments** | 有关字典内容的说明，请参阅以下部分。 |
+|||
 
 #### <a name="enable--disable-real-time-protection"></a>启用/禁用实时保护
 
@@ -71,6 +72,7 @@ ms.locfileid: "51187789"
 | **注册表项** | enableRealTimeProtection |
 | **数据类型** | Boolean |
 | **可能的值** | true (默认值)  <br/> false |
+|||
 
 #### <a name="enable--disable-passive-mode"></a>启用/禁用被动模式
 
@@ -87,6 +89,7 @@ ms.locfileid: "51187789"
 | **数据类型** | Boolean |
 | **可能的值** | false（默认值） <br/> true |
 | **Comments** | 适用于终结点版本 100.67.60 或更高版本的 Defender 中可用。 |
+|||
 
 #### <a name="exclusion-merge-policy"></a>排除合并策略
 
@@ -98,6 +101,7 @@ ms.locfileid: "51187789"
 | **数据类型** | String |
 | **可能的值** | 合并 (默认)  <br/> admin_only |
 | **Comments** | 适用于终结点版本 100.83.73 或更高版本的 Defender 中可用。 |
+|||
 
 #### <a name="scan-exclusions"></a>扫描排除项
 
@@ -108,6 +112,7 @@ ms.locfileid: "51187789"
 | **注册表项** | 排除项 |
 | **数据类型** | 字典 (嵌套首选项)  |
 | **Comments** | 有关字典内容的说明，请参阅以下部分。 |
+|||
 
 **排除类型**
 
@@ -118,6 +123,7 @@ ms.locfileid: "51187789"
 | **注册表项** | $type |
 | **数据类型** | String |
 | **可能的值** | excludedPath <br/> excludedFileExtension <br/> excludedFileName |
+|||
 
 **排除内容的路径**
 
@@ -129,6 +135,7 @@ ms.locfileid: "51187789"
 | **数据类型** | String |
 | **可能的值** | 有效路径 |
 | **Comments** | 仅在 *排除$type**时适用* |
+|||
 
 **文件 (目录的路径)**
 
@@ -140,6 +147,7 @@ ms.locfileid: "51187789"
 | **数据类型** | Boolean |
 | **可能的值** | false（默认值） <br/> true |
 | **Comments** | 仅在 *排除$type**时适用* |
+|||
 
 **从扫描中排除的文件扩展名**
 
@@ -151,6 +159,7 @@ ms.locfileid: "51187789"
 | **数据类型** | String |
 | **可能的值** | 有效的文件扩展名 |
 | **Comments** | 仅在 *排除**$type FileExtension 时适用* |
+|||
 
 **从扫描中排除的进程**
 
@@ -162,6 +171,7 @@ ms.locfileid: "51187789"
 | **数据类型** | String |
 | **可能的值** | 任何字符串 |
 | **Comments** | 仅在 *排除**$type FileName 时适用* |
+|||
 
 #### <a name="allowed-threats"></a>允许的威胁
 
@@ -171,6 +181,7 @@ ms.locfileid: "51187789"
 |:---|:---|
 | **注册表项** | allowedThreats |
 | **数据类型** | 字符串数组 |
+|||
 
 #### <a name="disallowed-threat-actions"></a>不允许威胁操作
 
@@ -182,6 +193,7 @@ ms.locfileid: "51187789"
 | **数据类型** | 字符串数组 |
 | **可能的值** | 允许 (限制用户允许威胁)  <br/> restore (限制用户从隔离网站还原)  |
 | **Comments** | 适用于终结点版本 100.83.73 或更高版本的 Defender 中可用。 |
+|||
 
 #### <a name="threat-type-settings"></a>威胁类型设置
 
@@ -192,6 +204,7 @@ ms.locfileid: "51187789"
 | **注册表项** | threatTypeSettings |
 | **数据类型** | 字典 (嵌套首选项)  |
 | **Comments** | 有关字典内容的说明，请参阅以下部分。 |
+|||
 
 **威胁类型**
 
@@ -202,6 +215,7 @@ ms.locfileid: "51187789"
 | **注册表项** | 注册表项 |
 | **数据类型** | String |
 | **可能的值** | potentially_unwanted_application <br/> archive_bomb |
+|||
 
 **要采取的措施**
 
@@ -216,6 +230,7 @@ ms.locfileid: "51187789"
 | **注册表项** | 值 |
 | **数据类型** | String |
 | **可能的值** | 审核 (默认)  <br/> block <br/> off |
+|||
 
 #### <a name="threat-type-settings-merge-policy"></a>威胁类型设置合并策略
 
@@ -227,6 +242,7 @@ ms.locfileid: "51187789"
 | **数据类型** | String |
 | **可能的值** | 合并 (默认)  <br/> admin_only |
 | **Comments** | 适用于终结点版本 100.83.73 或更高版本的 Defender 中可用。 |
+|||
 
 #### <a name="antivirus-scan-history-retention-in-days"></a>防病毒扫描历史记录保留 (天数) 
 
@@ -238,6 +254,7 @@ ms.locfileid: "51187789"
 | **数据类型** | String |
 | **可能的值** | 90 (默认值) 。 允许的值从 1 天到 180 天。 |
 | **Comments** | 适用于终结点版本 101.04.76 或更高版本的 Defender 中可用。 |
+|||
 
 #### <a name="maximum-number-of-items-in-the-antivirus-scan-history"></a>防病毒扫描历史记录中的最大项目数
 
@@ -249,6 +266,7 @@ ms.locfileid: "51187789"
 | **数据类型** | String |
 | **可能的值** | 10000 (默认值) 。 允许的值从 5000 个项目到 15000 个项目。 |
 | **Comments** | 适用于终结点版本 101.04.76 或更高版本的 Defender 中可用。 |
+|||
 
 ### <a name="cloud-delivered-protection-preferences"></a>云提供的保护首选项
 
@@ -259,6 +277,7 @@ ms.locfileid: "51187789"
 | **注册表项** | cloudService |
 | **数据类型** | 字典 (嵌套首选项)  |
 | **Comments** | 有关字典内容的说明，请参阅以下部分。 |
+|||
 
 #### <a name="enable--disable-cloud-delivered-protection"></a>启用/禁用云提供的保护
 
@@ -269,6 +288,7 @@ ms.locfileid: "51187789"
 | **注册表项** | enabled |
 | **数据类型** | Boolean |
 | **可能的值** | true (默认值)  <br/> false |
+|||
 
 #### <a name="diagnostic-collection-level"></a>诊断集合级别
 
@@ -279,6 +299,7 @@ ms.locfileid: "51187789"
 | **注册表项** | diagnosticLevel |
 | **数据类型** | String |
 | **可能的值** | 可选 (默认)  <br/> 必需 |
+|||
 
 #### <a name="enable--disable-automatic-sample-submissions"></a>启用/禁用自动示例提交
 
@@ -293,6 +314,7 @@ ms.locfileid: "51187789"
 | **注册表项** | automaticSampleSubmissionConsent |
 | **数据类型** | String |
 | **可能的值** | 无 <br/> 安全 (默认)  <br/> all |
+|||
 
 #### <a name="enable--disable-automatic-security-intelligence-updates"></a>启用/禁用自动安全智能更新
 
@@ -303,6 +325,7 @@ ms.locfileid: "51187789"
 | **注册表项** | automaticDefinitionUpdateEnabled |
 | **数据类型** | Boolean |
 | **可能的值** | true (默认值)  <br/> false |
+|||
 
 ## <a name="recommended-configuration-profile"></a>建议的配置文件
 
@@ -339,6 +362,7 @@ ms.locfileid: "51187789"
       "automaticDefinitionUpdateEnabled":true,
       "automaticSampleSubmissionConsent":"safe",
       "enabled":true
+      "proxy":"http://proxy.server:port/"
    }
 }
 ```
@@ -399,6 +423,7 @@ ms.locfileid: "51187789"
       "diagnosticLevel":"optional",
       "automaticSampleSubmissionConsent":"safe",
       "automaticDefinitionUpdateEnabled":true
+      "proxy": "http://proxy.server:port/"
    }
 }
 ```
@@ -412,6 +437,17 @@ python -m json.tool mdatp_managed.json
 ```
 
 如果 JSON 格式良好，则上述命令会输出回终端，并返回 的退出代码 `0` 。 否则，将显示描述该问题的错误，并且该命令将返回 的退出代码 `1` 。
+
+## <a name="verifying-that-the-mdatp_managedjson-file-is-working-as-expected"></a>验证文件mdatp_managed.js是否正常工作
+若要验证 /etc/opt/microsoft/mdatp/managed/mdatp_managed.json 是否正常工作，应在这些设置旁边看到"[托管]"：  
+- cloud_enabled
+- cloud_automatic_sample_submission_consent
+- passice_mode_enabled
+- real_time_protection_enabled
+- automatic_definition_update_enabled
+
+> [!NOTE]
+> 若要mdatp_managed.js，无需重新启动 wdavdaemon。
 
 ## <a name="configuration-profile-deployment"></a>配置文件部署
 

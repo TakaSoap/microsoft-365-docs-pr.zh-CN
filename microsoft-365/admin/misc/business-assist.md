@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 商业版协助
+title: Microsoft 365 商业帮助
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -15,19 +15,19 @@ ms.custom:
 - AdminSurgePortfolio
 search.appverid:
 - MET150
-description: 了解 Microsoft Business Assist 计划及其如何帮助你的组织改进 Microsoft 365 商业版的帮助和使用。
-ms.openlocfilehash: eb0309ae68bf4569d4cba8dd8501343304389e80
-ms.sourcegitcommit: 8998f70d3f7bd673f93f8d1cf12ce981b1b771c3
+description: 了解 Business Assist 计划及其如何帮助你的组织改进 Microsoft 365 商业版的帮助和使用。
+ms.openlocfilehash: 4531c841b4856e22b364906c180aa336cb8fd04a
+ms.sourcegitcommit: c75aac39ee8d93218a79585113ef6b36f47c9ddf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51034261"
+ms.lasthandoff: 03/29/2021
+ms.locfileid: "51408521"
 ---
-# <a name="business-assist-for-microsoft-365"></a>Microsoft 365 商业版协助
+# <a name="business-assist-for-microsoft-365"></a>Microsoft 365 商业帮助
 
 通过小型企业专家提供的专家建议，从你的订阅中取得最大价值。
 
-**Business Assist for Microsoft 365** 是一项专为用户数少于 5 的企业而设计的服务，可让你和员工在发展业务时全天候访问小型企业专家，从载入到日常使用。
+**适用于 Microsoft 365** 的 Business Assist 专为用户数少于 5 的企业设计，可让你和员工在业务增长（从载入到日常使用）时全天候访问小型企业专家。
 
 ## <a name="business-assist-services"></a>Business Assist 服务
 
@@ -38,7 +38,7 @@ ms.locfileid: "51034261"
 | | | |
 
 > [!div class="nextstepaction"]
-> [立即购买](https://go.microsoft.com/fwlink/p/?linkid=868433)
+> [立即购买](https://go.microsoft.com/fwlink/p/?linkid=2158423)
 
 ## <a name="eligibility-for-business-assist"></a>商业协助资格
 
@@ -58,4 +58,4 @@ ms.locfileid: "51034261"
 :::image type="content" source="../../media/projectgenie-purchase services.png" alt-text="Screeenshot： Purchase Business Assist from the Add-ons section on the Purchase services page":::
 
 > [!div class="nextstepaction"]
-> [立即购买](https://go.microsoft.com/fwlink/p/?linkid=868433)
+> [立即购买](https://go.microsoft.com/fwlink/p/?linkid=2158423)

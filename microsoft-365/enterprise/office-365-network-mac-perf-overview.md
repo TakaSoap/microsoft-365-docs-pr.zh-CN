@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 - m365initiative-coredeploy
 description: 'Microsoft 365 管理中心网络连接概述 (预览) '
-ms.openlocfilehash: 0bfcebff4ebbefdb77049119fef2402af1ca8f90
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 2b80dd001bd2ee5d5725ea67c73aa34b4eb8816c
+ms.sourcegitcommit: c75aac39ee8d93218a79585113ef6b36f47c9ddf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50926092"
+ms.lasthandoff: 03/29/2021
+ms.locfileid: "51408401"
 ---
 # <a name="network-connectivity-in-the-microsoft-365-admin-center-preview"></a>Microsoft 365 管理中心中的网络连接 (预览) 
 
@@ -149,6 +149,10 @@ The details tab on the office location page shows the specific measurement resul
 > [!div class="mx-imgBorder"]
 > ![特定于位置的详细信息](../media/m365-mac-perf/m365-mac-perf-locations-plan-details-all.png)
 
+## <a name="sharing-network-assessment-data-with-microsoft"></a>与 Microsoft 共享网络评估数据
+
+默认情况下，组织的网络评估和网络见解与 Microsoft 员工共享。 这不包括员工的任何个人数据，但仅包括你的办公地点管理中心中显示的特定网络评估指标和网络见解。 它还不包括你的办公室位置名称或街道地址，因此你需要告知他们要讨论的办公室的城市和支持 ID。 如果关闭此功能，则你讨论你的网络连接的 Microsoft 工程师无法查看任何此信息。 启用此设置仅共享从启用后的第二天开始的未来数据。
+
 ## <a name="csv-import-for-lan-subnet-office-locations"></a>LAN 子网办事处位置的 CSV 导入
 
 对于 LAN 子网办公室标识，需要提前添加每个位置。 你可以从 CSV 文件导入它们，而不是在"位置"选项卡中添加单独的办公室位置。 你可以从存储该数据的其他位置（如呼叫质量仪表板或 Active Directory 站点和服务）获取此数据
@@ -185,7 +189,7 @@ The details tab on the office location page shows the specific measurement resul
    > [!div class="mx-imgBorder"]
    > ![CSV 导入就绪邮件](../media/m365-mac-perf/m365-mac-perf-import-ready.png)
 
-## <a name="faq"></a>常见问题
+## <a name="faq"></a>常见问题解答
 
 ### <a name="what-is-a-microsoft-365-service-front-door"></a>什么是 Microsoft 365 服务前端？
 

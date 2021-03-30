@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: fc9e5fb29518207c5360d5fbe29b8b4848d350e2
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 18e43d8e38c24a8aa28c6455dc1a769b8da0df2b
+ms.sourcegitcommit: c75aac39ee8d93218a79585113ef6b36f47c9ddf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51056269"
+ms.lasthandoff: 03/29/2021
+ms.locfileid: "51408619"
 ---
 # <a name="devicetvmsoftwareinventory"></a>DeviceTvmSoftwareInventory
 
@@ -34,7 +34,9 @@ ms.locfileid: "51056269"
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-高级 `DeviceTvmSoftwareInventory` 搜寻架构中的表包含&网络中设备上[](next-gen-threat-and-vuln-mgt.md)当前安装的软件的威胁和漏洞管理清单，包括停止提供支持信息。 例如，可以搜寻涉及使用当前易受攻击的软件版本安装的设备的事件。 使用此参考来构建从该表返回信息的查询。
+高级 `DeviceTvmSoftwareInventory` 搜寻架构中的表包含 [网络中](next-gen-threat-and-vuln-mgt.md) 设备上当前安装的软件的威胁和漏洞管理清单，包括停止提供支持信息。 例如，可以搜寻涉及使用当前易受攻击的软件版本安装的设备的事件。 使用此参考来构建从该表返回信息的查询。
+
+DeviceTVMSoftwareInventory 包含威胁和漏洞管理能够与常见平台枚举 (CPE) 匹配的所有软件 – 它是否易受攻击。
 
 >[!NOTE]
 >和 `DeviceTvmSoftwareInventory` `DeviceTvmSoftwareVulnerabilities` 表已替换 `DeviceTvmSoftwareInventoryVulnerabilities` 表。 前两个表一起包含可用于帮助通知漏洞管理活动的更多列。
@@ -43,18 +45,16 @@ ms.locfileid: "51056269"
 
 | 列名称 | 数据类型 | 说明 |
 |-------------|-----------|-------------|
-| `DeviceId` | string | 服务中设备的唯一标识符 |
-| `DeviceName` | string | 设备的完全限定 (FQDN) FQDN |
+| `DeviceId` | string | 服务中设备的唯一标识符。 |
+| `DeviceName` | string | 设备的完全限定 (FQDN) FQDN。 |
 | `OSPlatform` | string | 在设备上运行的操作系统的平台。 这表示特定操作系统，包括同一系列中的变体，如 Windows 10 和 Windows 7。 |
-| `OSVersion` | string | 在设备上运行的操作系统的版本 |
-| `OSArchitecture` | string | 在设备上运行的操作系统的体系结构 |
-| `SoftwareVendor` | string | 软件供应商的名称 |
-| `SoftwareName` | string | 软件产品的名称 |
-| `SoftwareVersion` | string | 软件产品版本号 |
-| `EndOfSupportStatus` | string | 指示软件产品的生命周期阶段（相对于其指定的 EOS (停止) 或生命周期结束 (EOL) 日期 |
-| `EndOfSupportDate` | string | 在软件产品 (EOS) 或生命周期结束 (EOL) 终止支持 |
-
-
+| `OSVersion` | string | 在设备上运行的操作系统的版本。 |
+| `OSArchitecture` | string | 在设备上运行的操作系统的体系结构。 |
+| `SoftwareVendor` | string | 软件供应商的名称。 |
+| `SoftwareName` | string | 软件产品的名称。 |
+| `SoftwareVersion` | string | 软件产品的版本号。 |
+| `EndOfSupportStatus` | string | 指示软件产品的生命周期阶段（相对于其指定的停止支持终止 (EOS) 或生命周期 (EOL) 日期。 |
+| `EndOfSupportDate` | string | 在软件产品 (EOS) 或生命周期 (，) 终止支持。 |
 
 ## <a name="related-topics"></a>相关主题
 
@@ -62,4 +62,3 @@ ms.locfileid: "51056269"
 - [了解查询语言](advanced-hunting-query-language.md)
 - [了解架构](advanced-hunting-schema-reference.md)
 - [威胁和漏洞管理概述](next-gen-threat-and-vuln-mgt.md)
-

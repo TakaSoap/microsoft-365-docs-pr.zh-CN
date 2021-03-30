@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 84d85b723d4dcbdfc07a074c40241242c57bc390
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 08bb4c73cb9df429c4b07194f1c7615f44d745d8
+ms.sourcegitcommit: c75aac39ee8d93218a79585113ef6b36f47c9ddf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51185583"
+ms.lasthandoff: 03/29/2021
+ms.locfileid: "51408333"
 ---
 # <a name="microsoft-defender-for-endpoint-for-linux"></a>Microsoft Defender for Endpoint for Linux
 
@@ -43,7 +43,7 @@ ms.locfileid: "51185583"
 
 ## <a name="how-to-install-microsoft-defender-for-endpoint-for-linux"></a>如何安装适用于 Linux 的 Microsoft Defender for Endpoint
 
-### <a name="prerequisites"></a>先决条件
+### <a name="prerequisites"></a>必备条件
 
 - 访问 Microsoft Defender 安全中心门户
 - 使用系统 [系统管理器的](https://systemd.io/) Linux 分发
@@ -83,6 +83,11 @@ ms.locfileid: "51185583"
   > 不支持将适用于 Linux 的 Defender for Endpoint 与其他 `fanotify` 基于的安全解决方案并行运行。 它可能会导致不可预知的结果，包括挂起操作系统。
 
 - 磁盘空间：1GB
+- /opt/microsoft/mdatp/sbin/wdavdaemon 需要可执行权限。 有关详细信息，请参阅解决适用于 Linux 的 Microsoft Defender ATP 的安装问题中的"确保守护程序具有可执行[权限"。](/microsoft-365/security/defender-endpoint/linux-support-install)
+- 内存：1GB
+    > [!NOTE]
+    > 请确保 /var 中具有可用磁盘空间。
+
 - 解决方案当前为以下文件系统类型提供实时保护：
 
   - `btrfs`
@@ -112,7 +117,7 @@ ms.locfileid: "51185583"
 
 以下可下载的电子表格列出了网络必须能够连接到的服务及其关联 URL。 应确保没有拒绝访问这些 URL 的防火墙或网络筛选规则。 如果有，可能需要专门为 *他们创建允许* 规则。
 
-|**域列表电子表格**|**说明**|
+|**域列表电子表格**|**描述**|
 |:-----|:-----|
 |![适用于终结点 URL 电子表格的 Microsoft Defender 缩略图](images/mdatp-urls.png)<br/>  | 服务位置、地理位置和操作系统的特定 DNS 记录的电子表格。 <br><br>[在此处下载电子表格。](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx)
 

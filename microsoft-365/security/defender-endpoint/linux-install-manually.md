@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: cf903bd1b09370dd7de2706b078778137ea029fb
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 98b568206d4263a574c8de653fe5345dd344ba43
+ms.sourcegitcommit: c75aac39ee8d93218a79585113ef6b36f47c9ddf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51187813"
+ms.lasthandoff: 03/29/2021
+ms.locfileid: "51408543"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-for-linux-manually"></a>手动部署适用于 Linux 的 Microsoft Defender for Endpoint
 
@@ -87,7 +87,7 @@ ms.locfileid: "51187813"
     sudo yum-config-manager --add-repo=https://packages.microsoft.com/config/[distro]/[version]/[channel].repo
     ```
 
-    例如，如果你运行的是 CentOS 7，并且想要从专业渠道部署适用于 Linux的 MDE：
+    例如，如果你运行的是 CentOS 7 并且想要从专业渠道部署适用于 Linux 的 Defender *for* Endpoint：
 
     ```bash
     sudo yum-config-manager --add-repo=https://packages.microsoft.com/config/centos/7/prod.repo
@@ -383,6 +383,27 @@ Options:
 ## <a name="operating-system-upgrades"></a>操作系统升级
 
 将操作系统升级到新的主要版本时，必须先卸载适用于 Linux 的 Defender for Endpoint，安装升级，最后在设备上重新配置适用于 Linux 的 Defender for Endpoint。
+
+## <a name="how-to-migrate-from-insiders-fast-to-production-channel"></a>如何从生产Insiders-Fast迁移到生产渠道
+
+1. 卸载适用于 macOS 的 MDE 的"Insiders-Fast channel"版本。
+
+    ``
+    sudo yum remove mdatp
+    ``
+
+1. 禁用适用于 Linux 的 MDE Insiders-Fast存储库  ``
+    sudo yum repolist
+    ``
+
+    > [!NOTE]
+    > 输出应显示"packages-microsoft-com-fast-prod"。
+
+    ``
+    sudo yum-config-manager --disable packages-microsoft-com-fast-prod
+    ``
+1. 使用"生产通道"重新部署适用于 Linux 的 MDE。
+
 
 ## <a name="uninstallation"></a>卸载
 
