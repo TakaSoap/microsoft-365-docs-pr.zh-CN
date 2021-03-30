@@ -57,7 +57,7 @@
     - name: Microsoft 365 管理中心概述
       items:
         - name: 管理中心概述
-          href: admin-overview/about-the-admin-center.md
+          href: ../business-video/admin-center-overview.md
         - name: 关于管理员角色
           href: add-users/about-admin-roles.md
         - name: 管理移动应用
