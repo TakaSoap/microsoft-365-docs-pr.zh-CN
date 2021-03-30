@@ -12,12 +12,12 @@ ms.reviewer: esaggese
 localization_priority: Normal
 ms.collection:
 - M365-security-compliance
-ms.openlocfilehash: 10b29220e49dcb5fda8b1f7d18e52e10513fc599
-ms.sourcegitcommit: 30c3054004ddc9d6059c11d55577552aa2464810
+ms.openlocfilehash: 746f1345b47694f4a4122edc5d89cc924441ea81
+ms.sourcegitcommit: c75aac39ee8d93218a79585113ef6b36f47c9ddf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50939653"
+ms.lasthandoff: 03/29/2021
+ms.locfileid: "51408173"
 ---
 # <a name="double-key-encryption-for-microsoft-365"></a>Microsoft 365 的双密钥加密
 
@@ -242,6 +242,8 @@ DKE 租户和密钥设置位于appsettings.js **on** 文件中。
      "https://sts.windows.net/9c99431e-b513-44be-a7d9-e7b500002d4b/"
    ]
    ```
+> [!NOTE]
+> 如果要启用对密钥存储的外部 B2B 访问，还需要包含这些外部租户作为有效颁发者列表的一部分。
 
 找到 `JwtAudience` 。 将 `<yourhostname>` 替换为将运行 DKE 服务的主机名。 例如：
 
@@ -500,7 +502,7 @@ key_store_tester.ps1 https://mydkeservice.com/mykey
 
 9. 在 **"隐式授予"** 下 **，选中"ID 令牌"** 复选框。
 
-10. 选择“**保存**”以保存所做的更改。
+10. 选择 **保存** 以保存所做的更改。
 
 11. 在左窗格中，选择 **"公开 API"，** 然后在"应用程序 ID URI"旁边，选择"设置 **"。**
 

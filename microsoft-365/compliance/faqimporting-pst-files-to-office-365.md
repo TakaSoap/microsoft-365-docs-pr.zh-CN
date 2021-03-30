@@ -6,7 +6,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 audience: Admin
-ms.topic: reference
+ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
@@ -17,17 +17,17 @@ search.appverid:
 ms.assetid: 2fe71b05-f5a2-4182-ade7-4dc5cabdfd51
 ms.custom: seo-marvel-apr2020
 description: 本文包含管理员有关使用 Office 365 导入服务将 PST 文件导入到 Microsoft 365 的一些常见问题的解答。
-ms.openlocfilehash: adcc84df7aed25f0d51c8fb6a1899bfa56453854
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: d775e7cadb71e47cc916a064386971ecd3d08afc
+ms.sourcegitcommit: c75aac39ee8d93218a79585113ef6b36f47c9ddf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50906786"
+ms.lasthandoff: 03/29/2021
+ms.locfileid: "51408631"
 ---
 # <a name="faq-about-importing-pst-files"></a>有关导入 PST 文件的常见问题解答
 
 **本文适用于管理员。是否要将 PST 文件导入到您自己的邮箱？请参阅 [从 Outlook .pst](https://go.microsoft.com/fwlink/p/?LinkID=785075)文件导入电子邮件、联系人和日历**
-   
+
 以下是有关使用 Office 365 导入服务将 PST 文件批量导入到 Microsoft 365 邮箱的一些常见问题。 若要详细了解如何导入 PST 文件，请参阅 [将 PST 文件导入到 Office 365 的概述](./importing-pst-files-to-office-365.md)。
   
 ## <a name="using-network-upload-to-import-pst-files"></a>使用网络上传导入 PST 文件
@@ -83,7 +83,7 @@ Using network upload to import PST files is free.
 
  **导入 PST 文件时是否有邮件大小限制？**
   
-是。 如果 PST 文件包含大于 150 MB 的邮件项，则将在导入过程中跳过此项。
+是。 如果 PST 文件包含大于 150 MB 的邮箱项目，将在导入过程中跳过该项目，并且不会导入该项目。 不会导入大于 150 MB 的项目，因为 Exchange Online 中的邮件大小限制是 150 MB。 有关详细信息，请参阅 [Exchange Online 中的邮件限制](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#message-limits)。
   
  **PST 文件导入到 Microsoft 365 邮箱时，是否会保留邮件发送时间或接收时间、收件人列表和其他邮件属性？**
   
@@ -156,7 +156,7 @@ Using network upload to import PST files is free.
   
  **硬盘驱动器到达 Microsoft 数据中心后，需要多久才能将 PST文件上传到 Azure？**
   
-在 Microsoft 数据中心收到硬盘驱动器后，需要 7 到 10 个工作日将 PST 文件上传到组织的 Azure 存储区域。 PST 文件将上传到名为 `ingestiondata` 的 Azure Blob 容器。 
+在 Microsoft 数据中心收到硬盘驱动器后，需要 7 到 10 个工作日将 PST 文件上传到组织的 Azure 存储区域。 PST 文件将上传到名为 `ingestiondata` 的 Azure Blob 容器。
   
  **将 PST 文件导入到邮箱需要多长时间？**
   
@@ -178,12 +178,12 @@ Using network upload to import PST files is free.
   
  **导入 PST 文件时是否有邮件大小限制？**
   
-是。 如果 PST 文件包含大于 150 MB 的邮件项，则将在导入过程中跳过此项。
+是。 如果 PST 文件包含大于 150 MB 的邮箱项目，将在导入过程中跳过该项目，并且不会导入该项目。 不会导入大于 150 MB 的项目，因为 Exchange Online 中的邮件大小限制是 150 MB。 有关详细信息，请参阅 [Exchange Online 中的邮件限制](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#message-limits)。
   
   **PST 导入进程如何处理重复的电子邮件项？**
 
 如果目标邮箱或目标存档的目标文件夹中存在匹配项，PST 导入进程将检查重复的项目，并且不会将邮件项从 PST 文件复制到邮箱或存档。 如果重新导入相同的 PST 文件并指定与上一个导入作业中指定的文件夹不同的目标文件夹（使用 PST 导入映射文件中的 TargetRootFolder 属性），将重新导入 PST 文件中的所有项。
- 
+
  **PST 文件导入到 Microsoft 365 邮箱时，是否会保留邮件发送时间或接收时间、收件人列表和其他邮件属性？**
   
 可以。 导入过程中不会更改原始邮件的元数据
@@ -224,6 +224,6 @@ Using network upload to import PST files is free.
   
 是。
   
- **如果我必须将我的硬盘发运到其他国家/地区，是否有任何需要执行的操作？**
+ **If I have to ship my hard drive to another country, is there anything I need to do?**
   
-你发运到 Microsoft 的硬盘可能会跨越国际边界。如果是这种情况，你有责任确保硬盘及其所含数据是根据适用法律导入和/或导出的。发运硬盘前，请与顾问联系，确保驱动器和数据可以合法地发送到指定的 Microsoft 数据中心。这有助于确保它及时送达 Microsoft。
+The hard drive that you ship to Microsoft might have to cross international borders. 如果是这样，你有责任确保根据适用法律导入和/或导出硬盘驱动器及其包含的数据。 Before shipping a hard drive, check with your advisors to verify that your drive and data can legally be shipped to the specified Microsoft data center. This will help to ensure that it reaches Microsoft in a timely manner.

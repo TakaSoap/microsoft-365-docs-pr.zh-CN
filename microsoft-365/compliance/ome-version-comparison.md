@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: 本文帮助说明不同版本的 Office 365 邮件加密之间的差异。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: e75a709be6141c4bd1df4e63df677dd263c0777a
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 5c8b0852220b2144c4ab92ec9b692299c9d2c860
+ms.sourcegitcommit: c75aac39ee8d93218a79585113ef6b36f47c9ddf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50927730"
+ms.lasthandoff: 03/29/2021
+ms.locfileid: "51408565"
 ---
 # <a name="compare-versions-of-ome"></a>比较 OME 的版本
 
@@ -35,23 +35,11 @@ ms.locfileid: "50927730"
 
 ## <a name="overview-of-ad-rms-deprecation-in-exchange-online"></a>Exchange Online 中的 AD RMS 弃用概述
 
-Exchange Online 包括信息权限管理 (IRM) 功能，可为电子邮件和附件提供联机和脱机保护。 默认情况下，Exchange Online 使用 Azure Azure 信息保护。 但是，您的组织可能将 Exchange Online IRM 配置为使用内部部署 Active Directory 权限管理服务 (AD RMS) 。 Exchange Online 中的 AD RMS 支持即将停用。 相反，Azure 信息保护将完全替换 AD RMS。
+Exchange Online 包括信息权限管理 (IRM) 功能，可为电子邮件和附件提供联机和脱机保护。 默认情况下，Exchange Online 使用 Azure 信息保护。 但是，您的组织可能将 Exchange Online IRM 配置为使用内部部署 Active Directory 权限管理服务 (AD RMS) 。 Exchange Online 中的 AD RMS 支持即将停用。 相反，Azure 信息保护将完全替换 AD RMS。
 
-开始之前，请查看和评估对组织的影响。 如果组织已在使用 Azure 信息保护在 Exchange Online 中加密电子邮件，则没有任何操作可做。 如果使用 Exchange 邮件流规则（例如，使用 Office 365 邮件加密）加密电子邮件，则不需要更改安全电子邮件。 否则，你需要通过切换到 Azure 信息保护来准备弃用 AD RMS。
+若要评估此弃用是否会影响组织，请参阅如何在 Exchange Online 中将[AD RMS 迁移到 Azure RMS。](https://support.microsoft.com/help/5001237) 本文提供有关迁移选项的建议。
 
-### <a name="prepare-for-ad-rms-deprecation"></a>准备弃用 AD RMS
-
-如果已设置 Azure 信息保护，但没有使用它，则使用 Exchange Online PowerShell 启用该服务。 在本地计算机上，使用在组织中具有全局管理员权限的工作或学校帐户，在远程窗口中Windows PowerShell Exchange [Online PowerShell。](/powershell/exchange/connect-to-exchange-online-powershell)
-
-若要启用 Azure 信息保护，请通过Set-IrmConfiguration命令使用 azure 信息保护 cmdlet。
-
-```powershell
-Set-IrmConfiguration -AzureRMSLicensingEnabled $true
-```
-
-如果组织尚未设置 Azure 信息保护，则需要从 AD RMS 迁移到 Azure 信息保护。 有关说明，请参阅 [从 AD RMS 迁移到 Azure 信息保护](/azure/information-protection/migrate-from-ad-rms-to-azure-rms)。
-
-## <a name="side-by-side-comparison-of-features-and-capabilities"></a>特性和功能并行比较
+## <a name="side-by-side-comparison-of-ome-features-and-capabilities"></a>OME 特性和功能并行比较
 
 |           **情况**           | **旧 OME**    | **AD RMS 中的 IRM**        | **新的 OME 功能** |
 |-----------------------------------|-------------------|-------------------|--------------------------|
