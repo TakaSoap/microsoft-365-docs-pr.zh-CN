@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 ms.assetid: b0f4d010-9fd1-44d0-9d20-fabad2cdbab5
 description: 了解如何从加入 Azure Active Directory 的 Windows 10 设备获取对本地资源（如业务线应用、文件共享和打印机）的访问权限。
-ms.openlocfilehash: b78509d72cbd9b3c121039c4965625bf5c21c7e0
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 1bca0beb3ccc78e670ad33ce446b9b3f7c372ba7
+ms.sourcegitcommit: 39609c4d8c432c8e7d7a31cb35c8020e5207385b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50913514"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "51445340"
 ---
 # <a name="access-on-premises-resources-from-an-azure-ad-joined-device-in-microsoft-365-business-premium"></a>在 Microsoft 365 商业高级版中从加入 Azure AD 的设备访问本地资源
 
@@ -64,3 +64,7 @@ ms.locfileid: "50913514"
 - 用户可能无法对依赖于 Active Directory 身份验证的应用程序进行身份验证。 评估旧应用，并考虑更新到使用新式身份验证的应用（如果可能）。
 
 - Active Directory 打印机发现将不起作用。 可以为所有用户提供直接打印机路径或使用 [通用打印](/universal-print/)。
+
+### <a name="related-articles"></a>相关文章
+
+[Azure AD Connect 的先决条件](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-install-prerequisites)

@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: d8b68e6b6dc42de5730aa634386406d4762b1fa2
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 0d9e63c5d89b13b02dfcf116c1555c8db319d23f
+ms.sourcegitcommit: 39609c4d8c432c8e7d7a31cb35c8020e5207385b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51163679"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "51445360"
 ---
 # <a name="configure-alert-notifications-in-microsoft-defender-atp"></a>在 Microsoft Defender ATP 中配置警报通知
 
@@ -51,9 +51,9 @@ ms.locfileid: "51163679"
 可以创建规则，以确定要发送电子邮件通知的设备以及通知收件人的警报严重性。
 
 
-1. 在导航窗格中，选择"**设置**  >  **""警报通知"。**
+1. 在导航窗格中，选择"**设置**  >  **""电子邮件通知"。**
 
-2. 单击 **"添加通知规则"。**
+2. 单击 **"添加项目"。**
 
 3. 指定常规信息：
     - **规则名称** - 指定通知规则的名称。
@@ -67,7 +67,7 @@ ms.locfileid: "51163679"
     - **设备** - 选择是通知收件人有关所有设备上警报 (全局管理员角色) 或所选设备组。 有关详细信息，请参阅创建 [和管理设备组](machine-groups.md)。
     - **警报严重性** - 选择警报严重性级别。
 
-4. 单击“**下一步**”。
+4. 单击"下一步"。
     
 5. 输入收件人的电子邮件地址，然后单击"**添加收件人"。** 可以添加多个电子邮件地址。
 

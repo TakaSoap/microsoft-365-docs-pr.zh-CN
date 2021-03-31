@@ -18,12 +18,12 @@ ms.collection:
 - m365solution-scenario
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 56645553c43289995012d53d7caf879874e65c8a
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 56a62ca4ebbd140f507d1735c663924014ca4771
+ms.sourcegitcommit: 39609c4d8c432c8e7d7a31cb35c8020e5207385b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51186925"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "51445728"
 ---
 # <a name="onboard-to-the-microsoft-defender-for-endpoint-service"></a>载入 Microsoft Defender for Endpoint 服务
 
@@ -40,7 +40,7 @@ ms.locfileid: "51186925"
 
 部署适用于终结点的 Defender 的过程分三个阶段：
 
-| [![部署阶段 - 准备](images/phase-diagrams/prepare.png)](prepare-deployment.md)<br>[阶段 1：准备](prepare-deployment.md) | [![部署阶段 - 设置](images/phase-diagrams/setup.png)](production-deployment.md)<br>[阶段 2：设置](production-deployment.md) | ![部署阶段 - 载入](images/phase-diagrams/onboard.png)<br>阶段 3：载入 |
+| [![部署阶段 - 准备](images/phase-diagrams/prepare.png)](prepare-deployment.md)<br>[阶段 1：准备](prepare-deployment.md) | [![部署阶段 - 设置](images/phase-diagrams/setup.png)](production-deployment.md)<br>[阶段 2：设置](production-deployment.md) | ![部署阶段 - 载入](images/phase-diagrams/onboard.png)<br>阶段 3：开始使用 |
 | ----- | ----- | ----- |
 | | |*你在这里！*|
 
@@ -97,3 +97,4 @@ ms.locfileid: "51186925"
 ## <a name="related-topics"></a>相关主题
 - [使用 Microsoft Endpoint Configuration Manager 载入](onboarding-endpoint-configuration-manager.md)
 - [使用 Microsoft Endpoint Manager 载入](onboarding-endpoint-manager.md)
+- [Microsoft 365 E5 中的安全文档](../office-365-security/safe-docs.md)

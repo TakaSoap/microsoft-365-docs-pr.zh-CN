@@ -1,20 +1,23 @@
 ---
 title: 使用 Microsoft 咨询服务
-description: 准备和后续步骤以使用 MCS 打包应用
-keywords: Microsoft 托管桌面， Microsoft 365， 服务， 文档， 应用， MCS， 打包
+description: 使用 MCS 打包应用的准备工作和后续步骤
+keywords: Microsoft 托管桌面, Microsoft 365, 服务, 文档
 ms.service: m365-md
 author: jaimeo
+f1.keywords:
+- NOCSH
+ms.author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 04b0c7905c83be2afa46abcfb2d4bb5cd9735e06
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+audience: Admin
+ms.openlocfilehash: 1441ca3305a5f3e5a83ddd5e1547812f08d7d96b
+ms.sourcegitcommit: 39609c4d8c432c8e7d7a31cb35c8020e5207385b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50909222"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "51445692"
 ---
 # <a name="working-with-microsoft-consulting-services"></a>使用 Microsoft 咨询服务
 
@@ -31,7 +34,7 @@ ms.locfileid: "50909222"
 **MCS 将处理以下操作：**
 
 - 检查 Microsoft 托管桌面环境中是否禁止或限制应用。
-- 测试应用的安装、启动和卸载以确保与 Windows 10 兼容。 如果 MCS 发现兼容性问题，他们将将应用交到 [桌面应用保证计划](/fasttrack/win-10-desktop-app-assure) 进行修正。
+- 测试应用的安装、启动和卸载以确保与 Windows 10 兼容。 如果 MCS 发现兼容性问题，他们将向应用保证计划提供该应用进行[](https://docs.microsoft.com/fasttrack/products-and-capabilities#app-assure)修正。
 - 将应用打包到规范中，然后使用 Microsoft Intune 测试应用部署。
 
 ## <a name="app-delivery-schedule"></a>应用交付计划

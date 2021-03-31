@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 摘要：从德国 Microsoft 云 (德国) 迁移到新的德国数据中心区域中的 Office 365 服务时，需要提前工作。
-ms.openlocfilehash: d05b3fc06c4530a69c49962b0d2b793353033c99
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: fb352c17d9868cf5c42034e198be63b6e0543dbb
+ms.sourcegitcommit: 39609c4d8c432c8e7d7a31cb35c8020e5207385b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51165605"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "51445598"
 ---
 # <a name="pre-work-for-the-migration-from-microsoft-cloud-deutschland"></a>从德国 Microsoft 云进行迁移的前期工作
 
@@ -115,9 +115,12 @@ nslookup -querytype=CNMAE msoid.contoso.com
 **适用于：** 将活动 Exchange 混合配置与本地 Exchange 服务器一同使用的所有客户<br>
 **应用时**：阶段 5 之前的任何时间
 
+具有 Exchange Online 混合部署和本地 Exchange Server 的企业客户运行混合配置向导 (HCW) 维护和建立混合设置。 从德国 Microsoft 云过渡到 Office 365 Germany 区域时，管理员必须在 Exchange 迁移 (第 5 阶段) 开始之前，在"Office 365 Germany"模式下重新运行 HCW 的最新内部版本。 然后，在第 5 阶段完成时，再次以"Office 365 全球"模式运行 HCW，以使用 Office 365 Germany 区域设置完成本地部署。
+
 | 步骤 (步骤)  | 说明 | 影响 |
 |:-------|:-------|:-------|
-| 在租户进入迁移阶段 5 之前 (更新到最新版本的混合配置向导 (HCW) 。 收到消息中心通知 Office 365 租户迁移已开始后，你可以立即启动此活动， (第 1 阶段) 。<br>Exchange 管理员必须卸载 HCW 的以前版本，然后从 安装并执行最新版本 (17.0.5378.0 或) 版本 [https://aka.ms/hybridwizard](https://aka.ms/hybridwizard) 。 |<ul><li>HCW 的最新版本包括必要的更新，以支持从德国 Microsoft 云实例到 Office 365 全局服务的 Exchange Online 迁移。</li><li> 更新包括对发送连接器和接收连接器本地证书 _设置的更改_。 </li><li>在阶段 5 之前执行 HCW 时，在"Office _365 Exchange Online"_ 下 HCW 的第 2 页中选择"Office 365 Germany"，在"我的 Office 365 组织"下的列表框中选择  _"Office 365 Germany"，_</li><li>**注意**：在第 9 阶段后完成 Office 365 租户迁移后，将删除并重新安装 HCW，这次使用 HCW 第 2 页上的"Office 365 全球"设置，通过 Exchange Online 全局服务完成混合设置。</li></ul>|在 Exchange 迁移迁移阶段 5 之前 (HCW) 可能会导致服务或客户端故障。 |
+|  (阶段 5) - 使用 Office 365 Germany 设置重新运行 HCW <br><br> <i>收到消息中心通知 Office 365 租户迁移已开始后，你可以立即启动此活动， (第 1 阶段) 。</i>| 在阶段 5 之前卸载并重新运行 HCW (17.0.5378.0 或更高版本) 将确保本地配置已准备好与 Microsoft 云德国用户和迁移到 [https://aka.ms/hybridwizard](https://aka.ms/hybridwizard) Office 365 Germany 区域的用户一起发送和接收邮件。 <p><li> In the HCW， for the list box below **My Office 365 organization is hosted by**， select Office **365 Germany.** | 如果未能在阶段 5 [Exchange 迁移] 开始之前完成此任务，可能会导致本地 Exchange 部署和 Office 365 之间路由邮件的未通过 NDR。  
+|  (后阶段 5) - 使用 Office 365 全球设置重新运行 HCW <br><br> <i>您可以在收到 Exchange 迁移已完成的邮件中心通知后启动此活动 (阶段 5) 。</i>| 在阶段 5 之后卸载并重新运行 HCW 将重置仅包含 Office 365 全局的混合配置的本地 [https://aka.ms/hybridwizard](https://aka.ms/hybridwizard) 配置。 <p><li> In the list box below **My Office 365 organization is hosted by**， select Office **365 Worldwide**. | 如果未能在阶段 9 [迁移完成] 之前完成此任务，可能会导致本地 Exchange 部署和 Office 365 之间路由邮件的NDDR。  
 | 建立指向全局安全令牌服务本地的 AuthServer (STS) 进行身份验证 | 这可确保对来自迁移状态（面向混合本地环境）的用户的 Exchange 可用性请求的身份验证请求进行身份验证以访问内部部署服务。 同样，这将确保对从本地到 Office 365 全局服务终结点的请求进行身份验证。 | Azure AD 迁移 (阶段 2) 完成后，本地 Exchange (混合) 拓扑的管理员必须为 Office 365 全局服务添加新的身份验证服务终结点。 通过 Exchange PowerShell 中的此命令，将 替换为 Azure Active Directory 上的 Azure 门户中的组织的 `<TenantID>` 租户 ID。<br>`New-AuthServer GlobalMicrosoftSts -AuthMetadataUrl https://accounts.accesscontrol.windows.net/<TenantId>/metadata/json/1`<br> 未能完成此任务可能会导致混合忙/闲请求无法为从 Microsoft 云德国迁移到 Office 365 服务的邮箱用户提供信息。  |
 ||||
 

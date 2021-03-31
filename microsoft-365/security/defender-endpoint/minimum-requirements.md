@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 6a8e1091490cb9f3fe1eedadec0b76a56ada936e
-ms.sourcegitcommit: a965c498e6b3890877f895d5197898b306092813
+ms.openlocfilehash: 1b203a29083aaa4a1f86abcd7e2c7b24bd63f186
+ms.sourcegitcommit: 39609c4d8c432c8e7d7a31cb35c8020e5207385b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51379486"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "51445740"
 ---
 # <a name="minimum-requirements-for-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint 的最低要求
 
@@ -54,6 +54,7 @@ Microsoft Defender for Endpoint 需要以下 Microsoft 批量许可优惠之一�
 > [!NOTE]
 > 符合条件的许可用户可以在最多五台并发设备上使用 Microsoft Defender for Endpoint。
 > Microsoft Defender for Endpoint 还可从云解决方案提供商云解决方案提供商 (云解决方案提供商) 。
+> RDSH VM 不需要单独的 Defender for Endpoint 许可证。
 
 适用于服务器的 Microsoft Defender for Endpoint 需要以下许可选项之一：
 

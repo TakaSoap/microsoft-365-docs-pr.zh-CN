@@ -19,12 +19,12 @@ description: 使用安全与合规中心中的资源管理器和实时检测有�
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: f48bad9d8ae6fc6d68ae27a655f4bdfdefd819d0
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 47bb14b90a94d0c8b542b12268bd6d5ed6e5c05a
+ms.sourcegitcommit: 39609c4d8c432c8e7d7a31cb35c8020e5207385b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51203742"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "51445716"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>威胁资源管理器和实时检测
 
@@ -58,7 +58,7 @@ ms.locfileid: "51203742"
 今天，如果你从警报导航到威胁资源管理器，它将在资源管理器中打开筛选的视图，其中按警报策略 ID (策略 ID 筛选的视图是警报策略设置的唯一标识符) 。
 我们正在通过引入警报 ID (在威胁资源管理器和实时检测中查看) 下方的警报 ID 示例，以便查看与特定警报相关的邮件以及电子邮件数量，从而使此集成更具相关性。 您还可以查看邮件是否属于警报，以及从该邮件导航到特定警报。  
 
-查看单个警报时，警报 ID 在 URL 中可用;示例为 `https://protection.office.com/viewalerts?id=372c9b5b-a6c3-5847-fa00-08d8abb04ef1`
+查看单个警报时，警报 ID 在 URL 中可用;示例为 `https://protection.office.com/viewalerts?id=372c9b5b-a6c3-5847-fa00-08d8abb04ef1` 。
 
 > [!div class="mx-imgBorder"]
 > ![筛选警报 ID](../../media/AlertID-Filter.png)
@@ -177,7 +177,6 @@ URL 单击飞出也显示标记信息。 若要查看它，请转到网络钓鱼
 > - 检测技术和其他操作将具有新的字段和值 **， (适用于** ZAP) 。 您需要评估现有的已保存查询和跟踪查询，以确保它们使用新值。
 
 > [!div class="mx-imgBorder"]
-
 > ![资源管理器中的其他操作](../../media/Additional_Actions.png)
 
 ### <a name="system-overrides"></a>系统覆盖
@@ -185,9 +184,13 @@ URL 单击飞出也显示标记信息。 若要查看它，请转到网络钓鱼
 *系统覆盖* 使您能够对邮件的预定传递位置进行例外。 根据筛选堆栈确定的威胁和其他检测，你可以覆盖系统提供的传递位置。 可以通过租户或用户策略设置系统覆盖，以根据策略的建议传递邮件。 替代可以标识由于配置差异（如用户设置过宽的安全发件人策略）而意外传递恶意邮件。 这些替代值可以是：
 
 - 用户策略允许：用户在邮箱级别创建策略以允许域或发件人。
+
 - 被用户策略阻止：用户在邮件框级别创建策略以阻止域或发件人。
+
 - 组织策略允许：组织的安全团队设置策略或 Exchange 邮件流规则 (也称为传输规则) ，以允许组织中的用户使用发件人和域。 这适用于一组用户或整个组织。
+
 - 被组织策略阻止：组织的安全团队设置策略或邮件流规则，以阻止组织中用户的发件人、域、邮件语言或源 IP。 这可应用于一组用户或整个组织。
+
 - 组织策略阻止的文件扩展名：组织的安全团队通过反恶意软件策略设置阻止文件扩展名。 这些值现在将显示在电子邮件详细信息中，以帮助进行调查。 Secops 团队还可使用丰富的筛选功能筛选阻止的文件扩展名。
 
 [![资源管理器中的系统覆盖](../../media/System_Overrides.png)](../../media/System_Overrides.png#lightbox)
@@ -233,7 +236,8 @@ ZAP URL 信号通常用于 ZAP 网络钓鱼警报方案，其中电子邮件被�
 > [!IMPORTANT]
 > 按用户标记进行筛选和排序目前处于公共预览阶段。 此功能在商业发行之前可能会进行重大修改。 Microsoft 对提供的信息不做出明示或暗示的担保。
 
-![资源管理器中的标记列](../../media/threat-explorer-tags.png)
+> [!div class="mx-imgBorder"]
+> ![资源管理器中的标记列](../../media/threat-explorer-tags.png)
 
 ### <a name="timezone-improvements"></a>时区改进
 
@@ -282,21 +286,20 @@ ZAP URL 信号通常用于 ZAP 网络钓鱼警报方案，其中电子邮件被�
 
 您将能够查看已应用于邮件的传输规则的 GUID 和名称。 您将能够使用传输规则的名称搜索邮件。 这是一个"包含"搜索，这意味着您也可以执行部分搜索。
 
-#### <a name="important-note"></a>重要说明：
-
-ETR 搜索和名称可用性取决于分配给您的特定角色。 您需要具有以下角色/权限之一才能查看 ETR 名称和搜索。 如果没有分配任何这些角色，则看不到传输规则的名称，也看不到使用 ETR 名称搜索邮件。 但是，您可以在电子邮件详细信息中查看 ETR 标签和 GUID 信息。 电子邮件网格、电子邮件飞出、筛选器和导出中的其他记录查看体验不受影响。
-
-- 仅 EXO - 数据丢失防护：全部
-- 仅 EXO - O365SupportViewConfig：全部
-- Microsoft Azure Active Directory 或 EXO - 安全管理员：全部
-- AAD 或 EXO - 安全读者：全部
-- 仅 EXO - 传输规则：全部
-- 仅 EXO - View-Only配置：全部
-
-在电子邮件网格、详细信息飞出控件和导出的 CSV 中，ETR 将显示一个名称/GUID，如下所示。
-
-> [!div class="mx-imgBorder"]
-> ![Exchange 传输规则](../../media/ETR_Details.png)
+> [!IMPORTANT]
+> ETR 搜索和名称可用性取决于分配给您的特定角色。 您需要具有以下角色/权限之一才能查看 ETR 名称和搜索。 如果没有分配任何这些角色，则看不到传输规则的名称，也看不到使用 ETR 名称搜索邮件。 但是，您可以在电子邮件详细信息中查看 ETR 标签和 GUID 信息。 电子邮件网格、电子邮件飞出、筛选器和导出中的其他记录查看体验不受影响。
+> 
+> - 仅 EXO - 数据丢失防护：全部
+> - 仅 EXO - O365SupportViewConfig：全部
+> - Microsoft Azure Active Directory 或 EXO - 安全管理员：全部
+> - AAD 或 EXO - 安全读者：全部
+> - 仅 EXO - 传输规则：全部
+> - 仅 EXO - View-Only配置：全部
+> 
+> 在电子邮件网格、详细信息飞出控件和导出的 CSV 中，ETR 将显示一个名称/GUID，如下所示。
+> 
+> > [!div class="mx-imgBorder"]
+> > ![Exchange 传输规则](../../media/ETR_Details.png)
 
 ### <a name="inbound-connectors"></a>入站连接器
 
@@ -334,18 +337,23 @@ ETR 搜索和名称可用性取决于分配给您的特定角色。 您需要具
 
 4. Select the Subject of any message under the Email tab > Details tab to see additional impersonation information like Impersonated Domain / Detected location.
 
-5. **OR** 选择 **"模拟用户** "，在文本框中键入受保护的用户的电子邮件地址。
+    **OR** 
 
-6. 在"**电子邮件"****选项卡"详细信息**"选项卡下选择任何邮件的主题，以查看有关用户或域的其他模拟信息和  >  检测到 *的位置*。
+    选择 **"模拟用户** "，在文本框中键入受保护的用户的电子邮件地址。
 
-:::image type="content" source="../../media/threat-ex-views-impersonated-user-image.png" alt-text="显示检测位置和检测到的威胁的受保护用户的&quot;威胁资源管理器&quot;详细信息窗格 (冒充用户或) 。":::
+    > [!TIP]
+    > **为了获得最佳结果**，请使用 *完整电子邮件地址* 来搜索受保护的用户。 例如，在调查用户模拟时，如果搜索 *firstname.lastname@contoso.com，您将* 更快、更成功地找到受保护的用户。 搜索受保护的域时，搜索将接受根域 (contoso.com，例如) ，域名 (*contoso*) 。 搜索根域 contoso.com将同时返回 contoso.com 和域名 *contoso 的模拟*。 
 
-> [!TIP]
-> **为了获得最佳结果**，请使用 *完整电子邮件地址* 来搜索受保护的用户。 例如，在调查用户模拟时，如果搜索 *firstname.lastname@contoso.com，您将* 更快、更成功地找到受保护的用户。 搜索受保护的域时，搜索将接受根域 (contoso.com，例如) ，域名 (*contoso*) 。 搜索根域 contoso.com将同时返回 contoso.com 和域名 *contoso 的模拟*。 
+5. 在"**电子邮件"****选项卡"详细信息**"选项卡下选择任何邮件的主题，以查看有关用户或域的其他模拟信息和  >  检测到 *的位置*。
+
+    :::image type="content" source="../../media/threat-ex-views-impersonated-user-image.png" alt-text="显示检测位置和检测到的威胁的受保护用户的&quot;威胁资源管理器&quot;详细信息窗格 (冒充用户或) 。":::
+
+> [!NOTE]
+> 在步骤 3 或 5 中，如果分别选择"检测技术"并选择"模拟域"或"模拟用户"，则"电子邮件"选项卡"详细信息"选项卡中有关用户或域的信息以及"检测到的位置"将只显示在与"反网络钓鱼策略"页中列出的用户或域相关的邮件上。   >     
 
 ### <a name="preview-email-header-and-download-email-body"></a>预览电子邮件头并下载电子邮件正文
 
-你现在可以在威胁资源管理器中预览电子邮件头并下载电子邮件正文。管理员可以分析下载的邮件头/电子邮件中的威胁。 因为下载电子邮件可能会暴露信息的风险，所以此过程由基于角色的访问控制 (RBAC) 。 必须将新角色 *Preview* 添加到另一个角色组 (如安全操作或安全管理员) ，以授予在全电子邮件视图中下载邮件的能力。 但是，查看电子邮件头不需要任何其他角色 (在威胁资源管理器中查看邮件所需的角色) 。
+你现在可以在威胁资源管理器中预览电子邮件头并下载电子邮件正文。 管理员可以分析下载的邮件头/电子邮件中的威胁。 因为下载电子邮件可能会暴露信息的风险，所以此过程由基于角色的访问控制 (RBAC) 。 必须将新角色 *Preview* 添加到另一个角色组 (如安全操作或安全管理员) ，以授予在全电子邮件视图中下载邮件的能力。 但是，查看电子邮件头不需要任何其他角色 (在威胁资源管理器中查看邮件所需的角色) 。
 
 资源管理器和实时检测还将获得新字段，这些字段提供电子邮件到达位置的更完整图片。 这些更改使搜寻安全操作变得更加简单。 但主要结果是你可以一目了然地知道问题电子邮件的位置。
 

@@ -16,12 +16,12 @@ ms.collection:
 description: 了解 Microsoft 365 E5 或 Microsoft 365 E5 安全中心中的安全文档。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a1dc6c5dc54acd73b68fcd6241a270d2abdcc5c1
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 78ae99158e30046923d24897e7ab9b45adff31d0
+ms.sourcegitcommit: 39609c4d8c432c8e7d7a31cb35c8020e5207385b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51203571"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "51445392"
 ---
 # <a name="safe-documents-in-microsoft-365-e5"></a>Microsoft 365 E5 中的安全文档
 
@@ -31,7 +31,7 @@ ms.locfileid: "51203571"
 - [适用于 Office 365 计划 2 的 Microsoft Defender](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-安全文档是 Microsoft 365 E5 或 Microsoft 365 E5 安全中心中的一项功能，它使用 [Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) 扫描在受保护视图中打开 [的文档和文件](https://support.microsoft.com/office/d6f09ac7-e6b9-4495-8e43-2bbcdbcb6653)。
+安全文档是 Microsoft 365 E5 或 Microsoft 365 E5 安全中心中的一项功能，它使用 Microsoft [](https://support.microsoft.com/office/d6f09ac7-e6b9-4495-8e43-2bbcdbcb6653) [Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)扫描在受保护的视图或 Office 应用程序防护中打开的文档[和文件](https://support.microsoft.com/topic/9e0fb9c2-ffad-43bf-8ba3-78f785fdba46)。
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>开始前，有必要了解什么？
 
@@ -93,6 +93,12 @@ Set-AtpPolicyForO365 -EnableSafeDocs $true -AllowSafeDocsOpen $false
 ```
 
 有关语法和参数的详细信息，请参阅 [Set-AtpPolicyForO365](/powershell/module/exchange/set-atppolicyforo365)。
+
+### <a name="onboard-to-the-microsoft-defender-for-endpoint-service-to-enable-auditing-capabilities"></a>载入 Microsoft Defender for Endpoint Service 以启用审核功能
+
+若要部署 Microsoft Defender for Endpoint，你需要完成部署的各个阶段。 载入后，可以在安全与合规中心&审核功能。
+
+若要了解更多信息，请参阅 [载入到 Microsoft Defender for Endpoint 服务](/microsoft-365/security/defender-endpoint/onboarding)。 如果你需要其他帮助，请参阅疑难解答 [Microsoft Defender 终结点载入问题](/microsoft-365/security/defender-endpoint/troubleshoot-onboarding)。
 
 ### <a name="how-do-i-know-this-worked"></a>我如何知道这有效？
 

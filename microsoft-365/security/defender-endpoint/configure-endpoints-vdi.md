@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 04/16/2020
 ms.technology: mde
-ms.openlocfilehash: 167db9b5da841528e95f167b3af6a840b6c71eb4
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: bf1e706562db06064409cb7cf11441d048ef8db6
+ms.sourcegitcommit: 39609c4d8c432c8e7d7a31cb35c8020e5207385b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51165557"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "51445282"
 ---
 # <a name="onboard-non-persistent-virtual-desktop-infrastructure-vdi-devices"></a>载入非持久性虚拟桌面基础结构 (VDI) 设备。
 
@@ -48,8 +48,11 @@ Defender for Endpoint 支持非永久性 VDI 会话载入。
 
 VDI 设备可以在 Defender for Endpoint 门户中显示为：
 
-- 每台设备的单个条目。  
-请注意，在这种情况下，创建会话时必须配置相同的设备名称，例如使用无人参与应答文件。
+- 每台设备的单个条目。
+
+  > [!NOTE]
+  > 在这种情况下， *必须在创建会话* 时配置相同的设备名称，例如使用无人参与应答文件。
+
 - 每个设备有多个条目 - 每个会话一个条目。
 
 以下步骤将指导你完成载入 VDI 设备，并重点介绍单项和多条目的步骤。
@@ -84,14 +87,15 @@ VDI 设备可以在 Defender for Endpoint 门户中显示为：
    > [!NOTE]
    > 域组策略还可用于载入非永久性 VDI 设备。
 
-4. 根据你要实现的方法，请按照相应步骤操作： <br>
-   **对于每台设备的单个条目**：<br>
+4. 根据你要实现的方法，请按照相应步骤操作：
+
+   - 对于每台设备的单个条目：
    
-   选择 **"PowerShell 脚本**"选项卡，然后单击"添加 (Windows 资源管理器将在你之前复制载入脚本的路径中直接) 。 导航到载入 PowerShell 脚本 `Onboard-NonPersistentMachine.ps1` 。
+     选择 **"PowerShell 脚本**"选项卡，然后单击"添加 (Windows 资源管理器将在你之前复制载入脚本的路径中直接) 。 导航到载入 PowerShell 脚本 `Onboard-NonPersistentMachine.ps1` 。 无需指定其他文件，因为它将自动触发。
    
-   **对于每台设备的多个条目**：
+   - 对于每台设备的多个条目：
    
-   选择" **脚本** "选项卡，然后单击 **"添加** (Windows 资源管理器将在你之前复制载入脚本的路径中直接) 。 导航到载入 Bash 脚本 `WindowsDefenderATPOnboardingScript.cmd` 。
+     选择" **脚本** "选项卡，然后单击 **"添加** (Windows 资源管理器将在你之前复制载入脚本的路径中直接) 。 导航到载入 Bash 脚本 `WindowsDefenderATPOnboardingScript.cmd` 。
 
 5. 测试解决方案：
 
@@ -103,8 +107,15 @@ VDI 设备可以在 Defender for Endpoint 门户中显示为：
 
    1. 使用其他用户登录到设备。
       
-   1. **对于每台设备的单个条目**：在 Microsoft Defender 安全中心中仅检查一个条目。<br>
-      **对于每台设备的多个条目**：在 Microsoft Defender 安全中心中检查多个条目。
+   1. 根据你要实现的方法，请按照相应步骤操作：
+   
+      - 对于每台设备的单个条目： 
+    
+        在 Microsoft Defender 安全中心中仅检查一个条目。
+
+      - 对于每台设备的多个条目： 
+       
+        检查 Microsoft Defender 安全中心中的多个条目。
 
 6. 单击 **导航窗格上的** "设备列表"。
 
@@ -118,14 +129,14 @@ VDI 设备可以在 Defender for Endpoint 门户中显示为：
 
 1. 将注册表值设置为：
 
-    ```reg
+    ```console
    [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection\DeviceTagging]
     "VDI"="NonPersistent"
     ```
 
     或者使用命令行：
 
-    ```
+    ```console
     reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection\DeviceTagging" /v VDI /t REG_SZ /d "NonPersistent" /f
     ```
 
