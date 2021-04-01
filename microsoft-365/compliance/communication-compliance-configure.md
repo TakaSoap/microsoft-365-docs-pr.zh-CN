@@ -20,12 +20,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: aa3af1e3cf507178a5747cca28fbda543aecd334
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: e4dcbeeda50c6229935bae8003d8db129d852451
+ms.sourcegitcommit: 7ebed5810480d7c49f8ca03207b5ea84993d253f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51052120"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51488199"
 ---
 # <a name="get-started-with-communication-compliance"></a>通信合规性入门
 
@@ -112,7 +112,7 @@ ms.locfileid: "51052120"
 
 9. 选择“**关闭**”以完成步骤。
 
-有关角色组和权限的详细信息，请参阅 [合规中心中的权限](../security/defender-365-security/protect-against-threats.md)。
+有关角色组和权限的详细信息，请参阅 [合规中心中的权限](../security/office-365-security/protect-against-threats.md)。
 
 ## <a name="step-2-required-enable-the-audit-log"></a>步骤 2（必选）：启用审核日志
 
@@ -134,9 +134,6 @@ ms.locfileid: "51052120"
 在策略中分配通讯组时，策略会监视通讯组每个用户的所有电子邮件和 Teams 聊天。 在策略中分配 Microsoft 365 组时，策略会监视发送到该组的所有电子邮件和 Teams 聊天，而不是每个团队成员收到的单个电子邮件和聊天。
 
 如果你是具有 Exchange 本地部署或外部电子邮件提供商的组织，并且想要监视用户的 Microsoft Teams 聊天，则必须创建一个通讯组以便具有本地或外部邮箱的用户进行监视。 在这些步骤的稍后部分，你将此通讯组分配为策略向导中的 **受监督用户和组**。
-
->[!IMPORTANT]
->你必须向 Microsoft 支持人员提交请求，以使贵组织能够使用安全与合规中心中的图形用户界面来搜索本地用户的 Teams 聊天数据。 有关详细信息，请参阅 [为本地用户搜索基于云的邮箱](search-cloud-based-mailboxes-for-on-premises-users.md)。
 
 若要在大型企业组织中管理受监督的用户，可能需要监视大型组的所有用户。 可使用 PowerShell 为已分配组配置全局通信合规性策略的通讯组。 这样，可以使用一个策略监视成千上万个用户，并在新员工加入组织时保持通信合规性策略的更新。
 

@@ -22,12 +22,12 @@ ms.assetid: c4639c2e-7223-4302-8e0d-b6e10f1c3be3
 ms.custom:
 - seo-marvel-apr2020
 description: 了解可以使用 Microsoft 365 中的搜索和电子数据展示工具搜索的电子邮件和文件属性。
-ms.openlocfilehash: e3282cd5b8bcc493e7c423db72c086f953d114ec
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: b3b2410c899ec98f39a4f89e5ea0a86537e5b666
+ms.sourcegitcommit: 7ebed5810480d7c49f8ca03207b5ea84993d253f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50903580"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51488297"
 ---
 # <a name="keyword-queries-and-search-conditions-for-content-search-and-ediscovery"></a>内容搜索和电子数据展示的关键字查询和搜索条件
 
@@ -97,7 +97,7 @@ ms.locfileid: "50903580"
 |:-----|:-----|:-----|:-----|
 |作者|作者字段位于 Office 文档中，复制文档后仍然存在其中。 例如，如果用户创建一个文档，并将其通过电子邮件发送给随后将其上载到 SharePoint 的其他人，该文档仍将保留原始作者。 请务必使用用户的 显示名称 此属性。|`author:"Garth Fort"`|所有文档的作者均为 Garth Fort。|
 |ContentType|项的 SharePoint 内容类型，如项、文档或视频。|`contenttype:document`|将返回所有文档。|
-|Created|创建项目的日期。|`created>=06/01/2016`|在 2016 年 6 月 1 日当天或之后创建的所有项目。|
+|已创建|创建项目的日期。|`created>=06/01/2016`|在 2016 年 6 月 1 日当天或之后创建的所有项目。|
 |CreatedBy|创建或上载项目的人员。 请务必使用用户的 显示名称 此属性。|`createdby:"Garth Fort"`|所有项目均由 Garth Fort 创建或上载。|
 |DetectedLanguage|项目的语言。|`detectedlanguage:english`|所有项目均为英语。|
 |DocumentLink|SharePoint () OneDrive for Business 网站上特定文件夹的路径 URL。 如果使用此属性，请确保搜索指定文件夹所在的网站。  <br/> 若要返回位于为 documentlink 属性指定的文件夹的子文件夹中的项目，您必须将 /添加到指定文件夹的 URL 中; \* 例如，  `documentlink: "https://contoso.sharepoint.com/Shared Documents/*"`  <br/> <br/>有关搜索 documentlink 属性和使用脚本获取特定网站上文件夹的文档链接 URL 的信息，请参阅对目标集合使用内容 [搜索](use-content-search-for-targeted-collections.md)。|`documentlink:"https://contoso-my.sharepoint.com/personal/garthf_contoso_com/Documents/Private"`  <br/> `documentlink:"https://contoso-my.sharepoint.com/personal/garthf_contoso_com/Documents/Shared with Everyone/*" AND filename:confidential`|第一个示例返回指定 OneDrive for Business 文件夹中的所有项目。 第二个示例返回指定网站文件夹中的文档 (文件名中包含) "机密"一词的所有子文件夹。|
@@ -105,11 +105,11 @@ ms.locfileid: "50903580"
 |FileName|文件的名称。|`filename:"marketing plan"`  <br/> `filename:estimate`|第一个示例返回标题中具有完全匹配短语“marketing plan”的文件。第二个示例返回文件名中具有单词“estimate”的文件。|
 |LastModifiedTime|项目的上次更改日期。|`lastmodifiedtime>=05/01/2016`  <br/> `lastmodifiedtime>=05/10/2016 AND lastmodifiedtime<=06/1/2016`|第一个示例返回在 2016 年 5 月 1 日当天或之后更改的项目。 第二个示例返回 2016 年 5 月 1 日到 2016 年 6 月 1 日之间更改的项目。|
 |ModifiedBy|上次更改项目的人员。 请务必使用用户的 显示名称 此属性。|`modifiedby:"Garth Fort"`|由 Garth Fort 最后更改的所有项目。|
-|路径|SharePoint () OneDrive for Business 网站中特定网站的路径 URL。  <br/> 若要返回网站中为 path 属性指定的文件夹中的项目，您必须将 /添加到指定网站的 URL \* 中;例如，  `path: "https://contoso.sharepoint.com/Shared Documents/*"`  <br/> <br/> **注意：** 使用 属性搜索 OneDrive 位置不会在搜索结果中返回媒体文件，如  `Path` .png、.tiff 或 .wav 文件。 在搜索查询中使用不同的网站属性来搜索 OneDrive 文件夹中的媒体文件。 <br/>|`path:"https://contoso-my.sharepoint.com/personal/garthf_contoso_com/"`  <br/> `path:"https://contoso-my.sharepoint.com/personal/garthf_contoso_com/*" AND filename:confidential`|第一个示例返回指定 OneDrive for Business 网站中的所有项目。 第二个示例返回指定网站 (中的文档和网站) 文件名中包含"机密"一词的文件夹。|
+|Path|SharePoint () OneDrive for Business 网站中特定网站的路径 URL。<br/><br/>若要仅返回指定网站中的项目，您必须将尾随添加到 URL 的 `/` 末尾;例如， `path: "https://contoso.sharepoint.com/sites/international/"` <br/><br/> 若要返回在 path 属性中指定的网站文件夹中的项目，您必须添加到 URL 的 `/*` 末尾;例如，  `path: "https://contoso.sharepoint.com/Shared Documents/*"`  <br/><br/> **注意：** 使用 属性搜索 OneDrive 位置不会在搜索结果中返回媒体文件，如  `Path` .png、.tiff 或 .wav 文件。 在搜索查询中使用不同的网站属性来搜索 OneDrive 文件夹中的媒体文件。 <br/>|`path:"https://contoso-my.sharepoint.com/personal/garthf_contoso_com/"`  <br/> `path:"https://contoso-my.sharepoint.com/personal/garthf_contoso_com/*" AND filename:confidential`|第一个示例返回指定 OneDrive for Business 网站中的所有项目。 第二个示例返回指定网站 (中的文档和网站) 文件名中包含"机密"一词的文件夹。|
 |SharedWithUsersOWSUser|已与指定用户共享并显示在用户的 OneDrive for  Business 网站中的"与我共享"页面上的文档。 这些是组织中其他人已与指定用户显式共享的文档。 导出与使用 SharedWithUsersOWSUser 属性的搜索查询匹配的文档时，文档从与指定用户共享文档的用户的原始内容位置导出。 有关详细信息，请参阅搜索 [在组织中共享的网站内容](#searching-for-site-content-shared-within-your-organization)。|`sharedwithusersowsuser:garthf`  <br/> `sharedwithusersowsuser:"garthf@contoso.com"`|这两个示例都返回已与 Garth Fort 显式共享且显示在 Garth  Fort 的 OneDrive for Business 帐户的"共享我"页面上的所有内部文档。|
 |Site|组织中站点或站点组的 URL。|`site:"https://contoso-my.sharepoint.com"`  <br/> `site:"https://contoso.sharepoint.com/sites/teams"`|第一个示例返回组织中所有用户的 OneDrive for Business 网站中的项目。 第二个示例返回所有团队网站中的项目。|
 |Size|邮件的大小（以字节为单位）。|`size>=1`  <br/> `size:1..10000`|第一个示例返回大于 1 字节的项目。第二个示例返回大小介于 1 到 10,000 字节之间的项目。|
-|Title|文档的标题。 Title 属性是在文档中指定的元数据Microsoft Office元数据。 它不同于文档的文件名。|`title:"communication plan"`|Office 文档的 Title 元数据属性中包含短语“communication plan”的任何文档。|
+|标题|文档的标题。 Title 属性是在文档中指定的元数据Microsoft Office元数据。 它不同于文档的文件名。|`title:"communication plan"`|Office 文档的 Title 元数据属性中包含短语“communication plan”的任何文档。|
 |||||
 
 ## <a name="searchable-contact-properties"></a>可搜索联系人属性
@@ -124,7 +124,7 @@ ms.locfileid: "50903580"
 |BusinessAddress|"商务地址 **"属性中的** 地址。 该属性在联系人属性 **页上也称为** "工作地址"。|
 |BusinessPhone|任何商务电话号码 **属性中** 的电话号码。|
 |CompanyName|Company 属性 **中** 的名称。|
-|Department|Department 属性 **中** 的名称。|
+|部门|Department 属性 **中** 的名称。|
 |DisplayName|联系人显示名称。 这是联系人的 **"全名"** 属性中的名称。|
 |EmailAddress|联系人的任何电子邮件地址属性的地址。 用户可以为联系人添加多个电子邮件地址。 使用此属性将返回与联系人的任何电子邮件地址匹配的联系人。|
 |FileAs|**File 作为** 属性。 此属性用于指定联系人在用户的联系人列表中的列出方式。 例如，联系人可以列为  *FirstName，LastName*  或  *LastName，FirstName*。|
@@ -138,7 +138,7 @@ ms.locfileid: "50903580"
 |OfficeLocation|Office 或 **Office** **位置属性的值** 。|
 |OtherAddress|Other **address** 属性的值。|
 |Surname|Last **name** 属性中的名称。|
-|Title|Job title 属性 **中** 的标题。|
+|标题|Job title 属性 **中** 的标题。|
 |||||
 
 ## <a name="searchable-sensitive-data-types"></a>可搜索敏感数据类型
@@ -233,7 +233,7 @@ ms.locfileid: "50903580"
 |发件人|电子邮件的发件人。|
 |Sent|发件人发送电子邮件的日期。 此属性与“Sent”电子邮件属性相同。|
 |Subject|电子邮件主题行中的文本。|
-|To|"收件人"字段中电子邮件的收件人。|
+|到|"收件人"字段中电子邮件的收件人。|
 |||
   
 ### <a name="conditions-for-document-properties"></a>文档属性的条件
@@ -243,8 +243,8 @@ ms.locfileid: "50903580"
 | Condition | 说明 |
 |:-----|:-----|
 |作者|作者字段位于 Office 文档中，复制文档后仍然存在其中。 例如，如果用户创建一个文档，并将其通过电子邮件发送给随后将其上载到 SharePoint 的其他人，该文档仍将保留原始作者。|
-|Title|文档的标题。 Title 属性是 Office 文档中指定的元数据。 它不同于文档的文件名。|
-|Created|创建文档的日期。|
+|标题|文档的标题。 Title 属性是 Office 文档中指定的元数据。 它不同于文档的文件名。|
+|已创建|创建文档的日期。|
 |上次修改时间|上次修改文档的日期。|
 |文件类型|文件的扩展名;例如，docx、one、pptx 或 xlsx。 此属性与 FileExtension 网站属性相同。|
 |||
@@ -446,3 +446,5 @@ kind:im AND subject:conversation AND (received=startdate..enddate)
 - 若要将使用某个属性值标记的内容从搜索结果中排除，请在属性名称前放置减号 (-)。 例如，排除 Sara `-from:"Sara Davis"` Davis 发送的任何邮件。
 
 - 您可以根据邮件类型导出项目。 例如，若要导出 Microsoft Teams 中的 Skype 对话和聊天，请使用语法 `kind:im` 。 若要仅返回电子邮件，请使用 `kind:email` 。 若要在 Microsoft Teams 中返回聊天、会议和通话，请使用 `kind:microsoftteams` 。
+
+- 如前所述，在搜索网站时，当使用 属性仅返回指定网站中的项目时，您必须将尾随添加到 `/` URL `path` 的末尾。 如果不包括尾随，还将返回具有相似路径名称 `/` 的网站中的项目。 例如，如果使用 `path:sites/HelloWorld` ，则也会返回名为 `sites/HelloWorld_East` 或 `sites/HelloWorld_West` 的网站中的项目。 若要仅从 HelloWorld 网站返回项目，你必须使用 `path:sites/HelloWorld/` 。

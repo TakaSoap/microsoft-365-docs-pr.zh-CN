@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 可以创建与核心电子数据展示案例关联的保留，以保留与调查相关的内容。
-ms.openlocfilehash: c84d0be5a4a659ff9b64af14052bcf4033e2ed24
-ms.sourcegitcommit: d4604e333507c6f57d5bf327531a241b649052de
+ms.openlocfilehash: 1026de3b5357c3417a00a69b4ae6890e8036c091
+ms.sourcegitcommit: 7ebed5810480d7c49f8ca03207b5ea84993d253f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/31/2021
-ms.locfileid: "51470473"
+ms.locfileid: "51488241"
 ---
 # <a name="create-an-ediscovery-hold"></a>创建电子数据展示保留
 
@@ -131,8 +131,8 @@ ms.locfileid: "51470473"
 
 或者，属于 Teams (中聊天列表（称为一对一聊天或 *一对 N* 群聊) ）的对话将存储在参与聊天的用户的邮箱中。 用户在聊天对话中共享的文件存储在共享文件的用户的 OneDrive 帐户中。 因此，您必须将单个用户邮箱和 OneDrive 帐户添加到电子数据展示保留，以保留聊天列表中的对话和文件。 除了将团队邮箱和网站置于保留状态之外，还建议将 Microsoft Team 成员的邮箱置于保留状态。
 
-> [!IMPORTANT]
-> 在基于云的组织中，参与 Teams 中聊天列表一部分的对话的用户必须具有 Exchange Online 邮箱，才能在邮箱置于电子数据展示保留时保留聊天对话。 这是因为属于聊天列表的对话存储在聊天参与者的基于云的邮箱中。 如果聊天参与者没有 Exchange Online 邮箱，你将无法保留这些聊天对话。 例如，在 Exchange 混合部署中，具有本地邮箱的用户可能能够参与 Teams 中聊天列表的一部分的对话。 但在这种情况下，无法保留这些对话中的内容，因为这些用户没有可置于保留状态基于云的邮箱。
+> [!NOTE]
+> 如果你的组织具有 Exchange 混合部署 (或者你的组织将本地 Exchange 组织与 Office 365) 同步，并且已启用 Microsoft Teams，本地用户可以使用 Teams 聊天应用程序并参与一对一聊天和一对 N 群聊。 这些对话存储在与本地用户关联的基于云的存储中。 如果将本地用户置于电子数据展示保留状态，将保留基于云的存储中的 Teams 聊天内容。 有关详细信息，请参阅 [搜索本地用户的 Teams 聊天数据](search-cloud-based-mailboxes-for-on-premises-users.md)。
 
 有关保留 Teams 内容的信息，请参阅将[Microsoft Teams 用户或团队合法保留。](/MicrosoftTeams/legal-hold)
 
