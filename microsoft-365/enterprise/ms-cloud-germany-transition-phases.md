@@ -18,18 +18,18 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 摘要：了解从德国 Microsoft 云 (德国) 迁移到新的德国数据中心区域 Office 365 服务的迁移阶段操作和影响。
-ms.openlocfilehash: 53a8c9470093db9d57d8dc18f4242d1a596c6efd
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: ca24fff5e8b18128c55288352e65aa3cecfe3d81
+ms.sourcegitcommit: 7b8104015a76e02bc215e1cf08069979c70650ae
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51165629"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51476609"
 ---
 # <a name="migration-phases-actions-and-impacts-for-the-migration-from-microsoft-cloud-deutschland-general"></a>迁移阶段从德国 Microsoft 云迁移的操作和影响 (常规) 
 
-从德国 Microsoft 云 (MCD) 到 Microsoft Office 365 全球服务"德国"地区的租户迁移作为一组阶段执行，并针对每个工作负载配置操作。 此图显示了迁移到新的德国数据中心的九个阶段。
+从德国 Microsoft 云 (MCD) 到 Microsoft Office 365 全球服务"德国"地区的租户迁移作为一组阶段执行，并针对每个工作负载配置操作。 此图显示了迁移到新的德国数据中心的十个阶段。
 
-![迁移到新德国数据中心的九个阶段](../media/ms-cloud-germany-migration-opt-in/migration-organization.png)
+![迁移到新德国数据中心的十个阶段](../media/ms-cloud-germany-migration-opt-in/migration-organization.png)
 
 迁移过程将在几周内完成，具体取决于组织的总体大小和复杂性。 在迁移过程中，用户和管理员能够继续利用服务，并对此文档进行详细介绍，并做出显著更改。 图形和表定义迁移期间阶段和步骤。
 
@@ -47,6 +47,8 @@ ms.locfileid: "51165629"
 |Power BI & Dynamics 365|15 天以上|Microsoft|迁移 Power BI 和 Dynamics 365 内容。|
 |完成 Azure AD|1-2 天|Microsoft|将租户完全转换到全球。|
 |Clean-Up|1-2 天|客户|清理到德国 Microsoft 云的旧连接，例如 Active Directory 联合身份验证服务 (AD FS) 信赖方信任、Azure AD Connect 和 Office 客户端重新启动。|
+|终结点已禁用|30 天|Microsoft|Azure AD 完成 30 天后，德国 Microsoft 云 Azure AD 服务将停止对已转换组织的终结点访问。 从此时开始，针对德国 Microsoft 云服务的终结点请求（如身份验证）将失败。 |
+
 
 阶段及其操作可确保将关键数据和体验迁移到 Office 365 全球服务。 将租户添加到迁移队列后，每个工作负载都将作为在后端服务上执行的一组步骤完成。 某些工作负载可能需要管理员或 (用户) ，或者迁移可能会影响执行和在如何组织迁移中讨论的阶段的 [使用情况？](ms-cloud-germany-transition.md#how-is-the-migration-organized)
 
@@ -118,6 +120,7 @@ ms.locfileid: "51165629"
 |停止或删除任何载入或载出邮箱移动，即不在本地 Exchange 和 Exchange Online 之间移动邮箱。  | 这可确保邮箱移动请求不会失败并出现错误。 | 如果不这样做，可能会导致服务或 Office 客户端失败。 |
 | Exchange Online 邮箱从德国 Microsoft 云移动到 Office 365 全局服务。| Exchange Online 配置将新的德国本地区域添加到转换组织。 Office 365 全局服务区域设置为默认区域，这使内部负载平衡服务能够将邮箱重新分发到 Office 365 服务中的相应默认区域。 在此转换中，使用 MCD (全局服务) 位于同一组织中，并且可以使用任一 URL 终结点。 |<ul><li>将用户和服务从旧式 MCD URL (outlook.office.de) 新的 Office 365 服务 URL `https://outlook.office365.com` () 。</li><li>在迁移过程中，用户可能会继续通过旧 MCD URL 访问服务，但需要在迁移完成后停止使用旧 URL。</li><li>用户应过渡到使用全球 Office 门户，以使用 Office Online 功能， (日历、邮件、) 。 在迁移到 Office 365 服务之前，导航到尚未迁移到 Office 365 服务的服务将无法正常工作。 </li><li>迁移Outlook Web App无法提供公用文件夹体验。 </li></ul>|
 | 更新自动发现的自定义 DNS 设置| 当前指向德国 Microsoft 云的自动发现的客户托管 DNS 设置需要进行更新，以在 Exchange Online 阶段 (阶段 5) 完成时引用 Office 365 全局终结点。 <br> 指向 CNAME 的现有 DNS autodiscover-outlook.office.de 需要进行更新以指向 autodiscover.outlook.com。 |  通过自动发现的可用性请求和服务发现调用直接指向 Office 365 服务。 迁移完成时，不执行这些 DNS 更新的客户可能会遇到自动发现服务问题。 |
+| 用户必须更新 POP3、IMAP4、SMTP 客户端配置。 | 对于客户端协议 POP3、IMAP4 和 SMTP，具有 Microsoft 云德国终结点的设备连接的用户需要手动更新其客户端设备，以切换到同时将邮箱迁移到 Office 365 Germany 地区的 [Office 365](https://docs.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges?view=o365-worldwide) 全球终结点。 <br> smtp.office365.com ： SMTP (TCP：587) ， outlook.office365.com ： IMAP4 (TCP：993) ， POP3 (TCP：995) | 这些协议的用户必须切换为在转换邮箱时使用 Outlook Mobile 或 Outlook 网页版，并在完成时将客户端设备上 IMAP4、POP3 和 SMTP 设置更新到新终结点。 迁移用户邮箱时，更新客户端终结点失败将导致德国 Microsoft 云的客户端连接失败。 |
 ||||
 
 其他注意事项：
@@ -204,6 +207,18 @@ Connect-MicrosoftTeams -Credential $userCredential -OverridePowershellUri "https
 ||||
 
 \*\* (使用 Microsoft Power BI) 客户必须按照提供的迁移过程定义，在此迁移方案中采取措施。  (ii) 客户采取操作失败意味着 Microsoft 无法完成迁移。  (iii) 当 Microsoft 因客户的不作为无法完成迁移时，客户的订阅将于 2021 年 10 月 29 日到期。
+
+## <a name="azure-ad-finalization-phase-9-10"></a>Azure AD 最终 (阶段 9，10) 
+
+**适用于：** 所有客户
+
+当 Office 365 租户完成迁移的最后步骤 [Azure AD 最终完成 (第 9) 阶段]时，所有服务将转换到全球。 任何应用程序或用户都不应针对任何 Microsoft 云德国终结点访问租户的资源。 自动完成 30 天后，Microsoft 云德国 Azure AD 服务将自动停止对已转换租户的终结点访问。 从此时开始，针对德国 Microsoft 云服务的终结点请求（如身份验证）将失败。 
+
+| 步骤 (步骤)  | 说明 | 影响 |
+|:-------|:-------|:-------|
+| 更新用户终结点 | 确保所有用户使用正确的 Microsoft 全球终结点访问服务 |迁移完成 30 天后，德国 Microsoft 云终结点将停止处理请求;客户端或应用程序流量将失败。  |
+| 更新 Azure AD 应用程序终结点 | 必须将应用程序的身份验证、Azure Active Directory (Azure AD) Graph 和 MS Graph 终结点更新为 Microsoft Worldwide 服务的终结点。 | 迁移完成 30 天后，德国 Microsoft 云终结点将停止处理请求;客户端或应用程序流量将失败。 |
+||||
 
 ## <a name="office-apps"></a>Office 应用
 

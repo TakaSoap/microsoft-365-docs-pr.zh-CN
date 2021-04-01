@@ -21,12 +21,12 @@ ms.topic: article
 ms.custom: migrationguides
 ms.date: 03/03/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
-ms.openlocfilehash: fb6edf33b02671396fa4d078770d5b502e59d087
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 6f2104e38bd55806e0873166b07a31aff46e9c24
+ms.sourcegitcommit: 847b0920016ae20c82a0501bda6019cd940482df
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51185511"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51484752"
 ---
 # <a name="switch-to-microsoft-defender-for-endpoint---phase-2-setup"></a>切换到 Microsoft Defender for Endpoint - 阶段 2：设置
 
@@ -34,7 +34,7 @@ ms.locfileid: "51185511"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-|[![阶段 1：准备](images/phase-diagrams/prepare.png)](switch-to-microsoft-defender-prepare.md)<br/>[阶段 1：准备](switch-to-microsoft-defender-prepare.md) |![阶段 2：设置](images/phase-diagrams/setup.png)<br/>阶段 2：设置 |[![阶段 3：Onboard3](images/phase-diagrams/onboard.png)](switch-to-microsoft-defender-onboard.md)<br/>[阶段 3：载入](switch-to-microsoft-defender-onboard.md) |
+|[![阶段 1：准备](images/phase-diagrams/prepare.png)](switch-to-microsoft-defender-prepare.md)<br/>[阶段 1：准备](switch-to-microsoft-defender-prepare.md) |![阶段 2：设置](images/phase-diagrams/setup.png)<br/>阶段 2：设置 |[![阶段 3：Onboard3](images/phase-diagrams/onboard.png)](switch-to-microsoft-defender-onboard.md)<br/>[阶段 3：开始使用](switch-to-microsoft-defender-onboard.md) |
 |--|--|--|
 ||*你在这里！* | |
 
@@ -128,7 +128,7 @@ ms.locfileid: "51185511"
 |---------|---------|
 |[Intune](https://docs.microsoft.com/mem/intune/fundamentals/tutorial-walkthrough-endpoint-manager) <br/>**注意**：Intune 现在是 Microsoft Endpoint Manager。 |1. 转到 [Microsoft Endpoint Manager 管理中心](https://go.microsoft.com/fwlink/?linkid=2109431) 并登录。<br/>2.**选择"设备**  >  **配置文件"，** 然后选择要配置的配置文件类型。 如果你尚未创建设备限制配置文件类型，或者如果你想要创建新的配置文件类型，请参阅在 Microsoft Intune 中配置设备[限制设置](https://docs.microsoft.com/intune/device-restrictions-configure)。<br/>3. 选择 **"属性"，** 然后选择"**配置设置：编辑"。**<br/>4. 展开 **Microsoft Defender 防病毒**。 <br/>5. 启用 **云保护**。<br/>6. 在"**在示例提交前提示用户"** 下拉列表中，选择"自动 **发送所有示例"。**<br/>7. 在"**检测可能不需要的应用程序"** 下拉列表中，选择"**启用"** 或"审核 **"。**<br/>8. 选择 **"审阅 + 保存"，** 然后选择"保存 **"。**<br/>**提示**：有关 Intune 设备配置文件（包括如何创建和配置其设置）的信息，请参阅 [什么是 Microsoft Intune 设备配置文件？。](https://docs.microsoft.com/intune/device-profiles)|
 |Windows 中的控制面板     |请按照以下指南： [打开 Microsoft Defender 防病毒](https://docs.microsoft.com/mem/intune/user-help/turn-on-defender-windows)。 <br/>**注意**：你可能会在某些 *版本的* Windows Windows Defender *看到防病毒，而不是 Microsoft Defender* 防病毒。        |
-|[高级组策略管理](https://docs.microsoft.com/microsoft-desktop-optimization-pack/agpm/) <br/>或者<br/>[组策略管理控制台](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/use-group-policy-microsoft-defender-antivirus)  |1. 转到 `Computer configuration > Administrative templates > Windows components > Microsoft Defender Antivirus` 。 <br/>2. 查找名为"关闭 Microsoft Defender 防病毒 **"的策略**。<br/>3. 选择 **"编辑策略设置**"，并确保策略已禁用。 这将启用 Microsoft Defender 防病毒。 <br/>**注意**：你可能会在某些 *版本的* Windows Windows Defender *看到防病毒，而不是 Microsoft Defender* 防病毒。 |
+|[高级组策略管理](https://docs.microsoft.com/microsoft-desktop-optimization-pack/agpm/) <br/>或者<br/>[组策略管理控制台](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/use-group-policy-microsoft-defender-antivirus)  |1. 转到计算机 **配置**  >  **管理模板**  >  **Windows 组件** Microsoft Defender  >  **防病毒**。 <br/>2. 查找名为"关闭 Microsoft Defender 防病毒 **"的策略**。<br/>3. 选择 **"编辑策略设置**"，并确保策略已禁用。 这将启用 Microsoft Defender 防病毒。 <br/>**注意**：你可能会在某些 *版本的* Windows Windows Defender *看到防病毒，而不是 Microsoft Defender* 防病毒。 |
 
 ### <a name="confirm-that-microsoft-defender-antivirus-is-in-passive-mode"></a>确认 Microsoft Defender 防病毒处于被动模式
 
@@ -182,7 +182,7 @@ ms.locfileid: "51185511"
 |--|--|
 |[Intune](https://docs.microsoft.com/mem/intune/fundamentals/tutorial-walkthrough-endpoint-manager) <br/>**注意**：Intune 现在是 Microsoft Endpoint Manager。 |1. 转到 [Microsoft Endpoint Manager 管理中心](https://go.microsoft.com/fwlink/?linkid=2109431) 并登录。<br/>2.**选择"设备**  >  **配置文件"，** 然后选择要配置的配置文件。<br/>3. 在"**管理"下**，选择"**属性"。** <br/>4. 选择 **配置设置：编辑**。<br/>5. 展开 **"Microsoft Defender 防病毒**"，然后展开 **"Microsoft Defender 防病毒排除项"。**<br/>6. 指定要从 Microsoft Defender 防病毒扫描中排除的文件和文件夹、扩展名和进程。 有关参考，请参阅 [Microsoft Defender 防病毒排除项](https://docs.microsoft.com/mem/intune/configuration/device-restrictions-windows-10#microsoft-defender-antivirus-exclusions)。<br/>7. 选择 **"审阅 + 保存"，** 然后选择"保存 **"。**  |
 |[Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/mem/configmgr/) |1. 使用 [Configuration Manager 控制台](https://docs.microsoft.com/mem/configmgr/core/servers/manage/admin-console)，转到"资产和 **合规性**  >  **终结点** 保护反恶意软件策略"，然后选择要  >  修改的策略。 <br/>2. 为要从 Microsoft Defender 防病毒扫描中排除的文件和文件夹、扩展和进程指定排除设置。 |
-|[组策略对象](https://docs.microsoft.com/previous-versions/windows/desktop/Policy/group-policy-objects) | 1. 在组策略管理计算机上，打开组策略管理 [控制台](https://technet.microsoft.com/library/cc731212.aspx)，右键单击要配置的组策略对象， **然后单击编辑**。<br/>2. 在组 **策略管理编辑器** 中，转到"**计算机配置"，** 然后单击"**管理模板"。**<br/>3. 将树展开到 Microsoft Defender 防病毒 **>排除**> Windows 组件。<br/>**注意**：你可能会在某些 *版本的* Windows Windows Defender *看到防病毒，而不是 Microsoft Defender* 防病毒。<br/>4. 双击" **路径排除项"** 设置并添加排除项。<br/>- 将选项设置为 **已启用**。<br/>- 在"选项 **"部分** 下，单击"**显示..."。**<br/>- 在"值名称"列下的其自己的 **行中指定每个** 文件夹。<br/>- 如果指定文件，请确保输入该文件的完全限定路径，包括驱动器号、文件夹路径、文件名和扩展名。 在 **"值"****列中输入** 0。<br/>5. 单击"**确定"。**<br/>6. 双击扩展 **排除** 项设置并添加排除项。<br/>- 将选项设置为 **已启用**。<br/>- 在"选项 **"部分** 下，单击"**显示..."。**<br/>- 在"值名称"列下，在其自己的 **行中输入每个文件** 扩展名。  在 **"值"****列中输入** 0。<br/>7. 单击"**确定"。** |
+|[组策略对象](https://docs.microsoft.com/previous-versions/windows/desktop/Policy/group-policy-objects) | 1. 在组策略管理计算机上，打开组策略管理 [控制台](https://technet.microsoft.com/library/cc731212.aspx)，右键单击要配置的组策略对象， **然后单击编辑**。<br/>2. 在组 **策略管理编辑器** 中，转到"**计算机配置"，** 然后单击"**管理模板"。**<br/>3. 将树展开到 **Windows 组件** Microsoft  >  **Defender 防病毒**  >  **排除项**。<br/>**注意**：你可能会在某些 *版本的* Windows Windows Defender *看到防病毒，而不是 Microsoft Defender* 防病毒。<br/>4. 双击" **路径排除项"** 设置并添加排除项。<br/>- 将选项设置为 **已启用**。<br/>- 在"选项 **"部分** 下，单击"**显示..."。**<br/>- 在"值名称"列下的其自己的 **行中指定每个** 文件夹。<br/>- 如果指定文件，请确保输入该文件的完全限定路径，包括驱动器号、文件夹路径、文件名和扩展名。 在 **"值"****列中输入** 0。<br/>5. 单击"**确定"。**<br/>6. 双击扩展 **排除** 项设置并添加排除项。<br/>- 将选项设置为 **已启用**。<br/>- 在"选项 **"部分** 下，单击"**显示..."。**<br/>- 在"值名称"列下，在其自己的 **行中输入每个文件** 扩展名。  在 **"值"****列中输入** 0。<br/>7. 单击"**确定"。** |
 |本地组策略对象 |1. 在终结点或设备上，打开"本地组策略编辑器"。 <br/>2. 转到计算机 **配置**  >  **管理模板**  >  **Windows 组件** Microsoft Defender  >  **防病毒**  >  **排除项**。 <br/>**注意**：你可能会在某些 *版本的* Windows Windows Defender *看到防病毒，而不是 Microsoft Defender* 防病毒。<br/>3. 指定路径和进程排除项。 |
 |注册表项 |1. 导出以下注册表项 `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender\exclusions` ：。<br/>2. 导入注册表项。 下面是两个示例：<br/>- 本地路径： `regedit.exe /s c:\temp\ MDAV_Exclusion.reg` <br/>- 网络共享： `regedit.exe /s \\FileServer\ShareName\MDAV_Exclusion.reg` |
 

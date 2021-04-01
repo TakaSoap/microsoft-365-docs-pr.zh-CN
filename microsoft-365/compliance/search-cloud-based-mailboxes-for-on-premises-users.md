@@ -16,14 +16,14 @@ search.appverid:
 - MST160
 - MET150
 ms.assetid: 3f7dde1a-a8ea-4366-86da-8ee6777f357c
-description: 在 Exchange 混合部署中，使用安全与合规中心中的内容搜索工具搜索并导出本地用户的 Teams 聊天数据。
+description: 使用 Microsoft 365 中的电子数据展示工具在 Exchange 混合部署中搜索和导出本地用户的 Teams 聊天数据。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 39951ce125f86748beab12cf1998075e26ad734b
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: a5053eb54b59d55c428290987bcc8b2a8ce26b5b
+ms.sourcegitcommit: d4604e333507c6f57d5bf327531a241b649052de
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50917184"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51471021"
 ---
 # <a name="search-for-teams-chat-data-for-on-premises-users"></a>搜索 Teams 中本地用户的聊天数据
 
@@ -44,20 +44,19 @@ ms.locfileid: "50917184"
   
 ## <a name="how-it-works"></a>运作方式
 
-如果启用 Microsoft Teams 的用户拥有本地邮箱，并且其用户帐户/标识已同步到云端，Microsoft 将创建基于云的存储，以便关联本地用户的1xN Teams 聊天数据。 本地用户的团队聊天数据已编入索引，可用于搜索。 这让你能够使用内容搜索（以及与核心和高级电子数据展示事例关联的搜索）来搜索、预览和导出本地用户的 Teams 聊天数据。 你还可以使用安全与合规中心 PowerShell 中的 **\*ComplianceSearch** cmdlet 来搜索本地用户的 Teams 聊天数据。
+如果启用 Microsoft Teams 的用户拥有本地邮箱，并且其用户帐户/标识已同步到云端，Microsoft 将创建基于云的存储，以便关联本地用户的1xN Teams 聊天数据。 本地用户的团队聊天数据已编入索引，可用于搜索。 这让你能够使用“内容搜索”（以及与核心电子数据展示和高级电子数据展示事例关联的搜索）来搜索、预览和导出本地用户的 Teams 聊天数据。 你还可以使用安全与合规中心 PowerShell 中的 **\*ComplianceSearch** cmdlet 来搜索本地用户的 Teams 聊天数据。
   
 下图显示了搜索、预览和导出本地用户的 Teams 聊天数据的工作流。
   
 ![Microsoft Teams 中的本地用户基于云的存储空间](../media/EHAMShard1.png)
   
-除了此新功能之外，你仍可以使用内容搜索在基于云的 SharePoint 网站和与每个 Microsoft Team 关联的 Exchange 邮箱中搜索、预览和导出 Teams 内容，以及在基于云的用户的 Exchange Online 邮箱中搜索、预览和导出 1xN Teams 聊天数据。
+除了此功能之外，你还可以使用电子数据展示工具在基于云的 SharePoint 网站和与每个 Microsoft Team 关联的 Exchange 邮箱中搜索、预览和导出 Teams 内容，以及在基于云的用户的 Exchange Online 邮箱中搜索、预览和导出 1xN Teams 聊天数据。
 
+### <a name="how-this-feature-is-supported-in-content-search-and-core-ediscovery-search-tools"></a>“内容搜索”和核心电子数据展示搜索工具如何支持此功能
 
-### <a name="what-happens-after-this-feature-is-enabled"></a>启用此功能后会发生什么情况？
-
-在组织中部署此功能后，将在安全与合规中心中的内容搜索以及与电子数据展示事例关联的搜索中进行以下更改：
+Microsoft 365 合规中心中的“内容搜索”以及与核心电子数据展示事例关联的搜索工具中的以下 UI 元素：
   
-- 在内容搜索的“**位置**”下方添加“**为本地用户添加 Office 应用内容**”复选框。
+- “**为本地用户添加 Office 应用内容**”显示在“内容搜索”的“**位置**”下方。 选中此复选框可在内容搜索中包括本地用户的基于云的存储。
 
     ![向内容搜索 UI 添加“为本地用户添加 Office 应用内容”复选框](../media/599e751e-17bd-408d-a18c-127538de6e85.png)
   
@@ -65,18 +64,18 @@ ms.locfileid: "50917184"
 
 ## <a name="searching-for-teams-chat-content-for-on-premises-users"></a>搜索本地用户的 Teams 聊天内容
 
-启用此功能后，可使用安全与合规中心中的内容搜索来搜索本地用户的 Teams 聊天数据。
+下面介绍了如何使用 Microsoft 365 合规中心中的“内容搜索”来搜索本地用户的 Teams 聊天数据。
   
-1. 在安全与合规中心，转到“**搜索**”\>“**内容搜索**”
+1. 在 Microsoft 365 合规中心中，转到“**内容搜索**”。
 
-2. 在“**搜索**”页面上，单击“![添加”图标](../media/8ee52980-254b-440b-99a2-18d068de62d3.gif)“**新建搜索**”。
+2. 在“**搜索**”选项卡上，单击“![添加”图标](../media/8ee52980-254b-440b-99a2-18d068de62d3.gif)“**新建搜索**”。
 
     如前文所述，“**为本地用户添加 Office 应用内容**”复选框显示在“**位置**”下方。 它在默认情况下处于选中状态。
 
 3. 创建关键字查询并为搜索查询添加条件（如有必要）。 若要仅搜索 Teams 聊天数据，可在“**关键字**”框中添加以下查询：
 
     ```text
-    kind:im
+    kind:im AND kind:microsoftteams
     ```
 
 4. 目前，可在“**位置**”下选择以下选项之一：
@@ -129,26 +128,26 @@ ms.locfileid: "50917184"
 
 ## <a name="frequently-asked-questions"></a>常见问题解答
 
+**是否必须提交支持请求才能搜索本地用户的聊天消息？**
+
+否。 将默认为所有组织启用此功能。 你曾经不得不联系 Microsoft 支持部门，但这种情况不再发生。
+  
+ **在为所有组织默认启用此功能之前，电子数据展示工具能否查找本地用户的较早 Teams 聊天数据？**
+  
+Microsoft 从 2018 年 1 月 31 日开始存储本地用户的 Teams 聊天数据。 因此，如果自此日期以来在本地 Active Directory 和 Microsoft 365 中的 Azure Active Directory 之间同步了本地 Teams 用户的标识，则他们的 Teams 聊天数据存储在云中，并且可使用电子数据展示工具进行搜索。
+
+ **本地用户是否需要许可证才能将他们的 Teams 聊天数据存储在云中？**
+  
+是。 若要将本地用户的 Teams 聊天数据存储在基于云的存储中，必须在 Office 365（或 Microsoft 365）中为该用户分配 Microsoft Teams 许可证和 Exchange Online 计划许可证。
+
 **本地用户基于云的邮箱位于何处？**
   
 Teams 聊天数据存储在本地用户的“首选数据位置”（PDL）中。 PDL 同时在单一地理和多地理环境中都授予支持。 有关详细信息，请参阅 [Microsoft 365 多地理位置](../enterprise/microsoft-365-multi-geo.md)。
-  
- **除了提交支持请求以外，还有其他要求吗？**
-  
-如前文所述，必须将具有本地邮箱的用户标识同步到基于云的组织，以便为 Office 365 中的每个本地用户帐户创建对应的邮件用户帐户。 你的组织还必须具有 Office 365 企业版订阅，例如 Office 365 企业版 E1、E3 或 E5 订阅。
-  
- **如果将用户的本地邮箱迁移到云，是否有丢失 Teams 聊天数据的风险？**
+
+**如果将用户的本地邮箱迁移到云，是否有丢失 Teams 聊天数据的风险？**
   
 否。 将本地用户的主邮箱迁移到云后，该用户的 Teams 聊天数据将迁移到其基于云的新主邮箱中。
   
  **是否可以为本地用户应用电子数据展示保留或保留策略？**
   
-是。 你可以应用本地用户的 Team 聊天和频道消息的电子数据展示保留或保留策略。
-  
- **在组织提交启用此功能的请求之前，内容搜索是否可以找到本地用户较早的 Teams 聊天数据？**
-  
-Microsoft 从 2018 年 1 月 31 日开始存储本地用户的 Teams 聊天数据。 因此，如果自此日期以来在 Active Directory 和 Azure Active Directory 之间同步了本地 Teams 用户的标识，则他们的 Teams 聊天数据存储在云中，并且可使用内容搜索进行搜索。 此外，Microsoft 正致力于将 2018 年 1 月 31 日之前的 Teams 聊天数据存储在本地用户基于云的存储中。 即将提供与此相关的详细信息。
-
- **本地用户是否需要许可证才能将他们的 Teams 聊天数据存储在云中？**
-  
-是。 若要将本地用户的 Teams 聊天数据存储在基于云的存储中，必须在 Office 365（或 Microsoft 365）中为该用户分配 Microsoft Teams 许可证和 Exchange Online 计划许可证。
+是。 你可以应用本地用户的 Team 聊天和频道消息的电子数据展示保留或保留策略。 但是，若要保留本地用户的 Teams 内容，必须为本地用户分配 Exchange Online 计划 2 许可证。

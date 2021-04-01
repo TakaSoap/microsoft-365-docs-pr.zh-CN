@@ -14,12 +14,12 @@ ms.collection:
 - m365initiative-viva-topics
 localization_priority: None
 description: Viva Topics 概述。
-ms.openlocfilehash: 68a88e74a674a7bbc290ae0e8f88bfbe0277d910
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 4598c47b07287789a7a194914232799de5ca7b85
+ms.sourcegitcommit: 7ebed5810480d7c49f8ca03207b5ea84993d253f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50917376"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51488153"
 ---
 # <a name="microsoft-viva-topics-overview"></a>Microsoft Viva Topics 概述 
 
@@ -99,7 +99,7 @@ Viva Topics 使用 Microsoft AI 技术以识别 Microsoft 365 环境中的 **主
 
 ## <a name="admin-controls"></a>管理员控件
 
-Microsoft 365 管理中心中的管理控件允许你管理知识网络。 它们允许 Microsoft 365 全局管理员或 SharePoint 管理员：
+Microsoft 365 管理中心中的管理员控件允许你管理 Viva 主题。 它们允许 Microsoft 365 全局管理员或 SharePoint 管理员：
 
 - 控制允许你组织中的哪些用户查看 SharePoint 新式页面或 SharePoint 搜索结果中的主题。
 - 控制将爬网哪些 SharePoint 网站以识别主题。

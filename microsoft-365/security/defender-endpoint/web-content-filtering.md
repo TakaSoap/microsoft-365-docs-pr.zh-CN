@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: a8ab1ba1f0dc1bb629e438380b7b77e1ed221f08
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 16f0d96b75ec7035ca133f75a83df1f284ee5c4b
+ms.sourcegitcommit: 847b0920016ae20c82a0501bda6019cd940482df
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51186025"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51484740"
 ---
 # <a name="web-content-filtering"></a>Web 内容筛选
 
@@ -60,7 +60,7 @@ Web 内容筛选在主要 Web 浏览器上可用，其中包含由 Windows Defen
 
 在尝试此功能之前，请确保满足以下要求：
 
-- Windows 10 企业版 E5 许可证或 Microsoft 365 E3 + Microsoft 365 E5 安全加载项。
+- Windows 10 企业版 E5、Microsoft 365 E5、Microsoft 365 E5 安全中心、Microsoft 365 E3 + Microsoft 365 E5 安全加载项或 Microsoft Defender for Endpoint 独立许可证。 
 - 访问 Microsoft Defender 安全中心门户
 - 运行 Windows 10 周年更新 (版本 1607) 或更高版本使用最新的 MoCAMP 更新。
 
@@ -160,9 +160,11 @@ Web 内容筛选策略指定在哪些设备组上阻止哪些网站类别。 若
 
 - 未分配的设备将在报告内显示不正确的数据。 在"设备>透视表详细信息"中，你可能会看到一个包含空白设备组字段的行。 此组包含未分配设备，然后再放入指定组。 此行的报告可能不包含设备或访问计数的准确计数。
 
+- Web 内容筛选报告当前限制为显示前 5000 条记录。 例如，"域"报告将只显示给定筛选器查询的最多前 5000 个域（如果适用）。 
+
 ## <a name="related-topics"></a>相关主题
 
-- [Web 保护概述](web-protection-overview.md)
-- [Web 威胁防护](web-threat-protection.md)
-- [监视 Web 安全](web-protection-monitoring.md)
-- [响应 Web 威胁](web-protection-response.md)
+- [Web 保护功能概述](web-protection-overview.md)
+- [Web 威胁防护功能](web-threat-protection.md)
+- [监视 web 安全性](web-protection-monitoring.md)
+- [响应 web 威胁](web-protection-response.md)

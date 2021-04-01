@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 description: 获取基于硬件的最新隔离。 防止当前和新出现的攻击（如攻击或恶意链接）干扰员工工作效率和企业安全。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: c066805bc21a941673fd1157dc87bd95bcd2c711
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: d0fa6ad884c6b21457c8359cf82e32e4b8c100ba
+ms.sourcegitcommit: 7ebed5810480d7c49f8ca03207b5ea84993d253f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51203177"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51488307"
 ---
 # <a name="application-guard-for-office-for-admins"></a>适用于管理员的 Office 应用程序防护
 
@@ -40,10 +40,11 @@ ms.locfileid: "51203177"
 ### <a name="minimum-software-requirements"></a>最低软件要求
 
 * **Windows 10：Windows** 10 企业版、客户端内部版本 2004 (20H1) 版本 19041 或更高版本
-* **Office：Office** Current Channel Build 版本 2011 16.0.13530.10000 或更高版本。 支持 32 位和 64 位版本的 Office。
+* **Office：Office** Current Channel 和每月企业频道，内部版本 2011 16.0.13530.10000 或更高版本。 支持 32 位和 64 位版本的 Office。
 * **更新程序包**：Windows 10 累积每月安全更新 [KB4571756](https://support.microsoft.com/help/4571756/windows-10-update-KB4571756)
 
-有关详细的系统要求，请参阅 [Microsoft Defender 应用程序防护的系统要求](/windows/security/threat-protection/microsoft-defender-application-guard/reqs-md-app-guard)。 若要详细了解 Office 更新频道，请参阅 [Microsoft 365 更新频道概述](/deployoffice/overview-update-channels)。
+有关详细的系统要求，请参阅 [Microsoft Defender 应用程序防护的系统要求](/windows/security/threat-protection/microsoft-defender-application-guard/reqs-md-app-guard)。 此外，请参阅计算机制造商的指南，了解如何启用虚拟化技术。
+若要详细了解 Office 更新频道，请参阅 [Microsoft 365 更新频道概述](/deployoffice/overview-update-channels)。
 
 ### <a name="licensing-requirements"></a>许可要求
 
@@ -76,6 +77,9 @@ ms.locfileid: "51203177"
 4. 重新启动系统。
 
 ### <a name="set-diagnostics--feedback-to-send-full-data"></a>设置诊断&反馈以发送完整数据
+
+> [!NOTE]
+> 但是，这不是必需的，配置可选诊断数据将有助于诊断报告的问题。
 
 此步骤确保识别并解决问题所需的数据已到达 Microsoft。 请按照以下步骤在 Windows 设备上启用诊断：
 
@@ -115,7 +119,9 @@ ms.locfileid: "51203177"
 
 ## <a name="configure-application-guard-for-office"></a>为 Office 配置应用程序防护
 
-Office 支持以下策略，以使您能够配置 Office 应用程序防护的功能。 可以通过组策略或 Office 云策略服务配置这些策略。
+Office 支持以下策略，以使您能够配置 Office 应用程序防护的功能。 可以通过组策略或 Office 云策略服务 [配置这些策略](/DeployOffice/overview-office-cloud-policy-service)。
+查看 User  **Configuration \\ Administrative Templates Microsoft Office \\ 2016 Security Settings Trust Center \\ Application \\ \\ Guard** 中的组策略设置，查看管理员设置的配置。
+
 
 > [!NOTE]
 > 配置这些策略可以禁用在 Office 相关应用程序防护中打开的文件的一些功能。
@@ -183,13 +189,15 @@ Office 支持以下策略，以使您能够配置 Office 应用程序防护的�
 
 Office 应用程序防护与 Microsoft Defender for Endpoint 集成，以提供对隔离环境中发生的恶意活动的监视和警报。
 
+[Microsoft E365 E5](/microsoft-365/security/office-365-security/safe-docs) 中的安全文档是一项使用 Microsoft Defender for Endpoint 扫描在 Office 应用程序防护中打开的文档的功能。 为了提供额外的保护层，在确定扫描结果之前，用户无法离开 Office 应用程序防护。
+
 Microsoft Defender for Endpoint 是一个安全平台，旨在帮助企业网络预防、检测、调查和响应高级威胁。 有关此平台的更多详细信息，请参阅 [Microsoft Defender for Endpoint](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp)。 若要了解有关将设备载入此平台的信息，请参阅将设备载入 [到 Microsoft Defender for Endpoint 服务](/windows/security/threat-protection/microsoft-defender-atp/onboard-configure)。
 
 还可以配置适用于 Office 365 的 Microsoft Defender 以使用 Defender for Endpoint。 有关详细信息，请参阅将适用于 [Office 365](integrate-office-365-ti-with-mde.md)的 Defender 与 Microsoft Defender for Endpoint 集成。
 
 ## <a name="limitations-and-considerations"></a>限制和注意事项
 
-* Office 相关应用程序防护是一种受限模式，可隔离不受信任的文档，以便它们无法访问受信任的公司资源、Intranet、用户标识和计算机上的任意文件。 因此，如果用户尝试访问依赖此类访问的功能（例如，从磁盘上的本地文件插入图片）访问将失败并生成类似以下示例的提示。 若要使不受信任的文档能够访问受信任的资源，用户必须从文档中删除应用程序防护保护。
+* Office 相关应用程序防护是一种受保护的模式，可隔离不受信任的文档，以便它们无法访问受信任的公司资源、Intranet、用户标识和计算机上的任意文件。 因此，如果用户尝试访问依赖此类访问的功能（例如，从磁盘上的本地文件插入图片）访问将失败并生成类似以下示例的提示。 若要使不受信任的文档能够访问受信任的资源，用户必须从文档中删除应用程序防护保护。
 
   ![对话框显示"为了帮助你保持安全，此功能不可用"](../../media/ag10-limitations.png)
 
@@ -227,4 +235,5 @@ Microsoft Defender for Endpoint 是一个安全平台，旨在帮助企业网络
 
 * 选择 (`http` 或 `https`) Web 链接不会打开浏览器。
 * 目前不支持将 RTF 格式 (RTF) 应用程序防护打开的 Office 文档中的内容或图像。
-* .NET 更新会导致文件在应用程序防护中无法打开。 作为一种解决方法，用户可以在遇到此故障时重新启动其设备。 有关该问题的详细信息，请 [通过应用程序](https://support.microsoft.com/help/4575917/receiving-an-error-message-when-attempting-to-open-windows-defender-ap)防护或 Windows 沙盒Windows Defender时收到错误消息。
+* 不受支持的文件类型保护策略的默认设置是阻止打开信息权限管理 、IRM (、CSV 或 HTML) 不受信任的文件类型。
+* 更新 .NET 可能会导致文件在应用程序防护中无法打开。 作为一种解决方法，用户可以在遇到此故障时重新启动其设备。 有关该问题的详细信息，请 [通过应用程序](https://support.microsoft.com/help/4575917/receiving-an-error-message-when-attempting-to-open-windows-defender-ap)防护或 Windows 沙盒Windows Defender时收到错误消息。

@@ -22,12 +22,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: 了解如何在 Office 365 中识别、监视和自动保护组织中的敏感信息。
-ms.openlocfilehash: 9ef369786aa4b79dbdec551c9750500f9c092906
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 737e556972ca8ab0f82e1c4fe9e8602f09e91fc8
+ms.sourcegitcommit: 39609c4d8c432c8e7d7a31cb35c8020e5207385b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51052070"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "51445426"
 ---
 # <a name="overview-of-data-loss-prevention"></a>数据丢失防护概述
 <!-- this topic needs to be split into smaller, more coherent ones. It is confusing as it is. -->
@@ -96,9 +96,14 @@ DLP 策略适用于多个 Microsoft 365 位置的敏感项目，并且可按此�
 |Microsoft Cloud App Security |实例 |
 
 
- 如果选择将特定通讯组包含在 Exchange 中，则 DLP 策略的影响范围将仅限于该组的成员。 同样，排除通讯组将把该通讯组的所有成员从策略评估中排除。 可选择将策略的影响范围限定为通讯组列表、动态通讯组和安全组的成员。 一条 DLP 策略可包含不超过 50 个这种包含和排除。
+如果选择将特定通讯组包含在 Exchange 中，则 DLP 策略的影响范围将仅限于该组的成员。 同样，排除通讯组将把该通讯组的所有成员从策略评估中排除。 可选择将策略的影响范围限定为通讯组列表、动态通讯组和安全组的成员。 一条 DLP 策略可包含不超过 50 个这种包含和排除。
 
-如果你选择包含或排除特定的 SharePoint 网站或 OneDrive 帐户，则 DLP 策略可包含不超过 100 个此类包含和排除项。 尽管存在此限制，你可应用组织范围策略或位置整体策略来超出此限制。
+如果你选择包含或排除特定 SharePoint 网站，则 DLP 策略可包含不超过 100 个此类包含项和排除项。 尽管存在此限制，你可应用组织范围策略或位置整体策略来超出此限制。
+
+如果你选择包括或排除特定 OneDrive 帐户或组，则 DLP 策略可包含不超过 100 个用户帐户或 50 个组作为包含项或排除项。
+
+> [!NOTE]
+> 使用帐户或组界定 OneDrive for Business 策略范围正处于公开预览状态。 在此阶段，你可以将用户帐户和组作为 DLP 策略的一部分包括或排除。 不支持将包含项和排除项作为同一策略的一部分。
   
 ### <a name="rules"></a>Rules
 
@@ -201,8 +206,9 @@ DLP 策略可帮助保护定义为 **敏感信息类型** 的敏感信息。 Mic
 当规则匹配时，可向法律人员（或所选的任何人员）发送包含事件详情的警报电子邮件。 此警报电子邮件将提供 [DLP 警报管理仪表板](dlp-configure-view-alerts-policies.md)的链接，法律人员可以使用该链接查看警报和事件的详细信息。 仪表板包含触发警报的事件的详细信息，以及匹配的 DLP 策略和检测到的敏感内容的详细信息。
 
 此外，你还可以发送包含事件详细信息的事件报告。 此报告中的信息包括，匹配的项目的信息、与规则匹配的实际内容以及上次修改内容的人员的姓名。 对于电子邮件，报告还将与 DLP 策略匹配的原始邮件包含为附件。
-  
-![用于配置事件报告的页面](../media/Alerts-and-incident-report.png)
+
+> [!div class="mx-imgBorder"]
+> ![用于配置事件报告的页面](../media/Alerts-and-incident-report.png)
 
 DLP 扫描电子邮件的方式与 SharePoint Online 或 OneDrive for Business 中的项目不同。 在 SharePoint Online 和 OneDrive for Business 中，DLP 可扫描现有项目以及新项目，并在找到匹配项时生成警报和事件报告。 在 Exchange Online 中，DLP 仅扫描新电子邮件，并在存在策略匹配项时生成报告。 DLP ***不会*** 扫描或匹配邮箱或存档中存储的先前存在的电子邮件项目。
   
@@ -252,13 +258,15 @@ DLP 策略的要求通常比较简单，例如标识包含美国社会安全号�
   
 ## <a name="the-priority-by-which-rules-are-processed"></a>处理规则的优先级
 
-在策略中创建规则时，每条规则都按创建顺序分配了优先级 — 这意味着，首先创建的规则具有第一优先级，创建的第二条规则具有第二优先级，以此类推。 
-  
-![按优先级顺序排列的规则](../media/dlp-rules-in-priority-order.png)
+在策略中创建规则时，每条规则都按创建顺序分配了优先级 — 这意味着，首先创建的规则具有第一优先级，创建的第二条规则具有第二优先级，以此类推。
+
+> [!div class="mx-imgBorder"]
+> ![按优先级顺序排列的规则](../media/dlp-rules-in-priority-order.png)
   
 设置多个 DLP 策略后，可以更改一个或多个策略的优先级。 若要执行此操作，请选择一个策略，选择“**编辑策略**”，然后使用“**优先级**”列表指定其优先级。
 
-![设置策略的优先级](../media/dlp-set-policy-priority.png)
+> [!div class="mx-imgBorder"]
+> ![设置策略的优先级](../media/dlp-set-policy-priority.png)
 
 对照规则评估内容时，按优先级顺序处理规则。 如果内容符合多个规则，按优先级顺序处理规则，并强制实施最严格的操作。 例如，如果内容符合以下所有规则，将实施规则 3，因为它具有最高优先级且最严格：
   
@@ -295,8 +303,9 @@ DLP 策略的要求通常比较简单，例如标识包含美国社会安全号�
 ### <a name="instance-count"></a>实例计数
 
 实例计数是指若要使内容与规则匹配，某类敏感信息必须出现的次数。 例如，如果将美国或英国护照号码标识为 1 到 9， 则内容将与如下所示的规则匹配。
-  
-请注意，实例计数仅包括敏感信息类型和关键字的 **唯一** 匹配项。 例如，如果一个电子邮件中相同的信用卡号码出现了 10 次，则这 10 次计为信用卡号码的单个实例。 
+
+> [!NOTE]
+> 实例计数仅包括敏感信息类型和关键字的 **唯一** 匹配项。 例如，如果一个电子邮件中相同的信用卡号码出现了 10 次，则这 10 次计为信用卡号码的单个实例。
   
 若要使用实例计数来调整规则，则指南非常简单：
   
@@ -443,7 +452,8 @@ DLP 策略的要求通常比较简单，例如标识包含美国社会安全号�
 
     你还可以更改策略中的多个规则的优先级。 若要执行此操作，请打开要编辑的策略。 在规则行中，选择省略号 (**...**)，然后选择一个选项，例如“**下移**”或“**移到最后**”。
 
-    ![设置规则优先级](../media/dlp-set-rule-priority.png)
+    > [!div class="mx-imgBorder"]
+    > ![设置规则优先级](../media/dlp-set-rule-priority.png)
   
 ## <a name="dlp-reports"></a>DLP 报告
 
@@ -534,7 +544,7 @@ Office 中的 DLP 策略评估旨在不对程序的性能或处理内容的用�
 
 此外，还可通过授予“**仅查看 DLP 合规性管理**”角色，创建对 DLP 策略和 DLP 报告具有仅查看权限的角色组。
 
-有关详细信息，请访问[向用户授予对 Office 365 合规中心的访问权限](../security/defender-365-security/grant-access-to-the-security-and-compliance-center.md)。
+有关详细信息，请访问[向用户授予对 Office 365 合规中心的访问权限](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md)。
   
 只有在创建和应用 DLP 策略时才需要这些权限。 策略执行不需要访问此内容。
   

@@ -19,12 +19,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 摘要：了解如何从德国 Microsoft 云迁移到新的德国数据中心区域内的 Office 365 服务
-ms.openlocfilehash: 18df7c43e21fb186dee56dabc29a67654f0f6882
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 7e170967e1670433a7d28753430f0cb15818039b
+ms.sourcegitcommit: 7b8104015a76e02bc215e1cf08069979c70650ae
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50923764"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51476633"
 ---
 # <a name="migration-from-microsoft-cloud-deutschland-to-office-365-services-in-the-new-german-datacenter-regions"></a>从德国 Microsoft 云迁移到新的德国数据中心区域的 Office 365 服务
 
@@ -63,9 +63,9 @@ Office 365 视频将于 2021年 3 月 1 日停用。 如果选择将 Office 365 
 
 ## <a name="how-is-the-migration-organized"></a>如何组织迁移？
 
-此图显示了迁移到新的德国数据中心的九个阶段。
+此图显示了迁移到新的德国数据中心的十个阶段。
 
-![迁移到新德国数据中心的九个阶段](../media/ms-cloud-germany-migration-opt-in/migration-organization.png)
+![迁移到新德国数据中心的十个阶段](../media/ms-cloud-germany-migration-opt-in/migration-organization.png)
 
 当你选择加入迁移 [时，这些阶段将开始](./ms-cloud-germany-migration-opt-in.md)。 大多数迁移阶段都是作为后端服务操作执行的，所需的客户交互最少，并且执行后一个阶段。 在迁移过程中，其他由客户引导的任务和整体迁移状态的开始都将通过 Microsoft 365 管理中心的消息中心进行通信。 任务示例可能包括客户管理的 DNS 更新、Exchange 混合客户的混合设置重新配置或 Azure 迁移。
 
@@ -93,6 +93,8 @@ Office 365 视频将于 2021年 3 月 1 日停用。 如果选择将 Office 365 
 - Dynamics complete
 - Power BI 完成
 - 服务的最终转换已完成
+
+Azure AD 最终转换到全球服务后，预计所有客户端和应用程序都完全转换为使用正确的终结点。 最终转换后有 30 天窗口，可以继续从德国 Microsoft 云服务获取 Azure AD 令牌。 30 天窗口到期后，客户端和应用程序将无法再访问德国 Microsoft 云的 Azure AD 终结点。 此时，应用程序或用户访问将失败。 在此时间窗口关闭之前，必须确保所有用户和应用程序都迁移到正确的终结点。 
 
 ## <a name="moving-to-the-new-german-datacenter-regions"></a>移动到新的德国数据中心区域
 
@@ -174,7 +176,7 @@ Microsoft 云德国云服务提供以下 15 种服务。 我们不会向德国 M
 21. Microsoft Teams
 22. 管理员报告/使用率报告
 23. Office 网页版
-24. 规划器
+24. Planner
 25. Sway
 26. Microsoft 365 应用版
 27. Outlook Mobile

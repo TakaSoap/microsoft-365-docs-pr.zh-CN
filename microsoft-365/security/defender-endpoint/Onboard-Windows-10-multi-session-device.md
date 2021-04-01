@@ -13,24 +13,20 @@ ms.topic: article
 author: dansimp
 ms.author: dansimp
 ms.custom: nextgen
-ms.date: 09/10/2020
 ms.reviewer: ''
 manager: dansimp
-ms.openlocfilehash: bfd447120e171fed063b3224e3a47c2ef38f0f16
-ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
+ms.openlocfilehash: 3f925fdc514c5e53b50f748d991f54d20fb49bd0
+ms.sourcegitcommit: 7ebed5810480d7c49f8ca03207b5ea84993d253f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51222607"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51488141"
 ---
 # <a name="onboard-windows-10-multi-session-devices-in-windows-virtual-desktop"></a>在 Windows 虚拟桌面中载入 Windows 10 多会话设备 
 6 分钟阅读 
 
 应用于： 
 - 在 Windows 虚拟桌面和 WVD (上运行的 Windows 10 多)  
-
-> [!WARNING]
-> Microsoft Defender for Endpoint 对 Windows 虚拟桌面多会话方案的支持目前处于预览阶段，每个主机/VM 最多只能有 25 个并发会话。 但是，Windows 虚拟桌面上的单个会话方案完全受支持。
 
 Microsoft Defender for Endpoint 支持监视 VDI 和 Windows 虚拟桌面会话。 根据组织的需求，你可能需要实现 VDI 或 Windows 虚拟桌面会话，以帮助你的员工从非托管设备、远程位置或类似方案访问公司数据和应用。 通过 Microsoft Defender for Endpoint，你可以监视这些虚拟机的异常活动。
 

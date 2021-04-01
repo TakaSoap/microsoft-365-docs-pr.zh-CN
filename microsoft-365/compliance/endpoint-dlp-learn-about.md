@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 'Microsoft 365 终结点数据丢失防护可将对文件活动的监视和针对这些文件的保护措施扩展到终结点。 在 Microsoft 365 合规解决方案中将文件设为可见 '
-ms.openlocfilehash: d4a3fef03322912bf169cd195984a17d8dfe3b17
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 5aaed57574f1ecabdf28442b30dcd42677243df1
+ms.sourcegitcommit: 39609c4d8c432c8e7d7a31cb35c8020e5207385b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50907046"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "51445272"
 ---
 # <a name="learn-about-microsoft-365-endpoint-data-loss-prevention"></a>了解 Microsoft 365 终结点数据丢失防护
 
@@ -67,7 +67,7 @@ Microsoft 终结点 DLP 使你可以审核和管理用户对运行 Windows 10 �
 - .h 文件
 - .java 文件
  
-默认情况下，即使没有匹配的策略，终结点 DLP 也会审核这些文件类型的活动。 如果只想从策略匹配项中监视数据，你可以关闭终结点 DLP 全局设置中的 **始终为设备审核文件活动**。 无论如何，将始终审核 Word、PowerPoint、Excel、PDF 和 .csv 文件上的任何活动。
+默认情况下，即使没有匹配的策略，终结点 DLP 也会审核这些文件类型的活动。 如果只想从策略匹配项中监视数据，你可以关闭终结点 DLP 全局设置中的 **始终为设备审核文件活动**。 如果此设置已打开，则即使设备不是任何策略的目标，也始终会审核任何 Word、PowerPoint、Excel、PDF 和 .csv 文件上的活动。
 
 终结点 DLP 会监视基于活动的 MIME 类型，因此即使文件扩展名已更改也会捕获活动。 
 
@@ -102,15 +102,15 @@ Microsoft 终结点 DLP 使你可以审核和管理用户对运行 Windows 10 �
 
 ### <a name="viewing-endpoint-dlp-data"></a>查看终结点 DLP 数据
 
-
-
 可通过进入 [DLP 警报管理仪表板](dlp-configure-view-alerts-policies.md)查看与在端点设备上强制实施的 DLP 策略有关的警报。
 
-![警报信息](../media/Alert-info-1.png)
+> [!div class="mx-imgBorder"]
+> ![警报信息](../media/Alert-info-1.png)
 
 你还可以在同一仪表板中查看关联事件的详细信息以及丰富元数据
 
-![事件信息](../media/Event-info-1.png)
+> [!div class="mx-imgBorder"]
+> ![事件信息](../media/Event-info-1.png)
 
 设备一旦载入，有关已审核活动的信息就会流入活动资源管理器，即使在配置和部署将设备作为位置的任何 DLP 策略之前也不例外。
 
