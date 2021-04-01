@@ -14,13 +14,14 @@ ms.author: v-maave
 ms.reviewer: ''
 manager: dansimp
 ms.custom: asr
+ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 7685bd70d85ecebe759ade762b78ee2c3639cea8
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 71c3f89b721039753709d65daa135cad74a81711
+ms.sourcegitcommit: 7b8104015a76e02bc215e1cf08069979c70650ae
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51054842"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51476446"
 ---
 # <a name="attack-surface-reduction-frequently-asked-questions-faq"></a>攻击面减少常见问题解答 (常见问题) 
 
@@ -37,7 +38,7 @@ ASR 最初是作为 Windows 10 版本 1709 中 Microsoft Defender 防病毒的�
 
 ## <a name="do-i-need-to-have-an-enterprise-license-to-run-asr-rules"></a>是否需要具有企业许可证才能运行 ASR 规则？
 
-只有在你拥有适用于 Windows 10 的企业许可证时，才支持整套 ASR 规则和功能。 在没有企业许可证的情况下，可能只能使用有限数量的规则。 如果你有 Microsoft 365 商业版，请设置 Microsoft Defender 防病毒作为主要安全解决方案，并通过 PowerShell 启用规则。 但是，没有企业许可证的 ASR 用法不受正式支持，ASR 的全部功能将不可用。
+只有在你拥有适用于 Windows 10 的企业许可证时，才支持整套 ASR 规则和功能。 在没有企业许可证的情况下，可能只能使用有限数量的规则。 如果你有 Microsoft 365 商业版，请设置 Microsoft Defender 防病毒作为主要安全解决方案，并通过 PowerShell 启用规则。 在不使用企业许可证的情况下使用 ASR 不受正式支持，你将无法使用 ASR 的全部功能。
 
 若要了解有关 Windows 许可的更多信息，请参阅 [Windows 10](https://www.microsoft.com/licensing/product-licensing/windows10?activetab=windows10-pivot:primaryr5) 许可并获取 [适用于 Windows 10 的批量许可指南](https://download.microsoft.com/download/2/D/1/2D14FE17-66C2-4D4C-AF73-E122930B60F6/Windows-10-Volume-Licensing-Guide.pdf)。
 
@@ -49,11 +50,56 @@ ASR 最初是作为 Windows 10 版本 1709 中 Microsoft Defender 防病毒的�
 
 E3 支持的所有规则也受 E5 支持。
 
-E5 还添加了与 Defender for Endpoint 的更大集成。 借助 E5，可以使用 [Defender for Endpoint](https://docs.microsoft.com/microsoft-365/security/defender/monitor-devices?view=o365-worldwide&preserve-view=true#monitor-and-manage-asr-rule-deployment-and-detections) 实时监视和查看警报分析、微调规则排除、配置 ASR 规则以及查看事件报告列表。
+E5 添加了与 Defender for Endpoint 的更大集成。 使用 E5，可以实时查看警报、微调规则排除项、配置 ASR 规则以及查看事件报告列表。
 
 ## <a name="what-are-the-currently-supported-asr-rules"></a>当前支持的 ASR 规则是什么？
+ASR 当前支持以下所有规则。
 
-ASR 当前支持以下所有规则：
+## <a name="what-rules-to-enable-all-or-can-i-turn-on-individual-rules"></a>要启用哪些规则？ 全部启用，或者我能否启用单个规则？
+为了帮助你找出最适合你的环境，我们建议你在审核模式下启用 ASR [规则](audit-windows-defender.md)。 通过这种方法，可以确定对组织可能的影响。 例如，业务线应用程序。
+
+## <a name="how-do-asr-rules-exclusions-work"></a>ASR 规则排除如何工作？
+对于 ASR 规则，如果添加一个排除项，它将影响每个 ASR 规则。
+以下两个特定规则不支持排除项：
+
+|规则名称|GUID|文件&文件夹排除项|
+|:--|:--|:--|
+|阻止 JavaScript 或 VBScript 启动下载的可执行内容|D3E037E1-3EB8-44C8-A917-57927947596D|不支持|
+|通过 WMI 事件订阅阻止持久性|e6db77e5-3df2-4cf1-b95a-636979351e5b|不支持|
+
+ASR 规则排除项支持通配符、路径和环境变量。 若要详细了解如何在 ASR 规则中使用通配符，请参阅配置和验证基于文件扩展名和文件夹位置 [的排除项](/windows/security/threat-protection/microsoft-defender-antivirus/configure-extension-file-exclusions-microsoft-defender-antivirus)。
+
+请注意以下有关 ASR 规则排除项 (通配符和 env。 变量) ：
+
+- ASR 规则排除项独立于 Defender AV 排除项
+- 通配符不能用于定义驱动器号
+- 如果要排除多个文件夹，在路径中使用多个 \ 实例来指示多个嵌套文件夹 (\* 例如 c：\Folder \* \* \Test) 
+- Microsoft Endpoint Configuration Manager *不支持* 通配符 (* 或 ？) 
+- 如果要排除包含随机字符的文件 (自动生成文件) ，可以使用"？"符号 (例如 C：\Folder\fileversion？。docx) 
+- 组策略中的 ASR 排除项不支持引号 (引擎将本机处理长路径、空格等，因此无需使用引号) 
+- ASR 规则在 NT AUTHORITY\SYSTEM 帐户下运行，因此环境变量仅限于计算机变量。
+
+
+
+## <a name="how-do-i-know-what-i-need-to-exclude"></a>我如何知道需要排除哪些内容？
+不同的 ASR 规则将具有不同的保护流。 请始终考虑要配置的 ASR 规则如何防范，以及实际执行流程如何平移。
+
+示例：阻止 **从 Windows** 本地安全机构子系统窃取凭据 直接从本地安全机构子系统 (LSASS) 进程进行读取可能会带来安全风险，因为它可能会公开公司凭据。
+
+此规则可防止不受信任的进程直接访问 LSASS 内存。 每当进程尝试使用 OpenProcess () 访问 LSASS（具有 PROCESS_VM_READ 访问权限）时，该规则将专门阻止该访问权限。
+
+:::image type="content" source="images/asrfaq1.png" alt-text="阻止凭据窃取 LSASS":::
+
+看一下上面的示例，如果确实需要为阻止访问权限的进程创建异常，则添加文件名和完整路径将阻止该文件名，在允许访问 LSASS 进程内存之后， 值 0 表示 ASR 规则将忽略此文件/进程，并且不会阻止/审核它。
+
+:::image type="content" source="images/asrfaq2.png" alt-text="排除文件 asr":::
+
+## <a name="what-are-the-rules-microsoft-recommends-enabling"></a>Microsoft 建议启用哪些规则？
+
+我们建议启用每个可能的规则。 但是，在某些情况下不应启用规则。 例如，如果使用的是 Microsoft Endpoint Configuration Manager (或 System Center Configuration Manager - SCCM) 来管理终结点，则不建议启用源自 PSExec 和 WMI 命令规则的阻止进程创建。
+
+我们强烈建议您阅读我们的公共文档中提供的每个特定于规则的信息和/或 [警告](/microsoft-365/security/defender-endpoint/attack-surface-reduction.md)。
+跨多个保护支柱，如 Office、凭据、脚本、电子邮件等。Windows 1709 和更高版本支持所有 ASR 规则（通过 WMI 事件订阅阻止持久性除外）：
 
 * [阻止来自电子邮件客户端和 Webmail 的可执行内容](attack-surface-reduction.md#block-executable-content-from-email-client-and-webmail)
 * [阻止所有 Office 应用程序创建子进程](attack-surface-reduction.md#block-all-office-applications-from-creating-child-processes)
@@ -136,7 +182,7 @@ ASR 使用 Microsoft Defender 防病毒阻止应用程序。 目前无法将 ASR
 ## <a name="see-also"></a>另请参阅
 
 * [攻击面减少概述](attack-surface-reduction.md)
-* [评估攻击面减少规则](evaluate-attack-surface-reduction.md)
-* [自定义攻击面减少规则](customize-attack-surface-reduction.md)
+* [评估减少攻击面规则](evaluate-attack-surface-reduction.md)
+* [自定义减少攻击面规则](customize-attack-surface-reduction.md)
 * [启用攻击面减少规则](enable-attack-surface-reduction.md)
 * [Microsoft Defender 与其他防病毒/反恶意软件的兼容性](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility)

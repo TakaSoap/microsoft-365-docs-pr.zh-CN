@@ -22,21 +22,14 @@ search.appverid:
 - MOE150
 ms.assetid: bb229ee9-e7be-4990-b3eb-354e75740496
 description: '从共享邮箱中删除许可证以将其分配给其他用户。 '
-ms.openlocfilehash: 1acd549936212db7f722355ed1f2518ff6bbac18
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 82ec863d5c2ae550fb401e71744715a27c89d382
+ms.sourcegitcommit: d4604e333507c6f57d5bf327531a241b649052de
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50915682"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51470615"
 ---
 # <a name="remove-a-license-from-a-shared-mailbox"></a>从共享邮箱中删除许可证
-
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> 管理中心正在发生改变。 如果你的体验与此处提供的详细信息不匹配，请参阅[有关新版 Microsoft 365 管理中心](../microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet)。
-
-::: moniker-end
 
 共享邮箱通常不需要许可证。 按照以下说明从共享邮箱中删除许可证，以便你可以将其分配给用户或返回许可证，以便无需为不需要的许可证付费。
 

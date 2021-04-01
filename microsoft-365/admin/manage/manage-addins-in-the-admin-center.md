@@ -20,21 +20,14 @@ search.appverid:
 - MOE150
 ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
 description: 了解如何使用集中式加载项将加载项部署到组织中用户和组。
-ms.openlocfilehash: 0750b6c9b91bc5cbd67d227fadb304bfc6cf7537
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 836dfa7a0c1b6cf1550e5c139bc0ca36be8f5424
+ms.sourcegitcommit: d4604e333507c6f57d5bf327531a241b649052de
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50915394"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51470937"
 ---
 # <a name="manage-add-ins-in-the-admin-center"></a>在管理中心管理加载项
-
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> 管理中心正在发生改变。 如果你的体验与此处提供的详细信息不匹配，请参阅[有关新版 Microsoft 365 管理中心](../microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet)。
-
-::: moniker-end
 
 Office 加载项有助于个性化设置文档，并简化访问 Web (方式，请参阅开始使用 [Office](https://support.microsoft.com/office/82e665c4-6700-4b56-a3f3-ef5441996862) 加载项) 。 
 

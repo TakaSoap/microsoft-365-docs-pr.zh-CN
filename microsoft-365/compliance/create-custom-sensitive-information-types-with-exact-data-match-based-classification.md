@@ -17,14 +17,16 @@ search.appverid:
 - MET150
 description: 了解如何使用基于精确数据匹配的分类来创建自定义敏感信息类型。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 583419f6808d5b3d54d1f48d380e5b4110898ded
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 9288a7bc1bf93f1fa7ac329305bdc45c3cb1528c
+ms.sourcegitcommit: c75aac39ee8d93218a79585113ef6b36f47c9ddf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50908346"
+ms.lasthandoff: 03/29/2021
+ms.locfileid: "51408641"
 ---
 # <a name="create-custom-sensitive-information-types-with-exact-data-match-based-classification"></a>使用基于精确数据匹配的分类创建自定义敏感信息类型
+
+
 
 [自定义敏感信息类型](sensitive-information-type-learn-about.md)用于帮助标识敏感项目，以防止它们被意外或不当地共享。 可基于以下内容定义自定义敏感信息类型：
 
@@ -35,7 +37,7 @@ ms.locfileid: "50908346"
 
  此类自定义敏感信息类型可满足许多组织的业务需求。
 
-但是，如果你需要使用精确数据值的自定义敏感信息类型（而非基于泛型模式的匹配项），该怎么办？ 通过基于精确数据匹配 (EDM) 的分类，你可以创建专门设计的自定义敏感信息类型：
+但如果希望自定义敏感信息类型 （SIT） 使用精确数据值，而不是找到基于通用模式的匹配项，又该怎么操作呢？ 通过基于精确数据匹配 (EDM) 的分类，你可以创建专门设计的自定义敏感信息类型：
 
 - 动态且轻松地刷新
 - 更具可伸缩性
@@ -56,6 +58,7 @@ ms.locfileid: "50908346"
 > - 日语
 > 
 > 此支持适用于敏感信息类型。 有关详细信息，请参阅[双字节字符集的信息保护支持发行说明（预览版）](mip-dbcs-relnotes.md)。
+ 
 
 ## <a name="required-licenses-and-permissions"></a>所需的许可证和权限
 
@@ -369,7 +372,10 @@ ms.locfileid: "50908346"
 如果不希望公开明文敏感数据文件，可在计算机的安全位置上为其创建哈希，然后将哈希文件和随机混淆值文件复制到可直接连接到 Microsoft 365 租户的计算机以进行上传。 在这种情况下，需要在两台计算机上都有 EDMUploadAgent。
 
 > [!IMPORTANT]
-> 如使用精确数据匹配架构和敏感信息类型向导创建架构和模式文件，您 ***必须** 为此过程下载架构。
+> 如果你使用"精确数据匹配"架构和敏感信息类型向导来创建你的架构和模式文件， ***必须*** 此过程的架构。
+
+> [!NOTE]
+> 如果您的组织已在[租户级别（公共预览）设置了Microsoft 365的客户密钥](customer-key-tenant-level.md#overview-of-customer-key-for-microsoft-365-at-the-tenant-level-public-preview)，则精确数据匹配将自动使用其加密功能。 这仅适用于商业云中 E5 许可的租户。
 
 #### <a name="prerequisites"></a>先决条件
 

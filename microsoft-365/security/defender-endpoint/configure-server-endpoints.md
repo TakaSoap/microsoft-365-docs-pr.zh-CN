@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 5013d94277eeba7d1df100d2850cb950fe2e0742
-ms.sourcegitcommit: a965c498e6b3890877f895d5197898b306092813
+ms.openlocfilehash: 1757160b37500e97586fbb6dfb16d81303bc54e4
+ms.sourcegitcommit: 7b8104015a76e02bc215e1cf08069979c70650ae
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51379343"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51476477"
 ---
 # <a name="onboard-windows-servers-to-the-microsoft-defender-for-endpoint-service"></a>将 Windows 服务器载入 Microsoft Defender for Endpoint 服务
 
@@ -204,7 +204,7 @@ Defender for Endpoint 可以与 Azure 安全中心集成，以提供全面的 Wi
 - 自动载入 - 在载入到 Azure 安全中心的 Windows 服务器上自动启用 Defender for Endpoint 传感器。 有关 Azure 安全中心载入详细信息，请参阅载入 Azure 安全中心 [标准增强的安全性](https://docs.microsoft.com/azure/security-center/security-center-onboarding)。
 
     > [!NOTE]
-    > 自动载入仅适用于 Windows Server 2008 R2 SP1、Windows Server 2012 R2 和 Windows Server 2016。
+    > Azure Defender for Servers 和 Microsoft Defender for Endpoint 之间的集成已扩展为支持[Windows Server 2019 和 Windows 虚拟桌面 (WVD) 。 ](https://docs.microsoft.com/azure/security-center/release-notes#microsoft-defender-for-endpoint-integration-with-azure-defender-now-supports-windows-server-2019-and-windows-10-virtual-desktop-wvd-in-preview)
 
 - Azure 安全中心监视的 Windows 服务器还将在 Defender for Endpoint 中可用 - Azure 安全中心无缝连接到 Defender for Endpoint 租户，跨客户端和服务器提供单个视图。  此外，适用于终结点的 Defender 警报将在 Azure 安全中心控制台中提供。
 - 服务器调查 - Azure 安全中心客户可以访问 Microsoft Defender 安全中心执行详细调查，以发现潜在泄露的范围。

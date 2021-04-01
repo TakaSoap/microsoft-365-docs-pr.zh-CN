@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 摘要：从德国 Microsoft 云 (德国) 迁移到新的德国数据中心区域中的 Office 365 服务时，需要提前工作。
-ms.openlocfilehash: fb352c17d9868cf5c42034e198be63b6e0543dbb
-ms.sourcegitcommit: 39609c4d8c432c8e7d7a31cb35c8020e5207385b
+ms.openlocfilehash: 9f5a38eae6d42f992879f97b8e8e1e8e6c4d56c3
+ms.sourcegitcommit: 7b8104015a76e02bc215e1cf08069979c70650ae
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "51445598"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51476345"
 ---
 # <a name="pre-work-for-the-migration-from-microsoft-cloud-deutschland"></a>从德国 Microsoft 云进行迁移的前期工作
 
@@ -102,12 +102,13 @@ nslookup -querytype=CNMAE msoid.contoso.com
 
 <!-- before phase 5 -->
 
-**适用于：** 已启用共享日历和可用性地址空间的 Exchange Online 客户<br>
+**适用于：Exchange** Online 客户<br>
 **应用时**：阶段 9 结束之前的任何时间
 
 | 步骤 (步骤)  | 说明 | 影响 |
 |:-------|:-------|:-------|
-| 通知外部合作伙伴即将过渡到 Office 365 服务。 | 可用性地址空间配置允许与 Office 365 共享忙/闲信息。 | 如果不这样做，可能会导致客户迁移的稍后阶段出现服务或客户端故障。 |
+| 通知外部合作伙伴即将过渡到 Office 365 服务。 |  客户必须通知已启用共享日历和可用性地址空间配置的合作伙伴， (Office 365 商业版共享忙/闲) 。 完成 Exchange Online 迁移后，可用性配置需要转换以使用 [Office 365](https://docs.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges?view=o365-worldwide) 全球终结点。 | 如果不这样做，可能会导致客户迁移的稍后阶段出现服务或客户端故障。 |
+| 通知用户所需的 IMAP4/POP3/SMTP 客户端更改。 | 对于客户端协议 IMAP4、POP3 和 SMTP，具有 Microsoft 云德国终结点的设备连接的用户需要手动更新其客户端设备以切换到 [Office 365 全球](https://docs.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges?view=o365-worldwide)终结点。 | 预先向这些协议的用户传达此依赖关系，并确保他们在此迁移期间切换为使用 Outlook Mobile 或 Outlook 网页版。 迁移用户邮箱时，更新客户端终结点失败将导致德国 Microsoft 云的客户端连接失败。 |
 ||||
 
 ### <a name="exchange-online-hybrid-configuration"></a>Exchange Online 混合配置

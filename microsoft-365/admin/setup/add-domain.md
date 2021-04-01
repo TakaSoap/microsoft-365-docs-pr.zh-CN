@@ -26,21 +26,14 @@ search.appverid:
 - MOE150
 ms.assetid: 6383f56d-3d09-4dcb-9b41-b5f5a5efd611
 description: 在 DNS 主机上添加 DNS 记录，将域添加到 Microsoft 365 管理中心中的 Microsoft 365。 安装向导将指导你完成该过程。
-ms.openlocfilehash: 30bce7dd207532c441fdfaf572add44baec16d8d
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 747de5f61dc9fce53f82f52b65f701572a56f8d4
+ms.sourcegitcommit: d4604e333507c6f57d5bf327531a241b649052de
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50914266"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51470877"
 ---
 # <a name="add-a-domain-to-microsoft-365"></a>将域添加到 Microsoft 365
-
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> 管理中心正在发生改变。 如果你的体验与此处提供的详细信息不匹配，请参阅[有关新版 Microsoft 365 管理中心](../microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet)。
-
-::: moniker-end
 
  如果找不到要查找的内容，请 **[查看域常见问题解答](domains-faq.yml)**。 
   

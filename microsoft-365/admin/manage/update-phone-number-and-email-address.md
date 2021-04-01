@@ -20,21 +20,15 @@ search.appverid:
 - MOE150
 ms.assetid: 767349fa-f646-46d9-9dab-4a65049bdd1f
 description: 在管理中心更新管理员电话号码和电子邮件地址。 如果你想要重置自己的管理员密码，你将需要此信息。
-ms.openlocfilehash: a5b1548ee6ac0fa6bac976758ea8f6753ea2853c
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 39b68905c0d43608a0d0ce1d37167fd7d9aff8fb
+ms.sourcegitcommit: d4604e333507c6f57d5bf327531a241b649052de
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50914986"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51470913"
 ---
 # <a name="update-your-admin-phone-number-and-email-address"></a>更新管理员电话号码和电子邮件地址
 
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> 管理中心正在发生改变。 如果你的体验与此处提供的详细信息不匹配，请参阅[有关新版 Microsoft 365 管理中心](../microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet)。
-
-::: moniker-end
 本文介绍了管理员如何在 Microsoft 365 中更改你的企业电话和电子邮件地址。
   
 如果想了解如何更改公司的资料信息（如公司名称和地址、公司电话号码和技术联系人信息），请参阅[更改公司地址、技术联系人电子邮件及其他信息](change-address-contact-and-more.md)。

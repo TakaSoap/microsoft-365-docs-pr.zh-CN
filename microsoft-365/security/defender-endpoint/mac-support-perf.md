@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 87190d9e0bb62d42642374bd7c9f6f3acad3c80a
-ms.sourcegitcommit: a965c498e6b3890877f895d5197898b306092813
+ms.openlocfilehash: 6ff93b44627cf876384522f0c4f25d22347c8661
+ms.sourcegitcommit: 7b8104015a76e02bc215e1cf08069979c70650ae
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51379379"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51476251"
 ---
 # <a name="troubleshoot-performance-issues-for-microsoft-defender-for-endpoint-for-mac"></a>解决 Microsoft Defender for Endpoint for Mac 的性能问题
 
@@ -32,7 +32,7 @@ ms.locfileid: "51379379"
 
 **适用于：**
 
-- [Microsoft Defender for Endpoint for Mac](microsoft-defender-endpoint-mac.md)
+- [适用于 Mac 的终结点的 Microsoft Defender](microsoft-defender-endpoint-mac.md)
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -48,7 +48,7 @@ RTP (实时) 是适用于 Mac 的 Microsoft Defender for Endpoint 的一项功�
 
 1. 使用下列方法之一禁用实时保护并观察性能是否提高。 此方法有助于缩小 Microsoft Defender for Endpoint for Mac 是否导致性能问题。
 
-    如果你的设备不是由你的组织管理的，可以使用以下选项之一禁用实时保护：
+      如果你的设备不是由你的组织管理的，可以使用以下选项之一禁用实时保护：
 
     - 从用户界面。 打开 Microsoft Defender for Endpoint for Mac 并导航到"**管理设置"。**
 
@@ -60,10 +60,100 @@ RTP (实时) 是适用于 Mac 的 Microsoft Defender for Endpoint 的一项功�
       mdatp config real-time-protection --value disabled
       ```
 
-    如果你的设备由你的组织管理，则管理员可以使用设置适用于 Mac 的 Microsoft Defender for Endpoint 的首选项中的说明禁用 [实时保护](mac-preferences.md)。
+      如果你的设备由你的组织管理，则管理员可以使用设置适用于 Mac 的 Microsoft Defender for Endpoint 的首选项中的说明禁用 [实时保护](mac-preferences.md)。
+      
+      如果实时保护关闭时性能问题仍然存在，则问题的原因可能是终结点检测和响应组件。 在这种情况下，请联系客户支持部门，了解进一步说明和缓解措施。
 
 2. 打开 Finder 并导航到 **应用程序**  >  **实用程序**。 打开 **活动监视器** 并分析哪些应用程序正在使用您系统上的资源。 典型示例包括软件更新和编译器。
 
-3. 将 Microsoft Defender for Endpoint for Mac 配置为排除导致性能问题的进程或磁盘位置，并重新启用实时保护。
+1. 若要查找触发最多扫描的应用程序，可以使用 Defender for Endpoint for Mac 收集实时统计信息。
 
-    有关详细信息 [，请参阅配置和验证适用于 Mac](mac-exclusions.md) 的 Microsoft Defender 终结点的排除项。
+      > [!NOTE]
+      > 此功能在版本 100.90.70 或更高版本中可用。
+      默认情况下，在 **Dogfood** 和 **InsiderFast** 频道上启用此功能。 如果使用的是其他更新通道，可以通过命令行启用此功能：
+      ```bash
+      mdatp config real-time-protection-statistics  --value enabled
+      ```
+
+      此功能需要启用实时保护。 若要检查实时保护的状态，请运行以下命令：
+
+      ```bash
+      mdatp health --field real_time_protection_enabled
+      ```
+
+    确认 **real_time_protection_enabled条目** 为 true。 否则，请运行以下命令以启用它：
+
+      ```bash
+      mdatp config real-time-protection --value enabled
+      ```
+
+      ```output
+      Configuration property updated
+      ```
+
+      若要收集当前统计信息，请运行：
+
+      ```bash
+      mdatp config real-time-protection --value enabled
+      ```
+
+      > [!NOTE]
+      > Using **--output json** (note the double dash) ensures that the output format is ready for parsing.
+      此命令的输出将显示所有进程及其关联的扫描活动。
+
+1. 在 Mac 系统上，使用 命令下载 python high_cpu_parser.py 示例：
+
+    ```bash
+    wget -c https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/linux/diagnostic/high_cpu_parser.py
+    ```
+
+    此命令的输出应类似于以下内容：
+
+    ```Output
+    --2020-11-14 11:27:27-- https://raw.githubusercontent.com/microsoft.
+    mdatp-xplat/master/linus/diagnostic/high_cpu_parser.py
+    Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 151.101.xxx.xxx
+    Connecting to raw.githubusercontent.com (raw.githubusercontent.com)| 151.101.xxx.xxx| :443... connected.
+    HTTP request sent, awaiting response... 200 OK
+    Length: 1020 [text/plain]
+    Saving to: 'high_cpu_parser.py'
+    100%[===========================================>] 1,020    --.-K/s   in 
+    0s
+    ```
+
+1. 接下来，键入以下命令：
+
+      ```bash
+        chmod +x high_cpu_parser.py
+      ```
+
+      ```bash
+        cat real_time_protection.json | python high_cpu_parser.py  > real_time_protection.log
+      ```
+
+      以上输出是性能问题的主要参与者的列表。 第一列是 PID (的进程标识符) ，第二列是 te 进程名称，最后一列是扫描的文件数，按影响排序。
+
+      例如，该命令的输出如下所示：
+
+      ```output
+        ... > python ~/repo/mdatp-xplat/linux/diagnostic/high_cpu_parser.py <~Downloads/output.json | head -n 10
+        27432 None 76703
+        73467 actool     1249
+        73914 xcodebuild 1081
+        73873 bash 1050
+        27475 None 836
+        1    launchd    407
+        73468 ibtool     344
+        549  telemetryd_v1   325
+        4764 None 228
+        125  CrashPlanService 164
+      ```
+
+      若要提高 Defender for Endpoint for Mac 的性能，请在"扫描的文件总数"行下找到编号最高的一个，并添加排除项。 有关详细信息，请参阅为 Linux 的 Defender for Endpoint 配置和 [验证排除项](linux-exclusions.md)。
+
+      > [!NOTE]
+      > 应用程序将统计信息存储在内存中，并仅跟踪自文件启动和启用实时保护以来的文件活动。 在实时保护关闭之前或期间启动的进程不计入在内。 此外，仅计算触发扫描的事件。
+      > 
+1. 将 Microsoft Defender for Endpoint for Mac 配置为排除导致性能问题的进程或磁盘位置，并重新启用实时保护。
+
+     有关详细信息 [，请参阅配置和验证适用于 Mac](mac-exclusions.md) 的 Microsoft Defender 终结点的排除项。

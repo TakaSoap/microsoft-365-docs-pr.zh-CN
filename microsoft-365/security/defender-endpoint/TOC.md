@@ -390,6 +390,7 @@
 ## 参考
 ### [管理和 API]()
 #### [管理和 API 概述](management-apis.md)
+#### [API 发行说明](api-release-notes.md)
 #### [Microsoft Defender for Endpoint API]()
 ##### [入门]()
 ###### [Microsoft Defender for Endpoint API 许可和条款](api-terms-of-use.md)
@@ -586,6 +587,5 @@
 ##### [网络保护](troubleshoot-np.md)
 ##### [攻击面减少规则](troubleshoot-asr.md)
 
-# [Microsoft 365 安全中心](../index.yml)
-# [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
+# [Microsoft 365 Defender](../index.yml)
 # [Defender for Office 365](../office-365-security/overview.md)

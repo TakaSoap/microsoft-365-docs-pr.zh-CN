@@ -7,7 +7,7 @@ author: markjjo
 manager: laurawi
 ms.date: ''
 audience: Admin
-ms.topic: overview
+ms.topic: article
 f1_keywords:
 - ms.o365.cc.IngestionHelp
 ms.service: O365-seccomp
@@ -20,12 +20,12 @@ ms.assetid: ba688e0a-0fcb-4bd7-8e57-2b669564ea84
 ms.custom:
 - seo-marvel-apr2020
 description: 了解如何使用安全与合规中心的导入服务将电子邮件数据（PST 文件）批量导入到用户邮箱中。
-ms.openlocfilehash: 6d0bca6d76a0eccb9bc8181e73f2c36c51acaf77
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: c645228598eb9cf0e6edca7104b8977e7eaf72f7
+ms.sourcegitcommit: c75aac39ee8d93218a79585113ef6b36f47c9ddf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50911316"
+ms.lasthandoff: 03/29/2021
+ms.locfileid: "51408533"
 ---
 # <a name="overview-of-importing-your-organizations-pst-files"></a>有关导入组织的 PST 文件的概述
 
@@ -70,7 +70,7 @@ ms.locfileid: "50911316"
     
     - 将硬盘实际寄到 Microsoft 数据中心（创建导入作业时，将会显示 Microsoft 数据中心的寄送地址）。
     
-    - Microsoft 收到硬盘后，数据中心工作人员会将硬盘上的 PST 文件上传到组织的 Azure 存储位置。 如前面所述，PST 文件将上传至驻留在组织所在的区域 Microsoft 数据中心的 Azure 存储位置。
+    - Microsoft 收到硬盘后，数据中心工作人员会将硬盘上的 PST 文件上传到组织的 Azure 存储位置。 如前所述，PST 文件上传到位于组织所在相同区域 Microsoft 数据中心的 Azure 存储位置。
     
       > [!NOTE]
       > 硬盘驱动器上的 PST 文件将在 Microsoft 收到硬盘驱动器之后 7-10 个工作日之内上传至 Azure。
@@ -178,7 +178,7 @@ Using network upload to import PST files is free.
  
  **导入 PST 文件时是否有邮件大小限制？**
   
-是。 如果 PST 文件包含大于 150 MB 的邮件项，则将在导入过程中跳过此项。
+是。 如果 PST 文件包含大于 150 MB 的邮箱项目，导入过程中将跳过且不导入该项目。 不导入大小超过 150 MB 的邮件，因为 Exchange Online 中的邮件大小限制为 150 MB。 有关详细信息，请参阅 [Exchange Online 中的邮件](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#message-limits)。
   
  **PST 文件导入到 Microsoft 365 邮箱时，是否会保留邮件发送时间或接收时间、收件人列表和其他邮件属性？**
   
@@ -271,7 +271,7 @@ Microsoft 数据中心收到你的硬盘后，需花 7 到 10 个工作日将 PS
   
  **导入 PST 文件时是否有邮件大小限制？**
   
-是。 如果 PST 文件包含大于 150 MB 的邮件项，则将在导入过程中跳过此项。
+是。 如果 PST 文件包含大于 150 MB 的邮箱项目，导入过程中将跳过且不导入该项目。 不导入大小超过 150 MB 的邮件，因为 Exchange Online 中的邮件大小限制为 150 MB。 有关详细信息，请参阅 [Exchange Online 中的邮件](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#message-limits)。
   
   **PST 导入进程如何处理重复的电子邮件项？**
 
@@ -317,6 +317,6 @@ Microsoft 数据中心收到你的硬盘后，需花 7 到 10 个工作日将 PS
   
 是。
   
- **如果我必须将我的硬盘发运到其他国家/地区，是否有任何需要执行的操作？**
+ **If I have to ship my hard drive to another country, is there anything I need to do?**
   
-你发运到 Microsoft 的硬盘可能会跨越国际边界。如果是这种情况，你有责任确保硬盘及其所含数据是根据适用法律导入和/或导出的。发运硬盘前，请与顾问联系，确保驱动器和数据可以合法地发送到指定的 Microsoft 数据中心。这有助于确保它及时送达 Microsoft。
+The hard drive that you ship to Microsoft might have to cross international borders. 如果是，你有责任确保硬盘及其包含的数据是根据适用法律导入和/或导出的。 Before shipping a hard drive, check with your advisors to verify that your drive and data can legally be shipped to the specified Microsoft data center. This will help to ensure that it reaches Microsoft in a timely manner.

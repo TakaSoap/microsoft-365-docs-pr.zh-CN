@@ -20,21 +20,14 @@ search.appverid:
 - MOE150
 ms.assetid: 55c96b32-e086-4c9e-948b-a018b44510cb
 description: 了解如何创建、编辑或删除安全组。
-ms.openlocfilehash: d2cc749acaf7b2e23674156f6ad9a200ec7b386d
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 4ea97683e47f7f0ef8f196db32df8e22f9b1a0b9
+ms.sourcegitcommit: d4604e333507c6f57d5bf327531a241b649052de
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50915814"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51470973"
 ---
 # <a name="create-edit-or-delete-a-security-group-in-the-microsoft-365-admin-center"></a>在 Microsoft 365 管理中心创建、编辑或删除安全组
-
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> 管理中心正在发生改变。 如果你的体验与此处提供的详细信息不匹配，请参阅[有关新版 Microsoft 365 管理中心](../microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet)。
-
-::: moniker-end
 
 在"Microsoft 365 组"页上，可以创建用户帐户组，这些用户帐户可用于在 SharePoint Online 和 CRM Online 中分配相同的权限。 例如，管理员可以创建一个安全组，以向特定用户组授予对 SharePoint 网站的访问权限。 只有全局管理员和"用户管理"管理员拥有创建、编辑或删除安全组的权限；有关管理员角色的详细信息，请参阅[分配管理员角色](../add-users/assign-admin-roles.md)。 
   

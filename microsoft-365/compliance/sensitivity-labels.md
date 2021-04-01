@@ -22,12 +22,12 @@ description: 使用 Microsoft 信息保护 (MIP) 中的敏感度标签对敏感�
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 6c1f8b404ddcda45d782a6517880955a6199025d
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: a540529c174cc12b0e037be4af4e08c29e3835ea
+ms.sourcegitcommit: c75aac39ee8d93218a79585113ef6b36f47c9ddf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50919588"
+ms.lasthandoff: 03/29/2021
+ms.locfileid: "51408597"
 ---
 # <a name="learn-about-sensitivity-labels"></a>了解敏感度标签
 
@@ -49,7 +49,7 @@ ms.locfileid: "50919588"
 若要应用敏感度标签，用户必须使用其 Microsoft 365 工作或学校帐户登录。
 
 > [!NOTE]
-> 敏感度标签新近支持用于美国政府租户（GCC 和 GCC-H）。 有关详细信息，请参阅 Microsoft 365 企业应用版 [版本2101：1 月 26 日](/officeupdates/current-channel#version-2101-january-26)。
+> 对于美国政府租户，现在支持 ["GCC"和"GCC 高"环境](/officeupdates/current-channel#version-2101-january-26) 标签，目前正在向 DoD 环境推出。
 >
 > 关于 Azure 信息保护统一标签客户端和扫描器，请参阅 [Azure 信息保护高级版政府服务说明](/enterprise-mobility-security/solutions/ems-aip-premium-govt-service-description)。
 

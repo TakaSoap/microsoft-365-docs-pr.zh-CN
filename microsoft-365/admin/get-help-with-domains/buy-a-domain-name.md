@@ -23,21 +23,14 @@ search.appverid:
 - GEA150
 ms.assetid: 1561140a-16a9-4a02-822d-a989250e479d
 description: 了解如何在 Microsoft 365 中购买域名。
-ms.openlocfilehash: 24c6ac017cf25e1a40148e7a2c982e9d1068664b
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: eb0520f605715c3403e1ce0134aa60abed0f6751
+ms.sourcegitcommit: d4604e333507c6f57d5bf327531a241b649052de
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50915670"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51470507"
 ---
 # <a name="buy-a-domain-name"></a>购买域名
-
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> 管理中心正在发生改变。 如果你的体验与此处提供的详细信息不匹配，请参阅[有关新版 Microsoft 365 管理中心](../microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet)。
-
-::: moniker-end
 
  *若要添加、修改或删除域，**你必须** 是企业 **或** 企业计划的 [全局管理员](https://products.office.com/business/office)。这些更改会影响整个 *租户，自定义* 管理员或常规用户将无法进行这些更改。*  
 

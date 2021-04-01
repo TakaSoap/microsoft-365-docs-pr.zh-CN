@@ -20,21 +20,14 @@ search.appverid:
 - MOE150
 ms.assetid: 286fcf0b-ffc7-4593-8073-d7a4a5dd2b45
 description: 了解如何使用导航选项卡和筛选器查看报告。
-ms.openlocfilehash: d3f080bdf2ec5544a0ef9d06139cad682962d57d
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 921b32448deeb13b33d58112183002bace44c430
+ms.sourcegitcommit: d4604e333507c6f57d5bf327531a241b649052de
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50913906"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51471041"
 ---
 # <a name="navigate-and-utilize-the-reports-in-microsoft-365-usage-analytics"></a>导航和利用 Microsoft 365 使用情况分析中的报表
-
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> 管理中心正在发生改变。 如果你的体验与此处提供的详细信息不匹配，请参阅[有关新版 Microsoft 365 管理中心](../microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet)。
-
-::: moniker-end
 
 仪表板提供有关主要用途和采用指标的快速概述。 通过选择顶级指标，可以访问可提供更多详细信息和见解的报告。 每个报告选项卡都包含特定于组织的使用和采用方面的数据可视化。 收集的数据在每个报告的标题中进行了说明，并且将显示一个图块，其中包含有关正在查看的报告选项卡上的可视化效果的进一步信息。
 

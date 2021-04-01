@@ -22,21 +22,14 @@ search.appverid:
 - GEA150
 ms.assetid: f09696b2-8c29-4588-a08b-b333da19810c
 description: 了解如何从 Microsoft 365 中删除旧域，以及如何将用户和组移动到另一个域。
-ms.openlocfilehash: f4281eb793e6a832e3bd7f31484a97ccd5065bf5
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 916730975e9e17c42b01d9fa0ff55b3cb7078f66
+ms.sourcegitcommit: d4604e333507c6f57d5bf327531a241b649052de
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50915610"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51470961"
 ---
 # <a name="remove-a-domain"></a>删除域
-
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> 管理中心正在发生改变。 如果你的体验与此处提供的详细信息不匹配，请参阅[有关新版 Microsoft 365 管理中心](../microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet)。
-
-::: moniker-end
   
  如果找不到要查找的内容，请 **[查看域常见问题解答](../setup/domains-faq.yml)**。 
   

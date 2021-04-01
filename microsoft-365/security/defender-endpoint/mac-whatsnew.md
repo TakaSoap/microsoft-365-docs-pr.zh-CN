@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: be906baca3a54183e22fa3b4ee424a9d8fc6957a
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 16d78cf014e775ecb98a59d90b5734836eb3cbf2
+ms.sourcegitcommit: 7b8104015a76e02bc215e1cf08069979c70650ae
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51198689"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51476621"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-for-mac"></a>适用于 Mac 的 Microsoft Defender 终结点的新增功能
 
@@ -39,7 +39,12 @@ ms.locfileid: "51198689"
 > 在 macOS 11 (Sur) 上，Microsoft Defender for Endpoint 需要额外的配置文件。 如果你是从 macOS 早期版本升级的现有客户，请确保部署此页中列出的其他 [配置文件](mac-sysext-policies.md)。
 
 > [!IMPORTANT]
-> 对 MacOS 10.13 (High Sierra) 将于 2021 年 2 月 15 日停止提供支持。
+> 对 MacOS 10.13 (High Sierra) 已于 2021 年 2 月 15 日停止提供支持。
+
+## <a name="1012364-20121021123640"></a>101.23.64 (20.121021.12364.0) 
+
+- 向命令行工具添加了一个新选项，用于查看有关上次按需扫描的信息。 若要查看有关上次按需扫描的信息，请运行 `mdatp health --details antivirus`
+- Bug 修复&性能改进
 
 ## <a name="1012279-20121012122790"></a>101.22.79 (20.121012.12279.0) 
 

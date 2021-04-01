@@ -4,16 +4,20 @@ description: 概述 Microsoft 托管桌面作为服务所包含的内容
 keywords: Microsoft 托管桌面, Microsoft 365, 服务, 文档
 ms.service: m365-md
 author: jaimeo
-ms.localizationpriority: normal
+f1.keywords:
+- NOCSH
 ms.author: jaimeo
+ms.localizationpriority: normal
+ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: c51ebdbcd2a8d6d13f5ba0009d470581e317a365
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+audience: Admin
+ms.openlocfilehash: a107c6364e6766094724972e931606003e0c87f7
+ms.sourcegitcommit: 39609c4d8c432c8e7d7a31cb35c8020e5207385b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50920428"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "51445192"
 ---
 # <a name="microsoft-managed-desktop-service-description"></a>Microsoft 托管桌面服务说明
 
@@ -23,7 +27,7 @@ Microsoft 托管桌面服务为用户提供安全的新式体验，并总是提�
 - 配置设备
 - 根据 Microsoft 最佳实践，保证用户和设备安全的功能，包括 Windows Hello、BitLocker、SecureBoot 和基于虚拟化的安全功能
 - 设备安全监控和修正服务
-- 应用程序兼容性，通过[桌面应用保证](/fasttrack/win-10-desktop-app-assure)实现
+- 应用兼容性，通过 [保证](https://docs.microsoft.com/fasttrack/products-and-capabilities#app-assure)
 - Windows 10 和 Microsoft 365 企业应用版的更新管理
 - 设备和应用使用情况的分析数据
 - 面向用户的 IT 支持
@@ -31,7 +35,7 @@ Microsoft 托管桌面服务为用户提供安全的新式体验，并总是提�
 
 如需 Microsoft 托管桌面特定服务的详细信息，请参阅本节中其他文章。 如已决定使用 Microsoft 托管桌面，可通过 [Microsoft 托管桌面注册须知](../get-ready/index.md)中的文章了解加入该服务的步骤。
 
-- [Microsoft 托管桌面支持的区域和语言](regions-languages.md)介绍该服务支持的区域和语言。
+- [支持的区域和](regions-languages.md) 语言介绍了该服务支持哪些地区和语言。
 - 为保证用户获得最佳体验，Microsoft 托管桌面仅支持某些设备。 [程序设备](device-list.md)指定可使用该服务的确切设备模型和配置，无论是由你提供还是与合作伙伴合作。
 - [设备服务](device-services.md)指定 Microsoft 向订阅者提供的设备相关服务。
 - [设备配置](device-policies.md)说明该服务将应用于注册设备的默认及与安全相关的移动设备管理策略。

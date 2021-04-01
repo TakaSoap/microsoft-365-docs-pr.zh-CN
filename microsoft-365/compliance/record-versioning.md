@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解有关记录的信息，以便在 Microsoft 365 中实现记录管理解决方案。
-ms.openlocfilehash: f622e7e6a75cacf5b9cf283847e6b3eea718d542
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 52ca56436686faac1d414dac47e2e9e16c36fa90
+ms.sourcegitcommit: c75aac39ee8d93218a79585113ef6b36f47c9ddf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50925568"
+ms.lasthandoff: 03/29/2021
+ms.locfileid: "51408555"
 ---
 # <a name="use-record-versioning-to-update-records-stored-in-sharepoint-or-onedrive"></a>使用记录版本控制来更新存储在 SharePoint 或 OneDrive 中的记录
 
@@ -44,6 +44,9 @@ ms.locfileid: "50925568"
   - **将文档自动保存在位于网站集内的本地记录存储库中。** SharePoint 和 OneDrive 中的每个网站集将内容保存在其保留库中。 记录版本保存在此库中的“记录”文件夹内。
 
   - **保存包含所有版本的始终更新的文档。** 默认情况下，每个 SharePoint 和 OneDrive 文档的项菜单上都有可用的版本历史记录。 在此版本历史记录中，你可以轻松查看哪些版本是记录并查看这些文档。
+
+> [!NOTE]
+> 对具有删除操作的记录版本控制使用具有删除操作的记录版本时，建议同时配置保留设置 **基于：** 开始保留期 **在项目被标记为**。 设置此标签后，将重置每个新记录版本的保留期开始，这样可确保在较新版本之前删除较旧版本。
 
 对于具有将项标记为记录的保留标签的任何文档，记录版本控制自动可用。 当用户使用详细信息窗格查看文档属性时，可以将“**记录状态**”从“**已锁定**”切换为“**已解锁**”。 执行此操作即可在保留库的“记录”文件夹中创建一个记录，该记录将在其中保存剩余的保留期。 
 
@@ -75,7 +78,7 @@ ms.locfileid: "50925568"
 
 ## <a name="record-versions"></a>记录版本
 
-每次用户解锁记录时，都会将最新版本复制到保留库的“记录”文件夹中，该版本在版本历史记录的“注释”字段中的值为“记录”。
+用户每次解锁记录时，最新版本将复制到保存保留库，且该版本包含版本历史记录的 **批注** 字段中 **"记录** "的值。
 <br/><br/>
 
 ![保留库中显示的记录](../media/recordversioning10.png)
@@ -93,16 +96,13 @@ ms.locfileid: "50925568"
 
 ![保留库中的“记录”文件夹](../media/recordversioning12.png)
 
-保留库仅对网站集管理员可见。 此外，默认情况下保留库不存在。 仅当受保存标签影响的内容在网站集中第一次删除时才会创建。
+有关保存保留库工作原理详细信息，请参阅 [如何为 SharePoint 和 OneDrive 应用设置](retention-policies-sharepoint.md#how-retention-works-for-sharepoint-and-onedrive)。
 
 ## <a name="searching-the-audit-log-for-record-versioning-events"></a>搜索记录版本控制事件的审核日志
 
-锁定和解锁记录的操作会记录在审核日志中。 你可以搜索特定活动“将记录状态更改为已锁定”和“将记录状态更改为已解锁”，这些活动位于安全与合规性中心“审核日志搜索”页面“活动”下拉列表中的“文件和页面活动”部分。
-<br/><br/>
+锁定和解锁记录的操作会记录在审核日志中。 从 **文件和页面活动**，选择 **记录状态为"已锁定** "，然后选择" **记录状态为**。
 
-![在审核日志中搜索记录版本控制事件](../media/recordversioning13.png)
-
-有关搜索这些事件的详细信息，请参阅[在安全与合规性中心中搜索审核日志](search-the-audit-log-in-security-and-compliance.md#file-and-page-activities)的“文件和页面活动”部分。
+有关搜索这些事件详细信息，请参阅 [安全与合规中心中搜索审核日志](search-the-audit-log-in-security-and-compliance.md#file-and-page-activities)。
 
 ## <a name="next-steps"></a>后续步骤
 

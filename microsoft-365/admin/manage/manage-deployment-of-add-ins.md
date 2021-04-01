@@ -22,21 +22,14 @@ search.appverid:
 - MOE150
 ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
 description: 了解如何使用管理中心中的集中部署将加载项部署到组织的用户和组。
-ms.openlocfilehash: 9ded0294912a3c3c99e62913bcdc349de7bae1b5
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 996ef34f1fc8d9663f6fa59f13a56a169b7edd11
+ms.sourcegitcommit: d4604e333507c6f57d5bf327531a241b649052de
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50915382"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51470519"
 ---
 # <a name="deploy-add-ins-in-the-admin-center"></a>在管理中心部署加载项
-
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> 管理中心正在发生改变。 如果你的体验与此处提供的详细信息不匹配，请参阅[有关新版 Microsoft 365 管理中心](../microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet)。
-
-::: moniker-end
 
 Office 加载项可帮助用户个性化设置文档并加速访问 Web 上的信息（请参阅[开始使用 Office 加载项](https://support.microsoft.com/office/82e665c4-6700-4b56-a3f3-ef5441996862)）。 作为管理员，可以使用 Microsoft 365 管理中心中的集中部署功能为贵组织的用户部署 Office 外接程序。 对于大多数管理员来说，集中部署是推荐且功能最丰富的方法，用于将外接程序部署到组织内的用户和组。
 

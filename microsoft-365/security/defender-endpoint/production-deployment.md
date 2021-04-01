@@ -19,12 +19,12 @@ ms.collection:
 - m365solution-scenario
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 8965594789c3c96c043e3cd1a8922d9ba996ef47
-ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
+ms.openlocfilehash: 7abf1c9e4115c928ae581da3789270fd8ed036d3
+ms.sourcegitcommit: 7b8104015a76e02bc215e1cf08069979c70650ae
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51222437"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51476297"
 ---
 # <a name="set-up-microsoft-defender-for-endpoint-deployment"></a>设置 Microsoft Defender for Endpoint 部署
 
@@ -39,7 +39,7 @@ ms.locfileid: "51222437"
 
 部署适用于终结点的 Defender 的过程分三个阶段：
 
-| [![部署阶段 - 准备](images/phase-diagrams/prepare.png)](prepare-deployment.md)<br>[阶段 1：准备](prepare-deployment.md) | ![部署阶段 - 设置](images/phase-diagrams/setup.png)<br>阶段 2：设置 | [![部署阶段 - 载入](images/phase-diagrams/onboard.png)](onboarding.md)<br>[阶段 3：载入](onboarding.md) |
+| [![部署阶段 - 准备](images/phase-diagrams/prepare.png)](prepare-deployment.md)<br>[阶段 1：准备](prepare-deployment.md) | ![部署阶段 - 设置](images/phase-diagrams/setup.png)<br>阶段 2：设置 | [![部署阶段 - 载入](images/phase-diagrams/onboard.png)](onboarding.md)<br>[阶段 3：开始使用](onboarding.md) |
 | ----- | ----- | ----- |
 | | *你在这里！*||
 
@@ -124,7 +124,7 @@ Microsoft Defender for Endpoint 感官方案需要 Microsoft Windows HTTP （Win
 
 -   Web 代理自动发现协议 (WPAD) 
 
-如果在网络拓扑中实施了透明代理或 WPAD，则不需要特殊的配置设置。 有关代理中终结点 URL 排除的 Microsoft Defender 详细信息，请参阅本文档中的代理服务 [URL](production-deployment.md#proxy-service-urls) 部分，了解 URL 允许列表或配置设备代理和 [Internet 连接设置](configure-proxy-internet.md#enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server)。
+如果在网络拓扑中实施了透明代理或 WPAD，则不需要特殊的配置设置。 有关代理中终结点 URL 排除的 Microsoft Defender 详细信息，请参阅[](production-deployment.md#proxy-service-urls)本文档中的代理服务 URL 部分，了解 URL 允许列表或配置设备代理和[Internet 连接设置](configure-proxy-internet.md#enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server)。
 
 **手动静态代理配置：**
 
@@ -172,7 +172,7 @@ Microsoft Defender for Endpoint 感官方案需要 Microsoft Windows HTTP （Win
 > - 这将影响所有应用程序，包括使用带默认代理的 WinHTTP 的 Windows 服务。</br>
 > - 更改拓扑结构（例如 (：从办公室到家庭) netsh 将发生故障。 使用基于注册表的静态代理配置。
 
-1. 打开提升的命令行：
+1. 打开提升的命令行:
 
     1. 转到“**开始**”并键入“**cmd**”。
 
@@ -199,7 +199,7 @@ Down-Level包括 Windows 7 SP1 和 Windows 8.1 工作站以及 Windows Server 20
 
 以下可下载的电子表格列出了网络必须能够连接到的服务及其关联 URL。 确保没有拒绝访问这些 URL 的防火墙或网络筛选规则，或者您可能需要专门为它们创建允许规则。 
 
-|**域列表电子表格**|**说明**|
+|**域列表电子表格**|**描述**|
 |:-----|:-----|
 |![适用于终结点 URL 电子表格的 Microsoft Defender 缩略图](images/mdatp-urls.png)<br/>  | 服务位置、地理位置和操作系统的特定 DNS 记录的电子表格。 <br><br>[在此处下载电子表格。](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx) 
 

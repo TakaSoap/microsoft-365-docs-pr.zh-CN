@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: ee4f18342304cf46f97a6ae7aa6e1ba76685bccd
-ms.sourcegitcommit: 3d3c446d5e2e90369be1339dd0a33e71432fbc36
+ms.openlocfilehash: b3a555ba41cee7c8272467de20962eb1e7f25cfc
+ms.sourcegitcommit: 39609c4d8c432c8e7d7a31cb35c8020e5207385b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "50994614"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "51445610"
 ---
 # <a name="get-started-with-insider-risk-management-settings"></a>内部风险管理设置入门
 
@@ -237,12 +237,12 @@ ms.locfileid: "50994614"
 
 针对安全与合规警报架构的内部风险管理警报导出&和值：
 
-| **Alert 参数** | **说明** |
+| **Alert 参数** | **描述** |
 |:------------------|:----------------|
 | AlertType | 警报的类型为 *"自定义"。*  |
 | AlertId | 警报的 GUID。 内部风险管理警报是可变的。 当警报状态更改时，将生成一个同一 AlertID 的新日志。 此 AlertID 可用于关联警报的更新。 |
-| 类别 | 警报的类别为 *InsiderRiskManagement*。 此类别可用于区别于其他安全与合规&警报。 |
-| 备注 | 警报的默认注释。 值为"*新建* (警报"，当警报) 更新 (警报更新时，会记录警报) 。  使用 AlertID 关联警报的更新。 |
+| Category | 警报的类别为 *InsiderRiskManagement*。 此类别可用于区别于其他安全与合规&警报。 |
+| 注释 | 警报的默认注释。 值为"*新建* (警报"，当警报) 更新 (警报更新时，会记录警报) 。  使用 AlertID 关联警报的更新。 |
 | Data | 警报的数据包括唯一用户 ID、用户主体名称以及将用户触发到策略 (UTC) 日期和时间。 |
 | 名称 | 生成警报的内部风险管理策略的策略名称。 |
 | PolicyId | 触发警报的内部风险管理策略的 GUID。 |
@@ -257,7 +257,7 @@ ms.locfileid: "50994614"
 - Id
 - RecordType
 - CreationTime
-- Operation
+- 操作
 - OrganizationId
 - UserType
 - UserKey
@@ -502,12 +502,14 @@ ms.locfileid: "50994614"
 - 最低隐私要求：扫描结果和见解作为匿名用户活动返回，审阅者无法识别各个用户名。
 - 通过综合见解了解潜在风险：扫描结果可帮助您快速识别用户的潜在风险区域，以及最适合帮助降低这些风险的策略。
 
+请查看 [Insider Risk Management Analytics 视频](https://www.youtube.com/watch?v=5c0P5MCXNXk) ，帮助了解分析如何有助于加速识别潜在内部风险，并帮助您快速采取行动。
+
 分析扫描多个来源的风险活动事件，以帮助识别对潜在风险领域的见解。 根据当前的配置，分析将查找以下领域的符合条件的风险活动：
 
-- Microsoft 365 审核日志：此日志包含在所有扫描中，是标识大多数可能存在风险的活动的主要来源。
-- Exchange Online：包含在所有扫描中，Exchange Online 活动可帮助识别通过电子邮件将附件数据发送到外部联系人或服务的活动。
-- Azure Active Directory：Azure Active Directory 历史记录包含在所有扫描中，可帮助识别与具有已删除用户帐户的用户关联的风险活动。
-- Microsoft 365 HR 数据连接器：如果配置，HR 连接器事件有助于识别与具有提前或即将终止日期的用户相关的有风险活动。
+- **Microsoft 365 审核** 日志：包含在所有扫描中，这是标识大部分可能存在风险的活动的主要来源。
+- **Exchange Online：** 包含在所有扫描中，Exchange Online 活动可帮助识别将附件数据通过电子邮件发送给外部联系人或服务的活动。
+- **Azure Active Directory：** 包含在所有扫描中，Azure Active Directory 历史记录可帮助识别与具有已删除用户帐户的用户关联的风险活动。
+- **Microsoft 365 HR 数据** 连接器：如果配置，HR 连接器事件有助于识别与有提前或即将终止日期的用户相关的有风险活动。
 
 来自扫描的分析见解基于内部风险管理策略使用的相同风险活动信号，并基于单一和顺序用户活动报告结果。 但是，分析的风险评分基于最多 30 天的活动，而内部风险策略使用每日活动进行见解。 首次在组织中启用和运行分析时，你将看到一天的扫描结果。 如果保持启用分析功能，你将看到每个每日扫描的结果添加到见解报告中，了解前 30 天活动的最大范围。
 

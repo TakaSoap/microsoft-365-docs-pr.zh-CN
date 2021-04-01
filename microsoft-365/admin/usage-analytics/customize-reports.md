@@ -20,21 +20,14 @@ search.appverid:
 - MOE150
 ms.assetid: 9b76065f-29b9-4b89-8059-c5f9db9ddbf6
 description: 了解如何在浏览器和 Power BI Desktop 中自定义报表。
-ms.openlocfilehash: 18b4352d3aaa2fd16b74f78e1f80da3ee98367a6
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: d36e07a19b0ebda0d154b11723630e38b746eb8d
+ms.sourcegitcommit: d4604e333507c6f57d5bf327531a241b649052de
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50914002"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51471085"
 ---
 # <a name="customize-the-reports-in-microsoft-365-usage-analytics"></a>自定义 Microsoft 365 使用情况分析中的报告
-
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> 管理中心正在发生改变。 如果你的体验与此处提供的详细信息不匹配，请参阅[有关新版 Microsoft 365 管理中心](../microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet)。
-
-::: moniker-end
 
 Microsoft 365 使用情况分析在 Power BI 中提供了一个仪表板，可提供用户采用和使用 Microsoft 365 的见解。 这个仪表板只是与使用情况数据进行交互的起点。 可以自定义报表，从而获得更加个性化的见解。
   

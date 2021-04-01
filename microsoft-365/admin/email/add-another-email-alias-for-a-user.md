@@ -22,21 +22,14 @@ search.appverid:
 - MOE150
 ms.assetid: 0b0bd900-68b1-4bf5-808b-5d240a7739f4
 description: '了解如何将多个电子邮件地址（称为电子邮件别名）与 Microsoft 365 商业版帐户关联。 '
-ms.openlocfilehash: 590782f7b22b1d26abef83f884d45da567f0425c
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: a44271cdbf52136e61702697a960cc3cbcd8119d
+ms.sourcegitcommit: d4604e333507c6f57d5bf327531a241b649052de
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50915946"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51470997"
 ---
 # <a name="add-another-email-alias-for-a-user"></a>为用户添加另一个电子邮件别名
-
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> 管理中心正在发生改变。 如果你的体验与此处提供的详细信息不匹配，请参阅[有关新版 Microsoft 365 管理中心](../microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet)。
-
-::: moniker-end
   
 本文适用于具有商业版订阅的 Microsoft 365 管理员。 不适用于家庭用户。
   

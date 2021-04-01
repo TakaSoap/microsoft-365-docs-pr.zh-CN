@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 670c6449c1121bc329b1dfb37cd1d9948c99a3f8
-ms.sourcegitcommit: a965c498e6b3890877f895d5197898b306092813
+ms.openlocfilehash: 481051b74c1be88ba78bbd44e4fc0c174ed0bdad
+ms.sourcegitcommit: d4604e333507c6f57d5bf327531a241b649052de
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51379294"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51470889"
 ---
 # <a name="create-indicators"></a>创建指示器
 
@@ -50,6 +50,9 @@ Defender for Endpoint 的云检测引擎会定期扫描收集的数据并尝试�
 
 **自动调查和修正引擎**<BR>
 自动调查和修正的行为相同。 如果指示器设置为"允许"，自动调查和修正将忽略它的"错误"裁定。 如果设置为"阻止"，自动调查和修正将视为"错误"。
+
+> [!NOTE]
+> EnableFileHashComputation 设置在文件扫描期间计算证书和文件 IoC 的文件哈希。 它支持对哈希和证书属于受信任应用程序的 IoC 强制。 它将通过允许或阻止文件设置同时启用和禁用。 EnableFileHashComputation 通过组策略手动启用，默认情况下处于禁用状态。
 
 
 当前支持的操作包括：

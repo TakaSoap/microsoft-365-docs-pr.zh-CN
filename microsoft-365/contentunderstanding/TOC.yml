@@ -16,8 +16,14 @@
       href: create-a-content-center.md
     - name: 创建分类器
       href: create-a-classifier.md
+    - name: 复制模型
+      href: duplicate-a-model.md
+    - name: 重命名模型
+      href: rename-a-model.md
     - name: 创建提取程序
       href: create-an-extractor.md
+    - name: 重命名提取器
+      href: rename-an-extractor.md
     - name: 说明类型
       href: explanation-types-overview.md
     - name: 应用模型

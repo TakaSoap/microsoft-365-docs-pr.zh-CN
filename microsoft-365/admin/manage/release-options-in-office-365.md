@@ -22,21 +22,14 @@ search.appverid:
 - GEA150
 ms.assetid: 3b3adfa4-1777-4ff0-b606-fb8732101f47
 description: 了解如何在 Microsoft 365 管理中心中设置新产品和功能更新的发布选项。
-ms.openlocfilehash: e909cdf35ba9dd8282540783f7c362e5ae49212e
-ms.sourcegitcommit: 8998f70d3f7bd673f93f8d1cf12ce981b1b771c3
+ms.openlocfilehash: 6c5d505f0ece47b0a47df8b7ed1dc015afe93e82
+ms.sourcegitcommit: d4604e333507c6f57d5bf327531a241b649052de
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51034075"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51470567"
 ---
 # <a name="set-up-the-standard-or-targeted-release-options"></a>设置标准或定向发布选项
-
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> 管理中心正在发生改变。 如果你的体验与此处提供的详细信息不匹配，请参阅[有关新版 Microsoft 365 管理中心](../microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet)。
-
-::: moniker-end
 
 > [!IMPORTANT]
 > 本文中所述的 Microsoft 365 更新适用于 Microsoft 365、SharePoint Online 和 Exchange Online。 这些发布选项是发布 Microsoft 365 更改的有针对性的最佳方法，但不能保证任何时间或所有更新。 它们不适用于 Microsoft 365 应用版、Skype for Business、Microsoft Teams 和相关服务。 有关 Microsoft 365 应用版发布选项的信息，请参阅 [Microsoft 365 应用版更新频道概述](/deployoffice/overview-update-channels)。
@@ -114,7 +107,7 @@ ms.locfileid: "51034075"
 
 
   
-## <a name="learn-more"></a>了解详细信息
+## <a name="learn-more"></a>了解更多
 
 了解如何[在](/office365/admin/manage/message-center)[Microsoft 365](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/MessageCenter)消息中心管理邮件，以获取有关即将推出的 Microsoft 365 更新和发布的通知。
 

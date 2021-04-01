@@ -21,21 +21,14 @@ search.appverid:
 ms.assetid: 89502322-bfbb-43d6-9207-4030f8ce26e0
 ROBOTS: NOINDEX
 description: '了解如何与组织外部人员共享网站和文件。 '
-ms.openlocfilehash: 585034580fd18d9584b4df3d0bec7026cf207f50
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 95698a36fe56d2c0d1a842425541e8aa7627d7dd
+ms.sourcegitcommit: d4604e333507c6f57d5bf327531a241b649052de
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50915033"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51470925"
 ---
 # <a name="share-sites-and-files-with-guest-users"></a>与来宾用户共享网站和文件
-
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> 管理中心正在发生改变。 如果你的体验与此处提供的详细信息不匹配，请参阅[有关新版 Microsoft 365 管理中心](../microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet)。
-
-::: moniker-end
 
 若要与组织外部人员进行协作，可以在外部共享整个网站或特定文件。 如果你想要直接设置共享，请选择要启用的方案：
 

@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: 了解如何修改 edm 架构以使用可配置匹配项。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: e00466e4648ebe93f0658383515d1543f858e1b0
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: dea641072983163c6fbbcc5888d5ee6ea91f6990
+ms.sourcegitcommit: c75aac39ee8d93218a79585113ef6b36f47c9ddf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50919368"
+ms.lasthandoff: 03/29/2021
+ms.locfileid: "51408311"
 ---
 # <a name="modify-exact-data-match-schema-to-use-configurable-match"></a>修改精确数据匹配架构，以使用可配置匹配项
 
@@ -102,6 +102,9 @@ ms.locfileid: "50919368"
 - \,
 
 6. 使用[连接到安全与合规中心 PowerShell](/powershell/exchange/connect-to-scc-powershell) 中的步骤连接到安全与合规中心。
+
+> [!NOTE]
+> 如果您的组织已在[租户级别（公共预览）设置了Microsoft 365的客户密钥](customer-key-tenant-level.md#overview-of-customer-key-for-microsoft-365-at-the-tenant-level-public-preview)，则精确数据匹配将自动使用其加密功能。 这仅适用于商业云中 E5 许可的租户。
 
 7. 通过一次运行以下 cmdlet 中的一个来更新架构：
 

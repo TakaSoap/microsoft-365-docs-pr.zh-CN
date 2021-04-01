@@ -18,18 +18,18 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 摘要：从德国 Microsoft 云迁移到新的德国数据中心 (德国) Office 365 服务时的其他客户体验信息。
-ms.openlocfilehash: ecc549ca4d0bb8122de3bf092c004c919e958d5e
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 8e28b9d6c8cc23e128234973039a4873b327e9fd
+ms.sourcegitcommit: 7b8104015a76e02bc215e1cf08069979c70650ae
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51165641"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51476362"
 ---
 # <a name="migration-phases-actions-and-impacts-for-the-migration-from-microsoft-cloud-deutschland-advanced"></a>迁移阶段操作和影响从德国 Microsoft 云 (高级) 
 
-从德国 Microsoft 云到 Microsoft Office 365 服务德国地区的租户迁移作为一组阶段执行，并针对每个工作负载执行其配置的操作。 此图显示了迁移到新的德国数据中心的九个阶段。
+从德国 Microsoft 云到 Microsoft Office 365 服务德国地区的租户迁移作为一组阶段执行，并针对每个工作负载执行其配置的操作。 此图显示了迁移到新的德国数据中心的十个阶段。
 
-![迁移到新德国数据中心的九个阶段](../media/ms-cloud-germany-migration-opt-in/migration-organization.png)
+![迁移到新德国数据中心的十个阶段](../media/ms-cloud-germany-migration-opt-in/migration-organization.png)
 
 以下各节提供有关从德国 Microsoft 云 (德国) 迁移到新的德国数据中心区域 Office 365 服务的客户体验的其他信息。
 

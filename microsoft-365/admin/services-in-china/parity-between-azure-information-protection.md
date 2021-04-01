@@ -22,7 +22,7 @@ description: 深入了解适用于由世纪互联运营的 Office 365 的 Azure 
 monikerRange: o365-21vianet
 ms.openlocfilehash: bddba69ecc8b7b80d2b2c7c48d820ec22d293362
 ms.sourcegitcommit: b56a8ff9bb496bf2bc1991000afca3d251f45b72
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/30/2021
 ms.locfileid: "51418028"
@@ -148,7 +148,7 @@ Windows 上的 AIP 应用需要以下注册表项，用于指向 Azure China 的
 
 安装 AIP 本地扫描仪扫描网络和内容共享以访问敏感数据，并按组织策略中配置应用分类和保护标签。
 
-- 为 [Set-AIPAuthentication](/powershell/module/azureinformationprotection/set-aipauthentication)命令创建和配置 Azure AD 应用程序时，"请求 **API** 权限"窗格将显示我的组织使用的 API 选项卡，而不是 **Microsoft API** 选项卡。选择 **我的组织使用的 API，** 然后选择 **"Azure 权限管理服务"。**
+- 为 [Set-AIPAuthentication](/powershell/module/azureinformationprotection/set-aipauthentication) 命令创建和配置 Azure AD 应用程序时，"**请求 API 权限**"窗格显示 **我的组织使用的API** 选项卡，而不是 **Microsoft API** 选项卡。选择 **使用** 的 API，然后选择 **Azure Rights Management Services 中的**。
 
 - 安装扫描仪和管理内容扫描作业时，请使用以下 cmdlet，而不是商业产品使用的 Azure 门户界面：<br><br>
 
@@ -164,8 +164,8 @@ Windows 上的 AIP 应用需要以下注册表项，用于指向 Azure China 的
     | | |
 
 > [!TIP]
-> 安装 [扫描程序时](/azure/information-protection/deploy-aip-scanner-configure-install#install-the-scanner)，在 [Install-AIPScanner](/powershell/module/azureinformationprotection/install-aipscanner) 命令中使用相同的群集名称将多个扫描程序节点关联到同一群集。 将同一群集用于多个扫描程序节点使多个扫描程序可以协同工作来执行扫描。
+> 安装 [扫描仪](/azure/information-protection/deploy-aip-scanner-configure-install#install-the-scanner)时，使用 [Install-AIPScanner](/powershell/module/azureinformationprotection/install-aipscanner) 命令中的相同簇名称将多个扫描仪节点关联到同一个群集。 通过为多个扫描仪节点使用同一群集，多个扫描仪可协作执行扫描。
 > 
-> 使用 [Get-AIPScannerConfiguration](/powershell/module/azureinformationprotection/get-aipscannerconfiguration) cmdlet 可返回有关群集的详细信息。
+> 使用 [Get-AIPScannerConfiguration](/powershell/module/azureinformationprotection/get-aipscannerconfiguration) cmdlet 返回有关簇的详细信息。
 > 
 有关详细信息，请参阅 [什么是 Azure 信息保护统一标签扫描仪？](/azure/information-protection/deploy-aip-scanner) [PowerShell 管理内容扫描作业](/azure/information-protection/deploy-aip-scanner-prereqs#use-powershell-with-a-disconnected-computer)。
