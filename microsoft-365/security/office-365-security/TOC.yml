@@ -95,7 +95,7 @@
         - name: 默认处于保护状态
           href: secure-by-default.md
         - name: 在 Defender for Office 365 中配置反钓鱼策略
-          href: configure-atp-anti-phishing-policies.md
+          href: configure-mdo-anti-phishing-policies.md
         - name: 配置反恶意软件策略
           href: configure-anti-malware-policies.md
         - name: 配置反垃圾邮件策略
