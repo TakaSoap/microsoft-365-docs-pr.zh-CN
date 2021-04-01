@@ -15,7 +15,7 @@
     - name: Microsoft 托管桌面服务说明
       href: service-description/index.md
       items:
-        - name: 支持的区域和语言
+        - name: 支持的区域
           href: service-description/regions-languages.md
         - name: 产品生命周期
           href: service-description/device-lifecycle.md
@@ -96,6 +96,8 @@
           href: get-started/company-portal.md
         - name: 启用企业状态漫游
           href: get-started/enterprise-state-roaming.md
+        - name: 本地化用户体验
+          href: get-started/localization.md
         - name: 设置设备
           href: get-started/set-up-devices.md
           items:
