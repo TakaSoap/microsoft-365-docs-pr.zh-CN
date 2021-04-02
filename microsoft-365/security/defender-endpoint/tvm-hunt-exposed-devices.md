@@ -8,8 +8,8 @@ ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: ellevin
-author: levinec
+ms.author: dansimp
+author: dansimp
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
@@ -18,48 +18,48 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 99e59005bc01a113567e64c921ddcdc1d66785d2
-ms.sourcegitcommit: c75aac39ee8d93218a79585113ef6b36f47c9ddf
+ms.openlocfilehash: b8e3a80e73d9847837ae0a1542e7d16ee8ae0f29
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2021
-ms.locfileid: "51408287"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51500091"
 ---
-# <a name="hunt-for-exposed-devices---threat-and-vulnerability-management"></a><span data-ttu-id="d387c-104">搜寻公开的设备 - 威胁和漏洞管理</span><span class="sxs-lookup"><span data-stu-id="d387c-104">Hunt for exposed devices - threat and vulnerability management</span></span>
+# <a name="hunt-for-exposed-devices---threat-and-vulnerability-management"></a><span data-ttu-id="15cb0-104">搜寻公开的设备 - 威胁和漏洞管理</span><span class="sxs-lookup"><span data-stu-id="15cb0-104">Hunt for exposed devices - threat and vulnerability management</span></span>
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-<span data-ttu-id="d387c-105">**适用于：**</span><span class="sxs-lookup"><span data-stu-id="d387c-105">**Applies to:**</span></span>
+<span data-ttu-id="15cb0-105">**适用于：**</span><span class="sxs-lookup"><span data-stu-id="15cb0-105">**Applies to:**</span></span>
 
-- [<span data-ttu-id="d387c-106">Microsoft Defender for Endpoint</span><span class="sxs-lookup"><span data-stu-id="d387c-106">Microsoft Defender for Endpoint</span></span>](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [<span data-ttu-id="d387c-107">威胁和漏洞管理</span><span class="sxs-lookup"><span data-stu-id="d387c-107">Threat and vulnerability management</span></span>](next-gen-threat-and-vuln-mgt.md)
-- [<span data-ttu-id="d387c-108">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="d387c-108">Microsoft 365 Defender</span></span>](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [<span data-ttu-id="15cb0-106">Microsoft Defender for Endpoint</span><span class="sxs-lookup"><span data-stu-id="15cb0-106">Microsoft Defender for Endpoint</span></span>](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [<span data-ttu-id="15cb0-107">威胁和漏洞管理</span><span class="sxs-lookup"><span data-stu-id="15cb0-107">Threat and vulnerability management</span></span>](next-gen-threat-and-vuln-mgt.md)
+- [<span data-ttu-id="15cb0-108">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="15cb0-108">Microsoft 365 Defender</span></span>](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-><span data-ttu-id="d387c-109">想要体验 Microsoft Defender for Endpoint？</span><span class="sxs-lookup"><span data-stu-id="d387c-109">Want to experience Microsoft Defender for Endpoint?</span></span> [<span data-ttu-id="d387c-110">注册免费试用版。</span><span class="sxs-lookup"><span data-stu-id="d387c-110">Sign up for a free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
+><span data-ttu-id="15cb0-109">想要体验 Microsoft Defender for Endpoint？</span><span class="sxs-lookup"><span data-stu-id="15cb0-109">Want to experience Microsoft Defender for Endpoint?</span></span> [<span data-ttu-id="15cb0-110">注册免费试用版。</span><span class="sxs-lookup"><span data-stu-id="15cb0-110">Sign up for a free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
 
-## <a name="use-advanced-hunting-to-find-devices-with-vulnerabilities"></a><span data-ttu-id="d387c-111">使用高级搜寻查找具有漏洞的设备</span><span class="sxs-lookup"><span data-stu-id="d387c-111">Use advanced hunting to find devices with vulnerabilities</span></span>
+## <a name="use-advanced-hunting-to-find-devices-with-vulnerabilities"></a><span data-ttu-id="15cb0-111">使用高级搜寻查找具有漏洞的设备</span><span class="sxs-lookup"><span data-stu-id="15cb0-111">Use advanced hunting to find devices with vulnerabilities</span></span>
 
-<span data-ttu-id="d387c-112">高级搜寻是一种基于查询的威胁搜寻工具，可用于浏览多达 30 天的原始数据。</span><span class="sxs-lookup"><span data-stu-id="d387c-112">Advanced hunting is a query-based threat-hunting tool that lets you explore up to 30 days of raw data.</span></span> <span data-ttu-id="d387c-113">你可以主动检查网络中事件，以查找威胁指示器和实体。</span><span class="sxs-lookup"><span data-stu-id="d387c-113">You can proactively inspect events in your network to locate threat indicators and entities.</span></span> <span data-ttu-id="d387c-114">通过灵活的数据访问，可以不受限制地搜寻已知威胁和潜在威胁。</span><span class="sxs-lookup"><span data-stu-id="d387c-114">The flexible access to data enables unconstrained hunting for both known and potential threats.</span></span> [<span data-ttu-id="d387c-115">详细了解高级搜寻</span><span class="sxs-lookup"><span data-stu-id="d387c-115">Learn more about advanced hunting</span></span>](advanced-hunting-overview.md)
+<span data-ttu-id="15cb0-112">高级搜寻是一种基于查询的威胁搜寻工具，可用于浏览多达 30 天的原始数据。</span><span class="sxs-lookup"><span data-stu-id="15cb0-112">Advanced hunting is a query-based threat-hunting tool that lets you explore up to 30 days of raw data.</span></span> <span data-ttu-id="15cb0-113">你可以主动检查网络中事件，以查找威胁指示器和实体。</span><span class="sxs-lookup"><span data-stu-id="15cb0-113">You can proactively inspect events in your network to locate threat indicators and entities.</span></span> <span data-ttu-id="15cb0-114">通过灵活的数据访问，可以不受限制地搜寻已知威胁和潜在威胁。</span><span class="sxs-lookup"><span data-stu-id="15cb0-114">The flexible access to data enables unconstrained hunting for both known and potential threats.</span></span> [<span data-ttu-id="15cb0-115">详细了解高级搜寻</span><span class="sxs-lookup"><span data-stu-id="15cb0-115">Learn more about advanced hunting</span></span>](advanced-hunting-overview.md)
 
-### <a name="schema-tables"></a><span data-ttu-id="d387c-116">架构表</span><span class="sxs-lookup"><span data-stu-id="d387c-116">Schema tables</span></span>
+### <a name="schema-tables"></a><span data-ttu-id="15cb0-116">架构表</span><span class="sxs-lookup"><span data-stu-id="15cb0-116">Schema tables</span></span>
 
-- <span data-ttu-id="d387c-117">[DeviceTvmSoftwareInventory](advanced-hunting-devicetvmsoftwareinventory-table.md) - 设备上安装的软件清单，包括其版本信息和停止支持状态。</span><span class="sxs-lookup"><span data-stu-id="d387c-117">[DeviceTvmSoftwareInventory](advanced-hunting-devicetvmsoftwareinventory-table.md) - Inventory of software installed on devices, including their version information and end-of-support status.</span></span>
+- <span data-ttu-id="15cb0-117">[DeviceTvmSoftwareInventory](advanced-hunting-devicetvmsoftwareinventory-table.md) - 设备上安装的软件清单，包括其版本信息和停止支持状态。</span><span class="sxs-lookup"><span data-stu-id="15cb0-117">[DeviceTvmSoftwareInventory](advanced-hunting-devicetvmsoftwareinventory-table.md) - Inventory of software installed on devices, including their version information and end-of-support status.</span></span>
 
-- <span data-ttu-id="d387c-118">[DeviceTvmSoftwareVulnerabilities](advanced-hunting-devicetvmsoftwarevulnerabilities-table.md) - 设备上发现的软件漏洞以及可解决每个漏洞的可用安全更新列表。</span><span class="sxs-lookup"><span data-stu-id="d387c-118">[DeviceTvmSoftwareVulnerabilities](advanced-hunting-devicetvmsoftwarevulnerabilities-table.md) - Software vulnerabilities found on devices and the list of available security updates that address each vulnerability.</span></span>
+- <span data-ttu-id="15cb0-118">[DeviceTvmSoftwareVulnerabilities](advanced-hunting-devicetvmsoftwarevulnerabilities-table.md) - 设备上发现的软件漏洞以及可解决每个漏洞的可用安全更新列表。</span><span class="sxs-lookup"><span data-stu-id="15cb0-118">[DeviceTvmSoftwareVulnerabilities](advanced-hunting-devicetvmsoftwarevulnerabilities-table.md) - Software vulnerabilities found on devices and the list of available security updates that address each vulnerability.</span></span>
 
-- <span data-ttu-id="d387c-119">[DeviceTvmSoftwareVulnerabilitiesKB](advanced-hunting-devicetvmsoftwarevulnerabilitieskb-table.md) - 公开披露漏洞的知识库，包括攻击代码是否公开可用。</span><span class="sxs-lookup"><span data-stu-id="d387c-119">[DeviceTvmSoftwareVulnerabilitiesKB](advanced-hunting-devicetvmsoftwarevulnerabilitieskb-table.md) - Knowledge base of publicly disclosed vulnerabilities, including whether exploit code is publicly available.</span></span>
+- <span data-ttu-id="15cb0-119">[DeviceTvmSoftwareVulnerabilitiesKB](advanced-hunting-devicetvmsoftwarevulnerabilitieskb-table.md) - 公开披露漏洞的知识库，包括攻击代码是否公开可用。</span><span class="sxs-lookup"><span data-stu-id="15cb0-119">[DeviceTvmSoftwareVulnerabilitiesKB](advanced-hunting-devicetvmsoftwarevulnerabilitieskb-table.md) - Knowledge base of publicly disclosed vulnerabilities, including whether exploit code is publicly available.</span></span>
 
-- <span data-ttu-id="d387c-120">[DeviceTvmSecureConfigurationAssessment](advanced-hunting-devicetvmsecureconfigurationassessment-table.md) - 威胁和漏洞管理评估事件，指示设备上各种安全配置的状态。</span><span class="sxs-lookup"><span data-stu-id="d387c-120">[DeviceTvmSecureConfigurationAssessment](advanced-hunting-devicetvmsecureconfigurationassessment-table.md) - Threat and vulnerability management assessment events, indicating the status of various security configurations on devices.</span></span>
+- <span data-ttu-id="15cb0-120">[DeviceTvmSecureConfigurationAssessment](advanced-hunting-devicetvmsecureconfigurationassessment-table.md) - 威胁和漏洞管理评估事件，指示设备上各种安全配置的状态。</span><span class="sxs-lookup"><span data-stu-id="15cb0-120">[DeviceTvmSecureConfigurationAssessment](advanced-hunting-devicetvmsecureconfigurationassessment-table.md) - Threat and vulnerability management assessment events, indicating the status of various security configurations on devices.</span></span>
 
-- <span data-ttu-id="d387c-121">[DeviceTvmSecureConfigurationAssessmentKB](advanced-hunting-devicetvmsecureconfigurationassessmentkb-table.md) - 威胁和漏洞管理用于评估&各种安全配置的知识库;包括到各种标准和基准的映射</span><span class="sxs-lookup"><span data-stu-id="d387c-121">[DeviceTvmSecureConfigurationAssessmentKB](advanced-hunting-devicetvmsecureconfigurationassessmentkb-table.md) - Knowledge base of various security configurations used by Threat & Vulnerability Management to assess devices; includes mappings to various standards and benchmarks</span></span>
+- <span data-ttu-id="15cb0-121">[DeviceTvmSecureConfigurationAssessmentKB](advanced-hunting-devicetvmsecureconfigurationassessmentkb-table.md) - 威胁和漏洞管理用于评估&各种安全配置的知识库;包括到各种标准和基准的映射</span><span class="sxs-lookup"><span data-stu-id="15cb0-121">[DeviceTvmSecureConfigurationAssessmentKB](advanced-hunting-devicetvmsecureconfigurationassessmentkb-table.md) - Knowledge base of various security configurations used by Threat & Vulnerability Management to assess devices; includes mappings to various standards and benchmarks</span></span>
 
-## <a name="check-which-devices-are-involved-in-high-severity-alerts"></a><span data-ttu-id="d387c-122">检查高严重性警报中涉及的设备</span><span class="sxs-lookup"><span data-stu-id="d387c-122">Check which devices are involved in high severity alerts</span></span>
+## <a name="check-which-devices-are-involved-in-high-severity-alerts"></a><span data-ttu-id="15cb0-122">检查高严重性警报中涉及的设备</span><span class="sxs-lookup"><span data-stu-id="15cb0-122">Check which devices are involved in high severity alerts</span></span>
 
-1. <span data-ttu-id="d387c-123">从 Microsoft Defender **安全** 中心的左侧导航窗格中转到高级搜寻。</span><span class="sxs-lookup"><span data-stu-id="d387c-123">Go to **Advanced hunting** from the left-hand navigation pane of the Microsoft Defender Security Center.</span></span>
+1. <span data-ttu-id="15cb0-123">从 Microsoft Defender **安全** 中心的左侧导航窗格中转到高级搜寻。</span><span class="sxs-lookup"><span data-stu-id="15cb0-123">Go to **Advanced hunting** from the left-hand navigation pane of the Microsoft Defender Security Center.</span></span>
 
-2. <span data-ttu-id="d387c-124">向下滚动到 TVM 高级搜寻架构，以熟悉列名称。</span><span class="sxs-lookup"><span data-stu-id="d387c-124">Scroll down to the TVM advanced hunting schemas to familiarize yourself with the column names.</span></span>
+2. <span data-ttu-id="15cb0-124">向下滚动到 TVM 高级搜寻架构，以熟悉列名称。</span><span class="sxs-lookup"><span data-stu-id="15cb0-124">Scroll down to the TVM advanced hunting schemas to familiarize yourself with the column names.</span></span>
 
-3. <span data-ttu-id="d387c-125">输入以下查询：</span><span class="sxs-lookup"><span data-stu-id="d387c-125">Enter the following queries:</span></span>
+3. <span data-ttu-id="15cb0-125">输入以下查询：</span><span class="sxs-lookup"><span data-stu-id="15cb0-125">Enter the following queries:</span></span>
 
 ```kusto
 // Search for devices with High active alerts or Critical CVE public exploit
@@ -75,11 +75,11 @@ DeviceName=any(DeviceName) by DeviceId, AlertId
 | order by NumOfVulnerabilities desc
 ```
 
-## <a name="related-topics"></a><span data-ttu-id="d387c-126">相关主题</span><span class="sxs-lookup"><span data-stu-id="d387c-126">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="15cb0-126">相关主题</span><span class="sxs-lookup"><span data-stu-id="15cb0-126">Related topics</span></span>
 
-- [<span data-ttu-id="d387c-127">威胁和漏洞管理概述</span><span class="sxs-lookup"><span data-stu-id="d387c-127">Threat and vulnerability management overview</span></span>](next-gen-threat-and-vuln-mgt.md)
-- [<span data-ttu-id="d387c-128">安全性建议</span><span class="sxs-lookup"><span data-stu-id="d387c-128">Security recommendations</span></span>](tvm-security-recommendation.md)
-- [<span data-ttu-id="d387c-129">API</span><span class="sxs-lookup"><span data-stu-id="d387c-129">APIs</span></span>](next-gen-threat-and-vuln-mgt.md#apis)
-- [<span data-ttu-id="d387c-130">配置威胁和漏洞管理角色的数据访问</span><span class="sxs-lookup"><span data-stu-id="d387c-130">Configure data access for threat and vulnerability management roles</span></span>](user-roles.md#create-roles-and-assign-the-role-to-an-azure-active-directory-group)
-- [<span data-ttu-id="d387c-131">高级搜寻概述</span><span class="sxs-lookup"><span data-stu-id="d387c-131">Advanced hunting overview</span></span>](/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview)
-- [<span data-ttu-id="d387c-132">所有高级搜寻表</span><span class="sxs-lookup"><span data-stu-id="d387c-132">All advanced hunting tables</span></span>](/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-schema-reference.md)
+- [<span data-ttu-id="15cb0-127">威胁和漏洞管理概述</span><span class="sxs-lookup"><span data-stu-id="15cb0-127">Threat and vulnerability management overview</span></span>](next-gen-threat-and-vuln-mgt.md)
+- [<span data-ttu-id="15cb0-128">安全性建议</span><span class="sxs-lookup"><span data-stu-id="15cb0-128">Security recommendations</span></span>](tvm-security-recommendation.md)
+- [<span data-ttu-id="15cb0-129">API</span><span class="sxs-lookup"><span data-stu-id="15cb0-129">APIs</span></span>](next-gen-threat-and-vuln-mgt.md#apis)
+- [<span data-ttu-id="15cb0-130">配置威胁和漏洞管理角色的数据访问</span><span class="sxs-lookup"><span data-stu-id="15cb0-130">Configure data access for threat and vulnerability management roles</span></span>](user-roles.md#create-roles-and-assign-the-role-to-an-azure-active-directory-group)
+- [<span data-ttu-id="15cb0-131">高级搜寻概述</span><span class="sxs-lookup"><span data-stu-id="15cb0-131">Advanced hunting overview</span></span>](/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview)
+- [<span data-ttu-id="15cb0-132">所有高级搜寻表</span><span class="sxs-lookup"><span data-stu-id="15cb0-132">All advanced hunting tables</span></span>](/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-schema-reference.md)

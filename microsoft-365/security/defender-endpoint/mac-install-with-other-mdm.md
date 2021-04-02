@@ -18,104 +18,108 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: e3a20f0a356a32eddc05b3792c0c04c23197a7b0
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 5fa811b2419d107e91b301d5c9bad691fc016b5b
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51185691"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51498965"
 ---
-# <a name="deployment-with-a-different-mobile-device-management-mdm-system-for-microsoft-defender-for-endpoint-for-mac"></a><span data-ttu-id="a39b1-104">使用适用于 Mac 的 Microsoft Defender for Endpoint (MDM) 系统部署不同的移动设备管理</span><span class="sxs-lookup"><span data-stu-id="a39b1-104">Deployment with a different Mobile Device Management (MDM) system for Microsoft Defender for Endpoint for Mac</span></span>
+# <a name="deployment-with-a-different-mobile-device-management-mdm-system-for-microsoft-defender-for-endpoint-for-mac"></a><span data-ttu-id="0af04-104">使用适用于 Mac 的 Microsoft Defender for Endpoint (MDM) 系统部署不同的移动设备管理</span><span class="sxs-lookup"><span data-stu-id="0af04-104">Deployment with a different Mobile Device Management (MDM) system for Microsoft Defender for Endpoint for Mac</span></span>
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-<span data-ttu-id="a39b1-105">**适用于：**</span><span class="sxs-lookup"><span data-stu-id="a39b1-105">**Applies to:**</span></span>
-- [<span data-ttu-id="a39b1-106">Microsoft Defender for Endpoint</span><span class="sxs-lookup"><span data-stu-id="a39b1-106">Microsoft Defender for Endpoint</span></span>](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [<span data-ttu-id="a39b1-107">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="a39b1-107">Microsoft 365 Defender</span></span>](https://go.microsoft.com/fwlink/?linkid=2118804)
+<span data-ttu-id="0af04-105">**适用于：**</span><span class="sxs-lookup"><span data-stu-id="0af04-105">**Applies to:**</span></span>
+- [<span data-ttu-id="0af04-106">Microsoft Defender for Endpoint</span><span class="sxs-lookup"><span data-stu-id="0af04-106">Microsoft Defender for Endpoint</span></span>](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [<span data-ttu-id="0af04-107">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="0af04-107">Microsoft 365 Defender</span></span>](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> <span data-ttu-id="a39b1-108">想要体验适用于终结点的 Defender？</span><span class="sxs-lookup"><span data-stu-id="a39b1-108">Want to experience Defender for Endpoint?</span></span> [<span data-ttu-id="a39b1-109">注册免费试用版。</span><span class="sxs-lookup"><span data-stu-id="a39b1-109">Sign up for a free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
+> <span data-ttu-id="0af04-108">想要体验适用于终结点的 Defender？</span><span class="sxs-lookup"><span data-stu-id="0af04-108">Want to experience Defender for Endpoint?</span></span> [<span data-ttu-id="0af04-109">注册免费试用版。</span><span class="sxs-lookup"><span data-stu-id="0af04-109">Sign up for a free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
  
-## <a name="prerequisites-and-system-requirements"></a><span data-ttu-id="a39b1-110">先决条件和系统要求</span><span class="sxs-lookup"><span data-stu-id="a39b1-110">Prerequisites and system requirements</span></span>
+## <a name="prerequisites-and-system-requirements"></a><span data-ttu-id="0af04-110">先决条件和系统要求</span><span class="sxs-lookup"><span data-stu-id="0af04-110">Prerequisites and system requirements</span></span>
 
-<span data-ttu-id="a39b1-111">在开始使用之前，请参阅 [主 Microsoft Defender for Endpoint for Mac](microsoft-defender-endpoint-mac.md) 页面，了解当前软件版本的先决条件和系统要求。</span><span class="sxs-lookup"><span data-stu-id="a39b1-111">Before you get started, see [the main Microsoft Defender for Endpoint for Mac page](microsoft-defender-endpoint-mac.md) for a description of prerequisites and system requirements for the current software version.</span></span>
+<span data-ttu-id="0af04-111">在开始使用之前，请参阅 [主 Microsoft Defender for Endpoint for Mac](microsoft-defender-endpoint-mac.md) 页面，了解当前软件版本的先决条件和系统要求。</span><span class="sxs-lookup"><span data-stu-id="0af04-111">Before you get started, see [the main Microsoft Defender for Endpoint for Mac page](microsoft-defender-endpoint-mac.md) for a description of prerequisites and system requirements for the current software version.</span></span>
 
-## <a name="approach"></a><span data-ttu-id="a39b1-112">方法</span><span class="sxs-lookup"><span data-stu-id="a39b1-112">Approach</span></span>
+## <a name="approach"></a><span data-ttu-id="0af04-112">方法</span><span class="sxs-lookup"><span data-stu-id="0af04-112">Approach</span></span>
 
 > [!CAUTION]
-> <span data-ttu-id="a39b1-113">目前，Microsoft 仅支持 Intune 和 JAMF 部署和管理 Microsoft Defender for Endpoint for Mac。</span><span class="sxs-lookup"><span data-stu-id="a39b1-113">Currently, Microsoft oficially supports only Intune and JAMF for the deployment and management of Microsoft Defender for Endpoint for Mac.</span></span> <span data-ttu-id="a39b1-114">Microsoft 对下面提供的信息不做出明示或暗示的担保。</span><span class="sxs-lookup"><span data-stu-id="a39b1-114">Microsoft makes no warranties, express or implied, with respect to the information provided below.</span></span>
+> <span data-ttu-id="0af04-113">目前，Microsoft 正式仅支持 Intune 和 JAMF 部署和管理 Microsoft Defender for Endpoint for Mac。</span><span class="sxs-lookup"><span data-stu-id="0af04-113">Currently, Microsoft officially supports only Intune and JAMF for the deployment and management of Microsoft Defender for Endpoint for Mac.</span></span> <span data-ttu-id="0af04-114">Microsoft 对下面提供的信息不做出明示或暗示的担保。</span><span class="sxs-lookup"><span data-stu-id="0af04-114">Microsoft makes no warranties, express or implied, with respect to the information provided below.</span></span>
 
-<span data-ttu-id="a39b1-115">如果你的组织使用未正式支持的移动设备管理 (MDM) 解决方案，这并不意味着你无法部署或运行 Microsoft Defender for Endpoint for Mac。</span><span class="sxs-lookup"><span data-stu-id="a39b1-115">If your organization uses a Mobile Device Management (MDM) solution that is not officially supported, this does not mean you are unable to deploy or run Microsoft Defender for Endpoint for Mac.</span></span>
+<span data-ttu-id="0af04-115">如果你的组织使用未正式支持的移动设备管理 (MDM) 解决方案，这并不意味着你无法部署或运行 Microsoft Defender for Endpoint for Mac。</span><span class="sxs-lookup"><span data-stu-id="0af04-115">If your organization uses a Mobile Device Management (MDM) solution that is not officially supported, this does not mean you are unable to deploy or run Microsoft Defender for Endpoint for Mac.</span></span>
 
-<span data-ttu-id="a39b1-116">适用于 Mac 的 Microsoft Defender for Endpoint 不依赖于任何供应商特定的功能。</span><span class="sxs-lookup"><span data-stu-id="a39b1-116">Microsoft Defender for Endpoint for Mac does not depend on any vendor-specific features.</span></span> <span data-ttu-id="a39b1-117">它可以与支持以下功能的任何 MDM 解决方案一同使用：</span><span class="sxs-lookup"><span data-stu-id="a39b1-117">It can be used with any MDM solution that supports the following features:</span></span>
+<span data-ttu-id="0af04-116">适用于 Mac 的 Microsoft Defender for Endpoint 不依赖于任何供应商特定的功能。</span><span class="sxs-lookup"><span data-stu-id="0af04-116">Microsoft Defender for Endpoint for Mac does not depend on any vendor-specific features.</span></span> <span data-ttu-id="0af04-117">它可以与支持以下功能的任何 MDM 解决方案一同使用：</span><span class="sxs-lookup"><span data-stu-id="0af04-117">It can be used with any MDM solution that supports the following features:</span></span>
 
-- <span data-ttu-id="a39b1-118">将 macOS .pkg 部署到托管设备。</span><span class="sxs-lookup"><span data-stu-id="a39b1-118">Deploy a macOS .pkg to managed devices.</span></span>
-- <span data-ttu-id="a39b1-119">将 macOS 系统配置文件部署到托管设备。</span><span class="sxs-lookup"><span data-stu-id="a39b1-119">Deploy macOS system configuration profiles to managed devices.</span></span>
-- <span data-ttu-id="a39b1-120">在托管设备上运行任意管理员配置的工具/脚本。</span><span class="sxs-lookup"><span data-stu-id="a39b1-120">Run an arbitrary admin-configured tool/script on managed devices.</span></span>
+- <span data-ttu-id="0af04-118">将 macOS .pkg 部署到托管设备。</span><span class="sxs-lookup"><span data-stu-id="0af04-118">Deploy a macOS .pkg to managed devices.</span></span>
+- <span data-ttu-id="0af04-119">将 macOS 系统配置文件部署到托管设备。</span><span class="sxs-lookup"><span data-stu-id="0af04-119">Deploy macOS system configuration profiles to managed devices.</span></span>
+- <span data-ttu-id="0af04-120">在托管设备上运行任意管理员配置的工具/脚本。</span><span class="sxs-lookup"><span data-stu-id="0af04-120">Run an arbitrary admin-configured tool/script on managed devices.</span></span>
 
-<span data-ttu-id="a39b1-121">大多数现代 MDM 解决方案都包括这些功能，但是，它们调用它们的方式可能不同。</span><span class="sxs-lookup"><span data-stu-id="a39b1-121">Most modern MDM solutions include these features, however, they may call them differently.</span></span>
+<span data-ttu-id="0af04-121">大多数现代 MDM 解决方案都包括这些功能，但是，它们调用它们的方式可能不同。</span><span class="sxs-lookup"><span data-stu-id="0af04-121">Most modern MDM solutions include these features, however, they may call them differently.</span></span>
 
-<span data-ttu-id="a39b1-122">但是，你可以部署 Defender，无需上述列表中的最后一项要求：</span><span class="sxs-lookup"><span data-stu-id="a39b1-122">You can deploy Defender without the last requirement from the preceding list, however:</span></span>
+<span data-ttu-id="0af04-122">但是，你可以部署 Defender，无需上述列表中的最后一项要求：</span><span class="sxs-lookup"><span data-stu-id="0af04-122">You can deploy Defender without the last requirement from the preceding list, however:</span></span>
 
-- <span data-ttu-id="a39b1-123">无法集中收集状态</span><span class="sxs-lookup"><span data-stu-id="a39b1-123">You will not be able to collect status in a centralized way</span></span>
-- <span data-ttu-id="a39b1-124">如果你决定卸载 Defender，你将需要以管理员角色在本地登录到客户端设备</span><span class="sxs-lookup"><span data-stu-id="a39b1-124">If you decide to uninstall Defender, you will need to log on to the client device locally as an administrator</span></span>
+- <span data-ttu-id="0af04-123">无法集中收集状态</span><span class="sxs-lookup"><span data-stu-id="0af04-123">You will not be able to collect status in a centralized way</span></span>
+- <span data-ttu-id="0af04-124">如果你决定卸载 Defender，你将需要以管理员角色在本地登录到客户端设备</span><span class="sxs-lookup"><span data-stu-id="0af04-124">If you decide to uninstall Defender, you will need to log on to the client device locally as an administrator</span></span>
 
-## <a name="deployment"></a><span data-ttu-id="a39b1-125">部署</span><span class="sxs-lookup"><span data-stu-id="a39b1-125">Deployment</span></span>
+## <a name="deployment"></a><span data-ttu-id="0af04-125">部署</span><span class="sxs-lookup"><span data-stu-id="0af04-125">Deployment</span></span>
 
-<span data-ttu-id="a39b1-126">大多数 MDM 解决方案都使用相同的模型来管理 macOS 设备，使用类似的术语。</span><span class="sxs-lookup"><span data-stu-id="a39b1-126">Most MDM solutions use the same model for managing macOS devices, with similar terminology.</span></span> <span data-ttu-id="a39b1-127">将 [基于 JAMF 的部署](mac-install-with-jamf.md) 用作模板。</span><span class="sxs-lookup"><span data-stu-id="a39b1-127">Use [JAMF-based deployment](mac-install-with-jamf.md) as a template.</span></span>
+<span data-ttu-id="0af04-126">大多数 MDM 解决方案都使用相同的模型来管理 macOS 设备，使用类似的术语。</span><span class="sxs-lookup"><span data-stu-id="0af04-126">Most MDM solutions use the same model for managing macOS devices, with similar terminology.</span></span> <span data-ttu-id="0af04-127">将 [基于 JAMF 的部署](mac-install-with-jamf.md) 用作模板。</span><span class="sxs-lookup"><span data-stu-id="0af04-127">Use [JAMF-based deployment](mac-install-with-jamf.md) as a template.</span></span>
 
-### <a name="package"></a><span data-ttu-id="a39b1-128">程序包</span><span class="sxs-lookup"><span data-stu-id="a39b1-128">Package</span></span>
+### <a name="package"></a><span data-ttu-id="0af04-128">程序包</span><span class="sxs-lookup"><span data-stu-id="0af04-128">Package</span></span>
 
-<span data-ttu-id="a39b1-129">配置所需应用程序 [包](mac-install-with-jamf.md)的部署，安装程序包 (wdav.pkg) [从 Microsoft Defender 安全中心下载](mac-install-with-jamf.md)。</span><span class="sxs-lookup"><span data-stu-id="a39b1-129">Configure deployment of a [required application package](mac-install-with-jamf.md), with the installation package (wdav.pkg) downloaded from [Microsoft Defender Security Center](mac-install-with-jamf.md).</span></span>
+<span data-ttu-id="0af04-129">配置所需应用程序 [包](mac-install-with-jamf.md)的部署，安装程序包 (wdav.pkg) [从 Microsoft Defender 安全中心下载](mac-install-with-jamf.md)。</span><span class="sxs-lookup"><span data-stu-id="0af04-129">Configure deployment of a [required application package](mac-install-with-jamf.md), with the installation package (wdav.pkg) downloaded from [Microsoft Defender Security Center](mac-install-with-jamf.md).</span></span>
 
-<span data-ttu-id="a39b1-130">若要将程序包部署到企业，请使用与 MDM 解决方案关联的说明。</span><span class="sxs-lookup"><span data-stu-id="a39b1-130">In order to deploy the package to your enterprise, use the instructions associated with your MDM solution.</span></span>
+<span data-ttu-id="0af04-130">若要将程序包部署到企业，请使用与 MDM 解决方案关联的说明。</span><span class="sxs-lookup"><span data-stu-id="0af04-130">In order to deploy the package to your enterprise, use the instructions associated with your MDM solution.</span></span>
 
-### <a name="license-settings"></a><span data-ttu-id="a39b1-131">许可证设置</span><span class="sxs-lookup"><span data-stu-id="a39b1-131">License settings</span></span>
+### <a name="license-settings"></a><span data-ttu-id="0af04-131">许可证设置</span><span class="sxs-lookup"><span data-stu-id="0af04-131">License settings</span></span>
 
-<span data-ttu-id="a39b1-132">设置 [系统配置文件](mac-install-with-jamf.md)。</span><span class="sxs-lookup"><span data-stu-id="a39b1-132">Set up [a system configuration profile](mac-install-with-jamf.md).</span></span> <span data-ttu-id="a39b1-133">MDM 解决方案可能称其为"自定义设置配置文件"，因为适用于 Mac 的 Microsoft Defender for Endpoint 不是 macOS 的一部分。</span><span class="sxs-lookup"><span data-stu-id="a39b1-133">Your MDM solution may call it something like "Custom Settings Profile", as Microsoft Defender for Endpoint for Mac is not part of macOS.</span></span>
+<span data-ttu-id="0af04-132">设置 [系统配置文件](mac-install-with-jamf.md)。</span><span class="sxs-lookup"><span data-stu-id="0af04-132">Set up [a system configuration profile](mac-install-with-jamf.md).</span></span> <span data-ttu-id="0af04-133">MDM 解决方案可能称其为"自定义设置配置文件"，因为适用于 Mac 的 Microsoft Defender for Endpoint 不是 macOS 的一部分。</span><span class="sxs-lookup"><span data-stu-id="0af04-133">Your MDM solution may call it something like "Custom Settings Profile", as Microsoft Defender for Endpoint for Mac is not part of macOS.</span></span>
 
-<span data-ttu-id="a39b1-134">使用属性列表 jamf/WindowsDefenderATPOnboarding.plist，可从从 Microsoft Defender 安全中心下载的载入 [包中提取](mac-install-with-jamf.md)。</span><span class="sxs-lookup"><span data-stu-id="a39b1-134">Use the property list, jamf/WindowsDefenderATPOnboarding.plist, which can be extracted from an onboarding package downloaded from [Microsoft Defender Security Center](mac-install-with-jamf.md).</span></span>
-<span data-ttu-id="a39b1-135">您的系统可能支持 XML 格式的任意属性列表。</span><span class="sxs-lookup"><span data-stu-id="a39b1-135">Your system may support an arbitrary property list in XML format.</span></span> <span data-ttu-id="a39b1-136">在这种情况下，你可以像现在一样上传 jamf/WindowsDefenderATPOnboarding.plist 文件。</span><span class="sxs-lookup"><span data-stu-id="a39b1-136">You can upload the jamf/WindowsDefenderATPOnboarding.plist file as-is in that case.</span></span>
-<span data-ttu-id="a39b1-137">或者，可能需要先将属性列表转换为其他格式。</span><span class="sxs-lookup"><span data-stu-id="a39b1-137">Alternatively, it may require you to convert the property list to a different format first.</span></span>
+<span data-ttu-id="0af04-134">使用属性列表 jamf/WindowsDefenderATPOnboarding.plist，可从从 Microsoft Defender 安全中心下载的载入 [包中提取](mac-install-with-jamf.md)。</span><span class="sxs-lookup"><span data-stu-id="0af04-134">Use the property list, jamf/WindowsDefenderATPOnboarding.plist, which can be extracted from an onboarding package downloaded from [Microsoft Defender Security Center](mac-install-with-jamf.md).</span></span>
+<span data-ttu-id="0af04-135">您的系统可能支持 XML 格式的任意属性列表。</span><span class="sxs-lookup"><span data-stu-id="0af04-135">Your system may support an arbitrary property list in XML format.</span></span> <span data-ttu-id="0af04-136">在这种情况下，你可以像现在一样上传 jamf/WindowsDefenderATPOnboarding.plist 文件。</span><span class="sxs-lookup"><span data-stu-id="0af04-136">You can upload the jamf/WindowsDefenderATPOnboarding.plist file as-is in that case.</span></span>
+<span data-ttu-id="0af04-137">或者，可能需要先将属性列表转换为其他格式。</span><span class="sxs-lookup"><span data-stu-id="0af04-137">Alternatively, it may require you to convert the property list to a different format first.</span></span>
 
-<span data-ttu-id="a39b1-138">通常，自定义配置文件具有 ID、名称或域属性。</span><span class="sxs-lookup"><span data-stu-id="a39b1-138">Typically, your custom profile has an ID, name, or domain attribute.</span></span> <span data-ttu-id="a39b1-139">必须完全使用"com.microsoft.wdav.atp"作为此值。</span><span class="sxs-lookup"><span data-stu-id="a39b1-139">You must use exactly "com.microsoft.wdav.atp" for this value.</span></span>
-<span data-ttu-id="a39b1-140">MDM 使用它将设置文件部署到客户端设备的 **/Library/Managed Preferences/com.microsoft.wdav.atp.plist，Defender** 使用此文件加载载入信息。</span><span class="sxs-lookup"><span data-stu-id="a39b1-140">MDM uses it to deploy the settings file to **/Library/Managed Preferences/com.microsoft.wdav.atp.plist** on a client device, and Defender uses this file for loading the onboarding information.</span></span>
+<span data-ttu-id="0af04-138">通常，自定义配置文件具有 ID、名称或域属性。</span><span class="sxs-lookup"><span data-stu-id="0af04-138">Typically, your custom profile has an ID, name, or domain attribute.</span></span> <span data-ttu-id="0af04-139">必须完全使用"com.microsoft.wdav.atp"作为此值。</span><span class="sxs-lookup"><span data-stu-id="0af04-139">You must use exactly "com.microsoft.wdav.atp" for this value.</span></span>
+<span data-ttu-id="0af04-140">MDM 使用它将设置文件部署到客户端设备的 **/Library/Managed Preferences/com.microsoft.wdav.atp.plist，Defender** 使用此文件加载载入信息。</span><span class="sxs-lookup"><span data-stu-id="0af04-140">MDM uses it to deploy the settings file to **/Library/Managed Preferences/com.microsoft.wdav.atp.plist** on a client device, and Defender uses this file for loading the onboarding information.</span></span>
 
-### <a name="kernel-extension-policy"></a><span data-ttu-id="a39b1-141">内核扩展策略</span><span class="sxs-lookup"><span data-stu-id="a39b1-141">Kernel extension policy</span></span>
+### <a name="kernel-extension-policy"></a><span data-ttu-id="0af04-141">内核扩展策略</span><span class="sxs-lookup"><span data-stu-id="0af04-141">Kernel extension policy</span></span>
 
-<span data-ttu-id="a39b1-142">设置 KEXT 或内核扩展策略。</span><span class="sxs-lookup"><span data-stu-id="a39b1-142">Set up a KEXT or kernel extension policy.</span></span> <span data-ttu-id="a39b1-143">使用团队标识符 **UBF8T346G9** 允许 Microsoft 提供的内核扩展。</span><span class="sxs-lookup"><span data-stu-id="a39b1-143">Use team identifier **UBF8T346G9** to allow kernel extensions provided by Microsoft.</span></span>
+<span data-ttu-id="0af04-142">设置 KEXT 或内核扩展策略。</span><span class="sxs-lookup"><span data-stu-id="0af04-142">Set up a KEXT or kernel extension policy.</span></span> <span data-ttu-id="0af04-143">使用团队标识符 **UBF8T346G9** 允许 Microsoft 提供的内核扩展。</span><span class="sxs-lookup"><span data-stu-id="0af04-143">Use team identifier **UBF8T346G9** to allow kernel extensions provided by Microsoft.</span></span>
 
-### <a name="system-extension-policy"></a><span data-ttu-id="a39b1-144">系统扩展策略</span><span class="sxs-lookup"><span data-stu-id="a39b1-144">System extension policy</span></span>
+> [!CAUTION]
+> <span data-ttu-id="0af04-144">如果您的环境由 Apple 芯片 (M1) ，则这些计算机不应接收包含 KEXT 策略的配置文件。</span><span class="sxs-lookup"><span data-stu-id="0af04-144">If your environment consists of Apple Silicon (M1) devices, these machines should not receive configuration profiles with KEXT policies.</span></span>
+> <span data-ttu-id="0af04-145">Apple 在这些计算机上不支持 KEXT，在 M1 计算机上部署此类配置文件将失败。</span><span class="sxs-lookup"><span data-stu-id="0af04-145">Apple does not support KEXT on these machines, deployment of such profile would fail on M1 machines.</span></span>
 
-<span data-ttu-id="a39b1-145">设置系统扩展策略。</span><span class="sxs-lookup"><span data-stu-id="a39b1-145">Set up a system extension policy.</span></span> <span data-ttu-id="a39b1-146">使用团队标识符 **UBF8T346G9** 并批准以下捆绑包标识符：</span><span class="sxs-lookup"><span data-stu-id="a39b1-146">Use team identifier **UBF8T346G9** and approve the following bundle identifiers:</span></span>
+### <a name="system-extension-policy"></a><span data-ttu-id="0af04-146">系统扩展策略</span><span class="sxs-lookup"><span data-stu-id="0af04-146">System extension policy</span></span>
 
-- <span data-ttu-id="a39b1-147">com.microsoft.wdav.epsext</span><span class="sxs-lookup"><span data-stu-id="a39b1-147">com.microsoft.wdav.epsext</span></span>
-- <span data-ttu-id="a39b1-148">com.microsoft.wdav.netext</span><span class="sxs-lookup"><span data-stu-id="a39b1-148">com.microsoft.wdav.netext</span></span>
+<span data-ttu-id="0af04-147">设置系统扩展策略。</span><span class="sxs-lookup"><span data-stu-id="0af04-147">Set up a system extension policy.</span></span> <span data-ttu-id="0af04-148">使用团队标识符 **UBF8T346G9** 并批准以下捆绑包标识符：</span><span class="sxs-lookup"><span data-stu-id="0af04-148">Use team identifier **UBF8T346G9** and approve the following bundle identifiers:</span></span>
 
-### <a name="full-disk-access-policy"></a><span data-ttu-id="a39b1-149">完全磁盘访问策略</span><span class="sxs-lookup"><span data-stu-id="a39b1-149">Full disk access policy</span></span>
+- <span data-ttu-id="0af04-149">com.microsoft.wdav.epsext</span><span class="sxs-lookup"><span data-stu-id="0af04-149">com.microsoft.wdav.epsext</span></span>
+- <span data-ttu-id="0af04-150">com.microsoft.wdav.netext</span><span class="sxs-lookup"><span data-stu-id="0af04-150">com.microsoft.wdav.netext</span></span>
 
-<span data-ttu-id="a39b1-150">授予对以下组件的完全磁盘访问权限：</span><span class="sxs-lookup"><span data-stu-id="a39b1-150">Grant Full Disk Access to the following components:</span></span>
+### <a name="full-disk-access-policy"></a><span data-ttu-id="0af04-151">完全磁盘访问策略</span><span class="sxs-lookup"><span data-stu-id="0af04-151">Full disk access policy</span></span>
 
-- <span data-ttu-id="a39b1-151">Microsoft Defender for Endpoint</span><span class="sxs-lookup"><span data-stu-id="a39b1-151">Microsoft Defender for Endpoint</span></span>
-    - <span data-ttu-id="a39b1-152">标识符： `com.microsoft.wdav`</span><span class="sxs-lookup"><span data-stu-id="a39b1-152">Identifier: `com.microsoft.wdav`</span></span>
-    - <span data-ttu-id="a39b1-153">标识符类型：捆绑包 ID</span><span class="sxs-lookup"><span data-stu-id="a39b1-153">Identifier Type: Bundle ID</span></span>
-    - <span data-ttu-id="a39b1-154">代码要求： `identifier "com.microsoft.wdav" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = UBF8T346G9`</span><span class="sxs-lookup"><span data-stu-id="a39b1-154">Code Requirement: `identifier "com.microsoft.wdav" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = UBF8T346G9`</span></span>
+<span data-ttu-id="0af04-152">授予对以下组件的完全磁盘访问权限：</span><span class="sxs-lookup"><span data-stu-id="0af04-152">Grant Full Disk Access to the following components:</span></span>
 
-- <span data-ttu-id="a39b1-155">Microsoft Defender for Endpoint Security Extension</span><span class="sxs-lookup"><span data-stu-id="a39b1-155">Microsoft Defender for Endpoint Security Extension</span></span>
-    - <span data-ttu-id="a39b1-156">标识符： `com.microsoft.wdav.epsext`</span><span class="sxs-lookup"><span data-stu-id="a39b1-156">Identifier: `com.microsoft.wdav.epsext`</span></span>
-    - <span data-ttu-id="a39b1-157">标识符类型：捆绑包 ID</span><span class="sxs-lookup"><span data-stu-id="a39b1-157">Identifier Type: Bundle ID</span></span>
-    - <span data-ttu-id="a39b1-158">代码要求： `identifier "com.microsoft.wdav.epsext" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = UBF8T346G9`</span><span class="sxs-lookup"><span data-stu-id="a39b1-158">Code Requirement: `identifier "com.microsoft.wdav.epsext" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = UBF8T346G9`</span></span>
+- <span data-ttu-id="0af04-153">Microsoft Defender for Endpoint</span><span class="sxs-lookup"><span data-stu-id="0af04-153">Microsoft Defender for Endpoint</span></span>
+    - <span data-ttu-id="0af04-154">标识符： `com.microsoft.wdav`</span><span class="sxs-lookup"><span data-stu-id="0af04-154">Identifier: `com.microsoft.wdav`</span></span>
+    - <span data-ttu-id="0af04-155">标识符类型：捆绑包 ID</span><span class="sxs-lookup"><span data-stu-id="0af04-155">Identifier Type: Bundle ID</span></span>
+    - <span data-ttu-id="0af04-156">代码要求： `identifier "com.microsoft.wdav" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = UBF8T346G9`</span><span class="sxs-lookup"><span data-stu-id="0af04-156">Code Requirement: `identifier "com.microsoft.wdav" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = UBF8T346G9`</span></span>
 
-### <a name="network-extension-policy"></a><span data-ttu-id="a39b1-159">网络扩展策略</span><span class="sxs-lookup"><span data-stu-id="a39b1-159">Network extension policy</span></span>
+- <span data-ttu-id="0af04-157">Microsoft Defender for Endpoint Security Extension</span><span class="sxs-lookup"><span data-stu-id="0af04-157">Microsoft Defender for Endpoint Security Extension</span></span>
+    - <span data-ttu-id="0af04-158">标识符： `com.microsoft.wdav.epsext`</span><span class="sxs-lookup"><span data-stu-id="0af04-158">Identifier: `com.microsoft.wdav.epsext`</span></span>
+    - <span data-ttu-id="0af04-159">标识符类型：捆绑包 ID</span><span class="sxs-lookup"><span data-stu-id="0af04-159">Identifier Type: Bundle ID</span></span>
+    - <span data-ttu-id="0af04-160">代码要求： `identifier "com.microsoft.wdav.epsext" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = UBF8T346G9`</span><span class="sxs-lookup"><span data-stu-id="0af04-160">Code Requirement: `identifier "com.microsoft.wdav.epsext" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = UBF8T346G9`</span></span>
 
-<span data-ttu-id="a39b1-160">作为终结点检测和响应功能的一部分，Microsoft Defender for Mac 终结点会检查套接字流量，将此信息报告给 Microsoft Defender 安全中心门户。</span><span class="sxs-lookup"><span data-stu-id="a39b1-160">As part of the Endpoint Detection and Response capabilities, Microsoft Defender for Endpoint for Mac inspects socket traffic and reports this information to the Microsoft Defender Security Center portal.</span></span> <span data-ttu-id="a39b1-161">以下策略允许网络扩展执行此功能。</span><span class="sxs-lookup"><span data-stu-id="a39b1-161">The following policy allows the network extension to perform this functionality.</span></span>
+### <a name="network-extension-policy"></a><span data-ttu-id="0af04-161">网络扩展策略</span><span class="sxs-lookup"><span data-stu-id="0af04-161">Network extension policy</span></span>
 
-- <span data-ttu-id="a39b1-162">筛选器类型：插件</span><span class="sxs-lookup"><span data-stu-id="a39b1-162">Filter type: Plugin</span></span>
-- <span data-ttu-id="a39b1-163">插件捆绑包标识符： `com.microsoft.wdav`</span><span class="sxs-lookup"><span data-stu-id="a39b1-163">Plugin bundle identifier: `com.microsoft.wdav`</span></span>
-- <span data-ttu-id="a39b1-164">筛选数据提供程序捆绑包标识符： `com.microsoft.wdav.netext`</span><span class="sxs-lookup"><span data-stu-id="a39b1-164">Filter data provider bundle identifier: `com.microsoft.wdav.netext`</span></span>
-- <span data-ttu-id="a39b1-165">筛选数据提供程序指定的要求： `identifier "com.microsoft.wdav.tunnelext" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = UBF8T346G9`</span><span class="sxs-lookup"><span data-stu-id="a39b1-165">Filter data provider designated requirement: `identifier "com.microsoft.wdav.tunnelext" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = UBF8T346G9`</span></span>
-- <span data-ttu-id="a39b1-166">筛选器套接字： `true`</span><span class="sxs-lookup"><span data-stu-id="a39b1-166">Filter sockets: `true`</span></span>
+<span data-ttu-id="0af04-162">作为终结点检测和响应功能的一部分，Microsoft Defender for Mac 终结点会检查套接字流量，将此信息报告给 Microsoft Defender 安全中心门户。</span><span class="sxs-lookup"><span data-stu-id="0af04-162">As part of the Endpoint Detection and Response capabilities, Microsoft Defender for Endpoint for Mac inspects socket traffic and reports this information to the Microsoft Defender Security Center portal.</span></span> <span data-ttu-id="0af04-163">以下策略允许网络扩展执行此功能。</span><span class="sxs-lookup"><span data-stu-id="0af04-163">The following policy allows the network extension to perform this functionality.</span></span>
 
-## <a name="check-installation-status"></a><span data-ttu-id="a39b1-167">检查安装状态</span><span class="sxs-lookup"><span data-stu-id="a39b1-167">Check installation status</span></span>
+- <span data-ttu-id="0af04-164">筛选器类型：插件</span><span class="sxs-lookup"><span data-stu-id="0af04-164">Filter type: Plugin</span></span>
+- <span data-ttu-id="0af04-165">插件捆绑包标识符： `com.microsoft.wdav`</span><span class="sxs-lookup"><span data-stu-id="0af04-165">Plugin bundle identifier: `com.microsoft.wdav`</span></span>
+- <span data-ttu-id="0af04-166">筛选数据提供程序捆绑包标识符： `com.microsoft.wdav.netext`</span><span class="sxs-lookup"><span data-stu-id="0af04-166">Filter data provider bundle identifier: `com.microsoft.wdav.netext`</span></span>
+- <span data-ttu-id="0af04-167">筛选数据提供程序指定的要求： `identifier "com.microsoft.wdav.tunnelext" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = UBF8T346G9`</span><span class="sxs-lookup"><span data-stu-id="0af04-167">Filter data provider designated requirement: `identifier "com.microsoft.wdav.tunnelext" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = UBF8T346G9`</span></span>
+- <span data-ttu-id="0af04-168">筛选器套接字： `true`</span><span class="sxs-lookup"><span data-stu-id="0af04-168">Filter sockets: `true`</span></span>
 
-<span data-ttu-id="a39b1-168">在 [客户端设备上运行 Microsoft Defender for Endpoint](mac-install-with-jamf.md) 以检查载入状态。</span><span class="sxs-lookup"><span data-stu-id="a39b1-168">Run [Microsoft Defender for Endpoint](mac-install-with-jamf.md) on a client device to check the onboarding status.</span></span>
+## <a name="check-installation-status"></a><span data-ttu-id="0af04-169">检查安装状态</span><span class="sxs-lookup"><span data-stu-id="0af04-169">Check installation status</span></span>
+
+<span data-ttu-id="0af04-170">在 [客户端设备上运行 Microsoft Defender for Endpoint](mac-install-with-jamf.md) 以检查载入状态。</span><span class="sxs-lookup"><span data-stu-id="0af04-170">Run [Microsoft Defender for Endpoint](mac-install-with-jamf.md) on a client device to check the onboarding status.</span></span>

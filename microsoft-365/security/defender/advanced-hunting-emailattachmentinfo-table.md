@@ -10,8 +10,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: lomayor
-author: lomayor
+ms.author: maccruz
+author: schmurky
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
@@ -20,48 +20,48 @@ mms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 43e861d43e6e98f1e17d737f431bb72c42f3f4f6
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 84d0c1fd256b013291e3df33dc5d7a0524741685
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51055873"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51498931"
 ---
-# <a name="emailattachmentinfo"></a><span data-ttu-id="f1102-104">EmailAttachmentInfo</span><span class="sxs-lookup"><span data-stu-id="f1102-104">EmailAttachmentInfo</span></span>
+# <a name="emailattachmentinfo"></a><span data-ttu-id="dd139-104">EmailAttachmentInfo</span><span class="sxs-lookup"><span data-stu-id="dd139-104">EmailAttachmentInfo</span></span>
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
-<span data-ttu-id="f1102-105">**适用于：**</span><span class="sxs-lookup"><span data-stu-id="f1102-105">**Applies to:**</span></span>
-- <span data-ttu-id="f1102-106">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="f1102-106">Microsoft 365 Defender</span></span>
+<span data-ttu-id="dd139-105">**适用于：**</span><span class="sxs-lookup"><span data-stu-id="dd139-105">**Applies to:**</span></span>
+- <span data-ttu-id="dd139-106">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="dd139-106">Microsoft 365 Defender</span></span>
 
 
 
-<span data-ttu-id="f1102-107">高级 `EmailAttachmentInfo` 搜寻 [架构中的](advanced-hunting-overview.md) 表包含有关由 Microsoft Defender for Office 365 处理的电子邮件附件的信息。</span><span class="sxs-lookup"><span data-stu-id="f1102-107">The `EmailAttachmentInfo` table in the [advanced hunting](advanced-hunting-overview.md) schema contains information about attachments on emails processed by Microsoft Defender for Office 365.</span></span> <span data-ttu-id="f1102-108">使用此参考来构建从此表返回信息的查询。</span><span class="sxs-lookup"><span data-stu-id="f1102-108">Use this reference to construct queries that return information from this table.</span></span>
+<span data-ttu-id="dd139-107">高级 `EmailAttachmentInfo` 搜寻 [架构中的](advanced-hunting-overview.md) 表包含有关由 Microsoft Defender for Office 365 处理的电子邮件附件的信息。</span><span class="sxs-lookup"><span data-stu-id="dd139-107">The `EmailAttachmentInfo` table in the [advanced hunting](advanced-hunting-overview.md) schema contains information about attachments on emails processed by Microsoft Defender for Office 365.</span></span> <span data-ttu-id="dd139-108">使用此参考来构建从此表返回信息的查询。</span><span class="sxs-lookup"><span data-stu-id="dd139-108">Use this reference to construct queries that return information from this table.</span></span>
 
-<span data-ttu-id="f1102-109">有关高级搜寻架构中其他表的信息，请[参阅高级搜寻参考](advanced-hunting-schema-tables.md)。</span><span class="sxs-lookup"><span data-stu-id="f1102-109">For information on other tables in the advanced hunting schema, [see the advanced hunting reference](advanced-hunting-schema-tables.md).</span></span>
+<span data-ttu-id="dd139-109">有关高级搜寻架构中其他表的信息，请[参阅高级搜寻参考](advanced-hunting-schema-tables.md)。</span><span class="sxs-lookup"><span data-stu-id="dd139-109">For information on other tables in the advanced hunting schema, [see the advanced hunting reference](advanced-hunting-schema-tables.md).</span></span>
 
-| <span data-ttu-id="f1102-110">列名称</span><span class="sxs-lookup"><span data-stu-id="f1102-110">Column name</span></span> | <span data-ttu-id="f1102-111">数据类型</span><span class="sxs-lookup"><span data-stu-id="f1102-111">Data type</span></span> | <span data-ttu-id="f1102-112">说明</span><span class="sxs-lookup"><span data-stu-id="f1102-112">Description</span></span> |
+| <span data-ttu-id="dd139-110">列名称</span><span class="sxs-lookup"><span data-stu-id="dd139-110">Column name</span></span> | <span data-ttu-id="dd139-111">数据类型</span><span class="sxs-lookup"><span data-stu-id="dd139-111">Data type</span></span> | <span data-ttu-id="dd139-112">说明</span><span class="sxs-lookup"><span data-stu-id="dd139-112">Description</span></span> |
 |-------------|-----------|-------------|
-| `Timestamp` | <span data-ttu-id="f1102-113">datetime</span><span class="sxs-lookup"><span data-stu-id="f1102-113">datetime</span></span> | <span data-ttu-id="f1102-114">记录事件的日期和时间</span><span class="sxs-lookup"><span data-stu-id="f1102-114">Date and time when the event was recorded</span></span> |
-| `NetworkMessageId` | <span data-ttu-id="f1102-115">string</span><span class="sxs-lookup"><span data-stu-id="f1102-115">string</span></span> | <span data-ttu-id="f1102-116">由 Microsoft 365 生成的电子邮件的唯一标识符</span><span class="sxs-lookup"><span data-stu-id="f1102-116">Unique identifier for the email, generated by Microsoft 365</span></span> |
-| `SenderFromAddress` | <span data-ttu-id="f1102-117">string</span><span class="sxs-lookup"><span data-stu-id="f1102-117">string</span></span> | <span data-ttu-id="f1102-118">发件人标题中的发件人电子邮件地址（电子邮件收件人在其电子邮件客户端上可以看到）</span><span class="sxs-lookup"><span data-stu-id="f1102-118">Sender email address in the FROM header, which is visible to email recipients on their email clients</span></span> |
-| `SenderDisplayName` | <span data-ttu-id="f1102-119">string</span><span class="sxs-lookup"><span data-stu-id="f1102-119">string</span></span> | <span data-ttu-id="f1102-120">通讯簿中显示的发件人姓名，通常是给定或名字、中间名首字母和姓氏或姓氏的组合</span><span class="sxs-lookup"><span data-stu-id="f1102-120">Name of the sender displayed in the address book, typically a combination of a given or first name, a middle initial, and a last name or surname</span></span> |
-| `SenderObjectId` | <span data-ttu-id="f1102-121">string</span><span class="sxs-lookup"><span data-stu-id="f1102-121">string</span></span> | <span data-ttu-id="f1102-122">Azure AD 中发件人帐户的唯一标识符</span><span class="sxs-lookup"><span data-stu-id="f1102-122">Unique identifier for the sender’s account in Azure AD</span></span> |
-| `RecipientEmailAddress` | <span data-ttu-id="f1102-123">string</span><span class="sxs-lookup"><span data-stu-id="f1102-123">string</span></span> | <span data-ttu-id="f1102-124">收件人的电子邮件地址，或通讯组列表扩展后收件人的电子邮件地址</span><span class="sxs-lookup"><span data-stu-id="f1102-124">Email address of the recipient, or email address of the recipient after distribution list expansion</span></span> |
-| `RecipientObjectId` | <span data-ttu-id="f1102-125">string</span><span class="sxs-lookup"><span data-stu-id="f1102-125">string</span></span> | <span data-ttu-id="f1102-126">Azure AD 中电子邮件收件人的唯一标识符</span><span class="sxs-lookup"><span data-stu-id="f1102-126">Unique identifier for the email recipient in Azure AD</span></span> |
-| `FileName` | <span data-ttu-id="f1102-127">string</span><span class="sxs-lookup"><span data-stu-id="f1102-127">string</span></span> | <span data-ttu-id="f1102-128">录制操作所应用到的文件的名称</span><span class="sxs-lookup"><span data-stu-id="f1102-128">Name of the file that the recorded action was applied to</span></span> |
-| `FileType` | <span data-ttu-id="f1102-129">string</span><span class="sxs-lookup"><span data-stu-id="f1102-129">string</span></span> | <span data-ttu-id="f1102-130">文件扩展名类型</span><span class="sxs-lookup"><span data-stu-id="f1102-130">File extension type</span></span> |
-| `SHA256` | <span data-ttu-id="f1102-131">string</span><span class="sxs-lookup"><span data-stu-id="f1102-131">string</span></span> | <span data-ttu-id="f1102-132">录制操作所应用到的文件的 SHA-256。</span><span class="sxs-lookup"><span data-stu-id="f1102-132">SHA-256 of the file that the recorded action was applied to.</span></span> <span data-ttu-id="f1102-133">通常不会填充此字段 — 可用时使用 SHA1 列。</span><span class="sxs-lookup"><span data-stu-id="f1102-133">This field is usually not populated — use the SHA1 column when available.</span></span> |
-| `ThreatTypes` | <span data-ttu-id="f1102-134">string</span><span class="sxs-lookup"><span data-stu-id="f1102-134">string</span></span> | <span data-ttu-id="f1102-135">关于电子邮件是否包含恶意软件、网络钓鱼或其他威胁的电子邮件筛选堆栈裁定</span><span class="sxs-lookup"><span data-stu-id="f1102-135">Verdict from the email filtering stack on whether the email contains malware, phishing, or other threats</span></span> |
-| `ThreatNames` | <span data-ttu-id="f1102-136">string</span><span class="sxs-lookup"><span data-stu-id="f1102-136">string</span></span> | <span data-ttu-id="f1102-137">找到的恶意软件或其他威胁的检测名称</span><span class="sxs-lookup"><span data-stu-id="f1102-137">Detection name for malware or other threats found</span></span> |
-| `DetectionMethods` | <span data-ttu-id="f1102-138">string</span><span class="sxs-lookup"><span data-stu-id="f1102-138">string</span></span> | <span data-ttu-id="f1102-139">用于检测电子邮件中的恶意软件、网络钓鱼或其他威胁的方法</span><span class="sxs-lookup"><span data-stu-id="f1102-139">Methods used to detect malware, phishing, or other threats found in the email</span></span> |
-| `ReportId` | <span data-ttu-id="f1102-140">long</span><span class="sxs-lookup"><span data-stu-id="f1102-140">long</span></span> | <span data-ttu-id="f1102-141">基于重复计数器的事件标识符。</span><span class="sxs-lookup"><span data-stu-id="f1102-141">Event identifier based on a repeating counter.</span></span> <span data-ttu-id="f1102-142">若要标识唯一事件，此列必须与 DeviceName 和 Timestamp 列一起使用。</span><span class="sxs-lookup"><span data-stu-id="f1102-142">To identify unique events, this column must be used in conjunction with the DeviceName and Timestamp columns.</span></span> |
+| `Timestamp` | <span data-ttu-id="dd139-113">datetime</span><span class="sxs-lookup"><span data-stu-id="dd139-113">datetime</span></span> | <span data-ttu-id="dd139-114">记录事件的日期和时间</span><span class="sxs-lookup"><span data-stu-id="dd139-114">Date and time when the event was recorded</span></span> |
+| `NetworkMessageId` | <span data-ttu-id="dd139-115">string</span><span class="sxs-lookup"><span data-stu-id="dd139-115">string</span></span> | <span data-ttu-id="dd139-116">由 Microsoft 365 生成的电子邮件的唯一标识符</span><span class="sxs-lookup"><span data-stu-id="dd139-116">Unique identifier for the email, generated by Microsoft 365</span></span> |
+| `SenderFromAddress` | <span data-ttu-id="dd139-117">string</span><span class="sxs-lookup"><span data-stu-id="dd139-117">string</span></span> | <span data-ttu-id="dd139-118">发件人标题中的发件人电子邮件地址（电子邮件收件人在其电子邮件客户端上可以看到）</span><span class="sxs-lookup"><span data-stu-id="dd139-118">Sender email address in the FROM header, which is visible to email recipients on their email clients</span></span> |
+| `SenderDisplayName` | <span data-ttu-id="dd139-119">string</span><span class="sxs-lookup"><span data-stu-id="dd139-119">string</span></span> | <span data-ttu-id="dd139-120">通讯簿中显示的发件人姓名，通常是给定或名字、中间名首字母和姓氏或姓氏的组合</span><span class="sxs-lookup"><span data-stu-id="dd139-120">Name of the sender displayed in the address book, typically a combination of a given or first name, a middle initial, and a last name or surname</span></span> |
+| `SenderObjectId` | <span data-ttu-id="dd139-121">string</span><span class="sxs-lookup"><span data-stu-id="dd139-121">string</span></span> | <span data-ttu-id="dd139-122">Azure AD 中发件人帐户的唯一标识符</span><span class="sxs-lookup"><span data-stu-id="dd139-122">Unique identifier for the sender’s account in Azure AD</span></span> |
+| `RecipientEmailAddress` | <span data-ttu-id="dd139-123">string</span><span class="sxs-lookup"><span data-stu-id="dd139-123">string</span></span> | <span data-ttu-id="dd139-124">收件人的电子邮件地址，或通讯组列表扩展后收件人的电子邮件地址</span><span class="sxs-lookup"><span data-stu-id="dd139-124">Email address of the recipient, or email address of the recipient after distribution list expansion</span></span> |
+| `RecipientObjectId` | <span data-ttu-id="dd139-125">string</span><span class="sxs-lookup"><span data-stu-id="dd139-125">string</span></span> | <span data-ttu-id="dd139-126">Azure AD 中电子邮件收件人的唯一标识符</span><span class="sxs-lookup"><span data-stu-id="dd139-126">Unique identifier for the email recipient in Azure AD</span></span> |
+| `FileName` | <span data-ttu-id="dd139-127">string</span><span class="sxs-lookup"><span data-stu-id="dd139-127">string</span></span> | <span data-ttu-id="dd139-128">录制操作所应用到的文件的名称</span><span class="sxs-lookup"><span data-stu-id="dd139-128">Name of the file that the recorded action was applied to</span></span> |
+| `FileType` | <span data-ttu-id="dd139-129">string</span><span class="sxs-lookup"><span data-stu-id="dd139-129">string</span></span> | <span data-ttu-id="dd139-130">文件扩展名类型</span><span class="sxs-lookup"><span data-stu-id="dd139-130">File extension type</span></span> |
+| `SHA256` | <span data-ttu-id="dd139-131">string</span><span class="sxs-lookup"><span data-stu-id="dd139-131">string</span></span> | <span data-ttu-id="dd139-132">录制操作所应用到的文件的 SHA-256。</span><span class="sxs-lookup"><span data-stu-id="dd139-132">SHA-256 of the file that the recorded action was applied to.</span></span> <span data-ttu-id="dd139-133">通常不会填充此字段 — 可用时使用 SHA1 列。</span><span class="sxs-lookup"><span data-stu-id="dd139-133">This field is usually not populated — use the SHA1 column when available.</span></span> |
+| `ThreatTypes` | <span data-ttu-id="dd139-134">string</span><span class="sxs-lookup"><span data-stu-id="dd139-134">string</span></span> | <span data-ttu-id="dd139-135">关于电子邮件是否包含恶意软件、网络钓鱼或其他威胁的电子邮件筛选堆栈裁定</span><span class="sxs-lookup"><span data-stu-id="dd139-135">Verdict from the email filtering stack on whether the email contains malware, phishing, or other threats</span></span> |
+| `ThreatNames` | <span data-ttu-id="dd139-136">string</span><span class="sxs-lookup"><span data-stu-id="dd139-136">string</span></span> | <span data-ttu-id="dd139-137">找到的恶意软件或其他威胁的检测名称</span><span class="sxs-lookup"><span data-stu-id="dd139-137">Detection name for malware or other threats found</span></span> |
+| `DetectionMethods` | <span data-ttu-id="dd139-138">string</span><span class="sxs-lookup"><span data-stu-id="dd139-138">string</span></span> | <span data-ttu-id="dd139-139">用于检测电子邮件中的恶意软件、网络钓鱼或其他威胁的方法</span><span class="sxs-lookup"><span data-stu-id="dd139-139">Methods used to detect malware, phishing, or other threats found in the email</span></span> |
+| `ReportId` | <span data-ttu-id="dd139-140">long</span><span class="sxs-lookup"><span data-stu-id="dd139-140">long</span></span> | <span data-ttu-id="dd139-141">基于重复计数器的事件标识符。</span><span class="sxs-lookup"><span data-stu-id="dd139-141">Event identifier based on a repeating counter.</span></span> <span data-ttu-id="dd139-142">若要标识唯一事件，此列必须与 DeviceName 和 Timestamp 列一起使用。</span><span class="sxs-lookup"><span data-stu-id="dd139-142">To identify unique events, this column must be used in conjunction with the DeviceName and Timestamp columns.</span></span> |
 
-## <a name="related-topics"></a><span data-ttu-id="f1102-143">相关主题</span><span class="sxs-lookup"><span data-stu-id="f1102-143">Related topics</span></span>
-- [<span data-ttu-id="f1102-144">高级搜寻概述</span><span class="sxs-lookup"><span data-stu-id="f1102-144">Advanced hunting overview</span></span>](advanced-hunting-overview.md)
-- [<span data-ttu-id="f1102-145">了解查询语言</span><span class="sxs-lookup"><span data-stu-id="f1102-145">Learn the query language</span></span>](advanced-hunting-query-language.md)
-- [<span data-ttu-id="f1102-146">使用共享查询</span><span class="sxs-lookup"><span data-stu-id="f1102-146">Use shared queries</span></span>](advanced-hunting-shared-queries.md)
-- [<span data-ttu-id="f1102-147">跨设备、电子邮件、应用和标识进行查寻</span><span class="sxs-lookup"><span data-stu-id="f1102-147">Hunt across devices, emails, apps, and identities</span></span>](advanced-hunting-query-emails-devices.md)
-- [<span data-ttu-id="f1102-148">了解架构</span><span class="sxs-lookup"><span data-stu-id="f1102-148">Understand the schema</span></span>](advanced-hunting-schema-tables.md)
-- [<span data-ttu-id="f1102-149">应用查询最佳做法</span><span class="sxs-lookup"><span data-stu-id="f1102-149">Apply query best practices</span></span>](advanced-hunting-best-practices.md)
+## <a name="related-topics"></a><span data-ttu-id="dd139-143">相关主题</span><span class="sxs-lookup"><span data-stu-id="dd139-143">Related topics</span></span>
+- [<span data-ttu-id="dd139-144">高级搜寻概述</span><span class="sxs-lookup"><span data-stu-id="dd139-144">Advanced hunting overview</span></span>](advanced-hunting-overview.md)
+- [<span data-ttu-id="dd139-145">了解查询语言</span><span class="sxs-lookup"><span data-stu-id="dd139-145">Learn the query language</span></span>](advanced-hunting-query-language.md)
+- [<span data-ttu-id="dd139-146">使用共享查询</span><span class="sxs-lookup"><span data-stu-id="dd139-146">Use shared queries</span></span>](advanced-hunting-shared-queries.md)
+- [<span data-ttu-id="dd139-147">跨设备、电子邮件、应用和标识进行查寻</span><span class="sxs-lookup"><span data-stu-id="dd139-147">Hunt across devices, emails, apps, and identities</span></span>](advanced-hunting-query-emails-devices.md)
+- [<span data-ttu-id="dd139-148">了解架构</span><span class="sxs-lookup"><span data-stu-id="dd139-148">Understand the schema</span></span>](advanced-hunting-schema-tables.md)
+- [<span data-ttu-id="dd139-149">应用查询最佳做法</span><span class="sxs-lookup"><span data-stu-id="dd139-149">Apply query best practices</span></span>](advanced-hunting-best-practices.md)
