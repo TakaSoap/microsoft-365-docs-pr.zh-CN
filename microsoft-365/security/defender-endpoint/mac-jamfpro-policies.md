@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 1559d8dca6b6909f22473c5a8f4d25d4bac501d1
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: be01d5908e4c79f642cdbbddd75115f6ebc2c713
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51054956"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51499586"
 ---
 # <a name="set-up-the-microsoft-defender-for-endpoint-for-macos-policies-in-jamf-pro"></a>在 Jamf Pro 中设置适用于 macOS 的 Microsoft Defender for Endpoint 策略
 
@@ -349,60 +349,51 @@ ms.locfileid: "51054956"
 
 这些步骤适用于加泰罗尼亚语或 (macOS 10.15) macOS 10.15。
 
-1. 从 `notif.mobileconfig` [GitHub 存储库下载](https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/mobileconfig/profiles/notif.mobileconfig)
+1. 在 Jamf Pro 仪表板中，选择"**计算机"，** 然后选择"**配置文件"。**
 
-2. 将其另存为 `MDATP_MDAV_notification_settings.plist` 。
-
-3. 在 Jamf Pro 仪表板中，选择"常规 **"。** 
-       
-4. 输入以下详细信息：
-
-    **常规** 
+2. 单击 **"新建**"，然后为"选项"输入以下 **详细信息**：
     
-    - 名称：MDATP MDAV 通知设置
-    - 说明：macOS 10.15 (加泰罗尼亚语) 或更高版本
-    - 类别：默认 (无) 
-    - 分发方法：使用默认 (自动) 
-    - 级别：计算机级别 (默认) 
+    - 常规 **选项卡**： 
+        - **名称**：MDATP MDAV 通知设置
+        - **说明**：macOS 10.15 (加泰罗尼亚语) 或更高版本
+        - **类别**： *默认 (无)*
+        - **分发方法**：使用默认 *(自动)*
+        - **级别**：计算机级别 *(默认)*
 
-    ![配置设置 mdatpmdav 的图像](images/c9820a5ff84aaf21635c04a23a97ca93.png)
+        ![配置设置 mdatpmdav 的图像](images/c9820a5ff84aaf21635c04a23a97ca93.png)
 
+    - Tab **Notifications**， click **Add**， and enter the following values：
+        - **捆绑包 ID**： `com.microsoft.wdav.tray`
+        - **严重警报：单击**" **禁用"**
+        - **通知**：单击" **启用"**
+        - **横幅警报类型**：选择 **"包含**"*和"临时 (默认)*
+        - **锁屏界面上的通知：** 单击" **隐藏"**
+        - **通知中心中的通知**： **单击显示**
+        - **锁屏提醒应用图标**：单击 **显示**
 
-5. 选择 **"将文件 (PLIST 文件) "。**
+        ![配置设置 mdatpmdav 通知托盘的图像](images/7f9138053dbcbf928e5182ee7b295ebe.png)
 
-    ![配置设置上载 plistfile 的图像](images/7f9138053dbcbf928e5182ee7b295ebe.png)
- 
+    - 选项卡 **通知**，单击 **"再** 添加一次"，向下滚动到" **新建通知设置"**
+        - **捆绑包 ID**： `com.microsoft.autoupdate2`
+        - 将其余设置配置为与上述值相同的值
 
-6. 选择 **"文件**  >  **MDATP_MDAV_Notification_Settings.plist"。**
+        ![配置设置 mdatpmdav 通知 mau 的图像](images/4bac6ce277aedfb4a674f2d9fcb2599a.png)
 
+        请注意，现在你有两个包含通知配置的"表"，一个针对捆绑包 **ID：com.microsoft.wdav.tray，** 另一个针对捆绑包 **ID：com.microsoft.autoupdate2**。 尽管你可以根据你的要求配置警报设置，但是捆绑包的 ID 必须和之前描述的完全相同，并且 **Include** 开关必须为 **通知的打开**。
 
-    ![配置设置 mdatpmdav notsettings 的图像](images/4bac6ce277aedfb4a674f2d9fcb2599a.png)
-
-
-    ![配置设置 mdatpmdav notifsettings 的图像](images/20e33b98eb54447881dc6c89e58b890f.png)
-
-7. 选择 **"打开**  >  **上载"。**
-
-    ![配置设置 upl img 的图像](images/7697c33b9fd376ae5a8023d01f9d3857.png)
-
-
-    ![配置设置 upl 映像的图像](images/2bda9244ec25d1526811da4ea91b1c86.png)
-
-8. 选择"**范围"** 选项卡，然后选择"添加 **"。**
+3. 选择"**范围"** 选项卡，然后选择"添加 **"。**
 
     ![配置设置范围添加的图像](images/441aa2ecd36abadcdd8aed03556080b5.png)
 
+4. 选择 **Contoso 的机器组**。 
 
-9. 选择 **Contoso 的机器组**。 
-
-10. 选择 **"添加"，** 然后选择"**保存"。**
+5. 选择 **"添加"，** 然后选择"**保存"。**
     
     ![配置设置的图像 contoso 计算机 grp 保存](images/09a275e321268e5e3ac0c0865d3e2db5.png)
-
     
     ![配置设置添加保存的图像](images/4d2d1d4ee13d3f840f425924c3df0d51.png)
 
-11. 选择“**完成**”。 你将看到新的 **配置配置文件**。
+6. 选择“**完成**”。 你将看到新的 **配置配置文件**。
     ![配置设置完成 img 的图像](images/633ad26b8bf24ec683c98b2feb884bdf.png)
 
 ## <a name="step-5-configure-microsoft-autoupdate-mau"></a>步骤 5：配置 Microsoft AutoUpdate (MAU) 
@@ -578,8 +569,12 @@ ms.locfileid: "51054956"
     
     ![配置设置 donimg2 的图像](images/6c8b406ee224335a8c65d06953dc756e.png)
 
+或者，你可以下载 [fulldisk.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/fulldisk.mobileconfig) 并将其上载到 JAMF 配置文件，如使用 Jamf Pro 部署自定义配置文件中所述 [|方法 2：将配置文件上载到 Jamf Pro](https://www.jamf.com/jamf-nation/articles/648/deploying-custom-configuration-profiles-using-jamf-pro)。
 
 ## <a name="step-7-approve-kernel-extension-for-microsoft-defender-for-endpoint"></a>步骤 7：批准适用于终结点的 Microsoft Defender 内核扩展
+
+> [!CAUTION]
+> Apple 芯片 (M1) 设备不支持 KEXT。 在这些设备上安装包含 KEXT 策略的配置文件将失败。
 
 1. 在"**配置文件"中**，选择 **"+ 新建"。**
 
@@ -629,6 +624,7 @@ ms.locfileid: "51054956"
 
     ![配置设置完成映像的图像](images/1c9bd3f68db20b80193dac18f33c22d0.png)
 
+或者，你可以下载 [kext.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/kext.mobileconfig) 并将其上载到 JAMF 配置文件，如使用 Jamf Pro 部署自定义配置文件中所述 [|方法 2：将配置文件上载到 Jamf Pro](https://www.jamf.com/jamf-nation/articles/648/deploying-custom-configuration-profiles-using-jamf-pro)。
 
 ## <a name="step-8-approve-system-extensions-for-microsoft-defender-for-endpoint"></a>步骤 8：批准适用于终结点的 Microsoft Defender 的系统扩展
 
@@ -687,57 +683,53 @@ ms.locfileid: "51054956"
 
 作为终结点检测和响应功能的一部分，Microsoft Defender for Mac 终结点会检查套接字流量，将此信息报告给 Microsoft Defender 安全中心门户。 以下策略允许网络扩展执行此功能。
 
->[!NOTE]
->JAMF 没有对内容筛选策略的内置支持，这是启用 Microsoft Defender for Mac 终结点在设备上安装的网络扩展的先决条件。 此外，JAMF 有时会更改正在部署的策略的内容。
->因此，以下步骤提供了涉及对配置文件进行签名的解决方法。
+这些步骤适用于加泰罗尼亚语或 (macOS 10.15) macOS 10.15。
 
-1. 从 `netfilter.mobileconfig` [GitHub 存储库下载到](https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/mobileconfig/profiles/netfilter.mobileconfig) 设备并将其另存为 `com.microsoft.network-extension.mobileconfig`
+1. 在 Jamf Pro 仪表板中，选择"**计算机"，** 然后选择"**配置文件"。**
 
-2. 按照此页面上 [的说明使用](https://www.jamf.com/jamf-nation/articles/649/creating-a-signing-certificate-using-jamf-pro-s-built-in-certificate-authority) JAMF 的内置证书颁发机构创建签名证书
+2. 单击 **"新建**"，然后为"选项"输入以下 **详细信息**：
 
-3. 创建证书并安装到设备后，从 macOS 设备从终端运行以下命令：
+    - 常规 **选项卡**： 
+        - **名称**：Microsoft Defender ATP 网络扩展
+        - **说明**：macOS 10.15 (加泰罗尼亚语) 或更高版本
+        - **类别**： *默认 (无)*
+        - **分发方法**：使用默认 *(自动)*
+        - **级别**：计算机级别 *(默认)*
 
-   ```bash
-   $ security cms -S -N "<certificate name>" -i com.microsoft.network-extension.mobileconfig -o com.microsoft.network-extension.signed.mobileconfig
-   ```
+    - 选项卡 **内容筛选器**：
+        - **筛选器名称**：Microsoft Defender ATP 内容筛选器
+        - **标识符**： `com.microsoft.wdav`
+        - 将 **服务地址****、组织、****用户名**、**密码**、**证书** 留空 (**包括***未* 选中) 
+        - **筛选顺序**：检查器
+        - **套接字筛选器**： `com.microsoft.wdav.netext`
+        - **套接字筛选器指定要求**： `identifier "com.microsoft.wdav.netext" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = UBF8T346G9`
+        - 如果 **"包含"** 未 **(，则"** 网络筛选器 *"* 字段留空) 
 
-   ![具有用于创建已签名配置的命令的终端窗口](images/netext-create-profile.png)
+        请注意，**上述标识符****、套接字** 筛选器 **和套接字筛选器指定要求** 的确切值。
 
-4. 从 JAMF 门户中，导航到 **"配置文件"，** 然后单击" **上载"** 按钮。 
+        ![配置设置 mdatpmdav 的图像](images/netext-create-profile.png)
 
-   ![上传窗口图像](images/netext-upload-file.png)
-
-5. 选择 **"选择文件"，** 然后选择 `microsoft.network-extension.signed.mobileconfig` " "。
-
-   ![上传窗口图像选择文件](images/netext-choose-file.png)
-
-6. 选择 **"上载"。**
-
-   ![上传窗口图像 netext 上载文件 2](images/netext-upload-file2.png)
-
-7. 上载文件后，您将重定向到新页面以完成此配置文件的创建。
-
-   ![新配置文件 netext 配置文件页的图像](images/netext-profile-page.png)
-
-8. 选择" **范围"** 选项卡。
+3. 选择" **范围"** 选项卡。
 
    ![配置设置标签页的图像](images/0df36fc308ba569db204ee32db3fb40a.png)
 
-9. 选择“+ 添加”。
+4. 选择“+ 添加”。
 
-10. Select **Computer Groups** > under Group Name **>** select **Contoso's Machine Group**.
+5. Select **Computer Groups** > under Group Name **>** select **Contoso's Machine Group**.
 
-11. 选择“+ 添加”。
+6. 选择“+ 添加”。
 
     ![配置设置 adim 的图像](images/0dde8a4c41110dbc398c485433a81359.png)
 
-12. 选择“**保存**”。
+7. 选择“**保存**”。
 
     ![配置设置 savimg netextscop 的图像](images/netext-scope.png)
 
-13. 选择“**完成**”。
+8. 选择“**完成**”。
 
     ![配置设置图像 netextfinal](images/netext-final.png)
+
+或者，你可以下载 [netfilter.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/netfilter.mobileconfig) 并将其上载到 JAMF 配置文件，如使用 Jamf Pro 部署自定义配置文件中所述 [|方法 2：将配置文件上载到 Jamf Pro](https://www.jamf.com/jamf-nation/articles/648/deploying-custom-configuration-profiles-using-jamf-pro)。
 
 ## <a name="step-10-schedule-scans-with-microsoft-defender-for-endpoint-for-mac"></a>步骤 10：使用 Microsoft Defender for Endpoint for Mac 计划扫描
 按照使用 Microsoft Defender for Endpoint for Mac 计划 [扫描的说明进行操作](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/mac-schedule-scan-atp)。

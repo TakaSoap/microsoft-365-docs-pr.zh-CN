@@ -90,7 +90,7 @@
           items:
             - name: 概述
               href: defender/get-started.md
-            - name: 启用 Microsoft 威胁防护
+            - name: 打开 Microsoft 365 Defender
               href: defender/m365d-enable.md
             - name: 部署支持的服务
               href: defender/deploy-supported-services.md
@@ -140,6 +140,12 @@
                       href: defender/investigate-users.md
                 - name: 获取电子邮件通知
                   href: defender/get-incident-notifications.md
+            - name: Microsoft 威胁专家
+              items:
+                - name: Microsoft Threat Experts 概述
+                  href: mtp/microsoft-threat-experts.md
+                - name: 配置和管理 Microsoft 威胁专家功能
+                  href: mtp/configure-microsoft-threat-experts.md
             - name: 自动调查和响应
               items:
                 - name: 自动调查和响应概述
@@ -422,7 +428,7 @@
             - name: 默认处于保护状态
               href: ./office-365-security/secure-by-default.md
             - name: 在 Defender for Office 365 中配置反钓鱼策略
-              href: ./office-365-security/configure-atp-anti-phishing-policies.md
+              href: ./office-365-security/configure-mdo-anti-phishing-policies.md
             - name: 配置反恶意软件策略
               href: ./office-365-security/configure-anti-malware-policies.md
             - name: 配置反垃圾邮件策略

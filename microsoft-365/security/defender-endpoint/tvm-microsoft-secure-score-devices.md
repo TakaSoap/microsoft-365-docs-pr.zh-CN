@@ -1,5 +1,5 @@
 ---
-title: Microsoft 设备安全分数
+title: 设备的 Microsoft 安全功能分数
 description: 你的设备分数显示设备在应用程序、操作系统、网络、帐户和安全控件中的统一安全配置状态。
 keywords: Microsoft 设备安全分数， mdatp Microsoft 设备安全分数， 安全分数， 配置分数， 威胁和漏洞管理， 安全控制， 改进机会， 一段时间的安全配置分数， 安全状况， 基线
 search.product: eADQiWindows 10XVcnh
@@ -8,8 +8,8 @@ ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: ellevin
-author: levinec
+ms.author: dansimp
+author: dansimp
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
@@ -18,14 +18,14 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: d9ccd4f7dcc8b1546772a756aaf850dadfc87905
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: fcf33b309045b9ca763b0d3cabc44fb13505ee0b
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51055330"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51500054"
 ---
-# <a name="microsoft-secure-score-for-devices"></a>Microsoft 设备安全分数
+# <a name="microsoft-secure-score-for-devices"></a>设备的 Microsoft 安全功能分数
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -43,9 +43,9 @@ ms.locfileid: "51055330"
 
 你的设备分数显示在 Microsoft Defender[](tvm-dashboard-insights.md)安全中心的威胁和漏洞管理仪表板中。 设备的 Microsoft 安全分数越高，你的终结点就更能够抵御网络安全威胁攻击。 它反映你的设备跨以下类别的安全配置状态：
 
-- Application
+- 应用程序
 - 操作系统
-- 网络
+- Network
 - 帐户
 - 安全控件
 
@@ -112,5 +112,5 @@ Microsoft 设备安全分数卡中的数据是不断发现漏洞的过程的产�
 
 - [威胁和漏洞管理概述](next-gen-threat-and-vuln-mgt.md)
 - [仪表板](tvm-dashboard-insights.md)
-- [曝光分数](tvm-exposure-score.md)
+- [风险评分](tvm-exposure-score.md)
 - [安全性建议](tvm-security-recommendation.md)

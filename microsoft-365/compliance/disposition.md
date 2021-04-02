@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 无论是使用处置评审还是根据配置的设置自动删除内容，都可监视和管理内容的处置。
-ms.openlocfilehash: d9786b5e93801153e168784d51e37a00ee1822bc
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: c49f669498424169a89fa99fcdd259de1f5c720b
+ms.sourcegitcommit: 7ebed5810480d7c49f8ca03207b5ea84993d253f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51051924"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51488165"
 ---
 # <a name="disposition-of-content"></a>内容的处置
 
@@ -44,7 +44,7 @@ ms.locfileid: "51051924"
 
 此外，若要在处置过程中查看项目的内容，可将用户添加到以下两个角色组： **"内容资源管理器内容查看器"** 和 **"内容资源管理器列表查看器"**。 如果用户没有这些角色组的权限，他们仍可选择处置审阅操作来完成处置评审，但执行此操作无法在合规中心查看项目的内容。
 
-有关配置这些权限的说明，请参阅[允许用户访问Office 365安全与合规中心](../security/defender-365-security/grant-access-to-the-security-and-compliance-center.md)。
+有关配置这些权限的说明，请参阅[允许用户访问Office 365安全与合规中心](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md)。
 
 ### <a name="enable-auditing"></a>启用审核
 
@@ -124,16 +124,21 @@ ms.locfileid: "51051924"
 
 ## <a name="disposition-of-records"></a>处置记录
 
-使用 **记录管理** 页面中的 **处置** 选项卡来识别当前需删除的记录是自动删除，或是经过处置评审后删除。 这些项目在 **类型** 列中的 **已处置记录** 里显示。 例如：
+使用“**记录管理**”页面的“**处置**”选项卡识别：
+
+- 处置审阅后删除的项目。
+- 标记为保留期限结束后自动删除的记录或法规记录的项目。
+
+这些项目在 **类型** 列中的 **已处置记录** 里显示。 例如：
 
 ![未经处置评审即被处置的项目](../media/records-disposed2.png)
 
-在记录标签的 **已处置项目** 选项卡中显示的项目，在该项目被处置后最多保留7年，在此期间，每条记录的上限为一百万项。 如果看到 **计数** 数字接近一百万这一限制，并且需要对记录进行处置证明，请联系 [Microsoft 支持](/office365/admin/contact-support-for-business-products)。
+在“**已处置项目**”选项卡中显示的项目将在处置后最多保留 7 年，在此期间，每条记录的上限为一百万个项目。 如果看到 **计数** 数字接近一百万这一限制，并且需要对记录进行处置证明，请联系 [Microsoft 支持](/office365/admin/contact-support-for-business-products)。
 
 > [!NOTE]
-> 此功能基于 [统一审核日志](search-the-audit-log-in-security-and-compliance.md) 中的信息，因此需要[启动并可搜索](turn-audit-log-search-on-or-off.md)审核，以便捕获相应的事件。
+> 此功能使用 [统一审核日志](search-the-audit-log-in-security-and-compliance.md) 中的信息，因此需要允许审核以使其 [启动且可搜索](turn-audit-log-search-on-or-off.md)，以便捕获相应的事件。
 
-对于审核，搜索 **标记为记录的已删除文件**，该文件位于 "**文件和页面活动"** 类别 。 此审核事件适用于文档和电子邮件。
+要审核标记为记录或法规记录的已删除项目，请在“**文件和页面活动**”类别中搜索“**已删除的标记为记录的文件**”。 此审核事件适用于文档和电子邮件。
 
 ## <a name="filter-and-export-the-views"></a>筛选和导出视图
 

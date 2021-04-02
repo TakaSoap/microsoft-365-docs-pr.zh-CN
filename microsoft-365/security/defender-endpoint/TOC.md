@@ -145,6 +145,7 @@
 #### [疑难解答]()
 ##### [解决安装问题](mac-support-install.md)
 ##### [解决性能问题](mac-support-perf.md)
+##### [解决云连接问题](troubleshoot-cloud-connect-mdemac.md)
 ##### [解决核心扩展问题](mac-support-kext.md)
 ##### [解决许可证问题](mac-support-license.md)
 
@@ -586,6 +587,7 @@
 #### [解决攻击面减少问题]()
 ##### [网络保护](troubleshoot-np.md)
 ##### [攻击面减少规则](troubleshoot-asr.md)
+##### [迁移到"攻击"图面减少规则](migrating-asr-rules.md)
 
 # [Microsoft 365 Defender](../index.yml)
 # [Defender for Office 365](../office-365-security/overview.md)

@@ -96,7 +96,7 @@ Are you sure you want to install the modules from 'PSGallery'?
 [Y] Yes  [A] Yes to All  [N] No  [L] No to All  [S] Suspend  [?] Help (default is "N"):
 ```
 
-回答“**是**”或“**全是**”以继续安装。
+回答“**是**”或“**全部是**”以继续安装。
 
 
 ### <a name="step-2-connect-to-azure-ad-for-your-microsoft-365-subscription"></a>步骤 2：连接到 Microsoft 365 订阅的 Azure AD

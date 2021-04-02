@@ -8,20 +8,20 @@ ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: ellevin
-author: levinec
+ms.author: dansimp
+author: dansimp
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: overview
 ms.technology: mde
-ms.openlocfilehash: d1402d8486725559335a5edc5ee13c78a0125932
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 0c3c5ebbcd4483cae159fe9b46a6f4c376443be3
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51186421"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51499070"
 ---
 # <a name="threat-and-vulnerability-management"></a>威胁和漏洞管理
 
@@ -88,9 +88,9 @@ ms.locfileid: "51186421"
 **仪表板**   | 获取组织曝光分数、适用于设备的 Microsoft 安全分数、设备曝光分布、顶级安全建议、最易受攻击的软件、顶级修正活动和最公开设备数据等高级视图。
 [**安全性建议**](tvm-security-recommendation.md) | 请参阅安全建议和相关威胁信息列表。 当你从列表中选择一个项目时，将打开一个包含漏洞详细信息的飞出面板、一个打开软件页的链接以及修正和例外选项。 如果你的设备通过 Azure Active Directory 加入，并且你已启用 Defender for Endpoint 中的 Intune 连接，则还可以在 Intune 中打开票证。
 [**修正**](tvm-remediation.md) | 请参阅已创建的修正活动和建议例外。
-[**软件清单**](tvm-software-inventory.md) | 请参阅组织中易受攻击的软件列表，以及漏洞和威胁信息。
+[**软件库存**](tvm-software-inventory.md) | 请参阅组织中易受攻击的软件列表，以及漏洞和威胁信息。
 [**漏洞**](tvm-weaknesses.md) | 请参阅组织中 C CV 的常见 (曝光) 列表。
-[**事件时间线**](threat-and-vuln-mgt-event-timeline.md) | 查看可能会影响组织风险的事件。
+[**活动日程表**](threat-and-vuln-mgt-event-timeline.md) | 查看可能会影响组织风险的事件。
 
 ## <a name="apis"></a>API
 
@@ -98,7 +98,7 @@ ms.locfileid: "51186421"
 
 请参阅以下相关 API 文章：
 
-- [支持的 Microsoft Defender 终结点 API](exposed-apis-list.md)
+- [支持的 Microsoft Defender for Endpoint API](exposed-apis-list.md)
 - [计算机 API](machine.md)
 - [建议 API](vulnerability.md)
 - [分数 API](score.md)

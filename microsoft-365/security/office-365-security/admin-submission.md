@@ -19,12 +19,12 @@ ms.custom:
 description: 管理员可以了解如何使用安全 & 合规中心中的提交门户将可疑电子邮件、可疑钓鱼邮件、垃圾邮件和其他可能有害的邮件、URL 和文件提交给 Microsoft 进行扫描。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 3dd566de3ba4b4281b19c423b8623f081c378bca
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 6f1294335be5a82ef7219ef9096d84d840271c5b
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51203877"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51499336"
 ---
 # <a name="use-admin-submission-to-submit-suspected-spam-phish-urls-and-files-to-microsoft"></a>使用“管理员提交”将可疑的垃圾邮件、网络钓鱼诈骗、URL和文件提交给 Microsoft
 
@@ -122,9 +122,9 @@ ms.locfileid: "51203877"
 
    ![附件提交示例](../../media/submission-file-flyout.PNG)
 
-## <a name="view-admin-submissions"></a>查看管理员提交
+## <a name="view-items-submitted-for-analysis"></a>查看提交用于分析的项目
 
-在安全&合规中心，转到"威胁管理提交"，验证你位于"管理员提交"选项卡上， \> 然后单击"新建 **提交"。**
+In the Security & Compliance Center， go to **Threat management** \> **Submissions**， verify that you're on the **Submitted for analysis** tab
 
 在页面顶部附近，你可以输入开始日期、结束日期和 (默认情况下) 你可以按提交 **ID** (通过输入框中的值并单击"刷新"按钮来筛选分配给每个提交) 的 GUID 值。 ![ ](../../media/scc-quarantine-refresh.png) Update
 
@@ -254,6 +254,9 @@ You can click the **Column options** button near of the bottom of the page to ad
 在页面顶部附近，可以输入开始日期、结束日期，并且可以通过在框中输入值并单击"刷新"按钮来按"提交 ![ "进行筛选 ](../../media/scc-quarantine-refresh.png) 。 Update
 
 若要导出结果，请单击页面 **顶部附近的**"导出"，然后选择"**图表数据**"或"表 **"。** 在出现的对话框中，保存 .csv 文件。
+
+> [!NOTE]
+> 如果组织配置为仅发送到自定义邮箱，将不会发送报告的邮件进行重新扫描，并且用户报告的邮件门户中的结果将始终为空。
 
 ## <a name="undo-user-submissions"></a>撤消用户提交
 

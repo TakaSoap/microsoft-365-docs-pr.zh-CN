@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: e3a20f0a356a32eddc05b3792c0c04c23197a7b0
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 5fa811b2419d107e91b301d5c9bad691fc016b5b
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51185691"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51498965"
 ---
 # <a name="deployment-with-a-different-mobile-device-management-mdm-system-for-microsoft-defender-for-endpoint-for-mac"></a>使用适用于 Mac 的 Microsoft Defender for Endpoint (MDM) 系统部署不同的移动设备管理
 
@@ -43,7 +43,7 @@ ms.locfileid: "51185691"
 ## <a name="approach"></a>方法
 
 > [!CAUTION]
-> 目前，Microsoft 仅支持 Intune 和 JAMF 部署和管理 Microsoft Defender for Endpoint for Mac。 Microsoft 对下面提供的信息不做出明示或暗示的担保。
+> 目前，Microsoft 正式仅支持 Intune 和 JAMF 部署和管理 Microsoft Defender for Endpoint for Mac。 Microsoft 对下面提供的信息不做出明示或暗示的担保。
 
 如果你的组织使用未正式支持的移动设备管理 (MDM) 解决方案，这并不意味着你无法部署或运行 Microsoft Defender for Endpoint for Mac。
 
@@ -84,6 +84,10 @@ MDM 使用它将设置文件部署到客户端设备的 **/Library/Managed Prefe
 ### <a name="kernel-extension-policy"></a>内核扩展策略
 
 设置 KEXT 或内核扩展策略。 使用团队标识符 **UBF8T346G9** 允许 Microsoft 提供的内核扩展。
+
+> [!CAUTION]
+> 如果您的环境由 Apple 芯片 (M1) ，则这些计算机不应接收包含 KEXT 策略的配置文件。
+> Apple 在这些计算机上不支持 KEXT，在 M1 计算机上部署此类配置文件将失败。
 
 ### <a name="system-extension-policy"></a>系统扩展策略
 

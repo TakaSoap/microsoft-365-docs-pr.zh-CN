@@ -1,5 +1,5 @@
 ---
-title: Web 保护
+title: Web 保护功能
 description: 了解 Microsoft Defender ATP 中的 Web 保护及其如何保护你的组织
 keywords: Web 保护， Web 威胁防护， Web 浏览， 安全， 网络钓鱼， 恶意软件， 攻击， 网站， 网络保护， Edge， Internet Explorer， Chrome， Firefox， Web 浏览器， 恶意网站
 search.product: eADQiWindows 10XVcnh
@@ -8,22 +8,22 @@ ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: ellevin
-author: levinec
+ms.author: dansimp
+author: dansimp
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 059f960bae8a5a00f678bb6f52ef217b4f8ed7d6
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 4c04ce3479ac995e59c3bdfa9a2bdcca87eca17b
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51185989"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51499921"
 ---
-# <a name="web-protection"></a>Web 保护
+# <a name="web-protection"></a>Web 保护功能
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -38,7 +38,7 @@ Microsoft Defender for Endpoint 中的 Web 保护是一项由 [Web 威胁](web-t
 
 ![所有 Web 保护卡的图像](images/web-protection.png)
 
-## <a name="web-threat-protection"></a>Web 威胁防护
+## <a name="web-threat-protection"></a>Web 威胁防护功能
 
 构成 Web 威胁防护的卡片是一段时间 **的 Web 威胁检测和** **Web 威胁摘要**。
 
@@ -60,5 +60,5 @@ Web 内容筛选包括：
 
 主题 | 说明
 :---|:---
-[Web 威胁防护](web-threat-protection.md) | 停止对钓鱼网站、恶意软件矢量、攻击网站、不受信任的或低信誉网站以及已阻止的网站的访问。
+[Web 威胁防护功能](web-threat-protection.md) | 停止对钓鱼网站、恶意软件矢量、攻击网站、不受信任的或低信誉网站以及已阻止的网站的访问。
 [Web 内容筛选](web-content-filtering.md) | 根据网站的内容类别跟踪和监管对网站的访问。

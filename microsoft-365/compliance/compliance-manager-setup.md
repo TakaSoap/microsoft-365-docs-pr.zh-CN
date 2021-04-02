@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 设置 Microsoft 合规性管理器用户权限和角色，并配置操作自动化测试。 管理用户历史记录并筛选仪表板视图。
-ms.openlocfilehash: 3b32ac5a82bbc726c5bf61859266e0561ca7f53c
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 4558f6b2a75f1635c7984b386f217efa148b22af
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51199215"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51499034"
 ---
 # <a name="get-started-with-compliance-manager"></a>合规性管理器入门
 
@@ -91,7 +91,7 @@ ms.locfileid: "51199215"
 | :------------- | :-------------: | :------------: |
 | **读取但不编辑数据**| 合规性管理器读者  | Azure AD 全局读者、安全读者 | 
 | **编辑数据**| 合规性管理器贡献 | 合规性管理员 | 
-| **编辑测试结果**| 合规性管理器评估 | 合规性管理员 | 
+| **编辑测试结果**| 合规性管理器评估方 | 合规性管理员 | 
 | **管理评估、模板和租户数据**| 合规性管理器管理 | 合规性管理员、合规性数据管理员、安全管理员  | 
 | **分配用户**| 全局管理员 | 全局管理员 | 
 

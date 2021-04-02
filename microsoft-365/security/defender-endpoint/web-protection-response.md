@@ -8,22 +8,22 @@ ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: ellevin
-author: levinec
+ms.author: dansimp
+author: dansimp
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: a9f3873db4f85cec3f5f1a400dcfb7930c6a4faa
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: b0e6bb0d71c14bf7742f8d6508fbb95b76b10a34
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51187537"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51498359"
 ---
-# <a name="respond-to-web-threats"></a>响应 Web 威胁
+# <a name="respond-to-web-threats"></a>响应 web 威胁
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -77,7 +77,7 @@ Microsoft Defender for Endpoint 针对恶意 [或](manage-alerts.md) 可疑 Web 
  *Chrome Web 浏览器的图像*
 
 ## <a name="related-topics"></a>相关主题
-- [Web 保护概述](web-protection-overview.md)
+- [Web 保护功能概述](web-protection-overview.md)
 - [Web 内容筛选](web-content-filtering.md)
-- [Web 威胁防护](web-threat-protection.md)
-- [监视 Web 安全](web-protection-monitoring.md)
+- [Web 威胁防护功能](web-threat-protection.md)
+- [监视 web 安全性](web-protection-monitoring.md)

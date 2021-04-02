@@ -10,8 +10,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: lomayor
-author: lomayor
+ms.author: maccruz
+author: schmurky
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 53ec8146080e88b913de1f58d16750ffa766a1b2
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: e0744a01fc599b66f371b01194579f4845ed19fb
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51055290"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51498734"
 ---
 # <a name="advanced-hunting-query-best-practices"></a>高级搜寻查询最佳做法
 
@@ -254,7 +254,7 @@ SHA256,ThreatTypes,DetectionMethods
 ### <a name="parse-strings"></a>分析字符串
 可以使用多种函数高效处理需要分析或转换的字符串。 
 
-| String | 函数 | 用法示例 |
+| 字符串 | 函数 | 用法示例 |
 |--|--|--|
 | 命令行 | [parse_command_line () ](/azure/data-explorer/kusto/query/parse-command-line) | 提取命令和所有参数。 | 
 | Paths | [parse_path () ](/azure/data-explorer/kusto/query/parsepathfunction) | 提取文件或文件夹路径的各个部分。 |

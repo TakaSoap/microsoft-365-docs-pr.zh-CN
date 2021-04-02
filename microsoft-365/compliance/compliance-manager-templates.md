@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解如何使用和管理模板在 Microsoft 合规性管理器中生成评估。 使用格式化的 Excel 文件创建和修改模板。
-ms.openlocfilehash: 2d95aa4172d80a81e8c635edb01ab56579513c53
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: ac5fe5f0a62c3b20021a9829499d8cec9339f72a
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50922782"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51499022"
 ---
 # <a name="working-with-assessment-templates-in-compliance-manager"></a>在合规性管理器中使用评估模板
 
@@ -38,17 +38,17 @@ ms.locfileid: "50922782"
 
 #### <a name="included-and-premium-templates"></a>包含和高级模板
 
-可供使用的模板基于组织的许可协议， ([许可详细信息) 。](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance) 模板分为两类：包含模板和高级模板。
+可供使用的模板基于组织的许可协议， ([许可详细信息) 。](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#compliance-manager) 模板分为两类：包含模板和高级模板。
 
 1. **包含的** 模板可作为组织的许可协议的一部分使用。
-2. **必须购买** 高级模板才能从它们创建评估。 购买后，你可根据需要从模板创建尽可能多的评估。
+2. **必须购买** 高级模板才能从它们创建评估。 购买后，你可根据需要从模板创建尽可能多的评估。 [了解如何购买高级模板](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#compliance-manager)。
 
 #### <a name="active-and-inactive-templates"></a>活动模板和无效模板
 
 模板将显示激活状态为活动状态或非活动状态：
 
 - 从该模板 **创建** 评估后，该模板将被视为活动模板。
-- 如果 **组织未将** 模板用作评估框架，则认为该模板处于非活动状态。
+- 如果您的 **组织未将** 模板用于评估，则认为该模板处于非活动状态。
 
 购买高级模板并基于该模板创建评估时，该模板的激活期为一年。 除非你取消续订，否则你的购买将自动续订。
 
@@ -60,7 +60,7 @@ ms.locfileid: "50922782"
 
 如果计数器显示 5/2，则表明你的组织超出其限制，需要购买 3 个使用中的高级模板。
 
-有关 [更多详细信息，请参阅合规性管理器](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance) 许可指南。
+有关 [更多详细信息，请参阅合规性管理器](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#compliance-manager) 许可指南。
 
 ## <a name="viewing-and-managing-templates-from-the-assessment-templates-page"></a>从评估模板页查看和管理模板
 

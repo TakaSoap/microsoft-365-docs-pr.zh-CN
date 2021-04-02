@@ -14,12 +14,12 @@ ms.author: ellevin
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 1deec767c6af777b23ab5a91c9e719f690e0c048
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: bf4fa88b3fbbf5d977d54a78c480129665049b23
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51165137"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51499407"
 ---
 # <a name="enable-attack-surface-reduction-rules"></a>启用攻击面减少规则
 
@@ -137,7 +137,7 @@ ASR 规则支持环境变量和通配符。 有关使用通配符的信息，请
 
 2. 在组 **策略管理编辑器中**，转到计算机 **配置，** 然后选择 **管理模板**。
 
-3. 将树展开到 **Windows 组件** Microsoft Defender  >  **防病毒**  >  **Windows Defender攻击防护**  >  **攻击面减少**。
+3. 将树展开到 **Windows 组件** Microsoft Defender  >  **防病毒** Microsoft Defender  >  **攻击防护**  >  **攻击面减少**。
 
 4. 选择 **配置攻击面减少规则，** 然后选择 **已启用。** 然后，您可以为选项部分的每个规则设置单个状态。
 
@@ -211,4 +211,4 @@ ASR 规则支持环境变量和通配符。 有关使用通配符的信息，请
 
 - [评估攻击面减少](evaluate-attack-surface-reduction.md)
 
-- [攻击面减少常见问题解答](attack-surface-reduction.md)
+- [关于减少攻击面的常见问题解答](attack-surface-reduction.md)

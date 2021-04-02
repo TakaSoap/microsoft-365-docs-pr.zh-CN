@@ -8,20 +8,20 @@ ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: ellevin
-author: levinec
+ms.author: dansimp
+author: dansimp
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 326e508fbf5a0e968e890f5727a6ae542de437c2
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 629e18c7387f6063254f3482f93a5e17023c7316
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51186001"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51499949"
 ---
 # <a name="monitor-web-browsing-security"></a>监视 Web 浏览安全性
 
@@ -68,7 +68,7 @@ Web 保护将恶意和不需要的网站分类为：
 
 ## <a name="related-topics"></a>相关主题
 
-- [Web 保护概述](web-protection-overview.md)
+- [Web 保护功能概述](web-protection-overview.md)
 - [Web 内容筛选](web-content-filtering.md)
-- [Web 威胁防护](web-threat-protection.md)
-- [响应 Web 威胁](web-protection-response.md)
+- [Web 威胁防护功能](web-threat-protection.md)
+- [响应 web 威胁](web-protection-response.md)
