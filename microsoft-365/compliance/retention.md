@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解有助于保留所需内容并删除不需要内容的保留策略和保留标签。
-ms.openlocfilehash: dbb294cdb865fb01f931e2e9c3bc4f6afb3f1e09
-ms.sourcegitcommit: d4604e333507c6f57d5bf327531a241b649052de
+ms.openlocfilehash: 42fe70d1360f45deb6f98f41c0ffec97de7e00a9
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51471031"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51498350"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>了解保留策略和保留标签
 
@@ -259,7 +259,7 @@ Office 365 安全与合规中心的保留标签概述信息与 **“信息管理
 |将项声明为记录| 否 | 是 |
 |从内容被标记或事件发生时开始计算保留期 | 否 | 是 |
 |处置评审 | 否| 是 |
-|最长 7 年的处置证明 | 否 |是，当项被声明为记录时|
+|最长 7 年的处置证明 | 否 |是，使用处置评审或项目被标记为记录时|
 |审核管理员活动| 是 | 是|
 |识别遵循保留设置的项： <br /> - 内容搜索 <br /> - 数据分类页、内容资源管理器、活动资源管理器 | <br /> 否 <br /> 否 | <br /> 是 <br /> 是|
 

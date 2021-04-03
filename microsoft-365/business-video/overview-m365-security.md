@@ -2,8 +2,8 @@
 title: Microsoft 365 商业高级版安全性概述
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: sharik
+author: skjerland
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 了解 Microsoft 365 商业版中包含的安全功能。
-ms.openlocfilehash: e21dc1a9f27f9b5896ace2f09ebb936b8189fdd3
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: 5274d54fb39cfbeee8ce9abd7fb738543aaacc53
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50422323"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51578731"
 ---
 # <a name="overview-of-security"></a>安全性概述
 
@@ -39,30 +39,30 @@ Microsoft 365 商业高级版提供威胁防护、数据保护和设备管理功
 
 ## <a name="threat-protection"></a>威胁防护
 
-Microsoft 365 商业高级版包括 Office 365 高级威胁防护 (ATP) ，这是一种基于云的电子邮件筛选服务，可保护你免受恶意软件、勒索软件、恶意链接等的攻击。 ATP 安全链接可保护您免受电子邮件或 Office 文档中的恶意 URL 的攻击。 ATP 安全附件可保护你免受附加到邮件或文档的恶意软件和病毒的攻击。
+Microsoft 365 商业高级版包括 Office 365 高级威胁防护 (ATP) ，这是一种基于云的电子邮件筛选服务，可保护你免受恶意软件、勒索软件、有害的链接等的攻击。 ATP 安全链接可保护你免受电子邮件或 Office 文档中的恶意 URL 的攻击。 ATP 安全附件可保护您免受附加到邮件或文档的恶意软件和病毒的侵害。
 
-多重身份验证 (MFA) 或两步验证，要求您提供第二种形式的身份验证（如验证代码）以确认您的身份，然后才能访问资源。  
+多重身份验证 (MFA) ，或两步验证，要求你提供第二种形式的身份验证（如验证码）以确认身份，然后才能访问资源。  
 
 Windows Defender为系统、文件和联机活动提供全面保护，防止病毒、恶意软件、间谍软件和其他威胁。
 
 ## <a name="data-protection"></a>数据保护
 
-Microsoft 365 商业高级版中的数据保护功能有助于确保重要数据保持安全，并且只有经过授权的人员才能访问这些数据。
+Microsoft 365 商业高级版中的数据保护功能有助于确保重要数据的安全，并且只有授权人员才能访问这些数据。
 
-您可以使用 DLP (数据丢失) 策略识别和管理敏感信息，如社会保险或信用卡号，以便不会错误地共享。 
+您可以使用 DLP (数据丢失) 识别和管理敏感信息，如社会保险或信用卡号，以便不会错误地共享。 
 
-Office 365 邮件加密结合了加密和访问权限功能，以帮助确保只有目标收件人才能查看邮件内容。 Office 365 邮件加密适用于 Outlook.com、Yahoo！和 Gmail 以及其他电子邮件服务。
+Office 365 邮件加密结合了加密和访问权限功能，以帮助确保只有预期收件人才能查看邮件内容。 Office 365 邮件加密适用于 Outlook.com、Yahoo！和 Gmail 以及其他电子邮件服务。
 
-Exchange Online Archiving是一种基于云的存档解决方案，与 Microsoft Exchange 或 Exchange Online 一起提供高级存档功能，包括保留和数据冗余。 可以使用保留策略来帮助组织减少与电子邮件和其他通信相关的义务。 如果你的公司需要保留与诉讼相关的通信，可以使用In-Place保留和诉讼保留来保留相关电子邮件。
+Exchange Online Archiving是一种基于云的存档解决方案，与 Microsoft Exchange 或 Exchange Online 一起提供高级存档功能，包括保留和数据冗余。 可以使用保留策略来帮助组织减少与电子邮件和其他通信相关的义务。 如果贵公司需要保留与诉讼相关的通信，可以使用In-Place保留和诉讼保留来保留相关电子邮件。
 
 ## <a name="device-management"></a>设备管理
 
 Microsoft 365 商业高级版高级设备管理功能使你可以监视和控制用户可以使用已注册设备执行哪些操作。 这些功能包括条件访问、移动设备管理 (MDM) 、BitLocker 和自动更新。
 
-可以使用条件访问策略来要求对某些用户和任务执行其他安全措施。 例如，你可以要求 MFA (多重) 或阻止不支持条件访问的客户端。
+可以使用条件访问策略对某些用户和任务要求额外的安全措施。 例如，你可以要求使用 MFA (多重) 或阻止不支持条件访问的客户端。
 
-借助 MDM，你可以帮助保护和管理用户的移动设备，如 iPhone、iPad、Android 和 Windows 手机。 你可以创建和管理设备安全策略、远程擦除设备以删除所有公司数据、将设备重置为出厂设置以及查看详细的设备报告。 
+借助 MDM，可帮助保护和管理用户的移动设备，如 iPhone、iPad、Android 和 Windows 手机。 你可以创建和管理设备安全策略、远程擦除设备以删除所有公司数据、将设备重置为出厂设置以及查看详细的设备报告。 
 
-你可以启用 BitLocker 加密以帮助在设备丢失或被盗时保护数据，并启用 Windows 攻击防护以针对勒索软件提供高级保护。
+你可以启用 BitLocker 加密以帮助在设备丢失或被盗时保护数据，并启用 Windows 攻击防护，以针对勒索软件提供高级保护。
 
-可以配置自动更新，以便将最新的安全功能和更新应用于所有用户设备。 
+你可以配置自动更新，以便将最新的安全功能和更新应用于所有用户设备。 

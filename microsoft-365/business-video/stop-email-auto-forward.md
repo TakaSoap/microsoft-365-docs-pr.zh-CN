@@ -2,8 +2,8 @@
 title: 停止自动转发电子邮件
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: kwekua
+author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 了解如何停止自动转发电子邮件。
-ms.openlocfilehash: ca4383a3f9d64a123955ebe005d0fad5819d3a5d
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: b6715cfdf8622521d977e0746cb9a340a8f70a5c
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50421795"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51578599"
 ---
 # <a name="stop-email-auto-forward"></a>停止电子邮件自动转发
 
@@ -36,14 +36,14 @@ ms.locfileid: "50421795"
 
 ## <a name="try-it"></a>试一试！
 
-1. 从 Microsoft 365 管理中心，选择 **Exchange、****邮件** 流，在规则选项卡上，选择加号并选择 **创建新规则**。
+1. 从 Microsoft 365 管理中心，选择 **"Exchange"** 和"**邮件** 流"，在"规则"选项卡上，选择加号并选择"**创建新规则"。**
 1. 选择“其他选项”。 命名新规则。
-1. 然后打开下拉以应用此 **规则，如果**，选择 **发件人，然后****是外部内部**。
-1. 选择 **"组织内部"，** 然后 **确定**。
-1. 选择 **"** 添加条件"，打开下拉列表，选择" **邮件属性**"，然后 **包含邮件类型**。
-1. 打开 **"选择邮件类型**"下拉列表，选择"**自动转发"，** 然后单击 **"确定"。**
-1. 打开 **"执行以下操作"** 下拉列表，选择 **"阻止** 邮件"，然后拒绝 **邮件并包含说明**。
-1. 输入消息文本进行说明，然后选择"**确定"。**
-1. 滚动到底部，然后选择"保存 **"。**
+1. 然后打开下拉以应用此规则 **if**，选择发件人 **，然后****是外部内部**。
+1. 选择 **"组织内部"，** 然后选择"确定 **"。**
+1. 选择 **"添加** 条件"，打开下拉列表，选择 **"邮件属性**"， **然后包含邮件类型**。
+1. 打开"**选择邮件类型**"下拉列表，选择"**自动转发"，** 然后选择"确定 **"。**
+1. 打开" **执行以下操作"** 下拉列表，选择" **阻止** 邮件"，然后拒绝 **邮件并包含说明**。
+1. 输入说明的消息文本，然后选择"确定 **"。**
+1. 滚动到底部，**然后选择保存。**
 
-    已创建规则，黑客将不再能够自动转发邮件。
+    已创建规则，黑客将无法再自动转发邮件。

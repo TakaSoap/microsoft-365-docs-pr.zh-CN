@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 365 高级审核提供了新的审核功能，可帮助组织进行法庭与合规调查。
-ms.openlocfilehash: 0a77a5c54ce328a3966a952fc8fef08553f42462
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 88308d173df79f55f38aba4b70d4b561667941bf
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50923482"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51574651"
 ---
 # <a name="advanced-audit-in-microsoft-365"></a>Microsoft 365 高级审核
 
@@ -153,7 +153,7 @@ Send 事件也是邮箱审核操作，当用户执行以下操作之一时将被
 此外，还可在 Exchange Online PowerShell 中运行[Search-UnifiedAuditLog -Operations SearchQueryInitiatedSharePoint](/powershell/module/exchange/search-unifiedauditlog)。
 
 > [!NOTE]
-> 必须在 Exchange Online PowerShell 中运行以下命令，审核日志搜索结果中才会包括 SearchQueryInitiatedExchange 事件（由指定的 E5 用户执行）： `Set-Mailbox <user identity> -AuditOwner @{Add="SearchQueryInitiated"}`。<br/><br/>
+> 必须在 Exchange Online PowerShell 中运行以下命令，审核日志搜索结果中才会包括 SearchQueryInitiatedSharePoint 事件（由指定的 E5 用户执行）： `Set-Mailbox <user identity> -AuditOwner @{Add="SearchQueryInitiated"}`。<br/><br/>
 在多地理环境中，必须在用户邮箱所在的林中运行 **Set-Mailbox** 命令。 若要确定用户的邮箱位置，请运行以下命令：`Get-Mailbox <user identity> | FL MailboxLocations`。
 如果 `Set-Mailbox -AuditOwner @{Add="SearchQueryInitiated"}` 命令之前在与用户邮箱所在林不同的林中运行，则必须从用户的邮箱中删除 SearchQueryInitiated 值（通过运行 `Set-Mailbox -AuditOwner @{Remove="SearchQueryInitiated"}`），然后将其添加到用户邮箱所在的林中的用户邮箱。
 

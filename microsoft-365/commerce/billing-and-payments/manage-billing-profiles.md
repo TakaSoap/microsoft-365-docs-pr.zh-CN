@@ -20,21 +20,14 @@ ms.custom:
 search.appverid:
 - MET150
 description: 了解计费配置文件如何支持发票。
-ms.openlocfilehash: 2f56b9a3edbbbe14927df64bed8b699a68826c9e
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 7f4c0aed1bccd0e5df5b09e15e6201933e937993
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50911862"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51576945"
 ---
 # <a name="understand-billing-profiles"></a>了解计费配置文件
-
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> 管理中心正在发生改变。 如果你的体验与此处提供的详细信息不匹配，请参阅[有关新版 Microsoft 365 管理中心](../../admin/microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet)。
-
-::: moniker-end
 
 对于从 Microsoft 购买产品和服务的商业客户，帐单配置文件允许您自定义发票中包含的项目以及如何支付发票费用。
 

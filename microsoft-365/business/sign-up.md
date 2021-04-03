@@ -2,8 +2,8 @@
 title: 注册 Microsoft 365 商业高级版
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: cmcatee
+author: cmcatee-MSFT
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -26,12 +26,12 @@ search.appverid:
 - BCS160
 - MET150
 description: 了解 Microsoft 365 商业高级版包括哪些内容，并获取有关注册 Microsoft 365 商业高级版的分步指南。
-ms.openlocfilehash: 54a8e92ccced24f446e73a96f75e4aa1531a95aa
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: d4aa1ae9ea48863434c960da69e41ffb2d3a0a89
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50912502"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51578099"
 ---
 # <a name="sign-up-for-microsoft-365-business-premium"></a>注册 Microsoft 365 商业高级版
 
@@ -42,7 +42,7 @@ ms.locfileid: "50912502"
 - **对于 Microsoft 合作伙伴**：如果你是合作伙伴，请参阅从 Microsoft 合作伙伴中心获取 [Microsoft 365 商业高级版](get-microsoft-365-business.md)。
 - **在 Microsoft Store 获取帮助**：前往 [Microsoft Store](https://go.microsoft.com/fwlink/?linkid=2109652)。 Microsoft 应用商店可以帮助你解决有关计划的问题，帮助你购买符合业务需求的计划，并帮助你完成设置。
 
-**需要不同的内容？** 可以执行下列操作：
+**需要不同的内容？** 可执行下列操作：
 - [将 Office 365 计划升级到 Microsoft 365 商业高级版](migrate-to-microsoft-365-business.md)。
 - [获取一个月的](https://go.microsoft.com/fwlink/p/?linkid=2102309) Microsoft 365 商业高级版免费试用版。
 - 如果需要功能较少的计划，请注册[Microsoft 365](https://go.microsoft.com/fwlink/p/?LinkID=510935)商业标准版。 有关每个业务计划包括哪些内容[，products.office.com。](https://go.microsoft.com/fwlink/?linkid=2109397)
@@ -62,7 +62,7 @@ ms.locfileid: "50912502"
 2. 下一页上，找到每月成本，然后向下滚动页面，详细了解 Microsoft 365 中包含的内容。 在"Microsoft 365 商业高级版"下，选择"**立即购买"。**
 3. 在" **感谢您选择 Microsoft 365 商业** 高级版"页上，输入你的信息以开始。
 4. 在 **步骤 1** 中，输入已使用的电子邮件地址。 这可以是你当前的工作电子邮件地址，或者是你想要 Microsoft 在设置期间用于与您通信的任何地址。 这也是我们会将帐单和续订相关信息发送给你的地址。 然后选择"**设置帐户"。**
-5. 在 **步骤 2** 中，输入你的姓名、公司电话号码、公司名称和位置。 你的国家/地区确定你从 Microsoft 获得的确切服务，并且完成此步骤后无法更改。 选择“下一步”。
+5. 在 **步骤 2** 中，输入你的姓名、公司电话号码、公司名称和位置。 你的国家/地区确定你从 Microsoft 获得的确切服务，并且完成此步骤后无法更改。 选择“**下一步**”。
     > [!NOTE]
     > 我们在管理中心显示你的公司名称;这是管理 Microsoft 365 用户、许可证等的地方。 我们还在 SharePoint 网站 URL () 该 URL。
 6. 在 **步骤 3** 中：

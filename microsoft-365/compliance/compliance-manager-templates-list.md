@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 合规性管理器提供用于构建符合国家、区域和行业法规、标准和法律的评估的模板。
-ms.openlocfilehash: b83ad63de34217ac7c469dc784ca85644f6a5e3d
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 8cdeb6da09a42ad0331690b843ab4f039a5c2bf6
+ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50922816"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51570564"
 ---
 # <a name="compliance-manager-templates-list"></a>合规性管理器模板列表
 
@@ -60,7 +60,7 @@ ms.locfileid: "50922816"
 - NIST 800-53 Rev.4
 
 > [!NOTE]
-> 对于美国政府社区版 (GCC) 中等和 GCC 高客户，除上面列出的模板外，还包括网络安全成熟度模型认证 (CMMC) 级别 1 到 5 级模板。
+> 对于美国政府社区 (GCC) 中等、GCC High 和国防部 (DoD) 客户：除上面列出的模板外，还包括网络安全成熟度模型认证 (CMMC) 级别 1 到 5 个模板。
 
 ## <a name="premium-templates"></a>高级模板
 

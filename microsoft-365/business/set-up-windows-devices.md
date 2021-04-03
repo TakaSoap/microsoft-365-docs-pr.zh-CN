@@ -2,8 +2,8 @@
 title: 为 Microsoft 365 商业高级版用户设置 Windows 设备
 f1.keywords:
 - CSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: sharik
+author: skjerland
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -27,24 +27,24 @@ search.appverid:
 - MET150
 ms.assetid: 2d7ff45e-0da0-4caa-89a9-48cabf41f193
 description: 了解如何设置运行适用于 Microsoft 365 商业高级版用户的 Windows 10 专业版 Windows 设备，从而实现集中管理和安全控制。
-ms.openlocfilehash: b1877d83f113a2ba23d0db374967e0afcd7fe067
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 9c9ffe5bd74d9e9877a87309757c481576ee89d2
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49928716"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51578119"
 ---
 # <a name="set-up-windows-devices-for-microsoft-365-business-premium-users"></a>为 Microsoft 365 商业高级版用户设置 Windows 设备
 
 ## <a name="prerequisites-for-setting-up-windows-devices-for-microsoft-365-business-premium-users"></a>为 Microsoft 365 商业高级版用户设置 Windows 设备的先决条件
 
-在你可以为 Microsoft 365 商业高级版用户设置 Windows 设备之前，请确保所有 Windows 设备都运行 Windows 10 专业版版本 1703 (创意者更新) 。 Windows 10 专业版是部署 Windows 10 商业版的先决条件，Windows 10 商业版是一组补充 Windows 10 专业版并启用 Microsoft 365 商业高级版集中管理和安全控件的云服务和设备管理功能。
+在你可以为 Microsoft 365 商业高级版用户设置 Windows 设备之前，请确保所有 Windows 设备都运行 Windows 10 专业版版本 1703 (创意者更新) 。 Windows 10 专业版是部署 Windows 10 商业版的先决条件，这是一组云服务和设备管理功能，可补充 Windows 10 专业版，并启用 Microsoft 365 商业高级版集中管理和安全控制。
   
 如果你拥有运行 Windows 7 专业版、Windows 8 专业版或 Windows 8.1 专业版的 Windows 设备，则你的 Microsoft 365 商业高级版订阅将授权你进行 Windows 10 升级。
   
 有关如何将 Windows 设备升级到 Windows 10 专业版创意者更新的详细信息，请按照本主题中的步骤操作：[将 Windows 设备升级到 Windows 专业版创意者更新](upgrade-to-windows-pro-creators-update.md)。
   
-请参阅 ["验证设备是否连接到 Azure AD](#verify-the-device-is-connected-to-azure-ad) 以验证你已进行升级，或确保升级有效。
+请参阅 [验证设备是否连接到 Azure AD](#verify-the-device-is-connected-to-azure-ad) 以验证是否具有升级，或确保升级有效。
 
 观看有关将 Windows 连接到 Microsoft 365 的简短视频。<br><br>
 
@@ -96,19 +96,19 @@ ms.locfileid: "49928716"
   
    ![Enter your work or school email on the Let's get you signed in page](../media/f70eb148-b1d2-4ba3-be38-7317eaf0321a.png)
   
-6. 在 **"确保这是您的组织"页上**，验证信息是否正确，然后选择"**加入"。**
+6. 在 **"确保这是您的组织"页上**，验证信息是否正确，然后选择"加入 **"。**
   
-   在 **"你已全部设置"上！** page，chosse **Done**.
+   在 **"你已全部设置"上！** page， chosse **Done**.
   
-   ![在"确保这是组织"屏幕上，选择"加入"](../media/c749c0a2-5191-4347-a451-c062682aa1fb.png)
+   ![在"确保这是您的组织"屏幕上，选择"加入"](../media/c749c0a2-5191-4347-a451-c062682aa1fb.png)
   
 如果已将文件上传到 OneDrive for Business，请将其同步回电脑。 如果使用第三方工具迁移配置文件和文件，则还要将其同步到新配置文件。
   
 ## <a name="verify-the-device-is-connected-to-azure-ad"></a>验证设备是否连接到 Azure AD
 
-若要验证同步状态，请在"设置"中的 **"访问** 工作或学校"页上，选择"连接到 _ "区域以公开按钮"信息"和"断开连接 \<organization name\> **"。**  选择 **"** 信息"获取同步状态。 
+若要验证同步状态，请在"设置"中的"**访问** 工作或学校"页面上，选择"连接到 _ _"区域以公开按钮"信息"和"断开连接 \<organization name\> **"。**  选择 **"** 信息"获取同步状态。 
   
-在 **"同步状态"** 页上，选择 **"同步** "，获取电脑上的最新移动设备管理策略。
+在" **同步状态"** 页面上，选择 **"同步** "，获取电脑上的最新移动设备管理策略。
   
 若要开始使用 Microsoft 365 商业高级版帐户，请转到 **Windows"** 开始"按钮，右键单击当前帐户图片，然后 **切换帐户**。 使用组织电子邮件和密码进行登录。
   
@@ -126,7 +126,7 @@ ms.locfileid: "49928716"
   
 ## <a name="next-steps"></a>后续步骤
 
-若要设置移动设备，请参阅"为[Microsoft 365](set-up-mobile-devices.md)商业高级版用户设置移动设备"，若要设置设备保护或应用保护策略，请参阅["管理 Microsoft 365 商业版"。](manage.md)
+若要设置移动设备，请参阅为 Microsoft [365](set-up-mobile-devices.md)商业高级版用户设置移动设备，若要设置设备保护或应用保护策略，请参阅 [管理 Microsoft 365 商业版](manage.md)。
   
 ## <a name="for-more-on-setting-up-and-using-microsoft-365-business-premium"></a>有关设置和使用 Microsoft 365 商业高级版更多信息
 

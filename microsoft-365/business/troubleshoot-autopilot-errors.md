@@ -2,8 +2,8 @@
 title: Autopilot 设备错误疑难解答
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -27,25 +27,25 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 1f468690-530c-47ea-918f-fede24607c53
-description: 了解如何解决在 Microsoft 365 商业高级版中使用 AutoPilot 设备文件时可能会看到的错误。
-ms.openlocfilehash: bec5126696ee322db42e4b7c5cd8e0df485ab2c9
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+description: 了解如何解决在 Microsoft 365 商业高级版中处理 AutoPilot 设备文件时可能看到的错误。
+ms.openlocfilehash: 1078ab74b07952e4bb565555a081b98ecce9db5c
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44403402"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51578079"
 ---
 # <a name="troubleshoot-autopilot-device-errors"></a>Autopilot 设备错误疑难解答
 
 ## <a name="device-file-error-messages"></a>设备文件错误消息
 
-以下是在使用 Microsoft 365 商业高级版中的 AutoPilot 设备文件时可能会看到的一些错误的相关信息。 
+以下是使用 Microsoft 365 商业高级版中的 AutoPilot 设备文件时可能看到的一些错误的信息。 
   
-|**错误代码**|**修复以试用**|
+|**错误代码**|**修复以尝试**|
 |:-----|:-----|
-|请求正文无效  <br/> |此错误应该很少发生，如果您看到此错误，请再次尝试该操作。  <br/> |
-|设备的硬件哈希值不正确。  <br/> |如果看到此错误，则表示你在 CSV 文件中为一个设备的硬件哈希提供的值不正确。 首先，请验证是否正确键入了值。 如果你认为该值是正确的，但仍会发生此错误，请向你的硬件供应商寻求帮助。  <br/> |
-|分配给另一个租户的设备  <br/> |如果看到此错误，则表示你在 CSV 文件中提供的值是一个或多个设备的序列号或产品密钥不正确。 首先，请验证是否正确键入了值。 如果你认为该值是正确的，但仍会发生此错误，请向你的硬件供应商寻求帮助。  <br/> |
-|CSV 文件包含无效的序列号或产品密钥  <br/> |如果看到此错误，则表示您尝试注册的设备已由另一个组织注册。 若要修复此错误，请向硬件供应商寻求帮助。  <br/> |
-|此设备不支持通过使用 AutoPilot 进行安装  <br/> | 此错误表示设备不符合 AutoPilot 部署要求。 设备需要满足以下要求：  <br/>  Windows 10 版本 1703 或更高版本。  <br/>  尚未通过 Windows 开箱即用体验的新设备。  <br/> |
-|找不到设备  <br/> |此错误表示 CSV 文件中的一个或多个设备未注册到您的组织。 若要解决此问题，请向硬件供应商寻求帮助。  <br/> |
+|无效的请求正文  <br/> |此错误应该很少发生，如果看到此错误，请再次尝试该操作。  <br/> |
+|设备的硬件哈希值不正确。  <br/> |如果看到此错误，则意味着 CSV 文件中为一台设备的硬件哈希提供的值不正确。 首先，验证键入的值是否正确。 如果您认为值正确，但此错误仍在发生，请咨询您的硬件供应商寻求帮助。  <br/> |
+|分配给另一个租户的设备  <br/> |如果看到此错误，则意味着你在 CSV 文件中为一个或多个设备的序列号或产品密钥提供的值不正确。 首先，验证键入的值是否正确。 如果您认为值正确，但此错误仍在发生，请咨询您的硬件供应商寻求帮助。  <br/> |
+|CSV 文件包含无效的序列号或产品密钥  <br/> |如果看到此错误，则意味着你尝试注册的设备已由另一个组织注册。 若要修复此错误，请向硬件供应商寻求帮助。  <br/> |
+|此设备不支持使用 AutoPilot 进行设置  <br/> | 此错误意味着设备不符合 AutoPilot 部署要求。 设备需要满足以下要求：  <br/>  Windows 10 版本 1703 或更高版本。  <br/>  尚未通过 Windows 全新体验的新设备。  <br/> |
+|未找到设备  <br/> |此错误意味着 CSV 文件的一个或多个设备未注册到组织。 若要解决此问题，请向硬件供应商寻求帮助。  <br/> |

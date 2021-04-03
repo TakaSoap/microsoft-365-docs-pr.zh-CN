@@ -14,26 +14,18 @@ ms.collection:
 ms.custom: AdminSurgePortfolio
 search.appverid: MET150
 description: 了解如何在 Microsoft 365 管理中心激活和管理第三方应用。
-ms.openlocfilehash: f560b23871fc6d6ecb319a5704453f2400cb9982
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 974ce99b55dcb078286d7f6dba35166e51ce62a7
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50911406"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51576909"
 ---
 # <a name="manage-third-party-app-subscriptions-for-your-organization"></a>管理组织的第三方应用订阅
 
 可以在新的 Microsoft 365 管理中心中管理第三方应用的许可证和帐单。 更新的功能包括增强订阅管理、改进了对计费信息的访问，以及提高了管理帐单的灵活性。 订阅管理基于 Microsoft 更新的商务平台。 这适用于客户直接从第三方提供商购买的软件即服务应用。
 
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> 管理中心正在发生改变。 如果你的体验与此处提供的详细信息不匹配，请参阅[有关新版 Microsoft 365 管理中心](../admin/microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet)。
-
-::: moniker-end
-
 可以在启用预览模式后，在 Microsoft 365 管理中心中管理第三方应用的许可证和帐单。 更新的功能包括增强订阅管理、改进了对计费信息的访问，以及提高了管理帐单的灵活性。 订阅管理基于 Microsoft 更新的商务平台。 这适用于客户直接购买或第三方提供商购买的软件即服务应用。
-
 
 ## <a name="how-to-get-software-as-a-service-apps"></a>如何获取软件型服务应用
 
@@ -107,7 +99,7 @@ ms.locfileid: "50911406"
 
 ## <a name="manage-payment-methods"></a>管理支付方式
 
-每个软件即服务应用都分配有一个计费配置文件。 通过计费配置文件，你可以自定义发票中包含的产品以及如何支付发票费用。 它们包括：
+每个软件即服务应用都分配有一个计费配置文件。 通过计费配置文件，你可以自定义发票中包含的产品以及如何支付发票费用。 包括：
 
 - **付款方式** - 信用卡或支票/支票转移
 - **联系人信息** – 帐单邮寄地址和联系人姓名

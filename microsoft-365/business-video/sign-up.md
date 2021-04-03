@@ -2,8 +2,8 @@
 title: 注册 Microsoft 365 商业高级版订阅
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: cmcatee
+author: cmcatee-MSFT
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 了解如何注册 Microsoft 365 商业高级版。
-ms.openlocfilehash: 5faf34aa1cf5afb86ee935766bd91b4c3fc92d77
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: dcc6fd42b2aab073e027135cb5e939867b2bdc9d
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50421817"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51578611"
 ---
 # <a name="sign-up-for-microsoft-365-business-premium-subscription"></a>注册 Microsoft 365 商业高级版订阅
 
@@ -33,16 +33,16 @@ ms.locfileid: "50421817"
 
 ## <a name="try-it"></a>试一试！
 
-按照以下步骤注册以前称为 Microsoft 365 商业 (Microsoft 365 商业高级版) ：
+请按照以下步骤注册以前称为 Microsoft 365 商业 (Microsoft 365 商业高级版) ：
 
-1. 若要注册 Microsoft 365 商业高级版，请在线搜索并选择它。
-2. 选择  **"企业"，** 然后  **立即购买**。
-3. 输入你的个人电子邮件地址，选择"  **下** 一步"，  **然后设置帐户**。
-4. 输入你的姓名、电话号码和公司名称。 如果你&#39;Microsoft 合作伙伴的帮助，请选中我希望 Microsoft 共享  **我的信息旁边的框**。 选择 **"下一步"。**
-5. 若要验证电话号码，请选择 **"发送验证码"。** 输入你在手机上收到的代码，然后选择"验证 **"。**
-6. 如果已有域，请选择"现在获取  **Microsoft** 域"，然后输入你的公司名称。 这将成为你的临时电子邮件地址。 它还将成为永久 SharePoint 和 OneDrive URL 的一部分。 选择 **"检查可用性**"，然后选择"下 **一步"。**
-7. 输入用户名、密码、确认密码，然后选择"  **注册**  "创建帐户。
-8. 输入用户数，选择计费计划，然后选择"下一 **步"。**
-9.  输入公司&#39;地址，然后输入下  **一步**。
+1. 若要注册 Microsoft 365 商业高级版，请在线搜索它，然后选择它。
+2. 选择 **"对于企业**"，然后选择"**立即购买"。**
+3. 输入你的个人电子邮件地址，**选择"下** 一步"，然后选择 **"设置帐户"。**
+4. 输入你的姓名、电话号码和公司名称。 如果你&#39;Microsoft 合作伙伴的帮助，请选中我希望 Microsoft 共享我  **的信息旁边的框**。 选择"**下一步"。**
+5. 若要验证电话号码，请选择"**发送验证码"。** 输入在电话上收到的代码，然后选择"验证 **"。**
+6. 如果已有域，请选择"现在获取 Microsoft 域  **"，** 然后输入公司名称。 这将成为你的临时电子邮件地址。 它还将成为永久 SharePoint 和 OneDrive URL 的一部分。 选择 **"检查可用性"，** 然后选择"下一 **步"。**
+7. 输入你的用户名、密码、确认密码，然后选择注册以创建你的帐户。
+8. 输入用户数，选择计费计划，然后选择下一  **步**。
+9.  输入你的公司&#39;地址，然后输入下一  **步**。
 10. 输入你的信用卡信息，然后  **下订单**。 片刻后，将创建你的帐户。
-11. 此时，可以选择"继续设置帐户"，也可以登录 Microsoft 365 管理中心，稍后完成设置。
+11. 此时，可以选择"继续设置  **帐户"，** 也可以登录 Microsoft 365 管理中心，稍后完成设置。

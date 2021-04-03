@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: ''
 description: 了解如何保留保管人及其数据源，以保留高级电子数据展示案例的相关内容。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 07edcb2707d1dffecfa5a2aac6c4340ac6cbe53f
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 70390a933de788a6b1190e42b5087b85a175b9a2
+ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50926370"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51570586"
 ---
 # <a name="manage-holds-in-advanced-ediscovery"></a>在高级电子数据展示中管理保留项
 
@@ -66,7 +66,7 @@ ms.locfileid: "50926370"
  
 6.  (可选) **在"说明** "框中，添加保留的说明。
   
-7. 单击“**下一步**”。
+7. 单击"下一步"。
   
 8. 选择要保留的内容位置。 可以将邮箱、网站和公用文件夹置于保留状态。
 
@@ -76,8 +76,6 @@ ms.locfileid: "50926370"
       > 单击" **选择用户、组或** 团队"指定要置于保留中的邮箱时，显示的邮箱选取器为空。 这种设计旨在增强性能。 若要向此列表添加人员，在 (键入至少 3 个字符) 键入一个名称。
 
    1. **SharePoint 网站**- 单击 **"选择网站**"，然后单击"再次选择网站"以指定要保留的 SharePoint 和 OneDrive for Business 网站。 键入要保留的每个网站的 URL。 还可以为 Microsoft 365 组或 Microsoft 团队添加 SharePoint 网站的 URL。 单击 **"选择**"，然后单击"完成 **"。**
-    
-      有关将 Microsoft 365 组和 Microsoft Teams 置于保留状态的技巧，请参阅 **常见问题** 部分。
 
       > [!NOTE]
       > 用户的 OneDrive 帐户的 URL 包括其用户主体名称 (UPN)  (例如 `https://alpinehouse-my.sharepoint.com/personal/sarad_alpinehouse_onmicrosoft_com` ，) 。 在极少数情况下，更改了某个人的 UPN，其 OneDrive URL 也将更改以合并新的 UPN。 如果用户的 OneDrive 帐户属于非安全保留，并且其 UPN 已更改，则需要更新保留并指向新的 OneDrive URL。 有关详细信息，请参阅 [UPN 更改如何影响 OneDrive URL](/onedrive/upn-changes)。
@@ -118,7 +116,7 @@ ms.locfileid: "50926370"
 
 ## <a name="place-a-hold-on-microsoft-teams-and-office-365-groups"></a>将 Microsoft Teams 和 Office 365 组保留
 
-Microsoft Teams 基于 Office 365 组构建。 因此，将它们置于高级电子数据展示中的保留状态非常相似。 
+Microsoft Teams 基于 Office 365 组构建。 因此，将它们置于高级电子数据展示中的保留状态非常相似。
 
 - **如何将其他 Microsoft 365 组或 Microsoft Teams 网站映射到保管人？那么将非安全保留置于 Microsoft 365 组和 Microsoft Teams 中呢？** Microsoft Teams 基于 Microsoft 365 组构建。 因此，在电子数据展示案例中将其置于保留状态非常相似。 将 Microsoft 365 组和 Microsoft Teams 置于保留状态时，请记住以下事项。
   - 若要将 Microsoft 365 组和 Microsoft Teams 中的内容置于保留状态，必须指定与组或团队关联的邮箱和 SharePoint 网站。

@@ -1,6 +1,6 @@
 ---
 title: 为 Microsoft 托管桌面准备映射的驱动器
-description: 确保执行的重要步骤
+description: 确保用户可以访问映射驱动器上的数据的重要步骤
 keywords: Microsoft 托管桌面, Microsoft 365, 服务, 文档
 ms.service: m365-md
 author: jaimeo
@@ -9,12 +9,13 @@ ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: cd45d6155fc0e01f6a285f6182aa051281d160e0
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+audience: Admin
+ms.openlocfilehash: f770f5083fe9193660b03e7971b09a127f2dae16
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50922904"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51574555"
 ---
 #  <a name="prepare-mapped-drives-for-microsoft-managed-desktop"></a>为 Microsoft 托管桌面准备映射的驱动器
 
@@ -52,4 +53,16 @@ ms.locfileid: "50922904"
 2. 提交标题为"映射驱动器部署"的支持请求，并提供所有必需的文件共享详细信息。  
 3. 当请求完成时，Microsoft 托管桌面 IT 运营部门将通过使用支持请求更新提供建议。 最初，此配置将仅部署到"测试"部署组的设备。  
 4. 您必须测试并确认 Microsoft 托管桌面 IT 操作部署的配置是否按预期工作。 使用相同支持请求的详细信息中的"讨论"选项卡进行回复，以在测试完成后通知 Microsoft 托管桌面 IT 操作。  
-5. 然后，Microsoft 托管桌面 IT 运营团队将配置部署到其他部署组。
+5. 然后，Microsoft 托管桌面 IT 运营团队将配置部署到其他部署组。 
+
+## <a name="steps-to-get-ready"></a>准备步骤
+
+1. 查看 [Microsoft 托管桌面的先决条件](prerequisites.md)。
+2. [使用准备情况评估工具](readiness-assessment-tool.md)。
+3. [来宾帐户的先决条件](guest-accounts.md)
+4. [Microsoft 托管桌面的网络配置](network.md)
+5. [为 Microsoft 托管桌面准备证书和网络配置文件](certs-wifi-lan.md)
+6. [为 Microsoft 托管桌面准备本地资源访问权限](authentication.md)
+7. [Microsoft 托管桌面中的应用](apps.md)
+8. [Prepare mapped drives for Microsoft Managed Desktop](mapped-drives.md) (本文) 
+9. [为 Microsoft 托管桌面准备打印资源](printing.md)

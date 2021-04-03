@@ -2,8 +2,8 @@
 title: 为 Microsoft 365 商业版用户设置移动设备
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: sharik
+author: skjerland
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -26,16 +26,16 @@ search.appverid:
 - MET150
 ms.assetid: d868561b-d340-4c04-a973-e2575d7f09bc
 description: 在 iPhone 或 Android 手机上安装 Office，Office 应用中的工作文件将受 Microsoft 365 商业版保护。
-ms.openlocfilehash: ef18fcce851b8fa1573fd5134bd25fb7d4a3d8f9
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: fefec17344d199ced230907fbaa85d98198cfb94
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49928736"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51578159"
 ---
 # <a name="set-up-mobile-devices-for-microsoft-365-for-business-users"></a>为 Microsoft 365 商业版用户设置移动设备
 
-按照标签中的说明在 iPhone 或 Android 手机上安装 Office。 按照这些步骤操作后，在 Office 应用中创建的工作文件将受 Microsoft 365 商业版保护。
+按照标签中的说明在 iPhone 或 Android 手机上安装 Office。 执行这些步骤后，在 Office 应用中创建的工作文件将受 Microsoft 365 商业版保护。
 
 此示例适用于 Outlook，但也适用于要安装的任何其他 Office 应用程序。
   
@@ -43,7 +43,7 @@ ms.locfileid: "49928736"
 
 ## <a name="iphone"></a>[iPhone](#tab/iPhone)
   
-观看简短视频，了解如何使用 Microsoft 365 商业版在 iOS 设备上设置 Office 应用。<br><br>
+观看有关如何使用 Microsoft 365 商业版在 iOS 设备上设置 Office 应用的简短视频。<br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWee2n] 
 
@@ -61,15 +61,15 @@ ms.locfileid: "49928736"
   
 ![Screenshot of Outlook with Get Started button](../media/005bedec-ae50-4d75-b3bb-e7cef9e2561c.png)
   
-在"添加电子邮件帐户"屏幕上的"添加帐户"上输入你的工作电子邮件地址，然后输入 \> 你的 Microsoft 365 商业版凭据 \> **登录**。
+在"添加电子邮件帐户"屏幕上的"添加帐户"上输入你的工作电子邮件地址，然后输入 \> 你的 Microsoft 365 商业版 \> **凭据"登录"。**
   
 ![Sign in to your work account](../media/3cef1fb5-7bec-4d3d-8542-872b731ce19f.png)
   
-如果你的组织正在保护应用中的文件，你将看到一个对话框，指出你的组织现在正在保护应用中的数据，你需要重新启动应用才能继续使用它。 点击" **确定**"并关闭 Outlook。 
+如果你的组织正在保护应用中的文件，你将看到一个对话框，指出你的组织现在正在保护应用中的数据，你需要重新启动该应用才能继续使用它。 点击" **确定**"并关闭 Outlook。 
   
-![显示你的组织现在正在保护 Outlook 应用的屏幕截图](../media/fb4c1c84-b1e9-42e1-8070-c13dcf79fb09.png)
+![显示组织现在正在保护 Outlook 应用的屏幕截图](../media/fb4c1c84-b1e9-42e1-8070-c13dcf79fb09.png)
   
-在 iPhone 上找到 Outlook，并重启。 当系统提示时，输入 PIN 并进行验证。 现在即可开始使用 iPhone 上的 Outlook。
+在 iPhone 上找到 Outlook，并重启。 系统提示时，输入 PIN 并进行验证。 现在即可开始使用 iPhone 上的 Outlook。
   
 ![Set a PIN to access your organization's data](../media/64f2630b-3164-47a4-9dd6-ca0c29ed5fb3.png)
   
@@ -81,15 +81,15 @@ ms.locfileid: "49928736"
 
 如果你发现此视频有帮助，请查看[适用于小型企业和 Microsoft 365 新用户的完整培训系列](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)。
 
-若要开始在 Android 手机上进行设置，请转到 Play 应用商店。
+若要在 Android 手机上开始设置，请转到 Play Store。
   
 ![On the Android home screen, tap Play Store](../media/93df88e7-c778-40e1-b35e-868ca6e97f6c.png)
   
-在 Google Play 搜索框中输入 Microsoft Outlook，然后点击"**安装"。** 安装完 Outlook 后，点击"打开 **"。**
+在 Google Play 搜索框中输入 Microsoft Outlook， **然后点击安装**。 安装完 Outlook 后，点击"打开 **"。**
   
 ![Tap Open to open Outlook app](../media/8b4c5937-8875-4b5a-a5b6-b8c6c9cd6240.png)
   
-在 Outlook 应用中，**点击"** 入门"，然后添加 Microsoft 365 商业版电子邮件帐户"继续"，然后使用 \> 组织凭据登录。
+在 Outlook 应用中，**点击"** 入门"，然后添加 Microsoft 365 商业版电子邮件帐户"继续"， \> 然后使用组织凭据登录。
   
 ![Sign in to your organizational account in Outlook](../media/18f67c66-4bab-4b99-94bd-080839312e29.png)
   
@@ -97,7 +97,7 @@ ms.locfileid: "49928736"
   
 ![Tap on Go to store to get Intune Company Portal app](../media/a702d712-5622-45dd-a511-b1adaee63071.png)
   
-在 Play 商店中，安装 Intune 公司门户。
+在 Play Store 中，安装 Intune 公司门户。
   
 ![Screenshot that shows the install button for Intune Company Portal in Google Play Store](../media/5e0408f2-3f37-44dd-80ed-13ca2ac6df0c.png)
   

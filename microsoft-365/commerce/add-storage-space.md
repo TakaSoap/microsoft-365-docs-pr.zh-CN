@@ -23,30 +23,23 @@ search.appverid:
 - MET150
 description: 了解如何在 Microsoft 365 订阅中添加和减少文件存储。 通过额外的文件存储，可以在 SharePoint Online 和 OneDrive 中存储更多内容。
 ms.date: ''
-ms.openlocfilehash: b170924f40d517cb6bbdf8635ad3e163eadc8643
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: d65677b9c078026343410b53acd48932258cb4b1
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50911922"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51576957"
 ---
 # <a name="add-storage-space-for-your-subscription"></a>为订阅添加存储空间
-
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> 管理中心正在发生改变。 如果你的体验与此处提供的详细信息不匹配，请参阅[有关新版 Microsoft 365 管理中心](../admin/microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet)。
-
-::: moniker-end
 
 如果你的 SharePoint Online 网站集存储空间即将用完，并且你的计划符合条件，则可以为你的订阅增加存储空间。 如果你未在可用加载项列表中看到 **Office 365** 额外文件存储，这意味着你的计划不符合条件。 有关详细信息，请参阅我的 [计划是否符合条件？](#is-my-plan-eligible-for-office-365-extra-file-storage)
 
 > [!NOTE]
 > 如果你通过批量许可或云解决方案提供商购买了订阅，则不能直接从 Microsoft 为组织购买 **Office 365** 额外文件存储。 请联系你的代表或合作伙伴寻求帮助。
 
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>准备工作
 
-您必须是全局管理员或 SharePoint 管理员才能执行本文中的任务。 有关详细信息，请参阅 [关于管理员角色](../admin/add-users/about-admin-roles.md)。
+您必须是全局管理员或 SharePoint 管理员才能执行本文中的任务。 有关详细信息，请参阅[关于管理员角色](../admin/add-users/about-admin-roles.md)。
 
 ## <a name="view-available-storage"></a>查看可用存储
 
@@ -111,5 +104,5 @@ Office 365 额外文件存储空间可以用于以下订阅：
 
 ## <a name="related-content"></a>相关内容
 
-[管理网站存储限制](ttps://docs.microsoft.com/sharepoint/manage-site-collection-storage-limits) (文章) \
+[管理网站存储限制](https://docs.microsoft.com/sharepoint/manage-site-collection-storage-limits) (文章) \
 [设置 OneDrive 用户的默认](/onedrive/set-default-storage-space) 存储空间 (文章) 

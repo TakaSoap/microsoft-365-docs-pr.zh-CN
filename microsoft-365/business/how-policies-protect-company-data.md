@@ -1,9 +1,9 @@
 ---
-title: Microsoft 365 for business 中的策略保护公司数据的方式
+title: Microsoft 365 商业版中的策略如何保护公司数据
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: sirkkuw
+ms.author: sharik
+author: skjerland
 manager: scotv
 audience: Admin
 ms.topic: conceptual
@@ -26,21 +26,21 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 665485be-2389-4f1d-9ef8-dbef19c6acdf
-description: 若要保护用户个人设备上的公司数据，请使用面向特定设备和安全组的策略。
-ms.openlocfilehash: 18bf29d82b8020d31fec681b2114af86f52cad9c
-ms.sourcegitcommit: 2d664a95b9875f0775f0da44aca73b16a816e1c3
+description: 若要保护用户的个人设备上的公司数据，请使用面向特定设备和安全组的策略。
+ms.openlocfilehash: 5c6a4b85b080c6c1afaf6ac5bec046f2a539ee20
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/01/2020
-ms.locfileid: "44471151"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51578419"
 ---
-# <a name="how-policies-in-microsoft-365-for-business-protect-company-data"></a>Microsoft 365 for business 中的策略保护公司数据的方式
+# <a name="how-policies-in-microsoft-365-for-business-protect-company-data"></a>Microsoft 365 商业版中的策略如何保护公司数据
 
 本文适用于 Microsoft 365 商业高级版。
 
 所创建的策略特定于设备类型，可应用于特定用户组。这意味着可以创建两个策略，一个应用于管理层，另一个应用于所有其他人。
   
-对于 Android 和 iOS 设备，可以添加或编辑用于保护 Office 应用和由 Office 应用使用的工作文件的应用程序策略。 我们还能够控制 Windows 10 设备，因此应用程序策略可以包含更多设置，如网络和云位置的加密和保护。 此外，还可创建 Windows 10 设备的设备策略，用于强制实施病毒保护和自动更新等设置。 建议您在安装过程中保留所创建的策略，但如果您想要微调策略或添加更多，请参阅以下文章：
+对于 Android 和 iOS 设备，可以添加或编辑用于保护 Office 应用和由 Office 应用使用的工作文件的应用程序策略。 我们可以再多控制一点 Windows 10 设备，因此应用程序策略可以包括更多设置，如对网络和云位置的加密和保护。 此外，还可创建 Windows 10 设备的设备策略，用于强制实施病毒保护和自动更新等设置。 我们建议你坚持使用在设置期间创建的策略，但是如果你想要微调策略或添加更多策略，请参阅以下文章：
   
 [设置 Android 或 iOS 设备的应用配置](app-protection-settings-for-android-and-ios.md)
   

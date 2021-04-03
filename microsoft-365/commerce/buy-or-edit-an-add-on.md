@@ -19,21 +19,14 @@ ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
 - Commerce
-ms.openlocfilehash: ea9cdb6edf3aaac1575b1d2b14790bd28876ee26
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: b470fb727ed55ba066cd0371e2e707c72b50ae99
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50911635"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51576921"
 ---
 # <a name="buy-or-manage-add-ons"></a>购买或管理加载项
-
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> 管理中心正在发生改变。 如果你的体验与此处提供的详细信息不匹配，请参阅[有关新版 Microsoft 365 管理中心](../admin/microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet)。
-
-::: moniker-end
 
 许多 Microsoft 365 商业版计划都有可购买订阅的加载项。 加载项提供了更多功能来增强你的订阅体验。
 

@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解如何使用 Microsoft 合规性配置分析器快速启动并运行 Microsoft 合规性管理器。
-ms.openlocfilehash: a77f38dcc0c0215e539c868e47135f5d7194f4b6
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 2b91ac274d7270f5be9530742cf711a3918b287d
+ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50906034"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51570371"
 ---
 # <a name="microsoft-compliance-configuration-analyzer-for-compliance-manager-preview"></a>适用于合规性管理器的 Microsoft 合规性配置 (预览版) 
 
@@ -33,7 +33,7 @@ MCCA 可帮助你快速查看合规性管理程序中的哪些改进操作适用
 
 另一个了解 MCCA 的资源是访问 [GitHub 上的自述文件说明](https://github.com/OfficeDev/MCCA#overview)。 此页面提供有关必备组件的详细信息，并提供完整安装说明。 无需 GitHub 帐户访问此页面。
 
-可用性：MCCA 适用于具有 Office 365 和 Microsoft 365 许可证以及美国政府社区 (GCC) 中等和 GCC 高客户的所有组织，并计划将服务扩展到 DOD 客户。
+可用性：MCCA 适用于具有 Office 365 和 Microsoft 365 许可证以及美国政府社区 (GCC) 中等、GCC High 和国防部 (DoD) 客户的所有组织。
 
 ## <a name="install-mcca-and-run-a-report"></a>安装 MCCA 并运行报告
 
@@ -113,7 +113,7 @@ C：\Users \<username> \AppData\Local\Microsoft\MCCA。
   | 10   | 南美洲 |
   | 11 | 南非 |
   | 12  | Switzerland（瑞士） |
-  | 13  | 阿拉伯联合酋长国 |
+  | 13 | 阿拉伯联合酋长国 |
   | 14  | 英国 |
 
 

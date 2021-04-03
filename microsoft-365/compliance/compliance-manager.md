@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 合规性管理器可帮助组织简化和自动化风险评估，并建议采取建议操作来帮助应对风险。
-ms.openlocfilehash: 80d955f3d321ef8f82fe3654e4d7d08572ec72cc
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: f938bb6b82ee7e24dd58b66597f0af7a3a00a9a2
+ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50922726"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51570449"
 ---
 # <a name="microsoft-compliance-manager"></a>Microsoft 合规性管理器
 
@@ -30,7 +30,7 @@ ms.locfileid: "50922726"
 
 ## <a name="whats-new-the-ga-release-of-compliance-manager"></a>新增功能：合规性管理器的 GA 版本
 
-合规性管理器现已在 GA (中) ，作为 [Microsoft 365](microsoft-365-compliance-center.md)合规中心内的端到端合规性管理解决方案。 在此版本中，合规性管理器完成从以前位置到 Microsoft 服务信任门户的转换。 合规性管理器现在还可用于美国政府社区 (GCC) 中等和 GCC 高客户。
+合规性管理器现已在 GA (中) ，作为 [Microsoft 365](microsoft-365-compliance-center.md)合规中心内的端到端合规性管理解决方案。 在此版本中，合规性管理器完成从以前位置到 Microsoft 服务信任门户的转换。 合规性管理器还可用于美国政府社区 (GCC) 中等、GCC High 和国防部 (DoD) 客户。
 
 从合规性分数的公共预览版开始，它已发展为具有增强的合规性管理功能和更好的易用性的集中式工具。  GA 版本提供更大的预建评估集合，可帮助你扩展合规性活动。
 
@@ -67,7 +67,7 @@ ms.locfileid: "50922726"
 
 合规性管理器根据 Microsoft 365 数据保护基线提供初始分数。 此基线是一组控制措施，其中包括数据保护和一般数据管理的关键法规和标准。
 
-##### <a name="learn-more"></a>了解更多
+##### <a name="learn-more"></a>了解详细信息
 
 [了解如何计算合规性分数](compliance-score-calculation.md)。
 
@@ -87,7 +87,7 @@ ms.locfileid: "50922726"
 2. **你的控件**：有时称为客户管理的控制措施，这些控件是由你的组织实现和管理的控件
 3. **共享控件**：这些是您的组织和 Microsoft 共同负责实现的控制
 
-##### <a name="learn-more"></a>了解更多
+##### <a name="learn-more"></a>了解详细信息
 
 [监视控件的进度](compliance-manager-assessments.md#monitor-assessment-progress-and-controls)。
 
@@ -97,9 +97,9 @@ ms.locfileid: "50922726"
 
 评估是按特定法规、标准或策略对控制措施进行分组。 完成评估中的操作有助于满足标准、法规或法律的要求。 例如，你可能有一项评估，在完成其中的所有操作后，有助于使 Microsoft 365 设置符合 ISO 27001 要求。
 
-评估有几个组成部分：
+评估包括几个组件：
 
-- **范围内服务**：适用于评估的特定 Microsoft 服务集
+- **适用范围服务**：适用于评估的特定 Microsoft 服务集
 - **Microsoft 管理的控制措施**：Microsoft 代表你实现 Microsoft 云服务的控制措施
 - **你的控件**：有时称为客户管理的控制措施，这些控件是由你的组织实现和管理的控件
 - **共享控件**：这些是您的组织和 Microsoft 共同负责实现的控制
@@ -107,15 +107,15 @@ ms.locfileid: "50922726"
 
 创建评估时，你将将其分配给组。 您可以使用对组织最符合逻辑的任何方式配置组。 例如，你可以按审核年份、区域、解决方案、贵组织中团队或其他某种方式对评估进行分组。 创建组后，可以 [筛选合规性管理器](compliance-manager-setup.md#filtering-your-dashboard-view) 仪表板，以便按一个或多个组查看分数。
 
-##### <a name="learn-more"></a>了解更多
+##### <a name="learn-more"></a>了解详细信息
 
 [在合规性管理器 中生成和管理评估](compliance-manager-assessments.md)。
 
 ### <a name="templates"></a>模板
 
-合规性管理器提供了模板，可帮助你快速创建评估。 你可以修改这些模板，以创建已针对你的需求优化的评估。 您还可以通过使用自己的控件和操作创建模板来构建自定义评估。 例如，你可能希望模板涵盖内部 业务流程 控件，或我们的 150 多个预建评估模板之一未涵盖的区域数据保护标准。
+合规性管理器提供了模板，可帮助你快速创建评估。 你可以修改这些模板，以创建已针对你的需求优化的评估。 您还可以通过使用自己的控件和操作创建模板来构建自定义评估。 例如，你可能希望模板涵盖内部 业务流程 控件，或我们的 325+预建评估模板之一未涵盖的区域数据保护标准。
 
-##### <a name="learn-more"></a>了解更多
+##### <a name="learn-more"></a>了解详细信息
 
 [查看合规性管理器提供的评估模板列表](compliance-manager-templates-list.md)。
 
@@ -125,7 +125,7 @@ ms.locfileid: "50922726"
 
 改进操作有助于集中您的合规性活动。 每项改进操作都提供建议指导，旨在帮助您遵守数据保护法规和标准。 可以将改进操作分配给贵组织的用户，以执行实施和测试工作。 您还可以在改进操作中存储文档、备注和记录状态更新。
 
-##### <a name="learn-more"></a>了解更多
+##### <a name="learn-more"></a>了解详细信息
 
 [使用改进操作来管理合规性工作流](compliance-manager-improvement-actions.md)。
 

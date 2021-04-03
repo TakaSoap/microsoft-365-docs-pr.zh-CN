@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 设置 Microsoft 合规性管理器用户权限和角色，并配置操作自动化测试。 管理用户历史记录并筛选仪表板视图。
-ms.openlocfilehash: 4558f6b2a75f1635c7984b386f217efa148b22af
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: 8877a9a1e65a624708646c17a2517647c8a72f6a
+ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51499034"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51570554"
 ---
 # <a name="get-started-with-compliance-manager"></a>合规性管理器入门
 
@@ -30,7 +30,7 @@ ms.locfileid: "51499034"
 
 ## <a name="who-can-access-compliance-manager"></a>谁可以访问合规性管理器
 
-合规性管理器适用于具有 Office 365 和 Microsoft 365 许可证的组织，以及美国政府社区云 (GCC) 中等和 GCC 高客户。 评估可用性和管理功能取决于您的许可协议。  [查看服务说明详细信息](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。
+合规性管理器适用于具有 Office 365 和 Microsoft 365 许可证的组织，以及美国政府社区云 (GCC) 中等、GCC High 和国防部 (DoD) 客户。 评估可用性和管理功能取决于您的许可协议。  [查看服务说明详细信息](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。
 
 ## <a name="before-you-begin"></a>准备工作
 
@@ -52,7 +52,7 @@ ms.locfileid: "51499034"
 拥有组织的全局管理员角色的人可以设置合规性管理器的用户权限。 权限可以在 Office 365 安全与合规中心& Azure AD (Azure Active Directory) 。
 
 > [!NOTE]
-> 美国政府社区组织 (GCC) 客户只能在 Azure AD 中为合规性管理器设置用户权限和角色。 有关 Azure AD 说明和角色类型定义，请参阅下文。
+> 美国政府社区 (GCC) 高和国防部 (DoD) 环境的客户只能在 Azure AD 中为合规性管理器设置用户权限和角色。 有关 Azure AD 说明和角色类型定义，请参阅下文。
 
 若要在 Office 365 安全与合规中心中设置权限&分配角色，请按照以下步骤操作：
 
@@ -100,7 +100,7 @@ ms.locfileid: "51499034"
 Microsoft 365 合规中心中的合规性管理器设置允许你启用和禁用改进操作自动测试。 这些设置还允许您管理与改进操作关联的用户数据，包括将改进操作重新分配给其他用户的能力。  只有具有全局管理员或合规性管理器管理员角色的人才能访问合规性管理器设置。
 
 > [!NOTE]
-> GCC 高环境中的客户无法使用自动测试功能，因为安全分数在这些环境中不可用。 GCC 高客户需要手动实施和测试其改进操作。
+> GCC High 和 DoD 环境中的客户无法使用自动测试功能，因为这些环境中没有安全功能分数。 GCC High 和 DoD 客户需要手动实施和测试其改进操作。
 
 ### <a name="set-up-automated-testing"></a>设置自动测试
 

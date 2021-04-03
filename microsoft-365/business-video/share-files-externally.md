@@ -1,9 +1,9 @@
 ---
-title: 轻松共享企业外部的文件
+title: 轻松共享企业外的文件
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: kwekua
+author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 了解如何在外部轻松共享业务文件。
-ms.openlocfilehash: cde983fee8b4dbf2d03ff8b2fac77bdf20ee2eda
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: 469e4b16277b048a539767f6fc9fd54d2ea2e6cf
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50421855"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51578623"
 ---
 # <a name="easily-share-files-externally"></a>在外部轻松共享文件
 
@@ -35,9 +35,9 @@ ms.locfileid: "50421855"
 
 ## <a name="try-it"></a>试一试！
 
-1. 在 SharePoint 网站中，选择要共享的文件夹，选择 **"** 共享"，然后单击链接设置按钮。
-1. 在 **"链接设置** "窗口中，确保 **已选择** "任何人"。 如果此选项灰显，需要在 SharePoint 管理中心中将其打开。
+1. From your SharePoint site， select the folder you want to share， choose **Share**， and then click the link settings button.
+1. 在" **链接设置"** 窗口中，确保 **选中** "任何人"。 如果此选项灰显，需要在 SharePoint 管理中心中将其打开。
 1. （可选）选中" **允许编辑"** 复选框并输入链接的到期日期。
-1. 选择 **"应用"。**
-1. 在 **"发送链接**"窗口中，输入客户的电子邮件地址，键入邮件，然后选择"**发送"。**
+1. 选择"**应用"。**
+1. 在 **"发送链接**"窗口中，输入客户的电子邮件地址，键入一条消息，然后选择"发送 **"。**
 1. 你的客户将收到一封电子邮件，包含你的邮件和指向你的文件的链接。

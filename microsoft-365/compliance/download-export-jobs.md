@@ -1,5 +1,5 @@
 ---
-title: 下载高级电子数据展示案例的导出作业
+title: 将文档导出到组织的 Azure 存储帐户
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -14,101 +14,121 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-ROBOTS: NOINDEX, NOFOLLOW
 ms.custom: seo-marvel-mar2020
-description: 安装并使用 Azure 存储资源管理器下载从高级电子数据展示审阅集导出的文档。
-ms.openlocfilehash: 0a73d157b2661202507883dd6542cdf6c6b482f8
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+description: 将审阅集内的文档导出到 Azure 存储帐户，然后使用 Azure 存储资源管理器将其下载到本地计算机。
+ms.openlocfilehash: dfb3892f31e857d4744f6da337c924efaa87ab11
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50926618"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51574702"
 ---
-# <a name="download-export-jobs-in-an-advanced-ediscovery-case"></a>在高级电子数据展示案例中下载导出作业
+# <a name="export-documents-in-a-review-set-to-an-azure-storage-account"></a>将审阅集内的文档导出到 Azure 存储帐户
 
-当你从高级电子数据展示案例中的审阅集中导出文档时，这些文档将上载到 Microsoft 提供的 Azure 存储位置或由你的组织管理的 Azure 存储位置。 使用的 Azure 存储位置的类型取决于导出文档时选择的选项。
+当你从高级电子数据展示案例中的审阅集中导出文档时，可以选择将它们导出到组织管理的 Azure 存储帐户。 如果使用此选项，文档将上载到 Azure 存储位置。 导出文档后，可以访问文档 (，然后使用 Azure 存储资源管理器) 本地计算机或其他位置。 本文提供有关如何将文档导出到 Azure 存储帐户的说明，以及如何使用 Azure 存储资源管理器连接到 Azure 存储位置以下载导出的文档。 有关 Azure 存储资源管理器详细信息，请参阅 [使用 Azure 存储资源管理器](/azure/storage/blobs/storage-quickstart-blobs-storage-explorer)。
 
-本文提供如何使用 Microsoft Azure 存储资源管理器连接到 Azure 存储位置以浏览和下载导出的文档的说明。 有关 Azure 存储资源管理器详细信息，请参阅 [快速入门：使用 Azure 存储资源管理器](/azure/storage/blobs/storage-quickstart-blobs-storage-explorer)。
+## <a name="before-you-export-documents-from-a-review-set"></a>从审阅集导出文档之前
 
-## <a name="step-1-install-the-azure-storage-explorer"></a>步骤 1：安装 Azure 存储资源管理器
+- 你需要为 Azure 存储帐户提供共享访问签名 (SAS) 令牌，并为存储帐户中的特定容器提供 URL，以便从审阅集导出文档。 例如，执行步骤 2 时 (，请务必将这些文件) 文本文件中
 
-第一步是下载并安装 Azure 存储资源管理器。 有关说明，请参阅 [Azure 存储资源管理器工具](https://go.microsoft.com/fwlink/p/?LinkId=544842)。 使用此工具可连接并下载步骤 3 中导出的文档。
+  - **SAS 令牌**：请务必获取适用于 Azure 存储帐户的 SAS 令牌 (而不是用于容器) 。 可以在 Azure 存储中为帐户生成 SAS 令牌。 为此，请转到 Azure 存储帐户，然后选择存储帐户边栏选项卡中的"设置 **"设置** 下的"共享访问签名"。 生成 SAS 令牌时，使用默认设置并允许所有资源类型。
+
+  - **容器 URL：** 需要创建一个容器以将审阅集文档上载到其中，然后获取容器 URL 的副本;例如， `https://ediscoverydata.blob.core.windows.net/exportdata` 。 若要获取 URL，请转到 Azure 存储中的容器，然后选择容器边栏选项卡中"设置 **"** 部分下的"属性"。
+
+- 下载并安装 Azure 存储资源管理器。 有关说明，请参阅 [Azure 存储资源管理器工具](https://go.microsoft.com/fwlink/p/?LinkId=544842)。 使用此工具连接到 Azure 存储帐户中的容器，并下载在步骤 1 中导出的文档。
+
+## <a name="step-1-export-the-documents-from-a-review-set"></a>步骤 1：从审阅集导出文档
+
+第一步是创建导出作业以将文档从审阅集导出。 有关所有导出选项的详细说明，请参阅从 [审阅集导出文档](export-documents-from-review-set.md)。 以下过程将突出显示用于将文档导出到组织的 Azure 存储帐户的设置。
+
+1. 在 Microsoft 365 合规中心，打开"高级电子数据展示"案例，选择"审阅集"选项卡，然后选择要导出的审阅集。
+
+2. 在审阅集内，单击"操作 **导出**  >  **"。**
+
+3. 在" **导出选项** "飞出页上，键入导出 (必需的) 和 () 选项的名称。
+
+4. 配置文档、元数据、内容和选项部分中的设置。 有关这些设置详细信息，请参阅从审阅 [集导出文档](export-documents-from-review-set.md)。
+
+5. 在" **输出选项** "部分，选择导出到 Azure 存储帐户的"压缩 **目录结构"** 选项。
+
+6. 将存储帐户的容器 URL 和 SAS 令牌粘贴到相应的字段中。
+
+   ![将连接 URL 和 SAS 令牌粘贴到相应的字段中](../media/AzureStorageOutputOptions.png)
+
+7. 单击 **"** 导出"创建导出作业。
 
 ## <a name="step-2-obtain-the-sas-url-from-the-export-job"></a>步骤 2：从导出作业获取 SAS URL
 
-下一步是获取创建导出作业以从审阅集导出文档时 (SAS) URL 的共享访问 [签名](export-documents-from-review-set.md)。 你可以复制上传到 Microsoft 提供的 Azure 存储位置或由组织管理的 Azure 存储位置的文档的 SAS URL。 在任一情况下，使用 SAS URL 连接到步骤 3 中的 Azure 存储位置。
+下一步是获取在步骤 1 中创建导出作业后生成的 SAS URL。 使用 SAS URL 连接到将审阅集文档导出到的 Azure 存储帐户中的容器。
 
 1. 在" **高级电子数据展示"** 页上，转到案例，然后单击"导出 **"** 选项卡。
 
-2. 在" **导出** "选项卡上，单击要下载的导出作业。
+2. 在" **导出** "选项卡上，单击要下载的导出作业。 这是在步骤 1 中创建的导出作业。
 
-3. 在飞出页面上的"位置 **"下**，复制显示的 SAS URL。 如有必要，你可以将其保存到文件，以便可以在步骤 3 中访问它。
- 
+3. 在飞出页面上的"位置 **"下**，复制显示的 SAS URL。 如有必要，你可以将其保存到文本文件，以便可以在步骤 3 中访问它。
+
    ![复制"位置"下显示的 SAS URL](../media/eDiscoExportJob.png)
 
-## <a name="step-3-connect-to-the-azure-storage-location"></a>步骤 3：连接到 Azure 存储位置
+   > [!TIP]
+   > 导出作业中显示的 SAS URL 是容器 URL 和 Azure 存储帐户的 SAS 令牌的串联。 你可以从导出作业复制它，或者通过组合 URL 和 SAS 令牌自己创建它。
 
-最后一步是使用 Azure 存储资源管理器和 SAS URL 连接到 Azure 存储位置，并下载导出到本地计算机的文档。
+## <a name="step-3-connect-to-the-azure-storage-container"></a>步骤 3：连接到 Azure 存储容器
 
-1. 打开在步骤 1 中安装的 Azure 存储资源管理器。
+最后一步是使用 Azure 存储资源管理器和 SAS URL 连接到 Azure 存储帐户中的容器，将导出的文档下载到本地计算机。
 
-2. 单击" **添加帐户"** 图标。 或者，也可以右键单击"存储 **帐户"。**
+1. 启动你下载并安装的 Azure 存储资源管理器。
+
+2. 单击" **打开连接对话框"** 图标。
 
    ![单击"添加帐户"图标](../media/AzureStorageConnect.png)
 
-3. 在"**连接到 Azure 存储**"页上，单击"使用 SAS (URI) 共享访问签名 **"，然后单击"下一****步"。**
+3. 在"**连接到 Azure 存储"页上**，单击 **"Blob 容器"。**
 
-    ![单击"使用 SAS (共享) URI"，然后单击"下一步"](../media/AzureStorageConnect2.png)
+4. 在"**选择身份验证方法**"页上，选择"SAS (**共享) "** 选项，然后单击"下一 **步"。**
 
-4. 在" **使用 SAS URI 附加** "页上，单击"URI"框中，然后粘贴在步骤 2 中获得的 SAS URL。 
+5. 在"**输入连接信息**"页上， (在"Blob 容器 SAS URL"框中的步骤 2) 导出作业获取的 **SAS URL。**
 
     ![将 SAS URL 粘贴到 URI 框中](../media/AzureStorageConnect3.png)
 
-    请注意，SAS URL 的一部分显示在"显示名称 **"** 框中。 这将用作在显示名称存储帐户下创建的容器的组。  此名称包含高级电子数据展示案例的 ID 来自 和唯一标识符。 你可以保留默认显示名称更改它。 如果更改它，则显示名称必须是唯一的。
+    请注意，容器名称显示在"显示名称 **"** 框中。 可以编辑此名称。
 
-5. 单击“**下一步**”。
-
-    将显示 **"连接摘要** "页。
-
-    ![单击"连接摘要"页上的"连接"以连接到 Azure 存储位置](../media/AzureStorageConnect4.png)
-
-6. 在"**连接摘要"** 页上，查看连接信息，然后单击"连接 **"。**
+6. 单击 **"下** 一步"**以显示摘要** 页，然后单击"连接 **"。**
 
     "Blob **容器"** 节点 **(打开的** 附加 ( >  **下)** \> 存储帐户"下。
 
     ![导出 Blob 容器节点中的作业](../media/AzureStorageConnect5.png)
 
-    它包含一个名为 的容器，显示名称步骤 4 中的步骤。 此容器包含已创建的每个导出作业的文件夹。 这些文件夹的命名 ID 与导出作业的 ID 相对应。 您可以在"作业"选项卡上 ("准备导出作业的数据"的) "支持信息"下找到这些导出的 ID 和 **导出名称**。 
+    它包含一个名为 的容器，显示名称步骤 5 中的步骤。 此容器包含已下载到 Azure 存储帐户中的容器的每个导出作业的文件夹。 这些文件夹的命名 ID 与导出作业的 ID 相对应。 您可以在"高级电子数据展示"案例的"作业"选项卡上列出的每个"准备导出数据"作业的 ("支持信息"下的"支持信息"下找到这些导出的) 和导出 ID 的名称。 
 
 7. 双击导出作业文件夹以打开它。
 
    将显示文件夹和导出报告的列表。
-   
+
     ![导出文件夹包含导出的文件和导出报告](../media/AzureStorageConnect6.png)
 
-   导出作业文件夹包含以下项目。 导出文件夹中的实际项目由创建导出作业时配置的导出选项确定。 有关详细信息，请参阅从 [审阅集导出文档](export-documents-from-review-set.md)。
-
-    - Export_load_file.csv：此 CSV 文件是包含有关每个导出文档的信息的详细导出报告。 文件由文档的每个元数据属性的列组成。 有关此报告中包含的元数据的列表和说明，请参阅 高级电子数据展示 中的文档元数据字段的表中的导出字段[名称列](document-metadata-fields-in-advanced-ediscovery.md)。
-    
-    - Summary.txt：包含导出摘要（包括导出统计信息）的文本文件。
-    
-    - Extracted_text_files：此文件夹包含每个导出文档的文本文件版本。
-     
-    - NativeFiles：此文件夹包含每个导出文档的本机文件版本。
-    
-    - Error_files：导出作业包含任何错误文件时，此文件夹包含以下项目： 
-        
-      - ExtractionError.csv：此 CSV 文件包含未从父项正确提取的文件的可用元数据。
-        
-      - ProcessingError：此文件夹包含包含处理错误的文档。 此内容位于项目级别，这意味着如果附件有处理错误，则包含附件的文档也将包含在此文件夹中。
- 
-8. 若要导出导出中的内容，请选择导出文件夹，然后单击 **下载。**
+8. 若要从导出作业导出所有内容，请单击向上箭头返回到导出作业文件夹，然后单击 **下载。**
 
 9. 指定要下载导出文件的位置，然后单击"选择文件夹"。
 
-    Azure 存储资源管理器开始导出过程。 下载导出项目的状态显示在"活动 **"窗格中。** 下载完成后将显示一条消息。
-
-    ![下载完成后将显示一条消息](../media/AzureStorageConnect8.png)
+    Azure 存储资源管理器启动下载过程。 下载导出项目的状态显示在"活动 **"窗格中。** 下载完成后将显示一条消息。
 
 > [!NOTE]
-> 可以选择要下载的特定项目，而不是下载整个导出作业。 你可以双击某个项目进行查看，而不是下载项目。
+> 可以选择要下载和查看的特定项目，而不是在 Azure 存储资源管理器中下载整个导出作业。
+
+## <a name="more-information"></a>更多信息
+
+- 导出作业文件夹包含以下项目。 导出文件夹中的实际项目由创建导出作业时配置的导出选项确定。 有关这些选项的详细信息，请参阅从审阅 [集导出文档](export-documents-from-review-set.md)。
+
+  - Export_load_file.csv：此 CSV 文件是包含有关每个导出文档的信息的详细导出报告。 文件由文档的每个元数据属性的列组成。 有关此报告中包含的元数据的列表和说明，请参阅 高级电子数据展示 中的文档元数据字段的表中的导出字段[名称列](document-metadata-fields-in-advanced-ediscovery.md)。
+
+  - Summary.txt：包含导出摘要（包括导出统计信息）的文本文件。
+
+  - Extracted_text_files：此文件夹包含每个导出文档的文本文件版本。
+
+  - NativeFiles：此文件夹包含每个导出文档的本机文件版本。
+
+  - Error_files：导出作业包含任何错误文件时，此文件夹包含以下项目：
+
+    - ExtractionError.csv：此 CSV 文件包含未从父项正确提取的文件的可用元数据。
+
+    - ProcessingError：此文件夹包含包含处理错误的文档。 此内容位于项目级别，这意味着如果附件有处理错误，则包含附件的文档也将包含在此文件夹中。

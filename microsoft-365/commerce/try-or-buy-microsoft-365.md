@@ -19,21 +19,14 @@ search.appverid:
 - MET150
 description: 了解如何获取免费试用版或购买 Microsoft 365 商业版订阅。
 ms.date: 08/07/2020
-ms.openlocfilehash: 05ac30ae25f4748751eee04c34d049b07d5b7511
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 9daa7022007aa3c71dc7291f592d3b166a2c45a5
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51198430"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51576897"
 ---
 # <a name="try-or-buy-a-microsoft-365-for-business-subscription"></a>试用或购买 Microsoft 365 商业版订阅
-
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> 管理中心正在发生改变。 如果你的体验与此处提供的详细信息不匹配，请参阅[有关新版 Microsoft 365 管理中心](../admin/microsoft-365-admin-center-preview.md?view=o365-21vianet)。
-
-::: moniker-end
 
 Microsoft 365 商业版是一种订阅服务，允许你在云中运行你的组织，同时 Microsoft 会负责你的 IT 工作。 Microsoft 管理设备、防范实际威胁，为组织提供最新的业务软件。 你可以注册 Microsoft 365 商业标准版、Microsoft 365 商业高级版或 Microsoft 365 商业应用版的免费试用版订阅，试用 30 天。
 
@@ -42,7 +35,7 @@ Microsoft 365 商业版是一种订阅服务，允许你在云中运行你的组
 
 ## <a name="before-you-begin"></a>准备工作
 
-无需现有 Microsoft 帐户注册免费试用版。 对于本文中的所有其他过程，你必须是组织的全局管理员或帐单管理员。 有关详细信息，请参阅 [关于管理员角色](../admin/add-users/about-admin-roles.md)。
+无需现有 Microsoft 帐户注册免费试用版。 对于本文中的所有其他过程，你必须是组织的全局管理员或帐单管理员。 有关详细信息，请参阅[关于管理员角色](../admin/add-users/about-admin-roles.md)。
 
 ## <a name="try-a-free-trial-subscription"></a>试用免费试用版订阅
 
@@ -110,6 +103,21 @@ Microsoft 365 商业版是一种订阅服务，允许你在云中运行你的组
 
 > [!NOTE]
 > 你必须在 90 天宽限期到期后将用户从免费试用版订阅移动到新订阅。 通过执行此操作，可以保留数据、帐户和配置。 否则，将删除该信息。
+
+::: moniker range="o365-21vianet"
+## <a name="payment-options"></a>支付选项
+
+您可以通过以下方式支付订阅费用：
+
+- 发票
+
+- 通过支付宝或中国银联联机付款
+
+付款证明将以发票形式提供。 您可以在付款大约三 （3） 天后向 [发票系统提交发票](https://go.microsoft.com/fwlink/p/?LinkId=395314) 请求。 有关详细信息，请参阅 [申请由世纪互联运营的 Office 365 的发票](../admin/services-in-china/apply-for-a-fapiao.md)。
+
+> [!NOTE]
+>  不接受国际信用卡。
+::: moniker-end
 
 ## <a name="next-steps"></a>后续步骤
 

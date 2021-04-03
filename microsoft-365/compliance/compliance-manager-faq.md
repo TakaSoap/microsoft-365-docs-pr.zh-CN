@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 查找有关 Microsoft 合规性管理器的常见问题解答，帮助组织简化和自动进行风险评估。
-ms.openlocfilehash: a6ce93a39e242d5edf4806ad974296c8c007561e
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: efa9de8506c088ceae64de26d32efe8553d0b574
+ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50922826"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51570391"
 ---
 # <a name="compliance-manager-frequently-asked-questions"></a>合规性管理器常见问题
 
@@ -73,11 +73,11 @@ Microsoft 合规性管理器作为 Microsoft 服务信任门户内的合规性�
 
 ## <a name="are-there-licensing-requirements-for-using-compliance-manager"></a>使用合规性管理器是否有许可要求？
 
-是。 合规性管理器的 GA 版本包含新的许可条款。 具有 Office 365 和 Microsoft 365 许可证以及美国政府社区版 (GCC) 中等和 GCC 高客户的所有组织均有权访问合规性管理器。 但是，组织可用的评估以及管理评估模板的方式取决于您的许可协议。 有关详细信息，请访问 [Microsoft 365 安全与合规许可](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance) 指南。
+正确。 合规性管理器的 GA 版本包含新的许可条款。 拥有 Office 365 和 Microsoft 365 许可证以及美国政府社区版 (GCC) Moderate、GCC High 和国防部 (DoD) 客户的所有组织均有权访问合规性管理器。 但是，组织可用的评估以及管理评估模板的方式取决于您的许可协议。 有关详细信息，请访问 [Microsoft 365 安全与合规许可](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance) 指南。
 
 ## <a name="if-i-have-a-high-score-does-it-mean-im-fully-compliant"></a>如果我有高分，这是否意味着我完全兼容？
 
-不正确。 合规性分数用于衡量完成建议操作的进度，帮助降低数据保护和监管标准的风险。 它不表示组织遵守特定标准或法规的绝对度量。 不得以任何方式将合规性管理器和合规性分数解释为保证。
+否。 合规性分数用于衡量完成建议操作的进度，帮助降低数据保护和监管标准的风险。 它不表示组织遵守特定标准或法规的绝对度量。 不得以任何方式将合规性管理器和合规性分数解释为保证。
 
 ## <a name="can-i-use-compliance-manager-for-non-microsoft-products"></a>能否将合规性管理器用于非 Microsoft 产品？
 
