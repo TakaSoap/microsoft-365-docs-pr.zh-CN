@@ -1,5 +1,5 @@
 ---
-title: 可下载的准备情况评估检查程序
+title: 可下载的准备情况评估检查器
 description: 检查设备和网络设置，包括所需的终结点
 keywords: Microsoft 托管桌面, Microsoft 365, 服务, 文档
 ms.service: m365-md
@@ -9,14 +9,15 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 2080b2fc924320f38d9972c82c0425fa1d8026e7
-ms.sourcegitcommit: 7ecd10b302b3b3dfa4ba3be3a6986dd3c189fbff
+audience: Admin
+ms.openlocfilehash: eec6bdff2e494e0f55b06cb581c5775d3ffeb9e3
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "49921940"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51581030"
 ---
-# <a name="downloadable-readiness-assessment-checker"></a>可下载的准备情况评估检查程序
+# <a name="downloadable-readiness-assessment-checker"></a>可下载的准备情况评估检查器
 
 若要很好地使用 Microsoft 托管桌面，设备必须满足硬件和设置的某些要求。 此外，每台设备必须能够到达关键终结点。 下载并运行此工具以获取 HTML 报告、查看结果，然后采取措施。 你需要下载该工具和支持文件，然后在你想要在 Microsoft 托管桌面中注册的每个设备上手动运行它。
 
@@ -26,8 +27,8 @@ ms.locfileid: "49921940"
 |结果  |含义  |
 |---------|---------|
 |Ready     | 完成注册前无需任何操作。        |
-|公告    | 按照工具中的步骤操作，实现注册和用户的最佳体验。 *你可以完成* 注册，但在部署第一台设备之前必须解决这些问题。        |
-|未就绪 | *如果不解决这些问题* ，注册将失败。 按照工具中的步骤进行解析。        |
+|公告    | 按照工具中的步骤操作，实现注册和用户的最佳体验。 *你可以完成* 注册，但在部署第一台设备之前必须修复这些问题。        |
+|未就绪 | *如果不修复* 这些问题，注册将失败。 按照工具中的步骤进行解析。        |
 
 ## <a name="obtain-the-checker"></a>获取检查器
 
@@ -39,46 +40,46 @@ ms.locfileid: "49921940"
  然后按照以下步骤运行该工具：
 
 1. 将下载的 .zip 文件复制到要检查的每个设备。
-2. 提取压缩下载中的所有文件。
+2. 在压缩的下载中解压缩所有文件。
 3. 运行 **Microsoft.MMD.DeviceReadinessAssessmentTool.exe**。
-4. 当出现"用户访问控制"提示时，选择 **"是"。** 该工具将在默认浏览器中运行并打开报表。
+4. 出现"用户访问控制"提示时，选择"**是"。** 该工具将运行，并打开默认浏览器中的报告。
 
-还可以将 .zip 存档下载并解压缩到共享位置，从 **Microsoft.MMD.DeviceReadinessAssessmentTool.exe访问该** 存档，然后在本地运行它。
+您还可以将 .zip 存档下载并解压缩到共享位置，从 **Microsoft.MMD.DeviceReadinessAssessmentTool.exe访问该** 存档，然后在本地运行它。
 
 
 ## <a name="checks"></a>检查
 
-可下载的工具将检查与设备和网络相关的项：
+可下载的工具会检查与设备和网络相关的项：
 
 ### <a name="hardware"></a>硬件
 
-设备必须满足特定的硬件要求，以使用 Microsoft 托管桌面。 目前，仅 [允许特定批准的](../service-description/device-list.md) 设备注册。 
+设备必须满足特定的硬件要求，以使用 Microsoft 托管桌面。 目前，仅 [允许注册特定](../service-description/device-list.md) 批准的设备。 
 
 如果你的设备未通过任何检查，它将与 Microsoft 托管桌面不兼容。
 
 ### <a name="network-endpoints"></a>网络终结点
 
-设备能够访问多个关键 [终结点](network.md) 以使用 Microsoft 托管桌面。
+设备能够访问多个关键 [终结点](network.md) ，以使用 Microsoft 托管桌面。
 
-如果工具报告 **未就绪** 结果，请参阅详细报告，了解哪些终结点不可访问。 然后调整防火墙或其他网络设置，以确保可以到达这些终结点。
+如果工具报告 **"未准备好"** 结果，请参阅详细报告，了解哪些终结点不可访问。 然后调整防火墙或其他网络设置，以确保可以到达这些终结点。
 
 ### <a name="other-settings"></a>其他设置
 
 #### <a name="enterprise-wi-fi-profiles"></a>企业 WI-fi 配置文件
 
-公告 **结果** 意味着你正在使用一些需要证书和配置文件以正常运行的 WLAN 配置文件。 有关详细信息，请参阅 [部署证书和 WLAN/VPN 配置文件](certs-wifi-lan.md#deploy-certificates-and-wi-fivpn-profile)。
+公告 **结果** 意味着你正在使用某些需要证书和配置文件正常运行的 WLAN 配置文件。 有关详细信息，请参阅 [部署证书和 WI-Fi/VPN 配置文件](certs-wifi-lan.md#deploy-certificates-and-wi-fivpn-profile)。
 
 #### <a name="lan-profiles"></a>LAN 配置文件
 
-公告 **结果** 意味着你拥有需要证书和配置文件以正常运行的 1996 年 1 月 1 日。 有关详细信息，请参阅为 [Microsoft 托管桌面准备证书和网络配置文件](certs-wifi-lan.md)。
+公告 **结果** 意味着你拥有需要证书和配置文件来正常工作的 LAN。 有关详细信息，请参阅准备 [Microsoft 托管桌面的证书和网络配置文件](certs-wifi-lan.md)。
 
 #### <a name="vpn-profiles"></a>VPN 配置文件
 
-公告 **结果** 意味着你正在使用虚拟专用网络 (VPN) 。 创建部署与 Microsoft Intune 集成的证书的 VPN 配置文件。 有关详细信息，请参阅为 [Microsoft 托管桌面准备证书和网络配置文件](certs-wifi-lan.md)。
+公告 **结果** 意味着你正在使用虚拟专用网络 (VPN) 。 创建部署与 Microsoft Intune 集成的证书的 VPN 配置文件。 有关详细信息，请参阅准备 [Microsoft 托管桌面的证书和网络配置文件](certs-wifi-lan.md)。
 
 #### <a name="mapped-drives"></a>映射的驱动器
 
-公告 **结果** 意味着你有一些映射的驱动器，不建议这样做。 有关详细信息，请参阅准备 [Microsoft 托管桌面的映射驱动器](mapped-drives.md)。
+公告 **结果** 意味着你有一些映射的驱动器，不建议这样做。 有关详细信息，请参阅准备 Microsoft 托管 [桌面的映射驱动器](mapped-drives.md)。
 
 #### <a name="print-queues"></a>打印队列
 

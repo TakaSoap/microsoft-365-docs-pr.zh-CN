@@ -1,9 +1,9 @@
 ---
-title: Microsoft 工作效率分数-Microsoft 365 应用程序运行状况
+title: Microsoft Productivity Score - Microsoft 365 应用运行状况
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: pebaum
+author: pebaum
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -18,105 +18,105 @@ monikerRange: o365-worldwide
 search.appverid:
 - MET150
 - MOE150
-description: Microsoft 365 应用健康状况技术体验工作效率分数的详细信息。
-ms.openlocfilehash: a84e919ce01775b8791ed7a1992464e4f52c7234
-ms.sourcegitcommit: a566ef236c85edfd566c8c3f859b80f9e5ce0473
+description: Microsoft 365 应用版运行状况的详细信息 - 技术体验生产力分数。
+ms.openlocfilehash: d8e9cb1f29c8138616c1cc2461bfa07fb9dafd9c
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49562939"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51580866"
 ---
-# <a name="microsoft-365-apps-health--technology-experiences"></a>Microsoft 365 应用程序运行状况–技术经验
+# <a name="microsoft-365-apps-health--technology-experiences"></a>Microsoft 365 应用版运行状况–技术体验
 
-通过使用 Microsoft 365 和支持 it 的技术体验，工作效率分数可深入了解您的组织的数字转换旅程。 贵组织的分数反映了人员和技术体验指标，可以与类似于您的组织的基准进行比较。 应用运行状况类别是技术体验中的度量的一部分。 若要了解详细信息，请查看 [工作效率分数概述](productivity-score.md) 和阅读 [Microsoft 隐私声明](https://privacy.microsoft.com/privacystatement)。
+生产力分数通过 Microsoft 365 的使用和支持它的技术体验，提供组织数字化转型之旅的见解。 你的组织的分数反映了人员和技术体验指标，并可以与类似你组织的基准进行比较。 应用运行状况类别是属于技术体验的度量的一部分。 若要了解更多信息，请查看生产力 [分数概述并](productivity-score.md) 阅读 Microsoft [隐私声明](https://privacy.microsoft.com/privacystatement)。
 
-## <a name="why-your-organization39s-microsoft-365-apps-health-score-matters"></a>为什么您的组织&#39;s Microsoft 365 应用程序运行状况分数问题
+## <a name="why-your-organization39s-microsoft-365-apps-health-score-matters"></a>为什么组织&#39;Microsoft 365 应用运行状况分数很重要
 
-您的组织的工作效率取决于正常的应用程序环境。 运行 Microsoft 365 应用程序（推荐通道）的最新版本的设备更安全，并帮助组织中的人员充分利用 Microsoft 365 中的功能。
+组织工作效率取决于正常的应用程序环境。 在建议频道上运行最新版本的 Microsoft 365 应用的设备更加安全，可帮助组织成员在 Microsoft 365 中实现最大功能。
 
 ## <a name="how-we-calculate-the-microsoft-365-apps-health-score"></a>如何计算 Microsoft 365 应用运行状况分数
 
-我们通过测量每个更新频道上的设备数来计算 Microsoft 365 应用程序运行状况分数。 我们还确定设备是否运行受支持的版本，以及 Microsoft 365 应用程序的最新版本。
+我们通过测量每个更新频道上的设备数来计算你的 Microsoft 365 应用运行状况分数。 我们还确定设备是否运行受支持的版本和最新版本的 Microsoft 365 应用。
 
-我们提供了包含此类别的关键指标的体验的主要见解。 然后，以下各节中详细介绍的记分框架用于计算成绩。
+我们在体验中提供了主要见解，其中包含此类别的关键指标。 然后，使用以下各节中详述的评分框架来计算你的分数。
 
-### <a name="primary-insight"></a>主要洞察力
+### <a name="primary-insight"></a>主要见解
 
-主要洞察力是通过在建议更新的频道上运行 Microsoft 365 应用程序的设备计算出的。
+主要见解是通过在推荐的更新频道上运行 Microsoft 365 应用版的设备计算的。
 
-:::image type="content" source="../../media/appshealth-primary.png" alt-text="Microsoft 365 应用的可见可视化项的主要可视化项。":::
+:::image type="content" source="../../media/appshealth-primary.png" alt-text="Microsoft 365 应用的主要视觉可视化。":::
 
-考虑的信息包括 Microsoft 365 应用程序通道、内部版本和设备上运行的版本。
+考虑的信息包括设备上运行的 Microsoft 365 应用频道、内部版本和版本。
 
-1. **标头：**  显示建议更新频道上设备的百分比
-1. **正文：**  提供了有关如何在推荐更新通道上运行设备的详细信息，以帮助获取最新的更新，并在设备上运行当前版本。
+1. **标头：**  显示推荐的更新频道上的设备百分比
+1. **正文：**  提供有关在推荐的更新通道上运行设备将有助于在设备上获取最新更新和运行当前版本的信息。
 1. **可视化 (当前状态) ：**
-    - 黑色部分表示运行建议的更新频道的设备所占百分比的水平条。
-    - 突出显示用于计算水平条中表示百分比的分数的 (分子/分母) 。
-    - 在推荐更新的频道上运行的设备的对等基准值也显示为百分比。
+    - 蓝色部分表示运行建议更新通道的设备百分比的水平栏。
+    - 突出显示 (以水平) 表示的百分比的分数的分子/分母值。
+    - 在建议的更新通道上运行的设备的对等基准值也显示为百分比。
 
-#### <a name="trend-visualization-of-the-primary-insight"></a>主要洞察力的趋势可视化
+#### <a name="trend-visualization-of-the-primary-insight"></a>主要见解的趋势可视化
 
-下图显示了最近180天内的推荐更新频道中的设备数量。 折线图上的数据点是最近28天的活动聚合。
+下图显示了过去 180 天内建议更新频道中的设备数量。 线形图上的数据点是过去 28 天的活动聚合。
 
-:::image type="content" source="../../media/appshealth-primarytrend.png" alt-text="显示运行建议更新通道的设备的趋势的图表。":::
+:::image type="content" source="../../media/appshealth-primarytrend.png" alt-text="显示运行建议更新通道的设备趋势的图表。":::
 
 ### <a name="scoring-framework"></a>记分框架
 
-Microsoft 365 应用程序运行状况分数测量设备是否在推荐频道和最新版本上运行 Microsoft 365 应用。
+Microsoft 365 应用运行状况分数衡量设备是否在推荐频道和最新版本上运行 Microsoft 365 应用。
 
-## <a name="explore-your-organization-microsoft-365-app-channels-and-versions"></a>浏览您的组织 Microsoft 365 应用程序通道和版本
+## <a name="explore-your-organization-microsoft-365-app-channels-and-versions"></a>探索你的组织 Microsoft 365 应用频道和版本
 
-我们还提供支持信息，可帮助你获取组织中当前正在运行的通道和版本设备的更多深入了解。 这些额外的指标不会影响您的工作效率分数，但可以通过确保设备在推荐频道上运行 Microsoft 365 应用程序，从而帮助您创建一个行动计划，以增加 Microsoft 365 应用程序的运行状况分数。
+我们还提供支持信息，可帮助你进一步查看组织中当前正在运行的频道和版本设备。 这些额外的指标不会增加你的工作效率分数，但可以帮助你制定一个行动计划，以确保设备在推荐的频道上运行 Microsoft 365 应用，从而提升 Microsoft 365 应用运行状况分数。
 
-### <a name="devices-on-current-channel-and-running-supported-versions"></a>当前频道上的设备和运行支持的版本
+### <a name="devices-on-current-channel-and-running-supported-versions"></a>当前频道上和运行受支持版本的设备
 
-:::image type="content" source="../../media/devices-current-suppported-channel.png" alt-text="显示当前支持的通道中的设备数量的图表。":::
+:::image type="content" source="../../media/devices-current-suppported-channel.png" alt-text="显示当前受支持渠道中的设备数量的图表。":::
 
-1. **标头：**  突出显示当前通道上的设备所占的百分比运行受支持的 Microsoft 365 应用版本
-1. **正文：**  提供有关在建议频道上运行 Microsoft 365 应用程序的设备的值的信息。
-1. **可视化：**  可视化中的细目表示在不同的频道) 中，在 Microsoft 365 应用程序的最新版本和受支持版本的设备百分比方面的程度，如下所示：
-    - **支持的版本：** 蓝色条表示在受支持的 Microsoft 365 应用版本上运行的设备所占的百分比。
-    - **最新版本：** 蓝绿色颜色条表示最新版本的设备的百分比。
-1. **了解详细信息：**   选择此链接可查看帮助内容。
+1. **标头：**  突出显示当前频道上运行 Microsoft 365 应用版受支持版本的设备的百分比
+1. **正文：**  提供有关在推荐渠道上运行 Microsoft 365 应用的设备的价值的信息。
+1. **可视化：**  可视化中的细分表示跨不同渠道应用的 Microsoft 365 应用的最新和支持版本的设备百分比) ，如下所示：
+    - **支持的版本：** 蓝色条代表在受支持的 Microsoft 365 应用版本上运行的设备百分比。
+    - **最新版本：** 青色条表示最新版本上的设备的百分比。
+1. **了解更多信息：**   选择此链接可查看帮助内容。
 
-### <a name="devices-running-latest-and-supported-versions"></a>运行最新和受支持版本的设备
+### <a name="devices-running-latest-and-supported-versions"></a>运行最新和支持的版本的设备
 
-:::image type="content" source="../../media/device-supported-versions.png" alt-text="显示运行最新和受支持的应用程序版本的设备数量的图表。":::
+:::image type="content" source="../../media/device-supported-versions.png" alt-text="显示运行最新和受支持的应用版本的设备的图表。":::
 
-1. **标头：**  突出显示运行最新版本的受支持的版本和设备的设备所占的百分比。
-1. **正文：**  提供有关在推荐通道和受支持的/最新版本上运行设备的值的信息。
-1. **可视化：** 可视化中的细分旨在表示一个范围，以显示运行受支持的版本和最新版本的 Microsoft 365 应用程序的设备的数量) ：
-    - **支持的版本：** 竖线) 部分的蓝色 (，条形图上 (分子/分母) 的分数表示运行受支持的 Microsoft 365 应用程序版本的设备所占的百分比。
-        - 分子：过去28天内受支持的 Microsoft 365 应用版本的设备数
-        - 分母：最近28天内使用 Microsoft 365 应用的设备数量
-    - **最新版本：** 蓝绿色 (条形图) 部分的颜色，条形图上 (分子/分母) 的分数表示运行 Microsoft 365 应用程序的最新版本的设备所占的百分比。
-        - 分子：最近28天内 Microsoft 365 应用的最近版本中的设备数量
-        - 分母：最近28天内使用 Microsoft 365 应用的设备数量
-1. **了解详细信息：**   选择此链接可查看帮助内容。
+1. **标头：**  突出显示运行受支持版本的设备和运行最新版本的设备百分比。
+1. **正文：**  提供有关在推荐频道和受支持/最新版本上运行设备的价值的信息。
+1. **可视化：** 可视化中的细分旨在表示显示运行受支持版本和 Microsoft 365 应用的最新版本的设备数) ：
+    - **支持的版本：** 蓝色 (条的) 部分，而条形上的分数 (numerator/denominator) 表示运行受支持版本的 Microsoft 365 应用的设备百分比。
+        - 数字：过去 28 天内支持版本的 Microsoft 365 应用的设备数量
+        - 分母：过去 28 天内使用 Microsoft 365 应用的设备数量
+    - **最新版本：** 青色 (条的) 部分，而条上的分数 (numerator/denominator) 表示运行最新版本的 Microsoft 365 应用的设备的百分比。
+        - 数字：最近 28 天内最新版本的 Microsoft 365 应用上的设备数量
+        - 分母：过去 28 天内使用 Microsoft 365 应用的设备数量
+1. **了解更多信息：**   选择此链接可查看帮助内容。
 
 #### <a name="trend-visualization-of-the-devices"></a>设备的趋势可视化
 
-此图显示了在过去180天内运行支持的版本的设备的趋势线以及 Microsoft 365 应用程序的最新版本。
+此图显示过去 180 天内运行受支持版本和最新版本的 Microsoft 365 应用的设备的趋势线。
 
-:::image type="content" source="../../media/trendline-devices-supportedversions.png" alt-text="Showa 多个设备运行的支持和一段时间内最新版本的应用程序的图表。":::
+:::image type="content" source="../../media/trendline-devices-supportedversions.png" alt-text="显示随着时间的推移运行受支持和最新版本的应用的设备数的图表。":::
 
-## <a name="devices-in-your-organization"></a>组织中的设备
+## <a name="devices-in-your-organization"></a>贵组织的设备
 
-本节通过向 Microsoft 365 应用健康技术体验的所有指标提供相关信息，帮助您对要重点关注的指标进行操作。
+本部分通过向 Microsoft 365 应用运行状况 - 技术体验的所有指标提供相关信息，帮助你对要关注的指标采取行动。
 
-以下各列显示在通道/版本级别的表中：
+下表在频道/版本级别显示以下列：
 
-- **通道** ：设备上的当前 Microsoft 365 应用通道。
-- **状态：**   Microsoft 365 应用支持基于当前通道和版本的设备的状态。
-- **版本：**  设备上的当前 Microsoft 365 应用版本。
-- **设备数量：**  设备数。
+- **频道** ：设备上当前的 Microsoft 365 应用频道。
+- **状态：**   Microsoft 365 应用支持基于当前频道和版本的设备状态。
+- **版本：**  设备上当前的 Microsoft 365 应用版本。
+- **设备数：**  设备数。
 
 ## <a name="related-content"></a>相关内容
 
-[通信–人员](communication.md) (文章) \
-[内容协作–人员](content-collaboration.md) (文章) \
-[会议–人员体验](meetings.md) (文章) \
-[移动性–人员体验](mobility.md) (文章) \
-[工作效率的隐私控制分数](privacy.md) (文章) \
-[团队合作–人员体验](teamwork.md) (文章) 
+[通信 – 人员体验](communication.md) (文章) \
+[内容协作 – 人员体验](content-collaboration.md) (文章) \
+[会议 – 人员体验](meetings.md) (文章) \
+[移动性 – 人员体验](mobility.md) (文章) \
+[工作效率分数的隐私控件](privacy.md) (文章) \
+[团队合作 – 人员体验](teamwork.md) (文章) 

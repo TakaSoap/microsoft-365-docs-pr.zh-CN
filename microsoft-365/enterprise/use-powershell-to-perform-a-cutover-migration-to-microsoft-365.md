@@ -1,7 +1,7 @@
 ---
 title: 使用 PowerShell 直接转换迁移到 Microsoft 365
-ms.author: sirkkuw
-author: sirkkuw
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -15,16 +15,16 @@ f1.keywords:
 ms.custom: seo-marvel-apr2020
 ms.assetid: b468cb4b-a35c-43d3-85bf-65446998af40
 description: 了解如何通过执行到 Microsoft 365 的转换迁移，使用 PowerShell 一次从源电子邮件系统移动内容。
-ms.openlocfilehash: 60bd3cb246e04aba37be06f7a951abbf25708412
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 6e59ac4d590208e0faed22e94cabe05601b17f18
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50924800"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51581054"
 ---
 # <a name="use-powershell-to-perform-a-cutover-migration-to-microsoft-365"></a>使用 PowerShell 直接转换迁移到 Microsoft 365
 
-*本文适用于 Microsoft 365 企业版和 Office 365 企业版。*
+*此文章适用于 Microsoft 365 企业版和 Office 365 企业版。* 
 
 通过使用转换迁移，可以将源电子邮件系统中用户邮箱的内容一次全部迁移到 Microsoft 365。 本文将向您介绍如何通过 Exchange Online PowerShell 执行电子邮件直接转换迁移的任务。
 

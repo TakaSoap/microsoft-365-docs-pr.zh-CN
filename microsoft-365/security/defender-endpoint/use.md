@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: b490159d12bebdb95b6f168671393f8939da33be
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: ee6fd4bd8d60f828bb474fc80cb987f4f94edcbe
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51056561"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51581090"
 ---
 # <a name="overview-of-microsoft-defender-security-center"></a>Microsoft Defender 安全中心概述
 
@@ -46,7 +46,7 @@ Microsoft Defender 安全中心是一个门户，你可以在这里访问 Micros
 ## <a name="microsoft-defender-for-endpoint-interactive-guide"></a>Microsoft Defender for Endpoint 交互式指南
 在此交互式指南中，你将了解如何使用 Microsoft Defender for Endpoint 调查对组织的威胁。 你将看到 Microsoft Defender for Endpoint 如何帮助你识别可疑活动、调查组织面临的风险和修正威胁。
 
-> [!VIDEO https://aka.ms/MSDE-IG]
+[查看交互式指南](https://aka.ms/MSDE-IG)
 
 ### <a name="in-this-section"></a>本节内容
 

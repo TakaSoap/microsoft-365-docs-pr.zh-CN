@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 - m365initiative-coredeploy
 description: 'Microsoft 365 管理中心网络连接概述 (预览) '
-ms.openlocfilehash: 2b80dd001bd2ee5d5725ea67c73aa34b4eb8816c
-ms.sourcegitcommit: c75aac39ee8d93218a79585113ef6b36f47c9ddf
+ms.openlocfilehash: dd97a6d5cc9662f01854e1432660784358bce7b8
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2021
-ms.locfileid: "51408401"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51581126"
 ---
 # <a name="network-connectivity-in-the-microsoft-365-admin-center-preview"></a>Microsoft 365 管理中心中的网络连接 (预览) 
 
@@ -189,7 +189,7 @@ The details tab on the office location page shows the specific measurement resul
    > [!div class="mx-imgBorder"]
    > ![CSV 导入就绪邮件](../media/m365-mac-perf/m365-mac-perf-import-ready.png)
 
-## <a name="faq"></a>常见问题解答
+## <a name="faq"></a>常见问题
 
 ### <a name="what-is-a-microsoft-365-service-front-door"></a>什么是 Microsoft 365 服务前端？
 
@@ -205,6 +205,10 @@ Microsoft 365 服务前端是 Microsoft 全局网络的入口点，Office 客户
 ### <a name="what-is-an-internet-egress-location"></a>什么是 Internet 出口位置？
 
 Internet 出口位置是网络流量退出企业网络并连接到 Internet 的位置。 这还标识为具有网络地址转换 (NAT) 设备的位置，并且通常是与 Internet 服务提供商 (ISP) 连接的位置。 如果您看到您的位置和 Internet 出口位置之间的距离很长，这可能表示 WAN 回程很大。
+
+### <a name="what-license-is-needed-for-this-capability"></a>此功能需要哪些许可证？
+
+需要提供对 Microsoft 365 管理中心的访问权限的许可证。
 
 ## <a name="related-topics"></a>相关主题
 

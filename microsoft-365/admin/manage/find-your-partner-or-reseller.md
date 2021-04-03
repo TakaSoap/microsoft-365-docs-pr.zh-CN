@@ -2,8 +2,8 @@
 title: 查找合作伙伴或经销商
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: cmcatee
+author: cmcatee-MSFT
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -22,38 +22,38 @@ search.appverid:
 - MOE150
 - BEA160
 ms.assetid: b6c18a9b-2aed-4c84-9d75-af709160258c
-description: '了解如何查找新的 Microsoft 365 合作伙伴，或获取你过去使用过的合作伙伴的联系信息。 '
-ms.openlocfilehash: fad16990df7783908f59a6e3dd59cb0a1a13572e
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+description: '了解如何查找新的 Microsoft 365 合作伙伴，或获取过去合作过的合作伙伴的联系信息。 '
+ms.openlocfilehash: 189eda83f3eca957e6f9fa720e2f6ccdd07db171
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44780105"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51580938"
 ---
 # <a name="find-your-partner-or-reseller"></a>查找合作伙伴或经销商
 
-作为管理员，你可以通过 Microsoft 开放式批量许可计划与合作伙伴合作，以购买、激活和续订 Microsoft 365 订阅。 
+作为管理员，你可以与合作伙伴合作，通过 Microsoft 开放式批量许可计划购买、激活和续订 Microsoft 365 订阅。 
   
  **不确定开放式批量许可是否适合你？** 请参阅 [Microsoft 开放式计划概述](https://go.microsoft.com/fwlink/p/?LinkId=613298)。
   
 ## <a name="find-a-new-partner-or-reseller"></a>查找新合作伙伴或零售商
 
-如果您已准备好通过开放批量许可购买或续订 Microsoft 365，或者您只是想要详细了解如何使用合作伙伴，请选择下面的选项。 
+如果你已准备好通过开放式批量许可购买或续订 Microsoft 365，或者只想了解有关与合作伙伴合作的详细信息，请选择以下选项。 
   
-- [使用 Microsoft 定点搜索合作伙伴](https://go.microsoft.com/fwlink/p/?LinkId=613304)
+- [使用 Microsoft PinPoint 搜索合作伙伴](https://go.microsoft.com/fwlink/p/?LinkId=613304)
     
-- [呼叫 Microsoft 批量许可](https://go.microsoft.com/fwlink/p/?LinkId=613305)
+- [调用 Microsoft 批量许可](https://go.microsoft.com/fwlink/p/?LinkId=613305)
     
 ## <a name="find-contact-information-for-a-partner-youve-worked-with-in-the-past"></a>查找你过去合作的合作伙伴的联系信息
 
 > [!NOTE]
-> 在某些情况下，您可以在 Microsoft 365 管理中心为过去使用过的合作伙伴查找信息。 请注意，这些信息可能已经过时。 我们建议你联系组织中负责采购的人员或部门，了解你应与哪位合作伙伴合作。 
+> 在某些情况下，可以在 Microsoft 365 管理中心找到过去合作过的合作伙伴的信息。 请注意，这些信息可能已经过时。 我们建议你联系组织中负责采购的人员或部门，了解你应与哪位合作伙伴合作。 
   
 ## <a name="get-partner-info-in-the-admin-center"></a>在管理中心获取合作伙伴信息
 
-1. 在管理中心中，转到 "**设置**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2074649" target="_blank">合作伙伴关系</a>" 页面。
+1. 在管理中心，转到"设置  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2074649" target="_blank">""合作伙伴关系"</a>页面。
   
-2. 如果你有合作伙伴，合作伙伴的名称和你的组织的关系将在此处列出。 若要查看合作伙伴联系人信息（电话号码和电子邮件地址），请选择合作伙伴名称。
+2. 如果你有合作伙伴，合作伙伴的名称和与组织的关系将在此处列出。 若要查看合作伙伴联系人信息 (电话号码和电子邮件地址) ，请选择合作伙伴名称。
     
 ## <a name="more-resources"></a>更多资源
 

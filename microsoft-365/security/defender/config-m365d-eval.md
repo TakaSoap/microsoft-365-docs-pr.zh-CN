@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 8bb80e032fd2eb4c618b60f4ab46829d5cf11b6d
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 9b192a029704d1354867b169efdf0d489345030e
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51199225"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51580962"
 ---
 # <a name="configure-microsoft-365-defender-pillars-for-your-trial-lab-or-pilot-environment"></a>为试用实验室或试验环境配置 Microsoft 365 Defender 支柱
 
@@ -39,7 +39,7 @@ ms.locfileid: "51199225"
 
 创建 Microsoft 365 Defender 试用实验室或试验环境并部署它的过程分三个阶段：
 
-|[![阶段 1：准备](../../media/phase-diagrams/prepare.png)](prepare-m365d-eval.md)<br/>[阶段 1：准备](prepare-m365d-eval.md) |[![阶段 2：设置](../../media/phase-diagrams/setup.png)](setup-m365deval.md)<br/>[阶段 2：设置](setup-m365deval.md) |![阶段 3：载入](../../media/phase-diagrams/onboard.png)<br/>阶段 3：载入 | [![返回到试点](../../media/phase-diagrams/backtopilot.png)](m365d-pilot.md)<br/>[返回到试点手册](m365d-pilot.md) |
+|[![阶段 1：准备](../../media/phase-diagrams/prepare.png)](prepare-m365d-eval.md)<br/>[阶段 1：准备](prepare-m365d-eval.md) |[![阶段 2：设置](../../media/phase-diagrams/setup.png)](setup-m365deval.md)<br/>[阶段 2：设置](setup-m365deval.md) |![阶段 3：开始使用](../../media/phase-diagrams/onboard.png)<br/>阶段 3：开始使用 | [![返回到试点](../../media/phase-diagrams/backtopilot.png)](m365d-pilot.md)<br/>[返回到试点手册](m365d-pilot.md) |
 |--|--|--|--|
 || |*你在这里！* | |
 
@@ -285,8 +285,7 @@ Microsoft 365 Defender 由四大支柱组成。 尽管一个支柱已经可为�
 
 恭喜！ 你刚刚创建了 Microsoft 365 Defender 试用实验室或试验环境！ 现在，你可以熟悉 Microsoft 365 Defender 用户界面！ 查看你可以从以下 Microsoft 365 Defender 交互式指南中了解哪些内容，并了解如何使用每个仪表板执行日常安全操作任务。
 
-
->[!VIDEO https://aka.ms/MTP-Interactive-Guide]
+[查看交互式指南](https://aka.ms/MTP-Interactive-Guide)
 
 接下来，你可以模拟攻击，并查看跨产品功能如何检测、创建警报以及自动响应终结点上的无文件攻击。
 

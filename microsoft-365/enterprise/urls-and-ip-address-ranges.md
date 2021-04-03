@@ -24,12 +24,12 @@ search.appverid:
 ms.assetid: 8548a211-3fe7-47cb-abb1-355ea5aa88a2
 description: 摘要：Office 365 需要连接到 Internet。对于使用 Office 365 计划（包括政府社区云 (GCC)）的客户，应该可以访问以下终结点。
 hideEdit: true
-ms.openlocfilehash: 1c0a2a486bf6964edc9b94fd670c96ade161cacd
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: b4b256e9138f89cd9d44182a08dd22050b17f7c2
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50925264"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51581102"
 ---
 # <a name="office-365-urls-and-ip-address-ranges"></a>Office 365 URL 和 IP 地址范围
 
@@ -66,6 +66,7 @@ Office 365 需要连接到 Internet。对于使用 Office 365 计划（包括政
 >
 
 ## <a name="related-topics"></a>相关主题
+[Office 365 IP 地址和 URL Web 服务中未包含的其他终结点](https://docs.microsoft.com/microsoft-365/enterprise/additional-office365-ip-addresses-and-urls?view=o365-worldwide)
 
 [管理 Office 365 终结点](managing-office-365-endpoints.md)
 

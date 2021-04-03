@@ -2,8 +2,8 @@
 title: 确定外接程序的集中部署是否适用于您的组织
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: kwekua
+author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: b4527d49-4073-4b43-8274-31b7a3166f92
 description: 确定租户和用户是否满足要求，以便可以使用集中部署部署 Office 加载项。
-ms.openlocfilehash: c9f2879e989085042758cc1c5385bea45427e7ff
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 1516a10932158ba137f58900e0c19c5fea3bd119
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50915454"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51580950"
 ---
 # <a name="determine-if-centralized-deployment-of-add-ins-works-for-your-organization"></a>确定外接程序的集中部署是否适用于您的组织
 
@@ -43,7 +43,7 @@ ms.locfileid: "50915454"
 
 外接程序最多可能需要 24 小时才能显示给所有用户的客户端。
   
-## <a name="requirements"></a>Requirements
+## <a name="requirements"></a>要求
 
 外接程序的集中部署要求用户使用 Microsoft 365 企业版 SKUS：E3/E5/F3 或商业 SK：Business Basic、Business Standard、Business Premium (，并且使用其组织 ID) 登录 Office，并拥有 Exchange Online 和活动的 Exchange Online 邮箱。 订阅目录必须位于 Azure Active Directory 中，或已联合到 Azure Active Directory。
 可以查看以下 Office 和 Exchange 的特定要求，或使用集中 [部署兼容性检查器](#centralized-deployment-compatibility-checker)。

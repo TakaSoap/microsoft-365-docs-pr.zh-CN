@@ -19,12 +19,12 @@ ms.custom:
 description: 管理员可以了解如何使用安全 & 合规中心中的提交门户将可疑电子邮件、可疑钓鱼邮件、垃圾邮件和其他可能有害的邮件、URL 和文件提交给 Microsoft 进行扫描。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 6f1294335be5a82ef7219ef9096d84d840271c5b
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: 96a5469b1093c71997747b2c4c3b49bc1964f72b
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51499336"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51581066"
 ---
 # <a name="use-admin-submission-to-submit-suspected-spam-phish-urls-and-files-to-microsoft"></a>使用“管理员提交”将可疑的垃圾邮件、网络钓鱼诈骗、URL和文件提交给 Microsoft
 
@@ -55,7 +55,7 @@ ms.locfileid: "51499336"
 
 - 若要向 Microsoft 提交邮件和文件，你需要是以下角色组之一的成员：
 
-  - [安全和合规中心](permissions-in-the-security-and-compliance-center.md)中的“**组织管理**”或“**安全管理员**”。
+  - **安全与****合规中心** 中的组织&[或安全读者](permissions-in-the-security-and-compliance-center.md)。
 
   - **Exchange** Online 中的 [组织管理](/Exchange/permissions-exo/permissions-exo#role-groups)。
 

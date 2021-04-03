@@ -9,12 +9,13 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 5b5fb7185bb696bb6daae0a67a209cf3f7e77655
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+audience: Admin
+ms.openlocfilehash: fcfddadf13e000156fa5431cc30bc72f4f3537e2
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50924560"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51581042"
 ---
 # <a name="prerequisites-for-microsoft-managed-desktop"></a>Microsoft 托管桌面的系统必备
 
@@ -47,7 +48,7 @@ Microsoft 托管桌面需要某些许可证选项才能正常运行。 请参阅
 - Microsoft Intune 
 - Windows 10 企业版  
 - Microsoft Defender for Endpoint
-- 适用于企业的 Microsoft 365 应用
+- Microsoft 365 企业应用版
 - Microsoft Teams
 - [SharePoint Online 计划 2](https://www.microsoft.com/microsoft-365/sharepoint/compare-sharepoint-plans)
 - [Exchange Online 计划 2](https://www.microsoft.com/microsoft-365/exchange/compare-microsoft-exchange-online-plans) 
@@ -55,3 +56,15 @@ Microsoft 托管桌面需要某些许可证选项才能正常运行。 请参阅
 
 > [!TIP]
 > 你的 Microsoft 帐户管理器将帮助你查看当前许可证和服务计划，并找到最有效的途径，帮助你获取所需的任何其他许可证或服务计划，同时避免重复。
+
+## <a name="steps-to-get-ready"></a>准备步骤
+
+1. 查看 [Microsoft 托管桌面的先决条件](prerequisites.md)。  (本文) 
+2. 使用 [准备情况评估工具](readiness-assessment-tool.md)。
+3. [来宾帐户的先决条件](guest-accounts.md)
+4. [Microsoft 托管桌面的网络配置](network.md)
+5. [为 Microsoft 托管桌面准备证书和网络配置文件](certs-wifi-lan.md)
+6. [为 Microsoft 托管桌面准备本地资源访问权限](authentication.md)
+7. [Microsoft 托管桌面中的应用](apps.md)
+8. [为 Microsoft 托管桌面准备映射的驱动器](mapped-drives.md)
+9. [为 Microsoft 托管桌面准备打印资源](printing.md)

@@ -2,8 +2,8 @@
 title: 次要加载项和从应用商店获取加载项
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: kwekua
+author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
 description: 了解 GDPR 一般数据保护 () 管理未成年人个人数据的法规。
-ms.openlocfilehash: c49ea719bc85166cc8082200eb833273b0ab5835
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: e7f53a5a6b64f29f5029f0080fef44439c926edb
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50915250"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51580914"
 ---
 # <a name="minors-and-acquiring-add-ins-from-the-store"></a>次要加载项和从应用商店获取加载项
 

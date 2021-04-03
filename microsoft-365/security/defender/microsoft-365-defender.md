@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: f789053e0922ee81155a243bbaa7b3ab5b0f6d87
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 687077b1c9ff2449d9994875419a97cf0c503c2f
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51055557"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51581078"
 ---
 # <a name="microsoft-365-defender"></a>Microsoft 365 Defender
 
@@ -35,7 +35,7 @@ ms.locfileid: "51055557"
 **适用于：**
 - Microsoft 365 Defender
 
-> 想要体验 Microsoft 365 Defender？ 可以在[实验室环境中评估它或在](m365d-evaluation.md?ocid=cx-docs-MTPtriallab)[生产中运行你的试验项目](m365d-pilot.md?ocid=cx-evalpilot)。
+> 希望体验 Microsoft 365 Defender？ 你可[在验室环境中评估](m365d-evaluation.md?ocid=cx-docs-MTPtriallab) 或[生产中运行试点项目](m365d-pilot.md?ocid=cx-evalpilot)。
 >
 
 Microsoft 365 Defender 是一款统一的漏洞前和漏洞后企业防御套件，结合检测、预防、调查和应急为一体，可针对终结点、标识、电子邮件和应用程序提供集成的保护，抵御复杂的攻击。
@@ -56,7 +56,7 @@ Microsoft 365 Defender 是一款统一的漏洞前和漏洞后企业防御套件
 
 在此交互式指南中，你将了解如何使用 Microsoft 365 Defender 保护你的组织。 你将看到 Microsoft 365 Defender 如何自动帮助检测安全风险、调查组织攻击和防止有害的活动。
 
-> [!VIDEO https://aka.ms/M365Defender-InteractiveGuide]
+[查看交互式指南](https://aka.ms/M365Defender-InteractiveGuide)
 
 
 

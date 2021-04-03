@@ -20,21 +20,14 @@ ms.custom:
 search.appverid:
 - MET150
 description: 了解如何升级到其他计划。
-ms.openlocfilehash: 5f853dcd0d247a6422489cbe5d0287765bfd72a6
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 79ca18df28505c457e085dbd73c2fbd04eff53ca
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51164445"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51580974"
 ---
 # <a name="upgrade-to-a-different-plan"></a>升级到其他计划
-
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> 管理中心正在发生改变。 如果你的体验与此处提供的详细信息不匹配，请参阅[有关新版 Microsoft 365 管理中心](../../admin/microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet)。
-
-::: moniker-end
 
 当业务发生变化或需要更多功能时，您可以升级计划。 执行此操作的最简单方法是使用管理中心中的"升级"选项卡。 但是，并非所有 **情况** 都支持使用"升级"选项卡。 在某些情况下，您可以手动更改计划。
 
