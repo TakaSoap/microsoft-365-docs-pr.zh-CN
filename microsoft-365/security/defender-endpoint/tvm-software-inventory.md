@@ -8,8 +8,8 @@ ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: ellevin
-author: levinec
+ms.author: dansimp
+author: dansimp
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
@@ -18,114 +18,114 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: a161cfcad301c6e5cac2c7398b5c13559b27698d
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 02d7810ef27b495e69fd6d8ca72baf40df13ee93
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51055885"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51500452"
 ---
-# <a name="software-inventory---threat-and-vulnerability-management"></a><span data-ttu-id="76bb6-104">软件清单 - 威胁和漏洞管理</span><span class="sxs-lookup"><span data-stu-id="76bb6-104">Software inventory - threat and vulnerability management</span></span>
+# <a name="software-inventory---threat-and-vulnerability-management"></a><span data-ttu-id="6b9d7-104">软件清单 - 威胁和漏洞管理</span><span class="sxs-lookup"><span data-stu-id="6b9d7-104">Software inventory - threat and vulnerability management</span></span>
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-<span data-ttu-id="76bb6-105">**适用于：**</span><span class="sxs-lookup"><span data-stu-id="76bb6-105">**Applies to:**</span></span>
-- [<span data-ttu-id="76bb6-106">Microsoft Defender for Endpoint</span><span class="sxs-lookup"><span data-stu-id="76bb6-106">Microsoft Defender for Endpoint</span></span>](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [<span data-ttu-id="76bb6-107">威胁和漏洞管理</span><span class="sxs-lookup"><span data-stu-id="76bb6-107">Threat and vulnerability management</span></span>](next-gen-threat-and-vuln-mgt.md)
-- [<span data-ttu-id="76bb6-108">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="76bb6-108">Microsoft 365 Defender</span></span>](https://go.microsoft.com/fwlink/?linkid=2118804)
+<span data-ttu-id="6b9d7-105">**适用于：**</span><span class="sxs-lookup"><span data-stu-id="6b9d7-105">**Applies to:**</span></span>
+- [<span data-ttu-id="6b9d7-106">Microsoft Defender for Endpoint</span><span class="sxs-lookup"><span data-stu-id="6b9d7-106">Microsoft Defender for Endpoint</span></span>](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [<span data-ttu-id="6b9d7-107">威胁和漏洞管理</span><span class="sxs-lookup"><span data-stu-id="6b9d7-107">Threat and vulnerability management</span></span>](next-gen-threat-and-vuln-mgt.md)
+- [<span data-ttu-id="6b9d7-108">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="6b9d7-108">Microsoft 365 Defender</span></span>](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-><span data-ttu-id="76bb6-109">想要体验适用于终结点的 Defender？</span><span class="sxs-lookup"><span data-stu-id="76bb6-109">Want to experience Defender for Endpoint?</span></span> [<span data-ttu-id="76bb6-110">注册免费试用版。</span><span class="sxs-lookup"><span data-stu-id="76bb6-110">Sign up for a free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
+><span data-ttu-id="6b9d7-109">想要体验适用于终结点的 Defender？</span><span class="sxs-lookup"><span data-stu-id="6b9d7-109">Want to experience Defender for Endpoint?</span></span> [<span data-ttu-id="6b9d7-110">注册免费试用版。</span><span class="sxs-lookup"><span data-stu-id="6b9d7-110">Sign up for a free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
 
-<span data-ttu-id="76bb6-111">威胁和漏洞管理中的软件清单是组织中具有正式通用平台枚举的已知软件列表 ([CPE) 。 ](https://nvd.nist.gov/products/cpe)</span><span class="sxs-lookup"><span data-stu-id="76bb6-111">The software inventory in threat and vulnerability management is a list of known software in your organization with official [Common Platform Enumerations (CPE)](https://nvd.nist.gov/products/cpe).</span></span> <span data-ttu-id="76bb6-112">没有正式 CPE 的软件产品没有发布漏洞。</span><span class="sxs-lookup"><span data-stu-id="76bb6-112">Software products without an official CPE don’t have vulnerabilities published.</span></span> <span data-ttu-id="76bb6-113">它还包括供应商名称、漏洞数量、威胁和公开设备数量等详细信息。</span><span class="sxs-lookup"><span data-stu-id="76bb6-113">It also includes details such as the name of the vendor, number of weaknesses, threats, and number of exposed devices.</span></span>
+<span data-ttu-id="6b9d7-111">威胁和漏洞管理中的软件清单是组织中具有正式通用平台枚举的已知软件列表 ([CPE) 。 ](https://nvd.nist.gov/products/cpe)</span><span class="sxs-lookup"><span data-stu-id="6b9d7-111">The software inventory in threat and vulnerability management is a list of known software in your organization with official [Common Platform Enumerations (CPE)](https://nvd.nist.gov/products/cpe).</span></span> <span data-ttu-id="6b9d7-112">没有正式 CPE 的软件产品没有发布漏洞。</span><span class="sxs-lookup"><span data-stu-id="6b9d7-112">Software products without an official CPE don’t have vulnerabilities published.</span></span> <span data-ttu-id="6b9d7-113">它还包括供应商名称、漏洞数量、威胁和公开设备数量等详细信息。</span><span class="sxs-lookup"><span data-stu-id="6b9d7-113">It also includes details such as the name of the vendor, number of weaknesses, threats, and number of exposed devices.</span></span>
 
-## <a name="how-it-works"></a><span data-ttu-id="76bb6-114">运作方式</span><span class="sxs-lookup"><span data-stu-id="76bb6-114">How it works</span></span>
+## <a name="how-it-works"></a><span data-ttu-id="6b9d7-114">运作方式</span><span class="sxs-lookup"><span data-stu-id="6b9d7-114">How it works</span></span>
 
-<span data-ttu-id="76bb6-115">在发现领域，我们正在利用在 Microsoft Defender 中负责检测和漏洞评估的同一组信号，用于终结点检测和 [响应功能](overview-endpoint-detection-response.md)。</span><span class="sxs-lookup"><span data-stu-id="76bb6-115">In the field of discovery, we're leveraging the same set of signals that is responsible for detection and vulnerability assessment in [Microsoft Defender for Endpoint detection and response capabilities](overview-endpoint-detection-response.md).</span></span>
+<span data-ttu-id="6b9d7-115">在发现领域，我们正在利用在 Microsoft Defender 中负责检测和漏洞评估的同一组信号，用于终结点检测和 [响应功能](overview-endpoint-detection-response.md)。</span><span class="sxs-lookup"><span data-stu-id="6b9d7-115">In the field of discovery, we're leveraging the same set of signals that is responsible for detection and vulnerability assessment in [Microsoft Defender for Endpoint detection and response capabilities](overview-endpoint-detection-response.md).</span></span>
 
-<span data-ttu-id="76bb6-116">由于它是实时的，因此在几分钟内，您将在发现漏洞信息时看到它们。</span><span class="sxs-lookup"><span data-stu-id="76bb6-116">Since it's real time, in a matter of minutes, you'll see vulnerability information as they get discovered.</span></span> <span data-ttu-id="76bb6-117">该引擎自动从多个安全源获取信息。</span><span class="sxs-lookup"><span data-stu-id="76bb6-117">The engine automatically grabs information from multiple security feeds.</span></span> <span data-ttu-id="76bb6-118">事实上，你将看到特定软件是否连接到实时威胁活动。</span><span class="sxs-lookup"><span data-stu-id="76bb6-118">In fact, you'll see if a particular software is connected to a live threat campaign.</span></span> <span data-ttu-id="76bb6-119">它还提供指向威胁分析报告的链接（一旦可用）。</span><span class="sxs-lookup"><span data-stu-id="76bb6-119">It also provides a link to a Threat Analytics report soon as it's available.</span></span>
+<span data-ttu-id="6b9d7-116">由于它是实时的，因此在几分钟内，您将在发现漏洞信息时看到它们。</span><span class="sxs-lookup"><span data-stu-id="6b9d7-116">Since it's real time, in a matter of minutes, you'll see vulnerability information as they get discovered.</span></span> <span data-ttu-id="6b9d7-117">该引擎自动从多个安全源获取信息。</span><span class="sxs-lookup"><span data-stu-id="6b9d7-117">The engine automatically grabs information from multiple security feeds.</span></span> <span data-ttu-id="6b9d7-118">事实上，你将看到特定软件是否连接到实时威胁活动。</span><span class="sxs-lookup"><span data-stu-id="6b9d7-118">In fact, you'll see if a particular software is connected to a live threat campaign.</span></span> <span data-ttu-id="6b9d7-119">它还提供指向威胁分析报告的链接（一旦可用）。</span><span class="sxs-lookup"><span data-stu-id="6b9d7-119">It also provides a link to a Threat Analytics report soon as it's available.</span></span>
 
-## <a name="navigate-to-the-software-inventory-page"></a><span data-ttu-id="76bb6-120">导航到"软件清单"页</span><span class="sxs-lookup"><span data-stu-id="76bb6-120">Navigate to the Software inventory page</span></span>
+## <a name="navigate-to-the-software-inventory-page"></a><span data-ttu-id="6b9d7-120">导航到"软件清单"页</span><span class="sxs-lookup"><span data-stu-id="6b9d7-120">Navigate to the Software inventory page</span></span>
 
-<span data-ttu-id="76bb6-121">通过从 Microsoft Defender安全中心的威胁和漏洞管理导航菜单中选择软件清单来访问[软件清单页面](portal-overview.md)。</span><span class="sxs-lookup"><span data-stu-id="76bb6-121">Access the Software inventory page by selecting **Software inventory** from the threat and vulnerability management navigation menu in the [Microsoft Defender Security Center](portal-overview.md).</span></span>
+<span data-ttu-id="6b9d7-121">通过从 Microsoft Defender安全中心的威胁和漏洞管理导航菜单中选择软件清单来访问[软件清单页面](portal-overview.md)。</span><span class="sxs-lookup"><span data-stu-id="6b9d7-121">Access the Software inventory page by selecting **Software inventory** from the threat and vulnerability management navigation menu in the [Microsoft Defender Security Center](portal-overview.md).</span></span>
 
-<span data-ttu-id="76bb6-122">在"设备"列表的"单个设备"页面中查看 [特定设备上的软件](machines-view-overview.md)。</span><span class="sxs-lookup"><span data-stu-id="76bb6-122">View software on specific devices in the individual devices pages from the [devices list](machines-view-overview.md).</span></span>
+<span data-ttu-id="6b9d7-122">在"设备"列表的"单个设备"页面中查看 [特定设备上的软件](machines-view-overview.md)。</span><span class="sxs-lookup"><span data-stu-id="6b9d7-122">View software on specific devices in the individual devices pages from the [devices list](machines-view-overview.md).</span></span>
 
 >[!NOTE]
-><span data-ttu-id="76bb6-123">如果使用 Microsoft Defender for Endpoint 全局搜索搜索软件，请确保使用下划线字符而不是空格。</span><span class="sxs-lookup"><span data-stu-id="76bb6-123">If you search for software using the Microsoft Defender for Endpoint global search, make sure to put an underscore instead of a space.</span></span> <span data-ttu-id="76bb6-124">例如，为了获得最佳搜索结果，你要编写"windows_10"而不是"Windows 10"。</span><span class="sxs-lookup"><span data-stu-id="76bb6-124">For example, for the best search results you'd write "windows_10" instead of "Windows 10".</span></span>
+><span data-ttu-id="6b9d7-123">如果使用 Microsoft Defender for Endpoint 全局搜索搜索软件，请确保使用下划线字符而不是空格。</span><span class="sxs-lookup"><span data-stu-id="6b9d7-123">If you search for software using the Microsoft Defender for Endpoint global search, make sure to put an underscore instead of a space.</span></span> <span data-ttu-id="6b9d7-124">例如，为了获得最佳搜索结果，你要编写"windows_10"而不是"Windows 10"。</span><span class="sxs-lookup"><span data-stu-id="6b9d7-124">For example, for the best search results you'd write "windows_10" instead of "Windows 10".</span></span>
 
-## <a name="software-inventory-overview"></a><span data-ttu-id="76bb6-125">软件清单概述</span><span class="sxs-lookup"><span data-stu-id="76bb6-125">Software inventory overview</span></span>
+## <a name="software-inventory-overview"></a><span data-ttu-id="6b9d7-125">软件清单概述</span><span class="sxs-lookup"><span data-stu-id="6b9d7-125">Software inventory overview</span></span>
 
-<span data-ttu-id="76bb6-126">" **软件清单** "页将打开，其中列出了网络中安装的软件，包括供应商名称、发现的缺点、与其关联的威胁、公开的设备、曝光评分的影响和标签。</span><span class="sxs-lookup"><span data-stu-id="76bb6-126">The **Software inventory** page opens with a list of software installed in your network, including the vendor name, weaknesses found, threats associated with them, exposed devices, impact to exposure score, and tags.</span></span>
+<span data-ttu-id="6b9d7-126">" **软件清单** "页将打开，其中列出了网络中安装的软件，包括供应商名称、发现的缺点、与其关联的威胁、公开的设备、曝光评分的影响和标签。</span><span class="sxs-lookup"><span data-stu-id="6b9d7-126">The **Software inventory** page opens with a list of software installed in your network, including the vendor name, weaknesses found, threats associated with them, exposed devices, impact to exposure score, and tags.</span></span>
 
-<span data-ttu-id="76bb6-127">你可以根据软件中发现的缺点、与其关联的威胁以及软件是否已达到支持终止等标记来筛选列表视图。</span><span class="sxs-lookup"><span data-stu-id="76bb6-127">You can filter the list view based on weaknesses found in the software, threats associated with them, and tags like whether the software has reached end-of-support.</span></span>
+<span data-ttu-id="6b9d7-127">你可以根据软件中发现的缺点、与其关联的威胁以及软件是否已达到支持终止等标记来筛选列表视图。</span><span class="sxs-lookup"><span data-stu-id="6b9d7-127">You can filter the list view based on weaknesses found in the software, threats associated with them, and tags like whether the software has reached end-of-support.</span></span>
 
 ![软件清单的登陆页面示例。](images/tvm-software-inventory.png)
 
-<span data-ttu-id="76bb6-129">选择要调查的软件。</span><span class="sxs-lookup"><span data-stu-id="76bb6-129">Select the software that you want to investigate.</span></span> <span data-ttu-id="76bb6-130">在打开一个飞出面板时，页面上的信息视图会更紧凑。</span><span class="sxs-lookup"><span data-stu-id="76bb6-130">A flyout panel will open with a more compact view of the information on the page.</span></span> <span data-ttu-id="76bb6-131">你可以深入调查并选择"打开软件页"，或者通过选择"报告不准确"来标记 **任何技术不一致情况**。</span><span class="sxs-lookup"><span data-stu-id="76bb6-131">You can either dive deeper into the investigation and select **Open software page**, or flag any technical inconsistencies by selecting **Report inaccuracy**.</span></span>
+<span data-ttu-id="6b9d7-129">选择要调查的软件。</span><span class="sxs-lookup"><span data-stu-id="6b9d7-129">Select the software that you want to investigate.</span></span> <span data-ttu-id="6b9d7-130">在打开一个飞出面板时，页面上的信息视图会更紧凑。</span><span class="sxs-lookup"><span data-stu-id="6b9d7-130">A flyout panel will open with a more compact view of the information on the page.</span></span> <span data-ttu-id="6b9d7-131">你可以深入调查并选择"打开软件页"，或者通过选择"报告不准确"来标记 **任何技术不一致情况**。</span><span class="sxs-lookup"><span data-stu-id="6b9d7-131">You can either dive deeper into the investigation and select **Open software page**, or flag any technical inconsistencies by selecting **Report inaccuracy**.</span></span>
 
-### <a name="software-that-isnt-supported"></a><span data-ttu-id="76bb6-132">不支持的软件</span><span class="sxs-lookup"><span data-stu-id="76bb6-132">Software that isn't supported</span></span>
+### <a name="software-that-isnt-supported"></a><span data-ttu-id="6b9d7-132">不支持的软件</span><span class="sxs-lookup"><span data-stu-id="6b9d7-132">Software that isn't supported</span></span>
 
-<span data-ttu-id="76bb6-133">"软件清单"页中&当前不受威胁和漏洞管理支持的软件。</span><span class="sxs-lookup"><span data-stu-id="76bb6-133">Software that isn't currently supported by threat & vulnerability management may be present in the Software inventory page.</span></span> <span data-ttu-id="76bb6-134">由于它不受支持，因此只有有限的数据可用。</span><span class="sxs-lookup"><span data-stu-id="76bb6-134">Because it is not supported, only limited data will be available.</span></span> <span data-ttu-id="76bb6-135">使用"漏洞"部分中的"不可用"选项按不受支持的软件进行筛选。</span><span class="sxs-lookup"><span data-stu-id="76bb6-135">Filter by unsupported software with the "Not available" option in the "Weakness" section.</span></span>
+<span data-ttu-id="6b9d7-133">"软件清单"页中&当前不受威胁和漏洞管理支持的软件。</span><span class="sxs-lookup"><span data-stu-id="6b9d7-133">Software that isn't currently supported by threat & vulnerability management may be present in the Software inventory page.</span></span> <span data-ttu-id="6b9d7-134">由于它不受支持，因此只有有限的数据可用。</span><span class="sxs-lookup"><span data-stu-id="6b9d7-134">Because it is not supported, only limited data will be available.</span></span> <span data-ttu-id="6b9d7-135">使用"漏洞"部分中的"不可用"选项按不受支持的软件进行筛选。</span><span class="sxs-lookup"><span data-stu-id="6b9d7-135">Filter by unsupported software with the "Not available" option in the "Weakness" section.</span></span>
 
 ![不支持的软件筛选器。](images/tvm-unsupported-software-filter.png)
 
-<span data-ttu-id="76bb6-137">下面指示软件不受支持：</span><span class="sxs-lookup"><span data-stu-id="76bb6-137">The following indicates that a software is not supported:</span></span>
+<span data-ttu-id="6b9d7-137">下面指示软件不受支持：</span><span class="sxs-lookup"><span data-stu-id="6b9d7-137">The following indicates that a software is not supported:</span></span>
 
-- <span data-ttu-id="76bb6-138">"漏洞"字段显示"不可用"</span><span class="sxs-lookup"><span data-stu-id="76bb6-138">Weaknesses field shows "Not available"</span></span>
-- <span data-ttu-id="76bb6-139">"公开的设备"字段显示短划线</span><span class="sxs-lookup"><span data-stu-id="76bb6-139">Exposed devices field shows a dash</span></span>
-- <span data-ttu-id="76bb6-140">在侧面板和软件页中添加的信息性文本</span><span class="sxs-lookup"><span data-stu-id="76bb6-140">Informational text added in side panel and in software page</span></span>
-- <span data-ttu-id="76bb6-141">软件页面将没有安全建议、发现的漏洞或事件时间线部分</span><span class="sxs-lookup"><span data-stu-id="76bb6-141">The software page won't have the security recommendations, discovered vulnerabilities, or event timeline sections</span></span>
+- <span data-ttu-id="6b9d7-138">"漏洞"字段显示"不可用"</span><span class="sxs-lookup"><span data-stu-id="6b9d7-138">Weaknesses field shows "Not available"</span></span>
+- <span data-ttu-id="6b9d7-139">"公开的设备"字段显示短划线</span><span class="sxs-lookup"><span data-stu-id="6b9d7-139">Exposed devices field shows a dash</span></span>
+- <span data-ttu-id="6b9d7-140">在侧面板和软件页中添加的信息性文本</span><span class="sxs-lookup"><span data-stu-id="6b9d7-140">Informational text added in side panel and in software page</span></span>
+- <span data-ttu-id="6b9d7-141">软件页面将没有安全建议、发现的漏洞或事件时间线部分</span><span class="sxs-lookup"><span data-stu-id="6b9d7-141">The software page won't have the security recommendations, discovered vulnerabilities, or event timeline sections</span></span>
 
-<span data-ttu-id="76bb6-142">目前，没有 CPE 的产品不会显示在软件清单页中，而只显示在设备级别的软件清单中。</span><span class="sxs-lookup"><span data-stu-id="76bb6-142">Currently, products without a CPE are not shown in the software inventory page, only in the device level software inventory.</span></span>
+<span data-ttu-id="6b9d7-142">目前，没有 CPE 的产品不会显示在软件清单页中，而只显示在设备级别的软件清单中。</span><span class="sxs-lookup"><span data-stu-id="6b9d7-142">Currently, products without a CPE are not shown in the software inventory page, only in the device level software inventory.</span></span>
 
-## <a name="software-inventory-on-devices"></a><span data-ttu-id="76bb6-143">设备上的软件清单</span><span class="sxs-lookup"><span data-stu-id="76bb6-143">Software inventory on devices</span></span>
+## <a name="software-inventory-on-devices"></a><span data-ttu-id="6b9d7-143">设备上的软件清单</span><span class="sxs-lookup"><span data-stu-id="6b9d7-143">Software inventory on devices</span></span>
 
-<span data-ttu-id="76bb6-144">从 Microsoft Defender 安全中心导航面板中，转到 **[设备列表](machines-view-overview.md)**。</span><span class="sxs-lookup"><span data-stu-id="76bb6-144">From the Microsoft Defender Security Center navigation panel, go to the **[Devices list](machines-view-overview.md)**.</span></span> <span data-ttu-id="76bb6-145">选择设备名称以打开设备页面 (如 Computer1) ，然后选择"软件清单"选项卡以查看设备上存在的所有已知软件的列表。</span><span class="sxs-lookup"><span data-stu-id="76bb6-145">Select the name of a device to open the device page (like Computer1), then select the **Software inventory** tab to see a list of all the known software present on the device.</span></span> <span data-ttu-id="76bb6-146">选择特定软件项以打开包含详细信息的飞出区。</span><span class="sxs-lookup"><span data-stu-id="76bb6-146">Select a specific software entry to open the flyout with more information.</span></span>
+<span data-ttu-id="6b9d7-144">从 Microsoft Defender 安全中心导航面板中，转到 **[设备列表](machines-view-overview.md)**。</span><span class="sxs-lookup"><span data-stu-id="6b9d7-144">From the Microsoft Defender Security Center navigation panel, go to the **[Devices list](machines-view-overview.md)**.</span></span> <span data-ttu-id="6b9d7-145">选择设备名称以打开设备页面 (如 Computer1) ，然后选择"软件清单"选项卡以查看设备上存在的所有已知软件的列表。</span><span class="sxs-lookup"><span data-stu-id="6b9d7-145">Select the name of a device to open the device page (like Computer1), then select the **Software inventory** tab to see a list of all the known software present on the device.</span></span> <span data-ttu-id="6b9d7-146">选择特定软件项以打开包含详细信息的飞出区。</span><span class="sxs-lookup"><span data-stu-id="6b9d7-146">Select a specific software entry to open the flyout with more information.</span></span>
 
-<span data-ttu-id="76bb6-147">软件可能在设备级别可见，即使当前不受威胁和漏洞管理支持。</span><span class="sxs-lookup"><span data-stu-id="76bb6-147">Software may be visible at the device level even if it is currently not supported by threat and vulnerability management.</span></span> <span data-ttu-id="76bb6-148">但是，只有有限的数据可用。</span><span class="sxs-lookup"><span data-stu-id="76bb6-148">However, only limited data will be available.</span></span> <span data-ttu-id="76bb6-149">你将知道软件是否不受支持，因为它将在"漏洞"列中显示"不可用"。</span><span class="sxs-lookup"><span data-stu-id="76bb6-149">You'll know if software is unsupported because it will say "Not available" in the "Weakness" column.</span></span>
+<span data-ttu-id="6b9d7-147">软件可能在设备级别可见，即使当前不受威胁和漏洞管理支持。</span><span class="sxs-lookup"><span data-stu-id="6b9d7-147">Software may be visible at the device level even if it is currently not supported by threat and vulnerability management.</span></span> <span data-ttu-id="6b9d7-148">但是，只有有限的数据可用。</span><span class="sxs-lookup"><span data-stu-id="6b9d7-148">However, only limited data will be available.</span></span> <span data-ttu-id="6b9d7-149">你将知道软件是否不受支持，因为它将在"漏洞"列中显示"不可用"。</span><span class="sxs-lookup"><span data-stu-id="6b9d7-149">You'll know if software is unsupported because it will say "Not available" in the "Weakness" column.</span></span>
 
-<span data-ttu-id="76bb6-150">没有 CPE 的软件也可以显示在此设备特定的软件清单下。</span><span class="sxs-lookup"><span data-stu-id="76bb6-150">Software with no CPE can also show up under this device specific software inventory.</span></span>
+<span data-ttu-id="6b9d7-150">没有 CPE 的软件也可以显示在此设备特定的软件清单下。</span><span class="sxs-lookup"><span data-stu-id="6b9d7-150">Software with no CPE can also show up under this device specific software inventory.</span></span>
 
-### <a name="software-evidence"></a><span data-ttu-id="76bb6-151">软件证据</span><span class="sxs-lookup"><span data-stu-id="76bb6-151">Software evidence</span></span>
+### <a name="software-evidence"></a><span data-ttu-id="6b9d7-151">软件证据</span><span class="sxs-lookup"><span data-stu-id="6b9d7-151">Software evidence</span></span>
 
-<span data-ttu-id="76bb6-152">查看我们在设备上从注册表和/或磁盘检测到特定软件的证据。可以在设备软件清单的任何设备上找到它。</span><span class="sxs-lookup"><span data-stu-id="76bb6-152">See evidence of where we detected a specific software on a device from the registry, disk, or both.You can find it on any device in the device software inventory.</span></span>
+<span data-ttu-id="6b9d7-152">查看我们在设备上从注册表和/或磁盘检测到特定软件的证据。可以在设备软件清单的任何设备上找到它。</span><span class="sxs-lookup"><span data-stu-id="6b9d7-152">See evidence of where we detected a specific software on a device from the registry, disk, or both.You can find it on any device in the device software inventory.</span></span>
 
-<span data-ttu-id="76bb6-153">选择一个软件名称以打开该飞出页面，并查找名为"软件证据"的部分。</span><span class="sxs-lookup"><span data-stu-id="76bb6-153">Select a software name to open the flyout, and look for the section called "Software Evidence."</span></span>
+<span data-ttu-id="6b9d7-153">选择一个软件名称以打开该飞出页面，并查找名为"软件证据"的部分。</span><span class="sxs-lookup"><span data-stu-id="6b9d7-153">Select a software name to open the flyout, and look for the section called "Software Evidence."</span></span>
 
 ![设备列表中的 Windows 10 软件证据示例，显示软件证据注册表路径。](images/tvm-software-evidence.png)
 
-## <a name="software-pages"></a><span data-ttu-id="76bb6-155">软件页</span><span class="sxs-lookup"><span data-stu-id="76bb6-155">Software pages</span></span>
+## <a name="software-pages"></a><span data-ttu-id="6b9d7-155">软件页</span><span class="sxs-lookup"><span data-stu-id="6b9d7-155">Software pages</span></span>
 
-<span data-ttu-id="76bb6-156">可以通过几种不同的方式查看软件页面：</span><span class="sxs-lookup"><span data-stu-id="76bb6-156">You can view software pages a few different ways:</span></span>
+<span data-ttu-id="6b9d7-156">可以通过几种不同的方式查看软件页面：</span><span class="sxs-lookup"><span data-stu-id="6b9d7-156">You can view software pages a few different ways:</span></span>
 
-- <span data-ttu-id="76bb6-157">"软件清单">在>"选择 **打开** 软件"页中选择软件名称</span><span class="sxs-lookup"><span data-stu-id="76bb6-157">Software inventory page > Select a software name > Select **Open software page** in the flyout</span></span>
-- <span data-ttu-id="76bb6-158">["安全建议">](tvm-security-recommendation.md) 在>选择 **"打开** 软件"页中的"选择建议"</span><span class="sxs-lookup"><span data-stu-id="76bb6-158">[Security recommendations page](tvm-security-recommendation.md) > Select a recommendation > Select **Open software page** in the flyout</span></span>
-- <span data-ttu-id="76bb6-159">[事件时间线页面](threat-and-vuln-mgt-event-timeline.md) > 选择事件>在 ("相关组件"部分中选择超链接软件名称 (如 Visual Studio 2017) </span><span class="sxs-lookup"><span data-stu-id="76bb6-159">[Event timeline page](threat-and-vuln-mgt-event-timeline.md) > Select an event > Select the hyperlinked software name (like Visual Studio 2017) in the section called "Related component" in the flyout</span></span>
+- <span data-ttu-id="6b9d7-157">"软件清单">在>"选择 **打开** 软件"页中选择软件名称</span><span class="sxs-lookup"><span data-stu-id="6b9d7-157">Software inventory page > Select a software name > Select **Open software page** in the flyout</span></span>
+- <span data-ttu-id="6b9d7-158">["安全建议">](tvm-security-recommendation.md) 在>选择 **"打开** 软件"页中的"选择建议"</span><span class="sxs-lookup"><span data-stu-id="6b9d7-158">[Security recommendations page](tvm-security-recommendation.md) > Select a recommendation > Select **Open software page** in the flyout</span></span>
+- <span data-ttu-id="6b9d7-159">[事件时间线页面](threat-and-vuln-mgt-event-timeline.md) > 选择事件>在 ("相关组件"部分中选择超链接软件名称 (如 Visual Studio 2017) </span><span class="sxs-lookup"><span data-stu-id="6b9d7-159">[Event timeline page](threat-and-vuln-mgt-event-timeline.md) > Select an event > Select the hyperlinked software name (like Visual Studio 2017) in the section called "Related component" in the flyout</span></span>
 
- <span data-ttu-id="76bb6-160">将显示一个完整的页面，其中包含特定软件的所有详细信息和以下信息：</span><span class="sxs-lookup"><span data-stu-id="76bb6-160">A full page will appear with all the details of a specific software and the following information:</span></span>
+ <span data-ttu-id="6b9d7-160">将显示一个完整的页面，其中包含特定软件的所有详细信息和以下信息：</span><span class="sxs-lookup"><span data-stu-id="6b9d7-160">A full page will appear with all the details of a specific software and the following information:</span></span>
 
-- <span data-ttu-id="76bb6-161">包含供应商信息的侧面板、组织中软件的普遍程度 (包括其安装的设备数量，以及未修补) 的公开设备、是否可用和攻击，以及你的曝光评分。</span><span class="sxs-lookup"><span data-stu-id="76bb6-161">Side panel with vendor information, prevalence of the software in the organization (including number of devices it's installed on, and exposed devices that aren't patched), whether and exploit is available, and impact to your exposure score.</span></span>
-- <span data-ttu-id="76bb6-162">显示漏洞和错误配置的数量和严重性的数据可视化。</span><span class="sxs-lookup"><span data-stu-id="76bb6-162">Data visualizations showing the number of, and severity of, vulnerabilities and misconfigurations.</span></span> <span data-ttu-id="76bb6-163">此外，使用公开的设备数的图形。</span><span class="sxs-lookup"><span data-stu-id="76bb6-163">Also, graphs with the number of exposed devices.</span></span>
-- <span data-ttu-id="76bb6-164">显示以下信息的选项卡：</span><span class="sxs-lookup"><span data-stu-id="76bb6-164">Tabs showing information such as:</span></span>
-    - <span data-ttu-id="76bb6-165">针对所识别的漏洞的相应安全建议。</span><span class="sxs-lookup"><span data-stu-id="76bb6-165">Corresponding security recommendations for the weaknesses and vulnerabilities identified.</span></span>
-    - <span data-ttu-id="76bb6-166">发现的漏洞的命名 CVEs。</span><span class="sxs-lookup"><span data-stu-id="76bb6-166">Named CVEs of discovered vulnerabilities.</span></span>
-    - <span data-ttu-id="76bb6-167">安装了软件的设备 (设备名称、域、操作系统等) 。</span><span class="sxs-lookup"><span data-stu-id="76bb6-167">Devices that have the software installed (along with device name, domain, OS, and more).</span></span>
-    - <span data-ttu-id="76bb6-168">软件版本列表 (包括安装版本的设备数、发现的漏洞数以及安装的设备名称) 。</span><span class="sxs-lookup"><span data-stu-id="76bb6-168">Software version list (including number of devices the version is installed on, the number of discovered vulnerabilities, and the names of the installed devices).</span></span>
+- <span data-ttu-id="6b9d7-161">包含供应商信息的侧面板、组织中软件的普遍程度 (包括其安装的设备数量，以及未修补) 的公开设备、是否可用和攻击，以及你的曝光评分。</span><span class="sxs-lookup"><span data-stu-id="6b9d7-161">Side panel with vendor information, prevalence of the software in the organization (including number of devices it's installed on, and exposed devices that aren't patched), whether and exploit is available, and impact to your exposure score.</span></span>
+- <span data-ttu-id="6b9d7-162">显示漏洞和错误配置的数量和严重性的数据可视化。</span><span class="sxs-lookup"><span data-stu-id="6b9d7-162">Data visualizations showing the number of, and severity of, vulnerabilities and misconfigurations.</span></span> <span data-ttu-id="6b9d7-163">此外，使用公开的设备数的图形。</span><span class="sxs-lookup"><span data-stu-id="6b9d7-163">Also, graphs with the number of exposed devices.</span></span>
+- <span data-ttu-id="6b9d7-164">显示以下信息的选项卡：</span><span class="sxs-lookup"><span data-stu-id="6b9d7-164">Tabs showing information such as:</span></span>
+    - <span data-ttu-id="6b9d7-165">针对所识别的漏洞的相应安全建议。</span><span class="sxs-lookup"><span data-stu-id="6b9d7-165">Corresponding security recommendations for the weaknesses and vulnerabilities identified.</span></span>
+    - <span data-ttu-id="6b9d7-166">发现的漏洞的命名 CVEs。</span><span class="sxs-lookup"><span data-stu-id="6b9d7-166">Named CVEs of discovered vulnerabilities.</span></span>
+    - <span data-ttu-id="6b9d7-167">安装了软件的设备 (设备名称、域、操作系统等) 。</span><span class="sxs-lookup"><span data-stu-id="6b9d7-167">Devices that have the software installed (along with device name, domain, OS, and more).</span></span>
+    - <span data-ttu-id="6b9d7-168">软件版本列表 (包括安装版本的设备数、发现的漏洞数以及安装的设备名称) 。</span><span class="sxs-lookup"><span data-stu-id="6b9d7-168">Software version list (including number of devices the version is installed on, the number of discovered vulnerabilities, and the names of the installed devices).</span></span>
 
     ![Visual Studio 2017 的软件示例页，包含软件详细信息、漏洞、公开的设备等。](images/tvm-software-page-example.png)
 
-## <a name="report-inaccuracy"></a><span data-ttu-id="76bb6-170">报告 inaccuracy</span><span class="sxs-lookup"><span data-stu-id="76bb6-170">Report inaccuracy</span></span>
+## <a name="report-inaccuracy"></a><span data-ttu-id="6b9d7-170">报告 inaccuracy</span><span class="sxs-lookup"><span data-stu-id="6b9d7-170">Report inaccuracy</span></span>
 
-<span data-ttu-id="76bb6-171">当你看到任何模糊、不准确或不完整的信息时报告误报。</span><span class="sxs-lookup"><span data-stu-id="76bb6-171">Report a false positive when you see any vague, inaccurate, or incomplete information.</span></span> <span data-ttu-id="76bb6-172">还可以报告已修正的安全建议。</span><span class="sxs-lookup"><span data-stu-id="76bb6-172">You can also report on security recommendations that have already been remediated.</span></span>
+<span data-ttu-id="6b9d7-171">当你看到任何模糊、不准确或不完整的信息时报告误报。</span><span class="sxs-lookup"><span data-stu-id="6b9d7-171">Report a false positive when you see any vague, inaccurate, or incomplete information.</span></span> <span data-ttu-id="6b9d7-172">还可以报告已修正的安全建议。</span><span class="sxs-lookup"><span data-stu-id="6b9d7-172">You can also report on security recommendations that have already been remediated.</span></span>
 
-1. <span data-ttu-id="76bb6-173">在"软件清单"页上打开软件飞出。</span><span class="sxs-lookup"><span data-stu-id="76bb6-173">Open the software flyout on the Software inventory page.</span></span>
-2. <span data-ttu-id="76bb6-174">选择 **报告 inaccuracy**。</span><span class="sxs-lookup"><span data-stu-id="76bb6-174">Select **Report inaccuracy**.</span></span>
-3. <span data-ttu-id="76bb6-175">从弹出窗格中，从下拉菜单中选择不准确类别，填写您的电子邮件地址和有关不准确的详细信息。</span><span class="sxs-lookup"><span data-stu-id="76bb6-175">From the flyout pane, select the inaccuracy category from the drop-down menu, fill in your email address, and details about the inaccuracy.</span></span>
-4. <span data-ttu-id="76bb6-176">选择“**提交**”。</span><span class="sxs-lookup"><span data-stu-id="76bb6-176">Select **Submit**.</span></span> <span data-ttu-id="76bb6-177">将立即将反馈发送给威胁和漏洞管理专家。</span><span class="sxs-lookup"><span data-stu-id="76bb6-177">Your feedback is immediately sent to the threat and vulnerability management experts.</span></span>
+1. <span data-ttu-id="6b9d7-173">在"软件清单"页上打开软件飞出。</span><span class="sxs-lookup"><span data-stu-id="6b9d7-173">Open the software flyout on the Software inventory page.</span></span>
+2. <span data-ttu-id="6b9d7-174">选择 **报告 inaccuracy**。</span><span class="sxs-lookup"><span data-stu-id="6b9d7-174">Select **Report inaccuracy**.</span></span>
+3. <span data-ttu-id="6b9d7-175">从弹出窗格中，从下拉菜单中选择不准确类别，填写您的电子邮件地址和有关不准确的详细信息。</span><span class="sxs-lookup"><span data-stu-id="6b9d7-175">From the flyout pane, select the inaccuracy category from the drop-down menu, fill in your email address, and details about the inaccuracy.</span></span>
+4. <span data-ttu-id="6b9d7-176">选择“**提交**”。</span><span class="sxs-lookup"><span data-stu-id="6b9d7-176">Select **Submit**.</span></span> <span data-ttu-id="6b9d7-177">将立即将反馈发送给威胁和漏洞管理专家。</span><span class="sxs-lookup"><span data-stu-id="6b9d7-177">Your feedback is immediately sent to the threat and vulnerability management experts.</span></span>
 
-## <a name="related-articles"></a><span data-ttu-id="76bb6-178">相关文章</span><span class="sxs-lookup"><span data-stu-id="76bb6-178">Related articles</span></span>
+## <a name="related-articles"></a><span data-ttu-id="6b9d7-178">相关文章</span><span class="sxs-lookup"><span data-stu-id="6b9d7-178">Related articles</span></span>
 
-- [<span data-ttu-id="76bb6-179">威胁和漏洞管理概述</span><span class="sxs-lookup"><span data-stu-id="76bb6-179">Threat and vulnerability management overview</span></span>](next-gen-threat-and-vuln-mgt.md)
-- [<span data-ttu-id="76bb6-180">安全性建议</span><span class="sxs-lookup"><span data-stu-id="76bb6-180">Security recommendations</span></span>](tvm-security-recommendation.md)
-- [<span data-ttu-id="76bb6-181">事件时间线</span><span class="sxs-lookup"><span data-stu-id="76bb6-181">Event timeline</span></span>](threat-and-vuln-mgt-event-timeline.md)
-- [<span data-ttu-id="76bb6-182">查看和组织适用于终结点设备的 Microsoft Defender 列表</span><span class="sxs-lookup"><span data-stu-id="76bb6-182">View and organize the Microsoft Defender for Endpoint Devices list</span></span>](machines-view-overview.md)
+- [<span data-ttu-id="6b9d7-179">威胁和漏洞管理概述</span><span class="sxs-lookup"><span data-stu-id="6b9d7-179">Threat and vulnerability management overview</span></span>](next-gen-threat-and-vuln-mgt.md)
+- [<span data-ttu-id="6b9d7-180">安全性建议</span><span class="sxs-lookup"><span data-stu-id="6b9d7-180">Security recommendations</span></span>](tvm-security-recommendation.md)
+- [<span data-ttu-id="6b9d7-181">活动日程表</span><span class="sxs-lookup"><span data-stu-id="6b9d7-181">Event timeline</span></span>](threat-and-vuln-mgt-event-timeline.md)
+- [<span data-ttu-id="6b9d7-182">查看和组织适用于终结点设备的 Microsoft Defender 列表</span><span class="sxs-lookup"><span data-stu-id="6b9d7-182">View and organize the Microsoft Defender for Endpoint Devices list</span></span>](machines-view-overview.md)

@@ -9,41 +9,41 @@ ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: lomayor
-author: lomayor
+ms.author: maccruz
+author: schmurky
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: c5de642d2fd22301b5cef1cf3674e60529455d5e
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 20bd70653f535bb732c252224c1e6efd5cf65035
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51186913"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51500653"
 ---
-# <a name="custom-detections-overview"></a><span data-ttu-id="a811e-104">自定义检测概述</span><span class="sxs-lookup"><span data-stu-id="a811e-104">Custom detections overview</span></span>
+# <a name="custom-detections-overview"></a><span data-ttu-id="ba505-104">自定义检测概述</span><span class="sxs-lookup"><span data-stu-id="ba505-104">Custom detections overview</span></span>
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-<span data-ttu-id="a811e-105">**适用于：**</span><span class="sxs-lookup"><span data-stu-id="a811e-105">**Applies to:**</span></span>
-- [<span data-ttu-id="a811e-106">Microsoft Defender for Endpoint</span><span class="sxs-lookup"><span data-stu-id="a811e-106">Microsoft Defender for Endpoint</span></span>](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [<span data-ttu-id="a811e-107">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="a811e-107">Microsoft 365 Defender</span></span>](https://go.microsoft.com/fwlink/?linkid=2118804)
+<span data-ttu-id="ba505-105">**适用于：**</span><span class="sxs-lookup"><span data-stu-id="ba505-105">**Applies to:**</span></span>
+- [<span data-ttu-id="ba505-106">Microsoft Defender for Endpoint</span><span class="sxs-lookup"><span data-stu-id="ba505-106">Microsoft Defender for Endpoint</span></span>](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [<span data-ttu-id="ba505-107">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="ba505-107">Microsoft 365 Defender</span></span>](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> <span data-ttu-id="a811e-108">想要体验 Microsoft Defender for Endpoint？</span><span class="sxs-lookup"><span data-stu-id="a811e-108">Want to experience Microsoft Defender for Endpoint?</span></span> [<span data-ttu-id="a811e-109">注册免费试用版。</span><span class="sxs-lookup"><span data-stu-id="a811e-109">Sign up for a free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> <span data-ttu-id="ba505-108">想要体验 Microsoft Defender for Endpoint？</span><span class="sxs-lookup"><span data-stu-id="ba505-108">Want to experience Microsoft Defender for Endpoint?</span></span> [<span data-ttu-id="ba505-109">注册免费试用版。</span><span class="sxs-lookup"><span data-stu-id="ba505-109">Sign up for a free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 
-<span data-ttu-id="a811e-110">通过自定义检测，你可以主动监视和响应各种事件和系统状态，包括可疑的泄露活动和错误配置的设备。</span><span class="sxs-lookup"><span data-stu-id="a811e-110">With custom detections, you can proactively monitor for and respond to various events and system states, including suspected breach activity and misconfigured devices.</span></span> <span data-ttu-id="a811e-111">为此，可以使用可自动触发警报和响应操作且可自定义的检测规则。</span><span class="sxs-lookup"><span data-stu-id="a811e-111">You can do this with customizable detection rules that automatically trigger alerts and response actions.</span></span>
+<span data-ttu-id="ba505-110">通过自定义检测，你可以主动监视和响应各种事件和系统状态，包括可疑的泄露活动和错误配置的设备。</span><span class="sxs-lookup"><span data-stu-id="ba505-110">With custom detections, you can proactively monitor for and respond to various events and system states, including suspected breach activity and misconfigured devices.</span></span> <span data-ttu-id="ba505-111">为此，可以使用可自动触发警报和响应操作且可自定义的检测规则。</span><span class="sxs-lookup"><span data-stu-id="ba505-111">You can do this with customizable detection rules that automatically trigger alerts and response actions.</span></span>
 
-<span data-ttu-id="a811e-112">自定义 [检测与高级](advanced-hunting-overview.md)搜寻一起运行，提供一种功能强大、灵活的查询语言，涵盖来自网络的广泛事件和系统信息。</span><span class="sxs-lookup"><span data-stu-id="a811e-112">Custom detections work with [advanced hunting](advanced-hunting-overview.md), which provides a powerful, flexible query language that covers a broad set of event and system information from your network.</span></span> <span data-ttu-id="a811e-113">你可以将它们设置为定期运行，从而在有匹配项时生成警报并执行响应操作。</span><span class="sxs-lookup"><span data-stu-id="a811e-113">You can set them to run at regular intervals, generating alerts and taking response actions whenever there are matches.</span></span>
+<span data-ttu-id="ba505-112">自定义 [检测与高级](advanced-hunting-overview.md)搜寻一起运行，提供一种功能强大、灵活的查询语言，涵盖来自网络的广泛事件和系统信息。</span><span class="sxs-lookup"><span data-stu-id="ba505-112">Custom detections work with [advanced hunting](advanced-hunting-overview.md), which provides a powerful, flexible query language that covers a broad set of event and system information from your network.</span></span> <span data-ttu-id="ba505-113">你可以将它们设置为定期运行，从而在有匹配项时生成警报并执行响应操作。</span><span class="sxs-lookup"><span data-stu-id="ba505-113">You can set them to run at regular intervals, generating alerts and taking response actions whenever there are matches.</span></span>
 
-<span data-ttu-id="a811e-114">自定义检测提供：</span><span class="sxs-lookup"><span data-stu-id="a811e-114">Custom detections provide:</span></span>
-- <span data-ttu-id="a811e-115">针对从高级搜寻查询构建的基于规则的检测的警报</span><span class="sxs-lookup"><span data-stu-id="a811e-115">Alerts for rule-based detections built from advanced hunting queries</span></span>
-- <span data-ttu-id="a811e-116">适用于文件和设备的自动响应操作</span><span class="sxs-lookup"><span data-stu-id="a811e-116">Automatic response actions that apply to files and devices</span></span>
+<span data-ttu-id="ba505-114">自定义检测提供：</span><span class="sxs-lookup"><span data-stu-id="ba505-114">Custom detections provide:</span></span>
+- <span data-ttu-id="ba505-115">针对从高级搜寻查询构建的基于规则的检测的警报</span><span class="sxs-lookup"><span data-stu-id="ba505-115">Alerts for rule-based detections built from advanced hunting queries</span></span>
+- <span data-ttu-id="ba505-116">适用于文件和设备的自动响应操作</span><span class="sxs-lookup"><span data-stu-id="ba505-116">Automatic response actions that apply to files and devices</span></span>
 
-## <a name="related-topics"></a><span data-ttu-id="a811e-117">相关主题</span><span class="sxs-lookup"><span data-stu-id="a811e-117">Related topics</span></span>
-- [<span data-ttu-id="a811e-118">创建检测规则</span><span class="sxs-lookup"><span data-stu-id="a811e-118">Create detection rules</span></span>](custom-detection-rules.md)
-- [<span data-ttu-id="a811e-119">查看和管理检测规则</span><span class="sxs-lookup"><span data-stu-id="a811e-119">View and manage detection rules</span></span>](custom-detections-manage.md)
-- [<span data-ttu-id="a811e-120">高级搜寻概述</span><span class="sxs-lookup"><span data-stu-id="a811e-120">Advanced hunting overview</span></span>](advanced-hunting-overview.md)
+## <a name="related-topics"></a><span data-ttu-id="ba505-117">相关主题</span><span class="sxs-lookup"><span data-stu-id="ba505-117">Related topics</span></span>
+- [<span data-ttu-id="ba505-118">创建检测规则</span><span class="sxs-lookup"><span data-stu-id="ba505-118">Create detection rules</span></span>](custom-detection-rules.md)
+- [<span data-ttu-id="ba505-119">查看和管理检测规则</span><span class="sxs-lookup"><span data-stu-id="ba505-119">View and manage detection rules</span></span>](custom-detections-manage.md)
+- [<span data-ttu-id="ba505-120">高级搜寻概述</span><span class="sxs-lookup"><span data-stu-id="ba505-120">Advanced hunting overview</span></span>](advanced-hunting-overview.md)

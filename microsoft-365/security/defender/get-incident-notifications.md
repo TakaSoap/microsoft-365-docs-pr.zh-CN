@@ -9,8 +9,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: maccruz
-author: schmurky
+ms.author: josephd
+author: JoeDavies-MSFT
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
@@ -22,57 +22,57 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 42600b360061626938aa13a09f1ed1b42fdfe48c
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: fec2263599f3ed727d3d9d70023927084eb1c094
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51054899"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51501075"
 ---
-# <a name="get-incident-notifications-by-email"></a><span data-ttu-id="6ebdd-104">通过电子邮件获取事件通知</span><span class="sxs-lookup"><span data-stu-id="6ebdd-104">Get incident notifications by email</span></span>
+# <a name="get-incident-notifications-by-email"></a><span data-ttu-id="0e0dd-104">通过电子邮件获取事件通知</span><span class="sxs-lookup"><span data-stu-id="0e0dd-104">Get incident notifications by email</span></span>
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
-<span data-ttu-id="6ebdd-105">**适用于：**</span><span class="sxs-lookup"><span data-stu-id="6ebdd-105">**Applies to:**</span></span>
-- <span data-ttu-id="6ebdd-106">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="6ebdd-106">Microsoft 365 Defender</span></span>
+<span data-ttu-id="0e0dd-105">**适用于：**</span><span class="sxs-lookup"><span data-stu-id="0e0dd-105">**Applies to:**</span></span>
+- <span data-ttu-id="0e0dd-106">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="0e0dd-106">Microsoft 365 Defender</span></span>
 
-<span data-ttu-id="6ebdd-107">你可以设置 Microsoft 365 Defender，以在有新事件或现有事件的新更新时通过电子邮件通知你。</span><span class="sxs-lookup"><span data-stu-id="6ebdd-107">You can set up Microsoft 365 Defender to notify you by email every time there are new incidents or new updates to existing incidents.</span></span> 
+<span data-ttu-id="0e0dd-107">你可以设置 Microsoft 365 Defender，以在有新事件或现有事件的新更新时通过电子邮件通知你。</span><span class="sxs-lookup"><span data-stu-id="0e0dd-107">You can set up Microsoft 365 Defender to notify you by email every time there are new incidents or new updates to existing incidents.</span></span> 
 
-<span data-ttu-id="6ebdd-108">你可以选择根据事件严重性或设备组获取通知。</span><span class="sxs-lookup"><span data-stu-id="6ebdd-108">You can choose to get notifications based on incident severity or by device group.</span></span> <span data-ttu-id="6ebdd-109">还可以选择仅在每个事件的首次更新时收到通知。</span><span class="sxs-lookup"><span data-stu-id="6ebdd-109">You can also choose to get a notification only on the first update per incident.</span></span>
+<span data-ttu-id="0e0dd-108">你可以选择根据事件严重性或设备组获取通知。</span><span class="sxs-lookup"><span data-stu-id="0e0dd-108">You can choose to get notifications based on incident severity or by device group.</span></span> <span data-ttu-id="0e0dd-109">还可以选择仅在每个事件的首次更新时收到通知。</span><span class="sxs-lookup"><span data-stu-id="0e0dd-109">You can also choose to get a notification only on the first update per incident.</span></span>
 
-<span data-ttu-id="6ebdd-110">可以在电子邮件通知中添加或删除收件人。</span><span class="sxs-lookup"><span data-stu-id="6ebdd-110">You can add or remove recipients in the email notifications.</span></span> <span data-ttu-id="6ebdd-111">新添加的收件人在添加事件后会收到通知。</span><span class="sxs-lookup"><span data-stu-id="6ebdd-111">Newly added recipients get notified about incidents after they're added.</span></span> 
+<span data-ttu-id="0e0dd-110">可以在电子邮件通知中添加或删除收件人。</span><span class="sxs-lookup"><span data-stu-id="0e0dd-110">You can add or remove recipients in the email notifications.</span></span> <span data-ttu-id="0e0dd-111">新添加的收件人在添加事件后会收到通知。</span><span class="sxs-lookup"><span data-stu-id="0e0dd-111">Newly added recipients get notified about incidents after they're added.</span></span> 
 
-<span data-ttu-id="6ebdd-112">电子邮件通知包含有关事件的重要详细信息，如事件名称、严重性和类别等。</span><span class="sxs-lookup"><span data-stu-id="6ebdd-112">The email notification contains important details about the incident like the incident name, severity, and categories, among others.</span></span> <span data-ttu-id="6ebdd-113">也可以直接转到事件，以便立即开始调查。</span><span class="sxs-lookup"><span data-stu-id="6ebdd-113">You can also directly go to incidents so you can start your investigation right away.</span></span> <span data-ttu-id="6ebdd-114">有关调查事件更多信息，请参阅调查 [Microsoft 365 Defender](./investigate-incidents.md)中的事件。</span><span class="sxs-lookup"><span data-stu-id="6ebdd-114">For more on investigating incidents, see [Investigate incidents in Microsoft 365 Defender](./investigate-incidents.md).</span></span>
+<span data-ttu-id="0e0dd-112">电子邮件通知包含有关事件的重要详细信息，如事件名称、严重性和类别等。</span><span class="sxs-lookup"><span data-stu-id="0e0dd-112">The email notification contains important details about the incident like the incident name, severity, and categories, among others.</span></span> <span data-ttu-id="0e0dd-113">也可以直接转到事件，以便立即开始调查。</span><span class="sxs-lookup"><span data-stu-id="0e0dd-113">You can also directly go to incidents so you can start your investigation right away.</span></span> <span data-ttu-id="0e0dd-114">有关调查事件更多信息，请参阅调查 [Microsoft 365 Defender](./investigate-incidents.md)中的事件。</span><span class="sxs-lookup"><span data-stu-id="0e0dd-114">For more on investigating incidents, see [Investigate incidents in Microsoft 365 Defender](./investigate-incidents.md).</span></span>
 
 >[!NOTE]
-><span data-ttu-id="6ebdd-115">您需要"管理安全设置"权限才能配置电子邮件通知设置。</span><span class="sxs-lookup"><span data-stu-id="6ebdd-115">You need 'Manage security settings' permissions to configure email notification settings.</span></span> <span data-ttu-id="6ebdd-116">如果选择使用基本权限管理，则具有安全管理员或全局管理员角色的用户可以配置电子邮件通知。</span><span class="sxs-lookup"><span data-stu-id="6ebdd-116">If you've chosen to use basic permissions management, users with Security Administrator or Global Administrator roles can configure email notifications for you.</span></span> <br> <br>
-<span data-ttu-id="6ebdd-117">同样，如果组织使用的是基于角色的访问控制 (RBAC) ，则只能根据允许管理的设备组创建、编辑、删除和接收通知。</span><span class="sxs-lookup"><span data-stu-id="6ebdd-117">Likewise, if your organization is using role-based access control (RBAC), you can only create, edit, delete, and receive notifications based on device groups that you are allowed to manage.</span></span>
+><span data-ttu-id="0e0dd-115">您需要"管理安全设置"权限才能配置电子邮件通知设置。</span><span class="sxs-lookup"><span data-stu-id="0e0dd-115">You need 'Manage security settings' permissions to configure email notification settings.</span></span> <span data-ttu-id="0e0dd-116">如果选择使用基本权限管理，则具有安全管理员或全局管理员角色的用户可以配置电子邮件通知。</span><span class="sxs-lookup"><span data-stu-id="0e0dd-116">If you've chosen to use basic permissions management, users with Security Administrator or Global Administrator roles can configure email notifications for you.</span></span> <br> <br>
+<span data-ttu-id="0e0dd-117">同样，如果组织使用的是基于角色的访问控制 (RBAC) ，则只能根据允许管理的设备组创建、编辑、删除和接收通知。</span><span class="sxs-lookup"><span data-stu-id="0e0dd-117">Likewise, if your organization is using role-based access control (RBAC), you can only create, edit, delete, and receive notifications based on device groups that you are allowed to manage.</span></span>
 
-## <a name="create-rules-for-incident-notifications"></a><span data-ttu-id="6ebdd-118">创建事件通知规则</span><span class="sxs-lookup"><span data-stu-id="6ebdd-118">Create rules for incident notifications</span></span>
+## <a name="create-rules-for-incident-notifications"></a><span data-ttu-id="0e0dd-118">创建事件通知规则</span><span class="sxs-lookup"><span data-stu-id="0e0dd-118">Create rules for incident notifications</span></span>
 
-<span data-ttu-id="6ebdd-119">若要为事件设置第一个电子邮件通知，请创建一个新规则并自定义电子邮件通知设置。</span><span class="sxs-lookup"><span data-stu-id="6ebdd-119">To set up your first email notification for incidents, create a new rule and customize email notification settings.</span></span>
+<span data-ttu-id="0e0dd-119">若要为事件设置第一个电子邮件通知，请创建一个新规则并自定义电子邮件通知设置。</span><span class="sxs-lookup"><span data-stu-id="0e0dd-119">To set up your first email notification for incidents, create a new rule and customize email notification settings.</span></span>
 
-1. <span data-ttu-id="6ebdd-120">在导航窗格中，选择"**设置**  >  **""事件电子邮件通知"。**</span><span class="sxs-lookup"><span data-stu-id="6ebdd-120">In the navigation pane, select **Settings** > **Incident email notifications**.</span></span>
-2. <span data-ttu-id="6ebdd-121">选择 **"添加项目"。**</span><span class="sxs-lookup"><span data-stu-id="6ebdd-121">Select **Add item**.</span></span>
-3. <span data-ttu-id="6ebdd-122">在"名称"中为规则 **命名**，并提供 **"说明"。**</span><span class="sxs-lookup"><span data-stu-id="6ebdd-122">Give the rule a name in **Name** and supply a **Description**.</span></span>
+1. <span data-ttu-id="0e0dd-120">在导航窗格中，选择"**设置**  >  **""事件电子邮件通知"。**</span><span class="sxs-lookup"><span data-stu-id="0e0dd-120">In the navigation pane, select **Settings** > **Incident email notifications**.</span></span>
+2. <span data-ttu-id="0e0dd-121">选择 **"添加项目"。**</span><span class="sxs-lookup"><span data-stu-id="0e0dd-121">Select **Add item**.</span></span>
+3. <span data-ttu-id="0e0dd-122">在"名称"中为规则 **命名**，并提供 **"说明"。**</span><span class="sxs-lookup"><span data-stu-id="0e0dd-122">Give the rule a name in **Name** and supply a **Description**.</span></span>
 
     ![创建事件电子邮件通知的规则窗口](../../media/incidentemailnotif1.png) 
-4. <span data-ttu-id="6ebdd-124">选择 **"下一** 步"转到 **"通知设置"。**</span><span class="sxs-lookup"><span data-stu-id="6ebdd-124">Select **Next** to go to **Notification settings**.</span></span> <span data-ttu-id="6ebdd-125">你可以在此处指定：</span><span class="sxs-lookup"><span data-stu-id="6ebdd-125">Here you can specify:</span></span>
-    - <span data-ttu-id="6ebdd-126">**警报严重性** - 选择将触发事件通知的警报严重性。</span><span class="sxs-lookup"><span data-stu-id="6ebdd-126">**Alert severity** - Choose the alert severity that will trigger an incident notification.</span></span> <span data-ttu-id="6ebdd-127">例如，如果只想通知你有关高严重性事件，请选择"高"。</span><span class="sxs-lookup"><span data-stu-id="6ebdd-127">For example, if you only want to be informed about High severity incidents, select High.</span></span>
-    - <span data-ttu-id="6ebdd-128">**设备组** 作用域 - 此下拉列表显示用户可以访问的所有设备组。</span><span class="sxs-lookup"><span data-stu-id="6ebdd-128">**Device group scope** - This dropdown displays all the device groups the user can access.</span></span> <span data-ttu-id="6ebdd-129">选择要为哪些设备组创建事件通知规则。</span><span class="sxs-lookup"><span data-stu-id="6ebdd-129">Select which device groups you're creating the incident notification rules for.</span></span>
-    - <span data-ttu-id="6ebdd-130">**仅在发生每个事件的首次** 事件时通知 - 选择此选项将仅在与其他选择匹配的第一个警报上发送电子邮件通知。</span><span class="sxs-lookup"><span data-stu-id="6ebdd-130">**Only notify on first occurrence per incident** - Selecting this option will send an email notification only on the first alert that matches your other selections.</span></span> <span data-ttu-id="6ebdd-131">以后与事件相关的更新或警报不会触发通知。</span><span class="sxs-lookup"><span data-stu-id="6ebdd-131">Later updates or alerts related to the incident won't trigger a notification.</span></span>
-    - <span data-ttu-id="6ebdd-132">**包含组织** 名称 - 指示是否在电子邮件通知上显示客户名称。</span><span class="sxs-lookup"><span data-stu-id="6ebdd-132">**Include organization name** - Indicates whether the customer name appears on the email notification or not.</span></span>
-    - <span data-ttu-id="6ebdd-133">**包含特定于租户的门户链接** - 添加包含租户 ID 的链接，以允许访问特定租户。</span><span class="sxs-lookup"><span data-stu-id="6ebdd-133">**Include tenant-specific portal link** -  Adds a link with the tenant ID to allow access to a specific tenant.</span></span>
+4. <span data-ttu-id="0e0dd-124">选择 **"下一** 步"转到 **"通知设置"。**</span><span class="sxs-lookup"><span data-stu-id="0e0dd-124">Select **Next** to go to **Notification settings**.</span></span> <span data-ttu-id="0e0dd-125">你可以在此处指定：</span><span class="sxs-lookup"><span data-stu-id="0e0dd-125">Here you can specify:</span></span>
+    - <span data-ttu-id="0e0dd-126">**警报严重性** - 选择将触发事件通知的警报严重性。</span><span class="sxs-lookup"><span data-stu-id="0e0dd-126">**Alert severity** - Choose the alert severity that will trigger an incident notification.</span></span> <span data-ttu-id="0e0dd-127">例如，如果只想通知你有关高严重性事件，请选择"高"。</span><span class="sxs-lookup"><span data-stu-id="0e0dd-127">For example, if you only want to be informed about High severity incidents, select High.</span></span>
+    - <span data-ttu-id="0e0dd-128">**设备组** 作用域 - 此下拉列表显示用户可以访问的所有设备组。</span><span class="sxs-lookup"><span data-stu-id="0e0dd-128">**Device group scope** - This dropdown displays all the device groups the user can access.</span></span> <span data-ttu-id="0e0dd-129">选择要为哪些设备组创建事件通知规则。</span><span class="sxs-lookup"><span data-stu-id="0e0dd-129">Select which device groups you're creating the incident notification rules for.</span></span>
+    - <span data-ttu-id="0e0dd-130">**仅在发生每个事件的首次** 事件时通知 - 选择此选项将仅在与其他选择匹配的第一个警报上发送电子邮件通知。</span><span class="sxs-lookup"><span data-stu-id="0e0dd-130">**Only notify on first occurrence per incident** - Selecting this option will send an email notification only on the first alert that matches your other selections.</span></span> <span data-ttu-id="0e0dd-131">以后与事件相关的更新或警报不会触发通知。</span><span class="sxs-lookup"><span data-stu-id="0e0dd-131">Later updates or alerts related to the incident won't trigger a notification.</span></span>
+    - <span data-ttu-id="0e0dd-132">**包含组织** 名称 - 指示是否在电子邮件通知上显示客户名称。</span><span class="sxs-lookup"><span data-stu-id="0e0dd-132">**Include organization name** - Indicates whether the customer name appears on the email notification or not.</span></span>
+    - <span data-ttu-id="0e0dd-133">**包含特定于租户的门户链接** - 添加包含租户 ID 的链接，以允许访问特定租户。</span><span class="sxs-lookup"><span data-stu-id="0e0dd-133">**Include tenant-specific portal link** -  Adds a link with the tenant ID to allow access to a specific tenant.</span></span>
     
     ![事件电子邮件的 Notif 设置窗口](../../media/incidentemailnotif2.png)
-5. <span data-ttu-id="6ebdd-135">选择 **"下** 一步"转到 **"收件人"** 部分。</span><span class="sxs-lookup"><span data-stu-id="6ebdd-135">Select **Next** to go the **Recipients** section.</span></span> <span data-ttu-id="6ebdd-136">你可以在此处指定将接收事件电子邮件通知的电子邮件地址。</span><span class="sxs-lookup"><span data-stu-id="6ebdd-136">Here you can specify email addresses that will receive the incident email notifications.</span></span> <span data-ttu-id="6ebdd-137">键入 **每个电子邮件地址后** ，选择"添加收件人"。</span><span class="sxs-lookup"><span data-stu-id="6ebdd-137">Select **Add a recipient** after typing every email address.</span></span>
+5. <span data-ttu-id="0e0dd-135">选择 **"下** 一步"转到 **"收件人"** 部分。</span><span class="sxs-lookup"><span data-stu-id="0e0dd-135">Select **Next** to go the **Recipients** section.</span></span> <span data-ttu-id="0e0dd-136">你可以在此处指定将接收事件电子邮件通知的电子邮件地址。</span><span class="sxs-lookup"><span data-stu-id="0e0dd-136">Here you can specify email addresses that will receive the incident email notifications.</span></span> <span data-ttu-id="0e0dd-137">键入 **每个电子邮件地址后** ，选择"添加收件人"。</span><span class="sxs-lookup"><span data-stu-id="0e0dd-137">Select **Add a recipient** after typing every email address.</span></span>
 
     ![事件电子邮件通知的"添加收件人"窗口](../../media/incidentemailnotif3.png) 
 
-6. <span data-ttu-id="6ebdd-139">最后，选择 **"下** 一步"转到"查看规则"，以便你可以看到与新规则关联的所有设置。</span><span class="sxs-lookup"><span data-stu-id="6ebdd-139">Finally, select **Next** to go to **Review rule** so you can see all the settings associated with your new rule.</span></span> <span data-ttu-id="6ebdd-140">收件人将开始根据设置通过电子邮件接收事件通知。</span><span class="sxs-lookup"><span data-stu-id="6ebdd-140">Recipients will start receiving incident notifications through email based on the settings.</span></span>
+6. <span data-ttu-id="0e0dd-139">最后，选择 **"下** 一步"转到"查看规则"，以便你可以看到与新规则关联的所有设置。</span><span class="sxs-lookup"><span data-stu-id="0e0dd-139">Finally, select **Next** to go to **Review rule** so you can see all the settings associated with your new rule.</span></span> <span data-ttu-id="0e0dd-140">收件人将开始根据设置通过电子邮件接收事件通知。</span><span class="sxs-lookup"><span data-stu-id="0e0dd-140">Recipients will start receiving incident notifications through email based on the settings.</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="6ebdd-141">另请参阅</span><span class="sxs-lookup"><span data-stu-id="6ebdd-141">See also</span></span>
-- [<span data-ttu-id="6ebdd-142">Microsoft 365 Defender 中的事件概述</span><span class="sxs-lookup"><span data-stu-id="6ebdd-142">Incidents overview in Microsoft 365 Defender</span></span>](./incidents-overview.md)
-- [<span data-ttu-id="6ebdd-143">确定 Microsoft 365 Defender 中事件的优先级</span><span class="sxs-lookup"><span data-stu-id="6ebdd-143">Prioritize incidents in Microsoft 365 Defender</span></span>](./incident-queue.md)
-- [<span data-ttu-id="6ebdd-144">调查 Microsoft 365 Defender 中的事件</span><span class="sxs-lookup"><span data-stu-id="6ebdd-144">Investigate incidents in Microsoft 365 Defender</span></span>](./investigate-incidents.md)
+## <a name="see-also"></a><span data-ttu-id="0e0dd-141">另请参阅</span><span class="sxs-lookup"><span data-stu-id="0e0dd-141">See also</span></span>
+- [<span data-ttu-id="0e0dd-142">Microsoft 365 Defender 中的事件概述</span><span class="sxs-lookup"><span data-stu-id="0e0dd-142">Incidents overview in Microsoft 365 Defender</span></span>](./incidents-overview.md)
+- [<span data-ttu-id="0e0dd-143">确定 Microsoft 365 Defender 中事件的优先级</span><span class="sxs-lookup"><span data-stu-id="0e0dd-143">Prioritize incidents in Microsoft 365 Defender</span></span>](./incident-queue.md)
+- [<span data-ttu-id="0e0dd-144">调查 Microsoft 365 Defender 中的事件</span><span class="sxs-lookup"><span data-stu-id="0e0dd-144">Investigate incidents in Microsoft 365 Defender</span></span>](./investigate-incidents.md)
