@@ -1,9 +1,9 @@
 ---
-title: 哪种订阅适合您的企业？
+title: 哪些订阅适合你的企业？
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: sharik
+author: skjerland
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -19,13 +19,13 @@ search.appverid:
 - BCS160
 - MET150
 description: 确定 Office 365 E3、Microsoft 365 商业标准版或 Microsoft 365 商业高级版是否适合你的企业。
-ms.openlocfilehash: 10799de6e588a92782e17c8efe3fb17ba219bd48
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 2f8c59e0af619730060862fc8ee24a702ca00343
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44403710"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51579814"
 ---
-# <a name="what-subscription-is-right-for-your-small-business"></a><span data-ttu-id="ef1b9-103">适合您的小型企业的订阅是什么？</span><span class="sxs-lookup"><span data-stu-id="ef1b9-103">What subscription is right for your small business?</span></span>
+# <a name="what-subscription-is-right-for-your-small-business"></a><span data-ttu-id="a7b90-103">哪些订阅适合你的小型企业？</span><span class="sxs-lookup"><span data-stu-id="a7b90-103">What subscription is right for your small business?</span></span>
 
-<span data-ttu-id="ef1b9-104">Microsoft 为小型企业提供了几套计划。</span><span class="sxs-lookup"><span data-stu-id="ef1b9-104">Microsoft offers several plans for small businesses.</span></span> <span data-ttu-id="ef1b9-105">建议的订阅为 Microsoft 365 商业标准版或 Microsoft 365 商业版，最高为300用户。</span><span class="sxs-lookup"><span data-stu-id="ef1b9-105">The recommended subscriptions are either Microsoft 365 Business Standard or Microsoft 365 Business Premium with up to 300 users.</span></span> <span data-ttu-id="ef1b9-106">Microsoft 365 Business Premium 提供了比 Microsoft 365 商业标准更多的安全功能，以增加成本。</span><span class="sxs-lookup"><span data-stu-id="ef1b9-106">Microsoft 365 Business Premium offers more security features than Microsoft 365 Business Standard for an added cost.</span></span>
+<span data-ttu-id="a7b90-104">Microsoft 为小型企业提供了多个计划。</span><span class="sxs-lookup"><span data-stu-id="a7b90-104">Microsoft offers several plans for small businesses.</span></span> <span data-ttu-id="a7b90-105">推荐的订阅为最多 300 名用户的 Microsoft 365 商业标准版或 Microsoft 365 商业高级版。</span><span class="sxs-lookup"><span data-stu-id="a7b90-105">The recommended subscriptions are either Microsoft 365 Business Standard or Microsoft 365 Business Premium with up to 300 users.</span></span> <span data-ttu-id="a7b90-106">Microsoft 365 商业高级版提供比 Microsoft 365 商业标准版更多的安全功能，但增加了成本。</span><span class="sxs-lookup"><span data-stu-id="a7b90-106">Microsoft 365 Business Premium offers more security features than Microsoft 365 Business Standard for an added cost.</span></span>
