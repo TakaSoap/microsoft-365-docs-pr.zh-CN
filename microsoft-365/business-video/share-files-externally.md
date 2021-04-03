@@ -1,9 +1,9 @@
 ---
-title: 轻松共享企业外部的文件
+title: 轻松共享企业外的文件
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: kwekua
+author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -20,24 +20,24 @@ search.appverid:
 - MET150
 - MOE150
 description: 了解如何在外部轻松共享业务文件。
-ms.openlocfilehash: cde983fee8b4dbf2d03ff8b2fac77bdf20ee2eda
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: 469e4b16277b048a539767f6fc9fd54d2ea2e6cf
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50421855"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51578623"
 ---
-# <a name="easily-share-files-externally"></a><span data-ttu-id="5e345-103">在外部轻松共享文件</span><span class="sxs-lookup"><span data-stu-id="5e345-103">Easily share files externally</span></span>
+# <a name="easily-share-files-externally"></a><span data-ttu-id="33ae1-103">在外部轻松共享文件</span><span class="sxs-lookup"><span data-stu-id="33ae1-103">Easily share files externally</span></span>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2dCOV?autoplay=false]
 
-<span data-ttu-id="5e345-104">若要与客户共享文件并共同处理文档，请使用 Microsoft 365 中的"任何人"链接。</span><span class="sxs-lookup"><span data-stu-id="5e345-104">To share files with your customers and work on documents together, use an Anyone link in Microsoft 365.</span></span>
+<span data-ttu-id="33ae1-104">若要与客户共享文件并共同处理文档，请使用 Microsoft 365 中的"任何人"链接。</span><span class="sxs-lookup"><span data-stu-id="33ae1-104">To share files with your customers and work on documents together, use an Anyone link in Microsoft 365.</span></span>
 
-## <a name="try-it"></a><span data-ttu-id="5e345-105">试一试！</span><span class="sxs-lookup"><span data-stu-id="5e345-105">Try it!</span></span>
+## <a name="try-it"></a><span data-ttu-id="33ae1-105">试一试！</span><span class="sxs-lookup"><span data-stu-id="33ae1-105">Try it!</span></span>
 
-1. <span data-ttu-id="5e345-106">在 SharePoint 网站中，选择要共享的文件夹，选择 **"** 共享"，然后单击链接设置按钮。</span><span class="sxs-lookup"><span data-stu-id="5e345-106">From your SharePoint site, select the folder you want to share, choose **Share**, and then click the link settings button.</span></span>
-1. <span data-ttu-id="5e345-107">在 **"链接设置** "窗口中，确保 **已选择** "任何人"。</span><span class="sxs-lookup"><span data-stu-id="5e345-107">In the **Link Settings** window, make sure **Anyone** is selected.</span></span> <span data-ttu-id="5e345-108">如果此选项灰显，需要在 SharePoint 管理中心中将其打开。</span><span class="sxs-lookup"><span data-stu-id="5e345-108">If this option is grayed out, it needs to be turned on in the SharePoint admin center.</span></span>
-1. <span data-ttu-id="5e345-109">（可选）选中" **允许编辑"** 复选框并输入链接的到期日期。</span><span class="sxs-lookup"><span data-stu-id="5e345-109">Optionally, select the **Allow editing** check box and enter an expiration date for the link.</span></span>
-1. <span data-ttu-id="5e345-110">选择 **"应用"。**</span><span class="sxs-lookup"><span data-stu-id="5e345-110">Choose **Apply**.</span></span>
-1. <span data-ttu-id="5e345-111">在 **"发送链接**"窗口中，输入客户的电子邮件地址，键入邮件，然后选择"**发送"。**</span><span class="sxs-lookup"><span data-stu-id="5e345-111">In the **Send Link** window, enter your customer's email address, type a message, and choose **Send**.</span></span>
-1. <span data-ttu-id="5e345-112">你的客户将收到一封电子邮件，包含你的邮件和指向你的文件的链接。</span><span class="sxs-lookup"><span data-stu-id="5e345-112">Your customer will receive an email with your message and a link to your files.</span></span>
+1. <span data-ttu-id="33ae1-106">From your SharePoint site， select the folder you want to share， choose **Share**， and then click the link settings button.</span><span class="sxs-lookup"><span data-stu-id="33ae1-106">From your SharePoint site, select the folder you want to share, choose **Share**, and then click the link settings button.</span></span>
+1. <span data-ttu-id="33ae1-107">在" **链接设置"** 窗口中，确保 **选中** "任何人"。</span><span class="sxs-lookup"><span data-stu-id="33ae1-107">In the **Link Settings** window, make sure **Anyone** is selected.</span></span> <span data-ttu-id="33ae1-108">如果此选项灰显，需要在 SharePoint 管理中心中将其打开。</span><span class="sxs-lookup"><span data-stu-id="33ae1-108">If this option is grayed out, it needs to be turned on in the SharePoint admin center.</span></span>
+1. <span data-ttu-id="33ae1-109">（可选）选中" **允许编辑"** 复选框并输入链接的到期日期。</span><span class="sxs-lookup"><span data-stu-id="33ae1-109">Optionally, select the **Allow editing** check box and enter an expiration date for the link.</span></span>
+1. <span data-ttu-id="33ae1-110">选择"**应用"。**</span><span class="sxs-lookup"><span data-stu-id="33ae1-110">Choose **Apply**.</span></span>
+1. <span data-ttu-id="33ae1-111">在 **"发送链接**"窗口中，输入客户的电子邮件地址，键入一条消息，然后选择"发送 **"。**</span><span class="sxs-lookup"><span data-stu-id="33ae1-111">In the **Send Link** window, enter your customer's email address, type a message, and choose **Send**.</span></span>
+1. <span data-ttu-id="33ae1-112">你的客户将收到一封电子邮件，包含你的邮件和指向你的文件的链接。</span><span class="sxs-lookup"><span data-stu-id="33ae1-112">Your customer will receive an email with your message and a link to your files.</span></span>
