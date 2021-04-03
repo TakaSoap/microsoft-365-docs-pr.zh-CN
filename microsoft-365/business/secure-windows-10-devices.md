@@ -2,8 +2,8 @@
 title: 保护 Windows 10 设备
 f1.keywords:
 - CSH
-ms.author: sirkkuw
-author: sirkkuw
+ms.author: sharik
+author: skjerland
 manager: scotv
 audience: Admin
 ms.topic: conceptual
@@ -27,28 +27,28 @@ search.appverid:
 - MOE150
 ms.assetid: 21e5551f-fa35-4f13-9418-f80d668b6a2b
 description: 了解如何配置任何 Windows 10 设备在登录工作或学校帐户时将收到的默认设备策略的设置。
-ms.openlocfilehash: 85383b1e1d2f2af3fd49d4a0c56c5d99586d607d
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 86db1c152f9f6ac1fe6093b4a55a74b69fbd8b0f
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50912602"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51579966"
 ---
-# <a name="secure-windows-10-devices"></a><span data-ttu-id="4d7e3-103">保护 Windows 10 设备</span><span class="sxs-lookup"><span data-stu-id="4d7e3-103">Secure Windows 10 devices</span></span>
+# <a name="secure-windows-10-devices"></a><span data-ttu-id="2ea84-103">保护 Windows 10 设备</span><span class="sxs-lookup"><span data-stu-id="2ea84-103">Secure Windows 10 devices</span></span>
 
-<span data-ttu-id="4d7e3-104">本文适用于 Microsoft 365 商业高级版。</span><span class="sxs-lookup"><span data-stu-id="4d7e3-104">This article applies to Microsoft 365 Business Premium.</span></span>
+<span data-ttu-id="2ea84-104">本文适用于 Microsoft 365 商业高级版。</span><span class="sxs-lookup"><span data-stu-id="2ea84-104">This article applies to Microsoft 365 Business Premium.</span></span>
 
-<span data-ttu-id="4d7e3-105">在此处配置的设置属于 Windows 10 的默认设备策略。</span><span class="sxs-lookup"><span data-stu-id="4d7e3-105">The settings that you configure here are part of the default device policy for Windows 10.</span></span> <span data-ttu-id="4d7e3-106">通过使用工作帐户登录来连接 Windows 10 设备（包括移动设备和电脑）的所有用户将自动收到这些设置。</span><span class="sxs-lookup"><span data-stu-id="4d7e3-106">All users who connect a Windows 10 device, including mobile devices and PCs, by signing in with their work account will automatically receive these settings.</span></span> <span data-ttu-id="4d7e3-107">建议在设置过程中接受默认策略，稍后添加面向特定用户组的策略。</span><span class="sxs-lookup"><span data-stu-id="4d7e3-107">We recommend that you accept the default policy during setup and add policies later that target specific groups of users.</span></span>
+<span data-ttu-id="2ea84-105">在此处配置的设置属于 Windows 10 的默认设备策略。</span><span class="sxs-lookup"><span data-stu-id="2ea84-105">The settings that you configure here are part of the default device policy for Windows 10.</span></span> <span data-ttu-id="2ea84-106">通过使用工作帐户登录来连接 Windows 10 设备（包括移动设备和电脑）的所有用户将自动收到这些设置。</span><span class="sxs-lookup"><span data-stu-id="2ea84-106">All users who connect a Windows 10 device, including mobile devices and PCs, by signing in with their work account will automatically receive these settings.</span></span> <span data-ttu-id="2ea84-107">建议在设置过程中接受默认策略，稍后添加面向特定用户组的策略。</span><span class="sxs-lookup"><span data-stu-id="2ea84-107">We recommend that you accept the default policy during setup and add policies later that target specific groups of users.</span></span>
   
-## <a name="settings-to-secure-windows-10-devices"></a><span data-ttu-id="4d7e3-108">保护 Windows 10 设备的设置</span><span class="sxs-lookup"><span data-stu-id="4d7e3-108">Settings to secure Windows 10 devices</span></span>
+## <a name="settings-to-secure-windows-10-devices"></a><span data-ttu-id="2ea84-108">保护 Windows 10 设备的设置</span><span class="sxs-lookup"><span data-stu-id="2ea84-108">Settings to secure Windows 10 devices</span></span>
 
-<span data-ttu-id="4d7e3-p102">默认情况下，所有设置为" **打开**"。可使用以下设置：</span><span class="sxs-lookup"><span data-stu-id="4d7e3-p102">By default all settings are **On**. The following settings are available:</span></span>
+<span data-ttu-id="2ea84-p102">默认情况下，所有设置为" **打开**"。可使用以下设置：</span><span class="sxs-lookup"><span data-stu-id="2ea84-p102">By default all settings are **On**. The following settings are available:</span></span>
   
 |||
 |:-----|:-----|
-|<span data-ttu-id="4d7e3-111">Setting</span><span class="sxs-lookup"><span data-stu-id="4d7e3-111">Setting</span></span>  <br/> |<span data-ttu-id="4d7e3-112">说明</span><span class="sxs-lookup"><span data-stu-id="4d7e3-112">Description</span></span>  <br/> |
-|<span data-ttu-id="4d7e3-113">使用 Windows Defender 防病毒软件帮助保护电脑免遭病毒和其他威胁</span><span class="sxs-lookup"><span data-stu-id="4d7e3-113">Help protect PCs from viruses and other threats using Windows Defender Antivirus</span></span>  <br/> |<span data-ttu-id="4d7e3-114">需要启用 Windows Defender 防病毒软件，保护电脑免遭连接 Internet 产生的危险。</span><span class="sxs-lookup"><span data-stu-id="4d7e3-114">Requires that Windows Defender Antivirus is turned on to protect PCs from the dangers of being connected to the internet.</span></span>  <br/> |
-|<span data-ttu-id="4d7e3-115">帮助保护电脑免遭 Microsoft Edge 中基于 Web 的威胁</span><span class="sxs-lookup"><span data-stu-id="4d7e3-115">Help protect PCs from web-based threats in Microsoft Edge</span></span>  <br/> |<span data-ttu-id="4d7e3-116">在 Microsoft Edge 中启用有助于保护用户免遭恶意网站和下载威胁的设置。</span><span class="sxs-lookup"><span data-stu-id="4d7e3-116">Turns on settings in Edge that help protect users from malicious sites and downloads.</span></span>  <br/> |
-|<span data-ttu-id="4d7e3-117">使用 BitLocker 帮助保护 PC 上的文件和文件夹免遭未经授权的访问</span><span class="sxs-lookup"><span data-stu-id="4d7e3-117">Help protect files and folders on PCs from unauthorized access with BitLocker</span></span>  <br/> |<span data-ttu-id="4d7e3-118">Bitlocker 通过加密计算机硬盘来保护数据，在计算机丢失或被盗时防止数据泄露。</span><span class="sxs-lookup"><span data-stu-id="4d7e3-118">Bitlocker protects data by encrypting the computer hard drives and protect against data exposure if a computer is lost or stolen.</span></span> <span data-ttu-id="4d7e3-119">有关详细信息，请参阅 [Bitlocker FAQ](/windows/security/information-protection/bitlocker/bitlocker-frequently-asked-questions)。</span><span class="sxs-lookup"><span data-stu-id="4d7e3-119">For more information, see [Bitlocker FAQ](/windows/security/information-protection/bitlocker/bitlocker-frequently-asked-questions).</span></span>  <br/> |
-|<span data-ttu-id="4d7e3-120">在空闲此时长后关闭设备屏幕</span><span class="sxs-lookup"><span data-stu-id="4d7e3-120">Turn off device screen when idle for this amount of time</span></span>  <br/> |<span data-ttu-id="4d7e3-p104">确保用户处于空闲时，公司数据受到保护。用户可能会在咖啡店等公共场所工作，短暂离开或心不在焉，其设备有被随意瞥视的风险。借助此设置，可以控制用户处于空闲状态多长时间后关闭屏幕。</span><span class="sxs-lookup"><span data-stu-id="4d7e3-p104">Makes sure that company data is protected if a user is idle. A user may be working in a public location, like a coffee shop, and step away or be distracted for just a moment, leaving their device vulnerable to random glances. This setting lets you control how long the user can be idle before the screen shuts off.</span></span>  <br/> |
+|<span data-ttu-id="2ea84-111">设置</span><span class="sxs-lookup"><span data-stu-id="2ea84-111">Setting</span></span>  <br/> |<span data-ttu-id="2ea84-112">说明</span><span class="sxs-lookup"><span data-stu-id="2ea84-112">Description</span></span>  <br/> |
+|<span data-ttu-id="2ea84-113">使用 Windows Defender 防病毒软件帮助保护电脑免遭病毒和其他威胁</span><span class="sxs-lookup"><span data-stu-id="2ea84-113">Help protect PCs from viruses and other threats using Windows Defender Antivirus</span></span>  <br/> |<span data-ttu-id="2ea84-114">需要启用 Windows Defender 防病毒软件，保护电脑免遭连接 Internet 产生的危险。</span><span class="sxs-lookup"><span data-stu-id="2ea84-114">Requires that Windows Defender Antivirus is turned on to protect PCs from the dangers of being connected to the internet.</span></span>  <br/> |
+|<span data-ttu-id="2ea84-115">帮助保护电脑免遭 Microsoft Edge 中基于 Web 的威胁</span><span class="sxs-lookup"><span data-stu-id="2ea84-115">Help protect PCs from web-based threats in Microsoft Edge</span></span>  <br/> |<span data-ttu-id="2ea84-116">在 Microsoft Edge 中启用有助于保护用户免遭恶意网站和下载威胁的设置。</span><span class="sxs-lookup"><span data-stu-id="2ea84-116">Turns on settings in Edge that help protect users from malicious sites and downloads.</span></span>  <br/> |
+|<span data-ttu-id="2ea84-117">使用 BitLocker 帮助保护 PC 上的文件和文件夹免遭未经授权的访问</span><span class="sxs-lookup"><span data-stu-id="2ea84-117">Help protect files and folders on PCs from unauthorized access with BitLocker</span></span>  <br/> |<span data-ttu-id="2ea84-118">Bitlocker 通过加密计算机硬盘来保护数据，在计算机丢失或被盗时防止数据泄露。</span><span class="sxs-lookup"><span data-stu-id="2ea84-118">Bitlocker protects data by encrypting the computer hard drives and protect against data exposure if a computer is lost or stolen.</span></span> <span data-ttu-id="2ea84-119">有关详细信息，请参阅 [Bitlocker FAQ](/windows/security/information-protection/bitlocker/bitlocker-frequently-asked-questions)。</span><span class="sxs-lookup"><span data-stu-id="2ea84-119">For more information, see [Bitlocker FAQ](/windows/security/information-protection/bitlocker/bitlocker-frequently-asked-questions).</span></span>  <br/> |
+|<span data-ttu-id="2ea84-120">在空闲此时长后关闭设备屏幕</span><span class="sxs-lookup"><span data-stu-id="2ea84-120">Turn off device screen when idle for this amount of time</span></span>  <br/> |<span data-ttu-id="2ea84-p104">确保用户处于空闲时，公司数据受到保护。用户可能会在咖啡店等公共场所工作，短暂离开或心不在焉，其设备有被随意瞥视的风险。借助此设置，可以控制用户处于空闲状态多长时间后关闭屏幕。</span><span class="sxs-lookup"><span data-stu-id="2ea84-p104">Makes sure that company data is protected if a user is idle. A user may be working in a public location, like a coffee shop, and step away or be distracted for just a moment, leaving their device vulnerable to random glances. This setting lets you control how long the user can be idle before the screen shuts off.</span></span>  <br/> |
 |
