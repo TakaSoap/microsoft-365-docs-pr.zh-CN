@@ -1,8 +1,8 @@
 ---
-title: 适用于 Mac 的 Microsoft Defender ATP
+title: Microsoft Defender for Endpoint for Mac
 ms.reviewer: ''
 description: 了解如何安装、配置、更新和使用 Microsoft Defender for Endpoint for Mac。
-keywords: microsoft， defender， atp， mac， 安装， 部署， 卸载， intune， jamf， macos， big sur， catalina， mojave
+keywords: microsoft， defender， atp， mac， 安装， 部署， 卸载， intune， jamf， macos， big sur， catalina， mojave， mde for mac
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 34150088379445d66006c757b2c8ea607865bf4c
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 22d35a42eb7fb7eadbba686c292729772951c05c
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51198989"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51500689"
 ---
 # <a name="microsoft-defender-for-endpoint-for-mac"></a>Microsoft Defender for Endpoint for Mac
 
@@ -39,7 +39,7 @@ ms.locfileid: "51198989"
 本主题介绍如何安装、配置、更新和使用 Defender for Endpoint for Mac。
 
 > [!CAUTION]
-> 同时运行其他第三方终结点保护产品以及 Defender for Endpoint for Mac 可能会导致性能问题和不可预知的副作用。 如果非 Microsoft 终结点保护是环境中绝对要求，在将 MDATP 用于 Mac 防病毒功能配置为在被动模式下运行后，仍可安全地利用适用于 Mac EDR 的 MDATP [功能](mac-preferences.md#enable--disable-passive-mode)。
+> 将其他第三方终结点保护产品与 Microsoft Defender for Endpoint for Mac 一起运行可能会导致性能问题和不可预知的副作用。 如果非 Microsoft 终结点保护在你的环境中是绝对要求，在将防病毒功能配置为在被动模式下运行后，你仍然可以安全地利用 Defender for Endpoint for Mac EDR [功能](mac-preferences.md#enable--disable-passive-mode)。
 
 ## <a name="whats-new-in-the-latest-release"></a>最新版本的新增功能
 

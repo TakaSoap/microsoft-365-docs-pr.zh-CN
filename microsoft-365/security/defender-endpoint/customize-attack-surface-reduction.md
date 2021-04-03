@@ -1,5 +1,5 @@
 ---
-title: 自定义攻击面减少规则
+title: 自定义减少攻击面规则
 description: 在审核、阻止或禁用模式中单独设置规则，并添加应从攻击面减少规则中排除的文件和文件夹
 keywords: 攻击面减少， hips， 主机入侵防护系统， 保护规则， 反攻击， 攻击， 感染防护， 自定义， 配置， 排除
 search.product: eADQiWindows 10XVcnh
@@ -8,19 +8,19 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 localization_priority: Normal
 audience: ITPro
-author: levinec
-ms.author: ellevin
+author: dansimp
+ms.author: dansimp
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 99a88a869c8a79f79cbc3a16fc73bf556416c51a
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 52a51b1035f1aa0fb152cf17dc9561cce378d59d
+ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51163288"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51570347"
 ---
-# <a name="customize-attack-surface-reduction-rules"></a>自定义攻击面减少规则
+# <a name="customize-attack-surface-reduction-rules"></a>自定义减少攻击面规则
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -117,5 +117,5 @@ ms.locfileid: "51163288"
 
 * [使用攻击面减少规则减少攻击面](attack-surface-reduction.md)
 * [启用攻击面减少规则](enable-attack-surface-reduction.md)
-* [评估攻击面减少规则](evaluate-attack-surface-reduction.md)
-* [攻击面减少常见问题解答](attack-surface-reduction.md)
+* [评估减少攻击面规则](evaluate-attack-surface-reduction.md)
+* [关于减少攻击面的常见问题解答](attack-surface-reduction.md)

@@ -9,12 +9,13 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: f6b1e257fd767fa112fddb41d773065b8002a2a3
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+audience: Admin
+ms.openlocfilehash: 6df23e0d7e3ea0ecd7ebacd96f00cb47b9e0aa84
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50909186"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51574591"
 ---
 #  <a name="prepare-on-premises-resources-access-for-microsoft-managed-desktop"></a>为 Microsoft 托管桌面准备本地资源访问权限
 
@@ -53,7 +54,7 @@ Microsoft 托管桌面设备还通过使用 Windows Hello 企业版为用户提�
 
 ## <a name="apps-and-resources-that-use-authentication"></a>使用身份验证的应用和资源
 
-有关 [设置应用以使用](/azure/active-directory/devices/azureadjoin-plan#understand-considerations-for-applications-and-resources) Azure Active Directory 的完整指南，请参阅了解 Azure 内容集内应用程序和资源注意事项。 总之：
+有关 [设置应用以使用](/azure/active-directory/devices/azureadjoin-plan#understand-considerations-for-applications-and-resources) Azure Active Directory 的完整指南，请参阅了解 Azure 内容集内应用程序和资源注意事项。 摘要：
 
 
 - 如果你使用 **基于云的应用**（例如添加到 Azure AD 应用库的应用），则大多数应用无需进一步准备，以使用 Microsoft 托管桌面。 但是，任何不使用 Web 帐户管理器或 WAM (Win32) 可能仍提示用户进行身份验证。
@@ -77,3 +78,14 @@ Microsoft 托管桌面设备无法连接到发布到本地 Active Directory 的�
 虽然无法自动在仅云环境中发现打印机，但只要设备可以访问本地域控制器，用户就可以使用打印机路径或打印机队列路径来使用本地打印机。
 
 <!--add fuller material on printers when available-->
+## <a name="steps-to-get-ready"></a>准备步骤
+
+1. 查看 [Microsoft 托管桌面的先决条件](prerequisites.md)。
+2. 使用 [准备情况评估工具](readiness-assessment-tool.md)。
+3. [来宾帐户的先决条件](guest-accounts.md)
+4. [Microsoft 托管桌面的网络配置](network.md)
+5. [为 Microsoft 托管桌面准备证书和网络配置文件](certs-wifi-lan.md)
+6. [Prepare on-premises resources access for Microsoft Managed Desktop](authentication.md) (This article) 
+7. [Microsoft 托管桌面中的应用](apps.md)
+8. [为 Microsoft 托管桌面准备映射的驱动器](mapped-drives.md)
+9. [为 Microsoft 托管桌面准备打印资源](printing.md)

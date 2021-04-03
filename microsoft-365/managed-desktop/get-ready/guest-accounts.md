@@ -1,6 +1,6 @@
 ---
 title: 来宾帐户的先决条件
-description: 来宾帐户的配置准则以及如何对其进行调整
+description: 来宾帐户的配置指南以及如何调整它们
 keywords: Microsoft 托管桌面, Microsoft 365, 服务, 文档
 ms.service: m365-md
 author: jaimeo
@@ -9,22 +9,34 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: d8953e9f451daa02671a1e1544f2dfe6649ab1b3
-ms.sourcegitcommit: fcc1b40732f28f075d95faffc1655473e262dd95
+audience: Admin
+ms.openlocfilehash: bbf679a01716fc48d37b241d69740f50a985f048
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/14/2020
-ms.locfileid: "49073192"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51574603"
 ---
 # <a name="prerequisites-for-guest-accounts"></a>来宾帐户的先决条件
 
-Microsoft 托管桌面需要 Azure AD 组织中的以下设置，以供来宾帐户访问。 可以在 " **外部标识/外部协作** " 下的 [Azure 门户](https://portal.azure.com)中调整这些设置：
+Microsoft 托管桌面需要 Azure AD 组织中用于来宾帐户访问的以下设置。 可以在 Azure 门户的"[](https://portal.azure.com)外部标识 **/外部协作"下调整这些设置**：
 
--   **来宾邀请者角色中的管理员和用户可以邀请** 设置为 **"是"**
--   对于 " **协作限制** "，选择以下任一选项：
-    -   如果选择 " **允许将邀请发送到任何域 (最包含的)** ，则不需要其他配置。
-    -   如果选择 " **拒绝向指定域发出邀请** "，请确保未在目标域中列出 Microsoft.com。
-    -   如果选择 **"仅允许对指定域的邀请" (最严格)** ，请 *确保 Microsoft.com 列* 在目标域中。
+-   **具有来宾邀请者角色的管理员和用户可以将邀请设置为****"是"**
+-   对于 **"协作限制"，** 选择以下任一选项：
+    -   如果选择" **允许邀请发送到任何非独占 (域) ，** 则无需其他配置。
+    -   如果选择" **拒绝对指定** 域的邀请"，请确保 Microsoft.com 未列在目标域中。
+    -   如果选择"**仅允许** 对限制最严格的 (域) "，请确保 Microsoft.com 列出该域。 
 
-如果设置了与这些设置进行交互的限制，请确保排除 Azure Active Directory **新式 Workplace Service 帐户** 。 例如，如果您有一个条件访问策略来阻止来宾帐户访问 Intune 门户，则从该策略中排除 **新式的 Workplace Service 帐户** 组。
+如果设置与这些设置交互的限制，请确保排除 Azure Active Directory **新式工作区服务帐户**。 例如，如果你有一个阻止来宾帐户访问 Intune 门户的条件访问策略，则从此策略中排除 **Modern Workplace Service Accounts** 组。
 
+## <a name="steps-to-get-ready"></a>准备步骤
+
+1. 查看 [Microsoft 托管桌面的先决条件](prerequisites.md)。
+2. 使用 [准备情况评估工具](readiness-assessment-tool.md)。
+3. [来宾帐户帐户 (](guest-accounts.md) 本文) 
+4. [Microsoft 托管桌面的网络配置](network.md)
+5. [为 Microsoft 托管桌面准备证书和网络配置文件](certs-wifi-lan.md)
+6. [为 Microsoft 托管桌面准备本地资源访问权限](authentication.md)
+7. [Microsoft 托管桌面中的应用](apps.md)
+8. [为 Microsoft 托管桌面准备映射的驱动器](mapped-drives.md)
+9. [为 Microsoft 托管桌面准备打印资源](printing.md)

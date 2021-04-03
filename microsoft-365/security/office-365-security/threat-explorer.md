@@ -19,12 +19,12 @@ description: 使用安全与合规中心中的资源管理器和实时检测有�
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 47bb14b90a94d0c8b542b12268bd6d5ed6e5c05a
-ms.sourcegitcommit: 39609c4d8c432c8e7d7a31cb35c8020e5207385b
+ms.openlocfilehash: 1c5935115d7496aca22c3941f34983cddebe7b46
+ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "51445716"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51570980"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>威胁资源管理器和实时检测
 
@@ -112,6 +112,8 @@ URL 单击飞出也显示标记信息。 若要查看它，请转到网络钓鱼
 
 > [!div class="mx-imgBorder"]
 > ![URL 标记](../../media/tags-urls.png)
+> 
+通过观看此视频 [了解更多信息](https://www.youtube.com/watch?v=UoVzN0lYbfY&list=PL3ZTgFEc7LystRja2GnDeUFqk44k7-KXf&index=4)。 
 
 ## <a name="improvements-to-the-threat-hunting-experience-upcoming"></a>威胁搜寻体验的改进 (即将推出的) 
 

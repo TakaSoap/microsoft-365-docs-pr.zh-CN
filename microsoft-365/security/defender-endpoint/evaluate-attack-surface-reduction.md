@@ -1,5 +1,5 @@
 ---
-title: 评估攻击面减少规则
+title: 评估减少攻击面规则
 description: 了解攻击面减少如何使用自定义演示工具阻止和阻止攻击。
 keywords: 攻击面减少， hips， 主机入侵防护系统， 保护规则， 反攻击， 攻击， 感染防护， 评估， 测试， 演示
 search.product: eADQiWindows 10XVcnh
@@ -8,19 +8,19 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 localization_priority: Normal
 audience: ITPro
-author: levinec
-ms.author: ellevin
+author: dansimp
+ms.author: dansimp
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 13b1ac5f71f2bc24ad6f52af6722e12fab935270
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 07573fd92643ce5fdf3e9140031bf5f15ae8f7aa
+ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51056341"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51570335"
 ---
-# <a name="evaluate-attack-surface-reduction-rules"></a>评估攻击面减少规则
+# <a name="evaluate-attack-surface-reduction-rules"></a>评估减少攻击面规则
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -76,7 +76,7 @@ Add-MpPreference -AttackSurfaceReductionRules_Ids <rule ID> -AttackSurfaceReduct
  1121 | 攻击面减少规则在阻止模式下触发时的事件
  1122 | 在审核模式下触发攻击面减少规则时的事件
 
-## <a name="customize-attack-surface-reduction-rules"></a>自定义攻击面减少规则
+## <a name="customize-attack-surface-reduction-rules"></a>自定义减少攻击面规则
 
 在评估过程中，你可能希望单独配置每个规则，或者将某些文件和进程排除在功能评估外。
 
@@ -86,4 +86,4 @@ Add-MpPreference -AttackSurfaceReductionRules_Ids <rule ID> -AttackSurfaceReduct
 
 * [使用攻击面减少规则减少攻击面](attack-surface-reduction.md)
 * [使用审核模式评估Windows Defender](audit-windows-defender.md)
-* [攻击面减少常见问题解答](attack-surface-reduction.md)
+* [关于减少攻击面的常见问题解答](attack-surface-reduction.md)

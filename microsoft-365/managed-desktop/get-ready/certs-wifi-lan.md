@@ -1,6 +1,6 @@
 ---
 title: 为 Microsoft 托管桌面准备证书和网络配置文件
-description: certs/wifi/lan
+description: 证书要求和 WLAN 连接
 keywords: Microsoft 托管桌面, Microsoft 365, 服务, 文档
 ms.service: m365-md
 author: jaimeo
@@ -11,12 +11,13 @@ ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 9f4490711c1ea051afe9d8efb081a2f7a141f8ba
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+audience: Admin
+ms.openlocfilehash: a59add6f6821824f189703b3dedd35fda313ec31
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50909114"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51574579"
 ---
 # <a name="prepare-certificates-and-network-profiles-for-microsoft-managed-desktop"></a>为 Microsoft 托管桌面准备证书和网络配置文件  
  
@@ -86,3 +87,14 @@ ms.locfileid: "50909114"
 4. 为每个企业 VPN 帐户创建配置文件 (Windows [10](/intune/vpn-settings-windows-10) 和 Windows 全息设备设置，以使用 Intune) 。
 5. 使用 Microsoft 托管桌面管理门户将标题为"证书部署"或"WI-Fi 配置文件部署"的支持请求提交到 Microsoft 托管桌面 IT 操作，以查看配置文件并部署到"新式工作区设备 – 测试"。 Microsoft 托管桌面 IT 操作会通过管理门户中的支持请求告知你请求完成时间。 
  
+## <a name="steps-to-get-ready"></a>准备步骤
+
+1. 查看 [Microsoft 托管桌面的先决条件](prerequisites.md)。
+2. 使用 [准备情况评估工具](readiness-assessment-tool.md)。
+3. [来宾帐户的先决条件](guest-accounts.md)
+4. [Microsoft 托管桌面的网络配置](network.md)
+5. [Prepare certificates and network profiles for Microsoft Managed Desktop](certs-wifi-lan.md) (本文) 
+6. [为 Microsoft 托管桌面准备本地资源访问权限](authentication.md)
+7. [Microsoft 托管桌面中的应用](apps.md)
+8. [为 Microsoft 托管桌面准备映射的驱动器](mapped-drives.md)
+9. [为 Microsoft 托管桌面准备打印资源](printing.md) 

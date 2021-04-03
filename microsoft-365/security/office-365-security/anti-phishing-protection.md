@@ -21,12 +21,12 @@ ms.custom:
 description: 管理员可以了解 Exchange Online Protection (EOP) 和 Microsoft Defender for Office 365 中的防钓鱼保护功能。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: b0ca7a83e8e8d66bd58fddfc46f53df32f4f623c
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: a100e28ddee1629b2fe35e28742a43b891d13e57
+ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51203910"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51570608"
 ---
 # <a name="anti-phishing-protection-in-microsoft-365"></a>Microsoft 365 中的防钓鱼保护
 
@@ -43,7 +43,7 @@ ms.locfileid: "51203910"
 
 - **一个** 面向主管人员或组织内部的其他高价值目标，以最大化效果。
 
-- **商业电子邮件泄露 (BEC)** 使用伪造的受信任发件人 (财务官、客户、受信任合作伙伴等 ) 来欺骗收件人批准付款、转移资金或泄露客户数据。
+- **商业电子邮件泄露 (BEC)** 使用伪造的受信任发件人 (财务官、客户、受信任合作伙伴等 ) 来欺骗收件人批准付款、转移资金或泄露客户数据。 通过观看此视频 [了解更多信息](https://www.youtube.com/watch?v=8Kn31h9HwIQ&list=PL3ZTgFEc7LystRja2GnDeUFqk44k7-KXf&index=2)。
 
 - **加密你的** 数据并要求付款以解密数据的勒索软件几乎总是从网络钓鱼邮件中开始。 防钓鱼保护无法帮助您解密加密文件，但它可以帮助检测与勒索软件活动关联的初始网络钓鱼邮件。 有关从勒索软件攻击中恢复的信息，请参阅 [在 Microsoft 365](recover-from-ransomware.md)中从勒索软件攻击中恢复。
 

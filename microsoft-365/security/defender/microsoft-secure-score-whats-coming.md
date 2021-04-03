@@ -7,8 +7,8 @@ ms.mktglfcycl: deploy
 localization_priority: Normal
 f1.keywords:
 - NOCSH
-ms.author: ellevin
-author: levinec
+ms.author: dansimp
+author: dansimp
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: f249fda9c7aed50d1a55d7c88fe6162e1240d665
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: d23ec690194f87046e6c5f2ab859201bbf2dede9
+ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51055549"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51569799"
 ---
 # <a name="whats-coming-to-microsoft-secure-score"></a>Microsoft 安全分数即将提供哪些功能
 
@@ -42,6 +42,6 @@ Microsoft 安全分数位于 https://security.microsoft.com/securescore [Microso
 ## <a name="related-resources"></a>相关资源
 
 - [Microsoft 安全分数概述](microsoft-secure-score.md)
-- [评估你的安全状况](microsoft-secure-score-improvement-actions.md)
+- [评估安全状况](microsoft-secure-score-improvement-actions.md)
 - [跟踪 Microsoft 安全分数历史记录并实现目标](microsoft-secure-score-history-metrics-trends.md)
 - [新增功能](microsoft-secure-score-whats-new.md)

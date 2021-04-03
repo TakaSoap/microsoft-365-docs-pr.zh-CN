@@ -8,8 +8,8 @@ ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: ellevin
-author: levinec
+ms.author: dansimp
+author: dansimp
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: cc7abd678d6f2d317d02c4ed2b8028e7e270b055
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 34c3122b017b14605fdbb3358f31f73e26361a4d
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51056505"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51500129"
 ---
 # <a name="exposure-score---threat-and-vulnerability-management"></a>曝光评分 - 威胁和漏洞管理
 
@@ -64,6 +64,6 @@ ms.locfileid: "51056505"
 ## <a name="related-topics"></a>相关主题
 
 - [威胁和漏洞管理概述](next-gen-threat-and-vuln-mgt.md)
-- [Microsoft 设备安全分数](tvm-microsoft-secure-score-devices.md)
+- [设备的 Microsoft 安全功能分数](tvm-microsoft-secure-score-devices.md)
 - [安全性建议](tvm-security-recommendation.md)
-- [事件时间线](threat-and-vuln-mgt-event-timeline.md)
+- [活动日程表](threat-and-vuln-mgt-event-timeline.md)

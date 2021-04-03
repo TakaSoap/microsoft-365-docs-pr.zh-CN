@@ -1,5 +1,5 @@
 ---
-title: 启用受控文件夹访问权限
+title: 启用受控文件夹访问
 keywords: 受控文件夹访问权限， windows 10， windows defender， 勒索软件， 保护， 文件， 文件夹， 启用， 打开， 使用
 description: 了解如何通过启用受控文件夹访问权限来保护重要文件
 search.product: eADQiWindows 10XVcnh
@@ -9,19 +9,19 @@ ms.sitesec: library
 ms.pagetype: security
 localization_priority: Normal
 audience: ITPro
-author: levinec
-ms.author: ellevin
+author: dansimp
+ms.author: dansimp
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 6d07e2a21bb01794990160cf02837fc524008098
-ms.sourcegitcommit: 8685b0f7d53c99577fa65144ab60295dfa60f46f
+ms.openlocfilehash: ee87ac3bdfe88596a5f1625904af53499488f35f
+ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51218756"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51571004"
 ---
-# <a name="enable-controlled-folder-access"></a>启用受控文件夹访问权限
+# <a name="enable-controlled-folder-access"></a>启用受控文件夹访问
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -140,5 +140,5 @@ ms.locfileid: "51218756"
 ## <a name="see-also"></a>另请参阅
 
 * [使用受控文件夹访问权限保护重要文件夹](controlled-folders.md)
-* [自定义受控文件夹访问权限](customize-controlled-folders.md)
+* [自定义受控文件夹访问](customize-controlled-folders.md)
 * [评估 Microsoft Defender for Endpoint](evaluate-mde.md)

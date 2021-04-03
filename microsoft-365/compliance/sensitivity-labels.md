@@ -22,12 +22,12 @@ description: 使用 Microsoft 信息保护 (MIP) 中的敏感度标签对敏感�
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: a540529c174cc12b0e037be4af4e08c29e3835ea
-ms.sourcegitcommit: c75aac39ee8d93218a79585113ef6b36f47c9ddf
+ms.openlocfilehash: 467960f2faf6c6262083ff238ee3b085e0e99129
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2021
-ms.locfileid: "51408597"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51499676"
 ---
 # <a name="learn-about-sensitivity-labels"></a>了解敏感度标签
 
@@ -229,20 +229,7 @@ ms.locfileid: "51408597"
 
 ## <a name="sensitivity-labels-and-azure-information-protection"></a>敏感度标签和 Azure 信息保护
 
-如果已使用 Azure 信息保护部署了标签，则在开始使用灵敏度标签之前，请参考以下各节的指导。
-
-### <a name="azure-information-protection-labels"></a>Azure 信息保护标签
-
-> [!NOTE]
-> Azure 门户中的 Azure 信息保护标签的标签管理将于 **2021 年 3 月 31 日** 弃用。 有关详细信息，请参阅官方[弃用通知](https://techcommunity.microsoft.com/t5/azure-information-protection/announcing-timelines-for-sunsetting-label-management-in-the/ba-p/1226179)。
-
-如果由于租户尚未使用[统一标签平台](/azure/information-protection/faqs#how-can-i-determine-if-my-tenant-is-on-the-unified-labeling-platform)而使用 Azure 信息保护标签，则建议你避免创建敏感度标签，直到激活统一标签。 在此方案中，Azure 门户中看到的标签是 Azure 信息保护标签，而不是敏感度标签。 这些标签可由 Windows 计算机上的 Azure 信息保护客户端（经典）使用，但无法由运行 macOS、iOS 或 Android 的设备使用。 若要解决此问题，请 [将这些标签迁移](/azure/information-protection/configure-policy-migrate-labels) 到灵敏度标签。 
-
-两组标签应用的元数据是兼容的，因此在迁移完成后，无需重新标记文档和电子邮件。
-
-### <a name="azure-information-protection-clients"></a>Azure 信息保护客户端
-
-在 Windows 计算机上使用 Microsoft 365 企业应用版应用中的敏感度标签时，可选择使用 Azure 信息保护客户端，或使用 Office 内置的标记。
+在 Windows 计算机上的 Microsoft 365 应用中使用敏感度标签时，可选择使用 Office 应用或 Azure 信息保护客户端内置的标签。
 
 默认情况下，安装 Azure 信息保护客户端时，将关闭这些应用中的内置标记功能。 有关详细信息（包括如何更改此默认行为），请参阅 [Office 内置标签客户端和 Azure 信息保护客户端](sensitivity-labels-office-apps.md#office-built-in-labeling-client-and-the-azure-information-protection-client)。
 
@@ -258,21 +245,16 @@ ms.locfileid: "51408597"
 
 如果你不熟悉 Azure 信息保护，或者你是刚迁移标签的现有 Azure 信息保护客户，请参阅 Azure 信息保护文档中的[选择用于 Windows 计算机的标签客户端](/azure/information-protection/rms-client/use-client#choose-your-windows-labeling-solution)。
 
-## <a name="sensitivity-labels-and-microsoft-cloud-app-security"></a>灵敏度标签和 Microsoft 云应用安全性
+### <a name="azure-information-protection-labels"></a>Azure 信息保护标签
 
-使用云应用安全性 (CAS) 可以发现、分类、标记和保护第三方服务和应用（例如 SalesForce、Box 或 Dropbox）中的内容。 
+> [!NOTE]
+> Azure 门户中 Azure 信息保护标签的标签管理 **2021 年 3 月 31 日**。 有关详细信息，请参阅官方[弃用通知](https://techcommunity.microsoft.com/t5/azure-information-protection/announcing-timelines-for-sunsetting-label-management-in-the/ba-p/1226179)。
 
-“云应用安全性”适用于 Azure 信息保护标签和灵敏度标签：
-
-- 如果标签管理中心将一个或多个敏感标签[发布](create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy)到至少一个用户：将使用敏感度标签。
-
-- 如果标签管理中心未发布敏感度标签：将使用 Azure 信息保护标签。
-
-有关将 Cloud App Security 与这些标签一起使用的说明，请参阅 [Azure 信息保护集成](/cloud-app-security/azip-integration)。
+如果租户尚未位于统一 [标识平台](https://docs.microsoft.com/azure/information-protection/faqs#how-can-i-determine-if-my-tenant-is-on-the-unified-labeling-platform)，必须先激活统一标签，才能使用敏感度标签。 有关说明，请参阅 [Azure 信息保护标签迁移到统一敏感度标签](/azure/information-protection/configure-policy-migrate-labels)。 
 
 ## <a name="sensitivity-labels-and-the-microsoft-information-protection-sdk"></a>敏感度标签和 Microsoft 信息保护 SDK
 
-由于灵敏度标签在文档的元数据中存储为明文，因此第三方应用和服务可以读取和写入此标签元数据，为标签部署提供补充。 此外，软件开发人员可以使用 [Microsoft 信息保护 SDK](/information-protection/develop/overview#microsoft-information-protection-sdk) 在多个平台之间全面支持标签和加密功能。 若要了解详细信息，请参阅[技术社区博客上的“正式发布”公告](https://techcommunity.microsoft.com/t5/Microsoft-Information-Protection/Microsoft-Information-Protection-SDK-Now-Generally-Available/ba-p/263144)。 
+由于敏感度标签存储在文档的元数据中，因此第三方应用和服务可以从此标签元数据读取标签元数据并写入内容，以补充标签部署。 此外，软件开发人员可以使用 [Microsoft 信息保护 SDK](/information-protection/develop/overview#microsoft-information-protection-sdk) 在多个平台之间全面支持标签和加密功能。 若要了解详细信息，请参阅[技术社区博客上的“正式发布”公告](https://techcommunity.microsoft.com/t5/Microsoft-Information-Protection/Microsoft-Information-Protection-SDK-Now-Generally-Available/ba-p/263144)。 
 
 你还可以了解[与 Microsoft 信息保护集成的合作伙伴解决方案](https://techcommunity.microsoft.com/t5/Azure-Information-Protection/Microsoft-Information-Protection-showcases-integrated-partner/ba-p/262657)。
 

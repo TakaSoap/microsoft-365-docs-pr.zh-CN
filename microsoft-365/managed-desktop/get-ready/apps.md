@@ -9,12 +9,13 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: ea0990e5f30aa45ec48bb2e6a7c957c187c74ebb
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+audience: Admin
+ms.openlocfilehash: d970ac1a28c62703f648e4fbf6f66e2f825a6188
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50922940"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51574615"
 ---
 # <a name="apps-in-microsoft-managed-desktop"></a>Microsoft 托管桌面中的应用
 
@@ -75,3 +76,16 @@ Microsoft 将为包含的 Microsoft 365 企业应用版应用提供部署、更�
 ## <a name="deploying-apps"></a>部署应用
 
 无论使用哪种方法打包应用，完成后，你都已准备好按照将应用部署到 [Microsoft 托管桌面设备中的步骤操作](../get-started/deploy-apps.md)。
+
+
+## <a name="steps-to-get-ready"></a>准备步骤
+
+1. 查看 [Microsoft 托管桌面的先决条件](prerequisites.md)。
+2. 使用 [准备情况评估工具](readiness-assessment-tool.md)。
+3. [来宾帐户的先决条件](guest-accounts.md)
+4. [Microsoft 托管桌面的网络配置](network.md)
+5. [为 Microsoft 托管桌面准备证书和网络配置文件](certs-wifi-lan.md)
+6. [为 Microsoft 托管桌面准备本地资源访问权限](authentication.md)
+7. [Microsoft 托管桌面](apps.md) 应用程序中 (本文) 
+8. [为 Microsoft 托管桌面准备映射的驱动器](mapped-drives.md)
+9. [为 Microsoft 托管桌面准备打印资源](printing.md)

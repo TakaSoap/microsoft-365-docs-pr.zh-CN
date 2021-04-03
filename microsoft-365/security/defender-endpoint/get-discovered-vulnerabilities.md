@@ -1,5 +1,5 @@
 ---
-title: 获取发现的漏洞
+title: 发现漏洞
 description: 检索与给定设备 ID 相关的已发现漏洞的集合。
 keywords: api， 图形 api， 受支持的 api， 获取， 列表， 文件， 信息， 发现的漏洞， 威胁&漏洞管理 api， mdatp tvm api
 search.product: eADQiWindows 10XVcnh
@@ -7,22 +7,22 @@ ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-author: levinec
-ms.author: ellevin
+author: dansimp
+ms.author: dansimp
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 08fa910c8d4c7130fdb3ed564a97cdbd2f31d233
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 73b8fe5140ff635791e7d42358024bb7fb4ee926
+ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51166325"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51570323"
 ---
-# <a name="get-discovered-vulnerabilities"></a>获取发现的漏洞
+# <a name="get-discovered-vulnerabilities"></a>发现漏洞
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -48,7 +48,7 @@ ms.locfileid: "51166325"
 
 权限类型 | 权限 | 权限显示名称
 :---|:---|:---
-Application |Vulnerability.Read.All | "读取威胁和漏洞管理漏洞信息"
+应用程序 |Vulnerability.Read.All | "读取威胁和漏洞管理漏洞信息"
 委派（工作或学校帐户） | Vulnerability.Read | "读取威胁和漏洞管理漏洞信息"
 
 ## <a name="http-request"></a>HTTP 请求
@@ -61,7 +61,7 @@ GET /api/machines/{machineId}/vulnerabilities
 
 名称 | 类型 | 说明
 :---|:---|:---
-Authorization | String | Bearer {token}。 **必需**。
+Authorization | 字符串 | Bearer {token}。 **必需**。
 
 ## <a name="request-body"></a>请求正文
 

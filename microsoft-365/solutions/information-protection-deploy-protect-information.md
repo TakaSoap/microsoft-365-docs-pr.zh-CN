@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: 部署 Microsoft 365 安全性和合规性功能，并保护个人信息。
-ms.openlocfilehash: 657b3c9c6416c8a38629a0d26253e1222aa6d242
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 2d3a5baa063e6672760dda60ae6d76ea928ccd16
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50928468"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51500990"
 ---
 # <a name="protect-information-subject-to-data-privacy-regulation"></a>保护受数据隐私条例保护的信息
 
@@ -90,14 +90,15 @@ Microsoft [信息保护解决方案](../compliance/information-protection.md) �
 
 通过 Microsoft 信息保护框架中的敏感度标签，你可以对组织的数据进行分类和保护，而不受用户工作效率和协作能力的影响。
 
-![Microsoft 365 中的敏感度标签](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-labels.png)
+> [!div class="mx-imgBorder"]
+> ![Microsoft 365 中的敏感度标签](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-labels.png)
 
 ### <a name="prerequisites-for-sensitivity-labels"></a>敏感度标签的先决条件
 
 在实施以下突出显示的任何基于敏感度标签的功能之前，请完成这些活动：
 
 1. 了解以下内容：
-   - **业务要求。** 确定在企业中应用敏感度标签的业务原因。 例如，你的信息保护数据隐私要求。
+   - **业务需求。** 确定在企业中应用敏感度标签的业务原因。 例如，你的信息保护数据隐私要求。
    - **敏感度标签功能。** 敏感度标签可能会变得复杂，因此请确保在开始使用之前 [阅读敏感度标签](../compliance/sensitivity-labels.md) 文档。
    - **要记住的关键内容** 敏感度标签在 Microsoft 合规性管理中心内进行管理，但目标定位和应用程序选项明显不同。
       - 容器级别的网站、组和 Teams 有敏感度标签 (这些设置不适用于容器内的内容) 。 当设置网站、组或团队时，这些策略将发布到应用它们的用户和组。
@@ -115,7 +116,7 @@ Microsoft [信息保护解决方案](../compliance/information-protection.md) �
 
       如果你计划将现代敏感度标签用于电子邮件保护，并且现有电子邮件加密方法（如 OME）已就位，它们可以共存，但你应了解其中任一种应用的方案。 请参阅 [Office 365 ](#office-365-message-encryption-ome-new-capabilities)邮件加密新功能 (OME) ，其中包括一个比较现代敏感度标签类型保护与基于 OME 的保护的表。
 
-3. 规划集成到更广泛的信息保护方案中。 除了与 OME 共存外，当前敏感度标签还可以与 Microsoft 365 数据丢失防护、DLP (和 Microsoft Cloud App Security) 一起使用。 请参阅 [敏感度标签和 Microsoft Cloud App Security，](../compliance/sensitivity-labels.md#sensitivity-labels-and-microsoft-cloud-app-security) 以实现数据隐私相关信息保护目标。
+3. 规划集成到更广泛的信息保护方案中。 除了与 OME 共存外，还可以同时使用敏感度标签，如 Microsoft 365 数据丢失防护 (DLP) 和 Microsoft Cloud App Security。 请参阅 [Microsoft 365](../compliance/information-protection.md) 中的 Microsoft 信息保护以实现数据隐私相关信息保护目标。
 
 4. 制定敏感度标签分类和控制方案。 请参阅 [数据分类和敏感度标签分类](https://aka.ms/dataclassificationwhitepaper)。
 
@@ -215,11 +216,13 @@ DLP 允许您：
 
 您还可以监视和保护本地安装的 Excel、PowerPoint 和 Word 版本中的敏感项目，其中包括识别敏感项目和应用 DLP 策略的能力。 当用户从这些 Office 应用中共享内容时，DLP 提供持续监视。
 
-![DLP 支持的工作负荷](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-supported-workloads.png)
+> [!div class="mx-imgBorder"]
+> ![DLP 支持的工作负荷](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-supported-workloads.png)
 
 此图显示了 DLP 保护个人数据的示例。
 
-![使用 DLP 保护个人数据的示例](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-dlp-example-use.png)
+> [!div class="mx-imgBorder"]
+> ![使用 DLP 保护个人数据的示例](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-dlp-example-use.png)
 
 DLP 用于标识包含运行状况记录的文档或电子邮件，然后自动阻止对该文档的访问或阻止发送电子邮件。 然后，DLP 使用策略提示通知收件人，并将警报发送给最终用户和管理员。
 
@@ -252,7 +255,8 @@ DLP 用于标识包含运行状况记录的文档或电子邮件，然后自动�
 
 DLP 策略在 Microsoft 合规性管理中心进行配置，并指定保护级别、策略要查找的敏感信息类型以及目标工作负荷。 它们的基本组件包括标识保护和数据类型。
 
-![Microsoft 365 中的 DLP 策略配置](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-dlp-config.png)
+> [!div class="mx-imgBorder"]
+> ![Microsoft 365 中的 DLP 策略配置](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-dlp-config.png)
 
 下面是用于了解 GDPR 的 DLP 策略示例。
 
@@ -270,7 +274,7 @@ DLP 策略在 Microsoft 合规性管理中心进行配置，并指定保护级�
 
 >[!Note]
 >在某些情况下，随着保护级别的提高，用户共享和访问信息的能力将会降低，并可能会影响用户的工作效率或完成日常任务的能力。
->
+
 
 若要在提高保护级别时帮助员工在更安全的环境中继续高效工作，请花时间培训他们，让他们了解新的安全策略和过程。
 
@@ -285,7 +289,8 @@ DLP 策略在 Microsoft 合规性管理中心进行配置，并指定保护级�
 
 确定这些元素后，可以同时使用敏感信息类型、敏感度标签分类和 DLP 策略。 此图显示了一个示例。
 
-![使用 DLP 的敏感度标签示例](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-sensitivity-lables-dlp.png)
+> [!div class="mx-imgBorder"]
+> ![使用 DLP 的敏感度标签示例](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-sensitivity-lables-dlp.png)
 
 [查看此图像的较大版本](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-sensitivity-lables-dlp.png)
 

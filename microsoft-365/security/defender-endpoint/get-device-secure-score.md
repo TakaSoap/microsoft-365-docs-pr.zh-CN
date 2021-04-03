@@ -7,20 +7,20 @@ ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-author: levinec
-ms.author: ellevin
+author: dansimp
+ms.author: dansimp
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 921334c937e3f211b032a5d24d4244d9a6fb3d61
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: db4682d0d2fccd7504eb46d9099a9783408cfb73
+ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51166327"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51570932"
 ---
 # <a name="get-device-secure-score"></a>获取设备安全分数
 
@@ -47,7 +47,7 @@ ms.locfileid: "51166327"
 
 权限类型 |   权限  |   权限显示名称
 :---|:---|:---
-Application |   Score.Read.Alll |   "读取威胁和漏洞管理分数"
+应用程序 |   Score.Read.Alll |   "读取威胁和漏洞管理分数"
 委派（工作或学校帐户） | Score.Read | "读取威胁和漏洞管理分数"
 
 ## <a name="http-request"></a>HTTP 请求
@@ -60,7 +60,7 @@ GET /api/configurationScore
 
 名称 | 类型 | 说明
 :---|:---|:---
-Authorization | String | Bearer {token}。 **必需**。
+Authorization | 字符串 | Bearer {token}。 **必需**。
 
 ## <a name="request-body"></a>请求正文
 

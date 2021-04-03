@@ -1,5 +1,5 @@
 ---
-title: 适用于 Linux 的 Microsoft Defender ATP
+title: Microsoft Defender for Endpoint for Linux
 ms.reviewer: ''
 description: 介绍如何安装和使用适用于 Linux 的 Microsoft Defender ATP。
 keywords: microsoft， defender， atp， linux， 安装， 部署， 卸载， 安装， ansible， linux， redhat， ubuntu， debian， sles， suse， centos
@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 08bb4c73cb9df429c4b07194f1c7615f44d745d8
-ms.sourcegitcommit: c75aac39ee8d93218a79585113ef6b36f47c9ddf
+ms.openlocfilehash: cc2f5be700395f6d88c05481d74501f4d9d92b76
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2021
-ms.locfileid: "51408333"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51500674"
 ---
 # <a name="microsoft-defender-for-endpoint-for-linux"></a>Microsoft Defender for Endpoint for Linux
 
@@ -39,11 +39,11 @@ ms.locfileid: "51408333"
 本主题介绍如何安装、配置、更新和使用适用于 Linux 的 Microsoft Defender for Endpoint。
 
 > [!CAUTION]
-> 将其他第三方终结点保护产品与 Microsoft Defender for Endpoint for Linux 一起运行可能会导致性能问题和不可预知的系统错误。
+> 将其他第三方终结点保护产品与 Microsoft Defender for Endpoint for Linux 一起运行可能会导致性能问题和不可预知的副作用。 如果非 Microsoft 终结点保护在你的环境中是绝对要求，在将防病毒功能配置为在被动模式下运行后，你仍然可以安全地利用适用于 Linux EDR 的 Defender for [Endpoint 功能](linux-preferences.md#enable--disable-passive-mode)。
 
 ## <a name="how-to-install-microsoft-defender-for-endpoint-for-linux"></a>如何安装适用于 Linux 的 Microsoft Defender for Endpoint
 
-### <a name="prerequisites"></a>必备条件
+### <a name="prerequisites"></a>先决条件
 
 - 访问 Microsoft Defender 安全中心门户
 - 使用系统 [系统管理器的](https://systemd.io/) Linux 分发
@@ -110,8 +110,8 @@ ms.locfileid: "51408333"
 启用该服务后，可能需要配置网络或防火墙以允许其与终结点之间的出站连接。
 
 - 必须 `auditd` () 审核框架。
-  >[!NOTE]
-  > 通过添加到 的规则捕获的系统事件将添加到审核日志 `audit.logs` ，并可能影响主机审核和上游收集。 由 Microsoft Defender for Endopoint for Linux 添加的事件将用密钥 `mdatp` 进行标记。
+  > [!NOTE]
+  > 添加到 的规则捕获的系统事件将添加到 (，) `/etc/audit/rules.d/` `audit.log` 主机审核和上游集合。 Microsoft Defender for Endpoint for Linux 添加的事件将用密钥 `mdatp` 进行标记。
 
 ### <a name="network-connections"></a>网络连接
 

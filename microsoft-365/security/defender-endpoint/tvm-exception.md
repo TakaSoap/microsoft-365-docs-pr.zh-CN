@@ -8,8 +8,8 @@ ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: ellevin
-author: levinec
+ms.author: dansimp
+author: dansimp
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: c8ad69930ce4faecbffbc6d2fab59bbe2cac06fa
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 13ac09b1ad918ed945edec6167fd57ea02b616ea
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51055334"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51500186"
 ---
 # <a name="create-and-view-exceptions-for-security-recommendations---threat-and-vulnerability-management"></a>创建和查看安全建议例外 - 威胁和漏洞管理
 
@@ -143,5 +143,5 @@ ms.locfileid: "51055334"
 - [威胁和漏洞管理概述](next-gen-threat-and-vuln-mgt.md)
 - [修正漏洞](tvm-remediation.md)
 - [安全性建议](tvm-security-recommendation.md)
-- [曝光分数](tvm-exposure-score.md)
-- [Microsoft 设备安全分数](tvm-microsoft-secure-score-devices.md)
+- [风险评分](tvm-exposure-score.md)
+- [设备的 Microsoft 安全功能分数](tvm-microsoft-secure-score-devices.md)

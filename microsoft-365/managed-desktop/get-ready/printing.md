@@ -9,12 +9,13 @@ ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 3decc7d67decc5557e7921e68108e2ddb447f0fd
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+audience: Admin
+ms.openlocfilehash: 971644aafabda733bf745fae278bdfeeed3282e3
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50924548"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51574543"
 ---
 # <a name="prepare-printing-resources-for-microsoft-managed-desktop"></a>为 Microsoft 托管桌面准备打印资源
 
@@ -37,3 +38,15 @@ ms.locfileid: "50924548"
 3.  使用管理门户，我们将告知你请求完成时间。 最初，我们将仅将配置部署到测试部署组的设备。
 4.  必须测试并确认配置是否如预期工作。 使用支持 **请求中的** "讨论"选项卡进行回复，以在测试完成时告诉我们。
 5.  然后，我们将配置部署到其他部署组。
+
+## <a name="steps-to-get-ready"></a>准备步骤
+
+1. 查看 [Microsoft 托管桌面的先决条件](prerequisites.md)。
+2. 使用 [准备情况评估工具](readiness-assessment-tool.md)。
+3. [来宾帐户的先决条件](guest-accounts.md)
+4. [Microsoft 托管桌面的网络配置](network.md)
+5. [为 Microsoft 托管桌面准备证书和网络配置文件](certs-wifi-lan.md)
+6. [为 Microsoft 托管桌面准备本地资源访问权限](authentication.md)
+7. [Microsoft 托管桌面中的应用](apps.md)
+8. [为 Microsoft 托管桌面准备映射的驱动器](mapped-drives.md)
+9. [Prepare printing resources for Microsoft Managed Desktop](printing.md) (This article) 

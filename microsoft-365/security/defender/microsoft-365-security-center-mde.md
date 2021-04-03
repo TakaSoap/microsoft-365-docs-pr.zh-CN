@@ -7,8 +7,8 @@ ms.mktglfcycl: deploy
 localization_priority: Normal
 f1.keywords:
 - NOCSH
-ms.author: ellevin
-author: levinec
+ms.author: dansimp
+author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: article
@@ -18,12 +18,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
-ms.openlocfilehash: b580c6f20ed3b242fc0bc239a49fe89ccc09d013
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 5f90e9f666e2befcfcee5ec424327228b2d1ad11
+ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51199191"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51569879"
 ---
 # <a name="microsoft-defender-for-endpoint-in-the-microsoft-365-security-center"></a>Microsoft 365 安全中心中的 Microsoft Defender for Endpoint
 
@@ -92,7 +92,7 @@ Microsoft 365 安全中心中的 Microsoft Defender for Endpoint 支持向托管
 
 |**区域**  |**更改说明**  |
 |---------|---------|
-| 报表  | 请参阅终结点和电子邮件报告&协作，包括威胁防护、设备运行状况和合规性以及易受攻击的设备。 |
+| 报告  | 请参阅终结点和电子邮件报告&协作，包括威胁防护、设备运行状况和合规性以及易受攻击的设备。 |
 | 健康  |  当前链接到 Microsoft [365](https://admin.microsoft.com/)管理中心中的"服务运行状况"页面。 |
 | 设置 |  管理 Microsoft 365 安全中心、Microsoft 365 Defender、终结点、电子邮件&协作、标识和设备发现的设置。   |
 

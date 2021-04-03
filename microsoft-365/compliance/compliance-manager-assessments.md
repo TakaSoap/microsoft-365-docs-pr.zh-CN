@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 在 Microsoft 合规性管理器中生成评估，帮助你满足对组织非常重要的法规和认证要求。
-ms.openlocfilehash: ff2aa41b91f3cb019dbed542c422d61c79c4ecb5
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: b8051a036f2ffda2f3a2840880318466a2ec71af
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50908592"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51500635"
 ---
 # <a name="build-and-manage-assessments-in-compliance-manager"></a>在合规性管理器中生成和管理评估
 
@@ -53,7 +53,7 @@ ms.locfileid: "50908592"
 3. [创建自己的自定义评估](#create-your-own-custom-assessment)。
 
 > [!NOTE]
-> 只有具有全局管理员或合规性管理器管理角色的用户才能创建和修改评估。 详细了解角色 [和权限](compliance-manager-setup.md#set-user-permissions-and-assign-roles)。
+> 只有具有全局管理员、合规性管理器管理或合规性管理器评估员角色的用户才能创建和修改评估。 详细了解角色 [和权限](compliance-manager-setup.md#set-user-permissions-and-assign-roles)。
 
 **使用预建评估**
 

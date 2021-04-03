@@ -8,8 +8,8 @@ ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: ellevin
-author: levinec
+ms.author: dansimp
+author: dansimp
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 5532e9058d7a49033f651e3fbee605e5ae39d05a
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 90a124f9b0bf9ef775141e359224fde566c61c8d
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51056594"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51501200"
 ---
 # <a name="event-timeline---threat-and-vulnerability-management"></a>事件时间线 - 威胁和漏洞管理
 
@@ -134,8 +134,8 @@ ms.locfileid: "51056594"
 
 - [威胁和漏洞管理概述](next-gen-threat-and-vuln-mgt.md)
 - [仪表板](tvm-dashboard-insights.md)
-- [曝光分数](tvm-exposure-score.md)
+- [风险评分](tvm-exposure-score.md)
 - [安全性建议](tvm-security-recommendation.md)
 - [修正漏洞](tvm-remediation.md)
-- [软件清单](tvm-software-inventory.md)
+- [软件库存](tvm-software-inventory.md)
 

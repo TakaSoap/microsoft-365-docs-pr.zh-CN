@@ -17,12 +17,12 @@ ms.collection:
 description: 管理员可以了解如何配置邮箱以收集用户报告的垃圾邮件和网络钓鱼电子邮件。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 4d3f2640752f2dae152ef4be8b9ac2d2996c802a
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: d86c79f0f0ab74d1dfbb88e7803f4ee4d691ea73
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51203699"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51501184"
 ---
 # <a name="user-submissions-policy"></a>用户提交策略
 
@@ -119,6 +119,9 @@ ms.locfileid: "51203699"
 
         > [!NOTE]
         > GCC、GCC-H 和 DoD (的美国政府组织只能) 自定义 **邮箱**。 其他两个选项已禁用。
+
+        > [!NOTE]
+        > 如果组织配置为仅发送到自定义邮箱，将不会发送报告的邮件进行重新扫描，并且用户报告的邮件门户中的结果将始终为空。
 
       完成后，单击"确认 **"。**
 

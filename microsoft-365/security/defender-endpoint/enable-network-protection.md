@@ -1,5 +1,5 @@
 ---
-title: 打开网络保护
+title: 启用网络保护功能
 description: 使用组策略、PowerShell 或移动设备管理和配置管理器启用网络保护。
 keywords: 网络保护， 攻击， 恶意网站， ip， 域， 启用， 打开
 search.product: eADQiWindows 10XVcnh
@@ -8,19 +8,19 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 localization_priority: Normal
-author: levinec
-ms.author: ellevin
+author: dansimp
+ms.author: dansimp
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 84a0e94b653eb426fab14d9c55ba8d29df388fe5
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: a513013c4b5f41cf95b876648882cb56ba818b32
+ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51164742"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51570992"
 ---
-# <a name="turn-on-network-protection"></a>打开网络保护
+# <a name="turn-on-network-protection"></a>启用网络保护功能
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -126,5 +126,5 @@ ms.locfileid: "51164742"
 ## <a name="see-also"></a>另请参阅
 
 * [网络保护](network-protection.md)
-* [评估网络保护](evaluate-network-protection.md)
+* [网络保护功能评估](evaluate-network-protection.md)
 * [网络保护疑难解答](troubleshoot-np.md)

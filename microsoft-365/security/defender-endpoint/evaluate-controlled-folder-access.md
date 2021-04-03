@@ -1,5 +1,5 @@
 ---
-title: 评估受控文件夹访问权限
+title: 受控文件夹访问评估
 description: 了解受控文件夹访问权限如何有助于防止文件被恶意应用更改。
 keywords: Exploit Protection， windows 10， windows defender， 勒索软件， 保护， 评估， 测试， 演示， 尝试
 search.product: eADQiWindows 10XVcnh
@@ -8,19 +8,19 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 localization_priority: Normal
 audience: ITPro
-author: levinec
-ms.author: ellevin
+author: dansimp
+ms.author: dansimp
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: e965e1a882dadfb565231074165507a6727b45c1
-ms.sourcegitcommit: 8685b0f7d53c99577fa65144ab60295dfa60f46f
+ms.openlocfilehash: f996a8fdaf630c8ea389ac9648369cc955a6e95d
+ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51218744"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51569901"
 ---
-# <a name="evaluate-controlled-folder-access"></a>评估受控文件夹访问权限
+# <a name="evaluate-controlled-folder-access"></a>受控文件夹访问评估
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 

@@ -1,5 +1,5 @@
 ---
-title: 查看攻击面减少事件
+title: 查看攻击面减少规则
 description: 导入自定义视图以查看攻击面减少事件。
 keywords: 事件视图， 攻击防护， 审核， 审查， 事件
 search.product: eADQiWindows 10XVcnh
@@ -8,19 +8,19 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 localization_priority: Normal
 audience: ITPro
-author: levinec
-ms.author: ellevin
+author: dansimp
+ms.author: dansimp
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: de605a667284c1218a3efe6e388d99b26b42e333
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 0a2ec16685ede2e625528fc3944943923bba3fc9
+ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51056537"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51569739"
 ---
-# <a name="view-attack-surface-reduction-events"></a>查看攻击面减少事件
+# <a name="view-attack-surface-reduction-events"></a>查看攻击面减少规则
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -147,40 +147,40 @@ ms.locfileid: "51056537"
 
 功能 | 提供程序/源 | 事件 ID | 说明
 :-|:-|:-:|:-
-Exploit Protection | Security-Mitigations (内核模式/用户模式)  | 1 | ACG 审核
-Exploit Protection | Security-Mitigations (内核模式/用户模式)  | 2 | ACG 强制
-Exploit Protection | Security-Mitigations (内核模式/用户模式)  | 3 | 不允许子进程审核
-Exploit Protection | Security-Mitigations (内核模式/用户模式)  | 4  | 不允许子进程阻止
-Exploit Protection | Security-Mitigations (内核模式/用户模式)  | 5  | 阻止低完整性图像审核
-Exploit Protection | Security-Mitigations (内核模式/用户模式)  | 6  | 阻止低完整性图像块
-Exploit Protection | Security-Mitigations (内核模式/用户模式)  | 7  | 阻止远程图像审核
-Exploit Protection | Security-Mitigations (内核模式/用户模式)  | 8  | 阻止远程图像阻止
-Exploit Protection | Security-Mitigations (内核模式/用户模式)  | 9  | 禁用 win32k 系统调用审核
-Exploit Protection | Security-Mitigations (内核模式/用户模式)  | 10   | 禁用 win32k 系统调用块
-Exploit Protection | Security-Mitigations (内核模式/用户模式)  | 11 | 代码完整性防护审核
-Exploit Protection | Security-Mitigations (内核模式/用户模式)  | 12  | 代码完整性防护块
-Exploit Protection | Security-Mitigations (内核模式/用户模式)  | 13 | EAF 审核
-Exploit Protection | Security-Mitigations (内核模式/用户模式)  | 14  | EAF 强制
-Exploit Protection | Security-Mitigations (内核模式/用户模式)  | 15  | EAF+ 审核
-Exploit Protection | Security-Mitigations (内核模式/用户模式)  | 16  | EAF+ 强制
-Exploit Protection | Security-Mitigations (内核模式/用户模式)  | 17  | IAF 审核
-Exploit Protection | Security-Mitigations (内核模式/用户模式)  | 18  | IAF 强制
-Exploit Protection | Security-Mitigations (内核模式/用户模式)  | 19 | ROP StackPivot 审核
-Exploit Protection | Security-Mitigations (内核模式/用户模式)  | 20 | ROP StackPivot 强制
-Exploit Protection | Security-Mitigations (内核模式/用户模式)  |  21 | ROP CallerCheck 审核
-Exploit Protection | Security-Mitigations (内核模式/用户模式)  | 22 | ROP CallerCheck 强制
-Exploit Protection | Security-Mitigations (内核模式/用户模式)  | 23 | ROP SimExec 审核
-Exploit Protection | Security-Mitigations (内核模式/用户模式)  | 24 | ROP SimExec 强制
-Exploit Protection | WER-Diagnostics | 5  | CFG 块
-Exploit Protection | Win32K (Operational)  | 260 | 不受信任的字体
+漏洞保护 | Security-Mitigations (内核模式/用户模式)  | 1 | ACG 审核
+漏洞保护 | Security-Mitigations (内核模式/用户模式)  | 2 | ACG 强制
+漏洞保护 | Security-Mitigations (内核模式/用户模式)  | 3 | 不允许子进程审核
+漏洞保护 | Security-Mitigations (内核模式/用户模式)  | 4  | 不允许子进程阻止
+漏洞保护 | Security-Mitigations (内核模式/用户模式)  | 5  | 阻止低完整性图像审核
+漏洞保护 | Security-Mitigations (内核模式/用户模式)  | 6  | 阻止低完整性图像块
+漏洞保护 | Security-Mitigations (内核模式/用户模式)  | 7  | 阻止远程图像审核
+漏洞保护 | Security-Mitigations (内核模式/用户模式)  | 8  | 阻止远程图像阻止
+漏洞保护 | Security-Mitigations (内核模式/用户模式)  | 9  | 禁用 win32k 系统调用审核
+漏洞保护 | Security-Mitigations (内核模式/用户模式)  | 10   | 禁用 win32k 系统调用块
+漏洞保护 | Security-Mitigations (内核模式/用户模式)  | 11 | 代码完整性防护审核
+漏洞保护 | Security-Mitigations (内核模式/用户模式)  | 12  | 代码完整性防护块
+漏洞保护 | Security-Mitigations (内核模式/用户模式)  | 13 | EAF 审核
+漏洞保护 | Security-Mitigations (内核模式/用户模式)  | 14  | EAF 强制
+漏洞保护 | Security-Mitigations (内核模式/用户模式)  | 15  | EAF+ 审核
+漏洞保护 | Security-Mitigations (内核模式/用户模式)  | 16  | EAF+ 强制
+漏洞保护 | Security-Mitigations (内核模式/用户模式)  | 17  | IAF 审核
+漏洞保护 | Security-Mitigations (内核模式/用户模式)  | 18  | IAF 强制
+漏洞保护 | Security-Mitigations (内核模式/用户模式)  | 19 | ROP StackPivot 审核
+漏洞保护 | Security-Mitigations (内核模式/用户模式)  | 20 | ROP StackPivot 强制
+漏洞保护 | Security-Mitigations (内核模式/用户模式)  |  21 | ROP CallerCheck 审核
+漏洞保护 | Security-Mitigations (内核模式/用户模式)  | 22 | ROP CallerCheck 强制
+漏洞保护 | Security-Mitigations (内核模式/用户模式)  | 23 | ROP SimExec 审核
+漏洞保护 | Security-Mitigations (内核模式/用户模式)  | 24 | ROP SimExec 强制
+漏洞保护 | WER-Diagnostics | 5  | CFG 块
+漏洞保护 | Win32K (Operational)  | 260 | 不受信任的字体
 网络保护 | Windows Defender (操作)  | 5007 | 更改设置时的事件
 网络保护 | Windows Defender (操作)  | 1125 | 在审核模式下触发网络保护时的事件
 网络保护 | Windows Defender (操作)  | 1126 | 在阻止模式下触发网络保护时的事件
-受控文件夹访问权限 | Windows Defender (操作)  | 5007 | 更改设置时的事件
-受控文件夹访问权限 | Windows Defender (操作)  | 1124 | 已审核的受控文件夹访问权限事件
-受控文件夹访问权限 | Windows Defender (操作)  | 1123 | 阻止的受控文件夹访问权限事件
-受控文件夹访问权限 | Windows Defender (操作)  | 1127 | 阻止的受控文件夹访问权限扇区写入块事件
-受控文件夹访问权限 | Windows Defender (操作)  | 1128 | 审核的受控文件夹访问权限扇区写入块事件
+受控文件夹访问 | Windows Defender (操作)  | 5007 | 更改设置时的事件
+受控文件夹访问 | Windows Defender (操作)  | 1124 | 已审核的受控文件夹访问权限事件
+受控文件夹访问 | Windows Defender (操作)  | 1123 | 阻止的受控文件夹访问权限事件
+受控文件夹访问 | Windows Defender (操作)  | 1127 | 阻止的受控文件夹访问权限扇区写入块事件
+受控文件夹访问 | Windows Defender (操作)  | 1128 | 审核的受控文件夹访问权限扇区写入块事件
 攻击面减少 | Windows Defender (操作)  | 5007 | 更改设置时的事件
 攻击面减少 | Windows Defender (操作)  | 1122 | 在审核模式下触发规则时的事件
 攻击面减少 | Windows Defender (操作)  | 1121 | 在阻止模式下触发规则时的事件

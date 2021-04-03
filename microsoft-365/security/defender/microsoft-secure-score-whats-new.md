@@ -7,8 +7,8 @@ ms.mktglfcycl: deploy
 localization_priority: Normal
 f1.keywords:
 - NOCSH
-ms.author: ellevin
-author: levinec
+ms.author: dansimp
+author: dansimp
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: 1933ca86f56524b018c322f3b5560250debd0387
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 5a868904a43e17952368e097c0b0e963252d5bed
+ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51055548"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51570359"
 ---
 # <a name="whats-new-in-microsoft-secure-score"></a>Microsoft 安全分数中的新增功能
 
@@ -111,6 +111,6 @@ Identity Secure Score 将采用新的评分模型。 在此之前，客户将看
 
 ## <a name="related-resources"></a>相关资源
 
-- [评估你的安全状况](microsoft-secure-score-improvement-actions.md)
+- [评估安全状况](microsoft-secure-score-improvement-actions.md)
 - [跟踪 Microsoft 安全分数历史记录并实现目标](microsoft-secure-score-history-metrics-trends.md)
 - [即将推出的功能](microsoft-secure-score-whats-coming.md)

@@ -17,12 +17,12 @@ ms.custom:
 description: 管理员可以了解 Exchange Online Protection (EOP) 和 Microsoft Defender for Office 365 中提供的防钓鱼策略。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 64defeaa1e8cf4a08610742571a01ea527163d14
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 44472d49936f400ee16227f3f29141738ad28daa
+ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51203555"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51571016"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>Microsoft 365 中的防钓鱼策略
 
@@ -93,7 +93,7 @@ Microsoft Defender for Office 365 中的反网络钓鱼策略仅适用于具有 
 
 ## <a name="spoof-settings"></a>欺骗设置
 
-欺骗是电子邮件中的发件人地址 (显示在电子邮件客户端中的发件人地址) 与电子邮件源的域不匹配。 有关欺骗功能详细信息，请参阅 [Microsoft 365](anti-spoofing-protection.md)中的反欺骗保护。
+欺骗是电子邮件中的发件人地址 (电子邮件客户端中显示的发件人地址) 与电子邮件源的域不匹配。 有关欺骗功能详细信息，请参阅 [Microsoft 365](anti-spoofing-protection.md)中的反欺骗保护。
 
 EOP 和 Microsoft Defender for Office 365 中的防钓鱼策略中提供了以下欺骗设置：
 
