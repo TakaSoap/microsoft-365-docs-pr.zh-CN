@@ -2,8 +2,8 @@
 title: 保护设备上的工作文件
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: sirkkuw
+ms.author: sharik
+author: skjerland
 manager: scotv
 audience: Admin
 ms.topic: conceptual
@@ -27,23 +27,23 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 52089919-9a5e-475f-a49a-f65369487861
-description: '了解默认配置和添加应用程序管理策略，以保护用户个人移动设备上的公司数据。 '
-ms.openlocfilehash: 6dd6bc5c16ffbbd6ed62f16ad11e1eeb8e06a193
-ms.sourcegitcommit: 2d664a95b9875f0775f0da44aca73b16a816e1c3
+description: '了解默认配置和添加应用程序管理策略以保护用户个人移动设备上的公司数据。 '
+ms.openlocfilehash: 7e3967dad47508e938b760d0eb96ba8685d886a1
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/01/2020
-ms.locfileid: "44470899"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51580026"
 ---
 # <a name="protect-work-files-on-devices"></a>保护设备上的工作文件
 
 本文适用于 Microsoft 365 商业高级版。
 
-在当今的世界中，用户与其设备关联，并且随着个人和工作生命发生冲突，贵公司的数据可能会在员工的个人设备上最终结束。 此处配置的设置可以帮助你夺回控制权并为工作文件提供保护，而不会影响任何用户的个人设置或数据。
+在当今的世界，用户与他们的设备绑定在一起，当个人和工作生活发生冲突时，公司数据最终可能位于员工的个人设备上。 此处配置的设置可以帮助你夺回控制权并为工作文件提供保护，而不会影响任何用户的个人设置或数据。
   
 ## <a name="configuring-policies-during-setup"></a>在设置过程中配置策略
 
-在设置过程中，会添加三个分别适用于 Android、iOS 和 Windows 10 的应用程序管理策略。 每个策略都具有相同的设置，它们适用于所有用户。 用户将其工作帐户连接到手机时，会激活这些策略。
+在设置过程中，会添加三个分别适用于 Android、iOS 和 Windows 10 的应用程序管理策略。 每个策略都具有相同的设置，并且适用于所有用户。 用户将其工作帐户连接到手机时，会激活这些策略。
   
 建议在设置过程中接受默认配置。完成设置后，可以添加更多的策略，借助这些策略可以微调配置，还可以为特定用户组应用不同级别的控制。
   

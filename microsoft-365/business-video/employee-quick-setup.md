@@ -2,8 +2,8 @@
 title: 员工快速设置指南
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -20,17 +20,17 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: 帮助员工了解如何设置他们通过 Microsoft 365 商业高级版获取的 Office 应用。
-ms.openlocfilehash: c336e12e05a0bb2f0967c7e7591913cbb2ce6742
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+description: 帮助员工了解如何设置使用 Microsoft 365 商业高级版获取的 Office 应用。
+ms.openlocfilehash: 72b05435de13ef0d020be74f619a140e188f79d8
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50422755"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51580614"
 ---
 # <a name="employee-quick-setup"></a>员工快速设置
 
-你是 Microsoft 365 商业版的新人吗？ :::image type="icon" source="../media/video-call-icon.png" border="false":::[观看此视频](https://support.microsoft.com/office/d6466f0d-5d13-464a-adcb-00906ae87029)了解它。 然后按照下列步骤操作。
+你是 Microsoft 365 商业版的新人？ :::image type="icon" source="../media/video-call-icon.png" border="false":::[观看此视频](https://support.microsoft.com/office/d6466f0d-5d13-464a-adcb-00906ae87029)了解它。 然后按照下列步骤操作。
 
 :::image type="content" source="../media/m365-employee-quick-setup.png" alt-text="显示快速员工设置步骤的图像。":::
 
@@ -41,7 +41,7 @@ ms.locfileid: "50422755"
 
 ## <a name="2-download-and-install-office-apps"></a>2. 下载并安装 Office 应用
 
-1. 选择 **右上角的"** 安装 Office"。
+1. 选择 **右上角** 的"安装 Office"。
     - 在 Chrome 中，转到页面底部的下载，然后选择" **打开**"。
     - 在 Microsoft Edge/IE 中，选择" **保存**"然后选择" **运行**"。
     
@@ -61,15 +61,15 @@ ms.locfileid: "50422755"
 
 ## <a name="4-save-or-copy-files-to-onedrive"></a>4. 将文件保存或复制到 OneDrive
 
-- 从 Office 应用中的"另存为"菜单 **将** 文档保存到 **OneDrive。**
-    :::image type="content" source="../media/save-onedrive.png" alt-text="请了解如何将另存为 OneDrive。":::
+- 从 Office 应用中的" **另** 存为 **"菜单将** 文档保存到 OneDrive。
+    :::image type="content" source="../media/save-onedrive.png" alt-text="指出如何将另存为 OneDrive。":::
 
 - 或将文件从桌面或文档复制到" **OneDrive**"。
 
     :::image type="content" source="../media/save-to-onedrive-from-docs.png" alt-text="显示如何从&quot;文档&quot;文件夹保存到 OneDrive 的图像。":::
 
     > [!TIP]
-    > 还可以在 Microsoft 365 [中的网站上](https://support.microsoft.com/office/d18d21a0-1f9f-4f6c-ac45-d52afa0a4a2e) 存储文件。
+    > 还可以在 Microsoft 365 [中将](https://support.microsoft.com/office/d18d21a0-1f9f-4f6c-ac45-d52afa0a4a2e) 文件存储在网站上。
 
 ## <a name="5-share-documents"></a>5. 共享文档
 
@@ -82,8 +82,8 @@ ms.locfileid: "50422755"
 
 ## <a name="6-get-outlook-on-your-phone"></a>6. 获取手机上的 Outlook
 
-- 从 **应用商店** 或 Google Play 应用商店获取手机上的 Outlook。 打开它，然后选择 **"开始使用** "并添加你的电子邮件和密码。
+- 从 **应用商店** 或 Google Play 应用商店获取手机上的 Outlook。 打开它，然后选择" **开始"，** 然后添加你的电子邮件和密码。
 - 或者，在 iOS 或 Android 设备上打开 Outlook，然后转到" **设置**"。
 
     选择" **添加帐户**"，然后选择" **添加电子邮件帐户**"，键入电子邮件和密码。
-- 在 **Windows Phone 上**，选择"**设置****"、"电子邮件 + 帐户"、"****添加帐户**"，然后选择 **"Exchange"。**
+- 在 **Windows Phone 上**，**选择"设置"、"****电子邮件 + 帐户****"、"添加** 帐户 **"，然后选择"Exchange"。**

@@ -2,8 +2,8 @@
 title: 帮助用户在 Windows 10 设备上安装 Office
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -27,12 +27,12 @@ search.appverid:
 - MET150
 ms.assetid: cbc6bfe5-565a-4fb8-95f0-b06e7b74ac46
 description: 帮助你的用户在 Windows 10 设备上安装 Office 应用，并轻松地从 Microsoft 365 管理中心在 Windows 10 PC 上安装 Office。
-ms.openlocfilehash: 5337c8ef008c1af79490eb6b6705d450055d24fb
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 35588589cf0b816bcbd686c69684d82b62383f17
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50913338"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51580206"
 ---
 # <a name="help-your-users-install-office-on-windows-10-devices"></a>帮助用户在 Windows 10 设备上安装 Office
 

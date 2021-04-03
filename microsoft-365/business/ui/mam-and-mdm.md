@@ -1,9 +1,9 @@
 ---
-title: 设备和应用程序管理之间的区别
+title: 设备和应用管理之间有什么区别
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: conceptual
@@ -21,23 +21,23 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: 了解移动设备管理与移动应用管理（MDM 和 MAM）之间的差异。
-ms.openlocfilehash: ecb06ffc23823df72f9254d881f6b1dc1b781f59
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: 了解移动设备管理与移动应用管理，或者 MDM 和 MAM 之间的差异。
+ms.openlocfilehash: 44ac5ebf66f4d4e0b057692902f9bc3804aa2e03
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43635024"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51579874"
 ---
-# <a name="difference-between-mdm-and-mam"></a>MDM 与 MAM 之间的区别
+# <a name="difference-between-mdm-and-mam"></a>MDM 和 MAM 的区别
 
-Microsoft 365 商业高级版提供了多种方法来保护您的业务数据。 有关自动设置的各种保护的详细信息，请参阅[Microsoft 365 商业高级版概述](../microsoft-365-business-overview.md)，以及你可以自行设置以进一步保护你的业务。 你还可以设置策略来保护你的 Windows 10 设备和移动设备中的数据。
+Microsoft 365 商业高级版提供了多种保护业务数据的方法。 请参阅 [Microsoft 365 商业](../microsoft-365-business-overview.md) 高级版概述，详细了解自动设置的各种保护，以及你可以设置哪些内容来进一步保护业务。 还可以设置用于保护 Windows 10 设备和移动设备数据的策略。
 [设置 Windows 10 设备的应用程序保护设置](../protection-settings-for-windows-10-devices.md)。
 
 ## <a name="mobile-device-management-or-mdm"></a>移动设备管理或 MDM
 
-Microsoft 365 商业高级版允许您设置策略来保护您的 Windows 10 设备上的数据。 当设备处于移动设备管理下时，您可以控制整个设备，并且可以擦除其中的数据，还可以将其重置为出厂设置。 有关详细信息，请参阅[设置 Windows 10 电脑的设备保护设置](../protection-settings-for-windows-10-pcs.md)。
+Microsoft 365 商业高级版允许你设置保护 Windows 10 设备上数据的策略。 当设备在移动设备管理下时，你可以控制整个设备，并且可以从该设备擦除数据，还可以将设备重置为出厂设置。 有关详细信息，请参阅为 [Windows 10 电脑设置设备保护设置](../protection-settings-for-windows-10-pcs.md)。
 
 ## <a name="mobile-application-management-or-mam"></a>移动应用程序管理或 MAM
 
-移动应用程序管理允许您在用户的个人设备（如 Iphone 和 Androids）及其个人 Win 10 计算机中控制业务数据。 您可以使用应用程序管理策略来阻止您的用户将 Office 应用中的业务数据复制到个人应用程序中。 您还可以从个人设备上的 Office 应用中删除所有数据。 有关详细信息，请参阅[设置适用于 Android 或 iOS 设备的应用保护设置](../app-protection-settings-for-android-and-ios.md)和[设置 Windows 10 设备的应用程序保护设置](../protection-settings-for-windows-10-devices.md)。
+移动应用程序管理允许你控制用户的个人设备（如 iPhone 和 Android）中的业务数据，以及他们的个人 Win 10 计算机。 可以使用应用程序管理策略来防止用户将业务数据从 Office 应用复制到其个人应用。 还可以从个人设备的 Office 应用中删除所有数据。 有关详细信息，请参阅设置 [Android 或 iOS](../app-protection-settings-for-android-and-ios.md) 设备的应用保护设置和设置 [Windows 10 设备的应用程序保护设置](../protection-settings-for-windows-10-devices.md)。

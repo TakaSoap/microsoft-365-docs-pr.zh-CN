@@ -1,9 +1,9 @@
 ---
-title: 为业务创建网站
+title: 为企业创建网站
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 了解如何为企业创建 GoDaddy 网站。
-ms.openlocfilehash: 64b8b7bacaf218f95a0fb89d03eb280f755f1f2f
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: 8f7057fcb7ed85502ce856fb50349a91466e0d6c
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50422731"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51580638"
 ---
 # <a name="create-a-website"></a>创建网站
 
@@ -35,9 +35,9 @@ ms.locfileid: "50422731"
 
 Microsoft 365 不包括适用于你的企业的公共网站。 若要设置一个，请考虑使用 Web 托管公司，如 GoDaddy、Wix 或 WordPress。
 
-1. 搜索可在其中生成网站的 Web 托管提供商。
+1. 搜索可在其中生成网站的 Web 宿主提供商。
 
      您可能会发现，在注册域名的同一公司中选择网站生成器最为简单。
 1. 设计业务网站，确保包括你的企业徽标、业务用途、文本、图像和链接。
-1. 若要将网站与 Microsoft 365 集成，可以将业务电子邮件添加到网站，并添加指向 Microsoft Teams、SharePoint 或其他协作工具的链接。
-1. 请确保将网站连接到域名，&#39;Microsoft 365 上的电子邮件也使用域名。
+1. 若要将网站与 Microsoft 365 集成，可以将业务电子邮件添加到网站，并链接到 Microsoft Teams、SharePoint 或其他协作工具。
+1. 请确保将你的网站连接到你的域名，&#39;Microsoft 365 上用于电子邮件的域名。

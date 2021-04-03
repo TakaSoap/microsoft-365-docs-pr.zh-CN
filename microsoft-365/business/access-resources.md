@@ -2,8 +2,8 @@
 title: 在 Microsoft 365 商业版中从加入 Azure AD 的设备访问本地资源
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 ms.assetid: b0f4d010-9fd1-44d0-9d20-fabad2cdbab5
 description: 了解如何从加入 Azure Active Directory 的 Windows 10 设备获取对本地资源（如业务线应用、文件共享和打印机）的访问权限。
-ms.openlocfilehash: 1bca0beb3ccc78e670ad33ce446b9b3f7c372ba7
-ms.sourcegitcommit: 39609c4d8c432c8e7d7a31cb35c8020e5207385b
+ms.openlocfilehash: 27549d6c3b03413f2f05c69845caad155333ca97
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "51445340"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51580306"
 ---
 # <a name="access-on-premises-resources-from-an-azure-ad-joined-device-in-microsoft-365-business-premium"></a>在 Microsoft 365 商业高级版中从加入 Azure AD 的设备访问本地资源
 

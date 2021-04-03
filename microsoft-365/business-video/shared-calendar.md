@@ -2,8 +2,8 @@
 title: 创建共享日历
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: kwekua
+author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 了解如何创建共享日历。
-ms.openlocfilehash: 22cf4473e7d370a3ae09b76e42d9ab29d0508a44
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: 8877cce7234890dca5cd83a74c69b93d3b1dcd04
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50421807"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51580386"
 ---
 # <a name="create-a-shared-calendar"></a>创建共享日历
 
@@ -33,10 +33,10 @@ ms.locfileid: "50421807"
 
 ## <a name="try-it"></a>试一试！
 
-共享日历可帮助您快速查看何时有人员可用于会议或其他活动。
+共享日历可帮助你快速查看何时有人员可用于会议或其他活动。
 
 1. 在 Outlook 中，选择日历图标。
-1. 在"**主页"** 选项卡上，**选择"添加日历"，** 然后选择"**从通讯簿"。**
-1. 通过输入用户的名称或从列表中选择用户的名称，将用户添加到共享日历，然后选择"**确定"。**
-1. 现在，可以查看你添加的联系人的日历和日历。
-1. 若要检查你的组的可用性，请选择" **天"** 视图。
+1. 在"**主页"** 选项卡上，选择"**添加日历"，** 然后选择"**自通讯簿"。**
+1. 通过输入用户的姓名或从列表中选择其姓名，将用户添加到共享日历，然后选择"确定 **"。**
+1. 现在，可以查看已添加人员的日历和日历。
+1. 若要检查组的可用性，请选择"天 **"** 视图。

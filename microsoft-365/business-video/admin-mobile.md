@@ -2,8 +2,8 @@
 title: 获取管理移动应用
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: kwekua
+author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 了解如何在手机上安装 Microsoft 365 管理移动应用。
-ms.openlocfilehash: 43c2c2905dec978a520e2bf2d4b9b2aa7318b7a7
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: 0367123e9bd74ab79c17b38eb49cc31fc6fba8e4
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50423007"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51580698"
 ---
 # <a name="install-the-microsoft-365-admin-mobile-app-on-your-phone"></a>在手机上安装 Microsoft 365 管理移动应用
 
@@ -35,27 +35,27 @@ ms.locfileid: "50423007"
 
 ## <a name="try-it"></a>试一试！
 
-1. 若要获取 Microsoft 365 管理移动应用，请在你的设备的应用商店中搜索  **Microsoft 365**  管理员并安装它。
+1. 若要获取 Microsoft 365 管理移动应用，在设备的应用商店中搜索  **Microsoft 365**  管理员并安装它。
 2. 使用全局管理员电子邮件地址登录，并查看仪表板以查看服务运行状况、监视用户许可证以及查看消息和服务请求。
 3. 以下是你可以对应用执行一些常见任务：
 
 ### <a name="reset-a-users-password"></a>重置用户密码
 
-1. 在 **"快速链接"下**，选择 **"用户"。**
-2. 在 **"用户**"页上，选择用户名，然后选择"重置 **密码"。**
+1. 在 **"快速链接"下**，选择"**用户"。**
+2. 在"**用户**"页面上，选择用户名，然后选择"**重置密码"。**
 3. 如果要要求用户在首次登录时更改其新密码，请选中"首次登录时更改"复选框，然后选择"重置 **"。**
-4. 当系统要求确认时，选择 **"是**"，然后选择"**确定"。**
+4. 当系统要求确认时，选择"**是"，** 然后选择"确定 **"。**
 5. 在  **"共享密码**  "窗口中，可以选择通过电子邮件或短信向用户发送新密码。
 
-### <a name="add-a-user-to-a-group"></a>将用户添加到组
+### <a name="add-a-user-to-a-group"></a>向组添加用户
 
-1. 在 **"快速链接"下**，选择 **"组"。**
+1. 在"**快速链接"下**，选择"**组"。**
 2. 在 **"组**"页上，选择要将用户添加到的组，然后选择"编辑成员"，然后选择"**添加成员"。**
 3. 选择要添加的用户。
-4. 当系统要求确认时，选择 **"是**"，然后选择"**确定"。**
+4. 当系统要求确认时，选择"**是"，** 然后选择"确定 **"。**
 
 ### <a name="turn-on-notifications"></a>打开通知
 
-1. 在主菜单上，选择"**设置"。**
-2. 在 **"应用设置"** 下，选择 **"通知"。**
-3. 选中"服务运行状况"和"消息中心 **"旁边的复选框**。
+1. 在主菜单上，选择"设置 **"。**
+2. 在 **"应用设置"下**，选择"**通知"。**
+3. 选中"服务运行状况"和"**消息中心****"旁边的复选框**。
