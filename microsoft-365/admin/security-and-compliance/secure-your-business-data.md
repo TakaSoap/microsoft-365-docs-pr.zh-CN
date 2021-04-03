@@ -2,8 +2,8 @@
 title: 保护 Microsoft 365 商业版计划的十大方法
 f1.keywords:
 - CSH
-ms.author: sirkkuw
-author: sirkkuw
+ms.author: sharik
+author: skjerland
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: de2da300-dbb6-4725-bb12-b85a9d296e75
 description: '保护你的业务电子邮件和数据免受网络威胁，包括勒索软件、网络钓鱼和恶意附件。 '
-ms.openlocfilehash: e45130d101c6e730fd2d487f5f8898c7cd268ab8
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 77213ab7f63b87ba985e6e4ca43119acc2345e2d
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51197847"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51579142"
 ---
 # <a name="top-10-ways-to-secure-microsoft-365-for-business-plans"></a>保护 Microsoft 365 商业版计划的十大方法
 
@@ -207,7 +207,7 @@ Microsoft 365 环境包括恶意软件防护，但您可以通过阻止包含恶
 ## <a name="7-use-office-message-encryption"></a>7：使用 Office 邮件加密
 <a name="encryption"> </a>
 
-Office 邮件加密包含在 Microsoft 365 中。 已设置。 通过 Office 邮件加密，组织可以在组织内外人员之间发送和接收加密电子邮件。 Office 365 邮件加密适用于 Outlook.com、Yahoo！、Gmail 和其他电子邮件服务。 电子邮件加密有助于确保只有预期收件人才能查看邮件内容。
+Office 邮件加密包含在 Microsoft 365 中。 已设置。 通过 Office 邮件加密，组织可以在组织内外人员之间发送和接收加密电子邮件。 Office 365 邮件加密可与 Outlook.com、Yahoo!、Gmail 和其他电子邮件服务搭配使用。 电子邮件加密有助于确保只有预期收件人才能查看邮件内容。
 
 Office 邮件加密在发送邮件时提供两种保护选项：
 

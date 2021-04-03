@@ -2,8 +2,8 @@
 title: Microsoft 365 使用情况分析
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 77ff780d-ab19-4553-adea-09cb65ad0f1f
 description: 大致了解组织采用 Microsoft 365 服务进行通信和协作的方式。
-ms.openlocfilehash: 5120e487604fbaf4421c1b2f814cd57e79d5f9dc
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: a88fb5f6381079644c7b2615432bcbc625b820ad
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50913810"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51579033"
 ---
 # <a name="microsoft-365-usage-analytics"></a>Microsoft 365 使用情况分析
 
@@ -116,7 +116,7 @@ Microsoft 365 概述报告包含以下报告。 您可以通过选择报告页�
 
 ### <a name="is-it-possible-to-work-on-and-customize-the-same-template-app-with-a-group-of-people"></a>是否可能与一组人员一起处理和自定义同一模板应用？
 
-是。 若要使一组管理员能够共同处理同一模板应用，可以利用 Power BI 的应用工作区功能，有关详细信息，请参阅我应该如何协作和共享仪表板 [和报表？](/power-bi/collaborate-share/service-how-to-collaborate-distribute-dashboards-reports) 
+正确。 若要使一组管理员能够共同处理同一模板应用，可以利用 Power BI 的应用工作区功能，有关详细信息，请参阅我应该如何协作和共享仪表板 [和报表？](/power-bi/collaborate-share/service-how-to-collaborate-distribute-dashboards-reports) 
 
 ### <a name="for-which-timeframe-is-data-available"></a>可以使用哪些时间范围的数据？
 

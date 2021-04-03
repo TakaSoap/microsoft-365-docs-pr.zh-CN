@@ -17,25 +17,18 @@ ms.custom:
 search.appverid:
 - MET150
 description: 了解如何关闭 Microsoft 帐户。
-ms.openlocfilehash: 19e9a92a90f7c88cc150844ab451bc71d63e4c4a
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 0ee0a649a9adb93ecdbb1cd9dbedbc04dfb46ba0
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50911658"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51579742"
 ---
 # <a name="close-your-account"></a>关闭你的帐户
 
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> 管理中心正在发生改变。 如果你的体验与此处提供的详细信息不匹配，请参阅[有关新版 Microsoft 365 管理中心](../admin/microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet)。
-
-::: moniker-end
-
 当关闭你的 Microsoft 帐户时，与你的帐户相关的所有信息都将被删除。 此信息包括订阅、许可证、付款方式、用户和用户数据。
 
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>准备工作
 
 开始此过程之前，请确保备份要保留的所有数据。
 
@@ -85,7 +78,7 @@ ms.locfileid: "50911658"
 ## <a name="step-5-delete-the-directory-in-azure-active-directory"></a>步骤 5：删除 Azure Active Directory 中的目录
 
 1. 使用全局管理员帐户登录到 <a href="https://aad.portal.azure.com/" target="_blank">Azure AD</a> 管理中心。
-2. 选择“**Azure Active Directory**”。
+2. 选择 **Azure Active Directory**。
 3. 切换到要删除的组织。
 4. 选择 **"删除租户"。**
 5. 如果您的组织未能通过一项或多项检查，则会看到一个链接，该链接指向有关通过检查详细信息。 通过所有检查后，选择" **删除** "以完成此过程。

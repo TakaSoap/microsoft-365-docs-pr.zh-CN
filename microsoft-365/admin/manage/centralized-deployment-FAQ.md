@@ -2,8 +2,8 @@
 title: 集中部署常见问题解答
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: kwekua
+author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 从 Microsoft 365 管理中心查看有关集中部署的常见问题解答。
-ms.openlocfilehash: 06e3b7973a209cdf40446c5a9511713d779373b8
-ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
+ms.openlocfilehash: 60d7a91da738803976b6823009450124d7b57814
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51221831"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51579298"
 ---
 # <a name="centralized-deployment-faq"></a>集中部署常见问题解答
 
@@ -60,7 +60,7 @@ ms.locfileid: "51221831"
 
 ## <a name="will-centralized-deployment-provide-admins-the-flexibility-to-choose-the-deployment-method-for-outlook-add-ins"></a>集中部署是否使管理员能够灵活地选择 Outlook 外接程序的部署方法？  
 
-是。 集中部署使管理员能够灵活地选择外接程序部署期间 Outlook 外接程序的三种部署方法之一：
+正确。 集中部署使管理员能够灵活地选择外接程序部署期间 Outlook 外接程序的三种部署方法之一：
 
 **修复 (默认值)**  外接程序将自动部署到已分配的用户，并且他们无法删除它。  
  
@@ -70,25 +70,25 @@ ms.locfileid: "51221831"
     
 ## <a name="can-admins-update-line-of-business-lob-add-ins"></a>管理员能否在外接程序中 (业务) LOB) ？  
 
-是。 管理员可以上载新的清单文件以支持管理员部署的 LOB 加载项的元数据更改。外接程序在下次启动 Office 应用程序时更新。 Web 应用程序可以随时更改。  
+正确。 管理员可以上载新的清单文件以支持管理员部署的 LOB 加载项的元数据更改。外接程序在下次启动 Office 应用程序时更新。 Web 应用程序可以随时更改。  
  
 有关详细信息，请参阅 [业务线加载项](./manage-addins-in-the-admin-center.md)。  
 
 ## <a name="can-admins-turn-off-add-ins"></a>管理员可以关闭加载项吗？  
 
-是。 管理员可以从 Microsoft 管理中心为所有用户打开或关闭他们部署的外接程序。
+正确。 管理员可以从 Microsoft 管理中心为所有用户打开或关闭他们部署的外接程序。
 
 有关详细信息，请参阅 [加载项状态](./manage-addins-in-the-admin-center.md#add-in-states)。  
 
 ##  <a name="can-admins-delete-or-remove-add-ins"></a>管理员能否删除或删除加载项？
 
-是。 管理员可以从 Microsoft 管理中心删除为所有用户部署的外接程序。
+正确。 管理员可以从 Microsoft 管理中心删除为所有用户部署的外接程序。
 
 有关详细信息，请参阅 [删除加载项](./manage-addins-in-the-admin-center.md#delete-an-add-in)。 
   
 ## <a name="can-admins-deploy-paid-add-ins-from-the-office-store-using-centralized-deployment"></a>管理员能否使用集中部署从 Office 应用商店部署付费加载项？ 
 
-不正确。 目前，你无法通过集中部署从 Office 应用商店部署付费加载项。  
+否。 目前，你无法通过集中部署从 Office 应用商店部署付费加载项。  
  
 我们建议向 ISV 开发人员联系付费加载项，以请求清单文件或 URL。 然后，租户管理员可以使用集中部署将加载项部署为 LOB 加载项。
     

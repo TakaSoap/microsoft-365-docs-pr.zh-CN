@@ -2,8 +2,8 @@
 title: 在 Outlook 中将通讯组列表升级到 Microsoft 365 组
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: sirkkuw
+ms.author: kwekua
+author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 787d7a75-e201-46f3-a242-f698162ff09f
 description: 了解如何在 Outlook 中将一个或多个通讯组列表升级到 Microsoft 365 组，以及如何使用 PowerShell 同时升级多个通讯组列表。
-ms.openlocfilehash: 7fd6090e00e9099feb93685a276b5e207bd05419
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: ab7c2ff68b1f16915d65fff0d7292e3b3ad72d02
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50914998"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51579238"
 ---
 # <a name="upgrade-distribution-lists-to-microsoft-365-groups-in-outlook"></a>在 Outlook 中将通讯组列表升级到 Microsoft 365 组
 
@@ -162,7 +162,7 @@ Get-DistributionGroup| Foreach-Object{
 
 ### <a name="do-new-group-members-get-a-welcome-email-in-their-inbox"></a>新组的成员是否收到收件箱中的欢迎电子邮件？
 
-不正确。 默认情况下，启用欢迎消息的设置设置为 false。 此设置会影响在迁移完成后可加入的现有和新的组的成员。 如果组所有者稍后允许来宾用户，则来宾用户不会在收件箱中收到欢迎电子邮件。 来宾成员可以继续使用组。
+否。 默认情况下，启用欢迎消息的设置设置为 false。 此设置会影响在迁移完成后可加入的现有和新的组的成员。 如果组所有者稍后允许来宾用户，则来宾用户不会在收件箱中收到欢迎电子邮件。 来宾成员可以继续使用组。
 
 ### <a name="what-if-one-or-some-of-the-dls-are-not-upgraded"></a>如果未升级一个或多个 DLL，将如何？
 

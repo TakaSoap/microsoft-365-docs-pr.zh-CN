@@ -1,9 +1,9 @@
 ---
-title: 管理中心中的 Microsoft 365 报告 - Microsoft Teams 设备使用情况
+title: 管理中心中的 Microsoft 365 报表 - Microsoft Teams 设备使用情况
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: kwekua
+author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -20,20 +20,20 @@ search.appverid:
 - MST160
 - MET150
 - MOE150
-description: 从 Microsoft 365 报告中获取 Microsoft Teams 应用使用情况报告，深入了解组织中使用的 Microsoft Teams 应用。
-ms.openlocfilehash: 54219b060767193e711c839d25780dd3b4a618bf
-ms.sourcegitcommit: a62ac3c01ba700a51b78a647e2301f27ac437c5a
+description: 通过从 Microsoft 365 报告中获取 Microsoft Teams 应用使用情况报告，深入了解组织中使用的 Microsoft Teams 应用。
+ms.openlocfilehash: 096954ad246f3b10369dfbf683d04b6c81950b5e
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/12/2021
-ms.locfileid: "50233430"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51579634"
 ---
-# <a name="microsoft-365-reports-in-the-admin-center---microsoft-teams-device-usage"></a>管理中心中的 Microsoft 365 报告 - Microsoft Teams 设备使用情况
+# <a name="microsoft-365-reports-in-the-admin-center---microsoft-teams-device-usage"></a>管理中心中的 Microsoft 365 报表 - Microsoft Teams 设备使用情况
 
-Microsoft 365 **报表** 仪表板显示组织中产品的活动概述。 它让你能够深入研究各产品级报表，以便更细致地了解每个产品内的活动。 请查看[报表概述主题](activity-reports.md)。 在 Microsoft Teams 应用使用情况报表中，可深入了解组织中使用的 Microsoft Teams 应用。
+Microsoft 365 **报表** 仪表板显示组织中各产品的活动概述。 它让你能够深入研究各产品级报表，以便更细致地了解每个产品内的活动。 请查看[报表概述主题](activity-reports.md)。 在 Microsoft Teams 应用使用情况报表中，可深入了解组织中使用的 Microsoft Teams 应用。
   
 > [!NOTE]
-> 你必须是 Microsoft 365 中的全局管理员、全局读者或报告读者，或者是 Exchange、SharePoint、Teams 服务、Teams 通信或 Skype for Business 管理员才能查看报告。  
+> 你必须是 Microsoft 365 中的全局管理员、全局读者或报告读者，或者 Exchange、SharePoint、Teams 服务、Teams 通信或 Skype for Business 管理员才能查看报告。  
  
 ## <a name="how-to-get-to-the-microsoft-teams-app-usage-report"></a>如何获取 Microsoft Teams 应用使用情况报表
 
@@ -44,13 +44,13 @@ Microsoft 365 **报表** 仪表板显示组织中产品的活动概述。 它让
 
 可以通过选择"设备使用情况"选项卡在 Teams 报告中 **查看设备** 使用情况。<br/>![Microsoft 365 报告 - Microsoft Teams 设备使用情况。](../../media/e46c7f7c-8371-4a20-ae82-b20df64b0205.png)
 
-选择 **"选择列** "以在报表中添加或删除列。  <br/> ![Teams 用户设备报告 - 选择列](../../media/3358d5d9-931b-4d30-931f-450b2f5717da.png)
+选择 **"选择要在** 报表中添加或删除列的列"。  <br/> ![Teams 用户设备报告 - 选择列](../../media/3358d5d9-931b-4d30-931f-450b2f5717da.png)
 
 您还可以通过选择"导出"链接将报告数据导出到 Excel .csv **文件中。** 此操作可导出所有用户的数据，使你能够对数据进行简单的排序和筛选，以进一步分析数据。 如果用户数量不足 2000，则可在报表中的表格内进行排序和筛选。 如果用户数超过 2000，则需要导出数据才能进行排序和筛选。 
 
 可查看" **Microsoft Teams 设备使用情况**"报表，了解过去 7 天、30 天、90 天或 180 天的趋势。 但是，如果您选择报告中的特定日期，则表 (7) 将显示自当前日期起最多 28 天的数据 (而不是报告生成日期) 。
   
-|Item|说明|
+|项目|说明|
 |:-----|:-----|
 |**跃点数**|**定义**|
 |用户名  <br/> |用户的显示名称。  <br/> |
@@ -61,6 +61,6 @@ Microsoft 365 **报表** 仪表板显示组织中产品的活动概述。 它让
 |Chrome OS  <br/> |如果用户在 ChromeOS 计算机的 Teams 桌面客户端中处于活动状态，则选中。|
 |Linux  <br/> | 如果用户在 Linux 计算机的 Teams 桌面客户端中处于活动状态，则选中。  <br/> |
 |Web  <br/> |如果用户在设备的 Teams Web 客户端中处于活动状态，则选中。|
-|上次活动日期 (UTC)   <br/> |用户参与 Teams (的最后一) UTC 日期。  <br/> |
+|上次活动日期 (UTC)   <br/> |用户参与 Teams (的最后) UTC 日期。  <br/> |
 |已授权|如果用户获得使用 Teams 的许可，则选中。|
 |||

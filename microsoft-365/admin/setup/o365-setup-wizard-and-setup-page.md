@@ -1,9 +1,9 @@
 ---
-title: "\"安装向导\" 和 \"设置\" 页之间的区别"
+title: 安装向导和"安装"页的区别
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -19,53 +19,53 @@ search.appverid:
 - MET150
 - MOE150
 - BEA160
-description: 了解安装向导和设置页面之间的区别。
-ms.openlocfilehash: dd04920c1c686cd0082b0d3c11cc7869e5d3f4eb
-ms.sourcegitcommit: 1522a6471e0c5254a6d0f592e1f4dfacd1dd473a
+description: 了解安装向导和"设置"页的区别。
+ms.openlocfilehash: 5e081df7800b5e1f3400f1525afddf2c230a13e4
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "48245921"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51579106"
 ---
-# <a name="difference-between-the-setup-wizard-and-the-setup-page"></a>"安装向导" 和 "设置" 页之间的区别
+# <a name="difference-between-the-setup-wizard-and-the-setup-page"></a>安装向导和"安装"页的区别
 
-Microsoft 365 提供了两种安装体验： 
+Microsoft 365 提供两种设置体验： 
 
-- 使用安装向导初始设置
-- 使用 **设置** 页面的持续和高级设置
+- 使用安装向导进行的初始设置
+- 使用"设置"页进行 **持续和高级** 设置
 
-安装向导提供了用于设置基本 Microsoft 365 配置的指导演练。 完成初始设置后，可以转到 " **设置** " 页，完成设置和配置订阅附带的服务。
+安装向导提供了指导性演练，用于设置基本 Microsoft 365 配置。 完成初始设置后，可以转到"设置"页以完成订阅所提供服务的设置和配置。
 
-## <a name="use-the-setup-wizard-to-complete-initial-setup-tasks"></a>使用安装向导完成初始安装任务
+## <a name="use-the-setup-wizard-to-complete-initial-setup-tasks"></a>使用安装向导完成初始设置任务
 
-若要设置你的帐户，请转到[管理中心](https://go.microsoft.com/fwlink/p/?linkid=2024339)，在左侧导航窗格中选择 "**设置**"，然后选择 "**设置**" 页上的 "**引导安装程序**"。
+若要设置帐户，请转到管理中心，选择 [](https://go.microsoft.com/fwlink/p/?linkid=2024339)左侧导航窗格中的"设置"，然后在"设置"页上选择"引导 **式设置**"。
 
-![启动 Microsoft 365 应用程序商业版安装向导](../../media/o365b-guided-setup.png)
+![启动 Microsoft 365 商业应用版设置向导](../../media/o365b-guided-setup.png)
 
 安装向导将指导您完成以下步骤：
 
-1. 在您的计算机上安装 Microsoft 365 应用程序。
+1. 在计算机上安装 Microsoft 365 应用。
 
-2. 选择并验证你的域，例如 contoso.com。
+2. 选择并验证域，例如 contoso.com。
 
-3. 添加新用户并向其分配许可证，以便他们可以下载和安装 Microsoft 365 应用程序。
+3. 添加新用户并为其分配许可证，以便他们可以下载和安装 Microsoft 365 应用。
 
-4. 连接您的域。
+4. 连接域。
 
-## <a name="use-the-setup-page-to-complete-and-manage-your-configuration"></a>使用 "设置" 页面完成并管理您的配置
+## <a name="use-the-setup-page-to-complete-and-manage-your-configuration"></a>使用"安装"页完成和管理配置
 
-若要访问[管理中心](https://go.microsoft.com/fwlink/p/?linkid=2024339)中的 "**设置**" 页面，请在导航窗格中选择 "**设置**"。 根据你购买的产品，你设置的功能以及你的管理员角色，此处介绍了来自 Microsoft 365 的任务和相关信息。
+若要访问管理 **中心** 中的"安装" [页，](https://go.microsoft.com/fwlink/p/?linkid=2024339)请在导航 **窗格中** 选择"设置"。 此处显示基于你已购买的产品、你设置的功能以及你的管理员角色、来自 Microsoft 365 的任务和相关信息。
 
-你将看到以逻辑类别排列的安装任务的完整列表，其中包括您在安装向导中完成的任务。
+你将看到按逻辑类别排列的安装任务的完整列表，包括你在安装向导中完成的任务。
 
-![Microsoft 365 商业版设置页面](../../media/o365b-setup-page.png)
+![Microsoft 365 商业版设置页](../../media/o365b-setup-page.png)
 
-选择 " **查看** 任何任务" 以获取一览信息，例如任务说明、用户影响、先决条件、实施投入和安全和采用统计信息，以帮助您在继续操作之前了解后果和影响。
+选择 **"查看** "查看任何任务，获取概览信息，如任务说明、用户影响、先决条件、实现努力以及安全性和采用统计信息，以帮助你在继续之前了解后果和影响。
 
-您还将看到任务的状态 (" **已启动**"、"尚未 **启动**" 或 " **已完成** ") 。 如果您是多任务任务，请在几天内处理任务，或者如果有多个管理员在处理任务，则可以通过快速查看已完成的任务以及哪些任务仍需要引起注意来跟踪完成情况。 
+You'll also see the status of the task (**Started**， **Not started yet**， or **Completed**) . 如果是多任务任务，在几天内处理任务，或者有多个管理员在执行任务，可以通过一目了然地查看哪些任务已完成以及哪些任务仍然需要关注来跟踪完成情况。 
 
-若要访问有关你设置的功能的全面文章，请选择 " **了解更多** " 链接。 任务集合始终在此处，因此你可以随时返回到 **设置** 页面，以进一步探索资源。
+若要访问有关要设置的功能的综合文章，请选择任何"了解更多 **"链接。** 任务集合始终位于此处，因此您随时都可以返回到"设置"页以进一步浏览资源。
 
-当您准备好完成某一任务时，请选择 " **入门** " 以遍历配置过程。 完成任务后，" **开始** 使用" 按钮将更改为 " **管理** " 按钮，这样您就可以根据需要管理任务。
+准备好完成任务后，选择"开始"以演练配置过程。 完成任务后，"开始"按钮将更改为"管理"按钮，从而允许您根据需要管理任务。
 
-![显示一览信息的任务视图](../../media/o365b-at-a-glance.png)
+![显示概览信息的任务视图](../../media/o365b-at-a-glance.png)

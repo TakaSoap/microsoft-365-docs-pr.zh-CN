@@ -17,16 +17,16 @@ f1.keywords:
 - NOCSH
 description: 了解如何在本地配置Exchange Server使用混合新式验证 (HMA) ，以为您提供更安全的用户身份验证和授权。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 46646f35d3b41821424269f66721fbf829d339f7
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 9393b457c219fb03ae2e8a35c3f795c324919f27
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50928198"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51579718"
 ---
 # <a name="how-to-configure-exchange-server-on-premises-to-use-hybrid-modern-authentication"></a>如何配置本地 Exchange Server 以使用混合新式验证
 
-*本文适用于 Microsoft 365 企业版和 Office 365 企业版。*
+*此文章适用于 Microsoft 365 企业版和 Office 365 企业版。* 
 
 混合新式 (HMA) 是一种标识管理方法，可提供更安全的用户身份验证和授权，并且可用于 Exchange 服务器本地混合部署。
 
@@ -50,7 +50,7 @@ ms.locfileid: "50928198"
 
 1. 由于 **Skype** for Business 和 Exchange 有许多共同的先决条件，混合新式验证概述以及用于本地 [Skype for Business](hybrid-modern-auth-overview.md)和 Exchange 服务器的先决条件。 在开始执行本文中的任一步骤之前，先执行这些步骤。
 
-1. 将本地 Web 服务 URL 添加为 Azure AD (**SNS**) 服务主体名称。
+1. 将本地 Web 服务 URL 添加为 Azure AD (**SNS**) 服务主体名称。 如果 EXCH 与多个租户混合使用，必须将这些本地 Web 服务 URL 添加为与 EXCH 混合的所有租户的 Azure AD 中的 SNS。
 
 1. 确保为 HMA 启用所有虚拟目录
 
@@ -58,7 +58,9 @@ ms.locfileid: "50928198"
 
 1. 在 EXCH 中启用 HMA。
 
- **注意** 你的 Office 版本是否支持 MA？ 请参阅 [新式验证如何适用于 Office 2013 和 Office 2016 客户端应用](modern-auth-for-office-2013-and-2016.md)。
+> [!NOTE]
+> 你的 Office 版本是否支持 MA？ 请参阅 [新式验证如何适用于 Office 2013 和 Office 2016 客户端应用](modern-auth-for-office-2013-and-2016.md)。
+
 
 ## <a name="make-sure-you-meet-all-the-prerequisites"></a>确保满足所有先决条件
 
@@ -79,11 +81,12 @@ Get-AutodiscoverVirtualDirectory | FL server,*url*
 Get-OutlookAnywhere | FL server,*url*
 ```
 
-确保连接到的 URL 客户端在 AAD 中列为 HTTPS 服务主体名称。
+确保连接到的 URL 客户端在 AAD 中列为 HTTPS 服务主体名称。 如果 EXCH 与多个租户混合，这些 HTTPS S PIN 应添加到与 EXCH 混合的所有租户的 AAD 中。
 
 1. 首先，使用这些 [说明连接到](connect-to-microsoft-365-powershell.md)AAD。
 
-   **注意** 您需要使用此页中的 _Connect-MsolService_ 选项才能使用下面的命令。
+    > [!NOTE]
+    > 您需要使用此页中的 _Connect-MsolService_ 选项才能使用下面的命令。
 
 2. 对于与 Exchange 相关的 URL，键入以下命令：
 
@@ -140,6 +143,9 @@ Get-AuthServer | where {$_.Name -eq "EvoSts"}
 
 输出应显示名称 EvoSts 的 AuthServer，并且"已启用"状态应为 True。 如果未看到此内容，应下载并运行最新版本的混合配置向导。
 
+> [!NOTE]
+> 如果 EXCH 与多个租户混合，则输出应为与 EXCH 混合的每个租户显示一个名称 EvoSts - {GUID} 的 AuthServer，对于所有这些 AuthServer 对象，"已启用"状态应为 True。
+
  **重要** 如果您的环境中运行的是 Exchange 2010，将不会创建 EvoSTS 身份验证提供程序。
 
 ## <a name="enable-hma"></a>启用 HMA
@@ -151,19 +157,31 @@ Set-AuthServer -Identity EvoSTS -IsDefaultAuthorizationEndpoint $true
 Set-OrganizationConfig -OAuth2ClientProfileEnabled $true
 ```
 
+如果 EXCH 版本为 Exchange 2016 (CU18 或更高版本) 或 Exchange 2019 (CU7 或更高版本) 且混合配置了 2020 年 9 月之后下载的 HCW，请在本地 Exchange 命令行管理程序 中运行以下命令：
+
+```powershell
+Set-AuthServer -Identity "EvoSTS - {GUID}" -Domain "Tenant Domain" -IsDefaultAuthorizationEndpoint $true
+Set-OrganizationConfig -OAuth2ClientProfileEnabled $true
+```
+
+> [!NOTE]
+> 如果 EXCH 与多个租户混合，则 EXCH 中将存在多个 AuthServer 对象，其中域对应于每个租户。  **对于其中任何** 一个 AuthServer 对象， (**IsDefaultAuthorizationEndpoint cmdlet) IsDefaultAuthorizationEndpoint** 标记应设置为 true。 无法针对所有 Authserver 对象将此标志设置为 true，并且将启用 HMA，即使其中一个 AuthServer 对象的 **IsDefaultAuthorizationEndpoint** 标志设置为 true 也是如此。
+
 ## <a name="verify"></a>验证
 
 启用 HMA 后，客户端的下一次登录将使用新的身份验证流。 请注意，仅打开 HMA 不会触发任何客户端的重新身份验证。 客户端基于其拥有身份验证令牌和/或证书的生存期重新进行身份验证。
 
 在右键单击 Outlook 客户端图标的同时，还应按住 Ctrl 键 (在 Windows 通知托盘中单击) "连接状态"。 针对"Bearer"类型的"Authn"（表示 OAuth 中使用的 bearer 令牌）查找客户端的 SMTP \* 地址。
 
- **注意** 需要配置带 HMA 的 Skype for Business？ 你将需要两篇文章：一篇文章列出支持的拓扑，[](/skypeforbusiness/plan-your-deployment/modern-authentication/topologies-supported)另一篇文章演示如何[执行配置](configure-skype-for-business-for-hybrid-modern-authentication.md)。
+> [!NOTE]
+> 需要配置带 HMA 的 Skype for Business？ 你将需要两篇文章：一篇文章列出支持的拓扑，[](/skypeforbusiness/plan-your-deployment/modern-authentication/topologies-supported)另一篇文章演示如何[执行配置](configure-skype-for-business-for-hybrid-modern-authentication.md)。
+
 
 ## <a name="using-hybrid-modern-authentication-with-outlook-for-ios-and-android"></a>将混合新式验证用于 Outlook for iOS 和 Outlook for Android
 
-如果您是使用 TCP 443 上的 Exchange 服务器本地客户，请绕过以下 IP 范围的流量处理：
+如果您是使用 TCP 443 上的 Exchange 服务器本地客户，请绕过以下 IP 地址范围的流量处理：
 
-```text
+```
 52.125.128.0/20
 52.127.96.0/23
 ```

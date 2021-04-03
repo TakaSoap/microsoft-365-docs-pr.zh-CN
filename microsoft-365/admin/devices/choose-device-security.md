@@ -2,8 +2,8 @@
 title: 比较不同的设备和应用数据保护方法
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: sharik
+author: skjerland
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -18,12 +18,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: 在不同的 MDM 和 MAM 方法之间选择。
-ms.openlocfilehash: c4928f272c0bdd8a7b6883f506cebf9a153e9c49
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 462fe28b1240681380d6a1d26ae362575c0d7c86
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50910530"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51579358"
 ---
 # <a name="options-for-protecting-your-devices-and-app-data"></a>用于保护设备和应用数据的选项
 
@@ -44,7 +44,7 @@ ms.locfileid: "50910530"
  
 - **Microsoft Intune** 是独立计划，也包含在一些 Microsoft 365 商业版或企业版计划中。 如果你将 Intune 作为独立订阅或订阅的一部分，它将提供微调设备和应用数据管理的能力。 有关 Microsoft 365 的可用性详细信息，请参阅 [Intune 的可用性](../basic-mobility-security/choose-between-basic-mobility-and-security-and-intune.md#availability-of-basic-mobility-and-security-and-intune)。
 
-    Microsoft Intune 是一项基于云的服务，专注于移动设备管理 (MDM) 和移动应用管理 (MAM) 。 控制组织的设备的使用方式，包括移动电话、平板电脑和笔记本电脑。 还可以配置特定策略以控制应用程序。 有关详细信息，请参阅 [Microsoft Intune 文档](/mem/intune/)。
+    Microsoft Intune 是一种基于云的服务，侧重于移动设备管理 (MDM) 和移动应用程序管理 (MAM)。 控制组织的设备的使用方式，包括移动电话、平板电脑和笔记本电脑。 还可以配置特定策略以控制应用程序。 有关详细信息，请参阅 [Microsoft Intune 文档](/mem/intune/)。
 
 - **Azure Active Directory (AD) Premium** 计划是一些 Microsoft 365 商业版和企业版计划中的独立计划。 有关详细信息，请参阅 [Azure AD 定价](https://azure.microsoft.com/pricing/details/active-directory/)。
 

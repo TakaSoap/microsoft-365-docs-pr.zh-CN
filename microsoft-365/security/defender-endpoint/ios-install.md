@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 7887f26cb8ca7e0e769249a10f008308149aaa42
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: c076a64b1e35978f09999b288b6849580df24972
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51186685"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51579694"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-for-ios"></a>部署适用于 iOS 的 Microsoft Defender for Endpoint
 
@@ -58,7 +58,7 @@ ms.locfileid: "51186685"
     > [!div class="mx-imgBorder"]
     > ![Microsoft Endpoint Manager 管理中心的图像1](images/ios-deploy-1.png)
 
-1. 在"添加应用"页上，单击"**搜索应用商店"，** 在 **搜索栏中键入 Microsoft Defender ATP。** 在搜索结果部分中，单击 Microsoft *Defender ATP，* 然后单击 **选择**。
+1. 在"添加应用"页上，单击" **搜索应用商店"，** 在 **搜索栏中** 键入 Microsoft Defender 终结点。 在搜索结果部分中，单击 Microsoft *Defender 终结点* ，然后单击 **选择**。
 
 1. 选择 **iOS 11.0** 作为最低操作系统。 查看有关应用的其他信息，然后单击"下一步 **"。**
 

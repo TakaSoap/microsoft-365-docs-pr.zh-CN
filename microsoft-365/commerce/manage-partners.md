@@ -15,21 +15,14 @@ ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 description: 了解如何与 Microsoft 认证的解决方案提供商 (合作伙伴) 购买和管理组织或学校的产品和服务。
-ms.openlocfilehash: 3297b2322983eabb793116a450a618b3a62a5a9c
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: a0c70f229ff11132beccf118f4158ab2880a8aa6
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50911394"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51579730"
 ---
 # <a name="manage-partner-relationships"></a>管理合作伙伴关系
-
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> 管理中心正在发生改变。 如果你的体验与此处提供的详细信息不匹配，请参阅[有关新版 Microsoft 365 管理中心](../admin/microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet)。
-
-::: moniker-end
 
 你可以与 Microsoft 认证的解决方案提供商 (合作伙伴) 为组织或学校购买和管理产品和服务。 设置内容涉及几个步骤。
 
@@ -37,9 +30,9 @@ ms.locfileid: "50911394"
 2. 合作伙伴会向客户发送电子邮件请求，以建立合作关系。
 3. 客户接受 Microsoft 365 管理中心中的邀请，并开始与合作伙伴合作。
 
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>准备工作
 
-你必须是全局管理员或帐单管理员才能执行这些步骤。 有关详细信息，请参阅 [关于管理员角色](../admin/add-users/about-admin-roles.md)。
+你必须是全局管理员或帐单管理员才能执行这些步骤。 有关详细信息，请参阅[关于管理员角色](../admin/add-users/about-admin-roles.md)。
 
 ## <a name="what-can-a-partner-do-for-my-organization-or-school"></a>合作伙伴可以为我的组织或学校做什么？
 

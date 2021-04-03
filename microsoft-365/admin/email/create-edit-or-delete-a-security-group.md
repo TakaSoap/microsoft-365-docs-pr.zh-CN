@@ -2,8 +2,8 @@
 title: 在 Microsoft 365 管理中心创建、编辑或删除安全组
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: kwekua
+author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 55c96b32-e086-4c9e-948b-a018b44510cb
 description: 了解如何创建、编辑或删除安全组。
-ms.openlocfilehash: 4ea97683e47f7f0ef8f196db32df8e22f9b1a0b9
-ms.sourcegitcommit: d4604e333507c6f57d5bf327531a241b649052de
+ms.openlocfilehash: 03e391727f9a61b1fc8e819e92d5a119017c38e0
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51470973"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51579334"
 ---
 # <a name="create-edit-or-delete-a-security-group-in-the-microsoft-365-admin-center"></a>在 Microsoft 365 管理中心创建、编辑或删除安全组
 
@@ -148,8 +148,8 @@ ms.locfileid: "51470973"
   
 ## <a name="do-i-have-to-use-security-groups-for-my-organization-to-be-secure"></a>是否必须使用安全组以确保我的组织的安全？
 
-不正确。 这只是您可以为组织管理安全性的另外一种方法。 您始终可以单独授予用户权限和网站访问权限。 但是，使用安全组，可以轻松管理更大的用户组。
+否。 这只是您可以为组织管理安全性的另外一种方法。 您始终可以单独授予用户权限和网站访问权限。 但是，使用安全组，可以轻松管理更大的用户组。
   
 ## <a name="can-i-send-email-to-a-security-group"></a>我能否向安全组发送电子邮件？
 
-是。 但是，如果你想要将组用于电子邮件和协作，我们建议你改为创建 [一个 Microsoft 365](../create-groups/create-groups.md) 组。 
+正确。 但是，如果你想要将组用于电子邮件和协作，我们建议你改为创建 [一个 Microsoft 365](../create-groups/create-groups.md) 组。 

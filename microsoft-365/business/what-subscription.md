@@ -1,9 +1,9 @@
 ---
-title: 哪种订阅适合您的企业？
+title: 哪些订阅适合你的企业？
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: sharik
+author: skjerland
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -19,13 +19,13 @@ search.appverid:
 - BCS160
 - MET150
 description: 确定 Office 365 E3、Microsoft 365 商业标准版或 Microsoft 365 商业高级版是否适合你的企业。
-ms.openlocfilehash: 10799de6e588a92782e17c8efe3fb17ba219bd48
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 2f8c59e0af619730060862fc8ee24a702ca00343
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44403710"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51579814"
 ---
-# <a name="what-subscription-is-right-for-your-small-business"></a>适合您的小型企业的订阅是什么？
+# <a name="what-subscription-is-right-for-your-small-business"></a>哪些订阅适合你的小型企业？
 
-Microsoft 为小型企业提供了几套计划。 建议的订阅为 Microsoft 365 商业标准版或 Microsoft 365 商业版，最高为300用户。 Microsoft 365 Business Premium 提供了比 Microsoft 365 商业标准更多的安全功能，以增加成本。
+Microsoft 为小型企业提供了多个计划。 推荐的订阅为最多 300 名用户的 Microsoft 365 商业标准版或 Microsoft 365 商业高级版。 Microsoft 365 商业高级版提供比 Microsoft 365 商业标准版更多的安全功能，但增加了成本。

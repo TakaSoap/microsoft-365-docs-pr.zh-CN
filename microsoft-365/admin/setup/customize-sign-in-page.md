@@ -2,8 +2,8 @@
 title: 将公司品牌添加到登录页面
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: kwekua
+author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: a1229cdb-ce19-4da5-90c7-2b9b146aef0a
 description: 使用 Azure Active Directory 自定义 Microsoft 365 登录页面。 你可以向登录页添加插图、徽标和文本。
-ms.openlocfilehash: 1bd9a60c9c3bbe839652785deb2eb52d5b385673
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 9947d57e4bf35ef0a3409db58f2c663959c2dd49
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50914158"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51579118"
 ---
 # <a name="add-your-company-branding-to-the-sign-in-page"></a>将公司品牌添加到登录页面
 

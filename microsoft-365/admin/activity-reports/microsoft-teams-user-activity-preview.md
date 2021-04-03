@@ -1,7 +1,7 @@
 ---
-title: 管理中心中的 Microsoft 365 报告 - Microsoft Teams 用户活动
-ms.author: sirkkuw
-author: Sirkkuw
+title: 管理中心中的 Microsoft 365 报表 - Microsoft Teams 用户活动
+ms.author: kwekua
+author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -19,19 +19,19 @@ search.appverid:
 - MET150
 - MOE150
 description: 了解如何获取 Microsoft Teams 用户活动报告并深入了解贵组织的 Teams 活动。
-ms.openlocfilehash: 41403bcda1d1485798ac5eefe8f3386a314aea1b
-ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
+ms.openlocfilehash: a4f8cd995d1559da3846fbb38cc5a9441358da72
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "50406171"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51579610"
 ---
-# <a name="microsoft-365-reports-in-the-admin-center---microsoft-teams-user-activity"></a>管理中心中的 Microsoft 365 报告 - Microsoft Teams 用户活动
+# <a name="microsoft-365-reports-in-the-admin-center---microsoft-teams-user-activity"></a>管理中心中的 Microsoft 365 报表 - Microsoft Teams 用户活动
 
-Microsoft 365 **报表** 仪表板显示组织中产品的活动概述。 它让你能够深入研究各产品级报表，以便更细致地了解每个产品内的活动。 请查看[报表概述主题](activity-reports.md)。 在 Microsoft Teams 用户活动报表中，可深入了解组织中的 Microsoft Teams 活动。
+Microsoft 365 **报表** 仪表板显示组织中各产品的活动概述。 它让你能够深入研究各产品级报表，以便更细致地了解每个产品内的活动。 请查看[报表概述主题](activity-reports.md)。 在 Microsoft Teams 用户活动报表中，可深入了解组织中的 Microsoft Teams 活动。
   
 > [!NOTE]
-> 你必须是 Microsoft 365 中的全局管理员、全局读者或报告读者，或者是 Exchange、SharePoint、Teams 服务、Teams 通信或 Skype for Business 管理员才能查看报告。  
+> 你必须是 Microsoft 365 中的全局管理员、全局读者或报告读者，或者 Exchange、SharePoint、Teams 服务、Teams 通信或 Skype for Business 管理员才能查看报告。  
  
 ## <a name="how-to-get-to-the-microsoft-teams-user-activity-report"></a>如何获取 Microsoft Teams 用户活动报表
 
@@ -40,34 +40,34 @@ Microsoft 365 **报表** 仪表板显示组织中产品的活动概述。 它让
 
 ## <a name="interpret-the-microsoft-teams-user-activity-report"></a>解读 Microsoft Teams 用户活动报表
 
-可以通过选择"用户活动"选项卡在 Teams 报告中 **查看用户** 活动。 <br/>![Microsoft 365 报告 - Microsoft Teams 用户活动。](../../media/1011877f-3cf0-4417-9447-91d0b2312aab.png)
+可以通过选择"用户活动"选项卡在 Teams 报告中 **查看用户** 活动。 <br/>![Microsoft 365 报表 - Microsoft Teams 用户活动。](../../media/1011877f-3cf0-4417-9447-91d0b2312aab.png)
 
-选择 **"选择列** "以在报表中添加或删除列。  <br/> ![Teams user activity report - choose columns](../../media/6d3c013e-2c5e-4d66-bb41-998aa4bd1c20.png)
+选择 **"选择要在** 报表中添加或删除列的列"。  <br/> ![Teams user activity report - choose columns](../../media/6d3c013e-2c5e-4d66-bb41-998aa4bd1c20.png)
 
-您还可以通过选择"导出"链接将报告数据导出到 Excel .csv **文件中。** 此操作可导出所有用户的数据，使你能够对数据进行简单的排序和筛选，以进一步分析数据。 如果用户数量不足 2000，则可在报表中的表格内进行排序和筛选。 如果用户数超过 2000，则需要导出数据才能进行排序和筛选。 音频 **时间、视频** 时间和屏幕共享时间导出的格式 **遵循** ISO8601 持续时间格式。
+您还可以通过选择"导出"链接将报告数据导出到 Excel .csv **文件中。** 此操作可导出所有用户的数据，使你能够对数据进行简单的排序和筛选，以进一步分析数据。 如果用户数量不足 2000，则可在报表中的表格内进行排序和筛选。 如果用户数超过 2000，则需要导出数据才能进行排序和筛选。 音频时间 **、视频时间和** 屏幕共享时间导出的格式 **遵循** ISO8601 持续时间格式。
 
 可查看" **Microsoft Teams 用户活动**"报表，了解过去 7 天、30 天、90 天或 180 天的趋势。 但是，如果您选择报告中的特定日期，则表 (7) 将显示自当前日期起最多 28 天的数据 (而不是报告生成日期) 。
 
-为了确保数据质量，我们将对过去三天执行每日数据验证检查，并且将填补检测到的任何漏洞。 您可能会注意到过程中历史数据的差异。
+为了确保数据质量，我们将对过去三天执行每日数据有效性检查，并且将填补检测到的任何缺陷。 您可能会注意到过程中历史数据的差异。
 
-|Item|说明|
+|项目|说明|
 |:-----|:-----|
 |**跃点数**|**定义**|
 |用户名  <br/> |用户的电子邮件地址。 可以显示实际的电子邮件地址或采用匿名字段。   <br/> |
 |频道消息   <br/> |用户指定时段内在团队聊天中发布的唯一消息数。  <br/> |
-|聊天消息   <br/> |用户在指定时段内在私人聊天中发布的唯一消息数。  <br/> |
-|会议总数   <br/> |用户指定时间段参与的联机会议的数量。  <br/> |
-|1：1 呼叫   <br/> | 用户在指定时间段参与的 1：1 呼叫数。  <br/> |
+|聊天消息   <br/> |用户指定的时间段在私人聊天中发布的唯一消息数。  <br/> |
+|会议总数   <br/> |用户指定时间段参与的联机会议数。  <br/> |
+|1：1 呼叫   <br/> | 用户在指定时段参与的 1：1 呼叫数。  <br/> |
 |上次活动日期 (UTC)   <br/> |用户上次参与 Microsoft Teams 活动的日期。<br/> |
-|临时参与的会议   <br/> | 用户指定时间段参与的临时会议的数量。  <br/> |
-|临时组织的会议 <br/> |用户在指定时间段组织的临时会议的数量。 <br/>|
-|组织会议总数  <br/> |用户在指定时间段组织的一次性计划、定期、临时和未分类会议的总和。  <br/> |
+|临时参与的会议   <br/> | 用户指定时间段参与临时会议的数量。  <br/> |
+|临时组织的会议 <br/> |用户指定时段内组织的临时会议的数量。 <br/>|
+|组织的会议总数  <br/> |用户指定的时间段组织的一次性计划会议、定期会议、临时会议和未分类会议的总和。  <br/> |
 |参与的会议总数  <br/> |用户指定时间段参与的一次性计划、定期、临时和未分类会议的总和。  <br/> |
-|安排的一次会议  <br/> |用户在指定时间段组织的一次计划会议的数量。  <br/> |
-|定期安排的会议  <br/> |用户在指定时间段组织的定期会议的数量。  <br/> |
-|安排的一次会议  <br/> |用户在指定时间段参与的一次计划会议的数量。  <br/> |
-|已安排定期会议  <br/> |用户指定时段内参与的定期会议的数量。  <br/> |
+|安排的一次会议  <br/> |用户指定的时间段组织的一次计划会议的数量。  <br/> |
+|安排定期会议  <br/> |用户指定的时间段组织的定期会议数。  <br/> |
+|安排的会议一次参与  <br/> |用户在指定时段参与的一次计划会议的数量。  <br/> |
+|已参与的计划定期会议  <br/> |用户指定的时间段参与的定期会议数。  <br/> |
 |已授权  <br/> |如果用户获得使用 Teams 的许可，则选中。 <br/>|
-|其他活动  <br/>|用户处于活动状态，但执行了报告中提供的公开操作类型 (发送或答复频道消息和聊天消息、安排或参与 1：1 通话和会议) 。 示例操作包括用户更改 Teams 状态或 Teams 状态消息或打开频道消息帖子但不回复的情况。  <br/>|
-|未分类会议 <br/>|无法分类为计划、定期或临时的项。 这些数量短，由于篡改的遥测信息，大多数无法识别。 |
+|其他活动  <br/>|用户处于活动状态，但执行了除报告中提供的公开操作类型外的其他活动 (发送或回复频道消息和聊天消息、安排或参与一对一通话和会议) 。 示例操作包括用户更改 Teams 状态或 Teams 状态消息或打开频道消息帖子但不回复的情况。  <br/>|
+|未分类会议 <br/>|不能分类为计划、定期或临时的。 这些数量短，由于篡改的遥测信息，大多数无法识别。 |
 |||

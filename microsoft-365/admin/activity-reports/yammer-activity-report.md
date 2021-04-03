@@ -1,9 +1,9 @@
 ---
-title: 管理员中心内的 Microsoft 365 报告-Yammer 活动报告
+title: 管理中心中的 Microsoft 365 报表 - Yammer 活动报告
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: kwekua
+author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -19,27 +19,27 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: c7c9f938-5b8e-4d52-b1a2-c7c32cb2312a
-description: 获取 Yammer 活动报告，并了解有关使用 Yammer 发布、类似或阅读邮件的用户数的详细信息。
-ms.openlocfilehash: 2bf02c0599f999b0eebb52d119096567bb09508b
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+description: 获取 Yammer 活动报告，详细了解使用 Yammer 发布、喜欢或阅读消息的用户数量。
+ms.openlocfilehash: 5ebf180189b2785070c269ef15b6a6c6c9f7f61a
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44387461"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51579478"
 ---
-# <a name="microsoft-365-reports-in-the-admin-center---yammer-activity-report"></a>管理员中心内的 Microsoft 365 报告-Yammer 活动报告
+# <a name="microsoft-365-reports-in-the-admin-center---yammer-activity-report"></a>管理中心中的 Microsoft 365 报表 - Yammer 活动报告
 
-作为 Microsoft 365 管理员，"**报告**" 仪表板显示有关您组织中的产品使用情况的数据。 查看[管理中心中的活动报表](activity-reports.md)。 使用" **Yammer 活动报表** "，可以通过查看使用 Yammer 发布、点赞或阅读消息的唯一用户数以及组织中生成的活动数来了解使用 Yammer 的组织的参与级别。 
+作为 Microsoft 365管理员，"报告"仪表板将显示有关组织中产品使用情况的数据。 查看 [管理中心中的活动报告](activity-reports.md)。 使用" **Yammer 活动报表** "，可以通过查看使用 Yammer 发布、点赞或阅读消息的唯一用户数以及组织中生成的活动数来了解使用 Yammer 的组织的参与级别。 
   
 > [!NOTE]
-> 您必须是 Microsoft 365 或 Exchange、SharePoint、团队服务、团队通信或 Skype for Business 管理员中的全局管理员、全局读取器或报告阅读器才能查看报告。 
+> 你必须是 Microsoft 365 中的全局管理员、全局读者或报告读者，或者 Exchange、SharePoint、Teams 服务、Teams 通信或 Skype for Business 管理员才能查看报告。 
  
 ## <a name="how-to-get-to-the-yammer-activity-report"></a>如何获取 Yammer 活动报表
 
 1. 在管理中心，转到“**报表**”\> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">使用情况</a>页面。
 
     
-2. 从 "**选择报表**" 下拉下，选择 " **Yammer** \> **活动**"。
+2. 从"**选择报表"** 下拉列表中，选择 **"Yammer** \> **活动"。**
   
 ## <a name="interpret-the-yammer-activity-report"></a>Yammer 活动报表说明
 
@@ -49,13 +49,13 @@ ms.locfileid: "44387461"
   
 活动报表包含以下信息。
   
-- 使用天数选项卡来查看最近 7 天、30 天、90 天或 180 天的" **Yammer 活动** "报表趋势。 但是，如果您在报告中选择某一天，则该表将显示从当前日期起的最长28天（而不是报告生成日期）中的数据。 
+- 使用天数选项卡来查看最近 7 天、30 天、90 天或 180 天的" **Yammer 活动** "报表趋势。 但是，如果您选择报告中的某一天，则该表将显示自当前日期起最多 28 天的数据 (而不是报告生成日期) 。 
     
 - 每个报表包含此报表的生成日期。报表通常反映活动时间的 24 至 48 小时延迟。
     
 - 可以查看" **活动** "图表以了解组织内进行的 Yammer 活动的数量变化趋势。可以分别了解已发布、已读或已点赞的消息。 
     
-    ![Yammer 活动报告中的 "活动" 视图](../../media/76983516-2c5f-43a1-a5e3-c414e9f17638.JPG)
+    ![Yammer 活动报告中的活动视图](../../media/76983516-2c5f-43a1-a5e3-c414e9f17638.JPG)
   
   - 在" **活动** "图表上，Y 轴表示已发布消息、已读消息或已点赞消息的活动数。 
     
@@ -67,9 +67,9 @@ ms.locfileid: "44387461"
     
   - 这两个图表的 X 轴都表示此特定报表的所选日期范围。
     
-- 您可以通过选择图例中的项目来筛选您在图表上看到的系列。 例如，在 "**活动**" 图表上，选择 "**已发布**"、"已**阅读**" 或 "已**赞**" 以仅查看与每个相关的信息。 
+- 通过选择图例中的项目，可以筛选在图表上看到的系列。 例如，在"**活动"** 图表上，选择"**已** 发布"、"已读"或"已点帖"，以仅查看与每个活动相关的信息。   
     
-    ![已发布、已阅读和已赞的选项](../../media/8b832afc-415c-409b-816f-cb02b7a71e69.png)
+    ![Posted、Read 和 Liked 选项](../../media/8b832afc-415c-409b-816f-cb02b7a71e69.png)
   
     选择此选项不会更改网格表中的信息。
     
@@ -77,17 +77,17 @@ ms.locfileid: "44387461"
     
     可以使用此菜单对数据进行筛选和排序。
     
-    ![Yammer 报告的菜单选项](../../media/9d32240c-f1ff-400b-9c4e-a21b48651530.JPG)
+    ![Yammer 报表的菜单选项](../../media/9d32240c-f1ff-400b-9c4e-a21b48651530.JPG)
   
     也可以添加和删除列。 可用列是：
     
   - " **用户名**"是用户的电子邮件地址。 可以显示实际的电子邮件地址或采用匿名字段。 
     
-    此网格显示使用 Microsoft 365 帐户登录到 Yammer 的用户或使用单一登录登录到网络的用户。
+    此网格显示使用 Microsoft 365 帐户登录 Yammer 的用户，或者使用单一登录登录网络的用户。
     
-  - **显示姓名**是用户的全名。可以显示实际的电子邮件地址或采用匿名字段。 
+  - **显示姓名** 是用户的全名。可以显示实际的电子邮件地址或采用匿名字段。 
     
-  - **用户状态**是以下三个值之一：已激活、已删除或已挂起。 
+  - **用户状态** 是以下三个值之一：已激活、已删除或已挂起。 
     
     这些报表显示已激活、已挂起和已删除用户的数据。报表并不反映待定用户，因为待定用户无法发布、阅读或点赞消息。
     
@@ -95,17 +95,17 @@ ms.locfileid: "44387461"
     
   - **上次活动日期 (UTC)** 表示用户发布、阅读或点赞消息的最近日期。 
     
-  - **已发布**表示指定时间段中用户发布的消息数。 
+  - **已发布** 表示指定时间段中用户发布的消息数。 
     
-  - **已读**表示指定时间段中用户阅读的对话数。 
+  - **已读** 表示指定时间段中用户阅读的对话数。 
     
-  - **已点赞**表示指定时间段中用户点赞的消息数。 
+  - **已点赞** 表示指定时间段中用户点赞的消息数。 
     
-  - 已**分配的产品**是分配给此用户的产品。 
+  - **分配的产品** 是分配给此用户的产品。 
     
-    如果组织的策略阻止你查看显示了可识别用户信息的报表，可更改所有这些报表的隐私设置。 请查看[Microsoft 365 管理中心的活动报告中](activity-reports.md)的 "**如何隐藏用户级别详细信息？** " 一节。
+    如果组织的策略阻止你查看显示了可识别用户信息的报表，可更改所有这些报表的隐私设置。 请查看 Microsoft  [365](activity-reports.md)管理中心的活动报告中的如何隐藏用户级别详细信息部分。
     
-- 您还可以通过选择 "**导出**" 链接将报告数据导出到 Excel .csv 文件中。 此操作可导出所有用户的数据，使你能够对数据进行简单的排序和筛选，以进一步分析数据。 如果用户数量不足 2000，则可在报表中的表格内进行排序和筛选。 如果用户数超过 2000，则需要导出数据才能进行排序和筛选。 
+- 您还可以通过选择"导出"链接，将报告数据导出到 Excel .csv **文件中。** 此操作可导出所有用户的数据，使你能够对数据进行简单的排序和筛选，以进一步分析数据。 如果用户数量不足 2000，则可在报表中的表格内进行排序和筛选。 如果用户数超过 2000，则需要导出数据才能进行排序和筛选。 
     
 ## <a name="what-data-is-in-these-reports"></a>这些报表中有哪些数据？
 
@@ -113,6 +113,6 @@ ms.locfileid: "44387461"
     
 - **无外部网络数据** 这些报表中不包括外部网络数据。 
     
-- **激活的网络**这些报告显示属于 Microsoft 365 订阅的 Yammer 网络的数据。 图表将汇总登录到 Yammer 网络的所有用户的使用情况，而不管他们是使用 Microsoft 365 还是 Yammer 进行登录。 
+- **激活的网络** 这些报告显示属于 Microsoft 365 订阅的 Yammer 网络的数据。 此图汇总了登录到 Yammer 网络的所有用户的使用情况，而不考虑他们是使用 Microsoft 365 还是 Yammer 登录。 
     
 

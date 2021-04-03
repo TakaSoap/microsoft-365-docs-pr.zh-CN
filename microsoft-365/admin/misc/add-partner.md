@@ -2,8 +2,8 @@
 title: 添加、更改或删除订阅顾问合作伙伴
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: cmcatee
+author: cmcatee-MSFT
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -21,12 +21,12 @@ search.appverid:
 - GEA150
 ms.assetid: f86e8177-936e-491e-9024-44dea2b296ff
 description: 了解如何在购买 Microsoft 365 时将订阅顾问合作伙伴添加为记录合作伙伴、更改合作伙伴或删除订阅中的合作伙伴。
-ms.openlocfilehash: 9734ee5f23af24ec701b8ae1fbd448d6bedb63fb
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 913b0e14e1bc08cfd4037775aa4b72b7280c704c
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50914926"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51579226"
 ---
 # <a name="add-change-or-delete-a-subscription-advisor-partner"></a>添加、更改或删除订阅顾问合作伙伴
 

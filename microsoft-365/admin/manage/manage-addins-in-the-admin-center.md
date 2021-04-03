@@ -2,8 +2,8 @@
 title: 在管理中心管理加载项
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: kwekua
+author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
 description: 了解如何使用集中式加载项将加载项部署到组织中用户和组。
-ms.openlocfilehash: 836dfa7a0c1b6cf1550e5c139bc0ca36be8f5424
-ms.sourcegitcommit: d4604e333507c6f57d5bf327531a241b649052de
+ms.openlocfilehash: 8503ed7ea2e088a8e17b52e619ee999aa05f497a
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51470937"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51579286"
 ---
 # <a name="manage-add-ins-in-the-admin-center"></a>在管理中心管理加载项
 
@@ -153,7 +153,7 @@ Office 加载项有助于个性化设置文档，并简化访问 Web (方式，�
   
 2. 在 **左侧导航中选择** "管理员管理"。 
 
-## <a name="learn-more"></a>了解更多
+## <a name="learn-more"></a>了解详细信息
 
 [在管理中心部署加载项](./manage-deployment-of-add-ins.md)
 
