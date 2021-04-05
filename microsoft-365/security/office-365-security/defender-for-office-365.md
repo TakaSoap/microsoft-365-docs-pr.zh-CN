@@ -21,12 +21,12 @@ ms.custom:
 description: Microsoft Defender for Office 365 包括安全附件、安全链接、高级防钓鱼工具、报告工具和威胁智能功能。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ec60fc7063bdd4a2656385ed86098d6ae2b4abc0
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: dad2722a1f9e99fad53c83348d049fa9a60f8b62
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51203666"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51580986"
 ---
 # <a name="microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365
 
@@ -52,7 +52,7 @@ Microsoft Defender for Office 365 可保护你的组织免受电子邮件、链�
 ## <a name="interactive-guide-to-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 的交互式指南
 在此交互式指南中，你将了解如何使用 Microsoft Defender for Office 365 保护组织。 你将了解 Office 365 的 Defender 如何帮助你定义保护策略、分析组织面临的威胁以及响应攻击。
 
-> [!VIDEO https://aka.ms/MSDO-IG]
+[请查看交互指南](https://aka.ms/MSDO-IG)
 
 ## <a name="getting-started"></a>开始使用
 
@@ -97,6 +97,8 @@ Microsoft Defender for Office 365 可保护你的组织免受电子邮件、链�
 ## <a name="configure-microsoft-defender-for-office-365-policies"></a>配置 Microsoft Defender for Office 365 策略
 
 借助 Microsoft Defender for Office 365，你组织的安全团队可以在安全与合规中心内定义策略（依次转到 <https://protection.office.com> \> “**威胁管理**”\>“**策略**”），从而配置保护。
+
+观看[此视频](https://www.youtube.com/watch?v=vivvTmWJ_3c)了解更多信息。 
 
 > [!TIP]
 > 有关可定义的策略的快速列表，请参阅[威胁防护](protect-against-threats.md)。
