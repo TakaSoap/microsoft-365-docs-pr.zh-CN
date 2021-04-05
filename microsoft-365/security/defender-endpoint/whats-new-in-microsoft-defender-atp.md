@@ -15,15 +15,14 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - m365-security-compliance
-- m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: ea6beba2d17b72f100703d26dd4106d0537c6fa6
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: a72b742d8f4a69d2e38cf4fa234ba5b7e2961ac6
+ms.sourcegitcommit: 987f70e44e406ab6b1dd35f336a9d0c228032794
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51055299"
+ms.lasthandoff: 04/05/2021
+ms.locfileid: "51587607"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint 中的新增功能
 
@@ -53,7 +52,7 @@ ms.locfileid: "51055299"
 - [Windows 虚拟桌面](https://azure.microsoft.com/services/virtual-desktop/) <br> Microsoft Defender for Endpoint 现在增加了对 Windows 虚拟桌面的支持。
 
 ## <a name="december-2020"></a>2020 年 12 月
-- [适用于 iOS 的 Microsoft Defender for Endpoint](microsoft-defender-endpoint-ios.md) <br> Microsoft Defender for Endpoint 现在增加了对 iOS 的支持。 了解如何安装、配置、更新和使用适用于 iOS 的 Microsoft Defender for Endpoint。
+- [Microsoft Defender for Endpoint for iOS](microsoft-defender-endpoint-ios.md) <br> Microsoft Defender for Endpoint 现在增加了对 iOS 的支持。 了解如何安装、配置、更新和使用适用于 iOS 的 Microsoft Defender for Endpoint。
 
 ## <a name="september-2020"></a>2020 年 9 月
 - [Microsoft Defender for Endpoint for Android](microsoft-defender-endpoint-android.md) <br> Microsoft Defender for Endpoint 现在增加了对 Android 的支持。 了解如何安装、配置、更新和使用适用于 Android 的 Microsoft Defender for Endpoint。
@@ -79,7 +78,7 @@ ms.locfileid: "51055299"
 
 ## <a name="november-december-2019"></a>November-December 2019 年
 
-- [Microsoft Defender for Endpoint for Mac](microsoft-defender-endpoint-mac.md) <BR> Microsoft Defender for Endpoint for Mac 为 Mac 设备带来了下一代保护。 统一终结点安全平台的核心组件现在可用于 Mac 设备，包括 [终结点检测和响应](microsoft-defender-endpoint-mac.md)。
+- [适用于 Mac 的终结点的 Microsoft Defender](microsoft-defender-endpoint-mac.md) <BR> Microsoft Defender for Endpoint for Mac 为 Mac 设备带来了下一代保护。 统一终结点安全平台的核心组件现在可用于 Mac 设备，包括 [终结点检测和响应](microsoft-defender-endpoint-mac.md)。
  
 - [威胁&漏洞管理应用程序和应用程序版本生命周期结束信息](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/tvm-security-recommendation) <BR>已进入生命周期结束的应用程序和应用程序版本会进行标记或标记，以便你了解它们将不再受支持，并且可以采取措施卸载或替换它们。 这样做有助于降低因应用程序未修补导致的各种漏洞暴露的风险。
 
@@ -134,7 +133,7 @@ ms.locfileid: "51055299"
 ## <a name="april-2019"></a>2019 年 4 月
 - [Microsoft 威胁专家目标攻击通知功能](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/microsoft-threat-experts#targeted-attack-notification) <BR> Microsoft 威胁专家的目标攻击通知警报专为组织定制，可提供尽可能多的信息，从而引起人们注意其网络中的关键威胁，包括时间线、入侵范围和入侵方法。
 
-- [Microsoft Defender for Endpoint API](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/apis-intro) <BR> Microsoft Defender for Endpoint 通过一组编程 API 公开其大部分数据和操作。 这些 API 将使您能够基于 Microsoft Defender for Endpoint 功能自动执行工作流创新。 
+- [Microsoft Defender for Endpoint API](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/apis-intro) <BR> Microsoft Defender for Endpoint 通过一组编程 API 公开其大部分数据和操作。 这些 API 将使您能够基于 Microsoft Defender for Endpoint 功能自动执行工作流创新。 
 
 
 
@@ -147,7 +146,7 @@ ms.locfileid: "51055299"
 ## <a name="october-2018"></a>2018 年 10 月
 - [攻击面减少规则](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard)<BR>Windows Server 2019 现在支持所有攻击面减少规则。
 
-- [受控文件夹访问权限](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/enable-controlled-folders-exploit-guard)<BR> Windows Server 2019 现在支持受控文件夹访问权限。
+- [受控文件夹访问](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/enable-controlled-folders-exploit-guard)<BR> Windows Server 2019 现在支持受控文件夹访问权限。
 
 - [自定义检测](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/overview-custom-detections)<BR>通过自定义检测，你可以创建自定义查询来监视任何类型的行为（如可疑或新出现的威胁）的事件。 这可以通过创建自定义检测规则来利用高级搜寻功能实现。 
 
@@ -195,7 +194,7 @@ ms.locfileid: "51055299"
 - [Microsoft Defender for Endpoint Community 中心](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/community-windows-defender-advanced-threat-protection)<BR> 
     Microsoft Defender for Endpoint 社区中心是社区成员可以学习、协作和共享产品体验的地方。 
 
-- [受控文件夹访问权限](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/enable-controlled-folders-exploit-guard)<BR>
+- [受控文件夹访问](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/enable-controlled-folders-exploit-guard)<BR>
 你现在可以使用受控文件夹访问权限阻止不受信任的进程写入磁盘扇区。
 
 - [载入非 Windows 设备](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/configure-endpoints-non-windows-windows-defender-advanced-threat-protection)<BR>

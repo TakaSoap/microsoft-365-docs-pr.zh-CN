@@ -1,5 +1,5 @@
 ---
-title: 调查在转发代理之后发生的连接事件
+title: 调查正向代理背后发生的连接事件
 description: 了解如何通过 Microsoft Defender ATP 中的网络保护使用高级 HTTP 级别监视，它显示真实目标，而不是代理。
 keywords: 代理， 网络保护， 转发代理， 网络事件， 审核， 阻止， 域名， 域
 search.product: eADQiWindows 10XVcnh
@@ -15,17 +15,16 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - m365-security-compliance
-- m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 7eaa4bb76d7607f0b55c87482d1104a0897c9d36
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 28d8a113ed77e9624bd914571b1af4a7ece2aa5c
+ms.sourcegitcommit: 987f70e44e406ab6b1dd35f336a9d0c228032794
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51186085"
+ms.lasthandoff: 04/05/2021
+ms.locfileid: "51587559"
 ---
-# <a name="investigate-connection-events-that-occur-behind-forward-proxies"></a>调查在转发代理之后发生的连接事件
+# <a name="investigate-connection-events-that-occur-behind-forward-proxies"></a>调查正向代理背后发生的连接事件
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 

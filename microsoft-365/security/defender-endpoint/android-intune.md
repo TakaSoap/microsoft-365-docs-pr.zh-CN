@@ -1,7 +1,7 @@
 ---
-title: 使用 Microsoft Intune 部署适用于 Android 的 Microsoft Defender ATP
-description: 介绍如何使用 Microsoft Intune 部署适用于 Android 的 Microsoft Defender ATP
-keywords: microsoft， defender， atp， android， 安装， 部署， 卸载，
+title: '通过 Microsoft Intune 部署 Microsoft Defender for Endpoint for Android '
+description: 介绍如何使用 Microsoft Intune 部署适用于 Android 的 Microsoft Defender for Endpoint
+keywords: microsoft， defender， atp， mde， android， 安装， 部署， 卸载，
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -15,17 +15,16 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - m365-security-compliance
-- m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: e557f60346b2f68354df621b6e4812eac775d812
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: fdfc6e63945e15ce2d1f1a293c377f641eeb9bc4
+ms.sourcegitcommit: 987f70e44e406ab6b1dd35f336a9d0c228032794
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51165665"
+ms.lasthandoff: 04/05/2021
+ms.locfileid: "51587691"
 ---
-# <a name="deploy-microsoft-defender-for-endpoint-for-android-with-microsoft-intune"></a>使用 Microsoft Intune 部署适用于 Android 的 Microsoft Defender for Endpoint 
+# <a name="deploy-microsoft-defender-for-endpoint-for-android-with-microsoft-intune"></a>通过 Microsoft Intune 部署 Microsoft Defender for Endpoint for Android  
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -261,5 +260,5 @@ Defender for Endpoint 通过 Intune 支持托管设备的设备配置策略。 �
 
 
 ## <a name="related-topics"></a>相关主题
-- [适用于 Android 的 Microsoft Defender for Endpoint 概述](microsoft-defender-endpoint-android.md)
-- [配置适用于 Android 功能的 Microsoft Defender for Endpoint](android-configure.md)
+- [Microsoft Defender for Endpoint for Android 概述](microsoft-defender-endpoint-android.md)
+- [配置 Microsoft Defender for Endpoint for Android 功能](android-configure.md)

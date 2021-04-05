@@ -1,6 +1,6 @@
 ---
-title: 客户端行为阻止
-description: 客户端行为阻止是 Microsoft Defender ATP 中行为阻止和包含功能的一部分
+title: 客户端阻止
+description: 客户端行为阻止是 Microsoft Defender for Endpoint 中的行为阻止和包含功能的一部分
 keywords: 行为阻止， 快速保护， 客户端行为， Microsoft Defender ATP
 search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
@@ -19,14 +19,14 @@ ms.collection:
 - m365-security-compliance
 - m365initiative-defender-endpoint
 ms.technology: mde
-ms.openlocfilehash: c37a1180f9def51daa4229418b05abe7cf787aa3
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 9fcff96b2583c6ef6bec05429ec50a71f3872e43
+ms.sourcegitcommit: 987f70e44e406ab6b1dd35f336a9d0c228032794
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51165257"
+ms.lasthandoff: 04/05/2021
+ms.locfileid: "51587103"
 ---
-# <a name="client-behavioral-blocking"></a>客户端行为阻止
+# <a name="client-behavioral-blocking"></a>客户端阻止
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -65,7 +65,7 @@ ms.locfileid: "51165257"
 |特权提升   | Behavior：Win32/PrivilegeEscalation.*！ml |
 |防御者    | Behavior：Win32/DefenseEvasion.*！ml |
 |凭据访问  | Behavior：Win32/CredentialAccess.*！ml |
-|Discovery  | Behavior：Win32/Discovery.*！ml |
+|发现  | Behavior：Win32/Discovery.*！ml |
 |横向移动 | Behavior：Win32/LateralMovement.*！ml |
 |集合 |   Behavior：Win32/Collection.*！ml |
 |命令和控件 | Behavior：Win32/CommandAndControl.*！ml |
@@ -87,13 +87,13 @@ ms.locfileid: "51165257"
 
 - [块模式下的 EDR](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/edr-in-block-mode)
 
-- [攻击面减少](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/attack-surface-reduction)
+- [减少攻击面](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/attack-surface-reduction)
 
 - [下一代保护](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-microsoft-defender-antivirus-features) (防病毒) 
 
 ## <a name="related-articles"></a>相关文章
 
-- [行为阻止和抑制](behavioral-blocking-containment.md)
+- [行为阻止和控制](behavioral-blocking-containment.md)
 
 - [反馈循环阻止](feedback-loop-blocking.md)
 

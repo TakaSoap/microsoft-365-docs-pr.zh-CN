@@ -1,6 +1,6 @@
 ---
-title: 行为阻止和抑制
-description: 了解 Microsoft Defender ATP 中的行为阻止和抑制功能
+title: 行为阻止和控制
+description: 了解 Microsoft Defender for Endpoint 中的行为阻止和包含功能
 keywords: Microsoft Defender ATP，阻止模式下的 EDR，被动模式阻止
 search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
@@ -19,14 +19,14 @@ ms.collection:
 - m365-security-compliance
 - m365initiative-defender-endpoint
 ms.technology: mde
-ms.openlocfilehash: dcad3b7233f2efd444d41c15916eaae195634c8c
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 7cea65292c427cb953e2e8e3ca866c89f83128b1
+ms.sourcegitcommit: 987f70e44e406ab6b1dd35f336a9d0c228032794
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51166229"
+ms.lasthandoff: 04/05/2021
+ms.locfileid: "51587163"
 ---
-# <a name="behavioral-blocking-and-containment"></a>行为阻止和抑制
+# <a name="behavioral-blocking-and-containment"></a>行为阻止和控制
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -42,7 +42,7 @@ ms.locfileid: "51166229"
 
 行为阻止和抑制功能可帮助根据威胁的行为和进程树识别和停止威胁，即使威胁已开始执行。 下一代保护、EDR 和适用于终结点的 Defender 组件和功能在行为阻止和抑制功能中协同工作。 
 
-:::image type="content" source="images/mdatp-next-gen-EDR-behavblockcontain.png" alt-text="行为阻止和抑制":::
+:::image type="content" source="images/mdatp-next-gen-EDR-behavblockcontain.png" alt-text="行为阻止和控制":::
 
 行为阻止和包含功能适用于 Defender for Endpoint 的多个组件和功能，可立即停止攻击并阻止攻击的进行。
 

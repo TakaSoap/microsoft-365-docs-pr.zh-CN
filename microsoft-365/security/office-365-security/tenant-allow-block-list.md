@@ -16,12 +16,12 @@ ms.collection:
 description: 管理员可以了解如何在安全门户的租户允许/阻止列表中配置允许和阻止。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 55116ddac8fa25b63e50b7fba73f668855e2858d
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 103ddc9aa0858f9203582ac07a655fd7f5506cf3
+ms.sourcegitcommit: 987f70e44e406ab6b1dd35f336a9d0c228032794
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51203818"
+ms.lasthandoff: 04/05/2021
+ms.locfileid: "51587583"
 ---
 # <a name="manage-the-tenant-allowblock-list"></a>管理租户允许/阻止列表
 
@@ -33,9 +33,6 @@ ms.locfileid: "51203818"
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 > [!NOTE]
->
-> 本文中所述的功能在预览版中，可能会更改，并且并非在所有组织中都可用。
->
 > 目前，你 **无法** 配置租户允许/阻止列表中的允许项。
 
 在具有 Exchange Online 邮箱或独立 Exchange Online Protection (EOP) （没有 Exchange Online 邮箱）的 Microsoft 365 组织中，您可能对 EOP 筛选裁定有意见不一致。 例如，一条好邮件可能标记为 (误报) ，或者可能允许错误消息通过 (漏报) 。
@@ -97,7 +94,7 @@ ms.locfileid: "51203818"
 
      - 验证是否关闭该设置 (关闭) 并使用"过期时间"框指定条目 ![ ](../../media/scc-toggle-off.png) 的到期日期。 
 
-       或者
+       或
 
      - 将开关移到右侧，将条目配置为永不过期： ![切换开关打开](../../media/scc-toggle-on.png).
 
@@ -119,7 +116,7 @@ ms.locfileid: "51203818"
 
      - 验证是否关闭该设置 (关闭) 并使用"过期时间"框指定条目 ![ ](../../media/scc-toggle-off.png) 的到期日期。 
 
-     或者
+     或
 
      - 将开关移到右侧，将条目配置为永不过期： ![切换开关打开](../../media/scc-toggle-on.png).
 
@@ -170,13 +167,13 @@ ms.locfileid: "51203818"
 
      - 验证是否关闭该设置 (关闭) 并使用"过期 ![ ](../../media/scc-toggle-off.png) **时间"** 框指定条目的到期日期。
 
-       或者
+       或
 
      - 将开关移到右侧，将条目配置为永不过期： ![切换开关打开](../../media/scc-toggle-on.png).
 
    - **可选说明**：输入条目的描述性文本。
 
-5. 完成后，单击“保存”。
+5. 完成后，单击“**保存**”。
 
 ## <a name="use-the-security--compliance-center-to-remove-block-entries-from-the-tenant-allowblock-list"></a>使用安全&中心从租户允许/阻止列表中删除阻止条目
 

@@ -1,7 +1,7 @@
 ---
 title: 阻止模式下的终结点检测和响应
 description: 了解阻止模式下的终结点检测和响应
-keywords: Microsoft Defender ATP，阻止模式下的 EDR，被动模式阻止
+keywords: Microsoft Defender ATP， mde， EDR in block mode， passive mode blocking
 search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
 author: denisebmsft
@@ -20,12 +20,12 @@ ms.collection:
 - m365-security-compliance
 - m365initiative-defender-endpoint
 ms.technology: mde
-ms.openlocfilehash: 7bee6c99d2c1c5ad3cec8f2e317b729a0a4e1f8b
-ms.sourcegitcommit: a965c498e6b3890877f895d5197898b306092813
+ms.openlocfilehash: e492d57d8a7e10a1fff57980408ed8234bbeead0
+ms.sourcegitcommit: 987f70e44e406ab6b1dd35f336a9d0c228032794
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51379474"
+ms.lasthandoff: 04/05/2021
+ms.locfileid: "51587199"
 ---
 # <a name="endpoint-detection-and-response-edr-in-block-mode"></a>在阻止模式下， (EDR) 终结点检测和响应
 
@@ -139,6 +139,6 @@ ms.locfileid: "51379474"
 ## <a name="see-also"></a>另请参阅
 
 - [技术社区博客：在阻止模式下引入 EDR：停止其跟踪中的攻击](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/introducing-edr-in-block-mode-stopping-attacks-in-their-tracks/ba-p/1596617)
-- [行为阻止和抑制](behavioral-blocking-containment.md)
+- [行为阻止和控制](behavioral-blocking-containment.md)
 - [更好地结合：Microsoft Defender 防病毒和 Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/why-use-microsoft-antivirus)
 

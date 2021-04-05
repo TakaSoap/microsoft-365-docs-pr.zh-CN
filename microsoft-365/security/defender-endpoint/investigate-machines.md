@@ -1,5 +1,5 @@
 ---
-title: 调查 Defender for Endpoint Defender ATP 设备列表中的设备
+title: 调查 Defender for Endpoint Devices 列表中的设备
 description: 通过查看警报、网络连接信息、添加设备标记和组以及检查服务运行状况来调查受影响的设备。
 keywords: 设备， 标记， 组， 终结点， 警报队列， 警报， 设备名称， 域， 上次看到时间， 内部 IP， 活动警报， 威胁类别， 筛选器， 排序， 查看警报， 网络， 连接， 类型， 密码窃取程序， 勒索软件， 攻击， 威胁， 低严重性， 服务运行状况
 search.product: eADQiWindows 10XVcnh
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 8f5415b6337d21b780a75a192a565078a6cacc06
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 154ecd66399b031ef2e60eef16227bb9bc2f8785
+ms.sourcegitcommit: 987f70e44e406ab6b1dd35f336a9d0c228032794
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51185727"
+ms.lasthandoff: 04/05/2021
+ms.locfileid: "51587715"
 ---
 # <a name="investigate-devices-in-the-microsoft-defender-for-endpoint-devices-list"></a>调查 Microsoft Defender 终结点设备列表中的设备
 
@@ -67,11 +67,11 @@ ms.locfileid: "51185727"
 
 响应操作沿着特定设备页面的顶部运行，包括：
 
-- 管理标记
+- 管理标签
 - 隔离设备
 - 限制应用执行
 - 运行防病毒扫描
-- 收集调查包
+- 收集调查程序包
 - 启动实时响应会话
 - 启动自动调查
 - 咨询威胁专家
@@ -201,4 +201,4 @@ ms.locfileid: "51185727"
 - [调查与 Defender for Endpoint 警报关联的域](investigate-domain.md)
 - [调查 Defender for Endpoint 中的用户帐户](investigate-user.md)
 - [安全建议](tvm-security-recommendation.md)
-- [软件清单](tvm-software-inventory.md)
+- [软件库存](tvm-software-inventory.md)

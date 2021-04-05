@@ -16,12 +16,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 了解 Microsoft 365 组过期策略。
-ms.openlocfilehash: 65a746751cd523a5dadce3eca573e6a9bfce0166
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: fdef06918ec2c35547c084e5f431aa7bef8d6a8c
+ms.sourcegitcommit: 987f70e44e406ab6b1dd35f336a9d0c228032794
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51052298"
+ms.lasthandoff: 04/05/2021
+ms.locfileid: "51587619"
 ---
 # <a name="microsoft-365-group-expiration-policy"></a>Microsoft 365 组过期策略
 
@@ -53,7 +53,7 @@ ms.locfileid: "51052298"
 |Role|他们可以执行哪些功能|
 |---------|---------|
 |Azure 中的 Office 365 全局管理员 (，公司管理员) 用户管理员|创建、读取、更新或删除 Microsoft 365 组过期策略设置。|
-|User|续订或 [还原](/azure/active-directory/users-groups-roles/groups-restore-deleted) 他们拥有的 Microsoft 365 组|
+|用户|续订或 [还原](/azure/active-directory/users-groups-roles/groups-restore-deleted) 他们拥有的 Microsoft 365 组|
 
 ## <a name="how-to-set-the-expiration-policy"></a>如何设置过期策略
 
@@ -63,7 +63,7 @@ ms.locfileid: "51052298"
 
 如果组没有所有者，过期电子邮件将转到指定的管理员。
 
-你可以为所有组（仅选定组）设置策略，或者通过选择"无"将其完全 **关闭**。 请注意，目前不能为不同的组设置不同的策略。
+你可以为所有组设置策略，仅选定组 (最多 500) ，或者选择"无"将其完全 **关闭**。 请注意，目前不能为不同的组设置不同的策略。
 
 ![Azure Active Directory 中的组过期设置的屏幕截图](../media/azure-groups-expiration-settings.png)
 
