@@ -1,5 +1,5 @@
 ---
-title: 新的德国数据中心区域迁移到 Office 365 服务已更改
+title: 迁移到新的德国数据中心区域的 Office 365 服务后将发生哪些变化
 ms.author: andyber
 author: andybergen
 manager: laurawi
@@ -19,23 +19,23 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 摘要：了解从德国 Microsoft 云 (德国) 迁移到新的德国数据中心区域 Office 365 服务的变化。
-ms.openlocfilehash: cadad596011bbcde02b61f01e949c93a5a62a1c3
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 74ad9a662d3ea7a68ef1f82961864eb4468f6098
+ms.sourcegitcommit: e0a96e08b7dc29e074065e69a2a86fc3cf0dad01
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50923822"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51591776"
 ---
-# <a name="what-has-changed-for-the-migration-to-office-365-services-in-the-new-german-datacenter-regions"></a>新的德国数据中心区域迁移到 Office 365 服务已更改
+# <a name="what-will-change-after-the-migration-to-office-365-services-in-the-new-german-datacenter-regions"></a>迁移到新的德国数据中心区域的 Office 365 服务后将发生哪些变化
 
 租户迁移旨在对管理员和用户产生最小影响。 但是，每个工作负载都有注意事项。 请查看以下部分，以更好地了解工作负载的迁移体验。
 
 以下是德国 Microsoft 云与新的德国数据中心区域的 Office 365 服务之间的主要区别。
 
-| 类别 | 德国 Microsoft 云 (德国 microsoft 云)  | 新的德国数据中心区域内的 Office 365 服务 |
+| Category | 德国 Microsoft 云 | 新的德国数据中心区域内的 Office 365 服务 |
 |:-------|:-----|:-------|
 | Microsoft 365 服务适用于只有一个 Office 365 租户的订阅 | 15 个服务 | 29 个服务 <br><br> 有关详细信息，请参阅不同的 [Office 365](ms-cloud-germany-transition.md#serv-avail)云服务产品之间的服务可用性是什么？。 |
-| 新增功能 | 不提供任何新功能。 | 新功能将与 Office 365 服务一致。 |
+| 新增功能 | 没有可用的新功能。 | 新功能将与 Office 365 服务一致。 |
 | 数据受托人 | 是 | 否 |
 | 与全球 Office 365 租户跨租户协作 | 否 | 是 |
 | 客户数据驻留 | 客户数据将仅存储在德国数据中心内。 | Microsoft 将专门在德国存储以下客户数据： <ul><li> Exchange Online 邮箱 (电子邮件正文、日历条目以及电子邮件附件内容)  </li><li> SharePoint Online 网站内容和存储在该网站中的文件，以及上传到 OneDrive for Business 的文件 </li></ul> |
@@ -79,6 +79,8 @@ ms.locfileid: "50923822"
 ## <a name="office-services"></a>Office 服务
 
 在转换之前和转换期间，可通过 Office Online `office.de` 服务访问。 在将用户的邮箱转换为 Office 365 服务后，用户应开始使用 Office 365 服务 URL。 随着后续工作负载迁移到 Office 365 服务，它们从 office.com 门户的界面将开始工作。
+
+Office 中最近 (MRU) 服务是一种从德国 Microsoft 云到 Office 365 全局服务的转换，而不是迁移。 从 Office 365 全局服务端迁移后，只有 Office 365 全局服务端中的 MRU 链接 Office.com 可见。 来自德国 Microsoft 云的 MRU 链接在 Office 365 全球服务中作为 MRU 链接不可见。 在 Office 365 全局服务中，MRU 链接仅在租户迁移到达阶段 9 之后才能访问。
 
 ## <a name="exchange-online-protection"></a>Exchange Online Protection
 

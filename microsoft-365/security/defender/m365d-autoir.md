@@ -19,15 +19,14 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.custom: autoir
-ms.date: 01/29/2021
 ms.reviewer: evaldm, isco
 ms.technology: m365d
-ms.openlocfilehash: 8ed6f1ccd6587d6c618974a123f0d5d42a44e753
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: be0423b0af8251347420d9e970dcfe10db0bb72b
+ms.sourcegitcommit: e0a96e08b7dc29e074065e69a2a86fc3cf0dad01
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51199629"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51591919"
 ---
 # <a name="automated-investigation-and-response-in-microsoft-365-defender"></a>Microsoft 365 Defender 中的自动调查和响应
 
@@ -41,7 +40,7 @@ ms.locfileid: "51199629"
 本文概述了 AIR，并包含指向下一步步骤和其他资源的链接。
 
 > [!TIP]
-> 想要体验 Microsoft 365 Defender？ 可以在[实验室环境中评估它或在](m365d-evaluation.md?ocid=cx-docs-MTPtriallab)[生产中运行你的试验项目](m365d-pilot.md?ocid=cx-evalpilot)。
+> 希望体验 Microsoft 365 Defender？ 你可[在验室环境中评估](m365d-evaluation.md?ocid=cx-docs-MTPtriallab) 或[生产中运行试点项目](m365d-pilot.md?ocid=cx-evalpilot)。
 
 ## <a name="how-automated-investigation-and-self-healing-works"></a>自动调查和自我修复的工作原理
 
@@ -94,6 +93,11 @@ ms.locfileid: "51199629"
 
 > [!NOTE]
 > 不是每个警报都会触发自动调查，并且并非所有调查都会触发自动修正操作;这取决于如何为组织配置自动调查和响应。 请参阅 [在 Microsoft 365 Defender](m365d-configure-auto-investigation-response.md)中配置自动调查和响应功能。
+
+## <a name="viewing-a-list-of-investigations"></a>查看调查列表
+
+若要查看调查，请转到" **事件"** 页面。 选择事件，然后选择" **调查"** 选项卡。若要了解详细信息， [请参阅详细信息和自动调查的结果](m365d-autoir-results.md)。
+
 
 ## <a name="next-steps"></a>后续步骤
 

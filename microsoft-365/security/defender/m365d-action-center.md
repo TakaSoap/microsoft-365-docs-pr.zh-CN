@@ -20,13 +20,12 @@ ms.collection:
 ms.topic: how-to
 ms.custom: autoir
 ms.reviewer: evaldm, isco
-ms.date: 02/01/2021
-ms.openlocfilehash: d958f2787b9d66e42a32b8858139f7d13e83ddef
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: edf809c5fbc257e1dacafeed931da1a2d1471f4a
+ms.sourcegitcommit: e0a96e08b7dc29e074065e69a2a86fc3cf0dad01
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51199593"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51592080"
 ---
 # <a name="the-action-center"></a>操作中心
 
@@ -74,7 +73,7 @@ ms.locfileid: "51199593"
 
 访问操作中心时，会看到两个选项卡："挂起的操作"和"历史记录"。 下表总结了您将在每个选项卡上看到的内容：
 
-|Tab  |说明  |
+|选项卡  |Description  |
 |---------|---------|
 |**Pending**     | 显示需要关注的操作的列表。 可以一次批准或拒绝一个操作，也可以选择多个操作（如果他们的操作类型与隔离文件 (相同，) 。 <p>**提示**：确保尽快审阅 (批准或拒绝) 挂起的操作，以便可以及时完成自动调查。       |
 |**历史记录**     | 充当审核日志的操作的一个组，例如： <br/>- 由于自动调查而采取的修正操作 <br/>- 对可疑或恶意电子邮件、文件或 URL 采取的修正操作<br/>- 安全运营团队批准的修正操作 <br/>- 运行的命令和在实时响应会话期间应用的修正操作<br/>- 防病毒保护采取的修正操作 <p>提供了一种撤消某些操作 (请参阅[Undo completed actions) 。](m365d-autoir-actions.md#undo-completed-actions)        |
@@ -94,7 +93,7 @@ ms.locfileid: "51199593"
 
 所有操作（无论是等待审批还是已执行）均在操作中心进行跟踪。 可用操作包括：
 
-- 收集调查包 
+- 收集调查程序包 
 - 隔离设备 (可以撤消此操作)  
 - 载出计算机 
 - 释放代码执行 
@@ -110,7 +109,7 @@ ms.locfileid: "51199593"
 
  (**新建！)** 改进的操作中心现在包括一个 **操作** 源列，告知你每个操作的来源。 下表介绍了可能 **的操作源** 值：
 
-| 操作源值 | 说明 |
+| 操作源值 | Description |
 |:-----|:---|
 | **手动设备操作** | 对设备采取的手动操作。 示例包括 [设备隔离](../defender-endpoint/respond-machine-alerts.md#isolate-devices-from-the-network) 或 [文件隔离](../defender-endpoint/respond-file-alerts.md#stop-and-quarantine-files)。 |
 | **手动电子邮件操作** | 对电子邮件执行手动操作。 示例包括软删除电子邮件或 [修正电子邮件](../office-365-security/remediate-malicious-email-delivered-office-365.md)。 |

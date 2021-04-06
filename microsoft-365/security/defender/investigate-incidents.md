@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: f6b085f200d3b0c71bb3608f8e5ba9ed85632676
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: a6c7e7e920d18d9d8bf29d71d317008ea0c37bbf
+ms.sourcegitcommit: e0a96e08b7dc29e074065e69a2a86fc3cf0dad01
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51500325"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51592092"
 ---
 # <a name="investigate-incidents-in-microsoft-365-defender"></a>调查 Microsoft 365 Defender 中的事件
 
@@ -85,6 +85,10 @@ Microsoft 365 Defender 聚合来自你的设备、用户和邮箱的所有用户
 ![事件“计算机”选项卡图像](../../media/incident-machines.png)
 
 选择 "时间线" 选项卡，将能够在计算机时间线之间滚动，并按时间顺序查看计算机上观察到的所有事件和行为，并与引发的警报交错。
+
+> [!TIP]
+> 可以在设备页面上执行按需扫描。 在 Microsoft 365 安全中心中，选择 **"设备清单"。** 选择具有警报的设备，然后运行防病毒扫描。 防病毒扫描等操作会进行跟踪，并且显示在"设备清单 **"页上。** 若要了解更多信息，请参阅 [在设备上运行 Microsoft Defender 防病毒扫描](/microsoft-365/security/defender-endpoint/respond-machine-alerts#run-microsoft-defender-antivirus-scan-on-devices)。
+
 
 ## <a name="users"></a>用户
 

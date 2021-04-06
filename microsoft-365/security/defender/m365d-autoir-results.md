@@ -1,6 +1,6 @@
 ---
 title: 自动调查的详细信息和结果
-description: 在自动调查期间和之后，可以查看结果和关键发现
+description: 在 Microsoft 365 Defender 中查看自动调查的结果和主要发现
 keywords: 自动化， 调查， 结果， 分析， 详细信息， 修正， autoair
 search.appverid: met150
 ms.prod: m365-security
@@ -21,13 +21,12 @@ ms.collection:
 ms.topic: conceptual
 ms.custom: autoir
 ms.reviewer: evaldm, isco
-ms.date: 02/08/2021
-ms.openlocfilehash: 05208dd8ba893d65db50430861ad5dd5ad9d34fb
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: ca023ea49a8d92123467be640a097a72233d3198
+ms.sourcegitcommit: e0a96e08b7dc29e074065e69a2a86fc3cf0dad01
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51198965"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51592116"
 ---
 # <a name="details-and-results-of-an-automated-investigation"></a>自动调查的详细信息和结果
 
@@ -61,8 +60,11 @@ ms.locfileid: "51198965"
 > 您必须具有 [某些权限才能](m365d-action-center.md#required-permissions-for-action-center-tasks) 批准、拒绝或撤消操作。
 
 1. 转到 [https://security.microsoft.com](https://security.microsoft.com) 并登录。 
+
 2. 在“导航”窗格中，选择“操作中心”。 
+
 3. 在"挂起 **"或** " **历史记录"** 选项卡上，选择一个项目。 将打开其飞出窗格。
+
 4. 查看飞出窗格中的信息，然后执行以下步骤之一：
    - 选择 **"打开调查"** 页以查看有关调查的更多详细信息。
    - 选择 **"批准** "以启动挂起的操作。
@@ -76,9 +78,13 @@ ms.locfileid: "51198965"
 ![事件详细信息](../../media/mtp-incidentdetails-tabs.png)
 
 1. 转到 [https://security.microsoft.com](https://security.microsoft.com) 并登录。 
+
 2. 在导航窗格中，选择"**事件&事件**  >  **"。** 
+
 3. 选择列表中的某个项目，然后选择"打开 **事件页面"。**
+
 4. 选择 **"调查"** 选项卡，然后在列表中选择调查。 将打开其飞出窗格。
+
 5. 选择 **"打开调查"页**。 
 
 ## <a name="investigation-details"></a>调查详细信息
@@ -92,7 +98,7 @@ ms.locfileid: "51198965"
 > [!NOTE]
 > 你在调查详细信息页面中看到的特定选项卡取决于你的订阅包括的内容。 例如，如果你的订阅不包括 Microsoft Defender for Office 365 计划 2，你将看不到"邮箱 **"** 选项卡。
 
-| Tab | 说明 |
+| 选项卡 | Description |
 |:--------|:--------|
 | **调查图**   | 提供调查的可视化表示形式。 描述实体并列出发现的威胁，以及警报以及是否正在等待批准任何操作。<br/>可以选择图形上的项目以查看更多详细信息。 例如，选择 **"证据**"图标将你带至"证据"选项卡，可在其中查看检测到的实体及其裁定。 |
 | **警告**    | 列出与调查相关的警报。 警报可能来自用户设备上的威胁防护功能、Office 应用、云应用安全和其他 Microsoft 365 Defender 功能。|

@@ -1,5 +1,5 @@
 ---
-title: 自动调查的详细信息和结果
+title: 查看自动调查的详细信息和结果
 description: 在自动调查期间和之后，可以查看结果和关键发现
 keywords: 自动化， 调查， 结果， 分析， 详细信息， 修正， autoair
 search.appverid: met150
@@ -21,15 +21,14 @@ ms.collection:
 ms.topic: conceptual
 ms.custom: autoir
 ms.reviewer: evaldm, isco
-ms.date: 02/02/2021
-ms.openlocfilehash: 57a515fec2baabba7146959a43737771ef5c8cfe
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 8ecf39090d368427c103c7ec78e22bc13f7c339f
+ms.sourcegitcommit: e0a96e08b7dc29e074065e69a2a86fc3cf0dad01
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51197765"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51591764"
 ---
-# <a name="details-and-results-of-an-automated-investigation"></a>自动调查的详细信息和结果
+# <a name="view-the-details-and-results-of-an-automated-investigation"></a>查看自动调查的详细信息和结果
 
 **适用于：**
 - Microsoft Defender for Endpoint
@@ -81,7 +80,7 @@ ms.locfileid: "51197765"
 > [!NOTE]
 > 你在调查详细信息页面中看到的特定选项卡取决于你的订阅包括的内容。 例如，如果你的订阅不包括 Microsoft Defender for Office 365 计划 2，你将看不到"邮箱 **"** 选项卡。
 
-| Tab | 说明 |
+| 选项卡 | Description |
 |:--------|:--------|
 | **调查图**   | 提供调查的可视化表示形式。 描述实体并列出发现的威胁，以及警报以及是否正在等待批准任何操作。<br/>可以选择图形上的项目以查看更多详细信息。 例如，选择 **"证据**"图标将你带至"证据"选项卡，可在其中查看检测到的实体及其裁定。 |
 | **警告**    | 列出与调查相关的警报。 警报可能来自用户设备上的威胁防护功能、Office 应用、云应用安全和其他 Microsoft 365 Defender 功能。|

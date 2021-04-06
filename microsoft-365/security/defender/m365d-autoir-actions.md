@@ -20,14 +20,13 @@ ms.collection:
 ms.topic: how-to
 ms.custom: autoir
 ms.reviewer: evaldm, isco
-ms.date: 01/29/2021
 ms.technology: m365d
-ms.openlocfilehash: d78bf3689020b5a24863e5a0f1ec817af50178ad
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 7106f5d2e740d2b4cacbcaeb0b9391095bbeb356
+ms.sourcegitcommit: e0a96e08b7dc29e074065e69a2a86fc3cf0dad01
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51055869"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51592020"
 ---
 # <a name="view-and-manage-actions-in-the-action-center"></a>在操作中心查看和管理操作
 
@@ -52,8 +51,11 @@ Microsoft 365 Defender 中的威胁防护功能可能会导致某些修正操作
 ![批准或拒绝操作](../../media/air-actioncenter-itemselected.png)
 
 1. 转到 [https://security.microsoft.com](https://security.microsoft.com) 并登录。 
+
 2. 在“导航”窗格中，选择“操作中心”。 
+
 3. 在操作中心中的“挂起”选项卡上，选择列表中的某个项。 将打开其飞出窗格。
+
 4. 查看飞出窗格中的信息，然后执行以下步骤之一：
    - 选择 **"打开调查"** 页以查看有关调查的更多详细信息。
    - 选择 **"批准** "以启动挂起的操作。
@@ -71,19 +73,25 @@ Microsoft 365 Defender 中的威胁防护功能可能会导致某些修正操作
 ### <a name="undo-one-remediation-action"></a>撤消一个修正操作
 
 1. 转到操作中心 [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) () 并登录。
+
 2. 在 **"历史记录** "选项卡上，选择要撤消的操作。
+
 3. 在屏幕右侧窗格中，选择"撤消 **"。**
 
 ### <a name="undo-multiple-remediation-actions"></a>撤消多个修正操作
 
 1. 转到操作中心 (https://security.microsoft.com/action-center) 并登录。
+
 2. 在 **"历史记录** "选项卡上，选择要撤消的操作。 确保选择操作类型相同的项目。 将打开一个飞出窗格。
+
 3. 在飞出窗格中， **选择撤消**。
 
 ### <a name="to-remove-a-file-from-quarantine-across-multiple-devices"></a>跨多个设备从隔离中删除文件 
 
 1. 转到操作中心 [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) () 并登录。
+
 2. 在" **历史记录"** 选项卡上，选择操作类型为"隔离 **文件"的文件**。
+
 3. 在屏幕右侧窗格中，选择"应用到此文件的 **X** 更多实例"，然后选择"撤消 **"。**
 
 ## <a name="next-steps"></a>后续步骤

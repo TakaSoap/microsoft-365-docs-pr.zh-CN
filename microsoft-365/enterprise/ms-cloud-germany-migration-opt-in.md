@@ -19,17 +19,17 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: '摘要： '
-ms.openlocfilehash: 190b020ac683bcb97317a281c520b7f1ac92c721
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 7b99238b588363203f7aac07b3fb056d7a37e19f
+ms.sourcegitcommit: e0a96e08b7dc29e074065e69a2a86fc3cf0dad01
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50910914"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51592068"
 ---
-# <a name="how-to-opt-in-for-migration-from-microsoft-cloud-germany-microsoft-cloud-deutschland-to-office-365-services-in-the-new-german-datacenter-regions"></a>如何选择从德国 Microsoft 云（Microsoft Cloud Deutschland）迁移到新的德国数据中心区域内的 Office 365 服务
+# <a name="how-to-opt-in-for-new-migration-from-microsoft-cloud-germany-microsoft-cloud-deutschland-to-office-365-services-in-the-new-german-datacenter-regions"></a>如何选择加入从德国 Microsoft 云到德国 microsoft 云 (到新的德国数据中心) Office 365 服务的新迁移
 
->[!Note]
->本文仅适用于德国 Microsoft 云 (德国 microsoft 云) 客户。
+> [!NOTE]
+> 本文仅适用于德国 Microsoft 云 (德国 microsoft 云) 客户。
 >
 
 ## <a name="how-to-request-migration"></a>如何请求迁移

@@ -11,7 +11,6 @@ f1.keywords:
 - NOCSH
 ms.author: deniseb
 author: denisebmsft
-ms.date: 01/29/2021
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
@@ -22,12 +21,12 @@ ms.topic: how-to
 ms.custom: autoir
 ms.reviewer: evaldm, isco
 ms.technology: m365d
-ms.openlocfilehash: 851fd05f0fec4b8d113e515783092eed0114db0f
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: f57e68ba88879ed78170e6348ecdbce4db82b668
+ms.sourcegitcommit: e0a96e08b7dc29e074065e69a2a86fc3cf0dad01
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51199109"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51592056"
 ---
 # <a name="handle-false-positivesnegatives-in-automated-investigation-and-response-capabilities"></a>处理自动调查和响应功能中的误报/负面影响
 
@@ -55,7 +54,7 @@ ms.locfileid: "51199109"
 
 |方案 |服务 |需执行的操作 |
 |--------|--------|--------|
-|- 通过合法使用触发警报 <br/>- 警报不准确    |[Microsoft Cloud App Security](/cloud-app-security)<br/> 或者 <br/>[Azure 高级威胁检测](/azure/security/fundamentals/threat-detection)         |[在云应用安全门户中管理警报](/cloud-app-security/managing-alerts)         |
+|- 通过合法使用触发警报 <br/>- 警报不准确    |[Microsoft Cloud App Security](/cloud-app-security)<br/> 或 <br/>[Azure 高级威胁检测](/azure/security/fundamentals/threat-detection)         |[在云应用安全门户中管理警报](/cloud-app-security/managing-alerts)         |
 |文件、IP 地址、URL 或域在设备上被视为恶意软件，即使安全|[Microsoft Defender for Endpoint](/windows/security/threat-protection) |[使用"允许"操作创建自定义指示器](/windows/security/threat-protection/microsoft-defender-atp/manage-indicators) |
 
 ## <a name="undo-a-remediation-action-that-was-taken-on-a-device"></a>撤消在设备上采取的修正操作
@@ -74,4 +73,4 @@ ms.locfileid: "51199109"
 
 - [查看自动调查的详细信息和结果](m365d-autoir-results.md)
 - [在 Microsoft 365 Defender 中通过高级搜寻主动搜寻威胁](advanced-hunting-overview.md)
-- [在 Microsoft Defender for Endpoint 中解决误报/负数](/windows/security/threat-protection/microsoft-defender-atp/defender-endpoint-false-positives-negatives)
+- [解决 Microsoft Defender for终结点的误报/负数](/windows/security/threat-protection/microsoft-defender-atp/defender-endpoint-false-positives-negatives)

@@ -1,6 +1,6 @@
 ---
 title: Microsoft 365 Defender 服务问题疑难解答
-description: 查找解决方案并解决已知的 Microsoft 365 Defender 问题
+description: 查找已知 Microsoft 365 Defender 问题的解决方案和解决方法
 keywords: Microsoft 威胁防护疑难解答， 疑难解答， Azure ATP， 问题， 加载项， 设置页面
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 8d8083cbba3582c41ca91c57978675987822d0d9
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: a2cd27bf7bf8b1c4931b9d768f3a6b5e5f2a0d93
+ms.sourcegitcommit: e0a96e08b7dc29e074065e69a2a86fc3cf0dad01
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51055867"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51592032"
 ---
 # <a name="troubleshoot-microsoft-365-defender-service-issues"></a>Microsoft 365 Defender 服务问题疑难解答
 
@@ -49,6 +49,12 @@ ms.locfileid: "51055867"
 
 有关详细信息，请参阅 [Microsoft Defender 的标识集成](/cloud-app-security/mdi-integration)。
 
-## <a name="where-is-the-settings-page-for-turning-the-service-on"></a>用于打开服务的设置页在哪里？
+## <a name="where-is-the-settings-page-for-turning-on-the-service"></a>用于打开服务的设置页在哪里？
 
 若要打开 Microsoft 365 Defender， **请从** Microsoft 365 安全中心的导航窗格中访问设置。 只有拥有必备权限和许可证 时，此 [导航项才可见](m365d-enable.md#check-license-eligibility-and-required-permissions)。
+
+## <a name="how-do-i-create-an-exception-for-my-fileurl"></a>如何为文件/URL 创建异常？
+
+误报是一种文件或 URL，被检测为恶意文件，但不是威胁。 你可以创建指示器并定义排除项以取消阻止并允许某些文件/URL。 请参阅在 Defender for Endpoint 中解决 [误报/负数](/microsoft-365/security/defender-endpoint/defender-endpoint-false-positives-negatives)。
+
+
