@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: 适用于管理 Office 应用中针对桌面、移动和 Web 的敏感度标签的 IT 管理员的信息。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 5a82eba3801509ed2e8ffb46ab32045466204fab
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: 3aa5c8065b882dff670d6b829141955bf615d933
+ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51498821"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51599837"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>管理 Office 应用中的敏感度标签
 
@@ -85,18 +85,20 @@ Office for iOS 和 Office for Android：敏感度标签内置于 [Office 应用]
 |[需要两端对齐来更改标签](sensitivity-labels.md#what-label-policies-can-do)                     | 1910+                     | 16.21+                 | 4.7.1+         | 4.0.39+           | 是               |
 |[提供指向自定义帮助页面的帮助链接](sensitivity-labels.md#what-label-policies-can-do)                       | 1910+                     | 16.21+                 | 4.7.1+         | 4.0.39+           | 是               |
 |[标记内容](sensitivity-labels.md#what-sensitivity-labels-can-do)                                              | 1910+                     | 16.21+                 | 4.7.1+         | 4.0.39+           | 是               |
-|[带变量的动态标记](#dynamic-markings-with-variables)                                              | 审阅中                     | 审阅中                 | 审阅中         | 审阅中           | 审阅中               |
+|[动态标记，带 1](#dynamic-markings-with-variables) <sup>标记</sup>                                              | 1910+                     | 16.21+                 | 4.7.1+         | 4.0.39+           | 是               |
 |[现在分配权限](encryption-sensitivity-labels.md#assign-permissions-now)                                 | 1910+                     | 16.21+                 | 4.7.1+         | 4.0.39+           | 是               |
 |[允许用户分配权限： <br /> - 不转发](encryption-sensitivity-labels.md#let-users-assign-permissions)                     | 1910+                     | 16.21+                 | 4.7.1+         | 4.0.39+           | 是               |
 |[允许用户分配权限： <br /> - 仅加密](encryption-sensitivity-labels.md#let-users-assign-permissions)  |2011+ | 审阅中 | 审阅中  | 审阅中 | 即将推出 |
-|[要求用户将标签应用于其电子邮件和文档](#require-users-to-apply-a-label-to-their-email-and-documents)   | 推出时间：2101+                        | 16.43+ <sup>\*</sup>                    | 审阅中            | 审阅中                | 是                |
+|[要求用户将标签应用于其电子邮件和文档](#require-users-to-apply-a-label-to-their-email-and-documents)   | 推出时间：2101+                        | 16.43+ <sup>2</sup>                    | 审阅中            | 审阅中                | 是                |
 |[审核标签相关的用户活动](data-classification-activity-explorer.md) | 2011+ | 审阅中 | 审阅中           | 审阅中               | 审阅中 |
-|[将敏感度标签自动应用于内容](apply-sensitivity-label-automatically.md)                    | 2009+                      | 16.44+ <sup>\*</sup>                    | 审阅中           | 审阅中               | 是 |
+|[将敏感度标签自动应用于内容](apply-sensitivity-label-automatically.md)                    | 2009+                      | 16.44+ <sup>2</sup>                    | 审阅中           | 审阅中               | 是 |
 |
 
-**脚注：**
+**Footnotes:**
 
-<sup>\*</sup> 需要新的 [Outlook for Mac](https://support.microsoft.com/office/the-new-outlook-for-mac-6283be54-e74d-434e-babb-b70cefc77439)
+<sup>1</sup> 目前仅支持 [项目.标签 If.App 和](#dynamic-markings-with-variables) 变量
+<br />
+<sup>2</sup> 需要 [新的Outlook for Mac](https://support.microsoft.com/office/the-new-outlook-for-mac-6283be54-e74d-434e-babb-b70cefc77439)
 
 
 ## <a name="office-built-in-labeling-client-and-other-labeling-solutions"></a>Office 内置标签客户端和其他标签解决方案
@@ -293,18 +295,18 @@ Office 应用应用的内容标记和加密与敏感度标签不同，具体取�
 > [!IMPORTANT]
 > 目前，并非所有平台上的应用都支持动态内容标记，可标记页眉、页脚和水印。 对于不支持此功能的应用，其将标记应用为标签配置中指定的原始文本，而不是解决变量。
 > 
-> Azure 信息保护统一标签客户端支持动态标记。 有关内置 Office 的标签，请参阅本页中" [功能](#support-for-sensitivity-label-capabilities-in-apps) 部分中表。
+> Azure 信息保护统一标签客户端支持动态标记以及列出的所有变量。 有关内置 Office 的标签，请参阅此页面中 [功能](#support-for-sensitivity-label-capabilities-in-apps) 部分中有关最低版本的表，然后参阅下表，确定支持的变量。
 
 为标记内容配置敏感度标签时，可以在文本字符串中为页眉、页脚或水印使用以下变量：
 
 | 变量 | 说明 | 应用标签时的示例 |
 | -------- | ----------- | ------- |
-| `${Item.Label}` | 已应用的标签的显示名称| **常规**|
-| `${Item.Name}` | 被标签内容的文件名或电子邮件主题 | **Sales.docx** |
-| `${Item.Location}` | 被标签的文档的路径和文件名，或者标记的电子邮件的电子邮件主题 | **\\\Sales\2020\Q3\Report.docx**|
-| `${User.Name}` | 显示应用标签的用户名称| **Richard Simone** |
-| `${User.PrincipalName}` | 应用标签的用户的 Azure AD 用户主体名称 （UPN） | **rsimone\@contoso.com** |
-| `${Event.DateTime}` | 标记内容的日期和时间，位于应用标签的用户的本地时区 | **2020/8/10 下午 1：30** |
+| `${Item.Label}` | 已应用的标签的显示名称 <br /><br> 内置标签：受 Word、Excel、PowerPoint 和 Outlook 支持 | **常规**|
+| `${Item.Name}` | 被标签内容的文件名或电子邮件主题 <br /><br> 内置标签：受 Word、Excel 和 PowerPoint 支持 | **Sales.docx** |
+| `${Item.Location}` | 被标签的文档的路径和文件名，或者标记的电子邮件的电子邮件主题 <br /><br> 内置标签：受 Word、Excel 和 PowerPoint 支持 | **\\\Sales\2020\Q3\Report.docx**|
+| `${User.Name}` | 显示应用标签的用户名称 <br /><br> 内置标签：受 Word、Excel 和 PowerPoint 支持 | **Richard Simone** |
+| `${User.PrincipalName}` | 应用标签的用户的 Azure AD 用户主体名称 （UPN） <br /><br> 内置标签：受 Word、Excel 和 PowerPoint 支持  | **rsimone\@contoso.com** |
+| `${Event.DateTime}` | 标记内容的日期和时间，位于应用标签的用户的本地时区 <br /><br> 内置标签：受 Word、Excel 和 PowerPoint 支持  | **2020/8/10 下午 1：30** |
 
 > [!NOTE]
 > 这些变量的语法区分大小写。
@@ -312,9 +314,6 @@ Office 应用应用的内容标记和加密与敏感度标签不同，具体取�
 #### <a name="setting-different-visual-markings-for-word-excel-powerpoint-and-outlook"></a>为 Word、Excel、PowerPoint 和 Outlook 设置不同的视觉标记
 
 作为一个附加变量，您可以通过在文本字符串中使用"If.App"变量语句来配置每个 Office 应用程序类型的视觉标记，并且使用值 **Word**、 **Excel**、 **PowerPoint** 或 **Outlook** 来标识应用程序类型。 如果要在同一个语句中指定多个值，也可缩简这些值，If.App 值。
-
-> [!NOTE]
-> 为提高完整性，包括 Outlook 的说明，虽然当前仅受 Azure 信息保护统一标签客户端支持。
 
 使用以下语法：
 

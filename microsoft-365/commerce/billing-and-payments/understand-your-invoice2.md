@@ -25,12 +25,12 @@ search.appverid:
 - BEA160
 ms.assetid: 0724b428-fb59-4962-8c37-6674166d7507
 description: 了解如何解读 Microsoft 365 商业版的费用、帐单和付款信息或发票，以及如何更改采购订单号。
-ms.openlocfilehash: 99b52928d458e7883919ee46aaafaa7a66278447
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 56f1ba3e7cc328593873aaf06ddfe6dc82fc1a17
+ms.sourcegitcommit: 0ff6edbf52562138a69c6675cb0274ec984986c3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50911682"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "51615371"
 ---
 # <a name="understand-your-bill-or-invoice-for-microsoft-365-for-business"></a>了解你的 Microsoft 365 商业版账单或发票
 
@@ -106,36 +106,24 @@ ms.locfileid: "50911682"
 ::: moniker range="o365-worldwide"
 
 1. 在管理中心中，转到“**计费**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">你的产品</a>”页面。
-
-2. 如果你在“**表格**”视图中，选择“**卡片**”来切换视图。
-
-3. 找到想要更改的订阅。
-
-4. 在“**计费**”中，“**发票**”旁边，选择“**编辑**”。
-
-5. 在“**编辑付款详细信息**”窗格的底部，输入采购订单号，然后选择“**保存**”。
-
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. 在管理中心，转到“**计费**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">订阅</a>”页面。
-
-2. 选择想要更改的订阅。在“**付款方式**”部分中，选择“**更改付款详细信息**”。
-
-3. 在“**更改付款详细信息**”窗格的底部，输入采购订单号，然后选择“**提交**”。
+1. 在管理中心中，转到“**计费**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">你的产品</a>”页面。
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. 在管理中心，转到“**计费**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">订阅</a>”页面。
-
-2. 选择想要更改的订阅。在“**付款方式**”部分中，选择“**更改付款详细信息**”。
-
-3. 在“**更改付款详细信息**”窗格的底部，输入采购订单号，然后选择“**提交**”。
-
+1. 在管理中心中，转到“**计费**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">你的产品</a>”页面。
 ::: moniker-end
+
+1. 在“**产品**”选项卡上，选择要更改的订阅。
+
+1. 在订阅详细信息页面上的订阅 **和付款设置** 部分中，选择编辑 **发票**。 
+
+1. 在"编辑通过语音 **支付的详细信息"** 窗格底部，输入 PO 编号，然后选择"保存 **"。**
 
 ## <a name="related-articles"></a>相关文章
 

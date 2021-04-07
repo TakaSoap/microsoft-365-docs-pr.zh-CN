@@ -24,81 +24,31 @@ search.appverid:
 ms.assetid: e81e09d2-cd52-4212-8550-5405864b6d62
 ROBOTS: NOINDEX
 description: 了解有时必须手动切换计划或致电支持人员的原因。
-ms.openlocfilehash: 0880337e4879c093119b98f4d0108ca65c17e705
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 41cc0511b1c04249a6c359054b2fdc829ca40713
+ms.sourcegitcommit: 0ff6edbf52562138a69c6675cb0274ec984986c3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51164457"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "51615323"
 ---
 # <a name="why-cant-i-switch-microsoft-365-for-business-plans"></a>为什么我无法切换 Microsoft 365 商业版计划？
 
-::: moniker range="o365-worldwide"
 > [!NOTE]
 > 本文适用于旧管理中心。 若要查看有关管理中心 (预览) ，请参阅为什么我[无法升级计划？。](upgrade-to-different-plan.md#why-cant-i-upgrade-plans) 预览版可供所有 Microsoft 365 管理员使用，你可以选择"试用位于主页顶部的预览切换"。 有关详细信息，请参阅[关于新 Microsoft 365 管理中心](../../admin/microsoft-365-admin-center-preview.md)。
-::: moniker-end
 
 如果看不到" **切换计划"** 按钮，则你的计划无法自动切换。 在某些情况下，有可能解决此问题以便使用" **切换计划**"按钮，也可能改为 [手动切换计划](switch-plans-manually.md)。 将鼠标悬停在信息图标上方可以看到一条消息，其中说明了" **切换计划**"按钮不可用的原因。 请根据本文中的信息解决此问题。
-  
-::: moniker range="o365-worldwide"
 
  **需要其他内容？** [购买其他订阅](../try-or-buy-microsoft-365.md)  | [取消订阅](cancel-your-subscription.md)  | [订阅和计费](../index.yml)  | [致电支持人员](../../admin/contact-support-for-business-products.md)
-::: moniker-end
-
-::: moniker range="o365-germany"
-
- **需要其他内容？** [购买其他订阅](../try-or-buy-microsoft-365.md)  | [取消订阅](cancel-your-subscription.md)  | [订阅和计费](../index.yml)  | [致电支持人员](../../admin/contact-support-for-business-products.md)
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
- **需要其他内容？** [购买或试用由世纪通运营的 Office 365 的订阅](../../admin/services-in-china/buy-or-try-subscriptions.md)  | [取消订阅](cancel-your-subscription.md)  | [致电支持人员](../../admin/contact-support-for-business-products.md)
-
-::: moniker-end
 
 ## <a name="why-isnt-the-switch-plans-button-available-for-my-subscription"></a>为什么切换计划按钮不可用于我的订阅？
 
 ### <a name="you-cant-switch-subscriptions-now-because-you-have-more-users-than-licenses"></a>现在无法切换订阅，因为你的用户数多于许可证数。
 
-::: moniker range="o365-worldwide"
-
 若要使用 **"切换计划** "按钮自动切换计划，需要为所有用户分配有效许可证。 如果你分配的许可证多于你已购买的许可证，你将在许可证页面上看到一条警报，指出你<a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank"></a>具有需要解决的许可冲突。 [了解如何解决许可证冲突](../../commerce/licenses/buy-licenses.md)。 解决任何许可冲突后，应看到"切换 **计划"** 按钮。 如果没有，可以 [手动切换计划](switch-plans-manually.md)，或 [致电支持人员](../../admin/contact-support-for-business-products.md)。
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-若要使用 **"切换计划** "按钮自动切换计划，需要为所有用户分配有效许可证。 如果你分配的许可证多于你已购买的许可证，你将在许可证页面上看到一条警报，指出你<a href="https://go.microsoft.com/fwlink/p/?linkid=848038" target="_blank"></a>具有需要解决的许可冲突。 [了解如何解决许可证冲突](../../commerce/licenses/buy-licenses.md)。 解决任何许可冲突后，应看到"切换 **计划"** 按钮。 如果没有，可以 [手动切换计划](switch-plans-manually.md)，或 [致电支持人员](../../admin/contact-support-for-business-products.md)。
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-若要使用 **"切换计划** "按钮自动切换计划，需要为所有用户分配有效许可证。 如果你分配的许可证多于你已购买的许可证，你将在许可证页面上看到一条警报，指出你<a href="https://go.microsoft.com/fwlink/p/?linkid=850625" target="_blank"></a>具有需要解决的许可冲突。 [了解如何解决许可证冲突](../../commerce/licenses/buy-licenses.md)。 解决任何许可冲突后，应看到"切换 **计划"** 按钮。 如果没有，可以 [手动切换计划](switch-plans-manually.md)，或 [致电支持人员](../../admin/contact-support-for-business-products.md)。
-
-::: moniker-end
 
 ### <a name="you-cant-switch-subscriptions-right-now-because-this-subscription-isnt-fully-set-up-or-the-service-isnt-available"></a>当前无法切换订阅，因为此订阅未完全设置或服务不可用。
 
-
-::: moniker range="o365-worldwide"
-
 若要查看是否有设置或服务运行状况问题，请在管理中心转到"服务运行状况"页面，或 <a href="https://go.microsoft.com/fwlink/p/?linkid=842900" target="_blank"></a>选择"**运行状况** 服务 \> **运行状况"。**
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-若要查看是否有设置或服务运行状况问题，请在 Microsoft 365 管理中心中，转到"服务 <a href="https://go.microsoft.com/fwlink/p/?linkid=848042" target="_blank"></a>运行状况"页面，或选择"**运行状况** \> **服务运行状况"。**
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-若要查看是否有设置或服务运行状况问题，请在 Microsoft 365 管理中心中，转到"服务 <a href="https://go.microsoft.com/fwlink/p/?linkid=850629" target="_blank"></a>运行状况"页面，或选择"**运行状况** \> **服务运行状况"。**
-
-::: moniker-end
 
 如果发现服务未完全设置或存在服务运行状况问题，请等待几小时，待服务可用再重试。 如果仍有问题，请致电 [支持人员](../../admin/contact-support-for-business-products.md)。
   

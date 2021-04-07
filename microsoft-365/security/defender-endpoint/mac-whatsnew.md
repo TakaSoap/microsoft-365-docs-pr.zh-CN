@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 16d78cf014e775ecb98a59d90b5734836eb3cbf2
-ms.sourcegitcommit: 7b8104015a76e02bc215e1cf08069979c70650ae
+ms.openlocfilehash: 5cd1f64d006b5462634dd47df9083e1a89db0e8c
+ms.sourcegitcommit: 0ff6edbf52562138a69c6675cb0274ec984986c3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51476621"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "51615204"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-for-mac"></a>适用于 Mac 的 Microsoft Defender 终结点的新增功能
 
@@ -38,8 +38,10 @@ ms.locfileid: "51476621"
 > [!IMPORTANT]
 > 在 macOS 11 (Sur) 上，Microsoft Defender for Endpoint 需要额外的配置文件。 如果你是从 macOS 早期版本升级的现有客户，请确保部署此页中列出的其他 [配置文件](mac-sysext-policies.md)。
 
-> [!IMPORTANT]
-> 对 MacOS 10.13 (High Sierra) 已于 2021 年 2 月 15 日停止提供支持。
+## <a name="1012569-20121022125690"></a>101.25.69 (20.121022.12569.0) 
+
+- Microsoft Defender for Endpoint for Mac 现已在预览版中提供给美国政府客户。 有关详细信息，请参阅 [Microsoft Defender for Endpoint for US Government customers](gov.md)。
+- 性能改进 (XCode 模拟器应用用于修复错误) &的情况
 
 ## <a name="1012364-20121021123640"></a>101.23.64 (20.121021.12364.0) 
 

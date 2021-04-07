@@ -19,12 +19,12 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 ms.technology: mdo
-ms.openlocfilehash: 0baefab441b17aa4a9527536cead181bae8f8948
-ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
+ms.openlocfilehash: 4ce52c40e622f55b0fd231ec634c4897fea1d6f5
+ms.sourcegitcommit: 0ff6edbf52562138a69c6675cb0274ec984986c3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "51599991"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "51615491"
 ---
 # <a name="policies-for-allowing-guest-access-and-b2b-external-user-access"></a>允许来宾访问和 B2B 外部用户访问的策略
 
@@ -82,10 +82,12 @@ Microsoft Teams 定义以下用户：
 
 ## <a name="next-step"></a>后续步骤
 
-![步骤 4：Microsoft 365 云应用策略](../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-4.png)
+![步骤 4：Microsoft 365 云应用和 Microsoft Cloud App Security 的策略](../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-4.png)
 
 为：配置条件访问策略：
 
 - [Microsoft Teams](teams-access-policies.md)
 - [Exchange Online](secure-email-recommended-policies.md)
 - [SharePoint](sharepoint-file-access-policies.md)
+- [Microsoft Cloud App Security](mcas-saas-access-policies.md)
+ 

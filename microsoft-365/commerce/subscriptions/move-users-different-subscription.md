@@ -20,33 +20,40 @@ search.appverid:
 - MET150
 description: 了解如何在订阅之间移动用户。
 ms.date: 07/01/2020
-ms.openlocfilehash: 31deb1b81e1f9605210b50036441f98dc3b6a811
-ms.sourcegitcommit: c75aac39ee8d93218a79585113ef6b36f47c9ddf
+ms.openlocfilehash: e0c6aabbdfd50fa66d846c76d317d940dc0cd819
+ms.sourcegitcommit: 0ff6edbf52562138a69c6675cb0274ec984986c3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2021
-ms.locfileid: "51408299"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "51615107"
 ---
 # <a name="move-users-to-a-different-subscription"></a>将用户移动到其他订阅
-
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> 管理中心正在发生改变。 如果你的体验与此处显示的详细信息不匹配，请参阅 [Microsoft 365 管理中心概述](../../business-video/admin-center-overview.md)。
-
-::: moniker-end
 
 如果你有多个订阅，请让用户拥有一个订阅的许可证，但希望将其移动到另一个订阅，可以将他们的现有许可证替换为其他许可证。
 
 ## <a name="before-you-begin"></a>准备工作
 
-你必须是全局、许可证或用户管理员才能分配许可证。 有关详细信息，请参阅[关于 Microsoft 365 管理员角色](../../admin/add-users/about-admin-roles.md?view=o365-worldwide)。
+你必须是全局、许可证或用户管理员才能分配许可证。 有关详细信息，请参阅[关于 Microsoft 365 管理员角色](../../admin/add-users/about-admin-roles.md)。
 
 ## <a name="move-users-to-a-different-subscription"></a>将用户移动到其他订阅
 
 ::: moniker range="o365-worldwide"
 
 1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。
+
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+ 1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">活动用户</a>”页面。
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+ 1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">活动用户</a>”页面。
+
+::: moniker-end
 
 2. 选择要替换其现有许可证的用户姓名旁边的圆圈。
 
@@ -55,44 +62,6 @@ ms.locfileid: "51408299"
 4. 在 **"管理产品许可证"** 窗格中，选择"替换"，然后选择要分配给用户的许可证。
 
 5. 在底部，选择"保存 **更改** \> **""关闭"。**
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">活动用户</a>”页面。
-
-2. 选中要为其替换现有许可证的用户的姓名旁边的框。
-
-3. 在“**批量操作**”窗格中，选择“**编辑产品许可证**”。
-
-4. 在“**分配产品**”窗格中，选择“**替换现有产品许可证分配**”\>“**下一步**”。
-
-5. 将想要分配给这些用户的许可证的开关切换到“**开**”位置。
-
-    可限制能提供给用户的具体服务。 将不希望所选用户具备的服务的开关切换到“**关**”。 这将删除所选用户之前的所有许可证分配。
-
-6. 在“**替换现有产品**”窗格底部，选择“**替换**”\>“**关闭**”\>“**关闭**”。
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">活动用户</a>”页面。
-
-2. 选中要为其替换现有许可证的用户的姓名旁边的框。
-
-3. 在“**批量操作**”窗格中，选择“**编辑产品许可证**”。
-
-4. 在“**分配产品**”窗格中，选择“**替换现有产品许可证分配**”\>“**下一步**”。
-
-5. 将想要分配给这些用户的许可证的开关切换到“**开**”位置。
-
-    可限制能提供给用户的具体服务。 将不希望所选用户具备的服务的开关切换到“**关**”。 这将删除所选用户之前的所有许可证分配。
-
-6. 在“**替换现有产品**”窗格底部，选择“**替换**”\>“**关闭**”\>“**关闭**”。
-
-::: moniker-end
 
 ## <a name="next-steps"></a>后续步骤
 

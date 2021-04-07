@@ -19,12 +19,12 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-overview
 ms.technology: mdo
-ms.openlocfilehash: 9d7170ff261a53ba5755134973a912221363b3c8
-ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
+ms.openlocfilehash: 104ef919d356642985e7b34d16650c27a8141e86
+ms.sourcegitcommit: 0ff6edbf52562138a69c6675cb0274ec984986c3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "51599803"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "51615095"
 ---
 # <a name="identity-and-device-access-configurations"></a>标识和设备访问配置
 
@@ -201,7 +201,7 @@ Microsoft 建议不要创建适用于所有应用的策略集，因为这可能�
 1. 配置先决条件标识功能及其设置。
 2. 配置通用标识和访问条件访问策略。
 3. 为来宾用户和外部用户配置条件访问策略。
-4. 为 Microsoft 365 云应用（如 Microsoft Teams、Exchange Online 和 SharePoint）配置条件访问策略。
+4. 为 Microsoft 365 云应用（如 Microsoft Teams、Exchange Online 和 SharePoint）和 Microsoft Cloud App Security 策略配置条件访问策略。
 
 配置标识和设备访问后，请参阅[Azure AD](/azure/active-directory/fundamentals/active-directory-deployment-checklist-p2)功能部署指南，了解要考虑的其他功能的分阶段清单，以及用于保护、监视和审核访问的[Azure AD Identity Governance。](/azure/active-directory/governance/)
 

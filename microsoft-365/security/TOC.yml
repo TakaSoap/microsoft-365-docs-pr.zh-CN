@@ -332,6 +332,8 @@
                           href: defender/api-update-incidents.md
     - name: Office 365 安全中心
       href: ./office-365-security/overview.md
+    - name: Microsoft Defender for Office 365 中的威胁防护步骤
+      href: ./office-365-security/protection-stack-microsoft-defender-for-office365.md
       items:
         - name: 概述
           items:

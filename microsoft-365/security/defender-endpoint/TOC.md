@@ -115,6 +115,8 @@
 ##### [启用受控文件夹访问](enable-controlled-folders.md)
 ##### [自定义受控文件夹访问](customize-controlled-folders.md)
 
+### [网络设备](network-devices.md)
+
 ### [适用于 Mac 的终结点的 Microsoft Defender]()
 #### [Mac 版 Microsoft Defender for Endpoint 概述](microsoft-defender-endpoint-mac.md)
 #### [新增功能](mac-whatsnew.md)

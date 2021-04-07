@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 4883a4f04f06774d02aa0d942edc841867eb36b6
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: 9e5f29874ae42f2b82906a5ac0d2e615009d499f
+ms.sourcegitcommit: 0ff6edbf52562138a69c6675cb0274ec984986c3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51499524"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "51615479"
 ---
 # <a name="proactively-hunt-for-threats-with-advanced-hunting"></a>使用高级搜寻主动搜寻威胁
 
@@ -43,7 +43,8 @@ ms.locfileid: "51499524"
 你可以使用相同的威胁搜寻查询来构建自定义检测规则。 这些规则将自动运行，以检查并响应可疑的泄露活动、错误配置的计算机和其他发现。
 
 >[!TIP]
->使用 [Microsoft 威胁防护](https://docs.microsoft.com/microsoft-365/security/defender/advanced-hunting-overview) 中的高级搜寻，使用来自 Defender for Endpoint、Microsoft Defender for Office 365、Microsoft Cloud App Security 和 Microsoft Defender for Identity 的数据搜寻威胁。 [打开 Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/defender/mtp-enable)
+>使用 [Microsoft 365 Defender](/microsoft-365/security/defender/advanced-hunting-overview) 中的高级搜寻，使用来自 Defender for Endpoint、Microsoft Defender for Office 365、Microsoft Cloud App Security 和 Microsoft Defender for Identity 的数据搜寻威胁。 [打开 Microsoft 365 Defender](/microsoft-365/security/defender/m365d-enable)。<br><br>
+在从 Microsoft Defender for Endpoint 迁移高级搜寻查询中，详细了解如何将高级搜寻工作流从 Microsoft Defender for Endpoint 移动到 Microsoft 365 [Defender。](/microsoft-365/security/defender/advanced-hunting-migrate-from-mde)
 
 ## <a name="get-started-with-advanced-hunting"></a>高级搜寻入门
 
