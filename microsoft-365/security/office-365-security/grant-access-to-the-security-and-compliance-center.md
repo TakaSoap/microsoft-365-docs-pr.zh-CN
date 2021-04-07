@@ -20,12 +20,12 @@ description: 用户需要在 Microsoft 365 安全与合规中心&权限，然后
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 16dbbe81d1131821dfdbf75caff5b5121f8cc45b
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 7cd36ac0dec20851a423acd58e5ad7d38cb65d93
+ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51203791"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51599919"
 ---
 # <a name="give-users-access-to-the-security--compliance-center"></a>向用户授予对安全与合规中心的访问权限
 
@@ -60,7 +60,7 @@ ms.locfileid: "51203791"
 
 4. 选择要添加到角色组的所有用户后，单击"**\> 添加**"，然后单击"确定 **"。**
 
-5. 完成后，单击“保存”。
+5. 完成后，单击“**保存**”。
 
 ## <a name="use-security--compliance-center-powershell-to-give-another-user-access-to-the-security--compliance-center"></a>使用安全&合规中心 PowerShell 向其他用户授予对安全与合规&的访问权限
 
@@ -80,9 +80,9 @@ ms.locfileid: "51203791"
    Add-RoleGroupMember -Identity "Organization Management" -Member MatildaS
    ```
 
-有关语法和参数的详细信息，请参阅 [Add-RoleGroupMember](https://docs.microsoft.com/powershell/module/exchange/add-rolegroupmember)
+有关语法和参数的详细信息，请参阅 [Add-RoleGroupMember](/powershell/module/exchange/add-rolegroupmember)
 
-### <a name="how-do-you-know-this-worked"></a>如何知道操作成功？
+### <a name="how-do-you-know-this-worked"></a>如何判断是否生效？
 
 若要验证是否成功授予了对安全与合规&访问权，请执行以下步骤之一：
 

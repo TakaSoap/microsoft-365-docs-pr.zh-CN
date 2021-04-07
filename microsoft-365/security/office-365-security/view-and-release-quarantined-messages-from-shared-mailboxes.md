@@ -17,12 +17,12 @@ ROBOTS: NOINDEX
 description: 用户可以了解如何查看和操作发送到他们有权访问的共享邮箱的隔离邮件。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 6e3bf4c84e7a762f7f54f42ff61f0fbdb9dc1edd
-ms.sourcegitcommit: 3d2261af22bebbbf7efa8a0d3135225a15bd6ba8
+ms.openlocfilehash: cb915ad6ad6e6130d8704339559f4c370cef3a20
+ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51215500"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51599507"
 ---
 # <a name="view-and-release-quarantined-messages-from-shared-mailboxes"></a>查看并释放共享邮箱中的隔离邮件
 
@@ -35,7 +35,7 @@ ms.locfileid: "51215500"
 
 现在，用户不再需要自动映射来管理发送到共享邮箱的隔离邮件。 它只起作用。 有两种不同的方法来访问发送到共享邮箱的隔离邮件：
 
-- 如果管理员已启用反[](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-your-spam-filter-policies)垃圾邮件策略中的最终用户垃圾邮件通知，则有权访问共享邮箱中的最终用户垃圾邮件通知的任何用户都可以单击通知中的"审阅"按钮，转到安全 &合规中心隔离。 请注意，此方法仅允许用户管理发送到共享邮箱的隔离邮件。 用户无法在此上下文中管理自己的隔离邮件。
+- 如果管理员已启用反[](configure-your-spam-filter-policies.md#configure-end-user-spam-notifications)垃圾邮件策略中的最终用户垃圾邮件通知，则有权访问共享邮箱中的最终用户垃圾邮件通知的任何用户都可以单击通知中的"审阅"按钮，以转到安全 &合规中心隔离。 请注意，此方法仅允许用户管理发送到共享邮箱的隔离邮件。 用户无法在此上下文中管理自己的隔离邮件。
 
 - 用户可以转到[安全与合规中心中的&隔离。](find-and-release-quarantined-messages-as-a-user.md) 默认情况下，只显示发送给用户的邮件。 但是，用户可以将"排序结果" ("邮件 **ID"** 按钮（默认为) ）更改为"收件人电子邮件地址"，输入共享邮箱电子邮件地址，然后单击"刷新"查看发送到共享邮箱的隔离邮件。
 

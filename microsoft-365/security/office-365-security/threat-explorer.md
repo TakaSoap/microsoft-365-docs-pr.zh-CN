@@ -19,12 +19,12 @@ description: 使用安全与合规中心中的资源管理器和实时检测有�
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1c5935115d7496aca22c3941f34983cddebe7b46
-ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
+ms.openlocfilehash: 7c601169d76fe92ac3038ccb25c5c50aa390f714
+ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51570980"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51599883"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>威胁资源管理器和实时检测
 
@@ -113,7 +113,7 @@ URL 单击飞出也显示标记信息。 若要查看它，请转到网络钓鱼
 > [!div class="mx-imgBorder"]
 > ![URL 标记](../../media/tags-urls.png)
 > 
-通过观看此视频 [了解更多信息](https://www.youtube.com/watch?v=UoVzN0lYbfY&list=PL3ZTgFEc7LystRja2GnDeUFqk44k7-KXf&index=4)。 
+观看[此视频](https://www.youtube.com/watch?v=UoVzN0lYbfY&list=PL3ZTgFEc7LystRja2GnDeUFqk44k7-KXf&index=4)了解更多信息。 
 
 ## <a name="improvements-to-the-threat-hunting-experience-upcoming"></a>威胁搜寻体验的改进 (即将推出的) 
 
@@ -520,7 +520,7 @@ ZAP URL 信号通常用于 ZAP 网络钓鱼警报方案，其中电子邮件被�
 - [查看在 SharePoint Online、OneDrive 和 Microsoft Teams 中检测到的恶意文件](./mdo-for-spo-odb-and-teams.md)
 - [大致了解威胁资源管理器中的 (和实时检测) ](threat-explorer-views.md)
 - [威胁防护状态报告](view-email-security-reports.md#threat-protection-status-report)
-- [Microsoft 威胁防护中的自动调查和响应](https://docs.microsoft.com/microsoft-365/security/defender/mtp-autoir)
+- [Microsoft 威胁防护中的自动调查和响应](../defender/m365d-autoir.md)
 
 ## <a name="required-licenses-and-permissions"></a>所需的许可证和权限
 

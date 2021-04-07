@@ -17,12 +17,12 @@ f1.keywords:
 - NOCSH
 description: 了解如何在本地配置Exchange Server使用混合新式验证 (HMA) ，以为您提供更安全的用户身份验证和授权。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 9393b457c219fb03ae2e8a35c3f795c324919f27
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: e0a0e521f4ac81a8aa113b2e945045d31f2c1952
+ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51579718"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51599495"
 ---
 # <a name="how-to-configure-exchange-server-on-premises-to-use-hybrid-modern-authentication"></a>如何配置本地 Exchange Server 以使用混合新式验证
 
@@ -65,6 +65,9 @@ ms.locfileid: "51579718"
 ## <a name="make-sure-you-meet-all-the-prerequisites"></a>确保满足所有先决条件
 
 由于 Skype for Business 和 Exchange 有许多共同的先决条件，请查看混合新式验证概述和用于本地 [Skype for Business](hybrid-modern-auth-overview.md)和 Exchange 服务器的先决条件。 在开始  *执行本文*  中的任一步骤之前，先执行这些步骤。
+
+> [!NOTE]
+> Outlook Web App和 Exchange 控制面板不能用于混合新式验证。
 
 ## <a name="add-on-premises-web-service-urls-as-spns-in-azure-ad"></a>将本地 Web 服务 URL 添加为 Azure AD 中的 SNS
 
@@ -185,6 +188,8 @@ Set-OrganizationConfig -OAuth2ClientProfileEnabled $true
 52.125.128.0/20
 52.127.96.0/23
 ```
+
+适用于 iOS 和 Android 的 Outlook 应用是作为在移动设备上体验 Microsoft 365 或 Office 365 的最佳方法，通过使用 Microsoft 服务来帮助查找、计划和确定日常工作和工作的优先级。 有关详细信息，请参阅在 Outlook [for iOS](https://docs.microsoft.com/exchange/clients/outlook-for-ios-and-android/use-hybrid-modern-auth?view=exchserver-2019)和 Outlook for Android 中使用混合新式验证。
 
 ## <a name="related-topics"></a>相关主题
 

@@ -22,12 +22,12 @@ ms.custom:
 - seo-marvel-mar2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1460deef11a87044530c54c8b10637284829a0cd
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 6dfa22b2afb33c318eae8937888b5b75a1742938
+ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51203866"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51599459"
 ---
 # <a name="automated-investigation-and-response-air-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 (AIR) 自动调查和响应
 
@@ -81,11 +81,9 @@ AIR 功能包含在适用于 [Office 365](defender-for-office-365.md#microsoft-d
 - [反恶意软件策略](protect-against-threats.md#part-1---anti-malware-protection)
 - [反病毒保护](protect-against-threats.md#part-2---anti-phishing-protection)
 - [反垃圾邮件保护](protect-against-threats.md#part-3---anti-spam-protection)
-- [反病毒保护](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats#part-2---anti-phishing-protection)
-- [反垃圾邮件保护](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats#part-3---anti-spam-protection)
-- [安全链接和安全附件](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats#part-4---protection-from-malicious-urls-and-files-safe-links-and-safe-attachments-in-defender-for-office-365)
-- [用于 SharePoint、OneDrive 和 Microsoft Teams 的安全附件](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats#part-5---verify-atp-for-sharepoint-onedrive-and-microsoft-teams-is-turned-on)
-- [零时差自动清除电子邮件](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats#zero-hour-auto-purge-for-email-in-eop)
+- [安全链接和安全附件](protect-against-threats.md#part-4---protection-from-malicious-urls-and-files-safe-links-and-safe-attachments-in-defender-for-office-365)
+- [用于 SharePoint、OneDrive 和 Microsoft Teams 的安全附件](protect-against-threats.md#part-5---verify-safe-attachments-for-sharepoint-onedrive-and-microsoft-teams-is-turned-on)
+- [零时差自动清除电子邮件](protect-against-threats.md#zero-hour-auto-purge-for-email-in-eop)
 
 此外，请确保 [查看组织的警报](../../compliance/alert-policies.md)策略，尤其是威胁管理 [类别中的默认策略](../../compliance/alert-policies.md#default-alert-policies)。
 
@@ -93,8 +91,8 @@ AIR 功能包含在适用于 [Office 365](defender-for-office-365.md#microsoft-d
 
 Microsoft 365 提供了许多内置警报策略，可帮助识别 Exchange 管理员权限滥用、恶意软件活动、潜在的外部和内部威胁以及信息治理风险。 一些 [默认警报策略](../../compliance/alert-policies.md#default-alert-policies) 可以触发自动调查。 下表介绍了触发自动调查的警报、Microsoft 365 安全中心中警报的严重性及其生成方式：
 
-|警报|Severity|警报的生成方式|
-|:---|:---|:---|
+|提醒|Severity|警报的生成方式|
+|---|---|---|
 |检测到潜在恶意 URL 单击|**High**|发生以下任一情况时，将生成此警报： <ul><li>组织中受安全 [链接保护](safe-links.md) 的用户单击恶意链接</li><li>URL 裁定更改由 Microsoft Defender for Office 365 识别</li><li>根据组织的安全链接策略 (，用户会覆盖安全链接[警告) 。](set-up-safe-links-policies.md)</li></ul> <p> 有关触发此警报的事件详细信息，请参阅设置 [安全链接策略](set-up-safe-links-policies.md)。|
 |电子邮件被用户报告为恶意软件或钓鱼邮件|**信息性**|当贵组织的用户使用报告邮件外接程序或报告网络钓鱼外接程序将邮件报告为网络钓鱼电子邮件[时，](enable-the-report-message-add-in.md)[将生成此警报](enable-the-report-phish-add-in.md)。|
 |包含恶意软件的电子邮件在传递后被删除|**信息性**|当包含恶意软件的任何电子邮件传递到您组织的邮箱时，将生成此警报。 如果发生此事件，Microsoft 会使用零时差自动清除从 Exchange Online 邮箱中删除 [受感染的邮件](zero-hour-auto-purge.md)。|
@@ -123,7 +121,6 @@ Microsoft 365 提供了许多内置警报策略，可帮助识别 Exchange 管�
 - 组织的安全运营团队 (包括安全读者以及具有"搜索和清除"角色) 
 - 最终用户
 
-
 ## <a name="changes-are-coming-soon-in-your-security-center"></a>即将在安全中心内进行更改
 
 如果你已在 Microsoft Defender for Office 365 中使用 AIR 功能，你将在改进的 [Microsoft 365](../defender/overview-security-center.md)安全中心看到一些更改。 
@@ -144,7 +141,7 @@ Microsoft 365 提供了许多内置警报策略，可帮助识别 Exchange 管�
 
 下表列出了 Microsoft Defender for Office 365 中 AIR 的更改和改进。
 
-|Item|更改了哪些方面？|
+|项目|更改了哪些方面？|
 |---|---|
 |**"调查"** 页|更新 **后的调查页面** 更符合你在 [Microsoft Defender for Endpoint 中所看到的内容](/windows/security/threat-protection/microsoft-defender-atp/automated-investigations)。 你将看到一些与新的统一调查视图一致的常规格式和 **样式** 设置更改。 例如，调查图具有更统一的格式。|
 |**"用户"** 选项卡|" **用户"** 选项卡现在是" **邮箱"** 选项卡。有关用户的详细信息列在"邮箱" **选项卡** 上。|
@@ -152,9 +149,9 @@ Microsoft 365 提供了许多内置警报策略，可帮助识别 Exchange 管�
 |**"实体"** 选项卡|" **实体"** 选项卡具有选项卡式样式，其中包含全部摘要视图，并且能够按实体类型进行筛选。 除了 **"在** 资源管理器中打开" **选项之外** ，"实体"选项卡现在还包括"转到 **"** 搜寻选项。 你现在可以使用[威胁资源管理器或](threat-explorer.md)[高级](../defender-endpoint/advanced-hunting-overview.md)搜寻来查找实体和威胁，并筛选结果。|
 |**"操作"** 选项卡|更新后的 **"操作** "选项卡现在包括" **挂起的操作** "选项卡和" **操作历史记录"** 选项卡。可以在选择挂起 (时) 侧窗格中批准或拒绝操作。|
 |**"证据"** 选项卡|新的" **证据** "选项卡显示与操作相关的主要实体发现。 与每条证据相关的操作可以在选择 (操作时) 侧窗格中批准或拒绝。|
-|**操作中心**|更新的操作 **中心** () 跨电子邮件、设备和标识将挂起和已完成的操作 [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) 汇集在一起。 若要了解更多信息，请参阅操作中心。  (有关详细信息， [请参阅操作中心](https://docs.microsoft.com/microsoft-365/security/defender/mtp-action-center).) 
-|**"事件"** 页|现在 **，"** 事件"页面将多个调查关联在一起，以提供更好的综合调查视图。  ([了解有关事件 .) ](https://docs.microsoft.com/microsoft-365/security/defender/incidents-overview)
-
+|**操作中心**|更新的操作 **中心** () 跨电子邮件、设备和标识将挂起和已完成的操作 [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) 汇集在一起。 若要了解更多信息，请参阅操作中心。  (有关详细信息， [请参阅操作中心](../defender/m365d-action-center.md).) |
+|**"事件"** 页|现在 **，"** 事件"页面将多个调查关联在一起，以提供更好的综合调查视图。  ([了解有关事件 .) ](../defender/incidents-overview.md)|
+|
 
 ## <a name="next-steps"></a>后续步骤
 

@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: caf7a1bacfd726c560356d542bec3cf56c6b39d4
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 40487143ff18cedb76c9f3f33c52cab24687c282
+ms.sourcegitcommit: dc1ac43a57fac6f57438859dd668f927d94fdf34
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51200193"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "51604365"
 ---
 # <a name="advanced-hunting-api"></a>高级搜寻 API
 
@@ -37,15 +37,21 @@ ms.locfileid: "51200193"
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
 ## <a name="limitations"></a>限制
+
 1. 只能对过去 30 天的数据运行查询。
+
 2. 结果最多包含 100，000 行。
+
 3. 每个租户的执行次数受到限制：
-   - API 调用：每分钟最多 45 次调用。
+   - API 调用：每分钟最多 45 个调用，每小时最多 1500 个调用。
    - 执行时间：每小时运行 10 分钟，一天运行 3 小时。
+
 4. 单个请求的最大执行时间为 10 分钟。
+
 5. 429 响应表示达到请求数或 CPU 的配额限制。 读取响应正文，了解已达到的限制。 
 
 ## <a name="permissions"></a>权限
+
 若要调用此 API，需要以下权限之一。 若要了解更多信息（包括如何选择权限），请参阅使用 [Microsoft Defender for Endpoint API](apis-intro.md)
 
 权限类型 |   权限  |   权限显示名称
@@ -59,7 +65,8 @@ ms.locfileid: "51200193"
 >- 用户需要具有对设备的访问权限，根据设备组设置 (请参阅创建和管理 [设备](machine-groups.md) 组，了解) 
 
 ## <a name="http-request"></a>HTTP 请求
-```
+
+```http
 POST https://api.securitycenter.microsoft.com/api/advancedqueries/run
 ```
 
@@ -71,19 +78,21 @@ Authorization | Bearer {token}。 **必需**。
 Content-Type    | application/json
 
 ## <a name="request-body"></a>请求正文
+
 在请求正文中，提供具有以下参数的 JSON 对象：
 
-参数 | 类型    | 说明
+参数 | 类型    | Description
 :---|:---|:---
 查询 | 文本 |  要运行的查询。 **必需**。
 
 ## <a name="response"></a>响应
+
 如果成功，此方法在响应正文中返回 200 OK 和 _QueryResponse_ 对象。
 
 
 ## <a name="example"></a>示例
 
-请求
+##### <a name="request"></a>请求
 
 下面是一个请求示例。
 
@@ -101,7 +110,7 @@ POST https://api.securitycenter.microsoft.com/api/advancedqueries/run
 }
 ```
 
-响应
+##### <a name="response"></a>响应
 
 下面是一个响应示例。
 
@@ -145,7 +154,8 @@ POST https://api.securitycenter.microsoft.com/api/advancedqueries/run
 }
 ```
 
-## <a name="related-topic"></a>相关主题
+## <a name="related-topics"></a>相关主题
+
 - [Microsoft Defender for Endpoint API 简介](apis-intro.md)
 - [门户中的高级搜寻](advanced-hunting-query-language.md)
-- [使用 PowerShell 的高级搜寻](run-advanced-query-sample-powershell.md)
+- [通过 PowerShell 高级搜寻](run-advanced-query-sample-powershell.md)

@@ -15,12 +15,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 description: Microsoft Defender for Office 365 E5、ATP P1 和 ATP P2 客户现在可以通过电子邮件实体页面获得每个电子邮件的 360 度视图。
-ms.openlocfilehash: 0fbf3843aa6e6cef1e748d3b71a68a42efd6fc24
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 6d2777113e7e9f9ce760dab3b83252eceab520ff
+ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51203234"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51599483"
 ---
 # <a name="the-email-entity-page"></a>"电子邮件实体"页面
 
@@ -30,16 +30,16 @@ ms.locfileid: "51203234"
 - [使用电子邮件实体页面选项卡](#use-email-entity-page-tabs)
 - [电子邮件实体页面的新增内容](#new-to-the-email-entity-page)
 
-Microsoft Defender for Office 365 (或 MDO) E5 以及 MDO P1 和 P2 的管理员使用"电子邮件"实体页面 360 度查看 **电子邮件**。 创建此转到电子邮件页面是增强威胁资源管理器"电子邮件详细信息"飞[出上的信息。](https://docs.microsoft.com/microsoft-365/security/office-365-security/threat-explorer-views)
+Microsoft Defender for Office 365 (或 MDO) E5 以及 MDO P1 和 P2 的管理员使用"电子邮件"实体页面 360 度查看 **电子邮件**。 创建此转到电子邮件页面是增强威胁资源管理器"电子邮件详细信息"飞[出上的信息。](threat-explorer-views.md)
 
 ## <a name="reach-the-email-entity-page"></a>访问电子邮件实体页面
 
 现有的 Office 安全与合规中心 (protection.office.com) Microsoft 365 安全中心 (security.microsoft.com) ，你可以查看和使用电子邮件实体页面。
 
-|居中  |URL  |导航  |
-|---------|---------|---------|
-|安全与合规 |protection.office.com | 威胁管理>资源管理器   |
-|Microsoft 365 安全中心 |security.microsoft.com | 电子邮件&协作>资源管理器 |
+|居中|URL|导航|
+|---|---|---|
+|安全与合规 |protection.office.com|威胁管理 \> 资源管理器|
+|Microsoft 365 安全中心 |security.microsoft.com|电子邮件&协作 \> 资源管理器|
 
 在威胁资源管理器中，选择要调查的电子邮件的主题。 该邮件的电子邮件飞出顶部将显示一个金色条。 此新页面邀请显示"尝试使用包含丰富数据的新电子邮件实体页面..."。 选择以查看新页面。
 
@@ -81,22 +81,23 @@ Microsoft Defender for Office 365 (或 MDO) E5 以及 MDO P1 和 P2 的管理员
 此电子邮件实体页面提供了一些新功能。 以下是列表。
 
 ### <a name="email-preview-for-cloud-mailboxes"></a>云邮箱的电子邮件预览
+
 如果邮件仍存在于云中，管理员可以预览云邮箱中的电子邮件。 如果管理员、 (或用户) 或 ZAP (对) 执行软删除操作，电子邮件将不再存在于云位置。 在这种情况下，管理员将无法预览这些特定邮件。 已丢弃或传递失败的电子邮件从未实际进入邮箱。 因此，管理员也将无法预览这些电子邮件。
 
 > [!WARNING]
->预览电子邮件需要一个称为 ***Preview** _ 的特殊角色，才能分配给管理员。 可以通过访问 _ *Permissions & roles** > Email & **collaboration roles** in security.microsoft.com 或 **permissions** in *protection.office.com* 添加 *此角色*。 将 ***Preview*** 角色添加到任何角色组，或添加允许组织中管理员在威胁资源管理器中工作的角色组的副本。
+> 预览电子邮件需要一个称为 ***Preview** _ 的特殊角色，才能分配给管理员。 可以通过访问 _ *Permissions & roles** > Email & **collaboration roles** in security.microsoft.com 或 **permissions** in *protection.office.com* 添加 *此角色*。 将 ***Preview*** 角色添加到任何角色组，或添加允许组织中管理员在威胁资源管理器中工作的角色组的副本。
 
 ### <a name="detonation-details"></a>触发详细信息
 
 这些详细信息特定于电子邮件附件和 URL。
 
 用户可以看到其邮箱中发现的已知恶意附件或超链接的丰富触发详细信息，包括触发链、触发摘要、屏幕截图和观察行为详细信息，帮助客户了解附件或 URL 为何被视为恶意并触发。
- 
+
 - *触发链*：单个文件或 URL 触发可以触发多个爆炸。 爆炸链跟踪触发路径，包括导致裁定的原始恶意文件或 URL，以及受爆炸影响的其他所有文件或 URL。 这些 URL 或附加的文件可能不会直接存在于电子邮件中，但包含该分析对于确定发现文件或 URL 是恶意文件的原因非常重要。
 - *触发摘要*：这提供有关以下信息：
-    - 触发时间范围。
-    - 附加的文件或 URL 裁定。
-    - 与文件 (、URL、IP 或域) 相关信息，这些实体是触发期间检查的其他实体。
+  - 触发时间范围。
+  - 附加的文件或 URL 裁定。
+  - 与文件 (、URL、IP 或域) 相关信息，这些实体是触发期间检查的其他实体。
 - *触发屏幕截图*：这显示 () 期间拍摄屏幕截图。
 - *触发详细信息*：这些是触发期间发生的每个过程的确切行为详细信息。
 
@@ -111,45 +112,45 @@ Microsoft Defender for Office 365 (或 MDO) E5 以及 MDO P1 和 P2 的管理员
 *电子邮件详细信息*：深入了解"分析"选项卡中提供的电子邮件 *所需的* 详细信息。
 
 - *Exchange 传输规则 (ETR* 或邮件流规则) ：这些规则适用于传输层的邮件，优先于网络钓鱼和垃圾邮件裁定。 只能在 Exchange 管理中心创建和修改这些名称，但如果任何 ETR 适用于邮件，则此处将显示 ETR 名称和 GUID。 用于跟踪的有用信息。
-    
+
 - 系统 *覆盖：这是* 根据威胁和检测技术要求覆盖系统 (给定的传递位置来对邮件的传递位置进行) 。
-    
+
 - *垃圾邮件规则*："垃圾邮件"是隐藏的收件箱规则，默认在邮箱中启用。
-    - 在邮箱上启用垃圾邮件规则后，Exchange Online Protection (EOP) 可根据某些条件将邮件移动到垃圾邮件。 移动可以基于垃圾邮件筛选裁定操作 将 *邮件移动到垃圾邮件文件夹*，或邮箱上的阻止发件人列表。 禁用垃圾邮件规则可阻止根据邮箱上的"安全发件人"列表将邮件发送到"垃圾邮件"文件夹。
-    - 在邮箱上禁用垃圾邮件规则后，EOP 无法根据垃圾邮件筛选裁定操作"将邮件移动到垃圾邮件文件夹"或邮箱的安全列表集合，将邮件移动到"垃圾邮件"文件夹。
-    
+  - 在邮箱上启用垃圾邮件规则后，Exchange Online Protection (EOP) 可根据某些条件将邮件移动到垃圾邮件。 移动可以基于垃圾邮件筛选裁定操作 将 *邮件移动到垃圾邮件文件夹*，或邮箱上的阻止发件人列表。 禁用垃圾邮件规则可阻止根据邮箱上的"安全发件人"列表将邮件发送到"垃圾邮件"文件夹。
+  - 在邮箱上禁用垃圾邮件规则后，EOP 无法根据垃圾邮件筛选裁定操作"将邮件移动到垃圾邮件文件夹"或邮箱的安全列表集合，将邮件移动到"垃圾邮件"文件夹。
+
 - *批量合规级别 (BCL) ：* 邮件的批量投诉 () BCL 级别。 BCL 越高，如果电子邮件可能是垃圾邮件，则 () 产生投诉的可能性更大。
-    
+
 - *垃圾邮件可信度 (SCL) ：* 邮件的 (SCL) 级别。 值越高，邮件是垃圾邮件的可能性就越大。
 
 - *域名*：是发件人域名。
-    
+
 - *域所有者*：指定发送域的所有者。
-    
+
 - *域* 位置：指定发送域的位置。
-    
+
 - *域创建日期*：指定发送域的创建日期。 如果其他信号指示某些可疑行为，则新创建的域是你可以小心的。
 
 *电子邮件身份验证*：Microsoft 365 使用的电子邮件身份验证方法包括 SPF、DKIM 和 DMARC。
 
 - 发件人策略框架 (**SPF**) ：描述邮件的 SPF 检查结果。 可能的值可以是：
-    - Pass (IP address) ： The SPF check for the message passed and includes the sender's IP address. 已授权客户端代表发件人的域发送或中继电子邮件。
-    - 无法 (IP 地址) ：邮件的 SPF 检查失败，包括发件人的 IP 地址。 有时也称其为硬失败。
-    - 软 (原因) ：SPF 记录将主机指定为不允许发送但正在转换。
-    - 中性：SPF 记录明确声明它不会断言 IP 地址是否有权发送。
-    - 无：域没有 SPF 记录，或者 SPF 记录未计算结果。
-    - 恢复器：已发生临时错误。 例如，DNS 错误。 相同的检查稍后可能会成功。
-    - Permerror：发生了永久性错误。 例如，域的 SPF 记录格式不正确。
+  - Pass (IP address) ： The SPF check for the message passed and includes the sender's IP address. 已授权客户端代表发件人的域发送或中继电子邮件。
+  - 无法 (IP 地址) ：邮件的 SPF 检查失败，包括发件人的 IP 地址。 有时也称其为硬失败。
+  - 软 (原因) ：SPF 记录将主机指定为不允许发送但正在转换。
+  - 中性：SPF 记录明确声明它不会断言 IP 地址是否有权发送。
+  - 无：域没有 SPF 记录，或者 SPF 记录未计算结果。
+  - 恢复器：已发生临时错误。 例如，DNS 错误。 相同的检查稍后可能会成功。
+  - Permerror：发生了永久性错误。 例如，域的 SPF 记录格式不正确。
 
 - 域密钥识别邮件 (**DKIM**) ：
-    - Pass：指示通过邮件的 DKIM 检查。
-    - 失败 (原因) ：指示邮件的 DKIM 检查失败以及原因。 例如，如果邮件未签名或签名未经验证。
-    - 无：指示邮件未签名。 这可能表示或不表示域存在 DKIM 记录或 DKIM 记录未生成结果，仅表示该邮件未签名。
+  - Pass：指示通过邮件的 DKIM 检查。
+  - 失败 (原因) ：指示邮件的 DKIM 检查失败以及原因。 例如，如果邮件未签名或签名未经验证。
+  - 无：指示邮件未签名。 这可能表示或不表示域存在 DKIM 记录或 DKIM 记录未生成结果，仅表示该邮件未签名。
 
 - 基于域的邮件身份验证、报告和一致性 (**DMARC**) ：
-    - Pass：指示通过邮件的 DMARC 检查。
-    - 失败：指示邮件的 DMARC 检查失败。
-    - Bestguesspass：指示不存在域的 DMARC TXT 记录，但如果已存在，则邮件的 DMARC 检查已经通过。
-    - 无：指示 DNS 中不存在发送域的 DMARC TXT 记录。
+  - Pass：指示通过邮件的 DMARC 检查。
+  - 失败：指示邮件的 DMARC 检查失败。
+  - Bestguesspass：指示不存在域的 DMARC TXT 记录，但如果已存在，则邮件的 DMARC 检查已经通过。
+  - 无：指示 DNS 中不存在发送域的 DMARC TXT 记录。
 
 *复合身份验证*：这是 Microsoft 365 使用的值来组合电子邮件身份验证（如 SPF、DKIM 和 DMARC）以确定邮件是否可信。 它使用 *邮件的 From：* 域作为评估的基础。

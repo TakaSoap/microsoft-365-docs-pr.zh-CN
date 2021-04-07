@@ -20,12 +20,12 @@ description: 在安全与合规中心查找和使用 Microsoft Defender for Offi
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 28978dbca3f9e4039b4f8c21c49a2963802afa54
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 0b3e1ddf48ccd74b36c594d232c6761b921dee8c
+ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51203547"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51599895"
 ---
 # <a name="view-defender-for-office-365-reports-in-the-reports-dashboard-in-the-security--compliance-center"></a>在安全与合规中心的"报告"仪表板中查看适用于 Office 365 & Defender
 
@@ -96,11 +96,11 @@ The **Defender for Office 365 file types report** report shows you the type of f
 
 - **查看数据者：文件**：
 
-  - "日期"
+  - **Date**
   - **收件人地址**
   - **发件人地址**
   - **邮件 ID：** 在邮件 **头的 Message-ID** 头字段中可用，并且应该是唯一的。 示例值是 `<08f1e0f6806a47b4ac103961109ae6ef@server.domain>` (尖括号) 。
-  - **File**
+  - **文件**
 
   如果单击 **"筛选器"，** 可以使用以下筛选器修改报告：
 
@@ -109,12 +109,12 @@ The **Defender for Office 365 file types report** report shows you the type of f
 
 - **查看数据者： 消息**：
 
-  - "日期"
+  - **Date**
   - **收件人地址**
   - **发件人地址**
   - **邮件 ID**
-  - **File**
-  - **主题**
+  - **文件**
+  - **Subject**
 
   如果单击 **"筛选器"，** 可以使用以下筛选器修改结果：
 
@@ -178,12 +178,12 @@ The **Defender for Office 365 file types report** report shows you the type of f
 
 - **查看数据者： 消息**：
 
-  - "日期"
+  - **Date**
   - **收件人地址**
   - **发件人地址**
   - **邮件 ID**
-  - **File**
-  - **主题**
+  - **文件**
+  - **Subject**
 
   如果单击 **"筛选器"，** 可以使用以下筛选器修改结果：
 
@@ -192,11 +192,11 @@ The **Defender for Office 365 file types report** report shows you the type of f
 
 - **查看数据者：文件**：
 
-  - "日期"
+  - **Date**
   - **收件人地址**
   - **发件人地址**
   - **邮件 ID**
-  - **File**
+  - **文件**
 
   如果单击 **"筛选器"，** 可以使用以下筛选器修改报告：
 
@@ -249,7 +249,7 @@ The **Defender for Office 365 file types report** report shows you the type of f
 
 详细信息表视图中显示了以下信息：
 
-- "日期"
+- **Date**
 - **百分点值**
 - **邮件计数**
 - **总体延迟**
@@ -282,8 +282,8 @@ URL **威胁防护报告** 提供有关检测到的威胁以及作为安全链�
 - **URL 单击保护操作**：显示组织中用户单击的 URL 数以及单击结果：
 
   - **阻止** (用户导航到 URL) 
-  - **阻止和单击**
-  - **在扫描过程中单击浏览**
+  - **阻止并单击 (** 用户已选择继续导航到 URL) 
+  - **在扫描过程中单击 (，** 在扫描完成之前用户已单击链接) 
 
   单击指示用户已单击通过阻止页面访问恶意网站 (管理员可以在安全链接策略或) 中禁用单击。
 
@@ -317,7 +317,7 @@ URL **威胁防护报告** 提供有关检测到的威胁以及作为安全链�
 - **单击时间**
 - **用户**
 - **URL**
-- **操作**
+- **Action**
 - **App**
 
 如果在 **详细信息表** 视图中单击"筛选器"，可以按照与"收件人"报表视图相同的条件进行筛选，也可以按"域"或"收件人"（用逗号分隔）进行筛选。 
@@ -350,11 +350,11 @@ URL **威胁防护报告** 提供有关检测到的威胁以及作为安全链�
 - **组织管理**
 - **安全管理员**
 - **安全读者**
-- **全局读者**
+- **全局读取者**
 
 有关详细信息，请参阅[安全与合规中心中的权限](permissions-in-the-security-and-compliance-center.md)。
 
-注意：将用户添加到 Microsoft 365 管理中心的相应 Azure Active Directory 角色会为用户提供安全 & 合规中心所需的权限以及Microsoft 365 中其他功能的权限。 有关详细信息，请参阅 [关于管理员角色](../../admin/add-users/about-admin-roles.md)。
+注意：将用户添加到 Microsoft 365 管理中心的相应 Azure Active Directory 角色会为用户提供安全 & 合规中心所需的权限以及Microsoft 365 中其他功能的权限。 有关详细信息，请参阅[关于管理员角色](../../admin/add-users/about-admin-roles.md)。
 
 ## <a name="what-if-the-reports-arent-showing-data"></a>如果报告未显示数据，该做什么？
 

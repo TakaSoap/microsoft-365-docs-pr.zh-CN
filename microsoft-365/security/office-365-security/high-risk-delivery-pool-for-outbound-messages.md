@@ -17,12 +17,12 @@ ms.collection:
 description: 了解如何使用传递池保护 Microsoft 365 数据中心中电子邮件服务器的信誉。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 461b5f9aa0407c5115ab84a075c793139a8b4305
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: ac3469150ef5cf5c1040fcddf7f0bc95e7a18805
+ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51203251"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51599907"
 ---
 # <a name="outbound-delivery-pools"></a>出站传递池
 
@@ -42,7 +42,7 @@ Microsoft 365 数据中心的电子邮件服务器可能暂时没有发送垃圾
 
 高风险传递池是出站电子邮件的单独 IP 地址池，仅用于发送"低质量" (例如垃圾邮件和退信) 。 [](backscatter-messages-and-eop.md) 使用高风险传送池有助于防止出站电子邮件的正常 IP 地址池发送垃圾邮件。 出站电子邮件的正常 IP 地址池维护发送"高质量"邮件的信誉，这会降低这些 IP 地址出现在 IP 阻止列表上的可能性。
 
-高风险传送池中的 IP 地址将保留在 IP 阻止列表上的非常真实的可能性仍然存在，但这是设计使的。 不保证向目标收件人传递邮件，因为许多电子邮件组织不接受来自高风险传递池的邮件。
+将高风险传送池中的 IP 地址置于 IP 阻止列表的可能性仍然很高，但这是设计使的。 不保证向目标收件人传递邮件，因为许多电子邮件组织不接受来自高风险传递池的邮件。
 
 有关详细信息，请参阅控制 [出站垃圾邮件](outbound-spam-controls.md)。
 
@@ -61,9 +61,3 @@ NDR 中出现激增的可能原因包括：
 - 未授权电子邮件服务器。
 
 所有这些问题都可能导致服务正在处理的 NDR 数量突然增加。 在许多情况下，这些 NDR 似乎为其他电子邮件服务器和服务的垃圾邮件 (也称为退 _[) 。](backscatter-messages-and-eop.md)_
-
-## <a name="relay-pool"></a>中继池
-
-转发或中继出 Microsoft 365 的邮件使用特殊的中继池发送，因为最终目标不应将 Microsoft 365 视为实际发件人。 隔离此流量也很重要，因为存在从 Microsoft 365 自动转发或中继电子邮件的合法和无效方案。 与高风险传送池类似，单独的 IP 地址池用于中继邮件。 此地址池不会发布，因为它可能会经常更改。
-
-Microsoft 365 需要验证原始发件人是否合法，以便我们可以放心地传递转发的邮件。 为此，SPF (DKIM 和 DMARC) 需要在邮件发送到我们时通过。 在我们可以对发件人进行身份验证的情况下，我们使用发件人重写来帮助接收方知道转发的邮件来自受信任的来源。 您可以阅读有关工作原理以及您可以执行哪些操作来帮助确保发送域在 SRS 策略的发件人重写方案中通过 ([身份验证) 。 ](/office365/troubleshoot/antispam/sender-rewriting-scheme)

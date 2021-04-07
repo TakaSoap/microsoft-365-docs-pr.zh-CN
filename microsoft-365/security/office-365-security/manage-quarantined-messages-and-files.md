@@ -19,12 +19,12 @@ ms.custom:
 description: 管理员可以了解如何在 Exchange Online Protection 和 EOP (中查看和管理) 。 使用 Microsoft Defender for Office 365 的组织中管理员还可以在 SharePoint Online、OneDrive for Business 和 Microsoft Teams 中管理隔离文件。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 3dee441a3442454c5f2978422d18a2084f8377f3
-ms.sourcegitcommit: 3d2261af22bebbbf7efa8a0d3135225a15bd6ba8
+ms.openlocfilehash: 7dc7fd26d7a81bc76850af4799363c8d17fc1c83
+ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51215531"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51599525"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-admin-in-eop"></a>在 EOP 中以管理员身份管理已隔离邮件和文件
 
@@ -189,7 +189,6 @@ ms.locfileid: "51215531"
 - **查看邮件头**：选择此链接可查看邮件头文本。 若要深入分析邮件头字段和值，请将邮件头文本复制到剪贴板，然后选择“Microsoft 邮件头分析器”，即可转到远程连接分析器（如果希望在不离开 Microsoft 365 的情况下完成这项任务，请右键单击并选择“在新标签页中打开”）。 将邮件头粘贴到页面上的“邮件头分析器”部分中，然后选择“分析邮件头”：
 
 - **预览邮件**：在显示的浮出控件窗格中，选择以下选项之一：
-
   - **源视图**：显示禁用所有链接的 HTML 版邮件正文。
   - **文本视图**：以纯文本格式显示邮件正文。
 
@@ -197,7 +196,7 @@ ms.locfileid: "51215531"
 
 - **下载邮件**：在显示的浮出控件窗格中，选择“我了解下载此邮件所面临的风险”，以使用 .eml 格式保存邮件的本地副本。
 
-- **阻止发件人**：这会阻止发件人向管理员收件人邮箱发送电子邮件。
+- **阻止发件人**：阻止发件人向组织的收件人发送邮件。
 
 - **提交邮件**：在出现的飞出窗格中，选择以下选项：
 

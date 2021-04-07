@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-defender-office365
 description: 管理员可以了解 Microsoft 365 安全中心中的攻击模拟培训如何影响员工，并可以从模拟和培训结果中获得见解。
 ms.technology: mdo
-ms.openlocfilehash: 93d8829f9fbc4271d33e3208e5564529b4022fc3
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 0fcb88406558f73b587d8452375c33dbbec1c78b
+ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51203211"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51600003"
 ---
 # <a name="gain-insights-through-attack-simulation-training"></a>通过攻击模拟培训获得见解
 
@@ -45,7 +45,7 @@ ms.locfileid: "51203211"
 
 在 [**"模拟"** 选项卡](https://security.microsoft.com/attacksimulator?viewid=simulations)上，选择模拟将你查看模拟详细信息，你将在这里找到推荐 **操作** 部分。
 
-建议的操作部分详细介绍了 Microsoft 安全分数 [中提供的建议](https://docs.microsoft.com/microsoft-365/security/defender/microsoft-secure-score)。 这些建议基于模拟中使用的有效负载，有助于保护员工和环境。 单击每个改进操作将让你了解其详细信息。
+建议的操作部分详细介绍了 Microsoft 安全分数 [中提供的建议](../defender/microsoft-secure-score.md)。 这些建议基于模拟中使用的有效负载，有助于保护员工和环境。 单击每个改进操作将让你了解其详细信息。
 
 > [!div class="mx-imgBorder"]
 > ![攻击模拟培训的建议操作部分](../../media/attack-sim-preview-recommended-actions.png)

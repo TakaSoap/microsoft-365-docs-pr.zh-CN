@@ -20,12 +20,12 @@ ms.custom:
 description: 用户可在 Exchange Online Protection （EOP）中了解如何查看和管理应该已提供给他们的隔离邮件。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: cc904132bc12f068571cfd86d9f5eb629d7f53f2
-ms.sourcegitcommit: 3d2261af22bebbbf7efa8a0d3135225a15bd6ba8
+ms.openlocfilehash: e9a9da170dc0d3effba495c29672fb8f6bb02031
+ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51215512"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51599931"
 ---
 # <a name="find-and-release-quarantined-messages-as-a-user-in-eop"></a>在 EOP 中以用户身份查找和释放已隔离邮件
 
@@ -156,7 +156,7 @@ ms.locfileid: "51215512"
 
 - **从隔离中删除**：当你在显示的警告中单击“是”后，邮件会立即删除。
 
-- **阻止** 发件人发件人：这可防止发件人向您发送邮件。
+- **阻止发件人**：防止发件人向你发送邮件。
 
 完成后，单击“关闭”。
 

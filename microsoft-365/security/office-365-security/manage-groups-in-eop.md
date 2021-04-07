@@ -15,12 +15,12 @@ ms.custom:
 description: 独立 Exchange Online Protection (EOP) 组织的管理员可以了解如何在 Exchange 管理中心 (EAC) 和独立 Exchange Online Protection (EOP) PowerShell 中创建、修改和删除通讯组和启用邮件的安全组。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 3b97e3fac0840753edada964252875a6e3a4fa04
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: b9d83f2fb59ee8f8d2d3035045ed438d5ba45851
+ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51203183"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51599565"
 ---
 # <a name="manage-groups-in-eop"></a>在 EOP 中管理组
 
@@ -102,9 +102,9 @@ ms.locfileid: "51203183"
 
 3. 在打开的通讯组属性页上，单击下列选项卡之一以查看或更改属性。
 
-   完成后，单击“保存”。
+   完成后，单击“**保存**”。
 
-#### <a name="general"></a>常规
+#### <a name="general"></a>概要
 
 使用此选项卡可以查看或更改有关组的基本信息。
 
@@ -216,7 +216,7 @@ $CurrentMemberNames += "Tyson Fawcett"
 Update-EOPDistributionGroupMember -Identity "Security Team" -Members $CurrentMemberNames
 ```
 
-有关语法和参数的详细信息，请参阅 [Set-EOPDistributionGroup](https://docs.microsoft.com/powershell/module/exchange/set-eopdistributiongroup) 和 [Update-EOPDistributionGroupMember](https://docs.microsoft.com/powershell/module/exchange/update-eopdistributiongroupmember)。
+有关语法和参数的详细信息，请参阅 [Set-EOPDistributionGroup](/powershell/module/exchange/set-eopdistributiongroup) 和 [Update-EOPDistributionGroupMember](/powershell/module/exchange/update-eopdistributiongroupmember)。
 
 ### <a name="remove-a-group-using-remote-windows-powershell"></a>使用远程客户端删除Windows PowerShell
 
@@ -226,7 +226,7 @@ Update-EOPDistributionGroupMember -Identity "Security Team" -Members $CurrentMem
 Remove-EOPDistributionGroup -Identity "IT Administrators"
 ```
 
-有关语法和参数的详细信息，请参阅 [Remove-EOPDistributionGroup](https://docs.microsoft.com/powershell/module/exchange/remove-eopdistributiongroup)。
+有关语法和参数的详细信息，请参阅 [Remove-EOPDistributionGroup](/powershell/module/exchange/remove-eopdistributiongroup)。
 
 ## <a name="how-do-you-know-these-procedures-worked"></a>如何判断这些过程生效了？
 

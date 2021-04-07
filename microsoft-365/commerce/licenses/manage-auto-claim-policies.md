@@ -18,12 +18,12 @@ ms.custom:
 - commerce
 search.appverid:
 - MET150
-ms.openlocfilehash: bf3f79e425b3f7cd86f1a5ab95a337ef5127e345
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 001b612820bb13873ec18733d68828837fcecd78
+ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50911466"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51599447"
 ---
 # <a name="manage-auto-claim-policies"></a>管理自动声明策略
 
@@ -41,9 +41,9 @@ ms.locfileid: "50911466"
 > [!IMPORTANT]
 > 自动声明策略当前仅适用于 Microsoft Teams。 将来将有更多的产品可供使用。
 
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>准备工作
 
-你必须是全局管理员才能创建和管理自动声明策略。 有关详细信息，请参阅[关于 Microsoft 365 管理员角色](../../admin/add-users/about-admin-roles.md)。
+您必须是全局管理员、用户管理员或许可证管理员才能创建和管理自动声明策略。 有关详细信息，请参阅[关于 Microsoft 365 管理员角色](../../admin/add-users/about-admin-roles.md)。
 
 ## <a name="turn-the-auto-claim-policy-feature-on-or-off"></a>打开或关闭自动声明策略功能
 
@@ -55,6 +55,8 @@ ms.locfileid: "50911466"
 2. 在页面的中心，选择" **打开设置"** 按钮。
 
 ### <a name="turn-off-auto-claim-policies"></a>关闭自动声明策略
+
+只有全局管理员可以关闭自动声明策略设置。
 
 1. 在管理中心，转到 **"设置** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">""组织设置"</a> 页面。
 2. 在表底部附近，选择 **"用户拥有的应用和服务"。**
@@ -76,7 +78,7 @@ ms.locfileid: "50911466"
 3. 在"**命名此自动声明策略**"页上，输入策略的名称，然后选择"下一步 **"。**
 4. 在 **"设置自动声明应用** 和产品"页上，选择要为其分配许可证的应用和订阅。
 5. 如果要添加备份产品，请选择"将备份产品添加到此策略 **"，** 然后从列表中选择该产品。
-6. 选择“下一步”。
+6. 选择“**下一步**”。
 7. 在"**选择应用"** 页上，清除或选择要排除或包括在许可证中的应用的框，然后选择"下一步 **"。**
 8. 如果添加了一个或多个备份产品，请对每个产品重复步骤 7。 否则，请转到步骤 9。
 9. 在"**查看并完成"** 页上，验证新策略信息，进行必要的更改，然后选择"创建 **策略"。**

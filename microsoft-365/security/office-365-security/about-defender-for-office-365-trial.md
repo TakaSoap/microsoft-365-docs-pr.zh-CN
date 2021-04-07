@@ -18,12 +18,12 @@ ms.custom:
 - seo-marvel-apr2020
 ROBOTS: NOINDEX
 description: 管理员可以了解适用于 Office 365 的 Microsoft Defender 试用模式
-ms.openlocfilehash: c2c1e44741a8604ce60586a85a28d32851285403
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 1a86a73dbdb8f2549fb5dc03ece56497c5ff0b1e
+ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51203878"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51599791"
 ---
 # <a name="about-the-microsoft-defender-for-office-365-trial"></a>关于 Microsoft Defender for Office 365 试用版
 
@@ -98,7 +98,7 @@ Defender for Office 365 通过提供一系列全面的功能来帮助组织保�
 - [威胁资源管理器和实时检测](threat-explorer.md)
 - [Defender for Office 365 中的实时报告](view-reports-for-mdo.md)
 - [威胁跟踪器 - 新增的和值得注意的威胁](threat-trackers.md)
-- 与 [Microsoft 365 Defender 集成](https://docs.microsoft.com/microsoft-365/security/defender/microsoft-threat-protection)
+- 与 [Microsoft 365 Defender 集成](../defender/microsoft-365-defender.md)
 
 ### <a name="response-and-remediation"></a>响应和修正
 

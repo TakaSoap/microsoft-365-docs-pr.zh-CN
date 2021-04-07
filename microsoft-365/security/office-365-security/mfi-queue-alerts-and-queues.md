@@ -12,12 +12,12 @@ ms.assetid: 37640c80-ce6f-47e2-afd1-bc1d3c50e637
 description: '& 管理员可以了解如何使用安全与合规中心内"邮件流"仪表板中的"队列"小组件监视通过出站连接器发送到其内部部署或合作伙伴组织的失败邮件流。'
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 14cadd0e8611fbbc65c3bdc9849beebf3a3eb34d
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 65452b0ad7c31673c910ba48c9c6709995e563ce
+ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51203919"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51599979"
 ---
 # <a name="queues-insight-in-the-security--compliance-center"></a>安全与合规中心&队列见解
 
@@ -87,7 +87,7 @@ If you click the number of messages on the widget， a **Messages queued** flyou
 - **目标服务器**
 - **上一个 IP 地址**
 - **上一个错误**
-- **如何修复**：常见问题和解决方案可用。 If is a **Fix it now** link is available， click it to fix the problem. 否则，请单击任何可用链接，了解有关错误和可能的解决方案的详细信息。
+- **如何修复**：常见问题和解决方案可用。 If a **Fix it now** link is available， click it to fix the problem. 否则，请单击任何可用链接，了解有关错误和可能的解决方案的详细信息。
 
 ![在邮件流仪表板中单击队列见解后的详细信息](../../media/mfi-queues-details.png)
 

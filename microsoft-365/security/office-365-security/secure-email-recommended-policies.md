@@ -20,19 +20,18 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 ms.technology: mdo
-ms.openlocfilehash: 5a705444c81d884c10b99e5f0d2bfbb9e4f057e2
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: c5f5837f4e4069a67bc080178fefd10bd2a08629
+ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51203840"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51599847"
 ---
 # <a name="policy-recommendations-for-securing-email"></a>用于保护电子邮件的策略建议
 
 **适用对象**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
 - [Microsoft Defender for Office 365 计划 1 和计划 2](defender-for-office-365.md)
-
 
 本文介绍如何实施推荐的标识和设备访问策略，以保护支持新式身份验证和条件访问的组织电子邮件和电子邮件客户端。 本指南基于通用 [标识和设备](identity-access-policies.md) 访问策略，还包含一些其他建议。
 
@@ -103,7 +102,7 @@ ms.locfileid: "51203840"
 
 为了确保 iOS 和 Android 设备的用户只能使用 Outlook for iOS 和 Outlook for Android 访问工作或学校内容，您需要一个面向这些潜在用户的条件访问策略。
 
-请参阅使用 [Outlook for iOS]( https://docs.microsoft.com/mem/intune/apps/app-configuration-policies-outlook#apply-conditional-access)和 Outlook for Android 管理邮件协作访问中的配置此策略的步骤。
+请参阅使用 [Outlook for iOS](/mem/intune/apps/app-configuration-policies-outlook#apply-conditional-access)和 Outlook for Android 管理邮件协作访问中的配置此策略的步骤。
 
 ## <a name="set-up-message-encryption"></a>设置邮件加密
 

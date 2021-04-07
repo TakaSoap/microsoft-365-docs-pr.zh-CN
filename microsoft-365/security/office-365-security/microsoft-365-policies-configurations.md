@@ -19,12 +19,12 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-overview
 ms.technology: mdo
-ms.openlocfilehash: cb3c6bf6e19088be2771747af12932fa4e80431a
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 9d7170ff261a53ba5755134973a912221363b3c8
+ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51203918"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51599803"
 ---
 # <a name="identity-and-device-access-configurations"></a>标识和设备访问配置
 
@@ -43,14 +43,13 @@ ms.locfileid: "51203918"
 这些功能及其建议：
 
 - 在 Microsoft 365 E3 和 Microsoft 365 E5 中受支持。
-- 与 Microsoft [安全分数](https://docs.microsoft.com/microsoft-365/security/defender/microsoft-secure-score) 以及 Azure [AD](/azure/active-directory/fundamentals/identity-secure-score)中的标识分数一致，将增加组织的这些分数。
+- 与 Microsoft [安全分数](../defender/microsoft-secure-score.md) 以及 Azure [AD](/azure/active-directory/fundamentals/identity-secure-score)中的标识分数一致，将增加组织的这些分数。
 - 将帮助您实施这 [五个步骤来保护标识基础结构](/azure/security/azure-ad-secure-steps)。
 
 如果您的组织具有独特的环境要求或复杂性，请使用这些建议作为起点。 但是，大多数组织都可以按照规定实现这些建议。
 
 观看此视频，快速概览 Microsoft 365 企业版的身份和设备访问配置。
-<br>
-<br>
+
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWxEDQ]
 
 > [!NOTE]

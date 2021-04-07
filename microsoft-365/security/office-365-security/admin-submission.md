@@ -19,12 +19,12 @@ ms.custom:
 description: 管理员可以了解如何使用安全 & 合规中心中的提交门户将可疑电子邮件、可疑钓鱼邮件、垃圾邮件和其他可能有害的邮件、URL 和文件提交给 Microsoft 进行扫描。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 96a5469b1093c71997747b2c4c3b49bc1964f72b
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: e0975d5b6c2d29c94a30f7bbc703221b80217761
+ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51581066"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51599871"
 ---
 # <a name="use-admin-submission-to-submit-suspected-spam-phish-urls-and-files-to-microsoft"></a>使用“管理员提交”将可疑的垃圾邮件、网络钓鱼诈骗、URL和文件提交给 Microsoft
 
@@ -78,7 +78,7 @@ ms.locfileid: "51581066"
    - **文件**：单击 **"选择文件"。** 在打开的对话框中，查找并选择 .eml 或 .msg 文件，然后单击"打开 **"。**
 
    > [!NOTE]
-   > 使用 Defender for Office 365 计划 1 或计划 2 的管理员可以提交 30 天的邮件。 其他管理员将只能返回 7 天。
+   > 针对 Office 365 客户的 Defender，提交 30 天以上的邮件功能已暂时暂停。 管理员只能返回 7 天。
 
 2. 在 **"收件人"** 部分，指定要针对其运行策略检查的一个或多个收件人。 策略检查将确定电子邮件是否由于用户或组织策略而绕过扫描。
 
@@ -134,7 +134,7 @@ In the Security & Compliance Center， go to **Threat management** \> **Submissi
 - **主题/URL/文件名**
 - **提交者**
 - **提交类型**
-- **状态**
+- **Status**
 
 ![管理员提交的筛选器选项](../../media/admin-submission-email-filter-options.png)
 
@@ -148,7 +148,7 @@ In the Security & Compliance Center， go to **Threat management** \> **Submissi
 
 You can click the **Column options** button near of the bottom of the page to add or remove columns from the view：
 
-- "日期"
+- **Date**
 - **提交 ID：** 分配给每个提交的 GUID 值。
 - **提交者**<sup>\*</sup>
 - **主题**<sup>\*</sup>
@@ -177,7 +177,7 @@ You can click the **Column options** button near of the bottom of the page to ad
 
 You can click the **Column options** button near of the bottom of the page to add or remove columns from the view：
 
-- "日期"
+- **Date**
 - **提交 ID**
 - **提交者**<sup>\*</sup>
 - **URL**<sup>\*</sup>
@@ -192,7 +192,7 @@ You can click the **Column options** button near of the bottom of the page to ad
 
 You can click the **Column options** button near of the bottom of the page to add or remove columns from the view：
 
-- "日期"
+- **Date**
 - **提交 ID**
 - **提交者**<sup>\*</sup>
 - **文件名**<sup>\*</sup>
@@ -225,7 +225,7 @@ You can click the **Column options** button near of the bottom of the page to ad
 若要更改筛选条件，请单击"发件人 **"** 按钮并选择下列值之一：
 
 - **发件人域**
-- **主题**
+- **Subject**
 - **提交者**
 - **提交类型**
 - **发件人 IP**

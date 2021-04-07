@@ -1,12 +1,13 @@
 ---
 title: 跨 Microsoft 365 配置威胁防护功能的步骤
-description: 了解如何跨 Microsoft 365 E5 部署威胁防护服务和功能。
+description: 使用本文作为实现威胁防护解决方案的指南。 了解如何跨 Microsoft 365 E5 部署威胁防护服务和功能。
+keywords: 安全， 设置， 配置， Microsoft 365 E5， 高级威胁防护
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
 ms.audience: ITPro
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.prod: m365-security
 ms.technology: m365d
 localization_priority: Normal
@@ -16,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: bd7c98f5888f8dc93a8aa341b186ea744d5b2882
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 925c62e1c6201c54fcf09d0dd98b06906d9e057f
+ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51199929"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51599859"
 ---
 # <a name="configure-threat-protection-capabilities-across-microsoft-365"></a>配置 Microsoft 365 中的威胁防护功能
 
@@ -30,7 +31,7 @@ ms.locfileid: "51199929"
 
 ## <a name="step-1-set-up-multi-factor-authentication-and-conditional-access-policies"></a>步骤 1：设置多重身份验证和条件访问策略
 
-[MFA (](/azure/active-directory/authentication/concept-mfa-howitworks) 多重) 要求用户使用电话呼叫或验证器应用验证其身份。 [条件访问](/azure/active-directory/conditional-access/overview) 策略定义了用户访问 Microsoft 365 中的应用和数据所必须满足的某些要求。 MFA 和条件访问策略协同工作来保护你的组织。 例如，如果有人尝试使用未启用 MFA 的帐户从移动设备登录，并且条件访问策略要求 MFA 生效，将阻止该用户登录。  
+[MFA (](/azure/active-directory/authentication/concept-mfa-howitworks) 多重) 要求用户使用电话呼叫或验证器应用验证其身份。 [条件访问](/azure/active-directory/conditional-access/overview) 策略定义了用户访问 Microsoft 365 中的应用和数据所必须满足的某些要求。 MFA 和条件访问策略协同工作来保护你的组织。 例如，如果有人尝试使用未启用 MFA 的帐户从移动设备登录，并且条件访问策略要求 MFA 生效，则阻止该用户登录。  
 
 Microsoft 已测试并推荐了一组特定的条件访问和相关策略，用于保护对全部 SaaS 应用程序（尤其是 Microsoft 365）的访问。 建议对基线、敏感和高度管控保护使用策略。 首先实现基准保护策略。 
 
@@ -53,7 +54,7 @@ Microsoft 已测试并推荐了一组特定的条件访问和相关策略，用�
 
 ## <a name="step-2-configure-microsoft-defender-for-identity"></a>步骤 2：为标识配置 Microsoft Defender
 
-[Microsoft Defender for Identity](/azure-advanced-threat-protection/what-is-atp) 是一种基于云的安全解决方案，它可与本地 Active Directory 域服务 (AD DS) 信号一起识别、检测和调查针对你的组织的高级威胁、泄露的身份和恶意内部操作。
+[Microsoft Defender for Identity](/defender-for-identity/what-is) 是一种基于云的安全解决方案，它可与本地 Active Directory 域服务 (AD DS) 信号一起识别、检测和调查针对你的组织的高级威胁、泄露的身份和恶意内部操作。
 
 Microsoft Defender for Identity 支持使用 SecOps (安全) 分析人员和安全专业人员，他们努力检测混合环境中的高级攻击，以：
 - 使用基于学习的分析监视用户、实体行为和活动。
@@ -79,7 +80,7 @@ Microsoft Defender for Identity 支持使用 SecOps (安全) 分析人员和安�
 
 [Microsoft 365 Defender](../security/defender/microsoft-365-defender.md) 将信号和安排功能组合到单个解决方案中。 借助集成的 Microsoft 365 Defender 解决方案，安全专业人员可以整合每个产品接收的威胁信号，并确定威胁的完整范围和影响;它如何进入环境、对环境的影响以及它当前对组织的影响。 Microsoft 365 Defender 采取自动操作来阻止或停止攻击和自我修复受影响的邮箱、终结点和用户标识。
 
-Microsoft 365 Defender 将跨工作负载的警报、事件、自动调查和响应以及高级搜寻 (Microsoft Defender for Identity、Microsoft Defender for Office 365、Microsoft Defender for Endpoint 和 Microsoft Cloud App Security) 统一为单一的一层体验。 配置一个或多个 Defender for Office 365 服务后，打开 Microsoft 365 Defender。 新功能不断添加到 Microsoft 365 Defender;考虑选择接收预览功能。
+Microsoft 365 Defender 将跨工作负载的警报、事件、自动调查和响应以及高级搜寻 (Microsoft Defender for Identity、Microsoft Defender for Office 365、Microsoft Defender for Endpoint 和 Microsoft Cloud App Security) 统一为单一的一层体验。 新功能不断添加到 Microsoft 365 Defender;考虑选择接收预览功能。
 
 ### <a name="to-set-up-microsoft-365-defender"></a>设置 Microsoft 365 Defender
 
@@ -161,7 +162,7 @@ Microsoft 365 Defender 将跨工作负载的警报、事件、自动调查和响
 
 ![Microsoft 365 安全中心](../media/solutions-architecture-center/m365-security-center.png)
 
-Microsoft 365 安全中心专用于安全管理员和安全操作团队。 在 Microsoft 365 安全中心中，你可以：
+Microsoft 365 安全中心面向安全管理员和安全运营团队。 在 Microsoft 365 安全中心中，你可以：
 - 使用安全分数 查看组织的整体 [安全运行状况](https://docs.microsoft.com/microsoft-365/security/defender/microsoft-secure-score)。
 - [监视和查看](https://docs.microsoft.com/microsoft-365/security/defender/monitoring-and-reporting) 有关标识、数据、设备、应用和基础结构状态的报告。
 - 通过事件连接警报 [上的点](https://docs.microsoft.com/microsoft-365/security/defender/incident-queue)。
