@@ -1,6 +1,6 @@
 ---
 title: 跨 Microsoft 365 配置威胁防护功能的步骤
-description: 使用本文作为实现威胁防护解决方案的指南。 了解如何跨 Microsoft 365 E5 部署威胁防护服务和功能。
+description: 使用本文作为实现威胁防护解决方案的指南。 在 Microsoft 365 E5 中部署威胁防护服务和功能。
 keywords: 安全， 设置， 配置， Microsoft 365 E5， 高级威胁防护
 ms.author: deniseb
 author: denisebmsft
@@ -17,17 +17,16 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: 925c62e1c6201c54fcf09d0dd98b06906d9e057f
-ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
+ms.openlocfilehash: 847dd2d090fb26c5558d4a3496a79cf4829881fb
+ms.sourcegitcommit: dc1ac43a57fac6f57438859dd668f927d94fdf34
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "51599859"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "51604389"
 ---
 # <a name="configure-threat-protection-capabilities-across-microsoft-365"></a>配置 Microsoft 365 中的威胁防护功能
 
 按照以下步骤在 Microsoft 365 中配置威胁防护。
-
 
 ## <a name="step-1-set-up-multi-factor-authentication-and-conditional-access-policies"></a>步骤 1：设置多重身份验证和条件访问策略
 
@@ -100,8 +99,8 @@ Microsoft 365 Defender 将跨工作负载的警报、事件、自动调查和响
 [Microsoft Defender for Office 365](../security/office-365-security/defender-for-office-365.md) 保护您的组织免受电子邮件、附件 (URL、Office 文档和协作) 中的恶意威胁。 下表列出了 Microsoft 365 E5 中包含的 Microsoft Defender for Office 365 特性和功能：
 
 |配置、保护和检测功能|自动化、调查、修正和教育功能|
-|---|---|
-|[安全附件](../security/office-365-security/safe-attachments.md)<br/>[安全链接](../security/office-365-security/safe-links.md)<br/>[安全文档](../security/office-365-security/safe-docs.md)<br/>[适用于 SharePoint、OneDrive 和 Microsoft Teams 的 ATP](../security/office-365-security/mdo-for-spo-odb-and-teams.md)<br/>[Defender for Office 365 保护中的防钓鱼](../security/office-365-security/set-up-anti-phishing-policies.md#Exclusive-settings-in-anti-phishing-policies-in Microsoft-Defender-for-Office-365)|[威胁跟踪器](../security/office-365-security/threat-trackers.md)<br/>[威胁资源管理器](../security/office-365-security/threat-explorer.md)<br/>[自动调查和响应](../security/office-365-security/office-365-air.md)<br/>[攻击模拟器](../security/office-365-security/attack-simulator.md)|
+|:---|:---|
+|[安全附件](../security/office-365-security/safe-attachments.md)<br/>[安全链接](../security/office-365-security/safe-links.md)<br/>[安全文档](../security/office-365-security/safe-docs.md)<br/>[适用于 SharePoint、OneDrive 和 Microsoft Teams 的 ATP](../security/office-365-security/mdo-for-spo-odb-and-teams.md)<br/> [Microsoft 365 中的防钓鱼保护](../security/office-365-security/anti-phishing-protection.md)|[威胁跟踪器](../security/office-365-security/threat-trackers.md)<br/>[威胁资源管理器](../security/office-365-security/threat-explorer.md)<br/>[自动调查和响应](../security/office-365-security/office-365-air.md)<br/>[攻击模拟器](../security/office-365-security/attack-simulator.md)|
 |
 
 借助适用于 Office 365 的 Microsoft Defender，整个组织人员可以更安全地进行通信和协作，并针对他们的电子邮件内容和 Office 文档进行威胁防护。
@@ -128,15 +127,18 @@ Microsoft 365 Defender 将跨工作负载的警报、事件、自动调查和响
 
 ![部署 Microsoft Defender for Endpoint 的过程](../media/deploy-threat-protection/deploy-mdatp-steps.png) 
 
-1. [为 Microsoft Defender 终结点部署准备你的环境](/windows/security/threat-protection/microsoft-defender-atp/deployment-phases)。
-2. [设置适用于终结点的 Microsoft Defender 部署](/windows/security/threat-protection/micros.oft-defender-atp/production-deployment)。
-3. [载入到 Microsoft Defender for Endpoint 服务](/windows/security/threat-protection/microsoft-defender-atp/onboarding)。
-4. [完成顶级安全管理任务](/windows/security/threat-protection/microsoft-defender-atp/tvm-security-recommendation)。
+1. [为适用于终结点的 Microsoft Defender 准备你的环境](../security/defender-endpoint/deployment-phases.md)。
+
+2. [部署 Microsoft Defender for Endpoint](../security/defender-endpoint/production-deployment.md)。
+
+3. [载入到 Microsoft Defender for Endpoint 服务](../security/defender-endpoint/onboarding.md)。
+
+4. [完成顶级安全管理任务](../security/defender-endpoint/tvm-security-recommendation.md)。
 
 ### <a name="more-information-about-microsoft-defender-for-endpoint"></a>有关 Microsoft Defender for Endpoint 详细信息
 
-- [了解有关适用于终结点的 Microsoft Defender 的更多信息](/windows/security/threat-protection)。
-- [尝试 Microsoft Defender for Endpoint 评估实验室](/windows/security/threat-protection/microsoft-defender-atp/evaluation-lab)。
+- [了解有关适用于终结点的 Microsoft Defender 的更多信息](../security/defender-endpoint/microsoft-defender-endpoint.md)。
+- [尝试 Microsoft Defender for Endpoint 评估实验室](../security/defender-endpoint/evaluation-lab.md)。
 
 ## <a name="step-6-configure-microsoft-cloud-app-security"></a>步骤 6：配置 Microsoft Cloud App Security
 
@@ -147,8 +149,11 @@ Microsoft 365 Defender 将跨工作负载的警报、事件、自动调查和响
 ![部署 Microsoft Cloud App Security 的过程](../media/deploy-threat-protection/deploy-mcas-steps.png) 
 
 1. [设置门户和其他基本要求](/cloud-app-security/general-setup)。
+
 2. [设置云发现和](/cloud-app-security/set-up-cloud-discovery)[连接应用](/cloud-app-security/enable-instant-visibility-protection-and-governance-actions-for-your-apps)。
+
 3. [为特色应用部署条件访问应用控制](/cloud-app-security/proxy-deployment-aad)。
+
 4. [使用调查工具和仪表板](/cloud-app-security/investigate)。
 
 ### <a name="more-information-about-microsoft-cloud-app-security"></a>有关 Microsoft Cloud App Security 的更多信息
@@ -164,9 +169,9 @@ Microsoft 365 Defender 将跨工作负载的警报、事件、自动调查和响
 
 Microsoft 365 安全中心面向安全管理员和安全运营团队。 在 Microsoft 365 安全中心中，你可以：
 - 使用安全分数 查看组织的整体 [安全运行状况](https://docs.microsoft.com/microsoft-365/security/defender/microsoft-secure-score)。
-- [监视和查看](https://docs.microsoft.com/microsoft-365/security/defender/monitoring-and-reporting) 有关标识、数据、设备、应用和基础结构状态的报告。
+- [监视和查看](../security/defender-endpoint/threat-protection-reports.md) 有关标识、数据、设备、应用和基础结构状态的报告。
 - 通过事件连接警报 [上的点](https://docs.microsoft.com/microsoft-365/security/defender/incident-queue)。
-- 使用 [自动调查和修正](https://docs.microsoft.com/microsoft-365/security/defender/mtp-autoir) 来解决威胁。
+- 使用 [自动调查和修正](../security/defender/m365d-autoir.md) 来解决威胁。
 - [主动搜寻威胁](https://docs.microsoft.com/microsoft-365/security/defender/advanced-hunting-overview)，例如入侵尝试或影响电子邮件、数据、设备和标识的入侵活动。
 - [通过威胁分析了解](https://docs.microsoft.com/microsoft-365/security/defender/latest-attack-campaigns) 最新的攻击活动和技术。
 - ...等等！
