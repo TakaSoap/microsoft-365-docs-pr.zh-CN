@@ -20,12 +20,12 @@ ms.collection:
 description: 管理员可以了解如何提升安全设置并使用其 Microsoft 365 组织中优先级帐户的报告、警报和调查。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 9bb2586c11a22286bde5be01f1e9b3e5e0d981ac
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 73be3832b2391b6f47e4c796daf76c884a17dcdd
+ms.sourcegitcommit: 58fbcfd6437bfb08966b79954ca09556e636ff4a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51203839"
+ms.lasthandoff: 04/08/2021
+ms.locfileid: "51632217"
 ---
 # <a name="security-recommendations-for-priority-accounts-in-microsoft-365"></a>Microsoft 365 中优先级帐户的安全建议
 
@@ -47,6 +47,9 @@ Microsoft 365 和 Microsoft Defender for Office 365 包含多个关键功能，�
 |[监视警报、报告和检测中的优先级帐户](#monitor-priority-accounts-in-alerts-reports-and-detections)|||![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |[培训用户](#train-users)|![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |
+
+> [!NOTE]
+> 有关保护管理员帐户 (特权 _帐户_) ，请参阅 [本主题](/azure/architecture/framework/security/critical-impact-accounts)。
 
 ## <a name="increase-sign-in-security-for-priority-accounts"></a>提高优先级帐户的登录安全性
 

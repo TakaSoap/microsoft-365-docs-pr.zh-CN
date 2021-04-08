@@ -15,12 +15,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 现在可以将 DLP 策略应用于 Microsoft Teams 聊天和频道。 阅读本文，详细了解它的工作原理。
-ms.openlocfilehash: 40c55ed486efc75619b514a60b707ac75554953b
-ms.sourcegitcommit: 39609c4d8c432c8e7d7a31cb35c8020e5207385b
+ms.openlocfilehash: bd6fa1c04a57f64997d5646374007641afa0f958
+ms.sourcegitcommit: 58fbcfd6437bfb08966b79954ca09556e636ff4a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "51445660"
+ms.lasthandoff: 04/08/2021
+ms.locfileid: "51632234"
 ---
 # <a name="data-loss-prevention-and-microsoft-teams"></a>数据丢失防护和 Microsoft Teams
 
@@ -34,7 +34,7 @@ ms.locfileid: "51445660"
 最近 [，DLP](data-loss-prevention-policies.md) (数据丢失) 功能扩展为包括 Microsoft Teams 聊天和频道消息， **包括私人频道消息**。 
 
 > [!IMPORTANT]
-> DLP 当前仅适用于聊天或频道线程中的实际消息。 目前 Teams DLP 中不包含包含短消息预览且基于用户通知设置显示的活动通知。  即使已应用 DLP 策略并删除了敏感信息，预览中显示的邮件部分的任何敏感信息在通知中仍然可见。
+> DLP 当前仅适用于聊天或频道线程中的实际消息。 目前 Teams DLP 中不包含包含短消息预览且基于用户通知设置显示的活动通知。  即使已应用 DLP 策略并删除了邮件本身的敏感信息，预览中显示的邮件部分的任何敏感信息仍将在通知中可见。
 
 如果你的组织具有 DLP，你现在可以定义防止用户在 Microsoft Teams 频道或聊天会话中共享敏感信息的策略。 下面是此保护的工作原理的一些示例：
 
@@ -184,7 +184,7 @@ The **What's this？** link opens an [article](data-loss-prevention-policies.md)
           > [!div class="mx-imgBorder"]
           > ![用于检测敏感内容的外部共享的 DLP 条件](../media/dlp-teams-external-sharing/external-condition.png)
 
-    - **操作**
+    - **Actions**
         - 限制外部用户访问内容
         
         - 使用电子邮件和策略提示通知用户

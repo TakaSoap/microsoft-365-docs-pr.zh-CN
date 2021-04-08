@@ -16,12 +16,12 @@ ms.collection:
 description: 管理员可以了解如何在 Microsoft Defender for Office 365 计划 2 中标识具有用户标记的特定用户组。 可在 Microsoft Defender for Office 365 中的警报、报告和调查之间使用标签筛选，以快速识别标记的用户。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 6f98dcfe3e8c44e852134e7a12def4ff78c1bcdd
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 4c439dcb91831475bc10da4a01d0fa29e7aae359
+ms.sourcegitcommit: 58fbcfd6437bfb08966b79954ca09556e636ff4a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51203775"
+ms.lasthandoff: 04/08/2021
+ms.locfileid: "51632198"
 ---
 # <a name="user-tags-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 中的用户标记
 
@@ -34,6 +34,9 @@ ms.locfileid: "51203775"
 - **自定义标记**：你可自己创建这些用户标记。
 
 如果你的组织具有 Defender for Office 365 计划 2 (包含在订阅中或作为加载项) ，则除了使用优先级帐户标记外，还可以创建自定义用户标记。
+
+> [!NOTE]
+> 目前，只能将用户标记应用于邮箱用户。
 
 向用户应用系统标记或自定义标记后，可以在警报、报告和调查中使用这些标记作为筛选器：
 
@@ -65,6 +68,8 @@ ms.locfileid: "51203775"
 
 - 还可以在 Microsoft 365 管理中心管理和监视优先帐户。 有关说明，请参阅 [管理和监视优先级帐户](../../admin/setup/priority-accounts.md)。
 
+- 有关保护管理员帐户 (特权 _帐户_) ，请参阅 [本主题](/azure/architecture/framework/security/critical-impact-accounts)。
+
 ## <a name="use-the-security--compliance-center-to-create-user-tags"></a>使用安全&中心创建用户标记
 
 1. 在安全与&中心，转到"**威胁** 管理"" \> **用户标记"。**
@@ -88,19 +93,19 @@ ms.locfileid: "51203775"
 
      完成后，单击“**添加**”。
 
-   - 单击 **"** 导入"选择一个包含用户或组的电子邮件地址的文本文件。 确保文本文件每行包含一个条目。
+   - 单击 **"** 导入&quot;选择一个包含用户或组的电子邮件地址的文本文件。 确保文本文件每行包含一个条目。
 
    完成后，单击“下一步”。
 
-5. 在" **审阅标记"** 页上，查看设置。 可以单击 **特定部分** 中的"编辑"进行更改。
+5. 在&quot; **审阅标记&quot;** 页上，查看设置。 可以单击 **特定部分** 中的&quot;编辑&quot;进行更改。
 
-   完成后，单击"提交 **"。**
+   完成后，单击&quot;提交 **&quot;。**
 
-## <a name="use-the-security--compliance-center-to-view-user-tags"></a>使用安全&中心查看用户标记
+## <a name=&quot;use-the-security--compliance-center-to-view-user-tags&quot;></a>使用安全&中心查看用户标记
 
-1. 在安全与&中心，转到"**威胁** 管理"" \> **用户标记"。**
+1. 在安全与&中心，转到&quot;**威胁** 管理&quot;&quot; \> **用户标记&quot;。**
 
-2. 在打开 **的"** 用户标记"页上，选择要查看的用户标记 (不要单击复选框") "。
+2. 在打开 **的&quot;** 用户标记&quot;页上，选择要查看的用户标记 (不要单击复选框") "。
 
 3. 在出现的只读详细信息飞出中，查看设置。
 
