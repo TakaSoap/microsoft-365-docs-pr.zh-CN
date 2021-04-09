@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 228a8813bcfff052c7f861dcd2962a94cb58c0fb
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: e19c64c01c892a8a5f47f5892882feab1242f897
+ms.sourcegitcommit: 437bdbf3f99610869811e80432a59b5f244f7a87
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51165962"
+ms.lasthandoff: 04/08/2021
+ms.locfileid: "51644484"
 ---
 # <a name="microsoft-defender-for-endpoint-data-storage-and-privacy"></a>Microsoft Defender for Endpoint 数据存储和隐私
 
@@ -86,7 +86,7 @@ Microsoft Azure 政府数据中心中部署的服务的数据访问权限仅授�
 
 
 ## <a name="is-data-shared-with-other-customers"></a>数据是否与其他客户共享？
-不正确。 客户数据与其他客户隔离，不共享。 但是，有关由 Microsoft 处理产生的数据（不包含任何特定于客户的数据）的见解可能会与其他客户共享。 每个客户只能访问从其自己的组织收集的数据和 Microsoft 提供的一般数据。
+否。 客户数据与其他客户隔离，不共享。 但是，有关由 Microsoft 处理产生的数据（不包含任何特定于客户的数据）的见解可能会与其他客户共享。 每个客户只能访问从其自己的组织收集的数据和 Microsoft 提供的一般数据。
 
 ## <a name="how-long-will-microsoft-store-my-data-what-is-microsofts-data-retention-policy"></a>Microsoft 将存储我的数据多久？ 什么是 Microsoft 的数据保留策略？
 **在服务载入时**<br>
@@ -94,6 +94,9 @@ Microsoft Azure 政府数据中心中部署的服务的数据访问权限仅授�
 
 **在合同终止或到期时**<br>
 当许可证在宽限期或暂停模式下时，你的数据将保留，并且将可供你使用。 在此期限结束时，该数据将从 Microsoft 系统中清除，使其不可恢复，不得晚于合同终止或到期的 180 天。
+
+**高级搜寻数据**<br>
+高级搜寻是一种基于查询的威胁搜寻工具，可用于浏览多达 30 天的原始数据。
 
 
 ## <a name="can-microsoft-help-us-maintain-regulatory-compliance"></a>Microsoft 可以帮助我们维护法规合规性吗？

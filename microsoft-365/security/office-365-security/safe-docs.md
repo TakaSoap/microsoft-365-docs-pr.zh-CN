@@ -16,19 +16,18 @@ ms.collection:
 description: 了解 Microsoft 365 E5 或 Microsoft 365 E5 安全中心中的安全文档。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 78ae99158e30046923d24897e7ab9b45adff31d0
-ms.sourcegitcommit: 39609c4d8c432c8e7d7a31cb35c8020e5207385b
+ms.openlocfilehash: 1186c7856d0b979c483cf6dd1c0a010ab582e2ce
+ms.sourcegitcommit: 437bdbf3f99610869811e80432a59b5f244f7a87
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "51445392"
+ms.lasthandoff: 04/08/2021
+ms.locfileid: "51644748"
 ---
 # <a name="safe-documents-in-microsoft-365-e5"></a>Microsoft 365 E5 中的安全文档
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **适用对象**
-- [适用于 Office 365 计划 2 的 Microsoft Defender](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 安全文档是 Microsoft 365 E5 或 Microsoft 365 E5 安全中心中的一项功能，它使用 Microsoft [](https://support.microsoft.com/office/d6f09ac7-e6b9-4495-8e43-2bbcdbcb6653) [Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)扫描在受保护的视图或 Office 应用程序防护中打开的文档[和文件](https://support.microsoft.com/topic/9e0fb9c2-ffad-43bf-8ba3-78f785fdba46)。
@@ -71,7 +70,7 @@ ms.locfileid: "51445392"
 
    - 即使 **安全** 文档将文件标识为恶意文件，也允许用户单击"受保护的视图"：建议关闭此选项， (将开关向左切换：关闭 ![ ](../../media/scc-toggle-off.png)) 。
 
-   完成后，单击“保存”。
+   完成后，单击“**保存**”。
 
    ![选择"安全附件"页上的"全局设置"后的安全文档设置。](../../media/safe-docs.png)
 

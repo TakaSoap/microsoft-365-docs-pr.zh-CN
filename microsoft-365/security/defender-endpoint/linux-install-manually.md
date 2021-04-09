@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 91dda662b12893fb010e8bb46541a87ea4a8cd27
-ms.sourcegitcommit: 987f70e44e406ab6b1dd35f336a9d0c228032794
+ms.openlocfilehash: c695eb0d786e73da5adb95bbca5c1747243d6203
+ms.sourcegitcommit: 437bdbf3f99610869811e80432a59b5f244f7a87
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/05/2021
-ms.locfileid: "51587667"
+ms.lasthandoff: 04/08/2021
+ms.locfileid: "51644736"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-for-linux-manually"></a>手动部署适用于 Linux 的 Microsoft Defender for Endpoint
 
@@ -385,7 +385,7 @@ Options:
 
 ## <a name="how-to-migrate-from-insiders-fast-to-production-channel"></a>如何从生产Insiders-Fast迁移到生产渠道
 
-1. 卸载适用于 macOS 的 MDE 的"Insiders-Fast channel"版本。
+1. 卸载适用于 Linux 的 MDE 的"Insiders-Fast channel"版本。
 
     ``
     sudo yum remove mdatp

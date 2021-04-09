@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - GEA150
 description: 了解如何使用 Microsoft 365 管理中心中的 Microsoft 365 报表仪表板获取 Microsoft 365 应用版使用情况报告。
-ms.openlocfilehash: 88ef5e1291c35bbac050609e26e2ac5adef9d981
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 5b45e7994126018701c409d4fbfc6f1172924773
+ms.sourcegitcommit: 437bdbf3f99610869811e80432a59b5f244f7a87
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51579586"
+ms.lasthandoff: 04/08/2021
+ms.locfileid: "51644263"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-365-apps-usage"></a>管理中心中的 Microsoft 365 报表 - Microsoft 365 应用版使用情况
 
@@ -33,7 +33,7 @@ Microsoft 365 **报表** 仪表板显示组织中各产品的活动概述。 它
 
 
  > [!NOTE]
- > 你必须是 Microsoft 365 中的全局管理员、全局读者或报告阅读者，或者 Exchange、SharePoint 或 Skype for Business 管理员才能查看报告。
+ > 你必须是 Microsoft 365 中的全局管理员、全局读者或报告阅读者，或者 Exchange、SharePoint 或 Skype for Business 管理员才能查看报告。 此报告中不支持共享计算机激活。
 
 ## <a name="how-to-get-to-the-microsoft-365-apps-usage-report"></a>如何访问 Microsoft 365 应用版使用情况报告
 
@@ -44,7 +44,8 @@ Microsoft 365 **报表** 仪表板显示组织中各产品的活动概述。 它
 
 通过查看用户和平台图表，可以查看用户的 Microsoft 365 应用 **活动**。 
 
-![Microsoft 365 应用版使用情况报告](../../media/0bcf67e6-a6e4-4109-a215-369f9f20ad84.png)
+> [!div class="mx-imgBorder"]
+> ![Microsoft 365 应用版使用情况报告](../../media/0bcf67e6-a6e4-4109-a215-369f9f20ad84.png)
 
 |项目|说明|
  |:-----|:-----|

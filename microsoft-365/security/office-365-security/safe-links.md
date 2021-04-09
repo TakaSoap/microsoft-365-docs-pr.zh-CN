@@ -27,12 +27,12 @@ ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: 在本文中，管理员可以了解 Defender for Office 365 中的安全链接保护，以保护其组织免受网络钓鱼和使用恶意 URL 的其他攻击。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 06ec3ab1a255e9eaa8c190ed5c248c9587273e03
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 1f27e1bbd051bd43d1f160707589db2bb7189b76
+ms.sourcegitcommit: 437bdbf3f99610869811e80432a59b5f244f7a87
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51203842"
+ms.lasthandoff: 04/08/2021
+ms.locfileid: "51644772"
 ---
 # <a name="safe-links-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 中的安全链接
 
@@ -118,11 +118,11 @@ ms.locfileid: "51203842"
 
 - **不允许用户单击到原始 URL：** 允许或阻止用户通过警告 [页面](#warning-pages-from-safe-links) 单击到原始 URL。 推荐值已启用。
 
-- **在通知和警告页面上** 显示组织品牌：此选项在警告页面上显示组织的品牌。 品牌打造可帮助用户识别合法警告，因为默认 Microsoft 警告页面经常被攻击者使用。 有关自定义品牌打造详细信息，请参阅将品牌添加到组织的 [Azure Active Directory 登录页面](/azure/active-directory/fundamentals/customize-branding)。
+- **在通知和警告页面上** 显示组织品牌：此选项在警告页面上显示组织的品牌。 品牌打造可帮助用户识别合法警告，因为默认 Microsoft 警告页面经常被攻击者使用。 有关自定义品牌打造详细信息，请参阅 [自定义组织的 Microsoft 365 主题](../../admin/setup/customize-your-organization-theme.md)。
 
 - **不要重写以下 URL：** 保留 URL。 保留不需要扫描的安全 URL 的自定义列表。 该列表对于每个安全链接策略都是唯一的。 有关不重写以下 **URL** 列表的信息，请参阅本文稍后的安全链接策略 [](#do-not-rewrite-the-following-urls-lists-in-safe-links-policies)中的"不重写以下 URL"列表一节。
 
-有关安全链接策略的"标准"和"严格"策略设置的建议值详细信息，请参阅 [安全链接策略设置](recommended-settings-for-eop-and-office365.md#safe-links-policy-settings)。
+  有关安全链接策略的"标准"和"严格"策略设置的建议值详细信息，请参阅 [安全链接策略设置](recommended-settings-for-eop-and-office365.md#safe-links-policy-settings)。
 
 - **收件人** 筛选器：需要指定确定策略适用的收件人条件和例外。 可以将这些属性用于条件和例外：
 
@@ -167,7 +167,7 @@ ms.locfileid: "51203842"
 - **不跟踪用户单击**
 - **不允许用户单击至初始 URL**
 
-这些设置在以前的电子邮件 [安全链接设置部分中进行了说明](#safe-links-settings-for-email-messages) 。
+这些设置之前在电子邮件 [的安全链接设置中进行了介绍](#safe-links-settings-for-email-messages)。
 
 为 Microsoft Teams 启用安全链接保护后，当受保护的用户单击链接时，将针对已知恶意链接列表检查 Teams 中的 URL (单击时保护) 。 不重写 URL。 如果发现链接是恶意链接，用户将具有以下体验：
 
@@ -256,22 +256,22 @@ Office 365 应用的安全链接保护具有以下客户端要求：
 
 在安全链接的全局设置中配置 URL 列表。 有关说明，请参阅 [配置"阻止以下 URL"列表](configure-global-settings-for-safe-links.md#configure-the-block-the-following-urls-list-in-the-security--compliance-center)。
 
-**注意**：
-
-- 有关被阻止的 URL 的真正通用列表，请参阅管理 [租户允许/阻止列表](tenant-allow-block-list.md)。
-
-- 限制：
-  - 最大条目数为 500。
-  - 条目的最大长度为 128 个字符。
-  - 所有条目不能超过 10，000 个字符。
-
-- 不要在 URL 末尾添加 `/` () 斜杠。 例如，使用 `https://www.contoso.com` ，而不是 `https://www.contoso.com/` 。
-
-- 例如或 (仅域 URL) `contoso.com` `tailspintoys.com` 将阻止包含该域的任何 URL。
-
-- 可以阻止子域，但不阻止整个域。 例如，阻止包含子域的任何 URL，但不阻止包含完整域 `toys.contoso.com*` 的 `contoso.com` URL。
-
-- 每个 URL 条目可以包含最多三 () `*` 通配符。
+> [!NOTE]
+> 
+> - 有关被阻止的 URL 的真正通用列表，请参阅管理 [租户允许/阻止列表](tenant-allow-block-list.md)。
+> 
+> - 限制：
+>   - 最大条目数为 500。
+>   - 条目的最大长度为 128 个字符。
+>   - 所有条目不能超过 10，000 个字符。
+> 
+> - 不要在 URL 末尾添加 `/` () 斜杠。 例如，使用 `https://www.contoso.com` ，而不是 `https://www.contoso.com/` 。
+> 
+> - 例如或 (仅域 URL) `contoso.com` `tailspintoys.com` 将阻止包含该域的任何 URL。
+> 
+> - 可以阻止子域，但不阻止整个域。 例如，阻止包含子域的任何 URL，但不阻止包含完整域 `toys.contoso.com*` 的 `contoso.com` URL。
+> 
+> - 每个 URL 条目可以包含最多三 () `*` 通配符。
 
 ### <a name="entry-syntax-for-the-block-the-following-urls-list"></a>"阻止以下 URL"列表的条目语法
 
@@ -281,7 +281,7 @@ Office 365 应用的安全链接保护具有以下客户端要求：
 
 |值|结果|
 |---|---|
-|`contoso.com` <p> 或者 <p> `*contoso.com*`|阻止域、子域和路径。 例如， `https://www.contoso.com` `https://sub.contoso.com` 、 和 `https://contoso.com/abc` 被阻止。|
+|`contoso.com` <p> 或 <p> `*contoso.com*`|阻止域、子域和路径。 例如， `https://www.contoso.com` `https://sub.contoso.com` 、 和 `https://contoso.com/abc` 被阻止。|
 |`https://contoso.com/a`|阻止 `https://contoso.com/a` 但不阻止其他子路径（如 `https://contoso.com/a/b` ）。|
 |`https://contoso.com/a*`|块 `https://contoso.com/a` 和其他子路径（如 `https://contoso.com/a/b` ）。|
 |`https://toys.contoso.com*`|阻止此示例中 (`toys` 子域) 但允许单击其他域 URL (或 `https://contoso.com` `https://home.contoso.com`) 。|
@@ -296,20 +296,20 @@ Office 365 应用的安全链接保护具有以下客户端要求：
 
 若要将条目添加到新的或现有的安全链接策略中的列表，请参阅 [创建安全链接策略](set-up-safe-links-policies.md#use-the-security--compliance-center-to-create-safe-links-policies) 或修改 [安全链接策略](set-up-safe-links-policies.md#use-the-security--compliance-center-to-modify-safe-links-policies)。
 
-**注意**：
-
-- 以下客户端无法识别安全链接策略中的 **不** 重写以下 URL 列表。 根据这些客户端中安全链接扫描的结果，可阻止包含在这些安全管理中的用户访问 URL：
-
-  - Microsoft Teams
-  - Office Web 应用
-
-  有关任何地方允许的 URL 的真正通用列表，请参阅 [管理租户允许/阻止列表](tenant-allow-block-list.md)。
-
-- 请考虑将常用的内部 URL 添加到列表中，以改进用户体验。 例如，如果你有本地服务（如 Skype for Business 或 SharePoint），你可以添加这些 URL 以将其从扫描中排除。
-
-- 如果安全链接策略中已有"不重写以下 **URL"** 条目，请务必查看列表并根据需要添加通配符。 例如，你的列表有一个类似 的条目 `https://contoso.com/a` ，你稍后决定包括子路径，如 `https://contoso.com/a/b` 。 不要添加新条目，而是向现有条目添加通配符，以便它成为 `https://contoso.com/a/*` 。
-
-- 每个 URL 条目可以包含最多三 () `*` 通配符。 通配符明确包括前缀或子域。 例如，条目与 不同，因为允许用户访问指定域中的子域 `contoso.com` `*.contoso.com/*` `*.contoso.com/*` 和路径。
+> [!NOTE]
+> 
+> - 以下客户端无法识别安全链接策略中的 **不** 重写以下 URL 列表。 根据这些客户端中安全链接扫描的结果，可阻止包含在这些安全管理中的用户访问 URL：
+> 
+>   - Microsoft Teams
+>   - Office Web 应用
+> 
+>   有关任何地方允许的 URL 的真正通用列表，请参阅 [管理租户允许/阻止列表](tenant-allow-block-list.md)。
+> 
+> - 请考虑将常用的内部 URL 添加到列表中，以改进用户体验。 例如，如果你有本地服务（如 Skype for Business 或 SharePoint），你可以添加这些 URL 以将其从扫描中排除。
+> 
+> - 如果安全链接策略中已有"不重写以下 **URL"** 条目，请务必查看列表并根据需要添加通配符。 例如，你的列表有一个类似 的条目 `https://contoso.com/a` ，你稍后决定包括子路径，如 `https://contoso.com/a/b` 。 不要添加新条目，而是向现有条目添加通配符，以便它成为 `https://contoso.com/a/*` 。
+> 
+> - 每个 URL 条目可以包含最多三 () `*` 通配符。 通配符明确包括前缀或子域。 例如，条目与 不同，因为允许用户访问指定域中的子域 `contoso.com` `*.contoso.com/*` `*.contoso.com/*` 和路径。
 
 ### <a name="entry-syntax-for-the-do-not-rewrite-the-following-urls-list"></a>"不重写以下 URL"列表的条目语法
 
@@ -363,9 +363,9 @@ Office 365 应用的安全链接保护具有以下客户端要求：
 
 ![原始"此网站已分类为恶意"警告](../../media/b9efda09-6dd8-46ef-82cb-56e4d538b8f5.png)
 
-### <a name="blocked-url-warning"></a>阻止的 URL 警告
+### <a name="blocked-url-warning&quot;></a>阻止的 URL 警告
 
-单击的 URL 已被您组织的管理员手动阻止 (安全链接列表的全局设置中的"阻止以下 URL") 。 安全链接未扫描该链接，因为它已被手动阻止。
+单击的 URL 已被您组织的管理员手动阻止 (安全链接列表的全局设置中的&quot;阻止以下 URL") 。 安全链接未扫描该链接，因为它已被手动阻止。
 
 管理员手动阻止特定 URL 的原因有多种。 如果认为不应阻止网站，请与管理员联系。
 

@@ -1,7 +1,7 @@
 ---
 title: 跨 Microsoft 365 部署威胁防护功能
 description: 大致了解 Microsoft 365 E5 中的威胁防护服务和安全性功能。 使用 Microsoft 365 E5 保护用户帐户、设备、电子邮件内容等。
-keywords: 威胁防护， 安全性， E5， 网络攻击， 恶意软件， M365， 解决方案
+keywords: 高级威胁防护， 安全性， Microsoft 365 E5， 解决方案， 保护设备， defender
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-threatprotection
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: 806c97a55b3cbe46d597566425cf71476586ecee
-ms.sourcegitcommit: dc1ac43a57fac6f57438859dd668f927d94fdf34
+ms.openlocfilehash: ea28e9c244b6b8faaeb9b1f3685d57169605cbb9
+ms.sourcegitcommit: a46532bb422ee51331f478ff50cc5444586bf6a9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "51604374"
+ms.lasthandoff: 04/09/2021
+ms.locfileid: "51650310"
 ---
 # <a name="deploy-threat-protection-capabilities-across-microsoft-365-e5"></a>跨 Microsoft 365 E5 部署威胁防护功能
 
@@ -57,7 +57,7 @@ Microsoft 365 Defender 将信号和数据一起引入统一 [的 Microsoft 365 �
 > [!div class="mx-imgBorder"]
 > ![M365 威胁防护信号](../media/deploy-threat-protection/deploy-threat-protection-across-m365.png)
 
-|解决方案/功能  |Description  |
+|解决方案/功能  |说明  |
 |---------|---------|
 |多重身份验证和条件访问     |防止标识和设备遭到入侵。 从此保护开始，因为它具有基础性。 本指南中建议的配置包括 Azure AD Identity Protection 作为先决条件。     |
 |Microsoft Defender for Identity     |  基于云的安全解决方案，利用本地 Active Directory 域服务 (AD DS) 信号识别、检测和调查针对组织的高级威胁、泄露的身份和恶意预览体验成员操作。 接下来重点介绍 Microsoft Defender for Identity，因为它可保护本地和云基础结构，没有依赖关系或先决条件，并且可以提供即时安全优势。 | 

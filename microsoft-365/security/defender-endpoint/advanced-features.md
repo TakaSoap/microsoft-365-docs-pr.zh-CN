@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: bcb96ea29649bf3525b2ffcf6d5cbb5d299bacf3
-ms.sourcegitcommit: b56a8ff9bb496bf2bc1991000afca3d251f45b72
+ms.openlocfilehash: 3ad31e385ed1a3c32a261286b91912c7b2562f87
+ms.sourcegitcommit: a46532bb422ee51331f478ff50cc5444586bf6a9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "51418112"
+ms.lasthandoff: 04/09/2021
+ms.locfileid: "51650286"
 ---
 # <a name="configure-advanced-features-in-defender-for-endpoint"></a>在 Defender for Endpoint 中配置高级功能
 
@@ -64,6 +64,11 @@ ms.locfileid: "51418112"
 
 启用此功能后，您可以在实时响应会话中运行未签名的脚本。
 
+## <a name="always-remediate-pua"></a>始终修正 PUA
+PUA (可能不需要) 是一类软件，可能会导致计算机运行缓慢、显示意外广告或最差时安装其他可能意外或不需要的软件。 
+
+启用此功能，以便 (PUA) 在租户的所有设备上修正可能不需要的应用程序，即使未在设备上配置 PUA 保护。 这有助于防止用户无意中在设备上安装不需要的应用程序。 关闭后，修正取决于设备配置。 
+
 
 ## <a name="restrict-correlation-to-within-scoped-device-groups"></a>限制与作用域内设备组之间的关联
 启用此设置后，警报将基于其作用域的设备组关联到单独的事件。 默认情况下，在整个租户范围内发生事件关联。
@@ -71,9 +76,9 @@ ms.locfileid: "51418112"
 >[!NOTE]
 >更改此设置仅影响未来的警报关联。
 
-
 ## <a name="enable-edr-in-block-mode"></a>在阻止模式下启用 EDR
 在阻止模式下 (EDR) 终结点检测和响应功能可提供对恶意项目的保护，即使 Microsoft Defender 防病毒在被动模式下运行。 打开后，阻止模式下的 EDR 将阻止在设备上检测到的恶意项目或行为。 阻止模式下的 EDR 在后台工作，可修正在泄露后检测到的恶意项目。
+
 
 ## <a name="autoresolve-remediated-alerts"></a>Autoresolve 修正警报
 
@@ -119,13 +124,13 @@ ms.locfileid: "51418112"
 > [!NOTE]
 > 网络保护利用信誉服务，在可能超出你为 Defender for Endpoint 数据选择的位置之外的位置处理请求。
 
-
 ## <a name="tamper-protection"></a>防篡改保护
 在某些类型的网络攻击期间，不良参与者会尝试在你的计算机上禁用安全功能，如防病毒保护。 不良操作者希望禁用安全功能，以便更轻松地访问数据、安装恶意软件，或者以其他方式利用你的数据、标识和设备。
 
 防篡改保护实质上会锁定 Microsoft Defender 防病毒，并阻止通过应用和方法更改安全设置。
 
 保持防篡改功能打开，以防止对安全解决方案及其基本功能进行不必要的更改。
+
 
 ## <a name="show-user-details"></a>显示用户详细信息
 
@@ -137,6 +142,7 @@ ms.locfileid: "51418112"
 
 有关详细信息，请参阅 [调查用户帐户](investigate-user.md)。
 
+
 ## <a name="skype-for-business-integration"></a>Skype for Business 集成
 
 启用 Skype for Business 集成后，你能够使用 Skype for Business、电子邮件或电话与用户进行通信。 当你需要与用户通信并降低风险时，这很方便。
@@ -144,7 +150,7 @@ ms.locfileid: "51418112"
 > [!NOTE]
 > 当设备与网络隔离时，有一个弹出窗口，你可以选择启用 Outlook 和 Skype 通信，这将允许用户在断开与网络的连接时与其通信。 当设备在隔离模式下时，此设置适用于 Skype 和 Outlook 通信。
 
-## <a name="azure-advanced-threat-protection-integration"></a>Azure 高级威胁防护集成
+## <a name="microsoft-defender-for-identity-integration"></a>Microsoft Defender for Identity 集成
 
 与 Azure 高级威胁防护的集成允许你直接透视另一个 Microsoft Identity 安全产品。 Azure 高级威胁防护通过有关可疑遭到入侵的帐户和相关资源的更多见解来扩大调查。 通过启用此功能，你将通过从标识的角度透视网络来丰富基于设备的调查功能。
 
@@ -162,13 +168,12 @@ ms.locfileid: "51418112"
 
 若要在 Office 365 威胁智能中接收上下文设备集成，你需要在安全与合规中心仪表板中启用适用于终结点& Defender。 有关详细信息，请参阅威胁 [调查和响应](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-ti)。
 
-## <a name="microsoft-threat-experts"></a>Microsoft 威胁专家
+## <a name="microsoft-threat-experts---targeted-attack-notifications"></a>Microsoft 威胁专家 - 目标攻击通知
 
 在两个 Microsoft 威胁专家组件中，目标攻击通知一般可用。 专家按需功能仍处于预览阶段。 只有在应用预览版且应用程序已获得批准后，才能使用专家按需功能。 可以通过适用于终结点门户的 Defender 警报仪表板接收来自 Microsoft 威胁专家的定向攻击通知，如果已配置，可通过电子邮件接收。
 
 > [!NOTE]
 > 适用于终结点的 Defender 中的 Microsoft 威胁专家功能随企业移动性 + 安全性 的 E5 许可证 [一起提供](https://www.microsoft.com/cloud-platform/enterprise-mobility-security)。
-
 ## <a name="microsoft-cloud-app-security"></a>Microsoft Cloud App Security
 
 启用此设置将 Defender for Endpoint 信号转发到 Microsoft Cloud App Security，以便更深入地了解云应用程序使用情况。 转发的数据存储和处理位置与 Cloud App Security 数据位于同一位置。
@@ -176,13 +181,10 @@ ms.locfileid: "51418112"
 > [!NOTE]
 > 此功能将在运行 Windows 10 版本 1709 (OS 内部版本 16299.1085（具有[KB4493441](https://support.microsoft.com/help/4493441)版本）的设备上提供企业移动性[+](https://www.microsoft.com/cloud-platform/enterprise-mobility-security)安全性的 E5) ， Windows 10 版本 1803 (OS 内部版本 17134.704（带[KB4493464](https://support.microsoft.com/help/4493464)) 、Windows 10 版本 1809 (操作系统版本 17763.379，KB4489899) 或更高版本 Windows 10 版本）。 [](https://support.microsoft.com/help/4489899)
 
-## <a name="azure-information-protection"></a>Azure 信息保护
-
-打开此设置将允许信号转发到 Azure 信息保护。 它使数据所有者和管理员能够查看载入的设备上受保护的数据和设备风险分级。
-
 ## <a name="microsoft-secure-score"></a>Microsoft 安全功能分数
 
 将 Microsoft Defender for Endpoint 信号转发到 Microsoft 365 安全中心中的 Microsoft 安全分数。 打开此功能后，Microsoft 安全功能分数可了解设备的安全状态。 转发数据的存储和处理位置与 Microsoft 安全分数数据位于同一位置。
+
 
 ### <a name="enable-the-microsoft-defender-for-endpoint-integration-from-the-microsoft-defender-for-identity-portal"></a>从 Microsoft Defender 标识门户启用适用于终结点的 Microsoft Defender 集成
 
@@ -196,6 +198,17 @@ ms.locfileid: "51418112"
 
 在两个门户上完成集成步骤后，你将能够查看设备详细信息或用户详细信息页面中的相关警报。
 
+## <a name="web-content-filtering"></a>Web 内容筛选
+阻止访问包含不需要的内容的网站，并跟踪所有域中的 Web 活动。 若要指定要阻止的 Web 内容类别，请创建 [Web 内容筛选策略](https://security.microsoft.com/preferences2/web_content_filtering_policy)。 确保你在部署 Microsoft Defender for Endpoint 安全基线时具有阻止 [模式下的网络保护](https://devicemanagement.microsoft.com/#blade/Microsoft_Intune_Workflows/SecurityBaselineSummaryMenu/overview/templateType/2)。
+
+
+## <a name="share-endpoint-alerts-with-microsoft-compliance-center"></a>与 Microsoft 合规中心共享终结点警报
+将终结点安全警报及其会审状态转发到 Microsoft 合规中心，从而通过警报增强内部风险管理策略，并修正内部风险，然后再造成危害。 转发的数据将处理并存储在与 Office 365 数据相同的位置。
+
+在内部风险管理 [设置中](/microsoft-365/compliance/insider-risk-management-settings#indicators) 配置安全策略违反指示器后，适用于终结点的 Defender 警报将共享与适用用户的内部风险管理。
+
+
+
 ## <a name="microsoft-intune-connection"></a>Microsoft Intune 连接
 
 Defender for Endpoint 可以与 [Microsoft Intune](https://docs.microsoft.com/intune/what-is-intune) 集成 [，以启用基于设备风险的条件访问](https://docs.microsoft.com/intune/advanced-threat-protection#enable-windows-defender-atp-in-intune)。 当你 [启用此功能时](configure-conditional-access.md)，你将能够与 Intune 共享 Defender for Endpoint 设备信息，从而增强策略实施。
@@ -207,6 +220,7 @@ Defender for Endpoint 可以与 [Microsoft Intune](https://docs.microsoft.com/in
 
 - 企业移动性 + 安全性 E3、Windows E5 (或 Microsoft 365 企业版 E5) 
 - 一个活动的 Microsoft Intune 环境，与加入 Azure AD 的 Intune 托管的 Windows 10 [设备一起](https://docs.microsoft.com/azure/active-directory/devices/concept-azure-ad-join/)。
+
 
 ### <a name="conditional-access-policy"></a>条件访问策略
 
@@ -221,11 +235,8 @@ Defender for Endpoint 可以与 [Microsoft Intune](https://docs.microsoft.com/in
 
 你将有权访问即将推出的功能，你可以提供反馈，以帮助在功能全面可用之前改进整体体验。
 
-## <a name="share-endpoint-alerts-with-microsoft-compliance-center"></a>与 Microsoft 合规中心共享终结点警报
 
-将终结点安全警报及其会审状态转发到 Microsoft 合规中心，从而通过警报增强内部风险管理策略，并修正内部风险，然后再造成危害。 转发的数据将处理并存储在与 Office 365 数据相同的位置。
 
-在内部风险管理 [设置中](/microsoft-365/compliance/insider-risk-management-settings#indicators) 配置安全策略违反指示器后，适用于终结点的 Defender 警报将共享与适用用户的内部风险管理。
 
 ## <a name="related-topics"></a>相关主题
 

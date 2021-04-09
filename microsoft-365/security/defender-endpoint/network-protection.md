@@ -17,14 +17,14 @@ ms.custom: asr
 ms.technology: mde
 ms.date: 03/08/2021
 ms.topic: how-to
-ms.openlocfilehash: be98bf810d00b6e39ba9d2674604a9fd2128a8cc
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 2ef3fbeec65be512dfe07f1d533df4d8e9b31532
+ms.sourcegitcommit: 437bdbf3f99610869811e80432a59b5f244f7a87
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51198645"
+ms.lasthandoff: 04/08/2021
+ms.locfileid: "51644496"
 ---
-# <a name="protect-your-network"></a>保护网络
+# <a name="protect-your-network"></a>保护你的网络
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -90,6 +90,16 @@ DeviceEvents
 | 5007 | 更改设置时的事件 |
 | 1125 | 在审核模式下触发网络保护时的事件 |
 | 1126 | 在阻止模式下触发网络保护时的事件 |
+
+## <a name="network-protection-troubleshooting"></a>网络保护疑难解答
+
+由于网络保护运行的环境，Microsoft 可能无法检测操作系统代理设置。 在某些情况下，网络保护客户端无法访问云服务。 若要解决连接问题，具有 E5 许可证的客户应配置以下 Defender 注册表项之一：
+
+```console
+reg add "HKLM\Software\Microsoft\Windows Defender" /v ProxyServer /d "<proxy IP address: Port>" /f
+reg add "HKLM\Software\Microsoft\Windows Defender" /v ProxyPacUrl /d "<Proxy PAC url>" /f
+
+```
 
 ## <a name="related-articles"></a>相关文章
 

@@ -15,12 +15,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 description: Microsoft Defender for Office 365 E5、ATP P1 和 ATP P2 客户现在可以通过电子邮件实体页面获得每个电子邮件的 360 度视图。
-ms.openlocfilehash: 6d2777113e7e9f9ce760dab3b83252eceab520ff
-ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
+ms.openlocfilehash: 7797e9f5965f43b856c2c34df1f99fddf72d5df5
+ms.sourcegitcommit: a46532bb422ee51331f478ff50cc5444586bf6a9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "51599483"
+ms.lasthandoff: 04/09/2021
+ms.locfileid: "51650334"
 ---
 # <a name="the-email-entity-page"></a>"电子邮件实体"页面
 
@@ -119,7 +119,7 @@ Microsoft Defender for Office 365 (或 MDO) E5 以及 MDO P1 和 P2 的管理员
   - 在邮箱上启用垃圾邮件规则后，Exchange Online Protection (EOP) 可根据某些条件将邮件移动到垃圾邮件。 移动可以基于垃圾邮件筛选裁定操作 将 *邮件移动到垃圾邮件文件夹*，或邮箱上的阻止发件人列表。 禁用垃圾邮件规则可阻止根据邮箱上的"安全发件人"列表将邮件发送到"垃圾邮件"文件夹。
   - 在邮箱上禁用垃圾邮件规则后，EOP 无法根据垃圾邮件筛选裁定操作"将邮件移动到垃圾邮件文件夹"或邮箱的安全列表集合，将邮件移动到"垃圾邮件"文件夹。
 
-- *批量合规级别 (BCL) ：* 邮件的批量投诉 () BCL 级别。 BCL 越高，如果电子邮件可能是垃圾邮件，则 () 产生投诉的可能性更大。
+- *批量投诉级别 (BCL) ：* 邮件的批量投诉 (BCL) 级别。 BCL 越高，如果电子邮件可能是垃圾邮件，则 () 产生投诉的可能性更大。
 
 - *垃圾邮件可信度 (SCL) ：* 邮件的 (SCL) 级别。 值越高，邮件是垃圾邮件的可能性就越大。
 

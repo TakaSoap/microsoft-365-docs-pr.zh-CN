@@ -18,12 +18,12 @@ description: 了解如何识别和修正 365 中的非法同意授予Microsoft O
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 4a9b3ff11acb32a4b3038cc18922f8e22fda0b4c
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 7869419677ba1d5d6b480b7f0dea7f67880af0c7
+ms.sourcegitcommit: 437bdbf3f99610869811e80432a59b5f244f7a87
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51203662"
+ms.lasthandoff: 04/08/2021
+ms.locfileid: "51644676"
 ---
 # <a name="detect-and-remediate-illicit-consent-grants"></a>检测和修正非法同意授予
 
@@ -128,7 +128,7 @@ ms.locfileid: "51203662"
 5. 运行此 PowerShell 命令：
 
    ```powershell
-   Get-AzureADPSPermissions.ps1 | Export-csv -Path "Permissions.csv" -NoTypeInformation
+   .\Get-AzureADPSPermissions.ps1 | Export-csv -Path "Permissions.csv" -NoTypeInformation
    ```
 
 该脚本生成一个名为 Permissions.csv。 按照以下步骤查找非法应用程序权限授予：

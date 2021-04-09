@@ -21,12 +21,12 @@ ms.custom:
 description: 管理员可以了解反垃圾邮件设置和筛选器，这些设置和筛选器有助于在 Exchange Online Protection (EOP) 。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 5f19330d7af9c4a6601baa9562766eb5a6e7052a
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: eaff771d6fa0490819ec076b5a9a43ac843cf207
+ms.sourcegitcommit: a46532bb422ee51331f478ff50cc5444586bf6a9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51203903"
+ms.lasthandoff: 04/09/2021
+ms.locfileid: "51650262"
 ---
 # <a name="anti-spam-protection-in-eop"></a>EOP 中的反垃圾邮件保护
 
@@ -91,7 +91,7 @@ EOP 中的反垃圾邮件设置由以下技术决定：
 
   - **DMARC：** 基于域的邮件身份验证、报告和一致性可帮助目标电子邮件系统确定对未通过 SPF 或 DKIM 检查的邮件执行哪些操作，并提供了另一个信任级别的电子邮件合作伙伴。 有关详细信息，请参阅使用 [DMARC 验证 Microsoft 365 中的电子邮件](use-dmarc-to-validate-email.md)。
 
-- 验证批量 **电子邮件** 设置：在反垃圾邮件策略中配置的批量兼容级别 (BCL) 阈值确定是否将批量电子邮件 (也称为灰色邮件) 标记为垃圾邮件。  默认情况下，启用的仅 PowerShell 设置 _MarkAsSpamBulkMail_ 也会对结果产生影响。 有关详细信息，请参阅在 [Microsoft 365 中配置反垃圾邮件策略](configure-your-spam-filter-policies.md)。
+- 验证批量电子邮件设置：在反垃圾邮件策略中配置的批量投诉级别 (BCL) 阈值确定是否将批量电子邮件 (也称为灰色邮件) 标记为垃圾邮件。  默认情况下，启用的仅 PowerShell 设置 _MarkAsSpamBulkMail_ 也会对结果产生影响。 有关详细信息，请参阅在 [Microsoft 365 中配置反垃圾邮件策略](configure-your-spam-filter-policies.md)。
 
 ### <a name="prevent-the-delivery-of-spam-to-the-inbox"></a>阻止将垃圾邮件发送到收件箱
 

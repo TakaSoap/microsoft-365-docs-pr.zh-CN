@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 687077b1c9ff2449d9994875419a97cf0c503c2f
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 86bc6ef03438b637f62cf0e2a46e418dbea7a3c1
+ms.sourcegitcommit: a46532bb422ee51331f478ff50cc5444586bf6a9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51581078"
+ms.lasthandoff: 04/09/2021
+ms.locfileid: "51650274"
 ---
 # <a name="microsoft-365-defender"></a>Microsoft 365 Defender
 
@@ -56,7 +56,7 @@ Microsoft 365 Defender 是一款统一的漏洞前和漏洞后企业防御套件
 
 在此交互式指南中，你将了解如何使用 Microsoft 365 Defender 保护你的组织。 你将看到 Microsoft 365 Defender 如何自动帮助检测安全风险、调查组织攻击和防止有害的活动。
 
-[查看交互式指南](https://aka.ms/M365Defender-InteractiveGuide)
+[请查看交互指南](https://aka.ms/M365Defender-InteractiveGuide)
 
 
 
@@ -96,3 +96,7 @@ Microsoft 365 Defender 跨产品功能包括：
 必须先满足 Microsoft 365 Defender 许可要求，然后才能在 Microsoft 365 安全中心中[](https://security.microsoft.com)启用该服务，security.microsoft.com。 有关详细信息，请阅读：
 - [授权要求](prerequisites.md#licensing-requirements)
 - [打开 Microsoft 365 Defender](m365d-enable.md)
+
+
+## <a name="see-also"></a>另请参阅
+- [跨 Microsoft 365 E5 部署威胁防护功能](https://docs.microsoft.com/microsoft-365/solutions/deploy-threat-protection)

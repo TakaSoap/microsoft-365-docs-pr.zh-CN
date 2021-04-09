@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: da585eea-f576-4f55-a1e0-87090b6aaa9d
 description: 管理员角色映射到业务功能，并授予在管理中心执行特定任务的权限。 例如，”服务管理员”可通过管理中心打开支持票证。
-ms.openlocfilehash: 8092d199dc6ecfda5d76c9198ba44a72ec7b4d71
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: e0155ee9e263d4b62dced0e2bd943781ccf93a4c
+ms.sourcegitcommit: 437bdbf3f99610869811e80432a59b5f244f7a87
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51197681"
+ms.lasthandoff: 04/08/2021
+ms.locfileid: "51644251"
 ---
 # <a name="about-admin-roles"></a>关于管理员角色
 
@@ -80,7 +80,7 @@ Microsoft 365 管理中心可让你管理 Azure AD 角色和 Microsoft Intune �
 |许可证管理员    |   为需要分配管理许可证的用户分配许可证管理员角色，删除用户的许可证并编辑其使用位置。 <br/><br/> 帐单管理员可以： <br> - 重新处理基于组的许可证分配 <br> - 将产品许可证分配给组，以便进行基于组的许可  |
 |Office 应用管理员    |   为需要执行以下操作的用户分配 Office 应用管理员角色： <br> - 使用 Office 云策略服务为 Office 创建和管理基于云的策略 <br> - 创建和管理服务请求 <br> - 管理用户在 Office 应用中看到的新增内容   <br> - 监视服务运行状况  |
 |密码管理员  |   将密码管理员角色分配给需要为非管理员和密码管理员重置密码的用户。   |
-|服务支持管理员   |   将服务支持管理员角色作为附加角色分配给管理员或用户，他们除了要负责管理员的常规工作外，还需要做以下工作： <br> - 打开和管理服务请求 <br> - 查看和共享消息中心帖子   |
+|服务支持管理员   |   将服务支持管理员角色作为附加角色分配给管理员或用户，他们除了要负责管理员的常规工作外，还需要做以下工作： <br> - 打开和管理服务请求 <br> - 查看和共享消息中心帖子 <br> - 监视服务运行状况   |
 |SharePoint 管理员    |   为需要访问和管理 SharePoint Online 管理中心的用户分配 SharePoint 管理员角色。 <br><br>SharePoint 管理员还可以： <br> - 创建和删除网站 <br> - 管理网站集和全局 SharePoint 设置   |
 |Teams 服务管理员    |   为需要访问和管理 Teams 服务管理中心的用户分配 Teams 管理员角色。 <br><br>Teams 服务管理员还可以： <br> - 管理会议 <br> - 管理会议网桥 <br> - 管理所有组织范围内的设置，包括联合身份验证、Teams 升级和 Teams 客户端设置   |
 |用户管理员     |    为需要对所有用户执行以下操作的用户分配用户管理员角色： <br> - 添加用户和组 <br> - 分配许可证 <br> - 管理大多数用户属性 <br> - 创建和管理用户视图 <br> - 更新密码过期策略 <br> - 管理服务请求 <br> - 监视服务运行状况 <br><br>  用户管理员还可以对非管理员和分配有以下角色的用户执行以下操作：目录读取者、来宾邀请者、支持管理员、消息中心读取者和报表阅读人员： <br> - 管理用户名<br> - 删除和还原用户<br> - 重置密码 <br> - 强制用户注销 <br> - 更新 (FIDO) 设备密钥   |

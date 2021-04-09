@@ -14,12 +14,12 @@ ms.custom: AdminSurgePortfolio
 search.appverid: MET150
 ROBOTS: NOINDEX, NOFOLLOW
 description: 从 Microsoft 365 管理中心中的集成应用门户查找、测试和部署组织中用户和组的 Microsoft 和 Microsoft 合作伙伴应用。
-ms.openlocfilehash: f806d48e0ed582b1b5c1ee262058ce987125bd99
-ms.sourcegitcommit: 7ebed5810480d7c49f8ca03207b5ea84993d253f
+ms.openlocfilehash: da67cbe5f8b6e5f2da42e1f4b57a55d7d4a768fb
+ms.sourcegitcommit: 437bdbf3f99610869811e80432a59b5f244f7a87
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51488285"
+ms.lasthandoff: 04/08/2021
+ms.locfileid: "51644472"
 ---
 # <a name="test-and-deploy-microsoft-365-apps-by-partners-in-the-integrated-apps-portal"></a>由合作伙伴在集成应用门户中测试和部署 Microsoft 365 应用版
 
@@ -29,7 +29,7 @@ Microsoft 365 管理中心让你能够灵活地从单个位置部署单个应用
 
 若要详细了解合作伙伴如何创建这些应用，请参阅如何为商业市场规划 [SaaS 产品](https://go.microsoft.com/fwlink/?linkid=2158277)
 
-集成应用门户仅可供全局管理员访问，并且仅对 WorldWide 客户可用。 此功能在自主云和政府云中不可用。
+集成应用门户仅可供全局管理员访问，并且仅适用于全球客户。 此功能在自主云和政府云中不可用。
 
 集成应用门户显示应用列表，其中包括单个应用和部署你的组织的合作伙伴的 Microsoft 365 应用。 仅列出了 Web 应用、SPFx 应用、Office 加载项和 Teams 应用。 对于 Web 应用，你可以看到 2 种类型的应用。
 
@@ -124,14 +124,14 @@ Microsoft 365 管理中心让你能够灵活地从单个位置部署单个应用
 
 ### <a name="can-administrators-delete-or-remove-apps"></a>管理员能否删除或删除应用？
 
-是。 全局管理员可以删除或删除应用。
+能。 全局管理员可以删除或删除应用。
 
 - 从列表视图中选择应用。 在" **配置"** 选项卡上，选择要删除的应用。  
 
 ### <a name="is-integrated-apps-available-in-sovereign-cloud"></a>集成应用在自主云中是否可用？
 
-不正确。 集成应用对独立云客户不可用。
+否。 集成应用对独立云客户不可用。
 
 ### <a name="is-integrated-apps-available-in-government-clouds"></a>集成应用在政府云中是否可用？
 
-不正确。 集成应用不适用于政府云客户。
+否。 集成应用不适用于政府云客户。

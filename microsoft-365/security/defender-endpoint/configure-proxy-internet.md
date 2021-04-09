@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: b529b1c7fa5c4f9f81cb6bfbb5f1a6bd7823a9ad
-ms.sourcegitcommit: 987f70e44e406ab6b1dd35f336a9d0c228032794
+ms.openlocfilehash: 97d1d50e2557cbb760248738b1f096614873958f
+ms.sourcegitcommit: 437bdbf3f99610869811e80432a59b5f244f7a87
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/05/2021
-ms.locfileid: "51587595"
+ms.lasthandoff: 04/08/2021
+ms.locfileid: "51644700"
 ---
 # <a name="configure-device-proxy-and-internet-connectivity-settings"></a>配置设备代理和 Internet 连接设置
 
@@ -57,6 +57,13 @@ WinHTTP 配置设置独立于 Windows Internet (WinINet) Internet 浏览代理�
 ## <a name="configure-the-proxy-server-manually-using-a-registry-based-static-proxy"></a>使用基于注册表的静态代理手动配置代理服务器
 
 配置基于注册表的静态代理，以在不允许计算机连接到 Internet 时仅允许 Defender for Endpoint 传感器报告诊断数据并与 Defender for Endpoint 服务通信。
+
+> [!NOTE]
+> - 在 Windows 10 或 Windows Server 2019 上使用此选项时，建议让以下 (或更高版本) 版本和累积更新汇总：</br>
+> Windows 10 版本 1909 - https://support.microsoft.com/kb/4601380</br>
+> Windows 10 版本 2004 - https://support.microsoft.com/kb/4601382</br>
+> Windows 10 版本 20H2 - https://support.microsoft.com/kb/4601382</br>
+> 这些更新改进了 CnC (Command and Control) 连接和可靠性。</br>
 
 静态代理可以通过组策略 (GP) 配置。 可以在以下位置找到组策略：
 
@@ -115,7 +122,7 @@ netsh winhttp reset proxy
 以下可下载的电子表格列出了网络必须能够连接到的服务及其关联 URL。 应确保没有拒绝访问这些 URL 的防火墙或网络筛选规则，或者您可能需要专门为它们创建允许规则。 
 
 
-|**域列表电子表格**|**说明**|
+|**域列表电子表格**|**Description**|
 |:-----|:-----|
 |![适用于终结点 URL 电子表格的 Microsoft Defender 缩略图](images/mdatp-urls.png)<br/>  | 服务位置、地理位置和操作系统的特定 DNS 记录的电子表格。 <br><br>[在此处下载电子表格。](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx) 
 
