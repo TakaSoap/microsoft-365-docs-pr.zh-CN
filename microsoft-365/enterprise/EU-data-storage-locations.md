@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 确定你的 Microsoft 365 客户数据在欧盟内的存储位置
-ms.openlocfilehash: 28bfa7c18aff485e084e4d77bb2a36f0f5b7e95f
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 19df44a702d842d4171d867946fb818d3f36fd80
+ms.sourcegitcommit: 0ff6edbf52562138a69c6675cb0274ec984986c3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50905676"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "51615227"
 ---
 # <a name="data-locations-for-the-european-union"></a>欧盟的数据位置
 
@@ -92,7 +92,7 @@ Microsoft 使用多层安全和加密协议来保护你的数据。 请在 [Micr
 
 默认情况下，Microsoft 托管密钥保护你的客户数据。 在任何物理介质上保留的数据始终使用符合 FIPS 140-2 的加密协议进行加密。 你还可以使用客户管理的密钥 (CMK)、[双重加密](../compliance/double-key-encryption.md)和/或硬件安全模块 (HSM) 来增强数据保护。
 
-数据中心之间移动的所有数据流量也使用 IEEE 802.1AE MAC 安全标准进行保护，以防止物理的“中间人”攻击。
+此外，Microsoft 默认情况下使用 [传输层安全性 (TLS)](https://wikipedia.org/wiki/Transport_Layer_Security) 协议，在云服务和客户之间旅行时加密数据。 Microsoft 服务与连接到 Microsoft 365 服务的客户端系统协商 TLS 连接。 
 
 为了防止未经授权以物理方式访问数据中心，我们采用了严格的操作控制和流程，包括 24×7 视频监控、经过培训的安全人员和流程以及智能卡或生物识别多重访问控制。 在生命周期结束时，数据磁盘将被粉碎和销毁。 如果用于存储的磁盘驱动器发生硬件故障或达到其使用寿命，则会被安全地擦除或销毁。 驱动器上的数据将被完全覆盖，以确保无法通过任何方式恢复数据。 当此类设备停用后，将按照 NIST SP 800-88 R1 的《介质净化指导原则》对其进行粉碎和销毁。 销毁记录将作为 Microsoft 审核和合规流程的一部分予以保留和审查。 所有 Microsoft 365 服务都使用经过批准的介质存储和处置管理服务。
 

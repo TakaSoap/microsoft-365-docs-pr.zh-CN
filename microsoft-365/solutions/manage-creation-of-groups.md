@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 4c46c8cb-17d0-44b5-9776-005fced8e618
 description: 了解如何控制哪些用户可以创建 Microsoft 365 组。
-ms.openlocfilehash: 9c3edf335ce09f04e9b0b538e69fa607a9c34044
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 092ff821911ef0af2b7867e1b870b68b1b6355b3
+ms.sourcegitcommit: dcc6bfd228ca9070975ce9eb14574e084f9ed92c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50929152"
+ms.lasthandoff: 04/09/2021
+ms.locfileid: "51656981"
 ---
 # <a name="manage-who-can-create-microsoft-365-groups"></a>管理可创建 Microsoft 365 组的人员
 
@@ -39,11 +39,11 @@ ms.locfileid: "50929152"
 - Yammer
 - Microsoft Teams
 - Microsoft Stream
-- 规划器
+- Planner
 - Power BI (经典) 
 - Project 网页/路线图
 
-本文中的步骤不会阻止某些角色的成员创建组。 Office 365 全局管理员可以通过任何方式（如 Microsoft 365 管理中心、Planner、Teams、Exchange 和 SharePoint Online）创建组。 其他角色可以通过有限的方式创建组，如下所示。
+本文中的步骤不会阻止某些角色的成员创建组。 Office 365 全局管理员可以通过 Microsoft 365 管理中心、Planner、Exchange 和 SharePoint Online 创建组。 其他角色可以通过有限的方式创建组，如下所示。
 
 - Exchange 管理员：Exchange 管理中心，Azure AD
 - 合作伙伴层 1 支持：Microsoft 365 管理中心、Exchange 管理中心、Azure AD

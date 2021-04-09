@@ -21,21 +21,14 @@ search.appverid:
 - MET150
 ms.assetid: 8d83b530-f4ca-47f6-a666-e5791cbacc7e
 description: 了解如何通过关闭或打开定期计费功能来续订 Microsoft 365。
-ms.openlocfilehash: 8b38336ccb7a0a29b5782e55117389f6a19a0d80
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 76be85fe3cbeafb275478e6236e051b6a252c099
+ms.sourcegitcommit: 0ff6edbf52562138a69c6675cb0274ec984986c3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50903520"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "51615167"
 ---
 # <a name="renew-microsoft-365-for-business"></a>续订 Microsoft 365 商业版
-
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> 管理中心正在发生改变。 如果你的体验与此处提供的详细信息不匹配，请参阅[有关新版 Microsoft 365 管理中心](../../admin/microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet)。
-
-::: moniker-end
 
 本文适用于大多数付费 Microsoft 365 商业版订阅。
   
@@ -53,6 +46,19 @@ ms.locfileid: "50903520"
 ::: moniker range="o365-worldwide"
 
 1. 在管理中心中，转到“**计费**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">你的产品</a>”页面。
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+1. 在管理中心中，转到“**计费**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">你的产品</a>”页面。
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. 在管理中心中，转到“**计费**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">你的产品</a>”页面。
+::: moniker-end
+
 2. 选择想要为其管理定期计费的订阅。
 3. 在“订阅详细信息”页面的“**订阅和付款设置**”下，选择“**编辑定期计费**”。
 4. 在“**编辑定期计费设置**”窗格中，选择“**开**”，“**开，但续订一次**”或“**关**”。
@@ -63,46 +69,6 @@ ms.locfileid: "50903520"
     > - 关闭“**定期计费**”后，不会取消订阅。 如果要保持订阅有效，则必须手动支付帐单。
     > - 如果关闭“**定期计费**”，订阅将保持活动状态，直至到期。 可在“订阅详细信息”页面的“**订阅和付款设置**”部分中查看到期日。
     > - 若要了解如何立即取消订阅，请参阅[取消订阅](cancel-your-subscription.md)。
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-  
-1. 在管理中心，转到“**计费**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">订阅</a>”页面。
-
-2. 选择想要为其管理定期计费的订阅。
-
-3. 若要打开“**定期计费**”，请将开关切换到“**开**”。
-
-    ![“定期计费”处于打开状态的订阅卡的特写镜头。](../../media/984464dc-6b63-4b24-84e1-67f6c4b1d48e.png)
-  
-    可通过将开关切换到“**关**”来关闭“**定期计费**”。
-
-    > [!NOTE]
-    > - 只能更改活动订阅的“**定期计费**”设置。 如果你的订阅已过期或处于禁用状态，则你需要 [重新激活](reactivate-your-subscription.md)它，然后才能打开或关闭“**定期计费**”。
-    > - 关闭“**定期计费**”后，不会立即取消订阅。 它将在过期之前保持活动状态。 可以在订阅卡上查看到期日期
-    > - 若要了解如何立即取消订阅，请参阅[取消订阅](cancel-your-subscription.md)。
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-  
-1. 在管理中心，转到“**计费**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">订阅</a>”页面。
-
-2. 选择想要为其管理定期计费的订阅。
-
-3. 若要打开“**定期计费**”，请将开关切换到“**开**”。
-
-    ![“定期计费”处于打开状态的订阅卡的特写镜头。](../../media/984464dc-6b63-4b24-84e1-67f6c4b1d48e.png)
-  
-    可通过将开关切换到“**关**”来关闭“**定期计费**”。
-
-    > [!NOTE]
-    > - 只能更改活动订阅的“**定期计费**”设置。 如果你的订阅已过期或处于禁用状态，则你需要 [重新激活](reactivate-your-subscription.md)它，然后才能打开或关闭“**定期计费**”。
-    > - 关闭“**定期计费**”后，不会立即取消订阅。 它将在过期之前保持活动状态。 可以在订阅卡上查看到期日期。
-    > - 若要了解如何立即取消订阅，请参阅[取消订阅](cancel-your-subscription.md)。
-
-::: moniker-end
 
 ## <a name="related-articles"></a>相关文章
 

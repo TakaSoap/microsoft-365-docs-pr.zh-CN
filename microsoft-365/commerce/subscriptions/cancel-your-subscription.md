@@ -20,21 +20,14 @@ search.appverid:
 - MET150
 description: 了解如何取消 Microsoft 365 商业版试用或付费订阅。
 ms.date: ''
-ms.openlocfilehash: 7a2de2a261baeb4e64e12742810635f352217933
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 0d37a2459c89bf5931af26a91ed14e2898c1c8c4
+ms.sourcegitcommit: 0ff6edbf52562138a69c6675cb0274ec984986c3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50916872"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "51615383"
 ---
 # <a name="cancel-your-subscription"></a>取消订阅
-
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> 管理中心正在发生改变。 如果你的体验与此处提供的详细信息不匹配，请参阅[有关新版 Microsoft 365 管理中心](../../admin/microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet)。
-
-::: moniker-end
 
 *资格：* 如果分配给用户的许可证少于 25 个，则你可以随时在 Microsoft 365 管理中心在线取消 Microsoft 365 商业版试用或付费订阅。 如果向用户分配的许可证超过 25 个，请将其缩小到 25 个以下，或 [致电支持人员取消订阅](../../admin/contact-support-for-business-products.md)。
 
@@ -53,46 +46,26 @@ ms.locfileid: "50916872"
 
 ::: moniker range="o365-worldwide"
 
-1. 在管理中心中，转到“**计费**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">你的产品</a>”页面，然后选择“**产品**”选项卡。
-2. 找到要取消的订阅。 选择“**更多操作**”（三个点），然后选择“**取消订阅**”。
-3. 在“**取消订阅**”窗格中，选择取消原因。 (可选)提供反馈。
-4. 选择“**保存**”。
-
-你的订阅现显示为“**禁用**”状态，且在删除之前功能缩减。 若要深入了解在取消付费 Microsoft 365 商业版订阅后会发生什么情况，请参阅 [我的 Microsoft 365 商业版订阅结束后对我的数据和访问权限有何影响？](what-if-my-subscription-expires.md)
-
+1. 在管理中心中，转到“**计费**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">你的产品</a>”页面。
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. 在管理中心，转到“**计费**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">订阅</a>”页面。
-
-2. 在“**订阅**”页面上，选择订阅。
-
-3. 从“**更多操作**”菜单中，选择“**取消订阅**”。
-
-    ![关闭"更多操作"菜单。](../../media/befa74b7-62c1-42a3-a38e-db76a1c97dba.png)
-
-4. 查看重要日期，提供有关取消原因的反馈，然后选择“**取消订阅**”。
-
-    你的订阅现显示为“**禁用**”状态，且在删除之前功能缩减。 若要深入了解在取消付费 Microsoft 365 商业版订阅后会发生什么情况，请参阅 [我的 Microsoft 365 商业版订阅结束后对我的数据和访问权限有何影响？](what-if-my-subscription-expires.md)
+1. 在管理中心中，转到“**计费**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">你的产品</a>”页面。
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. 在管理中心，转到“**计费**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">订阅</a>”页面。
-
-2. 在“**订阅**”页面上，选择订阅。
-
-3. 从“**更多操作**”菜单中，选择“**取消订阅**”。
-
-    ![关闭"更多操作"菜单。](../../media/befa74b7-62c1-42a3-a38e-db76a1c97dba.png)
-
-4. 查看重要日期，提供有关取消原因的反馈，然后选择“**取消订阅**”。
-
-    你的订阅现显示为“**禁用**”状态，且在删除之前功能缩减。 若要深入了解在取消付费 Microsoft 365 商业版订阅后会发生什么情况，请参阅 [我的 Microsoft 365 商业版订阅结束后对我的数据和访问权限有何影响？](what-if-my-subscription-expires.md)
-
+1. 在管理中心中，转到“**计费**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">你的产品</a>”页面。
 ::: moniker-end
+
+2. 选择“**产品**”选项卡。
+3. 找到要取消的订阅。 选择“**更多操作**”（三个点），然后选择“**取消订阅**”。
+4. 在“**取消订阅**”窗格中，选择取消原因。 (可选)提供反馈。
+5. 选择“**保存**”。
+
+你的订阅现显示为“**禁用**”状态，且在删除之前功能缩减。 若要深入了解在取消付费 Microsoft 365 商业版订阅后会发生什么情况，请参阅 [我的 Microsoft 365 商业版订阅结束后对我的数据和访问权限有何影响？](what-if-my-subscription-expires.md)
 
 ## <a name="what-happens-when-you-cancel-a-subscription"></a>取消订阅会发生什么？
 

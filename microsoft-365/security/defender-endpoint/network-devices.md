@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 06b52e937dd0260a50883c45c36389a6a955ad0e
-ms.sourcegitcommit: dc1ac43a57fac6f57438859dd668f927d94fdf34
+ms.openlocfilehash: d0ae82c2e284235d96531c04dc2240063d4e4183
+ms.sourcegitcommit: dcc6bfd228ca9070975ce9eb14574e084f9ed92c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "51604496"
+ms.lasthandoff: 04/09/2021
+ms.locfileid: "51657027"
 ---
 # <a name="network-device-discovery-and-vulnerability-management"></a>网络设备发现和漏洞管理
 
@@ -46,7 +46,7 @@ Microsoft 365 安全中心和 Microsoft Defender 安全中心控制台的设备�
 
 指定的 Microsoft Defender for Endpoint 设备将用于每个网段，以定期对预配置的网络设备执行经过身份验证的扫描。 发现后，终结点的 Defender 威胁和漏洞管理功能将提供集成的工作流，用于保护发现的交换机、路由器、WLAN 控制器、防火墙和 VPN 网关。  
 
-发现网络设备并进行分类后，安全管理员将能够接收最新的安全建议，并查看最近发现的跨组织部署的网络设备的漏洞。
+发现网络设备并进行分类后，安全管理员将能够接收最新的安全建议，并查看最近在组织中部署的网络设备上发现的漏洞。
 
 ## <a name="approach"></a>方法
 
@@ -95,11 +95,11 @@ Microsoft 365 安全中心和 Microsoft Defender 安全中心控制台的设备�
     - login.windows.net  
     - *.securitycenter.windows.com
     - login.microsoftonline.com
-    - *.blob.core.windows.net/networkscannerstable/*
+    - *.blob.core.windows.net/networkscannerstable/ *
 
-    注意：这些 URL 未在允许数据收集的 Defender for Endpoint 记录列表中指定。
+    注意：并非所有 URL 都未在 Defender for Endpoint 记录允许的数据收集列表中指定。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 若要配置评估作业，需要以下用户权限选项： **在安全中心中管理安全设置**。 可以通过访问"设置""角色 **"来查找**  >  **权限**。 有关详细信息，请参阅为基于角色 [的访问控制创建和管理角色](user-roles.md)
 

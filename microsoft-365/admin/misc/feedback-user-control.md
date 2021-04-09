@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 了解你的用户可以向 Microsoft 发送有关 Microsoft 产品的反馈。
-ms.openlocfilehash: 0a6c895eacd7a1cf8077141c6a848236a53818e7
-ms.sourcegitcommit: 437bdbf3f99610869811e80432a59b5f244f7a87
+ms.openlocfilehash: 29fe6b7f43b3c888c3848daeb6ab4c2152a9c44c
+ms.sourcegitcommit: a46532bb422ee51331f478ff50cc5444586bf6a9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/08/2021
-ms.locfileid: "51644797"
+ms.lasthandoff: 04/09/2021
+ms.locfileid: "51650051"
 ---
 # <a name="learn-about-microsoft-feedback-for-your-organization"></a>了解组织的 Microsoft 反馈
 
@@ -49,9 +49,9 @@ ms.locfileid: "51644797"
 
 用户还可通过系统启动的调查提示对体验进行评分并提供其体验的其他信息。 这些提示时时出现在 Microsoft 365 产品中。 当系统提示时，用户可以选择是否要提供反馈。 调查提示通常显示在应用程序右下角。 如果用户决定提供反馈、消除提示或让提示自行消失，该用户将在一段时间后不会再次看到该调查。 Microsoft 还利用管理过程来限制这些系统发起的调查的数量。  管理的目的是确保用户不会因调查提示的数量而不知所措。
 
-:::image type="content" source="../../media/feedback-outlook-example.png" alt-text="Screenshot： Example of product-in feedback for Outlook":::
-:::image type="content" source="../../media/how-likely-recommend.png" alt-text="Screenshot： How likely are you to recommend Microsoft 365 survey":::
-:::image type="content" source="../../media/feedback-in-product1.png" alt-text="Screenshot： Examples of product-in feedback pages":::
+:::image type="content" source="../../media/feedback-love.png" alt-text="屏幕截图：产品内反馈请求示例":::
+
+:::image type="content" source="../../media/feedback-excel.png" alt-text="屏幕截图：产品内反馈请求示例":::
 
 ## <a name="what-kind-of-feedback-is-best"></a>哪种反馈最好？
 
@@ -90,3 +90,7 @@ Microsoft 使用反馈来改进 Microsoft 产品。 我们以问题、问题、�
 我们确保在 Microsoft 管理规则下存储和处理我们收到的反馈，并且只能访问它供批准使用。
 
 我们使用易于使用的工具和明确的选择控制你的隐私。 我们以透明的方式收集和使用数据，因此你可以做出有关要共享哪些数据的明智决定。 我们以强大的安全性和加密保护你委托给我们的数据。 我们尊重当地隐私法，并努力将隐私作为一项人力资源进行法律保护。 我们不会使用您的电子邮件、聊天、文件或其他个人内容来定向广告。 当我们收集数据时，我们会使用它来改善你的体验。 在此处了解有关 Microsoft 的隐私方法 [的更多信息](https://privacy.microsoft.com/)。 了解有关隐私概述 [的更多信息](/compliance/assurance/assurance-privacy)。
+
+## <a name="how-can-i-see-my-users-feedback"></a>如何查看用户的反馈？
+
+即将推出，我们将将收集的 Microsoft 产品反馈数据分享给你。 我们正在处理 Microsoft 365 管理中心的新体验，让你可以查看、删除和导出组织的反馈数据。 这可让你直接了解用户使用 Microsoft 365 产品时获得的透明度以及有用的见解。

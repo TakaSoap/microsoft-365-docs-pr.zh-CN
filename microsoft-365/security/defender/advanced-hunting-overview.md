@@ -21,12 +21,12 @@ ms.collection:
 ms.topic: article
 ms.custom: seo-marvel-apr2020
 ms.technology: m365d
-ms.openlocfilehash: 3aa964f8e213d64f583738d8957899c1b7b5146c
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: 3532fd461fff02fac54e96e0a1a1e69c39c16907
+ms.sourcegitcommit: dcc6bfd228ca9070975ce9eb14574e084f9ed92c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51501092"
+ms.lasthandoff: 04/09/2021
+ms.locfileid: "51657015"
 ---
 # <a name="proactively-hunt-for-threats-with-advanced-hunting-in-microsoft-365-defender"></a>在 Microsoft 365 Defender 中通过高级搜寻主动搜寻威胁
 
@@ -54,6 +54,17 @@ ms.locfileid: "51501092"
 - Microsoft Defender for Identity
 
 若要使用高级搜寻， [请打开 Microsoft 365 Defender](m365d-enable.md)。
+
+### <a name="before-you-begin"></a>准备工作
+
+用户需要以下权限级别之一才能访问 Microsoft Defender：
+
+- 可读写 (完全访问权限) 
+- 只读访问
+
+**完全访问权限**：具有完全访问权限的用户可以保存、修改和共享查询。 分配完全访问权限需要将用户添加到 Azure Active Directory 中的"安全管理员"或"全局管理员"内置角色 (AAD) 。
+
+**只读访问**：具有只读访问权限的用户可以登录并查看所有警报和相关信息。 他们将无法保存、修改或共享查询。 分配只读访问权限需要将用户添加到 AAD 中的"安全读者"内置角色。
 
 ## <a name="get-started-with-advanced-hunting"></a>高级搜寻入门
 

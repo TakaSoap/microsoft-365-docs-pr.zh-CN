@@ -20,16 +20,18 @@ search.appverid:
 - MOE150
 ms.assetid: 613a845c-4b71-41de-b331-acdcf5b6625d
 description: '了解如何为组织的所有或特定用户配置重点收件箱。 '
-ms.openlocfilehash: 7059fbb886669af99c1471789cbbc623dc9719b8
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 62a38f911e4e1b878af6489f096f17644e070978
+ms.sourcegitcommit: 437bdbf3f99610869811e80432a59b5f244f7a87
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50914278"
+ms.lasthandoff: 04/08/2021
+ms.locfileid: "51644508"
 ---
 # <a name="configure-focused-inbox-for-everyone-in-your-organization"></a>为组织中的每个人配置重点收件箱
 
-  如果你负责配置公司中每个人的电子邮件使用方式，则本文非常适合你！ 其中说明如何根据业务来自定义或关闭电子邮件，还将解答[常见问题](#faq-for-focused-inbox)。  <br/> 如果只想关闭重点收件箱，请参阅[关闭重点收件箱](https://support.microsoft.com/office/f714d94d-9e63-4217-9ccb-6cb2986aa1b2)。  
+如果你负责配置公司中每个人的电子邮件使用方式，则本文非常适合你！ 其中说明如何根据业务来自定义或关闭电子邮件，还将解答[常见问题](#faq-for-focused-inbox)。
+
+如果只想关闭重点收件箱，请参阅[关闭重点收件箱](https://support.microsoft.com/office/f714d94d-9e63-4217-9ccb-6cb2986aa1b2)。  
 
 如果想确保用户收到特定业务的电子邮件（例如来自 HR 或薪酬专员），可配置重点收件箱，让这些邮件出现在“重点”视图中。还可控制组织内部用户的邮箱中是否显示重点收件箱。
   
@@ -37,7 +39,7 @@ ms.locfileid: "50914278"
 
 使用 PowerShell 为组织中的每个人打开或关闭重点收件箱。 是否想在 Microsoft 365 管理中心执行此操作？ 请联系我们的工程团队。 **[请在此投票！](https://go.microsoft.com/fwlink/?linkid=862489)**
   
- **关闭重点收件箱：**
+**关闭重点收件箱：**
   
 以下 PowerShell 示例演示如何在组织中 **关闭** 重点收件箱。但是，它不会阻止用户使用此功能。如果用户想使用，仍可在其每个客户端上重新启用重点收件箱。 
   
@@ -47,9 +49,9 @@ ms.locfileid: "50914278"
 
 3. 运行 **Get-OrganizationConfig** cmdlet。 
 
- ``` PowerShell
-Get-OrganizationConfig
- ```
+    ```powershell
+    Get-OrganizationConfig
+    ```
 
 4. 查找 **FocusedInboxOn** 以查看其当前设置： 
 
@@ -57,20 +59,20 @@ Get-OrganizationConfig
   
 5. 运行以下 cmdlet 来关闭重点收件箱。
 
- ``` PowerShell
- Set-OrganizationConfig -FocusedInboxOn $false
- ```
+    ```powershell
+    Set-OrganizationConfig -FocusedInboxOn $false
+    ```
 
 6. 再次运行 **Get-OrganizationConfig** cmdlet，可以看到 FocusedInboxOn 已设置为 $false，这表示重点收件箱已关闭。 
 
- **打开重点收件箱：**
+**打开重点收件箱：**
   
 - 在上述步骤 5 中，运行以下 cmdlet 来打开重点收件箱。
 
- ``` PowerShell
- Set-OrganizationConfig -FocusedInboxOn $true
- ```
-
+  ```powershell
+  Set-OrganizationConfig -FocusedInboxOn $true
+  ```
+    
 ## <a name="what-do-users-see-after-i-turn-on-focused-inbox"></a>打开重点收件箱后，用户会看到什么？ 
 
 用户关闭并重启 Outlook​​ 后才可看到“重点”视图。重启 Outlook​​ 后，用户会在 Outlook​​ 用户界面中看到一条提示，其中含有使用新“重点收件箱”的选项。
@@ -85,7 +87,7 @@ Get-OrganizationConfig
   
 ## <a name="turn-focused-inbox-on-or-off-for-specific-users"></a>为特定用户打开或关闭重点收件箱
 
-本示例会为 Contoso 组织中的 Tim Matthews **关闭** 重点收件箱。但是，它并不禁止他使用此功能。如果他想使用，仍可在其每个客户端上重新启用重点收件箱。 
+本示例会为 Contoso 组织中的 Tim Matthews **关闭** 重点收件箱。 但是，它并不禁止他使用此功能。 如果他想使用，仍可在其每个客户端上重新启用重点收件箱。 
   
 1. [使用远程 PowerShell 连接到 Exchange Online](/powershell/exchange/connect-to-exchange-online-powershell)。
 
@@ -93,9 +95,9 @@ Get-OrganizationConfig
 
 3. 运行 **Get-FocusedInbox** cmdlet，例如： 
 
- ``` PowerShell
- Get-FocusedInbox -Identity <tim@contoso.com>
- ```
+    ```powershell
+    Get-FocusedInbox -Identity <tim@contoso.com>
+    ```
 
 4. 查找 FocusedInboxOn 以查看其当前设置：
 
@@ -103,15 +105,15 @@ Get-OrganizationConfig
   
 5. 运行以下 cmdlet 来关闭重点收件箱：
 
- ``` PowerShell
- Set-FocusedInbox -Identity <tim@contoso.com> -FocusedInboxOn $false
- ```
+    ```powershell
+    Set-FocusedInbox -Identity <tim@contoso.com> -FocusedInboxOn $false
+    ```
 
-6. 或者，运行以下 cmdlet 将其打开：
+    或者，运行以下 cmdlet 将其打开：
 
- ``` PowerShell
- Set-FocusedInbox -Identity <tim@contoso.com> -FocusedInboxOn $true
- ```
+    ```powershell
+    Set-FocusedInbox -Identity <tim@contoso.com> -FocusedInboxOn $true
+    ```
 
 ## <a name="use-the-ui-to-create-a-transport-rule-to-direct-email-messages-to-the-focused-view-for-all-your-users"></a>利用 UI 创建传输规则，将电子邮件定向到所有用户的“重点”视图
 
@@ -125,8 +127,8 @@ Get-OrganizationConfig
 
     ![Focusedinbox 工资单](../../media/focusedinbox-transport-rule.PNG)
 
-> [!NOTE]
-> 此示例中的邮件头值文本为 **X-MS-Exchange-Organization-BypassFocusedInbox**。
+    > [!NOTE]
+    > 此示例中的邮件头值文本为 **X-MS-Exchange-Organization-BypassFocusedInbox**。
   
 ## <a name="use-powershell-to-create-a-transport-rule-to-direct-email-messages-to-the-focused-view-for-all-your-users"></a>使用 PowerShell 创建传输规则，将电子邮件定向到所有用户的“重点”视图
 
@@ -136,9 +138,9 @@ Get-OrganizationConfig
 
 3. 例如，运行以下命令即可允许所有来自"工资单管理部门"的邮件定向到重点收件箱。
 
- ``` PowerShell
- New-TransportRule -Name <name_of_the_rule> -From "Payroll Department" -SetHeaderName "X-MS-Exchange-Organization-BypassFocusedInbox" -SetHeaderValue "true"
- ```
+    ```powershell
+    New-TransportRule -Name <name_of_the_rule> -From "Payroll Department" -SetHeaderName "X-MS-Exchange-Organization-BypassFocusedInbox" -SetHeaderValue "true"
+    ```
 
 > [!IMPORTANT]
 > 在本例中，"X-MS-Exchange-Organization-BypassFocusedInbox"和"true"都需区分大小写。
@@ -147,6 +149,10 @@ Get-OrganizationConfig
 ### <a name="how-do-you-know-this-worked"></a>如何判断是否生效？
 
 可检查电子邮件标头，查看电子邮件是否通过重点收件箱的传输规则旁路发送到收件箱中。 从组织中应用了重点收件箱传输规则的邮箱中选择一封电子邮件。 查看邮件上标记的标头，应当可看到 **X-MS-Exchange-Organization-BypassFocusedInbox: true** 标头。 这意味着正在绕过。 有关如何查找邮件头的信息，请参阅 [查看电子邮件的 Internet 邮件头信息](https://go.microsoft.com/fwlink/p/?LinkId=822530)文章。
+
+### <a name="what-will-the-user-see"></a>用户将看到什么？
+
+如果传输规则已存在，将显示有关替代的通知。 Outlook 网页版将禁用“始终移动到其他”并显示工具提示。 Outlook 桌面客户端将允许选择“始终移动到其他”并将弹出对话框。
 
 ## <a name="turn-onoff-clutter"></a>打开/关闭待筛选邮件
 
@@ -200,4 +206,5 @@ Outlook​​ 通过选择具有最新时间戳的 cmdlet 来决定显示相应�
   
 ### <a name="can-i-run-a-script-to-see-who-has-turned-on-focused-inbox"></a>我能通过运行脚本来查看谁启用了重点收件箱吗？
 
-不能，这是由设计决定的。启用重点收件箱是客户端设置，cmdlet 仅能告知你用户的邮箱是否符合客户端体验的条件。可在一些客户端中启用它，同时在另一些客户端中禁用它，例如，在 Outlook 应用和 Outlook Mobile 中启用，但在 Outlook 网页版中禁用。
+不能，这是由设计决定的。 启用重点收件箱是客户端设置，cmdlet 仅能告知你用户的邮箱是否符合客户端体验的条件。 可在一些客户端中启用它，同时在另一些客户端中禁用它，例如，在 Outlook 应用和 Outlook Mobile 中启用，但在 Outlook 网页版中禁用。
+

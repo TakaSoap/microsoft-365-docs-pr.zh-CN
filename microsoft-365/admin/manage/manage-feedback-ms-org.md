@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 管理你的用户可以向 Microsoft 发送有关 Microsoft 产品的反馈。
-ms.openlocfilehash: 9c6ed46b21a5ee697c4c512c09defd66e6b961c9
-ms.sourcegitcommit: 437bdbf3f99610869811e80432a59b5f244f7a87
+ms.openlocfilehash: c92adec1689d6f0c46b03ae4f46c567f054b6457
+ms.sourcegitcommit: a46532bb422ee51331f478ff50cc5444586bf6a9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/08/2021
-ms.locfileid: "51644803"
+ms.lasthandoff: 04/09/2021
+ms.locfileid: "51650012"
 ---
 # <a name="manage-microsoft-feedback-for-your-organization"></a>管理组织的 Microsoft 反馈
 
@@ -32,7 +32,7 @@ ms.locfileid: "51644803"
 
 若要了解有关反馈类型以及 Microsoft 如何使用用户反馈的信息，请参阅 [了解组织的 Microsoft 反馈](../misc/feedback-user-control.md)。
 
-下表显示了当前连接到反馈策略表的反馈策略的应用和服务。
+下表显示了当前连接到反馈策略表的反馈策略的应用和服务。 有关屏幕截图示例，请参阅下表。
 
 |**Apps & Services**|**产品内反馈** <br> |**产品内调查** <br> |**元数据集合** <br> |**客户参与度** <br> |
 |:-----|:-----|:-----|:-----|:-----|
@@ -51,15 +51,7 @@ ms.locfileid: "51644803"
 |**Visio**|是|是|是|是|
 |**Yammer**|是|是|是|是|
 
-下面是产品反馈的一些示例。
-
-**产品内反馈**
-
-:::image type="content" source="../../media/feedback-in-product-help.png" alt-text="屏幕截图：产品内帮助示例":::
-
-**产品内调查**
-
-:::image type="content" source="../../media/feedback-in-product-survey.png" alt-text="Screenshot： Microsoft app in-product survey example":::
+[有关产品内调查和反馈的一些示例，请参阅此处。](https://docs.microsoft.com/microsoft-365/admin/misc/feedback-user-control?view=o365-worldwide#in-product-surveys)
 
 **元数据集合**
 

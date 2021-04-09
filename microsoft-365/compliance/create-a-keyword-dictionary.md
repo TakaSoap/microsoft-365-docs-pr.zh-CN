@@ -18,28 +18,56 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: 了解在 Office 365 安全与合规中心中创建关键字字典的基本步骤。
-ms.openlocfilehash: ff96eda71857b4b0f802462da96e4f4abbaf05f4
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: b70deed531204f2ffe85253bd9ae2073dad291ec
+ms.sourcegitcommit: 58fbcfd6437bfb08966b79954ca09556e636ff4a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50908386"
+ms.lasthandoff: 04/08/2021
+ms.locfileid: "51632188"
 ---
 # <a name="create-a-keyword-dictionary"></a>创建关键字字典
 
 数据丢失防护 (DLP) 可识别、监视和保护敏感项目。 标识敏感项目有时需要查找关键字，尤其是在标识常规内容（如与医疗保健相关的通信）或不当或露骨语言时。 虽然可以在敏感信息类型中创建关键字列表，但关键字列表的大小是有限的，且需要修改 XML 才能创建或编辑它们。 关键字字典可更简单地管理关键字，并且规模更大，可支持多达 1MB 的术语（压缩后），并支持所有语言。 租户限制同样为压缩后 1MB。 压缩后限值 1MB 意味着租户中合并的所有词典可能接近 100 万字符。
-  
-> [!NOTE]
-> 每个租户最多可以创建 50 种基于关键字字典的敏感信息类型。
 
-> [!NOTE]
-> Microsoft 365 信息保护现可为以下语言提供双字节字符集语言支持（预览）：
-> - 简体中文
-> - 繁体中文
-> - 韩语
-> - 日语
->
->此支持适用于敏感信息类型。 有关详细信息，请参阅[双字节字符集的信息保护支持发行说明（预览版）](mip-dbcs-relnotes.md)。
+## <a name="keyword-dictionary-limits"></a>关键字字典限制
+
+每个租户最多可以创建 50 种基于关键字字典的敏感信息类型。 若要知道租户中有多少关键字字典，可以对租户运行该 PowerShell 脚本。
+
+```powershell
+$rawFile = $env:TEMP + "\rule.xml"
+
+$kd = Get-DlpKeywordDictionary
+$ruleCollections = Get-DlpSensitiveInformationTypeRulePackage
+Set-Content -path $rawFile -Encoding Byte -Value $ruleCollections.SerializedClassificationRuleCollection
+$UnicodeEncoding = New-Object System.Text.UnicodeEncoding
+$FileContent = [System.IO.File]::ReadAllText((Resolve-Path $rawFile), $unicodeEncoding)
+
+if($kd.Count -gt 0)
+{
+$count = 0
+$entities = $FileContent -split "Entity id"
+for($j=1;$j -lt $entities.Count;$j++)
+{
+for($i=0;$i -lt $kd.Count;$i++)
+{
+$Matches = Select-String -InputObject $entities[$j] -Pattern $kd[$i].Identity -AllMatches
+$count = $Matches.Matches.Count + $count
+if($Matches.Matches.Count -gt 0) {break}
+}
+}
+
+Write-Output "Total Keyword Dictionary SIT:"
+$count
+}
+else
+{
+$Matches = Select-String -InputObject $FileContent -Pattern $kd.Identity -AllMatches
+Write-Output "Total Keyword Dictionary SIT:"
+$Matches.Matches.Count
+}
+
+Remove-Item $rawFile
+```
 
 ## <a name="basic-steps-to-creating-a-keyword-dictionary"></a>创建关键字词典的基本步骤
 
@@ -237,3 +265,12 @@ Get-DlpKeywordDictionary -Name "Diseases"
       </Resource>
     </LocalizedStrings>
 ```
+
+> [!NOTE]
+> Microsoft 365 信息保护可为以下语言提供双字节字符集语言支持（预览）：
+> - 简体中文
+> - 繁体中文
+> - 韩语
+> - 日语
+>
+>此支持适用于敏感信息类型。 有关详细信息，请参阅[双字节字符集的信息保护支持发行说明（预览版）](mip-dbcs-relnotes.md)。

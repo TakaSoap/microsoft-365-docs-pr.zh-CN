@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 ms.assetid: 4436582f-211a-45ec-b72e-33647f97d8a3
 description: 了解 Microsoft 365 for Business 订阅到期、禁用或取消后对我的数据的影响。
-ms.openlocfilehash: 7560e715a9b1951915866f96c8df3bd1f884a475
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: ee83e237d17dc2de60b08b8d4dbdc46c98fc8251
+ms.sourcegitcommit: 0ff6edbf52562138a69c6675cb0274ec984986c3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50921812"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "51615395"
 ---
 # <a name="what-happens-to-my-data-and-access-when-my-microsoft-365-for-business-subscription-ends"></a>Microsoft 365 for Business 订阅结束后对我的数据和访问有何影响？
 
@@ -55,7 +55,7 @@ ms.locfileid: "50921812"
 
 ## <a name="what-happens-if-i-cancel-a-subscription"></a>如果取消订阅会发生什么情况？
 
-如果在期限结束前取消订阅，订阅就会跳过过期状态，直接进入失效状态，对于大多数国家和地区的订阅来说失效状态将持续 90 天。 我们建议在取消之前 [备份数据](back-up-data-before-switching-plans.md)，但作为管理员，你仍然可以在禁用状态下访问且为组织备份数据。 你留下的任何客户数据都可能在取消的 90 天之后、180 天之前被删除。
+如果在期限结束前取消订阅，订阅将跳过已过期阶段，直接进入已停用阶段，这一阶段在大多数国家和地区中对于大多数订阅的时长为 90 天。 我们建议在取消之前 [备份数据](back-up-data-before-switching-plans.md)，但作为管理员，虽然处于禁用期，你仍然可以访问和备份组织的数据。 你留下的任何客户数据都可能在取消的 90 天之后、180 天之前被删除。
   
 下面是你取消订阅对你和你的用户会产生的预期结果。
   
@@ -73,8 +73,6 @@ ms.locfileid: "50921812"
 当订阅处于活动状态时，你和你的终端用户可以正常访问你的数据、电子邮件和 OneDrive for Business 等服务以及 Office 应用程序。 作为管理员，当你的订阅即将到期时，会通过电子邮件和管理中心收到一系列通知。
   
 订阅的到期日期真正到来之前，你有一些选择：
-
-::: moniker range="o365-worldwide"
   
 - **为订阅启用定期计费**。
 
@@ -92,148 +90,58 @@ ms.locfileid: "50921812"
 
   - 如果是与合作伙伴合作的开放批量授权客户，则无需采取任何行动，让订阅到期。
 
-  - 如果你是 Office 365 小型企业高级版客户，预付了 Office 365 的费用并使用产品密钥激活了它，则无需采取任何行动让订阅到期。
+  - 如果你是 Microsoft 365 商业标准版客户，并且你的订阅是预付费且通过产品密钥激活，则无需采取操作即可让订阅过期。
 
 - **在订阅到期前取消。** 有关详细信息，请参阅 [取消订阅](cancel-your-subscription.md)。
-  
-::: moniker-end
-
-::: moniker range="o365-germany"
-  
-- **管理订阅的定期计费**。
-
-  - 如果已打开 **定期计费**，则无需执行任何操作。 系统将自动对你的订阅计费，并且将根据你当前的付款频率，向你另外收取一年或一个月的费用。 如果由于某种原因关闭了 **定期计费**，可随时 [重新开启定期计费](renew-your-subscription.md)。
-
-  - 如果通过预付卡购买了 Microsoft 365 商业应用版，则可以为你的订阅[打开定期计费](renew-your-subscription.md)。
-
-  - 如果你是使用预付费一年订阅的“开放式批量许可”客户，请与合作伙伴联系以购买新的产品密钥。 你将通过电子邮件收到在[批量许可服务中心](https://go.microsoft.com/fwlink/p/?LinkID=282016)中激活密钥的说明。 若要了解如何查找新合作伙伴或过去合作过的合作伙伴，请参阅[查找合作伙伴或经销商](../../admin/manage/find-your-partner-or-reseller.md)。
-
-  - 如果你有 Microsoft 365 商业应用版，请参阅 [更新你的订阅](renew-your-subscription.md)。
-
-- **让订阅过期。**
-
-  - 如果使用信用卡或发票支付，而又不想继续订阅，请将 [“定时计费”关闭](renew-your-subscription.md)。 你的订阅将在到期日失效，可以忽略所有相关的邮件通知。
-
-  - 如果是与合作伙伴合作的开放批量授权客户，则无需采取任何行动，让订阅到期。
-
-  - 如果你是 Office 365 小型企业高级版客户，预付了 Office 365 的费用并使用产品密钥激活了它，则无需采取任何行动让订阅到期。
-
-- **在订阅到期前取消。** 有关详细信息，请参阅 [取消订阅](cancel-your-subscription.md)。
-  
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-  
-- **续订订阅。** 如果已打开 **定期计费**，则无需执行任何操作。 系统将自动对你的订阅计费，并且将根据你当前的付款频率，向你另外收取一年或一个月的费用。 如果由于某种原因关闭了 **定期计费**，可随时 [重新开启定期计费](renew-your-subscription.md)。
-
-- **让订阅过期。** 如果使用信用卡或发票支付，而又不想继续订阅，请将 [“定时计费”关闭](renew-your-subscription.md)。 你的订阅将在到期日失效，可以忽略所有相关的邮件通知。
-
-- **在订阅到期前取消。** 有关详细信息，请参阅 [取消订阅](cancel-your-subscription.md)。
-
-::: moniker-end
 
 ## <a name="what-happens-after-my-subscription-expires"></a>我的订阅到期之后会发生什么情况？
+
 如果让你的订阅过期，在永久删除之前它会经历多个状态。 作为管理员，如果想继续使用该服务，你有时间重新激活；如果决定不再需要该订阅，也有时间备份你的数据。
   
 下面介绍订阅在各个状态会产生的预期结果。
   
 ### <a name="state-expired"></a>状态：已过期
-  
-::: moniker range="o365-worldwide"
 
- **预期结果：** 大多数订阅过期状态持续 30 天，其中包括在大多数国家和地区通过 [Microsoft Open](https://go.microsoft.com/fwlink/p/?LinkID=613298) 购买的订阅。 对于批量许可产品 (Microsoft Open 除外)，过期状态将持续 90 天。
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
- **预期结果：** 大多数订阅过期状态持续 30 天，其中包括在大多数国家和地区通过 [Microsoft Open](https://go.microsoft.com/fwlink/p/?LinkID=613298) 购买的订阅。 对于批量许可产品 (Microsoft Open 除外)，过期状态将持续 90 天。
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
- **预期结果：** 在大多数国家和地区，大多数订阅的过期状态是 30 天。
-
-::: moniker-end
+ **预期结果：** 大多数订阅的已过期阶段持续 30 天，其中包括在大多数国家和地区通过 [Microsoft Open](https://go.microsoft.com/fwlink/p/?LinkID=613298) 购买的订阅。 对于批量许可产品（Microsoft Open 除外），已过期阶段将持续 90 天。
 
 在这种状态下，用户可以正常访问 Microsoft 365 门户、Office 应用程序以及电子邮件和 SharePoint Online 等服务。
   
 作为管理员，你仍然可以访问管理中心。 无需担心 — 全局管理员或账务管理员可以 [重新激活订阅](reactivate-your-subscription.md) 并继续使用 Microsoft 365。 如果不重新激活，请 [备份你的数据](back-up-data-before-switching-plans.md)。
   
 ### <a name="state-disabled"></a>状态：已禁用
-  
-::: moniker range="o365-worldwide"
 
- **预期结果：** 如果在过期状态下不重新激活你的订阅，它将进入禁用状态，它在大多数国家和地区的大多数订阅中都持续 90 天。 对于批量许可产品，禁用状态将持续 30 天。
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
- **预期结果：** 如果在过期状态下不重新激活你的订阅，它将进入禁用状态，它在大多数国家和地区的大多数订阅中都持续 90 天。 对于批量许可产品，禁用状态将持续 30 天。
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
- **预期结果：** 如果在过期状态下不重新激活你的订阅，它将进入禁用状态，它在大多数国家和地区的大多数订阅中都为 90 天。
-
-::: moniker-end
-
-::: moniker range="o365-worldwide"
+ **预期结果：** 如果未重新激活处于已过期阶段的订阅，则订阅将进入已停用阶段，这一阶段在大多数国家和地区的大多数订阅中将持续 90 天。 对于批量许可产品，禁用期将持续 30 天。
 
 在此状态下，访问量会大大降低。 用户无法登录，也无法访问电子邮件或 SharePoint Online 等服务。 Office 应用程序最终会进入只读的缩减功能模式，并显示 [未授权产品通知](https://support.microsoft.com/office/0d23d3c0-c19c-4b2f-9845-5344fedc4380.aspx)。 你仍然可以登录并进入管理中心，但不能为用户分配许可证。 你的客户数据 (包括团队网站上的所有用户数据、电子邮件和文件) 都仅向你和其他管理员开放。
-
-::: moniker-end
 
 作为全局管理员或账务管理员， 可以 [重新激活订阅](reactivate-your-subscription.md) 继续使用 Microsoft 365，并保留所有客户数据完好无损。 如果选择不重新激活，请 [备份你的数据](back-up-data-before-switching-plans.md)。
 
 ### <a name="state-deleted"></a>状态：已删除
   
- **预期结果：** 如果在宽限期或已禁用状态下不重新激活你的订阅，将删除订阅。
+ **预期结果：** 如果未重新激活处于已过期或已停用的订阅，则将删除订阅。
   
 管理员和用户无法访问订阅时所附带的服务或 Office 应用程序。 将永久删除所有客户数据 (从用户数据到文档和电子邮件)，且无法恢复。
   
 此时无法重新激活订阅。 但是，作为全局管理员或账务管理员，你仍然可以访问管理中心来管理其他订阅，或购买新的订阅以满足你的业务需求。
   
 > [!NOTE]
-> 添加已删除的相同类型新订阅，不会恢复与已删除订阅相关联的数据。
-
-
-> [!NOTE]
-> 如果已停用 CSP 许可证，则不在有 30 天宽限期而会立即禁用服务。 如果租户没有通过添加新的许可证重新激活，将在 90 天后删除数据。
+> - 添加已删除的相同类型新订阅，不会恢复与已删除订阅相关联的数据。
+> - 如果已停用 CSP 许可，则不享有 30 天的已过期阶段，而是立即停用服务。 如果租户没有通过添加新的许可证来重新激活，则数据将在 90 天后删除。
 
 ### <a name="what-happens-when-my-trial-ends"></a>试用期结束之后会出现什么情况？
 
 试用期结束后，将无法继续免费使用 Microsoft 365。 有以下几个选项： 
 
-::: moniker range="o365-worldwide"
-
-- **购买 Microsoft 365。** 试用版到期时，将进入宽限期，再向你提供 30 天 (对于大多数国家和地区中的大多数订阅如此) 时间考虑产品购买Microsoft 365。 若要了解如何将试用版转换为付费订阅，请参阅[购买 Microsoft 365 商业试用版](../try-or-buy-microsoft-365.md)。
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-- **购买 Microsoft 365。** 试用版到期时，将进入宽限期，再向你提供 30 天 (对于大多数国家和地区中的大多数订阅如此) 时间考虑产品购买Microsoft 365。 若要了解如何将试用版转换为付费订阅，请参阅[购买 Microsoft 365 商业试用版](../try-or-buy-microsoft-365.md)。
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-- **购买 Office 365。** 试用版到期时，将进入宽限期，再向你提供 30 天 (对于大多数国家和地区中的大多数订阅如此) 时间考虑产品购买 Office 365。 如果要了解如何将试用版转换为付费订阅，请参阅 [购买或试用由世纪互联运营的 Office 365 的订阅](../../admin/services-in-china/buy-or-try-subscriptions.md)。
-
-::: moniker-end
+- **购买 Microsoft 365。** 试用版到期时，将进入已过期阶段，并提供 30 天（针对大多数国家和地区中的大多数订阅）时间以考虑产品购买 Microsoft 365。 若要了解如何将试用版转换为付费订阅，请参阅 [从免费试用版购买订阅](../try-or-buy-microsoft-365.md#buy-a-subscription-from-your-free-trial)。
 
 - **延长试用期。** 需要更多时间来评估 Microsoft 365？ 在某些情况下，可以 [延长试用期](../extend-your-trial.md)。
 
-- **取消试用或让它过期。** 如果决定不购买 Microsoft 365，可让试用版到期，或 [取消它](cancel-your-subscription.md)。 备份要保留的所有数据。 30 天宽限期过后，将会永久删除试用账户信息和数据。
+- **取消试用或让它过期。** 如果决定不购买 Microsoft 365，可让试用版到期，或 [取消它](cancel-your-subscription.md)。 备份要保留的所有数据。 30 天已过期阶段之后，将会永久删除试用账户信息和数据。
 
 > [!NOTE]
 > 本页上的信息受 [Microsoft 政策免责声明和变更通知](https://go.microsoft.com/fwlink/p/?LinkId=613651) 的约束。 定期返回本网站查看有无任何变化。
 
-## <a name="related-content"></a>相关内容 
+## <a name="related-content"></a>相关内容
 
 [取消订阅](./cancel-your-subscription.md) (文章)\
 [续订 Microsoft 365 商业版](./renew-your-subscription.md) (文章)\
