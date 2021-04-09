@@ -263,6 +263,8 @@
           href: manage/manage-microsoft-rewards.md
         - name: 管理消息中心消息
           href: manage/manage-messages.md
+        - name: 为组织管理 Microsoft 反馈
+          href: /admin/manage/manage-feedback-ms-org.md
         - name: 设置发布选项
           href: manage/release-options-in-office-365.md
         - name: 显示或隐藏新功能
