@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 6bf9691f390173ec86dcadd19707c980aa66336f
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 1f20a81f5205c5734387214822fa87ac5cf9a09c
+ms.sourcegitcommit: 72ae1b49e7a3d3199272fcb4c39f5daec0d66f1a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/13/2021
-ms.locfileid: "51687765"
+ms.locfileid: "51698204"
 ---
 # <a name="microsoft-defender-for-endpoint-on-ios"></a>iOS 上的 Microsoft Defender for Endpoint
 
@@ -39,7 +39,7 @@ ms.locfileid: "51687765"
 **iOS 上的 Microsoft Defender for Endpoint** 将提供针对网站、电子邮件和应用中的网络钓鱼和不安全网络连接的防护。 所有警报都将通过 Microsoft Defender 安全中心中的单个窗口窗格提供。 该门户为安全团队提供了 iOS 设备上威胁的集中视图以及其他平台。
 
 > [!CAUTION]
-> 将其他第三方终结点保护产品与 Defender for Endpoint for iOS 一起运行可能会导致性能问题和不可预知的系统错误。
+> 在 iOS 上运行其他第三方终结点保护产品以及 Defender for Endpoint 可能会导致性能问题和不可预知的系统错误。
 
 ## <a name="pre-requisites"></a>先决条件
 
@@ -58,7 +58,7 @@ ms.locfileid: "51687765"
 - 访问 Microsoft Defender 安全中心门户。
 
     > [!NOTE]
-    > Microsoft Intune 是唯一受支持的移动设备管理 (MDM) 解决方案，用于在 iOS 上部署 Microsoft Defender for Endpoint。 目前，仅支持在 Intune 中强制执行适用于 iOS 相关设备合规性策略的 Defender for Endpoint 的设备。
+    > Microsoft Intune 是唯一受支持的移动设备管理 (MDM) 解决方案，用于在 iOS 上部署 Microsoft Defender for Endpoint。 目前，仅支持在 Intune 中对与 iOS 相关的设备合规性策略强制实施 Defender for Endpoint 的设备。
 
 - 访问 [Microsoft Endpoint Manager 管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)，以将应用部署到组织中注册的用户组。
 
@@ -69,7 +69,7 @@ ms.locfileid: "51687765"
 - 设备已注册 [Intune 公司门户应用](https://apps.apple.com/us/app/intune-company-portal/id719171358)。
 
 > [!NOTE]
-> **Microsoft Defender ATP (适用于适用于 iOS) 的 Microsoft Defender ATP 现已在 [Apple App Store 上提供](https://aka.ms/mdatpiosappstore)。**
+> **Microsoft Defender ATP (适用于 iOS) 的 Microsoft Defender 终结点版本现已在 [Apple App Store 上提供](https://aka.ms/mdatpiosappstore)。**
 
 ## <a name="installation-instructions"></a>安装说明
 

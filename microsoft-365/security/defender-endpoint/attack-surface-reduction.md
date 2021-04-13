@@ -11,17 +11,17 @@ localization_priority: Normal
 audience: ITPro
 author: denisebmsft
 ms.author: deniseb
-ms.reviewer: sugamar, jcedola
+ms.reviewer: oogunrinde, sugamar, jcedola
 manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: d88da04e91875e24b13478b17d6a1e3862e1062e
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 8790d959dc41e3edea684c66e556a2ec67f85ae1
+ms.sourcegitcommit: 0fe5989b7ee2f7ae0181f2781e31db7f58689441
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51197657"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51697523"
 ---
 # <a name="use-attack-surface-reduction-rules-to-prevent-malware-infection"></a>使用攻击面减少规则防止恶意软件感染
 
@@ -80,7 +80,7 @@ Microsoft Defender 防病毒必须在活动模式下使用实时 [保护运行](
 
 ### <a name="cases-where-warn-mode-is-not-supported"></a>不支持警告模式的情况
 
-以下攻击面减少规则不支持警告模式：
+在 Microsoft Endpoint Manager 中配置三个攻击面减少规则时，警告模式不受支持。  (如果使用组策略配置攻击面减少规则，则支持警告模式。) 在 Microsoft Endpoint Manager 中配置警告模式时不支持警告模式的三个规则如下所示：
 
 - [阻止 JavaScript 或 VBScript 使用](#block-javascript-or-vbscript-from-launching-downloaded-executable-content) GUID (下载的可执行 `d3e037e1-3eb8-44c8-a917-57927947596d`) 
 - [通过 WMI 事件订阅和 GUID](#block-persistence-through-wmi-event-subscription) (阻止 `e6db77e5-3df2-4cf1-b95a-636979351e5b` 持久性) 
@@ -466,7 +466,7 @@ GUID：`c1db55ab-c21a-4637-bb3f-a12568109d35`
 
 ## <a name="see-also"></a>另请参阅
 
-- [攻击面减少常见问题解答](attack-surface-reduction-faq.md)
+- [关于减少攻击面的常见问题解答](attack-surface-reduction-faq.md)
 - [启用攻击面减少规则](enable-attack-surface-reduction.md)
-- [评估攻击面减少规则](evaluate-attack-surface-reduction.md)
+- [评估减少攻击面规则](evaluate-attack-surface-reduction.md)
 - [Microsoft Defender 防病毒与其他防病毒/反恶意软件解决方案的兼容性](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility)

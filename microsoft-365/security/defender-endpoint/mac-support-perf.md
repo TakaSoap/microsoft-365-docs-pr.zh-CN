@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 18bde560543fd1344a64cf1edd64f02f12831c25
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 8dfaf1dbf2c3742cc97060c7f9e811c83d0cb023
+ms.sourcegitcommit: 72ae1b49e7a3d3199272fcb4c39f5daec0d66f1a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/13/2021
-ms.locfileid: "51689096"
+ms.locfileid: "51698216"
 ---
 # <a name="troubleshoot-performance-issues-for-microsoft-defender-for-endpoint-on-macos"></a>解决 macOS 上 Microsoft Defender for Endpoint 的性能问题
 
@@ -149,7 +149,7 @@ RTP (实时) 是 macOS 上的 Microsoft Defender for Endpoint 的一项功能，
         125  CrashPlanService 164
       ```
 
-      若要提高 Defender for Endpoint for Mac 的性能，请在"扫描的文件总数"行下找到编号最高的一个，并添加排除项。 有关详细信息，请参阅为 Linux 的 Defender for Endpoint 配置和 [验证排除项](linux-exclusions.md)。
+      若要提高 Mac 上 Defender for Endpoint 的性能，请在"扫描的文件总数"行下找到编号最高的一个，并添加排除项。 有关详细信息，请参阅在 Linux 上配置并验证 [Defender for Endpoint 的排除项](linux-exclusions.md)。
 
       > [!NOTE]
       > 应用程序将统计信息存储在内存中，并仅跟踪自文件启动和启用实时保护以来的文件活动。 在实时保护关闭之前或期间启动的进程不计入在内。 此外，仅计算触发扫描的事件。

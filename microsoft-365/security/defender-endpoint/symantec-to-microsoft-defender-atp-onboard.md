@@ -21,12 +21,12 @@ ms.topic: article
 ms.date: 03/03/2021
 ms.custom: migrationguides
 ms.reviewer: depicker, yongrhee, chriggs
-ms.openlocfilehash: 1d332f6b0d6338d18c5a85dcf737f968f00f275f
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: b42a33d975e1368ad25d4a7102ef44bf8b9824a8
+ms.sourcegitcommit: 72ae1b49e7a3d3199272fcb4c39f5daec0d66f1a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/13/2021
-ms.locfileid: "51689517"
+ms.locfileid: "51698276"
 ---
 # <a name="migrate-from-symantec---phase-3-onboard-to-microsoft-defender-for-endpoint"></a>从 Symantec 迁移 - 阶段 3：载入到 Microsoft Defender for Endpoint
 
@@ -89,7 +89,7 @@ ms.locfileid: "51689517"
    - [卸载 Symantec Endpoint Protection](https://knowledge.broadcom.com/external/article/156148/uninstall-symantec-endpoint-protection.html)
    - Windows 设备：在 Windows 上手动 [卸载 Endpoint Protection 14 客户端](https://knowledge.broadcom.com/external/article?articleId=170040)
    - macOS 计算机 [：使用 RemoveSymantecMacFiles 删除适用于 Mac 的 Symantec 软件](https://knowledge.broadcom.com/external/article?articleId=151387)
-   - Linux 设备 [：适用于 Linux 的 Endpoint Protection 的常见问题](https://knowledge.broadcom.com/external/article?articleId=162054)
+   - Linux 设备 [：Linux 上的 Endpoint Protection 的常见问题](https://knowledge.broadcom.com/external/article?articleId=162054)
 
 ## <a name="make-sure-microsoft-defender-for-endpoint-is-in-active-mode"></a>确保 Microsoft Defender for Endpoint 已进入活动模式
 

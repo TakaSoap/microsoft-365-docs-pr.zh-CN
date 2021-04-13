@@ -35,6 +35,6 @@
 |TO-DO|Planned|Planned|Planned|不适用|Planned|
 |VISIO|不适用|✔|不适用|Planned|不适用|
 |WHITEBOARD|不适用|Planned|不适用|不适用|Planned|
-|WORD|✔|Planned|Planned|Planned|Planned|
+|WORD|✔|Planned|Planned|Planned|✔|
 |工作区分析|不适用|不适用|不适用|不适用|不适用|
 |YAMMER|Planned|Planned|Planned|Planned|不适用|

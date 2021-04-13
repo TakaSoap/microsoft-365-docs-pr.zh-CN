@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 3ad31e385ed1a3c32a261286b91912c7b2562f87
-ms.sourcegitcommit: a46532bb422ee51331f478ff50cc5444586bf6a9
+ms.openlocfilehash: c5e6edb40254ab905ef5ef3ddef9bf8bf54fc54b
+ms.sourcegitcommit: 72ae1b49e7a3d3199272fcb4c39f5daec0d66f1a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/09/2021
-ms.locfileid: "51650286"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51698264"
 ---
 # <a name="configure-advanced-features-in-defender-for-endpoint"></a>在 Defender for Endpoint 中配置高级功能
 
@@ -228,6 +228,10 @@ Defender for Endpoint 可以与 [Microsoft Intune](https://docs.microsoft.com/in
 
 > [!NOTE]
 > Intune 创建的经典 CA 策略与用于配置[](https://docs.microsoft.com/azure/active-directory/conditional-access/overview/)终结点的新式条件访问策略不同。
+
+
+## <a name="device-discovery"></a>设备发现
+帮助你查找连接到公司网络的非托管设备，而无需额外的设备或繁琐的流程更改。 使用载入的设备，可以在网络中查找非托管设备，并评估漏洞和风险。 有关详细信息，请参阅设备 [发现](device-discovery.md)。
 
 ## <a name="preview-features"></a>预览功能
 
