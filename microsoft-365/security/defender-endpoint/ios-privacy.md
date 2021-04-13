@@ -1,7 +1,7 @@
 ---
-title: 隐私信息 - 适用于 iOS 的 Microsoft Defender 终结点
+title: 隐私信息 - 适用于 iOS 上的终结点的 Microsoft Defender
 ms.reviewer: ''
-description: 介绍适用于 iOS 的 Microsoft Defender 终结点的隐私信息
+description: 介绍 iOS 上适用于终结点的 Microsoft Defender 的隐私信息
 keywords: microsoft， defender， atp， ios， 策略， 概述
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,14 +18,14 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 97d22cd8ff1c651bdab5c3613567b2a4778ec9d6
-ms.sourcegitcommit: 987f70e44e406ab6b1dd35f336a9d0c228032794
+ms.openlocfilehash: f5598df8a9e3493a1c4922f672468dd54e84c31e
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/05/2021
-ms.locfileid: "51587571"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51688197"
 ---
-# <a name="privacy-information---microsoft-defender-for-endpoint-for-ios"></a>隐私信息 - 适用于 iOS 的 Microsoft Defender 终结点
+# <a name="privacy-information---microsoft-defender-for-endpoint-on-ios"></a>隐私信息 - 适用于 iOS 上的终结点的 Microsoft Defender
 
 **适用于：**
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)

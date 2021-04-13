@@ -1,6 +1,6 @@
 ---
-title: 适用于 Mac 的 Microsoft Defender 终结点的新增功能
-description: 了解早期版本的 Microsoft Defender for Endpoint for Mac 的主要更改。
+title: Mac 上的 Microsoft Defender for Endpoint 的新增功能
+description: 了解 Mac 上早期版本的 Microsoft Defender for Endpoint 的主要更改。
 keywords: microsoft， defender， atp， mac， 安装， macos， whatsnew
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,14 +18,14 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 5cd1f64d006b5462634dd47df9083e1a89db0e8c
-ms.sourcegitcommit: 0ff6edbf52562138a69c6675cb0274ec984986c3
+ms.openlocfilehash: 67bbc987dc339c0e1f0354e07d6d2db8c39ec8b9
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "51615204"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51689037"
 ---
-# <a name="whats-new-in-microsoft-defender-for-endpoint-for-mac"></a>适用于 Mac 的 Microsoft Defender 终结点的新增功能
+# <a name="whats-new-in-microsoft-defender-for-endpoint-on-mac"></a>Mac 上的 Microsoft Defender for Endpoint 的新增功能
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -40,7 +40,7 @@ ms.locfileid: "51615204"
 
 ## <a name="1012569-20121022125690"></a>101.25.69 (20.121022.12569.0) 
 
-- Microsoft Defender for Endpoint for Mac 现已在预览版中提供给美国政府客户。 有关详细信息，请参阅 [Microsoft Defender for Endpoint for US Government customers](gov.md)。
+- macOS 上的 Microsoft Defender for Endpoint 现在可供美国政府客户预览使用。 有关详细信息，请参阅 [Microsoft Defender for Endpoint for US Government customers](gov.md)。
 - 性能改进 (XCode 模拟器应用用于修复错误) &的情况
 
 ## <a name="1012364-20121021123640"></a>101.23.64 (20.121021.12364.0) 
@@ -61,7 +61,7 @@ ms.locfileid: "51615204"
 > [!NOTE]
 > 此版本已弃用旧的命令行工具语法。 有关新语法的信息，请参阅 [Resources](mac-resources.md#configuring-from-the-command-line)。
 
-- 添加了一个新的命令行开关以禁用网络扩展 `mdatp system-extension network-filter disable` ：。 此命令可用于解决可能与 Microsoft Defender for Endpoint for Mac 相关的网络问题
+- 添加了一个新的命令行开关以禁用网络扩展 `mdatp system-extension network-filter disable` ：。 此命令可用于解决与 Mac 上的 Microsoft Defender for Endpoint 相关的网络问题
 - Bug 修复&性能改进
 
 ## <a name="1011921-20120101119210"></a>101.19.21 (20.120101.11921.0) 
@@ -94,7 +94,7 @@ ms.locfileid: "51615204"
 
 - 该产品版本已在 macOS Big Sur 11 beta 9 上经过验证
 
-- 命令行工具的新 `mdatp` 语法现在是默认语法。 有关新语法详细信息，请参阅适用于 Mac 的 [Microsoft Defender 终结点的资源](mac-resources.md#configuring-from-the-command-line)
+- 命令行工具的新 `mdatp` 语法现在是默认语法。 有关新语法详细信息，请参阅[macOS](mac-resources.md#configuring-from-the-command-line)上的 Microsoft Defender for Endpoint 的资源
 
   > [!NOTE]
   > **2021** 年 1 月 1 日将从产品中删除旧的命令行工具语法。
@@ -159,7 +159,7 @@ ms.locfileid: "51615204"
 
 ## <a name="1009027"></a>100.90.27
 
-- 现在， [你可以为](mac-updates.md#set-the-channel-name) Microsoft Defender for Endpoint for Mac 设置与系统范围的更新频道不同的更新通道
+- 现在可以在 macOS [上](mac-updates.md#set-the-channel-name) 为 Microsoft Defender for Endpoint 设置与系统范围的更新通道不同的更新通道
 - 新产品图标
 - 其他用户体验改进
 - Bug 修复
@@ -196,7 +196,7 @@ ms.locfileid: "51615204"
 
 ## <a name="1007942"></a>100.79.42
 
-- 修复了 Microsoft Defender for Endpoint for Mac 有时干扰时间计算机的问题
+- 修复了 Mac 上的 Microsoft Defender for Endpoint 有时干扰时间计算机的问题
 - 向命令行实用工具添加了一个新开关，用于测试与后端服务的连接
   ```bash
   mdatp connectivity test

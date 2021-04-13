@@ -1,7 +1,6 @@
 ---
 title: 自行注册现有设备
 description: 注册你可能已拥有的重复使用的设备，以便它们可以通过 Microsoft 托管桌面进行管理
-keywords: Microsoft 托管桌面, Microsoft 365, 服务, 文档
 ms.service: m365-md
 author: jaimeo
 f1.keywords:
@@ -12,12 +11,12 @@ ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 1703e4ed4ea0f3306edf6fdf07ab9c97a9266d4f
-ms.sourcegitcommit: 39609c4d8c432c8e7d7a31cb35c8020e5207385b
+ms.openlocfilehash: f2b3e109493331a4b63d669501525a48cb996809
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "51445562"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51689217"
 ---
 # <a name="register-existing-devices-yourself"></a>自行注册现有设备
 
@@ -150,9 +149,11 @@ Import-CSV -Path (Get-ChildItem -Filter *.csv) | ConvertTo-Csv -NoTypeInformatio
 请按以下步骤操作：
 
 1. 在 **"文件** 上载"中，提供之前创建的 CSV 文件的路径。
+2. 在 [下拉菜单中选择](../service-description/profiles.md) 设备配置文件。
+3. 选择 **注册设备**。 系统将设备添加到设备边栏选项卡上的设备列表，标记为 **注册挂起**。  注册通常少于 10 分钟，并且成功后，设备将显示为"为用户准备就绪"，这意味着它已准备好并等待用户开始使用。
 
-1. 选择 **注册设备**。 系统将设备添加到设备边栏选项卡上的设备列表，标记为 **注册挂起**。  注册通常少于 10 分钟，并且成功后，设备将显示为"为用户准备就绪"，这意味着它已准备好并等待用户开始使用。
-
+> [!NOTE]
+> 如果你手动将 Azure Active Directory (AAD) 设备组成员身份，它将自动重新分配到组，用于其设备配置文件，并删除任何冲突组。
 
 你可以监视主页上的设备注册进度。 其中报告的可能状态包括：
 

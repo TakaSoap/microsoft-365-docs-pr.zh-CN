@@ -1,6 +1,6 @@
 ---
-title: 在新载入的 Microsoft Defender ATP 设备上运行检测测试
-description: 在新载入的设备上运行检测脚本，以验证它是否正确载入到 Microsoft Defender ATP 服务。
+title: 在新载入的 Microsoft Defender 终结点设备上运行检测测试
+description: 在新载入的设备上运行检测脚本，以验证它是否正确载入到 Microsoft Defender for Endpoint 服务。
 keywords: 检测测试， 检测， powershell， 脚本， 验证， 载入， 适用于终结点载入的 microsoft defender， 客户端， 服务器， 测试
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 10154a734bb4c3d8b26fffb8618484aeb11f907a
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 89b8ac7d99cfcd4c5e5e647e5ba54e14184ef0bd
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51055916"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51688113"
 ---
 # <a name="run-a-detection-test-on-a-newly-onboarded-microsoft-defender-for-endpoint-device"></a>在新载入的 Microsoft Defender 终结点设备上运行检测测试 
 

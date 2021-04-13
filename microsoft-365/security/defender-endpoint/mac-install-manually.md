@@ -1,6 +1,6 @@
 ---
-title: 适用于 macOS 的 Microsoft Defender 终结点的手动部署
-description: 从命令行手动安装适用于 macOS 的 Microsoft Defender for Endpoint。
+title: 在 macOS 上手动部署 Microsoft Defender for Endpoint
+description: 从命令行手动在 macOS 上安装 Microsoft Defender for Endpoint。
 keywords: microsoft， defender， atp， mac， 安装， 部署， 卸载， intune， jamf， macos， catalina， mojave， high sierra
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,14 +18,14 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: a9e75441a8c4a336e8c657d27330c118fcac4788
-ms.sourcegitcommit: 7b8104015a76e02bc215e1cf08069979c70650ae
+ms.openlocfilehash: 0e8faf95df6691828558175412a1de8aa844d93f
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51476301"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51688593"
 ---
-# <a name="manual-deployment-for-microsoft-defender-for-endpoint-for-macos"></a>适用于 macOS 的 Microsoft Defender 终结点的手动部署
+# <a name="manual-deployment-for-microsoft-defender-for-endpoint-on-macos"></a>在 macOS 上手动部署 Microsoft Defender for Endpoint
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -35,7 +35,7 @@ ms.locfileid: "51476301"
 
 > 想要体验适用于终结点的 Defender？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
 
-本主题介绍如何手动部署适用于 macOS 的 Microsoft Defender for Endpoint。 要成功部署，需要完成以下所有步骤：
+本主题介绍如何手动在 macOS 上部署 Microsoft Defender for Endpoint。 要成功部署，需要完成以下所有步骤：
 - [下载安装和载入程序包](#download-installation-and-onboarding-packages)
 - [macOS (10.15 及早期版本的应用程序安装) ](#application-installation-macos-1015-and-older-versions)
 - [macOS 11 (更高版本的应用程序安装) ](#application-installation-macos-11-and-newer-versions)
@@ -43,7 +43,7 @@ ms.locfileid: "51476301"
 
 ## <a name="prerequisites-and-system-requirements"></a>先决条件和系统要求
 
-在开始使用之前，请参阅 [主 Microsoft Defender for Endpoint for macOS](microsoft-defender-endpoint-mac.md) 页面，了解当前软件版本的先决条件和系统要求。
+在开始使用之前，请参阅 [macOS](microsoft-defender-endpoint-mac.md) 上的 Microsoft Defender for Endpoint 主页，了解当前软件版本的先决条件和系统要求说明。
 
 ## <a name="download-installation-and-onboarding-packages"></a>下载安装和载入程序包
 
@@ -105,9 +105,9 @@ ms.locfileid: "51476301"
 
     ![系统扩展安全首选项1](images/big-sur-install-3.png)
 
-5. 对随 Microsoft Defender for Endpoint for Mac 分发的所有系统扩展重复步骤 3 & 4。
+5. 对通过 Mac 上的 Microsoft Defender for Endpoint 分发的所有系统扩展重复步骤 3 & 4。
 
-6. 作为终结点检测和响应功能的一部分，Microsoft Defender for Mac 终结点会检查套接字流量，将此信息报告给 Microsoft Defender 安全中心门户。 当系统提示授予 Microsoft Defender 终结点权限以筛选网络流量时，请选择"允许 **"。**
+6. 作为终结点检测和响应功能的一部分，Mac 上的 Microsoft Defender for Endpoint 会检查套接字流量，将此信息报告给 Microsoft Defender 安全中心门户。 当系统提示授予 Microsoft Defender 终结点权限以筛选网络流量时，请选择"允许 **"。**
 
     ![系统扩展安全首选项2](images/big-sur-install-4.png)
 
@@ -117,7 +117,7 @@ ms.locfileid: "51476301"
 
 ## <a name="client-configuration"></a>客户端配置
 
-1. 将 wdav.pkg 和 MicrosoftDefenderATPOnboardingMacOs.py 复制到你部署适用于 macOS 的终结点的 Microsoft Defender 的设备。
+1. 将 wdav.pkg 和 MicrosoftDefenderATPOnboardingMacOs.py 复制到 macOS 上部署 Microsoft Defender for Endpoint 的设备。
 
     客户端设备不与客户端org_id。 请注意 *，org_id* 属性为空。
 

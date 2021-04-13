@@ -19,12 +19,12 @@ ms.collection:
 ms.topic: conceptual
 ROBOTS: noindex,nofollow
 ms.technology: mde
-ms.openlocfilehash: a4c92d27d45208634f99f9bfb2f756cfc5792fac
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: db24bea3bddc682eceda8e6ea3fe2749b6b2778f
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51186649"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51689121"
 ---
 # <a name="new-configuration-profiles-for-macos-catalina-and-newer-versions-of-macos"></a>macOS 加泰罗尼亚语和较新版本的 macOS 的新配置文件
 
@@ -36,9 +36,9 @@ ms.locfileid: "51186649"
 
 > 想要体验 Microsoft Defender for Endpoint？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-为了与 macOS 演变保持一致，我们正在准备利用系统扩展而非内核扩展的适用于 Mac 的 Microsoft Defender for Endpoint 更新。 此更新仅适用于 macOS Catalina (10.15.4) 更高版本的 macOS。
+为了与 macOS 发展保持一致，我们正在准备利用系统扩展而非内核扩展的 macOS 更新上的 Microsoft Defender for Endpoint。 此更新仅适用于 macOS Catalina (10.15.4) 更高版本的 macOS。
 
-如果你通过 JAMF、Intune 或其他 MDM 解决方案 (托管环境中部署了 Microsoft Defender for Endpoint for Mac) ，则必须部署新的配置文件。 如果不执行这些步骤，将导致用户收到运行这些新组件的审批提示。
+如果你通过 JAMF、Intune 或其他 MDM 解决方案 (托管环境中在 macOS 上部署了 Microsoft Defender for Endpoint) ，则必须部署新的配置文件。 如果不执行这些步骤，将导致用户收到运行这些新组件的审批提示。
 
 ## <a name="jamf"></a>JAMF
 
@@ -69,10 +69,10 @@ ms.locfileid: "51186649"
 
 ### <a name="network-extension-policy"></a>网络扩展策略
 
-作为终结点检测和响应功能的一部分，Microsoft Defender for Mac 终结点会检查套接字流量，将此信息报告给 Microsoft Defender 安全中心门户。 以下策略允许网络扩展执行此功能。
+作为终结点检测和响应功能的一部分，macOS 上的 Microsoft Defender for Endpoint 会检查套接字流量，将此信息报告给 Microsoft Defender 安全中心门户。 以下策略允许网络扩展执行此功能。
 
 >[!NOTE]
->JAMF 没有对内容筛选策略的内置支持，这是启用 Microsoft Defender for Mac 终结点在设备上安装的网络扩展的先决条件。 此外，JAMF 有时会更改正在部署的策略的内容。
+>JAMF 没有对内容筛选策略的内置支持，这是启用 MacOS 上的 Microsoft Defender for Endpoint 在设备上安装的网络扩展的先决条件。 此外，JAMF 有时会更改正在部署的策略的内容。
 >因此，以下步骤提供了涉及对配置文件进行签名的解决方法。
 
 1. 将以下内容保存为使用 `com.microsoft.network-extension.mobileconfig` 文本编辑器的设备：

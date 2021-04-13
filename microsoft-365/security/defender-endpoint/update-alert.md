@@ -1,6 +1,6 @@
 ---
 title: 更新警报实体 API
-description: 了解如何使用此 API 更新 Microsoft Defender ATP 警报。 可以更新状态、确定、分类和 assignedTo 属性。
+description: 了解如何使用此 API 更新 Microsoft Defender for Endpoint 警报。 可以更新状态、确定、分类和 assignedTo 属性。
 keywords: api， 图形 api， 受支持的 api， 获取， 警报， 信息， id
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 7dd3ab3da34efa6cb954db2a596d7a1e48efedf1
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 94be185bd30cd36f456a66d5ae30a4361abc0c48
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51199305"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51688245"
 ---
 # <a name="update-alert"></a>更新警报
 
@@ -70,7 +70,7 @@ PATCH /api/alerts/{id}
 
 名称 | 类型 | 说明
 :---|:---|:---
-Authorization | 字符串 | Bearer {token}。 **必需**。
+Authorization | String | Bearer {token}。 **必需**。
 Content-Type | String | application/json. **必需**。
 
 
@@ -81,10 +81,10 @@ Content-Type | String | application/json. **必需**。
 
 属性 | 类型 | 说明
 :---|:---|:---
-状态 | 字符串 | 指定警报的当前状态。 属性值为："New"、InProgress 和"Resolved"。
+状态 | String | 指定警报的当前状态。 属性值为："New"、InProgress 和"Resolved"。
 assignedTo | String | 警报的所有者
 classification | 字符串 | 指定警报的规范。 属性值为："Unknown"、"FalsePositive"和"TruePositive"。 
-确定 | 字符串 | 指定警报的确定。 属性值包括："NotAvailable"、"Apt"、"Malware"、SecurityPersonnel、"SecurityTesting"、"UnwantedSoftware"和"Other"
+确定 | String | 指定警报的确定。 属性值包括："NotAvailable"、"Apt"、"Malware"、SecurityPersonnel、"SecurityTesting"、"UnwantedSoftware"和"Other"
 注释 | String | 要添加到警报的注释。
 
 ## <a name="response"></a>响应

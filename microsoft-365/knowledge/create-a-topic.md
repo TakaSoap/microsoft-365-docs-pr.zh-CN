@@ -14,12 +14,12 @@ ms.collection:
 ms.service: ''
 search.appverid: ''
 localization_priority: Normal
-ms.openlocfilehash: c1f7b67bb49aff8d6656798d80636d9de5858877
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 7d1dc1af6e845ccfe2fb0e8f5701a2cd3018c308
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51165833"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51687527"
 ---
 # <a name="create-a-new-topic-in-microsoft-viva-topics"></a>在 Microsoft Viva 主题中创建新主题
 
@@ -42,82 +42,77 @@ ms.locfileid: "51165833"
 
 可以从两个位置创建新主题：
 
-- 主题中心主页：具有"谁可以创建或编辑主题"权限的任何许可用户 (参与者) 都可以通过选择"新建"菜单并选择"主题"页面，从主题中心<b>创建新</b><b>主题。</b></br> 
+- 主题中心主页：具有"谁可以创建或编辑主题"权限的任何许可用户 (参与者) 都可以通过选择"新建"菜单并选择"主题"页面，从主题中心 **创建新****主题。** 
 
-    ![主题中心的新主题](../media/knowledge-management/new-topic.png) </br> 
+    ![主题中心的新主题](../media/knowledge-management/new-topic.png)  
 
-- 管理主题页面：具有"谁可以管理主题"权限 (知识经理) 可通过选择"新建主题"页从主题中心中的"管理主题"页创建新<b>主题</b>。</br> 
+- 管理主题页面：具有"谁可以管理主题"权限 (知识经理) 可通过选择"新建主题"页从主题中心中的"管理主题"页创建新 **主题**。 
 
-    ![管理主题中的新主题](../media/knowledge-management/new-topic-topic-center.png) </br> 
+    ![管理主题中的新主题](../media/knowledge-management/new-topic-topic-center.png)  
 
 ### <a name="to-create-a-new-topic"></a>创建新主题：
 
 1. 选择从"管理主题"页上的功能区创建新主题页的选项。
 
-2.   在 **"命名本主题** "部分，键入新主题的名称。
+2.  在 **"命名本主题** "部分，键入新主题的名称。
 
-    ![将本主题命名](../media/knowledge-management/k-new-topic-page.png) </br> 
+    ![将本主题命名](../media/knowledge-management/k-new-topic-page.png)  
 
+3. 在 **"备用名称** "部分，键入本主题可能引用的其他任何名称。 
 
-3. 在 <b>"备用名称</b> "部分，键入本主题可能引用的其他任何名称。 
+    ![备用名称](../media/knowledge-management/alt-names.png)  
 
-    ![备用名称](../media/knowledge-management/alt-names.png) </br> 
-4. 在 <b>"说明</b> "部分，键入几个描述该主题的句子。 
+4. 在 **"说明** "部分，键入几个描述该主题的句子。 
 
-    ![主题的说明](../media/knowledge-management/description.png)</br>
+    ![主题的说明](../media/knowledge-management/description.png)
 
-4. 在 <b>"固定人员</b> "部分中，你可以"固定"一个人，以将其显示与主题 (例如，已连接资源的所有者) 。 首先在"添加新用户"框中键入用户的姓名或<b></b>电子邮件地址，然后从搜索结果中选择要添加的用户。 您还可以通过选择用户卡片上的"从列表中删除" <b>图标来</b> "取消固定"它们。 还可以拖动人员以更改联系人列表的显示顺序。
+4. 在 **"固定人员** "部分中，你可以"固定"一个人，以将其显示与主题 (例如，已连接资源的所有者) 。 首先在"添加新用户"框中键入用户的姓名或电子邮件地址，然后从搜索结果中选择要添加的用户。 您还可以通过选择用户卡片上的"从列表中删除" **图标来** "取消固定"它们。 您还可以将该人员拖动到列表中的其他位置。
  
-    ![固定人员](../media/knowledge-management/pinned-people.png)</br>
+    ![固定人员](../media/knowledge-management/pinned-people.png)
 
+5. 在 **"固定的文件和** 页面"部分，可以添加或"固定"与主题关联的文件或 SharePoint 网站页面。
 
-5. 在 <b>"固定的文件和</b> 页面"部分，可以添加或"固定"与主题关联的文件或 SharePoint 网站页面。
-
-   ![固定的文件和页面](../media/knowledge-management/pinned-files-and-pages.png)</br>
+   ![固定的文件和页面](../media/knowledge-management/pinned-files-and-pages.png)
  
-    若要添加新文件，请选择"添加<b></b>"，从"常用"或"关注的网站"中选择 SharePoint 网站，然后从网站的文档库中选择该文件。
+    若要添加新文件，请选择"添加"，从"常用"或"关注的网站"中选择 SharePoint 网站，然后从网站的文档库中选择该文件。
 
-    您还可以通过提供 URL，<b></b>使用"自链接"选项添加文件或页面。 
+    您还可以通过提供 URL，使用"自链接"选项添加文件或页面。 
 
     > [!Note] 
     > 添加的文件和页面必须位于同一 Microsoft 365 租户中。 如果要在主题中添加指向外部资源的链接，可以通过步骤 8 中的画布图标添加该链接。
 
 
-6.  " <b>相关网站</b> "部分显示包含有关该主题的信息的网站。 
+6.  " **相关网站** "部分显示包含有关该主题的信息的网站。 
 
-    ![相关网站部分](../media/knowledge-management/related-sites.png)</br>
+    ![相关网站部分](../media/knowledge-management/related-sites.png)
 
-    您可以通过选择"添加"，然后搜索<b></b>网站或从"常用"或"最近"网站列表中选择来添加相关网站。</br>
+    您可以通过选择"添加"，然后搜索网站或从"常用"或"最近"网站列表中选择来添加相关网站。
     
-    ![选择站点](../media/knowledge-management/sites.png)</br>
+    ![选择站点](../media/knowledge-management/sites.png)
 
-7. " <b>相关主题</b> "部分显示主题之间的连接。 您可以通过选择"连接到相关主题"按钮，然后键入相关<b></b>主题的名称，然后从搜索结果中选择该名称，来添加到其他主题的连接。 
+7. " **相关主题** "部分显示主题之间的连接。 您可以通过选择"连接到相关主题"按钮，然后键入相关主题的名称，然后从搜索结果中选择该名称，来添加到其他主题的连接。 
 
-   ![相关主题](../media/knowledge-management/related-topic.png)</br>  
+   ![相关主题](../media/knowledge-management/related-topic.png)  
 
-    然后，您可以对主题的相关情况进行说明，然后选择"更新<b>"。</b></br>
+    然后，您可以对主题的相关情况进行说明，然后选择"更新 **"。**
 
-   ![相关主题说明](../media/knowledge-management/related-topics-update.png)</br> 
+   ![相关主题说明](../media/knowledge-management/related-topics-update.png) 
 
    您添加的相关主题将显示为已连接的主题。
 
-   ![已连接的相关主题](../media/knowledge-management/related-topics-final.png)</br> 
+   ![已连接的相关主题](../media/knowledge-management/related-topics-final.png) 
 
-   若要删除相关主题，请选择要删除的主题，然后选择" <b>删除主题"</b> 图标。</br>
+   若要删除相关主题，请选择要删除的主题，然后选择" **删除主题"** 图标。
  
-   ![删除相关主题](../media/knowledge-management/remove-related.png)</br>  
+   ![删除相关主题](../media/knowledge-management/remove-related.png)  
 
-   然后选择"<b>删除"。</b></br>
+   然后选择"**删除"。**
 
-   ![确认删除](../media/knowledge-management/remove-related-confirm.png)</br> 
-     
- 
-
+   ![确认删除](../media/knowledge-management/remove-related-confirm.png) 
 
 8. 您还可以通过选择画布图标（可在简短说明下方找到 (，将静态项目添加到页面) ，如文本、图像或链接。 选择它将打开 SharePoint 工具箱，您可以从中选择要添加到页面的项。
 
-   ![画布图标](../media/knowledge-management/webpart-library.png)</br> 
-
+   ![画布图标](../media/knowledge-management/webpart-library.png) 
 
 9. 选择 **"发布** "保存更改。 
 

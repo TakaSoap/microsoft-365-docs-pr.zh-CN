@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 1b203a29083aaa4a1f86abcd7e2c7b24bd63f186
-ms.sourcegitcommit: 39609c4d8c432c8e7d7a31cb35c8020e5207385b
+ms.openlocfilehash: 330406b3540becafb0ffac8cbbc36437a2e57f60
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "51445740"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51688833"
 ---
 # <a name="minimum-requirements-for-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint 的最低要求
 
@@ -118,10 +118,10 @@ Microsoft Defender for Endpoint 需要以下 Microsoft 批量许可优惠之一�
 
 
 ### <a name="other-supported-operating-systems"></a>其他支持的操作系统
-- Android
-- iOS
-- Linux
-- macOS
+- [Android](microsoft-defender-endpoint-android.md)
+- [iOS](microsoft-defender-endpoint-ios.md)
+- [Linux](microsoft-defender-endpoint-linux.md)
+- [macOS](microsoft-defender-endpoint-mac.md)
 
 > [!NOTE]
 > 你需要确认你已与 Defender for Endpoint 兼容的 Android、iOS 和 macOS 的 Linux 分发和版本，以便集成正常工作。

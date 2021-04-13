@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: c292c57c179a832728b03a7fc94fb7085d3ea0ec
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 71f230f557792d75659dc4dbfc5911811514d5ea
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51166073"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51687873"
 ---
 # <a name="onboard-non-windows-devices"></a>载入非 Windows 设备
 
@@ -41,23 +41,20 @@ ms.locfileid: "51166073"
 Defender for Endpoint 为 Windows 和非 Windows 平台提供了集中式安全操作体验。 你将能够在 Microsoft Defender 安全中心内查看各种受支持操作系统 (操作系统) 警报，并更好地保护组织的网络。 
 
 你需要了解与 Defender for Endpoint 兼容的确切的 Linux 发行版和 macOS 版本，集成工作。 有关详细信息，请参阅：
-- [适用于 Linux 系统要求的 Microsoft Defender for Endpoint](microsoft-defender-endpoint-linux.md#system-requirements)  
-- [Microsoft Defender for Endpoint for Mac system requirements](microsoft-defender-endpoint-mac.md#system-requirements).
+- [Linux 上的 Microsoft Defender for Endpoint 系统要求](microsoft-defender-endpoint-linux.md#system-requirements)  
+- [macOS 上的 Microsoft Defender for Endpoint 系统要求](microsoft-defender-endpoint-mac.md#system-requirements)。
 
 ## <a name="onboarding-non-windows-devices"></a>载入非 Windows 设备
 你需要执行以下步骤来载入非 Windows 设备：
 1. 选择你的首选载入方法：
 
-   - 对于 macOS 设备，你可以选择通过 Microsoft Defender ATP 或第三方解决方案载入。 有关详细信息，请参阅[Microsoft Defender for Endpoint for Mac。](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/microsoft-defender-atp-mac)
+   - 对于 macOS 设备，你可以选择通过 Microsoft Defender ATP 或第三方解决方案载入。 有关详细信息，请参阅[Microsoft Defender for Endpoint for Mac。](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint-mac)
+
    - 对于其他非 Windows 设备，选择通过第三方集成载入 **非 Windows 设备**。   
-       
-     1. 在导航窗格中，选择 **互操作性**  >  **合作伙伴**。 确保列出了第三方解决方案。
-
-        2. 在 **"合作伙伴应用程序"** 选项卡中，选择支持非 Windows 设备的合作伙伴。
-
-        3. 选择 **"打开合作伙伴** 页面"以打开合作伙伴的页面。 按照页面上提供的说明进行操作。
-
-        4. 创建帐户或订阅合作伙伴解决方案后，应进入一个阶段，要求贵组织的租户全局管理员接受来自合作伙伴应用程序的权限请求。 仔细阅读权限请求，确保它与所需的服务保持一致。 
+    1. 在导航窗格中，选择 **互操作性**  >  **合作伙伴**。 确保列出了第三方解决方案。
+    2. 在 **"合作伙伴应用程序"** 选项卡中，选择支持非 Windows 设备的合作伙伴。
+    3. 选择 **"打开合作伙伴** 页面"以打开合作伙伴的页面。 按照页面上提供的说明进行操作。
+    4. 创建帐户或订阅合作伙伴解决方案后，应进入一个阶段，要求贵组织的租户全局管理员接受来自合作伙伴应用程序的权限请求。 仔细阅读权限请求，确保它与所需的服务保持一致。 
 
         
 2. 按照第三方解决方案的说明运行检测测试。

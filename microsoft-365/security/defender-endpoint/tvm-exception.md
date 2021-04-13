@@ -1,7 +1,7 @@
 ---
 title: 创建和查看安全建议例外 - 威胁和漏洞管理
 description: 创建并监视威胁和漏洞管理中的安全建议异常。
-keywords: microsoft defender atp tvm remediation， mdatp tvm， threat and vulnerability management， threat & vulnerability management， threat & vulnerability management remediation， tvm remediation intune， tvm remediation sccm
+keywords: microsoft defender for endpoint tvm remediation， mdatp tvm， threat and vulnerability management， threat & vulnerability management， threat & vulnerability management remediation， tvm remediation intune， tvm remediation sccm
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 13ac09b1ad918ed945edec6167fd57ea02b616ea
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: 4f37300a742ab8cac32e95863cb706f1fd5f5d66
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51500186"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51689409"
 ---
 # <a name="create-and-view-exceptions-for-security-recommendations---threat-and-vulnerability-management"></a>创建和查看安全建议例外 - 威胁和漏洞管理
 
@@ -84,7 +84,7 @@ ms.locfileid: "51500186"
 
 ### <a name="global-exceptions"></a>全局例外
 
-如果你拥有全局管理员权限 (Microsoft Defender ATP 管理员) ，你将能够创建和取消全局例外。 它会影响 **组织** 的所有当前和未来设备组，只有具有相似权限的用户才能更改它。 建议状态将从"活动"更改为"完全例外"。
+如果您具有全局管理员权限，您将能够创建和取消全局异常。 它会影响 **组织** 的所有当前和未来设备组，只有具有相似权限的用户才能更改它。 建议状态将从"活动"更改为"完全例外"。
 
 ![显示全局例外选项。](images/tvm-exception-global.png)
 

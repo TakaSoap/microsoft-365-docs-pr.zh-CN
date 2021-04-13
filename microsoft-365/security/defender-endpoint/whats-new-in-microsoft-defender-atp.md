@@ -1,7 +1,7 @@
 ---
-title: Microsoft Defender ATP 中的新增功能
-description: 请参阅最新版本的 Microsoft Defender ATP (GA) 中通常提供哪些功能，以及 Windows 10 和 Windows Server 中的安全功能。
-keywords: Microsoft Defender atp 中的新增功能， ga， 通用， 功能， 可用， 新增
+title: Microsoft Defender for Endpoint 中的新增功能
+description: 请参阅最新版本的 Microsoft Defender for Endpoint (GA) 中通常提供哪些功能，以及 Windows 10 和 Windows Server 中的安全功能。
+keywords: microsoft defender 终结点的新增功能， ga， 通用， 功能， 可用， 新增
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: a72b742d8f4a69d2e38cf4fa234ba5b7e2961ac6
-ms.sourcegitcommit: 987f70e44e406ab6b1dd35f336a9d0c228032794
+ms.openlocfilehash: c9f4c0689739224b00c9c14db1482d54faab3512
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/05/2021
-ms.locfileid: "51587607"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51688233"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint 中的新增功能
 
@@ -52,22 +52,22 @@ ms.locfileid: "51587607"
 - [Windows 虚拟桌面](https://azure.microsoft.com/services/virtual-desktop/) <br> Microsoft Defender for Endpoint 现在增加了对 Windows 虚拟桌面的支持。
 
 ## <a name="december-2020"></a>2020 年 12 月
-- [Microsoft Defender for Endpoint for iOS](microsoft-defender-endpoint-ios.md) <br> Microsoft Defender for Endpoint 现在增加了对 iOS 的支持。 了解如何安装、配置、更新和使用适用于 iOS 的 Microsoft Defender for Endpoint。
+- [iOS 上的 Microsoft Defender for Endpoint](microsoft-defender-endpoint-ios.md) <br> Microsoft Defender for Endpoint 现在增加了对 iOS 的支持。 了解如何在 iOS 上安装、配置、更新和使用 Microsoft Defender for Endpoint。
 
 ## <a name="september-2020"></a>2020 年 9 月
-- [Microsoft Defender for Endpoint for Android](microsoft-defender-endpoint-android.md) <br> Microsoft Defender for Endpoint 现在增加了对 Android 的支持。 了解如何安装、配置、更新和使用适用于 Android 的 Microsoft Defender for Endpoint。
+- [Android 上的 Microsoft Defender for Endpoint](microsoft-defender-endpoint-android.md) <br> Microsoft Defender for Endpoint 现在增加了对 Android 的支持。 了解如何在 Android 上安装、配置、更新和使用 Microsoft Defender for Endpoint。
 - [威胁和漏洞管理 macOS 支持](tvm-supported-os.md)<br> macOS 的威胁和漏洞管理现已公开预览版，它将持续检测 macOS 设备上存在漏洞，以帮助你通过关注风险确定修复优先级。 从此 [Microsoft 技术社区博客文章了解更多信息](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/microsoft-defender-for-endpoint-adds-depth-and-breadth-to-threat/ba-p/1695824)。
 
 
 ## <a name="august-2020"></a>2020 年 8 月
-- [Microsoft Defender for Endpoint for Android](microsoft-defender-endpoint-android.md) <br> Microsoft Defender for Endpoint 现在增加了对 Android 的支持。 了解如何安装、配置和使用适用于 Android 的 Microsoft Defender for Endpoint。
+- [Android 上的 Microsoft Defender for Endpoint](microsoft-defender-endpoint-android.md) <br> Microsoft Defender for Endpoint 现在增加了对 Android 的支持。 了解如何在 Android 上安装、配置和使用 Microsoft Defender for Endpoint。
 
 
 ## <a name="july-2020"></a>2020 年 7 月
 - [创建证书指示器](manage-indicators.md) <br> 创建指示器以允许或阻止证书。 
 
 ## <a name="june-2020"></a>2020 年 6 月
-- [Microsoft Defender for Endpoint for Linux](microsoft-defender-endpoint-linux.md) <br> Microsoft Defender for Endpoint 现在增加了对 Linux 的支持。 了解如何安装、配置、更新和使用 Microsoft Defender for Endpoint for Linux。
+- [Linux 上的 Microsoft Defender for Endpoint](microsoft-defender-endpoint-linux.md) <br> Microsoft Defender for Endpoint 现在增加了对 Linux 的支持。 了解如何在 Linux 上安装、配置、更新和使用 Microsoft Defender for Endpoint。
 
 - [评估实验室中的攻击模拟器](evaluation-lab.md#threat-simulator-scenarios) <br> Microsoft Defender for Endpoint 已与各种威胁模拟平台合作，让你可以方便地从门户内测试平台的功能。
 
@@ -78,7 +78,7 @@ ms.locfileid: "51587607"
 
 ## <a name="november-december-2019"></a>November-December 2019 年
 
-- [适用于 Mac 的终结点的 Microsoft Defender](microsoft-defender-endpoint-mac.md) <BR> Microsoft Defender for Endpoint for Mac 为 Mac 设备带来了下一代保护。 统一终结点安全平台的核心组件现在可用于 Mac 设备，包括 [终结点检测和响应](microsoft-defender-endpoint-mac.md)。
+- [macOS 上的 Microsoft Defender for Endpoint](microsoft-defender-endpoint-mac.md) <BR> macOS 上的 Microsoft Defender for Endpoint 为 Mac 设备带来了下一代保护。 统一终结点安全平台的核心组件现在可用于 Mac 设备，包括 [终结点检测和响应](microsoft-defender-endpoint-mac.md)。
  
 - [威胁&漏洞管理应用程序和应用程序版本生命周期结束信息](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/tvm-security-recommendation) <BR>已进入生命周期结束的应用程序和应用程序版本会进行标记或标记，以便你了解它们将不再受支持，并且可以采取措施卸载或替换它们。 这样做有助于降低因应用程序未修补导致的各种漏洞暴露的风险。
 

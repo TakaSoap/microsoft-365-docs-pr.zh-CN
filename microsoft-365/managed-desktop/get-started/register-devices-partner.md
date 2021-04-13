@@ -1,7 +1,6 @@
 ---
 title: 合作伙伴注册设备的步骤
 description: 合作伙伴如何注册设备，以便由 Microsoft 托管桌面管理设备
-keywords: Microsoft 托管桌面, Microsoft 365, 服务, 文档
 ms.service: m365-md
 author: jaimeo
 f1.keywords:
@@ -12,17 +11,17 @@ ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: baf15ca4b83052af84d2b22b3d2604c6022ac900
-ms.sourcegitcommit: 39609c4d8c432c8e7d7a31cb35c8020e5207385b
+ms.openlocfilehash: 227786fdcf1e490be1e3ce74bbc1be1c5f21acfe
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "51445586"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51689229"
 ---
 # <a name="steps-for-partners-to-register-devices"></a>合作伙伴注册设备的步骤
 
 
-本主题介绍合作伙伴注册设备要遵循的步骤。 为自己注册设备的过程记录在"在 Microsoft 托管桌面中注册设备 ["中](register-devices-self.md)。
+本文介绍了合作伙伴注册设备要遵循的步骤。 为自己注册设备的过程记录在"在 Microsoft 托管桌面中注册设备 ["中](register-devices-self.md)。
 
 
 
@@ -36,20 +35,25 @@ ms.locfileid: "51445586"
 
 ## <a name="register-devices-by-using-partner-center"></a>使用合作伙伴中心注册设备
 
-在与客户建立关系后，你可以按照以下步骤利用合作伙伴中心为有关系的任何客户将设备添加到 Autopilot：
+在与客户建立关系后，可以通过执行以下步骤，使用合作伙伴中心为有关系的任何客户将设备添加到 Autopilot：
 
 1. 导航到 [合作伙伴中心](https://partner.microsoft.com/dashboard)
 2. 从 **合作伙伴** 中心菜单中选择客户，然后选择你想要管理其设备的客户。
 3. 在客户的详细信息页面上，选择 **设备**。
 4. 在 **"将配置文件** 应用到设备"下，选择 **"添加设备"。**
-5. Enter **Microsoft365Managed_Autopilot** for the Group Name and then select **Browse** to upload the customer's list (in .csv file format) to Partner Center.
+5. 为所选的设备配置文件输入相应的组标记 (如下表) 所示，然后选择"浏览"以将 .csv 文件格式) 的客户列表 (上载到合作伙伴中心。
 
+|[设备配置文件](../service-description/profiles.md)  |组标记  |
+|---------|---------|
+|敏感数据     |**Microsoft365Managed \_ SensitiveData**    |
+|Power user     | **Microsoft365Managed \_ PowerUser**          |
+|标准     | **Microsoft365Managed \_ Standard**        |
 
 > [!IMPORTANT]
-> 组名称 **必须完全** Microsoft365Managed_Autopilot，包括大写字符和特殊字符。 这将允许使用 Microsoft 托管桌面 Autopilot 配置文件分配新注册的设备。
+> 组名称必须与表中列出的名称完全匹配，包括大写和特殊字符。 这将允许使用 Microsoft 托管桌面 Autopilot 配置文件分配新注册的设备。
 
 >[!NOTE]
-> 你应该已使用设备购买收到此 .csv 文件。 如果未收到 .csv 文件，可以按照将设备添加到 Windows Autopilot 中的步骤操作 [，自己创建一个文件](/windows/deployment/windows-autopilot/add-devices#collecting-the-hardware-id-from-existing-devices-using-powershell)。 the Windows PowerShell script is different from the one used for the [Microsoft Managed Desktop Admin portal](./register-devices-self.md?view=o365-worldwide#obtain-the-hardware-hash). 合作伙伴应在合作伙伴 [中心使用 Get-WindowsAutoPilotInfo](https://www.powershellgallery.com/packages/Get-WindowsAutoPilotInfo) 为 Microsoft 托管桌面设备注册设备。
+> 你应该已使用设备购买收到此 .csv 文件。 如果未收到 .csv 文件，可以按照将设备添加到 Windows Autopilot 中的步骤操作 [，自己创建一个文件](/windows/deployment/windows-autopilot/add-devices#collecting-the-hardware-id-from-existing-devices-using-powershell)。 the Windows PowerShell script is different from the one used for the [Microsoft Managed Desktop Admin portal](./register-devices-self.md#obtain-the-hardware-hash). 合作伙伴应在合作伙伴 [中心使用 Get-WindowsAutoPilotInfo](https://www.powershellgallery.com/packages/Get-WindowsAutoPilotInfo) 为 Microsoft 托管桌面设备注册设备。
 
 如果在尝试上载 .csv 文件时收到错误消息，请检查该文件的格式。 确保列顺序与使用新设备的 [Windows Autopilot](/partner-center/autopilot#add-devices-to-a-customers-account)配置文件自定义客户的全新体验中所述相匹配。 您还可以使用添加设备旁边的链接中提供的示例 .csv **文件** 来创建设备列表。 
 
@@ -60,7 +64,14 @@ ms.locfileid: "51445586"
 
 完成客户注册之前，必须先与客户建立关系。 你应该有一个唯一的链接来向各自的客户提供。 请参阅 [如何建立 OEM 关系](/windows/deployment/windows-autopilot/registration-auth#oem-authorization)。
 
-建立关系后，可以使用组标记属性开始为客户注册 **Microsoft365Managed_Autopilot。**
+建立关系后，你可以开始为已选择的每个设备配置文件使用相应的组标记为客户注册设备：
+
+
+|设备配置文件  |组标记  |
+|---------|---------|
+|敏感数据     | **Microsoft365Managed \_ SensitiveData**     |
+|Power user     | **Microsoft365Managed \_ PowerUser**          |
+|标准     | **Microsoft365Managed \_ Standard**      |
 
 > [!IMPORTANT]
-> 组名称 **必须完全** Microsoft365Managed_Autopilot，包括大写字符和特殊字符。 这将允许使用 Microsoft 托管桌面 Autopilot 配置文件分配新注册的设备。
+> 组标记必须与表中列出的标记完全匹配，包括大写字符和特殊字符。 这将允许使用 Microsoft 托管桌面 Autopilot 配置文件分配新注册的设备。

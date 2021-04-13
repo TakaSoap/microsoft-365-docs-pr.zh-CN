@@ -1,5 +1,5 @@
 ---
-title: 使用 Microsoft Defender ATP 威胁分析跟踪和响应新出现的威胁
+title: 使用适用于终结点威胁分析的 Microsoft Defender 跟踪和响应新出现的威胁
 ms.reviewer: ''
 description: 了解新出现的威胁和攻击技术以及如何阻止它们。 评估其对组织的影响，并评估组织的恢复能力。
 keywords: 威胁分析， 风险评估， 操作系统缓解， 微代码缓解， 缓解状态
@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 853a862556825e714bb06e51839f9c026e0cc0e0
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: 61b6b0c19730045468c77e5f24bf18470aa5dbd5
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51501192"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51688257"
 ---
 # <a name="track-and-respond-to-emerging-threats-with-threat-analytics"></a>使用威胁分析跟踪和响应新出现的威胁 
 

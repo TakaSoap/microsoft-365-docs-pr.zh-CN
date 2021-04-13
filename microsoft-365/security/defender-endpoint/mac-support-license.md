@@ -18,27 +18,27 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 645c3657bdd1540ac95b68460b4dff6d25627c2c
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 69dd85394837bb7f37e7d277110c8a5dbf7b6506
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51185918"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51689109"
 ---
-# <a name="troubleshoot-license-issues-for-microsoft-defender-for-endpoint-for-mac"></a>解决 Microsoft Defender for Endpoint for Mac 的许可证问题
+# <a name="troubleshoot-license-issues-for-microsoft-defender-for-endpoint-on-macos"></a>解决 macOS 上 Microsoft Defender for Endpoint 的许可证问题
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
 **适用于：**
 
-- [Microsoft Defender for Endpoint for Mac](microsoft-defender-endpoint-mac.md)
+- [macOS 上的 Microsoft Defender for Endpoint](microsoft-defender-endpoint-mac.md)
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > 想要体验 Microsoft Defender for Endpoint？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-当你要完成适用于 [Mac](microsoft-defender-endpoint-mac.md) 的 Microsoft Defender for Endpoint 和 [手动](mac-install-manually.md) 部署测试或 PoC (概念证明) ，你可能会收到以下错误：
+当你在 [macOS](microsoft-defender-endpoint-mac.md) 上通过 Microsoft Defender for Endpoint 和 [手动](mac-install-manually.md) 部署测试或概念证明 (PoC) 时，你可能会收到以下错误：
 
 ![许可证错误的图像](images/no-license-found.png)
 
@@ -52,7 +52,7 @@ ms.locfileid: "51185918"
 
 **原因：** 
 
-你已部署和/或安装了适用于 macOS 的 Microsoft Defender for Endpoint 程序包 ("下载安装程序包") 但你可能已运行配置脚本 ("下载载入程序包") 。
+你已部署和/或安装了 macOS 程序包上的 Microsoft Defender for Endpoint ("下载安装程序包") 但你可能已运行配置脚本 ("下载载入程序包") 。
 
 **解决方案：**
 

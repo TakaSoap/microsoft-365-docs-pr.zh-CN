@@ -1,6 +1,6 @@
 ---
 title: 电子邮件保护的顺序和优先级
-keywords: 安全， 恶意软件， Microsoft 365， M365， 安全中心， ATP， Microsoft Defender ATP， Office 365 ATP， Azure ATP
+keywords: 安全， 恶意软件， Microsoft 365， M365， 安全中心， ATP， Microsoft Defender for Endpoint， Office 365 ATP， Azure ATP
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -17,12 +17,12 @@ ms.custom:
 description: 管理员可以了解 Exchange Online Protection (EOP) 中的保护的应用程序顺序，以及保护策略中的优先级值如何确定应用哪个策略。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: b2a72420340993c027ec99820dcd3edddab1a304
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 3419cba5781e7ab1042f7312c721069d88fb8767
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51203245"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51687645"
 ---
 # <a name="order-and-precedence-of-email-protection"></a>电子邮件保护的顺序和优先级
 

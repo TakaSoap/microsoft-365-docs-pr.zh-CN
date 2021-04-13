@@ -1,6 +1,6 @@
 ---
 title: macOS 的设备控件
-description: 了解如何配置 Microsoft Defender for Endpoint for Mac 以减少来自可移动存储（如 USB 设备）的威胁。
+description: 了解如何在 Mac 上配置 Microsoft Defender for Endpoint 以减少来自可移动存储（如 USB 设备）的威胁。
 keywords: microsoft， defender， atp， mac， 设备， 控件， usb， 可移动， 媒体
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 098eb30764870e69c5b1b6c2cec3cf8e5cb11691
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 696bc45f7bb66313cc9353e252d76c2e9fd73259
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51186565"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51688677"
 ---
 # <a name="device-control-for-macos"></a>macOS 的设备控件
 
@@ -52,7 +52,7 @@ macOS 的设备控件具有以下先决条件：
 >   ```bash
 >   mdatp health --field real_time_protection_subsystem 
 >   ```
-> - 你的设备必须 (`Beta` Microsoft 自动更新) `InsiderFast` 频道中。 有关详细信息，请参阅 [部署适用于 Mac 的 Microsoft Defender for Endpoint 的更新](mac-updates.md)。
+> - 你的设备必须 (`Beta` Microsoft 自动更新) `InsiderFast` 频道中。 有关详细信息，请参阅在 [Mac](mac-updates.md)上部署 Microsoft Defender for Endpoint 的更新。
 > 
 >   可以使用以下命令检查更新频道： 
 > 
@@ -66,7 +66,7 @@ macOS 的设备控件具有以下先决条件：
 >    defaults write com.microsoft.autoupdate2 ChannelName -string Beta
 >    ```
 >
->    或者，如果你使用 JAMF 或 Intune (托管) ，你可以远程配置更新通道。 有关详细信息，请参阅 [部署适用于 Mac 的 Microsoft Defender for Endpoint 的更新](mac-updates.md)。 
+>    或者，如果你使用 JAMF 或 Intune (托管) ，你可以远程配置更新通道。 有关详细信息，请参阅在 [Mac](mac-updates.md)上部署 Microsoft Defender for Endpoint 的更新。 
 
 ## <a name="device-control-policy"></a>设备控制策略
 
@@ -76,12 +76,12 @@ macOS 的设备控件具有以下先决条件：
 
 在配置文件中，设备控制策略在下一节中定义：
 
-|||
+|节|值|
 |:---|:---|
 | **域** | `com.microsoft.wdav` |
-| **注册表项** | deviceControl |
+| **Key** | deviceControl |
 | **数据类型** | 字典 (嵌套首选项)  |
-| **Comments** | 有关字典内容的说明，请参阅以下部分。 |
+| **备注** | 有关字典内容的说明，请参阅以下部分。 |
 
 设备控制策略可用于：
 
@@ -96,12 +96,12 @@ macOS 的设备控件具有以下先决条件：
 
 最终用户单击此通知时，在默认浏览器中打开一个网页。 您可以配置最终用户单击通知时打开的 URL。
 
-|||
+|节|值|
 |:---|:---|
 | **域** | `com.microsoft.wdav` |
-| **注册表项** | navigationTarget |
+| **Key** | navigationTarget |
 | **数据类型** | String |
-| **Comments** | 如果未定义，产品将使用指向说明产品所采取操作的通用页面的默认 URL。 |
+| **备注** | 如果未定义，产品将使用指向说明产品所采取操作的通用页面的默认 URL。 |
 
 ### <a name="allow-or-block-removable-devices"></a>允许或阻止可移动设备
 
@@ -110,12 +110,12 @@ macOS 的设备控件具有以下先决条件：
 > [!NOTE]
 > 当前支持以下类型的可移动媒体，并且可包含在策略中：USB 存储设备。
 
-|||
+|节|值|
 |:---|:---|
 | **域** | `com.microsoft.wdav` |
-| **注册表项** | removableMediaPolicy |
+| **Key** | removableMediaPolicy |
 | **数据类型** | 字典 (嵌套首选项)  |
-| **Comments** | 有关字典内容的说明，请参阅以下部分。 |
+| **备注** | 有关字典内容的说明，请参阅以下部分。 |
 
 该策略的这一部分是分层的，允许实现最大灵活性并涵盖各种用例。 顶级是供应商，由供应商 ID 标识。 对于每个供应商，都有由产品 ID 标识的产品。 最后，对于每个产品，都有表示特定设备的序列号。
 
@@ -143,10 +143,10 @@ macOS 的设备控件具有以下先决条件：
 - `audit` - 在此强制级别下，如果对设备的访问权限受到限制，则向用户显示一条通知，但该设备仍可使用。 此强制级别可用于评估策略的有效性。
 - `block` - 在此强制级别下，用户可以在设备上执行的操作仅限于策略中定义的操作。 此外，会向用户引发通知。 
 
-|||
+|节|值|
 |:---|:---|
 | **域** | `com.microsoft.wdav` |
-| **注册表项** | enforcementLevel |
+| **Key** | enforcementLevel |
 | **数据类型** | String |
 | **可能的值** | 审核 (默认)  <br/> block |
 
@@ -168,10 +168,10 @@ macOS 的设备控件具有以下先决条件：
 > [!NOTE]
 > 权限 `execute` 仅指执行 Mach-O 二进制文件。 它不包括脚本或其他类型的有效负载的执行。
 
-|||
+|节|值|
 |:---|:---|
 | **域** | `com.microsoft.wdav` |
-| **注册表项** | permission |
+| **Key** | permission |
 | **数据类型** | 字符串数组 |
 | **可能的值** | 无 <br/> 阅读 <br/> 写入 <br/> execute |
 
@@ -183,35 +183,35 @@ macOS 的设备控件具有以下先决条件：
 
 字典 `vendors` 包含一个或多个条目，其中每个条目由供应商 ID 标识。
 
-|||
+|节|值|
 |:---|:---|
 | **域** | `com.microsoft.wdav` |
-| **注册表项** | 供应商 |
+| **Key** | 供应商 |
 | **数据类型** | 字典 (嵌套首选项)  |
 
 对于每个供应商，你可以为来自该供应商的设备指定所需的权限级别。
 
-|||
+|节|值|
 |:---|:---|
 | **域** | `com.microsoft.wdav` |
-| **注册表项** | permission |
+| **Key** | permission |
 | **数据类型** | 字符串数组 |
 | **可能的值** | 与默认 [权限级别相同](#default-permission-level) |
 
 此外，还可以选择指定属于已定义更精细权限的供应商的产品集。 字典 `products` 包含一个或多个条目，每个条目由产品 ID 标识。 
 
-|||
+|节|值|
 |:---|:---|
 | **域** | `com.microsoft.wdav` |
-| **注册表项** | products |
+| **Key** | products |
 | **数据类型** | 字典 (嵌套首选项)  |
 
 对于每个产品，您可以为该产品指定所需的权限级别。
 
-|||
+|节|值|
 |:---|:---|
 | **域** | `com.microsoft.wdav` |
-| **注册表项** | permission |
+| **Key** | permission |
 | **数据类型** | 字符串数组 |
 | **可能的值** | 与默认 [权限级别相同](#default-permission-level) |
 
@@ -219,18 +219,18 @@ macOS 的设备控件具有以下先决条件：
 
 词典 `serialNumbers` 包含一个或多个条目，每个条目由序列号标识。
 
-|||
+|节|值|
 |:---|:---|
 | **域** | `com.microsoft.wdav` |
-| **注册表项** | serialNumbers |
+| **Key** | serialNumbers |
 | **数据类型** | 字典 (嵌套首选项)  |
 
 对于每个序列号，您可以指定所需的权限级别。
 
-|||
+|节|值|
 |:---|:---|
 | **域** | `com.microsoft.wdav` |
-| **注册表项** | permission |
+| **Key** | permission |
 | **数据类型** | 字符串数组 |
 | **可能的值** | 与默认 [权限级别相同](#default-permission-level) |
 
@@ -336,7 +336,7 @@ DeviceEvents
 
 ## <a name="device-control-policy-deployment"></a>设备控制策略部署
 
-设备控制策略必须包含在其他产品设置旁边，如设置适用于 Mac 的 [终结点的 Microsoft Defender 的首选项中所述](mac-preferences.md)。
+设备控制策略必须包含在其他产品设置旁边，如在 macOS 上设置 [Microsoft Defender for Endpoint 的首选项中所述](mac-preferences.md)。
 
 可以使用配置文件部署 中列出的说明部署 [此配置文件](mac-preferences.md#configuration-profile-deployment)。
 

@@ -1,7 +1,6 @@
 ---
 title: 自行注册新设备
 description: 自己注册设备，以便它们可以通过 Microsoft 托管桌面进行管理
-keywords: Microsoft 托管桌面, Microsoft 365, 服务, 文档
 ms.service: m365-md
 author: jaimeo
 f1.keywords:
@@ -12,12 +11,12 @@ ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 3aff3bdc1260e9aa2a23760020aeabd71d6b28fd
-ms.sourcegitcommit: 39609c4d8c432c8e7d7a31cb35c8020e5207385b
+ms.openlocfilehash: 4de1d173a26005d32fb07117d93ee78582b77d54
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "51445574"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51689205"
 ---
 # <a name="register-new-devices-yourself"></a>自行注册新设备
 
@@ -91,8 +90,11 @@ Microsoft 托管桌面通过引用其硬件哈希来唯一标识每台设备。 
 请按以下步骤操作：
 
 1. 在 **"文件** 上载"中，提供之前创建的 CSV 文件的路径。
+2. 在 [下拉菜单中选择](../service-description/profiles.md) 设备配置文件。
 3. 选择 **注册设备**。 系统将设备添加到设备上设备列表，标记为注册 **挂起。**  注册通常少于 10 分钟，并且成功后，设备将显示为"为用户准备就绪"，这意味着它已准备好并等待用户开始使用。
 
+> [!NOTE]
+> 如果你手动将 Azure Active Directory (AAD) 设备组成员身份，它将自动重新分配到组，用于其设备配置文件，并删除任何冲突组。
 
 你可以监视主页上的设备注册进度。 其中报告的可能状态包括：
 
@@ -119,6 +121,11 @@ Microsoft 托管桌面通过引用其硬件哈希来唯一标识每台设备。 
 如果你的设备来自 Microsoft 托管桌面合作伙伴供应商，则映像应该正确。
 
 如果愿意，也欢迎您自行应用该图像。 To get started， contact the Microsoft representative you're working with and they will provide you the location and steps for applying the image.
+
+### <a name="autopilot-group-tag"></a>Autopilot 组标记
+
+当你使用管理门户注册设备时，我们会自动分配Microsoft365Managed_Autopilot **Autopilot** 组标记。
+该服务每天监视所有 Microsoft 托管桌面设备，并将组标记分配给任何尚未安装组标记的设备。
 
 ### <a name="deliver-the-device"></a>交付设备
 

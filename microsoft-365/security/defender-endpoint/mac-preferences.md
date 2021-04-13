@@ -18,28 +18,28 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 578830d44a9a69c3ccafd78ceaf59ddfe100e43f
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 951c51c767ba09ebc6056481b4fac45da09c5671
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51056616"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51688545"
 ---
-# <a name="set-preferences-for-microsoft-defender-for-endpoint-for-mac"></a>设置适用于 Mac 的 Microsoft Defender 终结点的首选项
+# <a name="set-preferences-for-microsoft-defender-for-endpoint-on-macos"></a>在 macOS 上设置适用于终结点的 Microsoft Defender 的首选项
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
 **适用于：**
 
-- [Microsoft Defender for Endpoint for Mac](microsoft-defender-endpoint-mac.md)
+- [macOS 上的 Microsoft Defender for Endpoint](microsoft-defender-endpoint-mac.md)
 
 >[!IMPORTANT]
->本文包含有关如何在企业组织中设置适用于 Mac 的 Microsoft Defender for Endpoint 的首选项的说明。 若要使用命令行界面配置适用于 Mac 的 Microsoft Defender for Endpoint，请参阅 [资源](mac-resources.md#configuring-from-the-command-line)。
+>本文包含有关如何在企业组织中为 macOS 上的 Microsoft Defender for Endpoint 设置首选项的说明。 若要使用命令行界面在 macOS 上配置适用于终结点的 Microsoft Defender，请参阅 [资源](mac-resources.md#configuring-from-the-command-line)。
 
 ## <a name="summary"></a>摘要
 
-在企业组织中，可以通过使用多种管理工具之一部署的配置文件管理适用于 Mac 的 Microsoft Defender。 由安全操作团队管理的首选项优先于在设备上本地设置的首选项。 更改通过配置文件设置的首选项需要提升的权限，并且对于没有管理权限的用户不可用。
+在企业组织中，可以通过使用多种管理工具之一部署的配置文件管理 macOS 上的 Microsoft Defender for Endpoint。 由安全操作团队管理的首选项优先于在设备上本地设置的首选项。 更改通过配置文件设置的首选项需要提升的权限，并且对于没有管理权限的用户不可用。
 
 本文介绍配置文件的结构，包括可用于入门的推荐配置文件，并提供有关如何部署配置文件的说明。
 
@@ -56,21 +56,21 @@ ms.locfileid: "51056616"
 
 配置文件 *的 antivirusEngine* 部分用于管理 Microsoft Defender for Endpoint 的防病毒组件的首选项。
 
-|||
+|节|值|
 |:---|:---|
 | **域** | `com.microsoft.wdav` |
-| **注册表项** | antivirusEngine |
+| **Key** | antivirusEngine |
 | **数据类型** | 字典 (嵌套首选项)  |
-| **Comments** | 有关字典内容的说明，请参阅以下部分。 |
+| **备注** | 有关字典内容的说明，请参阅以下部分。 |
 
 #### <a name="enable--disable-real-time-protection"></a>启用/禁用实时保护
 
 指定是否启用实时保护，以在访问文件时对文件进行扫描。
 
-|||
+|节|值|
 |:---|:---|
 | **域** | `com.microsoft.wdav` |
-| **注册表项** | enableRealTimeProtection |
+| **Key** | enableRealTimeProtection |
 | **数据类型** | Boolean |
 | **可能的值** | true (默认值)  <br/> false |
 
@@ -83,45 +83,45 @@ ms.locfileid: "51056616"
 - 启用安全智能更新
 - 状态菜单图标处于隐藏状态
 
-|||
+|节|值|
 |:---|:---|
 | **域** | `com.microsoft.wdav` |
-| **注册表项** | passiveMode |
+| **Key** | passiveMode |
 | **数据类型** | Boolean |
 | **可能的值** | false（默认值） <br/> true |
-| **Comments** | 适用于终结点版本 100.67.60 或更高版本的 Microsoft Defender 中可用。 |
+| **备注** | 适用于终结点版本 100.67.60 或更高版本的 Microsoft Defender 中可用。 |
 
 #### <a name="exclusion-merge-policy"></a>排除合并策略
 
 指定排除项的合并策略。 它可以是管理员定义的排除项和用户定义的排除项 () 管理员定义的排除项 `merge` `admin_only` () 。 此设置可用于限制本地用户定义自己的排除项。
 
-|||
+|节|值|
 |:---|:---|
 | **域** | `com.microsoft.wdav` |
-| **注册表项** | exclusionsMergePolicy |
+| **Key** | exclusionsMergePolicy |
 | **数据类型** | String |
 | **可能的值** | 合并 (默认)  <br/> admin_only |
-| **Comments** | 适用于终结点版本 100.83.73 或更高版本的 Microsoft Defender 中可用。 |
+| **备注** | 适用于终结点版本 100.83.73 或更高版本的 Microsoft Defender 中可用。 |
 
 #### <a name="scan-exclusions"></a>扫描排除项
 
 指定被扫描排除的实体。 排除项可以通过完整路径、扩展名或文件名指定。
 
-|||
+|节|值|
 |:---|:---|
 | **域** | `com.microsoft.wdav` |
-| **注册表项** | 排除项 |
+| **Key** | 排除项 |
 | **数据类型** | 字典 (嵌套首选项)  |
-| **Comments** | 有关字典内容的说明，请参阅以下部分。 |
+| **备注** | 有关字典内容的说明，请参阅以下部分。 |
 
 ##### <a name="type-of-exclusion"></a>排除类型
 
 按类型指定被排除的内容。
 
-|||
+|节|值|
 |:---|:---|
 | **域** | `com.microsoft.wdav` |
-| **注册表项** | $type |
+| **Key** | $type |
 | **数据类型** | String |
 | **可能的值** | excludedPath <br/> excludedFileExtension <br/> excludedFileName |
 
@@ -129,91 +129,91 @@ ms.locfileid: "51056616"
 
 指定未由完整文件路径扫描的内容。
 
-|||
+|节|值|
 |:---|:---|
 | **域** | `com.microsoft.wdav` |
-| **注册表项** | path |
+| **Key** | path |
 | **数据类型** | String |
 | **可能的值** | 有效路径 |
-| **Comments** | 仅在 *排除$type**时适用* |
+| **备注** | 仅在 *排除$type**时适用* |
 
 ##### <a name="path-type-file--directory"></a>文件 (目录的路径) 
 
 指示 *path 属性* 是否引用文件或目录。 
 
-|||
+|节|值|
 |:---|:---|
 | **域** | `com.microsoft.wdav` |
-| **注册表项** | isDirectory |
+| **Key** | isDirectory |
 | **数据类型** | Boolean |
 | **可能的值** | false（默认值） <br/> true |
-| **Comments** | 仅在 *排除$type**时适用* |
+| **备注** | 仅在 *排除$type**时适用* |
 
 ##### <a name="file-extension-excluded-from-the-scan"></a>从扫描中排除的文件扩展名
 
 指定文件扩展名无法扫描的内容。
 
-|||
+|节|值|
 |:---|:---|
 | **域** | `com.microsoft.wdav` |
-| **注册表项** | extension |
+| **Key** | extension |
 | **数据类型** | String |
 | **可能的值** | 有效的文件扩展名 |
-| **Comments** | 仅在 *排除**$type FileExtension 时适用* |
+| **备注** | 仅在 *排除**$type FileExtension 时适用* |
 
 ##### <a name="process-excluded-from-the-scan"></a>从扫描中排除的进程
 
 指定一个进程，所有文件活动都从扫描中排除。 可以通过进程的名称指定进程， (例如) 或完整路径 (`cat` 例如 `/bin/cat`) 。
 
-|||
+|节|值|
 |:---|:---|
 | **域** | `com.microsoft.wdav` |
-| **注册表项** | name |
+| **Key** | name |
 | **数据类型** | String |
 | **可能的值** | 任何字符串 |
-| **Comments** | 仅在 *排除**$type FileName 时适用* |
+| **备注** | 仅在 *排除**$type FileName 时适用* |
 
 #### <a name="allowed-threats"></a>允许的威胁
 
 按名称指定未由 Defender for Endpoint for Mac 阻止的威胁。 将允许运行这些威胁。
 
-|||
+|节|值|
 |:---|:---|
 | **域** | `com.microsoft.wdav` |
-| **注册表项** | allowedThreats |
+| **Key** | allowedThreats |
 | **数据类型** | 字符串数组 |
 
 #### <a name="disallowed-threat-actions"></a>不允许威胁操作
 
 限制设备的本地用户在检测到威胁时可采取的操作。 此列表中包含的操作不会显示在用户界面中。
 
-|||
+|节|值|
 |:---|:---|
 | **域** | `com.microsoft.wdav` |
-| **注册表项** | disallowedThreatActions |
+| **Key** | disallowedThreatActions |
 | **数据类型** | 字符串数组 |
 | **可能的值** | 允许 (限制用户允许威胁)  <br/> restore (限制用户从隔离网站还原)  |
-| **Comments** | 适用于终结点版本 100.83.73 或更高版本的 Microsoft Defender 中可用。 |
+| **备注** | 适用于终结点版本 100.83.73 或更高版本的 Microsoft Defender 中可用。 |
 
 #### <a name="threat-type-settings"></a>威胁类型设置
 
-指定 Microsoft Defender for Endpoint for Mac 如何处理某些威胁类型。
+指定 macOS 上的 Microsoft Defender for Endpoint 如何处理某些威胁类型。
 
-|||
+|节|值|
 |:---|:---|
 | **域** | `com.microsoft.wdav` |
-| **注册表项** | threatTypeSettings |
+| **Key** | threatTypeSettings |
 | **数据类型** | 字典 (嵌套首选项)  |
-| **Comments** | 有关字典内容的说明，请参阅以下部分。 |
+| **备注** | 有关字典内容的说明，请参阅以下部分。 |
 
 ##### <a name="threat-type"></a>威胁类型
 
 指定威胁类型。
 
-|||
+|节|值|
 |:---|:---|
 | **域** | `com.microsoft.wdav` |
-| **注册表项** | 注册表项 |
+| **Key** | 注册表项 |
 | **数据类型** | String |
 | **可能的值** | potentially_unwanted_application <br/> archive_bomb |
 
@@ -225,10 +225,10 @@ ms.locfileid: "51056616"
 - **阻止**：你的设备受到此类型威胁的保护，并且你将在用户界面和安全控制台中收到通知。
 - **关闭**：你的设备不受此类型威胁的防御，并且不会记录任何内容。
 
-|||
+|节|值|
 |:---|:---|
 | **域** | `com.microsoft.wdav` |
-| **注册表项** | 值 |
+| **Key** | 值 |
 | **数据类型** | String |
 | **可能的值** | 审核 (默认)  <br/> block <br/> off |
 
@@ -236,57 +236,57 @@ ms.locfileid: "51056616"
 
 指定威胁类型设置的合并策略。 这可以是管理员定义的设置和用户定义的设置的组合， () 管理员 `merge` 定义的设置 `admin_only` () 。 此设置可用于限制本地用户为不同的威胁类型定义自己的设置。
 
-|||
+|节|值|
 |:---|:---|
 | **域** | `com.microsoft.wdav` |
-| **注册表项** | threatTypeSettingsMergePolicy |
+| **Key** | threatTypeSettingsMergePolicy |
 | **数据类型** | String |
 | **可能的值** | 合并 (默认)  <br/> admin_only |
-| **Comments** | 适用于终结点版本 100.83.73 或更高版本的 Microsoft Defender 中可用。 |
+| **备注** | 适用于终结点版本 100.83.73 或更高版本的 Microsoft Defender 中可用。 |
 
 #### <a name="antivirus-scan-history-retention-in-days"></a>防病毒扫描历史记录保留 (天数) 
 
 指定结果在设备的扫描历史记录中保留的天数。 旧扫描结果将从历史记录中删除。 也从磁盘中删除的旧隔离文件。
 
-|||
+|节|值|
 |:---|:---|
 | **域** | `com.microsoft.wdav` |
-| **注册表项** | scanResultsRetentionDays |
+| **Key** | scanResultsRetentionDays |
 | **数据类型** | String |
 | **可能的值** | 90 (默认值) 。 允许的值从 1 天到 180 天。 |
-| **Comments** | 适用于终结点版本 101.07.23 或更高版本的 Microsoft Defender 中可用。 |
+| **备注** | 适用于终结点版本 101.07.23 或更高版本的 Microsoft Defender 中可用。 |
 
 #### <a name="maximum-number-of-items-in-the-antivirus-scan-history"></a>防病毒扫描历史记录中的最大项目数
 
 指定在扫描历史记录中保留的最大条目数。 条目包括过去执行的所有按需扫描以及所有防病毒检测。
 
-|||
+|节|值|
 |:---|:---|
 | **域** | `com.microsoft.wdav` |
-| **注册表项** | scanHistoryMaximumItems |
+| **Key** | scanHistoryMaximumItems |
 | **数据类型** | String |
 | **可能的值** | 10000 (默认值) 。 允许的值从 5000 个项目到 15000 个项目。 |
-| **Comments** | 适用于终结点版本 101.07.23 或更高版本的 Microsoft Defender 中可用。 |
+| **备注** | 适用于终结点版本 101.07.23 或更高版本的 Microsoft Defender 中可用。 |
 
 ### <a name="cloud-delivered-protection-preferences"></a>云提供的保护首选项
 
-配置 Microsoft Defender for Endpoint for Mac 的云驱动保护功能。
+在 macOS 上配置 Microsoft Defender for Endpoint 的云驱动保护功能。
 
-|||
+|节|值|
 |:---|:---|
 | **域** | `com.microsoft.wdav` |
-| **注册表项** | cloudService |
+| **Key** | cloudService |
 | **数据类型** | 字典 (嵌套首选项)  |
-| **Comments** | 有关字典内容的说明，请参阅以下部分。 |
+| **备注** | 有关字典内容的说明，请参阅以下部分。 |
 
 #### <a name="enable--disable-cloud-delivered-protection"></a>启用/禁用云保护
 
 指定是否启用云保护设备。 若要提高服务的安全性，我们建议保持启用此功能。
 
-|||
+|节|值|
 |:---|:---|
 | **域** | `com.microsoft.wdav` |
-| **注册表项** | enabled |
+| **Key** | enabled |
 | **数据类型** | Boolean |
 | **可能的值** | true (默认值)  <br/> false |
 
@@ -294,10 +294,10 @@ ms.locfileid: "51056616"
 
 诊断数据用于使 Microsoft Defender for Endpoint 保持安全和最新，检测、诊断和修复问题，并改进产品。 此设置确定 Microsoft Defender for Endpoint 发送给 Microsoft 的诊断级别。
 
-|||
+|节|值|
 |:---|:---|
 | **域** | `com.microsoft.wdav` |
-| **注册表项** | diagnosticLevel |
+| **Key** | diagnosticLevel |
 | **数据类型** | String |
 | **可能的值** | 可选 (默认)  <br/> 必需 |
 
@@ -305,10 +305,10 @@ ms.locfileid: "51056616"
 
 确定是否将 (可能包含威胁的可疑) 发送到 Microsoft。 系统将提示你提交的文件是否可能包含个人信息。
 
-|||
+|节|值|
 |:---|:---|
 | **域** | `com.microsoft.wdav` |
-| **注册表项** | automaticSampleSubmission |
+| **Key** | automaticSampleSubmission |
 | **数据类型** | Boolean |
 | **可能的值** | true (默认值)  <br/> false |
 
@@ -316,31 +316,31 @@ ms.locfileid: "51056616"
 
 确定是否自动安装安全智能更新：
 
-|||
+|节|值|
 |:---|:---|
-| **注册表项** | automaticDefinitionUpdateEnabled |
+| **Key** | automaticDefinitionUpdateEnabled |
 | **数据类型** | Boolean |
 | **可能的值** | true (默认值)  <br/> false |
 
 ### <a name="user-interface-preferences"></a>用户界面首选项
 
-管理 Microsoft Defender for Endpoint for Mac 用户界面的首选项。
+管理 macOS 上适用于终结点的 Microsoft Defender 用户界面的首选项。
 
-|||
+|节|值|
 |:---|:---|
 | **域** | `com.microsoft.wdav` |
-| **注册表项** | userInterface |
+| **Key** | userInterface |
 | **数据类型** | 字典 (嵌套首选项)  |
-| **Comments** | 有关字典内容的说明，请参阅以下部分。 |
+| **备注** | 有关字典内容的说明，请参阅以下部分。 |
 
 #### <a name="show--hide-status-menu-icon"></a>显示/隐藏状态菜单图标
 
 指定是显示还是隐藏屏幕右上角的状态菜单图标。
 
-|||
+|节|值|
 |:---|:---|
 | **域** | `com.microsoft.wdav` |
-| **注册表项** | hideStatusMenuIcon |
+| **Key** | hideStatusMenuIcon |
 | **数据类型** | Boolean |
 | **可能的值** | false（默认值） <br/> true |
 
@@ -348,24 +348,24 @@ ms.locfileid: "51056616"
 
 指定用户是否可以通过访问 向 Microsoft 提交反馈 `Help`  >  `Send Feedback` 。
 
-|||
+|节|值|
 |:---|:---|
 | **域** | `com.microsoft.wdav` |
-| **注册表项** | userInitiatedFeedback |
+| **Key** | userInitiatedFeedback |
 | **数据类型** | String |
 | **可能的值** | 已启用 (默认)  <br/> disabled |
-| **Comments** | 适用于终结点版本 101.19.61 或更高版本的 Microsoft Defender 中可用。 |
+| **备注** | 适用于终结点版本 101.19.61 或更高版本的 Microsoft Defender 中可用。 |
 
 ### <a name="endpoint-detection-and-response-preferences"></a>终结点检测和响应首选项
 
-管理适用于 Mac 的 Microsoft Defender (EDR) 组件的终结点检测和响应首选项。
+管理 macOS 上 Microsoft Defender for Endpoint (EDR) 组件的终结点检测和响应首选项。
 
-|||
+|节|值|
 |:---|:---|
 | **域** | `com.microsoft.wdav` |
-| **注册表项** | edr |
+| **Key** | edr |
 | **数据类型** | 字典 (嵌套首选项)  |
-| **Comments** | 有关字典内容的说明，请参阅以下部分。 |
+| **备注** | 有关字典内容的说明，请参阅以下部分。 |
 
 #### <a name="device-tags"></a>设备标记
 
@@ -373,21 +373,21 @@ ms.locfileid: "51056616"
 
 - GROUP 标记使用指定值标记设备。 标记反映在设备页面下的门户中，可用于筛选和分组设备。
 
-|||
+|节|值|
 |:---|:---|
 | **域** | `com.microsoft.wdav` |
-| **注册表项** | tags |
+| **Key** | tags |
 | **数据类型** | 字典 (嵌套首选项)  |
-| **Comments** | 有关字典内容的说明，请参阅以下部分。 |
+| **备注** | 有关字典内容的说明，请参阅以下部分。 |
 
 ##### <a name="type-of-tag"></a>标记类型
 
 指定标记的类型
 
-|||
+|节|值|
 |:---|:---|
 | **域** | `com.microsoft.wdav` |
-| **注册表项** | 注册表项 |
+| **Key** | 注册表项 |
 | **数据类型** | String |
 | **可能的值** | `GROUP` |
 
@@ -395,10 +395,10 @@ ms.locfileid: "51056616"
 
 指定 tag 的值
 
-|||
+|节|值|
 |:---|:---|
 | **域** | `com.microsoft.wdav` |
-| **注册表项** | 值 |
+| **Key** | 值 |
 | **数据类型** | String |
 | **可能的值** | 任何字符串 |
 
@@ -542,7 +542,7 @@ ms.locfileid: "51056616"
 
 ## <a name="full-configuration-profile-example"></a>完整配置文件示例
 
-以下模板包含本文档中所述的所有设置的条目，可用于更高级的方案，你想要对 Microsoft Defender for Endpoint for Mac 进行更多控制。
+以下模板包含本文档中所述的所有设置的条目，可用于更高级的方案，你想要在 macOS 上对 Microsoft Defender for Endpoint 进行更多控制。
 
 ### <a name="property-list-for-jamf-configuration-profile"></a>JAMF 配置文件的属性列表
 

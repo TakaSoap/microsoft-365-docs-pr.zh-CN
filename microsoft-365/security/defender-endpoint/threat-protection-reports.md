@@ -1,5 +1,5 @@
 ---
-title: Microsoft Defender ATP 中的威胁防护报告
+title: Microsoft Defender for Endpoint 中的威胁防护报告
 description: 使用威胁防护报告跟踪警报检测、类别和严重性
 keywords: 警报检测， 来源， 警报按类别， 警报严重性， 警报分类， 确定
 search.product: eADQiWindows 10XVcnh
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 4ecd2df31e1e03da5134d3d4180dcba75d3cee26
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: d32ab04f4acda60f65316719a4607c6c9bbd6447
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51183833"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51688977"
 ---
 # <a name="threat-protection-report-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint 中的威胁防护报告
 
@@ -41,7 +41,7 @@ ms.locfileid: "51183833"
 
 ![威胁防护报告的图像](images/threat-protection-reports.png)
 
-分区 | 说明 
+节 | 说明 
 :---|:---
 1 | 警报趋势
 2 | 警报摘要

@@ -18,14 +18,14 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: be01d5908e4c79f642cdbbddd75115f6ebc2c713
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: 9b00d81d3d51c343565ec4eb743181baa2750b01
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51499586"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51687729"
 ---
-# <a name="set-up-the-microsoft-defender-for-endpoint-for-macos-policies-in-jamf-pro"></a>在 Jamf Pro 中设置适用于 macOS 的 Microsoft Defender for Endpoint 策略
+# <a name="set-up-the-microsoft-defender-for-endpoint-on-macos-policies-in-jamf-pro"></a>在 Jamf Pro 中设置 macOS 上的 Microsoft Defender for Endpoint 策略
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -56,9 +56,9 @@ ms.locfileid: "51499586"
 
 9. [配置网络扩展](#step-9-configure-network-extension)
 
-10. [使用 Microsoft Defender for Endpoint for Mac 计划扫描](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/mac-schedule-scan-atp)
+10. [在 macOS 上使用 Microsoft Defender for Endpoint 计划扫描](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/mac-schedule-scan-atp)
 
-11. [部署适用于 macOS 的 Microsoft Defender for Endpoint](#step-11-deploy-microsoft-defender-for-endpoint-for-macos)
+11. [在 macOS 上部署 Microsoft Defender for Endpoint](#step-11-deploy-microsoft-defender-for-endpoint-on-macos)
 
 
 ## <a name="step-1-get-the-microsoft-defender-for-endpoint-onboarding-package"></a>步骤 1：获取适用于终结点的 Microsoft Defender 载入程序包
@@ -360,7 +360,7 @@ ms.locfileid: "51499586"
         - **分发方法**：使用默认 *(自动)*
         - **级别**：计算机级别 *(默认)*
 
-        ![配置设置 mdatpmdav 的图像](images/c9820a5ff84aaf21635c04a23a97ca93.png)
+        ![配置文件设置 mdatpmdav 的图像](images/c9820a5ff84aaf21635c04a23a97ca93.png)
 
     - Tab **Notifications**， click **Add**， and enter the following values：
         - **捆绑包 ID**： `com.microsoft.wdav.tray`
@@ -681,7 +681,7 @@ ms.locfileid: "51499586"
 
 ## <a name="step-9-configure-network-extension"></a>步骤 9：配置网络扩展
 
-作为终结点检测和响应功能的一部分，Microsoft Defender for Mac 终结点会检查套接字流量，将此信息报告给 Microsoft Defender 安全中心门户。 以下策略允许网络扩展执行此功能。
+作为终结点检测和响应功能的一部分，macOS 上的 Microsoft Defender for Endpoint 会检查套接字流量，将此信息报告给 Microsoft Defender 安全中心门户。 以下策略允许网络扩展执行此功能。
 
 这些步骤适用于加泰罗尼亚语或 (macOS 10.15) macOS 10.15。
 
@@ -731,10 +731,10 @@ ms.locfileid: "51499586"
 
 或者，你可以下载 [netfilter.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/netfilter.mobileconfig) 并将其上载到 JAMF 配置文件，如使用 Jamf Pro 部署自定义配置文件中所述 [|方法 2：将配置文件上载到 Jamf Pro](https://www.jamf.com/jamf-nation/articles/648/deploying-custom-configuration-profiles-using-jamf-pro)。
 
-## <a name="step-10-schedule-scans-with-microsoft-defender-for-endpoint-for-mac"></a>步骤 10：使用 Microsoft Defender for Endpoint for Mac 计划扫描
-按照使用 Microsoft Defender for Endpoint for Mac 计划 [扫描的说明进行操作](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/mac-schedule-scan-atp)。
+## <a name="step-10-schedule-scans-with-microsoft-defender-for-endpoint-on-macos"></a>步骤 10：在 macOS 上使用 Microsoft Defender for Endpoint 计划扫描
+按照在 [macOS 上使用 Microsoft Defender for Endpoint 计划扫描的说明操作](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/mac-schedule-scan-atp)。
 
-## <a name="step-11-deploy-microsoft-defender-for-endpoint-for-macos"></a>步骤 11：部署适用于 macOS 的终结点的 Microsoft Defender
+## <a name="step-11-deploy-microsoft-defender-for-endpoint-on-macos"></a>步骤 11：在 macOS 上部署 Microsoft Defender for Endpoint
 
 1. 导航到保存的位置 `wdav.pkg` 。
 

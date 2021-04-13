@@ -1,6 +1,6 @@
 ---
-title: Microsoft Defender ATP 中的 SIEM 工具集成问题疑难解答
-description: 解决将 SIEM 工具与 Microsoft Defender ATP 一同使用时可能出现的问题。
+title: 解决 Microsoft Defender for Endpoint 中的 SIEM 工具集成问题
+description: 解决将 SIEM 工具与 Microsoft Defender for Endpoint 一同使用时可能出现的问题。
 keywords: 疑难解答， siem， 客户端密码， 密码
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: c1c8fdb0b6e84d4265defb95d91b59a584b7f4c2
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 60220d00ca1b612564b72103b9206e3d6d89dc60
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51185775"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51689445"
 ---
 # <a name="troubleshoot-siem-tool-integration-issues"></a>SIEM 工具集成问题疑难解答
 

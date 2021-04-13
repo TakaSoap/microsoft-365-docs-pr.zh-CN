@@ -1,5 +1,5 @@
 ---
-title: 在 Microsoft Defender ATP 中的设备上执行响应操作
+title: 在 Microsoft Defender for Endpoint 中的设备上执行响应操作
 description: 在设备上执行响应操作，例如隔离设备、收集调查包、管理标记、运行 av 扫描以及限制应用执行。
 keywords: 响应， 隔离， 隔离设备， 收集调查包， 操作中心， 限制， 管理标记， av 扫描， 限制应用
 search.product: eADQiWindows 10XVcnh
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: f918d1673ef8a83c54f365dd06406c33bcc4d983
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: f538bd33ad2f595aa9b3dafa8a13a5682161b52f
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51054645"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51688317"
 ---
 # <a name="take-response-actions-on-a-device"></a>在设备上执行响应操作
 
@@ -36,10 +36,10 @@ ms.locfileid: "51054645"
 
 响应操作沿着特定设备页面的顶部运行，包括：
 
-- 管理标记
+- 管理标签
 - 启动自动调查
 - 启动实时响应会话
-- 收集调查包
+- 收集调查程序包
 - 运行防病毒扫描
 - 限制应用执行
 - 隔离设备
@@ -59,7 +59,7 @@ ms.locfileid: "51054645"
 > - 这些响应操作仅适用于 Windows 10 版本 1703 或更高版本上的设备。 
 > - 对于非 Windows 平台，响应 (设备隔离) 依赖于第三方功能。
 
-## <a name="manage-tags"></a>管理标记
+## <a name="manage-tags"></a>管理标签
 
 添加或管理标记以创建逻辑组附属关系。 设备标记支持网络的正确映射，使您能够附加不同的标记以捕获上下文，并启用动态列表创建作为事件的一部分。
 
@@ -159,7 +159,7 @@ ms.locfileid: "51054645"
 
 ![应用限制的图像](images/atp-app-restriction.png)
 
-## <a name="isolate-devices-from-the-network"></a>将设备与网络隔离
+## <a name="isolate-devices-from-the-network&quot;></a>将设备从网络隔中离出来
 
 根据攻击的严重性和设备敏感度，你可能希望将设备与网络隔离。 此操作有助于防止攻击者控制受到威胁的设备，并执行进一步的活动，如数据泄漏和横向移动。
 
@@ -169,7 +169,7 @@ ms.locfileid: "51054645"
 
 此设备隔离功能断开受损设备与网络的连接，同时保留与 Defender for Endpoint 服务的连接，该服务将继续监视设备。
 
-在 Windows 10 版本 1709 或更高版本上，你将对网络隔离级别进行其他控制。 还可以选择启用 Outlook、Microsoft Teams 和 Skype for Business ("选择性隔离") 。
+在 Windows 10 版本 1709 或更高版本上，你将对网络隔离级别进行其他控制。 还可以选择启用 Outlook、Microsoft Teams 和 Skype for Business (&quot;选择性隔离") 。
 
 >[!NOTE]
 >你将能够随时将设备重新连接到网络。 设备页面上的按钮将更改为"从隔离中释放 **"，** 然后执行与隔离设备相同的步骤。
@@ -193,7 +193,7 @@ ms.locfileid: "51054645"
 有关详细信息 [，请参阅咨询 Microsoft 威胁](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/configure-microsoft-threat-experts#consult-a-microsoft-threat-expert-about-suspicious-cybersecurity-activities-in-your-organization) 专家。
 
 
-## <a name="check-activity-details-in-action-center"></a>在操作中心中检查活动详细信息
+## <a name="check-activity-details-in-action-center"></a>在操作中心检查活动详细信息
 
 **操作中心** 提供有关对设备或文件采取的操作的信息。 你将能够查看以下详细信息：
 

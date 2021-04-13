@@ -11,15 +11,16 @@ localization_priority: Normal
 audience: ITPro
 author: dansimp
 ms.author: dansimp
-ms.reviewer: ''
+ms.reviewer: oogunrinde
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 84947057abbd456dee5cbf5d0c6fea37f679d9ad
-ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
+ms.topic: how-to
+ms.openlocfilehash: e6f3d6da2424b2b3b6b7c1f2c9973e4046d6e27f
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51570944"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51689159"
 ---
 # <a name="enable-attack-surface-reduction-rules"></a>启用攻击面减少规则
 
@@ -29,7 +30,8 @@ ms.locfileid: "51570944"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->想要体验适用于终结点的 Defender？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
+> [!TIP]
+> 想要体验适用于终结点的 Defender？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
 [攻击面减少规则](attack-surface-reduction.md) (ASR 规则) 有助于防止恶意软件经常滥用以损害设备和网络的操作。 你可以为运行以下任一版本的 Windows 的设备设置 ASR 规则：
 - Windows 10 专业 [版版本 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) 或更高版本
@@ -37,11 +39,15 @@ ms.locfileid: "51570944"
 - Windows Server [版本 1803 (半年 ](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1803) 频道) 或更高版本
 - [Windows Server 2019](https://docs.microsoft.com/windows-server/get-started-19/whats-new-19)
 
-每个 ASR 规则都包含以下三个设置之一：
+每个 ASR 规则包含四个设置之一：
 
-- 未配置：禁用 ASR 规则
-- 阻止：启用 ASR 规则
-- 审核：评估 ASR 规则在启用后对组织的影响
+- **未配置**：禁用 ASR 规则
+- **阻止**：启用 ASR 规则
+- **审核**：评估 ASR 规则在启用后对组织的影响
+- **警告**：启用 ASR 规则，但允许最终用户绕过阻止
+
+> [!IMPORTANT]
+> 目前，在 Microsoft Endpoint Manager 和 MEM 管理器中配置 ASR 规则时，三个 ASR 规则不支持 (模式) 。 若要了解更多信息，请参阅 [不支持警告模式的情况](attack-surface-reduction.md#cases-where-warn-mode-is-not-supported)。
 
 强烈建议你将 ASR 规则与 Windows E5 许可证 (或类似的许可 SKU) 一同使用，以利用适用于 Endpoint (Defender for Endpoint) 的 [Microsoft Defender](https://docs.microsoft.com/windows/security/threat-protection) 中提供的高级监视和报告功能。 但是，对于无法访问高级监视和报告功能的其他许可证（如 Windows Professional 或 E3），可以在触发 AS (R 规则时在每个终结点生成的事件（如事件转发) ）上开发自己的监视和报告工具。
 
@@ -97,11 +103,12 @@ ASR 规则支持环境变量和通配符。 有关使用通配符的信息，请
 
 `Value: 75668C1F-73B5-4CF0-BB93-3ECF5CB7CC84=2|3B576869-A4EC-4529-8536-B80A7769E899=1|D4F940AB-401B-4EfC-AADC-AD5F3C50688A=2|D3E037E1-3EB8-44C8-A917-57927947596D=1|5BEB7EFE-FD9A-4556-801D-275E5FFC04CC=0|BE9BA2D9-53EA-4CDC-84E5-9B1EEEE46550=1`
 
-在审核模式下启用、禁用或启用的值包括：
+在审核模式下 (阻止) 、禁用、警告或启用的值为：
 
-- Disable = 0
-- 阻止 (启用 ASR 规则) = 1
-- 审核 = 2
+- 0 ：禁用 (禁用 ASR 规则) 
+- 1：阻止 (启用 ASR 规则) 
+- 2：审核 (评估 ASR 规则在启用后对组织) 
+- 6： (启用 ASR 规则，但允许最终用户绕过阻止) 
 
 使用 [./Vendor/MSFT/Policy/Config/Defender/AttackSurfaceReductionOnlyExclusions](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-attacksurfacereductiononlyexclusions) 配置服务提供程序 (CSP) 添加排除项。
 
@@ -143,11 +150,12 @@ ASR 规则支持环境变量和通配符。 有关使用通配符的信息，请
 
    选择 **"显示..."，** 在"值名称"列中输入规则 ID，在"值"列中输入 **所选状态**，如下所示：
 
-   - Disable = 0
-   - 阻止 (启用 ASR 规则) = 1
-   - 审核 = 2
+   - 0 ：禁用 (禁用 ASR 规则) 
+   - 1：阻止 (启用 ASR 规则) 
+   - 2：审核 (评估 ASR 规则在启用后对组织) 
+   - 6： (启用 ASR 规则，但允许最终用户绕过阻止) 
 
-   ![显示空白攻击面减少规则 ID 和值 1 的组策略设置](/microsoft-365/security/defender-endpoint/images/asr-rules-gp)
+   :::image type="content" source="images/asr-rules-gp.png" alt-text="组策略中的 ASR 规则":::
 
 5. 若要从 ASR 规则中排除文件和文件夹，请选择"从攻击 **面** 减少规则中排除文件和路径"设置，将选项设置为 **"已启用"。** 选择 **"显示** "，在"值名称"列中 **输入每个文件或** 文件夹。 在"值"**列中为** 每个项目输入 **0。**
 
@@ -161,7 +169,7 @@ ASR 规则支持环境变量和通配符。 有关使用通配符的信息，请
 
 1. 在 **"开始"菜单中键入 powershell，** 右 **键单击**"Windows PowerShell并选择"以 **管理员角色运行"。**
 
-2. 输入以下 cmdlet：
+2. 键入以下 cmdlet：
 
     ```PowerShell
     Set-MpPreference -AttackSurfaceReductionRules_Ids <rule ID> -AttackSurfaceReductionRules_Actions Enabled
@@ -171,6 +179,12 @@ ASR 规则支持环境变量和通配符。 有关使用通配符的信息，请
 
     ```PowerShell
     Add-MpPreference -AttackSurfaceReductionRules_Ids <rule ID> -AttackSurfaceReductionRules_Actions AuditMode
+    ```
+
+    若要在警告模式下启用 ASR 规则，请使用以下 cmdlet：
+
+    ```PowerShell
+    Add-MpPreference -AttackSurfaceReductionRules_Ids <rule ID> -AttackSurfaceReductionRules_Actions Warn
     ```
 
     若要关闭 ASR 规则，请使用以下 cmdlet：
@@ -191,7 +205,7 @@ ASR 规则支持环境变量和通配符。 有关使用通配符的信息，请
     您还可以使用 `Add-MpPreference` PowerShell 谓词将新规则添加到现有列表中。
 
     > [!WARNING]
-    > `Set-MpPreference` 将始终覆盖现有的规则集。 如果要添加到现有集合，应改为 `Add-MpPreference` 使用 。
+    > `Set-MpPreference` 将始终覆盖现有的规则集。 如果要添加到现有集合，请改为 `Add-MpPreference` 使用 。
     > 可以使用 获取规则列表及其当前状态 `Get-MpPreference` 。
 
 3. 若要从 ASR 规则中排除文件和文件夹，请使用以下 cmdlet：

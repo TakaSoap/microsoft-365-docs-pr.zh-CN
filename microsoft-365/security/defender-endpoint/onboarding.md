@@ -1,6 +1,6 @@
 ---
-title: 载入到 Microsoft Defender ATP 服务
-description: 了解如何将终结点载入 Microsoft Defender ATP 服务
+title: 载入 Microsoft Defender for Endpoint 服务
+description: 了解如何将终结点载入到 Microsoft Defender for Endpoint 服务
 keywords: ''
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 - m365solution-scenario
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 56a62ca4ebbd140f507d1735c663924014ca4771
-ms.sourcegitcommit: 39609c4d8c432c8e7d7a31cb35c8020e5207385b
+ms.openlocfilehash: cc538c887397d5bbea78f63c8a8acd318ec7fe9f
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "51445728"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51689529"
 ---
 # <a name="onboard-to-the-microsoft-defender-for-endpoint-service"></a>载入 Microsoft Defender for Endpoint 服务
 
@@ -71,7 +71,7 @@ ms.locfileid: "51445728"
 
 | 终结点     | 工具选项                       |
 |--------------|------------------------------------------|
-| **Windows**  |  [本地脚本 (最多 10 台设备) ](configure-endpoints-script.md) <br>  [组策略](configure-endpoints-gp.md) <br>  [Microsoft Endpoint Manager/移动设备管理器](configure-endpoints-mdm.md) <br>   [Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md) <br> [VDI 脚本](configure-endpoints-vdi.md)   |
+| **Windows**  |  [本地脚本 (最多 10 台设备) ](configure-endpoints-script.md) <br>  [组策略](configure-endpoints-gp.md) <br>  [Microsoft Endpoint Manager/移动设备管理器](configure-endpoints-mdm.md) <br> [Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md) <br> [VDI 脚本](configure-endpoints-vdi.md) <br> [Azure 安全中心](configure-server-endpoints.md#integration-with-azure-security-center) |
 | **macOS**    | [本地脚本](mac-install-manually.md) <br> [Microsoft Endpoint Manager](mac-install-with-intune.md) <br> [JAMF Pro](mac-install-with-jamf.md) <br> [移动设备管理](mac-install-with-other-mdm.md) |
 | **Linux Server** | [本地脚本](linux-install-manually.md) <br> [百分百](linux-install-with-puppet.md) <br> [Ansible](linux-install-with-ansible.md)|
 | **iOS**      | [基于应用](ios-install.md)                                |

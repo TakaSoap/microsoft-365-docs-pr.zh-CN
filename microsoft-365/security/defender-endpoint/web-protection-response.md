@@ -1,5 +1,5 @@
 ---
-title: 响应 Microsoft Defender ATP 中的 Web 威胁
+title: 在 Microsoft Defender for Endpoint 中响应 Web 威胁
 description: 响应与恶意和不需要的网站相关的警报。 了解 Web 威胁防护如何通过最终用户的 Web 浏览器和 Windows 通知通知最终用户
 keywords: Web 保护， Web 威胁防护， Web 浏览， 警报， 响应， 安全性， 网络钓鱼， 恶意软件， 攻击， 网站， 网络保护， Edge， Internet Explorer， Chrome， Firefox， Web 浏览器， 通知， 最终用户， Windows 通知， 阻止页面，
 search.product: eADQiWindows 10XVcnh
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: b0e6bb0d71c14bf7742f8d6508fbb95b76b10a34
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: 110b379863b4c6e23c947c56faf831e136231237
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51498359"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51688473"
 ---
 # <a name="respond-to-web-threats"></a>响应 web 威胁
 

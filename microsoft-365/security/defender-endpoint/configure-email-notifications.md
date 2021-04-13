@@ -16,14 +16,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 0d9e63c5d89b13b02dfcf116c1555c8db319d23f
-ms.sourcegitcommit: 39609c4d8c432c8e7d7a31cb35c8020e5207385b
+ms.openlocfilehash: d5a19464b9d5d1b9659d7bfae2d853f7a640a00b
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "51445360"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51687885"
 ---
-# <a name="configure-alert-notifications-in-microsoft-defender-atp"></a>在 Microsoft Defender ATP 中配置警报通知
+# <a name="configure-alert-notifications-in-microsoft-defender-for-endpoint"></a>在 Microsoft Defender for Endpoint 中配置警报通知
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -38,7 +38,7 @@ ms.locfileid: "51445360"
 > [!NOTE]
 > 只有具有"管理安全设置"权限的用户才能配置电子邮件通知。 如果选择使用基本权限管理，则具有安全管理员或全局管理员角色的用户可以配置电子邮件通知。
 
-你可以设置触发通知的警报严重性级别。 您还可以添加或删除电子邮件通知的收件人。 新收件人在添加后收到有关遇到的警报的通知。 有关警报详细信息，请参阅 [查看和组织警报队列](alerts-queue.md)。
+你可以设置触发通知的警报严重性级别。 您还可以添加或删除电子邮件通知的收件人。 新收件人将收到有关在添加后触发的警报的通知。 有关警报详细信息，请参阅 [查看和组织警报队列](alerts-queue.md)。
 
 如果使用基于角色的访问控制 (RBAC) ，则收件人将仅根据通知规则中配置的设备组接收通知。
 具有适当权限的用户只能创建、编辑或删除仅限于其设备组管理作用域的通知。
@@ -71,7 +71,7 @@ ms.locfileid: "51445360"
     
 5. 输入收件人的电子邮件地址，然后单击"**添加收件人"。** 可以添加多个电子邮件地址。
 
-6. 通过选择"发送测试电子邮件"，检查电子邮件收件人是否 **能够接收电子邮件通知**。
+6. 选中"发送测试电子邮件"，检查电子邮件收件人是否 **可接收电子邮件通知**。
 
 7. 单击 **"保存通知规则"。**
 

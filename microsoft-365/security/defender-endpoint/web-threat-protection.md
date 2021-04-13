@@ -1,6 +1,6 @@
 ---
 title: 保护组织免受 Web 威胁
-description: 了解 Microsoft Defender ATP 中的 Web 保护及其如何保护你的组织。
+description: 了解 Microsoft Defender for Endpoint 中的 Web 保护及其如何保护你的组织。
 keywords: Web 保护， Web 威胁防护， Web 浏览， 安全， 网络钓鱼， 恶意软件， 攻击， 网站， 网络保护， Edge， Internet Explorer， Chrome， Firefox， Web 浏览器
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: aeeea02ca1ef2d37623e9ab434b162237c2f4946
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: 0c42c05e318390741b94b6d7d1b5394fca961714
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51499895"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51688941"
 ---
 # <a name="protect-your-organization-against-web-threats"></a>保护组织免受 Web 威胁
 

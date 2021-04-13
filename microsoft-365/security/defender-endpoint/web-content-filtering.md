@@ -1,6 +1,6 @@
 ---
 title: Web 内容筛选
-description: 在 Microsoft Defender ATP 中，使用 Web 内容筛选根据网站的内容类别跟踪和监管对网站的访问。
+description: 使用 Microsoft Defender for Endpoint 中的 Web 内容筛选，根据网站的内容类别跟踪和监管对网站的访问。
 keywords: Web 保护， Web 威胁防护， Web 浏览， 监视， 报告， 卡， 域列表， 安全性， 网络钓鱼， 恶意软件， 攻击， 网站， 网络保护， Edge， Internet Explorer， Chrome， Firefox， Web 浏览器
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: c5f44b4ab8354330ec9701261e8fb0dcc2e9fe52
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: c9a069deded237c5ded6bcd9f6c6a77f644e65a2
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51499974"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51689337"
 ---
 # <a name="web-content-filtering"></a>Web 内容筛选
 

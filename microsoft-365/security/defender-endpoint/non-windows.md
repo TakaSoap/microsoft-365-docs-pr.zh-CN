@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 64a19e9dd3d373c8092553ca9d60c711bfb500bc
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 7d9dd82d8c1beee77ea1f95b11a12bcddf01115f
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51186409"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51688329"
 ---
 # <a name="microsoft-defender-for-endpoint-for-non-windows-platforms"></a>适用于非 Windows 平台的 Microsoft Defender for Endpoint
 
@@ -71,7 +71,7 @@ iOS 上的 Microsoft Defender for Endpoint 是适用于运行 iOS 11.0 及更高
 
 客户可以通过独立 Microsoft Defender for Endpoint 许可证（作为 Microsoft 365 A5/E5 或 Microsoft 365 安全性的一部分）在 macOS 上获取 Microsoft Defender for Endpoint。
 
-上述产品/服务中包含最近宣布的适用于 Android 和 iOS 的 Microsoft Defender for Endpoint 的功能，这些功能是适用于合格许可用户的五个合格设备的一部分。
+上述产品/服务中包含了 Android 和 iOS 上最近宣布的适用于终结点的 Microsoft Defender 功能，这些功能是适用于合格许可用户的五个合格设备的一部分。
 
 Linux 上的 Defender for Endpoint 通过 Defender for Endpoint Server SKU 提供，适用于商业和教育客户。
 

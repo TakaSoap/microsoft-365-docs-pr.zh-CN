@@ -1,6 +1,6 @@
 ---
 title: 我的组织中存在漏洞 - 威胁和漏洞管理
-description: 列出 CVE 的常见 () 在组织中运行的软件中发现漏洞的 ID。 由 Microsoft Defender ATP 威胁和漏洞管理功能发现。
+description: 列出 CVE 的常见 () 在组织中运行的软件中发现漏洞的 ID。 由 Microsoft Defender 终结点威胁和漏洞管理功能发现。
 keywords: mdatp &漏洞管理， 威胁和漏洞管理， mdatp tvm 漏洞页面， 通过电视查找漏洞， tvm 漏洞列表， tvm 中的漏洞详细信息
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 775592cd2ed9c29df79b04e07cb53efb7bea82d6
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: 0f573b2425764876e877de44555691979a0e1fcf
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51501236"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51689397"
 ---
 # <a name="vulnerabilities-in-my-organization---threat-and-vulnerability-management"></a>我的组织中存在漏洞 - 威胁和漏洞管理
 
