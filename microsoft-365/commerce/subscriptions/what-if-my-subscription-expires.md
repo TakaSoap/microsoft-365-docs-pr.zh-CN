@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 ms.assetid: 4436582f-211a-45ec-b72e-33647f97d8a3
 description: 了解 Microsoft 365 for Business 订阅到期、禁用或取消后对我的数据的影响。
-ms.openlocfilehash: ee83e237d17dc2de60b08b8d4dbdc46c98fc8251
-ms.sourcegitcommit: 0ff6edbf52562138a69c6675cb0274ec984986c3
+ms.openlocfilehash: 8f853000ebd20ab8f6625df9f773bbb182bdb7fd
+ms.sourcegitcommit: 437bdbf3f99610869811e80432a59b5f244f7a87
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "51615395"
+ms.lasthandoff: 04/08/2021
+ms.locfileid: "51644652"
 ---
 # <a name="what-happens-to-my-data-and-access-when-my-microsoft-365-for-business-subscription-ends"></a>Microsoft 365 for Business 订阅结束后对我的数据和访问有何影响？
 
@@ -68,6 +68,9 @@ ms.locfileid: "51615395"
 > [!IMPORTANT]
 > 如果希望在典型的禁用期结束之前删除订阅数据，可以 [关闭帐户](../close-your-account.md)。
   
+> [!NOTE]
+> 如果明确删除订阅，则它将跳过过期和禁用的阶段，并且立即删除 SharePoint Online 数据和内容（包括 OneDrive）。
+
 ## <a name="what-are-my-options-if-my-subscription-is-about-to-expire"></a>我的订阅即将过期时我有哪些选择？
 
 当订阅处于活动状态时，你和你的终端用户可以正常访问你的数据、电子邮件和 OneDrive for Business 等服务以及 Office 应用程序。 作为管理员，当你的订阅即将到期时，会通过电子邮件和管理中心收到一系列通知。

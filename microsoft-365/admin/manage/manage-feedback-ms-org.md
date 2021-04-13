@@ -1,5 +1,5 @@
 ---
-title: 管理组织的 Microsoft 反馈
+title: 为组织管理 Microsoft 反馈
 f1.keywords:
 - NOCSH
 ms.author: Kwekua
@@ -19,16 +19,16 @@ search.appverid:
 - MET150
 - MOE150
 description: 管理你的用户可以向 Microsoft 发送有关 Microsoft 产品的反馈。
-ms.openlocfilehash: c92adec1689d6f0c46b03ae4f46c567f054b6457
-ms.sourcegitcommit: a46532bb422ee51331f478ff50cc5444586bf6a9
+ms.openlocfilehash: 490081ace32203d015ee8cf3561ccf0ae978bace
+ms.sourcegitcommit: dcc6bfd228ca9070975ce9eb14574e084f9ed92c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/09/2021
-ms.locfileid: "51650012"
+ms.locfileid: "51657003"
 ---
-# <a name="manage-microsoft-feedback-for-your-organization"></a>管理组织的 Microsoft 反馈
+# <a name="manage-microsoft-feedback-for-your-organization"></a>为组织管理 Microsoft 反馈
 
-作为 Microsoft 365 组织的管理员，现在有几种策略可帮助你在使用 Microsoft 365 应用程序时管理用户的反馈收集以及客户参与体验。 你可以针对每个策略在组织中创建和使用现有 Azure Active directory 组。 通过这些管理，你可以控制组织中不同部门向 Microsoft 发送反馈的方式。 Microsoft 会审核客户提交的所有反馈，并使用此反馈改进产品。 将反馈体验保持 **打开** 可让你查看用户关于他们使用的 Microsoft 产品的意见。 我们从你的用户收集的反馈将很快在 Microsoft 365 管理中心提供。"
+作为 Microsoft 365 组织的管理员，现在有几种策略可帮助你在使用 Microsoft 365 应用程序时管理用户的反馈收集以及客户参与体验。 你可以针对每个策略在组织中创建和使用现有 Azure Active directory 组。 通过这些管理，你可以控制组织中不同部门向 Microsoft 发送反馈的方式。 Microsoft 会审核客户提交的所有反馈，并使用此反馈改进产品。 将反馈体验保持 **打开** 可让你查看用户关于他们使用的 Microsoft 产品的意见。 我们从你的用户收集的反馈将很快在 Microsoft 365 管理中心提供。
 
 若要了解有关反馈类型以及 Microsoft 如何使用用户反馈的信息，请参阅 [了解组织的 Microsoft 反馈](../misc/feedback-user-control.md)。
 

@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 description: 了解如何取消 Microsoft 365 商业版试用或付费订阅。
 ms.date: ''
-ms.openlocfilehash: 0d37a2459c89bf5931af26a91ed14e2898c1c8c4
-ms.sourcegitcommit: 0ff6edbf52562138a69c6675cb0274ec984986c3
+ms.openlocfilehash: 2163462ae206871d66155331096337c29d6a87c2
+ms.sourcegitcommit: 437bdbf3f99610869811e80432a59b5f244f7a87
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "51615383"
+ms.lasthandoff: 04/08/2021
+ms.locfileid: "51644640"
 ---
 # <a name="cancel-your-subscription"></a>取消订阅
 
@@ -47,6 +47,15 @@ ms.locfileid: "51615383"
 ::: moniker range="o365-worldwide"
 
 1. 在管理中心中，转到“**计费**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">你的产品</a>”页面。
+2. 找到要取消的订阅。 选择“**更多操作**”（三个点），然后选择“**取消订阅**”。
+3. 在“**取消订阅**”窗格中，选择取消原因。 (可选)提供反馈。
+4. 选择“**保存**”。
+
+你的订阅现显示为“**禁用**”状态，且在删除之前功能缩减。 若要深入了解在取消付费 Microsoft 365 商业版订阅后会发生什么情况，请参阅 [我的 Microsoft 365 商业版订阅结束后对我的数据和访问权限有何影响？](what-if-my-subscription-expires.md)
+
+> [!NOTE]
+> 如果明确删除订阅，则它将跳过过期和禁用的阶段，并且立即删除 SharePoint Online 数据和内容（包括 OneDrive）。
+
 ::: moniker-end
 
 ::: moniker range="o365-germany"
