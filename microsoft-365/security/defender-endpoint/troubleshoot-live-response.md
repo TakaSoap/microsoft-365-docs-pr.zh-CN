@@ -1,6 +1,6 @@
 ---
-title: Microsoft Defender ATP 实时响应问题疑难解答
-description: 解决在 Microsoft Defender ATP 中使用实时响应时可能出现的问题
+title: 解决 Microsoft Defender for Endpoint 实时响应问题
+description: 解决在 Microsoft Defender for Endpoint 中使用实时响应时可能出现的问题
 keywords: 实时响应， 实时， 响应， 锁定， 文件
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: 62525548be777a3187cea5ed4be622ac9d42079b
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 2601001687fc22da98ca3cd81010237d12705ea4
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51183810"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51687407"
 ---
 # <a name="troubleshoot-microsoft-defender-for-endpoint-live-response-issues"></a>解决 Microsoft Defender for Endpoint 实时响应问题
 

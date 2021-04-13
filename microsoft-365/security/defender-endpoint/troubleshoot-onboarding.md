@@ -1,6 +1,6 @@
 ---
-title: Microsoft Defender ATP 载入问题疑难解答
-description: 解决在载入设备或 Microsoft Defender ATP 服务期间可能出现的问题。
+title: Microsoft Defender 终结点载入问题疑难解答
+description: 解决在载入设备或 Microsoft Defender for Endpoint 服务期间可能出现的问题。
 keywords: 载入疑难解答， 载入问题， 事件查看器， 数据收集和预览版本， 传感器数据和诊断
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: 3b2c944cd7fc9d629b47947db9d6e8856729e0d7
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 4599741f501e9b55bc73e0eb8def9208bc988957
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51055899"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51689661"
 ---
 # <a name="troubleshoot-microsoft-defender-for-endpoint-onboarding-issues"></a>Microsoft Defender 终结点载入问题疑难解答
 
@@ -136,7 +136,7 @@ ms.locfileid: "51055899"
 
 ID | Severity | 事件描述 | 故障排除步骤
 :---|:---|:---|:---
-1819 | Error | 适用于终结点 CSP 的 Microsoft Defender：未能设置节点的值。 NodeId： (%1) ，TokenName： (%2) ，结果： (%3) 。 | 下载 [Windows 10 1607 累积更新](https://go.microsoft.com/fwlink/?linkid=829760)。
+1819 | 错误 | 适用于终结点 CSP 的 Microsoft Defender：未能设置节点的值。 NodeId： (%1) ，TokenName： (%2) ，结果： (%3) 。 | 下载 [Windows 10 1607 累积更新](https://go.microsoft.com/fwlink/?linkid=829760)。
 
 ## <a name="troubleshoot-onboarding-issues-on-the-device"></a>解决设备上载入问题
 

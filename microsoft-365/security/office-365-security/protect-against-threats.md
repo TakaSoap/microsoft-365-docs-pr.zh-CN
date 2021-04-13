@@ -20,12 +20,12 @@ description: 管理员可以在 Microsoft 365 中学习威胁防护并为组织�
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2df88df9f1f0e2c14c0adcf0d5772189a1276e9d
-ms.sourcegitcommit: a46532bb422ee51331f478ff50cc5444586bf6a9
+ms.openlocfilehash: b55391247bf7d21c68c67e29f93bac1b7088b035
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/09/2021
-ms.locfileid: "51650226"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51687083"
 ---
 # <a name="protect-against-threats"></a>抵御威胁
 
@@ -60,8 +60,8 @@ ms.locfileid: "51650226"
 |反垃圾邮件保护|[EOP](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)|
 |零时差自动清除 (电子邮件)|[EOP](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)|
 |保护电子邮件和 Office 文档中的恶意 URL 和文件 (安全链接和安全附件) |[Microsoft Defender for Office 365](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)|
-|打开 SharePoint、OneDrive 和 Microsoft Teams 工作负载的安全附件|[Defender for Office 365](turn-on-mdo-for-spo-odb-and-teams.md)|
-|高级反钓鱼保护|[Defender for Office 365](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)|
+|打开 SharePoint、OneDrive 和 Microsoft Teams 工作负载的安全附件|[Microsoft Defender for Office 365](turn-on-mdo-for-spo-odb-and-teams.md)|
+|高级反钓鱼保护|[Microsoft Defender for Office 365](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)|
 
 ### <a name="roles-and-permissions"></a>角色和权限
 

@@ -22,16 +22,16 @@ search.appverid:
 - BCS160
 ms.assetid: e1da26c6-2d39-4379-af6f-4da213218408
 description: 本文介绍与 Office 365 一同使用的 Azure ExpressRoute 路由要求、电路和路由域。
-ms.openlocfilehash: 9d3c381cfb6e24c1c87ef3dcfb83a9b93f991b93
-ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
+ms.openlocfilehash: b455ed7e53b3018babb1abd58919a077fb9d0685
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51222403"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51687165"
 ---
 # <a name="routing-with-expressroute-for-office-365"></a>通过适用于 Office 365 的 ExpressRoute 进行路由
 
-*本文适用于 Microsoft 365 企业版和 Office 365 企业版。*
+*此文章适用于 Microsoft 365 企业版和 Office 365 企业版。* 
 
 若要正确了解使用 Azure ExpressRoute 将流量路由到 Office 365，你需要掌握核心 [ExpressRoute](/azure/expressroute/expressroute-routing) 路由要求以及 [ExpressRoute 电路和路由域](/azure/expressroute/expressroute-circuit-peerings)。 其中规定了使用 Office 365 客户将依赖的 ExpressRoute 的基本信息。
   
@@ -106,7 +106,7 @@ Office 365 终结点文章中按应用程序类型和 FQDN 列出了使用 Micro
 
 通常，PAC 文件旨在将网络请求直接发送到 ExpressRoute 播发的终结点，并将所有其他网络请求发送到代理。 如果你要配置类似这样的 PAC 文件，请按以下顺序撰写 PAC 文件：
   
-1. 在 PAC 文件顶部包含上表中第二列的子 FQN，向代理发送流量。 我们已生成示例 PAC 文件，供你在管理 [Office 365](./managing-expressroute-for-connectivity.md)终结点一文使用。
+1. 在 PAC 文件顶部包含上表中第二列的子 FQN，向代理发送流量。 我们已生成示例 PAC 文件，供你在管理 [Office 365](./managing-office-365-endpoints.md)终结点一文使用。
 
 2. 包括本文第一节下方标记为 ExpressRoute 的所有[](./urls-and-ip-address-ranges.md)FQDN，将流量直接发送到 ExpressRoute 电路。
 

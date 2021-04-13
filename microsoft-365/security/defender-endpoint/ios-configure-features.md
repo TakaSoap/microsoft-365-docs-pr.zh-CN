@@ -1,5 +1,5 @@
 ---
-title: 配置适用于 iOS 功能的 Microsoft Defender for Endpoint
+title: 在 iOS 功能上配置 Microsoft Defender for Endpoint
 description: 介绍如何部署适用于 iOS 功能的 Microsoft Defender ATP
 keywords: microsoft， defender， atp， ios， 配置， 功能， ios
 search.product: eADQiWindows 10XVcnh
@@ -17,14 +17,14 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 8f74d4799bcb02051cddd09b80ed6ab50258302b
-ms.sourcegitcommit: 987f70e44e406ab6b1dd35f336a9d0c228032794
+ms.openlocfilehash: 0e351f6500d5076e724653d0fde1940592dd1ae5
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/05/2021
-ms.locfileid: "51587223"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51687481"
 ---
-# <a name="configure-microsoft-defender-for-endpoint-for-ios-features"></a>配置适用于 iOS 功能的 Microsoft Defender for Endpoint
+# <a name="configure-microsoft-defender-for-endpoint-on-ios-features"></a>在 iOS 功能上配置 Microsoft Defender for Endpoint
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -38,7 +38,7 @@ ms.locfileid: "51587223"
 > 适用于 iOS 的终结点的 Defender 将使用 VPN 来提供 Web 保护功能。 这不是常规 VPN，它是不接受设备外流量的本地/自循环 VPN。
 
 ## <a name="conditional-access-with-defender-for-endpoint-for-ios"></a>使用适用于 iOS 的 Defender 终结点的条件访问  
-Microsoft Defender for Endpoint for iOS 以及 Microsoft Intune 和 Azure Active Directory 支持根据设备风险级别强制执行设备合规性和条件访问策略。 Defender for Endpoint 是移动威胁防护 (MTD) 解决方案，你可以部署该解决方案以通过 Intune 利用此功能。
+iOS 上的 Microsoft Defender for Endpoint 以及 Microsoft Intune 和 Azure Active Directory 支持根据设备风险级别强制执行设备合规性和条件访问策略。 Defender for Endpoint 是移动威胁防护 (MTD) 解决方案，你可以部署该解决方案以通过 Intune 利用此功能。
 
 若要详细了解如何使用适用于 iOS 的 Defender for Endpoint 设置条件访问，请参阅[Defender for Endpoint 和 Intune。](https://docs.microsoft.com/mem/intune/protect/advanced-threat-protection)
 
@@ -68,7 +68,7 @@ Apple iOS 不支持多个设备范围的 VPN 同时处于活动状态。 虽然�
 若要防止在已越狱的 iOS 设备上访问公司数据，我们建议在 Intune 上设置以下合规性策略。
 
 > [!NOTE]
-> 目前，适用于 iOS 的 Microsoft Defender for Endpoint 不提供针对越狱情形的保护。 如果在已越狱设备上使用，那么在应用程序使用的特定方案中的数据（如公司电子邮件 ID 和公司个人资料图片） (如果可用) 可在本地公开
+> 目前，iOS 上的 Microsoft Defender for Endpoint 不提供针对越狱情形的保护。 如果在已越狱设备上使用，那么在应用程序使用的特定方案中的数据（如公司电子邮件 ID 和公司个人资料图片） (如果可用) 可在本地公开
 
 按照以下步骤创建针对已越狱设备的合规性策略。
 

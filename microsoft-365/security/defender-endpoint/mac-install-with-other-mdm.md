@@ -18,14 +18,14 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 5fa811b2419d107e91b301d5c9bad691fc016b5b
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: 58e3b14dcb80db961f01b92f038ce4d32da7e2e8
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51498965"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51689697"
 ---
-# <a name="deployment-with-a-different-mobile-device-management-mdm-system-for-microsoft-defender-for-endpoint-for-mac"></a>使用适用于 Mac 的 Microsoft Defender for Endpoint (MDM) 系统部署不同的移动设备管理
+# <a name="deployment-with-a-different-mobile-device-management-mdm-system-for-microsoft-defender-for-endpoint-on-macos"></a>在 macOS 上使用不同的移动设备管理 (MDM) 系统部署 Microsoft Defender for Endpoint
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -38,16 +38,16 @@ ms.locfileid: "51498965"
  
 ## <a name="prerequisites-and-system-requirements"></a>先决条件和系统要求
 
-在开始使用之前，请参阅 [主 Microsoft Defender for Endpoint for Mac](microsoft-defender-endpoint-mac.md) 页面，了解当前软件版本的先决条件和系统要求。
+在开始使用之前，请参阅 [macOS](microsoft-defender-endpoint-mac.md) 上的 Microsoft Defender for Endpoint 主页，了解当前软件版本的先决条件和系统要求说明。
 
 ## <a name="approach"></a>方法
 
 > [!CAUTION]
-> 目前，Microsoft 正式仅支持 Intune 和 JAMF 部署和管理 Microsoft Defender for Endpoint for Mac。 Microsoft 对下面提供的信息不做出明示或暗示的担保。
+> 目前，Microsoft 正式仅支持 Intune 和 JAMF 在 macOS 上部署和管理 Microsoft Defender for Endpoint。 Microsoft 对下面提供的信息不做出明示或暗示的担保。
 
-如果你的组织使用未正式支持的移动设备管理 (MDM) 解决方案，这并不意味着你无法部署或运行 Microsoft Defender for Endpoint for Mac。
+如果你的组织使用未正式支持的移动设备管理 (MDM) 解决方案，这并不意味着无法在 macOS 上部署或运行 Microsoft Defender for Endpoint。
 
-适用于 Mac 的 Microsoft Defender for Endpoint 不依赖于任何供应商特定的功能。 它可以与支持以下功能的任何 MDM 解决方案一同使用：
+macOS 上的 Microsoft Defender for Endpoint 不依赖于任何特定于供应商的功能。 它可以与支持以下功能的任何 MDM 解决方案一同使用：
 
 - 将 macOS .pkg 部署到托管设备。
 - 将 macOS 系统配置文件部署到托管设备。
@@ -72,7 +72,7 @@ ms.locfileid: "51498965"
 
 ### <a name="license-settings"></a>许可证设置
 
-设置 [系统配置文件](mac-install-with-jamf.md)。 MDM 解决方案可能称其为"自定义设置配置文件"，因为适用于 Mac 的 Microsoft Defender for Endpoint 不是 macOS 的一部分。
+设置 [系统配置文件](mac-install-with-jamf.md)。 MDM 解决方案可能称其为"自定义设置配置文件"，因为 macOS 上的 Microsoft Defender for Endpoint 不是 macOS 的一部分。
 
 使用属性列表 jamf/WindowsDefenderATPOnboarding.plist，可从从 Microsoft Defender 安全中心下载的载入 [包中提取](mac-install-with-jamf.md)。
 您的系统可能支持 XML 格式的任意属性列表。 在这种情况下，你可以像现在一样上传 jamf/WindowsDefenderATPOnboarding.plist 文件。
@@ -112,7 +112,7 @@ MDM 使用它将设置文件部署到客户端设备的 **/Library/Managed Prefe
 
 ### <a name="network-extension-policy"></a>网络扩展策略
 
-作为终结点检测和响应功能的一部分，Microsoft Defender for Mac 终结点会检查套接字流量，将此信息报告给 Microsoft Defender 安全中心门户。 以下策略允许网络扩展执行此功能。
+作为终结点检测和响应功能的一部分，macOS 上的 Microsoft Defender for Endpoint 会检查套接字流量，将此信息报告给 Microsoft Defender 安全中心门户。 以下策略允许网络扩展执行此功能。
 
 - 筛选器类型：插件
 - 插件捆绑包标识符： `com.microsoft.wdav`

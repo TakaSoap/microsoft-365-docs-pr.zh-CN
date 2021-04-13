@@ -17,14 +17,14 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: d1d4aa871438e10aed86ddd436757072fb6b5cc4
-ms.sourcegitcommit: 987f70e44e406ab6b1dd35f336a9d0c228032794
+ms.openlocfilehash: 93715f761beded95cfaa91b4747a2e4b5a3c61c1
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/05/2021
-ms.locfileid: "51587499"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51689673"
 ---
-# <a name="privacy-for-microsoft-defender-for-endpoint-for-mac"></a>适用于 Mac 的 Microsoft Defender 终结点的隐私
+# <a name="privacy-for-microsoft-defender-for-endpoint-on-macos"></a>macOS 上适用于终结点的 Microsoft Defender 的隐私
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -35,13 +35,13 @@ ms.locfileid: "51587499"
 > 想要体验 Microsoft Defender for Endpoint？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 
-Microsoft 致力于提供你在使用适用于 Mac 的 Microsoft Defender for Endpoint 时选择收集和使用数据方式时需要的信息和控件。
+Microsoft 致力于为您提供在 macOS 上使用 Microsoft Defender for Endpoint 时，选择收集和使用数据方式时需要的信息和控件。
 
 本主题介绍产品内可用的隐私控件、如何使用策略设置管理这些控件，以及所收集的数据事件的更多详细信息。
 
-## <a name="overview-of-privacy-controls-in-microsoft-defender-for-endpoint-for-mac"></a>Microsoft Defender for Endpoint for Mac 中的隐私控件概述
+## <a name="overview-of-privacy-controls-in-microsoft-defender-for-endpoint-on-macos"></a>macOS 上适用于终结点的 Microsoft Defender 中的隐私控件概述
 
-本部分介绍 Microsoft Defender for Endpoint for Mac 收集的不同类型的数据的隐私控制。
+本部分介绍由 macOS 上的 Microsoft Defender for Endpoint 收集的不同类型的数据的隐私控制。
 
 ### <a name="diagnostic-data"></a>诊断数据
 
@@ -73,7 +73,7 @@ Microsoft Defender for Endpoint 客户端软件有两个级别的诊断数据可
 
 如果您是 IT 管理员，您可能希望在企业级别配置这些控件。 
 
-The privacy controls for the various types of data described in the preceding section are described in [Set preferences for Microsoft Defender for Endpoint for Mac .](mac-preferences.md)
+The privacy controls for the various types of data described in the preceding section are described in [Set preferences for Microsoft Defender for Endpoint on macOS](mac-preferences.md).
 
 与任何新策略设置一样，应在受限的受控环境中仔细测试它们，以确保在组织中更广泛地实现策略设置之前，所配置的设置具有所需的效果。
 
@@ -94,7 +94,7 @@ The privacy controls for the various types of data described in the preceding se
 | org_id                  | 与设备所属的企业关联的唯一标识符。 允许 Microsoft 确定问题是否影响一组选定企业以及有多少企业受到影响。 |
 | hostname                | 本地设备名称 (DNS 后缀) 。 允许 Microsoft 确定问题是否影响一组选定安装以及有多少用户受到影响。 |
 | product_guid            | 产品的唯一标识符。 允许 Microsoft 区分影响不同产品风格的问题。 |
-| app_version             | 适用于 Mac 应用程序的 Microsoft Defender for Endpoint 的版本。 允许 Microsoft 确定哪些版本的产品显示问题，以便可以正确地确定问题的优先级。|
+| app_version             | macOS 应用程序上的 Microsoft Defender for Endpoint 的版本。 允许 Microsoft 确定哪些版本的产品显示问题，以便可以正确地确定问题的优先级。|
 | sig_version             | 安全智能数据库的版本。 允许 Microsoft 标识显示问题的安全智能版本，以便可以正确地确定问题的优先级。 |
 | supported_compressions  | 应用程序支持的压缩算法列表，例如 `['gzip']` 。 允许 Microsoft 了解在与应用程序通信时可以使用的压缩类型。 |
 | release_ring            | 设备与设备关联的圈， (Insider Fast、Insider Slow、Production) 。 允许 Microsoft 识别可能在哪个发布环上发生问题，以便可以正确地确定问题的优先级。 |
@@ -174,7 +174,7 @@ The privacy controls for the various types of data described in the preceding se
 
 | 字段            | 说明 |
 | ---------------- | ----------- |
-| version          | 适用于 Mac 的 Microsoft Defender for Endpoint 的版本。 |
+| version          | macOS 上终结点的 Microsoft Defender 版本。 |
 | instance_id      | 内核扩展启动时生成的唯一标识符。 |
 | trace_level      | 内核扩展的跟踪级别。 |
 | subsystem        | 用于实时保护的基础子系统。 |
@@ -189,8 +189,8 @@ The privacy controls for the various types of data described in the preceding se
 仅在用户同意的情况下收集诊断日志作为反馈提交功能一部分。 将收集以下文件作为支持日志的一部分：
 
 - */Library/Logs/Microsoft/mdatp/ 下的所有文件*
-- Microsoft Defender for Endpoint for Mac 创建和使用的 */Library/Application Support/Microsoft/Defender/* 下的文件子集
-- Microsoft Defender for Endpoint for Mac 使用的 */Library/Managed Preferences* 下的文件子集
+- macOS 上的 Microsoft Defender for Endpoint 创建和使用的 */Library/Application Support/Microsoft/Defender/* 下的文件子集
+- macOS 上的 Microsoft Defender for Endpoint 使用的 */Library/Managed Preferences* 下的文件子集
 - /Library/Logs/Microsoft/autoupdate.log
 - $HOME/Library/Preferences/com.microsoft.autoupdate2.plist
 

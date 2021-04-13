@@ -18,14 +18,14 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: c94c6839c17b3bbb432cef12fe58723d0cc2ecff
-ms.sourcegitcommit: 987f70e44e406ab6b1dd35f336a9d0c228032794
+ms.openlocfilehash: 6cfd2953e752ed9c96f7f16a3ec7ea1fd8862ab2
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/05/2021
-ms.locfileid: "51587235"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51689733"
 ---
-# <a name="deploy-microsoft-defender-for-endpoint-for-ios"></a>部署适用于 iOS 的 Microsoft Defender for Endpoint
+# <a name="deploy-microsoft-defender-for-endpoint-on-ios"></a>在 iOS 上部署 Microsoft Defender for Endpoint
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -91,7 +91,7 @@ ms.locfileid: "51587235"
 
 ## <a name="configure-microsoft-defender-for-endpoint-for-supervised-mode"></a>配置适用于监督模式的 Microsoft Defender 终结点
 
-Microsoft Defender for Endpoint for iOS 应用在受监督的 iOS/iPadOS 设备上具有专门的功能，因为平台在这些类型的设备上提供了增强的管理功能。 若要充分利用这些功能，适用于终结点的 Defender 应用需要知道设备是否位于监督模式下。
+鉴于平台在这些类型的设备上提供的管理功能已增强，iOS 上的 Microsoft Defender for Endpoint 应用在受监督的 iOS/iPadOS 设备上具有专门的功能。 若要充分利用这些功能，适用于终结点的 Defender 应用需要知道设备是否位于监督模式下。
 
 ### <a name="configure-supervised-mode-via-intune"></a>通过 Intune 配置监督模式
 

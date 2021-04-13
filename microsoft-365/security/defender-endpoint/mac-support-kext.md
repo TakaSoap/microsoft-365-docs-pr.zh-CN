@@ -1,6 +1,6 @@
 ---
-title: 解决 Microsoft Defender for Endpoint for Mac 中的内核扩展问题
-description: 解决 Microsoft Defender for Endpoint for Mac 中与内核扩展相关的问题。
+title: 在 macOS 上解决 Microsoft Defender for Endpoint 中的内核扩展问题
+description: 在 macOS 上的 Microsoft Defender for Endpoint 中解决与内核扩展相关的问题。
 keywords: microsoft， defender， atp， mac， 内核， 扩展
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,31 +18,31 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 877cc619d3ba048cdf6ecc8149f073461d9eac8e
-ms.sourcegitcommit: a965c498e6b3890877f895d5197898b306092813
+ms.openlocfilehash: 32a4819f7a607c69b4dbf45b3284b2f4ea66ffc4
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51379500"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51689649"
 ---
-# <a name="troubleshoot-kernel-extension-issues-in-microsoft-defender-for-endpoint-for-mac"></a>解决 Microsoft Defender for Endpoint for Mac 中的内核扩展问题
+# <a name="troubleshoot-kernel-extension-issues-in-microsoft-defender-for-endpoint-on-macos"></a>在 macOS 上解决 Microsoft Defender for Endpoint 中的内核扩展问题
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
 **适用于：**
 
-- [Microsoft Defender for Endpoint for Mac](microsoft-defender-endpoint-mac.md)
+- [macOS 上的 Microsoft Defender for Endpoint](microsoft-defender-endpoint-mac.md)
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > 想要体验 Microsoft Defender for Endpoint？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-本文提供有关解决作为 Microsoft Defender for Endpoint for Mac 的一部分安装的内核扩展的问题的信息。
+本文提供有关解决作为 macOS 上 Endpoint 的 Microsoft Defender for Endpoint 的一部分安装的内核扩展的问题的信息。
 
 从 macOS High Sierra (10.13) 开始，macOS 要求在允许所有内核扩展在设备上运行之前得到明确批准。
 
-如果在部署/安装 Microsoft Defender for Endpoint for Mac 期间未批准内核扩展，应用程序将显示横幅提示你启用它：
+如果在 macOS 上部署/安装 Microsoft Defender for Endpoint 期间未批准内核扩展，应用程序将显示横幅提示你启用它：
 
    ![RTP 已禁用屏幕截图](images/mdatp-32-main-app-fix.png)
 
@@ -58,7 +58,7 @@ real_time_protection_available              : true
 ...
 ```
 
-以下各节提供有关如何解决此问题的指导，具体取决于你用于部署适用于 Mac 的 Microsoft Defender for Endpoint 的方法。
+以下各节提供有关如何解决此问题的指导，具体取决于在 macOS 上部署 Microsoft Defender for Endpoint 所使用的方法。
 
 ## <a name="managed-deployment"></a>托管部署
 

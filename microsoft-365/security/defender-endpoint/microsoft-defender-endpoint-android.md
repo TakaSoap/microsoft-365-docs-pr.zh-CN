@@ -1,5 +1,5 @@
 ---
-title: 适用于 Android 的 Microsoft Defender ATP
+title: Android 上的 Microsoft Defender ATP
 ms.reviewer: ''
 description: 介绍如何安装和使用适用于 Android 的 Microsoft Defender ATP
 keywords: microsoft， defender， atp， android， 安装， 部署， 卸载， intune
@@ -19,14 +19,14 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: e2432dc4aa2c67fadc9112512a080f24c0064df4
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 32c42691b3a2b43f9740da26084bf45af0ee80f5
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51187609"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51687777"
 ---
-# <a name="microsoft-defender-for-endpoint-for-android"></a>Microsoft Defender for Endpoint for Android
+# <a name="microsoft-defender-for-endpoint-on-android"></a>Android 上的 Microsoft Defender for Endpoint
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -42,7 +42,7 @@ ms.locfileid: "51187609"
 > 将其他第三方终结点保护产品与适用于 Android 的 Defender for Endpoint 一起运行可能会导致性能问题和不可预知的系统错误。
 
 
-## <a name="how-to-install-microsoft-defender-for-endpoint-for-android"></a>如何安装适用于 Android 的 Microsoft Defender for Endpoint
+## <a name="how-to-install-microsoft-defender-for-endpoint-on-android"></a>如何在 Android 上安装 Microsoft Defender for Endpoint
 
 ### <a name="prerequisites"></a>先决条件
 
@@ -62,7 +62,7 @@ ms.locfileid: "51187609"
     -   访问 Microsoft Defender 安全中心门户。
 
         > [!NOTE]
-        > Microsoft Intune 是部署适用于 Android 的 Microsoft Defender (MDM) 唯一受支持的移动设备管理解决方案。 目前，仅支持在 Intune 中强制执行 Android 相关设备合规性策略的 Defender for Endpoint 设备。 
+        > Microsoft Intune 是唯一受支持的移动设备管理 (MDM) 解决方案，用于部署 Android 上的 Microsoft Defender for Endpoint。 目前，仅支持在 Intune 中强制执行 Android 相关设备合规性策略的 Defender for Endpoint 设备。 
 
     -   访问 [Microsoft Endpoint Manager 管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)，将应用部署到组织中注册的用户组。
 
@@ -73,23 +73,23 @@ ms.locfileid: "51187609"
 
 ### <a name="installation-instructions"></a>安装说明
 
-适用于 Android 的 Microsoft Defender for Endpoint 支持在已注册设备的两种模式（ 旧版设备管理员模式和 Android 企业版模式）上安装。
+Android 上的 Microsoft Defender for Endpoint 支持在已注册的设备的两种模式（ 旧版设备管理员模式和 Android 企业版模式）上安装。
 **目前，具有工作配置文件的个人拥有设备和公司拥有的完全托管用户设备注册在 Android 企业版中受支持。其他 Android 企业版模式的支持将在准备就绪后公布。**
 
-适用于 Android 的 Microsoft Defender for Endpoint 的部署通过 Microsoft Intune (MDM) 。
-有关详细信息，请参阅使用 [Microsoft Intune 部署适用于 Android](android-intune.md)的 Microsoft Defender for Endpoint。
+在 Android 上部署 Microsoft Defender for Endpoint 是通过 Microsoft Intune (MDM) 。
+有关详细信息，请参阅使用 [Microsoft Intune](android-intune.md)在 Android 上部署 Microsoft Defender for Endpoint。
 
 
 > [!NOTE]
-> **适用于 Android 的 Microsoft Defender for Endpoint 现已在 [Google Play 上](https://play.google.com/store/apps/details?id=com.microsoft.scmx) 可用。** <br> 你可以从 Intune 连接到 Google Play，以跨设备管理员和 Android 企业版注册模式部署 Microsoft Defender for Endpoint 应用。 
+> **Android 上的 Microsoft Defender for Endpoint 现已在 [Google Play 上](https://play.google.com/store/apps/details?id=com.microsoft.scmx) 可用。** <br> 你可以从 Intune 连接到 Google Play，以跨设备管理员和 Android 企业版注册模式部署 Microsoft Defender for Endpoint 应用。 
 
-## <a name="how-to-configure-microsoft-defender-for-endpoint-for-android"></a>如何配置适用于 Android 的 Microsoft Defender 终结点
+## <a name="how-to-configure-microsoft-defender-for-endpoint-on-android"></a>如何在 Android 上配置适用于终结点的 Microsoft Defender
 
-有关如何配置适用于 Android 的 Microsoft Defender 终结点功能的指南，可在为 Android 功能配置 [Microsoft Defender for Endpoint 中获得](android-configure.md)。
+有关如何在 Android 上配置适用于终结点功能的 Microsoft Defender 的指南可在在 Android 功能上配置 [Microsoft Defender for Endpoint 中提供](android-configure.md)。
 
 
 
 ## <a name="related-topics"></a>相关主题
-- [使用 Microsoft Intune 部署适用于 Endpoint 的 Microsoft Defender](android-intune.md)
-- [配置适用于 Android 功能的 Microsoft Defender for Endpoint](android-configure.md)
+- [使用 Microsoft Intune 在 Android 上部署 Microsoft Defender for Endpoint](android-intune.md)
+- [在 Android 功能上配置 Microsoft Defender for Endpoint](android-configure.md)
 
