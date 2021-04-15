@@ -22,12 +22,12 @@ localization_priority: Priority
 description: 管理员可以了解 Exchange Online Protection (EOP) 中提供的防欺骗功能，该功能有助于缓解来自虚假发件人和域的网络钓鱼攻击。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 746b00c7fbf1a90f8bda56c1ba031777f6dee409
-ms.sourcegitcommit: c75aac39ee8d93218a79585113ef6b36f47c9ddf
+ms.openlocfilehash: 54b94e2d2cc0395ce7a9785887c253df3addf7fa
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2021
-ms.locfileid: "51408607"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51688773"
 ---
 # <a name="anti-spoofing-protection-in-eop"></a>EOP 中的防欺骗防护
 
@@ -122,7 +122,8 @@ Microsoft 区分两种不同类型的欺骗邮件：
 
   - SFTY 是邮件的安全级别。 9 表示网络钓鱼，22 表示跨域欺骗。
 
-有关与欺骗相关的类别和复合身份验证 (compauth) 值的详细信息，请参阅 [Microsoft 365 中的反垃圾邮件标头](anti-spam-message-headers.md)。
+> [!NOTE]
+> 如果您收到了类似 ***compauth=fail reason=###** _ 且需要知道组合身份验证 （compauth） 和欺骗相关值的消息，请参阅 [_Anti-spam message headers in Microsoft 365*](anti-spam-message-headers.md)。 或者直接转到 [*原因*](anti-spam-message-headers.md)代码。
 
 有关 DMARC 的详细信息，请参阅[在 Microsoft 365 中使用 DMARC 来验证电子邮件](use-dmarc-to-validate-email.md)。
 

@@ -20,18 +20,16 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: c993977e0f052a7dc2e7827ff5bdefacee19ac2d
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: db458015d8434843ec64f3c2c00d640d4c4d8ff2
+ms.sourcegitcommit: 07dea2aa98daf0c4086f8590375167830027c802
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51055554"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51760172"
 ---
 # <a name="redirecting-accounts-from-microsoft-defender-for-endpoint-to-the-microsoft-365-security-center"></a>将帐户从 Microsoft Defender for Endpoint 重定向到 Microsoft 365 安全中心
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
-
-[!INCLUDE [Prerelease](../includes/prerelease.md)]
 
 **适用于：**
 - Microsoft 365 Defender
@@ -56,7 +54,7 @@ ms.locfileid: "51055554"
 有关链接和路由的详细信息，请参阅下表。
 ## <a name="siem-api-routing"></a>SIEM API 路由
 
-|**属性**  |**重定向关闭时的目标**  |**重定向打开时的目标** | 
+|**Property**  |**重定向关闭时的目标**  |**重定向打开时的目标** | 
 |---------|---------|---------|
 | LinkToWDATP | 警报页 securitycenter.windows.com | 警报页 security.microsoft.com  |
 | IncidentLinkToWDATP | 事件页面中 securitycenter.windows.com  | 事件页面中 security.microsoft.com  |
@@ -65,7 +63,7 @@ ms.locfileid: "51055554"
 
 ## <a name="email-alert-notifications"></a>电子邮件通知
 
-|**属性**  |**重定向关闭时的目标**  |**重定向打开时的目标** |
+|**Property**  |**重定向关闭时的目标**  |**重定向打开时的目标** |
 |---------|---------|---------|
 | 警报页面  | 警报页 securitycenter.windows.com  | 警报页 security.microsoft.com  |
 | 事件页面  |事件页面中 securitycenter.windows.com  | 事件页面中 security.microsoft.com  

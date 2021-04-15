@@ -10,16 +10,18 @@ ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 03/31/2021
+ms.date: 04/13/2021
 ms.reviewer: ksarens, jtoole, pahuijbr
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 6c411507b834bd7f09f4688bda11e3ece9f6d7c8
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+audience: ITPro
+ms.topic: how-to
+ms.openlocfilehash: b8122807b8e26a848781f9f66f8e13032345f3fd
+ms.sourcegitcommit: 07dea2aa98daf0c4086f8590375167830027c802
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/13/2021
-ms.locfileid: "51690169"
+ms.locfileid: "51749910"
 ---
 # <a name="use-group-policy-settings-to-configure-and-manage-microsoft-defender-antivirus"></a>使用组策略设置配置和管理 Microsoft Defender 防病毒
 
@@ -87,9 +89,9 @@ ms.locfileid: "51690169"
 | 修正 | 指定一天中运行计划完整扫描以完成修正的时间 | [配置计划的 Microsoft Defender 防病毒扫描](scheduled-catch-up-scans-microsoft-defender-antivirus.md) |
 | 报告 | 关闭增强型通知 | [配置终结点上显示的通知](configure-notifications-microsoft-defender-antivirus.md)
 | 根 | 关闭 Microsoft Defender 防病毒 | 未 (此设置必须设置为"未配置"，以确保任何已安装的第三方防病毒应用) 
-| 根 | 定义绕过代理服务器的地址 | 不再相关 |
-| 根 | 定义代理自动 (.pac) 以连接到网络 | 不再相关 |
-| 根 | 定义用于连接到网络的代理服务器 | 不再相关 |
+| 根 | 定义绕过代理服务器的地址 | 未使用 |
+| 根 | 定义代理自动 (.pac) 以连接到网络 | 未使用 |
+| 根 | 定义用于连接到网络的代理服务器 | 未使用 |
 | 根 | 配置列表的本地管理员合并行为 | [阻止或允许用户在本地修改策略设置](configure-local-policy-overrides-microsoft-defender-antivirus.md) |
 | 根 | 允许反恶意软件服务以正常优先级启动 | [配置 Microsoft Defender 防病毒扫描的修正](configure-remediation-microsoft-defender-antivirus.md) |
 | 根 | 允许反恶意软件服务始终运行 | [配置 Microsoft Defender 防病毒扫描的修正](configure-remediation-microsoft-defender-antivirus.md) |

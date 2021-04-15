@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 1831d8927e761827f9bbcee84551433b68e3c6cc
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 77b843f9526d8b100845403bc8d2df4bf3259471
+ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51165533"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51760208"
 ---
 # <a name="onboarding-tools-and-methods-for-windows-10-devices"></a>Windows 10 设备的装载工具和方法
 
@@ -31,6 +31,7 @@ ms.locfileid: "51165533"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 - [Microsoft 365 终结点数据丢失防护 (DLP) ](/microsoft-365/compliance/endpoint-dlp-learn-about)
+- [Microsoft 365 预览体验成员风险管理](/microsoft-365/compliance/insider-risk-management)
 
 >想要体验适用于终结点的 Defender？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
@@ -50,7 +51,7 @@ ms.locfileid: "51165533"
 [使用 Microsoft Endpoint Configuration Manager 载入 Windows 设备](configure-endpoints-sccm.md) | 可以使用 Microsoft Endpoint Manager (current branch) version 1606 或 Microsoft Endpoint Manager (current branch) version 1602 或更早版本在设备上部署配置包。
 [使用移动设备管理工具载入 Windows 10 设备](configure-endpoints-mdm.md) | 使用移动设备管理工具或 Microsoft Intune 在设备上部署配置包。
 [使用本地脚本载入 Windows 10 设备](configure-endpoints-script.md) | 了解如何使用本地脚本在终结点上部署配置包。
-[载入非持久性虚拟桌面基础结构 (VDI) 设备。](configure-endpoints-vdi.md) | 了解如何使用配置包配置 VDI 设备。
+[载入非永久虚拟桌面基础结构 （VDI） 设备](configure-endpoints-vdi.md) | 了解如何使用配置包配置 VDI 设备。
 
 
 >想要体验适用于终结点的 Defender？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-configureendpoints-belowfoldlink)

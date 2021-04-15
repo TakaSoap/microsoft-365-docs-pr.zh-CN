@@ -7,7 +7,7 @@ ms.mktglfcycl: deploy
 localization_priority: Normal
 f1.keywords:
 - NOCSH
-ms.date: 02/02/2021
+ms.date: 04/07/2021
 ms.author: tracyp
 author: msfttracyp
 manager: dansimp
@@ -19,18 +19,16 @@ ms.topic: conceptual
 search.appverid: met150
 ms.custom: seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: 142bc305950f9322c90e0d207f255c14abbc6b8c
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: d89e5dc29bfe7f980d40a9a5b139884750a966bc
+ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51197929"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51760010"
 ---
 # <a name="the-unified-microsoft-365-security-center-overview"></a>统一 Microsoft 365 安全中心概述
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
-
-[!INCLUDE [Prerelease](../includes/prerelease.md)]
 
 **适用于：**
 
@@ -38,7 +36,7 @@ ms.locfileid: "51197929"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/defender-for-office-365)
 
-> 想要体验 Microsoft 365 Defender？ 可以在[实验室环境中评估它或在](m365d-evaluation.md?ocid=cx-docs-MTPtriallab)[生产中运行你的试验项目](m365d-pilot.md?ocid=cx-evalpilot)。
+> 希望体验 Microsoft 365 Defender？ 你可[在验室环境中评估](m365d-evaluation.md?ocid=cx-docs-MTPtriallab) 或[生产中运行试点项目](m365d-pilot.md?ocid=cx-evalpilot)。
 
 改进的 **Microsoft 365** 安全中心 () 中心门户中对电子邮件、协作、标识和设备威胁的保护、检测、调查和 [https://security.microsoft.com](https://security.microsoft.com) 响应。   
 
@@ -57,39 +55,39 @@ Microsoft 365 安全中心将现有 Microsoft 安全门户（如 Microsoft Defen
 
 在 Office 365 安全与合规中心 (protection.office.com) 和 Microsoft Defender 安全中心 (securitycenter.microsoft.com) 中使用的所有安全内容现在都可以在 *Microsoft 365* 安全中心找到。
 
-Microsoft 365 安全中心通过将来自不同工作负载的信号融入单个统一体验来帮助安全团队调查和响应攻击：
+Microsoft 365 安全中心将来自不同工作负载的信号引入一组统一体验，可帮助安全团队调查和响应攻击：：
 
 - 事件&警报
 - 搜寻
 - 操作中心
 - 威胁分析
 
-Microsoft 365 安全中心在将 Microsoft Defender for Office 365 和 Microsoft Defender for Endpoint 合并时强调统一、清晰和共同的目标。 合并基于下面列出的优先级，在不影响每个安全套件为组合提供的功能的情况下进行：
+Microsoft 365 安全中心在将 Microsoft Defender for Office 365 和 Microsoft Defender for Endpoint 合并时强调统一、清晰和共同的目标。 合并基于下面列出的优先级，在不影响每个安全套件组合提供的功能的情况下进行：
 
-- 公共构建基块
+- 常见构建基块
 - 常用术语
-- 通用实体
-- 与其他工作负载的功能奇偶校验
+- 常见实体
+- 与其他工作负荷的功能奇偶校验
 
 ## <a name="unified-investigations"></a>统一调查
 
-简化安全中心可创建一个窗格，用于调查 Microsoft 365 组织内的任何事件。 主要示例是 Microsoft  365 安全中心快速启动上的"事件"节点。
+聚合安全中心为调查 Microsoft 365 中的安全事件创建了一个单独位置。 主要 **示例是** Microsoft 365 &快速 **启动** 时事件和警报下的事件。
 
-:::image type="content" source="../../media/converged-incidents-2.png.png" alt-text="MDO 中的&quot;事件&quot;页。":::
+:::image type="content" source="../../media/converged-incidents-2.png.png" alt-text="Microsoft 365 安全中心中的&quot;事件&quot;页面。":::
 
-例如，双击具有高严重性的事件名称，将你带到一个演示聚合中心优势的页面。
+选择事件名称将显示一个页面，该页面演示聚合安全中心的价值。
 
-![涉及多个终结点上的特权升级的多阶段事件，显示 16 个受影响的设备和 9 个受到影响的用户。](../../media/converged-incident-info-3.png)
+:::image type="content" source="../../media/converged-incident-info-3.png" alt-text="Microsoft 365 安全中心内事件的&quot;摘要&quot;页面示例":::
 
-> [!TIP]
-> 聚合的用户 **选项卡** 是开始查询的一个好位置。 如果你利用聚合工作负载 (Microsoft Defender for Endpoint、Microsoft Defender for Identity 和 MCAS) 以及一系列源（如本地 Active Directory、Azure Active Directory、已同步、本地和第三方用户）的信息，则此单页显示来自聚合工作负载的用户的信息。 详细了解新的 [用户体验](investigate-users.md)。
+<!--
+![Example of the Summary page for an incident in the Microsoft 365 security center](../../media/converged-incident-info-3.png)
+--> 
 
-事件信息显示在受影响的邮箱旁边的用户/标识详细信息和存在风险的设备。 它还关联所有 **调查信息和收集****的证据**。 这使管理员和安全操作团队可以更轻松地从一个高风险警报透视到受影响的用户和邮箱。 查看 **此页面顶部的** "事件"选项卡，此单个位置提供了其他关键安全透视。
+在事件页面顶部，你将看到摘要、警报、设备、**用户**、**邮箱**、调查和 **证据** 选项卡。    选择这些选项卡可获取更多详细信息。 例如，"用户"选项卡显示聚合工作负载 (Microsoft Defender for Endpoint、Microsoft Defender for Identity 和 Microsoft Cloud App Security) 以及一系列源（如本地 Active Directory 域服务 (AD DS) 、Azure Active Directory (Azure AD) 和第三方标识提供程序）的用户的信息。 有关详细信息，请参阅 [调查用户](investigate-users.md)。
 
-> [!IMPORTANT]
-> 在特定事件的任何页面顶部，你将看到摘要、警报、设备、用户、**邮箱**、调查和 **证据选项卡。**   
+花时间查看环境中的事件，深入了解这些选项卡，并实践了解如何访问为不同类型的威胁事件提供的信息。
 
-选择 **"** 调查"将打开一个页面，其中显示正在分析的图形，并列出状态 (如等待审批) 修正。 花时间选择环境中的特定事件，深入到这些选项卡，然后实践为不同类型的威胁构建配置文件。 熟悉度将受益于任何稍后的紧急调查。
+有关详细信息，请参阅 [Microsoft 365 安全中心内的事件](incidents-overview.md)。
 
 ## <a name="improved-processes"></a>改进的流程
 

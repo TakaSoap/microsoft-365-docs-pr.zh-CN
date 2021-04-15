@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: a6fe207773d2682ab68392269ac915030c67fa4b
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: f408ed0fe77034f69fc6e51ada75012f752ee2e7
+ms.sourcegitcommit: 07dea2aa98daf0c4086f8590375167830027c802
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51055253"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51759818"
 ---
 # <a name="get-started-with-microsoft-365-for-defender"></a>Microsoft 365 for Defender 入门
 
@@ -32,8 +32,6 @@ ms.locfileid: "51055253"
 
 **适用于：**
 - Microsoft 365 Defender
-
-[!INCLUDE [Prerelease](../includes/prerelease.md)]
 
 Microsoft 365 Defender 是一种统一体验，可在其中监视和管理整个企业的安全性。 通过跨标识、终结点、数据、应用、电子邮件和协作工具的集成警报， 调查和响应威胁现在发生在中心位置。 
 

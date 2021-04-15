@@ -11,26 +11,26 @@ localization_priority: Normal
 audience: ITPro
 author: dansimp
 ms.author: dansimp
-ms.date: 01/26/2021
-ms.reviewer: ''
+ms.reviewer: oogunrinde
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 34bebddcf052a643529f1d2b8a8a869a0ffe4a91
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.topic: how-to
+ms.openlocfilehash: 9efc42441c2cb30f35abf658071088f7f7bbaf00
+ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51183811"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51760094"
 ---
 # <a name="troubleshoot-network-protection"></a>网络保护疑难解答
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-
 **适用于：**
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
+> [!TIP]
 > 想要体验适用于终结点的 Defender？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-pullalerts-abovefoldlink) 
 
 
@@ -103,11 +103,31 @@ ms.locfileid: "51183811"
    mpcmdrun -getfiles
    ```
 
-3. 默认情况下，它们保存到 C：\ProgramData\Microsoft\Windows Defender\Support\MpSupportFiles.cab。 将文件附加到提交表单。
+3. 将文件附加到提交表单。 默认情况下，诊断日志保存在 中 `C:\ProgramData\Microsoft\Windows Defender\Support\MpSupportFiles.cab` 。 
 
-## <a name="related-topics"></a>相关主题
+## <a name="resolve-connectivity-issues-with-network-protection-for-e5-customers"></a>解决 E5 客户 (网络保护服务的连接) 
+
+由于网络保护运行的环境，Microsoft 无法查看操作系统代理设置。 在某些情况下，网络保护客户端无法访问云服务。 要解决网络保护的连接问题，请配置以下注册表项之一，以便网络保护能够识别代理配置：
+
+```powershell
+reg add "HKLM\Software\Microsoft\Windows Defender" /v ProxyServer /d "<proxy IP address: Port>" /f
+```
+
+---OR---
+
+
+```powershell
+reg add "HKLM\Software\Microsoft\Windows Defender" /v ProxyPacUrl /d "<Proxy PAC url>" /f
+```
+
+可以使用 PowerShell、Microsoft Endpoint Manager 或组策略配置注册表项。 以下是一些可帮助的资源：
+- [使用注册表项](/powershell/scripting/samples/working-with-registry-keys)
+- [配置 Endpoint Protection 的自定义客户端设置](/mem/configmgr/protect/deploy-use/endpoint-protection-configure-client)
+- [使用组策略设置管理 Endpoint Protection](/mem/configmgr/protect/deploy-use/endpoint-protection-group-policies)
+
+## <a name="see-also"></a>另请参阅
 
 - [网络保护](network-protection.md)
-- [评估网络保护](evaluate-network-protection.md)
+- [网络保护功能评估](evaluate-network-protection.md)
 - [启用网络保护](enable-network-protection.md)
 - [在 Defender for Endpoint 中解决误报/负数](defender-endpoint-false-positives-negatives.md)

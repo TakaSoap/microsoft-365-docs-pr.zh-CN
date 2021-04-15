@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 784e73467efc114f05ebdfca9bc4034e2d75f6c6
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 235df8c84077311444c597b120a19477cfd0986a
+ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51185703"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51760412"
 ---
 # <a name="investigate-entities-on-devices-using-live-response"></a>使用实时响应调查设备上的实体
 
@@ -144,11 +144,13 @@ ms.locfileid: "51185703"
 |`connections` | 显示所有活动连接。 |
 |`dir` | 显示目录中的文件和子目录的列表。 |
 |`download <file_path> &` | 在后台下载文件。 |
-drivers |  显示设备上安装的所有驱动程序。 |
-|`fg <command ID>` | 返回文件下载到前台。 |
+|`drivers` |  显示设备上安装的所有驱动程序。 |
+|`fg <command ID>` | 将指定的作业放在前台的前台，使其成为当前作业。 <br> 注意：fg 从作业（而不是 PID）获得可用的"命令 ID" |
 |`fileinfo` | 获取有关文件的信息。 |
 |`findfile` | 在设备上按给定名称查找文件。 |
+|`getfile <file_path>` | 下载文件。 |
 |`help` | 提供实时响应命令的帮助信息。 |
+|`jobs` | 显示当前运行的作业及其 ID 和状态。 |
 |`persistence` | 显示设备上所有已知的持久性方法。 |
 |`processes` | 显示设备上运行的所有进程。 |
 |`registry` | 显示注册表值。 |
@@ -162,7 +164,6 @@ drivers |  显示设备上安装的所有驱动程序。 |
 | 命令 | 说明 |
 |---|---|
 | `analyze` | 使用各种描述引擎分析实体以作出裁定。 |
-| `getfile` | 从设备获取文件。 <br> 注意：此命令具有先决条件命令。 可以将 命令 `-auto` 与 结合使用 `getfile` 来自动运行必备组件命令。 |
 | `run` | 从设备的库中运行 PowerShell 脚本。 |
 | `library` | 列出上载到实时响应库的文件。 |
 | `putfile` | 将库中的文件置于设备。 文件保存在工作文件夹中，在设备默认重启时将被删除。 |
@@ -303,10 +304,9 @@ processes > output.txt
 
 ## <a name="limitations"></a>限制
 
-- 实时响应会话一次限制为 10 个实时响应会话。
-- 不支持大规模命令执行。
-- 实时响应会话非活动超时值为 5 分钟。 
-- 用户一次只能启动一个会话。
+- 实时响应会话一次限制为 25 个实时响应会话。
+- 实时响应会话非活动超时值为 30 分钟。 
+- 用户可以启动最多 10 个并发会话。
 - 设备一次只能在一个会话中。
 - 以下文件大小限制适用：
    - `getfile` 限制：3 GB

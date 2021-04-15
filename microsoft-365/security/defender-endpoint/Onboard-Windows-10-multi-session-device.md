@@ -15,12 +15,12 @@ ms.author: dansimp
 ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
-ms.openlocfilehash: 3f925fdc514c5e53b50f748d991f54d20fb49bd0
-ms.sourcegitcommit: 7ebed5810480d7c49f8ca03207b5ea84993d253f
+ms.openlocfilehash: 6ad61d583815f669affe989d7519ba0ade6fe08d
+ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51488141"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51760082"
 ---
 # <a name="onboard-windows-10-multi-session-devices-in-windows-virtual-desktop"></a>在 Windows 虚拟桌面中载入 Windows 10 多会话设备 
 6 分钟阅读 
@@ -54,7 +54,7 @@ Microsoft 建议将 Microsoft Defender for Endpoint 载入脚本添加到 WVD �
 #### <a name="scenario-1-using-local-group-policy"></a>*方案 1：使用本地组策略*
 此方案要求将脚本放置在黄金映像中，并使用本地组策略在启动过程早期运行。
 
-按照载入非 [永久性虚拟桌面基础结构 VDI 设备 中的说明操作](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/configure-endpoints-vdi#onboard-non-persistent-virtual-desktop-infrastructure-vdi-devices-1)。
+按照载入非 [永久性虚拟桌面基础结构 VDI 设备 中的说明操作](configure-endpoints-vdi.md#onboard-non-persistent-virtual-desktop-infrastructure-vdi-devices-1)。
 
 按照每个设备的单个条目的说明进行操作。
 
@@ -62,32 +62,41 @@ Microsoft 建议将 Microsoft Defender for Endpoint 载入脚本添加到 WVD �
 此方案使用位于中央的脚本并使用基于域的组策略运行它。 还可以将脚本放在黄金映像中，并使用相同的方式运行它。
 
 **从WindowsDefenderATPOnboardingPackage.zip安全中心Windows Defender文件**
+
 1. 打开 VDI 配置包 .zip 文件 (WindowsDefenderATPOnboardingPackage.zip)   
-    - 在 Microsoft Defender 安全中心导航窗格中，**选择设置**  >  **载入**。 
-    - 选择 Windows 10 作为操作系统。 
-    - 在" **部署方法"** 字段中，选择"非永久性终结点的 VDI 载入脚本"。 
-    - 单击 **下载程序包** 并保存 .zip 文件。 
+
+    1. 在 Microsoft Defender 安全中心导航窗格中，**选择设置**  >  **载入**。 
+    1. 选择 Windows 10 作为操作系统。 
+    1. 在" **部署方法"** 字段中，选择"非永久性终结点的 VDI 载入脚本"。 
+    1. 单击 **下载程序包** 并保存 .zip 文件。 
+
 2. 将 .zip 文件的内容提取到设备可以访问的共享只读位置。 你应该有一个名为 **OptionalParamsPolicy** 的文件夹以及 **WindowsDefenderATPOnboardingScript.cmd** 和 **Onboard-NonPersistentMachine.ps1**。
 
 **当虚拟机启动时，使用组策略管理控制台运行脚本**
+
 1. 打开组策略管理控制台 (GPMC) ，右键单击要配置的组策略对象 (GPO) 然后单击 **编辑。**
+
 1. 在组策略管理编辑器中，转到计算机 **配置** \> **首选项** \> **控制面板设置**。 
+
 1. 右键单击 **计划任务**，单击 **新建**， **然后单击即时任务** (Windows 7) 。 
+
 1. 在打开的任务窗口中，转到常规 **选项卡** 。在" **安全选项"** 下 **，单击"更改用户或组"** 并键入 SYSTEM。 单击 **"检查名称"，** 然后单击"确定"。 NT AUTHORITY\SYSTEM 显示为任务将运行的用户帐户。 
+
 1. Select **Run whether user is logged on or not and** check the Run with highest **privileges** check box. 
+
 1. 转到"操作 **"选项卡**，然后单击"新建 **"。** 确保在 **"操作"** 字段中选择了"启动程序"。 输入以下信息： 
 
-> Action = "Start a program" <br>
-> Program/Script = C:\WINDOWS\system32\WindowsPowerShell\v1.0\powershell.exe <br>
-> 添加参数 (可选) = -ExecutionPolicy Bypass -command "& \\Path\To\Onboard-NonPersistentMachine.ps1"
+    > Action = "Start a program" <br>
+    > Program/Script = C:\WINDOWS\system32\WindowsPowerShell\v1.0\powershell.exe <br>
+    > 添加参数 (可选) = -ExecutionPolicy Bypass -command "& \\Path\To\Onboard-NonPersistentMachine.ps1"
 
-单击 **"确定** "并关闭任何打开的 GPMC 窗口。
+1. 单击 **"确定** "并关闭任何打开的 GPMC 窗口。
 
 #### <a name="scenario-3-onboarding-using-management-tools"></a>*方案 3：使用管理工具载入*
 
 如果你计划使用管理工具管理计算机，可以使用 Microsoft Endpoint Configuration Manager 载入设备。
 
-有关详细信息，请参阅：使用 Configuration Manager 载入 [Windows 10 设备](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/configure-endpoints-sccm) 
+有关详细信息，请参阅使用 Configuration Manager 载入 [Windows 10 设备](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/configure-endpoints-sccm)。 
 
 > [!WARNING]
 > 如果你计划使用攻击面[](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/attack-surface-reduction)减少规则，请注意，不应使用规则"阻止源自[PSExec](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/attack-surface-reduction#block-process-creations-originating-from-psexec-and-wmi-commands)和 WMI 命令的进程创建"，因为它与通过 Microsoft Endpoint Configuration Manager 管理不兼容，因为此规则会阻止 Configuration Manager 客户端用于正常运行的 WMI 命令。 

@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 管理员角色映射到业务功能，并授予在管理中心执行特定任务的权限。 例如，服务管理员可打开 Microsoft 的支持票证。
-ms.openlocfilehash: 8df1b8b46b4b2ec4f8f686f6422851b5f186f2ff
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 3c55619dc1193d7c41f8a52fc027f03f13f3c9ad
+ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50903732"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51759950"
 ---
 # <a name="get-started-with-the-roles-page"></a>角色页面入门
 
@@ -33,7 +33,7 @@ ms.locfileid: "50903732"
 ![显示管理员角色的图](../../media/roles-main-page.png)
 
 > [!TIP]
-> 是否在查找详细的角色说明？ 请查看 Azure [Active Directory 中的](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles) 管理员角色权限和 [关于管理员角色](/office365/admin/add-users/about-admin-roles)。
+> 是否在查找详细的角色说明？ 请查看 Azure [Active Directory 中的](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles) 管理员角色权限和 [关于管理员角色](/microsoft-365/admin/add-users/about-admin-roles)。
 
 ## <a name="about-the-admin-roles-page"></a>关于管理员角色页面
 
@@ -56,23 +56,23 @@ ms.locfileid: "50903732"
 
 ### <a name="exchange-admin"></a>Exchange 管理员
 
-为需要查看和管理用户的电子邮件邮箱、Microsoft 365 组和 Exchange Online 的用户分配 Exchange 管理员角色。 他们还可以打开并管理向 Microsoft 支持部门提出的服务请求。 [了解更多](/office365/admin/add-users/about-exchange-online-admin-role)
+为需要查看和管理用户的电子邮件邮箱、Microsoft 365 组和 Exchange Online 的用户分配 Exchange 管理员角色。 他们还可以打开并管理向 Microsoft 支持部门提出的服务请求。 [了解更多](/microsoft-365/admin/add-users/about-exchange-online-admin-role)
 
 ### <a name="global-admin"></a>全局管理员
 
-为需要全局访问 Microsoft 在线服务中的大多数管理功能和数据的用户分配全局管理员角色。 为太多的用户提供全局访问权限会带来安全风险，我们建议你设置 2 至 4 名全局管理员。 只有全局管理员才能重置每个用户的密码，并添加和管理域。 他们还可以打开并管理向 Microsoft 支持部门提出的服务请求。 注册 Microsoft 联机服务的人将自动成为全局 [管理员。了解更多信息](/office365/admin/add-users/about-admin-roles#roles-available-in-the-microsoft-365-admin-center)
+为需要全局访问 Microsoft 在线服务中的大多数管理功能和数据的用户分配全局管理员角色。 为太多的用户提供全局访问权限会带来安全风险，我们建议你设置 2 至 4 名全局管理员。 只有全局管理员才能重置每个用户的密码，并添加和管理域。 他们还可以打开并管理向 Microsoft 支持部门提出的服务请求。 注册 Microsoft 联机服务的人将自动成为全局 [管理员。了解更多信息](/microsoft-365/admin/add-users/about-admin-roles#roles-available-in-the-microsoft-365-admin-center)
 
 ### <a name="global-reader"></a>全局读取者
 
-将全局读者管理员角色分配给需要查看全局管理员可查看的所有管理中心中的管理员功能和设置的用户。 全局读者管理员角色无法编辑任何设置。 [了解更多](/office365/admin/add-users/about-admin-roles#roles-available-in-the-microsoft-365-admin-center)
+将全局读者管理员角色分配给需要查看全局管理员可查看的所有管理中心中的管理员功能和设置的用户。 全局读者管理员角色无法编辑任何设置。 [了解更多](/microsoft-365/admin/add-users/about-admin-roles#roles-available-in-the-microsoft-365-admin-center)
 
 ### <a name="helpdesk-admin"></a>支持管理员
 
-将支持管理员角色分配给想要重置密码的用户，强制用户注销任何安全问题。 他们还可以打开并管理向 Microsoft 支持部门提出的服务请求。 支持人员管理员只能帮助非管理员用户和分配了这些角色的用户：目录读取者、来宾邀请者、支持人员管理员、消息中心读者和报告阅读器。 [了解更多](/office365/admin/add-users/about-admin-roles#roles-available-in-the-microsoft-365-admin-center)
+将支持管理员角色分配给想要重置密码的用户，强制用户注销任何安全问题。 他们还可以打开并管理向 Microsoft 支持部门提出的服务请求。 支持人员管理员只能帮助非管理员用户和分配了这些角色的用户：目录读取者、来宾邀请者、支持人员管理员、消息中心读者和报告阅读器。 [了解更多](/microsoft-365/admin/add-users/about-admin-roles#roles-available-in-the-microsoft-365-admin-center)
 
 ### <a name="service-admin"></a>服务管理员
 
-为需要为 Azure、Microsoft 365 和 Office 365 服务创建服务请求的用户分配服务管理员角色。 [了解更多](/office365/admin/add-users/about-admin-roles#roles-available-in-the-microsoft-365-admin-center)
+为需要为 Azure、Microsoft 365 和 Office 365 服务创建服务请求的用户分配服务管理员角色。 [了解更多](/microsoft-365/admin/add-users/about-admin-roles#roles-available-in-the-microsoft-365-admin-center)
 
 ### <a name="sharepoint-admin"></a>SharePoint 管理员
 
@@ -84,9 +84,7 @@ ms.locfileid: "50903732"
 
 ### <a name="user-admin"></a>用户管理员
 
-向要访问和管理用户密码重置和管理用户和组的用户分配用户管理员角色。 他们还可以打开并管理向 Microsoft 支持部门提出的服务请求。 [了解更多](/office365/admin/add-users/about-admin-roles#roles-available-in-the-microsoft-365-admin-center)
-
-::: moniker range="o365-worldwide"
+向要访问和管理用户密码重置和管理用户和组的用户分配用户管理员角色。 他们还可以打开并管理向 Microsoft 支持部门提出的服务请求。 [了解更多](/microsoft-365/admin/add-users/about-admin-roles#roles-available-in-the-microsoft-365-admin-center)
 
 ## <a name="compare-roles"></a>比较角色
 
@@ -97,8 +95,6 @@ ms.locfileid: "50903732"
 - 选择最多 3 个角色，然后选择" **比较** 角色"以查看每个角色具有的权限。
 
 ![显示管理员角色比较的图](../../media/compare-roles-list.png)
-
-::: moniker-end
 
 ## <a name="related-topics"></a>相关主题
 

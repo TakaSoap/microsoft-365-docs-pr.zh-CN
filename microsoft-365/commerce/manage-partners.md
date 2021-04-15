@@ -15,12 +15,12 @@ ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 description: 了解如何与 Microsoft 认证的解决方案提供商 (合作伙伴) 购买和管理组织或学校的产品和服务。
-ms.openlocfilehash: a0c70f229ff11132beccf118f4158ab2880a8aa6
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: f4c270e179a3d52616f6d7efb049beac4d1a8e03
+ms.sourcegitcommit: 07dea2aa98daf0c4086f8590375167830027c802
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51579730"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51749850"
 ---
 # <a name="manage-partner-relationships"></a>管理合作伙伴关系
 
@@ -32,7 +32,7 @@ ms.locfileid: "51579730"
 
 ## <a name="before-you-begin"></a>准备工作
 
-你必须是全局管理员或帐单管理员才能执行这些步骤。 有关详细信息，请参阅[关于管理员角色](../admin/add-users/about-admin-roles.md)。
+你必须是全局管理员或帐单管理员才能执行这些步骤。 有关详细信息，请参阅 [关于管理员角色](../admin/add-users/about-admin-roles.md)。
 
 ## <a name="what-can-a-partner-do-for-my-organization-or-school"></a>合作伙伴可以为我的组织或学校做什么？
 
@@ -85,7 +85,7 @@ ms.locfileid: "51579730"
 
 你随时都可以从合作伙伴中删除管理员角色。 删除管理员角色不会删除合作伙伴关系。 他们仍然可以以不同的容量（如经销商）与你们合作。 如果你决定不想再与合作伙伴合作，请联系你的合作伙伴结束关系。
 
-1. 在管理中心，转到"计费  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2074649" target="_blank">合作伙伴关系"</a>页面。
+1. 在管理中心，转到"设置  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2074649" target="_blank">""合作伙伴关系"</a>页面。
 2. 在 **"合作伙伴关系** "页上，选择包含要删除的合作伙伴名称的行。
 3. 选择包含合作伙伴名称的行。
 4. 在合作伙伴页面上，选择"**删除角色"。**

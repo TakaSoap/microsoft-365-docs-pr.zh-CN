@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 ms.assetid: d5155593-3bac-4d8d-9d8b-f4513a81479e
 description: 了解如何删除用户帐户。 决定使用用户电子邮件和 OneDrive 内容应执行哪些操作。 并决定是保留产品许可证还是停止付费。
-ms.openlocfilehash: 5c647d353f807f20a35c889ba1d6f7715343c5cb
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 0069577b83c318fa57eaceddccc93b5832e634e0
+ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50904440"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51755548"
 ---
 # <a name="delete-a-user-from-your-organization"></a>从组织删除用户
   
@@ -47,7 +47,7 @@ ms.locfileid: "50904440"
 
 开始之前，考虑想要使用用户的电子邮件和 OneDrive 内容，以及是想要保留许可证还是停止支付许可证费用。
   
-|Item | 说明 |
+|项目 | 说明 |
 |:-----|:-----|
 |产品许可证  <br/> |你可以从用户中删除许可证，并从订阅中删除该许可证，以停止支付该许可证费用。 如果选择此选项，许可证将自动从订阅中删除。  <br/><br/> **如果通过合作伙伴或** 批量许可购买了许可证，则不能删除该许可证。 如果你为年度计划付费，或正在计费周期中，那么在承诺完成之前，你将无法从订阅中删除许可证。  <br/> |
 |OneDrive 内容  <br/> |如果用户将文件保存到 OneDrive，你可以向其他用户授予对这些文件的访问权限。  <br/><br/> 你需要在为 OneDrive 文件设置的保留期内移动想要保留的文件。 **默认情况下，保留期为 30 天。** 如果在删除用户后没有在保留期内移动文件，OneDrive 内容将永久删除。 若要增加保留已删除帐户的 OneDrive 文件的天数，请参阅为已删除的用户设置 [OneDrive 保留期](/onedrive/set-retention)。  <br/><br/> **重要说明！** 如果已删除的用户使用个人计算机从 SharePoint 和 OneDrive 下载文件，则你无法擦除存储在其计算机中的文件。 他们将继续有权访问从 OneDrive 同步的任何文件。           |
@@ -59,15 +59,21 @@ ms.locfileid: "50904440"
 由于指导体验将完成删除用户的步骤，下面介绍如何开始操作。
 
 ::: moniker range="o365-worldwide"
+
 1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。
+
 ::: moniker-end
 
 ::: moniker range="o365-germany"
-1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">活动用户</a>”页面。
+
+ 1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">活动用户</a>”页面。
+
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
-1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">活动用户</a>”页面。
+
+ 1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">活动用户</a>”页面。
+
 ::: moniker-end
 
 2. 选择要删除的用户，然后选择"删除 **用户"。**

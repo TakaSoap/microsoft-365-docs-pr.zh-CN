@@ -15,12 +15,14 @@ ms.date: 07/23/2020
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 912136a7229ec55b7f1644aebc946f63acb68040
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+audience: ITPro
+ms.topic: how-to
+ms.openlocfilehash: 0fd1e6b2eec1be722af58e0753e158c050b56c6b
+ms.sourcegitcommit: 07dea2aa98daf0c4086f8590375167830027c802
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/13/2021
-ms.locfileid: "51689993"
+ms.locfileid: "51749870"
 ---
 # <a name="use-powershell-cmdlets-to-configure-and-manage-microsoft-defender-antivirus"></a>使用 PowerShell cmdlet 配置和管理 Microsoft Defender 防病毒
 
@@ -67,4 +69,4 @@ Get-Help <cmdlet> -Online
 
 - [有关管理和配置工具的参考主题](configuration-management-reference-microsoft-defender-antivirus.md)
 - [Windows 10 中的 Microsoft Defender 防病毒](microsoft-defender-antivirus-in-windows-10.md)
-- [Microsoft Defender 防病毒 Cmdlet](/powershell/module/defender/?view=win10-ps)
+- [Microsoft Defender 防病毒 Cmdlet](/powershell/module/defender)

@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: a6f7f9ad-e3f5-43de-ade5-e5a0d7531604
 description: 了解如何在员工离开组织时保留员工的文件和电子邮件。
-ms.openlocfilehash: 38cc44bbe602f3c8c38ca54391d0967fbafbfcf7
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 17911e4a4551bba07d2c2ad034941bba737dcc1d
+ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50906308"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51755602"
 ---
 # <a name="get-access-to-and-back-up-a-former-users-data"></a>访问并备份以往用户的数据的访问
 
@@ -44,8 +44,22 @@ ms.locfileid: "50906308"
 
 ::: moniker range="o365-worldwide"
 
-1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。  
-    
+1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。
+
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+ 1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">活动用户</a>”页面。
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+ 1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">活动用户</a>”页面。
+
+::: moniker-end
+
 2. 选择用户。
 
 3. 在右侧窗格中，选择 **"OneDrive"。** 在 **"获取对文件的访问权限"下**，**选择"创建指向文件的链接"。**
@@ -56,69 +70,27 @@ ms.locfileid: "50906308"
 > 一次可以移动或复制多达 500 MB 的文件和文件夹。<br/>
 > 在移动或复制具有版本历史记录的文档时，只会移动最新版本。  
 
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">活动用户</a>”页面。  
-
-2. 选择用户。
-
-3. 在右侧窗格中，展开 **"OneDrive 设置"，** 然后在 **"Access"** 旁边，选择 **"Access 文件"。**
-
-4. 选择链接以打开文件位置。 将文件下载到计算机，或选择"移动到"或"复制"以将其移动或复制到你自己的 OneDrive 或共享库。 
-
-> [!NOTE]
-> 一次可以移动或复制多达 500 MB 的文件和文件夹。<br/>
-> 在移动或复制具有版本历史记录的文档时，只会移动最新版本。  
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">活动用户</a>”页面。 
-
-2. 选择用户。
-
-3. 在右侧窗格中，展开 **"OneDrive 设置"，** 然后在 **"Access"** 旁边，选择 **"Access 文件"。**
-
-4. 选择链接以打开文件位置。 将文件下载到计算机，或选择"移动到"或"复制"以将其移动或复制到你自己的 OneDrive 或共享库。  
-
-> [!NOTE]
-> 一次可以移动或复制多达 500 MB 的文件和文件夹。<br/>
-> 在移动或复制具有版本历史记录的文档时，只会移动最新版本。  
-
-::: moniker-end
-    
-
-
 ## <a name="revoke-admin-access-to-a-users-onedrive"></a>撤销管理员对用户的 OneDrive 的访问权限
 
 作为全局管理员，你可以将自己访问用户的 OneDrive 中的内容，但你可能想要在不再需要它时删除你的访问权限。 
 
-::: moniker range="o365-worldwide"
+ ::: moniker range="o365-worldwide"
 
-1. 以全局 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">管理员或</a> SharePoint 管理员登录管理中心。 
-
-    如果您收到一条消息，指出您无权访问管理中心，则表明您组织中没有管理员权限。
+1. 转到位于 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> 的管理中心。
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. 以全局 <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">管理员或</a> SharePoint 管理员登录管理中心。
-
-    如果您收到一条消息，指出您无权访问管理中心，则表明您组织中没有管理员权限。
+1. 转到位于 <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">https://portal.office.de</a> 的管理中心。
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. 以全局 <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">管理员或</a> SharePoint 管理员登录管理中心。
+1. 转到位于 <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">https://portal.partner.microsoftonline.cn</a> 的管理中心。
 
-    如果您收到一条消息，指出您无权访问管理中心，则表明您组织中没有管理员权限。
-
-::: moniker-end
+::: moniker-end 
 
 2. 在左窗格中，选择"**管理中心** \> **""SharePoint"。** （你可能需要选择“**全部显示**”以查看管理中心列表）。
 

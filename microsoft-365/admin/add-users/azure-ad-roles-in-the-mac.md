@@ -16,12 +16,12 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 description: 在 Microsoft 365 管理中心中管理这些 Azure 管理员角色。
-ms.openlocfilehash: b07174763384150a7ae8cda6709f5d0ec5cb40ec
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 72835a0f9fdf9a15fc3ffa07c0fab6ca6f0260cb
+ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50904488"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51759938"
 ---
 # <a name="azure-active-directory-roles-in-the-microsoft-365-admin-center"></a>Microsoft 365 管理中心中的 Azure Active Directory 角色
 
@@ -29,15 +29,11 @@ Microsoft 365 管理中心可让你管理 30 多个 Azure AD 角色。 然而，
 
 分配有管理员角色的用户在组织所订阅的云服务中拥有相同的访问权限级别，不管该角色是通过 Office 365 管理中心、Azure 门户还是适用于 Windows PowerShell 的 Azure AD 模块分配的。
 
-::: moniker range="o365-worldwide"
-
 在 Microsoft 365 管理中心，你可以转到“**角色**”，然后选择任何角色以打开其详细信息窗格。 选择“**权限**”选项卡，以查看分配有该角色的管理员有权执行的操作的详细列表。 选择“**已分配**”或“**已分配管理员**”选项卡，以向角色添加用户。 有关在 Microsoft 365 管理中心分配角色的详细信息，请参阅[分配管理员角色](assign-admin-roles.md)。
-
-::: moniker-end
 
 ## <a name="all-azure-ad-roles"></a>所有 Azure AD 角色
 
-以下是 Microsoft 365 管理中心提供的所有管理员角色的列表。 正在查找 Microsoft 365 管理员角色的详细角色说明？ 查看[关于管理员角色](./about-admin-roles.md?view=o365-worldwide)。
+以下是 Microsoft 365 管理中心提供的所有管理员角色的列表。 正在查找 Microsoft 365 管理员角色的详细角色说明？ 查看[关于管理员角色](./about-admin-roles.md)。
 
 |管理员角色     |说明  |
 |---------|---------|

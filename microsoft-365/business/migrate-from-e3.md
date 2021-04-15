@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 - MET150
 description: 了解如何从 Office 365 E3 将业务移动到 Microsoft 365 商业高级版。
-ms.openlocfilehash: ffb82fa40f05383260ac1b97ed0bdf5f2f30c1df
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: f2b7962918186f4a1063c5a66596135c2972ec71
+ms.sourcegitcommit: 07dea2aa98daf0c4086f8590375167830027c802
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51578319"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51749992"
 ---
 # <a name="migrating-from-office-365-e3-to-microsoft-365-business-premium"></a>从 Office 365 E3 迁移到 Microsoft 365 商业高级版
 
@@ -49,7 +49,7 @@ Microsoft 365 商业高级版具有小型企业所需的一切，将一流的基
 | OneDrive for Business    | 每个用户 1 TB 存储限制    | 无限制 | 
 | Yammer、SharePoint Online、Planner、Stream    | ![包含在 Microsoft 365 商业高级版中](../media/check-mark.png)    | ![随 Office 365 E3 一起提供](../media/check-mark.png) | 
 | StaffHub    | ![包含在 Microsoft 365 商业高级版中](../media/check-mark.png)    | ![随 Office 365 E3 一起提供](../media/check-mark.png) | 
-| Outlook Customer Manager    | ![包含在 Microsoft 365 商业高级版中](../media/check-mark.png)    | | 
+| MileIQ    | ![包含在 Microsoft 365 商业高级版中](../media/check-mark.png)    | | 
 | **威胁防护**        | | | 
 | Defender for Office 365 计划 1 | ![包含在 Microsoft 365 商业高级版中](../media/check-mark.png)    | 不包含，但可添加到 | 
 | **身份管理**        | | | 
@@ -60,7 +60,7 @@ Microsoft 365 商业高级版具有小型企业所需的一切，将一流的基
 | 从 Win 7/8.1 专业版许可证升级到 Windows 10 专业版权限|     ![包含在 Microsoft 365 商业高级版中](../media/check-mark.png)    || 
 | **信息保护**        | | |
 |Office 365 数据丢失防护|    ![包含在 Microsoft 365 商业高级版中](../media/check-mark.png)|![随 Office 365 E3 一起提供](../media/check-mark.png)|
-|Azure 信息保护计划 1，Bitlocker 强制|![包含在 Microsoft 365 商业高级版中](../media/check-mark.png)||
+|Azure 信息保护计划 1，BitLocker 强制|![包含在 Microsoft 365 商业高级版中](../media/check-mark.png)||
 |Azure 信息保护计划 1，敏感度标签|![包含在 Microsoft 365 商业高级版中](../media/check-mark.png)||
 |**客户端访问许可证 (CAL 权限)**|||
 |Enterprise CAL Suite (Exchange、SharePoint、Skype) ||![随 Office 365 E3 一起提供](../media/check-mark.png)|

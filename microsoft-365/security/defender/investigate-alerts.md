@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 989574a860bea798c48e077f5633c31eb857e85e
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: 601a8674327c424592c65014793599dc19b2bcd3
+ms.sourcegitcommit: 07dea2aa98daf0c4086f8590375167830027c802
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51500933"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51759428"
 ---
 # <a name="investigate-alerts-in-microsoft-365-defender"></a>调查 Microsoft 365 Defender 中的警报
 
@@ -35,8 +35,6 @@ ms.locfileid: "51500933"
 
 **适用于：**
 - Microsoft 365 Defender
-
-[!INCLUDE [Prerelease](../includes/prerelease.md)]
 
 警报是所有事件的基础，指示环境中出现恶意或可疑事件。 警报通常是更广泛的攻击的一部分，并提供有关事件的线索片段。
 
@@ -99,7 +97,7 @@ ms.locfileid: "51500933"
 
 - Severity
 - 状态
-- Category
+- 类别
 - 检测源
 - Policy
 - 影响的资产

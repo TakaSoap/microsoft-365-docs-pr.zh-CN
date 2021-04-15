@@ -22,12 +22,12 @@ ms.collection:
 ms.topic: how-to
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs, yonghree, jcedola
 ms.custom: FPFN
-ms.openlocfilehash: ddd10e6164a8fae5d0d3d60c04ca854ef9771dba
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: f2615cf5ec49c9df27472f04c367f30511e9c0cc
+ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51688737"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51759866"
 ---
 # <a name="address-false-positivesnegatives-in-microsoft-defender-for-endpoint"></a>解决 Microsoft Defender for终结点的误报/负数
 
@@ -125,9 +125,11 @@ ms.locfileid: "51688737"
 其他操作（如启动防病毒扫描或收集调查包）手动发生，或者通过 [实时响应发生](live-response.md)。 无法撤消通过实时响应采取的操作。
 
 查看警报后，下一步是 [查看修正操作](manage-auto-investigation.md)。 如果由于误报而进行了任何操作，您可以撤消大多数种类的修正操作。 具体来说，您可以：
-- [一次撤消一个操作](#undo-an-action);
-- [一次撤消多个操作](#undo-multiple-actions-at-one-time);和 
-- [跨多个设备从隔离中删除文件](#remove-a-file-from-quarantine-across-multiple-devices)。 
+
+- [从操作中心还原隔离文件](#restore-a-quarantined-file-from-the-action-center)
+- [一次撤消多个操作](#undo-multiple-actions-at-one-time)
+- [跨多个设备从隔离中删除文件](#remove-a-file-from-quarantine-across-multiple-devices)。  和 
+- [从隔离区还原文件](#restore-file-from-quarantine)
 
 检查和撤消由于误报而采取的操作后，请继续查看 [或定义排除项](#part-3-review-or-define-exclusions)。
 
@@ -139,7 +141,7 @@ ms.locfileid: "51688737"
 
 3. 选择一个项目以查看有关已采取的修正操作的详细信息。
 
-### <a name="undo-an-action"></a>撤消操作
+### <a name="restore-a-quarantined-file-from-the-action-center"></a>从操作中心还原隔离文件
 
 1. 转到操作中心 [https://securitycenter.windows.com/action-center](https://securitycenter.windows.com/action-center) () 并登录。
 
@@ -164,7 +166,33 @@ ms.locfileid: "51688737"
 
 2. 在" **历史记录"** 选项卡上，选择操作类型为"隔离 **文件"的文件**。
 
+3. 在屏幕右侧窗格中，选择"应用到此文件的 **X** 更多实例"，然后选择"撤消 **"。**
+
+### <a name="restore-file-from-quarantine"></a>从隔离区还原文件
+
+如果在调查后确定文件是干净的，你可以回滚并从隔离区中删除文件。 在隔离文件的每台设备上运行以下命令。
+
+1. 在设备上打开提升的命令行提示符：
+
+   1. 转到“**开始**”并键入“_cmd_”。
+
+   1. 右键单击命令 **提示符** ，然后选择 **以管理员角色运行**。
+
+2. 输入以下命令，然后按 **Enter：**
+
+    ```console
+    "ProgramFiles%\Windows Defender\MpCmdRun.exe" –Restore –Name EUS:Win32/CustomEnterpriseBlock –All
+    ```
+
+    > [!NOTE]
+    > 在某些情况下 **，ThreatName 可能** 显示为： `EUS:Win32/
+CustomEnterpriseBlock!cl` 。 Defender for Endpoint 将还原最近 30 天内在此设备上隔离的所有自定义阻止文件。
+
+    > [!IMPORTANT]
+    > 作为潜在网络威胁隔离的文件可能无法恢复。 如果用户尝试在隔离后还原文件，则该文件可能无法访问。 这是因为系统不再具有访问该文件的网络凭据。 通常，这是临时登录到系统或共享文件夹且访问令牌过期的结果。
+
 3. 在屏幕右侧窗格中，选择"应用到此文件的 **X** 更多实例"，然后选择"撤消 **"。** 
+
 
 ## <a name="part-3-review-or-define-exclusions"></a>第 3 部分：查看或定义排除项
 

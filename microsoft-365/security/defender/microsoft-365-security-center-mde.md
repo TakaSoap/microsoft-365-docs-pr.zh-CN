@@ -18,18 +18,16 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
-ms.openlocfilehash: 5f90e9f666e2befcfcee5ec424327228b2d1ad11
-ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
+ms.openlocfilehash: edf0baa369142f6a0aafc86794a47ab0be6e345a
+ms.sourcegitcommit: 07dea2aa98daf0c4086f8590375167830027c802
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51569879"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51760046"
 ---
 # <a name="microsoft-defender-for-endpoint-in-the-microsoft-365-security-center"></a>Microsoft 365 安全中心中的 Microsoft Defender for Endpoint
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
-
-[!INCLUDE [Prerelease](../includes/prerelease.md)]
 
 **适用于：**
 
@@ -92,7 +90,7 @@ Microsoft 365 安全中心中的 Microsoft Defender for Endpoint 支持向托管
 
 |**区域**  |**更改说明**  |
 |---------|---------|
-| 报告  | 请参阅终结点和电子邮件报告&协作，包括威胁防护、设备运行状况和合规性以及易受攻击的设备。 |
+| 报表  | 请参阅终结点和电子邮件报告&协作，包括威胁防护、设备运行状况和合规性以及易受攻击的设备。 |
 | 健康  |  当前链接到 Microsoft [365](https://admin.microsoft.com/)管理中心中的"服务运行状况"页面。 |
 | 设置 |  管理 Microsoft 365 安全中心、Microsoft 365 Defender、终结点、电子邮件&协作、标识和设备发现的设置。   |
 

@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 72d368cd92739e191dcb292000b8429a472aa981
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: 2d2bf18c6cacb377e710f34b74ec8f83bb77d3b1
+ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51498437"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51760059"
 ---
 # <a name="manage-incidents-in-microsoft-365-defender"></a>在 Microsoft 365 Defender 中管理事件
 
@@ -37,49 +37,63 @@ ms.locfileid: "51498437"
 **适用于：**
 - Microsoft 365 Defender
 
+事件管理对于确保包含和解决威胁至关重要。
 
+在快速启动 Microsoft  365 安全中心&事件>事件或事件管理事件 (security.microsoft.com) 。 [](https://security.microsoft.com) 下面是一个示例。
 
-管理事件对于确保控制和解决威胁至关重要。 在 Microsoft 365 Defender 中，你有权访问管理设备、用户和邮箱上的事件。 
+:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents.png" alt-text="事件队列示例":::
 
+以下是管理事件的方法：
 
-从“事件队列”中选择事件后，就可以管理事件了。 
+- 更改事件名称
+- 添加事件标记。
+- 将事件分配给用户帐户
+- 解决它们 
+- 设置其分类和确定
+- 添加注释。
 
-可以编辑事件的名称、解决事件、设置其分类和确定。 还可以将事件分配给自己，添加事件标记和备注。
+可以从事件的"管理事件 **"窗格中** 管理事件。 下面是一个示例。
 
-如果在调查时希望将警报从一个事件转移到另一个事件，还可以从“警报”选项卡执行相关操作，从而创建一个包含所有相关警报的较大或较小的事件。
+:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents-manage.png" alt-text="事件的&quot;管理事件&quot;窗格示例":::
 
-## <a name="edit-incident-name"></a>编辑事件名称
-根据警报属性（如受影响的终结点数、受影响的用户数、检测源或类别）自动为事件分配名称。 这使您可以快速了解事件的范围。
+可以从以下位置的"管理 **事件"链接显示** 此窗格：
 
-例如： *多个源报告的多个终结点上的多阶段事件。*
+- 事件队列中事件的属性窗格。
+- **事件的** 摘要页。
 
-可以修改事件名称，以便更好地与首选命名约定保持一致。
+在调查时，若要将警报从一个事件移动到另一个事件，也可以从"警报"选项卡进行移动，从而创建包含所有相关警报的较大或较小的事件。
+
+## <a name="edit-the-incident-name"></a>编辑事件名称
+
+根据警报属性（如受影响的终结点数、受影响的用户数、检测源或类别）自动为事件分配名称。 这使您可以快速了解事件的范围。 例如： *多个源报告的多个终结点上的多阶段事件。*
+
+可以从"管理事件"窗格上的" **事件名称** "字段中 **编辑事件** 名称。
 
 > [!NOTE]
 > 推出自动事件命名功能之前已存在的事件将保留其名称。
 
+## <a name="add-incident-tags"></a>添加事件标记
 
+可以将自定义标记添加到事件，例如，标记一组具有共同特征的事件。 稍后可以筛选包含特定标记的所有事件的事件队列。
+
+开始键入时，您可以选择从所选标记列表进行选择。
 
 ## <a name="assign-incidents"></a>分配事件
-如果尚未分配事件，可以选择“分配给我”将事件分配给自己。 执行此操作时，假定所有权不仅限于事件，而且还针对与之关联的所有警报。
 
-## <a name="set-status-and-classification"></a>设置状态和分类
-### <a name="incident-status"></a>事件状态
-可通过在调查期间更改事件的状态来为事件分类（例如“活动”或“已解决”）。 这可帮助你整理和管理团队对事件的响应方式。
+如果尚未分配事件，可以选择"分配给 **"并指定** 用户帐户。 这样做将分配事件的所有权以及与其关联的所有警报。
 
-例如，SOC 分析人员可以查看当天的紧急“活动”事件，并决定将其分配给自己进行调查。
+## <a name="resolve-incident"></a>解决事件
 
-或者，如果事件已得到修正，SOC 分析人员可能将该事件设置为“已解决”。 解决事件后，系统将自动关闭事件中仍处于打开状态的所有警报。 
+如果事件已修复，请选择"解决 **事件** "以将切换开关向右移动。 请注意，解决事件还会解决与事件相关的所有链接和活动警报。
 
-### <a name="classification-and-determination"></a>分类和确定
-可以选择不设置分类，也可以决定指定事件为真实/误报事件。 这样做有助于团队查看模式并从中了解相关信息。 
+未解决的事件显示为"活动 **"。**
+
+## <a name="set-the-classification-and-determination"></a>设置分类和确定
+
+事件分类是真正的警报还是假警报，从"分类"字段 **进行** 配置。 
+
+如果这是真正的警报，则还应使用"确定"字段指定 **威胁的类型。** 指定威胁类型可帮助安全团队查看威胁模式，并采取行动保护组织抵御威胁模式。 
 
 ## <a name="add-comments"></a>添加备注
-可以添加备注并查看有关事件的历史事件，以便了解以前对其所做的更改。
 
-每当对警报进行更改或添加备注时，都会在“备注”和“历史记录”部分进行记录。
-
-添加的备注会立即显示在窗格中。
-
-## <a name="add-incident-tags"></a>添加事件标记
-可以将自定义标记添加到事件，例如，标记一组具有共同特征的事件。 以后可以筛选包含特定标记的所有事件的事件队列。
+可以使用"注释"字段向事件添加 **多个** 注释。 每个注释将添加到事件的历史事件中。 You can see the comments and history of an incident from the **Comments and history** link on the **Summary** page.

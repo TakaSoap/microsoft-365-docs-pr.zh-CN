@@ -9,7 +9,7 @@
 ### [Microsoft Defender 安全中心概述](use.md)
 ### [门户概述](portal-overview.md)
 ### [面向美国政府客户的Microsoft Defender for Endpoint](gov.md)
-### [适用于非 Windows 平台的 Microsoft Defender for Endpoint](non-windows.md)
+### [非 Windows 平台上的 Microsoft Defender for Endpoint](non-windows.md)
 
 ## [评估功能](evaluation-lab.md)
 
@@ -85,6 +85,65 @@
 ##### [自定义减少攻击面规则](customize-attack-surface-reduction.md)
 ##### [查看攻击面减少规则](event-views.md)
 
+### 下一代保护
+#### [Microsoft Defender 防病毒软件概述](microsoft-defender-antivirus-in-windows-10.md)
+#### [Windows Server 上的 Microsoft Defender 防病毒软件](microsoft-defender-antivirus-on-windows-server.md)
+#### [更好地结合：Microsoft Defender 防病毒软件和 Microsoft Defender for Endpoint](why-use-microsoft-defender-antivirus.md)
+#### [一起更得心防万一：Microsoft Defender 防病毒软件和 Office 365](office-365-microsoft-defender-antivirus.md)
+#### [云传递保护和 Microsoft Defender 防病毒软件](cloud-protection-microsoft-defender-antivirus.md)
+#### [评估 Microsoft Defender 防病毒软件](evaluate-microsoft-defender-antivirus.md)
+#### [配置 Microsoft Defender 防病毒软件功能](configure-microsoft-defender-antivirus-features.md)
+##### [打开云传递保护](enable-cloud-protection-microsoft-defender-antivirus.md)
+##### [指定云传递的保护级别](specify-cloud-protection-level-microsoft-defender-antivirus.md)
+##### [配置和验证 Microsoft Defender 防病毒软件网络连接](configure-network-connections-microsoft-defender-antivirus.md)
+##### [使用篡改保护保护安全设置](prevent-changes-to-security-settings-with-tamper-protection.md)
+##### [在首次看到时打开阻止](configure-block-at-first-sight-microsoft-defender-antivirus.md)
+##### [配置云块超时时间段](configure-cloud-block-timeout-period-microsoft-defender-antivirus.md)
+##### [配置方案、高要求和实时保护](configure-protection-features-microsoft-defender-antivirus.md)
+##### [检测并阻止可能不需要的应用程序](detect-block-potentially-unwanted-apps-microsoft-defender-antivirus.md)
+##### [在组策略中启用和配置 Microsoft Defender 防病毒软件始终启用保护](configure-real-time-protection-microsoft-defender-antivirus.md)
+##### [为 Microsoft Defender 防病毒检测配置修正](configure-remediation-microsoft-defender-antivirus.md)
+##### [配置计划的快速或完整的 Microsoft Defender 防病毒软件扫描](scheduled-catch-up-scans-microsoft-defender-antivirus.md)
+##### [在 Microsoft Defender 防病毒程序内使用有限的定期扫描](limited-periodic-scanning-microsoft-defender-antivirus.md)
+#### [与其他安全产品的兼容性](microsoft-defender-antivirus-compatibility.md)
+
+#### [获取防病毒和反恶意软件更新](manage-updates-baselines-microsoft-defender-antivirus.md)
+##### [管理 Microsoft Defender 防病毒软件保护更新源](manage-protection-updates-microsoft-defender-antivirus.md)
+##### [管理应下载和应用保护更新的时间日程安排](manage-protection-update-schedule-microsoft-defender-antivirus.md)
+##### [管理 Microsoft Defender 防病毒更新并扫描过期的终结点](manage-outdated-endpoints-microsoft-defender-antivirus.md)
+##### [管理基于事件的强制更新](manage-event-based-updates-microsoft-defender-antivirus.md)
+##### [管理移动设备和虚拟机 （VM） 的更新](manage-updates-mobile-devices-vms-microsoft-defender-antivirus.md)
+
+#### [为组织管理 Microsoft Defender 防病毒软件](configuration-management-reference-microsoft-defender-antivirus.md)
+##### [使用 Microsoft Endpoint Manager 管理 Microsoft Defender 防病毒软件](use-intune-config-manager-microsoft-defender-antivirus.md)
+##### [使用组策略设置管理 Microsoft Defender 防病毒软件](use-group-policy-microsoft-defender-antivirus.md)
+##### [使用 PowerShell cmdlet 管理 Microsoft Defender 防病毒软件](use-powershell-cmdlets-microsoft-defender-antivirus.md)
+##### [使用 Windows Management所 （WMI） 管理 Microsoft Defender 防病毒软件](use-wmi-microsoft-defender-antivirus.md)
+##### [使用 mpcmdrun.exe 工具管理 Microsoft Defender 防病毒软件](command-line-arguments-microsoft-defender-antivirus.md)
+
+#### [部署并报告 Microsoft Defender 防病毒软件](deploy-manage-report-microsoft-defender-antivirus.md)
+##### [部署和启用 Microsoft Defender 防病毒软件](deploy-microsoft-defender-antivirus.md)
+##### [虚拟桌面基础结构 （VDI） 环境中 Microsoft Defender 防病毒软件的部署指南](deployment-vdi-microsoft-defender-antivirus.md)
+##### [关于 Microsoft Defender 防病毒软件的报告](report-monitor-microsoft-defender-antivirus.md)
+
+#### [扫描和修正](review-scan-results-microsoft-defender-antivirus.md)
+##### [配置并运行按需 Microsoft Defender 防病毒软件扫描](run-scan-microsoft-defender-antivirus.md)
+##### [运行并查看 Microsoft Defender 脱机扫描的结果](microsoft-defender-offline.md)
+##### [配置 Microsoft Defender 防病毒软件扫描选项](configure-advanced-scan-types-microsoft-defender-antivirus.md)
+##### [在 Microsoft Defender 防病毒软件中还原隔离的文件](restore-quarantined-files-microsoft-defender-antivirus.md)
+
+#### [Microsoft Defender 防病毒软件排除](configure-exclusions-microsoft-defender-antivirus.md)
+##### [基于文件扩展名和文件夹位置的排除](configure-extension-file-exclusions-microsoft-defender-antivirus.md)
+##### [由进程打开的文件的排除](configure-process-opened-file-exclusions-microsoft-defender-antivirus.md)
+##### [Windows Server 的排除](configure-server-exclusions-microsoft-defender-antivirus.md)
+##### [定义排除时要避免的常见错误](common-exclusion-mistakes-microsoft-defender-antivirus.md)
+
+#### Microsoft Defender 防病毒软件疑难解答
+##### [解决更新合规性中的 Microsoft Defender 防病毒软件报告问题](troubleshoot-reporting.md)
+##### [查看事件日志和错误代码，解决 Microsoft Defender 防病毒软件问题](troubleshoot-microsoft-defender-antivirus.md)
+##### [从第三方解决方案迁移时解决 Microsoft Defender 防病毒软件问题](troubleshoot-microsoft-defender-antivirus-when-migrating.md)
+
+
 #### [基于硬件的隔离]()
 ##### [Windows 10 中基于硬件的隔离](overview-hardware-based-isolation.md)
 
@@ -115,16 +174,23 @@
 ##### [启用受控文件夹访问](enable-controlled-folders.md)
 ##### [自定义受控文件夹访问](customize-controlled-folders.md)
 
+
+### [设备发现]()
+#### [设备发现概述](device-discovery.md)
+#### [配置设备发现](configure-device-discovery.md)
+#### [设备发现常见问题](device-discovery-faq.md)
+
+
 ### [网络设备](network-devices.md)
 
-### [适用于 Mac 的终结点的 Microsoft Defender]()
-#### [Mac 版 Microsoft Defender for Endpoint 概述](microsoft-defender-endpoint-mac.md)
+### [macOS 上的 Microsoft Defender for Endpoint]()
+#### [macOS 上的 Microsoft Defender for Endpoint 概述](microsoft-defender-endpoint-mac.md)
 #### [新增功能](mac-whatsnew.md)
 
 #### [部署]()
 ##### [基于 Microsoft Intune 的部署](mac-install-with-intune.md)
 ##### [基于 JAMF 专业版的部署]()
-###### [使用 Jamf Pro 部署 Microsoft Defender for Endpoint for macOS](mac-install-with-jamf.md)
+###### [使用 Jamf Pro 在 macOS 上部署 Microsoft Defender for Endpoint](mac-install-with-jamf.md)
 ###### [登录 Jamf Pro](mac-install-jamfpro-login.md)
 ###### [设置设备组](mac-jamfpro-device-groups.md)
 ###### [设置策略](mac-jamfpro-policies.md)
@@ -154,18 +220,18 @@
 #### [隐私](mac-privacy.md)
 #### [资源](mac-resources.md)
 
-### [Microsoft Defender for Endpoint for iOS]()
-#### [Microsoft Defender for Endpoint for iOS 概述](microsoft-defender-endpoint-ios.md)
+### [iOS 上的 Microsoft Defender for Endpoint]()
+#### [iOS 上的 Microsoft Defender for Endpoint 概述](microsoft-defender-endpoint-ios.md)
 
 #### [部署]()
-##### [通过 Intune 部署 Microsoft Defender for Endpoint for iOS ](ios-install.md)
+##### [通过 Intune 在 iOS 上部署 Microsoft Defender for Endpoint](ios-install.md)
 
 #### [配置]()
 ##### [配置 iOS 功能](ios-configure-features.md)
 #### [隐私](ios-privacy.md)
 
 
-### [Microsoft Defender for Endpoint for Linux]()
+### [Microsoft Defender for Endpoint on Linux]()
 #### [Microsoft Defender for Endpoint for Linux 概述](microsoft-defender-endpoint-linux.md)
 #### [新增功能](linux-whatsnew.md)
 #### [部署]()
@@ -180,7 +246,7 @@
 ##### [静态代理配置](linux-static-proxy-configuration.md)
 ##### [设置首选项](linux-preferences.md)
 ##### [检测并阻止可能不需要的应用程序](linux-pua.md)
-##### [使用 Microsoft Defender for Endpoint for Linux 定期扫描](linux-schedule-scan-atp.md)
+##### [使用 Microsoft Defender for Endpoint on Linux 定期扫描](linux-schedule-scan-atp.md)
 ##### [计划更新 Microsoft Defender for Endpoint （Linux）](linux-update-MDE-Linux.md)
 
 #### [疑难解答]()
@@ -192,17 +258,17 @@
 #### [隐私](linux-privacy.md)
 #### [资源](linux-resources.md)
 
-### [Microsoft Defender for Endpoint for Android]()
-#### [Microsoft Defender for Endpoint for Android 概述](microsoft-defender-endpoint-android.md)
+### [Android 上的 Microsoft Defender for Endpoint]()
+#### [Android 上的 Microsoft Defender for Endpoint 概述](microsoft-defender-endpoint-android.md)
 
 #### [部署]()
-##### [通过 Microsoft Intune 部署 Microsoft Defender for Endpoint for Android ](android-intune.md)
+##### [使用 Microsoft Intune 在 Android 上部署 Microsoft Defender for Endpoint](android-intune.md)
 
 #### [配置]()
-##### [配置 Microsoft Defender for Endpoint for Android 功能](android-configure.md)
+##### [在 Android 功能上配置 Microsoft Defender for Endpoint](android-configure.md)
 
 #### [隐私]()
-##### [Microsoft Defender for Endpoint for Android - 隐私信息](android-privacy.md)
+##### [Android 上的 Microsoft Defender for Endpoint - 隐私信息](android-privacy.md)
 
 #### [疑难解答]()
 ##### [解决问题](android-support-signin.md)
