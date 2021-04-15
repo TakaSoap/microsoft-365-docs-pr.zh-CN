@@ -1,24 +1,24 @@
 ---
-title: 云提供的保护和 Microsoft Defender 防病毒
+title: 云传递保护和 Microsoft Defender 防病毒软件
 description: 了解云提供的保护和 Microsoft Defender 防病毒
 keywords: Microsoft Defender 防病毒， 下一代技术， 下一代 av， 机器学习， 反恶意软件， 安全性， Defender， 云， 云保护
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
-ms.localizationpriority: medium
+localization_priority: normal
 author: denisebmsft
 ms.author: deniseb
 ms.reviewer: shwjha
 manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
-ms.openlocfilehash: f69c66652d86977e5731a61014d5d37377779efd
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: e967cb9efe03fc180bda531f192f3143c311796d
+ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51689961"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51764755"
 ---
 # <a name="use-next-generation-technologies-in-microsoft-defender-antivirus-through-cloud-delivered-protection"></a>通过云保护使用 Microsoft Defender 防病毒中的下一代技术
 

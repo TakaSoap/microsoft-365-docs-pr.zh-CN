@@ -1,12 +1,12 @@
 ---
-title: 评估 Microsoft Defender 防病毒
+title: 评估 Microsoft Defender 防病毒软件
 description: 各种规模的企业都可以使用本指南评估和测试 Windows 10 中的 Microsoft Defender 防病毒所提供的保护。
 keywords: Microsoft Defender 防病毒， 云保护， 云， 反恶意软件， 安全性， defender， 评估， 测试， 保护， 比较， 实时保护
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
-ms.localizationpriority: medium
+localization_priority: normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
@@ -14,14 +14,14 @@ ms.date: 09/03/2018
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: de9c7e845188f47ab5b8e1f9d97871ea36340d19
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 7f3fa1ca854a75025f850c85637cd3e08678bdbc
+ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51690226"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51764827"
 ---
-# <a name="evaluate-microsoft-defender-antivirus"></a>评估 Microsoft Defender 防病毒
+# <a name="evaluate-microsoft-defender-antivirus"></a>评估 Microsoft Defender 防病毒软件
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 

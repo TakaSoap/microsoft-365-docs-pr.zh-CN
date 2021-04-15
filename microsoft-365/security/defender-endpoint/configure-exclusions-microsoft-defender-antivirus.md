@@ -1,24 +1,26 @@
 ---
-title: 设置 Microsoft Defender AV 扫描的排除项
+title: 设置 Microsoft Defender 防病毒扫描的排除项
 description: 你可以排除文件 (包括由指定进程修改的文件) Microsoft Defender AV 扫描的文件夹。 使用 PowerShell 验证排除项。
 keywords: ''
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
-ms.localizationpriority: medium
+localization_priority: normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.reviewer: ''
+ms.reviewer: ksarens
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 47db9b4451a885c92ca4fda0f87f0150415d3338
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.audience: ITPro
+ms.topic: how-to
+ms.openlocfilehash: 08f7f9d4a6e9e70d3ef071f30712b2ae53f4ea52
+ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51690238"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51764659"
 ---
 # <a name="configure-and-validate-exclusions-for-microsoft-defender-antivirus-scans"></a>配置并验证 Microsoft Defender 防病毒扫描的排除项
 
@@ -40,7 +42,8 @@ ms.locfileid: "51690238"
 - [配置并验证进程打开的文件的排除项](configure-process-opened-file-exclusions-microsoft-defender-antivirus.md)。 这使你可以从特定进程打开的扫描中排除文件。
 
 ## <a name="recommendations-for-defining-exclusions"></a>定义排除项的建议
-
+[!IMPORTANT]
+Microsoft Defender 防病毒包括许多基于已知操作系统行为和典型管理文件（例如用于企业管理、数据库管理和其他企业方案和情况的文件）的自动排除项。  
 定义排除项会降低 Microsoft Defender 防病毒所提供的保护。 您应始终评估与实施排除项相关的风险，并且只应排除您确信不是恶意的文件。
 
 以下是定义排除项时应记住的建议列表：  
@@ -56,4 +59,4 @@ ms.locfileid: "51690238"
 ## <a name="related-articles"></a>相关文章
 
 - [Windows Server 2016 上的 Microsoft Defender 防病毒排除项](configure-server-exclusions-microsoft-defender-antivirus.md)
-- [定义排除项时应避免的常见错误](common-exclusion-mistakes-microsoft-defender-antivirus.md)
+- [定义排除时要避免的常见错误](common-exclusion-mistakes-microsoft-defender-antivirus.md)

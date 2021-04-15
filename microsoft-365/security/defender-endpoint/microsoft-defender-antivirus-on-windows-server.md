@@ -1,5 +1,5 @@
 ---
-title: Windows Server 上的 Microsoft Defender 防病毒
+title: Windows Server 上的 Microsoft Defender 防病毒软件
 description: 了解如何在 Windows Server 2016 和 Windows Server 2019 上启用和配置 Microsoft Defender 防病毒。
 keywords: windows defender， 服务器， scep， system center endpoint protection， server 2016， current branch， server 2012
 search.product: eADQiWindows 10XVcnh
@@ -7,20 +7,20 @@ ms.pagetype: security
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
-ms.localizationpriority: medium
+localization_priority: normal
 author: denisebmsft
 ms.author: deniseb
 ms.reviewer: pahuijbr, shwjha
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 3415d0caf0192b202cc4f471d5a9bf9051c3878d
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: d9452b6d2eeaad3880894b9ec66c8bc71797b429
+ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51689935"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51764599"
 ---
-# <a name="microsoft-defender-antivirus-on-windows-server"></a>Windows Server 上的 Microsoft Defender 防病毒
+# <a name="microsoft-defender-antivirus-on-windows-server"></a>Windows Server 上的 Microsoft Defender 防病毒软件
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 

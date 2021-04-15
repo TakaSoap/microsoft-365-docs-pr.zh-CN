@@ -1,12 +1,12 @@
 ---
-title: 从第三方解决方案迁移时解决 Microsoft Defender 防病毒问题
+title: 从第三方解决方案迁移时解决 Microsoft Defender 防病毒软件问题
 description: 迁移到 Microsoft Defender 防病毒时常见错误疑难解答
 keywords: 事件， 错误代码， 日志记录， 疑难解答， microsoft defender 防病毒， windows defender 防病毒， 迁移
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
-ms.localizationpriority: medium
+localization_priority: normal
 author: martyav
 ms.author: v-maave
 ms.custom: nextgen
@@ -14,14 +14,14 @@ ms.date: 09/11/2018
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 2ca486b86c24e18ae08753b5e88f2eb42986dddf
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 3fcc79e767edb533a20402a2f92ba4abc7d8386a
+ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51690190"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51764587"
 ---
-# <a name="troubleshoot-microsoft-defender-antivirus-while-migrating-from-a-third-party-solution"></a>从第三方解决方案迁移时解决 Microsoft Defender 防病毒问题
+# <a name="troubleshoot-microsoft-defender-antivirus-while-migrating-from-a-third-party-solution"></a>从第三方解决方案迁移时解决 Microsoft Defender 防病毒软件问题
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -50,7 +50,7 @@ ms.locfileid: "51690190"
 
  事件 ID | 日志名称 | 说明 | Source
 -|-|-|-
-15  | 应用程序 | 更新Windows Defender状态以SECURITY_PRODUCT_STATE_OFF。 | 安全中心
+15  | Application | 更新Windows Defender状态以SECURITY_PRODUCT_STATE_OFF。 | 安全中心
 5007 | Microsoft-Windows-Windows Defender/Operational | Windows Defender防病毒配置已更改。  如果这是意外事件，你应该查看设置，因为这可能是恶意软件的结果。<br /><br />**旧值：** Default\IsServiceRunning = 0x0<br />**新值：** HKLM\SOFTWARE\Microsoft\Windows Defender\IsServiceRunning = 0x1 | Windows Defender
 5010 | Microsoft-Windows-Windows Defender/Operational | Windows Defender间谍软件和其他可能不需要的软件的防病毒扫描处于禁用状态。 | Windows Defender
 

@@ -7,7 +7,7 @@ ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-ms.localizationpriority: medium
+localization_priority: normal
 audience: ITPro
 ms.topic: article
 author: denisebmsft
@@ -16,14 +16,14 @@ ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 4a0d3493d7fbff2c737eae61c0f40154bf29731a
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 41f22375aa117ba617eae59d4b8e9f8bb15ad4f0
+ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51689982"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51764095"
 ---
-# <a name="better-together-microsoft-defender-antivirus-and-office-365"></a>更好地结合：Microsoft Defender 防病毒和 Office 365
+# <a name="better-together-microsoft-defender-antivirus-and-office-365"></a>一起更得心防万一：Microsoft Defender 防病毒软件和 Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 

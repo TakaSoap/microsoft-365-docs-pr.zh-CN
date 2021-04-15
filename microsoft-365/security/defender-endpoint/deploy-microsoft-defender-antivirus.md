@@ -1,5 +1,5 @@
 ---
-title: 部署和启用 Microsoft Defender 防病毒
+title: 部署和启用 Microsoft Defender 防病毒软件
 description: 使用 Microsoft Intune、Microsoft Endpoint Configuration Manager、组策略、PowerShell cmdlet 或 WMI 部署 Microsoft Defender 防病毒，以保护终结点。
 keywords: 部署， 启用， Microsoft Defender 防病毒
 search.product: eADQiWindows 10XVcnh
@@ -7,7 +7,7 @@ ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-ms.localizationpriority: medium
+localization_priority: normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
@@ -15,14 +15,14 @@ ms.date: 01/06/2021
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: efc2aa0f48cb2bc55e729b65c892a07b74c1bc46
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 146447f4036d800832c75c7a59978e9571253a17
+ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51690234"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51764815"
 ---
-# <a name="deploy-and-enable-microsoft-defender-antivirus"></a>部署和启用 Microsoft Defender 防病毒
+# <a name="deploy-and-enable-microsoft-defender-antivirus"></a>部署和启用 Microsoft Defender 防病毒软件
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -43,4 +43,4 @@ ms.locfileid: "51690234"
 
 - [Windows 10 中的 Microsoft Defender 防病毒](microsoft-defender-antivirus-in-windows-10.md)
 - [在 Microsoft Defender 防病毒上部署、管理更新并报告](deploy-manage-report-microsoft-defender-antivirus.md)
-- [虚拟桌面基础结构中的 Microsoft Defender 防病毒部署指南 (VDI) 环境](deployment-vdi-microsoft-defender-antivirus.md)
+- [虚拟桌面基础结构 （VDI） 环境中 Microsoft Defender 防病毒软件的部署指南](deployment-vdi-microsoft-defender-antivirus.md)

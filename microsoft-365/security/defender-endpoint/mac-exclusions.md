@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: b1282543a68ce4cb5c322423656d33c5db12b97b
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 2281fccfb97d38dbdc218799b087290433deff30
+ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51688581"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51764153"
 ---
 # <a name="configure-and-validate-exclusions-for-microsoft-defender-for-endpoint-on-macos"></a>在 macOS 上配置和验证适用于终结点的 Microsoft Defender 的排除项
 
@@ -39,18 +39,18 @@ ms.locfileid: "51688581"
 本文提供有关如何定义适用于按需扫描以及实时保护和监视的排除项的信息。
 
 >[!IMPORTANT]
->本文中介绍的排除项不适用于其他 Defender for Mac 功能，包括终结点检测和响应 (EDR) 。 使用本文中所述的方法排除的文件仍可以触发 EDR 警报和其他检测。
+>本文中介绍的排除项不适用于 Mac 上的其他 Defender for Endpoint 功能，包括终结点检测和响应 (EDR) 。 使用本文中所述的方法排除的文件仍可以触发 EDR 警报和其他检测。
 
-你可以从 Defender for Endpoint for Mac 扫描中排除某些文件、文件夹、进程和进程打开的文件。
+你可以从 Mac 上的 Defender for Endpoint 扫描中排除某些文件、文件夹、进程和进程打开的文件。
 
-排除项可用于避免对组织唯一或自定义的文件或软件进行错误检测。 它们还可用于缓解由 Defender for Endpoint for Mac 引起的性能问题。
+排除项可用于避免对组织唯一或自定义的文件或软件进行错误检测。 它们还可用于缓解由 Mac 上的 Defender for Endpoint 引起的性能问题。
 
 >[!WARNING]
->定义排除项会降低 Defender for Endpoint for Mac 所提供的保护。 您应始终评估与实施排除项相关的风险，并且只应排除您确信不是恶意的文件。
+>定义排除项会降低 Mac 上 Defender for Endpoint 所提供的保护。 您应始终评估与实施排除项相关的风险，并且只应排除您确信不是恶意的文件。
 
 ## <a name="supported-exclusion-types"></a>支持的排除类型
 
-下表显示了 Defender for Endpoint for Mac 支持的排除类型。
+下表显示了 Mac 上的 Defender for Endpoint 支持的排除类型。
 
 排除 | 定义 | 示例
 ---|---|---
@@ -73,7 +73,7 @@ Folder | 指定文件夹下的所有 (以递归)  | `/var/log/`<br/>`/var/*/`
 
 ### <a name="from-the-management-console"></a>从管理控制台
 
-若要详细了解如何配置 JAMF、Intune 或其他管理控制台中的排除项，请参阅为适用于 Mac 的 [Defender 终结点设置首选项](mac-preferences.md)。
+若要详细了解如何配置 JAMF、Intune 或其他管理控制台中的排除项，请参阅在 Mac 上设置 [Defender for Endpoint 的首选项](mac-preferences.md)。
 
 ### <a name="from-the-user-interface"></a>从用户界面
 
@@ -93,7 +93,7 @@ Folder | 指定文件夹下的所有 (以递归)  | `/var/log/`<br/>`/var/*/`
 curl -o test.txt https://www.eicar.org/download/eicar.com.txt
 ```
 
-如果 Defender for Endpoint for Mac 报告恶意软件，则规则无法工作。 如果没有恶意软件报告，并且下载的文件存在，则排除将正常工作。 你可以打开文件以确认内容与 EICAR 测试文件网站上 [介绍的内容相同](http://2016.eicar.org/86-0-Intended-use.html)。
+如果 Mac 上的 Defender for Endpoint 报告恶意软件，则规则无法工作。 如果没有恶意软件报告，并且下载的文件存在，则排除将正常工作。 你可以打开文件以确认内容与 EICAR 测试文件网站上 [介绍的内容相同](http://2016.eicar.org/86-0-Intended-use.html)。
 
 如果您无法访问 Internet，您可以创建自己的 EICAR 测试文件。 使用下面的 Bash 命令将 EICAR 字符串写入新的文本文件：
 
