@@ -13,12 +13,12 @@ ms.author: dansimp
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: a513013c4b5f41cf95b876648882cb56ba818b32
-ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
+ms.openlocfilehash: 5c7a2d943ec1813623065e70330b914a3911d1eb
+ms.sourcegitcommit: 4acf613587128cae27e0fd470d1216b509775529
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51570992"
+ms.lasthandoff: 04/15/2021
+ms.locfileid: "51768994"
 ---
 # <a name="turn-on-network-protection"></a>启用网络保护功能
 
@@ -28,20 +28,24 @@ ms.locfileid: "51570992"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->想要体验适用于终结点的 Defender？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
+> [!TIP]
+> 想要体验适用于终结点的 Defender？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
 [网络](network-protection.md) 保护有助于防止员工使用任何应用程序访问可能承载网络钓鱼欺诈、攻击和 Internet 上的其他恶意内容危险域。 可以在 [测试环境中](evaluate-network-protection.md) 审核网络保护，以查看在启用应用之前将阻止哪些应用。
 
-[了解有关网络筛选配置选项的详细信息](https://docs.microsoft.com/mem/intune/protect/endpoint-protection-windows-10#network-filtering)
+[了解有关网络筛选配置选项的详细信息](/mem/intune/protect/endpoint-protection-windows-10#network-filtering)
 
 ## <a name="check-if-network-protection-is-enabled"></a>检查网络保护是否已启用
 
 使用注册表编辑器检查是否在本地设备上启用了网络保护。
 
 1. 选择 **任务栏中的** "开始"按钮并键入 **regedit** 以打开注册表编辑器
-1. 从 **HKEY_LOCAL_MACHINE** 菜单中选择"选项"
-1. 在嵌套菜单中导航到 **软件** 策略  >    >  **Microsoft**  >  **Windows Defender Windows Defender**  >  **Exploit Guard**  >  **网络保护**
-1. 选择 **EnableNetworkProtection** 以查看设备上网络保护的当前状态
+
+2. 从 **HKEY_LOCAL_MACHINE** 菜单中选择"选项"
+
+3. 在嵌套菜单中导航到 **软件** 策略  >    >  **Microsoft**  >  **Windows Defender Windows Defender**  >  **Exploit Guard**  >  **网络保护**
+
+4. 选择 **EnableNetworkProtection** 以查看设备上网络保护的当前状态
 
     * 0 或 **Off**
     * 1 或 **On**
@@ -83,9 +87,9 @@ ms.locfileid: "51570992"
 
 1. 登录到 Microsoft Endpoint Manager 管理中心 (https://endpoint.microsoft.com)
 
-2. 创建或编辑 [终结点保护配置文件](https://docs.microsoft.com/mem/intune/protect/endpoint-protection-configure)
+2. 创建或编辑 [终结点保护配置文件](/mem/intune/protect/endpoint-protection-configure)
 
-3. 在配置文件流中的"配置设置"下，转到 **Microsoft Defender 攻击防护**  >  **网络筛选**  >  **网络保护**  >  **仅启用** 或 **审核**
+3. 在 **配置文件流中的** 配置设置下，转到 **Microsoft Defender 攻击防护**  >  **网络筛选**  >  **网络保护**  >  **仅启用** 或 **审核**
 
 ### <a name="group-policy"></a>组策略
 
@@ -116,7 +120,7 @@ ms.locfileid: "51570992"
 
 1. 选择 **"开始** " **并键入 regedit** 以 **打开注册表编辑器**。
 
-2. 导航到 **HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender\Windows Defender Exploit Guard\Network Protection**
+2. 导航到 **HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender\Policy Manager\EnableNetworkProtection**
 
 3. 选择 **EnableNetworkProtection** 并确认值：
    * 0=Off

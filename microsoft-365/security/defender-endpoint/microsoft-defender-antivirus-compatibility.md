@@ -7,19 +7,19 @@ ms.pagetype: security
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
-ms.localizationpriority: medium
+localization_priority: normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
 ms.reviewer: tewchen, pahuijbr, shwjha
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 8eb52e277f7987477114db9333c3f90bb581ebb5
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 131b9970572b1034ba5c9907a001f0497d450339
+ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51689932"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51765439"
 ---
 # <a name="microsoft-defender-antivirus-compatibility"></a>Microsoft Defender 防病毒兼容性
 
@@ -125,7 +125,7 @@ Microsoft Defender 防病毒将自动启用，并安装在运行 Windows 10 的�
 ## <a name="see-also"></a>另请参阅
 
 - [Windows 10 中的 Microsoft Defender 防病毒](microsoft-defender-antivirus-in-windows-10.md)
-- [Windows Server 上的 Microsoft Defender 防病毒](microsoft-defender-antivirus-on-windows-server.md)
+- [Windows Server 上的 Microsoft Defender 防病毒软件](microsoft-defender-antivirus-on-windows-server.md)
 - [块模式下的 EDR](edr-in-block-mode.md)
 - [配置 Endpoint Protection](/mem/configmgr/protect/deploy-use/endpoint-protection-configure)
 - [解决 Microsoft Defender for终结点的误报/负数](defender-endpoint-false-positives-negatives.md)

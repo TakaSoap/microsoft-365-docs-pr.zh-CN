@@ -8,21 +8,21 @@ search.appverid: met150
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-ms.localizationpriority: medium
+localization_priority: normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
 ms.reviewer: pahuijbr
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: e4ba9a438ff4640a556a236b50b0be6e816fc7e8
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 327974c4db4166301820cf148811aceda1700513
+ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51689943"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51765343"
 ---
-# <a name="manage-the-schedule-for-when-protection-updates-should-be-downloaded-and-applied"></a>管理何时应下载和应用保护更新的计划
+# <a name="manage-the-schedule-for-when-protection-updates-should-be-downloaded-and-applied"></a>管理应下载和应用保护更新的时间日程安排
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -105,5 +105,5 @@ SignatureUpdateInterval
 - [管理 Microsoft Defender 防病毒更新和应用基线](manage-updates-baselines-microsoft-defender-antivirus.md)
 - [管理过期终结点的更新](manage-outdated-endpoints-microsoft-defender-antivirus.md)
 - [管理基于事件的强制更新](manage-event-based-updates-microsoft-defender-antivirus.md)
-- [使用虚拟机管理移动设备和虚拟机 (更新) ](manage-updates-mobile-devices-vms-microsoft-defender-antivirus.md)
+- [管理移动设备和虚拟机 （VM） 的更新](manage-updates-mobile-devices-vms-microsoft-defender-antivirus.md)
 - [Windows 10 中的 Microsoft Defender 防病毒](microsoft-defender-antivirus-in-windows-10.md)

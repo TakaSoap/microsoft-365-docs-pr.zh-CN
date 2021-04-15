@@ -15,12 +15,12 @@ ms.author: dansimp
 ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
-ms.openlocfilehash: 6ad61d583815f669affe989d7519ba0ade6fe08d
-ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
+ms.openlocfilehash: 0ef80e2aaccbf25a79083c2f95ea7399e30ea651
+ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/14/2021
-ms.locfileid: "51760082"
+ms.locfileid: "51764313"
 ---
 # <a name="onboard-windows-10-multi-session-devices-in-windows-virtual-desktop"></a>在 Windows 虚拟桌面中载入 Windows 10 多会话设备 
 6 分钟阅读 
@@ -76,62 +76,75 @@ Microsoft 建议将 Microsoft Defender for Endpoint 载入脚本添加到 WVD �
 
 1. 打开组策略管理控制台 (GPMC) ，右键单击要配置的组策略对象 (GPO) 然后单击 **编辑。**
 
-1. 在组策略管理编辑器中，转到计算机 **配置** \> **首选项** \> **控制面板设置**。 
+2. 在组策略管理编辑器中，转到计算机 **配置** \> **首选项** \> **控制面板设置**。 
 
-1. 右键单击 **计划任务**，单击 **新建**， **然后单击即时任务** (Windows 7) 。 
+3. 右键单击 **计划任务**，单击 **新建**， **然后单击即时任务** (Windows 7) 。 
 
-1. 在打开的任务窗口中，转到常规 **选项卡** 。在" **安全选项"** 下 **，单击"更改用户或组"** 并键入 SYSTEM。 单击 **"检查名称"，** 然后单击"确定"。 NT AUTHORITY\SYSTEM 显示为任务将运行的用户帐户。 
+4. 在打开的任务窗口中，转到常规 **选项卡** 。在" **安全选项"** 下 **，单击"更改用户或组"** 并键入 SYSTEM。 单击 **"检查名称"，** 然后单击"确定"。 NT AUTHORITY\SYSTEM 显示为任务将运行的用户帐户。 
 
-1. Select **Run whether user is logged on or not and** check the Run with highest **privileges** check box. 
+5. Select **Run whether user is logged on or not and** check the Run with highest **privileges** check box. 
 
-1. 转到"操作 **"选项卡**，然后单击"新建 **"。** 确保在 **"操作"** 字段中选择了"启动程序"。 输入以下信息： 
+6. 转到"操作 **"选项卡**，然后单击"新建 **"。** 确保在 **"操作"** 字段中选择了"启动程序"。 输入以下信息： 
 
-    > Action = "Start a program" <br>
-    > Program/Script = C:\WINDOWS\system32\WindowsPowerShell\v1.0\powershell.exe <br>
-    > 添加参数 (可选) = -ExecutionPolicy Bypass -command "& \\Path\To\Onboard-NonPersistentMachine.ps1"
+   `Action = "Start a program"`
 
-1. 单击 **"确定** "并关闭任何打开的 GPMC 窗口。
+   `Program/Script = C:\WINDOWS\system32\WindowsPowerShell\v1.0\powershell.exe`
+
+   `Add Arguments (optional) = -ExecutionPolicy Bypass -command "& \\Path\To\Onboard-NonPersistentMachine.ps1"`
+
+   然后选择" **确定"** 并关闭任何打开的 GPMC 窗口。
 
 #### <a name="scenario-3-onboarding-using-management-tools"></a>*方案 3：使用管理工具载入*
 
 如果你计划使用管理工具管理计算机，可以使用 Microsoft Endpoint Configuration Manager 载入设备。
 
-有关详细信息，请参阅使用 Configuration Manager 载入 [Windows 10 设备](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/configure-endpoints-sccm)。 
+有关详细信息，请参阅使用 Configuration Manager 载入 [Windows 10 设备](configure-endpoints-sccm.md)。
 
 > [!WARNING]
-> 如果你计划使用攻击面[](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/attack-surface-reduction)减少规则，请注意，不应使用规则"阻止源自[PSExec](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/attack-surface-reduction#block-process-creations-originating-from-psexec-and-wmi-commands)和 WMI 命令的进程创建"，因为它与通过 Microsoft Endpoint Configuration Manager 管理不兼容，因为此规则会阻止 Configuration Manager 客户端用于正常运行的 WMI 命令。 
+> 如果你计划使用攻击面减少 [规则](attack-surface-reduction.md)，请注意，不应使用规则"阻止源自[PSExec](attack-surface-reduction.md#block-process-creations-originating-from-psexec-and-wmi-commands)和 WMI 命令的进程创建"，因为该规则与通过 Microsoft Endpoint Configuration Manager 管理不兼容。 该规则阻止 Configuration Manager 客户端用于正常运行的 WMI 命令。 
 
 > [!TIP]
-> 载入设备后，你可以选择运行检测测试，以验证设备是否正确载入到服务。 有关详细信息，请参阅对新载入的 [Microsoft Defender for Endpoint](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/run-detection-test)设备运行检测测试。 
+> 载入设备后，你可以选择运行检测测试，以验证设备是否正确载入到服务。 有关详细信息，请参阅对新载入的 [Microsoft Defender for Endpoint](run-detection-test.md)设备运行检测测试。 
 
 #### <a name="tagging-your-machines-when-building-your-golden-image"></a>生成黄金映像时标记计算机 
 
-作为载入的一部分，你可能要考虑设置计算机标记，以在 Microsoft 安全中心更轻松地区分 WVD 计算机。 有关详细信息，请参阅通过 [设置注册表项值添加设备标记](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/machine-tags#add-device-tags-by-setting-a-registry-key-value)。 
+作为载入的一部分，你可能要考虑设置计算机标记，以在 Microsoft 安全中心更轻松地区分 WVD 计算机。 有关详细信息，请参阅通过 [设置注册表项值添加设备标记](machine-tags.md#add-device-tags-by-setting-a-registry-key-value)。 
 
 #### <a name="other-recommended-configuration-settings"></a>其他建议的配置设置 
 
-生成黄金映像时，你可能还想要配置初始保护设置。 有关详细信息，请参阅其他 [推荐的配置设置](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/configure-endpoints-gp#other-recommended-configuration-settings)。 
+生成黄金映像时，你可能还想要配置初始保护设置。 有关详细信息，请参阅其他 [推荐的配置设置](configure-endpoints-gp.md#other-recommended-configuration-settings)。 
 
 此外，如果您使用的是 FSlogix 用户配置文件，我们建议您从始终打开的保护中排除以下文件： 
 
 **排除文件：** 
 
-> %ProgramFiles%\FSLogix\Apps\frxdrv.sys <br>
-> %ProgramFiles%\FSLogix\Apps\frxdrvvt.sys <br>
-> %ProgramFiles%\FSLogix\Apps\frxccd.sys <br>
-> %TEMP% \* 。VHD <br>
-> %TEMP% \* 。VHDX <br>
-> %Windir%\TEMP \* 。VHD <br>
-> %Windir%\TEMP \* 。VHDX <br>
-> \\storageaccount.file.core.windows.net\share \* \* 。VHD <br>
-> \\storageaccount.file.core.windows.net\share \* \* 。VHDX <br>
+`%ProgramFiles%\FSLogix\Apps\frxdrv.sys`
+
+`%ProgramFiles%\FSLogix\Apps\frxdrvvt.sys`
+
+`%ProgramFiles%\FSLogix\Apps\frxccd.sys`
+
+`%TEMP%\*.VHD`
+
+`%TEMP%\*.VHDX`
+
+`%Windir%\TEMP\*.VHD`
+
+`%Windir%\TEMP\*.VHDX`
+
+`\\storageaccount.file.core.windows.net\share\*\*.VHD`
+
+`\\storageaccount.file.core.windows.net\share\*\*.VHDX`
 
 **排除进程：**
 
-> %ProgramFiles%\FSLogix\Apps\frxccd.exe <br>
-> %ProgramFiles%\FSLogix\Apps\frxccds.exe <br>
-> %ProgramFiles%\FSLogix\Apps\frxsvc.exe <br>
+`%ProgramFiles%\FSLogix\Apps\frxccd.exe`
+
+`%ProgramFiles%\FSLogix\Apps\frxccds.exe`
+
+`%ProgramFiles%\FSLogix\Apps\frxsvc.exe`
 
 #### <a name="licensing-requirements"></a>许可要求 
 
-Windows 10 多会话是客户端操作系统。 有关 Microsoft Defender 终结点的许可要求，可位于： [许可要求](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/minimum-requirements#licensing-requirements)。
+许可注意事项：使用 Windows 10 企业版多会话时，根据你的要求，你可以选择通过 Microsoft Defender for Endpoint (针对每个用户) 、Windows 企业版 E5、Microsoft 365 安全或 Microsoft 365 E5 授权所有用户，或者通过 Azure Defender 许可 VM。
+有关 Microsoft Defender 终结点的许可要求，可位于： [许可要求](minimum-requirements.md#licensing-requirements)。

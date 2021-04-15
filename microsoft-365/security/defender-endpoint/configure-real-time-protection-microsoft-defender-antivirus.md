@@ -7,7 +7,7 @@ ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-ms.localizationpriority: medium
+localization_priority: normal
 author: denisebmsft
 ms.author: deniseb
 ms.date: 12/16/2019
@@ -15,14 +15,14 @@ ms.reviewer: ''
 manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
-ms.openlocfilehash: 7fa4f90282bf87c1def1917037e090b213cad3db
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 807348fcbf3ad4ef9698b11b194d752d8038b4c9
+ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51689911"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51765103"
 ---
-# <a name="enable-and-configure-microsoft-defender-antivirus-always-on-protection-in-group-policy"></a>在组策略中启用和配置 Microsoft Defender 防病毒始终启用保护
+# <a name="enable-and-configure-microsoft-defender-antivirus-always-on-protection-in-group-policy"></a>在组策略中启用和配置 Microsoft Defender 防病毒软件始终启用保护
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -137,5 +137,5 @@ ms.locfileid: "51689911"
 
 ## <a name="related-articles"></a>相关文章
 
-- [配置行为、启发式和实时保护](configure-protection-features-microsoft-defender-antivirus.md)
+- [配置方案、高要求和实时保护](configure-protection-features-microsoft-defender-antivirus.md)
 - [Windows 10 中的 Microsoft Defender 防病毒](microsoft-defender-antivirus-in-windows-10.md)

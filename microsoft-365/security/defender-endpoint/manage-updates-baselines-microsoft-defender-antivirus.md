@@ -7,19 +7,19 @@ ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-ms.localizationpriority: medium
+localization_priority: normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
 ms.reviewer: pahuijbr
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: bf027dd7f5fad032d57d2dd0b686ccd129f568c7
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: b70cf96cde7d4dff8e2a4db6ce2469090dba7eb1
+ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51689933"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51765607"
 ---
 # <a name="manage-microsoft-defender-antivirus-updates-and-apply-baselines"></a>管理 Microsoft Defender 防病毒更新和应用基线
 
@@ -566,4 +566,4 @@ Microsoft Defender 防病毒需要每月更新 [ (KB4052623](https://support.mic
 |[管理何时应下载和应用保护更新](manage-protection-update-schedule-microsoft-defender-antivirus.md) | 你可以计划应下载保护更新的时间。 |
 |[管理过期终结点的更新](manage-outdated-endpoints-microsoft-defender-antivirus.md) | 如果终结点错过更新或计划扫描，可以在用户下次登录时强制进行更新或扫描。 |
 |[管理基于事件的强制更新](manage-event-based-updates-microsoft-defender-antivirus.md) | 你可以将保护更新设置为在启动时或在某些云提供的保护事件之后下载。 |
-|[使用虚拟机管理移动设备和虚拟机 (更新) ](manage-updates-mobile-devices-vms-microsoft-defender-antivirus.md)| 你可以指定对移动设备和虚拟机特别有用的设置，例如是否应该使用电池电源进行更新。 |
+|[管理移动设备和虚拟机 （VM） 的更新](manage-updates-mobile-devices-vms-microsoft-defender-antivirus.md)| 你可以指定对移动设备和虚拟机特别有用的设置，例如是否应该使用电池电源进行更新。 |

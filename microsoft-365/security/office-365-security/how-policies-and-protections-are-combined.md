@@ -17,12 +17,12 @@ ms.custom:
 description: 管理员可以了解 Exchange Online Protection (EOP) 中的保护的应用程序顺序，以及保护策略中的优先级值如何确定应用哪个策略。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 3419cba5781e7ab1042f7312c721069d88fb8767
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: b36e66f095ff81f551a55d2dc2af0693f8b3455a
+ms.sourcegitcommit: 4acf613587128cae27e0fd470d1216b509775529
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51687645"
+ms.lasthandoff: 04/15/2021
+ms.locfileid: "51769006"
 ---
 # <a name="order-and-precedence-of-email-protection"></a>电子邮件保护的顺序和优先级
 
@@ -41,6 +41,8 @@ ms.locfileid: "51687645"
 
 - **电子邮件保护类型的优先级**：此顺序不可配置，如下表所述：
 
+  <br>
+
   ****
 
   |Priority|电子邮件保护|类别|管理位置|
@@ -57,19 +59,21 @@ ms.locfileid: "51687645"
 
   <sup>\*</sup> 这些功能仅在 Microsoft Defender for Office 365 中的防钓鱼策略中可用。
 
-- 策略优先级：对于每种保护类型 (反垃圾邮件、反恶意软件、防钓鱼等 ) ，都有一个适用于所有用户的默认策略，但你可以创建适用于特定用户的自定义策略。 每个自定义策略都有一个优先级值，用于确定策略的应用顺序。 默认策略始终应用最后。
+- 策略优先级：对于每种类型的策略 (反垃圾邮件、反恶意软件、防钓鱼等 ) ，都有一个适用于所有用户的默认策略，但你可以创建适用于特定用户的自定义策略。 每个自定义策略都有一个优先级值，用于确定策略的应用顺序。 默认策略始终应用最后。
 
   如果用户在相同类型的多个策略中定义，则仅应用优先级最高的策略。 不会为用户评估此类型的任何剩余策略 (包括默认策略) 。
 
 例如，请考虑适用于相同用户的 Microsoft Defender for Office 365中的以下防钓鱼策略，以及标识为用户模拟和欺骗的邮件：
 
-  ****
+<br>
 
-  |策略名称|Priority|用户模拟|反欺骗|
-  |---|---|---|---|
-  |策略 A|1|开|关|
-  |策略 B|2|关|开|
-  |
+****
+
+|策略名称|Priority|用户模拟|反欺骗|
+|---|---|---|---|
+|策略 A|1|开|关|
+|策略 B|2|关|开|
+|
 
 1. 邮件被标记为欺骗邮件并被视为欺骗邮件，因为欺骗的优先级 (4) 比 5 (高) 。
 2. 策略 A 应用于用户，因为它的优先级高于策略 B。

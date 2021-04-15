@@ -87,7 +87,7 @@ ms.locfileid: "51644508"
   
 ## <a name="turn-focused-inbox-on-or-off-for-specific-users"></a>为特定用户打开或关闭重点收件箱
 
-本示例会为 Contoso 组织中的 Tim Matthews **关闭** 重点收件箱。 但是，它并不禁止他使用此功能。 如果他想使用，仍可在其每个客户端上重新启用重点收件箱。 
+本示例会为 Contoso 组织中的 Tim Matthews **关闭** 重点收件箱。 但是，它并不禁止他使用此功能。 如果希望，仍可在其每个客户端上重新启用重点收件箱。 
   
 1. [使用远程 PowerShell 连接到 Exchange Online](/powershell/exchange/connect-to-exchange-online-powershell)。
 
@@ -152,7 +152,7 @@ ms.locfileid: "51644508"
 
 ### <a name="what-will-the-user-see"></a>用户将看到什么？
 
-如果传输规则已存在，将显示有关替代的通知。 Outlook 网页版将禁用“始终移动到其他”并显示工具提示。 Outlook 桌面客户端将允许选择“始终移动到其他”并将弹出对话框。
+如果传输规则已存在，将显示有关覆盖的通知。 Outlook 网页版将禁用“始终移动到其他”并显示工具提示。 Outlook 桌面客户端将允许选择“始终移动到其他”并会弹出对话框。
 
 ## <a name="turn-onoff-clutter"></a>打开/关闭待筛选邮件
 
@@ -206,5 +206,5 @@ Outlook​​ 通过选择具有最新时间戳的 cmdlet 来决定显示相应�
   
 ### <a name="can-i-run-a-script-to-see-who-has-turned-on-focused-inbox"></a>我能通过运行脚本来查看谁启用了重点收件箱吗？
 
-不能，这是由设计决定的。 启用重点收件箱是客户端设置，cmdlet 仅能告知你用户的邮箱是否符合客户端体验的条件。 可在一些客户端中启用它，同时在另一些客户端中禁用它，例如，在 Outlook 应用和 Outlook Mobile 中启用，但在 Outlook 网页版中禁用。
+不能，这是设计决定的。 启用重点收件箱是客户端的设置，cmdlet 所能做的只是告诉你用户的邮箱是否有资格获得客户端体验。 可在一些客户端中启用它，同时在另一些客户端中禁用它，例如，在 Outlook 应用和 Outlook Mobile 中启用，但在 Outlook 网页版中禁用。
 

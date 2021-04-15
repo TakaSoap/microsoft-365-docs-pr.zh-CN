@@ -7,19 +7,19 @@ ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-ms.localizationpriority: medium
+localization_priority: normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 4a117d2743436381029d047693f81303e5908b2b
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 94375bc843c6512616d49345bcc9e7f63899a708
+ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51689915"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51765079"
 ---
 # <a name="configure-exclusions-for-files-opened-by-processes"></a>为进程打开的文件配置排除项
 
@@ -188,6 +188,6 @@ $WDAVprefs.ExclusionProcess
 - [配置并验证 Microsoft Defender 防病毒扫描中的排除项](configure-exclusions-microsoft-defender-antivirus.md)
 - [根据文件名、扩展名和文件夹位置配置并验证排除项](configure-extension-file-exclusions-microsoft-defender-antivirus.md)
 - [在 Windows Server 上配置 Microsoft Defender 防病毒排除项](configure-server-exclusions-microsoft-defender-antivirus.md)
-- [定义排除项时应避免的常见错误](common-exclusion-mistakes-microsoft-defender-antivirus.md)
+- [定义排除时要避免的常见错误](common-exclusion-mistakes-microsoft-defender-antivirus.md)
 - [自定义、启动和查看 Microsoft Defender 防病毒扫描和修正的结果](customize-run-review-remediate-scans-microsoft-defender-antivirus.md)
 - [Windows 10 中的 Microsoft Defender 防病毒](microsoft-defender-antivirus-in-windows-10.md)

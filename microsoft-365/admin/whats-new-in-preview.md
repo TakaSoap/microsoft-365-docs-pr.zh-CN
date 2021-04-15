@@ -21,12 +21,12 @@ description: Microsoft 365 管理中心 - 了解本月添加的功能。
 ms.custom:
 - MACDashWhatsNew
 - AdminSurgePortfolio
-ms.openlocfilehash: 7b802556e051200bf39bc4bd9b97974d4d2d4c47
-ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
+ms.openlocfilehash: 0c17c6840d73c5b0a2714c6c6a832c154e2a9640
+ms.sourcegitcommit: 4acf613587128cae27e0fd470d1216b509775529
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51221999"
+ms.lasthandoff: 04/15/2021
+ms.locfileid: "51768678"
 ---
 # <a name="whats-new-in-the-microsoft-365-admin-center"></a>Microsoft 365 管理中心的新增功能
 
@@ -50,6 +50,27 @@ ms.locfileid: "51221999"
 - [Office 更新](/OfficeUpdates/)
 - [如何检查 Windows 版本运行状况](https://docs.microsoft.com/windows/deployment/update/check-release-health)
 
+## <a name="april-2021"></a>2021 年 4 月
+
+### <a name="admin-mobile-app"></a>管理移动应用
+
+### <a name="manage-licenses-and-bills-from-the-admin-mobile-app"></a>管理管理移动应用中的许可证和帐单
+
+- 你现在可以查看订阅的所有可用和分配的许可证。 还可以向用户分配或取消分配许可证，以及添加或删除许可证。
+- 你现在可以查看应用中的详细发票。
+- 这些更新在 [Android](https://go.microsoft.com/fwlink/p/?linkid=2159786) 和 [iOS 设备上](https://go.microsoft.com/fwlink/p/?linkid=2159787) 均可用。
+
+:::image type="content" source="../media/assign-license-mobile-app2.png" alt-text="Screenshot： Admin mobile app assign license page":::
+:::image type="content" source="../media/license-screen-mobile-app2.png" alt-text="Screenshot： Admin mobile app screen with users and their licenses":::
+:::image type="content" source="../media/invoice-summary-mobile-app.png" alt-text="Screenshot： Admin mobile app invoice summary page":::
+
+### <a name="updated-message-center-feed-in-the-admin-mobile-app"></a>管理移动应用中的更新消息中心源
+
+- 现在，你可以更灵活地阅读消息中心源。 现在，你能够基于服务或标签筛选邮件，将邮件标记为收藏。 还添加了用于将邮件标记为已读、未读或已存档的批量操作。
+- 这些更新在 [Android](https://go.microsoft.com/fwlink/p/?linkid=2159786) 和 [iOS 设备上](https://go.microsoft.com/fwlink/p/?linkid=2159787) 均可用。
+
+:::image type="content" source="../media/mc-feed-mobile-app.png" alt-text="Screenshot： Admin mobile app Message center feed page":::
+
 ## <a name="ignite-2021-march"></a>Ignite 2021 (3) 
 
 欢迎使用 Microsoft Ignite。 我们希望你能够参加我们的一些会话 [：Microsoft Ignite 2021](https://myignite.microsoft.com/sessions)。 下面是我们在 Ignite 上谈到的一些内容。
@@ -66,7 +87,7 @@ ms.locfileid: "51221999"
 
 ### <a name="whats-new-features"></a>新增功能
 
-我们改进了你在 Office 应用中查看用户的"新增功能"功能。 现在，您可以在"内容"新窗格中看到用户可以看到的丰富内容。 您还可以在决定让用户了解该功能之前了解有关该功能的更多信息。 For more info, check out [Manage which Office‎ features appear in What's New](manage/show-hide-new-features.md).
+我们改进了你在 Office 应用中查看用户的"新增功能"功能。 现在，您可以在"内容"新窗格中看到用户可以看到的丰富内容。 您还可以在决定让用户了解该功能之前了解有关该功能的更多信息。 有关详细信息，请查看管理新增功能 [中显示哪些 Office 功能](manage/show-hide-new-features.md)。
 
 :::image type="content" source="../media/power-bi-whats-new2.png" alt-text="Screenshot： Office apps what's new page showing improvements to Power BI":::
 
@@ -206,7 +227,7 @@ ms.locfileid: "51221999"
 
 ### <a name="keeping-up-with-office-whats-new-management"></a>了解 Office 新增功能管理
 
-几个月前，我们添加了一个设置，可让你管理显示在用户的 Office 应用中的"新增功能 ["消息](#office-whats-new-management)。 本月，我们发布了新的主页卡，该卡将帮助您快速操作并跟踪您希望向组织用户显示的"新增功能"邮件。
+几个月之前，我们添加了一个设置，允许你管理显示在用户的 Office 应用中的新增邮件。 本月，我们发布了新的主页卡，该卡将帮助您快速操作并跟踪您希望向组织用户显示的"新增功能"邮件。
 
 ### <a name="docs-training-and-videos-june"></a>) 年 6 月提供的文档 (培训) 
 
@@ -364,7 +385,7 @@ Productivity Score 提供人们如何使用 Microsoft 云服务和支持它们�
 |Office 365 商业高级版     |    Microsoft 365 商业标准版     |
 |Microsoft 365 商业版     |    Microsoft 365 商业高级版     |
 |Office 365 商业版     |    Microsoft 365 商业应用版       |
-|Office 365 ProPlus    |   Microsoft 365 企业应用版      |
+|Office 365 专业增强版    |   Microsoft 365 企业应用版      |
 
 ### <a name="videos-training-and-docs"></a>视频、培训和文档
 
@@ -398,46 +419,3 @@ Productivity Score 提供人们如何使用 Microsoft 云服务和支持它们�
 - **Microsoft 365** 视频系列中的新增功能：本月，我们专注于 SharePoint Online 的自定义搜索功能、Office"新增功能"管理功能，通过应用内帮助窗格向最终用户显示或隐藏特定功能、Yammer 中的最新安全性和合规性更新等。 以下是最新的一集[：Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=2118096)中的新增功能
 
 - **文档移动**：我们将 Office 365 管理 Web 文章与 Microsoft 365 内容相结合，你可能已注意到新 URL。 例如，本文以前托管在 **：docs.microsoft.com/Office365/Admin/whats-new-in-preview**，但 URL 现在为 **：docs.microsoft.com/microsoft-365/admin/whats-new-in-preview**。 如果为页面添加书签，应更新链接;但是，内容链接将重定向到新的内容存储库。
-
-## <a name="january-2020---happy-new-year"></a>2020 年 1 月 - 新的一年快乐
-
-> [!NOTE]
-> 你是否知道 YouTube 上有 [一个 Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=2118096) 中的新增功能视频系列？ 它重点介绍了我们向用户推出的最新功能。 每月，我们都会开始链接到视频、培训和 [文档部分中的最新剧](#videos-training-and-docs) 集。 <br> <br> 以下是最新的一集[：Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=2118096)中的新增功能
-
-### <a name="dark-mode"></a>深色模式
-
-当我们首次推出深色模式时，它仅在主页上可用。 深色模式现已退出预览模式，并位于管理中心内大部分页面的定向发布中。
-
-1. 首先，你需要打开定向发布：**转到设置** 设置 \>  \> **组织配置文件** \> **发布首选项**。
-1. 然后，若要打开深色模式，请转到 **主页** ，然后选择深色 **模式** 按钮。  ("搜索"字段旁边，本文的"新增功能 **"** 链接) 
-1. 对于提供深色模式的任何页面，该按钮位于页面顶部，旁边是"新建管理 **中心"** 切换按钮。
-
-### <a name="office-whats-new-management"></a>Office 新增管理
-
-管理员希望控制 Microsoft 如何在 Office 应用中向用户传达"新增功能"，你现在拥有该控制权。 转到设置 \> **Office 新增管理预览**。 选择一个功能以查看其详细信息，然后，如果你不希望用户看到特定的"新增功能"消息，可以选择"向用户隐藏"按钮。 例如，您的组织可能在等待让用户了解功能，直到组织中的每个人都接受有关该功能进行培训。
-
-![打开功能详细信息窗格的"Office 新增功能预览"的屏幕截图。](../media/whatsnew-officemgmt-preview.png)
-
-此功能在 11 月首次发布预览，但有几个功能更新你应了解[：Office 新增](https://techcommunity.microsoft.com/t5/microsoft-365-blog/office-what-s-new-management-preview/ba-p/1020438)管理预览更新现已发布
-
-### <a name="partners"></a>合作伙伴
-
-Howdy， Partners！  (无法帮助自己。) 我们本月也收到了一个更新。 有一项新功能允许合作伙伴向云解决方案提供商客户提供在管理中心的"计费帐户"部分接受其 Microsoft 客户协议 (MCA ) 的选项。 在此新体验中：
-
-1. 客户会收到一封包含接受合作关系和 MCA 的链接的邀请电子邮件。
-2. 客户登录后，他们可以查看并接受 MCA 和合作伙伴权限-从管理中心查看和接受。
-
-### <a name="resource-mailboxes"></a>资源邮箱
-
-资源邮箱列表已更新为新样式。 在 Microsoft 365 管理中心中，转到"**资源**""会议室 \> **&设备"。**
-
-### <a name="videos-training-and-docs-january"></a>) 年 1 月 (视频、培训和文档
-
-查看我们在 1 月发布的小型企业管理员培训：
-
-- [创建业务网站](https://support.microsoft.com/office/3325d50e-d131-403c-a278-7f3296fe33a9)
-- [查找答案和帮助](https://support.microsoft.com/office/7f681212-c649-4a3e-a43b-32b1d1e58988)
-- [获取帮助或支持](https://support.microsoft.com/office/18948a4c-3eb1-4b30-b1bc-a4cc29eb7655)
-- [删除用户](https://support.microsoft.com/office/6bcdad7b-732a-4260-997a-8c176bc3d9d6)
-- [选择 Microsoft 订阅](https://support.microsoft.com/office/b9f7c78e-430f-4117-89ec-2eeb1dced2ca)
-- [Microsoft 365 商业版安全性概述](https://support.microsoft.com/office/3274b159-a825-46d7-9421-7d6e209389d1)

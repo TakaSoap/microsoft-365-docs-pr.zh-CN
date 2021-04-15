@@ -1,5 +1,5 @@
 ---
-title: 使用防篡改保护保护安全设置
+title: 使用篡改保护保护安全设置
 ms.reviewer: shwjha, hayhov
 manager: dansimp
 description: 使用防篡改保护防止恶意应用更改重要安全设置。
@@ -9,20 +9,20 @@ ms.pagetype: security
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
-ms.localizationpriority: medium
+localization_priority: normal
 audience: ITPro
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
 ms.technology: mde
-ms.openlocfilehash: 147247435564133502f33d33799d05ef809e0427
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 84864965d7a18902a01307c1dcf373fa7c0534e8
+ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51690197"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51765571"
 ---
-# <a name="protect-security-settings-with-tamper-protection"></a>使用防篡改保护保护安全设置
+# <a name="protect-security-settings-with-tamper-protection"></a>使用篡改保护保护安全设置
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -225,7 +225,7 @@ ms.locfileid: "51690197"
 
 若要了解有关威胁和漏洞&，请参阅 Microsoft Defender 安全& [中的威胁和漏洞管理](/microsoft-365/security/defender-endpoint/tvm-dashboard-insights#threat--vulnerability-management-in-microsoft-defender-security-center)。
 
-## <a name="frequently-asked-questions"></a>常见问题解答
+## <a name="frequently-asked-questions"></a>常见问题
 
 ### <a name="to-which-windows-os-versions-is-configuring-tamper-protection-is-applicable"></a>哪些 Windows 操作系统版本配置篡改保护适用？
 
@@ -297,4 +297,4 @@ Windows 10 OS 1709、1803、1809 或更高版本与[Microsoft Defender for Endpo
 
 [获取适用于终结点的 Microsoft Defender 的概述](/microsoft-365/security/defender-endpoint)
 
-[更好地结合：Microsoft Defender 防病毒和 Microsoft Defender for Endpoint](why-use-microsoft-defender-antivirus.md)
+[更好地结合：Microsoft Defender 防病毒软件和 Microsoft Defender for Endpoint](why-use-microsoft-defender-antivirus.md)

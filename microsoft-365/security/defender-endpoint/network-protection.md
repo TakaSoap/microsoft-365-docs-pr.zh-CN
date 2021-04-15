@@ -16,12 +16,12 @@ manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: how-to
-ms.openlocfilehash: ae7dbea7d476e8a8f6198378e1d1bb29e24c37a2
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 95c87330eec3cb557e5fea96148d626b7e0ee4b3
+ms.sourcegitcommit: 4acf613587128cae27e0fd470d1216b509775529
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51688341"
+ms.lasthandoff: 04/15/2021
+ms.locfileid: "51768910"
 ---
 # <a name="protect-your-network"></a>保护你的网络
 
@@ -35,7 +35,7 @@ ms.locfileid: "51688341"
 
 网络保护有助于减少基于 Internet 的事件对设备的攻击面。 它防止员工使用任何应用程序访问可能承载网络钓鱼欺诈、攻击和 Internet 上的其他恶意内容危险域。 网络保护扩展了 Microsoft [Defender SmartScreen](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview) 的范围，以阻止所有基于域或主机名 (尝试连接到低信誉源 (的出站 HTTP) ) 。
 
-从 Windows 10 版本 1709 开始，Windows 支持网络保护。 网络保护在其他操作系统上尚不受支持，但使用第三个基于 Chromium 的新 Microsoft Edge 支持 Web 保护。 若要了解更多信息，请参阅 [Web 保护](web-protection-overview.md)。
+从 Windows 10 版本 1709 开始，Windows 支持网络保护。 网络保护在其他操作系统上尚不受支持，但使用基于 Chromium 的新 Microsoft Edge 支持 Web 保护。 若要了解更多信息，请参阅 [Web 保护](web-protection-overview.md)。
 
 网络保护将 Web 保护 [中的保护扩展到](web-protection-overview.md) 操作系统级别。 它在 Edge 中为其他受支持的浏览器和非浏览器应用程序提供 Web 保护功能。 此外，当与终结点检测和响应一 (ICS 时，网络保护) 和阻止泄露[指示器。](overview-endpoint-detection-response.md) 例如，网络保护适用于你的 [自定义指示器](manage-indicators.md)。
 

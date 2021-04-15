@@ -7,19 +7,19 @@ ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-ms.localizationpriority: medium
+localization_priority: normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 042bb67c223631ae1759b62a32c2f5713b4d62e8
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 7635209c03dfc0367df16bfb650a4e52d2b2b3f8
+ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51689922"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51765319"
 ---
 # <a name="microsoft-defender-antivirus-in-the-windows-security-app"></a>Windows 安全应用中的 Microsoft Defender 防病毒
 
@@ -108,7 +108,7 @@ Windows 安全应用是 Windows 10 版本 1703 及更高版本上的客户端接
 
 |排除类型  |定义者  |发生的情况  |
 |---------|---------|---------|
-|**File** |位置 <br/>示例：`c:\sample\sample.test` |Microsoft Defender 防病毒将跳过特定文件。 |
+|**文件** |位置 <br/>示例：`c:\sample\sample.test` |Microsoft Defender 防病毒将跳过特定文件。 |
 |**Folder**    |位置 <br/>示例：`c:\test\sample`       |Microsoft Defender 防病毒将跳过指定文件夹中的所有项目。         |
 |**文件类型**   |文件扩展名 <br/>示例：`.test` |Microsoft Defender 防病毒将跳过设备上任意位置具有扩展 `.test` 名的所有文件。         |
 |**进程**     |可执行文件路径 <br>示例：`c:\test\process.exe`         |Microsoft Defender 防病毒将跳过特定进程以及该进程打开的任何文件。         |

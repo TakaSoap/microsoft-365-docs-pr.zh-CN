@@ -22,12 +22,12 @@ ms.custom:
 - seo-marvel-mar2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 6dfa22b2afb33c318eae8937888b5b75a1742938
-ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
+ms.openlocfilehash: 9850506771f53b125c08b1df2149ee024191d823
+ms.sourcegitcommit: 4acf613587128cae27e0fd470d1216b509775529
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "51599459"
+ms.lasthandoff: 04/15/2021
+ms.locfileid: "51768862"
 ---
 # <a name="automated-investigation-and-response-air-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 (AIR) 自动调查和响应
 
@@ -123,7 +123,7 @@ Microsoft 365 提供了许多内置警报策略，可帮助识别 Exchange 管�
 
 ## <a name="changes-are-coming-soon-in-your-security-center"></a>即将在安全中心内进行更改
 
-如果你已在 Microsoft Defender for Office 365 中使用 AIR 功能，你将在改进的 [Microsoft 365](../defender/overview-security-center.md)安全中心看到一些更改。 
+如果你已在 Microsoft Defender for Office 365 中使用 AIR 功能，你将在改进的 [Microsoft 365](../defender/overview-security-center.md)安全中心看到一些更改。
 
 :::image type="content" source="../../media/m3d-action-center-unified.png" alt-text="统一操作中心":::
 

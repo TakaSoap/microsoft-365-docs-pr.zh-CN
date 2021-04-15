@@ -25,7 +25,7 @@ ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/14/2021
-ms.locfileid: "51755568"
+ms.locfileid: "51759926"
 ---
 # <a name="create-edit-or-delete-a-custom-user-view"></a>创建、编辑或删除自定义用户视图
 

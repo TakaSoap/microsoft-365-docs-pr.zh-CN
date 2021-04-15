@@ -16,14 +16,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 726a85969dab715a1b6244f14d1bf0259cf301e8
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 4c44e2c73eabcb89c178235bc3ce6738d2322dfa
+ms.sourcegitcommit: 4acf613587128cae27e0fd470d1216b509775529
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51163371"
+ms.lasthandoff: 04/15/2021
+ms.locfileid: "51768982"
 ---
-# <a name="contact-microsoft-defender-for-endpoint-support"></a>联系 Microsoft Defender for Endpoint 支持
+# <a name="contact-microsoft-defender-for-endpoint-support"></a>联系 Microsoft Defender for Endpoint 客户服务
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -79,8 +79,8 @@ Defender for Endpoint 最近升级了支持流程，可提供更现代、更高�
 
 了解如何通过联系 Defender for Endpoint 支持来打开支持票证。 
 
-
-
+> [!Note]
+> 如果你有与 Microsoft 的协助支持合同，你将在小组件上看到顶级标记。 如果没有，请联系你的 Microsoft 帐户经理。
 
 ### <a name="contact-support"></a>联系支持人员
 通过单击看起来像耳机的图标可使用此选项。 然后，你将获取以下页面以提交支持案例：
@@ -95,5 +95,5 @@ Defender for Endpoint 最近升级了支持流程，可提供更现代、更高�
 
 
 ## <a name="related-topics"></a>相关主题
-- [解决服务问题](troubleshoot-mdatp.md)
+- [服务疑难解答](troubleshoot-mdatp.md)
 - [检查服务运行状况](service-status.md)

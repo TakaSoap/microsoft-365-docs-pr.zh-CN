@@ -20,7 +20,7 @@ ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/14/2021
-ms.locfileid: "51755544"
+ms.locfileid: "51759962"
 ---
 # <a name="migrating-from-a-third-party-hips-to-asr-rules"></a>从第三方 HIPS 迁移到 ASR 规则
 

@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 93715f761beded95cfaa91b4747a2e4b5a3c61c1
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: bf837dca5f05310045c06178b8fc587f3fc55137
+ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51689673"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51765775"
 ---
 # <a name="privacy-for-microsoft-defender-for-endpoint-on-macos"></a>macOS 上适用于终结点的 Microsoft Defender 的隐私
 
@@ -33,7 +33,6 @@ ms.locfileid: "51689673"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > 想要体验 Microsoft Defender for Endpoint？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
-
 
 Microsoft 致力于为您提供在 macOS 上使用 Microsoft Defender for Endpoint 时，选择收集和使用数据方式时需要的信息和控件。
 

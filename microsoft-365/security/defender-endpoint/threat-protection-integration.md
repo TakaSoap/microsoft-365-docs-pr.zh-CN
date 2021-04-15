@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 287ad9adeccd527b756bdd5304d3c89fc1b2d789
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 7d12afd27288655f4f5a82eeed24686f27171a7a
+ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51056506"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51765391"
 ---
 # <a name="microsoft-defender-for-endpoint-and-other-microsoft-solutions"></a>Microsoft Defender for Endpoint 和其他 Microsoft 解决方案
 
@@ -45,7 +45,7 @@ Microsoft Defender for Endpoint 提供了全面的服务器保护解决方案，
 Microsoft Defender for Endpoint 连接器允许你将来自 Microsoft Defender for Endpoint 的警报流式传输至 Azure Sentinel。 这将使您能够更全面分析整个组织的安全事件，并生成有效且即时响应的手册。
 
 ### <a name="azure-information-protection"></a>Azure 信息保护
-确保敏感数据安全，同时通过数据发现和数据保护在工作场所中提高工作效率。
+我们最近弃用 Azure 信息保护集成，因为我们的 Endpoint DLP 功能包含针对存储在终结点设备上敏感数据的改进的发现和保护解决方案，以便提高解决方案的可见性和集成。 这是在下面的博客中 [宣布的](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/protecting-sensitive-information-on-devices/ba-p/2143555)。 我们建议客户开始使用 Endpoint DLP。
 
 ### <a name="conditional-access"></a>条件访问
 Microsoft Defender for Endpoint 的动态设备风险评分已集成到条件访问评估中，确保只有安全设备有权访问资源。 

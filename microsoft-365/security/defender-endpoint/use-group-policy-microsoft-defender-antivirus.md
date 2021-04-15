@@ -6,7 +6,7 @@ search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
-ms.localizationpriority: medium
+localization_priority: normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
@@ -16,12 +16,12 @@ manager: dansimp
 ms.technology: mde
 audience: ITPro
 ms.topic: how-to
-ms.openlocfilehash: b8122807b8e26a848781f9f66f8e13032345f3fd
-ms.sourcegitcommit: 07dea2aa98daf0c4086f8590375167830027c802
+ms.openlocfilehash: e8d3cbd58b80d6c393b8d7173c61509b26a29b4a
+ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51749910"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51765655"
 ---
 # <a name="use-group-policy-settings-to-configure-and-manage-microsoft-defender-antivirus"></a>使用组策略设置配置和管理 Microsoft Defender 防病毒
 
@@ -64,8 +64,8 @@ ms.locfileid: "51749910"
 | MAPS | 加入 Microsoft MAPS | [启用云保护](enable-cloud-protection-microsoft-defender-antivirus.md) |
 | MAPS | 需要进一步分析时发送文件示例 | [启用云保护](enable-cloud-protection-microsoft-defender-antivirus.md) |
 | MAPS | 配置向 Microsoft MAPS 报告的本地设置替代 | [阻止或允许用户在本地修改策略设置](configure-local-policy-overrides-microsoft-defender-antivirus.md) |
-| MpEngine | 配置扩展云检查 | [配置云阻止超时时段](configure-cloud-block-timeout-period-microsoft-defender-antivirus.md) |
-| MpEngine | 选择云保护级别 | [指定云提供的保护级别](specify-cloud-protection-level-microsoft-defender-antivirus.md) |
+| MpEngine | 配置扩展云检查 | [配置云块超时时间段](configure-cloud-block-timeout-period-microsoft-defender-antivirus.md) |
+| MpEngine | 选择云保护级别 | [指定云传递的保护级别](specify-cloud-protection-level-microsoft-defender-antivirus.md) |
 | 网络检查系统 | 为网络流量检查指定其他定义集 | 不再相关 |
 | 网络检查系统 | 启用定义停用 | 不再相关 |
 | 网络检查系统 | 打开协议识别 | 不再相关 |
@@ -126,8 +126,8 @@ ms.locfileid: "51749910"
 | 扫描 | 指定每日快速扫描的时间 | [配置 Microsoft Defender 防病毒的计划扫描](scheduled-catch-up-scans-microsoft-defender-antivirus.md) |
 | 扫描 | 指定运行计划扫描的时间 | [配置 Microsoft Defender 防病毒的计划扫描](scheduled-catch-up-scans-microsoft-defender-antivirus.md) |
 | 扫描 | 仅在计算机打开但没有使用时启动计划扫描 | [配置 Microsoft Defender 防病毒的计划扫描](scheduled-catch-up-scans-microsoft-defender-antivirus.md) |
-| 安全智能更新 | 允许 Microsoft 更新中的安全智能更新 | [使用虚拟机管理移动设备和虚拟机 (更新) ](manage-updates-mobile-devices-vms-microsoft-defender-antivirus.md) |
-| 安全智能更新 | 使用电池电源运行时允许安全智能更新 | [使用虚拟机管理移动设备和虚拟机 (更新) ](manage-updates-mobile-devices-vms-microsoft-defender-antivirus.md) |
+| 安全智能更新 | 允许 Microsoft 更新中的安全智能更新 | [管理移动设备和虚拟机 （VM） 的更新](manage-updates-mobile-devices-vms-microsoft-defender-antivirus.md) |
+| 安全智能更新 | 使用电池电源运行时允许安全智能更新 | [管理移动设备和虚拟机 （VM） 的更新](manage-updates-mobile-devices-vms-microsoft-defender-antivirus.md) |
 | 安全智能更新 | 允许通知禁用向 Microsoft MAPS 发送的基于定义的报告 | [管理基于事件的强制更新](manage-event-based-updates-microsoft-defender-antivirus.md) |
 | 安全智能更新 | 允许基于 Microsoft MAPS 报告进行实时安全智能更新 | [管理基于事件的强制更新](manage-event-based-updates-microsoft-defender-antivirus.md) |
 | 安全智能更新 | 启动时检查最新的病毒和间谍软件定义 | [管理基于事件的强制更新](manage-event-based-updates-microsoft-defender-antivirus.md) |

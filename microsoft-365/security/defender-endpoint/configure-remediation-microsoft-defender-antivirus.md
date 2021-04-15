@@ -1,5 +1,5 @@
 ---
-title: 配置 Microsoft Defender 防病毒检测的修正
+title: 为 Microsoft Defender 防病毒检测配置修正
 description: 配置 Microsoft Defender 防病毒在检测到威胁时应执行哪些操作，以及隔离文件应在隔离文件夹中保留多久
 keywords: 修正， 修复， 删除， 威胁， 隔离， 扫描， 还原
 search.product: eADQiWindows 10XVcnh
@@ -7,7 +7,7 @@ ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-ms.localizationpriority: medium
+localization_priority: normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
@@ -15,14 +15,14 @@ ms.date: 03/16/2021
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 7f41e9c5b38e93ce84fbd971e02ebc2d77432c3f
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 98bc079bcfd772ada52d699d5f873a187d4ab4c1
+ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51689909"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51765055"
 ---
-# <a name="configure-remediation-for-microsoft-defender-antivirus-detections"></a>配置 Microsoft Defender 防病毒检测的修正
+# <a name="configure-remediation-for-microsoft-defender-antivirus-detections"></a>为 Microsoft Defender 防病毒检测配置修正
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -69,9 +69,9 @@ ms.locfileid: "51689909"
 
 ## <a name="see-also"></a>另请参阅
 
-- [配置 Microsoft Defender 防病毒扫描选项](configure-advanced-scan-types-microsoft-defender-antivirus.md)
+- [配置 Microsoft Defender 防病毒软件扫描选项](configure-advanced-scan-types-microsoft-defender-antivirus.md)
 - [配置计划的 Microsoft Defender 防病毒扫描](scheduled-catch-up-scans-microsoft-defender-antivirus.md)
-- [配置并运行按需 Microsoft Defender 防病毒扫描](run-scan-microsoft-defender-antivirus.md)
+- [配置并运行按需 Microsoft Defender 防病毒软件扫描](run-scan-microsoft-defender-antivirus.md)
 - [配置终结点上显示的通知](configure-notifications-microsoft-defender-antivirus.md)
 - [配置最终用户 Microsoft Defender 防病毒交互](configure-end-user-interaction-microsoft-defender-antivirus.md)
 - [自定义、启动和查看 Microsoft Defender 防病毒扫描和修正的结果](customize-run-review-remediate-scans-microsoft-defender-antivirus.md)

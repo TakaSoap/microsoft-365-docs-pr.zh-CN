@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 18422f74d87bbadf014de24849235ce5c25bd614
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: baaebd185389e7ac1f2173aed092141067a5629f
+ms.sourcegitcommit: 4acf613587128cae27e0fd470d1216b509775529
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50920464"
+ms.lasthandoff: 04/15/2021
+ms.locfileid: "51768886"
 ---
 # <a name="device-requirements"></a>设备要求
 
@@ -46,7 +46,7 @@ Microsoft 托管桌面会定期评估要包含在服务中的设备要求。 本
 设备必须预安装此软件：
 
 - Windows 10 企业版、专业版或专业工作站版
-- 64 位版本的 Microsoft Office单击即可运行 
+- 64 位版本的 Microsoft 365 企业应用版 
 - 所有适用的设备驱动程序
 
 
@@ -57,7 +57,7 @@ Microsoft 托管桌面会定期评估要包含在服务中的设备要求。 本
 - 启用 UEFI 安全启动 
 - 受信任的平台模块 2.0 
 - 具有基于虚拟化的安全性 
-- 支持虚拟机监控程序保护的代码完整性 
+- BIOS[支持的虚拟机监控](/windows-hardware/drivers/bringup/device-guard-and-credential-guard)程序保护的代码完整性
 
 有关这些功能以及服务使用的与这些功能相关的技术，请参阅 [Microsoft 托管桌面技术](../intro/technologies.md)。
 
@@ -72,12 +72,13 @@ Microsoft 托管桌面会定期评估要包含在服务中的设备要求。 本
 
 如果设备是在 2020 年 7 月 1 日之后进行，它还应具有 IR 相机和/或指纹读取器，以便支持[Windows Hello。](/windows-hardware/design/device-experiences/windows-hello-enhanced-sign-in-security)
 
-## <a name="recommended-requirements"></a>建议的要求
+## <a name="recommended-features"></a>推荐的功能
 
-虽然这不是绝对要求，但如果选择具有这些功能的设备，你的用户将拥有更好的体验：
+如果你选择具有这些功能的设备，你的用户将拥有更好的体验：
 
 - Intel vPro 平台处理器或 AMD Ryzen Pro 处理器
 - 容量至少为 256 GB 的 SSD 类型的启动驱动器
+- 内部设备内存 (内存) 至少为 16 GB
 - 对现代待机的支持
 - 设备为安全核心电脑类型
 - 支持内核 DMA 保护

@@ -7,21 +7,21 @@ ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-ms.localizationpriority: medium
+localization_priority: normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 7a0e0571445e8ec753c3813a81dbcca9c698e7df
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 9fc51682b659670a21c3c293ea8996beb228802a
+ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51689913"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51765067"
 ---
-# <a name="configure-behavioral-heuristic-and-real-time-protection"></a>配置行为、启发式和实时保护
+# <a name="configure-behavioral-heuristic-and-real-time-protection"></a>配置方案、高要求和实时保护
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -46,5 +46,5 @@ Microsoft Defender 防病毒使用多种方法来提供威胁防护：
 
  主题 | 说明
 ---|---
-[检测和阻止可能不需要的应用程序](detect-block-potentially-unwanted-apps-microsoft-defender-antivirus.md) | 检测并阻止网络中可能不需要的应用，如广告软件、浏览器修饰符和工具栏以及未授权或伪造的防病毒应用
+[检测并阻止可能不需要的应用程序](detect-block-potentially-unwanted-apps-microsoft-defender-antivirus.md) | 检测并阻止网络中可能不需要的应用，如广告软件、浏览器修饰符和工具栏以及未授权或伪造的防病毒应用
 [启用和配置 Microsoft Defender 防病毒保护功能](configure-real-time-protection-microsoft-defender-antivirus.md) | 启用和配置实时保护、启发和其他始终启用的 Microsoft Defender 防病毒监视功能

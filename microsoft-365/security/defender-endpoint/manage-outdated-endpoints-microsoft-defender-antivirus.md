@@ -7,7 +7,7 @@ ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-ms.localizationpriority: medium
+localization_priority: normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
@@ -15,12 +15,12 @@ ms.date: 09/03/2018
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 3f56c18b66a27adfb1384f5c3f5e6c06034247d4
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 81c7fb2bb7cd20fea3f343097811078ed744c3eb
+ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51689945"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51765367"
 ---
 # <a name="manage-microsoft-defender-antivirus-updates-and-scans-for-endpoints-that-are-out-of-date"></a>管理 Microsoft Defender 防病毒更新并扫描过期的终结点
 
@@ -186,5 +186,5 @@ DisableCatchupQuickScan
 - [管理 Microsoft Defender 防病毒更新和应用基线](manage-updates-baselines-microsoft-defender-antivirus.md)
 - [管理何时应下载和应用保护更新](manage-protection-update-schedule-microsoft-defender-antivirus.md)
 - [管理基于事件的强制更新](manage-event-based-updates-microsoft-defender-antivirus.md)
-- [使用虚拟机管理移动设备和虚拟机 (更新) ](manage-updates-mobile-devices-vms-microsoft-defender-antivirus.md)
+- [管理移动设备和虚拟机 （VM） 的更新](manage-updates-mobile-devices-vms-microsoft-defender-antivirus.md)
 - [Windows 10 中的 Microsoft Defender 防病毒](microsoft-defender-antivirus-in-windows-10.md)
