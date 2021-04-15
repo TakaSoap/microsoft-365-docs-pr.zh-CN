@@ -54,7 +54,7 @@ ms.locfileid: "51644640"
 你的订阅现显示为“**禁用**”状态，且在删除之前功能缩减。 若要深入了解在取消付费 Microsoft 365 商业版订阅后会发生什么情况，请参阅 [我的 Microsoft 365 商业版订阅结束后对我的数据和访问权限有何影响？](what-if-my-subscription-expires.md)
 
 > [!NOTE]
-> 如果明确删除订阅，则它将跳过过期和禁用的阶段，并且立即删除 SharePoint Online 数据和内容（包括 OneDrive）。
+> 如果显式删除订阅，则它将跳过过期和禁用阶段，而且会立即删除 SharePoint Online 数据和内容（包括 OneDrive）。
 
 ::: moniker-end
 

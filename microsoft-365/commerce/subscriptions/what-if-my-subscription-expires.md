@@ -66,10 +66,10 @@ ms.locfileid: "51644652"
 要了解如何取消，请参阅 [取消订阅](cancel-your-subscription.md)。
   
 > [!IMPORTANT]
-> 如果希望在典型的禁用期结束之前删除订阅数据，可以 [关闭帐户](../close-your-account.md)。
+> 如果希望在象征性的禁用期结束前删除订阅数据，可以[关闭帐户](../close-your-account.md)。
   
 > [!NOTE]
-> 如果明确删除订阅，则它将跳过过期和禁用的阶段，并且立即删除 SharePoint Online 数据和内容（包括 OneDrive）。
+> 如果显式删除订阅，则它将跳过过期和禁用阶段，而且会立即删除 SharePoint Online 数据和内容（包括 OneDrive）。
 
 ## <a name="what-are-my-options-if-my-subscription-is-about-to-expire"></a>我的订阅即将过期时我有哪些选择？
 

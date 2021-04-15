@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: 193e7e634ecf8407816db10c820edcd241b94b12
-ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
+ms.openlocfilehash: 4f3b2b54370e3481699a540dd8fd2acc30be7514
+ms.sourcegitcommit: 4acf613587128cae27e0fd470d1216b509775529
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51760160"
+ms.lasthandoff: 04/15/2021
+ms.locfileid: "51768874"
 ---
 # <a name="troubleshoot-microsoft-defender-for-endpoint-onboarding-issues"></a>Microsoft Defender 终结点载入问题疑难解答
 
@@ -302,8 +302,8 @@ WinHTTP 独立于 Internet 浏览代理设置和其他用户上下文应用程�
 
 如果在载入服务器时遇到问题，请执行以下验证步骤来解决可能的问题。
 
-- [确保已安装并 (MMA) Microsoft Monitoring Agent 向服务报告传感器数据](configure-server-endpoints.md#server-mma)
-- [确保正确配置服务器代理和 Internet 连接设置](configure-server-endpoints.md#server-proxy)
+- [确保已安装并 (MMA) Microsoft Monitoring Agent 向服务报告传感器数据](configure-server-endpoints.md)
+- [确保正确配置服务器代理和 Internet 连接设置](configure-server-endpoints.md)
 
 您可能还需要检查以下内容：
 
