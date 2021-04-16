@@ -21,21 +21,14 @@ search.appverid:
 - MET150
 description: 了解如何同时添加用户和为 Microsoft 365 分配许可证。
 ms.date: 07/01/2020
-ms.openlocfilehash: 3c752bd12c0aeb3806ad7d5d90373aad13730944
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: a7c5fcf1a129a1d434b6e641688ce4c5d234817d
+ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50906296"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51759998"
 ---
 # <a name="add-users-and-assign-licenses-at-the-same-time"></a>同时添加用户和分配许可证
-
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> 管理中心正在发生改变。 如果你的体验与此处提供的详细信息不匹配，请参阅[有关新版 Microsoft 365 管理中心](../microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet)。
-
-::: moniker-end
 
 团队中的每个人都需要用户帐户，然后他们才能登录和访问 [Microsoft 365 商业版](https://www.microsoft.com/microsoft-365/business)。 添加用户帐户的最简单方法是在 Microsoft 365 管理中心一次添加一个帐户。 执行此步骤后，你的用户拥有 Microsoft 365 许可证、登录凭据和 Microsoft 365 邮箱。
 
@@ -52,10 +45,25 @@ ms.locfileid: "50906296"
 
 ## <a name="add-users-one-at-a-time"></a>逐个添加用户
 
-::: moniker range="o365-worldwide"
+ ::: moniker range="o365-worldwide"
 
-1. 转到位于 <https://admin.microsoft.com> 的管理中心。
-2. 转到“**用户**”>“**活动用户**”，然后选择“**添加用户**”。
+1. 转到位于 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> 的管理中心。
+
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+1. 转到位于 <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">https://portal.office.de</a> 的管理中心。
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. 转到位于 <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">https://portal.partner.microsoftonline.cn</a> 的管理中心。
+
+::: moniker-end 
+
+2. 转到“**用户**” > “**活动用户**”，然后选择“**添加用户**”。
 3. 在“**设置基本信息**”窗格中，填写基本用户信息，然后选择“**下一步**”。
     - **姓名** 填写名字和姓氏、显示名和用户名。
     - **域** 为用户帐户选择域。 例如，如果用户的用户名是 Jakob，并且该域为 contoso.com，他们将通过使用 jakob@contoso.com 登录。
@@ -65,36 +73,6 @@ ms.locfileid: "50906296"
 4. 在“**分配产品许可证**”窗格中，为用户选择位置和相应的许可证。 如果没有可用的许可证，仍然可以添加用户并购买其他许可证。 展开“**应用**”并选择或取消选择应用，以限制用户拥有许可证的应用。 选择“**下一步**”。
 5. 在“**可选设置**”窗格中，展开“**角色**”以使此用户成为管理员。展开“**个人资料信息**”以添加有关用户的其他信息。
 6. 选择“**下一步**”，查看新用户的设置，按自己的喜好更改，然后依次选择“**完成添加**”和“**关闭**”。
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. 转到位于 <https://portal.office.de/adminportal> 的管理中心。
-2. 转到“**用户**”>“**活动用户**”，然后选择“**添加用户**”。
-3. 在“**新用户**”窗格中，填写以下信息。 完成后，选择“**添加**”。
-    - **姓名** 填写名字、姓氏、显示名和用户名。
-    - **域** 例如，如果用户名为 Jakob，其域为 contoso.com，则用户将通过键入 jakob@contoso.com 来登录。
-    - **联系人信息** 展开以填写移动电话号码、地址等。
-    - **密码** 使用自动生成的密码或展开以为用户指定强密码。 必须在 90 天后更改密码。 也可以选择 **允许此用户在首次登录时更改其密码**。
-    - **角色** 如果需要使此用户成为管理员，请展开。
-    - **产品许可证** 展开此部分，并选择相应的许可证。如果没有可用的许可证，仍然可以添加用户并购买更多许可证。
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-1. 转到位于 <https://portal.partner.microsoftonline.cn> 的管理中心。
-2. 转到“**用户**”>“**活动用户**”，然后选择“**添加用户**”。
-3. 在“**新用户**”窗格中，填写以下信息。 完成后，选择“**添加**”。
-    - **姓名** 填写名字、姓氏、显示名和用户名。
-    - **域** 例如，如果用户名为 Jakob，其域为 contoso.com，则用户将通过键入 jakob@contoso.com 来登录。
-    - **联系人信息** 展开以填写移动电话号码、地址等。
-    - **密码** 使用自动生成的密码或展开以为用户指定强密码。 必须在 90 天后更改密码。 也可以选择 **允许此用户在首次登录时更改其密码**。
-    - **角色** 如果需要使此用户成为管理员，请展开。
-    - **产品许可证** 展开此部分，并选择相应的许可证。如果没有可用的许可证，仍然可以添加用户并购买更多许可证。
-
-::: moniker-end
 
 ## <a name="add-multiple-users-at-the-same-time"></a>同时添加多个用户
 

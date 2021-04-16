@@ -22,12 +22,12 @@ localization_priority: Priority
 description: 管理员可以了解 Exchange Online Protection (EOP) 中提供的防欺骗功能，该功能有助于缓解来自虚假发件人和域的网络钓鱼攻击。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 54b94e2d2cc0395ce7a9785887c253df3addf7fa
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 20294bf00c62e59da33b54ea0c8ee85f7b1372af
+ms.sourcegitcommit: 4acf613587128cae27e0fd470d1216b509775529
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51688773"
+ms.lasthandoff: 04/15/2021
+ms.locfileid: "51769018"
 ---
 # <a name="anti-spoofing-protection-in-eop"></a>EOP 中的防欺骗防护
 
@@ -120,7 +120,7 @@ Microsoft 区分两种不同类型的欺骗邮件：
 
   - `reason=000` 表示邮件未通过显式电子邮件身份验证。 `reason=001` 表示邮件未通过隐式电子邮件身份验证。
 
-  - SFTY 是邮件的安全级别。 9 表示网络钓鱼，22 表示跨域欺骗。
+  - `SFTY` SFTY 是邮件的安全级别。 9 表示网络钓鱼，22 表示跨域欺骗。
 
 > [!NOTE]
 > 如果您收到了类似 ***compauth=fail reason=###** _ 且需要知道组合身份验证 （compauth） 和欺骗相关值的消息，请参阅 [_Anti-spam message headers in Microsoft 365*](anti-spam-message-headers.md)。 或者直接转到 [*原因*](anti-spam-message-headers.md)代码。
