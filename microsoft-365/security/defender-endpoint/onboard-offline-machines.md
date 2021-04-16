@@ -1,7 +1,7 @@
 ---
 title: 在无法访问 Internet 的情况下载入设备以访问 Microsoft Defender for Endpoint
 ms.reviewer: ''
-description: 在没有 Internet 访问的情况下载入设备，以便它们可以将传感器数据发送到 Microsoft Defender ATP 传感器
+description: 在没有 Internet 访问的情况下载入设备，以便它们可以将传感器数据发送到 Microsoft Defender for Endpoint 传感器
 keywords: onboard， 服务器， vm， 本地， oms 网关， 日志分析， azure log analytics， mma
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: b31705a4e6dc8cdd480c8b43c2154a2d6ddacddd
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: fb5a9a4d35af2d400cdff1e417727e662738514e
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51186937"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51861343"
 ---
 # <a name="onboard-devices-without-internet-access-to-microsoft-defender-for-endpoint"></a>在无法访问 Internet 的情况下载入设备以访问 Microsoft Defender for Endpoint
 

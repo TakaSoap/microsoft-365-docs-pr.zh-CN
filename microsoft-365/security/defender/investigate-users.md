@@ -19,12 +19,12 @@ ms.topic: article
 search.appverid: met150
 ms.custom: seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: 6535493efb844f1413c569a28ebf36ddb05c167d
-ms.sourcegitcommit: 07dea2aa98daf0c4086f8590375167830027c802
+ms.openlocfilehash: 68fc924ee14932ebdf92ef76306ba00e352b6030
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51760196"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51861250"
 ---
 # <a name="investigate-users-in-microsoft-365-security-center"></a>调查 Microsoft 365 安全中心中的用户
 
@@ -34,16 +34,44 @@ ms.locfileid: "51760196"
 
 - Microsoft 365 Defender
 
-作为调查的一部分，你可能会发现用户受到威胁。
+事件调查的一部分可能包括用户帐户。 从"事件 **"** 和"用户"中事件 **&">">****开始**。 
 
-Microsoft 365 安全中心用户页面将来自 Microsoft Defender for Endpoint、Microsoft Defender for Identity 和 Microsoft Cloud App Security (的信息合并在一起，具体取决于你拥有哪些) 。 此页面是调查用户和潜在事件的理想起点。
-![用户页面](../../media/m3d-userpage.png)
+:::image type="content" source="../../media/investigate-incidents/incident-users.png" alt-text="事件的用户页面示例":::
 
-此页面显示特定于用户的安全风险的信息。 这包括一个分数，可帮助评估风险、导致用户的整体风险的最近事件和警报等。
+若要获取事件的用户帐户的快速摘要，请选择用户帐户名称旁边的选中标记。 下面是一个示例。
 
-可以从 Microsoft 365 安全中心的多个区域访问此页面。 可以从"用户"选项卡中的特定事件访问 **此页面** 。某些警报可能会将用户作为特定的受影响资产包含。 还可以搜索用户。  
+:::image type="content" source="../../media/investigate-users/incidents-ss-user-pane.png" alt-text="Microsoft 365 安全中心内事件的用户帐户摘要窗格示例":::
 
-若要详细了解如何调查用户和潜在风险，请在此 [Cloud App Security 教程中了解](/cloud-app-security/tutorial-ueba#:~:text=To%20identify%20who%20your%20riskiest,user%20page%20to%20investigate%20them)。
+从此处，可以选择" **转到用户页面** "以查看用户帐户的详细信息。 下面是一个示例。
+
+:::image type="content" source="../../media/investigate-users/incidents-ss-user-details.png" alt-text="Microsoft 365 安全中心内事件的用户帐户页面示例":::
+
+您还可以通过从"用户"页上的列表中选择用户帐户的名称来 **查看此页面。**
+
+Microsoft 365 安全中心用户页面将来自 Microsoft Defender for Endpoint、Microsoft Defender for Identity 和 Microsoft Cloud App Security (的信息合并在一起，具体取决于你拥有哪些) 。 
+
+此页面显示特定于用户帐户安全风险的信息。 这包括一个分数，可帮助评估风险以及导致用户的整体风险的最新事件和警报。
+
+在此页中，你可以执行以下附加操作： 
+
+- 将用户帐户标记为已泄露
+- 要求用户重新登录
+- 暂停用户帐户
+- 请参阅 Azure Active Directory (Azure AD) 用户帐户设置
+- 查看用户帐户拥有的文件
+- 查看与该用户共享的文件。 
+
+下面是一个示例。
+
+:::image type="content" source="../../media/investigate-users/incidents-ss-user-details-actions.png" alt-text="Microsoft 365 安全中心内针对事件的用户帐户的操作示例":::
+
+
+<!--
+You can access this page from multiple areas in the Microsoft 365 security center. You can access this page from a specific incident in the **Users** tab. Some alerts might include users as a specific affected asset. You can also search for users.  
+
+Learn more about how to investigate users and potential risk [in this Cloud App Security tutorial](/cloud-app-security/tutorial-ueba#:~:text=To%20identify%20who%20your%20riskiest,user%20page%20to%20investigate%20them).
+
+--> 
 
 ## <a name="related-topics"></a>相关主题
 

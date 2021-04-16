@@ -16,12 +16,12 @@ manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: how-to
-ms.openlocfilehash: 95c87330eec3cb557e5fea96148d626b7e0ee4b3
-ms.sourcegitcommit: 4acf613587128cae27e0fd470d1216b509775529
+ms.openlocfilehash: a22cab9185b2ece2e8e30c00ea747cca823f4920
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/15/2021
-ms.locfileid: "51768910"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51861141"
 ---
 # <a name="protect-your-network"></a>保护你的网络
 
@@ -42,7 +42,7 @@ ms.locfileid: "51768910"
 若要详细了解如何启用网络保护，请参阅 [启用网络保护](enable-network-protection.md)。 使用组策略、PowerShell 或 MDM CSP 在网络中启用和管理网络保护。
 
 > [!TIP]
-> 有关网络保护的工作原理 [，demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) Microsoft Defender ATP 测试站点。
+> 有关网络保护的工作原理，demo.wd.microsoft.com Microsoft Defender [](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) for Endpoint 测试站点。
 
 网络保护最适合 [Microsoft Defender for Endpoint](microsoft-defender-endpoint.md)，它为你提供有关 Exploit Protection 事件的详细报告，并作为警报调查方案的一部分 [进行阻止](investigate-alerts.md)。
 
@@ -82,7 +82,7 @@ DeviceEvents
 
 1. [直接复制 XML。](event-views.md)
 
-2. 选择“**确定**”。
+2. 选择“确定”。
 
 此过程将创建一个自定义视图，该视图筛选为只显示与网络保护相关的以下事件：
 

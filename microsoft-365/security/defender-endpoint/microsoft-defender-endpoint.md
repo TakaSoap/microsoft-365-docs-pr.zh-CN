@@ -1,7 +1,7 @@
 ---
 title: Microsoft Defender for Endpoint
 description: Microsoft Defender for Endpoint 是一个企业终结点安全平台，可帮助抵御高级永久性威胁。
-keywords: Microsoft Defender for Endpoint 简介， Microsoft Defender 高级威胁防护简介， Microsoft Defender ATP 简介， 网络安全， 高级永久性威胁， 企业安全， 计算机行为传感器， 云安全性， 分析， 威胁情报， 攻击面减少， 下一代保护， 自动调查和修正， Microsoft 威胁专家， 安全分数， 高级搜寻， Microsoft 威胁防护， 网络威胁搜寻
+keywords: Microsoft Defender for Endpoint 简介， Microsoft Defender 高级威胁防护简介， 适用于终结点的 Microsoft Defender 简介， 网络安全， 高级永久性威胁， 企业安全， 计算机行为传感器， 云安全性， 分析， 威胁情报， 攻击面减少， 下一代保护， 自动调查和修正， Microsoft 威胁专家， 安全分数， 高级搜寻， Microsoft 威胁防护， 网络威胁搜寻
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 8c5d02a4d76ae7e031ad9f3af0db282cc4cb45ed
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: adc7d780c1af73d8cb4fe229720ac2ed74f90251
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51187057"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51861823"
 ---
 # <a name="microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint
 
@@ -84,7 +84,7 @@ Defender for Endpoint 使用 Windows 10 中内置的技术和 Microsoft 强大�
 
 <a name="asr"></a>
 
-**[攻击面减少](overview-attack-surface-reduction.md)**<br>
+**[减少攻击面](overview-attack-surface-reduction.md)**<br>
 攻击面减少功能集在堆栈中提供第一道防线。 通过确保正确设置配置设置并应用攻击缓解技术，这些功能可以抵御攻击和利用。 这组功能还包括网络 [保护和](network-protection.md) [Web 保护](web-protection-overview.md)，用于控制对恶意 IP 地址、域和 URL 的访问。 
 
 <a name="ngp"></a>
@@ -104,7 +104,7 @@ Microsoft Defender for Endpoint 与快速响应高级攻击结合使用，提供
 
 <a name="ss"></a>
 
-**[Microsoft 设备安全分数](tvm-microsoft-secure-score-devices.md)**<br>
+**[设备的 Microsoft 安全功能分数](tvm-microsoft-secure-score-devices.md)**<br>
 
 Defender for Endpoint 包括适用于设备的 Microsoft 安全分数，可帮助你动态评估企业网络的安全状态、识别未受保护的系统，以及采取建议的操作来提高组织的整体安全性。
 

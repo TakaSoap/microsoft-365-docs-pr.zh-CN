@@ -1,6 +1,6 @@
 ---
-title: 准备 Microsoft Defender ATP 部署
-description: 在部署 Microsoft Defender ATP 时准备利益干系人审批、日程表、环境注意事项和采用顺序
+title: 准备 Microsoft Defender 终结点部署
+description: 在部署 Microsoft Defender for Endpoint 时准备利益干系人审批、日程表、环境注意事项和采用顺序
 keywords: 部署， 准备， 利益干系人， 时间线， 环境， 终结点， 服务器， 管理， 采用
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -19,12 +19,12 @@ ms.collection:
 - m365solution-scenario
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 2704aefb3f15cc3244de6580137fa12204bfc3ce
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: a59d09aa4de2644e9904eb854c183d0352aa65c9
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51187465"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51861163"
 ---
 # <a name="prepare-microsoft-defender-for-endpoint-deployment"></a>准备 Microsoft Defender 终结点部署
 
@@ -38,7 +38,7 @@ ms.locfileid: "51187465"
 
 部署适用于终结点的 Defender 的过程分三个阶段：
 
-| ![部署阶段 - 准备](images/phase-diagrams/prepare.png)<br>阶段 1：准备 | [![部署阶段 - 设置](images/phase-diagrams/setup.png)](production-deployment.md)<br>[阶段 2：设置](production-deployment.md) | [![部署阶段 - 载入](images/phase-diagrams/onboard.png)](onboarding.md)<br>[阶段 3：载入](onboarding.md) |
+| ![部署阶段 - 准备](images/phase-diagrams/prepare.png)<br>阶段 1：准备 | [![部署阶段 - 设置](images/phase-diagrams/setup.png)](production-deployment.md)<br>[阶段 2：设置](production-deployment.md) | [![部署阶段 - 载入](images/phase-diagrams/onboard.png)](onboarding.md)<br>[阶段 3：开始使用](onboarding.md) |
 | ----- | ----- | ----- |
 |*你在这里！* | ||
 
@@ -60,7 +60,7 @@ ms.locfileid: "51187465"
 
 -   I = 已通知此项目
 
-| 名称                 | Role                                                                                                                                                                                                          | 操作 |
+| 名称                 | Role                                                                                                                                                                                                          | Action |
 |----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------|
 | 输入名称和电子邮件 | **CISO (** 首席) 一名执行代表，他作为新技术部署 *的组织内部发起人。*                                                  | SO     |
 | 输入名称和电子邮件 | **网络防御运营中心 (CDOC)** CDOC 团队的代表，负责定义此更改如何与客户安全运营团队中的流程 *保持一致。*       | SO     |

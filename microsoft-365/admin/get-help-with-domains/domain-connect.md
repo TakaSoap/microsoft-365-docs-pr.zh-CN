@@ -21,21 +21,21 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: ec6f4bd8-5996-4505-ba68-afaf8a141fb9
-description: 了解如何使用启用域连接的注册机构，以及如何将域添加到 Microsoft 365。
-ms.openlocfilehash: 109255d82100e636e3472242866a519ff64a9e54
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+description: 了解如何使用启用了域连接的注册机构，以及如何将域添加到 Microsoft 365。
+ms.openlocfilehash: 5dec69f70273e6a9430ce5926ed07888e197adcd
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49655608"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51860651"
 ---
 # <a name="using-domain-connect"></a>使用域连接
 
  如果找不到要查找的内容，请 **[查看域常见问题解答](../setup/domains-faq.yml)**。
   
-[通过启用域 ](https://www.domainconnect.org/) 连接注册器，可以分三步将域添加到 Microsoft 365，此过程需要几分钟。 
+[启用域连接的 ](https://www.domainconnect.org/) 注册机构让你在一个需要几分钟的三步过程中将域添加到 Microsoft 365。 
   
-在向导中，我们只需确认你拥有该域，然后自动设置域记录，这样电子邮件就会发送到 Microsoft 365 和其他 Microsoft 365 服务（如 Teams）处理你的域。
+在向导中，我们将仅确认你拥有该域，然后自动设置域记录，因此电子邮件会发送到 Microsoft 365 和其他 Microsoft 365 服务（如 Teams）使用你的域。
   
 > [!NOTE]
 > 在开始此设置向导前，请确保你已禁用浏览器中的任何弹出窗口阻止程序。
@@ -48,12 +48,12 @@ ms.locfileid: "49655608"
 - [WordPress](https://wordpress.com/)
 - [Plesk](https://www.plesk.com/)
 - [MediaTemple](https://mediatemple.net/)
-- SecureServer 或 WildWestDomains (使用 SecureServer DNS 托管服务访问 GoDaddy) 
-    - [MadDog 域](https://www.maddogdomains.com/)
+- SecureServer 或 WildWestDomains (使用 SecureServer DNS 托管客户端的 GoDaddy) 
+    - [MadDog Web 托管](https://maddogwebhosting.com/domains/)
     - [CheapNames](https://www.cheapnames.com)
 
 ## <a name="what-happens-to-my-email-and-website"></a>我的电子邮件和网站会发生什么情况？
 
-完成设置后，你的域的 MX 记录将更新为指向 Microsoft 365，并且你的域的所有电子邮件都将开始发送到 Microsoft 365。 确保你已添加用户，并针对在你的域中收到电子邮件的每个人在 Microsoft 365 中设置邮箱！
+完成设置后，你的域的 MX 记录将更新为指向 Microsoft 365，你的域的所有电子邮件都将开始发送到 Microsoft 365。 确保你已添加用户，并针对在你的域中收到电子邮件的每个人在 Microsoft 365 中设置邮箱！
   
 如果你有一个用于你的企业的网站，它将在其所在的位置保持工作。 域连接设置步骤不会影响您的网站。

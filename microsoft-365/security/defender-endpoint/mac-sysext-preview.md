@@ -1,6 +1,6 @@
 ---
-title: '适用于 Mac 的 Microsoft Defender ATP - 系统扩展 (预览) '
-description: 本文包含有关尝试 Microsoft Defender ATP for Mac 的系统扩展功能的说明。 此功能目前处于公共预览阶段。
+title: '适用于 Mac 的 Microsoft Defender for Endpoint - 系统扩展 (预览) '
+description: 本文包含有关尝试 Microsoft Defender for Endpoint for Mac 的系统扩展功能的说明。 此功能目前处于公共预览阶段。
 keywords: microsoft， defender， atp， mac， 内核， 系统， 扩展， 加泰罗尼亚语
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -19,12 +19,12 @@ ms.collection:
 ms.topic: conceptual
 ROBOTS: noindex,nofollow
 ms.technology: mde
-ms.openlocfilehash: 0e89977c10de04d8c3331733cd1432525ac3196d
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 0b593aa0046a28e558523c2f3ebc7da9976f62d3
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51689061"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51860323"
 ---
 # <a name="microsoft-defender-for-endpoint-on-macos---system-extensions-public-preview"></a>macOS 上的 Microsoft Defender for Endpoint - 系统扩展公共预览) 
 
@@ -62,7 +62,7 @@ ms.locfileid: "51689061"
   defaults write com.microsoft.autoupdate2 ChannelName -string Beta
   ```
 
-  或者，如果你使用 JAMF 或 Intune (托管) ，你可以远程配置更新通道。 有关详细信息，请参阅 [部署适用于 Mac 的 Microsoft Defender ATP 更新：设置频道名称](mac-updates.md#set-the-channel-name)。
+  或者，如果你使用 JAMF 或 Intune (托管) ，你可以远程配置更新通道。 有关详细信息，请参阅 [部署适用于 Mac 的 Microsoft Defender for Endpoint 的更新：设置通道名称](mac-updates.md#set-the-channel-name)。
 
 ## <a name="deployment-steps"></a>部署步骤
 

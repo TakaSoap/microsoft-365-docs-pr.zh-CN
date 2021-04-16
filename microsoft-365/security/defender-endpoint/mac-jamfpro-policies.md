@@ -1,6 +1,6 @@
 ---
-title: 在 Jamf Pro 中设置适用于 macOS 的 Microsoft Defender ATP 策略
-description: 了解如何在 Jamf Pro 中设置适用于 macOS 的 Microsoft Defender ATP 策略
+title: 在 Jamf Pro 中设置适用于 macOS 的 Microsoft Defender for Endpoint 策略
+description: 了解如何在 Jamf Pro 中为 macOS 策略设置 Microsoft Defender 终结点
 keywords: 策略， microsoft， defender， atp， mac， 安装， 部署， 卸载， intune， jamfpro， macos， catalina， mojave， high sierra
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 79f5837ae6bae6e6a9d952d90605f4cf7b31262e
-ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
+ms.openlocfilehash: 1a00d1c0863db7f4f5f853312f202b5e985b1512
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51765127"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51862267"
 ---
 # <a name="set-up-the-microsoft-defender-for-endpoint-on-macos-policies-in-jamf-pro"></a>在 Jamf Pro 中设置 macOS 上的 Microsoft Defender for Endpoint 策略
 
@@ -360,7 +360,7 @@ ms.locfileid: "51765127"
         - **分发方法**：使用默认 *(自动)*
         - **级别**：计算机级别 *(默认)*
 
-        ![配置文件设置 mdatpmdav 的图像](images/c9820a5ff84aaf21635c04a23a97ca93.png)
+        ![新 macOS 配置文件屏幕的图像](images/c9820a5ff84aaf21635c04a23a97ca93.png)
 
     - Tab **Notifications**， click **Add**， and enter the following values：
         - **捆绑包 ID**： `com.microsoft.wdav.tray`

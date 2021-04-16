@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 12207d69b0a1565caf762a265c1a0d32158ca291
-ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
+ms.openlocfilehash: 8acd8d85826d7bda399c03cc60f2806af954c6c3
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51759837"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51861599"
 ---
 # <a name="prioritize-incidents-in-microsoft-365-defender"></a>确定 Microsoft 365 Defender 中事件的优先级
 
@@ -44,9 +44,9 @@ Microsoft 365 Defender 应用相关分析，将来自不同产品的相关警报
 
 :::image type="content" source="../../media/incidents-queue/incidents-ss-incidents.png" alt-text="事件队列示例":::
 
-默认情况下，Microsoft 365 安全中心中的队列显示过去六个月看到的事件。 最近的事件位于列表顶部，以便你可以先看到它。
+默认情况下，Microsoft 365 安全中心内的事件队列显示过去六个月看到的事件。 最近的事件位于列表顶部，以便你可以先看到它。
 
-事件队列具有可自定义 (选择"选择) 列"，可让你查看事件或受影响实体的不同特征。 这可以帮助您做出有关分析事件优先顺序的明智决定。
+事件队列具有可自定义 (选择"选择) 列"，可让你查看事件或受影响实体的不同特征。 这可以帮助您就事件的优先顺序做出明智的决策进行分析。
 
 为了一目了然，自动事件命名根据警报属性（如受影响的终结点数量、受影响的用户数、检测源或类别）生成事件名称。 这使您可以快速了解事件的范围。
 
@@ -65,7 +65,7 @@ Microsoft 365 Defender 应用相关分析，将来自不同产品的相关警报
 
 此表列出了可用的筛选器名称。
 
-| 筛选器名称 | 描述 |
+| 筛选器名称 | 说明 |
 |:-------|:-----|
 | 分配到 | 你可以选择显示分配给你或由自动化处理警报的警报。 |
 | 类别 | 选择类别以专注于特定的策略、技术或看到的攻击组件。 |
@@ -108,7 +108,7 @@ Microsoft 365 Defender 应用相关分析，将来自不同产品的相关警报
 
 - 了解攻击的类型及其影响。
 - 研究安全社区中的攻击，以寻找安全攻击趋势。
-- 重新调用您用于解决事件的工作流，并根据需要更新您的标准工作流和 plalbook。
+- 重新调用用于解决事件的工作流，并根据需要更新标准工作流和手册。
 
 以下是基本过程的摘要。
 

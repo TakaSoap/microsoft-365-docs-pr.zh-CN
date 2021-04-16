@@ -1,6 +1,6 @@
 ---
-title: 支持的托管安全服务提供程序
-description: 查看 Microsoft Defender ATP 与 MSSP 集成的列表
+title: 受支持的安全服务提供商
+description: 请参阅 Microsoft Defender for Endpoint 所集成 MSSP 列表
 keywords: 托管安全服务提供程序， mssp， 配置， 集成
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -16,14 +16,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 16b238a1d38e1aad70a4286d4ce8ecae1aae9a21
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 71db42f4bd651f4e9d4236e1f4d794aeb99dfa9f
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51186601"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51862147"
 ---
-# <a name="supported-managed-security-service-providers"></a>支持的托管安全服务提供程序
+# <a name="supported-managed-security-service-providers"></a>受支持的安全服务提供商
 
 **适用于：**
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)

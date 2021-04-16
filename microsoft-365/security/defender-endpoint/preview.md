@@ -1,5 +1,5 @@
 ---
-title: Microsoft Defender ATP 预览功能
+title: 适用于终结点的 Microsoft Defender 预览功能
 description: 了解如何访问适用于终结点预览功能的 Microsoft Defender。
 keywords: 预览， 预览体验， 适用于终结点的 Microsoft Defender， 功能， 更新
 search.product: eADQiWindows 10XVcnh
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 4a91fa3c8ff55f46619c7b49eaf973ad94f60bfe
-ms.sourcegitcommit: 72ae1b49e7a3d3199272fcb4c39f5daec0d66f1a
+ms.openlocfilehash: 817ed5e33505f691b11970e3da4c956afa7dc76c
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51698181"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51861055"
 ---
 # <a name="microsoft-defender-for-endpoint-preview-features"></a>适用于终结点的 Microsoft Defender 预览功能
 

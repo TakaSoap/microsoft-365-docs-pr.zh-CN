@@ -23,12 +23,12 @@ ms.custom:
 - AdminSurgePortfolio
 ms.assetid: f6b00895-b5fd-4af6-a656-b7788ea20cbb
 description: 了解如何将Microsoft Office升级到组织中用户的最新 Office 客户端。
-ms.openlocfilehash: 14be8d63b2acb3e4838640dc399595c0ba3f97f5
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 3d2d5e54506d06662c6c2feef0d142f1e195163f
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50913990"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51860567"
 ---
 # <a name="upgrade-your-microsoft-365-for-business-users-to-the-latest-office-client"></a>将 Microsoft 365 商业版用户升级到最新的 Office 客户端
 
@@ -91,7 +91,7 @@ Office 2010 于 2020 年 10 月 13 日终止支持。 Microsoft 将不再提供�
 
 **选项 2：购买个人、一次购买的 Office，或通过批量许可证购买 Office**
 
- - 购买个人、一次购买的 Office。 请参阅 [Office Home &amp; Business](https://products.office.com/home-and-business) 或 [Office Professional](https://products.office.com/professional)
+ - 购买个人、一次购买的 Office。 请参阅 [Office Home &amp; Business](https://www.microsoft.com/microsoft-365/buy/compare-all-microsoft-365-products-b) 或 [Office Professional](https://www.microsoft.com/microsoft-365/p/office-professional-2019/CFQ7TTC0K7C5/)
 
      或
 

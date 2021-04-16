@@ -1,6 +1,6 @@
 ---
-title: 配置和验证适用于 Mac 的 Microsoft Defender ATP 的排除项
-description: 提供并验证适用于 Mac 的 Microsoft Defender ATP 的排除项。 可以针对文件、文件夹和进程设置排除项。
+title: 配置和验证适用于 Mac 的 Microsoft Defender for Endpoint 的排除项
+description: 提供并验证适用于 Mac 的 Microsoft Defender 终结点的排除项。 可以针对文件、文件夹和进程设置排除项。
 keywords: microsoft， defender， atp， mac， 排除， 扫描， 防病毒
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 2281fccfb97d38dbdc218799b087290433deff30
-ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
+ms.openlocfilehash: 7b5254e9b4289219a08730d736c8f9738e7a65f0
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51764153"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51861583"
 ---
 # <a name="configure-and-validate-exclusions-for-microsoft-defender-for-endpoint-on-macos"></a>在 macOS 上配置和验证适用于终结点的 Microsoft Defender 的排除项
 

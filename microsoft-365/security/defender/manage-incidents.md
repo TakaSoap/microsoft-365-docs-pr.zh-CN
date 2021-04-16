@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 2d2bf18c6cacb377e710f34b74ec8f83bb77d3b1
-ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
+ms.openlocfilehash: da5a2190a53dfe7f8dd0cc3cf7b410af92ca4ec5
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51760059"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51861727"
 ---
 # <a name="manage-incidents-in-microsoft-365-defender"></a>在 Microsoft 365 Defender 中管理事件
 
@@ -65,12 +65,12 @@ ms.locfileid: "51760059"
 
 ## <a name="edit-the-incident-name"></a>编辑事件名称
 
-根据警报属性（如受影响的终结点数、受影响的用户数、检测源或类别）自动为事件分配名称。 这使您可以快速了解事件的范围。 例如： *多个源报告的多个终结点上的多阶段事件。*
+Microsoft 365 Defender 根据警报属性自动分配名称，如受影响的终结点数、受影响的用户数、检测源或类别。 这使您可以快速了解事件的范围。 例如： *多个源报告的多个终结点上的多阶段事件。*
 
 可以从"管理事件"窗格上的" **事件名称** "字段中 **编辑事件** 名称。
 
 > [!NOTE]
-> 推出自动事件命名功能之前已存在的事件将保留其名称。
+> 在推出自动事件命名功能之前已存在的事件将保留其名称。
 
 ## <a name="add-incident-tags"></a>添加事件标记
 
@@ -97,3 +97,9 @@ ms.locfileid: "51760059"
 ## <a name="add-comments"></a>添加备注
 
 可以使用"注释"字段向事件添加 **多个** 注释。 每个注释将添加到事件的历史事件中。 You can see the comments and history of an incident from the **Comments and history** link on the **Summary** page.
+
+## <a name="related-topics"></a>相关主题
+
+- [事件概述](incidents-overview.md)
+- [确定事件优先级](incident-queue.md)
+- [调查事件](investigate-incidents.md)

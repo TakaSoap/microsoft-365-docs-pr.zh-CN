@@ -1,6 +1,6 @@
 ---
 title: 托管安全服务提供商 (MSSP) 合作伙伴机会
-description: '了解 Microsoft Defender ATP 如何与 MSSP (托管安全服务提供商) '
+description: '了解 Microsoft Defender for Endpoint 如何与 MSSP (托管安全服务提供商) '
 keywords: mssp， 集成， 托管， 安全性， 服务， 提供程序
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: a3f357553e259075b3a47d6866faee06c98036a8
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 790abaad5506a77b70cb8d772e83289d8dbd791f
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51186577"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51860781"
 ---
 # <a name="managed-security-service-provider-partnership-opportunities"></a>托管安全服务提供商合作关系机会
 
@@ -49,7 +49,7 @@ Defender for Endpoint 增加了此方案的合作关系机会，并允许 MSSP �
 
 
 ## <a name="related-topic"></a>相关主题
-- [配置托管安全服务提供程序集成](configure-mssp-support.md)
+- [配置托管的安全服务提供商集成](configure-mssp-support.md)
 
 
 

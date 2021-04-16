@@ -1,5 +1,5 @@
 ---
-title: 在小型企业中开始使用 Microsoft Teams
+title: 开始在小型企业使用 Microsoft Teams
 f1.keywords:
 - NOCSH
 ms.author: twerner
@@ -20,14 +20,14 @@ search.appverid:
 - MET150
 - MOE150
 description: 了解如何在小型企业中使用 Microsoft Teams。
-ms.openlocfilehash: 592d5eda985239f79ce42291af840ff7762a903c
-ms.sourcegitcommit: 8998f70d3f7bd673f93f8d1cf12ce981b1b771c3
+ms.openlocfilehash: b77ad43722764895a4f89c623d4af9403aa25e5b
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51034259"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51860555"
 ---
-# <a name="get-started-with-microsoft-teams-in-your-small-business"></a>在小型企业中开始使用 Microsoft Teams
+# <a name="get-started-with-microsoft-teams-in-your-small-business"></a>开始在小型企业使用 Microsoft Teams
 
 - [将 Teams 用于你的业务 (视频) ](#use-teams-for-your-business-video)
 - [为企业主持联机会议 (视频) ](#host-online-meetings-for-your-business-video)
@@ -47,7 +47,7 @@ ms.locfileid: "51034259"
 
 ## <a name="1-get-ready"></a>1. 准备就绪 
 
-入门非常简单。 如果你已拥有 Microsoft 365 订阅，请确保每个人都拥有包含 Microsoft Teams 的许可证。 如果你的公司还没有 Microsoft Teams，你可以找到适合你的 [企业并](https://aka.ms/TeamsBusinessBasic) 注册的 Microsoft Teams。
+入门非常简单。 如果你已拥有 Microsoft 365 订阅，请确保每个人都拥有包含 Microsoft Teams 的许可证。 如果你的公司还没有 Microsoft Teams，你可以找到适合你的 [企业并](https://www.microsoft.com/microsoft-teams/teams-for-work) 注册的 Microsoft Teams。
 
 ### <a name="get-microsoft-teams-ready-for-your-customers"></a>为客户准备好 Microsoft Teams
 
@@ -133,4 +133,4 @@ Microsoft Teams 中的团队旨在将一组紧密协作以完成工作的人汇�
 
 ## <a name="related-content"></a>相关内容
 
-[文章为小型企业提供远程工作](https://docs.microsoft.com/microsoft-365/admin/misc/empower-your-small-business-with-remote-work.md) (功能) 
+[文章为小型企业提供远程工作](https://docs.microsoft.com/microsoft-365/admin/misc/empower-your-small-business-with-remote-work) (功能) 

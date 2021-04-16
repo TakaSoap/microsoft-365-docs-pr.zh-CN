@@ -1,5 +1,5 @@
 ---
-title: 在 Microsoft Defender ATP 中调查使用实时响应的设备上的实体
+title: 在 Microsoft Defender for Endpoint 中调查使用实时响应的设备上的实体
 description: 使用安全的远程 Shell 连接访问设备，以执行调查工作，并实时对设备执行即时响应操作。
 keywords: 远程， shell， 连接， 实时， 响应， 实时， 命令， 脚本， 修正， 搜寻， 导出， 日志， 拖放， 下载， 文件，
 search.product: eADQiWindows 10XVcnh
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 235df8c84077311444c597b120a19477cfd0986a
-ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
+ms.openlocfilehash: 4898081103faa27c19d3a09ffba1b59670833dd8
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51760412"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51860793"
 ---
 # <a name="investigate-entities-on-devices-using-live-response"></a>使用实时响应调查设备上的实体
 
@@ -47,7 +47,7 @@ ms.locfileid: "51760412"
 - 将 PowerShell 脚本或可执行文件上传到库，然后从租户级别在设备上运行它。
 - 执行或撤消修正操作。
 
-## <a name="before-you-begin"></a>准备工作
+## <a name="before-you-begin"></a>开始之前
 
 在设备上启动会话之前，请确保满足以下要求：
 

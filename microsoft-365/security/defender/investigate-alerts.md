@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 601a8674327c424592c65014793599dc19b2bcd3
-ms.sourcegitcommit: 07dea2aa98daf0c4086f8590375167830027c802
+ms.openlocfilehash: 77b30e8a8eee70470115bcd61f081863fa5a41ee
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51759428"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51861982"
 ---
 # <a name="investigate-alerts-in-microsoft-365-defender"></a>调查 Microsoft 365 Defender 中的警报
 
@@ -36,76 +36,108 @@ ms.locfileid: "51759428"
 **适用于：**
 - Microsoft 365 Defender
 
-警报是所有事件的基础，指示环境中出现恶意或可疑事件。 警报通常是更广泛的攻击的一部分，并提供有关事件的线索片段。
+警报是所有事件的基础，指示环境中出现恶意或可疑事件。 警报通常是更广泛的攻击的一部分，并提供事件线索。
 
-在 Microsoft 365 Defender 中，相关警报聚合在一起以形成事件。 事件将始终提供攻击的更广泛的上下文，但是，当需要深入分析时，调查警报可能非常有价值。 
+在 Microsoft 365 Defender 中，相关警报聚合在一起以形成 [事件](incidents-overview.md)。 事件将始终提供攻击的更广泛的上下文，但是，当需要深入分析时，调查警报可能非常有价值。 
 
+警报 **队列** 显示当前警报集。 在 microsoft 365安全中心 & > () 快速启动时，你可以从事件和警报[ (security.microsoft.com) 。](https://security.microsoft.com)
 
+:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-queue.png" alt-text="警报队列示例":::
 
-## <a name="using-alert-pages-in-investigations"></a>在调查中使用警报页面
+来自不同 Microsoft 安全解决方案（如 Microsoft Defender for Endpoint、Microsoft Defender for Office 365 和 Microsoft 365 Defender）的警报显示在此处。
 
-从任何事件页面的"警报"选项卡中，选择警报将您带到各个警报页面。 警报页面由三个部分组成：受影响的资产、警报情景和详细信息窗格。
+默认情况下，Microsoft 365 安全中心中的警报队列显示过去 30 天内的新警报和正在进行中的警报。 最新警报位于列表顶部，因此你可以先查看它。 
 
-![示例警报页面的图像](../../media/new-alert-page2.png)
+从默认警报队列中，可以选择"筛选器"以查看"筛选器"窗格，可以从中指定警报的子集。 下面是一个示例。
 
-在整个警报页面中，可以选择任何实体旁边的三点 (**...) ，** 以便你可以查看可用的操作，如打开特定资产页面或执行特定的修正步骤。
+:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-filter.png" alt-text="警报队列的筛选器窗格示例":::
 
-### <a name="analyze-affected-assets"></a>分析受影响的资产
-"受影响的资产"部分列出了受此警报影响的邮箱、设备和用户。 选择任意资产卡会向详细信息侧窗格填充信息，包括涉及资产的其他警报（如果有）。
-
-
-### <a name="trace-an-alerts-role-in-the-alert-story"></a>跟踪警报情景中的警报角色
-警报情景在进程树视图中显示与警报相关的所有资产或实体。 标题中的警报是首次登录所选警报的页面时聚焦的警报。 警报情景中的资源可展开且可单击。 它们通过允许您在警报页面上下文中采取措施来提供其他信息并加快响应速度。 
-
-> [!NOTE]
-> 警报情景部分可能包含多个警报，与相同执行树相关的其他警报显示在所选警报之前或之后。
-
-### <a name="view-more-alert-information-in-the-details-pane"></a>在详细信息窗格中查看更多警报信息
-
-细节窗格首先显示所选警报的详细信息，以及相关详细信息和操作。 如果在警报情景中选择任何受影响的资产或实体，详细信息窗格将发生更改，以提供所选对象的上下文信息和操作。
-
-选择感兴趣的实体后，详细信息窗格将发生更改，以显示有关所选实体类型的信息、可用时的历史信息以及直接从警报页面对此实体采取措施的选项。
-
-### <a name="manage-alerts"></a>管理警报
-
-调查完警报后，可以返回到开始使用的警报，将警报状态标记为"已解决"，然后将其分类为"False 警报"或"真警报"。 对警报进行分类有助于调整产品，以提供更多真实警报和更少的假警报。
-
-> [!NOTE]
-> 通过标记管理警报的一种方法。 Microsoft Defender for Office 365 的标记功能正在逐步推出，目前处于预览阶段。 <br>
-> 目前，修改的标记名称仅适用于更新后 *创建的* 警报。 修改之前生成的通知不会反映更新的标记名称。 
-
-
-## <a name="manage-the-unified-alert-queue"></a>管理统一警报队列
-
-选择 Microsoft 365 安全中心导航窗格中&警报"下的"警报"，可进入统一警报队列。 本部分中将显示来自不同 Microsoft 安全解决方案（如 Microsoft Defender for Endpoint、Microsoft Defender for Office 365 和 Microsoft 365 Defender）的警报。 
-
-![示例警报页面的图像](../../media/unified-alert-queue.png)
-
-警报队列显示网络中标记的警报列表。 默认情况下，队列显示最近 30 天内看到的警报。 最新警报显示在列表顶部，有助于你先查看最新警报。
-
-> [!NOTE]
-> 在启动时，统一警报队列将只有 7 天的 Microsoft Defender for Office 365 警报可用。 随着时间的推移，队列将继续构建。 如果需要在启动统一警报队列之前对警报进行会审，请使用安全与合规 [中心中的警报队列](https://protection.office.com/viewalerts)。
-
-
-在顶部导航上，您可以：
-
-- 应用筛选器
-- 自定义列以添加或删除列
-- 导出数据
-
-您还可以根据不同的条件筛选警报：
+你可以根据以下条件筛选警报：
 
 - Severity
 - 状态
 - 类别
 - 检测源
+- 标记
 - Policy
 - 影响的资产
-- 第一个活动
-- 最后一次活动
 
+## <a name="analyze-an-alert"></a>分析警报
 
-若要开始调查事件，请阅读调查[Microsoft 365 Defender](investigate-incidents.md)中的事件
+若要查看主警报页面，请选择警报的名称。 下面是一个示例。
+
+:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-main.png" alt-text="Microsoft 365 安全中心中警报的详细信息页面示例":::
+
+您还可以从"管理 **警报"窗格中** 选择"打开主警报 **页面"** 操作。
+
+警报页面由以下部分组成： 
+
+- 警报情景
+- 采取 (包括受影响资产) 
+- 相关事件
+- 摘要详细信息
+
+:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-main.png" alt-text="Microsoft 365 安全中心中警报的详细信息页面示例":::
+
+在整个警报页面中，可以选择任何实体 **(...")** 查看可用操作，例如打开特定资产页面或执行特定的修正步骤。
+
+### <a name="analyze-affected-assets"></a>分析受影响的资产
+
+" **已采取** 操作"部分包含受影响资产的列表，如受此警报影响的邮箱、设备和用户。 
+
+还可以选择"在操作中心 **中** 查看"以查看Microsoft 365 安全中心操作中心的"历史记录"选项卡。  
+
+### <a name="trace-an-alerts-role-in-the-alert-story"></a>跟踪警报情景中的警报角色
+
+警报情景在进程树视图中显示与警报相关的所有资产或实体。 标题中的警报是首次登录所选警报的页面时聚焦的警报。 警报情景中的资源可展开且可单击。 它们提供其他信息，并允许你立即在警报页面上下文中采取措施，从而加快响应速度。 
+
+> [!NOTE]
+> 警报情景部分可能包含多个警报，与相同执行树相关的其他警报显示在所选警报之前或之后。
+
+### <a name="view-more-alert-information-on-the-details-page"></a>在详细信息页面上查看更多警报信息
+
+详细信息页面显示所选警报的详细信息，以及相关详细信息和操作。 如果在警报情景中选择任何受影响的资产或实体，详细信息页面将发生更改，以提供所选对象的上下文信息和操作。
+
+选择感兴趣的实体后，详细信息页面将发生更改以显示有关所选实体类型的信息、可用时的历史信息以及直接从警报页面对此实体采取措施的选项。
+
+## <a name="manage-alerts"></a>管理警报
+
+若要管理警报，请在警报队列中的行中选择警报，以查看"管理 **警报"** 窗格。 下面是一个示例。
+
+:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-manage.png" alt-text="警报的摘要窗格示例":::
+
+" **管理警报** "窗格允许您指定：
+
+- 警报状态 (新建、已解决、正在进行) 。
+- 警报的分类 (未设置、真警报、假警报) 。
+- 对于分类为真正的警报，为"确定"字段中警报 **的威胁** 类型。
+- 对警报的注释。
+
+> [!NOTE]
+> 通过标记管理警报的一种方法。 Microsoft Defender for Office 365 的标记功能正在逐步推出，目前处于预览阶段。 <br>
+> 目前，修改的标记名称仅适用于更新后 *创建的* 警报。 修改之前生成的通知不会反映更新的标记名称。 
+
+在此窗格中，您还可以执行以下附加操作： 
+
+- 打开主警报页面
+- 咨询 Microsoft 威胁专家
+- 查看提交
+- 链接到其他事件
+- 在时间线中查看警报
+- 创建抑制规则
+
+下面是一个示例。
+
+:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-actions.png" alt-text="Microsoft 365 安全中心中警报的操作示例":::
+
+其他操作的列表取决于警报的类型。
+
+## <a name="resolve-an-alert"></a>解决警报
+
+调查完警报并可以解决后，请转到警报的"管理警报"窗格，将其状态标记为"已解决"，然后将其分类为 **"False 警报**"或"**真警报"。** 对于真正的警报，在"确定"字段中指定警报 **的威胁** 类型。
+
+对警报进行分类并指定它们的决定有助于调整 Microsoft 365 Defender，以提供更真实的警报和更少的假警报。
+
 ## <a name="see-also"></a>另请参阅
 
 - [事件概述](incidents-overview.md)

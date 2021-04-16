@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 ms.assetid: d5155593-3bac-4d8d-9d8b-f4513a81479e
 description: 了解如何删除用户帐户。 决定使用用户电子邮件和 OneDrive 内容应执行哪些操作。 并决定是保留产品许可证还是停止付费。
-ms.openlocfilehash: 0069577b83c318fa57eaceddccc93b5832e634e0
-ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
+ms.openlocfilehash: d40f70534499b08073278ffc2bed2b098ae1c4da
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51759914"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51860733"
 ---
 # <a name="delete-a-user-from-your-organization"></a>从组织删除用户
   
@@ -54,7 +54,7 @@ ms.locfileid: "51759914"
 |电子邮件  <br/> | 向其他用户提供对已删除用户的电子邮件的访问权限会将已删除用户的邮箱转换为共享邮箱。 然后，新邮箱所有者可以访问邮箱并监视新电子邮件。 还可以选择以下选项：  <br/>  <br/>更改显示名称 - 建议更改显示名称，以便轻松识别"活动用户"列表中的 **共享** 邮箱。  <br/>  启用自动答复 - 我们已经为用户撰写了一份很乐于回复的自动答复。 您可以向组织内部人员以及组织外部人员发送不同的自动答复。  <br/> <br/> 清理别名 - 别名是用户的其他电子邮件地址。 某些组织不使用它们，因此，如果没有，则无需在这里执行任何其他工作。 如果用户具有别名，我们建议删除这些别名，以便可以重复使用这些电子邮件地址。 否则，在已删除邮箱的保留期过去之前，无法重复使用这些电子邮件地址。 默认情况下，已删除的邮箱可恢复 30 天。 有关详细信息，请参阅删除  [或还原 Exchange Online 中的用户邮箱](/exchange/recipients-in-exchange-online/delete-or-restore-mailboxes#delete-a-user-mailbox)。 <br/> |
 |Active Directory  <br/> |如果你的公司使用与 Azure AD 同步的 **Active Directory** ，则需要从 Active Directory 中删除用户帐户。 无法通过 Office 365 删除帐户。 有关说明，请参阅 [删除用户帐户](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc753730(v=ws.11))。  <br/> |
 
-### <a name="get-started"></a>入门
+### <a name="get-started"></a>开始行动
 
 由于指导体验将完成删除用户的步骤，下面介绍如何开始操作。
 
@@ -155,7 +155,7 @@ ms.locfileid: "51759914"
 
 ## <a name="delete-many-users-at-the-same-time"></a>同时删除多个用户
 
-请参阅 [Remove-MsolUser](https://go.microsoft.com/fwlink/p/?linkid=842230) PowerShell cmdlet。
+请参阅 [Remove-MsolUser](https://docs.microsoft.com/powershell/module/msonline/remove-msoluser) PowerShell cmdlet。
 
 ## <a name="fix-issues-with-deleting-a-user"></a>解决删除用户时遇到的问题
 

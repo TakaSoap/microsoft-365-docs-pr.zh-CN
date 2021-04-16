@@ -15,12 +15,12 @@ ms.custom:
 - AdminSurgePortfolio
 - adminvideo
 description: 查找有关使用 Microsoft 365 的企业远程工作的最新操作方法信息、提示、资源和指南。
-ms.openlocfilehash: eac86583a1e72b70399024354f9adc7ad24e1047
-ms.sourcegitcommit: 8998f70d3f7bd673f93f8d1cf12ce981b1b771c3
+ms.openlocfilehash: 3ef8bb3527e6be258eda8d745d841e8bd81cdd6c
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51034258"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51860579"
 ---
 # <a name="empower-your-small-business-with-remote-work"></a>通过远程工作为小型企业提供能力
 
@@ -87,7 +87,7 @@ Microsoft 365 商业版的技术文档中心使用新的安全远程工作指南
 
 ## <a name="need-to-ask-a-question"></a>需要提问？ 
 
-在 Teams 论坛 [或](https://answers.microsoft.com/msteams/forum) [Office 管理员论坛中提问](https://answers.microsoft.com/msoffice/forum/msoffice_o365Admin)。
+在 Teams 论坛 [或](https://answers.microsoft.com/msteams/forum) [Office 管理员论坛中提问](https://answers.microsoft.com)。
 
 > [!NOTE]
 > 通过订阅 Microsoft 365 商业基础版（以前是 Office 365 商业 (Office 365 商业基础版) ，可以完成本文和视频中的大多数任务，但某些任务需要高级订阅。 

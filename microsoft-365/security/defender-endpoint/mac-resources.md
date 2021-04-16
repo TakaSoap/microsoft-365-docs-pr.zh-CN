@@ -1,6 +1,6 @@
 ---
-title: 适用于 Mac 的 Microsoft Defender ATP 的资源
-description: 适用于 Mac 的 Microsoft Defender ATP 的资源，包括如何卸载它、如何收集诊断日志、CLI 命令以及产品的已知问题。
+title: 适用于 Mac 的 Microsoft Defender 终结点的资源
+description: 适用于适用于 Mac 的 Microsoft Defender for Endpoint 的资源，包括如何卸载它、如何收集诊断日志、CLI 命令以及产品的已知问题。
 keywords: microsoft， defender， atp， mac， 安装， 部署， 卸载， intune， jamf， macos， catalina， mojave， high sierra
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 71ebe48fdbb8f9995ef2f3429cb8a824ed76f244
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 98e123ac4775096c968bc831965a562481c848b6
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51689637"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51862171"
 ---
 # <a name="resources-for-microsoft-defender-for-endpoint-on-macos"></a>macOS 上的 Microsoft Defender for Endpoint 的资源
 
@@ -84,7 +84,7 @@ ms.locfileid: "51689637"
 
 ### <a name="interactive-uninstallation"></a>交互式卸载
 
-- 打开 **Finder > Applications**。 右键单击 **Microsoft Defender ATP >移动到回收站**。
+- 打开 **Finder > Applications**。 右键单击 **Microsoft Defender for Endpoint >移动到回收站**。
 
 ### <a name="from-the-command-line"></a>从命令行
 

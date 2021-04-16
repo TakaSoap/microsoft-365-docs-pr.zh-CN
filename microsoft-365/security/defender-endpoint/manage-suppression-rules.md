@@ -1,6 +1,6 @@
 ---
 title: 管理 Microsoft Defender 终结点抑制规则
-description: 你可能需要使用抑制规则阻止警报在门户中显示。 了解如何在 Microsoft Defender ATP 中管理抑制规则。
+description: 你可能需要使用抑制规则阻止警报在门户中显示。 了解如何在 Microsoft Defender for Endpoint 中管理抑制规则。
 keywords: 管理抑制， 规则， 规则名称， 范围， 操作， 警报， 打开， 关闭
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -16,14 +16,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: d2ff8fa1f07f82c3cc719f49f50ee25937aea243
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: f1549512a02fe3af71d32c6b33c69cc705de99a8
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51187561"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51862123"
 ---
-# <a name="manage-suppression-rules"></a>管理抑制规则
+# <a name="manage-suppression-rules"></a>管理点规则
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 

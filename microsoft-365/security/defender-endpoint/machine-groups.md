@@ -1,5 +1,5 @@
 ---
-title: 在 Microsoft Defender ATP 中创建和管理设备组
+title: 在 Microsoft Defender for Endpoint 中创建和管理设备组
 description: 通过合并适用于该组的规则，创建设备组并设置设备的自动修正级别
 keywords: 设备组， 组， 修正， 级别， 规则， aad 组， 角色， 分配， 排名
 search.product: eADQiWindows 10XVcnh
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: dfc7c04bbde2b7061c92f5a25115b75a2f5b47b5
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: acd24e5c87a74bbb32835ec170a121c5c0b6bb33
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51055968"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51860299"
 ---
 # <a name="create-and-manage-device-groups"></a>创建和管理设备组
 
@@ -94,5 +94,5 @@ ms.locfileid: "51055968"
 ## <a name="related-topics"></a>相关主题
 
 - [使用基于角色的访问控制管理门户访问](rbac.md)
-- [创建和管理设备标记](machine-tags.md)
+- [创建和管理设备标签](machine-tags.md)
 - [使用 Graph API 获取租户设备组列表](https://docs.microsoft.com/graph/api/device-list-memberof)

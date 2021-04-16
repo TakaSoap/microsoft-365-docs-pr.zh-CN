@@ -1,7 +1,7 @@
 ---
 title: 管理和 API 概述
 ms.reviewer: ''
-description: 了解 Microsoft Defender ATP 中的管理工具和 API 类别
+description: 了解 Microsoft Defender for Endpoint 中的管理工具和 API 类别
 keywords: 载入， api， siem， rbac， 访问， 门户， 集成， 调查， 响应， 实体， 实体， 用户上下文， 应用程序上下文， 流
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 94cfe1cc053be896c137e0c0b9ee02ea53dd2717
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 9e54fb5f2105f0a77c4b63e8d880135005c17168
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51187549"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51862087"
 ---
 # <a name="overview-of-management-and-apis"></a>管理和 API 概述 
 
@@ -85,5 +85,5 @@ Defender for Endpoint 事件信息直接推送到 Azure 存储以用于长期数
 ## <a name="related-topics"></a>相关主题
 - [访问适用于终结点的 Microsoft Defender API ](apis-intro.md)
 - [受支持的 API](exposed-apis-list.md)
-- [技术合作伙伴机会](partner-integration.md)
+- [技术合作伙伴商机](partner-integration.md)
 

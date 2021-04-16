@@ -1,5 +1,5 @@
 ---
-title: 查看和组织 Microsoft Defender ATP 设备列表
+title: 查看和组织 Microsoft Defender for Endpoint 设备列表
 description: 了解可从设备列表中使用的可用功能，例如排序、筛选和导出列表以增强调查。
 keywords: 排序， 筛选， 导出， csv， 设备名称， 域， 上次看到时间， 内部 IP， 运行状况状态， 活动警报， 活动恶意软件检测， 威胁类别， 查看警报， 网络， 连接， 恶意软件， 类型， 密码窃取程序， 勒索软件， 攻击， 威胁， 常规恶意软件， 不需要的软件
 search.product: eADQiWindows 10XVcnh
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 9068983b5f61305b1f3da4d076e99e71974e8df4
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: a031a35929f319e87a9ad1a9ca48d6bf95a3ef72
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51185667"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51861571"
 ---
 # <a name="view-and-organize-the-microsoft-defender-for-endpoint-devices-list"></a>查看和组织适用于终结点设备的 Microsoft Defender 列表
 

@@ -21,12 +21,12 @@ search.appverid:
 ms.assetid: e64ceac2-ae62-4d29-a9ee-6aab9870ae2b
 ROBOTS: NOINDEX
 description: 了解如何在管理中心创建联系人和管理全局地址列表。
-ms.openlocfilehash: 74618056c0b8635922c9f957dc8cd6d16c320fe3
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 6eae98472d6be947d3f0698bd2e7a9409b56824b
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50914806"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51860591"
 ---
 # <a name="quick-help-contacts"></a>快速帮助：联系人
 
@@ -62,4 +62,4 @@ ms.locfileid: "50914806"
   
 ## <a name="what-if-my-question-still-hasnt-been-answered"></a>如果以上内容仍未解决问题，怎么办？
 
-请访问[管理员帮助](/microsoft-365/admin/misc/index)的其余部分，或在下面提供反馈。
+请访问[管理员帮助](https://docs.microsoft.com/microsoft-365/admin/)的其余部分，或在下面提供反馈。

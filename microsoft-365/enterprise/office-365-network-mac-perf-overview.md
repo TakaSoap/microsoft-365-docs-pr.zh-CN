@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 - m365initiative-coredeploy
 description: 'Microsoft 365 管理中心网络连接概述 (预览) '
-ms.openlocfilehash: cc01f2a22f6f8c89d0ae8fcd8b53498790930d3e
-ms.sourcegitcommit: 4acf613587128cae27e0fd470d1216b509775529
+ms.openlocfilehash: 99c05c18f3825680824854f86e469ab4aa8bbcba
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/15/2021
-ms.locfileid: "51768622"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51860859"
 ---
 # <a name="network-connectivity-in-the-microsoft-365-admin-center-preview"></a>Microsoft 365 管理中心中的网络连接 (预览) 
 
@@ -63,7 +63,7 @@ To get started， turn on your location opt-in setting to automatically collect 
 
 对于此选项，既不需要 Windows 位置服务，也不Wi-Fi Windows 位置服务。 OneDrive for Windows 版本必须是最新的，并且必须安装在至少一台计算机的位置。
 
-还需要在"位置"页中添加位置 **，** 或从 CSV 文件导入位置。 添加的位置必须包含 Office LAN 子网信息。
+还需要在"位置"页中添加 **位置，或** 从 CSV 文件导入位置。 添加的位置必须包含 Office LAN 子网信息。
 
 此选项允许你在一个城市内定义多个办公室。
 
@@ -97,7 +97,7 @@ To get started， turn on your location opt-in setting to automatically collect 
 
 ## <a name="how-we-can-solve-these-challenges"></a>如何解决这些问题
 
-企业可以通过遵循 [Office 365 连接](./microsoft-365-network-connectivity-principles.md) 原则以及使用 Microsoft 365 管理中心网络连接功能来改进常规用户体验并保护其环境。 在大多数情况下，遵循这些一般原则将对最终用户延迟、服务可靠性和 Microsoft 365 的总体性能产生显著正面影响。
+企业可以通过遵循 [Office 365 连接](./microsoft-365-network-connectivity-principles.md) 原则以及使用 Microsoft 365 管理中心网络连接功能来改进常规用户体验并保护其环境。 在大多数情况下，遵循这些一般原则将对 Microsoft 365 的最终用户延迟、服务可靠性和总体性能产生显著正面影响。
 
 有时要求 Microsoft 调查适用于大型企业客户的 Microsoft 365 网络性能问题，这些问题通常具有与客户的网络外围基础结构相关的根本原因。 当找到客户网络外围问题的常见根本原因时，我们将寻找识别该问题的简单测试指标。 具有标识特定问题的测量阈值的测试非常有价值，因为我们可以在任何位置测试相同的度量，判断该根本原因是否存在并与管理员共享作为网络见解。
 
@@ -121,6 +121,14 @@ Microsoft 具有多个支持 Microsoft 365 运营的 Office 桌面和 Web 客户
 
 > [!div class="mx-imgBorder"]
 > ![网络见解位置](../media/m365-mac-perf/m365-mac-perf-locations.png)
+
+## <a name="remote-worker-assessment-and-user-connection-metrics"></a>远程工作者评估和用户连接指标
+
+我们将网络流量日志分类为远程或现场用户，在概述窗格的用户连接指标部分显示其百分比。 对于拥有远程用户的城市，在打开该位置的页面时，你将找到特定于位置的远程网络评估分数。 位置列表将具有办公室位置和远程工作者城市，可以筛选和排序。 我们提供远程工作者评估分数，并提供 Exchange、SharePoint 和 Teams 的分数细目。
+
+家庭用户网络见解聚合在一个城市级别并报告，并且仅限于至少拥有 5 名远程员工的城市。 我们不会识别在家工作的个人员工。
+
+位置自动分类为现场或远程，但是，您可以选择手动输入所有现场出口 IP 地址，以确保 100% 分类。 如果决定选择此路由，在添加所有出口 **IP** 地址后，必须选中"位置设置"飞出框内的"手动输入所有现场出口 IP 地址"复选框。 完成此操作后，已标记为现场出口 IP 地址的所有网络流量日志将始终分类为办公室，其他每个出口 IP 地址将归类为远程。
 
 ## <a name="specific-office-location-network-performance-summary-and-insights"></a>特定办公地点网络性能摘要和见解
 

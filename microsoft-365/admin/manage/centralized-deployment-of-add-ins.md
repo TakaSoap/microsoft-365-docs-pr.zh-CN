@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: b4527d49-4073-4b43-8274-31b7a3166f92
 description: 确定租户和用户是否满足要求，以便可以使用集中部署部署 Office 加载项。
-ms.openlocfilehash: 1516a10932158ba137f58900e0c19c5fea3bd119
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 7eb15563ca11e8fcce17dc6b505347475d18641e
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51580950"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51860687"
 ---
 # <a name="determine-if-centralized-deployment-of-add-ins-works-for-your-organization"></a>确定外接程序的集中部署是否适用于您的组织
 
@@ -155,5 +155,5 @@ Microsoft Exchange 存储组织的租户中的加载项清单。 部署外接程
   
 |**平台**|**调式信息**|
 |:-----|:-----|
-|Office  <br/> | Charles/Fiddler 日志  <br/>  租户 ID（ [了解如何操作](/onedrive/find-your-office-365-tenant-id.aspx)）  <br/>  CorrelationID。 查看其中一个 Office 页面的源并查找相关 ID 值并将其发送给支持人员：  <br/>`<input name=" **wdCorrelationId**" type="hidden" value=" **{BC17079E-505F-3000-C177-26A8E27EB623}**">`  <br/>  `<input name="user_id" type="hidden" value="1003bffd96933623"></form>`  <br/> |
+|Office  <br/> | Charles/Fiddler 日志  <br/>  租户 ID（ [了解如何操作](https://docs.microsoft.com/onedrive/find-your-office-365-tenant-id)）  <br/>  CorrelationID。 查看其中一个 Office 页面的源并查找相关 ID 值并将其发送给支持人员：  <br/>`<input name=" **wdCorrelationId**" type="hidden" value=" **{BC17079E-505F-3000-C177-26A8E27EB623}**">`  <br/>  `<input name="user_id" type="hidden" value="1003bffd96933623"></form>`  <br/> |
 |丰富的客户端（Windows、Mac）  <br/> | Charles/Fiddler 日志  <br/>  最好将客户端应用 (生成号作为文件 **/帐户设置中的**)   <br/> |

@@ -1,7 +1,7 @@
 ---
 title: 威胁和漏洞管理
 description: 这一新功能使用基于游戏变化风险的方法来发现、确定终结点漏洞和错误配置并修复这些漏洞和错误配置。
-keywords: 威胁&漏洞管理， 威胁和漏洞管理， MDATP TVM， MDATP-TVM， 漏洞管理， 漏洞评估， 威胁和漏洞扫描， 安全配置评估， microsoft defender atp， microsoft defender atp， 终结点漏洞， 下一代
+keywords: 威胁&漏洞管理， 威胁和漏洞管理， MDATP TVM， MDATP-TVM， 漏洞管理， 漏洞评估， 威胁和漏洞扫描， 安全配置评估， microsoft defender 终结点， microsoft defender atp， 终结点漏洞， 下一代
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: overview
 ms.technology: mde
-ms.openlocfilehash: 0c3c5ebbcd4483cae159fe9b46a6f4c376443be3
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: e9c575aa8968b8cab2c5d91b9fe0b1cb46b292d3
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51499070"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51860757"
 ---
 # <a name="threat-and-vulnerability-management"></a>威胁和漏洞管理
 

@@ -1,6 +1,6 @@
 ---
-title: 解决 Microsoft Defender ATP for Mac 的许可证问题
-description: 解决 Microsoft Defender ATP for Mac 中的许可证问题。
+title: 解决 Microsoft Defender for Endpoint for Mac 的许可证问题
+description: 解决 Microsoft Defender for Endpoint for Mac 中的许可证问题。
 keywords: microsoft， defender， atp， mac， 性能
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 69dd85394837bb7f37e7d277110c8a5dbf7b6506
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 3fb351d9ce8e9beef812e6aaa7d463161a6af8df
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51689109"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51862183"
 ---
 # <a name="troubleshoot-license-issues-for-microsoft-defender-for-endpoint-on-macos"></a>解决 macOS 上 Microsoft Defender for Endpoint 的许可证问题
 

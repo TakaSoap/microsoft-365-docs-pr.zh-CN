@@ -14,12 +14,12 @@ ms.collection:
 ms.custom: AdminSurgePortfolio
 search.appverid: MET150
 description: 了解如何在 Microsoft 365 管理中心激活和管理第三方应用。
-ms.openlocfilehash: 974ce99b55dcb078286d7f6dba35166e51ce62a7
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 457545282801829ca34de0318dd9eb7791866214
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51576909"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51860531"
 ---
 # <a name="manage-third-party-app-subscriptions-for-your-organization"></a>管理组织的第三方应用订阅
 
@@ -31,7 +31,7 @@ ms.locfileid: "51576909"
 
 有几种购买第三方应用的方法。
 
-- **直接购买** – 客户可以直接从 [Azure Marketplace 或](https://azuremarketplace.microsoft.com/marketplace/) [AppSource 购买订阅](https://www.appsource.com/)。
+- **直接购买** – 客户可以直接从 [Azure Marketplace 或](https://azuremarketplace.microsoft.com/marketplace/) [AppSource 购买订阅](https://appsource.microsoft.com/)。
 - **合作伙伴购买** – 通过合作伙伴中心与合作伙伴合作购买订阅。
 - **Microsoft 建议** – 响应来自 Microsoft 销售部门（包括第三方应用）的建议。
 

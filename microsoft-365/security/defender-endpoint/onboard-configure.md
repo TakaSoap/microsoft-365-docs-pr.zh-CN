@@ -1,5 +1,5 @@
 ---
-title: 将设备载入 Microsoft Defender ATP 服务
+title: 将设备载入到 Microsoft Defender for Endpoint 服务
 description: 载入 Windows 10 设备、服务器、非 Windows 设备，并了解如何运行检测测试。
 keywords: 载入， 适用于终结点载入的 Microsoft Defender， windows atp 载入， sccm， 组策略， mdm， 本地脚本， 检测测试
 search.product: eADQiWindows 10XVcnh
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 9b7a225e29b4b79b2e6caf95332cb91da3dade7f
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 4aa3e30f34e7d9dc362cc0bbb277aaee5834b4fe
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51186949"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51861367"
 ---
 # <a name="onboard-devices-to-the-microsoft-defender-for-endpoint-service"></a>将设备载入到 Microsoft Defender for Endpoint 服务
 
@@ -67,8 +67,8 @@ ms.locfileid: "51186949"
 [载入 Windows 10 设备](configure-endpoints.md) | 你需要载入设备，以向 Defender for Endpoint 服务报告。 了解可用于在企业中配置设备的工具和方法。
 [载入服务器](configure-server-endpoints.md) |  将 Windows Server 2008 R2 SP1、Windows Server 2012 R2、Windows Server 2016、Windows Server (SAC) 版本 1803 和更高版本、Windows Server 2019 及更高版本以及 Windows Server 2019 核心版载入 Defender for Endpoint。
 [载入非 Windows 设备](configure-endpoints-non-windows.md) | Defender for Endpoint 为 Windows 和非 Windows 平台提供了集中式安全操作体验。 你将能够在 Microsoft Defender 安全中心内查看各种受支持操作系统 (操作系统) 警报，并更好地保护组织的网络。 此体验利用第三方安全产品的传感器数据。 
-[对新载入的设备运行检测测试](run-detection-test.md) | 在新载入的设备上运行脚本，验证它是否正确报告给 Defender for Endpoint 服务。
+[在新载入的设备上运行检测测试](run-detection-test.md) | 在新载入的设备上运行脚本，验证它是否正确报告给 Defender for Endpoint 服务。
 [配置代理和 Internet 设置](configure-proxy-internet.md)| 通过配置代理和 Internet 连接设置，启用与 Defender for Endpoint 云服务的通信。
-[载入问题疑难解答](troubleshoot-onboarding.md) | 了解如何解决载入期间可能出现的问题。
+[解决载入问题](troubleshoot-onboarding.md) | 了解如何解决载入期间可能出现的问题。
 
 >想要体验适用于终结点的 Defender？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-onboardconfigure-belowfoldlink)

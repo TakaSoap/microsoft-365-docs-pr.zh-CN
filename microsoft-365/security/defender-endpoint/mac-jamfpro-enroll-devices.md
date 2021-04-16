@@ -1,6 +1,6 @@
 ---
-title: 将适用于 macOS 设备的 Microsoft Defender ATP 注册到 Jamf Pro
-description: 将适用于 macOS 设备的 Microsoft Defender ATP 注册到 Jamf Pro
+title: 将适用于 macOS 设备的 Microsoft Defender for Endpoint 注册到 Jamf Pro
+description: 将适用于 macOS 设备的 Microsoft Defender for Endpoint 注册到 Jamf Pro
 keywords: microsoft， defender， atp， mac， 安装， 部署， 卸载， intune， jamfpro， macos， catalina， mojave， high sierra
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: ea71875dedf7e8706c9022420abd63bc5eb20c69
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: e832493159649cb6721320da53c25f57855baa4f
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51689721"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51861643"
 ---
 # <a name="enroll-microsoft-defender-for-endpoint-on-macos-devices-into-jamf-pro"></a>在 macOS 设备上注册 Microsoft Defender for Endpoint 到 Jamf Pro 
 

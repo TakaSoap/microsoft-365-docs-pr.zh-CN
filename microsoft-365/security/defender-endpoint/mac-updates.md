@@ -1,6 +1,6 @@
 ---
-title: 部署适用于 Mac 的 Microsoft Defender ATP 的更新
-description: 控制企业环境中 Microsoft Defender ATP for Mac 的更新。
+title: 部署适用于 Mac 的 Microsoft Defender for Endpoint 的更新
+description: 控制企业环境中适用于 Mac 的 Microsoft Defender for Endpoint 的更新。
 keywords: microsoft， defender， atp， mac， 更新， 部署
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 3321c1bd181b89c53e2618fc20fa7f733a20cfc1
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 9d373594771efe4eb647c007db3a26efe83e330e
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51689049"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51860311"
 ---
 # <a name="deploy-updates-for-microsoft-defender-for-endpoint-on-macos"></a>在 macOS 上部署 Microsoft Defender for Endpoint 的更新
 
@@ -78,7 +78,7 @@ MAU 包括一个称为 *msupdate* 的命令行工具，该工具专为 IT 管理
 
 |节|值|
 |:--|:--|
-| **域** | com.microsoft.autoupdate2 |
+| **域** | `com.microsoft.autoupdate2` |
 | **Key** | ChannelName |
 | **数据类型** | String |
 | **可能的值** | Beta <br/> 预览 <br/> Current |
@@ -96,7 +96,7 @@ MAU 包括一个称为 *msupdate* 的命令行工具，该工具专为 IT 管理
 
 |节|值|
 |:--|:--|
-| **域** | com.microsoft.autoupdate2 |
+| **域** | `com.microsoft.autoupdate2` |
 | **Key** | UpdateCheckFrequency |
 | **数据类型** | 整数 |
 | **默认值** | 720 (分钟)  |
@@ -109,7 +109,7 @@ MAU 包括一个称为 *msupdate* 的命令行工具，该工具专为 IT 管理
 
 |节|值|
 |:--|:--|
-| **域** | com.microsoft.autoupdate2 |
+| **域** | `com.microsoft.autoupdate2` |
 | **Key** | HowToCheck |
 | **数据类型** | String |
 | **可能的值** | 手动 <br/> AutomaticCheck <br/> AutomaticDownload |
@@ -122,7 +122,7 @@ MAU 包括一个称为 *msupdate* 的命令行工具，该工具专为 IT 管理
 
 |节|值|
 |:--|:--|
-| **域** | com.microsoft.autoupdate2 |
+| **域** | `com.microsoft.autoupdate2` |
 | **Key** | EnableCheckForUpdatesButton |
 | **数据类型** | Boolean |
 | **可能的值** | 为 (默认值)  <br/> False |
@@ -134,7 +134,7 @@ MAU 包括一个称为 *msupdate* 的命令行工具，该工具专为 IT 管理
 
 |节|值|
 |:--|:--|
-| **域** | com.microsoft.autoupdate2 |
+| **域** | `com.microsoft.autoupdate2` |
 | **Key** | DisableInsiderCheckbox |
 | **数据类型** | Boolean |
 | **可能的值** | False (默认值)  <br/> True |
@@ -146,7 +146,7 @@ MAU 包括一个称为 *msupdate* 的命令行工具，该工具专为 IT 管理
 
 |节|值|
 |:--|:--|
-| **域** | com.microsoft.autoupdate2 |
+| **域** | `com.microsoft.autoupdate2` |
 | **Key** | SendAllTelemetryEnabled |
 | **数据类型** | Boolean |
 | **可能的值** | 为 (默认值)  <br/> False |

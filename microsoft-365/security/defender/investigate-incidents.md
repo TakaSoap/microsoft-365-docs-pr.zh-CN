@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 5fe594dca935b7377a385b487f1464c3f0a91151
-ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
+ms.openlocfilehash: 99acc25c3949b758dab990a9c2e9104b9158accd
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51760271"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51861850"
 ---
 # <a name="investigate-incidents-in-microsoft-365-defender"></a>调查 Microsoft 365 Defender 中的事件
 
@@ -50,7 +50,7 @@ Microsoft 365 Defender 将来自你的设备、用户和邮箱的所有用户的
 
 :::image type="content" source="../../media/investigate-incidents/incidents-ss-incident-select.png" alt-text="从选中标记列中选择事件的示例":::
 
-当你这样做时，将打开一个摘要窗格，包含有关事件的关键信息，例如严重性、分配到它的人以及事件的[MITRE ATT &trade; ](https://attack.mitre.org/)&CK 类别。 下面是一个示例。
+当你这样做时，将打开一个摘要窗格，其中包含有关事件的关键信息，如严重性、分配到该事件的人以及事件的[MITRE ATT &trade; ](https://attack.mitre.org/)&CK 类别。 下面是一个示例。
 
 :::image type="content" source="../../media/investigate-incidents/incidents-ss-incident-side-panel.png" alt-text="事件的摘要窗格示例":::
 
@@ -70,7 +70,7 @@ Microsoft 365 Defender 将来自你的设备、用户和邮箱的所有用户的
 
 警报时间线可快速了解警报发生的时间顺序，以及这些警报链接到此事件的原因。
 
-最后“证据部分”汇总了事件中包含的项目数量和修正状态，因此能够立即确定是否需要采取措施。
+最后 ， 证据部分提供事件中包含的不同项目及其修正状态的摘要，以便你可以立即确定你是否需要任何操作。
 
 本概述可通过深入了解应了解的事件主要特征，帮助对事件进行初始会审。
 

@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - GEA150
 description: 了解如何使用 Microsoft 365 管理中心中的 Microsoft 365 报表仪表板获取 Microsoft 365 应用版使用情况报告。
-ms.openlocfilehash: 5b45e7994126018701c409d4fbfc6f1172924773
-ms.sourcegitcommit: 437bdbf3f99610869811e80432a59b5f244f7a87
+ms.openlocfilehash: d41a1680b46709c3f41b5238d309794c68101cee
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/08/2021
-ms.locfileid: "51644263"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51860745"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-365-apps-usage"></a>管理中心中的 Microsoft 365 报表 - Microsoft 365 应用版使用情况
 
@@ -33,7 +33,7 @@ Microsoft 365 **报表** 仪表板显示组织中各产品的活动概述。 它
 
 
  > [!NOTE]
- > 你必须是 Microsoft 365 中的全局管理员、全局读者或报告阅读者，或者 Exchange、SharePoint 或 Skype for Business 管理员才能查看报告。 此报告中不支持共享计算机激活。
+ > 你必须是 Microsoft 365 中的全局管理员、全局读者或报告阅读者，或者 Exchange、SharePoint 或 Skype for Business 管理员才能查看报告。 此报告中不包括共享计算机激活。
 
 ## <a name="how-to-get-to-the-microsoft-365-apps-usage-report"></a>如何访问 Microsoft 365 应用版使用情况报告
 
@@ -50,7 +50,7 @@ Microsoft 365 **报表** 仪表板显示组织中各产品的活动概述。 它
 |项目|说明|
  |:-----|:-----|
  |1. <br/> |可查看 **Microsoft 365** 应用使用情况报告，了解过去 7 天、30 天、90 天或 180 天的趋势。 但是，如果您选择报告中的特定日期，则表 (7) 将显示自当前日期起最多 28 天的数据 (而不是报告生成日期) 。 <br/> |
- |2. <br/> |每个报告中的数据通常涵盖最近七天。 <br/> |
+ |2. <br/> |每个报告中的数据通常涵盖最近两天。 每六天，我们将使用次要更新刷新报告，以确保数据质量。 <br/> |
  |3. <br/> |" **用户** "视图显示每个应用的活动用户数趋势 -Outlook、Word、Excel、PowerPoint、OneNote 和 Teams。 "活动用户"是在这些应用中执行任何有意操作的任何用户。 <br/> |
  |4. <br/> |" **平台** "视图显示每个平台的所有应用（Windows、Mac、Web 和移动）中活动用户的趋势。 <br/> |
  |5.<br/>|在 **"用户** "图表上，Y 轴表示相应应用的唯一活动用户数。 在 **"平台**   "图表上，Y 轴表示各个平台的唯一用户数。 两个图表上的 X 轴都是应用在给定平台上使用的日期。<br/>|

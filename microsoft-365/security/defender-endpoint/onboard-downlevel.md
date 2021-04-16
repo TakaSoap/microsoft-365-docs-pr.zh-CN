@@ -1,6 +1,6 @@
 ---
-title: 在 Microsoft Defender ATP 上载入以前版本的 Windows
-description: 载入受支持的以前版本的 Windows 设备，以便它们可以将传感器数据发送到 Microsoft Defender ATP 传感器
+title: 在 Microsoft Defender for Endpoint 上载入以前版本的 Windows
+description: 载入受支持的以前版本的 Windows 设备，以便它们可以将传感器数据发送到 Microsoft Defender for Endpoint 传感器
 keywords: onboard， windows， 7， 81， oms， sp1， enterprise， pro， down level
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: b180e7555bb3339324d3b99956d8f8ad73dc13c3
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 945645e0f20f316c094f746adb6ba193f6806f86
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51186385"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51861355"
 ---
 # <a name="onboard-previous-versions-of-windows"></a>载入以前版本的 Windows
 
@@ -63,7 +63,7 @@ Defender for Endpoint 与 System Center Endpoint Protection 集成，以通过�
 
 ## <a name="install-and-configure-microsoft-monitoring-agent-mma-to-report-sensor-data-to-microsoft-defender-for-endpoint"></a>安装和配置 Microsoft 监视代理 (MMA) 向 Microsoft Defender for Endpoint 报告传感器数据
 
-### <a name="before-you-begin"></a>准备工作
+### <a name="before-you-begin"></a>开始之前
 查看以下详细信息以验证最低系统要求：
 - 安装 [2018 年 2 月每月更新汇总](https://support.microsoft.com/help/4074598/windows-7-update-kb4074598)
   

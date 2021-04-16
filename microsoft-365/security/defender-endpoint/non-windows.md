@@ -1,6 +1,6 @@
 ---
-title: 适用于非 Windows 平台的 Microsoft Defender ATP
-description: 了解适用于非 Windows 平台的 Microsoft Defender ATP 功能
+title: 适用于非 Windows 平台的 Microsoft Defender for Endpoint
+description: 了解适用于非 Windows 平台的 Microsoft Defender 终结点功能
 keywords: 非 Windows， mac， macos， linux， android
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 7d9dd82d8c1beee77ea1f95b11a12bcddf01115f
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: dce9a3d41d8a9d7c260cda8a930867da8c2ae8ac
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51688329"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51862243"
 ---
 # <a name="microsoft-defender-for-endpoint-for-non-windows-platforms"></a>适用于非 Windows 平台的 Microsoft Defender for Endpoint
 
@@ -47,7 +47,7 @@ macOS 上的 Microsoft Defender for Endpoint 为三个最新发布的 macOS (EDR
 
 若要详细了解如何开始使用，请访问 macOS 上的 Defender for Endpoint [文档](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/microsoft-defender-atp-mac)。
 
-## <a name="microsoft-defender-for-endpoint-on-linux"></a>Linux 上的 Microsoft Defender for Endpoint
+## <a name="microsoft-defender-for-endpoint-on-linux"></a>Microsoft Defender for Endpoint on Linux
 
 Linux 上的 Microsoft Defender for Endpoint 为 Linux (提供) AV 功能。 这包括配置和管理代理、启动扫描和管理威胁的完整命令行体验。 我们支持六个最常见的 Linux Server 分发的最新版本：RHEL 7.2+、CentOS Linux 7.2+、Ubuntu 16 LTS 或更高版本 LTS、SLES 12+、Debian 9+和 Oracle Linux 7.2。 可以使用部署和配置 Linux 上的 Microsoft Defender for Endpoint、Ansible 或现有的 Linux 配置管理工具进行部署和配置。 有关关键功能和优势的信息，请阅读 [我们的公告](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/bg-p/MicrosoftDefenderATPBlog/label-name/Linux)。
 

@@ -1,6 +1,6 @@
 ---
 title: 如何使用适用于 macOS 的 MDATP 计划扫描
-description: 了解如何在 macOS 中为 Microsoft Defender ATP 安排自动扫描时间，以更好地保护组织的资产。
+description: 了解如何在 macOS 中为 Microsoft Defender for Endpoint 安排自动扫描时间，以更好地保护组织的资产。
 keywords: microsoft， defender， atp， mac， 扫描， 防病毒
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: ecfae62bdc092a0b2544bf6f6a76dad1e86b8ab4
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 71576c777f58aa193f2a73db7edea832d29a97c6
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51689589"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51860919"
 ---
 # <a name="schedule-scans-with-microsoft-defender-for-endpoint-on-macos"></a>在 macOS 上使用 Microsoft Defender for Endpoint 计划扫描
 

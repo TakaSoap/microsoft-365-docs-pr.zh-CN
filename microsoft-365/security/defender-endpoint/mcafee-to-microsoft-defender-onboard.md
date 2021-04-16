@@ -22,12 +22,12 @@ ms.custom: migrationguides
 ms.topic: article
 ms.date: 03/03/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
-ms.openlocfilehash: 77ce0edc5b81bd54653c2aea0a32f4e358e75ebe
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: c30a552b4a2abcea9ceff4968c2a9e7e32ff2450
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51185619"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51862075"
 ---
 # <a name="migrate-from-mcafee---phase-3-onboard-to-microsoft-defender-for-endpoint"></a>从 McAfee 迁移 - 第 3 阶段：载入到 Microsoft Defender for Endpoint
 
@@ -36,7 +36,7 @@ ms.locfileid: "51185619"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
-|[![阶段 1：准备](images/phase-diagrams/prepare.png)](mcafee-to-microsoft-defender-prepare.md)<br/>[阶段 1：准备](mcafee-to-microsoft-defender-prepare.md) |[![阶段 2：设置](images/phase-diagrams/setup.png)](mcafee-to-microsoft-defender-setup.md)<br/>[阶段 2：设置](mcafee-to-microsoft-defender-setup.md) |![阶段 3：载入](images/phase-diagrams/onboard.png)<br/>阶段 3：载入 |
+|[![阶段 1：准备](images/phase-diagrams/prepare.png)](mcafee-to-microsoft-defender-prepare.md)<br/>[阶段 1：准备](mcafee-to-microsoft-defender-prepare.md) |[![阶段 2：设置](images/phase-diagrams/setup.png)](mcafee-to-microsoft-defender-setup.md)<br/>[阶段 2：设置](mcafee-to-microsoft-defender-setup.md) |![阶段 3：开始使用](images/phase-diagrams/onboard.png)<br/>阶段 3：开始使用 |
 |--|--|--|
 || |*你在这里！* |
 
@@ -77,8 +77,8 @@ ms.locfileid: "51185619"
 |操作系统  |指南  |
 |---------|---------|
 |- Windows 10 <br/>- Windows Server 2019 <br/>- Windows Server 版本 1803 <br/>- Windows Server 2016 <br/>- Windows Server 2012 R2     |请参阅 [运行检测测试](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/run-detection-test)。 <br/><br/>请访问 Microsoft Defender for Endpoint 演示方案站点 () [https://demo.wd.microsoft.com](https://demo.wd.microsoft.com) 并尝试一个或多个方案。 例如，尝试 **云提供的保护演示** 方案。         |
-|macOS<br/>- 10.15 (加泰罗尼亚语) <br/>- 10.14 (Mojave) <br/>- 10.13 (High Sierra)      |从 下载并使用 DIY 应用 [https://aka.ms/mdatpmacosdiy](https://aka.ms/mdatpmacosdiy) 。 <br/><br/>有关详细信息，请参阅[Microsoft Defender ATP for Mac。](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/microsoft-defender-atp-mac)        |
-|Linux：<br/>- RHEL 7.2+<br/>- CentOS Linux 7.2 及以上<br/>- Ubuntu 16 LTS 或更高版本 LTS<br/>- SLES 12+<br/>- Debian 9+<br/>- Oracle Linux 7.2 |1. 运行以下命令，并查找 **结果 1：** <br/>`mdatp health --field real_time_protection_enabled`. <br/><br/>2. 打开"终端"窗口，并运行以下命令： <br/>`curl -o ~/Downloads/eicar.com.txt https://www.eicar.org/download/eicar.com.txt`. <br/><br/>3. 运行以下命令以列出任何检测到的威胁： <br/>`mdatp threat list`. <br/><br/>有关详细信息，请参阅适用于[Linux 的 Microsoft Defender ATP。](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/microsoft-defender-atp-linux) |
+|macOS<br/>- 10.15 (加泰罗尼亚语) <br/>- 10.14 (Mojave) <br/>- 10.13 (High Sierra)      |从 下载并使用 DIY 应用 [https://aka.ms/mdatpmacosdiy](https://aka.ms/mdatpmacosdiy) 。 <br/><br/>有关详细信息，请参阅[Microsoft Defender for Endpoint for Mac。](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/microsoft-defender-atp-mac)        |
+|Linux：<br/>- RHEL 7.2+<br/>- CentOS Linux 7.2 及以上<br/>- Ubuntu 16 LTS 或更高版本 LTS<br/>- SLES 12+<br/>- Debian 9+<br/>- Oracle Linux 7.2 |1. 运行以下命令，并查找 **结果 1：** <br/>`mdatp health --field real_time_protection_enabled`. <br/><br/>2. 打开"终端"窗口，并运行以下命令： <br/>`curl -o ~/Downloads/eicar.com.txt https://www.eicar.org/download/eicar.com.txt`. <br/><br/>3. 运行以下命令以列出任何检测到的威胁： <br/>`mdatp threat list`. <br/><br/>有关详细信息，请参阅适用于 [Linux 的 Microsoft Defender 终结点](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/microsoft-defender-atp-linux)。 |
 
 ## <a name="uninstall-mcafee"></a>卸载 McAfee
 

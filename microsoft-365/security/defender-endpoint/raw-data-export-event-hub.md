@@ -1,6 +1,6 @@
 ---
 title: 将 Microsoft Defender for Endpoint 事件流式处理到 Azure 事件中心
-description: 了解如何配置 Microsoft Defender ATP 以将高级搜寻事件流式传输至事件中心。
+description: 了解如何配置 Microsoft Defender for Endpoint 以将高级搜寻事件流式处理到事件中心。
 keywords: 原始数据导出， 流式 API， API， Azure 事件中心， Azure 存储， 存储帐户， 高级搜寻， 原始数据共享
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 231ba79e1d66eee263b6c1a4335f0a7b54eeb75d
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: df305c9fcc7fb9249f2387567600adb899f8c49a
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51055360"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51861043"
 ---
 # <a name="configure-microsoft-defender-for-endpoint-to-stream-advanced-hunting-events-to-your-azure-event-hubs"></a>配置 Microsoft Defender for Endpoint 以将高级搜寻事件流式传输至 Azure 事件中心
 
