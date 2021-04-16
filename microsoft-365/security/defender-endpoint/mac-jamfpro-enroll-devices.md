@@ -1,6 +1,6 @@
 ---
-title: 将适用于 macOS 设备的 Microsoft Defender ATP 注册到 Jamf Pro
-description: 将适用于 macOS 设备的 Microsoft Defender ATP 注册到 Jamf Pro
+title: 将适用于 macOS 设备的 Microsoft Defender for Endpoint 注册到 Jamf Pro
+description: 将适用于 macOS 设备的 Microsoft Defender for Endpoint 注册到 Jamf Pro
 keywords: microsoft， defender， atp， mac， 安装， 部署， 卸载， intune， jamfpro， macos， catalina， mojave， high sierra
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,57 +18,57 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: ea71875dedf7e8706c9022420abd63bc5eb20c69
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: e832493159649cb6721320da53c25f57855baa4f
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51689721"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51861643"
 ---
-# <a name="enroll-microsoft-defender-for-endpoint-on-macos-devices-into-jamf-pro"></a><span data-ttu-id="7d6f0-104">在 macOS 设备上注册 Microsoft Defender for Endpoint 到 Jamf Pro</span><span class="sxs-lookup"><span data-stu-id="7d6f0-104">Enroll Microsoft Defender for Endpoint on macOS devices into Jamf Pro</span></span> 
+# <a name="enroll-microsoft-defender-for-endpoint-on-macos-devices-into-jamf-pro"></a><span data-ttu-id="db2b5-104">在 macOS 设备上注册 Microsoft Defender for Endpoint 到 Jamf Pro</span><span class="sxs-lookup"><span data-stu-id="db2b5-104">Enroll Microsoft Defender for Endpoint on macOS devices into Jamf Pro</span></span> 
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-<span data-ttu-id="7d6f0-105">**适用于：**</span><span class="sxs-lookup"><span data-stu-id="7d6f0-105">**Applies to:**</span></span>
-- [<span data-ttu-id="7d6f0-106">Microsoft Defender for Endpoint</span><span class="sxs-lookup"><span data-stu-id="7d6f0-106">Microsoft Defender for Endpoint</span></span>](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [<span data-ttu-id="7d6f0-107">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="7d6f0-107">Microsoft 365 Defender</span></span>](https://go.microsoft.com/fwlink/?linkid=2118804)
+<span data-ttu-id="db2b5-105">**适用于：**</span><span class="sxs-lookup"><span data-stu-id="db2b5-105">**Applies to:**</span></span>
+- [<span data-ttu-id="db2b5-106">Microsoft Defender for Endpoint</span><span class="sxs-lookup"><span data-stu-id="db2b5-106">Microsoft Defender for Endpoint</span></span>](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [<span data-ttu-id="db2b5-107">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="db2b5-107">Microsoft 365 Defender</span></span>](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> <span data-ttu-id="7d6f0-108">想要体验适用于终结点的 Defender？</span><span class="sxs-lookup"><span data-stu-id="7d6f0-108">Want to experience Defender for Endpoint?</span></span> [<span data-ttu-id="7d6f0-109">注册免费试用版。</span><span class="sxs-lookup"><span data-stu-id="7d6f0-109">Sign up for a free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
+> <span data-ttu-id="db2b5-108">想要体验适用于终结点的 Defender？</span><span class="sxs-lookup"><span data-stu-id="db2b5-108">Want to experience Defender for Endpoint?</span></span> [<span data-ttu-id="db2b5-109">注册免费试用版。</span><span class="sxs-lookup"><span data-stu-id="db2b5-109">Sign up for a free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
 
-## <a name="enroll-macos-devices"></a><span data-ttu-id="7d6f0-110">注册 macOS 设备</span><span class="sxs-lookup"><span data-stu-id="7d6f0-110">Enroll macOS devices</span></span>
+## <a name="enroll-macos-devices"></a><span data-ttu-id="db2b5-110">注册 macOS 设备</span><span class="sxs-lookup"><span data-stu-id="db2b5-110">Enroll macOS devices</span></span>
 
-<span data-ttu-id="7d6f0-111">有多种方法注册 JamF。</span><span class="sxs-lookup"><span data-stu-id="7d6f0-111">There are multiple methods of getting enrolled to JamF.</span></span>
+<span data-ttu-id="db2b5-111">有多种方法注册 JamF。</span><span class="sxs-lookup"><span data-stu-id="db2b5-111">There are multiple methods of getting enrolled to JamF.</span></span>
 
-<span data-ttu-id="7d6f0-112">本文将指导你采用两种方法：</span><span class="sxs-lookup"><span data-stu-id="7d6f0-112">This article will guide you on two methods:</span></span>
+<span data-ttu-id="db2b5-112">本文将指导你采用两种方法：</span><span class="sxs-lookup"><span data-stu-id="db2b5-112">This article will guide you on two methods:</span></span>
 
-- [<span data-ttu-id="7d6f0-113">方法 1：注册邀请</span><span class="sxs-lookup"><span data-stu-id="7d6f0-113">Method 1:  Enrollment Invitations</span></span>](#enrollment-method-1-enrollment-invitations)
-- [<span data-ttu-id="7d6f0-114">方法 2：Prestage 注册</span><span class="sxs-lookup"><span data-stu-id="7d6f0-114">Method 2:  Prestage Enrollments</span></span>](#enrollment-method-2-prestage-enrollments)
+- [<span data-ttu-id="db2b5-113">方法 1：注册邀请</span><span class="sxs-lookup"><span data-stu-id="db2b5-113">Method 1:  Enrollment Invitations</span></span>](#enrollment-method-1-enrollment-invitations)
+- [<span data-ttu-id="db2b5-114">方法 2：Prestage 注册</span><span class="sxs-lookup"><span data-stu-id="db2b5-114">Method 2:  Prestage Enrollments</span></span>](#enrollment-method-2-prestage-enrollments)
 
-<span data-ttu-id="7d6f0-115">有关完整列表，请参阅关于 [计算机注册](https://docs.jamf.com/9.9/casper-suite/administrator-guide/About_Computer_Enrollment.html)。</span><span class="sxs-lookup"><span data-stu-id="7d6f0-115">For a complete list, see [About Computer Enrollment](https://docs.jamf.com/9.9/casper-suite/administrator-guide/About_Computer_Enrollment.html).</span></span>
+<span data-ttu-id="db2b5-115">有关完整列表，请参阅关于 [计算机注册](https://docs.jamf.com/9.9/casper-suite/administrator-guide/About_Computer_Enrollment.html)。</span><span class="sxs-lookup"><span data-stu-id="db2b5-115">For a complete list, see [About Computer Enrollment](https://docs.jamf.com/9.9/casper-suite/administrator-guide/About_Computer_Enrollment.html).</span></span>
 
 
-## <a name="enrollment-method-1-enrollment-invitations"></a><span data-ttu-id="7d6f0-116">注册方法 1：注册邀请</span><span class="sxs-lookup"><span data-stu-id="7d6f0-116">Enrollment Method 1: Enrollment Invitations</span></span>
+## <a name="enrollment-method-1-enrollment-invitations"></a><span data-ttu-id="db2b5-116">注册方法 1：注册邀请</span><span class="sxs-lookup"><span data-stu-id="db2b5-116">Enrollment Method 1: Enrollment Invitations</span></span>
 
-1. <span data-ttu-id="7d6f0-117">在 Jamf Pro 仪表板中，导航到 **注册邀请**。</span><span class="sxs-lookup"><span data-stu-id="7d6f0-117">In the Jamf Pro dashboard, navigate to **Enrollment invitations**.</span></span>
+1. <span data-ttu-id="db2b5-117">在 Jamf Pro 仪表板中，导航到 **注册邀请**。</span><span class="sxs-lookup"><span data-stu-id="db2b5-117">In the Jamf Pro dashboard, navigate to **Enrollment invitations**.</span></span>
 
     ![配置设置的图像1](images/a347307458d6a9bbfa88df7dbe15398f.png)
 
-2. <span data-ttu-id="7d6f0-119">选择 **+ 新建**。</span><span class="sxs-lookup"><span data-stu-id="7d6f0-119">Select **+ New**.</span></span>
+2. <span data-ttu-id="db2b5-119">选择 **+ 新建**。</span><span class="sxs-lookup"><span data-stu-id="db2b5-119">Select **+ New**.</span></span>
 
     ![自动生成的说明徽标特写](images/b6c7ad56d50f497c38fc14c1e315456c.png)
 
-3. <span data-ttu-id="7d6f0-121">在 **"为邀请指定** 收件人>电子邮件地址"下，输入收件人 (电子邮件地址) 电子邮件地址。</span><span class="sxs-lookup"><span data-stu-id="7d6f0-121">In **Specify Recipients for the Invitation** > under **Email Addresses** enter the e-mail address(es) of the recipients.</span></span>
+3. <span data-ttu-id="db2b5-121">在 **"为邀请指定** 收件人>电子邮件地址"下，输入收件人 (电子邮件地址) 电子邮件地址。</span><span class="sxs-lookup"><span data-stu-id="db2b5-121">In **Specify Recipients for the Invitation** > under **Email Addresses** enter the e-mail address(es) of the recipients.</span></span>
 
     ![配置设置的图像2](images/718b9d609f9f77c8b13ba88c4c0abe5d.png)
 
     ![配置设置的图像3](images/ae3597247b6bc7c5347cf56ab1e820c0.png)
 
-    <span data-ttu-id="7d6f0-124">例如：janedoe@contoso.com</span><span class="sxs-lookup"><span data-stu-id="7d6f0-124">For example: janedoe@contoso.com</span></span>
+    <span data-ttu-id="db2b5-124">例如：janedoe@contoso.com</span><span class="sxs-lookup"><span data-stu-id="db2b5-124">For example: janedoe@contoso.com</span></span>
 
     ![配置设置的图像4](images/4922c0fcdde4c7f73242b13bf5e35c19.png)
 
-4. <span data-ttu-id="7d6f0-126">为邀请配置邮件。</span><span class="sxs-lookup"><span data-stu-id="7d6f0-126">Configure the message for the invitation.</span></span>
+4. <span data-ttu-id="db2b5-126">为邀请配置邮件。</span><span class="sxs-lookup"><span data-stu-id="db2b5-126">Configure the message for the invitation.</span></span>
 
     ![配置设置的图像5](images/ce580aec080512d44a37ff8e82e5c2ac.png)
 
@@ -78,36 +78,36 @@ ms.locfileid: "51689721"
 
     ![配置设置的图像8](images/54be9c6ed5b24cebe628dc3cd9ca4089.png)
 
-## <a name="enrollment-method-2-prestage-enrollments"></a><span data-ttu-id="7d6f0-131">注册方法 2：预阶段注册</span><span class="sxs-lookup"><span data-stu-id="7d6f0-131">Enrollment Method 2: Prestage Enrollments</span></span>
+## <a name="enrollment-method-2-prestage-enrollments"></a><span data-ttu-id="db2b5-131">注册方法 2：预阶段注册</span><span class="sxs-lookup"><span data-stu-id="db2b5-131">Enrollment Method 2: Prestage Enrollments</span></span>
 
-1. <span data-ttu-id="7d6f0-132">在 Jamf Pro 仪表板中，导航到 **Prestage 注册**。</span><span class="sxs-lookup"><span data-stu-id="7d6f0-132">In the Jamf Pro dashboard, navigate to **Prestage enrollments**.</span></span>
+1. <span data-ttu-id="db2b5-132">在 Jamf Pro 仪表板中，导航到 **Prestage 注册**。</span><span class="sxs-lookup"><span data-stu-id="db2b5-132">In the Jamf Pro dashboard, navigate to **Prestage enrollments**.</span></span>
 
     ![配置设置的图像9](images/6fd0cb2bbb0e60a623829c91fd0826ab.png)
 
-2. <span data-ttu-id="7d6f0-134">按照 Computer [PreStage Enrollments 中的说明操作](https://docs.jamf.com/9.9/casper-suite/administrator-guide/Computer_PreStage_Enrollments.html)。</span><span class="sxs-lookup"><span data-stu-id="7d6f0-134">Follow the instructions in [Computer PreStage Enrollments](https://docs.jamf.com/9.9/casper-suite/administrator-guide/Computer_PreStage_Enrollments.html).</span></span>
+2. <span data-ttu-id="db2b5-134">按照 Computer [PreStage Enrollments 中的说明操作](https://docs.jamf.com/9.9/casper-suite/administrator-guide/Computer_PreStage_Enrollments.html)。</span><span class="sxs-lookup"><span data-stu-id="db2b5-134">Follow the instructions in [Computer PreStage Enrollments](https://docs.jamf.com/9.9/casper-suite/administrator-guide/Computer_PreStage_Enrollments.html).</span></span>
 
-## <a name="enroll-macos-device"></a><span data-ttu-id="7d6f0-135">注册 macOS 设备</span><span class="sxs-lookup"><span data-stu-id="7d6f0-135">Enroll macOS device</span></span>
+## <a name="enroll-macos-device"></a><span data-ttu-id="db2b5-135">注册 macOS 设备</span><span class="sxs-lookup"><span data-stu-id="db2b5-135">Enroll macOS device</span></span>
 
-1. <span data-ttu-id="7d6f0-136">选择 **"继续** "，然后从"系统首选项" **窗口安装 CA** 证书。</span><span class="sxs-lookup"><span data-stu-id="7d6f0-136">Select **Continue** and install the CA certificate from a **System Preferences** window.</span></span>
+1. <span data-ttu-id="db2b5-136">选择 **"继续** "，然后从"系统首选项" **窗口安装 CA** 证书。</span><span class="sxs-lookup"><span data-stu-id="db2b5-136">Select **Continue** and install the CA certificate from a **System Preferences** window.</span></span>
 
     ![Jamf Pro 注册图像1](images/jamfpro-ca-certificate.png)
 
-2. <span data-ttu-id="7d6f0-138">安装 CA 证书后，返回到浏览器窗口，然后选择" **继续** "并安装 MDM 配置文件。</span><span class="sxs-lookup"><span data-stu-id="7d6f0-138">Once CA certificate is installed, return to the browser window and select **Continue** and install the MDM profile.</span></span> 
+2. <span data-ttu-id="db2b5-138">安装 CA 证书后，返回到浏览器窗口，然后选择" **继续** "并安装 MDM 配置文件。</span><span class="sxs-lookup"><span data-stu-id="db2b5-138">Once CA certificate is installed, return to the browser window and select **Continue** and install the MDM profile.</span></span> 
 
     ![Jamf Pro 注册的图像2](images/jamfpro-install-mdm-profile.png)
 
-3. <span data-ttu-id="7d6f0-140">选择 **允许** 从 JAMF 下载。</span><span class="sxs-lookup"><span data-stu-id="7d6f0-140">Select **Allow** to downloads from JAMF.</span></span>
+3. <span data-ttu-id="db2b5-140">选择 **允许** 从 JAMF 下载。</span><span class="sxs-lookup"><span data-stu-id="db2b5-140">Select **Allow** to downloads from JAMF.</span></span>
 
     ![Jamf Pro 注册的图像3](images/jamfpro-download.png)
 
-4. <span data-ttu-id="7d6f0-142">选择 **"** 继续"继续安装 MDM 配置文件。</span><span class="sxs-lookup"><span data-stu-id="7d6f0-142">Select **Continue** to proceed with the MDM Profile installation.</span></span> 
+4. <span data-ttu-id="db2b5-142">选择 **"** 继续"继续安装 MDM 配置文件。</span><span class="sxs-lookup"><span data-stu-id="db2b5-142">Select **Continue** to proceed with the MDM Profile installation.</span></span> 
 
     ![Jamf Pro 注册的图像4](images/jamfpro-install-mdm.png)
 
-5. <span data-ttu-id="7d6f0-144">选择 **"继续** "以安装 MDM 配置文件。</span><span class="sxs-lookup"><span data-stu-id="7d6f0-144">Select **Continue** to install the MDM Profile.</span></span>
+5. <span data-ttu-id="db2b5-144">选择 **"继续** "以安装 MDM 配置文件。</span><span class="sxs-lookup"><span data-stu-id="db2b5-144">Select **Continue** to install the MDM Profile.</span></span>
 
     ![Jamf Pro 注册图像5](images/jamfpro-mdm-unverified.png)
 
-6. <span data-ttu-id="7d6f0-146">选择 **"继续**  "以完成配置。</span><span class="sxs-lookup"><span data-stu-id="7d6f0-146">Select **Continue**  to complete the configuration.</span></span> 
+6. <span data-ttu-id="db2b5-146">选择 **"继续**  "以完成配置。</span><span class="sxs-lookup"><span data-stu-id="db2b5-146">Select **Continue**  to complete the configuration.</span></span> 
 
     ![Jamf Pro 注册图像6](images/jamfpro-mdm-profile.png)
