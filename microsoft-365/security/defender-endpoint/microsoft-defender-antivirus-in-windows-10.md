@@ -1,25 +1,25 @@
 ---
 title: 下一代保护
-description: 了解如何管理、配置和使用 Microsoft Defender 防病毒内置反恶意软件和防病毒保护。
-keywords: Microsoft Defender 防病毒， windows defender， 反恶意软件， scep， system center endpoint protection， system center configuration manager， 病毒， 恶意软件， 威胁， 检测， 保护， 安全
+description: 了解如何管理、配置和使用 Microsoft Defender 防病毒、内置反恶意软件和防病毒保护。
+keywords: Microsoft Defender 防病毒、Windows Defender、反恶意软件、SCEP、System Center 端点保护、System Center Configuration Manager、病毒、恶意软件、威胁、检测、保护、安全
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localization_priority: priority
+localization_priority: Priority
 author: denisebmsft
 ms.author: deniseb
 ms.reviewer: ''
 manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
-ms.openlocfilehash: eb7e0253b3761d05d112500c0410fffa58548221
-ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
+ms.openlocfilehash: 6fc6ad69df554cf20fbae0d97fcb30f211f48705
+ms.sourcegitcommit: 4acf613587128cae27e0fd470d1216b509775529
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51765415"
+ms.lasthandoff: 04/15/2021
+ms.locfileid: "51768790"
 ---
 # <a name="next-generation-protection"></a>下一代保护
 
@@ -29,34 +29,34 @@ ms.locfileid: "51765415"
 
 - [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
 
-## <a name="microsoft-defender-antivirus-your-next-generation-protection"></a>Microsoft Defender 防病毒：你的下一代保护
+## <a name="microsoft-defender-antivirus-your-next-generation-protection"></a>Windows Defender 防病毒：你的下一代保护
 
-Microsoft Defender 防病毒是 Microsoft Defender for Endpoint 的下一代保护组件。 此保护将机器学习、大数据分析、深度威胁防范研究和 Microsoft 云基础结构汇集在一起，以保护企业组织的设备。 下一代保护服务包括以下功能：
+Microsoft Defender 防病毒是下一代 Microsoft Defender for Endpoint 的保护组件。 此保护结合机器学习、大数据分析、深度威胁抵御研究和 Microsoft 云基础结构来保护你的企业组织中的设备。 下一代保护服务包括以下功能：
 
-- 基于行为的[启发](configure-protection-features-microsoft-defender-antivirus.md)式实时防病毒保护，其中包括使用文件和进程行为监视以及其他启发式 (扫描，也称为实时保护) 。  它还包括检测和阻止被视为不安全但可能未检测为恶意软件的应用。
-- [云提供的保护](cloud-protection-microsoft-defender-antivirus.md)，包括快速检测和阻止新出现的威胁。
-- [专用保护和产品更新](manage-updates-baselines-microsoft-defender-antivirus.md)，其中包括与使 Microsoft Defender 防病毒保持最新相关的更新。
+- [基于行为、启发式和实时防病毒保护](configure-protection-features-microsoft-defender-antivirus.md)，包括使用文件、进程行为监视和其他启发式（也称为 *实时保护*）始终进行的扫描。 它还包括检测和阻止被视为不安全、但可能不会被检测为恶意软件的应用。
+- [云提供的保护](cloud-protection-microsoft-defender-antivirus.md)，包括对新兴威胁近乎即时的检测和阻止。
+- [专用保护和产品更新](manage-updates-baselines-microsoft-defender-antivirus.md)，包括与保持 Microsoft Defender 防病毒最新相关的更新。
 
-## <a name="try-a-demo"></a>试用演示！
+## <a name="try-a-demo"></a>尝试演示！
 
-访问 [Microsoft Defender for Endpoint 演示网站](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) 以确认以下保护功能是否正常工作，然后使用演示方案探索它们：
-- 云保护
-- 在 BAFS 保护 (首次看到) 阻止
-- PUA 保护 (可能不需要) 的应用程序
+请访问 [Microsoft Defender for Endpoint 演示网站](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground)，确认以下保护功能正常工作，并使用演示场景对其进行探索：
+- 云端保护
+- 首次看到时 (BAFS) 保护
+- 潜在有害应用程序 (PUA) 保护
 
-## <a name="minimum-system-requirements"></a>最低系统要求
+## <a name="minimum-system-requirements"></a>最低系统需求
 
-从 Windows 10 起，Microsoft Defender 防病毒具有相同的硬件要求。 有关更多信息，请参阅以下资源：
+Microsoft Defender 防病毒的硬件要求与 Windows 10 相同。 有关详细信息，请参阅以下资源：
 
 - [最低硬件要求](/windows-hardware/design/minimum/minimum-hardware-requirements-overview)
-- [硬件组件指南](/windows-hardware/design/component-guidelines/components)
+- [硬件组件准则](/windows-hardware/design/component-guidelines/components)
 
 ## <a name="configure-next-generation-protection-services"></a>配置下一代保护服务
 
-若要了解如何配置下一代保护服务，请参阅配置 [Microsoft Defender 防病毒功能](configure-microsoft-defender-antivirus-features.md)。
+有关如何配置下一代保护服务的信息，请参阅[配置 Microsoft Defender 防病毒功能](configure-microsoft-defender-antivirus-features.md)。
 
 > [!Note]  
-> 配置和管理在 Windows Server 2016 和 Windows Server 2019 中基本相同，同时运行 Microsoft Defender 防病毒;但是，存在一些差异。 若要了解更多信息，请参阅 [Windows Server 2016 和 Windows Server 2019 上的 Microsoft Defender 防病毒](microsoft-defender-antivirus-on-windows-server.md)。
+> 在运行 Microsoft Defender 防病毒时，Windows Server 2016 和 Windows Server 2019 中的配置和管理基本相同；但也存在一些差异。 要了解更多信息，请参阅[Windows Server 2016 和 2019 上的 Microsoft Defender 防病毒](microsoft-defender-antivirus-on-windows-server.md)。
 
 ## <a name="see-also"></a>另请参阅
 
