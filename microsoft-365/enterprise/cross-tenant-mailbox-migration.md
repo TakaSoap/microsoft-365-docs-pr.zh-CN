@@ -14,12 +14,12 @@ ms.custom:
 - it-pro
 ms.collection:
 - M365-subscription-management
-ms.openlocfilehash: f24f519ec3bb12622d74c1d02fbc0bb017aa2b24
-ms.sourcegitcommit: 7b8104015a76e02bc215e1cf08069979c70650ae
+ms.openlocfilehash: d52a0ca4a2dc9b799a32f70962416ffe190e16db
+ms.sourcegitcommit: 2655bb0ccd66279c35be2fadbd893c937d084109
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51476405"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51876183"
 ---
 # <a name="cross-tenant-mailbox-migration-preview"></a>跨租户邮箱迁移 (预览) 
 
@@ -436,6 +436,10 @@ T2Tbatch-testforignitedemo Syncing ExchangeRemoteMove 1
 
 是，当源租户邮箱移动到目标租户时，应更新源本地 (的 targetAddress (RemoteRoutingAddress/ExternalEmailAddress) 。  虽然邮件路由可以遵循不同 targetAddresses 的多个邮件用户的引荐，但邮件用户的忙/闲查找必须面向邮箱用户的位置。 忙/闲查找不会追踪多个重定向。 
 
+**Teams 会议是否迁移跨租户？**  
+
+会议将移动，但是当项目跨租户迁移时，Teams 会议 URL 不会更新。 由于目标租户中的 URL 无效，因此你将需要删除并重新创建 Teams 会议。
+
 **Teams 聊天文件夹内容是否跨租户迁移？**  
 
 否，Teams 聊天文件夹内容不会跨租户迁移。  
@@ -572,7 +576,7 @@ VerifySetup.ps1 -PartnerTenantId <TargetTenantId> -ApplicationId <AADApplication
 
 **源租户和目标租户能否使用相同的域名？**  
 
-不正确。 源和目标租户域名必须是唯一的。 例如，域的源 contoso.com 和目标域 fourthcoffee.com。
+否。 源和目标租户域名必须是唯一的。 例如，域的源 contoso.com 和目标域 fourthcoffee.com。
 
 **共享邮箱是否移动且仍正常工作？**
 

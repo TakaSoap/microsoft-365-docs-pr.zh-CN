@@ -16,12 +16,12 @@ ms.date: 04/14/2021
 audience: ITPro
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: 560eeb1e1099576f9f4babf02cc38eb842094fd1
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: 5175d630dd5d80b62451b3a1eafc4c2f6350ac32
+ms.sourcegitcommit: 2655bb0ccd66279c35be2fadbd893c937d084109
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2021
-ms.locfileid: "51862364"
+ms.locfileid: "51876333"
 ---
 # <a name="troubleshoot-performance-issues-related-to-real-time-protection"></a>解决与实时保护相关的性能问题
 
@@ -60,7 +60,7 @@ ms.locfileid: "51862364"
 
 | 字段名 | 说明 |
 |---|---|
-|ProcessImageName   | 进程映像名称 |
+|ProcessImageName | 进程映像名称 |
 | TotalTime | 扫描此过程访问的文件所用的累积持续时间（以毫秒为单位） |
 |计数 | 此过程访问的已扫描文件数 |
 |MaxTime |  此过程访问的文件的最长单次扫描持续时间（以毫秒为单位） |
@@ -69,13 +69,13 @@ ms.locfileid: "51862364"
 
 如果性能影响很大，请尝试按照配置和验证 Microsoft Defender 防病毒扫描的排除项中的步骤将进程添加到路径/进程 [排除项](collect-diagnostic-data.md)。
 
-如果上一步不能解决问题，可以通过进程监视器或[Windows Performance Recorder](#capture-performance-logs-using-windows-performance-recorder) [](#capture-process-logs-using-process-monitor)在下列部分中收集更多信息。 
+如果上一步不能解决问题，可以通过进程监视器或[Windows Performance Recorder](#capture-performance-logs-using-windows-performance-recorder) [](#capture-process-logs-using-process-monitor)在下列部分中收集更多信息。
      
 ## <a name="capture-process-logs-using-process-monitor"></a>使用进程监视器捕获进程日志
 
-Process Monitor (ProcMon) 是一种高级监视工具，可显示实时进程。 您可以使用它来捕获性能问题发生时。 
+Process Monitor (ProcMon) 是一种高级监视工具，可显示实时进程。 您可以使用它来捕获性能问题发生时。
 
-1. 将 [进程监视器 v3.60](/sysinternals/downloads/procmon) 下载到类似 的文件夹 `C:\temp` 。 
+1. 将 [进程监视器 v3.60](/sysinternals/downloads/procmon) 下载到类似 的文件夹 `C:\temp` 。
 
 2. 若要删除文件的 Web 标记，请进行以下操作：
     1. 右键单击 **"ProcessMonitor.zip** 并选择"属性 **"。**
@@ -122,7 +122,7 @@ Process Monitor (ProcMon) 是一种高级监视工具，可显示实时进程。
         > 
         >![最小化 Procmon](images/procmon-minimize.png)
     
-7. 执行步骤 6 中的其中一个过程后，你将看到设置筛选器的选项。 选择“确定”。 捕获完成后，你始终可以筛选结果。
+7. 执行步骤 6 中的其中一个过程后，你将看到设置筛选器的选项。 选择“**确定**”。 捕获完成后，你始终可以筛选结果。
  
     ![筛选出进程名称为系统排除](images/procmon-filter-options.png) 
 
@@ -188,7 +188,9 @@ WPR 是 Windows ADK (部署工具包的一) ，可以从下载并 [安装 Window
 6. 选择 **"添加配置文件..."，** 然后浏览到文件 `WD.wprp` 的路径。
 
 7. 此后，你应该会看到"自定义度量"下的 *"Microsoft Defender 终结点分析*"下的新配置文件集。
+
     ![in-file](images/wpr-infile.png)
+
     >[!WARNING]
     >如果你的 Windows Server 具有 64 GB 或更多的 RAM，请使用自定义度量 `Microsoft Defender for Endpoint analysis for large servers` ，而不是 `Microsoft Defender for Endpoint analysis` 。 否则，你的系统可能会占用大量未分页的池内存或缓冲区，这可能会导致系统不稳定。 您可以通过展开"资源分析"选择要 **添加的配置文件**。 此自定义配置文件提供深入性能分析的必要上下文。
  
@@ -227,8 +229,8 @@ WPR 是 Windows ADK (部署工具包的一) ，可以从下载并 [安装 Window
 
     ![填写详细信息](images/wpr-12.png)
 
-    1. 选择 **"文件名："** 以确定跟踪文件的保存位置。 默认情况下，它 1.is 另存为 `%user%\Documents\WPR Files\` 。 
-    1. 选择“**保存**”。 
+    1. 选择 **"文件名："** 以确定跟踪文件的保存位置。 默认情况下，它 1.is 另存为 `%user%\Documents\WPR Files\` 。
+    1. 选择“**保存**”。
 
 14. 在合并跟踪时等待。
 
