@@ -6,7 +6,6 @@
 |公司门户|Planned|Planned|Planned|不适用|Planned|
 |CORTANA|不适用|不适用|不适用|不适用|Planned|
 |DELVE|✔|✔|不适用|不适用|不适用|
-|EDGE|Planned|Planned|不适用|Planned|不适用|
 |EXCEL|✔|Planned|Planned|Planned|不适用|
 |EXCHANGE 管理员|不适用|不适用|不适用|✔|不适用|
 |FORMS|不适用|不适用|不适用|不适用|不适用|

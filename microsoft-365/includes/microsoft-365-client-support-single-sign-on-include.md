@@ -5,7 +5,6 @@
 |公司门户|不适用|✔|Planned|不适用|✔|
 |CORTANA|不适用|不适用|不适用|不适用|✔|
 |DELVE|✔|✔|不适用|不适用|不适用|
-|EDGE|✔|Planned|不适用|✔|不适用|
 |EXCEL|✔|✔|✔|✔|✔|
 |KAIZALA|✔|Planned|不适用|不适用|不适用|
 |MICROSOFT 会议室|Planned|Planned|不适用|不适用|不适用|
