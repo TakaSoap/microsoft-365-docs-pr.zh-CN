@@ -222,6 +222,7 @@
 
 ### [iOS 上的 Microsoft Defender for Endpoint]()
 #### [iOS 上的 Microsoft Defender for Endpoint 概述](microsoft-defender-endpoint-ios.md)
+#### [新增功能](ios-whatsnew.md)
 
 #### [部署]()
 ##### [通过 Intune 在 iOS 上部署 Microsoft Defender for Endpoint](ios-install.md)
@@ -631,4 +632,5 @@
 ##### [迁移到"攻击"图面减少规则](migrating-asr-rules.md)
 
 # [Microsoft 365 Defender](../index.yml)
-# [Defender for Office 365](../office-365-security/overview.md)
+# [Defender for Office 365](../office-365-security/index.yml)
+# [Defender for Identity](https://docs.microsoft.com/defender-for-identity/)
