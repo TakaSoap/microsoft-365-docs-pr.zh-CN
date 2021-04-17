@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9eec911d-5773-422c-9593-40e1147ffbde
 description: 了解如何验证域，并设置电子邮件、Skype for Business Online 和 Microsoft 基于 Windows 的 DNS 的其他服务的 DNS 记录。
-ms.openlocfilehash: 9e5e42f847e740571944ea3db205282ec9a7a0e6
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: fd7c56b6db9fe5f5dbb0637ad5abcb40a64bef8f
+ms.sourcegitcommit: 2655bb0ccd66279c35be2fadbd893c937d084109
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50916042"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51876345"
 ---
 # <a name="create-dns-records-for-microsoft-using-windows-based-dns"></a>使用基于 Windows 的 DNS 为 Microsoft 创建 DNS 记录
 
@@ -76,14 +76,14 @@ ms.locfileid: "50916042"
     - 主机名：sip
     - 类型：CNAME
     - 地址：sipdir.online.lync.com
-- 选择“确定”。
+- 选择“**确定**”。
 
 添加 Skype for Business Online 自动发现 CNAME 记录。  
 - 在域的"DNS 管理器"页面上，转到"操作 \> **""CNAME (CNAME) "。** 在 **"新建资源记录** "对话框中，确保字段精确地设置为以下值：  
     - 主机名：lyncdiscover
     - 类型：CNAME
     - 地址：webdir.online.lync.com
-- 选择“确定”。
+- 选择“**确定**”。
    
 ### <a name="add-two-cname-records-for-mobile-device-management-mdm-for-microsoft"></a>为 Microsoft 的移动设备管理 (MDM) 添加两条 CNAME 记录
 
@@ -97,7 +97,7 @@ ms.locfileid: "50916042"
 - 主机名：enterpriseregistration
 - 类型：CNAME
 - 地址：enterpriseregistration.windows.net
-- 选择“确定”。 
+- 选择“**确定**”。 
 
 添加 MDM Enterpriseenrollment CNAME 记录。 
 -  在域的"DNS 管理器"页面上，转到"操作 \> **""CNAME (CNAME) "。** 
@@ -105,7 +105,7 @@ ms.locfileid: "50916042"
     - 主机名：enterpriseenrollment
     - 类型：CNAME
     - 地址：enterpriseenrollment-s.manage.microsoft.com
-- 选择“确定”。
+- 选择“**确定**”。
    
 ## <a name="add-a-txt-record-for-spf-to-help-prevent-email-spam"></a>为 SPF 添加 TXT 记录以帮助防止垃圾邮件
 <a name="BKMK_add_TXT"> </a>
@@ -125,7 +125,7 @@ ms.locfileid: "50916042"
 -  记录类型：TXT
 -  地址：v=spf1 include：spf.protection.outlook.com -all 
          
--  选择“确定”。
+-  选择“**确定**”。
    
 ## <a name="add-srv-records"></a>添加 SRV 记录
 <a name="BKMK_add_SRV"> </a>
@@ -142,7 +142,7 @@ ms.locfileid: "50916042"
     -  权重： 1
     -  端口： 443
     -  目标 (主机名) ：sipdir.online.lync.com
--  选择“确定”。 
+-  选择“**确定**”。 
 
 
 为 Skype for Business Online 联盟添加 SIP SRV 记录。  
@@ -155,7 +155,7 @@ ms.locfileid: "50916042"
     -  权重： 1
     -  端口： 5061
     -  目标 (主机名) ：sipfed.online.lync.com
--  选择“确定”。 
+-  选择“**确定**”。 
    
 ## <a name="add-a-record-to-verify-that-you-own-the-domain-if-you-havent-already"></a>添加记录以验证您拥有该域（如果尚未验证）
 <a name="BKMK_verify"> </a>
@@ -205,3 +205,11 @@ ms.locfileid: "50916042"
   
 > [!NOTE]
 >  DNS 更改通常需要 15 分钟左右才能生效。 但是，有时可能需要更长时间，您所做的更改才会在 Internet 的 DNS 系统中更新。 如果添加 DNS 记录后遇到邮件流问题或其他问题，请参阅 [更改域名或 DNS 记录后出现的问题的疑难解答](../get-help-with-domains/find-and-fix-issues.md)。 
+
+## <a name="related-content"></a>相关内容
+
+[将域从 Micrsoft 365](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/transfer-a-domain-from-microsoft-to-another-host) 转移到其他主机 (文章) 
+
+[从我的自定义域试用 Microsoft 365 (](https://docs.microsoft.com/microsoft-365/admin/misc/pilot-microsoft-365-from-my-custom-domain) 文章) 
+
+[域常见问题](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) (文章) 

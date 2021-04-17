@@ -18,12 +18,12 @@ description: 管理员可以了解如何使用 Exchange Online Protection (EOP) 
 ms.technology: mdo
 ms.prod: m365-security
 ROBOTS: NOINDEX
-ms.openlocfilehash: 09e07d8406b470fd3dac25944d013b997f2f90c1
-ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
+ms.openlocfilehash: 9d737472be5da2af0a0a36beb4b7914b8bfe3a10
+ms.sourcegitcommit: 2655bb0ccd66279c35be2fadbd893c937d084109
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51760425"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51876061"
 ---
 # <a name="configure-the-delivery-of-third-party-phishing-simulations-to-users-and-unfiltered-messages-to-secops-mailboxes"></a>配置向用户传递第三方网络钓鱼模拟以及将未筛选邮件发送到 SecOps 邮箱
 
@@ -35,7 +35,7 @@ ms.locfileid: "51760425"
 > [!NOTE]
 > 本文介绍的功能在预览版中，并非对所有人都可用，并且可能会更改。
 
-我们希望在默认情况下保证组织的安全[](secure-by-default.md)，因此 Exchange Online Protection (EOP) 不允许对导致恶意软件或高可信度钓鱼裁定的邮件进行安全列表或筛选绕过。 但是，我们知道有一些需要传递未筛选邮件的特定方案。 例如：
+为在默认情况下保证[](secure-by-default.md)组织安全，Exchange Online Protection (EOP) 不允许对导致恶意软件或高可信度钓鱼裁定的邮件进行安全列表或筛选绕过。 但是，有一些特定方案需要传递未筛选的邮件。 例如：
 
 - **第三方网络钓鱼模拟**：模拟攻击可以帮助你在真实攻击影响组织之前识别易受攻击的用户。
 - **SecOps (安全**) ：安全团队用于收集和分析未筛选邮件的专用邮箱 (无论邮件好还是坏) 。
@@ -44,10 +44,10 @@ ms.locfileid: "51760425"
 
 - EOP 和 Microsoft Defender for Office 365 中的筛选器不针对这些邮件执行任何操作。<sup>\*</sup>
 - [零时差清除 (垃圾邮件 ](zero-hour-auto-purge.md)) 对此类邮件不执行任何操作。<sup>\*</sup>
-- [这些方案不会](alerts.md) 触发默认系统警报。
+- [对于这些方案](alerts.md) ，不会触发默认系统警报。
 - [适用于 Office 365 的 Defender](office-365-air.md) 中的 AIR 和群集将忽略这些消息。
 - 专用于第三方网络钓鱼模拟：
-  - [管理员提交](admin-submission.md) 会生成自动响应，指出邮件是网络钓鱼模拟活动的一部分，不是真正的威胁。 不会触发警报和 AIR。
+  - [管理员提交](admin-submission.md) 生成自动响应，指出邮件是网络钓鱼模拟活动的一部分，不是真正的威胁。 不会触发警报和 AIR。
   - [Defender for Office 365](safe-links.md) 中的安全链接不会阻止或触发这些邮件中专门标识的 URL。
   - [适用于 Office 365 的 Defender](safe-attachments.md) 中的安全附件不会触发这些邮件中的附件。
 
@@ -98,7 +98,7 @@ ms.locfileid: "51760425"
 
 3. 在打开 **的 SecOps** 邮箱飞出区中，输入要指定为 SecOps 邮箱的现有 Exchange Online 邮箱的电子邮件地址。 不允许通讯组。
 
-4. 完成后，单击“**保存**”。
+4. 完成后，单击“保存”。
 
 您配置的 SecOps 邮箱条目显示在 **SecOps** 邮箱选项卡上。若要进行更改，请单击选项卡 **上的** "编辑"。
 
@@ -106,8 +106,8 @@ ms.locfileid: "51760425"
 
 除了高级传递策略可以帮助你的两种方案之外，还有其他一些方案可能需要绕过筛选：
 
-- 第三方筛选器：如果域的 MX 记录未指向 Office 365， (邮件将路由到其他位置) ，默认情况下，安全不可用。 [](secure-by-default.md)
+- 第 **三方** 筛选器：如果你的域的 MX记录没有指向 Office 365 (邮件将路由到其他位置) ，则默认情况下安全 [](secure-by-default.md)*不可用*。
 
   若要绕过 Microsoft 筛选已由第三方筛选评估的邮件，请使用邮件流规则 (也称为传输规则) ，请参阅使用邮件流规则设置邮件[中的 SCL。](use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md)
 
-- 正在审查 **的** 误报：你可能希望暂时允许 Microsoft 通过管理员提交仍在分析的某些邮件，以报告被 [](admin-submission.md)错误地标记为对 Microsoft (误报错误的已知) 。 与所有替代一样，我们强烈建议这些允许是临时的。
+- 正在审查 **的** 误报：你可能希望暂时允许 Microsoft 通过管理员提交仍在分析的某些邮件，以报告被 [](admin-submission.md)错误地标记为对 Microsoft (误报错误的已知) 。 与所有替代一样， **_强烈建议临时进行_** 这些替代。

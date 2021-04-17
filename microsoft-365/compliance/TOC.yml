@@ -301,7 +301,7 @@
               href: how-dlp-works-between-admin-centers.md
             - name: 配置和查看 DLP 策略的警报（预览）
               href: dlp-configure-view-alerts-policies.md
-            - name: 在 DLP 策略中使用灵敏度标签作为条件（预览版）
+            - name: 在 DLP 策略中将敏感度标签用作条件
               href: dlp-sensitivity-label-as-condition.md
             - name: 为非 Microsoft 云应用使用数据丢失防护策略
               href: dlp-use-policies-non-microsoft-cloud-apps.md
@@ -385,8 +385,12 @@
           items:
             - name: CellTrust
               href: archive-celltrust-data.md
-            - name: Cisco Jabber
+            - name: MS SQL 上的 Cisco Jabber
               href: archive-ciscojabberonmssql-data.md
+            - name: Oracle 上的 Cisco Jabber（预览版）
+              href: archive-ciscojabberonoracle-data.md
+            - name: PostgreSQL 上的 Cisco Jabber（预览版）
+              href: archive-ciscojabberonpostgresql-data.md
             - name: EML
               href: archive-eml-data.md
             - name: FX 连接

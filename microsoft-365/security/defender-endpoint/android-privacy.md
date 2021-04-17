@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: d38d7a54aa860049e1968e5b92c801107bea0514
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 79f8882e21f23e75d85813cde03260ef17adf246
+ms.sourcegitcommit: 2655bb0ccd66279c35be2fadbd893c937d084109
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51687957"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51876105"
 ---
 #  <a name="microsoft-defender-for-endpoint-on-android---privacy-information"></a>Android 上的 Microsoft Defender for Endpoint - 隐私信息
 
@@ -32,7 +32,9 @@ ms.locfileid: "51687957"
 > 想要体验 Microsoft Defender for Endpoint？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 
-适用于 Android 的 Defender for Endpoint 从已配置的 Android 设备收集信息，并存储在你拥有 Defender for Endpoint 的同一租户中。
+适用于 Android 的 Defender for Endpoint 从已配置的 Android 设备收集信息，并存储在你拥有 Defender for Endpoint 的同一租户中。 该信息的收集有助于使适用于 iOS 的 Endpoint 的 Defender 保持安全、最新、如预期运行并支持服务。
+
+有关数据存储详细信息，请参阅适用于终结点数据存储[和隐私的 Microsoft Defender。](data-storage-privacy.md)
 
 收集的信息有助于使适用于 Android 的 Endpoint 的 Defender 保持安全、最新、如预期运行并支持服务。
 
@@ -42,7 +44,7 @@ ms.locfileid: "51687957"
 
 ### <a name="app-information"></a>应用信息
 
-有关 Android 应用程序包 (设备上) API 的信息，包括
+有关设备上 **恶意** Android (程序包) API 的信息，包括
 
 -  安装源
 -  存储 (APK) 文件路径
@@ -50,7 +52,7 @@ ms.locfileid: "51687957"
 
 ### <a name="web-page--network-information"></a>网页/网络信息
 
-- 单击 (支持的浏览器) URL
+- 仅在检测到恶意连接或网页时，网站的完整 URL。
 - 连接信息
 - 协议类型 (如 HTTP、HTTPS 等) 
 
@@ -73,6 +75,9 @@ ms.locfileid: "51687957"
     -   用户主体名称 – 用户的电子邮件 ID
 
 ### <a name="product-and-service-usage-data"></a>产品或服务使用情况数据
+
+仅为设备上安装的 Microsoft Defender for Endpoint 应用收集以下信息。 
+
 -   应用包信息，包括名称、版本以及应用升级状态
 
 -   在应用中执行的操作

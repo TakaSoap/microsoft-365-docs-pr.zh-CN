@@ -1,6 +1,6 @@
 ### YamlMime:Landing
 title: Microsoft 365 安全中心文档
-summary: 了解 Microsoft 365 安全中心强大的安全解决方案和服务，以便你可以更好地跨攻击面保护企业。
+summary: Microsoft 365 安全中心将多种安全技术联合在一个全面的管理控制台中，并增强保护你的企业。
 metadata:
   title: Microsoft 365 安全中心文档
   description: 了解 Microsoft Defender for Endpoint - 它如何保护终结点免遭网络威胁，并提供修正威胁的安全操作团队的功能。
@@ -13,12 +13,12 @@ metadata:
   ms.author: macapara
   ms.date: 02/05/2021
   localization_priority: Priority
-  ms.openlocfilehash: c7ec3e0bb970d74d9e33c3d74eb0cd18aaf8d16c
-  ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+  ms.openlocfilehash: a8d2e2c5ec41436bba7f013304daa8f259db9444
+  ms.sourcegitcommit: 4acf613587128cae27e0fd470d1216b509775529
   ms.translationtype: HT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 03/25/2021
-  ms.locfileid: "51200349"
+  ms.lasthandoff: 04/15/2021
+  ms.locfileid: "51768550"
 landingContent:
 - title: Microsoft 365 Defender
   linkLists:

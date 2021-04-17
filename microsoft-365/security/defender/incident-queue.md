@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 8acd8d85826d7bda399c03cc60f2806af954c6c3
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: cd571414512ce876e730199b21bf755e4c4b733f
+ms.sourcegitcommit: 2655bb0ccd66279c35be2fadbd893c937d084109
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2021
-ms.locfileid: "51861599"
+ms.locfileid: "51876195"
 ---
 # <a name="prioritize-incidents-in-microsoft-365-defender"></a>确定 Microsoft 365 Defender 中事件的优先级
 
@@ -88,7 +88,7 @@ Microsoft 365 Defender 应用相关分析，将来自不同产品的相关警报
 1. 确定并会审最高优先级的事件，以便进行调查和解决。
 2. 对于每个高优先级事件，开始 [调查](investigate-incidents.md)：
 
-   a. 查看事件摘要，了解事件的范围、受影响的实体以及 (**摘要** 选项卡) 。
+   a. 查看事件的摘要，了解事件的范围和严重性以及受影响实体 ("摘要"选项卡) 。 
 
    b. 开始查看警报以了解警报的来源、范围和严重性 (**警报** 选项卡) 。
 
@@ -98,17 +98,18 @@ Microsoft 365 Defender 应用相关分析，将来自不同产品的相关警报
    
    e. 根据需要，使用事件数据集中的信息获取"证据和 (**响应** "选项卡) 。
 
-调查时，应关注：
+   调查时，应关注：
 
-- 包含：减少对租户的任何额外影响。
-- 小安：删除安全威胁。
-- 恢复：将租户资源还原到攻击前的状态。
+   - 包含：减少对租户的任何额外影响。
+   - 小安：删除安全威胁。
+   - 恢复：将租户资源还原到攻击前的状态。
 
-解决事件后，请花些时间了解一下：
+3. 解决事件后，请花时间：
 
-- 了解攻击的类型及其影响。
-- 研究安全社区中的攻击，以寻找安全攻击趋势。
-- 重新调用用于解决事件的工作流，并根据需要更新标准工作流和手册。
+   - 了解攻击的类型及其影响。
+   - 研究安全社区中的攻击，以寻找安全攻击趋势。
+   - 重新调用用于解决事件的工作流，并根据需要更新标准工作流和手册。
+   - 确定是否需要更改安全状态，并采取措施来实现这些更改。
 
 以下是基本过程的摘要。
 
