@@ -201,7 +201,7 @@
           href: misc/pilot-microsoft-365-from-my-custom-domain.md
         - name: 关于域的常见问题解答
           href: setup/domains-faq.yml
-        - name: 特定于主机的说明
+        - name: DNS 说明
           items:
             - name: 在任意 DNS 主机处更改名称服务器
               href: get-help-with-domains/change-nameservers-at-any-domain-registrar.md
