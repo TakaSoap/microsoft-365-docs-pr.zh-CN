@@ -140,6 +140,7 @@
 
 #### Microsoft Defender 防病毒软件疑难解答
 ##### [解决更新合规性中的 Microsoft Defender 防病毒软件报告问题](troubleshoot-reporting.md)
+##### [解决性能问题](troubleshoot-performance-issues.md)
 ##### [查看事件日志和错误代码，解决 Microsoft Defender 防病毒软件问题](troubleshoot-microsoft-defender-antivirus.md)
 ##### [从第三方解决方案迁移时解决 Microsoft Defender 防病毒软件问题](troubleshoot-microsoft-defender-antivirus-when-migrating.md)
 
@@ -249,6 +250,7 @@
 ##### [检测并阻止可能不需要的应用程序](linux-pua.md)
 ##### [使用 Microsoft Defender for Endpoint on Linux 定期扫描](linux-schedule-scan-atp.md)
 ##### [计划更新 Microsoft Defender for Endpoint （Linux）](linux-update-MDE-Linux.md)
+##### [将 Defender for Endpoint 通过更新程序部署到更改版本](linux-deploy-defender-for-endpoint-with-chef.md)
 
 #### [疑难解答]()
 ##### [解决安装问题](linux-support-install.md)

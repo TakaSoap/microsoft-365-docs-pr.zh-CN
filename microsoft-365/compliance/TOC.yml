@@ -208,7 +208,7 @@
             - name: 比较 OME 的版本
               href: ome-version-comparison.md
             - name: Office 365 邮件加密常见问题解答
-              href: ome-faq.md
+              href: ome-faq.yml
             - name: Exchange Online 如何进行电子邮件保密
               href: exchange-online-secures-email-secrets.md
             - name: Exchange Online 如何使用 TLS 保护 Office 365 中的电子邮件连接
@@ -305,8 +305,10 @@
               href: dlp-sensitivity-label-as-condition.md
             - name: 为非 Microsoft 云应用使用数据丢失防护策略
               href: dlp-use-policies-non-microsoft-cloud-apps.md
-            - name: DLP 策略条件和异常（预览版）
+            - name: DLP 策略条件和例外情况
               href: dlp-conditions-and-exceptions.md
+            - name: 数据丢失防护策略提示参考
+              href: dlp-policy-tips-reference.md
 - name: 管理信息治理
   items:
     - name: 治理数据
