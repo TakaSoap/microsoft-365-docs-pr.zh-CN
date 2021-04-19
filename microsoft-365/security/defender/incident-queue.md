@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: cd571414512ce876e730199b21bf755e4c4b733f
-ms.sourcegitcommit: 2655bb0ccd66279c35be2fadbd893c937d084109
+ms.openlocfilehash: 3b381749108d4a75024d9a546c0d3f1631c948ed
+ms.sourcegitcommit: 76f3c75413cc960289489d0ca29efadb8a9a5b31
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51876195"
+ms.lasthandoff: 04/19/2021
+ms.locfileid: "51887253"
 ---
 # <a name="prioritize-incidents-in-microsoft-365-defender"></a>确定 Microsoft 365 Defender 中事件的优先级
 
@@ -102,7 +102,7 @@ Microsoft 365 Defender 应用相关分析，将来自不同产品的相关警报
 
    - 包含：减少对租户的任何额外影响。
    - 小安：删除安全威胁。
-   - 恢复：将租户资源还原到攻击前的状态。
+   - 恢复：将租户资源还原到事件发生前的状态。
 
 3. 解决事件后，请花时间：
 
