@@ -14,152 +14,151 @@ audience: ITPro
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 20d4767f9813b741c55109d617f78302feaa0f7e
-ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
-ms.translationtype: HT
+ms.topic: article
+ms.openlocfilehash: 8350db473580fd4d1728c3473742da5b63196c52
+ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51765019"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51893573"
 ---
-# <a name="detect-and-block-potentially-unwanted-applications"></a><span data-ttu-id="ecad8-104">检测并阻止可能不需要的应用程序</span><span class="sxs-lookup"><span data-stu-id="ecad8-104">Detect and block potentially unwanted applications</span></span>
+# <a name="detect-and-block-potentially-unwanted-applications"></a><span data-ttu-id="914d7-104">检测并阻止可能不需要的应用程序</span><span class="sxs-lookup"><span data-stu-id="914d7-104">Detect and block potentially unwanted applications</span></span>
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
+<span data-ttu-id="914d7-105">**适用于：**</span><span class="sxs-lookup"><span data-stu-id="914d7-105">**Applies to:**</span></span>
 
-<span data-ttu-id="ecad8-105">**适用于：**</span><span class="sxs-lookup"><span data-stu-id="ecad8-105">**Applies to:**</span></span>
+- [<span data-ttu-id="914d7-106">Microsoft Defender for Endpoint</span><span class="sxs-lookup"><span data-stu-id="914d7-106">Microsoft Defender for Endpoint</span></span>](/microsoft-365/security/defender-endpoint/)
+- [<span data-ttu-id="914d7-107">Microsoft Edge</span><span class="sxs-lookup"><span data-stu-id="914d7-107">Microsoft Edge</span></span>](/microsoft-edge/deploy/microsoft-edge)
 
-- [<span data-ttu-id="ecad8-106">Microsoft Defender for Endpoint</span><span class="sxs-lookup"><span data-stu-id="ecad8-106">Microsoft Defender for Endpoint</span></span>](/microsoft-365/security/defender-endpoint/)
-- [<span data-ttu-id="ecad8-107">Microsoft Edge</span><span class="sxs-lookup"><span data-stu-id="ecad8-107">Microsoft Edge</span></span>](/microsoft-edge/deploy/microsoft-edge)
+<span data-ttu-id="914d7-108">PUA (可能不需要) 是一类软件，可能会导致计算机运行缓慢、显示意外广告，或者最差时安装可能意外或不需要的其他软件。</span><span class="sxs-lookup"><span data-stu-id="914d7-108">Potentially unwanted applications (PUA) are a category of software that can cause your machine to run slowly, display unexpected ads, or at worst, install other software that might be unexpected or unwanted.</span></span> <span data-ttu-id="914d7-109">PUA 不被视为病毒、恶意软件或其他类型的威胁，但它可能在终结点上执行对终结点性能或使用产生不利影响的操作。</span><span class="sxs-lookup"><span data-stu-id="914d7-109">PUA is not considered a virus, malware, or other type of threat, but it might perform actions on endpoints that adversely affect endpoint performance or use.</span></span> <span data-ttu-id="914d7-110">术语 *PUA* 也可以指由于某些类型的不良行为而信誉不佳的应用程序（由 Microsoft Defender for Endpoint 评估）。</span><span class="sxs-lookup"><span data-stu-id="914d7-110">The term *PUA* can also refer to an application that has a poor reputation, as assessed by Microsoft Defender for Endpoint, due to certain kinds of undesirable behavior.</span></span>
 
-> [!NOTE]
-> <span data-ttu-id="ecad8-108">可能不需要的应用程序 （PUA） 是一类软件，会导致计算机运行缓慢、显示意外广告或最糟情况，安装其他可能意外或不需要的软件。</span><span class="sxs-lookup"><span data-stu-id="ecad8-108">Potentially unwanted applications (PUA) are a category of software that can cause your machine to run slowly, display unexpected ads, or at worst, install other software which might be unexpected or unwanted.</span></span> <span data-ttu-id="ecad8-109">默认情况下，在 Windows 10（版本 2004 和更高版本）中，Microsoft Defender 防病毒软件阻止被视为 PUA 的应用（适用于企业 （E5） 设备）。</span><span class="sxs-lookup"><span data-stu-id="ecad8-109">By default in Windows 10 (version 2004 and later), Microsoft Defender Antivirus blocks apps that are considered PUA, for Enterprise (E5) devices.</span></span>
+<span data-ttu-id="914d7-111">下面是一些示例：</span><span class="sxs-lookup"><span data-stu-id="914d7-111">Here are some examples:</span></span>
 
-<span data-ttu-id="ecad8-110">可能不需要的应用程序 （PUA） 不被视为病毒、恶意软件或其他类型的威胁，但它们可能在终结点上操作，从而对终结点性能或使用产生不利影响。</span><span class="sxs-lookup"><span data-stu-id="ecad8-110">Potentially unwanted applications (PUA) are not considered viruses, malware, or other types of threats, but they might perform actions on endpoints which adversely affect endpoint performance or use.</span></span> <span data-ttu-id="ecad8-111">_PUA_ 也可能指 Microsoft Defender for Endpoint 根据某些类型的终结点评估而具有较差信誉的应用程序。</span><span class="sxs-lookup"><span data-stu-id="ecad8-111">_PUA_ can also refer to an application that has a poor reputation, as assessed by Microsoft Defender for Endpoint, due to certain kinds of undesirable behavior.</span></span>
-
-<span data-ttu-id="ecad8-112">下面是一些示例：</span><span class="sxs-lookup"><span data-stu-id="ecad8-112">Here are some examples:</span></span>
-
-- <span data-ttu-id="ecad8-113">显示广告或促销的 **广告软件**，包括将广告插入网页的软件。</span><span class="sxs-lookup"><span data-stu-id="ecad8-113">**Advertising software** that displays advertisements or promotions, including software that inserts advertisements to webpages.</span></span>
-- <span data-ttu-id="ecad8-114">**捆绑软件** ，用于安装不由同一实体进行数字签名的其他软件。</span><span class="sxs-lookup"><span data-stu-id="ecad8-114">**Bundling software** that offers to install other software that is not digitally signed by the same entity.</span></span> <span data-ttu-id="ecad8-115">此外，提供安装符合 PUA 的其他软件的软件。</span><span class="sxs-lookup"><span data-stu-id="ecad8-115">Also, software that offers to install other software that qualify as PUA.</span></span>
-- <span data-ttu-id="ecad8-116">积极尝试逃避安全产品检测的 **规避软件**，包括在存在安全产品的情况下行为不同的软件。</span><span class="sxs-lookup"><span data-stu-id="ecad8-116">**Evasion software** that actively tries to evade detection by security products, including software that behaves differently in the presence of security products.</span></span>
+- <span data-ttu-id="914d7-112">显示广告或促销的 **广告软件**，包括将广告插入网页的软件。</span><span class="sxs-lookup"><span data-stu-id="914d7-112">**Advertising software** that displays advertisements or promotions, including software that inserts advertisements to webpages.</span></span>
+- <span data-ttu-id="914d7-113">**捆绑软件** ，用于安装不由同一实体进行数字签名的其他软件。</span><span class="sxs-lookup"><span data-stu-id="914d7-113">**Bundling software** that offers to install other software that is not digitally signed by the same entity.</span></span> <span data-ttu-id="914d7-114">此外，提供用于安装其他限定为 PUA 的软件的软件。</span><span class="sxs-lookup"><span data-stu-id="914d7-114">Also, software that offers to install other software that qualifies as PUA.</span></span>
+- <span data-ttu-id="914d7-115">积极尝试逃避安全产品检测的 **规避软件**，包括在存在安全产品的情况下行为不同的软件。</span><span class="sxs-lookup"><span data-stu-id="914d7-115">**Evasion software** that actively tries to evade detection by security products, including software that behaves differently in the presence of security products.</span></span>
 
 > [!TIP]
-> <span data-ttu-id="ecad8-117">有关更多示例和讨论我们用于标记应用程序以引起对安全功能特别关注的条件，请参阅 [Microsoft 如何识别恶意软件和可能不需要的应用程序](/windows/security/threat-protection/intelligence/criteria)。</span><span class="sxs-lookup"><span data-stu-id="ecad8-117">For more examples and a discussion of the criteria we use to label applications for special attention from security features, see [How Microsoft identifies malware and potentially unwanted applications](/windows/security/threat-protection/intelligence/criteria).</span></span>
+> <span data-ttu-id="914d7-116">有关更多示例和讨论我们用于标记应用程序以引起对安全功能特别关注的条件，请参阅 [Microsoft 如何识别恶意软件和可能不需要的应用程序](/windows/security/threat-protection/intelligence/criteria)。</span><span class="sxs-lookup"><span data-stu-id="914d7-116">For more examples and a discussion of the criteria we use to label applications for special attention from security features, see [How Microsoft identifies malware and potentially unwanted applications](/windows/security/threat-protection/intelligence/criteria).</span></span>
 
-<span data-ttu-id="ecad8-118">可能不需要的应用程序会增加网络受到实际恶意软件感染的风险，使恶意软件感染更加难以识别，或浪费 IT 资源清理它们。</span><span class="sxs-lookup"><span data-stu-id="ecad8-118">Potentially unwanted applications can increase the risk of your network being infected with actual malware, make malware infections harder to identify, or waste IT resources in cleaning them up.</span></span> <span data-ttu-id="ecad8-119">Windows 10、Windows Server 2019 和 Windows Server 2016 支持 PUA 保护。</span><span class="sxs-lookup"><span data-stu-id="ecad8-119">PUA protection is supported on Windows 10, Windows Server 2019, and Windows Server 2016.</span></span>
+<span data-ttu-id="914d7-117">可能不需要的应用程序会增加网络受到实际恶意软件感染的风险，使恶意软件感染更加难以识别，或浪费 IT 资源清理它们。</span><span class="sxs-lookup"><span data-stu-id="914d7-117">Potentially unwanted applications can increase the risk of your network being infected with actual malware, make malware infections harder to identify, or waste IT resources in cleaning them up.</span></span> <span data-ttu-id="914d7-118">Windows 10、Windows Server 2019 和 Windows Server 2016 支持 PUA 保护。</span><span class="sxs-lookup"><span data-stu-id="914d7-118">PUA protection is supported on Windows 10, Windows Server 2019, and Windows Server 2016.</span></span> <span data-ttu-id="914d7-119">在 Windows 10 (版本 2004 和更高版本) 中，默认情况下，Microsoft Defender 防病毒会阻止被视为适用于企业版 (E5) PUA 的应用。</span><span class="sxs-lookup"><span data-stu-id="914d7-119">In Windows 10 (version 2004 and later), Microsoft Defender Antivirus blocks apps that are considered PUA for Enterprise (E5) devices by default.</span></span>
 
-## <a name="microsoft-edge"></a><span data-ttu-id="ecad8-120">Microsoft Edge</span><span class="sxs-lookup"><span data-stu-id="ecad8-120">Microsoft Edge</span></span>
+## <a name="microsoft-edge"></a><span data-ttu-id="914d7-120">Microsoft Edge</span><span class="sxs-lookup"><span data-stu-id="914d7-120">Microsoft Edge</span></span>
 
-<span data-ttu-id="ecad8-121">新的 [Microsoft Edge](https://support.microsoft.com/microsoft-edge/get-to-know-microsoft-edge-3f4bb0ff-58de-2188-55c0-f560b7e20bea)（基于 Chromium） 会阻止潜在的不需要的应用程序下载和关联的资源 URL。</span><span class="sxs-lookup"><span data-stu-id="ecad8-121">The [new Microsoft Edge](https://support.microsoft.com/microsoft-edge/get-to-know-microsoft-edge-3f4bb0ff-58de-2188-55c0-f560b7e20bea), which is Chromium-based, blocks potentially unwanted application downloads and associated resource URLs.</span></span> <span data-ttu-id="ecad8-122">此功能通过[Microsoft Defender SmartScreen](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview)提供。</span><span class="sxs-lookup"><span data-stu-id="ecad8-122">This feature is provided via [Microsoft Defender SmartScreen](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview).</span></span>
+<span data-ttu-id="914d7-121">新的 [Microsoft Edge](https://support.microsoft.com/microsoft-edge/get-to-know-microsoft-edge-3f4bb0ff-58de-2188-55c0-f560b7e20bea)（基于 Chromium） 会阻止潜在的不需要的应用程序下载和关联的资源 URL。</span><span class="sxs-lookup"><span data-stu-id="914d7-121">The [new Microsoft Edge](https://support.microsoft.com/microsoft-edge/get-to-know-microsoft-edge-3f4bb0ff-58de-2188-55c0-f560b7e20bea), which is Chromium-based, blocks potentially unwanted application downloads and associated resource URLs.</span></span> <span data-ttu-id="914d7-122">此功能通过[Microsoft Defender SmartScreen](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview)提供。</span><span class="sxs-lookup"><span data-stu-id="914d7-122">This feature is provided via [Microsoft Defender SmartScreen](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview).</span></span>
 
-### <a name="enable-pua-protection-in-chromium-based-microsoft-edge"></a><span data-ttu-id="ecad8-123">在基于 Chromium 的 Microsoft Edge 中启用 PUA 保护</span><span class="sxs-lookup"><span data-stu-id="ecad8-123">Enable PUA protection in Chromium-based Microsoft Edge</span></span>
+### <a name="enable-pua-protection-in-chromium-based-microsoft-edge"></a><span data-ttu-id="914d7-123">在基于 Chromium 的 Microsoft Edge 中启用 PUA 保护</span><span class="sxs-lookup"><span data-stu-id="914d7-123">Enable PUA protection in Chromium-based Microsoft Edge</span></span>
 
-<span data-ttu-id="ecad8-124">虽然默认情况下会关闭 Microsoft Edge 中可能不需要的应用程序保护（基于 Chromium 的版本 80.0.361.50），但可在浏览器中轻松启用。</span><span class="sxs-lookup"><span data-stu-id="ecad8-124">Although potentially unwanted application protection in Microsoft Edge (Chromium-based, version 80.0.361.50) is turned off by default, it can easily be turned on from within the browser.</span></span>
+<span data-ttu-id="914d7-124">虽然默认情况下会关闭 Microsoft Edge 中可能不需要的应用程序保护（基于 Chromium 的版本 80.0.361.50），但可在浏览器中轻松启用。</span><span class="sxs-lookup"><span data-stu-id="914d7-124">Although potentially unwanted application protection in Microsoft Edge (Chromium-based, version 80.0.361.50) is turned off by default, it can easily be turned on from within the browser.</span></span>
 
-1. <span data-ttu-id="ecad8-125">选择省略号，然后选择“**设置**”。</span><span class="sxs-lookup"><span data-stu-id="ecad8-125">Select the ellipses, and then choose **Settings**.</span></span>
-2. <span data-ttu-id="ecad8-126">选择 **隐私、搜索和服务**。</span><span class="sxs-lookup"><span data-stu-id="ecad8-126">Select **Privacy, search, and services**.</span></span>
-3. <span data-ttu-id="ecad8-127">在" **安全** 部分， **阻止可能不需要的应用**。</span><span class="sxs-lookup"><span data-stu-id="ecad8-127">Under the **Security** section, turn on **Block potentially unwanted apps**.</span></span>
+1. <span data-ttu-id="914d7-125">在 Edge 浏览器中，选择省略号，然后选择"设置 **"。**</span><span class="sxs-lookup"><span data-stu-id="914d7-125">In your Edge browser, select the ellipses, and then choose **Settings**.</span></span>
 
-> [!TIP]
-> <span data-ttu-id="ecad8-128">如果运行的是 Microsoft Edge（基于 Chromium），您可以通过在我们的 [Microsoft Defender SmartScreen 演示页面之一测试并测试 PUA 保护的 URL 阻止功能](https://demo.smartscreen.msft.net/)。</span><span class="sxs-lookup"><span data-stu-id="ecad8-128">If you are running Microsoft Edge (Chromium-based), you can safely explore the URL-blocking feature of PUA protection by testing it out on one of our [Microsoft Defender SmartScreen demo pages](https://demo.smartscreen.msft.net/).</span></span>
+2. <span data-ttu-id="914d7-126">选择 **隐私、搜索和服务**。</span><span class="sxs-lookup"><span data-stu-id="914d7-126">Select **Privacy, search, and services**.</span></span>
 
-### <a name="blocking-urls-with-microsoft-defender-smartscreen"></a><span data-ttu-id="ecad8-129">使用 Microsoft Defender SmartScreen 阻止 URL</span><span class="sxs-lookup"><span data-stu-id="ecad8-129">Blocking URLs with Microsoft Defender SmartScreen</span></span>
-
-<span data-ttu-id="ecad8-130">在启用 PUA 保护的基于 Chromium 的 Microsoft Edge 中，Microsoft Defender SmartScreen 可保护用户免遭 PUA 关联的 URL 的影响。</span><span class="sxs-lookup"><span data-stu-id="ecad8-130">In Chromium-based Edge with PUA protection turned on, Microsoft Defender SmartScreen protects you from PUA-associated URLs.</span></span>
-
-<span data-ttu-id="ecad8-131">安全管理员可 [Microsoft Edge](/DeployEdge/configure-microsoft-edge) Microsoft Defender SmartScreen 如何协同工作来保护用户组免遭 PUA 关联的 URL 的威胁。</span><span class="sxs-lookup"><span data-stu-id="ecad8-131">Security admins can [configure](/DeployEdge/configure-microsoft-edge) how Microsoft Edge and Microsoft Defender SmartScreen work together to protect groups of users from PUA-associated URLs.</span></span> <span data-ttu-id="ecad8-132">可显式 [Microsoft Defender SmartScreen](/DeployEdge/microsoft-edge-policies#smartscreen-settings) 多个组策略设置，包括 [PUA 策略设置的](/DeployEdge/microsoft-edge-policies#smartscreenpuaenabled)。</span><span class="sxs-lookup"><span data-stu-id="ecad8-132">There are several [group policy settings](/DeployEdge/microsoft-edge-policies#smartscreen-settings) explicitly for Microsoft Defender SmartScreen available, including [one for blocking PUA](/DeployEdge/microsoft-edge-policies#smartscreenpuaenabled).</span></span> <span data-ttu-id="ecad8-133">此外，管理员可 [将 Microsoft Defender SmartScreen](/microsoft-edge/deploy/available-policies?source=docs#configure-windows-defender-smartscreen) 配置成整体，使用组策略设置打开或关闭 Microsoft Defender SmartScreen。</span><span class="sxs-lookup"><span data-stu-id="ecad8-133">In addition, admins can [configure Microsoft Defender SmartScreen](/microsoft-edge/deploy/available-policies?source=docs#configure-windows-defender-smartscreen) as a whole, using group policy settings to turn Microsoft Defender SmartScreen on or off.</span></span>
-
-<span data-ttu-id="ecad8-134">虽然 Microsoft Defender for Endpoint 基于 Microsoft 托管的数据集具有自己的阻止列表，但可基于自己的威胁智能自定义此列表。</span><span class="sxs-lookup"><span data-stu-id="ecad8-134">Although Microsoft Defender for Endpoint has its own block list based upon a data set managed by Microsoft, you can customize this list based on your own threat intelligence.</span></span> <span data-ttu-id="ecad8-135">若要在 [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/manage-indicators) 创建和管理指示器，Microsoft Defender SmartScreen 将尊重新设置。</span><span class="sxs-lookup"><span data-stu-id="ecad8-135">If you [create and manage indicators](/microsoft-365/security/defender-endpoint/manage-indicators) in the Microsoft Defender for Endpoint portal, Microsoft Defender SmartScreen respects the new settings.</span></span>
-
-## <a name="microsoft-defender-antivirus"></a><span data-ttu-id="ecad8-136">Microsoft Defender 防病毒软件</span><span class="sxs-lookup"><span data-stu-id="ecad8-136">Microsoft Defender Antivirus</span></span>
-
-<span data-ttu-id="ecad8-137">Microsoft Defender 防病毒软件中可能不需要的应用程序 （PUA） 保护功能可检测和阻止网络中终结点上的 PUAS。</span><span class="sxs-lookup"><span data-stu-id="ecad8-137">The potentially unwanted application (PUA) protection feature in Microsoft Defender Antivirus can detect and block PUAs on endpoints in your network.</span></span>
-
-> [!NOTE]
-> <span data-ttu-id="ecad8-138">Windows 10、Windows Server 2019 和 Windows Server 2016 中提供此功能。</span><span class="sxs-lookup"><span data-stu-id="ecad8-138">This feature is available in Windows 10, Windows Server 2019, and Windows Server 2016.</span></span>
-
-<span data-ttu-id="ecad8-139">Microsoft Defender 防病毒软件阻止检测到 PUA 文件，以及尝试下载、移动、运行或安装它们的任何尝试。</span><span class="sxs-lookup"><span data-stu-id="ecad8-139">Microsoft Defender Antivirus blocks detected PUA files and any attempts to download, move, run, or install them.</span></span> <span data-ttu-id="ecad8-140">阻止的 PUA 文件随即移动到隔离区。</span><span class="sxs-lookup"><span data-stu-id="ecad8-140">Blocked PUA files are then moved to quarantine.</span></span> <span data-ttu-id="ecad8-141">在终结点上检测到 PUA 文件时，Microsoft Defender 防病毒软件会以与其他威胁检测相同的格式向用户发送通知（[除非通知已禁用](configure-notifications-microsoft-defender-antivirus.md)）。</span><span class="sxs-lookup"><span data-stu-id="ecad8-141">When a PUA file is detected on an endpoint, Microsoft Defender Antivirus sends a notification to the user ([unless notifications have been disabled](configure-notifications-microsoft-defender-antivirus.md)) in the same format as other threat detections.</span></span> <span data-ttu-id="ecad8-142">以通知的字体作为 `PUA:` 以指示其内容。</span><span class="sxs-lookup"><span data-stu-id="ecad8-142">The notification is prefaced with `PUA:` to indicate its content.</span></span>
-
-<span data-ttu-id="ecad8-143">该通知显示在 Windows 安全应用 [中正常出现的隔离](microsoft-defender-security-center-antivirus.md)。</span><span class="sxs-lookup"><span data-stu-id="ecad8-143">The notification appears in the usual [quarantine list within the Windows Security app](microsoft-defender-security-center-antivirus.md).</span></span>
-
-### <a name="configure-pua-protection-in-microsoft-defender-antivirus"></a><span data-ttu-id="ecad8-144">在 Microsoft Defender 防病毒软件中配置 PUA 保护</span><span class="sxs-lookup"><span data-stu-id="ecad8-144">Configure PUA protection in Microsoft Defender Antivirus</span></span>
-
-<span data-ttu-id="ecad8-145">您可以使用[Microsoft Intune](/mem/intune/protect/device-protect)，[Microsoft Endpoint Configuration Manager](/mem/configmgr/protect/deploy-use/endpoint-protection)，[组策略](/azure/active-directory-domain-services/manage-group-policy)或通过[PowerShell cmdlet](/powershell/module/defender/?preserve-view=true&view=win10-ps)启用PUA保护。</span><span class="sxs-lookup"><span data-stu-id="ecad8-145">You can enable PUA protection with [Microsoft Intune](/mem/intune/protect/device-protect), [Microsoft Endpoint Configuration Manager](/mem/configmgr/protect/deploy-use/endpoint-protection), [Group Policy](/azure/active-directory-domain-services/manage-group-policy), or via [PowerShell cmdlets](/powershell/module/defender/?preserve-view=true&view=win10-ps).</span></span>
-
-<span data-ttu-id="ecad8-146">还可在审核模式下使用 PUA 保护检测可能不需要的应用程序，同时不阻止它们。</span><span class="sxs-lookup"><span data-stu-id="ecad8-146">You can also use PUA protection in audit mode to detect potentially unwanted applications without blocking them.</span></span> <span data-ttu-id="ecad8-147">检测将捕获到 Windows 事件日志中。</span><span class="sxs-lookup"><span data-stu-id="ecad8-147">The detections are captured in the Windows event log.</span></span>
+3. <span data-ttu-id="914d7-127">在" **安全** 部分， **阻止可能不需要的应用**。</span><span class="sxs-lookup"><span data-stu-id="914d7-127">Under the **Security** section, turn on **Block potentially unwanted apps**.</span></span>
 
 > [!TIP]
-> <span data-ttu-id="ecad8-148">请访问 microsoft Defender for Endpoint 演示网站 [demo.wd.microsoft.com](https://demo.wd.microsoft.com/Page/UrlRep) 确认该功能是否正常工作，并查看其操作结果。</span><span class="sxs-lookup"><span data-stu-id="ecad8-148">Visit the Microsoft Defender for Endpoint demo website at [demo.wd.microsoft.com](https://demo.wd.microsoft.com/Page/UrlRep) to confirm that the feature is working, and see it in action.</span></span>
+> <span data-ttu-id="914d7-128">如果运行的是 Microsoft Edge（基于 Chromium），您可以通过在我们的 [Microsoft Defender SmartScreen 演示页面之一测试并测试 PUA 保护的 URL 阻止功能](https://demo.smartscreen.msft.net/)。</span><span class="sxs-lookup"><span data-stu-id="914d7-128">If you are running Microsoft Edge (Chromium-based), you can safely explore the URL-blocking feature of PUA protection by testing it out on one of our [Microsoft Defender SmartScreen demo pages](https://demo.smartscreen.msft.net/).</span></span>
 
-<span data-ttu-id="ecad8-149">如果你的公司正在进行内部软件安全合规性检查，并且希望避免出现任何误报，则审核模式下的 PUA 保护十分有用。</span><span class="sxs-lookup"><span data-stu-id="ecad8-149">PUA protection in audit mode is useful if your company is conducting an internal software security compliance check and you'd like to avoid any false positives.</span></span>
+### <a name="blocking-urls-with-microsoft-defender-smartscreen"></a><span data-ttu-id="914d7-129">使用 Microsoft Defender SmartScreen 阻止 URL</span><span class="sxs-lookup"><span data-stu-id="914d7-129">Blocking URLs with Microsoft Defender SmartScreen</span></span>
 
-#### <a name="use-intune-to-configure-pua-protection"></a><span data-ttu-id="ecad8-150">使用 Intune 配置 PUA 保护</span><span class="sxs-lookup"><span data-stu-id="ecad8-150">Use Intune to configure PUA protection</span></span>
+<span data-ttu-id="914d7-130">在启用 PUA 保护的基于 Chromium 的 Microsoft Edge 中，Microsoft Defender SmartScreen 可保护用户免遭 PUA 关联的 URL 的影响。</span><span class="sxs-lookup"><span data-stu-id="914d7-130">In Chromium-based Edge with PUA protection turned on, Microsoft Defender SmartScreen protects you from PUA-associated URLs.</span></span>
 
-<span data-ttu-id="ecad8-151">有关详细信息，请参阅[Microsoft Intune](/intune/device-restrictions-configure) 和 [Microsoft Defender Intune](/intune/device-restrictions-windows-10#microsoft-defender-antivirus) Windows 10 防病毒设备限制设置。</span><span class="sxs-lookup"><span data-stu-id="ecad8-151">See [Configure device restriction settings in Microsoft Intune](/intune/device-restrictions-configure) and [Microsoft Defender Antivirus device restriction settings for Windows 10 in Intune](/intune/device-restrictions-windows-10#microsoft-defender-antivirus) for more details.</span></span>
+<span data-ttu-id="914d7-131">安全管理员可 [Microsoft Edge](/DeployEdge/configure-microsoft-edge) Microsoft Defender SmartScreen 如何协同工作来保护用户组免遭 PUA 关联的 URL 的威胁。</span><span class="sxs-lookup"><span data-stu-id="914d7-131">Security admins can [configure](/DeployEdge/configure-microsoft-edge) how Microsoft Edge and Microsoft Defender SmartScreen work together to protect groups of users from PUA-associated URLs.</span></span> <span data-ttu-id="914d7-132">可显式 [Microsoft Defender SmartScreen](/DeployEdge/microsoft-edge-policies#smartscreen-settings) 多个组策略设置，包括 [PUA 策略设置的](/DeployEdge/microsoft-edge-policies#smartscreenpuaenabled)。</span><span class="sxs-lookup"><span data-stu-id="914d7-132">There are several [group policy settings](/DeployEdge/microsoft-edge-policies#smartscreen-settings) explicitly for Microsoft Defender SmartScreen available, including [one for blocking PUA](/DeployEdge/microsoft-edge-policies#smartscreenpuaenabled).</span></span> <span data-ttu-id="914d7-133">此外，管理员可 [将 Microsoft Defender SmartScreen](/microsoft-edge/deploy/available-policies?source=docs#configure-windows-defender-smartscreen) 配置成整体，使用组策略设置打开或关闭 Microsoft Defender SmartScreen。</span><span class="sxs-lookup"><span data-stu-id="914d7-133">In addition, admins can [configure Microsoft Defender SmartScreen](/microsoft-edge/deploy/available-policies?source=docs#configure-windows-defender-smartscreen) as a whole, using group policy settings to turn Microsoft Defender SmartScreen on or off.</span></span>
 
-#### <a name="use-configuration-manager-to-configure-pua-protection"></a><span data-ttu-id="ecad8-152">使用配置管理器配置 PUA 保护</span><span class="sxs-lookup"><span data-stu-id="ecad8-152">Use Configuration Manager to configure PUA protection</span></span>
+<span data-ttu-id="914d7-134">尽管 Microsoft Defender for Endpoint 具有自己的基于 Microsoft 管理的数据集的阻止列表，但你可以根据自己的威胁情报自定义此列表。</span><span class="sxs-lookup"><span data-stu-id="914d7-134">Although Microsoft Defender for Endpoint has its own blocklist based upon a data set managed by Microsoft, you can customize this list based on your own threat intelligence.</span></span> <span data-ttu-id="914d7-135">若要在 [Microsoft Defender for Endpoint](manage-indicators.md) 创建和管理指示器，Microsoft Defender SmartScreen 将尊重新设置。</span><span class="sxs-lookup"><span data-stu-id="914d7-135">If you [create and manage indicators](manage-indicators.md) in the Microsoft Defender for Endpoint portal, Microsoft Defender SmartScreen respects the new settings.</span></span>
 
-<span data-ttu-id="ecad8-153">在 Microsoft Endpoint Manager （Current Branch） 中默认启用 PUA 保护。</span><span class="sxs-lookup"><span data-stu-id="ecad8-153">PUA protection is enabled by default in the Microsoft Endpoint Manager (Current Branch).</span></span>
+## <a name="microsoft-defender-antivirus"></a><span data-ttu-id="914d7-136">Microsoft Defender 防病毒软件</span><span class="sxs-lookup"><span data-stu-id="914d7-136">Microsoft Defender Antivirus</span></span>
 
-<span data-ttu-id="ecad8-154">请参阅 [创建和部署反恶意软件策略的信息：计划扫描设置](/configmgr/protect/deploy-use/endpoint-antimalware-policies#real-time-protection-settings) 配置 Microsoft Endpoint Manager （Current Branch） 的详细信息。</span><span class="sxs-lookup"><span data-stu-id="ecad8-154">See [How to create and deploy antimalware policies: Scheduled scans settings](/configmgr/protect/deploy-use/endpoint-antimalware-policies#real-time-protection-settings) for details on configuring Microsoft Endpoint Manager (Current Branch).</span></span>
-
-<span data-ttu-id="ecad8-155">对于 System Center 2012 Configuration Manager，请参阅 [Configuration Manager 管理中心中如何部署用于终结点保护的潜在的不需要的应用程序保护](/previous-versions/system-center/system-center-2012-R2/hh508770(v=technet.10)#BKMK_PUA)。</span><span class="sxs-lookup"><span data-stu-id="ecad8-155">For System Center 2012 Configuration Manager, see [How to Deploy Potentially Unwanted Application Protection Policy for Endpoint Protection in Configuration Manager](/previous-versions/system-center/system-center-2012-R2/hh508770(v=technet.10)#BKMK_PUA).</span></span>
+<span data-ttu-id="914d7-137">Microsoft Defender 防病毒软件中可能不需要的应用程序 （PUA） 保护功能可检测和阻止网络中终结点上的 PUAS。</span><span class="sxs-lookup"><span data-stu-id="914d7-137">The potentially unwanted application (PUA) protection feature in Microsoft Defender Antivirus can detect and block PUAs on endpoints in your network.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="ecad8-156">Windows 事件查看器中报告称 Microsoft Defender 防病毒软件阻止的 PUA 事件，而不是 Microsoft Endpoint Configuration Manager 中。</span><span class="sxs-lookup"><span data-stu-id="ecad8-156">PUA events blocked by Microsoft Defender Antivirus are reported in the Windows Event Viewer and not in Microsoft Endpoint Configuration Manager.</span></span>
+> <span data-ttu-id="914d7-138">Windows 10、Windows Server 2019 和 Windows Server 2016 中提供此功能。</span><span class="sxs-lookup"><span data-stu-id="914d7-138">This feature is available in Windows 10, Windows Server 2019, and Windows Server 2016.</span></span>
 
-#### <a name="use-group-policy-to-configure-pua-protection"></a><span data-ttu-id="ecad8-157">使用组策略配置 PUA 保护</span><span class="sxs-lookup"><span data-stu-id="ecad8-157">Use Group Policy to configure PUA protection</span></span>
+<span data-ttu-id="914d7-139">Microsoft Defender 防病毒软件阻止检测到 PUA 文件，以及尝试下载、移动、运行或安装它们的任何尝试。</span><span class="sxs-lookup"><span data-stu-id="914d7-139">Microsoft Defender Antivirus blocks detected PUA files and any attempts to download, move, run, or install them.</span></span> <span data-ttu-id="914d7-140">阻止的 PUA 文件随即移动到隔离区。</span><span class="sxs-lookup"><span data-stu-id="914d7-140">Blocked PUA files are then moved to quarantine.</span></span> <span data-ttu-id="914d7-141">在终结点上检测到 PUA 文件时，Microsoft Defender 防病毒软件会以与其他威胁检测相同的格式向用户发送通知（[除非通知已禁用](configure-notifications-microsoft-defender-antivirus.md)）。</span><span class="sxs-lookup"><span data-stu-id="914d7-141">When a PUA file is detected on an endpoint, Microsoft Defender Antivirus sends a notification to the user ([unless notifications have been disabled](configure-notifications-microsoft-defender-antivirus.md)) in the same format as other threat detections.</span></span> <span data-ttu-id="914d7-142">以通知的字体作为 `PUA:` 以指示其内容。</span><span class="sxs-lookup"><span data-stu-id="914d7-142">The notification is prefaced with `PUA:` to indicate its content.</span></span>
 
-1. <span data-ttu-id="ecad8-158">下载并安装 [Windows 10 2020 年 10 月更新 （20H2） 管理模板 （.admx）](https://www.microsoft.com/download/details.aspx?id=102157)</span><span class="sxs-lookup"><span data-stu-id="ecad8-158">Download and install [Administrative Templates (.admx) for Windows 10 October 2020 Update (20H2)](https://www.microsoft.com/download/details.aspx?id=102157)</span></span>
+<span data-ttu-id="914d7-143">该通知显示在 Windows 安全应用 [中正常出现的隔离](microsoft-defender-security-center-antivirus.md)。</span><span class="sxs-lookup"><span data-stu-id="914d7-143">The notification appears in the usual [quarantine list within the Windows Security app](microsoft-defender-security-center-antivirus.md).</span></span>
 
-2. <span data-ttu-id="ecad8-159">在组策略管理计算机上，打开 [策略管理控制台](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11))。</span><span class="sxs-lookup"><span data-stu-id="ecad8-159">On your Group Policy management computer, open the [Group Policy Management Console](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)).</span></span>
+### <a name="configure-pua-protection-in-microsoft-defender-antivirus"></a><span data-ttu-id="914d7-144">在 Microsoft Defender 防病毒软件中配置 PUA 保护</span><span class="sxs-lookup"><span data-stu-id="914d7-144">Configure PUA protection in Microsoft Defender Antivirus</span></span>
 
-3. <span data-ttu-id="ecad8-160">选择要配置的组策略对象，然后选择" **策略**。</span><span class="sxs-lookup"><span data-stu-id="ecad8-160">Select the Group Policy Object you want to configure, and then choose **Edit**.</span></span>
+<span data-ttu-id="914d7-145">您可以使用[Microsoft Intune](/mem/intune/protect/device-protect)，[Microsoft Endpoint Configuration Manager](/mem/configmgr/protect/deploy-use/endpoint-protection)，[组策略](/azure/active-directory-domain-services/manage-group-policy)或通过[PowerShell cmdlet](/powershell/module/defender/?preserve-view=true&view=win10-ps)启用PUA保护。</span><span class="sxs-lookup"><span data-stu-id="914d7-145">You can enable PUA protection with [Microsoft Intune](/mem/intune/protect/device-protect), [Microsoft Endpoint Configuration Manager](/mem/configmgr/protect/deploy-use/endpoint-protection), [Group Policy](/azure/active-directory-domain-services/manage-group-policy), or via [PowerShell cmdlets](/powershell/module/defender/?preserve-view=true&view=win10-ps).</span></span>
 
-4. <span data-ttu-id="ecad8-161">在 **策略管理编辑器** 中， **计算机配置** 并选择 **管理模板**。</span><span class="sxs-lookup"><span data-stu-id="ecad8-161">In the **Group Policy Management Editor**, go to **Computer configuration** and select **Administrative templates**.</span></span>
+<span data-ttu-id="914d7-146">还可在审核模式下使用 PUA 保护检测可能不需要的应用程序，同时不阻止它们。</span><span class="sxs-lookup"><span data-stu-id="914d7-146">You can also use PUA protection in audit mode to detect potentially unwanted applications without blocking them.</span></span> <span data-ttu-id="914d7-147">检测将捕获到 Windows 事件日志中。</span><span class="sxs-lookup"><span data-stu-id="914d7-147">The detections are captured in the Windows event log.</span></span>
 
-5. <span data-ttu-id="ecad8-162">展开树，从 Microsoft Defender **Windows Components** > **Microsoft Defender 防病毒软件**。</span><span class="sxs-lookup"><span data-stu-id="ecad8-162">Expand the tree to **Windows Components** > **Microsoft Defender Antivirus**.</span></span>
+> [!TIP]
+> <span data-ttu-id="914d7-148">请访问 microsoft Defender for Endpoint 演示网站 [demo.wd.microsoft.com](https://demo.wd.microsoft.com/Page/UrlRep) 确认该功能是否正常工作，并查看其操作结果。</span><span class="sxs-lookup"><span data-stu-id="914d7-148">Visit the Microsoft Defender for Endpoint demo website at [demo.wd.microsoft.com](https://demo.wd.microsoft.com/Page/UrlRep) to confirm that the feature is working, and see it in action.</span></span>
 
-6. <span data-ttu-id="ecad8-163">双击配置 **中可能不需要的应用程序**。</span><span class="sxs-lookup"><span data-stu-id="ecad8-163">Double-click **Configure detection for potentially unwanted applications**.</span></span>
+<span data-ttu-id="914d7-149">如果你的公司正在进行内部软件安全合规性检查，并且希望避免出现任何误报，则审核模式下的 PUA 保护十分有用。</span><span class="sxs-lookup"><span data-stu-id="914d7-149">PUA protection in audit mode is useful if your company is conducting an internal software security compliance check and you'd like to avoid any false positives.</span></span>
 
-7. <span data-ttu-id="ecad8-164">选择 **启用** 以启用 PUA 保护。</span><span class="sxs-lookup"><span data-stu-id="ecad8-164">Select **Enabled** to enable PUA protection.</span></span>
+#### <a name="use-intune-to-configure-pua-protection"></a><span data-ttu-id="914d7-150">使用 Intune 配置 PUA 保护</span><span class="sxs-lookup"><span data-stu-id="914d7-150">Use Intune to configure PUA protection</span></span>
 
-8. <span data-ttu-id="ecad8-165">在 **选项** 中，选择 **阻止** 以阻止可能不需要的应用程序，或选择 **审核模式** 测试设置在环境中的工作方式。</span><span class="sxs-lookup"><span data-stu-id="ecad8-165">In **Options**, select **Block** to block potentially unwanted applications, or select **Audit Mode** to test how the setting works in your environment.</span></span> <span data-ttu-id="ecad8-166">选择“**确定**”。</span><span class="sxs-lookup"><span data-stu-id="ecad8-166">Select **OK**.</span></span>
+<span data-ttu-id="914d7-151">有关详细信息，请参阅[Microsoft Intune](/intune/device-restrictions-configure) 和 [Microsoft Defender Intune](/intune/device-restrictions-windows-10#microsoft-defender-antivirus) Windows 10 防病毒设备限制设置。</span><span class="sxs-lookup"><span data-stu-id="914d7-151">See [Configure device restriction settings in Microsoft Intune](/intune/device-restrictions-configure) and [Microsoft Defender Antivirus device restriction settings for Windows 10 in Intune](/intune/device-restrictions-windows-10#microsoft-defender-antivirus) for more details.</span></span>
 
-9. <span data-ttu-id="ecad8-167">如通常一样部署组策略对象。</span><span class="sxs-lookup"><span data-stu-id="ecad8-167">Deploy your Group Policy object as you usually do.</span></span>
+#### <a name="use-configuration-manager-to-configure-pua-protection"></a><span data-ttu-id="914d7-152">使用配置管理器配置 PUA 保护</span><span class="sxs-lookup"><span data-stu-id="914d7-152">Use Configuration Manager to configure PUA protection</span></span>
 
-#### <a name="use-powershell-cmdlets-to-configure-pua-protection"></a><span data-ttu-id="ecad8-168">使用 PowerShell cmdlet 配置 PUA 保护</span><span class="sxs-lookup"><span data-stu-id="ecad8-168">Use PowerShell cmdlets to configure PUA protection</span></span>
+<span data-ttu-id="914d7-153">在 Microsoft Endpoint Manager （Current Branch） 中默认启用 PUA 保护。</span><span class="sxs-lookup"><span data-stu-id="914d7-153">PUA protection is enabled by default in the Microsoft Endpoint Manager (Current Branch).</span></span>
 
-##### <a name="to-enable-pua-protection"></a><span data-ttu-id="ecad8-169">启用 PUA 保护</span><span class="sxs-lookup"><span data-stu-id="ecad8-169">To enable PUA protection</span></span>
+<span data-ttu-id="914d7-154">请参阅 [创建和部署反恶意软件策略的信息：计划扫描设置](/configmgr/protect/deploy-use/endpoint-antimalware-policies#real-time-protection-settings) 配置 Microsoft Endpoint Manager （Current Branch） 的详细信息。</span><span class="sxs-lookup"><span data-stu-id="914d7-154">See [How to create and deploy antimalware policies: Scheduled scans settings](/configmgr/protect/deploy-use/endpoint-antimalware-policies#real-time-protection-settings) for details on configuring Microsoft Endpoint Manager (Current Branch).</span></span>
+
+<span data-ttu-id="914d7-155">对于 System Center 2012 Configuration Manager，请参阅 [Configuration Manager 管理中心中如何部署用于终结点保护的潜在的不需要的应用程序保护](/previous-versions/system-center/system-center-2012-R2/hh508770(v=technet.10)#BKMK_PUA)。</span><span class="sxs-lookup"><span data-stu-id="914d7-155">For System Center 2012 Configuration Manager, see [How to Deploy Potentially Unwanted Application Protection Policy for Endpoint Protection in Configuration Manager](/previous-versions/system-center/system-center-2012-R2/hh508770(v=technet.10)#BKMK_PUA).</span></span>
+
+> [!NOTE]
+> <span data-ttu-id="914d7-156">Windows 事件查看器中报告称 Microsoft Defender 防病毒软件阻止的 PUA 事件，而不是 Microsoft Endpoint Configuration Manager 中。</span><span class="sxs-lookup"><span data-stu-id="914d7-156">PUA events blocked by Microsoft Defender Antivirus are reported in the Windows Event Viewer and not in Microsoft Endpoint Configuration Manager.</span></span>
+
+#### <a name="use-group-policy-to-configure-pua-protection"></a><span data-ttu-id="914d7-157">使用组策略配置 PUA 保护</span><span class="sxs-lookup"><span data-stu-id="914d7-157">Use Group Policy to configure PUA protection</span></span>
+
+1. <span data-ttu-id="914d7-158">下载并安装 [Windows 10 2020 年 10 月更新 （20H2） 管理模板 （.admx）](https://www.microsoft.com/download/details.aspx?id=102157)</span><span class="sxs-lookup"><span data-stu-id="914d7-158">Download and install [Administrative Templates (.admx) for Windows 10 October 2020 Update (20H2)](https://www.microsoft.com/download/details.aspx?id=102157)</span></span>
+
+2. <span data-ttu-id="914d7-159">在组策略管理计算机上，打开 [策略管理控制台](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11))。</span><span class="sxs-lookup"><span data-stu-id="914d7-159">On your Group Policy management computer, open the [Group Policy Management Console](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)).</span></span>
+
+3. <span data-ttu-id="914d7-160">选择要配置的组策略对象，然后选择" **策略**。</span><span class="sxs-lookup"><span data-stu-id="914d7-160">Select the Group Policy Object you want to configure, and then choose **Edit**.</span></span>
+
+4. <span data-ttu-id="914d7-161">在 **策略管理编辑器** 中， **计算机配置** 并选择 **管理模板**。</span><span class="sxs-lookup"><span data-stu-id="914d7-161">In the **Group Policy Management Editor**, go to **Computer configuration** and select **Administrative templates**.</span></span>
+
+5. <span data-ttu-id="914d7-162">展开树，从 Microsoft Defender **Windows Components** > **Microsoft Defender 防病毒软件**。</span><span class="sxs-lookup"><span data-stu-id="914d7-162">Expand the tree to **Windows Components** > **Microsoft Defender Antivirus**.</span></span>
+
+6. <span data-ttu-id="914d7-163">双击配置 **中可能不需要的应用程序**。</span><span class="sxs-lookup"><span data-stu-id="914d7-163">Double-click **Configure detection for potentially unwanted applications**.</span></span>
+
+7. <span data-ttu-id="914d7-164">选择 **启用** 以启用 PUA 保护。</span><span class="sxs-lookup"><span data-stu-id="914d7-164">Select **Enabled** to enable PUA protection.</span></span>
+
+8. <span data-ttu-id="914d7-165">在 **选项** 中，选择 **阻止** 以阻止可能不需要的应用程序，或选择 **审核模式** 测试设置在环境中的工作方式。</span><span class="sxs-lookup"><span data-stu-id="914d7-165">In **Options**, select **Block** to block potentially unwanted applications, or select **Audit Mode** to test how the setting works in your environment.</span></span> <span data-ttu-id="914d7-166">选择“**确定**”。</span><span class="sxs-lookup"><span data-stu-id="914d7-166">Select **OK**.</span></span>
+
+9. <span data-ttu-id="914d7-167">如通常一样部署组策略对象。</span><span class="sxs-lookup"><span data-stu-id="914d7-167">Deploy your Group Policy object as you usually do.</span></span>
+
+#### <a name="use-powershell-cmdlets-to-configure-pua-protection"></a><span data-ttu-id="914d7-168">使用 PowerShell cmdlet 配置 PUA 保护</span><span class="sxs-lookup"><span data-stu-id="914d7-168">Use PowerShell cmdlets to configure PUA protection</span></span>
+
+##### <a name="to-enable-pua-protection"></a><span data-ttu-id="914d7-169">启用 PUA 保护</span><span class="sxs-lookup"><span data-stu-id="914d7-169">To enable PUA protection</span></span>
 
 ```PowerShell
 Set-MpPreference -PUAProtection Enabled
 ```
 
-<span data-ttu-id="ecad8-170">如果已禁用该功能， `Enabled` cmdlet 的值设置为启用该功能。</span><span class="sxs-lookup"><span data-stu-id="ecad8-170">Setting the value for this cmdlet to `Enabled` turns the feature on if it has been disabled.</span></span>
+<span data-ttu-id="914d7-170">设置此 cmdlet 的值 `Enabled` 可打开该功能（如果该功能已禁用）。</span><span class="sxs-lookup"><span data-stu-id="914d7-170">Setting the value for this cmdlet to `Enabled` turns on the feature if it has been disabled.</span></span>
 
-##### <a name="to-set-pua-protection-to-audit-mode"></a><span data-ttu-id="ecad8-171">将 PUA 保护设置为审核模式</span><span class="sxs-lookup"><span data-stu-id="ecad8-171">To set PUA protection to audit mode</span></span>
+##### <a name="to-set-pua-protection-to-audit-mode"></a><span data-ttu-id="914d7-171">将 PUA 保护设置为审核模式</span><span class="sxs-lookup"><span data-stu-id="914d7-171">To set PUA protection to audit mode</span></span>
 
 ```PowerShell
 Set-MpPreference -PUAProtection AuditMode
 ```
 
-<span data-ttu-id="ecad8-172">设置 `AuditMode` 可检测 PUA，且不会阻止它们。</span><span class="sxs-lookup"><span data-stu-id="ecad8-172">Setting `AuditMode` detects PUAs without blocking them.</span></span>
+<span data-ttu-id="914d7-172">设置 `AuditMode` 可检测 PUA，且不会阻止它们。</span><span class="sxs-lookup"><span data-stu-id="914d7-172">Setting `AuditMode` detects PUAs without blocking them.</span></span>
 
-##### <a name="to-disable-pua-protection"></a><span data-ttu-id="ecad8-173">禁用 PUA 保护</span><span class="sxs-lookup"><span data-stu-id="ecad8-173">To disable PUA protection</span></span>
+##### <a name="to-disable-pua-protection"></a><span data-ttu-id="914d7-173">禁用 PUA 保护</span><span class="sxs-lookup"><span data-stu-id="914d7-173">To disable PUA protection</span></span>
 
-<span data-ttu-id="ecad8-174">建议保持启用 PUA 保护。</span><span class="sxs-lookup"><span data-stu-id="ecad8-174">We recommend keeping PUA protection turned on.</span></span> <span data-ttu-id="ecad8-175">但是，可以通过以下 cmdlet 将其关闭：</span><span class="sxs-lookup"><span data-stu-id="ecad8-175">However, you can turn it off by using the following cmdlet:</span></span>
+<span data-ttu-id="914d7-174">建议保持启用 PUA 保护。</span><span class="sxs-lookup"><span data-stu-id="914d7-174">We recommend keeping PUA protection turned on.</span></span> <span data-ttu-id="914d7-175">但是，可以通过以下 cmdlet 将其关闭：</span><span class="sxs-lookup"><span data-stu-id="914d7-175">However, you can turn it off by using the following cmdlet:</span></span>
 
 ```PowerShell
 Set-MpPreference -PUAProtection Disabled
 ```
 
-<span data-ttu-id="ecad8-176">如果已启用此 cmdlet， `Disabled` 关闭该功能。</span><span class="sxs-lookup"><span data-stu-id="ecad8-176">Setting the value for this cmdlet to `Disabled` turns the feature off if it has been enabled.</span></span>
+<span data-ttu-id="914d7-176">如果已启用此功能，则设置此 cmdlet `Disabled` 的值以关闭该功能。</span><span class="sxs-lookup"><span data-stu-id="914d7-176">Setting the value for this cmdlet to `Disabled` turns off the feature if it has been enabled.</span></span>
 
-<span data-ttu-id="ecad8-177">请参阅 [使用 PowerShell cmdlet 配置并运行 Microsoft Defender 防病毒软件](use-powershell-cmdlets-microsoft-defender-antivirus.md) 和 [Defender cmdlet](/powershell/module/defender/index) ，了解有关如何通过 Microsoft Defender 防病毒软件使用 PowerShell 的信息。</span><span class="sxs-lookup"><span data-stu-id="ecad8-177">See [Use PowerShell cmdlets to configure and run Microsoft Defender Antivirus](use-powershell-cmdlets-microsoft-defender-antivirus.md) and [Defender cmdlets](/powershell/module/defender/index) for more information on how to use PowerShell with Microsoft Defender Antivirus.</span></span>
+<span data-ttu-id="914d7-177">请参阅 [使用 PowerShell cmdlet 配置并运行 Microsoft Defender 防病毒软件](use-powershell-cmdlets-microsoft-defender-antivirus.md) 和 [Defender cmdlet](/powershell/module/defender/index) ，了解有关如何通过 Microsoft Defender 防病毒软件使用 PowerShell 的信息。</span><span class="sxs-lookup"><span data-stu-id="914d7-177">See [Use PowerShell cmdlets to configure and run Microsoft Defender Antivirus](use-powershell-cmdlets-microsoft-defender-antivirus.md) and [Defender cmdlets](/powershell/module/defender/index) for more information on how to use PowerShell with Microsoft Defender Antivirus.</span></span>
 
-## <a name="view-pua-events"></a><span data-ttu-id="ecad8-178">查看 PUA 事件</span><span class="sxs-lookup"><span data-stu-id="ecad8-178">View PUA events</span></span>
+## <a name="view-pua-events"></a><span data-ttu-id="914d7-178">查看 PUA 事件</span><span class="sxs-lookup"><span data-stu-id="914d7-178">View PUA events</span></span>
 
-<span data-ttu-id="ecad8-179">PUA 事件在 Windows 事件查看器中报告，但不在 Microsoft 终结点管理器或 Intune 中。</span><span class="sxs-lookup"><span data-stu-id="ecad8-179">PUA events are reported in the Windows Event Viewer, but not in Microsoft Endpoint Manager or in Intune.</span></span> <span data-ttu-id="ecad8-180">还可使用 `Get-MpThreat` cmdlet 查看 Microsoft Defender 防病毒软件处理的威胁。</span><span class="sxs-lookup"><span data-stu-id="ecad8-180">You can also use the `Get-MpThreat` cmdlet to view threats that Microsoft Defender Antivirus handled.</span></span> <span data-ttu-id="ecad8-181">下面是一个示例：</span><span class="sxs-lookup"><span data-stu-id="ecad8-181">Here's an example:</span></span>
+<span data-ttu-id="914d7-179">PUA 事件在 Windows 事件查看器中报告，但不在 Microsoft 终结点管理器或 Intune 中。</span><span class="sxs-lookup"><span data-stu-id="914d7-179">PUA events are reported in the Windows Event Viewer, but not in Microsoft Endpoint Manager or in Intune.</span></span> <span data-ttu-id="914d7-180">还可使用 `Get-MpThreat` cmdlet 查看 Microsoft Defender 防病毒软件处理的威胁。</span><span class="sxs-lookup"><span data-stu-id="914d7-180">You can also use the `Get-MpThreat` cmdlet to view threats that Microsoft Defender Antivirus handled.</span></span> <span data-ttu-id="914d7-181">下面是一个示例：</span><span class="sxs-lookup"><span data-stu-id="914d7-181">Here's an example:</span></span>
 
 ```console
 CategoryID       : 27
@@ -176,17 +175,28 @@ TypeID           : 0
 PSComputerName   :
 ```
 
-<span data-ttu-id="ecad8-182">你可以打开电子邮件通知以接收有关 PUA 检测的邮件。</span><span class="sxs-lookup"><span data-stu-id="ecad8-182">You can turn on email notifications to receive mail about PUA detections.</span></span>
+<span data-ttu-id="914d7-182">你可以打开电子邮件通知以接收有关 PUA 检测的邮件。</span><span class="sxs-lookup"><span data-stu-id="914d7-182">You can turn on email notifications to receive mail about PUA detections.</span></span>
 
-<span data-ttu-id="ecad8-183">请参阅 [解决事件 ID](troubleshoot-microsoft-defender-antivirus.md) ，了解有关查看 Microsoft Defender 防病毒事件的详细信息。</span><span class="sxs-lookup"><span data-stu-id="ecad8-183">See [Troubleshoot event IDs](troubleshoot-microsoft-defender-antivirus.md) for details on viewing Microsoft Defender Antivirus events.</span></span> <span data-ttu-id="ecad8-184">PUA 事件记录在事件 ID **1160**。</span><span class="sxs-lookup"><span data-stu-id="ecad8-184">PUA events are recorded under event ID **1160**.</span></span>
+<span data-ttu-id="914d7-183">请参阅 [解决事件 ID](troubleshoot-microsoft-defender-antivirus.md) ，了解有关查看 Microsoft Defender 防病毒事件的详细信息。</span><span class="sxs-lookup"><span data-stu-id="914d7-183">See [Troubleshoot event IDs](troubleshoot-microsoft-defender-antivirus.md) for details on viewing Microsoft Defender Antivirus events.</span></span> <span data-ttu-id="914d7-184">PUA 事件记录在事件 ID **1160**。</span><span class="sxs-lookup"><span data-stu-id="914d7-184">PUA events are recorded under event ID **1160**.</span></span>
 
-## <a name="excluding-files"></a><span data-ttu-id="ecad8-185">排除文件</span><span class="sxs-lookup"><span data-stu-id="ecad8-185">Excluding files</span></span>
+<span data-ttu-id="914d7-185">如果你使用的是 Microsoft Defender for Endpoint，可以使用高级搜寻查询来查看 PUA 事件。</span><span class="sxs-lookup"><span data-stu-id="914d7-185">If you're using Microsoft Defender for Endpoint, you can use an advanced hunting query to view PUA events.</span></span> <span data-ttu-id="914d7-186">下面是一个示例查询：</span><span class="sxs-lookup"><span data-stu-id="914d7-186">Here's an example query:</span></span>
 
-<span data-ttu-id="ecad8-186">有时文件被 PUA 保护错误阻止，或需要 PUA 的功能才能完成任务。</span><span class="sxs-lookup"><span data-stu-id="ecad8-186">Sometimes a file is erroneously blocked by PUA protection, or a feature of a PUA is required to complete a task.</span></span> <span data-ttu-id="ecad8-187">在这些情况下，可以将文件添加到排除列表。</span><span class="sxs-lookup"><span data-stu-id="ecad8-187">In these cases, a file can be added to an exclusion list.</span></span>
+```console
+DeviceEvents
+| where ActionType == "AntivirusDetection"
+| extend x = parse_json(AdditionalFields)
+| evaluate bag_unpack(x)
+| where ThreatName startswith_cs 'PUA:'
+| project Timestamp, DeviceName, FolderPath, FileName, SHA256, ThreatName, WasExecutingWhileDetected, WasRemediated
+```
 
-<span data-ttu-id="ecad8-188">有关详细信息，请参阅 [扩展名和文件夹位置配置和验证排除](configure-extension-file-exclusions-microsoft-defender-antivirus.md)。</span><span class="sxs-lookup"><span data-stu-id="ecad8-188">For more information, see [Configure and validate exclusions based on file extension and folder location](configure-extension-file-exclusions-microsoft-defender-antivirus.md).</span></span>
+## <a name="excluding-files"></a><span data-ttu-id="914d7-187">排除文件</span><span class="sxs-lookup"><span data-stu-id="914d7-187">Excluding files</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="ecad8-189">另请参阅</span><span class="sxs-lookup"><span data-stu-id="ecad8-189">See also</span></span>
+<span data-ttu-id="914d7-188">有时文件被 PUA 保护错误阻止，或需要 PUA 的功能才能完成任务。</span><span class="sxs-lookup"><span data-stu-id="914d7-188">Sometimes a file is erroneously blocked by PUA protection, or a feature of a PUA is required to complete a task.</span></span> <span data-ttu-id="914d7-189">在这些情况下，可以将文件添加到排除列表。</span><span class="sxs-lookup"><span data-stu-id="914d7-189">In these cases, a file can be added to an exclusion list.</span></span>
 
-- [<span data-ttu-id="ecad8-190">下一代保护</span><span class="sxs-lookup"><span data-stu-id="ecad8-190">Next-generation protection</span></span>](microsoft-defender-antivirus-in-windows-10.md)
-- [<span data-ttu-id="ecad8-191">配置方案、高要求和实时保护</span><span class="sxs-lookup"><span data-stu-id="ecad8-191">Configure behavioral, heuristic, and real-time protection</span></span>](configure-protection-features-microsoft-defender-antivirus.md)
+<span data-ttu-id="914d7-190">有关详细信息，请参阅 [扩展名和文件夹位置配置和验证排除](configure-extension-file-exclusions-microsoft-defender-antivirus.md)。</span><span class="sxs-lookup"><span data-stu-id="914d7-190">For more information, see [Configure and validate exclusions based on file extension and folder location](configure-extension-file-exclusions-microsoft-defender-antivirus.md).</span></span>
+
+## <a name="see-also"></a><span data-ttu-id="914d7-191">另请参阅</span><span class="sxs-lookup"><span data-stu-id="914d7-191">See also</span></span>
+
+- [<span data-ttu-id="914d7-192">下一代保护</span><span class="sxs-lookup"><span data-stu-id="914d7-192">Next-generation protection</span></span>](microsoft-defender-antivirus-in-windows-10.md)
+- [<span data-ttu-id="914d7-193">配置方案、高要求和实时保护</span><span class="sxs-lookup"><span data-stu-id="914d7-193">Configure behavioral, heuristic, and real-time protection</span></span>](configure-protection-features-microsoft-defender-antivirus.md)
