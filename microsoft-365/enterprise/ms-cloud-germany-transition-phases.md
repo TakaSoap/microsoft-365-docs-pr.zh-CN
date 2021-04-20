@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 摘要：了解从德国 Microsoft 云 (德国) 迁移到新的德国数据中心区域 Office 365 服务的迁移阶段操作和影响。
-ms.openlocfilehash: cd83d2abcc061562047aeb384856cc9ab04dcad3
-ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
+ms.openlocfilehash: 121f2059e4a13684169ab40b7bfdaae13ef6045e
+ms.sourcegitcommit: 1c53f114a810e7aaa2dc876b84d66348492ea36c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51760034"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51899244"
 ---
 # <a name="migration-phases-actions-and-impacts-for-the-migration-from-microsoft-cloud-deutschland"></a>迁移阶段从德国 Microsoft 云迁移的操作和影响
 
@@ -33,7 +33,7 @@ ms.locfileid: "51760034"
 
 迁移过程将在几周内完成，具体取决于组织的总体大小和复杂性。 在迁移过程中，用户和管理员能够继续利用服务，并对此文档进行详细介绍，并做出显著更改。 图形和表定义迁移期间阶段和步骤。
 
-|步骤|持续时间|负责方|描述|
+|步骤|持续时间|负责方|说明|
 |:--------|:--------|:--------|:--------|
 |Opt-In|工作时间|客户|选择你的组织加入迁移。|
 |预工作|天|客户|完成为迁移准备用户、工作站和网络所需的工作。|
@@ -58,7 +58,7 @@ ms.locfileid: "51760034"
 
 适用于：在 Microsoft 云德国 (MCD 中托管 Office 365 租户的所有客户) 未经同意，Microsoft 无法迁移 MCD 中托管的 Office 365 租户。
 
-| 步骤 (步骤)  | 描述 | 影响 |
+| 步骤 (步骤)  | 说明 | 影响 |
 |:-------|:-----|:-------|
 |**客户任务**：授予迁移许可| 客户同意迁移，以便 Microsoft 获得迁移和安排数据和服务到 Office 365 全局服务实例的转换的权利。 有两种方法 <ol><li>Office 365 租户管理员选择加入 Microsoft 推动的迁移。 </li><li> 客户在 2020 年 5 月 1 日之后续订了 MCD Office 365 租户的任何订阅。 Microsoft 每月向这些客户通知迁移时间，等待 30 天，让客户有机会取消迁移，然后直接选择加入。</li></ol> | <ul><li>租户标记为已同意迁移，管理中心将显示确认。 </li><li>Acknowledgment 将张贴到 Office 365 租户消息中心。 服务配置从德国 Microsoft 云终结点继续。 </li><li> </li></ul>
 |**租户管理员**：监视邮件|租户管理员必须监视 Office 365 消息中心，以从此时开始更新迁移阶段状态。|客户可以实时执行必要的任务。
@@ -102,7 +102,7 @@ New-AuthServer GlobalMicrosoftSts -AuthMetadataUrl https://accounts.accesscontro
 
 不会迁移德国 Microsoft 云合作伙伴租户。 云解决方案提供商客户将迁移到同一合作伙伴的新 Office 365 服务租户下的 Office 365 服务。 客户迁移后，合作伙伴只能从 Office 365 服务租户管理此客户。
 
-| 步骤 (步骤)  | 描述 | 影响 |
+| 步骤 (步骤)  | 说明 | 影响 |
 |:-------|:-------|:-------|
 | 订阅已转移| Microsoft 云德国订阅将迁移到相应的 Office 365 全球服务订阅。 <ul><li>该订阅的 Office 365 全局服务由 Microsoft (也称为产品/服务 _映射) 。_</li><li> 相应的 Office 365 全局服务订阅在已转移的德国 Microsoft 云的 Office 365 全局实例中购买。</li><li>完成时，将从 Office 365 服务租户中删除德国旧版 Microsoft 云订阅。</li></ul>| <ul><li>更改现有订阅将 (例如，在此阶段不会更改新订阅) 席位计数。</li><li>许可证分配更改将被阻止。</li><li>订阅迁移完成后，Office 365 服务和德国 Microsoft 云订阅都将在 Office 365 管理门户中可见，状态为"Microsoft 云德国订阅已取消预配 _"。_ </li><li>依赖德国 Microsoft 云订阅或 SKU GUID 的任何客户流程都将中断，并且需要通过 Office 365 服务产品进行修订。 </li><li>Office 365 服务中的新订阅将在新术语 (monthly/quarterly/year) 中购买，客户将收到 Microsoft 云德国订阅未使用余额的按比例退款。 </li></ul> |
 |重新分配许可证|在 Office 365 全局实例中，将为具有德国 Microsoft 云许可证的用户分配许可证。|<ul><li>用户将被重新分配到新 Office 365 服务订阅的许可证。 所有用户的用户许可证将自动分配给新功能。</li><li>Office 365 (所提供的) 计划的功能数可以大于原始 Microsoft 云德国产品/服务计划中的功能数。 Office 365 服务中的用户许可证将等效分配给类似的 Microsoft 云德国功能 (服务计划) 。 </li></ul> 
@@ -121,7 +121,7 @@ New-AuthServer GlobalMicrosoftSts -AuthMetadataUrl https://accounts.accesscontro
 
 如果您仍在使用 SharePoint 2013 工作流，请限制 SharePoint Online 迁移期间使用 SharePoint 2013 工作流。
 
-| 步骤 (步骤)  | 描述 | 影响 |
+| 步骤 (步骤)  | 说明 | 影响 |
 |:-------|:-----|:-------|
 | SharePoint 和 OneDrive 已转换 | 在此阶段，SharePoint Online 和 OneDrive for Business 从德国 Microsoft 云迁移到 Office 365 全球服务。<br><ul><li>保留现有的德国 Microsoft 云 URL (例如 `contoso.sharepoint.de` ，) 。</li><li>保留现有网站。</li><li>由德国 Microsoft 云或 Office 365 全局服务实例中的安全令牌服务 (STS) 颁发的客户端身份验证令牌在转换期间有效。</li></ul>|<ul><li>迁移期间，内容将在两个短暂时段内为只读。 在此期间，期望 SharePoint 中显示"无法编辑内容"横幅。</li><li>不会保留搜索索引，可能需要 10 天才能重建。</li><li>迁移期间，SharePoint Online 和 OneDrive for Business 内容将在两小段时间内为只读。 在此期间，用户将短暂看到"你无法编辑内容"横幅。</li><li>SharePoint Online 迁移完成后，重建索引时，SharePoint Online 和 OneDrive for Business 内容的搜索结果可能不可用。 在此期间，搜索查询可能不会返回完整结果。 重建索引完成时，依赖搜索索引的功能（如 SharePoint Online 新闻）可能会受到影响。</li><li>SharePoint 2013 工作流将在迁移过程中中断，并且必须在迁移后重新发布。</li></ul>
 |**SPO 管理员**：重新发布 SharePoint 2013 工作流| SharePoint Online 管理员在迁移后重新发布 SharePoint 2013 工作流。|SharePoint 2013 工作流可用。
@@ -131,11 +131,8 @@ New-AuthServer GlobalMicrosoftSts -AuthMetadataUrl https://accounts.accesscontro
 其他注意事项：
 
 - 如果组织仍使用 SharePoint 2010 工作流，则它们在 2021 年 12 月 31 日之后将不再工作。 SharePoint 2013 工作流仍受支持，尽管新租户默认从 2020 年 11 月 1 日开始关闭。 迁移到 SharePoint Online 服务完成后，建议移动到 Power Automate 或其他受支持的解决方案。
- 
-- 其 SharePoint Online 实例尚未迁移的 Microsoft 云德国客户需要留在 SharePoint Online PowerShell 模块/Microsoft.SharePointOnline.CSOM 版本 16.0.20616.12000 或以下。 否则，通过 PowerShell 或客户端对象模型连接到 SharePoint Online 将失败。
-
+ - 其 SharePoint Online 实例尚未迁移的 Microsoft 云德国客户需要留在 SharePoint Online PowerShell 模块/Microsoft.SharePointOnline.CSOM 版本 16.0.20616.12000 或以下。 否则，通过 PowerShell 或客户端对象模型连接到 SharePoint Online 将失败。
 - 在此阶段，SharePoint URL 后面的 IP 地址将更改。 转换到 Office 365 全局服务后，保留的租户 URL (和) 的地址将更改为全球 `contoso.sharepoint.de` `contoso-my.sharepoint.de` Microsoft [365 URL ](/microsoft-365/enterprise/urls-and-ip-address-ranges?view=o365-worldwide#sharepoint-online-and-onedrive-for-business)和 IP 地址范围 (SharePoint Online 和 OneDrive for Business) 。
-
 
 > [!NOTE]
 > 如果使用电子数据展示，请确保了解电子 [数据展示迁移体验](ms-cloud-germany-transition-add-scc.md)。
@@ -150,7 +147,8 @@ Office 365 全局服务区域设置为默认区域，这使内部负载平衡服
 - 将用户和服务从旧式 MCD URL () 新的 Office 365 服务 URL `https://outlook.office.de` `https://outlook.office365.com` () 。
 -  新的德国数据中心区域 (Outlook Web Access 和 Exchange 管理中心) 的 Exchange Online 服务将在此阶段可用，之前不可用。
 - 在迁移过程中，用户可能会继续通过旧 MCD URL 访问服务，但需要在迁移完成后停止使用旧 URL。
-- 用户应过渡到使用全球 Office 门户，以使用 Office Online 功能， (日历、邮件、) 。 在迁移到 Office 365 服务之前，导航到尚未迁移到 Office 365 服务的服务将无法正常工作。
+- 用户应过渡到使用全球 Office 门户，以使用 Office Online 功能， (日历、邮件、) 。 在迁移到 Office 365 服务之前，导航到尚未迁移到 Office 365 服务的服务将无法正常工作。 
+- 此限制也适用于后台服务，如"我的帐户"。 完成第 9 阶段后，"我的全局帐户"服务将变为可用状态。 在此之前，用户必须使用 MCD 门户来管理其帐户设置。
 - 迁移Outlook Web App无法提供公用文件夹体验。
 
 如果要在阶段 5 中修改用户照片，请参阅[Exchange Online PowerShell - Set-UserPhoto阶段。](#exchange-online-powershell)
@@ -158,9 +156,12 @@ Office 365 全局服务区域设置为默认区域，这使内部负载平衡服
 ### <a name="dns-record-for-autodiscover-in-exchange-online"></a>Exchange Online 中自动发现的 DNS 记录
 **适用于：** 将 Exchange Online 与自定义域一同使用的客户
 
-当前指向德国 Microsoft 云的自动发现的客户托管 DNS 设置需要进行更新，以在 Exchange Online 阶段 (阶段 5) 完成时引用 Office 365 全局终结点。 <br> 指向 CNAME 的现有 DNS 条目 autodiscover-outlook.office.de 更新为指向 **autodiscover.outlook.com。**
+当前指向德国 Microsoft 云的自动发现的客户托管 DNS 设置需要进行更新，以在 Exchange Online 阶段 (阶段) 完成时引用 Office 365 全局终结点。 <br> 指向 CNAME 的现有 DNS 条目 autodiscover-outlook.office.de 更新为指向 **autodiscover.outlook.com。**
 
 完成迁移阶段 **9** 后不执行这些 DNS 更新的客户在迁移完成后可能会遇到服务问题。
+
+> [!NOTE]
+> 可以忽略"自动发现"条目的自定义域管理中心中的验证错误。 只有在 CNAME 记录更改为新记录后，服务才能 autodiscover.outlook.com。
 
 ### <a name="exchange-online-powershell"></a>Exchange Online PowerShell
 **适用于：** 使用 Exchange Online PowerShell 的 Exchange Online 管理员
@@ -182,29 +183,21 @@ New-PSSession
  其中 `<user_email>` 是用户邮箱的电子邮件 ID 的占位符。 
 
 其他注意事项：
-<!--
-    The statement below is not clear. What does myaccount.microsoft.com mean?
-
-
-- `myaccount.microsoft.com` will only work after the tenant cutover in phase 9. Links will produce "something went wrong" error messages until that time.
--->
 - 访问Outlook Web App环境中共享邮箱的用户 (例如，MCD 环境中的用户访问全局环境中共享邮箱的) 将提示他们第二次进行身份验证。 用户必须先进行身份验证，然后在 中访问其邮箱 `outlook.office.de` ，然后打开 中的共享邮箱 `outlook.office365.com` 。 在访问在其他服务中托管的共享资源时，他们将需要第二次进行身份验证。
 - 对于现有的德国 Microsoft 云客户或转换中的客户，当使用文件 **> 信息 >** 添加帐户将共享邮箱添加到 Outlook 时，查看日历权限可能会失败 (Outlook 客户端尝试使用 Rest API `https://outlook.office.de/api/v2.0/Me/Calendars`) 。 希望添加帐户以查看日历权限的客户可以添加注册表项，如在 [Outlook](https://support.microsoft.com/office/user-experience-changes-for-sharing-a-calendar-in-outlook-5978620a-fe6c-422a-93b2-8f80e488fdec) 中共享日历的用户体验更改中所述，以确保此操作成功。 可以使用组策略在组织范围内部署此注册表项。
+- 使用活动 Exchange 混合配置的所有客户均无法将邮箱从本地 Exchange Server 移动到 Exchange Online，既不能移动到德国 Microsoft 云，也无法将邮箱移动到德国的新数据中心区域。 客户需要确保在阶段 5 之前已完成正在进行的邮箱移动，并且将在完成此阶段后恢复。
 - 确保为设备使用旧版协议 (POP3/IMAP4/SMTP) 的所有用户都准备好在 Exchange 邮箱移动到新的德国数据中心区域后更改其客户端中的终结点，如 [Exchange Online](ms-cloud-germany-transition-add-pre-work.md#exchange-online)的迁移前步骤中所述。
+- 迁移邮箱后，Outlook Web App Skype for Business 会议不再可用。 如有必要，用户必须改为使用 Outlook。
 
 若要详细了解组织在迁移和迁移 Exchange Online 资源后的区别，请查看迁移到新的德国数据中心区域 [Office 365](ms-cloud-germany-transition-experience.md)服务期间客户体验信息。
-
 
 ## <a name="phase-6-exchange-online-protection--security-and-compliance"></a>第 6 阶段：Exchange Online Protection /安全性和合规性
 
 **适用于：** 使用 Exchange Online 的所有客户<br>
 
-后端 Exchange Online Protection (EOP) 功能复制到新区域"Germany"。
+后端 Exchange Online Protection (EOP) 功能复制到新区域"Germany"。 Exchange Online 支持从外部主机到 Office 365 的路由，并且正在迁移其租户详细信息，其中还包括用于安全性和合规性功能的后端服务。
 
-| 步骤 (步骤)  | 描述 | 影响 |
-|:-------|:-------|:-------|
-| Exchange Online 路由的迁移和历史邮件详细信息。 | Exchange Online 支持从外部主机到 Office 365 的路由。 外部 MX 记录将转换为路由到 EOP 服务。 迁移租户配置和历史详细信息。 |<ul><li>Microsoft 管理的 DNS 条目从 Office 365 Germany EOP 更新为 Office 365 服务。</li><li>客户应在 EOP 双写迁移后等待 30 天。 否则，可能会丢失数据。</li></ul>|
-||||
+使用 Exchange Online 功能的客户 (非混合) 无需在此阶段关注。
 
 ### <a name="exchange-online-hybrid-deployments"></a>Exchange Online 混合部署
 **适用于：** 将活动 Exchange 混合配置与本地 Exchange 服务器一同使用的所有客户
@@ -223,19 +216,18 @@ Set-SendConnector -Identity <SendConnectorName> -TlsDomain "mail.protection.outl
 
 **适用于：** 使用 Skype for Business Online 的所有客户
 
-确保你熟悉 Skype for [Business Online](ms-cloud-germany-transition-add-pre-work.md#skype-for-business-online) 迁移过程前期工作。
+查看 [Skype for Business Online](ms-cloud-germany-transition-add-pre-work.md#skype-for-business-online) 迁移的迁移前步骤，并确保你已完成所有步骤。
+在此阶段，Skype for Business 将迁移到 Microsoft Teams。 现有 Skype for Business 客户迁移到欧洲 Office 365 全球服务，然后转换到 Office 365 服务"德国"地区的 Microsoft Teams。
 
-<!--
-    Question from ckinder
-    the PowerShell command seems to be incomplete
--->
+- 用户将无法在迁移日期登录到 Skype for Business。 在迁移前 10 天，客户将在管理中心收到一条消息，通知迁移将何时进行，迁移开始时将再次通知。
+- 迁移策略配置。
+- 用户将被迁移到 Teams，迁移后将无法再访问 Skype for Business。
+- 用户必须已安装 Microsoft Teams 桌面客户端。 安装将在 10 天内通过 Skype for Business 基础结构上的策略进行，但如果失败，用户仍然需要下载客户端或与受支持的浏览器连接。
+- 联系人和会议将迁移到 Microsoft Teams。
+- 在时间服务转换到 Office 365 服务之间，用户将无法登录 Skype for Business，除非客户 DNS 条目已完成。
+- 联系人和现有会议将继续用作 Skype for Business 会议。
 
-| 步骤 (步骤)  | 描述 | 影响 |
-|:-------|:-------|:-------|
-| 将 Skype for Business 迁移到 Teams。 | 现有 Skype for Business 客户迁移到欧洲 Office 365 全球服务，然后转换到 Office 365 服务"德国"地区的 Microsoft Teams。 |<ul><li>用户将无法在迁移日期登录到 Skype for Business。 在迁移前 10 天，我们将向管理中心发布信息，告知你何时进行迁移，以及何时开始迁移。</li><li> 迁移策略配置。 </li><li>用户将被迁移到 Teams，迁移后将不再拥有 Skype for Business。 </li><li>用户必须已安装 Teams 桌面客户端。 安装将在 10 天内通过 Skype for Business 基础结构上的策略进行，但如果失败，用户仍然需要下载客户端或与受支持的浏览器连接。 </li><li>联系人和会议将迁移到 Teams。</li><li>在时间服务转换到 Office 365 服务之间，用户将无法登录 Skype for Business，除非客户 DNS 条目已完成。 </li><li>联系人和现有会议将继续用作 Skype for Business 会议。 </li></ul>|
-||||
-
-如果迁移阶段 9 完成后，你必须使用 PowerShell 连接到 Skype for Business Online，请使用以下代码进行连接：
+如果迁移阶段 9 完成后，你必须使用 PowerShell 连接到 Skype for Business Online，请使用以下 PowerShell 代码进行连接：
 
 ```powershell
 Import-Module MicrosoftTeams
@@ -251,7 +243,7 @@ Connect-MicrosoftTeams -Credential $userCredential -OverridePowershellUri "https
 
 使用 Dynamics 365 的客户需要额外的参与，以独立迁移组织的 Dynamics 组织。
 
-| 步骤 (步骤)  | 描述 | 影响 |
+| 步骤 (步骤)  | 说明 | 影响 |
 |:-------|:-------|:-------|
 | Microsoft Dynamics 资源 | 使用 Microsoft Dynamics 的客户将参与 Microsoft 工程或 Microsoft FastTrack，以将 Microsoft Dynamics 365 转换到 Office 365 全局服务实例。* |<ul><li>迁移后，管理员验证组织。 <</li><li>管理员在必要时修改工作流。 </li><li>管理员会在适当时清除 AdminOnly 模式。</li><li>管理员根据情况从 _沙_ 盒更改组织类型</li><li>通知最终用户新 URL 以访问组织 (实例) 。</li><li>将任何入站连接更新到新的终结点 URL。 </li><li>在转换期间，用户无法使用 Dynamics 服务。 </li><li>用户需要在每个组织迁移后验证组织运行状况和功能。</li></ul>|
 ||||
@@ -262,7 +254,7 @@ Connect-MicrosoftTeams -Credential $userCredential -OverridePowershellUri "https
 
 **适用于：** 所有使用 Microsoft Power BI (PBI) 
 
-| 步骤 (步骤)  | 描述 | 影响 |
+| 步骤 (步骤)  | 说明 | 影响 |
 |:-------|:-------|:-------|
 | Power BI 资源的迁移 | 使用 Microsoft Power BI (PBI) 的客户将在手动触发现有 PBI 迁移工具以将 Power BI 转换为 Office 365 全局服务实例后，由 Microsoft 工程或 Microsoft FastTrack 参与。\*\* |<ul><li>以下 Power BI 项目 _不会_ 转换，必须重新创建：<</li><li>实时数据集 (，例如流式处理或推送) 。 </li><li>Power BI 本地数据网关配置和数据源。 </li><li>基于实时数据集构建的报告在迁移后将不可用，并且需要重新创建。 </li><li>Power BI 服务在转换期间将不可用。 服务的不可用时间不应超过 24 小时。</li><li>迁移后，用户需要使用 Power BI 服务重新配置数据源及其本地数据网关。  在执行此操作之前，用户将无法使用这些数据源来针对这些数据源执行计划刷新和/或直接查询。 </li><li>无法迁移容量和高级工作区。 客户需要在迁移之前删除所有容量，在迁移后重新创建它们。 将工作区移回所需的容量。</li></ul>  |
 ||||
@@ -279,7 +271,7 @@ Connect-MicrosoftTeams -Credential $userCredential -OverridePowershellUri "https
 
 确保您已完成移动设备 [的前期工作](ms-cloud-germany-transition-add-pre-work.md#mobile-device-management) 过程。
 
-| 步骤 (步骤)  | 描述 | 影响 |
+| 步骤 (步骤)  | 说明 | 影响 |
 |:-------|:-------|:-------|
 | 客户端、Office Online 和 Office 客户端切换期间，Azure AD 将完成租户范围以指向 Office 365 服务。 | 此配置更改允许 Office 客户端更新并指向 Office 365 服务终结点。 | <ul><li>通知用户关闭 _所有_ Office 应用，然后重新登录 (或强制客户端重新启动，并强制用户登录) 以使 Office 客户端能够选取更改。 </li><li>通知用户和技术支持人员，用户可能会看到一个 Office 横幅，提示他们在转换后 72 小时内重新激活 Office 应用。 </li><li>个人计算机上的所有 Office 应用程序都必须关闭，用户必须注销然后重新登录。 在黄色激活栏中，登录以重新激活 Office 365 服务。</li><li>共享计算机需要类似于个人计算机的操作，并且不需要特殊过程。 </li><li>在移动设备上，用户必须注销应用，关闭它们，然后重新登录。</li></ul>|
 ||||
@@ -294,13 +286,21 @@ Connect-MicrosoftTeams -Credential $userCredential -OverridePowershellUri "https
 
 **适用于：** 所有客户
 
-当 Office 365 租户完成迁移的最后步骤 [Azure AD 最终完成 (第 9) 阶段]时，所有服务将转换到全球。 任何应用程序或用户都不应针对任何 Microsoft 云德国终结点访问租户的资源。 自动完成 30 天后，Microsoft 云德国 Azure AD 服务将自动停止对已转换租户的终结点访问。 从此时开始，针对德国 Microsoft 云服务的终结点请求（如身份验证）将失败。 
+当 Office 365 租户完成 Azure AD 最终完成 (第 9 (阶段 9) ) 所有服务将过渡到全球。 任何应用程序或用户都不应针对任何 Microsoft 云德国终结点访问租户的资源。 自动完成 30 天后，Microsoft 云德国 Azure AD 服务将自动停止对已转换租户的终结点访问。 从此时开始，针对德国 Microsoft 云服务的终结点请求（如身份验证）将失败。 
 
-| 步骤 (步骤)  | 描述 | 影响 |
+| 步骤 (步骤)  | 说明 | 影响 |
 |:-------|:-------|:-------|
 | 更新用户终结点 | 确保所有用户使用正确的 Microsoft 全球终结点访问服务 |迁移完成 30 天后，德国 Microsoft 云终结点将停止处理请求;客户端或应用程序流量将失败。  |
 | 更新 Azure AD 应用程序终结点 | 必须将应用程序的身份验证、Azure Active Directory (Azure AD) Graph 和 MS Graph 终结点更新为 Microsoft Worldwide 服务的终结点。 | 迁移完成 30 天后，德国 Microsoft 云终结点将停止处理请求;客户端或应用程序流量将失败。 |
 ||||
+
+### <a name="azure-ad-connect"></a>Azure AD Connect
+**适用于：** 所有客户使用 Azure AD 连接同步标识
+
+| 步骤 (步骤)  | 说明 | 影响 |
+|:-------|:-------|:-------|
+| 更新 Azure AD Connect。 | 完成到 Azure AD 的剪切后，组织将完全使用 Office 365 服务，并且不再连接到德国 Microsoft 云。 此时，客户需要确保增量同步过程已完成，此后，在注册表路径 中将字符串值从 3 (Microsoft 云德国) 更改为 `AzureInstance` `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Azure AD Connect` 0。 | 更改 注册表 `AzureInstance` 项 的值。 如果不这样做，将导致在 Microsoft 云德国终结点不再可用后对象无法同步。 |
+|||||
 
 ## <a name="post-migration"></a>迁移后
 
