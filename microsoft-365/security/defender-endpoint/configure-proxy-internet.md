@@ -1,6 +1,6 @@
 ---
 title: 配置设备代理和 Internet 连接设置
-description: 配置 Microsoft Defender ATP 代理和 Internet 设置以启用与云服务的通信。
+description: 配置 Microsoft Defender for Endpoint 代理和 Internet 设置以启用与云服务的通信。
 keywords: 配置， 代理， Internet， Internet 连接， 设置， 代理设置， netsh， winhttp， 代理服务器
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 97d1d50e2557cbb760248738b1f096614873958f
-ms.sourcegitcommit: 437bdbf3f99610869811e80432a59b5f244f7a87
+ms.openlocfilehash: ebfff7721bc61012811a66146079ac9758889594
+ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/08/2021
-ms.locfileid: "51644700"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51893597"
 ---
 # <a name="configure-device-proxy-and-internet-connectivity-settings"></a>配置设备代理和 Internet 连接设置
 
@@ -122,7 +122,7 @@ netsh winhttp reset proxy
 以下可下载的电子表格列出了网络必须能够连接到的服务及其关联 URL。 应确保没有拒绝访问这些 URL 的防火墙或网络筛选规则，或者您可能需要专门为它们创建允许规则。 
 
 
-|**域列表电子表格**|**Description**|
+|**域列表电子表格**|**说明**|
 |:-----|:-----|
 |![适用于终结点 URL 电子表格的 Microsoft Defender 缩略图](images/mdatp-urls.png)<br/>  | 服务位置、地理位置和操作系统的特定 DNS 记录的电子表格。 <br><br>[在此处下载电子表格。](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx) 
 
@@ -178,7 +178,7 @@ netsh winhttp reset proxy
 > [!NOTE]
 > 如果通过 Azure 安全中心和 ASC (载入) ，可能使用多个工作区。 你需要在每个工作区 (的已载入计算机上执行上述 TestCloudConnection.exe 过程，以确定工作区和工作区之间的 *.blob.core.windows.net URL) 。
 
-## <a name="verify-client-connectivity-to-microsoft-defender-atp-service-urls"></a>验证客户端与 Microsoft Defender ATP 服务 URL 的连接
+## <a name="verify-client-connectivity-to-microsoft-defender-for-endpoint-service-urls"></a>验证与 Microsoft Defender for Endpoint 服务 URL 的客户端连接
 
 验证代理配置是否成功完成，WinHTTP 是否可以在你的环境中发现代理服务器并通过代理服务器进行通信，以及代理服务器是否允许到 Defender for Endpoint 服务 URL 的通信。
 

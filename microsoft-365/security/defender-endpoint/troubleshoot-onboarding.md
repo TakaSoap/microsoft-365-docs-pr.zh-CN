@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: 4f3b2b54370e3481699a540dd8fd2acc30be7514
-ms.sourcegitcommit: 4acf613587128cae27e0fd470d1216b509775529
+ms.openlocfilehash: 84caa39b44a4e0706b1fe4a103d8a8a14c52daed
+ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/15/2021
-ms.locfileid: "51768874"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51892947"
 ---
 # <a name="troubleshoot-microsoft-defender-for-endpoint-onboarding-issues"></a>Microsoft Defender 终结点载入问题疑难解答
 
@@ -136,7 +136,7 @@ ms.locfileid: "51768874"
 
 ID | Severity | 事件描述 | 故障排除步骤
 :---|:---|:---|:---
-1819 | 错误 | 适用于终结点 CSP 的 Microsoft Defender：未能设置节点的值。 NodeId： (%1) ，TokenName： (%2) ，结果： (%3) 。 | 下载 [Windows 10 1607 累积更新](https://go.microsoft.com/fwlink/?linkid=829760)。
+1819 | Error | 适用于终结点 CSP 的 Microsoft Defender：未能设置节点的值。 NodeId： (%1) ，TokenName： (%2) ，结果： (%3) 。 | 下载 [Windows 10 1607 累积更新](https://go.microsoft.com/fwlink/?linkid=829760)。
 
 ## <a name="troubleshoot-onboarding-issues-on-the-device"></a>解决设备上载入问题
 
@@ -255,7 +255,7 @@ Window Defender ATP 传感器需要 Microsoft Windows HTTP (WinHTTP) 报告传�
 
 WinHTTP 独立于 Internet 浏览代理设置和其他用户上下文应用程序，必须能够检测特定环境中可用的代理服务器。
 
-若要确保传感器具有服务连接，请按照验证客户端与 Microsoft [Defender for Endpoint 服务 URL](configure-proxy-internet.md#verify-client-connectivity-to-microsoft-defender-atp-service-urls) 的连接主题中所述的步骤操作。
+若要确保传感器具有服务连接，请按照验证客户端与 Microsoft [Defender for Endpoint 服务 URL](configure-proxy-internet.md#verify-client-connectivity-to-microsoft-defender-for-endpoint-service-urls) 的连接主题中所述的步骤操作。
 
 如果验证失败，并且您的环境正在使用代理连接到 Internet，请按照配置代理和 Internet 连接设置主题 [中所述](configure-proxy-internet.md) 的步骤操作。
 

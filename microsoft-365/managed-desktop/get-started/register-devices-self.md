@@ -11,12 +11,12 @@ ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 4de1d173a26005d32fb07117d93ee78582b77d54
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: b2976fc643eb433039d9595bc8e9632fd8cb60ea
+ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51689205"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51893469"
 ---
 # <a name="register-new-devices-yourself"></a>自行注册新设备
 
@@ -77,7 +77,7 @@ Microsoft 托管桌面通过引用其硬件哈希来唯一标识每台设备。 
 `Import-CSV -Path (Get-ChildItem -Filter *.csv) | ConvertTo-Csv -NoTypeInformation | % {$_.Replace('"', '')} | Out-File .\aggregatedDevices.csv`
 
 
-#### <a name="register-devices-by-using-the-admin-portal"></a>使用管理门户注册设备
+### <a name="register-devices-by-using-the-admin-portal"></a>使用管理门户注册设备
 
 在[Microsoft Endpoint Manager](https://endpoint.microsoft.com/)中，选择左侧导航窗格中的"设备"。  查找菜单的"Microsoft 托管桌面"部分，然后选择"**设备"。** 在 Microsoft 托管桌面设备工作区中，选择 **+ 注册设备**，这将打开一个飞入以注册新设备。
 

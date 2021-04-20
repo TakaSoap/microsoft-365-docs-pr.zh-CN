@@ -14,12 +14,12 @@ ms.custom: nextgen
 ms.reviewer: tewchen, pahuijbr, shwjha
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 131b9970572b1034ba5c9907a001f0497d450339
-ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
+ms.openlocfilehash: 8e179135f12ad6f4ea765eaf975a40534446b51f
+ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51765439"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51893385"
 ---
 # <a name="microsoft-defender-antivirus-compatibility"></a>Microsoft Defender 防病毒兼容性
 
@@ -45,14 +45,14 @@ Microsoft Defender 防病毒将自动启用，并安装在运行 Windows 10 的�
 |------|------|-------|-------|
 | Windows 10  | Microsoft 不提供或开发的第三方产品 | 是  | 被动模式  |
 | Windows 10  | Microsoft 不提供或开发的第三方产品 | 否   | 自动禁用模式     |
-| Windows 10  | Microsoft Defender 防病毒 | 是  | 活动模式 | 
-| Windows 10  | Microsoft Defender 防病毒 | 否   | 活动模式 |
+| Windows 10  | Microsoft Defender 防病毒软件 | 是  | 活动模式 | 
+| Windows 10  | Microsoft Defender 防病毒软件 | 否   | 活动模式 |
 | Windows Server 版本 1803 或更高版本，或 Windows Server 2019 | Microsoft 不提供或开发的第三方产品 | 是  | 必须设置为被动模式， (手动) <sup> [[1](#fn1)]<sup>  | 
 | Windows Server 版本 1803 或更高版本，或 Windows Server 2019 | Microsoft 不提供或开发的第三方产品 | 否  | 必须禁用 (手动) <sup> [[2](#fn2)]<sup></sup>  |
-| Windows Server 版本 1803 或更高版本，或 Windows Server 2019 | Microsoft Defender 防病毒  | 是 |         活动模式  |
-| Windows Server 版本 1803 或更高版本，或 Windows Server 2019 | Microsoft Defender 防病毒 | 否  | 活动模式 |
-| Windows Server 2016 | Microsoft Defender 防病毒 | 是 | 活动模式 |
-| Windows Server 2016 | Microsoft Defender 防病毒 | 否 | 活动模式 |
+| Windows Server 版本 1803 或更高版本，或 Windows Server 2019 | Microsoft Defender 防病毒软件  | 是 |         活动模式  |
+| Windows Server 版本 1803 或更高版本，或 Windows Server 2019 | Microsoft Defender 防病毒软件 | 否  | 活动模式 |
+| Windows Server 2016 | Microsoft Defender 防病毒软件 | 是 | 活动模式 |
+| Windows Server 2016 | Microsoft Defender 防病毒软件 | 否 | 活动模式 |
 | Windows Server 2016 | Microsoft 不提供或开发的第三方产品 | 是 | 必须禁用 (手动) <sup> [[2](#fn2)]<sup> |
 | Windows Server 2016 | Microsoft 不提供或开发的第三方产品 | 否 | 必须禁用 (手动) <sup> [[2](#fn2)]<sup> |
 
@@ -60,7 +60,7 @@ Microsoft Defender 防病毒将自动启用，并安装在运行 Windows 10 的�
 
 如果你使用的是 Windows Server 版本 1803 或更高版本或 Windows Server 2019，可以通过设置以下注册表项将 Microsoft Defender 防病毒设置为被动模式：
 - 路径： `HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection`
-- 名称：`ForcePassiveMode`
+- 名称：`ForceDefenderPassiveMode`
 - 类型： `REG_DWORD`
 - 值：`1`
 

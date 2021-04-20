@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 85dd6b50280f54b9d39bbb134e466171fc6268ff
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: f3042ef9ced11ebc5439308d2781528d5267975f
+ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51166145"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51893609"
 ---
 # <a name="onboard-windows-10-devices-using-mobile-device-management-tools"></a>使用移动设备管理工具载入 Windows 10 设备
 
@@ -37,7 +37,7 @@ ms.locfileid: "51166145"
 
 有关使用 Defender for Endpoint CSP 有关详细信息，请参阅 [WindowsAdvancedThreatProtection CSP](https://msdn.microsoft.com/library/windows/hardware/mt723296(v=vs.85).aspx) 和 [WindowsAdvancedThreatProtection DDF 文件](https://msdn.microsoft.com/library/windows/hardware/mt723297(v=vs.85).aspx)。
 
-## <a name="before-you-begin"></a>准备工作
+## <a name="before-you-begin"></a>开始之前
 如果你使用的是 Microsoft Intune，则必须注册设备 MDM。 否则，设置将不会成功应用。 
 
 有关使用 Microsoft Intune 启用 MDM 的信息，请参阅 Microsoft [Intune (设备) 。 ](https://docs.microsoft.com/mem/intune/enrollment/device-enrollment)
@@ -62,7 +62,7 @@ ms.locfileid: "51166145"
 > 载入设备后，你可以选择运行检测测试，以验证设备是否正确载入到服务。 有关详细信息，请参阅对新载入的 [Microsoft Defender for Endpoint](run-detection-test.md)设备运行检测测试。
 
 
-请查看 [PDF 或](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf)  [Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.vsdx) 以查看部署 Microsoft Defender ATP 的各种路径。 
+请查看 [PDF 或](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf)  [Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.vsdx) 以查看部署 Microsoft Defender for Endpoint 的各种路径。
 
 ## <a name="offboard-and-monitor-devices-using-mobile-device-management-tools"></a>使用移动设备管理工具离开并监视设备
 出于安全考虑，用于"载出"设备的程序包将在下载日期 30 天后过期。 发送到设备的过期载出包将被拒绝。 下载载出包时，你将收到程序包到期日期的通知，该日期也将包含在程序包名称中。
@@ -101,6 +101,6 @@ ms.locfileid: "51166145"
 - [使用组策略载入 Windows 10 设备](configure-endpoints-gp.md)
 - [使用 Microsoft Endpoint Configuration Manager 载入 Windows 10 设备](configure-endpoints-sccm.md)
 - [使用本地脚本载入 Windows 10 设备](configure-endpoints-script.md)
-- [载入非持久性虚拟桌面基础结构 (VDI) 设备。](configure-endpoints-vdi.md)
+- [载入非永久虚拟桌面基础结构 （VDI） 设备](configure-endpoints-vdi.md)
 - [在新载入的 Microsoft Defender 终结点设备上运行检测测试](run-detection-test.md)
 - [Microsoft Defender 终结点载入问题疑难解答](troubleshoot-onboarding.md)

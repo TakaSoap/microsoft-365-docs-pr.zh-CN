@@ -13,12 +13,12 @@ ms.author: deniseb
 ms.reviewer: pahuijbr, shwjha
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: d9452b6d2eeaad3880894b9ec66c8bc71797b429
-ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
+ms.openlocfilehash: 50e6f9b16dbc633e75e86acdc54ac43580107ae3
+ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51764599"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51893373"
 ---
 # <a name="microsoft-defender-antivirus-on-windows-server"></a>Windows Server 上的 Microsoft Defender 防病毒软件
 
@@ -160,7 +160,7 @@ sc query Windefend
 
 若要启用自动示例提交，请以管理员Windows PowerShell启动示例提交控制台，然后根据以下设置之一设置 **SubmitSamplesConsent** 值数据：
 
-|设置  |说明  |
+|Setting  |说明  |
 |---------|---------|
 |**0**  - **始终提示**     |Microsoft Defender 防病毒服务会提示你确认提交所有必需文件。 这是 Microsoft Defender 防病毒的默认设置，但不建议在没有 GUI 的情况下在 Windows Server 2016 或 2019 上安装。         |
 |**1**   - **自动发送安全示例**     |Microsoft Defender 防病毒服务发送标记为"安全"的所有文件，并提示输入其余文件。         |
@@ -181,7 +181,7 @@ sc query Windefend
 
 如果你使用的是 Windows Server 版本 1803 或 Windows Server 2019，可以通过设置以下注册表项将 Microsoft Defender 防病毒设置为被动模式：
 - 路径： `HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection`
-- 名称：`ForcePassiveMode`
+- 名称：`ForceDefenderPassiveMode`
 - 类型： `REG_DWORD`
 - 值：`1`
 

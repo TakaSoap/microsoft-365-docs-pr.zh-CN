@@ -1,5 +1,5 @@
 ---
-title: 在 Microsoft Defender ATP 中配置条件访问
+title: 在 Microsoft Defender for Endpoint 中配置条件访问
 description: 了解在 Intune、Microsoft Defender 安全中心和 Azure 中实现条件访问需要执行的步骤
 keywords: 条件访问， 条件， 访问， 设备风险， 风险级别， 集成， intune 集成
 search.product: eADQiWindows 10XVcnh
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 0185d7875ac149909ef088d041383a1cf36a8a3a
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 482f86d4a0a181b72a0a33eeb1a857dce0664584
+ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51165857"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51893645"
 ---
 # <a name="configure-conditional-access-in-microsoft-defender-for-endpoint"></a>在 Microsoft Defender for Endpoint 中配置条件访问
 
@@ -35,7 +35,7 @@ ms.locfileid: "51165857"
 
 本节指导您完成正确实现条件访问需要执行的所有步骤。
 
-### <a name="before-you-begin"></a>准备工作
+### <a name="before-you-begin"></a>开始之前
 >[!WARNING]
 >需要注意的是，此方案不支持已注册 Azure AD 的设备。</br>
 >仅支持 Intune 注册的设备。
@@ -79,7 +79,7 @@ ms.locfileid: "51165857"
 1. 登录到 [Azure 门户](https://portal.azure.com)。
 2. 选择 **设备合规性**  >  **Microsoft Defender ATP**。
 3. 将 **"将 Windows 10.0.15063+ 设备连接到 Microsoft Defender 高级威胁防护**"设置为 **"开"。**
-4. 单击“**保存**”。
+4. 单击“保存”。
 
 
 ### <a name="step-3-create-the-compliance-policy-in-intune"></a>步骤 3：在 Intune 中创建合规性策略

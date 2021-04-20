@@ -1,7 +1,7 @@
 ---
 title: 阻止模式下的终结点检测和响应
 description: 了解阻止模式下的终结点检测和响应
-keywords: Microsoft Defender ATP， mde， EDR in block mode， passive mode blocking
+keywords: Microsoft Defender for Endpoint， mde， EDR in block mode， passive mode blocking
 search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
 author: denisebmsft
@@ -20,12 +20,12 @@ ms.collection:
 - m365-security-compliance
 - m365initiative-defender-endpoint
 ms.technology: mde
-ms.openlocfilehash: e492d57d8a7e10a1fff57980408ed8234bbeead0
-ms.sourcegitcommit: 987f70e44e406ab6b1dd35f336a9d0c228032794
+ms.openlocfilehash: a2fbb8f1b48dacb27468f8f088f5000da9fcb3b9
+ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/05/2021
-ms.locfileid: "51587199"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51893561"
 ---
 # <a name="endpoint-detection-and-response-edr-in-block-mode"></a>在阻止模式下， (EDR) 终结点检测和响应
 
@@ -78,8 +78,8 @@ ms.locfileid: "51587199"
 |权限 |在 Azure Active Directory 中分配的全局管理员或 [安全管理员角色](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-users-assign-role-azure-portal)。 请参阅 [基本权限](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/basic-permissions)。 |
 |操作系统     |以下版本之一： <br/>- Windows 10 (所有版本)  <br/>- Windows Server 版本 1803 或更高版本 <br/>- Windows Server 2019         |
 |Windows E5 注册     |Windows E5 包含在以下订阅中： <br/>- Microsoft 365 E5 <br/>- Microsoft 365 E3 以及 Identity &威胁防护产品 <br/><br/>请参阅[每个](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-overview?view=o365-worldwide&preserve-view=true#components)[计划的组件和功能](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans)。       |
-|Microsoft Defender 防病毒  |必须在主动模式或被动模式下安装并运行 Microsoft Defender 防病毒。  (可以将 Microsoft Defender 防病毒与非 Microsoft 防病毒解决方案一同使用。) 确认 Microsoft Defender 防病毒 [处于主动或被动模式](#how-do-i-confirm-microsoft-defender-antivirus-is-in-active-or-passive-mode)。 |
-|云保护 |确保配置了 Microsoft Defender 防病毒，以启用 [云保护](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus)。 |
+|Microsoft Defender 防病毒软件  |必须在主动模式或被动模式下安装并运行 Microsoft Defender 防病毒。  (可以将 Microsoft Defender 防病毒与非 Microsoft 防病毒解决方案一同使用。) 确认 Microsoft Defender 防病毒 [处于主动或被动模式](#how-do-i-confirm-microsoft-defender-antivirus-is-in-active-or-passive-mode)。 |
+|云端保护 |确保配置了 Microsoft Defender 防病毒，以启用 [云保护](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus)。 |
 |Microsoft Defender 防病毒反恶意软件客户端 |确保你的客户端是最新的。 使用 PowerShell 以管理员角色运行 [Get-MpComputerStatus](https://docs.microsoft.com/powershell/module/defender/get-mpcomputerstatus?view=win10-ps&preserve-view=true) cmdlet。 在 **AMProductVersion** 行中，应该会看到 **4.18.2001.10** 或更上方。 |
 |Microsoft Defender 防病毒引擎 |确保你的引擎是最新的。 使用 PowerShell 以管理员角色运行 [Get-MpComputerStatus](https://docs.microsoft.com/powershell/module/defender/get-mpcomputerstatus?view=win10-ps&preserve-view=true) cmdlet。 在 **AMEngineVersion** 行中，应该会看到 **1.1.16700.2** 或更上方。 |
 
@@ -140,5 +140,5 @@ ms.locfileid: "51587199"
 
 - [技术社区博客：在阻止模式下引入 EDR：停止其跟踪中的攻击](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/introducing-edr-in-block-mode-stopping-attacks-in-their-tracks/ba-p/1596617)
 - [行为阻止和控制](behavioral-blocking-containment.md)
-- [更好地结合：Microsoft Defender 防病毒和 Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/why-use-microsoft-antivirus)
+- [更好地结合：Microsoft Defender 防病毒软件和 Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/why-use-microsoft-antivirus)
 

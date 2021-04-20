@@ -1,7 +1,7 @@
 ---
-title: Microsoft Defender ATP 中的已连接应用程序
+title: Microsoft Defender for Endpoint 中的已连接应用程序
 ms.reviewer: ''
-description: 查看使用标准 OAuth 2.0 协议进行身份验证并提供用于 Microsoft Defender ATP API 的令牌的已连接合作伙伴应用程序。
+description: 查看使用标准 OAuth 2.0 协议进行身份验证并提供用于 Microsoft Defender for Endpoint API 的令牌的已连接合作伙伴应用程序。
 keywords: partners， applications， third-party， connections， sentinelone， lookout， bitdefender， corrata， morphisec， paloalto， ziften， better mobile
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 294d6cfa5f8bf6b883c37e527cb492e8d65fc94c
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 26c531c0544f92d664bfa0f1a21e4f33a0765d24
+ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51163595"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51893493"
 ---
 # <a name="connected-applications-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint 中的已连接应用程序
 

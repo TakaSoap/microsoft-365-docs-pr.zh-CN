@@ -1,7 +1,7 @@
 ---
 title: 在 Microsoft Defender for Endpoint 中配置警报通知
 description: 可以使用 Microsoft Defender for Endpoint 根据严重性和其他条件配置安全警报的电子邮件通知设置。
-keywords: 电子邮件通知， 配置警报通知， microsoft defender atp 通知， microsoft defender atp 警报， windows 10 企业版， windows 10 教育版
+keywords: 电子邮件通知， 配置警报通知， microsoft defender for endpoint， microsoft defender for endpoint notifications， microsoft defender for endpoint alerts， windows 10 enterprise， windows 10 education
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: d5a19464b9d5d1b9659d7bfae2d853f7a640a00b
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: b629d6a90931026ce28ce241e74d490ce67c6962
+ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51687885"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51893621"
 ---
 # <a name="configure-alert-notifications-in-microsoft-defender-for-endpoint"></a>在 Microsoft Defender for Endpoint 中配置警报通知
 
@@ -69,7 +69,7 @@ ms.locfileid: "51687885"
 
 4. 单击"下一步"。
     
-5. 输入收件人的电子邮件地址，然后单击"**添加收件人"。** 可以添加多个电子邮件地址。
+5. 输入收件人的电子邮件地址，然后单击"**添加收件人"。** 可添加多个电子邮件地址。
 
 6. 选中"发送测试电子邮件"，检查电子邮件收件人是否 **可接收电子邮件通知**。
 

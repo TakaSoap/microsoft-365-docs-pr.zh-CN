@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 02/07/2020
 ms.technology: mde
-ms.openlocfilehash: b477f302855cb5d4b00e0502bcfa9aa3aeb6b5c2
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 3550bec28945ab888efbe2ca46f12ca7f96aab4a
+ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51165569"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51892859"
 ---
 # <a name="onboard-windows-10-devices-using-configuration-manager"></a>使用 Configuration Manager 载入 Windows 10 设备
 
@@ -160,7 +160,7 @@ Value: 0 or 1
 在审核或阻止模式下启用网络保护之前，请确保你已安装反恶意软件平台更新，该更新可以从支持 [页面获取](https://support.microsoft.com/en-us/help/4560203/windows-defender-anti-malware-platform-binaries-are-missing)。
 
 
-**受控文件夹访问权限**<br>
+**受控文件夹访问**<br>
 在审核模式下启用该功能至少 30 天。 在此时间段后，检查检测并创建允许写入受保护目录的应用程序列表。
 
 有关详细信息，请参阅评估 [受控文件夹访问权限](evaluate-controlled-folder-access.md)。
@@ -223,7 +223,7 @@ Value: 0 or 1
 
     ![显示成功部署（无错误）的 Configuration Manager](images/sccm-deployment.png)
 
-### <a name="check-that-the-devices-are-compliant-with-the-microsoft-defender-atp-service"></a>检查设备是否符合 Microsoft Defender ATP 服务
+### <a name="check-that-the-devices-are-compliant-with-the-microsoft-defender-for-endpoint-service"></a>检查设备是否符合 Microsoft Defender for Endpoint 服务
 
 可以在 R2 Configuration Manager 中为配置项设置System Center 2012规则，以监视部署。
 
@@ -243,6 +243,6 @@ Value: "1"
 - [使用组策略载入 Windows 10 设备](configure-endpoints-gp.md)
 - [使用移动设备管理工具载入 Windows 10 设备](configure-endpoints-mdm.md)
 - [使用本地脚本载入 Windows 10 设备](configure-endpoints-script.md)
-- [载入非持久性虚拟桌面基础结构 (VDI) 设备。](configure-endpoints-vdi.md)
-- [在新载入的 Microsoft Defender ATP 设备上运行检测测试](run-detection-test.md)
+- [载入非永久虚拟桌面基础结构 （VDI） 设备](configure-endpoints-vdi.md)
+- [在新载入的 Microsoft Defender 终结点设备上运行检测测试](run-detection-test.md)
 - [Microsoft Defender 终结点载入问题疑难解答](troubleshoot-onboarding.md)

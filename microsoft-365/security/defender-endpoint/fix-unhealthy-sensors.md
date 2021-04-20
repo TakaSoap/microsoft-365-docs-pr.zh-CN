@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 11/06/2020
 ms.technology: mde
-ms.openlocfilehash: a24dc4ef23d32b19de9d2871b7d87aae90d05828
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 3a26951a796d72237f992e520e1b793654e467e3
+ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51055817"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51893397"
 ---
 # <a name="fix-unhealthy-sensors-in-microsoft-defender-for-endpoint"></a>修复 Microsoft Defender for Endpoint 中的不正常传感器
 
@@ -36,7 +36,7 @@ ms.locfileid: "51055817"
 
 分类为错误配置或非活动的设备可能由于各种原因被标记。 本节提供了一些说明，说明可能导致设备被分类为非活动或错误配置的原因。
 
-## <a name="inactive-devices"></a>非活动设备
+## <a name="inactive-devices"></a>非活跃设备
 
 非活动设备不一定由于问题而标记。 在设备上采取的以下操作可能导致设备被分类为非活动状态：
 
@@ -55,7 +55,7 @@ ms.locfileid: "51055817"
 
 你是否希望设备的状态为"活动"？ [打开支持票证](https://support.microsoft.com/getsupport?wf=0&tenant=ClassicCommercial&oaspworkflow=start_1.0.0.0&locale=en-us&supportregion=en-us&pesid=16055&ccsid=636206786382823561)。
 
-## <a name="misconfigured-devices"></a>错误配置的设备
+## <a name="misconfigured-devices"></a>配置错误的设备
 可以将错误配置的设备进一步分类为：
 - 通信受损
 - 无传感器数据
@@ -68,7 +68,7 @@ ms.locfileid: "51055817"
 - [确保设备具有 Internet 连接](troubleshoot-onboarding.md#troubleshoot-onboarding-issues-on-the-device)</br>
   Window Defender ATP 传感器需要 Microsoft Windows HTTP (WinHTTP) 报告传感器数据并与 Microsoft Defender for Endpoint 服务通信。
 
-- [验证与 Microsoft Defender for Endpoint 服务 URL 的客户端连接](configure-proxy-internet.md#verify-client-connectivity-to-microsoft-defender-atp-service-urls)</br>
+- [验证与 Microsoft Defender for Endpoint 服务 URL 的客户端连接](configure-proxy-internet.md#verify-client-connectivity-to-microsoft-defender-for-endpoint-service-urls)</br>
   验证代理配置是否成功完成，WinHTTP 能否发现并通过您环境中代理服务器进行通信，以及代理服务器是否允许流量到 Microsoft Defender for Endpoint 服务 URL。
 
 如果采取更正操作，但设备状态仍配置错误， [请打开支持票证](https://go.microsoft.com/fwlink/?LinkID=761093&clcid=0x409)。
@@ -80,7 +80,7 @@ ms.locfileid: "51055817"
 - [确保设备具有 Internet 连接](troubleshoot-onboarding.md#troubleshoot-onboarding-issues-on-the-device)</br>
   Window Defender ATP 传感器需要 Microsoft Windows HTTP (WinHTTP) 报告传感器数据并与 Microsoft Defender for Endpoint 服务通信。
 
-- [验证与 Microsoft Defender for Endpoint 服务 URL 的客户端连接](configure-proxy-internet.md#verify-client-connectivity-to-microsoft-defender-atp-service-urls)</br>
+- [验证与 Microsoft Defender for Endpoint 服务 URL 的客户端连接](configure-proxy-internet.md#verify-client-connectivity-to-microsoft-defender-for-endpoint-service-urls)</br>
   验证代理配置是否成功完成，WinHTTP 能否发现并通过您环境中代理服务器进行通信，以及代理服务器是否允许流量到 Microsoft Defender for Endpoint 服务 URL。
 
 - [确保诊断数据服务已启用](troubleshoot-onboarding.md#ensure-the-diagnostics-service-is-enabled)</br>

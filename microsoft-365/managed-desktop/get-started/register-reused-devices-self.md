@@ -11,12 +11,12 @@ ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: f2b3e109493331a4b63d669501525a48cb996809
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 21b0062a337dbeb3c7dec8b715971dbbc4917db1
+ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51689217"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51893271"
 ---
 # <a name="register-existing-devices-yourself"></a>自行注册现有设备
 
@@ -136,7 +136,7 @@ Import-CSV -Path (Get-ChildItem -Filter *.csv) | ConvertTo-Csv -NoTypeInformatio
 将哈希数据合并到一个 CSV 文件中后，现在可以继续 [注册设备](#register-devices-by-using-the-admin-portal)。
 
 
-#### <a name="register-devices-by-using-the-admin-portal"></a>使用管理门户注册设备
+## <a name="register-devices-by-using-the-admin-portal"></a>使用管理门户注册设备
 
 在[Microsoft Endpoint Manager](https://endpoint.microsoft.com/)中，选择左侧导航窗格中的"设备"。  查找菜单的"Microsoft 托管桌面"部分，然后选择"**设备"。** 在 Microsoft 托管桌面设备工作区中，选择 **+ 注册设备**，这将打开一个飞入以注册新设备。
 
@@ -165,7 +165,7 @@ Import-CSV -Path (Get-ChildItem -Filter *.csv) | ConvertTo-Csv -NoTypeInformatio
 | 活动 | 设备已传递给用户，并且他们已在租户中注册。 这还指示他们定期使用设备。 |
 | 非活动 | 设备已传递给用户，并且他们已在租户中注册。 但是，他们在最近 7 天内 (使用过该设备) 。  | 
 
-#### <a name="troubleshooting-device-registration"></a>设备注册疑难解答
+### <a name="troubleshooting-device-registration"></a>设备注册疑难解答
 
 | 错误消息 | 详细信息 |
 |---------------|-------------|
@@ -175,13 +175,13 @@ Import-CSV -Path (Get-ChildItem -Filter *.csv) | ConvertTo-Csv -NoTypeInformatio
 | 由另一个组织声明的设备 | 此设备已被另一个组织声明。 请与设备供应商联系。 |
 | 意外错误 | 您的请求无法自动处理。 联系支持人员并提供请求 ID： <requestId> |
 
-### <a name="check-the-image"></a>检查图像
+## <a name="check-the-image"></a>检查图像
 
 如果你的设备来自 Microsoft 托管桌面合作伙伴供应商，则映像应该正确。
 
 如果愿意，也欢迎您自行应用该图像。 To get started， contact the Microsoft representative you're working with and they will provide you the location and steps for applying the image.
 
-### <a name="deliver-the-device"></a>交付设备
+## <a name="deliver-the-device"></a>交付设备
 
 > [!IMPORTANT]
 > 在将设备交还给用户之前，请确保你已获取并应用了 [该用户的适当许可证](../get-ready/prerequisites.md) 。

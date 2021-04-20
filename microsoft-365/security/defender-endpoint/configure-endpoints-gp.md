@@ -1,5 +1,5 @@
 ---
-title: 通过组策略将 Windows 10 设备载入 Microsoft Defender ATP
+title: 通过组策略将 Windows 10 设备载入 Microsoft Defender for Endpoint
 description: 使用组策略在 Windows 10 设备上部署配置包，以便它们可以载入到服务。
 keywords: 使用组策略配置设备， 设备管理， 配置 Windows ATP 设备， 载入 Microsoft Defender for Endpoint 设备， 组策略
 search.product: eADQiWindows 10XVcnh
@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: fc4b17ef96e85d3bacd4e83c2de3f4bb7fbfa5c3
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: b839cf204e8ab042e0c88a8f8c48df79770e7b4f
+ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51166163"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51893624"
 ---
 # <a name="onboard-windows-10-devices-using-group-policy"></a>使用组策略载入 Windows 10 设备 
 
@@ -148,7 +148,7 @@ Policy | Setting
 
 Policy | Setting 
 :---|:---
-关闭实时保护|Disabled
+关闭实时保护|已禁用
 打开行为监视|已启用
 扫描所有下载的文件和附件|已启用
 监视您的计算机上的文件和程序活动|已启用
@@ -242,6 +242,6 @@ Policy | Setting
 - [使用 Microsoft Endpoint Configuration Manager 载入 Windows 10 设备](configure-endpoints-sccm.md)
 - [使用移动设备管理工具载入 Windows 10 设备](configure-endpoints-mdm.md)
 - [使用本地脚本载入 Windows 10 设备](configure-endpoints-script.md)
-- [载入非持久性虚拟桌面基础结构 (VDI) 设备。](configure-endpoints-vdi.md)
+- [载入非永久虚拟桌面基础结构 （VDI） 设备](configure-endpoints-vdi.md)
 - [对新载入的适用于终结点的 Microsoft Defender 设备运行检测测试](run-detection-test.md)
 - [Microsoft Defender 终结点载入问题疑难解答](troubleshoot-onboarding.md)

@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 0b0bd900-68b1-4bf5-808b-5d240a7739f4
 description: '了解如何将多个电子邮件地址（称为电子邮件别名）与 Microsoft 365 商业版帐户关联。 '
-ms.openlocfilehash: a44271cdbf52136e61702697a960cc3cbcd8119d
-ms.sourcegitcommit: d4604e333507c6f57d5bf327531a241b649052de
+ms.openlocfilehash: 4003dcfca29a722ccdf9b86cca5aa1141fbdb367
+ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51470997"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51892801"
 ---
 # <a name="add-another-email-alias-for-a-user"></a>为用户添加另一个电子邮件别名
   
@@ -75,7 +75,7 @@ Microsoft 365 中的主要电子邮件地址通常是用户创建帐户时分配
     用户现在将具有主地址和别名。 例如，发送到 Eliza Hoffman 的主地址、Eliza@NodPublishers.com 和别名 Sales@NodPublishers.com 的所有邮件都将发送到 Eliza 的收件箱。
     
   
-7. **当用户回复时，" *发送地址*  "将成为她的主要电子邮件别名。** 例如，假设有一封邮件发送到 Sales@NodPublishers.com，并到达吉萨的收件箱。 陶湘回复邮件时，其主电子邮件地址将显示为发件人，而不是 Sales@NodPublishers.com。 
+7. **当用户答复时，" *发送* 者"地址将取决于其 Outlook 客户端。Outlook 网页应用将使用收到电子邮件的别名 (我们将此称为 ping- 一) 。Outlook 桌面将使用她的主要电子邮件别名。** 例如，假设有一封邮件发送到 Sales@NodPublishers.com，并到达吉萨的收件箱。 当 Eliza 使用 Outlook 桌面答复邮件时，她的主要电子邮件地址将显示为 Eliza@NodPublishers.com，而不是 Sales@NodPublishers.com。
     
 ::: moniker-end
 
@@ -106,7 +106,7 @@ Microsoft 365 中的主要电子邮件地址通常是用户创建帐户时分配
     用户现在将具有主地址和别名。 例如，发送到 Eliza Hoffman 的主地址、Eliza@NodPublishers.com 和别名 Sales@NodPublishers.com 的所有邮件都将发送到 Eliza 的收件箱。
     
   
-7. **当用户回复时，" *发送地址*  "将成为她的主要电子邮件别名。** 例如，假设有一封邮件发送到 Sales@NodPublishers.com，并到达吉萨的收件箱。 陶湘回复邮件时，其主电子邮件地址将显示为发件人，而不是 Sales@NodPublishers.com。 
+7. **当用户答复时，" *发送* 者"地址将取决于其 Outlook 客户端。Outlook 网页应用将使用收到电子邮件的别名 (我们将此称为 ping- 一) 。Outlook 桌面将使用她的主要电子邮件别名。** 例如，假设有一封邮件发送到 Sales@NodPublishers.com，并到达吉萨的收件箱。 当 Eliza 使用 Outlook 桌面答复邮件时，她的主要电子邮件地址将显示为 Eliza@NodPublishers.com，而不是 Sales@NodPublishers.com。
 
 ::: moniker-end
 
@@ -137,7 +137,7 @@ Microsoft 365 中的主要电子邮件地址通常是用户创建帐户时分配
     用户现在将具有主地址和别名。 例如，发送到 Eliza Hoffman 的主地址、Eliza@NodPublishers.com 和别名 Sales@NodPublishers.com 的所有邮件都将发送到 Eliza 的收件箱。
     
   
-7. **当用户回复时，" *发送地址*  "将成为她的主要电子邮件别名。** 例如，假设有一封邮件发送到 Sales@NodPublishers.com，并到达吉萨的收件箱。 陶湘回复邮件时，其主电子邮件地址将显示为发件人，而不是 Sales@NodPublishers.com。 
+7. **当用户答复时，" *发送* 者"地址将取决于其 Outlook 客户端。Outlook 网页应用将使用收到电子邮件的别名 (我们将此称为 ping- 一) 。Outlook 桌面将使用她的主要电子邮件别名。** 例如，假设有一封邮件发送到 Sales@NodPublishers.com，并到达吉萨的收件箱。 当 Eliza 使用 Outlook 桌面答复邮件时，她的主要电子邮件地址将显示为 Eliza@NodPublishers.com，而不是 Sales@NodPublishers.com。
 
 ::: moniker-end
 
@@ -151,6 +151,10 @@ Microsoft 365 中的主要电子邮件地址通常是用户创建帐户时分配
 
 
 如果从 GoDaddy 或另一合作伙伴购买订阅，则必须转到 GoDaddy/合作伙伴管理控制台，才能将新别名设置为主要。
+
+## <a name="sending-email-from-the-proxy-address-easily"></a>轻松地从代理地址发送电子邮件
+
+2021 年 4 月推出一项新功能，允许用户在使用 Outlook 网页时轻松从别名发送邮件。 当功能推出到租户管理员使用 cmdlet 的租赁时，租户内的用户将有权访问复选框列表，其中每个条目对应于其 Outlook 设置中的别名。 `Set-OrganizationConfig -SendFromAliasEnabled $true` 选择别名将使其出现在"撰写"窗体的"自"下拉列表中。
   
 ## <a name="related-articles"></a>相关文章
 

@@ -8,16 +8,16 @@ ms.topic: article
 ms.service: bookings
 localization_priority: Normal
 description: Microsoft Bookings 常见问题解答。
-ms.openlocfilehash: d357ae83d7fe6fdd9f3d0bff724b037e82a3f5d0
-ms.sourcegitcommit: 1df94f04f138ccf1a2356d26174335c44de7052b
+ms.openlocfilehash: 5338d710fa58ff9eba88b068f4fb412cecb83ae1
+ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "50999525"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51892913"
 ---
 # <a name="microsoft-bookings-frequently-asked-questions"></a>Microsoft Bookings 常见问题解答
 
-## <a name="general"></a>常规
+## <a name="general"></a>概要
 
 ### <a name="what-is-microsoft-bookings"></a>什么是 Microsoft Bookings？
 
@@ -45,11 +45,11 @@ Bookings 是一项联机服务，因此无需下载任何内容。 只需转到 
 
 ### <a name="can-i-use-bookings-in-my-own-web-site"></a>能否在我自己的网站中使用 Bookings？
 
-是的。 我们提供了一种通过 iFrame 在网站中嵌入 Bookings 日历的方法。 链接嵌入代码位于 Bookings 应用内的 **Bookings** 页面选项卡中。
+是。 我们提供了一种通过 iFrame 在网站中嵌入 Bookings 日历的方法。 链接嵌入代码位于 Bookings 应用内的 **Bookings** 页面选项卡中。
 
 ### <a name="can-i-use-bookings-even-if-i-dont-have-a-web-page-for-my-business"></a>即使我的企业没有网页，我能否使用 Bookings？
 
-是的。 我们在 Web 应用中的"预订页面"选项卡 **中提供一** 个指向你的预订页面的链接。 你只需将链接提供给客户或客户，他们将看到你的企业的最新可用性信息。 或者，可以在社交媒体中共享预订页面，甚至可以使用嵌入功能将其托管在 iFrame 中。 您还可以通过禁用直接搜索引擎索引并仅限制对组织内部用户的访问权限来控制哪些人可以访问页面。
+是。 我们在 Web 应用中的"预订页面"选项卡 **中提供一** 个指向你的预订页面的链接。 你只需将链接提供给客户或客户，他们将看到你的企业的最新可用性信息。 或者，可以在社交媒体中共享预订页面，甚至可以使用嵌入功能将其托管在 iFrame 中。 您还可以通过禁用直接搜索引擎索引并仅限制对组织内部用户的访问权限来控制哪些人可以访问页面。
 
 ### <a name="can-our-it-department-control-whether-end-users-can-access-bookings"></a>我们的 IT 部门是否可以控制最终用户是否可以访问 Bookings？
 
@@ -118,7 +118,7 @@ Bookings 是一项联机服务，因此无需下载任何内容。 只需转到 
 
 ### <a name="how-do-i-get-microsoft-bookings"></a>如何获取 Microsoft Bookings？
 
-预订适用于具有 Microsoft 365 商业高级版、Microsoft 365 商业标准版、A3、A5、E3 和 E5 许可证以及 iOS 和 Android 配套应用的客户。 Bookings 不作为独立应用提供。 Outlook Web App或 Web 上的 Outlook，以使用 Bookings，因为它在 Outlook 中存储数据。
+预订适用于使用 Office 365 A3、A5、E3 和 E5 以及 Microsoft 365 商业标准版、Microsoft 365 商业高级版、A3、A5、E3 和 E5 的客户。 可以将 Bookings 与 iOS 和 Android 配套应用一同使用。 Bookings 不作为独立应用提供。 Outlook Web App或 Web 上的 Outlook，以使用 Bookings，因为它在 Outlook 中存储数据。
 
 Bookings 许可证为产品提供完整功能，包括创建和管理日历。 当用户被添加为管理员或查看者角色中的员工时，它还使用户能够查看和编辑现有日历。
 
@@ -128,11 +128,11 @@ Bookings 许可证为产品提供完整功能，包括创建和管理日历。 �
 
 ### <a name="can-my-employees-use-bookings-without-a-microsoft-365-account"></a>我的员工能否在没有 Microsoft 365 帐户的情况下使用 Bookings？
 
-是的。 可以使用任何电子邮件添加员工，当有人与员工一起预订约会时，他们仍将收到电子邮件确认和日历邀请。
+是。 可以使用任何电子邮件添加员工，当有人与员工一起预订约会时，他们仍将收到电子邮件确认和日历邀请。
 
 ### <a name="can-i-create-more-than-one-bookings-calendar-under-the-same-microsoft-365-account-and-switch-between-them"></a>能否在同一 Microsoft 365 帐户下创建多个 Bookings 日历，并切换它们？
 
-是的。 可以使用一个帐户创建和管理多个 Bookings 日历。 可以在 Bookings Web 应用中使用业务名称旁边的连接号在两者之间进行切换。
+是。 可以使用一个帐户创建和管理多个 Bookings 日历。 可以在 Bookings Web 应用中使用业务名称旁边的连接号在两者之间进行切换。
 
 ### <a name="what-if-my-organization-has-mixed-licenses-with-f1f3-e1-and-e3e5"></a>如果我的组织具有 F1/F3、E1 和 E3/E5 混合许可证，如何？
 
@@ -204,7 +204,7 @@ SMS messages are currently available in North America， and a Skype or Twilio a
 
 ### <a name="can-calendars-remain-unpublished-not-public-facing-but-still-accessible-to-designated-users"></a>日历能否保持未发布状态 (面向公众) 但仍可供指定用户访问？
 
-是的。 在 Web 应用中的"预订页面"选项卡上有一个复选框："要求我的组织使用 **Microsoft 365 或 Office 365 帐户进行预订"。** 选中此复选框将自助服务页面访问权限限制为仅租户内的页面。 位于 Web 应用内以创建和管理的 Bookings 日历仅能由作为员工添加到具有管理员或查看者角色的人员访问。
+是。 在 Web 应用中的"预订页面"选项卡上有一个复选框："要求我的组织使用 **Microsoft 365 或 Office 365 帐户进行预订"。** 选中此复选框将自助服务页面访问权限限制为仅租户内的页面。 位于 Web 应用内以创建和管理的 Bookings 日历仅能由作为员工添加到具有管理员或查看者角色的人员访问。
 
 :::image type="content" source="media/bookings-faq-access-ctrl.png" alt-text="Bookings 中的预订页面访问控制":::
 

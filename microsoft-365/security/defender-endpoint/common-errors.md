@@ -1,6 +1,6 @@
 ---
-title: 常见的 Microsoft Defender ATP API 错误
-description: 包含说明的常见 Microsoft Defender ATP API 错误列表。
+title: 常见的 Microsoft Defender 终结点 API 错误
+description: 包含说明的常见 Microsoft Defender 终结点 API 错误列表。
 keywords: api， mdatp api， 错误， 疑难解答
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: ddbbe07bc477ae3a5016feb795b5bad5ed82a30a
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 4fc2aeb6ee5a95f7eb121abdcf4431dc6d34cd49
+ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51055487"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51893457"
 ---
 # <a name="common-rest-api-error-codes"></a>常见的 REST API 错误代码
 

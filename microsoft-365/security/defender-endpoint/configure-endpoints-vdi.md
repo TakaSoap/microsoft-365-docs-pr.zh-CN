@@ -1,6 +1,6 @@
 ---
 title: 载入非持久性虚拟桌面基础结构 (VDI) 设备。
-description: 在 VDI (虚拟桌面基础结构) 包，以便它们可以载入到 Microsoft Defender ATP 服务。
+description: 在 VDI (虚拟桌面基础结构) 包，以便它们可以载入到 Microsoft Defender for Endpoint 服务。
 keywords: 配置虚拟桌面基础结构 (VDI) 设备， vdi， 设备管理， 配置 Windows ATP 终结点， 为终结点终结点配置 Microsoft Defender
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 04/16/2020
 ms.technology: mde
-ms.openlocfilehash: bf1e706562db06064409cb7cf11441d048ef8db6
-ms.sourcegitcommit: 39609c4d8c432c8e7d7a31cb35c8020e5207385b
+ms.openlocfilehash: 1e970be7967e221c29017be804a98770a778654f
+ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "51445282"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51892789"
 ---
 # <a name="onboard-non-persistent-virtual-desktop-infrastructure-vdi-devices"></a>载入非持久性虚拟桌面基础结构 (VDI) 设备。
 

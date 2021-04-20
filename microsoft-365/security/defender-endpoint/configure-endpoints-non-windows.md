@@ -1,6 +1,6 @@
 ---
 title: 将非 Windows 设备载入 Microsoft Defender for Endpoint 服务
-description: 配置非 Windows 设备，以便它们可以将传感器数据发送到 Microsoft Defender ATP 服务。
+description: 配置非 Windows 设备，以便它们可以将传感器数据发送到 Microsoft Defender for Endpoint 服务。
 keywords: 载入非 Windows 设备， macos， linux， 设备管理， 配置 Windows ATP 设备， 为终结点设备配置 Microsoft Defender
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 71f230f557792d75659dc4dbfc5911811514d5ea
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: c78779cd4a8a329864b6ac7e0debfc30ca0b3a56
+ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51687873"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51893585"
 ---
 # <a name="onboard-non-windows-devices"></a>载入非 Windows 设备
 
@@ -40,7 +40,7 @@ ms.locfileid: "51687873"
 
 Defender for Endpoint 为 Windows 和非 Windows 平台提供了集中式安全操作体验。 你将能够在 Microsoft Defender 安全中心内查看各种受支持操作系统 (操作系统) 警报，并更好地保护组织的网络。 
 
-你需要了解与 Defender for Endpoint 兼容的确切的 Linux 发行版和 macOS 版本，集成工作。 有关详细信息，请参阅：
+你需要了解与 Defender for Endpoint 兼容的确切的 Linux 发行版和 macOS 版本，集成工作。 有关更多信息，请参阅：
 - [Linux 上的 Microsoft Defender for Endpoint 系统要求](microsoft-defender-endpoint-linux.md#system-requirements)  
 - [macOS 上的 Microsoft Defender for Endpoint 系统要求](microsoft-defender-endpoint-mac.md#system-requirements)。
 
@@ -48,7 +48,7 @@ Defender for Endpoint 为 Windows 和非 Windows 平台提供了集中式安全�
 你需要执行以下步骤来载入非 Windows 设备：
 1. 选择你的首选载入方法：
 
-   - 对于 macOS 设备，你可以选择通过 Microsoft Defender ATP 或第三方解决方案载入。 有关详细信息，请参阅[Microsoft Defender for Endpoint for Mac。](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint-mac)
+   - 对于 macOS 设备，你可以选择通过 Microsoft Defender for Endpoint 或第三方解决方案载入。 有关详细信息，请参阅[Microsoft Defender for Endpoint for Mac。](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint-mac)
 
    - 对于其他非 Windows 设备，选择通过第三方集成载入 **非 Windows 设备**。   
     1. 在导航窗格中，选择 **互操作性**  >  **合作伙伴**。 确保列出了第三方解决方案。

@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: ead616b7af3df05f4c0c5755ad779f0251555734
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 2382281fbb975daa18ec21aabaf5acf8d3fbfb2f
+ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51056029"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51893433"
 ---
 # <a name="microsoft-defender-for-endpoint-evaluation-lab"></a>Microsoft Defender for Endpoint 评估实验室
 
@@ -52,7 +52,7 @@ Microsoft Defender for Endpoint 评估实验室旨在消除设备和环境配置
  安装首选模拟器，在评估实验室内运行方案，并立即查看平台的运行方式-所有这些操作都很方便，无需额外付费。 还可以方便地访问广泛的模拟数组，你可以从模拟目录访问和运行这些模拟。
     
 
-## <a name="before-you-begin"></a>准备工作
+## <a name="before-you-begin"></a>开始之前
 你将需要满足许可要求 [，或者具有](minimum-requirements.md#licensing-requirements) 对 Microsoft Defender for Endpoint 的试用访问权限，以访问评估实验室。
 
 您必须具有 **"管理安全设置"** 权限才能：
@@ -74,10 +74,10 @@ Microsoft Defender for Endpoint 评估实验室旨在消除设备和环境配置
 ![菜单上的评估实验室的图像](images/evaluation-lab-menu.png)
 
 >[!NOTE]
->- 每个环境都使用一组有限的测试设备进行预配。
 >- 根据你选择的环境结构类型，设备将在激活后指定的小时数内可用。
->- 当你已使用预配的设备时，不会提供新设备。 已删除的设备不会刷新可用的测试设备计数。
->- 鉴于有限的资源，建议谨慎使用设备。
+>- 每个环境都使用一组有限的测试设备进行预配。 当你已使用预配的设备时，不会提供新设备。 已删除的设备不会刷新可用的测试设备计数。
+>- 资源已用时，你无法再使用实验室。 它不会重置也不刷新。
+>- 建议谨慎使用资源。实验室资源有限。 它们不会重置，也不会刷新。 
 
 已有实验室？ 请确保启用新的威胁模拟器并拥有活动设备。
 
@@ -122,13 +122,13 @@ Microsoft Defender for Endpoint 评估实验室旨在消除设备和环境配置
 
 在测试设备中预配置以下安全组件：
 
-- [攻击面减少](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard)
+- [减少攻击面](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard)
 - [首次看到时阻止](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-block-at-first-sight-microsoft-defender-antivirus)
-- [受控文件夹访问权限](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/controlled-folders-exploit-guard)
-- [Exploit Protection](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/enable-exploit-protection)
+- [受控文件夹访问](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/controlled-folders-exploit-guard)
+- [漏洞保护](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/enable-exploit-protection)
 - [网络保护](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/network-protection-exploit-guard)
 - [可能不需要的应用程序检测](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus)
-- [云保护](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/utilize-microsoft-cloud-protection-microsoft-defender-antivirus)
+- [云端保护](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/utilize-microsoft-cloud-protection-microsoft-defender-antivirus)
 - [Microsoft Defender SmartScreen](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-smartscreen/windows-defender-smartscreen-overview)
 
 >[!NOTE]

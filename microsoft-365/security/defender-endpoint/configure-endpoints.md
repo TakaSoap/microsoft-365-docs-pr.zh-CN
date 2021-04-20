@@ -1,6 +1,6 @@
 ---
 title: Windows 10 设备的装载工具和方法
-description: 载入 Windows 10 设备，以便它们可以将传感器数据发送到 Microsoft Defender ATP 传感器
+description: 载入 Windows 10 设备，以便它们可以将传感器数据发送到 Microsoft Defender for Endpoint 传感器
 keywords: 载入 Windows 10 设备， 组策略， 终结点配置管理器， 移动设备管理， 本地脚本， gp， sccm， mdm， intune
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 77b843f9526d8b100845403bc8d2df4bf3259471
-ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
+ms.openlocfilehash: f1ef2670a1ca749e0a2f1ebc96300d4eca043bf8
+ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51760208"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51892825"
 ---
 # <a name="onboarding-tools-and-methods-for-windows-10-devices"></a>Windows 10 设备的装载工具和方法
 

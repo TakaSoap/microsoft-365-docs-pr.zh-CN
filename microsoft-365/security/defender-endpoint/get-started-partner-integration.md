@@ -1,7 +1,7 @@
 ---
 title: 成为 Microsoft Defender for Endpoint 合作伙伴
 ms.reviewer: ''
-description: 了解将解决方案与 Microsoft Defender ATP 集成并成为合作伙伴的步骤和要求
+description: 了解将解决方案与 Microsoft Defender for Endpoint 集成并成为合作伙伴的步骤和要求
 keywords: 合作伙伴， 集成， 解决方案验证， 认证， 要求， 成员， 杂项， 应用程序门户
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -16,12 +16,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: ea7ebe1656c0173395df158b8f934ab388bea4ba
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 35ba1fe85fa9b62770142636d46303b37534b976
+ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51055438"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51893313"
 ---
 # <a name="become-a-microsoft-defender-for-endpoint-partner"></a>成为 Microsoft Defender for Endpoint 合作伙伴
 
@@ -71,4 +71,4 @@ Microsoft Defender for Endpoint 支持使用嵌入在 Microsoft Defender [](part
 与 Microsoft Defender for Endpoint 的合作关系可帮助我们的相互客户进一步简化、集成和安排防御。 我们很高兴你选择成为 Microsoft Defender for Endpoint 合作伙伴，并同时防止和响应新式威胁，从而达到有效保护客户及其资产的共同目标。
 
 ## <a name="related-topics"></a>相关主题
-- [技术合作伙伴机会](partner-integration.md)
+- [技术合作伙伴商机](partner-integration.md)

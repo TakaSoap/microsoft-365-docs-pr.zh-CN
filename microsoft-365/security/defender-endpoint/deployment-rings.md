@@ -18,12 +18,12 @@ ms.collection:
 - m365solution-overview
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 2d34b984436b3ed0537af2eebcd8475ec270cd8e
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 8123bdf610b30407e5d262296f9c3639bc21b12f
+ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51165785"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51893481"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-in-rings"></a>在圈中部署 Microsoft Defender for Endpoint
 
@@ -75,7 +75,7 @@ Evaluate | 圈 1：标识 50 个系统用于试点测试
 
 
 ### <a name="pilot"></a>试点
-Microsoft Defender ATP 支持可载入到服务的各种终结点。 在此圈中，确定要载入的几个设备，并基于定义的退出条件，决定继续下一个部署圈。
+Microsoft Defender for Endpoint 支持可载入到服务的各种终结点。 在此圈中，确定要载入的几个设备，并基于定义的退出条件，决定继续下一个部署圈。
 
 下表显示了受支持的终结点以及可用于将设备载入服务的相应工具。 
 
@@ -94,11 +94,11 @@ Microsoft Defender ATP 支持可载入到服务的各种终结点。 在此圈�
 在此阶段，可以使用规划 [部署材料来帮助](deployment-strategy.md) 你规划部署。 
 
 
-使用以下材料选择最适合贵组织的 Microsoft Defender ATP 体系结构。
+使用以下材料选择最适合贵组织的适用于终结点的 Microsoft Defender 体系结构。
 
-|**项目**|**说明**|
+|**Item**|**说明**|
 |:-----|:-----|
-|[![Microsoft Defender ATP 部署策略缩略图](images/mdatp-deployment-strategy.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf)<br/> [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf)  \| [Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.vsdx) | 体系结构资料有助于规划如下体系结构的部署： <ul><li> 云-本机 </li><li> 协同管理 </li><li> 本地</li><li>评估和本地载入</li>
+|[![Microsoft Defender for Endpoint 部署策略缩略图](images/mdatp-deployment-strategy.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf)<br/> [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf)  \| [Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.vsdx) | 体系结构资料有助于规划如下体系结构的部署： <ul><li> 云-本机 </li><li> 协同管理 </li><li> 本地</li><li>评估和本地载入</li>
 
 
 
@@ -108,7 +108,7 @@ Microsoft Defender ATP 支持可载入到服务的各种终结点。 在此圈�
 ### <a name="windows-endpoints"></a>Windows 终结点
 对于 Windows 和/或 Windows 服务器，通过使用安全更新验证计划 (**SUVP**) 在修补星期二 (之前选择多台计算机) 。
 
-有关详细信息，请参阅：
+有关更多信息，请参阅：
 - [什么是安全更新验证计划](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/what-is-the-security-update-validation-program/ba-p/275767)
 - [软件更新验证计划与Microsoft 恶意软件防护中心 - TwC 交互式时间线第 4 部分](https://www.microsoft.com/security/blog/2012/03/28/software-update-validation-program-and-microsoft-malware-protection-center-establishment-twc-interactive-timeline-part-4/)
 
