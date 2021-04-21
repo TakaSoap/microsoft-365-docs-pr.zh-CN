@@ -1,5 +1,5 @@
 ---
-title: 在 Microsoft Defender ATP 中检查传感器的运行状况
+title: 在 Microsoft Defender for Endpoint 中检查传感器的运行状况
 description: 检查设备的传感器运行状况，以确定哪些设备配置不正确、处于非活动状态或未报告传感器数据。
 keywords: 传感器， 传感器运行状况， 错误配置， 非活动， 无传感器数据， 传感器数据， 通信受损， 通信
 search.product: eADQiWindows 10XVcnh
@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: 21313463519383f4bf052465a0d907d2df293ec8
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 0361b7956339670d006c9f050274e07d4e979bca
+ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51165269"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51904160"
 ---
 # <a name="check-sensor-health-state-in-microsoft-defender-for-endpoint"></a>检查 Microsoft Defender for Endpoint 中的传感器运行状况
 

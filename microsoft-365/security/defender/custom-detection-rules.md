@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 220e4e6546899dd00f3a02bf83039a928be4f8dc
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: bfc8724f8dc27aa2475c293e7370488b2ea392b8
+ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51498851"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51903750"
 ---
 # <a name="create-and-manage-custom-detections-rules"></a>创建和管理自定义检测规则
 
@@ -178,6 +178,9 @@ DeviceEvents
 
 ## <a name="manage-existing-custom-detection-rules"></a>管理现有自定义检测规则
 可以查看现有自定义检测规则的列表，检查其之前的运行，并查看已触发的警报。 您还可以按需运行规则并对其进行修改。
+
+>[!TIP]
+> 通过警报和事件 API 提供由自定义检测引发警报。 有关详细信息，请参阅支持的[Microsoft 365 Defender API。](api-supported.md)
 
 ### <a name="view-existing-rules"></a>查看现有规则
 

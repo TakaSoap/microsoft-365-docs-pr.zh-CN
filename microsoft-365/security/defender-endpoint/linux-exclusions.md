@@ -1,6 +1,6 @@
 ---
-title: 配置和验证适用于 Linux 的 Microsoft Defender ATP 的排除项
-description: 提供并验证适用于 Linux 的 Microsoft Defender ATP 的排除项。 可以针对文件、文件夹和进程设置排除项。
+title: 在 Linux 上配置并验证 Microsoft Defender for Endpoint 的排除项
+description: 在 Linux 上提供并验证 Microsoft Defender for Endpoint 的排除项。 可以针对文件、文件夹和进程设置排除项。
 keywords: microsoft， defender， atp， linux， 排除， 扫描， 防病毒
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: fbc8fe7ef6f9af86debdeb0826865c88e86b2c6a
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 56fe152532b77f7f04c9edd52998fea83493adfe
+ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51688185"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51903936"
 ---
 # <a name="configure-and-validate-exclusions-for-microsoft-defender-for-endpoint-on-linux"></a>在 Linux 上配置并验证 Microsoft Defender for Endpoint 的排除项
 

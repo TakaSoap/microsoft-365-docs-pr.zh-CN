@@ -15,12 +15,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 8350db473580fd4d1728c3473742da5b63196c52
-ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
+ms.openlocfilehash: 808eff2074dfe1573708264590b401f3d38db982
+ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/20/2021
-ms.locfileid: "51893573"
+ms.locfileid: "51904006"
 ---
 # <a name="detect-and-block-potentially-unwanted-applications"></a>检测并阻止可能不需要的应用程序
 
@@ -61,7 +61,7 @@ PUA (可能不需要) 是一类软件，可能会导致计算机运行缓慢、�
 > [!TIP]
 > 如果运行的是 Microsoft Edge（基于 Chromium），您可以通过在我们的 [Microsoft Defender SmartScreen 演示页面之一测试并测试 PUA 保护的 URL 阻止功能](https://demo.smartscreen.msft.net/)。
 
-### <a name="blocking-urls-with-microsoft-defender-smartscreen"></a>使用 Microsoft Defender SmartScreen 阻止 URL
+### <a name="block-urls-with-microsoft-defender-smartscreen"></a>使用 Microsoft Defender SmartScreen 阻止 URL
 
 在启用 PUA 保护的基于 Chromium 的 Microsoft Edge 中，Microsoft Defender SmartScreen 可保护用户免遭 PUA 关联的 URL 的影响。
 
@@ -69,9 +69,9 @@ PUA (可能不需要) 是一类软件，可能会导致计算机运行缓慢、�
 
 尽管 Microsoft Defender for Endpoint 具有自己的基于 Microsoft 管理的数据集的阻止列表，但你可以根据自己的威胁情报自定义此列表。 若要在 [Microsoft Defender for Endpoint](manage-indicators.md) 创建和管理指示器，Microsoft Defender SmartScreen 将尊重新设置。
 
-## <a name="microsoft-defender-antivirus"></a>Microsoft Defender 防病毒软件
+## <a name="microsoft-defender-antivirus-and-pua-protection"></a>Microsoft Defender 防病毒和 PUA 保护
 
-Microsoft Defender 防病毒软件中可能不需要的应用程序 （PUA） 保护功能可检测和阻止网络中终结点上的 PUAS。
+Microsoft Defender 防病毒 (PUA) 保护功能可能不需要的应用程序可以检测和阻止网络中终结点上的 PUA。
 
 > [!NOTE]
 > Windows 10、Windows Server 2019 和 Windows Server 2016 中提供此功能。
@@ -80,7 +80,7 @@ Microsoft Defender 防病毒软件阻止检测到 PUA 文件，以及尝试下�
 
 该通知显示在 Windows 安全应用 [中正常出现的隔离](microsoft-defender-security-center-antivirus.md)。
 
-### <a name="configure-pua-protection-in-microsoft-defender-antivirus"></a>在 Microsoft Defender 防病毒软件中配置 PUA 保护
+## <a name="configure-pua-protection-in-microsoft-defender-antivirus"></a>在 Microsoft Defender 防病毒软件中配置 PUA 保护
 
 您可以使用[Microsoft Intune](/mem/intune/protect/device-protect)，[Microsoft Endpoint Configuration Manager](/mem/configmgr/protect/deploy-use/endpoint-protection)，[组策略](/azure/active-directory-domain-services/manage-group-policy)或通过[PowerShell cmdlet](/powershell/module/defender/?preserve-view=true&view=win10-ps)启用PUA保护。
 
@@ -91,11 +91,11 @@ Microsoft Defender 防病毒软件阻止检测到 PUA 文件，以及尝试下�
 
 如果你的公司正在进行内部软件安全合规性检查，并且希望避免出现任何误报，则审核模式下的 PUA 保护十分有用。
 
-#### <a name="use-intune-to-configure-pua-protection"></a>使用 Intune 配置 PUA 保护
+### <a name="use-intune-to-configure-pua-protection"></a>使用 Intune 配置 PUA 保护
 
 有关详细信息，请参阅[Microsoft Intune](/intune/device-restrictions-configure) 和 [Microsoft Defender Intune](/intune/device-restrictions-windows-10#microsoft-defender-antivirus) Windows 10 防病毒设备限制设置。
 
-#### <a name="use-configuration-manager-to-configure-pua-protection"></a>使用配置管理器配置 PUA 保护
+### <a name="use-configuration-manager-to-configure-pua-protection"></a>使用配置管理器配置 PUA 保护
 
 在 Microsoft Endpoint Manager （Current Branch） 中默认启用 PUA 保护。
 
@@ -106,7 +106,7 @@ Microsoft Defender 防病毒软件阻止检测到 PUA 文件，以及尝试下�
 > [!NOTE]
 > Windows 事件查看器中报告称 Microsoft Defender 防病毒软件阻止的 PUA 事件，而不是 Microsoft Endpoint Configuration Manager 中。
 
-#### <a name="use-group-policy-to-configure-pua-protection"></a>使用组策略配置 PUA 保护
+### <a name="use-group-policy-to-configure-pua-protection"></a>使用组策略配置 PUA 保护
 
 1. 下载并安装 [Windows 10 2020 年 10 月更新 （20H2） 管理模板 （.admx）](https://www.microsoft.com/download/details.aspx?id=102157)
 
@@ -126,9 +126,9 @@ Microsoft Defender 防病毒软件阻止检测到 PUA 文件，以及尝试下�
 
 9. 如通常一样部署组策略对象。
 
-#### <a name="use-powershell-cmdlets-to-configure-pua-protection"></a>使用 PowerShell cmdlet 配置 PUA 保护
+### <a name="use-powershell-cmdlets-to-configure-pua-protection"></a>使用 PowerShell cmdlet 配置 PUA 保护
 
-##### <a name="to-enable-pua-protection"></a>启用 PUA 保护
+#### <a name="to-enable-pua-protection"></a>启用 PUA 保护
 
 ```PowerShell
 Set-MpPreference -PUAProtection Enabled
@@ -136,7 +136,7 @@ Set-MpPreference -PUAProtection Enabled
 
 设置此 cmdlet 的值 `Enabled` 可打开该功能（如果该功能已禁用）。
 
-##### <a name="to-set-pua-protection-to-audit-mode"></a>将 PUA 保护设置为审核模式
+#### <a name="to-set-pua-protection-to-audit-mode"></a>将 PUA 保护设置为审核模式
 
 ```PowerShell
 Set-MpPreference -PUAProtection AuditMode
@@ -144,7 +144,7 @@ Set-MpPreference -PUAProtection AuditMode
 
 设置 `AuditMode` 可检测 PUA，且不会阻止它们。
 
-##### <a name="to-disable-pua-protection"></a>禁用 PUA 保护
+#### <a name="to-disable-pua-protection"></a>禁用 PUA 保护
 
 建议保持启用 PUA 保护。 但是，可以通过以下 cmdlet 将其关闭：
 
@@ -154,9 +154,9 @@ Set-MpPreference -PUAProtection Disabled
 
 如果已启用此功能，则设置此 cmdlet `Disabled` 的值以关闭该功能。
 
-请参阅 [使用 PowerShell cmdlet 配置并运行 Microsoft Defender 防病毒软件](use-powershell-cmdlets-microsoft-defender-antivirus.md) 和 [Defender cmdlet](/powershell/module/defender/index) ，了解有关如何通过 Microsoft Defender 防病毒软件使用 PowerShell 的信息。
+有关详细信息，请参阅使用[PowerShell cmdlet 配置](use-powershell-cmdlets-microsoft-defender-antivirus.md)和运行 Microsoft Defender 防病毒和[Defender cmdlet。](/powershell/module/defender/index)
 
-## <a name="view-pua-events"></a>查看 PUA 事件
+## <a name="view-pua-events-using-powershell"></a>使用 PowerShell 查看 PUA 事件
 
 PUA 事件在 Windows 事件查看器中报告，但不在 Microsoft 终结点管理器或 Intune 中。 还可使用 `Get-MpThreat` cmdlet 查看 Microsoft Defender 防病毒软件处理的威胁。 下面是一个示例：
 
@@ -175,11 +175,15 @@ TypeID           : 0
 PSComputerName   :
 ```
 
+## <a name="get-email-notifications-about-pua-detections"></a>获取有关 PUA 检测的电子邮件通知
+
 你可以打开电子邮件通知以接收有关 PUA 检测的邮件。
 
 请参阅 [解决事件 ID](troubleshoot-microsoft-defender-antivirus.md) ，了解有关查看 Microsoft Defender 防病毒事件的详细信息。 PUA 事件记录在事件 ID **1160**。
 
-如果你使用的是 Microsoft Defender for Endpoint，可以使用高级搜寻查询来查看 PUA 事件。 下面是一个示例查询：
+## <a name="view-pua-events-using-advanced-hunting"></a>使用高级搜寻查看 PUA 事件
+
+如果你使用的是 Microsoft [Defender for Endpoint](microsoft-defender-endpoint.md)，可以使用高级搜寻查询来查看 PUA 事件。 下面是一个示例查询：
 
 ```console
 DeviceEvents
@@ -190,7 +194,9 @@ DeviceEvents
 | project Timestamp, DeviceName, FolderPath, FileName, SHA256, ThreatName, WasExecutingWhileDetected, WasRemediated
 ```
 
-## <a name="excluding-files"></a>排除文件
+若要了解有关高级搜寻的更多信息，请参阅 [使用高级搜寻主动搜寻威胁](advanced-hunting-overview.md)。
+
+## <a name="exclude-files-from-pua-protection"></a>从 PUA 保护中排除文件
 
 有时文件被 PUA 保护错误阻止，或需要 PUA 的功能才能完成任务。 在这些情况下，可以将文件添加到排除列表。
 

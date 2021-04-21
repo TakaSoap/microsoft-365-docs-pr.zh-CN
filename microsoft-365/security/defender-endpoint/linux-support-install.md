@@ -1,7 +1,7 @@
 ---
-title: 解决适用于 Linux 的 Microsoft Defender ATP 的安装问题
+title: 解决 Linux 上的 Microsoft Defender for Endpoint 的安装问题
 ms.reviewer: ''
-description: 解决适用于 Linux 的 Microsoft Defender ATP 的安装问题
+description: 解决 Linux 上的 Microsoft Defender for Endpoint 的安装问题
 keywords: microsoft， defender， atp， linux， 安装
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 347528def6929dde200249cd9710f7ce33484c7f
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 270ad1145308aaa2af703cda84307a4a96097a53
+ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51688809"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51903126"
 ---
 # <a name="troubleshoot-installation-issues-for-microsoft-defender-for-endpoint-on-linux"></a>解决 Linux 上的 Microsoft Defender for Endpoint 的安装问题
 

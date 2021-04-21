@@ -14,12 +14,12 @@ ms.collection:
 - m365initiative-viva-topics
 ROBOTS: NOINDEX, NOFOLLOW
 localization_priority: None
-ms.openlocfilehash: 01b3310f5f822f3f6f38bf4d9e727d41fe2b179b
-ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
+ms.openlocfilehash: 290c06d95c6569b5a446a7a7410d34ff3b57055d
+ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51760106"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51904066"
 ---
 # <a name="topic-center-overview-in-microsoft-viva-topics"></a>Microsoft Viva 主题中的主题中心概述
 
@@ -70,12 +70,12 @@ ms.locfileid: "51760106"
 
 ## <a name="manage-topics-page"></a>"管理主题"页
 
-若要在主题中心的"管理主题"部分工作，您需要具有知识管理器角色所需的管理主题权限。 管理员可在知识管理设置期间向用户分配这些权限[](set-up-topic-experiences.md)，或者管理员随后可通过 Microsoft 365 管理中心添加新用户。 [](topic-experiences-knowledge-rules.md)
+若要在主题中心的"管理主题"部分工作，您需要具有知识管理器角色所需的"管理主题"权限。 管理员可在知识管理设置期间向用户分配这些权限[](set-up-topic-experiences.md)，或者管理员随后可通过 Microsoft 365 管理中心添加新用户。 [](topic-experiences-knowledge-rules.md)
 
 在"管理主题"页上，主题仪表板显示您有权访问的所有主题（从指定的源位置标识）。 每个主题将显示主题的发现日期。 分配了管理主题权限的用户可以查看未确认的主题，并选择：
-- 确认主题：向有权访问与主题相关的文件和页面的用户突出显示主题，并让他们查看相关主题卡片和主题页面。
+- 确认主题：向用户指示 AI 建议的主题已经过人工保护者验证。 
 - 发布主题：编辑主题信息以提高最初确定的主题的质量，并突出显示给具有主题查看访问权限的所有用户。 
-- 拒绝主题：使主题对用户不可用。 该主题将移至" **已拒绝** "选项卡，稍后可以确认（如果需要）。 
+- 拒绝主题：使最终用户无法发现该主题。 该主题将移至" **已拒绝** "选项卡，稍后可以确认（如果需要）。 
 
 > [!Note] 
 > 有关 [管理主题](manage-topics.md) 页中管理主题的更多详细信息，请参阅管理主题。

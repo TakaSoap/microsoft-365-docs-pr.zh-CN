@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 了解如何将另一个域添加到订阅。
-ms.openlocfilehash: 8899cb9667ffa080746ca9173b61897f9c5db399
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: a641005913f7dfd866366f0f8065019dd5c17fe8
+ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51578997"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51903738"
 ---
 # <a name="add-another-domain"></a>添加其他域
 
@@ -53,3 +53,7 @@ ms.locfileid: "51578997"
 1. 输入用户名，然后从下拉列表中选择新域。
 1. 选择 **"保存更改**"，然后关闭窗口。
 1. 对应在新域中接收电子邮件的每个用户重复这些步骤。
+
+## <a name="related-content"></a>相关内容
+
+将域添加到[Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain) (文章) 添加[DNS](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider)记录以连接域 (文章) 更改名称服务器以设置具有任何域注册机构的[Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/change-nameservers-at-any-domain-registrar) (文章) [Domains FAQ](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) (article) 

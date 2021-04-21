@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid: met150
 ms.custom: seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: d89e5dc29bfe7f980d40a9a5b139884750a966bc
-ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
+ms.openlocfilehash: 2e1553b231692d184146897ddc05e11930ed1bf0
+ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51760010"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51903970"
 ---
 # <a name="the-unified-microsoft-365-security-center-overview"></a>统一 Microsoft 365 安全中心概述
 
@@ -149,6 +149,9 @@ Microsoft 365 安全中心包括一个学习中心，从 Microsoft 安全博客�
 > Microsoft 365 安全中心学习中心顶部有一些有用的筛选器，可让你选择当前为 Microsoft 365 Defender 的产品 (Microsoft Defender for Endpoint 和 Microsoft Defender for Office 365) 。  请注意，列出了每个部分的学习资源数量，这可以帮助学习者跟踪他们有多少资源可用于培训和学习。
 >
 > 除产品筛选器外，还列出了当前主题、 (网络研讨会) 、对安全区域、安全角色和产品功能的熟悉程度或经验。
+
+> [!TIP]
+> Microsoft Learn 中有很多其他 [学习机会](https://docs.microsoft.com/e/learn/)。 你将找到认证培训，如 [MS-500T02-A：实施 Microsoft 365 威胁防护课程](https://docs.microsoft.com/learn/certifications/courses/ms-500t02)。
 
 ## <a name="send-us-your-feedback"></a>向我们发送反馈
 

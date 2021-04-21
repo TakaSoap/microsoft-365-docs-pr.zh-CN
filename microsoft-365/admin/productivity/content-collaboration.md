@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 内容协作的详细信息 - 人员体验生产力分数。
-ms.openlocfilehash: dedd39a84580f26e80e5586e07fb64c8a6d35573
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 43a5fbc3b1c4b6227cd29d79bfb0928a3b4b8ac9
+ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51580854"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51903318"
 ---
 # <a name="content-collaboration--people-experiences"></a>内容协作 – 人员体验
 
@@ -35,7 +35,7 @@ ms.locfileid: "51580854"
 若要开始使用内容协作见解，需要获得组织中人员的许可：
 
 - OneDrive for Business
-- SharePoint
+- Microsoft Office SharePoint Online
 - Exchange Online
 
 有关详细信息，请参阅 [向用户分配许可证](../manage/assign-licenses-to-users.md)。
@@ -49,6 +49,9 @@ ms.locfileid: "51580854"
 ## <a name="how-we-calculate-the-content-collaboration-score"></a>如何计算内容协作分数
 
 我们提供主要见解，其中包含组织中内容协作的关键指标。 然后，下面详述的评分框架将用于这些指标来计算组织的分数。
+
+> [!NOTE]
+> 2021 年 4 月 22 日，我们更改了协作者指标的计算方式。 这会影响主要 [见解](#primary-insight)、 [文件协作见解](#number-of-files-collaborated-on)以及内容协作分数的度量方式。 此更改有助于减少来自来自 Microsoft 和其他第三 (应用程序的非人工代理) 或自动程序的数据的干扰，从而获得更准确且可操作的分数。
 
 ### <a name="primary-insight"></a>主要见解
 
@@ -97,10 +100,9 @@ Microsoft OneDrive for Business 和 SharePoint 可帮助用户跨设备和应用
 
 ### <a name="scoring-framework"></a>记分框架
 
-组织的内容协作分数以 (组织) 聚合级别衡量，无论用户是一直阅读、创建或协作处理联机 Office 文件（如 Word、Excel、PowerPoint、OneNote 或 PDF）;还是在 OneDrive 或 SharePoint 中。
+组织的内容协作分数以 (组织) 聚合级别衡量，无论用户是一致阅读、创建或协作处理联机 Office 文件（如 Word、Excel、PowerPoint、OneNote 或 PDF）还是 OneDrive 或 SharePoint。
 
 未在单个用户级别提供分数。
-
 
 ## <a name="explore-how-your-organization-collaborates"></a>探索组织如何协作
 
@@ -131,13 +133,13 @@ Microsoft OneDrive for Business 和 SharePoint 可帮助用户跨设备和应用
 3. **可视化：** 可视化的细分旨在表示电子邮件中附加内容的人使用不同模式（而不是在 OneDrive 或 SharePoint 上 (文件）的程度;指向联机文件的链接;和电子邮件中嵌入) ：
       - **附加文件：** 蓝色 (条的) 部分，而条形上的分数 (numerator/denominator) 表示电子邮件中使用附件的百分比。
         - 数字：将文件附加到过去 28 天内未保存到 OneDrive 或 SharePoint 的电子邮件中的人数。
-        - Denominator： ？ Denominator： The number of people who have access to Exchange and OneDrive， SharePoint， or both within the last 28 days.
+        - 分母：过去 28 天内有权访问 Exchange 和 OneDrive、SharePoint 或同时访问这两者的人数。
       - **指向联机文件的链接：** 蓝色 (条的) 部分，而条形上的分数 (numerator/denominator) 表示使用附件并将链接附加到电子邮件中的文件的百分比。
         - 数字：最近 28 天内将联机文件链接 (保存到 OneDrive 或 SharePoint) 电子邮件的数量。
-        - Denominator： ？ Denominator： The number of people who have access to Exchange and OneDrive， SharePoint， or both within the last 28 days.
+        - 分母：过去 28 天内有权访问 Exchange 和 OneDrive、SharePoint 或同时访问这两者的人数。
       - **在电子邮件中嵌入链接：** 蓝色 (条) 部分的颜色，而条形上的分数表示在电子邮件正文中嵌入链接的人的百分比。
         - 数字：在电子邮件正文中嵌入链接的联机文件 (最近 28 天内保存到 OneDrive 或 SharePoint) 的数量。
-        - Denominator： ？ Denominator： The number of people who have access to Exchange and OneDrive，SharePoint， or both within the last 28 days.
+        - 分母：过去 28 天内有权访问 Exchange 和 OneDrive、SharePoint 或同时访问这两者的人数。
 4. **指向资源的链接：** 选择此链接可查看帮助内容。
 
 ### <a name="sharing-of-online-files"></a>共享联机文件
@@ -159,21 +161,21 @@ Microsoft OneDrive for Business 和 SharePoint 可帮助用户跨设备和应用
 
 :::image type="content" source="../../media/intensityofcollab.png" alt-text="显示协作最多的文件的图表。":::
 
-1. **标头：** 这突出显示了有权访问 OneDrive 或 SharePoint 并协作处理 4 个或多个文件的人的百分比。
-2. **正文：** 这将提供有关用户如何利用联机文件进行更好的协作的信息。
-3. **可视化：** 这显示有权访问 OneDrive 或 SharePoint 的人的分布，基于他们协作处理的文件数。 这通过以下 4 个类别 (，栏的蓝色部分和分数表示有权访问属于该类别的 OneDrive 或 SharePoint) ：
+1. **标头：** 突出显示有权访问 OneDrive 或 SharePoint 并协作处理 4 个或多个文件的人的百分比。
+2. **正文：** 提供有关用户如何利用联机文件进行更好的协作的信息。
+3. **可视化：** 显示有权访问 OneDrive 或 SharePoint 的人的分布，基于他们协作处理的文件数。 这通过以下 4 个类别 (，栏的蓝色部分和分数表示有权访问属于该类别的 OneDrive 或 SharePoint) ：
       - **无协作：**
-        - **分子：** 过去 28 天内未协作处理任何文件的人数
-        - **分母：** 最近 28 天内至少 1 天内有权访问 OneDrive 或 SharePoint 的总数。
+        - 数字：过去 28 天内未协作处理任何文件的人数。
+        - 分母：过去 28 天内至少 1 天内有权访问 OneDrive 或 SharePoint 的总数。
       - **协作处理 1-3 个文件：**
-        - **分子：** 最近 28 天内协作处理 1-3 个文件的人数。
-        - **分母：** 过去 28 天内至少 1 天内有权访问 OneDrive 或 SharePoint 的总数。
+        - 数字：最近 28 天内协作处理 1-3 个文件的人数。
+        - 分母：过去 28 天内至少 1 天内有权访问 OneDrive 或 SharePoint 的总数。
       - **协作处理 4-10 个文件：**
-        - **分子：** 最近 28 天内协作处理 4-10 个文件的人数
-        - **分母：** 过去 28 天内至少 1 天内有权访问 OneDrive 或 SharePoint 的总数。
+        - 数字：最近 28 天内协作处理 4-10 个文件的人数。
+        - 分母：过去 28 天内至少 1 天内有权访问 OneDrive 或 SharePoint 的总数。
       - **协作处理 11 个或多个文件：**
-        - **分子：** 最近 28 天内协作处理 11 个或多个文件的人数
-        - **分母：** 过去 28 天内至少 1 天内有权访问 OneDrive 或 SharePoint 的总数。
+        - 数字：最近 28 天内协作处理 11 个或多个文件的人数。
+        - 分母：过去 28 天内至少 1 天内有权访问 OneDrive 或 SharePoint 的总数。
         
 4. **指向资源的链接：** 选择此链接可查看帮助内容。
 
@@ -185,9 +187,9 @@ Microsoft OneDrive for Business 和 SharePoint 可帮助用户跨设备和应用
 2. **正文：** 提供有关网络连接性能为什么对协作很重要的信息。 
 3. **可视化：** 显示与 OneDrive 和 SharePoint 相关的不同网络连接性能级别的设备的百分比：
       - **81-100 (最佳) ：** 条形图的深绿色 (颜色) 部分表示性能最佳的设备的百分比。
-      - **61-80：** 条形的绿色 (颜色) 表示网络性能分数在 60-80 之间的设备的百分比。 
-      - **41-60： (** 的橙色颜色) 表示网络性能分数在 40-60 之间的设备的百分比。 
-      - **21-40：** 条形 (红色) 表示网络性能分数在 20-40 之间的设备的百分比。 
+      - **61-80：** 条形 (绿色) 表示网络性能分数在 60-80 之间的设备的百分比。 
+      - **41-60： (** 的橙色) 表示网络性能分数在 40-60 之间的设备的百分比。 
+      - **21-40： (** 的红色) 表示网络性能分数介于 20 到 40 之间的设备的百分比。 
       - **0-20：** 条形 (深红色) 表示网络性能分数在 0 到 20 之间最差的设备百分比。 
 
 ## <a name="related-content"></a>相关内容

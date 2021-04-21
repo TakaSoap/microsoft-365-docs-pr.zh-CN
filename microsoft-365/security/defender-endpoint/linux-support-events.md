@@ -1,6 +1,6 @@
 ---
-title: Microsoft Defender ATP for Linux 的缺失事件或警报问题疑难解答
-description: 解决 Microsoft Defender ATP for Linux 中缺少的事件或警报问题。
+title: 解决 Linux 上的 Microsoft Defender for Endpoint 的缺失事件或警报问题
+description: 解决 Linux 上的 Microsoft Defender for Endpoint 中缺少的事件或警报问题。
 keywords: microsoft， defender， atp， linux， 事件
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,12 +18,12 @@ mms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 5981cb75b4c835390e27d902b5950e3c68305200
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 40d394a4fc7349789dea9bd96ccdaf71067ab39e
+ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51687450"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51903994"
 ---
 # <a name="troubleshoot-missing-events-or-alerts-issues-for-microsoft-defender-for-endpoint-on-linux"></a>解决 Linux 上的 Microsoft Defender for Endpoint 的缺失事件或警报问题
 
@@ -31,7 +31,7 @@ ms.locfileid: "51687450"
 
 **适用于：**
 
-- [Linux 上的 Microsoft Defender for Endpoint](microsoft-defender-endpoint-linux.md)
+- [Microsoft Defender for Endpoint on Linux](microsoft-defender-endpoint-linux.md)
 
 本文提供了一些常规步骤，以减少安全中心门户中丢失的事件 [或](https://securitycenter.windows.com/) 警报。
 

@@ -1,0 +1,291 @@
+---
+title: 活动资源管理器中报告的标记操作
+f1.keywords:
+- NOCSH
+ms.author: chrfox
+author: chrfox
+manager: laurawi
+ms.date: ''
+audience: Admin
+ms.topic: article
+ms.service: O365-seccomp
+localization_priority: Normal
+ms.collection:
+- M365-security-compliance
+- m365solution-mip
+- m365initiative-compliance
+search.appverid:
+- MOE150
+- MET150
+description: 活动资源管理器中可用的标签操作列表。
+ms.openlocfilehash: ed51c908d6968e3aeae0adbe06d9ba55887bcf83
+ms.sourcegitcommit: 1c53f114a810e7aaa2dc876b84d66348492ea36c
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51902940"
+---
+# <a name="labeling-activities-that-are-available-in-activity-explorer"></a>活动资源管理器中可用的标记活动
+
+## <a name="sensitivity-label-applied"></a>应用的敏感度标签
+
+每次标记未标记的文档或发送带有标签的电子邮件时，将生成此事件。 
+
+- 它在 Office 本机应用程序和 Web 应用程序中保存时捕获。 
+- 在 Azure 信息保护加载项中出现时捕获它。 
+- 还可以通过"标签"事件类型字段和筛选器监视升级和 *降级标签操作* 。   
+
+
+|Source  |在活动资源管理器中报告 | 注释  |
+|---------|---------|---------|
+| Word、Excel、PowerPoint|是 |
+|Outlook| 是 |从 Win 32 |
+|SharePoint online、OneDrive|是 | |
+|Exchange        |是         | |
+|Azure 信息保护 (AIP) 统一客户端和 AIP 统一扫描程序 |是 |AIP *新标签* 操作映射到活动 *资源管理器中* 应用的标签   |
+|Microsoft 信息保护 (MIP) SDK         |是|AIP *新标签* 操作映射到活动 *资源管理器中* 应用的标签|
+|权限管理服务 (RMS)          |不适用         | |
+|Power BI 桌面和 Web        | 否| 可在 Microsoft 365 审核日志中访问         |
+|Microsoft Cloud App Security (MCAS)         |否|         |
+
+## <a name="sensitivity-label-changed"></a>敏感度标签已更改
+
+每次更新文档或电子邮件的标签时，将生成此事件。
+
+- 对于 AIP 统一客户端、统一扫描程序和 MIP  SDK 源，AIP 升级标签和 *降级* 标签操作映射到活动资源管理器 *标签已更改*
+
+- 它在 Office 本机应用程序和 Web 应用程序中的保存点捕获。 
+- 在 Azure 信息保护统一客户端加载项和扫描程序实施中出现时捕获
+- 还可以通过"标签"事件类型字段和筛选器监视升级和 *降级标签操作* 。 还将 *捕获* 理由文本，SharePoint Online 和 OneDrive 除外。
+- 在 Outlook 上的 Office 本机应用中完成敏感度标记会收集在文件保存/电子邮件发送操作之前生成的最后一个操作。 例如，如果用户在发送电子邮件之前多次更改电子邮件的标签，电子邮件发送时在电子邮件上找到的最后一个标签将捕获到 审核日志 然后在活动资源管理器中报告。 
+
+
+|Source  |在活动资源管理器中报告|注释  |
+|---------|---------|---------| 
+|Word、Excel、PowerPoint         |是         |
+|Outlook         |是         |Win 32|
+|SharePoint Online、OneDrive         |是         |
+|Exchange         |是         |
+|AIP 统一客户端         |是         |
+|AIP 统一扫描程序         |是         |
+|MIP SDK         |是         |
+|RMS 服务         |不适用         |
+|Power BI 桌面和 Web         |否         |可在 Microsoft 365 审核日志中访问 |
+|MCAS     |否         |         |
+
+## <a name="sensitivity-label-removed"></a>删除了敏感度标签
+
+每次从文件或文档中删除标签时，将生成此事件。
+
+- 此事件在 Office 本机应用程序和 Web 应用程序中保存时捕获。
+- 在 Azure 信息保护加载项中出现时捕获它。 
+- Outlook 上的敏感度标签（带有 Office 本机 MIP 标签）收集在文件保存/电子邮件发送操作之前生成的最后一个标签事件。
+
+|Source  |在活动资源管理器中报告 | 注释  |
+|---------|---------|---------| 
+|Word、Excel、PowerPoint         |是         |
+|Outlook         |是         |Win 32|
+|SharePoint Online、OneDrive         |是         |
+|Exchange         |是         |
+|AIP 统一客户端         |是         |AIP *删除标签* 操作已映射到活动资源管理器 *中的标签* 删除操作|
+|AIP 统一扫描程序         |是         |AIP *删除标签* 操作已映射到活动资源管理器 *中的标签* 删除操作 |
+|MIP SDK         |是         |AIP *删除标签* 操作已映射到活动资源管理器 *中的标签* 删除操作 |
+|RMS 服务         |不适用         |
+|Power BI 桌面和 Web         |否         |可在 Microsoft 365 审核日志中访问 |
+|MCAS     |否         |         |
+ 
+
+## <a name="sensitivity-label-file-read"></a>已读取敏感度标签文件
+
+每次打开已标记或受保护的文档时，将生成此事件。
+
+|Source  |在活动资源管理器中报告 | 注释  |
+|---------|---------|---------| 
+|Word、Excel、PowerPoint         |是         |
+|Outlook         |否         |
+|SharePoint Online、OneDrive         |否         |
+|Exchange         |否         |
+|AIP 统一客户端         |是         |AIP *访问* 操作映射到活动 *资源管理器中的文件读取* 操作|
+|AIP 统一扫描程序         |是         |AIP *访问* 操作映射到活动 *资源管理器中的文件读取* 操作|
+|MIP SDK         |是         |AIP *访问* 操作映射到活动 *资源管理器中的文件读取* 操作|
+|RMS 服务         |是         |访问 *操作* 映射到活动 *资源管理器中的文件读取* 操作 |
+|Power BI 桌面和 Web         |否         |可在 Microsoft 365 审核日志中访问 |
+|MCAS     |否         |         |
+
+
+## <a name="sensitivity-label-files-discovered"></a>发现的敏感度标签文件
+
+每次发现文件时，当使用 AIP 扫描程序扫描不同位置的敏感数据并查找文件时，将生成此事件。
+
+|Source  |在活动资源管理器中报告 | 注释  |
+|---------|---------|---------| 
+|Word、Excel、PowerPoint         |不适用         |
+|Outlook         |不适用         |
+|SharePoint Online、OneDrive         |不适用         |
+|Exchange         |不适用         |
+|AIP 统一客户端         |不适用       |
+|AIP 统一扫描程序         |是         |AIP *发现* 操作映射到活动 *资源管理器中发现* 操作的文件|
+|MIP SDK         |是         |AIP *发现* 操作映射到活动 *资源管理器中发现* 的文件操作|
+|RMS 服务         |不适用         |
+|Power BI 桌面和 Web         |不适用         |
+|MCAS     |不适用         |         |
+
+
+## <a name="sensitivity-label-file-renamed"></a>已重命名敏感度标签文件
+
+每次重命名具有敏感度标签的文档时，将生成此事件。 
+
+|Source  | 在活动资源管理器中报告 | 注释  |
+|---------|---------|---------| 
+|Word、Excel、PowerPoint         |是         |
+|Outlook         |不适用         |
+|SharePoint Online、OneDrive         |否        |
+|Exchange         |不适用         |
+|AIP 统一客户端         |否         |
+|AIP 统一扫描程序         |否         |
+|MIP SDK         |否         |
+|RMS 服务         |否      |
+|Power BI 桌面和 Web         |否         |
+|MCAS     |否         |         |
+
+
+## <a name="sensitivity-label-file-removed"></a>删除了敏感度标签文件
+
+每次 AIP 扫描程序检测到之前扫描的文件已删除时，将生成此事件。
+
+|Source  |在活动资源管理器中报告 | 注释  |
+|---------|---------|---------| 
+|Word、Excel、PowerPoint         |不适用         |
+|Outlook         |不适用         |
+|SharePoint Online、OneDrive         |不适用           |
+|Exchange         |不适用         |
+|AIP 统一客户端         |不适用            |
+|AIP 统一扫描程序         |是         |
+|MIP SDK         |不适用            |
+|RMS 服务         |不适用         |
+|Power BI 桌面和 Web         |不适用  |
+|MCAS     |不适用        |         |
+
+### <a name="sensitivity-label-protection-applied"></a>应用的敏感度标签保护
+
+此事件生成首次保护时手动添加到没有标签的项。
+
+|Source  |在活动资源管理器中报告 | 注释  |
+|---------|---------|---------| 
+|Word、Excel、PowerPoint         |否         |
+|Outlook         |否         |
+|SharePoint Online、OneDrive         |不适用           |
+|Exchange         |否       |
+|AIP 统一客户端         |是            |
+|AIP 统一扫描程序         |不适用         |
+|MIP SDK         |是            |
+|RMS 服务         |不适用         |
+|Power BI 桌面和 Web         |不适用            |
+|MCAS     |不适用        |         |
+
+## <a name="sensitivity-label-protection-changed"></a>敏感度标签保护已更改
+
+每次手动更改未标记文档的保护时，将生成此事件。
+
+|Source  |在活动资源管理器中报告 |
+|---------|---------| 
+|Word、Excel、PowerPoint         |否         |
+|Outlook         |否         |
+|SharePoint Online、OneDrive         |不适用           |
+|Exchange         |否       |
+|AIP 统一客户端         |是            |
+|AIP 统一扫描程序         |不适用         |
+|MIP SDK         |是            |
+|RMS 服务         |不适用         |
+|Power BI 桌面和 Web         |不适用            |
+|MCAS     |不适用        |
+
+## <a name="sensitivity-label-protection-removed"></a>删除了敏感度标签保护
+
+每次手动更改未标记文档的保护时，将生成此事件。
+
+|Source  |在活动资源管理器中报告 |
+|---------|---------| 
+|Word、Excel、PowerPoint         |否         |
+|Outlook         |否         |
+|SharePoint Online、OneDrive         |不适用           |
+|Exchange         |否       |
+|AIP 统一客户端         |是            |
+|AIP 统一扫描程序         |不适用         |
+|MIP SDK         |是            |
+|RMS 服务         |不适用         |
+|Power BI 桌面和 Web         |不适用            |
+|MCAS     |不适用        |
+
+## <a name="sensitivity-label-dlp-policy-matched"></a>已匹配的敏感度标签 DLP 策略
+
+每次匹配 DLP 策略时，将生成此事件。
+
+|Source  |在活动资源管理器中报告 |
+|---------|---------| 
+|Exchange         |是       |
+|SharePoint Online|是          |
+|OneDrive |是|
+|Teams |是   |
+|Windows 10 设备         |是 |
+|MAC         |否     |
+|本地         |否|
+|MCAS     |否        | 
+
+适用于 Windows 10 设备 (终结点 DLP) 为：
+
+- 文件已删除
+- 已创建文件
+- 文件复制到剪贴板
+- 已修改文件
+- 文件读取
+- 文件打印
+- 文件重命名
+- 文件复制到网络共享
+- 未允许的应用访问的文件
+
+
+## <a name="retention-label-applied"></a>应用的保留标签 
+
+每次标记未标记的文档或发送带有标签的电子邮件时，将生成此事件。
+
+- 它在 Office 本机应用程序和 Web 应用程序中保存时捕获。
+
+|Source  |在活动资源管理器中报告 |
+|---------|---------| 
+|Exchange         |否       |
+|SharePoint Online|是          |
+|OneDrive |是|
+
+## <a name="retention-label-changed"></a>已更改保留标签
+
+每次在文档或电子邮件上更新标签时，将生成此事件。
+
+- 它在保存时捕获。
+
+|Source  |在活动资源管理器中报告 |
+|---------|---------| 
+|Exchange         |否       |
+|SharePoint Online|是          |
+|OneDrive |是|
+ 
+## <a name="retention-label-removed"></a>已删除保留标签
+
+每次从文件或文档中删除标签时，将生成此事件。
+
+- 它在保存时捕获。
+
+|Source  |在活动资源管理器中报告 |
+|---------|---------| 
+|Exchange         |否       |
+|SharePoint Online|是          |
+|OneDrive |是|
+
+
+## <a name="known-issues"></a>已知问题
+  
+- 向最终用户显示推荐的标签工具提示时，不会捕获它。 但是，如果用户选择应用建议的标签，标签将显示在"如何应用"字段下 *，显示为**"推荐"*  
+
+- 从 Sharepoint 和 OneDrive 降级敏感度标签时，目前无法提供理由文本。  
+
+- 敏感信息类型当前不适用于 Word、Excel、PowerPoint 和 Outlook 以及 SharePoint Online 和 OneDrive 中的自动标记活动。

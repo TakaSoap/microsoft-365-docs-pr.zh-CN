@@ -1,6 +1,6 @@
 ---
 title: 在 iOS 功能上配置 Microsoft Defender for Endpoint
-description: 介绍如何部署适用于 iOS 功能的 Microsoft Defender ATP
+description: 介绍如何在 iOS 功能上部署 Microsoft Defender for Endpoint
 keywords: microsoft， defender， atp， ios， 配置， 功能， ios
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 0e351f6500d5076e724653d0fde1940592dd1ae5
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: f5f7345f92b3ac76aa647a9caed63e5684be9c30
+ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51687481"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51903306"
 ---
 # <a name="configure-microsoft-defender-for-endpoint-on-ios-features"></a>在 iOS 功能上配置 Microsoft Defender for Endpoint
 
@@ -49,7 +49,7 @@ iOS 上的 Microsoft Defender for Endpoint 以及 Microsoft Intune 和 Azure Act
 虽然默认启用，但在某些情况下可能需要你禁用 VPN。 例如，你想要运行一些在配置 VPN 时不起作用的应用。 在这种情况下，你可以选择按照以下步骤在设备上禁用应用中的 VPN：
 
 1. 在 iOS 设备上，打开"设置 **"** 应用，单击或点击"**常规**"，然后单击 **"VPN"。**
-1. 单击或点击 Microsoft Defender ATP 的"i"按钮。
+1. 单击或点击 Microsoft Defender for Endpoint 的"i"按钮。
 1. 关闭" **按需连接"** 以禁用 VPN。
 
     > [!div class="mx-imgBorder"]

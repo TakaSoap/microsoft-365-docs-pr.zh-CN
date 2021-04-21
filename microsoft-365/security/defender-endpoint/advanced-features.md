@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: c5e6edb40254ab905ef5ef3ddef9bf8bf54fc54b
-ms.sourcegitcommit: 72ae1b49e7a3d3199272fcb4c39f5daec0d66f1a
+ms.openlocfilehash: 9c77cb19731e55976058ce2f628baf4026639949
+ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51698264"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51903786"
 ---
 # <a name="configure-advanced-features-in-defender-for-endpoint"></a>在 Defender for Endpoint 中配置高级功能
 
@@ -65,14 +65,13 @@ ms.locfileid: "51698264"
 启用此功能后，您可以在实时响应会话中运行未签名的脚本。
 
 ## <a name="always-remediate-pua"></a>始终修正 PUA
-PUA (可能不需要) 是一类软件，可能会导致计算机运行缓慢、显示意外广告或最差时安装其他可能意外或不需要的软件。 
+可能不需要的应用程序 （PUA） 是一类软件，会导致计算机运行缓慢、显示意外广告或最糟情况，安装其他可能意外或不需要的软件。 
 
 启用此功能，以便 (PUA) 在租户的所有设备上修正可能不需要的应用程序，即使未在设备上配置 PUA 保护。 这有助于防止用户无意中在设备上安装不需要的应用程序。 关闭后，修正取决于设备配置。 
 
 
 ## <a name="restrict-correlation-to-within-scoped-device-groups"></a>限制与作用域内设备组之间的关联
-启用此设置后，警报将基于其作用域的设备组关联到单独的事件。 默认情况下，在整个租户范围内发生事件关联。
-
+此配置可用于本地 SOC 操作希望仅将警报关联限制为可以访问的设备组的方案。 打开此设置后，由跨设备组的警报组成的事件将不再被视为单个事件。 然后，本地 SOC 可以针对事件采取措施，因为他们可以访问涉及的设备组之一。 但是，全局 SOC 将按设备组而不是一个事件查看多个不同的事件。 建议不要打开此设置，除非这样做超出了整个组织中事件相关性的好处
 >[!NOTE]
 >更改此设置仅影响未来的警报关联。
 

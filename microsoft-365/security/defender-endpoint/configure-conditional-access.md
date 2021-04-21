@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 482f86d4a0a181b72a0a33eeb1a857dce0664584
-ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
+ms.openlocfilehash: e68a8c35fb1028fa8e60cf52a8e8bb411a534b19
+ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/20/2021
-ms.locfileid: "51893645"
+ms.locfileid: "51903774"
 ---
 # <a name="configure-conditional-access-in-microsoft-defender-for-endpoint"></a>在 Microsoft Defender for Endpoint 中配置条件访问
 
@@ -98,7 +98,7 @@ ms.locfileid: "51893645"
 
 ### <a name="step-4-assign-the-policy"></a>步骤 4：分配策略
 1. 在 [Azure 门户中，](https://portal.azure.com)选择 **"所有服务"，** 筛选 **Intune，** 然后选择 **"Microsoft Intune"。**
-2. 选择 **设备合规性**  >  **策略**>选择 Microsoft Defender ATP 合规性策略。
+2. 选择 **设备合规性**  >  **策略**>选择适用于终结点的 Microsoft Defender 合规性策略。
 3. 选择“**分配**”。
 4. 包括或排除 Azure AD 组，以为其分配策略。
 5. 若要将策略部署到组，请选择"保存 **"。** 针对策略的目标用户设备进行评估是否符合合规性。
@@ -114,6 +114,6 @@ ms.locfileid: "51893645"
 
 6. 选择 **"启用策略**"，然后选择" **创建** "保存更改。
 
-有关详细信息，请参阅在[Intune 中启用具有条件访问的 Microsoft Defender ATP。](https://docs.microsoft.com/intune/advanced-threat-protection)
+有关详细信息，请参阅在 [Intune](https://docs.microsoft.com/intune/advanced-threat-protection)中通过条件访问强制 Microsoft Defender for Endpoint 的合规性。
 
 >想要体验适用于终结点的 Defender？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-conditionalaccess-belowfoldlink)

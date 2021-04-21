@@ -1,7 +1,7 @@
 ---
-title: 设置适用于 Linux 的 Microsoft Defender ATP 的首选项
+title: 在 Linux 上设置适用于终结点的 Microsoft Defender 的首选项
 ms.reviewer: ''
-description: 介绍如何在企业中为 Linux 配置 Microsoft Defender ATP。
+description: 介绍如何在企业版 Linux 上为终结点配置 Microsoft Defender。
 keywords: microsoft， defender， atp， linux， 安装， 部署， 卸载， 安装， ansible， linux， redhat， ubuntu， debian， sles， suse， centos
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 6ca6b3dd41b867145bfc4af331fb742be469d2a9
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 2c162d652656afb61f1d74bad9ec963825d25a14
+ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51688389"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51903866"
 ---
 # <a name="set-preferences-for-microsoft-defender-for-endpoint-on-linux"></a>在 Linux 上设置适用于终结点的 Microsoft Defender 的首选项
 

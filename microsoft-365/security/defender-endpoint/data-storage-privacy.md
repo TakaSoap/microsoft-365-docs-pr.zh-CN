@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 2b191c4a24ce170d23fc3d9e43293cc7bbe59e80
-ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
+ms.openlocfilehash: dfdfcdcfb8d76f95e3b866f5f95af7efd94ed59e
+ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/20/2021
-ms.locfileid: "51892813"
+ms.locfileid: "51904124"
 ---
 # <a name="microsoft-defender-for-endpoint-data-storage-and-privacy"></a>Microsoft Defender for Endpoint 数据存储和隐私
 
@@ -90,7 +90,7 @@ Microsoft Azure 政府数据中心中部署的服务的数据访问权限仅授�
 
 ## <a name="how-long-will-microsoft-store-my-data-what-is-microsofts-data-retention-policy"></a>Microsoft 将存储我的数据多久？ 什么是 Microsoft 的数据保留策略？
 **在服务载入时**<br>
-你可以为数据选择数据保留策略。 这将确定适用于终结点的 Window Defender 存储你的数据多久。 可以灵活地选择一个月到六个月，以满足公司的法规合规性需求。
+默认情况下，数据保留 180 天;但是，您可以为数据指定数据保留策略。 这将确定适用于终结点的 Window Defender 存储你的数据多久。 可以灵活地选择一个月到六个月，以满足公司的法规合规性需求。
 
 **在合同终止或到期时**<br>
 当许可证在宽限期或暂停模式下时，你的数据将保留，并且将可供你使用。 在此期限结束时，该数据将从 Microsoft 系统中清除，使其不可恢复，不得晚于合同终止或到期的 180 天。

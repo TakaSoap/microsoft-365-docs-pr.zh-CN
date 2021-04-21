@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 733f86ed48b9cc7a68fb0cd346c7b15fdcc3ce65
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 803c0af0c495eedfd26023d4e71d98df6a1b1b64
+ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51187501"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51904018"
 ---
 # <a name="information-protection-in-windows-overview"></a>Windows 中的信息保护概述
 
@@ -41,7 +41,7 @@ ms.locfileid: "51187501"
 
 
 >[!TIP]
-> 阅读我们的博客文章，了解如何 [将 Microsoft Defender ATP](https://cloudblogs.microsoft.com/microsoftsecure/2019/01/17/windows-defender-atp-integrates-with-microsoft-information-protection-to-discover-protect-and-monitor-sensitive-data-on-windows-devices/)与 Microsoft 信息保护集成，以发现、保护和监视 Windows 设备上敏感数据。
+> 阅读我们的博客文章，了解如何将 Microsoft Defender for Endpoint (以前称为 Microsoft Defender ATP) 与 Microsoft 信息保护集成，以发现、保护和监视 Windows 设备上 [敏感数据](https://cloudblogs.microsoft.com/microsoftsecure/2019/01/17/windows-defender-atp-integrates-with-microsoft-information-protection-to-discover-protect-and-monitor-sensitive-data-on-windows-devices/)。
 
 Defender for Endpoint 应用以下方法来发现、分类和保护数据：
 
@@ -57,7 +57,7 @@ Defender for Endpoint 自动发现具有敏感度标签的文件和包含敏感�
 
 DLP 策略实施中的 Office 365 数据丢失防护 (类型) 两类：
 
-- 默认
+- 默认值
 - 自定义警报
 
 默认敏感信息类型包括诸如银行帐号、社会保险号或国家/市/市/区号等信息。 有关详细信息，请参阅 [敏感信息类型查找什么](https://docs.microsoft.com/office365/securitycompliance/what-the-sensitive-information-types-look-for)。

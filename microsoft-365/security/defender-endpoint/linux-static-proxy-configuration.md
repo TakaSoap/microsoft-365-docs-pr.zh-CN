@@ -1,7 +1,7 @@
 ---
-title: 适用于 Linux 静态代理发现的 Microsoft Defender ATP
+title: Linux 静态代理发现上的 Microsoft Defender for Endpoint
 ms.reviewer: ''
-description: 介绍如何为静态代理发现配置 Microsoft Defender ATP。
+description: 介绍如何在 Linux 上为终结点配置 Microsoft Defender，以用于静态代理发现。
 keywords: microsoft， defender， atp， linux， 安装， 代理
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 93d654773fc73903cbe0c5de289dcfdf9fd34f9f
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: e59727b6bb5fca58595764fc003009891546d8f6
+ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51687849"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51903842"
 ---
 # <a name="configure-microsoft-defender-for-endpoint-on-linux-for-static-proxy-discovery"></a>在 Linux 上为静态代理发现配置 Microsoft Defender for Endpoint
 
@@ -36,7 +36,7 @@ ms.locfileid: "51687849"
 
 > 想要体验适用于终结点的 Defender？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
 
-Microsoft Defender ATP 可以使用环境变量发现 ```HTTPS_PROXY``` 代理服务器。 必须在安装 **时和安装** 产品后配置此设置。
+Microsoft Defender for Endpoint 可以使用环境变量发现 ```HTTPS_PROXY``` 代理服务器。 必须在安装 **时和安装** 产品后配置此设置。
 
 ## <a name="installation-time-configuration"></a>安装时间配置
 

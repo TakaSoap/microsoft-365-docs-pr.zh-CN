@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 5e20c424f15561c8b6f0544b80aca6e30c56409d
-ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
+ms.openlocfilehash: 09ca9fb466efd7764f7459a4754cfb30c8100bdb
+ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/20/2021
-ms.locfileid: "51893325"
+ms.locfileid: "51904136"
 ---
 # <a name="get-devices-onboarded-to-microsoft-defender-for-endpoint"></a>获取载入到 Microsoft Defender for Endpoint 的设备
 
@@ -55,8 +55,8 @@ Defender for Endpoint 提供了几个用于载入 [Windows 10 设备的便捷选
 
 从 **载入卡中** ， **选择载入更多设备** 以在 Intune 上创建和分配配置文件。 该链接将你指向 Intune 上的设备合规性页面，该页面提供了载入状态类似的概述。
 
-![Intune 设备管理上的 Microsoft Defender ATP 设备合规性页面](images/secconmgmt_onboarding_1deviceconfprofile.png)<br>
-   *Intune 设备管理上的 Microsoft Defender ATP 设备合规性页面*
+![Intune 设备管理上的 Microsoft Defender for Endpoint 设备合规性页面](images/secconmgmt_onboarding_1deviceconfprofile.png)<br>
+   *Intune 设备管理上的 Microsoft Defender for Endpoint 设备合规性页面*
 
 >[!TIP]
 >或者，你可以从 [Microsoft Defender](https://portal.azure.com/) ATP 的所有服务 > Intune > 设备合规性> Microsoft Azure 门户中的 Defender for **Endpoint 载入合规性页面**。

@@ -1,7 +1,7 @@
 ---
-title: 适用于 Linux 资源的 Microsoft Defender ATP
+title: Linux 资源上的 Microsoft Defender for Endpoint
 ms.reviewer: ''
-description: 介绍适用于 Linux 的 Microsoft Defender ATP 的资源，包括如何卸载它、如何收集诊断日志、CLI 命令以及产品的已知问题。
+description: 介绍 Linux 上的 Microsoft Defender for Endpoint 的资源，包括如何卸载它、如何收集诊断日志、CLI 命令以及产品的已知问题。
 keywords: microsoft， defender， atp， linux， 安装， 部署， 卸载， 安装， ansible， linux， redhat， ubuntu， debian， sles， suse， centos
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: a4f2324bc47bdee38e1cdeed1e21b5f9063e9a5c
-ms.sourcegitcommit: 987f70e44e406ab6b1dd35f336a9d0c228032794
+ms.openlocfilehash: de2602bdc94507d27236b939553a6567b2587f36
+ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/05/2021
-ms.locfileid: "51587057"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51903138"
 ---
 # <a name="resources"></a>资源
 

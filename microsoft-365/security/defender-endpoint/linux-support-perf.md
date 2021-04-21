@@ -1,6 +1,6 @@
 ---
-title: 解决 Microsoft Defender for Endpoint for Linux 的性能问题
-description: 解决 Microsoft Defender Endpoint for Linux 中的性能问题。
+title: 解决 Linux 上的 Microsoft Defender for Endpoint 的性能问题
+description: 解决 Linux 上的 Microsoft Defender 终结点中的性能问题。
 keywords: microsoft， defender， atp， linux， 性能
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,12 +18,12 @@ mms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: cb43fd383606ab26ba2688ad5704bb7653e82a7f
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: 5aaa95ef8202f3d0957113d8f20a39e4d3840227
+ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51860335"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51903982"
 ---
 # <a name="troubleshoot-performance-issues-for-microsoft-defender-for-endpoint-on-linux"></a>解决 Linux 上的 Microsoft Defender for Endpoint 的性能问题
 
@@ -145,6 +145,6 @@ RTP (RTP) 是适用于 Linux 的 Defender for Endpoint 的一项功能，可持�
     >[!NOTE]
     > 应用程序将统计信息存储在内存中，并仅跟踪自文件启动和启用实时保护以来的文件活动。 在实时保护关闭之前或期间启动的进程不计入在内。 此外，仅计算触发扫描的事件。
 
-5. 为 Linux 配置 Microsoft Defender ATP，排除导致性能问题的进程或磁盘位置，并重新启用实时保护。
+5. 在 Linux 上配置 Microsoft Defender 终结点，排除导致性能问题的进程或磁盘位置，并重新启用实时保护。
 
-    有关详细信息，请参阅为适用于 Linux 的 Microsoft Defender ATP 配置和 [验证排除项](linux-exclusions.md)。
+    有关详细信息，请参阅为适用于 Linux 的 Microsoft Defender for Endpoint 配置和 [验证排除项](linux-exclusions.md)。

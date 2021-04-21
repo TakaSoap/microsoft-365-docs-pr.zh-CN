@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 当多个用户需要访问同一个邮箱时，会使用共享邮箱。 在创建共享邮箱之前，了解您需要了解的内容。
-ms.openlocfilehash: eb1947b5baffd97f067bfe4e0c6d71d5c1329d65
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 83e779d59a8e763b3d0c0482966e75604d5f1574
+ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50915982"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51903210"
 ---
 # <a name="about-shared-mailboxes"></a>关于共享邮箱
 
@@ -61,9 +61,9 @@ ms.locfileid: "50915982"
 
 
 > [!NOTE]
-> 若要访问共享邮箱，用户必须具有 Exchange Online 许可证，但共享邮箱不需要单独的许可证。 每个共享邮箱都有相应的用户帐户。 注意到你在创建共享邮箱时未被要求提供密码？ 该帐户有一个密码，但密码是系统生成的（未知）。 不应使用该帐户登录共享邮箱。 如果没有许可证，共享邮箱将限制为 50 GB。 若要将大小限制增加至 100 GB，必须为共享邮箱分配 Exchange Online 计划 2 许可证或 Exchange Online 计划 1 许可证Exchange Online Archiving附加许可证。 这还使您能够为无限量的存档存储容量启用自动扩展存档。 同样，如果要将共享邮箱置于诉讼保留状态，共享邮箱必须具有 Exchange Online 计划 2 许可证或 Exchange Online 计划 1 许可证Exchange Online Archiving附加许可证。 如果要应用高级功能（如适用于 Office 365 的 Microsoft Defender、高级电子数据展示或自动保留策略），共享邮箱必须获得这些功能的许可。
+> 若要访问共享邮箱，用户必须具有 Exchange Online 许可证，但共享邮箱不需要单独的许可证。 每个共享邮箱都有相应的用户帐户。 注意到你在创建共享邮箱时未被要求提供密码？ 该帐户有一个密码，但密码是系统生成的（未知）。 不应使用该帐户登录共享邮箱。 没有许可证，共享邮箱限制为 50 GB。 若要将大小限制增加到 100 GB，必须将共享邮箱分配给 Exchange Online Plan 2 许可证或 exchange Online Plan 1 许可证，后者包含 Exchange Online Archiving 附加许可证。 这样一来，还可针对无限数量的存档存储容量启用自动扩展存档。 同样，如果要将共享邮箱置于诉讼保留状态，共享邮箱必须具有 Exchange Online 计划 2 许可证或 Exchange Online 计划 1 许可证以及 Exchange Online Archiving 附加设备许可证。 如果要应用高级功能（如适用于 Office 365 的 Microsoft Defender、高级电子数据展示或自动保留策略），共享邮箱必须获得这些功能的许可。
 
-## <a name="related-articles"></a>相关文章
+## <a name="related-content"></a>相关内容
 
 [创建共享邮箱](create-a-shared-mailbox.md)
 

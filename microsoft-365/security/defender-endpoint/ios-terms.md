@@ -1,7 +1,7 @@
 ---
-title: 适用于 iOS 应用程序的 Microsoft Defender ATP 许可条款
+title: iOS 应用程序许可条款上的 Microsoft Defender for Endpoint
 ms.reviewer: ''
-description: 介绍适用于 iOS 的 Microsoft Defender ATP 许可条款
+description: 根据 iOS 许可条款描述 Microsoft Defender for Endpoint
 keywords: microsoft， defender， atp， iOS， 许可， 条款， 应用程序， 使用， 安装， 服务， 反馈， 范围，
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -19,12 +19,12 @@ ms.collection:
 ms.topic: conceptual
 hideEdit: true
 ms.technology: mde
-ms.openlocfilehash: 75bcf13120c05990abf2b20cd68f460219b73cd6
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: e2f2abbb27d1040f0fa9bcd1134103d54372b25b
+ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51688929"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51903958"
 ---
 # <a name="microsoft-defender-for-endpoint-on-ios-application-license-terms"></a>iOS 应用程序许可条款上的 Microsoft Defender for Endpoint
 

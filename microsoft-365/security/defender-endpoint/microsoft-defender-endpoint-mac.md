@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 406a0e699ea563670f41355d122aa54ba8667a0e
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 705b1fffbc38282441f66e0dc411cf09699cb3f9
+ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51687741"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51903762"
 ---
 # <a name="microsoft-defender-for-endpoint-on-mac"></a>Mac 上的 Microsoft Defender for Endpoint
 
@@ -87,6 +87,8 @@ ms.locfileid: "51687741"
 
 不支持 macOS 的 Beta 版本。
 
+不支持具有 M1 处理器的 macOS 设备。
+
 启用该服务后，可能需要配置网络或防火墙以允许其与终结点之间的出站连接。
 
 ### <a name="licensing-requirements"></a>许可要求
@@ -107,7 +109,7 @@ Mac 上的 Microsoft Defender for Endpoint 需要以下 Microsoft 批量许可�
 
 
 
-|**域列表电子表格**|**Description**|
+|**域列表电子表格**|**说明**|
 |:-----|:-----|
 |![适用于终结点 URL 电子表格的 Microsoft Defender 缩略图](images/mdatp-urls.png)<br/>  | 服务位置、地理位置和操作系统的特定 DNS 记录的电子表格。 <br><br>在此处下载[电子表格：mdatp-urls.xlsx。 ](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx)
 

@@ -4,7 +4,7 @@ description: 如何在主题中心管理主题。
 author: chuckedmonson
 ms.author: chucked
 manager: pamgreen
-ms.reviewer: cjtan
+ms.reviewer: ergradel
 audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -13,12 +13,12 @@ ms.collection:
 - enabler-strategic
 - m365initiative-viva-topics
 localization_priority: None
-ms.openlocfilehash: e2cbf62339e2ade240474fed9db86e68dc0b3bb4
-ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
+ms.openlocfilehash: 4532f5685fdde7c89ca59e5c22e1ad8afdf2b112
+ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51760118"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51904030"
 ---
 # <a name="manage-topics-in-the-topic-center-in-microsoft-viva-topics"></a>在 Microsoft Viva 主题的主题中心管理主题
 
@@ -29,23 +29,23 @@ ms.locfileid: "51760118"
 </br>
 
 
-在 Viva 主题中心，知识管理员可以查看"管理主题"页，以查看在知识管理员指定的 SharePoint 源位置中标识的主题。  
+在 Viva 主题中心，知识管理员可以查看"管理主题"页，以查看知识管理员指定的源位置中标识的主题。  
 
    ![主题中心](../media/knowledge-management/topic-center.png) </br> 
 
 
 
-知识管理器可帮助指导发现的主题完成主题生命周期，主题包括：
+知识管理器可帮助指导发现的主题完成各个主题生命周期阶段：
 
 - **建议：** 主题已由 AI 标识，并且具有足够的支持资源、连接和属性。
-- **已** 确认：已验证 AI 建议的主题。 验证通过知识管理器确认完成。 此外，如果至少有两个用户通过主题卡片上的反馈问题提供正面反馈，可以确认主题。
+- **已** 确认：已验证 AI 建议的主题。 验证通过知识管理器确认完成。 此外，如果通过主题卡片上的反馈机制收到最终用户的 2 票净，可以确认主题。
 - **已发布**：经确认的主题已计划：已进行手动编辑以提高其质量。
 - **已删除**：主题被知识管理员拒绝，并且不再对查看者可见。 如果主题在建议、确认或发布后被删除 (，该主题可能) 。 删除已发布的主题后，需要通过主题中心的"页面库"手动删除包含特用详细信息的页面。
 
    ![主题生命周期图表](../media/knowledge-management/topic-lifecycle.png) </br> 
 
 > [!Note] 
-> 在"管理主题"页上，每个知识管理员只能查看他们有权访问主题的文件和页面的主题。 这将反映在"建议"、已确认、已删除和"已发布"选项卡 **下列出的主题** 中。  但是，主题计数会显示组织中的总计数。
+> 在"管理主题"页上，每个知识管理员只能查看他们有权访问连接到该主题的基础文件和页面的主题。 此权限修整将反映在"建议"、"已确认"、"**已删除**"和"已发布"选项卡上 **的主题** 列表中。 但是，主题计数会显示组织中所有权限的总计数。
 
 ## <a name="requirements"></a>要求
 
@@ -56,7 +56,7 @@ ms.locfileid: "51760118"
 
 除非您具有"谁可以管理主题"权限，否则将无法在主题中心查看"管理主题 **"** 页。
 
-在主题中心中，知识经理可以审阅在指定的 SharePoint 源位置中标识的主题，并可以确认或拒绝这些主题。 如果主题发现中未找到新主题页，知识管理员还可以创建和发布新主题页，或者编辑现有主题页（如果需要更新）。
+在主题中心中，知识经理可以审阅在指定的源位置中标识的主题，并可以确认或拒绝这些主题。 如果主题发现中未找到新主题页，知识管理员还可以创建和发布新主题页，或者编辑现有主题页（如果需要更新）。
 
 
 ## <a name="review-suggested-topics"></a>查看建议的主题
@@ -89,15 +89,13 @@ ms.locfileid: "51760118"
 
 质量分数可帮助深入了解包含最多信息的主题，并且可用于查找可能需要手动编辑的主题。 例如，质量分数较低的主题可能是某些用户对 AI 在主题中包含的相关文件或网站没有 SharePoint 权限的结果。 参与者随后可以编辑主题，以在适当 (包含) ，然后所有可查看该主题的用户都可以查看这些信息。
 
-质量分数的范围为 1 到 100。 新发现的主题的质量分数将为 0，直到两个或多个用户查看它。 每个用户的质量分数由许多因素决定，例如为特定用户显示的内容量，这将控制用户的权限，因为每个主题页面都有针对 AI 生成的内容的安全修整。 "建议的主题"选项卡 **上显示** 的质量分数是每个用户的单个分数的平均值。
-
 ### <a name="impressions"></a>展示次数
 
-" **印象** "列显示向最终用户显示主题次数。 这包括通过搜索中的主题卡片、主题突出显示和主题中心视图查看。 它并不反映这些主题的点击率，但已显示该主题。 The **Impressions** column will show for topics in the **Suggested**， **Confirmed，** **Published，** and **Removed** tabs on the Manage Topics page.
+" **印象** "列显示向最终用户显示主题次数。 这包括通过搜索中的主题答案卡和主题突出显示的视图。 它并不反映这些主题的点击率，但已显示该主题。 The **Impressions** column will show for topics in the **Suggested**， **Confirmed，** **Published，** and **Removed** tabs on the Manage Topics page.
 
 ## <a name="confirmed-topics"></a>已确认的主题
 
-在"管理主题"页上，在指定的 SharePoint 源位置中发现并且已由知识经理确认的主题，或者由两个或多个人员通过卡片反馈机制确认的"众包"主题将在"已确认"选项卡中 **列出。** 如果需要，具有管理主题权限的用户可以审阅已确认的主题，并选择拒绝它们。
+在"管理主题"页上，在指定的 SharePoint 源位置中发现并已被知识经理确认或"众源"确认的主题 (通过卡片反馈机制平衡负用户投票与正用户投票) 将在"已确认"选项卡中列出。 如果需要，具有管理主题权限的用户可以审阅已确认的主题，并选择拒绝它们。
 
 查看已确认的主题：
 

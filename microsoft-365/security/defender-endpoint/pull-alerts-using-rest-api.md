@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: a7d13da6abfb2cd6c829b6fd04fdf94de8cd20b8
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 06028f64a3340aeeef52269bc8a1e739d18e6db7
+ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51186865"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51903114"
 ---
 # <a name="pull-microsoft-defender-for-endpoint-detections-using-siem-rest-api"></a>使用 SIEM REST API 拉取 Microsoft Defender 的终结点检测
 
@@ -63,7 +63,7 @@ Microsoft Defender for Endpoint 支持 _授权_ 流和客户端凭据流，以�
 >[!NOTE]
 >Microsoft Defender 安全中心将类似的警报检测合并到单个警报中。 此 API 基于您设置的查询参数，以原始形式拉取警报检测，从而使您可以应用自己的分组和筛选。 
 
-## <a name="before-you-begin"></a>准备工作
+## <a name="before-you-begin"></a>开始之前
 - 在调用 Microsoft Defender for Endpoint 终结点以拉取检测之前，你需要在 Azure Active Directory (AAD) 。 有关详细信息，请参阅在 [Microsoft Defender for Endpoint 中启用 SIEM 集成](enable-siem-integration.md)。
 
 - 请记下 Azure 应用程序注册过程中的下列值。需要使用这些值在服务或守护程序应用中配置 OAuth 流：
@@ -106,12 +106,12 @@ resource=https%3A%2F%2Fgraph.windows.net&client_id=35e0f735-5fe4-4693-9e68-3de80
 借助访问令牌，你的应用可以向 Microsoft Defender for Endpoint API 提出经过身份验证的请求。 您的应用必须将访问令牌附加到各个请求的授权头中。
 
 ### <a name="request-syntax"></a>请求语法
-方法 | 请求 URI
+Method | 请求 URI
 :---|:---|
 GET| 使用适用于你地区的 URI。 <br><br> **对于欧盟**： `https://wdatp-alertexporter-eu.windows.com/api/alerts` </br> **对于美国**： `https://wdatp-alertexporter-us.windows.com/api/alerts` <br> **对于英国**： `https://wdatp-alertexporter-uk.windows.com/api/alerts` 
 
 ### <a name="request-header"></a>请求标头
-页眉 | 类型 | 说明|
+标头 | 类型 | 说明|
 :--|:--|:--
 Authorization | string | 必填。 Azure AD 访问令牌，格式为 **Bearer** &lt; *token* &gt; 。 |
 
@@ -125,7 +125,7 @@ sinceTimeUtc | 日期时间 | 根据字段定义从中检索下限的警报： <
 untilTimeUtc | 日期时间 | 定义检索的上限警报。 <br> 该时间范围将为： `sinceTimeUtc` 从一次一 `untilTimeUtc` 次到一次。 <br><br> **注意**：如果未指定，默认值将为当前时间。
 ago | string | 在下列时间范围内拉取警报： `(current_time - ago)` 时而 `current_time` 时。 <br><br> 值应按照 ISO **8601 持续时间格式** 进行设置 <br> 示例： `ago=PT10M` 将拉取过去 10 分钟内收到的警报。
 limit | int | 定义要检索的警报数。 将基于定义的号码检索最新警报。<br><br> **注意**：如果未指定，将检索该时间范围内可用的所有警报。
-machinegroups | string | 指定要拉取警报的设备组。 <br><br> **注意**：如果未指定，将检索来自所有设备组的警报。 <br><br> 示例： <br><br> ```https://wdatp-alertexporter-eu.securitycenter.windows.com/api/Alerts/?machinegroups=UKMachines&machinegroups=FranceMachines```
+machinegroups | string | 指定要拉取警报的设备组。 <br><br> **注意**：如果未指定，将检索来自所有设备组的警报。 <br><br> 示例： <br><br> ```https://wdatp-alertexporter-eu.securitycenter.windows.com/api/alerts/?machinegroups=UKMachines&machinegroups=FranceMachines```
 DeviceCreatedMachineTags | string | 注册表中的单个设备标记。
 CloudCreatedMachineTags | string | 在 Microsoft Defender 安全中心中创建的设备标记。
 

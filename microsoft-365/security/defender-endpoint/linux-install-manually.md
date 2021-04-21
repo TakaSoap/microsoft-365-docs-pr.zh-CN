@@ -1,7 +1,7 @@
 ---
 title: 在 Linux 上手动部署 Microsoft Defender for Endpoint
 ms.reviewer: ''
-description: 介绍如何从命令行手动部署适用于 Linux 的 Microsoft Defender ATP。
+description: 介绍如何从命令行手动在 Linux 上部署 Microsoft Defender for Endpoint。
 keywords: microsoft， defender， atp， linux， 安装， 部署， 卸载， 安装， ansible， linux， redhat， ubuntu， debian， sles， suse， centos
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 78ea8b106253098791d71ef9ff788b7cf1df4ec7
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 2beb46c62de2e9720d1626e0e1e5ce806a6d7e19
+ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51688401"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51903912"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-linux-manually"></a>在 Linux 上手动部署 Microsoft Defender for Endpoint
 

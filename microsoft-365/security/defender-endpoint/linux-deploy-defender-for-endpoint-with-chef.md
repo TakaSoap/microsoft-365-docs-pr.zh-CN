@@ -16,14 +16,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 362222e4737b1a8dd6b8a0a284bf3bfb1903c288
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: aa699aae24b1e6383f5a2afbe7fce31e0f53805c
+ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51861440"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51903924"
 ---
-# <a name="deploy-defender-for-endpoint-on-linux-with-chef"></a>在 Linux 上部署适用于终结点的 Defender 和安装
+# <a name="deploy-defender-for-endpoint-on-linux-with-chef"></a>将 Defender for Endpoint 通过更新程序部署到更改版本
 
 开始之前：
 
@@ -110,7 +110,7 @@ end
 
 请确保将路径名称更新到载入文件的位置。
 若要测试在部署工作站上部署它，只需运行 ``sudo chef-client -z -o mdatp`` 。
-部署后，你应考虑根据为适用于 Linux 的 Microsoft Defender ATP 设置首选项 -Windows 安全中心，考虑创建配置文件并部署到  [|Microsoft Docs](/windows/security/threat-protection/microsoft-defender-atp/linux-preferences)。  
+部署后，你应考虑根据在 Linux 上设置 Microsoft Defender for Endpoint 的首选项，创建配置文件并  [部署到服务器](/linux-preferences.md)。  
 创建并测试配置文件后，你可以将该文件放置到指南/mdatp/files文件夹中，其中还放置了载入程序包。  然后，可以在 mdatp/recipies 文件夹中创建 settings_mdatp.rb 文件并添加以下文本：
 
 ```powershell

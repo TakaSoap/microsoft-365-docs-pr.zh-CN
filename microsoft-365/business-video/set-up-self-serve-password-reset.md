@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 了解如何让用户在 Microsoft 365 商业高级版中重置自己的密码。
-ms.openlocfilehash: 3ba46529dcbb8d5af7343aafbb9e5a5863b9139f
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 62f82f106327c5378310bac0d41fde8462449329
+ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51580422"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51903702"
 ---
 # <a name="set-up-self-service-password-reset"></a>设置自助式密码重置
 
@@ -42,3 +42,7 @@ ms.locfileid: "51580422"
 1. 选择 **"全部**"以启用自助服务密码重置，然后选择"保存 **"。**
 
 用户下次登录其帐户时，会要求用户输入其用户 ID 和密码。 他们选择 **"下** 一步"，然后选择是使用手机、电子邮件还是同时使用这两者进行身份验证。 他们输入接收的代码，选择验证 **，****然后选择完成。** 完成后，他们可以重置自己的密码。
+
+## <a name="related-content"></a>相关内容 
+
+[为组织](https://docs.microsoft.com/microsoft-365/admin/manage/set-password-expiration-policy)设置密码过期策略 (文章) 将单个用户的密码设置为永不过期[ (文章](https://docs.microsoft.com/microsoft-365/admin/add-users/set-password-to-never-expire)) 关闭用户的强密码 (文章) [](https://docs.microsoft.com/microsoft-365/admin/add-users/strong-password)
