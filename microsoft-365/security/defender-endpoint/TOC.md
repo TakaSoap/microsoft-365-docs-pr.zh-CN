@@ -475,6 +475,7 @@
 ####### [获取安全建议](get-security-recommendations.md)
 ####### [添加或删除计算机标记](add-or-remove-machine-tags.md)
 ####### [按 IP 查找计算机](find-machines-by-ip.md)
+####### [通过标记查找计算机](find-machines-by-tag.md)
 ####### [查找缺失的 KBS](get-missing-kbs-machine.md)
 ####### [设置设备值](set-device-value.md)
 
