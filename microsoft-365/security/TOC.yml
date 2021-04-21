@@ -29,6 +29,7 @@
         - name: SaaS 应用的推荐 MCAS 策略
           href: ./office-365-security/mcas-saas-access-policies.md
     - name: Microsoft 365 Defender
+      href: ./defender/index.yml
       items:
         - name: 概述
           items:
