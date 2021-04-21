@@ -1,6 +1,6 @@
 ---
-title: Microsoft Defender ATP for Linux 的缺失事件或警报问题疑难解答
-description: 解决 Microsoft Defender ATP for Linux 中缺少的事件或警报问题。
+title: 解决 Linux 上的 Microsoft Defender for Endpoint 的缺失事件或警报问题
+description: 解决 Linux 上的 Microsoft Defender for Endpoint 中缺少的事件或警报问题。
 keywords: microsoft， defender， atp， linux， 事件
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,37 +18,37 @@ mms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 5981cb75b4c835390e27d902b5950e3c68305200
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 40d394a4fc7349789dea9bd96ccdaf71067ab39e
+ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51687450"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51903994"
 ---
-# <a name="troubleshoot-missing-events-or-alerts-issues-for-microsoft-defender-for-endpoint-on-linux"></a><span data-ttu-id="ee81e-104">解决 Linux 上的 Microsoft Defender for Endpoint 的缺失事件或警报问题</span><span class="sxs-lookup"><span data-stu-id="ee81e-104">Troubleshoot missing events or alerts issues for Microsoft Defender for Endpoint on Linux</span></span>
+# <a name="troubleshoot-missing-events-or-alerts-issues-for-microsoft-defender-for-endpoint-on-linux"></a><span data-ttu-id="7f97a-104">解决 Linux 上的 Microsoft Defender for Endpoint 的缺失事件或警报问题</span><span class="sxs-lookup"><span data-stu-id="7f97a-104">Troubleshoot missing events or alerts issues for Microsoft Defender for Endpoint on Linux</span></span>
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-<span data-ttu-id="ee81e-105">**适用于：**</span><span class="sxs-lookup"><span data-stu-id="ee81e-105">**Applies to:**</span></span>
+<span data-ttu-id="7f97a-105">**适用于：**</span><span class="sxs-lookup"><span data-stu-id="7f97a-105">**Applies to:**</span></span>
 
-- [<span data-ttu-id="ee81e-106">Linux 上的 Microsoft Defender for Endpoint</span><span class="sxs-lookup"><span data-stu-id="ee81e-106">Microsoft Defender for Endpoint on Linux</span></span>](microsoft-defender-endpoint-linux.md)
+- [<span data-ttu-id="7f97a-106">Microsoft Defender for Endpoint on Linux</span><span class="sxs-lookup"><span data-stu-id="7f97a-106">Microsoft Defender for Endpoint on Linux</span></span>](microsoft-defender-endpoint-linux.md)
 
-<span data-ttu-id="ee81e-107">本文提供了一些常规步骤，以减少安全中心门户中丢失的事件 [或](https://securitycenter.windows.com/) 警报。</span><span class="sxs-lookup"><span data-stu-id="ee81e-107">This article provides some general steps to mitigate missing events or alerts in the [security center](https://securitycenter.windows.com/) portal.</span></span>
+<span data-ttu-id="7f97a-107">本文提供了一些常规步骤，以减少安全中心门户中丢失的事件 [或](https://securitycenter.windows.com/) 警报。</span><span class="sxs-lookup"><span data-stu-id="7f97a-107">This article provides some general steps to mitigate missing events or alerts in the [security center](https://securitycenter.windows.com/) portal.</span></span>
 
-<span data-ttu-id="ee81e-108">在 **设备上** 正确安装 Microsoft Defender for Endpoint 后 _，将在门户_ 中生成设备页面。</span><span class="sxs-lookup"><span data-stu-id="ee81e-108">Once **Microsoft Defender for Endpoint** has been installed properly on a device, a _device page_ will be generated in the portal.</span></span> <span data-ttu-id="ee81e-109">可以在设备页面的时间线选项卡或高级搜寻页面中查看所有记录的事件。</span><span class="sxs-lookup"><span data-stu-id="ee81e-109">You can review all recorded events in the timeline tab in the device page, or in advanced hunting page.</span></span> <span data-ttu-id="ee81e-110">本节将解决缺失某些或所有预期事件的情况。</span><span class="sxs-lookup"><span data-stu-id="ee81e-110">This section troubleshoots the case of some or all expected events are missing.</span></span>
-<span data-ttu-id="ee81e-111">例如，如果缺少 _所有 CreatedFile_ 事件。</span><span class="sxs-lookup"><span data-stu-id="ee81e-111">For instance, if all _CreatedFile_ events are missing.</span></span>
+<span data-ttu-id="7f97a-108">在 **设备上** 正确安装 Microsoft Defender for Endpoint 后 _，将在门户_ 中生成设备页面。</span><span class="sxs-lookup"><span data-stu-id="7f97a-108">Once **Microsoft Defender for Endpoint** has been installed properly on a device, a _device page_ will be generated in the portal.</span></span> <span data-ttu-id="7f97a-109">可以在设备页面的时间线选项卡或高级搜寻页面中查看所有记录的事件。</span><span class="sxs-lookup"><span data-stu-id="7f97a-109">You can review all recorded events in the timeline tab in the device page, or in advanced hunting page.</span></span> <span data-ttu-id="7f97a-110">本节将解决缺失某些或所有预期事件的情况。</span><span class="sxs-lookup"><span data-stu-id="7f97a-110">This section troubleshoots the case of some or all expected events are missing.</span></span>
+<span data-ttu-id="7f97a-111">例如，如果缺少 _所有 CreatedFile_ 事件。</span><span class="sxs-lookup"><span data-stu-id="7f97a-111">For instance, if all _CreatedFile_ events are missing.</span></span>
 
-## <a name="missing-network-and-login-events"></a><span data-ttu-id="ee81e-112">缺少网络和登录事件</span><span class="sxs-lookup"><span data-stu-id="ee81e-112">Missing network and login events</span></span>
+## <a name="missing-network-and-login-events"></a><span data-ttu-id="7f97a-112">缺少网络和登录事件</span><span class="sxs-lookup"><span data-stu-id="7f97a-112">Missing network and login events</span></span>
 
-<span data-ttu-id="ee81e-113">Microsoft Defender for Endpoint 利用 `audit` linux 中的框架跟踪网络和登录活动。</span><span class="sxs-lookup"><span data-stu-id="ee81e-113">Microsoft Defender for Endpoint utilized `audit` framework from linux to track network and login activity.</span></span>
+<span data-ttu-id="7f97a-113">Microsoft Defender for Endpoint 利用 `audit` linux 中的框架跟踪网络和登录活动。</span><span class="sxs-lookup"><span data-stu-id="7f97a-113">Microsoft Defender for Endpoint utilized `audit` framework from linux to track network and login activity.</span></span>
 
-1. <span data-ttu-id="ee81e-114">确保审核框架正常工作。</span><span class="sxs-lookup"><span data-stu-id="ee81e-114">Make sure audit framework is working.</span></span>
+1. <span data-ttu-id="7f97a-114">确保审核框架正常工作。</span><span class="sxs-lookup"><span data-stu-id="7f97a-114">Make sure audit framework is working.</span></span>
 
     ```bash
     service auditd status
     ```
 
-    <span data-ttu-id="ee81e-115">预期输出：</span><span class="sxs-lookup"><span data-stu-id="ee81e-115">expected output:</span></span>
+    <span data-ttu-id="7f97a-115">预期输出：</span><span class="sxs-lookup"><span data-stu-id="7f97a-115">expected output:</span></span>
 
     ```output
     ● auditd.service - Security Auditing Service
@@ -67,33 +67,33 @@ ms.locfileid: "51687450"
             └─16671 /opt/microsoft/mdatp/sbin/mdatp_audisp_plugin -d
     ```
 
-2. <span data-ttu-id="ee81e-116">如果 `auditd` 标记为已停止，请启动它。</span><span class="sxs-lookup"><span data-stu-id="ee81e-116">If `auditd` is marked as stopped, start it.</span></span>
+2. <span data-ttu-id="7f97a-116">如果 `auditd` 标记为已停止，请启动它。</span><span class="sxs-lookup"><span data-stu-id="7f97a-116">If `auditd` is marked as stopped, start it.</span></span>
 
     ```bash
     service auditd start
     ```
 
-<span data-ttu-id="ee81e-117">**在 SLES** 系统上，默认情况下可能会禁用 中的 SYSCALL 审核，并可以说明 `auditd` 缺少事件。</span><span class="sxs-lookup"><span data-stu-id="ee81e-117">**On SLES** systems, SYSCALL auditing in `auditd` might be disabled by default and can be accounted for missing events.</span></span>
+<span data-ttu-id="7f97a-117">**在 SLES** 系统上，默认情况下可能会禁用 中的 SYSCALL 审核，并可以说明 `auditd` 缺少事件。</span><span class="sxs-lookup"><span data-stu-id="7f97a-117">**On SLES** systems, SYSCALL auditing in `auditd` might be disabled by default and can be accounted for missing events.</span></span>
 
-1. <span data-ttu-id="ee81e-118">若要验证 SYSCALL 审核是否未禁用，请列出当前的审核规则：</span><span class="sxs-lookup"><span data-stu-id="ee81e-118">To validate that SYSCALL auditing is not disabled, list the current audit rules:</span></span>
+1. <span data-ttu-id="7f97a-118">若要验证 SYSCALL 审核是否未禁用，请列出当前的审核规则：</span><span class="sxs-lookup"><span data-stu-id="7f97a-118">To validate that SYSCALL auditing is not disabled, list the current audit rules:</span></span>
 
     ```bash
     sudo auditctl -l
     ```
 
-    <span data-ttu-id="ee81e-119">如果存在以下行，请将其删除或编辑它以允许 Microsoft Defender for Endpoint 跟踪特定的 SYSCALLs。</span><span class="sxs-lookup"><span data-stu-id="ee81e-119">if the following line is present, remove it or edit it to enable Microsoft Defender for Endpoint to track specific SYSCALLs.</span></span>
+    <span data-ttu-id="7f97a-119">如果存在以下行，请将其删除或编辑它以允许 Microsoft Defender for Endpoint 跟踪特定的 SYSCALLs。</span><span class="sxs-lookup"><span data-stu-id="7f97a-119">if the following line is present, remove it or edit it to enable Microsoft Defender for Endpoint to track specific SYSCALLs.</span></span>
 
     ```output
     -a task, never
     ```
 
-    <span data-ttu-id="ee81e-120">审核规则位于 `/etc/audit/rules.d/audit.rules` 。</span><span class="sxs-lookup"><span data-stu-id="ee81e-120">audit rules are located at `/etc/audit/rules.d/audit.rules`.</span></span>
+    <span data-ttu-id="7f97a-120">审核规则位于 `/etc/audit/rules.d/audit.rules` 。</span><span class="sxs-lookup"><span data-stu-id="7f97a-120">audit rules are located at `/etc/audit/rules.d/audit.rules`.</span></span>
 
-## <a name="missing-file-events"></a><span data-ttu-id="ee81e-121">缺少文件事件</span><span class="sxs-lookup"><span data-stu-id="ee81e-121">Missing file events</span></span>
+## <a name="missing-file-events"></a><span data-ttu-id="7f97a-121">缺少文件事件</span><span class="sxs-lookup"><span data-stu-id="7f97a-121">Missing file events</span></span>
 
-<span data-ttu-id="ee81e-122">文件事件通过框架 `fanotify` 收集。</span><span class="sxs-lookup"><span data-stu-id="ee81e-122">File events are collected with `fanotify` framework.</span></span> <span data-ttu-id="ee81e-123">如果缺少某些或所有文件事件，请确保在设备上启用并且 `fanotify` 文件系统受 [支持](microsoft-defender-endpoint-linux.md#system-requirements)。</span><span class="sxs-lookup"><span data-stu-id="ee81e-123">In case some or all file events are missing, make sure `fanotify` is enabled on the device and that the file system is [supported](microsoft-defender-endpoint-linux.md#system-requirements).</span></span>
+<span data-ttu-id="7f97a-122">文件事件通过框架 `fanotify` 收集。</span><span class="sxs-lookup"><span data-stu-id="7f97a-122">File events are collected with `fanotify` framework.</span></span> <span data-ttu-id="7f97a-123">如果缺少某些或所有文件事件，请确保在设备上启用并且 `fanotify` 文件系统受 [支持](microsoft-defender-endpoint-linux.md#system-requirements)。</span><span class="sxs-lookup"><span data-stu-id="7f97a-123">In case some or all file events are missing, make sure `fanotify` is enabled on the device and that the file system is [supported](microsoft-defender-endpoint-linux.md#system-requirements).</span></span>
 
-<span data-ttu-id="ee81e-124">列出计算机上具有以下项的文件系统：</span><span class="sxs-lookup"><span data-stu-id="ee81e-124">List the filesystems on the machine with:</span></span>
+<span data-ttu-id="7f97a-124">列出计算机上具有以下项的文件系统：</span><span class="sxs-lookup"><span data-stu-id="7f97a-124">List the filesystems on the machine with:</span></span>
 
 ```bash
 df -Th
