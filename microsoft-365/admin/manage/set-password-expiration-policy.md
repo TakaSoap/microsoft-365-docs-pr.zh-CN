@@ -23,12 +23,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0f54736f-eb22-414c-8273-498a0918678f
 description: 了解如何在 Microsoft 365 管理中心为组织设置密码过期策略。
-ms.openlocfilehash: 0280f4fd43034f9ffb70104771fa4a099943af2d
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: 14ff08126533d5c530fb56761a2ef1676d5864b8
+ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51500232"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51903150"
 ---
 # <a name="set-the-password-expiration-policy-for-your-organization"></a>为组织设置密码过期策略
 
@@ -45,7 +45,7 @@ ms.locfileid: "51500232"
 
 作为管理员，可让用户密码在特定天数后过期，或将密码设置为永不过期。 默认情况下，密码设置为对组织永不过期。
 
-当前研究强烈表明，强制实施的密码更改弊大于利。 它们会导致用户选择安全性更弱的密码、重复使用密码，或者以很容易被黑客猜出的方式更新旧密码。 我们已建议启用 [多重身份验证](../security-and-compliance/set-up-multi-factor-authentication.md)。
+当前研究强烈表明，强制实施的密码更改弊大于利。 它们会导致用户选择安全性更弱的密码、重复使用密码，或者以很容易被黑客猜出的方式更新旧密码。 我们已建议启用 [多重身份验证](../security-and-compliance/set-up-multi-factor-authentication.md)。 要了解有关密码策略的详细信息，请查看[密码策略建议](../misc/password-policy-recommendations.md)。
 
 必须是 [全局管理员](../add-users/about-admin-roles.md) 才能执行这些步骤。
 
