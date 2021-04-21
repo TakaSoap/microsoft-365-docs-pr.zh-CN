@@ -175,6 +175,9 @@
 ##### [启用受控文件夹访问](enable-controlled-folders.md)
 ##### [自定义受控文件夹访问](customize-controlled-folders.md)
 
+#### [设备控制]()
+##### [设备控制报告](device-control-report.md)
+##### [控制 USB 设备](control-usb-devices-using-intune.md)
 
 ### [设备发现]()
 #### [设备发现概述](device-discovery.md)
