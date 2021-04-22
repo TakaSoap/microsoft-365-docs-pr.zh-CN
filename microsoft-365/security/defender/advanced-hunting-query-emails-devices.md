@@ -1,7 +1,7 @@
 ---
 title: 使用高级搜寻跨设备、电子邮件、应用和标识搜寻威胁
 description: 研究涉及设备、电子邮件、应用和标识的常见搜寻方案和示例查询。
-keywords: 高级搜寻， Office365 数据， Windows 设备， Office365 电子邮件规范化， 电子邮件， 应用， 标识， 威胁搜寻， 网络威胁搜寻， 搜索， 查询， 遥测， Microsoft 365， Microsoft 威胁防护
+keywords: 高级搜寻， Office365 数据， Windows 设备， Office365 电子邮件规范化， 电子邮件， 应用， 标识， 威胁搜寻， 网络威胁搜寻， 搜索， 查询， 遥测， Microsoft 365， Microsoft 365 Defender
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 0fb8bb54e6a893fb434fe453c70ed38b8e8ccb30
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: 8a811d60af281bb534776736e77c3eb54ab6a760
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51499317"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51932961"
 ---
 # <a name="hunt-for-threats-across-devices-emails-apps-and-identities"></a>跨设备、电子邮件、应用和标识搜索威胁
 

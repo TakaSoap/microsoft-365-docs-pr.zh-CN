@@ -1,7 +1,7 @@
 ---
 title: 将 Windows 服务器载入 Microsoft Defender for Endpoint 服务
 description: 载入 Windows 服务器，以便它们可以将传感器数据发送到 Microsoft Defender for Endpoint 传感器。
-keywords: 载入服务器， 服务器， 2012r2， 2016， 2019， 服务器载入， 设备管理， 配置 Windows ATP 服务器， 载入 Microsoft Defender 终结点服务器， 载入 Microsoft Defender for Endpoint Server
+keywords: 载入服务器， 服务器， 2012r2， 2016， 2019， 服务器载入， 设备管理， 配置适用于终结点服务器的 Microsoft Defender， 载入适用于终结点服务器的 Microsoft Defender， 载入适用于终结点服务器的 Microsoft Defender
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: f2660f19d4b6b0d5f8e2dbf48843002a2bfb7f1d
-ms.sourcegitcommit: 4acf613587128cae27e0fd470d1216b509775529
+ms.openlocfilehash: 4eea2931196c192620812c1609c506e1fb99093d
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/15/2021
-ms.locfileid: "51769040"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51932949"
 ---
 # <a name="onboard-windows-servers-to-the-microsoft-defender-for-endpoint-service"></a>将 Windows 服务器载入 Microsoft Defender for Endpoint 服务
 
@@ -55,7 +55,7 @@ Defender for Endpoint 扩展了支持，还包括 Windows Server 操作系统。
 使用提供的任一选项完成载入步骤后，你需要配置和更新 [System Center Endpoint Protection 客户端](#configure-and-update-system-center-endpoint-protection-clients)。
 
 > [!NOTE]
-> 每个节点都需要 Defender for Endpoint 独立服务器许可证，才能通过 Microsoft 监视代理 (选项 1) 或 Microsoft Endpoint Manager (选项 3) 载入 Windows 服务器。 或者，每个节点都需要 Azure Defender for Servers 许可证，才能通过 Azure 安全中心 (选项 2) 载入 Windows 服务器，请参阅 Azure 安全中心中提供的支持 [功能](https://docs.microsoft.com/azure/security-center/security-center-services)。
+> 每个节点都需要 Defender for Endpoint 独立服务器许可证，才能通过 Microsoft 监视代理 (选项 1) 或 Microsoft Endpoint Manager (选项 3) 载入 Windows 服务器。 或者，每个节点都需要 Azure Defender for Servers 许可证，才能通过 Azure 安全中心 (选项 2) 载入 Windows 服务器，请参阅 [Azure Defender](https://docs.microsoft.com/azure/security-center/security-center-services)中提供的支持功能。
 
 ### <a name="option-1-onboard-by-installing-and-configuring-microsoft-monitoring-agent-mma"></a>选项 1：通过安装和配置 Microsoft Monitoring Agent (MMA) 
 
@@ -127,13 +127,13 @@ Defender for Endpoint 扩展了支持，还包括 Windows Server 操作系统。
 
 3. 单击 **Azure 安全中心中的载入服务器**。
 
-4. 按照 Microsoft Defender [for Endpoint with Azure 安全](https://docs.microsoft.com/azure/security-center/security-center-wdatp) 中心中的载入说明操作，如果你使用的是 Azure ARC，请按照启用适用于终结点集成的 Microsoft Defender [中的载入说明操作](https://docs.microsoft.com/azure/security-center/security-center-wdatp#enabling-the-microsoft-defender-for-endpoint-integration)。
+4. 按照使用 Azure Defender 的 [Microsoft Defender for Endpoint](https://docs.microsoft.com/azure/security-center/security-center-wdatp) 中的载入说明操作，如果你使用的是 Azure ARC，请按照启用适用于终结点集成的 Microsoft Defender [中的载入说明操作](https://docs.microsoft.com/azure/security-center/security-center-wdatp#enabling-the-microsoft-defender-for-endpoint-integration)。
 
 完成载入步骤后，你需要配置和更新 System Center [Endpoint Protection 客户端](#configure-and-update-system-center-endpoint-protection-clients)。
 
 > [!NOTE]
 >
-> - 若要通过 Azure Defender for Servers (以前是 Azure 安全中心标准版) 载入，服务器必须在 Microsoft 监视代理 (MMA) 设置中配置适当的工作区和密钥。
+> - 若要通过 Azure Defender for Servers 载入以正常工作，服务器必须在 Microsoft Monitoring Agent (MMA) 配置相应的工作区和密钥。
 > - 配置后，相应的云管理包将部署在计算机中，并且传感器 (MsSenseS.exe) 将部署和启动。
 > - 如果服务器配置为使用 OMS 网关服务器作为代理，则也要求这样做。
 
@@ -188,26 +188,25 @@ Defender for Endpoint 扩展了支持，还包括 Windows Server 操作系统。
 
     有关如何使用组策略在 Windows 服务器上配置和管理 Microsoft Defender 防病毒的信息，请参阅使用组策略设置配置 [和管理 Microsoft Defender 防病毒](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/use-group-policy-microsoft-defender-antivirus)。
 
-## <a name="integration-with-azure-security-center"></a>与 Azure 安全中心集成
+## <a name="integration-with-azure-defender"></a>与 Azure Defender 集成
 
-Defender for Endpoint 可以与 Azure 安全中心集成，以提供全面的 Windows 服务器保护解决方案。 通过此集成，Azure 安全中心可以使用 Defender for Endpoint 功能为 Windows 服务器提供改进的威胁检测。
+Defender for Endpoint 可以与 Azure Defender 集成，以提供全面的 Windows 服务器保护解决方案。 通过此集成，Azure Defender 可以使用 Defender for Endpoint 功能为 Windows 服务器提供改进的威胁检测。
 
 此集成中包含以下功能：
 
-- 自动载入 - 在载入到 Azure 安全中心的 Windows 服务器上自动启用 Defender for Endpoint 传感器。 有关 Azure 安全中心载入详细信息，请参阅载入 Azure 安全中心 [标准增强的安全性](https://docs.microsoft.com/azure/security-center/security-center-onboarding)。
+- 自动载入 - 适用于终结点的 Defender 传感器在载入到 Azure Defender 的 Windows 服务器上自动启用。 有关 Azure Defender 载入详细信息，请参阅 [载入 Azure Defender 标准版，增强安全性](https://docs.microsoft.com/azure/security-center/security-center-onboarding)。
 
     > [!NOTE]
     > Azure Defender for Servers 和 Microsoft Defender for Endpoint 之间的集成已扩展为支持[Windows Server 2019 和 Windows 虚拟桌面 (WVD) 。 ](https://docs.microsoft.com/azure/security-center/release-notes#microsoft-defender-for-endpoint-integration-with-azure-defender-now-supports-windows-server-2019-and-windows-10-virtual-desktop-wvd-in-preview)
 
-- Azure 安全中心监视的 Windows 服务器还将在 Defender for Endpoint 中可用 - Azure 安全中心无缝连接到 Defender for Endpoint 租户，跨客户端和服务器提供单个视图。  此外，适用于终结点的 Defender 警报将在 Azure 安全中心控制台中提供。
-- 服务器调查 - Azure 安全中心客户可以访问 Microsoft Defender 安全中心执行详细调查，以发现潜在泄露的范围。
+- 受 Azure Defender 监视的 Windows 服务器还将在 Defender for Endpoint 中可用 - Azure Defender 无缝连接到 Defender for Endpoint 租户，跨客户端和服务器提供单个视图。  此外，适用于终结点的 Defender 警报将在 Azure Defender 控制台中提供。
+- 服务器调查 - Azure Defender 客户可以访问 Microsoft Defender 安全中心执行详细调查，以发现潜在泄露的范围。
 
 > [!IMPORTANT]
->
-> - 当你使用 Azure 安全中心监视服务器时，会自动在美国为美国 (，在欧盟为欧洲和英国用户创建 Defender for Endpoint) 。
+> - 当你使用 Azure Defender 监视服务器时，会自动在美国为美国 (，在欧盟为欧洲用户和英国用户创建 Defender) 。<br>
 Defender for Endpoint 收集的数据存储在预配期间标识的租户地理位置中。
-> - 如果在使用 Azure 安全中心之前使用 Defender for Endpoint，则数据将存储在创建租户时指定的位置，即使以后与 Azure 安全中心集成。
-> - 配置后，你无法更改数据存储的位置。 如果需要将数据移动到其他位置，需要联系 Microsoft 支持部门来重置租户。
+> - 如果在使用 Azure Defender 之前使用 Defender for Endpoint，则数据将存储在创建租户时指定的位置，即使以后与 Azure Defender 集成。
+> - 配置后，你无法更改数据存储的位置。 如果需要将数据移动到其他位置，需要联系 Microsoft 支持部门来重置租户。 <br>
 已针对 Office 365 GCC 客户禁用利用此集成的服务器终结点监视。
 
 ## <a name="configure-and-update-system-center-endpoint-protection-clients"></a>配置和更新 System Center Endpoint Protection 客户端

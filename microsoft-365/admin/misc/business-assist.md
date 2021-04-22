@@ -16,12 +16,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: 了解 Business Assist 计划及其如何帮助你的组织改进 Microsoft 365 商业版的帮助和使用。
-ms.openlocfilehash: 4531c841b4856e22b364906c180aa336cb8fd04a
-ms.sourcegitcommit: c75aac39ee8d93218a79585113ef6b36f47c9ddf
+ms.openlocfilehash: 767146cbbb68ff2e6632a7cae74a8b232834b01b
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2021
-ms.locfileid: "51408521"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51929022"
 ---
 # <a name="business-assist-for-microsoft-365"></a>Microsoft 365 商业帮助
 
@@ -55,7 +55,7 @@ ms.locfileid: "51408521"
 
 2. 选择 **Microsoft** **365 小型企业版协助** 的详细信息并完成购买。
 
-:::image type="content" source="../../media/projectgenie-purchase services.png" alt-text="Screeenshot： Purchase Business Assist from the Add-ons section on the Purchase services page":::
+:::image type="content" source="../../media/business-assist-april.png" alt-text="Screeenshot： Purchase Business Assist from the Add-ons section on the Purchase services page":::
 
 > [!div class="nextstepaction"]
 > [立即购买](https://go.microsoft.com/fwlink/p/?linkid=2158423)

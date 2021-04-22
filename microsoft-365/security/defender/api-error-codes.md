@@ -1,7 +1,7 @@
 ---
 title: 常见的 Microsoft 365 Defender REST API 错误代码
 description: 了解常见的 Microsoft 365 Defender REST API 错误代码
-keywords: api， 错误， 代码， 常见错误， mtp， api 错误代码
+keywords: api， 错误， 代码， 常见错误， Microsoft 365 Defender， api 错误代码
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: ab564ddb0263b501b6aca979f2148dfb5cf92758
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: e621b79d37a2c3a22394bd51e0493334eff461c7
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51056557"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51932877"
 ---
 # <a name="common-microsoft-365-defender-rest-api-error-codes"></a>常见的 Microsoft 365 Defender REST API 错误代码
 
@@ -33,7 +33,7 @@ ms.locfileid: "51056557"
 
 **适用于：**
 
-- Microsoft 威胁防护
+- Microsoft 365 Defender
 
 > [!IMPORTANT]
 > 某些信息与预发布的产品有关，在商业发布之前可能有重大修改。 Microsoft 对此处所提供的信息不作任何明示或默示的保证。

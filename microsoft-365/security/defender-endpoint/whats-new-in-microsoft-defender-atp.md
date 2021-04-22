@@ -1,7 +1,7 @@
 ---
 title: Microsoft Defender for Endpoint 中的新增功能
 description: 请参阅最新版本的 Microsoft Defender for Endpoint (GA) 中通常提供哪些功能，以及 Windows 10 和 Windows Server 中的安全功能。
-keywords: microsoft defender 终结点的新增功能， ga， 通用， 功能， 可用， 新增
+keywords: 适用于终结点的 Microsoft Defender 中的新增功能， ga， 通用， 功能， 可用， 新
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: c9f4c0689739224b00c9c14db1482d54faab3512
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: abb20fe79077eda5c50c9aa36829e0dd45e756b8
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51688233"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51932615"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint 中的新增功能
 
@@ -67,7 +67,7 @@ ms.locfileid: "51688233"
 - [创建证书指示器](manage-indicators.md) <br> 创建指示器以允许或阻止证书。 
 
 ## <a name="june-2020"></a>2020 年 6 月
-- [Linux 上的 Microsoft Defender for Endpoint](microsoft-defender-endpoint-linux.md) <br> Microsoft Defender for Endpoint 现在增加了对 Linux 的支持。 了解如何在 Linux 上安装、配置、更新和使用 Microsoft Defender for Endpoint。
+- [Microsoft Defender for Endpoint on Linux](microsoft-defender-endpoint-linux.md) <br> Microsoft Defender for Endpoint 现在增加了对 Linux 的支持。 了解如何在 Linux 上安装、配置、更新和使用 Microsoft Defender for Endpoint。
 
 - [评估实验室中的攻击模拟器](evaluation-lab.md#threat-simulator-scenarios) <br> Microsoft Defender for Endpoint 已与各种威胁模拟平台合作，让你可以方便地从门户内测试平台的功能。
 
@@ -150,7 +150,7 @@ ms.locfileid: "51688233"
 
 - [自定义检测](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/overview-custom-detections)<BR>通过自定义检测，你可以创建自定义查询来监视任何类型的行为（如可疑或新出现的威胁）的事件。 这可以通过创建自定义检测规则来利用高级搜寻功能实现。 
 
-- [与 Azure 安全中心集成](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/configure-server-endpoints-windows-defender-advanced-threat-protection#integration-with-azure-security-center)<BR> Microsoft Defender for Endpoint 与 Azure 安全中心集成，可提供全面的服务器保护解决方案。 通过此集成，Azure 安全中心可以利用 Microsoft Defender for Endpoint 功能为 Windows 服务器提供改进的威胁检测。
+- [与 AAzure Defender 集成](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/configure-server-endpoints-windows-defender-advanced-threat-protection#integration-with-azure-security-center)<BR> Microsoft Defender for Endpoint 与 Azure Defender 集成，以提供全面的服务器保护解决方案。 通过此集成，Azure Defender 可以利用 Microsoft Defender for Endpoint 功能为 Windows 服务器提供改进的威胁检测。
 
 - [托管安全服务提供程序 (MSSP) 支持](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/mssp-support-windows-defender-advanced-threat-protection)<BR> Microsoft Defender for Endpoint 通过提供 MSSP 集成添加了对此方案的支持。 该集成将允许 MSSP 执行以下操作：获取对 MSSP 客户的 Microsoft Defender 安全中心门户的访问权限、获取电子邮件通知，并通过 SIEM) 工具的安全信息和事件管理获取警报 (SIEM。
 
@@ -165,7 +165,7 @@ ms.locfileid: "51688233"
   - 阻止 Adobe Reader 创建子进程
   - 阻止 Office 通信应用程序创建子进程。
   
-- [Microsoft Defender 防病毒](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10)
+- [Microsoft Defender 防病毒软件](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10)
     - 反恶意软件扫描接口 (AMSI) 扩展为涵盖 Office VBA 宏。 [Office VBA + AMSI：将恶意宏上的宏分在一起](https://cloudblogs.microsoft.com/microsoftsecure/2018/09/12/office-vba-amsi-parting-the-veil-on-malicious-macros/)。
     - Microsoft Defender 防病毒是 Windows 10 版本 1809[](https://www.microsoft.com/security/blog/2018/10/26/windows-defender-antivirus-can-now-run-in-a-sandbox)中的新增功能，现在可以在沙盒 (预览) 运行，从而提升其安全性。
     - 配置 Microsoft Defender[防病毒扫描](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-advanced-scan-types-microsoft-defender-antivirus)的 CPU 优先级设置。
@@ -204,7 +204,7 @@ ms.locfileid: "51688233"
     使用基于角色的访问控制 (RBAC) ，可以在安全操作团队内创建角色和组，以授予对门户的适当访问权限。
 
 
-- [Microsoft Defender 防病毒](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10)<BR>
+- [Microsoft Defender 防病毒软件](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10)<BR>
 Microsoft Defender 防病毒现在在 M365 服务之间共享检测状态，并与 Microsoft Defender for Endpoint 进行互操作。 有关详细信息，请参阅通过云提供的保护使用 Microsoft Defender 防病毒中的 [下一代技术](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/utilize-microsoft-cloud-protection-microsoft-defender-antivirus)。
 
     "首次看到时阻止"现在可以阻止不可移植的可执行 (，例如 JS、VBS 或宏) 可执行文件。 有关详细信息，请参阅启用 [首次看到时阻止](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-block-at-first-sight-microsoft-defender-antivirus)。

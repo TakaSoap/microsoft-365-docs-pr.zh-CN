@@ -1,7 +1,7 @@
 ---
 title: 迁移后管理 Microsoft Defender for Endpoint
 description: 现在，你已切换到 Microsoft Defender for Endpoint，下一步是管理威胁防护功能
-keywords: 迁移后， 管理， 操作， 维护， 利用率， windows defender 高级威胁防护， atp， edr
+keywords: 迁移后， 管理， 操作， 维护， 利用率， Microsoft Defender for Endpoint， edr
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,12 +20,12 @@ ms.collection:
 ms.topic: conceptual
 ms.date: 01/26/2021
 ms.reviewer: chventou
-ms.openlocfilehash: 54302f38f0fd63560ecd1c5545efa4621c6b9bbd
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: eedd13030fd6a649985dc7280dc256e4ab35089a
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51185857"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933189"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-post-migration"></a>管理 Microsoft Defender for Endpoint，迁移后
 
@@ -52,4 +52,4 @@ ms.locfileid: "51185857"
 
 ## <a name="see-also"></a>另请参阅
 
-- [在 Microsoft Defender for Endpoint 中解决误报/负数](defender-endpoint-false-positives-negatives.md)
+- [解决 Microsoft Defender for终结点的误报/负数](defender-endpoint-false-positives-negatives.md)

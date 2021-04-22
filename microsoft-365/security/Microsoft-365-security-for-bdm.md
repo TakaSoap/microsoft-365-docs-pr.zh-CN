@@ -14,12 +14,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 组织当前针对其 Microsoft 365 环境所面临的最常见威胁和攻击方案，以及用于缓解这些风险的建议操作。
-ms.openlocfilehash: 504a2d4628c265b387941e2e4de0461f7ac3be9b
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 056e1e64a992f12f3bf9a4b76c29f723ac1b5f3a
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51199037"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51930169"
 ---
 # <a name="microsoft-365-security-for-business-decision-makers-bdms"></a>Microsoft 365 商业版决策者 (BDM) 
 
@@ -37,7 +37,7 @@ Microsoft 在租户中提供了安全分数工具，可基于常规活动自动�
 
 ## <a name="protect-privileged-accounts"></a>保护特权帐户
 
-作为第一步，我们建议确保为环境中的关键帐户提供额外一层保护，因为这些帐户具有管理和更改关键服务和资源的访问权限，如果受到威胁，这些关键服务和资源可能会给整个组织带来负面影响。 保护特权帐户是防范试图将受损帐户的权限提升给管理帐户的攻击者的最有效的方法之一。 
+作为第一步，我们建议确保为环境中的关键帐户提供额外一层保护，因为这些帐户具有管理和更改关键服务和资源的访问权限，如果受到威胁，可能会对整个组织造成负面影响。 保护特权帐户是防范试图将受损帐户的权限提升给管理帐户的攻击者的最有效的方法之一。 
 
 |建议  |E3 |E5  |
 |---------|---------|---------|
@@ -50,7 +50,7 @@ Microsoft 在租户中提供了安全分数工具，可基于常规活动自动�
 ![用于保护特权帐户的推荐功能](../media/m365-security-bdm-illustrations-privileged-accounts.png)
 
 其他建议：
-- 确保未为从本地同步的帐户分配云服务的管理员角色。 这有助于防止攻击者利用本地帐户获取对云服务的管理访问权限。 
+- 确保未为从本地同步的帐户分配云服务的管理员角色。 这有助于防止攻击者应用本地帐户以获取对云服务的管理访问权限。 
 - 确保未为服务帐户分配管理员角色。 这些帐户通常不会受监视，并且使用不会过期的密码进行设置。 首先确保 AADConnect 和 ADFS 服务帐户默认情况下不是全局管理员。
 - 从管理员帐户中删除许可证。 除非存在将许可证分配给特定管理员帐户的特定用例，否则请从这些帐户中删除许可证。 
 
@@ -82,12 +82,12 @@ Microsoft 在租户中提供了安全分数工具，可基于常规活动自动�
 
 ## <a name="protect-against-unknown-threats"></a>防范未知威胁
 
-向特权帐户添加额外保护并防范已知攻击后，将注意力转移到防范未知威胁。 更加确定和高级的攻击者使用创新且未知的方法来攻击组织。 通过 Microsoft 收集的数十亿设备、应用程序和服务数据丰富的遥测，我们可以在 Windows、Office 365 和 Azure 上执行 Office 365 Defender，以防止零日攻击、利用沙盒环境，并检查有效性，然后再允许访问内容。 
+向特权帐户添加额外保护并防范已知攻击后，将注意力转移到防范未知威胁。 更加确定和高级的攻击者使用创新且未知的方法来攻击组织。 通过 Microsoft 收集的数十亿设备、应用程序和服务数据丰富的遥测，我们可以在 Windows、Office 365 和 Azure 上执行 Office 365 的 Defender，以防止 Zero-Day 攻击、利用沙盒环境，并检查有效性，然后再允许访问内容。 
 
 
 |建议  |E3  |E5  |
 |---------|---------|---------|
-|**配置 Microsoft Defender for Office 365：**<br>* 安全附件<br>* 安全链接<br>* 适用于 SharePoint、OneDrive 和 Microsoft Teams 的 ATP<br>* Defender for Office 365 保护中的防钓鱼|         |![绿色选中标记](../media/green-check-mark.png) |
+|**配置 Microsoft Defender for Office 365：**<br>* 安全附件<br>* 安全链接<br>* 适用于 SharePoint、OneDrive 和 Microsoft Teams 的 Microsoft Defender for Endpoint<br>* Defender for Office 365 保护中的防钓鱼|         |![绿色选中标记](../media/green-check-mark.png) |
 |**为终结点功能配置 Microsoft Defender：**<br>* Windows Defender防病毒 <br>* Exploit Protection <br> * 攻击面减少 <br> * 基于硬件的隔离 <br>* 受控文件夹访问权限     |         |![绿色选中标记](../media/green-check-mark.png) |
 |**使用 Microsoft Cloud App Security** 发现 SaaS 应用并开始使用行为分析和异常检测。 |         |![绿色选中标记](../media/green-check-mark.png) |
 
@@ -97,7 +97,7 @@ Microsoft 在租户中提供了安全分数工具，可基于常规活动自动�
 其他建议：
 - 保护合作伙伴通道通信，如使用 TLS 的电子邮件。
 - 仅向你通信的合作伙伴打开 Teams 联盟。
-- 不要将发件人域、个人发件人或源 IP 添加到允许列表，因为允许这些域绕过垃圾邮件和恶意软件检查 — 客户通常的做法是添加其自己的接受域或大量其他域，其中电子邮件流问题可能已报告给允许列表。 不要将域添加到"垃圾邮件和连接筛选"列表中，因为这可能会绕过所有垃圾邮件检查。 
+- 不要向允许列表添加发件人域、单个发件人或源 IP，因为允许这些发件人绕过垃圾邮件和恶意软件检查 — 客户通常的做法是添加其自己的接受域或大量其他域，其中电子邮件流问题可能已报告给允许列表。 不要将域添加到"垃圾邮件和连接筛选"列表中，因为这可能会绕过所有垃圾邮件检查。 
 - 启用出站垃圾邮件通知 — 在内部向支持人员或 IT 管理员团队启用对通讯组列表的出站垃圾邮件通知，以报告任何内部用户是否正在外部发送垃圾邮件。 这可能是帐户遭到入侵的指示器。
 - 为所有用户禁用远程 PowerShell — 管理员主要使用远程 PowerShell 访问服务以用于管理目的或编程 API 访问。 我们建议为非管理员用户禁用此选项，以避免重新出现，除非他们具有访问该选项的业务要求。 
 - 阻止所有非管理员访问 Microsoft Azure 管理门户。 可以通过创建条件访问规则来阻止所有用户（管理员除外）来实现此目的。 
@@ -116,7 +116,7 @@ Microsoft 365 信息保护功能可帮助你发现你拥有的信息、存储位
 
 |建议 |E3|E5 |
 |---------|---------|---------|
-|**查看并优化条件访问和相关策略，以与零信任网络的目标保持一致**。 防范已知威胁包括实现一组建议 [的策略](./office-365-security/microsoft-365-policies-configurations.md)。 查看这些策略的实现，以确保保护应用和数据免受获得网络访问权限的黑客的攻击。 请注意，为 Windows 10 建议的 Intune 应用保护策略支持 Windows 信息保护 (WIP) 。 WIP 防止通过应用和服务（如电子邮件、社交媒体和公共云）意外泄露组织数据。 |         |![绿色选中标记](../media/green-check-mark.png)|
+|**查看并优化条件访问和相关策略，以与零信任网络的目标保持一致**。 防范已知威胁包括实现一组建议 [的策略](./office-365-security/microsoft-365-policies-configurations.md)。 查看这些策略的实现，以确保保护应用和数据免受获得网络访问权限的黑客的攻击。 适用于 Windows 10 的推荐 Intune 应用保护策略支持 Windows 信息保护 (WIP) 。 WIP 防止通过应用和服务（如电子邮件、社交媒体和公共云）意外泄露组织数据。 |         |![绿色选中标记](../media/green-check-mark.png)|
 |**禁用外部电子邮件转发**。 获取用户邮箱访问权限的黑客可以通过将邮箱设置为自动转发电子邮件来窃取您的邮件。 即使没有用户感知，也可能发生此情况。 您可以通过配置邮件流规则来防止发生这种情况。|![绿色选中标记](../media/green-check-mark.png) |![绿色选中标记](../media/green-check-mark.png)|
 |**禁用匿名外部日历共享**。 默认情况下，允许外部匿名日历共享。 [禁用日历](/exchange/sharing/sharing-policies/modify-a-sharing-policy) 共享以减少敏感信息的潜在泄露。|![绿色选中标记](../media/green-check-mark.png) |![绿色选中标记](../media/green-check-mark.png)|
 |**为敏感数据配置数据丢失防护策略**。 在安全与合规中心创建数据丢失防护策略，以发现和保护敏感数据，如信用卡号、社会保险号 &amp; 和银行帐号。 Microsoft 365 包括许多可在数据丢失防护策略中使用的预定义敏感信息类型。 您还可以为环境自定义的敏感数据创建自己的敏感信息类型。 |![绿色选中标记](../media/green-check-mark.png)|![绿色选中标记](../media/green-check-mark.png)|

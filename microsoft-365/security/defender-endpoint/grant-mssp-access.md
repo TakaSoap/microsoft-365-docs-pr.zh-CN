@@ -1,6 +1,6 @@
 ---
 title: '向 MSSP 应用程序授予对托管 (提供程序) '
-description: 执行必要步骤以配置 MSSP 与 Microsoft Defender ATP 的集成
+description: 执行必要步骤以配置 MSSP 与 Microsoft Defender for Endpoint 的集成
 keywords: 托管安全服务提供程序， mssp， 配置， 集成
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 1bb7bc3565bbb7c05f165c5649f3672ff33bb18b
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 320355f838db5dbb1540350e95e4cc0645acd805
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51165449"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51932747"
 ---
 # <a name="grant-managed-security-service-provider-mssp-access-preview"></a>向 MSSP (托管安全) 访问 (预览) 
 
@@ -137,7 +137,7 @@ ms.locfileid: "51165449"
 ## <a name="related-topics"></a>相关主题
 - [访问 MSSP 客户门户](access-mssp-portal.md)
 - [配置警报通知](configure-mssp-notifications.md)
-- [从客户租户提取警报](fetch-alerts-mssp.md)
+- [从客户租户获取警报](fetch-alerts-mssp.md)
 
 
 

@@ -1,7 +1,7 @@
 ---
 title: 确保设备配置正确
 description: 正确配置设备以提升抵御威胁的整体复原能力，并增强检测和响应攻击的能力。
-keywords: 载入， Intune 管理， MDATP， WDATP， Microsoft Defender， Windows Defender， 高级威胁防护， 攻击面减少， ASR， 安全基线
+keywords: 载入， Intune 管理， Microsoft Defender for Endpoint， Microsoft Defender， Windows Defender， 攻击面减少， ASR， 安全基线
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: e7b00ceafc2761f42c316f434a27acf7c551e7cf
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 3fd58ee17b2cb86c0bcc858b9b0fd57c12ac501e
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51163359"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51932807"
 ---
 # <a name="ensure-your-devices-are-configured-properly"></a>确保设备配置正确
 

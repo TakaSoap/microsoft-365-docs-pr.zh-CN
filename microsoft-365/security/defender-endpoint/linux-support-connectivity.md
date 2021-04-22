@@ -2,7 +2,7 @@
 title: 解决 Linux 上的 Microsoft Defender for Endpoint 的云连接问题
 ms.reviewer: ''
 description: 解决 Linux 上的 Microsoft Defender for Endpoint 的云连接问题
-keywords: microsoft， defender， atp， linux， 云， 连接， 通信
+keywords: microsoft， defender， Microsoft Defender for Endpoint， linux， 云， 连接， 通信
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 985e4c39c60600da892c010b6ee26e9c98bb0611
-ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
+ms.openlocfilehash: 0345d7f88d147abb750e66a5e61f516abf38d553
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51903162"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933105"
 ---
 # <a name="troubleshoot-cloud-connectivity-issues-for-microsoft-defender-for-endpoint-on-linux"></a>解决 Linux 上的 Microsoft Defender for Endpoint 的云连接问题
 
@@ -37,7 +37,7 @@ ms.locfileid: "51903162"
 
 ## <a name="run-the-connectivity-test"></a>运行连接测试
 
-若要测试适用于 Linux 的 Defender for Endpoint 能否通过当前网络设置与云通信，请从命令行运行连接测试：
+若要测试 Linux 上的 Defender for Endpoint 能否通过当前网络设置与云通信，请从命令行运行连接测试：
 
 ```bash
 mdatp connectivity test
@@ -86,7 +86,7 @@ OK https://cdn.x.cp.wd.microsoft.com/ping
 > [!WARNING]
 > 不支持 PAC、WPAD 和经过身份验证的代理。 确保仅使用静态代理或透明代理。
 >
-> 出于安全考虑，也不支持 SSL 检查和截获代理。 为 SSL 检查和代理服务器配置例外，以直接将数据从 Defender for Endpoint for Linux 传递到相关 URL，而不会拦截。 将拦截证书添加到全局存储将不允许拦截。
+> 出于安全考虑，也不支持 SSL 检查和截获代理。 为 SSL 检查和代理服务器配置例外，以将数据从 Linux 上的 Defender for Endpoint 直接传递到相关 URL，而不会拦截。 将拦截证书添加到全局存储将不允许拦截。
 
 如果需要静态代理，则向上述命令添加代理参数，其中 `proxy_address:port` 对应于代理地址和端口：
 
@@ -107,7 +107,7 @@ curl -x http://proxy_address:port -w ' %{url_effective}\n' 'https://x.cp.wd.micr
 
 还要确保填充正确的静态代理地址以替换 `address:port` 。
 
-如果此文件正确，请尝试在终端中运行以下命令以重新加载适用于 Linux 的 Defender for Endpoint 并传播设置：
+如果此文件正确，请尝试在终端中运行以下命令，在 Linux 上重新加载 Defender for Endpoint 并传播设置：
 
 ```bash
 sudo systemctl daemon-reload; sudo systemctl restart mdatp

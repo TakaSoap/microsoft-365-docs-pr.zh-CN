@@ -1,7 +1,7 @@
 ---
 title: DeviceFromIP () Microsoft 365 Defender 高级搜寻中的功能
 description: 了解如何使用 DeviceFromIP () 函数获取已分配了特定 IP 地址的设备
-keywords: 高级搜寻， 威胁搜寻， 网络威胁搜寻， Microsoft 威胁防护， microsoft 365， mtp， m365， 搜索， 查询， 遥测， 架构参考， kusto， 设备， devicefromIP， 函数， 扩充
+keywords: 高级搜寻， 威胁搜寻， 网络威胁搜寻， Microsoft 365 Defender， microsoft 365， m365， 搜索， 查询， 遥测， 架构参考， kusto， 设备， devicefromIP， 函数， 扩充
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: d2996021a84186adc6656927dbdc910db4d037de
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 3ea951e35555721a989001b2a5235df5b89a8a55
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51055276"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933177"
 ---
 # <a name="devicefromip"></a>DeviceFromIP()
 

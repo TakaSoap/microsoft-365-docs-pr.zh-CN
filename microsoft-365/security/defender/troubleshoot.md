@@ -1,7 +1,7 @@
 ---
 title: Microsoft 365 Defender 服务问题疑难解答
 description: 查找已知 Microsoft 365 Defender 问题的解决方案和解决方法
-keywords: Microsoft 威胁防护疑难解答， 疑难解答， Azure ATP， 问题， 加载项， 设置页面
+keywords: Microsoft 365 Defender 疑难解答， 疑难解答， Microsoft Defender for Identity， 问题， 加载项， 设置页面
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: a2cd27bf7bf8b1c4931b9d768f3a6b5e5f2a0d93
-ms.sourcegitcommit: e0a96e08b7dc29e074065e69a2a86fc3cf0dad01
+ms.openlocfilehash: 0c933edfe80275dbfa60464ff862a7609b269332
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "51592032"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933393"
 ---
 # <a name="troubleshoot-microsoft-365-defender-service-issues"></a>Microsoft 365 Defender 服务问题疑难解答
 

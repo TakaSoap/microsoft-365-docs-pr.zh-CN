@@ -10,7 +10,6 @@ ms.topic: article
 ms.service: o365-administration
 localization_priority: Priority
 ms.collection:
-- M365-subscription-management
 - Adm_O365
 - Adm_TOC
 ms.custom:
@@ -22,12 +21,12 @@ search.appverid:
 description: 通过使用针对你所在国家或地区列出的电话号码或在线提交服务请求获取技术和帐单支持。
 feedback_system: None
 ms.date: 7/28/2020
-ms.openlocfilehash: 6e355a07584d45a85c363956d1bb4e45eae708be
-ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
+ms.openlocfilehash: 7e9f324bca8614e8e5b644c529802030778509b5
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51222035"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51929069"
 ---
 # <a name="ways-to-contact-support-for-business-products---admin-help"></a>联系商业版产品支持人员的方式 - 管理员帮助
 

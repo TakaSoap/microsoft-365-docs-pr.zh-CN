@@ -1,7 +1,7 @@
 ---
 title: Microsoft 365 Defender 中的高级搜寻配额和使用参数
 description: 了解使高级搜寻服务保持响应 (服务) 的各种配额和使用参数
-keywords: 高级搜寻， 威胁搜寻， 网络威胁搜寻， Microsoft 威胁防护， microsoft 365， mtp， m365， 搜索， 查询， 遥测， 架构， kusto， CPU 限制， 查询限制， 资源， 最大结果， 配额， 参数， 分配
+keywords: 高级搜寻， 威胁搜寻， 网络威胁搜寻， Microsoft 365 Defender， microsoft 365， m365， 搜索， 查询， 遥测， 架构， kusto， CPU 限制， 查询限制， 资源， 最大结果， 配额， 参数， 分配
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: ca79abfa95feb65f98ec32ae8dbc0093e34d58e6
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: c9526363b0430514455db1fbdf12cfb7a18229f1
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51498433"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51932985"
 ---
 # <a name="advanced-hunting-quotas-and-usage-parameters"></a>高级搜寻配额和使用参数
 

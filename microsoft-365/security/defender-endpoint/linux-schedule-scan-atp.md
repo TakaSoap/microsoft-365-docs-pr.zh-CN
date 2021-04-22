@@ -1,7 +1,7 @@
 ---
 title: '如何使用 Microsoft Defender for Endpoint (Linux) '
 description: 了解如何为 Microsoft Defender for Endpoint (Linux) 安排自动扫描时间，以更好地保护组织的资产。
-keywords: 'microsoft， defender， atp， linux， 扫描， 防病毒， microsoft defender for endpoint (linux) '
+keywords: 'microsoft， defender， Microsoft Defender for Endpoint， linux， 扫描， 防病毒， 适用于终结点的 microsoft defender (linux) '
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: d3f5d4c490e28c7985a0420fa5013a8e0f51a167
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: f868570fccf9b30cde5f16aa8e71292fb8b09497
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51055823"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933129"
 ---
 # <a name="schedule-scans-with-microsoft-defender-for-endpoint-linux"></a>使用 Microsoft Defender for Endpoint (Linux) 
 

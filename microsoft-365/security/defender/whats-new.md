@@ -1,7 +1,7 @@
 ---
 title: Microsoft 365 Defender 的新增功能
 description: 列出 Microsoft 365 Defender 中的新特性和功能
-keywords: Microsoft 威胁防护的新增功能， ga， 通用， 功能， 可用， 新
+keywords: Microsoft 365 Defender 中的新增功能， ga， 通用， 功能， 可用， 新增
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,18 +18,18 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: e75cfe445f62860f8bdb1480fcf9029daa8ac6ea
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 9f4cc36172b0ac598b2719bee8ce56bf0f8a1b84
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51056453"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933381"
 ---
 # <a name="whats-new-in-microsoft-365-defender"></a>Microsoft 365 Defender 的新增功能
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-> 想要体验 Microsoft 365 Defender？ 可以在[实验室环境中评估它或在](m365d-evaluation.md?ocid=cx-docs-MTPtriallab)[生产中运行你的试验项目](m365d-pilot.md?ocid=cx-evalpilot)。
+> 希望体验 Microsoft 365 Defender？ 你可[在验室环境中评估](m365d-evaluation.md?ocid=cx-docs-MTPtriallab) 或[生产中运行试点项目](m365d-pilot.md?ocid=cx-evalpilot)。
 >
 
 在最新版本的 Microsoft 365 defender (GA) 通常提供以下功能。

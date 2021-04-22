@@ -1,7 +1,7 @@
 ---
 title: 高级搜寻架构中的 AADSignInEventsBeta 表
 description: 了解与高级搜寻架构的 Azure Active Directory 登录事件表关联的信息
-keywords: 高级搜寻， 威胁搜寻， 网络威胁搜寻， Microsoft 威胁防护， microsoft 365， mtp， m365， 搜索， 查询， 遥测， 架构参考， kusto， 表格， 列， 数据类型， 说明， 文件， IP 地址， 设备， 计算机， 用户， 帐户， 标识， AAD
+keywords: 高级搜寻， 威胁搜寻， 网络威胁搜寻， Microsoft 365 Defender， microsoft 365， m365， 搜索， 查询， 遥测， 架构参考， kusto， 表格， 列， 数据类型， 说明， 文件， IP 地址， 设备， 计算机， 用户， 帐户， 标识， AAD
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 7b595496c28710bfa25fc88653425242770bf57f
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 93735ee3bf8d9b95ab320c2bc158d6ebfe27186c
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51055297"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51932603"
 ---
 # <a name="aadsignineventsbeta"></a>AADSignInEventsBeta
 
@@ -35,7 +35,7 @@ ms.locfileid: "51055297"
 
 >[!IMPORTANT]
 > 该表当前处于 beta 版本，并短期提供，以便你可以通过 Azure Active Directory (`AADSignInEventsBeta` AAD) 登录事件。 我们最终将所有登录架构信息移动到 `IdentityLogonEvents` 表中。<br><br>
-> 可以通过 Azure 安全中心集成的 Microsoft Defender for Endpoint 解决方案访问 Microsoft 365 Defender，但没有 Microsoft Defender for Office、Microsoft Defender for Identity 或 Microsoft Cloud App Security 许可证的客户将无法查看此架构。 
+> 通过 Azure Defender 的集成 Microsoft Defender 终结点解决方案访问 Microsoft 365 Defender，但没有 Microsoft Defender for Office、Microsoft Defender for Identity 或 Microsoft Cloud App Security 许可证的客户将无法查看此架构。 
 
  
 

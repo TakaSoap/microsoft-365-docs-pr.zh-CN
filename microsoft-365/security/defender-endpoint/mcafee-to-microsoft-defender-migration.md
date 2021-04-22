@@ -1,7 +1,7 @@
 ---
 title: 从 McAfee 迁移到 Microsoft Defender for Endpoint
 description: 从 McAfee 切换到 Microsoft Defender for Endpoint。 阅读本文，了解概述。
-keywords: 迁移， windows defender 高级威胁防护， atp， edr
+keywords: migration， Microsoft Defender for Endpoint， edr
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -22,12 +22,12 @@ ms.topic: article
 ms.custom: migrationguides
 ms.date: 03/03/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
-ms.openlocfilehash: f46fb354537b61630172d3d735ce6b24f25ab39a
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 3d26e2c134f5f9794f7acd41e49c27bd9f331153
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51198829"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51932639"
 ---
 # <a name="migrate-from-mcafee-to-microsoft-defender-for-endpoint"></a>从 McAfee 迁移到 Microsoft Defender for Endpoint
 
@@ -60,12 +60,12 @@ ms.locfileid: "51198829"
 
 | 功能 | 说明 |
 |---|---|
-| [威胁&漏洞管理](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt) | 威胁&漏洞管理功能有助于识别、评估和修正终结点（如 (设备）中的) 。 |
-| [攻击面减少](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/overview-attack-surface-reduction) | 攻击面减少规则有助于保护组织的设备和应用程序免受网络威胁和攻击。 |
+| [威胁和漏洞管理](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt) | 威胁&漏洞管理功能有助于识别、评估和修正终结点（如 (设备）中的) 。 |
+| [减少攻击面](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/overview-attack-surface-reduction) | 攻击面减少规则有助于保护组织的设备和应用程序免受网络威胁和攻击。 |
 | [下一代保护](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/windows-defender-antivirus-in-windows-10) | 下一代保护包括可帮助阻止威胁和恶意软件的 Microsoft Defender 防病毒。 |
 | [终结点检测和响应](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response) | 终结点检测和响应功能可检测、调查和响应入侵尝试和主动泄露。  |
 | [高级搜寻](advanced-hunting-overview.md) | 高级搜寻功能使安全运营团队能够找到已知或潜在威胁的指示器和实体。 |
-| [行为阻止和抑制](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/behavioral-blocking-containment) | 行为阻止和包含功能有助于根据威胁的行为和进程树识别和停止威胁，即使威胁已开始执行。 |
+| [行为阻止和控制](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/behavioral-blocking-containment) | 行为阻止和包含功能有助于根据威胁的行为和进程树识别和停止威胁，即使威胁已开始执行。 |
 | [自动调查和修复](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/automated-investigations) | 自动调查和响应功能可检查警报，并立即采取修正措施来解决违规问题。 |
 | Microsoft[威胁专家](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/microsoft-threat-experts) (威胁搜寻)  | 威胁搜寻服务为安全运营团队提供专家级别的监视和分析，并帮助确保不会错过关键威胁。 |
 

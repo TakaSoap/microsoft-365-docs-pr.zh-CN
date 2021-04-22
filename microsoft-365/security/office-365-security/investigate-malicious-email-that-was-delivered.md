@@ -1,6 +1,6 @@
 ---
 title: 调查在 Office 365 中传递的恶意电子邮件，查找并调查恶意电子邮件
-keywords: TIMailData-Inline， 安全事件， 事件， ATP PowerShell， 电子邮件恶意软件， 遭到入侵的用户， 电子邮件钓鱼， 电子邮件恶意软件， 阅读电子邮件头， 读取邮件头， 打开电子邮件头，特殊操作
+keywords: TIMailData-Inline， 安全事件， 事件， Microsoft Defender for Endpoint PowerShell， 电子邮件恶意软件， 遭到入侵的用户， 电子邮件钓鱼邮件， 电子邮件恶意软件， 阅读电子邮件头， 阅读邮件头， 打开电子邮件头， 特殊操作
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -20,12 +20,12 @@ description: 了解如何使用威胁调查和响应功能查找和调查恶意�
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2781850eacf8b0fcf4909406aca335f1bbeb0753
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 02e396cac060f2b8431b2b70e89c18950596d9c2
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51203266"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933369"
 ---
 # <a name="investigate-malicious-email-that-was-delivered-in-office-365"></a>调查在 Office 365 中传递的恶意电子邮件
 
@@ -103,11 +103,11 @@ ms.locfileid: "51203266"
     - 主题筛选器使用 CONTAINS 查询。
     - URL 筛选器是否与协议一 (一。 https) 。
     - URL 域、URL 路径和 URL 域和路径筛选器不需要协议进行筛选。
-    - 每次更改筛选器值时，必须单击"刷新"图标才能获得相关结果。
+    - 每次更改筛选器值时，必须单击"刷新&quot;图标才能获得相关结果。
 
-5. **高级筛选器**：使用这些筛选器，可以生成复杂的查询并筛选数据集。 单击" *高级筛选器"* 将打开一个包含选项的飞出区。
+5. **高级筛选器**：使用这些筛选器，可以生成复杂的查询并筛选数据集。 单击&quot; *高级筛选器&quot;* 将打开一个包含选项的飞出区。
 
-   高级筛选是搜索功能的一项补充。 收件人、发件人和发件人域上引入了布尔 **NOT** 筛选器，以允许管理员通过排除值进行调查。 此选项显示在 selection 参数"不包含 *"下*。 **NOT** 将允许管理员从调查排除警报邮箱、默认回复邮箱，并且对于管理员搜索特定主题 (subject="Attention") 其中收件人可以设置为无 *defaultMail \@ contoso.com* 的情况很有用。 这是精确值搜索。
+   高级筛选是搜索功能的一项补充。 收件人、发件人和发件人域上引入了布尔 **NOT** 筛选器，以允许管理员通过排除值进行调查。 此选项显示在 selection 参数&quot;不包含 *&quot;下*。 **NOT** 将允许管理员从调查排除警报邮箱、默认回复邮箱，并且对于管理员搜索特定主题 (subject=&quot;Attention") 其中收件人可以设置为无 *defaultMail \@ contoso.com* 的情况很有用。 这是精确值搜索。
 
    ![Recipients - "Contains none of" Advanced filter.](../../media/tp-InvestigateMalEmail-AdvancedFilter.png)
 

@@ -2,7 +2,7 @@
 title: 在 Linux 上手动部署 Microsoft Defender for Endpoint
 ms.reviewer: ''
 description: 介绍如何从命令行手动在 Linux 上部署 Microsoft Defender for Endpoint。
-keywords: microsoft， defender， atp， linux， 安装， 部署， 卸载， 安装， ansible， linux， redhat， ubuntu， debian， sles， suse， centos
+keywords: microsoft， defender， Microsoft Defender for Endpoint， linux， 安装， 部署， 卸载， 安装， ansible， linux， redhat， ubuntu， debian， sles， suse， centos
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 2beb46c62de2e9720d1626e0e1e5ce806a6d7e19
-ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
+ms.openlocfilehash: 0374c1a44a4d942ea631d97f51fa48df15d3ec13
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51903912"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51929081"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-linux-manually"></a>在 Linux 上手动部署 Microsoft Defender for Endpoint
 
@@ -58,7 +58,7 @@ ms.locfileid: "51903912"
 
 ## <a name="configure-the-linux-software-repository"></a>配置 Linux 软件存储库
 
-可以从以下频道之一部署适用于 Linux 的 Defender (表示为 *[channel]* *) ：insiders-fast、insiders-slow* 或 *prod*。每个通道对应于 Linux 软件存储库。 下面提供了配置设备以使用这些存储库之一的说明。
+Linux 上的 Defender for Endpoint 可以从以下频道之一进行部署 (下面表示为 *[channel]* *) ：insiders-fast、insiders-slow* 或 *prod*。 每个通道对应于 Linux 软件存储库。 下面提供了配置设备以使用这些存储库之一的说明。
 
 通道的选择决定了提供给你的设备的更新的类型和频率。 预览 *体验成员-快* 中的设备是首先接收更新和新功能的设备，随后是预览体验成员 - *慢* ，最后是 *受支持*。
 
@@ -86,7 +86,7 @@ ms.locfileid: "51903912"
     sudo yum-config-manager --add-repo=https://packages.microsoft.com/config/[distro]/[version]/[channel].repo
     ```
 
-    例如，如果你运行的是 CentOS 7 并且想要从专业渠道部署适用于 Linux 的 Defender *for* Endpoint：
+    例如，如果你运行的是 CentOS 7，并且想要从 *Prod* 渠道在 Linux 上部署 Defender for Endpoint：
 
     ```bash
     sudo yum-config-manager --add-repo=https://packages.microsoft.com/config/centos/7/prod.repo
@@ -328,7 +328,7 @@ ms.locfileid: "51903912"
     > ```bash
     > mdatp health --field definitions_status
     > ```
-    > 请注意，完成初始安装后，可能还需要配置代理。 请参阅 [Configure Defender for Endpoint for Linux for static proxy discovery： Post-installation configuration](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/linux-static-proxy-configuration#post-installation-configuration)。
+    > 请注意，完成初始安装后，可能还需要配置代理。 请参阅 [在 Linux 上为终结点配置静态代理发现：安装后配置](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/linux-static-proxy-configuration#post-installation-configuration)。
 
 5. 运行检测测试，验证设备是否正确载入并报告给服务。 对新载入的设备执行以下步骤：
 
@@ -344,7 +344,7 @@ ms.locfileid: "51903912"
         curl -o ~/Downloads/eicar.com.txt https://www.eicar.org/download/eicar.com.txt
         ```
 
-    - 该文件应该已被 Defender for Endpoint for Linux 隔离。 使用以下命令列出所有检测到的威胁：
+    - 该文件应该已由 Linux 上的 Defender for Endpoint 隔离。 使用以下命令列出所有检测到的威胁：
 
         ```bash
         mdatp threat list
@@ -381,7 +381,7 @@ Options:
 
 ## <a name="operating-system-upgrades"></a>操作系统升级
 
-将操作系统升级到新的主要版本时，必须先卸载适用于 Linux 的 Defender for Endpoint，安装升级，最后在设备上重新配置适用于 Linux 的 Defender for Endpoint。
+将操作系统升级到新的主要版本时，必须先卸载 Linux 上的 Defender for Endpoint，安装升级，最后在设备上重新配置 Linux 上的 Defender for Endpoint。
 
 ## <a name="how-to-migrate-from-insiders-fast-to-production-channel"></a>如何从生产Insiders-Fast迁移到生产渠道
 
@@ -406,4 +406,4 @@ Options:
 
 ## <a name="uninstallation"></a>卸载
 
-请参阅 [卸载](linux-resources.md#uninstall) ，了解有关如何从客户端设备中删除适用于 Linux 的 Defender for Endpoint 的详细信息。
+请参阅 [卸载](linux-resources.md#uninstall) ，了解有关如何在 Linux 上从客户端设备中删除 Defender for Endpoint 的详细信息。

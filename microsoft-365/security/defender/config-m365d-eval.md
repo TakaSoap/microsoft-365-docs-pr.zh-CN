@@ -1,7 +1,7 @@
 ---
 title: 为试用实验室或试验环境配置 Microsoft 365 Defender 支柱
 description: 为试用实验室或试验环境配置 Microsoft 365 Defender 支柱，如 Microsoft Defender for Office 365、Microsoft Defender for Identity、Microsoft Cloud App Security 和 Microsoft Defender for Endpoint。
-keywords: 配置 Microsoft 威胁防护试用版， Microsoft 威胁防护试用配置， 配置 Microsoft 威胁防护试点项目， 配置 Microsoft 威胁防护支柱， Microsoft 威胁防护支柱
+keywords: 配置 Microsoft 365 Defender 试用版， Microsoft 365 Defender 试用版配置， 配置 Microsoft 365 Defender 试点项目， 配置 Microsoft 365 Defender 支柱， Microsoft 365 Defender 支柱
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 9b192a029704d1354867b169efdf0d489345030e
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 05bdc9cbb678a3d6c1cee726fc4d8c2e45d2d360
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51580962"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933501"
 ---
 # <a name="configure-microsoft-365-defender-pillars-for-your-trial-lab-or-pilot-environment"></a>为试用实验室或试验环境配置 Microsoft 365 Defender 支柱
 
@@ -78,7 +78,7 @@ Microsoft 365 Defender 由四大支柱组成。 尽管一个支柱已经可为�
    > [!NOTE]
    > 在 Microsoft Defender for Office 365 中编辑高级防钓鱼策略。 将 **高级网络钓鱼阈值更改为** **2 - 攻击性**。
 
-3. 单击" **添加条件** "下拉菜单，然后选择您的域 (") "收件人域"。 单击"下一步"。
+3. 单击" **添加条件** &quot;下拉菜单，然后选择您的域 (") "收件人域"。 单击"下一步"。
 
    ![图像of_Office 365 安全&合规中心防钓鱼策略页面，您可以在其中添加其应用程序的条件](../../media/mtp-eval-34.png)
  
@@ -90,19 +90,19 @@ Microsoft 365 Defender 由四大支柱组成。 尽管一个支柱已经可为�
 
    ![图像of_Office 365 安全&合规中心页面，可在其中打开适用于 SharePoint、OneDrive 和 Microsoft Teams 的 ATP](../../media/mtp-eval-36.png)
 
-6. 单击 + 图标以创建新的安全附件策略，以作为收件人域应用到你的域。 单击“**保存**”。
+6. 单击 + 图标以创建新的安全附件策略，以作为收件人域应用到你的域。 单击“保存”。
 
    !["of_Office 365 安全&合规中心"页面，可在其中创建新的新建安全附件策略](../../media/mtp-eval-37.png)
  
 7. 接下来，选择 **安全链接** 策略，然后单击铅笔图标以编辑默认策略。
 
-8. 确保未选中" **不跟踪用户** 单击安全链接时"选项，同时选择其余选项。 有关详细信息 [，请参阅安全](/microsoft-365/security/office-365-security/recommended-settings-for-eop-and-office365) 链接设置。 单击“**保存**”。 
+8. 确保未选中" **不跟踪用户** 单击安全链接时"选项，同时选择其余选项。 有关详细信息 [，请参阅安全](/microsoft-365/security/office-365-security/recommended-settings-for-eop-and-office365) 链接设置。 单击“保存”。 
 
    !["of_Office 365 安全&中心"页面，其中显示未选中"不跟踪用户单击时安全"选项](../../media/mtp-eval-38.png)
 
 9. 接下来， **选择"反恶意软件"** 策略，选择默认值，然后选择铅笔图标。
 
-10. 单击 **"设置****"，选择"是**"，然后使用默认通知文本启用 **恶意软件检测响应**。 打开 **"常见附件类型筛选器** "。 单击“**保存**”。
+10. 单击 **"设置****"，选择"是**"，然后使用默认通知文本启用 **恶意软件检测响应**。 打开 **"常见附件类型筛选器** "。 单击“保存”。
 
     !["of_Office 365 安全&合规中心"页面，其中显示恶意软件检测响应已打开且默认通知和常用附件类型筛选器已打开](../../media/mtp-eval-39.png)
   
@@ -159,12 +159,9 @@ Microsoft 365 Defender 由四大支柱组成。 尽管一个支柱已经可为�
 
     ![Image of_Microsoft Defender for Identity sensor wizard installation completion where you should click the finish button](../../media/mtp-eval-51.png)
  
-11. 在 ["Microsoft Defender 标识设置](https://go.microsoft.com/fwlink/?linkid=2040449) "部分下，选择**Microsoft Defender for Endpoint **，然后打开切换。 单击“**保存**”。 
+11. 在 ["Microsoft Defender 标识设置](https://go.microsoft.com/fwlink/?linkid=2040449) "部分下，选择**Microsoft Defender for Endpoint **，然后打开切换。 单击“保存”。 
 
     ![适用于of_the Microsoft Defender 的"设置"页面的图像，应在其中打开 Microsoft Defender for Endpoint 切换](../../media/mtp-eval-52.png)
-
-> [!NOTE]
-> Windows Defender ATP 已重新品牌为 Microsoft Defender for Endpoint。 为了一致性，将推出我们所有门户中的品牌更改。
 
 
 ## <a name="configure-microsoft-cloud-app-security"></a>配置 Microsoft Cloud App Security
@@ -190,7 +187,7 @@ Microsoft 365 Defender 由四大支柱组成。 尽管一个支柱已经可为�
    > [!NOTE]
    > 对于新的 Microsoft Defender for Identity 实例，此集成切换将自动打开。 在继续执行下一步之前，请确认 Microsoft Defender for Identity 集成已启用。
  
-4. 在云发现设置下，选择 **Microsoft Defender 进行终结点集成**，然后启用集成。 单击“**保存**”。
+4. 在云发现设置下，选择 **Microsoft Defender 进行终结点集成**，然后启用集成。 单击“保存”。
 
    ![图像of_the Microsoft Defender for Endpoint 页面，其中选中了 Microsoft Defender for Endpoint 集成下的阻止未批准应用复选框。 单击"保存"。](../../media/mtp-eval-56.png)
 
@@ -285,7 +282,7 @@ Microsoft 365 Defender 由四大支柱组成。 尽管一个支柱已经可为�
 
 恭喜！ 你刚刚创建了 Microsoft 365 Defender 试用实验室或试验环境！ 现在，你可以熟悉 Microsoft 365 Defender 用户界面！ 查看你可以从以下 Microsoft 365 Defender 交互式指南中了解哪些内容，并了解如何使用每个仪表板执行日常安全操作任务。
 
-[查看交互式指南](https://aka.ms/MTP-Interactive-Guide)
+[请查看交互指南](https://aka.ms/MTP-Interactive-Guide)
 
 接下来，你可以模拟攻击，并查看跨产品功能如何检测、创建警报以及自动响应终结点上的无文件攻击。
 

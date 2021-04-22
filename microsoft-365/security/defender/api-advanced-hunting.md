@@ -1,7 +1,7 @@
 ---
 title: Microsoft 365 Defender 高级搜寻 API
 description: 了解如何使用 Microsoft 365 Defender 的高级搜寻 API 运行高级搜寻查询
-keywords: 高级搜寻， API， api， MTP， M365 Defender， Microsoft 365 Defender
+keywords: 高级搜寻， API， api， M365 Defender， Microsoft 365 Defender
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 482801bb47429ae370e06cfcbcf26bacfb8b2a92
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: c988a609a329c8f7f8988314e56aae942beebac5
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51056083"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51932889"
 ---
 # <a name="microsoft-365-defender-advanced-hunting-api"></a>Microsoft 365 Defender 高级搜寻 API
 
@@ -33,7 +33,7 @@ ms.locfileid: "51056083"
 
 **适用于：**
 
-- Microsoft 威胁防护
+- Microsoft 365 Defender
 
 > [!IMPORTANT]
 > 某些信息与预发布的产品有关，在商业发布之前可能有重大修改。 Microsoft 对此处所提供的信息不作任何明示或默示的保证。
@@ -61,7 +61,7 @@ ms.locfileid: "51056083"
 
 权限类型 | 权限 | 权限显示名称
 -|-|-
-Application | AdvancedHunting.Read.All | 运行高级查询
+应用程序 | AdvancedHunting.Read.All | 运行高级查询
 委派（工作或学校帐户） | AdvancedHunting.Read | 运行高级查询
 
 >[!Note]

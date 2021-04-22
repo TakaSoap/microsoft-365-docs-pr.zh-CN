@@ -1,7 +1,7 @@
 ---
 title: 解决 Linux 上的 Microsoft Defender for Endpoint 的性能问题
-description: 解决 Linux 上的 Microsoft Defender 终结点中的性能问题。
-keywords: microsoft， defender， atp， linux， 性能
+description: 解决 Linux 上的 Microsoft Defender for Endpoint 中的性能问题。
+keywords: microsoft， defender， Microsoft Defender for Endpoint， linux， 性能
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ mms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 5aaa95ef8202f3d0957113d8f20a39e4d3840227
-ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
+ms.openlocfilehash: 9964b27f29654a7cc474dc4fb8f84334ddaf381c
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51903982"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933213"
 ---
 # <a name="troubleshoot-performance-issues-for-microsoft-defender-for-endpoint-on-linux"></a>解决 Linux 上的 Microsoft Defender for Endpoint 的性能问题
 
@@ -34,17 +34,17 @@ ms.locfileid: "51903982"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 > 想要体验适用于终结点的 Defender？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
 
-本文提供了一些常规步骤，可用于缩小与 Defender for Endpoint for Linux 相关的性能问题。
+本文提供了一些常规步骤，可用于缩小与 Linux 上的 Defender for Endpoint 相关的性能问题。
 
-RTP (RTP) 是适用于 Linux 的 Defender for Endpoint 的一项功能，可持续监视和保护设备免受威胁。 它包含文件和进程监视以及其他启发。
+RTP 实时 (RTP) 是 Linux 上 Defender for Endpoint 的一项功能，可持续监视你的设备并保护设备免受威胁。 它包含文件和进程监视以及其他启发。
 
-根据你正在运行的应用程序和设备特征，在运行适用于 Linux 的 Defender for Endpoint 时可能会遇到性能不优化的问题。 特别是，在短时间内访问许多资源的应用程序或系统进程可能会导致 Defender for Endpoint for Linux 中的性能问题。
+根据你正在运行的应用程序和设备特征，在 Linux 上运行 Defender for Endpoint 时可能会遇到性能不优化的问题。 特别是，在短时间内访问许多资源的应用程序或系统进程可能会导致 Linux 上的 Defender for Endpoint 中的性能问题。
 
 在启动 **之前，请确保其他安全产品当前未在设备上运行**。 多个安全产品可能会发生冲突并影响主机性能。
 
 以下步骤可用于排查并缓解这些问题：
 
-1. 使用下列方法之一禁用实时保护并观察性能是否提高。 此方法有助于缩小 Defender for Endpoint for Linux 是否导致性能问题。
+1. 使用下列方法之一禁用实时保护并观察性能是否提高。 此方法有助于缩小 Linux 上的 Defender for Endpoint 是否导致性能问题。
 
     如果你的设备不是由组织管理的，可以通过命令行禁用实时保护：
 
@@ -55,11 +55,11 @@ RTP (RTP) 是适用于 Linux 的 Defender for Endpoint 的一项功能，可持�
     Configuration property updated
     ```
 
-    如果你的设备由你的组织管理，则管理员可以使用设置适用于 Linux 的 [Defender 终结点的](linux-preferences.md)首选项中的说明禁用实时保护。
+    如果你的设备由你的组织管理，则管理员可以使用在 Linux 上设置 Defender for Endpoint 的首选项中的说明禁用 [实时保护](linux-preferences.md)。
 
     如果实时保护关闭时性能问题仍然存在，则问题的原因可能是终结点检测和响应组件。 在这种情况下，请联系客户支持部门，了解进一步说明和缓解措施。
 
-2. 若要查找触发最多扫描的应用程序，可以使用 Defender for Endpoint for Linux 收集实时统计信息。
+2. 若要查找触发最多扫描的应用程序，可以使用 Defender for Endpoint 在 Linux 上收集实时统计信息。
 
     > [!NOTE]
     > 此功能在版本 100.90.70 或更高版本中可用。
@@ -140,11 +140,11 @@ RTP (RTP) 是适用于 Linux 的 Defender for Endpoint 的一项功能，可持�
     125  CrashPlanService 164
     ```
 
-    若要提高 Defender for Endpoint for Linux 的性能，请在行下找到编号最高的一个， `Total files scanned` 并添加排除项。 有关详细信息，请参阅为 Linux 的 Defender for Endpoint 配置和 [验证排除项](linux-exclusions.md)。
+    若要提高 Linux 上 Defender for Endpoint 的性能，请在行下找到编号最高的一个， `Total files scanned` 并添加排除项。 有关详细信息，请参阅在 Linux 上配置并验证 [Defender for Endpoint 的排除项](linux-exclusions.md)。
 
     >[!NOTE]
     > 应用程序将统计信息存储在内存中，并仅跟踪自文件启动和启用实时保护以来的文件活动。 在实时保护关闭之前或期间启动的进程不计入在内。 此外，仅计算触发扫描的事件。
 
-5. 在 Linux 上配置 Microsoft Defender 终结点，排除导致性能问题的进程或磁盘位置，并重新启用实时保护。
+5. 在 Linux 上配置 Microsoft Defender for Endpoint，排除导致性能问题的进程或磁盘位置，并重新启用实时保护。
 
-    有关详细信息，请参阅为适用于 Linux 的 Microsoft Defender for Endpoint 配置和 [验证排除项](linux-exclusions.md)。
+    有关详细信息，请参阅在 Linux 上配置和验证 [Microsoft Defender for Endpoint 的排除项](linux-exclusions.md)。

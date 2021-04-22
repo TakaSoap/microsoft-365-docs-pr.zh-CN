@@ -1,5 +1,5 @@
 ---
-title: Microsoft Defender ATP 中的 API 资源管理器
+title: Microsoft Defender for Endpoint 中的 API 资源管理器
 ms.reviewer: ''
 description: 使用 API 资源管理器构造和执行 API 查询、测试和发送任何可用 API 的请求
 keywords: api， 资源管理器， 发送， 请求， 获取， 发布，
@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 0cfe5227d5d1cdb1f1f4eaea2c859937d7e75264
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: b8d0d991e46464bae3b4d21d6218b9b3b2d2b4cb
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51055658"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51930109"
 ---
 # <a name="api-explorer"></a>API 资源管理器
 

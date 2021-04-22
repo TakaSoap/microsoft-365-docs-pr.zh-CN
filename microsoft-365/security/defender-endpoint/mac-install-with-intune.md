@@ -1,7 +1,7 @@
 ---
-title: macOS 上的 Microsoft Defender for Endpoint 的基于 Intune 的部署
-description: 使用 Microsoft Intune 在 macOS 上安装 Microsoft Defender for Endpoint。
-keywords: microsoft， defender， atp， mac， 安装， 部署， 卸载， intune， jamf， macos， catalina， mojave， high sierra
+title: 适用于 Mac 上的 Microsoft Defender for Endpoint 的基于 Intune 的部署
+description: 使用 Microsoft Intune 在 Mac 上安装 Microsoft Defender for Endpoint。
+keywords: microsoft， defender， Microsoft Defender for Endpoint， mac， 安装， 部署， 卸载， intune， jamf， macos， catalina， mojave， high sierra
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: dbb4e3a558256f19594ab0aa4efbd2c9eed6b7f8
-ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
+ms.openlocfilehash: c98ce17b7b71f2d05aeffe66dbb1e08f9046f463
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51764211"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933141"
 ---
 # <a name="intune-based-deployment-for-microsoft-defender-for-endpoint-on-macos"></a>macOS 上的 Microsoft Defender for Endpoint 的基于 Intune 的部署
 

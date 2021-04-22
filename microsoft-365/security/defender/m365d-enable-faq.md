@@ -1,7 +1,7 @@
 ---
 title: 打开 Microsoft 365 Defender 时出现常见问题
 description: 获取有关授权、权限、初始设置和其他与启用 Microsoft 365 Defender 相关的产品和服务的最常见问题的解答
-keywords: 常见问题， 常见问题， GCC， 入门， 启用 MTP， Microsoft 威胁防护， M365， 安全性， 数据位置， 所需权限， 许可证资格， 设置页面
+keywords: 常见问题， 常见问题， GCC， 入门， 启用 Microsoft 365 Defender， Microsoft 365 Defender， M365， 安全， 数据位置， 所需权限， 许可证资格， 设置页面
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 7482bf614e7cb3ffad6596f3c5d8bc554d46d912
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 55c1a3807fe8e28ca12f4f638c1ab2ca717523ed
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51056555"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933429"
 ---
 # <a name="frequently-asked-questions-when-turning-on-microsoft-365-defender"></a>打开 Microsoft 365 Defender 时出现常见问题
 
@@ -45,7 +45,7 @@ ms.locfileid: "51056555"
 
 - Microsoft Defender for Endpoint
 - Microsoft Defender for Identity
-- Microsoft Cloud App Security
+- Microsoft 云应用安全
 - Defender for Office 365 (计划 2) 
  
 有关受支持的许可证的完整列表， [请阅读许可要求](prerequisites.md#licensing-requirements)。

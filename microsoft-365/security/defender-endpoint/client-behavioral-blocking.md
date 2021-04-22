@@ -1,7 +1,7 @@
 ---
 title: 客户端阻止
 description: 客户端行为阻止是 Microsoft Defender for Endpoint 中的行为阻止和包含功能的一部分
-keywords: 行为阻止， 快速保护， 客户端行为， Microsoft Defender ATP， microsoft defender for endpoint
+keywords: 行为阻止， 快速保护， 客户端行为， Microsoft Defender for Endpoint
 search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
 author: denisebmsft
@@ -19,12 +19,12 @@ ms.collection:
 - m365-security-compliance
 - m365initiative-defender-endpoint
 ms.technology: mde
-ms.openlocfilehash: 48929d0e2b0c932d37cb5d29783712d00b17117f
-ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
+ms.openlocfilehash: c58c81cd4623ec03850c167cad285e052413174c
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51904148"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933417"
 ---
 # <a name="client-behavioral-blocking"></a>客户端阻止
 

@@ -1,6 +1,6 @@
 ---
 title: 获取 RBAC 计算机组集合 API
-description: 了解如何使用获取 KB 集合 API 在 Microsoft Defender 高级威胁防护中检索 RBAC 设备组的集合。
+description: 了解如何使用获取 KB 集合 API 在 Microsoft Defender for Endpoint 中检索 RBAC 设备组的集合。
 keywords: api， 图形 api， 受支持的 api， 获取， RBAC， 组
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 10/07/2018
-ms.openlocfilehash: 54a0edb47204fe6e48666f0927d05121af95e00a
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 18566025d79f02281c1d2c1509dd98f1e57879c2
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51166427"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51932771"
 ---
 # <a name="get-kb-collection-api"></a>获取 KB 集合 API
 

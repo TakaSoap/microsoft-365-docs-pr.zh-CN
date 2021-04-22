@@ -19,12 +19,12 @@ ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
 - commerce
-ms.openlocfilehash: a9625b391260d27610bb304b0ae3788b541b7709
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 9f6489425a924c15d1a5cddb8c9a7d3d7812e5f0
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50911978"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51930229"
 ---
 # <a name="about-registration-numbers-and-under-review-notifications"></a>关于注册号码和审核通知
 
@@ -36,7 +36,7 @@ ms.locfileid: "50911978"
 
 对于必须注册号码的国家/地区，文本框上方的标签指示需要哪种类型的号码。
 
-例如，在下面的屏幕截图中，标签指示需要 CNPJ 注册号码。
+例如，在下面的屏幕截图中，标签指示需要巴西 (CNPJ) 注册号码。
 
 :::image type="content" source="../media/macregnum-cnpj-screenshot-400.png" alt-text="C N P J 号码的注册号码字段屏幕截图。":::
 

@@ -1,7 +1,7 @@
 ---
 title: Linux 上的 Microsoft Defender for Endpoint 的隐私
 description: 隐私控制，如何配置影响隐私的策略设置，以及 Linux 上的 Microsoft Defender for Endpoint 中收集的诊断数据信息。
-keywords: microsoft， defender， atp， linux， 隐私， 诊断
+keywords: microsoft， defender， Microsoft Defender for Endpoint， linux， 隐私， 诊断
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 69af56efa57f389842ed31afa5f0a74667bd8f7b
-ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
+ms.openlocfilehash: cbf68b6ce8397f0339b374a041ba2629b20db699
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51903246"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933333"
 ---
 # <a name="privacy-for-microsoft-defender-for-endpoint-on-linux"></a>Linux 上的 Microsoft Defender for Endpoint 的隐私
 
@@ -33,13 +33,13 @@ ms.locfileid: "51903246"
 
 > 想要体验适用于终结点的 Defender？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
 
-Microsoft 致力于提供你在使用适用于 Linux 的 Defender for Endpoint 时选择收集和使用数据方式时需要的信息和控件。
+Microsoft 致力于提供你在 Linux 上使用 Defender for Endpoint 时，选择收集和使用数据方式时需要的信息和控件。
 
 本主题介绍产品内可用的隐私控件、如何使用策略设置管理这些控件，以及所收集的数据事件的更多详细信息。
 
 ## <a name="overview-of-privacy-controls-in-microsoft-defender-for-endpoint-on-linux"></a>Linux 上的 Microsoft Defender for Endpoint 中的隐私控件概述
 
-本部分介绍 Defender for Endpoint for Linux 收集的不同类型的数据的隐私控制。
+本部分介绍 Linux 上的 Defender for Endpoint 收集的不同类型的数据的隐私控制。
 
 ### <a name="diagnostic-data"></a>诊断数据
 
@@ -75,7 +75,7 @@ Microsoft 致力于提供你在使用适用于 Linux 的 Defender for Endpoint �
 
 如果您是 IT 管理员，您可能希望在企业级别配置这些控件。 
 
-The privacy controls for the various types of data described in the preceding section are described in [Set preferences for Defender for Endpoint for Linux .](linux-preferences.md)
+The privacy controls for the various types of data described in the preceding section are described in [Set preferences for Defender for Endpoint on Linux](linux-preferences.md).
 
 与任何新策略设置一样，应在受限的受控环境中仔细测试它们，以确保在组织中更广泛地实现策略设置之前，所配置的设置具有所需的效果。
 
@@ -96,7 +96,7 @@ The privacy controls for the various types of data described in the preceding se
 | org_id                  | 与设备所属的企业关联的唯一标识符。 允许 Microsoft 确定问题是否影响一组选定企业以及有多少企业受到影响。 |
 | hostname                | 本地设备名称 (DNS 后缀) 。 允许 Microsoft 确定问题是否影响一组选定安装以及有多少用户受到影响。 |
 | product_guid            | 产品的唯一标识符。 允许 Microsoft 区分影响不同产品风格的问题。 |
-| app_version             | 适用于 Linux 应用程序的 Defender for Endpoint 的版本。 允许 Microsoft 确定哪些版本的产品显示问题，以便可以正确地确定问题的优先级。|
+| app_version             | Linux 应用程序上的 Defender for Endpoint 的版本。 允许 Microsoft 确定哪些版本的产品显示问题，以便可以正确地确定问题的优先级。|
 | sig_version             | 安全智能数据库的版本。 允许 Microsoft 标识显示问题的安全智能版本，以便可以正确地确定问题的优先级。 |
 | supported_compressions  | 应用程序支持的压缩算法列表，例如 `['gzip']` 。 允许 Microsoft 了解在与应用程序通信时可以使用的压缩类型。 |
 | release_ring            | 设备与设备关联的圈， (Insider Fast、Insider Slow、Production) 。 允许 Microsoft 识别可能在哪个发布环上发生问题，以便可以正确地确定问题的优先级。 |
@@ -163,7 +163,7 @@ The privacy controls for the various types of data described in the preceding se
 
 | 字段            | 说明 |
 | ---------------- | ----------- |
-| version          | 适用于 Linux 的终结点的 Defender 版本。 |
+| version          | Linux 上适用于终结点的 Defender 版本。 |
 | instance_id      | 内核扩展启动时生成的唯一标识符。 |
 | trace_level      | 内核扩展的跟踪级别。 |
 | subsystem        | 用于实时保护的基础子系统。 |
@@ -178,7 +178,7 @@ The privacy controls for the various types of data described in the preceding se
 仅在用户同意的情况下收集诊断日志作为反馈提交功能一部分。 将收集以下文件作为支持日志的一部分：
 
 - */var/log/microsoft/mdatp 下的所有文件*
-- */etc/opt/microsoft/mdatp* 下由 Defender for Endpoint for Linux 创建和使用的文件的子集
+- */etc/opt/microsoft/mdatp* 下由 Linux 上的 Defender for Endpoint 创建和使用的文件的子集
 - */var/log/microsoft_mdatp_ \* .log 下的产品安装和卸载日志*
 
 ### <a name="optional-diagnostic-data"></a>可选诊断数据

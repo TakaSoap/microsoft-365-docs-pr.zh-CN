@@ -1,7 +1,7 @@
 ---
 title: 评估 Microsoft 365 Defender
 description: 设置 Microsoft 365 Defender 试用实验室或试验环境，以试用并体验旨在保护组织中设备、标识、数据和应用程序的安全解决方案。
-keywords: Microsoft 威胁防护试用版， 试用 Microsoft 威胁防护， 评估 Microsoft 威胁防护， Microsoft 威胁防护评估实验室， Microsoft 威胁防护试点， 网络安全， 高级永久性威胁， 企业安全， 设备， 设备， 标识， 用户， 数据， 应用程序， 事件， 自动调查和修正， 高级搜寻
+keywords: Microsoft 365 Defender 试用版， 试用 Microsoft 365 Defender， 评估 Microsoft 365 Defender， Microsoft 365 Defender 评估实验室， Microsoft 365 Defender 试点， 网络安全， 高级永久性威胁， 企业安全， 设备， 设备， 标识， 用户， 数据， 应用程序， 事件， 自动调查和修正， 高级搜寻
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 2ea829e0e2697facd2522dbf16ced7d620662eee
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 1c260588b80d8325567b74148a7a62586cfbc707
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51056547"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933165"
 ---
 # <a name="create-a-microsoft-365-defender-trial-lab-or-pilot-environment"></a>创建 Microsoft 365 Defender 试用实验室或试验环境 
 
@@ -79,7 +79,7 @@ ms.locfileid: "51056547"
 :---|:---
 Microsoft Defender for Office 365 | 帮助保护整个 Office 365 环境免受当前的威胁
 Microsoft Defender for Identity | 标识并检测对遭到入侵的身份和恶意内部操作的威胁。
-Microsoft Cloud App Security | 提供丰富的可见性、控制数据传输，并检测云服务中的网络威胁。
+Microsoft 云应用安全 | 提供丰富的可见性、控制数据传输，并检测云服务中的网络威胁。
 Microsoft Defender for Endpoint | 通过全面的终结点安全性来预防、检测和提供对高级威胁的响应功能。
 
 

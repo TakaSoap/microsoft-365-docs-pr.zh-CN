@@ -1,7 +1,7 @@
 ---
 title: 在 Microsoft 365 Defender 中处理高级搜寻查询结果
 description: 在 Microsoft 365 Defender 中充分利用高级搜寻返回的查询结果
-keywords: 高级搜寻， 威胁搜寻， 网络威胁搜寻， Microsoft 威胁防护， microsoft 365， mtp， m365， 搜索， 查询， 遥测， 自定义检测， 架构， kusto， microsoft 365， Microsoft 威胁防护， 可视化， 图表， 筛选器， 深化
+keywords: 高级搜寻， 威胁搜寻， 网络威胁搜寻， Microsoft 365 Defender， microsoft 365， m365， 搜索， 查询， 遥测， 自定义检测， 架构， kusto， 可视化， 图表， 筛选器， 深化
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 7086108febc25c4ecaaa3015c1d9a49f9d8ee642
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: 34880c870cdf398ab1565f7f532ac95a6fde475d
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51500918"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51932925"
 ---
 # <a name="work-with-advanced-hunting-query-results"></a>使用高级搜寻查询结果
 

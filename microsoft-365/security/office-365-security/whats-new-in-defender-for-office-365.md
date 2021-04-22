@@ -1,7 +1,7 @@
 ---
 title: Microsoft Defender for Office 365 的新增功能
 description: 了解最新版本的 Microsoft Defender for Office 365 中提供的新特性和功能。
-keywords: Office 365 atp， ga， generally available， capabilities， available， new 中的新增功能
+keywords: Microsoft Defender for Office 365 中的新增功能， ga， 通用， 功能， 可用， 新增
 search.appverid: met150
 ms.sitesec: library
 ms.pagetype: security
@@ -21,12 +21,12 @@ ms.custom: seo-marvel-apr2020
 ms.reviewer: vippand
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 7dd691b0d018db2b7afb3b88a2c1f9f7f8a39a33
-ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
+ms.openlocfilehash: 4bb1450790883deec295f554ddf9614c0f01fe2d
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51569775"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51930479"
 ---
 # <a name="whats-new-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 的新增功能
 
@@ -38,7 +38,7 @@ ms.locfileid: "51569775"
 
 本文列出了最新版本的 Microsoft Defender for Office 365 中的新功能。 当前处于预览状态的功能使用预览 (**表示) 。**
 
-通过观看此视频 [了解更多信息](https://www.youtube.com/watch?v=Tdz6KfruDGo&list=PL3ZTgFEc7LystRja2GnDeUFqk44k7-KXf&index=3)。
+观看[此视频](https://www.youtube.com/watch?v=Tdz6KfruDGo&list=PL3ZTgFEc7LystRja2GnDeUFqk44k7-KXf&index=3)了解更多信息。
 > [!TIP]
 > 还没有适用于 Office 365 的 Microsoft Defender？ [联系销售人员以开始试用](https://info.microsoft.com/ww-landing-M365SMB-web-contact.html)。
 

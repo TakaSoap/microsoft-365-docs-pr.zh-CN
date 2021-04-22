@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: ebfff7721bc61012811a66146079ac9758889594
-ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
+ms.openlocfilehash: a3885a462265368bc42c758ee5a8fd1c673ec08c
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51893597"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51932795"
 ---
 # <a name="configure-device-proxy-and-internet-connectivity-settings"></a>配置设备代理和 Internet 连接设置
 
@@ -176,7 +176,7 @@ netsh winhttp reset proxy
 *.blob.core.windows.net URL 终结点可以替换为测试结果的"防火墙规则： *.blob.core.windows.net"部分中显示的 URL。 
 
 > [!NOTE]
-> 如果通过 Azure 安全中心和 ASC (载入) ，可能使用多个工作区。 你需要在每个工作区 (的已载入计算机上执行上述 TestCloudConnection.exe 过程，以确定工作区和工作区之间的 *.blob.core.windows.net URL) 。
+> 如果通过 Azure Defender 载入，可能使用多个工作区。 你需要在每个工作区 (的已载入计算机上执行上述 TestCloudConnection.exe 过程，以确定工作区和工作区之间的 *.blob.core.windows.net URL) 。
 
 ## <a name="verify-client-connectivity-to-microsoft-defender-for-endpoint-service-urls"></a>验证与 Microsoft Defender for Endpoint 服务 URL 的客户端连接
 

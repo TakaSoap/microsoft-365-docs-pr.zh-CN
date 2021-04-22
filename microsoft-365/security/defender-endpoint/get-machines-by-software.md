@@ -1,7 +1,7 @@
 ---
 title: 按软件列出设备
 description: 检索已安装此软件的设备列表。
-keywords: api， 图形 api， 受支持的 api， 获取， 列表设备， 设备列表， 按软件列出设备， mdatp tvm api
+keywords: api， 图形 api， 受支持的 api， 获取， 列表设备， 设备列表， 按软件列出设备， Microsoft Defender for Endpoint tvm api
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -14,12 +14,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 78cccee6380f0c403aab21eac4f07b64b8f8d510
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: ff0bb9a6f17b8d4dc6432292ec98743d3eaf952c
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51200385"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51929093"
 ---
 # <a name="list-devices-by-software"></a>按软件列出设备
 
@@ -54,7 +54,7 @@ GET /api/Software/{Id}/machineReferences
 
 | 名称        | 类型 | 说明
 |:--------------|:-------|:--------------|
-| Authorization | 字符串 | Bearer {token}。**必需**。
+| Authorization | String | Bearer {token}。**必需**。
 
 ## <a name="request-body"></a>请求正文
 Empty

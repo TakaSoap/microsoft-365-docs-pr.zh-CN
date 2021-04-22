@@ -10,12 +10,12 @@ ms.service: o365-administration
 search.appverid: MET150
 localization_priority: Normal
 description: 了解如何设置 Microsoft Viva 主题
-ms.openlocfilehash: 629008e083d71e09632b05e21eaefb011d7d9ce2
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 19395cf3a9ecc991f08f375425803cb81a2a1d35
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50929440"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51930217"
 ---
 # <a name="set-up-microsoft-viva-topics"></a>设置 Microsoft Viva 主题
 
@@ -37,6 +37,27 @@ ms.locfileid: "50929440"
 
 <br>
 
+## <a name="assign-licenses"></a>分配许可证
+
+必须为使用主题的用户分配许可证。 只有具有许可证的用户才能查看有关主题的信息，包括突出显示、主题卡片、主题页面和主题中心。 
+
+以分配许可证：
+
+1. 在Microsoft 365 管理中心中，在 **用户** 下，点击 **活动用户**。
+
+2. 选择要许可的用户，然后单击"许可证 **和应用"。**
+
+3. 在 **"许可证"** 下，**选择"Viva 主题"。**
+
+4. 在 **"应用"** 下，确保已选中"带索引 (**的 Graph** 连接器搜索") "Viva 主题"和 **"Viva** 主题"。
+
+   > [!div class="mx-imgBorder"]
+   > ![Microsoft 365 管理中心中的 Microsoft Viva 主题许可证](../media/topic-experiences-licenses.png)
+
+5. 单击“**保存更改**”。
+
+分配许可证后，用户可能需要一小时才能访问主题。
+
 ## <a name="set-up-topics"></a>设置主题
 
 设置主题
@@ -48,7 +69,7 @@ ms.locfileid: "50929440"
 
 3. 在" **将人员连接到知识"页上** ， **单击"** 开始"以完成设置过程。
 
-    ![入门](../media/k-get-started.png) 
+    ![开始行动](../media/k-get-started.png) 
 
 4. 在" **选择 Viva 主题如何查找** 主题"页上，您将配置主题发现。 在" **选择 SharePoint 主题源** "部分，选择要在发现期间作为主题源对哪些 SharePoint 网站进行爬网。 从以下项中进行选择：
     - **所有网站**：组织的所有 SharePoint 网站。 这包括当前网站和未来网站。
@@ -82,7 +103,7 @@ ms.locfileid: "50929440"
 
     完成并保存 .csv 文件后， **选择"浏览** "找到并选择它。
     
-    选择“下一步”。
+    选择“**下一步**”。
 
 6. 在 **"谁可以看到主题以及** 他们在哪里可以看到主题"页面上，你将配置主题可见性。 在" **谁可以看到** 主题"设置中，选择谁有权访问主题详细信息，例如突出显示的主题、主题卡片、搜索中的主题答案和主题页面。 可以选择：
     - **我的组织中的每个人**
@@ -107,11 +128,11 @@ ms.locfileid: "50929440"
 
     ![主题管理的权限](../media/km-setup-create-edit-topics.png) 
 
-    选择“下一步”。
+    选择“**下一步**”。
 
 9. 在 **"创建主题中心** "页上，您可以创建主题中心网站，可在其中查看主题页面并管理主题。 在" **网站名称"** 框中，键入主题中心的名称。 可以选择在"说明"框中键入 **简短** 说明。 
 
-   选择“下一步”。
+   选择“**下一步**”。
 
    ![创建知识中心](../media/ksetup4.png)  
 
@@ -124,25 +145,6 @@ ms.locfileid: "50929440"
     ![应用的设置](../media/ksetup7.png)    
 
 请注意，首次启用主题发现时，所有建议的主题最多可能需要两周时间才能显示在"管理主题"视图中。 主题发现将在新内容或内容更新时继续。 在 Viva 主题评估新信息时，组织中的建议主题数量通常有波动。
-
-## <a name="assign-licenses"></a>分配许可证
-
-配置主题体验后，必须为使用主题的用户分配许可证。 只有具有许可证的用户才能查看有关主题的信息，包括突出显示、主题卡片、主题页面和主题中心。 
-
-以分配许可证：
-
-1. 在Microsoft 365 管理中心中，在 **用户** 下，点击 **活动用户**。
-
-2. 选择要许可的用户，然后单击"许可证 **和应用"。**
-
-3. 在 **"许可证"** 下，**选择"Viva 主题"。**
-
-4. 在 **"应用"** 下，确保已选中"带索引 (**的 Graph** 连接器搜索") "Viva 主题"和 **"Viva** 主题"。
-
-   > [!div class="mx-imgBorder"]
-   > ![Microsoft 365 管理中心中的 Microsoft Viva 主题许可证](../media/topic-experiences-licenses.png)
-
-5. 单击“**保存更改**”。
 
 ## <a name="manage-topic-experiences"></a>管理主题体验
 

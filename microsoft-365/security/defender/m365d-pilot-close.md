@@ -1,7 +1,7 @@
 ---
 title: 总结试点 Microsoft 365 Defender 项目结果
 description: 结束试点 Microsoft 365 Defender 项目，完成记分卡，分析报告结果，并决定如何继续。
-keywords: Microsoft 威胁防护试点，决定在试点 Microsoft 威胁防护项目后下一步应执行哪些操作，评估生产中的 Microsoft 威胁防护后应执行哪些操作，从 Microsoft 威胁防护试点转换到部署、网络安全、高级永久性威胁、企业安全、设备、设备、标识、用户、数据、应用程序、事件、自动调查和修正、高级搜寻
+keywords: Microsoft 365 Defender 试点，决定在试点 Microsoft 365 Defender 项目后下一步应执行哪些操作，评估生产中的 Microsoft 365 Defender 后应执行哪些操作，从 Microsoft 365 Defender 试点转换到部署、网络安全、高级永久性威胁、企业安全、设备、设备、标识、用户、数据、应用程序、事件、自动调查和修正、高级搜寻
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-pilotmtpproject
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 2553e88992b7eca906b4697edee4cdf632929444
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 64cdb37b64780a651b2689e68e21c5a385df5ba9
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51056545"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51932865"
 ---
 # <a name="closing-and-summarizing-your-microsoft-365-defender-pilot"></a>结束和总结 Microsoft 365 Defender 试点  
 

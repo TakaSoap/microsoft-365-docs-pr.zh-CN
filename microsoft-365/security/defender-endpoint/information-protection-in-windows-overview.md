@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 803c0af0c495eedfd26023d4e71d98df6a1b1b64
-ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
+ms.openlocfilehash: 65c5161f110e95008f2dc56aa3a2d17266ac1cb1
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51904018"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933345"
 ---
 # <a name="information-protection-in-windows-overview"></a>Windows 中的信息保护概述
 
@@ -41,7 +41,7 @@ ms.locfileid: "51904018"
 
 
 >[!TIP]
-> 阅读我们的博客文章，了解如何将 Microsoft Defender for Endpoint (以前称为 Microsoft Defender ATP) 与 Microsoft 信息保护集成，以发现、保护和监视 Windows 设备上 [敏感数据](https://cloudblogs.microsoft.com/microsoftsecure/2019/01/17/windows-defender-atp-integrates-with-microsoft-information-protection-to-discover-protect-and-monitor-sensitive-data-on-windows-devices/)。
+> 阅读我们的博客文章，了解如何将 Microsoft Defender for Endpoint 与 Microsoft 信息保护集成，以发现、保护和监视 Windows 设备上 [敏感数据](https://cloudblogs.microsoft.com/microsoftsecure/2019/01/17/windows-defender-atp-integrates-with-microsoft-information-protection-to-discover-protect-and-monitor-sensitive-data-on-windows-devices/)。
 
 Defender for Endpoint 应用以下方法来发现、分类和保护数据：
 

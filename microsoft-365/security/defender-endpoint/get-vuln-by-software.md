@@ -1,7 +1,7 @@
 ---
 title: 按软件列出漏洞
 description: 检索已安装软件中的漏洞列表。
-keywords: api， 图形 api， 受支持的 api， 获取， 漏洞列表， mdatp tvm api
+keywords: api， 图形 api， 受支持的 api， 获取， 漏洞列表， Microsoft Defender for Endpoint tvm api
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 8f05c1a67c845e7f88cbcb3ee88cf7a664d5a4bf
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: c28417d9782d14d890e771ed401f8ee5d3c26bc0
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51166488"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51932759"
 ---
 # <a name="list-vulnerabilities-by-software"></a>按软件列出漏洞
 
@@ -46,7 +46,7 @@ ms.locfileid: "51166488"
 
 权限类型 |   权限  |   权限显示名称
 :---|:---|:---
-Application | Software.Read.All | "读取威胁和漏洞管理软件信息"
+应用程序 | Software.Read.All | "读取威胁和漏洞管理软件信息"
 委派（工作或学校帐户） | Software.Read | "读取威胁和漏洞管理软件信息"
 
 ## <a name="http-request"></a>HTTP 请求

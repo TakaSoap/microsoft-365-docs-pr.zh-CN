@@ -1,7 +1,7 @@
 ---
 title: 在 iOS 功能上配置 Microsoft Defender for Endpoint
 description: 介绍如何在 iOS 功能上部署 Microsoft Defender for Endpoint
-keywords: microsoft， defender， atp， ios， 配置， 功能， ios
+keywords: microsoft， defender， Microsoft Defender for Endpoint， ios， 配置， 功能， ios
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: f5f7345f92b3ac76aa647a9caed63e5684be9c30
-ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
+ms.openlocfilehash: 834ce13917237dd822bdfbb7b88967dcac4bc0f8
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51903306"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51929009"
 ---
 # <a name="configure-microsoft-defender-for-endpoint-on-ios-features"></a>在 iOS 功能上配置 Microsoft Defender for Endpoint
 
@@ -35,16 +35,16 @@ ms.locfileid: "51903306"
 > 想要体验适用于终结点的 Defender？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 > [!NOTE]
-> 适用于 iOS 的终结点的 Defender 将使用 VPN 来提供 Web 保护功能。 这不是常规 VPN，它是不接受设备外流量的本地/自循环 VPN。
+> iOS 上的 Defender for Endpoint 将使用 VPN 来提供 Web 保护功能。 这不是常规 VPN，它是不接受设备外流量的本地/自循环 VPN。
 
-## <a name="conditional-access-with-defender-for-endpoint-for-ios"></a>使用适用于 iOS 的 Defender 终结点的条件访问  
+## <a name="conditional-access-with-defender-for-endpoint-on-ios"></a>在 iOS 上通过 Defender for Endpoint 进行条件访问  
 iOS 上的 Microsoft Defender for Endpoint 以及 Microsoft Intune 和 Azure Active Directory 支持根据设备风险级别强制执行设备合规性和条件访问策略。 Defender for Endpoint 是移动威胁防护 (MTD) 解决方案，你可以部署该解决方案以通过 Intune 利用此功能。
 
-若要详细了解如何使用适用于 iOS 的 Defender for Endpoint 设置条件访问，请参阅[Defender for Endpoint 和 Intune。](https://docs.microsoft.com/mem/intune/protect/advanced-threat-protection)
+若要详细了解如何使用 iOS 上的 Defender for Endpoint 设置条件访问，请参阅[Defender for Endpoint 和 Intune。](https://docs.microsoft.com/mem/intune/protect/advanced-threat-protection)
 
 ## <a name="web-protection-and-vpn"></a>Web 保护和 VPN
 
-默认情况下，适用于 iOS 的 Defender for Endpoint 包括并启用 Web 保护功能。 [Web](web-protection-overview.md) 保护有助于保护设备免受 Web 威胁，并保护用户免受网络钓鱼攻击。 适用于 iOS 的终结点的 Defender 使用 VPN 来提供此保护。 请注意，这是本地 VPN，与传统 VPN 不同，网络流量不会在设备外部发送。
+默认情况下，iOS 上的 Defender for Endpoint 包括并启用 Web 保护功能。 [Web](web-protection-overview.md) 保护有助于保护设备免受 Web 威胁，并保护用户免受网络钓鱼攻击。 iOS 上的 Defender for Endpoint 使用 VPN 来提供此保护。 请注意，这是本地 VPN，与传统 VPN 不同，网络流量不会在设备外部发送。
 
 虽然默认启用，但在某些情况下可能需要你禁用 VPN。 例如，你想要运行一些在配置 VPN 时不起作用的应用。 在这种情况下，你可以选择按照以下步骤在设备上禁用应用中的 VPN：
 
@@ -93,10 +93,10 @@ Apple iOS 不支持多个设备范围的 VPN 同时处于活动状态。 虽然�
 
 ## <a name="configure-custom-indicators"></a>配置自定义指示器
 
-适用于 iOS 的终结点的 Defender 使管理员能够在 iOS 设备上配置自定义指示器。 若要详细了解如何配置自定义指示器，请参阅管理 [指示器](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/manage-indicators)。
+通过 iOS 上的 Defender for Endpoint，管理员还可以在 iOS 设备上配置自定义指示器。 若要详细了解如何配置自定义指示器，请参阅管理 [指示器](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/manage-indicators)。
 
 > [!NOTE]
-> 适用于 iOS 的终结点的 Defender 仅支持为 IP 地址和 URL/域创建自定义指示器。
+> iOS 上的 Defender for Endpoint 仅支持为 IP 地址和 URL/域创建自定义指示器。
 
 ## <a name="report-unsafe-site"></a>报告不安全网站
 

@@ -1,7 +1,7 @@
 ---
 title: 行为阻止和控制
 description: 了解 Microsoft Defender for Endpoint 中的行为阻止和包含功能
-keywords: Microsoft Defender ATP，阻止模式下的 EDR，被动模式阻止
+keywords: Microsoft Defender for Endpoint， EDR in block mode， passive mode blocking
 search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
 author: denisebmsft
@@ -19,12 +19,12 @@ ms.collection:
 - m365-security-compliance
 - m365initiative-defender-endpoint
 ms.technology: mde
-ms.openlocfilehash: 7cea65292c427cb953e2e8e3ca866c89f83128b1
-ms.sourcegitcommit: 987f70e44e406ab6b1dd35f336a9d0c228032794
+ms.openlocfilehash: fdaa4d7cbc24ae2ebe28d0856b413f4982fe6b01
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/05/2021
-ms.locfileid: "51587163"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51929045"
 ---
 # <a name="behavioral-blocking-and-containment"></a>行为阻止和控制
 

@@ -1,7 +1,7 @@
 ---
 title: Microsoft 安全门户和管理中心
 description: 查找适当的 Microsoft 管理中心或门户，以管理与 Microsoft 365 安全相关的各种服务
-keywords: 安全， 门户， Microsoft 365， M365， 安全中心， 管理中心， URL， 链接， MTP， Microsoft Defender ATP， Microsoft Defender 安全中心， Azure ATP， Office 365 ATP， MCAS， WDSI， SCC， Intune， MDM， MEM， ASC， OATP， AATP， Cloud App Security， Azure AD， 安全 & 合规性中心
+keywords: 安全， 门户， Microsoft 365， M365， 安全中心， 管理中心， URL， 链接， Microsoft 365 Defender， Microsoft Defender for Endpoint， Microsoft Defender 安全中心， Microsoft Defender for Identity， Microsoft Defender for Office 365， MCAS， WDSI， SCC， Intune， MDM， MEM， ASC， Cloud App Security， Azure AD， 安全 & 合规性中心
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 localization_priority: Normal
@@ -17,12 +17,12 @@ ms.collection:
 ms.topic: article
 search.appverid: met150
 ms.technology: m365d
-ms.openlocfilehash: 66e1bfa8007a972a1963745857a25e1e255634b6
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: c304d8badd9bde11ad0f483b482628503569dc26
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51200181"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51931931"
 ---
 # <a name="microsoft-security-portals-and-admin-centers"></a>Microsoft 安全门户和管理中心
 

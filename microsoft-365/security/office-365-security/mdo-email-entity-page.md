@@ -14,13 +14,13 @@ search.appverid: ''
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
-description: Microsoft Defender for Office 365 E5、ATP P1 和 ATP P2 客户现在可以通过电子邮件实体页面获得每个电子邮件的 360 度视图。
-ms.openlocfilehash: e96e83ce5e3af9e61599ab67ce9f91ac797cc6db
-ms.sourcegitcommit: 4acf613587128cae27e0fd470d1216b509775529
+description: Microsoft Defender for Office 365 E5、P1 和 P2 客户现在可以通过电子邮件实体页面获得每个电子邮件的 360 度视图。
+ms.openlocfilehash: 8b531980852336679aad5f2013d63269c238e49c
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/15/2021
-ms.locfileid: "51768754"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933357"
 ---
 # <a name="the-email-entity-page"></a>"电子邮件实体"页面
 

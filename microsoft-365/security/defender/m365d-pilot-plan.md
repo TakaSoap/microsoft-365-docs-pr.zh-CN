@@ -1,7 +1,7 @@
 ---
 title: 规划试点 Microsoft 365 Defender 项目
 description: 与利益干系人一起规划试点 Microsoft 365 Defender 项目，以管理预期并确保获得成功的结果。
-keywords: Microsoft 威胁防护试点， 计划 Microsoft 威胁防护试点项目， 评估生产中的 Microsoft 威胁防护， Microsoft 威胁防护试点项目， 网络安全， 高级永久性威胁， 企业安全， 设备， 设备， 标识， 用户， 数据， 应用程序， 事件， 自动调查和修正， 高级搜寻
+keywords: Microsoft 365 Defender 试点， 计划试点 Microsoft 365 Defender 项目， 评估生产中的 Microsoft 365 Defender， Microsoft 365 Defender 试点项目， 网络安全， 高级永久性威胁， 企业安全， 设备， 设备， 标识， 用户， 数据， 应用程序， 事件， 自动调查和修正， 高级搜寻
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-pilotmtpproject
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: aee508414b2388b04ab362eedb1f894a4c3d54fd
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 98f0c91a51cc2b73cc26e6fb53143a417a7a147e
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51055252"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51932543"
 ---
 # <a name="planning-your-pilot-microsoft-365-defender-project"></a>规划试点 Microsoft 365 Defender 项目 
 

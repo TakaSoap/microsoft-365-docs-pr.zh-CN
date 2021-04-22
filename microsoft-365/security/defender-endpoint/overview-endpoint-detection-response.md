@@ -2,7 +2,7 @@
 title: 终结点检测和响应功能概述
 ms.reviewer: ''
 description: 了解 Microsoft Defender for Endpoint 中的终结点检测和响应功能
-keywords: 适用于终结点的 microsoft defender， 终结点检测和响应， 响应， 检测， 网络安全， 保护
+keywords: 适用于终结点的 Microsoft Defender， 终结点检测和响应， 响应， 检测， 网络安全， 保护
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 138a6afde9e8c601fd41811928580644b85bf2e2
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: b00bef611a3e4b33bf15a5366b09a96f68d4c1a2
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51861715"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933513"
 ---
 # <a name="overview-of-endpoint-detection-and-response"></a>终结点检测和响应概述
 

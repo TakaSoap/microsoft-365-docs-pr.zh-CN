@@ -1,7 +1,7 @@
 ---
-title: 适用于 Android 的 Microsoft Defender ATP - 隐私信息
-description: 隐私控制，如何配置影响隐私的策略设置，以及有关在适用于 Android 的 Microsoft Defender ATP 中收集的诊断数据的信息。
-keywords: microsoft， defender， atp， android， 隐私， 诊断
+title: Android 上的 Microsoft Defender for Endpoint - 隐私信息
+description: 隐私控制，如何配置影响隐私的策略设置，以及 Android 上的 Microsoft Defender for Endpoint 中收集的诊断数据信息。
+keywords: microsoft， defender， Microsoft Defender for Endpoint， android， 隐私， 诊断
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 79f8882e21f23e75d85813cde03260ef17adf246
-ms.sourcegitcommit: 2655bb0ccd66279c35be2fadbd893c937d084109
+ms.openlocfilehash: 415a1f555e1a33c103894221086b783aa754cf32
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51876105"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51930133"
 ---
 #  <a name="microsoft-defender-for-endpoint-on-android---privacy-information"></a>Android 上的 Microsoft Defender for Endpoint - 隐私信息
 
@@ -32,7 +32,7 @@ ms.locfileid: "51876105"
 > 想要体验 Microsoft Defender for Endpoint？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 
-适用于 Android 的 Defender for Endpoint 从已配置的 Android 设备收集信息，并存储在你拥有 Defender for Endpoint 的同一租户中。 该信息的收集有助于使适用于 iOS 的 Endpoint 的 Defender 保持安全、最新、如预期运行并支持服务。
+Android 上的 Defender for Endpoint 从已配置的 Android 设备收集信息，并存储到具有 Defender for Endpoint 的同一租户中。 该信息的收集有助于使适用于 Android 的 Endpoint 的 Defender 保持安全、最新、如预期运行并支持服务。
 
 有关数据存储详细信息，请参阅适用于终结点数据存储[和隐私的 Microsoft Defender。](data-storage-privacy.md)
 

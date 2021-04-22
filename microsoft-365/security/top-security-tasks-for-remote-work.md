@@ -15,12 +15,12 @@ ms.collection:
 - M365-security-compliance
 - remotework
 description: 保护你的业务电子邮件和数据免受网络威胁，包括勒索软件、网络钓鱼和恶意附件。
-ms.openlocfilehash: 9d24381b5947049c506b19553a2ab3d77b95d7c8
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 109ba05b21ce9c1355be73dbdfb000d6eb8c4e4d
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51200313"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51930467"
 ---
 # <a name="top-12-tasks-for-security-teams-to-support-working-from-home"></a>支持在家工作的安全团队的 12 大任务
 
@@ -108,7 +108,7 @@ Microsoft Defender for Office 365：
 
 你需要与 Exchange Online 管理员和 SharePoint Online 管理员一起为这些工作负载配置适用于 Office 365 的 Defender：
 
-- [适用于 SharePoint、OneDrive 和 Microsoft Teams 的 ATP](office-365-security/mdo-for-spo-odb-and-teams.md)
+- [适用于 SharePoint、OneDrive 和 Microsoft Teams 的 Microsoft Defender for Endpoint](office-365-security/mdo-for-spo-odb-and-teams.md)
 
 ## <a name="4-configure-microsoft-defender-for-identity"></a>4：为标识配置 Microsoft Defender
 

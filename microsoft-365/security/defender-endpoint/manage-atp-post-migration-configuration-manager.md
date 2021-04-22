@@ -1,7 +1,7 @@
 ---
 title: 使用 Configuration Manager 管理 Microsoft Defender for Endpoint
 description: 了解如何使用 Configuration Manager 管理 Microsoft Defender for Endpoint
-keywords: 迁移后， 管理， 操作， 维护， 利用率， Configuration Manager， windows defender 高级威胁防护， atp， edr
+keywords: 迁移后， 管理， 操作， 维护， 利用率， Configuration Manager， Microsoft Defender for Endpoint， edr
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,12 +20,12 @@ ms.collection:
 ms.topic: article
 ms.date: 09/22/2020
 ms.reviewer: chventou
-ms.openlocfilehash: bd6b6bd2721b686ab10922d09a9e94b9ebcce522
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 0cd52388feb987b4231d911cd3c3fd10babba017
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51185643"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933201"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-with-configuration-manager"></a>使用 Configuration Manager 管理 Microsoft Defender for Endpoint
 

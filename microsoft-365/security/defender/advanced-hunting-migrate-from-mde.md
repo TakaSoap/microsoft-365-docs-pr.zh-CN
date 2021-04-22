@@ -1,7 +1,7 @@
 ---
 title: 从 Microsoft Defender for Endpoint 迁移高级搜寻查询
 description: 了解如何调整适用于终结点的 Microsoft Defender 查询，以便可以在 Microsoft 365 Defender 中使用它们
-keywords: 高级搜寻， 威胁搜寻， 网络威胁搜寻， Microsoft 威胁防护， microsoft 365， mtp， m365， microsoft defender atp， mdatp， 搜索， 查询， 遥测， 自定义检测， 架构， kusto， microsoft 365， 映射
+keywords: 高级搜寻， 威胁搜寻， 网络威胁搜寻， Microsoft 365 Defender， microsoft 365， m365， 适用于终结点的 Microsoft Defender， 搜索， 查询， 遥测， 自定义检测， 架构， kusto， 映射
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -21,12 +21,12 @@ ms.collection:
 ms.topic: article
 ms.custom: seo-marvel-apr2020
 ms.technology: m365d
-ms.openlocfilehash: c0a29f93b9ea926beaeecb840ba108da04a89ebb
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: 5513c4b4fd8c5e24f9ada989113abc8a10e6a864
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51501148"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933441"
 ---
 # <a name="migrate-advanced-hunting-queries-from-microsoft-defender-for-endpoint"></a>从 Microsoft Defender for Endpoint 迁移高级搜寻查询
 
@@ -39,7 +39,7 @@ ms.locfileid: "51501148"
 
 - Microsoft Defender for Endpoint
 - Microsoft Defender for Office 365
-- Microsoft Cloud App Security
+- Microsoft 云应用安全
 - Microsoft Defender for Identity
 
 >[!NOTE]

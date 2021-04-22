@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 154ecd66399b031ef2e60eef16227bb9bc2f8785
-ms.sourcegitcommit: 987f70e44e406ab6b1dd35f336a9d0c228032794
+ms.openlocfilehash: c1e572910ad311daba18a8b0f5eeb546ffe36956
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/05/2021
-ms.locfileid: "51587715"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51929105"
 ---
 # <a name="investigate-devices-in-the-microsoft-defender-for-endpoint-devices-list"></a>调查 Microsoft Defender 终结点设备列表中的设备
 
@@ -172,12 +172,12 @@ ms.locfileid: "51587715"
 
 ### <a name="active-alerts"></a>活动警报
 
-如果 **已启用 Azure** ATP 功能，并且存在任何活动警报，Azure 高级威胁防护卡片将显示与设备及其风险级别相关的警报的高级概述。 "警报"向下钻取中提供了详细信息。
+**如果已启用 Microsoft** Defender for Identity 功能，并且存在任何活动警报，Azure 高级威胁防护卡片将显示与设备及其风险级别相关的警报的高级概述。 "警报"向下钻取中提供了详细信息。
 
 ![活动警报卡片的图像](images/risk-level-small.png)
 
 >[!NOTE]
->你需要在 Azure ATP 和 Defender for Endpoint 上启用集成才能使用此功能。 在 Defender for Endpoint 中，可以在高级功能中启用此功能。 若要详细了解如何启用高级功能，请参阅 [启用高级功能](advanced-features.md)。
+>你需要在 Microsoft Defender for Identity 和 Defender for Endpoint 上启用集成才能使用此功能。 在 Defender for Endpoint 中，可以在高级功能中启用此功能。 若要详细了解如何启用高级功能，请参阅 [启用高级功能](advanced-features.md)。
 
 ### <a name="logged-on-users"></a>已登录用户
 

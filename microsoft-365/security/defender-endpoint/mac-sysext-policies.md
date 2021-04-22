@@ -1,7 +1,7 @@
 ---
 title: macOS 加泰罗尼亚语和较新版本的 macOS 的新配置文件
 description: 本主题介绍为了从系统扩展中获益而必须所做的更改，系统扩展是 macOS Catalina 和较新版本 macOS 上内核扩展的替换。
-keywords: microsoft， defender， atp， mac， 内核， 系统， 扩展， 加泰罗尼亚语
+keywords: microsoft， defender， Microsoft Defender for Endpoint， mac， 内核， 系统， 扩展， 加泰罗尼亚语
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -19,12 +19,12 @@ ms.collection:
 ms.topic: conceptual
 ROBOTS: noindex,nofollow
 ms.technology: mde
-ms.openlocfilehash: db24bea3bddc682eceda8e6ea3fe2749b6b2778f
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 28a332cec68521741bdda62aeecd25440552344a
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51689121"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51932735"
 ---
 # <a name="new-configuration-profiles-for-macos-catalina-and-newer-versions-of-macos"></a>macOS 加泰罗尼亚语和较新版本的 macOS 的新配置文件
 

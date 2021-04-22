@@ -1,7 +1,7 @@
 ---
 title: Microsoft Defender for Endpoint 评估实验室
 description: 了解适用于终结点的 Microsoft Defender 功能、运行攻击模拟，并了解它如何预防、检测和修正威胁。
-keywords: 评估 mdatp， 评估， 实验室， 模拟， windows 10， windows server 2019， 评估实验室
+keywords: 评估 Microsoft Defender for Endpoint， 评估， 实验室， 模拟， windows 10， windows server 2019， 评估实验室
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 2382281fbb975daa18ec21aabaf5acf8d3fbfb2f
-ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
+ms.openlocfilehash: ed2165c0102170256f50964180a550d8eccbce8c
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51893433"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51932783"
 ---
 # <a name="microsoft-defender-for-endpoint-evaluation-lab"></a>Microsoft Defender for Endpoint 评估实验室
 
@@ -52,7 +52,7 @@ Microsoft Defender for Endpoint 评估实验室旨在消除设备和环境配置
  安装首选模拟器，在评估实验室内运行方案，并立即查看平台的运行方式-所有这些操作都很方便，无需额外付费。 还可以方便地访问广泛的模拟数组，你可以从模拟目录访问和运行这些模拟。
     
 
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>准备工作
 你将需要满足许可要求 [，或者具有](minimum-requirements.md#licensing-requirements) 对 Microsoft Defender for Endpoint 的试用访问权限，以访问评估实验室。
 
 您必须具有 **"管理安全设置"** 权限才能：
