@@ -1,7 +1,7 @@
 ---
 title: 使用 Configuration Manager 载入 Windows 10 设备
 description: 使用 Configuration Manager 在设备上部署配置包，以便它们可以载入服务。
-keywords: 使用 sccm 载入设备， 设备管理， 配置 Windows ATP 设备， 为终结点设备配置 Microsoft Defender
+keywords: 使用 sccm 载入设备， 设备管理， 为终结点设备配置 Microsoft Defender
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 02/07/2020
 ms.technology: mde
-ms.openlocfilehash: 3550bec28945ab888efbe2ca46f12ca7f96aab4a
-ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
+ms.openlocfilehash: e919f697048840b0eb7bffd34914328fe233f823
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51892859"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935157"
 ---
 # <a name="onboard-windows-10-devices-using-configuration-manager"></a>使用 Configuration Manager 载入 Windows 10 设备
 

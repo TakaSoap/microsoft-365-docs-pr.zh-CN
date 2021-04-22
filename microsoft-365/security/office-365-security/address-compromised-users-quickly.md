@@ -1,6 +1,6 @@
 ---
 title: 通过自动调查和响应处理遭到入侵的用户帐户
-keywords: AIR， autoIR， ATP， 自动化， 调查， 响应， 修正， 威胁， 高级， 威胁， 保护， 受到威胁
+keywords: AIR， autoIR， Microsoft Defender for Endpoint， 自动化， 调查， 响应， 修正， 威胁， 高级， 威胁， 保护， 受到威胁
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
@@ -15,12 +15,12 @@ ms.date: 02/25/2020
 description: 了解如何在 Microsoft Defender for Office 365 计划 2 中通过自动调查和响应功能加快检测和解决遭到入侵的用户帐户的过程。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2428cc2c1f82b4f2b881433fde991dd04b268d6e
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: c500221a10c00cc3b8d9d99c102ce8ec54fa2a48
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51203879"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934689"
 ---
 # <a name="address-compromised-user-accounts-with-automated-investigation-and-response"></a>通过自动调查和响应处理遭到入侵的用户帐户
 

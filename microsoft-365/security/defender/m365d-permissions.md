@@ -1,7 +1,7 @@
 ---
 title: 在 Microsoft 365 安全中心管理对 Microsoft 365 Defender 数据的访问权限
 description: 了解如何在 Microsoft 365 Defender 中管理对数据的权限
-keywords: 访问, 权限, MTP, Microsoft 威胁防护, M365, 安全性, MCAS, MDATP, Cloud App Security, Microsoft Defender 高级威胁防护, 范围, 范围, RBAC
+keywords: 访问， 权限， Microsoft 365 Defender， M365， 安全性， MCAS， 云应用安全， 适用于终结点的 Microsoft Defender， 范围， 范围， RBAC
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: e1be2cf4d5510b2a31a61f848d7d99d6a6704d49
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 52e4e9fc8c73d1adca0c24c5bebb50f9dcf7ac6f
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51056546"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935625"
 ---
 # <a name="manage-access-to-microsoft-365-defender-with-azure-active-directory-global-roles"></a>使用 Azure Active Directory 全局角色管理对 Microsoft 365 Defender 的访问权限
 

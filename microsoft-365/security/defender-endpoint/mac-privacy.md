@@ -1,7 +1,7 @@
 ---
-title: 适用于 Mac 的 Microsoft Defender 终结点的隐私
-description: 隐私控制，如何配置影响隐私的策略设置，以及有关在 Microsoft Defender for Endpoint for Mac 中收集的诊断数据的信息。
-keywords: microsoft， defender， atp， mac， 隐私， 诊断
+title: Mac 上的 Microsoft Defender for Endpoint 的隐私
+description: 隐私控制，如何配置影响隐私的策略设置和在 Mac 上的 Microsoft Defender for Endpoint 中收集的诊断数据的信息。
+keywords: microsoft， defender， Microsoft Defender for Endpoint， mac， 隐私， 诊断
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 26ae83dc8a8b3bb7d686e3674437a12999b5146f
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: b2897766570c6ef8979a7944a687ba024e55b3ce
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51862231"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934545"
 ---
 # <a name="privacy-for-microsoft-defender-for-endpoint-on-macos"></a>macOS 上适用于终结点的 Microsoft Defender 的隐私
 

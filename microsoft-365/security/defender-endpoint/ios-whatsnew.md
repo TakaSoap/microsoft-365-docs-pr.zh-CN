@@ -1,7 +1,7 @@
 ---
 title: iOS 上的 Microsoft Defender for Endpoint 的新增功能
 description: 了解 iOS 上早期版本的 Microsoft Defender for Endpoint 的主要更改。
-keywords: microsoft， defender， atp， mac， 安装， macos， whatsnew
+keywords: microsoft， defender， Microsoft Defender for Endpoint， mac， 安装， macos， whatsnew
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: e47631682b5620a3f42746c3e3848a8bc3ee1f76
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: 76abde885aa16c174bb81d22e5939d47894a59bf
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51861787"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934965"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-ios"></a>iOS 上的 Microsoft Defender for Endpoint 的新增功能
 

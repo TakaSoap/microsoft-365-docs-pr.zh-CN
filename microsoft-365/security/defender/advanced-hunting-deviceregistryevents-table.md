@@ -1,7 +1,7 @@
 ---
 title: 高级搜寻架构中的 DeviceRegistryEvents 表
 description: 了解可以从高级搜寻架构的 DeviceRegistryEvents 表查询的注册表事件
-keywords: 高级搜寻， 威胁搜寻， 网络威胁搜寻， microsoft 威胁防护， microsoft 365， mtp， m365， 搜索， 查询， 遥测， 架构参考， kusto， 表格， 列， 数据类型， 注册表事件， 注册表， DeviceRegistryEvents， key， 子项， 值
+keywords: 高级搜寻， 威胁搜寻， 网络威胁搜寻， Microsoft 365 Defender， microsoft 365， m365， 搜索， 查询， 遥测， 架构参考， kusto， 表格， 列， 数据类型， 注册表， 注册表， DeviceRegistryEvents， 键， 子项， 值
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: ca348d600c79cbfddd3328c702127eadb80774c8
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: a256282ffd8afabae7ffe6dab9a2b132e4fee475
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51499772"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934858"
 ---
 # <a name="deviceregistryevents"></a>DeviceRegistryEvents
 

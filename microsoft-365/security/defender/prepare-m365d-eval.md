@@ -1,7 +1,7 @@
 ---
 title: 准备 Microsoft 365 Defender 试用实验室环境
 description: 设置 Microsoft 365 Defender 试用实验室或试验环境时，准备利益干系人注销、日程表、环境注意事项和采用顺序
-keywords: MTP 试用准备， MTP 试点准备， 准备运行 MTP 试点项目， 运行试点 MTP 项目， 部署， 准备， 利益干系人， 时间线， 环境， 终结点， 服务器， 管理， 采用
+keywords: Microsoft 365 Defender 试用准备， Microsoft 365 Defender 试点准备， 准备运行 Microsoft 365 Defender 试点项目， 运行 Microsoft 365 Defender 试点项目， 部署， 准备， 利益干系人， 时间线， 环境， 终结点， 服务器， 管理， 采用
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -19,12 +19,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: dada110faca71c9e8fcf384eb5bb0a78faefaad9
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: d5e98cead84c0be76ca252b23f3c2d062b22dd73
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51199133"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935613"
 ---
 # <a name="prepare-your-microsoft-365-defender-trial-lab-or-pilot-environment"></a>准备 Microsoft 365 Defender 试用实验室或试验环境
 
@@ -36,7 +36,7 @@ ms.locfileid: "51199133"
 
 创建 Microsoft 365 Defender 试用实验室或试验环境并部署它的过程分三个阶段：
 
-|![阶段 1：准备](../../media/phase-diagrams/prepare.png)<br/>阶段 1：准备 |[![阶段 2：设置](../../media/phase-diagrams/setup.png)](setup-m365deval.md)<br/>[阶段 2：设置](setup-m365deval.md) |[![阶段 3：载入](../../media/phase-diagrams/onboard.png)](config-m365d-eval.md)<br/>[阶段 3：载入](config-m365d-eval.md) | [![返回到试点](../../media/phase-diagrams/backtopilot.png)](m365d-pilot.md)<br/>[返回到试点手册](m365d-pilot.md) |
+|![阶段 1：准备](../../media/phase-diagrams/prepare.png)<br/>阶段 1：准备 |[![阶段 2：设置](../../media/phase-diagrams/setup.png)](setup-m365deval.md)<br/>[阶段 2：设置](setup-m365deval.md) |[![阶段 3：开始使用](../../media/phase-diagrams/onboard.png)](config-m365d-eval.md)<br/>[阶段 3：开始使用](config-m365d-eval.md) | [![返回到试点](../../media/phase-diagrams/backtopilot.png)](m365d-pilot.md)<br/>[返回到试点手册](m365d-pilot.md) |
 |--|--|--|--|
 |*你在这里！* | || |
 
@@ -62,7 +62,7 @@ ms.locfileid: "51199133"
 
 -   I = 已通知此项目
 
-| 名称                 | Role                                                                                                                                                                                                          | 操作 |
+| 名称                 | Role                                                                                                                                                                                                          | Action |
 |----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------|
 | 输入名称和电子邮件 | **CISO (** 首席) 一名执行代表，他作为新技术部署 *的组织内部发起人。*                                                  | SO     |
 | 输入名称和电子邮件 | **网络防御运营中心 (CDOC)** CDOC 团队的代表，负责定义此更改如何与客户安全运营团队中的流程 *保持一致。*       | SO     |
@@ -107,7 +107,7 @@ ms.locfileid: "51199133"
 |-----------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------|
 |Microsoft Defender for Office 365|Microsoft Defender for Office 365 可保护你的组织免受电子邮件、链接 (URL) 和协作工具带来的恶意威胁。 <br> [了解更多信息。](/microsoft-365/security/office-365-security/defender-for-office-365)                                                                                                                                                                                                                                             | 1                   |
 |Microsoft Defender for Identity|Microsoft Defender for Identity 使用 Active Directory 信号来识别、检测和调查针对你的组织的高级威胁、泄露的身份和恶意预览体验成员操作。 <br> [了解详细信息](/azure-advanced-threat-protection/)。| 2 |
-|Microsoft Cloud App Security| Microsoft Cloud App Security 是 CASB (在) 云中操作的云访问安全代理。 它提供了丰富的可见性、控制数据传输和复杂的分析，以识别和防御所有云服务中的网络威胁。 <br> [了解详细信息](/cloud-app-security/)。                                                                                                                                                                                                                                                                                                                                                                       |3                   |
+|Microsoft 云应用安全| Microsoft Cloud App Security 是一种云访问安全代理 (CASB)，可在多个云上运行。 它提供了丰富的可见性、对数据传输的控制以及完善的分析，以识别和应对所有云服务中的网络威胁。 <br> [了解详细信息](/cloud-app-security/)。                                                                                                                                                                                                                                                                                                                                                                       |3                   |
 |Microsoft Defender for Endpoint | 用于终结点检测和响应的 Microsoft Defender 提供了几乎实时和可操作的高级攻击检测。 安全分析员可以有效地确定警报的优先级，了解整个泄露范围，并采取响应措施来修正威胁。 <br> [了解更多信息。](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)                                     |4                    |                                                                                                                                                                                                                                    
 
 ## <a name="next-step"></a>后续步骤

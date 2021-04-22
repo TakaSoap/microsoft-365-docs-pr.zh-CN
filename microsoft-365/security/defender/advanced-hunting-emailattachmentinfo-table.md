@@ -1,7 +1,7 @@
 ---
 title: 高级搜寻架构中的 EmailAttachmentInfo 表
 description: 在高级搜寻架构的 EmailAttachmentInfo 表中，了解电子邮件附件信息
-keywords: 高级搜寻， 威胁搜寻， 网络威胁搜寻， Microsoft 威胁防护， microsoft 365， mtp， m365， 搜索， 查询， 遥测， 架构参考， kusto， 表格， 列， 数据类型， 说明， EmailAttachmentInfo， 网络消息 ID， 发件人， 收件人， 附件 ID， 附件名称， 恶意软件裁定
+keywords: 高级搜寻， 威胁搜寻， 网络威胁搜寻， Microsoft 365 Defender， microsoft 365， m365， 搜索， 查询， 遥测， 架构参考， kusto， 表格， 列， 数据类型， 说明， EmailAttachmentInfo， 网络消息 ID， 发件人， 收件人， 附件 ID， 附件名称， 恶意软件裁定
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,12 +20,12 @@ mms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 84d0c1fd256b013291e3df33dc5d7a0524741685
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: 961474fa62981364919ae3bf482a886eb9a5e821
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51498931"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935493"
 ---
 # <a name="emailattachmentinfo"></a>EmailAttachmentInfo
 

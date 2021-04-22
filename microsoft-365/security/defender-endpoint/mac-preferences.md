@@ -1,7 +1,7 @@
 ---
-title: 设置适用于 Mac 的 Microsoft Defender 终结点的首选项
-description: 在企业组织中配置适用于 Mac 的 Microsoft Defender for Endpoint。
-keywords: microsoft， defender， atp， mac， 管理， 首选项， 企业， intune， jamf， macos， catalina， mojave， high sierra
+title: 在 Mac 上设置 Microsoft Defender for Endpoint 的首选项
+description: 在企业组织中为 Mac 上的终结点配置 MMicrosoft Defender。
+keywords: microsoft， defender， Microsoft Defender for Endpoint， mac， 管理， 首选项， 企业， intune， jamf， macos， catalina， mojave， high sierra
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: d2bea469031e2c5932e859fbad7d442ebe4d34ed
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: f13734392e4975738a0d60d38e618595b5175667
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51860915"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934557"
 ---
 # <a name="set-preferences-for-microsoft-defender-for-endpoint-on-macos"></a>在 macOS 上设置适用于终结点的 Microsoft Defender 的首选项
 
@@ -175,7 +175,7 @@ ms.locfileid: "51860915"
 
 #### <a name="allowed-threats"></a>允许的威胁
 
-按名称指定未由 Defender for Endpoint for Mac 阻止的威胁。 将允许运行这些威胁。
+按名称指定未由 Mac 上的 Defender for Endpoint 阻止的威胁。 将允许运行这些威胁。
 
 |节|值|
 |:---|:---|
@@ -829,7 +829,7 @@ com.microsoft.wdav.plist: OK
 
 5. 打开配置文件并上载 `com.microsoft.wdav.xml` 文件。  (此文件是在步骤 3.) 
 
-6. 选择“确定”。
+6. 选择“**确定**”。
 
 7. 选择 **"管理**  >  **工作分配"。** 在"**包含"** 选项卡中，**选择"分配给&所有设备"。**
 

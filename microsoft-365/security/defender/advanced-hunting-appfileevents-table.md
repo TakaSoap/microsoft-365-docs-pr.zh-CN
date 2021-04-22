@@ -1,7 +1,7 @@
 ---
 title: 高级搜寻架构中的 AppFileEvents 表
 description: 在高级搜寻架构的 AppFileEvents 表中了解与云应用和服务关联的文件相关事件
-keywords: 高级搜寻， 威胁搜寻， 网络威胁搜寻， Microsoft 威胁防护， microsoft 365， mtp， m365， 搜索， 查询， 遥测， 架构参考， kusto， 表格， 列， 数据类型， 说明， AppFileEvents， Cloud App Security， MCAS
+keywords: 高级搜寻， 威胁搜寻， 网络威胁搜寻， Microsoft 365 Defender， microsoft 365， m365， 搜索， 查询， 遥测， 架构参考， kusto， 表格， 列， 数据类型， 说明， AppFileEvents， Cloud App Security， MCAS
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: b8b3b34e1b8535772d19f8ddd9f52c5c0a89292b
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: 861a04eb168190f2bb64bbb0258de6767c619e1b
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51499338"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934713"
 ---
 # <a name="appfileevents"></a>AppFileEvents
 

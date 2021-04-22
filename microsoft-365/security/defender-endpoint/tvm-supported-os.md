@@ -1,7 +1,7 @@
 ---
 title: 威胁和漏洞管理支持的操作系统和平台
 description: 确保满足威胁和漏洞管理的操作系统或平台先决条件，以便正确考虑所有设备中的活动。
-keywords: 威胁&漏洞管理， 威胁和漏洞管理， 操作系统， 平台要求， 先决条件， mdatp-tvm 支持的操作系统， mdatp-tvm，
+keywords: 威胁&漏洞管理， 威胁和漏洞管理， 操作系统， 平台要求， 先决条件， Microsoft Defender for Endpoint-tvm 支持的操作系统， 适用于 Endpoint-tvm 的 Microsoft Defender，
 search.appverid: met150
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: fd778b66e85507d5e6d91ed786b16454a5c0fc8f
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: 55322d238839d347882ec1d74b767c68fd2be2b3
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51500444"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935517"
 ---
 # <a name="supported-operating-systems-and-platforms---threat-and-vulnerability-management"></a>支持的操作系统和平台 - 威胁和漏洞管理
 

@@ -1,7 +1,7 @@
 ---
 title: 使用高级搜寻查找勒索软件
 description: 使用高级搜寻查找受勒索软件潜在影响的设备。
-keywords: 高级搜寻， 勒索软件， 威胁搜寻， 网络威胁搜寻， 搜索， 查询， 遥测， Microsoft 365， Microsoft 威胁防护， Microsoft 365 Defender
+keywords: 高级搜寻， 勒索软件， 威胁搜寻， 网络威胁搜寻， 搜索， 查询， 遥测， Microsoft 365， Microsoft 365 Defender
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 97f2174f74e7866f75b901cd1609341548a1a7c5
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: b6d88f5383cef052ac1b0871b4f0556ba3ba160e
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51498219"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934809"
 ---
 # <a name="hunt-for-ransomware"></a>查寻勒索软件
 

@@ -1,8 +1,8 @@
 ---
-title: 部署适用于 Linux 的 Microsoft Defender for Endpoint 的更新
+title: 在 Linux 上部署 Microsoft Defender for Endpoint 更新
 ms.reviewer: ''
-description: 介绍如何在企业环境中为适用于 Linux 的 Microsoft Defender 终结点部署更新。
-keywords: microsoft， defender， atp， linux， 更新， 部署
+description: 介绍如何在企业环境中为 Linux 上的 Microsoft Defender for Endpoint 部署更新。
+keywords: microsoft， defender， Microsoft Defender for Endpoint， linux， 更新， 部署
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 77b428e359596e73e08dc04f15190ecf68db29be
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: 9cb0c7375b538f502cf6165f13c68fd4b2fdcc64
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51861140"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934749"
 ---
 # <a name="deploy-updates-for-microsoft-defender-for-endpoint-on-linux"></a>在 Linux 上部署 Microsoft Defender for Endpoint 更新
 
@@ -40,12 +40,12 @@ ms.locfileid: "51861140"
 Microsoft 会定期发布软件更新，以提高性能、安全性和提供新功能。
 
 > [!WARNING]
-> 适用于 Linux 的 Defender for Endpoint 的每个版本都有一个过期日期，此后它将不再继续保护你的设备。 必须在此日期之前更新产品。 若要检查到期日期，请运行以下命令：
+> Linux 上的每个版本的 Defender for Endpoint 都有一个过期日期，此后它将不再继续保护你的设备。 必须在此日期之前更新产品。 若要检查到期日期，请运行以下命令：
 > ```bash
 > mdatp health --field product_expiration
 > ```
 
-若要手动更新适用于 Linux 的 Defender for Endpoint，请执行以下命令之一：
+若要手动更新 Linux 上的 Defender for Endpoint，请执行以下命令之一：
 
 ## <a name="rhel-and-variants-centos-and-oracle-linux"></a>CentOS 和 Oracle Linux (RHEL 和) 
 

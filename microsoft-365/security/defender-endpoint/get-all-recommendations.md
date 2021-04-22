@@ -1,7 +1,7 @@
 ---
 title: 列出所有建议
 description: 检索影响组织的所有安全建议的列表。
-keywords: api， 图形 api， 受支持的 api， 获取， 安全建议， mdatp tvm api， 威胁和漏洞管理， 威胁和漏洞管理 api
+keywords: api， 图形 api， 受支持的 api， 获取， 安全建议， Microsoft Defender for Endpoint tvm api， 威胁和漏洞管理， 威胁和漏洞管理 api
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 5fb68572ee1b154be1db5eb5a092013a1c1a257e
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 0cb0a1f8a42b419db960e5097667c335bf7f7877
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51166332"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935013"
 ---
 # <a name="list-all-recommendations"></a>列出所有建议
 
@@ -46,7 +46,7 @@ ms.locfileid: "51166332"
 
 权限类型 |   权限  |   权限显示名称
 :---|:---|:---
-Application |   SecurityRecommendation.Read.All |   "读取威胁和漏洞管理安全建议信息"
+应用程序 |   SecurityRecommendation.Read.All |   "读取威胁和漏洞管理安全建议信息"
 委派（工作或学校帐户） | SecurityRecommendation.Read |  "读取威胁和漏洞管理安全建议信息"
 
 ## <a name="http-request"></a>HTTP 请求

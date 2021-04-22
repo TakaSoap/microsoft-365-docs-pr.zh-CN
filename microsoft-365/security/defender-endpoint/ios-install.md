@@ -2,7 +2,7 @@
 title: 适用于 iOS 上的终结点的 Microsoft Defender 基于应用的部署
 ms.reviewer: ''
 description: 介绍如何使用应用在 iOS 上部署 Microsoft Defender for Endpoint
-keywords: microsoft， defender， atp， ios， 应用， 安装， 部署， 卸载， intune
+keywords: microsoft， defender， Microsoft Defender for Endpoint， ios， 应用， 安装， 部署， 卸载， intune
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 4ddaf8759fa0f2ffb4ed3eb3bb940426dfb3da2c
-ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
+ms.openlocfilehash: 62eefbd17b826aa2cfb541c04ba206d0f58f9bbf
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51904054"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935049"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-ios"></a>在 iOS 上部署 Microsoft Defender for Endpoint
 
@@ -35,20 +35,20 @@ ms.locfileid: "51904054"
 
 > 想要体验适用于终结点的 Defender？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
 
-本主题介绍在 Intune 公司门户注册设备上部署适用于 iOS 的 Defender for Endpoint。 有关 Intune 设备注册详细信息，请参阅在 Intune 中注册 [iOS/iPadOS 设备](https://docs.microsoft.com/mem/intune/enrollment/ios-enroll)。
+本主题介绍在 Intune 公司门户注册的设备上在 iOS 上部署 Defender for Endpoint。 有关 Intune 设备注册详细信息，请参阅在 Intune 中注册 [iOS/iPadOS 设备](https://docs.microsoft.com/mem/intune/enrollment/ios-enroll)。
 
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>准备工作
 
 - 确保你有权访问 [Microsoft Endpoint Manager 管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
 
-- 确保为用户完成了 iOS 注册。 用户需要分配有 Defender for Endpoint 许可证才能使用适用于 iOS 的终结点的 Defender。 有关如何 [分配许可证的说明，](https://docs.microsoft.com/azure/active-directory/users-groups-roles/licensing-groups-assign) 请参阅向用户分配许可证。
+- 确保为用户完成了 iOS 注册。 用户需要分配有 Defender for Endpoint 许可证才能在 iOS 上使用 Defender for Endpoint。 有关如何 [分配许可证的说明，](https://docs.microsoft.com/azure/active-directory/users-groups-roles/licensing-groups-assign) 请参阅向用户分配许可证。
 
 > [!NOTE]
 > iOS 上的 Microsoft Defender for Endpoint 现已在 [Apple App Store 中提供](https://aka.ms/mdatpiosappstore)。
 
 ## <a name="deployment-steps"></a>部署步骤
 
-通过 Intune 公司门户部署适用于 iOS 的 Defender for Endpoint。
+通过 Intune 公司门户在 iOS 上部署适用于终结点的 Defender。
 
 ### <a name="add-ios-store-app"></a>添加 iOS 应用商店应用
 
@@ -61,7 +61,7 @@ ms.locfileid: "51904054"
 
 1. 选择 **iOS 11.0** 作为最低操作系统。 查看有关应用的其他信息，然后单击"下一步 **"。**
 
-1. 在"*分配"* 部分，转到"**必填"部分**，然后选择"**添加组"。** 然后，你可以选择要面向适用于 iOS (Defender) 的用户组。 单击 **"选择**"，然后单击"下一 **步"。**
+1. 在"*分配"* 部分，转到"**必填"部分**，然后选择"**添加组"。** 然后，你可以选择你要 (iOS) Defender for Endpoint 的用户组。 单击 **"选择**"，然后单击"下一 **步"。**
 
     > [!NOTE]
     > 所选用户组应由 Intune 注册的用户组成。
@@ -78,11 +78,11 @@ ms.locfileid: "51904054"
 
 ## <a name="complete-onboarding-and-check-status"></a>完成载入和检查状态
 
-1. 在设备上安装适用于 iOS 的 Defender for Endpoint 后，你将看到应用图标。
+1. 在设备上安装 iOS 上的 Defender for Endpoint 后，你将看到应用图标。
 
     ![自动生成的智能手机说明的屏幕截图](images/41627a709700c324849bf7e13510c516.png)
 
-2. 点击 Defender for Endpoint 应用图标并按照屏幕上的说明完成载入步骤。 详细信息包括最终用户接受 Defender for Endpoint for iOS 所需的 iOS 权限。
+2. 点击 Defender for Endpoint 应用图标并按照屏幕上的说明完成载入步骤。 详细信息包括最终用户接受 iOS 上终结点的 Defender 所需的 iOS 权限。
 
 3. 成功载入后，设备将开始显示在 Microsoft Defender 安全中心的"设备"列表上。
 
@@ -144,4 +144,4 @@ Intune 允许你通过应用配置策略配置适用于 iOS 的 Defender 应用�
 
 ## <a name="next-steps"></a>后续步骤
 
-[为适用于 iOS 功能的终结点配置 Defender](ios-configure-features.md)
+[在 iOS 功能上为终结点配置 Defender](ios-configure-features.md)

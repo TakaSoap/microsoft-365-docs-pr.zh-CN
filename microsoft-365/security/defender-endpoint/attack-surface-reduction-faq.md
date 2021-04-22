@@ -1,6 +1,6 @@
 ---
 title: '攻击面减少常见问题解答 (常见问题) '
-description: 查找有关 Microsoft Defender ATP 的攻击面减少规则的常见问题解答。
+description: 查找有关适用于终结点的 Microsoft Defender 攻击面减少规则的常见问题的解答。
 keywords: 攻击面减少规则， asr， hips， 主机入侵防护系统， 保护规则， 反攻击， 攻击， 感染防护， microsoft defender 终结点
 search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
@@ -16,12 +16,12 @@ manager: dansimp
 ms.custom: asr
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 71c3f89b721039753709d65daa135cad74a81711
-ms.sourcegitcommit: 7b8104015a76e02bc215e1cf08069979c70650ae
+ms.openlocfilehash: cf41dda4ff61137d6b60b2fc735227f15418477e
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51476446"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935589"
 ---
 # <a name="attack-surface-reduction-frequently-asked-questions-faq"></a>攻击面减少常见问题解答 (常见问题) 
 
@@ -161,7 +161,7 @@ ASR 使用 Microsoft Defender 防病毒阻止应用程序。 目前无法将 ASR
 
 ## <a name="are-the-criteria-used-by-the-rule-block-executable-files-from-running-unless-they-meet-a-prevalence-age-or-trusted-list-criterion-configurable-by-an-admin"></a>规则使用的条件"除非可执行文件满足普遍程度、年龄或受信任的列表条件，否则阻止可执行文件运行"是否由管理员配置？
 
-不正确。 此规则使用的条件由 Microsoft 云保护维护，以使用从世界各地的数据持续更新受信任的列表。 本地管理员没有写入权限来更改此数据。 如果要将此规则配置为为企业定制它，可以将某些应用程序添加到排除列表以防止触发规则。
+否。 此规则使用的条件由 Microsoft 云保护维护，以使用从世界各地的数据持续更新受信任的列表。 本地管理员没有写入权限来更改此数据。 如果要将此规则配置为为企业定制它，可以将某些应用程序添加到排除列表以防止触发规则。
 
 ## <a name="i-enabled-the-asr-rule-block-executable-files-from-running-unless-they-meet-a-prevalence-age-or-trusted-list-criterion-after-some-time-i-updated-a-piece-of-software-and-the-rule-is-now-blocking-it-even-though-it-didnt-before-did-something-go-wrong"></a>我启用了 ASR 规则 *，阻止可执行文件运行，除非它们* 符合普遍、年龄或受信任的列表条件。 一段时间之后，我更新了一个软件，规则现在阻止了它，即使以前没有更新过。 出错了？
 

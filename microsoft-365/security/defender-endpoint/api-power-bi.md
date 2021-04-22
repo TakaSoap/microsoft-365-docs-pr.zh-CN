@@ -1,5 +1,5 @@
 ---
-title: 与 Power BI 的 Microsoft Defender ATP API 连接
+title: 与 Power BI 的 Microsoft Defender for Endpoint API 连接
 ms.reviewer: ''
 description: 在 Microsoft Defender for Endpoint API (BI) 报告。
 keywords: api， 受支持的 api， Power BI， 报告
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 696782ca03e5494c3fc5ca08943d1079c5d78f8a
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 7c99267d75c89b3484d207cd763131e4bcc91527
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51166431"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935037"
 ---
 # <a name="create-custom-reports-using-power-bi"></a>使用 Power BI 创建自定义报告
 
@@ -141,7 +141,7 @@ ms.locfileid: "51166431"
 有关详细信息，请参阅 [Power BI 报告模板](https://github.com/microsoft/MicrosoftDefenderATP-PowerBI)。
 
 ## <a name="sample-reports"></a>示例报告
-查看 Microsoft Defender ATP Power BI 报告示例。 有关详细信息，请参阅浏览 [代码示例](https://docs.microsoft.com/samples/browse/?products=mdatp)。
+查看 Microsoft Defender for Endpoint Power BI 报告示例。 有关详细信息，请参阅浏览 [代码示例](https://docs.microsoft.com/samples/browse/?products=mdatp)。
 
 
 ## <a name="related-topic"></a>相关主题

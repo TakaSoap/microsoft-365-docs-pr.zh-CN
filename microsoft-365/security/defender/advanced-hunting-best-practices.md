@@ -1,7 +1,7 @@
 ---
 title: Microsoft 365 Defender 中的高级搜寻查询最佳做法
 description: 了解如何使用高级搜寻构建快速、高效且无错误的威胁搜寻查询
-keywords: 高级搜寻， 威胁搜寻， 网络威胁搜寻， Microsoft 威胁防护， microsoft 365， mtp， m365， 搜索， 查询， 遥测， 架构， kusto， 避免超时， 命令行， 进程 ID， 优化， 最佳做法， 分析， 加入， 总结
+keywords: 高级搜寻， 威胁搜寻， 网络威胁搜寻， Microsoft 365 Defender， microsoft 365， m365， 搜索， 查询， 遥测， 架构， kusto， 避免超时， 命令行， 进程 ID， 优化， 最佳做法， 分析， 加入， 总结
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: e0744a01fc599b66f371b01194579f4845ed19fb
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: 7db7607d3ed9d6f1b215fb842d5b6dd2415a770a
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51498734"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934893"
 ---
 # <a name="advanced-hunting-query-best-practices"></a>高级搜寻查询最佳做法
 
@@ -254,7 +254,7 @@ SHA256,ThreatTypes,DetectionMethods
 ### <a name="parse-strings"></a>分析字符串
 可以使用多种函数高效处理需要分析或转换的字符串。 
 
-| 字符串 | 函数 | 用法示例 |
+| String | 函数 | 用法示例 |
 |--|--|--|
 | 命令行 | [parse_command_line () ](/azure/data-explorer/kusto/query/parse-command-line) | 提取命令和所有参数。 | 
 | Paths | [parse_path () ](/azure/data-explorer/kusto/query/parsepathfunction) | 提取文件或文件夹路径的各个部分。 |

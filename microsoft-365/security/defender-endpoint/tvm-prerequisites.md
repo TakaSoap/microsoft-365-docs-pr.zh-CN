@@ -1,7 +1,7 @@
 ---
 title: 权限&的先决条件 - 威胁和漏洞管理
 description: 在开始使用威胁和漏洞管理之前，请确保你拥有相关的配置和权限。
-keywords: 威胁&漏洞管理权限先决条件、威胁和漏洞管理权限先决条件、MDATP TVM 权限先决条件、漏洞管理
+keywords: 威胁&漏洞管理权限先决条件、威胁和漏洞管理权限先决条件、Microsoft Defender 终结点 TVM 权限先决条件、漏洞管理
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 1d9c3233f72541ccd0463eefef93bde5e7d9900f
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: 0df348e3a5564720468d95d7b23578f9dcad9294
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51499961"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935181"
 ---
 # <a name="prerequisites--permissions---threat-and-vulnerability-management"></a>权限&的先决条件 - 威胁和漏洞管理
 

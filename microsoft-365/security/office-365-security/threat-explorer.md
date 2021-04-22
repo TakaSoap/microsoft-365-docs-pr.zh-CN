@@ -19,12 +19,12 @@ description: 使用安全与合规中心中的资源管理器和实时检测有�
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 7c601169d76fe92ac3038ccb25c5c50aa390f714
-ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
+ms.openlocfilehash: 0dcda063fc544c88157cff21b8a28f7a84a6a6fb
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "51599883"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934701"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>威胁资源管理器和实时检测
 
@@ -520,7 +520,7 @@ ZAP URL 信号通常用于 ZAP 网络钓鱼警报方案，其中电子邮件被�
 - [查看在 SharePoint Online、OneDrive 和 Microsoft Teams 中检测到的恶意文件](./mdo-for-spo-odb-and-teams.md)
 - [大致了解威胁资源管理器中的 (和实时检测) ](threat-explorer-views.md)
 - [威胁防护状态报告](view-email-security-reports.md#threat-protection-status-report)
-- [Microsoft 威胁防护中的自动调查和响应](../defender/m365d-autoir.md)
+- [Microsoft 365 Defender 中的自动调查和响应](../defender/m365d-autoir.md)
 
 ## <a name="required-licenses-and-permissions"></a>所需的许可证和权限
 

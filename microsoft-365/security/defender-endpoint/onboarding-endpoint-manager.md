@@ -1,7 +1,7 @@
 ---
 title: 使用 Microsoft Endpoint Manager 载入
 description: 了解如何使用 Microsoft Endpoint Manager 载入 Microsoft Defender for Endpoint
-keywords: 载入， 配置， 部署， 部署， 终结点管理器， mdatp， 高级威胁防护， 集合创建， 终结点检测响应， 下一代保护， 攻击面减少， microsoft 终结点管理器
+keywords: 载入， 配置， 部署， 部署， 终结点管理器， Microsoft Defender for Endpoint， 集合创建， 终结点检测响应， 下一代保护， 攻击面减少， Microsoft 终结点管理器
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -18,12 +18,12 @@ ms.collection:
 - m365solution-scenario
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 9edcceca2f6cc7c2377eb388d7394a23dfbae99d
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: e744262cfd63383e69abf02be9fbf91d2d229db2
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51186253"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935253"
 ---
 # <a name="onboarding-using-microsoft-endpoint-manager"></a>使用 Microsoft Endpoint Manager 载入
 
@@ -128,7 +128,7 @@ ms.locfileid: "51186253"
 然后，继续创建几种不同类型的终结点安全策略：
 
 - [下一代保护](#next-generation-protection)
-- [攻击面减少](#attack-surface-reduction--attack-surface-reduction-rules)
+- [减少攻击面](#attack-surface-reduction--attack-surface-reduction-rules)
 
 ### <a name="endpoint-detection-and-response"></a>终结点检测和响应
 

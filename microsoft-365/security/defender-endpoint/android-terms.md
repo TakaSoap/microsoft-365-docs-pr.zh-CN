@@ -1,8 +1,8 @@
 ---
-title: 适用于 Android 应用程序的 Microsoft Defender ATP 许可条款
+title: Android 应用程序许可条款上的 Microsoft Defender for Endpoint
 ms.reviewer: ''
-description: 介绍适用于 Android 的 Microsoft Defender ATP 许可条款
-keywords: microsoft， defender， atp， android，license， 条款， 应用程序， 使用， 安装， 服务， 反馈， 范围，
+description: 介绍 Android 许可条款中的 Microsoft Defender for Endpoint
+keywords: microsoft， defender， Microsoft Defender for Endpoint， android， 许可， 条款， 应用程序， 使用， 安装， 服务， 反馈， 范围，
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 hideEdit: true
 ms.technology: mde
-ms.openlocfilehash: 2bcc8c1f977a6060ac94dc3a634f075a5c1ee041
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: d73ddb3a8defb7697a995c2593d6a240a59c9cfe
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51687945"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934617"
 ---
 # <a name="microsoft-defender-for-endpoint-on-android-application-license-terms"></a>Android 应用程序许可条款上的 Microsoft Defender for Endpoint
 
@@ -105,7 +105,7 @@ ms.locfileid: "51687945"
 
     2.  各自的应用程序存储提供程序及其子公司是这些条款的第三方权益，接受这些条款后，应用程序存储提供程序 () 将有权直接强制执行并依赖这些条款中授予他们权益或权利的任何条款。
 
-9.  **商标声明。** Microsoft、Microsoft Defender ATP、MDATP 和 Microsoft 365 是 Microsoft Corporation 在美国和/或其他国家/地区注册或通用商标。
+9.  **商标声明。** Microsoft、Microsoft Defender for Endpoint 和 Microsoft 365 是 Microsoft Corporation 在美国和/或其他国家/地区注册或通用商标。
 
 10. **ENTIRE AGREEMENT.** 本协议以及使用的补充、更新、基于 Internet 的服务和支持服务的条款是应用程序和支持服务的整个协议。
 

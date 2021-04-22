@@ -1,7 +1,7 @@
 ---
-title: '适用于 Mac 的 Microsoft Defender for Endpoint - 系统扩展 (预览) '
-description: 本文包含有关尝试 Microsoft Defender for Endpoint for Mac 的系统扩展功能的说明。 此功能目前处于公共预览阶段。
-keywords: microsoft， defender， atp， mac， 内核， 系统， 扩展， 加泰罗尼亚语
+title: 'Mac 版 Microsoft Defender for Endpoint - 系统扩展 (预览) '
+description: 本文包含有关在 Mac 上尝试 Microsoft Defender for Endpoint 的系统扩展功能的说明。 此功能目前处于公共预览阶段。
+keywords: microsoft， defender， Microsoft Defender for Endpoint， mac， 内核， 系统， 扩展， 加泰罗尼亚语
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -19,12 +19,12 @@ ms.collection:
 ms.topic: conceptual
 ROBOTS: noindex,nofollow
 ms.technology: mde
-ms.openlocfilehash: 0b593aa0046a28e558523c2f3ebc7da9976f62d3
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: cc148bcc0b2623eaaa8d31ef50708174264fa3b2
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51860323"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934941"
 ---
 # <a name="microsoft-defender-for-endpoint-on-macos---system-extensions-public-preview"></a>macOS 上的 Microsoft Defender for Endpoint - 系统扩展公共预览) 
 
@@ -34,7 +34,7 @@ ms.locfileid: "51860323"
 
 > 想要体验 Microsoft Defender for Endpoint？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-为了与 macOS 演变保持一致，我们正在准备利用系统扩展而非内核扩展的 Defender for Endpoint for Mac 更新。 此更新仅适用于 macOS 10 (10.15.4) macOS 的更高版本。
+为了与 macOS 演变保持一致，我们正在准备利用系统扩展而非内核扩展的 Mac 上的 Defender for Endpoint 更新。 此更新仅适用于 macOS 10 (10.15.4) macOS 的更高版本。
 
 此功能目前处于公共预览阶段。 本文介绍了如何在设备上启用此功能。 可以在自己的设备上本地试用此功能，或者通过管理工具远程配置它。
 
@@ -62,7 +62,7 @@ ms.locfileid: "51860323"
   defaults write com.microsoft.autoupdate2 ChannelName -string Beta
   ```
 
-  或者，如果你使用 JAMF 或 Intune (托管) ，你可以远程配置更新通道。 有关详细信息，请参阅 [部署适用于 Mac 的 Microsoft Defender for Endpoint 的更新：设置通道名称](mac-updates.md#set-the-channel-name)。
+  或者，如果你使用 JAMF 或 Intune (托管) ，你可以远程配置更新通道。 有关详细信息，请参阅在 Mac 上部署 Microsoft Defender for Endpoint 的更新 [：设置通道名称](mac-updates.md#set-the-channel-name)。
 
 ## <a name="deployment-steps"></a>部署步骤
 
@@ -74,7 +74,7 @@ ms.locfileid: "51860323"
 
 1. 满足所有部署先决条件后，重启设备以启动系统扩展审批和激活过程。
 
-   你将看到一系列批准 Defender for Endpoint 系统扩展的系统提示。 必须批准 **系列** 的所有提示，因为 macOS 需要明确批准 Defender for Mac 终结点在设备上安装的每个扩展。
+   你将看到一系列批准 Defender for Endpoint 系统扩展的系统提示。 必须批准 **系列** 的所有提示，因为 macOS 需要针对 Mac 上的 Defender for Endpoint 在设备上安装的每个扩展进行显式审批。
    
    对于每个审批，选择 **"打开安全首选项"，** 然后选择" **允许** "以允许系统扩展运行。
 

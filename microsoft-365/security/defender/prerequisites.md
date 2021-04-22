@@ -1,7 +1,7 @@
 ---
 title: Microsoft 365 Defender 先决条件
 description: 了解 Microsoft 365 Defender 的许可、硬件和软件要求以及其他配置设置
-keywords: 要求， 先决条件， 硬件， 软件， 浏览器， MTP， M365， 许可证， E5， A5， EMS， 购买
+keywords: 要求， 先决条件， 硬件， 软件， 浏览器， Microsoft 365 Defender， M365， 许可证， E5， A5， EMS， 购买
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: f9904ecb5b9ab0a0f634903a5dc0ee3049d06b38
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 930a3de078d6d003241bb6fcd5df71bc9f301962
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51056079"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935601"
 ---
 # <a name="microsoft-365-defender-prerequisites"></a>Microsoft 365 Defender 先决条件
 
@@ -47,7 +47,7 @@ ms.locfileid: "51056079"
 - Office 365 E5 或 A5
 - Microsoft Defender for Endpoint
 - Microsoft Defender for Identity 
-- Microsoft Cloud App Security
+- Microsoft 云应用安全
 - Defender for Office 365 (计划 2) 
 
 有关详细信息，请参阅 [Microsoft 365 企业版服务计划](https://www.microsoft.com/licensing/product-licensing/microsoft-365-enterprise)。

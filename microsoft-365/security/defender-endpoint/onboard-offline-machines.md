@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: fb5a9a4d35af2d400cdff1e417727e662738514e
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: ee06f927579445825a2b2813e483c24357d2ed78
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51861343"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934917"
 ---
 # <a name="onboard-devices-without-internet-access-to-microsoft-defender-for-endpoint"></a>在无法访问 Internet 的情况下载入设备以访问 Microsoft Defender for Endpoint
 
@@ -73,7 +73,7 @@ ms.locfileid: "51861343"
       - 将 Azure Log Analytics IP 配置为代理
       - Azure Log Analytics 工作区密钥& ID
 
-    - Azure 安全中心 (ASC) 
+    - Azure Defender
       - [安全策略 \> 日志分析工作区](https://docs.microsoft.com/azure/security-center/security-center-wdatp#enable-windows-defender-atp-integration)
       - [威胁 \> 检测允许终结点的 Defender 访问我的数据](https://docs.microsoft.com/azure/security-center/security-center-wdatp#enable-windows-defender-atp-integration)
 

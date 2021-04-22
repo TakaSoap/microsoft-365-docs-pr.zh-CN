@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 11/06/2020
 ms.technology: mde
-ms.openlocfilehash: 3a26951a796d72237f992e520e1b793654e467e3
-ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
+ms.openlocfilehash: c4cdc80170b49a111f476d2d17222c41e2b5c55f
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51893397"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935361"
 ---
 # <a name="fix-unhealthy-sensors-in-microsoft-defender-for-endpoint"></a>修复 Microsoft Defender for Endpoint 中的不正常传感器
 
@@ -66,7 +66,7 @@ ms.locfileid: "51893397"
 以下建议操作可帮助修复与通信受损的错误配置设备相关的问题：
 
 - [确保设备具有 Internet 连接](troubleshoot-onboarding.md#troubleshoot-onboarding-issues-on-the-device)</br>
-  Window Defender ATP 传感器需要 Microsoft Windows HTTP (WinHTTP) 报告传感器数据并与 Microsoft Defender for Endpoint 服务通信。
+  Microsoft Defender for Endpoint 感官方案需要 Microsoft Windows HTTP （WinHTTP） 报告感官数据，并与 Microsoft Defender for Endpoint 服务进行通信。
 
 - [验证与 Microsoft Defender for Endpoint 服务 URL 的客户端连接](configure-proxy-internet.md#verify-client-connectivity-to-microsoft-defender-for-endpoint-service-urls)</br>
   验证代理配置是否成功完成，WinHTTP 能否发现并通过您环境中代理服务器进行通信，以及代理服务器是否允许流量到 Microsoft Defender for Endpoint 服务 URL。
@@ -78,7 +78,7 @@ ms.locfileid: "51893397"
 按照以下操作更正与状态为"无传感器数据"的错误配置设备相关的已知问题：
 
 - [确保设备具有 Internet 连接](troubleshoot-onboarding.md#troubleshoot-onboarding-issues-on-the-device)</br>
-  Window Defender ATP 传感器需要 Microsoft Windows HTTP (WinHTTP) 报告传感器数据并与 Microsoft Defender for Endpoint 服务通信。
+  Microsoft Defender for Endpoint 感官方案需要 Microsoft Windows HTTP （WinHTTP） 报告感官数据，并与 Microsoft Defender for Endpoint 服务进行通信。
 
 - [验证与 Microsoft Defender for Endpoint 服务 URL 的客户端连接](configure-proxy-internet.md#verify-client-connectivity-to-microsoft-defender-for-endpoint-service-urls)</br>
   验证代理配置是否成功完成，WinHTTP 能否发现并通过您环境中代理服务器进行通信，以及代理服务器是否允许流量到 Microsoft Defender for Endpoint 服务 URL。

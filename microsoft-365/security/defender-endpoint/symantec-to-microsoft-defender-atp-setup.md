@@ -1,7 +1,7 @@
 ---
 title: Symantec 到 Microsoft Defender for Endpoint - 第 2 阶段，设置
 description: 这是从 Symantec 迁移到 Microsoft Defender for Endpoint 的第 2 阶段（安装程序）
-keywords: 迁移， windows defender 高级威胁防护， atp， edr
+keywords: migration， Microsoft Defender for Endpoint， edr
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -21,12 +21,12 @@ ms.topic: article
 ms.date: 03/03/2021
 ms.custom: migrationguides
 ms.reviewer: depicker, yongrhee, chriggs
-ms.openlocfilehash: 6d45e3aa0d3bf938e43201aca969613876ef1f31
-ms.sourcegitcommit: 8685b0f7d53c99577fa65144ab60295dfa60f46f
+ms.openlocfilehash: 755eb54f848e0cc5da3ca1b7b613a951c77d0b4c
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51218708"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935229"
 ---
 # <a name="migrate-from-symantec---phase-2-set-up-microsoft-defender-for-endpoint"></a>从 Symantec 迁移 - 阶段 2：为终结点设置 Microsoft Defender
 
@@ -34,7 +34,7 @@ ms.locfileid: "51218708"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-|[![阶段 1：准备](images/phase-diagrams/prepare.png)](symantec-to-microsoft-defender-atp-prepare.md)<br/>[阶段 1：准备](symantec-to-microsoft-defender-atp-prepare.md) |![阶段 2：设置](images/phase-diagrams/setup.png)<br/>阶段 2：设置 |[![阶段 3：载入](images/phase-diagrams/onboard.png)](symantec-to-microsoft-defender-atp-onboard.md)<br/>[阶段 3：载入](symantec-to-microsoft-defender-atp-onboard.md) |
+|[![阶段 1：准备](images/phase-diagrams/prepare.png)](symantec-to-microsoft-defender-atp-prepare.md)<br/>[阶段 1：准备](symantec-to-microsoft-defender-atp-prepare.md) |![阶段 2：设置](images/phase-diagrams/setup.png)<br/>阶段 2：设置 |[![阶段 3：开始使用](images/phase-diagrams/onboard.png)](symantec-to-microsoft-defender-atp-onboard.md)<br/>[阶段 3：开始使用](symantec-to-microsoft-defender-atp-onboard.md) |
 |--|--|--|
 ||*你在这里！* | |
 
@@ -87,7 +87,7 @@ ms.locfileid: "51218708"
 `mpcmdrun -wdenable`
 
 > [!TIP]
-> 仍然需要帮助？ 请参阅 [Windows Server 2016 和 Windows Server 2019 上的 Microsoft Defender 防病毒](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-on-windows-server-2016)。
+> 是否仍需要帮助？ 请参阅 [Windows Server 2016 和 Windows Server 2019 上的 Microsoft Defender 防病毒](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-on-windows-server-2016)。
 
 ### <a name="set-microsoft-defender-antivirus-to-passive-mode-on-windows-server"></a>在 Windows Server 上将 Microsoft Defender 防病毒设置为被动模式
 
@@ -115,7 +115,7 @@ ms.locfileid: "51218708"
 |---------|---------|
 |[Intune](https://docs.microsoft.com/mem/intune/fundamentals/tutorial-walkthrough-endpoint-manager) <br/>**注意**：Intune 现在是 Microsoft Endpoint Manager。 |1. 转到 [Microsoft Endpoint Manager 管理中心](https://go.microsoft.com/fwlink/?linkid=2109431) 并登录。<br/>2.**选择"设备**  >  **配置文件"，** 然后选择要配置的配置文件类型。 如果你尚未创建设备限制配置文件类型，或者如果你想要创建新的配置文件类型，请参阅在 Microsoft Intune 中配置设备[限制设置](https://docs.microsoft.com/intune/device-restrictions-configure)。<br/>3. 选择 **"属性"，** 然后选择"**配置设置：编辑"。**<br/>4. 展开 **Microsoft Defender 防病毒**。 <br/>5. 启用 **云保护**。<br/>6. 在"**在示例提交前提示用户"** 下拉列表中，选择"自动 **发送所有示例"。**<br/>7. 在"**检测可能不需要的应用程序"** 下拉列表中，选择"**启用"** 或"审核 **"。**<br/>8. 选择 **"审阅 + 保存"，** 然后选择"保存 **"。**<br/>有关 Intune 设备配置文件（包括如何创建和配置其设置）的信息，请参阅[什么是 Microsoft Intune 设备配置文件？。](https://docs.microsoft.com/intune/device-profiles)|
 |Windows 中的控制面板     |请按照以下指南： [打开 Microsoft Defender 防病毒](https://docs.microsoft.com/mem/intune/user-help/turn-on-defender-windows)。 <br/>**注意**：你可能会在某些 *版本的* Windows Windows Defender *看到防病毒，而不是 Microsoft Defender* 防病毒。        |
-|[高级组策略管理](https://docs.microsoft.com/microsoft-desktop-optimization-pack/agpm/) <br/>或者<br/>[组策略管理控制台](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/use-group-policy-microsoft-defender-antivirus)  |1. 转到 `Computer configuration > Administrative templates > Windows components > Microsoft Defender Antivirus` 。 <br/>2. 查找名为"关闭 Microsoft Defender 防病毒 **"的策略**。<br/>3. 选择 **"编辑策略设置**"，并确保策略已禁用。 这将启用 Microsoft Defender 防病毒。 <br/>**注意**：你可能会在某些 *版本的* Windows Windows Defender *看到防病毒，而不是 Microsoft Defender* 防病毒。 |
+|[高级组策略管理](https://docs.microsoft.com/microsoft-desktop-optimization-pack/agpm/) <br/>或<br/>[组策略管理控制台](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/use-group-policy-microsoft-defender-antivirus)  |1. 转到 `Computer configuration > Administrative templates > Windows components > Microsoft Defender Antivirus` 。 <br/>2. 查找名为"关闭 Microsoft Defender 防病毒 **"的策略**。<br/>3. 选择 **"编辑策略设置**"，并确保策略已禁用。 这将启用 Microsoft Defender 防病毒。 <br/>**注意**：你可能会在某些 *版本的* Windows Windows Defender *看到防病毒，而不是 Microsoft Defender* 防病毒。 |
 
 ### <a name="verify-that-microsoft-defender-antivirus-is-in-passive-mode"></a>验证 Microsoft Defender 防病毒是否处于被动模式
 

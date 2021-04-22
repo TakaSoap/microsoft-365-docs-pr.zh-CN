@@ -1,7 +1,7 @@
 ---
 title: macOS 的设备控件
 description: 了解如何在 Mac 上配置 Microsoft Defender for Endpoint 以减少来自可移动存储（如 USB 设备）的威胁。
-keywords: microsoft， defender， atp， mac， 设备， 控件， usb， 可移动， 媒体
+keywords: microsoft， defender， Microsoft Defender for Endpoint， mac， 设备， 控件， usb， 可移动， 媒体
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 696bc45f7bb66313cc9353e252d76c2e9fd73259
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 39f8367c34e98c5e9dd11e9716f08e6c9e7fd9c0
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51688677"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935121"
 ---
 # <a name="device-control-for-macos"></a>macOS 的设备控件
 

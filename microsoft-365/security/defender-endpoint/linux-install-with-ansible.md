@@ -2,7 +2,7 @@
 title: 使用 Ansible 在 Linux 上部署 Microsoft Defender for Endpoint
 ms.reviewer: ''
 description: 介绍如何使用 Ansible 在 Linux 上部署 Microsoft Defender for Endpoint。
-keywords: microsoft， defender， atp， linux， 安装， 部署， 卸载， 安装， ansible， linux， redhat， ubuntu， debian， sles， suse， centos
+keywords: microsoft， defender， Microsoft Defender for Endpoint， linux， 安装， 部署， 卸载， 安装， ansible， linux， redhat， ubuntu， debian， sles， suse， centos
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 697fcddad595c6883fe1e1f7258ca6154c48b94d
-ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
+ms.openlocfilehash: 15ee02d90e81c48bf5ec718e669bf8f88f6424ff
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51903900"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934773"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-linux-with-ansible"></a>使用 Ansible 在 Linux 上部署 Microsoft Defender for Endpoint
 
@@ -36,7 +36,7 @@ ms.locfileid: "51903900"
 
 > 想要体验适用于终结点的 Defender？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
 
-本文介绍如何使用 Ansible 部署适用于 Linux 的 Defender for Endpoint。 成功的部署需要完成以下所有任务：
+本文介绍了如何使用 Ansible 在 Linux 上部署适用于终结点的 Defender。 成功的部署需要完成以下所有任务：
 
 - [下载载入程序包](#download-the-onboarding-package)
 - [创建易读 YAML 文件](#create-ansible-yaml-files)
@@ -45,7 +45,7 @@ ms.locfileid: "51903900"
 
 ## <a name="prerequisites-and-system-requirements"></a>先决条件和系统要求
 
-在开始使用之前，请参阅适用于 Linux 的 [Defender for Endpoint](microsoft-defender-endpoint-linux.md) 主页，了解当前软件版本的先决条件和系统要求说明。
+在开始使用之前，请参阅 [Linux](microsoft-defender-endpoint-linux.md) 上的主 Defender for Endpoint 页面，了解当前软件版本的先决条件和系统要求说明。
 
 此外，对于 Ansible 部署，您需要熟悉 Ansible 管理任务，配置了 Ansible，并知道如何部署操作手册和任务。 Ansible 有很多方法可以完成同一任务。 这些说明假定受支持的 Ansible 模块（例如 *，贴* 切和未 *存档* ）的可用性，以帮助部署程序包。 您的组织可能使用不同的工作流。 有关详细信息，请参阅 [Ansible](https://docs.ansible.com/) 文档。
 
@@ -129,7 +129,7 @@ ms.locfileid: "51903900"
 
 - 添加适用于终结点的 Defender 存储库和密钥。
 
-    可以从以下频道之一部署适用于 Linux 的 Defender (表示为 *[channel]* *) ：insiders-fast、insiders-slow* 或 *prod*。每个通道对应于 Linux 软件存储库。
+    Linux 上的 Defender for Endpoint 可以从以下频道之一进行部署 (下面表示为 *[channel]* *) ：insiders-fast、insiders-slow* 或 *prod*。 每个通道对应于 Linux 软件存储库。
 
     通道的选择决定了提供给你的设备的更新的类型和频率。 预览 *体验成员-快* 中的设备是首先接收更新和新功能的设备，随后是预览体验成员 - *慢* ，最后是 *受支持*。
 
@@ -271,7 +271,7 @@ ms.locfileid: "51903900"
 
 ## <a name="operating-system-upgrades"></a>操作系统升级
 
-将操作系统升级到新的主要版本时，必须先卸载适用于 Linux 的 Defender for Endpoint，安装升级，最后在设备上重新配置适用于 Linux 的 Defender for Endpoint。
+将操作系统升级到新的主要版本时，必须先卸载 Linux 上的 Defender for Endpoint，安装升级，最后在设备上重新配置 Linux 上的 Defender for Endpoint。
 
 ## <a name="references"></a>参考
 

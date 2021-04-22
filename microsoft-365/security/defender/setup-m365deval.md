@@ -1,7 +1,7 @@
 ---
 title: 设置 Microsoft 365 Defender 试用实验室或试验环境
 description: 访问 Microsoft 365 安全中心，然后设置 Microsoft 365 Defender 试用实验室环境
-keywords: Microsoft 威胁防护试用设置， Microsoft 威胁防护试点设置， 尝试 Microsoft 威胁防护， Microsoft 威胁防护评估实验室设置
+keywords: Microsoft 365 Defender 试用设置， Microsoft 365 Defender 试点设置， 试用 Microsoft 365 Defender， Microsoft 365 Defender 评估实验室设置
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -19,12 +19,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 976f6a1ec010348e8a281c251064acdd7a26748b
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: ae81f6be0a83d5d0141f0f0c8c89f8f2207cc56c
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51056077"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935421"
 ---
 # <a name="set-up-your-microsoft-365-defender-trial-lab-environment"></a>设置 Microsoft 365 Defender 试用实验室环境 
 
@@ -37,7 +37,7 @@ ms.locfileid: "51056077"
 
 创建 Microsoft 365 Defender 试用实验室或试验环境并部署它的过程分三个阶段：
 
-|[![阶段 1：准备](../../media/phase-diagrams/prepare.png)](prepare-m365d-eval.md)<br/>[阶段 1：准备](prepare-m365d-eval.md) |![阶段 2：设置](../../media/phase-diagrams/setup.png)<br/>阶段 2：设置 |[![阶段 3：载入](../../media/phase-diagrams/onboard.png)](config-m365d-eval.md)<br/>[阶段 3：载入](config-m365d-eval.md) | [![返回到试点](../../media/phase-diagrams/backtopilot.png)](m365d-pilot.md)<br/>[返回到试点手册](m365d-pilot.md) |
+|[![阶段 1：准备](../../media/phase-diagrams/prepare.png)](prepare-m365d-eval.md)<br/>[阶段 1：准备](prepare-m365d-eval.md) |![阶段 2：设置](../../media/phase-diagrams/setup.png)<br/>阶段 2：设置 |[![阶段 3：开始使用](../../media/phase-diagrams/onboard.png)](config-m365d-eval.md)<br/>[阶段 3：开始使用](config-m365d-eval.md) | [![返回到试点](../../media/phase-diagrams/backtopilot.png)](m365d-pilot.md)<br/>[返回到试点手册](m365d-pilot.md) |
 |--|--|--|--|
 ||*你在这里！*  | | |
 
@@ -89,7 +89,7 @@ ms.locfileid: "51056077"
 
    ![Office 365 E5 试用注册设置页面提示单击"开始设置"按钮的图像](../../media/mtp-eval-15.png)
 
-8. 将公司域连接到 Office 365 租户。 [可选]选择 **"连接你已拥有的域"，** 然后键入你的域名。 单击“**下一步**”。
+8. 将公司域连接到 Office 365 租户。 [可选]选择 **"连接你已拥有的域"，** 然后键入你的域名。 单击"下一步"。
 
    ![图像of_Office 365 E5 设置页面，应在其中个性化设置登录和电子邮件](../../media/mtp-eval-16.png)
  
@@ -144,7 +144,7 @@ ms.locfileid: "51056077"
 
    ![Image of_Microsoft 365 E5 Start free trial page where you should clock the Try now button to start](../../media/mtp-eval-27.png)
  
-6. 转到 **Microsoft 365 管理中心**  >  **用户**  >  **活动用户**。 选择用户帐户，选择管理 **产品许可证**，然后将许可证从 Office 365 E5 交换为 **Microsoft 365 E5。** 单击“**保存**”。
+6. 转到 **Microsoft 365 管理中心**  >  **用户**  >  **活动用户**。 选择用户帐户，选择管理 **产品许可证**，然后将许可证从 Office 365 E5 交换为 **Microsoft 365 E5。** 单击“保存”。
 
    ![图像of_Microsoft 365 管理中心页面，可在其中选择 Microsoft 365 E5 许可证](../../media/mtp-eval-28.png)
  

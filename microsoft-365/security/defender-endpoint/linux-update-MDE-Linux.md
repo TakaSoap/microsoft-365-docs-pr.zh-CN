@@ -1,7 +1,7 @@
 ---
 title: '如何计划 Microsoft Defender 终结点更新 (Linux) '
 description: 了解如何计划 Microsoft Defender 终结点 (Linux) 以更好地保护组织的资产。
-keywords: 'microsoft， defender， atp， linux， 扫描， 防病毒， microsoft defender for endpoint (linux) '
+keywords: 'microsoft， defender， Microsoft Defender for Endpoint， linux， 扫描， 防病毒， 适用于终结点的 microsoft defender (linux) '
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: a967333a58f74938ea70e32e0c48d2decb597e98
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 22ff42cb399b3d07c0ebd8ec4f947352eb6f44aa
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51688797"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934761"
 ---
 # <a name="schedule-an-update-of-the-microsoft-defender-for-endpoint-linux"></a>计划更新 Microsoft Defender for Endpoint （Linux）
 

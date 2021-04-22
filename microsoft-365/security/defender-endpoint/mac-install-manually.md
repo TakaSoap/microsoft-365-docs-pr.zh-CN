@@ -1,7 +1,7 @@
 ---
 title: 在 macOS 上手动部署 Microsoft Defender for Endpoint
 description: 从命令行手动在 macOS 上安装 Microsoft Defender for Endpoint。
-keywords: microsoft， defender， atp， mac， 安装， 部署， 卸载， intune， jamf， macos， catalina， mojave， high sierra
+keywords: microsoft， defender， Microsoft Defender for Endpoint， mac， 安装， 部署， 卸载， intune， jamf， macos， catalina， mojave， high sierra
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 0e8faf95df6691828558175412a1de8aa844d93f
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: d8458f1bacc6577d83878a94c24e649371d90038
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51688593"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935325"
 ---
 # <a name="manual-deployment-for-microsoft-defender-for-endpoint-on-macos"></a>在 macOS 上手动部署 Microsoft Defender for Endpoint
 
@@ -164,7 +164,7 @@ ms.locfileid: "51688593"
         curl -o ~/Downloads/eicar.com.txt https://www.eicar.org/download/eicar.com.txt
         ```
 
-    1. 文件应已由 Defender for Endpoint for Mac 隔离。 使用以下命令列出所有检测到的威胁：
+    1. 文件应已由 Mac 上的 Defender for Endpoint 隔离。 使用以下命令列出所有检测到的威胁：
 
         ```bash
         mdatp threat list
@@ -207,7 +207,7 @@ ms.locfileid: "51688593"
 
     系统应显示以下消息：
 
-    > Microsoft Defender ATP - macOS EDR DIY 测试文件<br/>
+    > Microsoft Defender for Endpoint - macOS EDR DIY 测试文件<br/>
     > MDATP 门户中将提供相应的警报。
 
 11. 单击“打开”。
@@ -228,4 +228,4 @@ ms.locfileid: "51688593"
 
 ## <a name="uninstallation"></a>卸载
 
-请参阅 [卸载](mac-resources.md#uninstalling) ，了解有关如何从客户端设备中删除适用于 macOS 的 Microsoft Defender for Endpoint 的详细信息。
+请参阅 [卸载](mac-resources.md#uninstalling) ，详细了解如何从客户端设备中删除 macOS 上的 Microsoft Defender for Endpoint。

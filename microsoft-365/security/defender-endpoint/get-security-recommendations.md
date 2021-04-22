@@ -1,7 +1,7 @@
 ---
 title: 获取安全建议
 description: 检索与给定设备 ID 相关的安全建议集合。
-keywords: api， 图形 api， 受支持的 api， 获取， 列表， 文件， 信息， 每个设备的安全建议， 威胁&漏洞管理 api， mdatp tvm api
+keywords: api， 图形 api， 受支持的 api， 获取， 列表， 文件， 信息， 每个设备的安全建议， 威胁 & 漏洞管理 api， Microsoft Defender for Endpoint tvm api
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -14,12 +14,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 6c65926985c7c8a194ab87c44c3fc269488c463c
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: bc209687d51b3e05bfcfd6028042ba5912b877f6
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51199761"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935301"
 ---
 # <a name="get-security-recommendations"></a>获取安全建议
 
@@ -54,7 +54,7 @@ GET /api/machines/{machineId}/recommendations
 
 名称 | 类型 | 说明
 :---|:---|:---
-Authorization | 字符串 | Bearer {token}。 **必需**。
+Authorization | String | Bearer {token}。 **必需**。
 
 
 ## <a name="request-body"></a>请求正文

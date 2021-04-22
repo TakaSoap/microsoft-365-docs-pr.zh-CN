@@ -1,7 +1,7 @@
 ---
 title: 获取已安装的软件
 description: 检索与给定设备 ID 相关的已安装软件的集合。
-keywords: api， 图形 api， 受支持的 api， 获取， 列表， 文件， 信息， 软件清单， 每个设备安装的软件， 威胁 & 漏洞管理 api， mdatp tvm api
+keywords: api， 图形 api， 受支持的 api， 获取， 列表， 文件， 信息， 软件清单， 每个设备安装的软件， 威胁 & 漏洞管理 api， Microsoft Defender for Endpoint tvm api
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 6164020ef05561563fe0434bd2edac8c7b3e689a
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: ebd689fd53dd804f857c6bec7a412c27988835d0
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51166314"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935097"
 ---
 # <a name="get-installed-software"></a>获取已安装的软件
 
@@ -45,7 +45,7 @@ ms.locfileid: "51166314"
 
 权限类型 |   权限  |   权限显示名称
 :---|:---|:---
-Application |Software.Read.All |    "读取威胁和漏洞管理软件信息"
+应用程序 |Software.Read.All |    "读取威胁和漏洞管理软件信息"
 委派（工作或学校帐户） | Software.Read |    "读取威胁和漏洞管理软件信息"
 
 ## <a name="http-request"></a>HTTP 请求

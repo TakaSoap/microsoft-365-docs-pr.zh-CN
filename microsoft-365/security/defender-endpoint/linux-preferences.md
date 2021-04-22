@@ -2,7 +2,7 @@
 title: 在 Linux 上设置适用于终结点的 Microsoft Defender 的首选项
 ms.reviewer: ''
 description: 介绍如何在企业版 Linux 上为终结点配置 Microsoft Defender。
-keywords: microsoft， defender， atp， linux， 安装， 部署， 卸载， 安装， ansible， linux， redhat， ubuntu， debian， sles， suse， centos
+keywords: microsoft， defender， Microsoft Defender for Endpoint， linux， 安装， 部署， 卸载， 安装， ansible， linux， redhat， ubuntu， debian， sles， suse， centos
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 2c162d652656afb61f1d74bad9ec963825d25a14
-ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
+ms.openlocfilehash: 7f3dd65aea0efa570ec5d6a1d27479b787e16831
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51903866"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935277"
 ---
 # <a name="set-preferences-for-microsoft-defender-for-endpoint-on-linux"></a>在 Linux 上设置适用于终结点的 Microsoft Defender 的首选项
 
@@ -37,9 +37,9 @@ ms.locfileid: "51903866"
 > 想要体验适用于终结点的 Defender？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
 
 >[!IMPORTANT]
->本主题包含有关如何在企业环境中为适用于 Linux 的 Defender 终结点设置首选项的说明。 如果你有兴趣从命令行在设备上配置产品，请参阅 [资源](linux-resources.md#configure-from-the-command-line)。
+>本主题包含有关如何在企业环境中为 Linux 上的 Defender for Endpoint 设置首选项的说明。 如果你有兴趣从命令行在设备上配置产品，请参阅 [资源](linux-resources.md#configure-from-the-command-line)。
 
-在企业环境中，可通过配置文件管理适用于 Linux 的 Defender for Endpoint。 此配置文件从你选择的管理工具部署。 企业管理的首选项优先于在设备上本地设置的首选项。 换句话说，企业中的用户不能更改通过此配置文件设置的首选项。
+在企业环境中，Linux 上的 Defender for Endpoint 可通过配置文件进行管理。 此配置文件从你选择的管理工具部署。 企业管理的首选项优先于在设备上本地设置的首选项。 换句话说，企业中的用户不能更改通过此配置文件设置的首选项。
 
 本文介绍此配置文件 (包括可用于开始使用配置文件的建议) 以及如何部署配置文件的说明。
 
@@ -450,4 +450,4 @@ python -m json.tool mdatp_managed.json
 
 ## <a name="configuration-profile-deployment"></a>配置文件部署
 
-为企业生成配置文件后，可以通过企业使用的管理工具进行部署。 适用于 Linux 的终结点的 Defender 从 */etc/opt/microsoft/mdatp/managed/mdatp_managed.js文件读取托管* 配置。
+为企业生成配置文件后，可以通过企业使用的管理工具进行部署。 Linux 上的 Defender for Endpoint 从 */etc/opt/microsoft/mdatp/managed/mdatp_managed.json 文件中读取托管* 配置。

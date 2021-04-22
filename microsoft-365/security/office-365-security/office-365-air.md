@@ -1,6 +1,6 @@
 ---
 title: Microsoft Defender for Office 365 中的自动调查和响应
-keywords: AIR， autoIR， ATP， 自动化， 调查， 响应， 修正， 威胁， 高级， 威胁， 保护
+keywords: AIR， autoIR， Microsoft Defender for Endpoint， 自动化， 调查， 响应， 修正， 威胁， 高级， 威胁， 保护
 f1.keywords:
 - NOCSH
 ms.author: deniseb
@@ -22,12 +22,12 @@ ms.custom:
 - seo-marvel-mar2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 9850506771f53b125c08b1df2149ee024191d823
-ms.sourcegitcommit: 4acf613587128cae27e0fd470d1216b509775529
+ms.openlocfilehash: 89421348d858a869e033380802e402465949c554
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/15/2021
-ms.locfileid: "51768862"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935169"
 ---
 # <a name="automated-investigation-and-response-air-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 (AIR) 自动调查和响应
 
@@ -91,12 +91,12 @@ AIR 功能包含在适用于 [Office 365](defender-for-office-365.md#microsoft-d
 
 Microsoft 365 提供了许多内置警报策略，可帮助识别 Exchange 管理员权限滥用、恶意软件活动、潜在的外部和内部威胁以及信息治理风险。 一些 [默认警报策略](../../compliance/alert-policies.md#default-alert-policies) 可以触发自动调查。 下表介绍了触发自动调查的警报、Microsoft 365 安全中心中警报的严重性及其生成方式：
 
-|提醒|Severity|警报的生成方式|
+|通知|Severity|警报的生成方式|
 |---|---|---|
 |检测到潜在恶意 URL 单击|**High**|发生以下任一情况时，将生成此警报： <ul><li>组织中受安全 [链接保护](safe-links.md) 的用户单击恶意链接</li><li>URL 裁定更改由 Microsoft Defender for Office 365 识别</li><li>根据组织的安全链接策略 (，用户会覆盖安全链接[警告) 。](set-up-safe-links-policies.md)</li></ul> <p> 有关触发此警报的事件详细信息，请参阅设置 [安全链接策略](set-up-safe-links-policies.md)。|
-|电子邮件被用户报告为恶意软件或钓鱼邮件|**信息性**|当贵组织的用户使用报告邮件外接程序或报告网络钓鱼外接程序将邮件报告为网络钓鱼电子邮件[时，](enable-the-report-message-add-in.md)[将生成此警报](enable-the-report-phish-add-in.md)。|
-|包含恶意软件的电子邮件在传递后被删除|**信息性**|当包含恶意软件的任何电子邮件传递到您组织的邮箱时，将生成此警报。 如果发生此事件，Microsoft 会使用零时差自动清除从 Exchange Online 邮箱中删除 [受感染的邮件](zero-hour-auto-purge.md)。|
-|包含网络钓鱼 URL 的电子邮件在传递后被删除|**信息性**|当包含钓鱼邮件的任何邮件传递到您组织的邮箱时，将生成此警报。 如果发生此事件，Microsoft 会使用零时差自动清除从 Exchange Online 邮箱中删除 [受感染的邮件](zero-hour-auto-purge.md)。|
+|电子邮件被用户报告为恶意软件或钓鱼邮件|**信息**|当贵组织的用户使用报告邮件外接程序或报告网络钓鱼外接程序将邮件报告为网络钓鱼电子邮件[时，](enable-the-report-message-add-in.md)[将生成此警报](enable-the-report-phish-add-in.md)。|
+|包含恶意软件的电子邮件在传递后被删除|**信息**|当包含恶意软件的任何电子邮件传递到您组织的邮箱时，将生成此警报。 如果发生此事件，Microsoft 会使用零时差自动清除从 Exchange Online 邮箱中删除 [受感染的邮件](zero-hour-auto-purge.md)。|
+|包含网络钓鱼 URL 的电子邮件在传递后被删除|**信息**|当包含钓鱼邮件的任何邮件传递到您组织的邮箱时，将生成此警报。 如果发生此事件，Microsoft 会使用零时差自动清除从 Exchange Online 邮箱中删除 [受感染的邮件](zero-hour-auto-purge.md)。|
 |检测到可疑的电子邮件发送模式|**Medium**|当组织中有人已发送可疑电子邮件，并且存在被限制发送电子邮件的风险时，将生成此警报。 警报是行为的早期警告，可能指示帐户受到威胁，但不够严重，无法限制用户。 <p> 尽管这种情况很少见，但此策略生成的警报可能是异常情况。 但是，建议检查用户帐户 [是否遭到入侵](responding-to-a-compromised-email-account.md)。|
 |用户被限制发送电子邮件|**High**|当组织中有人被限制发送出站邮件时，将生成此警报。 此警报通常在电子邮件帐户 [受到威胁时产生](responding-to-a-compromised-email-account.md)。 <p> 有关受限用户详细信息，请参阅从 [Microsoft 365](removing-user-from-restricted-users-portal-after-spam.md)中的受限用户门户删除阻止的用户。|
 |
@@ -141,7 +141,7 @@ Microsoft 365 提供了许多内置警报策略，可帮助识别 Exchange 管�
 
 下表列出了 Microsoft Defender for Office 365 中 AIR 的更改和改进。
 
-|项目|更改了哪些方面？|
+|Item|更改了哪些方面？|
 |---|---|
 |**"调查"** 页|更新 **后的调查页面** 更符合你在 [Microsoft Defender for Endpoint 中所看到的内容](/windows/security/threat-protection/microsoft-defender-atp/automated-investigations)。 你将看到一些与新的统一调查视图一致的常规格式和 **样式** 设置更改。 例如，调查图具有更统一的格式。|
 |**"用户"** 选项卡|" **用户"** 选项卡现在是" **邮箱"** 选项卡。有关用户的详细信息列在"邮箱" **选项卡** 上。|

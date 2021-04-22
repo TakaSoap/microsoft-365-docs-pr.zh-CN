@@ -1,7 +1,7 @@
 ---
 title: 解决攻击面减少规则的问题
 description: 用于解决 Microsoft Defender for Endpoint 中攻击面减少规则的问题的资源和示例代码。
-keywords: 疑难解答， 错误， 修复， windows defender eg， asr， 规则， hips， 疑难解答， 审核， 排除， 误报， 损坏， 阻止， microsoft defender 终结点， microsoft defender 高级威胁防护
+keywords: 疑难解答， 错误， 修复， windows defender eg， asr， 规则， hips， 疑难解答， 审核， 排除， 误报， 损坏， 阻止， Microsoft Defender for Endpoint
 search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
 ms.prod: m365-security
@@ -17,12 +17,12 @@ manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: how-to
-ms.openlocfilehash: d483c098f221e2d4d2e61a10393154b8f5d1498d
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 9ff00c706b0fb336c178e227b1cb33eff9e9ebbc
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51198737"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935217"
 ---
 # <a name="troubleshoot-attack-surface-reduction-rules"></a>攻击面减少规则疑难解答
 
@@ -126,4 +126,4 @@ ms.locfileid: "51198737"
 
 - [启用攻击面减少规则](enable-attack-surface-reduction.md)
 
-- [评估攻击面减少规则](evaluate-attack-surface-reduction.md)
+- [评估减少攻击面规则](evaluate-attack-surface-reduction.md)

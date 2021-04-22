@@ -1,7 +1,7 @@
 ---
 title: 调查 Microsoft Defender for Endpoint 中的用户帐户
 description: 调查用户帐户以在调查期间潜在泄露的凭据或透视关联的用户帐户。
-keywords: 调查， 帐户， 用户， 用户实体， 警报， microsoft defender atp
+keywords: 调查， 帐户， 用户， 用户实体， 警报， Microsoft Defender for Endpoint
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -19,12 +19,12 @@ ms.collection:
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: 672867d107d005004201caab7d6497ceb048ac97
-ms.sourcegitcommit: 987f70e44e406ab6b1dd35f336a9d0c228032794
+ms.openlocfilehash: e98142e4076c5e695f16eb06c062bc69d3d7dd55
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/05/2021
-ms.locfileid: "51587703"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935061"
 ---
 # <a name="investigate-a-user-account-in-microsoft-defender-for-endpoint"></a>调查 Microsoft Defender for Endpoint 中的用户帐户
 
@@ -51,7 +51,7 @@ ms.locfileid: "51587703"
 
 调查用户帐户实体时，你将看到：
 
-- 用户帐户详细信息、Azure 高级威胁防护 (Azure ATP) 警报以及登录的设备、角色、登录类型和其他详细信息
+- 用户帐户详细信息、Microsoft Defender 标识警报以及登录的设备、角色、登录类型和其他详细信息
 - 事件和用户设备概述
 - 与此用户相关的警报
 - 在组织中观测 (登录到) 
@@ -60,10 +60,10 @@ ms.locfileid: "51587703"
 
 ### <a name="user-details"></a>用户详细信息
 
-左侧的用户详细信息窗格提供有关用户的信息，例如相关打开事件、活动警报、SAM 名称、SID、Azure ATP 警报、用户登录的设备数、首次看到和最后一次看到用户时、角色和登录类型。 根据你已启用的集成功能，你将看到其他详细信息。 例如，如果你启用 Skype for Business 集成，你将能够从门户联系用户。 Azure **ATP 警报** 部分包含一个链接，如果已启用 Azure ATP 功能，并且存在与用户相关的警报，该链接将你访问 Azure ATP 页面。 Azure ATP 页面将提供有关警报详细信息。
+左侧的用户详细信息窗格提供有关用户的信息，例如相关的打开事件、活动警报、SAM 名称、SID、Microsoft Defender for Identity 警报、用户登录的设备数、首次看到和最后一次看到用户时、角色和登录类型。 根据你已启用的集成功能，你将看到其他详细信息。 例如，如果你启用 Skype for Business 集成，你将能够从门户联系用户。 Azure **ATP** 警报部分包含一个链接，如果你已启用 Microsoft Defender for Identity 功能，并且存在与用户相关的警报，该链接将你指向 Microsoft Defender for Identity 页面。 Microsoft Defender for Identity 页面将提供有关警报详细信息。
 
 >[!NOTE]
->你需要在 Azure ATP 和 Defender for Endpoint 上启用集成才能使用此功能。 在 Defender for Endpoint 中，可以在高级功能中启用此功能。 若要详细了解如何启用高级功能，请参阅 [启用高级功能](advanced-features.md)。
+>你需要在 Microsoft Defender for Identity 和 Defender for Endpoint 上启用集成才能使用此功能。 在 Defender for Endpoint 中，可以在高级功能中启用此功能。 若要详细了解如何启用高级功能，请参阅 [启用高级功能](advanced-features.md)。
 
 组织中"概述"、"警报"和"观测到"是显示有关用户帐户的各种属性的不同选项卡。
 

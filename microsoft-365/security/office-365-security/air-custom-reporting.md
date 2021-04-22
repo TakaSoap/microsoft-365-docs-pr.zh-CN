@@ -1,6 +1,6 @@
 ---
 title: 使用自动调查和响应的自定义报告解决方案
-keywords: SIEM， API， AIR， autoIR， ATP， 自动调查， 集成， 自定义报告
+keywords: SIEM， API， AIR， autoIR， Microsoft Defender for Endpoint， 自动调查， 集成， 自定义报告
 f1.keywords:
 - NOCSH
 ms.author: deniseb
@@ -21,12 +21,12 @@ ms.custom:
 - air
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 82f3b38e5b6e31313c94f5ac389e883f6b076540
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 4a7ccc0f07691c5183b9cb7a6e5b3f512f35f76b
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51203874"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935397"
 ---
 # <a name="custom-or-third-party-reporting-solutions-for-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 的自定义或第三方报告解决方案
 
