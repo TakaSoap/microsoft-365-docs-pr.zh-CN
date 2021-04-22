@@ -1,7 +1,7 @@
 ---
 title: Mac 上的 Microsoft Defender for Endpoint 的新增功能
 description: 了解 Mac 上早期版本的 Microsoft Defender for Endpoint 的主要更改。
-keywords: microsoft， defender， atp， mac， 安装， macos， whatsnew
+keywords: microsoft， defender， Microsoft Defender for Endpoint， mac， 安装， macos， whatsnew
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,215 +18,215 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 67bbc987dc339c0e1f0354e07d6d2db8c39ec8b9
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: edbabf83c7bf1ac8dbe1ca9451ad191b45a862ac
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51689037"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51932723"
 ---
-# <a name="whats-new-in-microsoft-defender-for-endpoint-on-mac"></a><span data-ttu-id="74198-104">Mac 上的 Microsoft Defender for Endpoint 的新增功能</span><span class="sxs-lookup"><span data-stu-id="74198-104">What's new in Microsoft Defender for Endpoint on Mac</span></span>
+# <a name="whats-new-in-microsoft-defender-for-endpoint-on-mac"></a><span data-ttu-id="f0a42-104">Mac 上的 Microsoft Defender for Endpoint 的新增功能</span><span class="sxs-lookup"><span data-stu-id="f0a42-104">What's new in Microsoft Defender for Endpoint on Mac</span></span>
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-<span data-ttu-id="74198-105">**适用于：**</span><span class="sxs-lookup"><span data-stu-id="74198-105">**Applies to:**</span></span>
-- [<span data-ttu-id="74198-106">Microsoft Defender for Endpoint</span><span class="sxs-lookup"><span data-stu-id="74198-106">Microsoft Defender for Endpoint</span></span>](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [<span data-ttu-id="74198-107">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="74198-107">Microsoft 365 Defender</span></span>](https://go.microsoft.com/fwlink/?linkid=2118804)
+<span data-ttu-id="f0a42-105">**适用于：**</span><span class="sxs-lookup"><span data-stu-id="f0a42-105">**Applies to:**</span></span>
+- [<span data-ttu-id="f0a42-106">Microsoft Defender for Endpoint</span><span class="sxs-lookup"><span data-stu-id="f0a42-106">Microsoft Defender for Endpoint</span></span>](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [<span data-ttu-id="f0a42-107">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="f0a42-107">Microsoft 365 Defender</span></span>](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> <span data-ttu-id="74198-108">想要体验 Microsoft Defender for Endpoint？</span><span class="sxs-lookup"><span data-stu-id="74198-108">Want to experience Microsoft Defender for Endpoint?</span></span> [<span data-ttu-id="74198-109">注册免费试用版。</span><span class="sxs-lookup"><span data-stu-id="74198-109">Sign up for a free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> <span data-ttu-id="f0a42-108">想要体验 Microsoft Defender for Endpoint？</span><span class="sxs-lookup"><span data-stu-id="f0a42-108">Want to experience Microsoft Defender for Endpoint?</span></span> [<span data-ttu-id="f0a42-109">注册免费试用版。</span><span class="sxs-lookup"><span data-stu-id="f0a42-109">Sign up for a free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 > [!IMPORTANT]
-> <span data-ttu-id="74198-110">在 macOS 11 (Sur) 上，Microsoft Defender for Endpoint 需要额外的配置文件。</span><span class="sxs-lookup"><span data-stu-id="74198-110">On macOS 11 (Big Sur), Microsoft Defender for Endpoint requires additional configuration profiles.</span></span> <span data-ttu-id="74198-111">如果你是从 macOS 早期版本升级的现有客户，请确保部署此页中列出的其他 [配置文件](mac-sysext-policies.md)。</span><span class="sxs-lookup"><span data-stu-id="74198-111">If you are an existing customer upgrading from earlier versions of macOS, make sure to deploy the additional configuration profiles listed on [this page](mac-sysext-policies.md).</span></span>
+> <span data-ttu-id="f0a42-110">在 macOS 11 (Sur) 上，Microsoft Defender for Endpoint 需要额外的配置文件。</span><span class="sxs-lookup"><span data-stu-id="f0a42-110">On macOS 11 (Big Sur), Microsoft Defender for Endpoint requires additional configuration profiles.</span></span> <span data-ttu-id="f0a42-111">如果你是从 macOS 早期版本升级的现有客户，请确保部署此页中列出的其他 [配置文件](mac-sysext-policies.md)。</span><span class="sxs-lookup"><span data-stu-id="f0a42-111">If you are an existing customer upgrading from earlier versions of macOS, make sure to deploy the additional configuration profiles listed on [this page](mac-sysext-policies.md).</span></span>
 
-## <a name="1012569-20121022125690"></a><span data-ttu-id="74198-112">101.25.69 (20.121022.12569.0) </span><span class="sxs-lookup"><span data-stu-id="74198-112">101.25.69 (20.121022.12569.0)</span></span>
+## <a name="1012569-20121022125690"></a><span data-ttu-id="f0a42-112">101.25.69 (20.121022.12569.0) </span><span class="sxs-lookup"><span data-stu-id="f0a42-112">101.25.69 (20.121022.12569.0)</span></span>
 
-- <span data-ttu-id="74198-113">macOS 上的 Microsoft Defender for Endpoint 现在可供美国政府客户预览使用。</span><span class="sxs-lookup"><span data-stu-id="74198-113">Microsoft Defender for Endpoint on macOS is now available in preview for US Government customers.</span></span> <span data-ttu-id="74198-114">有关详细信息，请参阅 [Microsoft Defender for Endpoint for US Government customers](gov.md)。</span><span class="sxs-lookup"><span data-stu-id="74198-114">For more information, see [Microsoft Defender for Endpoint for US Government customers](gov.md).</span></span>
-- <span data-ttu-id="74198-115">性能改进 (XCode 模拟器应用用于修复错误) &的情况</span><span class="sxs-lookup"><span data-stu-id="74198-115">Performance improvements (specifically for the situation when the XCode Simulator app is used) & bug fixes</span></span>
+- <span data-ttu-id="f0a42-113">macOS 上的 Microsoft Defender for Endpoint 现在可供美国政府客户预览使用。</span><span class="sxs-lookup"><span data-stu-id="f0a42-113">Microsoft Defender for Endpoint on macOS is now available in preview for US Government customers.</span></span> <span data-ttu-id="f0a42-114">有关详细信息，请参阅 [Microsoft Defender for Endpoint for US Government customers](gov.md)。</span><span class="sxs-lookup"><span data-stu-id="f0a42-114">For more information, see [Microsoft Defender for Endpoint for US Government customers](gov.md).</span></span>
+- <span data-ttu-id="f0a42-115">性能改进 (XCode 模拟器应用用于修复错误) &的情况</span><span class="sxs-lookup"><span data-stu-id="f0a42-115">Performance improvements (specifically for the situation when the XCode Simulator app is used) & bug fixes</span></span>
 
-## <a name="1012364-20121021123640"></a><span data-ttu-id="74198-116">101.23.64 (20.121021.12364.0) </span><span class="sxs-lookup"><span data-stu-id="74198-116">101.23.64 (20.121021.12364.0)</span></span>
+## <a name="1012364-20121021123640"></a><span data-ttu-id="f0a42-116">101.23.64 (20.121021.12364.0) </span><span class="sxs-lookup"><span data-stu-id="f0a42-116">101.23.64 (20.121021.12364.0)</span></span>
 
-- <span data-ttu-id="74198-117">向命令行工具添加了一个新选项，用于查看有关上次按需扫描的信息。</span><span class="sxs-lookup"><span data-stu-id="74198-117">Added a new option to the command-line tool to view information about the last on-demand scan.</span></span> <span data-ttu-id="74198-118">若要查看有关上次按需扫描的信息，请运行 `mdatp health --details antivirus`</span><span class="sxs-lookup"><span data-stu-id="74198-118">To view information about the last on-demand scan, run `mdatp health --details antivirus`</span></span>
-- <span data-ttu-id="74198-119">Bug 修复&性能改进</span><span class="sxs-lookup"><span data-stu-id="74198-119">Performance improvements & bug fixes</span></span>
+- <span data-ttu-id="f0a42-117">向命令行工具添加了一个新选项，用于查看有关上次按需扫描的信息。</span><span class="sxs-lookup"><span data-stu-id="f0a42-117">Added a new option to the command-line tool to view information about the last on-demand scan.</span></span> <span data-ttu-id="f0a42-118">若要查看有关上次按需扫描的信息，请运行 `mdatp health --details antivirus`</span><span class="sxs-lookup"><span data-stu-id="f0a42-118">To view information about the last on-demand scan, run `mdatp health --details antivirus`</span></span>
+- <span data-ttu-id="f0a42-119">Bug 修复&性能改进</span><span class="sxs-lookup"><span data-stu-id="f0a42-119">Performance improvements & bug fixes</span></span>
 
-## <a name="1012279-20121012122790"></a><span data-ttu-id="74198-120">101.22.79 (20.121012.12279.0) </span><span class="sxs-lookup"><span data-stu-id="74198-120">101.22.79 (20.121012.12279.0)</span></span>
+## <a name="1012279-20121012122790"></a><span data-ttu-id="f0a42-120">101.22.79 (20.121012.12279.0) </span><span class="sxs-lookup"><span data-stu-id="f0a42-120">101.22.79 (20.121012.12279.0)</span></span>
 
-- <span data-ttu-id="74198-121">Bug 修复&性能改进</span><span class="sxs-lookup"><span data-stu-id="74198-121">Performance improvements & bug fixes</span></span>
+- <span data-ttu-id="f0a42-121">Bug 修复&性能改进</span><span class="sxs-lookup"><span data-stu-id="f0a42-121">Performance improvements & bug fixes</span></span>
 
-## <a name="1011988-20121011119880"></a><span data-ttu-id="74198-122">101.19.88 (20.121011.11988.0) </span><span class="sxs-lookup"><span data-stu-id="74198-122">101.19.88 (20.121011.11988.0)</span></span>
+## <a name="1011988-20121011119880"></a><span data-ttu-id="f0a42-122">101.19.88 (20.121011.11988.0) </span><span class="sxs-lookup"><span data-stu-id="f0a42-122">101.19.88 (20.121011.11988.0)</span></span>
 
-- <span data-ttu-id="74198-123">Bug 修复&性能改进</span><span class="sxs-lookup"><span data-stu-id="74198-123">Performance improvements & bug fixes</span></span>
+- <span data-ttu-id="f0a42-123">Bug 修复&性能改进</span><span class="sxs-lookup"><span data-stu-id="f0a42-123">Performance improvements & bug fixes</span></span>
 
-## <a name="1011948-20120121119480"></a><span data-ttu-id="74198-124">101.19.48 (20.120121.11948.0) </span><span class="sxs-lookup"><span data-stu-id="74198-124">101.19.48 (20.120121.11948.0)</span></span>
+## <a name="1011948-20120121119480"></a><span data-ttu-id="f0a42-124">101.19.48 (20.120121.11948.0) </span><span class="sxs-lookup"><span data-stu-id="f0a42-124">101.19.48 (20.120121.11948.0)</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="74198-125">此版本已弃用旧的命令行工具语法。</span><span class="sxs-lookup"><span data-stu-id="74198-125">The old command-line tool syntax has been deprecated with this release.</span></span> <span data-ttu-id="74198-126">有关新语法的信息，请参阅 [Resources](mac-resources.md#configuring-from-the-command-line)。</span><span class="sxs-lookup"><span data-stu-id="74198-126">For information on the new syntax, see [Resources](mac-resources.md#configuring-from-the-command-line).</span></span>
+> <span data-ttu-id="f0a42-125">此版本已弃用旧的命令行工具语法。</span><span class="sxs-lookup"><span data-stu-id="f0a42-125">The old command-line tool syntax has been deprecated with this release.</span></span> <span data-ttu-id="f0a42-126">有关新语法的信息，请参阅 [Resources](mac-resources.md#configuring-from-the-command-line)。</span><span class="sxs-lookup"><span data-stu-id="f0a42-126">For information on the new syntax, see [Resources](mac-resources.md#configuring-from-the-command-line).</span></span>
 
-- <span data-ttu-id="74198-127">添加了一个新的命令行开关以禁用网络扩展 `mdatp system-extension network-filter disable` ：。</span><span class="sxs-lookup"><span data-stu-id="74198-127">Added a new command-line switch to disable the network extension: `mdatp system-extension network-filter disable`.</span></span> <span data-ttu-id="74198-128">此命令可用于解决与 Mac 上的 Microsoft Defender for Endpoint 相关的网络问题</span><span class="sxs-lookup"><span data-stu-id="74198-128">This command can be useful to troubleshoot networking issues that could be related to Microsoft Defender for Endpoint on Mac</span></span>
-- <span data-ttu-id="74198-129">Bug 修复&性能改进</span><span class="sxs-lookup"><span data-stu-id="74198-129">Performance improvements & bug fixes</span></span>
+- <span data-ttu-id="f0a42-127">添加了一个新的命令行开关以禁用网络扩展 `mdatp system-extension network-filter disable` ：。</span><span class="sxs-lookup"><span data-stu-id="f0a42-127">Added a new command-line switch to disable the network extension: `mdatp system-extension network-filter disable`.</span></span> <span data-ttu-id="f0a42-128">此命令可用于解决与 Mac 上的 Microsoft Defender for Endpoint 相关的网络问题</span><span class="sxs-lookup"><span data-stu-id="f0a42-128">This command can be useful to troubleshoot networking issues that could be related to Microsoft Defender for Endpoint on Mac</span></span>
+- <span data-ttu-id="f0a42-129">Bug 修复&性能改进</span><span class="sxs-lookup"><span data-stu-id="f0a42-129">Performance improvements & bug fixes</span></span>
 
-## <a name="1011921-20120101119210"></a><span data-ttu-id="74198-130">101.19.21 (20.120101.11921.0) </span><span class="sxs-lookup"><span data-stu-id="74198-130">101.19.21 (20.120101.11921.0)</span></span>
+## <a name="1011921-20120101119210"></a><span data-ttu-id="f0a42-130">101.19.21 (20.120101.11921.0) </span><span class="sxs-lookup"><span data-stu-id="f0a42-130">101.19.21 (20.120101.11921.0)</span></span>
 
-- <span data-ttu-id="74198-131">Bug 修复</span><span class="sxs-lookup"><span data-stu-id="74198-131">Bug fixes</span></span>
+- <span data-ttu-id="f0a42-131">Bug 修复</span><span class="sxs-lookup"><span data-stu-id="f0a42-131">Bug fixes</span></span>
 
-## <a name="1011526-20120102115260"></a><span data-ttu-id="74198-132">101.15.26 (20.120102.11526.0) </span><span class="sxs-lookup"><span data-stu-id="74198-132">101.15.26 (20.120102.11526.0)</span></span>
+## <a name="1011526-20120102115260"></a><span data-ttu-id="f0a42-132">101.15.26 (20.120102.11526.0) </span><span class="sxs-lookup"><span data-stu-id="f0a42-132">101.15.26 (20.120102.11526.0)</span></span>
 
-- <span data-ttu-id="74198-133">改进了在 macOS 11 Big Sur 上运行的代理的可靠性</span><span class="sxs-lookup"><span data-stu-id="74198-133">Improved the reliability of the agent when running on macOS 11 Big Sur</span></span>
-- <span data-ttu-id="74198-134">添加了一个新的命令行开关 () 自定义扫描过程中忽略 `--ignore-exclusions` AV 排除 `mdatp scan custom` () </span><span class="sxs-lookup"><span data-stu-id="74198-134">Added a new command-line switch (`--ignore-exclusions`) to ignore AV exclusions during custom scans (`mdatp scan custom`)</span></span>
-- <span data-ttu-id="74198-135">Bug 修复&性能改进</span><span class="sxs-lookup"><span data-stu-id="74198-135">Performance improvements & bug fixes</span></span>
+- <span data-ttu-id="f0a42-133">改进了在 macOS 11 Big Sur 上运行的代理的可靠性</span><span class="sxs-lookup"><span data-stu-id="f0a42-133">Improved the reliability of the agent when running on macOS 11 Big Sur</span></span>
+- <span data-ttu-id="f0a42-134">添加了一个新的命令行开关 () 自定义扫描过程中忽略 `--ignore-exclusions` AV 排除 `mdatp scan custom` () </span><span class="sxs-lookup"><span data-stu-id="f0a42-134">Added a new command-line switch (`--ignore-exclusions`) to ignore AV exclusions during custom scans (`mdatp scan custom`)</span></span>
+- <span data-ttu-id="f0a42-135">Bug 修复&性能改进</span><span class="sxs-lookup"><span data-stu-id="f0a42-135">Performance improvements & bug fixes</span></span>
 
-## <a name="1011375-20120101113750"></a><span data-ttu-id="74198-136">101.13.75 (20.120101.11375.0) </span><span class="sxs-lookup"><span data-stu-id="74198-136">101.13.75 (20.120101.11375.0)</span></span>
+## <a name="1011375-20120101113750"></a><span data-ttu-id="f0a42-136">101.13.75 (20.120101.11375.0) </span><span class="sxs-lookup"><span data-stu-id="f0a42-136">101.13.75 (20.120101.11375.0)</span></span>
 
-- <span data-ttu-id="74198-137">删除了 Microsoft Defender for Endpoint 触发 macOS 11 (大 Sur) 清单到内核内核错误时的条件</span><span class="sxs-lookup"><span data-stu-id="74198-137">Removed conditions when Microsoft Defender for Endpoint was triggering a macOS 11 (Big Sur) bug that manifests into a kernel panic</span></span>
-- <span data-ttu-id="74198-138">修复了在 Mac 11 和 Big Sur (运行时 Endpoint Security 系统扩展) </span><span class="sxs-lookup"><span data-stu-id="74198-138">Fixed a memory leak in the Endpoint Security system extension when running on mac 11 (Big Sur)</span></span>
-- <span data-ttu-id="74198-139">Bug 修复</span><span class="sxs-lookup"><span data-stu-id="74198-139">Bug fixes</span></span>
+- <span data-ttu-id="f0a42-137">删除了 Microsoft Defender for Endpoint 触发 macOS 11 (大 Sur) 清单到内核内核错误时的条件</span><span class="sxs-lookup"><span data-stu-id="f0a42-137">Removed conditions when Microsoft Defender for Endpoint was triggering a macOS 11 (Big Sur) bug that manifests into a kernel panic</span></span>
+- <span data-ttu-id="f0a42-138">修复了在 Mac 11 和 Big Sur (运行时 Endpoint Security 系统扩展) </span><span class="sxs-lookup"><span data-stu-id="f0a42-138">Fixed a memory leak in the Endpoint Security system extension when running on mac 11 (Big Sur)</span></span>
+- <span data-ttu-id="f0a42-139">Bug 修复</span><span class="sxs-lookup"><span data-stu-id="f0a42-139">Bug fixes</span></span>
 
-## <a name="1011072"></a><span data-ttu-id="74198-140">101.10.72</span><span class="sxs-lookup"><span data-stu-id="74198-140">101.10.72</span></span>
+## <a name="1011072"></a><span data-ttu-id="f0a42-140">101.10.72</span><span class="sxs-lookup"><span data-stu-id="f0a42-140">101.10.72</span></span>
 
-- <span data-ttu-id="74198-141">Bug 修复</span><span class="sxs-lookup"><span data-stu-id="74198-141">Bug fixes</span></span>
+- <span data-ttu-id="f0a42-141">Bug 修复</span><span class="sxs-lookup"><span data-stu-id="f0a42-141">Bug fixes</span></span>
 
-## <a name="1010961"></a><span data-ttu-id="74198-142">101.09.61</span><span class="sxs-lookup"><span data-stu-id="74198-142">101.09.61</span></span>
+## <a name="1010961"></a><span data-ttu-id="f0a42-142">101.09.61</span><span class="sxs-lookup"><span data-stu-id="f0a42-142">101.09.61</span></span>
 
-- <span data-ttu-id="74198-143">添加了用于禁用 [发送反馈选项的新托管首选项](mac-preferences.md#show--hide-option-to-send-feedback)</span><span class="sxs-lookup"><span data-stu-id="74198-143">Added a new managed preference for [disabling the option to send feedback](mac-preferences.md#show--hide-option-to-send-feedback)</span></span>
-- <span data-ttu-id="74198-144">"状态"菜单图标现在在管理产品设置时显示正常状态。</span><span class="sxs-lookup"><span data-stu-id="74198-144">Status menu icon now shows a healthy state when the product settings are managed.</span></span> <span data-ttu-id="74198-145">以前，状态菜单图标显示警告或错误状态，即使产品设置由管理员管理</span><span class="sxs-lookup"><span data-stu-id="74198-145">Previously, the status menu icon was displaying a warning or error state, even though the product settings were managed by the administrator</span></span>
-- <span data-ttu-id="74198-146">Bug 修复&性能改进</span><span class="sxs-lookup"><span data-stu-id="74198-146">Performance improvements & bug fixes</span></span>
+- <span data-ttu-id="f0a42-143">添加了用于禁用 [发送反馈选项的新托管首选项](mac-preferences.md#show--hide-option-to-send-feedback)</span><span class="sxs-lookup"><span data-stu-id="f0a42-143">Added a new managed preference for [disabling the option to send feedback](mac-preferences.md#show--hide-option-to-send-feedback)</span></span>
+- <span data-ttu-id="f0a42-144">"状态"菜单图标现在在管理产品设置时显示正常状态。</span><span class="sxs-lookup"><span data-stu-id="f0a42-144">Status menu icon now shows a healthy state when the product settings are managed.</span></span> <span data-ttu-id="f0a42-145">以前，状态菜单图标显示警告或错误状态，即使产品设置由管理员管理</span><span class="sxs-lookup"><span data-stu-id="f0a42-145">Previously, the status menu icon was displaying a warning or error state, even though the product settings were managed by the administrator</span></span>
+- <span data-ttu-id="f0a42-146">Bug 修复&性能改进</span><span class="sxs-lookup"><span data-stu-id="f0a42-146">Performance improvements & bug fixes</span></span>
 
-## <a name="1010950"></a><span data-ttu-id="74198-147">101.09.50</span><span class="sxs-lookup"><span data-stu-id="74198-147">101.09.50</span></span>
+## <a name="1010950"></a><span data-ttu-id="f0a42-147">101.09.50</span><span class="sxs-lookup"><span data-stu-id="f0a42-147">101.09.50</span></span>
 
-- <span data-ttu-id="74198-148">该产品版本已在 macOS Big Sur 11 beta 9 上经过验证</span><span class="sxs-lookup"><span data-stu-id="74198-148">This product version has been validated on macOS Big Sur 11 beta 9</span></span>
+- <span data-ttu-id="f0a42-148">该产品版本已在 macOS Big Sur 11 beta 9 上经过验证</span><span class="sxs-lookup"><span data-stu-id="f0a42-148">This product version has been validated on macOS Big Sur 11 beta 9</span></span>
 
-- <span data-ttu-id="74198-149">命令行工具的新 `mdatp` 语法现在是默认语法。</span><span class="sxs-lookup"><span data-stu-id="74198-149">The new syntax for the `mdatp` command-line tool is now the default one.</span></span> <span data-ttu-id="74198-150">有关新语法详细信息，请参阅[macOS](mac-resources.md#configuring-from-the-command-line)上的 Microsoft Defender for Endpoint 的资源</span><span class="sxs-lookup"><span data-stu-id="74198-150">For more information on the new syntax, see [Resources for Microsoft Defender for Endpoint on macOS](mac-resources.md#configuring-from-the-command-line)</span></span>
-
-  > [!NOTE]
-  > <span data-ttu-id="74198-151">**2021** 年 1 月 1 日将从产品中删除旧的命令行工具语法。</span><span class="sxs-lookup"><span data-stu-id="74198-151">The old command-line tool syntax will be removed from the product on **January 1st, 2021**.</span></span>
-
-- <span data-ttu-id="74198-152">使用新的参数扩展 () ，该参数允许将诊断日志 `mdatp diagnostic create` `--path [directory]` 保存到其他目录</span><span class="sxs-lookup"><span data-stu-id="74198-152">Extended `mdatp diagnostic create` with a new parameter (`--path [directory]`) that allows the diagnostic logs to be saved to a different directory</span></span>
-- <span data-ttu-id="74198-153">Bug 修复&性能改进</span><span class="sxs-lookup"><span data-stu-id="74198-153">Performance improvements & bug fixes</span></span>
-
-## <a name="1010949"></a><span data-ttu-id="74198-154">101.09.49</span><span class="sxs-lookup"><span data-stu-id="74198-154">101.09.49</span></span>
-
-- <span data-ttu-id="74198-155">用户界面改进，用于区分由 IT 管理员管理的排除项与本地用户定义的排除项</span><span class="sxs-lookup"><span data-stu-id="74198-155">User interface improvements to differentiate exclusions that are managed by the IT administrator versus exclusions defined by the local user</span></span>
-- <span data-ttu-id="74198-156">按需扫描期间改进的 CPU 使用率</span><span class="sxs-lookup"><span data-stu-id="74198-156">Improved CPU utilization during on-demand scans</span></span>
-- <span data-ttu-id="74198-157">Bug 修复&性能改进</span><span class="sxs-lookup"><span data-stu-id="74198-157">Performance improvements & bug fixes</span></span>
-
-## <a name="1010723"></a><span data-ttu-id="74198-158">101.07.23</span><span class="sxs-lookup"><span data-stu-id="74198-158">101.07.23</span></span>
-
-- <span data-ttu-id="74198-159">向 输出添加了新字段，用于检查被动模式的状态和 `mdatp --health` EDR 组 ID</span><span class="sxs-lookup"><span data-stu-id="74198-159">Added new fields to the output of `mdatp --health` for checking the status of passive mode and the EDR group ID</span></span>
+- <span data-ttu-id="f0a42-149">命令行工具的新 `mdatp` 语法现在是默认语法。</span><span class="sxs-lookup"><span data-stu-id="f0a42-149">The new syntax for the `mdatp` command-line tool is now the default one.</span></span> <span data-ttu-id="f0a42-150">有关新语法详细信息，请参阅[macOS](mac-resources.md#configuring-from-the-command-line)上的 Microsoft Defender for Endpoint 的资源</span><span class="sxs-lookup"><span data-stu-id="f0a42-150">For more information on the new syntax, see [Resources for Microsoft Defender for Endpoint on macOS](mac-resources.md#configuring-from-the-command-line)</span></span>
 
   > [!NOTE]
-  > <span data-ttu-id="74198-160">`mdatp --health` 将在将来的 `mdatp health` 产品更新中替换为 。</span><span class="sxs-lookup"><span data-stu-id="74198-160">`mdatp --health` will be replaced with `mdatp health` in a future product update.</span></span>
+  > <span data-ttu-id="f0a42-151">**2021** 年 1 月 1 日将从产品中删除旧的命令行工具语法。</span><span class="sxs-lookup"><span data-stu-id="f0a42-151">The old command-line tool syntax will be removed from the product on **January 1st, 2021**.</span></span>
 
-- <span data-ttu-id="74198-161">修复了在用户界面中自动提交示例未标记为托管的错误</span><span class="sxs-lookup"><span data-stu-id="74198-161">Fixed a bug where automatic sample submission was not marked as managed in the user interface</span></span>
-- <span data-ttu-id="74198-162">添加了用于控制防病毒扫描历史记录中项目的保留的新设置。</span><span class="sxs-lookup"><span data-stu-id="74198-162">Added new settings for controlling the retention of items in the antivirus scan history.</span></span> <span data-ttu-id="74198-163">现在可以指定 [在扫描历史记录](mac-preferences.md#antivirus-scan-history-retention-in-days) 中保留项目的天数，并指定扫描历史记录中 [的最大项目数](mac-preferences.md#maximum-number-of-items-in-the-antivirus-scan-history)</span><span class="sxs-lookup"><span data-stu-id="74198-163">You can now [specify the number of days to retain items in the scan history](mac-preferences.md#antivirus-scan-history-retention-in-days) and [specify the maximum number of items in the scan history](mac-preferences.md#maximum-number-of-items-in-the-antivirus-scan-history)</span></span>
-- <span data-ttu-id="74198-164">Bug 修复</span><span class="sxs-lookup"><span data-stu-id="74198-164">Bug fixes</span></span>
+- <span data-ttu-id="f0a42-152">使用新的参数扩展 () ，该参数允许将诊断日志 `mdatp diagnostic create` `--path [directory]` 保存到其他目录</span><span class="sxs-lookup"><span data-stu-id="f0a42-152">Extended `mdatp diagnostic create` with a new parameter (`--path [directory]`) that allows the diagnostic logs to be saved to a different directory</span></span>
+- <span data-ttu-id="f0a42-153">Bug 修复&性能改进</span><span class="sxs-lookup"><span data-stu-id="f0a42-153">Performance improvements & bug fixes</span></span>
 
-## <a name="1010663"></a><span data-ttu-id="74198-165">101.06.63</span><span class="sxs-lookup"><span data-stu-id="74198-165">101.06.63</span></span>
+## <a name="1010949"></a><span data-ttu-id="f0a42-154">101.09.49</span><span class="sxs-lookup"><span data-stu-id="f0a42-154">101.09.49</span></span>
 
-- <span data-ttu-id="74198-166">解决了版本 中引入的性能回归 `101.05.17` 问题。</span><span class="sxs-lookup"><span data-stu-id="74198-166">Addressed a performance regression introduced in version `101.05.17`.</span></span> <span data-ttu-id="74198-167">该回归与修复一起引入，以消除一些客户在访问 SMB 共享时观察到的内核错误。</span><span class="sxs-lookup"><span data-stu-id="74198-167">The regression was introduced with the fix to eliminate the kernel panics some customers have observed when accessing SMB shares.</span></span> <span data-ttu-id="74198-168">我们已还原此代码更改，并正在调查消除内核内核错误的替代方法。</span><span class="sxs-lookup"><span data-stu-id="74198-168">We have reverted this code change and are investigating alternative ways to eliminate the kernel panics.</span></span>
+- <span data-ttu-id="f0a42-155">用户界面改进，用于区分由 IT 管理员管理的排除项与本地用户定义的排除项</span><span class="sxs-lookup"><span data-stu-id="f0a42-155">User interface improvements to differentiate exclusions that are managed by the IT administrator versus exclusions defined by the local user</span></span>
+- <span data-ttu-id="f0a42-156">按需扫描期间改进的 CPU 使用率</span><span class="sxs-lookup"><span data-stu-id="f0a42-156">Improved CPU utilization during on-demand scans</span></span>
+- <span data-ttu-id="f0a42-157">Bug 修复&性能改进</span><span class="sxs-lookup"><span data-stu-id="f0a42-157">Performance improvements & bug fixes</span></span>
 
-## <a name="1010517"></a><span data-ttu-id="74198-169">101.05.17</span><span class="sxs-lookup"><span data-stu-id="74198-169">101.05.17</span></span>
+## <a name="1010723"></a><span data-ttu-id="f0a42-158">101.07.23</span><span class="sxs-lookup"><span data-stu-id="f0a42-158">101.07.23</span></span>
+
+- <span data-ttu-id="f0a42-159">向 输出添加了新字段，用于检查被动模式的状态和 `mdatp --health` EDR 组 ID</span><span class="sxs-lookup"><span data-stu-id="f0a42-159">Added new fields to the output of `mdatp --health` for checking the status of passive mode and the EDR group ID</span></span>
+
+  > [!NOTE]
+  > <span data-ttu-id="f0a42-160">`mdatp --health` 将在将来的 `mdatp health` 产品更新中替换为 。</span><span class="sxs-lookup"><span data-stu-id="f0a42-160">`mdatp --health` will be replaced with `mdatp health` in a future product update.</span></span>
+
+- <span data-ttu-id="f0a42-161">修复了在用户界面中自动提交示例未标记为托管的错误</span><span class="sxs-lookup"><span data-stu-id="f0a42-161">Fixed a bug where automatic sample submission was not marked as managed in the user interface</span></span>
+- <span data-ttu-id="f0a42-162">添加了用于控制防病毒扫描历史记录中项目的保留的新设置。</span><span class="sxs-lookup"><span data-stu-id="f0a42-162">Added new settings for controlling the retention of items in the antivirus scan history.</span></span> <span data-ttu-id="f0a42-163">现在可以指定 [在扫描历史记录](mac-preferences.md#antivirus-scan-history-retention-in-days) 中保留项目的天数，并指定扫描历史记录中 [的最大项目数](mac-preferences.md#maximum-number-of-items-in-the-antivirus-scan-history)</span><span class="sxs-lookup"><span data-stu-id="f0a42-163">You can now [specify the number of days to retain items in the scan history](mac-preferences.md#antivirus-scan-history-retention-in-days) and [specify the maximum number of items in the scan history](mac-preferences.md#maximum-number-of-items-in-the-antivirus-scan-history)</span></span>
+- <span data-ttu-id="f0a42-164">Bug 修复</span><span class="sxs-lookup"><span data-stu-id="f0a42-164">Bug fixes</span></span>
+
+## <a name="1010663"></a><span data-ttu-id="f0a42-165">101.06.63</span><span class="sxs-lookup"><span data-stu-id="f0a42-165">101.06.63</span></span>
+
+- <span data-ttu-id="f0a42-166">解决了版本 中引入的性能回归 `101.05.17` 问题。</span><span class="sxs-lookup"><span data-stu-id="f0a42-166">Addressed a performance regression introduced in version `101.05.17`.</span></span> <span data-ttu-id="f0a42-167">该回归与修复一起引入，以消除一些客户在访问 SMB 共享时观察到的内核错误。</span><span class="sxs-lookup"><span data-stu-id="f0a42-167">The regression was introduced with the fix to eliminate the kernel panics some customers have observed when accessing SMB shares.</span></span> <span data-ttu-id="f0a42-168">我们已还原此代码更改，并正在调查消除内核内核错误的替代方法。</span><span class="sxs-lookup"><span data-stu-id="f0a42-168">We have reverted this code change and are investigating alternative ways to eliminate the kernel panics.</span></span>
+
+## <a name="1010517"></a><span data-ttu-id="f0a42-169">101.05.17</span><span class="sxs-lookup"><span data-stu-id="f0a42-169">101.05.17</span></span>
 
 > [!IMPORTANT]
-> <span data-ttu-id="74198-170">我们正在为命令行工具开发新的增强 `mdatp` 语法。</span><span class="sxs-lookup"><span data-stu-id="74198-170">We are working on a new and enhanced syntax for the `mdatp` command-line tool.</span></span> <span data-ttu-id="74198-171">新语法当前是预览体验成员 -快和预览体验成员 - 慢更新频道中的默认语法。</span><span class="sxs-lookup"><span data-stu-id="74198-171">The new syntax is currently the default in the Insider Fast and Insider Slow update channels.</span></span> <span data-ttu-id="74198-172">我们鼓励你使用这种新语法来自我激励。</span><span class="sxs-lookup"><span data-stu-id="74198-172">We encourage you to famliliarize yourself with this new syntax.</span></span>
+> <span data-ttu-id="f0a42-170">我们正在为命令行工具开发新的增强 `mdatp` 语法。</span><span class="sxs-lookup"><span data-stu-id="f0a42-170">We are working on a new and enhanced syntax for the `mdatp` command-line tool.</span></span> <span data-ttu-id="f0a42-171">新语法当前是预览体验成员 -快和预览体验成员 - 慢更新频道中的默认语法。</span><span class="sxs-lookup"><span data-stu-id="f0a42-171">The new syntax is currently the default in the Insider Fast and Insider Slow update channels.</span></span> <span data-ttu-id="f0a42-172">我们鼓励你使用这种新语法来自我激励。</span><span class="sxs-lookup"><span data-stu-id="f0a42-172">We encourage you to famliliarize yourself with this new syntax.</span></span>
 > 
-> <span data-ttu-id="74198-173">我们将继续支持旧语法与新语法并行，并针对即将推出的几个月中的旧语法弃用计划提供更多通信。</span><span class="sxs-lookup"><span data-stu-id="74198-173">We will continue supporting the old syntax in parallel with the new syntax and will provide more communication around the deprecation plan for the old syntax in the upcoming months.</span></span>
+> <span data-ttu-id="f0a42-173">我们将继续支持旧语法与新语法并行，并针对即将推出的几个月中的旧语法弃用计划提供更多通信。</span><span class="sxs-lookup"><span data-stu-id="f0a42-173">We will continue supporting the old syntax in parallel with the new syntax and will provide more communication around the deprecation plan for the old syntax in the upcoming months.</span></span>
 
-- <span data-ttu-id="74198-174">解决了访问 SMB 文件共享时有时发生的内核内核问题</span><span class="sxs-lookup"><span data-stu-id="74198-174">Addressed a kernel panic that occurred sometimes when accessing SMB file shares</span></span>
-- <span data-ttu-id="74198-175">Bug 修复&性能改进</span><span class="sxs-lookup"><span data-stu-id="74198-175">Performance improvements & bug fixes</span></span>
+- <span data-ttu-id="f0a42-174">解决了访问 SMB 文件共享时有时发生的内核内核问题</span><span class="sxs-lookup"><span data-stu-id="f0a42-174">Addressed a kernel panic that occurred sometimes when accessing SMB file shares</span></span>
+- <span data-ttu-id="f0a42-175">Bug 修复&性能改进</span><span class="sxs-lookup"><span data-stu-id="f0a42-175">Performance improvements & bug fixes</span></span>
 
-## <a name="1010516"></a><span data-ttu-id="74198-176">101.05.16</span><span class="sxs-lookup"><span data-stu-id="74198-176">101.05.16</span></span>
+## <a name="1010516"></a><span data-ttu-id="f0a42-176">101.05.16</span><span class="sxs-lookup"><span data-stu-id="f0a42-176">101.05.16</span></span>
 
-- <span data-ttu-id="74198-177">对快速扫描逻辑的改进，可显著减少扫描的文件数</span><span class="sxs-lookup"><span data-stu-id="74198-177">Improvements to quick scan logic to significantly reduce the number of scanned files</span></span>
-- <span data-ttu-id="74198-178">添加了 [对命令行](mac-resources.md#how-to-enable-autocompletion) 工具的自动完成支持</span><span class="sxs-lookup"><span data-stu-id="74198-178">Added [autocompletion support](mac-resources.md#how-to-enable-autocompletion) for the command-line tool</span></span>
-- <span data-ttu-id="74198-179">Bug 修复</span><span class="sxs-lookup"><span data-stu-id="74198-179">Bug fixes</span></span>
+- <span data-ttu-id="f0a42-177">对快速扫描逻辑的改进，可显著减少扫描的文件数</span><span class="sxs-lookup"><span data-stu-id="f0a42-177">Improvements to quick scan logic to significantly reduce the number of scanned files</span></span>
+- <span data-ttu-id="f0a42-178">添加了 [对命令行](mac-resources.md#how-to-enable-autocompletion) 工具的自动完成支持</span><span class="sxs-lookup"><span data-stu-id="f0a42-178">Added [autocompletion support](mac-resources.md#how-to-enable-autocompletion) for the command-line tool</span></span>
+- <span data-ttu-id="f0a42-179">Bug 修复</span><span class="sxs-lookup"><span data-stu-id="f0a42-179">Bug fixes</span></span>
 
-## <a name="1010312"></a><span data-ttu-id="74198-180">101.03.12</span><span class="sxs-lookup"><span data-stu-id="74198-180">101.03.12</span></span>
+## <a name="1010312"></a><span data-ttu-id="f0a42-180">101.03.12</span><span class="sxs-lookup"><span data-stu-id="f0a42-180">101.03.12</span></span>
 
-- <span data-ttu-id="74198-181">Bug 修复&性能改进</span><span class="sxs-lookup"><span data-stu-id="74198-181">Performance improvements & bug fixes</span></span>
+- <span data-ttu-id="f0a42-181">Bug 修复&性能改进</span><span class="sxs-lookup"><span data-stu-id="f0a42-181">Performance improvements & bug fixes</span></span>
 
-## <a name="1010154"></a><span data-ttu-id="74198-182">101.01.54</span><span class="sxs-lookup"><span data-stu-id="74198-182">101.01.54</span></span>
+## <a name="1010154"></a><span data-ttu-id="f0a42-182">101.01.54</span><span class="sxs-lookup"><span data-stu-id="f0a42-182">101.01.54</span></span>
 
-- <span data-ttu-id="74198-183">有关与时间机兼容性的改进</span><span class="sxs-lookup"><span data-stu-id="74198-183">Improvements around compatibility with Time Machine</span></span>
-- <span data-ttu-id="74198-184">辅助功能改进</span><span class="sxs-lookup"><span data-stu-id="74198-184">Accessibility improvements</span></span>
-- <span data-ttu-id="74198-185">Bug 修复&性能改进</span><span class="sxs-lookup"><span data-stu-id="74198-185">Performance improvements & bug fixes</span></span>
+- <span data-ttu-id="f0a42-183">有关与时间机兼容性的改进</span><span class="sxs-lookup"><span data-stu-id="f0a42-183">Improvements around compatibility with Time Machine</span></span>
+- <span data-ttu-id="f0a42-184">辅助功能改进</span><span class="sxs-lookup"><span data-stu-id="f0a42-184">Accessibility improvements</span></span>
+- <span data-ttu-id="f0a42-185">Bug 修复&性能改进</span><span class="sxs-lookup"><span data-stu-id="f0a42-185">Performance improvements & bug fixes</span></span>
 
-## <a name="1010031"></a><span data-ttu-id="74198-186">101.00.31</span><span class="sxs-lookup"><span data-stu-id="74198-186">101.00.31</span></span>
+## <a name="1010031"></a><span data-ttu-id="f0a42-186">101.00.31</span><span class="sxs-lookup"><span data-stu-id="f0a42-186">101.00.31</span></span>
 
-- <span data-ttu-id="74198-187">为 [Intune 用户改进了产品载入体验](https://docs.microsoft.com/mem/intune/apps/apps-advanced-threat-protection-macos)</span><span class="sxs-lookup"><span data-stu-id="74198-187">Improved [product onboarding experience for Intune users](https://docs.microsoft.com/mem/intune/apps/apps-advanced-threat-protection-macos)</span></span>
-- <span data-ttu-id="74198-188">防病毒 [排除项现在支持通配符](mac-exclusions.md#supported-exclusion-types)</span><span class="sxs-lookup"><span data-stu-id="74198-188">Antivirus [exclusions now support wildcards](mac-exclusions.md#supported-exclusion-types)</span></span>
-- <span data-ttu-id="74198-189">添加了从 macOS 上下文菜单触发防病毒扫描的能力。</span><span class="sxs-lookup"><span data-stu-id="74198-189">Added the ability to trigger antivirus scans from the macOS contextual menu.</span></span> <span data-ttu-id="74198-190">现在，你可以右键单击查找器中的文件或文件夹，然后选择使用 **Microsoft Defender for Endpoint 扫描**</span><span class="sxs-lookup"><span data-stu-id="74198-190">You can now right-click a file or a folder in Finder and select **Scan with Microsoft Defender for Endpoint**</span></span>
-- <span data-ttu-id="74198-191">安装程序现在明确不允许就地产品降级。</span><span class="sxs-lookup"><span data-stu-id="74198-191">In-place product downgrades are now explicitly disallowed by the installer.</span></span> <span data-ttu-id="74198-192">如果需要降级，请先卸载现有版本并重新配置设备</span><span class="sxs-lookup"><span data-stu-id="74198-192">If you need to downgrade, first uninstall the existing version and reconfigure your device</span></span>
-- <span data-ttu-id="74198-193">Bug 修复&性能改进</span><span class="sxs-lookup"><span data-stu-id="74198-193">Other performance improvements & bug fixes</span></span>
+- <span data-ttu-id="f0a42-187">为 [Intune 用户改进了产品载入体验](https://docs.microsoft.com/mem/intune/apps/apps-advanced-threat-protection-macos)</span><span class="sxs-lookup"><span data-stu-id="f0a42-187">Improved [product onboarding experience for Intune users](https://docs.microsoft.com/mem/intune/apps/apps-advanced-threat-protection-macos)</span></span>
+- <span data-ttu-id="f0a42-188">防病毒 [排除项现在支持通配符](mac-exclusions.md#supported-exclusion-types)</span><span class="sxs-lookup"><span data-stu-id="f0a42-188">Antivirus [exclusions now support wildcards](mac-exclusions.md#supported-exclusion-types)</span></span>
+- <span data-ttu-id="f0a42-189">添加了从 macOS 上下文菜单触发防病毒扫描的能力。</span><span class="sxs-lookup"><span data-stu-id="f0a42-189">Added the ability to trigger antivirus scans from the macOS contextual menu.</span></span> <span data-ttu-id="f0a42-190">现在，你可以右键单击查找器中的文件或文件夹，然后选择使用 **Microsoft Defender for Endpoint 扫描**</span><span class="sxs-lookup"><span data-stu-id="f0a42-190">You can now right-click a file or a folder in Finder and select **Scan with Microsoft Defender for Endpoint**</span></span>
+- <span data-ttu-id="f0a42-191">安装程序现在明确不允许就地产品降级。</span><span class="sxs-lookup"><span data-stu-id="f0a42-191">In-place product downgrades are now explicitly disallowed by the installer.</span></span> <span data-ttu-id="f0a42-192">如果需要降级，请先卸载现有版本并重新配置设备</span><span class="sxs-lookup"><span data-stu-id="f0a42-192">If you need to downgrade, first uninstall the existing version and reconfigure your device</span></span>
+- <span data-ttu-id="f0a42-193">Bug 修复&性能改进</span><span class="sxs-lookup"><span data-stu-id="f0a42-193">Other performance improvements & bug fixes</span></span>
 
-## <a name="1009027"></a><span data-ttu-id="74198-194">100.90.27</span><span class="sxs-lookup"><span data-stu-id="74198-194">100.90.27</span></span>
+## <a name="1009027"></a><span data-ttu-id="f0a42-194">100.90.27</span><span class="sxs-lookup"><span data-stu-id="f0a42-194">100.90.27</span></span>
 
-- <span data-ttu-id="74198-195">现在可以在 macOS [上](mac-updates.md#set-the-channel-name) 为 Microsoft Defender for Endpoint 设置与系统范围的更新通道不同的更新通道</span><span class="sxs-lookup"><span data-stu-id="74198-195">You can now [set an update channel](mac-updates.md#set-the-channel-name) for Microsoft Defender for Endpoint on macOS that is different from the system-wide update channel</span></span>
-- <span data-ttu-id="74198-196">新产品图标</span><span class="sxs-lookup"><span data-stu-id="74198-196">New product icon</span></span>
-- <span data-ttu-id="74198-197">其他用户体验改进</span><span class="sxs-lookup"><span data-stu-id="74198-197">Other user experience improvements</span></span>
-- <span data-ttu-id="74198-198">Bug 修复</span><span class="sxs-lookup"><span data-stu-id="74198-198">Bug fixes</span></span>
+- <span data-ttu-id="f0a42-195">现在可以在 macOS [上](mac-updates.md#set-the-channel-name) 为 Microsoft Defender for Endpoint 设置与系统范围的更新通道不同的更新通道</span><span class="sxs-lookup"><span data-stu-id="f0a42-195">You can now [set an update channel](mac-updates.md#set-the-channel-name) for Microsoft Defender for Endpoint on macOS that is different from the system-wide update channel</span></span>
+- <span data-ttu-id="f0a42-196">新产品图标</span><span class="sxs-lookup"><span data-stu-id="f0a42-196">New product icon</span></span>
+- <span data-ttu-id="f0a42-197">其他用户体验改进</span><span class="sxs-lookup"><span data-stu-id="f0a42-197">Other user experience improvements</span></span>
+- <span data-ttu-id="f0a42-198">Bug 修复</span><span class="sxs-lookup"><span data-stu-id="f0a42-198">Bug fixes</span></span>
 
-## <a name="1008692"></a><span data-ttu-id="74198-199">100.86.92</span><span class="sxs-lookup"><span data-stu-id="74198-199">100.86.92</span></span>
+## <a name="1008692"></a><span data-ttu-id="f0a42-199">100.86.92</span><span class="sxs-lookup"><span data-stu-id="f0a42-199">100.86.92</span></span>
 
-- <span data-ttu-id="74198-200">有关与时间机兼容性的改进</span><span class="sxs-lookup"><span data-stu-id="74198-200">Improvements around compatibility with Time Machine</span></span>
-- <span data-ttu-id="74198-201">解决了产品有时在卸载期间未清理所有 `/Library/Application Support/Microsoft/Defender` 文件的问题</span><span class="sxs-lookup"><span data-stu-id="74198-201">Addressed an issue where the product was sometimes not cleaning all files under `/Library/Application Support/Microsoft/Defender` during uninstallation</span></span>
-- <span data-ttu-id="74198-202">通过 Microsoft AutoUpdate 更新 Microsoft 产品时降低了产品的 CPU 使用率</span><span class="sxs-lookup"><span data-stu-id="74198-202">Reduced the CPU utilization of the product when Microsoft products are updated through Microsoft AutoUpdate</span></span>
-- <span data-ttu-id="74198-203">Bug 修复&性能改进</span><span class="sxs-lookup"><span data-stu-id="74198-203">Other performance improvements & bug fixes</span></span>
+- <span data-ttu-id="f0a42-200">有关与时间机兼容性的改进</span><span class="sxs-lookup"><span data-stu-id="f0a42-200">Improvements around compatibility with Time Machine</span></span>
+- <span data-ttu-id="f0a42-201">解决了产品有时在卸载期间未清理所有 `/Library/Application Support/Microsoft/Defender` 文件的问题</span><span class="sxs-lookup"><span data-stu-id="f0a42-201">Addressed an issue where the product was sometimes not cleaning all files under `/Library/Application Support/Microsoft/Defender` during uninstallation</span></span>
+- <span data-ttu-id="f0a42-202">通过 Microsoft AutoUpdate 更新 Microsoft 产品时降低了产品的 CPU 使用率</span><span class="sxs-lookup"><span data-stu-id="f0a42-202">Reduced the CPU utilization of the product when Microsoft products are updated through Microsoft AutoUpdate</span></span>
+- <span data-ttu-id="f0a42-203">Bug 修复&性能改进</span><span class="sxs-lookup"><span data-stu-id="f0a42-203">Other performance improvements & bug fixes</span></span>
 
-## <a name="1008691"></a><span data-ttu-id="74198-204">100.86.91</span><span class="sxs-lookup"><span data-stu-id="74198-204">100.86.91</span></span>
+## <a name="1008691"></a><span data-ttu-id="f0a42-204">100.86.91</span><span class="sxs-lookup"><span data-stu-id="f0a42-204">100.86.91</span></span>
 
 > [!CAUTION]
-> <span data-ttu-id="74198-205">为了确保对 macOS 设备进行最完整的保护，并符合 Apple 停止将 macOS 本机安全更新交付到低于 [current – 2] 的操作系统版本，macOS Sierra [10.12] 上将不再支持适用于 Mac 的 MDATP 部署和更新。</span><span class="sxs-lookup"><span data-stu-id="74198-205">To ensure the most complete protection for your macOS devices and in alignment with Apple stopping delivery of macOS native security updates to OS versions older than [current – 2], MDATP for Mac deployment and updates will no longer be supported on macOS Sierra [10.12].</span></span> <span data-ttu-id="74198-206">适用于 Mac 的 MDATP 更新和增强功能将传递到运行版本 Catalina [10.15]、Mojave [10.14] 和 High Sierra [10.13] 的设备。</span><span class="sxs-lookup"><span data-stu-id="74198-206">MDATP for Mac updates and enhancements will be delivered to devices running versions Catalina [10.15], Mojave [10.14], and High Sierra [10.13].</span></span> 
+> <span data-ttu-id="f0a42-205">为了确保对 macOS 设备进行最完整的保护，并符合 Apple 停止将 macOS 本机安全更新交付到低于 [current – 2] 的操作系统版本，macOS Sierra [10.12] 上将不再支持适用于 Mac 的 MDATP 部署和更新。</span><span class="sxs-lookup"><span data-stu-id="f0a42-205">To ensure the most complete protection for your macOS devices and in alignment with Apple stopping delivery of macOS native security updates to OS versions older than [current – 2], MDATP for Mac deployment and updates will no longer be supported on macOS Sierra [10.12].</span></span> <span data-ttu-id="f0a42-206">适用于 Mac 的 MDATP 更新和增强功能将传递到运行版本 Catalina [10.15]、Mojave [10.14] 和 High Sierra [10.13] 的设备。</span><span class="sxs-lookup"><span data-stu-id="f0a42-206">MDATP for Mac updates and enhancements will be delivered to devices running versions Catalina [10.15], Mojave [10.14], and High Sierra [10.13].</span></span> 
 >
-> <span data-ttu-id="74198-207">如果你已经将适用于 Mac 的 MDATP 部署到 Sierra [10.12] 设备，请升级到最新的 macOS 版本以消除丢失保护的风险。</span><span class="sxs-lookup"><span data-stu-id="74198-207">If you already have MDATP for Mac deployed to your Sierra [10.12] devices, please upgrade to the latest macOS version to eliminate risks of losing protection.</span></span>
+> <span data-ttu-id="f0a42-207">如果你已经将适用于 Mac 的 MDATP 部署到 Sierra [10.12] 设备，请升级到最新的 macOS 版本以消除丢失保护的风险。</span><span class="sxs-lookup"><span data-stu-id="f0a42-207">If you already have MDATP for Mac deployed to your Sierra [10.12] devices, please upgrade to the latest macOS version to eliminate risks of losing protection.</span></span>
 
-- <span data-ttu-id="74198-208">Bug 修复&性能改进</span><span class="sxs-lookup"><span data-stu-id="74198-208">Performance improvements & bug fixes</span></span>
+- <span data-ttu-id="f0a42-208">Bug 修复&性能改进</span><span class="sxs-lookup"><span data-stu-id="f0a42-208">Performance improvements & bug fixes</span></span>
 
-## <a name="1008373"></a><span data-ttu-id="74198-209">100.83.73</span><span class="sxs-lookup"><span data-stu-id="74198-209">100.83.73</span></span>
+## <a name="1008373"></a><span data-ttu-id="f0a42-209">100.83.73</span><span class="sxs-lookup"><span data-stu-id="f0a42-209">100.83.73</span></span>
 
-- <span data-ttu-id="74198-210">为 IT 管理员添加了更多有关排除[管理](mac-preferences.md#exclusion-merge-policy)、威胁类型[](mac-preferences.md#threat-type-settings-merge-policy)设置管理和禁止[威胁操作的控制](mac-preferences.md#disallowed-threat-actions)</span><span class="sxs-lookup"><span data-stu-id="74198-210">Added more controls for IT administrators around [management of exclusions](mac-preferences.md#exclusion-merge-policy), [management of threat type settings](mac-preferences.md#threat-type-settings-merge-policy), and [disallowed threat actions](mac-preferences.md#disallowed-threat-actions)</span></span>
-- <span data-ttu-id="74198-211">当设备上未启用"完全磁盘访问"时，现在状态菜单中将显示一条警告</span><span class="sxs-lookup"><span data-stu-id="74198-211">When Full Disk Access is not enabled on the device, a warning is now displayed in the status menu</span></span>
-- <span data-ttu-id="74198-212">Bug 修复&性能改进</span><span class="sxs-lookup"><span data-stu-id="74198-212">Performance improvements & bug fixes</span></span>
+- <span data-ttu-id="f0a42-210">为 IT 管理员添加了更多有关排除[管理](mac-preferences.md#exclusion-merge-policy)、威胁类型[](mac-preferences.md#threat-type-settings-merge-policy)设置管理和禁止[威胁操作的控制](mac-preferences.md#disallowed-threat-actions)</span><span class="sxs-lookup"><span data-stu-id="f0a42-210">Added more controls for IT administrators around [management of exclusions](mac-preferences.md#exclusion-merge-policy), [management of threat type settings](mac-preferences.md#threat-type-settings-merge-policy), and [disallowed threat actions](mac-preferences.md#disallowed-threat-actions)</span></span>
+- <span data-ttu-id="f0a42-211">当设备上未启用"完全磁盘访问"时，现在状态菜单中将显示一条警告</span><span class="sxs-lookup"><span data-stu-id="f0a42-211">When Full Disk Access is not enabled on the device, a warning is now displayed in the status menu</span></span>
+- <span data-ttu-id="f0a42-212">Bug 修复&性能改进</span><span class="sxs-lookup"><span data-stu-id="f0a42-212">Performance improvements & bug fixes</span></span>
 
-## <a name="1008260"></a><span data-ttu-id="74198-213">100.82.60</span><span class="sxs-lookup"><span data-stu-id="74198-213">100.82.60</span></span>
+## <a name="1008260"></a><span data-ttu-id="f0a42-213">100.82.60</span><span class="sxs-lookup"><span data-stu-id="f0a42-213">100.82.60</span></span>
 
-- <span data-ttu-id="74198-214">解决了产品无法开始关注定义更新的问题。</span><span class="sxs-lookup"><span data-stu-id="74198-214">Addressed an issue where the product fails to start following a definition update.</span></span>
+- <span data-ttu-id="f0a42-214">解决了产品无法开始关注定义更新的问题。</span><span class="sxs-lookup"><span data-stu-id="f0a42-214">Addressed an issue where the product fails to start following a definition update.</span></span>
 
-## <a name="1008042"></a><span data-ttu-id="74198-215">100.80.42</span><span class="sxs-lookup"><span data-stu-id="74198-215">100.80.42</span></span>
+## <a name="1008042"></a><span data-ttu-id="f0a42-215">100.80.42</span><span class="sxs-lookup"><span data-stu-id="f0a42-215">100.80.42</span></span>
 
-- <span data-ttu-id="74198-216">Bug 修复</span><span class="sxs-lookup"><span data-stu-id="74198-216">Bug fixes</span></span>
+- <span data-ttu-id="f0a42-216">Bug 修复</span><span class="sxs-lookup"><span data-stu-id="f0a42-216">Bug fixes</span></span>
 
-## <a name="1007942"></a><span data-ttu-id="74198-217">100.79.42</span><span class="sxs-lookup"><span data-stu-id="74198-217">100.79.42</span></span>
+## <a name="1007942"></a><span data-ttu-id="f0a42-217">100.79.42</span><span class="sxs-lookup"><span data-stu-id="f0a42-217">100.79.42</span></span>
 
-- <span data-ttu-id="74198-218">修复了 Mac 上的 Microsoft Defender for Endpoint 有时干扰时间计算机的问题</span><span class="sxs-lookup"><span data-stu-id="74198-218">Fixed an issue where Microsoft Defender for Endpoint on Mac was sometimes interfering with Time Machine</span></span>
-- <span data-ttu-id="74198-219">向命令行实用工具添加了一个新开关，用于测试与后端服务的连接</span><span class="sxs-lookup"><span data-stu-id="74198-219">Added a new switch to the command-line utility for testing the connectivity with the backend service</span></span>
+- <span data-ttu-id="f0a42-218">修复了 Mac 上的 Microsoft Defender for Endpoint 有时干扰时间计算机的问题</span><span class="sxs-lookup"><span data-stu-id="f0a42-218">Fixed an issue where Microsoft Defender for Endpoint on Mac was sometimes interfering with Time Machine</span></span>
+- <span data-ttu-id="f0a42-219">向命令行实用工具添加了一个新开关，用于测试与后端服务的连接</span><span class="sxs-lookup"><span data-stu-id="f0a42-219">Added a new switch to the command-line utility for testing the connectivity with the backend service</span></span>
   ```bash
   mdatp connectivity test
   ```
-- <span data-ttu-id="74198-220">添加了在用户界面中查看完整威胁历史记录 (可以从"保护历史记录"视图访问) </span><span class="sxs-lookup"><span data-stu-id="74198-220">Added ability to view the full threat history in the user interface (can be accessed from the **Protection history** view)</span></span>
-- <span data-ttu-id="74198-221">Bug 修复&性能改进</span><span class="sxs-lookup"><span data-stu-id="74198-221">Performance improvements & bug fixes</span></span>
+- <span data-ttu-id="f0a42-220">添加了在用户界面中查看完整威胁历史记录 (可以从"保护历史记录"视图访问) </span><span class="sxs-lookup"><span data-stu-id="f0a42-220">Added ability to view the full threat history in the user interface (can be accessed from the **Protection history** view)</span></span>
+- <span data-ttu-id="f0a42-221">Bug 修复&性能改进</span><span class="sxs-lookup"><span data-stu-id="f0a42-221">Performance improvements & bug fixes</span></span>
 
-## <a name="1007215"></a><span data-ttu-id="74198-222">100.72.15</span><span class="sxs-lookup"><span data-stu-id="74198-222">100.72.15</span></span>
+## <a name="1007215"></a><span data-ttu-id="f0a42-222">100.72.15</span><span class="sxs-lookup"><span data-stu-id="f0a42-222">100.72.15</span></span>
 
-- <span data-ttu-id="74198-223">Bug 修复</span><span class="sxs-lookup"><span data-stu-id="74198-223">Bug fixes</span></span>
+- <span data-ttu-id="f0a42-223">Bug 修复</span><span class="sxs-lookup"><span data-stu-id="f0a42-223">Bug fixes</span></span>
 
-## <a name="1007099"></a><span data-ttu-id="74198-224">100.70.99</span><span class="sxs-lookup"><span data-stu-id="74198-224">100.70.99</span></span>
+## <a name="1007099"></a><span data-ttu-id="f0a42-224">100.70.99</span><span class="sxs-lookup"><span data-stu-id="f0a42-224">100.70.99</span></span>
 
-- <span data-ttu-id="74198-225">解决了在启用实时保护时影响某些用户升级到 macOS 加泰罗尼亚语的能力的问题。</span><span class="sxs-lookup"><span data-stu-id="74198-225">Addressed an issue that impacts the ability of some users to upgrade to macOS Catalina when real-time protection is enabled.</span></span> <span data-ttu-id="74198-226">此个别问题由 Microsoft Defender for Endpoint 在Catalina 升级包中锁定文件，同时扫描它们以发现威胁导致升级序列失败导致的。</span><span class="sxs-lookup"><span data-stu-id="74198-226">This sporadic issue was caused by Microsoft Defender for Endpoint locking files within Catalina upgrade package while scanning them for threats, which led to failures in the upgrade sequence.</span></span>
+- <span data-ttu-id="f0a42-225">解决了在启用实时保护时影响某些用户升级到 macOS 加泰罗尼亚语的能力的问题。</span><span class="sxs-lookup"><span data-stu-id="f0a42-225">Addressed an issue that impacts the ability of some users to upgrade to macOS Catalina when real-time protection is enabled.</span></span> <span data-ttu-id="f0a42-226">此个别问题由 Microsoft Defender for Endpoint 在Catalina 升级包中锁定文件，同时扫描它们以发现威胁导致升级序列失败导致的。</span><span class="sxs-lookup"><span data-stu-id="f0a42-226">This sporadic issue was caused by Microsoft Defender for Endpoint locking files within Catalina upgrade package while scanning them for threats, which led to failures in the upgrade sequence.</span></span>
 
-## <a name="1006899"></a><span data-ttu-id="74198-227">100.68.99</span><span class="sxs-lookup"><span data-stu-id="74198-227">100.68.99</span></span>
+## <a name="1006899"></a><span data-ttu-id="f0a42-227">100.68.99</span><span class="sxs-lookup"><span data-stu-id="f0a42-227">100.68.99</span></span>
 
-- <span data-ttu-id="74198-228">添加了将防病毒功能配置为在被动模式下 [运行的功能](mac-preferences.md#enable--disable-passive-mode)</span><span class="sxs-lookup"><span data-stu-id="74198-228">Added the ability to configure the antivirus functionality to run in [passive mode](mac-preferences.md#enable--disable-passive-mode)</span></span>
-- <span data-ttu-id="74198-229">Bug 修复&性能改进</span><span class="sxs-lookup"><span data-stu-id="74198-229">Performance improvements & bug fixes</span></span>
+- <span data-ttu-id="f0a42-228">添加了将防病毒功能配置为在被动模式下 [运行的功能](mac-preferences.md#enable--disable-passive-mode)</span><span class="sxs-lookup"><span data-stu-id="f0a42-228">Added the ability to configure the antivirus functionality to run in [passive mode](mac-preferences.md#enable--disable-passive-mode)</span></span>
+- <span data-ttu-id="f0a42-229">Bug 修复&性能改进</span><span class="sxs-lookup"><span data-stu-id="f0a42-229">Performance improvements & bug fixes</span></span>
 
-## <a name="1006528"></a><span data-ttu-id="74198-230">100.65.28</span><span class="sxs-lookup"><span data-stu-id="74198-230">100.65.28</span></span>
+## <a name="1006528"></a><span data-ttu-id="f0a42-230">100.65.28</span><span class="sxs-lookup"><span data-stu-id="f0a42-230">100.65.28</span></span>
 
-- <span data-ttu-id="74198-231">增加了对 macOS 加泰罗尼亚语的支持</span><span class="sxs-lookup"><span data-stu-id="74198-231">Added support for macOS Catalina</span></span>
+- <span data-ttu-id="f0a42-231">增加了对 macOS 加泰罗尼亚语的支持</span><span class="sxs-lookup"><span data-stu-id="f0a42-231">Added support for macOS Catalina</span></span>
 
   > [!CAUTION]
-  > <span data-ttu-id="74198-232">macOS 10.15 (Catalina) 新增了安全和隐私增强功能。</span><span class="sxs-lookup"><span data-stu-id="74198-232">macOS 10.15 (Catalina) contains new security and privacy enhancements.</span></span> <span data-ttu-id="74198-233">从此版本开始，默认情况下，应用程序无法访问磁盘上的某些位置 (如文档、下载、桌面等) 未经明确同意。</span><span class="sxs-lookup"><span data-stu-id="74198-233">Beginning with this version, by default, applications are not able to access certain locations on disk (such as Documents, Downloads, Desktop, etc.) without explicit consent.</span></span> <span data-ttu-id="74198-234">如果没有此同意，Microsoft Defender for Endpoint 将无法完全保护你的设备。</span><span class="sxs-lookup"><span data-stu-id="74198-234">In the absence of this consent, Microsoft Defender for Endpoint is not able to fully protect your device.</span></span>
+  > <span data-ttu-id="f0a42-232">macOS 10.15 (Catalina) 新增了安全和隐私增强功能。</span><span class="sxs-lookup"><span data-stu-id="f0a42-232">macOS 10.15 (Catalina) contains new security and privacy enhancements.</span></span> <span data-ttu-id="f0a42-233">从此版本开始，默认情况下，应用程序无法访问磁盘上的某些位置 (如文档、下载、桌面等) 未经明确同意。</span><span class="sxs-lookup"><span data-stu-id="f0a42-233">Beginning with this version, by default, applications are not able to access certain locations on disk (such as Documents, Downloads, Desktop, etc.) without explicit consent.</span></span> <span data-ttu-id="f0a42-234">如果没有此同意，Microsoft Defender for Endpoint 将无法完全保护你的设备。</span><span class="sxs-lookup"><span data-stu-id="f0a42-234">In the absence of this consent, Microsoft Defender for Endpoint is not able to fully protect your device.</span></span>
   >
-  > <span data-ttu-id="74198-235">授予此同意的机制取决于你部署适用于终结点的 Microsoft Defender 的方式：</span><span class="sxs-lookup"><span data-stu-id="74198-235">The mechanism for granting this consent depends on how you deployed Microsoft Defender for Endpoint:</span></span>
+  > <span data-ttu-id="f0a42-235">授予此同意的机制取决于你部署适用于终结点的 Microsoft Defender 的方式：</span><span class="sxs-lookup"><span data-stu-id="f0a42-235">The mechanism for granting this consent depends on how you deployed Microsoft Defender for Endpoint:</span></span>
   >
-  > - <span data-ttu-id="74198-236">有关手动部署，请参阅手动部署主题 [中的更新](mac-install-manually.md#how-to-allow-full-disk-access) 说明。</span><span class="sxs-lookup"><span data-stu-id="74198-236">For manual deployments, see the updated instructions in the [Manual deployment](mac-install-manually.md#how-to-allow-full-disk-access) topic.</span></span>
-  > - <span data-ttu-id="74198-237">有关托管部署，请参阅基于 [JAMF](mac-install-with-jamf.md) 的部署和基于 Microsoft [Intune](mac-install-with-intune.md#create-system-configuration-profiles) 的部署主题中的更新说明。</span><span class="sxs-lookup"><span data-stu-id="74198-237">For managed deployments, see the updated instructions in the [JAMF-based deployment](mac-install-with-jamf.md) and [Microsoft Intune-based deployment](mac-install-with-intune.md#create-system-configuration-profiles) topics.</span></span>
+  > - <span data-ttu-id="f0a42-236">有关手动部署，请参阅手动部署主题 [中的更新](mac-install-manually.md#how-to-allow-full-disk-access) 说明。</span><span class="sxs-lookup"><span data-stu-id="f0a42-236">For manual deployments, see the updated instructions in the [Manual deployment](mac-install-manually.md#how-to-allow-full-disk-access) topic.</span></span>
+  > - <span data-ttu-id="f0a42-237">有关托管部署，请参阅基于 [JAMF](mac-install-with-jamf.md) 的部署和基于 Microsoft [Intune](mac-install-with-intune.md#create-system-configuration-profiles) 的部署主题中的更新说明。</span><span class="sxs-lookup"><span data-stu-id="f0a42-237">For managed deployments, see the updated instructions in the [JAMF-based deployment](mac-install-with-jamf.md) and [Microsoft Intune-based deployment](mac-install-with-intune.md#create-system-configuration-profiles) topics.</span></span>
 
-- <span data-ttu-id="74198-238">Bug 修复&性能改进</span><span class="sxs-lookup"><span data-stu-id="74198-238">Performance improvements & bug fixes</span></span>
+- <span data-ttu-id="f0a42-238">Bug 修复&性能改进</span><span class="sxs-lookup"><span data-stu-id="f0a42-238">Performance improvements & bug fixes</span></span>
