@@ -1,7 +1,7 @@
 ---
-title: 在 Microsoft 365 Defender 中获取事件通知
+title: 在 Microsoft 365 Defender 中通过电子邮件获取事件通知
 description: 了解如何创建规则以在 Microsoft 365 Defender 中获取事件的电子邮件通知
-keywords: 事件， 电子邮件， 电子邮件通知， 配置， 用户， 邮箱， 电子邮件， 事件
+keywords: 事件， 电子邮件， 电子邮件通知， 配置， 用户， 邮箱， 电子邮件， 事件， 分析， 响应
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 72a1f8fe71efcfa7f4f73671611576a454b508e6
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: 7ba21e08f72760654993335764df00e78abc87b2
+ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51861308"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51939714"
 ---
 # <a name="get-incident-notifications-by-email"></a>通过电子邮件获取事件通知
 
@@ -43,7 +43,7 @@ ms.locfileid: "51861308"
 - 设备组。
 - 仅在每个事件的第一次更新时。
 
-电子邮件通知包含有关事件的重要详细信息，如事件名称、严重性和类别等。 您还可以直接转到事件并立即开始调查。 有关详细信息，请参阅调查 [事件](investigate-incidents.md)。
+电子邮件通知包含有关事件的重要详细信息，如事件名称、严重性和类别等。 您还可以直接转到事件并立即开始分析。 有关详细信息，请参阅 [分析事件](investigate-incidents.md)。
 
 可以在电子邮件通知中添加或删除收件人。 新收件人在添加事件后会收到事件通知。 
 
@@ -77,4 +77,4 @@ ms.locfileid: "51861308"
 ## <a name="see-also"></a>另请参阅
 - [事件概述](incidents-overview.md)
 - [确定事件优先级](incident-queue.md)
-- [调查事件](investigate-incidents.md)
+- [分析事件](investigate-incidents.md)

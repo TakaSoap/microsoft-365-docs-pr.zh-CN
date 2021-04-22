@@ -19,12 +19,12 @@ search.appverid:
 - GEA150
 ms.assetid: a27f1a99-3557-4f85-9560-a28e3d822a40
 description: 获取 Microsoft 365 组报告，了解组及其活动。
-ms.openlocfilehash: 9ab034531099b5572c42eb3a48ec28d99487ac99
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: d123e3beb55ba6e636084fabe995f4dd0ff56707
+ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51579550"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51939134"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-365-groups"></a>管理中心中的 Microsoft 365 报表 - Microsoft 365 组
 
@@ -46,7 +46,7 @@ Microsoft 365 **报表** 仪表板显示组织中各产品的活动概述。 它
   
 ![Microsoft 365 报告 - 组活动](../../media/852027a4-8eab-47d1-b770-2bb874bdc403.png)
   
-|项目|说明|
+|Item|说明|
 |:-----|:-----|
 |1.  <br/> |可查看 **Microsoft 365** 组报告，了解过去 7 天、30 天、90 天或 180 天的趋势。 但是，如果您选择报告中的特定日期，则表 (7) 将显示自当前日期起最多 28 天的数据 (而不是报告生成日期) 。  <br/> |
 |2.  <br/> |每个报告中的数据通常涵盖过去 24 至 48 小时的数据。  <br/> |
@@ -60,4 +60,5 @@ Microsoft 365 **报表** 仪表板显示组织中各产品的活动概述。 它
 |10,  <br/> |选择或点击 **列标题** 旁边的"更多操作"按钮"移动 OWA 更多操作"， ![ 以在报表中添加 ](../../media/80044eef-2368-4c7e-8d31-7155b029e0cf.png) 或删除列。  <br/> ![组报告 - 选择列](../../media/d7fb95d6-2a2e-4144-b80d-581223e48043.png)|
 |11,  <br/> |您还可以通过选择"导出"链接将报告数据导出到 Excel .csv **文件中。** 此操作可导出所有用户的数据，使你能够对数据进行简单的排序和筛选，以进一步分析数据。 如果用户数量不足 2000，则可在报表中的表格内进行排序和筛选。 如果用户数超过 2000，则需要导出数据才能进行排序和筛选。  <br/> |
 |||
-   
+
+

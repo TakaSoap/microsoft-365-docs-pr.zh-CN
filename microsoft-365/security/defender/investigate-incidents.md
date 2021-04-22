@@ -1,7 +1,7 @@
 ---
-title: 调查 Microsoft 365 Defender 中的事件
+title: 分析 Microsoft 365 Defender 中的事件
 description: 分析与设备、用户和邮箱相关的事件。
-keywords: 事件, 多个事件, 计算机, 设备, 用户, 标识, 邮件, 电子邮件, 邮箱, 调查, 图表, 证据
+keywords: 事件， 事件， 分析， 响应， 计算机， 设备， 用户， 标识， 邮件， 电子邮件， 邮箱， 调查， 图形， 证据
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -22,17 +22,16 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 99acc25c3949b758dab990a9c2e9104b9158accd
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: 22d3bba03745cee330f89b67061e6c6b13e78aed
+ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51861850"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51939738"
 ---
-# <a name="investigate-incidents-in-microsoft-365-defender"></a>调查 Microsoft 365 Defender 中的事件
+# <a name="analyze-incidents-in-microsoft-365-defender"></a>分析 Microsoft 365 Defender 中的事件
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
-
 
 **适用于：**
 
@@ -40,9 +39,9 @@ ms.locfileid: "51861850"
 
 Microsoft 365 Defender 将来自你的设备、用户和邮箱的所有用户的相关警报、资产、调查和证据聚合到事件中，让你全面了解整个攻击范围。
 
-在事件中，您将调查影响网络的警报，了解它们的含义，并整理证据，以便制定有效的修正计划。
+在事件内，分析影响网络的警报，了解它们的含义，并整理证据，以便制定有效的修正计划。
 
-## <a name="initial-investigation"></a>初始调查
+## <a name="initial-analysis"></a>初始分析
 
 在深入讨论详细信息之前，请看一下事件的属性和摘要。
 
@@ -87,9 +86,9 @@ Microsoft 365 Defender 将来自你的设备、用户和邮箱的所有用户的
 
 :::image type="content" source="../../media/investigate-incidents/incident-alerts.png" alt-text="事件的警报页面示例":::
 
-默认情况下，警报按时间顺序排序，以便查看事件如何随着时间的推移而播放。 选择每个警报将你访问警报的主页，你可以在这里对此警报进行深入调查。 
+默认情况下，警报按时间顺序排序，以便查看事件如何随着时间的推移而播放。 选择每个警报将你访问警报的主页，你可以在这里对此警报进行深入分析。 
 
-了解如何使用调查警报中的警报队列 [和警报页面](investigate-alerts.md)
+了解如何在分析警报中使用警报队列 [和警报页面](investigate-alerts.md)
 
 ## <a name="devices"></a>设备
 

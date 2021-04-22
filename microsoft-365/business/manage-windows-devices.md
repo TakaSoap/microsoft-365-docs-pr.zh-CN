@@ -24,12 +24,12 @@ search.appverid:
 - BCS160
 - MET150
 description: 了解如何通过几个步骤使 Microsoft 365 能够保护加入本地 Active-Directory 的 Windows 10 设备。
-ms.openlocfilehash: 8a45c6959bee368491c5c6424e3713300c443779
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: c9f5a21d993200abcf9ecf1fa236879245e1c153
+ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51580126"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51939494"
 ---
 # <a name="enable-domain-joined-windows-10-devices-to-be-managed-by-microsoft-365-business-premium"></a>允许 Microsoft 365 商业高级版管理加入域的 Windows 10 设备
 
@@ -116,3 +116,7 @@ PS C:\> Initialize-SecMgmtHybirdDeviceEnrollment -GroupPolicyDisplayName 'Device
 6.  如果您具有多个域控制器，请等待 SYSVOL 复制，以便策略可用。 此过程还适用于管理模板的任何未来版本。
 
 此时，你应该可以看到"使用默认 **Azure AD** 凭据启用自动 MDM 注册"策略可用。
+
+## <a name="related-content"></a>相关内容
+
+将域用户同步到[Microsoft 365](manage-domain-users.md) (文章) 在管理[中心创建组](../admin/create-groups/create-groups.md) (文章) 教程：为托管域配置混合 Azure Active [Directory](/azure/active-directory/devices/hybrid-azuread-join-managed-domains.md) (文章) 

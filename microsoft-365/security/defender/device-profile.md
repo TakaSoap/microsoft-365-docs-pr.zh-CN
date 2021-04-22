@@ -1,7 +1,7 @@
 ---
 title: Microsoft 365 安全门户中的设备配置文件
 description: 查看组织中设备的风险和曝光级别。 分析过去和现在的威胁，使用最新更新保护设备。
-keywords: 安全， 恶意软件， Microsoft 365， M365， Microsoft 威胁防护， MTP， 安全中心， Microsoft Defender ATP， Office 365 ATP， Azure ATP， 设备页面， 设备配置文件， 计算机页面， 计算机配置文件
+keywords: 安全， 恶意软件， Microsoft 365， M365， Microsoft 365 Defender， 安全中心， Microsoft Defender for Endpoint， Microsoft Defender for Office 365， Microsoft Defender for Identity， 设备页面， 设备配置文件， 计算机页面， 计算机配置文件
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 localization_priority: Normal
@@ -13,12 +13,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
 ms.technology: m365d
-ms.openlocfilehash: c51c002d263452142a1bcf6fc5603d6ec4ef4cf7
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 8e2788fd9163a27b41bd3788facf5fc9623b0543
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51197965"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935661"
 ---
 # <a name="device-profile-page"></a>设备配置文件页
 

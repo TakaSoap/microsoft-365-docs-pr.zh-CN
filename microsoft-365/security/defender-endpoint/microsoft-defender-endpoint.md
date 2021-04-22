@@ -1,7 +1,7 @@
 ---
 title: Microsoft Defender for Endpoint
 description: Microsoft Defender for Endpoint 是一个企业终结点安全平台，可帮助抵御高级永久性威胁。
-keywords: Microsoft Defender for Endpoint 简介， Microsoft Defender 高级威胁防护简介， 适用于终结点的 Microsoft Defender 简介， 网络安全， 高级永久性威胁， 企业安全， 计算机行为传感器， 云安全性， 分析， 威胁情报， 攻击面减少， 下一代保护， 自动调查和修正， Microsoft 威胁专家， 安全分数， 高级搜寻， Microsoft 威胁防护， 网络威胁搜寻
+keywords: Microsoft Defender for Endpoint 简介， 适用于终结点的 Microsoft Defender 简介， 网络安全， 高级永久性威胁， 企业安全， 计算机行为传感器， 云安全， 分析， 威胁情报， 攻击面减少， 下一代保护， 自动调查和修正， Microsoft 威胁专家， 安全分数， 高级搜寻， Microsoft 365 Defender， 网络威胁搜寻
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: adc7d780c1af73d8cb4fe229720ac2ed74f90251
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: 57d4506e32db5defe29f2d0e59f72bd4c1998310
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51861823"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935925"
 ---
 # <a name="microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint
 
@@ -64,7 +64,7 @@ Defender for Endpoint 使用 Windows 10 中内置的技术和 Microsoft 强大�
 <a href="#apis"><center><b>集中配置和管理、API</a></b></center></td>
 </tr>
 <tr>
-<td colspan="7"><a href="#mtp"><center><b>Microsoft 威胁防护</a></center></b></td>
+<td colspan="7"><a href="#mtp"><center><b>Microsoft 365 Defender</a></center></b></td>
 </tr>
 </table>
 <br>
@@ -126,7 +126,7 @@ Microsoft Defender for Endpoint 的新托管威胁搜寻服务提供了主动搜
 
 **[与 Microsoft 解决方案集成](threat-protection-integration.md)** <br>
 Defender for Endpoint 直接与各种 Microsoft 解决方案集成，包括：
-- Azure 安全中心
+- Azure Defender
 - Azure Sentinel
 - Intune
 - Microsoft 云应用安全

@@ -2,7 +2,7 @@
 title: 访问 Microsoft Defender for Endpoint API
 ms.reviewer: ''
 description: 了解如何使用 API 根据 Microsoft Defender for Endpoint 功能自动执行工作流创新
-keywords: api， api， Microsoft Defender for Endpoint， 开放 api， Microsoft Defender for Endpoint api， 公共 api， 受支持的 api， 警报， 设备， 用户， 域， ip， 文件， 高级搜寻， 查询
+keywords: api， api， wdatp， open api， microsoft defender for endpoint api， microsoft defender atp， 公共 api， 受支持的 api， 警报， 设备， 用户， 域， ip， 文件， 高级搜寻， 查询
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 87dce8ff4fde505eb8d4e458c8d9fb56556f4d78
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 843bd953b97f29a5b9c80fc44a9b19fae60a6fa7
+ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51935100"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51939762"
 ---
 # <a name="access-the-microsoft-defender-for-endpoint-apis"></a>访问 Microsoft Defender for Endpoint API 
 
@@ -61,7 +61,7 @@ Defender for Endpoint 通过一组编程 API 公开其大部分数据和操作�
   2. 为应用程序分配所需的权限，例如，"读取警报"和"隔离计算机"。 
   3. 为此应用程序创建密钥。
   4. 使用应用程序及其密钥获取令牌。
-  5. 使用令牌访问 Microsoft Defender for Endpoint API
+  5. 使用令牌访问 Microsoft Defender 终结点 API
 
      有关详细信息，请参阅获取 [应用程序上下文的访问权限](exposed-apis-create-app-webapp.md)。
 
@@ -74,7 +74,7 @@ Defender for Endpoint 通过一组编程 API 公开其大部分数据和操作�
   1. 创建 AAD Native-Application。
   2. 为应用程序分配所需的权限，例如"读取警报"和"隔离计算机"等。 
   3. 使用具有用户凭据的应用程序获取令牌。
-  4. 使用令牌访问 Microsoft Defender for Endpoint API
+  4. 使用令牌访问 Microsoft Defender 终结点 API
 
      有关详细信息，请参阅使用 [用户上下文获取访问权限](exposed-apis-create-app-nativeapp.md)。
 

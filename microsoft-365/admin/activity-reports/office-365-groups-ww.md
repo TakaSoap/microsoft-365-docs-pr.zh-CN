@@ -19,12 +19,12 @@ search.appverid:
 - GEA150
 ms.assetid: a27f1a99-3557-4f85-9560-a28e3d822a40
 description: 获取 Microsoft 365 组报告，了解组及其活动。
-ms.openlocfilehash: fd3aa664b5a40bb5fffe0ed23e07ba6f1a5907c2
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 9426f7a35dea6c0f4a34e78dd8b2c214a0619bdd
+ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51579562"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51939226"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-365-groups"></a>管理中心中的 Microsoft 365 报表 - Microsoft 365 组
 
@@ -46,7 +46,7 @@ You can view the activations in the Office 365 report by choosing the **Groups a
 
 您还可以通过选择"导出"链接将报告数据导出到 Excel .csv **文件中。** 此操作可导出所有用户的数据，使你能够对数据进行简单的排序和筛选，以进一步分析数据。 如果用户数量不足 2000，则可在报表中的表格内进行排序和筛选。 如果用户数超过 2000，则需要导出数据才能进行排序和筛选。 
 
-|项目|说明|
+|Item|说明|
 |:-----|:-----|
 |**跃点数**|**定义**|
 |组名称  <br/> |组的名称。  <br/> |
@@ -66,3 +66,8 @@ You can view the activations in the Office 365 report by choosing the **Groups a
 |Members  <br/> |组中成员的数量。  <br/> |
 |外部成员 |组中外部用户的数量。|
 |||
+
+## <a name="related-content"></a>相关内容
+
+管理中心中的[Microsoft 365](activity-reports.md)报告 (文章) 安全[&](../../compliance/reports-in-security-and-compliance.md)合规中心中的报告 (文章) 管理中心中的[Microsoft 365](../../admin/activity-reports/active-users-ww.md)报告 - 活动用户 (文章) 
+

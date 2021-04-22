@@ -1,7 +1,7 @@
 ---
 title: 在 Microsoft 365 安全中心打开 Microsoft 365 Defender
 description: 了解如何启用 Microsoft 365 Defender 并开始集成安全事件和响应。
-keywords: 入门， 启用 MTP， Microsoft 威胁防护， M365， 安全性， 数据位置， 所需权限， 许可证资格， 设置页面
+keywords: 入门， 启用 Microsoft 365 Defender， Microsoft 365 Defender， M365， 安全性， 数据位置， 所需权限， 许可证资格， 设置页面
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: bf8fdb2a8a42ef7b70b744cbbb5663e6afe51989
-ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
+ms.openlocfilehash: 2d69ae70b137c9e5378958721f7f9958e57c0306
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51764372"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935637"
 ---
 # <a name="turn-on-microsoft-365-defender"></a>打开 Microsoft 365 Defender
 

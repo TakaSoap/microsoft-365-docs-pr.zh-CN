@@ -1,7 +1,7 @@
 ---
 title: 基于角色的访问控制的自定义角色
 description: 了解如何在 Microsoft 365 安全中心管理自定义角色
-keywords: access， 权限， MTP， Microsoft 威胁防护， M365， 安全性， MCAS， MDATP， Cloud App Security， Microsoft Defender 高级威胁防护， 范围， 作用域， RBAC， 基于角色的访问， 基于角色的访问， 基于角色的身份验证， MDO 中的 RBAC， 角色， 角色组， 权限继承， 精细的权限
+keywords: access， 权限， Microsoft 365 Defender， M365， 安全， MCAS， Cloud App Security， Microsoft Defender for Endpoint， 作用域， 作用域， RBAC， 基于角色的访问， 基于自定义角色的访问， 基于角色的身份验证， MDO 中的 RBAC， 角色， 角色组， 权限继承， 精细的权限
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 6582e4e940dc9910e7d341c92b525379b924f35b
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 9dfa9f113c0a7d57360c2da6105cbfa07fcf6a99
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51199953"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935685"
 ---
 # <a name="custom-roles-in-role-based-access-control-for-microsoft-365-defender"></a>Microsoft 365 Defender 基于角色的访问控制中的自定义角色
 

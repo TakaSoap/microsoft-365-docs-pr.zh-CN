@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 了解如何为企业主持联机会议。
-ms.openlocfilehash: dffdf847962962b2f2e9daf70dae210abbb7614b
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 893a03b064b6f73711b69a61c90cd40023241c48
+ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51580506"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51939514"
 ---
 # <a name="host-online-meetings-for-your-business"></a>为企业主持联机会议
 
@@ -35,9 +35,9 @@ ms.locfileid: "51580506"
 
 如果你经常与客户、客户或合作伙伴就项目紧密协作，请考虑为客户端创建团队，这样[](https://support.microsoft.com/office/11fbb083-52ee-434d-8c6e-63711fdafac7)你可以轻松地邀请他们参加会议，还可以在 Microsoft Teams 中对话、共享文件和跟踪项目。
 
-下载信息图，快速了解如何使用 Microsoft Teams 加入或主持联机会议。
+下载信息图，快速了解如何使用 Microsoft Teams 加入或主持联机会议：
 
-下载信息图，快速了解如何使用 Microsoft Teams 加入或主持联机会议。 [PDF](https://go.microsoft.com/fwlink/?linkid=2078712)  | [PowerPoint](https://go.microsoft.com/fwlink/?linkid=2079515)
+[PDF](https://go.microsoft.com/fwlink/?linkid=2078712)  | [PowerPoint](https://go.microsoft.com/fwlink/?linkid=2079515)
 
 ## <a name="1-schedule-a-meeting"></a>1. 安排会议
 

@@ -1,7 +1,7 @@
 ---
-title: 调查 Microsoft 365 安全中心中的用户
-description: 调查 Microsoft 365 安全中心中的用户
-keywords: 安全， 恶意软件， Microsoft 365， M365， 安全中心， 监视， 报告， 标识， 数据， 设备， 应用
+title: 在 Microsoft 365 安全中心分析用户
+description: 在 Microsoft 365 安全中心分析用户
+keywords: 安全， 恶意软件， Microsoft 365， M365， 安全中心， 监视， 报告， 标识， 数据， 设备， 应用， 事件， 分析， 响应
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 localization_priority: Normal
@@ -19,14 +19,14 @@ ms.topic: article
 search.appverid: met150
 ms.custom: seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: 68fc924ee14932ebdf92ef76306ba00e352b6030
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: 1fb5a4eee41384ef1afc9b46e5bf538344718fe9
+ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51861250"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51939726"
 ---
-# <a name="investigate-users-in-microsoft-365-security-center"></a>调查 Microsoft 365 安全中心中的用户
+# <a name="analyze-users-in-microsoft-365-security-center"></a>在 Microsoft 365 安全中心分析用户
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -34,7 +34,7 @@ ms.locfileid: "51861250"
 
 - Microsoft 365 Defender
 
-事件调查的一部分可能包括用户帐户。 从"事件 **"** 和"用户"中事件 **&">">****开始**。 
+事件分析的一部分可能包括用户帐户。 从"事件 **"** 和"用户"中事件 **&">">****开始**。 
 
 :::image type="content" source="../../media/investigate-incidents/incident-users.png" alt-text="事件的用户页面示例":::
 

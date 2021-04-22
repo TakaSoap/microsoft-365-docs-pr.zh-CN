@@ -20,19 +20,16 @@ ms.custom:
 search.appverid:
 - MET150
 description: 了解如何升级到其他计划。
-ms.openlocfilehash: 79ca18df28505c457e085dbd73c2fbd04eff53ca
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: c8d71e6ab79bfea35334f2c034dbc13f60397227
+ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51580974"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51939168"
 ---
 # <a name="upgrade-to-a-different-plan"></a>升级到其他计划
 
 当业务发生变化或需要更多功能时，您可以升级计划。 执行此操作的最简单方法是使用管理中心中的"升级"选项卡。 但是，并非所有 **情况** 都支持使用"升级"选项卡。 在某些情况下，您可以手动更改计划。
-
-> [!NOTE]
-> 本文适用于新的管理中心。 如果未使用新的 Microsoft 365 管理中心，可通过选择“**试用新的管理中心**”切换按钮（位于主页顶部）将其打开。 若要查看有关旧管理中心的文章，请参阅切换到其他 [Microsoft 365 商业版计划](switch-to-a-different-plan.md)。
 
 ## <a name="use-the-upgrade-tab"></a>使用"升级"选项卡
 

@@ -1,8 +1,8 @@
 ---
 title: Microsoft Defender for Endpoint on Linux
 ms.reviewer: ''
-description: 介绍如何安装和使用 Microsoft Defender for Endpoint for Linux。
-keywords: microsoft， defender， atp， linux， 安装， 部署， 卸载， 安装， ansible， linux， redhat， ubuntu， debian， sles， suse， centos
+description: 介绍如何在 Linux 上安装和使用 Microsoft Defender for Endpoint。
+keywords: microsoft， defender， Microsoft Defender for Endpoint， linux， 安装， 部署， 卸载， 安装， ansible， linux， redhat， ubuntu， debian， sles， suse， centos
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: f67dd28902e8b45a5401b60c027faa89d7467cd8
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: 34274e260da2e8acc8088fcff6d324b6b31fc2ef
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51861391"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935937"
 ---
 # <a name="microsoft-defender-for-endpoint-on-linux"></a>Microsoft Defender for Endpoint on Linux
 
@@ -39,7 +39,7 @@ ms.locfileid: "51861391"
 本主题介绍如何在 Linux 上安装、配置、更新和使用 Microsoft Defender for Endpoint。
 
 > [!CAUTION]
-> 在 Linux 上运行其他第三方终结点保护产品以及 Microsoft Defender for Endpoint 可能会导致性能问题和不可预知的副作用。 如果非 Microsoft 终结点保护在你的环境中是绝对要求，在将防病毒功能配置为在被动模式下运行后，你仍然可以安全地利用适用于 Linux EDR 的 Defender for [Endpoint 功能](linux-preferences.md#enable--disable-passive-mode)。
+> 在 Linux 上运行其他第三方终结点保护产品以及 Microsoft Defender for Endpoint 可能会导致性能问题和不可预知的副作用。 如果非 Microsoft 终结点保护在你的环境中是绝对要求，在将防病毒功能配置为在被动模式下运行后，你仍然可以安全地利用 Linux EDR 上的 Defender for Endpoint [功能](linux-preferences.md#enable--disable-passive-mode)。
 
 ## <a name="how-to-install-microsoft-defender-for-endpoint-on-linux"></a>如何在 Linux 上安装 Microsoft Defender for Endpoint
 
@@ -80,10 +80,10 @@ ms.locfileid: "51861391"
 - 最低内核版本 3.10.0-327
 - `fanotify`必须启用内核选项
   > [!CAUTION]
-  > 不支持将适用于 Linux 的 Defender for Endpoint 与其他 `fanotify` 基于的安全解决方案并行运行。 它可能会导致不可预知的结果，包括挂起操作系统。
+  > 不支持在 Linux 上并行运行 Defender for Endpoint 和基于 `fanotify` 其他的安全解决方案。 它可能会导致不可预知的结果，包括挂起操作系统。
 
 - 磁盘空间：1GB
-- /opt/microsoft/mdatp/sbin/wdavdaemon 需要可执行权限。 有关详细信息，请参阅 Troubleshoot installation issues for Microsoft Defender for Endpoint for Linux 中的"确保守护程序具有可执行[权限"。](/microsoft-365/security/defender-endpoint/linux-support-install)
+- /opt/microsoft/mdatp/sbin/wdavdaemon 需要可执行权限。 有关详细信息，请参阅在 Linux 上解决 Microsoft Defender for Endpoint 的安装问题中的"确保守护程序具有[可执行权限"。](/microsoft-365/security/defender-endpoint/linux-support-install)
 - 内存：1GB
     > [!NOTE]
     > 请确保 /var 中具有可用磁盘空间。
@@ -117,7 +117,7 @@ ms.locfileid: "51861391"
 
 以下可下载的电子表格列出了网络必须能够连接到的服务及其关联 URL。 应确保没有拒绝访问这些 URL 的防火墙或网络筛选规则。 如果有，可能需要专门为 *他们创建允许* 规则。
 
-|**域列表电子表格**|**描述**|
+|**域列表电子表格**|**说明**|
 |:-----|:-----|
 |![适用于终结点 URL 电子表格的 Microsoft Defender 缩略图](images/mdatp-urls.png)<br/>  | 服务位置、地理位置和操作系统的特定 DNS 记录的电子表格。 <br><br>[在此处下载电子表格。](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx)
 

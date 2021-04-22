@@ -1,7 +1,7 @@
 ---
-title: 调查 Microsoft 365 Defender 中的警报
-description: 调查跨设备、用户和邮箱看到的警报。
-keywords: 事件, 警报, 调查, 关联, 攻击, 计算机, 设备, 用户, 标识, 标识, 邮箱, 电子邮件, 365, microsoft, m365
+title: 分析 Microsoft 365 Defender 中的警报
+description: 分析跨设备、用户和邮箱看到的警报。
+keywords: 事件， 警报， 调查， 分析， 响应， 关联， 攻击， 计算机， 设备， 用户， 标识， 标识， 邮箱， 电子邮件， 365， microsoft， m365
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -22,14 +22,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 77b30e8a8eee70470115bcd61f081863fa5a41ee
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: 18b4df6a2dbb22235d6781f1430f7a75e319fbcf
+ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51861982"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51939538"
 ---
-# <a name="investigate-alerts-in-microsoft-365-defender"></a>调查 Microsoft 365 Defender 中的警报
+# <a name="analyze-alerts-in-microsoft-365-defender"></a>分析 Microsoft 365 Defender 中的警报
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -38,7 +38,7 @@ ms.locfileid: "51861982"
 
 警报是所有事件的基础，指示环境中出现恶意或可疑事件。 警报通常是更广泛的攻击的一部分，并提供事件线索。
 
-在 Microsoft 365 Defender 中，相关警报聚合在一起以形成 [事件](incidents-overview.md)。 事件将始终提供攻击的更广泛的上下文，但是，当需要深入分析时，调查警报可能非常有价值。 
+在 Microsoft 365 Defender 中，相关警报聚合在一起以形成 [事件](incidents-overview.md)。 事件将始终提供更广泛的攻击上下文，但是，如果需要更深入的分析，分析警报可能会非常有价值。 
 
 警报 **队列** 显示当前警报集。 在 microsoft 365安全中心 & > () 快速启动时，你可以从事件和警报[ (security.microsoft.com) 。](https://security.microsoft.com)
 
@@ -134,12 +134,12 @@ ms.locfileid: "51861982"
 
 ## <a name="resolve-an-alert"></a>解决警报
 
-调查完警报并可以解决后，请转到警报的"管理警报"窗格，将其状态标记为"已解决"，然后将其分类为 **"False 警报**"或"**真警报"。** 对于真正的警报，在"确定"字段中指定警报 **的威胁** 类型。
+分析完警报并可以解决后，请转到警报的"管理警报"窗格，将其状态标记为"已解决"，并分类为 **"False** 警报"或"**真警报"。**  对于真正的警报，在"确定"字段中指定警报 **的威胁** 类型。
 
 对警报进行分类并指定它们的决定有助于调整 Microsoft 365 Defender，以提供更真实的警报和更少的假警报。
 
 ## <a name="see-also"></a>另请参阅
 
 - [事件概述](incidents-overview.md)
-- [调查事件](investigate-incidents.md)
 - [管理事件](manage-incidents.md)
+- [分析事件](investigate-incidents.md)

@@ -1,7 +1,7 @@
 ---
 title: 高级搜寻架构中的 DeviceEvents 表
 description: 了解高级搜寻架构的 DeviceEvents (设备事件) 防病毒、防火墙和其他事件类型
-keywords: 高级搜寻， 威胁搜寻， 网络威胁搜寻， Microsoft 威胁防护， microsoft 365， mtp， m365， 搜索， 查询， 遥测， 架构参考， kusto， 表格， 列， 数据类型， 安全事件， 防病毒， 防火墙， 攻击防护， DeviceEvents
+keywords: 高级搜寻， 威胁搜寻， 网络威胁搜寻， Microsoft 365 Defender， microsoft 365， m365， 搜索， 查询， 遥测， 架构参考， kusto， 表格， 列， 数据类型， 安全事件， 防病毒， 防火墙， 攻击防护， DeviceEvents
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 9b9023ae87fed452396501980d719be3a2e207b3
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: fc28159f9f83354868142584740e2cb7810724b9
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51498646"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933681"
 ---
 # <a name="deviceevents"></a>DeviceEvents
 

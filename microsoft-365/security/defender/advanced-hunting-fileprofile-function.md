@@ -1,7 +1,7 @@
 ---
 title: FileProfile () Microsoft 365 Defender 高级搜寻中的函数
 description: 了解如何使用 FileProfile () 丰富有关高级搜寻查询结果中的文件的信息
-keywords: 高级搜寻， 威胁搜寻， 网络威胁搜寻， Microsoft 威胁防护， microsoft 365， mtp， m365， 搜索， 查询， 遥测， 架构参考， kusto， FileProfile， 文件配置文件， 函数， 扩充
+keywords: 高级搜寻， 威胁搜寻， 网络威胁搜寻， Microsoft 365 Defender， microsoft 365， m365， 搜索， 查询， 遥测， 架构参考， kusto， FileProfile， 文件配置文件， 函数， 扩充
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: ea4f22b70e607b42155342dde1ac16b1ad640981
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: 67295529cdb7b8a3e93e663f2a8a28d27a8f6737
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51498453"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935841"
 ---
 # <a name="fileprofile"></a>FileProfile()
 

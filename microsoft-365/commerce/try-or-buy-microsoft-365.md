@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 description: 了解如何获取免费试用版或购买 Microsoft 365 商业版订阅。
 ms.date: 08/07/2020
-ms.openlocfilehash: 9daa7022007aa3c71dc7291f592d3b166a2c45a5
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 505ce060b9b40d72a54adbfffbcb2b3cf47a66e6
+ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51576897"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51939180"
 ---
 # <a name="try-or-buy-a-microsoft-365-for-business-subscription"></a>试用或购买 Microsoft 365 商业版订阅
 
@@ -33,9 +33,19 @@ Microsoft 365 商业版是一种订阅服务，允许你在云中运行你的组
 > [!NOTE]
 > 注册免费试用版时，必须使用信用卡。 在免费试用期结束时，试用版订阅将自动转换为付费订阅。 在试用期结束之前，不会对信用卡进行计费。
 
+
+::: moniker region="o365-21vianet"
+
+> [!IMPORTANT]
+> **由世纪银行在中国运营的 Office 365 的支付选项** 不接受国际信用卡。 您可以通过以下方式支付订阅费用：
+> - 发票
+> - 使用支付银联或中国银联的联机付款证明将采用 Fapiaos 的形式提供。 您可以在付款大约三 （3） 天后向 [发票系统提交发票](https://go.microsoft.com/fwlink/p/?LinkId=395314) 请求。 有关详细信息，请参阅 [申请由世纪互联运营的 Office 365 的发票](../admin/services-in-china/apply-for-a-fapiao.md)。
+
+::: moniker-end
+
 ## <a name="before-you-begin"></a>准备工作
 
-无需现有 Microsoft 帐户注册免费试用版。 对于本文中的所有其他过程，你必须是组织的全局管理员或帐单管理员。 有关详细信息，请参阅[关于管理员角色](../admin/add-users/about-admin-roles.md)。
+无需现有 Microsoft 帐户注册免费试用版。 对于本文中的所有其他过程，你必须是组织的全局管理员或帐单管理员。 有关详细信息，请参阅 [关于管理员角色](../admin/add-users/about-admin-roles.md)。
 
 ## <a name="try-a-free-trial-subscription"></a>试用免费试用版订阅
 

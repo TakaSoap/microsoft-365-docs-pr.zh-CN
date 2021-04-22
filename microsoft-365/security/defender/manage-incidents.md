@@ -1,7 +1,7 @@
 ---
 title: 在 Microsoft 365 Defender 中管理事件
 description: 了解如何分配、更新状态
-keywords: 事件, 事件, 警报, 相关警报, 分配, 更新, 状态, 管理, 分类, microsoft, 365, m365
+keywords: 事件， 事件， 分析， 响应， 警报， 相关警报， 分配， 更新， 状态， 管理， 分类， microsoft， 365， m365
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: da5a2190a53dfe7f8dd0cc3cf7b410af92ca4ec5
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: 5f66189979f401430353f4c15978a85276b48840
+ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51861727"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51939750"
 ---
 # <a name="manage-incidents-in-microsoft-365-defender"></a>在 Microsoft 365 Defender 中管理事件
 
@@ -61,7 +61,7 @@ ms.locfileid: "51861727"
 - 事件队列中事件的属性窗格。
 - **事件的** 摘要页。
 
-在调查时，若要将警报从一个事件移动到另一个事件，也可以从"警报"选项卡进行移动，从而创建包含所有相关警报的较大或较小的事件。
+在分析时希望将警报从一个事件移动到另一个事件时，也可以从"警报"选项卡进行移动，从而创建包含所有相关警报的较大或较小的事件。
 
 ## <a name="edit-the-incident-name"></a>编辑事件名称
 
@@ -102,4 +102,4 @@ Microsoft 365 Defender 根据警报属性自动分配名称，如受影响的终
 
 - [事件概述](incidents-overview.md)
 - [确定事件优先级](incident-queue.md)
-- [调查事件](investigate-incidents.md)
+- [分析事件](investigate-incidents.md)

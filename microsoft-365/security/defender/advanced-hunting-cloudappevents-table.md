@@ -1,7 +1,7 @@
 ---
 title: 高级搜寻架构中的 CloudAppEvents 表
 description: 了解高级搜寻架构的 CloudAppEvents 表中的云应用和服务中的事件
-keywords: 高级搜寻， 威胁搜寻， 网络威胁搜寻， Microsoft 威胁防护， microsoft 365， mtp， m365， 搜索， 查询， 遥测， 架构参考， kusto， 表格， 列， 数据类型， 说明， CloudAppEvents， Cloud App Security， MCAS
+keywords: 高级搜寻， 威胁搜寻， 网络威胁搜寻， Microsoft 365 Defender， microsoft 365， m365， 搜索， 查询， 遥测， 架构参考， kusto， 表格， 列， 数据类型， 说明， CloudAppEvents， Cloud App Security， MCAS
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 83b9eec37648ba48aa8e6931e836e8a5e22458c8
-ms.sourcegitcommit: 07dea2aa98daf0c4086f8590375167830027c802
+ms.openlocfilehash: 17f424d368c0df2f07cda41917f005e4163e5750
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51760022"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935865"
 ---
 # <a name="cloudappevents"></a>CloudAppEvents
 
@@ -49,27 +49,27 @@ ms.locfileid: "51760022"
 |-------------|-----------|-------------|
 | `Timestamp` | datetime | 记录事件的日期和时间 |
 | `ActionType` | string | 触发事件的活动类型 |
-| `Application` | 字符串 | 执行录制的操作的应用程序 |
-| `ApplicationId` | 字符串 | 应用程序的唯一标识符 |
-| `AccountObjectId` | 字符串 | Azure Active Directory 中帐户的唯一标识符 |
-| `AccountDisplayName` | 字符串 | 通讯簿中显示的帐户用户的名称。 通常是给定或名字、中间启动和姓氏或姓氏的组合。 |
-| `IsAdminOperation` | 字符串 | 指示活动是否由管理员执行 |
-| `DeviceType` | 字符串 | 基于用途和功能的设备类型，例如"网络设备"、"工作站"、"服务器"、"移动"、"游戏控制台"或"打印机" | 
-| `OSPlatform` | 字符串 | 在设备上运行的操作系统的平台。 此列指示特定操作系统，包括同一系列中的变体，如 Windows 10 和 Windows 7。 |
-| `IPAddress` | 字符串 | 分配给终结点的 IP 地址，在相关的网络通信期间使用 |
-| `IsAnonymousProxy` | 字符串 | 指示 IP 地址是否属于已知匿名代理 |
-| `CountryCode` | 字符串 | 指示客户端 IP 地址已异地分配的国家/地区两个字母的代码 |
-| `City` | 字符串 | 已异地分配客户端 IP 地址的城市 |
-| `Isp` | 字符串 | Internet 服务提供商 (ISP) IP 地址相关联 |
-| `UserAgent` | 字符串 | 来自 Web 浏览器或其他客户端应用程序的用户代理信息 |
-| `ActivityType` | 字符串 | 触发事件的活动类型 |
-| `ActivityObjects` | 字符串 | 记录的活动所涉及的对象列表，如文件或文件夹 |
-| `ObjectName` | 字符串 | 已记录操作应用于的对象的名称 |
-| `ObjectType` | 字符串 | 记录的操作应用于的对象类型，例如文件或文件夹 |
-| `ObjectId` | 字符串 | 记录的操作应用于的对象的唯一标识符 |
-| `ReportId` | 字符串 | 事件的唯一标识符 |
-| `RawEventData` | 字符串 | 来自 JSON 格式的源应用程序或服务的原始事件信息 |
-| `AdditionalFields` | 字符串 | 有关实体或事件的其他信息 |
+| `Application` | string | 执行录制的操作的应用程序 |
+| `ApplicationId` | string | 应用程序的唯一标识符 |
+| `AccountObjectId` | string | Azure Active Directory 中帐户的唯一标识符 |
+| `AccountDisplayName` | string | 通讯簿中显示的帐户用户的名称。 通常是给定或名字、中间启动和姓氏或姓氏的组合。 |
+| `IsAdminOperation` | string | 指示活动是否由管理员执行 |
+| `DeviceType` | string | 基于用途和功能的设备类型，例如"网络设备"、"工作站"、"服务器"、"移动"、"游戏控制台"或"打印机" | 
+| `OSPlatform` | string | 在设备上运行的操作系统的平台。 此列指示特定操作系统，包括同一系列中的变体，如 Windows 10 和 Windows 7。 |
+| `IPAddress` | string | 分配给终结点的 IP 地址，在相关的网络通信期间使用 |
+| `IsAnonymousProxy` | string | 指示 IP 地址是否属于已知匿名代理 |
+| `CountryCode` | string | 指示客户端 IP 地址已异地分配的国家/地区两个字母的代码 |
+| `City` | string | 已异地分配客户端 IP 地址的城市 |
+| `Isp` | string | Internet 服务提供商 (ISP) IP 地址相关联 |
+| `UserAgent` | string | 来自 Web 浏览器或其他客户端应用程序的用户代理信息 |
+| `ActivityType` | string | 触发事件的活动类型 |
+| `ActivityObjects` | string | 记录的活动所涉及的对象列表，如文件或文件夹 |
+| `ObjectName` | string | 已记录操作应用于的对象的名称 |
+| `ObjectType` | string | 记录的操作应用于的对象类型，例如文件或文件夹 |
+| `ObjectId` | string | 记录的操作应用于的对象的唯一标识符 |
+| `ReportId` | string | 事件的唯一标识符 |
+| `RawEventData` | string | 来自 JSON 格式的源应用程序或服务的原始事件信息 |
+| `AdditionalFields` | string | 有关实体或事件的其他信息 |
 
 ## <a name="apps-and-services-covered"></a>涵盖的应用和服务
 

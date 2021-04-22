@@ -1,7 +1,7 @@
 ---
 title: 网络保护问题疑难解答
 description: 用于解决 Microsoft Defender for Endpoint 中的网络保护问题的资源和示例代码。
-keywords: 疑难解答， 错误， 修复， windows defender eg， asr， 规则， hips， 疑难解答， 审核， 排除， 误报， 损坏， 阻止， microsoft defender 终结点， microsoft defender 高级威胁防护
+keywords: 疑难解答， 错误， 修复， windows defender eg， asr， 规则， hips， 疑难解答， 审核， 排除， 误报， 损坏， 阻止， Microsoft Defender for Endpoint
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
@@ -15,12 +15,12 @@ ms.reviewer: oogunrinde
 manager: dansimp
 ms.technology: mde
 ms.topic: how-to
-ms.openlocfilehash: 9efc42441c2cb30f35abf658071088f7f7bbaf00
-ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
+ms.openlocfilehash: f77ce94fda63a9e7e8a9484a67a22eeec136d619
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51760094"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935877"
 ---
 # <a name="troubleshoot-network-protection"></a>网络保护疑难解答
 

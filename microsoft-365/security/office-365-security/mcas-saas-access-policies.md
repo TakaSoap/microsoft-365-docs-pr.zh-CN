@@ -15,12 +15,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: 61509c88ea2289509abd5ec7b6c0dcd54395d5f0
-ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
+ms.openlocfilehash: 414d6ae0586078551c737e45763ea665d5eec4e6
+ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "51599967"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51939550"
 ---
 # <a name="recommended-microsoft-cloud-app-security-policies-for-saas-apps"></a>适用于 SaaS 应用的推荐 Microsoft 云应用安全策略
 Microsoft Cloud App Security 基于 Azure AD 条件访问策略构建，支持使用 SaaS 应用实时监视和控制粒度操作，例如阻止下载、上传、复制和粘贴以及打印。 此功能为具有固有风险的会话添加安全性，例如，当非托管设备或来宾用户访问公司资源时。

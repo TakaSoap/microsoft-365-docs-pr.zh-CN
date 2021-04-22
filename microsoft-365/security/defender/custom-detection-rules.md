@@ -1,7 +1,7 @@
 ---
 title: 在 Microsoft 365 Defender 中创建自定义检测规则
 description: 了解如何创建和管理基于高级搜寻查询的自定义检测规则
-keywords: 高级搜寻， 威胁搜寻， 网络威胁搜寻， Microsoft 威胁防护， microsoft 365， mtp， m365， 搜索， 查询， 遥测， 自定义检测， 规则， 架构， kusto， microsoft 365， Microsoft 威胁防护， RBAC， 权限， Microsoft Defender ATP
+keywords: 高级搜寻， 威胁搜寻， 网络威胁搜寻， Microsoft 365 Defender， microsoft 365， m365， 搜索， 查询， 遥测， 自定义检测， 规则， 架构， kusto， RBAC， 权限， Microsoft Defender for Endpoint
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: bfc8724f8dc27aa2475c293e7370488b2ea392b8
-ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
+ms.openlocfilehash: bcb31b904f8e6156d644864f03143e9fc37ae34b
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51903750"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935709"
 ---
 # <a name="create-and-manage-custom-detections-rules"></a>创建和管理自定义检测规则
 

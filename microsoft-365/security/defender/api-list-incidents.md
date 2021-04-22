@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 4488a552475121adc4a439106bc0bf0d97cb509a
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 7fb0de4f8dc67331e7acca59e70d061fe7c19493
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51054903"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935733"
 ---
 # <a name="list-incidents-api-in-microsoft-365-defender"></a>在 Microsoft 365 Defender 中列出事件 API
 
@@ -61,8 +61,8 @@ API 支持以下 **OData** 运算符：
 
 权限类型 | 权限 | 权限显示名称
 -|-|-
-Application | Incident.Read.All | 读取所有事件
-Application | Incident.ReadWrite.All | 读取和写入所有事件
+应用程序 | Incident.Read.All | 读取所有事件
+应用程序 | Incident.ReadWrite.All | 读取和写入所有事件
 委派（工作或学校帐户） | Incident.Read | 读取事件
 委派（工作或学校帐户） | Incident.ReadWrite | 读取和写入事件
 
@@ -82,7 +82,7 @@ GET /api/incidents
 
 名称 | 类型 | 说明
 -|-|-
-Authorization | String | Bearer {token}。 **必需**
+Authorization | String | Bearer {token}。 **Required**
 
 
 ## <a name="request-body"></a>请求正文
@@ -126,7 +126,7 @@ firstActivity | 警报首次报告在后端更新活动的时间。| 2020-09-04T
 title | 简要标识可用于每个警报的字符串值。 | 勒索软件活动
 说明 | 描述每个警报的字符串值。 | 用户 Test User2 (testUser2@contoso.com) 操作 99 个文件，其多个扩展名以不常见的扩展 *名 herunterladen 结尾*。 这是异常多的文件操作，是潜在勒索软件攻击的表示。
 “类别” | 有关攻击在击杀链上的进度的可视和数值视图。 与 [MITRE ATT&CK™对齐](https://attack.mitre.org/)。 | 影响
-状态 | 将警报分类 (*新建*、*活动或**已解决*) 。 它可以帮助你组织和管理对警报的响应。 | 新式
+状态 | 将警报分类 (*新建*、*活动或**已解决*) 。 它可以帮助你组织和管理对警报的响应。 | 新增
 severity | 指示对资产可能的影响。 严重性越高，影响越大。 通常，严重性级别较高的项目需要最直接的关注。<br>下列值之一 *：Informational、Low、*Medium* 和 *High。*  | 中
 investigationId | 此警报触发的自动调查 ID。 | 1234
 investigationState | 有关调查的当前状态的信息。 下列值之一：Unknown、Terminated、SuccessfullyRemediated、Failed、Failed、PartiallyRemediated、Running、PendingApproval、PendingResource、PartiallyInvestigated、TerminatedByUser、TerminatedBySystem、Queued、InnerFailure、PreexistingAlert、UnsupportedOs、UnsupportedAlertType、SuppressedAlert 。                   | UnsupportedAlertType
@@ -142,7 +142,7 @@ mitreTechniques | 攻击技术，与 [MITRE ATT](https://attack.mitre.org/)&CK �
 
 字段名 | 说明 | 示例值
 -|-|-
-DeviceId | 在 Microsoft Defender ATP 中指定的设备 ID。 | 24c222b0b60fe148eeece49ac83910cc6a7ef491
+DeviceId | 在 Microsoft Defender for Endpoint 中指定的设备 ID。 | 24c222b0b60fe148eeece49ac83910cc6a7ef491
 aadDeviceId |  Azure Active Directory 中指定的[设备 ID。](/azure/active-directory/fundamentals/active-directory-whatis) 仅适用于已加入域的设备。 | 空
 deviceDnsName | 设备的完全限定域名。 | user5cx.middleeast.corp.contoso.com
 osPlatform | 设备正在运行的操作系统平台。| WindowsServer2016
@@ -157,7 +157,7 @@ entities | 已标识为给定警报的一部分或与给定警报相关的所有
 
 字段名 | 说明 | 示例值
 -|-|-
-entityType | 已标识为给定警报的一部分或与给定警报相关的实体。<br>属性值包括：User、Ip、Url、File、Process、MailBox、MailMessage、MailCluster、Registry          | User
+entityType | 已标识为给定警报的一部分或与给定警报相关的实体。<br>属性值包括：User、Ip、Url、File、Process、MailBox、MailMessage、MailCluster、Registry          | 用户
 sha1 | 如果 entityType 为 File ， *则可用*。<br>与文件或进程关联的警报的文件哈希。 | 5de839186691aa96ee2ca6d74f0a38fb8d1bd6dd
 sha256 | 如果 entityType 为 File ， *则可用*。<br>与文件或进程关联的警报的文件哈希。 | 28cb017dfc99073aa1b47c1b30f413e3ce774c4991eb4158de50f9dbb36d8043
 fileName | 如果 entityType 为 File ， *则可用*。<br>与文件或进程关联的警报的文件名 | Detector.UnitTests.dll

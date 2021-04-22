@@ -15,12 +15,12 @@ ms.reviewer: oogunrinde
 manager: dansimp
 ms.technology: mde
 ms.topic: how-to
-ms.openlocfilehash: e6f3d6da2424b2b3b6b7c1f2c9973e4046d6e27f
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 7aeda679d5ce350ef64a2758359390adc4a280f0
+ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51689159"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51939238"
 ---
 # <a name="enable-attack-surface-reduction-rules"></a>启用攻击面减少规则
 
@@ -38,6 +38,15 @@ ms.locfileid: "51689159"
 - Windows 10 企业版 [版本 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) 或更高版本
 - Windows Server [版本 1803 (半年 ](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1803) 频道) 或更高版本
 - [Windows Server 2019](https://docs.microsoft.com/windows-server/get-started-19/whats-new-19)
+
+**要求** 你可以为运行以下任一版本的 Windows 的设备设置攻击面减少规则：
+
+- Windows 10 专业版版本 1709 或更高版本
+- Windows 10 企业版版本 1709 或更高版本
+- Windows Server 版本 1803 (半年频道) 或更高版本
+- Windows Server 2019
+
+尽管攻击面减少规则不需要 Windows E5 许可证，但如果拥有 Windows E5，则获得高级管理功能。 这些功能仅在 Windows E5 中可用，包括 Defender for Endpoint 中提供的监视、分析和工作流，以及 Microsoft 365 安全中心中的报告和配置功能。 这些高级功能不适用于 Windows Professional 或 Windows E3 许可证;但是，如果你有这些许可证，可以使用事件查看器和 Microsoft Defender 防病毒日志查看攻击面减少规则事件。
 
 每个 ASR 规则包含四个设置之一：
 
@@ -108,7 +117,7 @@ ASR 规则支持环境变量和通配符。 有关使用通配符的信息，请
 - 0 ：禁用 (禁用 ASR 规则) 
 - 1：阻止 (启用 ASR 规则) 
 - 2：审核 (评估 ASR 规则在启用后对组织) 
-- 6： (启用 ASR 规则，但允许最终用户绕过阻止) 
+- 6：警告 (启用 ASR 规则，但允许最终用户绕过阻止) 。 警告模式现在适用于大多数 ASR 规则。
 
 使用 [./Vendor/MSFT/Policy/Config/Defender/AttackSurfaceReductionOnlyExclusions](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-attacksurfacereductiononlyexclusions) 配置服务提供程序 (CSP) 添加排除项。
 
@@ -142,7 +151,7 @@ ASR 规则支持环境变量和通配符。 有关使用通配符的信息，请
 
 1. 在组策略管理计算机上，打开组 [策略管理控制台](https://technet.microsoft.com/library/cc731212.aspx)，右键单击要配置的组策略对象， **然后选择编辑**。
 
-2. 在组 **策略管理编辑器中**，转到计算机 **配置，** 然后选择 **管理模板**。
+2. 在 **策略管理编辑器** 中， **计算机配置** 并选择 **管理模板**。
 
 3. 将树展开到 **Windows 组件** Microsoft Defender  >  **防病毒** Microsoft Defender  >  **攻击防护**  >  **攻击面减少**。
 
@@ -159,8 +168,8 @@ ASR 规则支持环境变量和通配符。 有关使用通配符的信息，请
 
 5. 若要从 ASR 规则中排除文件和文件夹，请选择"从攻击 **面** 减少规则中排除文件和路径"设置，将选项设置为 **"已启用"。** 选择 **"显示** "，在"值名称"列中 **输入每个文件或** 文件夹。 在"值"**列中为** 每个项目输入 **0。**
 
-> [!WARNING]
-> 请勿使用引号，因为"值名称"列或"值"列不支持 **引号**。
+   > [!WARNING]
+   > 请勿使用引号，因为"值名称"列或"值"列不支持 **引号**。
 
 ## <a name="powershell"></a>PowerShell
 

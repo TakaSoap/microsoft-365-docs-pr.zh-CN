@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 415a1f555e1a33c103894221086b783aa754cf32
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 1aaae2970cfb2f6da82507eefa87c8d0e2227661
+ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51930133"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51939620"
 ---
 #  <a name="microsoft-defender-for-endpoint-on-android---privacy-information"></a>Android 上的 Microsoft Defender for Endpoint - 隐私信息
 
@@ -70,7 +70,7 @@ Android 上的 Defender for Endpoint 从已配置的 Android 设备收集信息�
 
     -   Azure 租户 ID - 标识 Azure Active Directory 中的组织的 GUID
 
-    -   Microsoft Defender ATP 组织 ID - 与设备所属的企业关联的唯一标识符。 允许 Microsoft 确定问题是否影响一组选定企业以及有多少企业受到影响 
+    -   Microsoft Defender for Endpoint 组织 ID - 与设备所属的企业关联的唯一标识符。 允许 Microsoft 确定问题是否影响一组选定企业以及有多少企业受到影响 
 
     -   用户主体名称 – 用户的电子邮件 ID
 

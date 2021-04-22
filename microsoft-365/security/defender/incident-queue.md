@@ -1,7 +1,7 @@
 ---
 title: 确定 Microsoft 365 Defender 中事件的优先级
 description: 了解如何在 Microsoft 365 Defender 中筛选事件队列中的事件
-keywords: 事件, 队列, 概述, 设备, 标识, 用户, 邮箱, 电子邮件, 事件
+keywords: 事件， 队列， 概述， 设备， 标识， 用户， 邮箱， 电子邮件， 事件， 分析， 响应
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 3b381749108d4a75024d9a546c0d3f1631c948ed
-ms.sourcegitcommit: 76f3c75413cc960289489d0ca29efadb8a9a5b31
+ms.openlocfilehash: c3efff1e7ebb3a5e868ede018512d12cf38e38fc
+ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2021
-ms.locfileid: "51887253"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51939702"
 ---
 # <a name="prioritize-incidents-in-microsoft-365-defender"></a>确定 Microsoft 365 Defender 中事件的优先级
 
@@ -81,45 +81,11 @@ Microsoft 365 Defender 应用相关分析，将来自不同产品的相关警报
 | 状态 | 可以根据事件的状态选择限制所显示事件的列表，以查看哪些事件处于活动状态/已解决状态。 |
 |||
 
-## <a name="incident-response-workflow"></a>事件响应工作流
-
-下面是响应事件的典型工作流：
-
-1. 确定并会审最高优先级的事件，以便进行调查和解决。
-2. 对于每个高优先级事件，开始 [调查](investigate-incidents.md)：
-
-   a. 查看事件的摘要，了解事件的范围和严重性以及受影响实体 ("摘要"选项卡) 。 
-
-   b. 开始查看警报以了解警报的来源、范围和严重性 (**警报** 选项卡) 。
-
-   c. 根据需要，在"设备、用户"和"邮箱"选项卡上 (受影响的设备、用户和) 。  
-
-   d. 请参阅 Microsoft 365 Defender 如何自动解决"调查"选项卡 (**警报**) 。
-   
-   e. 根据需要，使用事件数据集中的信息获取"证据和 (**响应** "选项卡) 。
-
-   调查时，应关注：
-
-   - 包含：减少对租户的任何额外影响。
-   - 小安：删除安全威胁。
-   - 恢复：将租户资源还原到事件发生前的状态。
-
-3. 解决事件后，请花时间：
-
-   - 了解攻击的类型及其影响。
-   - 研究安全社区中的攻击，以寻找安全攻击趋势。
-   - 重新调用用于解决事件的工作流，并根据需要更新标准工作流和手册。
-   - 确定是否需要更改安全状态，并采取措施来实现这些更改。
-
-以下是基本过程的摘要。
-
-:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents-process.png" alt-text="调查事件的基本过程":::
-
 ## <a name="next-step"></a>后续步骤
 
-确定哪个事件需要最高优先级后，选择它并开始 [调查](investigate-incidents.md)。
+确定哪个事件需要最高优先级后，选择它[并开始分析。](investigate-incidents.md)
 
 ## <a name="see-also"></a>另请参阅
 - [事件概述](incidents-overview.md)
-- [调查事件](investigate-incidents.md)
+- [分析事件](investigate-incidents.md)
 - [管理事件](manage-incidents.md)

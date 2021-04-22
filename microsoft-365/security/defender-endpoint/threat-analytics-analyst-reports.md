@@ -17,19 +17,18 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 2ebc826e21246381d3220855f7e8cb01741f12e9
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: 6529f0badd94d6ca4d95dfbb562a9d352fedb76a
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51499380"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935889"
 ---
 # <a name="understand-the-analyst-report-in-threat-analytics"></a>了解威胁分析中的分析员报告
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **适用于：**
-- [Microsoft Defender 高级威胁防护 (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
