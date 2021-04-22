@@ -1,7 +1,7 @@
 ---
-title: 使用 Microsoft Defender for Endpoint for Mac 检测并阻止可能不需要的应用程序
-description: 使用 Microsoft Defender for Endpoint for Mac (并阻止 PUA) 可能不需要的应用程序。
-keywords: microsoft， defender， atp， mac， pua， pus
+title: 使用 Mac 上的 Microsoft Defender for Endpoint 检测并阻止可能不需要的应用程序
+description: 使用适用于 Mac 的终结点上的 Microsoft Defender (并阻止 PUA) 可能不需要的应用程序。
+keywords: microsoft， defender， Microsoft Defender for Endpoint， mac， pua， pus
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,61 +18,61 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 93462b37c9150f1e38239a0ca70b96ad8d07830f
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: 2d32dd96cd506ebf1752e48d2b7c66208b1abc11
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51862219"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934533"
 ---
-# <a name="detect-and-block-potentially-unwanted-applications-with-microsoft-defender-for-endpoint-on-macos"></a><span data-ttu-id="27e3e-104">使用 macOS 上的 Microsoft Defender for Endpoint 检测并阻止可能不需要的应用程序</span><span class="sxs-lookup"><span data-stu-id="27e3e-104">Detect and block potentially unwanted applications with Microsoft Defender for Endpoint on macOS</span></span>
+# <a name="detect-and-block-potentially-unwanted-applications-with-microsoft-defender-for-endpoint-on-macos"></a><span data-ttu-id="28c6c-104">使用 macOS 上的 Microsoft Defender for Endpoint 检测并阻止可能不需要的应用程序</span><span class="sxs-lookup"><span data-stu-id="28c6c-104">Detect and block potentially unwanted applications with Microsoft Defender for Endpoint on macOS</span></span>
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-<span data-ttu-id="27e3e-105">**适用于：**</span><span class="sxs-lookup"><span data-stu-id="27e3e-105">**Applies to:**</span></span>
-- [<span data-ttu-id="27e3e-106">Microsoft Defender for Endpoint</span><span class="sxs-lookup"><span data-stu-id="27e3e-106">Microsoft Defender for Endpoint</span></span>](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [<span data-ttu-id="27e3e-107">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="27e3e-107">Microsoft 365 Defender</span></span>](https://go.microsoft.com/fwlink/?linkid=2118804)
+<span data-ttu-id="28c6c-105">**适用于：**</span><span class="sxs-lookup"><span data-stu-id="28c6c-105">**Applies to:**</span></span>
+- [<span data-ttu-id="28c6c-106">Microsoft Defender for Endpoint</span><span class="sxs-lookup"><span data-stu-id="28c6c-106">Microsoft Defender for Endpoint</span></span>](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [<span data-ttu-id="28c6c-107">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="28c6c-107">Microsoft 365 Defender</span></span>](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> <span data-ttu-id="27e3e-108">想要体验 Microsoft Defender for Endpoint？</span><span class="sxs-lookup"><span data-stu-id="27e3e-108">Want to experience Microsoft Defender for Endpoint?</span></span> [<span data-ttu-id="27e3e-109">注册免费试用版。</span><span class="sxs-lookup"><span data-stu-id="27e3e-109">Sign up for a free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+> <span data-ttu-id="28c6c-108">想要体验 Microsoft Defender for Endpoint？</span><span class="sxs-lookup"><span data-stu-id="28c6c-108">Want to experience Microsoft Defender for Endpoint?</span></span> [<span data-ttu-id="28c6c-109">注册免费试用版。</span><span class="sxs-lookup"><span data-stu-id="28c6c-109">Sign up for a free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 
-<span data-ttu-id="27e3e-110">macOS 上的 Microsoft Defender for Endpoint (PUA) 保护功能可能不需要的应用程序可以检测和阻止网络中终结点上的 PUA 文件。</span><span class="sxs-lookup"><span data-stu-id="27e3e-110">The potentially unwanted application (PUA) protection feature in Microsoft Defender for Endpoint on macOS can detect and block PUA files on endpoints in your network.</span></span>
+<span data-ttu-id="28c6c-110">macOS 上的 Microsoft Defender for Endpoint (PUA) 保护功能可能不需要的应用程序可以检测和阻止网络中终结点上的 PUA 文件。</span><span class="sxs-lookup"><span data-stu-id="28c6c-110">The potentially unwanted application (PUA) protection feature in Microsoft Defender for Endpoint on macOS can detect and block PUA files on endpoints in your network.</span></span>
 
-<span data-ttu-id="27e3e-111">这些应用程序不被视为病毒、恶意软件或其他类型的威胁，但可能会对终结点执行对性能或使用产生不利影响的操作。</span><span class="sxs-lookup"><span data-stu-id="27e3e-111">These applications are not considered viruses, malware, or other types of threats, but might perform actions on endpoints that adversely affect their performance or use.</span></span> <span data-ttu-id="27e3e-112">PUA 还可以指信誉不佳的应用程序。</span><span class="sxs-lookup"><span data-stu-id="27e3e-112">PUA can also refer to applications that are considered to have poor reputation.</span></span>
+<span data-ttu-id="28c6c-111">这些应用程序不被视为病毒、恶意软件或其他类型的威胁，但可能会对终结点执行对性能或使用产生不利影响的操作。</span><span class="sxs-lookup"><span data-stu-id="28c6c-111">These applications are not considered viruses, malware, or other types of threats, but might perform actions on endpoints that adversely affect their performance or use.</span></span> <span data-ttu-id="28c6c-112">PUA 还可以指信誉不佳的应用程序。</span><span class="sxs-lookup"><span data-stu-id="28c6c-112">PUA can also refer to applications that are considered to have poor reputation.</span></span>
 
-<span data-ttu-id="27e3e-113">这些应用程序会增加网络受到恶意软件感染的风险，导致恶意软件感染更难识别，并且可能会浪费 IT 资源来清理应用程序。</span><span class="sxs-lookup"><span data-stu-id="27e3e-113">These applications can increase the risk of your network being infected with malware, cause malware infections to be harder to identify, and can waste IT resources in cleaning up the applications.</span></span>
+<span data-ttu-id="28c6c-113">这些应用程序会增加网络受到恶意软件感染的风险，导致恶意软件感染更难识别，并且可能会浪费 IT 资源来清理应用程序。</span><span class="sxs-lookup"><span data-stu-id="28c6c-113">These applications can increase the risk of your network being infected with malware, cause malware infections to be harder to identify, and can waste IT resources in cleaning up the applications.</span></span>
 
-## <a name="how-it-works"></a><span data-ttu-id="27e3e-114">运作方式</span><span class="sxs-lookup"><span data-stu-id="27e3e-114">How it works</span></span>
+## <a name="how-it-works"></a><span data-ttu-id="28c6c-114">运作方式</span><span class="sxs-lookup"><span data-stu-id="28c6c-114">How it works</span></span>
 
-<span data-ttu-id="27e3e-115">macOS 上的 Microsoft Defender for Endpoint 可以检测和报告 PUA 文件。</span><span class="sxs-lookup"><span data-stu-id="27e3e-115">Microsoft Defender for Endpoint on macOS can detect and report PUA files.</span></span> <span data-ttu-id="27e3e-116">在阻止模式下配置时，PUA 文件将移动到隔离区。</span><span class="sxs-lookup"><span data-stu-id="27e3e-116">When configured in blocking mode, PUA files are moved to the quarantine.</span></span>
+<span data-ttu-id="28c6c-115">macOS 上的 Microsoft Defender for Endpoint 可以检测和报告 PUA 文件。</span><span class="sxs-lookup"><span data-stu-id="28c6c-115">Microsoft Defender for Endpoint on macOS can detect and report PUA files.</span></span> <span data-ttu-id="28c6c-116">在阻止模式下配置时，PUA 文件将移动到隔离区。</span><span class="sxs-lookup"><span data-stu-id="28c6c-116">When configured in blocking mode, PUA files are moved to the quarantine.</span></span>
 
-<span data-ttu-id="27e3e-117">在终结点上检测到 PUA 时，macOS 上的 Microsoft Defender for Endpoint 会向用户显示通知，除非已禁用通知。</span><span class="sxs-lookup"><span data-stu-id="27e3e-117">When a PUA is detected on an endpoint, Microsoft Defender for Endpoint on macOS presents a notification to the user, unless notifications have been disabled.</span></span> <span data-ttu-id="27e3e-118">威胁名称将包含单词"Application"。</span><span class="sxs-lookup"><span data-stu-id="27e3e-118">The threat name will contain the word "Application".</span></span>
+<span data-ttu-id="28c6c-117">在终结点上检测到 PUA 时，macOS 上的 Microsoft Defender for Endpoint 会向用户显示通知，除非已禁用通知。</span><span class="sxs-lookup"><span data-stu-id="28c6c-117">When a PUA is detected on an endpoint, Microsoft Defender for Endpoint on macOS presents a notification to the user, unless notifications have been disabled.</span></span> <span data-ttu-id="28c6c-118">威胁名称将包含单词"Application"。</span><span class="sxs-lookup"><span data-stu-id="28c6c-118">The threat name will contain the word "Application".</span></span>
 
-## <a name="configure-pua-protection"></a><span data-ttu-id="27e3e-119">配置 PUA 保护</span><span class="sxs-lookup"><span data-stu-id="27e3e-119">Configure PUA protection</span></span>
+## <a name="configure-pua-protection"></a><span data-ttu-id="28c6c-119">配置 PUA 保护</span><span class="sxs-lookup"><span data-stu-id="28c6c-119">Configure PUA protection</span></span>
 
-<span data-ttu-id="27e3e-120">可通过以下方法之一配置 macOS 上适用于终结点的 Microsoft Defender 中的 PUA 保护：</span><span class="sxs-lookup"><span data-stu-id="27e3e-120">PUA protection in Microsoft Defender for Endpoint on macOS can be configured in one of the following ways:</span></span>
+<span data-ttu-id="28c6c-120">可通过以下方法之一配置 macOS 上适用于终结点的 Microsoft Defender 中的 PUA 保护：</span><span class="sxs-lookup"><span data-stu-id="28c6c-120">PUA protection in Microsoft Defender for Endpoint on macOS can be configured in one of the following ways:</span></span>
 
-- <span data-ttu-id="27e3e-121">**关闭**：PUA 保护已禁用。</span><span class="sxs-lookup"><span data-stu-id="27e3e-121">**Off**: PUA protection is disabled.</span></span>
-- <span data-ttu-id="27e3e-122">**审核**：PUA 文件在产品日志中报告，但不在 Microsoft Defender 安全中心中报告。</span><span class="sxs-lookup"><span data-stu-id="27e3e-122">**Audit**: PUA files are reported in the product logs, but not in Microsoft Defender Security Center.</span></span> <span data-ttu-id="27e3e-123">不会向用户显示任何通知，产品不会采取任何操作。</span><span class="sxs-lookup"><span data-stu-id="27e3e-123">No notification is presented to the user and no action is taken by the product.</span></span>
-- <span data-ttu-id="27e3e-124">**阻止**：PUA 文件在产品日志和 Microsoft Defender 安全中心中报告。</span><span class="sxs-lookup"><span data-stu-id="27e3e-124">**Block**: PUA files are reported in the product logs and in Microsoft Defender Security Center.</span></span> <span data-ttu-id="27e3e-125">用户会收到通知，产品会采取操作。</span><span class="sxs-lookup"><span data-stu-id="27e3e-125">The user is presented with a notification and action is taken by the product.</span></span>
+- <span data-ttu-id="28c6c-121">**关闭**：PUA 保护已禁用。</span><span class="sxs-lookup"><span data-stu-id="28c6c-121">**Off**: PUA protection is disabled.</span></span>
+- <span data-ttu-id="28c6c-122">**审核**：PUA 文件在产品日志中报告，但不在 Microsoft Defender 安全中心中报告。</span><span class="sxs-lookup"><span data-stu-id="28c6c-122">**Audit**: PUA files are reported in the product logs, but not in Microsoft Defender Security Center.</span></span> <span data-ttu-id="28c6c-123">不会向用户显示任何通知，产品不会采取任何操作。</span><span class="sxs-lookup"><span data-stu-id="28c6c-123">No notification is presented to the user and no action is taken by the product.</span></span>
+- <span data-ttu-id="28c6c-124">**阻止**：PUA 文件在产品日志和 Microsoft Defender 安全中心中报告。</span><span class="sxs-lookup"><span data-stu-id="28c6c-124">**Block**: PUA files are reported in the product logs and in Microsoft Defender Security Center.</span></span> <span data-ttu-id="28c6c-125">用户会收到通知，产品会采取操作。</span><span class="sxs-lookup"><span data-stu-id="28c6c-125">The user is presented with a notification and action is taken by the product.</span></span>
 
 >[!WARNING]
-><span data-ttu-id="27e3e-126">默认情况下，PUA 保护在 **审核模式下配置** 。</span><span class="sxs-lookup"><span data-stu-id="27e3e-126">By default, PUA protection is configured in **Audit** mode.</span></span>
+><span data-ttu-id="28c6c-126">默认情况下，PUA 保护在 **审核模式下配置** 。</span><span class="sxs-lookup"><span data-stu-id="28c6c-126">By default, PUA protection is configured in **Audit** mode.</span></span>
 
-<span data-ttu-id="27e3e-127">你可以配置从命令行或管理控制台处理 PUA 文件的方式。</span><span class="sxs-lookup"><span data-stu-id="27e3e-127">You can configure how PUA files are handled from the command line or from the management console.</span></span>
+<span data-ttu-id="28c6c-127">你可以配置从命令行或管理控制台处理 PUA 文件的方式。</span><span class="sxs-lookup"><span data-stu-id="28c6c-127">You can configure how PUA files are handled from the command line or from the management console.</span></span>
 
-### <a name="use-the-command-line-tool-to-configure-pua-protection"></a><span data-ttu-id="27e3e-128">使用命令行工具配置 PUA 保护：</span><span class="sxs-lookup"><span data-stu-id="27e3e-128">Use the command-line tool to configure PUA protection:</span></span>
+### <a name="use-the-command-line-tool-to-configure-pua-protection"></a><span data-ttu-id="28c6c-128">使用命令行工具配置 PUA 保护：</span><span class="sxs-lookup"><span data-stu-id="28c6c-128">Use the command-line tool to configure PUA protection:</span></span>
 
-<span data-ttu-id="27e3e-129">在终端中，执行以下命令以配置 PUA 保护：</span><span class="sxs-lookup"><span data-stu-id="27e3e-129">In Terminal, execute the following command to configure PUA protection:</span></span>
+<span data-ttu-id="28c6c-129">在终端中，执行以下命令以配置 PUA 保护：</span><span class="sxs-lookup"><span data-stu-id="28c6c-129">In Terminal, execute the following command to configure PUA protection:</span></span>
 
 ```bash
 mdatp threat policy set --type potentially_unwanted_application --action [off|audit|block]
 ```
 
-### <a name="use-the-management-console-to-configure-pua-protection"></a><span data-ttu-id="27e3e-130">使用管理控制台配置 PUA 保护：</span><span class="sxs-lookup"><span data-stu-id="27e3e-130">Use the management console to configure PUA protection:</span></span>
+### <a name="use-the-management-console-to-configure-pua-protection"></a><span data-ttu-id="28c6c-130">使用管理控制台配置 PUA 保护：</span><span class="sxs-lookup"><span data-stu-id="28c6c-130">Use the management console to configure PUA protection:</span></span>
 
-<span data-ttu-id="27e3e-131">在你的企业中，你可以从管理控制台（如 JAMF 或 Intune）配置 PUA 保护，类似于配置其他产品设置的方式。</span><span class="sxs-lookup"><span data-stu-id="27e3e-131">In your enterprise, you can configure PUA protection from a management console, such as JAMF or Intune, similarly to how other product settings are configured.</span></span> <span data-ttu-id="27e3e-132">有关详细信息，请参阅在 macOS 上设置 Microsoft Defender for Endpoint 的首选项主题[中的威胁类型](mac-preferences.md)设置部分。 [](mac-preferences.md#threat-type-settings)</span><span class="sxs-lookup"><span data-stu-id="27e3e-132">For more information, see the [Threat type settings](mac-preferences.md#threat-type-settings) section of the [Set preferences for Microsoft Defender for Endpoint on macOS](mac-preferences.md) topic.</span></span>
+<span data-ttu-id="28c6c-131">在你的企业中，你可以从管理控制台（如 JAMF 或 Intune）配置 PUA 保护，类似于配置其他产品设置的方式。</span><span class="sxs-lookup"><span data-stu-id="28c6c-131">In your enterprise, you can configure PUA protection from a management console, such as JAMF or Intune, similarly to how other product settings are configured.</span></span> <span data-ttu-id="28c6c-132">有关详细信息，请参阅在 macOS 上设置 Microsoft Defender for Endpoint 的首选项主题[中的威胁类型](mac-preferences.md)设置部分。 [](mac-preferences.md#threat-type-settings)</span><span class="sxs-lookup"><span data-stu-id="28c6c-132">For more information, see the [Threat type settings](mac-preferences.md#threat-type-settings) section of the [Set preferences for Microsoft Defender for Endpoint on macOS](mac-preferences.md) topic.</span></span>
 
-## <a name="related-topics"></a><span data-ttu-id="27e3e-133">相关主题</span><span class="sxs-lookup"><span data-stu-id="27e3e-133">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="28c6c-133">相关主题</span><span class="sxs-lookup"><span data-stu-id="28c6c-133">Related topics</span></span>
 
-- [<span data-ttu-id="27e3e-134">在 macOS 上设置适用于终结点的 Microsoft Defender 的首选项</span><span class="sxs-lookup"><span data-stu-id="27e3e-134">Set preferences for Microsoft Defender for Endpoint on macOS</span></span>](mac-preferences.md)
+- [<span data-ttu-id="28c6c-134">在 macOS 上设置适用于终结点的 Microsoft Defender 的首选项</span><span class="sxs-lookup"><span data-stu-id="28c6c-134">Set preferences for Microsoft Defender for Endpoint on macOS</span></span>](mac-preferences.md)
