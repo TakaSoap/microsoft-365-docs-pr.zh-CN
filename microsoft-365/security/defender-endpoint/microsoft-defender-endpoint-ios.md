@@ -1,8 +1,8 @@
 ---
 title: iOS 上的 Microsoft Defender for Endpoint
 ms.reviewer: ''
-description: 介绍如何安装和使用适用于 iOS 的终结点的 Microsoft Defender
-keywords: microsoft， defender， atp， ios， 概述， 安装， 部署， 卸载， intune
+description: 介绍如何在 iOS 上安装和使用 Microsoft Defender for Endpoint
+keywords: microsoft， defender， Microsoft Defender for Endpoint， ios， 概述， 安装， 部署， 卸载， intune
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -19,70 +19,70 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: a04d939d5c25341f07090ac896cfb80b43ab1a1c
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: cdf32e6daa26eb369d66a4b6c0ff3991093c67f9
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51861371"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935265"
 ---
-# <a name="microsoft-defender-for-endpoint-on-ios"></a><span data-ttu-id="ec611-104">iOS 上的 Microsoft Defender for Endpoint</span><span class="sxs-lookup"><span data-stu-id="ec611-104">Microsoft Defender for Endpoint on iOS</span></span>
+# <a name="microsoft-defender-for-endpoint-on-ios"></a><span data-ttu-id="236ab-104">iOS 上的 Microsoft Defender for Endpoint</span><span class="sxs-lookup"><span data-stu-id="236ab-104">Microsoft Defender for Endpoint on iOS</span></span>
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-<span data-ttu-id="ec611-105">**适用于：**</span><span class="sxs-lookup"><span data-stu-id="ec611-105">**Applies to:**</span></span>
-- [<span data-ttu-id="ec611-106">Microsoft Defender for Endpoint</span><span class="sxs-lookup"><span data-stu-id="ec611-106">Microsoft Defender for Endpoint</span></span>](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [<span data-ttu-id="ec611-107">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="ec611-107">Microsoft 365 Defender</span></span>](https://go.microsoft.com/fwlink/?linkid=2118804)
+<span data-ttu-id="236ab-105">**适用于：**</span><span class="sxs-lookup"><span data-stu-id="236ab-105">**Applies to:**</span></span>
+- [<span data-ttu-id="236ab-106">Microsoft Defender for Endpoint</span><span class="sxs-lookup"><span data-stu-id="236ab-106">Microsoft Defender for Endpoint</span></span>](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [<span data-ttu-id="236ab-107">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="236ab-107">Microsoft 365 Defender</span></span>](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> <span data-ttu-id="ec611-108">想要体验 Microsoft Defender for Endpoint？</span><span class="sxs-lookup"><span data-stu-id="ec611-108">Want to experience Microsoft Defender for Endpoint?</span></span> [<span data-ttu-id="ec611-109">注册免费试用版。</span><span class="sxs-lookup"><span data-stu-id="ec611-109">Sign up for a free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> <span data-ttu-id="236ab-108">想要体验 Microsoft Defender for Endpoint？</span><span class="sxs-lookup"><span data-stu-id="236ab-108">Want to experience Microsoft Defender for Endpoint?</span></span> [<span data-ttu-id="236ab-109">注册免费试用版。</span><span class="sxs-lookup"><span data-stu-id="236ab-109">Sign up for a free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-<span data-ttu-id="ec611-110">**iOS 上的 Microsoft Defender for Endpoint** 将提供针对网站、电子邮件和应用中的网络钓鱼和不安全网络连接的防护。</span><span class="sxs-lookup"><span data-stu-id="ec611-110">**Microsoft Defender for Endpoint on iOS** will offer protection against phishing and unsafe network connections from websites, emails, and apps.</span></span> <span data-ttu-id="ec611-111">所有警报都将通过 Microsoft Defender 安全中心中的单个窗口窗格提供。</span><span class="sxs-lookup"><span data-stu-id="ec611-111">All alerts will be available through a single pane of glass in the Microsoft Defender Security Center.</span></span> <span data-ttu-id="ec611-112">该门户为安全团队提供了 iOS 设备上威胁的集中视图以及其他平台。</span><span class="sxs-lookup"><span data-stu-id="ec611-112">The portal gives security teams a centralized view of threats on iOS devices along with other platforms.</span></span>
+<span data-ttu-id="236ab-110">**iOS 上的 Microsoft Defender for Endpoint** 将提供针对网站、电子邮件和应用中的网络钓鱼和不安全网络连接的防护。</span><span class="sxs-lookup"><span data-stu-id="236ab-110">**Microsoft Defender for Endpoint on iOS** will offer protection against phishing and unsafe network connections from websites, emails, and apps.</span></span> <span data-ttu-id="236ab-111">所有警报都将通过 Microsoft Defender 安全中心中的单个窗口窗格提供。</span><span class="sxs-lookup"><span data-stu-id="236ab-111">All alerts will be available through a single pane of glass in the Microsoft Defender Security Center.</span></span> <span data-ttu-id="236ab-112">该门户为安全团队提供了 iOS 设备上威胁的集中视图以及其他平台。</span><span class="sxs-lookup"><span data-stu-id="236ab-112">The portal gives security teams a centralized view of threats on iOS devices along with other platforms.</span></span>
 
 > [!CAUTION]
-> <span data-ttu-id="ec611-113">在 iOS 上运行其他第三方终结点保护产品以及 Defender for Endpoint 可能会导致性能问题和不可预知的系统错误。</span><span class="sxs-lookup"><span data-stu-id="ec611-113">Running other third-party endpoint protection products alongside Defender for Endpoint on iOS is likely to cause performance problems and unpredictable system errors.</span></span>
+> <span data-ttu-id="236ab-113">在 iOS 上运行其他第三方终结点保护产品以及 Defender for Endpoint 可能会导致性能问题和不可预知的系统错误。</span><span class="sxs-lookup"><span data-stu-id="236ab-113">Running other third-party endpoint protection products alongside Defender for Endpoint on iOS is likely to cause performance problems and unpredictable system errors.</span></span>
 
-## <a name="pre-requisites"></a><span data-ttu-id="ec611-114">先决条件</span><span class="sxs-lookup"><span data-stu-id="ec611-114">Pre-requisites</span></span>
+## <a name="pre-requisites"></a><span data-ttu-id="236ab-114">先决条件</span><span class="sxs-lookup"><span data-stu-id="236ab-114">Pre-requisites</span></span>
 
-<span data-ttu-id="ec611-115">**对于最终用户**</span><span class="sxs-lookup"><span data-stu-id="ec611-115">**For End Users**</span></span>
+<span data-ttu-id="236ab-115">**对于最终用户**</span><span class="sxs-lookup"><span data-stu-id="236ab-115">**For End Users**</span></span>
 
-- <span data-ttu-id="ec611-116">分配给最终用户的 Microsoft Defender for Endpoint 许可证 (应用的) 许可证。</span><span class="sxs-lookup"><span data-stu-id="ec611-116">Microsoft Defender for Endpoint license assigned to the end user(s) of the app.</span></span> <span data-ttu-id="ec611-117">请参阅 [Microsoft Defender for Endpoint 许可要求](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/minimum-requirements#licensing-requirements)。</span><span class="sxs-lookup"><span data-stu-id="ec611-117">See [Microsoft Defender for Endpoint licensing requirements](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/minimum-requirements#licensing-requirements).</span></span>
+- <span data-ttu-id="236ab-116">分配给最终用户的 Microsoft Defender for Endpoint 许可证 (应用的) 许可证。</span><span class="sxs-lookup"><span data-stu-id="236ab-116">Microsoft Defender for Endpoint license assigned to the end user(s) of the app.</span></span> <span data-ttu-id="236ab-117">请参阅 [Microsoft Defender for Endpoint 许可要求](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/minimum-requirements#licensing-requirements)。</span><span class="sxs-lookup"><span data-stu-id="236ab-117">See [Microsoft Defender for Endpoint licensing requirements](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/minimum-requirements#licensing-requirements).</span></span>
 
-- <span data-ttu-id="ec611-118">设备 (设备) Intune 公司门户[](https://docs.microsoft.com/mem/intune/user-help/enroll-your-device-in-intune-ios)应用注册，以强制执行 Intune 设备合规性策略。</span><span class="sxs-lookup"><span data-stu-id="ec611-118">Device(s) are [enrolled](https://docs.microsoft.com/mem/intune/user-help/enroll-your-device-in-intune-ios) via the Intune Company Portal app to enforce Intune device compliance policies.</span></span> <span data-ttu-id="ec611-119">这需要为最终用户分配 Microsoft Intune 许可证。</span><span class="sxs-lookup"><span data-stu-id="ec611-119">This requires the end user to be assigned a Microsoft Intune license.</span></span>
-    - <span data-ttu-id="ec611-120">可以从 Apple App Store 下载 Intune 公司 [门户应用](https://apps.apple.com/us/app/intune-company-portal/id719171358)。</span><span class="sxs-lookup"><span data-stu-id="ec611-120">Intune Company Portal app can be downloaded from the [Apple App Store](https://apps.apple.com/us/app/intune-company-portal/id719171358).</span></span>
-    - <span data-ttu-id="ec611-121">请注意，Apple 不允许重定向用户从应用商店下载其他应用，因此在载入 Microsoft Defender for Endpoint 应用之前，需要由用户完成此步骤。</span><span class="sxs-lookup"><span data-stu-id="ec611-121">Note that Apple does not allow redirecting users to download other apps from the app store and hence this step needs to be done by the user before onboarding to Microsoft Defender for Endpoint app.</span></span>
+- <span data-ttu-id="236ab-118">设备 (设备) Intune 公司门户[](https://docs.microsoft.com/mem/intune/user-help/enroll-your-device-in-intune-ios)应用注册，以强制执行 Intune 设备合规性策略。</span><span class="sxs-lookup"><span data-stu-id="236ab-118">Device(s) are [enrolled](https://docs.microsoft.com/mem/intune/user-help/enroll-your-device-in-intune-ios) via the Intune Company Portal app to enforce Intune device compliance policies.</span></span> <span data-ttu-id="236ab-119">这需要为最终用户分配 Microsoft Intune 许可证。</span><span class="sxs-lookup"><span data-stu-id="236ab-119">This requires the end user to be assigned a Microsoft Intune license.</span></span>
+    - <span data-ttu-id="236ab-120">可以从 Apple App Store 下载 Intune 公司 [门户应用](https://apps.apple.com/us/app/intune-company-portal/id719171358)。</span><span class="sxs-lookup"><span data-stu-id="236ab-120">Intune Company Portal app can be downloaded from the [Apple App Store](https://apps.apple.com/us/app/intune-company-portal/id719171358).</span></span>
+    - <span data-ttu-id="236ab-121">请注意，Apple 不允许重定向用户从应用商店下载其他应用，因此在载入 Microsoft Defender for Endpoint 应用之前，需要由用户完成此步骤。</span><span class="sxs-lookup"><span data-stu-id="236ab-121">Note that Apple does not allow redirecting users to download other apps from the app store and hence this step needs to be done by the user before onboarding to Microsoft Defender for Endpoint app.</span></span>
 
-- <span data-ttu-id="ec611-122">若要详细了解如何分配许可证，请参阅 [向用户分配许可证](https://docs.microsoft.com/azure/active-directory/users-groups-roles/licensing-groups-assign)。</span><span class="sxs-lookup"><span data-stu-id="ec611-122">For more information on how to assign licenses, see [Assign licenses to users](https://docs.microsoft.com/azure/active-directory/users-groups-roles/licensing-groups-assign).</span></span>
+- <span data-ttu-id="236ab-122">若要详细了解如何分配许可证，请参阅 [向用户分配许可证](https://docs.microsoft.com/azure/active-directory/users-groups-roles/licensing-groups-assign)。</span><span class="sxs-lookup"><span data-stu-id="236ab-122">For more information on how to assign licenses, see [Assign licenses to users](https://docs.microsoft.com/azure/active-directory/users-groups-roles/licensing-groups-assign).</span></span>
 
-<span data-ttu-id="ec611-123">**对于管理员**</span><span class="sxs-lookup"><span data-stu-id="ec611-123">**For Administrators**</span></span>
+<span data-ttu-id="236ab-123">**对于管理员**</span><span class="sxs-lookup"><span data-stu-id="236ab-123">**For Administrators**</span></span>
 
-- <span data-ttu-id="ec611-124">访问 Microsoft Defender 安全中心门户。</span><span class="sxs-lookup"><span data-stu-id="ec611-124">Access to the Microsoft Defender Security Center portal.</span></span>
+- <span data-ttu-id="236ab-124">访问 Microsoft Defender 安全中心门户。</span><span class="sxs-lookup"><span data-stu-id="236ab-124">Access to the Microsoft Defender Security Center portal.</span></span>
 
     > [!NOTE]
-    > <span data-ttu-id="ec611-125">Microsoft Intune 是唯一受支持的移动设备管理 (MDM) 解决方案，用于在 iOS 上部署 Microsoft Defender for Endpoint。</span><span class="sxs-lookup"><span data-stu-id="ec611-125">Microsoft Intune is the only supported Mobile Device Management (MDM) solution for deploying Microsoft Defender for Endpoint on iOS.</span></span> <span data-ttu-id="ec611-126">目前，仅支持在 Intune 中对与 iOS 相关的设备合规性策略强制实施 Defender for Endpoint 的设备。</span><span class="sxs-lookup"><span data-stu-id="ec611-126">Currently only enrolled devices are supported for enforcing Defender for Endpoint on iOS related device compliance policies in Intune.</span></span>
+    > <span data-ttu-id="236ab-125">Microsoft Intune 是唯一受支持的移动设备管理 (MDM) 解决方案，用于在 iOS 上部署 Microsoft Defender for Endpoint。</span><span class="sxs-lookup"><span data-stu-id="236ab-125">Microsoft Intune is the only supported Mobile Device Management (MDM) solution for deploying Microsoft Defender for Endpoint on iOS.</span></span> <span data-ttu-id="236ab-126">目前，仅支持在 Intune 中对与 iOS 相关的设备合规性策略强制实施 Defender for Endpoint 的设备。</span><span class="sxs-lookup"><span data-stu-id="236ab-126">Currently only enrolled devices are supported for enforcing Defender for Endpoint on iOS related device compliance policies in Intune.</span></span>
 
-- <span data-ttu-id="ec611-127">访问 [Microsoft Endpoint Manager 管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)，以将应用部署到组织中注册的用户组。</span><span class="sxs-lookup"><span data-stu-id="ec611-127">Access to [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431), to deploy the app to enrolled user groups in your organization.</span></span>
+- <span data-ttu-id="236ab-127">访问 [Microsoft Endpoint Manager 管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)，以将应用部署到组织中注册的用户组。</span><span class="sxs-lookup"><span data-stu-id="236ab-127">Access to [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431), to deploy the app to enrolled user groups in your organization.</span></span>
 
-<span data-ttu-id="ec611-128">**系统要求**</span><span class="sxs-lookup"><span data-stu-id="ec611-128">**System Requirements**</span></span>
+<span data-ttu-id="236ab-128">**系统要求**</span><span class="sxs-lookup"><span data-stu-id="236ab-128">**System Requirements**</span></span>
 
-- <span data-ttu-id="ec611-129">运行 iOS 11.0 及以上设备的 iOS 设备。</span><span class="sxs-lookup"><span data-stu-id="ec611-129">iOS devices running iOS 11.0 and above.</span></span> <span data-ttu-id="ec611-130">从版本 1.1.15010101 开始，正式支持 iPad 设备。</span><span class="sxs-lookup"><span data-stu-id="ec611-130">iPad devices are officially supported from version 1.1.15010101 onward.</span></span>
+- <span data-ttu-id="236ab-129">运行 iOS 11.0 及以上设备的 iOS 设备。</span><span class="sxs-lookup"><span data-stu-id="236ab-129">iOS devices running iOS 11.0 and above.</span></span> <span data-ttu-id="236ab-130">从版本 1.1.15010101 开始，正式支持 iPad 设备。</span><span class="sxs-lookup"><span data-stu-id="236ab-130">iPad devices are officially supported from version 1.1.15010101 onward.</span></span>
 
-- <span data-ttu-id="ec611-131">设备已注册 [Intune 公司门户应用](https://apps.apple.com/us/app/intune-company-portal/id719171358)。</span><span class="sxs-lookup"><span data-stu-id="ec611-131">Device is enrolled with the [Intune Company Portal app](https://apps.apple.com/us/app/intune-company-portal/id719171358).</span></span>
+- <span data-ttu-id="236ab-131">设备已注册 [Intune 公司门户应用](https://apps.apple.com/us/app/intune-company-portal/id719171358)。</span><span class="sxs-lookup"><span data-stu-id="236ab-131">Device is enrolled with the [Intune Company Portal app](https://apps.apple.com/us/app/intune-company-portal/id719171358).</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="ec611-132">**Microsoft Defender ATP (适用于 iOS) 的 Microsoft Defender 终结点版本现已在 [Apple App Store 上提供](https://aka.ms/mdatpiosappstore)。**</span><span class="sxs-lookup"><span data-stu-id="ec611-132">**Microsoft Defender ATP (Microsoft Defender for Endpoint) on iOS is now available on [Apple App Store](https://aka.ms/mdatpiosappstore).**</span></span>
+> <span data-ttu-id="236ab-132">**Microsoft Defender ATP (适用于 iOS) 的 Microsoft Defender 终结点版本现已在 [Apple App Store 上提供](https://aka.ms/mdatpiosappstore)。**</span><span class="sxs-lookup"><span data-stu-id="236ab-132">**Microsoft Defender ATP (Microsoft Defender for Endpoint) on iOS is now available on [Apple App Store](https://aka.ms/mdatpiosappstore).**</span></span>
 
-## <a name="installation-instructions"></a><span data-ttu-id="ec611-133">安装说明</span><span class="sxs-lookup"><span data-stu-id="ec611-133">Installation instructions</span></span>
+## <a name="installation-instructions"></a><span data-ttu-id="236ab-133">安装说明</span><span class="sxs-lookup"><span data-stu-id="236ab-133">Installation instructions</span></span>
 
-<span data-ttu-id="ec611-134">在 iOS 上部署 Microsoft Defender for Endpoint 是通过 Microsoft Intune (MDM) 且受监督的设备和不受监督的设备都受支持。</span><span class="sxs-lookup"><span data-stu-id="ec611-134">Deployment of Microsoft Defender for Endpoint on iOS is via Microsoft Intune (MDM) and both supervised and unsupervised devices are supported.</span></span>
-<span data-ttu-id="ec611-135">有关详细信息，请参阅在[iOS 上部署 Microsoft Defender for Endpoint。](ios-install.md)</span><span class="sxs-lookup"><span data-stu-id="ec611-135">For more information, see [Deploy Microsoft Defender for Endpoint on iOS](ios-install.md).</span></span>
+<span data-ttu-id="236ab-134">在 iOS 上部署 Microsoft Defender for Endpoint 是通过 Microsoft Intune (MDM) 且受监督的设备和不受监督的设备都受支持。</span><span class="sxs-lookup"><span data-stu-id="236ab-134">Deployment of Microsoft Defender for Endpoint on iOS is via Microsoft Intune (MDM) and both supervised and unsupervised devices are supported.</span></span>
+<span data-ttu-id="236ab-135">有关详细信息，请参阅在[iOS 上部署 Microsoft Defender for Endpoint。](ios-install.md)</span><span class="sxs-lookup"><span data-stu-id="236ab-135">For more information, see [Deploy Microsoft Defender for Endpoint on iOS](ios-install.md).</span></span>
 
-## <a name="resources"></a><span data-ttu-id="ec611-136">资源</span><span class="sxs-lookup"><span data-stu-id="ec611-136">Resources</span></span>
+## <a name="resources"></a><span data-ttu-id="236ab-136">资源</span><span class="sxs-lookup"><span data-stu-id="236ab-136">Resources</span></span>
 
-- <span data-ttu-id="ec611-137">通过访问 [iOS](ios-whatsnew.md) 版 Microsoft Defender for Endpoint 中的新增功能或博客，随时了解即将发布的 [版本](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/bg-p/MicrosoftDefenderATPBlog/label-name/iOS)。</span><span class="sxs-lookup"><span data-stu-id="ec611-137">Stay informed about upcoming releases by visiting [What's new in Microsoft Defender for Endpoint on iOS](ios-whatsnew.md) or our [blog](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/bg-p/MicrosoftDefenderATPBlog/label-name/iOS).</span></span>
+- <span data-ttu-id="236ab-137">通过访问 [iOS](ios-whatsnew.md) 版 Microsoft Defender for Endpoint 中的新增功能或博客，随时了解即将发布的 [版本](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/bg-p/MicrosoftDefenderATPBlog/label-name/iOS)。</span><span class="sxs-lookup"><span data-stu-id="236ab-137">Stay informed about upcoming releases by visiting [What's new in Microsoft Defender for Endpoint on iOS](ios-whatsnew.md) or our [blog](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/bg-p/MicrosoftDefenderATPBlog/label-name/iOS).</span></span>
 
-- <span data-ttu-id="ec611-138">通过应用内反馈系统或 [SecOps 门户提供反馈](https://securitycenter.microsoft.com)</span><span class="sxs-lookup"><span data-stu-id="ec611-138">Provide feedback through in-app feedback system or through [SecOps portal](https://securitycenter.microsoft.com)</span></span>
+- <span data-ttu-id="236ab-138">通过应用内反馈系统或 [SecOps 门户提供反馈](https://securitycenter.microsoft.com)</span><span class="sxs-lookup"><span data-stu-id="236ab-138">Provide feedback through in-app feedback system or through [SecOps portal](https://securitycenter.microsoft.com)</span></span>
 
-## <a name="next-steps"></a><span data-ttu-id="ec611-139">后续步骤</span><span class="sxs-lookup"><span data-stu-id="ec611-139">Next steps</span></span>
+## <a name="next-steps"></a><span data-ttu-id="236ab-139">后续步骤</span><span class="sxs-lookup"><span data-stu-id="236ab-139">Next steps</span></span>
 
-- [<span data-ttu-id="ec611-140">在 iOS 上部署 Microsoft Defender for Endpoint</span><span class="sxs-lookup"><span data-stu-id="ec611-140">Deploy Microsoft Defender for Endpoint on iOS</span></span>](ios-install.md)
-- [<span data-ttu-id="ec611-141">在 iOS 功能上配置 Microsoft Defender for Endpoint</span><span class="sxs-lookup"><span data-stu-id="ec611-141">Configure Microsoft Defender for Endpoint on iOS features</span></span>](ios-configure-features.md)
+- [<span data-ttu-id="236ab-140">在 iOS 上部署 Microsoft Defender for Endpoint</span><span class="sxs-lookup"><span data-stu-id="236ab-140">Deploy Microsoft Defender for Endpoint on iOS</span></span>](ios-install.md)
+- [<span data-ttu-id="236ab-141">在 iOS 功能上配置 Microsoft Defender for Endpoint</span><span class="sxs-lookup"><span data-stu-id="236ab-141">Configure Microsoft Defender for Endpoint on iOS features</span></span>](ios-configure-features.md)

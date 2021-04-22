@@ -1,7 +1,7 @@
 ---
 title: '如何计划 Microsoft Defender 终结点更新 (Linux) '
 description: 了解如何计划 Microsoft Defender 终结点 (Linux) 以更好地保护组织的资产。
-keywords: 'microsoft， defender， atp， linux， 扫描， 防病毒， microsoft defender for endpoint (linux) '
+keywords: 'microsoft， defender， Microsoft Defender for Endpoint， linux， 扫描， 防病毒， 适用于终结点的 microsoft defender (linux) '
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -16,163 +16,163 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: a967333a58f74938ea70e32e0c48d2decb597e98
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 22ff42cb399b3d07c0ebd8ec4f947352eb6f44aa
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51688797"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934761"
 ---
-# <a name="schedule-an-update-of-the-microsoft-defender-for-endpoint-linux"></a><span data-ttu-id="d9ee7-104">计划更新 Microsoft Defender for Endpoint （Linux）</span><span class="sxs-lookup"><span data-stu-id="d9ee7-104">Schedule an update of the Microsoft Defender for Endpoint (Linux)</span></span>
+# <a name="schedule-an-update-of-the-microsoft-defender-for-endpoint-linux"></a><span data-ttu-id="7061d-104">计划更新 Microsoft Defender for Endpoint （Linux）</span><span class="sxs-lookup"><span data-stu-id="7061d-104">Schedule an update of the Microsoft Defender for Endpoint (Linux)</span></span>
 
-<span data-ttu-id="d9ee7-105">若要在 Linux 上的 Microsoft Defender for Endpoint 上运行更新，请参阅在 Linux 上部署 [Microsoft Defender for Endpoint 的更新](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/linux-updates)。</span><span class="sxs-lookup"><span data-stu-id="d9ee7-105">To run an update on Microsoft Defender for Endpoint on Linux, see [Deploy updates for Microsoft Defender for Endpoint on Linux](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/linux-updates).</span></span>
+<span data-ttu-id="7061d-105">若要在 Linux 上的 Microsoft Defender for Endpoint 上运行更新，请参阅在 Linux 上部署 [Microsoft Defender for Endpoint 的更新](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/linux-updates)。</span><span class="sxs-lookup"><span data-stu-id="7061d-105">To run an update on Microsoft Defender for Endpoint on Linux, see [Deploy updates for Microsoft Defender for Endpoint on Linux](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/linux-updates).</span></span>
 
-<span data-ttu-id="d9ee7-106">Linux (和 Unix) 具有一个称为 **crontab** (类似于任务计划程序) 运行计划任务的工具。</span><span class="sxs-lookup"><span data-stu-id="d9ee7-106">Linux (and Unix) have a tool called **crontab** (similar to Task Scheduler) to be able to run scheduled tasks.</span></span>
+<span data-ttu-id="7061d-106">Linux (和 Unix) 具有一个称为 **crontab** (类似于任务计划程序) 运行计划任务的工具。</span><span class="sxs-lookup"><span data-stu-id="7061d-106">Linux (and Unix) have a tool called **crontab** (similar to Task Scheduler) to be able to run scheduled tasks.</span></span>
 
-## <a name="pre-requisite"></a><span data-ttu-id="d9ee7-107">先决条件</span><span class="sxs-lookup"><span data-stu-id="d9ee7-107">Pre-requisite</span></span>
+## <a name="pre-requisite"></a><span data-ttu-id="7061d-107">先决条件</span><span class="sxs-lookup"><span data-stu-id="7061d-107">Pre-requisite</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="d9ee7-108">若要获取所有时区的列表，请运行以下命令： `timedatectl list-timezones`</span><span class="sxs-lookup"><span data-stu-id="d9ee7-108">To get a list of all the time zones, run the following command: `timedatectl list-timezones`</span></span><br>
-> <span data-ttu-id="d9ee7-109">时区示例：</span><span class="sxs-lookup"><span data-stu-id="d9ee7-109">Examples for timezones:</span></span> <br>
+> <span data-ttu-id="7061d-108">若要获取所有时区的列表，请运行以下命令： `timedatectl list-timezones`</span><span class="sxs-lookup"><span data-stu-id="7061d-108">To get a list of all the time zones, run the following command: `timedatectl list-timezones`</span></span><br>
+> <span data-ttu-id="7061d-109">时区示例：</span><span class="sxs-lookup"><span data-stu-id="7061d-109">Examples for timezones:</span></span> <br>
 > - `America/Los_Angeles`
 > - `America/New_York`
 > - `America/Chicago`
 > - `America/Denver`
 
-## <a name="to-set-the-cron-job"></a><span data-ttu-id="d9ee7-110">设置 Cron 作业</span><span class="sxs-lookup"><span data-stu-id="d9ee7-110">To set the Cron job</span></span>
-<span data-ttu-id="d9ee7-111">使用以下命令：</span><span class="sxs-lookup"><span data-stu-id="d9ee7-111">Use the following commands:</span></span>
+## <a name="to-set-the-cron-job"></a><span data-ttu-id="7061d-110">设置 Cron 作业</span><span class="sxs-lookup"><span data-stu-id="7061d-110">To set the Cron job</span></span>
+<span data-ttu-id="7061d-111">使用以下命令：</span><span class="sxs-lookup"><span data-stu-id="7061d-111">Use the following commands:</span></span>
 
-<span data-ttu-id="d9ee7-112">**备份 crontab 条目**</span><span class="sxs-lookup"><span data-stu-id="d9ee7-112">**To backup crontab entries**</span></span>
+<span data-ttu-id="7061d-112">**备份 crontab 条目**</span><span class="sxs-lookup"><span data-stu-id="7061d-112">**To backup crontab entries**</span></span>
 
 `sudo crontab -l > /var/tmp/cron_backup_201118.dat`
 
 > [!NOTE]
-> <span data-ttu-id="d9ee7-113">其中 201118 == YYMMDD</span><span class="sxs-lookup"><span data-stu-id="d9ee7-113">Where 201118 == YYMMDD</span></span>
+> <span data-ttu-id="7061d-113">其中 201118 == YYMMDD</span><span class="sxs-lookup"><span data-stu-id="7061d-113">Where 201118 == YYMMDD</span></span>
 
 > [!TIP]
-> <span data-ttu-id="d9ee7-114">在编辑或删除之前，请执行这一操作。</span><span class="sxs-lookup"><span data-stu-id="d9ee7-114">Do this before you edit or remove.</span></span> <br>
+> <span data-ttu-id="7061d-114">在编辑或删除之前，请执行这一操作。</span><span class="sxs-lookup"><span data-stu-id="7061d-114">Do this before you edit or remove.</span></span> <br>
 
-<span data-ttu-id="d9ee7-115">若要编辑 crontab，并添加一个新作业作为根用户：</span><span class="sxs-lookup"><span data-stu-id="d9ee7-115">To edit the crontab, and add a new job as a root user:</span></span> <br>
+<span data-ttu-id="7061d-115">若要编辑 crontab，并添加一个新作业作为根用户：</span><span class="sxs-lookup"><span data-stu-id="7061d-115">To edit the crontab, and add a new job as a root user:</span></span> <br>
 `sudo crontab -e`
 
 > [!NOTE]
-> <span data-ttu-id="d9ee7-116">默认编辑器为 VIM。</span><span class="sxs-lookup"><span data-stu-id="d9ee7-116">The default editor is VIM.</span></span>
+> <span data-ttu-id="7061d-116">默认编辑器为 VIM。</span><span class="sxs-lookup"><span data-stu-id="7061d-116">The default editor is VIM.</span></span>
 
-<span data-ttu-id="d9ee7-117">你可能会看到：</span><span class="sxs-lookup"><span data-stu-id="d9ee7-117">You might see:</span></span>
+<span data-ttu-id="7061d-117">你可能会看到：</span><span class="sxs-lookup"><span data-stu-id="7061d-117">You might see:</span></span>
 
-<span data-ttu-id="d9ee7-118">0\*\*\*\*/etc/opt/microsoft/mdatp/logrorate.sh</span><span class="sxs-lookup"><span data-stu-id="d9ee7-118">0\*\*\*\*/etc/opt/microsoft/mdatp/logrorate.sh</span></span>
+<span data-ttu-id="7061d-118">0\*\*\*\*/etc/opt/microsoft/mdatp/logrorate.sh</span><span class="sxs-lookup"><span data-stu-id="7061d-118">0\*\*\*\*/etc/opt/microsoft/mdatp/logrorate.sh</span></span>
 
-<span data-ttu-id="d9ee7-119">And</span><span class="sxs-lookup"><span data-stu-id="d9ee7-119">And</span></span>
+<span data-ttu-id="7061d-119">And</span><span class="sxs-lookup"><span data-stu-id="7061d-119">And</span></span>
 
-<span data-ttu-id="d9ee7-120">02\*\*sat /bin/mdatp scan quick>~/mdatp_cron_job.log</span><span class="sxs-lookup"><span data-stu-id="d9ee7-120">02\*\*sat /bin/mdatp scan quick>~/mdatp_cron_job.log</span></span>
+<span data-ttu-id="7061d-120">02\*\*sat /bin/mdatp scan quick>~/mdatp_cron_job.log</span><span class="sxs-lookup"><span data-stu-id="7061d-120">02\*\*sat /bin/mdatp scan quick>~/mdatp_cron_job.log</span></span>
 
-<span data-ttu-id="d9ee7-121">请参阅 [使用 Microsoft Defender for Endpoint (Linux) ](linux-schedule-scan-atp.md)</span><span class="sxs-lookup"><span data-stu-id="d9ee7-121">See [Schedule scans with Microsoft Defender for Endpoint (Linux)](linux-schedule-scan-atp.md)</span></span>
+<span data-ttu-id="7061d-121">请参阅 [使用 Microsoft Defender for Endpoint (Linux) ](linux-schedule-scan-atp.md)</span><span class="sxs-lookup"><span data-stu-id="7061d-121">See [Schedule scans with Microsoft Defender for Endpoint (Linux)](linux-schedule-scan-atp.md)</span></span>
 
-<span data-ttu-id="d9ee7-122">按"插入"</span><span class="sxs-lookup"><span data-stu-id="d9ee7-122">Press “Insert”</span></span>
+<span data-ttu-id="7061d-122">按"插入"</span><span class="sxs-lookup"><span data-stu-id="7061d-122">Press “Insert”</span></span>
 
-<span data-ttu-id="d9ee7-123">添加以下条目：</span><span class="sxs-lookup"><span data-stu-id="d9ee7-123">Add the following entries:</span></span>
+<span data-ttu-id="7061d-123">添加以下条目：</span><span class="sxs-lookup"><span data-stu-id="7061d-123">Add the following entries:</span></span>
 
-<span data-ttu-id="d9ee7-124">CRON_TZ=America/Los_Angeles</span><span class="sxs-lookup"><span data-stu-id="d9ee7-124">CRON_TZ=America/Los_Angeles</span></span>
+<span data-ttu-id="7061d-124">CRON_TZ=America/Los_Angeles</span><span class="sxs-lookup"><span data-stu-id="7061d-124">CRON_TZ=America/Los_Angeles</span></span>
 
-> #<a name="rhel-and-variants-centos-and-oracle-linux"></a><span data-ttu-id="d9ee7-125">!CentOS 和 Oracle Linux (RHEL 和) </span><span class="sxs-lookup"><span data-stu-id="d9ee7-125">!RHEL and variants (CentOS and Oracle Linux)</span></span>
+> #<a name="rhel-and-variants-centos-and-oracle-linux"></a><span data-ttu-id="7061d-125">!CentOS 和 Oracle Linux (RHEL 和) </span><span class="sxs-lookup"><span data-stu-id="7061d-125">!RHEL and variants (CentOS and Oracle Linux)</span></span>
 
 `06**sun[$(date +\%d) -le 15] sudo yum update mdatp>>~/mdatp_cron_job.log`
 
-> #<a name="sles-and-variants"></a><span data-ttu-id="d9ee7-126">!SLES 和变量</span><span class="sxs-lookup"><span data-stu-id="d9ee7-126">!SLES and variants</span></span>
+> #<a name="sles-and-variants"></a><span data-ttu-id="7061d-126">!SLES 和变量</span><span class="sxs-lookup"><span data-stu-id="7061d-126">!SLES and variants</span></span>
 
 `06**sun[$(date +\%d) -le 15] sudo zypper update mdatp>>~/mdatp_cron_job.log`
 
-> #<a name="ubuntu-and-debian-systems"></a><span data-ttu-id="d9ee7-127">!Ubuntu 和 Debian 系统</span><span class="sxs-lookup"><span data-stu-id="d9ee7-127">!Ubuntu and Debian systems</span></span>
+> #<a name="ubuntu-and-debian-systems"></a><span data-ttu-id="7061d-127">!Ubuntu 和 Debian 系统</span><span class="sxs-lookup"><span data-stu-id="7061d-127">!Ubuntu and Debian systems</span></span>
 
 `06**sun [$(date +\%d) -le 15] sudo apt-get install --only-upgrade mdatp>>~/mdatp_cron_job.log`
 
 > [!NOTE]
-> <span data-ttu-id="d9ee7-128">在以上示例中，我们将它设置为 00 分钟、上午 6 点 (小时（24 小时制) 、每月的任何一天、星期日）。[$ (date + \% d) -le 15] == 不运行，除非它等于或小于第 3 周的第 15 (天) 。</span><span class="sxs-lookup"><span data-stu-id="d9ee7-128">In the examples above, we are setting it to 00 minutes, 6 a.m.(hour in 24 hour format), any day of the month, any month, on Sundays.[$(date +\%d) -le 15] == Won’t run unless it’s equal or less than the 15th day (3rd week).</span></span> <span data-ttu-id="d9ee7-129">这意味着它将在每月的第 3 个星期 (7) 上午 6：00 运行一次。</span><span class="sxs-lookup"><span data-stu-id="d9ee7-129">Meaning it will run every 3rd Sundays(7) of the month at 6:00 a.m.</span></span> <span data-ttu-id="d9ee7-130">太平洋 (UTC -8) 。</span><span class="sxs-lookup"><span data-stu-id="d9ee7-130">Pacific (UTC -8).</span></span>
+> <span data-ttu-id="7061d-128">在以上示例中，我们将它设置为 00 分钟、上午 6 点 (小时（24 小时制) 、每月的任何一天、星期日）。[$ (date + \% d) -le 15] == 不运行，除非它等于或小于第 3 周的第 15 (天) 。</span><span class="sxs-lookup"><span data-stu-id="7061d-128">In the examples above, we are setting it to 00 minutes, 6 a.m.(hour in 24 hour format), any day of the month, any month, on Sundays.[$(date +\%d) -le 15] == Won’t run unless it’s equal or less than the 15th day (3rd week).</span></span> <span data-ttu-id="7061d-129">这意味着它将在每月的第 3 个星期 (7) 上午 6：00 运行一次。</span><span class="sxs-lookup"><span data-stu-id="7061d-129">Meaning it will run every 3rd Sundays(7) of the month at 6:00 a.m.</span></span> <span data-ttu-id="7061d-130">太平洋 (UTC -8) 。</span><span class="sxs-lookup"><span data-stu-id="7061d-130">Pacific (UTC -8).</span></span>
 
-<span data-ttu-id="d9ee7-131">按"Esc"</span><span class="sxs-lookup"><span data-stu-id="d9ee7-131">Press “Esc”</span></span>
+<span data-ttu-id="7061d-131">按"Esc"</span><span class="sxs-lookup"><span data-stu-id="7061d-131">Press “Esc”</span></span>
 
-<span data-ttu-id="d9ee7-132">在双引号中键入"：wq"。</span><span class="sxs-lookup"><span data-stu-id="d9ee7-132">Type “:wq” w/o the double quotes.</span></span>
+<span data-ttu-id="7061d-132">在双引号中键入"：wq"。</span><span class="sxs-lookup"><span data-stu-id="7061d-132">Type “:wq” w/o the double quotes.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="d9ee7-133">w == 写入，q == quit</span><span class="sxs-lookup"><span data-stu-id="d9ee7-133">w == write, q == quit</span></span>
+> <span data-ttu-id="7061d-133">w == 写入，q == quit</span><span class="sxs-lookup"><span data-stu-id="7061d-133">w == write, q == quit</span></span>
 
-<span data-ttu-id="d9ee7-134">若要查看 cron 作业，请键入 `sudo crontab -l`</span><span class="sxs-lookup"><span data-stu-id="d9ee7-134">To view your cron jobs, type `sudo crontab -l`</span></span>
+<span data-ttu-id="7061d-134">若要查看 cron 作业，请键入 `sudo crontab -l`</span><span class="sxs-lookup"><span data-stu-id="7061d-134">To view your cron jobs, type `sudo crontab -l`</span></span>
 
 :::image type="content" source="images/update-MDE-linux-4634577.jpg" alt-text="更新 MDE linux":::
 
-<span data-ttu-id="d9ee7-136">检查 cron 作业运行： `sudo grep mdatp /var/log/cron`</span><span class="sxs-lookup"><span data-stu-id="d9ee7-136">To inspect cron job runs: `sudo grep mdatp /var/log/cron`</span></span>
+<span data-ttu-id="7061d-136">检查 cron 作业运行： `sudo grep mdatp /var/log/cron`</span><span class="sxs-lookup"><span data-stu-id="7061d-136">To inspect cron job runs: `sudo grep mdatp /var/log/cron`</span></span>
 
-<span data-ttu-id="d9ee7-137">检查 mdatp_cron_job.log `sudo nano mdatp_cron_job.log`</span><span class="sxs-lookup"><span data-stu-id="d9ee7-137">To inspect the mdatp_cron_job.log `sudo nano mdatp_cron_job.log`</span></span>
+<span data-ttu-id="7061d-137">检查 mdatp_cron_job.log `sudo nano mdatp_cron_job.log`</span><span class="sxs-lookup"><span data-stu-id="7061d-137">To inspect the mdatp_cron_job.log `sudo nano mdatp_cron_job.log`</span></span>
 
-## <a name="for-those-who-use-ansible-chef-or-puppet"></a><span data-ttu-id="d9ee7-138">对于使用"Ansible"、"用户"或"时形"的</span><span class="sxs-lookup"><span data-stu-id="d9ee7-138">For those who use Ansible, Chef, or Puppet</span></span>
+## <a name="for-those-who-use-ansible-chef-or-puppet"></a><span data-ttu-id="7061d-138">对于使用"Ansible"、"用户"或"时形"的</span><span class="sxs-lookup"><span data-stu-id="7061d-138">For those who use Ansible, Chef, or Puppet</span></span>
 
-<span data-ttu-id="d9ee7-139">使用以下命令：</span><span class="sxs-lookup"><span data-stu-id="d9ee7-139">Use the following commands:</span></span>
-### <a name="to-set-cron-jobs-in-ansible"></a><span data-ttu-id="d9ee7-140">在 Ansible 中设置 cron 作业</span><span class="sxs-lookup"><span data-stu-id="d9ee7-140">To set cron jobs in Ansible</span></span>
+<span data-ttu-id="7061d-139">使用以下命令：</span><span class="sxs-lookup"><span data-stu-id="7061d-139">Use the following commands:</span></span>
+### <a name="to-set-cron-jobs-in-ansible"></a><span data-ttu-id="7061d-140">在 Ansible 中设置 cron 作业</span><span class="sxs-lookup"><span data-stu-id="7061d-140">To set cron jobs in Ansible</span></span>
 
 `cron – Manage cron.d and crontab entries`
 
-<span data-ttu-id="d9ee7-141">有关详细信息，请参阅 [https://docs.ansible.com/ansible/latest/modules/cron_module.html](https://docs.ansible.com/ansible/latest/modules/cron_module.html)。</span><span class="sxs-lookup"><span data-stu-id="d9ee7-141">See [https://docs.ansible.com/ansible/latest/modules/cron_module.html](https://docs.ansible.com/ansible/latest/modules/cron_module.html) for more information.</span></span>
+<span data-ttu-id="7061d-141">有关详细信息，请参阅 [https://docs.ansible.com/ansible/latest/modules/cron_module.html](https://docs.ansible.com/ansible/latest/modules/cron_module.html)。</span><span class="sxs-lookup"><span data-stu-id="7061d-141">See [https://docs.ansible.com/ansible/latest/modules/cron_module.html](https://docs.ansible.com/ansible/latest/modules/cron_module.html) for more information.</span></span>
 
-### <a name="to-set-crontabs-in-chef"></a><span data-ttu-id="d9ee7-142">在管理中设置裁剪</span><span class="sxs-lookup"><span data-stu-id="d9ee7-142">To set crontabs in Chef</span></span>
+### <a name="to-set-crontabs-in-chef"></a><span data-ttu-id="7061d-142">在管理中设置裁剪</span><span class="sxs-lookup"><span data-stu-id="7061d-142">To set crontabs in Chef</span></span>
 `cron resource`
 
-<span data-ttu-id="d9ee7-143">有关详细信息，请参阅 [https://docs.chef.io/resources/cron/](https://docs.chef.io/resources/cron/)。</span><span class="sxs-lookup"><span data-stu-id="d9ee7-143">See [https://docs.chef.io/resources/cron/](https://docs.chef.io/resources/cron/) for more information.</span></span>
+<span data-ttu-id="7061d-143">有关详细信息，请参阅 [https://docs.chef.io/resources/cron/](https://docs.chef.io/resources/cron/)。</span><span class="sxs-lookup"><span data-stu-id="7061d-143">See [https://docs.chef.io/resources/cron/](https://docs.chef.io/resources/cron/) for more information.</span></span>
 
-### <a name="to-set-cron-jobs-in-puppet"></a><span data-ttu-id="d9ee7-144">在"创建"中设置 cron 作业</span><span class="sxs-lookup"><span data-stu-id="d9ee7-144">To set cron jobs in Puppet</span></span>
-<span data-ttu-id="d9ee7-145">资源类型：cron</span><span class="sxs-lookup"><span data-stu-id="d9ee7-145">Resource Type: cron</span></span>
+### <a name="to-set-cron-jobs-in-puppet"></a><span data-ttu-id="7061d-144">在"创建"中设置 cron 作业</span><span class="sxs-lookup"><span data-stu-id="7061d-144">To set cron jobs in Puppet</span></span>
+<span data-ttu-id="7061d-145">资源类型：cron</span><span class="sxs-lookup"><span data-stu-id="7061d-145">Resource Type: cron</span></span>
 
-<span data-ttu-id="d9ee7-146">有关详细信息，请参阅 [https://puppet.com/docs/puppet/5.5/types/cron.html](https://puppet.com/docs/puppet/5.5/types/cron.html)。</span><span class="sxs-lookup"><span data-stu-id="d9ee7-146">See [https://puppet.com/docs/puppet/5.5/types/cron.html](https://puppet.com/docs/puppet/5.5/types/cron.html) for more information.</span></span>
+<span data-ttu-id="7061d-146">有关详细信息，请参阅 [https://puppet.com/docs/puppet/5.5/types/cron.html](https://puppet.com/docs/puppet/5.5/types/cron.html)。</span><span class="sxs-lookup"><span data-stu-id="7061d-146">See [https://puppet.com/docs/puppet/5.5/types/cron.html](https://puppet.com/docs/puppet/5.5/types/cron.html) for more information.</span></span>
 
-<span data-ttu-id="d9ee7-147">使用改进实现自动化：Cron 作业和计划任务</span><span class="sxs-lookup"><span data-stu-id="d9ee7-147">Automating with Puppet: Cron jobs and scheduled tasks</span></span>
+<span data-ttu-id="7061d-147">使用改进实现自动化：Cron 作业和计划任务</span><span class="sxs-lookup"><span data-stu-id="7061d-147">Automating with Puppet: Cron jobs and scheduled tasks</span></span>
 
-<span data-ttu-id="d9ee7-148">有关详细信息，请参阅 [https://puppet.com/blog/automating-puppet-cron-jobs-and-scheduled-tasks/](https://puppet.com/blog/automating-puppet-cron-jobs-and-scheduled-tasks/)。</span><span class="sxs-lookup"><span data-stu-id="d9ee7-148">See [https://puppet.com/blog/automating-puppet-cron-jobs-and-scheduled-tasks/](https://puppet.com/blog/automating-puppet-cron-jobs-and-scheduled-tasks/) for more information.</span></span>
+<span data-ttu-id="7061d-148">有关详细信息，请参阅 [https://puppet.com/blog/automating-puppet-cron-jobs-and-scheduled-tasks/](https://puppet.com/blog/automating-puppet-cron-jobs-and-scheduled-tasks/)。</span><span class="sxs-lookup"><span data-stu-id="7061d-148">See [https://puppet.com/blog/automating-puppet-cron-jobs-and-scheduled-tasks/](https://puppet.com/blog/automating-puppet-cron-jobs-and-scheduled-tasks/) for more information.</span></span>
 
-## <a name="additional-information"></a><span data-ttu-id="d9ee7-149">其他信息</span><span class="sxs-lookup"><span data-stu-id="d9ee7-149">Additional information</span></span>
+## <a name="additional-information"></a><span data-ttu-id="7061d-149">其他信息</span><span class="sxs-lookup"><span data-stu-id="7061d-149">Additional information</span></span>
 
-<span data-ttu-id="d9ee7-150">**获取有关 crontab 的帮助**</span><span class="sxs-lookup"><span data-stu-id="d9ee7-150">**To get help with crontab**</span></span>
+<span data-ttu-id="7061d-150">**获取有关 crontab 的帮助**</span><span class="sxs-lookup"><span data-stu-id="7061d-150">**To get help with crontab**</span></span>
 
 `man crontab`
 
-<span data-ttu-id="d9ee7-151">**获取当前用户的 crontab 文件列表**</span><span class="sxs-lookup"><span data-stu-id="d9ee7-151">**To get a list of crontab file of the current user**</span></span>
+<span data-ttu-id="7061d-151">**获取当前用户的 crontab 文件列表**</span><span class="sxs-lookup"><span data-stu-id="7061d-151">**To get a list of crontab file of the current user**</span></span>
 
 `crontab -l`
 
-<span data-ttu-id="d9ee7-152">**获取其他用户的 crontab 文件列表**</span><span class="sxs-lookup"><span data-stu-id="d9ee7-152">**To get a list of crontab file of another user**</span></span>
+<span data-ttu-id="7061d-152">**获取其他用户的 crontab 文件列表**</span><span class="sxs-lookup"><span data-stu-id="7061d-152">**To get a list of crontab file of another user**</span></span>
 
 `crontab -u username -l`
 
-<span data-ttu-id="d9ee7-153">**备份 crontab 条目**</span><span class="sxs-lookup"><span data-stu-id="d9ee7-153">**To backup crontab entries**</span></span>
+<span data-ttu-id="7061d-153">**备份 crontab 条目**</span><span class="sxs-lookup"><span data-stu-id="7061d-153">**To backup crontab entries**</span></span>
 
 `crontab -l > /var/tmp/cron_backup.dat`
 
 > [!TIP]
-> <span data-ttu-id="d9ee7-154">在编辑或删除之前，请执行这一操作。</span><span class="sxs-lookup"><span data-stu-id="d9ee7-154">Do this before you edit or remove.</span></span> <br>
+> <span data-ttu-id="7061d-154">在编辑或删除之前，请执行这一操作。</span><span class="sxs-lookup"><span data-stu-id="7061d-154">Do this before you edit or remove.</span></span> <br>
 
-<span data-ttu-id="d9ee7-155">**还原 crontab 条目**</span><span class="sxs-lookup"><span data-stu-id="d9ee7-155">**To restore crontab entries**</span></span>
+<span data-ttu-id="7061d-155">**还原 crontab 条目**</span><span class="sxs-lookup"><span data-stu-id="7061d-155">**To restore crontab entries**</span></span>
 
 `crontab /var/tmp/cron_backup.dat`
 
-<span data-ttu-id="d9ee7-156">**编辑 crontab 并作为根用户添加新作业**</span><span class="sxs-lookup"><span data-stu-id="d9ee7-156">**To edit the crontab and add a new job as a root user**</span></span>
+<span data-ttu-id="7061d-156">**编辑 crontab 并作为根用户添加新作业**</span><span class="sxs-lookup"><span data-stu-id="7061d-156">**To edit the crontab and add a new job as a root user**</span></span>
 
 `sudo crontab -e`
 
-<span data-ttu-id="d9ee7-157">**编辑 crontab 并添加新作业**</span><span class="sxs-lookup"><span data-stu-id="d9ee7-157">**To edit the crontab and add a new job**</span></span>
+<span data-ttu-id="7061d-157">**编辑 crontab 并添加新作业**</span><span class="sxs-lookup"><span data-stu-id="7061d-157">**To edit the crontab and add a new job**</span></span>
 
 `crontab -e`
 
-<span data-ttu-id="d9ee7-158">**编辑其他用户的 crontab 条目**</span><span class="sxs-lookup"><span data-stu-id="d9ee7-158">**To edit other user’s crontab entries**</span></span>
+<span data-ttu-id="7061d-158">**编辑其他用户的 crontab 条目**</span><span class="sxs-lookup"><span data-stu-id="7061d-158">**To edit other user’s crontab entries**</span></span>
 
 `crontab -u username -e`
 
-<span data-ttu-id="d9ee7-159">**删除所有 crontab 条目**</span><span class="sxs-lookup"><span data-stu-id="d9ee7-159">**To remove all crontab entries**</span></span>
+<span data-ttu-id="7061d-159">**删除所有 crontab 条目**</span><span class="sxs-lookup"><span data-stu-id="7061d-159">**To remove all crontab entries**</span></span>
 
 `crontab -r`
 
-<span data-ttu-id="d9ee7-160">**删除其他用户的 crontab 条目**</span><span class="sxs-lookup"><span data-stu-id="d9ee7-160">**To remove other user’s crontab entries**</span></span>
+<span data-ttu-id="7061d-160">**删除其他用户的 crontab 条目**</span><span class="sxs-lookup"><span data-stu-id="7061d-160">**To remove other user’s crontab entries**</span></span>
 
 `crontab -u username -r`
 
-<span data-ttu-id="d9ee7-161">**说明**</span><span class="sxs-lookup"><span data-stu-id="d9ee7-161">**Explanation**</span></span>
+<span data-ttu-id="7061d-161">**说明**</span><span class="sxs-lookup"><span data-stu-id="7061d-161">**Explanation**</span></span>
 
 <pre>
 +—————- minute (values: 0 – 59) (special characters: , – * /)  <br>
