@@ -2,7 +2,7 @@
 title: 隐私信息 - 适用于 iOS 上的终结点的 Microsoft Defender
 ms.reviewer: ''
 description: 介绍 iOS 上适用于终结点的 Microsoft Defender 的隐私信息
-keywords: microsoft， defender， atp， ios， 策略， 概述
+keywords: microsoft， defender， Microsoft Defender for Endpoint， ios， 策略， 概述
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: f5598df8a9e3493a1c4922f672468dd54e84c31e
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 15c22a6f6b581ff68488db6628f7647d49487652
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51688197"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934281"
 ---
 # <a name="privacy-information---microsoft-defender-for-endpoint-on-ios"></a>隐私信息 - 适用于 iOS 上的终结点的 Microsoft Defender
 
@@ -34,15 +34,15 @@ ms.locfileid: "51688197"
 > 想要体验适用于终结点的 Defender？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
 
 > [!NOTE]
-> 适用于 iOS 的终结点的 Defender 使用 VPN 提供 Web 保护功能。 这不是常规 VPN，它是不接受设备外流量的本地或自循环 VPN。 **Microsoft 或你的组织看不到你的浏览活动。**
+> iOS 上的 Defender for Endpoint 使用 VPN 提供 Web 保护功能。 这不是常规 VPN，它是不接受设备外流量的本地或自循环 VPN。 **Microsoft 或你的组织看不到你的浏览活动。**
 
-适用于 iOS 的终结点的 Defender 从已配置的 iOS 设备收集信息，并存储到具有 Defender for Endpoint 的同一租户中。 该信息的收集有助于使适用于 iOS 的 Endpoint 的 Defender 保持安全、最新、如预期运行并支持服务。
+iOS 上的 Defender for Endpoint 从已配置的 iOS 设备收集信息，并存储在你拥有 Defender for Endpoint 的同一租户中。 收集此信息有助于使 iOS 上的 Defender for Endpoint 保持安全、最新、如预期运行并支持服务。
 
 有关数据存储详细信息，请参阅适用于终结点数据存储[和隐私的 Microsoft Defender。](data-storage-privacy.md)
 
 ## <a name="required-data"></a>所需数据 
 
-必需数据包含使适用于 iOS 的 Defender 按预期工作所需的数据。 此数据对于服务操作至关重要，可以包含与最终用户、组织、设备和应用相关的数据。 
+必需数据包含使 iOS 上的 Defender for Endpoint 按预期工作所必需的数据。 此数据对于服务操作至关重要，可以包含与最终用户、组织、设备和应用相关的数据。 
 
 下面列出了要收集的数据类型： 
 

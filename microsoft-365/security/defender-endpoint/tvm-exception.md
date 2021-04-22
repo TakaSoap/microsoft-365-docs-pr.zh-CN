@@ -1,7 +1,7 @@
 ---
 title: 创建和查看安全建议例外 - 威胁和漏洞管理
 description: 创建并监视威胁和漏洞管理中的安全建议异常。
-keywords: microsoft defender for endpoint tvm remediation， mdatp tvm， threat and vulnerability management， threat & vulnerability management， threat & vulnerability management remediation， tvm remediation intune， tvm remediation sccm
+keywords: Microsoft Defender for Endpoint tvm 修正， Microsoft Defender for Endpoint tvm， 威胁和漏洞管理， 威胁 & 漏洞管理， 威胁 & 漏洞管理修正， tvm 修正 intune， tvm 修正 sccm
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 4f37300a742ab8cac32e95863cb706f1fd5f5d66
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 1af8e5ec9d3aef560c739de5212e8118cf89cd7a
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51689409"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933741"
 ---
 # <a name="create-and-view-exceptions-for-security-recommendations---threat-and-vulnerability-management"></a>创建和查看安全建议例外 - 威胁和漏洞管理
 

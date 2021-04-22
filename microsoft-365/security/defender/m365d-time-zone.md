@@ -1,7 +1,7 @@
 ---
 title: 设置 Microsoft 365 Defender 功能的时区
 description: 了解如何为与事件、自动调查和修复和高级搜寻关联的日期和时间信息选择时区
-keywords: 时区, 日期, 时间, MTP, Microsoft 威胁防护, M365, 安全性, 事件, 自动调查和响应, AIR, 高级搜寻
+keywords: 时区， 日期， 时间， Microsoft 365 Defender， M365， 安全， 事件， 自动调查和响应， AIR， 高级搜寻
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: dba87ca610a665baab6d3846460c4683fdc25190
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: a4ad27463f5f14c72096d99c9edc431831436d39
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51055569"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934413"
 ---
 # <a name="set-the-time-zone-for-microsoft-365-defender"></a>设置 Microsoft 365 Defender 的时区
 

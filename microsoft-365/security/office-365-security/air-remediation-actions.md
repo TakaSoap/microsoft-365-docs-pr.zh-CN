@@ -1,6 +1,6 @@
 ---
 title: Microsoft Defender for Office 365 中的修正操作
-keywords: AIR， autoIR， ATP， 自动化， 调查， 响应， 修正， 威胁， 高级， 威胁， 保护
+keywords: AIR， autoIR， Microsoft Defender for Endpoint， 自动化， 调查， 响应， 修正， 威胁， 高级， 威胁， 保护
 f1.keywords:
 - NOCSH
 ms.author: deniseb
@@ -21,12 +21,12 @@ ms.custom:
 - air
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: fa4e2d6656ec430edc221ab94cac494e1ec0ca98
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 37953ad1125d5dad10eb5c6933b1ed9931d5de60
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51203202"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933657"
 ---
 # <a name="remediation-actions-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 中的修正操作
 
@@ -55,7 +55,7 @@ Microsoft Defender for Office 365 包括解决各种威胁的修正操作。 自
 |:---|:---|:---|
 |电子邮件|恶意软件|软删除电子邮件/群集 <p> 如果群集中包含多个包含恶意软件的电子邮件，则认为该群集是恶意的。|
 |电子邮件|恶意 URL<br/> (安全链接 .) [检测到](safe-links.md)恶意 URL|软删除电子邮件/群集 <br/>阻止 URL (单击时验证) <p> 包含恶意 URL 的电子邮件被认为是恶意的。|
-|电子邮件|钓鱼邮件|软删除电子邮件/群集 <p> 如果群集中包含多个电子邮件包含网络钓鱼尝试，则整个群集被视为网络钓鱼尝试。|
+|电子邮件|网络钓鱼|软删除电子邮件/群集 <p> 如果群集中包含多个电子邮件包含网络钓鱼尝试，则整个群集被视为网络钓鱼尝试。|
 |电子邮件|已钓鱼邮件 <br> (电子邮件已送达，然后 [已删除](zero-hour-auto-purge.md).) |软删除电子邮件/群集 <p>报告可用于查看已删除的邮件。 [查看 ZAP 是否移动了消息和常见问题](zero-hour-auto-purge.md#how-to-see-if-zap-moved-your-message)。|
 |电子邮件|用户报告的错过 [的](enable-the-report-message-add-in.md) 网络钓鱼电子邮件|[由用户报告触发的自动调查](automated-investigation-response-office.md#example-a-user-reported-phish-message-launches-an-investigation-playbook)|
 |电子邮件|卷异常 <br>  (匹配条件，最近使用的电子邮件数量超过前 7-10 ) |自动调查不会导致特定的挂起操作。 <p>卷异常不是一个明显的威胁，只是表示与过去 7-10 天相比，最近几天的电子邮件数量更大。 <p>尽管大量的电子邮件可能指示潜在问题，但需要根据恶意裁定或手动审阅电子邮件/群集进行确认。 请参阅 [查找已送达的可疑电子邮件](investigate-malicious-email-that-was-delivered.md#find-suspicious-email-that-was-delivered)。|

@@ -1,7 +1,7 @@
 ---
 title: 运行试点 Microsoft 365 Defender 项目
 description: 在生产中运行试点 Microsoft 365 Defender 项目，以有效确定 Microsoft 365 Defender 的好处和采用。
-keywords: Microsoft 威胁防护试点， 运行 Microsoft 威胁防护试点项目， 评估生产中的 Microsoft 威胁防护， Microsoft 威胁防护试点项目， 网络安全， 高级永久性威胁， 企业安全， 设备， 设备， 标识， 用户， 数据， 应用程序， 事件， 自动调查和修正， 高级搜寻
+keywords: Microsoft 365 Defender 试点， 运行试点 Microsoft 365 Defender 项目， 评估生产中的 Microsoft 365 Defender， Microsoft 365 Defender 试点项目， 网络安全， 高级永久性威胁， 企业安全， 设备， 设备， 标识， 用户， 数据， 应用程序， 事件， 自动调查和修正， 高级搜寻
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-pilotmtpproject
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 1dd310d962cbce2b339cf09d5be6317c227d3f13
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: b1616b39597a90ff8e8f7b4c92f29f75c62fea18
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51056455"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934425"
 ---
 # <a name="run-your-pilot-microsoft-365-defender-project"></a>运行试点 Microsoft 365 Defender 项目 
 
@@ -50,9 +50,9 @@ ms.locfileid: "51056455"
 本指南概述了 Microsoft 365 Defender 以及如何设置试点项目的分步说明。 
 
 Microsoft 365 Defender 是一个统一的攻破前和入侵后企业防御套件，在本机协调跨终结点、标识、电子邮件和应用程序的保护、检测、预防、调查和响应，以提供针对复杂攻击的集成保护。 它通过将以下功能组合并协调到单个安全解决方案中来这样做：
-  - Microsoft Defender for Endpoint， the new name for Microsoft Defender Advanced Threat Protection (endpoints) 
-  - Microsoft Defender for Office 365，Office 365 ATP 电子邮件 (的新)  
-  - Microsoft Defender for Identity，Azure ATP 的新名称 (标识)  
+  - Microsoft Defender for Endpoint (终结点) 
+  - Microsoft Defender for Office 365 (电子邮件)  
+  - Microsoft Defender 标识 (标识)  
   - Microsoft Cloud App Security (应用) 
 
 ![适用于of_Microsoft、Microsoft Defender for Identity、终结点 Microsoft Defender for Endpoint、云应用、Microsoft Cloud App Security 和数据、Microsoft Defender for Office 365 的 365 Defender 解决方案的图像](../../media/mtp/m365pillars.png)

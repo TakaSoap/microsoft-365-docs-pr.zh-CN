@@ -1,7 +1,7 @@
 ---
 title: 使用 Intune 管理 Microsoft Defender for Endpoint
 description: 了解如何使用 Intune 管理 Microsoft Defender for Endpoint
-keywords: 迁移后， 管理， 操作， 维护， 利用率， intune， windows defender 高级威胁防护， atp， edr
+keywords: 迁移后， 管理， 操作， 维护， 利用率， intune， Microsoft Defender for Endpoint， edr
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,12 +20,12 @@ ms.collection:
 ms.topic: article
 ms.date: 09/22/2020
 ms.reviewer: chventou
-ms.openlocfilehash: 01936eb323060190f2e785df04c3d317f7999d08
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: d8396c352e593f9922b11e23119f7d9718eaf752
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51185881"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934221"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-with-intune"></a>使用 Intune 管理 Microsoft Defender for Endpoint
 
@@ -55,7 +55,7 @@ ms.locfileid: "51185881"
 4. 选择现有配置文件，或新建一个配置文件。
 
 > [!TIP]
-> 需要帮助？ 请参阅 **[将 Microsoft Defender for Endpoint 与 Intune 一同使用](https://docs.microsoft.com/mem/intune/protect/advanced-threat-protection#example-of-using-microsoft-defender-atp-with-intune)**。  
+> 需要帮助? 请参阅 **[将 Microsoft Defender for Endpoint 与 Intune 一同使用](https://docs.microsoft.com/mem/intune/protect/advanced-threat-protection#example-of-using-microsoft-defender-atp-with-intune)**。  
 
 ## <a name="configure-microsoft-defender-for-endpoint-with-intune"></a>使用 Intune 配置 Microsoft Defender for Endpoint
 

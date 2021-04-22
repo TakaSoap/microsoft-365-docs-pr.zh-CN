@@ -1,7 +1,7 @@
 ---
 title: Microsoft 365 Defender
 description: Microsoft 365 Defender 是一个协调的威胁防护解决方案，旨在保护设备、标识、数据和应用程序
-keywords: Microsoft 威胁防护简介， 网络安全， 高级永久性威胁， 企业安全， 设备， 设备， 标识， 用户， 数据， 应用程序， 事件， 自动调查和修正， 高级搜寻
+keywords: MMicrosoft 365 Defender 简介， 网络安全， 高级永久性威胁， 企业安全， 设备， 设备， 标识， 用户， 数据， 应用程序， 事件， 自动调查和修正， 高级搜寻
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 86bc6ef03438b637f62cf0e2a46e418dbea7a3c1
-ms.sourcegitcommit: a46532bb422ee51331f478ff50cc5444586bf6a9
+ms.openlocfilehash: 32defdf459ec65ba0fd268a5a7c84851e9014efa
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/09/2021
-ms.locfileid: "51650274"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934041"
 ---
 # <a name="microsoft-365-defender"></a>Microsoft 365 Defender
 
@@ -92,7 +92,7 @@ Microsoft 365 Defender 跨产品功能包括：
 - **跨产品威胁搜寻** - 安全团队可以利用其独特的组织知识，通过针对各种保护产品收集的原始数据创建自己的自定义查询来搜寻泄露的迹象。 Microsoft 365 Defender 提供对终结点和 Microsoft Defender for Office 365 数据之间 30 天的历史原始信号和警报数据的基于查询的访问。 
 
 
-## <a name="get-started"></a>入门
+## <a name="get-started"></a>开始行动
 必须先满足 Microsoft 365 Defender 许可要求，然后才能在 Microsoft 365 安全中心中[](https://security.microsoft.com)启用该服务，security.microsoft.com。 有关详细信息，请阅读：
 - [授权要求](prerequisites.md#licensing-requirements)
 - [打开 Microsoft 365 Defender](m365d-enable.md)

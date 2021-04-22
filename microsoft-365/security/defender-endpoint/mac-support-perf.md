@@ -1,7 +1,7 @@
 ---
 title: 解决 macOS 上 Microsoft Defender for Endpoint 的性能问题
 description: 解决 macOS 上的 Microsoft Defender for Endpoint 中的性能问题。
-keywords: microsoft， defender， atp， mac， 性能
+keywords: microsoft， defender， Microsoft Defender for Endpoint， mac， 性能
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 8dfaf1dbf2c3742cc97060c7f9e811c83d0cb023
-ms.sourcegitcommit: 72ae1b49e7a3d3199272fcb4c39f5daec0d66f1a
+ms.openlocfilehash: 623717e7b1a3149dbccf07d32200820a7f9083cb
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51698216"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934245"
 ---
 # <a name="troubleshoot-performance-issues-for-microsoft-defender-for-endpoint-on-macos"></a>解决 macOS 上 Microsoft Defender for Endpoint 的性能问题
 
@@ -66,7 +66,7 @@ RTP (实时) 是 macOS 上的 Microsoft Defender for Endpoint 的一项功能，
 
 2. 打开 Finder 并导航到 **应用程序**  >  **实用程序**。 打开 **活动监视器** 并分析哪些应用程序正在使用您系统上的资源。 典型示例包括软件更新和编译器。
 
-1. 若要查找触发最多扫描的应用程序，可以使用 Defender for Endpoint for Mac 收集实时统计信息。
+1. 若要查找触发最多扫描的应用程序，可以使用 Defender for Endpoint 在 Mac 上收集实时统计信息。
 
       > [!NOTE]
       > 此功能在版本 100.90.70 或更高版本中可用。

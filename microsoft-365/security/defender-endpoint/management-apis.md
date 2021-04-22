@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 9e54fb5f2105f0a77c4b63e8d880135005c17168
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: a57cebd2cb7d35f968ed9ddfa4d9215eac2182d6
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51862087"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934449"
 ---
 # <a name="overview-of-management-and-apis"></a>管理和 API 概述 
 
@@ -41,7 +41,7 @@ Defender for Endpoint 支持多种选项，以确保客户可以轻松采用平�
 
 ## <a name="endpoint-onboarding-and-portal-access"></a>终结点载入和门户访问 
 
-设备载入已完全集成到适用于客户端设备的 Microsoft Endpoint Manager 和 Microsoft Intune 以及用于服务器设备的 Azure 安全中心中，从而提供配置、部署和监视的完整端到端体验。 此外，Microsoft Defender for Endpoint 还支持用于设备管理的组策略和其他第三方工具。
+设备载入已完全集成到适用于客户端设备的 Microsoft Endpoint Manager 和 Microsoft Intune 以及适用于服务器设备的 Azure Defender 中，从而提供配置、部署和监视的完整端到端体验。 此外，Microsoft Defender for Endpoint 还支持用于设备管理的组策略和其他第三方工具。
 
 Defender for Endpoint 提供对具有门户访问权限的用户的精细控制，可通过基于角色的访问控制和 RBAC (查看和) 。 RBAC 模型支持各种安全团队结构：
 - 全局分布的组织和安全团队

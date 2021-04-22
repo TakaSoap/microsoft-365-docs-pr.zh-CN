@@ -1,7 +1,7 @@
 ---
 title: 运行 Microsoft 365 Defender 攻击模拟
 description: 运行 Microsoft 365 Defender 试点项目的攻击模拟，了解其展开方式并快速修复。
-keywords: Microsoft 威胁防护试点攻击模拟， 运行 Microsoft 威胁防护试点攻击模拟， 在 Microsoft 威胁防护中模拟攻击， Microsoft 威胁防护试点项目， 网络安全， 高级永久性威胁， 企业安全， 设备， 设备， 标识， 用户， 数据， 应用程序， 事件， 自动调查和修正， 高级搜寻
+keywords: Microsoft 365 Defender 试点攻击模拟， 运行 Microsoft 365 Defender 试点攻击模拟， 在 Microsoft 365 Defender 中模拟攻击， Microsoft 365 Defender 试点项目， 网络安全， 高级永久性威胁， 企业安全， 设备， 设备， 标识， 用户， 数据， 应用程序， 事件， 自动调查和修正， 高级搜寻
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-pilotmtpproject
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: bb6472fdd52cdab0ab649fbb76b1ff6a683d6c80
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 767a7ea4c4c7604d1d4b227f08e4ca32c62737c5
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51056456"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934473"
 ---
 # <a name="run-your-microsoft-365-defender-attack-simulations"></a>运行 Microsoft 365 Defender 攻击模拟
 
@@ -437,7 +437,7 @@ Microsoft Defender 终结点检测通常针对攻击技术最常见的属性。 
 > [!NOTE]
 > 使用自己的 GitHub 帐户做好准备，以在试点测试实验室环境中运行搜寻查询。
 
-|Title|说明|下载 MP4|观看 YouTube|CSL 文件使用|
+|标题|说明|下载 MP4|观看 YouTube|CSL 文件使用|
 |---|---|---|---|---|
 |第 1 节：KQL 基础知识|我们将介绍 Microsoft 365 Defender 中高级搜寻功能的基础知识。 了解可用的高级搜寻数据和基本 KQL 语法和运算符。|[MP4](https://aka.ms/MTP15JUL20_MP4)|[YouTube](https://youtu.be/0D9TkGjeJwM)|[第 1 部分：Git 中的 CSL 文件](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%201%20-%20KQL%20Fundamentals.csl)|
 |第 2 集：加入|我们将继续了解高级搜寻数据以及如何将表联接在一起。 了解内部、外部、唯一和半联接，以及默认 Kusto innerunique 联接的细微差别。|[MP4](https://aka.ms/MTP22JUL20_MP4)|[YouTube](https://youtu.be/LMrO6K5TWOU)|[第 2 部分：Git 中的 CSL 文件](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%202%20-%20Joins.csl)|

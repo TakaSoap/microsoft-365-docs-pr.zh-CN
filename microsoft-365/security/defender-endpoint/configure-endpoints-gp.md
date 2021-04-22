@@ -1,7 +1,7 @@
 ---
 title: 通过组策略将 Windows 10 设备载入 Microsoft Defender for Endpoint
 description: 使用组策略在 Windows 10 设备上部署配置包，以便它们可以载入到服务。
-keywords: 使用组策略配置设备， 设备管理， 配置 Windows ATP 设备， 载入 Microsoft Defender for Endpoint 设备， 组策略
+keywords: 使用组策略配置设备， 设备管理， 为终结点设备配置 Microsoft Defender， 载入适用于终结点设备的 Microsoft Defender， 组策略
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: b839cf204e8ab042e0c88a8f8c48df79770e7b4f
-ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
+ms.openlocfilehash: b8f56c8f2ba92073ea7ae9464f199d9c900b932f
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51893624"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933957"
 ---
 # <a name="onboard-windows-10-devices-using-group-policy"></a>使用组策略载入 Windows 10 设备 
 
@@ -121,7 +121,7 @@ ms.locfileid: "51893624"
 
 **策略位置：\Windows** Components\Windows Defender ATP
 
-Policy | Setting 
+Policy | 设置 
 :---|:---
 Enable\Disable Sample 集合|   已启用 - 选中"启用计算机上的示例集合"
 
@@ -129,7 +129,7 @@ Enable\Disable Sample 集合|   已启用 - 选中"启用计算机上的示例�
 
 **策略位置：\Windows**  组件\Windows Defender防病毒
 
-Policy | Setting 
+Policy | 设置 
 :---|:---
 配置对可能不需要的应用程序的检测 | 已启用、阻止
 
@@ -137,7 +137,7 @@ Policy | Setting
 
 **策略位置：\Windows** 组件\Windows Defender防病毒\MAPS
 
-Policy | Setting 
+Policy | 设置 
 :---|:---
 加入 Microsoft MAPS | 已启用、高级 MAPS
 需要进一步分析时发送文件示例 | 已启用，发送安全示例
@@ -146,7 +146,7 @@ Policy | Setting
 
 **策略位置：\Windows** 组件\Windows Defender防病毒\实时保护
 
-Policy | Setting 
+Policy | 设置 
 :---|:---
 关闭实时保护|已禁用
 打开行为监视|已启用
@@ -159,7 +159,7 @@ Policy | Setting
 
 这些设置配置终结点的定期扫描。 建议在性能允许的情况下执行每周快速扫描。
 
-Policy | Setting 
+Policy | 设置 
 :---|:---
 在运行计划扫描之前检查最新的病毒和间谍软件安全智能 |已启用
 
@@ -184,7 +184,7 @@ Policy | Setting
 
 
 
-Policy | Setting 
+Policy | 设置 
 :---|:---
 配置受控文件夹访问权限| 已启用，审核模式
 

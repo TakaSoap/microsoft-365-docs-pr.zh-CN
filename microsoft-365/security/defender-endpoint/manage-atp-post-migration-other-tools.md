@@ -1,7 +1,7 @@
 ---
 title: 使用 PowerShell、WMI 和 MPCmdRun.exe
 description: 了解如何使用 PowerShell、WMI 和 MPCmdRun.exe
-keywords: 迁移后， 管理， 操作， 维护， 利用率， PowerShell， WMI， MPCmdRun.exe， windows defender 高级威胁防护， atp， edr
+keywords: 迁移后， 管理， 操作， 维护， 利用率， PowerShell， WMI， MPCmdRun.exe， Microsoft Defender for Endpoint， edr
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,12 +20,12 @@ ms.collection:
 ms.topic: article
 ms.date: 09/22/2020
 ms.reviewer: chventou
-ms.openlocfilehash: 5f0e94360cfaa0c66aedec400e81adc85f4f5450
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 98b192551a351b58709185022cf311174052592b
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51185869"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934454"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-with-powershell-wmi-and-mpcmdrunexe"></a>使用 PowerShell、WMI 和 MPCmdRun.exe
 
@@ -55,7 +55,7 @@ ms.locfileid: "51185869"
 |任务  |了解详细信息的资源  |
 |---------|---------|
 |**管理 Microsoft Defender 防病毒** <br/><br/>*查看反恶意软件保护的状态、配置防病毒扫描的首选项&更新，以及对防病毒保护进行其他更改。*    |[使用 PowerShell cmdlet 配置和管理 Microsoft Defender 防病毒](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/use-powershell-cmdlets-microsoft-defender-antivirus)  <br/><br/>[使用 PowerShell cmdlet 启用云保护](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus#use-powershell-cmdlets-to-enable-cloud-delivered-protection)       |
-|**配置 Exploit Protection** 以缓解组织设备上的威胁<br/><br/> *我们建议首先在审核模式下 [使用](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/evaluate-exploit-protection#powershell) Exploit Protection。这样，你可以了解 Exploit Protection 如何影响组织使用的应用。*     | [自定义 Exploit Protection](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/customize-exploit-protection)<br/><br/>[用于 Exploit Protection 的 PowerShell cmdlet](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/customize-exploit-protection#powershell-reference)        |
+|**配置 Exploit Protection** 以缓解组织设备上的威胁<br/><br/> *我们建议首先在审核模式下 [使用](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/evaluate-exploit-protection#powershell) Exploit Protection。这样，你可以了解 Exploit Protection 如何影响组织使用的应用。*     | [自定义漏洞保护](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/customize-exploit-protection)<br/><br/>[用于 Exploit Protection 的 PowerShell cmdlet](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/customize-exploit-protection#powershell-reference)        |
 |**使用** PowerShell 配置攻击面减少规则 <br/><br/>*可以使用 PowerShell 从攻击面减少规则中排除文件和文件夹。* |[自定义攻击面减少规则：使用 PowerShell 排除文件夹中&文件](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/customize-attack-surface-reduction#use-powershell-to-exclude-files-and-folders)<br/><br/>另请参阅 [Antio Vasconcelo 的图形](https://github.com/anvascon/MDATP_PoSh_Scripts/tree/master/ASR%20GUI)用户界面工具，以使用 PowerShell 设置攻击面减少规则。 |
 |**使用** PowerShell 启用网络保护 <br/><br/>*可以使用 PowerShell 启用网络保护。* |[使用 PowerShell 打开网络保护](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/enable-network-protection#powershell) |
 |**配置受控文件夹访问权限** 以防范勒索软件 <br/><br/>*[受控文件夹访问权限](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/controlled-folders) 也称为反反somware保护。* |[使用 PowerShell 启用受控文件夹访问权限](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/enable-controlled-folders#powershell) |

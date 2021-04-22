@@ -1,7 +1,7 @@
 ---
 title: 设备的 Microsoft 安全功能分数
 description: 你的设备分数显示设备在应用程序、操作系统、网络、帐户和安全控件中的统一安全配置状态。
-keywords: Microsoft 设备安全分数， mdatp Microsoft 设备安全分数， 安全分数， 配置分数， 威胁和漏洞管理， 安全控制， 改进机会， 一段时间的安全配置分数， 安全状况， 基线
+keywords: Microsoft 设备安全分数、适用于终结点的 Microsoft Defender 设备安全分数、安全分数、配置分数、威胁和漏洞管理、安全控制、改进机会、一段时间的安全配置分数、安全状况、基线
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: fcf33b309045b9ca763b0d3cabc44fb13505ee0b
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: f2c799d477c400482c16b09b4d8a5cdc01106dfa
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51500054"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934077"
 ---
 # <a name="microsoft-secure-score-for-devices"></a>设备的 Microsoft 安全功能分数
 
@@ -45,7 +45,7 @@ ms.locfileid: "51500054"
 
 - 应用程序
 - 操作系统
-- Network
+- 网络
 - 帐户
 - 安全控件
 

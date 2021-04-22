@@ -1,7 +1,7 @@
 ---
 title: 规划支持终止的软件和硬件版本
 description: 发现并规划不再受支持且不会接收安全更新的软件和硬件版本。
-keywords: 威胁和漏洞管理， mdatp tvm 安全建议， 网络安全建议， 可操作的安全建议
+keywords: 威胁和漏洞管理， 适用于终结点的 Microsoft Defender 电视安全建议， 网络安全建议， 可操作的安全建议
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 29adf8a542d97a981a07dac167343f3774aa5af4
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: 8e8fc228b8856df03b580e748bf00efc8d4333c3
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51500152"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934125"
 ---
 # <a name="plan-for-end-of-support-software-and-software-versions-with-threat-and-vulnerability-management"></a>使用威胁和漏洞管理规划支持终止的软件和硬件版本
 

@@ -1,6 +1,6 @@
 ---
-title: 支持的 Microsoft Defender 高级威胁防护响应 API
-description: 了解与特定响应相关的 Microsoft Defender 高级威胁防护 API 调用。
+title: 支持的 Microsoft Defender 终结点响应 API
+description: 了解与特定响应相关的 Microsoft Defender 终结点 API 调用。
 keywords: 响应 api， 图形 api， 受支持的 api， 参与者， 警报， 设备， 用户， 域， ip， 文件
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -15,12 +15,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: a290c431f6d81b23896ddf77e7c7a47de378de22
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 36ed1f624fda7ae413ffbbf807925cf00e0a23ca
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51185547"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933765"
 ---
 # <a name="supported-microsoft-defender-for-endpoint-query-apis"></a>支持的 Microsoft Defender for Endpoint 查询 API 
 
@@ -38,7 +38,7 @@ ms.locfileid: "51185547"
 ## <a name="in-this-section"></a>本节内容
 主题 | 说明
 :---|:---
-收集调查包 | 运行此 API 从设备收集调查包。
+收集调查程序包 | 运行此 API 从设备收集调查包。
 隔离设备 | 运行此 API 以将设备与网络隔离。
 Unisolate 设备 | 从隔离中删除设备。 
 限制代码执行 | 通过停止恶意进程运行此 API 以包含攻击。 还可以锁定设备并阻止潜在恶意程序的后续尝试运行。

@@ -1,7 +1,7 @@
 ---
 title: 威胁和漏洞管理中的曝光评分
 description: 威胁和漏洞管理暴露分数反映了组织对网络安全威胁的易受攻击程度。
-keywords: 曝光分数， mdatp 曝光分数， mdatp 电视曝光分数， 组织曝光分数， 电视组织曝光分数， 威胁和漏洞管理， Microsoft Defender for Endpoint
+keywords: 曝光分数， 适用于终结点曝光分数的 Microsoft Defender， 适用于终结点电视曝光分数的 Microsoft Defender， 组织曝光分数， 电视组织曝光分数， 威胁和漏洞管理， 适用于终结点的 Microsoft Defender
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 34c3122b017b14605fdbb3358f31f73e26361a4d
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: fcea240fe1dc0ce97a2800391320b04c39c84336
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51500129"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934101"
 ---
 # <a name="exposure-score---threat-and-vulnerability-management"></a>曝光评分 - 威胁和漏洞管理
 

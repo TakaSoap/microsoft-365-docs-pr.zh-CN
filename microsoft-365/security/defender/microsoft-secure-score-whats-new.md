@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: 5a868904a43e17952368e097c0b0e963252d5bed
-ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
+ms.openlocfilehash: b3f86dfbc1ae89eff61c680737061b01998a527b
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51570359"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933861"
 ---
 # <a name="whats-new-in-microsoft-secure-score"></a>Microsoft 安全分数中的新增功能
 
@@ -50,7 +50,7 @@ Microsoft Teams 客户将在安全分数中看到"限制匿名用户加入会议
 
 ## <a name="december-2020"></a>2020 年 12 月
 
-### <a name="added-six-accounts-related-improvement-actions-for-microsoft-defender-for-endpoint-previously-microsoft-defender-atp"></a>为 Microsoft Defender for Endpoint 添加了六个与帐户相关的改进操作 (Microsoft Defender ATP) ：
+### <a name="added-six-accounts-related-improvement-actions-for-microsoft-defender-for-endpoint"></a>为 Microsoft Defender for Endpoint 添加了六个与帐户相关的改进操作：
 
 - 将"最小密码长度"设置为"14 个或多个字符"
 - 将"强制密码历史记录"设置为"24 个或多个密码 (") "
@@ -65,7 +65,7 @@ Microsoft Teams 客户将在安全分数中看到"限制匿名用户加入会议
 
 不再提供通过安全分数创建 ServiceNow 票证（通过> **ServiceNow）** 的能力。 感谢你提供反馈，并继续支持我们确定下一步。
 
-### <a name="added-three-services-related-improvement-actions-for-microsoft-defender-for-endpoint-previously-microsoft-defender-atp"></a>为 Microsoft Defender 终结点中心添加了三个与服务相关的改进 (Microsoft Defender ATP) ：
+### <a name="added-three-services-related-improvement-actions-for-microsoft-defender-for-endpoint"></a>为 Microsoft Defender for Endpoint 添加了三个与服务相关的改进操作：
 
 - 修复 Windows 服务的未标出服务路径
 - 将服务可执行路径更改为公用受保护位置

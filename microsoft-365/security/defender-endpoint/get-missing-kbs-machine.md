@@ -1,7 +1,7 @@
 ---
 title: 按设备 ID 获取缺少的 KB
 description: 按设备 ID 检索缺少的安全更新
-keywords: api， 图形 api， 受支持的 api， 获取， 列表， 文件， 信息， 设备 ID， 威胁&漏洞管理 api， mdatp tvm api
+keywords: api， 图形 api， 受支持的 api， 获取， 列表， 文件， 信息， 设备 ID， 威胁&漏洞管理 api， Microsoft Defender for Endpoint tvm api
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -14,12 +14,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 4364e6a38d4597a95d4d9a1f05dcce6fce5797ef
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: aa22b90b95788d9f5a65d54c7a335a2e0f4c3091
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51500695"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933573"
 ---
 # <a name="get-missing-kbs-by-device-id"></a>按设备 ID 获取缺少的 KB
 
@@ -45,7 +45,7 @@ GET /api/machines/{machineId}/getmissingkbs
 
 名称 | 类型 | 说明
 :---|:---|:---
-Authorization | 字符串 | Bearer {token}。 **必需**。
+Authorization | String | Bearer {token}。 **必需**。
 
 ## <a name="request-body"></a>请求正文
 

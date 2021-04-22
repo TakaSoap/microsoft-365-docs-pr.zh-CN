@@ -1,7 +1,7 @@
 ---
 title: 使用 Microsoft Endpoint Configuration Manager 载入
 description: 了解如何使用 Microsoft Endpoint Configuration Manager 载入 Microsoft Defender for Endpoint
-keywords: 载入， 配置， 部署， 部署， 终结点配置管理器， mdatp， 高级威胁防护， 集合创建， 终结点检测响应， 下一代保护， 攻击面减少， microsoft 终结点配置管理器
+keywords: 载入， 配置， 部署， 部署， 终结点配置管理器， Microsoft Defender for Endpoint， 集合创建， 终结点检测响应， 下一代保护， 攻击面减少， Microsoft 终结点配置管理器
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -18,12 +18,12 @@ ms.collection:
 - m365solution-scenario
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 31c946ccad84aca3b2fc86c95655cea9e66e182f
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 84273ce3e060eb86ee246a5cc6a8cae3cba743b5
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51186397"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934485"
 ---
 # <a name="onboarding-using-microsoft-endpoint-configuration-manager"></a>使用 Microsoft Endpoint Configuration Manager 载入
 
@@ -106,7 +106,7 @@ ms.locfileid: "51186397"
 
     ![Microsoft Endpoint Configuration Manager 向导的图像8](images/configmgr-membership-rules.png)
 
-9. 选择 **下一步**。
+9. 选择“**下一步**”。
 
     ![Microsoft Endpoint Configuration Manager 向导的图像9](images/configmgr-confirm.png)
 
@@ -119,7 +119,7 @@ ms.locfileid: "51186397"
 
 - [**终结点检测和响应**](#endpoint-detection-and-response)
 - [**下一代保护**](#next-generation-protection)
-- [**攻击面减少**](#attack-surface-reduction)
+- [**减少攻击面**](#attack-surface-reduction)
 
 
 ### <a name="endpoint-detection-and-response"></a>终结点检测和响应

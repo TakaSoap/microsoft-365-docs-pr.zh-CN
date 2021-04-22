@@ -1,7 +1,7 @@
 ---
 title: 威胁和漏洞管理中的软件清单
 description: 适用于终结点的威胁和漏洞管理 Microsoft Defender 的软件清单页显示了在软件中检测到的漏洞数量。
-keywords: 威胁和漏洞管理， microsoft defender for endpoint， microsoft defender for endpoint software inventory， mdatp threat & vulnerability management， mdatp threat & vulnerability management software inventory， mdatp tvm software inventory， tvm software inventory
+keywords: 威胁和漏洞管理， Microsoft Defender for Endpoint， Microsoft Defender for Endpoint 软件清单， Microsoft Defender for Endpoint threat & vulnerability management， Microsoft Defender for Endpoint threat & vulnerability management software inventory， Microsoft Defender for Endpoint tvm software inventory， tvm software inventory
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: a4ceb7cc4d39dbddbb4cd325491c16f4503bfc52
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 0d270760cfed965c8190668afcdb1cc25223d2b1
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51689373"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933717"
 ---
 # <a name="software-inventory---threat-and-vulnerability-management"></a>软件清单 - 威胁和漏洞管理
 

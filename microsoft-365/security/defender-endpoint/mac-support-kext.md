@@ -1,7 +1,7 @@
 ---
 title: 在 macOS 上解决 Microsoft Defender for Endpoint 中的内核扩展问题
 description: 在 macOS 上的 Microsoft Defender for Endpoint 中解决与内核扩展相关的问题。
-keywords: microsoft， defender， atp， mac， 内核， 扩展
+keywords: microsoft， defender， Microsoft Defender for Endpoint， mac， 内核， 扩展
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 32a4819f7a607c69b4dbf45b3284b2f4ea66ffc4
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 9dc3ee17d79972b5d36c5fff58fbe4cc486027bd
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51689649"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934269"
 ---
 # <a name="troubleshoot-kernel-extension-issues-in-microsoft-defender-for-endpoint-on-macos"></a>在 macOS 上解决 Microsoft Defender for Endpoint 中的内核扩展问题
 

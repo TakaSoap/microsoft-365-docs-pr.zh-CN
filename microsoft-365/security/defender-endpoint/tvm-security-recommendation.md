@@ -1,7 +1,7 @@
 ---
 title: 威胁和漏洞管理的安全建议
 description: 获取威胁和漏洞管理中按威胁、被泄露可能性和价值确定优先级的可操作安全建议。
-keywords: 威胁和漏洞管理， mdatp tvm 安全建议， 网络安全建议， 可操作的安全建议
+keywords: 威胁和漏洞管理， 适用于终结点的 Microsoft Defender 电视安全建议， 网络安全建议， 可操作的安全建议
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 97d496271c1ef7185419f7d39956da0429f070aa
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: af22bac911339de9c2e02df24a77c1889a33d43a
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51500479"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933729"
 ---
 # <a name="security-recommendations---threat-and-vulnerability-management"></a>安全建议 - 威胁和漏洞管理
 

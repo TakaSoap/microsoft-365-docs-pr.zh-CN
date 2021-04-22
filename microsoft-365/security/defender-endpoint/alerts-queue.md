@@ -1,6 +1,6 @@
 ---
-title: 查看和组织 Microsoft Defender ATP 警报队列
-description: 了解 Microsoft Defender ATP 警报队列如何工作，以及如何对警报列表进行排序和筛选。
+title: 查看和组织 Microsoft Defender 终结点警报队列
+description: 了解 Microsoft Defender for Endpoint 警报队列如何工作，以及如何对警报列表进行排序和筛选。
 keywords: 警报， 队列， 警报队列， 排序， 顺序， 筛选， 管理警报， 新， 正在进行， 已解决， 最新， 队列中的时间， 严重性， 时间段， Microsoft 威胁专家警报
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 03/27/2020
 ms.technology: mde
-ms.openlocfilehash: e1c85db5afac70ec4f2520eed55dcc4f3773fd03
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 48a3ff8dba5bccd62d7d43b295c136a814056a15
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51056375"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934329"
 ---
 # <a name="view-and-organize-the-microsoft-defender-for-endpoint-alerts-queue"></a>查看和组织 Microsoft Defender 终结点警报队列
 
@@ -61,7 +61,7 @@ ms.locfileid: "51056375"
 高 </br> (红色)  | 通常看到的与 APT 高级永久性威胁 (警报) 。 这些警报表明存在高风险，因为它们可能会损坏设备的严重性。 例如：凭据盗窃工具活动、未与任何组关联的勒索软件活动、篡改安全传感器或任何恶意活动，这些活动会指示人类对手。
 中 </br> (橙色)  | 终结点检测和响应泄露后行为的警报，这些警报可能是 APT 高级永久性威胁 (的) 。 这包括观察到的攻击阶段的典型行为、异常注册表更改、执行可疑文件等。 尽管其中一些可能是内部安全测试的一部分，但它需要进行调查，因为它也可能属于高级攻击。
 低 </br> (黄色)  | 与流行恶意软件相关的威胁警报。 例如，黑客工具、非恶意软件黑客工具（如运行探索命令、清除日志等）通常不会指示面向组织的高级威胁。 它还可能来自组织中用户隔离的安全工具测试。
-信息性 </br> (灰色)  | 可能被视为对网络有害的警报，但可以提升组织对潜在安全问题的安全意识。
+信息 </br> (灰色)  | 可能被视为对网络有害的警报，但可以提升组织对潜在安全问题的安全意识。
 
 #### <a name="understanding-alert-severity"></a>了解警报严重性
 

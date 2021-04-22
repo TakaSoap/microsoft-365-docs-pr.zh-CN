@@ -1,6 +1,6 @@
 ---
 title: 转换到 Microsoft Defender for Endpoint 的迁移指南
-description: 了解如何从非 Microsoft 威胁防护解决方案切换到 Microsoft Defender for Endpoint
+description: 了解如何从非 Microsoft 365 Defender 解决方案切换到 Microsoft Defender for Endpoint
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
@@ -17,12 +17,12 @@ ms.reviewer: chriggs, depicker, yongrhee
 f1.keywords: NOCSH
 ms.date: 09/24/2020
 ms.technology: mde
-ms.openlocfilehash: c191e2006f42eda215508ba961dcbeb1ea282078
-ms.sourcegitcommit: 8685b0f7d53c99577fa65144ab60295dfa60f46f
+ms.openlocfilehash: f834ab371b9d860c451c89bb1a4e7d64bdd6ec1f
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51218624"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934437"
 ---
 # <a name="make-the-switch-to-microsoft-defender-for-endpoint-and-microsoft-defender-antivirus"></a>切换到 Microsoft Defender for Endpoint 和 Microsoft Defender 防病毒
 
@@ -36,7 +36,7 @@ ms.locfileid: "51218624"
 
 ## <a name="migration-guides"></a>迁移指南
 
-如果你正在考虑使用 Microsoft Defender 防病毒从非 Microsoft 威胁防护解决方案切换到 Microsoft Defender for Endpoint，请查看我们的迁移指南。 选择最代表部署过程位置的方案，并查看指南。
+如果你正在考虑使用 Microsoft Defender 防病毒从非 Microsoft 365 Defender 解决方案切换到 Microsoft Defender for Endpoint，请查看我们的迁移指南。 选择最代表部署过程位置的方案，并查看指南。
 
 |方案 |指南 |
 |:--|:--|

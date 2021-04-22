@@ -1,7 +1,7 @@
 ---
 title: Intune 的设备控制策略示例
 description: 了解如何使用可以使用 Intune 的示例的设备控制策略。
-keywords: microsoft， defender， atp， mac， 设备， 控件， usb， 可移动， 媒体， intune
+keywords: microsoft， defender， Microsoft Defender for Endpoint， mac， 设备， 控件， usb， 可移动， 媒体， intune
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 79ec47aa2ea440ee46647acf53c77906e32a80ff
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: a7521a31b0b31fb95d2729f7068bfc9de5717f01
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51187693"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933813"
 ---
 # <a name="examples-of-device-control-policies-for-intune"></a>Intune 的设备控制策略示例
 

@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 05/21/2018
 ms.technology: mde
-ms.openlocfilehash: 1b8454107b6a2737f1236a066c3a24a2b9c776cb
-ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
+ms.openlocfilehash: a8b7268e89470a85a34015967b69abb1818fe64f
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51222645"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933837"
 ---
 # <a name="review-events-and-errors-using-event-viewer"></a>使用事件查看器查看事件和错误
 
@@ -59,7 +59,7 @@ ms.locfileid: "51222645"
 <th>事件 ID</th>
 <th>邮件</th>
 <th>说明</th>
-<th>操作</th>
+<th>Action</th>
 </tr>
 <tr>
 <td>1</td>
@@ -301,13 +301,13 @@ ms.locfileid: "51222645"
 </tr>
 <tr>
 <td>42</td>
-<td>Microsoft Defender for Endpoint WDATP 组件无法执行该操作。 组件：%1，操作：%2，异常类型：%3，异常消息：%4</td>
+<td>Microsoft Defender for Endpoint 组件无法执行操作。 组件：%1，操作：%2，异常类型：%3，异常消息：%4</td>
 <td>内部错误。 服务启动失败。</td>
 <td>如果此错误仍然存在，请联系支持人员。</td>
 </tr>
 <tr>
 <td>43</td>
-<td>Microsoft Defender for Endpoint WDATP 组件无法执行该操作。 组件：%1，操作：%2，异常类型：%3，异常错误：%4，异常消息：%5</td>
+<td>Microsoft Defender for Endpoint 组件无法执行操作。 组件：%1，操作：%2，异常类型：%3，异常错误：%4，异常消息：%5</td>
 <td>内部错误。 服务启动失败。</td>
 <td>如果此错误仍然存在，请联系支持人员。</td>
 </tr>
@@ -482,13 +482,13 @@ ms.locfileid: "51222645"
 </tr>
 <tr>
    <td>81</td>
-   <td>创建高级威胁Windows Defender ETW 自动记录器失败。 失败代码：%1</td>
+   <td>未能为终结点 ETW 自动记录器创建 Microsoft Defender。 失败代码：%1</td>
    <td>未能创建 ETW 会话。</td>
    <td>重新启动设备。 如果此错误仍然存在，请联系支持人员。</td>
 </tr>
 <tr>
    <td>82</td>
-   <td>无法删除高级Windows Defender ETW 自动记录器。 失败代码：%1</td>
+   <td>未能删除适用于 Endpoint ETW 自动记录器 Microsoft Defender。 失败代码：%1</td>
    <td>未能删除 ETW 会话。</td>
    <td>联系支持人员。</td>
 </tr>
@@ -500,7 +500,7 @@ ms.locfileid: "51222645"
 </tr>
 <tr>
    <td>85</td>
-   <td>无法触发高级Windows Defender高级威胁防护可执行文件。 失败代码：%1</td>
+   <td>未能触发 Microsoft Defender for Endpoint 可执行文件。 失败代码：%1</td>
    <td>Starring SenseIR 可执行文件失败。</td>
    <td>重新启动设备。 如果此错误仍然存在，请联系支持人员。</td>
 </tr>
@@ -554,19 +554,19 @@ ms.locfileid: "51222645"
 </tr>
 <tr>
    <td>94</td>
-   <td>Windows Defender高级威胁防护可执行文件已启动</td>
+   <td>Microsoft Defender for Endpoint 可执行文件已启动</td>
    <td>SenseCE 可执行文件已启动。</td>
    <td>正常操作通知;无需任何操作。</td>
 </tr>
 <tr>
    <td>95</td>
-   <td>Windows Defender高级威胁防护可执行文件已结束</td>
+   <td>Microsoft Defender for Endpoint 可执行文件已结束</td>
    <td>SenseCE 可执行文件已结束。</td>
    <td>正常操作通知;无需任何操作。</td>
 </tr>
 <tr>
    <td>96</td>
-   <td>Windows Defender高级威胁防护 Init 已调用。 结果代码：%2</td>
+   <td>Microsoft Defender for Endpoint Init 已调用。 结果代码：%2</td>
    <td>SenseCE 可执行文件称为 MCE 初始化。</td>
    <td>正常操作通知;无需任何操作。</td>
 </tr>
@@ -590,19 +590,19 @@ ms.locfileid: "51222645"
 </tr>
 <tr>
    <td>100</td>
-   <td>Windows Defender高级威胁防护可执行文件无法启动。 失败代码：%1</td>
+   <td>Microsoft Defender for Endpoint 可执行文件无法启动。 失败代码：%1</td>
    <td>SenseCE 可执行文件无法启动。</td>
    <td>重新启动设备。 如果此错误仍然存在，请联系支持人员。</td>
 </tr>
 <tr>
    <td>102</td>
-   <td>Windows Defender高级威胁防护网络检测和响应可执行文件已启动</td>
+   <td>适用于终结点网络检测和响应可执行文件的 Microsoft Defender 已启动</td>
    <td>SenseNdr 可执行文件已启动。</td>
    <td>正常操作通知;无需任何操作。</td>
 </tr>
 <tr>
    <td>103</td>
-   <td>Windows Defender高级威胁防护网络检测和响应可执行文件已结束</td>
+   <td>适用于终结点网络检测和响应可执行文件的 Microsoft Defender 已结束</td>
    <td>SenseNdr 可执行文件已结束。</td>
    <td>正常操作通知;无需任何操作。</td>
 </tr>

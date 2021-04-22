@@ -1,7 +1,7 @@
 ---
 title: 从第三方 HIPS 迁移到 ASR 规则
 description: 介绍如何从第三方主机入侵防护系统或 HIPS (解决方案) 迁移到 ASR 规则。
-keywords: 攻击面减少规则， asr， asr 规则， hips， 主机入侵防护系统， 保护规则， 反攻击， 攻击， 感染防护， Microsoft Defender for Endpoint， Microsoft Defender ATP
+keywords: 攻击面减少规则， asr， asr 规则， hips， 主机入侵防护系统， 保护规则， 反攻击， 攻击， 感染防护， Microsoft Defender for Endpoint
 search.product: eADQiWindows 10XVcnh
 ms.topic: article
 ms.prod: m365-security
@@ -15,12 +15,12 @@ ms.author: v-lsaldanha
 manager: dansimp
 ms.custom: asr
 ms.technology: mde
-ms.openlocfilehash: 5b2c6c12de7b87a045a81a552e3fe74b4829e94d
-ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
+ms.openlocfilehash: de65c134560ecca219de9174ff222d31dd578d31
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51764779"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933777"
 ---
 # <a name="migrating-from-a-third-party-hips-to-asr-rules"></a>从第三方 HIPS 迁移到 ASR 规则
 
@@ -41,7 +41,7 @@ ms.locfileid: "51764779"
 - **应用于**- 所有进程
 - **进程**- N/A
 - **操作**- 注册表修改
-- **文件/文件夹、注册表项/值、进程、服务示例** - *\Software*，HKCU\Environment\UserInitMprLogonScript，HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Accessibility\ATs *\StartExe， HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options*\Debugger，HKEY_CURRENT_USER\Software\Microsoft\HtmlHelp Author\location，HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\SilentProcessExit*\MonitorProcess
+- **文件/文件夹、注册表项/值、进程、服务示例** - *\Software*，HKCU\Environment\UserInitMprLogonScript，HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Accessibility\ATs *\StartExe， HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options*\Debugger， HKEY_CURRENT_USER\Software\Microsoft\HtmlHelp Author\location， HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\SilentProcessExit*\MonitorProcess
 - **攻击面减少规则**- ASR 规则阻止攻击技术，而不是 IOC (泄露) 。 阻止特定文件扩展名并非始终有用，因为它不会阻止设备泄漏。 它仅部分阻止攻击，直到攻击者为有效负载创建新的扩展类型。
 - **其他推荐功能**- 强烈建议启用 Microsoft Defender AV 以及云保护和行为分析。 我们建议你使用其他防护，如 ASR 规则"使用高级防护抵御勒索软件"。 这提供了针对勒索软件攻击的更高级别的保护。 此外，其中一些注册表项由 Microsoft Defender for Endpoint 进行监视，例如 ASEP 技术，这将触发特定警报。 此外，使用的注册表项至少需要本地管理员权限或受信任的安装程序权限才能进行修改。 建议使用具有最低管理帐户或权限的锁定环境。 可以启用其他系统配置，包括"禁用非必需角色的 SeDebug"，这是更广泛的安全建议中的一部分。
 
@@ -50,7 +50,7 @@ ms.locfileid: "51764779"
 - **适用于**- 来自 USB 的不受信任的程序
 - **进程**- *
 - **操作**- 进程执行
-- **文件/文件夹、注册表项/值、进程、服务示例：-*
+- **文件/文件夹、注册表项/值、进程、服务的示例：-*
 - **攻击面** 减少规则 - ASR 规则具有内置规则，可阻止从可移动驱动器启动不受信任的和未签名的程序："阻止从 USB 运行的不受信任的和未签名的进程"，GUID "b2b3f03d-6a65-4f7b-a9c7-1c7ef74a9ba4"。
 - **其他推荐功能**- 请使用 Microsoft Defender for Endpoint 探索 USB 设备和其他可移动媒体的其他控件：如何使用 Microsoft Defender for Endpoint 控制 USB 设备和其他 [可移动媒体](/windows/security/threat-protection/device-control/control-usb-devices-using-intune)。
 
@@ -69,7 +69,7 @@ ms.locfileid: "51764779"
 - **进程**- outlook.exe
 - **操作**- 进程执行
 - **文件/文件夹、注册表项/值、进程、服务**- powershell.exe
-- **攻击面** 减少规则 - ASR 规则具有内置规则，可阻止 Office 通信应用 (Outlook、Skype 和 Teams) 启动子进程："阻止 Office 通信应用程序创建子进程"，GUID "26190899-1602-49e8-8b27-eb1d0a1ce869"。
+- **攻击面** 减少规则 - ASR 规则具有内置规则，可阻止 Office 通信应用 (Outlook、Skype 和 Teams) 启动子进程："阻止 Office 通信应用程序创建子进程"、GUID"26190899-1602-49e8-8b27-eb1d0a1ce869"。
 - **其他推荐功能**- 我们建议启用 PowerShell 约束语言模式，以最大限度地降低 PowerShell 的攻击面。
 
 
@@ -87,7 +87,7 @@ ms.locfileid: "51764779"
 - **适用于**- Office
 - **进程**- winword.exe、powerpnt.exe、excel.exe
 - **操作**- 文件创建
-- 文件/文件夹、注册表项 **/值、进程、服务**- C：\Users *\AppData **.exe、C：\ProgramData**.exe、C：\ProgramData**.com、C：\Users* AppData\Local\Temp **.com、C：\Users*\Downloads**.exe、C：\Users *\AppData **.scf、C：\Users\Public**.exe、C：\Users*\Desktop***.exe* 的示例
+- 文件/文件夹、注册表项 **/值**、进程、服务 - C：\Users *\AppData **.exe、C：\ProgramData**.exe、C：\ProgramData**.com、C：\Users* AppData\Local\Temp **.com、C：\Users*\Downloads**.exe、C：\Users *\AppData **.scf、C：\Users\Public**.exe、C：\Users*\Desktop***.exe* 的示例
 - **攻击面减少规则**- N/A。
 
 ### <a name="block-wscript-from-reading-certain-types-of-files"></a>阻止 Wscript 读取某些类型的文件
@@ -137,7 +137,7 @@ ms.locfileid: "51764779"
 - **攻击面减少规则**- 总的来说，ASR 规则不能作为应用程序管理器工作。
 - **其他推荐功能**- 若要阻止用户启动特定进程或程序，建议Windows Defender应用程序控制。 Microsoft Defender for Endpoint File and Cert indicators， can be used in an Incident Response scenario (for application control mechanism) .
     
-### <a name="block-unauthorized-changes-to-mdatp-av-configurations"></a>阻止对 MDATP AV 配置进行未经授权的更改
+### <a name="block-unauthorized-changes-to-microsoft-defender-antivirus-configurations"></a>阻止对 Microsoft Defender 防病毒配置进行未经授权的更改
 
 - **应用于**- 所有进程
 - **进程**- *

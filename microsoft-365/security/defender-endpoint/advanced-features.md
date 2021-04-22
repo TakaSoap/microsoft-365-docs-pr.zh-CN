@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 9c77cb19731e55976058ce2f628baf4026639949
-ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
+ms.openlocfilehash: 34ca51c066eddb65f2df0cf8a5d85732bd84a9c0
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51903786"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934365"
 ---
 # <a name="configure-advanced-features-in-defender-for-endpoint"></a>在 Defender for Endpoint 中配置高级功能
 
@@ -151,7 +151,7 @@ ms.locfileid: "51903786"
 
 ## <a name="microsoft-defender-for-identity-integration"></a>Microsoft Defender for Identity 集成
 
-与 Azure 高级威胁防护的集成允许你直接透视另一个 Microsoft Identity 安全产品。 Azure 高级威胁防护通过有关可疑遭到入侵的帐户和相关资源的更多见解来扩大调查。 通过启用此功能，你将通过从标识的角度透视网络来丰富基于设备的调查功能。
+与 Microsoft Defender for Identity 的集成允许你直接透视另一个 Microsoft Identity 安全产品。 Microsoft Defender for Identity 通过有关可疑遭到入侵的帐户和相关资源的其他见解来扩大调查。 通过启用此功能，你将通过从标识的角度透视网络来丰富基于设备的调查功能。
 
 > [!NOTE]
 > 你需要具有相应的许可证才能启用此功能。
@@ -160,7 +160,7 @@ ms.locfileid: "51903786"
 
 此功能仅在有活动的 Office 365 E5 或威胁智能加载项时可用。 有关详细信息，请参阅 Office 365 企业版 E5 产品页面。
 
-启用此功能后，你将能够将 Office 365 高级威胁防护的数据合并到 Microsoft Defender 安全中心，以跨 Office 365 邮箱和 Windows 设备进行全面的安全调查。
+启用此功能后，你将能够将数据从 Microsoft Defender for Office 365 合并到 Microsoft Defender 安全中心，以跨 Office 365 邮箱和 Windows 设备进行全面的安全调查。
 
 > [!NOTE]
 > 你需要具有相应的许可证才能启用此功能。
@@ -173,7 +173,7 @@ ms.locfileid: "51903786"
 
 > [!NOTE]
 > 适用于终结点的 Defender 中的 Microsoft 威胁专家功能随企业移动性 + 安全性 的 E5 许可证 [一起提供](https://www.microsoft.com/cloud-platform/enterprise-mobility-security)。
-## <a name="microsoft-cloud-app-security"></a>Microsoft Cloud App Security
+## <a name="microsoft-cloud-app-security"></a>Microsoft 云应用安全
 
 启用此设置将 Defender for Endpoint 信号转发到 Microsoft Cloud App Security，以便更深入地了解云应用程序使用情况。 转发的数据存储和处理位置与 Cloud App Security 数据位于同一位置。
 

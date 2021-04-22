@@ -1,7 +1,7 @@
 ---
 title: 使用本地脚本载入 Windows 10 设备
 description: 使用本地脚本在设备上部署配置包，以便它们可以载入服务。
-keywords: 使用本地脚本配置设备， 设备管理， 配置 Windows ATP 设备， 为终结点设备配置 Microsoft Defender
+keywords: 使用本地脚本配置设备， 设备管理， 为终结点设备配置 Microsoft Defender
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 77473df9cc3e0e98efac8eaacd0a51b551bc3258
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 056268ed093d371d39a6136dd0b272c12ab6f9d7
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51056359"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933909"
 ---
 # <a name="onboard-windows-10-devices-using-a-local-script"></a>使用本地脚本载入 Windows 10 设备
 
@@ -150,6 +150,6 @@ Value: 0 or 1
 - [使用组策略载入 Windows 10 设备](configure-endpoints-gp.md)
 - [使用 Microsoft Endpoint Configuration Manager 载入 Windows 10 设备](configure-endpoints-sccm.md)
 - [使用移动设备管理工具载入 Windows 10 设备](configure-endpoints-mdm.md)
-- [载入非持久性虚拟桌面基础结构 (VDI) 设备。](configure-endpoints-vdi.md)
+- [载入非永久虚拟桌面基础结构 （VDI） 设备](configure-endpoints-vdi.md)
 - [在新载入的 Microsoft Defender 终结点设备上运行检测测试](run-detection-test.md)
 - [Microsoft Defender 终结点载入问题疑难解答](troubleshoot-onboarding.md)

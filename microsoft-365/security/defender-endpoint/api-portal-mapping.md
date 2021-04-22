@@ -1,5 +1,5 @@
 ---
-title: Microsoft Defender ATP 检测 API 字段
+title: Microsoft Defender 终结点检测 API 字段
 description: 了解检测 API 字段如何映射到 Microsoft Defender 安全中心中的值
 keywords: 检测， 检测字段， 字段， api， 字段， 拉取检测， rest api， 请求， 响应
 search.product: eADQiWindows 10XVcnh
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: e304d731409c4cd0fac722d492b3fab5ed28fd35
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: d6d2ad9abe88d0099b58dd2df486120082bb22c1
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51164877"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933633"
 ---
 # <a name="microsoft-defender-for-endpoint-detections-api-fields"></a>Microsoft Defender 终结点检测 API 字段
 

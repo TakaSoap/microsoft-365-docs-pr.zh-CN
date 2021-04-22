@@ -1,7 +1,7 @@
 ---
 title: 易受攻击的设备报告 - 威胁和漏洞管理
 description: 显示易受攻击的设备趋势和当前统计信息的报告。 目标是了解设备曝光的目的和范围。
-keywords: mdatp-tvm 易受攻击的设备， mdatp， tvm， &漏洞暴露， 减少威胁和漏洞， 监视安全配置
+keywords: Microsoft Defender for Endpoint-tvm 易受攻击的设备， Microsoft Defender for Endpoint， tvm， reduce threat & vulnerability exposure， reduce threat and vulnerability， monitor security configuration
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: f481ddca897594bd73de9b5f4762903f23fb24c6
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: 4b2b581d570bd0924970a845c66a599495ff9829
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51500461"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933705"
 ---
 # <a name="vulnerable-devices-report---threat-and-vulnerability-management"></a>易受攻击的设备报告 - 威胁和漏洞管理
 

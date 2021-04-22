@@ -1,7 +1,7 @@
 ---
-title: Microsoft Defender 终结点服务问题疑难解答
+title: Microsoft Defender for Endpoint 服务疑难解答
 description: 查找已知问题（如尝试访问服务时的服务器错误）的解决方案和解决方法。
-keywords: microsoft defender for endpoint 疑难解答， Windows ATP 疑难解答， 服务器错误， 访问被拒绝， 凭据无效， 无数据， 仪表板门户， 允许， 事件查看器
+keywords: Microsoft Defender for Endpoint 疑难解答， 服务器错误， 访问被拒绝， 凭据无效， 无数据， 仪表板门户， 允许， 事件查看器
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -16,14 +16,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: 112f682836da37ddfb51c103282518ff74563727
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 81f1b4154de25f6186679adc5b1f24f78f302415
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51186013"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933753"
 ---
-# <a name="troubleshoot-service-issues"></a>解决服务问题
+# <a name="troubleshoot-service-issues"></a>服务疑难解答
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -80,7 +80,7 @@ ms.locfileid: "51186013"
 >想要体验 Microsoft Defender for Endpoint？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-troubleshoot-belowfoldlink)
 
 ## <a name="microsoft-defender-for-endpoint-tenant-was-automatically-created-in-europe"></a>Microsoft Defender for Endpoint 租户在欧洲自动创建
-使用 Azure 安全中心监视服务器时，会自动创建 Microsoft Defender 终结点租户。 默认情况下，Microsoft Defender for Endpoint 数据存储在欧洲。
+使用 Azure Defender 监视服务器时，会自动创建适用于终结点的 Microsoft Defender 租户。 默认情况下，Microsoft Defender for Endpoint 数据存储在欧洲。
 
 
 

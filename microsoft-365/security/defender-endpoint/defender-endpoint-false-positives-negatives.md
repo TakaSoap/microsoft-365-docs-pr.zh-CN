@@ -1,7 +1,7 @@
 ---
 title: 解决 Microsoft Defender for终结点的误报/负数
 description: 了解如何在 Microsoft Defender for Endpoint 中处理误报或漏报。
-keywords: 防病毒， 异常， 排除， defender atp， 误报， 假负， 阻止的文件， 阻止的 URL
+keywords: 防病毒， 异常， 排除， 适用于终结点的 Microsoft Defender， 误报， 漏报， 阻止的文件， 阻止的 URL
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -22,12 +22,12 @@ ms.collection:
 ms.topic: how-to
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs, yonghree, jcedola
 ms.custom: FPFN
-ms.openlocfilehash: f2615cf5ec49c9df27472f04c367f30511e9c0cc
-ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
+ms.openlocfilehash: 368de770f772dc75a366b2120c8824fda6a7ba11
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51759866"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933585"
 ---
 # <a name="address-false-positivesnegatives-in-microsoft-defender-for-endpoint"></a>解决 Microsoft Defender for终结点的误报/负数
 
@@ -338,11 +338,11 @@ CustomEnterpriseBlock!cl` 。 Defender for Endpoint 将还原最近 30 天内在
 
 Microsoft Defender for Endpoint 提供各种选项，包括针对各种特性和功能微调设置的功能。 如果收到大量误报，请务必查看组织的威胁防护设置。 您可能需要进行一些调整以：
 
-- [云保护](#cloud-delivered-protection)
+- [云端保护](#cloud-delivered-protection)
 - [针对可能不需要的应用程序的修正](#remediation-for-potentially-unwanted-applications)
 - [自动调查和修复](#automated-investigation-and-remediation)
 
-### <a name="cloud-delivered-protection"></a>云保护
+### <a name="cloud-delivered-protection"></a>云端保护
 
 检查云提供的 Microsoft Defender 防病毒保护级别。 默认情况下，云提供的保护设置为"未配置"，这与大多数组织的正常保护级别相对应。  如果云提供的保护设置为 **高**、高 **+** 或 **零容** 限，则可能会遇到更多误报。
 
@@ -440,7 +440,7 @@ PUA (可能不需要) 是一类软件，可能会导致设备运行缓慢、显�
 > [!IMPORTANT]
 > 我们建议使用 *完全自动化* 进行自动调查和修正。 不要因为误报而关闭这些功能。 相反， [使用"允许"指示器定义](#indicators-for-microsoft-defender-for-endpoint)例外，并保留自动调查和修正集以自动采取适当操作。 遵循 [本指南](automation-levels.md#levels-of-automation) 有助于减少安全操作团队必须处理的警报数。 
 
-## <a name="still-need-help"></a>仍然需要帮助？
+## <a name="still-need-help"></a>是否仍需要帮助？
 
 如果已执行本文中所有步骤，但仍需要帮助，请联系技术支持人员。
 
