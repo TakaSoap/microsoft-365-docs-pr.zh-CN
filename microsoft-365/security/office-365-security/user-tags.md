@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date: ''
+ms.date: 04/21/2021
 audience: ITPro
 ms.topic: how-to
 localization_priority: Normal
@@ -16,12 +16,12 @@ ms.collection:
 description: 管理员可以了解如何在 Microsoft Defender for Office 365 计划 2 中标识具有用户标记的特定用户组。 可在 Microsoft Defender for Office 365 中的警报、报告和调查之间使用标签筛选，以快速识别标记的用户。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 4c439dcb91831475bc10da4a01d0fa29e7aae359
-ms.sourcegitcommit: 58fbcfd6437bfb08966b79954ca09556e636ff4a
+ms.openlocfilehash: 2c1dc426bae77cd35b567bf166032855327a8ffe
+ms.sourcegitcommit: 682ed2c4e2bc6979025cdb89094866cef6c8751a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/08/2021
-ms.locfileid: "51632198"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51943007"
 ---
 # <a name="user-tags-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 中的用户标记
 
@@ -49,6 +49,9 @@ ms.locfileid: "51632198"
 本文介绍如何在安全与合规中心内配置&标记。 安全与合规中心& cmdlet 用于管理用户标记。
 
 若要了解用户标记如何作为策略的一部分来帮助保护高影响的用户帐户，请参阅 Microsoft [365](security-recommendations-for-priority-accounts.md)中优先级帐户的安全建议。
+
+> [!NOTE]
+> 如果使用统一的 Microsoft 365 安全中心，可以在此处设置标记 https://security.microsoft.com/userTags ：。
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>开始前，有必要了解什么？
 

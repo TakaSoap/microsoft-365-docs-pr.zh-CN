@@ -7,6 +7,7 @@ f1.keywords:
 ms.author: dansimp
 author: dansimp
 manager: dansimp
+ms.date: 04/21/2021
 audience: ITPro
 ms.topic: article
 localization_priority: Normal
@@ -18,12 +19,12 @@ ms.collection:
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 86433ef505cd1b9afca100dc731f1885e22c8401
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 005c1f6ad7806c8d1ba1d38e4e82edd25034075d
+ms.sourcegitcommit: 682ed2c4e2bc6979025cdb89094866cef6c8751a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51935133"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51942989"
 ---
 # <a name="evaluate-microsoft-defender-for-office-365"></a>评估 Microsoft Defender for Office 365
 
@@ -37,6 +38,9 @@ ms.locfileid: "51935133"
 [Microsoft Defender for Office 365](defender-for-office-365.md)评估体验旨在消除设备和环境配置的复杂性，以便你可以专注于评估 Microsoft Defender for Office 365 的功能。 使用评估模式，可以评估发送到 Exchange Online 邮箱的所有邮件，而无需将 MX 记录指向 Microsoft。 此功能仅适用于电子邮件保护，而仅适用于 Word、SharePoint 或 Teams 等 Office 客户端。
 
 如果还没有支持 Microsoft Defender for Office 365 的许可证，可以启动为期[30](https://admin.microsoft.com/AdminPortal/Home#/catalog/offer-details/microsoft-defender-for-office-365-plan-2-/223860DC-15D6-42D9-A861-AE05473069FA)天的免费评估，并测试 Office 36 & 5 安全与合规中心 (中的功能。 https://protection.office.com/homepage) 你可以轻松完成快速设置，并在必要时轻松将其关闭。
+
+> [!NOTE]
+> 如果你在统一的 Microsoft 365 安全门户中 (security.microsoft.com) 可以在此处启动 Defender for Office 365 评估：Email & Collaboration > Policies & Rules > Threat Policies > Additional Policies。
 
 ## <a name="how-the-evaluation-works"></a>评估的工作原理
 

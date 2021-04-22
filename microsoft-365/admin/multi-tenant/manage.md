@@ -19,21 +19,20 @@ search.appverid:
 - MET150
 - MOE150
 description: 了解如何使用租户切换器以及多租户视图。
-ms.openlocfilehash: 21b51a5e0c79496bf73e60c04aea68def3cf8ad6
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: d59760b8a143acc33747aff9f7deaa0b6dd3e711
+ms.sourcegitcommit: 682ed2c4e2bc6979025cdb89094866cef6c8751a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51580878"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51943025"
 ---
 # <a name="multi-tenant-management"></a>多租户管理
 
-多租户管理提供了统一的管理形式，使管理员能够从一个位置管理他们管理的所有租户。 如果管理多个租户，可以：
+多租户管理提供了统一的管理形式，允许 Microsoft 365 合作伙伴管理员从一个位置管理他们管理的所有租户。 如果你是管理多个租户的合作伙伴，你可以：
 
 - 在管理租户之间快速移动。
 - 跨多个租户评估服务运行状况、产品和计费。
 - 在 **"所有** 租户"页上，可以快速查看所有租户服务的运行状况、任何打开的服务请求、产品和帐单以及该租户中的用户数。
-
 
 ## <a name="move-between-tenants"></a>在租户之间移动
 
@@ -54,7 +53,6 @@ ms.locfileid: "51580878"
   - 搜索或选择要管理的租户
   - 还可以将访问最多的租户固定到列表顶部。
 
-
 如果你将租户标记为收藏夹，它会自动扩展，以便你可以立即查看状态详细信息。
 
 ## <a name="view-service-health-for-all-accounts"></a>查看所有帐户的服务运行状况
@@ -63,7 +61,7 @@ ms.locfileid: "51580878"
 
 1. 在 Microsoft 365 管理中心的多租户视图中，选择"服务 **运行状况"。**
 2. 在"服务运行状况"页面聚合视图中，您还可以查看事件总数、影响任何托管租户的公告总数以及包含活动事件的服务数。 还可以查看有多少租户受事件和公告的影响。
-    
+
     - 可以使用筛选器选项按问题类型或服务查看问题
 
     - 可以在"所有服务" **或"** 所有问题"选项卡 **下查看** 问题。

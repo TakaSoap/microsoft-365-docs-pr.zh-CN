@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid: met150
 ms.custom: seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: f3920942925efbe334df84370c61fbe6a98ad49f
-ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
+ms.openlocfilehash: f9bb0690cf48c4cc694c0d563ba7d4203953358a
+ms.sourcegitcommit: 682ed2c4e2bc6979025cdb89094866cef6c8751a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/22/2021
-ms.locfileid: "51939260"
+ms.locfileid: "51943049"
 ---
 # <a name="the-unified-microsoft-365-security-center-overview"></a>统一 Microsoft 365 安全中心概述
 
@@ -50,6 +50,9 @@ Microsoft 365 安全中心将现有 Microsoft 安全门户（如 Microsoft Defen
 
 - [Microsoft 365 安全中心中的 Defender for Office 365](microsoft-365-security-center-mdo.md)
 - [Microsoft 365 安全中心中的 Defender for Endpoint](microsoft-365-security-center-mde.md)
+
+> [!NOTE]
+> Microsoft 365 安全门户使用和强制执行现有的基于角色的访问，并且将每个安全模型移动到统一门户。 每个聚合工作负荷 (如 MDO 或 MDE) 都有自己的基于角色的访问。 产品中已有的角色将自动聚合到 Microsoft 365 安全门户中。 但是，MCAS 的角色和权限仍将在 MCAS 中处理。
 
 ## <a name="what-to-expect"></a>预期结果
 
