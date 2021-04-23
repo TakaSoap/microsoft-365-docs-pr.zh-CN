@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 0c088375cd784b411fdce417d77b1ea176bcee26
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 15eebbba102640a92f9c7712194aaef685a96cfb
+ms.sourcegitcommit: 7cc2be0244fcc30049351e35c25369cacaaf4ca9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51932901"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51952604"
 ---
 # <a name="take-action-on-advanced-hunting-query-results"></a>对高级搜寻查询结果采取措施
 
@@ -34,6 +34,7 @@ ms.locfileid: "51932901"
 
 **适用于：**
 - Microsoft 365 Defender
+- Microsoft Defender for Endpoint
 
 [!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
@@ -79,6 +80,9 @@ ms.locfileid: "51932901"
 ## <a name="review-actions-taken"></a>查看已采取的操作
 每个操作都单独记录在操作中心的"[](m365d-action-center.md)操作中心历史记录  >  " (security.microsoft.com/action-center/history) 。 [](https://security.microsoft.com/action-center/history) 转到操作中心以检查每个操作的状态。
  
+>[!NOTE]
+>本文中的某些表在 Microsoft Defender for Endpoint 中可能不可用。 [打开 Microsoft 365 Defender](m365d-enable.md) 以使用更多数据源搜寻威胁。 你可以按照从 Microsoft Defender for Endpoint 迁移高级搜寻查询中的步骤将高级搜寻工作流从 [Microsoft Defender for Endpoint](advanced-hunting-migrate-from-mde.md)移动到 Microsoft 365 Defender。
+
 ## <a name="related-topics"></a>相关主题
 - [高级搜寻概述](advanced-hunting-overview.md)
 - [了解查询语言](advanced-hunting-query-language.md)

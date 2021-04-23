@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9db96e9f-a622-4d5d-b134-09dcace55b6a
 description: 了解如何使用 Power BI 中的 Microsoft 365 使用情况分析模板应用开始收集租户数据。
-ms.openlocfilehash: 7c92fb643f9be6b5f1474f08df659c4f488a9a41
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: d9cadcc8258478fd1d5dbc0d9ae6bf4e814a8435
+ms.sourcegitcommit: b6763a8ab240fbdd56078a7c9452445d0c4b9545
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51579058"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51957511"
 ---
 # <a name="enable-microsoft-365-usage-analytics"></a>启用 Microsoft 365 使用情况分析
 
@@ -53,11 +53,11 @@ Microsoft 365 美国政府版社区版尚未提供 Microsoft 365 使用情况分
   
 有关详细信息 [，请参阅有关](../add-users/about-admin-roles.md) 管理员角色的信息。 
   
-1. 在管理中心，转到“**报表**”\> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">使用情况</a>页面。 
+1. 在管理中心，转到 **"设置** \> **""组织设置** \> **""服务"** 选项卡。 
     
-2. 在使用情况 **页面上** ，找到 **Microsoft 365 使用情况分析卡** ，然后选择 **入门**。
+2. 在"**服务"选项卡** 上，选择"报告 **"。**
     
-3. 在打开的"报告"面板上，将"为 **Power BI 的 Microsoft 365** 使用情况分析提供数据"设置为 **"保存** \> **时"。** 
+3. 在打开的"报告"面板上，将"让 Power BI 的 **Microsoft 365** 使用情况分析可用的报告数据"设置为 **"保存** \> **"。** 
   
 数据收集过程将在 2 到 48 小时内完成，具体取决于租户的大小。 数据收集 **完成后，"转到 Power BI"** 按钮 (不再灰显) "按钮。 
     

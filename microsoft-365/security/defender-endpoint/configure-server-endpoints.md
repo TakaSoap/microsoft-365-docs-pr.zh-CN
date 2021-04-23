@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 4eea2931196c192620812c1609c506e1fb99093d
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 17aca5fb388aef26504902ee63b22410420c8827
+ms.sourcegitcommit: 7cc2be0244fcc30049351e35c25369cacaaf4ca9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51932949"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51952484"
 ---
 # <a name="onboard-windows-servers-to-the-microsoft-defender-for-endpoint-service"></a>将 Windows 服务器载入 Microsoft Defender for Endpoint 服务
 
@@ -194,7 +194,7 @@ Defender for Endpoint 可以与 Azure Defender 集成，以提供全面的 Windo
 
 此集成中包含以下功能：
 
-- 自动载入 - 适用于终结点的 Defender 传感器在载入到 Azure Defender 的 Windows 服务器上自动启用。 有关 Azure Defender 载入详细信息，请参阅 [载入 Azure Defender 标准版，增强安全性](https://docs.microsoft.com/azure/security-center/security-center-onboarding)。
+- 自动载入 - 适用于终结点的 Defender 传感器在载入到 Azure Defender 的 Windows 服务器上自动启用。 有关 Azure Defender 载入详细信息，请参阅使用集成的 [Microsoft Defender for Endpoint 许可证](https://docs.microsoft.com/azure/security-center/security-center-wdatp)。
 
     > [!NOTE]
     > Azure Defender for Servers 和 Microsoft Defender for Endpoint 之间的集成已扩展为支持[Windows Server 2019 和 Windows 虚拟桌面 (WVD) 。 ](https://docs.microsoft.com/azure/security-center/release-notes#microsoft-defender-for-endpoint-integration-with-azure-defender-now-supports-windows-server-2019-and-windows-10-virtual-desktop-wvd-in-preview)
@@ -338,12 +338,13 @@ OPINSIGHTS_WORKSPACE_KEY=<your workspace key>== AcceptEndUserLicenseAgreement=1"
 
 :::image type="content" source="images/startupprops.png" alt-text="启动属性":::
 
-要在此处运行的文件的名称为 c：\windows\MMA\DeployMMA.cmd 在启动过程中重新启动服务器后，它将安装客户体验和诊断遥测 KB 的更新，然后安装 MMAAgent，同时设置工作区 ID 和密钥，并且将载入服务器。
+要在此处运行的文件的名称为 c：\windows\MMA\DeployMMA.cmd。
+在启动过程中重新启动服务器后，它将安装客户体验更新和诊断遥测 KB，然后安装 MMA 代理，同时设置工作区 ID 和密钥，并且将载入服务器。
 
-如果您不想重新启动所有 **服务器** ，您也可以使用即时任务运行 deployMMA.cmd。
+如果不想重新启动所有 **服务器** ，您也可以使用即时任务运行 deployMMA.cmd。
 这分两个阶段完成。 首先 **在** GPO 中创建文件和文件夹 – 为系统提供时间来确保已应用 GPO，并且所有服务器都有安装文件。 然后，添加即时任务。 这将获得相同的结果，而无需重新启动。
 
-由于脚本具有退出方法，并且如果安装了 MMA，将不会重新运行，因此，您还可以使用每日计划任务来实现相同的结果。 与 Configuration Manager 合规性策略类似，它将每天检查一次以确保 MMA 存在。
+由于脚本具有退出方法，并且如果安装了 MMA，将不会重新运行，因此，您还可以使用每日计划任务来实现相同的结果。 与 Configuration Manager 合规性策略类似，它每天都会检查以确保 MMA 存在。
 
 :::image type="content" source="images/schtask.png" alt-text="计划任务":::
 

@@ -19,12 +19,12 @@ ms.topic: article
 search.appverid: met150
 ms.custom: seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: 1fb5a4eee41384ef1afc9b46e5bf538344718fe9
-ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
+ms.openlocfilehash: 2fd9b958cdbdaf22346f8171c789f2ca9a8336d1
+ms.sourcegitcommit: b6763a8ab240fbdd56078a7c9452445d0c4b9545
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/22/2021
-ms.locfileid: "51939726"
+ms.locfileid: "51957601"
 ---
 # <a name="analyze-users-in-microsoft-365-security-center"></a>在 Microsoft 365 安全中心分析用户
 
@@ -41,6 +41,13 @@ ms.locfileid: "51939726"
 若要获取事件的用户帐户的快速摘要，请选择用户帐户名称旁边的选中标记。 下面是一个示例。
 
 :::image type="content" source="../../media/investigate-users/incidents-ss-user-pane.png" alt-text="Microsoft 365 安全中心内事件的用户帐户摘要窗格示例":::
+
+> [!NOTE]
+> 用户页面显示 Azure Active Directory (AD) 组织以及组，帮助你了解与用户关联的组和权限。
+
+在此飞出页面中，你可以查看用户威胁信息，包括任何当前事件、活动警报和风险级别以及用户曝光、帐户、设备等。
+
+此外，你可以直接在 Microsoft 365 安全中心采取措施来解决受损用户的问题，确认用户受到威胁或要求他们重新登录。
 
 从此处，可以选择" **转到用户页面** "以查看用户帐户的详细信息。 下面是一个示例。
 

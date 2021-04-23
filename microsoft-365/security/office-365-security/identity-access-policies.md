@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 ms.technology: mdo
-ms.openlocfilehash: 7ade29259a5552bc9bbaac4b143842c69d05f917
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 4b7315cbb8704b691ce4f3d6b96958f18248b478
+ms.sourcegitcommit: 7cc2be0244fcc30049351e35c25369cacaaf4ca9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51203242"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51952628"
 ---
 # <a name="common-identity-and-device-access-policies"></a>常见标识和设备访问策略
 
@@ -55,18 +55,18 @@ ms.locfileid: "51203242"
 
 为了给你一些时间来完成这些任务，我们建议按此表中列出的顺序实现基准策略。 但是，可随时实施针对敏感和高度管控级别的保护的 MFA 策略。
 
-|保护级别|策略|更多信息|
-|---|---|---|
-|**Baseline**|[当登录风险为中或高 *时需要* MFA](#require-mfa-based-on-sign-in-risk)||
-||[阻止不支持新式身份验证的客户端](#block-clients-that-dont-support-multi-factor)|不使用新式身份验证的客户端可以绕过条件访问策略，因此阻止这些策略非常重要。|
-||[高风险用户必须更改密码](#high-risk-users-must-change-password)|如果为用户的帐户检测到高风险活动，则强制用户在登录时更改其密码。|
-||[应用应用数据保护策略](#apply-app-data-protection-policies)|每个平台一个 Intune 应用保护策略 (Windows、iOS/iPadOS、Android) 。|
-||[需要批准的应用和应用保护](#require-approved-apps-and-app-protection)|使用 iOS、iPadOS 或 Android 对手机和平板电脑强制执行移动应用保护。|
-||[定义设备合规性策略](#define-device-compliance-policies)|每个平台一个策略。|
-||[需要兼容电脑](#require-compliant-pcs-but-not-compliant-phones-and-tablets)|使用 Windows 或 MacOS 强制执行电脑的 Intune 管理。|
-|**敏感**|[登录风险低、中或高时需要MFA  ](#require-mfa-based-on-sign-in-risk)||
-||[要求兼容电脑 *和* 移动设备](#require-compliant-pcs-and-mobile-devices)|对 Windows 或 MacOS (电脑以及 iOS) iOS、iPadOS 或 Android (平板电脑强制执行 Intune) 。|
-|**高度管控**|[*始终* 需要 MFA](#require-mfa-based-on-sign-in-risk)|
+|保护级别|策略|更多信息|授权|
+|---|---|---|---|
+|**Baseline**|[当登录风险为中或高 *时需要* MFA](#require-mfa-based-on-sign-in-risk)||具有 E5 安全加载项的 Microsoft 365 E5 或 Microsoft 365 E3|
+||[阻止不支持新式身份验证的客户端](#block-clients-that-dont-support-multi-factor)|不使用新式身份验证的客户端可以绕过条件访问策略，因此阻止这些策略非常重要。|Microsoft 365 E3 或 E5|
+||[高风险用户必须更改密码](#high-risk-users-must-change-password)|如果为用户的帐户检测到高风险活动，则强制用户在登录时更改其密码。|具有 E5 安全加载项的 Microsoft 365 E5 或 Microsoft 365 E3|
+||[将应用程序保护策略 (APP) 数据保护](#apply-app-data-protection-policies)|每个平台一个 Intune 应用保护策略 (Windows、iOS/iPadOS、Android) 。|Microsoft 365 E3 或 E5|
+||[需要批准的应用和应用保护](#require-approved-apps-and-app-protection)|使用 iOS、iPadOS 或 Android 对手机和平板电脑强制执行移动应用保护。|Microsoft 365 E3 或 E5|
+||[定义设备合规性策略](#define-device-compliance-policies)|每个平台一个策略。|Microsoft 365 E3 或 E5|
+||[需要兼容电脑](#require-compliant-pcs-but-not-compliant-phones-and-tablets)|使用 Windows 或 MacOS 强制执行电脑的 Intune 管理。|Microsoft 365 E3 或 E5|
+|**敏感**|[登录风险低、中或高时需要MFA  ](#require-mfa-based-on-sign-in-risk)||具有 E5 安全加载项的 Microsoft 365 E5 或 Microsoft 365 E3|
+||[要求兼容电脑 *和* 移动设备](#require-compliant-pcs-and-mobile-devices)|对 Windows 或 MacOS (电脑以及 iOS) iOS、iPadOS 或 Android (平板电脑强制执行 Intune) 。|Microsoft 365 E3 或 E5|
+|**高度管控**|[*始终* 需要 MFA](#assigning-policies-to-groups-and-users)||Microsoft 365 E3 或 E5|
 |
 
 ## <a name="assigning-policies-to-groups-and-users"></a>向组和用户分配策略
@@ -95,11 +95,11 @@ ms.locfileid: "51203242"
 
 作为这些建议的一部分创建的所有 Azure AD 组都必须创建为 Microsoft 365 组。 这一点对于在 Microsoft Teams 和 SharePoint 中保护文档时部署敏感度标签非常重要。
 
-![用于创建 Microsoft 365 组的屏幕捕获](../../media/microsoft-365-policies-configurations/identity-device-AAD-groups.png)
+![创建 Microsoft 365 组的示例](../../media/microsoft-365-policies-configurations/identity-device-AAD-groups.png)
 
 ## <a name="require-mfa-based-on-sign-in-risk"></a>基于登录风险要求 MFA
 
-应在要求用户使用 MFA 之前让用户注册 MFA。 如果你有 Microsoft 365 E5、Identity 为 & 威胁防护加载项的 Microsoft 365 E3、带 EMS E5 的 Office 365 或单个 Azure AD Premium P2 许可证，可以使用具有 Azure AD Identity Protection 的 MFA 注册策略，要求用户注册 MFA。 先决条件 [工作](identity-access-prerequisites.md) 包括使用 MFA 注册所有用户。
+应在要求用户使用 MFA 之前让用户注册 MFA。 如果你有 Microsoft 365 E5、具有 E5 安全加载项的 Microsoft 365 E3、带 EMS E5 的 Office 365 或单个 Azure AD Premium P2 许可证，你可以将 MFA 注册策略与 Azure AD Identity Protection 一同使用，以要求用户注册 MFA。 先决条件 [工作](identity-access-prerequisites.md) 包括使用 MFA 注册所有用户。
 
 注册用户后，可以使用新的条件访问策略要求 MFA 进行登录。
 
@@ -125,7 +125,7 @@ ms.locfileid: "51203242"
 
 根据目标保护级别应用风险级别设置。
 
-|保护级别|所需的风险级别值|操作|
+|保护级别|所需的风险级别值|Action|
 |---|---|---|
 |基线|高、中|检查两者。|
 |敏感|高、中、低|检查全部三者。|
@@ -134,7 +134,7 @@ ms.locfileid: "51203242"
 
 在" **访问控制"** 部分：
 
-|设置|属性|值|操作|
+|设置|属性|值|Action|
 |---|---|---|---|
 |授予|**Grant access**||Select|
 |||**需要多重身份验证**|支票|
@@ -165,7 +165,7 @@ ms.locfileid: "51203242"
 
 在" **访问控制"** 部分：
 
-|设置|属性|值|操作|
+|设置|属性|值|Action|
 |---|---|---|---|
 |授予|**阻止访问**||Select|
 ||**需要所有已选控件**||Select|
@@ -187,7 +187,7 @@ Log in to the [Microsoft Azure portal (https://portal.azure.com)](https://portal
 
 在" **分配"** 部分：
 
-|类型|属性|值|操作|
+|类型|属性|值|Action|
 |---|---|---|---|
 |Users|包括|**所有用户**|Select|
 |用户风险|**High**||Select|
@@ -195,7 +195,7 @@ Log in to the [Microsoft Azure portal (https://portal.azure.com)](https://portal
 
 在"第二 **个工作分配"** 部分：
 
-|类型|属性|值|操作|
+|类型|属性|值|Action|
 |---|---|---|---|
 |Access|**允许访问**||Select|
 |||**需要更改密码**|支票|
@@ -211,7 +211,7 @@ Log in to the [Microsoft Azure portal (https://portal.azure.com)](https://portal
 
 ## <a name="apply-app-data-protection-policies"></a>应用 APP 数据保护策略
 
-App Protection Policies (APP) 定义允许哪些应用以及它们可以对组织数据采取的操作。 APP 中可用的选项使组织能够定制保护以满足其特定需求。 对于一些用户，实现完整方案所需的策略设置可能并不明显。 为了帮助组织确定移动客户端终结点强化的优先级，Microsoft 引入了适用于 iOS 和 Android 移动应用管理的 APP 数据保护框架的分类。
+APP 定义允许哪些应用以及它们可以对组织数据采取的操作。 APP 中可用的选项使组织能够定制保护以满足其特定需求。 对于一些用户，实现完整方案所需的策略设置可能并不明显。 为了帮助组织确定移动客户端终结点强化的优先级，Microsoft 引入了适用于 iOS 和 Android 移动应用管理的 APP 数据保护框架的分类。
 
 APP 数据保护框架分为三个不同的配置级别，每个级别都从上一级别构建：
 
@@ -294,7 +294,7 @@ With Conditional Access, organizations can restrict access to approved (modern a
 
 有关 **Windows 运行状况>服务评估规则的设备** 运行状况，请参阅此表。
 
-|属性|值|操作|
+|属性|值|Action|
 |---|---|---|
 |需要 BitLocker|需要|Select|
 |要求在设备上启用安全启动|需要|Select|
@@ -307,7 +307,7 @@ With Conditional Access, organizations can restrict access to approved (modern a
 
 有关 **系统安全性**，请参阅此表。
 
-|类型|属性|值|操作|
+|类型|属性|值|Action|
 |---|---|---|---|
 |Password|需要密码才能解锁移动设备|需要|Select|
 ||简单密码|阻止|Select|
@@ -329,14 +329,14 @@ With Conditional Access, organizations can restrict access to approved (modern a
 
 #### <a name="microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint
 
-|类型|属性|值|操作|
+|类型|属性|值|Action|
 |---|---|---|---|
-|适用于终结点规则的 Microsoft Defender|要求设备处于计算机风险分数或处于计算机风险分数之下|中|Select|
+|Microsoft Endpoint Manager 管理中心中的 Microsoft Defender for Endpoint 规则|[要求设备处于计算机风险分数或处于计算机风险分数之下](https://docs.microsoft.com/mem/intune/protect/advanced-threat-protection-configure#create-and-assign-compliance-policy-to-set-device-risk-level)|中|Select|
 |
 
 ## <a name="require-compliant-pcs-but-not-compliant-phones-and-tablets"></a>要求兼容电脑 (但不符合标准的手机和平板电脑) 
 
-在添加策略以要求使用合规电脑之前，请务必将设备注册到 Intune 中以管理。 建议在将设备注册到 Intune 中之前使用多重身份验证，确保设备由预期用户拥有。
+在将策略添加到要求合规电脑之前，请务必在 Intune 中注册设备以管理。 建议在将设备注册到 Intune 中之前使用多重身份验证，确保设备由预期用户拥有。
 
 需要兼容电脑：
 

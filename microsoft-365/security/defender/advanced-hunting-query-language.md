@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: e7bae0577b83deed26b0a3beb0f16efc80bb5846
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 14287fb6dea9dda8accb580246b383f0427c3b3f
+ms.sourcegitcommit: 7cc2be0244fcc30049351e35c25369cacaaf4ca9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51935781"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51952616"
 ---
 # <a name="learn-the-advanced-hunting-query-language"></a>了解高级搜寻查询语言
 
@@ -34,6 +34,7 @@ ms.locfileid: "51935781"
 
 **适用于：**
 - Microsoft 365 Defender
+- Microsoft Defender for Endpoint
 
 高级搜寻基于 [Kusto 查询语言](/azure/kusto/query/)。 您可以使用 Kusto 运算符和语句来构造在专用架构 中查找信息的 [查询](advanced-hunting-schema-tables.md)。 若要更好地了解这些概念，请运行你的第一个查询。
 
@@ -180,6 +181,9 @@ FileName, ProcessCommandLine, RemoteIP, RemoteUrl, RemotePort, RemoteIPType
 ## <a name="access-query-language-documentation"></a>访问查询语言文档
 
 有关 Kusto 查询语言和受支持运算符的详细信息，请参阅 [Kusto 查询语言文档](/azure/kusto/query/)。
+
+>[!NOTE]
+>本文中的某些表在 Microsoft Defender for Endpoint 中可能不可用。 [打开 Microsoft 365 Defender](m365d-enable.md) 以使用更多数据源搜寻威胁。 你可以按照从 Microsoft Defender for Endpoint 迁移高级搜寻查询中的步骤将高级搜寻工作流从 [Microsoft Defender for Endpoint](advanced-hunting-migrate-from-mde.md)移动到 Microsoft 365 Defender。
 
 ## <a name="related-topics"></a>相关主题
 - [高级搜寻概述](advanced-hunting-overview.md)

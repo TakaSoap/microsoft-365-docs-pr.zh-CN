@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: a3885a462265368bc42c758ee5a8fd1c673ec08c
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: c8f25b924109823951c331fe744b548d372eaf11
+ms.sourcegitcommit: b6763a8ab240fbdd56078a7c9452445d0c4b9545
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51932795"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51957606"
 ---
 # <a name="configure-device-proxy-and-internet-connectivity-settings"></a>配置设备代理和 Internet 连接设置
 
@@ -60,6 +60,7 @@ WinHTTP 配置设置独立于 Windows Internet (WinINet) Internet 浏览代理�
 
 > [!NOTE]
 > - 在 Windows 10 或 Windows Server 2019 上使用此选项时，建议让以下 (或更高版本) 版本和累积更新汇总：</br>
+> Windows 10 版本 1809 或 Windows Server 2019 - https://support.microsoft.com/kb/5001384 <br>
 > Windows 10 版本 1909 - https://support.microsoft.com/kb/4601380</br>
 > Windows 10 版本 2004 - https://support.microsoft.com/kb/4601382</br>
 > Windows 10 版本 20H2 - https://support.microsoft.com/kb/4601382</br>

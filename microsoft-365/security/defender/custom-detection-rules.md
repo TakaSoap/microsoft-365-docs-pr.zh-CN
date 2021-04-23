@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: bcb31b904f8e6156d644864f03143e9fc37ae34b
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: f37cc63c958331f7c03e09689de92c73fd06b4d4
+ms.sourcegitcommit: 7cc2be0244fcc30049351e35c25369cacaaf4ca9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51935709"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51952556"
 ---
 # <a name="create-and-manage-custom-detections-rules"></a>创建和管理自定义检测规则
 
@@ -34,6 +34,7 @@ ms.locfileid: "51935709"
 
 **适用于：**
 - Microsoft 365 Defender
+- Microsoft Defender for Endpoint
 
 自定义检测规则是可以使用高级搜寻查询设计和 [调整](advanced-hunting-overview.md) 的规则。 通过这些规则，您可以主动监视各种事件和系统状态，包括可疑的泄露活动和错误配置的终结点。 你可以将它们设置为定期运行，从而在有匹配项时生成警报并执行响应操作。
 
@@ -219,6 +220,9 @@ DeviceEvents
 
 >[!TIP]
 >若要快速查看信息并针对表中的项目采取操作，请使用表格左侧的选择列 [&#10003;] 。
+
+>[!NOTE]
+>本文中的某些列在 Microsoft Defender for Endpoint 中可能不可用。 [打开 Microsoft 365 Defender](m365d-enable.md) 以使用更多数据源搜寻威胁。 你可以按照从 Microsoft Defender for Endpoint 迁移高级搜寻查询中的步骤将高级搜寻工作流从 [Microsoft Defender for Endpoint](advanced-hunting-migrate-from-mde.md)移动到 Microsoft 365 Defender。
 
 ## <a name="see-also"></a>另请参阅
 - [自定义检测概述](custom-detections-overview.md)

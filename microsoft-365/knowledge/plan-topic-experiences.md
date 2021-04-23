@@ -10,12 +10,12 @@ ms.service: o365-administration
 search.appverid: MET150
 localization_priority: Normal
 description: 了解如何规划 Microsoft Viva 主题
-ms.openlocfilehash: 19baf8bdcfdd1fe38d64e3c2f259ace1ceab5a4b
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: d64e4b341fe96d7aa3636f58bffe3dd8f388838e
+ms.sourcegitcommit: b6763a8ab240fbdd56078a7c9452445d0c4b9545
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50925972"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51957535"
 ---
 # <a name="plan-for-microsoft-viva-topics"></a>规划 Microsoft Viva 主题
 
@@ -32,7 +32,7 @@ ms.locfileid: "50925972"
 
 将尊重数据的安全和隐私，并且主题体验不会向用户授予对无权限文件的额外访问权限。 作为规划过程的一部分，我们还建议您阅读 [Microsoft Viva](topic-experiences-security-privacy.md) 主题安全和隐私。
 
-## <a name="requirements"></a>Requirements
+## <a name="requirements"></a>要求
 
 您必须订阅 [Viva 主题](https://www.microsoft.com/microsoft-viva/topics) ，并且必须是全局管理员或 SharePoint 管理员才能访问 Microsoft 365 管理中心并设置主题。
 
@@ -70,6 +70,9 @@ Site name,URL
 ## <a name="user-permissions"></a>用户权限
 
 您指定的用户权限确定组织中哪些人员与主题交互以及他们可以做什么。
+
+> [!Note] 
+> 目前，Viva 主题不支持为来宾和外部用户 (或) 权限。 
 
 *管理主题*
 

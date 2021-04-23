@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 34880c870cdf398ab1565f7f532ac95a6fde475d
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: eccf93b019baa240a46260a28f3f0bc109345dd4
+ms.sourcegitcommit: 7cc2be0244fcc30049351e35c25369cacaaf4ca9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51932925"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51952592"
 ---
 # <a name="work-with-advanced-hunting-query-results"></a>使用高级搜寻查询结果
 
@@ -34,6 +34,7 @@ ms.locfileid: "51932925"
 
 **适用于：**
 - Microsoft 365 Defender
+- Microsoft Defender for Endpoint
 
 [!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
@@ -152,6 +153,9 @@ AppFileEvents
 ![高级搜寻筛选器的图像](../../media/advanced-hunting-filter.png)
 
 应用筛选器以修改查询并运行查询后，将相应更新结果。
+
+>[!NOTE]
+>本文中的某些表在 Microsoft Defender for Endpoint 中可能不可用。 [打开 Microsoft 365 Defender](m365d-enable.md) 以使用更多数据源搜寻威胁。 你可以按照从 Microsoft Defender for Endpoint 迁移高级搜寻查询中的步骤将高级搜寻工作流从 [Microsoft Defender for Endpoint](advanced-hunting-migrate-from-mde.md)移动到 Microsoft 365 Defender。
 
 ## <a name="related-topics"></a>相关主题
 - [高级搜寻概述](advanced-hunting-overview.md)
