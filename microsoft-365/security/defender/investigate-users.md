@@ -19,49 +19,56 @@ ms.topic: article
 search.appverid: met150
 ms.custom: seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: 1fb5a4eee41384ef1afc9b46e5bf538344718fe9
-ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
+ms.openlocfilehash: 2fd9b958cdbdaf22346f8171c789f2ca9a8336d1
+ms.sourcegitcommit: b6763a8ab240fbdd56078a7c9452445d0c4b9545
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/22/2021
-ms.locfileid: "51939726"
+ms.locfileid: "51957601"
 ---
-# <a name="analyze-users-in-microsoft-365-security-center"></a><span data-ttu-id="28f9a-104">在 Microsoft 365 安全中心分析用户</span><span class="sxs-lookup"><span data-stu-id="28f9a-104">Analyze users in Microsoft 365 security center</span></span>
+# <a name="analyze-users-in-microsoft-365-security-center"></a><span data-ttu-id="75c91-104">在 Microsoft 365 安全中心分析用户</span><span class="sxs-lookup"><span data-stu-id="75c91-104">Analyze users in Microsoft 365 security center</span></span>
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-<span data-ttu-id="28f9a-105">**适用于：**</span><span class="sxs-lookup"><span data-stu-id="28f9a-105">**Applies to:**</span></span>
+<span data-ttu-id="75c91-105">**适用于：**</span><span class="sxs-lookup"><span data-stu-id="75c91-105">**Applies to:**</span></span>
 
-- <span data-ttu-id="28f9a-106">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="28f9a-106">Microsoft 365 Defender</span></span>
+- <span data-ttu-id="75c91-106">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="75c91-106">Microsoft 365 Defender</span></span>
 
-<span data-ttu-id="28f9a-107">事件分析的一部分可能包括用户帐户。</span><span class="sxs-lookup"><span data-stu-id="28f9a-107">Part of your incident analysis can include user accounts.</span></span> <span data-ttu-id="28f9a-108">从"事件 **"** 和"用户"中事件 **&">">\*\*\*\*开始**。</span><span class="sxs-lookup"><span data-stu-id="28f9a-108">Start with the **Users** tab for an incident from **Incidents & alerts >** *incident* **> Users**.</span></span> 
+<span data-ttu-id="75c91-107">事件分析的一部分可能包括用户帐户。</span><span class="sxs-lookup"><span data-stu-id="75c91-107">Part of your incident analysis can include user accounts.</span></span> <span data-ttu-id="75c91-108">从"事件 **"** 和"用户"中事件 **&">">\*\*\*\*开始**。</span><span class="sxs-lookup"><span data-stu-id="75c91-108">Start with the **Users** tab for an incident from **Incidents & alerts >** *incident* **> Users**.</span></span> 
 
 :::image type="content" source="../../media/investigate-incidents/incident-users.png" alt-text="事件的用户页面示例":::
 
-<span data-ttu-id="28f9a-110">若要获取事件的用户帐户的快速摘要，请选择用户帐户名称旁边的选中标记。</span><span class="sxs-lookup"><span data-stu-id="28f9a-110">To get a quick summary of a user account for the incident, select the check mark next to the user account name.</span></span> <span data-ttu-id="28f9a-111">下面是一个示例。</span><span class="sxs-lookup"><span data-stu-id="28f9a-111">Here's an example.</span></span>
+<span data-ttu-id="75c91-110">若要获取事件的用户帐户的快速摘要，请选择用户帐户名称旁边的选中标记。</span><span class="sxs-lookup"><span data-stu-id="75c91-110">To get a quick summary of a user account for the incident, select the check mark next to the user account name.</span></span> <span data-ttu-id="75c91-111">下面是一个示例。</span><span class="sxs-lookup"><span data-stu-id="75c91-111">Here's an example.</span></span>
 
 :::image type="content" source="../../media/investigate-users/incidents-ss-user-pane.png" alt-text="Microsoft 365 安全中心内事件的用户帐户摘要窗格示例":::
 
-<span data-ttu-id="28f9a-113">从此处，可以选择" **转到用户页面** "以查看用户帐户的详细信息。</span><span class="sxs-lookup"><span data-stu-id="28f9a-113">From here, you can select **Go to user page** to see the details of a user account.</span></span> <span data-ttu-id="28f9a-114">下面是一个示例。</span><span class="sxs-lookup"><span data-stu-id="28f9a-114">Here's an example.</span></span>
+> [!NOTE]
+> <span data-ttu-id="75c91-113">用户页面显示 Azure Active Directory (AD) 组织以及组，帮助你了解与用户关联的组和权限。</span><span class="sxs-lookup"><span data-stu-id="75c91-113">The User page shows Azure Active Directory (AD) organization as well as groups, helping you understand the groups and permissions associated with a user.</span></span>
+
+<span data-ttu-id="75c91-114">在此飞出页面中，你可以查看用户威胁信息，包括任何当前事件、活动警报和风险级别以及用户曝光、帐户、设备等。</span><span class="sxs-lookup"><span data-stu-id="75c91-114">In this fly-out page, you can review user threat information, including any current incidents, active alerts, and risk level as well as user exposure, accounts, devices, and more.</span></span>
+
+<span data-ttu-id="75c91-115">此外，你可以直接在 Microsoft 365 安全中心采取措施来解决受损用户的问题，确认用户受到威胁或要求他们重新登录。</span><span class="sxs-lookup"><span data-stu-id="75c91-115">In addition, you can take action directly in the Microsoft 365 security center to address a compromised user, confirming the user is compromised or requiring them to sign in again.</span></span>
+
+<span data-ttu-id="75c91-116">从此处，可以选择" **转到用户页面** "以查看用户帐户的详细信息。</span><span class="sxs-lookup"><span data-stu-id="75c91-116">From here, you can select **Go to user page** to see the details of a user account.</span></span> <span data-ttu-id="75c91-117">下面是一个示例。</span><span class="sxs-lookup"><span data-stu-id="75c91-117">Here's an example.</span></span>
 
 :::image type="content" source="../../media/investigate-users/incidents-ss-user-details.png" alt-text="Microsoft 365 安全中心内事件的用户帐户页面示例":::
 
-<span data-ttu-id="28f9a-116">您还可以通过从"用户"页上的列表中选择用户帐户的名称来 **查看此页面。**</span><span class="sxs-lookup"><span data-stu-id="28f9a-116">You can also see this page by selecting the name of the user account from the list on the **Users** page.</span></span>
+<span data-ttu-id="75c91-119">您还可以通过从"用户"页上的列表中选择用户帐户的名称来 **查看此页面。**</span><span class="sxs-lookup"><span data-stu-id="75c91-119">You can also see this page by selecting the name of the user account from the list on the **Users** page.</span></span>
 
-<span data-ttu-id="28f9a-117">Microsoft 365 安全中心用户页面将来自 Microsoft Defender for Endpoint、Microsoft Defender for Identity 和 Microsoft Cloud App Security (的信息合并在一起，具体取决于你拥有哪些) 。</span><span class="sxs-lookup"><span data-stu-id="28f9a-117">The Microsoft 365 security center user page combines information from Microsoft Defender for Endpoint, Microsoft Defender for Identity, and Microsoft Cloud App Security (depending on what licenses you have).</span></span> 
+<span data-ttu-id="75c91-120">Microsoft 365 安全中心用户页面将来自 Microsoft Defender for Endpoint、Microsoft Defender for Identity 和 Microsoft Cloud App Security (的信息合并在一起，具体取决于你拥有哪些) 。</span><span class="sxs-lookup"><span data-stu-id="75c91-120">The Microsoft 365 security center user page combines information from Microsoft Defender for Endpoint, Microsoft Defender for Identity, and Microsoft Cloud App Security (depending on what licenses you have).</span></span> 
 
-<span data-ttu-id="28f9a-118">此页面显示特定于用户帐户安全风险的信息。</span><span class="sxs-lookup"><span data-stu-id="28f9a-118">This page shows information specific to the security risk of a user account.</span></span> <span data-ttu-id="28f9a-119">这包括一个分数，可帮助评估风险以及导致用户的整体风险的最新事件和警报。</span><span class="sxs-lookup"><span data-stu-id="28f9a-119">This includes a score that helps assess risk and recent events and alerts that contributed to the overall risk of the user.</span></span>
+<span data-ttu-id="75c91-121">此页面显示特定于用户帐户安全风险的信息。</span><span class="sxs-lookup"><span data-stu-id="75c91-121">This page shows information specific to the security risk of a user account.</span></span> <span data-ttu-id="75c91-122">这包括一个分数，可帮助评估风险以及导致用户的整体风险的最新事件和警报。</span><span class="sxs-lookup"><span data-stu-id="75c91-122">This includes a score that helps assess risk and recent events and alerts that contributed to the overall risk of the user.</span></span>
 
-<span data-ttu-id="28f9a-120">在此页中，你可以执行以下附加操作：</span><span class="sxs-lookup"><span data-stu-id="28f9a-120">From this page, you can do these additional actions:</span></span> 
+<span data-ttu-id="75c91-123">在此页中，你可以执行以下附加操作：</span><span class="sxs-lookup"><span data-stu-id="75c91-123">From this page, you can do these additional actions:</span></span> 
 
-- <span data-ttu-id="28f9a-121">将用户帐户标记为已泄露</span><span class="sxs-lookup"><span data-stu-id="28f9a-121">Mark the user account as compromised</span></span>
-- <span data-ttu-id="28f9a-122">要求用户重新登录</span><span class="sxs-lookup"><span data-stu-id="28f9a-122">Require the user to sign in again</span></span>
-- <span data-ttu-id="28f9a-123">暂停用户帐户</span><span class="sxs-lookup"><span data-stu-id="28f9a-123">Suspend the user account</span></span>
-- <span data-ttu-id="28f9a-124">请参阅 Azure Active Directory (Azure AD) 用户帐户设置</span><span class="sxs-lookup"><span data-stu-id="28f9a-124">See the Azure Active Directory (Azure AD) user account settings</span></span>
-- <span data-ttu-id="28f9a-125">查看用户帐户拥有的文件</span><span class="sxs-lookup"><span data-stu-id="28f9a-125">View the files owned by the user account</span></span>
-- <span data-ttu-id="28f9a-126">查看与该用户共享的文件。</span><span class="sxs-lookup"><span data-stu-id="28f9a-126">View files shared with this user.</span></span> 
+- <span data-ttu-id="75c91-124">将用户帐户标记为已泄露</span><span class="sxs-lookup"><span data-stu-id="75c91-124">Mark the user account as compromised</span></span>
+- <span data-ttu-id="75c91-125">要求用户重新登录</span><span class="sxs-lookup"><span data-stu-id="75c91-125">Require the user to sign in again</span></span>
+- <span data-ttu-id="75c91-126">暂停用户帐户</span><span class="sxs-lookup"><span data-stu-id="75c91-126">Suspend the user account</span></span>
+- <span data-ttu-id="75c91-127">请参阅 Azure Active Directory (Azure AD) 用户帐户设置</span><span class="sxs-lookup"><span data-stu-id="75c91-127">See the Azure Active Directory (Azure AD) user account settings</span></span>
+- <span data-ttu-id="75c91-128">查看用户帐户拥有的文件</span><span class="sxs-lookup"><span data-stu-id="75c91-128">View the files owned by the user account</span></span>
+- <span data-ttu-id="75c91-129">查看与该用户共享的文件。</span><span class="sxs-lookup"><span data-stu-id="75c91-129">View files shared with this user.</span></span> 
 
-<span data-ttu-id="28f9a-127">下面是一个示例。</span><span class="sxs-lookup"><span data-stu-id="28f9a-127">Here's an example.</span></span>
+<span data-ttu-id="75c91-130">下面是一个示例。</span><span class="sxs-lookup"><span data-stu-id="75c91-130">Here's an example.</span></span>
 
 :::image type="content" source="../../media/investigate-users/incidents-ss-user-details-actions.png" alt-text="Microsoft 365 安全中心内针对事件的用户帐户的操作示例":::
 
@@ -73,8 +80,8 @@ Learn more about how to investigate users and potential risk [in this Cloud App 
 
 --> 
 
-## <a name="related-topics"></a><span data-ttu-id="28f9a-129">相关主题</span><span class="sxs-lookup"><span data-stu-id="28f9a-129">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="75c91-132">相关主题</span><span class="sxs-lookup"><span data-stu-id="75c91-132">Related topics</span></span>
 
-- [<span data-ttu-id="28f9a-130">事件概述</span><span class="sxs-lookup"><span data-stu-id="28f9a-130">Incidents overview</span></span>](incidents-overview.md)
-- [<span data-ttu-id="28f9a-131">确定事件优先级</span><span class="sxs-lookup"><span data-stu-id="28f9a-131">Prioritize incidents</span></span>](incident-queue.md)
-- [<span data-ttu-id="28f9a-132">管理事件</span><span class="sxs-lookup"><span data-stu-id="28f9a-132">Manage incidents</span></span>](manage-incidents.md)
+- [<span data-ttu-id="75c91-133">事件概述</span><span class="sxs-lookup"><span data-stu-id="75c91-133">Incidents overview</span></span>](incidents-overview.md)
+- [<span data-ttu-id="75c91-134">确定事件优先级</span><span class="sxs-lookup"><span data-stu-id="75c91-134">Prioritize incidents</span></span>](incident-queue.md)
+- [<span data-ttu-id="75c91-135">管理事件</span><span class="sxs-lookup"><span data-stu-id="75c91-135">Manage incidents</span></span>](manage-incidents.md)
