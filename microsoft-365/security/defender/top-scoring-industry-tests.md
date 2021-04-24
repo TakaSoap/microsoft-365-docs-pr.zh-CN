@@ -2,7 +2,7 @@
 title: 在行业测试中得分最高 - Microsoft 365 Defender
 ms.reviewer: ''
 description: 查看 Microsoft 365 Defender 的最新得分和分析。 它在独立测试（AV-TEST、AV 比较系统、SE 实验室、MITRE ATT&CK）中不断取得高分。 查看最新的分数和分析。
-keywords: Windows Defender 防病毒，Windows Defender 防病毒, av 检查, 防病毒测试, av 测试, 最新 av 分数, 检测分数, 安全产品测试, 安全行业测试, 行业防病毒测试, 最佳防病毒, av 测试, av 比较级, SE 实验室, MITRE ATT & CKendpoint protection 平台, EPP, endpoint 探测和响应, EDR, Windows 10, Microsoft Defender 防病毒, WDAV, MDATP, Microsoft 威胁防护, 安全性, 恶意软件, av, 防病毒, 分数, 计分, 下一代保护, 排名, 成功
+keywords: Microsoft Defender 防病毒，Windows Defender 防病毒, av 检查, 防病毒测试, av 测试, 最新 av 分数, 检测分数, 安全产品测试, 安全行业测试, 行业防病毒测试, 最佳防病毒, av 测试, av 比较, SE 实验室, MITRE ATT & CK，终结点保护平台, EPP, 终结点检测和响应, EDR, Windows 10, Microsoft Defender 防病毒, WDAV, Microsoft Defender for Endpoint, Microsoft 365 Defender，安全性, 恶意软件, av, 防病毒, 分数, 计分, 下一代保护, 排名, 成功
 ms.prod: m365-security
 ms.mktglfcycl: secure
 ms.sitesec: library
@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
 ms.technology: m365d
-ms.openlocfilehash: 1f649af2ca6089d1366cc6e080a430a6a00fc300
-ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
+ms.openlocfilehash: a49fb83f9186541094910ec8842a09b5121ffb5b
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51569855"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934389"
 ---
 # <a name="top-scoring-in-industry-tests"></a>在行业测试中得分最高
 

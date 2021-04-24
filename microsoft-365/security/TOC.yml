@@ -129,15 +129,15 @@
                   href: defender/incidents-overview.md
                 - name: 确定事件优先级
                   href: defender/incident-queue.md
-                - name: 调查事件
+                - name: 管理事件
+                  href: defender/manage-incidents.md
+                - name: 事件响应
                   items:
-                    - name: 调查事件
+                    - name: 分析事件
                       href: defender/investigate-incidents.md
-                    - name: 管理事件
-                      href: defender/manage-incidents.md
-                    - name: 调查警报
+                    - name: 分析警报
                       href: defender/investigate-alerts.md
-                    - name: 调查 Microsoft 365 安全中心中的用户
+                    - name: 分析用户
                       href: defender/investigate-users.md
                 - name: 获取电子邮件通知
                   href: defender/get-incident-notifications.md

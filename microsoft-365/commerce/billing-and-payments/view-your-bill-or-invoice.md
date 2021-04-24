@@ -28,12 +28,12 @@ ms.custom:
 - AdminSurgePortfolio
 description: 在 Microsoft 365 管理中心 查找你的发票或账单。 你还可以保存和打印帐单。
 ms.date: 07/31/2020
-ms.openlocfilehash: 395c9773d4bc67ed466d7b3f8d568cecedddfd36
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: b117071fa708ad9d425d578833d8b0ad85537151
+ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50911636"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51939482"
 ---
 # <a name="view-your-bill-or-invoice"></a>查看帐单或发票
 
@@ -55,6 +55,22 @@ ms.locfileid: "50911636"
 2. 在“**发票**”选项卡上，从下拉列表中选择日期范围，随后选择想要查看的顺序。
 3. 在摘要页面上，可以查看发票中项目，数量，价格，折扣和所有项的总计。
 4. 若要打印或保存发票的 PDF 副本，请选择“**下载 PDF**”。
+
+::: moniker region="o365-21vianet"
+
+## <a name="request-a-fapiao"></a>请求发票
+
+您可以在付款大约三 (3) 天后向 [发票管理系统](https://go.microsoft.com/fwlink/p/?linkid=837465) 提交发票请求。
+
+1. 在 <a href=”https://go.microsoft.com/fwlink/p/?linkid=850627” target=”_blank”>管理中心</a>，转到“**账单**” > “**账单和付款**”页。
+
+2. 找到所需的发票，然后选择“**获取发票**”。
+
+> [!NOTE]
+
+> 你需要注册的帐户以便访问[发票管理系统](https://go.microsoft.com/fwlink/p/?linkid=837465)。 如果尚未设置帐户，请参阅[由世纪互联运营的 Office 365 发票](../../admin/services-in-china/apply-for-a-fapiao.md)。
+
+::: moniker-end
 
 ## <a name="receive-a-copy-of-your-billing-statement-in-email"></a>以电子邮件方式接收帐单副本
 
