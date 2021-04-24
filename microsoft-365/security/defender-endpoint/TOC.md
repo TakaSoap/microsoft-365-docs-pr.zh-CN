@@ -457,6 +457,7 @@
 ####### [列出警报](get-alerts.md)
 ####### [创建警报](create-alert-by-reference.md)
 ####### [更新警报](update-alert.md)
+####### [批量更新警报](batch-update-alerts.md)
 ####### [通过 ID 获取警报信息](get-alert-info-by-id.md)
 ####### [获取有关域信息的警报](get-alert-related-domain-info.md)
 ####### [获取警报相关文件信息](get-alert-related-files-info.md)
@@ -501,6 +502,7 @@
 
 ###### [指示器]()
 ####### [指示器方法和属性](ti-indicator.md)
+####### [导入指示器](import-ti-indicators.md)
 ####### [提交指示器](post-ti-indicator.md)
 ####### [列出指示器](get-ti-indicators-collection.md)
 ####### [删除指示器](delete-ti-indicator-by-id.md)
