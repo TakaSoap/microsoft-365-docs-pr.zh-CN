@@ -13,12 +13,12 @@ ms.collection:
 search.appverid: MET150
 localization_priority: Priority
 description: 在Project Cortex中设置对内容的理解
-ms.openlocfilehash: cc6fbfbfc130cc6e64b5d7c30e0a9db5f39036ac
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 2f9fd4e035152a127f9f1c254f4c489a6ca4c976
+ms.sourcegitcommit: f000358c01a8006e5749a86b256300ee3a73174c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51051563"
+ms.lasthandoff: 04/24/2021
+ms.locfileid: "51994696"
 ---
 # <a name="set-up-sharepoint-syntex"></a>设置 SharePoint Syntex
 
@@ -59,7 +59,9 @@ ms.locfileid: "51051563"
 
 可使用 [AI 生成器计算器](https://powerapps.microsoft.com/ai-builder-calculator)来估算出适合你的AI 生成器容量。
 
-转到[电源平台管理中心](https://admin.powerplatform.microsoft.com/resources/capacity)查询积分和使用情况。
+如果计划使用自定义 Power Platform 环境，必须 [向该环境分配点数](/power-platform/admin/capacity-add-on)。
+
+转到 [Power Platform 管理中心](https://admin.powerplatform.microsoft.com/resources/capacity)，以查询点数和使用情况。
 
 ## <a name="to-set-up-sharepoint-syntex"></a>对设置 SharePoint Syntex
 
@@ -80,11 +82,21 @@ ms.locfileid: "51051563"
       - 如果不希望对任何网站提供 **SharePoint 库**，则不需要SharePoint库（可在设置后更改）。
 
    > [!div class="mx-imgBorder"]
-   > ![配置表单处理](../media/content-understanding/admin-configforms.png)
+   > ![配置表单处理网站选项](../media/content-understanding/admin-configforms.png)
 
    > [!Note]
    > 在收录一个站点后，删除该站点不会影响应用于该站点中的库的现有模型，也不会影响将文档理解模型应用于库的能力。 
     
+    如果配置了多个 Power Platform 环境，可以选择希望使用哪一个进行表单处理。 （如果只有一个环境，则将不显示此选项。）
+
+    ![配置表单处理 Power Platform 选项](../media/content-understanding/setup-power-platform-env.png)
+
+    对于 **Power Platform 环境**，可以选择：
+    - **使用默认环境** 以使用默认 Power Platform 环境。
+    - **使用自定义环境** 以使用某个自定义环境。 请从列表中选择要使用的环境。 必须在此环境中安装 *适用于 Project Cortex 的 AI 生成器*，并在可以创建表单处理模型之前向其分配 AI 生成器点数。
+
+    单击“**下一步**”。
+
 5. 在 **创建内容中心** 页面上，可创建一个 SharePoint 内容中心站点，用户可在该网站上创建和管理文档理解模型。
 
     1. 对于 **站点名称**，键入要为内容中心站点提供的名称。
@@ -126,3 +138,5 @@ ms.locfileid: "51051563"
 [表单处理模式概述](/ai-builder/form-processing-model-overview)
 
 [逐步：如何构建文档理解模型（视频）](https://www.youtube.com/watch?v=DymSHObD-bg)
+
+[在 Power Platform 管理中心创建和管理环境](/power-platform/admin/create-environment)
