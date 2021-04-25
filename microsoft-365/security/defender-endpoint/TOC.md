@@ -243,6 +243,8 @@
 ##### [手动部署](linux-install-manually.md)
 ##### [基于模型的部署](linux-install-with-puppet.md)
 ##### [基于 Ansible 的部署](linux-install-with-ansible.md)
+##### [通过 Chef 在 Linux 上部署 Defender for Endpoint](linux-deploy-defender-for-endpoint-with-chef.md)
+
 
 #### [更新](linux-updates.md)
 
@@ -253,7 +255,6 @@
 ##### [检测并阻止可能不需要的应用程序](linux-pua.md)
 ##### [使用 Microsoft Defender for Endpoint on Linux 定期扫描](linux-schedule-scan-atp.md)
 ##### [计划更新 Microsoft Defender for Endpoint （Linux）](linux-update-MDE-Linux.md)
-##### [将 Defender for Endpoint 通过更新程序部署到更改版本](linux-deploy-defender-for-endpoint-with-chef.md)
 
 #### [疑难解答]()
 ##### [解决安装问题](linux-support-install.md)
