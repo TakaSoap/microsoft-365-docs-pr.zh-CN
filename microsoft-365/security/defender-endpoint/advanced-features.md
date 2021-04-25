@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 34ca51c066eddb65f2df0cf8a5d85732bd84a9c0
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 15909684d07bac46fd42163cee545bc4752b61d4
+ms.sourcegitcommit: f000358c01a8006e5749a86b256300ee3a73174c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934365"
+ms.lasthandoff: 04/24/2021
+ms.locfileid: "51995005"
 ---
 # <a name="configure-advanced-features-in-defender-for-endpoint"></a>在 Defender for Endpoint 中配置高级功能
 
@@ -127,6 +127,8 @@ ms.locfileid: "51934365"
 在某些类型的网络攻击期间，不良参与者会尝试在你的计算机上禁用安全功能，如防病毒保护。 不良操作者希望禁用安全功能，以便更轻松地访问数据、安装恶意软件，或者以其他方式利用你的数据、标识和设备。
 
 防篡改保护实质上会锁定 Microsoft Defender 防病毒，并阻止通过应用和方法更改安全设置。
+
+如果你的组织使用 Microsoft Defender 防病毒并且启用了基于云的保护，则此功能可用。 有关详细信息，请参阅通过云提供的保护使用 [Microsoft Defender 防病毒中的下一代技术](cloud-protection-microsoft-defender-antivirus.md)。
 
 保持防篡改功能打开，以防止对安全解决方案及其基本功能进行不必要的更改。
 

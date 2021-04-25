@@ -16,12 +16,12 @@ ms.date: 04/14/2021
 audience: ITPro
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: 5175d630dd5d80b62451b3a1eafc4c2f6350ac32
-ms.sourcegitcommit: 2655bb0ccd66279c35be2fadbd893c937d084109
+ms.openlocfilehash: 71c2391361c645d26cdaddff0bff86796da50391
+ms.sourcegitcommit: f000358c01a8006e5749a86b256300ee3a73174c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51876333"
+ms.lasthandoff: 04/24/2021
+ms.locfileid: "51995077"
 ---
 # <a name="troubleshoot-performance-issues-related-to-real-time-protection"></a>解决与实时保护相关的性能问题
 
@@ -33,7 +33,7 @@ ms.locfileid: "51876333"
 
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
  
-如果你的系统具有与 Microsoft Defender for Endpoint 中的实时保护服务相关的高 CPU 使用率或性能问题，你可以向 Microsoft 支持部门提交票证。 按照收集 [Microsoft Defender AV 诊断数据 中的步骤操作](/collect-diagnostic-data.md)。
+如果你的系统具有与 Microsoft Defender for Endpoint 中的实时保护服务相关的高 CPU 使用率或性能问题，你可以向 Microsoft 支持部门提交票证。 按照收集 [Microsoft Defender 防病毒诊断数据 中的步骤操作](collect-diagnostic-data.md)。
 
 作为管理员，还可以自行解决这些问题。 
 
@@ -132,7 +132,6 @@ Process Monitor (ProcMon) 是一种高级监视工具，可显示实时进程。
  
     >[!TIP] 
     >等待问题完全重现，然后记下开始跟踪的时间戳。
-    
 
 10. 在高 CPU 使用率条件期间具有两到四分钟的进程活动后，通过选择放大镜图标停止捕获。
 
@@ -250,7 +249,7 @@ WPR 是 Windows ADK (部署工具包的一) ，可以从下载并 [安装 Window
 
 1. 将 **[Microsoft Defender for Endpoint 分析](https://github.com/YongRhee-MDE/Scripts/blob/master/MDAV.wprp)** 配置文件的性能跟踪下载到本地目录中名为 的文件，例如 `WD.wprp` `C:\traces` 。
 
-3. 右键单击" **开始** "菜单图标并选择 **Windows Powershell** (Admin) 或命令提示符 **(Admin)** 打开管理员命令提示符窗口。
+3. 右键单击" **开始** "菜单图标，然后选择 **"Windows PowerShell (") "** 命令提示符 **" (") "** 管理员"命令提示符窗口。
 
 4. 当出现"用户帐户控制"对话框时，选择"**是"。**
 
@@ -280,5 +279,5 @@ WPR 是 Windows ADK (部署工具包的一) ，可以从下载并 [安装 Window
 
 ## <a name="see-also"></a>另请参阅
 
-- [收集 Microsoft Defender AV 诊断数据](collect-diagnostic-data.md)
+- [收集 Microsoft Defender 防病毒诊断数据](collect-diagnostic-data.md)
 - [配置并验证 Microsoft Defender 防病毒扫描的排除项](configure-exclusions-microsoft-defender-antivirus.md)

@@ -8,25 +8,27 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 localization_priority: normal
+audience: ITPro
+ms.topic: article
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
 ms.reviewer: pahuijbr
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: b70cf96cde7d4dff8e2a4db6ce2469090dba7eb1
-ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
+ms.openlocfilehash: ae17aa6e2cb0cefd460ef0db0730570af8c84bb8
+ms.sourcegitcommit: f000358c01a8006e5749a86b256300ee3a73174c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51765607"
+ms.lasthandoff: 04/24/2021
+ms.locfileid: "51995029"
 ---
 # <a name="manage-microsoft-defender-antivirus-updates-and-apply-baselines"></a>管理 Microsoft Defender 防病毒更新和应用基线
 
 **适用于：**
 
 - [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
-- Microsoft Defender 防病毒
+- Microsoft Defender 防病毒软件
 
 有两种类型的更新与使 Microsoft Defender 防病毒保持最新有关：
 
@@ -34,7 +36,8 @@ ms.locfileid: "51765607"
 - 产品更新
 
 > [!IMPORTANT]
-> 使 Microsoft Defender 防病毒保持最新至关重要，可确保你的设备具有防止新的恶意软件和攻击技术所需的最新技术和功能。  
+> 使 Microsoft Defender 防病毒保持最新至关重要，可确保你的设备具有防止新的恶意软件和攻击技术所需的最新技术和功能。
+> 
 > 确保更新防病毒保护，即使 Microsoft Defender 防病毒在被动 [模式下运行](./microsoft-defender-antivirus-compatibility.md)。
 > 
 > 若要查看最新的引擎、平台和签名日期，请访问 Microsoft Defender 防病毒和其他 Microsoft 反 [恶意软件的安全智能更新](https://www.microsoft.com/en-us/wdsi/defenderupdates)。
@@ -147,7 +150,7 @@ Microsoft Defender 防病毒需要每月更新 [ (KB4052623](https://support.mic
 &ensp;发布时间 **：2020 年 12 月 3 日**  
 &ensp;平台 **：4.18.2011.6**  
 &ensp;引擎 **：1.1.17700.4**  
-&ensp;支持阶段： **安全和关键更新**
+&ensp;支持阶段 **：仅支持 (升级)**
     
 ### <a name="whats-new"></a>最近更新
 
@@ -163,7 +166,7 @@ Microsoft Defender 防病毒需要每月更新 [ (KB4052623](https://support.mic
 &ensp;发布时间 **：2020 年 10 月 29 日**  
 &ensp;平台 **：4.18.2010.7**  
 &ensp;引擎 **：1.1.17600.5**  
-&ensp;支持阶段： **安全和关键更新**
+&ensp;支持阶段 **：仅支持 (升级)**
     
 ### <a name="whats-new"></a>最近更新
 

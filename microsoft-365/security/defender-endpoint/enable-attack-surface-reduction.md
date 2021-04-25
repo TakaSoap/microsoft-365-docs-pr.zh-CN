@@ -15,12 +15,12 @@ ms.reviewer: oogunrinde
 manager: dansimp
 ms.technology: mde
 ms.topic: how-to
-ms.openlocfilehash: 7aeda679d5ce350ef64a2758359390adc4a280f0
-ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
+ms.openlocfilehash: df77a3d6c1f66882600a200b83b3b2585473f42b
+ms.sourcegitcommit: f000358c01a8006e5749a86b256300ee3a73174c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "51939238"
+ms.lasthandoff: 04/24/2021
+ms.locfileid: "51995065"
 ---
 # <a name="enable-attack-surface-reduction-rules"></a>启用攻击面减少规则
 
@@ -33,20 +33,16 @@ ms.locfileid: "51939238"
 > [!TIP]
 > 想要体验适用于终结点的 Defender？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
-[攻击面减少规则](attack-surface-reduction.md) (ASR 规则) 有助于防止恶意软件经常滥用以损害设备和网络的操作。 你可以为运行以下任一版本的 Windows 的设备设置 ASR 规则：
-- Windows 10 专业 [版版本 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) 或更高版本
-- Windows 10 企业版 [版本 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) 或更高版本
-- Windows Server [版本 1803 (半年 ](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1803) 频道) 或更高版本
-- [Windows Server 2019](https://docs.microsoft.com/windows-server/get-started-19/whats-new-19)
+[攻击面减少规则](attack-surface-reduction.md) (ASR 规则) 有助于防止恶意软件经常滥用以损害设备和网络的操作。
 
 **要求** 你可以为运行以下任一版本的 Windows 的设备设置攻击面减少规则：
 
-- Windows 10 专业版版本 1709 或更高版本
-- Windows 10 企业版版本 1709 或更高版本
-- Windows Server 版本 1803 (半年频道) 或更高版本
-- Windows Server 2019
+- Windows 10 专业 [版版本 1709](/windows/whats-new/whats-new-windows-10-version-1709) 或更高版本
+- Windows 10 企业版 [版本 1709](/windows/whats-new/whats-new-windows-10-version-1709) 或更高版本
+- Windows Server [版本 1803 (半年 ](/windows-server/get-started/whats-new-in-windows-server-1803) 频道) 或更高版本
+- [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
 
-尽管攻击面减少规则不需要 Windows E5 许可证，但如果拥有 Windows E5，则获得高级管理功能。 这些功能仅在 Windows E5 中可用，包括 Defender for Endpoint 中提供的监视、分析和工作流，以及 Microsoft 365 安全中心中的报告和配置功能。 这些高级功能不适用于 Windows Professional 或 Windows E3 许可证;但是，如果你有这些许可证，可以使用事件查看器和 Microsoft Defender 防病毒日志查看攻击面减少规则事件。
+尽管攻击面减少规则不需要 [Windows E5](/windows/deployment/deploy-enterprise-licenses)许可证，但如果拥有 Windows E5，则获得高级管理功能。 这些功能仅在 Windows E5 中可用，包括 [Defender for Endpoint](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint?view=o365-worldwide&preserve-view=true)中提供的监视、分析和工作流，以及 Microsoft [365](/microsoft-365/security/defender/overview-security-center?view=o365-worldwide&preserve-view=true)安全中心中的报告和配置功能。 这些高级功能不适用于 Windows Professional 或 Windows E3 许可证;但是，如果你有这些许可证，可以使用事件查看器和 Microsoft Defender 防病毒日志查看攻击面减少规则事件。
 
 每个 ASR 规则包含四个设置之一：
 

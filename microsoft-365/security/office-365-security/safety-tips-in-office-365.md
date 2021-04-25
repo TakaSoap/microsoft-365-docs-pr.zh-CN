@@ -19,12 +19,12 @@ description: 了解 EOP 和 Office 365 如何将安全提示添加到电子邮�
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a1820cab63abbbac09aa60a9c1684f3672882451
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 659a83c73b4fef9097aa317332c9951d53b09a33
+ms.sourcegitcommit: f000358c01a8006e5749a86b256300ee3a73174c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51203567"
+ms.lasthandoff: 04/24/2021
+ms.locfileid: "51994981"
 ---
 # <a name="safety-tips-in-email-messages"></a>电子邮件中的安全提示
 
@@ -55,6 +55,6 @@ Outlook 中的安全提示不取决于您使用的 Outlook 版本，因为安全
 
 ## <a name="working-with-safety-tips"></a>使用安全提示
 
-始终为 Web 上的 Outlook 启用安全提示，即使不是每封邮件都会收到一条。 管理员可以关闭其他电子邮件客户端（如 Outlook）的安全提示。 有关详细信息，请参阅[在 Office 365 中配置反垃圾邮件策略](configure-your-spam-filter-policies.md)。
+管理员可以在反垃圾邮件策略中打开或关闭安全提示。 有关详细信息，请参阅[在 Office 365 中配置反垃圾邮件策略](configure-your-spam-filter-policies.md)。
 
 如果您对 EOP 如何对邮件进行分类（即 (该邮件不是垃圾邮件或应该将其标记为垃圾邮件) ）的不一致，您可以将邮件提交给 Microsoft 进行分析，以帮助改善您的体验。 有关说明，请参阅 [向 Microsoft 报告邮件和文件](report-junk-email-messages-to-microsoft.md)。 还可以单击安全提示中的"反馈"链接，直接向 Microsoft 提交评论以帮助我们改进。

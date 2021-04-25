@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 - m365initiative-coredeploy
 description: 'Microsoft 365 管理中心网络连接概述 (预览) '
-ms.openlocfilehash: 99c05c18f3825680824854f86e469ab4aa8bbcba
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: c3ce053ecc859d3ac0cf53b0a132a7032ce6a87a
+ms.sourcegitcommit: f000358c01a8006e5749a86b256300ee3a73174c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51860859"
+ms.lasthandoff: 04/24/2021
+ms.locfileid: "51994673"
 ---
 # <a name="network-connectivity-in-the-microsoft-365-admin-center-preview"></a>Microsoft 365 管理中心中的网络连接 (预览) 
 
@@ -152,7 +152,9 @@ The office location summary page additionally shows the location's network asses
 
 同一城市的客户之间的比较基于所有客户对网络服务提供商、电信基础结构和附近 Microsoft 网络接入点的同等访问权限的预期。
 
-The details tab on the office location page shows the specific measurement results that were used to come up with any insights， recommendations， and the network assessment. 提供此功能，以便网络工程师可以验证建议和环境中的任何约束或特定因素。
+在位置飞出控件中添加新位置或编辑现有位置时，可以自定义位置名称。 这让你能够随时灵活自定义位置名称。 此外，当在位置飞出区中直接添加 LAN 子网时，我们还会显示一个可以从中选择的软匹配的 LAN 子网的下拉列表。 也可以添加和编辑特定办公室出口 IP 地址的电路名称。
+
+The details tab on the office location page shows the specific measurement results that were used to come up with any insights， recommendations， and the network assessment. 提供此功能，以便网络工程师可以验证建议和环境中的任何约束或特定因素。 您还将找到该办事处地点收集的样本的估计用户数，以及该城市中的远程工作者。
 
 > [!div class="mx-imgBorder"]
 > ![特定于位置的详细信息](../media/m365-mac-perf/m365-mac-perf-locations-plan-details-all.png)
