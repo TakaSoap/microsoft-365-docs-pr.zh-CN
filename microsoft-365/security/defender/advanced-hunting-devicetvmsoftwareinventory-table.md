@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: c83217df5427b72eeeb4276ad95d160dc6765c75
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 5f82684ebb10b72ff83a6789c010f5ec9fa099e7
+ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934845"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52024225"
 ---
 # <a name="devicetvmsoftwareinventory"></a>DeviceTvmSoftwareInventory
 
@@ -34,6 +34,7 @@ ms.locfileid: "51934845"
 
 **适用于：**
 - Microsoft 365 Defender
+- Microsoft Defender for Endpoint
 
 >[!IMPORTANT]
 > 某些信息与预发布的产品有关，在商业发布之前可能有重大修改。 Microsoft 对此处所提供的信息不作任何明示或默示的保证。

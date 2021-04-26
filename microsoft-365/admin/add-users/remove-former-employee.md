@@ -25,12 +25,12 @@ search.appverid:
 - MOE150
 ms.assetid: 44d96212-4d90-4027-9aa9-a95eddb367d1
 description: '按照此清单从 Microsoft 365 中删除员工和安全数据。 '
-ms.openlocfilehash: 50355a20e0d0e8ff782deebd9be65fdabf875bb2
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: ec2dd37a38c2509c2aa6a904326b74c8d3b8d7fb
+ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51860769"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52023997"
 ---
 # <a name="remove-or-delete-a-former-employee"></a>删除或删除以前的员工
 
@@ -42,7 +42,7 @@ ms.locfileid: "51860769"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOfR] 
 
-如果你发现此视频有帮助，请查看[适用于小型企业和 Microsoft 365 新用户的完整培训系列](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)。
+如果你发现此视频有帮助，请查看[适用于小型企业和 Microsoft 365 新用户的完整培训系列](../../business-video/index.yml)。
 
 防止员工登录：
 

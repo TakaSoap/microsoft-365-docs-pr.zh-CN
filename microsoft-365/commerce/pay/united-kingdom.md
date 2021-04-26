@@ -10,14 +10,14 @@ ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Commerce_Pay
 localization_priority: Normal
-description: 了解在何处发送订阅付款。
+description: 了解在哪里发送订阅付款。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: a3f9d023628177b3d9bc784a129abe359c4a28c2
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: 93b3c5813d2f95ffeb4e55ee8f8aba3f9283e4a0
+ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50549972"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52024093"
 ---
 # <a name="payment-information-for-united-kingdom"></a>英国付款信息
 
@@ -25,21 +25,23 @@ ms.locfileid: "50549972"
 
 ## <a name="electronic-funds-transfer"></a>电子资金转帐
 
-**Please pay in GBP and reference invoice number (s) on your payment) .**
+**Please pay in GBP and reference invoice number (s) on your payment payment payment.**
 
 如果你有由 **Microsoft Ireland Operations Limited** 计费的发票，请使用此银行信息：
 
 Bank：Bank， London\
-SWIFT 代码：为
+SWIFT 代码：SWIFTGB2L\
 IBAN 代码：GB41CITI18500812207605\
 SORT 代码：185008\
 帐号：12207605\
 帐户名称：MICROSOFT
 
-如果你有由 **Microsoft Limited** 针对 2021 年 3 月 1 日的订单和消耗计费的发票，请使用此银行信息：
+如果你有由 **Microsoft Limited** 针对从 2021 年 3 月 1 日开始的订单和消耗计费的发票，请使用此银行信息：
 
 Bank：Bank Europe plc\
-SWIFT 代码：为
+SWIFT 代码：SWIFTIE2X\
 IBAN 代码：IE65CITI99005170000121\
 帐号：70000121\
 帐户名称：MICROSOFT
+
+从本地 Microsoft 子公司颁发的发票使用标准 VAT/销售税/GST 费率颁发，并被视为用于 VAT/销售税/GST 的国内服务提供。

@@ -21,12 +21,12 @@ description: Microsoft 365 管理中心 - 了解本月添加的功能。
 ms.custom:
 - MACDashWhatsNew
 - AdminSurgePortfolio
-ms.openlocfilehash: 0c17c6840d73c5b0a2714c6c6a832c154e2a9640
-ms.sourcegitcommit: 4acf613587128cae27e0fd470d1216b509775529
+ms.openlocfilehash: 90f75b0c1ea38833325c51399108551286f55e92
+ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/15/2021
-ms.locfileid: "51768678"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52024189"
 ---
 # <a name="whats-new-in-the-microsoft-365-admin-center"></a>Microsoft 365 管理中心的新增功能
 
@@ -231,7 +231,7 @@ ms.locfileid: "51768678"
 
 ### <a name="docs-training-and-videos-june"></a>) 年 6 月提供的文档 (培训) 
 
-- [Teams 入门](https://support.microsoft.com/office/184f1aba-2f91-43f0-86e1-9fae607e24f6)
+- [Teams 入门](../business-video/get-started-teams-small-business.md)
 
 ## <a name="may-2020"></a>2020 年 5 月
 
@@ -333,19 +333,19 @@ Productivity Score 提供人们如何使用 Microsoft 云服务和支持它们�
 
 #### <a name="for-your-users"></a>对于用户
 
-- [安排会议](https://support.microsoft.com/office/c61b4f61-ee62-4a06-8bf7-0a1cd302700a)
+- [安排会议](../business-video/schedule-guest-meeting.md)
 - [加入 Teams 会议](https://support.microsoft.com/office/078e9868-f1aa-4414-8bb9-ee88e9236ee4)
-- [创建全组织范围小组](https://support.microsoft.com/office/037bb27a-bcc9-48fe-8d72-44d9482420a3)
-- [创建带来宾的团队](https://support.microsoft.com/office/11fbb083-52ee-434d-8c6e-63711fdafac7)
-- [作为来宾加入团队](https://support.microsoft.com/office/928d1eef-61e2-49ec-b754-c2fe86b34824)
-- [创建组电子邮件地址](https://support.microsoft.com/office/ded875f9-a9de-437f-b559-2ae4f235bb2b)
+- [创建全组织范围小组](../business-video/org-wide-team.md)
+- [创建带来宾的团队](../business-video/team-with-guests.md)
+- [作为来宾加入团队](../business-video/join-team-guest.md)
+- [创建组电子邮件地址](../business-video/group-email.md)
 
 #### <a name="for-admins-and-business-owners"></a>对于管理员和业务所有者
 
 - [通过远程工作为小型企业提供能力](https://support.microsoft.com/office/9b91a85a-39b4-40a6-a590-0f9bea0ba8e6)
-- [运行远程小型企业](https://support.microsoft.com/office/9ac1a0f1-789b-4143-b954-5821d5d89298)
-- [注册 Microsoft Business Basic](https://support.microsoft.com/office/9ac1a0f1-789b-4143-b954-5821d5d89298)
-- [设置双重登录](https://support.microsoft.com/office/9ac1a0f1-789b-4143-b954-5821d5d89298)
+- [运行远程小型企业](../business-video/sign-up.md)
+- [注册 Microsoft Business Basic](../business-video/sign-up.md)
+- [设置双重登录](../business-video/sign-up.md)
 
 ## <a name="march-2020"></a>2020 年 3 月
 

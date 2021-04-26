@@ -27,12 +27,12 @@ search.appverid:
 - GEA150
 ms.assetid: 7a5d073b-7fae-4aa5-8f96-9ecd041aba9c
 description: 了解如何在 Microsoft 365 商业版订阅中重置用户密码。
-ms.openlocfilehash: da2f2b7aced29cd121f7d597af5a518462d2623d
-ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
+ms.openlocfilehash: 24fc6581837f71659a2ecc0359c6967e3969d868
+ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51222047"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52023973"
 ---
 # <a name="reset-passwords"></a>重置密码
 
@@ -50,7 +50,7 @@ ms.locfileid: "51222047"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FVVP]
 
-如果你发现此视频有帮助，请查看[适用于小型企业和 Microsoft 365 新用户的完整培训系列](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)。
+如果你发现此视频有帮助，请查看[适用于小型企业和 Microsoft 365 新用户的完整培训系列](../../business-video/index.yml)。
   
 ## <a name="steps-reset-a-business-password-for-a-user"></a>步骤：重置用户的业务密码
 
@@ -150,4 +150,4 @@ ms.locfileid: "51222047"
 
 [删除以前的员工](remove-former-employee.md)
 
-[Microsoft 365 商业版培训视频](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[Microsoft 365 商业版培训视频](../../business-video/index.yml)

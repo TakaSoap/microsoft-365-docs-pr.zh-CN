@@ -12,12 +12,12 @@ ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 20456ce837be60b707569ae07d4fb00b695b3a98
-ms.sourcegitcommit: 39609c4d8c432c8e7d7a31cb35c8020e5207385b
+ms.openlocfilehash: 354f61284bbd95c1c7ca4cd50459a1644a89d090
+ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "51445933"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52023257"
 ---
 # <a name="localize-the-user-experience"></a>本地化用户体验
 
@@ -62,43 +62,43 @@ Microsoft 托管桌面设备的用户可以在设置过程中选择他们选择�
 
 Microsoft [托管桌面](../service-description/device-images.md#universal-image) 提供的通用映像包括以下语言和适用于 Windows 10：
 
+- 阿拉伯语
+- 保加利亚语
+- 简体中文
+- 繁体中文
+- 克罗地亚语
+- 捷克语
+- 丹麦语  
+- 荷兰语  
 - 英语 (美国、英国、澳大利亚、CA、) 
-- 西班牙语 (西班牙、墨西哥) 
-- 日语
+- 爱沙尼亚语
+- 芬兰语 
 - 法语 (法国、加拿大) 
 - 德语
-- 葡萄牙语（巴西）
-- 意大利语
-- Chinese Simplified
-- 荷兰语  
-- 瑞典语
-- 丹麦语  
-- 芬兰语 
-- 俄语 
-- 挪威语（博克马尔）
-- 韩语
-- Chinese Traditional
-- 波兰语
-- 土耳其语
-- 阿拉伯语
-- 希伯来语
-- 葡萄牙语（葡萄牙）
-- 捷克语
-- 匈牙利语
-- 泰语
-- 印度尼西亚语
 - 希腊语
-- 斯洛伐克语
-- 越南语
-- 斯洛文尼亚语
-- 克罗地亚语
-- 罗马尼亚语
-- 立陶宛语
-- 保加利亚语
-- 塞尔维亚 (拉丁语字母) 
+- 希伯来语
+- 匈牙利语
+- 印度尼西亚语
+- 意大利语
+- 日语
+- 朝鲜语
 - 拉脱维亚语
+- 立陶宛语
+- 挪威语（博克马尔）
+- 波兰语
+- 葡萄牙语（巴西）
+- 葡萄牙语（葡萄牙）
+- 罗马尼亚语
+- 俄语 
+- 塞尔维亚 (拉丁语字母) 
+- 斯洛伐克语
+- 斯洛文尼亚语
+- 西班牙语 (西班牙、墨西哥) 
+- 瑞典语
+- 泰语
+- 土耳其语
 - 乌克兰语
-- 爱沙尼亚语
+- 越南语
 
 Microsoft 365 企业应用版可能支持略有不同的列表。
 

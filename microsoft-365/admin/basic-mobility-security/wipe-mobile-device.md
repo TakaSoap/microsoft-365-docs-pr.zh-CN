@@ -18,12 +18,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: 使用内置的"基本移动性和安全性"从已注册的设备中删除信息。
-ms.openlocfilehash: ddf13ef6627d70128064e2d8bd185203244b12e4
-ms.sourcegitcommit: 8b1bd7ca8cd81e4270f0c1e06d2b6ca81804a6aa
+ms.openlocfilehash: 7830a0f4ef609f6465c171ecab2c9e3c48198424
+ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "50819804"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52023853"
 ---
 # <a name="wipe-a-mobile-device-in-basic-mobility-and-security"></a>在基本移动性和安全性中擦除移动设备
 
@@ -45,7 +45,7 @@ ms.locfileid: "50819804"
 
 ## <a name="wipe-a-mobile-device"></a>擦除移动设备
 
-1. 转到 [Microsoft 365 管理中心](https://support.microsoft.com/office/758befc4-0888-4009-9f14-0d147402fd23)。
+1. 转到 [Microsoft 365 管理中心](../../admin/admin-overview/about-the-admin-center.md)。
 
 2. 在搜索字段中键入"移动设备管理"，然后从结果列表中选择"移动设备管理"。
 

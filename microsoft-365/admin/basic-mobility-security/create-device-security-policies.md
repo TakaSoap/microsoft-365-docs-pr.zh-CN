@@ -18,12 +18,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: 使用基本移动性和安全性创建保护组织信息的设备策略。
-ms.openlocfilehash: f31930f1a753259622520e50da8c255e7cd410e5
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 5abd27f963208140a53cfd885152301992830b5e
+ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50904284"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52023901"
 ---
 # <a name="create-device-security-policies-in-basic-mobility-and-security"></a>在基本移动性和安全性中创建设备安全策略
 
@@ -36,7 +36,7 @@ ms.locfileid: "50904284"
 
 - 了解基本移动性和安全性支持的设备、移动设备应用和安全设置。 请参阅[Capabilities of Basic Mobility and Security。](capabilities.md)
 - 创建安全组，其中包括要向要部署策略的 Microsoft 365 用户以及你可能要排除的用户阻止访问 Microsoft 365。 我们建议您先向少量用户部署新策略，以此来测试策略，然后再为组织部署此策略。 你可以创建和使用仅包含你自己或少量 Microsoft 365 用户的安全组，该安全组可以测试你的策略。 若要详细了解安全组，请参阅创建、 [编辑或删除安全组](../email/create-edit-or-delete-a-security-group.md)。
-- 若要在 Microsoft 365 中创建和部署基本移动性和安全策略，你需要是 Microsoft 365 全局管理员。有关详细信息，请参阅 [安全与合规中心&权限](https://support.microsoft.com/office/d10608af-7934-490a-818e-e68f17d0e9c1)。
+- 若要在 Microsoft 365 中创建和部署基本移动性和安全策略，你需要是 Microsoft 365 全局管理员。有关详细信息，请参阅 [安全与合规中心&权限](../../security/office-365-security/permissions-in-the-security-and-compliance-center.md)。
 - 在部署策略之前，请让组织了解在基本移动性和安全性中注册设备的潜在影响。 根据策略设置方式，可能会阻止不相容的设备访问 Microsoft 365 和数据，包括注册的设备上已安装的应用程序、照片和个人信息，并且可删除数据。
 
 >[!NOTE]
@@ -85,7 +85,7 @@ ms.locfileid: "50904284"
 
 ## <a name="step-4-block-email-access-for-unsupported-devices"></a>步骤 4：阻止不受支持的设备的电子邮件访问
 
-为了帮助保护组织信息，应阻止应用访问基本移动性和安全性不支持的移动设备的 Microsoft 365 电子邮件。 有关受支持的设备的列表，请参阅 [受支持的设备](https://support.microsoft.com/office/capabilities-of-basic-mobility-and-security-a1da44e5-7475-4992-be91-9ccec25905b0#bkmk_supporteddevices)。
+为了帮助保护组织信息，应阻止应用访问基本移动性和安全性不支持的移动设备的 Microsoft 365 电子邮件。 有关受支持的设备的列表，请参阅 [受支持的设备](../../admin/basic-mobility-security/capabilities.md)。
 
 **若要阻止应用访问，**
 

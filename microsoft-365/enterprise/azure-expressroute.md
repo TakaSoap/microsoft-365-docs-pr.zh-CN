@@ -22,16 +22,16 @@ search.appverid:
 - BCS160
 ms.assetid: 6d2534a2-c19c-4a99-be5e-33a0cee5d3bd
 description: 了解如何将 Azure ExpressRoute 与 Office 365 一同使用，并规划网络实施项目（如果随其一起部署）。
-ms.openlocfilehash: 9af9a2981c9220784725284aa602cf2de66721e5
-ms.sourcegitcommit: c75aac39ee8d93218a79585113ef6b36f47c9ddf
+ms.openlocfilehash: d4c14d97cff2952f5f7052a8aa2940f05d644737
+ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2021
-ms.locfileid: "51408367"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52023721"
 ---
 # <a name="azure-expressroute-for-office-365"></a>适用于 Office 365 的 Azure ExpressRoute
 
-*本文适用于 Microsoft 365 企业版和 Office 365 企业版。*
+*此文章适用于 Microsoft 365 企业版和 Office 365 企业版。* 
 
 了解如何将 Azure ExpressRoute 与 Office 365 一同使用，以及如何规划部署 Azure ExpressRoute 以用于 Office 365 时所需的网络实施项目。 在 Azure 中运行的基础结构和平台服务通常会从解决网络体系结构和性能注意事项中获益。 在这些情况下，我们建议使用 ExpressRoute for Azure。 Office 365 和 Dynamics 365 等软件即服务产品已构建为可通过 Internet 安全可靠地访问。 可以在评估 [Office 365](assessing-network-connectivity.md)网络连接一文阅读有关 Internet 性能和安全性以及何时考虑使用适用于 Office 365 的 Azure ExpressRoute。
 
@@ -39,7 +39,7 @@ ms.locfileid: "51408367"
 > Microsoft Defender for Endpoint 在 Azure Express 路由中不受支持。
 
 > [!NOTE]
-> 需要 Microsoft 授权才能使用适用于 Office 365 的 ExpressRoute。 当客户的法规要求需要直接连接时，Microsoft 会审查每个客户请求并授权 ExpressRoute for Office 365 使用。 如果你有此类要求，请提供文本摘录和指向法规的 Web 链接，您解释该法规意味着 [ExpressRoute for Office 365](https://aka.ms/O365ERReview) 请求表单中需要直接连接才能开始 Microsoft 审查。 尝试为 Office 365 创建路由筛选器的未经授权的订阅将收到 [一条错误消息](https://support.microsoft.com/kb/3181709)。
+> 需要 Microsoft 授权才能使用适用于 Office 365 的 ExpressRoute。 当客户的法规要求需要直接连接时，Microsoft 会审查每个客户请求并授权 ExpressRoute for Office 365 使用。 如果你有此类要求，请联系你的 Microsoft 客户代表开始 Microsoft 审查。 尝试为 Office 365 创建路由筛选器的未经授权的订阅将收到 [一条错误消息](https://support.microsoft.com/kb/3181709)。
 
 现在，您可以为选定的 Office 365 网络流量向 Office 365 添加直接网络连接。 Azure ExpressRoute 提供直接连接、可预测的性能，并附带 99.95% 的 Microsoft 网络组件的运行时间 SLA。 对于 Azure ExpressRoute 不支持的服务，你仍然需要 Internet 连接。
 

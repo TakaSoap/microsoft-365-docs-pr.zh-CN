@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 获取 Microsoft 365 管理应用，并了解如何从手机或平板电脑管理联机组织。
-ms.openlocfilehash: eba3783e3673efe84bdb823da2a14e06c06c5fbe
-ms.sourcegitcommit: 450661071e44854f0a0a92af648f76d907767b71
+ms.openlocfilehash: 20a44501db43b8cba7f31bcfded039b00f3ab341
+ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "50826113"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52023937"
 ---
 # <a name="about-the-microsoft-365-admin-mobile-app"></a>关于 Microsoft 365 管理移动应用
 
@@ -116,6 +116,6 @@ ms.locfileid: "50826113"
 
 电子邮件 [feedback365@microsoft.com](mailto:feedback365@microsoft.com) 报告应用问题。 或者，可以在本文底部提供反馈。
   
-## <a name="see-also"></a>另请参阅
+## <a name="related-content"></a>相关内容 
 
-[Microsoft 365 商业版培训视频](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[Microsoft 365 商业版培训视频 (](../../business-video/index.yml) 链接) 

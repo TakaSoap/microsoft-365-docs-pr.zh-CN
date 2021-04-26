@@ -10,14 +10,14 @@ ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Commerce_Pay
 localization_priority: Normal
-description: 了解在何处发送订阅付款。
+description: 了解在哪里发送订阅付款。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 583bd8ad67fa78ae09fde69813506606ca9806b7
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: 8087535472e0affe4d7f7526b4c05aabe44ad2ac
+ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50549612"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52024165"
 ---
 # <a name="payment-information-for-australia"></a>澳大利亚的付款信息
 
@@ -25,7 +25,7 @@ ms.locfileid: "50549612"
 
 ## <a name="electronic-funds-transfer"></a>电子资金转帐
 
-**Please pay in AUD and reference invoice number () on your payment) .**
+**Please pay in AUD and reference invoice number (s) on your payment invoice.**
 
 如果你有由 **Microsoft Regional Sales Pte Ltd** 计费的发票，请使用此银行信息：
 
@@ -35,10 +35,12 @@ BSB 代码：242000\
 帐号：205565043\
 帐户名称：MICROSOFT
 
-如果你有从 2021 年 3 月 1 日至 2021 年 3 月 1 日由 **Microsoft Pty Ltd** 计费的订单和消耗的发票，请使用此银行信息：
+如果你有一张由 **Microsoft Pty Ltd** 针对从 2021 年 3 月 1 日开始的订单和消耗计费的发票，请使用此银行信息：
 
 Bank：Bank， N.A. 澳大利亚\
 SWIFT 代码：AUAU2X\
 BSB 代码：248053\
 帐号：100001074\
 帐户名称：MICROSOFT
+
+从本地 Microsoft 子公司颁发的发票使用标准 VAT/销售税/GST 费率颁发，并被视为用于 VAT/销售税/GST 的国内服务提供。

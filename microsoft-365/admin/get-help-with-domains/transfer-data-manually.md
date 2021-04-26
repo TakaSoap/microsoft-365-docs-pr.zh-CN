@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7dc5d983-84b2-4802-bef0-602ae1780a42
 description: 了解如何在更改计划或公司名称，或将多个订阅合并为一个时，在两个 Microsoft 365 帐户之间手动传输数据。
-ms.openlocfilehash: 9916da50f4589f949d35466ca6aa8f1d79cc40ea
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: b240ffbbdbfb6ed7d20a9ead9b1ee90a3af4570d
+ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50915502"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52023829"
 ---
 # <a name="transfer-data-manually-between-two-accounts"></a>在两个帐户之间手动传输数据
 
@@ -60,7 +60,7 @@ ms.locfileid: "50915502"
   
 对于 Microsoft 365 企业版和 Microsoft 365 中型企业版：
   
-|**位置**|**用途**|
+|**Location**|**用途**|
 |:-----|:-----|
 |**管理员** \>**Microsoft 365** \>**服务设置** <br/> |为邮件、网站、Lync、用户软件、密码、社区、权限管理和移动设置选择每个选项卡。  <br/> |
 |**管理员** \>**Exchange** <br/> | Exchange Online 设置  <br/> |
@@ -69,7 +69,7 @@ ms.locfileid: "50915502"
 
 对于 Microsoft 365 小型企业版
   
-|**位置**|**用途**|
+|**Location**|**用途**|
 |:-----|:-----|
 |**管理员** \>**管理组织范围的设置** <br/> |管理设置  <br/> |
 
@@ -91,11 +91,11 @@ ms.locfileid: "50915502"
   
 - 您可以将旧网站另存为模板，将模板导入新网站。
 
-- 若要传输文档，请首先手动在新建网站上重新创建层次结构。 然后，可以同时打开两个 SharePoint 团队网站，使用 Windows 资源管理器打开这两个文档库，并复制和粘贴文档。 请参阅 [视频：使用资源管理器打开来复制或移动库文件](https://support.microsoft.com/office/c7c20284-bc94-47f4-9728-d28e9daf0790)。
+- 若要传输文档，请首先手动在新建网站上重新创建层次结构。 然后，可以同时打开两个 SharePoint 团队网站，使用 Windows 资源管理器打开这两个文档库，并复制和粘贴文档。 请参阅 [视频：使用资源管理器打开来复制或移动库文件](../../business-video/store-files.md)。
 
 - 若要传输列表数据，请保存 [列表模板](https://support.microsoft.com/office/c3884ad1-bc49-44b8-b3d6-3bc6a01eb393)，并使用保存的模板在新建网站上重新创建列表。
 
-- 若要将 SharePoint Online 环境 (OneDrive for Business 或团队网站) 中的文档库或列表内容保存到文件共享或本地计算机，请参阅有关 [手动迁移 SharePoint Online](https://support.microsoft.com/kb/2783484)内容的信息。
+- 若要将 SharePoint Online 环境 (OneDrive for Business 或团队网站) 中的文档库或列表内容保存到文件共享或本地计算机，请参阅有关 [手动迁移 SharePoint Online](/sharepoint/troubleshoot/migration-tool/content-manual-migration)内容的信息。
 
 ## <a name="transfer-users-data-between-subscriptions"></a>在订阅之间传输用户数据
 

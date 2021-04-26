@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: fc28159f9f83354868142584740e2cb7810724b9
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 63a2d41714329918192caccd384587a4e4f04112
+ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51933681"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52023194"
 ---
 # <a name="deviceevents"></a>DeviceEvents
 
@@ -33,6 +33,7 @@ ms.locfileid: "51933681"
 
 **适用于：**
 - Microsoft 365 Defender
+- Microsoft Defender for Endpoint
 
 高级搜寻架构中的杂项设备事件或表包含有关各种事件类型的信息，包括安全控件触发的事件 `DeviceEvents` ，Windows Defender防病毒和 exploit Protection。 [](advanced-hunting-overview.md) 使用此参考来构建从此表返回信息的查询。
 

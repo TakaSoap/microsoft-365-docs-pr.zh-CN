@@ -18,12 +18,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: 有关基本移动性和安全性的常见问题。
-ms.openlocfilehash: a538c0b3f9fa6a4bf1861734fc9dea94030760a3
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 14e12678ec210325f63914594fb6debcf7abb880
+ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50906260"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52023889"
 ---
 # <a name="basic-mobility-and-security-frequently-asked-questions-faq"></a>基本移动性和安全性常见问题解答 (常见问题) 
 
@@ -51,7 +51,7 @@ ms.locfileid: "50906260"
 
 ## <a name="im-trying-to-set-up-basic-mobility-and-security-but-it-seems-stuck-the-microsoft-365-service-health-has-been-showing-provisioning-for-a-while-what-can-i-do"></a>我尝试设置基本移动性和安全性，但它似乎卡住。 Microsoft 365 服务运行状况已显示"预配"一段时间。 我该如何操作？
 
-可能需要一些时间才能准备好服务。 预配完成后，你将看到"基本移动性和安全性"页。 如果已等待 24 小时，状态仍在预配中，请联系支持人员，我们将帮助找出问题是什么。 有关支持选项，请参阅[是否仍然需要帮助？。](https://support.microsoft.com/office/frequently-asked-questions-about-basic-mobility-and-security-3871f99c-c9db-4a23-86f9-902c1b02f58d#bkmk_needhelp)
+可能需要一些时间才能准备好服务。 预配完成后，你将看到"基本移动性和安全性"页。 如果已等待 24 小时，状态仍在预配中，请联系支持人员，我们将帮助找出问题是什么。
 
 ## <a name="what-can-i-do-if-device-enrollment-fails"></a>如果设备注册失败，我该怎么办？
 
@@ -73,7 +73,7 @@ ms.locfileid: "50906260"
 
 ## <a name="how-do-policies-work-for-basic-mobility-and-security-how-do-i-set-them-up-disable-them"></a>策略如何适用于基本移动性和安全性？ 如何设置它们？ 禁用它们？
 
-完成基本移动性和安全性的初始设置后，创建策略，并应用于安全与合规&组。 策略要求策略的用户在基本移动性和安全性中注册其设备，然后设备才能访问 Microsoft 365 数据。 您设置的策略决定了移动设备的设置，例如，必须重置密码多久或是否需要数据加密。 有关详细信息，[请参阅在基本](create-device-security-policies.md)移动性和安全性以及   Microsoft [365 合规中心创建设备安全策略](https://support.microsoft.com/office/7e696a40-b86b-4a20-afcc-559218b7b1b8)。
+完成基本移动性和安全性的初始设置后，创建策略，并应用于安全与合规&组。 策略要求策略的用户在基本移动性和安全性中注册其设备，然后设备才能访问 Microsoft 365 数据。 您设置的策略决定了移动设备的设置，例如，必须重置密码多久或是否需要数据加密。 有关详细信息，[请参阅在基本](create-device-security-policies.md)移动性和安全性以及   Microsoft [365 合规中心创建设备安全策略](../../compliance/microsoft-365-compliance-center.md)。
 
 有关创建和部署设备策略的分步说明，请参阅在基本移动性和安全性中创建 [设备安全策略](create-device-security-policies.md)。
 

@@ -24,12 +24,12 @@ search.appverid:
 - GEA150
 ms.assetid: 758befc4-0888-4009-9f14-0d147402fd23
 description: 使用管理中心在云中设置组织，还可用它来管理用户和订阅。 首先使用管理员权限登录帐户。
-ms.openlocfilehash: ef606565d7cad94bc0c7ff81630ef6c2fe8a6fc4
-ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
+ms.openlocfilehash: 8dcd806318bad4aed37aa8cccce4bf90c32e824c
+ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51222083"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52023949"
 ---
 # <a name="about-the-microsoft-365-admin-center"></a>关于 Microsoft 365 管理中心
 
@@ -43,7 +43,7 @@ ms.locfileid: "51222083"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWfvDL]
 
-如果你发现此视频有帮助，请查看[适用于小型企业和 Microsoft 365 新用户的完整培训系列](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)。
+如果你发现此视频有帮助，请查看[适用于小型企业和 Microsoft 365 新用户的完整培训系列](../../business-video/index.yml)。
 
 ## <a name="how-to-get-to-the-admin-center"></a>如何访问管理中心
 
@@ -99,6 +99,6 @@ ms.locfileid: "51222083"
 
 - [管理 Microsoft 365 组](../create-groups/manage-groups.md)
 
-## <a name="see-also"></a>另请参阅
+## <a name="related-content"></a>相关内容
 
-[Microsoft 365 商业版培训视频](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[Microsoft 365 商业版培训视频 (](../../business-video/index.yml) 链接) 

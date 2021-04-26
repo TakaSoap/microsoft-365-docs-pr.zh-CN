@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: e6bfb781b3454025c5ce0f43899180c91761a56d
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 11a6fd00524e3dd7ad456f68da6f493d74deee69
+ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51932555"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52023185"
 ---
 # <a name="devicenetworkinfo"></a>DeviceNetworkInfo
 
@@ -34,6 +34,7 @@ ms.locfileid: "51932555"
 
 **适用于：**
 - Microsoft 365 Defender
+- Microsoft Defender for Endpoint
 
 
 
@@ -48,8 +49,8 @@ ms.locfileid: "51932555"
 | `DeviceName` | string | 计算机的完全限定域名 (FQDN) |
 | `NetworkAdapterName` | string | 网络适配器的名称 |
 | `MacAddress` | string | 网络适配器的 MAC 地址 |
-| `NetworkAdapterType` | string | 网络适配器类型。 有关可能的值，请参阅 [此枚举](/dotnet/api/system.net.networkinformation.networkinterfacetype?view=netframework-4.7.2) |
-| `NetworkAdapterStatus` | string | 网络适配器的运行状态。 有关可能的值，请参阅 [此枚举](/dotnet/api/system.net.networkinformation.operationalstatus?view=netframework-4.7.2) |
+| `NetworkAdapterType` | string | 网络适配器类型。 有关可能的值，请参阅 [此枚举](/dotnet/api/system.net.networkinformation.networkinterfacetype) |
+| `NetworkAdapterStatus` | string | 网络适配器的运行状态。 有关可能的值，请参阅 [此枚举](/dotnet/api/system.net.networkinformation.operationalstatus) |
 | `TunnelType` | string | 隧道协议（如果接口用于此目的，例如 6to4、Teredo、ISATAP、PPTP、SSTP 和 SSH） |
 | `ConnectedNetworks` | string | 适配器连接到的网络。 每个 JSON 数组都包含网络名称、类别 (公共、专用或域) 、说明以及指示其是否公开连接到 Internet 的标志 |
 | `DnsAddresses` | string | JSON 数组格式的 DNS 服务器地址 |

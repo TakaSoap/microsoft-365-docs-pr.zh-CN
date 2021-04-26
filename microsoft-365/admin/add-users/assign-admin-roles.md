@@ -27,26 +27,26 @@ search.appverid:
 - GEA150
 ms.assetid: eac4d046-1afd-4f1a-85fc-8219c79e1504
 description: 了解如何将管理员角色分配给企业中的一个或多个用户，以便他们可以在管理中心执行特定任务。
-ms.openlocfilehash: 5c40199823c93968be97302efc8e2d404f3cfed1
-ms.sourcegitcommit: dc1ac43a57fac6f57438859dd668f927d94fdf34
+ms.openlocfilehash: c723053d8d1a39bf0f996840bc418ffe299db089
+ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "51604329"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52023985"
 ---
 # <a name="assign-admin-roles"></a>分配管理员角色
 
 如果你是购买 Microsoft 商业版订阅的人，你是全局管理员。这意味着你可以无限制地控制订阅中的产品，并且可以访问大部分数据。
 
-有关详细信息，请参阅[关于管理员角色](about-admin-roles.md)。
+有关详细信息，请参阅 [关于管理员角色](about-admin-roles.md)。
 
-添加新用户时，如果你没有为其分配管理员角色，则他们担任用户角色，并且没有任何 Microsoft管理中心的管理员权限。 但是，如果你需要有关完成工作的帮助，你可以将管理员角色分配给用户。 例如，如果需要某人来帮助重置密码，则不应为其分配全局管理员角色，而应为其分配密码管理员角色。 拥有过多的全局管理员（对数据和联机业务具有无限制的访问权限）是一种安全风险。
+添加新用户时，如果你没有为其分配管理员角色，则他们担任用户角色，并且没有任何 Microsoft管理中心的管理员权限。 但是，如果你需要有关完成工作的帮助，你可以将管理员角色分配给用户。 例如，如果需要某人来帮助重置密码，则不应为其分配全局管理员角色，而应为其分配密码管理员角色。 全局管理员太多，且可无限访问数据和在线业务，因此存在安全风险。
 
 ## <a name="watch-add-an-adminbrbr"></a>观看：添加管理员。<br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOfO] 
 
-如果你发现此视频有帮助，请查看[适用于小型企业和 Microsoft 365 新用户的完整培训系列](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)。
+如果你发现此视频有帮助，请查看[适用于小型企业和 Microsoft 365 新用户的完整培训系列](../../business-video/index.yml)。
 
 ## <a name="assign-admin-roles"></a>分配管理员角色 
 
@@ -72,7 +72,7 @@ ms.locfileid: "51604329"
 
 2. 在 **"活动用户"** 页上，选择要更改其管理员角色的用户。 在飞出窗格中的"角色 **"下**，选择"**管理角色"。**
 
-3. 选择要分配给用户的管理员角色。 如果看不到要查找的角色，请选择列表底部的"全部显示"。 
+3. 选择要分配给这些用户的管理员角色。 如果看不到要查找的角色，请选择列表底部的"全部显示"。 
 
 ::: moniker-end
 

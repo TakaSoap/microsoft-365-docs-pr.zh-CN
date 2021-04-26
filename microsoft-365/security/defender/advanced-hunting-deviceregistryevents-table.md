@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: a256282ffd8afabae7ffe6dab9a2b132e4fee475
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 0eef71a7ab88d24c1f9d0b3ebdba16b13c855355
+ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934858"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52024250"
 ---
 # <a name="deviceregistryevents"></a>DeviceRegistryEvents
 
@@ -34,6 +34,7 @@ ms.locfileid: "51934858"
 
 **适用于：**
 - Microsoft 365 Defender
+- Microsoft Defender for Endpoint
 
 高级 `DeviceRegistryEvents` 搜寻 [架构中的](advanced-hunting-overview.md) 表包含有关创建和修改注册表项的信息。 使用此参考来构建从此表返回信息的查询。
 

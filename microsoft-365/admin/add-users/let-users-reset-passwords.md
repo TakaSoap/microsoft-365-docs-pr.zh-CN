@@ -25,18 +25,18 @@ search.appverid:
 - MOE150
 ms.assetid: 5bc3f460-13cc-48c0-abd6-b80bae72d04a
 description: 了解如何使用自助服务密码重置工具重置密码。
-ms.openlocfilehash: f43c409e98aa98e942bd7c7cbb15302422df241d
-ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
+ms.openlocfilehash: 0842430eda8c96647dd12d0da6d0c9e0481346dc
+ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51222119"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52023757"
 ---
 # <a name="let-users-reset-their-own-passwords"></a>允许用户重置自己的密码
 
 作为 Microsoft 365 管理员，你可以允许用户使用[](https://go.microsoft.com/fwlink/p/?LinkId=522677)自助服务密码重置工具，这样你就不必重置其密码。 减少工作量！
   
-## <a name="before-you-begin"></a>准备工作
+## <a name="before-you-begin"></a>开始之前
   
 - 通过任何 Microsoft 365商业版、教育版或非营利组织付费计划，你可以免费为云用户重置自助服务密码。 它不能与 Microsoft 365 试用版一起使用。
 
@@ -52,7 +52,7 @@ ms.locfileid: "51222119"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3AY8S]
 
-如果你发现此视频有帮助，请查看[适用于小型企业和 Microsoft 365 新用户的完整培训系列](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)。
+如果你发现此视频有帮助，请查看[适用于小型企业和 Microsoft 365 新用户的完整培训系列](../../business-video/index.yml)。
 
 ## <a name="steps-let-people-reset-their-own-passwords"></a>步骤：让用户重置自己的密码
 
@@ -94,4 +94,4 @@ ms.locfileid: "51222119"
 
 [将个人用户密码设置为永不过期](set-password-to-never-expire.md)
 
-[Microsoft 365 商业版培训视频](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[Microsoft 365 商业版培训视频](../../business-video/index.yml)

@@ -27,12 +27,12 @@ search.appverid:
 ms.assetid: 9b23c065-eef9-4bf7-acf5-127eb46d5e67
 ROBOTS: NOINDEX
 description: '了解在完成 Office 365 注册过程之前您需要了解哪些信息。 '
-ms.openlocfilehash: 93d3f58db24e4233e8d7b2929fd2471707614097
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: f2a4f555540b801441644af28435170f82229909
+ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50904368"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52023913"
 ---
 # <a name="how-to-sign-up---admin-help"></a>如何注册 - 管理员帮助
 
@@ -70,7 +70,7 @@ ms.locfileid: "50904368"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/906be77d-ded6-48fb-a25f-da110f787282]
 
-如果你发现此视频有帮助，请查看[适用于小型企业和 Microsoft 365 新用户的完整培训系列](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)。
+如果你发现此视频有帮助，请查看[适用于小型企业和 Microsoft 365 新用户的完整培训系列](../../business-video/index.yml)。
 
 需要有关选择计划的帮助？ 销售顾问可以解答你的疑问。 转到 [比较所有产品并选择](https://products.office.com/compare-all-microsoft-office-products?tab=2) 页面左侧列出的联系支持选项之一。
   
@@ -135,6 +135,6 @@ ms.locfileid: "50904368"
     > [!IMPORTANT]
     >  注册时，请确保为组织选择最佳支付选项。 更改付款方式涉及致电帐单支持。
 
-## <a name="see-also"></a>另请参阅
+## <a name="related-content"></a>相关内容
 
-[Microsoft 365 商业版培训视频](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[Microsoft 365 商业版培训视频 (](../../business-video/index.yml) 链接) 
