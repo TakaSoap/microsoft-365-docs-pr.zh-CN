@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 758759ad-63ee-4ea9-90a3-39f941897b7d
 description: 了解可以使用的组类型。
-ms.openlocfilehash: 8565b567706a70bb014fab42b23e9c55fb0efc45
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 7b67fa5e7dc661163ce6c2c8933ebdafd0a5940d
+ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50908742"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52023841"
 ---
 # <a name="compare-groups"></a>比较组
 
@@ -83,7 +83,7 @@ Microsoft 365 组用于公司内部和外部用户之间的协作。 对于每�
 
 暂无法将共享邮箱迁移到 Microsoft 365 组中。 所需内容是什么？ 请告知我们。 **[在此处投票](https://go.microsoft.com/fwlink/?linkid=871518)**。
 
-## <a name="related-articles"></a>相关文章
+## <a name="related-content"></a>相关内容
 
 [了解 Microsoft 365 组](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2)
 
