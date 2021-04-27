@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解有关 Windows 和 Office 部署实验室工具包的信息，以及访问的位置。
-ms.openlocfilehash: dd066339ccfefdc58eb241bb9fdb69cdd5a458d8
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: efbcec6417b082311d3f094b0251702d8e0dbeac
+ms.sourcegitcommit: e02cf5702af178ddd2968877a808874ecb49ed2c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50907452"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52028660"
 ---
 # <a name="windows-and-office-deployment-lab-kit"></a>Windows 和 Office 部署实验室工具包
 
@@ -99,7 +99,7 @@ Windows 和 Office 部署实验室工具包旨在帮助你规划、测试和验�
 
 [下载 Windows 和 Office 部署实验室工具包](https://www.microsoft.com/evalcenter/evaluate-lab-kit)。
 
-* 可以使用和控制台内更新将安装的基线版本 2002 更新到版本 2010。 请使用宽带宽 Internet 连接下载此内容，并允许 30-45 分钟进行自动预配。 实验室环境至少需要 16 GB 的可用内存和 150 GB 的可用磁盘空间。 为获得最佳性能，建议使用 32 GB 的可用内存和 300 GB 的可用空间。 工具包将于 2021 年 5 月 2 日过期。 新版本将在过期前发布。
+* 可以使用和控制台内更新将安装的基线版本 2002 更新到版本 2010。 请使用宽带宽 Internet 连接下载此内容，并允许 30-45 分钟进行自动预配。 实验室环境至少需要 16 GB 的可用内存和 150 GB 的可用磁盘空间。 为获得最佳性能，建议使用 32 GB 的可用内存和 300 GB 的可用空间。 工具包将于 2021 年 7 月 22 日过期。 新版本将在过期前发布。
 
 ## <a name="additional-guidance"></a>其他指南
 
@@ -109,7 +109,7 @@ Windows 和 Office 部署实验室工具包旨在帮助你规划、测试和验�
 
   - [Windows 10 部署计划](/windows/deployment/planning/index)
 
-  - [Microsoft 365 应用部署指南](/deployoffice/deployment-guide-microsoft-365-apps)
+  - [Microsoft 365 应用版部署指南](/deployoffice/deployment-guide-microsoft-365-apps)
 
   - [Intune 入门](/intune/get-started-evaluation)
 

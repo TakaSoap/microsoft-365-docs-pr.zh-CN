@@ -1,10 +1,10 @@
 ---
-title: Contoso 的 COVID-19 响应，支持远程和现场工作
+title: Contoso 的 COVID-19 响应和支持远程和现场工作
 author: JoeDavies-MSFT
 f1.keywords:
 - NOCSH
 ms.author: josephd
-manager: laurawi
+manager: dansimp
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,67 +13,67 @@ ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
 ms.custom: ''
-description: 了解 Contoso Corporation 如何响应 COVID pandemic，并为远程和现场工作设计其软件安装和更新基础结构。
-ms.openlocfilehash: d04b4efcdd4dd04315ad37311cdd2cfbc2e64e88
-ms.sourcegitcommit: e53234b1f64ebca00e121da1706c02b3337c35f0
+description: 了解 Contoso Corporation 如何响应 COVID-19 病毒，并设计其软件安装和更新基础结构，用于远程和现场工作。
+ms.openlocfilehash: 0bded43f03dd529ffdf463818a93af70e10eed89
+ms.sourcegitcommit: e02cf5702af178ddd2968877a808874ecb49ed2c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "49580669"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52028976"
 ---
-# <a name="contosos-covid-19-response-and-support-for-remote-and-onsite-work"></a>Contoso 的 COVID-19 响应，支持远程和现场工作
+# <a name="contosos-covid-19-response-and-support-for-remote-and-onsite-work"></a>Contoso 的 COVID-19 响应和支持远程和现场工作
 
-Contoso 始终支持通过巴黎总部的中央 VPN 服务器访问本地资源的远程工作人员。 Contoso 已将所有远程工作人员颁发为托管便携式计算机。 内部部署工作人员混合了台式计算机和便携式计算机。
+Contoso 始终支持远程工作者，这些工作者通过巴黎总部的中央 VPN 服务器访问本地资源。 Contoso 已颁发给所有远程工作者托管的笔记本电脑。 本地工作人员混合使用台式计算机和笔记本电脑。
 
-## <a name="contosos-response-to-covid-19"></a>Contoso 对 COVID 的响应-19
+## <a name="contosos-response-to-covid-19"></a>Contoso 对 COVID-19 的响应
 
-使用 COVID-19 pandemic 的 onset，您就会突然拥有远程工作人员的所有重要工作人员。 Contoso 通过将其员工的工作方式转移到家庭中，并通过远程访问本地资源并使用 Microsoft 365 云服务进行联机来响应其主要活动。
+随着 COVID-19 病毒的爆发，突然，只有基本工作者都是远程工作者。 Contoso 通过远程访问本地资源和使用 Microsoft 365 云服务在线，将员工从家转移到工作并开展其主要活动来做出响应。
 
-Contoso 在巴黎总部办事处拥有远程访问 VPN 服务器，以支持其已有的远程员工的25%，但快速移动以扩大 it 的远程访问能力，以支持其员工的90%。 Contoso 在每个卫星办公室中部署了远程访问 VPN 服务器，以便远程工作人员可以使用地区组织关闭入口点访问 Contoso intranet。
+Contoso 在巴黎总部办公室拥有远程访问 VPN 服务器，以支持其 25% 的已远程工作人员，但迅速移动以扩展其远程访问容量以支持 90% 的员工。 Contoso 在每个附属办事处部署了远程访问 VPN 服务器，以便远程工作人员使用区域关闭入口点来访问 Contoso Intranet。
 
-Contoso 还更新了用于拆分隧道的便携式电脑、平板电脑和智能手机上安装的 VPN 客户端的配置，以便优化 Office 365 终结点集的流量绕过 VPN 连接，并通过 internet 直接发送。 有关详细信息，请参阅 [使用 VPN 拆分隧道为远程用户优化 Office 365 连接](../enterprise/microsoft-365-vpn-split-tunnel.md)。
+Contoso 还更新了安装在笔记本电脑、平板电脑和智能手机上的 VPN 客户端的配置，以便拆分隧道，以便 Office 365 终结点的 Optimize 集的流量绕过 VPN 连接并直接通过 Internet 发送。 有关详细信息，请参阅使用 VPN 拆分隧道为远程用户 [优化 Office 365 连接](../enterprise/microsoft-365-vpn-split-tunnel.md)。
 
-下面是安装在巴黎总部和每个卫星办公室中的 VPN 设备生成的配置。 
+下面是在巴黎总部和每个附属办事处安装了 VPN 设备的配置结果。 
 
 ![Contoso 的 VPN 基础结构](../media/contoso-remote-onsite-work/contoso-vpn-infrastructure.png)
 
-具有已安装的 VPN 客户端的远程工作人员使用 DNS 查找地区组织最近的 office，并连接到此处安装的 VPN 设备。 通过拆分隧道，到 Microsoft 365 的流量优化终结点将直接发送到最近的地区组织 Microsoft 365 网络位置。 所有其他流量通过 VPN 连接发送到 VPN 设备。
+安装了 VPN 客户端的远程工作者使用 DNS 查找区域最近的办公室并连接到安装在那里的 VPN 设备。 使用拆分隧道，到 Microsoft 365 优化终结点的流量将直接发送到区域最近的 Microsoft 365 网络位置。 所有其他流量通过 VPN 连接发送到 VPN 设备。
 
 ## <a name="contosos-support-for-remote-and-onsite-work"></a>Contoso 对远程和现场工作的支持
 
-在区域 lockdowns 期间进行的大多数远程工作人员支持最初的更改后，Contoso 进行了基础结构更改以支持远程和现场工作，工作人员可以执行以下操作：
+在区域锁定期间进行初始更改以支持大多数远程工作者后，Contoso 进行了基础结构更改以支持工作者可能从事的远程和现场工作：
 
 - 始终远程。
-- 始终在现场。
+- 始终现场。
 - 现场和远程的组合。
 
-Microsoft 365 标识、安全性和合规性功能是为实现零信任而设计的，无论用户及其设备的位置如何，都能正常工作。 有关详细信息，请参阅 [零信任](https://www.microsoft.com/security/business/zero-trust)。
+Microsoft 365 标识、安全性和合规性功能专为零信任设计，无论用户及其设备的位置如何，这些功能均可运行。 有关详细信息，请参阅零 [信任](https://www.microsoft.com/security/business/zero-trust)。
 
-但是，管理软件的新安装和更新取决于设备的位置，因为要安装的软件可能来自内部部署源或 internet 源。 Contoso IT 架构师根据设备的位置（而不是工作人员）设计他们的新安装和更新基础结构。
+但是，管理软件的新安装和更新取决于设备的位置，因为要安装的软件可能来自本地或 Internet 源。 Contoso IT 架构师根据设备的位置（而不是工作者）设计了新的安装和更新基础结构。
 
-它们指定了两种类型的设备：专用本地和漫游。
+他们指定了两种类型的设备：专用本地和漫游。
 
 ### <a name="dedicated-on-premises"></a>专用本地
 
-专用的本地设备是指从不离开 Contoso intranet 且未安装 VPN 客户端的台式机或服务器计算机。 这些本地设备继续使用 Microsoft 终结点配置管理器及其分发点来安装和更新 Windows 10、Microsoft 365 Apps for enterprise 和 Edge 浏览器。
+专用本地设备是永远不会离开 Contoso Intranet 且未安装 VPN 客户端的桌面或服务器计算机。 这些本地设备继续使用 Microsoft Endpoint Configuration Manager 及其分发点来安装和更新 Windows 10、Microsoft 365 企业应用版和 Edge 浏览器。
 
 ### <a name="roaming"></a>漫游
 
-漫游设备可以离开 Contoso intranet，并包括发布到许多 office 工作人员和所有远程工作人员和其他组织拥有的设备（例如智能手机和平板电脑）安装了 Contoso VPN 客户端的便携式计算机。 
+漫游设备可以离开 Contoso Intranet，并包括颁发给许多办公室工作人员、所有远程工作人员以及其他组织拥有的设备（如安装了 Contoso VPN 客户端的智能手机和平板电脑）的笔记本电脑。 
 
-由于可在任意给定时间将这些设备连接到 Internet，因此他们使用 Intune 或其他基于云的服务来安装和更新 Windows 10、Microsoft 365 Apps for enterprise 和 Edge。 它们不使用现有的本地配置管理器分发点。
+由于这些设备可以在任何给定时间连接到 Internet，因此它们使用 Intune 或其他基于云的服务来安装和更新 Windows 10、Microsoft 365 企业应用版和 Edge。 它们不使用现有的本地 Configuration Manager 分发点。
 
-这意味着漫游设备的某些安装和更新将通过 internet 进行，同时在本地进行，并连接到 intranet。 但 Contoso IT 架构师认为，配置的简单性比 internet 的 intranet 带宽优化更重要，尤其是当大多数远程工作人员很少连接到 intranet 时。
+这意味着漫游设备的一些安装和更新将在漫游设备位于本地并连接到 Intranet 时通过 Internet 完成。 但 Contoso IT 架构师认为，配置简单性比优化 Intranet 带宽到 Internet 更重要，尤其是当大多数远程工作人员很少连接到 Intranet 时。
 
 下面是生成的基础结构。
 
 ![Contoso 的安装和更新基础结构](../media/contoso-remote-onsite-work/contoso-updates-infrastructure.png)
 
-通过将设备的计算机帐户设为以下组之一的成员来确定安装和更新行为：
+安装和更新行为由使设备的计算机帐户成为以下组之一的成员来确定：
 
 - OnPremDevices
 
-  设备上的 Configuration Manager 客户端使用分发点进行安装和更新。
+  设备上 Configuration Manager 客户端使用分发点进行安装和更新。
 
 - RoamingDevices
 
@@ -81,10 +81,10 @@ Microsoft 365 标识、安全性和合规性功能是为实现零信任而设计
 
 ## <a name="new-onboarding-process"></a>新的载入过程
 
-对于向新工作人员或在数据中心中的新服务器发出的新专用本地设备，当工作人员登录时，基于 OnPremDevices 组中设备的成员身份的 Configuration Manager 客户端将下载并安装 Windows 10、Microsoft 365 应用程序的最新更新和本地 Configuration Manager 分发点的边缘。 完成后，专用的本地设备即可供使用，并使用这些分发点进行持续更新。
+对于颁发给新工作者或数据中心中新服务器的新的专用本地设备，当工作者登录时，基于设备在 OnPremDevices 组的成员身份的 Configuration Manager 客户端从本地 Configuration Manager 分发点下载并安装 Windows 10、Microsoft 365 企业应用版和 Edge 的最新更新。 完成后，专用本地设备即可供使用，并使用这些分发点进行持续更新。
 
-对于颁发给新工作人员的新远程设备，当工作人员登录时，设备将基于其在 RoamingDevices 组中的成员身份，联系 Intune 云服务和其他服务并下载并安装最新的 Windows 10、Microsoft 365 Apps for enterprise 和 Edge 的更新。 完成后，远程设备即可供使用，并使用已安装的 VPN 客户端访问本地资源和 Microsoft 365 网络以进行持续更新。
+对于颁发给新工作者的新远程设备，当工作者登录时，该设备会基于其 RoamingDevices 组的成员身份联系 Intune 云服务和其他服务，并下载并安装 Windows 10、Microsoft 365 企业应用版和 Edge 的最新更新。 完成后，远程设备即可供使用，并使用已安装的 VPN 客户端访问本地资源和 Microsoft 365 网络，以持续更新。
 
 ## <a name="next-step"></a>后续步骤
 
-[为你的组织中的远程工作人员准备工作](empower-people-to-work-remotely.md) 。
+[为组织的远程](empower-people-to-work-remotely.md) 工作者提供能力。

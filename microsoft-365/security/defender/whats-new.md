@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 9f4cc36172b0ac598b2719bee8ce56bf0f8a1b84
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 91029f03e089f44f49800bfe2d18536a8d415411
+ms.sourcegitcommit: e02cf5702af178ddd2968877a808874ecb49ed2c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51933381"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52029024"
 ---
 # <a name="whats-new-in-microsoft-365-defender"></a>Microsoft 365 Defender 的新增功能
 
@@ -38,6 +38,12 @@ RSS 源：在此页面更新时收到通知，方法为将以下 URL 复制并�
 ```http
 https://docs.microsoft.com/api/search/rss?search=%22Lists+the+new+features+and+functionality+in+Microsoft+365+defender%22&locale=en-us
 ```
+
+## <a name="april-2021"></a>2021 年 4 月
+- 改进的 Microsoft 365 安全中心 <br> 改进的 [Microsoft 365 安全中心](https://security.microsoft.com)现已提供公共预览版。 此新体验将 Defender for Endpoint、Defender for Office、365 Microsoft 365 Defender 等引入了 Microsoft 365 安全中心。 这是用于管理安全控制的新主页。 [了解新增功能](./overview-security-center.md)。
+
+- [Microsoft 365 Defender 威胁分析报告](threat-analytics.md)<br>
+ 威胁分析可帮助你响应活动攻击并最大限度地减少其影响。 还可以了解 Microsoft 365 Defender 解决方案阻止的攻击尝试，采取预防措施来降低进一步曝光的风险并增加复原能力。 作为统一安全体验的一部分，威胁分析现在适用于 Microsoft Defender for Endpoint 和 Microsoft Defender for Office E5 许可证持有者。
 
 ## <a name="march-2021"></a>2021 年 3 月
 - [CloudAppEvents 表](advanced-hunting-cloudappevents-table.md) <br>查找有关 Microsoft Cloud App Security 涵盖的各种云应用和服务中的事件的信息。 此表还包括之前在 中提供的信息 `AppFileEvents` 。

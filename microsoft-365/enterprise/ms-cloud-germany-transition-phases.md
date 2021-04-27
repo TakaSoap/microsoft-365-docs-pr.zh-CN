@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 摘要：了解从德国 Microsoft 云 (德国) 迁移到新的德国数据中心区域 Office 365 服务的迁移阶段操作和影响。
-ms.openlocfilehash: 8e3e6fb228445823481b52d27e5a7b6c623349e2
-ms.sourcegitcommit: f000358c01a8006e5749a86b256300ee3a73174c
+ms.openlocfilehash: 5764b5cedf17487320fbfd05885120de86da3a84
+ms.sourcegitcommit: e02cf5702af178ddd2968877a808874ecb49ed2c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2021
-ms.locfileid: "51995017"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52029058"
 ---
 # <a name="migration-phases-actions-and-impacts-for-the-migration-from-microsoft-cloud-deutschland"></a>迁移阶段从德国 Microsoft 云迁移的操作和影响
 
@@ -226,7 +226,7 @@ Set-SendConnector -Identity <SendConnectorName> -TlsDomain "mail.protection.outl
 - 联系人和会议将迁移到 Microsoft Teams。
 - 在时间服务转换到 Office 365 服务之间，用户将无法登录 Skype for Business，除非客户 DNS 条目已完成。
 - 联系人和现有会议将继续用作 Skype for Business 会议。
-- 第 9 阶段完成后，Microsoft Teams 的 Web 浏览器版本将不起作用。
+- 在阶段 9 完成之前，Microsoft Teams 的 Web 浏览器版本将不起作用。
 
 如果迁移阶段 9 完成后，你必须使用 PowerShell 连接到 Skype for Business Online，请使用以下 PowerShell 代码进行连接：
 

@@ -10,12 +10,12 @@ ms.author: jaimeo
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: d970ac1a28c62703f648e4fbf6f66e2f825a6188
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 571acc9c240fc0243998050ac3013258a2f85a3e
+ms.sourcegitcommit: e02cf5702af178ddd2968877a808874ecb49ed2c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51574615"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52028940"
 ---
 # <a name="apps-in-microsoft-managed-desktop"></a>Microsoft 托管桌面中的应用
 
@@ -27,8 +27,7 @@ ms.locfileid: "51574615"
 
 Microsoft 包括某些关键应用以及参与 Microsoft 托管桌面所需的 Microsoft 365 E3 或 E5 许可证。 但是，即使我们提供这些应用，你仍具有某些责任和操作需要完成。
 
-还可通过公司门户或所需的后台安装（全部使用 Microsoft Intune 的部署管道）向用户部署其他非 Microsoft 应用进行自助服务。 如果你拥有专业知识，你可以迁移自己所需的应用;或者，Microsoft 咨询服务 (MCS) 或非 Microsoft 供应商将乐于帮助你完成打包和迁移项目。 有关使用 MCS 的信息，请参阅使用 [Microsoft 咨询服务](apps-MCS.md)。
-
+还可通过公司门户或所需的后台安装（全部使用 Microsoft Intune 的部署管道）向用户部署其他非 Microsoft 应用进行自助服务。 
 
 ## <a name="apps-provided-by-microsoft"></a>Microsoft 提供的应用
 
@@ -48,10 +47,7 @@ Microsoft 将为包含的 Microsoft 365 企业应用版应用提供部署、更�
 
 ## <a name="apps-you-provide"></a>你提供的应用
 
-你可能拥有业务操作所需的其他应用。 这些应用只能使用 Microsoft Intune 的部署管道部署到 Microsoft 托管桌面设备。 如果应用需要它，你可以将其打包为供应商 (该供应商可能是非 Microsoft 供应商或 Microsoft 咨询服务 (MCS) ) 或者如果您具有方法，您可以自己打包它们。 然后，将这些程序包添加到 Microsoft 托管桌面门户，并将其分配给 Azure Active Directory 组以触发部署。 
-
-如果你当前使用 Microsoft Endpoint Configuration Manager 部署应用，Microsoft 托管桌面可以向您提供一个查询来评估你的应用，并发现哪些应用已准备好迁移到 Microsoft Intune 以及哪些可能需要一些调整。
-
+你可能拥有业务操作所需的其他应用。 这些应用只能使用 Microsoft Intune 的部署管道部署到 Microsoft 托管桌面设备。 有关应用程序部署详细信息，请按照将应用部署到 [Microsoft 托管桌面设备中的步骤操作](../get-started/deploy-apps.md)。
 
 ### <a name="preparing-your-own-apps-for-inclusion-in-microsoft-managed-desktop"></a>准备你自己的应用以包含在 Microsoft 托管桌面中
 查看应用，检查：
@@ -59,24 +55,6 @@ Microsoft 将为包含的 Microsoft 365 企业应用版应用提供部署、更�
 - 如 Microsoft 托管桌面应用要求中所述，任何应用均不受禁止或 [具有受限行为](../service-description/mmd-app-requirements.md)。
 - 应用必须已准备好由 Microsoft Intune 管理。 有关本主题的详细信息，请参阅使用[Microsoft Intune 的 Windows 10](/intune/apps-windows-10-app-deploy)应用部署和[将应用添加到 Microsoft Intune。](/intune/apps-add)
 - 其他预打包要求，如提供许可证密钥、与许可条款的协议以及预先设置服务器连接。
-
-### <a name="decide-how-to-package-apps"></a>确定如何打包应用
-
-一些独立的软件发布者可能要求在集中部署应用之前将其打包。 "打包"意味着应用的安装程序使用许可证密钥、远程服务器位置或桌面快捷方式等设置进行配置，以便可以在后台安装应用。
-
-有三个选项可以打包应用： 
-
-
-- 你可以自己打包应用
-- 你可以与非 Microsoft 供应商合作
-- 你可以与 MCS 合作打包应用。 与 Microsoft 客户代表合作。 有关详细信息，请参阅使用 [Microsoft 咨询服务](apps-MCS.md)。
-
-
-
-## <a name="deploying-apps"></a>部署应用
-
-无论使用哪种方法打包应用，完成后，你都已准备好按照将应用部署到 [Microsoft 托管桌面设备中的步骤操作](../get-started/deploy-apps.md)。
-
 
 ## <a name="steps-to-get-ready"></a>准备步骤
 

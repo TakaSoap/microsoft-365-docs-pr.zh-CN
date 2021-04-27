@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 291ee6d2f72579a6daf731c121265164b2aaa547
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: c82e1abf9e539ad169bbc488ade9cd21bb8e6727
+ms.sourcegitcommit: e02cf5702af178ddd2968877a808874ecb49ed2c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51056078"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52029070"
 ---
 # <a name="microsoft-365-defender-preview-features"></a>Microsoft 365 Defender 预览版功能
 
@@ -68,10 +68,6 @@ Microsoft 365 Defender 服务将不断更新，以包含新功能增强功能和
 
 当前预览版中提供以下功能和增强功能：
 
-### <a name="improved-microsoft-365-security-center"></a>改进的 Microsoft 365 安全中心
-改进的 [Microsoft 365 安全中心](https://security.microsoft.com)现已提供公共预览版。 此新体验将 Defender for Endpoint、Defender for Office、365 Microsoft 365 Defender 等引入了 Microsoft 365 安全中心。 这是用于管理安全控制的新主页。 [了解新增功能](./overview-security-center.md)。
-
-- **[Microsoft 365 Defender 威胁](threat-analytics.md)** 分析报告 - 威胁分析可帮助你响应活动攻击并最大限度地减少其影响。 还可以了解 Microsoft 365 Defender 解决方案阻止的攻击尝试，采取预防措施来降低进一步曝光的风险并增加复原能力。 作为统一安全体验的一部分，威胁分析现在适用于 Microsoft Defender for Endpoint 和 Microsoft Defender for Office E5 许可证持有者。
 - **[Microsoft 365 Defender API](api-overview.md)** - 顶级 Microsoft 365 Defender API 将让你能够自动执行基于共享事件和高级搜寻表的工作流。 
 - **[在高级搜寻中采取措施](advanced-hunting-take-action.md)**- 快速包含威胁或解决你在高级搜寻中 [发现的威胁资产](advanced-hunting-overview.md)。
 - **[门户内架构参考](advanced-hunting-schema-tables.md#get-schema-information-in-the-security-center)**- 直接在安全中心获取有关高级搜寻架构表的信息。 除了表和列说明之外，此参考还包括受支持的事件类型 (`ActionType` 查询) 查询的值。

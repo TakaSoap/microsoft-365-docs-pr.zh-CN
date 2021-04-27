@@ -4,7 +4,7 @@ author: JoeDavies-MSFT
 f1.keywords:
 - NOCSH
 ms.author: josephd
-manager: laurawi
+manager: dansimp
 ms.date: 06/17/2020
 audience: ITPro
 ms.topic: article
@@ -15,12 +15,12 @@ ms.collection:
 - M365-subscription-management
 ms.custom: ''
 description: 一个虚构但具有代表性的全球组织如何部署 Microsoft 365 解决方案。
-ms.openlocfilehash: 0c11b849f75e5707c5f49762c0b279a5dbfb2fd1
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 74eacd4a7de2cf60eb2f1f388f3690496c6cc0e1
+ms.sourcegitcommit: e02cf5702af178ddd2968877a808874ecb49ed2c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50918414"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52028918"
 ---
 # <a name="microsoft-365-solutions-for-the-contoso-corporation"></a>Contoso Corporation 的 Microsoft 365 解决方案
 

@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
-manager: laurawi
+manager: dansimp
 ms.date: 08/14/2020
 audience: ITPro
 ms.topic: overview
@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom: Ent_Architecture
 description: 摘要：Contoso 如何使用具有最高机密项目安全隔离的团队来开发一套新的产品和服务。
-ms.openlocfilehash: d5ab2808251ff6a53f8975ea868431691d3301e2
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 751bf3972d148219a6cc341067c0bf34cd581447
+ms.sourcegitcommit: e02cf5702af178ddd2968877a808874ecb49ed2c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51051002"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52029012"
 ---
 # <a name="isolated-team-for-a-top-secret-project-of-the-contoso-corporation"></a>Contoso Corporation 最高机密项目的隔离团队
 
@@ -40,7 +40,7 @@ Contoso IT 员工使用具有 Project 2X [安全](secure-teams-security-isolatio
 
 ## <a name="step-1-created-a-private-team"></a>步骤 1：创建了私人团队
 
-首先，为了保护团队对基础 SharePoint 网站的访问，Contoso IT 管理员配置了建议的 [SharePoint 访问策略](../security/defender-365-security/sharepoint-file-access-policies.md)。
+首先，为了保护团队对基础 SharePoint 网站的访问，Contoso IT 管理员配置了建议的 [SharePoint 访问策略](../security/office-365-security/sharepoint-file-access-policies.md)。
 
 接下来，Contoso IT 管理员创建了一个名为 Project 2X 的新专用团队，并添加了 Project 2X 员工的用户帐户作为成员。 他们还配置了团队，以便只有 Project 2X 团队所有者可以创建私人频道。
 
@@ -64,7 +64,7 @@ Contoso 管理员创建了一个名为 **Project 2X** 的新敏感度标签，�
 
 ## <a name="step-3-configured-the-underlying-sharepoint-site"></a>步骤 3：配置基础 SharePoint 网站
 
-首先，为了保护团队对基础 SharePoint 网站的访问，Contoso IT 管理员配置了建议的 [SharePoint 访问策略](../security/defender-365-security/sharepoint-file-access-policies.md)。
+首先，为了保护团队对基础 SharePoint 网站的访问，Contoso IT 管理员配置了建议的 [SharePoint 访问策略](../security/office-365-security/sharepoint-file-access-policies.md)。
 
 接下来，他们为网站配置了其他权限设置：
 
