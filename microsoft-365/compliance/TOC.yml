@@ -362,7 +362,7 @@
         - name: 导入 PST 文件时筛选数据
           href: filter-data-when-importing-pst-files.md
         - name: 有关导入 PST 文件的常见问题解答
-          href: faqimporting-pst-files-to-office-365.md
+          href: faqimporting-pst-files-to-office-365.yml
     - name: 存档第三方数据
       items:
         - name: 有关存档第三方数据的概述
