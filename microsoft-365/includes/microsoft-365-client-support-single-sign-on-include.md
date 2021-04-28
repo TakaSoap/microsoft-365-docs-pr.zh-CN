@@ -26,7 +26,7 @@
 |便笺|不适用|不适用|不适用|不适用|✔|
 |STREAM|Planned|Planned|不适用|不适用|不适用|
 |SWAY|不适用|不适用|不适用|不适用|✔|
-|TEAMS|✔|✔|Planned|Planned|不适用|
+|TEAMS|✔|✔|Planned|✔|不适用|
 |TO-DO|✔|✔|不适用|不适用|✔|
 |VISIO|不适用|✔|不适用|✔|不适用|
 |WHITEBOARD|不适用|✔|不适用|不适用|✔|

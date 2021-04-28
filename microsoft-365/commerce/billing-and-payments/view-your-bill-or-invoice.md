@@ -28,12 +28,12 @@ ms.custom:
 - AdminSurgePortfolio
 description: 在 Microsoft 365 管理中心 查找你的发票或账单。 你还可以保存和打印帐单。
 ms.date: 07/31/2020
-ms.openlocfilehash: b117071fa708ad9d425d578833d8b0ad85537151
-ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
+ms.openlocfilehash: d391d99f5d5870d964fc4c420a105f25032e3640
+ms.sourcegitcommit: e5b1a900043e2e41650ea1cbf4227043729c6053
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "51939482"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52060963"
 ---
 # <a name="view-your-bill-or-invoice"></a>查看帐单或发票
 
@@ -62,7 +62,7 @@ ms.locfileid: "51939482"
 
 您可以在付款大约三 (3) 天后向 [发票管理系统](https://go.microsoft.com/fwlink/p/?linkid=837465) 提交发票请求。
 
-1. 在 <a href=”https://go.microsoft.com/fwlink/p/?linkid=850627” target=”_blank”>管理中心</a>，转到“**账单**” > “**账单和付款**”页。
+1. 在 <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">管理中心</a>，转到“**账单**” >  “**账单和付款**”页。
 
 2. 找到所需的发票，然后选择“**获取发票**”。
 
