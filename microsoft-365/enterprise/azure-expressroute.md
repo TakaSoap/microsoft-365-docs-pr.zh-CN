@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 ms.assetid: 6d2534a2-c19c-4a99-be5e-33a0cee5d3bd
 description: 了解如何将 Azure ExpressRoute 与 Office 365 一同使用，并规划网络实施项目（如果随其一起部署）。
-ms.openlocfilehash: d4c14d97cff2952f5f7052a8aa2940f05d644737
-ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
+ms.openlocfilehash: 8047cdaa1325df487709660b558420609afffd42
+ms.sourcegitcommit: 9063c7a50a1d7dd6d2e1ca44f53d3c26f21f4ae8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52023721"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "52073945"
 ---
 # <a name="azure-expressroute-for-office-365"></a>适用于 Office 365 的 Azure ExpressRoute
 
@@ -39,9 +39,7 @@ ms.locfileid: "52023721"
 > Microsoft Defender for Endpoint 在 Azure Express 路由中不受支持。
 
 > [!NOTE]
-> 需要 Microsoft 授权才能使用适用于 Office 365 的 ExpressRoute。 当客户的法规要求需要直接连接时，Microsoft 会审查每个客户请求并授权 ExpressRoute for Office 365 使用。 如果你有此类要求，请联系你的 Microsoft 客户代表开始 Microsoft 审查。 尝试为 Office 365 创建路由筛选器的未经授权的订阅将收到 [一条错误消息](https://support.microsoft.com/kb/3181709)。
-
-现在，您可以为选定的 Office 365 网络流量向 Office 365 添加直接网络连接。 Azure ExpressRoute 提供直接连接、可预测的性能，并附带 99.95% 的 Microsoft 网络组件的运行时间 SLA。 对于 Azure ExpressRoute 不支持的服务，你仍然需要 Internet 连接。
+> 我们不建议使用适用于 Microsoft 365 的 ExpressRoute，因为它在大多数情况下不提供最佳的服务连接模型。 因此，需要 Microsoft 授权才能使用此 Microsoft 365 连接模型。 我们仅在必要时查看每个客户请求并授权 ExpressRoute for Microsoft 365。 请阅读 [ExpressRoute for Microsoft 365](https://aka.ms/erguide) 指南了解详细信息，并遵循对文档的全面审阅（包括生产力、网络和安全团队）与 Microsoft 帐户团队合作，以根据需要提交例外。 尝试为 Office 365 创建路由筛选器的未经授权的订阅将收到 [一条错误消息](https://support.microsoft.com/kb/3181709)。
 
 ## <a name="planning-azure-expressroute-for-office-365"></a>规划 Office 365 的 Azure ExpressRoute
 
@@ -64,7 +62,7 @@ ms.locfileid: "52023721"
 
 下表列出了通过 ExpressRoute 支持的 Office 365 服务。 请查看 [Office 365](./urls-and-ip-address-ranges.md) 终结点文章，了解这些应用程序的哪些网络请求需要 Internet 连接。
 
-|**包含的应用程序**|
+| 包含的应用程序 |
 |:-----|
 |Exchange Online<sup>1</sup> <br/> Exchange Online Protection<sup>1</sup> <br/> Delve<sup>1</sup> <br/> |
 |Skype for Business Online<sup>1</sup> <br/> Microsoft Teams <sup>1</sup> <br/> |
