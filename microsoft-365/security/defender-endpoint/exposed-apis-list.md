@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: ab3d3aa9a13b71f65d3d4335646e32a7e4270242
-ms.sourcegitcommit: e5b1a900043e2e41650ea1cbf4227043729c6053
+ms.openlocfilehash: 656aa26d80db73bfc52511f9dd94e58e771f3ac6
+ms.sourcegitcommit: 9063c7a50a1d7dd6d2e1ca44f53d3c26f21f4ae8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52061045"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "52073825"
 ---
 # <a name="supported-microsoft-defender-for-endpoint-apis"></a>支持的 Microsoft Defender for Endpoint API
 
@@ -69,7 +69,6 @@ ms.locfileid: "52061045"
 [计算机方法和属性](machine.md) | 运行 API 调用，如获取设备、按 ID 获取设备、有关已登录用户的信息 \- 、编辑标记等。
 [计算机操作方法和属性](machineaction.md) | 运行 API 调用， \- 如隔离、运行防病毒扫描等。
 [建议方法和属性](recommendation.md) | 运行 API 调用，例如 \- 按 ID 获取建议。
-[修正活动方法和属性](get-remediation-methods-properties.md) | 运行 API 调用（如 \- 获取所有修正任务、获取公开的设备修正任务和按 id 获取一个修正任务）。
 [分数方法和属性](score.md) | 运行 API 调用（如 \- 获取曝光分数或获取设备安全分数）。
 [软件方法和属性](software.md) | 运行 API 调用，如 \- 按软件列出漏洞。
 [用户方法](user.md) | 运行 API 调用，例如 \- 获取与用户相关的警报和与用户相关的设备。

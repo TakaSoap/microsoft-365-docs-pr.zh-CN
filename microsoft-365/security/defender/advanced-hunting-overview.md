@@ -21,12 +21,12 @@ ms.collection:
 ms.topic: article
 ms.custom: seo-marvel-apr2020
 ms.technology: m365d
-ms.openlocfilehash: df48ec921dee7d8f3b441ed3f68ed148c5c6c857
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: f43d3bf9575f00649a2b5015a8be16351bebd11b
+ms.sourcegitcommit: 9063c7a50a1d7dd6d2e1ca44f53d3c26f21f4ae8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51932973"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "52073957"
 ---
 # <a name="proactively-hunt-for-threats-with-advanced-hunting-in-microsoft-365-defender"></a>在 Microsoft 365 Defender 中通过高级搜寻主动搜寻威胁
 
@@ -40,7 +40,7 @@ ms.locfileid: "51932973"
 >
 
 高级搜寻是一种基于查询的威胁搜寻工具，可用于浏览多达 30 天的原始数据。 你可以主动检查网络中事件，以查找威胁指示器和实体。 通过灵活的数据访问，可以不受限制地搜寻已知威胁和潜在威胁。
-<p></p>
+<br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Bp7O]
 
@@ -50,21 +50,10 @@ ms.locfileid: "51932973"
 
 - Microsoft Defender for Endpoint
 - Microsoft Defender for Office 365
-- Microsoft 云应用安全
+- Microsoft Cloud App Security
 - Microsoft Defender for Identity
 
 若要使用高级搜寻， [请打开 Microsoft 365 Defender](m365d-enable.md)。
-
-### <a name="before-you-begin"></a>准备工作
-
-用户需要以下权限级别之一才能访问 Microsoft Defender：
-
-- 可读写 (完全访问权限) 
-- 只读访问
-
-**完全访问权限**：具有完全访问权限的用户可以保存、修改和共享查询。 分配完全访问权限需要将用户添加到 Azure Active Directory 中的"安全管理员"或"全局管理员"内置角色 (AAD) 。
-
-**只读访问**：具有只读访问权限的用户可以登录并查看所有警报和相关信息。 他们将无法保存、修改或共享查询。 分配只读访问权限需要将用户添加到 AAD 中的"安全读者"内置角色。
 
 ## <a name="get-started-with-advanced-hunting"></a>高级搜寻入门
 
@@ -73,14 +62,17 @@ ms.locfileid: "51932973"
 | 学习目标 | 说明 | 资源 |
 |--|--|--|
 | **了解语言** | 高级搜寻基于 [Kusto 查询语言](/azure/kusto/query/)，支持相同的语法和运算符。 通过运行第一个查询开始学习查询语言。 | [查询语言概述](advanced-hunting-query-language.md) |
-| **了解如何使用查询结果** | 了解图表以及查看或导出结果的各种方法。 了解如何快速调整查询、向下钻取以获取更丰富的信息以及执行响应操作。 | - [使用查询结果](advanced-hunting-query-results.md)<br>- [对查询结果采取措施](advanced-hunting-take-action.md) |
-| **了解架构** | 更好地大致了解架构及其列中的表。 了解在构造查询时在何处查找数据。 | - [架构参考](advanced-hunting-schema-tables.md)<br>- [从 Microsoft Defender for Endpoint 转换](advanced-hunting-migrate-from-mde.md) |
-| **获取专家提示和示例** | 通过 Microsoft 专家的指南免费培训。 浏览涵盖不同威胁搜寻方案的预定义查询集合。 | - [获取专家培训](advanced-hunting-expert-training.md)<br>- [使用共享查询](advanced-hunting-shared-queries.md)<br>- [去寻线](advanced-hunting-go-hunt.md)<br>- [跨设备、电子邮件、应用和标识搜寻威胁](advanced-hunting-query-emails-devices.md) |
-| **优化查询和处理错误** | 了解如何创建高效且无错误的查询。 | - [查询最佳做法](advanced-hunting-best-practices.md)<br>- [处理错误](advanced-hunting-errors.md) |
-| **创建自定义检测规则** | 了解如何使用高级搜寻查询来触发警报并自动执行响应操作。 | - [自定义检测概述](custom-detections-overview.md)<br>- [自定义检测规则](custom-detection-rules.md) |
+| **了解如何使用查询结果** | 了解图表以及查看或导出结果的各种方法。 了解如何快速调整查询、向下钻取以获取更丰富的信息以及执行响应操作。 | - [使用查询结果](advanced-hunting-query-results.md)<br /> - [对查询结果采取措施](advanced-hunting-take-action.md) |
+| **了解架构** | 更好地大致了解架构及其列中的表。 了解在构造查询时在何处查找数据。 | - [架构参考](advanced-hunting-schema-tables.md) <br />- [从 Microsoft Defender for Endpoint 转换](advanced-hunting-migrate-from-mde.md) |
+| **获取专家提示和示例** | 通过 Microsoft 专家的指南免费培训。 浏览涵盖不同威胁搜寻方案的预定义查询集合。 | - [获取专家培训](advanced-hunting-expert-training.md) <br />- [使用共享查询](advanced-hunting-shared-queries.md) <br />- [去寻线](advanced-hunting-go-hunt.md) <br />- [跨设备、电子邮件、应用和标识搜寻威胁](advanced-hunting-query-emails-devices.md) |
+| **优化查询和处理错误** | 了解如何创建高效且无错误的查询。 | - [查询最佳做法](advanced-hunting-best-practices.md)<br />- [处理错误](advanced-hunting-errors.md) |
+| **创建自定义检测规则** | 了解如何使用高级搜寻查询来触发警报并自动执行响应操作。 | - [自定义检测概述](custom-detections-overview.md) <br />- [自定义检测规则](custom-detection-rules.md) |
 
 ## <a name="get-access"></a>获取访问权限
-若要使用高级搜寻或其他 [Microsoft 365 Defender](microsoft-365-defender.md) 功能，你需要在 Azure Active Directory 中担任适当的角色。 此外，对终结点数据的访问由基于角色的访问控制 (Microsoft Defender for Endpoint) RBAC 设置确定。 [阅读有关管理对 Microsoft 365 Defender 的访问权限](m365d-permissions.md)
+若要使用高级搜寻或其他 [Microsoft 365 Defender](microsoft-365-defender.md) 功能，你需要在 Azure Active Directory 中担任适当的角色。 [阅读高级搜寻所需的角色和权限](custom-roles.md)。
+
+此外，对终结点数据的访问由基于角色的访问控制 (Microsoft Defender for Endpoint) RBAC 设置确定。 [阅读有关管理对 Microsoft 365 Defender 的访问权限](m365d-permissions.md)。
+
 
 ## <a name="data-freshness-and-update-frequency"></a>数据新鲜度和更新频率
 高级搜寻数据可以分为两种不同的类型，每种类型合并的方式不同。

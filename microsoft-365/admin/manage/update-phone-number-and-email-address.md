@@ -20,18 +20,20 @@ search.appverid:
 - MOE150
 ms.assetid: 767349fa-f646-46d9-9dab-4a65049bdd1f
 description: 在管理中心更新管理员电话号码和电子邮件地址。 如果你想要重置自己的管理员密码，你将需要此信息。
-ms.openlocfilehash: 39b68905c0d43608a0d0ce1d37167fd7d9aff8fb
-ms.sourcegitcommit: d4604e333507c6f57d5bf327531a241b649052de
+ms.openlocfilehash: 49e3cd3e861499d41107b9c76da175a95e74bb0e
+ms.sourcegitcommit: 9063c7a50a1d7dd6d2e1ca44f53d3c26f21f4ae8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51470913"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "52073773"
 ---
 # <a name="update-your-admin-phone-number-and-email-address"></a>更新管理员电话号码和电子邮件地址
 
 本文介绍了管理员如何在 Microsoft 365 中更改你的企业电话和电子邮件地址。
   
 如果想了解如何更改公司的资料信息（如公司名称和地址、公司电话号码和技术联系人信息），请参阅[更改公司地址、技术联系人电子邮件及其他信息](change-address-contact-and-more.md)。
+
+有关更改用户联系人信息或删除以前员工的信息，请参阅 [相关内容](#related-content)。
   
 ## <a name="to-update-your-phone-number-and-email-address"></a>更新电话号码和电子邮件地址
 
@@ -53,3 +55,13 @@ ms.locfileid: "51470913"
 - [更改 Microsoft 365 商业版帐单邮寄地址](../../commerce/billing-and-payments/change-your-billing-addresses.md)
 
 - [管理支付方式](../../commerce/billing-and-payments/manage-payment-methods.md)
+
+## <a name="related-content"></a>相关内容
+
+[将用户名和电子邮件地址 (](../add-users/change-a-user-name-and-email-address.md) 视频) 
+
+[添加新员工 (](../add-users/add-new-employee.md) 视频) 
+
+[删除前员工](../add-users/remove-former-employee.md) (视频) 
+
+[访问和备份以前用户的数据 (](../add-users/get-access-to-and-back-up-a-former-user-s-data.md) 文章) 

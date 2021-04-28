@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 摘要：了解从德国 Microsoft 云 (德国) 迁移到新的德国数据中心区域 Office 365 服务的迁移阶段操作和影响。
-ms.openlocfilehash: 481447fa291354b3377648089cff193a2ad6fc2a
-ms.sourcegitcommit: e5b1a900043e2e41650ea1cbf4227043729c6053
+ms.openlocfilehash: 354ca55bae7704c011af5a76a1112e4d2ecb47ca
+ms.sourcegitcommit: 9063c7a50a1d7dd6d2e1ca44f53d3c26f21f4ae8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52061081"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "52073921"
 ---
 # <a name="migration-phases-actions-and-impacts-for-the-migration-from-microsoft-cloud-deutschland"></a>迁移阶段从德国 Microsoft 云迁移的操作和影响
 
@@ -264,18 +264,26 @@ Connect-MicrosoftTeams -Credential $userCredential -OverridePowershellUri "https
 
 ## <a name="phase-9-office-apps"></a>第 9 阶段：Office 应用
 
-**适用于：** 使用 Office 桌面应用程序的所有客户 (Word、Excel、PowerPoint、Outlook、...) 
+**适用于：** 使用 Office 桌面应用程序的所有客户 (Word、Excel、PowerPoint、Outlook、OneDrive...) 
+
+在此阶段，所有客户端应用程序和 Office Online 都执行客户端切换。 Azure AD 完成租户范围以指向 Office 365 服务和相关终结点。
 
 迁移到"德国"地区的 Office 365 租户要求所有用户在租户迁移到达阶段 9 后关闭、注销 Office 365，然后重新登录所有 Office 桌面应用程序 (Word、Excel、PowerPoint、Outlook 等 ) 和 OneDrive for Business 客户端。 通过登录和登录，Office 服务可以获取来自全局 Azure AD 服务的新身份验证令牌。
+
+如果从应用程序执行退出和登录后 Office 桌面应用程序将不起作用，我们强烈建议在受影响的计算机上运行 Office 客户端转换工具 [ (OCCT) ](https://github.com/microsoft/OCCT) 来解决此问题。
+
+如果提前在 Windows [客户端 (OCCT ](https://github.com/microsoft/OCCT)) 和计划 Office 客户端转换工具，则不需要执行注销/登录过程。
 
 使用最新的 Office 应用程序可以确保最佳用户体验。 企业应考虑使用每月企业频道。
 
 确保您已完成移动设备 [的前期工作](ms-cloud-germany-transition-add-pre-work.md#mobile-device-management) 过程。
 
-| 步骤 (步骤)  | 说明 | 影响 |
-|:-------|:-------|:-------|
-| 客户端、Office Online 和 Office 客户端切换期间，Azure AD 将完成租户范围以指向 Office 365 服务。 | 此配置更改允许 Office 客户端更新并指向 Office 365 服务终结点。 | <ul><li>通知用户关闭 _所有_ Office 应用，然后重新登录 (或强制客户端重新启动，并强制用户登录) 以使 Office 客户端能够选取更改。 </li><li>通知用户和技术支持人员，用户可能会看到一个 Office 横幅，提示他们在转换后 72 小时内重新激活 Office 应用。 </li><li>个人计算机上的所有 Office 应用程序都必须关闭，用户必须注销然后重新登录。 在黄色激活栏中，登录以重新激活 Office 365 服务。</li><li>共享计算机需要类似于个人计算机的操作，并且不需要特殊过程。 </li><li>在移动设备上，用户必须注销应用，关闭它们，然后重新登录。</li></ul>|
-||||
+其他注意事项：
+- 通知用户关闭所有 Office 应用，然后重新登录 (或强制客户端重新启动，并强制用户登录) 以使 Office 客户端能够选取更改。
+- 通知用户和技术支持人员，用户可能会看到一个 Office 横幅，提示他们在转换后 72 小时内重新激活 Office 应用。
+- 个人计算机上的所有 Office 应用程序都必须关闭，用户必须注销然后重新登录。 在黄色激活栏中，登录以重新激活 Office 365 服务。
+- 共享计算机需要类似于个人计算机的操作，并且不需要特殊过程。
+- 在移动设备上，用户必须注销应用，关闭它们，然后重新登录。
 
 ## <a name="phase-9-line-of-business-apps"></a>阶段 9：业务线应用
 
