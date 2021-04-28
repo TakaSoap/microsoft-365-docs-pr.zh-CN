@@ -2,10 +2,10 @@
 title: Windows 和 Office 部署实验室工具包
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: greglin
+author: greg-lindsay
 manager: laurawi
-ms.date: 08/10/2020
+ms.date: 04/26/2021
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解有关 Windows 和 Office 部署实验室工具包的信息，以及访问的位置。
-ms.openlocfilehash: efbcec6417b082311d3f094b0251702d8e0dbeac
-ms.sourcegitcommit: e02cf5702af178ddd2968877a808874ecb49ed2c
+ms.openlocfilehash: c0cf3ce239ed91261bd6e53cf317a7053168509a
+ms.sourcegitcommit: e5b1a900043e2e41650ea1cbf4227043729c6053
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52028660"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52060869"
 ---
 # <a name="windows-and-office-deployment-lab-kit"></a>Windows 和 Office 部署实验室工具包
 
@@ -104,23 +104,15 @@ Windows 和 Office 部署实验室工具包旨在帮助你规划、测试和验�
 ## <a name="additional-guidance"></a>其他指南
 
   - [Microsoft Mechanics 的桌面部署系列视频](https://www.aka.ms/watchhowtoshift)
-
   - [Microsoft Endpoint Configuration Manager 操作系统部署](/mem/configmgr/osd/understand/introduction-to-operating-system-deployment)
-
   - [Windows 10 部署计划](/windows/deployment/planning/index)
-
   - [Microsoft 365 应用版部署指南](/deployoffice/deployment-guide-microsoft-365-apps)
-
   - [Intune 入门](/intune/get-started-evaluation)
 
 ## <a name="related-resources"></a>相关资源
 
   - [Microsoft 365 简介](https://www.microsoft.com/microsoft-365/default.aspx)
-
   - [Office 365 企业版](https://products.office.com/business/office)
-
   - [企业移动性 + 安全性简介](https://www.microsoft.com/cloud-platform/enterprise-mobility-security)
-
   - [Windows 10 企业版](https://www.microsoft.com/WindowsForBusiness/windows-for-enterprise)
-
   - [Windows 10 中小型企业版](https://www.microsoft.com/WindowsForBusiness/windows-for-small-business)

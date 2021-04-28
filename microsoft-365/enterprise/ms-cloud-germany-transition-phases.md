@@ -18,22 +18,22 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 摘要：了解从德国 Microsoft 云 (德国) 迁移到新的德国数据中心区域 Office 365 服务的迁移阶段操作和影响。
-ms.openlocfilehash: 5764b5cedf17487320fbfd05885120de86da3a84
-ms.sourcegitcommit: e02cf5702af178ddd2968877a808874ecb49ed2c
+ms.openlocfilehash: 481447fa291354b3377648089cff193a2ad6fc2a
+ms.sourcegitcommit: e5b1a900043e2e41650ea1cbf4227043729c6053
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52029058"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52061081"
 ---
 # <a name="migration-phases-actions-and-impacts-for-the-migration-from-microsoft-cloud-deutschland"></a>迁移阶段从德国 Microsoft 云迁移的操作和影响
 
 从德国 Microsoft 云 (MCD) 到 Microsoft Office 365 全球服务"德国"地区的租户迁移作为一组阶段执行，并针对每个工作负载配置操作。 此图显示了迁移到新的德国数据中心的十个阶段。
 
-![迁移到新德国数据中心的十个阶段](../media/ms-cloud-germany-migration-opt-in/migration-organization.png)
+[![迁移到新德国数据中心的十个阶段 ](../media/ms-cloud-germany-migration-opt-in/migration-organization.png)](../media/ms-cloud-germany-migration-opt-in/migration-organization.png#lightbox)
 
 迁移过程将在几周内完成，具体取决于组织的总体大小和复杂性。 在迁移过程中，用户和管理员能够继续利用服务，并对此文档进行详细介绍，并做出显著更改。 图形和表定义迁移期间阶段和步骤。
 
-|步骤|持续时间|负责方|说明|
+|步骤|期限|负责方|说明|
 |:--------|:--------|:--------|:--------|
 |Opt-In|工作时间|客户|选择你的组织加入迁移。|
 |预工作|天|客户|完成为迁移准备用户、工作站和网络所需的工作。|
@@ -125,7 +125,7 @@ New-AuthServer GlobalMicrosoftSts -AuthMetadataUrl https://accounts.accesscontro
 |:-------|:-----|:-------|
 | SharePoint 和 OneDrive 已转换 | 在此阶段，SharePoint Online 和 OneDrive for Business 从德国 Microsoft 云迁移到 Office 365 全球服务。<br><ul><li>保留现有的德国 Microsoft 云 URL (例如 `contoso.sharepoint.de` ，) 。</li><li>保留现有网站。</li><li>由德国 Microsoft 云或 Office 365 全局服务实例中的安全令牌服务 (STS) 颁发的客户端身份验证令牌在转换期间有效。</li></ul>|<ul><li>迁移期间，内容将在两个短暂时段内为只读。 在此期间，期望 SharePoint 中显示"无法编辑内容"横幅。</li><li>不会保留搜索索引，可能需要 10 天才能重建。</li><li>迁移期间，SharePoint Online 和 OneDrive for Business 内容将在两小段时间内为只读。 在此期间，用户将短暂看到"你无法编辑内容"横幅。</li><li>SharePoint Online 迁移完成后，重建索引时，SharePoint Online 和 OneDrive for Business 内容的搜索结果可能不可用。 在此期间，搜索查询可能不会返回完整结果。 重建索引完成时，依赖搜索索引的功能（如 SharePoint Online 新闻）可能会受到影响。</li><li>SharePoint 2013 工作流将在迁移过程中中断，并且必须在迁移后重新发布。</li></ul>
 |**SPO 管理员**：重新发布 SharePoint 2013 工作流| SharePoint Online 管理员在迁移后重新发布 SharePoint 2013 工作流。|SharePoint 2013 工作流可用。
-|**PowerShell 用户**：更新到新模块| SharePoint Online Powershell 模块的所有用户都需要在 SharePoint Online 迁移完成后将模块/Microsoft.SharePointOnline.CSOM 更新到版本 16.0.20717.12000 或版本以上。 完成在消息中心中传达。| 通过 PowerShell 或客户端对象模型的 SharePoint Online 将不再失败。
+|**PowerShell 用户**：更新到新模块| SharePoint Online PowerShell 模块的所有用户都需要在 SharePoint Online 迁移完成后将模块/Microsoft.SharePointOnline.CSOM 更新到版本 16.0.20717.12000 或版本以上。 完成在消息中心中传达。| 通过 PowerShell 或客户端对象模型的 SharePoint Online 将不再失败。
 ||||
 
 其他注意事项：

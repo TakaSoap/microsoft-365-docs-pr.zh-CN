@@ -17,18 +17,18 @@ ms.collection:
 - m365solution-threatprotection
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: ea28e9c244b6b8faaeb9b1f3685d57169605cbb9
-ms.sourcegitcommit: a46532bb422ee51331f478ff50cc5444586bf6a9
+ms.openlocfilehash: 0edc3847d6b832f254c6f289355570a3a044b1f4
+ms.sourcegitcommit: e5b1a900043e2e41650ea1cbf4227043729c6053
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/09/2021
-ms.locfileid: "51650310"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52061033"
 ---
 # <a name="deploy-threat-protection-capabilities-across-microsoft-365-e5"></a>跨 Microsoft 365 E5 部署威胁防护功能
 
-此解决方案介绍了 Microsoft 365 E5 中功能强大的威胁防护功能。 阅读此解决方案可大致了解包含内容、工作方式以及如何开始在组织中部署这些功能。
+此解决方案介绍了 Microsoft 365 E5 中强大的威胁防护功能，以及这些功能为什么很重要。 阅读此解决方案，大致了解 Microsoft 365 E5 中包含的内容、威胁防护功能如何工作以及如何在组织中设置和配置威胁防护。
 
-## <a name="why-protecting-against-threats-is-important"></a>防范威胁为什么很重要 
+## <a name="why-threat-protection-is-important"></a>为什么威胁防护很重要 
 
 [恶意软件](/windows/security/threat-protection/intelligence/understanding-malware)和复杂的网络攻击（如无文件威胁）[](/windows/security/threat-protection/intelligence/fileless-threats)是常见事件。 企业需要使用有效的 IT 安全性功能来保护自己及其客户。 网络攻击可能会给组织带来严重问题，包括失去信任、财务问题、业务损失停机时间等。 防范威胁非常重要，但确定组织的时间、工作量和资源重点在哪些方面是一项挑战。 Microsoft 365 E5 可以提供帮助。 
 
