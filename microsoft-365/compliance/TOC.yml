@@ -118,8 +118,6 @@
           href: create-a-keyword-dictionary.md
         - name: 文档指纹
           href: document-fingerprinting.md
-        - name: 敏感信息的 DLP 函数
-          href: what-the-dlp-functions-look-for.md
     - name: 可训练的分类器
       items:
         - name: 了解可训练的分类器
