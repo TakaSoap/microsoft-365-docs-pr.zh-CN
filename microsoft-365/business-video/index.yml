@@ -13,72 +13,66 @@ metadata:
   ms.date: 12/16/2020
   localization_priority: Priority
   ms.custom: AdminSurgePortfolio
-  ms.openlocfilehash: 0c9ba8560c2ee64b8e0da4d14afe869006bd6ed8
-  ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
-  ms.translationtype: MT
-  ms.contentlocale: zh-CN
-  ms.lasthandoff: 04/02/2021
-  ms.locfileid: "51580566"
 productDirectory:
   items:
-  - title: 入门
-    imageSrc: https://docs.microsoft.com/office/media/icons/get-started-blue.svg
-    summary: 规划移动到 Microsoft 365 商业版。
-    url: what-is-microsoft-365.md
-  - title: 设置 Microsoft 365 商业版
-    imageSrc: https://docs.microsoft.com/office/media/icons/add-to-cloud-blue.svg
-    summary: 添加域、添加用户、设置安全策略...
-    url: sign-up.md
-  - title: 设置计算机
-    imageSrc: https://docs.microsoft.com/office/media/icons/device-desktop-download-blue.svg
-    summary: 安装 Office、设置电子邮件、迁移文件...
-    url: upgrade.md
-  - title: 设置移动设备
-    imageSrc: https://docs.microsoft.com/office/media/icons/device-mobile-download-blue.svg
-    summary: 在移动设备上安装 Office 应用。
-    url: work-from-anywhere.md
-  - title: 与其他人协作
-    imageSrc: https://docs.microsoft.com/office/media/icons/collaborate-blue.svg
-    summary: 与 Teams 中的员工和客户合作。
-    url: collab-outlook-teams.md
-  - title: 存储和共享文件
-    imageSrc: https://docs.microsoft.com/office/media/icons/cloud-storage-folder-blue.svg
-    summary: 安全地存储文件，并随时随地访问文件。
-    url: overview-file-sharing.md
-  - title: 设置商务语音
-    imageSrc: https://docs.microsoft.com/office/media/icons/call-phone-blue.svg
-    summary: 设置电话服务和会议。
-    url: business-voice.md
-  - title: 设置业务应用
-    imageSrc: https://docs.microsoft.com/office/media/icons/task-list-planning-blue.svg
-    summary: 设置并了解 Bookings、列表、任务...
-    url: overview-bookings.md
-  - title: 管理订阅
-    imageSrc: https://docs.microsoft.com/office/media/icons/settings.svg
-    summary: 管理用户、重置密码、查看帐单...
-    url: what-is-admin.md
-  - title: 管理设备
-    imageSrc: https://docs.microsoft.com/office/media/icons/devices-2-blue.svg
-    summary: 为个人和工作设备设置策略。
-    url: secure-win-10-pro-devices.md
-  - title: 保护你的企业
-    imageSrc: https://docs.microsoft.com/office/media/icons/security-blue.svg
-    summary: 设置安全性和合规性功能。
-    url: overview-m365-security.md
-  - title: 获取支持
-    imageSrc: https://docs.microsoft.com/office/media/icons/headset-blue.svg
-    summary: 获取有关 Microsoft 365 商业版的帮助。
-    url: find-help-answers.md
+    - title: 入门
+      imageSrc: 'https://docs.microsoft.com/office/media/icons/get-started-blue.svg'
+      summary: 规划移动到 Microsoft 365 商业版。
+      url: what-is-microsoft-365.md
+    - title: 设置 Microsoft 365 商业版
+      imageSrc: 'https://docs.microsoft.com/office/media/icons/add-to-cloud-blue.svg'
+      summary: 添加域、添加用户、设置安全策略...
+      url: sign-up.md
+    - title: 设置计算机
+      imageSrc: 'https://docs.microsoft.com/office/media/icons/device-desktop-download-blue.svg'
+      summary: 安装 Office、设置电子邮件、迁移文件...
+      url: upgrade.md
+    - title: 设置移动设备
+      imageSrc: 'https://docs.microsoft.com/office/media/icons/device-mobile-download-blue.svg'
+      summary: 在移动设备上安装 Office 应用。
+      url: work-from-anywhere.md
+    - title: 与其他人协作
+      imageSrc: 'https://docs.microsoft.com/office/media/icons/collaborate-blue.svg'
+      summary: 与 Teams 中的员工和客户合作。
+      url: collab-outlook-teams.md
+    - title: 存储和共享文件
+      imageSrc: 'https://docs.microsoft.com/office/media/icons/cloud-storage-folder-blue.svg'
+      summary: 安全地存储文件，并随时随地访问文件。
+      url: overview-file-sharing.md
+    - title: 设置商务语音
+      imageSrc: 'https://docs.microsoft.com/office/media/icons/call-phone-blue.svg'
+      summary: 设置电话服务和会议。
+      url: business-voice.md
+    - title: 设置业务应用
+      imageSrc: 'https://docs.microsoft.com/office/media/icons/task-list-planning-blue.svg'
+      summary: 设置并了解 Bookings、列表、任务...
+      url: overview-bookings.md
+    - title: 管理订阅
+      imageSrc: 'https://docs.microsoft.com/office/media/icons/settings.svg'
+      summary: 管理用户、重置密码、查看帐单...
+      url: what-is-admin.md
+    - title: 管理设备
+      imageSrc: 'https://docs.microsoft.com/office/media/icons/devices-2-blue.svg'
+      summary: 为个人和工作设备设置策略。
+      url: secure-win-10-pro-devices.md
+    - title: 保护你的企业
+      imageSrc: 'https://docs.microsoft.com/office/media/icons/security-blue.svg'
+      summary: 设置安全性和合规性功能。
+      url: overview-m365-security.md
+    - title: 获取支持
+      imageSrc: 'https://docs.microsoft.com/office/media/icons/headset-blue.svg'
+      summary: 获取有关 Microsoft 365 商业版的帮助。
+      url: find-help-answers.md
 additionalContent:
   sections:
-  - title: 了解详细信息
-    items:
-    - title: 了解 Office
-      summary: 了解如何使用 Word、Excel、PowerPoint 和其他 Office 应用。
-      url: https://support.microsoft.com/training
-    - title: 从 Google Workspace 切换
-      summary: 了解如何切换到 Microsoft 365 商业版。
-      url: moveto-microsoft-365/move-from-google-workspace-overview.md
-    - title: 查找更多管理员资源
-      summary: 转到 Microsoft 365 管理中心帮助网站。
-      url: ../admin/index.yml
+    - title: 了解详细信息
+      items:
+        - title: 了解 Office
+          summary: 了解如何使用 Word、Excel、PowerPoint 和其他 Office 应用。
+          url: 'https://support.microsoft.com/training'
+        - title: 获取 ITPros 培训
+          summary: 大中型企业的完整学习路径。
+          url: 'https://docs.microsoft.com/learn/m365/'
+        - title: 查找更多管理员资源
+          summary: 转到 Microsoft 365 管理中心帮助网站。
+          url: ../admin/index.yml
