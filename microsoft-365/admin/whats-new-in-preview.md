@@ -21,12 +21,12 @@ description: Microsoft 365 管理中心 - 了解本月添加的功能。
 ms.custom:
 - MACDashWhatsNew
 - AdminSurgePortfolio
-ms.openlocfilehash: 90f75b0c1ea38833325c51399108551286f55e92
-ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
+ms.openlocfilehash: b226f48edd5f65100c81e95d2026c7c172959c8d
+ms.sourcegitcommit: b169f6ad3e44a7fcebf77f43be9eb5edd84ea5ef
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52024189"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "52077307"
 ---
 # <a name="whats-new-in-the-microsoft-365-admin-center"></a>Microsoft 365 管理中心的新增功能
 
@@ -83,7 +83,7 @@ ms.locfileid: "52024189"
 
 :::image type="content" source="../media/message-center.png" alt-text="Screenshot： Message center home page showing inbox and messages":::
 
-若要了解有关新功能的信息，请查看在消息 [中心管理邮件](manage/manage-messages.md)。
+若要了解有关新功能的信息，请查看消息 [中心](manage/message-center.md)。
 
 ### <a name="whats-new-features"></a>新增功能
 
