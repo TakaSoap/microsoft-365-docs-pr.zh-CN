@@ -235,8 +235,8 @@
       items:
         - name: 了解 DLP
           items:
-            - name: 了解 DLP
-              href: data-loss-prevention-policies.md
+            - name: 了解终结点数据丢失防护
+              href: dlp-learn-about-dlp.md
             - name: 了解终结点数据丢失防护
               href: endpoint-dlp-learn-about.md
             - name: 了解 Microsoft Teams (预览版) 中的默认数据丢失防护策略
