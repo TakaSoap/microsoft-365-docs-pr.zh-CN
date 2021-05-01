@@ -12,60 +12,59 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_NonTOC
-- commerce
-ms.custom: AdminSurgePortfolio
+ms.custom:
+- AdminSurgePortfolio
+- commerce_purchase
+- PPM_jmueller
+ms.reviewer: jkinma
 search.appverid:
-- BCS160
 - MET150
-- MOE150
-- BEA160
-ms.assetid: d7138188-086e-4a54-a155-11fa953c3930
 ROBOTS: NOINDEX
-description: 了解如何激活、续订或将许可证添加到 Microsoft 365 for business 订阅。
-ms.openlocfilehash: 59235c7af5ec39ba830f77aca6170727fedf91c5
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+description: 了解如何激活、续订或向企业版订阅Microsoft 365许可证。
+ms.date: 10/21/2020
+ms.openlocfilehash: e0e317dc0917876c6299fe1eea5812b7bfe0cd8b
+ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48647875"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52107588"
 ---
 # <a name="enter-your-product-key-purchased-from-microsoft-open"></a>输入从 Microsoft Open 购买的产品密钥
 
-如果你从 [Microsoft 开放式许可证计划](https://go.microsoft.com/fwlink/p/?LinkID=613298)购买了 microsoft 365 for business，本文适用于你。 购买产品密钥的批量许可客户可以按照此主题激活、续订或向订阅添加许可证。
+如果你从 microsoft Microsoft 365[许可证](https://go.microsoft.com/fwlink/p/?LinkID=613298)计划购买了企业版证书，本文适合你。 批量许可购买产品密钥的客户可以按照本主题激活、续订或向订阅添加许可证。
   
- **是否需要立即获取帮助？** [致电 Microsoft 支持部门](../admin/contact-support-for-business-products.md) 。 
+ **立即需要帮助？** [致电 Microsoft 支持人员](../admin/contact-support-for-business-products.md) 。 
   
- **需要其他内容吗？**
+ **需要其他内容？**
  
- **有关 Microsoft 365 主页或个人的帮助**，请参阅将 [产品密钥与 Office 结合使用](https://support.microsoft.com/office/12a5763a-d45c-4685-8c95-a44500213759.aspx)。
+ **有关家庭Microsoft 365或个人** 的帮助，请参阅将产品密钥与产品 [Office。](https://support.microsoft.com/office/12a5763a-d45c-4685-8c95-a44500213759.aspx)
   
- **有关从零售商店购买的 Microsoft 365 商业标准的帮助**，请参阅 [输入从零售店购买的产品密钥](enter-your-product-key.md)。 
+ **有关从零Microsoft 365 商业标准版购买的产品的帮助**，请参阅输入从零售商店购买 [的产品密钥](enter-your-product-key.md)。 
   
-## <a name="activate-renew-or-add-licenses-to-a-subscription-purchased-from-microsoft-open"></a>激活、续订或向从 Microsoft 开放式购买的订阅中添加许可证
+## <a name="activate-renew-or-add-licenses-to-a-subscription-purchased-from-microsoft-open"></a>激活、续订或添加从 Microsoft Open 购买的订阅的许可证
 
-如果你从 Microsoft 开放式许可证计划购买了 Microsoft 365，则当你激活、续订或向订阅添加许可证时，系统会自动为你输入密钥。
+如果从 Microsoft Microsoft 365许可证计划购买许可证，系统会在您激活、续订或向订阅添加许可证时自动输入密钥。
   
-1. 从 Microsoft 365 合作伙伴购买密钥后，请在 "收件箱" 中查看来自 Microsoft 包含激活链接的电子邮件。
+1. 从合作伙伴购买密钥Microsoft 365，检查收件箱中是否包含来自 Microsoft 的包含激活链接的电子邮件。
     
     > [!TIP]
-    >  该电子邮件会发送给批量许可协议中列为联机管理员的人员。 如果你不确定谁被指定为联机管理员，请咨询你的 Microsoft 365 合作伙伴。 
+    >  该电子邮件会发送给批量许可协议中列为联机管理员的人员。 如果你不确定指定为在线管理员的人，请咨询你的Microsoft 365合作伙伴。 
   
-2. 通过电子邮件中的链接，使用工作或学校帐户登录，接受开放式许可协议并续订订阅。 有关分步演练，请下载 PDF 指南， [激活联机服务： Microsoft 365 订阅](https://go.microsoft.com/fwlink/p/?LinkId=618100)，其中介绍了如何激活新订阅、续订现有订阅或将许可证添加到现有订阅。
+2. 通过电子邮件中的链接，使用工作或学校帐户登录，接受开放式许可协议并续订订阅。 有关分步演练，请下载 PDF 指南[Activate Online Services： Microsoft 365 Subscription，](https://go.microsoft.com/fwlink/p/?LinkId=618100)其中介绍了如何激活新订阅、续订现有订阅或向现有订阅添加许可证。
     
 > [!NOTE]
-> 批量许可客户还可以选择在 [批量许可服务中心](https://go.microsoft.com/fwlink/p/?LinkID=282016)中激活订阅。 若要了解如何操作，请下载 PDF 指南[在批量许可服务中心中激活联机服务](https://go.microsoft.com/fwlink/p/?LinkId=618096)。 
+> 批量许可客户还可以选择在批量许可服务中心中 [激活订阅](https://go.microsoft.com/fwlink/p/?LinkID=282016)。 若要了解如何操作，请下载 PDF 指南[在批量许可服务中心中激活联机服务](https://go.microsoft.com/fwlink/p/?LinkId=618096)。 
   
 ## <a name="whats-next"></a>下一步做什么？
 
-如果你不熟悉 Microsoft 365 的商业版，请了解如何为 [你的组织设置 Microsoft 365](../admin/setup/setup.md)。
+如果你是第一次Microsoft 365，请了解如何为组织[设置Microsoft 365服务](../admin/setup/setup.md)。
   
-## <a name="still-having-trouble-with-product-keys"></a>是否仍遇到与产品密钥有关的问题？
+## <a name="still-having-trouble-with-product-keys"></a>仍在使用产品密钥方面遇到问题？
 
-查看以下常见错误和解决方案列表：你的 [产品密钥有问题？](product-key-errors-and-solutions.md)
+请查看此常见错误和解决方案列表： [产品密钥有问题？](product-key-errors-and-solutions.md)
   
 合作伙伴，请参阅[合作伙伴：使用产品密钥设置客户订阅](https://support.microsoft.com/office/cf22c50f-95c9-4fa2-b959-c264de256d40)。
   
 批量许可客户可以通过访问 [Microsoft 批量许可服务中心的培训和资源](https://go.microsoft.com/fwlink/p/?LinkId=618103)。
   
-或者，如果您想要与某个人交谈，请 [致电 Microsoft 支持部门](../admin/contact-support-for-business-products.md)。
+或者，如果要与某人交谈，请致电 Microsoft [支持](../admin/contact-support-for-business-products.md)人员。

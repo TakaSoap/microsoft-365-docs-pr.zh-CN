@@ -10,25 +10,31 @@ ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
-- commerce
-ms.custom: AdminSurgePortfolio
+- M365-subscription-management
+- Adm_O365
+ms.custom:
+- AdminSurgePortfolio
+- commerce_billing
+- PPM_jmueller
+ms.reviewer: tugu
 search.appverid:
 - MET150
 description: 了解计费帐户以及如何管理它们。
-ms.openlocfilehash: c2cf7584148bb846541328396885d20c00e2712a
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.date: 03/17/2021
+ms.openlocfilehash: 504811e8cdfb84569a4bc3cea021c3c37030fca7
+ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50911418"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52107576"
 ---
 # <a name="manage-billing-accounts"></a>管理计费帐户
 
-注册以试用或购买 Microsoft 产品时，会创建一个计费帐户。 使用计费帐户管理帐户设置、发票、付款方式和购买。 你可以访问多个计费帐户。 例如，你直接注册了 Microsoft 365，或者你有权访问组织的 企业协议、Microsoft 产品&服务协议或 Microsoft 客户协议。 对于其中每个方案，你将有一个单独的计费帐户。
+注册以试用或购买 Microsoft 产品时，会创建一个计费帐户。 使用计费帐户管理帐户设置、发票、付款方式和购买。 你可以访问多个计费帐户。 例如，你直接Microsoft 365注册，或者你有权访问组织的 企业协议、Microsoft 产品&服务协议或 Microsoft 客户协议。 对于其中每个方案，你将有一个单独的计费帐户。
 
-Microsoft 365 管理中心当前支持以下类型的计费帐户：
+当前Microsoft 365管理中心支持以下类型的计费帐户：
 
-- Microsoft Online Services计划：此计费帐户是在你直接注册 Microsoft 365 订阅时创建的。
+- Microsoft Online Services计划：此计费帐户是在你直接注册订阅时Microsoft 365帐户。
 - Microsoft &服务协议 (MPSA) 计划：当你的组织签署 MPSA 批量许可协议以购买软件和联机服务时，将创建此计费帐户。
 - Microsoft 客户协议：当你的组织与 Microsoft 代表、授权的合作伙伴合作或单独购买时，将创建此计费帐户。
 
@@ -43,7 +49,7 @@ Microsoft 365 管理中心当前支持以下类型的计费帐户：
 | 字段名 | 说明 |
 |------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 售达地址 | 负责付款的法律实体，在发票上标识。 除非您在购买过程中选择提供其他送货地址，否则此处提供的地址用于确定税率。 有关详细信息，请参阅[税务信息](billing-and-payments/tax-information.md)。 |
-| Segment | 一个只读字段，用于标识组织的业务 (商业、教育、政府或非营利组织) 。 |
+| 用户群 | 一个只读字段，用于标识组织的业务 (商业、教育、政府或非营利组织) 。 |
 | 帐户状态 | 一个只读字段，用于指定 Microsoft 商业帐户的状态。 |
 | 税务 ID | 如果你在美国以外，则必须提供 VAT 或本地等效项。 有关详细信息，请参阅[税务信息](billing-and-payments/tax-information.md)。 |
 | 协议 | 当通过直接购买或批量许可安排创建计费帐户时，组织会接受或签署一份概述帐户&条款的协议。 如果适用，此视图将列出协议历史记录。 如果需要接受更新后的条款，将显示"批准 **协议"** 链接。 |
@@ -63,14 +69,14 @@ Microsoft 365 管理中心当前支持以下类型的计费帐户：
 
 ## <a name="understand-access-to-billing-accounts"></a>了解对计费帐户的访问权限
 
-可以通过角色和权限为其他人提供对 Microsoft 365 管理中心中的帐单帐户的访问权限。 只有计费帐户所有者才能授予对计费帐户的访问权限。 可以将以下角色之一分配给用户：
+可以通过角色和权限为其他人提供对 Microsoft 365 帐户的访问权限。 只有计费帐户所有者才能授予对计费帐户的访问权限。 可以将以下角色之一分配给用户：
 
 - **计费帐户所有者** &mdash; 可以分配权限、编辑帐户、签署协议和查看帐户。
 - **计费帐户参与者** &mdash; 可以编辑帐户、签署协议和查看帐户。
 - **计费帐户读者** &mdash; 可查看帐户。
 
 > [!Note]
-> 计费帐户角色仅适用于计费帐户，不适用于其他 Microsoft 365 管理中心方案。
+> 计费帐户角色仅适用于计费帐户，不适用于管理中心Microsoft 365应用场景。
 
 ## <a name="related-content"></a>相关内容
 

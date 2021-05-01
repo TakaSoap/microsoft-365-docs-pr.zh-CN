@@ -10,25 +10,30 @@ ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
-- commerce
+- M365-subscription-management
+- Adm_O365
 ms.custom:
 - AdminSurgePortfolio
 - fwlink 2133922 to Delete subscription heading
+- commerce_subscription
+- PPM_jmueller
+ms.reviewer: jkinma
 search.appverid:
 - MET150
 description: 了解如何关闭 Microsoft 帐户。
-ms.openlocfilehash: 44428654946d31ad249bfd3e7a3609da3e3634a6
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.date: 04/02/2021
+ms.openlocfilehash: 4fa1366186f0a37d3319208224628332d958a0ea
+ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51860543"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52107468"
 ---
 # <a name="close-your-account"></a>关闭你的帐户
 
 当关闭你的 Microsoft 帐户时，与你的帐户相关的所有信息都将被删除。 此信息包括订阅、许可证、付款方式、用户和用户数据。
 
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>准备工作
 
 开始此过程之前，请确保备份要保留的所有数据。
 
@@ -40,11 +45,11 @@ ms.locfileid: "51860543"
 
 如果用户从本地同步，请首先关闭同步，然后使用 Azure 门户或 Azure PowerShell cmdlet 删除云目录中的用户。
 
-若要删除用户，请参阅用户 <a href="/office365/admin/add-users/delete-a-user?view=o365-worldwide#user-management-admin-delete-one-or-more-users-from-office-365">管理管理员：删除一个或多个用户</a>。
+若要删除用户，请参阅用户 [管理管理员：删除一个或多个用户](../admin/add-users/delete-a-user.md#user-management-admin-delete-one-or-more-users-from-office-365)。
 
-您还可以使用 <a href="https://docs.microsoft.com/powershell/module/msonline/remove-msoluser">Remove-MsolUser</a> PowerShell cmdlet 批量删除用户。
+您还可以使用 [Remove-MsolUser](/powershell/module/msonline/remove-msoluser) PowerShell cmdlet 批量删除用户。
 
-如果你的组织使用与 Microsoft Azure Active Directory 同步的 Active Directory (Azure AD) ，请改为从 Active Directory 中删除用户帐户。 有关说明，请参阅 <a href="/azure/active-directory/users-groups-roles/users-bulk-delete">在 Azure Active Directory</a>中批量删除用户。
+如果你的组织使用与 Azure AD Microsoft Azure Active Directory (同步的 Active Directory) ，请改为从 Active Directory 中删除用户帐户。 有关说明，请参阅批量[删除用户Azure Active Directory。](/azure/active-directory/users-groups-roles/users-bulk-delete)
 
 ## <a name="step-2-cancel-all-active-subscriptions"></a>步骤 2：取消所有活动订阅
 
@@ -64,7 +69,7 @@ ms.locfileid: "51860543"
 6. 对于每个已禁用的订阅，重复步骤 3 至 5，直到删除所有订阅。
 
 > [!NOTE]
-> 如果无法立即删除已禁用的订阅，请联系 <a href="/microsoft-365/Admin/contact-support-for-business-products" target="_blank">支持人员</a>
+> 如果无法立即删除已禁用的订阅，请联系 [支持人员](../admin/contact-support-for-business-products.md)。
 
 ## <a name="step-4-disable-multi-factor-authentication"></a>步骤 4：禁用多重身份验证
 
@@ -73,9 +78,10 @@ ms.locfileid: "51860543"
 3. 选择 **"多重身份验证"。**
 4. 在多重身份验证页面上，禁用除当前使用的全局管理员帐户之外的所有帐户。
 
-您还可以使用 <a href="/azure/active-directory/authentication/howto-mfa-userstates#change-state-using-powershell">PowerShell 为多个用户禁用多重身份验证</a>。
+您还可以使用 [PowerShell 为多个用户禁用多重身份验证](/azure/active-directory/authentication/howto-mfa-userstates#change-state-using-powershell)。
 
-## <a name="step-5-delete-the-directory-in-azure-active-directory"></a>步骤 5：删除 Azure Active Directory 中的目录
+
+## <a name="step-5-delete-the-directory-in-azure-active-directory"></a>步骤 5：删除Azure Active Directory
 
 1. 使用全局管理员帐户登录到 <a href="https://aad.portal.azure.com/" target="_blank">Azure AD</a> 管理中心。
 2. 选择 **Azure Active Directory**。

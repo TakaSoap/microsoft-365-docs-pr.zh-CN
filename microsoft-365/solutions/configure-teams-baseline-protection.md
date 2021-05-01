@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: 了解如何部署具有基线保护级别的团队。
-ms.openlocfilehash: 728a41bd521ed32c57c981be576e46eaee344099
-ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
+ms.openlocfilehash: db1a58fd06a62240cbcfcc74f83ba6196f33df80
+ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51222739"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52114290"
 ---
 # <a name="configure-teams-with-baseline-protection"></a>配置具有基线保护的团队
 
@@ -96,7 +96,7 @@ Microsoft 365 提供了其他用于保护内容的方法。 考虑以下选项�
 
 - 让来宾同意[使用条款](/azure/active-directory/conditional-access/terms-of-use)。
 - 为来宾用户配置“[会话超时策略](/azure/active-directory/conditional-access/howto-conditional-access-session-lifetime)”。
-- 创建“[敏感信息类型](../compliance/sensitive-information-type-learn-about.md)”，并使用“[数据丢失保护](../compliance/data-loss-prevention-policies.md)”来设置有关访问敏感信息的策略。
+- 创建“[敏感信息类型](../compliance/sensitive-information-type-learn-about.md)”，并使用“[数据丢失保护](../compliance/dlp-learn-about-dlp.md)”来设置有关访问敏感信息的策略。
 
 ## <a name="see-also"></a>另请参阅
 

@@ -21,24 +21,24 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 0b0bd900-68b1-4bf5-808b-5d240a7739f4
-description: '了解如何将多个电子邮件地址（称为电子邮件别名）与 Microsoft 365 商业版帐户关联。 '
-ms.openlocfilehash: 4003dcfca29a722ccdf9b86cca5aa1141fbdb367
-ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
+description: '了解如何将多个电子邮件地址（称为电子邮件别名）与适用于Microsoft 365相关联。 '
+ms.openlocfilehash: 00e1c55edfcfa9937ab6a18b4bf268adb858b775
+ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51892801"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52107118"
 ---
 # <a name="add-another-email-alias-for-a-user"></a>为用户添加另一个电子邮件别名
   
-本文适用于具有商业版订阅的 Microsoft 365 管理员。 不适用于家庭用户。
+本文适用于Microsoft 365订阅的管理员。 不适用于家庭用户。
   
-Microsoft 365 中的主要电子邮件地址通常是用户创建帐户时分配的电子邮件地址。 当用户向其他人发送电子邮件时，其主要电子邮件地址通常在电子邮件应用的" *发件人*  "字段中显示。 他们还可以将多个电子邮件地址与其 Microsoft 365 商业版帐户关联。 其他地址称为别名。 
+用户邮箱中Microsoft 365电子邮件地址通常是用户创建帐户时分配的电子邮件地址。 当用户向其他人发送电子邮件时，其主要电子邮件地址通常在电子邮件应用的" *发件人*  "字段中显示。 他们还可以将多个电子邮件地址与其企业帐户Microsoft 365关联。 其他地址称为别名。 
   
 例如，假设 Jenna 的电子邮件地址是 jenna@contosoco.com，但是她还想在 jen@contosoco.com 接收电子邮件，因为有人通过该姓名引用她。 你可以为她创建别名，以便两个电子邮件地址都转到 Jenna 的收件箱。
 <br><br>  
   
-最多可为一个用户创建 400 个别名。 无需其他费用或许可证。
+最多可为一个用户创建 400 个别名。无需其他费用或许可证。
   
 > [!Tip]
 > 如果希望多个用户管理发送到单个电子邮件地址（如 info@NodPublishers.com 或 sales@NodPublishers.com）的电子邮件，请创建共享邮箱。 若要了解更多信息，请参阅 [创建共享邮箱](create-a-shared-mailbox.md)。
@@ -53,7 +53,7 @@ Microsoft 365 中的主要电子邮件地址通常是用户创建帐户时分配
 
 1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。
 
-2. 在" **活动用户"** 页上，选择"管理> **别名"的用户**。 如果用户未分配许可证，则看不到此选项。 
+2. 在" **活动用户"** 页上，选择"管理> **和电子邮件"的用户**。 如果用户未分配许可证，则看不到此选项。 
     
 3. 选择 **+ 添加别名** ，然后输入用户的新别名。   
     
@@ -65,17 +65,17 @@ Microsoft 365 中的主要电子邮件地址通常是用户创建帐户时分配
     > 如果从 GoDaddy 或另一合作伙伴购买订阅，则必须转到 GoDaddy/合作伙伴管理控制台，才能将新别名设置为主要。 
   
     > [!TIP]
-    > 电子邮件别名必须以下拉列表中的域结尾。 若要向列表中添加其他域名，请参阅将域[添加到 Microsoft 365。](../setup/add-domain.md) 
+    > 电子邮件别名必须以下拉列表中的域结尾。 若要向列表中添加其他域名，请参阅将[域添加到Microsoft 365。](../setup/add-domain.md) 
   
      
 5. 完成后，选择"保存 **更改"。**
     
-6. 等待 24 小时，以在整个 Microsoft 365 中填充新的别名。
+6. 请等待 24 小时，以在整个过程中填充Microsoft 365。
     
     用户现在将具有主地址和别名。 例如，发送到 Eliza Hoffman 的主地址、Eliza@NodPublishers.com 和别名 Sales@NodPublishers.com 的所有邮件都将发送到 Eliza 的收件箱。
     
   
-7. **当用户答复时，" *发送* 者"地址将取决于其 Outlook 客户端。Outlook 网页应用将使用收到电子邮件的别名 (我们将此称为 ping- 一) 。Outlook 桌面将使用她的主要电子邮件别名。** 例如，假设有一封邮件发送到 Sales@NodPublishers.com，并到达吉萨的收件箱。 当 Eliza 使用 Outlook 桌面答复邮件时，她的主要电子邮件地址将显示为 Eliza@NodPublishers.com，而不是 Sales@NodPublishers.com。
+7. **当用户回复时，"*发送* 者"地址将取决于她Outlook客户端。Outlook Web 上的用户将使用收到电子邮件的别名 (我们将此称为 ping- 一) 。Outlook桌面将使用她的主要电子邮件别名。** 例如，假设有一封邮件发送到 Sales@NodPublishers.com，并到达吉萨的收件箱。 当 Eliza 使用桌面Outlook邮件时，她的主要电子邮件地址将显示为 Eliza@NodPublishers.com，而不是 Sales@NodPublishers.com。
     
 ::: moniker-end
 
@@ -97,16 +97,16 @@ Microsoft 365 中的主要电子邮件地址通常是用户创建帐户时分配
     > 如果从 GoDaddy 或另一合作伙伴购买订阅，则必须转到 GoDaddy/合作伙伴管理控制台，才能将新别名设置为主要。 
   
     > [!TIP]
-    > 电子邮件别名必须以下拉列表中的域结尾。 若要向列表中添加其他域名，请参阅将域[添加到 Microsoft 365。](../setup/add-domain.md) 
+    > 电子邮件别名必须以下拉列表中的域结尾。 若要向列表中添加其他域名，请参阅将[域添加到Microsoft 365。](../setup/add-domain.md) 
 
 5. 完成后，选择“**保存**”。
 
-6. 等待 24 小时，以在整个 Microsoft 365 中填充新的别名。 
+6. 请等待 24 小时，以在整个过程中填充Microsoft 365。 
     
     用户现在将具有主地址和别名。 例如，发送到 Eliza Hoffman 的主地址、Eliza@NodPublishers.com 和别名 Sales@NodPublishers.com 的所有邮件都将发送到 Eliza 的收件箱。
     
   
-7. **当用户答复时，" *发送* 者"地址将取决于其 Outlook 客户端。Outlook 网页应用将使用收到电子邮件的别名 (我们将此称为 ping- 一) 。Outlook 桌面将使用她的主要电子邮件别名。** 例如，假设有一封邮件发送到 Sales@NodPublishers.com，并到达吉萨的收件箱。 当 Eliza 使用 Outlook 桌面答复邮件时，她的主要电子邮件地址将显示为 Eliza@NodPublishers.com，而不是 Sales@NodPublishers.com。
+7. **当用户回复时，"*发送* 者"地址将取决于她Outlook客户端。Outlook Web 上的用户将使用收到电子邮件的别名 (我们将此称为 ping- 一) 。Outlook桌面将使用她的主要电子邮件别名。** 例如，假设有一封邮件发送到 Sales@NodPublishers.com，并到达吉萨的收件箱。 当 Eliza 使用桌面Outlook邮件时，她的主要电子邮件地址将显示为 Eliza@NodPublishers.com，而不是 Sales@NodPublishers.com。
 
 ::: moniker-end
 
@@ -128,16 +128,16 @@ Microsoft 365 中的主要电子邮件地址通常是用户创建帐户时分配
     > 如果从 GoDaddy 或另一合作伙伴购买订阅，则必须转到 GoDaddy/合作伙伴管理控制台，才能将新别名设置为主要。 
   
     > [!TIP]
-    > 电子邮件别名必须以下拉列表中的域结尾。 若要向列表中添加其他域名，请参阅将域[添加到 Microsoft 365。](../setup/add-domain.md) 
+    > 电子邮件别名必须以下拉列表中的域结尾。 若要向列表中添加其他域名，请参阅将[域添加到Microsoft 365。](../setup/add-domain.md) 
 
 5. 完成后，选择“**保存**”。
 
-6. 等待 24 小时，以在整个 Microsoft 365 中填充新的别名。 
+6. 请等待 24 小时，以在整个过程中填充Microsoft 365。 
     
     用户现在将具有主地址和别名。 例如，发送到 Eliza Hoffman 的主地址、Eliza@NodPublishers.com 和别名 Sales@NodPublishers.com 的所有邮件都将发送到 Eliza 的收件箱。
     
   
-7. **当用户答复时，" *发送* 者"地址将取决于其 Outlook 客户端。Outlook 网页应用将使用收到电子邮件的别名 (我们将此称为 ping- 一) 。Outlook 桌面将使用她的主要电子邮件别名。** 例如，假设有一封邮件发送到 Sales@NodPublishers.com，并到达吉萨的收件箱。 当 Eliza 使用 Outlook 桌面答复邮件时，她的主要电子邮件地址将显示为 Eliza@NodPublishers.com，而不是 Sales@NodPublishers.com。
+7. **当用户回复时，"*发送* 者"地址将取决于她Outlook客户端。Outlook Web 上的用户将使用收到电子邮件的别名 (我们将此称为 ping- 一) 。Outlook桌面将使用她的主要电子邮件别名。** 例如，假设有一封邮件发送到 Sales@NodPublishers.com，并到达吉萨的收件箱。 当 Eliza 使用桌面Outlook邮件时，她的主要电子邮件地址将显示为 Eliza@NodPublishers.com，而不是 Sales@NodPublishers.com。
 
 ::: moniker-end
 
@@ -154,7 +154,7 @@ Microsoft 365 中的主要电子邮件地址通常是用户创建帐户时分配
 
 ## <a name="sending-email-from-the-proxy-address-easily"></a>轻松地从代理地址发送电子邮件
 
-2021 年 4 月推出一项新功能，允许用户在使用 Outlook 网页时轻松从别名发送邮件。 当功能推出到租户管理员使用 cmdlet 的租赁时，租户内的用户将有权访问复选框列表，其中每个条目对应于其 Outlook 设置中的别名。 `Set-OrganizationConfig -SendFromAliasEnabled $true` 选择别名将使其出现在"撰写"窗体的"自"下拉列表中。
+2021 年 4 月推出一项新功能，允许用户在使用 Web 上的 Outlook轻松发送别名。 当功能推出到租户管理员使用 cmdlet 的租赁时，租户内的用户将有权访问复选框列表，其中每个条目对应其 Outlook 设置中的别名。 `Set-OrganizationConfig -SendFromAliasEnabled $true` 选择别名将使其出现在"撰写"窗体的"自"下拉列表中。
   
 ## <a name="related-articles"></a>相关文章
 

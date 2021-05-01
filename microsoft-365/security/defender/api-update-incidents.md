@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 549f9bf2b9dc2ea5d1c734a809ad10a168c8123e
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: d6872a7a4b1b2d2c131066076af02a65b4ef6d8a
+ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51054604"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52107600"
 ---
 # <a name="update-incidents-api"></a>更新事件 API
 
@@ -55,7 +55,7 @@ ms.locfileid: "51054604"
 
 权限类型 | 权限 | 权限显示名称
 -|-|-
-Application | Incident.ReadWrite.All | 读取和写入所有事件
+应用程序 | Incident.ReadWrite.All | 读取和写入所有事件
 委派（工作或学校帐户） | Incident.ReadWrite | 读取和写入事件
 
 > [!NOTE]
@@ -71,7 +71,7 @@ PATCH /api/incidents/{id}
 
 名称 | 类型 | 说明
 -|-|-
-Authorization | String | Bearer {token}。 **必需**。
+Authorization | 字符串 | Bearer {token}。 **必需**。
 Content-Type | String | application/json. **必需**。
 
 ## <a name="request-body"></a>请求正文
@@ -80,10 +80,10 @@ Content-Type | String | application/json. **必需**。
 
 属性 | 类型 | 说明
 -|-|-
-状态 | 枚举 | 指定警报的当前状态。 可能的值是 ```Active``` ：、 ```Resolved``` 和 ```Redirected``` 。
+状态 | 枚举 | 指定事件的当前状态。 可能的值是 ```Active``` ：、 ```Resolved``` 和 ```Redirected``` 。
 assignedTo | string | 事件的所有者。
-classification | 枚举 | 警报的规范。 可取值为：```Unknown```、```FalsePositive```、```TruePositive```。
-确定 | 枚举 | 指定警报的确定。 可取值为：```NotAvailable```、```Apt```、```Malware```、```SecurityPersonnel```、```SecurityTesting```、```UnwantedSoftware``` 或 ```Other```。
+classification | 枚举 | 事件的规范。 可取值为：```Unknown```、```FalsePositive```、```TruePositive```。
+确定 | 枚举 | 指定事件的确定。 可取值为：```NotAvailable```、```Apt```、```Malware```、```SecurityPersonnel```、```SecurityTesting```、```UnwantedSoftware``` 或 ```Other```。
 tags | 字符串列表 | 事件标记列表。
 
 ## <a name="response"></a>响应

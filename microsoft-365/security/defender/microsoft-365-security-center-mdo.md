@@ -1,7 +1,7 @@
 ---
 title: Microsoft 365 安全中心中适用于 Office 365 的 Microsoft Defender
 description: 了解从 Office 365 安全与合规中心到 Microsoft 365 安全中心的更改。
-keywords: Microsoft 365 安全中心入门，Microsoft 365 安全中心，适用于 Office 365 的 Microsoft Defender，适用于终结点的 Microsoft Defender，MDO，MDE，单窗格的门户，新的安全门户，新的 Defender 安全门户
+keywords: Microsoft 365安全， Microsoft 365 安全中心入门， Microsoft Defender for Office 365， Microsoft Defender for Endpoint， MDO， MDE， 单窗格的门户， 新安全门户， 新 Defender 安全门户
 ms.date: 02/21/2021
 ms.author: tracyp
 author: msfttracyp
@@ -17,12 +17,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.prod: m365-security
 ms.technology: m365d
-ms.openlocfilehash: b5decd562509d134899b85b380791087a913cd58
-ms.sourcegitcommit: 682ed2c4e2bc6979025cdb89094866cef6c8751a
+ms.openlocfilehash: a0ab671f879119c1ab490bcb726f08224e59bfdd
+ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "51943061"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52114408"
 ---
 # <a name="microsoft-defender-for-office-365-in-the-microsoft-365-security-center"></a>Microsoft 365 安全中心中适用于 Office 365 的 Microsoft Defender
 
@@ -66,7 +66,7 @@ ms.locfileid: "51943061"
 > Microsoft 365 安全门户 （https://security.microsoft.com) ） 将 https://securitycenter.windows.com和 https://protection.office.com。 但是，所看到的内容取决于你的订阅。 例如，如果只有适用于 Office 365 计划 1 或 2 的 Microsoft Defender，作为独立订阅，你将看不到终结点安全与适用于 Office 计划 1 的 Defender 客户不会看到威胁分析等项目。
 
 > [!TIP]
->  所有 Exchange Online Protection (EOP) 功能都将包含在 Microsoft 365 安全中心中，因为 EOP 是 Defender for Office 365 的核心元素。
+>  所有Exchange Online Protection (EOP) 功能都将包含在安全中心Microsoft 365，因为 EOP 是 Defender for Office 365 的核心元素。
 
 ## <a name="microsoft-365-security-center-home-page"></a>Microsoft 365 安全中心主页
 
@@ -74,7 +74,7 @@ ms.locfileid: "51943061"
 
 - 安全评分评级
 - 已承担风险的用户和设备的数量
-- 活动事件列表
+- 活动事件队列
 - 特权的 OAuth 应用列表
 - 设备运行状况数据
 - 从 Microsoft 的安全智能 Twitter 源发送推文

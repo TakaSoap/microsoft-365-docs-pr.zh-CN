@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 组、Teams 和 SharePoint 协作的合规性选项
+title: 用于组Microsoft 365、Teams和SharePoint的合规性选项
 ms.reviewer: ''
 ms.author: mikeplum
 author: MikePlumleyMSFT
@@ -14,32 +14,32 @@ ms.collection:
 ms.custom:
 - M365solutions
 f1.keywords: NOCSH
-description: 了解 Microsoft 365 组、Teams 和 SharePoint 协作的合规性选项。
-ms.openlocfilehash: 5006f0cf9f7eb174082d4fc2508bf112864fcba3
-ms.sourcegitcommit: 1c53f114a810e7aaa2dc876b84d66348492ea36c
+description: 了解组、Microsoft 365和Teams的合规性SharePoint选项。
+ms.openlocfilehash: 92b668c5cbf5d105ccd1373a6ef8550400e4539f
+ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51899348"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52114024"
 ---
-# <a name="compliance-options-for-microsoft-365-groups-teams-and-sharepoint-collaboration"></a>Microsoft 365 组、Teams 和 SharePoint 协作的合规性选项
+# <a name="compliance-options-for-microsoft-365-groups-teams-and-sharepoint-collaboration"></a>用于组Microsoft 365、Teams和SharePoint的合规性选项
 
-Microsoft 365 提供了一整套工具来在用户协作时保持合规性。 查看这些选项，并考虑它们如何映射到业务需求、数据的敏感度以及用户需要协作的用户范围。
+Microsoft 365提供了一整套工具来在用户协作时保持合规性。 查看这些选项，并考虑它们如何映射到业务需求、数据的敏感度以及用户需要协作的用户范围。
 
-下表提供了 Microsoft 365 中提供的合规性控件的快速参考。 以下各节提供了进一步的信息。
+下表提供了一个快速参考，以快速了解 Microsoft 365。 以下各节提供了进一步的信息。
 
 |类别|说明|参考|
 |:-------|:----------|:--------|
 |信息保留|||
-||保留组邮件和 SharePoint 内容|[了解 SharePoint 和 OneDrive 的保留策略](../compliance/retention-policies-sharepoint.md)|
+||保留组邮件和SharePoint内容|[了解 SharePoint 和 OneDrive 的保留策略](../compliance/retention-policies-sharepoint.md)|
 ||保留聊天和消息|[了解 Microsoft Teams 的保留策略](../compliance/retention-policies-teams.md)|
 |信息分类|||
 ||对组和团队进行分类|[使用敏感度标签保护 Microsoft Teams、Microsoft 365 组和 SharePoint 网站中的内容](../compliance/sensitivity-labels-teams-groups-sites.md)|
 ||自动对敏感内容进行分类|[将敏感度标签自动应用于内容](../compliance/apply-sensitivity-label-automatically.md)|
 ||加密敏感内容|[通过敏感度标签应用加密，从而限制对内容的访问](../compliance/encryption-sensitivity-labels.md)|
 |信息保护|||
-||防止丢失敏感信息|[数据丢失防护概述](../compliance/data-loss-prevention-policies.md)|
-||保护聊天中的敏感信息。|[数据丢失防护和 Microsoft Teams](../compliance/dlp-microsoft-teams.md)|
+||防止丢失敏感信息|[了解数据丢失防护](../compliance/dlp-learn-about-dlp.md)|
+||保护聊天中的敏感信息。|[数据丢失保护和 Microsoft Teams](../compliance/dlp-microsoft-teams.md)|
 ||定义组织的敏感信息|[自定义敏感信息类型](../compliance/sensitive-information-type-learn-about.md)|
 |用户细分|||
 ||限制用户区段之间的通信|[信息屏障](../compliance/information-barriers.md)|
@@ -48,11 +48,11 @@ Microsoft 365 提供了一整套工具来在用户协作时保持合规性。 �
 
 保留策略可用于保留或删除用于组和团队中协作的项目，包括文件、邮件和邮件。 可以将策略设置为保留和删除、仅保留或仅删除。 如果组或团队过期或被删除，保留策略涵盖的信息将受到保护。
 
-为 Microsoft 365 组配置保留策略涵盖组邮箱以及关联的 SharePoint 网站和文件。
+为组配置保留Microsoft 365策略涵盖组邮箱以及与网站和SharePoint关联的组。
 
 - [了解 SharePoint 和 OneDrive 的保留策略](../compliance/retention-policies-sharepoint.md)
 
-Teams 的保留策略保留聊天和频道消息。 当聊天和频道消息存储在 Exchange 邮箱中时，它们不受 Exchange 保留策略的影响。 必须将保留策略设置为应用于 Teams 聊天和 Teams 频道消息。 
+聊天和Teams消息的保留策略。 虽然聊天和频道消息存储在Exchange中，但不受保留策略Exchange的影响。 必须将保留策略设置为应用于Teams聊天和Teams消息。 
 
 即使删除了用户帐户，用户聊天也无限期保留。 如果您不想无限期保留此数据，请考虑使用保留策略在指定的时间后删除用户聊天，或将此删除操作包括在用户删除过程中。
 
@@ -60,13 +60,13 @@ Teams 的保留策略保留聊天和频道消息。 当聊天和频道消息存�
 
 - [Microsoft Teams 中的保留策略](/microsoftteams/retention-policies)
 
-可以将单个保留策略设置为应用于 Teams 聊天和 Teams 频道消息。 
+可以将单个保留策略设置为应用于Teams聊天和Teams消息。 
 
 其他资源：
 
 - [了解有关保留策略的信息](../compliance/retention.md)
 
-- Exchange[中的保留标记和](/exchange/security-and-compliance/messaging-records-management/retention-tags-and-policies)保留策略
+- [保留标记和保留策略在](/exchange/security-and-compliance/messaging-records-management/retention-tags-and-policies)Exchange
 
 ## <a name="information-classification"></a>信息分类
 
@@ -74,7 +74,7 @@ Teams 的保留策略保留聊天和频道消息。 当聊天和频道消息存�
 
 - [使用敏感度标签保护 Microsoft Teams、Microsoft 365 组和 SharePoint 网站中的内容](../compliance/sensitivity-labels-teams-groups-sites.md)
 
-你可以配置 Microsoft 365，以根据指定的条件将敏感度标签自动应用于文件和电子邮件，包括检测敏感信息类型或模式与可训练分类器匹配。
+你可以配置Microsoft 365，以根据指定的条件将敏感度标签自动应用于文件和电子邮件，包括检测敏感信息类型或模式与可训练分类器匹配。
 
 - [将敏感度标签自动应用于内容](../compliance/apply-sensitivity-label-automatically.md)
 
@@ -91,13 +91,13 @@ Teams 的保留策略保留聊天和频道消息。 当聊天和频道消息存�
 
 ## <a name="information-protection"></a>信息保护
 
-DLP 策略可以防止在 SharePoint、Exchange 和 Teams 之间意外共享敏感信息。 可以创建策略来指定要执行 (操作，例如) 一组规则阻止访问。
+DLP 策略可以防止在用户、用户和SharePoint之间Exchange敏感信息Teams。 可以创建策略来指定要执行 (操作，例如) 一组规则阻止访问。
 
-- [数据丢失防护概述](../compliance/data-loss-prevention-policies.md)
+- [了解数据丢失防护](../compliance/dlp-learn-about-dlp.md)
 
-Teams 中的 DLP 可以通过删除包含敏感信息的消息来帮助保护 Teams 聊天和频道消息中的敏感信息。
+dlp in Teams can help protect sensitive information in Teams chat and channel messages by deleting messages that contain sensitive information.
 
-- [数据丢失防护和 Microsoft Teams](../compliance/dlp-microsoft-teams.md)
+- [数据丢失保护和 Microsoft Teams](../compliance/dlp-microsoft-teams.md)
 
 如果您有组织特有的敏感信息（如项目代码名称），您可以创建自己的敏感信息类型，并应用于 DLP 策略以保护组、团队和 Sharepoint 中的内容。
 
@@ -111,7 +111,7 @@ Teams 中的 DLP 可以通过删除包含敏感信息的消息来帮助保护 Te
 
 - [Microsoft Teams 中的信息屏障](/microsoftteams/information-barriers-in-teams)
 
-- [在 SharePoint 中使用信息屏障](/sharepoint/information-barriers)
+- [使用信息屏障SharePoint](/sharepoint/information-barriers)
 
 ## <a name="related-topics"></a>相关主题
 

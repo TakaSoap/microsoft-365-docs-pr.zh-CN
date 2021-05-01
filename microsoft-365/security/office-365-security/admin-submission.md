@@ -19,12 +19,12 @@ ms.custom:
 description: 管理员可以了解如何使用安全 & 合规中心中的提交门户将可疑电子邮件、可疑钓鱼邮件、垃圾邮件和其他可能有害的邮件、URL 和文件提交给 Microsoft 进行扫描。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e0975d5b6c2d29c94a30f7bbc703221b80217761
-ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
+ms.openlocfilehash: d0b91808aa9008f467f66b8200f2c05a120fbcd9
+ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "51599871"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52107226"
 ---
 # <a name="use-admin-submission-to-submit-suspected-spam-phish-urls-and-files-to-microsoft"></a>使用“管理员提交”将可疑的垃圾邮件、网络钓鱼诈骗、URL和文件提交给 Microsoft
 
@@ -35,7 +35,7 @@ ms.locfileid: "51599871"
 - [Microsoft Defender for Office 365 计划 1 和计划 2](defender-for-office-365.md)
 
 
-在具有 Exchange Online 邮箱的 Microsoft 365 组织中，管理员可以使用安全 & 合规中心中的提交门户将电子邮件、URL 和附件提交到 Microsoft 进行扫描。
+在Microsoft 365 Exchange Online组织中，管理员可以使用安全 & 合规中心中的提交门户将电子邮件、URL 和附件提交到 Microsoft 进行扫描。
 
 当你提交电子邮件时，你得到：
 
@@ -57,7 +57,7 @@ ms.locfileid: "51599871"
 
   - **安全与****合规中心** 中的组织&[或安全读者](permissions-in-the-security-and-compliance-center.md)。
 
-  - **Exchange** Online 中的 [组织管理](/Exchange/permissions-exo/permissions-exo#role-groups)。
+  - **组织管理** 中的 [Exchange Online。](/Exchange/permissions-exo/permissions-exo#role-groups)
 
     请注意，查看自定义邮箱的用户提交需要此角色组的 [成员身份，如](#view-user-submissions-to-the-custom-mailbox) 本文稍后所述。
 
@@ -73,12 +73,12 @@ ms.locfileid: "51599871"
 
 1. 在"**对象类型"部分**，选择"**电子邮件"。** 在" **提交格式"** 部分，使用以下选项之一：
 
-   - **网络邮件 ID：** 这是一个 GUID 值，在邮件的 **X-MS-Exchange-Organization-Network-Message-Id** 头中或在隔离邮件的 **X-MS-Office365-Filtering-Correlation-Id 头** 中可用。
+   - 网络邮件 **ID：** 这是一个 GUID 值，可在邮件的 **X-MS-Exchange-Organization-Network-Message-Id** 头中或在隔离邮件的 **X-MS-Office365-Filtering-Correlation-Id** 头中提供。
 
    - **文件**：单击 **"选择文件"。** 在打开的对话框中，查找并选择 .eml 或 .msg 文件，然后单击"打开 **"。**
 
    > [!NOTE]
-   > 针对 Office 365 客户的 Defender，提交 30 天以上的邮件功能已暂时暂停。 管理员只能返回 7 天。
+   > 针对客户，针对 Defender 提交 30 天的邮件Office 365暂时暂停。 管理员只能返回 7 天。
 
 2. 在 **"收件人"** 部分，指定要针对其运行策略检查的一个或多个收件人。 策略检查将确定电子邮件是否由于用户或组织策略而绕过扫描。
 
@@ -90,7 +90,7 @@ ms.locfileid: "51599871"
 
 4. 完成后，单击"提交 **"** 按钮。
 
-   ![URL 提交示例](../../media/submission-flyout-email.PNG)
+   ![新 URL 提交示例](../../media/submission-flyout-email.PNG)
 
 ### <a name="send-a-suspect-url-to-microsoft"></a>向 Microsoft 发送可疑 URL
 
@@ -104,7 +104,7 @@ ms.locfileid: "51599871"
 
 3. 完成后，单击"提交 **"** 按钮。
 
-   ![电子邮件提交示例](../../media/submission-url-flyout.png)
+   ![新电子邮件提交示例](../../media/submission-url-flyout.png)
 
 ### <a name="submit-a-suspected-file-to-microsoft"></a>将可疑文件提交给 Microsoft
 
@@ -120,7 +120,7 @@ ms.locfileid: "51599871"
 
 4. 完成后，单击"提交 **"** 按钮。
 
-   ![附件提交示例](../../media/submission-file-flyout.PNG)
+   ![新附件提交示例](../../media/submission-file-flyout.PNG)
 
 ## <a name="view-items-submitted-for-analysis"></a>查看提交用于分析的项目
 
@@ -134,11 +134,11 @@ In the Security & Compliance Center， go to **Threat management** \> **Submissi
 - **主题/URL/文件名**
 - **提交者**
 - **提交类型**
-- **Status**
+- **状态**
 
-![管理员提交的筛选器选项](../../media/admin-submission-email-filter-options.png)
+![管理员提交的新筛选器选项](../../media/admin-submission-email-filter-options.png)
 
-若要导出结果，请单击页面 **顶部附近的**"导出"，然后选择"**图表数据**"或"表 **"。** 在出现的对话框中，保存 .csv 文件。
+若要导出结果，请单击页面 **顶部附近的**"导出"，然后选择"**图表数据**"或"表 **"。** 在出现的对话框中，保存.csv文件。
 
 在图形下方，有三个选项卡："电子邮件" (默认 **) 、URL** 和 **"附件"。**
 
@@ -203,7 +203,7 @@ You can click the **Column options** button near of the bottom of the page to ad
 
 ## <a name="view-user-submissions-to-microsoft"></a>查看向 Microsoft 提交用户
 
-如果已部署报告邮件外接程序、[](enable-the-report-message-add-in.md)报告网络钓鱼外接程序或用户使用 Outlook [](enable-the-report-phish-add-in.md)[网页](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md)中的内置报告，您可以在"用户提交"选项卡上查看报告哪些用户。 
+如果已部署报告邮件外接程序、[](enable-the-report-message-add-in.md)报告网络钓鱼外接程序或用户使用 Outlook [](enable-the-report-phish-add-in.md)[网页](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md)中的内置报告，可以在"用户提交"选项卡上查看报告哪些用户。 
 
 1. 在安全与&中心中，转到"**威胁管理** \> **提交"。**
 
@@ -225,14 +225,14 @@ You can click the **Column options** button near of the bottom of the page to ad
 若要更改筛选条件，请单击"发件人 **"** 按钮并选择下列值之一：
 
 - **发件人域**
-- **Subject**
+- **主题**
 - **提交者**
 - **提交类型**
 - **发件人 IP**
 
-![用户提交的筛选器选项](../../media/user-submissions-filter-options.png)
+![用户提交的新筛选器选项](../../media/user-submissions-filter-options.png)
 
-若要导出结果，请单击页面 **顶部附近的**"导出"，然后选择"**图表数据**"或"表 **"。** 在出现的对话框中，保存 .csv 文件。
+若要导出结果，请单击页面 **顶部附近的**"导出"，然后选择"**图表数据**"或"表 **"。** 在出现的对话框中，保存.csv文件。
 
 ## <a name="view-user-submissions-to-the-custom-mailbox"></a>查看自定义邮箱的用户提交
 
@@ -253,7 +253,7 @@ You can click the **Column options** button near of the bottom of the page to ad
 
 在页面顶部附近，可以输入开始日期、结束日期，并且可以通过在框中输入值并单击"刷新"按钮来按"提交 ![ "进行筛选 ](../../media/scc-quarantine-refresh.png) 。 Update
 
-若要导出结果，请单击页面 **顶部附近的**"导出"，然后选择"**图表数据**"或"表 **"。** 在出现的对话框中，保存 .csv 文件。
+若要导出结果，请单击页面 **顶部附近的**"导出"，然后选择"**图表数据**"或"表 **"。** 在出现的对话框中，保存.csv文件。
 
 > [!NOTE]
 > 如果组织配置为仅发送到自定义邮箱，将不会发送报告的邮件进行重新扫描，并且用户报告的邮件门户中的结果将始终为空。
@@ -266,11 +266,11 @@ You can click the **Column options** button near of the bottom of the page to ad
 
 如果已配置自定义邮箱，以截获用户报告的邮件，而不将邮件发送到 Microsoft，您可以查找特定邮件并将其发送给 Microsoft 进行分析。 这有效地将用户提交移动到管理员提交。
 
-在"**自定义邮箱**"选项卡上，在列表中选择一封邮件，单击"操作"按钮，然后进行以下选择之一：
+在"**用户报告的邮件"** 选项卡上，在列表中选择一封邮件，单击"操作"按钮，然后进行以下选择之一：
 
 - **报告干净**
 - **报告网络钓鱼**
 - **报告恶意软件**
 - **报告垃圾邮件**
 
-!["操作"按钮上的选项](../../media/user-submission-custom-mailbox-action-button.png)
+!["操作"按钮上的"新建选项"](../../media/user-submission-custom-mailbox-action-button.png)

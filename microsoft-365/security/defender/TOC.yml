@@ -82,7 +82,7 @@
               href: microsoft-secure-score-whats-coming.md
             - name: 最近更新
               href: microsoft-secure-score-whats-new.md
-    - name: 调查和响应威胁
+    - name: 调查并响应威胁
       items:
         - name: 事件
           items:
@@ -100,6 +100,24 @@
                   href: investigate-alerts.md
                 - name: 分析用户
                   href: investigate-users.md
+                - name: 响应你的第一个事件
+                  items:
+                    - name: 简介
+                      href: first-incident-overview.md
+                    - name: 准备
+                      href: first-incident-prepare.md
+                    - name: 步骤 1. 会审和分析
+                      href: first-incident-analyze.md
+                    - name: 步骤 2. 修正
+                      href: first-incident-remediate.md
+                    - name: 步骤 3. 审阅
+                      href: first-incident-post.md
+                    - name: 其他事件示例
+                      items:
+                        - name: 钓鱼电子邮件
+                          href: first-incident-path-phishing.md
+                        - name: Identity
+                          href: first-incident-path-identity.md
             - name: 获取电子邮件通知
               href: get-incident-notifications.md
         - name: 自动调查和响应

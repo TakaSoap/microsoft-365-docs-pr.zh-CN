@@ -1,5 +1,5 @@
 ---
-title: 适用于墨西哥的 Microsoft 365 for business 的帐单信息
+title: 墨西哥商业Microsoft 365计费信息
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -12,56 +12,58 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- commerce
 search.appverid:
 - MET150
-description: 了解特定于墨西哥的 Microsoft 365 for business 的信息。
+description: 了解专为墨西哥Microsoft 365企业的信息。
 ms.custom:
 - AdminSurgePortfolio
-- Commerce
+- commerce_billing
+- PPM_jmueller
+ms.reviewer: jkinma
 monikerRange: o365-worldwide
-ms.openlocfilehash: ea6a60d205c7fbe91b35b22b7ec7b3ee51715444
-ms.sourcegitcommit: 20d1158c54a5058093eb8aac23d7e4dc68054688
+ms.date: 11/20/2020
+ms.openlocfilehash: ace8712718dc960f846bd366c8e8dbb7b074f428
+ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "49376289"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52107178"
 ---
-# <a name="billing-information-for-microsoft-365-for-business-in-mexico"></a>适用于墨西哥的 Microsoft 365 for business 的帐单信息
+# <a name="billing-information-for-microsoft-365-for-business-in-mexico"></a>墨西哥商业Microsoft 365计费信息
 
-## <a name="1-where-can-i-get-an-invoice-for-my-microsoft-365-for-business-purchase"></a>1. 我可以在哪里获取 Microsoft 365 for business purchase 的发票？
+## <a name="1-where-can-i-get-an-invoice-for-my-microsoft-365-for-business-purchase"></a>1. 在哪里可以获取我的商业Microsoft 365发票？
 
-确认购买后，发票将发送到注册的帐单通知电子邮件地址24小时。 若要在 Microsoft 365 管理中心下载发票，请转到 **帐单**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">& 付款</a>页。
+你的发票在确认购买后 24 小时发送到已注册的帐单通知电子邮件地址。 若要在管理中心下载Microsoft 365，请转到"帐单""帐单&  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">付款"</a>页面。
 
 > [!IMPORTANT]
-> 如果您希望发票包含 RFC，则必须在购买确认之前添加它。
+> 如果希望发票包含 RFC，则必须在购买确认之前添加它。
 
-## <a name="2-how-can-i-add-my-rfc-registro-federal-de-contribuyentes-to-the-invoice-i-get-for-the-purchase-of-microsoft-365-for-business"></a>2. 如何将 RFC (Registro 联邦 de Contribuyentes) 添加到购买 Microsoft 365 for business 的发票？
+## <a name="2-how-can-i-add-my-rfc-registro-federal-de-contribuyentes-to-the-invoice-i-get-for-the-purchase-of-microsoft-365-for-business"></a>2. 如何将 RFC (Registro Federal de Contribuyentes) 添加到我为购买 Microsoft 365 for business 而获取的发票？
 
-### <a name="during-the-purchase-process-checkout"></a>在采购过程中 (签出) 
+### <a name="during-the-purchase-process-checkout"></a>在购买过程中 (签出) 
 
-当您转到步骤4时，在结帐购买过程中 **。付款和帐单**，请选中此框以输入 RFC。 此步骤是必需的，以便您可以看到它在采购发票中反映出来。
+在结帐购买过程中，到达步骤 **4 时。付款和计费**，选择用于输入 RFC 的框。 此步骤是必需的，以便你可以看到它反映在购买发票中。
 
-### <a name="for-your-future-purchases"></a>对于将来的购买
+### <a name="for-your-future-purchases"></a>供你将来购买
 
-您可以添加或修改 RFC，以便在将来的 Microsoft 365 中反映出用于商业购买的信息。 若要添加或修改您的 RFC，请转到 "**记帐**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2084771" target="_blank">记帐帐户</a>" 页。
+可以添加或修改 RFC，以便信息反映在将来的Microsoft 365购买中。 若要添加或修改 RFC，请转到"计费 **计费**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2084771" target="_blank">帐户"</a>页面。
 
 > [!NOTE]
-> 如果你正在使用每月或每年定期计费订阅，则将在下一费用的发票上反映对 RFC 的添加或修改。
+> 如果你使用按月或按年定期计费订阅，则 RFC 的添加或修改将反映在下一费用的发票上。
 
-## <a name="3-can-i-add-or-modify-my-rfc-to-an-invoice-that-was-already-generated"></a>3. 我是否可以向已生成的发票添加或修改我的 RFC？
+## <a name="3-can-i-add-or-modify-my-rfc-to-an-invoice-that-was-already-generated"></a>3. 能否将 RFC 添加到已经生成的发票中或修改？
 
-在进行购买之前，请务必添加或修改您的 RFC。 生成 Microsoft 365 的商业发票后，不能添加或修改 RFC 信息。
+请务必在购买之前添加或修改 RFC。 在生成适用于Microsoft 365发票后，你无法添加或修改 RFC 信息。
 
-## <a name="4-why-dont-i-get-a-cfdi-comprobante-fiscal-digital-por-internet"></a>4. 为什么我无法获取 CFDI (Comprobante 会计数字 por Internet) ？
+## <a name="4-why-dont-i-get-a-cfdi-comprobante-fiscal-digital-por-internet"></a>4. 为什么我未获得" ("会计数字""Internet) ？
 
-Microsoft Corporation （作为美国的税内居民）仅能根据司法辖区发布发票，而无义务提供 CFDI 电子发票。
+Microsoft Corporation 作为居住在美国的税务人员，仅能根据管辖法律签发发票，并且不必提供一个 MICROSOFTI 电子发票。
 
-## <a name="5-is-the-invoice-i-receive-valid-for-my-accounting-operations-in-mexico"></a>5. 我收到的来自墨西哥的记帐操作的发票是否有效？
+## <a name="5-is-the-invoice-i-receive-valid-for-my-accounting-operations-in-mexico"></a>5. 我收到的发票是否对墨西哥的会计操作有效？
 
-由外国实体生成的发票 (在本例中，Microsoft Corporation) ，其中包括针对墨西哥的税收目的的相应 RFC。  (我们建议咨询你的会计，了解详细信息) 。
+本例中，由 (实体生成的包含各自 RFC) Microsoft Corporation 生成的发票对墨西哥税务用途有效。  (建议咨询会计，了解) 。
 
 ## <a name="related-content"></a>相关内容
 
-[查看帐单或发票](view-your-bill-or-invoice.md) (文章) \
-[了解你的帐单或发票 For Microsoft 365 for business](understand-your-invoice2.md) (文章) 
+[查看帐单或发票](view-your-bill-or-invoice.md)（文章）\
+[了解适用于企业Microsoft 365帐单 (发票](understand-your-invoice2.md)) 

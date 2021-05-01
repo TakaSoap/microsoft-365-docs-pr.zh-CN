@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 15ee02d90e81c48bf5ec718e669bf8f88f6424ff
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 12ff9834e2853c1745c20847f869bc2cba4e082e
+ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934773"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52114266"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-linux-with-ansible"></a>使用 Ansible 在 Linux 上部署 Microsoft Defender for Endpoint
 
@@ -49,13 +49,13 @@ ms.locfileid: "51934773"
 
 此外，对于 Ansible 部署，您需要熟悉 Ansible 管理任务，配置了 Ansible，并知道如何部署操作手册和任务。 Ansible 有很多方法可以完成同一任务。 这些说明假定受支持的 Ansible 模块（例如 *，贴* 切和未 *存档* ）的可用性，以帮助部署程序包。 您的组织可能使用不同的工作流。 有关详细信息，请参阅 [Ansible](https://docs.ansible.com/) 文档。
 
-- 必须至少有一台计算机安装一个 (我们将它称为主计算机) 。
-- 必须在主计算机和所有客户端之间为管理员帐户配置 SSH，建议使用公钥身份验证配置 SSH。
-- 必须在所有客户端上安装以下软件：
+- Ansible 需要至少安装在一 (Ansible 调用此控件节点) 。
+- 必须在控制节点和将在其上安装 Defender for Endpoint 的所有托管节点 (设备之间为管理员帐户配置 SSH) ，建议使用公钥身份验证进行配置。
+- 必须在所有托管节点上安装以下软件：
   - 一个
   - python-apt
 
-- 所有主机都必须在 或相关文件中以 `/etc/ansible/hosts` 以下格式列出：
+- 所有托管节点都必须在 或相关文件中以 `/etc/ansible/hosts` 以下格式列出：
 
     ```bash
     [servers]
@@ -71,9 +71,9 @@ ms.locfileid: "51934773"
 
 ## <a name="download-the-onboarding-package"></a>下载载入程序包
 
-从 Microsoft Defender 安全中心下载载入程序包：
+从以下网站下载载入Microsoft Defender 安全中心：
 
-1. 在 Microsoft Defender 安全中心中，转到"设备>**设置>载入"。**
+1. In Microsoft Defender 安全中心， go to **设置 > Device Management > Onboarding**.
 2. 在"第一个"下拉菜单中，选择 **"Linux Server"** 作为操作系统。 In the second drop-down menu， select **Your preferred Linux configuration management tool** as the deployment method.
 3. 选择 **下载载入程序包**。 将文件另存为WindowsDefenderATPOnboardingPackage.zip。
 

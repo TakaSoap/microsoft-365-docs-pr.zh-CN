@@ -14,17 +14,20 @@ ms.collection:
 - Adm_O365
 search.appverid:
 - MET150
-description: 了解购买 Microsoft 产品或服务时注册号码和审查不足的通知。
 ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
-- commerce
-ms.openlocfilehash: 9f6489425a924c15d1a5cddb8c9a7d3d7812e5f0
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+- commerce_purchase
+- PPM_jmueller
+ms.reviewer: drjones
+description: 了解购买 Microsoft 产品或服务时注册号码和审查不足的通知。
+ms.date: 03/17/2021
+ms.openlocfilehash: 25302ce9481fba146d4fcda5fe72c31b5126fd08
+ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51930229"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52107396"
 ---
 # <a name="about-registration-numbers-and-under-review-notifications"></a>关于注册号码和审核通知
 
@@ -68,7 +71,7 @@ ms.locfileid: "51930229"
 
 下表包含为每个国家/地区收集的注册号码示例。  如果列出了多个 ID，则只需要一个。
 
-| “国家或地区” | 详细信息 |  |  |  |  |
+| 国家或地区 | 详细信息 |  |  |  |  |
 |:--|:--|:--|:--|:--|:--|
 | **亚美尼亚** | INN – 税务标识号<br>VAT 号码 – 也称为 VAT 注册号码。 这是标识注册 VAT 的业务 (或) 税务实体的应纳税人员的唯一编号。<br>公共服务号码 |  |  | |  |
 | **Azerbaijan（阿塞拜疆）**  | [TIN](http://www.oecd.org/tax/automatic-exchange/crs-implementation-and-assistance/tax-identification-numbers/Azerbaijan-TIN.pdf) – 税务标识号<br>INN – 税务标识号 |  |  |  |  |

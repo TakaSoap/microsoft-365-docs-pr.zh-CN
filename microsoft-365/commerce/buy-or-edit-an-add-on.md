@@ -14,21 +14,24 @@ ms.collection:
 - Adm_O365
 search.appverid:
 - MET150
-description: 了解如何购买和管理 Microsoft 365 商业版订阅的加载项。
 ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
-- Commerce
-ms.openlocfilehash: b470fb727ed55ba066cd0371e2e707c72b50ae99
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+- commerce_purchase
+- PPM_jmueller
+ms.reviewer: jkinma
+description: 了解如何购买和管理适用于企业订阅的 Microsoft 365 加载项。
+ms.date: 04/02/2021
+ms.openlocfilehash: c0b5a76f8690c64723782640738ac3817bc64714
+ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51576921"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52107432"
 ---
 # <a name="buy-or-manage-add-ons"></a>购买或管理加载项
 
-许多 Microsoft 365 商业版计划都有可购买订阅的加载项。 加载项提供了更多功能来增强你的订阅体验。
+许多Microsoft 365商业版计划都有可购买订阅的加载项。 加载项提供了更多功能来增强你的订阅体验。
 
 加载项有两种类型：
 

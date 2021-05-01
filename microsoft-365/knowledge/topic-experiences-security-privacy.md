@@ -10,18 +10,18 @@ ms.service: o365-administration
 search.appverid: MET150
 localization_priority: Normal
 description: 了解如何规划 Microsoft Viva 主题安全和隐私
-ms.openlocfilehash: 91d0d5c25502a1938976b9457f8a5dafc6ab957b
-ms.sourcegitcommit: 3d3c446d5e2e90369be1339dd0a33e71432fbc36
+ms.openlocfilehash: 587b6a2921e7d1a3cc8d4ab663ff199fdd36871d
+ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "50994542"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52114058"
 ---
 # <a name="microsoft-viva-topics-security-and-privacy"></a>Microsoft Viva 主题安全和隐私
 
-主题使用 Microsoft 365 中的现有内容安全功能和管理控件来控制向组织用户显示哪些 AI 生成的内容。 它是 Microsoft 365 安全设置和 (网站、文件和文件夹权限) 主题管理员设置的组合，确定给定用户可以在主题中看到的内容。
+主题使用组织中现有的内容安全功能Microsoft 365管理控件，以控制向组织用户显示哪些 AI 生成的内容。 它是网站Microsoft 365安全设置 (网站、文件和文件夹) 和主题管理员设置的组合，确定给定用户可以在主题中看到的内容。
 
-设置主题不会修改组织中内容的任何现有访问控制。 用户只能看到已有权访问哪些内容。
+设置主题不会修改组织中对于内容的任何现有访问控制。 用户将只能查看有权访问的内容。
 
 本文介绍了主题从安全角度的工作方式，以及知识管理员和知识管理员控制主题可见性时必须选择的选项。 阅读本文作为规划主题 [的一部分](plan-topic-experiences.md)。
 
@@ -60,15 +60,15 @@ ms.locfileid: "50994542"
 
 ## <a name="best-practices"></a>最佳做法
 
-主题根据用户现有的内容权限向用户显示信息。 Microsoft 365 提供了多种方式来确保敏感内容仅限于适当的用户。 除了标准团队或网站权限之外，您还可以使用敏感度标签或数据丢失防护[](../compliance/data-loss-prevention-policies.md)来限制对内容和访问评审的访问，以[](/azure/active-directory/governance/access-reviews-overview)定期检查用户对敏感信息的访问。 [](../compliance/sensitivity-labels.md)
+主题根据用户现有的内容权限向用户显示信息。 Microsoft 365提供了多种方式来确保敏感内容仅限于适当的用户。 除了标准团队或网站权限之外，您还可以使用敏感度标签或数据丢失防护[](../compliance/dlp-learn-about-dlp.md)来限制对内容和访问评审的访问，以[](/azure/active-directory/governance/access-reviews-overview)定期检查用户对敏感信息的访问。 [](../compliance/sensitivity-labels.md)
 
-建议您使用这些工具来确保在组织内部正确设置内容权限。 然后，主题体验可以为用户提供有用且合适的信息。
+建议您使用这些工具来确保在组织内部正确设置内容权限。 然后，主题体验可以为用户提供有用的适当信息。
 
 如果要将主题完全从主题体验中排除，还可以：
 
-- [从主题发现 中排除敏感 SharePoint 网站](topic-experiences-discovery.md#select-sharepoint-topic-sources)。 这些网站中的内容不会显示在主题体验中。
+- [从主题发现 SharePoint敏感网站](topic-experiences-discovery.md#select-sharepoint-topic-sources)。 这些网站的内容不会出现在主题经验中。
 
-- [按名称排除主题](topic-experiences-discovery.md#exclude-topics-by-name)。 明确排除的主题不会显示在主题体验中。
+- [按名称排除主题](topic-experiences-discovery.md#exclude-topics-by-name)。 明确排除的主题将不会出现在主题体验中。
 
 - 使知识经理删除主题中心中的主题。
 
@@ -78,9 +78,9 @@ ms.locfileid: "50994542"
 
 - 设置用于请求更改的工作流。 知识经理、工作组或网站所有者应具有一个流程，当在组织中启动新项目或当他们发现内容具有不适当的权限设置时，他们可以请求排除主题或网站。
 
-- 创建主题说明时，请注意访问群体和信息敏感性。 对于没有主题源内容权限的用户，这些说明可能可见。
+- 在创建主题描述时要注意受众和信息的敏感度。 这些描述可能对没有权限访问该主题源内容的用户可见。
 
-虽然您可以更改单个主题页面上的权限以将访问权限缩小到特定的一组用户，但我们不建议使用这种方法，因为需要执行很高的管理工作。
+虽然可以改变个别主题页面的权限，以缩小对特定用户群的访问范围，但我们不推荐这种方法，因为这需要高度的管理工作量。
 
 ## <a name="see-also"></a>另请参阅
 
