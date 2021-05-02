@@ -17,18 +17,18 @@ ms.custom:
 localization_priority: Priority
 f1.keywords: NOCSH
 description: 在本文中，你将了解与身份未经验证的用户共享文件和文件夹的最佳做法。
-ms.openlocfilehash: acc825a8fc445d224fbc91dd12dace2a5e1b25c8
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 1e696611d37cd1b57f881457025464dccea54496
+ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51199521"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52114314"
 ---
 # <a name="best-practices-for-sharing-files-and-folders-with-unauthenticated-users"></a>有关与身份未经验证用户共享文件和文件夹的最佳做法
 
 未经身份验证共享（*任何人* 链接）非常方便，在各种情景中都很有用。 *任何人* 链接是最简单的共享方式：用户无需身份验证即可打开链接，并可将其自由传递给其他人。
 
-通常情况下，并非组织中的所有内容都适合未经身份验证共享。 本文介绍了一些可用选项，这些选项可帮助你创建一个环境，让你的用户能在其中未经身份验证共享文件和文件夹，但其中也有安全措施来帮助你保护组织的内容。
+通常，并非组织内容所有内容都适用于未经身份验证的共享。本文介绍了可用来帮助创建一个环境的选项，在这个环境中，用户可以使用未经身份验证的文件和文件夹共享，但同时也有安全措施帮助保护组织的内容。
 
 > [!NOTE]
 > 若要正常使用未经身份验证共享功能，必须为你的组织以及要使用的各个网站或团队启用该功能。 对于你希望启用该功能的情景，请参阅[与组织外部人员协作](collaborate-with-people-outside-your-organization.md)。
@@ -103,7 +103,7 @@ ms.locfileid: "51199521"
 
 ## <a name="prevent-unauthenticated-sharing-of-sensitive-content"></a>阻止未经身份验证共享敏感内容
 
-可使用 [数据丢失防护（DLP）](../compliance/data-loss-prevention-policies.md) 阻止未经身份验证共享敏感内容。 数据丢失防护可以根据文件的敏感度标签、保留标签或文件本身中的敏感信息采取措施。
+可使用 [数据丢失防护（DLP）](../compliance/dlp-learn-about-dlp.md) 阻止未经身份验证共享敏感内容。 数据丢失防护可以根据文件的敏感度标签、保留标签或文件本身中的敏感信息采取措施。
 
 创建 DLP 规则
 1. 在 Microsoft 365 合规性管理中心中，转到“[数据丢失防护页面](https://compliance.microsoft.com/datalossprevention)”。

@@ -17,12 +17,12 @@ ms.custom:
 localization_priority: Priority
 f1.keywords: NOCSH
 description: 了解可用于在 Microsoft 365 中创建安全来宾共享环境的选项，提供来宾访问以改进协作。
-ms.openlocfilehash: 0eb999d48bc0976d7c2bb32ff1bdba8d63409d81
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: a04ee4a96b5e9124ca94a4ece16c32ccc6b072d1
+ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50918462"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52114302"
 ---
 # <a name="create-a-secure-guest-sharing-environment"></a>创建安全的来宾共享环境
 
@@ -72,7 +72,7 @@ ms.locfileid: "50918462"
 
 在某些情况中，来宾可能未与贵组织签署保密协议或其他法律协议。 你可以要求来宾在访问与之共享的文件之前同意使用条款。 可在他们首次尝试访问共享文件或网站时显示使用条款。
 
-若要创建使用条款，首先需要在 Word 或其他创作程序中创建文档，然后将其另存为 pdf 文件。 然后，可将该文件上传到 Azure AD。
+若要创建使用条款，首先需要在 Word 或其他创作程序中创建文档，然后将其另存为 .pdf 文件。之后可将此文件上传到 Azure AD。
 
 创建 Azure AD 使用条款
 
@@ -256,7 +256,7 @@ ms.locfileid: "50918462"
 
 ## <a name="create-a-dlp-policy-to-remove-guest-access-to-highly-sensitive-files"></a>创建 DLP 策略以删除来宾对高度敏感文件的访问
 
-可使用 [数据丢失防护（DLP）](../compliance/data-loss-prevention-policies.md) 阻止不需要的敏感内容访客共享。 数据丢失防护可以根据文件的敏感度标签采取措施并删除来宾访问权限。
+可使用 [数据丢失防护（DLP）](../compliance/dlp-learn-about-dlp.md) 阻止不需要的敏感内容访客共享。 数据丢失防护可以根据文件的敏感度标签采取措施并删除来宾访问权限。
 
 创建 DLP 规则
 
