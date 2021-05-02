@@ -12,46 +12,65 @@ localization_priority: Priority
 ms.collection:
 - M365-subscription-management
 - Adm_O365_Setup
-- Adm_O365_TOC
 ms.custom:
 - okr_smb
 - AdminSurgePortfolio
-- manage_licenses
 search.appverid:
 - MET150
 description: 了解如何同时添加用户和为 Microsoft 365 分配许可证。
 ms.date: 07/01/2020
-ms.openlocfilehash: 97b7118f4052d4ab4e0ffe8ecec96f32e4042108
-ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
+ms.openlocfilehash: 6a1361d9cfebd2b305a71248fcbb461d0a68a052
+ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52024009"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52107082"
 ---
 # <a name="add-users-and-assign-licenses-at-the-same-time"></a>同时添加用户和分配许可证
 
-团队中的每个人都需要用户帐户，然后他们才能登录和访问 [Microsoft 365 商业版](https://www.microsoft.com/microsoft-365/business)。 添加用户帐户的最简单方法是在 Microsoft 365 管理中心一次添加一个帐户。 执行此步骤后，你的用户拥有 Microsoft 365 许可证、登录凭据和 Microsoft 365 邮箱。
+团队中的每个人都需要一个用户账户，然后才能登录和访问 [Microsoft 365 商业版](https://www.microsoft.com/microsoft-365/business)。添加用户账户的最简单方法是在 Microsoft 365 管理中心中逐一添加。在完成该步骤后，用户就拥有了 Microsoft 365 的许可证、登录凭证和 Microsoft 365 邮箱。
 
 ## <a name="before-you-begin"></a>开始之前
 
 你必须是全局管理员、许可证管理员或用户管理员才能添加用户并分配许可证。 有关详细信息，请参阅 [关于管理员角色](../../admin/add-users/about-admin-roles.md)。
 
-## <a name="watch-add-users-in-the-admin-center"></a>观看：在管理中心中添加用户
+## <a name="add-a-user-in-the-admin-simplified-view"></a>在管理员简化视图中添加用户
+
+如果在管理中心看到此页面，则位于 **管理员简化视图** 上。 请按照以下步骤添加用户。
+
+:::image type="content" source="../../media/vsb-add-user-view.png" alt-text="屏幕截图: 简化管理中心视图":::
+
+1. 请转到位于 <https://admin.microsoft.com> 的管理中心。
+2. 选择 **“为其他人员创建账户”**。
+3. 在 **“添加用户帐户”** 页面，填写要用于登录的名字和姓氏、显示名称以及用户名。
+4. 在 **“最多 5 个电子邮件地址”** 文本框中添加用户电子邮件地址。 这将确保新用户获得其登录 Microsoft 365 服务时所需的信息。
+5. 若要保存此信息，请选择 **“添加用户”** 和 **“下载登录信息”**。
+
+## <a name="watch-add-users-in-the-dashboard-view"></a>监视: 在仪表板视图中添加用户
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOfN?autoplay=false]
 
 > [!NOTE]
 > 视频中使用的步骤显示添加用户的不同起点，但剩余步骤与以下程序相同。
 
-## <a name="add-users-one-at-a-time"></a>逐个添加用户
+## <a name="add-users-one-at-a-time-in-the-dashboard-view"></a>在仪表板视图中一次添加一个用户
 
  ::: moniker range="o365-worldwide"
 
-1. 转到位于 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> 的管理中心。
+:::image type="content" source="../../media/classic-admin-center.png" alt-text="屏幕截图: 管理中心仪表板视图":::
 
-::: moniker-end
+1. 转到位于 <https://admin.microsoft.com> 的管理中心。
+2. 转到“**用户**”>“**活动用户**”，然后选择“**添加用户**”。
+3. 在“**设置基本信息**”窗格中，填写基本用户信息，然后选择“**下一步**”。
+    - **姓名** 填写名字和姓氏、显示名和用户名。
+    - **域** 为用户的账户选择域。例如，如果用户的用户名是 Jakob，且该域为 contoso.com，他们将通过使用 jakob@contoso.com。
+    - **密码设置** 选择使用自动生成的密码或为用户创建你自己的强密码。
+    - 用户必须在 90 天后更改密码。 也可以选择 **要求此用户在首次登录时更改其密码**。
+    - 选择是否希望添加用户时通过电子邮件发送密码。
+4. 在“**分配产品许可证**”窗格中，为用户选择位置和相应的许可证。 如果没有可用的许可证，仍然可以添加用户并购买其他许可证。 展开“**应用**”并选择或取消选择应用，以限制用户拥有许可证的应用。 选择“**下一步**”。
+5. 在“**可选设置**”窗格中，展开“**角色**”以使此用户成为管理员。展开“**个人资料信息**”以添加有关用户的其他信息。
+6. 选择“**下一步**”，查看新用户的设置，按自己的喜好更改，然后依次选择“**完成添加**”和“**关闭**”。
 
-::: moniker range="o365-germany"
 
 1. 转到位于 <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">https://portal.office.de</a> 的管理中心。
 
@@ -66,7 +85,7 @@ ms.locfileid: "52024009"
 2. 转到“**用户**” > “**活动用户**”，然后选择“**添加用户**”。
 3. 在“**设置基本信息**”窗格中，填写基本用户信息，然后选择“**下一步**”。
     - **姓名** 填写名字和姓氏、显示名和用户名。
-    - **域** 为用户帐户选择域。 例如，如果用户的用户名是 Jakob，并且该域为 contoso.com，他们将通过使用 jakob@contoso.com 登录。
+    - **域** 为用户的账户选择域。例如，如果用户的用户名是 Jakob，且该域为 contoso.com，他们将通过使用 jakob@contoso.com。
     - **密码设置** 选择使用自动生成的密码或为用户创建你自己的强密码。
     - 用户必须在 90 天后更改密码。 也可以选择 **要求此用户在首次登录时更改其密码**。
     - 选择是否希望添加用户时通过电子邮件发送密码。
