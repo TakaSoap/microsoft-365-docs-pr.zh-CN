@@ -15,12 +15,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: 了解如何创建具有唯一敏感度标签的团队来保证安全。
-ms.openlocfilehash: 7c9b770c712d2468369482ba3a6256e57f621f74
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 4d305e952d48d42afffe91466121c67621aa9d85
+ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51042682"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52113398"
 ---
 # <a name="configure-a-team-with-security-isolation"></a>配置具有安全隔离的团队
 
@@ -60,8 +60,8 @@ ms.locfileid: "51042682"
 ## <a name="initial-protections"></a>初始保护
 
 为了帮助保护对团队及其基础 SharePoint 网站的访问，请查看以下最佳做法：
-- [标识和设备访问策略](../security/defender-365-security/identity-access-policies.md)
-- [SharePoint Online 访问策略](../security/defender-365-security/sharepoint-file-access-policies.md)
+- [标识和设备访问策略](../security/office-365-security/identity-access-policies.md)
+- [SharePoint Online 访问策略](../security/office-365-security/sharepoint-file-access-policies.md)
 - [部署具有基线保护的团队](configure-teams-baseline-protection.md)
 
 ## <a name="guest-sharing"></a>来宾共享
@@ -111,7 +111,7 @@ ms.locfileid: "51042682"
 1. 打开 [Microsoft 365 合规中心](https://compliance.microsoft.com)。
 2. 在“**解决方案**”下，单击“**信息保护**”。
 3. 单击“**创建标签**”。
-4. 为标签命名。 我们建议以你将要使用的团队为其命名。
+4. 为标签命名。我们建议以你将要使用的团队为其命名。
 5. 添加显示名称和说明，然后单击“**下一步**”。
 6. 在“**定义此标签页的搜索范围**”中，选择“**文件和电子邮件**”和“**组和站点**”，然后单击“**下一步**”。
 7. 在“**选择文件和电子邮件的保护设置**”页面中，选择“**加密文件和电子邮件**”，然后单击“**下一步**”。
@@ -231,7 +231,7 @@ Microsoft 365 提供了其他用于保护内容的方法。 考虑以下选项�
 
 - 让你的来宾用户同意[使用条款](/azure/active-directory/conditional-access/terms-of-use)。
 - 为来宾用户配置“[会话超时策略](/azure/active-directory/conditional-access/howto-conditional-access-session-lifetime)”。
-- 创建“[敏感信息类型](../compliance/sensitive-information-type-learn-about.md)”，并使用“[数据丢失保护](../compliance/data-loss-prevention-policies.md)”来设置有关访问敏感信息的策略。
+- 创建“[敏感信息类型](../compliance/sensitive-information-type-learn-about.md)”，并使用“[数据丢失保护](../compliance/dlp-learn-about-dlp.md)”来设置有关访问敏感信息的策略。
 - 使用 [Azure Active Directory 访问](/azure/active-directory/governance/access-reviews-overview)审核，定期审核团队访问权限和成员资格。
 
 ## <a name="drive-user-adoption-for-team-members"></a>驱动团队成员的用户采用
