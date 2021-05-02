@@ -40,6 +40,8 @@
       href: ../admin/manage/remove-licenses-from-users.md
     - name: 将用户移动到其他订阅
       href: subscriptions/move-users-different-subscription.md
+    - name: Manage third-party app licenses
+      href: licenses/manage-third-party-app-licenses.md
     - name: 管理自动声明策略
       href: licenses/manage-auto-claim-policies.md
     - name: 了解订阅和许可证
