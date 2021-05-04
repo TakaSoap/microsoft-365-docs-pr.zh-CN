@@ -1,5 +1,5 @@
 ---
-title: '了解 Microsoft Teams (预览版中的默认数据丢失) '
+title: 了解 Microsoft Teams (预览版) 中的默认数据丢失防护策略
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -14,21 +14,21 @@ ms.collection:
 - M365-security-compliance
 search.appverid:
 - MET150
-description: 了解 Microsoft Teams 中的默认数据丢失防护策略
-ms.openlocfilehash: 3992daf9431dbd87ed5e947a1e5a2b0acd20edce
-ms.sourcegitcommit: 450661071e44854f0a0a92af648f76d907767b71
+description: 了解默认数据丢失防护策略Microsoft Teams
+ms.openlocfilehash: 0663c370373708009346d4f858729e17436f0f62
+ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "50826223"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52114140"
 ---
-# <a name="learn-about-the-default-data-loss-prevention-policy-in-microsoft-teams-preview"></a>了解 Microsoft Teams (预览版中的默认数据丢失) 
+# <a name="learn-about-the-default-data-loss-prevention-policy-in-microsoft-teams-preview"></a>了解 Microsoft Teams (预览版) 中的默认数据丢失防护策略
 
-[数据丢失防护](data-loss-prevention-policies.md) (DLP) 功能已扩展为包括 Microsoft Teams 聊天和频道消息，包括私人频道消息。 作为此版本的一部分，我们为首次使用合规性中心的客户创建了默认 DLP 策略。
+[数据丢失防护](dlp-learn-about-dlp.md)功能已扩展为包括Microsoft Teams消息，包括私人频道消息。 作为此版本的一部分，我们为首次使用合规性中心的客户创建了默认 DLP 策略。
 
 ## <a name="applies-to"></a>适用于
 
-通过以下一个或多个许可证获得许可并拥有活动 Teams 用户的任何租户
+通过以下一个或多个许可证获得许可并拥有活动许可证Teams租户
  
 - ME5、 
 - MA5、 
@@ -47,7 +47,7 @@ ms.locfileid: "50826223"
 
 
 > [!div class="mx-imgBorder"]
-> ![默认 Teams DLP 策略](../media/default-teams-dlp-policy.png)
+> ![默认Teams DLP 策略](../media/default-teams-dlp-policy.png)
 
 ## <a name="edit-or-delete-the-default-policy"></a>编辑或删除默认策略
 

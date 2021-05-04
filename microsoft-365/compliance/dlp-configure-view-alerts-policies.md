@@ -1,5 +1,5 @@
 ---
-title: 配置和查看 DLP 策略的警报（预览）
+title: 配置和查看数据丢失防护策略警报
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -19,23 +19,25 @@ search.appverid:
 - MET150
 ms.custom:
 - seo-marvel-apr2020
-description: 了解如何定义和管理 DLP 策略的警报。
-ms.openlocfilehash: 0594cee5208049aef16dee6fa03954faae2a1cdd
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+description: 了解如何定义和管理数据丢失防护策略的警报。
+ms.openlocfilehash: ee04f6080edcde86dc39c7f4aa43130223fee8bf
+ms.sourcegitcommit: 07dea2aa98daf0c4086f8590375167830027c802
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50917858"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51750034"
 ---
-# <a name="configure-and-view-alerts-for-dlp-polices-preview"></a>配置和查看 DLP 策略警报 (预览) 
+# <a name="configure-and-view-alerts-for-data-loss-prevention-polices"></a>配置和查看数据丢失防护策略警报
 
-本文演示如何定义 DLP 策略中链接到数据丢失防护的丰富警报 (DLP) 策略。 你将了解如何使用 [Microsoft 365](https://compliance.microsoft.com/) 合规中心中的新 DLP 警报管理仪表板查看 DLP 策略违反的警报、事件和相关元数据。
+DLP 策略 (数据丢失) 采取保护措施，防止意外共享敏感项目。 对敏感项目采取操作时，可以通过配置 DLP 警报来通知您。 本文演示如何定义 DLP 策略中链接到数据丢失防护的丰富警报 (DLP) 策略。 你将了解如何使用 Microsoft 365 合规中心中的新 DLP 警报管理仪表板查看 DLP 策略违反的[警报、](https://compliance.microsoft.com/)事件和关联元数据。
+
+<!-- LEFT OFF HERE-->
 
 ## <a name="features"></a>功能
 
-以下功能是此预览的一部分：
+以下功能是以下功能的一部分：
 
--   **DLP 警报管理仪表板**：在 [Microsoft 365](https://compliance.microsoft.com/)合规中心中，此仪表板显示对以下工作负载强制执行的 DLP 策略的警报：
+-   **DLP 警报管理仪表板**：在 [](https://compliance.microsoft.com/)Microsoft 365 合规中心中，此仪表板显示对以下工作负载强制执行的 DLP 策略的警报：
 
     -   Exchange
     -   SharePoint
@@ -54,9 +56,9 @@ ms.locfileid: "50917858"
 
 ### <a name="licensing-for-the-dlp-alert-management-dashboard"></a>DLP 警报管理仪表板的许可
 
-Office 365 DLP 的所有符合条件的租户都可以访问新的 DLP 警报管理仪表板。 To get started， you should be eligible for Office 365 DLP for Exchange Online， SharePoint Online， and OneDrive for Business. 有关 Office 365 DLP 的许可要求详细信息，请参阅哪些许可证为用户提供从服务中获益[的权利？。](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#which-licenses-provide-the-rights-for-a-user-to-benefit-from-the-service-16)
+DLP 的所有符合条件的租户Office 365新的 DLP 警报管理仪表板。 若要开始，你应该有资格使用 Office 365 DLP Exchange Online SharePoint Online 和 OneDrive for Business。 有关 DLP 的许可要求Office 365，请参阅哪些许可证为用户提供从服务中获益[的权利？。](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#which-licenses-provide-the-rights-for-a-user-to-benefit-from-the-service-16)
 
-参与 Endpoint [DLP](./endpoint-dlp-learn-about.md?view=o365-worldwide) 公共预览版或符合 [Teams DLP](./dlp-microsoft-teams.md?view=o365-worldwide) 条件的客户将在 DLP 警报管理仪表板中查看其终结点 DLP 策略警报和 Teams DLP 策略警报。
+使用符合[使用 DLP](endpoint-dlp-learn-about.md)条件Teams终结点[DLP](dlp-microsoft-teams.md)的客户将在 DLP 警报管理仪表板中Teams终结点 DLP 策略警报和 DLP 策略警报。
 
 ### <a name="licensing-for-alert-configuration-options"></a>警报配置选项的许可
 
@@ -66,7 +68,7 @@ Office 365 DLP 的所有符合条件的租户都可以访问新的 DLP 警报管
     -   包含以下功能之一的 E1、F1 或 G1 订阅或 E3 或 G3 订阅：
         -   Office 365 高级威胁防护（计划 2）
         -   Microsoft 365 E5 合规
-        -   Microsoft 365 电子数据展示和审核加载项许可证
+        -   Microsoft 365电子数据展示和审核加载项许可证
 
 ### <a name="roles"></a>角色
 
@@ -99,7 +101,7 @@ Office 365 DLP 的所有符合条件的租户都可以访问新的 DLP 警报管
 
 使用 DLP 警报管理仪表板：
 
-1.  在 [Microsoft 365 合规中心](https://www.compliance.microsoft.com)，转到 **数据丢失防护**。
+1.  In the [Microsoft 365 compliance center，](https://www.compliance.microsoft.com)go to **Data Loss Prevention**.
 
 2.  选择" **警报"** 选项卡以查看 DLP 警报仪表板。
 
@@ -122,15 +124,15 @@ Office 365 DLP 的所有符合条件的租户都可以访问新的 DLP 警报管
     |                   | 主机名称                      | 检测到 DLP 违反情况的机器的主机名              | 设备事件                           |
     |                   | IP 地址                    | 计算机 IP 地址                                                  | 设备事件                           |
     |                   | 文件路径                     | 冲突所涉及的文件的绝对路径                        | SharePoint、OneDrive 和设备事件 |
-    |                   | 电子邮件收件人              | 违反 DLP 策略的电子邮件的收件人                       | Exchange 事件                          |
-    |                   | 电子邮件主题                 | 违反 DLP 策略的电子邮件主题                          | Exchange 事件                          |
-    |                   | 电子邮件附件             | 电子邮件中违反 DLP 策略的附件的名称         | Exchange 事件                          |
-    |                   | 网站所有者                    | 网站所有者的名称                                                     | SharePoint 和 OneDrive 事件           |
-    |                   | 网站 URL                      | SharePoint 或 OneDrive 网站的完整 URL                                | SharePoint 和 OneDrive 事件           |
-    |                   | 已创建文件                  | 文件创建时间                                                      | SharePoint 和 OneDrive 事件           |
-    |                   | 上次修改文件            | 上次修改文件的时间                                  | SharePoint 和 OneDrive 事件           |
-    |                   | 文件大小                     | 文件大小                                                           | SharePoint 和 OneDrive 事件           |
-    |                   | 文件所有者                    | 文件的所有者                                                          | SharePoint 和 OneDrive 事件           |
+    |                   | 电子邮件收件人              | 违反 DLP 策略的电子邮件的收件人                       | Exchange事件                          |
+    |                   | 电子邮件主题                 | 违反 DLP 策略的电子邮件主题                          | Exchange事件                          |
+    |                   | 电子邮件附件             | 电子邮件中违反 DLP 策略的附件的名称         | Exchange事件                          |
+    |                   | 网站所有者                    | 网站所有者的名称                                                     | SharePoint事件OneDrive事件           |
+    |                   | 网站 URL                      | SharePoint 或 OneDrive 的完整 URL                                | SharePoint事件OneDrive事件           |
+    |                   | 已创建文件                  | 文件创建时间                                                      | SharePoint事件OneDrive事件           |
+    |                   | 上次修改文件            | 上次修改文件的时间                                  | SharePoint事件OneDrive事件           |
+    |                   | 文件大小                     | 文件大小                                                           | SharePoint事件OneDrive事件           |
+    |                   | 文件所有者                    | 文件的所有者                                                          | SharePoint事件OneDrive事件           |
     |*策略详细信息*||
     |     | 匹配的 DLP 策略            | 匹配的 DLP 策略的名称                                    | 所有事件                               |
     |                   | 匹配的规则                  | 匹配的 DLP 策略中的 DLP 规则的名称                    | 所有事件                               |

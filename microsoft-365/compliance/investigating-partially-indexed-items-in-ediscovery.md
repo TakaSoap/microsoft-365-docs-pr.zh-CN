@@ -17,17 +17,17 @@ search.appverid:
 ms.assetid: 4e8ff113-6361-41e2-915a-6338a7e2a1ed
 ms.custom:
 - seo-marvel-apr2020
-description: 了解如何在组织中管理部分索引 (，也称为) Exchange、SharePoint 和 OneDrive for Business 中的未编制索引的项目。
-ms.openlocfilehash: 5d30c0f7c6ae77236ba7fd9f2dbfcc7a0397ae21
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+description: 了解如何管理部分索引项目 (也称为未编制索引) Exchange、SharePoint和OneDrive for Business索引项。
+ms.openlocfilehash: c24fb2d9b633181538d76cf35e27dae1824b311d
+ms.sourcegitcommit: f000358c01a8006e5749a86b256300ee3a73174c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50922576"
+ms.lasthandoff: 04/24/2021
+ms.locfileid: "51994801"
 ---
 # <a name="investigating-partially-indexed-items-in-ediscovery"></a>调查电子数据展示中的部分索引项
 
-在运行搜索时，从 Microsoft 365 合规中心运行电子数据展示搜索会自动在估计的搜索结果中包含部分索引项。 部分索引项目是 Exchange 邮箱项目以及 SharePoint 和 OneDrive for Business 网站上由于某种原因未完全编制索引进行搜索的文档。 大多数电子邮件和网站文档都已成功编制索引，因为它们在电子邮件 [的索引限制范围内](limits-for-content-search.md#indexing-limits-for-email-messages)。 但是，某些项目可能会超出这些索引限制，并且将被部分索引。 以下是在运行电子数据展示搜索时无法对项目编制索引并作为部分索引项返回的其他原因：
+从合规性中心运行电子数据展示搜索Microsoft 365运行搜索时，自动在估计的搜索结果中包含部分索引项。 部分索引项目Exchange邮箱项目和文档SharePoint OneDrive for Business由于某种原因未完全编制索引进行搜索的邮箱项目和文档。 大多数电子邮件和网站文档都已成功编制索引，因为它们在电子邮件 [的索引限制范围内](limits-for-content-search.md#indexing-limits-for-email-messages)。 但是，某些项目可能会超出这些索引限制，并且将被部分索引。 以下是在运行电子数据展示搜索时无法对项目编制索引并作为部分索引项返回的其他原因：
   
 - 电子邮件具有一个附加文件，没有有效的处理程序，如图像文件;这是部分索引电子邮件项目的最常见原因。
 
@@ -45,10 +45,7 @@ ms.locfileid: "50922576"
   
 - 如果某个项目已部分编制索引且与搜索查询匹配，则它同时包含在搜索结果项的计数 (和) 索引项和部分索引项的大小中。 但是，导出同一搜索的结果时，该项目仅包含在一组搜索结果中;它不包含为部分索引项。
 
-- 如果通过将搜索查询 (包括在关键字查询中或通过使用条件) 来为搜索查询 (指定日期范围，则任何与日期范围不匹配的部分索引项不会包含在部分索引项的计数中。 日期范围内的部分索引项包含在索引项的计数中。
-
-  > [!NOTE]
-  > SharePoint 和 OneDrive 网站中的部分索引项不包括在搜索的详细统计信息中显示的部分索引项的估计值中。 但是，在导出电子数据展示搜索的结果时，可以导出部分索引项。 例如，如果您仅搜索网站，则估计的部分索引项数将为 0。
+- 位于网站和 SharePoint OneDrive 网站中的部分索引项不包括在搜索的详细统计信息中显示的部分索引项的估计值中。 但是，在导出电子数据展示搜索的结果时，可以导出部分索引项。 例如，如果您仅搜索网站，则估计的部分索引项数将为 0。
   
 ## <a name="calculating-the-ratio-of-partially-indexed-items-in-your-organization"></a>计算组织中部分索引项的比率
 
@@ -80,7 +77,7 @@ ms.locfileid: "50922576"
   
 ![选择第二个或第三个选项以导出部分索引项](../media/624a62b4-78f7-4329-ab5d-e62e3b369885.png)
   
-使用这些选项之一导出电子数据展示搜索结果或搜索报告时，导出包括名为 Unindexed Items.csv。 此报告包含大多数与文件相同的ResultsLog.csv信息;但是，Unindexed Items.csv还包含两个与部分索引项相关的字段： **错误标记** 和 **错误属性**。 这些字段包含有关每个部分索引项的索引错误的信息。 使用这两个字段中的信息可以帮助您确定特定字段的索引错误是否会影响调查。 如果是这样，可以执行定向搜索，并检索和导出特定电子邮件和 SharePoint 或 OneDrive 文档，以便检查它们以确定它们是否与你的调查相关。 有关分步说明，请参阅 Prepare [a CSV file for a targeted search in Office 365。](csv-file-for-an-id-list-content-search.md)
+使用这些选项之一导出电子数据展示搜索结果或搜索报告时，导出包括名为 Unindexed Items.csv。 此报告包含大多数与文件相同的ResultsLog.csv信息;但是，Unindexed Items.csv还包含两个与部分索引项相关的字段： **错误标记** 和 **错误属性**。 这些字段包含有关每个部分索引项的索引错误的信息。 使用这两个字段中的信息可以帮助您确定特定字段的索引错误是否会影响调查。 如果是这样，您可以执行定向搜索，并检索和导出特定电子邮件和 SharePoint 或 OneDrive 文档，以便您可以检查它们以确定它们是否与调查相关。 有关分步说明，请参阅在 Office 365 中为目标搜索[准备 CSV Office 365。](csv-file-for-an-id-list-content-search.md)
 
 > [!NOTE]
 > Unindexed Items.csv还包含名为 **Error Type** 和 Error **Message 的字段**。 这些是旧字段，包含的信息与"**错误** 标记"和"错误属性"字段中的信息类似，但信息不太详细。 可以安全地忽略这些旧字段。
@@ -105,14 +102,14 @@ ms.locfileid: "50922576"
 | `attachmentsize` <br/> |附加到电子邮件的文件太大，无法处理。  <br/> |
 | `indexingtruncated` <br/> |将已处理的电子邮件写入索引时，其中一个可编制索引的属性太大，被截断。 截断的属性列在"错误属性"字段中。  <br/> |
 | `invalidunicode` <br/> |电子邮件包含无法作为有效 Unicode 处理的文本。 此项的索引编制可能不完整。  <br/> |
-| `parserencrypted` <br/> |附件或电子邮件的内容已加密，Microsoft 365 无法解码内容。  <br/> |
+| `parserencrypted` <br/> |附件或电子邮件的内容已加密，Microsoft 365无法解码内容。  <br/> |
 | `parsererror` <br/> |分析过程中出现未知错误。 这通常由软件 Bug 或服务崩溃导致。  <br/> |
 | `parserinputsize` <br/> |附件太大，分析程序无法处理，并且该附件的解析未发生或未完成。  <br/> |
 | `parsermalformed` <br/> |附件格式不正确，无法由分析程序处理。 此结果可能是由于文件格式旧、不兼容的软件创建的文件或冒充声明的病毒。  <br/> |
 | `parseroutputsize` <br/> |分析附件的输出太大，必须截断。  <br/> |
-| `parserunknowntype` <br/> |附件具有 Microsoft 365 无法检测到的文件类型。  <br/> |
-| `parserunsupportedtype` <br/> |附件具有 Office 365 可以检测到的文件类型，但不支持分析该文件类型。  <br/> |
-| `propertytoobig` <br/> |Exchange 存储中的电子邮件属性的值太大，无法检索，且无法处理邮件。 这通常仅适用于电子邮件的 body 属性。  <br/> |
+| `parserunknowntype` <br/> |附件的文件类型Microsoft 365无法检测。  <br/> |
+| `parserunsupportedtype` <br/> |附件具有可检测到Office 365文件类型，但不支持分析该文件类型。  <br/> |
+| `propertytoobig` <br/> |Exchange中电子邮件属性的值太大，无法检索，且无法处理邮件。 这通常仅适用于电子邮件的 body 属性。  <br/> |
 | `retrieverrms` <br/> |内容检索器无法解码受 RMS 保护的邮件。  <br/> |
 | `wordbreakertruncated` <br/> |在编制索引期间，文档中标识的单词过多。 当达到限制时，将停止对属性的处理，并且该属性将被截断。  <br/> |
 
@@ -120,9 +117,9 @@ ms.locfileid: "50922576"
   
 ## <a name="using-a-powershell-script-to-determine-your-organizations-exposure-to-partially-indexed-email-items"></a>使用 PowerShell 脚本确定组织对部分索引电子邮件项目的曝光
 
-以下步骤显示如何运行 PowerShell 脚本，该脚本在所有 Exchange 邮箱中搜索所有项目，然后根据计数和大小) 生成有关组织部分索引电子邮件项目 (的比率的报告，并显示发生的每个索引错误的项目数 (及其文件类型) 。 使用上一节中的错误标记说明来标识索引错误。
+以下步骤显示如何运行 PowerShell 脚本，该脚本在所有 Exchange 邮箱中搜索所有项目，然后按计数和大小) 生成有关组织部分索引电子邮件项目 (的比率的报告，并显示发生的每个索引错误的项目数 (及其文件类型) 。 使用上一节中的错误标记说明来标识索引错误。
   
-1. 使用文件名后缀 .ps1 将以下文本Windows PowerShell脚本文件;例如， `PartiallyIndexedItems.ps1` 。
+1. 使用 Windows PowerShell 文件名后缀将以下文本保存到脚本.ps1;例如， `PartiallyIndexedItems.ps1` 。
 
    ```powershell
      write-host "**************************************************"

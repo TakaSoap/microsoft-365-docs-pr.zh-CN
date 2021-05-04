@@ -20,18 +20,18 @@ search.appverid:
 - MED150
 - MET150
 ms.assetid: ed48d448-3714-4c42-85f5-10f75f6a4278
-description: 将搜索结果从 Microsoft 365 合规中心的内容搜索导出到本地计算机。 电子邮件结果导出为 PST 文件。 SharePoint 和 OneDrive for Business 网站中的内容导出为本机 Office 文档。
+description: 将搜索结果从合规性中心的内容搜索Microsoft 365本地计算机。 电子邮件结果导出为 PST 文件。 来自SharePoint和OneDrive for Business的内容作为本机文档Office导出。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 3103bfda4269b7d66e4171b4481d259f2ae3e3de
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 3bb46966ddd8d4b2ae61091b126daea1413039ac
+ms.sourcegitcommit: f000358c01a8006e5749a86b256300ee3a73174c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50906938"
+ms.lasthandoff: 04/24/2021
+ms.locfileid: "51994857"
 ---
 # <a name="export-content-search-results"></a>导出内容搜索结果
 
-成功运行内容搜索后，您可以将搜索结果导出到本地计算机。 导出电子邮件结果时，它们作为 PST 文件下载到计算机。 从 SharePoint 和 OneDrive for Business 网站导出内容时，将导出本机 Office 文档的副本。 导出的搜索结果中包含其他文档和报告。
+成功运行内容搜索后，您可以将搜索结果导出到本地计算机。 导出电子邮件结果时，它们作为 PST 文件下载到计算机。 当您从网站和SharePoint OneDrive for Business内容时，将导出本机Office文档的副本。 导出的搜索结果中包含其他文档和报告。
   
 导出内容搜索结果涉及准备结果，然后将结果下载到本地计算机。
   
@@ -41,7 +41,7 @@ ms.locfileid: "50906938"
 
 - 用于导出搜索结果的计算机必须满足以下系统要求：
   
-  - 32 位或 64 位版本的 Windows 7 和更高版本
+  - 最新版 Windows (32 位或 64 位) 
   
   - Microsoft .NET Framework 4.7
   
@@ -49,27 +49,27 @@ ms.locfileid: "50906938"
 
   - Microsoft Edge <sup>2</sup>
   
-    或
+    OR
 
   - Microsoft Internet Explorer 10及更高版本
   
   > [!NOTE]
   > <sup>1</sup> Microsoft 不会为应用程序制作第三方扩展ClickOnce加载项。 不支持使用不支持的浏览器和第三方扩展或加载项导出搜索结果。<br/>
-  > <sup>2</sup> 由于 Microsoft Edge 的最新更改，ClickOnce不再启用支持。 有关在 Edge 中ClickOnce支持的说明，请参阅使用 [Microsoft Edge 中的电子数据展示导出工具](configure-edge-to-export-search-results.md)。
+  > <sup>2</sup>由于最近对 Microsoft Edge 所做的更改，ClickOnce不再启用支持。 有关在 Edge 中ClickOnce支持的说明，请参阅使用 Edge 中的电子数据展示[导出Microsoft Edge。](configure-edge-to-export-search-results.md)
   
-- 我们建议将搜索结果下载到本地计算机。 但是，若要消除公司防火墙或代理基础结构在下载搜索结果时导致问题，可以考虑将搜索结果下载到网络外部的虚拟桌面。 这可以减少导出大量文件时 Azure 数据连接中发生的超时。 有关虚拟桌面的信息，请参阅 Windows [虚拟桌面](https://azure.microsoft.com/services/virtual-desktop)。 
+- 我们建议将搜索结果下载到本地计算机。 但是，若要消除公司防火墙或代理基础结构在下载搜索结果时导致问题，可以考虑将搜索结果下载到网络外部的虚拟桌面。 这可以减少导出大量文件时 Azure 数据连接中发生的超时。 有关虚拟桌面的信息，请参阅虚拟Windows[桌面](https://azure.microsoft.com/services/virtual-desktop)。 
 
 - 若要在下载搜索结果时提高性能，请考虑将返回大量结果的搜索划分为较小的搜索。 例如，您可以使用搜索查询中的日期范围返回一组较小的结果，可以更快地下载结果。
   
-- 导出搜索结果时，数据会临时存储在 Microsoft 云中 Microsoft 提供的 Azure 存储位置中，然后再下载到本地计算机。 请确保你的组织可以连接到 Azure 中的终结点，即 **\* .blob.core.windows.net** (通配符表示导出服务的唯一) 。 创建搜索结果数据两周后，将从 Azure 存储位置删除数据。 
+- 导出搜索结果时，数据会临时存储在 Microsoft 提供的Azure 存储 Microsoft 云中的位置，然后再下载到本地计算机。 请确保你的组织可以连接到 Azure 中的终结点，即 **\* .blob.core.windows.net** (通配符表示导出服务的唯一) 。 搜索结果数据在创建后的两Azure 存储从搜索位置删除。 
   
-- 如果您的组织使用代理服务器与 Internet 进行通信，则需要在用于导出搜索结果 (以便您的代理服务器应用程序可以验证导出工具) 。 为此，请打开  *machine.config*  Windows 版本的位置中的文件。 
+- 如果您的组织使用代理服务器与 Internet 进行通信，则需要在用于导出搜索结果 (以便您的代理服务器应用程序可以验证导出工具) 。 为此，请打开 *machine.config* 版本匹配的位置中的 Windows。 
   
   - **32 位：**`%windir%\Microsoft.NET\Framework\[version]\Config\machine.config`
   
   - **64 位：**`%windir%\Microsoft.NET\Framework64\[version]\Config\machine.config`
   
-    将以下行添加到  *machine.config*  和 标记之间的  `<configuration>` 某  `</configuration>` 位置。 请务必将 和 替换为组织的正确  `ProxyServer`  `Port` 值;例如，  `proxy01.contoso.com:80` 。 
+    将以下行添加到  *machine.config*  和 标记之间的  `<configuration>` 某  `</configuration>` 位置。 请务必将 和 替换为组织的正确  `ProxyServer`  `Port` 值;例如， `proxy01.contoso.com:80` 。 
   
     ```xml
     <system.net>
@@ -84,7 +84,7 @@ ms.locfileid: "50906938"
 
 ## <a name="step-1-prepare-search-results-for-export"></a>第 1 步：准备要导出的搜索结果
 
-第一步是要准备用于导出的搜索结果。 当你准备结果时，它们上传到 Microsoft 提供的 Microsoft 云中的 Azure 存储位置。 邮箱和网站中的内容以每小时 2 GB 的最大速率上载。
+第一步是要准备用于导出的搜索结果。 当你准备结果时，它们上传到 Microsoft 提供的Azure 存储 Microsoft 云中的位置。 邮箱和网站中的内容以每小时 2 GB 的最大速率上载。
   
 1. 转到 [https://protection.office.com](https://protection.office.com)。
   
@@ -109,11 +109,11 @@ ms.locfileid: "50906938"
   
     请参阅 [详细信息部分](#more-information) ，了解有关如何导出部分索引项的说明。 有关部分索引项的信息，请参阅内容搜索 [中的部分索引项](partially-indexed-items-in-content-search.md)。
   
-7. 在 **"将 Exchange 内容导出为**"下，选择下列选项之一：
+7. 在 **"Exchange内容导出为**"下，选择以下选项之一：
   
     - **每个邮箱有一个 PST 文件：** 为包含搜索结果的每个用户邮箱导出一个 PST 文件。 来自用户存档邮箱的任何结果都包含在同一 PST 文件中。 此选项从源邮箱重现邮箱文件夹结构。
   
-    - **一个包含所有邮件的 PST 文件：** 导出一个名为 *Exchange.pst* (PST) ，其中包含搜索中包含的所有源邮箱的搜索结果。 此选项可重现每封邮件的邮箱文件夹结构。
+    - **一个包含所有邮件的 PST 文件：** 导出一个名为 *(.pst Exchange.pst*) ，其中包含搜索中包含的所有源邮箱的搜索结果。 此选项可重现每封邮件的邮箱文件夹结构。
   
     - **一个 PST 文件，其中包含单个文件夹中的所有邮件：** 将搜索结果导出到单个 PST 文件，其中所有邮件都位于单个顶级文件夹中。 此选项允许审阅者按时间顺序审阅项目 (项目按发送日期) 而无需导航每个项目的原始邮箱文件夹结构。
   
@@ -122,21 +122,21 @@ ms.locfileid: "50906938"
       > [!IMPORTANT]
       > 若要在导出受 RMS 保护的邮件时对其进行解密，必须将电子邮件搜索结果导出为单个邮件。 如果将搜索结果导出为 PST 文件，加密的邮件将保持加密状态。 有关详细信息，请参阅本文中的解密 [受 RMS](#decrypting-rms-protected-email-messages-and-encrypted-file-attachments) 保护的电子邮件和加密的文件附件。
   
-8. 单击" **启用重复数据删除"复选框** 以排除重复邮件。 此选项仅在搜索的内容源包括 Exchange 邮箱或公用文件夹时显示。 
+8. 单击" **启用重复数据删除"复选框** 以排除重复邮件。 此选项仅在搜索的内容源包括邮箱或公用文件夹Exchange显示。 
   
     如果选择此选项，即使在搜索的邮箱中发现了同一邮件的多个副本，也只会导出邮件的一个副本。 导出结果 (Results.csv) 报告将包含重复邮件每个副本的一行，以便您可以标识包含重复邮件副本 (或公用文件夹) 邮箱。 有关重复数据删除以及如何标识重复项的信息，请参阅电子数据展示搜索结果中 [的重复数据删除](de-duplication-in-ediscovery-search-results.md)。
   
-9. 单击 **"包含 SharePoint 文档版本"** 复选框导出所有版本的 SharePoint 文档。 此选项仅在搜索的内容源包括 SharePoint 或 OneDrive for Business 网站时显示。 
+9. 单击 **包含文档SharePoint复选框** 导出文档的所有SharePoint版本。 此选项仅在搜索的内容源包括网站或网站SharePoint OneDrive for Business显示。 
   
-10. 单击" **导出压缩文件夹中的文件 (压缩) 文件夹"** 复选框，将搜索结果导出到压缩的文件夹。 此选项仅在选择将 Exchange 项目导出为单个邮件以及搜索结果包括 SharePoint 或 OneDrive 文档时可用。 此选项主要用于在导出项目时绕开 Windows 文件路径名称中的 260 个字符限制。 请参阅详细信息部分中的"导出项目的 [文件名](#more-information) "。 
+10. 单击" **导出压缩文件夹中的文件 (压缩) 文件夹"** 复选框，将搜索结果导出到压缩的文件夹。 此选项仅在选择将项目导出为单个Exchange以及搜索结果包括单个SharePoint或OneDrive可用。 此选项主要用于在导出项目时处理文件路径Windows 260 个字符的限制。 请参阅详细信息部分中的"导出项目的 [文件名](#more-information) "。 
   
-11. 单击“开始导出”。 搜索结果已做好下载准备，这意味着它们被上传到 Microsoft 云中的 Azure 存储位置。 这可能需要几分钟。
+11. 单击“开始导出”。 搜索结果已做好下载准备，这意味着它们被上传到 Microsoft 云Azure 存储位置。 这可能需要几分钟。
 
 有关下载导出的搜索结果的说明，请参阅下一部分。
   
 ## <a name="step-2-download-the-search-results"></a>第 2 步：下载搜索结果
 
-下一步是将搜索结果从 Azure 存储位置下载到本地计算机。
+下一步是将搜索结果从本地Azure 存储下载到本地计算机。
   
 1. 在" **内容搜索"** 页上，单击"导出 **"** 选项卡。 
   
@@ -160,7 +160,7 @@ ms.locfileid: "50906938"
   
       > [!IMPORTANT]
       >  由于下载期间网络活动较高，应仅将搜索结果下载到本地计算机上内部驱动器上的位置。 为了获得最佳下载体验，请遵循以下指南： <br/>
-      >- 不要将搜索结果下载到 UNC 路径、映射的网络驱动器、外部 USB 驱动器或同步的 OneDrive for Business 帐户。<br/>
+      >- 不要将搜索结果下载到 UNC 路径、映射的网络驱动器、外部 USB 驱动器或已同步OneDrive for Business帐户。<br/>
       >- 对将搜索结果下载到的文件夹禁用防病毒扫描。<br/>
       >- 将搜索结果下载到并发下载作业的不同文件夹。
 
@@ -179,8 +179,6 @@ ms.locfileid: "50906938"
 [导出部分索引项](#exporting-partially-indexed-items)
 
 [导出单个邮件或 PST 文件](#exporting-individual-messages-or-pst-files)
-  
-[从 100，000 多个邮箱导出结果](#exporting-results-from-more-than-100000-mailboxes)
 
 [解密受 RMS 保护的电子邮件和加密的文件附件](#decrypting-rms-protected-email-messages-and-encrypted-file-attachments)
 
@@ -196,11 +194,11 @@ ms.locfileid: "50906938"
   
 - 导出搜索结果时，除搜索结果外，还包括以下报告。
   
-  - **导出摘要** 包含导出摘要的 Excel 文档。 其中包括搜索的内容源数量、搜索结果的估计和下载大小以及导出项目的估计和下载数量等信息。
+  - **导出摘要** 包含Excel摘要的一个文档。 其中包括搜索的内容源数量、搜索结果的估计和下载大小以及导出项目的估计和下载数量等信息。
   
   - **清单** 清单文件 (XML 格式) ，其中包含有关搜索结果中包括的每个项目的信息。
   
-  - **结果** 包含有关作为搜索结果下载的每个项目的信息的 Excel 文档。 对于电子邮件，结果日志包含有关每封邮件的信息，包括：
+  - **结果** 一Excel文档，其中包含有关作为搜索结果下载的每个项目的信息。 对于电子邮件，结果日志包含有关每封邮件的信息，包括：
   
     - 邮件在源邮箱中的位置（包括邮件位于主邮箱还是存档邮箱）。
   
@@ -212,7 +210,7 @@ ms.locfileid: "50906938"
 
     - 如果在导出搜索结果时启用了"重复数据删除"选项，则邮件是否是重复邮件。 重复邮件在"复制到项目" **列中具有** 一个值，该值将邮件标识为重复邮件。 "复制到 **项目"** 列中的值包含已导出的邮件的项目标识。 有关详细信息，请参阅电子[数据展示搜索结果中的重复数据展示。](de-duplication-in-ediscovery-search-results.md)
 
-      对于 SharePoint 和 OneDrive for Business 网站中的文档，结果日志包含有关每个文档的信息，包括：
+      对于来自SharePoint和OneDrive for Business的文档，结果日志包含有关每个文档的信息，包括：
 
       - 文档的 URL。
 
@@ -222,11 +220,11 @@ ms.locfileid: "50906938"
 
       - 文档的名称（位于结果日志中的主题列）。
 
-  - **未索引项目** 包含有关搜索结果中将包含的任何部分索引项的信息的 Excel 文档。 如果在生成搜索结果报告时未包含部分索引项，此报告仍将下载，但将为空。
+  - **未索引项目** 一Excel一个文档，其中包含有关搜索结果中将包含的任何部分索引项的信息。 如果在生成搜索结果报告时未包含部分索引项，此报告仍将下载，但将为空。
 
   - **错误和警告** 包含导出过程中遇到的文件的错误和警告。 有关特定于每个错误或警告的信息，请参阅错误详细信息列。
 
-  - **跳过的项目** 从 SharePoint 和 OneDrive for Business 网站导出搜索结果时，导出通常包括跳过的项目报告 (SkippedItems.csv) 。 此报告中引用的项目通常是不会下载的项目，例如文件夹或文档集。 不导出这些类型的项目是设计使的。 对于已跳过的其他项目，跳过的项目报告中的"错误类型"和"错误详细信息"字段会显示跳过项目且未与其他搜索结果一起下载的原因。
+  - **跳过的项目** 从网站和网站SharePoint搜索结果OneDrive for Business导出时，导出通常包括跳过的项目 (SkippedItems.csv) 。 此报告中引用的项目通常是不会下载的项目，例如文件夹或文档集。 不导出这些类型的项目是设计使的。 对于已跳过的其他项目，跳过的项目报告中的"错误类型"和"错误详细信息"字段会显示跳过项目且未与其他搜索结果一起下载的原因。
 
   - **跟踪日志** 包含有关导出过程的详细日志记录信息，有助于在导出过程中发现问题。
   
@@ -251,19 +249,19 @@ ms.locfileid: "50906938"
 
     ![根据网站是否包含与搜索条件匹配的索引项选择导出选项](../media/94f78786-c6bb-42fb-96b3-7ea3998bcd39.png)
 
-    1. 只导出与搜索条件匹配的索引项。 不导出部分索引项。
+    a. 只导出与搜索条件匹配的索引项。 不导出部分索引项。
 
-    2. 如果网站中的索引项与搜索条件不匹配，则不导出同一网站中的部分索引项。 如果搜索结果中返回了网站的索引项，则导出该网站中的部分索引项。 换句话说，仅导出网站中包含与搜索条件匹配的项目的部分索引项。
+    b. 如果网站中的索引项与搜索条件不匹配，则不导出同一网站中的部分索引项。 如果搜索结果中返回了网站的索引项，则导出该网站中的部分索引项。 换句话说，仅导出网站中包含与搜索条件匹配的项目的部分索引项。
 
-    3. 将导出搜索中所有网站的所有部分索引项，无论网站是否包含与搜索条件匹配的项目。
+    c. 将导出搜索中所有网站的所有部分索引项，无论网站是否包含与搜索条件匹配的项目。
 
-    如果您选择导出部分索引项目，部分索引的邮箱项目将导出在单独的 PST 文件中，而不管在"将 Exchange 内容导出为"下 **选择的选项如何**。
+    如果您选择导出部分索引项目，部分索引的邮箱项目将导出到单独的 PST 文件中，而不管在"将内容导出为"下选择的选项Exchange **导出**。
 
 - 如果在搜索结果中返回部分索引项 (因为部分索引项的其他属性与搜索条件) 匹配，则这些部分索引项会与常规搜索结果一起导出。 因此，如果您选择通过选择"所有项目"（包括具有无法识别的格式、已加密或由于其他原因未编制索引的项目）导出已编制索引的项目 () ，那么使用常规结果导出的部分索引项将在 Results.csv 报告中列出。 它们不会列在未索引索引items.csv报告中。
   
 ### <a name="exporting-individual-messages-or-pst-files"></a>导出单个邮件或 PST 文件
   
-- 如果邮件的文件路径名称超过 Windows 的最大字符限制，则文件路径名将被截断。 但原始文件路径名称将在清单和结果日志中列出。
+- 如果邮件的文件路径名超过邮件的最大字符Windows，则文件路径名将被截断。 但原始文件路径名称将在清单和结果日志中列出。
   
 - 如前所述，电子邮件搜索结果将导出到文件系统中的文件夹。 单个邮件的文件夹路径将复制用户邮箱中的文件夹路径。 例如，对于名为"ContosoCase101"的搜索，用户收件箱中的邮件将位于文件夹路径 中  `~ContosoCase101\\<date of export\Exchange\user@contoso.com (Primary)\Top of Information Store\Inbox` 。
 
@@ -271,28 +269,6 @@ ms.locfileid: "50906938"
 
 - 如前所述，必须将电子邮件搜索结果导出为单个邮件，以在导出受 RMS 保护的邮件时对其进行解密。 如果将电子邮件搜索结果导出为 PST 文件，加密邮件将保持加密状态。
   
-### <a name="exporting-results-from-more-than-100000-mailboxes"></a>从 100，000 多个邮箱导出结果
-
-- 如前所述，您必须使用安全与&中心 PowerShell 从超过 100，000 个邮箱下载搜索结果。 可以在此部分中运行以下脚本以下载这些搜索结果。 使用此脚本假定你已导出搜索结果 (导出作业显示在内容搜索工具的"导出"选项卡上) 现在想要下载它们。
-
-   ```powershell
-   $export=Get-ComplianceSearchAction SEARCHNAME_Export -IncludeCredential;
-   $exportUrl=   [System.Uri]::EscapeDataString(($export.Results.Split(";") | ?{$_ -like '*Container url*'} | %{$_.Split(":",2)} | select -last 1).Trim());
-   $exportToken=($export.Results.Split(";") | ?{$_ -like '*SAS Token*'} | %{$_.Split(":",2)} | select -last 1).Trim();
-   ."$env:ProgramFiles\Internet Explorer\IEXPLORE.EXE" "https://complianceclientsdf.blob.core.windows.net/v16/Microsoft.Office.Client.Discovery.UnifiedExportTool.application?name=$($export.Name)&source=$exportUrl&zip=allow&trace=1";
-   $exportToken | clip;
-   ```
-
-  在脚本中，必须指定要导出结果的搜索的名称。 例如，对于名为 的搜索， `SearchAllMailboxes` 将 SEARCHNAME_Export 替换为 `SearchAllMailboxes_Export` 。
-
-  将搜索名称添加到脚本后，可以复制脚本文本，然后将其粘贴到连接到安全与合规中心 [PowerShell](/powershell/exchange/connect-to-scc-powershell)&的 Windows PowerShell 窗口中。 粘贴脚本后，将显示电子数据展示导出工具 (就像使用 UI 工具下载搜索结果时) ：
-
-  ![电子数据展示导出工具](../media/eDiscoveryExportTool.png)
-
-  单击导出键框中，然后按以粘贴导出 (脚本将导出密钥复制到 `CTRL + V` 剪贴板) 。 单击 **"** 浏览"指定要下载文件的位置，然后开始下载。
-
-  如前所述，建议您将搜索结果下载到本地磁盘驱动器，因为读取和写入 (磁盘活动) 。 不要将搜索结果下载到映射的网络驱动器或其他网络位置。
-
 ### <a name="decrypting-rms-protected-email-messages-and-encrypted-file-attachments"></a>解密受 RMS 保护的电子邮件和加密的文件附件
 
 导出内容 (结果) 受 RMS 保护的任何受 RMS 保护的电子邮件都将被解密。 此外，任何使用 [Microsoft](encryption.md) 加密技术加密并附加到包含在搜索结果中的电子邮件的文件在导出时也会解密。 默认情况下，为电子数据展示管理员角色组的成员启用此解密功能。 这是因为默认情况下，RMS 解密管理角色已分配给此角色组。 导出加密电子邮件和附件时，请记住以下事项：
@@ -303,7 +279,7 @@ ms.locfileid: "50906938"
 
 - 除了在导出搜索结果时解密文件附件之外，还可以在预览搜索结果时预览解密的文件。 导出后，只能查看受权限保护的电子邮件。
 
-- 目前，导出搜索结果时解密功能不包括 SharePoint 和 OneDrive for Business 网站中的加密内容。 但是，即将支持使用 Microsoft 加密技术加密并存储在 SharePoint Online 和 OneDrive for Business 中的文档。
+- 目前，导出搜索结果时解密功能不包括来自网站和网站SharePoint加密OneDrive for Business内容。 但是，即将推出对使用 Microsoft 加密技术加密并存储在 SharePoint Online 和 OneDrive for Business 中的文档的支持。
 
 - 如果需要阻止某人解密受 RMS 保护的邮件和加密的文件附件，您必须通过复制内置的电子数据展示管理器角色组) 创建自定义角色组 (，然后从自定义角色组中删除 RMS 解密管理角色。 然后将不希望解密邮件的人添加为自定义角色组的成员。
   
@@ -311,28 +287,28 @@ ms.locfileid: "50906938"
   
 - 对于导出到本地计算机 (电子邮件和网站文档的完整路径名) 操作系统要求具有 260 个字符的限制。 导出项目的完整路径名称包括项目的原始位置和搜索结果下载到的本地计算机上的文件夹位置。 例如，如果指定将搜索结果下载到电子数据展示导出工具中，则下载的电子邮件项的完整路径名  `C:\Users\Admin\Desktop\SearchResults` 为  `C:\Users\Admin\Desktop\SearchResults\ContentSearch1\03.15.2017-1242PM\Exchange\sarad@contoso.com (Primary)\Top of Information Store\Inbox\Insider trading investigation.msg` 。
 
-    如果超过 260 个字符的限制，则项目的完整路径名将被截断。
+- 如果超过 260 个字符的限制，则项目的完整路径名将截断，依据如下：
 
   - 如果完整路径名超过 260 个字符，则文件名将缩短，以低于限制;请注意，截断的文件名 (文件扩展名) 不会少于 8 个字符。
 
   - 如果缩短文件名后完整路径名仍然太长，则项目会从当前位置移动到父文件夹。 如果 pathname 仍然过长，则重复此过程：缩短文件名，如有必要，请再次移动到父文件夹。 重复此过程，直到完整路径名在 260 个字符的限制下。
 
-  - 如果截断的完整路径名已存在，版本号将添加到文件名的末尾;例如，  `statusmessage(2).msg` 。
+  - 如果截断的完整路径名已存在，版本号将添加到文件名的末尾;例如， `statusmessage(2).msg` 。
 
     为了帮助缓解此问题，请考虑将搜索结果下载到路径名称短的位置;例如，将搜索结果下载到名为 的文件夹时，导出项目的路径名称中的字符数将少于将其下载到名为  `C:\Results` 的文件夹的字符  `C:\Users\Admin\Desktop\Results` 数。
 
-- 导出网站文档时，也可能修改文档的原始文件名。 对于从已置于保留状态中的 SharePoint 或 OneDrive for Business 网站删除的文档，尤其会发生此情况。 在删除处于保留状态的网站上的文档后，已删除的文档将自动移动到网站 (在网站被置于保留状态时创建的保留) 。 当删除的文档移动到保留库时，随机生成的唯一 ID 将追加到文档的原始文件名中。 例如，如果文档的文件名是 ，并且该文档稍后被删除并移动到保留库，则移动到保留库的文档的文件名将修改为类似 的内容  `FY2017Budget.xlsx`  `FY2017Budget_DEAF727D-0478-4A7F-87DE-5487F033C81A2000-07-05T10-37-55.xlsx` 。 如果保留库中的文档与内容搜索的查询匹配，并且您导出了该搜索的结果，则导出的文件具有修改的文件名;本示例中，导出文档的文件名为  `FY2017Budget_DEAF727D-0478-4A7F-87DE-5487F033C81A2000-07-05T10-37-55.xlsx` 。
+- 导出网站文档时，也可能修改文档的原始文件名。 对于从已置于保留状态SharePoint OneDrive for Business或网站中删除的文档，尤其会发生此情况。 在删除处于保留状态的网站上的文档后，已删除的文档将自动移动到网站 (在网站被置于保留状态时创建的保留) 。 当删除的文档移动到保留库时，随机生成的唯一 ID 将追加到文档的原始文件名中。 例如，如果文档的文件名是 ，并且该文档稍后被删除并移动到保留库，则移动到保留库的文档的文件名将修改为类似 的内容  `FY2017Budget.xlsx`  `FY2017Budget_DEAF727D-0478-4A7F-87DE-5487F033C81A2000-07-05T10-37-55.xlsx` 。 如果保留库中的文档与内容搜索的查询匹配，并且您导出了该搜索的结果，则导出的文件具有修改的文件名;本示例中，导出文档的文件名为  `FY2017Budget_DEAF727D-0478-4A7F-87DE-5487F033C81A2000-07-05T10-37-55.xlsx` 。
 
     修改保留网站中的文档后 (且网站中的文档库的版本控制已启用) 时，将自动在保留库中创建文件副本。 在这种情况下，还会将随机生成的唯一 ID 附加到复制到保留库的文档的文件名中。
 
-    将文档文件名移动或复制到保留库的原因是为了防止文件名冲突。 有关将网站和保留库置于保留状态详细信息，请参阅 [Overview of in-place hold in SharePoint Server 2016](https://support.office.com/article/5e400d68-cd51-444a-8fe6-e4df1d20aa95)。
+    将文档文件名移动或复制到保留库的原因是为了防止文件名冲突。 有关将网站和保留库置于保留状态详细信息，请参阅[overview of in-place hold in SharePoint Server 2016](https://support.office.com/article/5e400d68-cd51-444a-8fe6-e4df1d20aa95)。
 
 ### <a name="miscellaneous"></a>其他
   
-- 使用电子数据展示导出工具下载搜索结果时，可能会收到以下错误：这是暂时性错误，通常发生在 Azure 存储 `System.Net.WebException: The remote server returned an error: (412) The condition specified using HTTP conditional header(s) is not met.` 位置。 若要解决此问题，请 [重试下载搜索结果](#step-2-download-the-search-results)，这将重新启动电子数据展示导出工具。
+- 使用电子数据展示导出工具下载搜索结果时，您可能会收到以下错误：这是暂时性错误，通常发生在 Azure 存储 `System.Net.WebException: The remote server returned an error: (412) The condition specified using HTTP conditional header(s) is not met.` 位置。 若要解决此问题，请 [重试下载搜索结果](#step-2-download-the-search-results)，这将重新启动电子数据展示导出工具。
 
 - 所有搜索结果和导出报告包含在一个与内容搜索同名的文件夹中。 已导出的电子邮件位于名为 **Exchange** 的文件夹中。 文档位于名为 **SharePoint** 的文件夹中。
 
-- 将文档导出到本地计算机时，将维护 SharePoint 和 OneDrive for Business 网站上文档的文件系统元数据。 这意味着当文档被导出时，其文档属性，如创建日期和上次修改日期不会被更改。
+- 将文档导出到本地计算机时，SharePoint和OneDrive for Business网站中的文档的文件系统元数据会进行维护。 这意味着当文档被导出时，其文档属性，如创建日期和上次修改日期不会被更改。
 
-- 如果搜索结果包含与搜索查询匹配的 SharePoint 列表项，除了与搜索查询匹配的项和列表中任何附件外，还将导出列表中的所有行。 此行为的原因是为搜索结果中返回的列表项提供上下文。 另请注意，其他列表项和附件可能会导致导出项目数不同于搜索结果的原始估计值。
+- 如果您的搜索结果包含来自 SharePoint 且与搜索查询匹配的列表项，则除了与搜索查询匹配的项目以及列表中任何附件之外，还将导出列表中的所有行。 此行为的原因是为搜索结果中返回的列表项提供上下文。 其他列表项和附件可能会导致导出的项目数不同于搜索结果的原始估计值。

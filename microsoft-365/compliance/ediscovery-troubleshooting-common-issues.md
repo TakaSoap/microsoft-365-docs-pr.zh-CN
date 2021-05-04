@@ -16,15 +16,15 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: 了解解决 Office 365 电子数据展示中的常见问题时可以执行的基本疑难解答步骤。
+description: 了解解决电子数据展示中常见问题Office 365步骤。
 siblings_only: true
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a867ed2e55c73fe4bbd890273d78cf57f4bfbd2c
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 3d3d0830ac677ea812a0d09793de8214245d6b2a
+ms.sourcegitcommit: e5b1a900043e2e41650ea1cbf4227043729c6053
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50926542"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52060987"
 ---
 # <a name="investigate-troubleshoot-and-resolve-common-ediscovery-issues"></a>调查、排查并解决常见的电子数据展示问题
 
@@ -38,7 +38,7 @@ ms.locfileid: "50926542"
 
 检查具有相同用户 ID 的重复用户或通讯组列表。
 
-1. 连接到安全[&合规中心 PowerShell。](/powershell/exchange/connect-to-scc-powershell)
+1. 连接安全[与&中心 PowerShell。](/powershell/exchange/connect-to-scc-powershell)
 
 2. 运行以下命令以检索用户名的所有实例：
 
@@ -66,7 +66,7 @@ ms.locfileid: "50926542"
 
 如果您收到此错误，我们建议您验证搜索失败的位置，然后仅在失败的位置重新运行搜索。
 
-1. 连接到 [安全&合规中心 PowerShell，](/powershell/exchange/connect-to-scc-powershell) 然后运行以下命令：
+1. 连接安全&[合规中心 PowerShell，](/powershell/exchange/connect-to-scc-powershell)然后运行以下命令：
 
    ```powershell
    Get-ComplianceSearch <searchname> | FL
@@ -80,9 +80,9 @@ ms.locfileid: "50926542"
 
 ## <a name="errorissue-file-not-found"></a>错误/问题：未找到文件
 
-运行包括 SharePoint Online 和 One Drive For Business 位置的电子数据展示搜索时，您可能会收到错误，尽管该文件 `File Not Found` 位于网站上。 此错误将位于导出警告中，errors.csv或跳过items.csv。 如果网站上找不到该文件或索引已过期，则可能会发生这种情况。 下面是实际错误的文本，其中 (强调) 。
+当运行包括 SharePoint Online 和 One Drive For Business 位置的电子数据展示搜索时，你可能会收到错误，尽管该文件 `File Not Found` 位于网站上。 此错误将位于导出警告中，errors.csv或跳过items.csv。 如果网站上找不到该文件或索引已过期，则可能会发生这种情况。 下面是实际错误的文本，其中 (强调) 。
 
-> 28.06.2019 10：02：19_FailedToExportItem_Failed下载内容。 其他诊断信息：Microsoft.Office.Compliance.EDiscovery.ExportWorker.Exceptions.ContentDownloadTemporaryFailure：无法从类型为 Document 的内容 6ea52149-91cd-4965-b5bb-82ca6a3ec9be 下载。 相关 ID：3bd84722-937b-4c23-b61b-08d6fba9ec32。 ServerErrorCode：-2147024894 ---> Microsoft.SharePoint.Client.ServerException： ***未找到文件***。 位于 Microsoft.SharePoint.Client.ClientRequest.ProcessResponse (Stream responseStream) at Microsoft.SharePoint.Client.ClientRequest.ProcessResponse () --- End of inner exception stack trace ---
+> 28.06.2019 10：02：19_FailedToExportItem_Failed下载内容。 其他诊断信息：Microsoft。Office。Compliance.EDiscovery.ExportWorker.Exceptions.ContentDownloadTemporaryFailure：无法从类型为 Document 的内容 6ea52149-91cd-4965-b5bb-82ca6a3ec9be 下载。 相关 ID：3bd84722-937b-4c23-b61b-08d6fba9ec32。 ServerErrorCode：-2147024894 ---> Microsoft。SharePoint。Client.ServerException：***未找到文件***。 位于 Microsoft。SharePoint。Client.ClientRequest.ProcessResponseStream (Microsoft) Stream responseStream。SharePoint。Client.ClientRequest.ProcessResponse () ---内部异常堆栈跟踪结束---
 
 ### <a name="resolution"></a>解决方案
 
@@ -92,13 +92,13 @@ ms.locfileid: "50926542"
 
 ## <a name="errorissue-search-fails-because-recipient-is-not-found"></a>错误/问题：搜索失败，因为未找到收件人
 
-电子数据展示搜索失败，出现错误 `recipient not found` 。 如果由于用户对象尚未同步，在 Exchange Online Protection (EOP) 可能发生此错误。
+电子数据展示搜索失败，出现错误 `recipient not found` 。 如果在 EOP 服务器中找不到用户对象，则Exchange Online Protection (，) 对象尚未同步。
 
 ### <a name="resolution"></a>解决方案
 
 1. 连接到 [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)。
 
-2. 运行以下命令检查用户是否同步到 Exchange Online Protection：
+2. 运行以下命令，检查用户是否同步到Exchange Online Protection：
 
    ```powershell
    Get-Recipient <userId> | FL
@@ -112,7 +112,7 @@ ms.locfileid: "50926542"
 
 ### <a name="resolution"></a>解决方案
 
-1. 连接到 [安全&合规中心 PowerShell，](/powershell/exchange/connect-to-scc-powershell) 然后运行以下命令：
+1. 连接安全&[合规中心 PowerShell，](/powershell/exchange/connect-to-scc-powershell)然后运行以下命令：
 
    ```powershell
    Get-ComplianceSearch <searchname> | FL
@@ -142,7 +142,7 @@ ms.locfileid: "50926542"
 
 1. 将搜索分解为较小的搜索，然后再次运行搜索。  请尝试使用较小的日期范围或限制要搜索的位置数。
 
-2. 连接到 [安全&合规中心 PowerShell，](/powershell/exchange/connect-to-scc-powershell) 然后运行以下命令：
+2. 连接安全&[合规中心 PowerShell，](/powershell/exchange/connect-to-scc-powershell)然后运行以下命令：
 
    ```powershell Set-CaseHoldPolicy <policyname> -RetryDistribution
    Get-ComplianceSearch <searchname> | FL
@@ -162,7 +162,7 @@ ms.locfileid: "50926542"
 
 ### <a name="resolution"></a>解决方案
 
-1. 连接到 [安全&合规中心 PowerShell，](/powershell/exchange/connect-to-scc-powershell) 然后针对电子数据展示案例保留运行以下命令：
+1. 连接安全&合规中心[PowerShell，](/powershell/exchange/connect-to-scc-powershell)然后运行以下针对电子数据展示案例保留的命令：
 
    ```powershell
    Get-CaseHoldPolicy <policyname> - DistributionDetail | FL
@@ -196,7 +196,7 @@ ms.locfileid: "50926542"
 
 ## <a name="error-the-condition-specified-using-http-conditional-headers-is-not-met"></a>错误："不满足使用 HTTP (标头) 条件"
 
-使用电子数据展示导出工具下载搜索结果时，可能会收到以下错误：这是暂时性错误，通常发生在 Azure 存储 `System.Net.WebException: The remote server returned an error: (412) The condition specified using HTTP conditional header(s) is not met.` 位置。
+使用电子数据展示导出工具下载搜索结果时，您可能会收到以下错误：这是暂时性错误，通常发生在 Azure 存储 `System.Net.WebException: The remote server returned an error: (412) The condition specified using HTTP conditional header(s) is not met.` 位置。
 
 ### <a name="resolution"></a>解决方案
 
@@ -212,12 +212,14 @@ ms.locfileid: "50926542"
 
 1. 请尝试使用另一个客户端/计算机进行下载。
 
-2. 确保下载到本地驱动器。
+2. 使用 [Remove-ComplianceSearch][/powershell/module/exchange/remove-compliancesearch] cmdlet 删除不再需要的旧搜索。
 
-3. 确保病毒扫描程序未运行。
+3. 确保下载到本地驱动器。
 
-4. 确保没有任何其他导出内容下载到同一文件夹或任何父文件夹。
+4. 确保病毒扫描程序未运行。
 
-5. 如果上述步骤不起作用，则禁用压缩和重复数据删除。
+5. 确保没有任何其他导出内容下载到同一文件夹或任何父文件夹。
 
-6. 如果此操作有效，则问题由本地病毒扫描程序或磁盘问题导致。
+6. 如果上述步骤不起作用，则禁用压缩和重复数据删除。
+
+7. 如果此操作有效，则问题由本地病毒扫描程序或磁盘问题导致。

@@ -13,25 +13,25 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.collection: M365-security-compliance
-description: 管理员可以设置数据连接器，以将数据从组织的物理密码系统导入到 Microsoft 365。 这允许你在内部风险管理策略中使用此数据，以帮助你检测特定用户对可能向组织指示可能的内部威胁的物理建筑物的访问。
-ms.openlocfilehash: c07dfcbefa338f7499f2c45f595bf2ccda6387fa
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+description: 管理员可以设置数据连接器，以将数据从组织的物理密码系统导入Microsoft 365。 这允许你在内部风险管理策略中使用此数据，以帮助你检测特定用户对可能向组织指示可能的内部威胁的物理建筑物的访问。
+ms.openlocfilehash: a300107af1d3fe07f208f7e3f239f75a9cd6e5af
+ms.sourcegitcommit: f000358c01a8006e5749a86b256300ee3a73174c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50911362"
+ms.lasthandoff: 04/24/2021
+ms.locfileid: "51994823"
 ---
 # <a name="set-up-a-connector-to-import-physical-badging-data-preview"></a>设置连接器以在预览版中导入 () 
 
-可以在 Microsoft 365 合规中心中设置数据连接器，以导入物理密码数据，例如员工的原始物理访问事件或组织密码系统生成的任何物理访问警报。 物理访问点的示例包括建筑物入口或服务器会议室或数据中心的入口。 Microsoft 365 内部风险管理解决方案可以使用物理保护数据来帮助[](insider-risk-management.md)保护组织免受组织内部恶意活动或数据盗窃的攻击。
+您可以在 Microsoft 365 合规中心中设置数据连接器，以导入物理密码数据，例如员工的原始物理访问事件或由组织的密码系统生成的任何物理访问警报。 物理访问点的示例包括建筑物入口或服务器会议室或数据中心的入口。 内部风险管理解决方案可以使用物理Microsoft 365，以帮助保护组织免受组织内部恶意[](insider-risk-management.md)活动或数据盗窃的攻击。
 
 设置物理保护连接器包括以下任务：
 
-- 在 Azure Active Directory (Azure AD) ，以访问接受包含物理保护数据的 JSON 负载的 API 终结点。
+- 在 Azure AD Azure Active Directory (创建) ，以访问接受包含物理保护数据的 JSON 负载的 API 终结点。
 
 - 使用由物理保护数据连接器定义的架构创建 JSON 有效负载。
 
-- 在 Microsoft 365 合规中心创建物理保护数据连接器。
+- 在安全与合规中心内创建Microsoft 365数据连接器。
 
 - 运行脚本以将物理保护代码数据推送到 API 终结点。
 
@@ -39,15 +39,15 @@ ms.locfileid: "50911362"
 
 ## <a name="before-you-set-up-the-connector"></a>设置连接器之前
 
-- 必须在 Exchange Online 中为在步骤 3 中创建物理密码连接器的用户分配邮箱导入导出角色。 默认情况下，不会向 Exchange Online 中任何角色组分配此角色。 可以将"邮箱导入导出"角色添加到 Exchange Online 中的"组织管理"角色组。 也可以创建新的角色组，分配"邮箱导入导出"角色，然后将相应的用户添加为成员。 有关详细信息，请参阅"在[](/Exchange/permissions-exo/role-groups#create-role-groups)Exchange Online[](/Exchange/permissions-exo/role-groups#modify-role-groups)中管理角色组"一文的创建角色组或修改角色组部分。
+- 必须在步骤 3 中为创建物理密码连接器的用户分配邮箱导入导出Exchange Online。 默认情况下，不会向 Exchange Online 中任何角色组分配此角色。 可以将"邮箱导入导出"角色添加到组织中"组织管理"角色Exchange Online。 也可以创建新的角色组，分配"邮箱导入导出"角色，然后将相应的用户添加为成员。 有关详细信息，请参阅"在角色[](/Exchange/permissions-exo/role-groups#create-role-groups)组中管理角色组[](/Exchange/permissions-exo/role-groups#modify-role-groups)"一文的"创建角色组"或"修改角色Exchange Online"。
 
 - 您需要确定如何每天从组织的物理密码系统 (检索或导出数据) 并创建步骤 2 中所述的 JSON 文件。 在步骤 4 中运行的脚本将 JSON 文件的数据推送到 API 终结点。
 
 - 在步骤 4 中运行的示例脚本将 JSON 文件的物理保护数据推送到连接器 API，以便内部风险管理解决方案可以使用该数据。 本示例脚本在任何 Microsoft 标准支持计划或服务下都不受支持。 示例脚本“原样”提供，不提供任何形式的保证。 Microsoft 进一步拒绝所有默示保证，包括但不限于针对特定用途的适销性或适用性的任何默示保证。 由于示例脚本及文档的使用或性能所引起的全部风险均由你承担。 在任何情况下，对于由于使用或者无法使用示例脚本或文档所引起的任何损失（包括但不限于商业利润损失、业务中断、商业信息丢失或者其他经济损失），Microsoft、其作者或者参与创建、制作或交付脚本的任何人概不负责，即使 Microsoft 已被告知可能会出现此类损失。
 
-## <a name="step-1-create-an-app-in-azure-active-directory"></a>步骤 1：在 Azure Active Directory 中创建应用
+## <a name="step-1-create-an-app-in-azure-active-directory"></a>步骤 1：在 Azure Active Directory
 
-第一步是在 Azure AD (Azure Active Directory) 。 该应用将对应于在步骤 3 中创建的物理保护连接器。 创建此应用将允许 Azure AD 对包含物理保护数据的 JSON 有效负载的推送请求进行身份验证。 创建此 Azure AD 应用期间，请务必保存以下信息。 这些值将在稍后的步骤中使用。
+第一步是在 Azure AD Azure Active Directory (创建和注册) 。 该应用将对应于在步骤 3 中创建的物理保护连接器。 创建此应用将允许 Azure AD 对包含物理保护数据的 JSON 有效负载的推送请求进行身份验证。 创建此 Azure AD 应用期间，请务必保存以下信息。 这些值将在稍后的步骤中使用。
 
 - Azure AD 应用程序 ID (也称为 *应用 ID* 或 *客户端 ID*) 
 
@@ -55,7 +55,7 @@ ms.locfileid: "50911362"
 
 - 租户 ID (*也称为目录 ID*) 
 
-有关在 Azure AD 中创建应用的分步说明，请参阅向 Microsoft 标识平台 [注册应用程序](/azure/active-directory/develop/quickstart-register-app)。
+有关在 Azure AD 中创建应用的分步说明，请参阅使用 Microsoft 标识平台[注册应用程序](/azure/active-directory/develop/quickstart-register-app)。
 
 ## <a name="step-2-prepare-a-json-file-with-physical-badging-data"></a>步骤 2：准备包含物理保护数据的 JSON 文件
 
@@ -63,13 +63,13 @@ ms.locfileid: "50911362"
 
 JSON 文件必须符合连接器所需的架构定义。 以下是 JSON 文件所需的架构属性的说明：
 
-| 属性 | 说明 | 数据类型 |
-|:-----------|:--------------|:------------|
-|UserID|员工可以在系统中具有多个数字标识。 输入需要已由源系统解析 Azure AD ID。 |UPN 或电子邮件地址|
-|AssetId|物理资产或物理访问点的参考 ID。| 字母数字字符串|
+|属性|说明|数据类型|
+|---|---|---|
+|UserID|员工可以在系统中具有多个数字标识。 输入需要已由源系统解析 Azure AD ID。|UPN 或电子邮件地址|
+|AssetId|物理资产或物理访问点的参考 ID。|字母数字字符串|
 |AssetName|物理资产或物理访问点的友好名称。|字母数字字符串|
 |EventTime|访问时间戳。|日期和时间（UTC 格式）|
-|AccessStatus|或 `Success` 的值 `Failed`| String|
+|AccessStatus|或 `Success` 的值 `Failed`|String|
 |||
 
 下面是符合所需架构的 JSON 文件示例：
@@ -84,67 +84,68 @@ JSON 文件必须符合连接器所需的架构定义。 以下是 JSON 文件�
         "AccessStatus":"Failed",
     },
     {
-        "UserId":"pilarp@contoso.com",        
+        "UserId":"pilarp@contoso.com",
         "AssetId":"Mid-Sec-7",
         "AssetName":"Main Building 1st Floor Mid Section",
-        "EventTime":"2019-07-04T02:57:49",        
+        "EventTime":"2019-07-04T02:57:49",
         "AccessStatus":"Success",
     }
 ]
 ```
+
 还可以在步骤 3 中创建物理保护连接器时，从向导下载 JSON 文件的以下架构定义。
 
 ```text
 {
-    "title" : "Physical Badging Signals",
-    "description" : "Access signals from physical badging systems",
-    "DataType" : {
-        "description" : "Identify what is the data type for input signal",
-        "type" : "string",
-    },
-    "type" : "object",
-    "properties": {
-        "UserId" : {
-            "description" : "Unique identifier AAD Id resolved by the source system",
-            "type" : "string",
-        },
-        "AssetId": {
-            "description" : "Unique ID of the physical asset/access point",
-            "type" : "string",
-        },
-        "AssetName": {
-            "description" : "friendly name of the physical asset/access point",
-            "type" : "string",
-        },
-        "EventTime" : {
-            "description" : "timestamp of access",
-            "type" : "string",
-        },
-        "AccessStatus" : {
-            "description" : "what was the status of access attempt - Success/Failed",
-            "type" : "string",
-        },
-    }
-    "required" : ["UserId", "AssetId", "EventTime" "AccessStatus"]
+   "title" : "Physical Badging Signals",
+   "description" : "Access signals from physical badging systems",
+   "DataType" : {
+      "description" : "Identify what is the data type for input signal",
+      "type" : "string",
+   },
+   "type" : "object",
+   "properties": {
+      "UserId" : {
+         "description" : "Unique identifier AAD Id resolved by the source system",
+         "type" : "string",
+      },
+      "AssetId": {
+         "description" : "Unique ID of the physical asset/access point",
+         "type" : "string",
+      },
+      "AssetName": {
+         "description" : "friendly name of the physical asset/access point",
+         "type" : "string",
+      },
+      "EventTime" : {
+         "description" : "timestamp of access",
+         "type" : "string",
+      },
+      "AccessStatus" : {
+         "description" : "what was the status of access attempt - Success/Failed",
+         "type" : "string",
+      },
+   }
+   "required" : ["UserId", "AssetId", "EventTime" "AccessStatus"]
 }
 ```
 
 ## <a name="step-3-create-the-physical-badging-connector"></a>步骤 3：创建物理保护连接器
 
-下一步是在 Microsoft 365 合规中心创建物理保护连接器。 在步骤 4 中运行脚本后，将在步骤 3 中创建的 JSON 文件进行处理并推送到在步骤 1 中配置的 API 终结点。 在此步骤中，请确保复制创建连接器时生成的 JobId。 运行脚本时，将使用 JobId。
+下一步是在安全与合规中心创建Microsoft 365连接器。 在步骤 4 中运行脚本后，将在步骤 3 中创建的 JSON 文件进行处理并推送到在步骤 1 中配置的 API 终结点。 在此步骤中，请确保复制创建连接器时生成的 JobId。 运行脚本时，将使用 JobId。
 
-1. 转到 ， [https://compliance.microsoft.com](https://compliance.microsoft.com/) 然后单击左侧 **导航中的** "数据连接器"。
+1. 转到 ， <https://compliance.microsoft.com> 然后单击左侧 **导航中的** "数据连接器"。
 
 2. 在"**数据连接器"页上** 的"**物理保护"下，** 单击"查看 **"。**
 
 3. 在"**物理保护"页上**，单击"**添加连接器"。**
 
 4. 在"**身份验证凭据"** 页上，执行以下操作，然后单击"下一步 **"：**
-  
+
    1. 键入或粘贴你在步骤 1 中创建的 Azure 应用的 Azure AD 应用程序 ID。
-  
+
    2. 下载示例架构，以参考创建 JSON 文件。
-  
+
    3. 键入物理保护连接器的唯一名称。
 
 5. 在" **审阅** "页上，查看设置，然后单击" **完成** "以创建连接器。
@@ -163,12 +164,12 @@ JSON 文件必须符合连接器所需的架构定义。 以下是 JSON 文件�
 
 设置物理保护连接器的下一步是运行一个脚本，该脚本将在步骤 2) 中创建的 JSON 文件 (中将物理保护数据推送到在步骤 1 中创建的 API 终结点。 我们提供示例脚本供你参考，你可以选择使用它或创建你自己的脚本将 JSON 文件张贴到 API 终结点。
 
-运行脚本后，包含物理保护数据的 JSON 文件将推送到 Microsoft 365 组织，内部风险管理解决方案可在其中访问该文件。 我们建议你每天发布物理保护数据。 为此，可以自动执行每天从物理保护系统生成 JSON 文件的过程，然后计划脚本以推送数据。
+运行脚本后，包含物理保护数据的 JSON 文件将推送到 Microsoft 365 组织，内部风险管理解决方案可在该组织中访问该文件。 我们建议你每天发布物理保护数据。 为此，可以自动执行每天从物理保护系统生成 JSON 文件的过程，然后计划脚本以推送数据。
 
 > [!NOTE]
 > API 可以处理的 JSON 文件中的最大记录数为 50，000 条记录。
 
-1. 转到 [此 GitHub 网站](https://github.com/microsoft/m365-hrconnector-sample-scripts/blob/master/upload_termination_records.ps1) 以访问示例脚本。
+1. 转到[此GitHub网站](https://github.com/microsoft/m365-hrconnector-sample-scripts/blob/master/upload_termination_records.ps1)以访问示例脚本。
 
 2. 单击" **原始** "按钮以在文本视图中显示脚本
 
@@ -176,7 +177,7 @@ JSON 文件必须符合连接器所需的架构定义。 以下是 JSON 文件�
 
 4. 如有必要，修改组织的示例脚本。
 
-5. 使用文件名后缀 .ps1 将文本文件另存为Windows PowerShell脚本文件;例如，PhysicalBadging.ps1。
+5. 使用文件名后缀或Windows PowerShell将文本文件另存为脚本.ps1;例如，PhysicalBadging.ps1。
 
 6. 在本地计算机上打开命令提示符，然后转到保存脚本的目录。
 
@@ -188,13 +189,13 @@ JSON 文件必须符合连接器所需的架构定义。 以下是 JSON 文件�
 
    下表介绍了要用于此脚本的参数及其所需值。 在之前步骤中获取的信息用于这些参数的值中。
 
-   | 参数 | 说明 |
-   |:-------------|:--------------|
-   |tenantId | 这是在步骤 1 中获取的 Microsoft 365 组织的 ID。 还可以在 Azure AD 管理中心的"概述"边栏选项卡上获取组织的 tenantId。 这用于标识您的组织。 |
-   |appId | 这是你在步骤 1 中的 Azure AD 中创建的应用的 Azure AD 应用程序 ID。 当脚本尝试访问你的 Microsoft 365 组织时，Azure AD 会使用此功能进行身份验证。                    |
-   |appSecret | 这是你在步骤 1 中的 Azure AD 中创建的应用的 Azure AD 应用程序密码。 这还用于身份验证。                                                        |
-   |jobId | 这是在步骤 3 中创建的物理保护连接器的作业 ID。 这用于将推送到 Microsoft 云的物理保护数据与物理保护连接器关联。              |
-   |JsonFilePath | 这是本地计算机的文件路径 (您用于为步骤 2 中创建的 JSON 文件运行脚本) 的文件路径。 此文件必须遵循步骤 3 中所述的示例架构。|
+   |参数|说明|
+   |---|---|
+   |tenantId|这是在步骤 1 Microsoft 365获得的组织 ID。 还可以在 Azure AD 管理中心的"概述"边栏选项卡上获取组织的 tenantId。 这用于标识您的组织。|
+   |appId|这是你在步骤 1 中的 Azure AD 中创建的应用的 Azure AD 应用程序 ID。 当脚本尝试访问你的组织时，Azure AD 会Microsoft 365身份验证。|
+   |appSecret|这是你在步骤 1 中的 Azure AD 中创建的应用的 Azure AD 应用程序密码。 这还用于身份验证。|
+   |jobId|这是在步骤 3 中创建的物理保护连接器的作业 ID。 这用于将推送到 Microsoft 云的物理保护数据与物理保护连接器关联。|
+   |JsonFilePath|这是本地计算机的文件路径 (您用于为步骤 2 中创建的 JSON 文件运行脚本) 的文件路径。 此文件必须遵循步骤 3 中所述的示例架构。|
    |||
 
    下面是将实际值用于每个参数的物理保护连接器脚本的语法示例：
@@ -203,7 +204,7 @@ JSON 文件必须符合连接器所需的架构定义。 以下是 JSON 文件�
    .\PhysicalBadging.ps1 -tenantId d5723623-11cf-4e2e-b5a5-01d1506273g9 -appId 29ee526e-f9a7-4e98-a682-67f41bfd643e -appSecret MNubVGbcQDkGCnn -jobId b8be4a7d-e338-43eb-a69e-c513cd458eba -csvFilePath 'C:\Users\contosoadmin\Desktop\Data\physical_badging_data.json'
    ```
 
-   如果上传成功，脚本将显示" **上传成功"** 消息。
+   如果上传成功，脚本将显示"Upload **成功"** 消息。
 
    如果你有多个 JSON 文件，必须运行每个文件的脚本。
 
@@ -212,9 +213,9 @@ JSON 文件必须符合连接器所需的架构定义。 以下是 JSON 文件�
 
 ## <a name="step-5-monitor-the-physical-badging-connector"></a>步骤 5：监视物理保护连接器
 
-创建物理保护连接器并推送物理保护数据后，可以在 Microsoft 365 合规中心查看连接器和上载状态。 如果安排脚本定期自动运行，还可以在上次运行脚本后查看当前状态。
+创建物理保护连接器并推送物理保护数据后，可以在安全与合规中心内查看Microsoft 365状态。 如果安排脚本定期自动运行，还可以在上次运行脚本后查看当前状态。
 
-1. 转到左侧 [https://compliance.microsoft.com](https://compliance.microsoft.com/) 导航 **导航中的"数据** 连接器"，然后单击" 数据连接器"。
+1. 转到左侧 <https://compliance.microsoft.com> 导航 **导航中的"数据** 连接器"，然后单击" 数据连接器"。
 
 2. 单击 **"连接器"** 选项卡，然后选择物理保护符连接器以显示飞出页。 此页面包含有关连接器的属性和信息。
 
@@ -234,7 +235,7 @@ JSON 文件必须符合连接器所需的架构定义。 以下是 JSON 文件�
 
 You can user the Task Scheduler app in Windows to automatically run the script every day.
 
-1. 在本地计算机上，单击 **Windows"开始"** 按钮，然后键入 **"任务计划程序"。**
+1. 在本地计算机上，单击 **"Windows"** 按钮，然后键入 **"任务计划程序"。**
 
 2. 单击任务 **计划程序** 应用以打开它。
 
@@ -250,7 +251,7 @@ You can user the Task Scheduler app in Windows to automatically run the script e
 
 6. 选择 **"触发器"** 选项卡，单击 **"新建**"，然后执行以下操作：
 
-   1. 在 **"** 设置"下，选择" **每天** "选项，然后选择首次运行脚本的日期和时间。 脚本将每天在同一指定时间运行。
+   1. 在 **设置"** 下，选择"**每天**"选项，然后选择首次运行脚本的日期和时间。 脚本将每天在同一指定时间运行。
 
    2. 在 **"高级设置**"下，确保 **选中"已启用** "复选框。
 

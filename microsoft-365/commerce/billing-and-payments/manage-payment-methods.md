@@ -12,22 +12,23 @@ localization_priority: Priority
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 ms.custom:
 - TopSMBIssues
 - okr_SMB
 - AdminSurgePortfolio
-- commerce
+- commerce_billing
+- PPM_jmueller
+ms.reviewer: jamitche
 search.appverid:
 - MET150
 description: 了解如何在 Microsoft 365 管理中心管理你的付款方式。
-ms.date: ''
-ms.openlocfilehash: 1d28d082c0a7c123aadaa2230930326139fdcb8e
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.date: 04/02/2021
+ms.openlocfilehash: 4b35b7b8e874915e5f9c792686ff0e368292c802
+ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51579778"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52107035"
 ---
 # <a name="manage-payment-methods"></a>管理支付方式
 
@@ -35,7 +36,7 @@ ms.locfileid: "51579778"
 
 如果你的企业帐户具有帐单配置文件，并且你是帐单配置文件所有者或帐单配置文件参与者，可以使用由信用卡或发票付款支持的帐单配置文件进行购买或支付帐单。 如果你是帐单发票管理员，则只能使用帐单配置文件支付帐单。 若要了解有关帐单配置文件和角色的信息，请参阅 [帐单配置文件](manage-billing-profiles.md)。
 
-如果你的企业帐户没有帐单配置文件，任何全局管理员或帐单管理员可以管理和使用添加到企业帐户的任何银行帐户。 但是，你只能管理或使用你添加的信用卡。
+如果你的企业帐户没有帐单配置文件，任何全局管理员或帐单管理员可以管理和使用添加到企业帐户的任何银行帐户。但是，你只能管理或使用你添加的信用卡。
 
 > [!NOTE]
 > 某些国家和地区未提供使用银行帐户付款的选项。

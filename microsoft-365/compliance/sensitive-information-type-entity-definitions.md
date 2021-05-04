@@ -17,29 +17,18 @@ ms.collection:
 - M365-security-compliance
 hideEdit: true
 feedback_system: None
-description: 安全 (DLP) 中的数据丢失防护包括 80 种可供您用于 DLP 策略 &amp; 的敏感信息类型。 本文列出了所有这些敏感信息类型，并演示 DLP 策略在检测到每种类型时查找的信息。
-ms.openlocfilehash: 341ded0c4c7f6ff31074d17624c029e7f6187480
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+recommendations: false
+description: 安全 (DLP) 中的数据丢失防护包括 200 多种可供您用于 DLP 策略 &amp; 的敏感信息类型。 本文列出了所有这些敏感信息类型，并演示 DLP 策略在检测到每种类型时查找的信息。
+ms.openlocfilehash: 0f3de14466cf9d2ebf5550eaec002bd4dea6e435
+ms.sourcegitcommit: 1206319a5d3fed8d52a2581b8beafc34ab064b1c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50919708"
+ms.lasthandoff: 04/29/2021
+ms.locfileid: "52086725"
 ---
 # <a name="sensitive-information-type-entity-definitions"></a>敏感信息类型属性定义
 
-合规性中心 (DLP) 数据丢失防护包括许多可供 DLP 策略使用的敏感信息类型。 本文列出了所有这些敏感信息类型，并演示 DLP 策略在检测到每种类型时查找的信息。 敏感信息类型通过正则表达式或函数可以识别的模式定义。 确证性证据（如关键字和校验和）可用于标识敏感信息类型。 可信度和相似度也会在评估过程中使用。
-
-敏感信息类型需要以下订阅之一：
-- Microsoft 365 E3
-- Microsoft 365 E5
-
-敏感信息类型用于：
-
-- [数据丢失防护策略](data-loss-prevention-policies.md) 
-- [敏感度标签](sensitivity-labels.md)
-- [保留标签](retention.md)
-- [通信合规性](communication-compliance.md)
-- [自动标记策略](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-for-office-apps)
+合规性中心 (DLP) 数据丢失防护包括许多可供 DLP 策略使用的敏感信息类型。 本文列出了所有这些敏感信息类型，并演示 DLP 策略在检测到每种类型时查找的信息。 若要了解有关敏感信息类型的信息，请参阅 [敏感信息类型](sensitive-information-type-learn-about.md)
 
 ## <a name="aba-routing-number"></a>ABA 路由号码
 
@@ -154,6 +143,89 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - documento numero 
 - registro nacional de las personas 
 - rnp 
+   
+## <a name="argentina-unique-tax-identification-key-cuitcuil"></a>阿根廷唯一税务识别密钥 (CUIT/CUIL) 
+
+### <a name="format"></a>Format
+
+带破折号的十一个数字
+
+### <a name="pattern"></a>模式
+
+带破折号的十一个数字：
+- 20、23、24、27、30、33 或 34 中的两个数字
+- 连字符 (-) 
+- 八个数字
+- 连字符 (-) 
+- 一个检查数字
+
+### <a name="checksum"></a>校验和
+
+是
+
+### <a name="definition"></a>定义
+
+DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息时，具有很高的可信度：
+- 函数 `Func_Argentina_Unique_Tax_Key` 查找与模式匹配的内容。
+- 找到 的 `Keyword_Argentina_Unique_Tax_Key` 关键字。
+
+DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息，可信度中等：
+- 函数 `Func_Argentina_Unique_Tax_Key` 查找与模式匹配的内容。
+
+```xml
+    <!-- Argentina Unique Tax Identification Key (CUIT/CUIL) -->
+      <Entity id="98da3da1-9199-4571-b7c4-b6522980b507" patternsProximity="300" recommendedConfidence="75" relaxProximity="true">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Func_Argentina_Unique_Tax_Key" />
+          <Match idRef="Keyword_Argentina_Unique_Tax_Key" />
+        </Pattern>
+        <Pattern confidenceLevel="75">
+          <IdMatch idRef="Func_Argentina_Unique_Tax_Key" />
+        </Pattern>
+      </Entity>
+```
+
+### <a name="keywords"></a>关键字
+
+#### <a name="keyword_argentina_unique_tax_key"></a>Keyword_Argentina_Unique_Tax_Key
+
+- Clave Unica de Identificacion Tribut一
+- CUIT
+- 唯一的标识代码 
+- Clave Única de Identificación Tribut一
+- 唯一的树标识代码
+- CUIL
+- 唯一税务标识密钥
+- 唯一的位元标识密钥
+- 唯一的标识密钥
+- 唯一工作标识代码
+- 工作标识的唯一代码
+- 唯一工作标识密钥
+- 工作标识的唯一密钥
+- 唯一的税务识别代码
+- 税务识别的唯一密钥
+- 唯一人工标识代码
+- 唯一的人工标识代码
+- 唯一人工标识密钥
+- 唯一的人工标识密钥
+- tax ID
+- taxID#
+- taxId
+- 一些
+- tax number
+- tax no
+- tax#
+- tax#
+- 用户 ID
+- 用户编号
+- "不""不"。
+- 将#
+- 将#
+- tax identity
+- tax identification
+- Número de Identificación Fiscal
+- número de contribuyente
+   
    
 ## <a name="australia-bank-account-number"></a>澳大利亚银行帐号
 
@@ -355,12 +427,12 @@ DLP 策略在 300 个字符的邻近范围内检测到这种类型的敏感信�
 - 两个数字 
 - 五个数字或字母 (不区分大小写) 
 
-或
+OR
 
 - 一到两个可选字母 (不区分大小写)  
 - 四到九个数字
 
-或
+OR
 
 - 九个数字或字母 (不区分大小写) 
 
@@ -1286,7 +1358,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - testacs。<!--no-hyperlink-->com
 - s-int。<!--no-hyperlink-->net
 
-## <a name="azure-iot-connection-string"></a>Azure IoT 连接字符串
+## <a name="azure-iot-connection-string"></a>Azure IoT连接字符串
 
 ### <a name="format"></a>Format
 
@@ -1612,7 +1684,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - testacs。<!--no-hyperlink-->com
 - s-int。<!--no-hyperlink-->net
 
-## <a name="azure-storage-account-key-generic"></a>Azure 存储帐户密钥 (通用) 
+## <a name="azure-storage-account-key-generic"></a>Azure 存储常规 (帐户密钥) 
 
 ### <a name="format"></a>Format
 
@@ -2193,7 +2265,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - Legal entities 
 - Registration Status 
 - 商业版 
-- Company
+- 公司
 - CNPJ 
 - Cadastro Nacional da Pessoa Jurídica 
 - Cadastro Geral de Contribuintes 
@@ -3392,9 +3464,12 @@ DLP 策略在 300 个字符的邻近范围内检测到这种类型的敏感信�
 - codigo de seguranca
 - codigo de segurança
 - código de seguranca
-- cód。 segurança
-- cod。 seguranca
-- cod。 segurança
+- 
+cód. segurança
+- cod. seguranca
+
+- cod. segurança
+
 - cód。 seguranca
 - cód segurança
 - cod seguranca
@@ -3574,7 +3649,8 @@ DLP 策略在 300 个字符的邻近范围内检测到这种类型的敏感信�
 - no do cartão
 - no do cartao
 - 不。 do cartão
-- 不。 do cartao
+- no. do cartao
+
 - クレジットカード番号
 - クレジットカードナンバー
 - クレジットカード＃
@@ -5438,7 +5514,7 @@ eesti kodaniku passi number passinumbrid document number document no dokumendi n
 - 到期日期
 
 
-## <a name="eu-debit-card-number"></a>欧盟借记卡号
+## <a name="eu-debit-card-number"></a>欧盟借记卡号码
 
 ### <a name="format"></a>Format
 
@@ -5606,11 +5682,15 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - no de tarjeta 
 - no do cartao 
 - no do cartão 
-- 不。 de tarjeta 
-- 不。 do cartao 
-- 不。 do cartão 
+- no. de tarjeta
+ 
+- no. do cartao
+ 
+- no. do cartão
+ 
 - nr carta 
-- nr. carta 
+- nr. carta
+ 
 - numeri di scheda 
 - numero carta 
 - numero de cartao 
@@ -5629,7 +5709,8 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - nº de tarjeta 
 - nº do cartao 
 - nº do cartão 
-- n？ do cartão 
+- nº. do cartão
+ 
 - número de cartao 
 - número de cartão 
 - número de tarjeta 
@@ -5681,10 +5762,14 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - cod seguranca 
 - cod segurança 
 - cod sicurezza 
-- cod。 seg 
-- cod。 seguranca 
-- cod。 segurança 
-- cod。 sicurezza 
+- cod. seg
+ 
+- cod. seguranca
+ 
+- cod. segurança
+ 
+- cod. sicurezza
+ 
 - codice di sicurezza 
 - codice di verifica 
 - codigo 
@@ -5701,8 +5786,10 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - cvv2 
 - cód seguranca 
 - cód segurança 
-- cód。 seguranca 
-- cód。 segurança 
+- cód. seguranca
+ 
+- cód. segurança
+ 
 - código 
 - código de seguranca 
 - código de segurança 
@@ -5714,8 +5801,10 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - kreditittenprufnummer 
 - kreditittenprüfnummer 
 - kwestieaantal 
-- 不。 dell'edizione 
-- 不。 di sicurezza 
+- no. dell'edizione
+ 
+- no. di sicurezza
+ 
 - numero de securite 
 - numero de verificacao 
 - numero dell'edizione 
@@ -6759,14 +6848,16 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - national id
 - national identification
 - no d'identité
-- 不。 d'identité
+- 
+no. d'identité
 - numéro d'assurance
 - numéro d identité
 - numero d'identite
 - numéro de sécu
 - numéro de sécurité sociale
 - no d'identite
-- 不。 d'identite
+- 
+no. d'identite
 - ssn
 - ssn#
 - sécurité sociale
@@ -8277,7 +8368,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 10 个数字：
   
 - 一个数字必须为"8" 
-- 八个数字
+- 八位数字
 - 一个检查数字
     
 ### <a name="checksum"></a>校验和
@@ -11685,6 +11776,132 @@ DLP 策略在 300 个字符的邻近范围内检测到这种类型的敏感信�
 - 唯一标识号
 - uniqueidentityno#
 
+
+## <a name="medicare-beneficiary-identifier-mbi-card"></a>一个 MBI (的) 标识符
+
+### <a name="format"></a>Format
+
+十二字符字母数字模式
+  
+### <a name="pattern"></a>模式
+
+- 1 到 9 之间的一个数字
+- 一个字母，不包括 S、L、O、I、B、Z
+- 一个数字或字母，不包括 S、L、O、I、B、Z
+- 一个数字
+- 可选连字符
+- 一个字母，不包括 S、L、O、I、B、Z
+- 一个数字或字母，不包括 S、L、O、I、B、Z
+- 一个数字
+- 可选连字符
+- 两个字母，不包括 S、L、O、I、B、Z
+- 两个数字
+    
+### <a name="checksum"></a>校验和
+
+否
+  
+### <a name="definition"></a>定义
+
+DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息时，具有很高的可信度：
+- 正则表达式查找  `Regex_mbi_card` 与模式匹配的内容。 
+- 找到 的  `Keyword_mbi_card` 关键字。 
+    
+DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息，可信度中等：
+- 正则表达式查找  `Regex_mbi_card` 与模式匹配的内容。 
+    
+```xml
+    <!-- Medicare Beneficiary Identifier (MBI) card -->
+      <Entity id="f753a286-f5cc-47e6-a592-4be25fd02591" patternsProximity="300" recommendedConfidence="75" relaxProximity="true">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Regex_mbi_card" />
+          <Match idRef="Keyword_mbi_card" />
+        </Pattern>
+        <Pattern confidenceLevel="75">
+          <IdMatch idRef="Regex_mbi_card" />
+        </Pattern>
+      </Entity>
+```
+
+### <a name="keywords"></a>关键字
+
+#### <a name="keyword_mbi_card"></a>Keyword_mbi_card
+
+- mbi
+- mbi#
+- 一名收入#
+- 一个优势标识符
+- 一名受益者否
+- 一名收入者编号
+- 一名收入#
+
+
+## <a name="mexico-unique-population-registry-code-curp"></a>墨西哥唯一总体注册表代码 (CURP) 
+
+### <a name="format"></a>Format
+
+18 个字符字母数字模式
+  
+### <a name="pattern"></a>模式
+
+- 四个字母 (不区分大小写) 
+- 六个数字，表示有效日期
+- 字母 - H/h 或 M/m
+- 指示有效"墨西哥"状态代码的两个字母
+- 三个字母
+- 一个字母或数字
+- 一个数字
+    
+### <a name="checksum"></a>校验和
+
+否
+  
+### <a name="definition"></a>定义
+
+DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息时，具有很高的可信度：
+- 函数  `Func_mexico_population_registry_code` 查找与模式匹配的内容。 
+- 找到 的  `Keyword_mexico_population_registry_code` 关键字。 
+    
+DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息，可信度中等：
+- 函数  `Func_mexico_population_registry_code` 查找与模式匹配的内容。 
+    
+```xml
+    <!-- Mexico Unique Population Registry Code (CURP) -->
+      <Entity id="e905ad4d-5a74-406d-bf36-b1efca798af4" patternsProximity="300" recommendedConfidence="75" relaxProximity="true">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Func_mexico_population_registry_code" />
+          <Match idRef="Keyword_mexico_population_registry_code" />
+        </Pattern>
+        <Pattern confidenceLevel="75">
+          <IdMatch idRef="Func_mexico_population_registry_code" />
+        </Pattern>
+      </Entity>
+```
+
+### <a name="keywords"></a>关键字
+
+#### <a name="keyword_mexico_population_registry_code"></a>Keyword_mexico_population_registry_code
+
+- Clave Única de Registro de Población
+- Clave Unica de Registro de Poblacion
+- 唯一填充注册表代码 
+- 唯一总体代码
+- CURP
+- 个人 ID
+- 唯一 ID
+- personalid
+- personalidnumber
+- uniqueidkey
+- uniqueidnumber
+- clave única
+- clave unica
+- clave 个人 Identidad
+- personal Identidad Clave
+- ClaveÚnica
+- claveunica
+- clavepersonalIdentidad
+
+
 ## <a name="netherlands-citizens-service-bsn-number"></a>荷兰公民服务号码 (BSN) 号码
 
 ### <a name="format"></a>Format
@@ -12787,7 +13004,8 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - Nazwa i nr dowodu osobistego
 - Nazwa i nr dowodu tożsamości
 - Dowód Tożsamości
-- 的一个功能。 os.
+- dow. os.
+
 
    
 ## <a name="poland-national-id-pesel"></a>波兰国家/ (PESEL) 
@@ -16211,7 +16429,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 #### <a name="keyword_thai_citizen_id"></a>Keyword_thai_citizen_Id
 
-- ID Number
+- ID 编号
 - 标识号
 - บัตรประชาชน
 - รหัสบัตรประชาชน
@@ -16554,7 +16772,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - 六个数字
 - "A"、B、C 或"D" (类似前缀，后缀中只允许某些字符;不区分大小写) 
 
-或
+OR
 
 - 两个字母
 - 空格或短划线

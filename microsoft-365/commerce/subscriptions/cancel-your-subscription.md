@@ -12,20 +12,21 @@ localization_priority: Priority
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
-- commerce
+- commerce_subscriptions
+- PPM_jmueller
+ms.reviewer: jkinma
 search.appverid:
 - MET150
 description: 了解如何取消 Microsoft 365 商业版试用或付费订阅。
-ms.date: ''
-ms.openlocfilehash: 2163462ae206871d66155331096337c29d6a87c2
-ms.sourcegitcommit: 437bdbf3f99610869811e80432a59b5f244f7a87
+ms.date: 04/08/2021
+ms.openlocfilehash: f052a08cfe0e7582690864556cfc3039d6caf99c
+ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/08/2021
-ms.locfileid: "51644640"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52106998"
 ---
 # <a name="cancel-your-subscription"></a>取消订阅
 
@@ -101,9 +102,9 @@ ms.locfileid: "51644640"
 
 #### <a name="change-your-domain-nameserver-records-if-needed"></a>更改域名服务器记录（若需要）
 
-如果设置了自定义域，则添加 DNS 记录以便此域使用 Microsoft 365 服务。 在删除域之前，请确保在 DNS 主机上更新 DNS 记录，如域的 MX 记录。
+如果设置了自定义域，则添加 DNS 记录以便此域使用 Microsoft 365 服务。在删除域之前，请确保在 DNS 主机上更新 DNS 记录，如域的 MX 记录。
 
-例如，在 DNS 主机上更改 MX 记录。 发送到你的域的电子邮件不再发到你的 Microsoft 地址，转而发到新的电子邮件提供商。 （MX 记录确定针对你的域的电子邮件发送到何处。）
+例如，在 DNS 主机上更改 MX 记录。发送到你的域的电子邮件不再发到你的 Microsoft 地址，转而发到新的电子邮件提供商。（MX 记录确定针对你的域的电子邮件发送到何处。）
 
 - 如果名称服务器 (NS) 记录 [当前指向 Office 365 名称服务器](../../admin/setup/add-domain.md)，则仅在更改 NS 记录以指向新的 DNS 主机（参见步骤 2）后，对 MX 记录的更改才会生效。
 
@@ -121,7 +122,7 @@ ms.locfileid: "51644640"
 
 ### <a name="save-your-data"></a>保存数据
 
-取消生效后，你的用户将失去对其数据的访问权限。 取消订阅前，请让他们将其 OneDrive for Business 或 SharePoint Online 文件保存到其他位置。 将会在取消订阅的 30 天之后、180 天之前删除遗留的任何客户数据。
+取消生效后，你的用户将失去对其数据的访问权限。取消订阅前，请让他们将其 OneDrive for Business 或 SharePoint Online 文件保存到其他位置。将会在取消订阅的 30 天之后、180 天之前删除遗留的任何客户数据。
 
 - 若要将电子邮件、联系人、任务和日历信息移动到另一个帐户，请参阅[将电子邮件、联系人和日历导出或备份到 Outlook .pst 文件](https://support.microsoft.com/office/14252b52-3075-4e9b-be4e-ff9ef1068f91.aspx)。
 

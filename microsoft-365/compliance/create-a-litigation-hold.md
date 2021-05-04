@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 3/13/2018
+ms.date: ''
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -16,12 +16,12 @@ description: 了解如何将邮箱置于诉讼保留状态，在调查期间保�
 ms.custom:
 - seo-marvel-mar2020
 - seo-marvel-apr2020
-ms.openlocfilehash: 046ee6fdc7c42026b1a69805883175982e3100b7
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 81d3bf7bba0aadbcd2d52b5f7707caeea96e26c1
+ms.sourcegitcommit: 07dea2aa98daf0c4086f8590375167830027c802
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50908396"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51750056"
 ---
 # <a name="create-a-litigation-hold"></a>创建诉讼保留
 
@@ -30,21 +30,23 @@ ms.locfileid: "50908396"
 下面是创建诉讼保留时发生的情况。
   
 - 在保留期间，用户永久删除的项目将保留在用户邮箱的"可恢复的项目"文件夹中。
-    
-- 用户从"可恢复的项目"文件夹中清除的项目将在保留期间保留。
-    
-- "可恢复的项目"文件夹的存储配额从 30 GB 增加到 110 GB。
-    
-- 用户的主邮箱和存档邮箱中的项目将保留
-    
-## <a name="assign-an-exchange-online-plan-2-license"></a>分配 Exchange Online 计划 2 许可证
 
-- 若要将 Exchange Online 邮箱置于诉讼保留状态，必须为其分配 Exchange Online 计划 2 许可证。 如果为邮箱分配了 Exchange Online 计划 1 许可证，必须为其分配单独的 Exchange Online Archiving 许可证才能将其置于保留状态。
-    
+- 用户从"可恢复的项目"文件夹中清除的项目将在保留期间保留。
+
+- "可恢复的项目"文件夹的存储配额从 30 GB 增加到 110 GB。
+
+- 用户的主邮箱和存档邮箱中的项目将保留
+
+## <a name="assign-an-exchange-online-plan-2-license"></a>分配Exchange Online计划 2 许可证
+
+若要将Exchange Online邮箱置于诉讼保留状态，必须为其分配一个Exchange Online 2 许可证。 如果为邮箱分配了Exchange Online计划 1 许可证，您必须为其分配单独的Exchange Online Archiving许可证才能将其置于保留状态。
+
+> [!NOTE]
+> 对于Office 365 教育版组织，诉讼保留在 Office 365 A1订阅中受支持，其中包括Exchange Online附加功能的 Exchange Online 计划 1 许可证。 有关详细信息，请参阅服务Exchange Online中的"Office 365 教育版[功能"部分](/office365/servicedescriptions/office-365-platform-service-description/office-365-education#exchange-online-features)。
 
 ## <a name="place-a-mailbox-on-litigation-hold"></a>将邮箱置于诉讼保留
 
-下面是使用 Exchange 管理中心将邮箱置于诉讼保留中的步骤。
+下面是使用管理中心将邮箱置于诉讼保留Exchange的步骤。
 
 1. 转到 [https://outlook.office.com/ecp](https://outlook.office.com/ecp) ，然后使用全局管理员帐户登录。
 
@@ -60,21 +62,21 @@ ms.locfileid: "50908396"
     
     - **诉讼保留 (天)** - 使用此框可以创建基于时间保留，并指定邮箱项目在置于诉讼保留时保留的时间。 持续时间从接收或创建邮箱项目的日期开始计算。 当特定项目的保留期到期时，将不再保留该项目。 如果保留此框为空，项目将无限期保留或一直保留到删除保留。 使用天指定持续时间。
     
-    - **注意** - 使用此框通知用户其邮箱已置于诉讼保留状态。 如果用户使用的是 Outlook 2010 或更高版本，则注释将显示在用户邮箱的"帐户信息"页上。 若要访问此页面，用户可以单击"Outlook **中的** 文件"。
+    - **注意** - 使用此框通知用户其邮箱已置于诉讼保留状态。 如果用户使用的是 2010 或更高版本，则注释将显示在用户邮箱的"帐户信息"Outlook页上。 若要访问此页面，用户可以单击"Outlook"中的"文件"。 
     
-    - **URL** - 使用此框将用户引导到网站，详细了解诉讼保留。 如果用户使用的是 Outlook 2010 或更高版本，则此 URL 将显示在用户邮箱的"帐户信息"页上。 若要访问此页面，用户可以 **单击"Outlook** 中的文件"。
+    - **URL** - 使用此框将用户引导到网站，详细了解诉讼保留。 如果用户使用的是 Outlook 2010 或更高版本，则此 URL 将显示在用户邮箱的"帐户信息"页上。 若要访问此页面，用户可以单击"Outlook"。 
 
 7. 在 **"诉讼** 保留 **"** 页上单击"保存"，然后在 **邮箱属性页上** 单击"保存"。
 
 ### <a name="create-a-litigation-hold-using-powershell"></a>使用 PowerShell 创建诉讼保留
 
-您还可以在 [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)中运行以下命令来创建诉讼保留：
+您还可以通过运行 PowerShell 中的以下命令来创建[Exchange Online保留](/powershell/exchange/connect-to-exchange-online-powershell)：
 
 ```powershell
 Set-Mailbox <username> -LitigationHoldEnabled $true
 ```
 
-上一个命令无限期保留项目，因为未指定保留持续时间。 若要创建基于时间保留，请运行以下命令：
+上一个命令无限期保留项目，因为未指定保留持续时间。 若要创建基于时间的保留，请运行以下命令：
 
 ```powershell
 Set-Mailbox <username> -LitigationHoldEnabled $true -LitigationHoldDuration <number of days>

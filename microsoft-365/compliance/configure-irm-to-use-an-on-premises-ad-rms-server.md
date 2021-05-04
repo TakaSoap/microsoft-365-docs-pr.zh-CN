@@ -15,20 +15,20 @@ search.appverid:
 ms.assetid: 3ecde857-4b7c-451d-b4aa-9eeffc8a8c61
 ms.collection:
 - M365-security-compliance
-description: 了解如何在 Exchange Online 中配置信息权限 (IRM) ，以在 AD RMS (Active Directory 权限管理服务) 服务器。
+description: 了解如何在 Exchange Online 中配置信息权限 (IRM) ，以使用 Active Directory 权限管理服务 (AD RMS) 服务器。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a520a3e55ae1137a0a4cc417dc68097d0793d978
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 5e430f9c6ad5d377b568d22e9de53ab79d19165a
+ms.sourcegitcommit: 2655bb0ccd66279c35be2fadbd893c937d084109
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50908562"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51876117"
 ---
 # <a name="configure-irm-to-use-an-on-premises-ad-rms-server"></a>将 IRM 配置为使用本地 AD RMS 服务器
   
 为了与本地部署一同使用，Exchange Online 中的信息权限管理 (IRM) 使用 Active Directory Rights Management Services (AD RMS) ，这是 Windows Server 2008 及更高版本中的一种信息保护技术。 通过将 AD RMS 权限策略模板应用于电子邮件，可将 IRM 保护应用于电子邮件。 权限附加到邮件本身，以便联机和脱机以及组织防火墙内外进行保护。
   
-本主题显示了如何将 IRM 配置为使用 AD RMS 服务器。 有关将 Office 365 邮件加密的新功能与 Azure Active Directory 和 Azure 权限管理一同使用的信息，请参阅 [Office 365 邮件加密常见问题解答](./ome-faq.md)。
+本主题显示了如何将 IRM 配置为使用 AD RMS 服务器。 有关将新功能用于 Office 365 邮件加密 和 Azure Azure Active Directory的信息，请参阅 Office 365 邮件加密[FAQ](./ome-faq.yml)。
   
 有关 Exchange Online 中 IRM 的详细信息，请参阅[Exchange Online 中的信息权限管理](information-rights-management-in-exchange-online.md)。
   
@@ -42,10 +42,10 @@ ms.locfileid: "50908562"
 
 - 有关如何安装和配置 Windows PowerShell 以及连接到服务的详细信息，请参阅[使用远程 PowerShell 连接到 Exchange Online](/powershell/exchange/connect-to-exchange-online-powershell)。
 
-- 有关可能适用于本主题中的过程的键盘快捷方式的信息，请参阅[Keyboard shortcuts for the Exchange admin center in Exchange Online。](/Exchange/accessibility/keyboard-shortcuts-in-admin-center)
+- 有关可能适用于本主题中的过程的键盘快捷方式的信息，请参阅 Exchange 管理中心的键盘[Exchange Online。](/Exchange/accessibility/keyboard-shortcuts-in-admin-center)
 
 > [!TIP]
-> 是否有任何疑问？ 在 Exchange 论坛中寻求帮助。 请访问以下论坛：[Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612)、[Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542)或 [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351)。 
+> 遇到问题了吗？请在 Exchange 论坛中寻求帮助。 请访问以下论坛：[Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612)、[Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542)或 [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351)。 
   
 ## <a name="how-do-you-do-this"></a>您该如何做？
 <a name="sectionSection1"> </a>
@@ -98,11 +98,11 @@ Import-RMSTrustedPublishingDomain -FileData $([byte[]](Get-Content -Encoding byt
   
 #### <a name="how-do-you-know-this-step-worked"></a>如何判断这一步生效？
 
-若要验证是否成功导入了 TPD，请运行 **Get-RMSTrustedPublishingDomain** cmdlet 检索 Exchange Online 组织中 TPD。 有关详细信息，请参阅 [Get-RMSTrustedPublishingDomain](/powershell/module/exchange/get-rmstrustedpublishingdomain) 中的示例。
+若要验证是否成功导入了 TPD，请运行 **Get-RMSTrustedPublishingDomain** cmdlet 检索 Exchange Online 中的 TPD。 有关详细信息，请参阅 [Get-RMSTrustedPublishingDomain](/powershell/module/exchange/get-rmstrustedpublishingdomain) 中的示例。
   
 ### <a name="step-3-use-the-exchange-management-shell-to-distribute-an-ad-rms-rights-policy-template"></a>步骤 3：使用 Exchange 命令行管理程序 来分发 AD RMS 权限策略模板
 
-导入 TPD 之后，必须确保已分发 AD RMS 权限策略模板。 分布式模板对 Outlook 网页版 (以前称为Outlook Web App) 用户，然后用户可以将模板应用到电子邮件。
+导入 TPD 之后，必须确保已分发 AD RMS 权限策略模板。 分布式模板对 Web Outlook用户可见 (以前称为 Outlook Web App) 用户，然后用户可以将模板应用到电子邮件。
   
 若要返回默认 TPD 中包含的所有模板的列表，请运行以下命令：
   
@@ -110,7 +110,7 @@ Import-RMSTrustedPublishingDomain -FileData $([byte[]](Get-Content -Encoding byt
 Get-RMSTemplate -Type All | fl
 ```
 
-如果  _Type_ 参数的值为  `Archived`，则模板对用户不可见。 在 Outlook 网页版中，只有默认 TPD 中的分布式模板可用。
+如果  _Type_ 参数的值为  `Archived`，则模板对用户不可见。 只有默认 TPD 中的分布式模板Outlook Web 上可用。
   
 若要分发模板，请运行以下命令：
   
@@ -168,4 +168,4 @@ Set-IRMConfiguration -InternalLicensingEnabled $true
   
 - 使用 **Test-IRMConfiguration** cmdlet 测试 IRM 功能。 有关详细信息，请参阅 [Test-IRMConfiguration](/powershell/module/exchange/test-irmconfiguration) 中的"示例 1"。
 
-- 在 Outlook 网页中撰写新邮件，然后通过从"更多选项图标"菜单中选择"设置权限" ( IRM ![ ](../media/ITPro-EAC-MoreOptionsIcon.gif) 保护) 。
+- 在 Web Outlook中撰写新邮件，然后通过从"更多选项"图标菜单中选择"设置权限"选项 ( IRM ![ ](../media/ITPro-EAC-MoreOptionsIcon.gif) 保护) 。

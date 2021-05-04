@@ -9,7 +9,7 @@ ms.date: ''
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Priority
+localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 - m365solution-mip
@@ -18,16 +18,16 @@ search.appverid:
 - MOE150
 - MET150
 description: 活动资源管理器通过查看和筛选用户对你的标记内容执行的操作来完善数据分类功能的功能。
-ms.openlocfilehash: 6825c00373617011db28fa484f272086f887ea40
-ms.sourcegitcommit: 7ecd10b302b3b3dfa4ba3be3a6986dd3c189fbff
-ms.translationtype: HT
+ms.openlocfilehash: 414ef4e5d9f6472180a5eaef391d3eba33463b02
+ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "49921630"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52114004"
 ---
 # <a name="get-started-with-activity-explorer"></a>活动资源管理器入门
 
-数据分类概述和内容浏览器选项卡使你可以查看已发现和已标记的内容以及该内容的位置。 活动资源管理器通过允许你监视对已标记内容所执行的操作来完善此功能套件。 活动资源管理器提供历史视图。
+通过[数据分类概述](data-classification-overview.md)[和内容](data-classification-content-explorer.md)资源管理器选项卡，您可以了解已发现和标记的内容以及该内容位于何处。 活动资源管理器通过允许你监视对已标记内容所执行的操作来完善此功能套件。 活动资源管理器提供已标记内容上活动的历史视图。 活动信息收集自活动Microsoft 365统一审核日志，在活动资源管理器 UI 中转换和提供。 
 
 ![占位符屏幕截图概述活动资源管理器](../media/data-classification-activity-explorer-1.png)
 
@@ -43,6 +43,7 @@ ms.locfileid: "49921630"
 - DLP 策略
 
 
+
 ## <a name="prerequisites"></a>必备条件
 
 访问和使用数据分类的每个帐户，都必须拥有从以下其中一个订阅向其分配的许可证：
@@ -56,7 +57,11 @@ ms.locfileid: "49921630"
 
 ### <a name="permissions"></a>权限
 
- 若要访问“活动资源管理器”选项卡，必须在其中任一角色或角色组中向帐户分配成员身份。
+ 若要获取对活动资源管理器选项卡的访问权限，必须为帐户显式分配这些角色组中任何一个的成员身份或明确授予该角色。
+
+<!--
+> [!IMPORTANT]
+> Access to Activity explorer via the Security reader or Device Management role groups or other has been removed-->
 
 **Microsoft 365 角色组**
 
@@ -65,21 +70,49 @@ ms.locfileid: "49921630"
 - 安全管理员
 - 合规性数据管理员
 
-## <a name="activity-type"></a>活动类型
+**Microsoft 365角色**
 
-Microsoft 365 监视和报告跨 SharePoint Online 和 OneDrive 和的活动类型，例如：
+- 合规性管理员
+- 安全管理员
+
+## <a name="activity-types"></a>活动类型
+
+活动资源管理器从多个活动源的审核日志中收集活动信息。 有关哪些标签活动可用于活动资源管理器的更多详细信息，请参阅活动资源管理器中可用的标签 [事件](data-classification-activity-explorer-available-events.md)。
+
+ Office 本机应用程序、Azure 信息保护外接程序、SharePoint Online 中的敏感度标签活动和保留标签活动Exchange Online (仅) 和 OneDrive。  示例如下：
 
 - 已应用的标签
 - 已更改（已升级、已降级或已删除）的标签
 - 自动标记模拟
+- 文件读取 
 
-了解对敏感的已标记内容采取何种措施的价值在于，你可以查看已经实施的控件（例如[数据丢失防护策略](data-loss-prevention-policies.md)）是否有效。 如果无效，或者发现某项意外内容（如大量项目被标记为`highly confidential`并降级为`general`），则可管理各种策略并采取新操作来限制意外行为。
+**Azure 信息保护 (AIP) 扫描程序和 AIP 客户端**
+
+- 已应用保护
+- 保护已更改
+- 已删除保护
+- 发现的文件 
+
+活动资源管理器还通过终结点数据丢失防护 (**DLP**) 收集来自 Exchange Online、SharePoint Online、OneDrive、Teams 聊天和频道 (预览) 、本地 SharePoint 文件夹和库以及本地文件共享以及 Windows 10 设备的 **DLP** 策略匹配事件。 设备中的一Windows 10事件包括文件：
+
+- deletions
+- creations
+- 复制到剪贴板
+- 修改内容
+- 阅读
+- 已打印
+- 已重命名
+- 复制到网络共享
+- 由不允许的应用访问 
+
+了解对敏感标记内容采取的操作的价值是，你可以看到已放置的控件（如数据丢失防护）是否有效。 [](dlp-learn-about-dlp.md) 如果无效，或者发现某项意外内容（如大量项目被标记为`highly confidential`并降级为`general`），则可管理各种策略并采取新操作来限制意外行为。
 
 > [!NOTE]
 > 活动资源管理器当前不监视 Exchange Online 的保留活动。
 
 ## <a name="see-also"></a>另请参阅
+
 - [了解敏感度标签](sensitivity-labels.md)
 - [了解保留策略和保留标签](retention.md)
-- [敏感信息类型属性定义](sensitive-information-type-entity-definitions.md)
-
+- [了解敏感信息类型](sensitive-information-type-learn-about.md)
+- [了解数据分类](data-classification-overview.md)

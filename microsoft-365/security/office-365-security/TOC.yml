@@ -204,18 +204,10 @@
           href: ../../compliance/alert-policies.md
         - name: 安全与合规中心内的智能报告和见解
           href: reports-and-insights-in-security-and-compliance.md
-        - name: 启用报表消息加载项
-          href: enable-the-report-message-add-in.md
-        - name: 启用“报告网络钓鱼”加载项
-          href: enable-the-report-phish-add-in.md
-        - name: 安装和使用垃圾邮件报告加载项
-          href: junk-email-reporting-add-in-for-microsoft-outlook.md
+        - name: 在 Outlook 中报告误报和漏报
+          href: report-false-positives-and-false-negatives.md
         - name: 独立 EOP 中的邮件流规则（传输规则）
           href: mail-flow-rules-transport-rules-0.md
-        - name: 在 Outlook 网页版中举报垃圾电子邮件和网络钓鱼
-          href: report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md
-        - name: 在 Outlook for iOS和Android 中报告垃圾电子邮件和网络钓鱼
-          href: report-junk-email-and-phishing-scams-in-outlook-for-ios-and-android.md
         - name: 在独立 EOP 中运行管理员角色组报告
           href: run-an-administrator-role-group-report-in-eop-eop.md
     - name: 调查
@@ -384,7 +376,7 @@
             - name: 在独立 EOP 中管理角色组
               href: manage-admin-role-group-permissions-in-eop.md
     - name: Microsoft 365 Defender
-      href: ../index.yml
+      href: ../defender/index.yml
     - name: Microsoft Defender for Endpoint
       href: ../defender-endpoint/index.yml
     - name: Microsoft Defender for Identity

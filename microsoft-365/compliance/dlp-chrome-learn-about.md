@@ -19,16 +19,16 @@ ms.collection:
 search.appverid:
 - MET150
 description: Microsoft 合规性扩展可扩展对文件活动的监视和控制，并扩展对 Google Chrome 浏览器的保护操作
-ms.openlocfilehash: 38609b6920478085a28c7ec510bc5c9c4229543d
-ms.sourcegitcommit: 450661071e44854f0a0a92af648f76d907767b71
+ms.openlocfilehash: c8a5795b3be8b393fd3a934504449bf6db0c2f01
+ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "50826225"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52113378"
 ---
 # <a name="learn-about-the-microsoft-compliance-extension-preview"></a>了解 Microsoft 合规性扩展（预览版）
 
-[终结点数据丢失防护（终结点 DLP）](endpoint-dlp-learn-about.md) 将[Microsoft 365 数据丢失防护 (DLP)](data-loss-prevention-policies.md) 的活动监视和保护功能扩展到 Windows 10 设备上的敏感项目。 将设备加入 Microsoft 365 合规性解决方案中后，即可在[活动资源管理器](data-classification-activity-explorer.md)中看到有关用户对敏感项目执行的操作的信息，你可以通过 [DLP 策略](create-test-tune-dlp-policy.md)对这些项目执行保护性操作。
+[终结点数据丢失防护（终结点 DLP）](endpoint-dlp-learn-about.md) 将[Microsoft 365 数据丢失防护 (DLP)](dlp-learn-about-dlp.md) 的活动监视和保护功能扩展到 Windows 10 设备上的敏感项目。 将设备加入 Microsoft 365 合规性解决方案中后，即可在[活动资源管理器](data-classification-activity-explorer.md)中看到有关用户对敏感项目执行的操作的信息，你可以通过 [DLP 策略](create-test-tune-dlp-policy.md)对这些项目执行保护性操作。
 
 在 Windows 10 设备上安装 Microsoft 合规性扩展后，组织可以在用户尝试使用 Google Chrome 访问或将敏感项目上传到云服务时进行监视，并可通过 DLP 执行保护操作。  
 
@@ -60,7 +60,7 @@ Microsoft 终结点 DLP 使你可以审核和管理用户对运行 Windows 10 �
 - [了解 Microsoft 365 终结点数据丢失防护](endpoint-dlp-learn-about.md)
 - [Microsoft 终结点数据丢失防护入门](endpoint-dlp-getting-started.md)
 - [使用 Microsoft 终结点数据丢失防护](endpoint-dlp-using.md)
-- [数据丢失防护概述](data-loss-prevention-policies.md)
+- [了解数据丢失防护](dlp-learn-about-dlp.md)
 - [创建、测试和优化 DLP 策略](create-test-tune-dlp-policy.md)
 - [活动资源管理器入门](data-classification-activity-explorer.md)
 - [Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/)

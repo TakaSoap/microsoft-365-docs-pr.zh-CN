@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 介绍了如何创建和发布保留标签，以便能够在应用中应用它们，从而保留所需内容，并删除不需要内容。
-ms.openlocfilehash: c327081109fe9d7c4d85d4cf8f01a9e5466432d1
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 7c13158d9ce2857c01cad60c77b6f27bce6d3b6b
+ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50908416"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52107644"
 ---
 # <a name="create-retention-labels-and-apply-them-in-apps"></a>创建保留标签并将其应用到应用中
 
@@ -51,9 +51,9 @@ ms.locfileid: "50908416"
 
 ## <a name="how-to-create-and-publish-retention-labels"></a>如何创建和发布保留标签
 
-首先，创建保留标签。 然后，创建标签策略，让标签可以在应用中应用。
+首先，创建保留标签。然后，创建标签策略，让标签可以在应用中应用。
 
-创建和配置保留标签的位置取决于你是否使用记录管理。 针对这两种情况提供了说明。
+创建和配置保留标签的位置取决于你是否使用记录管理。针对这两种情况提供了说明。
 
 ### <a name="step-1-create-retention-labels"></a>第 1 步：创建保留标签
 
@@ -102,7 +102,7 @@ ms.locfileid: "50908416"
 
 ## <a name="when-retention-labels-become-available-to-apply"></a>当保留标签可应用时
 
-如果你将保留标签发布到 SharePoint 或 OneDrive，这些标签通常会在 1 天内出现，以供最终用户选择。 不过，最长可能需要 7 天才能显示。 
+如果你将保留标签发布到 SharePoint 或 OneDrive，这些标签通常会在 1 天内出现，以供最终用户选择。不过，最长可能需要 7 天才能显示。 
 
 如果你将保留标签发布到 Exchange，这些保留标签最长可能需要 7 天才能向最终用户显示，并且邮箱至少必须包含 10MB 数据。
 
@@ -123,7 +123,7 @@ ms.locfileid: "50908416"
 
 ### <a name="how-to-check-on-the-status-of-retention-labels-published-to-exchange"></a>如何检查发布到 Exchange 的保留标签的状态
 
-在 Exchange Online 中，保留标签通过每 7 天运行一次的进程向最终用户提供。 通过 Powershell，可看到此进程上次运行的时间，并进而确定其再次运行的时间。
+在 Exchange Online 中，保留标签通过每 7 天运行一次的进程向最终用户提供。通过 Powershell，可看到此进程上次运行的时间，并进而确定其再次运行的时间。
   
 1. [连接到 Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)。
     
@@ -294,7 +294,7 @@ Some settings can't be changed after the label or policy is created and saved, w
 
 ### Deleting retention labels
 
-You can delete retention labels that aren't currently included in any retention label policies, that aren't configured for event-based retention, or mark items as regulatory records. The ability to delete retention labels that mark items as records is currently rolling out in preview.
+You can delete retention labels that aren't currently included in any retention label policies, that aren't configured for event-based retention, or mark items as regulatory records.
 
 For retention labels that you can delete, if they have been applied to items, the deletion fails and you see a link to content explorer to identify the labeled items.
 

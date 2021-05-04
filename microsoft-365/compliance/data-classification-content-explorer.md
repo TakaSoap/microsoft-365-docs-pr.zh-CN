@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 内容资源管理器可用于在本机查看标记的项目。
-ms.openlocfilehash: 19ad68d3c32046754e366919e8c4e66336945624
-ms.sourcegitcommit: d354727303d9574991b5a0fd298d2c9414e19f6c
+ms.openlocfilehash: b39dd09012e7cde6c19ea88a0915154da84c712a
+ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "50080721"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52114212"
 ---
 # <a name="get-started-with-content-explorer"></a>内容资源管理器入门
 
@@ -82,7 +82,7 @@ ms.locfileid: "50080721"
 
 ### <a name="sensitive-information-types"></a>敏感信息类型
 
-[DLP 策略](data-loss-prevention-policies.md)可帮助保护定义为 **敏感信息类型** 的敏感信息。 Microsoft 365 在多个不同区域包含[适用于众多常用敏感信息类型的定义](sensitive-information-type-entity-definitions.md)，它们随时可供使用。 例如，信用卡号、银行帐号、国民身份证号码和 Windows Live ID 服务编号。
+[DLP 策略](dlp-learn-about-dlp.md)可帮助保护定义为 **敏感信息类型** 的敏感信息。 Microsoft 365 在多个不同区域包含[适用于众多常用敏感信息类型的定义](sensitive-information-type-entity-definitions.md)，它们随时可供使用。 例如，信用卡号、银行帐号、国民身份证号码和 Windows Live ID 服务编号。
 
 > [!NOTE]
 > 内容资源管理器当前不会扫描 Exchange Online 中的敏感信息类型。
@@ -145,4 +145,4 @@ ms.locfileid: "50080721"
 - [了解敏感度标签](sensitivity-labels.md)
 - [了解保留策略和保留标签](retention.md)
 - [敏感信息类型实体定义.md](sensitive-information-type-entity-definitions.md)
-- [数据丢失防护概述](data-loss-prevention-policies.md)
+- [了解数据丢失防护](dlp-learn-about-dlp.md)

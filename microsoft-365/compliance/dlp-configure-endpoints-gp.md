@@ -13,43 +13,43 @@ ms.collection:
 - M365-security-compliance
 search.appverid:
 - MET150
-description: 使用组策略在 Windows 10 设备上部署配置包，以便它们可以载入到服务。
-ms.openlocfilehash: b786d011a46f69e7bcac846e726e2aeb3031ae08
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+description: 使用组策略在 Windows 10部署配置包，以便它们可以载入服务。
+ms.openlocfilehash: 284de5169324b6da4038cfe0b50b2f2ffa40e3fd
+ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50918018"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51893283"
 ---
-# <a name="onboard-windows-10-devices-using-group-policy"></a>使用组策略载入 Windows 10 设备 
+# <a name="onboard-windows-10-devices-using-group-policy"></a>使用Windows 10载入设备 
 
 **适用于：**
 
-- [Microsoft 365 终结点数据丢失防护 (DLP) ](./endpoint-dlp-learn-about.md)
+- [Microsoft 365DLP (终结点数据丢失) ](./endpoint-dlp-learn-about.md)
 - 组策略
 
 > [!NOTE]
-> 若要使用组策略 (GP) 更新来部署程序包，必须位于 Windows Server 2008 R2 或更高版本上。
+> 若要使用组策略 (GP) 更新来部署程序包，必须在 Windows Server 2008 R2 或更高版本上。
 
-> 对于 Windows Server 2019，可能需要将 NT AUTHORITY\Well-Known-System-Account 替换为组策略首选项创建的 XML 文件的 NT AUTHORITY\SYSTEM。
+> 对于 Windows Server 2019，您可能需要将 NT AUTHORITY\Well-Known-System-Account 替换为组策略首选项创建的 XML 文件的 NT AUTHORITY\SYSTEM。
 
 ## <a name="onboard-devices-using-group-policy"></a>使用组策略载入设备
 
-1. 打开 GP 配置包 .zip *(DeviceComplianceOnboardingPackage.zip)* 从服务载入向导下载的文件。 您还可以从 Microsoft 合规性中心 [获取程序包](https://compliance.microsoft.com/compliancesettings/deviceonboarding)
+1. 打开 GP 配置包.zip文件 *(DeviceComplianceOnboardingPackage.zip)* 从服务载入向导下载的内容。 您还可以从 Microsoft 合规性中心 [获取程序包](https://compliance.microsoft.com/compliancesettings/deviceonboarding)
 
-2. 在导航窗格中，选择"**设置**  >  **设备载入"。**
+2. 在导航窗格中，选择 **"设置**  >  **载入"。**
 
 3. 在"**部署方法"** 字段中，选择"**组策略"。**
 
-4. 单击 **下载程序包** 并保存 .zip 文件。
+4. 单击 **下载程序包** 并保存.zip文件。
 
-5. 将 .zip 文件的内容提取到设备可以访问的共享只读位置。 你应该有一个称为 *OptionalParamsPolicy* 的文件夹和文件 *DeviceComplianceLocalOnboardingScript.cmd*。
+5. 将文件内容.zip到设备可以访问的共享只读位置。 你应该有一个称为 *OptionalParamsPolicy* 的文件夹和文件 *DeviceComplianceLocalOnboardingScript.cmd*。
 
 6. 打开组 [策略](/internet-explorer/ie11-deploy-guide/group-policy-and-group-policy-mgmt-console-ie11)管理控制台 (GPMC) ，右键单击要配置的组策略对象 (GPO) 然后单击 **编辑。**
 
 7. 在组 **策略管理编辑器中**，转到"**计算机配置**"，然后转到"**首选项**"，然后转到"**控制面板设置"。**
 
-8. 右键单击 **计划任务**，指向 **新建**，然后单击即时任务 **(Windows 7)**。
+8. 右键单击 **计划任务**，指向 **新建**，然后单击即时任务 (**至少Windows 7)**。
 
 9. 在打开 **的任务** 窗口中，转到常规 **选项卡**。在 **"安全选项"** 下，单击 **"更改用户或组**"，然后键入"系统"，然后单击"**检查名称**"，然后单击"确定 **"。** NT AUTHORITY\SYSTEM 显示为任务将运行的用户帐户。
 
@@ -68,13 +68,13 @@ ms.locfileid: "50918018"
 
 1. 从 Microsoft 合规性中心获取 [载出包](https://compliance.microsoft.com/compliancesettings/deviceonboarding)。
 
-2. 在导航窗格中，选择 **"设置**  >  **"//"设备载入**  >  **""载出"。**
+2. 在导航窗格中，**选择**  >  **"设置//设备载入**  >  **""载出"。**
 
 3. 在"**部署方法"** 字段中，选择"**组策略"。**
 
-4. 单击 **下载程序包** 并保存 .zip 文件。
+4. 单击 **下载程序包** 并保存.zip文件。
 
-5. 将 .zip 文件的内容提取到设备可以访问的共享只读位置。 你应该有一个名为 *DeviceComplianceOffboardingScript_valid_until_YYYY-MM-DD.cmd 的文件*。
+5. 将文件内容.zip到设备可以访问的共享只读位置。 你应该有一个名为 *DeviceComplianceOffboardingScript_valid_until_YYYY-MM-DD.cmd 的文件*。
 
 6. 打开组 [策略](/internet-explorer/ie11-deploy-guide/group-policy-and-group-policy-mgmt-console-ie11)管理控制台 (GPMC) ，右键单击要配置的组策略对象 (GPO) 然后单击 **编辑。**
 
@@ -107,9 +107,9 @@ ms.locfileid: "50918018"
 
 
 ## <a name="related-topics"></a>相关主题
-- [使用 Microsoft Endpoint Configuration Manager 载入 Windows 10 设备](dlp-configure-endpoints-sccm.md)
+- [使用Windows 10载入Microsoft Endpoint Configuration Manager](dlp-configure-endpoints-sccm.md)
 - [使用移动设备管理工具载入 Windows 10 设备](dlp-configure-endpoints-mdm.md)
 - [使用本地脚本载入 Windows 10 设备](dlp-configure-endpoints-script.md)
-- [载入非持久性虚拟桌面基础结构 (VDI) 设备。](dlp-configure-endpoints-vdi.md)
-- [在新载入的 Microsoft Defender ATP 设备上运行检测测试](/windows/security/threat-protection/microsoft-defender-atp/run-detection-test)
-- [Microsoft Defender 高级威胁防护载入问题疑难解答](/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding)
+- [载入非永久虚拟桌面基础结构 （VDI） 设备](dlp-configure-endpoints-vdi.md)
+- [对新载入的适用于终结点的 Microsoft Defender 设备运行检测测试](/windows/security/threat-protection/microsoft-defender-atp/run-detection-test)
+- [载入Microsoft Defender 高级威胁防护疑难解答](/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding)

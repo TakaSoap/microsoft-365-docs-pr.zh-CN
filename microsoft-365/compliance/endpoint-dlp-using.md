@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 了解如何配置数据丢失防护 (DLP) 策略以使用 Microsoft 365 终结点数据丢失防护 (EPDLP) 位置。
-ms.openlocfilehash: 91e8a25c2a15e82cd7f286d1110b1c87bedf31d5
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 1b918346467f9878582dfb301f48e530bfb400f8
+ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50926430"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52114090"
 ---
 # <a name="using-endpoint-data-loss-prevention"></a>使用端点数据丢失防护
 
@@ -122,7 +122,8 @@ ms.locfileid: "50926430"
 
 > [!IMPORTANT]
 > 这些终结点 DLP 方案不是创建和优化 DLP 策略的正式过程。 当你需要在常规情况下使用 DLP 策略，请参阅以下主题：
->- [数据丢失防护概述](data-loss-prevention-policies.md)
+
+>- [了解数据丢失防护](dlp-learn-about-dlp.md)
 >- [开始使用默认 DLP 策略](get-started-with-the-default-dlp-policy.md)
 >- [从模板创建 DLP 策略](create-a-dlp-policy-from-a-template.md)
 >- [创建、测试和优化 DLP 策略](create-test-tune-dlp-policy.md)
@@ -216,7 +217,7 @@ ms.locfileid: "50926430"
 
 - [了解终结点数据丢失防护](endpoint-dlp-learn-about.md)
 - [终结点数据丢失防护入门](endpoint-dlp-getting-started.md)
-- [数据丢失防护概述](data-loss-prevention-policies.md)
+- [了解数据丢失防护](dlp-learn-about-dlp.md)
 - [创建、测试和优化 DLP 策略](create-test-tune-dlp-policy.md)
 - [活动资源管理器入门](data-classification-activity-explorer.md)
 - [Microsoft Defender for Endpoint](/windows/security/threat-protection/)

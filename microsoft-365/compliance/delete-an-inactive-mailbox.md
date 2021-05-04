@@ -17,20 +17,20 @@ search.appverid:
 ms.assetid: f5caf497-5e8d-4b7a-bfff-d02942f38150
 ms.custom:
 - seo-marvel-apr2020
-description: 如果不再需要保留 Microsoft 365 非活动邮箱的内容，可以永久删除非活动邮箱。
-ms.openlocfilehash: 94a20bee1ca3d11a193a25efeb6d73f356e1d58d
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+description: 当您不再需要保留非活动邮箱Microsoft 365，您可以永久删除非活动邮箱。
+ms.openlocfilehash: 077a71bfdd82721e0992e5d14073aa037b7cfd1b
+ms.sourcegitcommit: d3f8c69519c593b1580cfa7187ce085a99b8a846
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50909922"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52100821"
 ---
 # <a name="delete-an-inactive-mailbox"></a>删除非活动邮箱
 
-非活动邮箱用于在前员工离开组织后保留其电子邮件。 如果您不再需要保留非活动邮箱的内容，可以通过删除保留永久性地删除非活动邮箱。 此外，还可以对非活动邮箱设置多个保留。 例如，非活动邮箱上可以设置诉讼保留以及一个或多个就地保留。 此外，在 Office 365 (Microsoft 365 安全与合规中心创建的保留策略) 可能会应用于非活动邮箱。 您必须从非活动邮箱中删除所有保留和保留策略，以将其删除。 删除保留和保留策略后，非活动邮箱将标记为删除，并且将在处理后永久删除。
+非活动邮箱用于在前员工离开组织后保留其电子邮件。 如果您不再需要保留非活动邮箱的内容，可以通过删除保留永久性地删除非活动邮箱。 此外，还可以对非活动邮箱设置多个保留。 例如，非活动邮箱上可以设置诉讼保留以及一个或多个就地保留。 此外，在 (安全与合规中心内创建的保留Office 365 Microsoft 365) 可能会应用于非活动邮箱。 您必须从非活动邮箱中删除所有保留和保留策略，以将其删除。 删除保留和保留策略后，非活动邮箱将标记为删除，并且将在处理后永久删除。
   
 > [!IMPORTANT]
-> 由于我们将继续以不同方式投资来保留邮箱内容，因此我们将宣布在 Exchange 管理中心停用 In-Place 保留。 这意味着您应该使用诉讼保留和保留策略来创建非活动邮箱。 从 2020 年 7 月 1 日开始，将无法在 Exchange Online In-Place保留。 但你仍然可以更改非活动邮箱上In-Place保留的保留期。 但是，从 2020 年 10 月 1 日起，将不能更改保留期。 仅能删除非活动邮箱，即删除"In-Place保留"。 在删除保留之前，In-Place处于保留状态的现有非活动邮箱仍将保留。 有关停用保留In-Place，请参阅 [停用旧版电子数据展示工具](legacy-ediscovery-retirement.md)。
+> 由于我们将继续以不同方式投资来保留邮箱内容，因此我们将宣布停用 In-Place 管理中心中的 Exchange 保留。 这意味着您应该使用诉讼保留和保留策略来创建非活动邮箱。 从 2020 年 7 月 1 日开始，将无法在 Exchange Online 中创建新的 In-Place 保留。 但你仍然可以更改非活动邮箱上In-Place保留的保留期。 但是，从 2020 年 10 月 1 日起，将不能更改保留期。 仅能删除非活动邮箱，即删除"In-Place保留"。 在删除保留之前，In-Place处于保留状态的现有非活动邮箱仍将保留。 有关停用保留In-Place，请参阅 [停用旧版电子数据展示工具](legacy-ediscovery-retirement.md)。
   
 请参阅[详细信息](#more-information)部分了解从非活动邮箱删除保留后会发生什么情况。
   
@@ -38,11 +38,11 @@ ms.locfileid: "50909922"
 
 - 您必须使用 Exchange Online PowerShell 从非活动邮箱中删除诉讼保留。 不能使用 Exchange 管理中心 (EAC)。 有关分步说明，请参阅[连接 Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)。
 
-- 在删除保留设置和非活动邮箱之前，您可以将非活动邮箱的内容复制到另一个邮箱中。 有关详细信息，请参阅 [在 Office 365 中还原非活动邮箱](restore-an-inactive-mailbox.md)。
+- 在删除保留设置和非活动邮箱之前，您可以将非活动邮箱的内容复制到另一个邮箱中。 有关详细信息，请参阅[Restore an inactive mailbox in Office 365](restore-an-inactive-mailbox.md)。
 
-- 如果从非活动邮箱中删除保留或保留策略，并且邮箱的软删除邮箱保留期已过期，则邮箱将被永久删除。 在此邮箱删除后，您将无法恢复。 在删除保留设置之前，请确保您不再需要此邮箱中的内容。 如果要重新激活非活动邮箱，可以恢复它。 有关详细信息，请参阅 [恢复 Office 365 中的非活动邮箱](recover-an-inactive-mailbox.md)。
+- 如果从非活动邮箱中删除保留或保留策略，并且邮箱的软删除邮箱保留期已过期，则邮箱将被永久删除。 在此邮箱删除后，您将无法恢复。 在删除保留设置之前，请确保您不再需要此邮箱中的内容。 如果要重新激活非活动邮箱，可以恢复它。 有关详细信息，请参阅[恢复邮箱中的非活动Office 365。](recover-an-inactive-mailbox.md)
 
-- 有关非活动邮箱的信息，请参阅 [Office 365](inactive-mailboxes-in-office-365.md)中的非活动邮箱。
+- 有关非活动邮箱的信息，[请参阅非活动](inactive-mailboxes-in-office-365.md)Office 365。
 
 ## <a name="step-1-identify-the-holds-on-an-inactive-mailbox"></a>第 1 步：识别非活动邮箱上设置的保留
 
@@ -92,15 +92,15 @@ Set-Mailbox -InactiveMailbox -Identity <identity of inactive mailbox> -Litigatio
   
 ### <a name="remove-an-inactive-mailbox-from-a-retention-policy"></a>从保留策略中删除非活动邮箱
 
-从 Microsoft 365 保留策略中删除非活动邮箱的过程取决于分配给非活动邮箱的保留策略是组织范围的还是显式的。 分配给非活动邮箱的保留策略类型。
+从非活动邮箱中删除非活动邮箱Microsoft 365保留策略取决于分配给非活动邮箱的保留策略是组织范围内策略还是显式策略。 分配给非活动邮箱的保留策略类型。
 
-- 分配给组织中所有邮箱的组织范围的保留策略。 使用 Exchange Online PowerShell 中的 **Get-OrganizationConfig** cmdlet 获取有关组织范围内的保留策略的信息。
+- 分配给组织中所有邮箱的组织范围的保留策略。 使用 **PowerShell 中的 Get-OrganizationConfig** cmdlet Exchange Online获取有关组织范围的保留策略的信息。
 
-- 分配给特定邮箱的特定位置保留策略。 这些是分配给特定用户的内容位置的策略。 使用 Exchange Online PowerShell 中的 **Get-Mailbox -IncludeInactiveMailbox** cmdlet 获取有关分配给特定非活动邮箱的保留策略的信息。
+- 分配给特定邮箱的特定位置保留策略。 这些是分配给特定用户的内容位置的策略。 使用 **PowerShell 中的 Get-Mailbox -IncludeInactiveMailbox** cmdlet Exchange Online获取有关分配给特定非活动邮箱的保留策略的信息。
 
 #### <a name="remove-an-inactive-mailbox-from-an-organization-wide-retention-policy"></a>从组织范围的保留策略中删除非活动邮箱
 
-在 Exchange Online PowerShell 中运行以下命令，从组织范围的保留策略中排除非活动邮箱。
+在 PowerShell 中Exchange Online以下命令，从组织范围的保留策略中排除非活动邮箱。
 
 ```powershell
 Set-Mailbox <identity of inactive mailbox> -ExcludeFromOrgHolds <retention policy GUID without prefix or suffix>
@@ -157,7 +157,7 @@ Set-RetentionCompliancePolicy -Identity <retention policy GUID without prefix or
 
 #### <a name="remove-an-inactive-mailbox-from-an-in-place-hold"></a>从保留状态中删除非In-Place邮箱
 
-如果就地保留中包含大量的源邮箱，则非活动邮箱有可能不会列在 EAC 的“源”页面上。 在编辑就地保留时，“源”页面上最多显示 3000 个邮箱。 If an inactive mailbox isn't listed on the **Sources** page, you can use Exchange Online PowerShell to remove it from the In-Place Hold. 
+如果就地保留中包含大量的源邮箱，则非活动邮箱有可能不会列在 EAC 的“源”页面上。 在编辑就地保留时，“源”页面上最多显示 3000 个邮箱。 如果未在"源"页上列出非活动邮箱，可以使用 Exchange Online PowerShell 将其从"In-Place保留"。 
   
 1. 创建一个变量，其中包含非活动邮箱上设置的就地保留的属性。使用您在[步骤 1：识别非活动邮箱上设置的保留](#step-1-identify-the-holds-on-an-inactive-mailbox) 中获得的就地保留 GUID。
 
@@ -206,25 +206,26 @@ Set-RetentionCompliancePolicy -Identity <retention policy GUID without prefix or
 
 ## <a name="more-information"></a>更多信息
 
-- **非活动邮箱是一种软删除邮箱。** 在 Exchange Online 中，软删除邮箱是指已删除但可以在特定保留期内恢复的邮箱。 Exchange Online 中的软删除邮箱保留期为 30 天。 这意味着该邮箱可以在软删除后 30 天内进行恢复。 30 天后，软删除邮箱将标记为永久删除并且无法恢复。
+- **非活动邮箱是一种软删除邮箱。** 在 Exchange Online 中，软删除邮箱是指已删除但可以在特定保留期内恢复的邮箱。 A previously inactive mailbox will be available as a soft-deleted mailbox in Exchange Online for 183 days. 这意味着邮箱可以在软删除后 183 天内恢复。 183 天后，软删除邮箱将标记为永久删除且无法恢复。
 
-- **如果删除非活动邮箱的保留设置，后面会怎么样？** 系统会将此邮箱与其他软删除邮箱视为一类，并在 30 天软删除邮箱保留期过期后将其标记为永久删除。 此保留期的起始日以该邮箱初次变为非活动状态的日期为准。 此日期称为软删除日期，即删除相应用户帐户的日期，或者使用 **Remove-Mailbox** cmdlet 删除 Exchange Online 邮箱的日期。 软删除日期不是您删除保留的日期。
+- **如果删除非活动邮箱的保留设置，后面会怎么样？** 该邮箱被视为其他软删除邮箱，并标记为在 183 天软删除邮箱保留期到期后永久删除。 此保留期的起始日以该邮箱初次变为非活动状态的日期为准。 此日期称为软删除日期，即删除相应用户帐户的日期，或者使用 **Remove-Mailbox** cmdlet 删除 Exchange Online 邮箱的日期。 软删除日期不是您删除保留的日期。
 
-- **在您删除非活动邮箱的保留设置后，系统会立即永久删除此邮箱吗？** 如果非活动邮箱的软删除日期是在 30 天之前，则系统不会在您删除保留设置后立即永久删除此邮箱。 该邮箱将标记为永久删除，并在下次处理时删除。
-
-- **软删除邮箱保留期对非活动邮箱有何影响？** 如果非活动邮箱的软删除日期距离之后的保留设置删除日期有 30 多天，则系统会将此邮箱标记为永久删除。 不过，如果距离非活动邮箱的软删除日期还不到 30 天并且您删除保留设置，则您可以在软删除邮箱保留期过期之前恢复此邮箱。 有关详细信息，请参阅 [删除或还原 Exchange Online 中的用户邮箱](/exchange/recipients-in-exchange-online/delete-or-restore-mailboxes)。 软删除邮箱保留期到期后，必须按照恢复非活动邮箱的过程操作。 有关详细信息，请参阅 [恢复 Office 365 中的非活动邮箱](recover-an-inactive-mailbox.md)。
+- **在您删除非活动邮箱的保留设置后，系统会立即永久删除此邮箱吗？** 以前处于非活动状态的邮箱将在 183 天内处于软删除状态。 183 天后，邮箱将被标记为永久删除。
 
 - **在删除保留设置后，如何显示非活动邮箱的相关信息？** 在删除保留设置且非活动邮箱还原回软删除邮箱后，将不会通过  *将 InactiveMailboxOnly*  参数与 **Get-Mailbox** cmdlet 一同使用返回。 但是，您可以使用 **Get-Mailbox -SoftDeletedMailbox** 命令显示有关邮箱的信息。 例如：
 
   ```text
   Get-Mailbox -SoftDeletedMailbox -Identity pilarp | FL Name,Identity,LitigationHoldEnabled,In
-  Placeholds,WhenSoftDeleted,IsInactiveMailbox
+  Placeholds,WhenSoftDeleted,IsInactiveMailbox,WasInactiveMailbox,InactiveMailboxRetireTime
   Name                   : pilarp
   Identity               : Soft Deleted Objects\pilarp
   LitigationHoldEnabled  : False
   InPlaceHolds           : {}
-  WhenSoftDeleted        : 10/30/2014 1:19:04 AM
+  WhenSoftDeleted        : 6/16/2020 1:19:04 AM
   IsInactiveMailbox      : False
+  WasInactiveMailbox     : True
+  InactiveMailboxRetireTime : 9/30/2020 11:16:23 PM
   ```
 
-  在以上示例中 *，WhenSoftDeleted* 属性标识软删除日期，本示例中为 2014 年 10 月 30 日。 如果此软删除邮箱以前是已删除其保留的非活动邮箱，则它将在 *WhenSoftDeleted* 属性的值之后 30 天后永久删除。 在本例中，该邮箱将在 2014 年 11 月 30 日之后永久删除。
+  在以上示例中 *，WhenSoftDeleted* 属性标识软删除日期，本示例中为 2020 年 6 月 16 日。 *WasInactiveMailbox* 属性列为 ， `True` 因为它以前是非活动邮箱。 邮箱将在 2020 年 9 月 30 日之后 183 天内永久删除。
+
