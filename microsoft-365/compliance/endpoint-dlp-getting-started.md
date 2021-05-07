@@ -19,16 +19,16 @@ ms.collection:
 search.appverid:
 - MET150
 description: 设置 Microsoft 365 终结点数据丢失防护，以监视文件活动，并将针对这些文件的保护措施实施到终结点。
-ms.openlocfilehash: 98f4355e06ef2724ef4eb5f8d4db3dca017678c2
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 0410d4d09354ca716c83a63da9c1fdd22eda8551
+ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50926420"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52114110"
 ---
 # <a name="get-started-with-endpoint-data-loss-prevention"></a>终结点数据丢失防护入门
 
-Microsoft 终结点数据丢失防护（终结点 DLP）是 Microsoft 365 数据丢失防护 (DLP) 功能套件的一部分，可用于发现和保护 Microsoft 365 服务中的敏感项目。 有关 Microsoft 所有 DLP 产品/服务的更多信息，请参阅[数据丢失防护概述](data-loss-prevention-policies.md)。 若要了解有关终结点 DLP 的详细信息，请参阅[了解终结点数据丢失防护](endpoint-dlp-learn-about.md)
+Microsoft 终结点数据丢失防护（终结点 DLP）是 Microsoft 365 数据丢失防护 (DLP) 功能套件的一部分，可用于发现和保护 Microsoft 365 服务中的敏感项目。 有关 Microsoft 所有 DLP 产品/服务的更多信息，请参阅[数据丢失防护概述](dlp-learn-about-dlp.md)。 若要了解有关终结点 DLP 的详细信息，请参阅[了解终结点数据丢失防护](endpoint-dlp-learn-about.md)
 
 通过 Microsoft 终结点 DLP，你可以监视 Windows 10 设备并检测何时使用和共享敏感项目。 这为你提供了所需的可见性和控制力，以确保正确使用和保护它们，并帮助防止可能危害它们的危险行为。
 
@@ -209,7 +209,7 @@ Microsoft 终结点数据丢失防护（终结点 DLP）是 Microsoft 365 数据
 
 - [了解终结点数据丢失防护](endpoint-dlp-learn-about.md)
 - [使用终结点数据丢失防护](endpoint-dlp-using.md)
-- [数据丢失防护概述](data-loss-prevention-policies.md)
+- [了解数据丢失防护](dlp-learn-about-dlp.md)
 - [创建、测试和优化 DLP 策略](create-test-tune-dlp-policy.md)
 - [活动资源管理器入门](data-classification-activity-explorer.md)
 - [Microsoft Defender for Endpoint](/windows/security/threat-protection/)

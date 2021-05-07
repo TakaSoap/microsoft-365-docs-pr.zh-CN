@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: 配置加密的敏感度标签，以便通过限制访问和使用来保护你的数据。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f670a3cdefb7b6cd78d24a17fc2e6276274efff3
-ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
+ms.openlocfilehash: 6163e48e3e80b76506d970b77d6cd66f7a050d51
+ms.sourcegitcommit: 8c89bc1d106b4716b07a1977d57e4d9ef98aecb3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51222415"
+ms.lasthandoff: 04/29/2021
+ms.locfileid: "52079255"
 ---
 # <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>通过敏感度标签应用加密，从而限制对内容的访问
 
@@ -45,7 +45,7 @@ ms.locfileid: "51222415"
 - **立即分配权限**，以便准确确定哪些用户获得了带有该标签的内容的哪些权限。
 - 在用户将此标签应用到内容时 **允许用户分配权限**。 这样，即可让组织内部人员在协作处理和完成任务时具有可能需要的一定程度的灵活性。
 
-在 Microsoft 365 合规中心、Microsoft 365 安全中心或安全与合规中心[创建敏感度标签](create-sensitivity-labels.md)时，可使用加密设置。
+在 Microsoft 365 合规中心中[创建敏感度标签](create-sensitivity-labels.md)时，加密设置可用。 还可以使用旧门户安全与合规中心。
 
 ## <a name="understand-how-the-encryption-works"></a>了解加密的工作方式
 
@@ -123,7 +123,7 @@ ms.locfileid: "51222415"
 
 ## <a name="assign-permissions-now"></a>立即分配权限
 
-使用下述选项来控制哪些人员可访问应用了此标签的电子邮件或文档。 可执行下列操作：
+使用下述选项来控制哪些人员可访问应用了此标签的电子邮件或文档。可以：
 
 - **允许对标记的内容的访问权限过期**（在某个特定日期或在应用标签后的特定天数后）。在此时间后，用户将无法打开标记的项。如果指定某个日期，则它将于该日期午夜（在你的当前时区）生效。请注意，某些电子邮件客户端由于其缓存机制，可能不强制过期，仍显示过期的电子邮件。
 
@@ -135,11 +135,11 @@ ms.locfileid: "51222415"
 
 ### <a name="rights-management-use-license-for-offline-access"></a>针对脱机访问的 Rights Management 使用许可证
 
-当用户打开受 Azure 权限管理服务加密保护的文档或电子邮件时，将向该用户授予对该内容的 Azure 权限管理使用许可证。 此使用许可证是一种证书，其中包含用户对文档或电子邮件的使用权限，以及用于加密内容的加密密钥。 此使用许可证还包含过期日期（若已设置）及其有效时长。
+当用户打开受 Microsoft Azure AD Rights Management 服务加密保护的文档或电子邮件时，该内容的 Microsoft Azure AD Rights Management 使用许可证将授予该用户。此使用许可证是一种证书，其中包含用户对文档或电子邮件的使用权限，以及用于加密内容的加密密钥。此使用许可证还包含过期日期（若已设置）及其有效时长。
 
 如果尚未设置任何到期日期，则针对租户的默认使用许可证有效期为 30 天。在使用许可证有效期内，无需就内容对用户重新进行身份验证或授权。这使用户无需具有 Internet 连接即可继续打开受保护的文档或电子邮件。当用户许可有效期到期后，在用户下次访问受保护的文档或电子邮件时，必须对用户重新进行身份验证和授权。
 
-除重新进行身份验证以外，还将重新评估策略和用户组成员身份。 这意味着，如果自他们最后一次访问内容时在加密设置或组成员身份中出现更改，则对于同一文档或电子邮件，他们可能会收到不同的访问结果。
+除重新进行身份验证以外，还将重新评估加密设置和用户组成员身份。这意味着，如果自他们最后一次访问内容时在加密设置或组成员身份中存在更改，则对于同一文档或电子邮件，他们可能会收到不同的访问结果。
 
 若要了解如何更改默认的 30 天设置，请参阅 [Rights Management 使用许可证](/azure/information-protection/configure-usage-rights#rights-management-use-license)。
 
@@ -206,7 +206,7 @@ ms.locfileid: "51222415"
 
 #### <a name="rights-management-issuer-user-applying-the-sensitivity-label-always-has-full-control"></a>Rights Management 颁发者（应用敏感度标签的用户）始终具有完全控制
 
-敏感度标签加密使用了 Azure 信息保护中的 Azure 权限管理服务。 当用户通过加密应用敏感度标签来保护文档或电子邮件时，该用户就成为了该内容的权限管理颁发者。
+敏感度标签加密使用了 Azure 信息保护中的 Microsoft Azure AD Rights Management 服务。当用户通过加密应用敏感度标签来保护文档或电子邮件时，该用户就成为了该内容的权限管理颁发者。
 
 权限管理颁发者始终具有对文档或电子邮件的完全控制权限；此外：
 
@@ -228,7 +228,7 @@ ms.locfileid: "51222415"
 ## <a name="let-users-assign-permissions"></a>允许用户分配权限
 
 > [!IMPORTANT]
-> 并非所有的标签客户端都支持让用户自己分配权限所有的选项。 请使用本节了解更多信息。
+> 并非所有的标签客户端都支持让用户自己分配权限所有的选项。请使用本节了解更多信息。
 
 可使用下述选项来允许用户在向内容手动应用敏感度标签时分配权限：
 
@@ -236,7 +236,7 @@ ms.locfileid: "51222415"
     
     所有支持敏感标签的电子邮件客户端都支持 “不转发” 选项。 不过，应用灵敏度标签的 **Encrypt-Only** 选项是最近发布的版本，只支持内置标签，而不支持 Azure 信息保护统一标签客户端。 对于不支持此功能的邮件客户端，标签将不可见。
     
-    要检查哪些使用内置标签的 Outlook 应用支持应用带有敏感度标签的 Encrypt-Only 选项，请使用 [“Outlook 能力表”](sensitivity-labels-office-apps.md#sensitivity-label-capabilities-in-outlook) 和 **“让用户分配权限: - 只加密”** 行。
+    若要检查使用内置标签的 Outlook 应用的最低版本支持应用带有敏感标签的“只加密”选项，请使用 [“Outlook 能力表”](sensitivity-labels-office-apps.md#sensitivity-label-capabilities-in-outlook) 和 **“让用户分配权限: - 只加密”** 行。
 
 - 在 Word、PowerPoint 和 Excel 中，系统会提示用户为特定用户、组或组织选择他们自己的权限。
 
@@ -265,7 +265,7 @@ ms.locfileid: "51222415"
 
 ![应用于 Outlook 中的邮件的敏感度标签](../media/sensitivity-label-outlook-protection-applied.png)
 
-当这些选项中的任何一个应用于电子邮件时，都会加密电子邮件且收件人必须经过身份验证。 然后，收件人自动拥有受限制的使用权限:
+当这些选项中的任何一个应用于电子邮件时，都会加密电子邮件且收件人必须经过身份验证。然后，收件人自动拥有受限制的使用权限:
 
 - **不转发**: 收件人无法转发、打印或复制该邮件。 例如，在 Outlook 客户端中，“转发”按钮不可用，“另存为”和“打印”菜单选项也不可用，并且你不可在“收件人”、“抄送”和“密件抄送”框中添加或更改收件人。
     
@@ -406,7 +406,7 @@ ms.locfileid: "51222415"
 
 - 如果[在 SharePoint 中签出](https://support.microsoft.com/office/check-out-check-in-or-discard-changes-to-files-in-a-library-7e2c12a9-a874-4393-9511-1378a700f6de)文档时使用 Office 应用添加应用了加密的标签，并且用户随后放弃签出，则文档将保持含标签和加密状态。
 
-- Office 应用（Windows、Mac、Android 和 iOS）不支持对加密文件进行以下操作，并且用户将看到一则错误消息指出出现了错误。 但是，可将 SharePoint 功能用作替代项：
+- Office 应用（Windows、Mac、Android 和 iOS）不支持对加密文件进行以下操作，并且用户将看到一则错误消息指出出现了错误。但是，可将 SharePoint 功能用作替代项：
 
   - 查看、还原和保存之前版本的副本。 或者，在你[为列表或库启用和配置版本控制](https://support.office.com/article/enable-and-configure-versioning-for-a-list-or-library-1555d642-23ee-446a-990a-bcab618c7a37)后，用户可使用 Office 网页版执行这些操作。
   - 更改文件的名称或位置。 或者，用户可在 SharePoint 中[对文档库中的文件、文件夹或链接重命名](https://support.microsoft.com/office/rename-a-file-folder-or-link-in-a-document-library-bc493c1a-921f-4bc1-a7f6-985ce11bb185)。
@@ -424,7 +424,7 @@ ms.locfileid: "51222415"
 
 - 配置用于 Azure 信息保护的 Exchange
     
-    无需针对 Azure 信息保护进行配置，用户即可在 Outlook 中应用标签来加密其电子邮件。 但是，除非已针对 Azure 信息保护进行了配置，否则无法通过 Exchange 获得使用 Azure 权限管理保护的完整功能。
+    在用户能够在 Outlook 中应用标签以加密其电子邮件前，无需对 Exchange 进行配置以用于 Azure 信息保护。但是，如果没有针对 Azure 信息保护对 Exchange 进行配置，你将无法在 Exchange 中获取使用 Microsoft Azure AD Rights Management 的完整功能。
     
     例如，用户无法查看移动电话或 Outlook 网页版上机密的电子邮件，无法索引加密的电子邮件用于搜索，并且无法针对 Rights Management 保护配置 Exchange Online DLP。 
     

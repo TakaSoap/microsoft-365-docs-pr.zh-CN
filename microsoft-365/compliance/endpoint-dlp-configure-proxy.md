@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 了解如何为 Endpoint DLP 配置设备代理和 Internet 连接设置。
-ms.openlocfilehash: 4d1aa3b75ec0a0720f3d92c847bf7c6cde6d966f
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 5da9161f2f59ef8a40ca8a7d302dc7de578dba39
+ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51199271"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52114120"
 ---
 # <a name="configure-device-proxy-and-internet-connection-settings-for-endpoint-dlp"></a>为 Endpoint DLP 配置设备代理和 Internet 连接设置
 
@@ -142,7 +142,7 @@ WinHTTP 配置设置独立于 Windows Internet (WinINet) Internet 浏览代理�
 
 - [了解终结点数据丢失防护](endpoint-dlp-learn-about.md)
 - [使用终结点数据丢失防护](endpoint-dlp-using.md)
-- [数据丢失防护概述](data-loss-prevention-policies.md)
+- [了解数据丢失防护](dlp-learn-about-dlp.md)
 - [创建、测试和优化 DLP 策略](create-test-tune-dlp-policy.md)
 - [活动资源管理器入门](data-classification-activity-explorer.md)
 - [Microsoft Defender for Endpoint](/windows/security/threat-protection/)

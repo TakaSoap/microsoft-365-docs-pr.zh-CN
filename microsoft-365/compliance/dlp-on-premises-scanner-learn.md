@@ -18,17 +18,17 @@ ms.collection:
 - m365initiative-compliance
 search.appverid:
 - MET150
-description: Microsoft 365 本地扫描仪的数据丢失防护扩展了对文件活动的监视以及针对这些文件的安全操作，可扩展到本地文件共享和 SharePoint 文件夹和文档库。 通过 Azure 信息保护 （AIP） 扫描仪扫描和保护文件
-ms.openlocfilehash: fa1c14520c8ad0afa4856fdd8a1c59a0f71f400d
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+description: Microsoft 365 本地扫描仪的数据丢失防护扩展了对文件活动的监视以及针对这些文件的安全操作，可扩展到本地文件共享和 SharePoint 文件夹和文档库。通过 Azure 信息保护 （AIP） 扫描仪扫描和保护文件
+ms.openlocfilehash: f0a34a13630e42c5dd29734ad708b3c11bb1d587
+ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50917808"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52114160"
 ---
 # <a name="learn-about-the-microsoft-365-data-loss-prevention-on-premises-scanner-preview"></a>了解 Microsoft 365 本地扫描仪数据丢失防护（预览）
 
-Microsoft 本地扫描仪的 Microsoft 数据丢失防护是 Microsoft 365 数据丢失防护 （DLP） 套件的一部分，可用于在 Microsoft 365 服务中发现和保护敏感项目。 有关 Microsoft 所有 DLP 产品/服务的更多信息，请参阅[数据丢失防护概述](data-loss-prevention-policies.md)。
+Microsoft 本地扫描仪的 Microsoft 数据丢失防护是 Microsoft 365 数据丢失防护 （DLP） 套件的一部分，可用于在 Microsoft 365 服务中发现和保护敏感项目。 有关 Microsoft 所有 DLP 产品/服务的更多信息，请参阅[数据丢失防护概述](dlp-learn-about-dlp.md)。
 
 **DLP 本地扫描仪** 会对文件共享和 SharePoint 文档库以及文件夹中的本地数据（如果泄露）进行爬网，这些敏感项目可能给组织带来风险或带来合规性策略冲突的风险。 通过此操作，可了解确保正确使用和保护敏感项目所需的可见性和控制，还有助于防止可能泄露到其的风险行为。 DLP 本地扫描仪通过使用 [内置](sensitive-information-type-entity-definitions.md) 或 [自定义敏感信息类型](create-a-custom-sensitive-information-type.md) 检测敏感信息， [标签](sensitivity-labels.md) 或文件属性。 [活动资源管理器](data-classification-activity-explorer.md) 中显示有关用户使用敏感项目的信息，并且通过 [DLP 策略对](create-test-tune-dlp-policy.md)。
 
@@ -89,6 +89,6 @@ DLP 本地扫描仪通过以下四种方法之一来检测文件：
 
 - [Microsoft 本地扫描仪数据丢失防护入门](dlp-on-premises-scanner-get-started.md)
 - [使用 Microsoft 本地扫描仪的数据丢失防护](dlp-on-premises-scanner-use.md)
-- [数据丢失防护概述](data-loss-prevention-policies.md)
+- [了解数据丢失防护](dlp-learn-about-dlp.md)
 - [创建、测试和优化 DLP 策略](create-test-tune-dlp-policy.md)
 - [活动资源管理器入门](data-classification-activity-explorer.md)

@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解有助于保留所需内容并删除不需要内容的保留策略和保留标签。
-ms.openlocfilehash: 42fe70d1360f45deb6f98f41c0ffec97de7e00a9
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: 2c63f668cd4ccbad55a883aaf2b245c4936e25eb
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51498350"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51860951"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>了解保留策略和保留标签
 
@@ -62,7 +62,7 @@ ms.locfileid: "51498350"
 
 ## <a name="how-retention-settings-work-with-content-in-place"></a>保留设置如何应用于在适当位置上的内容
 
-分配有保留设置的内容保留在它的原始位置上。 用户可以继续处理自己的文档或邮件，就像什么都没有改变一样。 但如果他们编辑或删除了包含在保留策略中的内容，则会自动保留一份内容的副本。
+分配有保留设置的内容保留在它的原始位置上。用户可以继续使用其文档或邮件，就像没有发生任何变动一样。但如果他们编辑或删除了包含在保留策略中的内容，则会自动保留一份内容的副本。
   
 - 对于 SharePoint 和 OneDrive 网站：副本保留在 **保留** 库中。
 
@@ -124,7 +124,7 @@ ms.locfileid: "51498350"
 
 ### <a name="retention-labels"></a>保留标签
 
-对于需要不同保留设置的不同类型的内容，可以使用保留标签。 例如：
+对于需要不同保留设置的不同类型的内容，可以使用保留标签。例如：
   
 - 至少必须保留一段时间的税务表单。 
     
@@ -155,7 +155,7 @@ ms.locfileid: "51498350"
 
 如果内容被移动到 Microsoft 365 之外，则保留标签将不会继续存在，这一点与[敏感度标签](sensitivity-labels.md)是不同的。
 
-租户支持的保留标签数没有限制。 但是，租户支持的最大策略数为 10,000，其中包括应用标签的策略（保留标签策略和自动应用保留策略）以及保留策略。
+租户支持的保留标签数没有限制。但是，租户支持的最大策略数为 10,000，其中包括应用标签的策略（保留标签策略和自动应用保留策略）以及保留策略。
 
 #### <a name="classifying-content-without-applying-any-actions"></a>对内容分类但不执行任何操作
 
@@ -193,7 +193,7 @@ ms.locfileid: "51498350"
 |根据敏感信息类型或可训练的分类器自动应用  <br/> |Exchange（仅全部邮箱）、SharePoint 和 OneDrive  <br/> |
 |根据查询自动应用  <br/> |Exchange、SharePoint、OneDrive、Microsoft 365 组  <br/> |
    
-在 Exchange 中，你自动应用的保留标签只会应用于新发送的邮件（传输中的数据），而不是应用于邮箱中当前的所有项（静态数据）。 此外，用于敏感信息类型和可训练的分类器的自动应用保留标签应用于所有邮箱；你无法选择特定的邮箱。
+在 Exchange 中，自动应用保留标签仅应用于新发送的邮件（传输中的数据），而不是邮箱中当前的所有邮件（其余数据）。此外，对敏感信息类型和可培训的分类器自动应用保留标签适用于所有邮箱;你无法选择特定邮箱。
   
 Exchange 公用文件夹、Skype、Teams 和 Yammer 消息不支持保留标签。 若要保留并从这些位置中删除内容，请改用保留策略。
 
@@ -263,7 +263,7 @@ Office 365 安全与合规中心的保留标签概述信息与 **“信息管理
 |审核管理员活动| 是 | 是|
 |识别遵循保留设置的项： <br /> - 内容搜索 <br /> - 数据分类页、内容资源管理器、活动资源管理器 | <br /> 否 <br /> 否 | <br /> 是 <br /> 是|
 
-请注意，可以同时将保留策略和保留标签用作互补的保留方法。 例如：
+请注意，可以同时将保留策略和保留标签用作互补的保留方法。例如：
 
 1. 你创建并配置一个保留策略，以便在自最后一次修改内容起 5 年后自动删除内容，同时你将此策略应用于所有 OneDrive 帐户。
 

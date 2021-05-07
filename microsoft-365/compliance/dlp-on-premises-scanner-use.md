@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 了解如何使用 Microsoft 365 本地扫描仪扫描停止的数据，并执行本地文件共享和本地 SharePoint 文件夹和文档库的安全操作。
-ms.openlocfilehash: c46b67ca392732616329bad138166c892cd06640
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 0abe36af5588c1828da106779a144b6e7f37d6a8
+ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50917818"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52114150"
 ---
 # <a name="use-the-microsoft-365-data-loss-prevention-on-premises-scanner-preview"></a>使用 Microsoft 365 本地扫描仪的数据丢失防护（预览）
 
@@ -32,7 +32,7 @@ ms.locfileid: "50917818"
 
 > [!IMPORTANT]
 > 这些 DLP 本地方案不是创建和调整 DLP 策略的正式过程。 当你需要在常规情况下使用 DLP 策略，请参阅以下主题：
->- [数据丢失防护概述](data-loss-prevention-policies.md)
+>- [了解数据丢失防护](dlp-learn-about-dlp.md)
 >- [开始使用默认 DLP 策略](get-started-with-the-default-dlp-policy.md)
 >- [从模板创建 DLP 策略](create-a-dlp-policy-from-a-template.md)
 >- [创建、测试和优化 DLP 策略](create-test-tune-dlp-policy.md)
@@ -80,6 +80,6 @@ DLP 本地扫描仪在几个区域出现数据
 
 - [了解 DLP 本地扫描仪（预览）](dlp-on-premises-scanner-learn.md)
 - [开始使用 DLP 本地扫描仪（预览）](dlp-on-premises-scanner-get-started.md)
-- [数据丢失防护概述](data-loss-prevention-policies.md)
+- [了解数据丢失防护](dlp-learn-about-dlp.md)
 - [创建、测试和优化 DLP 策略](create-test-tune-dlp-policy.md)
 - [活动资源管理器入门](data-classification-activity-explorer.md)

@@ -19,19 +19,19 @@ search.appverid:
 ms.assetid: 103f940c-0468-4e1a-b527-cc8ad13a5ea6
 description: 面向管理员：了解如何使用网络上传将多个 PST 文件批量导入 Microsoft 365 中的用户邮箱。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: bd747840827a5d8f37bbb9f6b4c4656b80df8b26
-ms.sourcegitcommit: 8998f70d3f7bd673f93f8d1cf12ce981b1b771c3
+ms.openlocfilehash: cf7f471a4323c4c03f232e93d2f00b930e53aefe
+ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51034181"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52114338"
 ---
 # <a name="use-network-upload-to-import-your-organizations-pst-files-to-microsoft-365"></a>使用网络上传将组织的 PST 文件导入到 Microsoft 365
 
 > [!NOTE]
 > 本文适用于管理员。 你正在尝试将 PST 文件导入到自己的邮箱吗？ 请参阅[从 Outlook .pst 文件导入电子邮件、联系人和日历](https://go.microsoft.com/fwlink/p/?LinkID=785075)
   
-下面是使用网络上传将多个 PST 文件批量导入到 Microsoft 365 邮箱所需的分步说明。 有关使用网络上传将 PST 文件批量导入到 Microsoft 365 邮箱的常见问题，请参阅[使用网络上传导入 PST 文件的常见问题](faqimporting-pst-files-to-office-365.md#using-network-upload-to-import-pst-files)。
+下面是使用网络上传将多个 PST 文件批量导入到 Microsoft 365 邮箱所需的分步说明。 有关使用网络上传将 PST 文件批量导入到 Microsoft 365 邮箱的常见问题，请参阅[使用网络上传导入 PST 文件的常见问题](./faqimporting-pst-files-to-office-365.yml#using-network-upload-to-import-pst-files)。
   
 [步骤 1：复制 SAS URL 并安装 AzCopy](#step-1-copy-the-sas-url-and-install-azcopy)
 
@@ -53,14 +53,14 @@ ms.locfileid: "51034181"
 
     此外，若要在安全与合规中心创建导入作业，必须满足以下条件之一：
 
-  - 必须分配有 Exchange Onlin 中的“邮件收件人”角色。 默认情况下，此角色分配给“组织管理和收件人管理”角色组。
+  - 在 Exchange Online 中必须分配有“邮件收件人”角色。默认情况下，此角色分配给“组织管理和收件人管理”角色组。
 
     或
 
   - 必须是你组织中的全局管理员。
 
   > [!TIP]
-    > 请考虑在 Exchange Online 中创建新角色组，此角色组专门用于导入 PST 文件。 若要获取导入 PST 文件所需的最低级别权限，请将“邮件导入导出和邮件收件人”角色分配给新角色组，然后添加成员。
+    > 请考虑在 Exchange Online 中创建新角色组，此角色组专门用于导入 PST 文件。若要获得导入 PST 文件所需的最低级别权限，请将“邮件导入导出和邮件收件人”角色分配给新角色组，然后添加成员。
   
 - 唯一受支持的将 PST 文件导入到 Microsoft 365 的方法是使用 AzCopy 工具，如本主题中所述。 无法使用 Azure 存储资源管理器将 PST 文件直接上传到 Azure 存储区域。
 
@@ -167,7 +167,7 @@ ms.locfileid: "51034181"
 
 ## <a name="optional-step-3-view-a-list-of-the-pst-files-uploaded-to-office-365"></a>（可选）步骤 3：查看已上传到 Office 365 的 PST 文件的列表
 
-在该可选步骤中，可以安装并使用 Microsoft Azure 存储资源管理器（这是一个免费的开源工具）查看已上传到 Azure blob 的 PST 文件的列表。 有两个很好的理由来执行此操作：
+作为可选步骤，您可以安装并使用 Microsoft Azure 存储资源管理器（这是一个免费的开源工具）查看您已上载到 Azure blob 的 PST 文件的列表。有两个很好的理由来执行此操作：
   
 - 验证 PST 文件是否已从你所在组织中的共享文件夹或文件服务器成功上载到 Azure blob。
 
@@ -198,7 +198,7 @@ Microsoft Azure 存储资源管理器处于预览阶段。
   
 ## <a name="step-4-create-the-pst-import-mapping-file"></a>步骤 4：创建 PST 导入映射文件
 
-将 PST 文件上传到你组织的 Azure 存储位置后，下一步是创建一个逗号分隔值 (CSV) 文件，用于指定要将 PST 文件导入到哪些用户邮箱。 在下一步中，创建 PST 导入作业时，将提交此 CSV 文件。
+完成将 PST 文件上载到组织的 Azure 存储位置之后，下一步是创建一个用逗号分隔值 (CSV) 的文件，用于指定要将 PST 文件导入到哪些用户邮箱。在下一步中，创建 PST 导入作业时，将提交此 CSV 文件。
   
 1. [下载 PST 导入映射文件的副本](https://go.microsoft.com/fwlink/p/?LinkId=544717)。
 
@@ -231,7 +231,7 @@ Microsoft Azure 存储资源管理器处于预览阶段。
     | `FilePath` <br/> |指定在步骤 2 中将 PST 文件上传到的 Azure 存储位置中的文件夹位置。  <br/> 如果在步骤 2 中你未在 SAS URL 中的 `/Dest:` 参数中包含可选子文件夹名称，请在 CSV 文件中将此参数留空。 如果包含了子文件夹名称，请在此参数中指定该名称（请参阅第二个示例）。 此参数的值区分大小写。  <br/> 无论采用哪种方法，均 *不要* 在 `FilePath` 参数的值中包含“ingestiondata”。  <br/><br/> **重要提示**：如果在步骤 2 中你在 SAS URL 中的 `/Dest:` 参数中包含了可选子文件夹名称，则文件路径名称的大小写必须与你使用的大小写相同。 例如，如果你在步骤 2 中将 `PSTFiles` 用作子文件夹名称，然后在 CSV 文件中的 `FilePath` 参数中使用 `pstfiles`，则导入 PST 文件将会失败。 请务必在两种情况下都使用相同的大小写。  <br/> |（保留为空白）  <br/> 或  <br/>  `PSTFiles` <br/> |
     | `Name` <br/> |指定要导入到用户邮箱的 PST 文件的名称。 此参数的值区分大小写。 导入作业的映射文件中每个 PST 文件的文件名必须唯一。 <br/> <br/>**重要说明：** CSV 文件中的 PST 文件名的大小写必须与在步骤 2 中上传到 Azure 存储位置的 PST 文件相同。 例如，如果使用 CSV  `annb.pst`  `Name` 参数中的 `AnnB.pst`，但实际 PST 文件的名称为 ，则针对该 PST 文件的导入将失败。 请确保 CSV 文件中的 PST 名称使用与实际 PST 文件相同的大小写。  <br/> | `annb.pst` <br/> |
     | `Mailbox` <br/> |指定要将 PST 文件导入到的邮箱的电子邮件地址。 不能指定公用文件夹，因为 PST 导入服务不支持将 PST 文件导入公用文件夹。  <br/> 若要将 PST 文件导入到非活动邮箱，必须为此参数指定邮箱 GUID。 若要获取此 GUID，请在 Exchange Online 中运行以下 PowerShell 命令：`Get-Mailbox <identity of inactive mailbox> -InactiveMailboxOnly | FL Guid` <br/> <br/>**注意：** 有时，你可能有多个邮箱具有相同的电子邮件地址，其中一个邮箱是活动邮箱，另一个邮箱处于软删除（或非活动）状态。 在这种情况下，必须指定邮箱 GUID 来唯一标识要将 PST 文件导入到的邮箱。 若要获取活动邮箱的此 GUID，请运行以下 PowerShell 命令：`Get-Mailbox <identity of active mailbox> | FL Guid`。 若要获取软删除（或非活动）邮箱的 GUID，请运行此命令：`Get-Mailbox <identity of soft-deleted or inactive mailbox> -SoftDeletedMailbox | FL Guid`。  <br/> | `annb@contoso.onmicrosoft.com` <br/> 或  <br/>  `2d7a87fe-d6a2-40cc-8aff-1ebea80d4ae7` <br/> |
-    | `IsArchive` <br/> | 指定是否要将 PST 文件导入到用户的存档邮箱。 有两个选项：  <br/><br/>**FALSE：** 将 PST 文件导入到用户的主邮箱。  <br/> **TRUE：** 将 PST 文件导入到用户的存档邮箱。 这是假设[用户的存档邮箱已启用](enable-archive-mailboxes.md)的情况。 <br/><br/>如果将此参数设置为 `TRUE`，但用户的存档邮箱未启用，则针对此用户进行的导入将失败。 如果针对某个用户的导入失败（因为他们的存档邮箱未启用，并且此属性设置为 `TRUE`），导入作业中的其他用户将不会受到影响。  <br/>  如果将此参数留空，PST 文件会导入到用户的主邮箱中。  <br/> <br/>**注意：** 若要针对主邮箱位于本地的某个用户将 PST 文件导入到基于云的存档邮箱，只需将此参数指定为 `TRUE`，并将 `Mailbox` 参数指定为该用户本地邮箱的电子邮件地址。  <br/> | `FALSE` <br/> 或  <br/>  `TRUE` <br/> |
+    | `IsArchive` <br/> | 指定是否将 PST 文件导入到用户的存档邮箱。有两个选项：  <br/><br/>**FALSE：** 将 PST 文件导入到用户的主邮箱。  <br/> **TRUE：** 将 PST 文件导入到用户的存档邮箱。 这是假设[用户的存档邮箱已启用](enable-archive-mailboxes.md)的情况。 <br/><br/>如果将此参数设置为 `TRUE`，但用户的存档邮箱未启用，则针对此用户进行的导入将失败。 如果针对某个用户的导入失败（因为他们的存档邮箱未启用，并且此属性设置为 `TRUE`），导入作业中的其他用户将不会受到影响。  <br/>  如果将此参数留空，PST 文件会导入到用户的主邮箱中。  <br/> <br/>**注意：** 若要针对主邮箱位于本地的某个用户将 PST 文件导入到基于云的存档邮箱，只需将此参数指定为 `TRUE`，并将 `Mailbox` 参数指定为该用户本地邮箱的电子邮件地址。  <br/> | `FALSE` <br/> 或  <br/>  `TRUE` <br/> |
     | `TargetRootFolder` <br/> | 指定要将 PST 文件导入到的邮箱文件夹。  <br/> <br/> 如果将此参数留空，则 PST 文件将被导入到位于邮箱根级别的名为“**导入**”的新文件夹中（与“收件箱”文件夹和其他默认邮箱文件夹属于同一级别）。  <br/> <br/> 如果指定 `/`，会将 PST 文件中的文件夹和邮件导入到目标邮箱或存档中的文件夹结构的顶部。 如果目标邮箱中存在一个文件夹（例如，默认文件夹“收件箱”、“已发送邮件”和“已删除邮件”），则 PST 中该文件夹中的邮件将合并到目标邮箱中的现有文件夹中。 例如，如果 PST 文件包含一个“收件箱”文件夹，则该文件夹中的邮件将导入到目标邮箱中的“收件箱”文件夹中。 如果目标邮箱的文件夹结构中不存在新文件夹，则会创建新文件夹。  <br/><br/>  如果指定 `/<foldername>`，PST 文件中的邮件和文件夹将被导入到名为 *\<foldername\>* 的文件夹中。 例如，如果使用 `/ImportedPst`，项目将被导入到名为 **ImportedPst** 的文件夹中。 此文件夹将位于用户邮箱内，与“收件箱”文件夹属于同一级别。  <br/><br/> **提示：** 请考虑运行几个测试批次来试验此参数，以便确定要将 PST 文件导入到的最佳文件夹位置。  <br/> |（保留为空白）  <br/> 或  <br/>  `/` <br/> 或  <br/>  `/ImportedPst` <br/> |
     | `ContentCodePage` <br/> |此可选参数指定用于导入 ANSI 文件格式的 PST 文件的代码页的数值。 此参数用于从中国、日本和韩国 (CJK) 组织导入 PST 文件，因为这些语言通常使用双字节字符集 (DBCS) 进行字符编码。 对于为邮箱文件夹名使用 DBCS 的语言，如果此参数未用于导入 PST 文件，则在导入文件后，这些文件夹名通常会混淆。  <br/><br/> 有关要用于此参数的受支持值的列表，请参阅[代码页标识符](/windows/win32/intl/code-page-identifiers)。  <br/> <br/>**注意：** 如前所述，这是一个可选参数，不一定非要在 CSV 文件中包含该参数。 或者，你可以包含该参数，并在一行或多行中将其值留空。  <br/> |（保留为空白）  <br/> 或  <br/>  `932`（这是 ANSI/OEM 日语的代码页标识符）  <br/> |
     | `SPFileContainer` <br/> |对于 PST 导入，将该参数留空。  <br/> |不适用  <br/> |
@@ -322,7 +322,7 @@ Microsoft Azure 存储资源管理器处于预览阶段。
 
   - 用户在任意设备上都可以使用数据，因为数据存储在云中。
 
-  - 它允许你将 Microsoft 365 合规性功能应用于你导入的 PST 文件中的数据，从而帮助满足你组织的合规性需求。 这包括：
+  - 它允许你将 Microsoft 365 合规性功能应用于你导入的 PST 文件中的数据，从而帮助满足你组织的合规性需求。这包括：
 
   - 启用[存档邮箱](enable-archive-mailboxes.md)和[自动展开存档](enable-unlimited-archiving.md)，从而向用户提供额外的邮箱存储空间来存储你导入的数据。
 
@@ -336,7 +336,7 @@ Microsoft Azure 存储资源管理器处于预览阶段。
 
   - 将数据导入到[非活动邮箱](create-and-manage-inactive-mailboxes.md)，以出于合规目的对数据进行存档。 
 
-  - 使用[数据丢失防护策略](data-loss-prevention-policies.md)来防止敏感数据被泄露到组织外部。
+  - 使用[数据丢失防护策略](dlp-learn-about-dlp.md)来防止敏感数据被泄露到组织外部。
   
 - 下面是在步骤 1 中获得的共享访问签名 (SAS) URL 示例。 此示例还包含你在 AzCopy.exe 工具中运行的命令语法 - 用于上传 PST 文件。 请务必采取预防措施来保护 SAS URL，就像保护密码或其他与安全相关的信息一样。
 

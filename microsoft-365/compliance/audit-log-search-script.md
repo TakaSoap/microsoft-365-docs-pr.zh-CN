@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.custom: seo-marvel-apr2020
 description: 使用在 Exchange Online 中运行 Search-UnifiedAuditLog cmdlet 的 PowerShell 脚本搜索审核日志。 此脚本经过优化，可返回大量（最多 50,000 个）审核记录。 该脚本会将这些记录导出为 CSV 文件，可在 Excel 中使用 Power Query 查看或转换这些文件。
-ms.openlocfilehash: 7ac3903abffc0bedb28363159c81b1f67a199f32
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: df5e675e5e36603a73078bd5ecf5e64bc7a76f95
+ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50907760"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51939562"
 ---
 # <a name="use-a-powershell-script-to-search-the-audit-log"></a>使用 PowerShell 脚本搜索审核日志
 
@@ -45,14 +45,14 @@ ms.locfileid: "50907760"
   ```powershell
   Get-AdminAuditLogConfig | FL UnifiedAuditLogIngestionEnabled
   ```
-  
+
   **UnifiedAuditLogestionEnabled** 属性的 `True` 值表明已打开审核日志搜索。
 
 - 必须分配有 Exchange Online 中的“仅供查看审核日志”或“审核日志”角色才能成功运行脚本。 默认情况下，在 Exchange 管理中心中的“权限”页上将这些角色分配给“合规性管理”和“组织管理”角色组。 有关详细信息，请参阅[在合规中心搜索审核日志](search-the-audit-log-in-security-and-compliance.md#requirements-to-search-the-audit-log)中的“搜索审核日志的要求”部分。
 
 - 完成该脚本可能需要很长时间。 运行所需的时长取决于配置脚本以为其检索审核记录的日期范围和时间间隔大小。 较大的日期范围和较小的间隔将导致运行时间较长。 请参阅步骤 2 中的表格，了解有关日期范围和间隔的信息。
 
-- 本文中提供的示例脚本在任何 Microsoft 标准支持程序或服务下都不受支持。 示例脚本“原样”提供，不提供任何形式的保证。 Microsoft 进一步拒绝所有默示保证，包括但不限于针对特定用途的适销性或适用性的任何默示保证。 由于示例脚本及文档的使用或性能所引起的全部风险均由你承担。 在任何情况下，对于由于使用或者无法使用示例脚本或文档所引起的任何损失（包括但不限于商业利润损失、业务中断、商业信息丢失或者其他经济损失），Microsoft、其作者或者参与创建、制作或交付脚本的任何人概不负责，即使 Microsoft 已被告知可能会出现此类损失。
+- 本文中的示例脚本不受任何 Microsoft 标准支持计划或服务支持。示例脚本按原样提供，不提供任何种类的担保。Microsoft 进一步声明，不提供任何默示担保，包括但不限于适销性或特定用途适用性的默示担保。使用或运行示例脚本和文档所产生的任何风险均由你自己承担。对于因使用或无法使用示例脚本或文档而产生的任何损失（包括但不限于商业利润损失、业务中断、业务信息丢失或其他金钱损失），Microsoft、脚本作者或参与创建、生成或交付脚本的任何人都不承担任何责任，即使 Microsoft 已被告知存在这种损失的可能性，也不例外。
 
 ## <a name="step-1-connect-to-exchange-online-powershell"></a>步骤 1：连接到 Exchange Online PowerShell
 
@@ -62,88 +62,92 @@ ms.locfileid: "50907760"
 
 连接到 Exchange Online PowerShell 之后，下一步是创建、修改和运行脚本以检索审核数据。 审核日志搜索脚本中的前七行包含以下变量，可以对其进行修改以配置搜索。 请参阅步骤 2 中的表格，了解这些变量的说明。
 
-1. 使用 ps1 文件名后缀将以下文本保存到 Windows PowerShell 脚本。 例如，SearchAuditLog.ps1。
+1. 使用 ps1 文件名后缀将以下文本保存到 Windows PowerShell 脚本。例如，SearchAuditLog.ps1。
 
-```powershell
-#Modify the values for the following variables to configure the audit log search.
-$logFile = "d:\AuditLogSearch\AuditLogSearchLog.txt"
-$outputFile = "d:\AuditLogSearch\AuditLogRecords.csv"
-[DateTime]$start = [DateTime]::UtcNow.AddDays(-1)
-[DateTime]$end = [DateTime]::UtcNow
-$record = "AzureActiveDirectory"
-$resultSize = 5000
-$intervalMinutes = 60
-
-#Start script
-[DateTime]$currentStart = $start
-[DateTime]$currentEnd = $start
-
-Function Write-LogFile ([String]$Message)
-{
-    $final = [DateTime]::Now.ToUniversalTime().ToString("s") + ":" + $Message
-    $final | Out-File $logFile -Append
-}
-
-Write-LogFile "BEGIN: Retrieving audit records between $($start) and $($end), RecordType=$record, PageSize=$resultSize."
-Write-Host "Retrieving audit records for the date range between $($start) and $($end), RecordType=$record, ResultsSize=$resultSize"
-
-$totalCount = 0
-while ($true)
-{
-    $currentEnd = $currentStart.AddMinutes($intervalMinutes)
-    if ($currentEnd -gt $end)
-    {
-        $currentEnd = $end
-    }
-
-    if ($currentStart -eq $currentEnd)
-    {
-        break
-    }
-
-    $sessionID = [Guid]::NewGuid().ToString() + "_" +  "ExtractLogs" + (Get-Date).ToString("yyyyMMddHHmmssfff")
-    Write-LogFile "INFO: Retrieving audit records for activities performed between $($currentStart) and $($currentEnd)"
-    Write-Host "Retrieving audit records for activities performed between $($currentStart) and $($currentEnd)"
-    $currentCount = 0
-
-    $sw = [Diagnostics.StopWatch]::StartNew()
-    do
-    {
-        $results = Search-UnifiedAuditLog -StartDate $currentStart -EndDate $currentEnd -RecordType $record -SessionId $sessionID -SessionCommand ReturnLargeSet -ResultSize $resultSize
-
-        if (($results | Measure-Object).Count -ne 0)
-        {
-            $results | export-csv -Path $outputFile -Append -NoTypeInformation
-
-            $currentTotal = $results[0].ResultCount
-            $totalCount += $results.Count
-            $currentCount += $results.Count
-            Write-LogFile "INFO: Retrieved $($currentCount) audit records out of the total $($currentTotal)"
-
-            if ($currentTotal -eq $results[$results.Count - 1].ResultIndex)
-            {
-                $message = "INFO: Successfully retrieved $($currentTotal) audit records for the current time range. Moving on!"
-                Write-LogFile $message
-                Write-Host "Successfully retrieved $($currentTotal) audit records for the current time range. Moving on to the next interval." -foregroundColor Yellow
-                ""
-                break
-            } 
-        }
-    }
-    while (($results | Measure-Object).Count -ne 0)
-
-    $currentStart = $currentEnd
-}
-
-Write-LogFile "END: Retrieving audit records between $($start) and $($end), RecordType=$record, PageSize=$resultSize, total count: $totalCount."
-Write-Host "Script complete! Finished retrieving audit records for the date range between $($start) and $($end). Total count: $totalCount" -foregroundColor Green
-```
+   ```powershell
+   #Modify the values for the following variables to configure the audit log search.
+   $logFile = "d:\AuditLogSearch\AuditLogSearchLog.txt"
+   $outputFile = "d:\AuditLogSearch\AuditLogRecords.csv"
+   [DateTime]$start = [DateTime]::UtcNow.AddDays(-1)
+   [DateTime]$end = [DateTime]::UtcNow
+   $record = "AzureActiveDirectory"
+   $resultSize = 5000
+   $intervalMinutes = 60
+   
+   #Start script
+   [DateTime]$currentStart = $start
+   [DateTime]$currentEnd = $start
+   
+   Function Write-LogFile ([String]$Message)
+   {
+       $final = [DateTime]::Now.ToUniversalTime().ToString("s") + ":" + $Message
+       $final | Out-File $logFile -Append
+   }
+   
+   Write-LogFile "BEGIN: Retrieving audit records between $($start) and $($end), RecordType=$record, PageSize=$resultSize."
+   Write-Host "Retrieving audit records for the date range between $($start) and $($end), RecordType=$record, ResultsSize=$resultSize"
+   
+   $totalCount = 0
+   while ($true)
+   {
+       $currentEnd = $currentStart.AddMinutes($intervalMinutes)
+       if ($currentEnd -gt $end)
+       {
+           $currentEnd = $end
+       }
+   
+       if ($currentStart -eq $currentEnd)
+       {
+           break
+       }
+   
+       $sessionID = [Guid]::NewGuid().ToString() + "_" +  "ExtractLogs" + (Get-Date).ToString("yyyyMMddHHmmssfff")
+       Write-LogFile "INFO: Retrieving audit records for activities performed between $($currentStart) and $($currentEnd)"
+       Write-Host "Retrieving audit records for activities performed between $($currentStart) and $($currentEnd)"
+       $currentCount = 0
+   
+       $sw = [Diagnostics.StopWatch]::StartNew()
+       do
+       {
+           $results = Search-UnifiedAuditLog -StartDate $currentStart -EndDate $currentEnd -RecordType $record -SessionId $sessionID -SessionCommand ReturnLargeSet -ResultSize $resultSize
+   
+           if (($results | Measure-Object).Count -ne 0)
+           {
+               $results | export-csv -Path $outputFile -Append -NoTypeInformation
+   
+               $currentTotal = $results[0].ResultCount
+               $totalCount += $results.Count
+               $currentCount += $results.Count
+               Write-LogFile "INFO: Retrieved $($currentCount) audit records out of the total $($currentTotal)"
+   
+               if ($currentTotal -eq $results[$results.Count - 1].ResultIndex)
+               {
+                   $message = "INFO: Successfully retrieved $($currentTotal) audit records for the current time range. Moving on!"
+                   Write-LogFile $message
+                   Write-Host "Successfully retrieved $($currentTotal) audit records for the current time range. Moving on to the next interval." -foregroundColor Yellow
+                   ""
+                   break
+               }
+           }
+       }
+       while (($results | Measure-Object).Count -ne 0)
+   
+       $currentStart = $currentEnd
+   }
+   
+   Write-LogFile "END: Retrieving audit records between $($start) and $($end), RecordType=$record, PageSize=$resultSize, total count: $totalCount."
+   Write-Host "Script complete! Finished retrieving audit records for the date range between $($start) and $($end). Total count: $totalCount" -foregroundColor Green
+   ```
 
 2. 修改下表中列出的变量以配置搜索条件。 脚本包括这些变量的示例值，但应对其进行更改（除非另有说明）以满足特定要求。
 
+   <br>
+
+   ****
+
    |变量|示例值|说明|
    |---|---|---|
-   |`$logFile`|"d:\temp\AuditSearchLog.txt"|指定日志文件的名称和位置，其中包含有关脚本执行的审核日志搜索的进度信息。 该脚本将 UTC 时间戳写入日志文件。|
+   |`$logFile`|"d:\temp\AuditSearchLog.txt"|指定日志文件的名称和位置，其中包含有关脚本执行的审核日志搜索的进度信息。该脚本将 UTC 时间戳写入日志文件。|
    |`$outputFile`|"d:\temp\AuditRecords.csv"|指定包含脚本所返回的审核记录的 CSV 文件的名称和位置。|
    |`[DateTime]$start` 和 `[DateTime]$end`|[DateTime]::UtcNow.AddDays(-1) <br/>[DateTime]::UtcNow|指定审核日志搜索的日期范围。 该脚本将返回指定日期范围内发生的审核活动的记录。 例如，若要返回 2021 年 1 月执行的活动，可使用 `"2021-01-01"` 的开始日期和 `"2021-01-31"` 的结束日期（请确保用双引号括起值）脚本中的示例值将返回过去 24 小时内执行的活动的记录。 如果值中不包含时间戳，则指定日期的默认时间戳为凌晨 12:00（午夜）。|
    |`$record`|"AzureActiveDirectory"|指定要搜索的审计活动（也称为 *操作*）的记录类型。 此属性指示触发了活动的服务或功能。 有关可用于此变量的记录类型的列表，请参阅[审核日志记录类型](/office/office-365-management-api/office-365-management-activity-api-schema#auditlogrecordtype)。 可以使用记录类型名称或 ENUM 值。 <br/><br/>**提示：** 若要返回所有记录类型的审核记录，请使用 `$null` 值（不带双引号）。|

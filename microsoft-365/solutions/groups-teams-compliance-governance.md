@@ -15,12 +15,12 @@ ms.custom:
 - M365solutions
 f1.keywords: NOCSH
 description: 了解组、Microsoft 365和Teams的合规性SharePoint选项。
-ms.openlocfilehash: 92b668c5cbf5d105ccd1373a6ef8550400e4539f
-ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
+ms.openlocfilehash: a9a94f0c1886ac5b60292f5f4d4b9b9d6d84380c
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52114024"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52241672"
 ---
 # <a name="compliance-options-for-microsoft-365-groups-teams-and-sharepoint-collaboration"></a>用于组Microsoft 365、Teams和SharePoint的合规性选项
 
@@ -39,10 +39,12 @@ Microsoft 365提供了一整套工具来在用户协作时保持合规性。 查
 ||加密敏感内容|[通过敏感度标签应用加密，从而限制对内容的访问](../compliance/encryption-sensitivity-labels.md)|
 |信息保护|||
 ||防止丢失敏感信息|[了解数据丢失防护](../compliance/dlp-learn-about-dlp.md)|
-||保护聊天中的敏感信息。|[数据丢失保护和 Microsoft Teams](../compliance/dlp-microsoft-teams.md)|
+||保护聊天中的敏感信息。|[数据丢失防护和 Microsoft Teams](../compliance/dlp-microsoft-teams.md)|
 ||定义组织的敏感信息|[自定义敏感信息类型](../compliance/sensitive-information-type-learn-about.md)|
 |用户细分|||
 ||限制用户区段之间的通信|[信息屏障](../compliance/information-barriers.md)|
+|数据驻留|||
+||将数据存储到特定地理位置|[Microsoft 365 多地理位置](/microsoft-365/enterprise/microsoft-365-multi-geo)|
 
 ## <a name="information-retention"></a>信息保留
 
@@ -86,7 +88,7 @@ Microsoft 365提供了一整套工具来在用户协作时保持合规性。 查
 
 其他资源：
 
-- [了解敏感性标签](../compliance/sensitivity-labels.md)
+- [了解敏感度标签](../compliance/sensitivity-labels.md)
 
 
 ## <a name="information-protection"></a>信息保护
@@ -97,7 +99,7 @@ DLP 策略可以防止在用户、用户和SharePoint之间Exchange敏感信息T
 
 dlp in Teams can help protect sensitive information in Teams chat and channel messages by deleting messages that contain sensitive information.
 
-- [数据丢失保护和 Microsoft Teams](../compliance/dlp-microsoft-teams.md)
+- [数据丢失防护和 Microsoft Teams](../compliance/dlp-microsoft-teams.md)
 
 如果您有组织特有的敏感信息（如项目代码名称），您可以创建自己的敏感信息类型，并应用于 DLP 策略以保护组、团队和 Sharepoint 中的内容。
 
@@ -112,6 +114,14 @@ dlp in Teams can help protect sensitive information in Teams chat and channel me
 - [Microsoft Teams 中的信息屏障](/microsoftteams/information-barriers-in-teams)
 
 - [使用信息屏障SharePoint](/sharepoint/information-barriers)
+
+## <a name="data-residency"></a>数据驻留
+
+通过Microsoft 365多地理位置，可以在已选择满足数据驻留要求的地理位置中预配和存储静止数据。 在多地理位置环境中，Microsoft 365 租户包含一个中心位置 (其中最初预配 Microsoft 365 订阅的) 以及一个或多个附属位置，你可以存储数据。
+
+- [Microsoft 365 多地理位置](/microsoft-365/enterprise/microsoft-365-multi-geo)
+
+- [Microsoft 365 多地理位置计划](/microsoft-365/enterprise/plan-for-multi-geo)
 
 ## <a name="related-topics"></a>相关主题
 

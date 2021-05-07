@@ -7,7 +7,7 @@ author: cabailey
 manager: laurawi
 ms.date: ''
 audience: Admin
-ms.topic: hub-page
+ms.topic: overview
 ms.service: O365-seccomp
 localization_priority: Priority
 search.appverid:
@@ -16,13 +16,14 @@ search.appverid:
 ms.collection:
 - m365solution-mip
 - m365initiative-compliance
+recommendations: false
 description: 实施 Microsoft 信息保护 (MIP)，无论在何处生活或旅居在外，均可助你保护敏感信息。
-ms.openlocfilehash: e8487bf443592fa45b887929f947b701406dba55
-ms.sourcegitcommit: 94fa3e57fa6505551d84ae7b458150dceff30db7
+ms.openlocfilehash: 36e8e917349edd5523677112818cd39514710583
+ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51394690"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52114358"
 ---
 # <a name="microsoft-information-protection-in-microsoft-365"></a>Microsoft 365 中的 Microsoft 信息保护
 
@@ -48,7 +49,7 @@ MIP 功能包含在 Microsoft 365 合规性中，提供了[了解数据](#know-y
  
 |功能|它能解决什么问题？|开始行动|
 |:------|:------------|:--------------------|
-|[敏感信息类型](sensitive-information-type-learn-about.md)| 通过使用内置或自定义正则表达式或函数识别敏感数据。 补强证据包括关键字、置信水平和接近度。| [自定义内置敏感信息类型](customize-a-built-in-sensitive-information-type.md)|
+|[敏感信息类型](sensitive-information-type-learn-about.md)| 使用内置或自定义正则表达式或函数识别敏感数据。补强证据包括关键字、可信度和接近度。| [自定义内置敏感信息类型](customize-a-built-in-sensitive-information-type.md)|
 |[可训练的分类器](classifier-learn-about.md)| 通过使用您感兴趣的数据示例而不是识别项中的元素来标识敏感数据（模式匹配）。 可使用内置分类器，或使用自己的内容培训分类器。| [可训练的分类器入门](classifier-get-started-with.md) |
 |[数据分类](data-classification-overview.md) | 组织中具有敏感度标签、保留标签或已分类的项目的图形标识。 此信息还可用于深入了解用户正在针对这些项目采取的操作。 | [内容资源管理器入门](data-classification-content-explorer.md)<br /><br /> [活动资源管理器入门](data-classification-activity-explorer.md) |
 
@@ -77,8 +78,19 @@ MIP 功能包含在 Microsoft 365 合规性中，提供了[了解数据](#know-y
 
 |功能|它能解决什么问题？|开始行动|
 |:------|:------------|:---------------------|
-|[数据丢失防护 (DLP)](data-loss-prevention-policies.md)| 帮助防止意外共享敏感项目。 | [开始使用默认 DLP 策略](get-started-with-the-default-dlp-policy.md)|
+|[了解数据丢失防护](dlp-learn-about-dlp.md)| 帮助防止意外共享敏感项目。 | [开始使用默认 DLP 策略](get-started-with-the-default-dlp-policy.md)|
 |[了解终结点数据丢失防护](endpoint-dlp-learn-about.md)| 将 DLP 功能扩展到 Windows 10 计算机上使用和共享的项目。 | [终结点数据丢失防护入门](endpoint-dlp-getting-started.md)|
 |[了解 Microsoft 合规性扩展（预览版）](dlp-chrome-learn-about.md) | 将 DLP 功能扩展到 Chrome 浏览器 | [Microsoft 合规性扩展（预览版）入门](dlp-chrome-get-started.md)|
 |[了解 Microsoft 365 本地扫描仪数据丢失防护（预览）](dlp-on-premises-scanner-learn.md)|将 DLP 对文件活动的监视以及针对这些文件的安全操作扩展到本地文件共享和 SharePoint 文件夹和文档库。|[Microsoft 365 本地扫描仪数据丢失防护入门（预览）](dlp-on-premises-scanner-get-started.md)|
 |[保护 Microsoft Teams 聊天和频道消息中的敏感信息](dlp-microsoft-teams.md) | 将一些 DLP 功能扩展到 Teams 聊天和频道消息 | [了解 Microsoft Teams（预览版）中的默认数据丢失防护策略](dlp-teams-default-policy.md)| 
+
+
+## <a name="additional-resources"></a>其他资源
+
+许多组织正在使用这些信息保护功能来遵守数据隐私法规。 为了提供帮助，我们设计了指导你通过端到端过程来规划和实施跨 Microsoft 365 功能的工作流，包括安全访问、威胁防护、信息保护和数据管理。 有关详细信息，请参阅[使用 Microsoft 365 为数据隐私法规部署信息保护](../solutions/information-protection-deploy.md) (aka.ms/m365dataprivacy)。 
+
+此外，为帮助规划实施信息保护功能的集成策略，请下载 *Microsoft 365 信息保护与合规性功能* 插图集。  可随时根据自己的使用情况来修改这些插图。
+
+| 项目 | 说明 |
+|:-----|:------------|
+|[![模型海报：Microsoft 365 信息保护和合规性功能](../media/solutions-architecture-center/m365-compliance-illustrations-thumb.png)](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf) <br/> [以 PDF 格式下载](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf)  \| [以 Visio 格式下载](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.vsdx) <br/> 日语：[以 PDF 格式下载](https://download.microsoft.com/download/6/f/1/6f1a7d0e-dd8e-442e-b073-8e94327ae4f8/m365-compliance-illustrations.pdf)  \| [以 Visio 格式下载](https://download.microsoft.com/download/6/f/1/6f1a7d0e-dd8e-442e-b073-8e94327ae4f8/m365-compliance-illustrations.vsdx) <br/> 更新时间：2020年 10 月|包括： <ul><li>  Microsoft 信息保护和数据丢失防护</li><li>保留策略和保留标签 </li><li>信息屏障</li><li>通信合规性</li><li>内部风险管理</li><li>第三方数据摄取</li>|

@@ -19,16 +19,16 @@ ms.collection:
 search.appverid:
 - MET150
 description: 'Microsoft 365 终结点数据丢失防护可将对文件活动的监视和针对这些文件的保护措施扩展到终结点。 在 Microsoft 365 合规解决方案中将文件设为可见 '
-ms.openlocfilehash: 5aaed57574f1ecabdf28442b30dcd42677243df1
-ms.sourcegitcommit: 39609c4d8c432c8e7d7a31cb35c8020e5207385b
+ms.openlocfilehash: b5aa6c737bc54129ce49378a7dcaf81e9d5c612f
+ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "51445272"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52114100"
 ---
 # <a name="learn-about-microsoft-365-endpoint-data-loss-prevention"></a>了解 Microsoft 365 终结点数据丢失防护
 
-可以使用 Microsoft 365 数据丢失防护 (DLP) 来监视对确定为敏感的项目执行的操作，并帮助防止意外共享这些项目。 有关 DLP 的更多信息，请参阅[数据丢失防护概述](data-loss-prevention-policies.md)。
+可以使用 Microsoft 365 数据丢失防护 (DLP) 来监视对确定为敏感的项目执行的操作，并帮助防止意外共享这些项目。 有关 DLP 的更多详细信息，请参阅 [了解数据丢失防护（预览版）](dlp-learn-about-dlp.md)。
 
 **终结点数据丢失防护**（终结点 DLP）可将 DLP 的活动监视和保护功能扩展到 Windows 10 设备上的敏感项目。 将设备加入 Microsoft 365 合规性解决方案中后，即可在[活动资源管理器](data-classification-activity-explorer.md)中看到有关用户对敏感项目执行的操作的信息，你可以通过 [DLP 策略](create-test-tune-dlp-policy.md)对这些项目执行保护性操作。
 
@@ -160,7 +160,7 @@ Microsoft 终结点 DLP 使你可以审核和管理用户对运行 Windows 10 �
 
 - [Microsoft 终结点数据丢失防护入门](endpoint-dlp-getting-started.md)
 - [使用 Microsoft 终结点数据丢失防护](endpoint-dlp-using.md)
-- [数据丢失防护概述](data-loss-prevention-policies.md)
+- [了解数据丢失防护](dlp-learn-about-dlp.md)
 - [创建、测试和优化 DLP 策略](create-test-tune-dlp-policy.md)
 - [活动资源管理器入门](data-classification-activity-explorer.md)
 - [Microsoft Defender for Endpoint](/windows/security/threat-protection/)

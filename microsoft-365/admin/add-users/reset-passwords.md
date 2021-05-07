@@ -26,17 +26,17 @@ search.appverid:
 - BEA160
 - GEA150
 ms.assetid: 7a5d073b-7fae-4aa5-8f96-9ecd041aba9c
-description: 了解如何在 Microsoft 365 商业版订阅中重置用户密码。
-ms.openlocfilehash: 24fc6581837f71659a2ecc0359c6967e3969d868
-ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
+description: 了解如何在企业版订阅中重置Microsoft 365密码。
+ms.openlocfilehash: fa368c7f44d4df847cf007568853c11970e7adc1
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52023973"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52241696"
 ---
 # <a name="reset-passwords"></a>重置密码
 
-本文介绍了当你拥有 Microsoft 365 商业版订阅时，如何为自己和用户重置密码。
+本文介绍如何在拥有适用于企业订阅的 Microsoft 365重置密码。
 
 ## <a name="before-you-begin"></a>准备工作
 
@@ -54,23 +54,7 @@ ms.locfileid: "52023973"
   
 ## <a name="steps-reset-a-business-password-for-a-user"></a>步骤：重置用户的业务密码
 
-::: moniker range="o365-worldwide"
-
 1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">活动用户</a>”页面。
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">活动用户</a>”页面。
-
-::: moniker-end
 
 2. 在"**活动用户"** 页上，选择用户，然后选择"**重置密码"。**
 
@@ -84,7 +68,7 @@ ms.locfileid: "52023973"
 
 ## <a name="reset-my-admin-password"></a>重置我的管理员密码
 
-如果你忘记了密码，但能够登录 Microsoft 365，请使用以下步骤，例如，密码保存在浏览器中：
+如果忘记了密码，但能够登录密码，Microsoft 365，例如，密码保存在浏览器中：
 
 1. Select your name (icon) in upper right corner > **My Account**  >  **Personal Info**.
 
@@ -126,13 +110,13 @@ ms.locfileid: "52023973"
   
 <!-- Here's a related article: [Set the passwords for multiple user accounts](/office365/enterprise/powershell/manage-office-365-with-office-365-powershell). -->
   
-有关概述信息，请参阅[使用 PowerShell 管理 Microsoft 365。](../../enterprise/manage-microsoft-365-with-microsoft-365-powershell.md)
+有关概述信息，请参阅[使用 PowerShell Microsoft 365管理部署](../../enterprise/manage-microsoft-365-with-microsoft-365-powershell.md)。
   
 ## <a name="force-a-password-change-for-all-users-in-your-business"></a>为企业中的所有用户强制更改密码
 
 请参阅这篇由 Microsoft MVP Vasil Michev 撰写的出色博客文章：[为 Office 365 中的所有用户强制更改密码](https://go.microsoft.com/fwlink/?linkid=853693)。
   
-## <a name="i-dont-have-a-microsoft-365-for-business-subscription"></a>我并没有 Microsoft 365 商业版订阅
+## <a name="i-dont-have-a-microsoft-365-for-business-subscription"></a>我并没有适用于Microsoft 365订阅
 
 请尝试阅读此文：[我忘记了 Office 所用的帐户用户名或密码。](https://support.microsoft.com/office/eba0b4a2-c0ae-472c-99f6-bc63ee2425a8?wt.mc_id=SCL_reset-passwords_AdmHlp)
   

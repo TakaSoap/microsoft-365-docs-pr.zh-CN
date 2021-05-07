@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用敏感度标签保护 SharePoint 和 Microsoft Teams 网站以及 Microsoft 365 组中的内容。
-ms.openlocfilehash: 501df9b167e917d79957d8b156597af67e6240af
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 4914a5911ffb493eded46631d7682c1e48cf1426
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50919578"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51860871"
 ---
 # <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>使用敏感度标签保护 Microsoft Teams、Microsoft 365 组和 SharePoint 网站中的内容
 
@@ -233,7 +233,7 @@ ms.locfileid: "50919578"
    $Id = [GUID]("e48058ea-98e8-4940-8db0-ba1310fd955e")
    ```
 
-4. 创建一个新变量，用于标识在其 URL 中有共同标识字符串的多个网站。 例如：
+4. 创建一个新变量，用于标识在其 URL 中有共同标识字符串的多个网站。例如：
 
    ```powershell
    $sites = Get-SPOSite -IncludePersonalSite $true -Limit all -Filter "Url -like 'documents"
@@ -245,7 +245,7 @@ ms.locfileid: "50919578"
    $sites | ForEach-Object {Set-SPOTenant $_.url -SensitivityLabel $Id}
    ```
 
-若要为不同的网站应用不同的标签，请为每个网站重复以下命令：`Set-SPOSite -Identity <URL> -SensitivityLabel "<labelguid>"`
+通过此系列命令，可使用相同的敏感度标签标记租户中的多个站点，因此可使用 Set-SPOTenant cmdlet，而不是针对每个网站配置的 Set-SPOSite cmdlet。 但是，当需要应用不同标签为特定网站重复以下命令时，请使用 Set-SPOSite cmdlet： `Set-SPOSite -Identity <URL> -SensitivityLabel "<labelguid>"`
 
 ## <a name="view-and-manage-sensitivity-labels-in-the-sharepoint-admin-center"></a>在 SharePoint 管理中心中查看和管理敏感度标签
 
@@ -347,7 +347,7 @@ ms.locfileid: "50919578"
    $Groups= Get-UnifiedGroup | Where {$_.classification -eq "General"}
    ```
 
-6. 对于每个组，添加新的敏感度标签 GUID。 例如：
+6. 对于每个组，添加新的敏感度标签 GUID。例如：
 
     ```PowerShell
     foreach ($g in $groups)

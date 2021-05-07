@@ -16,16 +16,16 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: ''
-ms.openlocfilehash: 12a4e8873cb7212bfa7dde12bba9e98528cd859a
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 01dd5feab17c68eed1da9d66c4310c50e90032c6
+ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50919668"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52114222"
 ---
 # <a name="learn-about-sensitive-information-types"></a>了解敏感信息类型
 
-标识和分类组织控制下的敏感项目是信息保护规范的第一 [步](./information-protection.md)。  Microsoft 365 提供了三种标识项目的方法，以便可以将其分类：
+标识和分类组织控制下的敏感项目是信息保护规范的第一 [步](./information-protection.md)。  Microsoft 365提供了三种标识项目的方法，以便对这些项目进行分类：
 
 - 用户手动执行
 - 自动模式识别，如敏感信息类型
@@ -35,9 +35,10 @@ ms.locfileid: "50919668"
 
 ## <a name="sensitive-information-types-are-used-in"></a>敏感信息类型用于
 
-- [数据丢失防护策略](data-loss-prevention-policies.md) 
+- [数据丢失防护策略](dlp-learn-about-dlp.md) 
 - [敏感度标签](sensitivity-labels.md)
 - [保留标签](retention.md)
+- [内部风险管理](insider-risk-management.md)
 - [通信合规性](communication-compliance.md)
 - [自动标记策略](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-for-office-apps)
 
@@ -103,7 +104,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 #### <a name="keyword_argentina_national_id"></a>Keyword_argentina_national_id
 
 - Argentina National Identity number 
-- 标识 
+- Identity 
 - Identification National Identity Card 
 - DNI 
 - NIC National Registry of Persons 
@@ -143,7 +144,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 
 > [!NOTE]
-> 在 Microsoft 365 服务的数据丢失防护、Microsoft 365 服务的 Microsoft 信息保护、通信合规性、信息管理和记录管理中，可立即使用改进的可信度。
+> 改进的可信度可在 Microsoft 365 服务的数据丢失防护、Microsoft 365 服务的 Microsoft 信息保护、通信合规性、信息管理和记录管理中立即使用。
 
 > Microsoft 365 信息保护现可为以下语言提供双字节字符集语言支持（预览）：
 > - 简体中文

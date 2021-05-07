@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 准备及部署 Microsoft 合规性扩展。
-ms.openlocfilehash: c6f56c65de6428374d912545db38337d34720c94
-ms.sourcegitcommit: 8f1721de52dbe3a12c11a0fa5ed0ef5972ca8196
+ms.openlocfilehash: 6ae44a86d415161cd3d7adf40671f02d93fb83c6
+ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/17/2021
-ms.locfileid: "50838345"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52113860"
 ---
 # <a name="get-started-with-microsoft-compliance-extension-preview"></a>Microsoft 合规性扩展（预览版）入门
 
@@ -35,7 +35,7 @@ ms.locfileid: "50838345"
 要使用 Microsoft 合规性扩展，设备必须装载到终结点 DLP中。 如果您是 DLP 或终结点 DLP 的新手，请阅读这些文章
 
 - [了解 Microsoft 合规性扩展](dlp-chrome-learn-about.md)
-- [数据丢失防护概述](data-loss-prevention-policies.md)
+- [了解数据丢失防护](dlp-learn-about-dlp.md)
 - [创建、测试和优化 DLP 策略](create-test-tune-dlp-policy.md)
 - [根据模板创建 DLP 策略](create-a-dlp-policy-from-a-template.md)
 - [了解终结点数据丢失防护](endpoint-dlp-learn-about.md)
@@ -76,7 +76,7 @@ ms.locfileid: "50838345"
 
 ### <a name="overall-installation-workflow"></a>整体安装工作流
 
-部署 Microsoft 合规性扩展是一个多阶段过程。 可选择一次在一台计算机上安装，或将 Microsoft Endpoint Manager 或组策略用于组织范围的部署。
+部署 Microsoft 合规性扩展是一个多阶段过程。可选择一次在一台计算机上安装，或将 Microsoft Endpoint Manager 或组策略用于组织范围的部署。
 
 1. [准备设备](#prepare-your-devices)。
 2. [基本设置单机自托管](#basic-setup-single-machine-selfhost)
@@ -274,7 +274,7 @@ ms.locfileid: "50838345"
 
 - [了解终结点数据丢失防护](endpoint-dlp-learn-about.md)
 - [使用终结点数据丢失防护](endpoint-dlp-using.md)
-- [数据丢失防护概述](data-loss-prevention-policies.md)
+- [了解数据丢失防护](dlp-learn-about-dlp.md)
 - [创建、测试和优化 DLP 策略](create-test-tune-dlp-policy.md)
 - [活动资源管理器入门](data-classification-activity-explorer.md)
 - [Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/)

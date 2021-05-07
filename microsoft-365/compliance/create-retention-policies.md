@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用保留策略有效掌控用户使用电子邮件、文档和对话生成的内容。 保留所需内容并删除不需要的内容。
-ms.openlocfilehash: 63670b157a66bad963f02355cbed2bdd95690081
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 2b2ce9670e9f297c89ed70e1b37c17aa59b80844
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50908286"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51687268"
 ---
 # <a name="create-and-configure-retention-policies"></a>创建和配置保留策略
 
@@ -83,6 +83,15 @@ ms.locfileid: "50908286"
 5. 完成向导以保存设置。
 
 有关 Teams 保留策略的详细信息，请参阅[Microsoft Teams 中的 保留策略](/microsoftteams/retention-policies)来自 Teams 文档。
+
+#### <a name="known-configuration-issues"></a>已知的配置问题
+
+- 虽然可以选择从上次修改项目时开始保留期的选项，但始终使用 **从项目创建时** 的值。 对于已编辑的邮件，将保存一份带有原始时间戳的原始邮件副本，以标识创建此预编辑邮件的时间，并且该编辑后邮件具有较新的时间戳。
+
+- 为“**Teams 频道消息**”位置选择“**选择团队**”时，你可能会看到不属于团队的 Microsoft 365 组。 不要选择这些组。
+
+- 在选择“**为 Teams 聊天选择用户**”位置时，可能看到来宾和非邮箱用户。 保留策略并非专为这些用户设计，因此请不要选择他们。
+
 
 #### <a name="additional-retention-policy-needed-to-support-teams"></a>支持团队所需的其他保留策略
 
@@ -194,9 +203,16 @@ Yammer 不仅仅是社区消息和私人消息。 若要保留和删除 Yammer �
 
 ### <a name="configuration-information-for-microsoft-365-groups"></a>Microsoft 365 组的配置信息
 
-若要保留或删除 Microsoft 365 组（以前称为 Office 365 组）的内容，请使用 **Microsoft 365 组** 位置。 即使 Microsoft 365 组有 Exchange 邮箱，涵盖整个 **Exchange 电子邮件** 位置的保留策略也不会包含 Microsoft 365 组邮箱中的内容。 此外，尽管 **Exchange 电子邮件** 位置最初允许你指定包括或排除组邮箱，但在尝试保存保留策略时，你将收到一条错误消息，表明“RemoteGroupMailbox”不是有效的 Exchange 位置选项。
+若要保留或删除 Microsoft 365 组（以前称为 Office 365 组）的内容，请使用 **Microsoft 365 组** 位置。 即使 Microsoft 365 组有 Exchange 邮箱，涵盖整个 **Exchange 电子邮件** 位置的保留策略也不会包含 Microsoft 365 组邮箱中的内容。 此外，尽管 **Exchange 电子邮件** 位置最初允许你指定包括或排除组邮箱，但在尝试保存保留策略时，仍将收到一条错误消息，表明“RemoteGroupMailbox”不是 Exchange 位置的有效选择内容。
 
-应用于 Microsoft 365 组的保留策略包含邮箱和 SharePoint 团队网站。 存储在 SharePoint 团队网站中的文件与此位置有关，但 Teams 聊天或 Teams 频道与此位置无关，它们拥有自己的保留策略位置。
+默认情况下，应用于 Microsoft 365 组的保留策略包含组邮箱和 SharePoint 团队网站。 存储在 SharePoint 团队网站中的文件与此位置有关，但 Teams 聊天或 Teams 频道与此位置无关，它们拥有自己的保留策略位置。
+
+因为你希望保留策略仅应用于 Microsoft 365 邮箱或已连接的 SharePoint 团队网站，若要更改默认设置，请使用带有值为以下之一的参数 *应用程序* 的 [Set-RetentionCompliancePolicy](/powershell/module/exchange/set-retentioncompliancepolicy) PowerShell cmdlet：
+
+- `Group:Exchange` 仅适用于已连接到组的 Microsoft 365 邮箱。
+- `Group:SharePoint` 仅适用于已连接到组的 SharePoint 网站。
+
+若要返回到所选 Microsoft 365 组的邮箱和 SharePoint 网站的默认值，请指定 `Group:Exchange,SharePoint`。
 
 ### <a name="configuration-information-for-skype-for-business"></a>Skype for Business 的配置信息
 
@@ -234,9 +250,9 @@ Yammer 不仅仅是社区消息和私人消息。 若要保留和删除 Yammer �
 
 示例：
 
-- SharePoint：如果希望将某个网站集中的项目自上次修改以来保留七年，并且该网站集中的某个文档在六年内未进行修改，则该文档在不修改的情况下将仅再保留 1 年。 如果再次对该文档进行编辑，则会根据最新修改日期计算文档期限，并将再保留 7 年。
+- SharePoint：如果希望将某个网站集中的项目自上次修改以来保留七年，并且该网站集中的某个文档在六年内未进行修改，则该文档在不修改的情况下将仅再保留一 年。如果再次对该文档进行编辑，则会根据最新修改日期计算文档期限，并将再保留七年。
 
-- Exchange：如果想将邮箱中的项目保留七年，而有封邮件是六年前发送的，则该邮件将只再保留一年。 对于 Exchange 项目，期限基于传入电子邮件的接收日期或传出电子邮件的发送日期。 根据最后一次修改的时间来保留项目这一方式只适用于 OneDrive 和 SharePoint 中的网站内容。
+- Exchange：如果想将邮箱中的项目保留七年，而有封邮件是六年前发送的，则该邮件将只再保留一年。对于 Exchange 项目，期限基于传入电子邮件的接收日期或传出电子邮件的发送日期。根据最后一次修改的时间来保留项目这一方式只适用于 OneDrive 和 SharePoint 中的网站内容。
 
 保留期结束后，选择是否要永久删除内容：
 
@@ -248,7 +264,7 @@ Yammer 不仅仅是社区消息和私人消息。 若要保留和删除 Yammer �
 
 在这两种情况下，如果保留策略删除项目，请务必了解为保留策略指定的时间期限是从项目创建或修改时开始计算，而不是从策略分配时开始计算。
 
-因此首次分配保留策略前，尤其是当该策略会删除项目时，请先考虑现有内容的年龄，以及该策略对该内容有何影响。 在分配策略之前，你还需要与用户就新的策略进行沟通，以便其有时间评估可能的影响。
+因此首次分配保留策略前，尤其是当该策略会删除项目时，请先考虑现有内容的年龄，以及该策略对该内容有何影响。在分配策略之前，你还需要与用户就新的策略进行沟通，以便其有时间评估可能的影响。
 
 ### <a name="a-policy-that-applies-to-entire-locations"></a>应用于位置整体的策略
 
@@ -256,7 +272,7 @@ Yammer 不仅仅是社区消息和私人消息。 若要保留和删除 Yammer �
 
 如果将保留策略应用于整个位置的任意组合，则不会限制该策略可以包含的收件人、网站、帐户和组等数量。
 
-例如，如果对所有的 Exchange 电子邮件和所有的 SharePoint 网站应用策略，则无论网站和收件人的数量有多少，都会对其应用策略。 并且对于 Exchange，在应用策略后创建的任何新邮箱都将自动继承该策略。
+例如，如果对所有的 Exchange 电子邮件和所有的 SharePoint 网站应用策略，则无论网站和收件人的数量有多少，都会对其应用策略。并且对于 Exchange，在应用策略后创建的任何新邮箱都将自动继承该策略。
 
 ### <a name="a-policy-with-specific-inclusions-or-exclusions"></a>包含或排除特定位置、用户或组的策略
 

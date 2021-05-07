@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 365 高级审核提供了新的审核功能，可帮助组织进行法庭与合规调查。
-ms.openlocfilehash: 88308d173df79f55f38aba4b70d4b561667941bf
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 4df9cda05d4b5febbc5b7beb505365e449accf04
+ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51574651"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51892903"
 ---
 # <a name="advanced-audit-in-microsoft-365"></a>Microsoft 365 高级审核
 
@@ -41,7 +41,7 @@ Microsoft 365 中的[统一审核](search-the-audit-log-in-security-and-complian
 我们还发布了保留审核日志 10 年的功能。 “保留审核日志 10 年”有助于支持长期的调查，并对监管、法律和内部义务作出响应。
 
 > [!NOTE]
-> 保留审核日志 10 年将需要额外的附加产品许可证。 此新许可证将于 2021 年初推出。 有关详细信息，请参阅本文中的[高级审核常见问题](#faqs-for-advanced-audit)部分。
+> 保留审核日志 10 年将需要额外的附加产品许可证。 有关详细信息，请参阅本文中的[高级审核常见问题](#faqs-for-advanced-audit)部分。
 
 ### <a name="audit-log-retention-policies"></a>审核日志保留策略
 
@@ -63,9 +63,12 @@ Microsoft 365 中的[统一审核](search-the-audit-log-in-security-and-complian
 
 - [Send](#send)
 
-- [SearchQueryInitiatedExchange](#searchqueryinitiatedexchange)
+- [SearchQueryInitiatedExchange](#searchqueryinitiatedexchange)<sup>*</sup>
 
-- [SearchQueryInitiatedSharePoint](#searchqueryinitiatedsharepoint)
+- [SearchQueryInitiatedSharePoint](#searchqueryinitiatedsharepoint)<sup>*</sup>
+
+> [!NOTE]
+> <sup>*</sup> 目前，此事件在 Office 365 和 Microsoft 365 政府环境中不可用。 这包括"GCC"、"GCC High"和"DoD"环境。
 
 ### <a name="mailitemsaccessed"></a>MailItemsAccessed
 
@@ -77,7 +80,7 @@ MailItemsAccessed 邮箱操作替代 Exchange Online 邮箱审核日志中的 Me
 
 - MessageBind 只能由邮件客户端覆盖访问。 它不适用于同步活动。 “绑定”和“同步”访问类型都会触发 MailItemsAccessed 事件。
 
-- 访问同一封电子邮件时，MessageBind 操作会触发多个审核记录的创建过程，从而导致审核干扰。 相反，MailItemsAccessed 事件聚合在较少的审核记录中。
+- 访问同一封电子邮件时，MessageBind 操作会触发多个审核记录的创建过程，从而导致审核干扰。相反，MailItemsAccessed 事件会整合为在较少的审核记录。
 
 有关 MailItemsAccessed 活动的审核记录的详细信息，请参阅[使用高级审核来调查被泄漏的帐户](mailitemsaccessed-forensics-investigations.md)。
 
@@ -197,13 +200,9 @@ Send 事件也是邮箱审核操作，当用户执行以下操作之一时将被
 
 对于已分配相应许可证的符合条件的客户和用户，无需执行任何操作即可访问关键审核事件。
 
-**何时会推出新的 10 年审核日志保留附加产品许可证？**
+**如果我在此功能正式发布时创建了 10 年审核日志保留策略，但又在必需的附加设备许可证可用之前，我的组织的审核日志数据将会怎样？**
 
-现在，拥有 E5 订阅的客户可以购买新的 10 年审核日志保留附加产品。
-
-**如果此功能发布了常规可用性，但在 2021 年 2 月推出所需的附加产品许可证前，我创建了 10 年审核日志保留策略，组织的审核日志数据会发生什么情况？**
-
-常规可用性后创建的 10 年审核日志保留策略覆盖的任何审核日志数据都将保留 10 年。 在 2021 年初推出 10 年审核日志保留附加产品许可证时，你需要为审核数据由现有的 10 年审核保留策略所保留的用户购买附加产品许可证。
+此功能在2020年最后一个季度正式发布，此后创建的审核日志数据，如果在10年审核日志保留策略涵盖范围内，都将保留 10 年。 这包括在所需的附加设备许可证可以购买之前创建的10年审核日志保留策略。 但是，由于 10 年审核日志保留附加许可证现已可以购买，因此需要为受 10 年审核保留策略涵盖的用户购买并分配附加许可证。
 
 **高级审核中的新事件在 Office 365 管理活动 API 中是否可用？**
 

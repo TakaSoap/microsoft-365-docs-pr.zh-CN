@@ -15,18 +15,18 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解如何在合规中心中创建并导入策略的自定义敏感信息类型。
-ms.openlocfilehash: 7ba807dce8b1d67280aeab929901327b7bfe03ef
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 18679e171fa704341094dee582124f36a950f8a5
+ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50908530"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52113984"
 ---
 # <a name="create-a-custom-sensitive-information-type-using-powershell"></a>使用 PowerShell 创建自定义敏感信息类型
 
 本主题介绍如何使用 PowerShell 创建定义自己的自定义 [敏感信息类型](sensitive-information-type-entity-definitions.md)的 XML *规则包* 文件。 需要了解如何创建正则表达式。 为提供示例，本主题创建识别员工 ID 的自定义敏感信息类型。 可以此示例 XML 为起点，创建自己的 XML 文件。 如果不熟悉敏感信息类型，请参阅[了解敏感信息类型](sensitive-information-type-learn-about.md)。
 
-创建正常可用的 XML 文件后，可使用 Microsoft 365 PowerShell 将其上传到 Microsoft 365。 然后便可在策略中使用自定义敏感信息类型，测试其是否能按需检测敏感信息。
+创建格式标准的 XML 文件后，可使用 Microsoft 365 PowerShell 将其上传到 Microsoft 365。然后，就可以在策略中使用自定义敏感信息类型，并测试其是否按预期检测敏感信息。
 
 > [!NOTE]
 > 如果不需要 PowerShell 提供的细化控制，可以在合规中心中创建自定义敏感信息类型。 有关详细信息，请参阅[创建自定义敏感信息类型](create-a-custom-sensitive-information-type.md)。
@@ -61,15 +61,15 @@ ms.locfileid: "50908530"
 </RulePack>
 <Rules>
 <!-- Employee ID -->
-    <Entity id="E1CC861E-3FE9-4A58-82DF-4BD259EAB378" patternsProximity="300" recommendedConfidence="70">
-        <Pattern confidenceLevel="60">
+    <Entity id="E1CC861E-3FE9-4A58-82DF-4BD259EAB378" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="65">
             <IdMatch idRef="Regex_employee_id"/>
         </Pattern>
-        <Pattern confidenceLevel="70">
+        <Pattern confidenceLevel="75">
             <IdMatch idRef="Regex_employee_id"/>
             <Match idRef="Func_us_date"/>
         </Pattern>
-        <Pattern confidenceLevel="80">
+        <Pattern confidenceLevel="85">
             <IdMatch idRef="Regex_employee_id"/>
             <Match idRef="Func_us_date"/>
             <Any minMatches="1">
@@ -128,13 +128,13 @@ ms.locfileid: "50908530"
 
 开始前，有必要了解规则 XML 架构的基本结构，以及如何使用这种结构来定义用于标识适当内容的自定义敏感信息类型。
   
-一个规则定义一个或多个实体（敏感信息类型），且每个实体定义一个或多个模式。 模式是原则在评估电子邮件和文档等内容时查找的对象。
+一个规则定义一个或多个实体（即敏感信息类型），每个实体定义一个或多个模式。模式是策略在评估电子邮件和文档等内容时查找的内容。
 
-在本主题中，XML 标记使用规则来表示定义实体的模式，该实体也称为敏感信息类型。 所以在本主题中，出现规则时，请将其视为实体或敏感信息类型，而非条件和操作。
+在本主题中，XML 标记使用规则来表示定义实体（也称为敏感信息类型）的模式。所以在本主题中，当你看到规则时，请考虑实体或敏感信息类型，而非条件和操作。
   
 ### <a name="simplest-scenario-entity-with-one-pattern"></a>最简单方案：包含一个模式的实体
 
-下面是最简单的方案。 希望策略识别包含组织员工 ID 的内容，该 ID 由九位数字组成。 此时，模式是指规则中包含的可识别九位数字的正则表达式。 包含九位数字的任何内容都满足该模式。
+以下是一个最简单方案：假设你希望策略标识的内容包含采用九位数格式的组织员工 ID。因此，模式是指标识九位数的规则中包含的正则表达式。任何包含九位数的内容都符合模式。
   
 ![包含一个模式的实体的关系图](../media/4cc82dcf-068f-43ff-99b2-bac3892e9819.png)
   
@@ -150,7 +150,7 @@ ms.locfileid: "50908530"
   
 对于此结构，请务必注意以下几点：
   
-- 需要更多证据的模式具有更高的可信度级别。 这一点十分有用，因为稍后在策略中使用此敏感信息类型时，可仅通过较高可信度级别的匹配来使用限制性更高的操作（如阻止内容）；通过较低可信度级别的匹配来使用限制性较低的操作（如发送通知）。
+- 需要更多证据的模式具有更高的可信度。这一点非常有用，因为稍后在策略中使用此敏感信息类型时，可以仅对较高可信度匹配内容执行限制较高的操作（如屏蔽内容），并对较低可信度匹配内容执行限制较低的操作（如发送通知）。
 
 - 支持元素 IdMatch 和 Match 引用的正则表达式和关键字实际上是 Rule 元素（而不是 Pattern 元素）的子级。这些支持元素是由 Pattern 引用，但包含在 Rule 中。也就是说，单个定义的支持元素（如正则表达式或关键字列表）可被多个实体和模式引用。
 
@@ -161,7 +161,7 @@ ms.locfileid: "50908530"
 ### <a name="name-the-entity-and-generate-its-guid"></a>命名实体并生成 GUID
 
 1. 在选择的 XML 编辑器中，添加规则和实体元素。
-2. 添加一个包含自定义实体名称的注释 - 在本示例中为员工 ID。 稍后将实体名称添加到本地化的字符串部分，创建策略时，会在 UI 中显示该名称。
+2. 添加包含自定义实体名称（在本示例中，为“员工 ID”）的注释。稍后，将把实体名称添加到本地化字符串部分，此名称就是在创建 DLP 策略时在 UI 中看到的名称。
 3. 生成实体的 GUID。 有几种方法可生成 GUID，可在 PowerShell 中通过键入 **[guid]::NewGuid()** 轻松生成。 稍后还要将实体 GUID 添加到本地化的字符串部分。
   
 ![显示 Rule 和 Entity 元素的 XML 标记](../media/c46c0209-0947-44e0-ac3a-8fd5209a81aa.png)
@@ -174,7 +174,7 @@ ms.locfileid: "50908530"
   
 ![显示引用一个 Regex 元素的多个 Pattern 元素的 XML 标记](../media/8f3f497b-3b8b-4bad-9c6a-d9abf0520854.png)
   
-在满足条件的情况下，模式返回一个计数和可信度级别，可用于策略中的条件。 将检测敏感信息类型的条件添加到策略时，可编辑计数和可信度级别，如以下所示。 本主题稍后会介绍可信度级别（也称为匹配准确度）。
+若符合，模式返回可用于策略内条件中的计数和可信度。向策略添加用于检测敏感信息类型的条件时，可以编辑计数和可信度（如下所示）。本主题稍后将解释可信度（亦称为匹配准确度）。
   
 ![“实例计数”和“匹配准确度”选项](../media/11d0b51e-7c3f-4cc6-96d8-b29bcdae1aeb.png)
   
@@ -210,7 +210,7 @@ ms.locfileid: "50908530"
   
 ### <a name="additional-patterns-such-as-dates-or-addresses-built-in-functions"></a>日期或地址等其他模式 [内置函数]
 
-除内置的敏感信息类型外，敏感信息类型还可使用内置函数，可识别美国日期、欧洲日期、到期日或美国地址等补强证据。 Microsoft 365 不支持上传自己的自定义函数，但创建自定义敏感信息类型时，实体可引用内置函数。
+除了内置敏感信息类型外，敏感信息类型也可以使用能够识别确证性证据（如美国日期、欧洲日期、到期日期或美国地址）的内置函数。虽然 Microsoft 365 不支持上传你自己的自定义函数，但在创建自定义敏感信息类型时，实体可引用该内置函数。
   
 例如，由于员工 ID 徽章中有聘用日期，因此这个自定义实体可使用内置函数 `Func_us_date` 标识采用美国通用格式的日期。 
   
@@ -294,15 +294,15 @@ Any 元素有可选的 minMatches 和 maxMatches 特性，可用于定义必须�
 
 模式需要的证据越多，模式匹配时所标识的实际实体（如员工 ID）的可信度就越高。例如，与只要求匹配九位数 ID 的模式相比，要求匹配九位数 ID、聘用日期和关键字（极为接近）的模式的可信度更高。
   
-Pattern 元素具有必需的 confidenceLevel 属性。 可将 confidenceLevel（1 到 100 间的整数）的值视为实体中每个模式的唯一 ID - 实体中的模式必须具有不同的可信度级别。 整数的具体值无关紧要 - 只需选取对符合性团队有意义的数字即可。 上传自定义敏感信息类型并创建策略后，可在创建的规则的条件中引用这些可信度级别。
+Pattern 元素有必需的 confidenceLevel 属性。可将 confidenceLevel 值（介于 1 和 100 之间的整数）视为实体中每个模式的唯一 ID - 实体中的模式必须具有你分配的不同的可信度。整数值是否精确并不重要 - 只需选取对合规性团队有意义的数字即可。上传自定义敏感信息类型和创建策略后，可以在所创建规则的条件中引用这些可信度。
   
 ![显示包含不同 confidenceLevel 特性值的 Pattern 元素的 XML 标记](../media/301e0ba1-2deb-4add-977b-f6e9e18fba8b.png)
   
 除每个模式的 confidenceLevel 外，Entity 还有一个 recommendedConfidence 属性。 可将推荐的可信度属性视为规则的默认可信度级别。 在策略中创建规则时，如果不指定规则要使用的可信度级别，则该规则将基于推荐的实体可信度级别进行匹配。 请注意，规则包中的每个实体 ID 都必须使用 recommendedConfidence 属性，如果该属性缺失，将无法保存使用敏感信息类型的策略。 
   
-## <a name="do-you-want-to-support-other-languages-in-the-ui-of-the-compliance-center-localizedstrings-element"></a>是否要在合规中心的 UI 中支持其他语言？ [LocalizedStrings 元素]
+## <a name="do-you-want-to-support-other-languages-in-the-ui-of-the-compliance-center-localizedstrings-element"></a>是否要在合规中心的 UI 中支持其他语言？[LocalizedStrings 元素]
 
-如果符合性团队使用 Microsoft 365 合规中心在不同区域设置和不同语言环境中创建策略，则可提供本地化版本的自定义敏感信息类型的名称和描述。 若符合性团队使用支持语言的 Microsoft 365，则 UI 中会出现本地化的名称。
+如果合规性团队使用 Microsoft 365 合规中心创建不同区域设置和不同语言的策略，你可以提供自定义敏感信息类型的名称和说明的本地化版本。这样，如果合规性团队在使用 Microsoft 365 时采用你所支持的语言，就会在 UI 中看到本地化名称。
   
 ![“实例计数”和“匹配准确度”选项](../media/11d0b51e-7c3f-4cc6-96d8-b29bcdae1aeb.png)
   
@@ -310,7 +310,7 @@ Rule 元素必须包含 LocalizedStrings 元素，因为其中包含引用自定
   
 ![显示 LocalizedStrings 元素内容的 XML 标记](../media/a96fc34a-b93d-498f-8b92-285b16a7bbe6.png)
   
-请注意，本地化字符串只能用于决定自定义敏感信息类型在合规中心的 UI 中的显示方式。 不能使用本地化字符串来提供不同版本的本地化关键字列表或正则表达式。
+请注意，本地化字符串只能用于指定自定义敏感信息类型在合规中心 UI 中的显示方式。不能使用本地化字符串来提供不同本地化版本的关键字列表或正则表达式。
   
 ## <a name="other-rule-package-markup-rulepack-guid"></a>其他规则包标记 [RulePack GUID]
 
@@ -348,7 +348,7 @@ Version 元素也很重要。当你首次上传规则包时，Microsoft 365 会�
   
 ## <a name="changes-for-exchange-online"></a>针对 Exchange Online 的变化
 
-以前，你可能已使用过 Exchange Online PowerShell 为 DLP 导入自定义敏感信息类型。 现在，可以自定义可用于 Exchange 管理中心中和合规中心的敏感信息类型。 此次改进后，应使用合规中心 PowerShell 导入自定义敏感信息类型，不再可从 Exchange PowerShell 导入它们。 自定义敏感信息类型将像往常一样正常工作，但是，在合规中心进行的更改可能需要至多一小时才会出现在 Exchange 管理中心。
+之前，你可能使用 Exchange Online PowerShell 来导入 DLP 的自定义敏感信息类型。而现在，自定义敏感信息类型可同时在 Exchange 管理中心和安全与合规中心使用。作为该项改进的一部分，你应使用合规中心 PowerShell 来导入自定义敏感信息类型 - 不可再从 Exchange PowerShell 中导入它们。自定义敏感信息类型将继续像之前一样发挥作用，但是，在合规中心内对自定义敏感信息类型所做更改可能最多 1 个小时后才会在 Exchange 管理中心内显示。
   
 请注意，在合规中心中，可以使用 **[New-DlpSensitiveInformationTypeRulePackage](/powershell/module/exchange/new-dlpsensitiveinformationtyperulepackage)** cmdlet 上载规则包。 （以前，在 Exchange 管理中心中，使用的是 **ClassificationRuleCollection**`cmdlet。） 
   
@@ -453,7 +453,7 @@ Version 元素也很重要。当你首次上传规则包时，Microsoft 365 会�
     
 ## <a name="recrawl-your-content-to-identify-the-sensitive-information"></a>对内容重新爬网以标识敏感信息
 
-Microsoft 365 使用搜索爬取器识别网站内容中的敏感信息并进行分类。 SharePoint Online 和 OneDrive for Business 网站中的内容更新时会自动重新爬取内容。 但若要确定所有现有内容中的新自定义类型的敏感信息，必须重新爬取该内容。
+Microsoft 365 使用搜索爬网程序对网站内容中的敏感信息进行标识和分类。SharePoint Online 和 OneDrive for Business 网站中的内容会在更新后自动重新爬网。但若要标识所有现有内容中新的自定义类型敏感信息，必须对相应内容重新爬网。
   
 在 Microsoft 365 中，无法手动请求对整个租户进行重新爬网，但可以对网站集、列表或库这样做。请参阅[手动请求对网站、库或列表进行爬网和重新编制索引](/sharepoint/crawl-site-content)。
   
@@ -532,7 +532,7 @@ Microsoft 365 使用搜索爬取器识别网站内容中的敏感信息并进行
    ```
 
    > [!NOTE]
-   > 包含内置敏感信息类型的内置规则包被称为 Microsoft 规则包。 包含你在“合规中心” UI中创建的自定义敏感信息类型的规则包称为 Microsoft.SCCManaged.CustomRulePack。
+   > 包含内置敏感信息类型的内置规则包名为 Microsoft Rule Package。包含你在合规中心 UI 中创建的自定义敏感信息类型的规则包名为 Microsoft.SCCManaged.CustomRulePack。
 
 2. 使用 [Get-DlpSensitiveInformationTypeRulePackage](/powershell/module/exchange/get-dlpsensitiveinformationtyperulepackage) cmdlet，将自定义规则包存储到变量：
 
@@ -921,7 +921,7 @@ Set-DlpSensitiveInformationTypeRulePackage -FileData ([Byte[]]$(Get-Content -Pat
 
 ## <a name="more-information"></a>更多信息
 
-- [数据丢失防护策略概述](data-loss-prevention-policies.md)
+- [了解数据丢失防护](dlp-learn-about-dlp.md)
 
 - [敏感信息类型属性定义](sensitive-information-type-entity-definitions.md)
 

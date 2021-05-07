@@ -1,7 +1,7 @@
 ---
 title: 列出一个修正活动的公开设备
 description: 返回有关指定修正任务的公开设备的信息。
-keywords: api， 修正， 修正 api， 获取， 修正任务，
+keywords: api， 修正， 修正 api， 获取， 修正任务， 修正公开的设备
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 097d8d784ca7c02fce1fc0e9fc51bdc272951f4a
-ms.sourcegitcommit: e5b1a900043e2e41650ea1cbf4227043729c6053
+ms.openlocfilehash: 92b5a93e86a20f36469d2b5cb606a8ddc2e97077
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52061116"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52241708"
 ---
 # <a name="list-exposed-devices-of-one-remediation-activity"></a>列出一个修正活动的公开设备
 
@@ -49,24 +49,33 @@ ms.locfileid: "52061116"
 
 **URL：** GET： /api/remediationTasks/ \{ id \} /machineReferences
 
-**属性** 详细信息
+## <a name="permissions"></a>权限
+
+若要调用此 API，需要以下权限之一。 若要了解详细信息（包括如何选择权限），请参阅使用 [Microsoft Defender for Endpoint API 了解详细信息。](apis-intro.md)
+
+权限类型 | 权限 | 权限显示名称
+:---|:---|:---
+应用程序 | RemediationTask.Read.All | \'阅读威胁和漏洞管理漏洞信息\'
+委派（工作或学校帐户） | RemediationTask.Read.Read | \'阅读威胁和漏洞管理漏洞信息\'
+
+## <a name="properties-details"></a>属性详细信息
 
 属性 (id)  | 数据类型 | 说明 | 示例
 :---|:---|:---|:---
-id | String | 设备 ID | w2957837fwda8w9ae7f023dba081059dw8d94503
-computerDnsName | String | 设备名称 | PC-SRV2012R2Foo.UserNameVldNet.local
-osPlatform | String | 设备操作系统 | WindowsServer2012R2
-rbacGroupName | String | 与此设备关联的设备组的名称 | 服务器
+id | 字符串 | 设备 ID | w2957837fwda8w9ae7f023dba081059dw8d94503
+computerDnsName | 字符串 | 设备名称 | PC-SRV2012R2Foo.UserNameVldNet.local
+osPlatform | 字符串 | 设备操作系统 | WindowsServer2012R2
+rbacGroupName | 字符串 | 与此设备关联的设备组的名称 | 服务器
 
 ## <a name="example"></a>示例
 
-**请求** 示例
+### <a name="request-example"></a>请求示例
 
 ```http
 GET https://api-luna.securitycenter.windows.com/api/remediationtasks/03942ef5-aecb-4c6e-b555-d6a97013844c/machinereferences
 ```
 
-**响应** 示例
+### <a name="response-example"></a>响应示例
 
 ```json
 {
@@ -112,6 +121,6 @@ GET https://api-luna.securitycenter.windows.com/api/remediationtasks/03942ef5-ae
 
 - [列出所有修正活动](get-remediation-all-activities.md)
 
-- [基于风险的威胁&漏洞管理](next-gen-threat-and-vuln-mgt.md)
+- [基于风险的威胁& 漏洞管理](next-gen-threat-and-vuln-mgt.md)
 
 - [组织中漏洞](tvm-weaknesses.md)

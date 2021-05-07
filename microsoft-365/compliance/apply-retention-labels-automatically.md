@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 创建保留标签和自动标记策略，以便你可以自动应用标签以保留需要的内容并删除不需要的内容
-ms.openlocfilehash: 6b7e8f91706a9d12135069f0a6753c76eaff1fb4
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 12e909964422d0c15312c1794ce3d9aacc2a1da8
+ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50920015"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52107634"
 ---
 # <a name="automatically-apply-a-retention-label-to-retain-or-delete-content"></a>自动应用保留标签来保留或删除内容
 
@@ -44,7 +44,7 @@ ms.locfileid: "50920015"
 当内容包含敏感信息、关键字或可搜索属性，或者[可训练分类器](classifier-get-started-with.md)的匹配项时，可以自动将保留标签应用于内容。
 
 > [!TIP]
-> 现在在预览中，使用可搜索的属性标识 [Teams 会议记录](#microsoft-teams-meeting-recordings)。
+> 最近发布时，可使用可搜索属性标识 [团队会议](#microsoft-teams-meeting-recordings)。
 
 将基于以下条件自动应用保留标签的流程：
 
@@ -134,11 +134,11 @@ ms.locfileid: "50920015"
 
 为敏感信息创建自动应用保留标签策略时，可看到与创建数据丢失防护 (DLP) 策略时相同的策略模板列表。 每个策略模板都是预配置的，用于查找特定类型的敏感信息。 例如，此处显示的模板查找来自 **隐私** 类别的美国 ITIN、SSN 和护照号码，以及 **美国个人身份信息 (PII) 数据** 模板：
 
-![包含敏感信息类型的策略模板](../media/dafd87d4-c7bb-439a-ac7b-193c018f98a5.png)
+![包含敏感信息类型的策略模板](../media/sensitive-info-configuration.png)
 
-若要了解有关敏感信息类型的详细信息，请参阅“[敏感信息类型实体定义](sensitive-information-type-entity-definitions.md)”。
+若要了解有关敏感信息类型的详细信息，请参阅“[敏感信息类型实体定义](sensitive-information-type-entity-definitions.md)”。 目前[此方案](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)[完全匹配](document-fingerprinting.md)和文档指纹信息。
 
-选择策略模板后，可添加或删除任意类型的敏感信息，且可更改实例计数和匹配准确度。 在下面的示例屏幕截图中，保留标签将只会在以下情况下自动应用：
+选择策略模板后，既可以添加或删除任意类型敏感信息，也可以更改实例计数和匹配准确度。在下面的示例屏幕截图中，保留标签将只会在以下情况下自动应用：
   
 - 检测到的敏感信息类型具有至少 75 的匹配准确度（或可信度）。 许多敏感信息类型都由多个模式定义，其中具有较高匹配准确度的模式需要发现较多证据（如关键字、日期或地址），而具有较低匹配准确度的模式需要较少的证据。 **最小** 匹配准确度越低，内容越容易与条件匹配。
 
@@ -228,7 +228,7 @@ ACP OR (Attorney Client Privilege*) OR (AC Privilege)
 ##### <a name="microsoft-teams-meeting-recordings"></a>Microsoft Teams 会议记录
 
 > [!NOTE]
-> 保留和删除 Teams 会议记录的功能目前处于预览阶段，在将记录保存到 OneDrive 或 SharePoint 前，该功能将无法正常工作。 有关详细信息，请参阅[使用 OneDrive for Business 和 SharePoint 或 Stream 进行会议记录](/MicrosoftTeams/tmr-meeting-recording-change)。
+> 保留和删除 Teams 会议记录文件的功能目前处于预览阶段，在将记录保存到 OneDrive 或SharePoint 前，该功能将无法工作。 有关详细信息，请参阅[使用 OneDrive for Business 和 SharePoint 或 Stream 进行会议记录](/MicrosoftTeams/tmr-meeting-recording-change)。
 
 若要确定存储在用户的 OneDrive 帐户或 SharePoint 中的 Microsoft Teams 会议记录，请为 **关键字查询编辑器** 指定以下内容：
 
@@ -236,7 +236,7 @@ ACP OR (Attorney Client Privilege*) OR (AC Privilege)
 ProgID:Media AND ProgID:Meeting
 ```
 
-大多数情况下，会议记录将保存到 OneDrive 中。 但对于渠道会议，它们将保存在 SharePoint 中。
+大多数情况下，会议记录将保存到 OneDrive。但对于频道会议，它们将保存在SharePoint 中。
 
 
 #### <a name="auto-apply-labels-to-content-by-using-trainable-classifiers"></a>使用可训练分类器向内容自动应用标签
@@ -285,7 +285,7 @@ ProgID:Media AND ProgID:Meeting
 
 ### <a name="deleting-retention-labels"></a>创建保留标签。
 
-可以删除当前未包含在任何保留标签策略中的保留标签、不针对基于事件保留而配置的保留标签，或将项目标记为法规记录的保留标签。 目前，将在预览版中推出功能，可以删除将项目标记为记录的保留标签。
+可以删除当前未包含在任何保留标签策略中的保留标签、不针对基于事件保留而配置的保留标签，或将项目标记为法规记录的保留标签。
 
 对于可以删除的保留标签，如果已应用到项目，则删除操作将失败，并且你将看到指向内容资源管理器的链接，以标识已标记的项目。
 

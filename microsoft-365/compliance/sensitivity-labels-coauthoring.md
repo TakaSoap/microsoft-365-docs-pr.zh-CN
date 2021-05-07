@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: article
 description: 打开对 SharePoint 和 OneDrive 中标记和加密的文档启用共同创作和自动保存的设置。
-ms.openlocfilehash: 34c674dc5fb9be9cb5572ce1f14e11a0f8ab14ae
-ms.sourcegitcommit: 8998f70d3f7bd673f93f8d1cf12ce981b1b771c3
+ms.openlocfilehash: a35e9fe818d697667ecf002a232d84f90cf53a61
+ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51034221"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51764361"
 ---
 # <a name="enable-co-authoring-for-files-encrypted-with-sensitivity-labels"></a>为使用敏感度标签加密的文件启用共同创作
 
@@ -60,7 +60,7 @@ ms.locfileid: "51034221"
 
 - 打开规范： [2.6.3 LabelInfo 与自定义文档属性对比](/openspecs/office_file_formats/ms-offcrypto/13939de6-c833-44ab-b213-e0088bf02341)
 
-由于这些更改，如果你的组织具有将标签元数据读或写到旧位置的任何应用、服务、脚本或工具，则不要启用此设置。 如果这样做，某些示例会产生什么影响：
+由于这些更改，如果你的组织具有将标签元数据读或写到旧位置的任何应用、服务、脚本或工具，则不要启用此设置。如果这样做，某些示例会产生影响：
 
 - 标记的文档将出现在用户未标记
 
@@ -104,7 +104,7 @@ ms.locfileid: "51034221"
     - **使用 Microsoft 信息保护 SDK 的应用和服务：** 
         - 最低版本 1.7 
 
-启用此功能时，Microsoft 365 服务自动支持新的标签元数据。 例如：
+启用此功能时，Microsoft 365 服务自动支持新的标签元数据。例如：
 
 - [自动标记策略](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-policies-for-sharepoint-onedrive-and-exchange)
 - [使用敏感度标签作为条件的 DLP 策略](dlp-sensitivity-label-as-condition.md)
@@ -140,7 +140,7 @@ ms.locfileid: "51034221"
 ## <a name="how-to-enable-co-authoring-for-files-with-sensitivity-labels"></a>如何为具有敏感度标签的文件启用共同创作
 
 > [!CAUTION]
-> 打开此设置是一种单向操作。 此功能在预览版中，仅在非生产环境中进行测试，且仅在阅读和理解该页上记录的任何元数据更改、先决条件、限制和任何已知问题后才能进行测试。
+> 打开此设置是一种单向操作。此功能在预览版中，仅在非生产环境中进行测试，且仅在阅读和理解该页面上记录的任何元数据更改、先决条件、限制和任何已知问题文件后才能进行测试。
 
 在预览期间，必须使用特定 URL 访问 Microsoft 365 合规中心中的此设置。
 
@@ -179,6 +179,6 @@ ms.locfileid: "51034221"
 
 - 启用设置时使用的 Office 文档的新元数据格式和位置不会复制到原始格式和位置。 因此，此未加密 Word、Excel 和 PowerPoint 文件的标记信息将会丢失。
 
-- 共同创作和自动保存在租户中不再有效。
+- 对于标记文档和加密文档，租户中的共同创作和自动保存不再有效。
 
 - 对 OneDrive 和 SharePoint 中的 Office 文件，敏感度标签保持启用状态。

@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 设置 Microsoft 365 本地扫描仪数据丢失防护
-ms.openlocfilehash: 7e190a1d6e902af3406f7e8f317efe80e825e7f2
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 242956a3c6469756481fb823340e715a210562af
+ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50917828"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52114170"
 ---
 # <a name="get-started-with-the-data-loss-prevention-on-premises-scanner-preview"></a>开始进行本地扫描仪的数据丢失防护（预览）
 
@@ -55,7 +55,7 @@ ms.locfileid: "50917828"
 
 ### <a name="dlp-on-premises-scanner-prerequisites"></a>DLP 本地扫描仪先决条件
 
-- Azure 信息保护 （AIP） 扫描仪实现 DLP 策略匹配和策略执行。 将扫描仪作为 AIP 客户端的一部分进行安装，因此安装必须满足 AIP、AIP 客户端和 AIP 统一标签扫描仪的所有先决条件。
+- Azure 信息保护 （AIP） 扫描仪实现 DLP 策略匹配和策略执行。将扫描仪作为 AIP 客户端一部分进行安装，因此安装必须满足 AIP、AIP 客户端和 AIP 统一标签扫描仪的所有先决条件。
 - 部署 AIP 客户端和扫描仪。 若要详细了解 [AIP 统一标签客户端](/azure/information-protection/rms-client/install-unifiedlabelingclient-app) 和 []，请参阅 [配置和安装 Azure 信息保护统一标签扫描仪](/azure/information-protection/deploy-aip-scanner-configure-install)。
 - 必须至少在租户中发布一个标签和策略，即使所有检测规则都只基于敏感信息类型。
 
@@ -66,7 +66,7 @@ ms.locfileid: "50917828"
     1. 网络发现作业配置是一个可选步骤。 可以跳过它，并定义要扫描内容扫描作业的特定存储库。
     2. 必须创建内容扫描作业，并指定 DLP 引擎需要评估的托管文件的存储库。
     3. 在已创建的内容扫描作业中启用 DLP 规则，将 **强制** 选项设置为 **关闭**，除非想要直接进入 DLP 强制阶段。
-3. 验证内容扫描作业是否分配给了右群集。 如果仍未创建内容扫描作业，请创建新的扫描作业，将其分配到包含运行公共预览版本的扫描仪节点的群集。
+3. 验证内容扫描作业是否分配给了右群集。如果仍未创建内容扫描作业，请创建新的扫描作业，将其分配到包含运行公共预览版本的扫描仪节点群集。
 
 4. 连接到 Azure 门户 [Azure 信息保护扩展](https://portal.azure.com/#blade/Microsoft_Azure_InformationProtection/DataClassGroupEditBlade/scannerProfilesBlade) 将存储库添加到将执行扫描的内容扫描作业。
 
@@ -127,7 +127,7 @@ ms.locfileid: "50917828"
 
 - [了解 DLP 本地扫描仪（预览）](dlp-on-premises-scanner-learn.md)
 - [使用 DLP 本地扫描仪（预览）](dlp-on-premises-scanner-use.md)
-- [数据丢失防护概述](data-loss-prevention-policies.md)
+- [了解数据丢失防护](dlp-learn-about-dlp.md)
 - [创建、测试和优化 DLP 策略](create-test-tune-dlp-policy.md)
 - [活动资源管理器入门](data-classification-activity-explorer.md)
 - [Microsoft 365 订阅](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=1)

@@ -18,21 +18,21 @@ search.appverid:
 - MET150
 ms.assetid: 40829b57-793c-4d41-b171-e9270129173d
 ms.custom: seo-marvel-apr2020
-description: 管理员可以了解如何将 PST 文件复制到硬盘驱动器，然后将 PST 文件寄送到 Microsoft，以将 PST 文件批量导入到 Microsoft 365 邮箱。
-ms.openlocfilehash: f0942fbb91e1b1eab20aa2867c27e1f025b96ed3
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+description: 管理员可以了解如何将 PST 文件批量导入到Microsoft 365将 PST 文件复制到硬盘驱动器，然后将这些文件寄送到 Microsoft。
+ms.openlocfilehash: 54b4e3bd7e092699017626c8257c17f965f46f6a
+ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50925498"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52114368"
 ---
 # <a name="use-drive-shipping-to-import-your-organizations-pst-files"></a>使用驱动器寄送导入组织的 PST 文件
 
-**本文适用于管理员。您尝试将 PST 文件导入到您自己的邮箱吗？请参阅 [从 Outlook .pst](https://go.microsoft.com/fwlink/p/?LinkID=785075)文件导入电子邮件、联系人和日历**
+**本文适用于管理员。您尝试将 PST 文件导入到您自己的邮箱吗？请参阅 [从 .pst 文件](https://go.microsoft.com/fwlink/p/?LinkID=785075)导入电子邮件Outlook联系人和日历**
    
-使用 Office 365 导入服务和驱动器寄送将 PST 文件批量导入到用户邮箱。 驱动器寄送意味着将 PST 文件复制到硬盘驱动器，然后按照实际方式将该驱动器寄到 Microsoft。 Microsoft 收到硬盘驱动器时，数据中心工作人员将数据从硬盘驱动器复制到 Microsoft 云中的存储区域。 然后，您有机会通过设置控制导入哪些数据的筛选器来修整导入到目标邮箱的 PST 数据。 启动导入作业后，导入服务将 PST 数据从存储区域导入到用户邮箱。 使用驱动器寄送将 PST 文件导入到用户邮箱是将组织的电子邮件迁移到 Office 365 的一种方法。
+使用 Office 365导入服务和驱动器寄送将 PST 文件批量导入到用户邮箱。 驱动器寄送意味着将 PST 文件复制到硬盘驱动器，然后按照实际方式将该驱动器寄到 Microsoft。 Microsoft 收到硬盘驱动器时，数据中心工作人员将数据从硬盘驱动器复制到 Microsoft 云中的存储区域。 然后，您有机会通过设置控制导入哪些数据的筛选器来修整导入到目标邮箱的 PST 数据。 启动导入作业后，导入服务将 PST 数据从存储区域导入到用户邮箱。 使用驱动器寄送将 PST 文件导入到用户邮箱是将组织的电子邮件迁移到用户邮箱的一Office 365。
   
-以下是使用驱动器寄送将 PST 文件导入到 Microsoft 365 邮箱所需的步骤：
+以下是使用驱动器寄送将 PST 文件导入到邮箱所需的Microsoft 365步骤：
   
 [步骤 1：下载安全存储密钥和 PST 导入工具](#step-1-download-the-secure-storage-key-and-pst-import-tool)
 
@@ -49,7 +49,7 @@ ms.locfileid: "50925498"
 > [!IMPORTANT]
 > 您必须执行步骤 1 一次，才能向下加载安全存储密钥和导入工具。 执行这些步骤后，每次想要将硬盘驱动器发货到 Microsoft 时，都按照步骤 2 到步骤 6 操作。 
   
-有关使用驱动器寄送将 PST 文件导入到 Office 365 的常见问题，请参阅使用驱动器寄送导入 PST 文件的 [常见问题](faqimporting-pst-files-to-office-365.md#using-drive-shipping-to-import-pst-files)。 
+有关使用驱动器寄送将 PST 文件导入到Office 365常见问题解答，请参阅使用驱动器寄送导入 PST 文件的[常见问题](./faqimporting-pst-files-to-office-365.yml#using-drive-shipping-to-import-pst-files)。 
   
 ## <a name="before-you-import-pst-files"></a>导入 PST 文件前
 
@@ -75,11 +75,11 @@ ms.locfileid: "50925498"
     > [!IMPORTANT]
     > Office 365 导入服务中不支持内置 USB 适配器随附的外部硬盘。 此外，无法使用外部硬盘盒内的磁盘。 请不要发运外部硬盘。 
   
-- 包含 PST 文件副本的硬盘驱动器必须使用 BitLocker 进行加密。 您在步骤 2 中运行的 WAImportExport.exe 工具将帮助您设置 BitLocker。 它还生成 BitLocker 加密密钥，Microsoft 数据中心工作人员使用该密钥访问驱动器，将 PST 文件上载到 Microsoft 云中的 Azure 存储区域。
+- 包含 PST 文件副本的硬盘驱动器必须使用 BitLocker 进行加密。 您在步骤 2 中运行的 WAImportExport.exe 工具将帮助您设置 BitLocker。 它还生成一个BitLocker加密密钥，Microsoft 数据中心工作人员使用该密钥访问驱动器，将 PST 文件上载到 Microsoft 云中的 Azure 存储 区域。
     
 - 驱动器寄送通过 Microsoft 企业协议 (EA) 。 驱动器寄送不可通过 Microsoft 产品和服务协议 (MPSA) 实现。
     
-- 使用驱动器寄送将 PST 文件导入到 Microsoft 365 邮箱的成本是每 GB 数据 2 美元。 例如，如果发运的硬盘包含 1,000 GB (1 TB) 的 PST 文件，则费用为 2,000 美元。 您可以与合作伙伴共同协作来支付导入费用。 有关查找合作伙伴的信息，请参阅[查找 Microsoft 合作伙伴或经销商](../admin/manage/find-your-partner-or-reseller.md)。
+- 使用驱动器寄送将 PST 文件导入Microsoft 365邮箱的成本是每 GB 数据 2 美元。 例如，如果发运的硬盘包含 1,000 GB (1 TB) 的 PST 文件，则费用为 2,000 美元。 您可以与合作伙伴共同协作来支付导入费用。 有关查找合作伙伴的信息，请参阅[查找 Microsoft 合作伙伴或经销商](../admin/manage/find-your-partner-or-reseller.md)。
     
 - 您或您的组织必须拥有 FedEx 或 DHL 帐户。 
     
@@ -93,7 +93,7 @@ ms.locfileid: "50925498"
     
 - 此过程涉及复制并保存安全存储密钥和 BitLocker 加密密钥。 一定要采取预防措施来保护这些密钥，就像保护密码或其他与安全相关的信息一样。 例如，您可能将它们保存到受密码保护的 Microsoft Word 文档，或者将它们保存到已加密的 USB 驱动器。 有关 [这些密钥](#more-information) 的示例，请参阅详细信息部分。 
     
-- PST 文件导入到 Microsoft 365 邮箱后，邮箱的保留挂起设置将无限期打开。 这意味着分配给该邮箱的保留策略将不会得到处理，除非你关闭保留挂起或设置关闭挂起的日期。 我们为什么要这样做？ 如果导入到邮箱的邮件是旧邮件，则可能会被永久删除（清除），因为根据为邮箱配置的保留设置，它们的保留期已过期。 将邮箱置于保留挂起状态将为邮箱所有者提供时间来管理这些新导入的邮件，或为你提供时间来更改邮箱的保留设置。 有关 [管理保留保留](#more-information) 的建议，请参阅详细信息部分。 
+- 将 PST 文件导入到Microsoft 365邮箱后，邮箱的保留挂起设置将无限期打开。 这意味着分配给该邮箱的保留策略将不会得到处理，除非你关闭保留挂起或设置关闭挂起的日期。 我们为什么要这样做？ 如果导入到邮箱的邮件是旧邮件，则可能会被永久删除（清除），因为根据为邮箱配置的保留设置，它们的保留期已过期。 将邮箱置于保留挂起状态将为邮箱所有者提供时间来管理这些新导入的邮件，或为你提供时间来更改邮箱的保留设置。 有关 [管理保留保留](#more-information) 的建议，请参阅详细信息部分。 
     
 - 默认情况下，Microsoft 365 邮箱可以接收的最大邮件大小为 35 MB。 这是因为邮箱的 *MaxReceiveSize* 属性的默认值被设置为 35 MB。 但是，Microsoft 365 中最大邮件接收大小的限制为 150 MB。 因此，如果你导入的 PST 文件中包含大于 35 MB 的项目，则 Office 365 导入服务会自动将目标邮箱上的 *MaxReceiveSize* 属性值更改为 150 MB。 这将允许将最大 150 MB 的邮件导入到用户邮箱。 
     
@@ -115,7 +115,7 @@ ms.locfileid: "50925498"
 第一步是下载安全存储密钥和工具，在步骤 2 中用于将 PST 文件复制到硬盘驱动器。
   
 > [!IMPORTANT]
-> 你必须使用 Azure 导入/导出工具版本 1 (WAimportExportV1) 驱动器寄送方法成功导入 PST 文件。 版本 2 的 Azure 导入/导出工具不受支持，使用它将导致硬盘驱动器无法正确准备导入作业。 请务必按照此步骤中的过程从安全与合规& Azure 导入/导出工具。 
+> 您必须使用 Azure 导入/导出 工具版本 1 (WAimportExportV1) 驱动器寄送方法成功导入 PST 文件。 版本 2 的 Azure 导入/导出 工具不受支持，使用它将导致硬盘驱动器无法正确准备导入作业。 请务必按照此步骤中导入/导出从安全与合规& Azure & 工具。 
   
 1. 转到 [https://protection.office.com/](https://protection.office.com/)，然后使用你组织中的管理员帐户的凭据进行登录。 
     
@@ -138,7 +138,7 @@ ms.locfileid: "50925498"
   
     a. 在步骤 2 中，单击 **"复制安全存储密钥"。** 显示存储密钥后，单击" **复制到剪贴** 板"，然后将其粘贴并保存到文件，以便以后可以访问它。
     
-    b. 在步骤 3 中 **，下载 Azure 导入/导出工具** 以下载并安装 Azure 导入/导出 (版本 1) 工具。
+    b. 在步骤 3 中 **，下载 Azure 导入/导出 工具** 以下载并安装 Azure 导入/导出 (版本 1) 工具。
     
     - 在弹出窗口中，单击"另存为"以将WaImportExportV1.zip文件保存到本地 \> 计算机的文件夹中。 
     
@@ -174,14 +174,15 @@ ms.locfileid: "50925498"
     
     |**参数**|**说明**|**示例**|
     |:-----|:-----|:-----|
-    | `/j:` <br/> |指定日志文件的名称。 此文件保存到 WAImportExport.exe 工具所在的同一文件夹中。 您寄送到 Microsoft 的每个硬盘驱动器必须有一个日志文件。 每次您运行 WAImportTool.exe 将 PST 文件复制到硬盘驱动器时，相关信息将追加到该驱动器的日志文件中。  <br/> Microsoft 数据中心工作人员使用日志文件中的信息将硬盘驱动器与步骤 4 中创建的导入作业关联，并将 PST 文件上载到 Microsoft 云中的 Azure 存储区域。  <br/> | `/j:PSTHDD1.jrn` <br/> |
+    | `/j:` <br/> |指定日志文件的名称。此文件保存到 WAImportExport.exe 工具所在的同一文件夹中。您寄送到 Microsoft 的每个硬盘驱动器必须有一个日志文件。每次您运行 WAImportTool.exe 将 PST 文件复制到硬盘驱动器时，相关信息将追加到该驱动器的日志文件中。 
+  <br/> Microsoft 数据中心工作人员使用日志文件中的信息将硬盘驱动器与步骤 4 中创建的导入作业关联，并将 PST 文件上载到 Microsoft 云中的 Azure 存储 区域。  <br/> | `/j:PSTHDD1.jrn` <br/> |
     | `/t:` <br/> |连接到本地计算机时，请指定硬盘驱动器的驱动器号。  <br/> | `/t:h` <br/> |
     | `/id:` <br/> |指定复制会话的名称。会话定义为每次运行 WAImportExport.exe 工具将文件复制到硬盘驱动器。PST 文件复制到使用此参数所指定的会话名称命名的文件夹中。   <br/> | `/id:driveship1` <br/> |
     | `/srcdir:` <br/> |指定组织中包含在会话期间将复制的 PST 文件的源目录。 请务必用双引号 (" ") 引住此参数的值。  <br/> | `/srcdir:"\\FILESERVER01\PSTs"` <br/> |
-    | `/dstdir:` <br/> |指定 Microsoft 云中 Azure 存储区域中的目标目录，其中将上载TS。 必须使用值  `ingestiondata/` 。 请务必用双引号 (" ") 引住此参数的值。  <br/> （可选）还可以向此参数的值添加额外的文件路径。 例如，您可以使用硬盘驱动器上的源目录的文件路径 (转换为 URL 格式) ，该格式在 参数  `/srcdir:` 中指定。 例如，  `\\FILESERVER01\PSTs` 更改为  `FILESERVER01/PSTs` 。 在这种情况下，您仍必须包括在  `ingestiondata` 文件路径中。 因此，此示例中参数的值为  `/dstdir:`  `"ingestiondata/FILESERVER01/PSTs"` 。  <br/> 添加其他文件路径的原因之一是如果您有具有相同文件名的 PST 文件。  <br/> > [!NOTE]>如果包含可选的 pathname，PST 文件上传到 Azure 存储区域后的命名空间将包括路径名和 PST 文件的名称;例如，  `FILESERVER01/PSTs/annb.pst` 。 如果不包括路径名，则命名空间只是 PST 文件名;例如  `annb.pst` 。           | `/dstdir:"ingestiondata/"` <br/> 或  <br/>  `/dstdir:"ingestiondata/FILESERVER01/PSTs"` <br/> |
+    | `/dstdir:` <br/> |指定 Microsoft 云中要上载AZURE 存储区域的目标目录。 必须使用值  `ingestiondata/` 。 请务必用双引号 (" ") 引住此参数的值。  <br/> （可选）还可以向此参数的值添加额外的文件路径。 例如，您可以使用硬盘驱动器上的源目录的文件路径 (转换为 URL 格式) ，该格式在 参数  `/srcdir:` 中指定。 例如，  `\\FILESERVER01\PSTs` 更改为  `FILESERVER01/PSTs` 。 在这种情况下，您仍必须包括在  `ingestiondata` 文件路径中。 因此，此示例中参数的值为  `/dstdir:`  `"ingestiondata/FILESERVER01/PSTs"` 。  <br/> 添加其他文件路径的原因之一是如果您有具有相同文件名的 PST 文件。  <br/> > [!NOTE]>如果包含可选的 pathname，则 PST 文件上载到 Azure 存储 区域后的命名空间包括路径名和 PST 文件的名称;例如， `FILESERVER01/PSTs/annb.pst` 。 如果不包括路径名，则命名空间只是 PST 文件名;例如  `annb.pst` 。           | `/dstdir:"ingestiondata/"` <br/> 或  <br/>  `/dstdir:"ingestiondata/FILESERVER01/PSTs"` <br/> |
     | `/sk:` <br/> |指定您在步骤 1 中获得的存储帐户密钥。 请务必用双引号 (" ") 引住此参数的值。  <br/> | `"yaNIIs9Uy5g25Yoak+LlSHfqVBGOeNwjqtBEBGqRMoidq6/e5k/VPkjOXdDIXJHxHvNoNoFH5NcVUJXHwu9ZxQ=="` <br/> |
-    | `/blobtype:` <br/> |指定要导入 PST 文件的 Azure 存储区域中的 blob 的类型。 对于导入 PST 文件，请使用值 **BlockBlob**。 此参数是必需的。   <br/> | `/blobtype:BlockBlob` <br/> |
-    | `/encrypt` <br/> |此开关对硬盘驱动器启用 BitLocker。 首次运行 WAImportExport.exe 工具时，此参数是必需的。  <br/> BitLocker 加密密钥将复制到日志文件日志文件使用 参数时创建的  `/logfile:` 密钥。 如前所述，日志文件保存到 WAImportExport.exe 工具所在的同一文件夹中。  <br/> | `/encrypt` <br/> |
+    | `/blobtype:` <br/> |指定要导入 PST 文件Azure 存储区域中的 blob 的类型。 对于导入 PST 文件，请使用值 **BlockBlob**。 此参数是必需的。   <br/> | `/blobtype:BlockBlob` <br/> |
+    | `/encrypt` <br/> |此开关对硬盘驱动器启用 BitLocker。首次运行 WAImportExport.exe 工具时，此参数是必需的。  <br/> 该BitLocker加密密钥将复制到日志文件以及日志文件参数时创建的 `/logfile:` 日志文件。 如前所述，日志文件保存到 WAImportExport.exe 工具所在的同一文件夹中。  <br/> | `/encrypt` <br/> |
     | `/logdir:` <br/> |此可选参数指定要保存日志文件的文件夹。 如果未指定，日志文件将保存到 WAImportExport.exe 工具所在的同一文件夹中。 请务必用双引号 (" ") 引住此参数的值。  <br/> | `/logdir:"c:\users\admin\desktop\PstImportLogs"` <br/> |
    
     以下是对每个参数使用实际值的 WAImportExport.exe 工具的语法示例：
@@ -206,7 +207,7 @@ ms.locfileid: "50925498"
 
 ## <a name="step-3-create-the-pst-import-mapping-file"></a>步骤 3：创建 PST 导入映射文件
 
-在 Microsoft 数据中心工作人员将 PST 文件从硬盘驱动器上载到 Azure 存储区域后，导入服务将使用 PST 导入映射文件中的信息，该文件是逗号分隔值 (CSV) 文件，用于指定 PST 文件导入到哪些用户邮箱。 在下一步中，创建 PST 导入作业时，将提交此 CSV 文件。
+在 Microsoft 数据中心工作人员将 PST 文件从硬盘驱动器上载到 Azure 存储 区域后，导入服务将使用 PST 导入映射文件中的信息，该文件是逗号分隔值 (CSV) 文件，用于指定 PST 文件将导入到哪些用户邮箱。 在下一步中，创建 PST 导入作业时，将提交此 CSV 文件。
   
 1. [下载 PST 导入映射文件的副本](https://go.microsoft.com/fwlink/p/?LinkId=544717)。
     
@@ -236,8 +237,8 @@ ms.locfileid: "50925498"
     |**参数**|**说明**|**示例**|
     |:-----|:-----|:-----|
     | `Workload` <br/> |指定将数据导入到的服务。 若要将 PST 文件导入到用户邮箱，请使用 `Exchange`。  <br/> | `Exchange` <br/> |
-    | `FilePath` <br/> | 指定 PST 文件将在硬盘驱动器发往 Microsoft 时复制到的 Azure 存储区域中的文件夹位置。  <br/>  在 CSV 文件的此列中添加的内容取决于您在上一步中为 参数  `/dstdir:` 指定的内容。 如果源位置上具有子文件夹，则参数中的值必须包含子文件夹的相对路径;例如 `FilePath` ，/folder1/user1/。  <br/>  如果使用 ，  `/dstdir:"ingestiondata/"` 则此参数在 CSV 文件中保留为空。  <br/>  如果为参数的值包括可选的 pathname (例如 ， ，则使用该路径名 (不包括 CSV 文件中此参数的  `/dstdir:`  `/dstdir:"ingestiondata/FILESERVER01/PSTs"` "ingestiondata") 。 此参数的值区分大小写。  <br/>  无论采用哪种方法，均 *不要* 在 `FilePath` 参数的值中包含“ingestiondata”。 保留此参数为空或仅指定可选的 pathname。  <br/> > [!IMPORTANT]> 文件路径名称的大小写必须与在上一步中的 参数中指定的  `/dstdir:` 大小写相同。 例如，如果在上一步中对子文件夹名称使用了 ，但在 CSV 文件的 参数中使用了 ，PST 文件的导入  `"ingestiondata/FILESERVER01/PSTs"`  `fileserver01/psts`  `FilePath` 将失败。 请务必在两种情况下都使用相同的大小写。           |（保留为空白）  <br/> 或  <br/>  `FILESERVER01/PSTs` <br/> |
-    | `Name` <br/> |指定要导入到用户邮箱的 PST 文件的名称。 此参数的值区分大小写。  <br/> > [!IMPORTANT]> CSV 文件中 PST 文件名的大小写必须与步骤 2 中上载到 Azure 存储位置的 PST 文件相同。 例如，如果在 CSV 文件中的 `Name` 参数中使用 `annb.pst`，但实际 PST 文件的名称为 `AnnB.pst`，则导入该 PST 文件将会失败。 请确保 CSV 文件中的 PST 名称使用与实际 PST 文件相同的大小写。           | `annb.pst` <br/> |
+    | `FilePath` <br/> | 指定 PST 文件将在Azure 存储到 Microsoft 时复制到的文件夹区域中的文件夹位置。  <br/>  在 CSV 文件的此列中添加的内容取决于您在上一步中为 参数  `/dstdir:` 指定的内容。 如果源位置上具有子文件夹，则参数中的值必须包含子文件夹的相对路径;例如 `FilePath` ，/folder1/user1/。  <br/>  如果使用 ，  `/dstdir:"ingestiondata/"` 则此参数在 CSV 文件中保留为空。  <br/>  如果为参数的值包括可选的 pathname (例如 ， ，则使用该路径名 (不包括 CSV 文件中此参数的  `/dstdir:`  `/dstdir:"ingestiondata/FILESERVER01/PSTs"` "ingestiondata") 。 此参数的值区分大小写。  <br/>  无论采用哪种方法，均 *不要* 在 `FilePath` 参数的值中包含“ingestiondata”。 保留此参数为空或仅指定可选的 pathname。  <br/> > [!IMPORTANT]> 文件路径名称的大小写必须与在上一步中的 参数中指定的  `/dstdir:` 大小写相同。 例如，如果在上一步中对子文件夹名称使用了 ，但在 CSV 文件的 参数中使用了 ，PST 文件的导入  `"ingestiondata/FILESERVER01/PSTs"`  `fileserver01/psts`  `FilePath` 将失败。 请务必在两种情况下都使用相同的大小写。           |（保留为空白）  <br/> 或  <br/>  `FILESERVER01/PSTs` <br/> |
+    | `Name` <br/> |指定要导入到用户邮箱的 PST 文件的名称。 此参数的值区分大小写。  <br/> > [!IMPORTANT]> CSV 文件中 PST 文件名的大小写必须与步骤 2 中上载到 Azure 存储 位置的 PST 文件相同。 例如，如果在 CSV 文件中的 `Name` 参数中使用 `annb.pst`，但实际 PST 文件的名称为 `AnnB.pst`，则导入该 PST 文件将会失败。 请确保 CSV 文件中的 PST 名称使用与实际 PST 文件相同的大小写。           | `annb.pst` <br/> |
     | `Mailbox` <br/> |指定要将 PST 文件导入到的邮箱的电子邮件地址。 不能指定公用文件夹，因为 PST 导入服务不支持将 PST 文件导入公用文件夹。  <br/> 若要将 PST 文件导入到非活动邮箱，必须为此参数指定邮箱 GUID。 若要获取此 GUID，请在 Exchange Online 中运行以下 PowerShell 命令：`Get-Mailbox <identity of inactive mailbox> -InactiveMailboxOnly | FL Guid` <br/> > [!NOTE]>有时，您可能有多个邮箱具有相同的电子邮件地址，其中一个邮箱是活动邮箱，另一个邮箱处于软删除 (或处于非活动) 状态。 在这种情况下，必须指定邮箱 GUID 来唯一标识要将 PST 文件导入到的邮箱。 若要获取活动邮箱的此 GUID，请运行以下 PowerShell 命令：`Get-Mailbox <identity of active mailbox> | FL Guid`。 若要获取软删除邮箱或非 (的 GUID) ，请运行以下命令  `Get-Mailbox <identity of soft-deleted or inactive mailbox> -SoftDeletedMailbox | FL Guid` ：。           | `annb@contoso.onmicrosoft.com` <br/> 或  <br/>  `2d7a87fe-d6a2-40cc-8aff-1ebea80d4ae7` <br/> |
     | `IsArchive` <br/> | 指定是否要将 PST 文件导入到用户的存档邮箱。 有两个选项：  <br/> **FALSE** 将 PST 文件导入到用户的主邮箱。  <br/> **TRUE** 将 PST 文件导入到用户的存档邮箱。 这是假设[用户的存档邮箱已启用](enable-archive-mailboxes.md)的情况。 如果将此参数设置为 `TRUE`，但用户的存档邮箱未启用，则针对此用户进行的导入将失败。 如果针对某个用户的导入失败（因为他们的存档邮箱未启用，并且此属性设置为 `TRUE`），导入作业中的其他用户将不会受到影响。  <br/>  如果将此参数留空，PST 文件会导入到用户的主邮箱中。  <br/> **注意：** 若要针对主邮箱位于本地的某个用户将 PST 文件导入到基于云的存档邮箱，只需将此参数指定为 `TRUE`，并将 `Mailbox` 参数指定为该用户本地邮箱的电子邮件地址。  <br/> | `FALSE` <br/> 或  <br/>  `TRUE` <br/> |
     | `TargetRootFolder` <br/> | 指定要将 PST 文件导入到的邮箱文件夹。  <br/>  如果保留此参数为空，PST 将导入到名为 **Imported** 的新文件夹，该文件夹位于邮箱根级别 (与"收件箱"文件夹和其他默认邮箱文件夹位于同一级别) 。  <br/>  如果指定  `/` ，PST 文件中的项目将直接导入到用户的收件箱文件夹中。  <br/>  如果指定  `/<foldername>` ，PST 文件中的项目将导入到名为 的文件夹  *\<foldername\>* 。 例如，如果使用 `/ImportedPst`，项目将被导入到名为 **ImportedPst** 的文件夹中。 此文件夹将位于用户邮箱内，与“收件箱”文件夹属于同一级别。  <br/> |（保留为空白）  <br/> 或  <br/>  `/` <br/> 或  <br/>  `/ImportedPst` <br/> |
@@ -248,7 +249,7 @@ ms.locfileid: "50925498"
 
 ## <a name="step-4-create-a-pst-import-job-in-office-365"></a>步骤 4：在 Office 365 中创建 PST 导入作业
 
-下一步是在 Office 365 的导入服务中创建 PST 导入作业。 如前所述，提交在步骤 3 中创建的 PST 导入映射文件。 创建作业后，导入服务将使用映射文件中的信息，将 PST 文件从硬盘驱动器复制到 Azure 存储区域并创建并启动导入作业后，将 PST 文件导入到指定的用户邮箱。
+下一步是在 Office 365 的导入服务中创建 PST 导入作业。 如前所述，提交在步骤 3 中创建的 PST 导入映射文件。 创建作业后，导入服务将使用映射文件中的信息，将 PST 文件从硬盘驱动器复制到 Azure 存储 区域，并创建并启动导入作业后，将 PST 文件导入到指定的用户邮箱。
   
 1. 转到 [https://protection.office.com](https://protection.office.com)，然后使用你组织中的管理员帐户的凭据进行登录。 
     
@@ -313,10 +314,10 @@ ms.locfileid: "50925498"
  
 ## <a name="step-5-ship-the-hard-drive-to-microsoft"></a>步骤 5：将硬盘驱动器寄送到 Microsoft
 
-下一步是将硬盘驱动器寄送到 Microsoft，然后提供寄送的跟踪号并返回驱动器寄送作业的寄送信息。 Microsoft 收到驱动器后，数据中心工作人员需要 7 到 10 个工作日将 PST 文件上传到组织的 Azure 存储区域。
+下一步是将硬盘驱动器寄送到 Microsoft，然后提供寄送的跟踪号并返回驱动器寄送作业的寄送信息。 Microsoft 收到驱动器后，数据中心工作人员需要 7 到 10 个工作日将 PST 文件上传到组织的 Azure 存储 区域。
   
 > [!NOTE]
-> 如果未提供跟踪号，并且未在创建导入作业的 14 天内返回装运信息，则导入作业将过期。 如果发生这种情况，必须创建新的驱动器寄送导入作业 (请参阅步骤 [4：在 Office 365](#step-4-create-a-pst-import-job-in-office-365) 中创建 PST 导入作业) 并重新提交驱动器文件和 PST 导入映射文件。 
+> 如果未提供跟踪号，并且未在创建导入作业的 14 天内返回装运信息，则导入作业将过期。 如果发生这种情况，必须创建新的驱动器寄送导入作业 (请参阅步骤[4：](#step-4-create-a-pst-import-job-in-office-365)在 Office 365) 中创建 PST 导入作业，然后重新提交驱动器文件和 PST 导入映射文件。 
   
 ### <a name="ship-the-hard-drive"></a>寄送硬盘驱动器
 
@@ -358,21 +359,21 @@ ms.locfileid: "50925498"
 
 ## <a name="step-6-filter-data-and-start-the-pst-import-job"></a>步骤 6：筛选数据并启动 PST 导入作业
 
-Microsoft 收到硬盘驱动器后，"导入 **PST** 文件"页上导入作业的状态将更改为"**收到的驱动器"。** 数据中心工作人员使用日志文件中的信息将 PST 文件上载到组织的 Azure 存储区域。 此时，状态将更改为 **"正在导入"。** 如前所述，收到硬盘驱动器后，需要 7 到 10 个工作日的时间上载 PST 文件。
+Microsoft 收到硬盘驱动器后，"导入 **PST** 文件"页上导入作业的状态将更改为"**收到的驱动器"。** 数据中心工作人员使用日志文件中的信息将 PST 文件上载到Azure 存储区域。 此时，状态将更改为 **"正在导入"。** 如前所述，收到硬盘驱动器后，需要 7 到 10 个工作日的时间上载 PST 文件。
   
-将 PST 文件上传到 Azure 后，状态将更改为 **"正在分析"。** 这表示 Microsoft 365 正在以安全的方式分析 PST 文件 (数据) 以确定项目的年龄以及 PST 文件中包含的不同邮件类型。 分析完成并且数据已准备好导入时，导入作业的状态将更改为 **"分析已完成"。** 此时，您可以选择导入 PST 文件中包含的所有数据，或者可以通过设置控制要导入的数据的筛选器来修整导入的数据。
+将 PST 文件上传到 Azure 后，状态将更改为 **"正在分析"。** 这表示Microsoft 365以安全的方式分析 PST 文件 (数据) 以确定项目的年龄以及 PST 文件中包含的不同邮件类型。 分析完成并且数据已准备好导入时，导入作业的状态将更改为 **"分析已完成"。** 此时，您可以选择导入 PST 文件中包含的所有数据，或者可以通过设置控制要导入的数据的筛选器来修整导入的数据。
   
 1. 转到 [https://protection.office.com](https://protection.office.com)，然后使用你组织中的管理员帐户的凭据进行登录。 
     
 2. 在左窗格中，单击"**信息治理** \> **""导入** \> **PST 文件"。**
     
-3. 在"**导入 PST 文件"** 页上，单击步骤 4 中创建的导入作业的"准备导入 **到 Office 365"。** 
+3. 在"**导入 PST 文件**"页上，单击"准备导入Office 365步骤 4 中创建的导入作业的导入作业。 
     
     ![单击你创建的导入作业旁边的“已准备好导入到 Microsoft 365”](../media/5760aac3-300b-4e31-b894-253c42a4b82b.png)
   
     系统将显示一个浮出页面，其中包含有关 PST 文件的信息和有关导入作业的其他信息。
     
-4. 单击 **"导入到 Office 365"。**
+4. 单击 **导入以Office 365。**
     
 5. 系统将显示“**筛选数据**”页面。 该页面包含通过 Office 365 对 PST 文件进行的分析得出的数据洞察，其中包括有关数据存在时长的信息。 此时，你可以选择筛选将要导入的数据或按原样导入所有数据。 
     
@@ -392,17 +393,17 @@ Microsoft 收到硬盘驱动器后，"导入 **PST** 文件"页上导入作业�
     
     导入作业的状态显示在"导入 PST 文件 **"** 页上。 单击 ![刷新图标](../media/O365-MDM-Policy-RefreshIcon.gif)“**刷新**”以更新“**状态**”列中显示的状态信息。 单击导入作业以显示状态浮出页面，该页面将显示正在导入的每个 PST 文件的状态信息。 导入完成且已将 PST 文件导入到用户邮箱后，状态将更改为“已完成”。
 
-## <a name="view-a-list-of-the-pst-files-uploaded-to-microsoft-365"></a>查看上载到 Microsoft 365 的 PST 文件列表
+## <a name="view-a-list-of-the-pst-files-uploaded-to-microsoft-365"></a>查看上载到 pst 文件的列表Microsoft 365
 
-可以安装并使用 Microsoft Azure 存储资源管理器 (这是一款免费的开源工具) ，用于查看 Microsoft 数据中心工作人员)  (上传至组织的 Azure 存储区域 (的 PST 文件列表。 可以这样做来验证发送到 Microsoft 的硬盘驱动器中的 PST 文件已成功上传到 Azure 存储区域。
+你可以安装并使用 Microsoft Azure 存储资源管理器 (这是一款免费的开源工具) ，用于查看 Microsoft 数据中心工作人员) 将 (上载到组织的 Azure 存储 区域中的 PST 文件列表。 可以这样做来验证发送到 Microsoft 的硬盘驱动器中的 PST 文件已成功上载到Azure 存储区域。
   
 Microsoft Azure 存储资源管理器处于预览阶段。
   
- **重要提示：** 你无法使用 Azure 存储资源管理器上载或修改 PST 文件。 将 PST 文件导入到 Microsoft 365 的唯一受支持的方法是使用 AzCopy。 此外，无法删除已上载到 Azure blob 的 PST 文件。 如果尝试删除 PST 文件，将收到有关没有所需权限的错误。 所有 PST 文件都会从 Azure 存储区域自动删除。 如果没有正在导入作业，则 ** ingestiondata ** 容器中的所有 PST 文件都将在最新导入作业创建 30 天后删除。 
+ **重要提示：** 你无法使用此Azure 存储资源管理器上载或修改 PST 文件。 唯一受支持的将 PST 文件导入Microsoft 365方法是使用 AzCopy。 此外，无法删除已上载到 Azure blob 的 PST 文件。 如果尝试删除 PST 文件，将收到有关没有所需权限的错误。 所有 PST 文件都会自动从你的Azure 存储中删除。 如果没有正在导入作业，则 ** ingestiondata ** 容器中的所有 PST 文件都将在最新导入作业创建 30 天后删除。 
   
 若要安装 Azure 存储资源管理器并连接到 Azure 存储区域，请执行以下操作：
   
-1. 执行以下步骤获取组织的共享访问签名 (SAS) URL。 此 URL 是组织的 Microsoft 云中 Azure 存储位置的网络 URL 和 SAS 密钥的组合。 此密钥提供访问组织的 Azure 存储位置所需的权限。
+1. 执行以下步骤获取组织的共享访问签名 (SAS) URL。 此 URL 是组织的 Microsoft 云中Azure 存储位置的网络 URL 和 SAS 密钥的组合。 此密钥为您提供了必要的权限，以访问组织的Azure 存储位置。
     
 1. 转到 [https://protection.office.com/](https://protection.office.com/)，然后使用你组织中的管理员帐户的凭据进行登录。 
     
@@ -412,7 +413,7 @@ Microsoft Azure 存储资源管理器处于预览阶段。
     
 4. 在导入作业向导中，键入 PST 导入作业的名称，然后单击"下一步 **"。** 请使用小写字母、数字、连字符和下划线。 无法在名称中使用大写字母或包含空格。
     
-5. 在"**选择导入作业类型"页上**，单击"**上载数据**"，然后单击"下一步 **"。**
+5. 在"**选择导入作业类型**"页上，单击Upload **导入数据"，** 然后单击"下一步 **"。**
     
 6. 在步骤 2 中，单击“**显示网络上传 SAS URL**”。
     
@@ -445,14 +446,14 @@ Microsoft Azure 存储资源管理器处于预览阶段。
 
 ## <a name="troubleshooting-tips"></a>疑难解答提示
 
-- **如果导入作业由于 PST 导入 CSV 映射文件出错，会发生什么情况？** 如果导入作业由于映射文件出错而失败，则不必将硬盘驱动器重新传输给 Microsoft 来创建导入作业。 这是因为您为驱动器寄送导入作业提交的硬盘驱动器中的 PST 文件已上载到组织的 Azure 存储区域。 在这种情况下，只需修复 PST 导入 CSV 映射文件的错误，然后创建新的"网络上载"导入作业并提交修改后的 CSV 映射文件。 若要创建和启动新的网络上载导入作业，请参阅"使用网络上载将 PST 文件导入到 Office [365"主题中的步骤 5：在 Microsoft 365](use-network-upload-to-import-pst-files.md#step-5-create-a-pst-import-job) 中创建 PST 导入作业和步骤 [6：](use-network-upload-to-import-pst-files.md#step-6-filter-data-and-start-the-pst-import-job) 筛选数据并启动 PST 导入作业。 
+- **如果导入作业由于 PST 导入 CSV 映射文件出错，会发生什么情况？** 如果导入作业由于映射文件出错而失败，则不必将硬盘驱动器重新传输给 Microsoft 来创建导入作业。 这是因为您为驱动器寄送导入作业提交的硬盘驱动器中的 PST 文件已上载到组织的 Azure 存储 区域。 在这种情况下，只需修复 PST 导入 CSV 映射文件的错误，然后创建新的"网络上载"导入作业并提交修改后的 CSV 映射文件。 若要创建和启动新的网络上载导入作业，请参阅"使用网络上载将 PST 文件导入到 Office 365"主题中的步骤[5：](use-network-upload-to-import-pst-files.md#step-5-create-a-pst-import-job)在 Microsoft 365 中创建 PST 导入作业和步骤[6：](use-network-upload-to-import-pst-files.md#step-6-filter-data-and-start-the-pst-import-job)筛选数据并启动 PST 导入作业。 
     
     > [!NOTE]
-    > 为了帮助你解决 PST 导入 CSV 映射文件的问题，请使用 [Azure](#view-a-list-of-the-pst-files-uploaded-to-microsoft-365) 存储资源管理器工具查看从硬盘驱动器上载到 Azure 存储区域中的 PST 文件的 **ingestiondata** 容器中的文件夹结构。 映射文件错误通常是由 FilePath 参数中的错误值导致的。 此参数指定 PST 文件在 Azure 存储区域中的位置。 请参阅步骤 3 中的表中 FilePath [参数的说明](#step-3-create-the-pst-import-mapping-file)。 如前所述，当您在步骤 2 中运行 WAImportExport.exe 工具时，参数指定 PST 文件在 Azure  `/dstdir:` 存储 [区域中的位置](#step-2-copy-the-pst-files-to-the-hard-drive)。 
+    > 若要帮助您解决 PST 导入 CSV 映射文件的问题，请使用 [Azure 存储资源管理器](#view-a-list-of-the-pst-files-uploaded-to-microsoft-365)工具查看从硬盘驱动器上载到 Azure 存储区域中的 PST 文件的 **ingestiondata** 容器中的文件夹结构。 映射文件错误通常是由 FilePath 参数中的错误值导致的。 此参数指定 PST 文件在 Azure 存储区域中的位置。 请参阅步骤 3 中的表中 FilePath [参数的说明](#step-3-create-the-pst-import-mapping-file)。 如前所述，当您在步骤 2 中运行 WAImportExport.exe 工具时，参数指定 PST 文件在 Azure  `/dstdir:` 存储 [区域中的位置](#step-2-copy-the-pst-files-to-the-hard-drive)。 
   
 ## <a name="more-information"></a>更多信息
 
-- 驱动器寄送是一种将大量存档邮件数据导入 Microsoft 365 以利用组织可用的合规性功能的有效方式。 将存档数据导入到用户邮箱后，您可以：
+- 驱动器寄送是一种将大量存档邮件数据导入到 Microsoft 365以利用组织可用的合规性功能的有效方式。 将存档数据导入到用户邮箱后，您可以：
     
   - 启用 [存档邮箱](enable-archive-mailboxes.md) 和 [自动扩展存档](enable-unlimited-archiving.md) ，以为用户提供更多的邮箱存储空间来存储数据。 
     
@@ -460,13 +461,13 @@ Microsoft Azure 存储资源管理器处于预览阶段。
     
   - 使用 Microsoft [电子数据展示工具](search-for-content.md) 搜索数据。 
     
-  - 应用 [Microsoft 365](retention.md) 保留策略来控制数据的保留时间，以及保留期到期后要采取哪些操作。 
+  - 应用[Microsoft 365](retention.md)保留策略来控制数据的保留时间，以及保留期到期后要采取哪些操作。 
     
   - 在 [审核日志](search-the-audit-log-in-security-and-compliance.md) 搜索与此数据相关的事件。 
     
   - 出于合规性 [目的将数据导入非活动](create-and-manage-inactive-mailboxes.md) 邮箱以存档数据。 
     
-  - 防止组织 [丢失](data-loss-prevention-policies.md) 敏感信息。 
+  - 防止组织 [丢失](dlp-learn-about-dlp.md) 敏感信息。 
     
 - 以下是安全存储帐户密钥和 BitLocker 加密密钥的示例。此示例还包含 WAImportExport.exe 命令的语法，运行此命令可将 PST 文件复制到硬盘驱动器。一定要采取预防措施来保护这些文件，就像保护密码或其他与安全相关的信息一样。
     

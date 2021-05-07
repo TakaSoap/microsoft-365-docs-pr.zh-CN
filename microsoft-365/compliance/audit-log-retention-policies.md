@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: 审核日志保留策略是 Microsoft 365 中新增的高级审核功能的一部分。 通过审核日志保留策略，可指定组织中审核日志的保留时间。
-ms.openlocfilehash: 53449b6b83373eb2f749a4547845866dbea4a2af
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 2ac95d9bb9c13b6bf0c0e31d17b4fb46c30c492a
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50922848"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51687355"
 ---
 # <a name="manage-audit-log-retention-policies"></a>管理审核日志保留策略
 
@@ -36,7 +36,7 @@ ms.locfileid: "50922848"
 
 ## <a name="default-audit-log-retention-policy"></a>默认审核日志保留策略
 
-Microsoft 365 中的高级审核功能为所有组织提供默认审核日志保留策略。 此策略将所有 Exchange、SharePoint 和 Azure Active Directory 审核记录保留一年。 此默认策略将保留审核记录，其中包含 **工作负载** 属性（活动发生的服务）的 **AzureActiveDirectory**、**Exchange** 或 **SharePoint** 的值。 无法修改默认策略。 请参阅本文的[详细信息](#more-information)部分，以获取默认策略中包含的每个工作负载的记录类型列表。
+Microsoft 365 中的高级审核功能为所有组织提供默认审核日志保留策略。 此策略将所有的 Exchange Online、SharePoint Online、OneDrive for Business 和 Azure Active Directory 审核记录保留一年。 此默认策略将保留审核记录，其中包含针对 **工作负载** 属性（即活动所发生的服务）的 **Exchange**、**SharePoint**、**OneDrive**、**AzureActiveDirectory** 的值。 无法修改默认策略。 请参阅本文的[详细信息](#more-information)部分，以获取默认策略中包含的每个工作负载的记录类型列表。
 
 > [!NOTE]
 > 默认审核日志保留策略仅适用于分配了 Office 365 或 Microsoft 365 E5 许可证或具有 Microsoft 365 E5 合规版或 E5 电子数据展示和审核加载项许可证的用户执行的活动审核记录。 如果你的组织中有非 E5 用户或来宾用户，则其相应的审核记录将保留 90 天。
@@ -49,7 +49,7 @@ Microsoft 365 中的高级审核功能为所有组织提供默认审核日志保
 
 - 若要将审核日志保留超过 90 天（以及最多 1 年），必须为生成审核日志的用户（通过执行审核活动）分配 Office 365 E5 或 Microsoft 365 E5 许可证，或者该用户必须具有 Microsoft 365 E5 合规或 E5 电子数据展示和审核加载项许可证。 若要将审核日志保留 10 年，除 E5 许可证外，还必须向生成审核日志的用户分配 10 年审核日志保留附加产品许可证以及 E5 许可证。
 
-- 所有自定义审核日志保留策略（由组织创建）都优先于默认保留策略。 例如，如果为保留期短于一年的 Exchange 邮箱活动创建审核日志保留策略，则 Exchange 邮箱活动的审核记录将在自定义策略指定的较短期限内保留。
+- 所有自定义审核日志保留策略（由组织创建）均优先于默认保留策略。例如，如果为具有短于一年保留期的 Exchange 邮箱活动创建审核日志保留策略，则 Exchange 邮箱活动的审核记录将按照自定义策略所指定的较短期限保留。
 
 ## <a name="create-an-audit-log-retention-policy"></a>创建审核日志保留策略
 
@@ -167,9 +167,9 @@ Get-UnifiedAuditLogRetentionPolicy | Sort-Object -Property Priority -Descending 
 
 ## <a name="more-information"></a>详细信息
 
-如前文所述，Azure Active Directory，Exchange 和 SharePoint 中针对操作的审核记录将默认保留一年。 下表列出了默认审核日志保留策略中包括的所有记录类型（针对每个服务）。 这意味着具有此记录类型的任何操作的审核日志都将保留一年，除非自定义审核日志保留策略对特定的记录类型、操作或用户具有优先权。 括号中显示了每种记录类型的枚举值（在审核记录中显示为 RecordType 属性值）。
+如前文所述，Azure Active Directory，Exchange Online, SharePoint Online 和 OneDrive for Business 中针对操作的审核记录将默认保留一年。 下表列出了默认审核日志保留策略中包括的所有记录类型（针对每个服务）。 这意味着具有此记录类型的任何操作的审核日志都将保留一年，除非自定义审核日志保留策略对特定的记录类型、操作或用户具有优先权。 括号中显示了每种记录类型的枚举值（在审核记录中显示为 RecordType 属性值）。
 
-|AzureActiveDirectory |Exchange  |SharePoint|
+|AzureActiveDirectory |Exchange  |SharePoint 或 OneDrive|
 |:---------|:---------|:---------|
 |AzureActiveDirectory (8)|ExchangeAdmin (1)|ComplianceDLPSharePoint (11)|
 |AzureActiveDirectoryAccountLogon (9)|ExchangeItem (2)|ComplianceDLPSharePointClassification (33)|

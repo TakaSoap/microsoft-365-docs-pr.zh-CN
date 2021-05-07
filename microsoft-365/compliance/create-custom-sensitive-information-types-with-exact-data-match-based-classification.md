@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: 了解如何使用基于精确数据匹配的分类来创建自定义敏感信息类型。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 9288a7bc1bf93f1fa7ac329305bdc45c3cb1528c
-ms.sourcegitcommit: c75aac39ee8d93218a79585113ef6b36f47c9ddf
+ms.openlocfilehash: a6e4429718de05362bd6bd3336c9d19ceeec64b9
+ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2021
-ms.locfileid: "51408641"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52113994"
 ---
 # <a name="create-custom-sensitive-information-types-with-exact-data-match-based-classification"></a>使用基于精确数据匹配的分类创建自定义敏感信息类型
 
@@ -48,7 +48,7 @@ ms.locfileid: "51408641"
 
 ![基于 EDM 的分类](../media/EDMClassification.png)
 
-基于 EDM 的分类允许你创建自定义敏感信息类型，它们将引用敏感信息数据库中的精确值。 数据库可以每天刷新一次，最多可包含 1 亿行数据。 因此，当员工、患者或客户往来并且记录发生更改时，你的自定义敏感信息类型仍将保持最新并且适用。 你还可以将基于 EDM 的分类与策略一起使用，例如[数据丢失防护策略](data-loss-prevention-policies.md) (DLP) 或[Microsoft Cloud App Security 文件策略](/cloud-app-security/data-protection-policies)。
+基于 EDM 的分类允许你创建自定义敏感信息类型，它们将引用敏感信息数据库中的精确值。 数据库可以每天刷新一次，最多可包含 1 亿行数据。 因此，当员工、患者或客户往来并且记录发生更改时，你的自定义敏感信息类型仍将保持最新并且适用。 你还可以将基于 EDM 的分类与策略一起使用，例如[数据丢失防护策略](dlp-learn-about-dlp.md)或[Microsoft Cloud App Security 文件策略](/cloud-app-security/data-protection-policies)。
 
 > [!NOTE]
 > Microsoft 365 信息保护可为以下语言提供双字节字符集语言支持（预览）：
@@ -167,7 +167,7 @@ ms.locfileid: "51408641"
 - \~
 - \; 
 
-- `ignoredDelimiters` 标志不支持：
+`ignoredDelimiters` 标志不支持：
 - 字符 0-9
 - A-Z
 - a-z
@@ -301,6 +301,8 @@ ms.locfileid: "51408641"
 
 > [!NOTE]
 > 为 EDMSchema 更新新增内容可能需要10-60 分钟。 更新必须完成，然后才能执行使用这些新增操作的步骤。
+ 
+导入带有 EDM 敏感信息类型的规则包并导入敏感数据表后，可以使用合规中心的 EDM 向导中的 **测试** 功能测试新创建的类型。 有关使用此功能的说明，请参阅[使用精确数据匹配架构和敏感信息类型向导](sit-edm-wizard.md)。
 
 #### <a name="editing-the-schema-for-edm-based-classification"></a>编辑基于 EDM 的分类的架构
 
@@ -369,7 +371,7 @@ ms.locfileid: "51408641"
 
 如果想要在一台计算机上创建哈希并上传，则需要在可直接连接到 Microsoft 365 租户的计算机上执行此操作。 这要求计算机上需要具备明文敏感数据文件以便创建哈希。
 
-如果不希望公开明文敏感数据文件，可在计算机的安全位置上为其创建哈希，然后将哈希文件和随机混淆值文件复制到可直接连接到 Microsoft 365 租户的计算机以进行上传。 在这种情况下，需要在两台计算机上都有 EDMUploadAgent。
+如果不希望公开明文敏感数据文件，可在计算机的安全位置上为其创建哈希，然后将哈希文件和随机混淆值文件复制到可直接连接到 Microsoft 365 租户的计算机以进行上传。在这种情况下，两台计算机上都需要 EDMUploadAgent。
 
 > [!IMPORTANT]
 > 如果你使用"精确数据匹配"架构和敏感信息类型向导来创建你的架构和模式文件， ***必须*** 此过程的架构。
@@ -427,7 +429,7 @@ ms.locfileid: "51408641"
    > 每天只能使用 EDMUploadAgent 上传数据到任何给定的数据存储空间两次。
 
    > [!TIP]
-   > 要获取受支持命令参数的列表，请运行无代理参数。 例如“EdmUploadAgent.exe”。
+   > 要获取受支持命令参数的列表，请运行无代理参数。例如“EdmUploadAgent.exe”。
 
 2. 授权 “EDM 上传代理”，打开命令提示符窗口（以管理员身份），切换到 **C:\EDM\Data** 目录，然后运行以下命令：
 
@@ -655,7 +657,7 @@ Register-ScheduledTask -TaskName $taskName -InputObject $scheduledTask -User $us
 
 - [敏感信息类型属性定义](sensitive-information-type-entity-definitions.md)
 - [了解敏感信息类型](sensitive-information-type-learn-about.md)
-- [DLP 策略概述](data-loss-prevention-policies.md)
+- [了解数据丢失防护](dlp-learn-about-dlp.md)
 - [Microsoft Cloud App Security](/cloud-app-security)
 - [New-DlpEdmSchema](/powershell/module/exchange/new-dlpedmschema)
 - [修改精确数据匹配架构，以使用可配置匹配项](sit-modify-edm-schema-configurable-match.md)

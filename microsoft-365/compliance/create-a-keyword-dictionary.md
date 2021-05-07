@@ -18,20 +18,20 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: 了解在 Office 365 安全与合规中心中创建关键字字典的基本步骤。
-ms.openlocfilehash: b70deed531204f2ffe85253bd9ae2073dad291ec
-ms.sourcegitcommit: 58fbcfd6437bfb08966b79954ca09556e636ff4a
+ms.openlocfilehash: 94bacc2a2fe91fdc35aad753cc2e7db80a374e29
+ms.sourcegitcommit: 2655bb0ccd66279c35be2fadbd893c937d084109
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/08/2021
-ms.locfileid: "51632188"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51876073"
 ---
 # <a name="create-a-keyword-dictionary"></a>创建关键字字典
 
-数据丢失防护 (DLP) 可识别、监视和保护敏感项目。 标识敏感项目有时需要查找关键字，尤其是在标识常规内容（如与医疗保健相关的通信）或不当或露骨语言时。 虽然可以在敏感信息类型中创建关键字列表，但关键字列表的大小是有限的，且需要修改 XML 才能创建或编辑它们。 关键字字典可更简单地管理关键字，并且规模更大，可支持多达 1MB 的术语（压缩后），并支持所有语言。 租户限制同样为压缩后 1MB。 压缩后限值 1MB 意味着租户中合并的所有词典可能接近 100 万字符。
+数据丢失防护 (DLP) 可识别、监视和保护敏感项目。 标识敏感项目有时需要查找关键字，尤其是在标识常规内容（如与医疗保健相关的通信）或不当或露骨语言时。 虽然可以在敏感信息类型中创建关键字列表，但关键字列表的大小是有限的，且需要修改 XML 才能创建或编辑它们。 关键字字典可更简单地管理关键字，并且规模更大，可支持多达 1 MB 的术语（压缩后），并支持所有语言。 租户限制同样为压缩后 1 MB。 压缩后限值 1 MB 意味着租户中合并的所有词典可能接近 100 万字符。
 
 ## <a name="keyword-dictionary-limits"></a>关键字字典限制
 
-每个租户最多可以创建 50 种基于关键字字典的敏感信息类型。 若要知道租户中有多少关键字字典，可以对租户运行该 PowerShell 脚本。
+每个租户最多可以创建 50 种基于关键字字典的敏感信息类型。 要了解租户中有多少关键字词典，请使用[连接到安全与合规中心 PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell)中的过程进行连接，以连接到租户并运行此 PowerShell 脚本。
 
 ```powershell
 $rawFile = $env:TEMP + "\rule.xml"
@@ -109,7 +109,7 @@ Remove-Item $rawFile
     
 ## <a name="create-a-keyword-dictionary-from-a-file-using-powershell"></a>使用 PowerShell 通过文件创建关键字词典
 
-通常情况下，在需要创建大型字典时，可使用从某些其他来源导出的文件或列表中的关键字。 在这种情况下，将会创建一个关键字字典，其中包含将在外部电子邮件中筛选的不当语言的列表。 首先，必须[连接到安全与合规中心 PowerShell](/powershell/exchange/connect-to-scc-powershell)。&amp;
+通常情况下，在需要创建大型字典时，可使用从某些其他来源导出的文件或列表中的关键字。 在这种情况下，将会创建一个关键字字典，其中包含将在外部电子邮件中筛选的不当语言的列表。 首先，必须[连接到安全与&amp;合规中心 PowerShell](/powershell/exchange/connect-to-scc-powershell)。
   
 1. 将关键字复制到文本文件中，并确保每个关键字都单独占一行。
     
@@ -212,13 +212,13 @@ Save the dictionary locally by running the following:
 Set-Content $updatedTerms -Path "C:\myPath\terms.txt"
 ```
 
-现在只需打开文件，添加其他关键字，并使用 Unicode 编码 (UTF-16) 保存文件即可。现在将上传更新后的关键字，并就地更新词典。
+现在打开文件，添加其他关键字，并使用 Unicode 编码 (UTF-16) 保存文件即可。现在将上传更新后的关键字，并就地更新词典。
   
 ```powershell
 PS> Set-DlpKeywordDictionary -Identity "Diseases" -FileData (Get-Content -Path "C:myPath\terms.txt" -Encoding Byte -ReadCount 0)
 ```
 
-至此，词典已就地更新。请注意，`Identity` 字段需要使用词典名称。如果还要使用 `set-` cmdlet 更改词典名称，只需将包含新词典名称的 `-Name` 参数添加到上面的命令中即可。 
+现在字典已经更新到位了。 `Identity` 字段采用字典名称。 如果还要使用 `set-` cmdlet 更改词典名称，只需将包含新词典名称的 `-Name` 参数添加到上面的命令中即可。 
   
 ## <a name="using-keyword-dictionaries-in-custom-sensitive-information-types-and-dlp-policies"></a>在自定义敏感信息类型和 DLP 策略中使用关键字词典
 

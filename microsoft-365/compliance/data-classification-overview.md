@@ -1,5 +1,5 @@
 ---
-title: 数据分类入门
+title: 了解数据分类。
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -18,14 +18,14 @@ search.appverid:
 - MOE150
 - MET150
 description: 借助数据分类仪表板，你可以了解组织中已发现和分类了多少敏感数据。
-ms.openlocfilehash: 8f3bb2da1e7011fef334ec345a02d7facedc25fc
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 2867e545221061f5f99bf7ff669f9655b3777ba8
+ms.sourcegitcommit: 1c53f114a810e7aaa2dc876b84d66348492ea36c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50922676"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51899382"
 ---
-# <a name="know-your-data---data-classification-overview"></a>了解你的数据 - 数据分类概述
+# <a name="learn-about-data-classification"></a>了解数据分类。
 
 作为 Microsoft 365 管理员或合规性管理员，你可以评估并标记组织中的内容，以便控制其去向，随时随地提供保护，并确保根据组织的需要保留和删除该内容。 你可以通过应用[敏感度标签](sensitivity-labels.md)、[保留标签](retention.md#retention-labels)和敏感信息类型分类来实现这一目标。 可通过多种方法进行发现、评估和标记，但最终的结果是，你可能拥有大量的文档和电子邮件，它们使用其中一个或两个标签进行了标记和分类。 应用保留标签和敏感度标签后，你希望了解如何在租户中使用这些标签以及对这些项目所执行的操作。 数据分类页面提供了对内容主体的可见性，具体如下：
 
@@ -36,8 +36,12 @@ ms.locfileid: "50922676"
 - 敏感数据和已保留数据的位置
 
 此外，还可在数据分类页面上管理以下功能：
+
 - [可训练的分类器](classifier-learn-about.md)
-- [敏感信息类型](./sensitive-information-type-entity-definitions.md)
+- [敏感信息类型](sensitive-information-type-learn-about.md)
+- [精确数据匹配](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)
+- [内容浏览器](data-classification-content-explorer.md)。
+- [活动资源管理器](data-classification-activity-explorer.md)
 
 可以在“**Microsoft 365 合规中心**”或“**Microsoft 365 安全中心**” > “**分类**” > “**数据分类**”中找到数据分类。
 
@@ -96,7 +100,7 @@ Microsoft 365 附带了许多敏感信息类型的定义，例如包含社会安
 ![按敏感度标签分类占位符屏幕快照对内容进行细分](../media/data-classification-top-sensitivity-labels-applied.png)
 
 > [!NOTE]
-> 如果尚未创建或发布任何敏感度标签，或者任何内容均未应用敏感度标签，则此卡片将显示消息“未检测到任何敏感度标签”。 若要开始使用敏感度标签，请参阅：
+> 如果尚未创建或发布任何敏感度标签，或者任何内容均未应用敏感度标签，则此卡片将显示消息“未检测到任何敏感度标签”。若要开始使用敏感度标签，请参阅：
 >- [开始使用敏感度标签](get-started-with-sensitivity-labels.md)或[配置 Azure 信息保护策略](/azure/information-protection/configure-policy)（对于 AIP）
 
 ## <a name="top-retention-labels-applied-to-content"></a>应用于内容的最常用保留标签
@@ -113,10 +117,10 @@ Microsoft 365 附带了许多敏感信息类型的定义，例如包含社会安
 
 ## <a name="top-activities-detected"></a>检测到的热门活动
 
-此卡片提供用户对具有敏感度标签的项目执行的最常见操作的快速摘要。 可使用[活动资源管理器](data-classification-activity-explorer.md)深入了解 Microsoft 365 对位于 Windows 10 终结点上的已标记内容进行跟踪的八种不同活动。
+此卡片提供用户对具有敏感度标签的项目执行的最常见操作的快速摘要。 可使用[活动资源管理器](data-classification-activity-explorer.md)深入了解 Microsoft 365 对位于 Windows 10 终结点上标记的内容和内容的不同活动。
 
 > [!NOTE]
-> 如果此卡片显示消息“未检测到任何活动”，则表示未对文件执行任何操作，或者未启用用户和管理员审核功能。 若要打开审核日志，请参阅：
+> 如果此卡片显示消息“未检测到任何活动”，则表示未对文件执行任何操作，或者未启用用户和管理员审核功能。若要打开审核日志，请参阅：
 >- [在安全与合规中心搜索审核日志](search-the-audit-log-in-security-and-compliance.md)
 
 ## <a name="sensitivity-and-retention-labeled-data-by-location"></a>按位置列出的敏感度和保留标签数据
@@ -124,7 +128,7 @@ Microsoft 365 附带了许多敏感信息类型的定义，例如包含社会安
 数据分类报告的重点是让用户了解具有标签的项目数量及其位置。 通过这些卡片，你可以了解在 Exchange、SharePoint 和 OneDrive 等应用中具有标签的项目数量。
 
 > [!NOTE]
-> 如果此卡片显示消息“未检测到任何位置”，则表示尚未创建或发布任何敏感度标签，或者任何内容均未应用保留标签。 若要开始使用敏感度标签，请参阅：
+> 如果此卡片显示消息“未检测到任何位置”，则表示尚未创建或发布任何敏感度标签，或者任何内容均未应用保留标签。若要开始使用敏感度标签，请参阅：
 >- [敏感度标签](sensitivity-labels.md)
 
 ## <a name="see-also"></a>另请参阅
@@ -133,5 +137,6 @@ Microsoft 365 附带了许多敏感信息类型的定义，例如包含社会安
 - [查看带标签的内容](data-classification-content-explorer.md)
 - [了解敏感度标签](sensitivity-labels.md)
 - [了解保留策略和保留标签](retention.md)
+- [了解敏感信息类型](sensitive-information-type-learn-about.md)
 - [敏感信息类型属性定义](sensitive-information-type-entity-definitions.md)
 - [了解可训练的分类器（预览版）](classifier-learn-about.md)

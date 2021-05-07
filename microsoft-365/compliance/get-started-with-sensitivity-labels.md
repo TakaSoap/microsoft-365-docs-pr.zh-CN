@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 已准备好部署敏感度标签以帮助保护组织的数据，但不确定从哪里开始？ 请阅读一些可帮助你使用标签的实用指导。
-ms.openlocfilehash: d685b050d32ea7bf482a39ad8d72abe3ee74567d
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: 08ecf97e3cb45896390c3dac9074c54a2b0bbe96
+ms.sourcegitcommit: f000358c01a8006e5749a86b256300ee3a73174c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51499687"
+ms.lasthandoff: 04/24/2021
+ms.locfileid: "51994769"
 ---
 # <a name="get-started-with-sensitivity-labels"></a>开始使用敏感度标签
 
@@ -56,7 +56,7 @@ ms.locfileid: "51499687"
 
 ## <a name="permissions-required-to-create-and-manage-sensitivity-labels"></a>创建和管理敏感度标签所需的权限
 
-将要创建敏感度标签的合规团队成员需要 Microsoft 365 合规中心、Microsoft 365 安全中心或安全与合规中心的访问权限。 
+需要创建敏感度标签的团队成员，需要Microsoft 365 合规中心或较早的安全与合规中心的访问权限。 
 
 默认情况下，你的租户的全局管理员有权访问这些管理中心，并可向合规专员和其他人提供访问权限，而不为其提供租户管理员的所有权限。要获得这一委派的受限管理员访问权限，请将用户添加到 **合规性数据管理员**、**合规性管理员** 或 **安全管理员** 角色组。 
 

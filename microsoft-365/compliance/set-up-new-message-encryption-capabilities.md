@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: 了解新的 Office 365 邮件加密功能，可与组织内部和外部的人员实现受保护的电子邮件通信。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 1519748c4bd535e0a3ea1cc3ee653e2c81e807bd
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: cf37826c3e1e349947ab83fe211f9406a765e5ea
+ms.sourcegitcommit: 2655bb0ccd66279c35be2fadbd893c937d084109
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50919388"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51876301"
 ---
 # <a name="set-up-new-message-encryption-capabilities"></a>设置全新的邮件加密功能
 
@@ -44,7 +44,7 @@ ms.locfileid: "50919388"
 
 有关详细信息，请参阅：
 
-- [使用新的 OME 功能需要什么订阅？](ome-faq.md#what-subscriptions-do-i-need-to-use-the-new-ome-capabilities)检查你的订阅计划是否包含 Azure 信息保护 (包括 Azure RMS 功能)。
+- [使用新的 OME 功能需要什么订阅？](ome-faq.yml#what-subscriptions-do-i-need-to-use-the-new-ome-capabilities-)检查你的订阅计划是否包含 Azure 信息保护 (包括 Azure RMS 功能)。
 - [Azure 信息保护](https://azure.microsoft.com/services/information-protection/)获取有关购买符合条件的订阅的信息。  
 
 ### <a name="manually-activating-azure-rights-management"></a>请手动激活 Azure 权限管理
@@ -112,7 +112,7 @@ ms.locfileid: "50919388"
 
 ## <a name="next-steps-define-mail-flow-rules-to-use-new-ome-capabilities"></a>后续步骤：定义邮件流规则以使用新的 OME 功能
 
-如果有之前配置的用于在组织中对电子邮件进行加密的邮件流规则，则需要更新现有规则，以使用新的 OME 功能。 对于新部署，你需要创建新的邮件流规则。
+如果有之前配置的用于在组织中对电子邮件进行加密的邮件流规则，则需要更新现有规则，以使用新的 OME 功能。对于新部署，需要创建新的邮件流规则。
 
 >[!IMPORTANT]
 >如果不更新现有的邮件流规则，你的用户将继续收到使用之前的 HTML 附件格式的加密邮件，而不是新的无缝 OME 体验。
