@@ -130,11 +130,11 @@
               href: m365d-remediation-actions.md
             - name: 访问操作中心
               href: m365d-action-center.md
-            - name: 批准或拒绝挂起的修正操作
+            - name: 查看和管理修正操作
               href: m365d-autoir-actions.md
             - name: 查看自动调查的详细信息和结果
               href: m365d-autoir-results.md
-            - name: 报告误报/漏报
+            - name: 解决误报/负数
               href: m365d-autoir-report-false-positives-negatives.md
         - name: 高级搜寻
           items:
