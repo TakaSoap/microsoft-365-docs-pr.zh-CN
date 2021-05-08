@@ -13,7 +13,7 @@
       href: architecture-icons-templates.md
 - name: Microsoft 365 基础解决方案
   items:
-    - name: 使用 Microsoft 365 为远程工作者提供强大帮助
+    - name: 为远程工作设置基础结构。
       items:
         - name: 概述
           href: empower-people-to-work-remotely.md
