@@ -48,6 +48,8 @@
           href: service-description/support.md
         - name: 操作和监视
           href: service-description/operations-and-monitoring.md
+        - name: 诊断日志
+          href: service-description/diagnostic-logs.md
         - name: 应用程序要求
           href: service-description/mmd-app-requirements.md
         - name: 应用程序控制
