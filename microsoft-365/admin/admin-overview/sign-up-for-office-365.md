@@ -26,12 +26,12 @@ search.appverid:
 ROBOTS: NOINDEX
 description: 了解你需要了解哪些信息，然后再完成注册Office 365。
 ms.date: 03/17/2021
-ms.openlocfilehash: 37cbe20a5cc1a7506e8db218c3e9ffe2b4e64478
-ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
+ms.openlocfilehash: 77fe0252a267b13fda19a6842ce0e07b1b8307b1
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52107022"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52244004"
 ---
 # <a name="how-to-sign-up---admin-help"></a>如何注册 - 管理员帮助
 
@@ -136,4 +136,4 @@ ms.locfileid: "52107022"
 
 ## <a name="related-content"></a>相关内容
 
-[Microsoft 365培训视频 (](../../business-video/index.yml)链接) 
+[Microsoft 365企业培训视频 (](../../business-video/index.yml)链接页) 

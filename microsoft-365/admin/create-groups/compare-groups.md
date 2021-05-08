@@ -22,19 +22,19 @@ search.appverid:
 - MOE150
 ms.assetid: 758759ad-63ee-4ea9-90a3-39f941897b7d
 description: 了解可以使用的组类型。
-ms.openlocfilehash: 7b67fa5e7dc661163ce6c2c8933ebdafd0a5940d
-ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
+ms.openlocfilehash: 9f36688972f00a27a274b6a974d958d1d590aa93
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52023841"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52243980"
 ---
 # <a name="compare-groups"></a>比较组
 
 在 Microsoft 365 管理中心的 **组** 部分中，可创建和管理以下类型的组： 
 
 - **Microsoft 365 组** （之前称为 Office 365 组）用于公司内部和外部用户之间的协作。
-- **通讯组** 用于向一组人员发送通知。
+- **通讯组** 用于向一组人员发送电子邮件通知。
 - **安全组** 用于授予对资源（如 SharePoint 网站）的访问权限。
 - **启用邮件的安全组** 用于授予对资源（如 SharePoint）的访问权限，并向这些用户发送电子邮件通知。
 - 当多个用户需要访问同一邮箱（例如公司信息或支持电子邮件地址）时，将使用 **共享邮箱**。
@@ -59,13 +59,17 @@ Microsoft 365 组用于公司内部和外部用户之间的协作。 对于每�
 
 通讯组可[升级到 Microsoft 365 组](../manage/upgrade-distribution-lists.md)。
 
+通讯组可添加到 Microsoft Teams 中的团队中。
+
 ## <a name="security-groups"></a>安全组
 
 [安全组](../email/create-edit-or-delete-a-security-group.md) 用于授予对 Microsoft 365 资源（如 SharePoint）的访问权限。 它们可以简化管理，因为只需管理组，而不是单独将用户添加到每个资源。
 
-安全组可以包含用户或设备。 可将创建设备安全组用于移动设备管理服务（如 Intune）。
+安全组可以包含用户或设备。可将创建设备安全组用于移动设备管理服务（如 Intune）。
 
 可为[ Azure Active Directory 中的动态成员身份配置](/azure/active-directory/users-groups-roles/groups-change-type)安全组，以便根据部门、位置或职衔等用户属性自动添加或删除组成员或设备；或设备属性（如操作系统版本）。
+
+可以将安全组添加到团队中。
 
 ## <a name="mail-enabled-security-groups"></a>启用邮件的安全组
 
@@ -73,11 +77,15 @@ Microsoft 365 组用于公司内部和外部用户之间的协作。 对于每�
 
 它们包括向组中的所有成员发送邮件的功能。
 
+可以将启用邮件的安全组添加到团队中。
+
 ## <a name="shared-mailboxes"></a>共享邮箱
 
 当多个用户需要访问同一邮箱（例如公司信息或支持电子邮件地址、接待台或其他可能由多个用户共享的其他功能）时，将使用[共享邮箱](../email/create-a-shared-mailbox.md)。
 
 如果管理员已启用共享邮箱，则共享邮箱可以接收外部电子邮件。
+
+共享邮箱包括可用于协作的日历。
 
 如果管理员已授予用户执行该操作的权限，具有组邮箱权限的用户可以作为或代表邮箱电子邮件地址发送。 这对帮助和支持邮箱尤其有用，因为用户可从 "Contoso 支持" 或 "构建 A 接待台" 发送电子邮件。
 

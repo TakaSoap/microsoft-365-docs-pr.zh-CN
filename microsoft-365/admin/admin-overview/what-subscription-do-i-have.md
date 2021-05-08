@@ -21,66 +21,24 @@ search.appverid:
 - MET150
 ms.assetid: 092252f8-08df-4cdb-a8d2-b8653caa29a1
 description: 了解如何通过进入"你的产品"页面来验证你的组织拥有哪些订阅。
-ms.openlocfilehash: d1325a480e92ee0ed61a15b9e9b364bb339b32ce
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 38098eb01a9a1e7fa2ee46acf20cc03ed8f31f93
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49926146"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52243992"
 ---
 # <a name="what-subscription-do-i-have"></a>我有什么订阅？
 
-如果你是管理员，可以通过进入管理中心来验证你的组织拥有哪些订阅。
+如果你是管理员，可以进入管理中心验证你的组织拥有哪些订阅。
   
- **不是管理员？** 查看 [我拥有哪些 Microsoft 365 商业版产品或许可证？](https://support.microsoft.com/office/f8ab5e25-bf3f-4a47-b264-174b1ee925fd)
-
-::: moniker range="o365-worldwide"
+ **不是管理员？** 请参阅[Microsoft 365哪些适用于企业的产品或许可证？](https://support.microsoft.com/office/f8ab5e25-bf3f-4a47-b264-174b1ee925fd)
 
 1. 在管理中心中，转到“**计费**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">你的产品</a>”页面。
-2. 在 **"产品** "选项卡上，你将看到所有订阅。 每个订阅行包括有关许可证、订阅状态和计费的信息。
+2. 在 **"产品** "选项卡上，你将看到所有订阅。 每个订阅行包含有关许可证、订阅状态和计费的信息。
 3. 如果要更改列表中出现的列，请选择"**选择列"。** 更改列的选择，然后选择"保存 **"。**
 4. 若要查看单个订阅的更多详细信息，请选择该订阅。
 
-::: moniker-end
+## <a name="related-content"></a>相关内容
   
-::: moniker range="o365-germany"
-
-1. 在管理中心，转到"**计费** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">订阅"</a>页。  
-
-2. 如果只有一个订阅，它将显示在" **订阅**"页上，随之还有订阅名、订阅的相关信息及状态。 在下面的屏幕截图中，你可以看到我拥有 Microsoft 365 商业应用版订阅。
-
-    ![The Subscriptions page that shows which subscription you have as well as its status.](../../media/4d51dfcc-e9f3-4414-964a-6ef182f49eba.png)
-  
-3. 如果有多个订阅，将在详细的订阅信息旁边看到一个列，列出了已购买订阅及全部试用版订阅。默认情况下，位于列表顶部的订阅已自动选中，并显示该订阅的详细信息。
-
-    如果你有多个订阅，请选择想要查看详细信息的订阅。 订阅卡会随着该订阅信息的更新而更新。
-
-    ![管理中心的"订阅"页，显示按状态分组的多个订阅的列表。](../../media/548ab8e9-bf9c-46d1-8c7c-ef5b631f3faa.png)
-  
-    > [!NOTE]
-    > 如果你有已过期或禁用的订阅，它们将根据当前状态列出。
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-1. 在管理中心，转到"**计费** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">订阅"</a>页。  
-
-2. 如果只有一个订阅，它将显示在" **订阅**"页上，随之还有订阅名、订阅的相关信息及状态。 在下面的屏幕截图中，你可以看到我订阅了 Microsoft 365 商业应用版。
-
-    ![The Subscriptions page that shows which subscription you have as well as its status.](../../media/4d51dfcc-e9f3-4414-964a-6ef182f49eba.png)
-  
-3. 如果有多个订阅，将在详细的订阅信息旁边看到一个列，列出了已购买订阅及全部试用版订阅。默认情况下，位于列表顶部的订阅已自动选中，并显示该订阅的详细信息。
-
-    如果你有多个订阅，请选择想要查看详细信息的订阅。 订阅卡会随着该订阅信息的更新而更新。
-
-    ![管理中心的"订阅"页，显示按状态分组的多个订阅的列表。](../../media/548ab8e9-bf9c-46d1-8c7c-ef5b631f3faa.png)
-  
-    > [!NOTE]
-    > 如果你有已过期或禁用的订阅，它们将根据当前状态列出。
-
-::: moniker-end
-
-## <a name="related-articles"></a>相关文章
-  
-[订阅和计费](../../commerce/index.yml)
+[订阅和计费 (](../../commerce/index.yml) 链接) 
