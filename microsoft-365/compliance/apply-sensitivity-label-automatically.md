@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 创建敏感度标签时，你可以自动为文档或电子邮件分配标签，也可以提示用户选择你建议的标签。
-ms.openlocfilehash: 23320d962b52e1a443d459cb6b57d444fca91592
-ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
+ms.openlocfilehash: 477f176d523fbb458ae266cad98b07a63a10050c
+ms.sourcegitcommit: 5a1cb7d95070eef47d401a4693cc137a90550a5e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "51939306"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52259339"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>将敏感度标签自动应用于内容
 
@@ -67,8 +67,9 @@ ms.locfileid: "51939306"
     - 标签应用加密时，[权限管理颁发者和权限管理所有者](/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner)是最后修改文件的帐户。
 
     特定于 Exchange 的自动标记：
-    - 与 Office 应用的手动标记或自动标记不同，系统还会根据你在自动标记策略中指定的条件来扫描 Office 附件（Word、Excel 和 PowerPoint 文件）和 PDF 附件。如果存在匹配项，则会标记电子邮件，但不标记附件。
-        - 对于这些 Office 文件，支持 Open XML 格式（例如 .docx 和 .xlsx），但不支持 Microsoft Office 97-2003 格式（例如 .doc 和 .xls）。
+    - 与 Office 应用的手动标记或自动标记不同，系统还会根据你在自动标记策略中指定的条件来扫描 PDF 附件和 Office 附件（Word、Excel 和 PowerPoint 文件）。如果存在匹配项，则会标记电子邮件，但不标记附件。
+        - 对于 PDF 文件，如果标签应用加密，则当租户[启用 PDF 附件](ome-faq.yml#are-pdf-file-attachments-supported-)时，这些文件将被加密。
+        - 对于这些 Office 文件，支持 Open XML 格式（例如 .docx 和 .xlsx），但不支持 Microsoft Office 97-2003 格式（例如 .doc 和 .xls）。如果标签应用加密，则这些文件将被加密。
     - 如果你拥有已应用 IRM 加密的 Exchange 邮件流规则或数据丢失防护 (DLP) 策略：当内容由这些规则或策略和自动标记策略标识时，将应用该标签。 如果该标签已应用加密，则将忽略 Exchange 邮件流规则或 DLP 策略中的 IRM 设置。 但是，如果该标签未应用加密，则除了标签之外，还会应用邮件流规则或 DLP 策略中的 IRM 设置。
     - 如果存在匹配项，则具有 IRM 加密但没有标签的电子邮件将通过自动标记替换为具有加密设置的标签。
     - 与自动标记条件匹配时，将标记传入电子邮件：
@@ -166,7 +167,7 @@ Azure 信息保护统一标记客户端支持适用于 Windows 的 Office 应用
 
 ### <a name="recommend-that-the-user-applies-a-sensitivity-label"></a>建议用户应用敏感度标签
 
-如果愿意，可建议你的用户应用此标签。 通过此选项，你的用户可接受分类及任何相关保护，也可在标签不适合其内容时关闭建议。
+如果愿意，可建议你的用户应用此标签。通过此选项，你的用户可接受分类及任何相关保护，也可在标签不适合其内容时关闭建议。
 
 ![用于向用户建议敏感度标签的选项](../media/Sensitivity-labels-Recommended-label-option.png)
 

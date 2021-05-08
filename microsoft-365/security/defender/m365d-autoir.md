@@ -21,12 +21,12 @@ ms.topic: conceptual
 ms.custom: autoir
 ms.reviewer: evaldm, isco
 ms.technology: m365d
-ms.openlocfilehash: 976a79be98efcbb5d7fd3749ddb0cdb282b1e3e3
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: fcb7283faed6fe8c5af59cedeeb90577b557ab34
+ms.sourcegitcommit: 5a1cb7d95070eef47d401a4693cc137a90550a5e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52274564"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52259531"
 ---
 # <a name="automated-investigation-and-response-in-microsoft-365-defender"></a>Microsoft 365 Defender 中的自动调查和响应
 
@@ -35,7 +35,7 @@ ms.locfileid: "52274564"
 **适用于：**
 - Microsoft 365 Defender
 
-如果你的组织使用[Microsoft 365 Defender，](microsoft-365-defender.md)则每当检测到恶意或可疑活动或项目Microsoft 365安全中心内收到警报。 鉴于可能进入的威胁流看起来从未结束，安全团队经常面临解决大量警报的挑战。 幸运的是，Microsoft 365 Defender 包括自动调查和响应 (AIR) 功能，可帮助你的安全运营团队更有效地应对威胁。
+如果你的组织使用[Microsoft 365 Defender，](microsoft-365-defender.md)则每当检测到恶意或可疑活动或项目Microsoft 365安全中心内收到警报。 鉴于可能进入的威胁流看起来从未结束，安全团队经常面临解决大量警报的挑战。 幸运的是，Microsoft 365 Defender 包括自动调查和修正 (AIR) 功能，可帮助你的安全运营团队更高效地应对威胁。
 
 本文概述了 AIR，并包含指向下一步步骤和其他资源的链接。
 
@@ -59,7 +59,7 @@ ms.locfileid: "52274564"
 
 Imagine级别 1 或第 2 层安全运营团队中具有虚拟分析师。 虚拟分析师模仿安全运营团队调查和修正威胁所采取的理想步骤。 虚拟分析师可以 24x7 工作，且容量不受限制，并承担大量的调查和威胁修正工作。 此类虚拟分析师可以显著减少响应时间，释放安全运营团队用于其他重要威胁或战略项目。 如果此方案看起来像科学虚构，则不是！ 此类虚拟分析师是你的 Microsoft 365 Defender 套件的一部分，其名称是 *自动调查和响应*。
 
-自动调查和响应功能使安全运营团队可以大大增加组织处理安全警报和事件的能力。 通过自动调查和响应，你可以降低调查和响应活动处理的成本，并能够最利用威胁防护套件。 自动调查和响应功能可有助于安全运营团队：
+自动调查和响应功能使安全运营团队可以大大增加组织处理安全警报和事件的能力。 通过自动调查和响应，你可以降低调查和修正活动处理的成本，并能够最利用威胁防护套件。 自动调查和响应功能可有助于安全运营团队：
 
 1. 确定威胁是否需要操作。
 2. 采取 (或建议) 必要的修正操作。

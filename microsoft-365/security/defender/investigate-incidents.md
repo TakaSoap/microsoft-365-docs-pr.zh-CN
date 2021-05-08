@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 22d3bba03745cee330f89b67061e6c6b13e78aed
-ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
+ms.openlocfilehash: 72e1efb8a06fb7fa64b83ab6522fe4cdcfd1a73e
+ms.sourcegitcommit: 5a1cb7d95070eef47d401a4693cc137a90550a5e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "51939738"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52259628"
 ---
 # <a name="analyze-incidents-in-microsoft-365-defender"></a>分析 Microsoft 365 Defender 中的事件
 
@@ -37,7 +37,7 @@ ms.locfileid: "51939738"
 
 - Microsoft 365 Defender
 
-Microsoft 365 Defender 将来自你的设备、用户和邮箱的所有用户的相关警报、资产、调查和证据聚合到事件中，让你全面了解整个攻击范围。
+Microsoft 365Defender 将来自你的设备、用户和邮箱的所有其他相关警报、资产、调查和证据聚合到事件中，让你全面了解整个攻击范围。
 
 在事件内，分析影响网络的警报，了解它们的含义，并整理证据，以便制定有效的修正计划。
 
@@ -61,9 +61,9 @@ Microsoft 365 Defender 将来自你的设备、用户和邮箱的所有用户的
 
 通过 **"摘要** "页面，您可以快速查看有关事件的顶部注意事项。
 
-:::image type="content" source="../../media/incidents-overview/incidents-ss-incident-summary.png" alt-text="Microsoft 365 安全中心内事件的&quot;摘要&quot;页面示例":::
+:::image type="content" source="../../media/incidents-overview/incidents-ss-incident-summary.png" alt-text="安全中心内事件的&quot;摘要&quot;Microsoft 365示例":::
 
-攻击类别可直观和数字地了解攻击对击杀链的进度。 与其他 Microsoft 安全产品一样，Microsoft 365 Defender 与[MITRE ATT&&trade; CK](https://attack.mitre.org/)框架一致。
+攻击类别可直观和数字地了解攻击对击杀链的进度。 与其他 Microsoft 安全产品一样，Microsoft 365 Defender 与[MITRE ATT &trade; ](https://attack.mitre.org/)&CK 框架保持一致。
 
 “范围” 部分提供了属于此事件的最受影响的资产列表。 如果存在有关此资产的具体信息（例如风险级别、调查优先级以及资产上的任何标记），也将在本节中显示。
 
@@ -79,7 +79,7 @@ Microsoft 365 Defender 将来自你的设备、用户和邮箱的所有用户的
 
 - 严重性。
 - 警报中涉及的实体。
-- Microsoft Defender for Identity、Microsoft Defender for Endpoint、Microsoft Defender for Office 365 (警报的来源) 。
+- Microsoft Defender for Identity、Microsoft Defender for Endpoint (Microsoft Defender for Office 365) 警报的来源。
 - 链接在一起的原因。
 
 下面是一个示例。
@@ -103,7 +103,7 @@ Microsoft 365 Defender 将来自你的设备、用户和邮箱的所有用户的
 从设备页面，你可以收集有关设备的其他信息，例如其所有警报、时间线和安全建议。 例如，从"时间线"选项卡中，你可以滚动浏览计算机时间线，并按时间顺序查看计算机上观测到的所有事件和行为，与所发出警报的交错。
 
 > [!TIP]
-> 可以在设备页面上执行按需扫描。 In the Microsoft 365 security center， choose **Endpoints > Device inventory**. 选择具有警报的设备，然后运行防病毒扫描。 防病毒扫描等操作会进行跟踪，并且显示在"设备清单 **"页上。** 若要了解更多信息，请参阅 [在设备上运行 Microsoft Defender 防病毒扫描](/microsoft-365/security/defender-endpoint/respond-machine-alerts#run-microsoft-defender-antivirus-scan-on-devices)。
+> 可以在设备页面上执行按需扫描。 In the Microsoft 365 security center， choose **Endpoints > Device inventory**. 选择具有警报的设备，然后运行防病毒扫描。 防病毒扫描等操作会进行跟踪，并且显示在"设备清单 **"页上。** 若要了解更多信息，请参阅在[Microsoft Defender 防病毒运行扫描](/microsoft-365/security/defender-endpoint/respond-machine-alerts#run-microsoft-defender-antivirus-scan-on-devices)。
 
 ## <a name="users"></a>用户
 
@@ -119,7 +119,7 @@ Microsoft 365 Defender 将来自你的设备、用户和邮箱的所有用户的
 
 :::image type="content" source="../../media/investigate-incidents/incident-mailboxes.png" alt-text="事件的&quot;邮箱&quot;页面示例":::
 
-您可以选择邮箱的选中标记以查看活动警报列表。 选择邮箱名称以查看适用于 Office 365 的 Microsoft Defender 的资源管理器页面上的其他邮箱详细信息。
+您可以选择邮箱的选中标记以查看活动警报列表。 选择邮箱名称以查看 Microsoft Defender for Office 365 资源管理器页面上的其他邮箱Office 365。
 
 ## <a name="investigations"></a>调查
 
@@ -135,9 +135,26 @@ Microsoft 365 Defender 将来自你的设备、用户和邮箱的所有用户的
 
 :::image type="content" source="../../media/investigate-incidents/incident-evidence.png" alt-text="事件的证据和响应页面示例":::
 
-Microsoft 365 Defender 自动调查警报中所有事件支持的事件和可疑实体，并提供有关重要电子邮件、文件、流程、服务、IP 地址等的信息。 这可以帮助您快速检测和阻止事件中的潜在威胁。
+Microsoft 365Defender 自动调查警报中所有事件支持的事件和可疑实体，提供有关重要电子邮件、文件、进程、服务、IP 地址等的信息。 这可以帮助您快速检测和阻止事件中的潜在威胁。
 
 每个被分析的实体都标记为"恶意 (可疑、) 清理"和修正状态。 这可以帮助您了解整个事件的修正状态以及可以采取哪些下一步操作。
+
+## <a name="graph-in-preview"></a>Graph (预览版) 
+
+使用预览 **Graph** 新 (选项卡) ，可以看到：
+
+- 警报与组织中受影响资产的连接。
+- 哪些实体与哪些警报相关，以及它们如何成为攻击的一部分。
+- 事件的警报。
+
+下面是一个示例。
+
+:::image type="content" source="../../media/investigate-incidents/incident-graph.png" alt-text="事件Graph页面示例":::
+
+事件图通过将属于攻击的不同可疑实体连接到其相关资产（如用户、设备和邮箱）来帮助您快速了解攻击的完整范围。 
+
+现在，你可以了解攻击在一段时间是如何通过网络的、开始位置以及攻击发生的时间。
+
 
 ## <a name="related-topics"></a>相关主题
 

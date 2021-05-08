@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: f48b6e8b43f65a6ee919095ea299bd80c81e01c9
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: aad0f00292a1a1182fc4b731e562b2e4c78d97f8
+ms.sourcegitcommit: 5a1cb7d95070eef47d401a4693cc137a90550a5e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51687248"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52259507"
 ---
 # <a name="get-started-with-insider-risk-management-settings"></a>内部风险管理设置入门
 
@@ -83,7 +83,7 @@ ms.locfileid: "51687248"
 确保计划在内部Windows 10中报告的设备满足这些要求。
 
 1. 必须运行 Windows 10 x64 版本 1809 或更高版本，并且必须已安装从 2020 年 2 月 20 日起的 Windows 10 更新 (OS 内部版本[17763.1075) 。](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818)
-2. 所有设备必须[已加入 Azure Active Directory (AAD)](/azure/active-directory/devices/concept-azure-ad-join) 或已加入混合 Azure AD。
+2. 用于登录到 Windows 10 设备的用户帐户必须是 AAD Azure Active Directory (活动) 帐户。 设备Windows 10 [AAD、](/azure/active-directory/devices/concept-azure-ad-join)混合 AAD、已加入 Active Directory 或已注册 AAD。
 3. 在Chromium设备上安装 Microsoft Chromium Edge 浏览器，以监视云上传活动的操作。 请参见[下载基于 Chromium 的新 Microsoft Edge](https://support.microsoft.com/help/4501095/download-the-new-microsoft-edge-based-on-chromium)。
 
 #### <a name="step-2-onboarding-devices"></a>步骤 2：载入设备
@@ -237,7 +237,7 @@ ms.locfileid: "51687248"
 
 针对安全与合规警报架构的内部风险管理警报导出&和值：
 
-| **Alert 参数** | **说明** |
+| **Alert 参数** | **描述** |
 |:------------------|:----------------|
 | AlertType | 警报的类型为 *"自定义"。*  |
 | AlertId | 警报的 GUID。 内部风险管理警报是可变的。 当警报状态更改时，将生成一个同一 AlertID 的新日志。 此 AlertID 可用于关联警报的更新。 |
@@ -425,7 +425,7 @@ ms.locfileid: "51687248"
 
 完成以下步骤以共享Power Automate流：
 
-1. 在 ["Microsoft 365合规](htttps://compliance.microsoft.com)中心"中，转到"**内部** 风险管理"，然后选择"内部 **风险** 设置Power Automate  >  **流"。** 您还可以从事例或用户仪表板页面访问，方法 **为选择自动** 管理Power Automate  >  **流**。
+1. 在 ["Microsoft 365合规](https://compliance.microsoft.com)中心"中，转到"**内部** 风险管理"，然后选择"内部 **风险** 设置Power Automate  >  **流"。** 您还可以从事例或用户仪表板页面访问，方法 **为选择自动** 管理Power Automate  >  **流**。
 2. 在 **"Power Automate流**"页上，选择"**我的** 流"或"**团队流"** 选项卡。
 3. 选择要共享的流 **，然后从** "流选项"菜单中选择"共享"。
 4. 在"流共享"页上，输入要添加为流所有者的用户或组的名称。
@@ -439,7 +439,7 @@ ms.locfileid: "51687248"
 
 完成以下步骤以编辑Power Automate流：
 
-1. 在 ["Microsoft 365合规](htttps://compliance.microsoft.com)中心"中，转到"**内部** 风险管理"，然后选择"内部 **风险** 设置Power Automate  >  **流"。** 您还可以从事例或用户仪表板页面访问，方法 **为选择自动** 管理Power Automate  >  **流**。
+1. 在 ["Microsoft 365合规](https://compliance.microsoft.com)中心"中，转到"**内部** 风险管理"，然后选择"内部 **风险** 设置Power Automate  >  **流"。** 您还可以从事例或用户仪表板页面访问，方法 **为选择自动** 管理Power Automate  >  **流**。
 2. 在 **"Power Automate** 流"页上，选择要编辑的流，然后从"流控制"菜单中选择"编辑"。
 3. 选择省略 **号设置** 更改流组件设置或省略号"删除"  >    >  以删除流组件。
 4. 选择 **"保存****"，** 然后选择"关闭"以完成流的编辑。
@@ -452,7 +452,7 @@ ms.locfileid: "51687248"
 
 完成以下步骤以删除Power Automate流：
 
-1. 在 ["Microsoft 365合规](htttps://compliance.microsoft.com)中心"中，转到"**内部** 风险管理"，然后选择"内部 **风险** 设置Power Automate  >  **流"。** 您还可以从事例或用户仪表板页面访问，方法 **为选择自动** 管理Power Automate  >  **流**。
+1. 在 ["Microsoft 365合规](https://compliance.microsoft.com)中心"中，转到"**内部** 风险管理"，然后选择"内部 **风险** 设置Power Automate  >  **流"。** 您还可以从事例或用户仪表板页面访问，方法 **为选择自动** 管理Power Automate  >  **流**。
 2. 在 **"Power Automate** 流"页上，选择要删除的流，然后从"流控制 **"菜单中选择**"删除"。
 3. 在删除确认对话框中，选择 **"删除** "以删除流，或选择" **取消** "退出删除操作。
 
@@ -470,7 +470,7 @@ ms.locfileid: "51687248"
 
 启用Microsoft Teams案例支持快速且易于配置。 若要启用Microsoft Teams内部风险管理，请完成以下步骤：
 
-1. 在 ["Microsoft 365合规中心](htttps://compliance.microsoft.com)"中，转到 **"内部风险管理**  >  **""内部风险设置"。**
+1. 在 ["Microsoft 365合规中心](https://compliance.microsoft.com)"中，转到 **"内部风险管理**  >  **""内部风险设置"。**
 2. 选择 **"Microsoft Teams"** 选项卡。
 3. 启用Microsoft Teams风险管理的集成。
 4. 选择 **"保存** "以配置并退出。
@@ -485,7 +485,7 @@ ms.locfileid: "51687248"
 
 若要为案例创建团队，你将在直接处理现有案例时使用"创建 Microsoft 团队"控件。 完成以下步骤以创建新团队：
 
-1. 在 ["Microsoft 365合规中心](htttps://compliance.microsoft.com)"中，转到 **"内部风险管理** 案例"  >  并选择现有案例。
+1. 在 ["Microsoft 365合规中心](https://compliance.microsoft.com)"中，转到 **"内部风险管理** 案例"  >  并选择现有案例。
 2. 在"案例操作"菜单上，选择"**创建 Microsoft 团队"。**
 3. 在"**团队名称**"字段中，输入新团队Microsoft Teams名称。
 4. 选择 **"创建 Microsoft 团队"，** 然后选择"关闭 **"。**
@@ -516,7 +516,7 @@ ms.locfileid: "51687248"
 若要启用内部风险分析，你必须是内部风险管理、内部风险管理管理员或全局Microsoft 365组的成员。
 完成以下步骤以启用内部风险分析：
 
-1. In the [Microsoft 365 compliance center，](htttps://compliance.microsoft.com)go to **Insider risk management**.
+1. In the [Microsoft 365 compliance center，](https://compliance.microsoft.com)go to **Insider risk management**.
 2. 在 **"内部** 风险管理概述"选项卡上的"扫描 **组织卡中的** 内部风险"中选择" **运行扫描** "。这将为组织启用分析扫描。 还可以导航到"内部风险设置""分析"，并启用"扫描租户的用户活动"以识别潜在内部风险，从而在组织中  >  **启用扫描**。
 3. 在" **分析详细信息"** 窗格中，选择" **运行扫描** "开始组织的扫描。 分析扫描结果最多可能需要 24 小时，才能将见解作为报告提供进行审阅。
 
@@ -546,6 +546,6 @@ ms.locfileid: "51687248"
 
 完成以下步骤以关闭内部风险分析：
 
-1. In the [Microsoft 365 compliance center，](htttps://compliance.microsoft.com)go to **Insider risk management**.
+1. In the [Microsoft 365 compliance center，](https://compliance.microsoft.com)go to **Insider risk management**.
 2. 选择 **"内部风险设置**  >  **""分析"** 页面。
 3. 在 **"分析"** 页上，关闭" **扫描租户的用户活动"，以确定潜在的内部风险**。

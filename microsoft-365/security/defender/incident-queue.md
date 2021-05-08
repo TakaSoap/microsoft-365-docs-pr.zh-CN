@@ -1,6 +1,6 @@
 ---
-title: 确定 Microsoft 365 Defender 中事件的优先级
-description: 了解如何在 Microsoft 365 Defender 中筛选事件队列中的事件
+title: 确定 defender 中事件的Microsoft 365优先级
+description: 了解如何在 Defender 中筛选事件队列中Microsoft 365事件
 keywords: 事件， 队列， 概述， 设备， 标识， 用户， 邮箱， 电子邮件， 事件， 分析， 响应
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -22,29 +22,31 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: c3efff1e7ebb3a5e868ede018512d12cf38e38fc
-ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
+ms.openlocfilehash: 47d066fa20abe963f7afaa3b88cecc96fa6e87fc
+ms.sourcegitcommit: 5a1cb7d95070eef47d401a4693cc137a90550a5e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "51939702"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52259579"
 ---
-# <a name="prioritize-incidents-in-microsoft-365-defender"></a>确定 Microsoft 365 Defender 中事件的优先级
+# <a name="prioritize-incidents-in-microsoft-365-defender"></a>确定 defender 中事件的Microsoft 365优先级
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 **适用于：**
 - Microsoft 365 Defender
 
-Microsoft 365 Defender 应用相关分析，将来自不同产品的相关警报和自动调查聚合到事件中。 在 Microsoft 365 Defender 在整个产品套件中具有端到端可见性时，Microsoft 365 Defender 还会触发有关仅可标识为恶意活动的唯一警报。 此视图为安全分析师提供了更广泛的攻击案例，帮助他们更好地了解并处理整个组织的复杂威胁。
+Microsoft 365Defender 应用相关分析，将来自不同产品的相关警报和自动调查聚合到事件中。 Microsoft 365在 Defender 在整个产品套件中具有的端到端可见性Microsoft 365，Defender 还会触发有关仅可标识为恶意活动的唯一警报。 此视图为安全分析师提供了更广泛的攻击案例，帮助他们更好地了解并处理整个组织的复杂威胁。
 
 **事件队列** 显示跨设备、用户和邮箱创建的事件集合。 它可以帮助你对事件进行排序，从而确定优先级并制定明智的网络安全响应决策。 
 
-在快速启动 Microsoft 365 安全中心 & 事件>事件和事件，你可以进入事件队列 (security.microsoft.com) 。 [](https://security.microsoft.com)
+在快速启动 Microsoft 365 **>** 安全中心&事件 (security.microsoft.com) ，你可以进入 [事件队列。](https://security.microsoft.com) 下面是一个示例。
 
 :::image type="content" source="../../media/incidents-queue/incidents-ss-incidents.png" alt-text="事件队列示例":::
 
-默认情况下，Microsoft 365 安全中心内的事件队列显示过去六个月看到的事件。 最近的事件位于列表顶部，以便你可以先看到它。
+" **最近的事件和警报** "部分显示过去 24 小时内收到的警报数和创建的事件数的图。
+
+默认情况下，安全中心内的事件Microsoft 365显示过去六个月看到的事件。 最近的事件位于列表顶部，以便你可以先看到它。
 
 事件队列具有可自定义 (选择"选择) 列"，可让你查看事件或受影响实体的不同特征。 这可以帮助您就事件的优先顺序做出明智的决策进行分析。
 
@@ -77,7 +79,7 @@ Microsoft 365 Defender 应用相关分析，将来自不同产品的相关警报
 | 多个服务源  | 筛选以仅查看包含来自不同来源的警报的事件 (Microsoft Defender for Endpoint、Microsoft Cloud App Security、Microsoft Defender for Identity、Microsoft Defender for Office 365) 。 |
 | 操作系统平台 | 按操作系统限制事件队列视图。 |
 | 服务源 | 通过选择特定来源，可以集中精力处理包含至少一个来自该选定来源的警报的事件。 |
-| Severity | 事件的严重性表明它可以对资产产生的影响。 严重性越高，影响越大，通常需要最直接的关注。 |
+| 严重性 | 事件的严重性表明它可以对资产产生的影响。 严重性越高，影响越大，通常需要最直接的关注。 |
 | 状态 | 可以根据事件的状态选择限制所显示事件的列表，以查看哪些事件处于活动状态/已解决状态。 |
 |||
 

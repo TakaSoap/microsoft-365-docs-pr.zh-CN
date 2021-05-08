@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 0374c1a44a4d942ea631d97f51fa48df15d3ec13
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: c13138f3d80a95dbda3a899507f662c081831d94
+ms.sourcegitcommit: 5a1cb7d95070eef47d401a4693cc137a90550a5e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51929081"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52259675"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-linux-manually"></a>在 Linux 上手动部署 Microsoft Defender for Endpoint
 
@@ -166,10 +166,10 @@ Linux 上的 Defender for Endpoint 可以从以下频道之一进行部署 (下�
     sudo mv ./microsoft.list /etc/apt/sources.list.d/microsoft-[channel].list
     ```
     例如，如果选择 *"专业频道* "：
-    
+
     ```bash
     sudo mv ./microsoft.list /etc/apt/sources.list.d/microsoft-prod.list
-    ```   
+    ```
 
 - 安装 `gpg` 程序包（如果尚未安装）：
 
@@ -266,9 +266,9 @@ Linux 上的 Defender for Endpoint 可以从以下频道之一进行部署 (下�
 
 ## <a name="download-the-onboarding-package"></a>下载载入程序包
 
-从 Microsoft Defender 安全中心下载载入程序包：
+从以下网站下载载入Microsoft Defender 安全中心：
 
-1. 在 Microsoft Defender 安全中心中，转到"设备>**设置>载入"。**
+1. In Microsoft Defender 安全中心， go to **设置 > Device Management > Onboarding**.
 2. 在"第一个"下拉菜单中，选择 **"Linux Server"** 作为操作系统。 In the second drop-down menu， select **Local Script (for up to 10 devices)** as the deployment method.
 3. 选择 **下载载入程序包**。 将文件另存为WindowsDefenderATPOnboardingPackage.zip。
 
@@ -341,7 +341,7 @@ Linux 上的 Defender for Endpoint 可以从以下频道之一进行部署 (下�
     - 打开"终端"窗口。 复制并执行以下命令：
 
         ``` bash
-        curl -o ~/Downloads/eicar.com.txt https://www.eicar.org/download/eicar.com.txt
+        curl -o /tmp/eicar.com.txt https://www.eicar.org/download/eicar.com.txt
         ```
 
     - 该文件应该已由 Linux 上的 Defender for Endpoint 隔离。 使用以下命令列出所有检测到的威胁：
@@ -352,7 +352,7 @@ Linux 上的 Defender for Endpoint 可以从以下频道之一进行部署 (下�
 
 ## <a name="installer-script"></a>安装程序脚本
 
-或者，您可以使用我们的公共[GitHub](https://github.com/microsoft/mdatp-xplat/)存储库中提供的自动安装程序[Bash](https://github.com/microsoft/mdatp-xplat/blob/master/linux/installation/mde_installer.sh)脚本。
+或者，您可以使用公共数据库存储库中提供的自动安装程序[bash](https://github.com/microsoft/mdatp-xplat/blob/master/linux/installation/mde_installer.sh) [GitHub脚本](https://github.com/microsoft/mdatp-xplat/)。
 该脚本标识分发和版本，并设置设备以拉取最新的程序包并安装它。
 您还可以使用提供的脚本载入。
 

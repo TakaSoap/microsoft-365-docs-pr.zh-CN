@@ -1,6 +1,6 @@
 ---
-title: 在 defender 的 AIR 中处理误报Microsoft 365漏报
-description: DEFENDER 中的 AIR 是否遗漏或Microsoft 365错误？ 了解如何将误报或漏报提交给 Microsoft 进行分析。
+title: 在 Microsoft 365 Defender 中解决误报或漏报问题
+description: Microsoft 365 Defender 中的 AIR 是否遗漏或检测错误？ 了解如何将误报或漏报提交给 Microsoft 进行分析。
 keywords: 自动化， 调查， 警报， 修正， 误报， 漏报
 search.appverid: met150
 ms.prod: m365-security
@@ -21,25 +21,25 @@ ms.topic: how-to
 ms.custom: autoir
 ms.reviewer: evaldm, isco
 ms.technology: m365d
-ms.openlocfilehash: 727ca529dc1a16af778e01a08c9adcfe42b9b974
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 3cffa97d26b2b28de8d9e45d7030e0931a7ba072
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245464"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52269572"
 ---
-# <a name="handle-false-positivesnegatives-in-automated-investigation-and-response-capabilities"></a>处理自动调查和响应功能中的误报/负面影响
+# <a name="address-false-positives-or-false-negatives-in-microsoft-365-defender"></a>在 Microsoft 365 Defender 中解决误报或漏报问题
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 **适用于：**
 - Microsoft 365 Defender
 
-任何威胁防护解决方案偶尔会出现误报/负面影响。 如果[Defender 中的](m365d-autoir.md)自动调查和响应功能Microsoft 365或错误检测到某些内容，则安全操作团队可以采取以下步骤：
+任何威胁防护解决方案偶尔会出现误报或负面影响。 如果 Microsoft 365 Defender [中的](m365d-autoir.md) 自动调查和响应功能遗漏或检测错误，安全操作团队可以采取以下步骤：
 
-- [向 Microsoft 报告误报/负数](#report-a-false-positivenegative-to-microsoft-for-analysis);
-- [根据需要调整警报](#adjust-an-alert-to-prevent-false-positives-from-recurring) (调整) ;和 
-- [撤消对设备采取的修正操作](#undo-a-remediation-action-that-was-taken-on-a-device)。 
+- [向 Microsoft 报告误报/负数](#report-a-false-positivenegative-to-microsoft-for-analysis)
+- [根据需要调整](#adjust-an-alert-to-prevent-false-positives-from-recurring) (通知) 
+- [撤消对设备采取的修正操作](#undo-a-remediation-action-that-was-taken-on-a-device)
 
 以下各节介绍如何执行这些任务。
 
@@ -47,14 +47,14 @@ ms.locfileid: "52245464"
 
 |未接或检测错误的项目 |服务  |需执行的操作  |
 |---------|---------|---------|
-|- 电子邮件 <br/>- 电子邮件附件 <br/>- 电子邮件中的 URL<br/>- 文件Office URL      |[Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/defender-for-office-365)        |[将可疑的垃圾邮件、网络钓鱼、URL 和文件提交给 Microsoft 进行扫描](../office-365-security/admin-submission.md)         |
+|- 电子邮件 <br/>- 电子邮件附件 <br/>- 电子邮件中的 URL<br/>- Office 文件的 URL      |[Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/defender-for-office-365)        |[将可疑的垃圾邮件、网络钓鱼、URL 和文件提交给 Microsoft 进行扫描](../office-365-security/admin-submission.md)         |
 |设备上的文件或应用    |[Microsoft Defender for Endpoint](/windows/security/threat-protection)         |[将文件提交给 Microsoft 进行恶意软件分析](https://www.microsoft.com/wdsi/filesubmission)         |
 
 ## <a name="adjust-an-alert-to-prevent-false-positives-from-recurring"></a>调整警报以防止误报重复发生
 
 |应用场景 |服务 |需执行的操作 |
 |--------|--------|--------|
-|- 通过合法使用触发警报 <br/>- 警报不准确    |[Microsoft Cloud App Security](/cloud-app-security)<br/> 或 <br/>[Azure 高级威胁检测](/azure/security/fundamentals/threat-detection)         |[管理 云应用安全 门户中的警报](/cloud-app-security/managing-alerts)         |
+|- 通过合法使用触发警报 <br/>- 警报不准确    |[Microsoft 云应用安全性](/cloud-app-security)<br/> 或 <br/>[Azure 威胁防护](/azure/security/fundamentals/threat-detection)         |[在云应用安全门户中管理警报](/cloud-app-security/managing-alerts)         |
 |文件、IP 地址、URL 或域在设备上被视为恶意软件，即使安全|[Microsoft Defender for Endpoint](/windows/security/threat-protection) |[使用"允许"操作创建自定义指示器](/windows/security/threat-protection/microsoft-defender-atp/manage-indicators) |
 
 ## <a name="undo-a-remediation-action-that-was-taken-on-a-device"></a>撤消在设备上采取的修正操作
@@ -72,5 +72,5 @@ ms.locfileid: "52245464"
 ## <a name="see-also"></a>另请参阅
 
 - [查看自动调查的详细信息和结果](m365d-autoir-results.md)
-- [在 defender 中通过高级搜寻主动Microsoft 365威胁](advanced-hunting-overview.md)
+- [在 Microsoft 365 Defender 中通过高级搜寻主动搜寻威胁](advanced-hunting-overview.md)
 - [解决 Microsoft Defender for Endpoint 中的误报/漏报](/windows/security/threat-protection/microsoft-defender-atp/defender-endpoint-false-positives-negatives)

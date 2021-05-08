@@ -1,6 +1,6 @@
 ---
 title: 在 Microsoft Defender for Endpoint 中创建和管理设备组
-description: 通过合并适用于该组的规则，创建设备组并设置设备的自动修正级别
+description: 通过确认适用于该组的规则，创建设备组并设置其自动修正级别
 keywords: 设备组， 组， 修正， 级别， 规则， aad 组， 角色， 分配， 排名
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: acd24e5c87a74bbb32835ec170a121c5c0b6bb33
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: 4fc2768392e818f74600e3c2d749b6e95bf957e4
+ms.sourcegitcommit: 5a1cb7d95070eef47d401a4693cc137a90550a5e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51860299"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52259411"
 ---
 # <a name="create-and-manage-device-groups"></a>创建和管理设备组
 
@@ -41,7 +41,7 @@ ms.locfileid: "51860299"
 - 将相关警报和数据的访问权限限制为具有已分配[RBAC](rbac.md)角色的特定 Azure AD 用户组 
 - 为不同的设备集配置不同的自动修正设置
 - 分配特定修正级别以在自动调查期间应用
-- 在调查中，使用组筛选器 **将"设备** "列表筛选为仅特定 **设备** 组。
+- 在调查中，使用组筛选器 **将"设备** "列表筛选到特定 **设备** 组。
 
 可以在基于角色的访问 (RBAC) 上下文中创建设备组，以控制哪些人可以通过将设备组 () 分配给用户组来控制哪些人可以采取特定操作或查看信息。 有关详细信息，请参阅使用基于角色 [的访问控制管理门户访问](rbac.md)。
 
@@ -59,7 +59,7 @@ ms.locfileid: "51860299"
 
 ## <a name="create-a-device-group"></a>创建设备组
 
-1. 在导航窗格中，选择"设置  >  **设备组"。**
+1. 在导航窗格中，选择 **"设置**  >  **设备组"。**
 
 2. 单击 **"添加设备组"。**
 
@@ -81,18 +81,34 @@ ms.locfileid: "51860299"
 
 你可以升级或降级设备组的排名，以便它在匹配期间获得更高或更低的优先级。 当设备与多个组匹配时，它只会添加到排名最高的组中。 还可以编辑和删除组。
 
+
+
 >[!WARNING]
 >删除设备组可能会影响电子邮件通知规则。 如果根据电子邮件通知规则配置了设备组，将从该规则中删除该组。 如果设备组是配置了电子邮件通知的唯一组，该电子邮件通知规则将随设备组一起删除。
 
 默认情况下，具有门户访问权限的所有用户均可访问设备组。 可以通过将 Azure AD 用户组分配给设备组来更改默认行为。
 
-不匹配任何组的设备将添加到未分组设备 (默认) 组中。 无法更改或删除此组的排名。 但是，你可以更改此组的修正级别，并定义可以访问该组的 Azure AD 用户组。
+不匹配任何组的设备将添加到未分组的设备 (默认) 组中。 无法更改或删除此组的排名。 但是，你可以更改此组的修正级别，并定义可以访问该组的 Azure AD 用户组。
 
 >[!NOTE]
 > 将更改应用于设备组配置可能需要几分钟。
+
+
+### <a name="add-device-group-definitions"></a>添加设备组定义
+设备组定义还可以包含每个条件的多个值。 你可以将多个标记、设备名称和域设置为单个设备组的定义。
+
+1. 创建新的设备组，然后选择" **设备"** 选项卡。
+2. 为其中一个条件添加第一个值。
+3. 选择 `+` 以添加更多相同属性类型的行。
+
+>[!TIP]
+> 在同一条件类型的行之间使用"OR"运算符，这允许每个属性具有多个值。
+> 您最多可以添加 10 行 (每个) 类型的值 - 标记、设备名称、域。
+
+有关链接到设备组定义的信息，请参阅设备[组 -](https://sip.security.microsoft.com/homepage)Microsoft 365安全。
 
 ## <a name="related-topics"></a>相关主题
 
 - [使用基于角色的访问控制管理门户访问](rbac.md)
 - [创建和管理设备标签](machine-tags.md)
-- [使用 Graph API 获取租户设备组列表](https://docs.microsoft.com/graph/api/device-list-memberof)
+- [使用租户 API 获取租户设备Graph列表](https://docs.microsoft.com/graph/api/device-list-memberof)

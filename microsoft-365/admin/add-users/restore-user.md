@@ -23,12 +23,12 @@ search.appverid:
 - GEA150
 ms.assetid: 2c261e42-5dd1-48b0-845f-2a016d29cfc1
 description: 了解如何还原已删除的用户帐户以及所有关联的数据。
-ms.openlocfilehash: 4893f7468a8ab5919dd3be1cce233917323f2076
-ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
+ms.openlocfilehash: 9cdc4100f963ed450b50caa0f07a3863bc87992d
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52023961"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52244028"
 ---
 # <a name="restore-a-user"></a>还原用户
    
@@ -42,30 +42,12 @@ ms.locfileid: "52023961"
     
 ## <a name="restore-one-or-more-user-accounts"></a>还原一个或多个用户帐户
 
-你必须是 Microsoft 365 全局管理员或用户管理管理员才能执行这些步骤。 
-  
- 
-::: moniker range="o365-worldwide"
+你必须是全局Microsoft 365管理员或用户管理管理员才能执行这些步骤。 
 
 1. 在管理中心，转到 **"用户** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2071581" target="_blank">""已删除用户"</a> 页面。
 
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. 转到管理 [中心，](https://go.microsoft.com/fwlink/p/?linkid=848041)然后选择 **"用户** \> **""已删除用户"。**
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-1. 转到管理 [中心，](https://go.microsoft.com/fwlink/p/?linkid=850627)然后选择 **"用户** \> **""已删除用户"。**
-
-::: moniker-end
-
 2. 在 **"已删除用户"** 页上，选择要还原的用户的名称，然后选择"还原 **"。**
     
- 
 3. 按照提示设置其密码，然后选择"还原 **"。**
     
 4. 如果成功还原用户，请选择" **发送电子邮件"并关闭**。 如果遇到名称冲突或代理地址冲突，请参阅下述说明获取还原这些帐户的方法。
@@ -73,31 +55,12 @@ ms.locfileid: "52023961"
 还原用户后，请确保通知他们其密码已更改，然后跟进。
   
 ## <a name="restore-a-user-that-has-a-user-name-conflict"></a>还原用户名有冲突的用户
-<a name="RestoreUserNameConflict"> </a>
 
 当删除用户帐户后，又创建了与该用户名相同的新用户帐户（为同一用户或具有相似名称的另一个用户），那么当稍后尝试还原已删除的帐户时会出现用户名冲突。
   
 若要解决此问题，可以将活动的用户帐户替换为要还原的用户帐户，或者为要还原的帐户分配不同的用户名，这样就不会有两个用户名相同的帐户。步骤如下。
-  
-
-::: moniker range="o365-worldwide"
 
 1. 在管理中心，转到 **"用户** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2071581" target="_blank">""已删除用户"</a> 页面。
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. 转到管理 [中心，](https://go.microsoft.com/fwlink/p/?linkid=848041)然后选择 **"用户** \> **""已删除用户"。**
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-1. 转到管理 [中心，](https://go.microsoft.com/fwlink/p/?linkid=850627)然后选择 **"用户** \> **""已删除用户"。**
-
-::: moniker-end
-
   
 2. 在 **"已删除用户"** 页上，选择要还原的用户的名称，然后选择"还原 **"。**
     
@@ -118,26 +81,9 @@ ms.locfileid: "52023961"
 
 删除包含代理地址的用户帐户后，又将相同的代理地址分配给另一个帐户，那么当你尝试还原已删除的帐户时会出现代理地址冲突。请按照以下步骤操作以修复此问题。
   
-必须在 Microsoft [](about-admin-roles.md) 365 中拥有管理员权限才能这样做。 
-  
-
-::: moniker range="o365-worldwide"
+为此，[你必须拥有](about-admin-roles.md)Microsoft 365权限。 
 
 1. 在管理中心，转到 **"用户** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2071581" target="_blank">""已删除用户"</a> 页面。
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-转到管理 [中心，](https://go.microsoft.com/fwlink/p/?linkid=848041)然后选择 **"用户** \> **""已删除用户"。**
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-1. 转到管理 [中心，](https://go.microsoft.com/fwlink/p/?linkid=850627)然后选择 **"用户** \> **""已删除用户"。**
-
-::: moniker-end
 
 2. 在" **已删除的用户**"页上，选择要还原的用户，然后选择" **还原**"。 
     

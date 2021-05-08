@@ -29,6 +29,6 @@
 |TEAMS|✔|✔|Planned|✔|不适用|
 |TO-DO|✔|✔|不适用|不适用|✔|
 |VISIO|不适用|✔|不适用|✔|不适用|
-|WHITEBOARD|不适用|✔|不适用|不适用|✔|
+|WHITEBOARD|✔|✔|不适用|不适用|✔|
 |WORD|✔|✔|✔|✔|✔|
 |YAMMER|✔|✔|不适用|Planned|不适用|

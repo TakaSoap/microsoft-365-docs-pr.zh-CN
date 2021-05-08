@@ -18,12 +18,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: 指导如何使用 Office 365 VPN 拆分隧道为远程用户优化 Office 365 连接。
-ms.openlocfilehash: 9f54d8836105896d8d00afc4a622975c007bda85
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: c92599469431732136637cee2bb6a029c4eb4037
+ms.sourcegitcommit: 5a1cb7d95070eef47d401a4693cc137a90550a5e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50924184"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52259243"
 ---
 # <a name="optimize-office-365-connectivity-for-remote-users-using-vpn-split-tunneling"></a>使用 VPN 拆分隧道为远程用户优化 Office 365 连接
 <!---
@@ -33,7 +33,7 @@ ms.locfileid: "50924184"
 >- For information about optimizing Office 365 worldwide tenant performance for users in China, see [Office 365 performance optimization for China users](microsoft-365-networking-china.md).
 -->
 
-对于通过 VPN 将远程工作设备与公司网络或云基础结构连接的客户，Microsoft 建议关键 Office 365 场景 **Microsoft Teams**、**SharePoint Online** 和 **Exchange Online** 通过 _VPN 拆分隧道_ 配置进行路由。 作为在新型冠状病毒肺炎（COVID-19）危机等大规模在家办公事件中促使员工持续保证工作效率的一线战略，这一点尤其重要。
+对于通过 VPN 将其远程工作者设备连接到企业网络或云基础结构的客户，Microsoft 建议通过 _VPN_ 拆分隧道配置路由关键 Office 365 方案 **Microsoft Teams、SharePoint** **Online** 和 **Exchange Online。** 作为在 COVID-19 危机等大规模在家工作活动中促进员工持续提高工作效率的第一线策略，这一点尤其重要。
 
 ![拆分隧道 VPN 配置](../media/vpn-split-tunneling/vpn-model-2.png)
 
@@ -43,15 +43,15 @@ _图 1：将定义的 Office 365 异常直接发送到服务的 VPN 拆分隧道
 
 - 立即缓解企业 VPN 体系结构中大多数客户报告的影响 Office 365 用户体验的性能和网络容量问题的根本原因
   
-  建议的解决方案专门针对 [Office 365 URL 和 IP 地址范围](./urls-and-ip-address-ranges.md)主题中分类为 **优化** 的 Office 365 服务终结点。 流向这些终结点的流量对延迟和带宽限制非常敏感，使其绕过 VPN 隧道可显著改善最终用户体验，并减少公司网络负载。 不构成大部分带宽或用户体验足迹的 Office 365 连接可继续通过 VPN 隧道和 Internet 捆绑的其他流量进行路由。 有关详细信息，请参阅 [VPN 拆分隧道策略](#the-vpn-split-tunnel-strategy)。
+  建议的解决方案专门针对 [Office 365 URL 和 IP 地址范围](./urls-and-ip-address-ranges.md)主题中分类为 **优化** 的 Office 365 服务终结点。 这些终结点的流量对延迟和带宽限制非常敏感，如果允许其绕过 VPN 隧道，可以显著改善最终用户体验，并降低企业网络负载。 不构成大部分带宽或用户体验足迹的 Office 365 连接可继续通过 VPN 隧道和 Internet 捆绑的其他流量进行路由。 有关详细信息，请参阅 [VPN 拆分隧道策略](#the-vpn-split-tunnel-strategy)。
 
-- 可由客户快速配置、测试和实施，无需其他基础结构或应用程序要求
+- 客户无需其他基础结构或应用程序要求，就可以快速配置、测试和实现
 
   根据 VPN 平台和网络体系结构，实现可能只需几个小时。 有关详细信息，请参阅[实现 VPN 拆分隧道](microsoft-365-vpn-implement-split-tunnel.md#implement-vpn-split-tunneling)。
 
 - 通过不更改其他连接的路由方式（包括到 Internet 的流量）来保留客户 VPN 实现的安全状况
 
-  建议的配置遵循 VPN 流量异常的 **最低特权** 原则，并允许客户实现拆分隧道 VPN，而不会将用户或基础结构暴露于额外的安全风险中。 直接路由到 Office 365 终结点的网络流量会进行加密，由 Office 客户端应用程序堆栈验证其完整性，且范围限定为专用于 Office 365 服务的 IP 地址，这些地址在应用程序和网络级别都进行了强化。 有关详细信息，请参阅[安全专业人员和 IT 人员在当前独特的远程工作场景中实现新式安全控制的替代方法（Microsoft 安全团队博客）](https://www.microsoft.com/security/blog/2020/03/26/alternative-security-professionals-it-achieve-modern-security-controls-todays-unique-remote-work-scenarios/)。
+  建议的配置遵循 VPN 流量异常的 **最低特权** 原则，并允许客户实现拆分隧道 VPN，而不会将用户或基础结构暴露于额外的安全风险中。 直接路由到 Office 365 终结点的网络流量通过 Office 客户端应用程序堆栈进行加密和完整性验证，并且范围为专用于 Office 365 服务的 IP 地址，这些服务在应用程序和网络级别进行了强化。 有关详细信息，请参阅[安全专业人员和 IT 人员在当前独特的远程工作场景中实现新式安全控制的替代方法（Microsoft 安全团队博客）](https://www.microsoft.com/security/blog/2020/03/26/alternative-security-professionals-it-achieve-modern-security-controls-todays-unique-remote-work-scenarios/)。
 
 - 由大多数企业 VPN 平台在本地提供支持
 
@@ -62,6 +62,8 @@ _图 1：将定义的 Office 365 异常直接发送到服务的 VPN 拆分隧道
 
 有关完整的实现指南，请参阅[实现 Office 365 的 VPN 拆分隧道](microsoft-365-vpn-implement-split-tunnel.md)。
 
+有关为远程工作者配置 Microsoft 365的分步过程，请参阅[设置远程工作的基础结构](..\solutions\empower-people-to-work-remotely.md)
+
 ## <a name="the-vpn-split-tunnel-strategy"></a>VPN 拆分隧道策略
 
 传统的公司网络通常旨在在预云环境中安全工作，其中最重要的数据、服务和应用程序在本地托管，并且与大多数用户一样直接连接到内部公司网络。 因此，网络基础结构是围绕这些元素构建的，分支机构通过 _多协议标签切换 (MPLS)_ 网络连接到总部，而远程用户必须通过 VPN 连接到公司网络才能访问本地终结点和 Internet。 在此模型中，来自远程用户的所有流量都将遍历公司网络，并通过公共出口点路由到云服务。
@@ -70,11 +72,11 @@ _图 1：将定义的 Office 365 异常直接发送到服务的 VPN 拆分隧道
 
 _图 2：适用于远程用户的公共 VPN 解决方案，其中所有流量都会被强制流回公司网络，而无需考虑目标_
 
-随着组织将数据和应用程序移动到云，此模型效率开始下降，因为它很快变得累赘、费用高昂且不可缩放，这严重影响了用户的网络性能和效率，并限制了组织适应不断变化的需求的能力。 许多 Microsoft 客户报告几年前 80% 的网络流量都是指向内部目标，但到 2020 年 80% 以上的流量都连接到一个基于云的外部资源。
+随着组织将数据和应用程序移动到云中，此模型的效率开始降低，因为它很快就会变得麻烦、昂贵且不可缩放，从而显著影响用户的网络性能和效率，并限制组织适应不断变化的需求的能力。 许多 Microsoft 客户都报告，在几年之前，80% 的网络流量是到内部目标，但在 2020 年，80% 以上的流量连接到基于外部云的资源。
 
-COVID-19 危机加剧了此问题，需要立即为绝大多数组织提供解决方案。 许多客户发现强制 VPN 模型的缩放性或性能不足以实现 100% 的远程工作场景，例如这次危机所需的远程工作场景。 为使这些组织继续高效运作，需要快速提供解决方案。
+COVID-19 危机加剧了此问题，需要立即为绝大多数组织提供解决方案。 许多客户发现强制 VPN 模型的缩放性或性能不足以实现 100% 的远程工作场景，例如这次危机所需的远程工作场景。 若要使这些组织继续高效运行，需要快速的解决方案。
 
-对于 Office 365 服务，Microsoft 在为服务设计连接要求时已充分考虑到这一问题，可在其中非常简单快速地优化一组集中的、严格控制和相对静态的服务终结点，以便为访问服务的用户提供高性能，减少 VPN 基础结构的负担，使其能够被仍然需要它的流量使用。
+对于 Office 365 服务，Microsoft 为服务设计连接要求时完全牢记这一问题，其中一组集中、严格控制且相对静态的服务终结点可以非常简单快速地进行优化，以便为访问服务的用户提供高性能，同时减轻 VPN 基础结构的负担，以便仍需要该服务的流量可以使用它。
 
 Office 365 将 Office 365 所需的终结点分为三类：**优化**、**允许** 和 **默认**。 **优化** 终结点是我们的重点，具有以下特征：
 
@@ -88,9 +90,9 @@ Office 365 将 Office 365 所需的终结点分为三类：**优化**、**允许
 
 这组严格限定范围的终结点可以从强制 VPN 隧道中分离出来，并通过用户的本地接口安全直接地发送到 Office 365 服务。 这称为 **拆分隧道**。
 
-可在服务内的不同层针对这些终结点更高效地传递 DLP、AV 保护、身份验证和访问控制等安全元素。 由于我们还将大部分流量从 VPN 解决方案中转移出去，这将为仍然依赖于它的业务关键流量释放 VPN 容量。 在许多情况下，它还应消除通过冗长而昂贵的升级程序来应对这种新操作方式的需要。
+DLP、AV 保护、身份验证和访问控制等安全元素可在服务的不同层针对这些终结点更有效地交付。 由于我们还将大部分流量从 VPN 解决方案中转移，这为仍依赖于它的业务关键流量释放了 VPN 容量。 在许多情况下，它还应消除通过冗长而昂贵的升级程序来应对这种新操作方式的需要。
 
-![拆分隧道 VPN 配置详细信息](../media/vpn-split-tunneling/vpn-split-tunnel-example.png)
+![拆分Tunnel VPN 配置详细信息](../media/vpn-split-tunneling/vpn-split-tunnel-example.png)
 
 _图 3：将定义的 Office 365 异常直接发送到服务的 VPN 拆分隧道解决方案。所有其他流量都将强制流回公司网络（无论目标如何）。_
 

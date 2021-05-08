@@ -10,12 +10,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 36745a0aafb70e7921c19db7c28984dcca1e2a63
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: d058cfefbc31be6d355ed61e745c36af684829b4
+ms.sourcegitcommit: 5a1cb7d95070eef47d401a4693cc137a90550a5e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245524"
+ms.locfileid: "52259663"
 ---
 # <a name="what-is-microsoft-managed-desktop"></a>什么是 Microsoft 托管桌面？
 
@@ -57,7 +57,7 @@ IT 管理员将受益于以下功能：
 ## <a name="device-management"></a>设备管理
 Microsoft 托管桌面承担着管理注册的设备及其使用的 Microsoft 软件的重任。
 
-- **硬件：** 我们提供了具体的硬件和软件要求、工具和流程，以简化选择，以便你放心地选择设备，而不是让 IT 部门去研究和弄清楚设备是否与服务兼容。 可以通过在[购买 Windows 10 专业版商业设备](https://www.microsoft.com/windowsforbusiness/view-all-devices)网站上筛选 Microsoft 托管桌面来查找推荐的设备。 你可以自行获取设备（或与合作伙伴合作），也可以重复使用已经拥有的设备，前提是它们在批准列表中。 注册设备很简单，而且在部署之前，你还可以为用户[定制](../working-with-managed-desktop/config-setting-overview.md)设备体验的某些方面。
+- **硬件：** 我们提供了具体的硬件和软件要求、工具和流程，以简化选择，以便你放心地选择设备，而不是让 IT 部门去研究和弄清楚设备是否与服务兼容。 可以通过在[购买 Windows 10 专业版商业设备](https://www.microsoft.com/windowsforbusiness/view-all-devices)网站上筛选 Microsoft 托管桌面来查找推荐的设备。 你可以自己获取设备（或与合作伙伴合作）或重复使用已有的设备。 注册设备很简单，而且在部署之前，你还可以为用户[定制](../working-with-managed-desktop/config-setting-overview.md)设备体验的某些方面。
 
 - **更新：** Microsoft 托管桌面可针对 Windows 10 质量和功能更新、驱动程序、固件、反病毒定义和 Microsoft 365 企业应用版更新，设置和管理 [部署组](../service-description/updates.md)的所有方面。 这包括对所有更新的广泛测试和验证，可确保注册的设备始终保持最新状态并最大限度地减少中断，从而将 IT 部门从这种持续的任务中解放出来。
 

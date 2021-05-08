@@ -16,12 +16,12 @@ ms.collection:
 localization_priority: None
 description: 了解如何配置 SharePoint 作为 Microsoft Viva Learning (Preview) 的学习内容源。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: da75ec0573519ed73507994afeac995c0461de0c
-ms.sourcegitcommit: d3f8c69519c593b1580cfa7187ce085a99b8a846
+ms.openlocfilehash: fc702f57b75b78ab523226ba7d8a8eb6505f2975
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52100861"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52244115"
 ---
 # <a name="coming-soon-configure-sharepoint-as-a-learning-content-source-for-microsoft-viva-learning-preview"></a>即将推出：SharePoint Microsoft Viva Learning (Preview) 
 
@@ -40,7 +40,7 @@ Viva Learning (Preview) 支持以下文档类型：
 - Audio (.m4a) 
 - 视频 (.mov、.mp4、.avi) 
 
-有关详细信息，请参阅 SharePoint [Online 文档](/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits?redirectSourcePath=%252farticle%252fSharePoint-Online-limits-8f34ff47-b749-408b-abc0-b605e1f6d498)。 
+有关详细信息，请参阅SharePoint[限制](/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits?redirectSourcePath=%252farticle%252fSharePoint-Online-limits-8f34ff47-b749-408b-abc0-b605e1f6d498)。 
 
 ## <a name="permissions"></a>权限
 
@@ -70,11 +70,11 @@ Viva Learning (Preview) 支持以下文档类型：
 
 1.  在管理中心左侧导航Microsoft 365，**转到"设置**  >  **组织设置"。**
  
-2.  在"**组织设置"** 页上的"服务 **"选项卡上**，选择"学习应用 (**预览) "。**
+2.  在"**组织设置"** 页上的"服务 **"选项卡上**，选择 **"Viva Learning (Preview) "。**
 
      ![设置管理中心中的"Microsoft 365页面，其中列出了 Viva Learning。](../media/learning/learning-sharepoint-configure1.png)
 
-3.  在"学习 **(预览) "** 面板的"SharePoint"下，提供您希望 Viva Learning 创建集中式存储库的 SharePoint 网站的网站 URL。
+3.  在 **Viva Learning (Preview)** 面板的 SharePoint 下，提供希望 Viva Learning (Preview) 创建集中式存储库的 SharePoint 网站的网站 URL。
 
      ![管理中心中的学习Microsoft 365显示已选中SharePoint面板。](../media/learning/learning-sharepoint-configure2.png)
 

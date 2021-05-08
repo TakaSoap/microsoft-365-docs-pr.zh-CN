@@ -19,17 +19,17 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 9b838071-94aa-4b8e-8d84-d17ece1ee951
-description: 了解如何重置密码并将电子邮件发送给新的 Microsoft 365 用户。
-ms.openlocfilehash: 2b2c8657a4bbd4745a3fee34fc259244b83640d3
-ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
+description: 了解如何重置密码并将电子邮件发送给新的Microsoft 365用户。
+ms.openlocfilehash: 17db9a61dc12c349f0aea032655b56c2a448653f
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51222095"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52244040"
 ---
 # <a name="resend-a-users-password---admin-help"></a>重新发送用户密码 - 管理员帮助
 
-本文介绍如何将通知电子邮件重新发送到 Office 365 中的新用户。 当你创建新用户，但他们没有收到包含新密码的电子邮件时，可能会发生这种情况。 为此，请重置用户密码。
+本文介绍如何将通知电子邮件重新发送到 Office 365。 当你创建新用户，但他们没有收到包含新密码的电子邮件时，可能会发生这种情况。 为此，请重置用户密码。
 
 ## <a name="before-you-begin"></a>准备工作
 
@@ -39,23 +39,7 @@ ms.locfileid: "51222095"
 
 ## <a name="resend-user-password"></a>重新发送用户密码
   
-::: moniker range="o365-worldwide"  
-  
 1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">活动用户</a>”页面。  
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">活动用户</a>”页面。 
-
-::: moniker-end
 
 2. 在"**活动用户"** 页上，选择用户，然后选择"**重置密码"。**
 

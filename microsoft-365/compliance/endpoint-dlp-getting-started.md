@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 设置 Microsoft 365 终结点数据丢失防护，以监视文件活动，并将针对这些文件的保护措施实施到终结点。
-ms.openlocfilehash: 0410d4d09354ca716c83a63da9c1fdd22eda8551
-ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
+ms.openlocfilehash: 118c2f3f87df5ac9930bebd1338157d323b1e5e1
+ms.sourcegitcommit: 5a1cb7d95070eef47d401a4693cc137a90550a5e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52114110"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52259495"
 ---
 # <a name="get-started-with-endpoint-data-loss-prevention"></a>终结点数据丢失防护入门
 
@@ -102,7 +102,7 @@ Microsoft 终结点数据丢失防护（终结点 DLP）是 Microsoft 365 数据
     - 对于 Windows 10 2004 - KB4568831、KB4577063
     - 对于运行 Office 2016（而未运行任何其他 Office 版本）的设备 - KB4577063 
 
-4. 所有设备必须[已建立 Azure Active Directory (Azure AD) 联接](/azure/active-directory/devices/concept-azure-ad-join) 或已建立混合 Azure AD 联接。
+4. 所有设备必须[已建立 Azure Active Directory (Azure AD) 联接](/azure/active-directory/devices/concept-azure-ad-join) 已建立 AD 联接、已建立混合 Azure AD 联接，或已注册 AAD。
 
 5. 在终结点设备上安装 Microsoft Chromium Edge 浏览器，以对上传到云活动执行策略操作。 请参见[下载基于 Chromium 的新 Microsoft Edge](https://support.microsoft.com/help/4501095/download-the-new-microsoft-edge-based-on-chromium)。
 
