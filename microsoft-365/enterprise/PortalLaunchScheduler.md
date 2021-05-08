@@ -17,47 +17,47 @@ search.appverid:
 - SPO160
 - MET150
 description: 本文介绍了如何使用门户启动计划程序启动门户
-ms.openlocfilehash: 1e62446054f91ff5d2c99520ca65c1681d899ac9
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: d7ea64b3a9fef25ddfde43e61624e49d2b7d4352
+ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 05/07/2021
-ms.locfileid: "52272048"
+ms.locfileid: "52280965"
 ---
-# <a name="launch-your-portal-using-the-sharepoint-portal-launch-scheduler"></a>使用 SharePoint 门户启动计划程序启动门户
+# <a name="launch-your-portal-using-the-sharepoint-portal-launch-scheduler"></a>使用门户启动计划SharePoint启动门户
 
-门户是 Intranet 上高流量的 SharePoint 通信网站，在几周内拥有 10，000 到 100，000 多个查看者的网站。 使用门户启动计划程序启动门户，以确保用户在访问新的 SharePoint 门户时具有流畅的查看体验。
+门户是 Intranet 上高流量的 SharePoint 通信网站，在几周内拥有 10，000 到 100，000 多个查看者的网站。 使用门户启动计划程序启动门户，以确保用户在访问新的门户时具有流畅的SharePoint体验。
 <br>
 <br>
-门户启动计划程序旨在帮助你遵循分阶段推出方法，方法是分批对查看者进行批处理，并管理新门户的 URL 重定向。 在每个波的启动过程中，你可以收集用户反馈、监视门户性能，并暂停启动以解决问题，然后再继续下一波。 详细了解如何在 [SharePoint 中规划门户启动](https://docs.microsoft.com/microsoft-365/Enterprise/Planportallaunchroll-out?view=o365-worldwide)。 
+门户启动计划程序旨在帮助你遵循分阶段推出方法，方法是分批对查看者进行批处理，并管理新门户的 URL 重定向。 在每个波的启动过程中，你可以收集用户反馈、监视门户性能，并暂停启动以解决问题，然后再继续下一波。 详细了解如何在 SharePoint 中[规划门户SharePoint。](https://docs.microsoft.com/microsoft-365/Enterprise/Planportallaunchroll-out?view=o365-worldwide) 
 
 **有两种类型的重定向：**
 
-- **双向：启动** 新的新式 SharePoint 门户以替换现有 SharePoint 经典或新式门户
-- **重定向到临时页面**：启动没有现有 SharePoint 门户的新新式 SharePoint 门户
+- **双向：启动** 新的新式SharePoint门户以替换现有SharePoint或新式门户
+- **重定向到临时页面**：启动新的新式SharePoint门户，无现有SharePoint门户
 
 在启动时，必须独立于波形设置网站权限。 例如，如果要发布组织范围的门户，可以将权限设置为"除外部用户以外的所有人"，然后使用安全组将用户分为多个组。 向 Wave 添加安全组不会授予该安全组对网站的访问权限。 
 
 
 > [!NOTE]
-> - 此功能可从面向目标发布客户的 SharePoint通信网站主页上的"设置"面板访问，从 2021 年 5 月开始，到 2021 年 7 月，所有客户均可使用此功能
+> - 从 2021年 5 月开始，面向目标发布客户的 SharePoint 通信网站的主页上的 设置 面板可访问此功能，并将于 2021 年 7 月提供给所有客户
 > - 此工具的 PowerShell 版本现在可用
-> - 此功能只能在新式 SharePoint 通信网站上使用
+> - 此功能只能在新式通信SharePoint使用
 > - 您必须具有网站的网站所有者权限才能自定义和计划门户的启动
 > - 启动必须至少提前 7 天进行，并且每一波可以持续 1 到 7 天
 > - 所需的波形数由预期用户数自动确定 
-> - 在计划门户启动之前，必须运行 [SharePoint](https://aka.ms/perftool) 页面诊断工具，以验证网站的主页是否正常运行
+> - 在计划门户启动[之前](https://aka.ms/perftool)，必须运行 SharePoint 诊断工具，以验证网站的主页是否正常运行
 > - 在启动结束时，具有网站权限的所有用户都将能够访问新网站
-> - 如果你的组织使用 [Viva 连接](https://docs.microsoft.com/SharePoint/viva-connections)，用户可能会看到 Microsoft Teams 应用栏中的组织图标，但是当选择图标时，用户将无法访问门户，直到其 Wave 启动
-> - 此功能不适用于 Office 365 Germany、由世纪银行运营的 Office 365 (中国) 或 Microsoft 365 美国政府版计划
+> - 如果组织使用的是[Viva 连接](https://docs.microsoft.com/SharePoint/viva-connections)，则用户可能会看到 Microsoft Teams 应用栏中的组织图标，但在选择图标后，用户将无法访问门户，直到其 Wave 启动
+> - 此功能不适用于德国Office 365、Office 365由世纪 (中国) 或美国政府Microsoft 365计划
 
 ### <a name="understand-the-differences-between-portal-launch-scheduler-options"></a>了解门户启动计划程序选项之间的差异：
 
-以前，门户启动只能通过 SharePoint PowerShell 进行计划。 现在，有两个选项可帮助你计划和管理门户的启动。 了解这两种工具之间的主要差异：
+以前，门户启动只能通过 PowerShell SharePoint计划。 现在，有两个选项可帮助你计划和管理门户的启动。 了解这两种工具之间的主要差异：
 
-**SharePoint PowerShell 版本：**
+**SharePointPowerShell 版本：**
 
-- 使用 [SharePoint PowerShell 需要管理员凭据](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/introduction-sharepoint-online-management-shell?view=sharepoint-ps) 
+- 使用 PowerShell 时需要[SharePoint凭据](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/introduction-sharepoint-online-management-shell?view=sharepoint-ps) 
 - 第一波的最低要求 
 - 根据协调世界时与 UTC 时区 () 启动
 
@@ -79,16 +79,16 @@ ms.locfileid: "52272048"
     
     ![重新发布主页时使用门户启动计划程序提示的图像](../media/portal-launch-republish-2.png)
     
-    **选项 2：** 您随时都可以导航到 SharePoint 通信网站主页，选择"设置"，然后计划网站启动以计划门户的启动。
+    **选项 2：** 你随时都可以导航到 SharePoint 通信网站主页，选择 **"设置"，然后** 计划网站启动以计划门户的启动。
     
-    ![突出显示了"计划网站启动"的"设置"窗格的图像](../media/portal-launch-settings-2.png)
+    ![突出显示了设置网站启动"的"网站启动"窗格的图像](../media/portal-launch-settings-2.png)
 
-3.  接下来，使用 [适用于 SharePoint](https://aka.ms/perftool) 的页面诊断工具确认门户的运行状况分数，并根据需要对门户 **进行改进，** 直到门户获得正常分数。 然后，选择“下一步”。
+3.  接下来，使用适用于 SharePoint 的页面诊断工具确认门户的运行状况分数，并根据需要对门户进行改进，[直到](https://aka.ms/perftool)门户 **获得正常分数**。 然后，选择“下一步”。
 
     ![门户启动计划程序工具的图像](../media/portal-launch-panel-2.png)
        
     > [!NOTE] 
-    > 无法从门户启动计划程序编辑网站名称和说明，而可以通过从主页选择"设置"，然后选择"网站信息"进行更改。 
+    > 无法从门户启动计划程序编辑网站名称和说明，而可以通过从主页选择"网站 **设置网站信息** 进行更改。 
  
 4.  从 **下拉列表中选择** "预期用户数"。 此图表示最有可能需要访问网站的用户数。 门户启动计划程序将根据预期用户自动确定理想的波形数，如下所示：
     
@@ -99,20 +99,20 @@ ms.locfileid: "52272048"
 
 5.  然后，确定 **所需的重定向** 类型：
 
-    **选项 1：** 将用户发送到现有 SharePoint 页面 (双向) - 在启动新的新式 SharePoint 门户以替换现有 SharePoint 门户时使用此选项。 无论用户导航到旧站点还是新站点，活动波中的用户都将重定向到新站点。 尝试访问新网站的非启动波中的用户将被重定向回旧网站，直到启动其 Wave。
+    **选项 1：** 将用户发送到现有 SharePoint 页面 (双向) – 在启动新的新式 SharePoint 门户以替换现有 SharePoint 门户时，请使用此选项。 无论用户导航到旧站点还是新站点，活动波中的用户都将重定向到新站点。 尝试访问新网站的非启动波中的用户将被重定向回旧网站，直到启动其 Wave。
     
     > [!NOTE] 
-    > 使用双向选项时，计划启动的用户还必须具有其他 SharePoint 门户的网站所有者权限。
+    > 使用双向选项时，计划启动的用户还必须具有对另一个 SharePoint 门户的网站所有者权限。
        
-    **选项 2：** 将用户发送到自动生成的临时 (页面重定向) – 当不存在现有 SharePoint 门户时，应该使用临时页面重定向。 用户被定向到新的新式 SharePoint 门户，如果用户在尚未启动的波中，他们将被重定向到临时页面。
+    **选项 2：将** 用户发送到自动生成的临时 (页面重定向) – 当不存在现有页面重定向门户SharePoint使用临时页面重定向。 用户将被定向到新的新式SharePoint门户，如果用户在尚未启动的波形中，他们将被重定向到临时页面。
     
     **选项 3：将用户** 发送到外部页面 – 在启动用户的波形之前，提供用于临时登陆页面体验的外部 URL。
     
-6.  将受众分成一个波波。 每波最多添加 20 个安全组。 可以一直编辑 Wave 详细信息，直到启动每个 Wave。 每一波可以持续至少一天 (24 小时) 最多七天。 这使 SharePoint 和技术环境有机会适应和扩展大量网站用户。 通过 UI 计划启动时，时区基于网站的区域设置。 
+6.  将受众分成一个波波。 每波最多添加 20 个安全组。 可以一直编辑 Wave 详细信息，直到启动每个 Wave。 每一波可以持续至少一天 (24 小时) 最多七天。 这使SharePoint和技术环境有机会适应和扩展大量网站用户。 通过 UI 计划启动时，时区基于网站的区域设置。 
 
     >[!NOTE] 
     > - 门户启动计划程序将自动默认为至少 2 个波形。 但是，此工具的 PowerShell 版本将允许使用 1 波。
-    >  - 此版本的门户启动计划程序不支持 Microsoft 365 组。
+    >  - Microsoft 365版本的门户启动计划程序不支持这些组。
 
 7. 确定需要马上查看网站的用户，并输入其信息到"免受波形影响的用户 **"** 字段中。 这些用户被从波形中排除，并且不会在启动之前、期间或之后重定向。
 
@@ -123,7 +123,7 @@ ms.locfileid: "52272048"
 
 可以编辑每一波的启动详细信息，直到 Wave 启动日期为止。 
 
-1.  若要编辑门户启动详细信息，请导航到"**设置"，** 然后选择"**计划网站启动"。**
+1.  若要编辑门户启动详细信息，请导航到 **"设置，** 然后选择"**计划网站启动"。**
 2.  然后，选择"**编辑"。**
 3.  完成编辑后，选择"更新 **"。**
 
@@ -132,7 +132,7 @@ ms.locfileid: "52272048"
 
 使用门户启动计划程序工具安排的启动可以随时取消或删除，即使已启动某些波形。
 
-1.  若要取消门户的启动，请导航 **到"设置**"和"**计划网站启动"。**
+1.  若要取消门户的启动，请导航到 **"设置** 计划 **网站启动"。**
 
 2.  然后，选择 **"删除** "，然后在看到下面的邮件时，选择"再次 **删除** "。
 
@@ -141,11 +141,11 @@ ms.locfileid: "52272048"
 
 ## <a name="use-the-powershell-portal-launch-scheduler"></a>使用 PowerShell 门户启动计划程序
 
-SharePoint 门户启动计划程序工具最初仅通过 [SharePoint PowerShell](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/introduction-sharepoint-online-management-shell?view=sharepoint-ps) 提供，并且将继续通过 PowerShell 为喜欢此方法的客户提供支持。 本文开头的相同说明适用于门户启动计划程序这两个版本。 
+The SharePoint Portal launch scheduler tool was originally only available via [SharePoint PowerShell](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/introduction-sharepoint-online-management-shell?view=sharepoint-ps) and will continue to be supported through PowerShell for customers who prefer this method. 本文开头的相同说明适用于门户启动计划程序这两个版本。 
 
 >[!NOTE]
 > 您需要管理员权限才能使用 SharePoint PowerShell。
-> 将在 PowerShell 中创建的启动的门户启动详细信息显示，并且可在 SharePoint 中的新门户启动计划程序工具中进行管理。
+> 将在 PowerShell 中创建的启动的门户启动详细信息显示，并可在 SharePoint 中新的门户启动计划程序工具中进行管理。
 
 
 ### <a name="app-setup-and-connecting-to-sharepoint-online"></a>应用设置和连接到 SharePoint Online
@@ -175,11 +175,11 @@ SharePoint 门户启动计划程序工具最初仅通过 [SharePoint PowerShell]
 
 #### <a name="steps-for-bidirectional-redirection"></a>双向重定向的步骤
 
-双向重定向涉及启动新的新式 SharePoint Online 门户以替换现有 SharePoint 经典或新式门户。 无论用户导航到旧站点还是新站点，活动波中的用户都将重定向到新站点。 尝试访问新网站的非启动波中的用户将被重定向回旧网站，直到启动其 Wave。 
+双向重定向涉及启动新的新式 SharePoint Online 门户以替换现有SharePoint或新式门户。 无论用户导航到旧站点还是新站点，活动波中的用户都将重定向到新站点。 尝试访问新网站的非启动波中的用户将被重定向回旧网站，直到启动其 Wave。 
 
 我们仅支持在旧网站上的默认主页和新网站上的默认主页之间进行重定向。 如果管理员或所有者需要访问新旧网站而无需重定向，请确保使用 参数列出 `WaveOverrideUsers` 这些管理员或所有者。
 
-以分步方式将用户从现有 SharePoint 网站迁移到新的 SharePoint 网站：
+以分步方式SharePoint用户从现有SharePoint网站迁移到新网站：
 
 1. 运行以下命令以指定门户启动波。
    
@@ -200,7 +200,7 @@ SharePoint 门户启动计划程序工具最初仅通过 [SharePoint PowerShell]
 
 #### <a name="steps-for-redirection-to-temporary-page"></a>重定向到临时页面的步骤
 
-当不存在现有 SharePoint 门户时，应该使用临时页面重定向。 用户以分步方式定向到新的新式 SharePoint Online 门户。 如果用户在尚未启动的波形中，他们将被重定向到包含任何 URL (临时) 。 
+当不存在现有门户时，应该使用SharePoint重定向。 用户以一种分步SharePoint定向到新的新式联机门户。 如果用户在尚未启动的波形中，他们将被重定向到包含任何 URL (临时) 。 
 
 1. 运行以下命令以指定门户启动波。
    

@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 103f940c-0468-4e1a-b527-cc8ad13a5ea6
 description: 面向管理员：了解如何使用网络上传将多个 PST 文件批量导入 Microsoft 365 中的用户邮箱。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: cf7f471a4323c4c03f232e93d2f00b930e53aefe
-ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
+ms.openlocfilehash: 6ff645589337260cd8e29d1e1d066abdf60c1f1a
+ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52114338"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52280917"
 ---
 # <a name="use-network-upload-to-import-your-organizations-pst-files-to-microsoft-365"></a>使用网络上传将组织的 PST 文件导入到 Microsoft 365
 
@@ -45,7 +45,7 @@ ms.locfileid: "52114338"
 
 [步骤 6：筛选数据并启动 PST 导入作业](#step-6-filter-data-and-start-the-pst-import-job)
 
-只需执行步骤 1 一次，就可以将 PST 文件导入到 Microsoft 365 邮箱。 执行这些步骤后，每当你想要上传和导入一批 PST 文件时，请按照步骤 2 到步骤 6 进行操作。
+只需执行一次步骤 1，就可以将 PST 文件导入到 Microsoft 365 邮箱。执行这些步骤后，每次要上传和导入一批 PST 文件时，可按照步骤 2 到步骤 6 操作。
 
 ## <a name="before-you-import-pst-files"></a>导入 PST 文件前
   
@@ -64,7 +64,7 @@ ms.locfileid: "52114338"
   
 - 唯一受支持的将 PST 文件导入到 Microsoft 365 的方法是使用 AzCopy 工具，如本主题中所述。 无法使用 Azure 存储资源管理器将 PST 文件直接上传到 Azure 存储区域。
 
-- 需要将要导入到 Microsoft 365 中的 PST 文件存储在组织中的文件服务器或共享文件夹中。 在步骤 2 中，你将运行 AzCopy 工具，以便将存储在文件服务器或共享文件夹中的 PST 文件上传到 Microsoft 365。
+- 需要将要导入到 Microsoft 365 中的 PST 文件存储在组织中的文件服务器或共享文件夹中。在步骤 2 中，将运行 AzCopy 工具，以将存储此文件服务器或共享文件夹上的 PST 文件上传到 Microsoft 365 中。
 
 - 大型 PST 文件可能会影响 PST 导入过程的性能。 因此，我们建议你在步骤 2 中上传到 Azure 存储位置的每个 PST 文件不应大于 20 GB。
 
@@ -144,7 +144,7 @@ ms.locfileid: "52114338"
     > [!IMPORTANT]
     > 必须在上一个命令中将某个目录指定为源位置；无法指定单个 PST 文件。 系统将上载源目录中的所有 PST 文件。
 
-    下表介绍了 AzCopy.exe 参数及其所需的值。 在上一步中获得的信息会用在这些参数的值中。
+    下表描述了 AzCopy.exe 的参数及其所需值。之前的步骤中所获取的信息会用在这些参数的值中。
 
     | 参数 | 说明 | 示例 |
     |:-----|:-----|:-----|
@@ -171,9 +171,9 @@ ms.locfileid: "52114338"
   
 - 验证 PST 文件是否已从你所在组织中的共享文件夹或文件服务器成功上载到 Azure blob。
 
-- 验证已上传到 Azure blob 的每个 PST 文件的文件名（和子文件夹路径名，如果包含子文件夹）。 当你在下一步中创建 PST 映射文件时，这非常有用，因为必须为每个 PST 文件指定文件夹路径名和文件名。 验证这些名称可以帮助减少 PST 映射文件中的潜在错误。
+- 验证已上传到 Azure blob 的每个 PST 文件的文件名（和子文件夹路径名，如果包含）。在下一步中创建 PST 映射文件时，此操作非常有用，因为你必须指定每个 PST 文件的文件夹路径名和文件名。验证这些名称有助于减少 PST 映射文件中的潜在错误。
 
-Microsoft Azure 存储资源管理器处于预览阶段。
+Azure 存储资源管理器独立应用程序通常是可用的。 可以使用以下过程中的链接下载最新版本。
   
 > [!IMPORTANT]
 > 无法使用 Azure 存储资源管理器上载或修改 PST 文件。 导入 PST 文件的唯一支持方法是使用 AzCopy。 此外，无法删除已上载到 Azure blob 的 PST 文件。 如果尝试删除 PST 文件，将看到提示没有所需权限的错误消息。 请注意，所有 PST 文件都会自动从 Azure 存储区域删除。 如果没有正在进行的导入作业，则 **ingestiondata** 容器中的所有 PST 文件都会在创建最新导入作业 30 天后被删除。
@@ -218,7 +218,7 @@ Microsoft Azure 存储资源管理器处于预览阶段。
     Exchange,PSTFiles,zrinkam_archive.pst,zrinkam@contoso.onmicrosoft.com,TRUE,/ImportedPst,,,,
     ```
 
-    该 CSV 文件的第一行（或者说标题行）列出了 PST 导入服务将用于将 PST 文件导入到用户邮箱中的参数。 每个参数名称都用逗号分隔开。 标题行下的每一行代表将 PST 文件导入到特定邮箱所对应的参数值。 需要用一行来对应每个要导入到用户邮箱中的 PST 文件。 CSV 映射文件最多可包含 500 行。 若要导入超过 500 行的 PST 文件，必须在步骤 5 中创建多个映射文件并创建多个导入作业。
+    CSV 文件的第一行或标题行列出 PST 导入服务将使用的参数，以将 PST 文件导入到用户邮箱中。每个参数名之间以逗号分隔。标题行下的每一行表示用于将 PST 文件导入到特定邮箱的参数值。对于要导入用户邮箱的每个 PST 文件都需要一行。CSV 映射文件中最多可包含 500 行。若要导入超过 500 个 PST 文件，必须在步骤 5 中创建多个映射文件并创建多个导入作业。
 
     > [!NOTE]
     > 不要更改标题行中的任何内容，包括 SharePoint 参数；这些内容会在 PST 导入过程中被忽略。 此外，一定要用实际数据替换映射文件中的占位符数据。
@@ -338,7 +338,7 @@ Microsoft Azure 存储资源管理器处于预览阶段。
 
   - 使用[数据丢失防护策略](dlp-learn-about-dlp.md)来防止敏感数据被泄露到组织外部。
   
-- 下面是在步骤 1 中获得的共享访问签名 (SAS) URL 示例。 此示例还包含你在 AzCopy.exe 工具中运行的命令语法 - 用于上传 PST 文件。 请务必采取预防措施来保护 SAS URL，就像保护密码或其他与安全相关的信息一样。
+- 以下是在步骤 1 中获得的共享访问签名 (SAS) 的一个示例。此示例还包含你在 AzCopy.exe 工具中上传 PST 文件所运行的命令语法。请确保像保护密码或其它安全相关信息一样采取预防措施来保护这些文件。
 
     ```console
     SAS URL: https://3c3e5952a2764023ad14984.blob.core.windows.net/ingestiondata?sv=2012-02-12&amp;se=9999-12-31T23%3A59%3A59Z&amp;sr=c&amp;si=IngestionSasForAzCopy201601121920498117&amp;sig=Vt5S4hVzlzMcBkuH8bH711atBffdrOS72TlV1mNdORg%3D

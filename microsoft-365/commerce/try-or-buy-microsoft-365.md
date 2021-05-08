@@ -1,10 +1,11 @@
 ---
-title: 试用或购买 Microsoft 365 商业版订阅
+title: 试用或购买Microsoft 365商业版订阅
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: drjones
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -12,32 +13,32 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- commerce
-- Adm_TOC
-ms.custom: AdminSurgePortfolio
-search.appverid:
-- MET150
-description: 了解如何获取免费试用版或购买 Microsoft 365 商业版订阅。
+ms.custom:
+- AdminSurgePortfolio
+- commerce_purchase
+- PPM_jmueller
+search.appverid: MET150
+description: 了解如何获取免费试用版或购买适用于Microsoft 365订阅。
 ms.date: 08/07/2020
-ms.openlocfilehash: 505ce060b9b40d72a54adbfffbcb2b3cf47a66e6
-ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
+ms.openlocfilehash: 592ab457dd9b393afa4ef3a3bff9f7ef89af4ea9
+ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "51939180"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52280903"
 ---
-# <a name="try-or-buy-a-microsoft-365-for-business-subscription"></a>试用或购买 Microsoft 365 商业版订阅
+# <a name="try-or-buy-a-microsoft-365-for-business-subscription"></a>试用或购买Microsoft 365商业版订阅
 
-Microsoft 365 商业版是一种订阅服务，允许你在云中运行你的组织，同时 Microsoft 会负责你的 IT 工作。 Microsoft 管理设备、防范实际威胁，为组织提供最新的业务软件。 你可以注册 Microsoft 365 商业标准版、Microsoft 365 商业高级版或 Microsoft 365 商业应用版的免费试用版订阅，试用 30 天。
+Microsoft 365企业版是一种订阅服务，允许你在云中运行你的组织，同时 Microsoft 会负责你的 IT 工作。 Microsoft 管理设备、防范实际威胁，为组织提供最新的业务软件。 你可以注册免费试用版订阅，Microsoft 365 商业标准版、Microsoft 365 商业高级版或Microsoft 365 商业应用版试用 30 天。
 
 > [!NOTE]
 > 注册免费试用版时，必须使用信用卡。 在免费试用期结束时，试用版订阅将自动转换为付费订阅。 在试用期结束之前，不会对信用卡进行计费。
 
-
-::: moniker region="o365-21vianet"
+::: moniker range="o365-21vianet"
 
 > [!IMPORTANT]
-> **由世纪银行在中国运营的 Office 365 的支付选项** 不接受国际信用卡。 您可以通过以下方式支付订阅费用：
+> **由世纪Office 365中国运营的云的支付选项** 不接受国际信用卡。 您可以通过以下方式支付订阅费用：
+>
 > - 发票
 > - 使用支付银联或中国银联的联机付款证明将采用 Fapiaos 的形式提供。 您可以在付款大约三 （3） 天后向 [发票系统提交发票](https://go.microsoft.com/fwlink/p/?LinkId=395314) 请求。 有关详细信息，请参阅 [申请由世纪互联运营的 Office 365 的发票](../admin/services-in-china/apply-for-a-fapiao.md)。
 
@@ -49,10 +50,10 @@ Microsoft 365 商业版是一种订阅服务，允许你在云中运行你的组
 
 ## <a name="try-a-free-trial-subscription"></a>试用免费试用版订阅
 
-你是新客户，并且还没有 Microsoft 帐户？ 使用以下步骤创建帐户并注册 Microsoft 365 商业标准版、Microsoft 365 商业高级版或 Microsoft 365 商业应用版的免费试用版订阅。
+你是新客户，并且还没有 Microsoft 帐户？ 使用以下步骤创建帐户并注册 Microsoft 365 商业标准版、Microsoft 365 商业高级版 或 Microsoft 365 商业应用版。
 
-1. 转到 <a href="https://www.aka.ms/office365signup" target="_blank">Microsoft 365 产品网站</a>。
-2. 选择要注册的计划（如 **Microsoft 365 商业** 标准版）向下滚动页面，然后选择"免费试用 **1 个月"。**
+1. 转到<a href="https://www.aka.ms/office365signup" target="_blank">"Microsoft 365产品"网站</a>。
+2. 选择要注册的计划，例如"Microsoft 365 商业标准版"，**向下滚动** 页面，然后选择"免费试用 **1 个月"。**
 3. 下一页，按照步骤设置帐户。
 4. 注册过程可能需要几分钟才能完成。 完成后 \' ，即可为订阅启动安装向导。 有关设置订阅的信息，请参阅下[一步。](#next-steps)
 
@@ -62,7 +63,7 @@ Microsoft 365 商业版是一种订阅服务，允许你在云中运行你的组
 
 如果你想要在试用结束之前购买订阅，请使用以下步骤：
 
-1. 在 Microsoft 365 管理中心，转到 **计费** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">你的产品</a>页面。
+1. 在"Microsoft 365管理中心"中，转到 **"帐单** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">""你的产品"</a>页面。
 2. 在 **"你的产品"** 页面上，找到要购买的订阅。
 3. 在"**许可证"** 部分，选择"**购买订阅"。**
 4. 选择订阅的每月承诺或年度承诺，然后选择"签出 **"。**
@@ -72,10 +73,10 @@ Microsoft 365 商业版是一种订阅服务，允许你在云中运行你的组
 
 ## <a name="extend-your-trial"></a>延长试用期
 
-在购买之前，是否需要更多时间来试用 Microsoft 365 商业版的功能？ 如果试用版订阅将在 15 天内过期，并且之前尚未延长试用期，则试用期可以延长 30 天。 该操作仅可执行一次。
+在购买之前，是否需要更多时间来试用适用于Microsoft 365的功能？ 如果试用版订阅将在 15 天内过期，并且之前尚未延长试用期，则试用期可以延长 30 天。 该操作仅可执行一次。
 
 1. 在管理中心中，转到“**计费**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">你的产品</a>”页面。
-2. 在 **"产品** "选项卡上，选择要扩展的试用订阅。 
+2. 在 **"产品** "选项卡上，选择要扩展的试用订阅。
 3. On the subscription details page， in the **Subscriptions and payment settings section，** select **Extend end date**.
 4. 在 **"扩展结束日期"** 窗格中，查看扩展信息，如有必要，选择付款方式。 完成后，选择延长 **试用期**。
 
@@ -83,16 +84,16 @@ Microsoft 365 商业版是一种订阅服务，允许你在云中运行你的组
 
 ## <a name="cancel-your-free-trial-subscription"></a>取消免费试用版订阅
 
-如果你决定在免费试用期结束之前取消试用订阅，请转到 Microsoft 365 管理中心并 [关闭定期计费](subscriptions/renew-your-subscription.md#turn-recurring-billing-off-or-on)。 试用版将在你的月结束时自动过期，并且你的信用卡 \' 不会收费。
+如果你决定在免费试用期结束之前取消试用订阅，请转到Microsoft 365中心并关闭[定期计费](subscriptions/renew-your-subscription.md#turn-recurring-billing-off-or-on)。 试用版将在你的月结束时自动过期，并且你的信用卡 \' 不会收费。
 
 ## <a name="try-a-different-subscription"></a>尝试其他订阅
 
-如果你已拥有 Microsoft 365 商业版订阅，可以使用 Microsoft 365 管理中心试用其他订阅。
+如果你已拥有适用于Microsoft 365订阅，可以使用 Microsoft 365管理中心试用其他订阅。
 
-通过 Microsoft 365 管理中心添加订阅时，新订阅与与现有订阅 (域命名空间) 组织相关联。 通过此关联，可以更轻松地在订阅之间移动贵组织的用户，或为其分配所需的其他产品的许可证。
+通过管理中心添加订阅Microsoft 365，新订阅将关联到与现有 (命名空间) 同一组织。 通过此关联，可以更轻松地在订阅之间移动贵组织的用户，或为其分配所需的其他产品的许可证。
 
 1. In the admin center， go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">Purchase services</a> page.
-2. 在 **"购买服务** "页上，可以看到可供组织使用的计划。 选择要尝试的 Microsoft 365 计划。
+2. 在 **"购买服务** "页上，可以看到可供组织使用的计划。 选择Microsoft 365尝试的计划。
 3. On the next page， select **Get free trial**. 试用版为你提供 25 个用户许可证，为期一个月。
 4. 选择接收文本或呼叫，输入电话号码，然后选择"**给我发短信**"或"**呼叫我"。**
 5. 输入验证码，然后选择开始 **免费试用**。
@@ -101,7 +102,7 @@ Microsoft 365 商业版是一种订阅服务，允许你在云中运行你的组
 
 ## <a name="buy-a-different-subscription"></a>购买其他订阅
 
-如果你已有 Microsoft 365 商业版订阅，可以通过 Microsoft 365 管理中心为组织购买其他订阅。
+如果你已有适用于Microsoft 365订阅，可以通过管理中心Microsoft 365为组织购买其他订阅。
 
 通过管理中心购买另一个订阅时，新订阅将 (现有订阅) 域名空间。 这使在订阅之间移动组织用户或为其分配所需的附加订阅的许可证变得更简单。
 
@@ -115,6 +116,7 @@ Microsoft 365 商业版是一种订阅服务，允许你在云中运行你的组
 > 你必须在 90 天宽限期到期后将用户从免费试用版订阅移动到新订阅。 通过执行此操作，可以保留数据、帐户和配置。 否则，将删除该信息。
 
 ::: moniker range="o365-21vianet"
+
 ## <a name="payment-options"></a>支付选项
 
 您可以通过以下方式支付订阅费用：
@@ -126,7 +128,7 @@ Microsoft 365 商业版是一种订阅服务，允许你在云中运行你的组
 付款证明将以发票形式提供。 您可以在付款大约三 （3） 天后向 [发票系统提交发票](https://go.microsoft.com/fwlink/p/?LinkId=395314) 请求。 有关详细信息，请参阅 [申请由世纪互联运营的 Office 365 的发票](../admin/services-in-china/apply-for-a-fapiao.md)。
 
 > [!NOTE]
->  不接受国际信用卡。
+> 不接受国际信用卡。
 ::: moniker-end
 
 ## <a name="next-steps"></a>后续步骤
@@ -142,9 +144,9 @@ Microsoft 365 商业版是一种订阅服务，允许你在云中运行你的组
 
 ## <a name="related-content"></a>相关内容
 
-[Microsoft 365 商业版培训视频 (](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816) 培训视频) \
+[Microsoft 365企业培训视频 (](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)培训视频) \
 [添加用户并同时分配许可证 (](../admin/add-users/add-users.md) 文章) \
 [向用户分配许可证](../admin/manage/assign-licenses-to-users.md)
 [升级到其他计划 (](subscriptions/upgrade-to-different-plan.md) 文章) \
-[购买或编辑 Microsoft 365 商业版加载项](buy-or-edit-an-add-on.md) (文章) \
+[购买或编辑适用于企业Microsoft 365加载项 (](buy-or-edit-an-add-on.md)文章) \
 [为订阅添加存储空间](add-storage-space.md)

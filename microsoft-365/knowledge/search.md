@@ -10,16 +10,16 @@ ms.service: o365-administration
 search.appverid: ''
 localization_priority: None
 description: 了解如何在 Microsoft Viva 中搜索主题。
-ms.openlocfilehash: 1739923c95b42f192bb2e285245f72c3e09e1c30
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 15b42c9d3689a73c865be53bb29f298fcbf896bd
+ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50925924"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52281038"
 ---
 # <a name="use-microsoft-search-to-find-topics-in-microsoft-viva-topics"></a>使用 Microsoft 搜索查找 Microsoft Viva 主题中的主题
 
-虽然 Viva 主题用户可以通过 SharePoint 网站中的主题突出显示查找主题，但也可通过 Microsoft 搜索找到主题。 
+虽然 Viva 主题用户可以通过主题要点在网站中查找主题SharePoint，但用户也可以通过 Microsoft 搜索找到这些主题。 
 
 ## <a name="topic-answer"></a>主题答案
 
@@ -27,14 +27,16 @@ ms.locfileid: "50925924"
 
 主题答案将显示：
 - 主题名称
-- 备用名称：主题的备用名称或缩写。
-- 定义：AI 提供或由人员手动添加的主题的说明。
+- 备用名称：主题的备用名称或首字母缩略词。
+- 定义：由 AI 提供或个人手动添加的主题说明。
 - 建议或固定的人：AI 建议或用户固定到主题的人
 - 建议或固定的资源：AI 建议的文件、页面或网站，或用户固定到主题的文件、页面或网站。 
 
    ![搜索中的主题](../media/knowledge-management/search-topic-answer.png) 
 
 主题页面可以显示在搜索结果中，即使主题答案卡未显示。
+
+在 Word 和 word PowerPoint中，当找到一个答案时，还将显示主题答案。
 
 
 ## <a name="acronyms"></a>首字母缩略词
@@ -45,12 +47,12 @@ ms.locfileid: "50925924"
 
 ## <a name="bookmarks-and-topics"></a>书签和主题
 
-[](/microsoftsearch/manage-bookmarks)书签是一项 Microsoft 搜索功能，它可以帮助用户通过搜索工具快速查找重要网站和工具 (例如，Microsoft 365 租户网站外部的外部站点上的旅行预订) 。 它们由 Microsoft 365 管理中心中的搜索管理员创建。 
+[](/microsoftsearch/manage-bookmarks)书签是一项 Microsoft 搜索功能，可帮助用户通过搜索工具快速查找重要网站和工具 (例如，在 Microsoft 365 租户外部的外部网站上使用旅行预订) 。 它们由搜索管理员在管理中心Microsoft 365创建。 
 
 对于要查找有关预订出差信息的用户：
 
 - 如果某些用户知道旅行工具 (例如，"Concur") ，则创建书签以直接转到外部网站会更容易。
-- 对于通常搜索"旅行"的用户，在"旅行"上创建一个主题，该主题包含他们希望看到的信息。 请考虑在主题的说明中添加指向 Concur 外部站点的链接。 如果链接改为指向 Microsoft 365 租户上托管的内部旅行预订网站，你可以将其添加到"固定的资源"。
+- 对于通常搜索"旅行"的用户，在"旅行"上创建一个主题，该主题包含他们希望看到的信息。 请考虑在主题的说明中添加指向 Concur 外部站点的链接。 如果链接改为指向托管在 Microsoft 365 租户上的内部旅行预订网站，你可以将其添加到"固定资源"。
  
 ### <a name="search-results-priority"></a>搜索结果优先级 
  

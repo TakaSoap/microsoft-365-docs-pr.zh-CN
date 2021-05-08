@@ -14,16 +14,16 @@ ms.collection:
 - m365initiative-viva-topics
 localization_priority: None
 description: Viva Topics 概述。
-ms.openlocfilehash: b37572087794055724cb9533246f83794d88fb93
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: 1d66751d55c0144149fa8325e89be404e3df19ed
+ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 05/07/2021
-ms.locfileid: "52275190"
+ms.locfileid: "52281025"
 ---
 # <a name="microsoft-viva-topics-overview"></a>Microsoft Viva Topics 概述 
 
-Viva Topics 使用 Microsoft AI 技术、Microsoft 365、Microsoft Graph、搜索和其他组件和服务，通过用户日常使用的 Microsoft 365 应用，从 SharePoint 新式页面和 Microsoft 搜索开始，为用户提供知识。
+Viva 主题使用 Microsoft AI 技术、Microsoft 365、Microsoft Graph、搜索和其他组件和服务，从 SharePoint 新式页面、Microsoft 搜索以及 Word 和 PowerPoint 中的搜索开始，向用户介绍他们日常使用的 Microsoft 365 应用中的知识。
 
 </br>
 
@@ -42,6 +42,7 @@ Viva Topics 使用 AI 自动搜索和识别组织中的 **主题**。 它会编�
 
    ![主题要点](../media/knowledge-management/saturn.png) 
 
+当您在 Word 或 PowerPoint中（通过搜索框或在上下文菜单中选择"搜索"）使用搜索时，显示的结果也可能显示主题摘要。
 
    ![显示 Word 中通过"搜索"框进行搜索的屏幕截图。](../media/knowledge-management/word-search-2.png)
 

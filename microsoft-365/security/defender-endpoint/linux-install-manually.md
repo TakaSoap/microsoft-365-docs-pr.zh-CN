@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: c13138f3d80a95dbda3a899507f662c081831d94
-ms.sourcegitcommit: 5a1cb7d95070eef47d401a4693cc137a90550a5e
+ms.openlocfilehash: c50efb11ee7f884be6788b90c14e7fc639d9b8ca
+ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52259675"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52281001"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-linux-manually"></a>在 Linux 上手动部署 Microsoft Defender for Endpoint
 
@@ -407,3 +407,6 @@ Options:
 ## <a name="uninstallation"></a>卸载
 
 请参阅 [卸载](linux-resources.md#uninstall) ，了解有关如何在 Linux 上从客户端设备中删除 Defender for Endpoint 的详细信息。
+
+## <a name="see-also"></a>另请参阅
+- [调查代理运行状况问题](health-status.md)
