@@ -8,27 +8,27 @@ manager: scotv
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
-ms.collection: Adm_Commerce_Pay
+ms.custom: CommercePayInfo
 localization_priority: Normal
-description: 了解在何处发送订阅付款。
+description: 了解在哪里发送订阅付款。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 8fd7d15de2646e601917ab9e6d66da9a29a7c2e0
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: cea5e7abb1c2ae041b32e1b9edea1ba7192e4493
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50549324"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52274120"
 ---
-# <a name="payment-information-for-botswana"></a><span data-ttu-id="9202d-103">博茨瓦纳的付款信息</span><span class="sxs-lookup"><span data-stu-id="9202d-103">Payment information for Botswana</span></span>
+# <a name="payment-information-for-botswana"></a><span data-ttu-id="2a62a-103">博茨瓦纳的付款信息</span><span class="sxs-lookup"><span data-stu-id="2a62a-103">Payment information for Botswana</span></span>
 
-<span data-ttu-id="9202d-104">[查找另一个国家/地区](../billing-and-payments/pay-for-your-subscription.md)。</span><span class="sxs-lookup"><span data-stu-id="9202d-104">[Find another country or region](../billing-and-payments/pay-for-your-subscription.md).</span></span>
+<span data-ttu-id="2a62a-104">[查找另一个国家/地区](../billing-and-payments/pay-for-your-subscription.md)。</span><span class="sxs-lookup"><span data-stu-id="2a62a-104">[Find another country or region](../billing-and-payments/pay-for-your-subscription.md).</span></span>
 
-<span data-ttu-id="9202d-105">请仅以美元支付，并参考发票 (发票) 的发票编号。</span><span class="sxs-lookup"><span data-stu-id="9202d-105">Please pay in USD only and reference your invoice number(s) on your invoice remittance.</span></span>
+<span data-ttu-id="2a62a-105">Please pay in USD only and reference your invoice number (s) on your invoice invoice invoice.</span><span class="sxs-lookup"><span data-stu-id="2a62a-105">Please pay in USD only and reference your invoice number(s) on your invoice remittance.</span></span>
 
-## <a name="electronic-funds-transfer"></a><span data-ttu-id="9202d-106">电子资金转帐</span><span class="sxs-lookup"><span data-stu-id="9202d-106">Electronic Funds Transfer</span></span>
+## <a name="electronic-funds-transfer"></a><span data-ttu-id="2a62a-106">电子资金转帐</span><span class="sxs-lookup"><span data-stu-id="2a62a-106">Electronic Funds Transfer</span></span>
 
-<span data-ttu-id="9202d-107">**Bank：** Bank， London</span><span class="sxs-lookup"><span data-stu-id="9202d-107">**Bank:** Citibank, London</span></span>  
-<span data-ttu-id="9202d-108">**SWIFT 代码：** 一个 2016 年 1 月 2 日</span><span class="sxs-lookup"><span data-stu-id="9202d-108">**SWIFT Code:** CITIGB2L</span></span>  
-<span data-ttu-id="9202d-109">**IBAN：** GB95CITI18500812510049</span><span class="sxs-lookup"><span data-stu-id="9202d-109">**IBAN:** GB95CITI18500812510049</span></span>  
-<span data-ttu-id="9202d-110">**帐号** ：12510049</span><span class="sxs-lookup"><span data-stu-id="9202d-110">**Account Number:** 12510049</span></span>  
-<span data-ttu-id="9202d-111">**帐户名称：** MICROSOFT</span><span class="sxs-lookup"><span data-stu-id="9202d-111">**Account Name:** MICROSOFT</span></span>  
+<span data-ttu-id="2a62a-107">**Bank：** 年，伦敦</span><span class="sxs-lookup"><span data-stu-id="2a62a-107">**Bank:** Citibank, London</span></span>  
+<span data-ttu-id="2a62a-108">**SWIFT 代码：** 一百万</span><span class="sxs-lookup"><span data-stu-id="2a62a-108">**SWIFT Code:** CITIGB2L</span></span>  
+<span data-ttu-id="2a62a-109">**IBAN：** GB95CITI18500812510049</span><span class="sxs-lookup"><span data-stu-id="2a62a-109">**IBAN:** GB95CITI18500812510049</span></span>  
+<span data-ttu-id="2a62a-110">**帐号** ：12510049</span><span class="sxs-lookup"><span data-stu-id="2a62a-110">**Account Number:** 12510049</span></span>  
+<span data-ttu-id="2a62a-111">**帐户名称：** MICROSOFT</span><span class="sxs-lookup"><span data-stu-id="2a62a-111">**Account Name:** MICROSOFT</span></span>  

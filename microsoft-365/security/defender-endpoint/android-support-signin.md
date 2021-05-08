@@ -17,83 +17,87 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 5f57d14427ef68280a065489e068955db9e5045a
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 18afd4aa160ec345839d23719d1b3fcce21654ec
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934797"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52246352"
 ---
-# <a name="troubleshooting-issues-on-microsoft-defender-for-endpoint-on-android"></a><span data-ttu-id="98957-104">Android 上的 Microsoft Defender for Endpoint 问题疑难解答</span><span class="sxs-lookup"><span data-stu-id="98957-104">Troubleshooting issues on Microsoft Defender for Endpoint on Android</span></span>
+# <a name="troubleshooting-issues-on-microsoft-defender-for-endpoint-on-android"></a><span data-ttu-id="f4eaa-104">Android 上的 Microsoft Defender for Endpoint 问题疑难解答</span><span class="sxs-lookup"><span data-stu-id="f4eaa-104">Troubleshooting issues on Microsoft Defender for Endpoint on Android</span></span>
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-<span data-ttu-id="98957-105">**适用于：**</span><span class="sxs-lookup"><span data-stu-id="98957-105">**Applies to:**</span></span>
-- [<span data-ttu-id="98957-106">Microsoft Defender for Endpoint</span><span class="sxs-lookup"><span data-stu-id="98957-106">Microsoft Defender for Endpoint</span></span>](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [<span data-ttu-id="98957-107">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="98957-107">Microsoft 365 Defender</span></span>](https://go.microsoft.com/fwlink/?linkid=2118804)
+<span data-ttu-id="f4eaa-105">**适用于：**</span><span class="sxs-lookup"><span data-stu-id="f4eaa-105">**Applies to:**</span></span>
+- [<span data-ttu-id="f4eaa-106">Microsoft Defender for Endpoint</span><span class="sxs-lookup"><span data-stu-id="f4eaa-106">Microsoft Defender for Endpoint</span></span>](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [<span data-ttu-id="f4eaa-107">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="f4eaa-107">Microsoft 365 Defender</span></span>](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> <span data-ttu-id="98957-108">想要体验 Microsoft Defender for Endpoint？</span><span class="sxs-lookup"><span data-stu-id="98957-108">Want to experience Microsoft Defender for Endpoint?</span></span> [<span data-ttu-id="98957-109">注册免费试用版。</span><span class="sxs-lookup"><span data-stu-id="98957-109">Sign up for a free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+> <span data-ttu-id="f4eaa-108">想要体验 Microsoft Defender for Endpoint？</span><span class="sxs-lookup"><span data-stu-id="f4eaa-108">Want to experience Microsoft Defender for Endpoint?</span></span> [<span data-ttu-id="f4eaa-109">注册免费试用版。</span><span class="sxs-lookup"><span data-stu-id="f4eaa-109">Sign up for a free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
-<span data-ttu-id="98957-110">在载入设备时，你可能会在安装应用后看到登录问题。</span><span class="sxs-lookup"><span data-stu-id="98957-110">When onboarding a device, you might see sign in issues after the app is installed.</span></span>
+<span data-ttu-id="f4eaa-110">在载入设备时，你可能会在安装应用后看到登录问题。</span><span class="sxs-lookup"><span data-stu-id="f4eaa-110">When onboarding a device, you might see sign in issues after the app is installed.</span></span>
 
-<span data-ttu-id="98957-111">在载入期间，在设备上安装应用后，你可能会遇到登录问题。</span><span class="sxs-lookup"><span data-stu-id="98957-111">During onboarding, you might encounter sign in issues after the app is installed on your device.</span></span>
+<span data-ttu-id="f4eaa-111">在载入期间，在设备上安装应用后，你可能会遇到登录问题。</span><span class="sxs-lookup"><span data-stu-id="f4eaa-111">During onboarding, you might encounter sign in issues after the app is installed on your device.</span></span>
 
-<span data-ttu-id="98957-112">本文提供的解决方案可帮助解决登录问题。</span><span class="sxs-lookup"><span data-stu-id="98957-112">This article provides solutions to help address the sign-on issues.</span></span>  
+<span data-ttu-id="f4eaa-112">本文提供的解决方案可帮助解决登录问题。</span><span class="sxs-lookup"><span data-stu-id="f4eaa-112">This article provides solutions to help address the sign-on issues.</span></span>  
 
-## <a name="sign-in-failed---unexpected-error"></a><span data-ttu-id="98957-113">登录失败 - 意外错误</span><span class="sxs-lookup"><span data-stu-id="98957-113">Sign in failed - unexpected error</span></span>
-<span data-ttu-id="98957-114">\**登录失败：意外\*\*\*错误，请稍后尝试*</span><span class="sxs-lookup"><span data-stu-id="98957-114">**Sign in failed:** *Unexpected error, try later*</span></span>
+## <a name="sign-in-failed---unexpected-error"></a><span data-ttu-id="f4eaa-113">登录失败 - 意外错误</span><span class="sxs-lookup"><span data-stu-id="f4eaa-113">Sign in failed - unexpected error</span></span>
+<span data-ttu-id="f4eaa-114">\**登录失败：意外\*\*\*错误，请稍后尝试*</span><span class="sxs-lookup"><span data-stu-id="f4eaa-114">**Sign in failed:** *Unexpected error, try later*</span></span>
 
 ![登录失败错误意外错误的图像](images/f9c3bad127d636c1f150d79814f35d4c.png)
 
-<span data-ttu-id="98957-116">**消息：**</span><span class="sxs-lookup"><span data-stu-id="98957-116">**Message:**</span></span>
+<span data-ttu-id="f4eaa-116">**消息：**</span><span class="sxs-lookup"><span data-stu-id="f4eaa-116">**Message:**</span></span>
 
-<span data-ttu-id="98957-117">意外错误，请稍后尝试</span><span class="sxs-lookup"><span data-stu-id="98957-117">Unexpected error, try later</span></span>
+<span data-ttu-id="f4eaa-117">意外错误，请稍后尝试</span><span class="sxs-lookup"><span data-stu-id="f4eaa-117">Unexpected error, try later</span></span>
 
-<span data-ttu-id="98957-118">**原因：**</span><span class="sxs-lookup"><span data-stu-id="98957-118">**Cause:**</span></span>
+<span data-ttu-id="f4eaa-118">**原因：**</span><span class="sxs-lookup"><span data-stu-id="f4eaa-118">**Cause:**</span></span>
 
-<span data-ttu-id="98957-119">设备上安装了旧版本的"Microsoft Authenticator"应用。</span><span class="sxs-lookup"><span data-stu-id="98957-119">You have an older version of "Microsoft Authenticator" app installed on your device.</span></span>
+<span data-ttu-id="f4eaa-119">设备上安装了较旧版本的"Microsoft Authenticator"应用。</span><span class="sxs-lookup"><span data-stu-id="f4eaa-119">You have an older version of "Microsoft Authenticator" app installed on your device.</span></span>
 
-<span data-ttu-id="98957-120">**解决方案：**</span><span class="sxs-lookup"><span data-stu-id="98957-120">**Solution:**</span></span>
+<span data-ttu-id="f4eaa-120">**解决方案：**</span><span class="sxs-lookup"><span data-stu-id="f4eaa-120">**Solution:**</span></span>
 
-<span data-ttu-id="98957-121">从 Google Play 应用商店安装最新版本和 [Microsoft Authenticator](https://play.google.com/store/apps/details?androidid=com.azure.authenticator) 并重试</span><span class="sxs-lookup"><span data-stu-id="98957-121">Install latest version and of [Microsoft Authenticator](https://play.google.com/store/apps/details?androidid=com.azure.authenticator) from Google Play Store and try again</span></span>
+<span data-ttu-id="f4eaa-121">从 Google Play 应用商店[Microsoft Authenticator](https://play.google.com/store/apps/details?androidid=com.azure.authenticator)最新版本和版本，然后重试</span><span class="sxs-lookup"><span data-stu-id="f4eaa-121">Install latest version and of [Microsoft Authenticator](https://play.google.com/store/apps/details?androidid=com.azure.authenticator) from Google Play Store and try again</span></span>
 
-## <a name="sign-in-failed---invalid-license"></a><span data-ttu-id="98957-122">登录失败 - 许可证无效</span><span class="sxs-lookup"><span data-stu-id="98957-122">Sign in failed - invalid license</span></span>
+## <a name="sign-in-failed---invalid-license"></a><span data-ttu-id="f4eaa-122">登录失败 - 许可证无效</span><span class="sxs-lookup"><span data-stu-id="f4eaa-122">Sign in failed - invalid license</span></span>
 
-<span data-ttu-id="98957-123">\**登录失败：许可证\*\*\*无效，请联系管理员*</span><span class="sxs-lookup"><span data-stu-id="98957-123">**Sign in failed:** *Invalid license, please contact administrator*</span></span>
+<span data-ttu-id="f4eaa-123">\**登录失败：许可证\*\*\*无效，请联系管理员*</span><span class="sxs-lookup"><span data-stu-id="f4eaa-123">**Sign in failed:** *Invalid license, please contact administrator*</span></span>
 
 ![登录失败的图像请联系管理员](images/920e433f440fa1d3d298e6a2a43d4811.png)
 
-<span data-ttu-id="98957-125">\**邮件：\*\*\*许可证无效，请联系管理员*</span><span class="sxs-lookup"><span data-stu-id="98957-125">**Message:** *Invalid license, please contact administrator*</span></span>
+<span data-ttu-id="f4eaa-125">\**邮件：\*\*\*许可证无效，请联系管理员*</span><span class="sxs-lookup"><span data-stu-id="f4eaa-125">**Message:** *Invalid license, please contact administrator*</span></span>
 
-<span data-ttu-id="98957-126">**原因：**</span><span class="sxs-lookup"><span data-stu-id="98957-126">**Cause:**</span></span>
+<span data-ttu-id="f4eaa-126">**原因：**</span><span class="sxs-lookup"><span data-stu-id="f4eaa-126">**Cause:**</span></span>
 
-<span data-ttu-id="98957-127">你未分配 Microsoft 365 许可证，或者你的组织没有 Microsoft 365 企业版订阅的许可证。</span><span class="sxs-lookup"><span data-stu-id="98957-127">You do not have Microsoft 365 license assigned, or your organization does not have a license for Microsoft 365 Enterprise subscription.</span></span>
+<span data-ttu-id="f4eaa-127">您未分配Microsoft 365许可证，或者您的组织没有用于订阅Microsoft 365 企业版许可证。</span><span class="sxs-lookup"><span data-stu-id="f4eaa-127">You do not have Microsoft 365 license assigned, or your organization does not have a license for Microsoft 365 Enterprise subscription.</span></span>
 
-<span data-ttu-id="98957-128">**解决方案：**</span><span class="sxs-lookup"><span data-stu-id="98957-128">**Solution:**</span></span>
+<span data-ttu-id="f4eaa-128">**解决方案：**</span><span class="sxs-lookup"><span data-stu-id="f4eaa-128">**Solution:**</span></span>
 
-<span data-ttu-id="98957-129">请与管理员联系以寻求帮助。</span><span class="sxs-lookup"><span data-stu-id="98957-129">Contact your administrator for help.</span></span>
+<span data-ttu-id="f4eaa-129">请与管理员联系以寻求帮助。</span><span class="sxs-lookup"><span data-stu-id="f4eaa-129">Contact your administrator for help.</span></span>
 
-## <a name="phishing-pages-arent-blocked-on-some-oem-devices"></a><span data-ttu-id="98957-130">某些 OEM 设备上不会阻止网络钓鱼页面</span><span class="sxs-lookup"><span data-stu-id="98957-130">Phishing pages aren't blocked on some OEM devices</span></span>
+## <a name="report-unsafe-site"></a><span data-ttu-id="f4eaa-130">报告不安全网站</span><span class="sxs-lookup"><span data-stu-id="f4eaa-130">Report unsafe site</span></span>
 
-<span data-ttu-id="98957-131">**适用于：** 仅特定 OEM</span><span class="sxs-lookup"><span data-stu-id="98957-131">**Applies to:** Specific OEMs only</span></span>
+<span data-ttu-id="f4eaa-131">网络钓鱼网站会模拟可信赖的网站，以获取你的个人或财务信息。</span><span class="sxs-lookup"><span data-stu-id="f4eaa-131">Phishing websites impersonate trustworthy websites for the purpose of obtaining your personal or financial information.</span></span> <span data-ttu-id="f4eaa-132">如果要 [报告可能是网络钓鱼](https://www.microsoft.com/wdsi/filesubmission/exploitguard/networkprotection) 网站的网站，请访问提供有关网络保护的反馈页面。</span><span class="sxs-lookup"><span data-stu-id="f4eaa-132">Visit the [Provide feedback about network protection](https://www.microsoft.com/wdsi/filesubmission/exploitguard/networkprotection) page if you want to report a website that could be a phishing site.</span></span>
 
--   <span data-ttu-id="98957-132">**小米**</span><span class="sxs-lookup"><span data-stu-id="98957-132">**Xiaomi**</span></span>
+## <a name="phishing-pages-arent-blocked-on-some-oem-devices"></a><span data-ttu-id="f4eaa-133">某些 OEM 设备上不会阻止网络钓鱼页面</span><span class="sxs-lookup"><span data-stu-id="f4eaa-133">Phishing pages aren't blocked on some OEM devices</span></span>
 
-<span data-ttu-id="98957-133">某些用户不会阻止 Defender for Android 终结点检测到的网络钓鱼和有害的 Web 威胁。</span><span class="sxs-lookup"><span data-stu-id="98957-133">Phishing and harmful web threats that are detected by Defender for Endpoint for Android are not blocked on some Xiaomi devices.</span></span> <span data-ttu-id="98957-134">以下功能在这些设备上不起作用。</span><span class="sxs-lookup"><span data-stu-id="98957-134">The following functionality doesn't work on these devices.</span></span>
+<span data-ttu-id="f4eaa-134">**适用于：** 仅特定 OEM</span><span class="sxs-lookup"><span data-stu-id="f4eaa-134">**Applies to:** Specific OEMs only</span></span>
+
+-   <span data-ttu-id="f4eaa-135">**小米**</span><span class="sxs-lookup"><span data-stu-id="f4eaa-135">**Xiaomi**</span></span>
+
+<span data-ttu-id="f4eaa-136">某些用户不会阻止 Defender for Android 终结点检测到的网络钓鱼和有害的 Web 威胁。</span><span class="sxs-lookup"><span data-stu-id="f4eaa-136">Phishing and harmful web threats that are detected by Defender for Endpoint for Android are not blocked on some Xiaomi devices.</span></span> <span data-ttu-id="f4eaa-137">以下功能在这些设备上不起作用。</span><span class="sxs-lookup"><span data-stu-id="f4eaa-137">The following functionality doesn't work on these devices.</span></span>
 
 ![报告不安全网站的图像](images/0c04975c74746a5cdb085e1d9386e713.png)
 
 
-<span data-ttu-id="98957-136">**原因：**</span><span class="sxs-lookup"><span data-stu-id="98957-136">**Cause:**</span></span>
+<span data-ttu-id="f4eaa-139">**原因：**</span><span class="sxs-lookup"><span data-stu-id="f4eaa-139">**Cause:**</span></span>
 
-<span data-ttu-id="98957-137">用户设备包括新的权限模型。</span><span class="sxs-lookup"><span data-stu-id="98957-137">Xiaomi devices include a new permission model.</span></span> <span data-ttu-id="98957-138">这将阻止 Defender for Endpoint for Android 在后台运行时显示弹出窗口。</span><span class="sxs-lookup"><span data-stu-id="98957-138">This prevents Defender for Endpoint for Android from displaying pop-up windows while it runs in the background.</span></span>
+<span data-ttu-id="f4eaa-140">用户设备包括新的权限模型。</span><span class="sxs-lookup"><span data-stu-id="f4eaa-140">Xiaomi devices include a new permission model.</span></span> <span data-ttu-id="f4eaa-141">这将阻止 Defender for Endpoint for Android 在后台运行时显示弹出窗口。</span><span class="sxs-lookup"><span data-stu-id="f4eaa-141">This prevents Defender for Endpoint for Android from displaying pop-up windows while it runs in the background.</span></span>
 
-<span data-ttu-id="98957-139">用户权限："在后台运行时显示弹出窗口"。</span><span class="sxs-lookup"><span data-stu-id="98957-139">Xiaomi devices permission: "Display pop-up windows while running in the background."</span></span>
+<span data-ttu-id="f4eaa-142">用户权限："在后台运行时显示弹出窗口"。</span><span class="sxs-lookup"><span data-stu-id="f4eaa-142">Xiaomi devices permission: "Display pop-up windows while running in the background."</span></span>
 
 ![弹出窗口设置的图像](images/6e48e7b29daf50afddcc6c8c7d59fd64.png)
 
-<span data-ttu-id="98957-141">**解决方案：**</span><span class="sxs-lookup"><span data-stu-id="98957-141">**Solution:**</span></span>
+<span data-ttu-id="f4eaa-144">**解决方案：**</span><span class="sxs-lookup"><span data-stu-id="f4eaa-144">**Solution:**</span></span>
 
-<span data-ttu-id="98957-142">对一些设备启用所需的权限。</span><span class="sxs-lookup"><span data-stu-id="98957-142">Enable the required permission on Xiaomi devices.</span></span>
+<span data-ttu-id="f4eaa-145">对一些设备启用所需的权限。</span><span class="sxs-lookup"><span data-stu-id="f4eaa-145">Enable the required permission on Xiaomi devices.</span></span>
 
-- <span data-ttu-id="98957-143">在后台运行时显示弹出窗口。</span><span class="sxs-lookup"><span data-stu-id="98957-143">Display pop-up windows while running in the background.</span></span>
+- <span data-ttu-id="f4eaa-146">在后台运行时显示弹出窗口。</span><span class="sxs-lookup"><span data-stu-id="f4eaa-146">Display pop-up windows while running in the background.</span></span>

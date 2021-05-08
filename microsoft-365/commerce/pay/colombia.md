@@ -8,28 +8,28 @@ manager: scotv
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
-ms.collection: Adm_Commerce_Pay
+ms.custom: CommercePayInfo
 localization_priority: Normal
-description: 了解在何处发送订阅付款。
+description: 了解在哪里发送订阅付款。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: bdbce6512833c0ab9f17fde115d6ada0e42dd8c7
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: de07b6ece0932ca76100470b01d1a2b593cfe1d6
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50551712"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52274000"
 ---
-# <a name="payment-information-for-colombia"></a><span data-ttu-id="e6315-103">哥伦比亚的付款信息</span><span class="sxs-lookup"><span data-stu-id="e6315-103">Payment information for Colombia</span></span>
+# <a name="payment-information-for-colombia"></a><span data-ttu-id="9e907-103">哥伦比亚的付款信息</span><span class="sxs-lookup"><span data-stu-id="9e907-103">Payment information for Colombia</span></span>
 
-<span data-ttu-id="e6315-104">[查找另一个国家/地区](../billing-and-payments/pay-for-your-subscription.md)。</span><span class="sxs-lookup"><span data-stu-id="e6315-104">[Find another country or region](../billing-and-payments/pay-for-your-subscription.md).</span></span>
+<span data-ttu-id="9e907-104">[查找另一个国家/地区](../billing-and-payments/pay-for-your-subscription.md)。</span><span class="sxs-lookup"><span data-stu-id="9e907-104">[Find another country or region](../billing-and-payments/pay-for-your-subscription.md).</span></span>
 
-<span data-ttu-id="e6315-105">请仅以菲律宾元支付。</span><span class="sxs-lookup"><span data-stu-id="e6315-105">Please pay in Colombian Pesos only.</span></span> <span data-ttu-id="e6315-106">要处理的付款，公司名称和发票 (必须) 付款建议提供。</span><span class="sxs-lookup"><span data-stu-id="e6315-106">For payment to be processed, your company name and invoice number(s) must be provided on remittance advice.</span></span>
+<span data-ttu-id="9e907-105">请仅支付到百分之五十。</span><span class="sxs-lookup"><span data-stu-id="9e907-105">Please pay in Colombian Pesos only.</span></span> <span data-ttu-id="9e907-106">对于要处理的付款，你的公司名称和发票 (必须提供) 的建议。</span><span class="sxs-lookup"><span data-stu-id="9e907-106">For payment to be processed, your company name and invoice number(s) must be provided on remittance advice.</span></span>
 
-## <a name="electronic-funds-transfer"></a><span data-ttu-id="e6315-107">电子资金转帐</span><span class="sxs-lookup"><span data-stu-id="e6315-107">Electronic Funds Transfer</span></span>
+## <a name="electronic-funds-transfer"></a><span data-ttu-id="9e907-107">电子资金转帐</span><span class="sxs-lookup"><span data-stu-id="9e907-107">Electronic Funds Transfer</span></span>
 
-<span data-ttu-id="e6315-108">**Bank：** Bank，波波大;</span><span class="sxs-lookup"><span data-stu-id="e6315-108">**Bank:** Citibank, Bogota;</span></span>  
-<span data-ttu-id="e6315-109">**银行代码：09**</span><span class="sxs-lookup"><span data-stu-id="e6315-109">**Bank Code:** 09</span></span>  
-<span data-ttu-id="e6315-110">**SWIFT 代码：** 中国电信</span><span class="sxs-lookup"><span data-stu-id="e6315-110">**SWIFT Code:** CITICOBB</span></span>  
-<span data-ttu-id="e6315-111"> NIT：800.198.591-3</span><span class="sxs-lookup"><span data-stu-id="e6315-111">**NIT:** 800.198.591-3</span></span>  
-<span data-ttu-id="e6315-112">**帐号** ：0060534055</span><span class="sxs-lookup"><span data-stu-id="e6315-112">**Account Number:** 0060534055</span></span>  
-<span data-ttu-id="e6315-113">**帐户名称：** Microsoft 哥伦比亚分公司</span><span class="sxs-lookup"><span data-stu-id="e6315-113">**Account Name:** Branch of Microsoft Colombia Inc.</span></span>   
+<span data-ttu-id="9e907-108">**Bank：** 特克斯库、波多大;</span><span class="sxs-lookup"><span data-stu-id="9e907-108">**Bank:** Citibank, Bogota;</span></span>  
+<span data-ttu-id="9e907-109">**银行代码：09**</span><span class="sxs-lookup"><span data-stu-id="9e907-109">**Bank Code:** 09</span></span>  
+<span data-ttu-id="9e907-110">**SWIFT 代码：** 一百万</span><span class="sxs-lookup"><span data-stu-id="9e907-110">**SWIFT Code:** CITICOBB</span></span>  
+<span data-ttu-id="9e907-111"> NIT：800.198.591-3</span><span class="sxs-lookup"><span data-stu-id="9e907-111">**NIT:** 800.198.591-3</span></span>  
+<span data-ttu-id="9e907-112">**帐号** ：0060534055</span><span class="sxs-lookup"><span data-stu-id="9e907-112">**Account Number:** 0060534055</span></span>  
+<span data-ttu-id="9e907-113">**帐户名称：** Microsoft 哥伦比亚公司的分支机构</span><span class="sxs-lookup"><span data-stu-id="9e907-113">**Account Name:** Branch of Microsoft Colombia Inc.</span></span>   
