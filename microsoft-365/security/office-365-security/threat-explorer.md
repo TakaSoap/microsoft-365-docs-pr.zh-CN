@@ -19,12 +19,12 @@ description: 使用安全与合规中心中的资源管理器和实时检测有�
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: c6bea6cb60579263515d21e159c4032fe4281cad
-ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
+ms.openlocfilehash: 810b5c99aa239f295fd930c1d13a6a817012b18b
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52024177"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245560"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>威胁资源管理器和实时检测
 
@@ -32,13 +32,13 @@ ms.locfileid: "52024177"
 - [Microsoft Defender for Office 365 计划 1 和计划 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-如果你的组织拥有 [适用于 Office 365](defender-for-office-365.md)的 Microsoft Defender，并且你拥有必要的权限，则你拥有资源管理器或实时检测 (以前是实时报告 *-查看* 新增功能 [！) 。](#new-features-in-threat-explorer-and-real-time-detections) [](#required-licenses-and-permissions) 在安全&合规中心，转到"**威胁** 管理"，然后选择"**资源管理器**"_或_**"实时检测"。**
+如果你的组织具有适用于 Office 365 的 [Microsoft Defender，](defender-for-office-365.md)并且你拥有必要的权限，则你拥有资源管理器或实时检测 (以前是实时报告 *—* 请参阅新增功能 ！) 。 [](#new-features-in-threat-explorer-and-real-time-detections) [](#required-licenses-and-permissions) 在安全&合规中心，转到"**威胁** 管理"，然后选择"**资源管理器**"_或_**"实时检测"。**
 
 <br>
 
 ****
 
-|借助 Microsoft Defender for Office 365 计划 2，可以看到：|借助 Microsoft Defender for Office 365 计划 1，可以看到：|
+|借助 Microsoft Defender for Office 365计划 2，你将看到：|借助 Microsoft Defender for Office 365 计划 1，可以看到：|
 |---|---|
 |![威胁资源管理器](../../media/threatmgmt-explorer.png)|![实时检测](../../media/threatmgmt-realtimedetections.png)|
 |
@@ -49,7 +49,7 @@ ms.locfileid: "52024177"
 
 通过此报告，您可以：
 
-- [查看 Microsoft 365 安全功能检测到的恶意软件](#see-malware-detected-in-email-by-technology)
+- [查看由安全Microsoft 365检测到的恶意软件](#see-malware-detected-in-email-by-technology)
 - [查看网络钓鱼 URL 并单击裁定数据](#view-phishing-url-and-click-verdict-data)
 - [仅从 Explorer (](#start-automated-investigation-and-response) Defender for Office 365 计划 2 中的视图启动自动调查和响应) 
 - [调查恶意电子邮件等](#more-ways-to-use-explorer-and-real-time-detections)
@@ -71,7 +71,7 @@ ms.locfileid: "52024177"
 
 ### <a name="extending-the-explorer-and-real-time-detections-data-retention-and-search-limit-for-trial-tenants-from-7-to-30-days-preview"></a>扩展 Explorer (和实时检测) 预览版中试用版租户的数据保留和搜索限制从 7 天 (30) 
 
-作为此更改的一部分，你将能够在威胁资源管理器/实时检测（适用于 Office P1 和 P2 试用租户的 Defender）中搜索和筛选电子邮件数据 (这一点比前 7 天) 增加了。
+作为此更改的一部分，你将能够在威胁资源管理器中搜索并筛选 30 天内的电子邮件数据 (这一点比针对 Office P1 和 P2 试用租户的 Defender 前 7 天) 增加了。
 这不会影响 P1 和 P2/E5 客户的任何生产租户，这已具有 30 天的数据保留和搜索功能。
 
 ### <a name="updated-limits-for-export-of-records-for-threat-explorer-preview"></a>更新了威胁资源管理器预览版中导出 (限制) 
@@ -81,7 +81,7 @@ ms.locfileid: "52024177"
 ### <a name="tags-in-threat-explorer"></a>威胁资源管理器中的标记
 
 > [!NOTE]
-> 用户标记功能在 *预览版* 中，并非对所有人都可用，并且可能会更改。 有关发布计划的信息，请查看 Microsoft 365 路线图。
+> 用户标记功能在 *预览版* 中，并非对所有人都可用，并且可能会更改。 有关发布计划的信息，请查看Microsoft 365路线图。
 
 用户标记标识 Microsoft Defender for Office 365 中的特定用户组。 有关标记（包括许可和配置）的信息，请参阅 [用户标记](user-tags.md)。
 
@@ -179,17 +179,14 @@ URL 单击飞出也显示标记信息。 若要查看它，请转到网络钓鱼
 *在电子邮件* 传递后应用了其他操作。 它们可以包括 *ZAP、 (* 管理员采取的操作（如软删除) 、动态传递和重新处理 *(）* 针对被反向检测为) 。 
 
 > [!NOTE]
->
-> - 作为挂起更改的一部分，当前在"传递操作"筛选器中显示"由 ZAP 删除"值将消失。 你将有一种方法通过"其他操作"通过 ZAP 尝试搜索 **所有电子邮件**。
->
-> - 检测技术和其他操作将具有新的字段和值 **， (适用于** ZAP) 。 您需要评估现有的已保存查询和跟踪查询，以确保它们使用新值。
+> 作为挂起更改的一部分，当前在"传递操作"筛选器中显示"由 ZAP 删除"值将消失。 你将有一种方法通过"其他操作"通过 ZAP 尝试搜索 **所有电子邮件**。
 
 > [!div class="mx-imgBorder"]
 > ![资源管理器中的其他操作](../../media/Additional_Actions.png)
 
 ### <a name="system-overrides"></a>系统覆盖
 
-*系统覆盖* 使您能够对邮件的预定传递位置进行例外。 根据筛选堆栈确定的威胁和其他检测，你可以覆盖系统提供的传递位置。 可以通过租户或用户策略设置系统覆盖，以根据策略的建议传递邮件。 替代可以标识由于配置差异（如用户设置过宽的安全发件人策略）而意外传递恶意邮件。 这些替代值可以是：
+*系统覆盖* 使您能够对邮件的预定传递位置进行例外。 根据筛选堆栈确定的威胁和其他检测，你可以覆盖系统提供的传递位置。 可以通过租户或用户策略设置系统覆盖，以根据策略的建议传递邮件。 替代可以标识由于配置差异（例如，用户设置的发件人策略范围过宽保险箱发送恶意邮件的意外传递。 这些替代值可以是：
 
 - 用户策略允许：用户在邮箱级别创建策略以允许域或发件人。
 
@@ -285,9 +282,9 @@ ZAP URL 信号通常用于 ZAP 网络钓鱼警报方案，其中电子邮件被�
 > [!div class="mx-imgBorder"]
 > ![主要目标用户](../../media/Top_Targeted_Users.png)
 
-### <a name="exchange-transport-rules"></a>Exchange 传输规则
+### <a name="exchange-transport-rules"></a>Exchange传输规则
 
-作为数据扩充的一部分，你将能够看到应用于邮件的所有 (ETR) Exchange 传输规则。 此信息将在电子邮件网格视图中提供。 若要查看它，请选择网格 **中的列** 选项，然后从列选项添加 **Exchange** 传输规则。 它还将在电子邮件的" **详细信息** "飞出内容上可见。
+作为数据扩充的一部分，你将能够看到应用于邮件的所有Exchange ETR (ETR) 传输规则。 此信息将在电子邮件网格视图中提供。 若要查看它，请选择网格 **中的列** 选项，然后从Exchange **添加** 传输规则。 它还将在电子邮件的" **详细信息** "飞出内容上可见。
 
 您将能够查看已应用于邮件的传输规则的 GUID 和名称。 您将能够使用传输规则的名称搜索邮件。 这是一个"包含"搜索，这意味着您也可以执行部分搜索。
 
@@ -296,7 +293,7 @@ ZAP URL 信号通常用于 ZAP 网络钓鱼警报方案，其中电子邮件被�
 >
 > - 仅 EXO - 数据丢失防护：全部
 > - 仅 EXO - O365SupportViewConfig：全部
-> - Microsoft Azure Active Directory 或 EXO - 安全管理员：全部
+> - Microsoft Azure Active Directory或 EXO - 安全管理员：全部
 > - AAD 或 EXO - 安全读者：全部
 > - 仅 EXO - 传输规则：全部
 > - 仅 EXO - View-Only配置：全部
@@ -304,11 +301,11 @@ ZAP URL 信号通常用于 ZAP 网络钓鱼警报方案，其中电子邮件被�
 > 在电子邮件网格、详细信息飞出控件和导出的 CSV 中，ETR 将显示一个名称/GUID，如下所示。
 >
 > > [!div class="mx-imgBorder"]
-> > ![Exchange 传输规则](../../media/ETR_Details.png)
+> > ![Exchange传输规则](../../media/ETR_Details.png)
 
 ### <a name="inbound-connectors"></a>入站连接器
 
-连接器是一组说明，用于自定义电子邮件在 Microsoft 365 或 Office 365 组织之间流动和流出。 它们使您能够应用任何安全限制或控件。 在威胁资源管理器中，你现在可以查看与电子邮件相关的连接器，然后使用连接器名称搜索电子邮件。
+连接器是一组说明，用于自定义电子邮件在组织或组织Microsoft 365 Office 365流。 它们使您能够应用任何安全限制或控件。 在威胁资源管理器中，你现在可以查看与电子邮件相关的连接器，然后使用连接器名称搜索电子邮件。
 
 连接器的搜索本质上是"包含"的，这意味着部分关键字搜索也应正常工作。 在主网格视图、"详细信息"飞出控件和导出的 CSV 中，连接器以名称/GUID 格式显示，如下所示：
 
@@ -375,7 +372,7 @@ ZAP URL 信号通常用于 ZAP 网络钓鱼警报方案，其中电子邮件被�
 
 |已传递|垃圾邮件|Blocked|已替换|
 |---|---|---|---|
-|电子邮件已传递到用户的收件箱或文件夹，用户可以访问它。|电子邮件已发送到用户的"垃圾邮件"或"已删除"文件夹，用户可以访问它。|被隔离、失败或已丢弃的电子邮件。 用户无法访问这些邮件。|电子邮件具有由 .txt 文件取代的恶意附件，这些文件指出附件是恶意附件。|
+|电子邮件已传递到用户的收件箱或文件夹，用户可以访问它。|电子邮件已发送到用户的"垃圾邮件"或"已删除"文件夹，用户可以访问它。|被隔离、失败或已丢弃的电子邮件。 用户无法访问这些邮件。|电子邮件的恶意附件替换为.txt附件是恶意附件的附件。|
 |
 
 下面是用户可以看到和看不到的：
@@ -404,11 +401,11 @@ ZAP URL 信号通常用于 ZAP 网络钓鱼警报方案，其中电子邮件被�
 
 电子邮件 **时间线** 是一种新的资源管理器功能，可改善管理员的搜寻体验。 它减少检查不同位置以尝试了解事件所花的时间。 当在电子邮件到达的同一时间或接近同一时间发生多个事件时，这些事件将显示在时间线视图中。 在"特殊操作"列中捕获在电子邮件传递后发生的一 **些** 事件。 管理员可以将时间线的信息与对邮件传递后采取的特殊操作相结合，以深入了解其策略如何工作、邮件最终路由在何处，在某些情况下，最终评估是什么。
 
-有关详细信息，请参阅调查和修正在 [Office 365 中传递的恶意电子邮件](investigate-malicious-email-that-was-delivered.md)。
+有关详细信息，请参阅调查和修正在 Office 365[中传递的恶意Office 365。](investigate-malicious-email-that-was-delivered.md)
 
 ### <a name="export-url-click-data"></a>导出 URL 单击数据
 
-现在可以将 URL 单击的报告导出到 Microsoft Excel 以查看其网络消息 **ID** 并单击 **裁定**，这有助于说明 URL 单击流量的来源。 它的工作原理如下：在 Office 365 快速启动栏上的威胁管理中，按照此链操作：
+现在，可以将 URL 单击报告导出到Microsoft Excel查看其网络消息 **ID** 并单击 **"** 裁定"，这有助于说明 URL 单击流量的来源。 它的工作原理如下：在快速启动Office 365上的威胁管理中，按照此链操作：
 
 **资源管理器** \>**查看钓鱼邮件** \>**单击** \>**顶部 URL 或** **URL 顶部单击** \> 选择任意记录以打开 URL 飞出。
 
@@ -426,7 +423,7 @@ ZAP URL 信号通常用于 ZAP 网络钓鱼警报方案，其中电子邮件被�
 
 ## <a name="see-malware-detected-in-email-by-technology"></a>查看通过电子邮件技术检测到的恶意软件
 
-假设你想要查看在按 Microsoft 365 技术排序的电子邮件中检测到的恶意软件。 为此，请使用 Explorer > 或 [实时检测 (](threat-explorer-views.md#email--malware) 的"电子邮件和恶意软件") 。
+假设您希望查看在按技术排序的电子邮件Microsoft 365恶意软件。 为此，请使用 Explorer > 或 [实时检测 (](threat-explorer-views.md#email--malware) 的"电子邮件和恶意软件") 。
 
 1. 在安全&中心 () ，选择"威胁管理资源管理器 (<https://protection.office.com> 或实时检测 \> ) 。   (此示例使用 Explorer.) 
 
@@ -451,7 +448,7 @@ ZAP URL 信号通常用于 ZAP 网络钓鱼警报方案，其中电子邮件被�
 
 ## <a name="view-phishing-url-and-click-verdict-data"></a>查看网络钓鱼 URL 并单击裁定数据
 
-假设你想要查看通过电子邮件中的 URL 的网络钓鱼尝试，包括允许、阻止和覆盖的 URL 列表。 若要标识单击的 URL， [必须配置](safe-links.md) 安全链接。 请确保为单击时保护 [和安全](set-up-safe-links-policies.md) 链接记录单击裁定设置安全链接策略。
+假设你想要查看通过电子邮件中的 URL 的网络钓鱼尝试，包括允许、阻止和覆盖的 URL 列表。 若要标识单击的[URL，保险箱链接](safe-links.md)。 请确保为单击保险箱和单击[](set-up-safe-links-policies.md)裁定的日志记录设置"链接"策略保险箱链接" 。
 
 若要查看邮件中的网络钓鱼 URL 并单击网络钓鱼邮件中的 URL，请使用资源管理器的电子邮件[  >  ](threat-explorer-views.md#email--phish)网络钓鱼视图或实时检测。
 
@@ -473,7 +470,7 @@ ZAP URL 信号通常用于 ZAP 网络钓鱼警报方案，其中电子邮件被�
 
    - **顶部 URL** 是筛选到的邮件中的 URL，每个 URL 的电子邮件传递操作计数。 在网络钓鱼电子邮件视图中，此列表通常包含合法 URL。 攻击者在邮件中混合了好 URL 和坏 URL，以尝试传递这些 URL，但它们会使恶意链接看起来更有趣。 URL 表按总电子邮件计数排序，但隐藏此列以简化视图。
 
-   - **点击** 量最高是单击的安全链接包装 URL，按总点击数排序。 此列也不显示，以简化视图。 按列的总计数指示每个单击的 URL 的安全链接单击裁定计数。 在网络钓鱼电子邮件视图中，这些 URL 通常是可疑或恶意 URL。 但是，该视图可能包含不是威胁但包含钓鱼邮件中的 URL。 此处不会显示对未包链接的 URL 单击。
+   - **点击量** 最高是保险箱链接包装的 URL，按总点击数排序。 此列也不显示，以简化视图。 按列的总计数指示每个保险箱 URL 的链接单击裁定计数。 在网络钓鱼电子邮件视图中，这些 URL 通常是可疑或恶意 URL。 但是，该视图可能包含不是威胁但包含钓鱼邮件中的 URL。 此处不会显示对未包链接的 URL 单击。
 
    这两个 URL 表按传递操作和位置显示网络钓鱼电子邮件中的顶部 URL。 这些表显示了尽管出现警告仍被阻止或访问的 URL 单击，因此你可以看到向用户显示哪些潜在的错误链接以及用户点击了哪些链接。 在这里，你可以进行进一步分析。 例如，在图表下方，可以看到在组织环境中被阻止的电子邮件中的顶部 URL。
 
@@ -516,12 +513,12 @@ ZAP URL 信号通常用于 ZAP 网络钓鱼警报方案，其中电子邮件被�
    > [!div class="mx-imgBorder"]
    > ![用户报告的网络钓鱼](../../media/EmailUserReportedReportType.png)
 
-报告将刷新以显示有关组织中人员报告为网络钓鱼尝试的电子邮件的数据。 可以使用此信息进行进一步分析，如有必要，还可以在 Microsoft Defender [for Office 365](configure-atp-anti-phishing-policies.md)中调整反网络钓鱼策略。
+报告将刷新以显示有关组织中人员报告为网络钓鱼尝试的电子邮件的数据。 可以使用此信息进行进一步分析，如有必要，在 Microsoft Defender 中调整反网络钓鱼策略[，Office 365。](configure-atp-anti-phishing-policies.md)
 
 ## <a name="start-automated-investigation-and-response"></a>启动自动调查和响应
 
 > [!NOTE]
-> Microsoft Defender for *Office 365 计划 2* 和 Office *365 E5* 中提供了自动调查和响应功能。
+> Microsoft Defender for *Office 365 Plan 2* and *Office 365 E5 中提供了自动调查和响应功能*。
 
 [自动调查和响应](automated-investigation-response-office.md) 可以节省安全运营团队在调查和缓解网络攻击上花费的时间和精力。 除了配置可触发安全手册的警报之外，还可以从资源管理器中的视图启动自动调查和响应过程。 有关详细信息，请参阅 [示例：安全管理员从资源管理器触发调查](automated-investigation-response-office.md#example-a-security-administrator-triggers-an-investigation-from-threat-explorer)。
 
@@ -530,28 +527,28 @@ ZAP URL 信号通常用于 ZAP 网络钓鱼警报方案，其中电子邮件被�
 除了本文中概述的方案之外，资源管理器或实时检测功能中还 (更多报告) 。 另请参阅以下文章：
 
 - [查找和调查投递的恶意电子邮件](investigate-malicious-email-that-was-delivered.md)
-- [查看在 SharePoint Online、OneDrive 和 Microsoft Teams 中检测到的恶意文件](./mdo-for-spo-odb-and-teams.md)
+- [查看在 SharePoint Online、OneDrive 和 Microsoft Teams](./mdo-for-spo-odb-and-teams.md)
 - [大致了解威胁资源管理器中的 (和实时检测) ](threat-explorer-views.md)
 - [威胁防护状态报告](view-email-security-reports.md#threat-protection-status-report)
 - [Microsoft 365 Defender 中的自动调查和响应](../defender/m365d-autoir.md)
 
 ## <a name="required-licenses-and-permissions"></a>所需的许可证和权限
 
-必须具有适用于 [Office 365](defender-for-office-365.md) 的 Microsoft Defender，以使用资源管理器或实时检测。
+你必须拥有[Microsoft Defender Office 365](defender-for-office-365.md)使用资源管理器或实时检测。
 
-- 资源管理器包含在 Defender for Office 365 计划 2 中。
-- 实时检测报告包含在 Defender for Office 365 计划 1 中。
-- 计划为应受 Office 365 Defender 保护的所有用户分配许可证。 资源管理器和实时检测显示许可用户的检测数据。
+- 资源管理器包含在计划 2 Office 365 Defender 中。
+- 实时检测报告包含在计划 1 的 Defender Office 365中。
+- 计划为应受 Defender for Office 365 保护的所有用户分配Office 365。 资源管理器和实时检测显示许可用户的检测数据。
 
 若要查看和使用资源管理器或实时检测，您必须具有适当的权限，例如授予安全管理员或安全读者的权限。
 
 - 对于安全&合规中心，必须分配以下角色之一：
 
   - 组织管理
-  - 安全 (可以在 Azure Active Directory 管理中心管理中心 <https://aad.portal.azure.com> () 
+  - 安全 (可以在管理中心Azure Active Directory分配 <https://aad.portal.azure.com> () 
   - 安全读取者
 
-- 对于 Exchange Online，必须在 Exchange 管理中心或 <https://admin.protection.outlook.com/ecp/> Exchange Online PowerShell () 分配以下 [角色之一](/powershell/exchange/exchange-online-powershell)：
+- For Exchange Online， you must have one of the following roles assigned in either the Exchange admin center <https://admin.protection.outlook.com/ecp/> () or Exchange Online [PowerShell：](/powershell/exchange/exchange-online-powershell)
 
   - 组织管理
   - 仅查看组织管理
@@ -565,10 +562,10 @@ ZAP URL 信号通常用于 ZAP 网络钓鱼警报方案，其中电子邮件被�
 
 ## <a name="differences-between-threat-explorer-and-real-time-detections"></a>威胁资源管理器和实时检测之间的差异
 
-- *实时检测报告在* Defender for Office 365 计划 1 中提供。 *威胁资源管理器* 在 Office 365 计划 2 的 Defender 中可用。
+- *实时检测报告在* Defender for Office 365 计划 1 中提供。 *威胁资源管理器* 在 Defender for Office 365计划 2 中可用。
 - 实时检测报告允许你实时查看检测。 威胁资源管理器也这样做，但它还提供了给定攻击的其他详细信息。
 - " *所有电子邮件* "视图在威胁资源管理器中可用，但在实时检测报告中不可用。
-- 威胁资源管理器中包含更多筛选功能和可用操作。 有关详细信息，请参阅 [Microsoft Defender for Office 365 服务说明：跨 Defender for Office 365 计划的功能可用性](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans)。
+- 威胁资源管理器中包含更多筛选功能和可用操作。 有关详细信息，请参阅[Microsoft Defender for Office 365 服务说明：跨 Defender for Office 365 计划的功能可用性](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans)。
 
 ## <a name="other-articles"></a>其他文章
 

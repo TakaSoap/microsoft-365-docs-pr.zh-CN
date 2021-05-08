@@ -1,6 +1,6 @@
 ---
 title: Microsoft 安全功能分数
-description: 介绍 Microsoft 365 安全中心中的 Microsoft 安全分数、如何改善安全状况以及管理员期望的安全状态。
+description: 介绍安全中心中的 Microsoft Microsoft 365分数、如何改善安全状态以及管理员期望的安全状态。
 keywords: microsoft 安全分数， 安全分数， office 365 安全分数， Microsoft 安全分数， microsoft 365 安全中心， 改进操作
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -21,20 +21,20 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: 19b83fe7dd733bb8a0668039d4df2b692a398ad4
-ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
+ms.openlocfilehash: 4a2c220cab15751671b9b38c3bb2fda3db12c9e1
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51570459"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245369"
 ---
 # <a name="microsoft-secure-score"></a>Microsoft 安全功能分数
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-Microsoft 安全功能分数是衡量组织安全状况的指标，数字越高表示采取的改进措施越多。 可以在 Microsoft https://security.microsoft.com/securescore [365 安全中心 找到它](overview-security-center.md)。
+Microsoft 安全功能分数是衡量组织安全状况的指标，数字越高表示采取的改进措施越多。 可以在安全中心内 https://security.microsoft.com/securescore 找到[Microsoft 365。](overview-security-center.md)
 
-执行安全功能分数建议可保护组织免遭威胁。 在 Microsoft 365 安全中心的集中式仪表板中，组织可以监视并处理其 Microsoft 365 标识、应用和设备的安全性。
+执行安全功能分数建议可保护组织免遭威胁。 从安全中心内Microsoft 365仪表板，组织可以监视并处理其Microsoft 365、应用和设备的安全性。
 
 安全功能分数可帮助组织：  
 
@@ -44,7 +44,7 @@ Microsoft 安全功能分数是衡量组织安全状况的指标，数字越高�
 
 组织可以访问指标和趋势的稳固可视化、与其他 Microsoft 产品的集成、与类似组织的分数比较等。 该分数还可以反映第三方解决方案何时解决了建议的操作。
 
-![安全分数主页](../../media/secure-score/secure-score-homepage-new.png)
+![安全分数主页](../../media/secure-score/secure-score-home-page.png)
 
 ## <a name="how-it-works"></a>运作方式
 
@@ -77,18 +77,18 @@ Microsoft 安全功能分数是衡量组织安全状况的指标，数字越高�
 
 目前，有针对以下产品的建议：
 
-- Microsoft 365 (包括 Exchange Online) 
+- Microsoft 365 (包括Exchange Online) 
 - Azure Active Directory
 - Microsoft Defender for Endpoint
 - Microsoft Defender for Identity
 - 云应用安全
 - Microsoft Teams
 
-即将推出针对其他安全产品的建议。 建议不会涵盖与每个产品关联的所有攻击面，但它们是一个很好的基线。 还可以将改进操作标记为第三方或备用缓解涵盖。
+推荐即将推出其他安全产品。 建议不会涵盖与每个产品关联的所有攻击面，但它们是一个很好的基线。 还可以将改进操作标记为第三方或备用缓解涵盖。
 
 ### <a name="security-defaults"></a>安全性默认值
 
-Microsoft 安全分数已更新了改进操作以支持 [Azure Active Directory](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)中的安全默认值，从而可以更轻松地使用针对常见攻击的预配置安全设置来帮助保护组织。
+Microsoft 安全分数已更新了改进操作以支持[Azure Active Directory](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)中的安全默认值，从而可以更轻松地使用针对常见攻击的预配置安全设置来帮助保护组织。
 
 如果启用安全默认值，将被授予以下改进操作的完整分数：
 
@@ -101,7 +101,7 @@ Microsoft 安全分数已更新了改进操作以支持 [Azure Active Directory]
 
 ## <a name="required-permissions"></a>所需权限
 
-若要有权访问 Microsoft 安全分数，必须在 Azure Active Directory 中分配以下角色之一。
+要有权访问 Microsoft 安全分数，必须在 Microsoft 安全分数中分配以下角色之Azure Active Directory。
 
 ### <a name="read-and-write-roles"></a>读取和写入角色
 

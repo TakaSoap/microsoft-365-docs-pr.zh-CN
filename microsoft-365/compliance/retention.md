@@ -19,19 +19,21 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解有助于保留所需内容并删除不需要内容的保留策略和保留标签。
-ms.openlocfilehash: 2c63f668cd4ccbad55a883aaf2b245c4936e25eb
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: 89a3544c390fdeceea3741a950aad8fe29da25c4
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51860951"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245584"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>了解保留策略和保留标签
 
 >*[Microsoft 365 安全性与合规性许可指南](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。*
 
 > [!NOTE]
-> 如果在应用中看到保留策略消息，请联系 IT 部门，了解如何进行配置。 如果这些消息适用于 Teams 聊天或频道消息，请参阅 [保留策略或频道消息](https://support.microsoft.com/office/teams-messages-about-retention-policies-c151fa2f-1558-4cf9-8e51-854e925b483b)。
+> 如果在 Teams 中可能到保留策略相关消息或对应用中的保留标签存疑，请联系 IT 部门，了解如何配置保留策略。 同时，以下文章可能有帮助：
+> -  [有关保留策略的 Teams 消息](https://support.microsoft.com/office/teams-messages-about-retention-policies-c151fa2f-1558-4cf9-8e51-854e925b483b)
+> - [对 SharePoint 或 OneDrive 中的文件应用保留标签](https://support.microsoft.com/office/apply-retention-labels-to-files-in-sharepoint-or-onedrive-11a6835b-ec9f-40db-8aca-6f5ef18132df)
 >
 > 本页上的信息适用于出于合规性原因可创建保留策略和保留标签的 IT 管理员。
 
@@ -470,8 +472,4 @@ Office 365 安全与合规中心的保留标签概述信息与 **“信息管理
 
 ## <a name="configuration-guidance"></a>配置指南
 
-如果已准备好创建保留策略，请参阅[创建和配置保留策略](create-retention-policies.md)。
-
-若要创建和应用保留标签，请执行以下操作：
-- [创建保留标签并在应用中应用它们](create-apply-retention-labels.md)
-- [自动向内容应用保留标签](apply-retention-labels-automatically.md)
+请参阅[开始使用保留策略和保留标签](get-started-with-retention.md)。 本文提供了有关订阅、权限的信息，以及保留方案的端到端配置指南链接。

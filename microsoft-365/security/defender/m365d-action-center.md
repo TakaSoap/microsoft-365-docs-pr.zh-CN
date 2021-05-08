@@ -9,8 +9,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: deniseb
-author: denisebmsft
+ms.author: josephd
+author: JoeDavies-MSFT
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
@@ -20,12 +20,12 @@ ms.collection:
 ms.topic: how-to
 ms.custom: autoir
 ms.reviewer: evaldm, isco
-ms.openlocfilehash: edf809c5fbc257e1dacafeed931da1a2d1471f4a
-ms.sourcegitcommit: e0a96e08b7dc29e074065e69a2a86fc3cf0dad01
+ms.openlocfilehash: 7853c6c535a9b4daf9f29a1125c805c29ca6f93f
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "51592080"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245908"
 ---
 # <a name="the-action-center"></a>操作中心
 
@@ -42,7 +42,7 @@ ms.locfileid: "51592080"
 - 查看已批准的修正操作的审核日志；以及
 - 查看已完成的修正操作。
 
-安全运营团队可以更高效地操作，因为操作中心全面概述了 Microsoft 365 Defender 的运行情况。
+你的安全运营团队可以更高效地操作，因为操作中心提供了一个全面Microsoft 365 Defender 工作视图。
 
 ## <a name="a-new-unified-action-center"></a>新的统一操作中心
 
@@ -51,15 +51,15 @@ ms.locfileid: "51592080"
 :::image type="content" source="../../media/m3d-action-center-unified.png" alt-text="Microsoft 365 Defender 中的统一操作中心":::
 
 改进的操作中心列出了设备、电子邮件、协作内容和标识&和已完成的修正操作。
-- 如果之前使用的是 Office 365 安全与合规中心 & ([https://protection.office.com](https://protection.office.com)) ，请尝试 Microsoft 365 安全中心 () 。 [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center)
-- 如果你使用的是 Microsoft Defender 安全中心 () 中的操作中心，请尝试 Microsoft 365 安全中心 ([https://securitycenter.windows.com/action-center](https://securitycenter.windows.com/action-center) [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center)) 。
-- 如果你已在使用 Microsoft 365 安全中心 () ，你将在操作中心 ([https://security.microsoft.com](https://security.microsoft.com) [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center)) 。
+- 如果之前使用的是 Office 365 安全&合规中心 () ，请尝试在 Microsoft 365 安全中心中新建统一 [https://protection.office.com](https://protection.office.com) [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) () 。
+- 如果使用的是 Microsoft Defender 安全中心 () 中的操作中心，请尝试在 Microsoft 365 安全中心中 [https://securitycenter.windows.com/action-center](https://securitycenter.windows.com/action-center) () 。 [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center)
+- 如果你已在使用安全Microsoft 365中心 () ，你将在操作中心 [https://security.microsoft.com](https://security.microsoft.com) [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) () 。
 
-统一操作中心将跨 Defender for Endpoint 和 Defender for Office 365 将修正操作汇集在一起。 它定义所有修正操作的共同语言，并提供统一的调查体验。 操作中心为安全运营团队提供了"单窗格"体验，以查看和管理修正操作。  
+统一操作中心将跨 Defender for Endpoint 和 Defender for Office 365。 它定义所有修正操作的共同语言，并提供统一的调查体验。 操作中心为安全运营团队提供了"单窗格"体验，以查看和管理修正操作。  
 
 如果您具有适当的权限以及以下一个或多个订阅，可以使用统一操作中心：
 
-- [Defender for Endpoint](../defender-endpoint/microsoft-defender-endpoint.md)
+- [适用于终结点的 Defender](../defender-endpoint/microsoft-defender-endpoint.md)
 - [Defender for Office 365](/microsoft-365/security/office-365-security/defender-for-office-365)
 - [Microsoft 365 Defender](microsoft-365-defender.md)
 
@@ -73,7 +73,7 @@ ms.locfileid: "51592080"
 
 访问操作中心时，会看到两个选项卡："挂起的操作"和"历史记录"。 下表总结了您将在每个选项卡上看到的内容：
 
-|选项卡  |Description  |
+|选项卡  |说明  |
 |---------|---------|
 |**Pending**     | 显示需要关注的操作的列表。 可以一次批准或拒绝一个操作，也可以选择多个操作（如果他们的操作类型与隔离文件 (相同，) 。 <p>**提示**：确保尽快审阅 (批准或拒绝) 挂起的操作，以便可以及时完成自动调查。       |
 |**历史记录**     | 充当审核日志的操作的一个组，例如： <br/>- 由于自动调查而采取的修正操作 <br/>- 对可疑或恶意电子邮件、文件或 URL 采取的修正操作<br/>- 安全运营团队批准的修正操作 <br/>- 运行的命令和在实时响应会话期间应用的修正操作<br/>- 防病毒保护采取的修正操作 <p>提供了一种撤消某些操作 (请参阅[Undo completed actions) 。](m365d-autoir-actions.md#undo-completed-actions)        |
@@ -87,7 +87,7 @@ ms.locfileid: "51592080"
 - 选择要查看的列。
 - 指定要包含在每个数据页上的项目数。
 - 使用筛选器仅查看要查看的项目。
-- 选择 **"** 导出"将结果导出到 .csv 文件。
+- 选择 **"** 导出"将结果导出到.csv文件。
 
 ## <a name="actions-tracked-in-the-action-center"></a>操作中心中跟踪的操作
 
@@ -103,18 +103,18 @@ ms.locfileid: "51592080"
 - 运行防病毒扫描 
 - 停止和隔离 
 
-除了自动调查后自动采取的修正操作之外，操作中心还[](m365d-autoir.md)跟踪安全团队为应对检测到的威胁而采取的操作，以及因 Microsoft 365 Defender 中的威胁防护功能而采取的操作。 有关自动和手动修正操作详细信息，请参阅 [修正操作](m365d-remediation-actions.md)。
+除了自动调查后自动采取的修正操作之外，操作中心还[](m365d-autoir.md)跟踪安全团队为应对检测到的威胁而采取的操作，以及由于 Microsoft 365 Defender 中的威胁防护功能而采取的操作。 有关自动和手动修正操作详细信息，请参阅 [修正操作](m365d-remediation-actions.md)。
 
 ## <a name="viewing-action-source-details"></a>查看操作源详细信息
 
  (**新建！)** 改进的操作中心现在包括一个 **操作** 源列，告知你每个操作的来源。 下表介绍了可能 **的操作源** 值：
 
-| 操作源值 | Description |
+| 操作源值 | 说明 |
 |:-----|:---|
 | **手动设备操作** | 对设备采取的手动操作。 示例包括 [设备隔离](../defender-endpoint/respond-machine-alerts.md#isolate-devices-from-the-network) 或 [文件隔离](../defender-endpoint/respond-file-alerts.md#stop-and-quarantine-files)。 |
 | **手动电子邮件操作** | 对电子邮件执行手动操作。 示例包括软删除电子邮件或 [修正电子邮件](../office-365-security/remediate-malicious-email-delivered-office-365.md)。 |
 | **自动设备操作** | 对实体（如文件或进程）采取的自动操作。 自动操作的示例包括将文件发送到隔离区、停止进程和删除注册表项。  (请参阅 Microsoft [Defender for Endpoint .) 中的](../defender-endpoint/manage-auto-investigation.md#remediation-actions)修正操作 |
-| **自动电子邮件操作** | 对电子邮件内容（如电子邮件、附件或 URL）采取的自动操作。 自动操作的示例包括软删除电子邮件、阻止 URL 和关闭外部邮件转发。  (请参阅 Microsoft [Defender for Office 365 .) 中的](../office-365-security/air-remediation-actions.md)修正操作 |
+| **自动电子邮件操作** | 对电子邮件内容（如电子邮件、附件或 URL）采取的自动操作。 自动操作的示例包括软删除电子邮件、阻止 URL 和关闭外部邮件转发。  (请参阅 Microsoft [Defender 中针对 .Office 365](../office-365-security/air-remediation-actions.md).) 的修正操作 |
 | **高级搜寻操作** | 使用高级搜寻对设备或电子邮件 [采取的操作](./advanced-hunting-overview.md)。 |
 | **资源管理器操作** | 使用资源管理器 对电子邮件内容 [采取的操作](../office-365-security/threat-explorer.md)。 |
 | **手动实时响应操作** | 使用实时响应对设备 [采取的操作](../defender-endpoint/live-response.md)。 示例包括删除文件、停止进程和删除计划任务。 |
@@ -127,7 +127,7 @@ ms.locfileid: "51592080"
 |修正操作 |所需角色和权限 |
 |--|----|
 |Microsoft Defender for Endpoint 修正 (设备)  |在 Azure Active Directory ([https://portal.azure.com](https://portal.azure.com)) 或 Microsoft 365 管理中心 ([https://admin.microsoft.com](https://admin.microsoft.com)) 中分配的 **安全管理员** 角色<br/>--- 或 ---<br/>**在 Microsoft** Defender for Endpoint 中分配的活动修正操作角色 <br/> <br/> 若要了解详细信息，请参阅以下资源： <br/>- [Azure Active Directory 中的管理员角色权限](/azure/active-directory/users-groups-roles/directory-assign-admin-roles)<br/>- [使用 Microsoft Defender for Endpoint (创建和管理基于角色的访问控制) ](../defender-endpoint/user-roles.md)  |
-|Microsoft Defender for Office 365 修正 (Office 内容和电子邮件)   |在 Azure Active Directory ([https://portal.azure.com](https://portal.azure.com)) 或 Microsoft 365 管理中心 ([https://admin.microsoft.com](https://admin.microsoft.com)) 中分配的 **安全管理员** 角色<br/>--- 和 --- <br/>**分配了** 安全与合规中心&搜索和清除 [https://protection.office.com](https://protection.office.com) ()  <br/><br/>**重要** 提示：如果你仅在Office 365 安全与合规中心 & () 中分配了安全管理员角色，你将无法访问操作中心或 [https://protection.office.com](https://protection.office.com) Microsoft 365 Defender 功能。 必须在 Azure  Active Directory 或 Microsoft 365 管理中心中分配安全管理员角色。 <br/><br/>若要了解详细信息，请参阅以下资源： <br/>- [Azure Active Directory 中的管理员角色权限](/azure/active-directory/users-groups-roles/directory-assign-admin-roles)<br/>- [安全与合规&中的权限](/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center) |
+|Microsoft Defender for Office 365修正 (Office内容和电子邮件)   |在 Azure Active Directory ([https://portal.azure.com](https://portal.azure.com)) 或 Microsoft 365 管理中心 ([https://admin.microsoft.com](https://admin.microsoft.com)) 中分配的 **安全管理员** 角色<br/>--- 和 --- <br/>**分配了** 安全与合规中心&搜索和清除 [https://protection.office.com](https://protection.office.com) ()  <br/><br/>**重要** 提示：如果你仅在Office 365 安全& 合规中心 () 中分配了安全管理员角色，你将无法访问操作中心或 [https://protection.office.com](https://protection.office.com) Microsoft 365 Defender 功能。 你必须在 **安全中心或** Azure Active Directory分配安全Microsoft 365角色。 <br/><br/>若要了解详细信息，请参阅以下资源： <br/>- [Azure Active Directory 中的管理员角色权限](/azure/active-directory/users-groups-roles/directory-assign-admin-roles)<br/>- [安全与合规&中的权限](/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center) |
 
 > [!TIP]
 > 在 Azure Active Directory 中分配了 **全局管理员** 角色的用户可以批准或拒绝操作中心中挂起的任何操作。 但是，最佳做法是，贵组织应限制分配了全局管理员 **角色的人的数量** 。 我们建议对操作中心权限使用上表中列出的安全管理员、**活动** 修正操作和搜索和清除角色。

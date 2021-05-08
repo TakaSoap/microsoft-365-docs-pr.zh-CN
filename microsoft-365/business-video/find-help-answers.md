@@ -1,5 +1,5 @@
 ---
-title: 查找答案和帮助
+title: 查找文档和培训
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -20,33 +20,28 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: 了解如何查找 Microsoft 365 商业高级版管理员帮助。
-ms.openlocfilehash: 6d16f3ece9782a33c3377e4a6bc2a93b29d54c1a
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+description: 了解如何查找适用于管理员的管理员Microsoft 365 商业高级版。
+ms.openlocfilehash: 18a50c34f87fa47fe5777e87f8dafa62fb0ac04b
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51578899"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245224"
 ---
-# <a name="find-answers-and-help-for-admins"></a>查找管理员的答案和帮助
+# <a name="find-docs-and-training"></a>查找文档和培训
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FGn5?autoplay=false]
+如果你有问题或需要帮助Microsoft 365 商业高级版，有几种获取帮助的选项。
 
-如果你有问题或需要 Microsoft 365 商业高级版帮助，有几种获取帮助的选项。
+## <a name="browse-all-small-business-training"></a>浏览所有小型企业培训
 
-## <a name="try-it"></a>试一试！
+有关所有培训支持的链接，你需要在小型企业Microsoft 365，请参阅Microsoft 365[小型企业培训](index.yml)。 
 
-1. 登录以 [office.com](https://office.com)工作凭据，然后选择"管理员 **"。**
-1. 在管理中心主页上，选择 **"管理员** 培训"以查看可供你使用的培训选项。
-1. 为 **中小型培训选择** 业务所有者和管理员。
-1. 为 **较大或更复杂的** 企业选择企业 IT 专业人员。
-1. 返回到管理中心， **这次选择自定义** 设置指南以查看一些指导，指导你完成特定的设置任务。
-1. 返回到管理中心主页并选择"培训 **用户** "，获取有关特定应用的帮助，并了解如何充分利用你每天使用的功能。
-1. 返回到管理中心，然后选择 **"需要帮助"** 打开支持助手。 键入问题或需要帮助的主题，然后选择"发送 **"。** 选择管理中心中的链接或指向回答你的问题的文章。
-1. 如果你未找到问题的答案，你始终可以联系支持人员，并且技术支持人员将尽快回复你。
+## <a name="search-for-microsoft-365-admin-center-docs-and-resources"></a>搜索Microsoft 365中心文档和资源
 
-您还可以使用以下资源获取有关问题的帮助：
+若要搜索与管理员相关的任务和帮助，例如重置密码和分配 Microsoft 订阅，请参阅Microsoft 365[中心帮助](../admin/index.yml)。
 
-- [aka.ms/learn365admin](../admin/index.yml)，以搜索所有与管理员相关的任务和帮助，如重置密码和分配 Microsoft 订阅。
-- [answers.microsoft.com](https://answers.microsoft.com)，以搜索答案、开始讨论以及提出其他用户的问题。
-- [techcommunity.microsoft.com](https://techcommunity.microsoft.com)，以加入专家社区，并查找适用于你的企业 Microsoft 365 的最佳实践。
+## <a name="join-the-community"></a>加入社区
+
+通过加入 Microsoft Small Business Microsoft 365开始对话、关注讨论并与其他小型企业用户[Community。](https://smallbusiness.microsoft.com/)
+
+如果你有关于其他产品和服务的特定问题，请发布问题，并按照相关讨论在[询问 Microsoft](https://answers.microsoft.com)Community。

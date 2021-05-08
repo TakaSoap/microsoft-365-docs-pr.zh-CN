@@ -19,36 +19,43 @@ ms.custom:
 description: 了解如何更新域名服务 (DNS) 记录，以便可以在 Office 365 中使用发件人策略框架 (SPF) 和自定义域。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 0a2c400e77c83fa61e276dee1d870835d466b5af
-ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
+ms.openlocfilehash: 1d200c4cf17a3d42ddafca301fecbf18c249ac37
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "51599543"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245680"
 ---
 # <a name="set-up-spf-to-help-prevent-spoofing"></a>设置 SPF 以防欺骗
 
+- [先决条件](#prerequisites)
+- [创建或更新你的 SPF TXT 记录](#create-or-update-your-spf-txt-record)
+- [如何处理子域？](#how-to-handle-subdomains)
+- [SPF 疑难解答](#troubleshooting-spf)
+
+<!--
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
-**适用对象**
+**Applies to**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
-- [Microsoft Defender for Office 365 计划 1 和计划 2](defender-for-office-365.md)
+- [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
+-->
 
 本文介绍了如何更新域名服务 (DNS) 记录，以便可以在 Office 365 中结合使用发件人策略框架 (SPF) 电子邮件身份验证和自定义域。
 
-使用 SPF 可帮助验证从自定义域发出的出站电子邮件。 这是设置其他推荐的电子邮件身份验证方法 DMARC 和 DKIM（Office 365 还支持另外两种电子邮件身份验证方法）的第一步。
+SPF 帮助 *验证* 从你的自定义域发送的出站电子邮件（是否来自所其显示地址）。 这是建立完全推荐的 SPF、[DKIM](use-dkim-to-validate-outbound-email.md) 和 [DMARC](use-dmarc-to-validate-email.md) 电子邮件身份验证方法的第一步。
 
 ## <a name="prerequisites"></a>先决条件
 
 > [!IMPORTANT]
-> 如果你是 **小型企业**，或是不熟悉 IP 地址或 DNS 配置，请致电你的Internet 域注册机构（例如， GoDaddy、Bluehost、web.com）请求有关 SPF 的 DNS 配置（以及任何其他电子邮件身份验证方法）的帮助。 *另外*，如果你尚未购买或未使用自定义 URL（换句话说，你和客户浏览到 Office 365 的 URL 以 **onmicrosoft.com** 结尾），已在 Office 365 服务中为你设置 SPF。 在这种情况下，不需要采取进一步的步骤。 感谢阅读。
+> 如果你是 **小型企业**，或是不熟悉 IP 地址或 DNS 配置，请致电你的Internet 域注册机构（例如， GoDaddy、Bluehost、web.com）& 请求有关 *SPF 的 DNS 配置*（以及任何其他电子邮件身份验证方法）的帮助。 <p> **如果你不使用自定义 URL**（且用于 Office 365 的 URL 以 **onmicrosoft.com** 结尾），则系统已在 Office 365 服务中为你设置了 SPF。
 
-为外部 DNS 中的 Office 365 创建或更新 SPF TXT 记录之前，需要收集一些记录所需的信息。 有关支持的 SPF 语法的更加详细的探讨的高级示例，请参阅 [SPF 在 Office 365 中防止欺骗和钓鱼的工作原理](how-office-365-uses-spf-to-prevent-spoofing.md#HowSPFWorks)。
+让我们开始吧。
 
-收集此信息：
+Office 365 的 SPF TXT 记录将在任何自定义域或子域的外部 DNS 中创建。 需要一些信息以创建记录。 收集此信息：
 
-- 自定义域的当前 SPF TXT记录（如果存在）。 有关说明，请参阅[收集创建 Office 365 DNS 记录所需的信息](../../admin/get-help-with-domains/information-for-dns-records.md)。
+- 自定义域的 SPF TXT记录（如果存在）。 有关说明，请参阅[收集创建 Office 365 DNS 记录所需的信息](../../admin/get-help-with-domains/information-for-dns-records.md)。
 
 - 转到消息服务器并查找外部 IP 地址（需要来自所有本地消息服务器）。 例如，**131.107.2.200**。
 
@@ -84,9 +91,9 @@ ms.locfileid: "51599543"
    v=spf1 include:spf.protection.outlook.com -all
    ```
 
-   这是最常见的 SPF TXT 记录。 此记录几乎适用于每个人，无论你的 Microsoft 数据中心是位于美国还是欧洲（包括德国），亦或是位于其他地理位置。
+   **上述示例是最常见的 SPF TXT 记录**。 此记录几乎适用于每个人，无论你的 Microsoft 数据中心是位于美国还是欧洲（包括德国），亦或是位于其他地理位置。
 
-   不过，如果已购买 Office 365 Germany（属于 Microsoft Cloud Germany），则应使用第 4 行（而不是第 2 行）的 include 语句。例如，如果完全托管在 Office 365 Germany中（即没有本地邮件服务器），则 SPF TXT 记录包括行 1、4 和 7，如下所示：
+   不过，如果购买了 Office 365 Germany（属于 Microsoft 云德国），则应使用第 4 行（而不是第 2 行）的 include 语句。例如，如果完全托管在 Office 365 Germany 中（即没有本地邮件服务器），则 SPF TXT 记录包括行 1、4 和 7，如下所示：
 
    ```text
    v=spf1 include:spf.protection.outlook.de -all
@@ -94,7 +101,7 @@ ms.locfileid: "51599543"
 
    如果你已在 Office 365 中进行部署并已为自定义域设置 SPF TXT 记录，而当前正在向 Office 365 Germany 迁移，则需要更新 SPF TXT 记录。 若要执行此操作，请将 `include:spf.protection.outlook.com` 更改为 `include:spf.protection.outlook.de`。
 
-3. 一旦形成 SPF TXT 记录，则需要更新 DNS 中的记录。 只能为域使用一个 SPF TXT 记录。 如果存在 SPF TXT 记录，则需要更新现有的记录，而不是添加新记录。 转到[为 Office 365 创建 DNS 记录](../../admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md)然后单击 DNS 主机的链接。
+3. 一旦形成 SPF TXT 记录，则需要更新 DNS 中的记录。 **只能为域使用一个 SPF TXT 记录。** 如果存在 SPF TXT 记录，则需要更新现有的记录，而不是添加新记录。 转到[为 Office 365 创建 DNS 记录](../../admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md)然后选择 DNS 主机的链接。
 
 4. 测试 SPF TXT 记录。
 
@@ -102,7 +109,7 @@ ms.locfileid: "51599543"
 
 请务必注意，*你需要为每个子域创建单独的记录，因为子域不会继承其顶级域的 SPF 记录*。
 
-每个域和子域都需要一个额外的通配符SPF记录(`*.` )，以防止攻击者发送声称来自不存在的子域的电子邮件。 例如：
+每个域和子域都需要的通配符 SPF 记录(`*.` )，以防止攻击者发送声称来自不存在的子域的电子邮件。 例如：
 
 ```text
 *.subdomain.contoso.com. IN TXT "v=spf1 -all"
@@ -110,12 +117,12 @@ ms.locfileid: "51599543"
 
 ## <a name="troubleshooting-spf"></a>SPF 疑难解答
 
-是否遇到与 SPF TXT 记录相关的问题？ 阅读[疑难解答：Office 365 中 SPF 的最佳实践。](how-office-365-uses-spf-to-prevent-spoofing.md#SPFTroubleshoot)。
+是否遇到与 SPF TXT 记录相关的问题？阅读[故障排除：Office 365 中 SPF 的最佳实践](how-office-365-uses-spf-to-prevent-spoofing.md#SPFTroubleshoot)。
 
 
 ## <a name="what-does-spf-email-authentication-actually-do"></a>SPF 电子邮件身份验证实际上做什么？
 
-SPF 标识允许哪些邮件服务器代表您发送邮件。 一般来说，SPF 以及 DKIM、DMARC 和 Office 365 支持的其他技术可有助于防止欺骗和钓鱼发生。 以 TXT 记录的形式添加 SPF 后，DNS 可使用此记录来确定哪些邮件服务器可以代表你的自定义域发送邮件。 收件人邮件系统可以参阅 SPF TXT 记录，从而确定从你的自定义域发送的邮件是否来自已获授权的邮件服务器。
+SPF 标识允许哪些邮件服务器代表你发送邮件。一般来说，SPF 以及 DKIM、DMARC 和 Office 365 支持的其他技术可有助于防止欺骗和钓鱼发生。以 TXT 记录的形式添加 SPF 后，DNS 可使用此记录来确定哪些邮件服务器可以代表你的自定义域发送邮件。收件人邮件系统可以参阅 SPF TXT 记录，从而确定从你的自定义域发送的邮件是否来自已获授权的邮件服务器。
 
 例如，假设自定义域 contoso.com 使用 Office 365。你添加一个 SPF TXT 记录，将 Office 365 邮件服务器列为你的域的合法邮件服务器。当接收邮件服务器从 joe@contoso.com 收到一封邮件时，服务器会查找 contoso.com 的 SPF TXT 记录，并确定这封邮件是否有效。如果接收服务器确定这封邮件不是来自 SPF 记录中列出的 Office 365 邮件服务器，则可以选择将这封邮件作为垃圾邮件拒绝。
 
@@ -133,10 +140,14 @@ SPF 标识允许哪些邮件服务器代表您发送邮件。 一般来说，SPF
 
 有关支持的 SPF 语法、欺骗、故障排除以及 Office 365 如何支持 SPF 的更加详细的探讨的高级示例，请参阅 [SPF 在 Office 365 中防止欺骗和钓鱼的工作原理](how-office-365-uses-spf-to-prevent-spoofing.md#HowSPFWorks)。
 
-## <a name="links-to-configure-dkim-and-dmarc"></a>用于配置 DKIM 和 DMARC 的链接
+## <a name="next-steps-dkim-and-dmarc"></a>后续步骤：DKIM 和 DMARC
 
  SPF 旨在帮助防骗，但有些骗术是 SPF 所无法防范的。 为了防范这些诈骗技术，设置 SPF 后，就应该为 Office 365 配置 DKIM 和 DMARC。
 
 [DKIM](use-dkim-to-validate-outbound-email.md) 电子邮件身份验证的目标是证明邮件的内容没有被篡改。
 
 [DMARC](use-dmarc-to-validate-email.md) 电子邮件身份验证的目标是确保 SPF 和 DKIM 信息与发件人地址匹配。
+
+ 有关支持的 SPF 语法的更加详细的探讨的高级示例，请参阅 [SPF 在 Office 365 中防止欺骗和钓鱼的工作原理](how-office-365-uses-spf-to-prevent-spoofing.md#HowSPFWorks)。
+
+*如对此文档有反馈，请在“反馈”下选择“此页”。*

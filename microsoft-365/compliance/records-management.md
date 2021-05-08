@@ -21,18 +21,18 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 description: 通过 Microsoft 365 中的记录管理，你可以将保留计划应用到文件计划中，以管理保留、记录声明和处置。
-ms.openlocfilehash: ac8e9bf2ac9ac47518788cd19a197818c13078a1
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 853303dcaffcbacfcf805b8617b836254cf31ad8
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51051684"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245428"
 ---
 # <a name="learn-about-records-management-in-microsoft-365"></a>了解 Microsoft 365 中的记录管理
 
 >*[Microsoft 365 安全性与合规性许可指南](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。*
 
-所有类型的组织都需要一个记录管理解决方案跨公司数据管理法规、法律和业务关键记录。 Microsoft 365 中的记录管理有助于组织管理其法律义务，提供证明遵守法规的能力，并通过定期处置不再需要保留、不再具有价值或不再需要用于业务目的的项目来提高效率。
+所有类型的组织都需要记录管理解决方案跨公司数据管理法规、法律和业务关键记录。Microsoft 365 中的记录管理有助于组织管理其法律义务，提供证明遵守法规的能力，并通过定期处置不再需要保留、不再具有价值或不再需要用于业务目的的项目来提高效率。
 
 请使用以下功能支持 Microsoft 365 中的记录管理解决方案：
 
@@ -48,7 +48,7 @@ ms.locfileid: "51051684"
 
 - 使用 [导出选项](disposition.md#filter-and-export-the-views)**导出有关所有已处置项的信息**。
 
-- 为组织中的记录管理器功能 **设置特定权限**，以便 [具有正确的访问权限](../security/defender-365-security/permissions-in-the-security-and-compliance-center.md)。
+- 为组织中的记录管理器功能 **设置特定权限**，以便 [具有正确的访问权限](../security/office-365-security/permissions-in-the-security-and-compliance-center.md)。
 
 借助这些功能，你可以将组织的保留计划和要求合并到用以管理保留、记录声明和处置的记录管理解决方案中，从而支持完整的内容生命周期。
 
@@ -111,6 +111,4 @@ ms.locfileid: "51051684"
 
 ## <a name="configuration-guidance"></a>配置指南
 
-请参阅[记录管理入门](get-started-with-records-management.md)。
-
-若要将内容标记为记录，请参阅[使用保留标签声明记录](declare-records.md)。
+请参阅[记录管理入门](get-started-with-records-management.md)。 本文提供了有关订阅、权限的信息，以及记录管理方案的端到端配置指南链接。

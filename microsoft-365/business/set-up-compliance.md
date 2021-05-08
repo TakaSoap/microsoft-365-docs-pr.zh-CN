@@ -1,5 +1,5 @@
 ---
-title: 增强 Microsoft 365 商业高级版的威胁防护
+title: 增强威胁防护Microsoft 365 商业高级版
 f1.keywords:
 - NOCSH
 ms.author: sharik
@@ -22,16 +22,16 @@ search.appverid:
 - BCS160
 - MET150
 description: 设置合规性功能以防止数据丢失，并帮助保护你和客户敏感信息的安全。
-ms.openlocfilehash: c0accc37d3dcda9ba75813f01a98a3233c5a8369
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 945f8a283b90b89da2fbe67a073e0807b80d198f
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51579946"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245076"
 ---
 # <a name="set-up-compliance-features"></a>设置合规性功能
 
-Microsoft 365 商业高级版附带保护你的数据和设备的功能，并且可帮助你保护你和客户敏感信息的安全。
+你的Microsoft 365 商业高级版附带用于保护你的数据和设备的功能，并且有助于保护你和客户敏感信息的安全。
 
 ## <a name="set-up-dlp-features"></a>设置 DLP 功能
 
@@ -49,11 +49,11 @@ DLP 附带许多适用于许多不同区域设置的现成策略模板。 例如
     
 1. 在左侧导航中，转到"用户 \> **""活动用户"。**
     
-2. 选择要将其邮箱置于诉讼保留状态的用户。 在用户窗格中，展开"**邮件设置"，** 在"更多设置"**旁边**，选择"**编辑 Exchange 属性"。**
+2. 选择要将其邮箱置于诉讼保留状态的用户。 在用户窗格中，展开"**邮件设置"，****在"更多** 设置"旁边，选择"编辑Exchange **属性"。**
     
 3. On the mailbox page for the user， choose ** mailbox features ** on the left nav， and then choose the **Enable** link under **Litigation hold**.
     
-4. 在 **"诉讼保留** "对话框中，您可以在"诉讼保留持续时间"字段中指定 **诉讼保留** 持续时间。 如果希望将字段留空，请保留无限期保留。 您还可以添加注释，将邮箱所有者引导到网站，您可能必须解释有关诉讼保留的更多内容。 \> **保存**。
+4. 在 **"诉讼保留** "对话框中，您可以在"诉讼保留持续时间"字段中指定 **诉讼保留** 持续时间。 如果希望将字段留空，请保留无限期保留。 您还可以添加注释，将邮箱所有者引导到网站，您可能必须解释有关诉讼保留的更多内容。 \>**保存**。
     
 **保留：** 例如，您可以启用自定义保留策略以保留特定时间，或在保留期结束时永久删除内容。 若要了解更多信息，请参阅 [保留策略概述](../compliance/retention.md)。
 
@@ -61,7 +61,7 @@ DLP 附带许多适用于许多不同区域设置的现成策略模板。 例如
 
 敏感度标签随 Azure 信息保护 (AIP) 计划 1 提供，可帮助你通过应用标签对文档和电子邮件进行分类和选择性保护。 标签可自动由定义规则和条件的管理员应用，由用户手动应用，也可结合使用为用户提供建议。
 
-若要设置敏感度标签，请 [观看创建和管理敏感度标签](https://support.microsoft.com/office/2fb96b54-7dd2-4f0c-ac8d-170790d4b8b9) 视频。
+若要设置敏感度标签，请 [观看创建和管理敏感度标签](../business-video/create-sensitivity-labels.md) 视频。
 
 
 

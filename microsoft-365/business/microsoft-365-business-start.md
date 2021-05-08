@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 商业版入门
+title: 企业Microsoft 365入门
 f1.keywords:
 - NOCSH
 ms.author: efrene
@@ -27,76 +27,76 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
-description: 了解 Microsoft 365 商业版、如何设置它，以及如何准备用户的设备和电脑以确保它们受 Microsoft 365 商业版保护。
-ms.openlocfilehash: 83bd2ff87683c1ad810d20658ba20f3229408968
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+description: 了解Microsoft 365，如何设置，以及如何准备用户的设备和电脑，以确保它们受到适用于Microsoft 365保护。
+ms.openlocfilehash: cc54147e75a27fbb93255d6f706b4f9044c75858
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51580086"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245116"
 ---
-# <a name="get-started-with-microsoft-365-for-business"></a>Microsoft 365 商业版入门
+# <a name="get-started-with-microsoft-365-for-business"></a>企业Microsoft 365入门
 
-## <a name="what-is-microsoft-365-for-business"></a>什么是 Microsoft 365 商业版
+## <a name="what-is-microsoft-365-for-business"></a>业务Microsoft 365是什么
 
-Microsoft 365 商业版是一套全面的业务生产力和协作工具，如 Outlook、Word、Excel 和其他 Office 产品，始终保持最新。 可以使用易于管理的企业级安全性保护所有 iOS、Android 和 Windows 10 设备上的工作文件。
+Microsoft 365是一套全面的业务生产力和协作工具，例如 Outlook、Word、Excel 以及其他始终保持最新的 Office 产品。 可以使用易于管理的企业级安全性在所有 iOS、Android 和 Windows 10设备上保护工作文件。
 
-观看此视频，快速了解 Microsoft 365 商业版。<br><br>
+观看此视频，快速了解Microsoft 365概述。<br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2mhaA] 
   
-Microsoft 365 商业版最多支持 300 个许可证。 如果需要更多许可证，请参阅 [Microsoft 365 企业版](../enterprise/index.yml)文档，以了解详细信息。 
+Microsoft 365企业版最多需要 300 个许可证。 如果需要更多许可证，请参阅 [Microsoft 365 企业版](../enterprise/index.yml)文档，以了解详细信息。 
   
-## <a name="get-microsoft-365-for-business"></a>获取 Microsoft 365 商业版
+## <a name="get-microsoft-365-for-business"></a>获取Microsoft 365企业信息
 
-- 如果你有合作伙伴，他们将获得 Microsoft 365 商业版：从 Microsoft 合作伙伴中心获取 [Microsoft 365 商业版](get-microsoft-365-business.md)。
+- 如果你有合作伙伴，他们将获得适用于Microsoft 365服务：从 Microsoft 合作伙伴Microsoft 365[获取适用于企业的产品](get-microsoft-365-business.md)。
     
-- 如果你没有合作伙伴并且想要获取 Microsoft 365 商业版，可以 [在此处购买](https://www.microsoft.com/microsoft-365/business)。
+- 如果你没有合作伙伴，并且想要获取适用于Microsoft 365，可以[在此处购买](https://www.microsoft.com/microsoft-365/business)。
     
 ## <a name="set-up-microsoft-365-for-business"></a>设置 Microsoft 365 商业版
 
- **Microsoft 365 商业版套件设置概述**
+ **企业Microsoft 365套件设置概述**
   
-下图介绍了管理员如何设置 Microsoft 365 商业版。 它还介绍了为 Microsoft 365 商业版准备 Windows 电脑的步骤。 还可使用 [Windows AutoPilot](add-autopilot-devices-and-profile.md)在 Microsoft 365 管理中心添加新设备。 可以使用 AutoPilot 设置和预配置新设备，以便用户使用其 Microsoft 365 商业版凭据登录后即可将其用于高效使用。
+下图介绍了管理员如何设置适用于Microsoft 365服务。 此外，还介绍了准备Windows电脑以用于Microsoft 365的步骤。 您还可以使用[AutoPilot](add-autopilot-devices-and-profile.md)在 Microsoft 365 中心添加新Windows设备。 可以使用 AutoPilot 设置和预配置新设备，以便用户使用适用于企业凭据的 Microsoft 365 登录后即可将其用于高效使用。
   
 ![A diagram that shows the setup and management flow for admins, and also for a user](../media/249f81fc-7e79-44c7-8425-3a0b7b651c3b.png)
 
-观看此视频，了解 Microsoft 365 商业版设置概述。<br><br>
+观看此视频，大致了解Microsoft 365设置。<br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FYSM] 
 
-如果你发现此视频有帮助，请查看[适用于小型企业和 Microsoft 365 新用户的完整培训系列](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)。
+如果你发现此视频有帮助，请查看[适用于小型企业和 Microsoft 365 新用户的完整培训系列](../business-video/index.yml)。
 
   
-### <a name="1-set-up-microsoft-365-for-business-admin"></a>1：设置 Microsoft 365 商业版 (管理员) 
+### <a name="1-set-up-microsoft-365-for-business-admin"></a>1：设置Microsoft 365商业 (管理员) 
 
-使用全局管理员 [凭据登录到 Microsoft 365](https://portal.office.com/adminportal/home) 管理中心，并完成以下步骤以设置 Microsoft 365 商业版。 
+使用全局[Microsoft 365](https://portal.office.com/adminportal/home)凭据登录到管理中心，并完成以下步骤以设置Microsoft 365管理中心。 
   
-1. [使用 Microsoft 365 商业版保护设备上数据的先决条件](pre-requisites-for-data-protection.md)
+1. [使用适用于企业的设备保护Microsoft 365的先决条件](pre-requisites-for-data-protection.md)
     
-    首先阅读先决条件，确保你的设备已准备好使用 Microsoft 365 商业版。
+    首先阅读先决条件，确保你的设备可供Microsoft 365使用。
     
-2. [使用设置向导设置 Microsoft 365 商业版](set-up.md)
+2. [使用安装向导设置Microsoft 365企业](set-up.md)
     
-    如果你正在从本地 **Active Directory** 永久移动到云，可以转到 Microsoft 365 管理中心并使用设置向导手动添加用户，或者可以与 Azure AD Connect 进行一次同步。 可通过 2 种方法执行此操作： 
+    如果你正在从本地 **Active Directory** 永久移动到云，可以转到 Microsoft 365 管理中心并使用设置向导手动添加用户，也可以与 Azure AD 连接 进行一次同步。 可以通过两种方式来执行此操作： 
     
-    - 如果还有 Exchange 2010、Exchange 2013 或 Exchange 2016 服务器，可以使用最小混合快速将 Exchange 邮箱迁移到[Microsoft 365。](/Exchange/mailbox-migration/use-minimal-hybrid-to-quickly-migrate) 最少混合步骤包括用户到 Azure AD 的一次同步，以及从本地到云的电子邮件迁移。 电子邮件迁移完成后，使用此方法时将自动关闭目录同步。
+    - 如果还有 Exchange 2010、Exchange 2013 或 Exchange 2016 服务器，可以使用最小混合快速将 Exchange 邮箱迁移到[Microsoft 365](/Exchange/mailbox-migration/use-minimal-hybrid-to-quickly-migrate)。 最少混合步骤包括用户到 Azure AD 的一次同步，以及从本地到云的电子邮件迁移。 电子邮件迁移完成后，使用此方法时将自动关闭目录同步。
     
-    - 使用目录同步向导将用户同步到云。 按照为 [Microsoft 365](../enterprise/set-up-directory-synchronization.md) 设置目录同步中的步骤完成此过程。 将用户同步到云后，必须关闭 [Microsoft 365 的目录同步](../enterprise/turn-off-directory-synchronization.md)。
+    - 使用目录同步向导将用户同步到云。 按照为用户[设置目录同步Microsoft 365](../enterprise/set-up-directory-synchronization.md)中的步骤完成此过程。 将用户同步到云后，必须关闭云[Microsoft 365。](../enterprise/turn-off-directory-synchronization.md)
     
-    你还必须向通过此方式添加的每个用户授予 Microsoft 365 商业版许可证。 可以在安装向导中完成 [此操作](set-up.md) ，也可以向 [用户分配许可证](../admin/manage/assign-licenses-to-users.md)。
+    您还必须向通过此方式添加的每个用户提供一个许可证Microsoft 365企业版。 可以在安装向导中完成 [此操作](set-up.md) ，也可以向 [用户分配许可证](../admin/manage/assign-licenses-to-users.md)。
     
 ### <a name="2-prepare-mobile-devices"></a>2：准备移动设备
 
-按照为 [Microsoft 365](set-up-mobile-devices.md) 商业版用户设置移动设备中的步骤在设备上安装 Office 应用，并确保它们受 Microsoft 365 商业版保护。 
+按照为[企业用户设置](set-up-mobile-devices.md)Microsoft 365移动设备中的步骤在设备上安装 Office 应用，并确保它们受适用于Microsoft 365保护。 
   
 ### <a name="3-prepare-pcs"></a>3：准备电脑
 
-管理员可以使用 [Windows AutoPilot](add-autopilot-devices-and-profile.md)预选择新 Windows 10 电脑的设置。 用户可以按照本主题中的步骤设置现有或新的 Windows 10 设备：为 Microsoft [365](set-up-windows-devices.md)商业版用户设置 Windows 电脑。 对于现有设备，用户可以 **选择**[将文件移动到 OneDrive for Business](move-files-to-onedrive.md)。 他们还可使用第三方工具将与 Windows 配置文件关联的文件移动到 OneDrive。
+管理员可以使用[AutoPilot](add-autopilot-devices-and-profile.md)为新的Windows 10电脑预Windows设置。 用户可以按照本主题中的步骤Windows 10设置现有或新的 Windows 10 设备：为商业用户设置 Windows 电脑[Microsoft 365。](set-up-windows-devices.md) 对于现有设备，用户可以 **选择**[将文件移动到OneDrive for Business。](move-files-to-onedrive.md) 他们还可使用第三方工具将与配置文件Windows文件OneDrive。
   
-如果你的组织使用本地 Windows Server Active Directory，你可以设置 Microsoft 365 商业版来保护你的 Windows 10 设备，同时仍保持对需要本地身份验证的本地资源的访问权限。 请按照允许 [Microsoft 365](manage-windows-devices.md) 商业版管理已加入域的 Windows 10 设备中的步骤进行设置。 此方法为首选，并且此状态中的设备称为加入混合 **Azure AD 的设备**。 
+如果组织在本地使用 Windows Server Active Directory，可以设置 Microsoft 365 for Business 来保护 Windows 10 设备，同时仍保留对需要本地身份验证的本地资源的访问权限。 按照启用要[由企业Windows 10加入域](manage-windows-devices.md)的设备中的Microsoft 365设置此操作。 此方法为首选，并且此状态中的设备称为加入混合 **Azure AD 的设备**。 
   
-如果你保留包含一些本地资源 (例如文件共享和打印机) 的本地 Active Directory，你可以按照以下步骤向加入 Azure **AD** 的设备授予对这些资源的访问权限：从 [Microsoft 365](access-resources.md)商业版中加入 Azure AD 的设备访问本地资源。
+如果你保留包含一些本地资源 (（如文件共享和打印机) ）的本地 Active Directory，你可以按照下面的步骤向加入 Azure **AD** 的设备授予对这些资源的访问权限：从 Microsoft 365 for business 中加入 [Azure AD](access-resources.md)的设备访问本地资源。
   
   
 ## <a name="contact-support"></a>联系支持人员
@@ -105,12 +105,12 @@ Microsoft 365 商业版最多支持 300 个许可证。 如果需要更多许可
   
 - 请与合作伙伴联系。
     
-- 作为 Microsoft 365 商业版管理员，你可以访问我们的客户支持团队：联系商业版产品支持 **[人员 - 管理员帮助](../admin/contact-support-for-business-products.md)**
+- 作为Microsoft 365管理员，你可以访问我们的客户支持团队：联系商业产品支持人员 -**[管理员帮助](../admin/contact-support-for-business-products.md)**
     
-## <a name="see-also"></a>另请参阅
+## <a name="related-content"></a>相关内容
 
-[Microsoft 365 商业版文档和资源](./index.yml)
+[Microsoft 365文档和资源](./index.yml)
   
-[管理 Microsoft 365 商业版](manage.md)[迁移到 Microsoft 365 商业版](migrate-to-microsoft-365-business.md)
+[管理Microsoft 365企业迁移](manage.md)[Microsoft 365企业部署](migrate-to-microsoft-365-business.md)
 
-[Microsoft 365 商业版培训视频](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[Microsoft 365 商业版培训视频](../business-video/index.yml)

@@ -1,6 +1,6 @@
 ---
 title: 设备要求
-description: 设备使用 Microsoft 托管桌面的最低硬件和软件要求摘要
+description: 设备与移动设备一起运行的最低硬件和软件要求Microsoft 托管桌面
 keywords: Microsoft 托管桌面, Microsoft 365, 服务, 文档
 ms.service: m365-md
 author: jaimeo
@@ -9,16 +9,16 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: baaebd185389e7ac1f2173aed092141067a5629f
-ms.sourcegitcommit: 4acf613587128cae27e0fd470d1216b509775529
+ms.openlocfilehash: fcd7f192ba0846e3bf3051cde927095088f32d26
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/15/2021
-ms.locfileid: "51768886"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245788"
 ---
 # <a name="device-requirements"></a>设备要求
 
-Microsoft 托管桌面会定期评估要包含在服务中的设备要求。 本文介绍设备必须满足的硬件和软件要求才能使用 Microsoft 托管桌面。 你可以根据这些要求 [查看已批准用于](device-list.md) 服务的特定设备列表。
+Microsoft 托管桌面定期评估要包含在服务中的设备要求。 本文介绍设备必须满足的硬件和软件要求才能使用Microsoft 托管桌面。 你可以根据这些要求查看已批准用于服务的特定设备列表。 筛选Microsoft 托管桌面[商店Windows 10 专业版业务设备"站点上的筛选器](https://www.microsoft.com/windowsforbusiness/view-all-devices)
 
 > [!NOTE]
 > 这些要求可能随时更改，但我们会提前 30 天通知任何硬件要求更改。 最近更改的要求标有 **\*** 。 
@@ -45,7 +45,7 @@ Microsoft 托管桌面会定期评估要包含在服务中的设备要求。 本
 
 设备必须预安装此软件：
 
-- Windows 10 企业版、专业版或专业工作站版
+- Windows 10 企业版、Pro 或 Pro Workstation 版本
 - 64 位版本的 Microsoft 365 企业应用版 
 - 所有适用的设备驱动程序
 
@@ -59,7 +59,7 @@ Microsoft 托管桌面会定期评估要包含在服务中的设备要求。 本
 - 具有基于虚拟化的安全性 
 - BIOS[支持的虚拟机监控](/windows-hardware/drivers/bringup/device-guard-and-credential-guard)程序保护的代码完整性
 
-有关这些功能以及服务使用的与这些功能相关的技术，请参阅 [Microsoft 托管桌面技术](../intro/technologies.md)。
+有关这些功能以及服务使用的与这些功能相关的技术，请参阅Microsoft 托管桌面[技术](../intro/technologies.md)。
 
 > [!NOTE]
 > ARM处理器不受支持。
@@ -76,7 +76,7 @@ Microsoft 托管桌面会定期评估要包含在服务中的设备要求。 本
 
 如果你选择具有这些功能的设备，你的用户将拥有更好的体验：
 
-- Intel vPro 平台处理器或 AMD Ryzen Pro 处理器
+- Intel vPro 平台处理器或 AMD Ryzen Pro处理器
 - 容量至少为 256 GB 的 SSD 类型的启动驱动器
 - 内部设备内存 (内存) 至少为 16 GB
 - 对现代待机的支持

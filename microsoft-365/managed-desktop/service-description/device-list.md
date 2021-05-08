@@ -1,6 +1,6 @@
 ---
 title: Microsoft 托管桌面设备
-description: 本文列出了已批准用于 Microsoft 托管桌面的设备规范。
+description: 本文列出了已批准用于安装Microsoft 托管桌面。
 keywords: Microsoft 托管桌面, Microsoft 365, 服务, 文档
 ms.service: m365-md
 author: jaimeo
@@ -8,24 +8,29 @@ ms.localizationpriority: normal
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 59609da65701112ced43b73b67650881bc81be8a
-ms.sourcegitcommit: 8685b0f7d53c99577fa65144ab60295dfa60f46f
+ms.openlocfilehash: 636d32f47c4fd9fdd5c0409a4ebbc2d9e79a166d
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51218660"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245932"
 ---
-# <a name="microsoft-managed-desktop-devices"></a>Microsoft 托管桌面设备 
+# <a name="microsoft-managed-desktop-devices"></a>Microsoft 托管桌面设备
 
-Microsoft 托管桌面会定期评估要包含在服务中的设备。 本文列出了当前支持的特定设备。 有关设备要求的更一般声明，请参阅 [设备要求](device-requirements.md)。
+> [!NOTE]
+> Microsoft 托管桌面不再需要此列表中的设备型号。 截至 2021 年 5 月 3 日，已批准制造商的所有设备都应满足我们发布硬件和软件要求。 你可以放心地继续使用此列表上的设备。 你可以找到建议在购买商业Microsoft 托管桌面购买Windows 10 专业版[更多](https://www.microsoft.com/windowsforbusiness/view-all-devices)设备。 在该网站中，通过展开"按筛选"区域中的功能查看推荐 **设备，** 然后选择 **"Microsoft 托管桌面"。** 每当计划首次在服务中注册特定设备型号时，都应该测试一个示例以确保它将提供你期望的用户体验。 有关详细信息，请参阅验证 [新设备](../get-started/validate-device.md)。
 
-有关 Microsoft 托管桌面的信息，请参阅 [Microsoft 托管桌面文档和资源](../index.yml)。 
+Microsoft 托管桌面定期评估要包含在服务中的设备。 本文列出了当前支持的特定设备。 有关设备要求的更一般声明，请参阅 [设备要求](device-requirements.md)。
+
+有关文档Microsoft 托管桌面，请参阅Microsoft 托管桌面[文档和资源](../index.yml)。 
+
+[选择并验证新设备](../get-started/validate-device.md)
 
 <!-- Microsoft 365 E5; Device as a Service -->
 <!-- Split from device & technologies topic. Destination topic for aka.ms/device-list  -->
 若要在 Microsoft 托管桌面中注册，设备必须是以下型号之一，并且必须满足或超过列出的 RAM、处理器系列和磁盘空间规格。 
 
-此处设备的链接仅供参考。 如果要订购设备，请与商业渠道联系人合作，以确保选择正确的配置。 在此表中， *存档日期* 是这些模型需要较短的 Microsoft 托管桌面服务使用时间的日期;在此日期之后载入的任何此类设备将不会从 Microsoft 托管桌面获得为期三年的完整支持期限。 已存档设备也列在 Microsoft [托管桌面存档设备中](archived-device-list.md)。 *停用日期* 是 Microsoft 托管桌面不再支持此模型的日期。 在此日期，此模型的所有注册设备都将从 Microsoft 托管桌面中删除，无论设备何时注册。
+此处设备的链接仅供参考。 如果要订购设备，请与商业渠道联系人合作，以确保选择正确的配置。 在此表中，*存档日期* 是这些模型在服务生命周期中Microsoft 托管桌面的日期;在此日期之后载入的任何此类设备将不会收到来自以下用户的完整三年支持Microsoft 托管桌面。 存档的设备也列在存档Microsoft 托管桌面[中](archived-device-list.md)。 *停用日期* 是系统不再支持此Microsoft 托管桌面的日期。 在此日期，此模型的所有注册设备都将从Microsoft 托管桌面中删除，无论设备何时注册。
 
 >[!NOTE]
 >设备可随时添加到此表中，但我们将针对影响存档或停用日期的任何更改提供 90 天通知。 最近添加的设备标记为 **\*** 。
@@ -69,20 +74,20 @@ Microsoft 托管桌面会定期评估要包含在服务中的设备。 本文列
 |----------|----------------|---------------------------|----------------|--------------------|
 | [Surface Book 3](https://www.microsoft.com/p/surface-book-3-for-business/93h0mb2gqd5b?activetab=pivot%3aoverviewtab) | 256 GB / Intel i5 / 8 GB RAM | 无 | 2022 年 5 月 21 日 | 2027 年 5 月 21 日 |
 | [Surface Go 2](https://www.microsoft.com/p/surface-go-2-for-business/8wzd6dhzj7kv?activetab=pivot%3aoverviewtab) | 128 GB / Intel Core M3 / 8 GB RAM | 无 | 2022 年 5 月 21 日 | 2027 年 5 月 21 日 |
-| [Surface Laptop Go](https://www.microsoft.com/surface/business/surface-laptop-go) | 128 GB / Intel i5 / 8 GB RAM | 无 | 2022 年 10 月 12 日 | 2025 年 10 月 12 日 |
+| [Surface Laptop转到](https://www.microsoft.com/surface/business/surface-laptop-go) | 128 GB / Intel i5 / 8 GB RAM | 无 | 2022 年 10 月 12 日 | 2025 年 10 月 12 日 |
 | [Surface Laptop 3](https://www.microsoft.com/surface/business/surface-laptop-3) | 128 GB / Intel i5 / 8 GB RAM | 无 | 2021 年 10 月 22 日 | 2024 年 10 月 22 日 |
 | [Surface Pro 7](https://www.microsoft.com/surface/business/surface-pro-7) | 128 GB / Intel i5 / 8 GB RAM | 无 | 2021 年 10 月 22 日 | 2024 年 10 月 22 日 |
-| **\*[Surface Pro 7 及以上](https://www.microsoft.com/p/surface-pro-7-for-business/8p43n3k93409?activetab=pivot%3aoverviewtab)** | 128 GB / Intel i5 / 8 GB RAM | 无 | 2022 年 1 月 15 日 | 2025 年 1 月 15 日 |
+| **\*[Surface Pro 7+](https://www.microsoft.com/p/surface-pro-7-for-business/8p43n3k93409?activetab=pivot%3aoverviewtab)** | 128 GB / Intel i5 / 8 GB RAM | 无 | 2022 年 1 月 15 日 | 2025 年 1 月 15 日 |
 
 此外，设备还必须满足以下条件：     
 
-- 如果特定 SKU 在设备要求中列出，请确保在订购时使用它。 这样做可确保设备符合 Microsoft 托管桌面软件要求。 
-- 尚未完成 Windows 首次运行体验。
-- 使用设备注册功能向 Microsoft 托管[桌面注册](../get-started/register-devices-self.md)
+- 如果特定 SKU 在设备要求中列出，请确保在订购时使用它。 这样做可确保设备符合Microsoft 托管桌面要求。 
+- 尚未完成首次Windows体验。
+- 使用设备Microsoft 托管桌面[注册功能向用户](../get-started/register-devices-self.md)注册
 
 >[!NOTE]
 >具有 2.0 GHz 或更快处理器的设备将为参与这些活动的用户提供更好的体验：
->- 将视频会议与 Teams 一同使用。 有关详细信息 [，请参阅 Microsoft Teams](/microsoftteams/hardware-requirements-for-the-teams-app) 的硬件要求。
+>- 将视频会议与 Teams。 有关详细信息[，请参阅Microsoft Teams](/microsoftteams/hardware-requirements-for-the-teams-app)要求。
 >-  将一台设备用于多个不同的工作负载。
 >- 使用多个监视器。
 

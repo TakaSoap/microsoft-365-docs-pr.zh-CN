@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 817ed5e33505f691b11970e3da4c956afa7dc76c
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: ea37ad4302eedf7d43e3ad03e94357a146c2216c
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51861055"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245572"
 ---
 # <a name="microsoft-defender-for-endpoint-preview-features"></a>适用于终结点的 Microsoft Defender 预览功能
 
@@ -44,7 +44,7 @@ Defender for Endpoint 服务会不断更新，以包含新功能增强功能和�
 了解 Defender for Endpoint 预览版中的新功能，并首先通过打开预览体验来试用即将推出的功能。
 
 >[!TIP]
->在此页面更新时收到通知，方法为将以下 URL 复制并粘贴到源阅读器中： `https://docs.microsoft.com/api/search/rss?search=%22Microsoft+Defender+ATP+preview+features%22&locale=en-us`
+>在此页面更新时收到通知，方法为将以下 URL 复制并粘贴到源阅读器中： `https://docs.microsoft.com/api/search/rss?search=%22In+the+navigation+pane%2C+select+Settings+%3E+Advanced+features+%3E+Preview+features.%22&locale=en-us&facet=`
 
 有关已普遍提供的新功能详细信息，请参阅 Defender for [Endpoint 中的新增功能](whats-new-in-microsoft-defender-atp.md)。
 
@@ -54,7 +54,7 @@ Defender for Endpoint 服务会不断更新，以包含新功能增强功能和�
 
 启用预览体验设置，以率先体验即将推出的功能。
 
-1. 在导航窗格中，选择"**设置**  >  **""高级功能**  >  **预览功能"。**
+1. 在导航窗格中，选择 **"设置**  >  **高级功能**  >  **预览功能"。**
 
 2. 切换 **开和关** 之间的 **设置，** 然后选择 **保存首选项**。
 

@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: b3fef3479fa2d36806e6657b31f5152c54b9251f
-ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
+ms.openlocfilehash: 1c61e69b5c8d414ab229fa8bf64eb657a6e40304
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51764995"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245956"
 ---
 # <a name="device-discovery-frequently-asked-questions"></a>设备发现常见问题
 
@@ -49,16 +49,20 @@ ms.locfileid: "51764995"
  在此模式下，载入到 Microsoft Defender for Endpoint 的终结点可以主动探测网络中观察到的设备，以丰富收集的数据 (网络流量可以忽略不计) 。 强烈建议使用此模式生成可靠且一致的设备清单。 如果选择禁用此模式，并选择"基本发现模式"，可能只会获得网络中非托管终结点的有限可见性。
 
 ## <a name="can-i-control-which-devices-perform-standard-discovery"></a>我能否控制哪些设备执行标准发现？
- 你可以自定义用于执行标准发现的设备列表。 你可以在所有也支持此功能的已载入设备上启用标准发现 (目前只有 Windows 10) 或者通过指定设备的设备标记选择一部分或部分设备。 在这种情况下，所有其他设备将配置为仅运行基本发现。 配置在设备发现设置页中提供。
+ 你可以自定义用于执行标准发现的设备列表。 你可以在所有也支持此功能的已载入设备上启用标准发现 (当前仅 Windows 10 设备) 或者通过指定设备的设备标记选择一部分或部分设备。 在这种情况下，所有其他设备将配置为仅运行基本发现。 配置在设备发现设置页中提供。
+
+## <a name="can-i-exclude-unmanaged-devices-from-the-device-inventory-list"></a>能否从设备清单列表中排除非托管设备？
+是，你可以应用筛选器，从设备清单列表中排除非托管设备。 您还可以使用 API 查询上的载入状态列筛选出非托管设备。 
+
 
 ## <a name="which-onboarded-devices-can-perform-discovery"></a>哪些载入的设备可以执行发现？
- 在 Windows 10 版本 1809 或更高版本上运行的已载入设备可以执行发现。
+ 在版本 1809 或Windows 10上运行的已载入设备可以执行发现。
 
 ## <a name="what-happens-if-my-onboarded-devices-is-connected-to-my-home-network-or-to-public-access-point"></a>如果我的已载入设备连接到我的家庭网络或公共访问点，会发生什么情况？
- 发现引擎区分在企业网络中接收的网络事件与企业网络外部的网络事件。 通过在所有租户的客户端之间关联网络标识符，可以区分从专用网络和企业网络接收的事件。 专用网络设备不会在清单中列出，并且不会主动探测器。
+ 发现引擎区分在企业网络中接收的网络事件与企业网络外部的网络事件。 通过在所有租户的客户端之间关联网络标识符，可以区分从专用网络和企业网络接收的事件。 例如，如果网络中的大多数设备报告它们连接到了相同的网络名称，并且具有相同的默认网关和 DHCP 服务器地址，则假定此网络可能是企业网络。 专用网络设备不会在清单中列出，并且不会主动探测器。
 
 ## <a name="what-protocols-are-you-capturing-and-analyzing"></a>要捕获和分析哪些协议？
- 默认情况下，在 Windows 10 版本 1809 或更高版本上运行的所有已载入设备都捕获和分析以下协议：ARP、CDP、DHCP、DHCPv6、IP (标头) 、LLDP、LLMNR、mDNS、MNDP、NBNS、SSDP、TCP (标头) 、UDP (标头) 、WSD
+ 默认情况下， 在 Windows 10 版本 1809 或更高版本上运行的所有已载入设备正在捕获和分析以下协议：ARP、CDP、DHCP、DHCPv6、IP (标头) 、LLDP、LLMNR、mDNS、MNDP、NBNS、SSDP、TCP (标头) 、UDP (标头) 、WSD
 
 ## <a name="which-protocols-do-you-use-for-active-probing-in-standard-discovery"></a>在标准发现中，使用哪些协议进行主动探测？
  当设备配置为运行标准发现时，会使用下列协议对公开的服务进行探测：ARP、FTP、HTTP、ICMP、LLMNR、NBNS、RDP、SIP、SMTP、SNMP、SSH、Telnet、UPNP、WSD、SMB、NBSS、IPP、PJL
@@ -85,6 +89,6 @@ ms.locfileid: "51764995"
  安全建议和仪表板小部件适用于网络中稳定的设备;不包括临时设备、来宾设备和其他。 该想法是在持久性设备上推荐，这也意味着组织的总体安全分数。
 
 ## <a name="can-i-onboard-unmanaged-devices-that-were-found"></a>我能否载入找到的非托管设备？
- 是的。 网络中非托管终结点会为网络带来漏洞和风险。 将它们载入服务可提升对它们的安全可见性。 
+ 对。 网络中非托管终结点会为网络带来漏洞和风险。 将它们载入服务可提升对它们的安全可见性。 
 
 

@@ -16,12 +16,12 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: ''
-ms.openlocfilehash: 01dd5feab17c68eed1da9d66c4310c50e90032c6
-ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
+ms.openlocfilehash: 7d23230ebe4321f355128d1f3268e967a35a0a89
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52114222"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245644"
 ---
 # <a name="learn-about-sensitive-information-types"></a>了解敏感信息类型
 
@@ -81,7 +81,7 @@ ms.locfileid: "52114222"
 
 ### <a name="checksum"></a>校验和
 
-否
+不支持
 
 ### <a name="definition"></a>定义
 
@@ -104,7 +104,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 #### <a name="keyword_argentina_national_id"></a>Keyword_argentina_national_id
 
 - Argentina National Identity number 
-- Identity 
+- 标识 
 - Identification National Identity Card 
 - DNI 
 - NIC National Registry of Persons 
@@ -158,5 +158,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - [敏感信息类型属性定义](sensitive-information-type-entity-definitions.md)
 - [创建自定义敏感信息类型](create-a-custom-sensitive-information-type.md)
 - [在 PowerShell 中创建自定义敏感信息类型](create-a-custom-sensitive-information-type-in-scc-powershell.md)
+
+若要了解如何使用敏感信息类型来遵守数据隐私法规，请参阅使用 Microsoft 365 (aka.ms/m365dataprivacy) 为数据隐私[法规部署](../solutions/information-protection-deploy.md)信息保护。
 
 <!-- fwlink for this topic https://go.microsoft.com/fwlink/?linkid=2135644-->

@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: c9526363b0430514455db1fbdf12cfb7a18229f1
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: d7563a8299bbe7d543b065bb25eeb3bc90a854b9
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51932985"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245596"
 ---
 # <a name="advanced-hunting-quotas-and-usage-parameters"></a>高级搜寻配额和使用参数
 
@@ -35,7 +35,7 @@ ms.locfileid: "51932985"
 **适用于：**
 - Microsoft 365 Defender
 
-为保持服务性能高且响应迅速，高级搜寻设置各种配额和使用 (也称为"服务限制") 。 这些配额和参数适用于手动和自定义检测规则 [运行的查询](custom-detection-rules.md)。 定期运行多个查询的客户应跟踪使用情况， [并应用](advanced-hunting-best-practices.md) 优化最佳做法以最大限度地减少中断。
+为保持服务性能高且响应迅速，高级搜寻设置各种配额和使用 (也称为"服务限制") 。 这些配额和参数分别应用于手动运行的查询和使用自定义检测规则 [运行的查询](custom-detection-rules.md)。 定期运行多个查询的客户应注意这些限制，并 [应用](advanced-hunting-best-practices.md) 优化最佳做法以最大限度地减少中断。
 
 请参阅下表以了解现有配额和使用参数。
 
@@ -44,7 +44,7 @@ ms.locfileid: "51932985"
 | 数据区域 | 30 天 | 每个查询 | 每个查询都可以查找过去 30 天的数据。 |
 | 结果集 | 10，000 行 | 每个查询 | 每个查询最多可返回 10，000 条记录。 |
 | Timeout | 10 分钟 | 每个查询 | 每个查询最多可以运行 10 分钟。 如果未在 10 分钟内完成，则服务将显示一个错误。
-| CPU 资源 | 基于租户大小 | - 每小时，然后每 15 分钟<br>- 每天午夜 12 点 | 该服务单独强制执行每日和 15 分钟配额。 对于每个配额，只要 [查询运行](advanced-hunting-errors.md) 且租户已占用已分配资源的 10% 以上，门户就会显示一个错误。 如果直到下一个每日或 15 分钟周期之后租户一直达到 100%，将阻止查询。 |
+| CPU 资源 | 基于租户大小 | 每 15 分钟 | 只要 [查询运行且租户已占用](advanced-hunting-errors.md) 已分配资源的 10% 以上，门户就会显示错误。 如果租户一直达到 100%， 直到下一个 15 分钟周期之后，查询将被阻止。 |
 
 >[!NOTE] 
 >一组单独的配额和参数适用于通过 API 执行的高级搜寻查询。 [阅读有关高级搜寻 API](./api-advanced-hunting.md)

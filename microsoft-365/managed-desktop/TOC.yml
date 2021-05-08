@@ -104,6 +104,8 @@
           href: get-started/enterprise-state-roaming.md
         - name: 本地化用户体验
           href: get-started/localization.md
+        - name: 验证新设备
+          href: get-started/validate-device.md
         - name: 设置设备
           href: get-started/set-up-devices.md
           items:

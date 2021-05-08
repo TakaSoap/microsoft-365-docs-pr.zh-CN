@@ -1,6 +1,6 @@
 ---
 title: 设备发现概述
-description: 了解如何利用 Microsoft 365 Defender 中的终结点发现查找网络中非托管设备
+description: 了解如何在 Microsoft 365 Defender 中利用终结点发现查找网络中非托管设备
 keywords: 设备发现， 发现， 被动， 主动， 网络， 可见性， 服务器， 工作站， 载入， 非托管设备
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: c549d5d2a7c30892a9272b4ac3e03cb8979bc1a5
-ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
+ms.openlocfilehash: 2dee1193e9f852e66df324927bf38d37d736d251
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51764983"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245944"
 ---
 # <a name="device-discovery-overview"></a>设备发现概述
 
@@ -96,10 +96,11 @@ Microsoft Defender for Endpoint 提供设备发现功能，可帮助你查找连
 
 ![设备清单仪表板的图像](images/2b62255cd3a9dd42f3219e437b956fb9.png)
 
-
+> [!TIP]
+> 你始终可以应用筛选器以从设备清单列表中排除非托管设备。 您还可以使用 API 查询上的载入状态列筛选出非托管设备。 
 
 ## <a name="vulnerability-assessment-on-discovered-devices"></a>已发现设备的漏洞评估
-设备上以及网络中发现的其他非托管设备的漏洞和风险是当前 TVM 流"安全建议"下的一部分，在门户的实体页面中表示。 搜索与"SSH"相关的安全建议，以查找与非托管和托管设备相关的 SSH 漏洞。 
+设备上以及网络中发现的其他非托管设备的漏洞和风险是"安全 推荐"下当前 TVM 流的一部分，在门户的实体页面中表示。 搜索与"SSH"相关的安全建议，以查找与非托管和托管设备相关的 SSH 漏洞。 
 
 ![安全建议仪表板的图像](images/1156c82ffadd356ce329d1cf551e806c.png)  
 
@@ -131,8 +132,8 @@ DeviceNetworkEvents
 ```
 
 
-## <a name="changed-behaviour"></a>已更改的行为
-以下部分列出了启用此功能后你将在 Microsoft Defender for Endpoint 和/或 Microsoft 365 安全中心中观察到的更改。 
+## <a name="changed-behavior"></a>已更改行为
+以下部分列出了启用此功能后，你将在 Microsoft Defender for Endpoint 和/Microsoft 365安全中心中观察到的更改。 
  
 1.  未载入到 Microsoft Defender 到终结点的设备应显示在设备清单、高级搜寻和 API 查询中。 这可能会显著增加查询结果的大小。 
     1. 高级搜寻中的"DeviceInfo"和"DeviceNetworkInfo"表现在将保留发现的设备。 可以使用"OnboardingStatus"属性筛选出这些设备。

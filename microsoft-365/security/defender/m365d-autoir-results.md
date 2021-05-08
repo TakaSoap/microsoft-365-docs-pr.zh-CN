@@ -1,6 +1,6 @@
 ---
 title: 自动调查的详细信息和结果
-description: 在 Microsoft 365 Defender 中查看自动调查的结果和主要发现
+description: 查看 Microsoft 365 Defender 中自动调查的结果和主要发现
 keywords: 自动化， 调查， 结果， 分析， 详细信息， 修正， autoair
 search.appverid: met150
 ms.prod: m365-security
@@ -10,8 +10,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: deniseb
-author: denisebmsft
+ms.author: josephd
+author: JoeDavies-MSFT
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
@@ -21,12 +21,12 @@ ms.collection:
 ms.topic: conceptual
 ms.custom: autoir
 ms.reviewer: evaldm, isco
-ms.openlocfilehash: ca023ea49a8d92123467be640a097a72233d3198
-ms.sourcegitcommit: e0a96e08b7dc29e074065e69a2a86fc3cf0dad01
+ms.openlocfilehash: b26574c85e498209f8d0233495d3fe0e44733909
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "51592116"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245872"
 ---
 # <a name="details-and-results-of-an-automated-investigation"></a>自动调查的详细信息和结果
 
@@ -35,16 +35,16 @@ ms.locfileid: "51592116"
 **适用于：**
 - Microsoft 365 Defender
 
-使用 Microsoft 365 Defender，当自动调查运行时，有关该调查的详细信息在自动调查过程期间和之后均可用。 [](m365d-autoir.md) 如果您具有 [必要的权限，](m365d-action-center.md#required-permissions-for-action-center-tasks)可以在调查详细信息视图中查看这些详细信息。 调查详细信息视图为您提供了最新状态以及批准任何挂起操作的能力。 
+使用 Microsoft 365 Defender，当自动[调查运行时，](m365d-autoir.md)有关该调查的详细信息在自动调查过程期间和之后均可用。 如果您具有 [必要的权限，](m365d-action-center.md#required-permissions-for-action-center-tasks)可以在调查详细信息视图中查看这些详细信息。 调查详细信息视图为您提供了最新状态以及批准任何挂起操作的能力。 
 
 ![调查详细信息](../../media/mtp-air-investdetails.png)
 
 ## <a name="new-unified-investigation-page"></a> ("新建！) 统一调查"页
 
-最近更新了调查页面，以包含跨设备、电子邮件和协作内容的信息。 新的统一调查页面定义通用语言，并提供跨 [Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) 和 Microsoft Defender [for Office 365](../office-365-security/defender-for-office-365.md)自动调查的统一体验。 若要访问统一调查页面，请选择你将在以下位置看到的黄色横幅中的链接：
-- Office 365 安全与合规中心&调查 [https://protection.office.com](https://protection.office.com) () 
-- Microsoft Defender 安全中心内的任何调查 [https://securitycenter.windows.com](https://securitycenter.windows.com) () 
-- 改进的 Microsoft 365 安全中心安全中心 () [https://security.microsoft.com](https://security.microsoft.com)
+最近更新了调查页面，以包含跨设备、电子邮件和协作内容的信息。 新的统一调查页面定义通用语言，并提供跨[Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)和 Microsoft Defender for Office 365 进行自动[调查的统一体验](../office-365-security/defender-for-office-365.md)。 若要访问统一调查页面，请选择你将在以下位置看到的黄色横幅中的链接：
+- Office 365 安全与&中心 () [https://protection.office.com](https://protection.office.com)
+- Microsoft Defender 安全中心 () [https://securitycenter.windows.com](https://securitycenter.windows.com)
+- 改进的安全中心安全中心Microsoft 365事件 () [https://security.microsoft.com](https://security.microsoft.com)
 
 ## <a name="open-the-investigation-details-view"></a>打开调查详细信息视图
 
@@ -96,12 +96,12 @@ ms.locfileid: "51592116"
 在调查详细信息视图中，你可以看到调查 **图形**、警报、设备、标识、关键发现、实体、日志和挂起操作选项卡上的信息，如下表所述。    
 
 > [!NOTE]
-> 你在调查详细信息页面中看到的特定选项卡取决于你的订阅包括的内容。 例如，如果你的订阅不包括 Microsoft Defender for Office 365 计划 2，你将看不到"邮箱 **"** 选项卡。
+> 你在调查详细信息页面中看到的特定选项卡取决于你的订阅包括的内容。 例如，如果你的订阅不包括 Microsoft Defender for Office 365计划 2，你将看不到"邮箱 **"** 选项卡。
 
-| 选项卡 | Description |
+| 选项卡 | 说明 |
 |:--------|:--------|
 | **调查图**   | 提供调查的可视化表示形式。 描述实体并列出发现的威胁，以及警报以及是否正在等待批准任何操作。<br/>可以选择图形上的项目以查看更多详细信息。 例如，选择 **"证据**"图标将你带至"证据"选项卡，可在其中查看检测到的实体及其裁定。 |
-| **警告**    | 列出与调查相关的警报。 警报可能来自用户设备上的威胁防护功能、Office 应用、云应用安全和其他 Microsoft 365 Defender 功能。|
+| **警告**    | 列出与调查相关的警报。 警报可能来自用户设备上的威胁防护功能、Office、云应用安全和其他 Microsoft 365 Defender 功能。|
 | **设备** | 列出包含在调查中的设备及其修正级别。  (修正级别对应于设备[组 .) ](m365d-configure-auto-investigation-response.md#review-or-change-the-automation-level-for-device-groups) |
 | **邮箱** |列出受检测到的威胁影响的邮箱。  |
 | **用户**  | 列出受检测到的威胁影响的用户帐户。 |

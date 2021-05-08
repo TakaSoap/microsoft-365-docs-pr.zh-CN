@@ -19,12 +19,12 @@ description: 管理员可以了解安全与合规中心的"报告"仪表板中&�
 ms.custom: ''
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 13871908c3b09660906b9233d23495830cf31ba9
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 38beac44af191a027db722ade25ca7fd0e505d9b
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51203766"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245668"
 ---
 # <a name="view-mail-flow-reports-in-the-reports-dashboard-in-security--compliance-center"></a>在安全与合规中心的"报告"仪表板中&邮件流报告
 
@@ -35,7 +35,7 @@ ms.locfileid: "51203766"
 - [Microsoft Defender for Office 365 计划 1 和计划 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-除了安全 & 合规中心的邮件流仪表板中提供[](mail-flow-insights-v2.md)的邮件流报告之外，报告仪表板中还提供了各种其他邮件流报告，以帮助您监视 Microsoft 365 组织。
+除了安全与合规中心内"邮件流"仪表板中[](mail-flow-insights-v2.md)提供的邮件流报告之外，"报告"仪表板中还提供了各种其他邮件流报告，以帮助您监视 Microsoft 365 组织。 &
 
 如果您具有 [必要的权限](#what-permissions-are-needed-to-view-these-reports)，可以在安全与合规中心内查看这些报告 [&"报告仪表板](https://protection.office.com) \> **"。** 若要直接转到"报表"仪表板，请打开 <https://protection.office.com/insightdashboard> 。
 
@@ -81,7 +81,7 @@ ms.locfileid: "51203766"
 
 如果单击 **视图中的"** 查看详细信息"报表视图，将显示以下信息：
 
-- "日期"
+- **Date**
 - **连接器方向和名称**
 - **连接器类型**
 - **强制 TLS？：** 值 **True** 或 **False**。
@@ -95,29 +95,29 @@ ms.locfileid: "51203766"
 
 若要返回到报告报表视图，请单击"查看 **报告"。**
 
-## <a name="exchange-transport-rule-report"></a>Exchange 传输规则报告
+## <a name="exchange-transport-rule-report"></a>Exchange传输规则报告
 
-**Exchange 传输规则报告显示** 邮件流规则对组织中 (传输规则) 传入和传出邮件的影响。
+**"Exchange传输** 规则"报告显示邮件流规则对 (传入和传出邮件) 传输规则的影响。
 
-若要查看报告，请打开安全与合规 [&，转到](https://protection.office.com)**报告仪表板** \> ，然后选择 **Exchange 传输规则**。 若要直接转到报告，请打开 <https://protection.office.com/reportv2?id=ETRRuleReport> 。
+若要查看报告，请打开安全与 [](https://protection.office.com)合规&，**转到报告** 仪表板 \> ，然后选择"Exchange **规则"。** 若要直接转到报告，请打开 <https://protection.office.com/reportv2?id=ETRRuleReport> 。
 
-![报告仪表板中的 Exchange 传输规则小组件](../../media/transport-rule-report-widget.png)
+![Exchange仪表板中的"传输规则"小组件](../../media/transport-rule-report-widget.png)
 
-### <a name="report-view-for-the-exchange-transport-rule-report"></a>Exchange 传输规则报告的报告视图
+### <a name="report-view-for-the-exchange-transport-rule-report"></a>传输规则Exchange报告视图
 
 以下图表可用于报表视图：
 
-- **查看数据者：Exchange 传输规则** \>**Break down by： Direction**： This chart shows the number of **Inbound** and **Outbound** messages that were affected by transport rules.
+- **查看数据者：Exchange传输规则** \>**Break down by： Direction**： This chart shows the number of **Inbound** and **Outbound** messages that were affected by transport rules.
 
-- **查看数据者：Exchange 传输规则** \>**按以下值进行** 分解：严重性：此图表显示高严重性和中等严重性和 **低严重性邮件的数量**。 将严重性级别设置为规则中的操作， (严重性级别审核此规则或 _SetAuditSeverity_) 。 有关详细信息，请参阅 Mail [flow rule actions in Exchange Online。](//Exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions)
+- **查看数据者：Exchange传输规则** \>**按以下值进行** 分解：严重性：此图表显示高严重性和中等严重性和 **低严重性邮件的数量**。 将严重性级别设置为规则中的操作， (严重性级别审核此规则或 _SetAuditSeverity_) 。 有关详细信息，请参阅邮件[流规则操作Exchange Online。](//Exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions)
 
-- **查看数据者：DLP Exchange 传输规则** \>**Break down by： Direction**： This chart shows the number of **Inbound** and **Outbound** messages that were affected by data loss prevention (DLP) rules. 您可以通过选择以下选项来进一步优化图表：
+- **查看数据者：DLP Exchange传输规则** \>**Break down by： Direction**： This chart shows the number of **Inbound** and **Outbound** messages that were affected by data loss prevention (DLP) rules. 您可以通过选择以下选项来进一步优化图表：
 
   - **显示数据：所有 DLP 传输规则**
   - **显示针对：遭到入侵的用户的数据**
   - **显示数据：检测到美国爱国者法案的内容量较低**
 
-- **查看数据者：DLP Exchange 传输规则** \>**Break down by： Direction**： This view shows the number of **High severity** and **Medium severity**， and Low **severity messages** that were affected by DLP transport rules. 您可以通过选择以下选项来进一步优化图表：
+- **查看数据者：DLP Exchange传输规则** \>**Break down by： Direction**： This view shows the number of **High severity** and **Medium severity**， and Low **severity messages** that were affected by DLP transport rules. 您可以通过选择以下选项来进一步优化图表：
 
   - **显示数据：所有 DLP 传输规则**
   - **显示针对：遭到入侵的用户的数据**
@@ -129,15 +129,15 @@ ms.locfileid: "51203766"
 - 方向值
 - 严重性值
 
-![Exchange 传输规则报告中的报告视图](../../media/transport-rule-report-report-view.png)
+![传输规则Exchange中的报告视图](../../media/transport-rule-report-report-view.png)
 
-### <a name="details-table-view-for-the-exchange-transport-rule-report"></a>Exchange 传输规则报告的详细信息表视图
+### <a name="details-table-view-for-the-exchange-transport-rule-report"></a>传输规则报告的详细信息Exchange视图
 
 如果单击 **"查看详细信息表**"，显示的信息取决于您所查看的图表：
 
-- **查看数据者：Exchange 传输规则**：
+- **查看数据者：Exchange传输规则**：
 
-  - "日期"
+  - **Date**
   - **传输规则**
   - **主题**
   - **发件人地址**
@@ -145,9 +145,9 @@ ms.locfileid: "51203766"
   - **严重性**
   - **方向**
 
-- **查看数据者：DLP Exchange 传输规则**：
+- **查看数据者：DLP Exchange传输规则**：
 
-  - "日期"
+  - **Date**
   - **DLP 策略**
   - **传输规则**
   - **主题**
@@ -166,7 +166,7 @@ ms.locfileid: "51203766"
 
 ## <a name="forwarding-report"></a>转发报告
 
-转发 **报告显示** 您的组织自动将邮件从 Exchange Online 邮箱转发到外部域。 转发的邮件可能会带来安全或合规性风险，并可能指示帐户遭到入侵。
+转发 **报告显示** 组织自动将邮件从邮箱转发到Exchange Online域。 转发的邮件可能会带来安全或合规性风险，并可能指示帐户遭到入侵。
 
 若要查看报告，请打开安全与&中心，**转到报告**[仪表板](https://protection.office.com) \> ，然后选择 **转发报告**。 若要直接转到报告，请打开 <https://protection.office.com/reportv2?id=MailFlowForwarding> 。
 
@@ -214,7 +214,7 @@ ms.locfileid: "51203766"
 
 ## <a name="mailflow-status-report"></a>邮件流状态报告
 
-邮件 **流状态报告** 类似于"已发送和已接收 [电子邮件](#sent-and-received-email-report)"报告，包含有关边缘上允许或阻止的电子邮件的其他信息。 这是包含边缘保护信息的唯一报告，它显示了在 Exchange Online Protection (EOP) 允许进入服务之前阻止的电子邮件数。 必须了解，如果将一封邮件发送给五个收件人，我们会将邮件计为五个不同的邮件，而不是一封邮件。
+邮件 **流状态报告** 类似于"已发送和已接收 [电子邮件](#sent-and-received-email-report)"报告，包含有关边缘上允许或阻止的电子邮件的其他信息。 这是包含边缘保护信息的唯一报告，它只显示 EOP Exchange Online Protection (允许进入服务进行评估之前阻止的电子邮件) 。 必须了解，如果将一封邮件发送给五个收件人，我们会将邮件计为五个不同的邮件，而不是一封邮件。
 若要查看报告，请打开安全与合规 [&，转到](https://protection.office.com)**报告仪表板** \> ，然后选择 **邮件流状态报告**。 若要直接转到邮件 **流状态报告，** 请打开 <https://protection.office.com/mailflowStatusReport> 。
 
 !["报告"仪表板中的"邮件流状态报告"小部件](../../media/mail-flow-status-report-widget.png)
@@ -264,9 +264,9 @@ If you click **Choose a category for more details**， you can select from the f
 
 对于详细信息视图，只能导出一天的数据。 因此，如果要导出 7 天的数据，需要执行 7 种不同的导出操作。
 
-每个导出的 .csv 文件限制为 150，000 行。 如果当天的数据包含超过 150，000 行，将创建多个 .csv 文件。
+每个导出.csv文件限制为 150，000 行。 如果当天的数据包含超过 150，000 行，则创建多个.csv文件。
 
-![邮件流状态报告中的类型视图 ](../../media/mail-flow-status-report-type-view.png)
+![邮件流状态报告中的类型视图](../../media/mail-flow-status-report-type-view.png)
 
 ### <a name="direction-view-for-the-mailflow-status-report"></a>邮件流状态报告的方向视图
 
@@ -284,9 +284,9 @@ If you click **Choose a category for more details**， you can select from the f
 
 对于详细信息视图，只能导出一天的数据。 因此，如果要导出 7 天的数据，需要执行 7 种不同的导出操作。
 
-每个导出的 .csv 文件限制为 150，000 行。 如果当天的数据包含超过 150，000 行，将创建多个 .csv 文件。
+每个导出.csv文件限制为 150，000 行。 如果当天的数据包含超过 150，000 行，则创建多个.csv文件。
 
-![邮件流状态报告中的方向视图 ](../../media/mail-flow-status-report-direction-view.png)
+![邮件流状态报告中的方向视图](../../media/mail-flow-status-report-direction-view.png)
 
 ### <a name="funnel-view-for-the-mailflow-status-report"></a>邮件流状态报告的漏斗视图
 
@@ -317,13 +317,13 @@ If you click **Choose a category for more details**， you can select from the f
 - **文件和 URL 触发**<sup>1</sup>之后的电子邮件
 - **在传递后保护或 URL 单击时间保护 (检测为安全)**
 
-<sup>仅 1</sup> 个 Defender for Office 365
+<sup>1</sup> Defender for Office 365 仅
 
-若要查看由 EOP 或 Defender for Office 365 单独筛选的电子邮件，请单击图表图例中的值。
+若要查看由 EOP 或 Defender 单独筛选的电子邮件Office 365，请单击图表图例中的值。
 
 该数据表包含以下信息，按降序日期顺序显示：
 
-- "日期"
+- **Date**
 - **电子邮件总数**
 - **边缘保护**
 - **反恶意软件， 文件信誉， 文件类型阻止**：
@@ -335,12 +335,12 @@ If you click **Choose a category for more details**， you can select from the f
   - **反欺骗**：由于邮件试图欺骗收件人所属的域或邮件发件人不属于的域而筛选的邮件。
 - **反垃圾邮件，批量邮件筛选**：
   - **批量邮件筛选**：由于尝试将批量邮件传递至收件人而筛选的邮件。
-- **Office 365 (Defender 中的** 用户和) ：
+- **Defender for (的用户和Office 365) ：**
   - 用户模拟：由于尝试模拟用户 (邮件发件人) （在反网络钓鱼策略的模拟保护设置中定义）而筛选的邮件。
   - **域模拟**：由于尝试模拟在反网络钓鱼策略的模拟保护设置中定义的域而筛选的邮件。
-- **Office 365 (Defender 的文件和 URL) ：**
-  - **文件触发**：由安全附件策略筛选的邮件。
-  - **URL 触发**：由安全链接策略筛选的邮件。
+- **Defender for (的文件和 URL Office 365) ：**
+  - **文件触发**：由附件策略保险箱的邮件。
+  - **URL 触发**：按链接策略保险箱的邮件。
 - **传递后保护和 ZAP (ATP) 或 ZAP (EOP)**：ZAP 表示零时差自动清除。
 
 如果在数据表中选择一行，则电子邮件计数的进一步细分将显示在该飞出区中。
@@ -352,11 +352,11 @@ If you click **Choose a category for more details**， you can select from the f
 - **摘要 (最近 90 天的数据汇总)**
 - **有关 (最近 30 天的数据的详细信息)**
 
-在 **"日期**"下，选择一个范围，然后单击"应用 **"。** 当前筛选器的数据将导出到 .csv 文件。
+在 **"日期**"下，选择一个范围，然后单击"应用 **"。** 当前筛选器的数据将导出到.csv文件中。
 
-每个导出的 .csv 文件限制为 150，000 行。 如果数据包含超过 150，000 行，将创建多个 .csv 文件。
+每个导出.csv文件限制为 150，000 行。 如果数据包含的行数超过 150，000，.csv文件。
 
- ![邮件流状态报告中的漏斗视图 ](../../media/mail-flow-status-report-funnel-view.png)
+ ![邮件流状态报告中的漏斗视图](../../media/mail-flow-status-report-funnel-view.png)
 
 ### <a name="tech-view-for-the-mailflow-status-report"></a>邮件流状态报告的技术视图
 
@@ -380,29 +380,29 @@ If you click **Choose a category for more details**， you can select from the f
 
 - **电子邮件总数**
 - **边缘允许** 和 **边缘筛选**
-- **非恶意软件**、**安全附件检测** <sup>\*</sup> 、**反恶意软件引擎检测和****规则邮件**
+- **不是恶意软件****、保险箱附件检测** <sup>\*</sup> **、反恶意软件引擎检测和****规则邮件**
 - **非网络钓鱼****、DMARC 失败**、**模拟检测**、**欺骗检测和****钓鱼检测**
 - **无需检测 URL 触发和** **URL 触发检测**<sup>\*</sup>
 - **不是垃圾邮件** 和  **垃圾邮件**
-- **非恶意电子邮件**、**安全链接检测和** <sup>\*</sup> **ZAP**
+- **非恶意电子邮件****、保险箱链接检测和** <sup>\*</sup> **ZAP**
 
-<sup>\*</sup> Defender for Office 365
+<sup>\*</sup>Defender for Office 365
 
 将鼠标悬停在图表中的类别上时，可以看到该类别中的消息数。
 
 该数据表包含以下信息，按降序日期顺序显示：
 
-- "日期"
+- **Date**
 - **电子邮件总数**
 - **已筛选边缘**
-- **反恶意软件引擎，安全附件，已筛选规则**：
+- **反恶意软件引擎，保险箱附件，已筛选规则**：
   - **已筛选规则**：由于邮件流规则而筛选 (也称为传输规则) 。
 - **DMARC， 模拟， 欺骗， 网络钓鱼筛选：**
   - **DMARC：** 由于邮件未通过 DMARC 身份验证检查而筛选的邮件。
 - **URL 触发检测**
 - **已筛选反垃圾邮件**
 - **ZAP 已删除**
-- **通过安全链接检测**
+- **按链接保险箱检测**
 
 如果在数据表中选择一行，则电子邮件计数的进一步细分将显示在该飞出区中。
 
@@ -413,11 +413,11 @@ If you click **Choose a category for more details**， you can select from the f
 - **摘要 (最近 90 天的数据汇总)**
 - **有关 (最近 30 天的数据的详细信息)**
 
-在 **"日期**"下，选择一个范围，然后单击"应用 **"。** 当前筛选器的数据将导出到 .csv 文件。
+在 **"日期**"下，选择一个范围，然后单击"应用 **"。** 当前筛选器的数据将导出到.csv文件中。
 
-每个导出的 .csv 文件限制为 150，000 行。 如果数据包含超过 150，000 行，将创建多个 .csv 文件。
+每个导出.csv文件限制为 150，000 行。 如果数据包含的行数超过 150，000，.csv文件。
 
- ![邮件流状态报告中的技术视图 ](../../media/mail-flow-status-report-Tech-view.png)
+ ![邮件流状态报告中的技术视图](../../media/mail-flow-status-report-Tech-view.png)
 
 ## <a name="sent-and-received-email-report"></a>已发送和已接收电子邮件报告
 
@@ -440,7 +440,7 @@ If you click **Choose a category for more details**， you can select from the f
   - **EOP (反恶意软件)  (** 恶意软件) 
   - **垃圾邮件检测**
   - **规则邮件**
-  - Microsoft **Defender** for Office 365 (高级恶意软件) 
+  - **Microsoft Defender (** 高级恶意软件Office 365) 
 
   当您将鼠标悬停在图表中 (一) ，可以看到当天的详细信息。
 
@@ -495,7 +495,7 @@ The **Top senders and recipients** report is a pie chart showing your top email 
 - **显示热门 \> 邮件收件人的数据**
 - **显示热门 \> 垃圾邮件收件人的数据**
 - **显示数据 \>** EOP 邮件 (恶意软件) 
-- **在 Defender for \> Office 365 (中显示热门恶意软件收件人)**
+- **在 Defender for \> Office 365) 中显示 (恶意软件收件人Office 365)**
 
 饼图的组成将基于这些选择进行更改。
 
@@ -529,9 +529,9 @@ The **Top senders and recipients** report is a pie chart showing your top email 
   - **热门恶意软件收件人**
   - **Count**
 
-- **在 Defender for \> Office 365 (中显示热门恶意软件收件人)**
+- **在 Defender for \> Office 365) 中显示 (恶意软件收件人Office 365)**
 
-  - **适用于 Office 365 (Defender 的热门恶意软件)**
+  - **Defender for (的热门恶意软件Office 365)**
   - **Count**
 
 如果在详细信息 **表** 视图中单击"筛选器"，可以指定开始日期和 **结束日期的日期范围**。 
@@ -560,4 +560,4 @@ The **Top senders and recipients** report is a pie chart showing your top email 
 
 [查看安全与合规中心内的电子邮件安全报告](view-email-security-reports.md)
 
-[查看适用于 Office 365 的 Microsoft Defender 报告](view-reports-for-mdo.md)
+[查看 Microsoft Defender for Office 365](view-reports-for-mdo.md)

@@ -22,12 +22,12 @@ description: 使用 Microsoft 信息保护 (MIP) 中的敏感度标签对敏感�
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 1e21da114154a5258f81a48e39d46ae875ee3930
-ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
+ms.openlocfilehash: da660f79cd218c4b97cd2159f2811985d4651cef
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51892925"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245620"
 ---
 # <a name="learn-about-sensitivity-labels"></a>了解敏感度标签
 
@@ -261,3 +261,5 @@ ms.locfileid: "51892925"
 ## <a name="deployment-guidance"></a>部署指南
 
 有关部署规划和指南（包括许可信息、权限、部署策略、支持的方案列表和最终用户文档），请参阅 [敏感度标签入门](get-started-with-sensitivity-labels.md)。
+
+如需了解如何使用敏感度标签以遵守数据隐私法规，请参阅[使用 Microsoft 365 为数据隐私法规部署信息保护](../solutions/information-protection-deploy.md) (aka.ms/m365dataprivacy)。

@@ -16,12 +16,12 @@ ms.collection:
 localization_priority: None
 description: 了解如何在管理中心为 Microsoft Viva Learning (Preview) 配置Microsoft 365源。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: a1bbe65db9dee028f57849de8a5538c996c3e2a4
-ms.sourcegitcommit: d3f8c69519c593b1580cfa7187ce085a99b8a846
+ms.openlocfilehash: b2e6ab6306db9a5ac9d91226431e5876cc244499
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52100864"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245416"
 ---
 # <a name="configure-learning-content-sources-for-microsoft-viva-learning-preview-in-the-microsoft-365-admin-center"></a>在管理中心中为 Microsoft Viva Learning (Preview) 配置Microsoft 365源
 
@@ -35,7 +35,7 @@ Microsoft 365 管理中心的管理员可以管理与 Viva Learning (Preview) �
 > [!NOTE]
 >  用户登录到非 Microsoft 和 LinkedIn Learning Pro浏览器或嵌入式查看器中学习。 此配置的学习受组织和第三方之间的单独许可证、隐私和服务条款的约束，而不是 Viva Learning (Preview) 条款。 在选择这种类型的学习之前，请验证你已就组织和用户达成一致。
 
-## <a name="assign-the-knowledge-admin-role-optional"></a>分配知识管理员角色 [可选]
+## <a name="assign-the-knowledge-admin-role-optional"></a>将知识管理员角色分配 (可选) 
 
 您必须是全局Microsoft 365才能执行这些任务。
 
@@ -78,11 +78,11 @@ Microsoft 365 管理中心的管理员可以管理与 Viva Learning (Preview) �
 
 1.  在管理中心左侧导航Microsoft 365，**转到"设置**  >  **组织设置"。**
 
-2.  在"**组织设置"** 页上的"服务 **"选项卡上**，选择"学习应用 (**预览) "。**
+2.  在"**组织设置"** 页上的"服务 **"选项卡上**，选择 **"Viva Learning (Preview) "。**
 
      ![设置管理中心中的Microsoft 365"页面，其中列出了"学习"应用。](../media/learning/learning-sharepoint-configure1.png)
 
-3.  在"学习 **(预览)** 面板中，选择要为组织配置的学习内容源，然后选择"保存 **"。**
+3.  在 **"Viva 学习 (预览**) 面板上，选择要为组织配置的学习内容源，然后选择"保存 **"。**
 
      ![管理中心中的学习Microsoft 365显示内容源选项。](../media/learning/learning-sharepoint-configure2.png)
 

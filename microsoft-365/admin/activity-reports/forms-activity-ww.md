@@ -1,5 +1,5 @@
 ---
-title: 管理中心中的 Microsoft 365 报表 - 表单活动
+title: Microsoft 365管理中心中的报表 - 表单活动
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -14,28 +14,27 @@ ms.collection:
 - Adm_O365
 - Adm_NonTOC
 ms.custom: AdminSurgePortfolio
-ROBOTS: NOINDEX, NOFOLLOW
 search.appverid:
 - BCS160
 - MST160
 - MET150
 - MOE150
-description: 了解如何使用 Microsoft 365 管理中心中的 Microsoft 365 报表仪表板获取 Microsoft Forms 活动报表。
-ms.openlocfilehash: f4cd021003ad9d9bca4f986a33f49e62e2df1889
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+description: 了解如何使用管理中心中的"Microsoft 365报表"仪表板Microsoft 365 Microsoft Forms 活动报表。
+ms.openlocfilehash: 977ee360d91df0b15e25e86d052d852f9acafe6c
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51579682"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52242320"
 ---
-# <a name="microsoft-365-reports-in-the-admin-center---forms-activity"></a>管理中心中的 Microsoft 365 报表 - 表单活动
+# <a name="microsoft-365-reports-in-the-admin-center---forms-activity"></a>Microsoft 365管理中心中的报表 - 表单活动
 
-Microsoft 365 **报表** 仪表板显示组织中各产品的活动概述。 让用户深入研究各产品级报表，以便更细致地了解每个产品内的活动。 请查看[报表概述主题](activity-reports.md)。
+"Microsoft 365 **报表**"仪表板显示组织中各产品的活动概述。 让用户深入研究各产品级报表，以便更细致地了解每个产品内的活动。 请查看[报表概述主题](activity-reports.md)。
   
 例如，可以通过查看每个授权使用 Microsoft Forms 的用户与表单的交互来了解他们的活动。 它还通过查看用户所回复的表单和表单的数量，帮助您了解进行协作的级别。
   
 > [!NOTE]
-> 你必须是 Microsoft 365 中的全局管理员、全局读者或报告读者，或者 Exchange、SharePoint、Teams 服务、Teams 通信或 Skype for Business 管理员才能查看报告。  
+> 您必须是 Microsoft 365 中的全局管理员、全局读者或报告读取者，或者 Exchange、SharePoint、Teams Service、Teams Communications 或 Skype for Business 管理员才能查看报告。  
  
 ## <a name="how-to-get-to-the-forms-activity-report"></a>如何访问 Forms 活动报表
 
@@ -44,11 +43,11 @@ Microsoft 365 **报表** 仪表板显示组织中各产品的活动概述。 让
   
 ## <a name="interpret-the-forms-activity-report"></a>解释窗体活动报表
 
-You can view the activities in the Forms report by choosing the **Activity** tab.<br/>![Microsoft 365 报表 - Microsoft Forms 活动报表。](../../media/275fb0a1-b9d9-4233-8aaf-e7df73cc705f.png)
+You can view the activities in the Forms report by choosing the **Activity** tab.<br/>![Microsoft 365报表 - Microsoft Forms 活动报表。](../../media/275fb0a1-b9d9-4233-8aaf-e7df73cc705f.png)
 
 选择 **"选择要在** 报表中添加或删除列的列"。  <br/> ![表单活动报表 - 选择列](../../media/0c9b0b69-5dc7-43ea-8e2c-54407b6ce2ab.png)
 
-您还可以通过选择"导出"链接将报告数据导出到 Excel .csv **文件中。** 此操作可导出所有用户的数据，使你能够对数据进行简单的排序和筛选，以进一步分析数据。 如果用户数量不足 2000，则可在报表中的表格内进行排序和筛选。 如果用户数超过 2000，则需要导出数据才能进行排序和筛选。 
+您还可以通过选择"导出"链接将报告数据导出到Excel .csv文件。  此操作可导出所有用户的数据，使你能够对数据进行简单的排序和筛选，以进一步分析数据。 如果用户数量不足 2000，则可在报表中的表格内进行排序和筛选。 如果用户数超过 2000，则需要导出数据才能进行排序和筛选。 
   
 |项目|说明|
 |:-----|:-----|
