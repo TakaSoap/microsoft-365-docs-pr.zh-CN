@@ -107,16 +107,30 @@
               href: create-groups/manage-guest-access-in-groups.md
             - name: 更改用户名和电子邮件地址
               href: add-users/change-a-user-name-and-email-address.md
-            - name: 删除前员工
-              href: add-users/remove-former-employee.md
-            - name: 访问并备份前用户的数据
-              href: add-users/get-access-to-and-back-up-a-former-user-s-data.md
             - name: 还原用户
               href: add-users/restore-user.md
             - name: 创建用于添加用户的模板
               href: add-users/create-and-use-a-template-to-add-users.md
             - name: 将用户升级到最新应用
               href: setup/upgrade-users-to-latest-office-client.md
+        - name: 删除前员工
+          items:
+            - name: 概述
+              href: add-users/remove-former-employee.md
+            - name: 步骤 1. 阻止员工登录并阻止对 Microsoft 365 服务的访问
+              href: add-users/remove-former-employee-step-1.md
+            - name: 步骤 2. 保存前员工的邮箱的内容
+              href: add-users/remove-former-employee-step-2.md
+            - name: 步骤 3. 将前员工的电子邮件转发给其他员工或转换为共享邮箱
+              href: add-users/remove-former-employee-step-3.md
+            - name: 步骤 4. 授予其他员工对 OneDrive 和 Outlook 数据的访问权限
+              href: add-users/remove-former-employee-step-4.md
+            - name: 步骤 5. 擦除并阻止前员工的移动设备
+              href: add-users/remove-former-employee-step-5.md
+            - name: 步骤 6. 删除前员工的 Microsoft 365 许可
+              href: add-users/remove-former-employee-step-6.md
+            - name: 步骤 7. 删除前员工的用户帐户
+              href: add-users/remove-former-employee-step-7.md
         - name: 组
           items:
             - name: 组概述
