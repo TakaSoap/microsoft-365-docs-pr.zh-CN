@@ -8,22 +8,22 @@ manager: scotv
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
-ms.collection: Adm_Commerce_Pay
+ms.custom: CommercePayInfo
 localization_priority: Normal
-description: 了解在何处发送订阅付款。
+description: 了解在哪里发送订阅付款。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 5df52da352def957d259e436529feefefe0ed1a0
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: d740e866fcd496b5aef291439d8ec76f0417be45
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50551244"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52273772"
 ---
 # <a name="payment-information-for-french-guiana"></a>法属 Guiana 的付款信息
 
 [查找另一个国家/地区](../billing-and-payments/pay-for-your-subscription.md)。
 
-请仅以美元支付，并参考发票 (发票) 的发票编号。
+Please pay in USD only and reference your invoice number (s) on your invoice invoice invoice.
 
 ## <a name="electronic-funds-transfer"></a>电子资金转帐
 

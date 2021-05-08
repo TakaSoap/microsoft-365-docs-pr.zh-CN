@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: cdf32e6daa26eb369d66a4b6c0ff3991093c67f9
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 3d9dd871edba29ec6119329f98ada990abad6e8d
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51935265"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52246412"
 ---
 # <a name="microsoft-defender-for-endpoint-on-ios"></a>iOS 上的 Microsoft Defender for Endpoint
 
@@ -36,7 +36,7 @@ ms.locfileid: "51935265"
 
 > 想要体验 Microsoft Defender for Endpoint？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-**iOS 上的 Microsoft Defender for Endpoint** 将提供针对网站、电子邮件和应用中的网络钓鱼和不安全网络连接的防护。 所有警报都将通过 Microsoft Defender 安全中心中的单个窗口窗格提供。 该门户为安全团队提供了 iOS 设备上威胁的集中视图以及其他平台。
+**iOS 上的 Microsoft Defender for Endpoint** 将提供针对网站、电子邮件和应用中的网络钓鱼和不安全网络连接的防护。 所有警报都将通过警报窗格中的单个Microsoft Defender 安全中心。 该门户为安全团队提供了 iOS 设备上威胁的集中视图以及其他平台。
 
 > [!CAUTION]
 > 在 iOS 上运行其他第三方终结点保护产品以及 Defender for Endpoint 可能会导致性能问题和不可预知的系统错误。
@@ -47,33 +47,36 @@ ms.locfileid: "51935265"
 
 - 分配给最终用户的 Microsoft Defender for Endpoint 许可证 (应用的) 许可证。 请参阅 [Microsoft Defender for Endpoint 许可要求](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/minimum-requirements#licensing-requirements)。
 
-- 设备 (设备) Intune 公司门户[](https://docs.microsoft.com/mem/intune/user-help/enroll-your-device-in-intune-ios)应用注册，以强制执行 Intune 设备合规性策略。 这需要为最终用户分配 Microsoft Intune 许可证。
-    - 可以从 Apple App Store 下载 Intune 公司 [门户应用](https://apps.apple.com/us/app/intune-company-portal/id719171358)。
+- 设备 (应用) 注册，[以Intune 公司门户](https://docs.microsoft.com/mem/intune/user-help/enroll-your-device-in-intune-ios)Intune 设备合规性策略。 这要求为最终用户分配一个Microsoft Intune许可证。
+    - Intune 公司门户应用可以从[Apple App Store 下载](https://apps.apple.com/us/app/intune-company-portal/id719171358)。
     - 请注意，Apple 不允许重定向用户从应用商店下载其他应用，因此在载入 Microsoft Defender for Endpoint 应用之前，需要由用户完成此步骤。
 
 - 若要详细了解如何分配许可证，请参阅 [向用户分配许可证](https://docs.microsoft.com/azure/active-directory/users-groups-roles/licensing-groups-assign)。
 
 **对于管理员**
 
-- 访问 Microsoft Defender 安全中心门户。
+- 访问 Microsoft Defender 安全中心 门户。
 
     > [!NOTE]
-    > Microsoft Intune 是唯一受支持的移动设备管理 (MDM) 解决方案，用于在 iOS 上部署 Microsoft Defender for Endpoint。 目前，仅支持在 Intune 中对与 iOS 相关的设备合规性策略强制实施 Defender for Endpoint 的设备。
+    > Microsoft Intune在 iOS 上部署 Microsoft Defender for Endpoint (MDM) 唯一受支持的移动设备管理解决方案。 目前，仅支持在 Intune 中对与 iOS 相关的设备合规性策略强制实施 Defender for Endpoint 的设备。
 
-- 访问 [Microsoft Endpoint Manager 管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)，以将应用部署到组织中注册的用户组。
+- 访问[Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431)管理中心 ，以将应用部署到组织中注册的用户组。
+
+**网络要求**
+- 为了使 iOS 上的 Microsoft Defender for Endpoint 在连接到网络时正常运行，需要将防火墙/代理配置为允许访问 [Microsoft Defender for Endpoint 服务 URL](configure-proxy-internet.md#enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server)
 
 **系统要求**
 
-- 运行 iOS 11.0 及以上设备的 iOS 设备。 从版本 1.1.15010101 开始，正式支持 iPad 设备。
+- 运行 iOS 11.0 及以上设备的 iOS 设备。 iPad版本 1.1.15010101 之后正式支持的设备。
 
-- 设备已注册 [Intune 公司门户应用](https://apps.apple.com/us/app/intune-company-portal/id719171358)。
+- 设备已注册Intune 公司门户[应用](https://apps.apple.com/us/app/intune-company-portal/id719171358)。
 
 > [!NOTE]
-> **Microsoft Defender ATP (适用于 iOS) 的 Microsoft Defender 终结点版本现已在 [Apple App Store 上提供](https://aka.ms/mdatpiosappstore)。**
+> **Microsoft Defender ATP (Apple App Store) iOS 上的适用于终结点的 [Microsoft Defender 版本](https://aka.ms/mdatpiosappstore)。**
 
 ## <a name="installation-instructions"></a>安装说明
 
-在 iOS 上部署 Microsoft Defender for Endpoint 是通过 Microsoft Intune (MDM) 且受监督的设备和不受监督的设备都受支持。
+在 iOS 上部署 Microsoft Defender for Endpoint Microsoft Intune (MDM) 且受监督的设备和不受监督的设备都受支持。
 有关详细信息，请参阅在[iOS 上部署 Microsoft Defender for Endpoint。](ios-install.md)
 
 ## <a name="resources"></a>资源

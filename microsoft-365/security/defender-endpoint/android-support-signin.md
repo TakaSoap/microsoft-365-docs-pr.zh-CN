@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 5f57d14427ef68280a065489e068955db9e5045a
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 18afd4aa160ec345839d23719d1b3fcce21654ec
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934797"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52246352"
 ---
 # <a name="troubleshooting-issues-on-microsoft-defender-for-endpoint-on-android"></a>Android 上的 Microsoft Defender for Endpoint 问题疑难解答
 
@@ -51,11 +51,11 @@ ms.locfileid: "51934797"
 
 **原因：**
 
-设备上安装了旧版本的"Microsoft Authenticator"应用。
+设备上安装了较旧版本的"Microsoft Authenticator"应用。
 
 **解决方案：**
 
-从 Google Play 应用商店安装最新版本和 [Microsoft Authenticator](https://play.google.com/store/apps/details?androidid=com.azure.authenticator) 并重试
+从 Google Play 应用商店[Microsoft Authenticator](https://play.google.com/store/apps/details?androidid=com.azure.authenticator)最新版本和版本，然后重试
 
 ## <a name="sign-in-failed---invalid-license"></a>登录失败 - 许可证无效
 
@@ -67,11 +67,15 @@ ms.locfileid: "51934797"
 
 **原因：**
 
-你未分配 Microsoft 365 许可证，或者你的组织没有 Microsoft 365 企业版订阅的许可证。
+您未分配Microsoft 365许可证，或者您的组织没有用于订阅Microsoft 365 企业版许可证。
 
 **解决方案：**
 
 请与管理员联系以寻求帮助。
+
+## <a name="report-unsafe-site"></a>报告不安全网站
+
+网络钓鱼网站会模拟可信赖的网站，以获取你的个人或财务信息。 如果要 [报告可能是网络钓鱼](https://www.microsoft.com/wdsi/filesubmission/exploitguard/networkprotection) 网站的网站，请访问提供有关网络保护的反馈页面。
 
 ## <a name="phishing-pages-arent-blocked-on-some-oem-devices"></a>某些 OEM 设备上不会阻止网络钓鱼页面
 

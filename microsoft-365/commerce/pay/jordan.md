@@ -8,27 +8,27 @@ manager: scotv
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
-ms.collection: Adm_Commerce_Pay
+ms.custom: CommercePayInfo
 localization_priority: Normal
-description: 了解在何处发送订阅付款。
+description: 了解在哪里发送订阅付款。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: cd130750fccc3e64caa8386aa9a6ffbe25fe1e58
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: 02ca3ba217a470b0ab69f25ce073fd91a763942b
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50550644"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52273496"
 ---
 # <a name="payment-information-for-jordan"></a>约旦的付款信息
 
 [查找另一个国家/地区](../billing-and-payments/pay-for-your-subscription.md)。 
 
-请仅以美元支付，并参考发票 (发票) 的发票编号。
+Please pay in USD only and reference your invoice number (s) on your invoice invoice invoice.
 
 ## <a name="electronic-funds-transfer"></a>电子资金转帐
 
-**Bank：** Bank， London  
-**SWIFT 代码：** 一个 2016 年 1 月 2 日  
+**Bank：** 年，伦敦  
+**SWIFT 代码：** 一百万  
 **IBAN：** GB95CITI18500812510049  
 **帐号** ：12510049  
 **帐户名称：** MICROSOFT  

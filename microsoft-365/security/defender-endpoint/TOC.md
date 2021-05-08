@@ -539,6 +539,12 @@
 ####### [按建议列出计算机](get-recommendation-machines.md)
 ####### [按建议列出漏洞](get-recommendation-vulnerabilities.md)
 
+###### [修正活动]()
+####### [修正活动方法和属性](get-remediation-methods-properties.md)
+####### [按 ID 获取修正活动](get-remediation-one-activity.md)
+####### [列出所有修正活动](get-remediation-all-activities.md)
+####### [列出修正活动的暴露设备](get-remediation-exposed-devices-activities.md)
+
 ###### [分数]()
 ####### [分数方法和属性](score.md)
 ####### [按计算机组列出曝光分数](get-machine-group-exposure-score.md)

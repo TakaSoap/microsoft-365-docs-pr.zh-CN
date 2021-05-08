@@ -8,27 +8,27 @@ manager: scotv
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
-ms.collection: Adm_Commerce_Pay
+ms.custom: CommercePayInfo
 localization_priority: Normal
-description: 了解在何处发送订阅付款。
+description: 了解在哪里发送订阅付款。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 3c8521dc2096e32cd80b5cafec07060a8c80bf2f
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: 0972d9912d7eb56c0fcb2e83a040a679a7b16eb4
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50551340"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52273820"
 ---
 # <a name="payment-information-for-faroe-islands"></a>法罗群岛的付款信息
 
 [查找另一个国家/地区](../billing-and-payments/pay-for-your-subscription.md)。
 
-请仅以 EUR 支付，并参考 (付款) 付款金额。
+请仅以 EUR 支付，并参考 (付款) 的发票编号。
 
 ## <a name="electronic-funds-transfer"></a>电子资金转帐
 
-**Bank：** Bank， London  
-**SWIFT 代码/BIC：** 一个 2016 年 1 月 2 日  
+**Bank：** 年，伦敦  
+**SWIFT 代码/BIC：** 一百万  
 **IBAN：** GB31CITI18500812207591  
 **SORT 代码** ：185008  
 **帐号** ：12207591  

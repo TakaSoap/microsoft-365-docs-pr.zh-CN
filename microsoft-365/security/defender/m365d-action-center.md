@@ -20,12 +20,12 @@ ms.collection:
 ms.topic: how-to
 ms.custom: autoir
 ms.reviewer: evaldm, isco
-ms.openlocfilehash: 7853c6c535a9b4daf9f29a1125c805c29ca6f93f
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 7bea9a1632e7a9ed9d394c2c411123d0601a9397
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245908"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52274576"
 ---
 # <a name="the-action-center"></a>操作中心
 
@@ -35,27 +35,27 @@ ms.locfileid: "52245908"
 **适用于：**
 - Microsoft 365 Defender
 
-## <a name="a-single-pane-of-glass-experience"></a>“单窗格”体验
+操作中心为事件和警报任务提供了"单窗格"体验，例如：
 
-操作中心提供任务的“单窗格”体验，例如：
-- 批准挂起的修正操作；
-- 查看已批准的修正操作的审核日志；以及
+- 批准挂起的修正操作。
+- 查看审核日志已批准修正操作的内容。
 - 查看已完成的修正操作。
 
-你的安全运营团队可以更高效地操作，因为操作中心提供了一个全面Microsoft 365 Defender 工作视图。
+由于操作中心全面概述了 Microsoft 365 Defender 工作情况，因此安全运营团队可以更高效地操作。
 
-## <a name="a-new-unified-action-center"></a>新的统一操作中心
+## <a name="the-unified-action-center"></a>统一操作中心
 
-我们很高兴宣布新的统一操作中心 [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) () ！ 
+统一操作中心 () 一个位置列出设备、电子邮件&协作内容和标识的挂起和 [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) 已完成的修正操作。
 
 :::image type="content" source="../../media/m3d-action-center-unified.png" alt-text="Microsoft 365 Defender 中的统一操作中心":::
 
-改进的操作中心列出了设备、电子邮件、协作内容和标识&和已完成的修正操作。
-- 如果之前使用的是 Office 365 安全&合规中心 () ，请尝试在 Microsoft 365 安全中心中新建统一 [https://protection.office.com](https://protection.office.com) [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) () 。
-- 如果使用的是 Microsoft Defender 安全中心 () 中的操作中心，请尝试在 Microsoft 365 安全中心中 [https://securitycenter.windows.com/action-center](https://securitycenter.windows.com/action-center) () 。 [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center)
-- 如果你已在使用安全Microsoft 365中心 () ，你将在操作中心 [https://security.microsoft.com](https://security.microsoft.com) [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) () 。
+例如： 
 
-统一操作中心将跨 Defender for Endpoint 和 Defender for Office 365。 它定义所有修正操作的共同语言，并提供统一的调查体验。 操作中心为安全运营团队提供了"单窗格"体验，以查看和管理修正操作。  
+- 如果之前使用的是 Office 365 安全与合规中心 & ([https://protection.office.com](https://protection.office.com)) ，请尝试使用 Microsoft 365 安全中心统一 [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) () 。
+- 如果你使用的是 Microsoft Defender 安全中心 () 中的操作中心，请尝试使用 Microsoft 365 安全中心中的统一 [https://securitycenter.windows.com/action-center](https://securitycenter.windows.com/action-center) [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) () 。
+- 如果你已在使用 Microsoft 365 安全中心 () ，你将在操作中心 ([https://security.microsoft.com](https://security.microsoft.com) [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center)) 。
+
+统一操作中心将跨 Defender for Endpoint 和 Defender for Office 365 将修正操作汇集在一起。 它定义所有修正操作的共同语言，并提供统一的调查体验。 安全运营团队具有"单窗格"体验，可查看和管理修正操作。  
 
 如果您具有适当的权限以及以下一个或多个订阅，可以使用统一操作中心：
 
@@ -71,7 +71,7 @@ ms.locfileid: "52245908"
 1. 转到 [https://security.microsoft.com](https://security.microsoft.com) 并登录。 
 2. 在“导航”窗格中，选择“操作中心”。 
 
-访问操作中心时，会看到两个选项卡："挂起的操作"和"历史记录"。 下表总结了您将在每个选项卡上看到的内容：
+当你访问操作中心时，你将看到两个选项卡：**挂起的操作和****历史记录**。 下表总结了您将在每个选项卡上看到的内容：
 
 |选项卡  |说明  |
 |---------|---------|
@@ -103,7 +103,7 @@ ms.locfileid: "52245908"
 - 运行防病毒扫描 
 - 停止和隔离 
 
-除了自动调查后自动采取的修正操作之外，操作中心还[](m365d-autoir.md)跟踪安全团队为应对检测到的威胁而采取的操作，以及由于 Microsoft 365 Defender 中的威胁防护功能而采取的操作。 有关自动和手动修正操作详细信息，请参阅 [修正操作](m365d-remediation-actions.md)。
+除了自动调查后自动采取的修正操作之外，操作中心还[](m365d-autoir.md)跟踪安全团队为应对检测到的威胁而采取的操作，以及因 Microsoft 365 Defender 中的威胁防护功能而采取的操作。 有关自动和手动修正操作详细信息，请参阅 [修正操作](m365d-remediation-actions.md)。
 
 ## <a name="viewing-action-source-details"></a>查看操作源详细信息
 
@@ -114,7 +114,7 @@ ms.locfileid: "52245908"
 | **手动设备操作** | 对设备采取的手动操作。 示例包括 [设备隔离](../defender-endpoint/respond-machine-alerts.md#isolate-devices-from-the-network) 或 [文件隔离](../defender-endpoint/respond-file-alerts.md#stop-and-quarantine-files)。 |
 | **手动电子邮件操作** | 对电子邮件执行手动操作。 示例包括软删除电子邮件或 [修正电子邮件](../office-365-security/remediate-malicious-email-delivered-office-365.md)。 |
 | **自动设备操作** | 对实体（如文件或进程）采取的自动操作。 自动操作的示例包括将文件发送到隔离区、停止进程和删除注册表项。  (请参阅 Microsoft [Defender for Endpoint .) 中的](../defender-endpoint/manage-auto-investigation.md#remediation-actions)修正操作 |
-| **自动电子邮件操作** | 对电子邮件内容（如电子邮件、附件或 URL）采取的自动操作。 自动操作的示例包括软删除电子邮件、阻止 URL 和关闭外部邮件转发。  (请参阅 Microsoft [Defender 中针对 .Office 365](../office-365-security/air-remediation-actions.md).) 的修正操作 |
+| **自动电子邮件操作** | 对电子邮件内容（如电子邮件、附件或 URL）采取的自动操作。 自动操作的示例包括软删除电子邮件、阻止 URL 和关闭外部邮件转发。  (请参阅 Microsoft [Defender for Office 365 .) 中的](../office-365-security/air-remediation-actions.md)修正操作 |
 | **高级搜寻操作** | 使用高级搜寻对设备或电子邮件 [采取的操作](./advanced-hunting-overview.md)。 |
 | **资源管理器操作** | 使用资源管理器 对电子邮件内容 [采取的操作](../office-365-security/threat-explorer.md)。 |
 | **手动实时响应操作** | 使用实时响应对设备 [采取的操作](../defender-endpoint/live-response.md)。 示例包括删除文件、停止进程和删除计划任务。 |
@@ -126,11 +126,11 @@ ms.locfileid: "52245908"
 
 |修正操作 |所需角色和权限 |
 |--|----|
-|Microsoft Defender for Endpoint 修正 (设备)  |在 Azure Active Directory ([https://portal.azure.com](https://portal.azure.com)) 或 Microsoft 365 管理中心 ([https://admin.microsoft.com](https://admin.microsoft.com)) 中分配的 **安全管理员** 角色<br/>--- 或 ---<br/>**在 Microsoft** Defender for Endpoint 中分配的活动修正操作角色 <br/> <br/> 若要了解详细信息，请参阅以下资源： <br/>- [Azure Active Directory 中的管理员角色权限](/azure/active-directory/users-groups-roles/directory-assign-admin-roles)<br/>- [使用 Microsoft Defender for Endpoint (创建和管理基于角色的访问控制) ](../defender-endpoint/user-roles.md)  |
-|Microsoft Defender for Office 365修正 (Office内容和电子邮件)   |在 Azure Active Directory ([https://portal.azure.com](https://portal.azure.com)) 或 Microsoft 365 管理中心 ([https://admin.microsoft.com](https://admin.microsoft.com)) 中分配的 **安全管理员** 角色<br/>--- 和 --- <br/>**分配了** 安全与合规中心&搜索和清除 [https://protection.office.com](https://protection.office.com) ()  <br/><br/>**重要** 提示：如果你仅在Office 365 安全& 合规中心 () 中分配了安全管理员角色，你将无法访问操作中心或 [https://protection.office.com](https://protection.office.com) Microsoft 365 Defender 功能。 你必须在 **安全中心或** Azure Active Directory分配安全Microsoft 365角色。 <br/><br/>若要了解详细信息，请参阅以下资源： <br/>- [Azure Active Directory 中的管理员角色权限](/azure/active-directory/users-groups-roles/directory-assign-admin-roles)<br/>- [安全与合规&中的权限](/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center) |
+|Microsoft Defender for Endpoint 修正 (设备)  |**在** Azure Active Directory (Azure AD)  () 或 [https://portal.azure.com](https://portal.azure.com) Microsoft 365 管理中心 () [https://admin.microsoft.com](https://admin.microsoft.com)<br/>--- 或 ---<br/>**在 Microsoft** Defender for Endpoint 中分配的活动修正操作角色 <br/> <br/> 若要了解详细信息，请参阅以下资源： <br/>- [Azure AD 中的管理员角色权限](/azure/active-directory/users-groups-roles/directory-assign-admin-roles)<br/>- [使用 Microsoft Defender for Endpoint (创建和管理基于角色的访问控制) ](../defender-endpoint/user-roles.md)  |
+|Microsoft Defender for Office 365 修正 (Office 内容和电子邮件)   |**在** Azure AD () [https://portal.azure.com](https://portal.azure.com) 或 Microsoft 365 管理中心 () [https://admin.microsoft.com](https://admin.microsoft.com)<br/>--- 和 --- <br/>**在安全与** 合规中心&分配搜索和清除 [https://protection.office.com](https://protection.office.com) ()  <br/><br/>**重要** 提示：如果你仅在Office 365 安全与合规中心 & () 中分配了安全管理员角色，你将无法访问操作中心或 [https://protection.office.com](https://protection.office.com) Microsoft 365 Defender 功能。 你必须在 Azure AD **或** Microsoft 365 管理中心中分配安全管理员角色。 <br/><br/>若要了解详细信息，请参阅以下资源： <br/>- [Azure AD 中的管理员角色权限](/azure/active-directory/users-groups-roles/directory-assign-admin-roles)<br/>- [安全与合规&中的权限](/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center) |
 
 > [!TIP]
-> 在 Azure Active Directory 中分配了 **全局管理员** 角色的用户可以批准或拒绝操作中心中挂起的任何操作。 但是，最佳做法是，贵组织应限制分配了全局管理员 **角色的人的数量** 。 我们建议对操作中心权限使用上表中列出的安全管理员、**活动** 修正操作和搜索和清除角色。
+> 在 Azure  AD 中分配了全局管理员角色的用户可以批准或拒绝操作中心中任何挂起的操作。 但是，最佳做法是，贵组织应限制分配了全局管理员 **角色的人的数量** 。 我们建议对操作中心权限使用上表中列出的安全管理员、**活动** 修正操作和搜索和清除角色。
 
 ## <a name="next-step"></a>后续步骤 
 

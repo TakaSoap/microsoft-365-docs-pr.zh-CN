@@ -8,26 +8,26 @@ manager: scotv
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
-ms.collection: Adm_Commerce_Pay
+ms.custom: CommercePayInfo
 localization_priority: Normal
-description: 了解在何处发送订阅付款。
+description: 了解在哪里发送订阅付款。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: ee6d154d5cd4e201b55d810ba302f46fad0a8f48
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: ca8b6d68095b45e17b94127d999f325097ba78ab
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50551292"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52273808"
 ---
 # <a name="payment-information-for-fiji"></a>斐济的付款信息
 
 [查找另一个国家/地区](../billing-and-payments/pay-for-your-subscription.md)。
 
-Please pay in USD only and reference invoice number () on your payment) .
+Please pay in USD only and reference invoice number (s) on your payment invoice.
 
 ## <a name="electronic-funds-transfer"></a>电子资金转帐
 
-**Bank：** 新加坡的Bank  
-**SWIFT 代码：** 中国  
+**Bank：** Bank，新加坡  
+**SWIFT 代码：** 一个  
 **帐号** ：0-817543-138  
 **帐户名称：** MICROSOFT REGIONAL SALE CORP  

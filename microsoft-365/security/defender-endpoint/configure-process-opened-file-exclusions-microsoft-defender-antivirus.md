@@ -7,19 +7,20 @@ ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localization_priority: normal
+localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 94375bc843c6512616d49345bcc9e7f63899a708
-ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
+ms.topic: article
+ms.openlocfilehash: 2fdc646cf616ff6a6fa36a83be3d2b1dd0432fbe
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51765079"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52274599"
 ---
 # <a name="configure-exclusions-for-files-opened-by-processes"></a>为进程打开的文件配置排除项
 
@@ -30,7 +31,7 @@ ms.locfileid: "51765079"
 
 - [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
 
-你可以从 Microsoft Defender 防病毒扫描中排除特定进程打开的文件。 请参阅 [定义排除列表之前](configure-exclusions-microsoft-defender-antivirus.md#recommendations-for-defining-exclusions) 定义排除项的建议。
+可以从扫描中排除特定进程打开Microsoft Defender 防病毒文件。 请参阅[推荐定义排除](configure-exclusions-microsoft-defender-antivirus.md#recommendations-for-defining-exclusions)项，然后再定义排除列表。
 
 本文介绍如何配置排除列表。 
 
@@ -43,13 +44,13 @@ ms.locfileid: "51765079"
 |计算机上特定进程打开的特定文件夹中的任何文件 | 指定 `c:\test\process.exe` 将排除仅打开者的文件 `c:\test\process.exe` |
 
 
-当你将进程添加到进程排除列表时，Microsoft Defender 防病毒不会扫描该进程打开的文件，无论这些文件位于何处。 但是，除非进程已添加到文件排除列表 ，否则将扫描进程 [本身](configure-extension-file-exclusions-microsoft-defender-antivirus.md)。
+将进程添加到进程排除列表时，Microsoft Defender 防病毒不会扫描该进程打开的文件，无论这些文件位于何处。 但是，除非进程已添加到文件排除列表 ，否则将扫描进程 [本身](configure-extension-file-exclusions-microsoft-defender-antivirus.md)。
 
 排除项仅适用于 [始终打开实时保护和监视](configure-real-time-protection-microsoft-defender-antivirus.md)。 它们不适用于计划扫描或按需扫描。
 
-使用组策略对排除列表所做的更改 **将显示在** Windows 安全应用中 [的列表中](microsoft-defender-security-center-antivirus.md)。 但是，在 Windows 安全应用中所做的更改 **将不会显示在** 组策略列表中。
+使用组策略对排除列表所做的更改 **将显示在** 应用Windows 安全中心 [列表中](microsoft-defender-security-center-antivirus.md)。 但是，在Windows 安全中心所做的更改 **将不会显示在** 组策略列表中。
 
-可以在组策略、Microsoft Endpoint Configuration Manager、Microsoft Intune 以及 Windows 安全中心应用中添加、删除和查看排除列表，并且可以使用通配符进一步自定义列表。
+可以在组策略、Microsoft Endpoint Configuration Manager、Microsoft Intune 以及 Windows 安全中心 应用中添加、删除和查看排除列表，并且可以使用通配符进一步自定义列表。
 
 您还可以使用 PowerShell cmdlet 和 WMI 配置排除列表，包括查看列表。
 
@@ -59,13 +60,13 @@ ms.locfileid: "51765079"
 
 ## <a name="configure-the-list-of-exclusions-for-files-opened-by-specified-processes"></a>配置由指定进程打开的文件的排除项列表
 
-### <a name="use-microsoft-intune-to-exclude-files-that-have-been-opened-by-specified-processes-from-scans"></a>使用 Microsoft Intune 从扫描中排除指定进程打开的文件
+### <a name="use-microsoft-intune-to-exclude-files-that-have-been-opened-by-specified-processes-from-scans"></a>使用 Microsoft Intune从扫描中排除指定进程打开的文件
 
-有关详细信息 [，请参阅在 Microsoft Intune 中](/intune/device-restrictions-configure) 配置设备限制设置和 Intune 中 [Windows 10](/intune/device-restrictions-windows-10#microsoft-defender-antivirus) 的 Microsoft Defender 防病毒设备限制设置。
+有关详细信息，请参阅[Microsoft Intune](/intune/device-restrictions-configure) 和 [Microsoft Defender Intune](/intune/device-restrictions-windows-10#microsoft-defender-antivirus) Windows 10 防病毒设备限制设置。
 
-### <a name="use-microsoft-endpoint-manager-to-exclude-files-that-have-been-opened-by-specified-processes-from-scans"></a>使用 Microsoft Endpoint Manager 从扫描中排除指定进程打开的文件
+### <a name="use-microsoft-endpoint-manager-to-exclude-files-that-have-been-opened-by-specified-processes-from-scans"></a>使用 Microsoft Endpoint Manager从扫描中排除指定进程打开的文件
 
-请参阅 [如何创建和部署反恶意软件策略：](/configmgr/protect/deploy-use/endpoint-antimalware-policies#exclusion-settings) 排除设置，了解有关配置 Microsoft Endpoint Manager (当前分支) 。
+请参阅[如何创建和部署反恶意软件策略：](/configmgr/protect/deploy-use/endpoint-antimalware-policies#exclusion-settings)排除设置，了解有关配置当前分支Microsoft Endpoint Manager (的详细信息) 。
 
 ### <a name="use-group-policy-to-exclude-files-that-have-been-opened-by-specified-processes-from-scans"></a>使用组策略将指定进程打开的文件从扫描中排除
 
@@ -73,7 +74,7 @@ ms.locfileid: "51765079"
 
 2. 在组 **策略管理编辑器中** ，转到计算机 **配置，** 然后单击 **管理模板**。
 
-3. 将树展开到 **Microsoft Defender 防病毒>排除> Windows 组件**。
+3. 展开树以Windows **排除> Microsoft Defender 防病毒 >组件**。
 
 4. 双击进程 **排除项** 并添加排除项：
 
@@ -110,7 +111,7 @@ cmdlet 的格式为：
 Add-MpPreference -ExclusionProcess "c:\internal\test.exe"
 ```
 
-若要详细了解如何将 PowerShell 与 Microsoft Defender 防病毒一同使用，请参阅使用 PowerShell cmdlet 和 Microsoft Defender 防病毒 [cmdlet](/powershell/module/defender)管理防病毒。
+若要详细了解如何使用 PowerShell 和 Microsoft Defender 防病毒，请参阅使用 PowerShell cmdlet 和 Microsoft Defender 防病毒[cmdlet 管理防病毒](/powershell/module/defender)。
 
 ### <a name="use-windows-management-instruction-wmi-to-exclude-files-that-have-been-opened-by-specified-processes-from-scans"></a>使用 Windows Management Instruction (WMI) 从扫描中排除指定进程打开的文件
 
@@ -122,11 +123,11 @@ ExclusionProcess
 
 Set、Add和 **Remove** 的使用类似于 PowerShell 中的对应类 `Set-MpPreference` ：、、 和 `Add-MpPreference` `Remove-MpPreference` 。
 
-有关详细信息和允许的参数，请参阅 Windows Defender [WMIv2 API。](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal)
+有关详细信息和允许的参数，请参阅Windows Defender [WMIv2 API。](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal)
 
-### <a name="use-the-windows-security-app-to-exclude-files-that-have-been-opened-by-specified-processes-from-scans"></a>使用 Windows 安全应用从扫描中排除指定进程打开的文件
+### <a name="use-the-windows-security-app-to-exclude-files-that-have-been-opened-by-specified-processes-from-scans"></a>使用Windows 安全中心应用从扫描中排除指定进程打开的文件
 
-有关 [说明，请参阅在 Windows 安全应用中添加](microsoft-defender-security-center-antivirus.md) 排除项。
+有关[说明，请参阅Windows 安全中心应用添加](microsoft-defender-security-center-antivirus.md)排除项。
 
 ## <a name="use-wildcards-in-the-process-exclusion-list"></a>在进程排除列表中使用通配符
 
@@ -143,11 +144,11 @@ Set、Add和 **Remove** 的使用类似于 PowerShell 中的对应类 `Set-MpPre
 
 ## <a name="review-the-list-of-exclusions"></a>查看排除项列表
 
-可以使用 MpCmdRun、PowerShell、Microsoft [Endpoint Configuration Manager、Intune](/configmgr/protect/deploy-use/endpoint-antimalware-policies#exclusion-settings)或[](/intune/device-restrictions-configure)Windows 安全应用检索排除[列表中的项](microsoft-defender-security-center-antivirus.md)。
+可以使用 MpCmdRun、PowerShell、Microsoft Endpoint Configuration Manager、Intune 或应用检索[](/configmgr/protect/deploy-use/endpoint-antimalware-policies#exclusion-settings)排除Windows 安全中心[项](microsoft-defender-security-center-antivirus.md)。 [](/intune/device-restrictions-configure)
 
 如果使用 PowerShell，可以通过两种方式检索列表：
 
-- 检索所有 Microsoft Defender 防病毒首选项的状态。 每个列表将显示在单独的行上，但每个列表中的项将组合到同一行中。
+- 检索所有首选项Microsoft Defender 防病毒状态。 每个列表将显示在单独的行上，但每个列表中的项将组合到同一行中。
 - 将所有首选项的状态写入变量，并使用该变量仅调用您感兴趣的特定列表。 每次使用 `Add-MpPreference` 都写入新行。
 
 ### <a name="validate-the-exclusion-list-by-using-mpcmdrun"></a>使用 MpCmdRun 验证排除列表
@@ -159,10 +160,10 @@ MpCmdRun.exe -CheckExclusion -path <path>
 ```
 
 > [!NOTE]
-> 检查 MpCmdRun 的排除项需要 Microsoft Defender 防病毒 CAMP 版本 4.18.1812.3 (2018 年 12 月) 或更高版本。
+> 检查 MpCmdRun 的排除项Microsoft Defender 防病毒 2018 年 12 月 (或更高版本发布的 CAMP) 4.18.1812.3。
 
 
-### <a name="review-the-list-of-exclusions-alongside-all-other-microsoft-defender-antivirus-preferences-by-using-powershell"></a>使用 PowerShell 查看所有其他 Microsoft Defender 防病毒首选项旁的排除项列表
+### <a name="review-the-list-of-exclusions-alongside-all-other-microsoft-defender-antivirus-preferences-by-using-powershell"></a>使用 PowerShell 查看所有其他首选项Microsoft Defender 防病毒列表
 
 使用以下 cmdlet：
 
@@ -170,7 +171,7 @@ MpCmdRun.exe -CheckExclusion -path <path>
 Get-MpPreference
 ```
 
-请参阅 [使用 PowerShell cmdlet](use-powershell-cmdlets-microsoft-defender-antivirus.md) 配置和运行 Microsoft Defender 防病毒和 [Defender cmdlet，](/powershell/module/defender) 详细了解如何将 PowerShell 与 Microsoft Defender 防病毒一同使用。
+请参阅 [使用 PowerShell cmdlet 配置并运行 Microsoft Defender 防病毒软件](use-powershell-cmdlets-microsoft-defender-antivirus.md) 和 [Defender cmdlet](/powershell/module/defender) ，了解有关如何通过 Microsoft Defender 防病毒软件使用 PowerShell 的信息。
 
 ### <a name="retrieve-a-specific-exclusions-list-by-using-powershell"></a>使用 PowerShell 检索特定排除项列表
 
@@ -181,13 +182,13 @@ $WDAVprefs = Get-MpPreference
 $WDAVprefs.ExclusionProcess
 ```
 
-请参阅 [使用 PowerShell cmdlet](use-powershell-cmdlets-microsoft-defender-antivirus.md) 配置和运行 Microsoft Defender 防病毒和 [Defender cmdlet，](/powershell/module/defender) 详细了解如何将 PowerShell 与 Microsoft Defender 防病毒一同使用。
+请参阅 [使用 PowerShell cmdlet 配置并运行 Microsoft Defender 防病毒软件](use-powershell-cmdlets-microsoft-defender-antivirus.md) 和 [Defender cmdlet](/powershell/module/defender) ，了解有关如何通过 Microsoft Defender 防病毒软件使用 PowerShell 的信息。
 
 ## <a name="related-articles"></a>相关文章
 
-- [配置并验证 Microsoft Defender 防病毒扫描中的排除项](configure-exclusions-microsoft-defender-antivirus.md)
+- [配置并验证扫描中的Microsoft Defender 防病毒项](configure-exclusions-microsoft-defender-antivirus.md)
 - [根据文件名、扩展名和文件夹位置配置并验证排除项](configure-extension-file-exclusions-microsoft-defender-antivirus.md)
-- [在 Windows Server 上配置 Microsoft Defender 防病毒排除项](configure-server-exclusions-microsoft-defender-antivirus.md)
+- [在 Microsoft Defender 防病毒 服务器上配置Windows排除项](configure-server-exclusions-microsoft-defender-antivirus.md)
 - [定义排除时要避免的常见错误](common-exclusion-mistakes-microsoft-defender-antivirus.md)
-- [自定义、启动和查看 Microsoft Defender 防病毒扫描和修正的结果](customize-run-review-remediate-scans-microsoft-defender-antivirus.md)
-- [Windows 10 中的 Microsoft Defender 防病毒](microsoft-defender-antivirus-in-windows-10.md)
+- [自定义、启动和查看扫描Microsoft Defender 防病毒修正的结果](customize-run-review-remediate-scans-microsoft-defender-antivirus.md)
+- [Microsoft Defender 防病毒Windows 10](microsoft-defender-antivirus-in-windows-10.md)

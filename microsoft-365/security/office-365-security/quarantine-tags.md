@@ -17,12 +17,12 @@ ROBOTS: NOINDEX
 description: 管理员可以了解如何使用隔离标记来控制用户能够对隔离邮件执行哪些操作。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 580cf2bad690d0fc6508d11178527ad218df763b
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 512c589572502deacb5529ca9d6f2876861bf050
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51203610"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52274456"
 ---
 # <a name="quarantine-tags"></a>隔离标记
 
@@ -42,6 +42,10 @@ EOP 在传统上允许或阻止隔离和最终用户垃圾邮件通知中的邮�
 - 完全访问权限
 
 下表介绍了可用的单个权限以及预设权限组中包含或不包含哪些权限：
+
+<br>
+
+****
 
 |权限|禁止访问|受限访问|完全访问权限|
 |---|:---:|:---:|:---:|
@@ -126,6 +130,8 @@ _EndUserQuarantinePermissionsValue_ 参数使用从二进制值转换的十进�
 
 下表介绍了预设权限组中各个权限的必需顺序和值：
 
+<br>
+
 ****
 
 |权限|禁止访问|受限访问|完全访问权限|
@@ -140,6 +146,7 @@ _EndUserQuarantinePermissionsValue_ 参数使用从二进制值转换的十进�
 |PermissionToViewHeader<sup>\*</sup>|0|0|0|
 |二进制值|00000000|01101010|11101100|
 |使用的小数值|0|106|236|
+|
 
 <sup>\*</sup> 目前，此值始终为 0。 对于 PermissionToViewHeader，值 0 不会在隔离邮件的详细信息中隐藏"查看邮件头"按钮 (该按钮始终) 。
 
@@ -225,15 +232,17 @@ New-QuarantineTag -Name LimitedAccess -EndUserQuarantinePermissions $LimitedAcce
 
 在 _可_ 自动隔离邮件或文件的 (或作为可配置操作) ，您可以将隔离标记分配给可用的隔离操作。 下表介绍了隔离邮件的功能和隔离标记的可用性：
 
+<br>
+
 ****
 
 |功能|支持隔离标记？|使用的默认隔离标记|
 |---|:---:|---|
 |[反垃圾邮件策略](configure-your-spam-filter-policies.md)： <ul><li>**Spam** (_SpamAction_) </li><li>**高可信度垃圾邮件** (_HighConfidenceSpamAction_) </li><li> _PhishSpamAction_ (钓鱼) </li><li> _HighConfidencePhishAction_ (高可信度网络钓鱼) </li><li>**BulkSpamAction** (_批量_ 电子邮件) </li></ul>|是|<ul><li>DefaultSpamTag (完全访问权限) </li><li>DefaultHighConfSpamTag (完全访问权限) </li><li>DefaultPhishTag (完全访问权限) </li><li>DefaultHighConfPhishTag (无法访问) </li><li>DefaultBulkTag (完全访问权限) </li></ul>
-|防钓鱼策略： <ul><li>[](set-up-anti-phishing-policies.md#spoof-settings) _AuthenticationFailAction (反欺骗智能_) </li><li>[模拟保护](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)：<sup>\*</sup> <ul><li>**如果电子邮件是由模拟用户发送 (** _TargetedUserProtectionAction_) </li><li>**如果电子邮件是由模拟域发送的， (** _TargetedDomainProtectionAction_) </li><li>**邮箱智能** \>**如果电子邮件是由模拟用户通过** _MailboxIntelligenceProtectionAction_ (发送) </li></ul></li></ul></ul>|否|无|
-|[反恶意软件策略](configure-anti-malware-policies.md)：始终隔离所有检测到的邮件。|否|无|
-|[用于 SharePoint、OneDrive 和 Microsoft Teams 的安全附件](mdo-for-spo-odb-and-teams.md)|否|无|
-|[邮件流规则](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules) (操作) 传输规则： **将** 邮件发送到托管隔离邮箱 (_隔离_) 。|否|无|
+|防钓鱼策略： <ul><li>[](set-up-anti-phishing-policies.md#spoof-settings) _AuthenticationFailAction (反欺骗智能_) </li><li>[模拟保护](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)：<sup>\*</sup> <ul><li>**如果电子邮件是由模拟用户发送 (** _TargetedUserProtectionAction_) </li><li>**如果电子邮件是由模拟域发送的， (** _TargetedDomainProtectionAction_) </li><li>**邮箱智能** \>**如果电子邮件是由模拟用户通过** _MailboxIntelligenceProtectionAction_ (发送) </li></ul></li></ul></ul>|否|不适用|
+|[反恶意软件策略](configure-anti-malware-policies.md)：始终隔离所有检测到的邮件。|否|不适用|
+|[用于 SharePoint、OneDrive 和 Microsoft Teams 的安全附件](mdo-for-spo-odb-and-teams.md)|否|不适用|
+|[邮件流规则](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules) (操作) 传输规则： **将** 邮件发送到托管隔离邮箱 (_隔离_) 。|否|不适用|
 |
 
 <sup>\*</sup> 模拟保护设置仅适用于 Microsoft Defender for Office 365 中的防钓鱼策略。
@@ -256,7 +265,7 @@ New-QuarantineTag -Name LimitedAccess -EndUserQuarantinePermissions $LimitedAcce
 
    ![反垃圾邮件策略中的隔离标记选择](../../media/quarantine-tags-in-anti-spam-policies.png)
 
-5. 完成后，单击“保存”。
+5. 完成后，单击“**保存**”。
 
 #### <a name="assign-quarantine-tags-in-anti-spam-policies-in-powershell"></a>在 PowerShell 中的反垃圾邮件策略中分配隔离标记
 

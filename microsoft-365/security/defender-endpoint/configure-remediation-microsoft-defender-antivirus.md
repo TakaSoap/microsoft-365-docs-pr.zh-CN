@@ -7,7 +7,7 @@ ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localization_priority: normal
+localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
@@ -15,12 +15,13 @@ ms.date: 03/16/2021
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 98bc079bcfd772ada52d699d5f873a187d4ab4c1
-ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
+ms.topic: article
+ms.openlocfilehash: 45886b94ec5ea11f01bfe23092eef4bd72691554
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51765055"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52274504"
 ---
 # <a name="configure-remediation-for-microsoft-defender-antivirus-detections"></a>为 Microsoft Defender 防病毒检测配置修正
 
@@ -51,7 +52,7 @@ ms.locfileid: "51765055"
 
 |位置 | 设置 | 说明 | 如果未 (默认设置)  |
 |:---|:---|:---|:---|
-|扫描 | 创建系统还原点 | 在尝试清理或扫描之前，将每天创建一个系统还原点 | 已禁用|
+|扫描 | 创建系统还原点 | 在尝试清理或扫描之前，将每天创建一个系统还原点 | 禁用的|
 |扫描 | 打开从扫描历史记录文件夹中删除项目 | 指定项目应在扫描历史记录中保留的天数 | 30 天 |
 |根 | 关闭常规修正 | 你可以指定 Microsoft Defender 防病毒是否自动修正威胁，或者它是否应该询问终结点用户应该怎么办。 | 禁用 (自动修正威胁)  |
 |隔离 | 配置从隔离文件夹删除项目 | 指定在删除项目之前应在隔离中保留的天数 | 90 天 |

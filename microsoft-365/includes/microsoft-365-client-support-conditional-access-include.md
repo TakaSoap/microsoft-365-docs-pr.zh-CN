@@ -24,7 +24,7 @@
 |POWER BI|Planned|Planned|不适用|Planned|Planned|
 |POWERPOINT|✔|Planned|Planned|Planned|Planned|
 |PROJECT|不适用|不适用|不适用|Planned|不适用|
-|PUBLISHER|不适用|不适用|不适用|Planned|不适用|
+|PUBLISHER|不适用|不适用|不适用|✔|不适用|
 |SHAREPOINT 管理员|不适用|不适用|不适用|Planned|不适用|
 |SHAREPOINT|Planned|Planned|不适用|不适用|不适用|
 |便笺|不适用|不适用|不适用|不适用|Planned|
@@ -33,7 +33,7 @@
 |TEAMS|✔|✔|✔|Planned|不适用|
 |TO-DO|Planned|Planned|Planned|不适用|Planned|
 |VISIO|不适用|✔|不适用|Planned|不适用|
-|WHITEBOARD|不适用|Planned|不适用|不适用|Planned|
+|WHITEBOARD|✔|Planned|不适用|不适用|Planned|
 |WORD|✔|Planned|Planned|Planned|✔|
 |工作区分析|不适用|不适用|不适用|不适用|不适用|
 |YAMMER|Planned|Planned|Planned|Planned|不适用|

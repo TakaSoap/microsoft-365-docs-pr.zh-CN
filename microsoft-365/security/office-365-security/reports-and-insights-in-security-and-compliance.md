@@ -3,7 +3,7 @@ title: 智能报告、见解 - Microsoft 365 安全&合规中心
 f1.keywords:
 - NOCSH
 ms.author: siosulli
-author: denisebmsft
+author: siosulli
 manager: dansimp
 ms.date: ''
 audience: ITPro
@@ -19,12 +19,12 @@ description: 了解安全与合规中心提供的智能报告和见解&，以及
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: c1759b93e6393031455ebfa372785395c5b88ba9
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 8e945cd3e3ba3dd0a80214e032c420bf7ecad18e
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51203850"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52274420"
 ---
 # <a name="smart-reports-and-insights-in-the-security--compliance-center"></a>安全与合规中心内的智能报告和见解
 
@@ -61,7 +61,7 @@ ms.locfileid: "51203850"
 |**适用于 Office 365 的 Defender 和电子邮件安全报告** <p> 电子邮件安全和威胁防护报告 (恶意软件、垃圾邮件、网络钓鱼和欺骗报告) |在安全与&中心，转到"报告 **仪表板** \> **"**|[查看适用于 Office 365 的 Defender 报告](view-reports-for-mdo.md) <p> [查看安全与合规中心内的电子邮件安全报告](view-email-security-reports.md)|
 |**邮件流** <p> 已发送和已接收的电子邮件、最近的警报、主要发件人和收件人、电子邮件转发报告等相关信息|在安全与&中心，转到" **邮件** 流"" \> **仪表板** "和" **报告** \> **仪表板"**|[安全与合规中心内的邮件流见解](mail-flow-insights-v2.md) <p> [在安全与合规中心内查看&流报告](view-mail-flow-reports.md)|
 |**GDPR 合规性** <p> 有关 GDPR 合规性的信息，包括指向数据主体的链接、标签趋势和已关闭&活动|在安全与&中心，转到数据 **隐私** \> **GDPR 仪表板**|[一般数据保护条例摘要](/compliance/regulatory/gdpr)|
-|**审核日志** <p> 有关 Microsoft 365 活动、用户、文件或文件夹等的信息|在安全与&中心，转到"搜索&调查 \> **审核日志搜索"**|[在安全审核日志合规中心&搜索策略](../../compliance/search-the-audit-log-in-security-and-compliance.md)|
+|**审核日志** <p> 有关 Microsoft 365 活动、用户、文件或文件夹等的信息|在安全与&中心，转到"搜索&调查 \> **审核日志搜索"**|[在安全与合规中心搜索审核日志](../../compliance/search-the-audit-log-in-security-and-compliance.md)。|
 |**合规性报告** <p> FedRAMP 报告、管理、风险和合规性报告、ISO 信息安全管理报告以及 Service Organization Controls 审核和评估报告|在安全与&中心，转到" **服务保证** \> **合规性报告"**|[规划 Office 365 &安全性和合规性](../../compliance/plan-for-security-and-compliance.md)|
 |
 

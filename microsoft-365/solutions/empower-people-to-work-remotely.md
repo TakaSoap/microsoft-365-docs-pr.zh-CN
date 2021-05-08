@@ -1,5 +1,5 @@
 ---
-title: 使用 Microsoft 365 为远程工作者提供强大帮助
+title: 使用 Microsoft 365 设置远程工作的基础结构。
 author: JoeDavies-MSFT
 f1.keywords:
 - NOCSH
@@ -17,17 +17,20 @@ ms.collection:
 - m365solution-overview
 - M365initiative-coredeploy
 ms.custom: seo-marvel-jun2020
-description: 确保已启用 Microsoft 365 中的所有功能，以最大限度地提高远程工作者的工作效率，并保持对服务器、数据和云的安全访问。
-ms.openlocfilehash: e811b0ea40c38d3c8de0dfdc17a24ce0d7aabe2f
-ms.sourcegitcommit: e02cf5702af178ddd2968877a808874ecb49ed2c
+keywords: 在家办公，在家办公，混合，远程工作者，混合办公，远程员工，混合连接，远程访问，远程办公，远程办公，远程办公，移动办公，远程工作，随时随地开展工作，灵活的工作场所
+description: 逐步设置基础结构层，以便远程工作人员能够安全地访问本地和 Microsoft 365 资源。
+ms.openlocfilehash: 1a8cf471cf92e1301c231f395ed0238bb35359cb
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52029118"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52246316"
 ---
-# <a name="empower-remote-workers-with-microsoft-365"></a>使用 Microsoft 365 为远程工作者提供强大帮助
+# <a name="set-up-your-infrastructure-for-remote-work-with-microsoft-365"></a>使用 Microsoft 365 设置远程工作的基础结构。
 
-企业可能需要让员工能够从家中安全地访问组织的本地和基于云的信息、工具和资源。 对于许多组织而言，允许员工在离开办公室时工作非常重要，这有助于：
+为了保护和优化远程工作者的生产力和协作，需要配置 IT 和云基础结构，以支持远程办公，并提供对组织内部和基于云的信息、工具和资源的访问。 此解决方案逐步部署关键的基础结构层，使员工随时随地高效工作。
+
+对于许多组织而言，允许员工在离开办公室时工作非常重要，这有助于：
 
 - 节省办公空间。
 - 聘用并留住不愿意调动的员工。
@@ -125,8 +128,6 @@ Microsoft 365 提供了帮助员工远程工作的功能。
 5. [部署远程工作者生产力应用和服务](empower-people-to-work-remotely-teams-productivity-apps.md)
 6. [培训远程工作者和处理使用情况反馈](empower-people-to-work-remotely-train-monitor-usage.md)
 
-[![使用 Microsoft 365 为远程工作者提供强大帮助的步骤](../media/empower-people-to-work-remotely/remote-workers-step-grid.png)](empower-people-to-work-remotely-secure-sign-in.md)
+[![设置 Microsoft 365 远程办公基础结构的步骤](../media/empower-people-to-work-remotely/remote-workers-step-grid.png)](empower-people-to-work-remotely-secure-sign-in.md)
 
-有关 Microsoft 提供的关于支持远程工作者的最新信息，请参阅[使用 Microsoft Teams 网站实现混合型工作](https://resources.techcommunity.microsoft.com/enabling-hybrid-work/)。
-
-若要了解虚构但具代表性的跨国企业如何助力远程工作者，请参阅[Contoso 为远程及现场工作采取的 COVID-19 响应措施及所提供的基础设施](contoso-remote-onsite-work.md)。
+若要了解虚构但具代表性的跨国组织如何为远程办公建立其基础设施，请参阅[Contoso 的 COVID-19 响应措施及其为远程和现场工作提供的基础设施](contoso-remote-onsite-work.md)。

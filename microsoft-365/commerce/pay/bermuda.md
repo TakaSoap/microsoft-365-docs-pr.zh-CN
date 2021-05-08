@@ -1,5 +1,5 @@
 ---
-title: 百万元的付款信息
+title: 百分百的付款信息
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -8,22 +8,22 @@ manager: scotv
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
-ms.collection: Adm_Commerce_Pay
+ms.custom: CommercePayInfo
 localization_priority: Normal
-description: 了解在何处发送订阅付款。
+description: 了解在哪里发送订阅付款。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 5a7067c01dfebafe87f6e24aad514232cbd15739
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: 010eb9f4cf4c72c2ce8e2af120ff7629dc2f8325
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50549384"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52274144"
 ---
-# <a name="payment-information-for-bermuda"></a>百万元的付款信息
+# <a name="payment-information-for-bermuda"></a>百分百的付款信息
 
 [查找另一个国家/地区](../billing-and-payments/pay-for-your-subscription.md)。
 
-请仅以美元支付，并参考发票 (发票) 的发票编号。
+Please pay in USD only and reference your invoice number (s) on your invoice invoice invoice.
 
 ## <a name="electronic-funds-transfer"></a>电子资金转帐
 

@@ -3,7 +3,7 @@ title: 安全仪表板概述
 f1.keywords:
 - NOCSH
 ms.author: siosulli
-author: denisebmsft
+author: siosulli
 manager: dansimp
 audience: ITPro
 ms.topic: article
@@ -19,12 +19,12 @@ ms.custom:
 description: 使用新的安全仪表板查看 Office 365 威胁防护状态，并查看和操作安全警报。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 7114776f686d25808c141a07b8cb2868cc67615d
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 8c9a49b9b8fc1edd9b2928250e8cae135acb75f4
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51203562"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52274408"
 ---
 # <a name="security-dashboard"></a>安全仪表板
 
@@ -87,7 +87,7 @@ ms.locfileid: "51203562"
 |---|---|
 |扫描的邮件|扫描的电子邮件数乘以收件人数|
 |威胁已停止|标识为包含恶意软件的电子邮件数乘以收件人数|
-|被 [Defender for Office 365 阻止 ](defender-for-office-365.md)|由 Defender for Office 365 阻止的电子邮件数乘以收件人数|
+|被 [Defender for Office 365 阻止](defender-for-office-365.md)|由 Defender for Office 365 阻止的电子邮件数乘以收件人数|
 |在传递后删除|删除的邮件数乘以 [收件人数的零](zero-hour-auto-purge.md) 时差自动清除数|
 
 ## <a name="malware"></a>恶意软件

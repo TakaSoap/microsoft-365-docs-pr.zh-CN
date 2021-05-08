@@ -27,12 +27,12 @@ ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: 在本文中，管理员可以了解 Defender for Office 365 中的安全链接保护，以保护其组织免受网络钓鱼和使用恶意 URL 的其他攻击。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1f27e1bbd051bd43d1f160707589db2bb7189b76
-ms.sourcegitcommit: 437bdbf3f99610869811e80432a59b5f244f7a87
+ms.openlocfilehash: 86ecea1e250821f6a7f08d204586db0e60052e5c
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/08/2021
-ms.locfileid: "51644772"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52274432"
 ---
 # <a name="safe-links-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 中的安全链接
 
@@ -57,9 +57,9 @@ ms.locfileid: "51644772"
 
   有关 Teams 中的安全链接保护详细信息，请参阅本文稍后介绍 [的 Microsoft Teams](#safe-links-settings-for-microsoft-teams) 安全链接设置部分。
 
-- **Office 365 应用**：Office 365 应用的安全链接保护在受支持的桌面、移动和 Web aps 中可用。 在 **安全** 链接策略之外的全局设置中为 Office 365 应用配置安全链接保护。 有关说明，请参阅 [为 Microsoft Defender for Office 365 中的安全链接设置配置全局设置](configure-global-settings-for-safe-links.md)。
+- **Office 365 应用**：Office 365 应用的安全链接保护在支持的桌面、移动和 Web 应用中可用。 在 **安全** 链接策略之外的全局设置中为 Office 365 应用配置安全链接保护。 有关说明，请参阅 [为 Microsoft Defender for Office 365 中的安全链接设置配置全局设置](configure-global-settings-for-safe-links.md)。
 
-  但是，Office 365 应用的安全链接保护仅适用于活动安全链接策略中包含的用户。 如果用户未包含在活动安全链接策略中，则用户不会在受支持的 Office 365 应用中获得安全链接保护。
+  Office 365 应用的安全链接保护适用于组织中获得 Office 365 Defender 许可的所有用户，无论用户是否包含在活动的安全链接策略中。
 
   有关 Office 365 应用中安全链接保护详细信息，请参阅本文稍后介绍 [的 Office 365](#safe-links-settings-for-office-365-apps) 应用的安全链接设置部分。
 
@@ -78,15 +78,18 @@ ms.locfileid: "51644772"
 
 下表介绍了 Microsoft 365 和 Office 365 组织中安全链接的方案，其中包括 Defender for Office 365 (换句话说，缺少许可在示例) 中永远不会是问题。
 
+<br>
+
 ****
 
-|方案|结果|
+|应用场景|结果|
 |---|---|
 |表示是市场营销部门的成员。 Office 365 应用的安全链接保护在安全链接的全局设置中打开，并且存在适用于市场营销部门成员的安全链接策略。 在电子邮件中打开 PowerPoint 演示文稿，然后单击演示文稿中的 URL。|百分之百受安全链接保护。 <p> Office 365 应用的安全链接保护包含在安全链接策略中，且 Office 365 应用的安全链接保护已打开。 <p> 有关 Office 365 应用中安全链接保护的要求详细信息，请参阅本文稍后介绍 [的 Office 365](#safe-links-settings-for-office-365-apps) 应用的安全链接设置部分。|
 |Chris 的 Microsoft 365 E5 组织未配置安全链接策略。 Chris 从外部发件人收到一封电子邮件，其中包含他最终单击的恶意网站的 URL。|Chris 不受安全链接保护。 <p> 管理员必须至少为任何人创建一个安全链接策略，才能在入站电子邮件中获得安全链接保护。 Chris 必须包含在策略条件中才能获得安全链接保护。|
 |在 Pat 的组织中，管理员未创建任何安全链接策略，但 Office 365 应用的安全链接保护已打开。 Pat 打开 Word 文档并单击该文件中的 URL。|Pat 不受安全链接保护。 <p> 尽管 Office 365 应用的安全链接保护已全局打开，但 Pat 未包含在任何活动的安全链接策略中，因此无法应用保护。|
 |在 Lee 的组织中，在安全链接的全局设置中的"阻止以下 `https://tailspintoys.com` **URL"** 列表中进行配置。 包含 Lee 的安全链接策略已存在。 Lee 收到一封包含 URL 的电子邮件 `https://tailspintoys.com/aboutus/trythispage` 。 Lee 单击 URL。|可能为 Lee 自动阻止 URL;这取决于列表中的 URL 条目和所使用的电子邮件客户端 Lee。 有关详细信息，请参阅本文稍后介绍[](#block-the-following-urls-list-for-safe-links)的安全链接的"阻止以下 URL"列表部分。|
 |Jamie 和 Julia 都负责 contoso.com。 在不久之前，管理员配置了适用于 Jamie 和 Julia 的安全链接策略。 Jamie 向 Julia 发送了一封电子邮件，但不知道该电子邮件包含恶意 URL。|如果适用于 Julia 的安全链接策略配置为应用于内部收件人之间的邮件，则 Julia 受安全链接保护。 有关详细信息，请参阅本文稍后 [介绍的电子邮件](#safe-links-settings-for-email-messages) 的安全链接设置部分。|
+|
 
 ## <a name="safe-links-settings-for-email-messages"></a>电子邮件的安全链接设置
 
@@ -104,9 +107,7 @@ ms.locfileid: "51644772"
   - 没有有效信誉的 URL 将在后台异步触发。
 
 - **对指向文件的** 可疑链接应用实时 URL 扫描：启用链接（包括指向可下载内容的电子邮件中的链接）实时扫描。 建议的值已启用。
-
   - **等待 URL 扫描完成，然后再传递邮件**：
-
     - 已启用：包含 URL 的邮件将一直进行，直到扫描完成。 仅在确认 URL 是安全的之后，才传递邮件。 这是建议的值。
     - 已禁用：如果 URL 扫描无法完成，无论如何都传递邮件。
 
@@ -125,7 +126,6 @@ ms.locfileid: "51644772"
   有关安全链接策略的"标准"和"严格"策略设置的建议值详细信息，请参阅 [安全链接策略设置](recommended-settings-for-eop-and-office365.md#safe-links-policy-settings)。
 
 - **收件人** 筛选器：需要指定确定策略适用的收件人条件和例外。 可以将这些属性用于条件和例外：
-
   - **收件人为**
   - **收件人域为**
   - **收件人为以下组的成员**
@@ -207,7 +207,7 @@ Office 365 应用的安全链接保护具有以下客户端要求：
 
 - 用户使用工作或学校帐户登录。 有关详细信息，请参阅登录到[Office。](https://support.microsoft.com/office/b9582171-fd1f-4284-9846-bdd72bb28426)
 
-在安全链接的全局设置中（而不是在安全链接策略中）为 Office 365 应用配置安全链接保护。 但是，若要应用 Office 365 应用的安全链接保护，打开 Office 文档并单击链接的用户必须包含在活动的安全链接策略中。
+在安全链接的全局设置中（而不是在安全链接策略中）为 Office 365 应用配置安全链接保护。 保护适用于组织中获得 Office 365 Defender 许可的所有用户，无论用户是否包含在活动安全链接策略中。
 
 以下安全链接设置适用于 Office 365 应用：
 
@@ -256,26 +256,23 @@ Office 365 应用的安全链接保护具有以下客户端要求：
 
 在安全链接的全局设置中配置 URL 列表。 有关说明，请参阅 [配置"阻止以下 URL"列表](configure-global-settings-for-safe-links.md#configure-the-block-the-following-urls-list-in-the-security--compliance-center)。
 
-> [!NOTE]
-> 
-> - 有关被阻止的 URL 的真正通用列表，请参阅管理 [租户允许/阻止列表](tenant-allow-block-list.md)。
-> 
-> - 限制：
->   - 最大条目数为 500。
->   - 条目的最大长度为 128 个字符。
->   - 所有条目不能超过 10，000 个字符。
-> 
-> - 不要在 URL 末尾添加 `/` () 斜杠。 例如，使用 `https://www.contoso.com` ，而不是 `https://www.contoso.com/` 。
-> 
-> - 例如或 (仅域 URL) `contoso.com` `tailspintoys.com` 将阻止包含该域的任何 URL。
-> 
-> - 可以阻止子域，但不阻止整个域。 例如，阻止包含子域的任何 URL，但不阻止包含完整域 `toys.contoso.com*` 的 `contoso.com` URL。
-> 
-> - 每个 URL 条目可以包含最多三 () `*` 通配符。
+**注意**：
+
+- 有关被阻止的 URL 的真正通用列表，请参阅管理 [租户允许/阻止列表](tenant-allow-block-list.md)。
+- 阻止以下 **URL 列表** 的限制：
+  - 最大条目数为 500。
+  - 条目的最大长度为 128 个字符。
+  - 所有条目不能超过 10，000 个字符。
+- 不要在 URL 末尾添加 `/` () 斜杠。 例如，使用 `https://www.contoso.com` ，而不是 `https://www.contoso.com/` 。
+- 例如或 (仅域 URL) `contoso.com` `tailspintoys.com` 将阻止包含该域的任何 URL。
+- 可以阻止子域，但不阻止整个域。 例如，阻止包含子域的任何 URL，但不阻止包含完整域 `toys.contoso.com*` 的 `contoso.com` URL。
+- 每个 URL 条目可以包含最多三 () `*` 通配符。
 
 ### <a name="entry-syntax-for-the-block-the-following-urls-list"></a>"阻止以下 URL"列表的条目语法
 
 下表介绍了您可以输入的值及其结果的示例：
+
+<br>
 
 ****
 
@@ -296,24 +293,24 @@ Office 365 应用的安全链接保护具有以下客户端要求：
 
 若要将条目添加到新的或现有的安全链接策略中的列表，请参阅 [创建安全链接策略](set-up-safe-links-policies.md#use-the-security--compliance-center-to-create-safe-links-policies) 或修改 [安全链接策略](set-up-safe-links-policies.md#use-the-security--compliance-center-to-modify-safe-links-policies)。
 
-> [!NOTE]
-> 
-> - 以下客户端无法识别安全链接策略中的 **不** 重写以下 URL 列表。 根据这些客户端中安全链接扫描的结果，可阻止包含在这些安全管理中的用户访问 URL：
-> 
->   - Microsoft Teams
->   - Office Web 应用
-> 
->   有关任何地方允许的 URL 的真正通用列表，请参阅 [管理租户允许/阻止列表](tenant-allow-block-list.md)。
-> 
-> - 请考虑将常用的内部 URL 添加到列表中，以改进用户体验。 例如，如果你有本地服务（如 Skype for Business 或 SharePoint），你可以添加这些 URL 以将其从扫描中排除。
-> 
-> - 如果安全链接策略中已有"不重写以下 **URL"** 条目，请务必查看列表并根据需要添加通配符。 例如，你的列表有一个类似 的条目 `https://contoso.com/a` ，你稍后决定包括子路径，如 `https://contoso.com/a/b` 。 不要添加新条目，而是向现有条目添加通配符，以便它成为 `https://contoso.com/a/*` 。
-> 
-> - 每个 URL 条目可以包含最多三 () `*` 通配符。 通配符明确包括前缀或子域。 例如，条目与 不同，因为允许用户访问指定域中的子域 `contoso.com` `*.contoso.com/*` `*.contoso.com/*` 和路径。
+**注意**：
+
+- 以下客户端无法识别安全链接策略中的 **不** 重写以下 URL 列表。 根据这些客户端中安全链接扫描的结果，可阻止包含在这些安全管理中的用户访问 URL：
+  - Microsoft Teams
+  - Office Web 应用
+
+  有关任何地方允许的 URL 的真正通用列表，请参阅 [管理租户允许/阻止列表](tenant-allow-block-list.md)。
+
+- 请考虑将常用的内部 URL 添加到列表中，以改进用户体验。 例如，如果你有本地服务（如 Skype for Business 或 SharePoint），你可以添加这些 URL 以将其从扫描中排除。
+- 如果安全链接策略中已有"不重写以下 **URL"** 条目，请务必查看列表并根据需要添加通配符。 例如，你的列表有一个类似 的条目 `https://contoso.com/a` ，你稍后决定包括子路径，如 `https://contoso.com/a/b` 。 不要添加新条目，而是向现有条目添加通配符，以便它成为 `https://contoso.com/a/*` 。
+- 每个 URL 条目可以包含最多三 () `*` 通配符。 通配符明确包括前缀或子域。 例如，条目与 不同，因为允许用户访问指定域中的子域 `contoso.com` `*.contoso.com/*` `*.contoso.com/*` 和路径。
+- 如果 URL 使用 HTTP 到 HTTPS (（例如，302 重定向到) ）的自动重定向，并且您尝试为列表中的同一 URL 输入 HTTP 和 HTTPS 条目，您可能会注意到第二个 URL 条目将替换第一 `http://www.contoso.com` 个 URL 条目。 `https://www.contoso.com` 如果 URL 的 HTTP 和 HTTPS 版本是完全独立的，则不会发生此行为。
 
 ### <a name="entry-syntax-for-the-do-not-rewrite-the-following-urls-list"></a>"不重写以下 URL"列表的条目语法
 
 下表介绍了您可以输入的值及其结果的示例：
+
+<br>
 
 ****
 

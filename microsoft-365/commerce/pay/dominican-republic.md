@@ -8,22 +8,22 @@ manager: scotv
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
-ms.collection: Adm_Commerce_Pay
+ms.custom: CommercePayInfo
 localization_priority: Normal
-description: 了解在何处发送订阅付款。
+description: 了解在哪里发送订阅付款。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 778944eac2c3a0997d8366db0f1b1e045926eb51
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: 99a3c67df67a856c8ac8b89c89a0da89272d9ff9
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50551484"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52273892"
 ---
 # <a name="payment-information-for-dominican-republic"></a>多米尼加共和国的付款信息
 
 [查找另一个国家/地区](../billing-and-payments/pay-for-your-subscription.md)。
 
-Please pay in USD only and reference invoice number () on your payment) .
+Please pay in USD only and reference invoice number (s) on your payment invoice.
 
 ## <a name="electronic-funds-transfer"></a>电子资金转帐
 

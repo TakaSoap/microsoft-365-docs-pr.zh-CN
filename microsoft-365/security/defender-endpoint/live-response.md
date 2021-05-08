@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 4898081103faa27c19d3a09ffba1b59670833dd8
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: fc1c1e0d3f68016651c04521e04ce348e5ab9a65
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51860793"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52246461"
 ---
 # <a name="investigate-entities-on-devices-using-live-response"></a>使用实时响应调查设备上的实体
 
@@ -44,15 +44,15 @@ ms.locfileid: "51860793"
 - 运行基本和高级命令以在设备上执行调查工作。
 - 下载恶意软件示例和 PowerShell 脚本结果等文件。
 - 在后台下载新 (！) 。
-- 将 PowerShell 脚本或可执行文件上传到库，然后从租户级别在设备上运行它。
+- Upload PowerShell 脚本或可执行文件到库，然后从租户级别在设备上运行它。
 - 执行或撤消修正操作。
 
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>准备工作
 
 在设备上启动会话之前，请确保满足以下要求：
 
-- **验证你运行的是受支持的 Windows 版本**。 <br/>
-设备必须运行以下 Windows 版本之一
+- **验证是否正在运行受支持的版本Windows。** <br/>
+设备必须运行以下版本之一Windows
 
   - **Windows 10**
     - [版本 1909](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1909) 或更高版本  
@@ -61,7 +61,7 @@ ms.locfileid: "51860793"
     - [版本 1803 (RS 4) ](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1803) [KB4537795](https://support.microsoft.com/help/4537795/windows-10-update-kb4537795)
     - [版本 1709 (RS 3) ](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) [KB4537816](https://support.microsoft.com/help/4537816/windows-10-update-kb4537816)
   
-  - **Windows Server 2019 - 仅适用于公共预览版**
+  - **WindowsServer 2019 - 仅适用于公共预览版**
     - 版本 1903 或 ([KB4515384](https://support.microsoft.com/en-us/help/4515384/windows-10-update-kb4515384) 版本) 更高版本 
     - 版本 1809 ([KB4537818](https://support.microsoft.com/en-us/help/4537818/windows-10-update-kb4537818)) 
 
@@ -101,13 +101,13 @@ ms.locfileid: "51860793"
 ## <a name="live-response-dashboard-overview"></a>实时响应仪表板概述
 在设备上启动实时响应会话时，将打开仪表板。 仪表板提供有关会话的信息，如下所示： 
 
-- 创建会话的人
+- Who创建了会话
 - 会话开始时间
 - 会话的持续时间
 
 通过仪表板还可以访问：
 - 断开会话连接
-- 将文件上载到库 
+- Upload文件到库 
 - 命令控制台
 - 命令日志
 
@@ -143,7 +143,6 @@ ms.locfileid: "51860793"
 |`connect` | 启动到设备的实时响应会话。 |
 |`connections` | 显示所有活动连接。 |
 |`dir` | 显示目录中的文件和子目录的列表。 |
-|`download <file_path> &` | 在后台下载文件。 |
 |`drivers` |  显示设备上安装的所有驱动程序。 |
 |`fg <command ID>` | 将指定的作业放在前台的前台，使其成为当前作业。 <br> 注意：fg 从作业（而不是 PID）获得可用的"命令 ID" |
 |`fileinfo` | 获取有关文件的信息。 |
@@ -173,7 +172,7 @@ ms.locfileid: "51860793"
 
 ## <a name="use-live-response-commands"></a>使用实时响应命令
 
-控制台中可以使用的命令遵循与 Windows 命令类似的 [原则](https://docs.microsoft.com/windows-server/administration/windows-commands/windows-commands#BKMK_c)。
+控制台中可以使用的命令遵循与命令类似的Windows[原则](https://docs.microsoft.com/windows-server/administration/windows-commands/windows-commands#BKMK_c)。
 
 高级命令提供了一组更可靠的操作，允许你执行更强大的操作，如下载和上载文件、在设备上运行脚本，以及对实体执行修正操作。
 
@@ -198,9 +197,9 @@ ms.locfileid: "51860793"
 下面是一些示例：
 
 
-|命令  |功能  |
+|Command  |功能  |
 |---------|---------|
-|`Download "C:\windows\some_file.exe" &`     |开始在后台下载名为 *some_file.exe* 的文件。         |
+|`getfile "C:\windows\some_file.exe" &`     |开始在后台下载名为 *some_file.exe* 的文件。         |
 |`fg 1234`     |将命令 ID 为 *1234* 的下载返回到前台。         |
 
 
@@ -214,7 +213,7 @@ ms.locfileid: "51860793"
 
 #### <a name="to-upload-a-file-in-the-library"></a>上载库中的文件
 
-1. 单击 **"将文件上载到库"。** 
+1. 单击 **Upload文件到库。** 
 
 2. 单击 **"** 浏览"，然后选择文件。
 
@@ -234,16 +233,6 @@ ms.locfileid: "51860793"
 
 >[!WARNING]
 >使用此快捷方式不会在代理端停止命令。 它将仅取消门户中的命令。 因此，更改操作（如"修正"）可能会继续，同时取消命令。 
-
-### <a name="automatically-run-prerequisite-commands"></a>自动运行必备组件命令
-
-某些命令具有要运行的先决条件命令。 如果不运行必备组件命令，将会看到错误消息。 例如，运行命令 `download` 而不运行 `fileinfo` 将返回错误。
-
-可以使用自动标志自动运行先决条件命令，例如：
-
-```console
-getfile c:\Users\user\Desktop\work.txt -auto
-```
 
 ## <a name="run-a-powershell-script"></a>运行 PowerShell 脚本 
 
@@ -299,7 +288,7 @@ processes > output.txt
 选择 **"命令日志** "选项卡以查看会话期间在设备上使用的命令。 每个命令都使用完整详细信息进行跟踪，例如：
 - ID
 - 命令行
-- 持续时间
+- 期限
 - 状态和输入或输出侧栏
 
 ## <a name="limitations"></a>限制

@@ -8,27 +8,27 @@ manager: scotv
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
-ms.collection: Adm_Commerce_Pay
+ms.custom: CommercePayInfo
 localization_priority: Normal
-description: 了解在何处发送订阅付款。
+description: 了解在哪里发送订阅付款。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: fbce897c3a9e0cb030de46b5e381cba056b800b1
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: 21cdbc8822c10bc56460d57ea08fd0e854918277
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50550584"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52273448"
 ---
 # <a name="payment-information-for-korea"></a>韩国的付款信息
 
 [查找另一个国家/地区](../billing-and-payments/pay-for-your-subscription.md)。
 
-请仅以 KRW 支付，并参考 (付款) 付款金额。
+Please pay in KRW only and reference invoice number (s) on your payment payment payment.
 
 ## <a name="electronic-funds-transfer"></a>电子资金转帐
 
 **Bank：** Bank  
-**分支** ：89-29 本色-2ka C korearo-gu（韩国）110-062  
+**分支** ：89-29（朝鲜）Unro-2ka C一ro-gu（韩国 110-062）  
 **SWIFT 代码：** KRKRSX  
 **帐号** ：5001296088  
 **帐户名称：** MICROSOFT 韩国  

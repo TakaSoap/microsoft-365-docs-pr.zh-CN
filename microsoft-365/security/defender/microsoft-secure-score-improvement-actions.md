@@ -1,6 +1,6 @@
 ---
 title: 通过 Microsoft 安全分数评估安全状况
-description: 介绍如何采取措施提高 Microsoft 365 安全中心中的 Microsoft 安全分数。
+description: 介绍如何采取措施提高安全中心中的 Microsoft Microsoft 365分数。
 keywords: microsoft 安全分数， 安全分数， office 365 安全分数， Microsoft 安全分数， microsoft 365 安全中心， 改进操作
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -21,31 +21,31 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: 0b2b9f1f01a583a96e0ae663e3f78cb0a7d846fc
-ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
+ms.openlocfilehash: 8b321fc8883cf490cb5b2814d5c2b617a52dbb29
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51570596"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52246389"
 ---
 # <a name="assess-your-security-posture-with-microsoft-secure-score"></a>使用 Microsoft 安全分数评估安全状况
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-Microsoft 安全功能分数是衡量组织安全状况的指标，数字越高表示采取的改进措施越多。 可以在 Microsoft https://security.microsoft.com/securescore [365 安全中心 找到它](overview-security-center.md)。
+Microsoft 安全功能分数是衡量组织安全状况的指标，数字越高表示采取的改进措施越多。 可以在安全中心内 https://security.microsoft.com/securescore 找到[Microsoft 365。](overview-security-center.md)
 
 为了帮助您更快找到所需的信息，Microsoft 改进操作分为以下组：
 
-* Azure (Directory 帐户的标识&角色) 
+* 标识 (Azure Active Directory角色&角色) 
 * Device (For Endpoint 的 Microsoft Defender，称为 ["适用于](/windows/security/threat-protection/microsoft-defender-atp/tvm-microsoft-secure-score-devices) 设备的 Microsoft 安全分数) 
-* 应用 (电子邮件和云应用，包括 Office 365 和 Microsoft Cloud App Security) 
+* 应用 (电子邮件和云应用，包括Office 365和Microsoft Cloud App Security) 
 
 >[!NOTE]
->在 Microsoft 安全分数的最近版本中，发布了一个改进的评分模型，这使得 Microsoft 安全分数暂时与 Identity Secure Score 和 Graph API 不兼容。 [查看详细信息](microsoft-secure-score-whats-new.md)
+>在 Microsoft 安全分数的最近版本中，发布了一个改进的评分模型，使得 Microsoft 安全分数暂时与 Identity Secure Score 和 Graph API 不兼容。 [查看详细信息](microsoft-secure-score-whats-new.md)
 
 在"Microsoft 安全分数概述"页中，查看在这些组之间如何拆分分数以及可用分数。 通过基准比较，还可以全面查看总分数、安全分数的历史趋势，以及可采取优先改进措施以提高分数。
 
-![安全分数主页](../../media/secure-score/secure-score-homepage-new.png)
+![安全分数主页](../../media/secure-score/secure-score-home-page.png)
 
 ## <a name="check-your-current-score"></a>检查当前分数
 
@@ -61,7 +61,7 @@ Microsoft 安全功能分数是衡量组织安全状况的指标，数字越高�
 
 如果已包含所有可能的得分视图，此视图的外观将如下所示：
 
-![安全分数，包括计划分数、当前许可证分数和可得分](../../media/secure-score/your-secure-score.png)
+![安全分数，包括计划分数、当前许可证分数和可得分](../../media/secure-score/secure-score-achievable.png)
 
 ## <a name="take-action-to-improve-your-score"></a>采取措施提高分数
 
@@ -81,7 +81,7 @@ Microsoft 安全功能分数是衡量组织安全状况的指标，数字越高�
 
 - 选择 **"** 管理"转到配置屏幕并做出更改。 然后，你将获得操作有价值的点，在飞出时可见。点通常需要大约 24 小时才能更新。
 
-- 选择 **"** 共享"以复制指向改进操作的直接链接。 还可以选择共享链接的平台，如电子邮件、Microsoft Teams、Microsoft Planner 或 ServiceNow。 选择 ServiceNow 将让你创建将在 ServiceNow 和 Microsoft 365 安全中心主页中可见的更改票证。 若要了解更多信息，请参阅 [Microsoft 365 安全中心和 ServiceNow 集成](./tickets.md)。
+- 选择 **"** 共享"以复制指向改进操作的直接链接。 还可以选择共享链接的平台，如电子邮件、Microsoft Teams或 Microsoft Planner。
 
 添加 **备注** 以跟踪要注释的进度或其他任何内容。 如果向改进操作 **添加** 自己的标记，可以按这些标记进行筛选。
 
@@ -94,9 +94,9 @@ Microsoft 安全功能分数是衡量组织安全状况的指标，数字越高�
 - **接受** 风险 - 安全应始终与可用性平衡，而不是每个建议都适用于您的环境。 在这种情况下，可以选择接受风险或剩余风险，而不是实施改进操作。 您不会获得任何分数，但此操作将不再显示在改进操作列表中。 可以在历史记录中查看此操作，或随时撤消此操作。
 - **通过第三方解决** ， **通过** 备用缓解解决 - 改进操作已由第三方应用程序或软件或内部工具处理。 你将获得操作有价值的分数，以便你的分数更好地反映你的整体安全状况。 如果第三方或内部工具不再涵盖该控件，可以选择其他状态。 请记住，如果将改进操作标记为上述任一状态，Microsoft 将不能了解实现是否完整。
 
-#### <a name="threat--vulnerability-management-improvement-actions"></a>威胁&漏洞管理改进操作
+#### <a name="threat--vulnerability-management-improvement-actions"></a>威胁& 漏洞管理改进操作
 
-对于"设备"类别中的改进操作，你无法选择状态。 相反，你将被定向到[Microsoft Defender](/windows/security/threat-protection/microsoft-defender-atp/use) [](/windows/security/threat-protection/microsoft-defender-atp/tvm-security-recommendation)安全中心中的关联威胁和漏洞管理安全建议以采取措施。 你选择的例外以及你编写的理由将特定于该门户。 它不会在 Microsoft 安全分数门户中显示。
+对于"设备"类别中的改进操作，你无法选择状态。 相反，你将被定向到危险和漏洞管理[中相关的](/windows/security/threat-protection/microsoft-defender-atp/tvm-security-recommendation)安全[Microsoft Defender 安全中心采取操作](/windows/security/threat-protection/microsoft-defender-atp/use)。 你选择的例外以及你编写的理由将特定于该门户。 它不会在 Microsoft 安全分数门户中显示。
 
 #### <a name="completed-improvement-actions"></a>已完成的改进操作
 
