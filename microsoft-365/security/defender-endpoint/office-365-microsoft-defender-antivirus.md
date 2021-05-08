@@ -1,13 +1,13 @@
 ---
-title: 更好地结合 - Microsoft Defender 防病毒和 Office 365 (OneDrive) - 更好地防止勒索软件和网络威胁
-description: 包括 OneDrive 的 Office 365 与 Microsoft Defender 防病毒一起千万万次。 阅读本文可了解更多信息。
+title: 更好地结合 - Microsoft Defender 防病毒和Office 365 (包括OneDrive) - 更好地防御勒索软件和网络威胁
+description: Office 365，包括OneDrive，与 Microsoft Defender 防病毒 一起。 阅读本文可了解更多信息。
 keywords: windows defender， 防病毒， office 365， onedrive， 还原， 勒索软件
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localization_priority: normal
+localization_priority: Normal
 audience: ITPro
 ms.topic: article
 author: denisebmsft
@@ -16,12 +16,12 @@ ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 41f22375aa117ba617eae59d4b8e9f8bb15ad4f0
-ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
+ms.openlocfilehash: 6bf84d00d11bdb948b234d9a9c6f1b4fa7f14461
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51764095"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52275392"
 ---
 # <a name="better-together-microsoft-defender-antivirus-and-office-365"></a>一起更得心防万一：Microsoft Defender 防病毒软件和 Office 365
 
@@ -35,13 +35,13 @@ ms.locfileid: "51764095"
 
 您可能已经知道：
 
-- **Microsoft Defender 防病毒可保护 Windows 10 设备** 免受软件威胁（如病毒、恶意软件和间谍软件）的侵害。 Microsoft Defender 防病毒是完整的持续保护，内置于 Windows 10 中，随时可供使用。 [Microsoft Defender 防病毒是下一代保护](./microsoft-defender-antivirus-in-windows-10.md)。 
+- **Microsoft Defender 防病毒保护你的Windows 10设备免受软件威胁**，如病毒、恶意软件和间谍软件。 Microsoft Defender 防病毒完整、持续的保护，内置Windows 10随时可供使用。 [Microsoft Defender 防病毒下一代保护](./microsoft-defender-antivirus-in-windows-10.md)。 
 
-- **Office 365 包括反病毒、反垃圾邮件和反恶意软件保护**。 借助 Office 365 订阅，可以通过 OneDrive) 获取高级电子邮件和日历、Office 应用、1 TB 云存储空间 (以及所有设备的高级安全性。 这适用于家庭用户和业务用户。 如果你是商业用户，并且你的组织正在使用 Office 365 E5，则通过 Microsoft Defender for Office 365 抵御 [Office 365](/microsoft-365/security/office-365-security/protect-against-threats)的威胁，你可以获得更多保护。
+- **Office 365包括反病毒、反垃圾邮件和反恶意软件保护**。 借助 Office 365 订阅，可获取高级电子邮件和日历、Office 应用、1 TB 云存储空间 (OneDrive) ，以及所有设备的高级安全性。 这适用于家庭用户和业务用户。 如果你是企业用户，并且你的组织使用的是 Office 365 E5，则通过 Microsoft Defender Office 365使用 Office 365 抵御[威胁](/microsoft-365/security/office-365-security/protect-against-threats)。
 
-- **Office 365** 中包含的 OneDrive 使你能够联机存储文件和文件夹，并尽可能共享它们。 你可以与用户协作 (工作或) ，以及存储在 OneDrive 中的共同作者文件。 还可以在 PC、手机和平板电脑设备上访问 (设备中的) 。 [在 OneDrive 中管理共享](/OneDrive/manage-sharing)。
+- OneDrive包含在 Office 365 中，使您可以联机存储文件和文件夹，并共享 **它们（如果合适**）。 你可以与用户协作 (工作或) ，以及存储在 OneDrive 中的共同OneDrive。 还可以在 PC、手机和平板电脑设备上访问 (设备中的) 。 [管理共享OneDrive。](/OneDrive/manage-sharing)
 
-**但是，你是否知道将 Microsoft Defender 防病毒与 Office 365** 一起使用有很多安全原因？ 有两种支持方式：
+**但是，你是否知道将安全原因与** Microsoft Defender 防病毒一Office 365？ 有两种支持方式：
 
  1. [你获得勒索软件保护和恢复](#ransomware-protection-and-recovery)。
 
@@ -51,21 +51,21 @@ ms.locfileid: "51764095"
 
 ## <a name="ransomware-protection-and-recovery"></a>勒索软件保护和恢复
 
-当你将文件保存到 [OneDrive](/onedrive)， [并且 Microsoft Defender 防病毒](./microsoft-defender-antivirus-in-windows-10.md) 在你的设备上检测到勒索软件威胁时，会发生以下情况：
+将文件保存到 OneDrive [，Microsoft Defender 防病毒](/onedrive)设备上检测到勒索软件[](./microsoft-defender-antivirus-in-windows-10.md)威胁时，将发生以下情况：
 
 1. **将告知你威胁**。  (如果你的组织使用 Microsoft Defender [for Endpoint，](microsoft-defender-endpoint.md)你的安全运营团队也会收到通知。) 
 
 2. **Microsoft Defender 防病毒可帮助你 (** 组织的安全团队) 从设备中删除勒索软件 () 。  (如果你的组织使用 Microsoft Defender for Endpoint，你的安全运营团队可以确定其他设备是否受到感染，并采取适当的措施。) 
 
-3. **你可以选择恢复 OneDrive 中的文件**。 使用 OneDrive 文件还原功能，可以将 OneDrive 中的文件恢复到勒索软件攻击发生之前的状态。 请参阅 [勒索软件检测和恢复文件](https://support.office.com/article/0d90ec50-6bfd-40f4-acc7-b8c12c73637f)。
+3. **可以选择恢复 OneDrive** 中的文件。 使用OneDrive还原功能，你可以恢复OneDrive文件，以恢复到勒索软件攻击发生之前的状态。 请参阅 [勒索软件检测和恢复文件](https://support.office.com/article/0d90ec50-6bfd-40f4-acc7-b8c12c73637f)。
 
 考虑节省时间和麻烦这可以节省的时间。 
 
 ## <a name="integration-means-better-protection"></a>集成意味着更好的保护
 
-Microsoft Defender for Office 365 与 Microsoft Defender for Endpoint 集成意味着对组织的更好保护。 操作步骤如下：
+Microsoft Defender for Office 365集成了 Microsoft Defender for Endpoint 意味着可以更好地保护你的组织。 操作步骤如下：
 
-- [Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/office-365-atp) 可保护你的组织免受电子邮件、电子邮件附件和 Office 文档中 (URL) 恶意威胁。
+- [Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/office-365-atp)保护你的组织免受电子邮件、电子邮件附件和链接中 (URL) 中Office威胁。
 
     AND
 
@@ -73,13 +73,13 @@ Microsoft Defender for Office 365 与 Microsoft Defender for Endpoint 集成意�
 
     SO
 
-- 启用集成后，安全运营团队可以在 Microsoft Defender 安全中心 () 中查看任何检测到的 URL 或电子邮件的收件人所使用的设备列表，以及这些设备的最新 [https://securitycenter.windows.com](https://securitycenter.windows.com) 警报。
+- 启用集成后，安全运营团队可以在 Microsoft Defender 安全中心 () 中查看任何检测到的 URL 或电子邮件的收件人所使用的设备列表，以及这些设备的最近 [https://securitycenter.windows.com](https://securitycenter.windows.com) 警报。
 
-如果尚未这样做，请集成 Microsoft [Defender for Office 365 和 Microsoft Defender for Endpoint](/microsoft-365/security/office-365-security/integrate-office-365-ti-with-wdatp)。
+如果尚未这样做，请集成 Microsoft [Defender for Office 365 Microsoft Defender for Endpoint](/microsoft-365/security/office-365-security/integrate-office-365-ti-with-wdatp)。
 
-## <a name="more-good-reasons-to-use-onedrive"></a>使用 OneDrive 的更多理由
+## <a name="more-good-reasons-to-use-onedrive"></a>使用工具的更OneDrive
 
-防止勒索软件是将文件放入 OneDrive 的一个重要原因。 此外，还有一些更值得说明的原因，在此视频中进行了总结： <br/><br/>
+防止勒索软件是使文件置于安全OneDrive。 此外，还有一些更值得说明的原因，在此视频中进行了总结： <br/><br/>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/70b4d256-46fb-481f-ad9b-921ef5fd7bed]
 
@@ -87,6 +87,6 @@ Microsoft Defender for Office 365 与 Microsoft Defender for Endpoint 集成意�
 
 - [OneDrive](/onedrive)
 
-- [Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/office-365-atp?view=o365-worldwide)
+- [Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/office-365-atp)
 
 - [Microsoft Defender for Endpoint](microsoft-defender-endpoint.md)

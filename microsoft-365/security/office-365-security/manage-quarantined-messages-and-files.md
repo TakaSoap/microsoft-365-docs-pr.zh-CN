@@ -19,12 +19,12 @@ ms.custom:
 description: 管理员可以了解如何在 Exchange Online Protection 和 EOP (中查看和管理) 。 使用 Microsoft Defender for Office 365 的组织中管理员还可以在 SharePoint Online、OneDrive for Business 和 Microsoft Teams 中管理隔离文件。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 7dc7fd26d7a81bc76850af4799363c8d17fc1c83
-ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
+ms.openlocfilehash: c5e2d6a3729a24766652d4c7c0973c63b1dcb207
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "51599525"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52272200"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-admin-in-eop"></a>在 EOP 中以管理员身份管理已隔离邮件和文件
 
@@ -74,7 +74,7 @@ ms.locfileid: "51599525"
 
 1. 在安全与合规中心内，依次转到“威胁管理”\>“审阅”\>“隔离”。
 
-2. 验证 **隔离视图** 是否设置为默认值 **电子邮件**。
+2. 验证“**查看隔离项目**”是否设置为默认值“**电子邮件**”。
 
 3. 若要对结果进行排序，可以单击可用列标题。 单击“修改列”最多可显示七列。 默认值标有星号 (<sup>\*</sup>)：
 
@@ -196,7 +196,7 @@ ms.locfileid: "51599525"
 
 - **下载邮件**：在显示的浮出控件窗格中，选择“我了解下载此邮件所面临的风险”，以使用 .eml 格式保存邮件的本地副本。
 
-- **阻止发件人**：阻止发件人向组织的收件人发送邮件。
+- **阻止发件人**：将发件人添加到邮箱上的"阻止的发件人"列表中。 有关详细信息，请参阅阻止 [邮件发件人](https://support.microsoft.com/office/b29fd867-cac9-40d8-aed1-659e06a706e4)。
 
 - **提交邮件**：在出现的飞出窗格中，选择以下选项：
 

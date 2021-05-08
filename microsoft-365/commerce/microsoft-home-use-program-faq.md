@@ -3,6 +3,7 @@ title: 'Microsoft 家用许可计划常见问题解答 (常见问题) '
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: tugu
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
@@ -10,21 +11,24 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
+- commerce_subscriptions
+- PPM_jmueller
+search.appverid: MET150
 description: 常见问题解答 (常见问题) 有关Microsoft 家用许可计划。
-ms.openlocfilehash: e4940460501da94960cb82eb311a1d1d6470cc63
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.date: 05/01/2021
+ms.openlocfilehash: 5f10e5fb313ec7b48605975a7e03f262fd742801
+ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244692"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52280807"
 ---
 # <a name="microsoft-home-use-program-frequently-asked-questions-faq"></a>Microsoft 家用许可计划常见问题解答 (常见问题) 
 
-批量许可客户在) 网站上Microsoft 家用许可计划 (HUP 适用于企业的 Microsoft Store [HUP。](https://go.microsoft.com/fwlink/?linkid=2139192) 
+批量许可客户在) 网站上Microsoft 家用许可计划 (HUP 适用于企业的 Microsoft Store [HUP。](https://go.microsoft.com/fwlink/?linkid=2139192)
 
 所有其他客户通过此步骤访问 HUP：
 
@@ -46,12 +50,9 @@ HUP Microsoft 家用许可计划 (HUP) 允许符合条件的公司的员工以�
 
 若要使员工充分利用Microsoft 家用许可计划折扣，他们需要有效的公司电子邮件地址和活动的 Microsoft 帐户，并且你的组织必须满足以下条件之一：
 
-- 具有有效软件保障的符合资格Office客户 
-
+- 具有有效软件保障的符合资格Office客户
 - 从软件保障Microsoft 365/Microsoft 365 E3/E5 的客户
-
 - 已购买 2，000 ≥或混合许可证的商业和政府客户Microsoft 365 E3/E5
-
 - 教育客户和非营利组织客户
 
 ## <a name="why-do-i-have-to-create-an-azure-active-directory-aad-account-to-use-the-home-use-program-microsoft-store-for-business"></a>为什么必须创建 AAD Azure Active Directory (帐户) 家庭使用计划/适用于企业的 Microsoft Store？
@@ -73,11 +74,8 @@ HUP Microsoft 家用许可计划 (HUP) 允许符合条件的公司的员工以�
 ## <a name="what-are-the-steps-for-an-eligible-employee-to-make-a-microsoft-home-use-program-purchase"></a>符合条件的员工进行购买需要执行哪些Microsoft 家用许可计划？
 
 1. **注册** 转到 ["Microsoft 家用许可计划"页](https://www.microsoft.com/home-use-program)，然后选择"入门"按钮。 员工输入公司电子邮件地址。
-
 2. **确认**  电子邮件会发送到公司电子邮件地址收件箱，并包含验证其计划资格的链接。
-
 3. **登录** 在经过身份验证后，他们通过提供与其个人电子邮件地址相关联的 Microsoft 帐户开始购买过程，通过该帐户，他们可以查看基于组织"家庭使用计划"权益的产品折扣。 有关详细信息，请参阅 [如何登录你的 Microsoft 帐户](https://support.microsoft.com/help/4028195/microsoft-account-sign-in)。
-
 4. **购买** 购买将在请求中进行处理Microsoft Store。
 
 ## <a name="if-an-employee-subscribes-to-microsoft-365-through-the-microsoft-home-use-program-how-does-this-impact-our-organizations-microsoft-365-business-subscription-and-device-limit"></a>如果员工通过 Microsoft 365订阅Microsoft 家用许可计划，这将如何影响组织的 Microsoft 365 商业版订阅和设备限制？
@@ -105,23 +103,15 @@ HUP Microsoft 家用许可计划 (HUP) 允许符合条件的公司的员工以�
  有关技术问题的帮助，请参阅 [Microsoft 支持](https://support.microsoft.com/)。 你将找到有关：
 
 - 订单状态
-
 - 计费
-
 - 安装Office
-
 - 登录Office
 
 ## <a name="related-content"></a>相关内容
 
-[Microsoft 365订阅](https://www.microsoft.com/home-use-program/)。  (链接页) 
-
-[Microsoft 批量许可服务中心 (](https://www.microsoft.com/Licensing/servicecenter/default.aspx?wa=wsignin1.0) 链接页) 
-
-[适用于企业的 Microsoft Store管理员支持](/microsoft-store/) (链接页面) 
-
-[适用于企业的 Microsoft Store (](https://go.microsoft.com/fwlink/?linkid=2139192)页面) 
-
-[主页使用计划员工存储](https://www.microsoft.com/home-use-program) (链接页) 
-
+[Microsoft 365订阅](https://www.microsoft.com/home-use-program/)。  (链接页) \
+[Microsoft 批量许可服务中心](https://www.microsoft.com/Licensing/servicecenter/default.aspx?wa=wsignin1.0) (链接页) \
+[适用于企业的 Microsoft Store管理员支持](/microsoft-store/) (链接页面) \
+[适用于企业的 Microsoft Store (](https://go.microsoft.com/fwlink/?linkid=2139192)页面) \
+[主页 使用计划员工存储](https://www.microsoft.com/home-use-program) (链接页) \
 [Microsoft 许可：主页使用计划概述 (](https://www.microsoft.com/licensing/licensing-programs/software-assurance-by-benefits?activetab=software-assurance-by-benefits-tab:primaryr4) 链接页) 

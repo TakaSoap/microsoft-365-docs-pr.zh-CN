@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: jkinma
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -12,30 +13,26 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
-- commerce
 ms.custom:
 - TopSMBIssues
 - okr_smb
 - AdminSurgePortfolio
-search.appverid:
-- BCS160
-- MET150
-- MOE150
-- BEA160
-ms.assetid: 0724b428-fb59-4962-8c37-6674166d7507
+- commerce_billing
+- PPM_jmueller
+search.appverid: MET150
 description: 了解如何解读 Microsoft 365 商业版的费用、帐单和付款信息或发票，以及如何更改采购订单号。
-ms.openlocfilehash: b89ca38bf5d7b1d82982668dcd98e9979f1657be
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.date: 05/04/2021
+ms.openlocfilehash: 9eb9d063b3634269600d5f6566e9e5f373ab08c2
+ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245012"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52280481"
 ---
 # <a name="understand-your-bill-or-invoice-for-microsoft-365-for-business"></a>了解你的 Microsoft 365 商业版账单或发票
 
 > [!IMPORTANT]
-> 自 2021 年 1 月 26 日起，比利时、法国、意大利、卢森堡、葡萄牙、西班牙和美国的客户将不再支持新的银行帐户。 如果你是其中一个国家/地区中的现有客户，你可以继续使用现有银行帐户支付订阅费用，并且你可以向它添加新订阅，但只要该银行帐户信誉良好。
+> 截至 2021 年 1 月 26 日，不再支持比利时、法国、意大利、卢森堡、葡萄牙、西班牙和美国客户的新银行账户。 如果你是其中一个国家/地区的现有客户，则可以继续使用现有银行帐户支付订阅，并且可以向其中添加新订阅（前提是该银行帐户的信誉良好）。
 
 不管是月度还是年度账单（取决于你在购买时的订阅选项），你将收到电子邮件，告知新的账单记录可在管理员中心查看。 [了解如何查找和查看账单或发票](view-your-bill-or-invoice.md)。
   
@@ -96,7 +93,7 @@ ms.locfileid: "52245012"
 |服务使用地址|表示正在使用服务的地址，通常与你的售达地址相同。 若要更新服务使用地址，请参阅[更改帐单邮寄地址](change-your-billing-addresses.md)。|
 |售达地址|你的公司名称和地址。若要更新此信息，请参阅[更改你组织的地址、技术联系人电子邮件和其他信息](../../admin/manage/change-address-contact-and-more.md)。  |
 |分类汇总|发票上列出的每个订阅都具有针对所有费用、折扣、贷项、分类汇总和税款的单独分类汇总行，以及所有针对该订阅的列。|
-|税款|发票的第 1 页显示税款总额。第 2 页显示所采用的税率，以及各行项目的税款总额。如果你的发票包含税款而你的公司是免税的，请[联系支持人员](../../admin/contact-support-for-business-products.md)。  |
+|税款|发票的第 1 页显示税款总额。第 2 页显示所采用的税率，以及各行项目的税款总额。如果你的发票包含税款而你的公司是免税的，请[联系支持人员](../../business-video/get-help-support.md)。  |
 |总计|发票计费周期的到期金额。|
 
 ## <a name="change-your-purchase-order-number"></a>更改采购订单编号
@@ -109,6 +106,7 @@ ms.locfileid: "52245012"
 ::: moniker range="o365-worldwide"
 
 1. 在管理中心中，转到“**计费**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">你的产品</a>”页面。
+
 ::: moniker-end
 
 ::: moniker range="o365-germany"
@@ -120,16 +118,16 @@ ms.locfileid: "52245012"
 ::: moniker range="o365-21vianet"
 
 1. 在管理中心中，转到“**计费**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">你的产品</a>”页面。
+
 ::: moniker-end
 
 1. 在“**产品**”选项卡上，选择要更改的订阅。
 
-1. 在订阅详细信息页面上的订阅 **和付款设置** 部分中，选择编辑 **发票**。 
+1. 在订阅详细信息页面上的订阅 **和付款设置** 部分中，选择编辑 **发票**。
 
 1. 在"编辑通过语音 **支付的详细信息"** 窗格底部，输入 PO 编号，然后选择"保存 **"。**
 
-## <a name="related-articles"></a>相关文章
+## <a name="related-content"></a>相关内容
 
-[支付 Microsoft 365 商业版订阅费用](pay-for-your-subscription.md)
-
-[Minecraft:Education Edition 付款方式](/education/windows/school-get-minecraft)
+[支付商业Microsoft 365订阅费用](pay-for-your-subscription.md) (文章) \
+[Minecraft:Education Edition 付款方式](/education/windows/school-get-minecraft)（文章）

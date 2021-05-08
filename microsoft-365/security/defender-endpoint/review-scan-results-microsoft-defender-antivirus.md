@@ -1,13 +1,13 @@
 ---
 title: 查看 Microsoft Defender AV 扫描的结果
-description: 使用 Microsoft Endpoint Configuration Manager、Microsoft Intune 或 Windows 安全中心应用查看扫描结果
+description: 使用应用、Microsoft Endpoint Configuration Manager或Microsoft Intune查看Windows 安全中心结果
 keywords: 扫描结果， 修正， 完全扫描， 快速扫描
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localization_priority: normal
+localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
@@ -15,14 +15,15 @@ ms.date: 09/28/2020
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 3b8a299f41541be878a9e9023ab330ea973646fd
-ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
+ms.topic: article
+ms.openlocfilehash: ec3dd2edc09d504af0ed76b17577130b1cdce1b7
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51764141"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52275368"
 ---
-# <a name="review-microsoft-defender-antivirus-scan-results"></a>查看 Microsoft Defender 防病毒扫描结果
+# <a name="review-microsoft-defender-antivirus-scan-results"></a>查看Microsoft Defender 防病毒扫描结果
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -31,12 +32,12 @@ ms.locfileid: "51764141"
 
 - [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
 
-Microsoft Defender 防病毒扫描完成后（无论是按需扫描还是计划扫描[](run-scan-microsoft-defender-antivirus.md)）后，将[](scheduled-catch-up-scans-microsoft-defender-antivirus.md)记录结果，你可以查看结果。 
+在Microsoft Defender 防病毒扫描完成后，无论是按需扫描还是计划扫描，将记录[](run-scan-microsoft-defender-antivirus.md)结果，并且您可以查看[](scheduled-catch-up-scans-microsoft-defender-antivirus.md)结果。 
 
 
 ## <a name="use-configuration-manager-to-review-scan-results"></a>使用 Configuration Manager 查看扫描结果
 
-请参阅 [如何监视 Endpoint Protection 状态](/configmgr/protect/deploy-use/monitor-endpoint-protection)。
+请参阅[如何监视Endpoint Protection状态](/configmgr/protect/deploy-use/monitor-endpoint-protection)。
 
 ## <a name="use-powershell-cmdlets-to-review-scan-results"></a>使用 PowerShell cmdlet 查看扫描结果
 
@@ -58,7 +59,7 @@ Get-MpThreat
 
 ![PowerShell 屏幕截图](images/defender/wdav-get-mpthreat.png)
 
-请参阅 [使用 PowerShell cmdlet](use-powershell-cmdlets-microsoft-defender-antivirus.md) 配置和运行 Microsoft Defender 防病毒和 [Defender cmdlet，](/powershell/module/defender/) 详细了解如何将 PowerShell 与 Microsoft Defender 防病毒一同使用。
+请参阅 [使用 PowerShell cmdlet 配置并运行 Microsoft Defender 防病毒软件](use-powershell-cmdlets-microsoft-defender-antivirus.md) 和 [Defender cmdlet](/powershell/module/defender/) ，了解有关如何通过 Microsoft Defender 防病毒软件使用 PowerShell 的信息。
 
 ## <a name="use-windows-management-instruction-wmi-to-review-scan-results"></a>使用 Windows Management Instruction (WMI) 查看扫描结果
 
@@ -67,5 +68,5 @@ Get-MpThreat
 
 ## <a name="related-articles"></a>相关文章
 
-- [自定义、启动和查看 Microsoft Defender 防病毒扫描和修正的结果](customize-run-review-remediate-scans-microsoft-defender-antivirus.md)
-- [Windows 10 中的 Microsoft Defender 防病毒](microsoft-defender-antivirus-in-windows-10.md)
+- [自定义、启动和查看扫描Microsoft Defender 防病毒修正的结果](customize-run-review-remediate-scans-microsoft-defender-antivirus.md)
+- [Microsoft Defender 防病毒Windows 10](microsoft-defender-antivirus-in-windows-10.md)

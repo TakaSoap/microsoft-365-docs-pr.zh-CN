@@ -7,7 +7,7 @@ ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localization_priority: normal
+localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
@@ -15,12 +15,13 @@ ms.date: 05/20/2020
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 3de9ddfc0cab12d2eea717c5d6b01e5b70b21213
-ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
+ms.topic: article
+ms.openlocfilehash: e0253c4ac7d92c91e3fda45681568d721645f2b0
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51765787"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52275380"
 ---
 # <a name="restore-quarantined-files-in-microsoft-defender-av"></a>在 Microsoft Defender AV 中还原隔离的文件
 
@@ -31,9 +32,9 @@ ms.locfileid: "51765787"
 
 - [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
 
-如果 Microsoft Defender 防病毒配置为检测和修正设备上的威胁，Microsoft Defender 防病毒将隔离可疑文件。 如果确定隔离文件不是威胁，可以还原它。
+如果Microsoft Defender 防病毒配置为检测和修正设备上的威胁，Microsoft Defender 防病毒隔离可疑文件。 如果确定隔离文件不是威胁，可以还原它。
 
-1. 打开 **Windows 安全。**
+1. 打开 **Windows 安全中心。**
 2. 选择 **病毒&威胁防护，** 然后单击保护 **历史记录**。
 3. 在所有最近项的列表中，筛选"**隔离项目"。**
 4. 选择要保留的项，然后执行还原等操作。
@@ -47,4 +48,4 @@ ms.locfileid: "51765787"
 - [查看扫描结果](review-scan-results-microsoft-defender-antivirus.md)
 - [根据文件名、扩展名和文件夹位置配置并验证排除项](configure-extension-file-exclusions-microsoft-defender-antivirus.md)
 - [配置并验证进程打开的文件的排除项](configure-process-opened-file-exclusions-microsoft-defender-antivirus.md)
-- [在 Windows Server 上配置 Microsoft Defender 防病毒排除项](configure-server-exclusions-microsoft-defender-antivirus.md)
+- [在 Microsoft Defender 防病毒 服务器上配置Windows排除项](configure-server-exclusions-microsoft-defender-antivirus.md)

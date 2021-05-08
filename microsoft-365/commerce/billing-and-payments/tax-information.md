@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: tugu
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -12,29 +13,30 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
-- commerce
-search.appverid:
-- MET150
-description: '了解你将为不同地区的 Microsoft 365 商业版订阅收取多少税款。 '
+search.appverid: MET150
+description: '了解在不同的地区购买商业版订阅Microsoft 365需要支付多少税款。 '
 ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
-ms.openlocfilehash: 11a7aa1e1825e41f463de17eebd676d8168a56d8
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+- commerce_billing
+- PPM_jmueller
+ms.date: 03/17/2021
+ms.openlocfilehash: fc1e2924a6b28c30841f890396d5d82ed2944bea
+ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50911706"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52280591"
 ---
 # <a name="tax-information"></a>税务信息
 
-购买 Microsoft 365 产品和服务时，所支付税款由以下两项之一决定：你的公司地址或送货地址（如果不同）。 如果您的组织位于美国，则必须向 FEIN 组织提供联邦 (号) 。
+购买Microsoft 365服务时，所支付税款由以下两项之一决定：您的业务地址或送货地址（如果不同）。 如果您的组织位于美国，则必须向 FEIN 组织提供联邦 (号) 。
 
 以下国家/地区的企业可以提供其 VAT 号码或本地等效项：
 
 :::row:::
     :::column:::
+
 - 亚美尼亚
 - 澳大利亚
 - 奥地利
@@ -99,13 +101,13 @@ ms.locfileid: "50911706"
 
 ## <a name="europe-the-middle-east-and-africa-emea"></a>欧洲、中东和非洲 (EMEA)
 
-在 EMEA 地区购买 Microsoft 365 服务时，此购买可能受 VAT Value-Added税款 () 。
+在 EMEA Microsoft 365购买服务时，此购买可能受 VAT Value-Added税款 () 。
   
 - 如果您位于欧盟成员国家/地区亚美尼亚、白俄罗斯、挪威、土耳其或阿拉伯联合酋长国，并且您不提供有效的当地 VAT ID，Microsoft Ireland Operations Ltd. 将基于您的帐户设置为的计费国家/地区应用当前的当地 VAT 税率。
 
 - 如果你位于列支敦士登、俄罗斯、塞尔维亚、南非或瑞士，则应用 VAT，无论你是否提供 VAT ID。
 
-- 对于欧盟客户，在我们可以验证 VAT ID 之前，它必须可用于在 VAT 信息交换系统 (VIES) 。 如果无法验证 VAT ID，请联系当地税务机构。
+- 对于欧盟客户，在我们可以验证 VAT ID 之前，它必须可用于 VAT 信息 Exchange System (VIES) 。 如果无法验证 VAT ID，请联系当地税务机构。
 
 如果符合以下条件，你可能有资格享受 VAT 零分级：
   
@@ -131,7 +133,7 @@ ms.locfileid: "50911706"
 
 在美国、加拿大、墨西哥、智利和哥伦比亚，根据产品性质和你的位置，各种税率适用。
   
-如果你的帐单由 Microsoft Corporation (查看你的发票 [) ，](view-your-bill-or-invoice.md) 并且你在美国、加拿大、波多黎各、智利和哥伦比亚之外注册了 Microsoft 365，则通常不收取税款。
+如果你的帐单由 Microsoft Corporation (查看你的发票[) ，](view-your-bill-or-invoice.md)并且你在美国、加拿大、波多黎各、智利和哥伦比亚之外的 Microsoft 365 注册，则通常不收取税款。
 
 ## <a name="add-your-vat-id"></a>添加 VAT ID
 
@@ -139,7 +141,7 @@ ms.locfileid: "50911706"
 2. 在“**产品**”选项卡上，选择要更新的订阅。
 3. 在订阅详细信息页面上的"服务使用地址"**部分**，选择"**编辑服务使用地址"。**
 4. 在" **编辑服务使用地址** "窗格的 **"VAT** 号码"框中，输入 VAT ID（包括前缀）且不带任何空格。
-5. 选择“**保存**”。
+5. 选择“保存”。
 
 ## <a name="how-taxes-are-calculated"></a>如何计算税款
 
@@ -155,7 +157,7 @@ ms.locfileid: "50911706"
 
 ## <a name="apply-for-tax-exempt-status"></a>申请免税身份
 
-如果你符合在你的市场中获得免税身份的资格，请启动服务[](/office365/admin/contact-support-for-business-products)请求，为组织建立免税状态。
+如果你符合在你的市场中获得免税身份的资格，请启动服务[](../../business-video/get-help-support.md)请求，为组织建立免税状态。
 
 |国家/地区或区域设置 | 文档 |
 |------------------|----------------|

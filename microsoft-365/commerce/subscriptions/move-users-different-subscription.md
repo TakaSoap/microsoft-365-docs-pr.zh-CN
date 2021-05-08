@@ -5,27 +5,28 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: micurn
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
 - M365-subscription-management
-- Adm_TOC
-- commerce
+- Adm_O365
 ms.custom:
 - AdminSurgePortfolio
 - manage_licenses
-search.appverid:
-- MET150
+- commerce_subscriptions
+- PPM_nicholak
+search.appverid: MET150
 description: 了解如何在订阅之间移动用户。
 ms.date: 07/01/2020
-ms.openlocfilehash: e0c6aabbdfd50fa66d846c76d317d940dc0cd819
-ms.sourcegitcommit: 0ff6edbf52562138a69c6675cb0274ec984986c3
+ms.openlocfilehash: 7adaa0eba1ccc06029ab5f4e1ada1d961155e66b
+ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "51615107"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52280471"
 ---
 # <a name="move-users-to-a-different-subscription"></a>将用户移动到其他订阅
 
@@ -72,6 +73,5 @@ ms.locfileid: "51615107"
 [向用户分配许可证](../../admin/manage/assign-licenses-to-users.md)
 [从订阅中删除许可证 (](../licenses/buy-licenses.md) 文章) \
 [手动更改计划](change-plans-manually.md) (文章) \
-[了解 Microsoft 365](../licenses/subscriptions-and-licenses.md) 商业版订阅和许可证 (文章) \
-[购买其他 Microsoft 365 商业版订阅 (](../try-or-buy-microsoft-365.md) 文章) 
-
+[了解适用于企业Microsoft 365中的 (订阅](../licenses/subscriptions-and-licenses.md)) \
+[购买另Microsoft 365商业版订阅 (](../try-or-buy-microsoft-365.md)文章) 

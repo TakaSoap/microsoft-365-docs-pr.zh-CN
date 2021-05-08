@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: jkinma
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -12,19 +13,20 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-search.appverid:
-- MET150
+search.appverid: MET150
 description: 了解哪些付款选项可用于通过计费配置文件为订阅付费。
 ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
-- commerce
-ms.openlocfilehash: be89c2d355202dd8ca8698ac735cbb384bb8ef06
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+- commerce_billing
+- PPM_jmueller
+ms.date: 04/02/2021
+ms.openlocfilehash: 00c1fdca0f1ba227dcd10dffb7c46b03618593e7
+ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51579766"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52280855"
 ---
 # <a name="how-to-pay-for-your-subscription-with-a-billing-profile"></a>如何使用计费配置文件支付订阅费用
 
@@ -62,6 +64,7 @@ ms.locfileid: "51579766"
  **从以下下拉菜单选择"帐单寄往地址"所在国家/地区。**
 
 > [!div class="op_single_selector"]
+>
 > - **选择所在的国家或地区**
 > - [阿富汗](../pay/afghanistan.md)
 > - [阿尔巴尼亚](../pay/albania.md)
@@ -217,7 +220,7 @@ ms.locfileid: "51579766"
 
 ## <a name="can-i-pay-my-invoice-online"></a>能否在线按发票支付？
 
-如果已针对帐单配置文件关闭定期计费，可以使用信用卡在线支付发票。 若要付款，请使用 Microsoft  365 管理中心发票上的"现在支付"按钮。 若要查找发票，请参阅 [查看帐单或发票](view-your-bill-or-invoice.md)。
+如果已针对帐单配置文件关闭定期计费，可以使用信用卡在线支付发票。 若要付款，请使用发票上的"现在支付"按钮，Microsoft 365管理中心。 若要查找发票，请参阅 [查看帐单或发票](view-your-bill-or-invoice.md)。
 
 ## <a name="can-i-change-from-my-current-payment-method-to-paying-by-invoice"></a>我能否从当前的付款方式更改为按发票付款？
 

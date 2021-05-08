@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解适用于 Microsoft Teams 的保留策略。
-ms.openlocfilehash: b7bc84307f0db580995e039618cb01d25d6ecd66
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: db167894f32bcc1e30054b9cc4738af300b6d704
+ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51932855"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52280795"
 ---
 # <a name="learn-about-retention-for-microsoft-teams"></a>了解用于 Microsoft Teams 的保留
 
@@ -163,13 +163,13 @@ Teams 使用 Azure 支持的聊天服务作为其所有消息 (聊天和频道�
 
 如果用户不编辑或删除信息，则保留结果的示例:
 
-- 第 5 天 (通常在第 3 天保留期开始后的 1-7 天):
+- 第 5 天(通常在第 2 天保留期开始后的 1-7 天):
     - 消息会移动到 SubstrateHolds 文件夹中，并在那里停留至少 1 天且仍可使用电子数据展示工具进行搜索。
 
 - 第 9 天 (通常是在 SubstrateHolds 文件夹中至少 1 天后的 1-7 天):
     - 永久删除该消息，然后电子数据展示就无法搜索到它们。
 
-正如该例子所示，尽管可以配置保留策略以在一天后删除消息，但该服务要经过多个过程以确保合规的删除。 因此，1 天后的删除操作可能需要 18 天才能将信息永久删除，以便在电子数据展示搜索中不再返回。
+正如该例子所示，尽管可以配置保留策略以在一天后删除消息，但该服务要经过多个过程以确保合规的删除。 因此，1 天后的删除操作可能需要 16 天才能将消息永久删除，以便在电子数据展示搜索中不再返回。
 
 ## <a name="skype-for-business-and-teams-interop-chats"></a>Skype for Business 和 Teams 互操作聊天
 
@@ -197,7 +197,7 @@ Teams 使用 Azure 支持的聊天服务作为其所有消息 (聊天和频道�
 
 ## <a name="limitations"></a>限制
 
-我们正在不断努力优化 Teams 中的保留功能。 同时，当对 Teams 频道消息和聊天使用保留策略时，要注意以下限制:
+我们正不断努力优化 Teams 中的保留功能。在此期间，如果对 Teams 频道消息和聊天使用保留策略，请注意以下限制：
 
 - **Outlook 错误显示的问题**。 如果为 Skype 或 Teams 位置创建保留策略，则当用户在 Outlook 桌面客户端中查看邮箱文件夹的属性时，这些策略中的某个策略将显示为默认文件夹策略。 这是 Outlook 中的错误显示问题，也是一个[已知问题](https://support.microsoft.com/help/4491013/outlook-client-displays-teams-or-skype-for-business-retention-policies)。 相反，应该看到应用于该文件夹邮箱的保留策略。 Skype 或 Teams 保留策略不适用于用户的邮箱。
 

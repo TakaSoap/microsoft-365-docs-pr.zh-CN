@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: jkinma
 audience: Admin
 ms.topic: article
 f1_keywords:
@@ -12,19 +13,22 @@ f1_keywords:
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
-- commerce
+- M365-subscription-management
+- Adm_O365
 ms.custom:
 - AdminSurgePortfolio
-search.appverid:
-- MET150
+- commerce_billing
+- PPM_jmueller
+search.appverid: MET150
 description: 了解如何阅读和了解 Microsoft 商业产品的账单或发票。
 keywords: 帐单帐户，组织信息，发票
-ms.openlocfilehash: 344877a4b97f5c77dc3381aa49d7bf0f60bd628e
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.date: 05/04/2021
+ms.openlocfilehash: 819db7eb999344d2736015dd766453c07f2ed86f
+ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244704"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52280831"
 ---
 # <a name="understand-your-bill-or-invoice"></a>了解你的帐单或发票
 
@@ -103,17 +107,13 @@ ms.locfileid: "52244704"
 发票可在线获得。 PDF发票和电子邮件通知均提供指向在线发票的链接。 在线发票是可扩展的，因此您可以查看发票上的费用并查看每个项目的更多详细信息。 在线发票包括：
 
 - **定价详细信息**&mdash;其他信息，包括有关折扣和产品定价的详细信息。
-
 - **在线付款**&mdash;您可以选择从发票在线付款。
-
 - **Azure成本管理**&mdash;对于Azure客户，在线发票包括指向Azure成本管理的链接。
 
 ### <a name="to-view-your-online-invoice"></a>查看在线发票
 
 1. 在管理中心，转到“**账单**”\> “<a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">账单和付款</a>”页。
-
 2. 要下载发票的.pdf版本，请在要查看的发票行中选择 **“下载发票PDF”**。
-
 3. 要查看您的在线发票，请从列表中选择一个发票。 您也可以从发票详细信息页面下载.pdf。
 
 ## <a name="invoice-faq"></a>发票常见问题解答
@@ -145,8 +145,8 @@ ms.locfileid: "52244704"
 
 Azure预付款仅适用于合格的Azure产品和服务作为付款方式。
 
-## <a name="need-help-contact-support"></a>需要帮助？ 请联系支持人员。
+## <a name="need-help-contact-support"></a>需要帮助？ 联系支持人员
 
 如果您对Azure信用有疑问或需要帮助，<a href="https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportrequest" target="_blank">请使用Azure支持创建支持请求</a>。
 
-如果您在Microsoft 365管理中心中对发票有疑问或需要帮助，[请与企业产品支持联系](../../admin/contact-support-for-business-products.md)。
+如果您在Microsoft 365管理中心中对发票有疑问或需要帮助，[请与企业产品支持联系](../../business-video/get-help-support.md)。

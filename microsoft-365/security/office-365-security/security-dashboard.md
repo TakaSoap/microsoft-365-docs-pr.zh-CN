@@ -3,7 +3,7 @@ title: 安全仪表板概述
 f1.keywords:
 - NOCSH
 ms.author: siosulli
-author: siosulli
+author: denisebmsft
 manager: dansimp
 audience: ITPro
 ms.topic: article
@@ -16,15 +16,15 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: 使用新的安全仪表板查看 Office 365 威胁防护状态，并查看和操作安全警报。
+description: 使用新的安全仪表板查看Office 365防护状态，并查看和操作安全警报。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 8c9a49b9b8fc1edd9b2928250e8cae135acb75f4
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: 71c077853c8dbb68b78c8073f650bcb2df4d1b9a
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52274408"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52246449"
 ---
 # <a name="security-dashboard"></a>安全仪表板
 
@@ -52,13 +52,13 @@ ms.locfileid: "52274408"
 
 ![安全仪表板 - 威胁管理摘要小组件](../../media/SecDash-ThreatMgmtSummary.png)
 
-你将在威胁管理摘要中看到的信息取决于订阅包括哪些内容。 下表介绍了包含的 Office 365 E3 和 Office 365 E5 的信息。
+你将在威胁管理摘要中看到的信息取决于订阅包括哪些内容。 下表介绍了 E3 和 E5 Office 365包含Office 365的信息。
 
 |Office 365 E3|Office 365 E5|
 |---|---|
 |恶意软件邮件被阻止<br>已阻止钓鱼邮件<br>用户报告的邮件<br><br><br><br>|恶意软件邮件被阻止<br>已阻止钓鱼邮件<br>用户报告的邮件<br>零日恶意软件被阻止<br>检测到高级钓鱼邮件<br>阻止恶意 URL|
 
-若要查看或访问"威胁管理摘要"小组件，必须有权查看适用于 Office 365 的 Defender 报告。 若要了解更多信息，[请参阅查看 Defender for Office 365 报告需要哪些权限？。](view-reports-for-mdo.md#what-permissions-are-needed-to-view-the-defender-for-office-365-reports)
+若要查看或访问威胁管理摘要小组件，你必须有权查看 Defender for Office 365报告。 若要了解更多信息，请参阅查看 Defender for Office 365[需要哪些权限？。](view-reports-for-mdo.md#what-permissions-are-needed-to-view-the-defender-for-office-365-reports)
 
 ## <a name="threat-protection-status"></a>威胁防护状态
 
@@ -66,14 +66,14 @@ ms.locfileid: "52274408"
 
 ![威胁防护状态小组件](../../media/tpswidget.png)
 
-详细信息取决于你的 Microsoft 365 订阅是否包含[Exchange Online Protection](exchange-online-protection-overview.md) (EOP) 是否包含 Microsoft Defender for Office [365。](defender-for-office-365.md)
+详细信息取决于你的 Microsoft 365 订阅是否[Exchange Online Protection (](exchange-online-protection-overview.md) EOP) [Microsoft Defender for Office 365。](defender-for-office-365.md)
 
 |如果你的订阅包括...|你将看到这些详细信息|
 |---|---|
 |EOP，但不是 Microsoft Defender for Office 365|EOP 检测到并阻止的恶意电子邮件。<p> 请参阅[威胁防护状态报告 (EOP) 。 ](view-email-security-reports.md#threat-protection-status-report)|
-|Microsoft Defender for Office 365|EOP 和 Defender for Office 365 检测并阻止的恶意内容和恶意电子邮件 <p> 包含反恶意软件引擎阻止的恶意内容、零时差自动清除和 Defender [](zero-hour-auto-purge.md)for Office 365 功能 (包括安全链接、安全附件和[](safe-links.md)Office [](safe-attachments.md) [365](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)安全防护中的反钓鱼功能) 的唯一电子邮件的聚合计数。 <p> 请参阅 [威胁防护状态报告](view-reports-for-mdo.md#threat-protection-status-report)。|
+|Microsoft Defender for Office 365|EOP 和 Defender 检测并阻止恶意内容和恶意Office 365 <p> 具有反恶意软件引擎阻止的恶意内容、零时差自动清除和 Defender[](zero-hour-auto-purge.md)的 Office 365 功能 (（包括[保险箱 链接](safe-links.md)[、保险箱](safe-attachments.md)附件和[Office 365](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)) 中的反网络钓鱼）的恶意邮件的聚合计数。 <p> 请参阅 [威胁防护状态报告](view-reports-for-mdo.md#threat-protection-status-report)。|
 
-若要查看或访问威胁防护状态小组件，你必须有权查看 Defender for Office 365 报告。 若要了解更多信息，请参阅 [查看 Defender for Office 365 报告需要哪些权限？](view-reports-for-mdo.md#what-permissions-are-needed-to-view-the-defender-for-office-365-reports)
+若要查看或访问"威胁防护状态"小组件，你必须有权查看 Defender 查看Office 365报告。 若要了解更多信息，请参阅查看 Defender for Office 365[报告需要哪些权限？](view-reports-for-mdo.md#what-permissions-are-needed-to-view-the-defender-for-office-365-reports)
 
 ## <a name="global-weekly-threat-detections"></a>全球每周威胁检测
 
@@ -87,7 +87,7 @@ ms.locfileid: "52274408"
 |---|---|
 |扫描的邮件|扫描的电子邮件数乘以收件人数|
 |威胁已停止|标识为包含恶意软件的电子邮件数乘以收件人数|
-|被 [Defender for Office 365 阻止](defender-for-office-365.md)|由 Defender for Office 365 阻止的电子邮件数乘以收件人数|
+|被[Defender 阻止Office 365](defender-for-office-365.md)|Defender 阻止的电子邮件数量Office 365数乘以收件人数|
 |在传递后删除|删除的邮件数乘以 [收件人数的零](zero-hour-auto-purge.md) 时差自动清除数|
 
 ## <a name="malware"></a>恶意软件
@@ -106,9 +106,9 @@ ms.locfileid: "52274408"
 
 ## <a name="threat-investigation-and-response"></a>威胁调查和响应
 
-如果你组织的订阅包括 Microsoft  [Defender for Office 365 计划 2，](office-365-ti.md)你的安全仪表板有一个包含高级威胁调查和响应工具的部分。 这些工具包括 [自动调查和响应功能](automated-investigation-response-office.md)。 自动调查和响应在诸如快速解决受损用户帐户等情况下 [很有用](address-compromised-users-quickly.md)。
+如果你组织的订阅包含 Microsoft [Defender for Office 365计划 2，](office-365-ti.md)你的安全仪表板有一个包含高级威胁调查和响应工具的部分。 这些工具包括 [自动调查和响应功能](automated-investigation-response-office.md)。 自动调查和响应在诸如快速解决受损用户帐户等情况下 [很有用](address-compromised-users-quickly.md)。
 
-若要了解更多信息，请参阅 [Office 365](office-365-air.md)中的自动调查和响应 (AIR) 入门。
+若要了解更多信息，请参阅 Office 365 中的自动调查和响应[ (AIR) 入门](office-365-air.md)Office 365。
 
 ## <a name="trends"></a>趋势
 
@@ -118,7 +118,7 @@ ms.locfileid: "52274408"
 
 此外，如果你组织的订阅包含[适用于 Office 365 计划 2](office-365-ti.md)的 Defender，则本部分中还将提供"最近使用的威胁管理警报"报告，使安全团队可以查看高优先级安全警报并采取措施。
 
-若要查看或访问"已发送和已接收电子邮件"小组件，必须有权查看 Defender for Office 365 报告。 若要了解更多信息，[请参阅查看 Defender for Office 365 报告需要哪些权限？。](view-reports-for-mdo.md#what-permissions-are-needed-to-view-the-defender-for-office-365-reports)
+若要查看或访问"已发送和已接收电子邮件"小组件，你必须有权查看 Defender for Office 365报告。 若要了解更多信息，请参阅查看 Defender for Office 365[需要哪些权限？。](view-reports-for-mdo.md#what-permissions-are-needed-to-view-the-defender-for-office-365-reports)
 
 若要查看或访问"最近的威胁管理警报"小组件，您必须具有查看警报的权限。 若要了解更多信息，请参阅 [查看警报所需的 RBAC 权限](../../compliance/alert-policies.md#rbac-permissions-required-to-view-alerts)。
 
@@ -126,8 +126,8 @@ ms.locfileid: "52274408"
 
 [查看安全与合规中心内的电子邮件安全报告](view-email-security-reports.md)
 
-[查看适用于 Office 365 的 Microsoft Defender 报告](view-reports-for-mdo.md)
+[查看 Microsoft Defender for Office 365](view-reports-for-mdo.md)
 
 [Defender for Office 365](defender-for-office-365.md)
 
-[Office 365 威胁调查和响应](office-365-ti.md)
+[Office 365威胁调查和响应](office-365-ti.md)

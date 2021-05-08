@@ -5,27 +5,33 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: jamitche
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
 ms.localizationpriority: Normal
 ms.collection:
-- commerce
-ms.custom: AdminSurgePortfolio
+- M365-subscription-management
+- Adm_O365
+ms.custom:
+- AdminSurgePortfolio
+- commerce_subscriptions
+- PPM_jmueller
 search.appverid: MET150
-description: 了解如何在 Microsoft 365 管理中心激活和管理第三方应用。
-ms.openlocfilehash: 457545282801829ca34de0318dd9eb7791866214
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+description: 了解如何在管理中心激活和管理第三Microsoft 365应用。
+ms.date: 04/15/2021
+ms.openlocfilehash: eece8154640dcdd55239511ed099abcdca39e807
+ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51860531"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52280519"
 ---
 # <a name="manage-third-party-app-subscriptions-for-your-organization"></a>管理组织的第三方应用订阅
 
-可以在新的 Microsoft 365 管理中心中管理第三方应用的许可证和帐单。 更新的功能包括增强订阅管理、改进了对计费信息的访问，以及提高了管理帐单的灵活性。 订阅管理基于 Microsoft 更新的商务平台。 这适用于客户直接从第三方提供商购买的软件即服务应用。
+可以在新的管理中心管理第三方应用的许可证Microsoft 365计费。 更新的功能包括增强订阅管理、改进了对计费信息的访问，以及提高了管理帐单的灵活性。 订阅管理基于 Microsoft 更新的商务平台。 这适用于客户直接从第三方提供商购买的软件即服务应用。
 
-可以在启用预览模式后，在 Microsoft 365 管理中心中管理第三方应用的许可证和帐单。 更新的功能包括增强订阅管理、改进了对计费信息的访问，以及提高了管理帐单的灵活性。 订阅管理基于 Microsoft 更新的商务平台。 这适用于客户直接购买或第三方提供商购买的软件即服务应用。
+可以在启用预览模式Microsoft 365管理中心中管理第三方应用的许可证和帐单。 更新的功能包括增强订阅管理、改进了对计费信息的访问，以及提高了管理帐单的灵活性。 订阅管理基于 Microsoft 更新的商务平台。 这适用于客户直接购买或第三方提供商购买的软件即服务应用。
 
 ## <a name="how-to-get-software-as-a-service-apps"></a>如何获取软件型服务应用
 
@@ -35,7 +41,7 @@ ms.locfileid: "51860531"
 - **合作伙伴购买** – 通过合作伙伴中心与合作伙伴合作购买订阅。
 - **Microsoft 建议** – 响应来自 Microsoft 销售部门（包括第三方应用）的建议。
 
-客户购买应用并接受 Microsoft 客户协议后，可以在 Microsoft 365 管理中心或适用于企业 Microsoft Store 中管理它们。
+客户购买应用并接受 Microsoft 客户协议后，可以在管理中心Microsoft 365或适用于企业的 Microsoft Store。
 
 应用提供商通过统一费率或为用户购买许可证来销售他们的应用。
 
@@ -65,13 +71,13 @@ ms.locfileid: "51860531"
 
 1. In the admin center， go to the **Billing**  >  **Your products**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2125823" target="_blank">Apps</a> page.
 2. 查找并选择要管理的应用。
-3. 在 **"&操作"下**，选择 **发布者门户中的"管理"。**
+3. 在 **设置 &操作"下**，选择 **发布者门户中的"管理"。**
 
 你将定向到应用发布者的网站，可在其中激活应用。
 
 ## <a name="manage-third-party-apps"></a>管理第三方应用
 
-管理员在两个位置管理第三方应用：Microsoft 365 管理中心和第三方应用提供商门户。
+管理员在两个位置管理第三方应用：Microsoft 365管理中心和第三方应用提供商的门户。
 
 以下是您可以在每个门户中执行哪些操作。
 
@@ -83,11 +89,11 @@ ms.locfileid: "51860531"
 
 ## <a name="assign-licenses"></a>分配许可证
 
-管理员需要在将第三方应用分配给用户之前激活它们。 它们将在第三方发布者的门户中激活。 在应用页面上的"设置 **&操作"** 下，选择用于分配许可证的链接。
+管理员需要在将第三方应用分配给用户之前激活它们。 它们将在第三方发布者的门户中激活。 在应用页面上的"设置 &**操作"** 下，选择用于分配许可证的链接。
 
 1. In the admin center， go to the **Billing**  >  **Your products**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2125823" target="_blank">Apps</a> page.
 2. 查找并选择要管理的应用。
-3. 在 **"&操作"** 下，选择发布者 **门户中管理的链接**。
+3. 在 **设置 &操作**"下，选择在 **发布者门户中管理的链接**。
 
 ## <a name="change-license-quantity"></a>更改许可证数量
 
@@ -99,7 +105,7 @@ ms.locfileid: "51860531"
 
 ## <a name="manage-payment-methods"></a>管理支付方式
 
-每个软件即服务应用都分配有一个计费配置文件。 通过计费配置文件，你可以自定义发票中包含的产品以及如何支付发票费用。 包括：
+每个软件即服务应用都分配有一个计费配置文件。 通过计费配置文件，你可以自定义发票中包含的产品以及如何支付发票费用。 它们包括：
 
 - **付款方式** - 信用卡或支票/支票转移
 - **联系人信息** – 帐单邮寄地址和联系人姓名
@@ -121,4 +127,4 @@ ms.locfileid: "51860531"
 
 1. In the admin center， go to the **Billing**  >  **Your products**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2125823" target="_blank">Apps</a> page.
 2. 查找并选择要管理的应用。
-3. 在 **"设置&操作"下**，选择"**取消订阅"。**
+3. 在 **"设置 &操作"** 下，选择"**取消订阅"。**

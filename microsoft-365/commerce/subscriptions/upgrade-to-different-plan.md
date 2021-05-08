@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: jkinma
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -12,20 +13,20 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_NonTOC
-- commerce
 ms.custom:
 - SaRA
 - AdminSurgePortfolio
-search.appverid:
-- MET150
+- commerce_subscriptions
+- PPM_jmueller
+search.appverid: MET150
 description: 了解如何升级到其他计划。
-ms.openlocfilehash: c8d71e6ab79bfea35334f2c034dbc13f60397227
-ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
+ms.date: 04/21/2021
+ms.openlocfilehash: d9adf8bb18279d5057278a7c55cd751838325bc2
+ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "51939168"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52280435"
 ---
 # <a name="upgrade-to-a-different-plan"></a>升级到其他计划
 
@@ -36,20 +37,13 @@ ms.locfileid: "51939168"
 使用" **升级"** 选项卡时，将引导你完成购买新计划的过程。 新计划中会自动为所有用户分配许可证，并且你的旧计划将被取消。
 
 1. In the Admin center， go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
-
 2. 选择要升级的订阅。
-
 3. 在订阅详细信息页面上， **选择升级**。
-
 4. 找到要升级到的计划，然后选择"升级 **"** 按钮。
-
 5. 输入所需的许可证数量，选择是每月支付还是整年支付，然后选择"**转到结帐"。**
-
     > [!NOTE]
     > 请确保你购买足够的许可证来覆盖所有用户。
-
 6. 下一页上，按此顺序验证 **"售达地址**"、"计费 **到** 信息"**和"项目"。** 可以在此步骤中更改默认付款方式。 如果需要进行更改，请选择适用 **部分旁边的"** 更改"。
-
 7. 完成后，选择下 **订单**。
 
 完成签出后，可能需要几分钟才能完成升级。 你可以立即开始使用新订阅。 选择 **"检查升级** 状态"以检查升级进度。 升级完成后，您将收到通知。 通知显示在新订阅旁边的 **"你的** 产品"页面上。
@@ -62,7 +56,7 @@ ms.locfileid: "51939168"
 
 使用" **升级"** 选项卡时，将基于当前计划中的服务显示可升级到的计划。 只能使用 **"升级"** 选项卡移动到具有相同数据相关服务的计划，或移动到较高版本。 这可确保用户在更改期间不会丢失与这些服务相关的数据。
 
-如果要移动到服务较少的计划，可以手动更改计划，或[致电支持](../../admin/contact-support-for-business-products.md)人员寻求帮助。 [](change-plans-manually.md)
+如果要移动到服务较少的计划，可以手动更改计划，或[致电支持](../../business-video/get-help-support.md)人员寻求帮助。 [](change-plans-manually.md)
 
 ## <a name="i-only-want-to-upgrade-some-of-my-users-how-do-i-do-that"></a>我只需要升级部分用户。 如何执行？
 
@@ -80,43 +74,43 @@ ms.locfileid: "51939168"
 
 ### <a name="why-are-there-no-plans-listed-to-upgrade"></a>为什么没有列出要升级的计划？
 
-#### <a name="you-cant-upgrade-subscriptions-now-because-you-have-more-users-than-licenses"></a>现在无法升级订阅，因为用户数多于许可证数。
+#### <a name="you-cant-upgrade-subscriptions-now-because-you-have-more-users-than-licenses"></a>现在无法升级订阅，因为用户数多于许可证数
 
-若要自动升级计划，需要为所有用户分配有效许可证。 如果你分配的许可证多于你已购买的许可证，你将在许可证页面上看到一条警报，指出你<a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank"></a>具有需要解决的许可冲突。 [了解如何解决许可证冲突](../../commerce/licenses/buy-licenses.md)。 解决任何许可冲突后，应看到"升级"选项卡 **上列出的计划** 。如果没有更改，可以 [手动更改计划](change-plans-manually.md)，或 [致电支持人员](../../admin/contact-support-for-business-products.md)。
+若要自动升级计划，需要为所有用户分配有效许可证。 如果你分配的许可证多于你已购买的许可证，你将在许可证页面上看到一条警报，指出你<a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank"></a>具有需要解决的许可冲突。 [了解如何解决许可证冲突](../../commerce/licenses/buy-licenses.md)。 解决任何许可冲突后，应看到"升级"选项卡 **上列出的计划** 。如果没有更改，可以 [手动更改计划](change-plans-manually.md)，或 [致电支持人员](../../business-video/get-help-support.md)。
 
-#### <a name="you-cant-upgrade-subscriptions-right-now-because-this-subscription-isnt-fully-set-up-or-the-service-isnt-available"></a>由于此订阅未完全设置或服务不可用，你当前无法升级订阅。
+#### <a name="you-cant-upgrade-subscriptions-right-now-because-this-subscription-isnt-fully-set-up-or-the-service-isnt-available"></a>由于此订阅未完全设置或服务不可用，你当前无法升级订阅
 
 例如，如果其中一个服务发生了事件，则在所有服务正常运行之前将无法升级。 若要了解是否有设置或服务运行状况问题，请转到管理中心中的" **运行状况** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842900" target="_blank">服务运行状况"</a> 页。
 
-如果发现服务未完全设置或存在服务运行状况问题，请等待几小时，待服务可用再重试。 如果仍有问题，请致电 [支持人员](../../admin/contact-support-for-business-products.md)。
+如果发现服务未完全设置或存在服务运行状况问题，请等待几小时，待服务可用再重试。 如果仍有问题，请致电 [支持人员](../../business-video/get-help-support.md)。
 
-#### <a name="you-cant-upgrade-plans-because-another-plan-is-in-the-process-of-being-upgraded-or-is-pending-a-credit-check"></a>无法升级计划，因为另一个计划正在升级或正在等待信用检查。
+#### <a name="you-cant-upgrade-plans-because-another-plan-is-in-the-process-of-being-upgraded-or-is-pending-a-credit-check"></a>由于其他计划正在升级或正在等待信用检查，因此无法升级计划
 
 在升级计划之前等待，直到完成信用检查。 信用检查可能需要耗时长达 2 个工作日。
 
-#### <a name="currently-this-subscription-is-not-eligible-to-upgrade"></a>目前，此订阅不符合升级条件。
+#### <a name="currently-this-subscription-is-not-eligible-to-upgrade"></a>目前，此订阅不符合升级条件
 
-你可以手动 [更改计划或](change-plans-manually.md) 致电 [支持人员](../../admin/contact-support-for-business-products.md)。
+你可以手动 [更改计划或](change-plans-manually.md) 致电 [支持人员](../../business-video/get-help-support.md)。
 
-#### <a name="i-see-a-different-message-than-whats-listed-here"></a>我看到一条不同于此处所列的消息。
+#### <a name="i-see-a-different-message-than-whats-listed-here"></a>我所看到的消息与此处列出的邮件不同
 
-你可以手动 [更改计划或](change-plans-manually.md) 致电 [支持人员](../../admin/contact-support-for-business-products.md)。
+你可以手动 [更改计划或](change-plans-manually.md) 致电 [支持人员](../../business-video/get-help-support.md)。
 
 ### <a name="additional-reasons-you-cant-upgrade"></a>无法升级的其他原因
 
 #### <a name="you-have-two-or-more-plans-for-the-same-product"></a>针对同一产品有两个或多个计划
 
-只有当所有用户订阅同 **一个** 计划时，才能使用"升级"选项卡。 例如，如果你有两个 Microsoft 365 商业标准版计划，则不能自动将其中一个计划升级到另一个计划。
+只有当所有用户订阅同 **一个** 计划时，才能使用"升级"选项卡。 例如，如果你有两个Microsoft 365 商业标准版计划，则不能自动将其中一个计划升级到另一个计划。
 
 #### <a name="you-have-a-prepaid-plan"></a>你拥有预付费计划
 
 如果你已提前支付订阅费用，你或许可以 [手动更改计划](change-plans-manually.md)。 但是，如果在当前计划过期之前升级计划，将不会收到当前订阅的剩余未使用时间信用。
 
-也可以致电 [支持人员](../../admin/contact-support-for-business-products.md) 寻求帮助。
+也可以致电 [支持人员](../../business-video/get-help-support.md) 寻求帮助。
 
 #### <a name="you-have-a-government-or-non-profit-plan"></a>你有政府版或非营利组织版计划
 
-如果你有政府或非营利组织计划，可以手动更改[计划或](change-plans-manually.md)[致电支持](../../admin/contact-support-for-business-products.md)人员寻求帮助。
+如果你有政府或非营利组织计划，可以手动更改[计划或](change-plans-manually.md)[致电支持](../../business-video/get-help-support.md)人员寻求帮助。
 
 #### <a name="the-subscription-that-you-want-to-upgrade-from-has-a-temporary-issue"></a>想要升级的订阅有一个临时问题
 
@@ -126,7 +120,7 @@ ms.locfileid: "51939168"
 
 升级计划时，可供您升级的计划将基于当前计划中的服务显示。 只能升级到具有与数据相关的相同服务（如 Exchange Online 或 SharePoint Online）的计划，或升级到这些服务的更高版本。 这可确保用户在 \' 升级过程中不会丢失与这些服务相关的数据。
 
-如果你的计划不符合自动升级计划资格，你或许可以改为 [手动更改](change-plans-manually.md)计划。 也可以致电 [支持人员](../../admin/contact-support-for-business-products.md) 寻求帮助。
+如果你的计划不符合自动升级计划资格，你或许可以改为 [手动更改](change-plans-manually.md)计划。 也可以致电 [支持人员](../../business-video/get-help-support.md) 寻求帮助。
 
 #### <a name="your-subscription-has-an-add-on"></a>你的订阅具有加载项
 
@@ -142,19 +136,19 @@ ms.locfileid: "51939168"
 
 ### <a name="access-to-services"></a>对服务的访问
 
- **升级** 计划期间，管理员将不能使用管理中心。 这最多需要一小时的时间。
+**升级** 计划期间，管理员将不能使用管理中心。 这最多需要一小时的时间。
   
- **用户** 不会遇到服务中断情形。 在升级完全完成之前，他们将继续拥有现有服务。
+**用户** 不会遇到服务中断情形。 在升级完全完成之前，他们将继续拥有现有服务。
   
 ### <a name="users-and-licenses"></a>用户和许可证
 
 旧订阅的用户将自动移至新订阅。
   
-如果旧订阅包含多个服务，并且你已更改用户分配到的这些服务，你可能想要在升级计划之前记下这一点，以便以后可以重新创建这些更改。 所有用户都将被授予新订阅中所有服务的访问权限。 例如，如果你之前为全部 100 个用户购买了 Microsoft 365 商业高级版，但其中 50 个用户未分配 SharePoint Online 服务，则升级计划后不会保留此更改。
+如果旧订阅包含多个服务，并且你已更改用户分配到的这些服务，你可能想要在升级计划之前记下这一点，以便以后可以重新创建这些更改。 所有用户都将被授予新订阅中所有服务的访问权限。 例如，如果你之前为全部 100 个用户购买了 Microsoft 365 商业高级版，但从其中 50 个用户取消分配 SharePoint Online 服务，则升级计划后不会保留此更改。
   
 如果在升级计划之前拥有多个订阅，并且向用户分配了多个订阅的许可证，则此分配模式将尽可能保留在新订阅中。
   
-升级过程中将保留所有用户数据，包括 Exchange 邮箱和 SharePoint Online 文档、列表和其他信息。
+升级过程中将保留所有用户数据，包括Exchange邮箱SharePoint联机文档、列表和其他信息。
   
 ### <a name="billing"></a>计费
 
@@ -167,10 +161,9 @@ ms.locfileid: "51939168"
 
 ## <a name="call-support-to-help-you-upgrade-plans"></a>致电支持人员，帮助你升级计划
 
-[致电 Microsoft 支持人员](../../admin/contact-support-for-business-products.md)
+[致电 Microsoft 支持人员](../../business-video/get-help-support.md)
 
-## <a name="related-articles"></a>相关文章
+## <a name="related-content"></a>相关内容
 
-[手动更改计划](change-plans-manually.md)
-
-[在切换 Microsoft 365 商业版计划之前备份数据](back-up-data-before-switching-plans.md)
+[手动更改计划](change-plans-manually.md) (文章) \
+[在切换业务Microsoft 365之前备份数据 (](back-up-data-before-switching-plans.md)文章) 

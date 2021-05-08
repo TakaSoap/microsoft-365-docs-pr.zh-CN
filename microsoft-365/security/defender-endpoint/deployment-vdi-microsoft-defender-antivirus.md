@@ -1,12 +1,12 @@
 ---
 title: Microsoft Defender 防病毒虚拟桌面基础结构部署指南
-description: 了解如何在虚拟桌面环境中部署 Microsoft Defender 防病毒，以在保护和性能之间实现最佳平衡。
+description: 了解如何在虚拟Microsoft Defender 防病毒部署应用程序，以在保护和性能之间实现最佳平衡。
 keywords: vdi， hyper-v， vm， 虚拟机， windows defender， 防病毒， av， 虚拟桌面， rds， 远程桌面
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
-localization_priority: normal
+localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
@@ -14,12 +14,13 @@ ms.date: 12/28/2020
 ms.reviewer: jesquive
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: fed66586dc0607989e407ecd790d2af8c40e2939
-ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
+ms.topic: article
+ms.openlocfilehash: 4ecd14e055646804d81e22da7c192988cf1e6f6f
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51765727"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52275248"
 ---
 # <a name="deployment-guide-for-microsoft-defender-antivirus-in-a-virtual-desktop-infrastructure-vdi-environment"></a>虚拟桌面基础结构 （VDI） 环境中 Microsoft Defender 防病毒软件的部署指南
 
@@ -30,11 +31,11 @@ ms.locfileid: "51765727"
 
 - [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
 
-除了标准本地配置或硬件配置之外，还可以在远程桌面 (RDS) 或虚拟桌面基础结构 (VDI) 使用 Microsoft Defender 防病毒。
+除了标准本地配置或硬件配置之外，还可以在远程桌面 (RDS) 或虚拟桌面基础结构 Microsoft Defender 防病毒 VDI (环境中使用) 。
 
-有关 [Microsoft 远程桌面](/azure/virtual-desktop) 服务和 VDI 支持的更多详细信息，请参阅 Windows 虚拟桌面文档。
+有关[Microsoft 远程桌面](/azure/virtual-desktop)服务和 VDI 支持的更多详细信息，请参阅Windows虚拟桌面文档。
 
-有关基于 Azure 的虚拟机，请参阅[在 Azure Defender 中安装 Endpoint Protection。](/azure/security-center/security-center-install-endpoint-protection)
+对于基于 Azure 的虚拟机，请参阅在[Azure Defender Endpoint Protection安装虚拟机](/azure/security-center/security-center-install-endpoint-protection)。
 
 由于能够轻松地将更新部署到在 VDIs 中运行的 VM，我们缩短了本指南，侧重于如何快速轻松地获取计算机更新。 你不再需要定期创建和密封黄金映像，因为更新会扩展到主机服务器上其组件位，然后在虚拟机打开时直接下载到虚拟机。
 
@@ -48,14 +49,14 @@ ms.locfileid: "51765727"
 - [扫描过期的计算机或已脱机一段时间的计算机](#scan-vms-that-have-been-offline)
 - [应用排除项](#exclusions)
 
-还可以下载虚拟桌面基础结构上的白皮书 [Microsoft Defender 防病毒](https://demo.wd.microsoft.com/Content/wdav-testing-vdi-ssu.pdf)，该白皮书将查看新的共享安全智能更新功能，以及性能测试和有关如何在你自己的 VDI 上测试防病毒性能的指导。
+还可以下载虚拟桌面基础结构上的白皮书[Microsoft Defender 防病毒，](https://demo.wd.microsoft.com/Content/wdav-testing-vdi-ssu.pdf)该白皮书将查看新的共享安全智能更新功能，以及性能测试和有关如何在你自己的 VDI 上测试防病毒性能的指导。
 
 > [!IMPORTANT]
-> 尽管 VDI 可以托管在 Windows Server 2012 或 Windows Server 2016 上，但由于保护技术和功能在早期版本的 Windows 中不可用，虚拟机 (VM) 至少应运行 Windows 10 1607。<br/>Microsoft Defender AV 在 Windows 10 Insider Preview 版本 18323 版本 18323 (及更高版本中的虚拟机上的操作方式有一些性能和) 。 如果你需要使用 Insider Preview 版本，我们将在本指南中确定;如果未指定，则获得最佳保护和性能的最低必需版本为 Windows 10 1607。
+> 尽管 VDI 可以托管在 Windows Server 2012 或 Windows Server 2016 上，但虚拟机 (VM) 至少应运行 Windows 10，1607，因为保护技术和功能在 Windows 早期版本中不可用。<br/>Microsoft Defender AV 在 Windows 10 Insider Preview 内部版本 18323 (及更高版本中的虚拟机上的操作方式有一些性能和) 。 如果你需要使用 Insider Preview 版本，我们将在本指南中确定;如果未指定，则最佳保护和性能的最低必需版本为 Windows 10 1607。
 
 ## <a name="set-up-a-dedicated-vdi-file-share"></a>设置专用的 VDI 文件共享
 
-在 Windows 10 版本 1903 中，我们引入了共享安全智能功能，该功能将下载的安全智能更新的解包卸载到主机上，从而节省各个计算机上以前的 CPU、磁盘和内存资源。 此功能已被备份，现在适用于 Windows 10 版本 1703 及以上版本。 可以使用组策略或 PowerShell 设置此功能。
+在 Windows 10 版本 1903 中，我们引入了共享安全智能功能，该功能将下载的安全智能更新的解包卸载到主机上，从而节省各个计算机上以前的 CPU、磁盘和内存资源。 此功能已进行备份，现在适用于 Windows 10版本 1703 及以上版本。 可以使用组策略或 PowerShell 设置此功能。
 
 ### <a name="use-group-policy-to-enable-the-shared-security-intelligence-feature"></a>使用组策略启用共享安全智能功能：
 
@@ -65,7 +66,7 @@ ms.locfileid: "51765727"
 
 3. 单击 **"管理模板"。**
 
-4. 将树展开到 **Windows 组件** Microsoft Defender  >  **防病毒**  >  **安全智能更新**。
+4. 展开树以 **Windows安全** Microsoft Defender 防病毒  >    >  **更新的组件**。
 
 5. 双击定义 **VDI 客户端的安全智能** 位置，然后将选项设置为 **已启用**。 将自动显示一个字段。
 
@@ -144,7 +145,7 @@ cmd /c "cd $vdmpath & c: & mpam-fe.exe /x"
 
 除了实时保护和扫描之外，计划的 [扫描也运行](configure-real-time-protection-microsoft-defender-antivirus.md)。
 
-扫描本身的开始时间仍基于计划扫描策略 (**ScheduleDay、ScheduleTime** 和 **ScheduleQuickScanTime**) 。  随机化将导致 Microsoft Defender 防病毒从为计划扫描设置的时间起，在 4 小时时段内在每台计算机中启动扫描。
+扫描本身的开始时间仍基于计划扫描策略 (**ScheduleDay、ScheduleTime** 和 **ScheduleQuickScanTime**) 。  随机化将导致Microsoft Defender 防病毒从计划扫描设置的时间起，在 4 小时时段内在每台计算机中启动扫描。
 
 有关 [可用于计划](scheduled-catch-up-scans-microsoft-defender-antivirus.md) 扫描的其他配置选项，请参阅计划扫描。
 
@@ -152,7 +153,7 @@ cmd /c "cd $vdmpath & c: & mpam-fe.exe /x"
 
 可以指定在计划扫描期间应执行的扫描类型。 快速扫描是首选方法，因为它们旨在查找恶意软件需要驻留的所有位置以处于活动状态。 以下过程介绍如何使用组策略设置快速扫描。
 
-1. 在组策略编辑器中，转到管理 **模板**  >  **Windows 组件** Microsoft Defender  >  **防病毒**  >  **扫描**。
+1. 在组策略编辑器中，转到"管理 **模板** Windows  >  **组件Microsoft Defender 防病毒**  >    >  **扫描"。**
 
 2. 选择 **"指定要用于计划扫描** 的扫描类型"，然后编辑策略设置。
 
@@ -160,26 +161,26 @@ cmd /c "cd $vdmpath & c: & mpam-fe.exe /x"
 
 4. 选择“**确定**”。 
 
-5. 像通常一样部署组策略对象。
+5. 如通常一样部署组策略对象。
 
 ## <a name="prevent-notifications"></a>阻止通知
 
-有时，Microsoft Defender 防病毒通知可能会发送到多个会话或跨多个会话保留。 为了尽可能减小此问题，你可以锁定 Microsoft Defender 防病毒用户界面。 以下过程介绍如何使用组策略禁止通知。
+有时，Microsoft Defender 防病毒多个会话发送通知或保留通知。 为了最大程度地减小此问题，您可以锁定Microsoft Defender 防病毒用户界面。 以下过程介绍如何使用组策略禁止通知。
 
-1. 在组策略编辑器中，转到 **Windows 组件**  >  **Microsoft Defender 防病毒**  >  **客户端接口**。
+1. 在组策略编辑器中，转到Windows **客户端** Microsoft Defender 防病毒  >    >  **组件。**
 
 2. 选择 **"取消所有通知** "，然后编辑策略设置。 
 
 3. 将策略设置为 **"已启用"，** 然后选择"确定 **"。**
 
-4. 像通常一样部署组策略对象。
+4. 如通常一样部署组策略对象。
 
-当扫描完成或采取修正操作时，禁止通知可防止来自 Microsoft Defender 防病毒的通知显示在 Windows 10 上的操作中心中。 但是，安全运营团队将在 Microsoft Defender 安全中心中查看扫描 [https://securitycenter.windows.com](https://securitycenter.windows.com) () 。
+禁止通知可Microsoft Defender 防病毒扫描或采取修正操作时，Windows 10在操作中心中显示通知。 但是，安全运营团队将在安全中心内看到 [https://securitycenter.windows.com](https://securitycenter.windows.com) Microsoft Defender 安全中心 () 。
 
 > [!TIP]
-> 若要在 Windows 10 上打开操作中心，请执行以下步骤之一：
+> 若要在操作中心Windows 10，请执行以下步骤之一：
 > - 在任务栏的右侧，选择操作中心图标。
-> - 按 Windows 徽标键按钮 + A。
+> - 按Windows键按钮 + A。
 > - 在触摸屏设备上，从屏幕的右边缘轻扫。
 
 ## <a name="disable-scans-after-an-update"></a>更新后禁用扫描
@@ -189,7 +190,7 @@ cmd /c "cd $vdmpath & c: & mpam-fe.exe /x"
 > [!IMPORTANT]
 > 在更新后运行扫描有助于确保 VM 受最新安全智能更新的保护。 禁用此选项将降低 VM 的保护级别，并且应仅在首次创建或部署基本映像时使用。
 
-1. 在组策略编辑器中，转到 **Windows 组件**  >  **Microsoft Defender 防病毒**  >  **安全智能更新**。
+1. 在组策略编辑器中，转到Windows **安全** Microsoft Defender 防病毒  >    >  **更新的组件**。
 
 2. 选择 **"在安全智能更新后启用扫描"，** 然后编辑策略设置。
 
@@ -197,13 +198,13 @@ cmd /c "cd $vdmpath & c: & mpam-fe.exe /x"
 
 4. 选择“**确定**”。
 
-5. 像通常一样部署组策略对象。
+5. 如通常一样部署组策略对象。
 
 此策略阻止扫描在更新后立即运行。
 
 ## <a name="scan-vms-that-have-been-offline"></a>扫描已脱机的 VM
 
-1. 在组策略编辑器中，转到 **Windows 组件** Microsoft  >  **Defender 防病毒**  >  **扫描**。
+1. 在组策略编辑器中，转到"Windows **扫描Microsoft Defender 防病毒**  >    >  **组件"。**
 
 2. 选择 **"打开捕获快速扫描"，** 然后编辑策略设置。
 
@@ -217,7 +218,7 @@ cmd /c "cd $vdmpath & c: & mpam-fe.exe /x"
 
 ## <a name="enable-headless-ui-mode"></a>启用无头 UI 模式
 
-1. 在组策略编辑器中，转到 **Windows 组件**  >  **Microsoft Defender 防病毒**  >  **客户端接口**。
+1. 在组策略编辑器中，转到Windows **客户端** Microsoft Defender 防病毒  >    >  **组件。**
 
 2. 选择 **启用无头 UI 模式** 并编辑策略。
 
@@ -227,16 +228,16 @@ cmd /c "cd $vdmpath & c: & mpam-fe.exe /x"
 
 5. 像通常一样部署组策略对象。
  
-此策略对组织中最终用户隐藏整个 Microsoft Defender 防病毒用户界面。
+此策略对Microsoft Defender 防病毒最终用户隐藏整个用户界面。
 
 ## <a name="exclusions"></a>排除项
 
 可以添加、删除或自定义排除项，以满足你的需求。
 
-有关详细信息，请参阅在 [Windows Server 上配置 Microsoft Defender 防病毒排除项](configure-exclusions-microsoft-defender-antivirus.md)。
+有关详细信息，请参阅 Configure [Microsoft Defender 防病毒 exclusions on Windows Server。](configure-exclusions-microsoft-defender-antivirus.md)
 
 ## <a name="additional-resources"></a>其他资源
 
-- [技术社区博客：为非永久性 VDI 计算机配置 Microsoft Defender 防病毒](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/configuring-microsoft-defender-antivirus-for-non-persistent-vdi/ba-p/1489633)
+- [Tech Community 博客：Microsoft Defender 防病毒非永久性 VDI 计算机配置设备](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/configuring-microsoft-defender-antivirus-for-non-persistent-vdi/ba-p/1489633)
 - [远程桌面服务和 VDI 上的 TechNet 论坛](https://social.technet.microsoft.com/Forums/windowsserver/en-US/home?forum=winserverTS)
 - [SignatureDownloadCustomTask PowerShell 脚本](https://www.powershellgallery.com/packages/SignatureDownloadCustomTask/1.4)

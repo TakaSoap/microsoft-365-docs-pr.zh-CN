@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: jkinma
 audience: Admin
 ms.topic: article
 f1_keywords:
@@ -16,16 +17,17 @@ ms.collection:
 - Adm_O365
 ms.custom:
 - AdminSurgePortfolio
-- Commerce
-search.appverid:
-- MET150
+- commerce_billing
+- PPM_jmueller
+search.appverid: MET150
 description: 了解计费配置文件如何支持发票。
-ms.openlocfilehash: 7f4c0aed1bccd0e5df5b09e15e6201933e937993
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.date: 04/02/2021
+ms.openlocfilehash: 57786df370246c2b4fda556a9c48eb828db1cb4f
+ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51576945"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52280783"
 ---
 # <a name="understand-billing-profiles"></a>了解计费配置文件
 
@@ -47,32 +49,28 @@ ms.locfileid: "51576945"
 
 帐单配置文件上的角色具有控制购买以及查看和管理发票的权限。 向跟踪、组织和支付发票的用户分配这些角色，例如组织中采购团队成员。
 
-| Role                          | 说明                                                                       |
-|-----------------------------  |---------------------------------------------------------------------------------  |
-| 计费配置文件所有者         | 管理计费配置文件的所有内容                                           |
-| 计费配置文件参与者   | 管理计费配置文件中的权限之外的所有内容                         |
-| 计费配置文件读取器        | 帐单配置文件中所有项的只读视图                                 |
-| 发票管理器               | 查看和支付帐单，并且对帐单配置文件中所有内容具有只读视图   |
+| 角色                         | 说明                                                                      |
+|----------------------------- |--------------------------------------------------------------------------------- |
+| 计费配置文件所有者        | 管理计费配置文件的所有内容                                          |
+| 计费配置文件参与者  | 管理计费配置文件中的权限之外的所有内容                        |
+| 计费配置文件读取器       | 帐单配置文件中所有项的只读视图                                |
+| 发票管理器              | 查看和支付帐单，并且对帐单配置文件中所有内容具有只读视图  |
 
 ## <a name="view-billing-profiles"></a>查看计费配置文件
 
 1. 在管理中心，转到“**账单**”\> “<a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">账单和付款</a>”页。
-
 2. 选择 **"计费配置文件**"，然后从列表中选择计费配置文件。
 
     - 在" **概述** "选项卡上，可以编辑计费配置文件详细信息，并通过电子邮件打开或关闭发送发票。
-
     - 在 **"权限"** 选项卡上，可以将角色分配给用户以支付发票。
-
     - 在 **"Azure 信用余额** "选项卡上，Azure 客户可以看到该计费配置文件使用的 Azure 信用的交易余额历史记录。
-
     - 在 **"Azure 信用额度** "选项卡上，Azure 客户可以看到与该计费配置文件关联的 Azure 信用列表及其到期日期。
 
     > [!NOTE]
     > 如果你没有任何 Azure 信用额度，你将看不到 **Azure** 信用余额或 **Azure 信用** 表。
 
-## <a name="need-help-contact-support"></a>需要帮助？ 请联系支持人员。
+## <a name="need-help-contact-support"></a>需要帮助? 联系支持人员
 
 如果对 Azure 费用有疑问或需要帮助，请通过 Azure 支持 创建 <a href="https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportrequest" target="_blank">支持请求</a>。
 
-如果对 Microsoft 365 管理中心中的帐单配置文件有疑问或需要帮助，请联系 [商业版产品支持人员](/office365/admin/contact-support-for-business-products)。
+如果对管理中心中的帐单配置文件有疑问或Microsoft 365，请联系[商业产品支持人员](../../business-video/get-help-support.md)。
