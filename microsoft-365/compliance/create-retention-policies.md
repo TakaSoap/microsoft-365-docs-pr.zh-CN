@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用保留策略有效掌控用户使用电子邮件、文档和对话生成的内容。 保留所需内容并删除不需要的内容。
-ms.openlocfilehash: 9e7ab359297ef1402fa64bc754591a4be3140af0
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: 1faeae5dc145d6f908f9137387b875c890d22e14
+ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 05/07/2021
-ms.locfileid: "52269500"
+ms.locfileid: "52280423"
 ---
 # <a name="create-and-configure-retention-policies"></a>创建和配置保留策略
 
@@ -85,7 +85,7 @@ ms.locfileid: "52269500"
 
 5. 完成向导以保存设置。
 
-有关何时对 Teams 使用保留策略的高级别信息， [Teams 文档中有关 Microsoft Teams](/microsoftteams/retention-policies) 保留策略的信息。
+有关何时对 Teams 使用保留策略并了解最终用户体验的指南，请参阅 [管理 Microsoft Teams](/microsoftteams/retention-policies) 保留策略。
 
 有关保留对 Teams 的工作原理的技术详细信息，包括通过演练确定保留和计时信息时支持哪些邮件元素，请参阅 [了解 Microsoft Teams](retention-policies-teams.md)。
 
