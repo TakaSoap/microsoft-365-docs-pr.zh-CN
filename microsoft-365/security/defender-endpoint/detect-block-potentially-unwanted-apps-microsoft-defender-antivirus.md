@@ -6,7 +6,7 @@ search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: detect
 ms.sitesec: library
-localization_priority: priority
+localization_priority: Priority
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
@@ -15,12 +15,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 808eff2074dfe1573708264590b401f3d38db982
-ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
-ms.translationtype: MT
+ms.openlocfilehash: fbd897b025db2317dd1c213e5adf5d64ba88e7ac
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51904006"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52275236"
 ---
 # <a name="detect-and-block-potentially-unwanted-applications"></a>检测并阻止可能不需要的应用程序
 
@@ -31,18 +31,18 @@ ms.locfileid: "51904006"
 - [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
 - [Microsoft Edge](/microsoft-edge/deploy/microsoft-edge)
 
-PUA (可能不需要) 是一类软件，可能会导致计算机运行缓慢、显示意外广告，或者最差时安装可能意外或不需要的其他软件。 PUA 不被视为病毒、恶意软件或其他类型的威胁，但它可能在终结点上执行对终结点性能或使用产生不利影响的操作。 术语 *PUA* 也可以指由于某些类型的不良行为而信誉不佳的应用程序（由 Microsoft Defender for Endpoint 评估）。
+可能不需要的应用程序 (PUA) 用来指代一类软件，它们会导致计算机运行缓慢、显示意外广告，最糟的是，它还会安装其他意外的或不需要的软件。 PUA 不是病毒、恶意软件或其他威胁，但它可能会对终结点进行一些操作，对其性能或使用产生负面的影响。 *PUA* 这个术语也可以指那些由于某些不当行为，被 Microsoft Defender for Endpoint 评估为具有较差信誉的应用程序。
 
 下面是一些示例：
 
 - 显示广告或促销的 **广告软件**，包括将广告插入网页的软件。
-- **捆绑软件** ，用于安装不由同一实体进行数字签名的其他软件。 此外，提供用于安装其他限定为 PUA 的软件的软件。
+- **捆绑软件** ，用于安装不由同一实体进行数字签名的其他软件。 此外，提出安装其他软件的软件属于 PUA。
 - 积极尝试逃避安全产品检测的 **规避软件**，包括在存在安全产品的情况下行为不同的软件。
 
 > [!TIP]
 > 有关更多示例和讨论我们用于标记应用程序以引起对安全功能特别关注的条件，请参阅 [Microsoft 如何识别恶意软件和可能不需要的应用程序](/windows/security/threat-protection/intelligence/criteria)。
 
-可能不需要的应用程序会增加网络受到实际恶意软件感染的风险，使恶意软件感染更加难以识别，或浪费 IT 资源清理它们。 Windows 10、Windows Server 2019 和 Windows Server 2016 支持 PUA 保护。 在 Windows 10 (版本 2004 和更高版本) 中，默认情况下，Microsoft Defender 防病毒会阻止被视为适用于企业版 (E5) PUA 的应用。
+可能不需要的应用程序会增加网络受到实际恶意软件感染的风险，使恶意软件感染更加难以识别，或浪费 IT 资源清理它们。 Windows 10、Windows Server 2019 和 Windows Server 2016 支持 PUA 保护。 在 Windows 10（版本 2004 和更高版本）中，Microsoft Defender 防病毒软件会默认为企业 (E5) 设备阻止 PUA 应用。
 
 ## <a name="microsoft-edge"></a>Microsoft Edge
 
@@ -52,7 +52,7 @@ PUA (可能不需要) 是一类软件，可能会导致计算机运行缓慢、�
 
 虽然默认情况下会关闭 Microsoft Edge 中可能不需要的应用程序保护（基于 Chromium 的版本 80.0.361.50），但可在浏览器中轻松启用。
 
-1. 在 Edge 浏览器中，选择省略号，然后选择"设置 **"。**
+1. 在 Microsoft Edge 浏览器中，选择省略号，然后选择“**设置**”。
 
 2. 选择 **隐私、搜索和服务**。
 
@@ -67,11 +67,11 @@ PUA (可能不需要) 是一类软件，可能会导致计算机运行缓慢、�
 
 安全管理员可 [Microsoft Edge](/DeployEdge/configure-microsoft-edge) Microsoft Defender SmartScreen 如何协同工作来保护用户组免遭 PUA 关联的 URL 的威胁。 可显式 [Microsoft Defender SmartScreen](/DeployEdge/microsoft-edge-policies#smartscreen-settings) 多个组策略设置，包括 [PUA 策略设置的](/DeployEdge/microsoft-edge-policies#smartscreenpuaenabled)。 此外，管理员可 [将 Microsoft Defender SmartScreen](/microsoft-edge/deploy/available-policies?source=docs#configure-windows-defender-smartscreen) 配置成整体，使用组策略设置打开或关闭 Microsoft Defender SmartScreen。
 
-尽管 Microsoft Defender for Endpoint 具有自己的基于 Microsoft 管理的数据集的阻止列表，但你可以根据自己的威胁情报自定义此列表。 若要在 [Microsoft Defender for Endpoint](manage-indicators.md) 创建和管理指示器，Microsoft Defender SmartScreen 将尊重新设置。
+虽然 Microsoft Defender for Endpoint 基于 Microsoft 托管的数据集具有自己的阻止列表，但它也可以基于自己的威胁智能自定义此列表。 若要在 Microsoft Defender for Endpoint 中“[创建和管理指示器](manage-indicators.md)”，Microsoft Defender SmartScreen 将应用新设置。
 
 ## <a name="microsoft-defender-antivirus-and-pua-protection"></a>Microsoft Defender 防病毒和 PUA 保护
 
-Microsoft Defender 防病毒 (PUA) 保护功能可能不需要的应用程序可以检测和阻止网络中终结点上的 PUA。
+Microsoft Defender 防病毒软件中可能不需要的应用程序 (PUA) 保护功能可检测和阻止网络中终结点上的 PUA。
 
 > [!NOTE]
 > Windows 10、Windows Server 2019 和 Windows Server 2016 中提供此功能。
@@ -134,7 +134,7 @@ Microsoft Defender 防病毒软件阻止检测到 PUA 文件，以及尝试下�
 Set-MpPreference -PUAProtection Enabled
 ```
 
-设置此 cmdlet 的值 `Enabled` 可打开该功能（如果该功能已禁用）。
+如果已禁用该功能，将此 cmdlet 的值设置为 `Enabled` 将启用该功能。
 
 #### <a name="to-set-pua-protection-to-audit-mode"></a>将 PUA 保护设置为审核模式
 
@@ -152,9 +152,9 @@ Set-MpPreference -PUAProtection AuditMode
 Set-MpPreference -PUAProtection Disabled
 ```
 
-如果已启用此功能，则设置此 cmdlet `Disabled` 的值以关闭该功能。
+如果已启用该功能，将此 cmdlet 的值设置为 `Disabled` 将禁用该功能。
 
-有关详细信息，请参阅使用[PowerShell cmdlet 配置](use-powershell-cmdlets-microsoft-defender-antivirus.md)和运行 Microsoft Defender 防病毒和[Defender cmdlet。](/powershell/module/defender/index)
+有关详细信息，请参阅 [使用 PowerShell cmdlet 配置并运行 Microsoft Defender 防病毒软件](use-powershell-cmdlets-microsoft-defender-antivirus.md)和 [Defender cmdlet](/powershell/module/defender/index)。
 
 ## <a name="view-pua-events-using-powershell"></a>使用 PowerShell 查看 PUA 事件
 
@@ -183,7 +183,7 @@ PSComputerName   :
 
 ## <a name="view-pua-events-using-advanced-hunting"></a>使用高级搜寻查看 PUA 事件
 
-如果你使用的是 Microsoft [Defender for Endpoint](microsoft-defender-endpoint.md)，可以使用高级搜寻查询来查看 PUA 事件。 下面是一个示例查询：
+如果你正在使用 [Microsoft Defender for Endpoint](microsoft-defender-endpoint.md)，你可以使用高级搜寻查询来查看 PUA 事件。 示例查询如下：
 
 ```console
 DeviceEvents
@@ -194,9 +194,9 @@ DeviceEvents
 | project Timestamp, DeviceName, FolderPath, FileName, SHA256, ThreatName, WasExecutingWhileDetected, WasRemediated
 ```
 
-若要了解有关高级搜寻的更多信息，请参阅 [使用高级搜寻主动搜寻威胁](advanced-hunting-overview.md)。
+若要了解高级搜寻的详细信息，请参阅[使用高级搜寻来主动搜寻威胁](advanced-hunting-overview.md)。
 
-## <a name="exclude-files-from-pua-protection"></a>从 PUA 保护中排除文件
+## <a name="exclude-files-from-pua-protection"></a>排除来自 PUA 保护的文件
 
 有时文件被 PUA 保护错误阻止，或需要 PUA 的功能才能完成任务。 在这些情况下，可以将文件添加到排除列表。
 
