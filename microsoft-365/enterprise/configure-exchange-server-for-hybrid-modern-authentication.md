@@ -17,12 +17,12 @@ f1.keywords:
 - NOCSH
 description: 了解如何在本地配置Exchange Server使用混合新式验证 (HMA) ，以为您提供更安全的用户身份验证和授权。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 9cb6d25a346ac48c9875a26f385cb733f1ff051f
-ms.sourcegitcommit: 5a1cb7d95070eef47d401a4693cc137a90550a5e
+ms.openlocfilehash: 2ae7a09387b62abc9e8c74f4a38c2fe8750bab19
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 05/06/2021
-ms.locfileid: "52259447"
+ms.locfileid: "52244547"
 ---
 # <a name="how-to-configure-exchange-server-on-premises-to-use-hybrid-modern-authentication"></a>如何配置本地 Exchange Server 以使用混合新式验证
 
@@ -140,7 +140,7 @@ ExternalAuthenticationMethods : {Ntlm, OAuth, Negotiate}
 返回到本地命令行管理Exchange最后一个命令。 现在，您可以验证您的本地是否具有 evoSTS 身份验证提供程序的条目：
 
 ```powershell
-Get-AuthServer | where {$_.Name -like "EvoSts"}
+Get-AuthServer | where {$_.Name -eq "EvoSts"}
 ```
 
 输出应显示名称 EvoSts 的 AuthServer，并且"已启用"状态应为 True。 如果未看到此内容，应下载并运行最新版本的混合配置向导。

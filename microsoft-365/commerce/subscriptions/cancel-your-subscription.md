@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 description: 了解如何取消 Microsoft 365 商业版试用或付费订阅。
 ms.date: 04/08/2021
-ms.openlocfilehash: f052a08cfe0e7582690864556cfc3039d6caf99c
-ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
+ms.openlocfilehash: 15ab7ed31af24fa4cb1c83c6babc945871584375
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52106998"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52244656"
 ---
 # <a name="cancel-your-subscription"></a>取消订阅
 
@@ -126,7 +126,7 @@ ms.locfileid: "52106998"
 
 - 若要将电子邮件、联系人、任务和日历信息移动到另一个帐户，请参阅[将电子邮件、联系人和日历导出或备份到 Outlook .pst 文件](https://support.microsoft.com/office/14252b52-3075-4e9b-be4e-ff9ef1068f91.aspx)。
 
-- 要将 SharePoint Online 环境（OneDrive for Business 或团队网站）中的文档库或列表内容（如联系人）保存到文件共享或本地计算机，请参阅[手动迁移 SharePoint Online 内容](https://support.microsoft.com/kb/2783484)。
+- 要将 SharePoint Online 环境（OneDrive for Business 或团队网站）中的文档库或列表内容（如联系人）保存到文件共享或本地计算机，请参阅[手动迁移 SharePoint Online 内容](https://docs.microsoft.com/sharepoint/troubleshoot/migration-tool/content-manual-migration)。
 
 ### <a name="uninstall-office-optional"></a>卸载 Office（可选）
 

@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: e8084fab434246a5c9f12af40872ade66e6fa163
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 1f8428c2995eec2dece290049eda67a3683b4c1e
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934257"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52244976"
 ---
 # <a name="troubleshoot-license-issues-for-microsoft-defender-for-endpoint-on-macos"></a>解决 macOS 上 Microsoft Defender for Endpoint 的许可证问题
 
@@ -46,15 +46,14 @@ ms.locfileid: "51934257"
 
 未找到许可证
 
-看起来你的组织没有 Microsoft 365 企业版订阅的许可证。
+看起来你的组织没有用于订阅Microsoft 365 企业版许可证。
 
 请与管理员联系以寻求帮助。
 
 **原因：** 
 
-你已部署和/或安装了 macOS 程序包上的 Microsoft Defender for Endpoint ("下载安装程序包") 但你可能已运行配置脚本 ("下载载入程序包") 。
+你已部署和/或安装了适用于 macOS 的 Microsoft Defender for Endpoint 程序包 ("下载安装程序包") ，但你可能已经运行了配置脚本 ("下载载入程序包") ，或者你尚未向用户分配许可证。
 
 **解决方案：**
 
 按照以下 MicrosoftDefenderATPOnboardingMacOs.py 说明操作： [客户端配置](mac-install-manually.md#client-configuration)
-

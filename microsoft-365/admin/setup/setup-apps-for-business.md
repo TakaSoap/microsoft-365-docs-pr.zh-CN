@@ -24,12 +24,12 @@ search.appverid:
 - MOE150
 - BEA160
 description: 了解如何设置 Microsoft 365 商业应用版订阅。
-ms.openlocfilehash: 56eb3eb0f28ee99aab1c50a970626c61514335cd
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 6978a5402792906ef773934e5201b3ea6671c010
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51579094"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52244475"
 ---
 # <a name="set-up-microsoft-365-apps-for-business"></a>设置 Microsoft 365 商业应用版
 
@@ -57,7 +57,7 @@ ms.locfileid: "51579094"
 
 2. 选择“**转到设置**”以启动向导。
 
-3. 在第一页上，你可以选择在计算机上安装 Office 应用。 你也可以以后再执行此操作。
+3. 在第一页上，你可以选择在计算机上安装 Office 应用。也可以以后再执行此操作。
 
 3. 在下一页上，你可以添加用户，系统将自动为它们分配 Microsoft 商业应用版许可证。 在你添加用户后，还将显示与添加的新用户共享凭据的选项。 可以选择打印、通过电子邮件发送或下载凭据。
 
@@ -89,7 +89,7 @@ ms.locfileid: "51579094"
 
 2. 选择“**安装**”。
 
-需要更详细的步骤或者需要安装 64 位版本的 Office？ 请参阅[分步安装说明](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658#BKMK_InstallSteps)。
+需要更详细的步骤或者需要安装 64 位版本的 Office？请参阅[分步安装说明](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658#BKMK_InstallSteps)。
   
 ## <a name="set-up-mobile"></a>设置移动设备
 
@@ -99,7 +99,7 @@ ms.locfileid: "51579094"
   
 ## <a name="store-files-online"></a>联机存储文件
 
-Microsoft 轻松实现联机存储文件。若要了解最适合企业的存储位置，请参阅 [Office 365 中可存储文件的位置](https://support.microsoft.com/office/c7c20284-bc94-47f4-9728-d28e9daf0790)。
+Microsoft 轻松实现联机存储文件。若要了解最适合企业的存储位置，请参阅 [Office 365 中可存储文件的位置](../../business-video/store-files.md)。
   
 为用户创建 Microsoft 帐户时，每个用户都会自动获得 **OneDrive** 云存储位置。借助 OneDrive，可以跨计算机、手机和平板电脑访问文件。
   

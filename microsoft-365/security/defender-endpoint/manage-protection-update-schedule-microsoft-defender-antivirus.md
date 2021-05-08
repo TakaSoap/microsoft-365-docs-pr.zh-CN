@@ -1,5 +1,5 @@
 ---
-title: 计划 Microsoft Defender 防病毒保护更新
+title: 计划Microsoft Defender 防病毒保护更新
 description: 计划应下载保护更新的时间、时间和间隔
 keywords: 更新， 安全基线， 计划更新
 search.product: eADQiWindows 10XVcnh
@@ -8,19 +8,20 @@ search.appverid: met150
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localization_priority: normal
+localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
 ms.reviewer: pahuijbr
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 327974c4db4166301820cf148811aceda1700513
-ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
+ms.topic: article
+ms.openlocfilehash: 26b88b8677c27a5d6615776a371326e37034afd4
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51765343"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52275032"
 ---
 # <a name="manage-the-schedule-for-when-protection-updates-should-be-downloaded-and-applied"></a>管理应下载和应用保护更新的时间日程安排
 
@@ -31,7 +32,7 @@ ms.locfileid: "51765343"
 
 - [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
 
-Microsoft Defender 防病毒允许你确定何时应查找和下载更新。
+Microsoft Defender 防病毒允许你确定它应何时查找和下载更新。
 
 可以按：为终结点计划更新： 
 
@@ -43,22 +44,22 @@ Microsoft Defender 防病毒允许你确定何时应查找和下载更新。
 
 ## <a name="use-configuration-manager-to-schedule-protection-updates"></a>使用 Configuration Manager 计划保护更新
 
-1.  在 Microsoft Endpoint Manager 控制台上，打开要更改的反恶意软件策略 (单击左侧导航窗格中的"资产和合规性"，然后将树展开到"终结点保护反恶意软件策略概述")  >    >  
+1.  在 Microsoft Endpoint Manager 控制台上，打开要更改的反恶意软件策略 (单击左侧导航窗格中的"资产和合规性"，然后将树展开到"反恶意软件策略Endpoint Protection概述)   >    >  
 
 2.  转到" **安全智能更新"** 部分。
 
 3. 在特定时间检查和下载更新：
-      1. 将 **"以特定间隔检查 Endpoint Protection 安全智能更新..."** 设置为 **0。**
-      2. 将 **"每天检查 Endpoint Protection 安全智能更新..."** 设置为应检查更新的时间。
+      1. 将 **"检查Endpoint Protection安全智能更新..."** 设置为 **"0"。**
+      2. 将 **"每天Endpoint Protection检查安全智能更新..."** 设置为应检查更新的时间。
       3
-4. 若要持续检查并下载更新，请以特定间隔将"检查 Endpoint Protection 安全智能更新 **..."** 设置为更新之间应发生的小时数。
+4. 若要持续检查和下载更新，请Endpoint Protection检查安全智能更新...设置为两次更新之间应发生的小时数。
 
 5.  [像往常一样部署更新的策略](/sccm/protect/deploy-use/endpoint-antimalware-policies#deploy-an-antimalware-policy-to-client-computers)。
 
 ## <a name="use-group-policy-to-schedule-protection-updates"></a>使用组策略计划保护更新
 
 > [!IMPORTANT]
-> 默认情况下，Microsoft Defender 防病毒将在任何计划扫描时间前 15 分钟检查更新。 启用这些设置将覆盖该默认设置。
+> 默认情况下，Microsoft Defender 防病毒扫描时间前 15 分钟检查更新。 启用这些设置将覆盖该默认设置。
 
 1.  在组策略管理计算机上，打开组 [策略管理控制台](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11))，右键单击要配置的组策略对象，**然后单击编辑。**
 
@@ -66,7 +67,7 @@ Microsoft Defender 防病毒允许你确定何时应查找和下载更新。
 
 4.  单击 **"策略****"，然后单击"管理模板"。**
 
-5.  将树展开到 **Windows 组件** Microsoft Defender  >  **防病毒**  >  **签名智能更新** 并配置以下设置：
+5.  展开树以 **Windows签名**  >  **Microsoft Defender 防病毒**  >  **更新的组件，** 并配置以下设置：
 
     1. 双击指定 **一周中的哪些天检查** 安全智能更新设置，将选项设置为 **已启用**。 输入一周中的一天以检查更新。 单击“**确定**”。
     2. 双击指定 **检查安全智能更新的** 间隔设置，将选项设置为 **已启用**。 输入更新之间的小时数。 单击“**确定**”。
@@ -83,7 +84,7 @@ Set-MpPreference -SignatureScheduleTime
 Set-MpPreference -SignatureUpdateInterval
 ```
 
-请参阅 [使用 PowerShell cmdlet](use-powershell-cmdlets-microsoft-defender-antivirus.md)  配置和运行 Microsoft Defender 防病毒和 [Defender cmdlet，](/powershell/module/defender/) 详细了解如何将 PowerShell 与 Microsoft Defender 防病毒一同使用。
+请参阅[使用 PowerShell cmdlet](use-powershell-cmdlets-microsoft-defender-antivirus.md)配置和运行 Microsoft Defender 防病毒[和 Defender cmdlet，](/powershell/module/defender/)了解有关如何将 PowerShell 与 Microsoft Defender 防病毒 一Microsoft Defender 防病毒。
 
 ## <a name="use-windows-management-instruction-wmi-to-schedule-protection-updates"></a>使用 Windows Management Instruction (WMI) 计划保护更新
 
@@ -96,14 +97,14 @@ SignatureUpdateInterval
 ```
 
 有关详细信息和允许的参数，请参阅以下内容：
-- [Windows Defender WMIv2 API](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal)
+- [Windows DefenderWMIv2 API](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal)
 
 
 ## <a name="related-articles"></a>相关文章
 
-- [部署 Microsoft Defender 防病毒](deploy-manage-report-microsoft-defender-antivirus.md)
-- [管理 Microsoft Defender 防病毒更新和应用基线](manage-updates-baselines-microsoft-defender-antivirus.md)
+- [部署Microsoft Defender 防病毒](deploy-manage-report-microsoft-defender-antivirus.md)
+- [管理Microsoft Defender 防病毒更新并应用基线](manage-updates-baselines-microsoft-defender-antivirus.md)
 - [管理过期终结点的更新](manage-outdated-endpoints-microsoft-defender-antivirus.md)
 - [管理基于事件的强制更新](manage-event-based-updates-microsoft-defender-antivirus.md)
 - [管理移动设备和虚拟机 （VM） 的更新](manage-updates-mobile-devices-vms-microsoft-defender-antivirus.md)
-- [Windows 10 中的 Microsoft Defender 防病毒](microsoft-defender-antivirus-in-windows-10.md)
+- [Microsoft Defender 防病毒Windows 10](microsoft-defender-antivirus-in-windows-10.md)

@@ -10,8 +10,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: deniseb
-author: denisebmsft
+author: JoeDavies-MSFT
+ms.author: josephd
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
@@ -21,12 +21,12 @@ ms.collection:
 ms.topic: conceptual
 ms.custom: autoir
 ms.reviewer: evaldm, isco
-ms.openlocfilehash: 8ecf39090d368427c103c7ec78e22bc13f7c339f
-ms.sourcegitcommit: e0a96e08b7dc29e074065e69a2a86fc3cf0dad01
+ms.openlocfilehash: c593dfe384649b1599d5c0bab8fa6a8204d105dc
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "51591764"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52274828"
 ---
 # <a name="view-the-details-and-results-of-an-automated-investigation"></a>查看自动调查的详细信息和结果
 
@@ -37,7 +37,7 @@ ms.locfileid: "51591764"
 
 ## <a name="new-unified-investigation-page"></a> ("新建！) 统一调查"页
 
-最近更新了调查页面，以包含跨设备、电子邮件和协作内容的信息。 新的统一调查页面定义通用语言，并提供跨 [Microsoft Defender for Endpoint](microsoft-defender-endpoint.md)  和 Microsoft Defender [for Office 365](/microsoft-365/security/office-365-security/office-365-atp)自动调查的统一体验。 
+最近更新了调查页面，以包含跨设备、电子邮件和协作内容的信息。 新的统一调查页面定义通用语言，并提供跨[Microsoft Defender for Endpoint](microsoft-defender-endpoint.md)和 Microsoft Defender for Office 365 进行自动[调查的统一体验](/microsoft-365/security/office-365-security/office-365-atp)。 
 
 > [!TIP]
 > 若要了解有关变化内容的信息，请参阅 ([ NEW！) 统一调查页](/microsoft-365/security/mtp/mtp-autoir-results)。
@@ -78,12 +78,12 @@ ms.locfileid: "51591764"
 在调查详细信息视图中，你可以看到调查 **图形**、警报、设备、标识、关键发现、实体、日志和挂起操作选项卡上的信息，如下表所述。    
 
 > [!NOTE]
-> 你在调查详细信息页面中看到的特定选项卡取决于你的订阅包括的内容。 例如，如果你的订阅不包括 Microsoft Defender for Office 365 计划 2，你将看不到"邮箱 **"** 选项卡。
+> 你在调查详细信息页面中看到的特定选项卡取决于你的订阅包括的内容。 例如，如果你的订阅不包括 Microsoft Defender for Office 365计划 2，你将看不到"邮箱 **"** 选项卡。
 
-| 选项卡 | Description |
+| 选项卡 | 说明 |
 |:--------|:--------|
 | **调查图**   | 提供调查的可视化表示形式。 描述实体并列出发现的威胁，以及警报以及是否正在等待批准任何操作。<br/>可以选择图形上的项目以查看更多详细信息。 例如，选择 **"证据**"图标将你带至"证据"选项卡，可在其中查看检测到的实体及其裁定。 |
-| **警告**    | 列出与调查相关的警报。 警报可能来自用户设备上的威胁防护功能、Office 应用、云应用安全和其他 Microsoft 365 Defender 功能。|
+| **警告**    | 列出与调查相关的警报。 警报可能来自用户设备上的威胁防护功能、Office、云应用安全和其他 Microsoft 365 Defender 功能。|
 | **设备** | 列出包含在调查中的设备及其修正级别。  (修正级别对应于设备[组 .) ](automation-levels.md) |
 | **邮箱** |列出受检测到的威胁影响的邮箱。  |
 | **用户**  | 列出受检测到的威胁影响的用户帐户。 |

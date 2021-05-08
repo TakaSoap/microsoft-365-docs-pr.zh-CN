@@ -20,22 +20,22 @@ search.appverid:
 - MET150
 - MOE150
 description: 了解如何为企业主持联机会议。
-ms.openlocfilehash: 893a03b064b6f73711b69a61c90cd40023241c48
-ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
+ms.openlocfilehash: 9874e22724dd04255fb6109b5fb268ac2dcd3f95
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "51939514"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52244892"
 ---
 # <a name="host-online-meetings-for-your-business"></a>为企业主持联机会议
 
-需要与客户、客户或合作伙伴会面，但无法让每个人都在一个地方开会？ 不用担心，请参加联机会议。 如果他们有智能手机、平板电脑或笔记本电脑，可以使用 Microsoft Teams 加入。
+需要与客户、客户或合作伙伴会面，但无法让每个人都在一个地方开会？ 不用担心，请参加联机会议。 如果他们有智能手机、平板电脑或笔记本电脑，可以使用 Microsoft Teams。
 
 他们需要下载免费版本或在浏览器中联机[](https://support.microsoft.com/office/6d79a648-6913-4696-9237-ed13de64ae3c)加入[，才能获取](https://support.microsoft.com/office/1613bb53-f3fa-431e-85a9-d6a91e3468c9)视频和屏幕共享。
 
-如果你经常与客户、客户或合作伙伴就项目紧密协作，请考虑为客户端创建团队，这样[](https://support.microsoft.com/office/11fbb083-52ee-434d-8c6e-63711fdafac7)你可以轻松地邀请他们参加会议，还可以在 Microsoft Teams 中对话、共享文件和跟踪项目。
+如果你经常与客户、客户或合作伙伴就项目紧密协作，请考虑为客户端创建团队，这样[](team-with-guests.md)你可以轻松地邀请他们参加会议，还可以在 Microsoft Teams 中展开对话、共享文件和跟踪项目。
 
-下载信息图，快速了解如何使用 Microsoft Teams 加入或主持联机会议：
+下载信息图，快速了解如何通过以下工具加入或主持Microsoft Teams：
 
 [PDF](https://go.microsoft.com/fwlink/?linkid=2078712)  | [PowerPoint](https://go.microsoft.com/fwlink/?linkid=2079515)
 
@@ -43,9 +43,9 @@ ms.locfileid: "51939514"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOhP?autoplay=false]
 
-若要安排与员工、客户和其他来宾的会议，请使用 Microsoft Teams。 试一试：
+若要安排与员工、客户和其他来宾的会议，请使用Microsoft Teams。 试一试：
 
-1. 在 Microsoft Teams 的左侧导航栏中，选择"会议 **"。**
+1. In Microsoft Teams， in the left navigation， choose **Meetings**.
 1. 选择 **"安排会议"。**
 1. 在"**新建会议"****框中，输入** 会议 **的标题** 和位置。
 1. 输入 **"开始"** 和 **"结束** "时间和日期。
@@ -58,20 +58,20 @@ ms.locfileid: "51939514"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FYWn?autoplay=false]
 
-使用 Microsoft Teams 与公司内的员工和公司外部的客户加入会议。 试一试：
+使用 Microsoft Teams 可以加入与公司内员工和公司外部客户的会议。 试一试：
 
-1. 在 Microsoft Teams 的左侧导航栏中，选择"会议 **"。**
-1. 打开你想要加入的会议，然后选择加入 Microsoft **Teams 会议**。
+1. In Microsoft Teams， in the left navigation， choose **Meetings**.
+1. 打开要加入的会议，然后选择"加入Microsoft Teams **会议"。**
 1. 当会议打开时，选择"立即 **加入"。**
-1. 受邀加入会议的任何客户端都将在日历中打开会议、选择会议链接、下载 Teams 应用或在 Web 上打开它、输入其名称， **然后选择加入**。
+1. 受邀加入会议的任何客户端都将在日历中打开会议、选择会议链接、下载 Teams 应用或在 Web 上打开它、输入其名称，然后选择"加入 **"。**
 1. 当你看到客户端出现在大厅中时，选择" **允许** "以允许他们进入。
 1. 只要每个人都加入，就可以开始会议。
  
 ## <a name="3-have-an-impromptu-meeting"></a>3. 参加即席会议
 
-你可以轻松将 Microsoft Teams 中的聊天转换为会议。 只需选择 **"视频呼叫** :::image type="icon" source="../media/video-call-icon.png" border="false"::: "按钮或 **"音频呼叫** :::image type="icon" source="../media/audio-call-icon.png" border="false"::: "按钮即可开始呼叫。 如果需要将人员加入群组讨论，也可以将人员添加到通话中。
+你可以轻松将会议中的聊天Microsoft Teams转换为会议。 只需选择 **"视频呼叫** :::image type="icon" source="../media/video-call-icon.png" border="false"::: "按钮或 **"音频呼叫** :::image type="icon" source="../media/audio-call-icon.png" border="false"::: "按钮即可开始呼叫。 如果需要将人员加入群组讨论，也可以将人员添加到通话中。
 
-需要一些帮助？ 请参阅 [在 Teams 中从聊天开始通话](https://support.microsoft.com/office/f5138c9d-df4c-43d8-9cf6-53400c1a7798)。
+需要一些帮助？ 请参阅[在聊天中从聊天Teams。](https://support.microsoft.com/office/f5138c9d-df4c-43d8-9cf6-53400c1a7798)
 
 ## <a name="related-articles"></a>相关文章
 

@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 借助数据分类仪表板，你可以了解组织中已发现和分类了多少敏感数据。
-ms.openlocfilehash: 2867e545221061f5f99bf7ff669f9655b3777ba8
-ms.sourcegitcommit: 1c53f114a810e7aaa2dc876b84d66348492ea36c
+ms.openlocfilehash: d9c53d1f4679fbea9f5a7cded7f4bb6b6eb15b98
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51899382"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52244379"
 ---
 # <a name="learn-about-data-classification"></a>了解数据分类。
 
@@ -112,7 +112,7 @@ Microsoft 365 附带了许多敏感信息类型的定义，例如包含社会安
 ![应用最多的保留标签占位符屏幕快照](../media/data-classification-top-retention-labels-applied.png)
 
 > [!NOTE]
-> 如果此卡片显示消息“未检测到任何保留标签”，则表示尚未创建或发布任何保留标签，或者任何内容均未应用保留标签。 要开始使用保留标签，请参阅：
+> 如果此卡片显示消息“未检测到任何保留标签”，则表示尚未创建或发布任何保留标签，或者任何内容均未应用保留标签。要开始使用保留标签，请参阅：
 >- [开始使用保留策略和保留标签](get-started-with-retention.md)
 
 ## <a name="top-activities-detected"></a>检测到的热门活动
@@ -140,3 +140,5 @@ Microsoft 365 附带了许多敏感信息类型的定义，例如包含社会安
 - [了解敏感信息类型](sensitive-information-type-learn-about.md)
 - [敏感信息类型属性定义](sensitive-information-type-entity-definitions.md)
 - [了解可训练的分类器（预览版）](classifier-learn-about.md)
+
+如需了解如何使用数据分类以遵守数据隐私法规，请参阅[使用 Microsoft 365 为数据隐私法规部署信息保护](../solutions/information-protection-deploy.md) (aka.ms/m365dataprivacy)。

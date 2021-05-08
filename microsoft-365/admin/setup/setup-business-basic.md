@@ -24,12 +24,12 @@ search.appverid:
 - MOE150
 - BEA160
 description: 了解如何设置 Microsoft 365 商业基础版订阅。
-ms.openlocfilehash: 409d2fd4698452a1694d39c4ca3cc7f378d355e8
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: a4636006a6819769752ef6ae61a5cb7155d5289e
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51580782"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52244463"
 ---
 # <a name="set-up-microsoft-365-business-basic"></a>设置 Microsoft 365 商业基础版
 
@@ -37,7 +37,7 @@ ms.locfileid: "51580782"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4vk3W]
 
-如果你觉得这段视频有用，请查看[适用于小型企业和 Microsoft 365 新手的完整培训系列](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)。
+如果你觉得这段视频有用，请查看[适用于小型企业和 Microsoft 365 新手的完整培训系列](../../business-video/index.yml)。
 
 ## <a name="add-your-domain-to-personalize-sign-in"></a>添加你的域以个性化设置登录名
 
@@ -85,7 +85,7 @@ ms.locfileid: "51580782"
 
 你在向导中添加的所有用户都将自动分配一个 Microsoft 365 商业基础版许可证。
 
-1. 如果你的 Microsoft 365 商业基础版订阅中存在现有用户（例如，如果使用了 Azure AD Connect），将显示现在为其分配许可证的选项。 继续操作，并为这些用户添加许可证。
+1. 如果你的 Microsoft 365 商业基础版订阅中存在现有用户（例如，如果使用了 Azure AD Connect），将显示现在为其分配许可证的选项。继续操作，并为这些用户添加许可证。
 
 2. 在你添加用户后，还将显示与添加的新用户共享凭据的选项。 可以选择打印、通过电子邮件发送或下载凭据。
 

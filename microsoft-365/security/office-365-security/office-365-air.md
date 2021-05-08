@@ -1,10 +1,10 @@
 ---
-title: Microsoft Defender for Office 365 中的自动调查和响应
+title: Microsoft Defender for Office 365
 keywords: AIR， autoIR， Microsoft Defender for Endpoint， 自动化， 调查， 响应， 修正， 威胁， 高级， 威胁， 保护
 f1.keywords:
 - NOCSH
-ms.author: deniseb
-author: denisebmsft
+author: JoeDavies-MSFT
+ms.author: josephd
 manager: dansimp
 audience: ITPro
 ms.topic: article
@@ -16,20 +16,20 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
-description: 开始使用 Microsoft Defender for Office 365 中的自动调查和响应功能。
+description: 开始使用 Microsoft Defender for Office 365 中的自动调查和响应Office 365。
 ms.custom:
 - air
 - seo-marvel-mar2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 89421348d858a869e033380802e402465949c554
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: c9cd9ef649ec60fc8d880ae525469980a00f69b2
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51935169"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52274996"
 ---
-# <a name="automated-investigation-and-response-air-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 (AIR) 自动调查和响应
+# <a name="automated-investigation-and-response-air-in-microsoft-defender-for-office-365"></a>Microsoft Defender for (AIR) 自动调查和响应Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -37,7 +37,7 @@ ms.locfileid: "51935169"
 - [Microsoft Defender for Office 365 计划 1 和计划 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-[Microsoft Defender for Office 365](defender-for-office-365.md) 包括强大的自动调查和响应 (AIR) 功能，可节省安全操作团队的时间和精力。 触发警报时，由安全运营团队查看、确定警报优先级并响应这些警报。 保持传入警报的量可能会很不知所措。 自动执行其中一些任务可能会有所帮助。
+[Microsoft Defender for Office 365](defender-for-office-365.md)包括强大的自动调查和响应 (AIR) 功能，可节省安全运营团队的时间和精力。 触发警报时，由安全运营团队查看、确定警报优先级并响应这些警报。 保持传入警报的量可能会很不知所措。 自动执行其中一些任务可能会有所帮助。
 
 AIR 使安全运营团队可以更高效地操作。 AIR 功能包括自动调查流程，以响应当今存在的已知威胁。 适当的修正操作等待审批，使安全运营团队能够有效响应检测到的威胁。 使用 AIR，安全运营团队可以专注于优先级较高的任务，而不会忽略触发的重要警报。
 
@@ -62,7 +62,7 @@ AIR 使安全运营团队可以更高效地操作。 AIR 功能包括自动调�
 4. 安全运营团队会审核 [测试结果和建议](air-view-investigation-results.md)，并 [批准或拒绝修正操作](air-review-approve-pending-completed-actions.md)。
 5. 随着批准或拒绝的修正 (，) 自动调查完成。
 
-在 Microsoft Defender for Office 365 中，不会自动执行任何修正操作。 只有在组织的安全团队批准后，才会执行修正操作。 AIR 功能通过确定修正操作并提供做出明智决定所需的详细信息来节省安全运营团队的时间。
+在 Microsoft Defender for Office 365中，不会自动执行任何修正操作。 只有在组织的安全团队批准后，才会执行修正操作。 AIR 功能通过确定修正操作并提供做出明智决定所需的详细信息来节省安全运营团队的时间。
 
 在每个自动调查期间和之后，安全运营团队可以：
 
@@ -75,13 +75,13 @@ AIR 使安全运营团队可以更高效地操作。 AIR 功能包括自动调�
 
 ## <a name="how-to-get-air"></a>如何获取 AIR
 
-AIR 功能包含在适用于 [Office 365](defender-for-office-365.md#microsoft-defender-for-office-365-plan-1-and-plan-2)的 Microsoft Defender 中，但已配置策略和警报。 需要一些帮助？ 按照防止威胁 [中的指南](protect-against-threats.md) 设置或配置以下保护设置：
+AIR 功能包含在[Microsoft Defender for Office 365](defender-for-office-365.md#microsoft-defender-for-office-365-plan-1-and-plan-2)中，但已配置策略和警报。 需要一些帮助？ 按照防止威胁 [中的指南](protect-against-threats.md) 设置或配置以下保护设置：
 
 - [审核日志记录](../../compliance/turn-audit-log-search-on-or-off.md) (应打开) 
 - [反恶意软件策略](protect-against-threats.md#part-1---anti-malware-protection)
 - [反病毒保护](protect-against-threats.md#part-2---anti-phishing-protection)
 - [反垃圾邮件保护](protect-against-threats.md#part-3---anti-spam-protection)
-- [安全链接和安全附件](protect-against-threats.md#part-4---protection-from-malicious-urls-and-files-safe-links-and-safe-attachments-in-defender-for-office-365)
+- [保险箱链接和保险箱附件](protect-against-threats.md#part-4---protection-from-malicious-urls-and-files-safe-links-and-safe-attachments-in-defender-for-office-365)
 - [用于 SharePoint、OneDrive 和 Microsoft Teams 的安全附件](protect-against-threats.md#part-5---verify-safe-attachments-for-sharepoint-onedrive-and-microsoft-teams-is-turned-on)
 - [零时差自动清除电子邮件](protect-against-threats.md#zero-hour-auto-purge-for-email-in-eop)
 
@@ -89,20 +89,20 @@ AIR 功能包含在适用于 [Office 365](defender-for-office-365.md#microsoft-d
 
 ## <a name="which-alert-policies-trigger-automated-investigations"></a>哪些警报策略会触发自动调查？
 
-Microsoft 365 提供了许多内置警报策略，可帮助识别 Exchange 管理员权限滥用、恶意软件活动、潜在的外部和内部威胁以及信息治理风险。 一些 [默认警报策略](../../compliance/alert-policies.md#default-alert-policies) 可以触发自动调查。 下表介绍了触发自动调查的警报、Microsoft 365 安全中心中警报的严重性及其生成方式：
+Microsoft 365许多内置警报策略，可帮助Exchange权限滥用、恶意软件活动、潜在的外部和内部威胁以及信息治理风险。 一些 [默认警报策略](../../compliance/alert-policies.md#default-alert-policies) 可以触发自动调查。 下表介绍了触发自动调查的警报、Microsoft 365安全中心中的严重性以及如何生成这些警报：
 
-|通知|Severity|警报的生成方式|
+|通知|严重性|警报的生成方式|
 |---|---|---|
-|检测到潜在恶意 URL 单击|**High**|发生以下任一情况时，将生成此警报： <ul><li>组织中受安全 [链接保护](safe-links.md) 的用户单击恶意链接</li><li>URL 裁定更改由 Microsoft Defender for Office 365 识别</li><li>根据组织的安全链接策略 (，用户会覆盖安全链接[警告) 。](set-up-safe-links-policies.md)</li></ul> <p> 有关触发此警报的事件详细信息，请参阅设置 [安全链接策略](set-up-safe-links-policies.md)。|
+|检测到潜在恶意 URL 单击|**High**|发生以下任一情况时，将生成此警报： <ul><li>受组织链接[保险箱](safe-links.md)用户单击恶意链接</li><li>URL 裁定更改由 Microsoft Defender for Office 365</li><li>用户保险箱组织的链接 (策略覆盖"链接保险箱[警告](set-up-safe-links-policies.md)) 。</li></ul> <p> 有关触发此警报的事件详细信息，请参阅设置链接保险箱[策略](set-up-safe-links-policies.md)。|
 |电子邮件被用户报告为恶意软件或钓鱼邮件|**信息**|当贵组织的用户使用报告邮件外接程序或报告网络钓鱼外接程序将邮件报告为网络钓鱼电子邮件[时，](enable-the-report-message-add-in.md)[将生成此警报](enable-the-report-phish-add-in.md)。|
-|包含恶意软件的电子邮件在传递后被删除|**信息**|当包含恶意软件的任何电子邮件传递到您组织的邮箱时，将生成此警报。 如果发生此事件，Microsoft 会使用零时差自动清除从 Exchange Online 邮箱中删除 [受感染的邮件](zero-hour-auto-purge.md)。|
-|包含网络钓鱼 URL 的电子邮件在传递后被删除|**信息**|当包含钓鱼邮件的任何邮件传递到您组织的邮箱时，将生成此警报。 如果发生此事件，Microsoft 会使用零时差自动清除从 Exchange Online 邮箱中删除 [受感染的邮件](zero-hour-auto-purge.md)。|
+|包含恶意软件的电子邮件在传递后被删除|**信息**|当包含恶意软件的任何电子邮件传递到您组织的邮箱时，将生成此警报。 如果发生此事件，Microsoft 会使用零时差自动清除 从Exchange Online邮箱[中删除受感染的邮件](zero-hour-auto-purge.md)。|
+|包含网络钓鱼 URL 的电子邮件在传递后被删除|**信息**|当包含钓鱼邮件的任何邮件传递到您组织的邮箱时，将生成此警报。 如果发生此事件，Microsoft 会使用零时差自动清除 从Exchange Online邮箱[中删除受感染的邮件](zero-hour-auto-purge.md)。|
 |检测到可疑的电子邮件发送模式|**Medium**|当组织中有人已发送可疑电子邮件，并且存在被限制发送电子邮件的风险时，将生成此警报。 警报是行为的早期警告，可能指示帐户受到威胁，但不够严重，无法限制用户。 <p> 尽管这种情况很少见，但此策略生成的警报可能是异常情况。 但是，建议检查用户帐户 [是否遭到入侵](responding-to-a-compromised-email-account.md)。|
-|用户被限制发送电子邮件|**High**|当组织中有人被限制发送出站邮件时，将生成此警报。 此警报通常在电子邮件帐户 [受到威胁时产生](responding-to-a-compromised-email-account.md)。 <p> 有关受限用户详细信息，请参阅从 [Microsoft 365](removing-user-from-restricted-users-portal-after-spam.md)中的受限用户门户删除阻止的用户。|
+|用户被限制发送电子邮件|**High**|当组织中有人被限制发送出站邮件时，将生成此警报。 此警报通常在电子邮件帐户 [受到威胁时产生](responding-to-a-compromised-email-account.md)。 <p> 有关受限用户的信息，请参阅从"受限用户"门户中删除[Microsoft 365。](removing-user-from-restricted-users-portal-after-spam.md)|
 |
 
 > [!TIP]
-> 若要了解有关警报策略或编辑默认设置的信息，请参阅 Microsoft [365 合规中心](../../compliance/alert-policies.md)中的警报策略。
+> 若要了解有关警报策略或编辑默认设置的信息，请参阅警报Microsoft 365[中的警报策略](../../compliance/alert-policies.md)。
 
 ## <a name="required-permissions-to-use-air-capabilities"></a>使用 AIR 功能所需的权限
 
@@ -110,12 +110,12 @@ Microsoft 365 提供了许多内置警报策略，可帮助识别 Exchange 管�
 
 |任务|需要 (角色) 角色|
 |---|---|
-|设置 AIR 功能|下列角色之一： <ul><li>全局管理员</li><li>安全管理员</li></ul> <p> 这些角色可以在 [Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles) 或安全与合规中心 [&分配](permissions-in-the-security-and-compliance-center.md)。|
-|启动自动调查 <p> --- 或 --- <p> 批准或拒绝建议的操作|在 [Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles) 或安全与合规中心& [角色之一](permissions-in-the-security-and-compliance-center.md)： <ul><li>全局管理员</li><li>安全管理员</li><li>安全操作员</li><li>安全读取者 <br> --- 和 --- </li><li>搜索和 (此角色仅在安全与合规& [分配](permissions-in-the-security-and-compliance-center.md)。 您可能必须在那里创建新角色组，并添加搜索和清除角色到该新角色组。</li></ul>|
+|设置 AIR 功能|下列角色之一： <ul><li>全局管理员</li><li>安全管理员</li></ul> <p> 可以在安全与合规[中心Azure Active Directory分配](/azure/active-directory/users-groups-roles/directory-assign-admin-roles)&[角色](permissions-in-the-security-and-compliance-center.md)。|
+|启动自动调查 <p> --- 或 --- <p> 批准或拒绝建议的操作|在安全与合规[中心Azure Active Directory分配](/azure/active-directory/users-groups-roles/directory-assign-admin-roles)以下角色&[之一](permissions-in-the-security-and-compliance-center.md)： <ul><li>全局管理员</li><li>安全管理员</li><li>安全操作员</li><li>安全读取者 <br> --- 和 --- </li><li>搜索和 (此角色仅在安全与合规& [分配](permissions-in-the-security-and-compliance-center.md)。 您可能必须在那里创建新角色组，并添加搜索和清除角色到该新角色组。</li></ul>|
 
 ## <a name="required-licenses"></a>所需的许可证
 
-[Microsoft Defender for Office 365 计划 2](defender-for-office-365.md#microsoft-defender-for-office-365-plan-1-and-plan-2) 许可证应分配给：
+[Microsoft Defender for Office 365 计划 2](defender-for-office-365.md#microsoft-defender-for-office-365-plan-1-and-plan-2)许可证应分配给：
 
 - 安全管理员 (包括全局管理员) 
 - 组织的安全运营团队 (包括安全读者以及具有"搜索和清除"角色) 
@@ -123,25 +123,25 @@ Microsoft 365 提供了许多内置警报策略，可帮助识别 Exchange 管�
 
 ## <a name="changes-are-coming-soon-in-your-security-center"></a>即将在安全中心内进行更改
 
-如果你已在 Microsoft Defender for Office 365 中使用 AIR 功能，你将在改进的 [Microsoft 365](../defender/overview-security-center.md)安全中心看到一些更改。
+如果你已在 Microsoft Defender 中为 Office 365 使用 AIR 功能，你将在改进的 Microsoft 365 安全中心[看到一些更改](../defender/overview-security-center.md)。
 
 :::image type="content" source="../../media/m3d-action-center-unified.png" alt-text="统一操作中心":::
 
-新的和改进的安全中心将 MICROSOFT Defender for Office [365](defender-for-office-365.md) 和 Microsoft Defender for Endpoint 中的 AIR 功能 [汇集在一起](../defender-endpoint/automated-investigations.md)。 通过这些更新和改进，安全操作团队将能够在一处查看电子邮件、协作内容、用户帐户和设备中的自动调查和修正操作的详细信息。
+新的和改进的安全中心将[MICROSOFT Defender](defender-for-office-365.md) for Office 365 和 Microsoft Defender for Endpoint 中的 AIR 功能[汇集在一起](../defender-endpoint/automated-investigations.md)。 通过这些更新和改进，安全操作团队将能够在一处查看电子邮件、协作内容、用户帐户和设备中的自动调查和修正操作的详细信息。
 
 > [!TIP]
-> 全新的 Microsoft 365 安全 <https://security.microsoft.com> () 以下中心：
+> 新Microsoft 365安全 <https://security.microsoft.com> () 以下中心：
 >
-> - Office 365 安全与&中心 <https://protection.office.com> () 
-> - Microsoft Defender 安全中心 <https://securitycenter.windows.com> () 
+> - Office 365安全&合规中心 <https://protection.office.com> () 
+> - <https://securitycenter.windows.com>Microsoft Defender 安全中心 () 
 >
 > 除了更改 URL 之外，还有一种全新外观，旨在为安全团队提供更简化的体验，同时在一个地方查看更多威胁检测。
 
 ### <a name="what-to-expect"></a>预期结果
 
-下表列出了 Microsoft Defender for Office 365 中 AIR 的更改和改进。
+下表列出了 Microsoft Defender for Office 365 中的 AIR 即将Office 365。
 
-|Item|更改了哪些方面？|
+|项目|更改了哪些方面？|
 |---|---|
 |**"调查"** 页|更新 **后的调查页面** 更符合你在 [Microsoft Defender for Endpoint 中所看到的内容](/windows/security/threat-protection/microsoft-defender-atp/automated-investigations)。 你将看到一些与新的统一调查视图一致的常规格式和 **样式** 设置更改。 例如，调查图具有更统一的格式。|
 |**"用户"** 选项卡|" **用户"** 选项卡现在是" **邮箱"** 选项卡。有关用户的详细信息列在"邮箱" **选项卡** 上。|

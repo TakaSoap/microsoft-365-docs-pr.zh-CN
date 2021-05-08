@@ -1,5 +1,5 @@
 ---
-title: 马其顿前马其顿共和国的付款信息
+title: 前南斯拉夫马其顿共和国的付款信息
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -8,27 +8,27 @@ manager: scotv
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
-ms.collection: Adm_Commerce_Pay
+ms.custom: CommercePayInfo
 localization_priority: Normal
-description: 了解在何处发送订阅付款。
+description: 了解在哪里发送订阅付款。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 595ade468c8445123cc08808bbf8c33f215e27a7
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: 121cb3ea0420177f6cc9684e6458de38467da41f
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50543300"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52273340"
 ---
-# <a name="payment-information-for-macedonia-former-yugoslav-republic-of"></a>马其顿前马其顿共和国的付款信息
+# <a name="payment-information-for-macedonia-former-yugoslav-republic-of"></a>前南斯拉夫马其顿共和国的付款信息
 
 [查找另一个国家/地区](../billing-and-payments/pay-for-your-subscription.md)。 
 
-请仅以美元支付，并参考发票 (发票) 的发票编号。
+Please pay in USD only and reference your invoice number (s) on your invoice invoice invoice.
 
 ## <a name="electronic-funds-transfer"></a>电子资金转帐
 
-**Bank：** Bank， London  
-**SWIFT 代码：** 一个 2016 年 1 月 2 日  
+**Bank：** 年，伦敦  
+**SWIFT 代码：** 一百万  
 **IBAN：** GB95CITI18500812510049  
 **帐号** ：12510049  
 **帐户名称：** MICROSOFT  

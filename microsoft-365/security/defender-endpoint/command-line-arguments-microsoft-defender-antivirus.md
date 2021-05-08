@@ -6,7 +6,7 @@ search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
-localization_priority: normal
+localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
@@ -14,12 +14,13 @@ ms.reviewer: ksarens
 manager: dansimp
 ms.date: 03/19/2021
 ms.technology: mde
-ms.openlocfilehash: 1b357f7c1e02211f3949383a380666cb7444f814
-ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
+ms.topic: how-to
+ms.openlocfilehash: 85fb60d8d4504ba3a4aa8744c1183d094da01a9b
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51764623"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52274744"
 ---
 # <a name="configure-and-manage-microsoft-defender-antivirus-with-the-mpcmdrunexe-command-line-tool"></a>使用命令行工具配置mpcmdrun.exe Microsoft Defender 防病毒
 
@@ -41,7 +42,7 @@ ms.locfileid: "51764623"
 ```console
 MpCmdRun.exe [command] [-options]
 ```
-下面是一个示例：
+示例如下：
 
 ```console
 MpCmdRun.exe -Scan -ScanType 2
@@ -49,7 +50,7 @@ MpCmdRun.exe -Scan -ScanType 2
 
 | 命令  | 说明   |
 |:----|:----|
-| `-?` **或** `-h`   | 显示此工具的所有可用选项 |
+| `-?`**或**`-h`   | 显示此工具的所有可用选项 |
 | `-Scan [-ScanType [0\|1\|2\|3]] [-File <path> [-DisableRemediation] [-BootSectorScan] [-CpuThrottling]] [-Timeout <days>] [-Cancel]` | 扫描恶意软件。 **ScanType** 的值为 **：0** 默认值，根据你的配置 **，-1** 快速扫描 **，-2** 完全扫描 **，-3** 文件和目录自定义扫描。  CpuThrottling 将遵守策略中配置的 CPU 限制 |
 | `-Trace [-Grouping #] [-Level #]` | 启动诊断跟踪 |
 | `-GetFiles [-SupportLogLocation <path>]` | 收集支持信息。 请参阅'[收集诊断数据](collect-diagnostic-data.md)'  |

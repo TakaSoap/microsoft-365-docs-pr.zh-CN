@@ -21,14 +21,17 @@ search.appverid:
 - MET150
 ms.assetid: 8d83b530-f4ca-47f6-a666-e5791cbacc7e
 description: 了解如何通过关闭或打开定期计费功能来续订 Microsoft 365。
-ms.openlocfilehash: 76be85fe3cbeafb275478e6236e051b6a252c099
-ms.sourcegitcommit: 0ff6edbf52562138a69c6675cb0274ec984986c3
+ms.openlocfilehash: afa899bd60b761d196df01c6f0bf18d51e546d8e
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "51615167"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52244644"
 ---
 # <a name="renew-microsoft-365-for-business"></a>续订 Microsoft 365 商业版
+
+> [!IMPORTANT]
+> 截至 2021 年 1 月 26 日，不再支持比利时、法国、意大利、卢森堡、葡萄牙、西班牙和美国客户的新银行账户。 如果你是其中一个国家/地区的现有客户，则可以继续使用现有银行帐户支付订阅，并且可以向其中添加新订阅（前提是该银行帐户的信誉良好）。
 
 本文适用于大多数付费 Microsoft 365 商业版订阅。
   

@@ -25,14 +25,17 @@ search.appverid:
 - BEA160
 ms.assetid: 0724b428-fb59-4962-8c37-6674166d7507
 description: 了解如何解读 Microsoft 365 商业版的费用、帐单和付款信息或发票，以及如何更改采购订单号。
-ms.openlocfilehash: 56f1ba3e7cc328593873aaf06ddfe6dc82fc1a17
-ms.sourcegitcommit: 0ff6edbf52562138a69c6675cb0274ec984986c3
+ms.openlocfilehash: b89ca38bf5d7b1d82982668dcd98e9979f1657be
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "51615371"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245012"
 ---
 # <a name="understand-your-bill-or-invoice-for-microsoft-365-for-business"></a>了解你的 Microsoft 365 商业版账单或发票
+
+> [!IMPORTANT]
+> 自 2021 年 1 月 26 日起，比利时、法国、意大利、卢森堡、葡萄牙、西班牙和美国的客户将不再支持新的银行帐户。 如果你是其中一个国家/地区中的现有客户，你可以继续使用现有银行帐户支付订阅费用，并且你可以向它添加新订阅，但只要该银行帐户信誉良好。
 
 不管是月度还是年度账单（取决于你在购买时的订阅选项），你将收到电子邮件，告知新的账单记录可在管理员中心查看。 [了解如何查找和查看账单或发票](view-your-bill-or-invoice.md)。
   

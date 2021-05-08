@@ -1,13 +1,13 @@
 ---
-title: 收集 Microsoft Defender 防病毒的诊断数据
-description: 使用工具收集数据以排除 Microsoft Defender 防病毒故障
+title: 收集诊断数据Microsoft Defender 防病毒
+description: 使用工具收集数据以排查Microsoft Defender 防病毒
 keywords: 疑难解答， 错误， 修复， 更新合规性， oms， 监视器， 报告， Microsoft Defender av， 组策略对象， 设置， 诊断数据
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localization_priority: normal
+localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
@@ -15,12 +15,13 @@ ms.date: 06/29/2020
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: d74a8921af677f6ed66580bd00830440d59cf1aa
-ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
+ms.topic: article
+ms.openlocfilehash: ccf6da0e1bc91a29865868305b5333f7ef9c47cc
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51764719"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52274768"
 ---
 # <a name="collect-microsoft-defender-av-diagnostic-data"></a>收集 Microsoft Defender AV 诊断数据
 
@@ -36,7 +37,7 @@ ms.locfileid: "51764719"
 > [!NOTE]
 > 作为调查或响应过程的一部分，你可以从设备收集调查包。 操作说明： [从设备收集调查包](/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#collect-investigation-package-from-devices)。
 
-在至少两个遇到相同问题的设备上，通过执行以下步骤获取 .cab 诊断文件：
+在至少两个遇到相同问题的设备上，.cab以下步骤获取诊断文件：
 
 1. 打开命令提示符的管理员级别版本，如下所示：
 
@@ -57,12 +58,12 @@ ms.locfileid: "51764719"
     mpcmdrun.exe -GetFiles
     ```
   
-4. 将生成包含各种诊断日志的 .cab 文件。 将在命令提示符的输出中指定文件的位置。 默认情况下，位置为 `C:\ProgramData\Microsoft\Microsoft Defender\Support\MpSupportFiles.cab` 。
+4. 将.cab一个包含各种诊断日志的诊断文件。 将在命令提示符的输出中指定文件的位置。 默认情况下，位置为 `C:\ProgramData\Microsoft\Microsoft Defender\Support\MpSupportFiles.cab` 。
 
 > [!NOTE]
 > 若要将 cab 文件重定向到其他路径或 UNC 共享，请使用以下命令： `mpcmdrun.exe -GetFiles -SupportLogLocation <path>`  <br/>有关详细信息，请参阅将 [诊断数据重定向到 UNC 共享](#redirect-diagnostic-data-to-a-unc-share)。
 
-5. 将这些 .cab 文件复制到 Microsoft 支持人员可以访问的位置。 例如，可以与我们共享受密码保护的 OneDrive 文件夹。
+5. 将.cab文件复制到 Microsoft 支持人员可以访问的位置。 例如，可以与我们OneDrive受密码保护的文件夹。
 
 > [!NOTE]
 >如果更新合规性有问题，使用 Update <a href="mailto:ucsupport@microsoft.com?subject=WDAV assessment issue&body=I%20am%20encountering%20the%20following%20issue%20when%20using%20Windows%20Defender%20AV%20in%20Update%20Compliance%3a%20%0d%0aI%20have%20provided%20at%20least%202%20support%20.cab%20files%20at%20the%20following%20location%3a%20%3Caccessible%20share%2c%20including%20access%20details%20such%20as%20password%3E%0d%0aMy%20OMS%20workspace%20ID%20is%3a%20%0d%0aPlease%20contact%20me%20at%3a">Compliance</a>支持电子邮件模板发送电子邮件，并填写包含以下信息的模板：
@@ -102,7 +103,7 @@ mpcmdrun.exe -GetFiles -SupportLogLocation <path>
 
 ## <a name="specify-location-where-diagnostic-data-is-created"></a>指定创建诊断数据的位置
 
-还可以指定使用组策略对象创建诊断 .cab 文件的位置 (GPO) 。 
+还可以指定使用组策略对象.cab GPO 文件创建诊断 (文件) 。 
 
 1. 打开本地组策略编辑器，并找到 SupportLogLocation GPO，位置为： `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender\SupportLogLocation`
    
@@ -119,4 +120,4 @@ mpcmdrun.exe -GetFiles -SupportLogLocation <path>
 
 ## <a name="see-also"></a>另请参阅
 
-- [Microsoft Defender 防病毒报告疑难解答](troubleshoot-reporting.md)
+- [报告Microsoft Defender 防病毒疑难解答](troubleshoot-reporting.md)

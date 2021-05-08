@@ -16,19 +16,19 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: 需要用于管理高价值内容的 Microsoft 365 记录管理解决方案以满足法律、业务或法规方面的义务，但不确定从哪里入手？ 请阅读一些实用指南来完成入门。
-ms.openlocfilehash: 2ab5eaa494094dcbf0723f426fcbd644901c22bb
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+description: 需要用于管理高价值内容的 Microsoft 365 记录管理解决方案以满足法律、业务或法规方面的义务，但不确定从哪里入手？请阅读一些实用指南来入门。
+ms.openlocfilehash: 0382c1419654e4c1d2c809b3a9c32252fd50f554
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51051894"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52244340"
 ---
 # <a name="get-started-with-records-management"></a>记录管理入门
 
 >*[Microsoft 365 安全性与合规性许可指南](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。*
 
-准备好开始使用 Microsoft 365 中的记录管理解决方案来管理组织的高价值内容以满足法律、业务或法规方面的义务了吗？ 请遵循下面的简要指南来完成入门：
+准备好开始使用 Microsoft 365 中的记录管理解决方案来管理组织的高价值内容以满足法律、业务或法规方面的义务了吗？使用以下指南来入门：
 
 1. **了解记录管理解决方案** 以及在将文档和电子邮件声明为记录时允许或阻止的操作：[了解记录管理](records-management.md)。 
 
@@ -53,9 +53,9 @@ ms.locfileid: "51051894"
 
 对于只读角色，可以创建新的角色组，并将 **只读记录管理** 角色添加到该组中。 
 
-有关角色组和角色的更多信息，请参阅[安全与合规中心内的权限](../security/defender-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)。
+有关角色组和角色的更多信息，请参阅[安全与合规中心内的权限](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)。
 
-有关将用户添加到角色组并分配角色的说明，请参阅[向用户授予对安全与合规中心的访问权限](../security/defender-365-security/grant-access-to-the-security-and-compliance-center.md)。
+有关将用户添加到角色组并分配角色的说明，请参阅[向用户授予对安全与合规中心的访问权限](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md)。
 
 只有在创建、配置和应用用于声明记录和管理处置的保留标签时才需要这些权限。 配置这些标签的人员不需要访问该内容。
 
@@ -84,8 +84,8 @@ ms.locfileid: "51051894"
 
 ## <a name="end-user-documentation-for-records"></a>有关记录的最终用户文档
 
-在 Microsoft 365 应用中，用于记录管理的保留标签具有 UI 表现形式。 请务必在将保留标签部署到生产网络前，为最终用户和技术支持人员提供指导。
+用于管理记录的保留标签在 Microsoft 365 应用中具有用户界面。在将保留标签部署到生产网络前，请确保为最终用户和技术支持提供指导。
 
-最有效的最终用户文档将是你针对所选保留标签名称和配置提供的定制指南和说明。 请参阅以下文章，获取可用于培训用户和提高采用率的下载软件包：[最终用户培训：M365 中的保留标签 – 如何提高采纳速度](https://techcommunity.microsoft.com/t5/microsoft-security-and/end-user-training-for-retention-labels-in-m365-how-to-accelerate/ba-p/1750861)。
+要帮助用户在 SharePoint 和 OneDrive 中应用保留标签（其中包括有关解锁记录以进行编辑的信息），请参阅[将保留标签应用于 SharePoint 或 OneDrive 中的文件](https://support.microsoft.com/office/apply-retention-labels-to-files-in-sharepoint-or-onedrive-11a6835b-ec9f-40db-8aca-6f5ef18132df)。
 
-以下部分中还提供了基本用户说明：[手动应用保留标签](create-apply-retention-labels.md#manually-apply-retention-labels)。
+不过，最有效的最终用户文档将是你针对所选保留标签名称和配置提供的定制指南和说明。 请参阅以下博客文章，获取可用于培训用户和提高采用率的下载软件包：[最终用户培训：M365 中的保留标签 – 如何提高采纳速度](https://techcommunity.microsoft.com/t5/microsoft-security-and/end-user-training-for-retention-labels-in-m365-how-to-accelerate/ba-p/1750861)。

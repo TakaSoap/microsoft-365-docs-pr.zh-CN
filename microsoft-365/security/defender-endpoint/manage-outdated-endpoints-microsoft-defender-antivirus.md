@@ -7,7 +7,7 @@ ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localization_priority: normal
+localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
@@ -15,12 +15,13 @@ ms.date: 09/03/2018
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 81c7fb2bb7cd20fea3f343097811078ed744c3eb
-ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
+ms.topic: article
+ms.openlocfilehash: 4199f55488ef0dc5989af88e8be83a3d51190d1f
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51765367"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52275056"
 ---
 # <a name="manage-microsoft-defender-antivirus-updates-and-scans-for-endpoints-that-are-out-of-date"></a>管理 Microsoft Defender 防病毒更新并扫描过期的终结点
 
@@ -31,7 +32,7 @@ ms.locfileid: "51765367"
 
 - [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
 
-Microsoft Defender 防病毒允许你定义终结点在需要更新和扫描自身之前可以避免更新的所需时间或可以错过的扫描次数。 在设备不经常连接到公司或外部网络或者不每天使用的设备的环境中，这尤其有用。
+Microsoft Defender 防病毒定义终结点可以避免更新的所需时间，或定义在需要更新和扫描自身之前可以错过的扫描次数。 在设备不经常连接到公司或外部网络或者不每天使用的设备的环境中，这尤其有用。
 
 例如，使用特定电脑的员工休息三天，在此期间不登录到其电脑。
 
@@ -39,11 +40,11 @@ Microsoft Defender 防病毒允许你定义终结点在需要更新和扫描自�
 
 ## <a name="set-up-catch-up-protection-updates-for-endpoints-that-havent-updated-for-a-while"></a>为一段时间未更新的终结点设置跟进保护更新
 
-如果 Microsoft Defender 防病毒在指定的时段内未下载保护更新，你可以将它设置为在下次登录时自动检查并下载最新更新。 如果你已全局禁用启动时的自动更新 [下载，这将非常有用](manage-event-based-updates-microsoft-defender-antivirus.md)。
+如果Microsoft Defender 防病毒时间未下载保护更新，可以设置为在下次登录时自动检查并下载最新更新。 如果你已全局禁用启动时的自动更新 [下载，这将非常有用](manage-event-based-updates-microsoft-defender-antivirus.md)。
 
 ### <a name="use-configuration-manager-to-configure-catch-up-protection-updates"></a>使用 Configuration Manager 配置跟进保护更新
 
-1.  在 Microsoft Endpoint Manager 控制台上，打开要更改的反恶意软件策略 (单击左侧导航窗格中的"资产和合规性"，然后将树展开到"终结点保护反恶意软件策略概述")  >    >  
+1.  在 Microsoft Endpoint Manager 控制台上，打开要更改的反恶意软件策略 (单击左侧导航窗格中的"资产和合规性"，然后将树展开到"反恶意软件策略Endpoint Protection概述)   >    >  
 
 2.  转到" **安全智能更新"** 部分并配置以下设置：
 
@@ -62,7 +63,7 @@ Microsoft Defender 防病毒允许你定义终结点在需要更新和扫描自�
 
 3. 单击 **"策略****"，然后单击"管理模板"。**
 
-4. 将树展开到 **Microsoft Defender 防病毒>签名> Windows 组件**。
+4. 展开树以Windows **签名> Microsoft Defender 防病毒 >组件**。
 
 5. 双击定义需要更新安全智能的天数设置，将选项设置为 **已启用**。 输入希望 Microsoft Defender AV 检查并下载最新保护更新的天数。
 
@@ -76,7 +77,7 @@ Microsoft Defender 防病毒允许你定义终结点在需要更新和扫描自�
 Set-MpPreference -SignatureUpdateCatchupInterval
 ```
 
-请参阅 [使用 PowerShell cmdlet](use-powershell-cmdlets-microsoft-defender-antivirus.md)  配置和运行 Microsoft Defender 防病毒和 [Defender cmdlet，](/powershell/module/defender/) 详细了解如何将 PowerShell 与 Microsoft Defender 防病毒一同使用。
+请参阅[使用 PowerShell cmdlet](use-powershell-cmdlets-microsoft-defender-antivirus.md)配置和运行 Microsoft Defender 防病毒[和 Defender cmdlet，](/powershell/module/defender/)了解有关如何将 PowerShell 与 Microsoft Defender 防病毒 一Microsoft Defender 防病毒。
 
 ### <a name="use-windows-management-instruction-wmi-to-configure-catch-up-protection-updates"></a>使用 Windows Management Instruction (WMI) 配置跟进保护更新
 
@@ -87,12 +88,12 @@ SignatureUpdateCatchupInterval
 ```
 
 有关详细信息和允许的参数，请参阅以下内容：
-- [Windows Defender WMIv2 API](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal)
+- [Windows DefenderWMIv2 API](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal)
 
 
 ## <a name="set-the-number-of-days-before-protection-is-reported-as-out-of-date"></a>设置保护报告为过期前的天数
 
-还可以指定 Microsoft Defender 防病毒保护被视为旧或过期的天数。 指定天数后，客户端将自行报告为过期，并向电脑用户显示错误。 还可能导致 Microsoft Defender 防病毒尝试基于定义的回退源顺序 [ (](manage-protection-updates-microsoft-defender-antivirus.md#fallback-order) 下载其他源) 的更新，例如将 WSUS 或 Microsoft Update 设置为第一个源后将 MMPC 用作辅助源时。
+还可以指定保护被视为旧Microsoft Defender 防病毒过期的天数。 指定天数后，客户端将自行报告为过期，并向电脑用户显示错误。 还可能导致 Microsoft Defender 防病毒 尝试根据定义的回退源顺序[ (](manage-protection-updates-microsoft-defender-antivirus.md#fallback-order)下载其他源) 的更新，例如将 WSUS 或 Microsoft Update 设置为第一个源后将 MMPC 用作辅助源时。
 
 ### <a name="use-group-policy-to-specify-the-number-of-days-before-protection-is-considered-out-of-date"></a>使用组策略指定保护被视为过期前的天数
 
@@ -102,7 +103,7 @@ SignatureUpdateCatchupInterval
 
 4.  单击 **"策略****"，然后单击"管理模板"。**
 
-5.  将树展开到 Microsoft Defender 防病毒 **>签名> Windows** 组件，并配置以下设置：
+5.  展开树以Windows **签名> Microsoft Defender 防病毒 >组件并** 配置以下设置：
 
     1.  双击定义 **间谍软件定义** 被视为过期的天数，将选项设置为 **已启用**。 输入希望 Microsoft Defender AV 考虑间谍软件安全智能过期的天数。
 
@@ -115,7 +116,7 @@ SignatureUpdateCatchupInterval
 
 ## <a name="set-up-catch-up-scans-for-endpoints-that-have-not-been-scanned-for-a-while"></a>为一段时间未扫描的终结点设置跟进扫描
 
-你可以设置在 Microsoft Defender 防病毒强制扫描之前可能错过的连续计划扫描的数量。
+你可以设置连续计划扫描的丢失次数，然后Microsoft Defender 防病毒扫描。
 
 启用此功能的过程为：
 
@@ -135,7 +136,7 @@ SignatureUpdateCatchupInterval
 
 4.  单击 **"策略****"，然后单击"管理模板"。**
 
-5.  将树展开到 **Windows 组件> Microsoft Defender 防病毒>扫描并** 配置以下设置：
+5.  展开树以Windows **扫描> Microsoft Defender 防病毒 >组件** 并配置以下设置：
 
     1.  如果已设置计划快速扫描，请双击"启用捕获快速扫描"设置，将该选项设置为 **"已启用"。** 
     2. 如果已设置计划的完全扫描，请双击打开跟进 **完全扫描** 设置，将该选项设置为 **已启用**。 单击“**确定**”。
@@ -155,7 +156,7 @@ Set-MpPreference -DisableCatchupQuickScan
 
 ```
 
-请参阅 [使用 PowerShell cmdlet](use-powershell-cmdlets-microsoft-defender-antivirus.md)  管理 Microsoft Defender 防病毒和 [Defender cmdlet，](/powershell/module/defender/) 详细了解如何将 PowerShell 与 Microsoft Defender 防病毒一同使用。
+请参阅[使用 PowerShell cmdlet](use-powershell-cmdlets-microsoft-defender-antivirus.md)管理 Microsoft Defender 防病毒[和 Defender cmdlet，](/powershell/module/defender/)详细了解如何将 PowerShell 与 Microsoft Defender 防病毒。
 
 ### <a name="use-windows-management-instruction-wmi-to-configure-catch-up-scans"></a>使用 Windows Management Instruction (WMI) 配置跟进扫描
 
@@ -167,12 +168,12 @@ DisableCatchupQuickScan
 ```
 
 有关详细信息和允许的参数，请参阅以下内容：
-- [Windows Defender WMIv2 API](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal)
+- [Windows DefenderWMIv2 API](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal)
 
 
 ### <a name="use-configuration-manager-to-configure-catch-up-scans"></a>使用 Configuration Manager 配置跟进扫描
 
-1.  在 Microsoft Endpoint Manager 控制台上，打开要更改的反恶意软件策略 (单击左侧导航窗格中的"资产和合规性"，然后将树展开到"终结点保护反恶意软件策略概述")  >    >  
+1.  在 Microsoft Endpoint Manager 控制台上，打开要更改的反恶意软件策略 (单击左侧导航窗格中的"资产和合规性"，然后将树展开到"反恶意软件策略Endpoint Protection概述)   >    >  
 
 2.  转到计划 **扫描** 部分，如果客户端计算机脱机，则强制扫描所选扫描类型 **...** 到 **是**。 
 
@@ -182,9 +183,9 @@ DisableCatchupQuickScan
 
 ## <a name="related-articles"></a>相关文章
 
-- [部署 Microsoft Defender 防病毒](deploy-manage-report-microsoft-defender-antivirus.md)
-- [管理 Microsoft Defender 防病毒更新和应用基线](manage-updates-baselines-microsoft-defender-antivirus.md)
+- [部署Microsoft Defender 防病毒](deploy-manage-report-microsoft-defender-antivirus.md)
+- [管理Microsoft Defender 防病毒更新并应用基线](manage-updates-baselines-microsoft-defender-antivirus.md)
 - [管理何时应下载和应用保护更新](manage-protection-update-schedule-microsoft-defender-antivirus.md)
 - [管理基于事件的强制更新](manage-event-based-updates-microsoft-defender-antivirus.md)
 - [管理移动设备和虚拟机 （VM） 的更新](manage-updates-mobile-devices-vms-microsoft-defender-antivirus.md)
-- [Windows 10 中的 Microsoft Defender 防病毒](microsoft-defender-antivirus-in-windows-10.md)
+- [Microsoft Defender 防病毒Windows 10](microsoft-defender-antivirus-in-windows-10.md)

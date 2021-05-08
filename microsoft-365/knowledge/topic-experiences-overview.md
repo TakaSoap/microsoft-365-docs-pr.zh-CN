@@ -1,7 +1,7 @@
 ---
 title: Microsoft Viva Topics 概述
-ms.author: efrene
-author: efrene
+ms.author: chucked
+author: chuckedmonson
 manager: pamgreen
 ms.reviewer: cjtan
 audience: admin
@@ -14,12 +14,12 @@ ms.collection:
 - m365initiative-viva-topics
 localization_priority: None
 description: Viva Topics 概述。
-ms.openlocfilehash: 4598c47b07287789a7a194914232799de5ca7b85
-ms.sourcegitcommit: 7ebed5810480d7c49f8ca03207b5ea84993d253f
+ms.openlocfilehash: b37572087794055724cb9533246f83794d88fb93
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51488153"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52275190"
 ---
 # <a name="microsoft-viva-topics-overview"></a>Microsoft Viva Topics 概述 
 
@@ -40,8 +40,12 @@ Viva Topics 使用 AI 自动搜索和识别组织中的 **主题**。 它会编�
 
 当 SharePoint 新闻和页面上的内容中提及主题时，你将看到其突出显示。 你可以从突出显示中打开主题摘要。 从摘要的标题中打开主题详细信息。 可以自动标识所提及主题，或者已由页面作者通过直接引用将主题添加到页面。 
 
-   ![主题要点](../media/knowledge-management/saturn.png) </br> 
+   ![主题要点](../media/knowledge-management/saturn.png) 
 
+
+   ![显示 Word 中通过"搜索"框进行搜索的屏幕截图。](../media/knowledge-management/word-search-2.png)
+
+   ![显示通过"搜索"上下文菜单在 Word 中搜索的屏幕截图。](../media/knowledge-management/word-search-1.png)
 
 ## <a name="knowledge-indexing"></a>知识索引
 
@@ -99,7 +103,7 @@ Viva Topics 使用 Microsoft AI 技术以识别 Microsoft 365 环境中的 **主
 
 ## <a name="admin-controls"></a>管理员控件
 
-Microsoft 365 管理中心中的管理员控件允许你管理 Viva 主题。 它们允许 Microsoft 365 全局管理员或 SharePoint 管理员：
+管理中心中的Microsoft 365控件允许你管理 Viva 主题。 它们允许 Microsoft 365 全局管理员或 SharePoint 管理员：
 
 - 控制允许你组织中的哪些用户查看 SharePoint 新式页面或 SharePoint 搜索结果中的主题。
 - 控制将爬网哪些 SharePoint 网站以识别主题。

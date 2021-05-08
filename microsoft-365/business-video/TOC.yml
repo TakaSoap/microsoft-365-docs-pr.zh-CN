@@ -161,10 +161,10 @@
           href: create-sensitivity-labels.md
     - name: 支持
       items:
-        - name: 查找答案和帮助
-          href: find-help-answers.md
         - name: 获取帮助或支持
           href: get-help-support.md
+        - name: 查找文档和培训
+          href: find-help-answers.md
         - name: 员工快速设置
           href: employee-quick-setup.md
     - name: 从 Google Workspace 切换

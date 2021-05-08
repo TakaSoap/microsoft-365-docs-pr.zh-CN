@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 所有 Microsoft 信息保护解决方案的相关要求：创建、配置和发布敏感度标签以对组织的数据进行分类和保护。
-ms.openlocfilehash: c34025d2b68eb0ee179c98ce9c97a59193f782e3
-ms.sourcegitcommit: f000358c01a8006e5749a86b256300ee3a73174c
+ms.openlocfilehash: fc7debbe2fe1d59d4d172fd23587d0b2a1e6705e
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2021
-ms.locfileid: "51994949"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52244620"
 ---
 # <a name="create-and-configure-sensitivity-labels-and-their-policies"></a>创建和配置敏感度标签及其策略
 
@@ -217,7 +217,7 @@ Azure 信息保护统一标记客户端支持许多[高级设置](/azure/informa
 
 - 对于桌面应用程序：元数据中的标签信息会保留，但由于无法再进行标签 ID 到名称的映射，导致用户看不到显示的已应用标签名称（例如，在状态栏中），因此用户会假定内容未标记。 如果标签应用了加密，则会保留加密，且用户仍会在内容打开时看到当前已存档保护模板的名称和说明。
 
-- 对于 Office 网页版：用户在状态栏或“敏感度”列中看不到标签名称。 元数据中的标签信息仅在标签未应用加密的情况下保留。 如果标签应用了加密，且你已[为 SharePoint 和 OneDrive 启用敏感度标签](sensitivity-labels-sharepoint-onedrive-files.md)，那么元数据中的标签信息就会遭移除，且加密也会遭撤消。 
+- 对于 Office 网页版：用户在状态栏或“**敏感度**”列中看不到标签名称。 元数据中的标签信息仅在标签未应用加密的情况下保留。 如果标签应用了加密，且你已[为 SharePoint 和 OneDrive 启用敏感度标签](sensitivity-labels-sharepoint-onedrive-files.md)，那么元数据中的标签信息就会遭移除，且加密也会遭撤消。 
 
 从标签策略中移除敏感度标签或删除敏感度标签时，这些更改最多可能需要 24 小时才能复制到所有用户和服务。
 

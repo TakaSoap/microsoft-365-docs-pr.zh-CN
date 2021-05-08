@@ -8,30 +8,30 @@ manager: scotv
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
-ms.collection: Adm_Commerce_Pay
+ms.custom: CommercePayInfo
 localization_priority: Normal
-description: 了解在何处发送订阅付款。
+description: 了解在哪里发送订阅付款。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 840cb16360a793f351507122566931e648e04866
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: c6f1e6617431d155cfd8282bcaaf3cfd4bc86dfd
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50542772"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52272992"
 ---
 # <a name="payment-information-for-russia"></a>俄罗斯的付款信息
 
 [查找另一个国家/地区](../billing-and-payments/pay-for-your-subscription.md)。
 
-请仅按 RUB 付款，并参考 (付款) 付款金额。
+Please pay in RUB only and reference invoice number (s) on your payment invoice.
 
 ## <a name="electronic-funds-transfer"></a>电子资金转帐
 
-**Bank：** 在俄罗斯的 ZAO KBBank  
+**Bank：** ZAO KB 在重写的 KbBank  
 **SWIFT 代码：** 一个  
-**省/市/** 区：044525202  
+**为** ：044525202  
  INN：7731420476  
  KPP：773101001  
-**帐号** ：40702810000702700004  
-**对应帐户** ：301018103000000000202（俄罗斯 OPERU Mossky GTU Bank）  
+**帐号** ：407028100000702700004  
+**对应帐户** ：俄罗斯 OPERU Moskovsky GTU Bank 中的 301018103000000000202  
 **帐户名称：** Microsoft 付款（俄罗斯）LLC

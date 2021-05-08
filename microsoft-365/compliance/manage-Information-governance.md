@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 recommendations: false
 description: 实施 Microsoft 信息治理功能，以管理数据，满足合规性或监管要求。
-ms.openlocfilehash: 6a0db63f218db72dbda9afc510cb5ef5f5e13eaa
-ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
+ms.openlocfilehash: 304b4e57702c55242e49fae7fdf4a36e9b2f7cdb
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52107700"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52244560"
 ---
 # <a name="microsoft-information-governance-in-microsoft-365"></a>Microsoft 365 中的 Microsoft 信息治理
 
@@ -31,6 +31,8 @@ ms.locfileid: "52107700"
 ![管理数据 - 信息治理和记录管理](../media/information-governance-records-management.png)
 
 需要保护数据？ 请参阅 [Microsoft 365 中的 Microsoft 信息保护](information-protection.md)。
+
+为了帮助你遵守数据隐私管理法规，我们设计了指导你通过端到端过程来规划和实施跨 Microsoft 365 功能的工作流，包括安全访问、威胁防护、信息保护和数据管理。 有关详细信息，请参阅[使用 Microsoft 365 为数据隐私法规部署信息保护](../solutions/information-protection-deploy.md) (aka.ms/m365dataprivacy)。 
 
 ## <a name="information-governance"></a>信息管理政策
 

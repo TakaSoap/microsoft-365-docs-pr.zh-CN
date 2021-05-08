@@ -1,7 +1,7 @@
 ---
 title: 按 ID 获取一个修正活动
 description: 返回指定修正活动的信息。
-keywords: api， 修正， 修正 api， 获取， 修正任务， 列表
+keywords: api， 修正， 修正 api， 获取， 修正任务， 按 ID 修正，
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 40a7102a8c7dbf63641daaf47bbd9aa9f2e54649
-ms.sourcegitcommit: e5b1a900043e2e41650ea1cbf4227043729c6053
+ms.openlocfilehash: e0f68e8a28b302f0ae1ca06a2f892fea38a219b2
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52061100"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52244439"
 ---
 # <a name="get-one-remediation-activity-by-id"></a>按 ID 获取一个修正活动
 
@@ -49,48 +49,57 @@ ms.locfileid: "52061100"
 
 **URL：** GET： /api/remediationTasks/ \{ id\}
 
-**属性** 详细信息
+## <a name="permissions"></a>权限
+
+若要调用此 API，需要以下权限之一。 若要了解详细信息（包括如何选择权限），请参阅使用 [Microsoft Defender for Endpoint API 了解详细信息。](apis-intro.md)
+
+权限类型 | 权限 | 权限显示名称
+:---|:---|:---
+应用程序 | RemediationTask.Read.All | \'阅读威胁和漏洞管理漏洞信息\'
+委派（工作或学校帐户） | RemediationTask.Read.Read | \'阅读威胁和漏洞管理漏洞信息\'
+
+## <a name="properties"></a>属性
 
 属性 (id)  | 数据类型 | 说明 | 返回值的示例
 :---|:---|:---|:---
-“类别” | String | 软件/安全配置 (修正活动的)  | 软件
-completerEmail | String | 如果修正活动是由某人手动完成的，此列将包含他们的电子邮件 | 空
-completerId | String | 如果修正活动是由某人手动完成的，则此列包含其对象 ID | 空
-completionMethod | String | 如果所有设备 (都由选择"标记为已完成) 或"手动"进行修补，则修正活动可以"自动"完成。 | 自动
+“类别” | 字符串 | 软件/安全配置 (修正活动的)  | 软件
+completerEmail | 字符串 | 如果修正活动是由某人手动完成的，此列将包含他们的电子邮件 | 空
+completerId | 字符串 | 如果修正活动是由某人手动完成的，则此列包含其对象 ID | 空
+completionMethod | 字符串 | 如果所有设备 (都由选择"标记为已完成) 或"手动"进行修补，则修正活动可以"自动"完成。 | 自动
 createdOn | 日期时间 | 创建此修正活动的时间 | 2021-01-12T18：54：11.5499478Z
-说明 | String | 此修正活动的说明 | 将 Chrome 更新到更高版本，以缓解影响你的设备的 1248 个已知漏洞。
+说明 | 字符串 | 此修正活动的说明 | 将 Microsoft Silverlight 更新到更高版本，以减少影响设备的已知漏洞。
 dueOn | 日期时间 | 此修正活动的创建者设置的截止日期 | 2021-01-13T00：00：00Z
 fixedDevices |  | 已修复的设备数量 | 2
-id | String | 此修正活动的 ID | 097d9735-5479-4899-b1b7-77398899df92
-nameId | String | 相关产品名称 | chrome
-priority | String | 为此修正活动设置的创建者设置的优先级 (高\中\低)  | 高
-productId | String | 相关产品 ID | google-_-chrome
-productivityImpactRemediationType | String | 只能请求对没有用户影响的设备进行一些配置更改。 此值指示"所有公开的设备"或"仅不会影响用户的设备"之间的选择。 | AllExposedAssets
-rbacGroupNames | String | 相关设备组名称 | [ "Windows Servers"， "Windows 10" ]
-recommendedProgram | String | 要升级到的推荐程序 | 空
-recommendedVendor | String | 建议升级到的供应商 | 空
-recommendedVersion | String | 要更新/升级到的建议版本 | 空
-relatedComponent | String | 此修正活动的相关组件 (安全建议计划的相关组件)  | Google Chrome
-requesterEmail | String | 创建者电子邮件地址 | globaladmin@UserName.contoso.com
-requesterId | String | Creator 对象 ID | r647211f-2e16-43f2-a480-16ar3a2a796r
-requesterNotes | String | 注释 (此) 活动的创建者添加的自定义文本 | 空
-scid | String | 相关安全建议 SCID | 空
-状态 | String | 修正活动状态 (/已完成)  | 活动
+id | 字符串 | 此修正活动的 ID | 097d9735-5479-4899-b1b7-77398899df92
+nameId | 字符串 | 相关产品名称 | Microsoft Silverlight
+priority | 字符串 | 为此修正活动设置的创建者设置的优先级 (高\中\低)  | 高
+productId | 字符串 | 相关产品 ID | microsoft-_-silverlight
+productivityImpactRemediationType | 字符串 | 只能请求对没有用户影响的设备进行一些配置更改。 此值指示"所有公开的设备"或"仅不会影响用户的设备"之间的选择。 | AllExposedAssets
+rbacGroupNames | 字符串 | 相关设备组名称 | [ "Windows Servers"， "Windows 10" ]
+recommendedProgram | 字符串 | 要升级到的推荐程序 | 空
+recommendedVendor | 字符串 | 建议升级到的供应商 | 空
+recommendedVersion | 字符串 | 要更新/升级到的建议版本 | 空
+relatedComponent | 字符串 | 此修正活动的相关组件 (安全建议计划的相关组件)  | Microsoft Microsoft Silverlight
+requesterEmail | 字符串 | 创建者电子邮件地址 | globaladmin@UserName.contoso.com
+requesterId | 字符串 | Creator 对象 ID | r647211f-2e16-43f2-a480-16ar3a2a796r
+requesterNotes | 字符串 | 注释 (此) 活动的创建者添加的自定义文本 | 空
+scid | 字符串 | 相关安全建议 SCID | 空
+状态 | 字符串 | 修正活动状态 (/已完成)  | 活动
 statusLastModifiedOn | 日期时间 | 更新状态字段的日期 | 2021-01-12T18：54：11.5499487Z
 targetDevices | 长型 | 此修正适用于的公开设备数量 | 43
-title | String | 此修正活动的标题 | 更新 Google Chrome
-type | String | 修正类型 | 更新
-vendorId | String | 相关供应商名称 | google
+title | String | 此修正活动的标题 | Microsoft Silverlight
+type | 字符串 | 修正类型 | Update
+vendorId | 字符串 | 相关供应商名称 | Microsoft
 
 ## <a name="example"></a>示例
 
-**请求** 示例
+### <a name="request-example"></a>请求示例
 
 ```http
 GET https://api-luna.securitycenter.windows.com/api/remediationtasks/03942ef5-aecb-4c6e-b555-d6a97013844c
 ```
 
-**响应** 示例
+### <a name="response-example"></a>响应示例
 
 ```json
 { 
@@ -137,6 +146,6 @@ GET https://api-luna.securitycenter.windows.com/api/remediationtasks/03942ef5-ae
 
 - [列出一个修正活动的公开设备](get-remediation-exposed-devices-activities.md)
 
-- [基于风险的威胁&漏洞管理](next-gen-threat-and-vuln-mgt.md)
+- [基于风险的威胁& 漏洞管理](next-gen-threat-and-vuln-mgt.md)
 
 - [组织中漏洞](tvm-weaknesses.md)

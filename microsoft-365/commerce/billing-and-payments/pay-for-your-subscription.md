@@ -21,14 +21,17 @@ ms.custom:
 - fwlink 808700 for SEPA UI glink 906 for older uI
 - AdminSurgePortfolio
 - commerce
-ms.openlocfilehash: 582ecb0f9b46d877c30aa29334b30b9209c93993
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 65454dcc71645b370d2ebfc875474151c0954a3c
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51576933"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245000"
 ---
 # <a name="how-to-pay-for-your-subscription"></a>如何支付订阅费用
+
+> [!IMPORTANT]
+> 截至 2021 年 1 月 26 日，不再支持比利时、法国、意大利、卢森堡、葡萄牙、西班牙和美国客户的新银行账户。 如果你是其中一个国家/地区的现有客户，则可以继续使用现有银行帐户支付订阅，并且可以向其中添加新订阅（前提是该银行帐户的信誉良好）。
 
 可使用信用卡、借记卡或银行账户支付订阅费用。 某些情况下，可以使用支票或电子资金转账 (EFT) 按发票付款。 如果有计费配置文件，则选项会略有不同。 有关详细信息，请参阅 [如何支付具有计费配置文件的订阅费用](pay-for-subscription-billing-profile.md)。 如果不确定账户是否具有计费配置文件，请参阅 [了解计费配置文件](manage-billing-profiles.md)。
 
@@ -37,7 +40,7 @@ ms.locfileid: "51576933"
 ## <a name="before-you-begin"></a>准备工作
 
 - 只有全局或帐单管理员才能执行本文所述步骤。 有关详细信息，请参阅 [关于管理员角色](../../admin/add-users/about-admin-roles.md)。
-- 结帐时选择的付款方式是我们在以后所有计费周期使用的付款方式。 但你随时都可以更改。
+- 结帐时选择的付款方式是未来所有计费周期使用的付款方式。但随时都可以进行更改。
 
 ## <a name="paying-by-credit-or-debit-card-or-bank-account"></a>使用信用卡、借记卡或银行账户支付
 

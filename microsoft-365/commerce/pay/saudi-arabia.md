@@ -8,27 +8,27 @@ manager: scotv
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
-ms.collection: Adm_Commerce_Pay
+ms.custom: CommercePayInfo
 localization_priority: Normal
-description: 了解在何处发送订阅付款。
+description: 了解在哪里发送订阅付款。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 43e5c5534a931568bfbb444d15ae3b987980074c
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: 61a6b3a82b63e44520337f51cd06141f05b013af
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50542640"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52272932"
 ---
 # <a name="payment-information-for-saudi-arabia"></a>沙特阿拉伯的付款信息
 
 [查找另一个国家/地区](../billing-and-payments/pay-for-your-subscription.md)。
 
-请仅以 EUR 支付，并参考 (付款) 付款金额。
+请仅以 EUR 支付，并参考 (付款) 的发票编号。
 
 ## <a name="electronic-funds-transfer"></a>电子资金转帐
 
-**Bank：** Bank， London  
-**SWIFT 代码/BIC：** 一个 2016 年 1 月 2 日  
-**IBAN：** GB31CITI18500812510049 **SORT 代码：185008**  
+**Bank：** 年，伦敦  
+**SWIFT 代码/BIC：** 一百万  
+**IBAN：** GB31CITI18500812510049 **排序代码** ：185008  
 **帐号** ：12510049   
 **帐户名称：** MICROSOFT

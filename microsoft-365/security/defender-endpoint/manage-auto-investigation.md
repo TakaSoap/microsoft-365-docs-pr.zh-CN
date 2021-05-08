@@ -8,8 +8,8 @@ ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: deniseb
-author: denisebmsft
+author: JoeDavies-MSFT
+ms.author: josephd
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
@@ -19,12 +19,12 @@ ms.collection:
 ms.topic: how-to
 ms.date: 01/29/2021
 ms.technology: mde
-ms.openlocfilehash: 48674292e5a72ccc371ff4bf43dc499f19b3886d
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: b0c983f4ba939cee6485570af774c8a728c73944
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51055406"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52274924"
 ---
 # <a name="review-remediation-actions-following-an-automated-investigation"></a>在自动调查后查看修正操作
 
@@ -61,7 +61,7 @@ ms.locfileid: "51055406"
 
 ## <a name="review-pending-actions"></a>查看挂起的操作
 
-1. 转到 Microsoft 365 安全中心 [https://security.microsoft.com](https://security.microsoft.com) () 登录。
+1. 转到安全Microsoft 365中心 [https://security.microsoft.com](https://security.microsoft.com) () 登录。
 2. 在“导航”窗格中，选择“操作中心”。 
 3. 查看"挂起" **选项卡上的** 项目。 
 4. 选择一个操作以打开其飞出窗格。
@@ -73,7 +73,7 @@ ms.locfileid: "51055406"
 
 ## <a name="review-completed-actions"></a>查看已完成的操作
 
-1. 转到 Microsoft 365 安全中心 [https://security.microsoft.com](https://security.microsoft.com) () 登录。
+1. 转到安全Microsoft 365中心 [https://security.microsoft.com](https://security.microsoft.com) () 登录。
 2. 在“导航”窗格中，选择“操作中心”。 
 3. 查看"历史记录" **选项卡上的** 项目。 
 4. 选择一个项目以查看有关该修正操作的详细信息。
@@ -111,7 +111,7 @@ ms.locfileid: "51055406"
 |**Semi - 需要批准核心文件夹修正** |对于一 *条证据* ，已到达"可疑"裁定。 <br/><br/>修正操作正在等待审批。  |[批准 (或拒绝) 挂起的操作。](#review-pending-actions)|
 |**Semi - 需要审批非临时文件夹修正** |对于一 *条证据* ，已到达"恶意"裁定。 <br/><br/>如果项目是不在临时文件夹中的文件或可执行文件（如用户的下载文件夹或临时文件夹）中，则修正操作将等待审批。 <br/><br/>如果项目是临时 *文件夹中的文件或* 可执行文件，将自动执行修正操作。  |1. [批准 (或拒绝) 挂起的操作](#review-pending-actions)<br/><br/>2. [查看已完成的操作](#review-completed-actions)  |
 |**Semi - 需要审批非临时文件夹修正** |对于一 *条证据* ，已到达"可疑"裁定。 <br/><br/>修正操作正在等待审批。 |[批准 (或拒绝) 挂起的操作](#review-pending-actions)  | 
-|任何完全 **或****半** 自动化级别 |对于一 *条证据，* 未发现任何威胁裁定。 <br/><br/>不执行修正操作，并且没有任何操作等待审批。 |[查看自动调查的详细信息和结果](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/auto-investigation-action-center) |
+|任何完全 **或****半** 自动化级别 |对于一 *条证据，* 未发现任何威胁裁定。 <br/><br/>不执行修正操作，并且没有任何操作等待审批。 |[查看自动化调查的详细信息和结果](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/auto-investigation-action-center) |
 |**不建议 (** 自动响应) |没有自动调查运行，因此不会做出裁定，并且不会采取修正操作或等待批准。 |[考虑设置或更改设备组以使用 **完全或****半** 自动化](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/machine-groups) |
 
 在 Microsoft Defender for Endpoint 中，所有裁定都跟踪在 [操作中心 中](auto-investigation-action-center.md#new-a-unified-action-center)。
@@ -120,7 +120,7 @@ ms.locfileid: "51055406"
 
 - [了解实时响应功能](live-response.md)
 - [使用高级搜寻主动搜寻威胁](advanced-hunting-overview.md)
-- [在 Microsoft Defender for Endpoint 中解决误报/负数](defender-endpoint-false-positives-negatives.md)
+- [解决 Microsoft Defender for Endpoint 中的误报/漏报](defender-endpoint-false-positives-negatives.md)
 
 ## <a name="see-also"></a>另请参阅
 

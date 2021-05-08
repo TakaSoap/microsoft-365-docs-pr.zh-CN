@@ -8,28 +8,35 @@ manager: scotv
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
-ms.collection: Adm_Commerce_Pay
+ms.custom: CommercePayInfo
 localization_priority: Normal
-description: 了解在何处发送订阅付款。
+description: 了解在哪里发送订阅付款。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 9c936312fae817e08f947b20693079072c4d942b
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: 37546e213631b43a6797c7c12f37cf0cad783cd9
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50543156"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52273292"
 ---
-# <a name="payment-information-for-mexico"></a>墨西哥的付款信息
+# <a name="payment-information-by-deposit-or-electronic-transfer-only-for-mexico"></a>仅针对墨西哥的通过 (或电子) 
 
 [查找另一个国家/地区](../billing-and-payments/pay-for-your-subscription.md)。
 
-请仅以墨西哥第三方货币支付。 若要处理你的付款，你的公司名称和发票 (付款) 支付时必须提供你的公司名称和发票编号。
+通过存放或电子传输付款：
 
-## <a name="electronic-funds-transfer"></a>电子资金转帐
+1. Please select at checkout the payment method "Invoice (pay by check or wire transfer) ". 在接下来 24 到 72 小时内，你将收到注册为联系人的电子邮件中的产品发票。 发票将包括完成付款的说明。
+2. 支付到以下银行帐户 (以便正确处理付款，请指明购买者的名称和相应的发票) ：  
 
 **Bank：** Bank/Banamex  
-**分支：** Act. Roberto Medellin 800， P.B. Sur，Col. Santa fe，墨西哥城市 C.P. 01210，墨西哥  
+**分支：** Act. Roberto Medellin 800， P.B. Sur、Col. 一位圣fe，墨西哥城市 C.P. 01210，墨西哥  
 **SWIFT 代码：** BNMXMM  
 **CLABE** 002180002337160225  
 **帐号** ：0233716022  
-**帐户名称：** Microsoft Payments Inc.
+**帐户名称：** Microsoft Payments Inc.  
+**货币：** 墨西哥货币
+
+## <a name="important-information"></a>重要信息
+
+1. 通过银行或电子转帐付款仅适用于大于 MXN $3，500 的金额。
+2. 必须在 30 天内付款;否则订单将自动取消。

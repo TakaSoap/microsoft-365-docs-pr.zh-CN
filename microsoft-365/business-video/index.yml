@@ -1,10 +1,10 @@
 ### YamlMime:Hub
 title: Microsoft 365 小型企业版培训
-summary: 了解如何为企业设置和管理 Microsoft 365。
+summary: 了解如何设置和管理Microsoft 365业务。
 brand: m365
 metadata:
   title: Microsoft 365 小型企业版培训
-  description: 在 Microsoft 365 管理中心中设置和管理 Microsoft 365。
+  description: 在管理中心Microsoft 365和管理Microsoft 365管理中心。
   ms.service: O365-administration
   ms.prod: microsoft-365-business
   ms.topic: hub-page
@@ -15,9 +15,9 @@ metadata:
   ms.custom: AdminSurgePortfolio
 productDirectory:
   items:
-    - title: 入门
+    - title: 开始行动
       imageSrc: 'https://docs.microsoft.com/office/media/icons/get-started-blue.svg'
-      summary: 规划移动到 Microsoft 365 商业版。
+      summary: 规划向Microsoft 365迁移。
       url: what-is-microsoft-365.md
     - title: 设置 Microsoft 365 商业版
       imageSrc: 'https://docs.microsoft.com/office/media/icons/add-to-cloud-blue.svg'
@@ -25,15 +25,15 @@ productDirectory:
       url: sign-up.md
     - title: 设置计算机
       imageSrc: 'https://docs.microsoft.com/office/media/icons/device-desktop-download-blue.svg'
-      summary: 安装 Office、设置电子邮件、迁移文件...
+      summary: 安装Office、设置电子邮件、迁移文件...
       url: upgrade.md
     - title: 设置移动设备
       imageSrc: 'https://docs.microsoft.com/office/media/icons/device-mobile-download-blue.svg'
-      summary: 在移动设备上安装 Office 应用。
+      summary: 在Office安装应用。
       url: work-from-anywhere.md
     - title: 与其他人协作
       imageSrc: 'https://docs.microsoft.com/office/media/icons/collaborate-blue.svg'
-      summary: 与 Teams 中的员工和客户合作。
+      summary: 与公司的员工和客户Teams。
       url: collab-outlook-teams.md
     - title: 存储和共享文件
       imageSrc: 'https://docs.microsoft.com/office/media/icons/cloud-storage-folder-blue.svg'
@@ -61,18 +61,18 @@ productDirectory:
       url: overview-m365-security.md
     - title: 获取支持
       imageSrc: 'https://docs.microsoft.com/office/media/icons/headset-blue.svg'
-      summary: 获取有关 Microsoft 365 商业版的帮助。
-      url: find-help-answers.md
+      summary: 获取有关适用于Microsoft 365的帮助。
+      url: get-help-support.md
 additionalContent:
   sections:
     - title: 了解详细信息
       items:
-        - title: 了解 Office
-          summary: 了解如何使用 Word、Excel、PowerPoint 和其他 Office 应用。
+        - title: 了解Office
+          summary: 了解如何使用 Word、Excel、PowerPoint和其他Office应用。
           url: 'https://support.microsoft.com/training'
         - title: 获取 ITPros 培训
           summary: 大中型企业的完整学习路径。
           url: 'https://docs.microsoft.com/learn/m365/'
         - title: 查找更多管理员资源
-          summary: 转到 Microsoft 365 管理中心帮助网站。
+          summary: 转到管理Microsoft 365帮助网站。
           url: ../admin/index.yml

@@ -21,12 +21,12 @@ ms.topic: how-to
 ms.custom: autoir
 ms.reviewer: evaldm, isco
 ms.technology: m365d
-ms.openlocfilehash: e3e842f812c5675334cc25fa35544165129db2b4
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: f3dba2116e0f13f265937ef65fd3b69bcb1e725b
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245884"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52274648"
 ---
 # <a name="view-and-manage-actions-in-the-action-center"></a>在操作中心查看和管理操作
 
@@ -37,24 +37,25 @@ ms.locfileid: "52245884"
 - Microsoft 365 Defender
 
 Microsoft 365 Defender 中的威胁防护功能可能会导致某些修正操作。 下面是一些示例：
-- [自动调查](m365d-autoir.md) 可能会导致自动执行修正操作或等待审批。
+
+- [自动调查](m365d-autoir.md) 可能会导致自动执行修正操作或等待您的批准。
 - 防病毒、反恶意软件和其他威胁防护功能可能会导致修正操作，例如阻止文件、URL 或进程，或将项目发送到隔离区。
 - 安全运营团队可以手动采取修正操作，例如，在高级搜寻[期间](advanced-hunting-overview.md)或在调查[警报或](investigate-alerts.md)[事件时](investigate-incidents.md)。
 
 > [!NOTE]
-> 必须具有[相应的权限](m365d-action-center.md#required-permissions-for-action-center-tasks)才能批准或拒绝修正操作。 有关详细信息，请参阅在 Microsoft 365 Defender 中自动[调查和响应的先决条件](m365d-configure-auto-investigation-response.md#prerequisites-for-automated-investigation-and-response-in-microsoft-365-defender)。
+> 必须具有[相应的权限](m365d-action-center.md#required-permissions-for-action-center-tasks)才能批准或拒绝修正操作。 有关详细信息，请参阅 [先决条件](m365d-configure-auto-investigation-response.md#prerequisites-for-automated-investigation-and-response-in-microsoft-365-defender)。
 
 ## <a name="review-pending-actions-in-the-action-center"></a>在操作中心查看挂起的操作
 
 应尽快批准（或拒绝）挂起的操作，以便自动调查可以继续并及时完成。 
 
-![批准或拒绝操作](../../media/air-actioncenter-itemselected.png)
-
 1. 转到 [https://security.microsoft.com](https://security.microsoft.com) 并登录。 
 
 2. 在“导航”窗格中，选择“操作中心”。 
 
-3. 在操作中心中的“挂起”选项卡上，选择列表中的某个项。 将打开其飞出窗格。
+3. 在操作中心中的“挂起”选项卡上，选择列表中的某个项。 将打开其飞出窗格。 下面是一个示例。
+
+   ![批准或拒绝操作](../../media/air-actioncenter-itemselected.png)
 
 4. 查看飞出窗格中的信息，然后执行以下步骤之一：
    - 选择 **"打开调查"** 页以查看有关调查的更多详细信息。
@@ -90,11 +91,11 @@ Microsoft 365 Defender 中的威胁防护功能可能会导致某些修正操作
 
 1. 转到操作中心 [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) () 并登录。
 
-2. 在" **历史记录"** 选项卡上，选择操作类型为"隔离 **文件"的文件**。
+2. 在" **历史记录"** 选项卡上，选择具有隔离文件 **操作类型的** 文件。
 
 3. 在屏幕右侧窗格中，选择"应用到此文件的 **X** 更多实例"，然后选择"撤消 **"。**
 
 ## <a name="next-steps"></a>后续步骤
 
 - [查看自动调查的详细信息和结果](m365d-autoir-results.md)
-- [了解如何在获得一个 (时处理误报/) ](m365d-autoir-report-false-positives-negatives.md)
+- [解决误报或漏报) ](m365d-autoir-report-false-positives-negatives.md)

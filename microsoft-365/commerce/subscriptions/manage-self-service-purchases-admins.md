@@ -20,12 +20,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: 管理员可以了解如何管理其组织中用户购买的自助服务。
-ms.openlocfilehash: febf0ee470e735a454dc7a9e747de5025c7a4a51
-ms.sourcegitcommit: c5d1528559953c6db7dca1d5cb453e0aa3215f02
+ms.openlocfilehash: 59d64c047ddf4f33c2ef3277f3139f1b7692b891
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/27/2021
-ms.locfileid: "51398170"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52244988"
 ---
 # <a name="manage-self-service-purchases-admin"></a>管理自助购买（管理员）
 
@@ -43,14 +43,13 @@ ms.locfileid: "51398170"
 
 ::: moniker range="o365-germany"
 
-1. 在 <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">管理中心</a>中，转到" **帐单** > **""产品"** 页面。
+1. 在管理中心中，转到“**计费**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">你的产品</a>”页面。
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. 在 <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">管理中心</a>中，转到" **帐单** > **""产品"** 页面。
-
+1. 在管理中心中，转到“**计费**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">你的产品</a>”页面。
 ::: moniker-end
 
 2. 在"**产品**"选项卡上，选择筛选器图标，然后选择"**自助服务"。**
@@ -59,7 +58,7 @@ ms.locfileid: "51398170"
 ## <a name="view-who-has-licenses-for-a-self-service-purchase-subscription"></a>查看谁拥有自助服务购买订阅的许可证
 
 > [!NOTE]
-> 作为管理员，你无法分配或取消分配组织中用户购买的自助购买订阅的许可证。 你可以 [接管自助服务购买订阅](#take-over-a-self-service-purchase-subscription)，然后分配或取消分配许可证。
+> 作为管理员，你不能为组织中用户购买的自助购买订阅分配或取消分配许可证。 你可以 [接管自助购买订阅](#take-over-a-self-service-purchase-subscription)，然后分配或取消分配许可证。
 
 ::: moniker range="o365-worldwide"
 
@@ -69,12 +68,13 @@ ms.locfileid: "51398170"
 
 ::: moniker range="o365-germany"
 
-1. 在管理 <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">中心</a>中，转到"帐单 > **""许可证"** 页面。
+ 1. 在管理中心，转到“**计费**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=848038" target="_blank">许可证</a>”页面。
+
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. 在管理 <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">中心</a>中，转到"帐单 > **""许可证"** 页面。
+ 1. 在管理中心，转到“**计费**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=850625" target="_blank">许可证</a>”页面。
 
 ::: moniker-end
 
@@ -189,7 +189,7 @@ ms.locfileid: "51398170"
 ::: moniker-end
 
 2. 在"**产品**"选项卡上，选择筛选器图标，然后选择"**自助服务"。**
-3. 选择要取消的订阅。
+3. 选择想要取消的订阅。
 4. On the subscription details page， in the **Subscriptions and settings** section， select **Take control of this subscription**.
 5. 在右侧窗格中，选择"取消 **订阅"。**
 6. 从下拉列表中选择取消原因，然后选择取消 **订阅**。
@@ -197,7 +197,7 @@ ms.locfileid: "51398170"
 8. 关闭右窗格。
 9. 在订阅详细信息页面上， **订阅状态** 将显示为 **已删除**。
 
-## <a name="need-help-contact-us"></a>需要帮助？ 请联系我们。
+## <a name="need-help-contact-us"></a>需要帮助? 请联系我们。
 
 有关自助服务购买的常见问题，请参阅 [自助服务购买常见问题](self-service-purchase-faq.md)解答。
 

@@ -29,12 +29,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: 了解 Microsoft 365 商业高级版，这是一项订阅服务，其中包括 Office 效率类应用，以及为企业抵御网络威胁的高级保护功能。
-ms.openlocfilehash: d6b0ded25e0478f85e73b807789463e4d55b1bb0
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: a355c9856ead4a66f6876cc7cb5aa8eb469d7f12
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51578339"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52244848"
 ---
 # <a name="overview-of-microsoft-365-business-premium"></a>Microsoft 365 商业高级版概述
 
@@ -46,7 +46,7 @@ Microsoft 365 商业高级版（旧称为“Microsoft 365 商业版”）是为�
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2mhaA] 
   
-如果你觉得这段视频有用，请查看[适用于小型企业和 Microsoft 365 新手的完整培训系列](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)。 
+如果你觉得这段视频有用，请查看[适用于小型企业和 Microsoft 365 新手的完整培训系列](../business-video/index.yml)。 
 
 Microsoft 365 商业高级版最多支持 300 个许可证。 如果需要更多许可证，请参阅 [Microsoft 365 企业版](../enterprise/index.yml)文档，以了解详细信息。
 
@@ -71,11 +71,11 @@ Microsoft 365 商业高级版有助于在所有这些情况下保护你的数据
 
 Microsoft 365 商业高级版通过以下方式 **抵御威胁**：
 
-- 实时扫描电子邮件和文档中的链接，以阻止不安全的网站 (安全) 。
+- 实时扫描电子邮件和文档中的链接，以阻止不安全的 (保险箱链接) 。
 
-- 在沙盒环境中对电子邮件附件执行高级分析，以检测安全附件 (新开发的) 。 
+- 在沙盒环境中执行电子邮件附件的高级分析，以检测新开发的恶意软件 (保险箱附件) 。 
 
-- 启用使用机器学习模型和模拟检测的防钓鱼策略，以防范高级攻击 (Defender for Office 365 智能中心中的防钓鱼) 。 
+- 启用使用机器学习模型和模拟检测的防钓鱼策略，以防范高级攻击 (Defender 中的反网络钓鱼Office 365智能) 。 
 
 - 设置高级策略，用于禁用来自不受信任的位置的访问，或绕过受信任的位置（如办公网络）的多重身份验证（包括受信任的 IP 和条件访问的 Azure MFA）。 
 
@@ -111,6 +111,6 @@ Microsoft 365 商业高级版通过以下方式 **抵御威胁**：
 
 - 如果你没有合作伙伴，又要获取 Microsoft 365 商业高级版，可以[在此处购买](https://www.microsoft.com/microsoft-365/business)，并按照[注册](sign-up.md)说明操作。
 
-## <a name="see-also"></a>另请参阅
+## <a name="related-content"></a>相关内容
 
-[Microsoft 365 商业高级版培训视频](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[Microsoft 365 商业高级版培训视频 (](../business-video/index.yml)链接页) 

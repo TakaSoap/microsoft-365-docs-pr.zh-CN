@@ -25,12 +25,12 @@ search.appverid:
 - MOE150
 ms.assetid: 2d75860f-c527-4352-a7f6-73eba54c0c72
 description: 了解如何管理电子邮件签名，包括进入或离开组织的所有电子邮件的法律免责声明或披露声明。
-ms.openlocfilehash: b599ef8b6d0bb236b6111bae86c92409601e00d0
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: e1c3df235442fdc6f569825a7137c92bfc5bb044
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50914230"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52244523"
 ---
 # <a name="create-organization-wide-signatures-and-disclaimers"></a>创建组织范围内的签名和免责声明
 
@@ -40,7 +40,7 @@ ms.locfileid: "50914230"
   
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1IEWf] 
 
-如果你发现此视频有帮助，请查看[适用于小型企业和 Microsoft 365 新用户的完整培训系列](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)。
+如果你发现此视频有帮助，请查看[适用于小型企业和 Microsoft 365 新用户的完整培训系列](../../business-video/index.yml)。
 
 ## <a name="create-a-signature-that-applies-to-all-messages"></a>创建一个应用于所有邮件的签名
 
@@ -69,7 +69,7 @@ ms.locfileid: "50914230"
    
     找不到需要的应用？ 从应用启动器中，选择 **"** 所有应用"以查看可用应用的字母列表。 可在此处搜索特定应用。 
     
-2. 选择 **"管理中心"，** 然后选择 **"Exchange"。**
+2. 选择 **"管理中心**"，然后选择 **"Exchange"。**
     
 3. 在"邮件流"下，选择"**规则"。**
     
@@ -80,7 +80,7 @@ ms.locfileid: "50914230"
 6. 在 **"应用此规则"** 下，选择 **"[应用于所有邮件]"。**
     
     > [!TIP]
-    > [了解](/Exchange/policy-and-compliance/mail-flow-rules/signatures#Scoping)有关应用条件的详细信息。  (此范围文章适用于Exchange Server，但也适用于 Microsoft 365.)  
+    > [了解](/Exchange/policy-and-compliance/mail-flow-rules/signatures#Scoping)有关应用条件的详细信息。  (此范围文章适用于Exchange Server，但它也适用于 Microsoft 365.)  
   
 7. 在"执行以下操作"下，保留" **附加免责声明**"处于选中状态。 
     
@@ -101,7 +101,7 @@ ms.locfileid: "50914230"
     
 ## <a name="limitations-of-organization-wide-signatures"></a>组织范围签名的限制
 
-在 Microsoft 365 中管理电子邮件签名时，不能执行以下操作：
+在管理电子邮件签名时，不能执行以下操作Microsoft 365：
   
 - 直接在最新电子邮件回复或转发下插入签名
     
@@ -115,4 +115,4 @@ ms.locfileid: "50914230"
   
 ## <a name="more-resources"></a>更多资源
 
-- 有关 [使用](/exchange/security-and-compliance/mail-flow-rules/disclaimers-signatures-footers-or-headers) PowerShell 的信息，请参阅 Exchange Online 中的组织范围邮件免责声明、签名、页脚或标头。
+- 有关[使用](/exchange/security-and-compliance/mail-flow-rules/disclaimers-signatures-footers-or-headers)PowerShell 的信息，请参阅组织范围内的邮件免责声明、签名、页脚或 Exchange Online标头。

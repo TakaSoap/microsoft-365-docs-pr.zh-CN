@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 9cb0c7375b538f502cf6165f13c68fd4b2fdcc64
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: fc5a64f4be1b782c423c2ae9e2222a1424be97e0
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934749"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52274720"
 ---
 # <a name="deploy-updates-for-microsoft-defender-for-endpoint-on-linux"></a>在 Linux 上部署 Microsoft Defender for Endpoint 更新
 
@@ -44,6 +44,10 @@ Microsoft 会定期发布软件更新，以提高性能、安全性和提供新�
 > ```bash
 > mdatp health --field product_expiration
 > ```
+
+
+无论用于部署 (Beta (预览体验成员) 、预览版 (External) 、Current (Production) ) 的 Microsoft Defender for Endpoint 功能都等效。
+
 
 若要手动更新 Linux 上的 Defender for Endpoint，请执行以下命令之一：
 

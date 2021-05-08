@@ -7,7 +7,7 @@ ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localization_priority: normal
+localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
@@ -15,12 +15,13 @@ ms.date: 12/28/2020
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 6218bc32690ca42c06b5606d8a3922f6fc5c7307
-ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
+ms.topic: article
+ms.openlocfilehash: 8c049a7301cc651dbf2621d0baa398117856b925
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51765151"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52274636"
 ---
 # <a name="configure-and-validate-microsoft-defender-antivirus-network-connections"></a>配置和验证 Microsoft Defender 防病毒软件网络连接
 
@@ -40,7 +41,7 @@ ms.locfileid: "51765151"
 >[!TIP]
 >还可以访问 Microsoft Defender for Endpoint 演示[](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground)网站，demo.wd.microsoft.com 确认以下功能是否正常工作：
 >
->- 云保护
+>- 云端保护
 >- 快速学习 (包括首次看到时阻止) 
 >- 可能不需要的应用程序阻止
 

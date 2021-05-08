@@ -18,19 +18,19 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: 已准备好实现保留策略和保留标签来管理组织的数据，但不确定从哪里入手？ 请阅读一些实用指南来入门。
-ms.openlocfilehash: 65c196f8838378a10263370b1377b3eb43b14915
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+description: 已准备好实现保留策略和保留标签来管理组织的数据，但不确定从哪里入手？请阅读一些实用指南来入门。
+ms.openlocfilehash: b39f6246fc9265319e0d4e5b053db6dfddc0d43a
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51051904"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52244584"
 ---
 # <a name="get-started-with-retention-policies-and-retention-labels"></a>开始使用保留策略和保留标签
 
 >*[Microsoft 365 安全性与合规性许可指南](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。*
 
-已准备好通过保留需要保留的内容和删除不需要的内容来开始管理组织的数据？ 请遵循下面的简要指南来入门：
+已准备好通过保留需要保留的内容和删除不需要的内容来开始管理组织的数据？使用以下指南来入门：
 
 1. **了解保留在 Microsoft 365 中的工作原理**，然后确定是需要使用保留策略还是保留标签，亦或是两者的组合：[了解保留](retention.md)
 
@@ -56,9 +56,9 @@ ms.locfileid: "51051904"
 
 除了使用该默认角色，还可创建一个新的角色组，并将 **保留管理** 角色添加到该组。 对于只读角色，请使用 **只读保留管理**。 
 
-有关角色组和角色的更多信息，请参阅[安全与合规中心内的权限](../security/defender-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)。
+有关角色组和角色的更多信息，请参阅[安全与合规中心内的权限](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)。
 
-有关将用户添加到角色组并分配角色的说明，请参阅[向用户授予对安全与合规中心的访问权限](../security/defender-365-security/grant-access-to-the-security-and-compliance-center.md)。
+有关将用户添加到角色组并分配角色的说明，请参阅[向用户授予对安全与合规中心的访问权限](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md)。
 
 只有在创建、配置和应用保留策略和保留标签时才需要这些权限。 配置这些策略及标签的人员不需要访问该内容。
 
@@ -86,8 +86,6 @@ ms.locfileid: "51051904"
 
 大多数保留策略在后台运行，且无需用户交互，因此用户需要的文档很少。 删除邮件后，Teams 的保留策略会通知用户，并包含指向 Teams 中有关保留策略 [保留策略](https://support.microsoft.com/office/teams-messages-about-retention-policies-c151fa2f-1558-4cf9-8e51-854e925b483b)。
 
-由于保留标签在 Microsoft 365 应用中具有 UI 状态，因此在将标签部署到生产网络之前，请确保为最终用户和技术支持人员提供指导。
+由于保留标签在 Microsoft 365 应用中具有 UI 状态，因此在将标签部署到生产网络之前，请确保为最终用户和技术支持人员提供指导。 要帮助用户在 SharePoint 和 OneDrive 中应用保留标签，请参阅[将保留标签应用于 SharePoint 或 OneDrive 中的文件](https://support.microsoft.com/office/apply-retention-labels-to-files-in-sharepoint-or-onedrive-11a6835b-ec9f-40db-8aca-6f5ef18132df)。
 
-最有效的最终用户文档将是你针对所选保留标签名称和配置提供的定制指南和说明。 请参阅以下博客文章，获取可用于培训用户和提高采用率的下载软件包：[最终用户培训：M365 中的保留标签 – 如何提高采纳速度](https://techcommunity.microsoft.com/t5/microsoft-security-and/end-user-training-for-retention-labels-in-m365-how-to-accelerate/ba-p/1750861)。
-
-以下部分中还提供了基本用户说明：[手动应用保留标签](create-apply-retention-labels.md#manually-apply-retention-labels)。
+不过，最有效的最终用户文档将是你针对所选保留标签名称和配置提供的定制指南和说明。 请参阅以下博客文章，获取可用于培训用户和提高采用率的下载软件包：[最终用户培训：M365 中的保留标签 – 如何提高采纳速度](https://techcommunity.microsoft.com/t5/microsoft-security-and/end-user-training-for-retention-labels-in-m365-how-to-accelerate/ba-p/1750861)。

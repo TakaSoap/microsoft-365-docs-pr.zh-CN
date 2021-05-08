@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 中的最终用户垃圾邮件通知
+title: 最终用户垃圾邮件通知Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -18,15 +18,15 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: 管理员可以了解 Exchange Online Protection (EOP) 中隔离邮件的最终用户垃圾邮件) 。
+description: 管理员可以了解 EOP 邮箱中隔离邮件的最终用户Exchange Online Protection () 。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 9cff91be399bd98eb7e6e5a2a6d91a4a8bb602ec
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 3f5eafbb51cd0ff32c69fa0cff85729ef95d3d1f
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51203707"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52274984"
 ---
 # <a name="use-user-spam-notifications-to-release-and-report-quarantined-messages"></a>使用用户垃圾邮件通知释放并报告隔离邮件
 
@@ -56,7 +56,7 @@ ms.locfileid: "51203707"
 
 - **日期**：隔离邮件 (日期和时间) UTC 格式。
 
-- **阻止发件人**：单击此链接将发件人添加到阻止的发件人列表。 有关详细信息，请参阅阻止 [邮件发件人](https://support.microsoft.com/office/b29fd867-cac9-40d8-aed1-659e06a706e4)。
+- **阻止发件人**：单击此链接将发件人添加到邮箱上的阻止发件人列表中。 有关详细信息，请参阅阻止 [邮件发件人](https://support.microsoft.com/office/b29fd867-cac9-40d8-aed1-659e06a706e4)。
 
 - **释放**：对于 (网络钓鱼) 邮件，可以在此处释放邮件，而无需进入安全与合规&隔离。
 

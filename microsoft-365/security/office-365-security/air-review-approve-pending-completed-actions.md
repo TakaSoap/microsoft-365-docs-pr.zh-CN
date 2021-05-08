@@ -1,10 +1,10 @@
 ---
-title: 在 Microsoft Defender for Office 365 中查看和管理修正操作
+title: 查看和管理 Microsoft Defender for Office 365
 keywords: AIR， autoIR， Microsoft Defender for Endpoint， 自动化， 调查， 响应， 修正， 威胁， 高级， 威胁， 保护
 f1.keywords:
 - NOCSH
-ms.author: deniseb
-author: denisebmsft
+author: JoeDavies-MSFT
+ms.author: josephd
 manager: dansimp
 audience: ITPro
 ms.topic: how-to
@@ -19,14 +19,14 @@ description: 了解 Microsoft Defender for Office 365 计划 2 中的自动调�
 ms.technology: mdo
 ms.prod: m365-security
 ms.date: 01/29/2021
-ms.openlocfilehash: ce6cfd920845f5a85dbc7d7d48cfefdd6209ec3a
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: f0c42bef1b090412a7a6422fe029323b645e90df
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51933645"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52275068"
 ---
-# <a name="review-and-manage-remediation-actions-in-office-365"></a>查看和管理 Office 365 中的修正操作
+# <a name="review-and-manage-remediation-actions-in-office-365"></a>在管理中查看和管理Office 365
 
 由于自动调查电子邮件&协作内容会导致裁定（如恶意或可疑）时，会创建某些修正操作。 在 Microsoft Defender for Office 365 中，修正操作可能包括：
 - 阻止 URL (单击时) 
@@ -42,7 +42,7 @@ ms.locfileid: "51933645"
 
 ## <a name="approve-or-reject-pending-actions"></a>批准 (或拒绝) 挂起的操作
 
-1. 转到 Microsoft 365 安全中心 <https://security.microsoft.com> () 登录。
+1. 转到安全Microsoft 365中心 <https://security.microsoft.com> () 登录。
 2. 在导航窗格中，选择操作 **中心**。
 3. 在 **"挂起** "选项卡上，查看等待审批的操作列表。
 4. 选择列表项。 将打开其飞出窗格。 
@@ -76,4 +76,4 @@ ms.locfileid: "51933645"
 
 ## <a name="see-also"></a>另请参阅
 
-- [查看 Office 365 中自动调查的详细信息和结果](air-view-investigation-results.md)
+- [查看自动调查的详细信息和Office 365](air-view-investigation-results.md)

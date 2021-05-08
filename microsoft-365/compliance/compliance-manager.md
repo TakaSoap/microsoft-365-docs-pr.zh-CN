@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 合规性管理器可帮助组织简化和自动化风险评估，并建议采取建议操作来帮助应对风险。
-ms.openlocfilehash: f938bb6b82ee7e24dd58b66597f0af7a3a00a9a2
-ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
+ms.openlocfilehash: 7eb8e0fdea26ca24453ca7071ab1282c686d5848
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51570449"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52244391"
 ---
 # <a name="microsoft-compliance-manager"></a>Microsoft 合规性管理器
 
@@ -30,7 +30,7 @@ ms.locfileid: "51570449"
 
 ## <a name="whats-new-the-ga-release-of-compliance-manager"></a>新增功能：合规性管理器的 GA 版本
 
-合规性管理器现已在 GA (中) ，作为 [Microsoft 365](microsoft-365-compliance-center.md)合规中心内的端到端合规性管理解决方案。 在此版本中，合规性管理器完成从以前位置到 Microsoft 服务信任门户的转换。 合规性管理器还可用于美国政府社区 (GCC) 中等、GCC High 和国防部 (DoD) 客户。
+合规性管理器现已 (GA) 作为合规性中心内的端到端合规性管理解决方案Microsoft 365[提供](microsoft-365-compliance-center.md)。 在此版本中，合规性管理器完成从以前位置到 Microsoft 服务信任门户的转换。 合规性管理器还可用于美国政府国防Community (GCC) 、GCC和国防部 (DoD) 客户。
 
 从合规性分数的公共预览版开始，它已发展为具有增强的合规性管理功能和更好的易用性的集中式工具。  GA 版本提供更大的预建评估集合，可帮助你扩展合规性活动。
 
@@ -45,13 +45,13 @@ ms.locfileid: "51570449"
 
 ## <a name="what-is-compliance-manager"></a>什么是合规性管理器
 
-[Microsoft 合规性管理器](https://compliance.microsoft.com/compliancemanager) 是 Microsoft [365](microsoft-365-compliance-center.md) 合规中心中的一项功能，可帮助您更轻松、更方便地管理组织的合规性要求。 合规性管理器可以帮助你在整个合规性旅程中，从清点数据保护风险到管理实施控制措施的复杂性、及时获得法规和认证，以及向审核员报告。
+[Microsoft 合规性管理器](https://compliance.microsoft.com/compliancemanager)是 Microsoft 365[合规](microsoft-365-compliance-center.md)中心中的一项功能，可帮助您更轻松、更方便地管理组织的合规性要求。 合规性管理器可以帮助你在整个合规性旅程中，从清点数据保护风险到管理实施控制措施的复杂性、及时获得法规和认证，以及向审核员报告。
 
 合规性管理器通过提供：
 
 - 针对常见行业和区域标准和法规的预建评估，或为满足唯一合规性需求而 (评估取决于许可协议;[了解) 。](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)
 
-- 工作流功能，可帮助您通过单个工具高效地完成风险评估。
+- 工作流功能通过单一工具帮助你有效完成风险评估。
 
 - 有关建议改进操作的详细分步指南，可帮助您遵守与组织最相关的标准和法规。 对于由 Microsoft 管理的操作，你将看到实现详细信息和审核结果。
 
@@ -65,7 +65,7 @@ ms.locfileid: "51570449"
 
 合规性管理器会奖励你完成为遵守法规、标准或策略而采取的改进措施，并且将这些分数组合到一个总体合规性分数中。 每项操作对分数的影响各不相同，具体取决于所涉及的潜在风险。 合规性分数可帮助确定重点操作优先级，以改善整体合规性状态。
 
-合规性管理器根据 Microsoft 365 数据保护基线提供初始分数。 此基线是一组控制措施，其中包括数据保护和一般数据管理的关键法规和标准。
+合规性管理器根据数据保护基线提供Microsoft 365分数。 此基线是一组控制措施，其中包括数据保护和一般数据管理的关键法规和标准。
 
 ##### <a name="learn-more"></a>了解详细信息
 
@@ -79,7 +79,7 @@ ms.locfileid: "51570449"
 
 ### <a name="controls"></a>控件
 
-控制是法规、标准或策略的要求。 它定义了如何评估和管理系统配置、组织过程以及负责满足法规、标准或策略的特定要求的人。
+控件是法规、标准或策略的要求。 它定义了如何评估和管理系统配置、组织流程以及负责满足法规、标准或策略的特定要求的人员。
 
 合规性管理器跟踪以下类型的控件：
 
@@ -95,7 +95,7 @@ ms.locfileid: "51570449"
 
 ### <a name="assessments"></a>评估
 
-评估是按特定法规、标准或策略对控制措施进行分组。 完成评估中的操作有助于满足标准、法规或法律的要求。 例如，你可能有一项评估，在完成其中的所有操作后，有助于使 Microsoft 365 设置符合 ISO 27001 要求。
+评估是按特定法规、标准或策略对控制措施进行分组。 完成评估内的操作可以帮助你满足标准、法规或法律的要求。 例如，你可能有一项评估，其中的所有操作完成后，有助于使 Microsoft 365 设置符合 ISO 27001 要求。
 
 评估包括几个组件：
 
@@ -165,3 +165,5 @@ ms.locfileid: "51570449"
 若要了解如何登录、分配权限和角色、配置设置以及个性化仪表板视图，可了解合规性 [管理器入门](compliance-manager-setup.md)。
 
 然后开始自定义合规性管理器，通过设置评估来帮助你遵守对组织最重要的 [行业标准](compliance-manager-assessments.md)。
+
+为了帮助你遵守数据隐私法规，我们设计了一个工作流来指导你完成端到端流程，以在 Microsoft 365 中计划和实现功能，包括使用合规性管理器。 有关详细信息，请参阅[使用 Microsoft 365 为数据隐私法规部署信息保护](../solutions/information-protection-deploy.md) (aka.ms/m365dataprivacy)。 

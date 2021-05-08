@@ -1,5 +1,5 @@
 ---
-title: Microsoft Defender 防病毒与适用于终结点的 Defender 的兼容性
+title: 防病毒解决方案与 Defender for Endpoint 的兼容性
 description: 了解 Windows Defender Defender for Endpoint 的工作原理，以及它如何使用第三方反恶意软件客户端。
 keywords: windows defender 兼容性， defender， 适用于终结点的 Microsoft Defender， 终结点的 defender， 防病毒， mde
 search.product: eADQiWindows 10XVcnh
@@ -15,16 +15,16 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 04/24/2018
+ms.date: 05/06/2021
 ms.technology: mde
-ms.openlocfilehash: a8dca4a80385fabcdc64a5584474214d05be4a6c
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 84c523b721596d9c467f01cf6b8a0685b2091669
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51935373"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52274876"
 ---
-# <a name="microsoft-defender-antivirus-compatibility-with-microsoft-defender-for-endpoint"></a>Microsoft Defender 防病毒与 Microsoft Defender for Endpoint 的兼容性
+# <a name="antivirus-solution-compatibility-with-microsoft-defender-for-endpoint"></a>防病毒解决方案与 Microsoft Defender for Endpoint 的兼容性
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 

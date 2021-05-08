@@ -15,12 +15,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 了解如何使用数据丢失防护策略和工具Microsoft 365敏感信息，并浏览 DLP 生命周期。
-ms.openlocfilehash: 451622d15b1f422304dd498264ff2fe4a343bb6c
-ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
+ms.openlocfilehash: 88cf913f62d28c89bce7054473eb577217de9489
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52127776"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52244608"
 ---
 # <a name="learn-about-data-loss-prevention"></a>了解终结点数据丢失防护
 
@@ -87,7 +87,7 @@ DLP 策略可以阻止禁止的活动，例如通过电子邮件不当共享敏�
 
 - Exchange Online电子邮件
 - SharePoint Online 站点
-- OneDrive 账户
+- OneDrive 帐户
 - Teams 聊天和通道消息
 - Microsoft Cloud App Security
 - Windows 10 设备
@@ -189,7 +189,7 @@ DLP 报告大量信息，Microsoft 365监视、策略匹配和操作以及用户
 > [!div class="mx-imgBorder"]
 > ![事件信息](../media/Event-info-1.png)
 
-### <a name="reports"></a>报告
+### <a name="reports"></a>报表
 
 [DLP 报告](view-the-dlp-reports.md#view-the-reports-for-data-loss-prevention)显示了一段时间的广泛趋势，并提供了以下具体见解：
 
@@ -212,3 +212,5 @@ DLP 页面上的"活动资源管理器"选项卡将" *活动* "筛选器预设�
 - [了解 Microsoft 365 本地扫描仪数据丢失防护（预览）](dlp-on-premises-scanner-learn.md)
 - [了解 Microsoft 合规性扩展（预览版）](dlp-chrome-learn-about.md)
 - [了解数据丢失防护警报仪表板](dlp-alerts-dashboard-learn.md)
+
+若要了解如何使用数据丢失防护来遵守数据隐私法规，请参阅使用 Microsoft 365 (aka.ms/m365dataprivacy) 部署数据[隐私法规](../solutions/information-protection-deploy.md)的信息保护。

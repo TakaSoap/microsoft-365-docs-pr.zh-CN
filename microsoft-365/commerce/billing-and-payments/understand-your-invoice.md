@@ -19,16 +19,23 @@ search.appverid:
 - MET150
 description: 了解如何阅读和了解 Microsoft 商业产品的账单或发票。
 keywords: 帐单帐户，组织信息，发票
-ms.openlocfilehash: 3752254fc6068381cd6effed0be4d5b8295f8a27
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 344877a4b97f5c77dc3381aa49d7bf0f60bd628e
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51579754"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52244704"
 ---
 # <a name="understand-your-bill-or-invoice"></a>了解你的帐单或发票
 
 发票提供您的费用摘要和付款说明。 您可以在 Microsoft 365 管理中心中[查看您的在线发票](#view-your-online-invoice)。 您也可以以可移植文档格式（.pdf）下载它，以通过电子邮件发送。
+
+若要查看和打印发票，请：
+
+1. 在 **计费** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">“帐单和付款”</a>页面上，选择发票日期范围。
+2. 要打印或保存账单的PDF副本，请选择 **下载发票PDF**，然后打印PDF。
+
+有关详细信息，请参阅[查看账单或发票](view-your-bill-or-invoice.md)。
 
 如果您只有Microsoft 365订阅，请参阅 [了解Microsoft 365商业版的账单或发票](understand-your-invoice2.md)。
 
@@ -133,13 +140,6 @@ ms.locfileid: "51579754"
 
 - **服务期：** 是就你使用服务进行收费的时间段。
 - **计费期：** 是指自上次发票日期起的时间段。
-
-### <a name="how-do-i-view-and-print-my-bill"></a>如何查看和打印账单？
-
-1. 在 **计费** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">“帐单和付款”</a>页面上，选择发票日期范围。
-2. 要打印或保存账单的PDF副本，请选择 **下载发票PDF**，然后打印PDF。
-
-有关详细信息，请参阅[查看账单或发票](view-your-bill-or-invoice.md)。
 
 ### <a name="why-dont-i-see-azure-prepayment-as-a-payment-method"></a>为什么我不将Azure预付款视为付款方式？
 
