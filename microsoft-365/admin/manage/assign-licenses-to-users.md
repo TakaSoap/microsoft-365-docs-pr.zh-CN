@@ -22,12 +22,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: 了解如何向用户分配许可证。
-ms.openlocfilehash: 9fa8981949215c4cf7779a21ff7089d7534e1ef0
-ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
+ms.openlocfilehash: ae088ab5c26df9b782bd4433bbd0c9f2d0ed9348
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52023745"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52274372"
 ---
 # <a name="assign-licenses-to-users"></a>向用户分配许可证
 
@@ -41,9 +41,10 @@ ms.locfileid: "52023745"
 ## <a name="before-you-begin"></a>准备工作
 
 - 你必须是全局、许可证或用户管理员才能分配许可证。 有关详细信息，请参阅[关于 Microsoft 365 管理员角色](../add-users/about-admin-roles.md)。
-- 你可以[使用 Office 365 PowerShell 向用户帐户分配许可证](../../enterprise/assign-licenses-to-user-accounts-with-microsoft-365-powershell.md)。
+- 借助 PowerShell [，可以将 Microsoft 365 许可证分配给](../../enterprise/assign-licenses-to-user-accounts-with-microsoft-365-powershell.md)。
 - 若要使用基于组的许可，请参阅[在 Azure Active Directory 中按组成员身份向用户分配许可证](/azure/active-directory/users-groups-roles/licensing-groups-assign)
 - 某些服务（如 Sway）会自动分配给用户，无需单独分配。
+
 
 ## <a name="use-the-licenses-page-to-assign-licenses-to-users"></a>使用“许可证”页面向用户分配许可证
 
@@ -128,6 +129,10 @@ ms.locfileid: "52023745"
 5. 在“**添加到现有产品**”窗格中，将希望所选用户具备的许可证的开关切换到“**开**”位置。\
     默认情况下，与这些许可证关联的所有服务都将自动分配给该用户。 可限制能提供给用户的具体服务。 将不希望所选用户具备的服务的开关切换到“**关**”。
 6. 在窗格底部，选择“**添加**”\>“**关闭**”。  
+
+
+> [!NOTE]
+> 如果要为大量用户分配许可证，请使用"按 [Active Directory 中的组成员身份为用户分配许可证](/azure/active-directory/enterprise-users/licensing-groups-assign)
 
 ### <a name="assign-licenses-to-one-user"></a>向一个用户分配许可证
 

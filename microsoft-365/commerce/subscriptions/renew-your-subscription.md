@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: jkinma
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -12,21 +13,20 @@ localization_priority: Priority
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
-- commerce
 ms.custom:
 - SaRA
 - AdminSurgePortfolio
-search.appverid:
-- MET150
-ms.assetid: 8d83b530-f4ca-47f6-a666-e5791cbacc7e
+- commerce_subscriptions
+- PPM_jmueller
+search.appverid: MET150
 description: 了解如何通过关闭或打开定期计费功能来续订 Microsoft 365。
-ms.openlocfilehash: afa899bd60b761d196df01c6f0bf18d51e546d8e
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.date: 05/04/2021
+ms.openlocfilehash: 25b0e4f8e94780bd301b41591cd1c06978cbd68e
+ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244644"
+ms.lasthandoff: 05/08/2021
+ms.locfileid: "52285690"
 ---
 # <a name="renew-microsoft-365-for-business"></a>续订 Microsoft 365 商业版
 
@@ -49,6 +49,7 @@ ms.locfileid: "52244644"
 ::: moniker range="o365-worldwide"
 
 1. 在管理中心中，转到“**计费**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">你的产品</a>”页面。
+
 ::: moniker-end
 
 ::: moniker range="o365-germany"
@@ -60,6 +61,7 @@ ms.locfileid: "52244644"
 ::: moniker range="o365-21vianet"
 
 1. 在管理中心中，转到“**计费**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">你的产品</a>”页面。
+
 ::: moniker-end
 
 2. 选择想要为其管理定期计费的订阅。
@@ -68,17 +70,15 @@ ms.locfileid: "52244644"
 5. 选择“**保存**”。
 
     > [!NOTE]
+    >
     > - 只能更改活动订阅的“**定期计费**”设置。 如果你的订阅已过期或处于禁用状态，则你需要 [重新激活](reactivate-your-subscription.md)它，然后才能打开或关闭“**定期计费**”。
     > - 关闭“**定期计费**”后，不会取消订阅。 如果要保持订阅有效，则必须手动支付帐单。
     > - 如果关闭“**定期计费**”，订阅将保持活动状态，直至到期。 可在“订阅详细信息”页面的“**订阅和付款设置**”部分中查看到期日。
     > - 若要了解如何立即取消订阅，请参阅[取消订阅](cancel-your-subscription.md)。
 
-## <a name="related-articles"></a>相关文章
+## <a name="related-content"></a>相关内容
 
-[重新激活订阅](reactivate-your-subscription.md)
-  
-[我的订阅结束后对我的数据和访问权限有何影响？](what-if-my-subscription-expires.md)
-
-[输入产品密钥](../enter-your-product-key.md)
-  
-[购买 Microsoft 365 商业版的试用版](../try-or-buy-microsoft-365.md)
+[重新激活订阅](reactivate-your-subscription.md) （文章）\
+[我的订阅结束后对我的数据和访问权限有何影响？](what-if-my-subscription-expires.md) （文章）\
+[在产品密钥密钥](../enter-your-product-key.md) （文章）\
+[购买 Microsoft 365 商业版的试用版](../try-or-buy-microsoft-365.md) （文章）
