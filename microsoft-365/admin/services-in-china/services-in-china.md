@@ -22,18 +22,18 @@ search.appverid:
 ms.assetid: a8ab5061-3346-4da0-bb7c-5260822b53ae
 description: 了解更多关于由世纪互联运营的，旨在满足中国对安全、可靠和可扩展的云服务的需求的 Office 365 的信息。
 monikerRange: o365-21vianet
-ms.openlocfilehash: 92b69cc77f5c48af63651f2fd37761981ca45ad5
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 1ee7ba7be2e350195350a5c00e92ed10924657ac
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50914338"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52274360"
 ---
 # <a name="office-365-operated-by-21vianet"></a>由世纪互联运营的 Office 365
 
-由世纪互联运营的 Office 365 旨在满足中国用户对安全可靠的可扩展云服务的需求。 此服务由 Microsoft 授权给世纪互联使用的技术提供支持。
+由世纪互联运营的 Office 365 旨在满足中国用户对安全可靠的可扩展云服务的需求。此服务由 Microsoft 授权给世纪互联使用的技术提供支持。
   
-Microsoft 本身并不运营此服务。 世纪互联负责运营、提供和管理此服务的交付。 世纪互联是中国最大的运营商中立 Internet 数据中心服务提供商，提供托管、托管网络服务及云计算基础结构服务。 通过授权的 Microsoft 技术，世纪互联运营本地 Office 365 数据中心，为用户提供使用Office 365服务的能力，同时将用户数据保存在中国境内。 世纪互联还提供订阅、计费服务和支持。
+Microsoft 并不亲自运营该服务。世纪互联运营、提供和管理该服务的交付。世纪互联是中国最大的电信运营商中立 Internet 数据中心服务提供商，提供托管网络服务以及云计算基础结构服务。通过授权 Microsoft 技术，世纪互联运营本地 Office 365 数据中心，以便您能够在中国保留数据并同时使用 Office 365 服务。世纪互联还提供您的订阅和帐单服务以及支持。
   
 > [!NOTE]
 > 这些服务受到中国法律的制约。 
@@ -81,10 +81,10 @@ Microsoft 本身并不运营此服务。 世纪互联负责运营、提供和管
 |翻译文本或页面的功能  <br/> |可用，但默认关闭。 租户管理员可以开启此功能，但翻译云服务可能位于你所在的国家/地区之外。 如果不希望用户将内容发送到翻译云服务，则可以保持禁用这些功能。  <br/> |
 |公共网站 ICP 注册  <br/> |中国 Internet 合规政策要求公众号必须获得 Internet 内容提供商（ICP）编号。  |
 |公共网站功能  <br/> |只有在 2015 年 3 月 9 日之前购买Office 365的用户才可以使用公共网站。 但是，必应地图、外部共享和注释在公共网站中不可用，因为这些功能可能会将数据发送到您所在的国家/地区之外。  <br/> |
-|新闻源和 Yammer（企业社交网络）  <br/> |新闻源（社交中心，在这里可以看到所关注的人员、文档、网站和标签的更新）是可用的。 Yammer 不可用。  <br/> |
+|新闻源和 Yammer（企业社交网络）  <br/> |新闻源（社交中心，您在这里将看到您关注的人员、文档、网站和标签的更新）可用，Yammer 不可用。  <br/> |
 |自动托管的应用  <br/> |可以部署使用 SharePoint 和 SQL Azure 的提供商托管的应用程序。 有关详细信息，请参阅 [为 SharePoint 创建基本的提供商托管应用程序](/sharepoint/dev/sp-add-ins/get-started-creating-provider-hosted-sharepoint-add-ins)。 即将支持开发者部署一个使用自动托管网站的应用程序。  <br/> |
 |InfoPath  <br/> |不可用。  <br/> |
-|SharePoint 应用商店  <br/> |Office和SharePoint应用商店是由Microsoft公司或其附属机构通过Microsoft全球任何设施运营的可选服务。 商店中的应用程序由不同的应用程序发行商提供，并受应用程序发行商的条款和条件以及隐私声明的约束。 使用任何这些应用都可能会导致数据被传送到该应用发布者及其关联公司或服务提供商维护其设施的任何国家/地区，或者在其中存储或处理数据。 在下载和使用此类应用之前，请仔细阅读应用发布者的条款和条件以及隐私声明。  <br/> |
+|SharePoint 应用商店  <br/> |Office 和 SharePoint 应用商店是可选服务，由 Microsoft Corporation 或其关联公司从 Microsoft 在全球的任何设施运营。应用商店中的应用由各种应用发布者提供，受应用发布者的条款和条件以及隐私声明的约束。使用其中的任何应用都可能会导致数据被传输到应用发布者、其关联公司或服务提供商在其中维护设施的国家/地区，或者在那里存储或处理。下载和使用此类应用之前，请仔细阅读应用发布者的条款和条件以及隐私声明。  <br/> |
 |Office 365 开发者网站：使用卖方控制面板\*发布到SharePoint 商店   <br/> |了解世纪互联运营的 Office 365 用户 [ 向 SharePoint 提交应用程序以便分发的要求](/office/dev/store/submit-sharepoint-add-ins-for-office-365-operated-by-21vianet-in-china)。  <br/> |
    
 \*由 Microsoft 直接提供且受 Microsoft 的服务条款和隐私声明约束的可选服务。
@@ -139,7 +139,7 @@ Microsoft 本身并不运营此服务。 世纪互联负责运营、提供和管
 > [!IMPORTANT]
 >  在世纪互联托管的Office 365租户的混合部署中，当一个用户或一组用户可以访问另一个用户的日历时，不支持授权日历访问。 
   
- 此外，在世纪互联托管的Office 365租户的混合部署中，一些Exchange消息策略和合规性功能也并不完全支持。 这些功能包括：
+ 此外，在世纪互联托管的 Office 365 租户的混合部署中，不完全支持某些 Exchange 邮件策略和合规性功能。 这些功能包括：
 
 - [Messaging Records Management (MRM)](/exchange/security-and-compliance/messaging-records-management/messaging-records-management) 
 - [就地电子数据展示](/exchange/security-and-compliance/in-place-ediscovery/in-place-ediscovery) 
@@ -169,9 +169,9 @@ Microsoft 本身并不运营此服务。 世纪互联负责运营、提供和管
 
 |||  
 |---|---|
-|共存和闲/忙共享|不支持在两个或多个内部Exchange组织之间共享日历空闲/繁忙信息，也不支持在两个世纪互联 Office 365租户之间共享。 即将推出此功能！ | 
+|共存和闲/忙共享|目前还不支持在两个或者多个本地 Exchange 组织之间共享日历闲/忙信息，或者在两个由世纪互联运营的 Office 365 租户之间共享日历闲/忙信息。该功能即将推出！ | 
 |日历共享|Exchange 2013 SP1 及更高版本支持与其他内部 Exchange 或 Exchange Online 组织手动配置互联网日历共享。 有关手动配置此功能的详细信息，请参见[启用 Internet 日历发布](/exchange/enable-internet-calendar-publishing-exchange-2013-help)。 | 
-将 Apple 移动设备上的 Exchange 联系人数据共享到 Apple iCloud。 |此设置/功能默认为启用。 管理员应关闭此功能，以帮助防止用户在组织之外共享Exchange数据。 |
+将 Apple 移动设备上的 Exchange 联系人数据共享到 Apple iCloud。 |此设置/功能可能在默认情况下启用。管理员应关闭此功能以帮助阻止用户在您的组织外部共享 Exchange 数据。 |
 |Exchange 托管电子邮件加密  |不可用。  |
 |Office 365 邮件加密  |即将推出。  |
    
@@ -179,9 +179,9 @@ Microsoft 本身并不运营此服务。 世纪互联负责运营、提供和管
 
 |||
 |:-----|:-----|
-|从“**文件**\>**打开**”中打开 Office 应用程序… 按钮  <br/> |可用。 即将推出漫游时的功能。  <br/> |
+|从“**文件**\>**打开**”中打开 Office 应用程序… 按钮  <br/> |可用。即将推出漫游时执行此操作的功能。  <br/> |
 |使用 Microsoft 账户登录时保存到 OneDrive for Business  <br/> |为了将数据保存在本国家/地区境内，当使用 Microsoft 账户登录 Office 时，将无法将文档保存到组织站点 (OneDrive for Business)。  <br/> |
-|翻译文本或页面的功能  <br/> |此功能可用，但默认为关闭。 管理员确实有能力打开它，但会收到一条警告信息，表明它可能会使数据在你的国家/地区之外受到访问。  <br/> |
+|翻译文本或页面的功能  <br/> |此功能可用，但默认处于关闭状态。 管理员可以启用此功能，但将收到一条警告消息，指明它可能允许在您的国家/地区之外访问数据。  <br/> |
    
 ## <a name="office-client"></a>Office 客户端
 
@@ -212,13 +212,13 @@ Microsoft 本身并不运营此服务。 世纪互联负责运营、提供和管
 |||
 |:-----|:-----|
 |为 Skype for Business 提供支持的域提供商  <br/> |需要向支持SRV记录的中文域名提供商注册域名。 有关如何注册域名的更多信息，请参阅 [查找域名注册商或DNS托管提供商](../get-help-with-domains/find-your-domain-registrar.md)。  <br/> |
-|拨入式会议（为无法使用计算机的用户添加电话拨入到会议的功能）。  <br/> |可能会在Skype for Business和Skype for Business管理中心中看到有关拨号会议和提供商的选项，但这些功能尚不可用。 即将推出它们。  <br/> |
+|拨入式会议（为无法使用计算机的用户添加电话拨入到会议的功能）。  <br/> |你可能会看到 Skype for Business 和 Skype for Business 管理中心中针对拨入式会议和提供商的选项，但这些功能尚不可用。这些功能即将推出。  <br/> |
 |Skype for Business 桌面版帮助  <br/> |可以在[此处](https://support.microsoft.com/office/6ae5853c-f0fd-4710-aecf-f46def8377ad)找到Skype for Business桌面的帮助。 但是，除非使用Office 即点即用，否则无法从产品中获得桌面帮助。  <br/> |
 |Lync 2010  <br/> |不可用。  <br/> |
-|当使用带有谷歌浏览器的 Samsung 设备时，能够从日历中加入会议  <br/> |即将推出。 同时，可以打开Skype for Business，进入 “会议” 视图，并从那里加入会议。  <br/> |
+|当使用带有谷歌浏览器的 Samsung 设备时，能够从日历中加入会议  <br/> |即将推出。与此同时，你可以打开 Skype for Business，转到“会议”视图，然后从那里加入会议。  <br/> |
 |桌面电话设备，例如 Polycom、Ares 和 Tanjay  <br/> |不可用。  <br/> |
 |联盟伙伴  <br/> |不可用。  <br/> |
-|语音功能（例如语音邮件）；能够通过 PSTN 号码拨打和接听电话；呼叫转移；呼叫转接  <br/> |不可用。 这些功能需要联盟伙伴。  <br/> |
+|语音功能（例如语音邮件）；能够通过 PSTN 号码拨打和接听电话；呼叫转移；呼叫转接  <br/> |不可用。这些功能需要联盟伙伴。  <br/> |
 |存档，或能够标记用户并将该用户的电子邮件和 IM 存档到 Exchange 中  <br/> |不可用。  <br/> |
 |Skype for Business Web 客户端 (LWA) 浏览器支持 Firefox 29  <br/> |不可用，但可以使用较早版本的 Firefox 。  <br/> |
 |统一联系人存储  <br/> |已禁止用户将其所有 Skype for Business 联系人信息保存到 Microsoft Exchange Server 2013 中。  <br/> |
@@ -233,3 +233,11 @@ GDPR 授予个人（或数据主体）与处理个人数据相关的某些权限
 - 世纪互联操作的 Microsoft 服务的系统生成的日志可以由租户管理员使用数据日志导出。
     
 有关详细信息和说明，请参阅 [针对GDRP的数据主体请求（DSR）](https://www.trustcenter.cn/privacy/gdpr-office365.mdl)。
+
+## <a name="related-content"></a>相关内容
+
+[试用或购买 Microsoft 365 商业版订阅](../../commerce/try-or-buy-microsoft-365.md)（文章）
+
+[适用于由世纪互联运营的 Office 365 的 Azure 信息保护支持](parity-between-azure-information-protection.md)（文章）
+
+[查看帐单或获取发票](../../commerce/billing-and-payments/view-your-bill-or-invoice.md)（文章）
