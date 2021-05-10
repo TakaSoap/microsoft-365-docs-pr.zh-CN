@@ -22,12 +22,12 @@ localization_priority: Priority
 description: 管理员可以了解 Exchange Online Protection (EOP) 中提供的防欺骗功能，该功能有助于缓解来自虚假发件人和域的网络钓鱼攻击。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 20294bf00c62e59da33b54ea0c8ee85f7b1372af
-ms.sourcegitcommit: 4acf613587128cae27e0fd470d1216b509775529
+ms.openlocfilehash: 76ad8ac14de7b176ae12dc02272e31e790b6b410
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/15/2021
-ms.locfileid: "51769018"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52291027"
 ---
 # <a name="anti-spoofing-protection-in-eop"></a>EOP 中的防欺骗防护
 
@@ -80,7 +80,7 @@ EOP 可分析并阻止标准电子邮件身份验证方法和发件人信誉技�
 
   ![Microsoft 合法密码重置](../../media/58a3154f-e83d-4f86-bcfe-ae9e8c87bd37.jpg)
 
-  该邮件实际上确实来自 Microsoft，但用户已经养成了持怀疑态度的习惯。 由于很难区分真实密码重置邮件和虚假邮件，因此许多用户会忽略这些邮件、将其报告为垃圾邮件，或者不必要地将该邮件作为网络钓鱼邮件报告给 Microsoft。
+  邮件确实来自 Microsoft，但用户已经习惯于持怀疑态度。因为难以区分真正的密码重置邮件和伪造的邮件，用户可能会忽略该消息，而将其报告为垃圾邮件，或者不必要地将该消息作为网络钓鱼报告给 Microsoft。
 
 ## <a name="different-types-of-spoofing"></a>不同类型的欺骗
 
@@ -139,11 +139,11 @@ Microsoft Defender for Office 365 组织可使用安全与合规中心中的威�
 
 例如，Gabriela Laureano (glaureano@contoso.com) 有兴趣赏鸟，他加入了邮件列表 birdwatchers@fabrikam.com，并向列表发送了以下邮件：
 
-> **发件人:** "Gabriela Laureano" \<glaureano@contoso.com\> <br> **收件人:** 赏鸟者讨论列表\<birdwatchers@fabrikam.com\> <br> **主题：** 本周到瑞尼尔山顶 观赏蓝鸟 <p> 有人想本周一起去瑞尼尔山 赏鸟吗？
+> **发件人:** "Gabriela Laureano" \<glaureano@contoso.com\> <br> **收件人:** 赏鸟者讨论列表\<birdwatchers@fabrikam.com\> <br> **主题：** 本周到瑞尼尔山顶 观赏蓝鸟 <p> 有人想本周去雷尼尔山看风景吗？
 
 邮件列表服务器接收邮件，修改其内容并将其重播给列表中的成员。 重播的邮件具有相同的“发件人”地址 (glaureano @ contoso.com)，但向主题行添加了标记并在邮件底部添加了页脚。 这种类型的修改在邮件列表中很常见，并且可能导致欺骗误报。
 
-> **发件人:** "Gabriela Laureano" \<glaureano@contoso.com\> <br> **收件人:** 赏鸟者讨论列表\<birdwatchers@fabrikam.com\> <br> **主题：**[赏鸟者]本周到瑞尼尔山顶 观赏蓝鸟 <p> 有人想本周一起去瑞尼尔山 赏鸟吗？ <p> 此邮件已发送到赏鸟者讨论列表。 可随时取消订阅。
+> **发件人:** "Gabriela Laureano" \<glaureano@contoso.com\> <br> **收件人:** 赏鸟者讨论列表\<birdwatchers@fabrikam.com\> <br> **主题：**[赏鸟者]本周到瑞尼尔山顶 观赏蓝鸟 <p> 有人想本周去雷尼尔山看风景吗？ <p> 此邮件已发送到赏鸟者讨论列表。 可随时取消订阅。
 
 要帮助邮件列表邮件通过反欺骗检查，请根据是否控制邮件列表执行以下操作：
 
@@ -163,7 +163,7 @@ Microsoft Defender for Office 365 组织可使用安全与合规中心中的威�
 
   - 在电子邮件客户端中创建邮箱规则，以将邮件移动到收件箱。 你还可以要求管理员配置覆盖，如[使用欺骗智能来配置未经身份验证的电子邮件的允许发件人](email-validation-and-authentication.md#use-spoof-intelligence-to-configure-permitted-senders-of-unauthenticated-email)中所述。
 
-  - 使用 Microsoft 365 创建支持票证，以便为邮件列表创建替代，以将其视为合法邮件。 有关详细信息，请参阅[就商业版产品问题联系支持人员 - 管理员帮助](../../admin/contact-support-for-business-products.md)。
+  - 使用 Microsoft 365 创建支持票证，以便为邮件列表创建替代，以将其视为合法邮件。 有关详细信息，请参阅[就商业版产品问题联系支持人员 - 管理员帮助](../../business-video/get-help-support.md)。
 
 如果其他所有操作均失败，则可以向 Microsoft 报告该邮件为误报。 有关详细信息，请参见[向 Microsoft 报告邮件和文件](report-junk-email-messages-to-microsoft.md)。
 

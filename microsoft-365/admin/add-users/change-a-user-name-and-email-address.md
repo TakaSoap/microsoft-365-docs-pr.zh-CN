@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: fb5ac074-e203-4e1f-9843-b9d1a3e03297
 description: '了解全局管理员可以如何更改用户的电子邮件地址和显示名称。 '
-ms.openlocfilehash: 94ed05d87fa290f2ae1059ae04c62c5d0d5e6860
-ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
+ms.openlocfilehash: a785ef17f0823429ad5eb216a330dc6f04dc7761
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52023769"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52291015"
 ---
 # <a name="change-a-user-name-and-email-address"></a>更改用户名和电子邮件地址
 
@@ -50,7 +50,7 @@ ms.locfileid: "52023769"
     
 2. 选择用户的姓名，然后在“**帐户**”选项卡上选择“**管理用户名**”。
     
-3. 在第一个框中，键入新电子邮件地址的第一部分。 如果已将自己的域添加到 Microsoft 365，请使用下拉列表为新电子邮件别名选择域。 
+3. 在第一个框中，键入新电子邮件地址的第一部分。如果已将自己的域添加到 Microsoft 365，则请通过使用下拉列表来选择新电子邮件别名的域。 
 
 4. 选择“**保存更改**”。
 
@@ -63,7 +63,7 @@ ms.locfileid: "52023769"
 
 2. 选择该用户。 在浮出窗格中的“**用户名/电子邮件**”旁，选择“**编辑**”。
 
-3. 在第一个框中，键入新电子邮件地址的第一部分。 如果已将自己的域添加到 Microsoft 365，则可使用下拉列表为新电子邮件别名选择域。
+3. 在第一个框中，键入新电子邮件地址的第一部分。如果已将自己的域添加到 Microsoft 365，则可以通过使用下拉列表来选择新电子邮件别名的域。
 
 4. 选择“**保存**”。
 
@@ -75,7 +75,7 @@ ms.locfileid: "52023769"
 
 2. 选择该用户。 在浮出窗格中的“**用户名/电子邮件**”旁，选择“**编辑**”。
 
-3. 在第一个框中，键入新电子邮件地址的第一部分。 如果已将自己的域添加到 Microsoft 365，则可使用下拉列表为新电子邮件别名选择域。
+3. 在第一个框中，键入新电子邮件地址的第一部分。如果已将自己的域添加到 Microsoft 365，则可以通过使用下拉列表来选择新电子邮件别名的域。
 
 4. 选择“**保存**”。
 
@@ -221,9 +221,9 @@ ms.locfileid: "52023769"
 
 ### <a name="a-parameter-cannot-be-found-that-matches-parameter-name-emailaddresses"></a>“找不到与参数名称‘EmailAddresses’匹配的参数”
 
-如果收到错误消息：“**找不到与参数名称‘EmailAddresses’匹配的参数**”，则表明完成租户或自定义域设置（如果最近添加了一个）所需的时间会更长。设置过程最多需要 4 个小时才能完成。稍等片刻，待设置过程完成后重试。如果问题仍然存在，请致电 [支持人员](../contact-support-for-business-products.md)，让他们为你执行完全同步。
+如果收到错误消息：“**找不到与参数名称‘EmailAddresses’匹配的参数**”，则表明完成租户或自定义域设置（如果最近添加了一个）所需的时间会更长。设置过程最多需要 4 个小时才能完成。稍等片刻，待设置过程完成后重试。如果问题仍然存在，请致电 [支持人员](../../business-video/get-help-support.md)，让他们为你执行完全同步。
   
-### <a name="were-sorry-the-user-couldnt-be-edited-review-the-user-information-and-try-again"></a>“很抱歉，无法编辑该用户。 请查看用户信息，请查看用户信息并重试”
+### <a name="were-sorry-the-user-couldnt-be-edited-review-the-user-information-and-try-again"></a>很抱歉，无法编辑该用户。请查看用户信息，然后重试”
 
 如果收到错误消息“**很抱歉，无法编辑该用户。请查看用户信息并重试**”， 这意味着你不是全局管理员，不具有更改用户名的权限。 找到企业中的全局管理员，请他们进行更改。
 
