@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: e2e29015d4cb5e04510577118eb847b9b596a6c5
-ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
+ms.openlocfilehash: 93751a8297e61a969e0049e27a847324a3d16872
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52114278"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52300009"
 ---
 # <a name="incidents-in-microsoft-365-defender"></a>Microsoft 365 Defender 中的事件
 
@@ -62,7 +62,7 @@ Microsoft 365服务和应用在检测到可疑或恶意事件或活动时创建�
 - 攻击范围，如影响的设备、用户和邮箱数量。 
 - 与攻击关联的所有数据。
 
-如果[启用](m365d-enable.md)，Microsoft 365 Defender 可以通过自动化和人工智能自动调查和解决警报。 还可以执行其他修正步骤来解决攻击。 
+如果[启用](m365d-enable.md)，Microsoft 365 Defender[可以通过自动化和](m365d-autoir.md)人工智能自动调查和解决警报。 还可以执行其他修正步骤来解决攻击。 
 
 ## <a name="incidents-and-alerts-in-the-microsoft-365-security-center"></a>安全中心内Microsoft 365和警报
 
@@ -94,11 +94,15 @@ Microsoft 365服务和应用在检测到可疑或恶意事件或活动时创建�
 
 - 调查
 
-  事件警报触发的所有自动调查。
+  事件 [警报](m365d-autoir.md) 触发的所有自动调查。
 
 - 证据和响应
 
   事件警报中支持的所有事件和可疑实体。
+
+- Graph (预览版) 
+
+  显示警报与组织中受影响资产的连接的图。
 
 下面是事件及其数据与安全中心内事件选项卡Microsoft 365关系。
 
@@ -115,7 +119,7 @@ Microsoft 365服务和应用在检测到可疑或恶意事件或活动时创建�
 - [通过](incident-queue.md) 筛选和事件队列排序来确定最高优先级事件的会审。
 - [通过](manage-incidents.md) 修改事件的标题、将其分配给分析员以及添加标签和注释来管理事件。
 
-1. 对于每个事件，开始 [攻击和警报分析](investigate-incidents.md)：
+1. 对于每个事件，开始 [攻击和警报调查和分析](investigate-incidents.md)：
  
    a. 查看事件的摘要，了解事件的范围和严重性以及受影响实体 ("摘要"选项卡) 。 
 
@@ -123,7 +127,7 @@ Microsoft 365服务和应用在检测到可疑或恶意事件或活动时创建�
 
    c. 根据需要，在"设备、用户"和"邮箱"选项卡上 (受影响的设备、用户和) 。  
 
-   d. 查看 Microsoft 365 Defender 如何自动解决"调查"选项卡 **(警报**) 。
+   d. 查看 Microsoft 365 Defender 如何 [自动解决某些](m365d-autoir.md)警报 **("调查**"选项卡) 。
    
    e. 根据需要，使用事件数据集中的信息获取"证据和 (**响应** "选项卡) 。
 
@@ -149,7 +153,7 @@ Microsoft 365服务和应用在检测到可疑或恶意事件或活动时创建�
 日常任务可能包括：
 
 - [管理](manage-incidents.md) 事件
-- 查看 [AIR (操作) 调查和 ](m365d-action-center.md) 响应
+- 查看 [操作中心中的 AIR (AIR) ](m365d-action-center.md) 操作自动调查和响应
 - 查看最新的 [威胁分析](threat-analytics.md)
 - [响应](investigate-incidents.md) 事件
 
@@ -167,8 +171,19 @@ Microsoft 365服务和应用在检测到可疑或恶意事件或活动时创建�
 
 ## <a name="next-steps"></a>后续步骤
 
-"事件"页 **中的事件** 队列列出了最近事件。 在这里，你可以：
+**如果你是安全分析和** 事件响应的新增人员：
 
-- 查看应基于严重性 [和](incident-queue.md) 其他因素对哪些事件进行优先排序。 
-- [管理事件](manage-incidents.md)，其中包括重命名、分配、分类以及添加标记和注释以用于事件管理工作流。
-- 执行 [事件](investigate-incidents.md) 分析。
+- 请参阅[响应你的](first-incident-overview.md)第一个事件演练，获取有关 Microsoft 365 安全中心中分析、修正和事后评审的典型流程的引导教程，并查看攻击示例。
+
+**如果你有安全分析和** 事件响应的经验：
+
+- 从安全中心的事件 **页面开始Microsoft 365** 队列。 在这里，你可以：
+
+  - 查看应基于严重性 [和](incident-queue.md) 其他因素对哪些事件进行优先排序。 
+
+  - [管理事件](manage-incidents.md)，其中包括重命名、分配、分类以及根据事件管理工作流添加标记和注释。
+
+  - [执行事件](investigate-incidents.md)调查。
+
+- 请参阅 [这些事件响应手册，](https://docs.microsoft.com/security/compass/incident-response-playbooks) 获取网络钓鱼、密码加密以及应用许可授予攻击的详细指南。
+

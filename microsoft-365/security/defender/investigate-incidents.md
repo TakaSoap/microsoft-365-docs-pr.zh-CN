@@ -1,6 +1,6 @@
 ---
-title: 分析 Microsoft 365 Defender 中的事件
-description: 分析与设备、用户和邮箱相关的事件。
+title: 调查 Microsoft 365 Defender 中的事件
+description: 调查与设备、用户和邮箱相关的事件。
 keywords: 事件， 事件， 分析， 响应， 计算机， 设备， 用户， 标识， 邮件， 电子邮件， 邮箱， 调查， 图形， 证据
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -22,14 +22,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 72e1efb8a06fb7fa64b83ab6522fe4cdcfd1a73e
-ms.sourcegitcommit: 5a1cb7d95070eef47d401a4693cc137a90550a5e
+ms.openlocfilehash: 7abc99a14ec538afea8cdbd4d8f3b4940bcccd9f
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52259628"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52300081"
 ---
-# <a name="analyze-incidents-in-microsoft-365-defender"></a>分析 Microsoft 365 Defender 中的事件
+# <a name="investigate-incidents-in-microsoft-365-defender"></a>调查 Microsoft 365 Defender 中的事件
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -41,7 +41,7 @@ Microsoft 365Defender 将来自你的设备、用户和邮箱的所有其他相�
 
 在事件内，分析影响网络的警报，了解它们的含义，并整理证据，以便制定有效的修正计划。
 
-## <a name="initial-analysis"></a>初始分析
+## <a name="initial-investigation"></a>初始调查
 
 在深入讨论详细信息之前，请看一下事件的属性和摘要。
 
@@ -88,7 +88,7 @@ Microsoft 365Defender 将来自你的设备、用户和邮箱的所有其他相�
 
 默认情况下，警报按时间顺序排序，以便查看事件如何随着时间的推移而播放。 选择每个警报将你访问警报的主页，你可以在这里对此警报进行深入分析。 
 
-了解如何在分析警报中使用警报队列 [和警报页面](investigate-alerts.md)
+了解如何在调查警报中使用警报队列 [和警报页面](investigate-alerts.md)。
 
 ## <a name="devices"></a>设备
 
@@ -123,11 +123,13 @@ Microsoft 365Defender 将来自你的设备、用户和邮箱的所有其他相�
 
 ## <a name="investigations"></a>调查
 
-" **调查** "选项卡列出了此事件中的警报触发的所有自动调查。 调查将执行修正操作或等待分析员批准操作，具体取决于如何将自动调查配置为在 Microsoft Defender for Endpoint 和 Defender for Office 365 中运行。
+"**调查**"选项卡列出了此事件中的 [](m365d-autoir.md)警报触发的所有自动调查。 调查将执行修正操作或等待分析员批准操作，具体取决于如何将自动调查配置为在 Microsoft Defender for Endpoint 和 Defender for Office 365 中运行。
 
 :::image type="content" source="../../media/investigate-incidents/incident-investigations.png" alt-text="事件的调查页面示例":::
 
 选择“调查”，以导航到调查详细信息页面，获取有关调查和修复状态的完整信息。 如果有作为调查的一部分等待审批的任何操作，它们将显示在"挂起的操作"选项卡中。采取操作作为事件修正的一部分。
+
+有关详细信息，请参阅自动调查和响应[Microsoft 365 Defender](m365d-autoir.md)。
 
 ## <a name="evidence-and-response"></a>证据和响应
 
@@ -155,8 +157,14 @@ Microsoft 365Defender 自动调查警报中所有事件支持的事件和可疑�
 
 现在，你可以了解攻击在一段时间是如何通过网络的、开始位置以及攻击发生的时间。
 
+## <a name="next-steps"></a>后续步骤
 
-## <a name="related-topics"></a>相关主题
+根据需要：
+
+- [调查事件警报](investigate-alerts.md)
+- [调查事件的用户](investigate-users.md)
+
+## <a name="see-also"></a>另请参阅
 
 - [事件概述](incidents-overview.md)
 - [确定事件优先级](incident-queue.md)

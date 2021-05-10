@@ -1,5 +1,5 @@
 ---
-title: 支持信息（该国家/区）
+title: 针对巴斯克的支持信息
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -10,18 +10,18 @@ ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
 localization_priority: Normal
-description: 了解如何联系你的国家/地区支持人员。
+description: 了解如何联系你的国家/地区或地区的支持人员。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 97c6ed28f452db828e492b434375ecab9a46fa8d
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: 37fa76440ebd844f2400030db79f7b2f4a4c72d8
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50545640"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52298000"
 ---
-# <a name="contact-support-for-mozambique"></a>联系美国支持人员
+# <a name="contact-support-for-mozambique"></a>联系支持人员以访问该区
 
-[查找另一个国家/地区](../contact-support-for-business-products.md)。
+[查找另一个国家/地区](../../business-video/get-help-support.md)。
 
 ## <a name="phone-number"></a>电话号码
 +1 312 843 5153
@@ -33,7 +33,7 @@ ms.locfileid: "50545640"
 
 ### <a name="technical-support"></a>技术支持：
 
-葡萄牙语：Mon-Fri 9 AM-7 PM
+葡萄牙语：Mon-Fri上午 9 点到下午 7 点
 
 英语：全天候
 

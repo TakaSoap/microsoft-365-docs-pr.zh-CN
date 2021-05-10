@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 ROBOTS: noindex,nofollow
 ms.technology: mde
-ms.openlocfilehash: 97971699ec6000ab9233c2fd739f471cdda01b2d
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 47d494016161f306745ea4116c95c22bd18e1402
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51933849"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52300069"
 ---
 # <a name="contact-microsoft-defender-for-endpoint-support-for-us-government-customers"></a>联系 Microsoft Defender for Endpoint support for US Government customers
 
@@ -39,12 +39,12 @@ Defender for Endpoint 最近升级了支持流程，可提供更现代、更高�
 
 环境 | 门户 URL
 :---|:---
-商业上的 GCC-M | [https://securitycenter.microsoft.com](https://securitycenter.microsoft.com)
+GCC-M（商业） | [https://securitycenter.microsoft.com](https://securitycenter.microsoft.com)
 GCC-M | [https://gcc.securitycenter.microsoft.us](https://gcc.securitycenter.microsoft.us)
 GCC-H | [https://securitycenter.microsoft.us](https://securitycenter.microsoft.us)
 DoD | [https://securitycenter.microsoft.us](https://securitycenter.microsoft.us)
 
-如果无法登录门户，则还可使用电话 打开支持 [案例](https://docs.microsoft.com/microsoft-365/admin/contact-support-for-business-products?view=o365-worldwide&tabs=phone&preserve-view=true)。
+如果无法登录门户，则还可使用电话 打开支持 [案例](../../business-video/get-help-support.md)。
 
 ## <a name="opening-a-support-case"></a>打开支持案例
 有关先决条件和说明，请参阅 [联系 Microsoft Defender for Endpoint 支持](contact-support.md)。

@@ -10,18 +10,18 @@ ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
 localization_priority: Normal
-description: 了解如何联系你的国家/地区支持人员。
+description: 了解如何联系你的国家/地区或地区的支持人员。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 07983faa86c1ac2fe2a5daaaa8784d8071d9430b
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: 4bcec12d518d56ed8aafdd7c1100446c2dae1dd2
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50546144"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52298393"
 ---
-# <a name="contact-support-for-macau-sar"></a>联系中国澳门特别行政区支持人员
+# <a name="contact-support-for-macau-sar"></a>联系澳门特别行政区支持人员
 
-[查找另一个国家/地区](../contact-support-for-business-products.md)。
+[查找另一个国家/地区](../../business-video/get-help-support.md)。
 
 ## <a name="phone-number"></a>电话号码
 0800 111
@@ -35,7 +35,7 @@ ms.locfileid: "50546144"
 
 尼泊尔语：Mon-Fri上午 9 点到下午 5 点
 
-国语：Mon-Fri上午 9 点到下午 5 点
+中国：Mon-Fri上午 9 点到下午 5 点
 
 英语：Mon-Fri上午 9 点到下午 5 点
 
@@ -43,6 +43,6 @@ ms.locfileid: "50546144"
 
 尼泊尔语：Mon-Fri上午 9 点到下午 5 点
 
-国语：Mon-Fri上午 9 点到下午 5 点
+中国：Mon-Fri上午 9 点到下午 5 点
 
 英语：全天候

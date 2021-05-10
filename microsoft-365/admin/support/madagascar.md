@@ -1,5 +1,5 @@
 ---
-title: 针对卢森堡的支持信息
+title: 针对用户的支持信息
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -10,18 +10,18 @@ ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
 localization_priority: Normal
-description: 了解如何联系你的国家/地区支持人员。
+description: 了解如何联系你的国家/地区或地区的支持人员。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 9874654a651883442ecf88c71c2659a8ff4b65b2
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: da5f609b6f5a4e8bab42a58ec45128ca8ae697c2
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50546048"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52298381"
 ---
-# <a name="contact-support-for-madagascar"></a>联系针对卢森堡的支持人员
+# <a name="contact-support-for-madagascar"></a>联系针对百里达的支持
 
-[查找另一个国家/地区](../contact-support-for-business-products.md)。
+[查找另一个国家/地区](../../business-video/get-help-support.md)。
 
 ## <a name="phone-number"></a>电话号码
 +1 312 843 5147
@@ -31,7 +31,7 @@ ms.locfileid: "50546048"
 
 法语：Mon-Fri 11 AM-7 PM
 
-英语：Mon-Fri上午 11 点到下午 7 点
+英语：Mon-Fri 11 AM-7 PM
 
 ### <a name="technical-support"></a>技术支持：
 

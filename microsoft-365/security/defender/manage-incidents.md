@@ -1,5 +1,5 @@
 ---
-title: 在 Microsoft 365 Defender 中管理事件
+title: 管理 Microsoft 365 Defender 中的事件
 description: 了解如何分配、更新状态
 keywords: 事件， 事件， 分析， 响应， 警报， 相关警报， 分配， 更新， 状态， 管理， 分类， microsoft， 365， m365
 search.product: eADQiWindows 10XVcnh
@@ -22,14 +22,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 5f66189979f401430353f4c15978a85276b48840
-ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
+ms.openlocfilehash: 09c391d6b02e1273f55070283a6e11454f677114
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "51939750"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52299997"
 ---
-# <a name="manage-incidents-in-microsoft-365-defender"></a>在 Microsoft 365 Defender 中管理事件
+# <a name="manage-incidents-in-microsoft-365-defender"></a>管理 Microsoft 365 Defender 中的事件
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -39,7 +39,7 @@ ms.locfileid: "51939750"
 
 事件管理对于确保包含和解决威胁至关重要。
 
-在快速启动 Microsoft  365 安全中心&事件>事件或事件管理事件 (security.microsoft.com) 。 [](https://security.microsoft.com) 下面是一个示例。
+在快速启动 Microsoft 365安全中心&事件>事件 (security.microsoft.com) 。 [](https://security.microsoft.com) 下面是一个示例。
 
 :::image type="content" source="../../media/incidents-queue/incidents-ss-incidents.png" alt-text="事件队列示例":::
 
@@ -65,7 +65,7 @@ ms.locfileid: "51939750"
 
 ## <a name="edit-the-incident-name"></a>编辑事件名称
 
-Microsoft 365 Defender 根据警报属性自动分配名称，如受影响的终结点数、受影响的用户数、检测源或类别。 这使您可以快速了解事件的范围。 例如： *多个源报告的多个终结点上的多阶段事件。*
+Microsoft 365Defender 根据警报属性自动分配名称，如受影响的终结点数、受影响的用户数、检测源或类别。 这使您可以快速了解事件的范围。 例如： *多个源报告的多个终结点上的多阶段事件。*
 
 可以从"管理事件"窗格上的" **事件名称** "字段中 **编辑事件** 名称。
 
@@ -98,8 +98,16 @@ Microsoft 365 Defender 根据警报属性自动分配名称，如受影响的终
 
 可以使用"注释"字段向事件添加 **多个** 注释。 每个注释将添加到事件的历史事件中。 You can see the comments and history of an incident from the **Comments and history** link on the **Summary** page.
 
-## <a name="related-topics"></a>相关主题
+## <a name="next-steps"></a>后续步骤
+
+对于新事件，请开始 [调查](investigate-incidents.md)。
+
+对于进程内事件， [请继续调查](investigate-incidents.md)。
+
+对于已解决的事件，执行事后 [评审](first-incident-post.md)。
+
+## <a name="see-also"></a>另请参阅
 
 - [事件概述](incidents-overview.md)
 - [确定事件优先级](incident-queue.md)
-- [分析事件](investigate-incidents.md)
+- [调查事件](investigate-incidents.md)
