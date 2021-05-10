@@ -10,29 +10,29 @@ ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
 localization_priority: Normal
-description: 了解如何联系你的国家/地区支持人员。
+description: 了解如何联系你的国家/地区或地区的支持人员。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 93cdf9a18baf0fbdc5ad64c2f4f51728fb4dca22
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: 51fbc3c7b3e013ccd69d88c0fb4bffb2dccb28a4
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50545304"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52295635"
 ---
-# <a name="contact-support-for-niue"></a><span data-ttu-id="6bb4b-103">联系 Niue 支持人员</span><span class="sxs-lookup"><span data-stu-id="6bb4b-103">Contact support for Niue</span></span>
+# <a name="contact-support-for-niue"></a><span data-ttu-id="68fcc-103">联系 Niue 支持人员</span><span class="sxs-lookup"><span data-stu-id="68fcc-103">Contact support for Niue</span></span>
 
-<span data-ttu-id="6bb4b-104">[查找另一个国家/地区](../contact-support-for-business-products.md)。</span><span class="sxs-lookup"><span data-stu-id="6bb4b-104">[Find another country or region](../contact-support-for-business-products.md).</span></span>
+<span data-ttu-id="68fcc-104">[查找另一个国家/地区](../../business-video/get-help-support.md)。</span><span class="sxs-lookup"><span data-stu-id="68fcc-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="6bb4b-105">电话号码</span><span class="sxs-lookup"><span data-stu-id="6bb4b-105">Phone number</span></span>
-<span data-ttu-id="6bb4b-106">+1 312 843 5148</span><span class="sxs-lookup"><span data-stu-id="6bb4b-106">+1 312 843 5148</span></span>
+## <a name="phone-number"></a><span data-ttu-id="68fcc-105">电话号码</span><span class="sxs-lookup"><span data-stu-id="68fcc-105">Phone number</span></span>
+<span data-ttu-id="68fcc-106">+1 312 843 5148</span><span class="sxs-lookup"><span data-stu-id="68fcc-106">+1 312 843 5148</span></span>
 
-## <a name="hours"></a><span data-ttu-id="6bb4b-107">工作时间</span><span class="sxs-lookup"><span data-stu-id="6bb4b-107">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="6bb4b-108">计费支持：</span><span class="sxs-lookup"><span data-stu-id="6bb4b-108">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="68fcc-107">工作时间</span><span class="sxs-lookup"><span data-stu-id="68fcc-107">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="68fcc-108">计费支持：</span><span class="sxs-lookup"><span data-stu-id="68fcc-108">Billing Support:</span></span>
 
-<span data-ttu-id="6bb4b-109">英语：Mon-Fri上午 9 点到下午 5 点</span><span class="sxs-lookup"><span data-stu-id="6bb4b-109">English: Mon-Fri 9 AM-5 PM</span></span>
+<span data-ttu-id="68fcc-109">英语：Mon-Fri上午 9 点到下午 5 点</span><span class="sxs-lookup"><span data-stu-id="68fcc-109">English: Mon-Fri 9 AM-5 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="6bb4b-110">技术支持：</span><span class="sxs-lookup"><span data-stu-id="6bb4b-110">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="68fcc-110">技术支持：</span><span class="sxs-lookup"><span data-stu-id="68fcc-110">Technical Support:</span></span>
 
-<span data-ttu-id="6bb4b-111">英语：全天候</span><span class="sxs-lookup"><span data-stu-id="6bb4b-111">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="68fcc-111">英语：全天候</span><span class="sxs-lookup"><span data-stu-id="68fcc-111">English: 24 hours a day, 7 days a week</span></span>
 
-<span data-ttu-id="6bb4b-112">国际呼叫费用适用</span><span class="sxs-lookup"><span data-stu-id="6bb4b-112">International call charges apply</span></span>
+<span data-ttu-id="68fcc-112">国际呼叫费用适用</span><span class="sxs-lookup"><span data-stu-id="68fcc-112">International call charges apply</span></span>
