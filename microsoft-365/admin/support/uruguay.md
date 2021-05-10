@@ -10,27 +10,27 @@ ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
 localization_priority: Normal
-description: 了解如何联系你的国家/地区支持人员。
+description: 了解如何联系你的国家/地区或地区的支持人员。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 5e59e4f0d6ede264c4362888a6b8e6496b186293
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: abd4c36e87ff40c1f2056121d280576a6792125f
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50543540"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52297460"
 ---
-# <a name="contact-support-for-uruguay"></a><span data-ttu-id="16e9f-103">联系乌拉圭的支持人员</span><span class="sxs-lookup"><span data-stu-id="16e9f-103">Contact support for Uruguay</span></span>
+# <a name="contact-support-for-uruguay"></a><span data-ttu-id="2809e-103">联系乌拉圭支持人员</span><span class="sxs-lookup"><span data-stu-id="2809e-103">Contact support for Uruguay</span></span>
 
-<span data-ttu-id="16e9f-104">[查找另一个国家/地区](../contact-support-for-business-products.md)。</span><span class="sxs-lookup"><span data-stu-id="16e9f-104">[Find another country or region](../contact-support-for-business-products.md).</span></span>
+<span data-ttu-id="2809e-104">[查找另一个国家/地区](../../business-video/get-help-support.md)。</span><span class="sxs-lookup"><span data-stu-id="2809e-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="16e9f-105">电话号码</span><span class="sxs-lookup"><span data-stu-id="16e9f-105">Phone number</span></span>
-<span data-ttu-id="16e9f-106">000 411 002 7131</span><span class="sxs-lookup"><span data-stu-id="16e9f-106">000 411 002 7131</span></span>
+## <a name="phone-number"></a><span data-ttu-id="2809e-105">电话号码</span><span class="sxs-lookup"><span data-stu-id="2809e-105">Phone number</span></span>
+<span data-ttu-id="2809e-106">000 411 002 7131</span><span class="sxs-lookup"><span data-stu-id="2809e-106">000 411 002 7131</span></span>
 
-## <a name="hours"></a><span data-ttu-id="16e9f-107">工作时间</span><span class="sxs-lookup"><span data-stu-id="16e9f-107">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="16e9f-108">计费支持：</span><span class="sxs-lookup"><span data-stu-id="16e9f-108">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="2809e-107">工作时间</span><span class="sxs-lookup"><span data-stu-id="2809e-107">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="2809e-108">计费支持：</span><span class="sxs-lookup"><span data-stu-id="2809e-108">Billing Support:</span></span>
 
-<span data-ttu-id="16e9f-109">西班牙语：Mon-Fri上午 9 点到下午 5 点</span><span class="sxs-lookup"><span data-stu-id="16e9f-109">Spanish: Mon-Fri 9 AM-5 PM</span></span>
+<span data-ttu-id="2809e-109">西班牙语：Mon-Fri上午 9 点到下午 5 点</span><span class="sxs-lookup"><span data-stu-id="2809e-109">Spanish: Mon-Fri 9 AM-5 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="16e9f-110">技术支持：</span><span class="sxs-lookup"><span data-stu-id="16e9f-110">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="2809e-110">技术支持：</span><span class="sxs-lookup"><span data-stu-id="2809e-110">Technical Support:</span></span>
 
-<span data-ttu-id="16e9f-111">西班牙语：一天 24 小时，每周 7 天</span><span class="sxs-lookup"><span data-stu-id="16e9f-111">Spanish: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="2809e-111">西班牙语：一天 24 小时，每周 7 天</span><span class="sxs-lookup"><span data-stu-id="2809e-111">Spanish: 24 hours a day, 7 days a week</span></span>
