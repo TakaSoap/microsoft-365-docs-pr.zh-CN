@@ -19,12 +19,12 @@ ms.collection:
 - m365solution-scenario
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 00e57d03ae636837120b53c0de16861ad142ef76
-ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
+ms.openlocfilehash: e3df1286c69132c960c412f6f74512bb49c32b28
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52280929"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52291039"
 ---
 # <a name="prepare-microsoft-defender-for-endpoint-deployment"></a>准备 Microsoft Defender 终结点部署
 
@@ -134,7 +134,6 @@ Microsoft 建议利用 RBAC 来确保只有具有业务理由的用户才能访�
 | Microsoft 威胁专家 (MTE)           | Microsoft 威胁专家是一项托管搜寻服务，可为安全操作中心 (SOC) 提供专家级别的监视和分析，以帮助他们确保不会错过其独特环境中的关键威胁。 <br>[了解更多信息。](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/microsoft-threat-experts)                                                                                                                                                                                                                                                                                                                     | 不适用      |
 
 ## <a name="next-step"></a>后续步骤
-|||
-|:-------|:-----|
-|![阶段 2：设置](images/setup.png) <br>[阶段 2：设置](production-deployment.md) | 设置 Microsoft Defender for Endpoint 部署
+
+![阶段 2：设置](images/setup.png) <br>[阶段 2：设置](production-deployment.md) |设置 Microsoft Defender for Endpoint 部署
 

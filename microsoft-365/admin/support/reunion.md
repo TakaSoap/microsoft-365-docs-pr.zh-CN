@@ -10,18 +10,18 @@ ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
 localization_priority: Normal
-description: 了解如何联系你的国家/地区支持人员。
+description: 了解如何联系你的国家/地区或地区的支持人员。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 22f7b55ab2fa2e9c13a0b3fd7cfbba37570dfcaf
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: c4ee22bdcd297dc8dad7a819303b9c17879ee2a2
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50544944"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52295507"
 ---
-# <a name="contact-support-for-reunion"></a>联系留尼达支持人员
+# <a name="contact-support-for-reunion"></a>联系留尼多的支持人员
 
-[查找另一个国家/地区](../contact-support-for-business-products.md)。
+[查找另一个国家/地区](../../business-video/get-help-support.md)。
 
 ## <a name="phone-number"></a>电话号码
 +1 312 843 5147
@@ -29,9 +29,9 @@ ms.locfileid: "50544944"
 ## <a name="hours"></a>工作时间
 ### <a name="billing-support"></a>计费支持：
 
-法语：Mon-Fri中午-8 点
+法语：Mon-Fri中午 8 点
 
-英语：Mon-Fri中午 -8 点
+英语：Mon-Fri中午 8 点
 
 ### <a name="technical-support"></a>技术支持：
 

@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 47d066fa20abe963f7afaa3b88cecc96fa6e87fc
-ms.sourcegitcommit: 5a1cb7d95070eef47d401a4693cc137a90550a5e
+ms.openlocfilehash: a3b6edda36d2872177d9a88f3259220dcf2e76f3
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52259579"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52291311"
 ---
 # <a name="prioritize-incidents-in-microsoft-365-defender"></a>确定 defender 中事件的Microsoft 365优先级
 
@@ -83,11 +83,14 @@ Microsoft 365Defender 应用相关分析，将来自不同产品的相关警报�
 | 状态 | 可以根据事件的状态选择限制所显示事件的列表，以查看哪些事件处于活动状态/已解决状态。 |
 |||
 
-## <a name="next-step"></a>后续步骤
+## <a name="next-steps"></a>后续步骤
 
-确定哪个事件需要最高优先级后，选择它[并开始分析。](investigate-incidents.md)
+确定哪个事件需要最高优先级后，选择它并：
+
+- [管理](manage-incidents.md) 事件的属性，包括标记、向安全分析师分配和注释。
+- 开始 [调查](investigate-incidents.md)。
 
 ## <a name="see-also"></a>另请参阅
 - [事件概述](incidents-overview.md)
-- [分析事件](investigate-incidents.md)
+- [调查事件](investigate-incidents.md)
 - [管理事件](manage-incidents.md)

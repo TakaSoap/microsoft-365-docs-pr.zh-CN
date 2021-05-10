@@ -24,12 +24,12 @@ search.appverid:
 - GEA150
 ms.assetid: 758befc4-0888-4009-9f14-0d147402fd23
 description: 使用管理中心在云中设置组织，还可用它来管理用户和订阅。 首先使用管理员权限登录帐户。
-ms.openlocfilehash: f2b8a22019e3292c93d07161f3825dfe90629ccc
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: db88904e16cf9410d3eb4e4aac161f714993150b
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52241744"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52290979"
 ---
 # <a name="about-the-microsoft-365-admin-center"></a>关于 Microsoft 365 管理中心
 
@@ -64,7 +64,7 @@ ms.locfileid: "52241744"
 |**组** <br/> |在组织中创建和管理组，例如Microsoft 365组、通讯组、安全组或共享邮箱。 了解如何[创建](../create-groups/create-groups.md)和[管理](../create-groups/manage-groups.md)组。  <br/> |
 |**资源** <br/> |创建和管理资源，如 SharePoint 网站集。 了解如何[创建网站集](/sharepoint/create-site-collection)。  <br/> |
 |**帐单** <br/> |查看、购买或取消组织的订阅。 查看过去的帐单声明，或查看分配给单个用户的许可证数量。 了解如何[管理帐单](../../commerce/index.yml)。  <br/> |
-|**支持** <br/> | 查看现有服务请求或创建新请求。 在[联系商业版产品的支持人员 - 管理员帮助](../contact-support-for-business-products.md)中了解详细信息。 |
+|**支持** <br/> | 查看现有服务请求或创建新请求。 在[联系商业版产品的支持人员 - 管理员帮助](../../business-video/get-help-support.md)中了解详细信息。 |
 |**Settings** <br/> |管理应用（如电子邮件、网站和 Office 套件）的全局设置。 更改你的密码策略和到期日期。 添加和更新域名，如 contoso.com。 更改组织配置文件和发布首选项。 选择合作伙伴能否访问你的管理中心。  <br/> |
 |**设置** <br/> |管理现有域、启用和管理多重身份验证、管理管理员访问权限、将用户邮箱迁移到 Office 365、管理功能更新，并帮助用户安装其 Office 应用。 |
 |**报表** <br/> |一目了然地查看组织如何使用电子邮件Microsoft 365电子邮件使用、Office激活等的详细报告。 了解如何使用新[活动报表](../activity-reports/activity-reports.md)。  <br/> |

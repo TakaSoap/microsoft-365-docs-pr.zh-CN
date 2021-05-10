@@ -1,5 +1,5 @@
 ---
-title: 针对津巴布韦的支持信息
+title: 赞比亚的支持信息
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -10,18 +10,18 @@ ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
 localization_priority: Normal
-description: 了解如何联系你的国家/地区支持人员。
+description: 了解如何联系你的国家/地区或地区的支持人员。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 680d0bdcd558eca0691a9c0329ef8e91f08680ed
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: 8eb8d01b9bdee78720daf18fb60d680e0a10ec01
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50549252"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52294943"
 ---
-# <a name="contact-support-for-zambia"></a>联系津巴布韦支持人员
+# <a name="contact-support-for-zambia"></a>联系赞比亚支持人员
 
-[查找另一个国家/地区](../contact-support-for-business-products.md)。
+[查找另一个国家/地区](../../business-video/get-help-support.md)。
 
 ## <a name="phone-number"></a>电话号码
 +27 21 427 3315

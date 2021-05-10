@@ -1,5 +1,5 @@
 ---
-title: 南格鲁吉亚和南威奇群岛的支持信息
+title: 对南格鲁吉亚和南维尔京群岛的支持信息
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -10,18 +10,18 @@ ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
 localization_priority: Normal
-description: 了解如何联系你的国家/地区支持人员。
+description: 了解如何联系你的国家/地区或地区的支持人员。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 7da79d5cdd4766b1c0a6b3f0fc4010ec70cd955e
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: 70b640939e888095d0df647466595a95a40a902d
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50544272"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52295351"
 ---
-# <a name="contact-support-for-south-georgia-and-south-sandwich-islands"></a>联系南格鲁吉亚和南威奇群岛的支持人员
+# <a name="contact-support-for-south-georgia-and-south-sandwich-islands"></a>联系南部格鲁吉亚和南维尔京群岛的支持
 
-[查找另一个国家/地区](../contact-support-for-business-products.md)。
+[查找另一个国家/地区](../../business-video/get-help-support.md)。
 
 ## <a name="phone-number"></a>电话号码
 +1 312 843 5145
@@ -29,7 +29,7 @@ ms.locfileid: "50544272"
 ## <a name="hours"></a>工作时间
 ### <a name="billing-support"></a>计费支持：
 
-英语：Mon-Fri上午 11 点到下午 7 点
+英语：Mon-Fri 11 AM-7 PM
 
 ### <a name="technical-support"></a>技术支持：
 
