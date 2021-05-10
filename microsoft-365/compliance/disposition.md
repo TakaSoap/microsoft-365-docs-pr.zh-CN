@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 无论是使用处置评审还是根据配置的设置自动删除内容，都可监视和管理内容的处置。
-ms.openlocfilehash: c49f669498424169a89fa99fcdd259de1f5c720b
-ms.sourcegitcommit: 7ebed5810480d7c49f8ca03207b5ea84993d253f
+ms.openlocfilehash: b64db336aa619313f2ff744e94d48e44c13856a0
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51488165"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52296752"
 ---
 # <a name="disposition-of-content"></a>内容的处置
 
@@ -52,7 +52,7 @@ ms.locfileid: "51488165"
 
 ## <a name="disposition-reviews"></a>处置评审
 
-当内容达到保留期限结束时，你可能会希望查看该内容并确认是否可以永久删除（"处置"）有多种原因。 例如，你可能需要：
+当内容的保持期结束时，这里有几个可能使人想审查其内容并确认它是否可以永久删除 (“处置”) 的原因。例如，若不删除其内容，可能需要:
   
 - 在诉讼或审计的事件中，暂停对相关内容的删除。
 
@@ -114,7 +114,7 @@ ms.locfileid: "51488165"
 
 提供对位置和内容的权限，可使用 **位置** 列中的链接查看原始位置中的文档。 在处置评审过程中，内容永远不会从其原始位置移动，并且在审阅者选择执行此操作之前，永远不会删除该内容。
 
-每周都会自动向审核者发送电子邮件通知。 此计划流程表示当内容到达其保留期末尾时，审阅者可能需要长达7天的时间才能收到内容正在等待处置的电子邮件通知。
+电子邮件通知会每周自动发送给审查员。这种预定的流程意味着当内容的保持期结束时，审查员可能需要最多七天的时间才能收到内容正在等待处理的电子邮件通知。
   
 可对所有处置操作进行审核，审阅者输入的理由文本将保存并显示在 **已处置项目** 页面上的 **评论** 列中。
   
@@ -133,7 +133,7 @@ ms.locfileid: "51488165"
 
 ![未经处置评审即被处置的项目](../media/records-disposed2.png)
 
-在“**已处置项目**”选项卡中显示的项目将在处置后最多保留 7 年，在此期间，每条记录的上限为一百万个项目。 如果看到 **计数** 数字接近一百万这一限制，并且需要对记录进行处置证明，请联系 [Microsoft 支持](/office365/admin/contact-support-for-business-products)。
+在“**已处置项目**”选项卡中显示的项目将在处置后最多保留 7 年，在此期间，每条记录的上限为一百万个项目。 如果看到 **计数** 数字接近一百万这一限制，并且需要对记录进行处置证明，请联系 [Microsoft 支持](../business-video/get-help-support.md)。
 
 > [!NOTE]
 > 此功能使用 [统一审核日志](search-the-audit-log-in-security-and-compliance.md) 中的信息，因此需要允许审核以使其 [启动且可搜索](turn-audit-log-search-on-or-off.md)，以便捕获相应的事件。
