@@ -1,5 +1,5 @@
 ---
-title: 有关赫德岛和 Mc Island 群岛的支持信息
+title: 有关赫德岛和 Mc一岛的支持信息
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -10,29 +10,29 @@ ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
 localization_priority: Normal
-description: 了解如何联系你的国家/地区支持人员。
+description: 了解如何联系你的国家/地区或地区的支持人员。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: cc497cd7452a0502af40d1466ae1480c8b6f8cc0
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: 6df569c2919e9941bc5c7c6ee92970fa694af225
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50546900"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52296091"
 ---
-# <a name="contact-support-for-heard-island-and-mcdonald-islands"></a><span data-ttu-id="2d5e8-103">联系赫德岛和 Mc Island 群岛的支持人员</span><span class="sxs-lookup"><span data-stu-id="2d5e8-103">Contact support for Heard Island and McDonald Islands</span></span>
+# <a name="contact-support-for-heard-island-and-mcdonald-islands"></a><span data-ttu-id="cdaf9-103">联系有关赫德岛和 Mc在都纳群岛的支持</span><span class="sxs-lookup"><span data-stu-id="cdaf9-103">Contact support for Heard Island and McDonald Islands</span></span>
 
-<span data-ttu-id="2d5e8-104">[查找另一个国家/地区](../contact-support-for-business-products.md)。</span><span class="sxs-lookup"><span data-stu-id="2d5e8-104">[Find another country or region](../contact-support-for-business-products.md).</span></span>
+<span data-ttu-id="cdaf9-104">[查找另一个国家/地区](../../business-video/get-help-support.md)。</span><span class="sxs-lookup"><span data-stu-id="cdaf9-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="2d5e8-105">电话号码</span><span class="sxs-lookup"><span data-stu-id="2d5e8-105">Phone number</span></span>
-<span data-ttu-id="2d5e8-106">+1 312 843 5148</span><span class="sxs-lookup"><span data-stu-id="2d5e8-106">+1 312 843 5148</span></span>
+## <a name="phone-number"></a><span data-ttu-id="cdaf9-105">电话号码</span><span class="sxs-lookup"><span data-stu-id="cdaf9-105">Phone number</span></span>
+<span data-ttu-id="cdaf9-106">+1 312 843 5148</span><span class="sxs-lookup"><span data-stu-id="cdaf9-106">+1 312 843 5148</span></span>
 
-## <a name="hours"></a><span data-ttu-id="2d5e8-107">工作时间</span><span class="sxs-lookup"><span data-stu-id="2d5e8-107">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="2d5e8-108">计费支持：</span><span class="sxs-lookup"><span data-stu-id="2d5e8-108">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="cdaf9-107">工作时间</span><span class="sxs-lookup"><span data-stu-id="cdaf9-107">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="cdaf9-108">计费支持：</span><span class="sxs-lookup"><span data-stu-id="cdaf9-108">Billing Support:</span></span>
 
-<span data-ttu-id="2d5e8-109">英语：Mon-Fri上午 9 点到下午 5 点</span><span class="sxs-lookup"><span data-stu-id="2d5e8-109">English: Mon-Fri 9 AM-5 PM</span></span>
+<span data-ttu-id="cdaf9-109">英语：Mon-Fri上午 9 点到下午 5 点</span><span class="sxs-lookup"><span data-stu-id="cdaf9-109">English: Mon-Fri 9 AM-5 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="2d5e8-110">技术支持：</span><span class="sxs-lookup"><span data-stu-id="2d5e8-110">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="cdaf9-110">技术支持：</span><span class="sxs-lookup"><span data-stu-id="cdaf9-110">Technical Support:</span></span>
 
-<span data-ttu-id="2d5e8-111">英语：全天候</span><span class="sxs-lookup"><span data-stu-id="2d5e8-111">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="cdaf9-111">英语：全天候</span><span class="sxs-lookup"><span data-stu-id="cdaf9-111">English: 24 hours a day, 7 days a week</span></span>
 
-<span data-ttu-id="2d5e8-112">国际呼叫费用适用</span><span class="sxs-lookup"><span data-stu-id="2d5e8-112">International call charges apply</span></span>
+<span data-ttu-id="cdaf9-112">国际呼叫费用适用</span><span class="sxs-lookup"><span data-stu-id="cdaf9-112">International call charges apply</span></span>

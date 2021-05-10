@@ -94,12 +94,14 @@
               href: manage-incidents.md
             - name: 事件响应
               items:
-                - name: 分析事件
+                - name: 调查事件
                   href: investigate-incidents.md
-                - name: 分析警报
+                - name: 调查警报
                   href: investigate-alerts.md
-                - name: 分析用户
+                - name: 调查用户
                   href: investigate-users.md
+                - name: 事件响应手册
+                  href: 'https://docs.microsoft.com/security/compass/incident-response-playbooks'
                 - name: 响应你的第一个事件
                   items:
                     - name: 简介
