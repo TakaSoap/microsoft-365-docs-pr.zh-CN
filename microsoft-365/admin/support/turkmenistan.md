@@ -1,5 +1,5 @@
 ---
-title: 阿塞拜疆的支持信息
+title: 针对阿塞拜疆的支持信息
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -10,18 +10,18 @@ ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
 localization_priority: Normal
-description: 了解如何联系你的国家/地区支持人员。
+description: 了解如何联系你的国家/地区或地区的支持人员。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: acff7dd180233fe4c7ff9ca76ee6c0d573d9e34f
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: 923e3ed22b00b95f751f140397c22631ba3025b5
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50543756"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52297508"
 ---
-# <a name="contact-support-for-turkmenistan"></a>联系阿塞拜疆的支持人员
+# <a name="contact-support-for-turkmenistan"></a>联系针对阿塞拜疆的支持人员
 
-[查找另一个国家/地区](../contact-support-for-business-products.md)。
+[查找另一个国家/地区](../../business-video/get-help-support.md)。
 
 ## <a name="phone-number"></a>电话号码
 +7 499 922 86 23
@@ -35,7 +35,7 @@ ms.locfileid: "50543756"
 
 ### <a name="technical-support"></a>技术支持：
 
-俄语：Mon-Fri下午 7 点到下午 8 点
+俄语：Mon-Fri上午 7 点到下午 8 点
 
 英语：全天候
 

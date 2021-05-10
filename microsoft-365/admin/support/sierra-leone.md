@@ -1,5 +1,5 @@
 ---
-title: 支持信息（针对拉里达共和国）
+title: 支持人员信息（该国家/
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -10,18 +10,18 @@ ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
 localization_priority: Normal
-description: 了解如何联系你的国家/地区支持人员。
+description: 了解如何联系你的国家/地区或地区的支持人员。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: f10d3da7ef864658bc8a1d56d48ca45b3e56b674
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: d0d08abad60738bee3c4eb2afdc000b86b03f26a
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50544500"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52297724"
 ---
-# <a name="contact-support-for-sierra-leone"></a>联系支持人员，帮助拉里达
+# <a name="contact-support-for-sierra-leone"></a>联系支持人员，
 
-[查找另一个国家/地区](../contact-support-for-business-products.md)。
+[查找另一个国家/地区](../../business-video/get-help-support.md)。
 
 ## <a name="phone-number"></a>电话号码
 +1 312 843 5151

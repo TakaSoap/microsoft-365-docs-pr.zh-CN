@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 description: 了解如何关闭 Microsoft 帐户。
 ms.date: 04/02/2021
-ms.openlocfilehash: 4fa1366186f0a37d3319208224628332d958a0ea
-ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
+ms.openlocfilehash: 86232e3f433526cc60ef369eda03ef8d20ab08c9
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52107468"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52293663"
 ---
 # <a name="close-your-account"></a>关闭你的帐户
 
@@ -69,7 +69,7 @@ ms.locfileid: "52107468"
 6. 对于每个已禁用的订阅，重复步骤 3 至 5，直到删除所有订阅。
 
 > [!NOTE]
-> 如果无法立即删除已禁用的订阅，请联系 [支持人员](../admin/contact-support-for-business-products.md)。
+> 如果无法立即删除已禁用的订阅，请联系 [支持人员](../business-video/get-help-support.md)。
 
 ## <a name="step-4-disable-multi-factor-authentication"></a>步骤 4：禁用多重身份验证
 

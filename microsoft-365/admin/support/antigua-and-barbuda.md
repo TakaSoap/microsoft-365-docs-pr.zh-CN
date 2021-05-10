@@ -1,5 +1,5 @@
 ---
-title: 支持信息（针对都巴岛和都巴岛）
+title: 针对都斯巴岛和省/市/市的支持信息
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -10,18 +10,18 @@ ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
 localization_priority: Normal
-description: 了解如何联系你的国家/地区支持人员。
+description: 了解如何联系你的国家/地区或地区的支持人员。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 6df8ab6186363818b1db06d356686bf8edcda42c
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: a49295700ca31bca2deddb5c8a940213884657ff
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50549012"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52296968"
 ---
-# <a name="contact-support-for-antigua-and-barbuda"></a>联系支持人员，帮助他们获得有关危地马拉和危地马拉的支持
+# <a name="contact-support-for-antigua-and-barbuda"></a>联系适用于百里达和百里达的支持人员
 
-[查找另一个国家/地区](../contact-support-for-business-products.md)。
+[查找另一个国家/地区](../../business-video/get-help-support.md)。
 
 ## <a name="phone-number"></a>电话号码
 +1 312 843 5145

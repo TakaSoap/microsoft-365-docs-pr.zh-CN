@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 88001dc7126a55539213d4c560127d573a09f4bd
-ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
+ms.openlocfilehash: 76bead8fd855e4119db6297d2ab1a3d08d64a48c
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52114539"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52297160"
 ---
 # <a name="prepare-your-security-posture-for-your-first-incident"></a>为第一个事件准备安全状态
 
@@ -53,7 +53,7 @@ Microsoft 365 Defender 的组件可以显示违反为建立零信任条件访问
 
 设备风险直接影响该设备的用户可访问的资源。 基于特定条件拒绝访问资源是零信任的主要主题，Microsoft 365 Defender 提供确定信任级别条件所需的信息。 例如，Microsoft 365 Defender 可以通过"威胁和漏洞管理"页提供设备的软件版本级别，而条件访问策略限制具有过时或易受攻击的版本的设备。
 
-自动化是实施和维护零信任环境的重要部分，同时还减少了可能导致发生 IR 事件或 IR 事件 (警报) 数量。 Microsoft 365 Defender 的组件可以自动化，例如修正操作 (称为 Microsoft 365 安全中心) 中事件的调查、通知操作，甚至是创建支持票证（如[在 ServiceNow](https://microsoft.service-now.com/sp/)中）。
+自动化是实施和维护零信任环境的重要部分，同时还减少了可能导致发生 IR 事件或 IR 事件 (警报) 数量。 Microsoft 365 Defender 的组件可以自动化，例如修正操作[ (称为](m365d-autoir.md)Microsoft 365 安全中心) 中的事件调查、通知操作，甚至是创建支持票证（如[在 ServiceNow](https://microsoft.service-now.com/sp/)中）。
 
 ## <a name="step-2-determine-your-organizations-security-posture"></a>步骤 2. 确定组织的安全状态
 
@@ -92,5 +92,5 @@ Microsoft 365 Defender 的组件可以显示违反为建立零信任条件访问
 ## <a name="see-also"></a>另请参阅
 
 - [事件概述](incidents-overview.md)
-- [分析事件](investigate-incidents.md)
+- [调查事件](investigate-incidents.md)
 - [管理事件](manage-incidents.md)

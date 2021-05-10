@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: a8ab5061-3346-4da0-bb7c-5260822b53ae
 description: 了解更多关于由世纪互联运营的，旨在满足中国对安全、可靠和可扩展的云服务的需求的 Office 365 的信息。
 monikerRange: o365-21vianet
-ms.openlocfilehash: 1ee7ba7be2e350195350a5c00e92ed10924657ac
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
-ms.translationtype: HT
+ms.openlocfilehash: 00710d53033648764ed0e55eeb51ee66518e36f7
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52274360"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52297052"
 ---
 # <a name="office-365-operated-by-21vianet"></a>由世纪互联运营的 Office 365
 
@@ -56,7 +56,7 @@ Microsoft 并不亲自运营该服务。世纪互联运营、提供和管理该�
 |||
 |:-----|:-----|
 |自定义域  <br/> |管理员可以创建和/或使用通过中国特定的域提供商注册的自定义域。 如果没有自定义域名，则可以从域名注册机构处[如何购买域名](../get-help-with-domains/buy-a-domain-name.md)。 如果已经拥有一个域名，[查找域注册机构或 DNS 托管提供商](../get-help-with-domains/find-your-domain-registrar.md)。  <br/> 此外，如果使用Office 365 SharePoint Online服务创建公共网站，中国 Internet 合规政策要求获得 Internet 内容提供商（ICP）编号。  **注意：** 自定义域名中的不允许的词不能进行自动验证。           |
-|订阅、帐单和技术支持  <br/> |由世纪互联提供。 有关如何联系支持人员的信息，请参阅[联系 Office 365 商业版支持人员](../contact-support-for-business-products.md)。  <br/> |
+|订阅、帐单和技术支持  <br/> |由世纪互联提供。 有关如何联系支持人员的信息，请参阅[联系 Office 365 商业版支持人员](../../business-video/get-help-support.md)。  <br/> |
 |自助式密码重置  <br/> |仅供管理员使用。 有关详细信息，请参阅[在由世纪互联运营的 Office 365 中更改或重置密码](https://support.microsoft.com/office/d8eb5b62-9d0e-4267-a9bf-2aa491ee6d0b)。  <br/> |
 |安全性、隐私、合规性和关于支持级别的详细信息  <br/> |由世纪互联提供。  <br/> |
 |Office 桌面设置  <br/> |Office 桌面设置不适用于 Office 2010 和 Office 2007。 然而，管理员可以 [将当前的Office桌面应用程序配置为与Office 365配合使用](https://support.microsoft.com/office/85646aba-7e6c-4e24-a047-8fd9ce4f9d2e)。  <br/> |

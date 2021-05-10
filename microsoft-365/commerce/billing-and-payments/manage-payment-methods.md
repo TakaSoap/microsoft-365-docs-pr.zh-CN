@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 description: 了解如何在 Microsoft 365 管理中心管理你的付款方式。
 ms.date: 04/02/2021
-ms.openlocfilehash: b69096bb05ada6ce7a1ee619aa78bc04639e7004
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 82b2880eed830bd3b65cce14635c4fa10f618740
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244716"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52297364"
 ---
 # <a name="manage-payment-methods"></a>管理支付方式
 
@@ -129,7 +129,7 @@ ms.locfileid: "52244716"
 |**我的信用卡或借记卡被拒绝。** |如果通过信用卡或借记卡付款，并且信用卡被拒绝，则将收到一封电子邮件，指出 Microsoft 无法处理该付款。 仔细检查卡详细信息&mdash;卡号、到期日期、卡上的姓名以及地址，包括省/市/县和邮政编码&mdash;在卡上和语句中是否完全相同。 您可以使用订阅详细信息页面 **“结算”** 部分中的 **“结算余额”** 链接来更新您的卡信息并立即提交付款。 如需了解更多信息，请参阅[如果我有未清偿的余额，我应该怎么做？](pay-for-your-subscription.md#what-if-i-have-an-outstanding-balance)  <br/><br/>  如果仍然看到“拒绝”消息，请联系你的银行。 有可能你的卡片未处于活动状态。 如果你最近在邮件中收到该卡，到期日期已更新，请确保其已激活。 你的银行还可告知你卡片是否未获得批准进行联机、国际或定期交易。 |
 |**我想更新卡号或银行帐户帐号。** |不能更改现有付款方式的卡号或帐号。 如果你的卡号或帐号已更改， [请将其替换为不同的付款方式](#replace-a-payment-method)，该付款方式会将所有活动订阅从付款方式移动到新付款方式， [删除旧的付款方式](#delete-a-payment-method-with-no-subscriptions-or-billing-profiles-attached)。 |
 |**我的帐户中仅有一张信用卡或一个银行帐户，我想删除它。** |如果只有一种付款方式，则必须 [，将其替换为新的付款方式](#replace-a-payment-method) 才能将其删除。 |
-|**无法添加信用卡或银行帐户。**  |必须使用与租户相同的国家/地区发布的付款方式。 如果在输入信用卡或银行帐户信息时遇到问题。请[联系支持人员](../../admin/contact-support-for-business-products.md)。 |
+|**无法添加信用卡或银行帐户。**  |必须使用与租户相同的国家/地区发布的付款方式。 如果在输入信用卡或银行帐户信息时遇到问题。请[联系支持人员](../../business-video/get-help-support.md)。 |
 
 ## <a name="related-content"></a>相关内容
 

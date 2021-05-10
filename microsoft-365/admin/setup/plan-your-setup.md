@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: eb926624-018b-4486-bf11-5fba6ee4d645
 description: 了解移动到适用于Microsoft 365的要求和注意事项。
-ms.openlocfilehash: ba97253beed1544d8f993a462559037a0a1a4281
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: b4d2b5d500b73b62c67d3f8126b6313484e2bc78
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244499"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52297028"
 ---
 # <a name="plan-your-setup-of-microsoft-365-for-business"></a>规划企业Microsoft 365设置
 
@@ -56,7 +56,7 @@ ms.locfileid: "52244499"
   
 如果未完成安装向导，则你随时都可以从管理中心安装程序 [完成安装](https://go.microsoft.com/fwlink/p/?linkid=2024339)  >  **任务**。 你可以在此处从另一个电子邮件服务迁移电子邮件和联系人、更改管理员帐户的域、管理帐单信息、添加或删除用户、重置密码以及执行其他业务功能。 有关安装向导和"设置"页之间的差异详细信息，请参阅安装程序向导和["Microsoft 365"页面之间的差异](o365-setup-wizard-and-setup-page.md)。
 
-如果遇到问题，请随时致电我们。[我们可随时提供帮助！](../contact-support-for-business-products.md)
+如果遇到问题，请随时致电我们。[我们可随时提供帮助！](../../business-video/get-help-support.md)
   
 ## <a name="when-not-to-use-the-setup-wizard-active-directory-synchronization-and-hybrid-environments"></a>何时不使用设置向导？Active Directory 同步和混合环境
 
@@ -138,7 +138,7 @@ Microsoft 365为个人、小型组织和企业提供云存储。 有关存储位
 - **如果你的员工不到 50 人：**
 
   - **寻求帮助，我们将致电 。** 购买Microsoft 365后，你无需运行安装程序 (就可以访问管理中心) 。 在管理中心底部，选择" **需要帮助？"** 描述你的问题，我们将致电你。 
-  - **如果 [Microsoft 365问题，请致电](../contact-support-for-business-products.md)** Microsoft 365 for Business Support。 We're here to help! 
+  - **如果 [Microsoft 365问题，请致电](../../business-video/get-help-support.md)** Microsoft 365 for Business Support。 We're here to help! 
   - **考虑雇用 [Microsoft 合作伙伴](https://go.microsoft.com/fwlink/?linkid=391089)** 。 如果你的时间很短，或者对 (如将成千上万个文件移动到 Microsoft 365 云存储或与其他软件) 集成，经验丰富的合作伙伴可能会大有帮助。 
 
 - **如果你的员工超过 50 人** ，则 [FastTrack 实施中心](https://go.microsoft.com/fwlink/?LinkId=517115)可对你的部署提供帮助。

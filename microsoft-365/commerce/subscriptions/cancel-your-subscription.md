@@ -21,16 +21,16 @@ search.appverid:
 - MET150
 description: 了解如何取消 Microsoft 365 商业版试用或付费订阅。
 ms.date: 04/08/2021
-ms.openlocfilehash: 15ab7ed31af24fa4cb1c83c6babc945871584375
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 329bc10adbe6c2ad0efe3609e7cb72141ae346bd
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244656"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52297304"
 ---
 # <a name="cancel-your-subscription"></a>取消订阅
 
-*资格：* 如果分配给用户的许可证少于 25 个，则你可以随时在 Microsoft 365 管理中心在线取消 Microsoft 365 商业版试用或付费订阅。 如果向用户分配的许可证超过 25 个，请将其缩小到 25 个以下，或 [致电支持人员取消订阅](../../admin/contact-support-for-business-products.md)。
+*资格：* 如果分配给用户的许可证少于 25 个，则你可以随时在 Microsoft 365 管理中心在线取消 Microsoft 365 商业版试用或付费订阅。 如果向用户分配的许可证超过 25 个，请将其缩小到 25 个以下，或 [致电支持人员取消订阅](../../business-video/get-help-support.md)。
 
 *退款：* 在下一个计费周期内，将向你退还所有按比例分配的信用额度。
 

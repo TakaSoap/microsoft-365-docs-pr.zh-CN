@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 description: 了解计费帐户以及如何管理它们。
 ms.date: 03/17/2021
-ms.openlocfilehash: 504811e8cdfb84569a4bc3cea021c3c37030fca7
-ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
+ms.openlocfilehash: ecac005b8b49739cb74efc4ca2fae44667f37bad
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52107576"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52293639"
 ---
 # <a name="manage-billing-accounts"></a>管理计费帐户
 
@@ -56,7 +56,7 @@ ms.locfileid: "52107576"
 | 计费配置文件 | 帐单配置文件定义发票的属性，如谁收到帐单、帐单的交付方式、付款期限和 PO 编号。 若要在整个组织中分配计费，可以创建多个计费配置文件，在购买时确定相应的计费配置文件。 有关计费配置文件以及如何使用它们为组织生成更灵活的计费选项的详细信息，请参阅 [了解计费配置文件](billing-and-payments/manage-billing-profiles.md)。 |
 
 > [!NOTE]
-> 如果需要更改"售达 **"** 名称或地址，但看不到"编辑"链接，则必须联系支持 [人员以更改](../admin/contact-support-for-business-products.md)它。 对"售 **达名称** "更改的请求将需要核实信用。 填写 [此表单](https://www.microsoft.com/download/details.aspx?id=102732)，并准备好在联系支持人员时与 Microsoft 共享以下文档之一：
+> 如果需要更改"售达 **"** 名称或地址，但看不到"编辑"链接，则必须联系支持 [人员以更改](../business-video/get-help-support.md)它。 对"售 **达名称** "更改的请求将需要核实信用。 填写 [此表单](https://www.microsoft.com/download/details.aspx?id=102732)，并准备好在联系支持人员时与 Microsoft 共享以下文档之一：
 >
 > - 政府颁发的文档或注册信
 > - 打印出本地公司的注册表

@@ -22,12 +22,12 @@ search.appverid:
 ROBOTS: NOINDEX
 description: 通过购买新订阅并确保两个订阅都列出且处于活动状态，手动更改订阅。
 ms.date: 03/17/2021
-ms.openlocfilehash: 1dc7ff8cd6b8a43db7d70ab6c17aec16a020baac
-ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
+ms.openlocfilehash: 7361b459e61961efbb729d80dcbb55dfdad65933
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52107676"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52293615"
 ---
 # <a name="change-plans-manually"></a>手动更改计划
 
@@ -74,7 +74,7 @@ OR
 
 - **如果您购买了两个** 订阅，但此处未列出这两个订阅，则它们可能是为不同组织购买， (用于不同域) 。 订阅不能跨越组织边界。
 
-- **如果您知道您具有其他订阅**，并且此处未列出，或者它未处于活动状态， [请致电 Microsoft 支持](../../admin/contact-support-for-business-products.md)人员。
+- **如果您知道您具有其他订阅**，并且此处未列出，或者它未处于活动状态， [请致电 Microsoft 支持](../../business-video/get-help-support.md)人员。
 
 ### <a name="what-about-the-old-licenses"></a>旧许可证呢？
 
@@ -115,4 +115,4 @@ If you moved all users from one subscription to another, and you no longer need 
 如果仅将部分用户移动到其他订阅 [，请删除](../licenses/buy-licenses.md) 不再需要的许可证。
 
 ## <a name="call-support-to-help-you-change-plans"></a>致电支持人员，帮助你更改计划
-[致电 Microsoft 支持人员](../../admin/contact-support-for-business-products.md)
+[致电 Microsoft 支持人员](../../business-video/get-help-support.md)

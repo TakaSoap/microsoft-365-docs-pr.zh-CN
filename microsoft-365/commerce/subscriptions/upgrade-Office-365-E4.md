@@ -21,12 +21,12 @@ search.appverid: MET150
 description: 了解如何从 E4 Office 365升级。
 ms.date: 08/14/2020
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: f9143497ac2ee15009a3a2b3af9e76426d408d38
-ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
+ms.openlocfilehash: 0e30ece58cfc10ea258a684f9ac6ca4dba1b8692
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52280507"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52297280"
 ---
 # <a name="upgrade-from-an-office-365-e4-subscription"></a>从 E4 Office 365升级
 
@@ -63,7 +63,7 @@ ms.locfileid: "52280507"
 3. 选择" **升级"** 选项卡。如果看到列出了其他计划，这意味着可以自动升级计划。
 4. 如果无法自动升级，则会看到一条消息，说明无法升级的原因。
 
-无法自动升级计划的原因有多种。 大多数问题都是临时问题，例如可以解决的服务运行状况问题。 有关详细信息，请参阅 [为什么我无法升级计划？](upgrade-to-different-plan.md#why-cant-i-upgrade-plans) 如果需要有关升级的帮助，请联系 [支持人员](../../admin/contact-support-for-business-products.md)。
+无法自动升级计划的原因有多种。 大多数问题都是临时问题，例如可以解决的服务运行状况问题。 有关详细信息，请参阅 [为什么我无法升级计划？](upgrade-to-different-plan.md#why-cant-i-upgrade-plans) 如果需要有关升级的帮助，请联系 [支持人员](../../business-video/get-help-support.md)。
 
 ## <a name="will-a-credit-check-be-required"></a>是否要求进行信用检查？
 

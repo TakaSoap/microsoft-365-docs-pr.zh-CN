@@ -1,6 +1,6 @@
 ---
-title: 分析 Microsoft 365 Defender 中的警报
-description: 分析跨设备、用户和邮箱看到的警报。
+title: 调查 Microsoft 365 Defender 中的警报
+description: 调查跨设备、用户和邮箱看到的警报。
 keywords: 事件， 警报， 调查， 分析， 响应， 关联， 攻击， 计算机， 设备， 用户， 标识， 标识， 邮箱， 电子邮件， 365， microsoft， m365
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -22,14 +22,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 18b4df6a2dbb22235d6781f1430f7a75e319fbcf
-ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
+ms.openlocfilehash: b9bbe058042a49586e8515fde85371b1487e8d25
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "51939538"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52297124"
 ---
-# <a name="analyze-alerts-in-microsoft-365-defender"></a>分析 Microsoft 365 Defender 中的警报
+# <a name="investigate-alerts-in-microsoft-365-defender"></a>调查 Microsoft 365 Defender 中的警报
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -38,15 +38,15 @@ ms.locfileid: "51939538"
 
 警报是所有事件的基础，指示环境中出现恶意或可疑事件。 警报通常是更广泛的攻击的一部分，并提供事件线索。
 
-在 Microsoft 365 Defender 中，相关警报聚合在一起以形成 [事件](incidents-overview.md)。 事件将始终提供更广泛的攻击上下文，但是，如果需要更深入的分析，分析警报可能会非常有价值。 
+在 Microsoft 365 Defender 中，相关警报聚合在一起以形成[事件](incidents-overview.md)。 事件将始终提供更广泛的攻击上下文，但是，如果需要更深入的分析，分析警报可能会非常有价值。 
 
-警报 **队列** 显示当前警报集。 在 microsoft 365安全中心 & > () 快速启动时，你可以从事件和警报[ (security.microsoft.com) 。](https://security.microsoft.com)
+警报 **队列** 显示当前警报集。 在快速启动 Microsoft 365 安全中心 (security.microsoft.com) 时，你可以从事件&警报>警报["进入警报](https://security.microsoft.com)队列。
 
 :::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-queue.png" alt-text="警报队列示例":::
 
 来自不同 Microsoft 安全解决方案（如 Microsoft Defender for Endpoint、Microsoft Defender for Office 365 和 Microsoft 365 Defender）的警报显示在此处。
 
-默认情况下，Microsoft 365 安全中心中的警报队列显示过去 30 天内的新警报和正在进行中的警报。 最新警报位于列表顶部，因此你可以先查看它。 
+默认情况下，安全中心中的警报队列Microsoft 365最近 30 天的新警报和正在进行中的警报。 最新警报位于列表顶部，因此你可以先查看它。 
 
 从默认警报队列中，可以选择"筛选器"以查看"筛选器"窗格，可以从中指定警报的子集。 下面是一个示例。
 
@@ -54,19 +54,19 @@ ms.locfileid: "51939538"
 
 你可以根据以下条件筛选警报：
 
-- Severity
+- 严重性
 - 状态
 - 类别
 - 检测源
 - 标记
-- Policy
+- 策略
 - 影响的资产
 
 ## <a name="analyze-an-alert"></a>分析警报
 
 若要查看主警报页面，请选择警报的名称。 下面是一个示例。
 
-:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-main.png" alt-text="Microsoft 365 安全中心中警报的详细信息页面示例":::
+:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-main.png" alt-text="安全中心内警报Microsoft 365示例":::
 
 您还可以从"管理 **警报"窗格中** 选择"打开主警报 **页面"** 操作。
 
@@ -77,7 +77,7 @@ ms.locfileid: "51939538"
 - 相关事件
 - 摘要详细信息
 
-:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-main.png" alt-text="Microsoft 365 安全中心中警报的详细信息页面示例":::
+:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-main.png" alt-text="安全中心内警报Microsoft 365示例":::
 
 在整个警报页面中，可以选择任何实体 **(...")** 查看可用操作，例如打开特定资产页面或执行特定的修正步骤。
 
@@ -85,7 +85,7 @@ ms.locfileid: "51939538"
 
 " **已采取** 操作"部分包含受影响资产的列表，如受此警报影响的邮箱、设备和用户。 
 
-还可以选择"在操作中心 **中** 查看"以查看Microsoft 365 安全中心操作中心的"历史记录"选项卡。  
+还可以选择"在操作中心 **中** 查看"以查看安全中心内操作中心的Microsoft 365选项卡。 
 
 ### <a name="trace-an-alerts-role-in-the-alert-story"></a>跟踪警报情景中的警报角色
 
@@ -128,7 +128,7 @@ ms.locfileid: "51939538"
 
 下面是一个示例。
 
-:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-actions.png" alt-text="Microsoft 365 安全中心中警报的操作示例":::
+:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-actions.png" alt-text="安全中心内警报Microsoft 365示例":::
 
 其他操作的列表取决于警报的类型。
 
@@ -136,10 +136,14 @@ ms.locfileid: "51939538"
 
 分析完警报并可以解决后，请转到警报的"管理警报"窗格，将其状态标记为"已解决"，并分类为 **"False** 警报"或"**真警报"。**  对于真正的警报，在"确定"字段中指定警报 **的威胁** 类型。
 
-对警报进行分类并指定它们的决定有助于调整 Microsoft 365 Defender，以提供更真实的警报和更少的假警报。
+对警报进行分类并指定它们的决定有助于Microsoft 365 Defender，以提供更多真实警报和更少的假警报。
+
+## <a name="next-steps"></a>后续步骤
+
+如果需要处理内事件，请继续执行 [调查](investigate-incidents.md)。
 
 ## <a name="see-also"></a>另请参阅
 
 - [事件概述](incidents-overview.md)
 - [管理事件](manage-incidents.md)
-- [分析事件](investigate-incidents.md)
+- [调查事件](investigate-incidents.md)

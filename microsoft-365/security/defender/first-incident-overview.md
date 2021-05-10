@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: f66c9821e5db00cc3da5718f52b8aaaeff5a431e
-ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
+ms.openlocfilehash: 5ea847e822e094049dd8f0b941f22f3bb4f7eff4
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52114531"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52297172"
 ---
 # <a name="introduction-to-responding-to-your-first-incident"></a>第一个事件响应简介
 
@@ -58,6 +58,17 @@ Microsoft 365 Defender 中的事件是分析和事件响应的逻辑起点。 �
 
 ## <a name="see-also"></a>另请参阅
 
+适用于 defender 的事件Microsoft 365指南：
+
 - [事件概述](incidents-overview.md)
-- [分析事件](investigate-incidents.md)
+- [调查事件](investigate-incidents.md)
 - [管理事件](manage-incidents.md)
+
+第一个事件响应的其他示例：
+
+- [钓鱼电子邮件](first-incident-path-phishing.md)
+- [基于身份的攻击](first-incident-path-identity.md)
+
+[详细的事件响应手册](https://docs.microsoft.com/security/compass/incident-response-playbooks)
+
+

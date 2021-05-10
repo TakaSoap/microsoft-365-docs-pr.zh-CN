@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 description: 了解如何在订阅中添加和减少Microsoft 365存储空间。 通过额外的文件存储，可以在 SharePoint Online 和 OneDrive。
 ms.date: 04/02/2021
-ms.openlocfilehash: 576efee4ba0e1ad8fb43b3d8475d6c3a949ee1e8
-ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
+ms.openlocfilehash: 14f72f59493be04165f0e7b28f26b14f8ae01a08
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52107384"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52293675"
 ---
 # <a name="add-storage-space-for-your-subscription"></a>为订阅添加存储空间
 
@@ -71,14 +71,14 @@ ms.locfileid: "52107384"
 
 ## <a name="increase-or-decrease-storage"></a>增加或减少存储空间
 
-如果你已经通过加载项购买了额外的文件Office 365 额外文件存储空间，可以使用以下步骤增加或减少订阅的额外存储空间。 可以将存储减少为 1 GB。 若要删除所有额外存储空间，请联系 [支持人员](../admin/contact-support-for-business-products.md)。
+如果你已经通过加载项购买了额外的文件Office 365 额外文件存储空间，可以使用以下步骤增加或减少订阅的额外存储空间。 可以将存储减少为 1 GB。 若要删除所有额外存储空间，请联系 [支持人员](../business-video/get-help-support.md)。
 
 1. 在管理中心中，转到“**计费**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">你的产品</a>”页面。
 2. 在 **"产品**"选项卡上，选择包含加载项 **Office 365 额外文件存储空间** 订阅。
 3. 在产品详细信息页面上的"加载项"部分，选择"**管理加载项"。**
 4. 在 **"管理加载项"窗格中**，从"加载项"列表中选择 **"Office 365 额外文件存储空间"。**
 5. 在 **"数量** "文本框中，输入要用于订阅的存储空间的 GB 数。
-6. 选择 **保存**。
+6. 选择“**保存**”。
 
 ## <a name="is-my-plan-eligible-for-office-365-extra-file-storage"></a>我的计划是否符合使用 Office 365 额外文件存储空间的条件？
 

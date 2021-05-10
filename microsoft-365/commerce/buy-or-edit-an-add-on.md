@@ -22,12 +22,12 @@ ms.custom:
 ms.reviewer: jkinma
 description: 了解如何购买和管理适用于企业订阅的 Microsoft 365 加载项。
 ms.date: 04/02/2021
-ms.openlocfilehash: c0b5a76f8690c64723782640738ac3817bc64714
-ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
+ms.openlocfilehash: d60503cd7ab7be219c3ed813dd1d9aef480cd4dc
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52107432"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52297328"
 ---
 # <a name="buy-or-manage-add-ons"></a>购买或管理加载项
 
@@ -71,7 +71,7 @@ ms.locfileid: "52107432"
 
 若要删除独立加载项订阅，请取消 [订阅，就像](subscriptions/cancel-your-subscription.md)任何其他订阅一样。 或者你可以 [关闭定期计费](subscriptions/renew-your-subscription.md)。
 
-无法删除传统加载项。 如果要删除传统的加载项，请联系支持 [人员以寻求帮助](../admin/contact-support-for-business-products.md)。
+无法删除传统加载项。 如果要删除传统的加载项，请联系支持 [人员以寻求帮助](../business-video/get-help-support.md)。
   
 ## <a name="related-content"></a>相关内容
 

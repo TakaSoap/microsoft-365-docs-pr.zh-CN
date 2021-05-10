@@ -15,12 +15,12 @@ ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 description: 用户可以了解如何管理其自助购买。
-ms.openlocfilehash: 73b044ab9954744e89a13ccff0145f35bc1b821b
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 9935259f05432b964fbe138b39397f192e203eb2
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50920188"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52297292"
 ---
 # <a name="manage-self-service-purchases-users"></a>管理自助购买（用户）
 
@@ -31,7 +31,7 @@ ms.locfileid: "50920188"
 
 ::: moniker-end
 
-作为用户，你可以购买某些产品的订阅，并将这些订阅的许可证分配给团队中的人员。 你负责支付你进行的任何自助服务购买。 可以在 Microsoft 365 管理中心中管理订阅<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">，admin.microsoft.com。</a>
+作为用户，你可以购买某些产品的订阅，并将这些订阅的许可证分配给团队中的人员。 你负责支付你进行的任何自助服务购买。 可以在管理中心内管理Microsoft 365<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">订阅，admin.microsoft.com。</a>
 
 你的管理员具有你购买的任何订阅的只读视图。 他们可以看到所购买的每个订阅的产品、购买者名称、购买的订阅、到期日期、购买价格以及分配的用户。
 
@@ -103,8 +103,8 @@ ms.locfileid: "50920188"
 1. In the admin center， go to **Billing**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Billing & payments</a> page.
 2. 在 **"发票"** 选项卡上，选择要查看的发票。 如果没有发票可见，将过去 **3** 个月更改为过去 **6** 个月或 **指定日期范围**。
 
-## <a name="need-help-contact-us"></a>需要帮助？ 请联系我们。
+## <a name="need-help-contact-us"></a>需要帮助? 请联系我们。
 
 有关自助服务购买的常见问题，请参阅 [自助服务购买常见问题](self-service-purchase-faq.md)解答。
 
-如果你有问题或需要自助服务购买帮助， [请联系支持](../../admin/contact-support-for-business-products.md)人员。
+如果你有问题或需要自助服务购买帮助， [请联系支持](../../business-video/get-help-support.md)人员。

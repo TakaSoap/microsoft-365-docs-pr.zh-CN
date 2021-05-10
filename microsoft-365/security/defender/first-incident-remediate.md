@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 2fe6c5b1b0feea2163c0a2bcc871921a885abb85
-ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
+ms.openlocfilehash: ed597c55a646eb00d6e6d256c287b22c119f8148
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52114623"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52297340"
 ---
 # <a name="step-2-remediate-your-first-incident"></a>步骤 2. 修正第一个事件
 
@@ -36,7 +36,7 @@ ms.locfileid: "52114623"
 **适用于：**
 - Microsoft 365 Defender
 
-Microsoft 365Defender 不仅提供检测和分析功能，而且还提供恶意软件的控制和攻击。 抑制包括减少攻击影响的步骤，同时确保从网络中删除攻击者活动的所有跟踪。  Microsoft 365Defender 提供了几个修正操作，可配置为根据你的操作系统和攻击类型进行自动修正。
+Microsoft 365Defender 不仅提供检测和分析功能，而且还提供恶意软件的控制和攻击。 抑制包括减少攻击影响的步骤，同时确保从网络中删除攻击者活动的所有跟踪。  Microsoft 365Defender 提供了几个修正操作，可配置为根据你的[](m365d-autoir.md)操作系统和攻击类型进行自动修正。
 
 Microsoft 365Defender 提供了几个分析员可以手动启动的修正操作。 操作分为两类：设备上操作和文件操作。 某些操作可用于立即停止威胁，而其他操作有助于进一步取证分析。
 
@@ -98,5 +98,5 @@ Playbook 使用Power Automate创建自定义机器人流程自动化流，以在
 ## <a name="see-also"></a>另请参阅
 
 - [事件概述](incidents-overview.md)
-- [分析事件](investigate-incidents.md)
+- [调查事件](investigate-incidents.md)
 - [管理事件](manage-incidents.md)

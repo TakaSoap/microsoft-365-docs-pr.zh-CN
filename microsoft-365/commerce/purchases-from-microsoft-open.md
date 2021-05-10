@@ -22,18 +22,18 @@ search.appverid:
 ROBOTS: NOINDEX
 description: 了解如何激活、续订或向企业版订阅Microsoft 365许可证。
 ms.date: 10/21/2020
-ms.openlocfilehash: e0e317dc0917876c6299fe1eea5812b7bfe0cd8b
-ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
+ms.openlocfilehash: 04df3b24693ac92875cc667aea61e0e9b35cb270
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52107588"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52293627"
 ---
 # <a name="enter-your-product-key-purchased-from-microsoft-open"></a>输入从 Microsoft Open 购买的产品密钥
 
 如果你从 microsoft Microsoft 365[许可证](https://go.microsoft.com/fwlink/p/?LinkID=613298)计划购买了企业版证书，本文适合你。 批量许可购买产品密钥的客户可以按照本主题激活、续订或向订阅添加许可证。
   
- **立即需要帮助？** [致电 Microsoft 支持人员](../admin/contact-support-for-business-products.md) 。 
+ **立即需要帮助？** [致电 Microsoft 支持人员](..//business-video/get-help-support.md) 。 
   
  **需要其他内容？**
  
@@ -67,4 +67,4 @@ ms.locfileid: "52107588"
   
 批量许可客户可以通过访问 [Microsoft 批量许可服务中心的培训和资源](https://go.microsoft.com/fwlink/p/?LinkId=618103)。
   
-或者，如果要与某人交谈，请致电 Microsoft [支持](../admin/contact-support-for-business-products.md)人员。
+或者，如果要与某人交谈，请致电 Microsoft [支持](../business-video/get-help-support.md)人员。

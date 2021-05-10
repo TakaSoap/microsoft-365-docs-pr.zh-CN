@@ -10,18 +10,18 @@ ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
 localization_priority: Normal
-description: 了解如何联系你的国家/地区支持人员。
+description: 了解如何联系你的国家/地区或地区的支持人员。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 86702ce915b16763915d5ddbc64fe715b24d9c87
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: fe8c12deb0d7c674d5e3eb5ab9ce33f8831ed11c
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50548976"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52296956"
 ---
 # <a name="contact-support-for-armenia"></a>联系亚美尼亚支持人员
 
-[查找另一个国家/地区](../contact-support-for-business-products.md)。
+[查找另一个国家/地区](../../business-video/get-help-support.md)。
 
 ## <a name="phone-number"></a>电话号码
 010 541 082
@@ -39,7 +39,7 @@ ms.locfileid: "50548976"
 
 ### <a name="technical-support"></a>技术支持：
 
-俄语：Mon-Fri下午 7 点到下午 8 点
+俄语：Mon-Fri上午 7 点到下午 8 点
 
 英语：全天候
 

@@ -23,12 +23,12 @@ ms.custom:
 ms.reviewer: jkinma
 description: 了解如何兑换在零售商店购买的 Microsoft 365 商业版标准版产品密钥。
 ms.date: 11/13/2020
-ms.openlocfilehash: 0e647b8d52d024750b3944a03133755c1257ee4c
-ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
+ms.openlocfilehash: ed9fb3c1ecc02930f55ddc11c523cf5989d6bbbe
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52107444"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52297316"
 ---
 # <a name="enter-your-product-key-for-microsoft-365-business-standard"></a>输入 Microsoft 365 商业版标准版的产品密钥
 
@@ -67,4 +67,4 @@ ms.locfileid: "52107444"
 
 请查看此列表中的常见错误和解决方案： [365 商业版产品密钥有问题？](product-key-errors-and-solutions.md)
   
-或者， [致电 Microsoft 支持人员](../admin/contact-support-for-business-products.md)。
+或者， [致电 Microsoft 支持人员](../business-video/get-help-support.md)。

@@ -1,5 +1,5 @@
 ---
-title: 圣马提尼岛的支持信息
+title: 圣文达巴岛的支持信息
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -10,18 +10,18 @@ ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
 localization_priority: Normal
-description: 了解如何联系你的国家/地区支持人员。
+description: 了解如何联系你的国家/地区或地区的支持人员。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 74eb1cb065410033a9f9ec538cc4ef5d8fe35a5e
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: c5e47b95390cf2235be1af8e75db6d0841dde780
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50544740"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52297784"
 ---
-# <a name="contact-support-for-saint-martin"></a>联系圣马丁的支持人员
+# <a name="contact-support-for-saint-martin"></a>联系圣文达文的支持人员
 
-[查找另一个国家/地区](../contact-support-for-business-products.md)。
+[查找另一个国家/地区](../../business-video/get-help-support.md)。
 
 ## <a name="phone-number"></a>电话号码
 +1 312 843 5147
@@ -29,7 +29,7 @@ ms.locfileid: "50544740"
 ## <a name="hours"></a>工作时间
 ### <a name="billing-support"></a>计费支持：
 
-法语：Mon-Fri中午 4 点
+法语：Mon-Fri上午 4 点到中午 4 点
 
 英语：Mon-Fri中午 4 点
 

@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 1890b4f9b4c71efebe833ebaee62debedbf0fb72
-ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
+ms.openlocfilehash: 83889123067897483478aec3d881a5a7b6ec14cc
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52114606"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52297220"
 ---
 # <a name="step-1-triage-and-analyze-your-first-incident"></a>步骤 1. 会审和分析第一个事件
 
@@ -97,7 +97,7 @@ Microsoft 365Defender 接收来自多个 Microsoft 安全平台的警报和事�
 
 了解警报周围的上下文同样重要。 通常，警报不是单个独立事件。 存在一系列可能未同时发生的进程、命令和操作。 因此，分析员必须在设备时间线中查找可疑实体的第一个和最后一个活动，以了解警报的上下文。
 
-使用 defender 读取和分析数据的方法有多种Microsoft 365，但分析员的最终目标是尽快响应事件。 尽管 Microsoft 365 Defender 可以通过业界领先的自动修正功能 ([MTTR](https://www.microsoft.com/security/blog/2020/05/04/lessons-learned-microsoft-soc-part-3c/)) 修正平均时间，但始终存在需要手动分析的情况。 
+使用 defender 读取和分析数据的方法有多种Microsoft 365，但分析员的最终目标是尽快响应事件。 尽管 Microsoft 365 Defender 可以通过行业领先的自动调查和响应功能大大减少修正 MTTR ([MTTR](https://www.microsoft.com/security/blog/2020/05/04/lessons-learned-microsoft-soc-part-3c/)) 平均时间，但始终[](m365d-autoir.md)存在需要手动分析的情况。 
 
 下面是一个示例：
 
@@ -136,5 +136,5 @@ Microsoft 365Defender 接收来自多个 Microsoft 安全平台的警报和事�
 ## <a name="see-also"></a>另请参阅
 
 - [事件概述](incidents-overview.md)
-- [分析事件](investigate-incidents.md)
+- [调查事件](investigate-incidents.md)
 - [管理事件](manage-incidents.md)

@@ -28,12 +28,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: 了解Microsoft 365，如何设置，以及如何准备用户的设备和电脑，以确保它们受到适用于Microsoft 365保护。
-ms.openlocfilehash: cc54147e75a27fbb93255d6f706b4f9044c75858
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: ddf6f8d12587c6fb562a599a41c190ffef32c147
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245116"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52293699"
 ---
 # <a name="get-started-with-microsoft-365-for-business"></a>企业Microsoft 365入门
 
@@ -65,7 +65,7 @@ Microsoft 365企业版最多需要 300 个许可证。 如果需要更多许可�
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FYSM] 
 
-如果你发现此视频有帮助，请查看[适用于小型企业和 Microsoft 365 新用户的完整培训系列](../business-video/index.yml)。
+如果你觉得这段视频有用，请查看[适用于小型企业和 Microsoft 365 新手的完整培训系列](../business-video/index.yml)。
 
   
 ### <a name="1-set-up-microsoft-365-for-business-admin"></a>1：设置Microsoft 365商业 (管理员) 
@@ -105,7 +105,7 @@ Microsoft 365企业版最多需要 300 个许可证。 如果需要更多许可�
   
 - 请与合作伙伴联系。
     
-- 作为Microsoft 365管理员，你可以访问我们的客户支持团队：联系商业产品支持人员 -**[管理员帮助](../admin/contact-support-for-business-products.md)**
+- 作为Microsoft 365管理员，你可以访问我们的客户支持团队：联系商业产品支持人员 -**[管理员帮助](../business-video/get-help-support.md)**
     
 ## <a name="related-content"></a>相关内容
 

@@ -18,12 +18,12 @@ ms.collection:
 - m365solution-overview
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 8123bdf610b30407e5d262296f9c3639bc21b12f
-ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
+ms.openlocfilehash: 5aeaa51e5ab8974c8ca26453534396dac14b5853
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51893481"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52297198"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-in-rings"></a>在圈中部署 Microsoft Defender for Endpoint
 
@@ -96,7 +96,7 @@ Microsoft Defender for Endpoint 支持可载入到服务的各种终结点。 �
 
 使用以下材料选择最适合贵组织的适用于终结点的 Microsoft Defender 体系结构。
 
-|**Item**|**说明**|
+|**项目**|**说明**|
 |:-----|:-----|
 |[![Microsoft Defender for Endpoint 部署策略缩略图](images/mdatp-deployment-strategy.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf)<br/> [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf)  \| [Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.vsdx) | 体系结构资料有助于规划如下体系结构的部署： <ul><li> 云-本机 </li><li> 协同管理 </li><li> 本地</li><li>评估和本地载入</li>
 
@@ -105,25 +105,25 @@ Microsoft Defender for Endpoint 支持可载入到服务的各种终结点。 �
 
 ## <a name="existing-deployments"></a>现有部署
 
-### <a name="windows-endpoints"></a>Windows 终结点
-对于 Windows 和/或 Windows 服务器，通过使用安全更新验证计划 (**SUVP**) 在修补星期二 (之前选择多台计算机) 。
+### <a name="windows-endpoints"></a>Windows终结点
+对于 Windows 和/或 Windows 服务器，可以使用 SUVP) 安全更新验证计划选择多个计算机在修补 (之前提前测试 (**SVP) 。**
 
-有关更多信息，请参阅：
+有关详细信息，请参阅：
 - [什么是安全更新验证计划](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/what-is-the-security-update-validation-program/ba-p/275767)
 - [软件更新验证计划与Microsoft 恶意软件防护中心 - TwC 交互式时间线第 4 部分](https://www.microsoft.com/security/blog/2012/03/28/software-update-validation-program-and-microsoft-malware-protection-center-establishment-twc-interactive-timeline-part-4/)
 
 
-### <a name="non-windows-endpoints"></a>非 Windows 终结点
-使用 macOS 和 Linux，可以使用几个系统，在"InsidersFast"频道中运行。
+### <a name="non-windows-endpoints"></a>非Windows终结点
+使用 macOS 和 Linux，可以使用几个系统，在 Beta 渠道中运行。
 
 >[!NOTE]
->理想情况下，至少一个安全管理员和一个开发人员，以便您可以在生成之前找到兼容性、性能和可靠性问题，然后再进入"生产"渠道。
+>理想情况下，至少一个安全管理员和一个开发人员，以便你能够在生成之前找到兼容性、性能和可靠性问题，然后再进入当前频道。
 
-通道的选择决定了提供给你的设备的更新的类型和频率。 预览体验成员 -快中的设备是接收更新和新功能的第一批设备，随后是预览体验成员- 慢，最后是受支持设备。
+通道的选择决定了提供给你的设备的更新的类型和频率。 Beta 版设备是接收更新和新功能的第一批设备，随后是预览版，最后是当前设备。
 
 ![预览体验成员圈的图像](images/insider-rings.png)
 
-为了预览新功能并提供早期反馈，建议将企业中的某些设备配置为使用预览体验成员-快或预览体验成员-慢。
+为了预览新功能并提供早期反馈，建议将企业中的某些设备配置为使用 Beta 或预览版。
 
 >[!WARNING]
 >在初始安装后切换通道需要重新安装产品。 若要切换产品渠道：卸载现有程序包，将设备重新配置为使用新通道，然后按照本文档中的步骤从新位置安装程序包。
