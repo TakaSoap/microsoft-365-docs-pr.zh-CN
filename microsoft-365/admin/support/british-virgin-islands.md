@@ -10,18 +10,18 @@ ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
 localization_priority: Normal
-description: 了解如何联系你的国家/地区支持人员。
+description: 了解如何联系你的国家/地区或地区的支持人员。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: fe03d0a211ad0f197b95c048eb62e423701f0927
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: 61a11d2f8a70381004cb06837df424e5106c498b
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50548389"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52296439"
 ---
-# <a name="contact-support-for-british-virgin-islands"></a>联系英属维尔京群岛支持人员
+# <a name="contact-support-for-british-virgin-islands"></a>联系英属维尔京群岛的支持人员
 
-[查找另一个国家/地区](../contact-support-for-business-products.md)。
+[查找另一个国家/地区](../../business-video/get-help-support.md)。
 
 ## <a name="phone-number"></a>电话号码
 800-865-9408

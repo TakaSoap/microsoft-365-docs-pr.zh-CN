@@ -22,12 +22,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: 数据丢失防护参考资料
-ms.openlocfilehash: a94dde0bba3fdfc869746f51687ed7709a96639a
-ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
+ms.openlocfilehash: a039b8d99bd92be0040f6207803981e8a2937c6f
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52114398"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52296764"
 ---
 # <a name="data-loss-prevention-reference"></a>数据丢失防护参考
  
@@ -385,7 +385,7 @@ DLP 策略的要求通常比较简单，例如标识包含美国社会安全号�
 
 ### <a name="using-a-sensitivity-label-as-a-condition-in-a-dlp-policy"></a>使用敏感度标签作为在DLP策略中的条件
 
-敏感度标签作为DLP策略中的一个条件，目前正在预览中。 [了解详细信息](./dlp-sensitivity-label-as-condition.md)。
+[详细了解](./dlp-sensitivity-label-as-condition.md) 在 DLP 策略中将敏感度标签用作条件。
   
 ### <a name="how-this-feature-relates-to-other-features"></a>此功能与其他功能的联系
 

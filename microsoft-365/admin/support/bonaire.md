@@ -1,5 +1,5 @@
 ---
-title: 博泰尔的支持信息
+title: 博博尔岛的支持信息
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -10,18 +10,18 @@ ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
 localization_priority: Normal
-description: 了解如何联系你的国家/地区支持人员。
+description: 了解如何联系你的国家/地区或地区的支持人员。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 86e638411bd62778cd20b99ef2edd90a56933ad5
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: 602812fb866e5d4940b2ccedfb90c46ddd9893a6
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50548556"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52296884"
 ---
-# <a name="contact-support-for-bonaire"></a>联系博多雷的支持人员
+# <a name="contact-support-for-bonaire"></a>联系博里达的支持人员
 
-[查找另一个国家/地区](../contact-support-for-business-products.md)。
+[查找另一个国家/地区](../../business-video/get-help-support.md)。
 
 ## <a name="phone-number"></a>电话号码
 +1 312 843 5146
@@ -29,7 +29,7 @@ ms.locfileid: "50548556"
 ## <a name="hours"></a>工作时间
 ### <a name="billing-support"></a>计费支持：
 
-荷兰语：Mon-Fri中午 4 点
+荷兰语：Mon-Fri上午 4 点到中午 4 点
 
 英语：Mon-Fri中午 4 点
 

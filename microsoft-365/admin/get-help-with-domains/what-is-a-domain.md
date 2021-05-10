@@ -23,12 +23,12 @@ ms.custom:
 - okr_smb
 - AdminSurgePortfolio
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 2527389634cda9912f45ecdcd3213f7d987b7bb8
-ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
+ms.openlocfilehash: 0d4c59f24f5d5979d0f63d035edd1ca668ff4314
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51221867"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52296691"
 ---
 # <a name="what-is-a-domain"></a>什么是域？
 
@@ -36,17 +36,17 @@ ms.locfileid: "51221867"
   
 域是 **@** 注册电子邮件地址后和 Web 地址中 **www.** 后显示的唯一名称。 它通常采用组织名称和标准 Internet 后缀的形式，如 *业务。 <span>com* 或 *stateuniversity。 <span>edu*。 
   
-使用自定义域（ *如 rob@contoso）。 <span>使用* Microsoft 365 的 com 有助于为品牌建立信誉和认可。 
+使用自定义域（*如 rob@contoso）。 <span>具有* Microsoft 365的 com 有助于为品牌建立信誉和认可。 
   
 ## <a name="choose-the-experience-thats-best-for-you"></a>选择最适合你的体验：
 
  **购买新域：**
   
-使用 Microsoft 365 购买新域 - 我们将进行一切设置。 [了解更多信息。](buy-a-domain-name.md)
+使用 Microsoft 365购买新域 - 我们将进行一切设置。 [了解更多信息。](buy-a-domain-name.md)
   
  **使用你已拥有的域：**
   
-如果你已拥有类似  *you@yourcompany。 <span>com*  可以添加它，立即开始使用 OneDrive 和 Microsoft 应用。 需要花费几分钟来设置邮件和 Skype for Business。 
+如果你已拥有类似 *you@yourcompany。 <span>com* 你可以添加它，立即开始OneDrive和 Microsoft 应用。 需要花费几分钟来设置邮件和 Skype for Business。 
   
 > [!TIP]
 > 不确定域的注册机构？[获取有关查找域名注册机构的帮助](find-your-domain-registrar.md)。
@@ -57,6 +57,6 @@ ms.locfileid: "51221867"
   
 ## <a name="feeling-stuck"></a>遇到阻碍？
 
-致电 Microsoft 支持人员 - [获取有关设置域的帮助](../contact-support-for-business-products.md)
+致电 Microsoft 支持人员 - [获取有关设置域的帮助](../../business-video/get-help-support.md)
   
 

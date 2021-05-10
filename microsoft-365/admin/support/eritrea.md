@@ -1,5 +1,5 @@
 ---
-title: 埃塞俄比亚的支持信息
+title: 针对埃塞俄比亚的支持信息
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -10,18 +10,18 @@ ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
 localization_priority: Normal
-description: 了解如何联系你的国家/地区支持人员。
+description: 了解如何联系你的国家/地区或地区的支持人员。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 950ef5ac5bf4585a2519b54f2ff6737707286f09
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: 705ac3cde6def481fcf8c2a517c3de37231496d9
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50547596"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52296259"
 ---
-# <a name="contact-support-for-eritrea"></a>联系埃塞俄比亚支持人员
+# <a name="contact-support-for-eritrea"></a>联系针对埃塞俄比亚的支持人员
 
-[查找另一个国家/地区](../contact-support-for-business-products.md)。
+[查找另一个国家/地区](../../business-video/get-help-support.md)。
 
 ## <a name="phone-number"></a>电话号码
 +974 44 119418
@@ -37,7 +37,7 @@ ms.locfileid: "50547596"
 
 阿拉伯语：Sun-Thu 10 AM-6 PM
 
-英语：Mon-Fri上午 10 点到下午 6 点
+英语：Mon-Fri 10 AM-6 PM
 
 ### <a name="technical-support"></a>技术支持：
 

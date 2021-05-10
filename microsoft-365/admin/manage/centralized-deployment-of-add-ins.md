@@ -19,63 +19,63 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: b4527d49-4073-4b43-8274-31b7a3166f92
-description: 确定租户和用户是否满足要求，以便可以使用集中部署部署 Office 加载项。
-ms.openlocfilehash: 7eb15563ca11e8fcce17dc6b505347475d18641e
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+description: 确定租户和用户是否满足要求，以便可以使用集中部署Office加载项。
+ms.openlocfilehash: 8f73deb1059097640946fcf7dad1ca97cb2831b1
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51860687"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52296715"
 ---
 # <a name="determine-if-centralized-deployment-of-add-ins-works-for-your-organization"></a>确定外接程序的集中部署是否适用于您的组织
 
-对于大多数客户来说，集中部署是推荐且功能最丰富的方法，用于将 Office 外接程序部署到组织内部的用户和组。 如果你是管理员，请使用本指南确定组织和用户是否满足要求，以便可以使用集中部署。
+对于大多数客户来说，集中部署是推荐且功能最丰富的方法Office向组织内的用户和组部署外接程序。 如果你是管理员，请使用本指南确定组织和用户是否满足要求，以便可以使用集中部署。
 
 集中部署有以下优点：
   
 - 全局管理员可以将外接程序直接分配给用户、通过组分配给多个用户或分配给组织中的每个人。
     
-- 相关 Office 应用程序启动时，加载项将自动下载。 如果外接程序支持外接程序命令，则外接程序会自动显示在 Office 应用程序的功能区中。
+- 当相关Office应用程序启动时，外接程序将自动下载。 如果外接程序支持外接程序命令，则外接程序会自动显示在应用程序内的功能Office中。
     
 - 如果管理员关闭或删除外接程序，或者如果用户从 Azure Active Directory 或外接程序分配到的组中删除，则用户将不再显示外接程序。
 
-集中部署支持三个桌面平台 Windows、Mac 和 Online Office 应用。 集中部署还支持 iOS 和 (Outlook 移动外接程序仅支持) 。
+集中部署支持三个桌面Windows、Mac 和 Online Office应用。 集中部署还支持 iOS 和 Android (Outlook移动外接程序仅) 。
 
 外接程序最多可能需要 24 小时才能显示给所有用户的客户端。
   
 ## <a name="requirements"></a>要求
 
-外接程序的集中部署要求用户使用 Microsoft 365 企业版 SKUS：E3/E5/F3 或商业 SK：Business Basic、Business Standard、Business Premium (，并且使用其组织 ID) 登录 Office，并拥有 Exchange Online 和活动的 Exchange Online 邮箱。 订阅目录必须位于 Azure Active Directory 中，或已联合到 Azure Active Directory。
-可以查看以下 Office 和 Exchange 的特定要求，或使用集中 [部署兼容性检查器](#centralized-deployment-compatibility-checker)。
+外接程序的集中部署要求用户使用 Microsoft 365 企业版 SKUS：E3/E5/F3 或业务 SK：Business Basic、Business Standard、Business 高级版 (，并且使用其组织 ID) 登录 Office，并且具有 Exchange Online 和活动的 Exchange Online 邮箱。 订阅目录必须位于 中，或已联合Azure Active Directory。
+可以查看下面的特定要求Office Exchange，或使用集中部署[兼容性检查器](#centralized-deployment-compatibility-checker)。
 
 集中部署不支持以下内容：
   
 - 针对 Office 2013 中 Word、Excel 或 PowerPoint 的加载项 
 - 本地目录服务
-- 部署到 Exchange On-Prem 邮箱的外接程序
+- 部署到内部部署Exchange的外接程序部署
 - 部署到 SharePoint 的加载项  
-- Teams 应用
-- 部署组件对象模型 (COM) 或 VISUAL STUDIO Tools for Office (VSTO) 加载项。
-- 不包含 Exchange Online 的 Microsoft 365 部署，例如 SK：Microsoft 365 商业应用版和 Microsoft 365 企业应用版。
+- Teams应用
+- 部署组件对象模型 (COM) 或Visual Studio Tools for Office (VSTO) 加载项。
+- 不包含Microsoft 365 SKUS Exchange Online：Microsoft 365 应用版 for Business 和 Microsoft 365 应用版 for Enterprise。
 
-### <a name="office-requirements"></a>Office 要求
+### <a name="office-requirements"></a>Office要求
 
 - 对于 Word、Excel 和 PowerPoint 加载项，用户必须使用下列加载项之一：
-  - 在 Windows 设备上，Microsoft 365 企业版 SKUs 版本 1704 或更高版本：E3/E5/F3 或 Business SKUs：Business Basic、Business Standard、Business Premium。
+  - 在 Windows 设备上，版本 1704 或更高版本的 Microsoft 365 企业版 SK：E3/E5/F3 或 Business SKUs：Business Basic、Business Standard、Business 高级版。
   - 在 Mac 版本 15.34 或更高版本上。
 
-- 对于 Outlook，用户必须使用下列方法之一： 
-  - Microsoft 365 企业版 SKUS 的版本 1701 或更高版本：E3/E5/F3 或商业版 SKUs：Business Basic、Business Standard、Business Premium。
-  - Office Professional Plus 2019 或 Office Standard 2019 的版本 1808 或更高版本。
-  - MSI 2016 (或 Office Standard 2016 Office Professional Plus 2016) 版本 16.0.4494.1000 () \*
-  - Office Professional Plus MSI 2013 版本 15.0.4937.1000 或更高版本 (MSI) 或 Office Standard 2013 (MSI) \*
-  - Office 2016 for Mac 的版本 16.0.9318.1000 或更高版本 
-- 适用于 iOS 的 Outlook Mobile 版本 2.75.0 或更高版本 
-- 适用于 Android 的 Outlook Mobile 版本 2.2.145 或更高版本 
+- 对于Outlook，用户必须使用下列方法之一： 
+  - SKUS 的版本 1701 或Microsoft 365 企业版：E3/E5/F3 或 Business SKUs：Business Basic、Business Standard、Business 高级版。
+  - 2019 年 Office 专业增强版 2019 Office Standard 版本 1808 或更高版本。
+  - MSI 版本 16.0.4494.1000 或更高版本OFFICE 专业增强版 2016 (MSI) 或 Office 标准版 2016 (MSI) \*
+  - MS) I 2013 (2013 或 Office Professional Plus Office Standard 2013 (2013 版本 15.0.4937.1000 () \*
+  - 版本 16.0.9318.1000 或更高版本Office 2016 for Mac 
+- 适用于 iOS 的 Outlook 2.75.0 版或更高版本 
+- Android 移动版 2.2.145 Outlook更高版本 
     
-    *MSI 版本的 Outlook 在相应的 Outlook 功能区中显示管理员安装的外接程序，而不是"我的外接程序"部分。
+    *MSI 版本的 Outlook在相应的 Outlook 功能区中显示管理员安装的外接程序，而不是"我的外接程序"部分。
 
-### <a name="exchange-online-requirements"></a>Exchange Online 要求
+### <a name="exchange-online-requirements"></a>Exchange Online要求
 
 Microsoft Exchange 存储组织的租户中的加载项清单。 部署外接程序的管理员和接收这些外接程序的用户必须位于支持 OAuth 身份验证的 Exchange Online 版本上。
   
@@ -114,7 +114,7 @@ Microsoft Exchange 存储组织的租户中的加载项清单。 部署外接程
     
 - 集中部署准备就绪 - 如果剩余的项为 true
     
-- Office 计划 - 他们获得许可的 Office 计划
+- Office计划 - Office许可的用户计划
     
 - Office 已激活 - 如果已激活 Office
     
@@ -125,7 +125,7 @@ Microsoft Exchange 存储组织的租户中的加载项清单。 部署外接程
   
 ## <a name="user-and-group-assignments"></a>用户和组分配
 
-集中部署功能当前支持 Azure Active Directory 支持的大多数组，包括 Microsoft 365 组、通讯组列表和安全组。
+集中部署功能当前支持大多数受 Azure Active Directory组，Microsoft 365组、通讯组列表和安全组。
   
 > [!NOTE]
 > 当前不支持未启用邮件的安全组。 
@@ -141,17 +141,17 @@ Microsoft Exchange 存储组织的租户中的加载项清单。 部署外接程
 
 若要找出一个组是否包含嵌套组，最简单的方法是查看 Outlook 内的组联系人卡片。 如果在电子邮件的"到"字段中输入组名称，然后在解析时选择组名称，它将显示该组是否包含用户或嵌套组。 在以下示例中，测试组 Outlook 联系人卡片的" **成员**"选项卡显示没有用户且只有两个子组。 
   
-![Outlook 联系人卡片的"成员"选项卡](../../media/d9db88c4-d752-426c-a480-b11a5b3adcd6.png)
+![联系人卡片Outlook"成员"选项卡](../../media/d9db88c4-d752-426c-a480-b11a5b3adcd6.png)
   
 可以解析某个组，查看该组是否是任何组的成员，从而进行反向查询。在以下示例中，可以在 Outlook 联系人卡片的" **成员身份**"选项卡下看到子组 1 是测试组的成员。 
   
-![Outlook 联系人卡片的"成员身份"选项卡](../../media/a9f9b6ab-9c19-4822-9e3d-414ca068c42f.png)
+![联系人卡片Outlook选项卡](../../media/a9f9b6ab-9c19-4822-9e3d-414ca068c42f.png)
   
 或者，可以使用 Azure Active Directory 图形 API 运行查询，查找组内的组列表。有关详细信息，请参阅 [Operations on groups | Graph API reference](/previous-versions/azure/ad/graph/api/groups-operations)（组操作 | 图形 API 参考）。
   
 ### <a name="contacting-microsoft-for-support"></a>联系 Microsoft 以获取支持
 
-如果你或你的用户在将 Office 应用用于 Web (Word、Excel 等 ) （已集中部署）时遇到加载加载项的问题，你可能需要联系 Microsoft 支持人员 (了解如何) 。 [](../contact-support-for-business-products.md) 在支持票证中提供有关 Microsoft 365 环境的以下信息。
+如果你或你的用户在使用已集中部署的 Office Web (Word、Excel 等 ) 应用时遇到加载加载项的问题，你可能需要联系 Microsoft 支持人员 (了解如何) 。 [](../../business-video/get-help-support.md) 在支持票证中提供有关Microsoft 365环境的信息。
   
 |**平台**|**调式信息**|
 |:-----|:-----|

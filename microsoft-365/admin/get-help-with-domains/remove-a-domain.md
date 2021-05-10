@@ -21,19 +21,19 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: f09696b2-8c29-4588-a08b-b333da19810c
-description: 了解如何从 Microsoft 365 中删除旧域，以及如何将用户和组移动到另一个域。
-ms.openlocfilehash: 916730975e9e17c42b01d9fa0ff55b3cb7078f66
-ms.sourcegitcommit: d4604e333507c6f57d5bf327531a241b649052de
+description: 了解如何从域中删除旧域Microsoft 365将用户和组移动到另一个域。
+ms.openlocfilehash: ca12a886c508024bf39ae9e619744a355376a80d
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51470961"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52296703"
 ---
 # <a name="remove-a-domain"></a>删除域
   
  如果找不到要查找的内容，请 **[查看域常见问题解答](../setup/domains-faq.yml)**。 
   
-是否要删除域，因为你想要将其添加到其他 Microsoft 365 订阅计划中？ 或者只是想取消订阅？ 可[更改计划或订阅](../../commerce/subscriptions/switch-to-a-different-plan.md)，也可[取消订阅](../../commerce/subscriptions/cancel-your-subscription.md)。
+是否要删除域，因为你想要将其添加到不同的订阅Microsoft 365计划中？ 或者只是想取消订阅？ 可[更改计划或订阅](../../commerce/subscriptions/switch-to-a-different-plan.md)，也可[取消订阅](../../commerce/subscriptions/cancel-your-subscription.md)。
   
 ### <a name="step-1-move-users-to-another-domain"></a>步骤 1：将用户移动到另一个域
 
@@ -101,7 +101,7 @@ ms.locfileid: "51470961"
 
 5. 使用新域和相同的密码登录。
 
-也可使用 PowerShell 将用户移动到另一个域。 有关详细信息，请参阅 [Set-MsolUserPrincipalName](/powershell/module/msonline/set-msoluserprincipalname?view=azureadps-1.0)。 若要设置默认域，请使用 [Set-MsolDomain](/powershell/module/msonline/set-msoldomain?view=azureadps-1.0)。
+也可使用 PowerShell 将用户移动到另一个域。有关详细信息，请参阅 [Set-MsolUserPrincipalName](/powershell/module/msonline/set-msoluserprincipalname?view=azureadps-1.0)。若要设置默认域，请使用 [Set-MsolDomain](/powershell/module/msonline/set-msoldomain?view=azureadps-1.0)。
 
 ::: moniker-end
 
@@ -117,7 +117,7 @@ ms.locfileid: "51470961"
 
 5. 使用新域和相同的密码登录。
 
-也可使用 PowerShell 将用户移动到另一个域。 有关详细信息，请参阅 [Set-MsolUserPrincipalName](/powershell/module/msonline/set-msoluserprincipalname?view=azureadps-1.0)。 若要设置默认域，请使用 [Set-MsolDomain](/powershell/module/msonline/set-msoldomain?view=azureadps-1.0)。
+也可使用 PowerShell 将用户移动到另一个域。有关详细信息，请参阅 [Set-MsolUserPrincipalName](/powershell/module/msonline/set-msoluserprincipalname?view=azureadps-1.0)。若要设置默认域，请使用 [Set-MsolDomain](/powershell/module/msonline/set-msoldomain?view=azureadps-1.0)。
 
 ::: moniker-end
 
@@ -133,7 +133,7 @@ ms.locfileid: "51470961"
 
 5. 使用新域和相同的密码登录。
 
-也可使用 PowerShell 将用户移动到另一个域。 有关详细信息，请参阅 [Set-MsolUserPrincipalName](/powershell/module/msonline/set-msoluserprincipalname?view=azureadps-1.0)。 若要设置默认域，请使用 [Set-MsolDomain](/powershell/module/msonline/set-msoldomain?view=azureadps-1.0)。
+也可使用 PowerShell 将用户移动到另一个域。有关详细信息，请参阅 [Set-MsolUserPrincipalName](/powershell/module/msonline/set-msoluserprincipalname?view=azureadps-1.0)。若要设置默认域，请使用 [Set-MsolDomain](/powershell/module/msonline/set-msoldomain?view=azureadps-1.0)。
 
 ::: moniker-end
 
@@ -203,18 +203,18 @@ ms.locfileid: "51470961"
 
 ## <a name="how-long-does-it-take-for-a-domain-to-be-removed"></a>删除域需要多长时间？
 
-如果域未在安全组、通讯组列表、用户和 Microsoft 365 组等多个位置引用，Microsoft 365 删除域可能需要 5 分钟。 如果存在众多使用该域的引用，则删除域可能需要数小时（一天）。
+如果域未在很多位置（如安全组、通讯组列表、用户和 Microsoft 365 组）被引用，Microsoft 365删除域可能需要 5 分钟。 如果存在众多使用该域的引用，则删除域可能需要数小时（一天）。
   
 如果有数百或数千用户，使用 PowerShell 查询所有用户，然后将其移至另一个域。否则，可能大量用户将在 UI 中丢失，然后当你要删除域时，将无法删除而且找不到原因。有关详细信息，请参阅 [Set-MsolUserPrincipalName](/powershell/module/msonline/set-msoluserprincipalname?view=azureadps-1.0)。若要设置默认域，请使用 [Set-MsolDomain](/powershell/module/msonline/set-msoldomain?view=azureadps-1.0)。
   
-## <a name="still-need-help"></a>仍然需要帮助？
+## <a name="still-need-help"></a>是否仍需要帮助？
 
 ::: moniker range="o365-worldwide"
 
 > [!NOTE]
 > 不能从你的帐户中删除 [".onmicrosoft.com"](../setup/domains-faq.yml) 域。 删除域时，用户帐户将恢复为".onmicrosoft.com"地址作为主 SMTP/UserprincipalName。
   
-仍然无法工作？ 可能需要手动删除你的域。 [请致电我们](../contact-support-for-business-products.md) ，我们将帮助你处理！
+仍然无法正常工作？你的域可能需要手动删除。[请致电我们](../../business-video/get-help-support.md)，让我们打理一切！
   
 ::: moniker-end
 

@@ -10,18 +10,18 @@ localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 04/13/2021
+ms.date: 05/07/2021
 ms.reviewer: ksarens, jtoole, pahuijbr
 manager: dansimp
 ms.technology: mde
 audience: ITPro
 ms.topic: how-to
-ms.openlocfilehash: 8db14b016491ac10872f29f04b8166e548d6c63b
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: 81cba445482b1fceb8bd520f2be88d55db2a47fb
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52275332"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52296727"
 ---
 # <a name="use-group-policy-settings-to-configure-and-manage-microsoft-defender-antivirus"></a>使用组策略设置配置和管理Microsoft Defender 防病毒
 
@@ -33,6 +33,8 @@ ms.locfileid: "52275332"
 - [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
 
 可以使用组[策略](/windows/win32/srvnodes/group-policy)在终结点上配置Microsoft Defender 防病毒管理策略。
+
+## <a name="configure-microsoft-defender-antivirus-using-group-policy"></a>使用Microsoft Defender 防病毒配置策略
 
 通常，可以使用以下过程配置或更改Microsoft Defender 防病毒策略设置：
 
@@ -48,7 +50,12 @@ ms.locfileid: "52275332"
 
 6. [像平常一样部署更新的 GPO。](/windows/win32/srvnodes/group-policy) 
 
-本主题中的下表列出了 Windows 10 版本 1703 中提供的组策略设置，并提供指向本文档库中相应主题的链接 (（如果适用) ）。
+## <a name="group-policy-settings-and-resources"></a>组策略设置和资源
+
+本主题中的下表列出了 Windows 10 版本 1703 中提供的组策略设置，并提供指向本文档库中相应主题的链接 (（如果适用) ）。 
+
+> [!TIP]
+> [下载组策略设置 Reference Spreadsheet for Windows 10 May 2020 Update (2004) 。 ](https://www.microsoft.com/download/101451) 此电子表格列出了 2004 年 5 月 Windows 10更新 (2004 年 5 月提供的管理模板文件中包含的计算机和用户配置) 。 可以在编辑组策略对象时配置这些策略设置。
 
 | 位置 | 设置 | 文章 |
 |:---|:---|:---|
@@ -66,9 +73,9 @@ ms.locfileid: "52275332"
 | MAPS | 配置向 Microsoft MAPS 报告的本地设置替代 | [阻止或允许用户在本地修改策略设置](configure-local-policy-overrides-microsoft-defender-antivirus.md) |
 | MpEngine | 配置扩展云检查 | [配置云块超时时间段](configure-cloud-block-timeout-period-microsoft-defender-antivirus.md) |
 | MpEngine | 选择云保护级别 | [指定云传递的保护级别](specify-cloud-protection-level-microsoft-defender-antivirus.md) |
-| 网络检查系统 | 为网络流量检查指定其他定义集 | 不再相关 |
-| 网络检查系统 | 启用定义停用 | 不再相关 |
-| 网络检查系统 | 打开协议识别 | 不再相关 |
+| 网络检查系统 | 为网络流量检查指定其他定义集 | [为网络流量检查指定其他定义集](specify-additional-definitions-network-traffic-inspection-mdav.md) |
+| 网络检查系统 | 启用定义停用 | [配置定义停用](turn-on-definition-retirement.md)  |
+| 网络检查系统 | 打开协议识别 | [打开协议识别](turn-on-protocol-recognition.md)  |
 | 隔离 | 为从隔离文件夹中删除项目配置本地设置替代 | [阻止或允许用户在本地修改策略设置](configure-local-policy-overrides-microsoft-defender-antivirus.md) |
 | 隔离 | 配置从隔离文件夹删除项目 | [配置扫描Microsoft Defender 防病毒修正](configure-remediation-microsoft-defender-antivirus.md) |
 | 实时保护 | 配置本地设置覆盖以监视您的计算机上的文件和程序活动 | [阻止或允许用户在本地修改策略设置](configure-local-policy-overrides-microsoft-defender-antivirus.md) |
@@ -144,8 +151,7 @@ ms.locfileid: "52275332"
 | 威胁 | 指定检测到威胁警报时不应采取默认操作的威胁警报级别 | [配置扫描Microsoft Defender 防病毒修正](configure-remediation-microsoft-defender-antivirus.md) |
 | 威胁 | 指定检测到时不应采取默认操作的威胁 | [配置扫描Microsoft Defender 防病毒修正](configure-remediation-microsoft-defender-antivirus.md) |
 
-
-## <a name="related-articles"></a>相关文章
+## <a name="see-also"></a>另请参阅
 
 - [有关管理和配置工具的参考主题](configuration-management-reference-microsoft-defender-antivirus.md)
-- [Microsoft Defender 防病毒Windows 10](microsoft-defender-antivirus-in-windows-10.md)
+- [Windows 10 中的 Microsoft Defender 防病毒](microsoft-defender-antivirus-in-windows-10.md)
