@@ -13,12 +13,12 @@ ms.author: dansimp
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 5c7a2d943ec1813623065e70330b914a3911d1eb
-ms.sourcegitcommit: 4acf613587128cae27e0fd470d1216b509775529
+ms.openlocfilehash: a2bc36f9d3a3e9179f07662da8d97f4c55e72a24
+ms.sourcegitcommit: 58d74ff60303a879e35d112f10f79724ba41188f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/15/2021
-ms.locfileid: "51768994"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52302048"
 ---
 # <a name="turn-on-network-protection"></a>启用网络保护功能
 
@@ -43,7 +43,7 @@ ms.locfileid: "51768994"
 
 2. 从 **HKEY_LOCAL_MACHINE** 菜单中选择"选项"
 
-3. 在嵌套菜单中导航到 **软件** 策略  >    >  **Microsoft**  >  **Windows Defender Windows Defender**  >  **Exploit Guard**  >  **网络保护**
+3. 在嵌套菜单中导航到 **SOFTWARE**  >  **Policies**  >  **Microsoft**  >  **Windows Defender**  >  **Policy Manager** 
 
 4. 选择 **EnableNetworkProtection** 以查看设备上网络保护的当前状态
 
@@ -59,12 +59,12 @@ ms.locfileid: "51768994"
 
 * [PowerShell](#powershell)
 * [移动设备管理 (MDM)](#mobile-device-management-mdm)
-* [Microsoft Endpoint Manager/Intune](#microsoft-endpoint-manager-formerly-intune)
+* [Microsoft Endpoint Manager /Intune](#microsoft-endpoint-manager-formerly-intune)
 * [组策略](#group-policy)
 
 ### <a name="powershell"></a>PowerShell
 
-1. 在 **"开始"菜单中键入 powershell，** 右 **键单击** "Windows PowerShell并选择"以 **管理员角色运行"**
+1. 在 **"开始"菜单中键入 powershell，** 右 **键单击**"Windows PowerShell并选择"以 **管理员角色运行"**
 2. 输入以下 cmdlet：
 
     ```PowerShell
@@ -79,17 +79,17 @@ ms.locfileid: "51768994"
 
     使用 `Disabled` 而不是 `AuditMode` 或 `Enabled` 来关闭该功能。
 
-### <a name="mobile-device-management-mdm"></a>移动设备管理 (MDM) 
+### <a name="mobile-device-management-mdm"></a>移动设备管理(MDM)
 
 使用 [./Vendor/MSFT/Policy/Config/Defender/EnableNetworkProtection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-enablenetworkprotection) 配置服务提供程序 (CSP) 启用或禁用网络保护或启用审核模式。
 
-### <a name="microsoft-endpoint-manager-formerly-intune"></a>Microsoft Endpoint Manager (Intune) 
+### <a name="microsoft-endpoint-manager-formerly-intune"></a>Microsoft Endpoint Manager (以前为 Intune) 
 
-1. 登录到 Microsoft Endpoint Manager 管理中心 (https://endpoint.microsoft.com)
+1. 登录到管理Microsoft Endpoint Manager中心 (https://endpoint.microsoft.com)
 
 2. 创建或编辑 [终结点保护配置文件](/mem/intune/protect/endpoint-protection-configure)
 
-3. 在 **配置文件流中的** 配置设置下，转到 **Microsoft Defender 攻击防护**  >  **网络筛选**  >  **网络保护**  >  **仅启用** 或 **审核**
+3. 在 **配置文件设置** 配置策略"下，转到"Microsoft Defender 攻击防护  >  **网络** 筛选  >  **""** 仅启用或  >  审核 **"**
 
 ### <a name="group-policy"></a>组策略
 
@@ -101,17 +101,17 @@ ms.locfileid: "51768994"
 
     在加入域的组策略管理计算机上，打开组策略 [](https://technet.microsoft.com/library/cc731212.aspx)管理控制台，右键单击要配置的组策略对象，**然后选择编辑**。
 
-2. 在组 **策略管理编辑器中**，转到计算机 **配置，** 然后选择 **管理模板**。
+2. 在 **策略管理编辑器** 中， **计算机配置** 并选择 **管理模板**。
 
-3. 将树展开到 **Windows 组件** Microsoft Defender  >  **防病毒Windows Defender** Exploit  >  **Guard**  >  **网络保护**。
+3. 展开树以 **Windows Exploit** Guard  >  **网络Microsoft Defender 防病毒Windows Defender**  >    >  **的组件**。
 
 > [!NOTE]
-> 在较旧版本的 Windows 上，组策略路径可能显示"Windows Defender防病毒"，而不是"Microsoft Defender 防病毒"。
+> 在早期版本的 Windows 中，组策略路径可能Windows Defender 防病毒"而不是"Microsoft Defender 防病毒"。
 
 4. 双击阻止用户和应用 **访问** 危险网站设置，将选项设置为 **已启用**。 在选项部分中，必须指定以下选项之一：
     * **阻止** - 用户无法访问恶意 IP 地址和域
     * **禁用 (默认)** - 网络保护功能不起作用。 不会阻止用户访问恶意域
-    * **审核模式** - 如果用户访问恶意 IP 地址或域，将在 Windows 事件日志中记录事件。 但是，不会阻止用户访问地址。
+    * **审核模式**- 如果用户访问恶意 IP 地址或域，事件将记录在Windows日志中。 但是，不会阻止用户访问地址。
 
 > [!IMPORTANT]
 > 若要完全启用网络保护，必须将组策略选项设置为 **已启用**，还要在选项下拉菜单中选择阻止。

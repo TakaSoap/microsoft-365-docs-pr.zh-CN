@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 77ff780d-ab19-4553-adea-09cb65ad0f1f
 description: 大致了解组织如何采用 Microsoft 365 服务进行通信和协作。
-ms.openlocfilehash: 7d267dcbbb35a03794567991fddb2e3a573d47dc
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: ac54e8bbc24393b7140fbc32efd48047beca2a1c
+ms.sourcegitcommit: 58d74ff60303a879e35d112f10f79724ba41188f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 05/10/2021
-ms.locfileid: "52297388"
+ms.locfileid: "52301736"
 ---
 # <a name="microsoft-365-usage-analytics"></a>Microsoft 365 使用情况分析
 
@@ -89,6 +89,9 @@ The Microsoft 365 overview report contains the following reports. 您可以通�
 这不是免费的，你将需要一个Power BI Pro许可证。 有关详细信息， [请参阅安装](/power-bi/service-template-apps-install-distribute#prerequisites) 、自定义和分发模板应用的先决条件。
 
 若要与他人共享仪表板，请参阅共享仪表板[和报表。](/power-bi/service-how-to-collaborate-distribute-dashboards-reports#share-dashboards-and-reports)
+### <a name="is-the-usage-summary-reports-reader-role-enough-to-view-the-usage-analytics"></a>使用率摘要报告读取者角色是否足以查看使用情况分析？
+
+"使用率摘要报告读取者"角色仅允许访问使用情况分析中的租户Microsoft 365聚合。  我们建议任何负责变更管理和采用（但不是一定是 IT 管理员）的人使用报告读取者或使用情况摘要报告读取者角色。
 
 ### <a name="who-can-connect-to-microsoft-365-usage-analytics"></a>谁可以连接到 Microsoft 365 使用情况分析？
 

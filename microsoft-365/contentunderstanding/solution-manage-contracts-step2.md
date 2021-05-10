@@ -12,12 +12,12 @@ search.appverid: ''
 localization_priority: None
 ROBOTS: NOINDEX, NOFOLLOW
 description: 了解如何使用Microsoft Teams解决方案创建合同管理Microsoft 365渠道。
-ms.openlocfilehash: a97f6a77818fc53aa28a5924b97e3c7309d01e3a
-ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
+ms.openlocfilehash: d703f6f7286a6d9584e8b18d4e283174f42a95bd
+ms.sourcegitcommit: 58d74ff60303a879e35d112f10f79724ba41188f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52281083"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52301796"
 ---
 # <a name="step-2-use-microsoft-teams-to-create-your-contract-management-channel"></a>步骤 2. 使用Microsoft Teams创建合同管理通道
 
@@ -42,6 +42,9 @@ ms.locfileid: "52281083"
    ![列表视图。](../media/content-understanding/list-view.png) 
 
 ## <a name="customize-your-contracts-tab-tile-view"></a>自定义"合同"选项卡磁贴视图
+
+> [!NOTE]
+> 本节引用 **solutionfiles** zip 文件中包含的 **ContractCard.json** 文件中包含的代码示例。
 
 虽然Teams可以在磁贴视图中查看你的合同，但你可能希望对其进行自定义以查看想要在合同卡中可见的合同数据。 例如，对于" **合同** "选项卡，成员在合同卡上查看客户、承包商和费用金额非常重要。 所有这些字段都是通过应用到文档库的SharePoint提取自每个协定的。 你还希望能够针对每个状态将磁贴标题栏更改为不同的颜色，以便成员可以轻松查看合同在审批过程中的情况。 例如，所有批准的合同都将有一个蓝色标题栏。
 

@@ -14,22 +14,22 @@ ms.collection:
 - m365initiative-viva-topics
 localization_priority: None
 description: Viva Topics 概述。
-ms.openlocfilehash: 1d66751d55c0144149fa8325e89be404e3df19ed
-ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
+ms.openlocfilehash: ecd090036f35a3cfdaffe532c800244c8174183b
+ms.sourcegitcommit: 58d74ff60303a879e35d112f10f79724ba41188f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52281025"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52302120"
 ---
 # <a name="microsoft-viva-topics-overview"></a>Microsoft Viva Topics 概述 
 
-Viva 主题使用 Microsoft AI 技术、Microsoft 365、Microsoft Graph、搜索和其他组件和服务，从 SharePoint 新式页面、Microsoft 搜索以及 Word 和 PowerPoint 中的搜索开始，向用户介绍他们日常使用的 Microsoft 365 应用中的知识。
+Viva 主题使用 Microsoft AI 技术、Microsoft 365、Microsoft Graph、搜索和其他组件和服务，从 SharePoint 新式页面、Microsoft 搜索和 Word、PowerPoint、Outlook 和 Excel 中的搜索开始，向用户介绍他们日常使用的 Microsoft 365 应用中的知识。
 
-</br>
+<br/>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4LhZP]  
 
-</br>
+<br/>
 
 Viva Topics 可帮助解决许多公司的关键业务问题 - 需要时为用户提供信息。 例如，新员工需要快速了解许多新信息，在浏览公司信息时遇到他们不知道的术语。 要了解更多信息，用户可能需要放下手头的工作并花费宝贵时间搜索详细信息，例如，有关术语含义的信息、组织中谁是某个主题方面的专家，以及可能与术语相关的网站和文档。
 
@@ -42,7 +42,7 @@ Viva Topics 使用 AI 自动搜索和识别组织中的 **主题**。 它会编�
 
    ![主题要点](../media/knowledge-management/saturn.png) 
 
-当您在 Word 或 PowerPoint中（通过搜索框或在上下文菜单中选择"搜索"）使用搜索时，显示的结果也可能显示主题摘要。
+在 Word、PowerPoint、Outlook 或 Excel（通过搜索框或在上下文菜单中选择"搜索"）使用搜索时，显示的结果也可能显示主题摘要。
 
    ![显示 Word 中通过"搜索"框进行搜索的屏幕截图。](../media/knowledge-management/word-search-2.png)
 
@@ -71,7 +71,7 @@ Viva Topics 使用 Microsoft AI 技术以识别 Microsoft 365 环境中的 **主
 
 知识管理员可选择对租户中所有 SharePoint 网站进行主题爬网，或仅选择特定内容。
 
-请参阅 [主题发现和策展](./topic-experiences-discovery-curation.md)
+请参阅 [主题发现和库化](./topic-experiences-discovery-curation.md)。
 
 ## <a name="roles"></a>角色
 
@@ -97,7 +97,7 @@ Viva Topics 使用 Microsoft AI 技术以识别 Microsoft 365 环境中的 **主
 
 - 确认或删除在租户中发现的主题。
 - 根据需要手动创建新主题（例如，如果提供的信息不够充分，无法通过 AI 发现）。
-- 编辑现有主题页面。</br>
+- 编辑现有主题页面。<br/>
 
 有关详细信息，请参阅 [主题中心中的管理主题](manage-topics.md)。  
 
@@ -125,7 +125,8 @@ AI 将持续工作，以便随环境变化提供建议，以改进主题。
 
 此外，具有适当权限的用户可以标记与主题相关的项目（例如 Yammer 对话）并将其添加到特定主题。 
 
-请参阅 [主题发现和策展](./topic-experiences-discovery-curation.md)
+请参阅 [主题发现和库化](./topic-experiences-discovery-curation.md)。
 
-
-## <a name="see-also"></a>另请参阅
+<!--
+## See also
+-->

@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: b5af93e82f72bac900682b2e231453e448b267d9
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 365fed8b5f7c7fc617ea068e324da541f7f1b187
+ms.sourcegitcommit: 58d74ff60303a879e35d112f10f79724ba41188f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934185"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52301772"
 ---
 # <a name="microsoft-defender-for-endpoint-on-mac"></a>Mac 上的 Microsoft Defender for Endpoint
 
@@ -39,7 +39,7 @@ ms.locfileid: "51934185"
 本主题介绍如何在 Mac 上安装、配置、更新和使用 Defender for Endpoint。
 
 > [!CAUTION]
-> 在 Mac 上的 Microsoft Defender for Endpoint 旁边运行其他第三方终结点保护产品可能会导致性能问题和不可预知的副作用。 如果非 Microsoft 终结点保护在你的环境中是绝对要求，在将防病毒功能配置为在被动模式下运行后，你仍然可以安全地利用 Mac EDR 上的 Defender for Endpoint [功能](mac-preferences.md#enable--disable-passive-mode)。
+> 在 Mac 上的 Microsoft Defender for Endpoint 旁边运行其他第三方终结点保护产品可能会导致性能问题和不可预知的副作用。 如果非 Microsoft 终结点保护在你的环境中是绝对要求，在将防病毒功能配置为在被动模式下运行后，你仍然可以安全地利用 Mac 上的 Defender for Endpoint EDR[功能。](mac-preferences.md#enable--disable-passive-mode)
 
 ## <a name="whats-new-in-the-latest-release"></a>最新版本的新增功能
 
@@ -56,7 +56,7 @@ ms.locfileid: "51934185"
 
 ### <a name="prerequisites"></a>先决条件
 
-- 适用于终结点的 Defender 订阅和 Microsoft Defender 安全中心门户的访问权限
+- Defender for Endpoint 订阅和访问 Microsoft Defender 安全中心 门户
 - macOS 和 BASH 脚本的初学者级体验
 - 手动部署时，设备上 (管理权限) 
 
@@ -96,12 +96,14 @@ ms.locfileid: "51934185"
 Mac 上的 Microsoft Defender for Endpoint 需要以下 Microsoft 批量许可产品/服务之一：
 
 - Microsoft 365 E5 (M365 E5) 
-- Microsoft 365 E5 安全版
-- Microsoft 365 A5 (M365 A5) 
+- Microsoft 365 E5 安全性
+- Microsoft 365A5 (M365 A5) 
+- Windows 10 企业版E5
+- Microsoft Defender for Endpoint
 
 > [!NOTE]
 > 符合条件的许可用户可以在最多五台并发设备上使用 Microsoft Defender for Endpoint。
-> Microsoft Defender for Endpoint 还可从云解决方案提供商云解决方案提供商 (云解决方案提供商) 。 通过云解决方案提供商购买时，不需要列出 Microsoft 批量许可产品/服务。
+> Microsoft Defender for Endpoint 还可从云解决方案提供商云解决方案提供商 (购买) 。 通过云解决方案提供商购买时，不需要列出 Microsoft 批量许可产品/服务。
 
 ### <a name="network-connections"></a>网络连接
 
