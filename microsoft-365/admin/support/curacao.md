@@ -10,29 +10,29 @@ ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
 localization_priority: Normal
-description: 了解如何联系你的国家/地区支持人员。
+description: 了解如何联系你的国家/地区或地区的支持人员。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 13e3a38a6782f37821f5c2948b912e99116ab741
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: 1b799e976e5c2b5a7d500fdf69d996671c29ea38
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50547836"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52298982"
 ---
-# <a name="contact-support-for-curacao"></a><span data-ttu-id="2d58c-103">联系库拉索的支持人员</span><span class="sxs-lookup"><span data-stu-id="2d58c-103">Contact support for Curacao</span></span>
+# <a name="contact-support-for-curacao"></a><span data-ttu-id="10a9f-103">联系库拉索的支持人员</span><span class="sxs-lookup"><span data-stu-id="10a9f-103">Contact support for Curacao</span></span>
 
-<span data-ttu-id="2d58c-104">[查找另一个国家/地区](../contact-support-for-business-products.md)。</span><span class="sxs-lookup"><span data-stu-id="2d58c-104">[Find another country or region](../contact-support-for-business-products.md).</span></span>
+<span data-ttu-id="10a9f-104">[查找另一个国家/地区](../../business-video/get-help-support.md)。</span><span class="sxs-lookup"><span data-stu-id="10a9f-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="2d58c-105">电话号码</span><span class="sxs-lookup"><span data-stu-id="2d58c-105">Phone number</span></span>
-<span data-ttu-id="2d58c-106">+1 377 302 1308</span><span class="sxs-lookup"><span data-stu-id="2d58c-106">+1 377 302 1308</span></span>
+## <a name="phone-number"></a><span data-ttu-id="10a9f-105">电话号码</span><span class="sxs-lookup"><span data-stu-id="10a9f-105">Phone number</span></span>
+<span data-ttu-id="10a9f-106">+1 377 302 1308</span><span class="sxs-lookup"><span data-stu-id="10a9f-106">+1 377 302 1308</span></span>
 
-## <a name="hours"></a><span data-ttu-id="2d58c-107">工作时间</span><span class="sxs-lookup"><span data-stu-id="2d58c-107">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="2d58c-108">计费支持：</span><span class="sxs-lookup"><span data-stu-id="2d58c-108">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="10a9f-107">工作时间</span><span class="sxs-lookup"><span data-stu-id="10a9f-107">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="10a9f-108">计费支持：</span><span class="sxs-lookup"><span data-stu-id="10a9f-108">Billing Support:</span></span>
 
-<span data-ttu-id="2d58c-109">英语：Mon-Fri上午 9 点到下午 5 点</span><span class="sxs-lookup"><span data-stu-id="2d58c-109">English: Mon-Fri 9 AM-5 PM</span></span>
+<span data-ttu-id="10a9f-109">英语：Mon-Fri上午 9 点到下午 5 点</span><span class="sxs-lookup"><span data-stu-id="10a9f-109">English: Mon-Fri 9 AM-5 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="2d58c-110">技术支持：</span><span class="sxs-lookup"><span data-stu-id="2d58c-110">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="10a9f-110">技术支持：</span><span class="sxs-lookup"><span data-stu-id="10a9f-110">Technical Support:</span></span>
 
-<span data-ttu-id="2d58c-111">英语：全天候</span><span class="sxs-lookup"><span data-stu-id="2d58c-111">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="10a9f-111">英语：全天候</span><span class="sxs-lookup"><span data-stu-id="10a9f-111">English: 24 hours a day, 7 days a week</span></span>
 
-<span data-ttu-id="2d58c-112">国际呼叫费用适用</span><span class="sxs-lookup"><span data-stu-id="2d58c-112">International call charges apply</span></span>
+<span data-ttu-id="10a9f-112">国际呼叫费用适用</span><span class="sxs-lookup"><span data-stu-id="10a9f-112">International call charges apply</span></span>

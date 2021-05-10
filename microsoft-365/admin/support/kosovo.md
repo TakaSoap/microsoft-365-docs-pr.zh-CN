@@ -10,29 +10,29 @@ ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
 localization_priority: Normal
-description: 了解如何联系你的国家/地区支持人员。
+description: 了解如何联系你的国家/地区或地区的支持人员。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 3a07a0ad62b3553476ac682aac225b3c4a13d2a9
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: c37ff8a7cc364a3633ced5439f03df0bfba3dcaa
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50546396"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52298465"
 ---
-# <a name="contact-support-for-kosovo"></a><span data-ttu-id="e1476-103">联系支持人员，帮助解决所有问题</span><span class="sxs-lookup"><span data-stu-id="e1476-103">Contact support for Kosovo</span></span>
+# <a name="contact-support-for-kosovo"></a><span data-ttu-id="afe87-103">联系支持人员</span><span class="sxs-lookup"><span data-stu-id="afe87-103">Contact support for Kosovo</span></span>
 
-<span data-ttu-id="e1476-104">[查找另一个国家/地区](../contact-support-for-business-products.md)。</span><span class="sxs-lookup"><span data-stu-id="e1476-104">[Find another country or region](../contact-support-for-business-products.md).</span></span>
+<span data-ttu-id="afe87-104">[查找另一个国家/地区](../../business-video/get-help-support.md)。</span><span class="sxs-lookup"><span data-stu-id="afe87-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="e1476-105">电话号码</span><span class="sxs-lookup"><span data-stu-id="e1476-105">Phone number</span></span>
-<span data-ttu-id="e1476-106">+1 312 843 5151</span><span class="sxs-lookup"><span data-stu-id="e1476-106">+1 312 843 5151</span></span>
+## <a name="phone-number"></a><span data-ttu-id="afe87-105">电话号码</span><span class="sxs-lookup"><span data-stu-id="afe87-105">Phone number</span></span>
+<span data-ttu-id="afe87-106">+1 312 843 5151</span><span class="sxs-lookup"><span data-stu-id="afe87-106">+1 312 843 5151</span></span>
 
-## <a name="hours"></a><span data-ttu-id="e1476-107">工作时间</span><span class="sxs-lookup"><span data-stu-id="e1476-107">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="e1476-108">计费支持：</span><span class="sxs-lookup"><span data-stu-id="e1476-108">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="afe87-107">工作时间</span><span class="sxs-lookup"><span data-stu-id="afe87-107">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="afe87-108">计费支持：</span><span class="sxs-lookup"><span data-stu-id="afe87-108">Billing Support:</span></span>
 
-<span data-ttu-id="e1476-109">英语：Mon-Fri上午 11 点到下午 7 点</span><span class="sxs-lookup"><span data-stu-id="e1476-109">English: Mon-Fri 11 AM-7 PM</span></span>
+<span data-ttu-id="afe87-109">英语：Mon-Fri 11 AM-7 PM</span><span class="sxs-lookup"><span data-stu-id="afe87-109">English: Mon-Fri 11 AM-7 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="e1476-110">技术支持：</span><span class="sxs-lookup"><span data-stu-id="e1476-110">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="afe87-110">技术支持：</span><span class="sxs-lookup"><span data-stu-id="afe87-110">Technical Support:</span></span>
 
-<span data-ttu-id="e1476-111">英语：全天候</span><span class="sxs-lookup"><span data-stu-id="e1476-111">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="afe87-111">英语：全天候</span><span class="sxs-lookup"><span data-stu-id="afe87-111">English: 24 hours a day, 7 days a week</span></span>
 
-<span data-ttu-id="e1476-112">国际呼叫费用适用</span><span class="sxs-lookup"><span data-stu-id="e1476-112">International call charges apply</span></span>
+<span data-ttu-id="afe87-112">国际呼叫费用适用</span><span class="sxs-lookup"><span data-stu-id="afe87-112">International call charges apply</span></span>

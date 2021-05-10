@@ -1,5 +1,5 @@
 ---
-title: 有关津巴布韦的支持信息
+title: 支持信息（纳米比亚）
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -10,29 +10,29 @@ ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
 localization_priority: Normal
-description: 了解如何联系你的国家/地区支持人员。
+description: 了解如何联系你的国家/地区或地区的支持人员。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: b0ec106f1f2869445180cad3bce2b42776f42b50
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: 3749b51a25570045fe381db6d9136fa0e8d1b2fa
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50546218"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52298429"
 ---
-# <a name="contact-support-for-lesotho"></a><span data-ttu-id="2dff7-103">联系支持人员，帮助帮助索托语</span><span class="sxs-lookup"><span data-stu-id="2dff7-103">Contact support for Lesotho</span></span>
+# <a name="contact-support-for-lesotho"></a><span data-ttu-id="1b86f-103">联系支持人员，支持人员</span><span class="sxs-lookup"><span data-stu-id="1b86f-103">Contact support for Lesotho</span></span>
 
-<span data-ttu-id="2dff7-104">[查找另一个国家/地区](../contact-support-for-business-products.md)。</span><span class="sxs-lookup"><span data-stu-id="2dff7-104">[Find another country or region](../contact-support-for-business-products.md).</span></span>
+<span data-ttu-id="1b86f-104">[查找另一个国家/地区](../../business-video/get-help-support.md)。</span><span class="sxs-lookup"><span data-stu-id="1b86f-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="2dff7-105">电话号码</span><span class="sxs-lookup"><span data-stu-id="2dff7-105">Phone number</span></span>
-<span data-ttu-id="2dff7-106">+1 312 843 5151</span><span class="sxs-lookup"><span data-stu-id="2dff7-106">+1 312 843 5151</span></span>
+## <a name="phone-number"></a><span data-ttu-id="1b86f-105">电话号码</span><span class="sxs-lookup"><span data-stu-id="1b86f-105">Phone number</span></span>
+<span data-ttu-id="1b86f-106">+1 312 843 5151</span><span class="sxs-lookup"><span data-stu-id="1b86f-106">+1 312 843 5151</span></span>
 
-## <a name="hours"></a><span data-ttu-id="2dff7-107">工作时间</span><span class="sxs-lookup"><span data-stu-id="2dff7-107">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="2dff7-108">计费支持：</span><span class="sxs-lookup"><span data-stu-id="2dff7-108">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="1b86f-107">工作时间</span><span class="sxs-lookup"><span data-stu-id="1b86f-107">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="1b86f-108">计费支持：</span><span class="sxs-lookup"><span data-stu-id="1b86f-108">Billing Support:</span></span>
 
-<span data-ttu-id="2dff7-109">英语：Mon-Fri上午 10 点到下午 6 点</span><span class="sxs-lookup"><span data-stu-id="2dff7-109">English: Mon-Fri 10 AM-6 PM</span></span>
+<span data-ttu-id="1b86f-109">英语：Mon-Fri 10 AM-6 PM</span><span class="sxs-lookup"><span data-stu-id="1b86f-109">English: Mon-Fri 10 AM-6 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="2dff7-110">技术支持：</span><span class="sxs-lookup"><span data-stu-id="2dff7-110">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="1b86f-110">技术支持：</span><span class="sxs-lookup"><span data-stu-id="1b86f-110">Technical Support:</span></span>
 
-<span data-ttu-id="2dff7-111">英语：全天候</span><span class="sxs-lookup"><span data-stu-id="2dff7-111">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="1b86f-111">英语：全天候</span><span class="sxs-lookup"><span data-stu-id="1b86f-111">English: 24 hours a day, 7 days a week</span></span>
 
-<span data-ttu-id="2dff7-112">国际呼叫费用适用</span><span class="sxs-lookup"><span data-stu-id="2dff7-112">International call charges apply</span></span>
+<span data-ttu-id="1b86f-112">国际呼叫费用适用</span><span class="sxs-lookup"><span data-stu-id="1b86f-112">International call charges apply</span></span>
