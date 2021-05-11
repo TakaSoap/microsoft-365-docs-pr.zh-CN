@@ -21,19 +21,19 @@ search.appverid:
 - MET150
 description: 了解如何从用户帐户取消分配许可证。
 ms.date: 07/01/2020
-ms.openlocfilehash: 550136c2cfa8d81a31e52a4313dc9c967a55d56e
-ms.sourcegitcommit: c5d1528559953c6db7dca1d5cb453e0aa3215f02
+ms.openlocfilehash: 87bb8f6fe0e85fc4ac832f2bc4ad746e8d6386eb
+ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/27/2021
-ms.locfileid: "51398189"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "52310988"
 ---
 # <a name="unassign-licenses-from-users"></a>取消分配用户许可证
 
 您可以在"活动用户"页面或"许可证"页面上取消分配用户 **许可证**。 使用的方法取决于是希望取消分配特定用户的产品许可证，还是从特定产品取消分配用户许可证。
 
 > [!NOTE]
-> 作为管理员，你无法分配或取消分配组织中用户购买的自助购买订阅的许可证。 你可以 [接管自助服务购买订阅](../../commerce/subscriptions/manage-self-service-purchases-admins.md#take-over-a-self-service-purchase-subscription)，然后分配或取消分配许可证。
+> 作为管理员，你不能为组织中用户购买的自助购买订阅分配或取消分配许可证。 你可以 [接管自助购买订阅](../../commerce/subscriptions/manage-self-service-purchases-admins.md#take-over-a-self-service-purchase-subscription)，然后分配或取消分配许可证。
 
 ## <a name="before-you-begin"></a>准备工作
 
@@ -53,12 +53,12 @@ ms.locfileid: "51398189"
 
 ::: moniker range="o365-germany"
 
-1. 在管理 <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">中心</a>中，转到"帐单 > **""许可证"** 页面。
+1. 在 <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">管理中心</a> 内，转到“**计费**”>“**许可证**”页面。
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. 在管理 <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">中心</a>中，转到"帐单 > **""许可证"** 页面。
+1. 在 <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">管理中心</a> 内，转到“**计费**”>“**许可证**”页面。
 
 ::: moniker-end
 
@@ -81,13 +81,13 @@ ms.locfileid: "51398189"
 
 ::: moniker range="o365-germany"
 
-1. 在管理 <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">中心中</a>，转到"计费 > **活动用户"** 页面。
+1. 在 <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">管理中心</a> 内，转到“**计费**”>“**活动用户**”页面。
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. 在管理 <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">中心中</a>，转到"计费 > **活动用户"** 页面。
+1. 在 <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">管理中心</a> 内，转到“**计费**”>“**活动用户**”页面。
 
 ::: moniker-end
 
@@ -105,13 +105,13 @@ ms.locfileid: "51398189"
 
 ::: moniker range="o365-germany"
 
-1. 在管理 <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">中心中</a>，转到"计费 > **活动用户"** 页面。
+1. 在 <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">管理中心</a> 内，转到“**计费**”>“**活动用户**”页面。
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. 在管理 <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">中心中</a>，转到"计费 > **活动用户"** 页面。
+1. 在 <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">管理中心</a> 内，转到“**计费**”>“**活动用户**”页面。
 
 ::: moniker-end
 
@@ -123,11 +123,11 @@ ms.locfileid: "51398189"
 ## <a name="what-happens-to-a-users-data-when-you-remove-their-license"></a>删除用户许可证时，用户数据会发生什么情况？
 
 - 从用户删除许可证后，与该帐户关联的数据将存储 30 天。 30 天宽限期后，数据将被删除且无法恢复。
-- 除非从 Microsoft 365 管理中心删除用户，或者通过 Active Directory 同步删除用户，否则不会删除保存在 OneDrive for Business 中的文件。 有关详细信息，请参阅 [OneDrive 保留和删除](/onedrive/retention-and-deletion)。
-- 删除许可证后，用户邮箱将不再可用电子数据展示工具（如内容搜索或高级电子数据展示）进行搜索。 有关详细信息，请参阅 [Microsoft 365](../../compliance/content-search.md#searching-disconnected-or-de-licensed-mailboxes)中的内容搜索中的"搜索断开连接或已取消许可的邮箱"。
-- 如果您有企业版订阅（如 Office 365 企业版 E3），Exchange Online 允许您使用非活动邮箱保留已删除用户帐户的 [邮箱数据](../../compliance/inactive-mailboxes-in-office-365.md)。 有关详细信息，请参阅在 [Exchange Online 创建和管理非活动邮箱](../../compliance/create-and-manage-inactive-mailboxes.md)。
-- 若要了解如何在删除用户的许可证后阻止用户访问 Microsoft 365 数据，以及如何在以后获取对数据的访问权限，请参阅删除 [以前的员工](../add-users/remove-former-employee.md)。
-- 如果删除用户的许可证，但他们仍安装了 Office 应用，则当他们使用 Office 应用时，会看到 [Office](https://support.microsoft.com/office/0d23d3c0-c19c-4b2f-9845-5344fedc4380) 中出现未授权产品和激活错误。
+- 保存OneDrive for Business的文件不会删除，除非用户已从管理中心Microsoft 365 Active Directory 同步删除。 有关详细信息，请参阅OneDrive[和删除](/onedrive/retention-and-deletion)。
+- 删除许可证后，用户邮箱将不再可用电子数据展示工具（如内容搜索或Advanced eDiscovery。 有关详细信息，请参阅内容搜索参考中的"搜索断开连接或已取消许可的[邮箱"。](../../compliance/content-search-reference.md#searching-disconnected-or-de-licensed-mailboxes)
+- 如果你有一个Enterprise订阅，Office 365 企业版 E3，Exchange Online使用非活动邮箱保留已删除用户帐户的[邮箱数据](../../compliance/inactive-mailboxes-in-office-365.md)。 有关详细信息，请参阅 Create [and manage inactive mailboxes in Exchange Online](../../compliance/create-and-manage-inactive-mailboxes.md)。
+- 若要了解如何在删除用户的许可证后阻止Microsoft 365访问数据，以及如何在以后获取数据访问权限，请参阅删除[以前的员工](../add-users/remove-former-employee.md)。
+- 如果你删除用户的许可证，并且他们仍然安装了Office，则当他们使用 Office 应用时，[](https://support.microsoft.com/office/0d23d3c0-c19c-4b2f-9845-5344fedc4380)他们会看到"未授权的产品"和Office错误。
 
 ## <a name="next-steps"></a>后续步骤
 
@@ -137,4 +137,4 @@ ms.locfileid: "51398189"
 
 [从订阅中删除许可证 (](../../commerce/licenses/buy-licenses.md) 文章) \
 [向用户分配许可证](assign-licenses-to-users.md)
-[了解 Microsoft 365 商业版](../../commerce/licenses/subscriptions-and-licenses.md) 订阅和许可证 (文章) 
+[了解适用于企业Microsoft 365中的](../../commerce/licenses/subscriptions-and-licenses.md)订阅 (许可证) 

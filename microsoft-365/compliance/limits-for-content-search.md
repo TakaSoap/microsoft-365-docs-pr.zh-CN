@@ -16,16 +16,19 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 78fe3147-1979-4c41-83bb-aeccf244368d
-description: 了解在合规性中心内对内容搜索功能Microsoft 365限制，例如最大同时搜索数。 这些搜索限制也适用于与核心电子数据展示事例关联的搜索。
-ms.openlocfilehash: e4cfc79d35b4dc6a22e8e7a872699d906b39a901
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+description: 了解对内容搜索和核心电子数据展示功能在合规性中心Microsoft 365限制。
+ms.openlocfilehash: 47004473efe3407e9123fd15a7b1bf5f23e9fb23
+ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244316"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "52311408"
 ---
-# <a name="limits-for-content-search"></a>内容搜索的限制 
-各种限制适用于网站合规中心中的内容Microsoft 365工具。 这包括在"内容"搜索页上运行的搜索和与核心电子数据展示页面上电子数据展示案例 **关联的** 搜索。 这些限制有助于维护提供给组织的服务的运行状况和质量。 还有一些与电子邮件索引相关的限制Exchange Online搜索。 不能修改内容搜索或电子邮件索引的限制，但应注意这些限制，以便可以在规划、运行内容搜索和排除内容搜索故障时考虑这些限制。
+# <a name="limits-for-ediscovery-search"></a>电子数据展示搜索的限制 
+
+各种限制适用于电子数据展示合规中心中的Microsoft 365工具。 这包括在"内容"搜索页上运行的搜索和与核心电子数据展示页面上电子数据展示案例 **关联的** 搜索。 这些限制有助于维护提供给组织的服务的运行状况和质量。 还有一些与电子邮件索引相关的限制Exchange Online搜索。 不能修改电子数据展示搜索或电子邮件索引的限制，但应注意这些限制，以便可以在规划、运行电子数据展示搜索和排除故障时考虑这些限制。
+
+有关与 Advanced eDiscovery 工具相关的限制[，请参阅](limits-ediscovery20.md)Advanced eDiscovery
   
 ## <a name="search-limits"></a>搜索限制
 

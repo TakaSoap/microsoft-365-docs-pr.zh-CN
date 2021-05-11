@@ -18,12 +18,12 @@ ms.assetid: 4e8ff113-6361-41e2-915a-6338a7e2a1ed
 ms.custom:
 - seo-marvel-apr2020
 description: 了解如何管理部分索引项目 (也称为未编制索引) Exchange、SharePoint和OneDrive for Business索引项。
-ms.openlocfilehash: c24fb2d9b633181538d76cf35e27dae1824b311d
-ms.sourcegitcommit: f000358c01a8006e5749a86b256300ee3a73174c
+ms.openlocfilehash: 539fd2687735a5ee14be543750becca8c6c3154c
+ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2021
-ms.locfileid: "51994801"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "52311446"
 ---
 # <a name="investigating-partially-indexed-items-in-ediscovery"></a>调查电子数据展示中的部分索引项
 
@@ -49,9 +49,9 @@ ms.locfileid: "51994801"
   
 ## <a name="calculating-the-ratio-of-partially-indexed-items-in-your-organization"></a>计算组织中部分索引项的比率
 
-若要了解组织对部分索引项目的暴露情况，可以使用空白关键字查询查询来运行对 (邮箱中所有内容) 。 在下面的示例中，有 56，208 (4，830 MB) 完全索引项和 470 (316 MB) 部分索引项。
+若要了解组织对部分索引项目的暴露情况，可以使用空白关键字查询查询来运行对 (邮箱中所有内容) 。 在下面的示例中，有 1，629，904 (146.46 GB) 完全索引项和 10，025 (10.27 GB) 部分索引项。
   
-![显示部分索引项的搜索统计信息示例](../media/0f6a5cf7-4c98-44a0-a0dd-5aed67124641.png)
+![显示部分索引项的搜索统计信息示例](../media/PartiallyIndexedItemsTest.png)
   
 可以使用以下计算来确定部分索引项的百分比。
   
@@ -59,23 +59,23 @@ ms.locfileid: "51994801"
 
 `(Total number of partially indexed items/Total number of items) x 100`
 
-`(470/56,208) x 100 = 0.84%`
+`(10025/1629904) x 100 = 0.62%`
 
-通过使用上一示例中的搜索结果，所有邮箱项目的 .84% 部分索引。
+通过使用上一示例中的搜索结果，0.62% 的邮箱项目已部分编制索引。
   
  **若要计算组织中部分索引项大小的百分比，请执行以下设置：**
 
 `(Size of all partially indexed items/Size of all items) x 100`
 
-`(316 MB/4830 MB) x 100 = 6.54%`
+`(10.27 GB/146.46 MB) x 100 = 7.0%`
 
-因此，在上一示例中，6.54% 的邮箱项目总大小来自部分索引项目。 如前所述，大多数组织客户的内容量少于 1%，而按内容大小（部分索引）则少于 12%。
+因此，在上一示例中，邮箱项目总大小的 7% 来自部分索引项目。 如前所述，大多数组织客户的内容量少于 1%，而按内容大小（部分索引）则少于 12%。
 
 ## <a name="working-with-partially-indexed-items"></a>处理部分索引项
 
 在需要检查部分项目以验证它们不包含相关信息的情况下，可以导出包含部分索引项信息的内容搜索报告[](export-a-content-search-report.md)。 导出内容搜索报告时，请确保选择包含部分索引项的导出选项之一。
   
-![选择第二个或第三个选项以导出部分索引项](../media/624a62b4-78f7-4329-ab5d-e62e3b369885.png)
+![选择第二个或第三个选项以导出部分索引项](../media/PartiallyIndexedItemsExportOptions.png)
   
 使用这些选项之一导出电子数据展示搜索结果或搜索报告时，导出包括名为 Unindexed Items.csv。 此报告包含大多数与文件相同的ResultsLog.csv信息;但是，Unindexed Items.csv还包含两个与部分索引项相关的字段： **错误标记** 和 **错误属性**。 这些字段包含有关每个部分索引项的索引错误的信息。 使用这两个字段中的信息可以帮助您确定特定字段的索引错误是否会影响调查。 如果是这样，您可以执行定向搜索，并检索和导出特定电子邮件和 SharePoint 或 OneDrive 文档，以便您可以检查它们以确定它们是否与调查相关。 有关分步说明，请参阅在 Office 365 中为目标搜索[准备 CSV Office 365。](csv-file-for-an-id-list-content-search.md)
 

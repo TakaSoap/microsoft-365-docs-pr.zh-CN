@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 12f648ce476f6e29cbb6b038cc42f2e744d77104
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: dc1e8707dc0810c0986698674a64e969792b5fb8
+ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51933297"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "52311228"
 ---
 # <a name="troubleshoot-installation-issues-for-microsoft-defender-for-endpoint-on-linux"></a>解决 Linux 上的 Microsoft Defender for Endpoint 的安装问题
 
@@ -40,8 +40,8 @@ ms.locfileid: "51933297"
 
 安装错误可能导致包管理器产生有意义的错误消息，也可能没有意义。 若要验证安装是否成功，请运行以下方法获取并检查安装日志：
 
- ```bash
- sudo journalctl | grep 'microsoft-mdatp'  > installation.log
+```bash
+ sudo journalctl --no-pager | grep 'microsoft-mdatp' > installation.log
 ```
 
 ```bash
@@ -50,7 +50,7 @@ ms.locfileid: "51933297"
 
 ```Output
  microsoft-mdatp-installer[102243]: postinstall end [2020-03-26 07:04:43OURCE +0000] 102216
- ```
+```
 
 来自具有正确安装日期和时间的上一个命令的输出指示成功。
 
@@ -77,6 +77,7 @@ ms.locfileid: "51933297"
 ```bash
 systemctl status mdatp
 ```
+
 ```Output
  ● mdatp.service - Microsoft Defender for Endpoint
    Loaded: loaded (/lib/systemd/system/mdatp.service; enabled; vendor preset: enabled)
@@ -119,7 +120,7 @@ systemctl status mdatp
     sudo cp /opt/microsoft/mdatp/conf/mdatp.service <systemd_path>
     ```
 
-    其中 ```<systemd_path>``` 用于 ```/lib/systemd/system``` Ubuntu 和 Debian 分发， ```/usr/lib/systemd/system``` 适用于 Rhel、CentOS、Oracle 和 SLES。
+    其中 `<systemd_path>` 用于 `/lib/systemd/system` Ubuntu 和 Debian 分发， `/usr/lib/systemd/system` 适用于 Rhel、CentOS、Oracle 和 SLES。
    然后重新运行步骤 2。
 
 4. 如果上述步骤不起作用，请检查是否安装了 SE 提供了实施模式。 如果是，请尝试将此设置设置为 (模式) 禁用模式。 可以通过在文件中将 参数设置为"许可"或"禁用"，然后 `SELINUX` `/etc/selinux/config` 重新启动来完成。 有关更多详细信息，请查看 se分页的"人名"页面。

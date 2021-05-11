@@ -1,5 +1,5 @@
 ---
-title: 检查内容搜索查询中是否有错误
+title: 检查搜索查询中是否有错误
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -15,17 +15,17 @@ search.appverid:
 - MET150
 ms.assetid: 88898874-e262-4c5c-b6d2-4e697497fc74
 ms.custom: seo-marvel-apr2020
-description: 了解如何在运行搜索之前检测内容搜索的关键字查询中的错误和拼写错误。
-ms.openlocfilehash: 939ac3d227f176a0b74138107ced5dd5b7142bcd
-ms.sourcegitcommit: 7ebed5810480d7c49f8ca03207b5ea84993d253f
+description: 了解如何在运行搜索之前检测电子数据展示搜索的关键字查询中的错误和拼写错误。
+ms.openlocfilehash: 9c041ca690df3306347cbca77df3ba9639801245
+ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51488209"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "52311684"
 ---
-# <a name="check-your-content-search-query-for-errors"></a>检查内容搜索查询中是否有错误
+# <a name="check-your-search-query-for-errors"></a>检查搜索查询中是否有错误
   
-下面列出了我们检查的不受支持的字符。 不受支持的字符通常隐藏，并且通常会导致搜索错误或返回意外结果。
+以下是我们在内容搜索和核心电子数据展示的搜索查询中检查的不受支持的字符列表。 不受支持的字符通常隐藏，并且通常会导致搜索错误或返回意外结果。
   
 - **智能引号** - 不支持智能单引号 (双引号) 也称作"花引号"。 只能在搜索查询中使用直双引号。 
 
@@ -45,4 +45,4 @@ ms.locfileid: "51488209"
   
 ## <a name="how-to-prevent-unsupported-characters-in-your-search-queries"></a>如何防止搜索查询中不受支持的字符
 
-从其他应用程序 (例如 Microsoft Word 或 Microsoft Excel)  (复制查询或部分查询并将其粘贴到内容搜索的查询页上的关键字框中时，通常会将不受支持的字符添加到查询中。 防止出现不受支持的字符的最佳方式是，在关键字框中仅键入查询。 也可以从 Word 或 Excel 复制查询，然后将其粘贴到纯文本编辑器（如 Microsoft 记事本）中。 保存文本文件，在"**编码"下拉列表中选择"ANSI"。**  这会删除所有格式和不受支持的字符。 然后，便可将文本文件中的查询复制并粘贴到关键字查询框中。 
+从其他应用程序 (（如 Microsoft Word 或 Microsoft Excel) ）复制查询或查询的某些部分并将其粘贴到内容搜索的查询页上的关键字框中时，通常会将不受支持的字符添加到查询中。 防止出现不受支持的字符的最佳方式是，在关键字框中仅键入查询。 也可以从 Word 或 Excel 复制查询，然后将其粘贴到纯文本编辑器（如 Microsoft 记事本）。 保存文本文件，在"**编码"下拉列表中选择"ANSI"。**  这会删除所有格式和不受支持的字符。 然后，便可将文本文件中的查询复制并粘贴到关键字查询框中。

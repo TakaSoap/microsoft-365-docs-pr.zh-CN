@@ -1,5 +1,5 @@
 ---
-title: 使用内容搜索进行目标收集
+title: 对目标集合使用内容搜索
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -18,26 +18,26 @@ search.appverid:
 - MET150
 ms.assetid: e3cbc79c-5e97-43d3-8371-9fbc398cd92e
 ms.custom: seo-marvel-apr2020
-description: 使用合规性中心Microsoft 365内容搜索执行目标集合，以确保项目位于特定邮箱或网站文件夹中。
-ms.openlocfilehash: ea01386b7e52c05f8116caacddd6dec7baf12272
-ms.sourcegitcommit: f000358c01a8006e5749a86b256300ee3a73174c
+description: 使用合规性中心Microsoft 365内容搜索执行目标集合，该集合可搜索特定邮箱或网站文件夹中的项目。
+ms.openlocfilehash: cf0364d39a78e1bbbc062d85ce750d190fbbda5a
+ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2021
-ms.locfileid: "51994759"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "52311890"
 ---
-# <a name="use-content-search-for-targeted-collections"></a>使用内容搜索进行目标收集
+# <a name="use-content-search-for-targeted-collections"></a>对目标集合使用内容搜索
 
-Microsoft 365合规中心的内容搜索功能在 UI 中不提供直接方法，以搜索 Exchange 邮箱或 SharePoint 和 OneDrive for Business 中的特定文件夹。 但是，通过在实际搜索查询语法中为电子邮件指定文件夹 ID 属性 (或为网站指定路径 (DocumentLink *)* 属性，可以搜索特定文件夹（称为目标集合) ）。 当您确信对案例或特权项目做出响应的项目位于特定邮箱或网站文件夹中时，使用内容搜索执行目标集合非常有用。 您可以使用本文中的脚本获取邮箱文件夹的文件夹 ID 或 () 和 OneDrive for Business 网站上文件夹的 DocumentLink SharePoint 路径。 然后，可以在搜索查询中使用该文件夹 ID 或路径返回文件夹中的项目。
+Microsoft 365合规中心的内容搜索工具未在 UI 中直接搜索 Exchange 邮箱中的特定文件夹，也不直接SharePoint OneDrive for Business文件夹。 但是，通过在实际搜索查询语法中为电子邮件指定文件夹 ID 属性 (或为网站指定路径 (DocumentLink *)* 属性，可以搜索特定文件夹（称为目标集合) ）。 当您确信对案例或特权项目做出响应的项目位于特定邮箱或网站文件夹中时，使用内容搜索执行目标集合非常有用。 您可以使用本文中的脚本获取邮箱文件夹的文件夹 ID 或 () 和 OneDrive for Business 网站上文件夹的 DocumentLink SharePoint 路径。 然后，可以在搜索查询中使用该文件夹 ID 或路径返回文件夹中的项目。
 
 > [!NOTE]
 > 若要返回位于网站或 SharePoint OneDrive for Business 文件夹中的内容，本主题中的脚本使用 DocumentLink 托管属性而不是 Path 属性。 DocumentLink 属性比 Path 属性更可靠，因为它将返回文件夹中的所有内容，而 Path 属性不会返回某些媒体文件。
 
 ## <a name="before-you-run-a-targeted-collection"></a>运行目标集合之前
 
-- 您必须是安全与合规中心内电子数据展示管理员角色&的成员，以运行步骤 1 中的脚本。 有关详细信息，请参阅[分配电子数据展示权限](assign-ediscovery-permissions.md)。
+- 您必须是安全与合规中心内电子数据展示管理员&组的成员，以运行步骤 1 中的脚本。 有关详细信息，请参阅[分配电子数据展示权限](assign-ediscovery-permissions.md)。
 
-    此外，您必须在您的组织中分配"邮件收件人"Exchange Online角色。 这是运行脚本中包含的 **Get-MailboxFolderStatistics** cmdlet 所需的。 默认情况下，"邮件收件人"角色分配给组织中"组织管理"和"收件人管理"角色Exchange Online。 有关在角色分配中分配权限Exchange Online，请参阅[管理角色组成员](/exchange/manage-role-group-members-exchange-2013-help)。 您还可以创建自定义角色组，为其分配"邮件收件人"角色，然后添加需要在步骤 1 中运行脚本的成员。 有关详细信息，请参阅管理 [角色组](/Exchange/permissions-exo/role-groups)。
+- 还必须在您的组织中分配"邮件收件人"Exchange Online角色。 这是运行脚本中包含的 **Get-MailboxFolderStatistics** cmdlet 所需的。 默认情况下，"邮件收件人"角色分配给组织中"组织管理"和"收件人管理"角色Exchange Online。 有关在角色分配中分配权限Exchange Online，请参阅[管理角色组成员](/exchange/manage-role-group-members-exchange-2013-help)。 您还可以创建自定义角色组，为其分配"邮件收件人"角色，然后添加需要在步骤 1 中运行脚本的成员。 有关详细信息，请参阅管理 [角色组](/Exchange/permissions-exo/role-groups)。
 
 - 本文中的脚本支持新式验证。 如果你是组织成员或组织成员，Microsoft 365如Microsoft 365 GCC脚本。 如果你是德国Office 365组织、Microsoft 365 GCC高组织或 Microsoft 365 DoD 组织，您必须编辑脚本以成功运行它。 具体来说，您必须编辑行并使用 `Connect-ExchangeOnline` *ExchangeEnvironmentName* 参数 (以及您的组织类型相应的值) 连接到 Exchange Online PowerShell。  此外，您必须编辑行，并使用 `Connect-IPPSSession` *ConnectionUri* 和 *AzureADAuthorizationEndpointUri* 参数 (以及组织类型) 的适当值连接到安全 & 合规中心 PowerShell。 有关详细信息，请参阅 连接 Exchange Online [PowerShell](/powershell/exchange/connect-to-exchange-online-powershell#connect-to-exchange-online-powershell-without-using-mfa)连接安全& [PowerShell 中的示例](/powershell/exchange/connect-to-scc-powershell#connect-to-security--compliance-center-powershell-without-using-mfa)。
 

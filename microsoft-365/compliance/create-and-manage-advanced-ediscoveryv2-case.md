@@ -1,5 +1,5 @@
 ---
-title: 在 Microsoft 365 中创建和管理高级电子数据展示事例
+title: 创建和管理Advanced eDiscovery事例Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -18,69 +18,67 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: 本文介绍如何创建和管理高级电子数据展示事例。 第一步是创建案例并开始使用高级电子数据展示特性和功能。
-ms.openlocfilehash: d0f63bca90945c3dfe13b08fa0f1d139da8a9189
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+description: 本文介绍如何创建和管理Advanced eDiscovery案例。 第一步是创建案例并开始使用Advanced eDiscovery功能。
+ms.openlocfilehash: 95e88bb071476de1ed66b3ffaa8942f0a9df89c2
+ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50908357"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "52311636"
 ---
-# <a name="create-and-manage-an-advanced-ediscovery-case"></a>创建和管理高级电子数据展示案例
+# <a name="create-and-manage-an-advanced-ediscovery-case"></a>创建和管理Advanced eDiscovery案例
 
-设置高级电子数据展示并将权限分配给将[](get-started-with-advanced-ediscovery.md#step-2-assign-ediscovery-permissions)管理事例的组织中电子数据展示管理员之后，下一步是创建和管理事例。
+在设置Advanced eDiscovery并将权限分配给将[](get-started-with-advanced-ediscovery.md#step-2-assign-ediscovery-permissions)管理事例的组织中电子数据展示管理员之后，下一步是创建和管理事例。
 
-本文还简要概述了使用事例管理法律案件或其他类型的调查的高级电子数据展示工作流。
+本文还简要概述了法律案件或其他类型的调查Advanced eDiscovery案例管理工作流。
 
 ## <a name="create-a-case"></a>创建案例
 
-完成以下步骤以创建案例并添加成员。 创建案例的用户将自动添加为成员。 案例的成员可以在 Microsoft 365 合规中心访问该案例并执行高级电子数据展示任务。
+完成以下步骤以创建案例并添加成员。 创建案例的用户将自动添加为成员。 案例的成员可以在合规中心内访问Microsoft 365，并执行Advanced eDiscovery任务。
 
-1. 转到 <https://compliance.microsoft.com> ，然后使用已分配有电子数据展示权限的用户帐户的凭据登录。 组织管理角色组的成员还可以创建高级电子数据展示事例。
+1. 转到 <https://compliance.microsoft.com> ，然后使用已分配有电子数据展示权限的用户帐户的凭据登录。 组织管理角色组的成员还可以创建Advanced eDiscovery案例。
 
-2. 在 Microsoft 365 合规中心的左侧导航窗格中，单击"全部显示"，然后单击"电子数据展示>**高级"。**
+2. 在 Microsoft 365 合规中心的左侧导航窗格中，单击 **显示所有**，然后单击" **电子数据展示>高级**。
 
-3. 在"**高级电子数据展示"** 页上，单击"**事例"** 选项卡，然后单击"**创建事例"。**
+3. 在 **"Advanced eDiscovery"** 页上，单击"事例 **"** 选项卡，然后单击"**创建事例"。**
 
 4. 在" **新建电子数据** 展示案例"飞出页面上，为案件 (一) ，然后键入可选的案例编号和说明。 案例名称在组织中必须是唯一的。
 
 5. 单击 **"保存** "创建案例。
 
-   将新建案例 **，并显示新** 案例的"设置"选项卡。
+   将新建一个 **case，设置** 显示新案例的"新建"选项卡。
 
-6. 在 **"&"** 选项卡上的"访问权限"磁贴中，单击 **"选择**"，然后单击"更新 **"。**
+6. 在 **"&"选项卡** 上的"设置权限 **"** 磁贴中，单击"选择 **"。**
 
-7. 单击“更新”。
+7. 在" **管理此案例** "飞出页面上的"管理成员 **"下**，单击 **"添加** "将成员添加到案例。
 
-8. 在" **管理此案例** "飞出页面上的"管理成员 **"下**，单击 **"添加** "将成员添加到案例。
+8. 在人员列表中，选中要添加到案例的用户名旁边的复选框。 如前所述，请确保你添加到案例的人已分配有适当的电子数据展示权限。
 
-9. 在人员列表中，选中要添加到案例的用户名旁边的复选框。 如前所述，请确保你添加到案例的人已分配有适当的电子数据展示权限。
+9. 选择要添加为案例成员的人后，单击"添加 **"。**
 
-10. 选择要添加为案例成员的人后，单击"添加 **"。**
+10. 在 **管理此案例** 弹出页面中， **保存** 以保存新的案例成员列表。
 
-11. 在" **管理此案例"** 飞出页中，单击 **"保存** "以保存新案例成员列表。
-
-12. 单击" **主页"** 选项卡以转到案例主页。
+11. 单击" **主页"** 选项卡以转到案例主页。
 
 ## <a name="manage-the-workflow"></a>管理工作流
 
-为了让你开始使用高级电子数据展示，下面是一个符合常见电子数据展示做法的基本 [工作流](advanced-ediscovery-edrm.md)。 在每个步骤中，我们还将重点介绍一些可浏览的扩展高级电子数据展示功能。
+为了让你开始使用Advanced eDiscovery，下面是一个符合常见电子数据展示做法[的基本工作流](advanced-ediscovery-edrm.md)。 在每个步骤中，我们还将重点介绍一些Advanced eDiscovery扩展的功能。
 
-![高级电子数据展示工作流](../media/AeDWorkflow.png)
+![Advanced eDiscovery工作流](../media/AeDWorkflow.png)
 
 1. **[将保管](add-custodians-to-case.md)[人和非托管数据源添加到](non-custodial-data-sources.md)案例**。 创建案例后的第一步是添加保管人。 保管 *人* 是具有与案例相关的文档或电子文件的管理控制权限的人。 此外，还可以添加不与特定用户关联但可能与案例相关的数据源。
 
    下面是在向案例 (保管人时) 可以执行某些操作：
 
-   - 保管人 Exchange 邮箱、OneDrive 帐户以及保管人是其中成员的任何 Microsoft Teams 或 Yammer 组的数据可以"标记为"案例内的任何数据。
+   - 保管人 Exchange 邮箱、OneDrive 帐户以及保管人是其中成员的任何 Microsoft Teams 或 Yammer 组的数据可以"标记为"在案例内为诉讼数据。
   
    - 保管人数据通过称为高级 (过程 *对保管人数据重新* 编制) 。 这有助于在下一步中优化搜索。
   
    - 你可以将保管人数据保留。 这将保留调查期间可能与案例相关的数据。
   
-   - 可以将其他数据源与保管人 (例如，可以将 SharePoint 网站或 Microsoft 365 组与保管人) 以便可以重新索引、保留和搜索此数据，就像保管人邮箱或 OneDrive 帐户中的数据一样。
+   - 您可以将其他数据源与保管人 (例如，您可以将 SharePoint 站点或 Microsoft 365 组与保管人) 关联，以便可以重新索引、保留和搜索此数据，就像保管人邮箱或 OneDrive 帐户中的数据一样。
 
-   - 您可以使用高级电子 [数据](managing-custodian-communications.md) 展示中的通信工作流向保管人发送合法保留通知。
+   - 您可以使用安全[中心中的](managing-custodian-communications.md)通信Advanced eDiscovery向保管人发送法定保留通知。
 
 2. **[从数据源中收集相关内容](create-draft-collection.md)**。 将保管人和非托管数据源添加到案例后，使用内置集合工具搜索这些数据源中可能与案例相关的内容。 您可以使用关键字、属性和条件来构建搜索查询[](building-search-queries.md)，这些查询使用与案例最相关的数据返回搜索结果。 还可以执行以下操作：
 
@@ -90,9 +88,9 @@ ms.locfileid: "50908357"
 
    - 修改查询并重新运行集合。
 
-3. **[将集合提交到审阅集](commit-draft-collection.md)**。 配置并验证搜索返回所需数据后，下一步是将搜索结果添加到审阅集。 向审阅集添加数据时，项目会从原始位置复制到安全的 Azure 存储位置。 再次对数据进行索引索引，以在审阅和分析审阅集内的项目时优化数据，以便进行全面而快速的搜索。 此外，您还可以将 [非 Office 365 数据添加到审阅集](load-non-office-365-data-into-a-review-set.md)。
+3. **[将集合提交到审阅集](commit-draft-collection.md)**。 配置并验证搜索返回所需数据后，下一步是将搜索结果添加到审阅集。 向审阅集添加数据时，项目会从原始位置复制到安全Azure 存储位置。 再次对数据进行索引索引，以在审阅和分析审阅集内的项目时优化数据，以便进行全面而快速的搜索。 此外，您还可以[将非Office 365数据添加到审阅集](load-non-office-365-data-into-a-review-set.md)。
 
-   还有一种特殊类型的审阅集，你可以将数据添加到 ，称为对话 *审阅集*。 这些类型的评论集提供了对话重建功能，可以重新构建、审阅和导出线程对话，如 Microsoft Teams 中的会话。 有关详细信息，请参阅 [审阅高级 eDiscovery 中的对话](conversation-review-sets.md)。
+   还有一种特殊类型的审阅集，你可以将数据添加到 ，称为对话 *审阅集*。 这些类型的评论集提供了对话重建功能，可以重新构造、审阅和导出线程对话，如 Microsoft Teams。 有关详细信息，请参阅 [审阅高级 eDiscovery 中的对话](conversation-review-sets.md)。
 
 4. **查看和分析审阅集内的数据**。 现在数据已位于审阅集内，您可以使用各种工具和功能来查看和分析案例数据，目的是将数据集减少为与正在调查的案例最相关的数据。 以下是您可以在此过程期间使用的一些工具和功能的列表。
 
@@ -104,18 +102,18 @@ ms.locfileid: "50908357"
 
    - [批注和修订文档](view-documents-in-review-set.md#annotate-view)。 可以在评论中使用该批注工具为文档添加批注，将文档中的内容修订为工作产品。 我们在审阅期间生成批注或修订文档的 PDF 版本，以减少导出未修改的本机版本文档的风险。
 
-   - [分析案例数据](analyzing-data-in-review-set.md)。 高级电子数据展示中的分析功能很强大。 对审阅集内的数据运行分析后，我们执行分析，如接近重复检测、电子邮件线程和主题，可帮助减少必须查看的文档量。 我们还生成了一个分析报告，汇总了运行分析的结果。 如前所述，运行分析还会运行 [律师-客户特权检测模型](attorney-privilege-detection.md#use-the-attorney-client-privilege-detection-model)。
+   - [分析案例数据](analyzing-data-in-review-set.md)。 Advanced eDiscovery中的分析功能很强大。 对审阅集内的数据运行分析后，我们执行分析，如接近重复检测、电子邮件线程和主题，可帮助减少必须查看的文档量。 我们还生成了一个分析报告，汇总了运行分析的结果。 如前所述，运行分析还会运行 [律师-客户特权检测模型](attorney-privilege-detection.md#use-the-attorney-client-privilege-detection-model)。
 
-5. **导出和下载案例数据**。 收集、审阅和分析案件集数据后的最后一步是从高级电子数据展示中导出数据，以用于外部审阅或供调查团队外部人员查看。 导出数据的过程包含两个步骤。 第一步是将数据从[](export-documents-from-review-set.md)审阅集中导出，并复制到其他 Azure 存储位置 (Microsoft 提供的位置或由组织托管的 Azure 存储) 。 然后，使用 Azure 存储资源管理器 [将数据](download-export-jobs.md) 下载到本地计算机。 除了导出的数据文件之外，导出包的 包含还包含导出报告、摘要报表和错误报告。
+5. **导出和下载案例数据**。 收集、审阅和分析案件集数据后的最后一步是，将Advanced eDiscovery导出到外部审查中，或供调查团队外部人员审阅。 导出数据的过程包含两个步骤。 第一步是将数据从[](export-documents-from-review-set.md)审阅集中导出，并复制到其他 Azure 存储 位置 (Microsoft 提供的位置或由组织管理的位置) 。 然后，Azure 存储资源管理器[将数据](download-export-jobs.md)下载到本地计算机。 除了导出的数据文件之外，导出包的 包含还包含导出报告、摘要报表和错误报告。
 
-## <a name="advanced-ediscovery-architecture"></a>高级电子数据展示体系结构
+## <a name="advanced-ediscovery-architecture"></a>Advanced eDiscovery体系结构
 
-下面的体系结构图显示了单地理位置环境和多地理位置环境中的高级电子数据展示端到端工作流，以及与电子数据展示参考模型一致的端到端 [数据流](overview-ediscovery-20.md#advanced-ediscovery-alignment-with-the-electronic-discovery-reference-model)。
+下面的体系结构图显示了单地理位置环境和多地理位置环境中 Advanced eDiscovery 端到端工作流，以及与电子发现参考模型一致的端到端[数据流](overview-ediscovery-20.md#advanced-ediscovery-alignment-with-the-electronic-discovery-reference-model)。
 
-[![模型海报：Microsoft 365 中的高级电子数据展示体系结构](../media/solutions-architecture-center/ediscovery-poster-thumb.png)](../media/solutions-architecture-center/m365-advanced-ediscovery-architecture.png)
+[![模型海报：Advanced eDiscovery体系结构Microsoft 365](../media/solutions-architecture-center/ediscovery-poster-thumb.png)](../media/solutions-architecture-center/m365-advanced-ediscovery-architecture.png)
 
 [以图像视图](../media/solutions-architecture-center/m365-advanced-ediscovery-architecture.png)
 
 [下载为 PDF 文件](https://download.microsoft.com/download/d/1/c/d1ce536d-9bcf-4d31-b75b-fcf0dc560665/m365-advanced-ediscovery-architecture.pdf)
 
-[下载为 Visio 文件](https://download.microsoft.com/download/d/1/c/d1ce536d-9bcf-4d31-b75b-fcf0dc560665/m365-advanced-ediscovery-architecture.vsdx)
+[下载为Visio文件](https://download.microsoft.com/download/d/1/c/d1ce536d-9bcf-4d31-b75b-fcf0dc560665/m365-advanced-ediscovery-architecture.vsdx)

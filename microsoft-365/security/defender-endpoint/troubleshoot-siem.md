@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: 60220d00ca1b612564b72103b9206e3d6d89dc60
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 9c4f3da57796903fc22314574f389bcdd92ca4b3
+ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51689445"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "52311984"
 ---
 # <a name="troubleshoot-siem-tool-integration-issues"></a>SIEM 工具集成问题疑难解答
 
@@ -51,9 +51,9 @@ ms.locfileid: "51689445"
 
 4. 单击 **"应用注册"。** 然后在"应用程序"列表中，选择应用程序。
 
-5. 选择 **"密钥** "部分，然后提供密钥说明并指定密钥有效期。
+5. 选择 **"&** 密码"部分，单击"新建客户端密码"，然后提供说明并指定有效期。
 
-6. 单击“**保存**”。 将显示键值。
+6. 单击“保存”。 将显示键值。
 
 7. 复制值并将其保存在安全的位置。
 
@@ -74,7 +74,7 @@ ms.locfileid: "51689445"
    - 对于英国： `https://winatpmanagement-uk.securitycenter.windows.com/UserAuthenticationCallback`
    - 对于美国  `https://winatpmanagement-us.securitycenter.windows.com/UserAuthenticationCallback` ：。
  
-6. 单击“**保存**”。
+6. 单击“保存”。
 
 ## <a name="error-while-enabling-the-siem-connector-application"></a>启用 SIEM 连接器应用程序时出错
 如果在尝试启用 SIEM 连接器应用程序时遇到错误，请检查浏览器的弹出窗口阻止程序设置。 启用该功能时，它可能会阻止打开的新窗口。

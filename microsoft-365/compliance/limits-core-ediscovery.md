@@ -16,13 +16,13 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: 本文介绍了 Microsoft 365 中核心电子数据展示案例的限制。
-ms.openlocfilehash: e18e1e6c1d9d7ecd78deaf267be72ccdc9d1ba5d
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+description: 本文介绍在电子邮件中的核心电子数据展示Microsoft 365。
+ms.openlocfilehash: e7b1013abd9fd94748baf3b83dd04efbc3831a1d
+ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50905884"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "52311420"
 ---
 # <a name="limits-in-core-ediscovery"></a>核心电子数据展示中的限制
 
@@ -32,17 +32,17 @@ ms.locfileid: "50905884"
   |:-----|:-----|
   |组织的最大事例数。  <br/> |无限制  <br/> |
   |组织的最大案例保留数。  <br/> |10,000  <br/> |
-  |单个案例保留中的最大邮箱数。 此限制包括用户邮箱总数，以及与 Microsoft 365 组、Microsoft Teams 和 Yammer 组关联的邮箱总数。  <br/> |1,000  <br/> |
-  |单个案例保留中的最大网站数。 此限制包括 OneDrive for Business 网站、SharePoint 网站以及与 Microsoft 365 组、Microsoft Teams 和 Yammer 组关联的网站总数。  <br/> |100  <br/> |
+  |单个案例保留中的最大邮箱数。 此限制包括用户邮箱总数，以及与组、组Microsoft 365组、Microsoft Teams组Yammer邮箱。  <br/> |1,000  <br/> |
+  |单个案例保留中的最大网站数。 此限制包括与 OneDrive for Business 组、SharePoint Microsoft 365 组、Microsoft Teams 组Microsoft Teams关联的网站Yammer总数。  <br/> |100  <br/> |
   |核心电子数据展示主页上显示的最大事例数，以及事例中"保留项、搜索"和"导出"选项卡上显示的最大项目数。 <sup>1</sup> |1,000|
   |||
 
    > [!NOTE]
-   > <sup>1</sup> 若要查看超过 1，000 个事例、保留、搜索或导出的列表，可以使用相应的 Office 365 安全&合规性 PowerShell cmdlet：
+   > <sup>1</sup>若要查看超过 1，000 个事例、保留、搜索或导出的列表，可以使用相应的 Office 365 Security & Compliance PowerShell cmdlet：
    > 
    > - [Get-ComplianceCase](/powershell/module/exchange/get-compliancecase)
    > - [Get-CaseHoldPolicy](/powershell/module/exchange/get-caseholdpolicy)
    > - [Get-ComplianceSearch](/powershell/module/exchange/get-compliancesearch)
    > - [Get-ComplianceSearchAction](/powershell/module/exchange/get-compliancesearchaction)
 
-有关与与核心电子数据展示案例相关的内容搜索和导出限制详细信息，请参阅内容搜索和 [核心电子数据展示的限制](limits-for-content-search.md)。
+有关与与核心电子数据展示案例关联的搜索和导出相关的限制详细信息，请参阅 [内容搜索和核心电子数据展示的限制](limits-for-content-search.md)。

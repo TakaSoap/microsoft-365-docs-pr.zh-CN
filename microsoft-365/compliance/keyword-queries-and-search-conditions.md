@@ -1,12 +1,12 @@
 ---
-title: 内容搜索的关键字查询和搜索条件
+title: 电子数据展示的关键字查询和搜索条件
 f1.keywords:
 - NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
 audience: Admin
-ms.topic: reference
+ms.topic: article
 f1_keywords:
 - ms.o365.cc.SearchQueryLearnMore
 ms.service: O365-seccomp
@@ -21,17 +21,17 @@ search.appverid:
 ms.assetid: c4639c2e-7223-4302-8e0d-b6e10f1c3be3
 ms.custom:
 - seo-marvel-apr2020
-description: 了解电子邮件和文件属性，您可以使用搜索和电子邮件中的电子数据展示工具Microsoft 365。
-ms.openlocfilehash: 10b2af333d5eeef6dd70541a86b9114929c0c94c
-ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
+description: 了解电子邮件和文件属性，您可以使用电子数据展示搜索工具在 Microsoft 365。
+ms.openlocfilehash: a9a178eb9b139cacd803c8ab168b3143b75b5f92
+ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52114014"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "52311834"
 ---
-# <a name="keyword-queries-and-search-conditions-for-content-search-and-ediscovery"></a>内容搜索和电子数据展示的关键字查询和搜索条件
+# <a name="keyword-queries-and-search-conditions-for-ediscovery"></a>电子数据展示的关键字查询和搜索条件
 
-本主题介绍电子邮件和文档属性，您可以使用 Microsoft 365 合规中心中的内容搜索功能在 Exchange Online 中的电子邮件项目以及存储在 SharePoint 和 OneDrive for Business 网站的文档中搜索这些属性。 您还可以使用安全与合规中心 PowerShell 中的 **\* -ComplianceSearch** cmdlet &搜索这些属性。 本主题还介绍了：
+本主题介绍您可以在 Exchange Online 中的电子邮件项目和 Microsoft Teams 聊天对话中搜索的电子邮件和文档属性，以及使用 Microsoft 365 合规中心中的电子数据展示搜索工具存储在 SharePoint 和 OneDrive for Business 网站上的文档。 这包括内容搜索、核心电子数据展示Advanced eDiscovery (电子数据展示搜索 *Advanced eDiscovery称为集合*) 。 您还可以使用安全与合规中心 PowerShell 中的 **\* -ComplianceSearch** cmdlet &搜索这些属性。 本主题还介绍了：
   
 - 使用布尔搜索运算符、搜索条件和其他搜索查询技术优化搜索结果。
 
@@ -39,14 +39,20 @@ ms.locfileid: "52114014"
 
 - 搜索与组织外部的用户共享的网站内容
 
-有关如何创建内容搜索的分步说明，请参阅内容 [搜索](content-search.md)。
+有关如何创建不同电子数据展示搜索的分步说明，请参阅：
+
+- [内容搜索](content-search.md)
+
+- [在核心电子数据展示中搜索内容](search-for-content-in-core-ediscovery.md)
+
+- [在集合中创建草稿Advanced eDiscovery](create-draft-collection.md)
 
 > [!NOTE]
-> 安全与Microsoft 365中心 PowerShell 中的内容搜索和相应的 **\* -ComplianceSearch** cmd & let 使用关键字查询语言 (KQL) 。 有关更多详细信息，请参阅关键字 [查询语言语法参考](/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)。 
+> 电子数据展示在 Microsoft 365 合规中心进行搜索，安全与合规中心 PowerShell 中的相应 **\* -ComplianceSearch** cmd & let 使用关键字查询语言 (KQL) 。 有关更多详细信息，请参阅关键字 [查询语言语法参考](/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)。
   
 ## <a name="searchable-email-properties"></a>可搜索的电子邮件属性
 
-下表列出了可以使用 Microsoft 365 合规中心中的内容搜索功能或 **New-ComplianceSearch** 或 **Set-ComplianceSearch** cmdlet 搜索的电子邮件属性。 该表包含每个属性的  _property：value_ 语法示例，以及示例返回的搜索结果的说明。 您可以在内容  `property:value` 搜索的关键字框中键入这些对。 
+下表列出了可以使用 Microsoft 365 合规中心中的电子数据展示搜索工具或 **New-ComplianceSearch** 或 **Set-ComplianceSearch** cmdlet 搜索的电子邮件属性。 该表包含每个属性的  _property：value_ 语法示例，以及示例返回的搜索结果的说明。 可以在电子  `property:value` 数据展示搜索的关键字框中键入这些对。 
 
 > [!NOTE]
 > 在搜索电子邮件属性时，无法搜索指定属性为空或为空的项目。 例如，使用 **subject：""** 的 *property：value* 对搜索主题行为空的电子邮件将返回零结果。 这同样适用于搜索网站和联系人属性的情况。
@@ -62,7 +68,7 @@ ms.locfileid: "52114014"
 |HasAttachment|指示邮件是否有附件。 使用值 **true 或** **false**。|`from:pilar@contoso.com AND hasattachment:true`|由具有附件的指定用户发送的邮件。|
 |Importance|The importance of an email message, which a sender can specify when sending a message. By default, messages are sent with normal importance, unless the sender sets the importance as **high** or **low**.  |`importance:high`  <br/> `importance:medium`  <br/> `importance:low`|将重要性标记为高、中等或低的邮件。|
 |IsRead|指示是否已阅读邮件。 使用值 **true 或** **false**。|`isread:true`  <br/> `isread:false`|第一个示例返回 IsRead 属性设置为 **True 的邮件**。 第二个示例返回 IsRead 属性设置为 **False 的邮件**。|
-|ItemClass|使用此属性可搜索组织导入到网站的特定第三方Office 365。 对此属性使用以下语法：  `itemclass:ipm.externaldata.<third-party data type>*`|`itemclass:ipm.externaldata.Facebook* AND subject:contoso`  <br/> `itemclass:ipm.externaldata.Twitter* AND from:"Ann Beebe" AND "Northwind Traders"`|第一个示例返回 Subject 属性中包含单词"contoso"的 Facebook 项目。 第二个示例返回 Ann Beebe 发布且包含关键字短语"Northwind Traders"的 Twitter 项目。  <br/> 有关用于 ItemClass 属性的第三方数据类型的值的完整列表，请参阅使用内容搜索搜索导入到第三方[Office 365。](use-content-search-to-search-third-party-data-that-was-imported.md)|
+|ItemClass|使用此属性可搜索组织导入到网站的特定第三方Office 365。 对此属性使用以下语法：  `itemclass:ipm.externaldata.<third-party data type>*`|`itemclass:ipm.externaldata.Facebook* AND subject:contoso`  <br/> `itemclass:ipm.externaldata.Twitter* AND from:"Ann Beebe" AND "Northwind Traders"`|第一个示例返回 Subject 属性中包含单词"contoso"的 Facebook 项目。 第二个示例返回 Ann Beebe 发布且包含关键字短语"Northwind Traders"的 Twitter 项目。  <br/> 有关用于 ItemClass 属性的第三方数据类型的值的完整列表，请参阅使用内容搜索搜索已导入到第三方[Office 365。](use-content-search-to-search-third-party-data-that-was-imported.md)|
 |Kind| 要搜索的电子邮件的类型。 可能的值：  <br/>  联系人  <br/>  文档  <br/>  电子邮件  <br/>  externaldata  <br/>  传真  <br/>  即时消息  <br/>  日志  <br/>  会议  <br/>  microsoftteams (返回来自聊天、会议和通话中的Microsoft Teams)   <br/>  注释  <br/>  公告  <br/>  RSS 源  <br/>  任务  <br/>  语音邮件|`kind:email`  <br/> `kind:email OR kind:im OR kind:voicemail`  <br/> `kind:externaldata`|第一个示例返回符合搜索条件的电子邮件。 第二个示例返回电子邮件、即时消息对话 (包括 Skype for Business 中的 Microsoft Teams) 对话和聊天以及满足搜索条件的语音邮件。 第三个示例返回从第三方数据源（如 Twitter、Facebook 和 Cisco Jabber）导入 Microsoft 365 中的邮箱的项目，这些项目符合搜索条件。 有关详细信息，请参阅 Archiving [third-party data in Office 365](https://www.microsoft.com/?ref=go)。|
 |参与者|电子邮件中的"所有人员"字段。 这些字段为 From、To、Cc 和<sup>Bcc。1</sup>|`participants:garthf@contoso.com`  <br/> `participants:contoso.com`|发送自/到 garthf@contoso.com 的邮件。第二个示例返回 contoso.com 域中的用户发送的所有邮件或发送至 contoso.com 域中的用户的所有邮件。|
 |Received|收件人接收电子邮件的日期。|`received:04/15/2016`  <br/> `received>=01/01/2016 AND received<=03/31/2016`|2016 年 4 月 15 日收到的邮件。 第二个示例返回 2016 年 1 月 1 日到 2016 年 3 月 31 日之间收到的所有邮件。|
@@ -89,9 +95,9 @@ ms.locfileid: "52114014"
 
 ## <a name="searchable-site-properties"></a>可搜索网站属性
 
-下表列出了一些 SharePoint 和 OneDrive for Business 属性，可以使用安全 & 合规中心中的内容搜索功能，或者使用 **New-ComplianceSearch** 或 **Set-ComplianceSearch** cmdlet 搜索这些属性。 该表包含每个属性的  _property：value_ 语法示例，以及示例返回的搜索结果的说明。 
+下表列出了可以使用 Microsoft 365 合规中心中的电子数据展示搜索工具或 **New-ComplianceSearch** 或 **Set-ComplianceSearch** cmdlet 搜索的一些 SharePoint 和 OneDrive for Business 属性。 该表包含每个属性的  _property：value_ 语法示例，以及示例返回的搜索结果的说明。 
   
-有关可搜索SharePoint属性的完整列表，请参阅 Overview [of crawled and managed properties in SharePoint](/SharePoint/technical-reference/crawled-and-managed-properties-overview)。 可以 **搜索"可** 查询 **"列中标记为** "是"的属性。 
+有关可搜索SharePoint属性的完整列表，请参阅 Overview [of crawled and managed properties in SharePoint](/SharePoint/technical-reference/crawled-and-managed-properties-overview)。 可以 **搜索"可** 查询 **"列中标记为** "是"的属性。
   
 | 属性 | 属性描述 | 示例 | 示例返回的搜索结果 |
 |:-----|:-----|:-----|:-----|
@@ -114,7 +120,7 @@ ms.locfileid: "52114014"
 
 ## <a name="searchable-contact-properties"></a>可搜索联系人属性
 
-下表列出了已编制索引且可以使用内容搜索进行搜索的联系人属性。 这些属性可供用户为位于用户邮箱的个人通讯簿中的联系人 (也称为个人联系人) 配置。 若要搜索联系人，可以选择要搜索的邮箱，然后在关键字查询中使用一个或多个联系人属性。
+下表列出了已编制索引且可以使用电子数据展示搜索工具进行搜索的联系人属性。 这些属性可供用户为位于用户邮箱的个人通讯簿中的联系人 (也称为个人联系人) 配置。 若要搜索联系人，可以选择要搜索的邮箱，然后在关键字查询中使用一个或多个联系人属性。
   
 > [!TIP]
 > 若要搜索包含空格或特殊字符的值，请使用双引号 (" ") 包含短语;例如， `businessaddress:"123 Main Street"` 。
@@ -216,7 +222,7 @@ To see a list of the sensitive information types that you can search for， go t
 |发件人/作者|对于电子邮件而言，是指发送邮件的人。 对于文档而言，是指从 Office 文档的作者字段中引用的人员。 你可以键入多个名称，用逗号分隔。 通过 **OR** 运算符在逻辑上连接两个或多个值。|
 |大小 (以字节为单位) |对于电子邮件和文档而言，是项目的大小（以字节为单位）。|
 |主题/标题|对电子邮件而言，是指邮件的主题行中的文本。 对于文档而言，是指文档的标题。 如前所述，Title 属性是在文档中指定的Microsoft Office元数据。 您可以键入多个主题/标题的名称，用逗号分隔。 通过 **OR** 运算符在逻辑上连接两个或多个值。|
-|合规性标签|对于电子邮件和文档，已由自动标签策略或用户手动分配的保留标签自动分配给邮件和文档的保留标签。 保留标签用于对电子邮件和文档进行分类，以用于信息治理，并基于标签定义的设置强制执行保留规则。 可以键入部分保留标签名称并使用通配符或键入完整标签名称。 有关保留标签详细信息，请参阅 [了解保留策略和保留标签](retention.md)。|
+|保留标签|对于电子邮件和文档，已由自动标签策略或用户手动分配的保留标签自动分配给邮件和文档的保留标签。 保留标签用于对电子邮件和文档进行分类，以用于信息治理，并基于标签定义的设置强制执行保留规则。 可以键入部分保留标签名称并使用通配符或键入完整标签名称。 有关保留标签详细信息，请参阅 [了解保留策略和保留标签](retention.md)。|
 |||
   
 ### <a name="conditions-for-mail-properties"></a>邮件属性的条件
@@ -291,66 +297,66 @@ To see a list of the sensitive information types that you can search for， go t
     
 - 您可以使用拖放控件重新排序条件的顺序。 单击某个条件的控件，然后向上或向下移动它。
     
-- 同前面所述一样，某些条件属性允许您输入多个值。 各个值在逻辑上使用 **OR** 运算符相连。 这会导致出现使用相同逻辑表示有相同条件的多个实例，而每个实例都有一个值。 下图显示了一个包含多个值的单个条件的示例，以及一个包含多个条件的示例 (一个值) 同一属性。 这两个示例都产生相同的查询：  `(filetype:docx) OR (filetype:pptx) OR (filetype:xlsx)`
-    
-    ![邮件必须匹配该规则的所有条件。如果需要匹配一个条件或另一个条件，请对每个条件使用不同的规则。例如，如果您要为带有附件的邮件和内容匹配某个模式的邮件添加相同的免责声明，请为每个条件创建一个规则。您可以轻松地复制规则。](../media/9880aa29-d117-4531-be20-6d53f1d21341.gif)
+- 如前所述，某些条件属性允许您键入多个值 (用分号分隔) 。 每个值都由 **OR** 运算符在逻辑上连接，结果为查询 `(filetype:docx) OR (filetype:pptx) OR (filetype:xlsx)` 。 下图显示了具有多个值的条件的示例。
+
+    ![邮件必须匹配该规则的所有条件。如果需要匹配一个条件或另一个条件，请对每个条件使用不同的规则。例如，如果您要为带有附件的邮件和内容匹配某个模式的邮件添加相同的免责声明，请为每个条件创建一个规则。您可以轻松地复制规则。](../media/SearchConditions1.png)
   
-    ![同一属性的多个搜索条件](../media/1e63d37d-6d8d-4c9b-a509-a7e1c3a05193.gif)
-  
-> [!TIP]
-> 如果条件接受多个值，则建议您使用一个条件，并指定多个值（用逗号或分号分隔）。这有助于确保所应用的查询逻辑就是您想要的。 
+  > [!NOTE]
+  > 无法通过单击同一属性 (**添加条件来** 添加多个条件。 相反，您必须为条件提供多个值 (用分号分隔) ，如上一示例所示。
   
 ### <a name="examples-of-using-conditions-in-search-queries"></a>示例
 
-以下示例显示具有条件的基于 GUI 的搜索查询版本、显示在选定搜索 (（也由 **Get-ComplianceSearch** cmdlet) 返回）的详细信息窗格中的搜索查询语法，以及相应的 KQL 查询的逻辑。 
+以下示例显示具有条件的基于 GUI 的搜索查询版本、显示在选定搜索 (（也由 **Get-ComplianceSearch** cmdlet) 返回）的详细信息窗格中的搜索查询语法，以及相应的 KQL 查询的逻辑。
   
 #### <a name="example-1"></a>示例 1
 
-本示例返回SharePoint OneDrive for Business信用卡号且上次修改时间在 2016 年 1 月 1 日之前的网站的文档。
+本示例返回SharePoint OneDrive for Business信用卡号且上次修改时间在 2021 年 1 月 1 日之前的网站的文档。
   
  **GUI**
   
-![第一个搜索条件示例](../media/099515ba-d4ee-474e-af25-3aa48816b87b.gif)
+![第一个搜索条件示例](../media/SearchConditions2.png)
   
  **搜索查询语法**
   
- `SensitiveType:"Credit Card Number"(c:c)(lastmodifiedtime<2016-01-01)`
+ `SensitiveType:"Credit Card Number"(c:c)(lastmodifiedtime<2021-01-01)`
   
  **搜索查询逻辑**
   
- `SensitiveType:"Credit Card Number" AND (lastmodifiedtime<2016-01-01)`
+ `SensitiveType:"Credit Card Number" AND (lastmodifiedtime<2021-01-01)`
   
+请注意，在上一张屏幕截图中，搜索 UI 强调关键字查询和条件由 **AND** 运算符连接。
+
 #### <a name="example-2"></a>示例 2
 
-本示例返回包含关键字“report”且在 2105 年 4 月 1 日之前发送或创建的电子邮件项目或文档，且电子邮件的主题字段或文档的标题属性中包含词语“northwind”。查询不包括符合其他搜索条件的网页。 
+本示例返回包含关键字"report"的电子邮件项目或文档，这些项目或文档在 2021 年 4 月 1 日之前发送或创建，并且电子邮件的主题字段或文档的标题属性中包含单词"northwind"。 查询不包括符合其他搜索条件的网页。
   
  **GUI**
   
-![第二个搜索条件示例](../media/fe07d495-df81-42da-8106-3cdb409c6e7f.gif)
+![第二个搜索条件示例](../media/SearchConditions3.png)
   
  **搜索查询语法**
   
- `report(c:c)(date<2016-04-01)(subjecttitle:"northwind")(-filetype:aspx)`
+ `report(c:c)(date<2021-04-01)(subjecttitle:"northwind")(-filetype:aspx)`
   
  **搜索查询逻辑**
   
- `report AND (date<2016-04-01) AND (subjecttitle:"northwind") NOT (filetype:aspx)`
+ `report AND (date<2021-04-01) AND (subjecttitle:"northwind") NOT (filetype:aspx)`
   
 #### <a name="example-3"></a>示例 3
 
-本示例返回在 2016 年 12 月 1 日至 2016 年 11 月 30 日之间发送且包含以"phone"或"smartphone"开始的单词的电子邮件或日历会议。
+本示例返回在 2019 年 12 月 1 日至 2020 年 11 月 30 日之间发送且包含以"phone"或"smartphone"开始的单词的电子邮件或日历会议。
   
  **GUI**
   
-![搜索条件示例三](../media/973d45fc-0923-43d6-9d0a-25e4a625f057.gif)
+![搜索条件示例三](../media/SearchConditions4.png)
   
  **搜索查询语法**
   
- `phone* OR smartphone*(c:c)(sent=2016-12-01..2016-11-30)(kind="email")(kind="meetings")`
+ `phone* OR smartphone*(c:c)(sent=2019-12-01..2020-11-30)(kind="email")(kind="meetings")`
   
  **搜索查询逻辑**
   
- `phone* OR smartphone* AND (sent=2016-12-01..2016-11-30) AND ((kind="email") OR (kind="meetings"))`
+ `phone* OR smartphone* AND (sent=2029-12-01..2020-11-30) AND ((kind="email") OR (kind="meetings"))`
   
 ## <a name="special-characters"></a>特殊字符
 
@@ -360,32 +366,32 @@ To see a list of the sensitive information types that you can search for， go t
 
 ## <a name="searching-for-site-content-shared-with-external-users"></a>搜索与外部用户共享的网站内容
 
-您还可以使用安全与合规中心内的内容搜索功能&搜索存储在 SharePoint 和 OneDrive for Business 网站上且已与组织外部人员共享的文档。 这可以帮助你识别与组织外部人员共享的敏感信息或专有信息。 您可以通过在关键字查询  `ViewableByExternalUsers` 中使用 属性来这样做。 此属性返回已使用下列共享方法之一与外部用户共享的文档或网站： 
+您还可以使用合规中心中的电子数据展示搜索工具搜索存储在 SharePoint 和 OneDrive for Business 网站上且已与组织外部人员共享的文档。 这可以帮助你识别与组织外部人员共享的敏感信息或专有信息。 您可以通过在关键字查询  `ViewableByExternalUsers` 中使用 属性来这样做。 此属性返回已使用下列共享方法之一与外部用户共享的文档或网站： 
   
 - 要求用户以经过身份验证的用户身份登录到组织的共享邀请。
-    
+
 - 匿名来宾链接，允许具有此链接的任何人无需经过身份验证即可访问资源。
-    
+
 下面是一些示例：
   
-- 查询返回已与组织外部人员共享并包含信用卡号  `ViewableByExternalUsers:true AND SensitiveType:"Credit Card Number"` 的所有项目。 
-    
-- 查询  `ViewableByExternalUsers:true AND ContentType:document AND site:"https://contoso.sharepoint.com/Sites/Teams"` 返回组织中所有工作组网站上已与外部用户共享的文档列表。 
-    
+- 查询返回已与组织外部人员共享并包含信用卡号  `ViewableByExternalUsers:true AND SensitiveType:"Credit Card Number"` 的所有项目。
+  
+- 查询  `ViewableByExternalUsers:true AND ContentType:document AND site:"https://contoso.sharepoint.com/Sites/Teams"` 返回组织中所有工作组网站上已与外部用户共享的文档列表。
+
 > [!TIP]
-> 搜索查询（如  `ViewableByExternalUsers:true AND ContentType:document` ）可能在搜索结果中返回大量 .aspx 文件。 若要消除 (或其他类型的文件) ，可以使用 属性排除特定  `FileExtension` 文件类型;例如  `ViewableByExternalUsers:true AND ContentType:document NOT FileExtension:aspx` 。 
+> 搜索查询（如  `ViewableByExternalUsers:true AND ContentType:document` ）可能在搜索结果中返回大量 .aspx 文件。 若要消除 (或其他类型的文件) ，可以使用 属性排除特定  `FileExtension` 文件类型;例如  `ViewableByExternalUsers:true AND ContentType:document NOT FileExtension:aspx` 。
   
 哪些内容视为与组织的外部人员共享的内容？ 通过发送共享邀请SharePoint共享OneDrive for Business共享的网站和网站中的文档。 例如，下列用户活动会产生外部用户可以查看的内容：
   
 - 用户与组织外部的人员共享文件或文件夹。
-    
+  
 - 用户创建共享文件并将链接发送给组织外部的人员。 此链接允许外部用户查看（或编辑）该文件。
-    
+  
 - 用户向组织外部的人员发送共享邀请或来宾链接以查看（或编辑）共享文件。
-    
+  
 ### <a name="issues-using-the-viewablebyexternalusers-property"></a>使用 ViewableByExternalUsers 属性时的问题
 
-虽然属性表示文档或网站是否与外部用户共享的状态，但此属性确实存在一些注意事项，但  `ViewableByExternalUsers` 无法反映这一点。 在下列情况下，不会更新属性的值，并且使用此属性的内容搜索查询  `ViewableByExternalUsers` 的结果可能不准确。 
+虽然属性表示文档或网站是否与外部用户共享的状态，但此属性确实存在一些注意事项，但  `ViewableByExternalUsers` 无法反映这一点。 在下列情况下，不会更新属性的值，并且使用此属性的搜索查询  `ViewableByExternalUsers` 的结果可能不准确。 
   
 - 对共享策略的更改，例如为站点或组织关闭外部共享。 即使已撤消外部访问，属性仍将以前共享的文档显示为可从外部访问。
     
@@ -429,7 +435,7 @@ kind:im AND subject:conversation AND (received=startdate..enddate)
 
 ## <a name="search-tips-and-tricks"></a>搜索提示和技巧
 
-- 关键字搜索不区分大小写。 例如， **cat** 和 **CAT** 将返回相同的结果。 
+- 关键字搜索不区分大小写。 例如， **cat** 和 **CAT** 将返回相同的结果。
 
 - 布尔运算符 **AND**、 **OR**、 **NOT** 和 **NEAR** 必须为大写。 
 

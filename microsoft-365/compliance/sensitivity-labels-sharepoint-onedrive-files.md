@@ -17,16 +17,28 @@ search.appverid:
 - MOE150
 - MET150
 description: 管理员可以启用 Word、Excel 和 PowerPoint 中的敏感度SharePoint OneDrive。
-ms.openlocfilehash: c3d4320937b441510424454197c4eb4ffa46d9fe
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: f610e04a9115b7654332bcc1f479144b4d100618
+ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245632"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "52311924"
 ---
 # <a name="enable-sensitivity-labels-for-office-files-in-sharepoint-and-onedrive"></a>启用 SharePoint 和 OneDrive 中 Office 文件的敏感度标签
 
 >*[Microsoft 365 安全性与合规性许可指南](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。*
+
+> [!NOTE]
+> 当前存在一个问题，导致标记和加密的文件无法Office web 版：
+>
+> 当我们调查与特定文档属性相关的问题时，你将不能打开文档中的许多Office web 版。 对于这些文件，你可以继续在桌面和移动设备应用中打开和编辑Office文件。 或者，执行以下操作：
+>
+> 1. 在桌面应用程序中Office文件。
+> 2. 删除应用加密的标签。
+> 3. 将文件保存在原始位置 (SharePoint或OneDrive) ，然后关闭桌面应用。
+> 4. 在文件Office web 版，然后重新应用应用加密的原始标签。
+> 
+> 仅在用户中创建和编辑的文件Office web 版不受影响。
 
 为 Office 和 SharePoint 中的OneDrive启用敏感度标签，以便用户可以在 web Office 应用敏感度标签。 [](sensitivity-labels.md) 启用此功能后，用户将看到功能区上的"敏感度"按钮，以便他们可以应用标签，并查看状态栏上任何应用的标签名称。
 
@@ -71,14 +83,6 @@ ms.locfileid: "52245632"
 使用 Windows 上的 OneDrive 同步应用版本 19.002.0121.0008 或更高版本，以及 Mac 上的版本 19.002.0107.0008 或更高版本。 这两个版本均于 2019 年 1 月 28 日发布，当前已发布至所有圈。 有关详细信息，请参阅OneDrive[发行说明](https://support.office.com/article/845dcf18-f921-435e-bf28-4e24b95e5fc0)。 在 Office 和 SharePoint OneDrive 中为 Office 文件启用敏感度标签后，将提示运行较旧版本的同步应用的用户进行更新。
 
 ## <a name="limitations"></a>限制
-
-- Power Query 和具有 Excel web 版 的自定义外接程序：如果使用敏感度标签对这些文件进行加密，SharePoint 和 OneDrive 将无法处理这些文件，因此用户将无法在 Office web 版 中打开它们。 对于这些文件，应用标签而不加密，以便可以在Office web 版打开，或指示用户打开其桌面应用中的文件。
-
-- 如果在打开已标记和加密的文件时遇到Office web 版，请尝试以下操作：
-    1. 在桌面应用程序中Office文件。
-    2. 删除应用加密的标签。
-    3. 将文件保存在原始位置 (SharePoint或OneDrive) ，然后关闭桌面应用。
-    4. 在文件Office web 版，然后重新应用应用加密的原始标签。
 
 - SharePoint和 OneDrive不会自动将敏感度标签应用于已使用 Azure 信息保护标签加密的现有文件。 相反，为了让这些功能在启用 Office 和 OneDrive 中的Office标签后SharePoint，请完成以下任务：
     
@@ -173,7 +177,8 @@ ms.locfileid: "52245632"
 
 1. 使用具有全局管理员或管理员权限的工作SharePoint学校帐户Microsoft 365，连接到SharePoint。 若要了解具体操作步骤，请参阅 [SharePoint 在线管理壳入门](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)。
     
-    注意：如果Microsoft 365多地理位置，请对[连接-SPOService](/powershell/module/sharepoint-online/connect-sposervice)使用 -Url 参数，并指定其中一个地理位置的 SharePoint Online 管理中心网站 URL。
+   > [!NOTE]
+   > 如果已Microsoft 365地理位置，请对[连接-SPOService](/powershell/module/sharepoint-online/connect-sposervice)使用 -Url 参数，并指定其中一个地理位置的 SharePoint Online 管理中心网站 URL。
 
 2. 运行以下命令并按 **Y** 确认：
 
