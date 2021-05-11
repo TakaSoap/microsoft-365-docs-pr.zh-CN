@@ -18,49 +18,49 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 89b8ac7d99cfcd4c5e5e647e5ba54e14184ef0bd
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 2bb1fde1bfd8ddfa358d1141c3821843e532a8bf
+ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51688113"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "52311996"
 ---
-# <a name="run-a-detection-test-on-a-newly-onboarded-microsoft-defender-for-endpoint-device"></a><span data-ttu-id="57c0d-104">在新载入的 Microsoft Defender 终结点设备上运行检测测试</span><span class="sxs-lookup"><span data-stu-id="57c0d-104">Run a detection test on a newly onboarded Microsoft Defender for Endpoint device</span></span> 
+# <a name="run-a-detection-test-on-a-newly-onboarded-microsoft-defender-for-endpoint-device"></a><span data-ttu-id="2974e-104">在新载入的 Microsoft Defender 终结点设备上运行检测测试</span><span class="sxs-lookup"><span data-stu-id="2974e-104">Run a detection test on a newly onboarded Microsoft Defender for Endpoint device</span></span> 
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-<span data-ttu-id="57c0d-105">**适用于：**</span><span class="sxs-lookup"><span data-stu-id="57c0d-105">**Applies to:**</span></span>
-- <span data-ttu-id="57c0d-106">受支持的 Windows 10 版本</span><span class="sxs-lookup"><span data-stu-id="57c0d-106">Supported Windows 10 versions</span></span>
-- <span data-ttu-id="57c0d-107">Windows Server 2012 R2</span><span class="sxs-lookup"><span data-stu-id="57c0d-107">Windows Server 2012 R2</span></span>
-- <span data-ttu-id="57c0d-108">Windows Server 2016</span><span class="sxs-lookup"><span data-stu-id="57c0d-108">Windows Server 2016</span></span>
-- <span data-ttu-id="57c0d-109">Windows Server 版本 1803</span><span class="sxs-lookup"><span data-stu-id="57c0d-109">Windows Server, version 1803</span></span>
-- <span data-ttu-id="57c0d-110">Windows Server，2019</span><span class="sxs-lookup"><span data-stu-id="57c0d-110">Windows Server, 2019</span></span>
-- [<span data-ttu-id="57c0d-111">Microsoft Defender for Endpoint</span><span class="sxs-lookup"><span data-stu-id="57c0d-111">Microsoft Defender for Endpoint</span></span>](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [<span data-ttu-id="57c0d-112">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="57c0d-112">Microsoft 365 Defender</span></span>](https://go.microsoft.com/fwlink/?linkid=2118804)
+<span data-ttu-id="2974e-105">**适用于：**</span><span class="sxs-lookup"><span data-stu-id="2974e-105">**Applies to:**</span></span>
+- <span data-ttu-id="2974e-106">支持Windows 10版本</span><span class="sxs-lookup"><span data-stu-id="2974e-106">Supported Windows 10 versions</span></span>
+- <span data-ttu-id="2974e-107">Windows Server 2012 R2</span><span class="sxs-lookup"><span data-stu-id="2974e-107">Windows Server 2012 R2</span></span>
+- <span data-ttu-id="2974e-108">Windows Server 2016</span><span class="sxs-lookup"><span data-stu-id="2974e-108">Windows Server 2016</span></span>
+- <span data-ttu-id="2974e-109">Windows服务器版本 1803</span><span class="sxs-lookup"><span data-stu-id="2974e-109">Windows Server, version 1803</span></span>
+- <span data-ttu-id="2974e-110">WindowsServer， 2019</span><span class="sxs-lookup"><span data-stu-id="2974e-110">Windows Server, 2019</span></span>
+- [<span data-ttu-id="2974e-111">Microsoft Defender for Endpoint</span><span class="sxs-lookup"><span data-stu-id="2974e-111">Microsoft Defender for Endpoint</span></span>](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [<span data-ttu-id="2974e-112">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="2974e-112">Microsoft 365 Defender</span></span>](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> <span data-ttu-id="57c0d-113">想要体验 Microsoft Defender for Endpoint？</span><span class="sxs-lookup"><span data-stu-id="57c0d-113">Want to experience Microsoft Defender for Endpoint?</span></span> [<span data-ttu-id="57c0d-114">注册免费试用版。</span><span class="sxs-lookup"><span data-stu-id="57c0d-114">Sign up for a free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> <span data-ttu-id="2974e-113">想要体验 Microsoft Defender for Endpoint？</span><span class="sxs-lookup"><span data-stu-id="2974e-113">Want to experience Microsoft Defender for Endpoint?</span></span> [<span data-ttu-id="2974e-114">注册免费试用版。</span><span class="sxs-lookup"><span data-stu-id="2974e-114">Sign up for a free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-<span data-ttu-id="57c0d-115">在新载入的设备上运行以下 PowerShell 脚本，验证它是否正确报告给 Defender for Endpoint 服务。</span><span class="sxs-lookup"><span data-stu-id="57c0d-115">Run the following PowerShell script on a newly onboarded device to verify that it is properly reporting to the Defender for Endpoint service.</span></span>
+<span data-ttu-id="2974e-115">在新载入的设备上运行以下 PowerShell 脚本，验证它是否正确报告给 Defender for Endpoint 服务。</span><span class="sxs-lookup"><span data-stu-id="2974e-115">Run the following PowerShell script on a newly onboarded device to verify that it is properly reporting to the Defender for Endpoint service.</span></span>
 
-1. <span data-ttu-id="57c0d-116">创建文件夹："C：\test-MDATP-test"。</span><span class="sxs-lookup"><span data-stu-id="57c0d-116">Create a folder:  'C:\test-MDATP-test'.</span></span>
-2. <span data-ttu-id="57c0d-117">在设备上打开提升的命令行提示符并运行脚本：</span><span class="sxs-lookup"><span data-stu-id="57c0d-117">Open an elevated command-line prompt on the device and run the script:</span></span>
+1. <span data-ttu-id="2974e-116">创建文件夹："C：\test-MDATP-test"。</span><span class="sxs-lookup"><span data-stu-id="2974e-116">Create a folder:  'C:\test-MDATP-test'.</span></span>
+2. <span data-ttu-id="2974e-117">在设备上打开提升的命令行提示符并运行脚本：</span><span class="sxs-lookup"><span data-stu-id="2974e-117">Open an elevated command-line prompt on the device and run the script:</span></span>
 
-   1. <span data-ttu-id="57c0d-118">转到“**开始**”并键入“**cmd**”。</span><span class="sxs-lookup"><span data-stu-id="57c0d-118">Go to **Start** and type **cmd**.</span></span>
+   1. <span data-ttu-id="2974e-118">转到“**开始**”并键入“**cmd**”。</span><span class="sxs-lookup"><span data-stu-id="2974e-118">Go to **Start** and type **cmd**.</span></span>
 
-   1. <span data-ttu-id="57c0d-119">右键单击命令 **提示符** ，然后选择 **以管理员角色运行**。</span><span class="sxs-lookup"><span data-stu-id="57c0d-119">Right-click **Command Prompt** and select **Run as administrator**.</span></span>
+   1. <span data-ttu-id="2974e-119">右键单击命令 **提示符** ，然后选择 **以管理员角色运行**。</span><span class="sxs-lookup"><span data-stu-id="2974e-119">Right-click **Command Prompt** and select **Run as administrator**.</span></span>
 
       ![指向"以管理员模式运行"的"窗口开始"菜单](images/run-as-admin.png)
 
-3. <span data-ttu-id="57c0d-121">在提示符下，复制并运行以下命令：</span><span class="sxs-lookup"><span data-stu-id="57c0d-121">At the prompt, copy and run the following command:</span></span>
+3. <span data-ttu-id="2974e-121">在提示符下，复制并运行以下命令：</span><span class="sxs-lookup"><span data-stu-id="2974e-121">At the prompt, copy and run the following command:</span></span>
 
    ```powershell
-   powershell.exe -NoExit -ExecutionPolicy Bypass -WindowStyle Hidden $ErrorActionPreference= 'silentlycontinue';(New-Object System.Net.WebClient).DownloadFile('http://127.0.0.1/1.exe', 'C:\\test-MDATP-test\\invoice.exe');Start-Process 'C:\\test-MDATP-test\\invoice.exe'
+   powershell.exe -NoExit -ExecutionPolicy Bypass -WindowStyle Hidden $ErrorActionPreference = 'silentlycontinue';(New-Object System.Net.WebClient).DownloadFile('http://127.0.0.1/1.exe', 'C:\\test-MDATP-test\\invoice.exe');Start-Process 'C:\\test-MDATP-test\\invoice.exe'
    ```
 
-<span data-ttu-id="57c0d-122">命令提示符窗口将自动关闭。</span><span class="sxs-lookup"><span data-stu-id="57c0d-122">The Command Prompt window will close automatically.</span></span> <span data-ttu-id="57c0d-123">如果成功，检测测试将标记为已完成，并且大约 10 分钟后，已载入设备的门户中将显示新警报。</span><span class="sxs-lookup"><span data-stu-id="57c0d-123">If successful, the detection test will be marked as completed and a new alert will appear in the portal for the onboarded device in approximately 10 minutes.</span></span>
+<span data-ttu-id="2974e-122">命令提示符窗口将自动关闭。</span><span class="sxs-lookup"><span data-stu-id="2974e-122">The Command Prompt window will close automatically.</span></span> <span data-ttu-id="2974e-123">如果成功，检测测试将标记为已完成，并且大约 10 分钟后，已载入设备的门户中将显示新警报。</span><span class="sxs-lookup"><span data-stu-id="2974e-123">If successful, the detection test will be marked as completed and a new alert will appear in the portal for the onboarded device in approximately 10 minutes.</span></span>
 
-## <a name="related-topics"></a><span data-ttu-id="57c0d-124">相关主题</span><span class="sxs-lookup"><span data-stu-id="57c0d-124">Related topics</span></span>
-- [<span data-ttu-id="57c0d-125">载入 Windows 10 设备</span><span class="sxs-lookup"><span data-stu-id="57c0d-125">Onboard Windows 10 devices</span></span>](configure-endpoints.md)
-- [<span data-ttu-id="57c0d-126">载入服务器</span><span class="sxs-lookup"><span data-stu-id="57c0d-126">Onboard servers</span></span>](configure-server-endpoints.md)
-- [<span data-ttu-id="57c0d-127">Microsoft Defender 终结点载入问题疑难解答</span><span class="sxs-lookup"><span data-stu-id="57c0d-127">Troubleshoot Microsoft Defender for Endpoint onboarding issues</span></span>](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/troubleshoot-onboarding)
+## <a name="related-topics"></a><span data-ttu-id="2974e-124">相关主题</span><span class="sxs-lookup"><span data-stu-id="2974e-124">Related topics</span></span>
+- [<span data-ttu-id="2974e-125">载入 Windows 10 设备</span><span class="sxs-lookup"><span data-stu-id="2974e-125">Onboard Windows 10 devices</span></span>](configure-endpoints.md)
+- [<span data-ttu-id="2974e-126">载入服务器</span><span class="sxs-lookup"><span data-stu-id="2974e-126">Onboard servers</span></span>](configure-server-endpoints.md)
+- [<span data-ttu-id="2974e-127">Microsoft Defender 终结点载入问题疑难解答</span><span class="sxs-lookup"><span data-stu-id="2974e-127">Troubleshoot Microsoft Defender for Endpoint onboarding issues</span></span>](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/troubleshoot-onboarding)
