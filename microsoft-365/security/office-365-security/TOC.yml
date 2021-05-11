@@ -38,8 +38,14 @@
           href: turn-on-mdo-for-spo-odb-and-teams.md
         - name: Microsoft 365 安全中心概述
           href: ../defender/overview-security-center.md
-        - name: 威胁资源管理器（和实时检测）
-          href: threat-explorer.md
+        - name: Defender for Office 365 威胁资源管理器
+          items:
+            - name: 威胁资源管理器威胁搜寻
+              href: threat-hunting-in-threat-explorer.md
+            - name: 威胁资源管理器电子邮件安全
+              href: email-security-in-microsoft-defender.md
+            - name: 威胁资源管理器和实时检测基本信息
+              href: real-time-detections.md
         - name: '"电子邮件实体"页面'
           href: mdo-email-entity-page.md
         - name: AIR 述
@@ -188,6 +194,8 @@
           href: message-trace-scc.md
         - name: 向 Microsoft 报告邮件和文件
           href: report-junk-email-messages-to-microsoft.md
+        - name: 启用报告消息和报告钓鱼加载项
+          href: enable-the-report-message-add-in.md
         - name: 在 EOP 中使用邮件流规则阻止带可执行附件的邮件
           href: reducing-malware-threats-through-file-attachment-blocking-in-exchange-online-pro.md
         - name: 在 EOP 中使用邮件流规则筛选批量电子邮件
