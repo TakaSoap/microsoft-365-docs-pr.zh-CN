@@ -20,18 +20,18 @@ search.appverid:
 - MET150
 ms.assetid: 4436582f-211a-45ec-b72e-33647f97d8a3
 description: 了解 Microsoft 365 for Business 订阅到期、禁用或取消后对我的数据的影响。
-ms.openlocfilehash: 8f853000ebd20ab8f6625df9f773bbb182bdb7fd
-ms.sourcegitcommit: 437bdbf3f99610869811e80432a59b5f244f7a87
+ms.openlocfilehash: 45f331fd14abb2f851c8ff84e729b8443a60b59b
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/08/2021
-ms.locfileid: "51644652"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52297268"
 ---
 # <a name="what-happens-to-my-data-and-access-when-my-microsoft-365-for-business-subscription-ends"></a>Microsoft 365 for Business 订阅结束后对我的数据和访问有何影响？
 
 如果订阅结束 (无论是因为过期，还是因为你决定取消) 对 Microsoft 365 服务、应用程序和客户数据的访问都会在完全关闭订阅或 *删除* 订阅之前经历多个状态。 如果你意识到这一进展，则会更好地准备好在无法挽回之前将订阅恢复到活动状态，或者 — 如果你要离开 Microsoft 365 — 则可以在最终删除之前备份你的数据。
 
-在联系 [Microsoft 365 支持](../../admin/contact-support-for-business-products.md) 之前，请阅读这些重要信息。
+在联系 [Microsoft 365 支持](../../business-video/get-help-support.md) 之前，请阅读这些重要信息。
   
 ## <a name="what-happens-to-data-when-a-subscription-expires"></a>订阅到期后，对数据会有何影响？
 
@@ -125,7 +125,7 @@ ms.locfileid: "51644652"
   
 管理员和用户无法访问订阅时所附带的服务或 Office 应用程序。 将永久删除所有客户数据 (从用户数据到文档和电子邮件)，且无法恢复。
   
-此时无法重新激活订阅。 但是，作为全局管理员或账务管理员，你仍然可以访问管理中心来管理其他订阅，或购买新的订阅以满足你的业务需求。
+此时不能重新激活订阅。但是，作为全局管理员或帐单管理员，你仍然可以访问管理中心来管理其他订阅，或购买新订阅以满足你的业务需求。
   
 > [!NOTE]
 > - 添加已删除的相同类型新订阅，不会恢复与已删除订阅相关联的数据。
@@ -133,7 +133,7 @@ ms.locfileid: "51644652"
 
 ### <a name="what-happens-when-my-trial-ends"></a>试用期结束之后会出现什么情况？
 
-试用期结束后，将无法继续免费使用 Microsoft 365。 有以下几个选项： 
+试用结束后，不能继续免费使用 Microsoft 365。您有几个选项：
 
 - **购买 Microsoft 365。** 试用版到期时，将进入已过期阶段，并提供 30 天（针对大多数国家和地区中的大多数订阅）时间以考虑产品购买 Microsoft 365。 若要了解如何将试用版转换为付费订阅，请参阅 [从免费试用版购买订阅](../try-or-buy-microsoft-365.md#buy-a-subscription-from-your-free-trial)。
 

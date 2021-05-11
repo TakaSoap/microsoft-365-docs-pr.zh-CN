@@ -117,13 +117,13 @@
           items:
             - name: 概述
               href: add-users/remove-former-employee.md
-            - name: 步骤 1. 阻止员工登录并阻止对 Microsoft 365 服务的访问
+            - name: 步骤 1。阻止员工登录并阻止访问 Microsoft 365 服务
               href: add-users/remove-former-employee-step-1.md
             - name: 步骤 2. 保存前员工的邮箱的内容
               href: add-users/remove-former-employee-step-2.md
             - name: 步骤 3. 将前员工的电子邮件转发给其他员工或转换为共享邮箱
               href: add-users/remove-former-employee-step-3.md
-            - name: 步骤 4. 授予其他员工对 OneDrive 和 Outlook 数据的访问权限
+            - name: 步骤 4。允许其他员工访问 OneDrive 和 Outlook 数据
               href: add-users/remove-former-employee-step-4.md
             - name: 步骤 5. 擦除并阻止前员工的移动设备
               href: add-users/remove-former-employee-step-5.md
@@ -273,8 +273,6 @@
           href: manage/manage-office-scripts-settings.md
         - name: 寻找合作伙伴或经销商
           href: manage/find-your-partner-or-reseller.md
-        - name: 管理 Microsoft 奖励
-          href: manage/manage-microsoft-rewards.md
         - name: 为组织管理 Microsoft 反馈
           href: /admin/manage/manage-feedback-ms-org.md
         - name: 设置发布选项
@@ -422,4 +420,4 @@
     - name: 疑难解答
       href: /office/troubleshoot/
     - name: 联系支持人员
-      href: contact-support-for-business-products.md
+      href: ../business-video/get-help-support.md
