@@ -13,12 +13,12 @@ localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
 ms.assetid: df2d1e0f-b476-42c9-aade-4a260b24f193
 description: 使用安全 & 合规中心中的内容搜索电子数据展示工具快速查找 Exchange 邮箱中的电子邮件、SharePoint 网站和 OneDrive 位置中的文档，以及 Skype for Business 中的即时消息对话。
-ms.openlocfilehash: a6aa416768e7910e546b39d5866f884d2d532732
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 80234a512d13deda29a61073bec62990d135f30e
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50927588"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52333682"
 ---
 # <a name="search-for-content-using-the-content-search-tool"></a>使用内容搜索工具搜索内容
 
@@ -28,7 +28,9 @@ ms.locfileid: "50927588"
 
 第一步是开始使用内容搜索工具选择要搜索的内容位置，并配置关键字查询以搜索特定项目。 或者，您可以将查询留空并返回目标位置的所有项目。
   
-- [创建和运行](content-search.md) 内容搜索 
+- [创建和运行](content-search.md) 内容搜索
+
+- 内容搜索服务 [功能参考] (content-search-reference.md) 
 
 - [生成搜索查询并使用条件](keyword-queries-and-search-conditions.md) 来缩小搜索范围 
 

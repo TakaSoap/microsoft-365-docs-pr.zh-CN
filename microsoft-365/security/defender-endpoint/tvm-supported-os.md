@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 3c9c96c73a6d1843f2e7aa626cafac0860887a65
-ms.sourcegitcommit: 68383240ef7a673d5f28e2ecfab9f105bf1d8c8f
+ms.openlocfilehash: 72dc9d448a6170cbacc71d37a60bdd059ef6ec3e
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "52327338"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52333790"
 ---
 # <a name="supported-operating-systems-platforms-and-capabilities---for-threat-and-vulnerability-management"></a>支持的操作系统、平台和功能 - 用于威胁和漏洞管理
 
@@ -56,10 +56,10 @@ Windows Server 2008 R2 | 是 | 是 | 是 | 是 | 是
 Windows Server 2012 R2 | 是 | 是 | 是 | 是 | 是
 Windows Server 2016 | 是 | 是 | 是 | 是 | 是
 Windows Server 2019 | 是 | 是 | 是 | 是 | 是
-macOS 10.14 "Mojave"及以上 | 是 | 是 | 是 \( 预览\) | 是 \( 预览\) | 是 \( 预览\)
-Red Hat Enterprise Linux 7.2 或更高版本 (请参阅下面的" \* 重要"通知)  | 是 | 是 | 是 | 是 | 是
-CentOS 7.2 或更高版本 | 是 | 是 | 是 | 是 | 是
-Ubuntu 16.04 LTS 或更高版本 LTS | 是 | 是 | 是 | 是 | 是
+macOS 10.14 "Mojave"及以上 | 是 | 是 | 是 (预览)  | 是 (预览)  | 是 (预览) 
+Red Hat Enterprise Linux 7.2 或更高版本 (**预览)  (** 请参阅下面的"重要 \* ")  | 是 | 是 | 是 | 是 | 是
+CentOS 7.2 或更高版本 **(预览)** | 是 | 是 | 是 | 是 | 是
+Ubuntu 16.04 LTS 或更高版本 LTS **(预览)** | 是 | 是 | 是 | 是 | 是
 
 >[!IMPORTANT]
 > \* Red Hat Enterprise Linux："作为 Microsoft Defender for Endpoint 服务的一部分提供和显示的漏洞数据可从 Red Hat， Inc. 以原始形式"AS IS"提供给你，并且可能不是最新的。 Red Hat 安全数据 API 中可访问的数据由 Creative Commons Attribution 4.0 国际许可证授权。 使用此数据的风险由你承担。 Microsoft 及其第三方供应商不承担任何责任以及其他间接损害和默示担保，包括针对特定目的的不侵权、适用性和适用性的默示担保。 © 2020 Red Hat。 保留所有权利。 © 2020 Microsoft。 保留所有权利。"

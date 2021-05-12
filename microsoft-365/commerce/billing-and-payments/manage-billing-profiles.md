@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
-ms.reviewer: jkinma
+ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: article
 f1_keywords:
@@ -18,16 +18,15 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - commerce_billing
-- PPM_jmueller
 search.appverid: MET150
 description: 了解计费配置文件如何支持发票。
 ms.date: 04/02/2021
-ms.openlocfilehash: 57786df370246c2b4fda556a9c48eb828db1cb4f
-ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
+ms.openlocfilehash: 36d762e50627763b7856ed1fe6c109e8da2b4789
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52280783"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52332026"
 ---
 # <a name="understand-billing-profiles"></a>了解计费配置文件
 
@@ -73,4 +72,4 @@ ms.locfileid: "52280783"
 
 如果对 Azure 费用有疑问或需要帮助，请通过 Azure 支持 创建 <a href="https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportrequest" target="_blank">支持请求</a>。
 
-如果对管理中心中的帐单配置文件有疑问或Microsoft 365，请联系[商业产品支持人员](../../business-video/get-help-support.md)。
+如果对 Microsoft 365 管理中心中的帐单配置文件有疑问或需要帮助，请联系 [商业版产品支持人员](../../business-video/get-help-support.md)。

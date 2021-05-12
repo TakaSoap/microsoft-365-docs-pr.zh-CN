@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: tugu, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -16,18 +17,15 @@ ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
 - commerce_billing
-- PPM_jmueller
-ms.reviewer: tugu
-search.appverid:
-- MET150
-description: 了解如何更新适用于企业Microsoft 365帐单地址。 还可以更新用于接收帐单通知的电子邮件地址。
+search.appverid: MET150
+description: 了解如何更新 Microsoft 365 商业版帐单邮寄地址。 还可以更新用于接收帐单通知的电子邮件地址。
 ms.date: 04/07/2021
-ms.openlocfilehash: ea212d79ef28d5d387bdb5503c267d7cd5113786
-ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
+ms.openlocfilehash: 8bff090353c409f4364aed63e3b48a831608be2b
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52107190"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52332159"
 ---
 # <a name="change-your-billing-addresses"></a>更改帐单邮寄地址
 
@@ -111,7 +109,7 @@ ms.locfileid: "52107190"
 
 1. 在管理中心中，转到“**计费**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">你的产品</a>”页面。
 
-    如果你在中国使用由世纪Office 365运营的帐单，请参阅查看帐单或获取由世纪Office 365运营的[发票](../../admin/services-in-china/view-your-bill-or-get-a-fapiao.md)。
+    如果你在中国使用由世纪互联网运营的 Office 365，请参阅查看帐单或获取由世纪银行运营的[Office 365 的 Fapiaos。](../../admin/services-in-china/view-your-bill-or-get-a-fapiao.md)
 
 ::: moniker-end
 
@@ -125,7 +123,7 @@ ms.locfileid: "52107190"
 
 默认情况下，组织的帐单通知将发送到 Microsoft 电子邮件地址以及组织中每个全局管理员和帐单管理员的备用电子邮件地址。 每个管理员可以通过更新其个人资料信息来更改其备选电子邮件地址。
   
-1. 以全局Microsoft 365登录到使用你的工作或学校帐户登录。了解如何[登录](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4)。
+1. 使用你的工作或学校帐户作为全局管理员登录到 Microsoft 365。了解如何 [登录](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4)。
 
 2. 选择"**用户"图标**，然后选择"**我的帐户"。**
   

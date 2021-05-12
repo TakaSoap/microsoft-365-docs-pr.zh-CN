@@ -303,19 +303,19 @@
     - name: 常见问题
       items:
         - name: 委派管理常见问题解答
-          href: delegated-administration-faq.md
+          href: delegated-administration-faq.yml
         - name: EOP 一般常见问题解答
-          href: eop-general-faq.md
+          href: eop-general-faq.yml
         - name: EOP 排队、延迟以及退回邮件的常见问题
-          href: eop-queued-deferred-and-bounced-messages-faq.md
+          href: eop-queued-deferred-and-bounced-messages-faq.yml
         - name: 反恶意软件保护常见问题解答
-          href: anti-malware-protection-faq-eop.md
+          href: anti-malware-protection-faq-eop.yml
         - name: 反垃圾邮件保护常见问题解答
-          href: anti-spam-protection-faq.md
+          href: anti-spam-protection-faq.yml
         - name: 防欺骗保护常见问题
-          href: anti-spoofing-protection-faq.md
+          href: anti-spoofing-protection-faq.yml
         - name: 隔离常见问题解答
-          href: quarantine-faq.md
+          href: quarantine-faq.yml
     - name: 参考
       items:
         - name: 安全性路线图

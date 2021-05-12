@@ -1,5 +1,5 @@
 ---
-title: 组、团队和 Yammer 的生命周期结束选项
+title: 组、团队和团队的生命周期结束Yammer
 ms.reviewer: mmclean
 ms.author: mikeplum
 author: MikePlumleyMSFT
@@ -14,94 +14,95 @@ ms.collection:
 ms.custom:
 - M365solutions
 f1.keywords: NOCSH
-description: 组、团队和 Yammer 的生命周期结束选项。
-ms.openlocfilehash: 405d87c645118cf0ef318d4d68802d17da8c5673
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+description: 组、团队和团队的生命周期结束Yammer。
+ms.openlocfilehash: f1f91e64af7e16016398a7c326feec5a9b073ca9
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50916126"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52333778"
 ---
-# <a name="end-of-lifecycle-options-for-groups-teams-and-yammer"></a>组、团队和 Yammer 的生命周期结束选项
+# <a name="end-of-lifecycle-options-for-groups-teams-and-yammer"></a>组、团队和团队的生命周期结束Yammer
 
-Microsoft 365 组和 Microsoft Teams 使用各种连接服务。 删除组或团队时，连接服务中的大部分信息也会被删除。 本文介绍在删除信息之前将信息从组或团队中移动来保留信息的选项。
+Microsoft 365组Microsoft Teams可处理各种已连接服务。 删除组或团队时，连接服务中的大部分信息也会被删除。 本文介绍在删除信息之前将信息从组或团队中移动来保留信息的选项。
 
-对于不再需要的组或团队，一种常见做法是将文件从团队中移到另一个位置，如充当存储库或存档的 SharePoint 文档库。 此做法基于旧式工作，其中信息存储在文件和文件夹中，并且通过电子邮件进行通信。
+对于不再需要的组或团队，一种常见做法是将文件从团队中移到另一个位置（如充当存储库或存档的 SharePoint 文档库）。 此做法基于旧式工作，其中信息存储在文件和文件夹中，并且通过电子邮件进行通信。
 
 下表概述了与组和团队关联的服务，以及每个组和团队中的内容的关键类型：
 
 |服务|内容的类型|
 |:------|:---------------|
 |Teams|频道对话、频道中的文件|
-|Forms|调查结构和结果|
-|OneNote|Notebook|
+|表单|调查结构和结果|
+|OneNote|笔记本|
 |Outlook|邮件和日历|
-|规划器|项目状态和任务信息|
+|Planner|Project状态和任务信息|
 |Power Automate|工作流|
 |Power BI|数据、报表和仪表板|
-|Project 网页|项目计划|
+|Project网页|Project计划|
 |路线图|路线图|
-|SharePoint|文件、列表、Teams 频道 Wiki 数据|
+|SharePoint|文件、列表Teams频道 Wiki 数据|
 |Stream|视频|
 |Yammer|对话|
 
-删除组或团队时，还会删除大部分关联的资源。 其中一些例外情况包括 Stream 中的视频，这些视频仍由上传/录制视频的人所有，Power Automate 中的流也一样。 Project 网页中的项目和路线图数据保留在 CDS 中，可以单独还原。
+删除组或团队时，还会删除大部分关联的资源。 其中一些例外情况包括 Stream 中的视频，这些视频仍保留且仍归上传/录制人员所有，就像流式传输Power Automate。 Project Web Project中的数据和路线图数据将保留在 CDS 中，并可以单独还原。
 
-组和团队将保持软删除状态 30 天，并且随时都可以还原。 但是，30 天后，它们以及任何关联的资源（如服务和内容）将完全从 Microsoft 365 环境中清除。 受保留策略保护的任何内容仍然可以通过电子数据展示搜索使用。
+组和团队将保持软删除状态 30 天，并且随时都可以还原。 但是，30 天后，它们以及任何关联的资源（如服务和内容）将完全从Microsoft 365清除。 受保留策略保护的任何内容仍然可以通过电子数据展示搜索使用。
 
 ## <a name="end-of-life-cycle-considerations-for-group-connected-services"></a>组连接的服务的生命周期结束注意事项
 
 团队和组所有者以及 IT 管理员在删除组或团队时需要考虑三个关键方面。
 
-**内容**
+**Content**
 
-在团队不再可用或存在后，是否需要保留内容？ 是否足以依赖 Microsoft 365 的保留功能，还是应用和服务中未提供保留的一些内容？ 内容是否需要保留以用于记录管理、存档或供将来使用和参考？
+在团队不再可用或存在后，是否需要保留内容？ 是否足够依赖应用程序的保留Microsoft 365，或者应用和服务中是否包含一些未提供保留的内容？ 内容是否需要保留以用于记录管理、存档或供将来使用和参考？
 
 必须先询问这些问题，然后才能存档或删除任何团队，以避免任何潜在的数据丢失。
 
 **服务**
 
-除了各种应用和服务的内容外，它们是否需要保持其当前工作形式？ 例如，Power BI 报告是否需要继续可供访问，表单结果是否需要在可视摘要视图中可用，SharePoint 中的列表是否链接到或嵌入到任何位置？
+除了各种应用和服务的内容外，它们是否需要保持其当前工作形式？ 例如，Power BI报告是否需要继续可供访问，窗体结果是否需要在可视摘要视图中可用，SharePoint列表是否链接到或嵌入到任何位置？
 
 与内容注意事项类似，在删除基础组之前，必须提出这些问题，因为仅导出内容可能是不够的。
 
 **来宾**
 
-当来宾受邀加入团队时，工作流会先在主机组织的 Azure Active Directory 中创建其标识，然后再将来宾添加到团队。 删除团队后，不会从 Azure Active Directory 中删除来宾，因此仍存在于 Microsoft Teams 环境中。 虽然来宾无法访问尚未与它们共享的组、网站、团队或内容，但他们仍可以使用 Microsoft Teams 中的功能，例如发起聊天、语音和视频通话以及使用应用。
+当来宾受邀加入团队时，工作流会先在主机组织的 Azure Active Directory创建其标识，然后再将来宾添加到团队。 删除团队后，不会将来宾Azure Active Directory因此，来宾仍存在于Microsoft Teams环境中。 虽然来宾无法访问尚未与它们共享的组、网站、团队或内容，但他们仍可以使用 Microsoft Teams 中的功能，例如发起聊天、语音和视频呼叫以及使用应用。
 
-团队或组所有者可以邀请外部用户成为 Azure Active Directory 中的来宾、将其添加到团队以及将其从团队中删除。 但是，团队所有者无法从 Azure Active Directory 中删除来宾 ， 这只能由全局管理员或用户管理员执行。
+团队或组所有者可以邀请外部用户成为 Azure Active Directory中的来宾、将其添加到团队以及从团队中删除他们。 但是，团队所有者无法将来宾从 Azure Active Directory - 这只能由全局管理员或用户管理员执行。
 
-因此，执行来宾评审以及了解团队删除时是否需要从 Azure Active Directory 中删除来宾非常重要。 可能存在来宾保留在目录中的有效情况，例如是一个或多个其他团队的成员，或者使用其他 Microsoft 365 或 Azure 服务。
+因此，执行来宾评审以及了解在团队删除时是否需要从来宾Azure Active Directory很重要。 来宾可能仍保留在目录中，例如是一个或多个其他团队的成员，或者使用其他 Microsoft 365 Azure 服务。
 
 ## <a name="teams"></a>Teams
 
-特定于 Teams 的内容主要以对话形式提供。
+Teams内容主要是对话形式。
 
-无法使用本机 Microsoft Teams 功能复制或移动频道中的对话。 但是，可以使用 Graph API 导出它们。
+频道中的对话不能使用本机或Microsoft Teams移动。 但是，可以使用 Graph API 导出它们。
 
-此外，如果保留策略应用于 Teams，则保留对话并通过电子数据展示搜索提供。  (电子数据展示搜索中发现的项目可以导出，但是原始源中没有任何上下文或结构保留 – 它们只是单个邮件) 
+此外，如果将保留策略应用于Teams，对话将保留并通过电子数据展示搜索提供。 使用高级电子数据展示，你可以[重新构建Teams对话。](/microsoft-365/compliance/conversation-review-sets)
+
 
 ### <a name="archiving-a-team"></a>存档团队
 
 存档 [团队的好处](/microsoftteams/archive-or-delete-a-team) 是，它可以像现在一样提供对团队的完全访问权限，以便用户仍可浏览频道对话并打开文件，即使他们没有处于活动状态。 此外，如果需要在项目扩展服务中继续 (团队，可以取消存档) 。
 
-当所有者存档团队时，对于团队中的内容以及关联的 SharePoint 网站（如果选中）成员，该团队均设置为只读。 此操作的目标是确保频道中的对话保持其现有状态，以及基于 SharePoint 的内容（如文件和 Wiki）。
+当所有者存档团队时，对于团队中的内容以及关联的网站（如果选中）的成员，该团队SharePoint只读。 此操作的目标是确保频道中的对话保持其现有状态，以及基于SharePoint的内容（如文件和 Wiki）。
 
-在 SharePoint 网站中，没有任何可见的更改，但是，当 Microsoft 365 组的基于 SharePoint 的权限组设置为"网站访问者"级别时，不能更改任何文件或列表。 这包括团队的 OneNote 笔记本，因为此笔记本存储在 SharePoint 网站的网站资产库中。
+在 SharePoint 网站中，没有可见的更改，但是，当 Microsoft 365 组的基于 SharePoint 的权限组设置为"网站访问者"级别时，不能更改任何文件或列表。 这包括团队OneNote笔记本，因为此笔记本存储在网站内的网站资产SharePoint库中。
 
-在存档团队后，基础 Microsoft 365 组仍受过期策略 (如果设置为) ，因此所有者必须继续续订团队。
+存档团队后，基础 Microsoft 365 组仍受过期策略 (如果设置为) ，则所有者必须继续续订团队。
 
-虽然团队的频道对话和 SharePoint 网站内容设置为只读，但相同的内容不适用于其他关联服务：
+虽然团队的频道对话和SharePoint网站内容设置为只读，但相同的内容不适用于其他关联服务：
 
 - 仍可以创建、修改和删除 Planner 存储桶和任务
 - 表单仍可接收提交
-- Outlook 邮箱仍可接收电子邮件
-- 仍可修改 Power BI 仪表板、报表和数据
-- 仍可在 Project 网页项目中编辑项目和路线图
+- 邮箱Outlook仍可接收电子邮件
+- Power BI仪表板、报表和数据仍可修改
+- 仍可以在 Web 上的Project编辑项目和路线图
 - 视频仍可在 Stream 中上载、修改和删除
-- Power Automate 中的流仍可创建、修改、删除，并且将继续运行 (但是，如果需要将消息张贴到存档团队团队的频道，这些流) 
+- Power Automate流仍可创建、修改、删除，并且将继续运行 (但是，如果需要将邮件张贴到存档团队邮箱的频道，这些流) 
 
-## <a name="forms"></a>Forms
+## <a name="forms"></a>表单
 
 虽然窗体可以从单个帐户移动到一个组，但不能从一个组移动或复制到另一个组。 删除团队时，有三个选项可用于表单。
 
@@ -111,7 +112,7 @@ Microsoft 365 组和 Microsoft Teams 使用各种连接服务。 删除组或团
 
 **将结果导出到电子表格**
 
-如果需要保留表单响应的数据，可以通过将结果导出到 Excel 电子表格来 [达到此目的](https://support.office.com/article/02859424-341d-406f-b32a-9a0fbaf357af)。 这将仅将问题及其响应导出为数据 ，不包括由 Forms 创建的图形。
+如果需要保留表单响应的数据，可以通过将结果导出到电子表格中Excel[实现](https://support.office.com/article/02859424-341d-406f-b32a-9a0fbaf357af)。 这将仅将问题及其响应导出为数据 ，不包括由 Forms 创建的图形。
 
 
 **删除表单**
@@ -120,7 +121,7 @@ Microsoft 365 组和 Microsoft Teams 使用各种连接服务。 删除组或团
 
 ## <a name="onenote"></a>OneNote
 
-组中包含的 OneNote 笔记本存储在关联的 SharePoint 网站中的"网站资产"库中。 笔记本文件有时可以分布于多个单独的文件中，但无法仅单独复制和打开它们。 相反，必须使用 OneNote 2016 移动或导出 OneNote 笔记本的内容。
+包含在OneNote中的笔记本存储在关联网站中的"网站资产"SharePoint库中。 笔记本文件有时可以分布于多个单独的文件中，但无法仅单独复制和打开它们。 相反，必须使用OneNote移动或导出笔记本OneNote 2016。
 
 **将页面和分区移动到另一个笔记本**
 
@@ -150,7 +151,7 @@ Microsoft 365 组和 Microsoft Teams 使用各种连接服务。 删除组或团
 
 管理员可以使用第三方工具在邮箱之间迁移电子邮件和日历内容，而无需任何用户干预。 一个潜在的存储位置可能是完全作为组邮箱内容的"存档"创建的共享邮箱。
 
-## <a name="planner"></a>规划器
+## <a name="planner"></a>Planner
 
 每个组或团队可以有多个计划。 在载出过程中，确保解决每个计划的内容是否保留的问题非常重要。 与其他产品一样，Planner 中具有多种从内容上离开的方法。
 

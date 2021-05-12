@@ -13,12 +13,12 @@ ms.collection:
 - enabler-strategic
 - m365initiative-viva-topics
 localization_priority: None
-ms.openlocfilehash: 59581dce3701e622a1e2d7ed264370c9d92b3211
-ms.sourcegitcommit: 68383240ef7a673d5f28e2ecfab9f105bf1d8c8f
+ms.openlocfilehash: 2c29cdb6823e695cb9c96a4f51ef7b1c41642ac9
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "52327267"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52333622"
 ---
 # <a name="manage-topics-in-the-topic-center-in-microsoft-viva-topics"></a>在 Microsoft Viva 主题的主题中心管理主题
 
@@ -45,10 +45,6 @@ ms.locfileid: "52327267"
 - **已发布**：经确认的主题已计划：已进行手动编辑以提高其质量。
 
 - **已删除**：主题被知识管理员拒绝，并且不再对查看者可见。 可以在建议、确认或发布主题 (状态删除主题) 。 对于要删除的主题，必须使用主题卡片上的反馈机制从投票的用户那里获得两个负的投票。 例如，如果一个用户对特定主题投了负票，而一个用户对特定主题投了肯定票，你仍然需要另外两个否定的投票来删除该主题。 删除已发布的主题后，需要通过主题中心的"页面库"手动删除包含特用详细信息的页面。
-
-在 **"管理主题** "页上，知识管理员可以看到主题是由用户投票确认或删除的，还是由特定人员确认或删除的。 例如，对于用户投票删除的主题，原因在"删除者"列中显示为"用户投票"，而不是人员姓名。 
-
-   ![Screenshot of Manage topics page showing removed topics list with User votes highlighted.](../media/knowledge-management/removed-topics-user-votes.png) 
 
 > [!Note] 
 > 在 **"管理主题** "页上，每个知识经理只能查看他们有权访问连接到该主题的基础文件和页面的主题。 此权限修整将反映在"建议"选项卡、"已确认"选项卡、"**已发布**"和"已删除"选项卡 **上的主题** 列表中。  但是，主题计数会显示组织中所有权限的总计数。

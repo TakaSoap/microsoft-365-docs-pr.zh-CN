@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: prkalid, guyb
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -15,22 +16,23 @@ ms.collection:
 ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
-- commerce
+- commerce_billing
 search.appverid:
 - MET150
 description: 了解如何管理接收帐单通知电子邮件和发票附件的人。
-ms.openlocfilehash: 8997a4d3ca575c60214adbedccc018e6768850cd
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.date: 03/17/2021
+ms.openlocfilehash: d4083dc5a9d70eb8c20b4107389ec5fec65749ad
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50911850"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52332134"
 ---
 # <a name="manage-billing-notifications-and-invoice-attachments"></a>管理帐单通知和发票附件
 
 帐单 **通知** 页面允许你管理谁接收组织的帐单通知电子邮件。 该页面还提供了以电子邮件附件方式接收 [组织的发票的选项](#receive-your-organizations-invoices-as-email-attachments)。
 
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>准备工作
 
 你必须是全局管理员才能执行本文中所述的步骤。 计费管理员可以进行其中一些更改，如以下部分所述。 有关详细信息，请参阅 [关于管理员角色](../../admin/add-users/about-admin-roles.md)。
 
@@ -41,7 +43,7 @@ ms.locfileid: "50911850"
 
 计费通知电子邮件以组织的首选语言发送。 若要更改首选语言，请使用以下步骤。
 
-1. 在 Microsoft 365 管理中心中，转到帐单  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=853212" target="_blank">帐单通知</a>页面。
+1. 在管理Microsoft 365，转到"帐单  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=853212" target="_blank">""帐单通知"</a>页面。
 2. 在"**帐单通知设置"** 部分，选择"**编辑通知设置"。**
 3. 在"**帐单通知设置"****窗格中，在**"首选语言"下，选择想要使用的语言，然后选择"保存 **"。**
 
@@ -101,7 +103,7 @@ ms.locfileid: "50911850"
 
 如果你有计费配置文件，那么本文中介绍的一些步骤对于你的一些订阅可能略有不同。 本节介绍这些差异。 [我如何知道我是否具有计费配置文件？](manage-billing-profiles.md)
 
-### <a name="who-receives-billing-notifications"></a>谁会收到帐单通知？
+### <a name="who-receives-billing-notifications"></a>Who帐单通知？
 
 帐单通知电子邮件将发送到分配了以下角色之一的用户的主电子邮件地址和备用电子邮件地址：
 
@@ -128,5 +130,5 @@ ms.locfileid: "50911850"
 ## <a name="related-content"></a>相关内容
 
 [查看帐单或发票](view-your-bill-or-invoice.md)（文章）\
-[了解 Microsoft 365 商业](understand-your-invoice2.md) 版帐单或发票 (文章) \
+[了解适用于企业Microsoft 365的](understand-your-invoice2.md)帐单 (发票) \
 [在本文介绍的同时添加用户 (](../../admin/add-users/add-users.md) 分配) 

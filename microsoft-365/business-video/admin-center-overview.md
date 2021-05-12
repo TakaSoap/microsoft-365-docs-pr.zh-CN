@@ -21,14 +21,41 @@ search.appverid:
 - MET150
 - MOE150
 description: 详细了解 Microsoft 365 管理中心。
-ms.openlocfilehash: 5ae72b51657cea1ce635c622e875cdf736ee1598
-ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
+ms.openlocfilehash: 47eafbf49ac70d86b4065d3a67672c79abc16e63
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51221757"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52332242"
 ---
 # <a name="overview-of-the-microsoft-365-admin-center"></a>Microsoft 365 管理中心概述
+
+- [简化视图中的管理中心](#the-admin-center-in-simplified-view)
+- [仪表板视图中的管理中心](#the-admin-center-in-dashboard-view)
+
+## <a name="the-admin-center-in-simplified-view"></a>简化视图中的管理中心
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWD3sq?autoplay=false]
+
+借助 Microsoft 365 管理中心，可以在一个地方重置密码、查看发票、添加或删除用户等。
+
+登录以 Office.com 工作帐户登录，然后选择应用启动器。 
+
+如果你有权访问管理中心， **你将在列表中** 看到"管理员"。 选择它。 
+
+在管理中心顶部，查看你执行的顶部操作。 你可能会看到不同的操作，具体取决于你已设置的操作，例如创建新帐户、使用 Teams、设置电子邮件和安装 Office 应用。 
+ 
+在 **"用户**"选项卡上的"你的组织"下，是可以访问应用和服务、添加新用户、重置密码或使用"更多操作"菜单 **的用户** 列表。 选择一个人以查看或编辑其信息和设置。  
+
+在 **"Teams"** 选项卡上，创建新团队或管理现有团队。 你可以管理团队成员或选择更多 **操作来更改** 其他 Teams 设置。 
+
+在 **"订阅"** 选项卡上，添加更多产品、添加许可证或使用"更多操作 **"菜单修改** 许可证或付款方式。
+
+在" **学习** "选项卡上，浏览有关管理中心和其他 Microsoft 365 功能的视频和文章。 若要浏览管理中心的更高级功能，请打开导航菜单并展开标题以查看更多信息。 选择 **"全部** 显示"以查看导航菜单中的所有内容，或使用搜索栏快速找到您寻找的内容。
+
+如果需要帮助，请选择"**帮助&支持"。** 搜索需要帮助的主题并查看建议的解决方案，或选择耳机联系支持人员，然后输入你的问题及联系信息。 
+
+## <a name="the-admin-center-in-dashboard-view"></a>仪表板视图中的管理中心
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWfvDL?autoplay=false]
 
@@ -59,8 +86,6 @@ To get to the Microsoft 365 admin center， go to [admin.microsoft.com](https://
 默认情况下，注册并购买 Microsoft 365 商业版订阅的用户会获得管理员权限。 此人可以将管理员权限分配给其他人，以帮助他们管理组织的 Microsoft 365。
 
 如果收到消息"你没有访问此页面或执行此操作的权限"，你不是管理员。
-<br><br>    
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/3a4e19ee-1a2a-473f-8995-06de0052c169?autoplay=false]
   
 ### <a name="who-has-admin-permissions-in-my-business"></a>我的公司中谁拥有管理员权限？
 <a name="bkmk_admin"> </a>

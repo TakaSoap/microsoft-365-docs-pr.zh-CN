@@ -22,12 +22,12 @@ ms.custom:
 description: 管理员可以了解 Exchange Online Protection (EOP) 具有潜在危险或不需要的邮件的隔离。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: bd748871cc09905f9878d5917351b1c185cc1106
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: b2a11f5f9e1e730a3b0cc09625ec8e8cb592d869
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51203607"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52333802"
 ---
 # <a name="quarantined-email-messages-in-eop"></a>EOP 中的隔离电子邮件
 
@@ -54,4 +54,4 @@ ms.locfileid: "51203607"
 
 - 管理员和用户可以在隔离中向 Microsoft 报告误报。
 
-有关隔离功能详细信息，请参阅隔离 [常见问题](quarantine-faq.md)解答。
+有关隔离功能详细信息，请参阅隔离 [常见问题](quarantine-faq.yml)解答。
