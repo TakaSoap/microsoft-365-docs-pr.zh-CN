@@ -18,19 +18,19 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 365 高级审核提供了新的审核功能，可帮助组织进行法庭与合规调查。
-ms.openlocfilehash: 4df9cda05d4b5febbc5b7beb505365e449accf04
-ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
+ms.openlocfilehash: 3c91a388bc01a5531309b556a5a8532cb2efbaa6
+ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51892903"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "52311716"
 ---
 # <a name="advanced-audit-in-microsoft-365"></a>Microsoft 365 高级审核
 
 Microsoft 365 中的[统一审核](search-the-audit-log-in-security-and-compliance.md)功能可让组织深入了解 Microsoft 365 众多服务中的不同类型审核活动。 高级审核可通过增强执行调查所需的审核日志保留期来帮助组织执行取证和合规性调查，提供对有助于确定泄露范围和快速访问 Office 365 管理活动 API 的重要事件的访问。
 
 > [!NOTE]
-> 高级审核适用于具有 Office 365 E5/G5 或 Microsoft 365 企业版 E5/G5订阅的组织。 另外，当对于高级审核功能需要每用户授权时（长期保留审核日志和访问关键事件进行调查就是这种情况），可将 Microsoft 365 E5 合规或 E5 电子数据展示和审核附加产品许可证分配至用户。 有关许可的详细信息，请参阅[适用于安全与合规性的 Microsoft 365 许可指南](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#advanced-audit)。
+> 高级审核适用于具有 Office 365 E5/A5/G5 或 Microsoft 365 企业版 E5/A5/G5 订阅的组织。 另外，当对于高级审核功能需要每用户授权时（长期保留审核日志和访问关键事件进行调查就是这种情况），可将 Microsoft 365 E5/A5/G5 合规性或 E5/A5/G5 电子数据展示和审核附加设备许可证分配至用户。 有关许可的详细信息，请参阅：<br/>- [高级审核许可要求](auditing-solutions-overview.md#licensing-requirements)<br/>- [Microsoft 365 安全性与合规性许可指南](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#advanced-audit)。
 
 本文概述了“高级审核”功能，并展示了如何为“高级审核”设置用户。
 
@@ -131,9 +131,7 @@ Send 事件也是邮箱审核操作，当用户执行以下操作之一时将被
 此外，还可在 Exchange Online PowerShell 中运行[Search-UnifiedAuditLog -Operations SearchQueryInitiatedExchange](/powershell/module/exchange/search-unifiedauditlog)。
 
 > [!NOTE]
-> 必须在 Exchange Online PowerShell 中运行以下命令，审核日志搜索结果中才会包括 SearchQueryInitiatedExchange 事件（由指定的 E5 用户执行）： `Set-Mailbox <user identity> -AuditOwner @{Add="SearchQueryInitiated"}`。<br/><br/>
-在多地理环境中，必须在用户邮箱所在的林中运行 **Set-Mailbox** 命令。 若要确定用户的邮箱位置，请运行以下命令：`Get-Mailbox <user identity> | FL MailboxLocations`。
-如果 `Set-Mailbox -AuditOwner @{Add="SearchQueryInitiated"}` 命令之前在与用户邮箱所在林不同的林中运行，则必须从用户的邮箱中删除 SearchQueryInitiated 值（通过运行 `Set-Mailbox -AuditOwner @{Remove="SearchQueryInitiated"}`），然后将其添加到用户邮箱所在的林中的用户邮箱。
+> 必须启用对 SearchQueryInitiatedExchange 进行记录，从而在审核日志中搜索此事件。 有关说明，请参阅[设置高级审核](set-up-advanced-audit.md#step-2-enable-crucial-events)。
 
 ### <a name="searchqueryinitiatedsharepoint"></a>SearchQueryInitiatedSharePoint
 
@@ -156,47 +154,25 @@ Send 事件也是邮箱审核操作，当用户执行以下操作之一时将被
 此外，还可在 Exchange Online PowerShell 中运行[Search-UnifiedAuditLog -Operations SearchQueryInitiatedSharePoint](/powershell/module/exchange/search-unifiedauditlog)。
 
 > [!NOTE]
-> 必须在 Exchange Online PowerShell 中运行以下命令，审核日志搜索结果中才会包括 SearchQueryInitiatedSharePoint 事件（由指定的 E5 用户执行）： `Set-Mailbox <user identity> -AuditOwner @{Add="SearchQueryInitiated"}`。<br/><br/>
-在多地理环境中，必须在用户邮箱所在的林中运行 **Set-Mailbox** 命令。 若要确定用户的邮箱位置，请运行以下命令：`Get-Mailbox <user identity> | FL MailboxLocations`。
-如果 `Set-Mailbox -AuditOwner @{Add="SearchQueryInitiated"}` 命令之前在与用户邮箱所在林不同的林中运行，则必须从用户的邮箱中删除 SearchQueryInitiated 值（通过运行 `Set-Mailbox -AuditOwner @{Remove="SearchQueryInitiated"}`），然后将其添加到用户邮箱所在的林中的用户邮箱。
+> 必须启用对 SearchQueryInitiatedSharePoint 进行记录，从而在审核日志中搜索此事件。 有关说明，请参阅[设置高级审核](set-up-advanced-audit.md#step-2-enable-crucial-events)。
 
 ## <a name="high-bandwidth-access-to-the-office-365-management-activity-api"></a>高带宽访问 Office 365 管理活动 API
 
 通过 Office 365 管理活动 API 访问审核日志的组织，会因发布者级别限制而受限。 这意味着，对于代表多个客户请求数据的发布者而言，限制由所有这些客户共享。
 
-随着高级审核的发布，我们将从发布者级别的限制迁移到租户级别的限制。 结果是每个组织都会获得自己完全分配的带宽配额，以访问其审核数据。 带宽不是静态的预定义的限制，但根据因素组合进行建模，包括组织中的席位数，该 E5 组织将获得比非 E5 组织更多的带宽。
+随着高级审核的发布，我们将从发布者级别的限制迁移到租户级别的限制。 结果是每个组织都会获得自己完全分配的带宽配额，以访问其审核数据。 带宽不是静态的预定义的限制，但根据因素组合进行建模，包括组织中的席位数，该 E5/A5/G5 组织将获得比非 E5/A5/G5 组织更多的带宽。
 
-所有组织最初每分钟分配 2000 个请求基线。 根据组织的座位数和许可订阅，此限制将显著增加。 E5 组织获得的带宽约为非 E5 组织的两倍。 这也是最大宽带的上限，以保护服务的健康。
+所有组织最初每分钟分配 2000 个请求基线。 根据组织的座位数和许可订阅，此限制将显著增加。 E5/A5/G5 组织获得的带宽约为非 E5/A5/G5 组织的两倍。 这也是最大宽带的上限，以保护服务的健康。
 
 有关更多信息，参见“[Office 365 管理活动 API](/office/office-365-management-api/office-365-management-activity-api-reference#api-throttling)”中的“API 限制”部分。
 
-## <a name="set-up-advanced-audit-for-users"></a>为用户设置“高级审核”
-
-“高级审核”功能，如记录重要事件（如 MailItemsAccessed 和 Send）功能，需要为用户分配适当的 E5 许可证。 此外，必须为这些用户启用“高级审核”应用程序/服务计划。 要验证“高级审核”应用程序是否已分配给用户，请对每个用户执行以下步骤：
-
-1. 在 [Microsoft 365 管理中心](https://admin.microsoft.com/Adminportal)中，转到“**用户**” > “**活动用户**”，然后选择用户。
-
-2. 在用户属性浮出页面上，单击“**许可证和应用**”。
-
-3. 在“**许可证**”部分，验证是否为用户分配了 E5 许可证。
-
-4. 展开“**应用程序**”部分，并验证是否选中了“**Microsoft 365 高级审核**”复选框。
-
-5. 如果未选中该复选框，请将其选中，然后单击“**保存更改**”。
-
-   将在 24 小时内开始记录用户的 MailItemsAccessed、Send 和其他关键事件的审核日志记录。
-
-对于使用基于组的许可将许可证分配给用户组的组织，必须为组禁用 Microsoft 365 高级审核的许可分配。 保存所做的更改后，请验证是否已为组禁用 Microsoft 365 高级审核。 然后，重新为组启用许可分配。 有关基于组的许可的说明，请参阅[在 Azure Active Directory 中按组成员身份向用户分配许可证](/azure/active-directory/users-groups-roles/licensing-groups-assign)。
-
-此外，如果您已自定义登录到用户邮箱或共享邮箱的邮箱操作，则不会在这些邮箱上自动审核新的默认邮箱操作（如 MailItemsAccessed）。 有关更改为每个登录类型审核的邮箱操作的信息，请参阅[管理邮箱审核](enable-mailbox-auditing.md#change-or-restore-mailbox-actions-logged-by-default)中的“更改或还原默认记录的邮箱操作”部分。
-
 ## <a name="faqs-for-advanced-audit"></a>高级审核常见问题解答
 
-**是否每位用户都需要 E5 许可证才能从高级审核中受益？**
+**是否每位用户都需要 E5/A5/G5 许可证才能从高级审核中受益？**
 
-若要从用户级高级审核功能中受益，需要向用户分配 E5 许可证。 有些功能会检查是否有相应的许可证，确定后才为用户提供相应功能。 例如，如果未向某个用户分配 E5 许可证，而你尝试为其保留审核记录超过 90 天，则系统会返回一条错误消息。
+若要从用户级高级审核功能中受益，需要向用户分配 E5/A5/G5 许可证。 有些功能会检查是否有相应的许可证，确定后才为用户提供相应功能。 例如，如果未向某个用户分配相应的许可证，而你尝试为其保留审核记录超过 90 天，则系统会返回一条错误消息。
 
-**我的组织具有 E5 订阅，我是否需要执行任何操作才能获取重要事件的审核记录的访问权限？**
+**我的组织具有 E5/A5/G5 订阅，我是否需要执行任何操作才能获取重要事件的审核记录的访问权限？**
 
 对于已分配相应许可证的符合条件的客户和用户，无需执行任何操作即可访问关键审核事件。
 
