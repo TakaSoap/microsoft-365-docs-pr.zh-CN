@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: 适用于管理 Office 应用中针对桌面、移动和 Web 的敏感度标签的 IT 管理员的信息。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 55c22c9901f163fdf64e6148d5b2c19e51136bc1
-ms.sourcegitcommit: 1206319a5d3fed8d52a2581b8beafc34ab064b1c
+ms.openlocfilehash: 2cc1cb494569e054825875a4d0dc67e5c56f8146
+ms.sourcegitcommit: 68383240ef7a673d5f28e2ecfab9f105bf1d8c8f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/29/2021
-ms.locfileid: "52086799"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "52326614"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>管理 Office 应用中的敏感度标签
 
@@ -89,7 +89,7 @@ Office for iOS 和 Office for Android：敏感度标签内置于 [Office 应用]
 |[现在分配权限](encryption-sensitivity-labels.md#assign-permissions-now)                                 | 1910+                     | 16.21+                 | 4.7.1+         | 4.0.39+           | 是               |
 |[允许用户分配权限： <br /> - 不转发](encryption-sensitivity-labels.md#let-users-assign-permissions)                     | 1910+                     | 16.21+                 | 4.7.1+         | 4.0.39+           | 是               |
 |[允许用户分配权限： <br /> - 仅加密](encryption-sensitivity-labels.md#let-users-assign-permissions)  |2011+ | 16.48+ | 4.2112.0+  | 4.2112.0+ | 是 |
-|[要求用户将标签应用于其电子邮件和文档](#require-users-to-apply-a-label-to-their-email-and-documents)   | 2101+                        | 16.43+ <sup>\*</sup>                    | 即将推出：4.2111+            | 即将推出：4.2111+                | 是                |
+|[要求用户将标签应用于其电子邮件和文档](#require-users-to-apply-a-label-to-their-email-and-documents)   | 2101+                        | 16.43+ <sup>\*</sup>                    | 4.2111+            | 4.2111+                | 是                |
 |[审核标签相关的用户活动](data-classification-activity-explorer.md) | 2011+ | 审阅中 | 审阅中           | 审阅中               | 审阅中 |
 |[将敏感度标签自动应用于内容](apply-sensitivity-label-automatically.md)                    | 2009+                      | 16.44+ <sup>\*</sup>                    | 审阅中           | 审阅中               | 是 |
 |[默认标签和强制标签的不同设置](#outlook-specific-options-for-default-label-and-mandatory-labeling)                    | 推出预览版：[Beta 版频道](https://office.com/insider)                      | 16.43.1108+                   | 4.2111+           | 4.2111+               | 是 |
@@ -134,7 +134,7 @@ Office 内置标签客户端从以下管理中心下载敏感度标签和敏感�
 | | | 
 
 
-通过使用组策略或 [Office 云策略服务](https://docs.microsoft.com/DeployOffice/overview-office-cloud-policy-service)部署此设置。
+通过使用组策略或 [Office 云策略服务](/DeployOffice/overview-office-cloud-policy-service)部署此设置。
 
 > [!NOTE]
 > 若要使用组策略设置“**使用 Office 中的敏感度功能来应用和查看敏感度标签**”，并将其设置为“**1**”，则在某些情况下，Azure 信息保护客户端可能仍会在 Office 应用中加载。 在每个应用中阻止加载项加载可以防止这种情况的发生。
@@ -419,7 +419,7 @@ PowerShell 示例，其中标签策略命名为 **全局**：
 Get-Label | Format-Table -Property DisplayName, Name, Guid
 ````
 
-要从标签策略中删除这些高级设置之一，请使用相同的 AdvancedSettings 参数语法，但请指定空字符串值。 例如：
+要删除标签策略中的任意一项高级设置，请使用相同的 AdvancedSettings 参数语法，同时指定一个空字符串值。例如：
 
 ````powershell
 Set-LabelPolicy -Identity Global -AdvancedSettings @{OutlookDefaultLabel=""}
