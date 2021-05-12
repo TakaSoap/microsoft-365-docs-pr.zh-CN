@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -15,20 +16,18 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - commerce_billing
-- PPM_jmueller
-ms.reviewer: jkinma
 search.appverid:
 - MET150
 - GEA150
 description: 了解如何在由世纪互联运营的 Office 365 中付款后，向世纪互联发票管理系统提交发票申请。
 monikerRange: o365-21vianet
 ms.date: 03/30/2021
-ms.openlocfilehash: 1f2dec1ca224b7f8c6c22d5d9d0d2a0cac8630ea
-ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
-ms.translationtype: HT
+ms.openlocfilehash: 605e1bf001f6c6acb3a8b5044adeb66e110641b0
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52107456"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52332458"
 ---
 # <a name="apply-for-a-fapiao-for-office-365-operated-by-21vianet"></a>申请由世纪互联运营的 Office 365 的发票
 

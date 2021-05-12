@@ -4,6 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: sharik
 author: SKjerland
+ms.reviewer: nicholak
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -12,22 +13,20 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 ms.custom:
-- MSStore_Link
 - AdminSurgePortfolio
+- commerce_licensing
 search.appverid:
 - BCS160
 - MET150
 - MOE150
-ms.assetid: bb229ee9-e7be-4990-b3eb-354e75740496
 description: '从共享邮箱中删除许可证以将其分配给其他用户。 '
-ms.openlocfilehash: 873b50b34b9887ada92cc56f7083e3b748a52035
-ms.sourcegitcommit: 68383240ef7a673d5f28e2ecfab9f105bf1d8c8f
+ms.openlocfilehash: 2d0e6e6b1d6222bea80265bf6cc008e21ac3239c
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "52327218"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52332650"
 ---
 # <a name="remove-a-license-from-a-shared-mailbox"></a>从共享邮箱中删除许可证
 
@@ -42,7 +41,6 @@ ms.locfileid: "52327218"
 > 3. 共享邮箱置于诉讼保留状态。
 > 4. 共享邮箱分配有 Microsoft Defender 许可证。
 
-  
 ## <a name="remove-the-license"></a>删除许可证
 
 ::: moniker range="o365-worldwide"
@@ -50,7 +48,7 @@ ms.locfileid: "52327218"
 1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。
 
    > [!NOTE]
-   > 您需要从"活动用户"页中删除许可证。 无法从"共享邮箱"页面删除许可证，因为许可证是用户设置。 
+   > 您需要从"活动用户"页中删除许可证。 无法从"共享邮箱"页面删除许可证，因为许可证是用户设置。
   
 2. 选择共享邮箱。
 
@@ -100,9 +98,7 @@ ms.locfileid: "52327218"
 
 6. 你仍然支付许可证费用。 若要停止付费， [请从订阅中删除许可证](../../commerce/licenses/buy-licenses.md)。
 
-::: moniker-end 
-
- 
+::: moniker-end
 
 ## <a name="related-articles"></a>相关文章
 

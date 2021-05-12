@@ -5,22 +5,25 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: mijeffer, pablom
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-ms.collection:
-- commerce
-ms.custom: AdminSurgePortfolio
+ms.collection: M365-subscription-management
+ms.custom:
+- AdminSurgePortfolio
+- commerce_ssp
 search.appverid:
 - MET150
 description: 用户可以了解如何管理其自助购买。
-ms.openlocfilehash: 9935259f05432b964fbe138b39397f192e203eb2
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.date: 03/17/2021
+ms.openlocfilehash: 0f9832f69d7e89346e82e3acef0e626fc7f6c4de
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52297292"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52333250"
 ---
 # <a name="manage-self-service-purchases-users"></a>管理自助购买（用户）
 

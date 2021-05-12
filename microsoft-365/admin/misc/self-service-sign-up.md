@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: seemg, pablom
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -16,18 +17,15 @@ ms.custom:
 - AdminSurgePortfolio
 - okr_SMB
 - commerce_signup
-- PPM_pablom
-ms.reviewer: seemg
-search.appverid:
-- MET150
+search.appverid: MET150
 description: 了解 Microsoft 365自助注册和可用的自助服务计划，如 Microsoft Power Apps、Microsoft Flow 和 Dynamics 365 for Finance。
 ms.date: 03/17/2021
-ms.openlocfilehash: a3257cf57d3a2579a250f90811c1bd644cd0d27d
-ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
+ms.openlocfilehash: f3427294a94875e21a5e6b99a09056617a7dea99
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52107408"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52332374"
 ---
 # <a name="using-self-service-sign-up-in-your-organization"></a>在组织中使用自助注册
 
@@ -63,4 +61,4 @@ ms.locfileid: "52107408"
 |**Microsoft Stream** <br/> |Upload并共享整个组织的视频，以改进沟通、参与和学习。  <br/> |[注册 &amp; 第 0 天体验](https://go.microsoft.com/fwlink/p/?linkid=841472) <br/> |[Microsoft Stream](https://go.microsoft.com/fwlink/p/?linkid=841473) <br/> |
 |**Power Automate** <br/> |Power Automate是一种有助于在常用应用和服务之间设置自动工作流的产品，以同步文件、获取通知、收集数据等。  <br/> |[注册并登录Power Automate](/power-automate/sign-up-sign-in) <br/> |[Power Automate](https://go.microsoft.com/fwlink/p/?linkid=841465) <br/> |
 |**Power Virtual Agents** <br/> |Power Virtual Agents使团队能够使用引导的无代码图形界面轻松创建功能强大的机器人，而无需数据工作者或开发人员。 Power Virtual Agents解决了当今行业中机器人构建的许多关键问题。 它消除了主题专家与构建机器人的开发团队之间的空白，以及团队识别问题和更新机器人以解决此问题之间的长期延迟。  <br/> |[许可和访问详细信息](/power-virtual-agents/requirements-licensing) <br/> |[注册Power Virtual Agents](https://aka.ms/TryPVA) <br/> |
-|**Azure AD B2B** <br/> |Azure Active Directory (Azure AD) 企业到企业 (B2B) 协作允许你邀请外部用户 (或"来宾用户") 使用付费 Azure AD 服务。 某些功能是免费的，但对于任何付费的 Azure AD 功能，你可以为租户中的员工或非来宾用户拥有的每个 Azure AD 版本许可证邀请最多五个来宾用户。 <br/> |[Azure AD B2B 协作注册自助服务](/azure/active-directory/b2b/self-service-portal) <br/> |[Azure Active DirectoryB2B 协作许可指南](/azure/active-directory/b2b/licensing-guidance) <br/> |
+|**Azure AD B2B** <br/> |Azure Active Directory (Azure AD) 企业到企业 (B2B) 协作允许你邀请外部用户 (或"来宾用户") 使用付费 Azure AD 服务。 某些功能是免费的，但对于任何付费的 Azure AD 功能，你可以为租户中的员工或非来宾用户拥有的每个 Azure AD 版本许可证邀请最多五个来宾用户。 <br/> |[Azure AD B2B 协作注册自助服务](/azure/active-directory/b2b/self-service-portal) <br/> |[Azure Active Directory B2B 协作许可指南](/azure/active-directory/b2b/licensing-guidance) <br/> |

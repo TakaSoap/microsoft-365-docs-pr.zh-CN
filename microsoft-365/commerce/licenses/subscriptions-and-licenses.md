@@ -1,44 +1,44 @@
 ---
-title: 了解 Microsoft 365 商业版中的订阅和许可证
+title: 了解企业版Microsoft 365订阅和许可证
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: micurn, nicholak
 ms.audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
 - M365-subscription-management
-- Adm_TOC
-- commerce
+- Adm_O365
 ms.custom:
 - okr_smb
 - AdminSurgePortfolio
 - manage_licenses
-search.appverid:
-- MET150
-description: 了解 Microsoft 365 商业版中的订阅和许可证。
+- commerce_licensing
+search.appverid: MET150
+description: 了解适用于企业Microsoft 365订阅和许可证。
 ms.date: 07/01/2020
-ms.openlocfilehash: 6310b3e48c59da3243746cceca2d0516f511b827
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: a8ec5b0716a5ceaa02526520e76dc390a6fba0f7
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50911430"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52331486"
 ---
-# <a name="understand-subscriptions-and-licenses-in-microsoft-365-for-business"></a>了解 Microsoft 365 商业版中的订阅和许可证
+# <a name="understand-subscriptions-and-licenses-in-microsoft-365-for-business"></a>了解企业版Microsoft 365订阅和许可证
 
-购买 Microsoft 365 商业版订阅时，可注册一组按月或按年付费的应用和服务。 作为订阅的一部分收到的应用程序和服务取决于您购买的产品，例如 Microsoft 365 商业应用版或 Microsoft 365 商业标准版。 可以在适用于中小型企业的 [Microsoft 365](https://products.office.com/compare-all-microsoft-office-products?&activetab=tab:primaryr1) 页面上查看每个产品随附的内容。
+购买适用于Microsoft 365订阅时，需要注册一组按月或按年付费的应用和服务。 作为订阅的一部分收到的应用程序和服务取决于您购买的产品，例如Microsoft 365 商业应用版或Microsoft 365 商业标准版。 您可以在适用于中小型企业的 Microsoft 365 页面上查看每个产品[随附的内容](https://products.office.com/compare-all-microsoft-office-products?&activetab=tab:primaryr1)。
 
 购买订阅时，根据组织中的人数指定所需的许可证数。 购买订阅后，为组织成员创建帐户，然后为每个人分配许可证。 随着组织需求的变化，你可以购买更多许可证来容纳新人，或在某人离开组织时将许可证重新分配给其他用户。
 
-如果有一个以上的订阅，则可以针对每个订阅将许可证分配给不同人员。 例如，可以将所有用户作为 Microsoft 365 商业标准版订阅的一部分分配给所有 Microsoft 365 应用程序和服务。 您还可以通过单独的 Visio 订阅将部分用户分配给 Visio Online。
+如果有一个以上的订阅，则可以针对每个订阅将许可证分配给不同人员。 例如，您可以将所有用户分配给所有 Microsoft 365 应用程序和服务，作为订阅的一Microsoft 365 商业标准版部分。 您还可以通过单独的订阅将一部分Visio分配给 Visio Online。
 
 ## <a name="how-many-devices-can-people-install-office-on"></a>可以在多少台设备上安装 Office？
 
-如果你的订阅包括以下任一产品，每个人可以在最多五台电脑或 Mac、五台平板电脑和五部手机上安装 Office。
+如果你的订阅包括以下任一产品，则每个人Office五台电脑或 Mac、五台平板电脑和五部手机上进行安装。
 
 :::row:::
    :::column span="":::
@@ -55,10 +55,10 @@ ms.locfileid: "50911430"
   
 |**如果订阅中有此服务**|**将会自动发生该情况**|
 |:-----|:-----|
-|Exchange Online  <br/> |将为该人员创建一个邮箱。 <br/> 若要了解有关要完成此任务的 SLA，请参阅 ["设置..."。Microsoft 365 管理中心 中的邮件](https://support.microsoft.com/help/2635238/setting-up-messages-in-the-office-365-admin-center)。 |
+|Exchange Online  <br/> |将为该人员创建一个邮箱。 <br/> 若要了解有关要完成此任务的 SLA，请参阅["设置..."。管理Microsoft 365中的邮件](https://support.microsoft.com/help/2635238/setting-up-messages-in-the-office-365-admin-center)。 |
 |SharePoint Online  <br/> |将为该人员分配默认 SharePoint Online 团队网站的编辑权限。  <br/> |
 |Skype for Business Online  <br/> |用户有权访问与许可证关联的功能。  <br/> |
-|适用于企业的 Microsoft 365 应用  <br/> |用户可以在最多五台 Mac 或 PC、五台平板电脑和五台智能手机上下载 Office 应用。  <br/> |
+|Microsoft 365 企业应用版  <br/> |用户可以在最多Office台 Mac 或 PC、五台平板电脑和五台智能手机上下载这些应用。  <br/> |
 
 ## <a name="understand-licenses-for-non-user-mailboxes"></a>了解非用户邮箱的许可证
 
@@ -66,11 +66,11 @@ ms.locfileid: "50911430"
   
 - [创建共享邮箱](../../admin/email/create-a-shared-mailbox.md)
 - [从共享邮箱删除许可证](../../admin/email/remove-license-from-shared-mailbox.md)
-- [Exchange Online 中所有其他](/exchange/collaboration-exo/shared-mailboxes) Microsoft 365 计划的共享邮箱。
+- [其他所有Exchange Online](/exchange/collaboration-exo/shared-mailboxes)计划的共享Microsoft 365邮箱。
 - [创建和管理会议室邮箱](/exchange/recipients-in-exchange-online/manage-room-mailboxes)
 - [管理设备邮箱](/exchange/recipients-in-exchange-online/manage-equipment-mailboxes)
 
-## <a name="who-can-assign-licenses"></a>谁可以分配许可证？
+## <a name="who-can-assign-licenses"></a>Who分配许可证？
 
 不同类型的管理员可以根据其角色以不同方式处理许可证。下表列出了最常见的选项。有关管理员角色和特权的完整列表，请参阅[关于管理员角色](../../admin/add-users/about-admin-roles.md)。
   

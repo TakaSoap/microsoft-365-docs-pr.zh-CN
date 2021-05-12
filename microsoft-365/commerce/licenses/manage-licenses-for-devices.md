@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: shegu, nicholak
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -12,27 +13,26 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
-- commerce
 description: 了解如何将许可证分配给组以用于设备。
 ms.custom:
-- okr_SMB
 - AdminSurgePortfolio
-search.appverid:
-- MET150
-ms.openlocfilehash: a316810e3e6ddb1373697dc56b2fccb5a32cf0b1
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+- okr_SMB
+- commerce_licensing
+search.appverid: MET150
+ms.date: 03/17/2021
+ms.openlocfilehash: 67bd0734953c64f51390aac949a7da477914c7b4
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50911476"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52331654"
 ---
 # <a name="manage-licenses-for-devices"></a>管理设备的许可证
 
 如果你有 Microsoft 365 企业应用版 (设备) 或 Microsoft 365 教育应用版 (设备) ，可以使用 Azure AD 组向设备分配许可证。 当设备具有许可证时，使用该设备的任何人都可以使用以前名为 Office 365 专业增强 (Microsoft 365 企业应用版) 。 例如，假设你拥有 20 台笔记本电脑和平板电脑，供组织人员使用。 向每台设备分配许可证时，登录到其中一台设备的每个人将使用 Microsoft 365 企业应用版，而无需自己的许可证。
 
 > [!IMPORTANT]
-> Microsoft 365 企业应用版基于设备的许可仅作为附加许可证提供给一些商业客户和一些教育客户。 对于商业客户，许可证是 *Microsoft 365* 企业应用版 (设备) 并且仅通过 企业协议/企业协议 订阅提供。 对于教育行业客户，许可证是 *Microsoft 365* 教育应用版 (设备) 并且仅通过注册教育版解决方案 (EES) 。 有关详细信息，请阅读有关教育可用性 [的博客文章](https://educationblog.microsoft.com/2019/08/attention-it-administrators-announcing-device-based-subscription-for-education/)。 要获得商业可用性，请联系你的 Microsoft 帐户代表。
+> Microsoft 365 企业应用版基于设备的许可仅作为附加许可证提供给一些商业客户和一些教育客户。 对于商业客户，许可证是 *Microsoft 365* 企业应用版 (设备) 并且仅通过 企业协议/企业协议 订阅提供。 对于教育行业客户，许可证是 *Microsoft 365* 教育应用版 (设备) 并且仅通过注册教育版解决方案 (EES) 。 有关详细信息，请阅读有关教育可用性 [的博客文章](https://educationblog.microsoft.com/2019/08/attention-it-administrators-announcing-office-365-proplus-device-based-subscription-for-education)。 要获得商业可用性，请联系你的 Microsoft 帐户代表。
 
 首先，在 Azure Active Directory 管理中心创建一个组，然后将设备分配给该组。 若要了解有关设备许可（包括设备要求、可以使用的组类型以及如何配置 Microsoft 365 企业应用版以使用设备许可）的信息，请参阅 Microsoft [365](/deployoffice/device-based-licensing)企业应用版基于设备的许可。
 

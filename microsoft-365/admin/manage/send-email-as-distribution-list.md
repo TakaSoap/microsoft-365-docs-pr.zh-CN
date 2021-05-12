@@ -20,25 +20,27 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: a7c98273-067e-4162-b3a1-4ba081796012
-description: 了解如何在 Microsoft 365 中以通讯组列表方式发送电子邮件。
-ms.openlocfilehash: 379f2471fd38da5098bf8f2ca82f4f76ee82bd8e
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+description: 了解如何以通讯组列表中的通讯组列表Microsoft 365。
+ms.openlocfilehash: bb1d5a62d2b1a3bbfae87849e8aa96cef14c173e
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50915154"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52332422"
 ---
 # <a name="send-email-as-a-distribution-list"></a>以通讯组列表方式发送电子邮件
 
-在 Microsoft 365 中，你可以以通讯组列表方式发送电子邮件。 当通讯组列表成员答复发送到通讯组列表的邮件时，电子邮件看起来好像来自通讯组列表，而不是来自单个用户。 本主题演示如何执行此工作。
+在Microsoft 365中，你可以以通讯组列表方式发送电子邮件。 当通讯组列表成员答复发送到通讯组列表的邮件时，电子邮件看起来好像来自通讯组列表，而不是来自单个用户。 本主题演示如何执行此工作。
   
 ## <a name="send-email-as-a-distribution-list"></a>以通讯组列表方式发送电子邮件
 
-执行这些步骤之前，请确保你已添加到 Microsoft 365 通讯组列表，并且你已被授予以发送方式发送权限。
+执行这些步骤之前，请确保你已添加到Microsoft 365通讯组列表，并且你已被授予以发送方式发送权限。
   
- **管理员**：确保你已按照将 [Microsoft 365](../email/add-user-or-contact-to-distribution-list.md) 用户或联系人添加到列表和允许成员以 Microsoft [365](../../solutions/allow-members-to-send-as-or-send-on-behalf-of-group.md#allow-members-to-send-email-as-a-group) 组组方式发送电子邮件主题中的步骤操作，并将正确的人员添加到通讯组列表。
+ **管理员**：确保你已按照将 [Microsoft 365](../email/add-user-or-contact-to-distribution-list.md)用户或联系人添加到列表和允许成员以 [Microsoft 365 组](../../solutions/allow-members-to-send-as-or-send-on-behalf-of-group.md#allow-members-to-send-email-as-a-group)组方式发送电子邮件主题中的步骤操作，并将正确的人员添加到通讯组列表。
   
-1. 打开 Outlook 网页，然后转到收件箱。 
+## <a name="outlook-on-the-web"></a>Outlook 网页版
+
+1. 打开Outlook"，然后转到收件箱。 
     
 2. 打开发送到通讯组列表的邮件。 
     
@@ -49,3 +51,13 @@ ms.locfileid: "50915154"
 5. 右键单击"From"地址（如 ） `Ina@weewalter.me` 并选择"删除 **"。**<br/> ![删除 FROM 别名](../../media/9b8d8e8f-dc46-499c-89bd-0a480603bf1f.png)
   
 6. 然后键入通讯组列表地址（如 support@contoso.com 地址）并发送邮件。 下次您从通讯组列表答复时，其地址将显示为"自"列表中的 **一** 个选项。<br/>![显示共享邮箱的别名](../../media/f7632a9a-9cab-446c-9e37-23ef50c5b975.png)
+
+## <a name="outlook"></a>Outlook
+
+1. 打开Outlook桌面客户端。
+
+2. 撰写新电子邮件。 单击"**自"** 字段，然后选择 **"其他电子邮件地址"。** 如果看不到"自"字段，请导航到 **"选项** "，然后选择" **显示** 字段"部分中的"自"。
+
+3. 从全局 **地址列表中选择** 通讯组列表地址。
+
+4. 发送电子邮件。

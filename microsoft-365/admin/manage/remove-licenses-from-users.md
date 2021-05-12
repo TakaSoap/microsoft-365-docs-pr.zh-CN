@@ -5,28 +5,28 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: sinakassaw, nicholak
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
 - M365-subscription-management
-- Adm_TOC
+- Adm_O365
 ms.custom:
 - AdminSurgePortfolio
-- manage_licenses
 - okr_smb
-- commerce
-search.appverid:
-- MET150
+- manage_licenses
+- commerce_licensing
+search.appverid: MET150
 description: 了解如何从用户帐户取消分配许可证。
 ms.date: 07/01/2020
-ms.openlocfilehash: 87bb8f6fe0e85fc4ac832f2bc4ad746e8d6386eb
-ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
+ms.openlocfilehash: 6f2cbf65e1d6a38a4b1ed00976d4dd473d7331e9
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "52310988"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52332410"
 ---
 # <a name="unassign-licenses-from-users"></a>取消分配用户许可证
 
@@ -95,7 +95,7 @@ ms.locfileid: "52310988"
 3. 在右侧窗格，选择“**许可证和应用**”。
 4. 展开"**许可证**"部分，清除要取消分配的许可证的框，然后选择"保存 **更改"。**
 
-###  <a name="unassign-licenses-from-multiple-users"></a>取消分配多个用户的许可证
+### <a name="unassign-licenses-from-multiple-users"></a>取消分配多个用户的许可证
 
 ::: moniker range="o365-worldwide"
 
@@ -124,7 +124,7 @@ ms.locfileid: "52310988"
 
 - 从用户删除许可证后，与该帐户关联的数据将存储 30 天。 30 天宽限期后，数据将被删除且无法恢复。
 - 保存OneDrive for Business的文件不会删除，除非用户已从管理中心Microsoft 365 Active Directory 同步删除。 有关详细信息，请参阅OneDrive[和删除](/onedrive/retention-and-deletion)。
-- 删除许可证后，用户邮箱将不再可用电子数据展示工具（如内容搜索或Advanced eDiscovery。 有关详细信息，请参阅内容搜索参考中的"搜索断开连接或已取消许可的[邮箱"。](../../compliance/content-search-reference.md#searching-disconnected-or-de-licensed-mailboxes)
+- 删除许可证后，用户邮箱将不再可用电子数据展示工具（如内容搜索或Advanced eDiscovery。 有关详细信息，请参阅 Content Search in Microsoft 365 中的"搜索断开连接或已取消[许可的Microsoft 365。](../../compliance/content-search.md)
 - 如果你有一个Enterprise订阅，Office 365 企业版 E3，Exchange Online使用非活动邮箱保留已删除用户帐户的[邮箱数据](../../compliance/inactive-mailboxes-in-office-365.md)。 有关详细信息，请参阅 Create [and manage inactive mailboxes in Exchange Online](../../compliance/create-and-manage-inactive-mailboxes.md)。
 - 若要了解如何在删除用户的许可证后阻止Microsoft 365访问数据，以及如何在以后获取数据访问权限，请参阅删除[以前的员工](../add-users/remove-former-employee.md)。
 - 如果你删除用户的许可证，并且他们仍然安装了Office，则当他们使用 Office 应用时，[](https://support.microsoft.com/office/0d23d3c0-c19c-4b2f-9845-5344fedc4380)他们会看到"未授权的产品"和Office错误。

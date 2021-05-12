@@ -19,12 +19,12 @@ ms.custom:
 search.appverid: MET150
 description: 了解 Microsoft 365 for Business 订阅到期、禁用或取消后对我的数据的影响。
 ms.date: 04/08/2021
-ms.openlocfilehash: f226514078a9f6d6bc1f4761269e2740300ef88d
-ms.sourcegitcommit: 68383240ef7a673d5f28e2ecfab9f105bf1d8c8f
+ms.openlocfilehash: d0821214f9a8c242306685db2ee7faf3779cecff
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "52326794"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52333022"
 ---
 # <a name="what-happens-to-my-data-and-access-when-my-microsoft-365-for-business-subscription-ends"></a>Microsoft 365 for Business 订阅结束后对我的数据和访问有何影响？
 
@@ -50,6 +50,7 @@ ms.locfileid: "52326794"
 *对于大多数国家和地区的大多数优惠。
   
 > [!NOTE]
+>
 > **什么是"客户数据"？** 根据 [Microsoft 在线服务条款的定义](https://go.microsoft.com/fwlink/p/?LinkId=613649)，客户数据是指所有数据，包括客户或代表客户通过使用 Microsoft 365 服务向 Microsoft 提供的所有文本、声音或图像文件。 如果要了解有关客户数据保护的更多信息，请参阅 [开始使用 Microsoft 服务信任门户](../../compliance/get-started-with-service-trust-portal.md)。
 
 ## <a name="what-happens-if-i-cancel-a-subscription"></a>如果取消订阅会发生什么情况？
@@ -68,6 +69,7 @@ ms.locfileid: "52326794"
 > 如果希望在象征性的禁用期结束前删除订阅数据，可以[关闭帐户](../close-your-account.md)。
   
 > [!NOTE]
+>
 > 如果显式删除订阅，则它将跳过过期和禁用阶段，而且会立即删除 SharePoint Online 数据和内容（包括 OneDrive）。
 
 ## <a name="what-are-my-options-if-my-subscription-is-about-to-expire"></a>我的订阅即将过期时我有哪些选择？

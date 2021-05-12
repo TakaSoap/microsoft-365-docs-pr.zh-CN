@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: tugu, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -15,26 +16,23 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - commerce_billing
-- PPM_jmueller
-ms.reviewer: tugu
-search.appverid:
-- MET150
+search.appverid: MET150
 description: 了解计费帐户以及如何管理它们。
 ms.date: 03/17/2021
-ms.openlocfilehash: ecac005b8b49739cb74efc4ca2fae44667f37bad
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 05ab759f300cb7fa6b02e06714d7d98e64890be8
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52293639"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52331594"
 ---
 # <a name="manage-billing-accounts"></a>管理计费帐户
 
-注册以试用或购买 Microsoft 产品时，会创建一个计费帐户。 使用计费帐户管理帐户设置、发票、付款方式和购买。 你可以访问多个计费帐户。 例如，你直接Microsoft 365注册，或者你有权访问组织的 企业协议、Microsoft 产品&服务协议或 Microsoft 客户协议。 对于其中每个方案，你将有一个单独的计费帐户。
+注册以试用或购买 Microsoft 产品时，会创建一个计费帐户。 使用计费帐户管理帐户设置、发票、付款方式和购买。 你可以访问多个计费帐户。 例如，你直接注册了 Microsoft 365，或者你有权访问组织的 企业协议、Microsoft 产品&服务协议或 Microsoft 客户协议。 对于其中每个方案，你将有一个单独的计费帐户。
 
-当前Microsoft 365管理中心支持以下类型的计费帐户：
+Microsoft 365 管理中心当前支持以下类型的计费帐户：
 
-- Microsoft Online Services计划：此计费帐户是在你直接注册订阅时Microsoft 365帐户。
+- Microsoft Online Services计划：此计费帐户是在你直接注册 Microsoft 365 订阅时创建的。
 - Microsoft &服务协议 (MPSA) 计划：当你的组织签署 MPSA 批量许可协议以购买软件和联机服务时，将创建此计费帐户。
 - Microsoft 客户协议：当你的组织与 Microsoft 代表、授权的合作伙伴合作或单独购买时，将创建此计费帐户。
 
@@ -69,14 +67,14 @@ ms.locfileid: "52293639"
 
 ## <a name="understand-access-to-billing-accounts"></a>了解对计费帐户的访问权限
 
-可以通过角色和权限为其他人提供对 Microsoft 365 帐户的访问权限。 只有计费帐户所有者才能授予对计费帐户的访问权限。 可以将以下角色之一分配给用户：
+可以通过角色和权限为其他人提供对 Microsoft 365 管理中心中的帐单帐户的访问权限。 只有计费帐户所有者才能授予对计费帐户的访问权限。 可以将以下角色之一分配给用户：
 
 - **计费帐户所有者** &mdash; 可以分配权限、编辑帐户、签署协议和查看帐户。
 - **计费帐户参与者** &mdash; 可以编辑帐户、签署协议和查看帐户。
 - **计费帐户读者** &mdash; 可查看帐户。
 
 > [!Note]
-> 计费帐户角色仅适用于计费帐户，不适用于管理中心Microsoft 365应用场景。
+> 计费帐户角色仅适用于计费帐户，不适用于其他 Microsoft 365 管理中心方案。
 
 ## <a name="related-content"></a>相关内容
 

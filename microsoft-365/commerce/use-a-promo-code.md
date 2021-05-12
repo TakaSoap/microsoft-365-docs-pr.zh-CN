@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
-ms.reviewer: drjones
+ms.reviewer: drjones, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -17,16 +17,15 @@ ms.custom:
 - AdminSurgePortfolio
 - okr_SMB
 - commerce_purchase
-- PPM_jmueller
 search.appverid: MET150
-description: 了解如何将促销代码应用到你的 Microsoft 365 订阅来降低价格，以及如何解决促销代码出错的问题。
+description: 了解如何将促销代码应用到 Microsoft 365 订阅来降低价格，以及如何在出现错误时对促销代码进行故障排除。
 ms.date: 03/17/2021
-ms.openlocfilehash: 01cc7cd182f3e25867191c83b58016ef090c8934
-ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
+ms.openlocfilehash: 30484915246e1d8b1389f09d71d9d67865962a7e
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52280399"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52332914"
 ---
 # <a name="use-your-promo-code-to-reduce-price"></a>使用促销代码来降低价格
 
@@ -43,7 +42,7 @@ ms.locfileid: "52280399"
   
 ## <a name="promo-code-terms"></a>促销代码期限
 
-以下准则适用于商业版订阅Microsoft 365促销代码。
+以下指南适用于 Microsoft 365 商业版订阅的促销代码。
   
 - **每个订阅的促销代码数** 您可以对同一个订单中的多个订阅使用一个促销代码，但是不能对同一订阅使用多个促销代码。
 - **折扣期限** 一旦应用到您的订单，促销代码折扣将在您的订阅期限内有效。 如果订阅期限按月计，则促销代码折扣将持续到您输入的帐单月份末尾。如果订阅期限按年计（即使它是按月支付），则促销代码折扣将持续到您输入的帐单年份末尾。

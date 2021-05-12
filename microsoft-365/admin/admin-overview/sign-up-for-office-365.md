@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: seemg, pablom
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -19,42 +20,40 @@ ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
 - commerce_signup
-- PPM_pablom
-ms.reviewer: seemg
 search.appverid:
 - MET150
 ROBOTS: NOINDEX
-description: 了解你需要了解哪些信息，然后再完成注册Office 365。
+description: 了解在完成 Office 365 注册过程之前您需要了解哪些信息。
 ms.date: 03/17/2021
-ms.openlocfilehash: 77fe0252a267b13fda19a6842ce0e07b1b8307b1
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 12262a2165392b9dca699605f0b86fd7f3129ef0
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244004"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52332686"
 ---
 # <a name="how-to-sign-up---admin-help"></a>如何注册 - 管理员帮助
 
 ::: moniker range="o365-worldwide"
 
-注册 Microsoft 365 for business，以便团队可以开始使用最新版本的 Word、Excel、PowerPoint 和其他 Office 程序。
+注册 Microsoft 365 商业版，以便团队可以开始使用最新版本的 Word、Excel、PowerPoint 和其他 Office 程序。
   
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-注册 Microsoft 365 for business，以便团队可以开始使用最新版本的 Word、Excel、PowerPoint 和其他 Office 程序。
+注册 Microsoft 365 商业版，以便团队可以开始使用最新版本的 Word、Excel、PowerPoint 和其他 Office 程序。
   
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-由世纪互联运营的 Office 365 旨在满足中国用户对安全可靠的可扩展云服务的需求。 此服务由 Microsoft 授权给世纪互联使用的技术提供支持。 Microsoft 本身并不运营此服务。 世纪互联负责运营、提供和管理此服务的交付。 世纪互联是中国最大的运营商中立 Internet 数据中心服务提供商，提供托管、托管网络服务及云计算基础结构服务。 通过授权 Microsoft 技术，世纪银行运营本地 Microsoft 数据中心，让你能够使用 Microsoft 服务，同时将数据保留在中国。 世纪互联还提供订阅、计费服务和支持。
+由世纪互联运营的 Office 365 旨在满足中国用户对安全可靠的可扩展云服务的需求。 此服务由 Microsoft 授权给世纪互联使用的技术提供支持。 Microsoft 本身并不运营此服务。 世纪互联负责运营、提供和管理此服务的交付。 世纪互联是中国最大的运营商中立 Internet 数据中心服务提供商，提供托管、托管网络服务及云计算基础结构服务。 通过许可 Microsoft 技术，世纪银行运营本地 Microsoft 数据中心，让你能够在将数据保留在中国的同时使用 Microsoft 服务。 世纪互联还提供订阅、计费服务和支持。
   
 > [!NOTE]
 > 这些服务受到中国法律的制约。
   
-注册由世纪Office 365运营的 Office 365，以便你的团队可以开始使用最新版本的 Word、Excel、PowerPoint 和其他 Office 程序。
+注册由世纪互联网运营的 Office 365，以便团队可以开始使用最新版本的 Word、Excel、PowerPoint 和其他 Office 程序。
   
 准备好注册了吗？ [选择计划](https://products.office.com/zh-cn/business/compare-office-365-for-business-plans)。
   
@@ -65,7 +64,7 @@ ms.locfileid: "52244004"
 
 购买之前，请思考一下注册的计划。 这将有助于避免今后因增长而带来的不便。
 
-观看有关选择业务Microsoft 365的简短视频。<br><br>
+观看有关选择 Microsoft 365 商业版计划的简短视频。<br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/906be77d-ded6-48fb-a25f-da110f787282]
 
@@ -119,9 +118,9 @@ ms.locfileid: "52244004"
   - **电子邮件** 和 **电话号码** ，以便我们在需要时就您的订阅联系您。例如，如果您忘记了密码，我们将使用此信息向您发送一个临时密码。我们还会向您指定的电子邮件地址发送您的计帐信息。
 
     > [!NOTE]
-    > 您在此处输入的电子邮件地址不同于Microsoft 365电子邮件地址 (登录名下方) 。 因为我们也会向此地址发送您的帐单信息，因此建议您使用适用于接收业务电子邮件的电子邮件地址。
+    > 你在此处输入的电子邮件地址不同于你的 Microsoft 365 电子邮件地址 (登录名下方) 。 因为我们也会向此地址发送您的帐单信息，因此建议您使用适用于接收业务电子邮件的电子邮件地址。
   
-- **登录名 (用户 ID) ：** 此用户 ID 将成为你Microsoft 365，只是为了快速入门。
+- **登录名 (用户 ID) ：** 此用户 ID 将成为你的初始 Microsoft 365 电子邮件地址，只是为了让你快速入门。
 
     此用户 ID 是用于登录的电子邮件地址。 例如，如果您的企业名称是 Fourth Coffee，则您可能会选择使用 rob@fourthcoffee.onmicrosoft.com 作为用户 ID。
 
@@ -136,4 +135,4 @@ ms.locfileid: "52244004"
 
 ## <a name="related-content"></a>相关内容
 
-[Microsoft 365企业培训视频 (](../../business-video/index.yml)链接页) 
+[Microsoft 365 商业版培训视频 (](../../business-video/index.yml) 链接页) 

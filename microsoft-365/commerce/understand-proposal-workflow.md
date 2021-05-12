@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
-ms.reviewer: presharm
+ms.reviewer: presharm, jmueller
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -16,17 +16,16 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - commerce_purchase
-- PPM_jmueller
 search.appverid: MET150
 description: 了解帮助你购买 Microsoft 产品和服务的建议。
 ROBOTS: NOINDEX
 ms.date: 03/17/2021
-ms.openlocfilehash: a3c91168c90b91d83a9aa116c1ff57d103b3c48c
-ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
+ms.openlocfilehash: c61fa53267f2fdb60e78a05cd89aa6f364cb2395
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52280867"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52332950"
 ---
 # <a name="understand-the-proposal-workflow"></a>了解建议工作流
 
@@ -64,7 +63,7 @@ Microsoft 客户协议 (MCA) 允许组织购买 Microsoft 产品和服务。 有
 
 - 建议中是否指定人员\
     OR
-- 已是[Azure Active Directory全局](/azure/active-directory/users-groups-roles/directory-assign-admin-roles)管理员
+- 已是 [组织的 Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles) 全局管理员
 
 ## <a name="what-is-the-overall-workflow"></a>什么是总体工作流？
 
@@ -86,7 +85,7 @@ Microsoft 客户协议 (MCA) 允许组织购买 Microsoft 产品和服务。 有
 |------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 计费帐户 | 用于管理帐户设置、发票、付款方式和产品的帐户。 |
 | 计费配置文件 | 有关你的组织的信息，可让你自定义发票中包含哪些项目，以及如何支付发票费用。 计费配置文件包括计费帐户名称、用于特定计费配置文件的付款方式、联系人信息、发票设置以及允许更改计费配置文件、支付帐单以及购买产品和服务的权限。 |
-| 现有协议 | 组织已与 Microsoft 签订的任何协议。 其中可能包括（但不限于）企业协议 Microsoft 产品&服务协议或 Microsoft 客户协议。 |
+| 现有协议 | 组织已与 Microsoft 签订的任何协议。 这包括（但不限于）企业协议 Microsoft 产品&服务协议或 Microsoft 客户协议。 |
 | Microsoft 客户协议 (MCA)  | 概述组织与 Microsoft 之间的帐户的条款和条件的协议。 |
 | Microsoft 代表 | 为你和组织准备建议的授权 Microsoft 代表。 |
 | 组织 | 使用 Microsoft 产品、技术或服务的法律实体。 |
@@ -101,7 +100,7 @@ Microsoft 客户协议 (MCA) 允许组织购买 Microsoft 产品和服务。 有
 
 " **你的组织** "部分显示与之关联的计费帐户。 计费帐户信息从现有计费帐户提取，或由 Microsoft 代表创建。 如果您的组织是另一个组织的关联，则还会看到包含该组织的名称和地址的潜在客户组织部分。
 
-如果这是你的组织第一次与 Microsoft 建立商业关系，并且你尚未签署 MCA，如果贵组织或潜在客户组织下的信息不正确，请联系代表来进行更改。 接受 MCA 后，可以在管理中心的"计费帐户"页面上查看和更改Microsoft 365联系人信息。 [](https://go.microsoft.com/fwlink/p/?linkid=2084771) 如果组织名称发生更改，请打开服务请求以进行更新。 [了解如何打开服务请求](../business-video/get-help-support.md)
+如果这是你的组织第一次与 Microsoft 建立商业关系，并且你尚未签署 MCA，如果贵组织或潜在客户组织下的信息不正确，请联系代表来进行更改。 接受 MCA 后，可以在 Microsoft 365 管理中心的"计费帐户"页面上查看[](https://go.microsoft.com/fwlink/p/?linkid=2084771)和更改组织的地址和联系人信息。 如果组织名称发生更改，请打开服务请求以进行更新。 [了解如何打开服务请求](../business-video/get-help-support.md)
 
 ### <a name="your-information"></a>你的信息
 
@@ -171,7 +170,7 @@ Microsoft 客户协议 (MCA) 允许组织购买 Microsoft 产品和服务。 有
 
 如果你是一名新客户，并且已购买 Azure 产品作为建议的一部分，下一步是设置新的计费帐户。 若要了解如何，请参阅 [设置 Microsoft 客户协议的计费帐户](/azure/cost-management-billing/manage/mca-setup-account)。
 
-如果你是具有 企业协议 的现有 Azure 客户，并且你是第一次对 MCA 进行签名，下一步是了解协议之间的更改，以及如何使用新的计费帐户完成任务。 若要了解更多信息，请参阅[完成企业协议客户协议的计费帐户中的任务](/azure/cost-management-billing/manage/mca-enterprise-operations)。
+如果你是具有 企业协议 的现有 Azure 客户，并且你是第一次对 MCA 进行签名，下一步是了解协议之间的更改，以及如何使用新的计费帐户完成任务。 若要了解更多信息，请参阅 [完成企业协议](/azure/cost-management-billing/manage/mca-enterprise-operations)客户协议的计费帐户中的任务。
 
 ## <a name="understand-invoicing"></a>了解发票
 

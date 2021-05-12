@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 787d7a75-e201-46f3-a242-f698162ff09f
 description: 了解如何将一个或多个通讯组列表升级到 Microsoft 365 中的Outlook，以及如何使用 PowerShell 同时升级多个通讯组列表。
-ms.openlocfilehash: 72a98cdfda441dc71fcc5ae21f0042dafef3aefb
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 8179937cafa26a2258f67baee29fcec65bd60632
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52297076"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52332446"
 ---
 # <a name="upgrade-distribution-lists-to-microsoft-365-groups-in-outlook"></a>将通讯组列表Microsoft 365组Outlook
 
@@ -86,13 +86,13 @@ ms.locfileid: "52297076"
 若要升级单个 DL，请运行以下命令：
 
 ```PowerShell
-Upgrade-DistributionGroup -DlIdentities \<Dl SMTP address\>`
+Upgrade-DistributionGroup -DlIdentities \<Dl SMTP address\>
 ```
 
 例如，如果要升级 SMTP 地址为 dl1@contoso.com，请运行以下命令：
 
 ```PowerShell
-Upgrade-DistributionGroup -DlIdentities dl1@contoso.com`
+Upgrade-DistributionGroup -DlIdentities dl1@contoso.com
 ```
 
 > [!NOTE]

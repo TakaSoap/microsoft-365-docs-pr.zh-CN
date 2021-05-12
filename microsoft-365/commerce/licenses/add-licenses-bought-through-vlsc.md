@@ -19,12 +19,13 @@ ms.custom:
 search.appverid: MET150
 ROBOTS: NOINDEX
 description: 了解如何将许可证添加到通过 Microsoft 识别的第三方合作伙伴购买的 Microsoft 365 订阅。
-ms.openlocfilehash: f40ca8f208d95ed150ad0fcea982347405e3d801
-ms.sourcegitcommit: 68383240ef7a673d5f28e2ecfab9f105bf1d8c8f
+ms.date: 04/07/2021
+ms.openlocfilehash: 0e2a3779ae7d93eaaea660209bbc86a6843b553c
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "52327150"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52331750"
 ---
 # <a name="add-licenses-to-a-subscription-purchased-through-the-volume-licensing-service-center"></a>向通过批量许可服务中心购买的订阅添加许可证
 

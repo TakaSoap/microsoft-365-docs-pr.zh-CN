@@ -19,12 +19,12 @@ ms.custom:
 description: 管理员可以了解如何在 Exchange Online Protection (EOP) 中查看、创建、修改和删除出站垃圾邮件) 。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ceaf0d276aff4504dd34aa3229c28c9cb042742d
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 2448bb7942f7694d2a6d6e9b98537a2b7ccb14d1
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51203805"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52331666"
 ---
 # <a name="configure-outbound-spam-filtering-in-eop"></a>在 EOP 中配置出站垃圾邮件筛选
 
@@ -122,7 +122,7 @@ EOP 中的出站垃圾邮件策略的基本元素包括：
 
         您添加的收件人显示在飞出 **页面的** "收件人列表"部分。 若要删除收件人，请单击"删除 ![ "按钮 ](../../media/scc-remove-icon.png) 。
 
-     1. 完成后，单击“保存”。
+     1. 完成后，单击“**保存**”。
 
         若要禁用此设置，请清除此复选框。
 
@@ -509,12 +509,12 @@ Remove-HostedOutboundSpamFilterRule -Identity "Marketing Department"
 
 有关语法和参数的详细信息，请参阅 [Remove-HostedOutboundSpamFilterRule](/powershell/module/exchange/remove-hostedoutboundspamfilterrule)。
 
-## <a name="for-more-information"></a>更多信息
+## <a name="for-more-information"></a>详细信息
 
 [从“受限的用户”门户中删除被阻止的用户](removing-user-from-restricted-users-portal-after-spam.md)
 
 [出站邮件的高风险传递池](high-risk-delivery-pool-for-outbound-messages.md)
 
-[反垃圾邮件保护常见问题](anti-spam-protection-faq.md)
+[反垃圾邮件保护常见问题](anti-spam-protection-faq.yml)
 
 [自动转发的消息报告](mfi-auto-forwarded-messages-report.md)

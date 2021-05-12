@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -15,19 +16,16 @@ ms.collection:
 ms.custom:
 - customer-email
 - commerce_subscriptions
-- PPM_jmueller
-ms.reviewer: jkinma
-search.appverid:
-- MET150
+search.appverid: MET150
 ROBOTS: NOINDEX, NOFOLLOW
 description: 有关升级或更改使用 E4 订阅的客户计划Office 365重要信息。
 ms.date: 08/14/2020
-ms.openlocfilehash: 1491eaf2bb76e4ba50d78375dd7d9c8d16eac2da
-ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
+ms.openlocfilehash: 4cbaaf87205e9e4dc3df155342543d99e589acc5
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52107664"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52333322"
 ---
 # <a name="important-information-for-office-365-e4-customers"></a>适用于 E4 Office 365的重要信息
 

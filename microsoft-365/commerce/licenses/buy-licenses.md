@@ -19,14 +19,14 @@ ms.custom:
 - manage_licenses
 - commerce_licensing
 search.appverid: MET150
-description: 了解如何购买更多许可证或减少 Microsoft 365 商业版订阅的许可证数量。
+description: 了解如何购买更多许可证或减少企业版订阅Microsoft 365许可证数量。
 ms.date: 04/07/2021
-ms.openlocfilehash: 6603b49ed7af8b5213141d5c2434093c3af9540a
-ms.sourcegitcommit: 68383240ef7a673d5f28e2ecfab9f105bf1d8c8f
+ms.openlocfilehash: a327149a780d2059cfc69068fc4b2122e549773c
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "52327114"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52331678"
 ---
 # <a name="buy-or-remove-licenses"></a>购买或删除许可证
 
@@ -36,7 +36,7 @@ ms.locfileid: "52327114"
 
 - 你必须是全局管理员或帐单管理员才能执行本文中所述的任务。 有关详细信息，请参阅 [关于管理员角色](../../admin/add-users/about-admin-roles.md)。
 - 可以 [同时添加用户和分配许可证](../../admin/add-users/add-users.md)。
-- 如果你通过第三方合作伙伴购买了 Microsoft 365 商业版或 Office 365 企业版计划，则必须通过该合作伙伴购买其他许可证。
+- 如果你通过第三Microsoft 365购买了企业版或Office 365 企业版版计划，则必须通过该合作伙伴购买其他许可证。
 
 ## <a name="watch-buy-new-licenses"></a>观看：购买新许可证
 
@@ -84,7 +84,7 @@ ms.locfileid: "52327114"
 |---------|---------|---------|
 |正在等待信用检查。 |如果正在等待信用检查，在信用检查完成之前，你无法购买或删除许可证。  | 稍后再回来查看是否已完成信用检查。 信用检查通常需要两个工作日才能完成。<br/>完成信用检查后，你应该会看到"购买许可证" **和** " **删除许可证"** 按钮。 |
 |你使用产品密钥激活了订阅。| 如果订阅是使用 25 个字符的产品密钥购买并激活的，你将在"你的产品"页面的"购买频道"列中看到"预 **付费"** 一词。  |请参阅 [使用产品密钥向付费订阅添加许可证](add-licenses-using-product-key.md)。 |
-|你通过经销商购买了订阅。| 你将在"你的产品"页面的"购买 **渠道** "列中 **看到"经销商"** 一词。 | 如果订阅是通过云解决方案提供商云解决方案提供商 (云解决方案提供商) 合作伙伴购买的，请联系云解决方案提供商合作伙伴购买更多许可证。        |
+|你通过经销商购买了订阅。| 你将在"你的产品"页面的"购买 **渠道** "列中 **看到"经销商"** 一词。 | 如果订阅是通过云解决方案提供商云解决方案提供商 (云解决方案) 购买，请与云解决方案提供商合作伙伴联系，购买更多许可证。        |
 |你有试用版订阅。 | 若要查看试用版订阅，请选择筛选器按钮，**然后选择试用版。** | 首先购买试用版订阅，然后可以购买更多许可证。|
 
 ## <a name="when-will-the-new-licenses-be-available-to-assign"></a>何时可以分配新许可证？
@@ -108,4 +108,4 @@ ms.locfileid: "52327114"
 
 [向用户分配许可证](../../admin/manage/assign-licenses-to-users.md)
 [了解订阅和许可证](subscriptions-and-licenses.md)（文章）\
-[试用或购买 Microsoft 365 订阅 (](../try-or-buy-microsoft-365.md) 文章) 
+[尝试或购买Microsoft 365订阅 (](../try-or-buy-microsoft-365.md)文章) 

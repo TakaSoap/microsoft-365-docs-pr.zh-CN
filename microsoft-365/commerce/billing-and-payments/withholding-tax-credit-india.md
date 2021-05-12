@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: martinl, melmar
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -12,26 +13,23 @@ localization_priority: None
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-search.appverid:
-- MET150
+search.appverid: MET150
 description: 了解如何在你的帐户上申请已支付的预扣税的信用。 本文仅适用于印度客户。
 ms.custom:
 - AdminSurgePortfolio
 - commerce_billing
-- PPM_melmar
-ms.reviewer: martinl
 monikerRange: o365-worldwide
 ms.date: 05/03/2021
-ms.openlocfilehash: 3965127bb30777f26dc04a3861167955163cd827
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 4866bcd07cb4a54088d230166f9b04f8258d7185
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245981"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52331786"
 ---
 # <a name="request-a-credit-for-withholding-tax-on-your-account-india-customers"></a>向印度客户申请预扣税 (预扣) 
 
-印度客户会收到由 Microsoft Regional Sales Pte Ltd. (MRS) 计费的 Web Direct (Azure 和 Microsoft 365) 发票，然后向新加坡进行交叉付款以结算发票。 如果你在汇寄该付款时预扣了税款，本文将介绍使用 MRS 在帐户中申请预扣税 (WHT) 的信用的过程。
+印度客户会收到由 Microsoft Regional Sales Pte Ltd. (MRS) 计费的 Web Direct (Azure 和 Microsoft 365) 发票，然后向新加坡进行交叉付款以支付发票。 如果你在汇寄该付款时预扣了税款，本文将介绍使用 MRS 在帐户中申请预扣税 (WHT) 的信用的过程。
 
 ## <a name="for-invoice-pay-customers-who-pay-by-check-and-wire"></a>对于通过支票和支票付款的发票支付客户
 

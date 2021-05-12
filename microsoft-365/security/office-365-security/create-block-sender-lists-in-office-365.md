@@ -14,12 +14,12 @@ search.appverid:
 description: 管理员可以了解在 Exchange Online Protection 中阻止入站邮件的可用和首选选项 (EOP) 。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a9ee0a026e33bf07bb929607b8eed9078d0b6e4c
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: fa2a5e0c71f14838dc8446431f5ea02a535fb787
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51203682"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52331450"
 ---
 # <a name="create-blocked-sender-lists-in-eop"></a>在 EOP 中创建阻止的发件人列表
 
@@ -70,7 +70,7 @@ EOP 中的反垃圾邮件策略中阻止的发件人列表和阻止的域列表�
 
 ## <a name="use-blocked-sender-lists-or-blocked-domain-lists"></a>使用阻止的发件人列表或阻止的域列表
 
-当多个用户受到影响时，范围会更大，因此反垃圾邮件策略中的下一个最佳选项是阻止发件人列表或阻止的域列表。 来自列表上的发件人的邮件标记为 **"垃圾邮件**"，并且对邮件执行为"垃圾邮件"筛选器裁定配置的操作。  有关详细信息，请参阅[配置反垃圾邮件策略](configure-your-spam-filter-policies.md)。
+当多个用户受到影响时，范围会更大，因此反垃圾邮件策略中的下一个最佳选项是阻止发件人列表或阻止的域列表。 来自列表上发件人的邮件标记为 **"高** 可信度垃圾邮件"，并且对邮件执行为"高可信度垃圾邮件筛选器"裁定配置的操作。 有关详细信息，请参阅[配置反垃圾邮件策略](configure-your-spam-filter-policies.md)。
 
 这些列表的最大限制为大约 1000 个条目。
 

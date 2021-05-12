@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -16,18 +17,15 @@ ms.custom:
 - AdminSurgePortfolio
 - fwlink 2133922 to Delete subscription heading
 - commerce_subscription
-- PPM_jmueller
-ms.reviewer: jkinma
-search.appverid:
-- MET150
+search.appverid: MET150
 description: 了解如何关闭 Microsoft 帐户。
 ms.date: 04/02/2021
-ms.openlocfilehash: 86232e3f433526cc60ef369eda03ef8d20ab08c9
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 767a82088500bc24c0d4755a2dafd40742fc796c
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52293663"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52331762"
 ---
 # <a name="close-your-account"></a>关闭你的帐户
 
@@ -49,7 +47,7 @@ ms.locfileid: "52293663"
 
 您还可以使用 [Remove-MsolUser](/powershell/module/msonline/remove-msoluser) PowerShell cmdlet 批量删除用户。
 
-如果你的组织使用与 Azure AD Microsoft Azure Active Directory (同步的 Active Directory) ，请改为从 Active Directory 中删除用户帐户。 有关说明，请参阅批量[删除用户Azure Active Directory。](/azure/active-directory/users-groups-roles/users-bulk-delete)
+如果你的组织使用与 Microsoft Azure Active Directory 同步的 Active Directory (Azure AD) ，请改为从 Active Directory 中删除用户帐户。 有关说明，请参阅 [在 Azure Active Directory](/azure/active-directory/users-groups-roles/users-bulk-delete)中批量删除用户。
 
 ## <a name="step-2-cancel-all-active-subscriptions"></a>步骤 2：取消所有活动订阅
 
@@ -81,7 +79,7 @@ ms.locfileid: "52293663"
 您还可以使用 [PowerShell 为多个用户禁用多重身份验证](/azure/active-directory/authentication/howto-mfa-userstates#change-state-using-powershell)。
 
 
-## <a name="step-5-delete-the-directory-in-azure-active-directory"></a>步骤 5：删除Azure Active Directory
+## <a name="step-5-delete-the-directory-in-azure-active-directory"></a>步骤 5：删除 Azure Active Directory 中的目录
 
 1. 使用全局管理员帐户登录到 <a href="https://aad.portal.azure.com/" target="_blank">Azure AD</a> 管理中心。
 2. 选择 **Azure Active Directory**。
