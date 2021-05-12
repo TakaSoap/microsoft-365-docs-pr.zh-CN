@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: 使用合规中心中的内容搜索电子数据展示工具，搜索各种 Microsoft 365 服务中的内容。
-ms.openlocfilehash: a058c07d080962723e9f6bc7a150cbfb5074e7db
-ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
+ms.openlocfilehash: 5f48418882d5d4c7589b3ef394a0a306c0675f34
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "52311651"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52332842"
 ---
 # <a name="create-a-content-search"></a>创建内容搜索
 
@@ -88,7 +88,7 @@ ms.locfileid: "52311651"
 7. 查看搜索设置（并在必要时进行编辑），然后提交搜索以开始搜索。
   
 若要再次访问此内容搜索或者访问“**内容搜索**”页面上列出的其他内容搜索，请选择搜索，然后单击“**打开**”。
-  
+
 ## <a name="next-steps"></a>后续步骤
 
 以下是创建并运行内容搜索后要执行的后续步骤列表。
@@ -100,3 +100,7 @@ ms.locfileid: "52311651"
 - [导出搜索结果](export-search-results.md)
 
 - [导出搜索报告](export-a-content-search-report.md)
+
+## <a name="more-information"></a>详细信息
+
+有关内容搜索（例如搜索各种 Microsoft 365 服务中的内容）的详细信息，请参阅[内容搜索的功能引用](content-search-reference.md)。
