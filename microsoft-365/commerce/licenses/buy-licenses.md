@@ -5,27 +5,28 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: argani, nicholak
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
 - M365-subscription-management
+- Adm_o365
 ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
 - manage_licenses
-- commerce
-search.appverid:
-- MET150
+- commerce_licensing
+search.appverid: MET150
 description: 了解如何购买更多许可证或减少 Microsoft 365 商业版订阅的许可证数量。
-ms.date: ''
-ms.openlocfilehash: d4d0b73fb33d27f82a02b4ae0c6ecb009eb9d38d
-ms.sourcegitcommit: 0ff6edbf52562138a69c6675cb0274ec984986c3
+ms.date: 04/07/2021
+ms.openlocfilehash: 6603b49ed7af8b5213141d5c2434093c3af9540a
+ms.sourcegitcommit: 68383240ef7a673d5f28e2ecfab9f105bf1d8c8f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "51615131"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "52327114"
 ---
 # <a name="buy-or-remove-licenses"></a>购买或删除许可证
 
@@ -33,7 +34,7 @@ ms.locfileid: "51615131"
 
 ## <a name="before-you-begin"></a>准备工作
 
-- 你必须是全局管理员或帐单管理员才能执行本文中所述的任务。 有关详细信息，请参阅[关于管理员角色](../../admin/add-users/about-admin-roles.md)。
+- 你必须是全局管理员或帐单管理员才能执行本文中所述的任务。 有关详细信息，请参阅 [关于管理员角色](../../admin/add-users/about-admin-roles.md)。
 - 可以 [同时添加用户和分配许可证](../../admin/add-users/add-users.md)。
 - 如果你通过第三方合作伙伴购买了 Microsoft 365 商业版或 Office 365 企业版计划，则必须通过该合作伙伴购买其他许可证。
 

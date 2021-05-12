@@ -16,21 +16,22 @@ manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 461bc7c8d4d8d5c9bb8c905f3b160d0af226b077
-ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
+ms.openlocfilehash: 56ab6c6c11bd2c0786c0d797e5302a1f06f9bd53
+ms.sourcegitcommit: 68383240ef7a673d5f28e2ecfab9f105bf1d8c8f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52023221"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "52327254"
 ---
 # <a name="use-attack-surface-reduction-rules-to-prevent-malware-infection"></a>使用攻击面减少规则防止恶意软件感染
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **适用于：**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 ## <a name="why-attack-surface-reduction-rules-are-important"></a>攻击面减少规则为什么很重要
 
@@ -48,7 +49,7 @@ ms.locfileid: "52023221"
 
 ## <a name="assess-rule-impact-before-deployment"></a>在部署之前评估规则影响
 
-可以通过在威胁和漏洞管理中打开该规则的安全建议来评估攻击面减少规则可能会 [如何影响你的网络](https://docs.microsoft.com/windows/security/threat-protection/#tvm)。
+你可以评估攻击面减少规则可能会如何影响你的网络，在 危险和漏洞管理 中打开该[规则的安全建议](https://docs.microsoft.com/windows/security/threat-protection/#tvm)。
 
 :::image type="content" source="images/asrrecommendation.png" alt-text="攻击面减少规则的安全重新成本":::
 
@@ -66,14 +67,14 @@ ms.locfileid: "52023221"
 
 ### <a name="requirements-for-warn-mode-to-work"></a>警告模式运行的要求
 
-运行以下版本的 Windows 的设备支持警告模式：
+运行以下版本的警告的设备上支持警告Windows：
 
-- [Windows 10 版本 1809](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1809) 或更高版本
-- [Windows Server 版本 1809](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1809) 或更高版本
+- [Windows 10版本 1809](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1809)或更高版本
+- [Windows Server 版本 1809](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1809)或更高版本
 
-Microsoft Defender 防病毒必须在活动模式下使用实时 [保护运行](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility#functionality-and-features-available-in-each-state)。
+Microsoft Defender 防病毒必须在活动模式下使用实时[保护运行](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility#functionality-and-features-available-in-each-state)。
 
-此外，请确保安装了 [Microsoft Defender 防病毒和](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/manage-updates-baselines-microsoft-defender-antivirus#monthly-platform-and-engine-versions) 反恶意软件更新。
+此外，请确保[Microsoft Defender 防病毒反恶意软件更新](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/manage-updates-baselines-microsoft-defender-antivirus#monthly-platform-and-engine-versions)。
 
 - 最低平台发布要求： `4.18.2008.9`
 - 最低引擎发布要求： `1.1.17400.5`
@@ -82,13 +83,13 @@ Microsoft Defender 防病毒必须在活动模式下使用实时 [保护运行](
 
 ### <a name="cases-where-warn-mode-is-not-supported"></a>不支持警告模式的情况
 
-在 Microsoft Endpoint Manager 中配置三个攻击面减少规则时，警告模式不受支持。  (如果使用组策略配置攻击面减少规则，则支持警告模式。) 在 Microsoft Endpoint Manager 中配置警告模式时不支持警告模式的三个规则如下所示：
+当你在三个攻击面减少规则中配置警告模式时，它们不受Microsoft Endpoint Manager。  (如果使用组策略配置攻击面减少规则，则支持警告模式。) 在 Microsoft Endpoint Manager 中配置时不支持警告模式的三个规则如下所示：
 
 - [阻止 JavaScript 或 VBScript 使用](#block-javascript-or-vbscript-from-launching-downloaded-executable-content) GUID (下载的可执行 `d3e037e1-3eb8-44c8-a917-57927947596d`) 
 - [通过 WMI 事件订阅和 GUID](#block-persistence-through-wmi-event-subscription) (阻止 `e6db77e5-3df2-4cf1-b95a-636979351e5b` 持久性) 
 - [使用高级防护抵御勒索软件](#use-advanced-protection-against-ransomware) (GUID `c1db55ab-c21a-4637-bb3f-a12568109d35`) 
 
-此外，运行较早版本的 Windows 的设备上不支持警告模式。 在这种情况下，配置为在警告模式下运行的攻击面减少规则将在阻止模式下运行。
+此外，运行早期版本的 Windows 的设备上不支持警告Windows。 在这种情况下，配置为在警告模式下运行的攻击面减少规则将在阻止模式下运行。
 
 ## <a name="notifications-and-alerts"></a>通知和警报
 
@@ -96,7 +97,7 @@ Microsoft Defender 防病毒必须在活动模式下使用实时 [保护运行](
 
 此外，当触发某些攻击面减少规则时，将生成警报。
 
-可在 Microsoft Defender 安全中心 () 和 Microsoft 365 安全中心 () 中查看生成的通知 [https://securitycenter.windows.com](https://securitycenter.windows.com) [https://security.microsoft.com](https://security.microsoft.com) 和任何警报。
+通知和生成的任何警报都可以在 Microsoft Defender 安全中心 () 中Microsoft 365 [https://securitycenter.windows.com](https://securitycenter.windows.com) 安全 [https://security.microsoft.com](https://security.microsoft.com) () 。
 
 ## <a name="advanced-hunting-and-attack-surface-reduction-events"></a>高级搜寻和攻击面减少事件
 
@@ -106,18 +107,18 @@ Microsoft Defender 防病毒必须在活动模式下使用实时 [保护运行](
 
 有关高级搜寻详细信息，请参阅使用高级搜寻主动 [搜寻威胁](advanced-hunting-overview.md)。
 
-## <a name="attack-surface-reduction-features-across-windows-versions"></a>跨 Windows 版本的攻击面减少功能
+## <a name="attack-surface-reduction-features-across-windows-versions"></a>跨多个版本的攻击Windows功能
 
-你可以为运行以下任一版本的 Windows 的设备设置攻击面减少规则：
+你可以为运行以下任一版本和版本的设备设置攻击面减少规则Windows：
 
-- Windows 10 专业 [版版本 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) 或更高版本
-- Windows 10 企业版 [版本 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) 或更高版本
-- Windows Server [版本 1803 (半年 ](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1803) 频道) 或更高版本
+- Windows 10 专业版版本[1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709)或更高版本
+- Windows 10 企业版版本[1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709)或更高版本
+- Windows服务器版本[1803 (半年频道) ](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1803)或更高版本
 - [Windows Server 2019](https://docs.microsoft.com/windows-server/get-started-19/whats-new-19)
 
-尽管攻击面减少规则不需要 [Windows E5](https://docs.microsoft.com/windows/deployment/deploy-enterprise-licenses)许可证，但如果拥有 Windows E5，则获得高级管理功能。 这些功能仅在 Windows E5 中可用，包括 [Defender for Endpoint](microsoft-defender-endpoint.md)中提供的监视、分析和工作流，以及 Microsoft [365](https://docs.microsoft.com/microsoft-365/security/defender/overview-security-center)安全中心中的报告和配置功能。 这些高级功能不适用于 Windows Professional 或 Windows E3 许可证;但是，如果你有这些许可证，可以使用事件查看器和 Microsoft Defender 防病毒日志查看攻击面减少规则事件。
+尽管攻击面减少规则不需要使用 Windows [E5](https://docs.microsoft.com/windows/deployment/deploy-enterprise-licenses)许可证，但如果已使用 Windows E5，则获得高级管理功能。 这些功能仅在 Windows E5 中可用，包括 Defender [for Endpoint](microsoft-defender-endpoint.md)中提供的监视、分析和工作流，以及 Microsoft 365[安全中心 中的报告和配置功能](https://docs.microsoft.com/microsoft-365/security/defender/overview-security-center)。 这些高级功能不适用于 Windows Professional 或 Windows E3 许可证;但是，如果你有这些许可证，可以使用事件查看器和Microsoft Defender 防病毒日志查看攻击面减少规则事件。
 
-## <a name="review-attack-surface-reduction-events-in-the-microsoft-defender-security-center"></a>查看 Microsoft Defender 安全中心的攻击面减少事件
+## <a name="review-attack-surface-reduction-events-in-the-microsoft-defender-security-center"></a>查看攻击中攻击面减少Microsoft Defender 安全中心
 
 Defender for Endpoint 提供事件和阻止的详细报告，作为警报调查方案的一部分。
 
@@ -130,12 +131,12 @@ DeviceEvents
 | where ActionType startswith 'Asr'
 ```
 
-## <a name="review-attack-surface-reduction-events-in-windows-event-viewer"></a>在 Windows 事件查看器中查看攻击面减少事件
+## <a name="review-attack-surface-reduction-events-in-windows-event-viewer"></a>查看事件查看器中的攻击Windows减少事件
 
-你可以查看 Windows 事件日志以查看攻击面减少规则生成的事件：
+你可以查看攻击Windows日志以查看攻击面减少规则生成的事件：
 
 1. 下载 [评估包](https://aka.ms/mp7z2w) ，将文件 *cfa-events.xml* 到设备上易于访问的位置。
-2. 在"开始"菜单中 *输入单词"事件* 查看器"以打开 Windows 事件查看器。
+2. 在"开始"菜单中 *输入单词"事件* 查看器"，以Windows事件查看器"。
 3. 在 **"操作"** 下，**选择"导入自定义视图..."。**
 4. 选择从 *cfa-events.xml* 文件的位置创建的文件。 或者，[直接复制 XML。](event-views.md)
 5. 选择“**确定**”。
@@ -159,6 +160,7 @@ DeviceEvents
 
 |规则名称|GUID|文件&文件夹排除项|支持的最低操作系统|
 |---|:---:|---|---|
+|[阻止滥用被攻击的易受攻击的已签名驱动程序](#block-abuse-of-exploited-vulnerable-signed-drivers)|`56a863a9-875e-4185-98a7-b882c64b5ce5`|支持|[Windows 10 版本 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709)|
 |[阻止 Adobe Reader 创建子进程](#block-adobe-reader-from-creating-child-processes)|`7674ba52-37eb-4a4f-a9a1-f0f9a1619a2c`|支持|[Windows 10 版本 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3，内部版本 16299) 或更高|
 |[阻止所有 Office 应用程序创建子进程](#block-all-office-applications-from-creating-child-processes)|`D4F940AB-401B-4EFC-AADC-AD5F3C50688A`|支持|[Windows 10 版本 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3，内部版本 16299) 或更高|
 |[阻止从 Windows 本地安全机构子系统中窃取 (lsass.exe) ](#block-credential-stealing-from-the-windows-local-security-authority-subsystem)|`9e6c4e1f-7d60-472f-ba1a-a39ef669e4b2`|支持|[Windows 10 版本 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3，内部版本 16299) 或更高|
@@ -175,6 +177,33 @@ DeviceEvents
 |[阻止从 Office 宏调用 Win32 API](#block-win32-api-calls-from-office-macros)|`92E97FA1-2EDF-4476-BDD6-9DD0B4DDDC7B`|支持|[Windows 10 版本 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3，内部版本 16299) 或更高|
 |[使用高级防护抵御勒索软件](#use-advanced-protection-against-ransomware)|`c1db55ab-c21a-4637-bb3f-a12568109d35`|支持|[Windows 10 版本 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3，内部版本 16299) 或更高|
 |
+
+### <a name="block-abuse-of-exploited-vulnerable-signed-drivers"></a>阻止滥用被攻击的易受攻击的已签名驱动程序
+
+此规则阻止应用程序将易受攻击的已签名驱动程序写入磁盘。 具有获取内核访问权限的足够权限的本地应用程序可能会利用通配符、易受攻击的已签名 \-  \- 驱动程序。 易受攻击的已签名驱动程序使攻击者能够禁用或规避安全解决方案，最终导致系统泄露。
+
+此规则不会阻止加载系统中已存在的驱动程序。
+
+此规则在支持 ASR 的所有版本中均受支持;即：
+
+- [Windows 10 专业版版本 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) 或更高版本
+- [Windows 10 企业版版本 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) 或更高版本
+- [Windows Server 版本 1803 (半年频道) ](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1803) 或更高版本
+- [Windows Server 2019](https://docs.microsoft.com/windows-server/get-started-19/whats-new-19)
+
+Intune 名称： `Block abuse of exploited vulnerable signed drivers`
+
+GUID：  `56a863a9-875e-4185-98a7-b882c64b5ce5`
+
+有关 [MEM 自定义规则过程信息，](enable-attack-surface-reduction.md#microsoft-endpoint-manager-custom-procedure) 请参阅 Microsoft Endpoint Manager 自定义过程。
+
+可以在命令行中运行此命令以启用 ASR 规则：
+
+```powershell
+"& {&'Add-MpPreference' -AttackSurfaceReductionRules_Ids 56a863a9-875e-4185-98a7-b882c64b5ce5 -AttackSurfaceReductionRules_Actions Enabled"}
+```
+
+您可以使用此网站提交 [驱动程序进行分析](https://www.microsoft.com/en-us/wdsi/driversubmission)。
 
 ### <a name="block-adobe-reader-from-creating-child-processes"></a>阻止 Adobe Reader 创建子进程
 
@@ -239,8 +268,8 @@ GUID：`9e6c4e1f-7d60-472f-ba1a-a39ef669e4b2`
 
 此规则阻止以下文件类型从 Microsoft Outlook 应用程序内打开的电子邮件启动，Outlook.com 其他热门 Web 邮件提供程序启动：
 
-- 可执行文件 (.exe、.dll 或 .scr) 
-- 脚本文件 (如 PowerShell .ps、Visual Basic .vbs 或 JavaScript .js) 
+- 可执行文件 (，如 .exe、.dll 或 .scr) 
+- 脚本文件 (如 PowerShell .ps、Visual Basic .vbs 或 JavaScript .js文件) 
 
 此规则是在：
 
@@ -266,7 +295,7 @@ GUID：`BE9BA2D9-53EA-4CDC-84E5-9B1EEEE46550`
 
 此规则阻止启动以下文件类型，除非它们符合普遍或年龄条件，或者它们位于受信任的列表或排除列表中：
 
-- 可执行文件 (.exe、.dll 或 .scr) 
+- 可执行文件 (，如 .exe、.dll 或 .scr) 
 
 启动不受信任的或未知的可执行文件可能会存在风险，因为最初可能不明确这些文件是否恶意。
 
@@ -432,7 +461,7 @@ GUID：`d1e49aac-8f56-4280-b9ba-993a6d77406c`
 
 ### <a name="block-untrusted-and-unsigned-processes-that-run-from-usb"></a>阻止从 USB 运行的不受信任的和未签名的进程
 
-通过此规则，管理员可以阻止未签名或不受信任的可执行文件从 USB 可移动驱动器（包括 SD 卡）运行。 阻止的文件类型包括可执行 (文件，如 .exe、.dll 或 .scr) 
+通过此规则，管理员可以阻止未签名或不受信任的可执行文件从 USB 可移动驱动器（包括 SD 卡）运行。 阻止的文件类型包括可执行 (文件，.exe、.dll或 .scr) 
 
 此规则是在：
 

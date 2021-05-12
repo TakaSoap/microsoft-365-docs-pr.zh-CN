@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 71db42f4bd651f4e9d4236e1f4d794aeb99dfa9f
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: 48e45385fb138c19b76dc2d672566cf2ad0fb3cc
+ms.sourcegitcommit: 68383240ef7a673d5f28e2ecfab9f105bf1d8c8f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51862147"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "52327292"
 ---
 # <a name="supported-managed-security-service-providers"></a>受支持的安全服务提供商
 
@@ -36,6 +36,7 @@ ms.locfileid: "51862147"
 
 徽标 |合作伙伴名称   | 说明 
 :---|:---|:---
+![Aujas 徽标的图像](images/aujas-logo.png) | [Aujas 托管 MDE 服务](https://go.microsoft.com/fwlink/?linkid=2162429) | Aujas 网络安全在整个企业范围中提供 24*7 托管安全服务，并通过其网络防御中心将 Microsoft Defender 用于终结点。
 ![BDO 数字徽标的图像](images/bdo-logo.png)| [BDO Digital](https://go.microsoft.com/fwlink/?linkid=2090394) | BDO Digital's Managed Defense 利用最佳实践工具、AI 和内部安全专家进行 24/7/365 身份保护
 ![BlueVoyant 徽标的图像](images/bluevoyant-logo.png)| [BlueVoyant](https://go.microsoft.com/fwlink/?linkid=2121401) | 适用于 Microsoft Defender for Endpoint 的 MDR 在终结点上监视、调查和缓解高级攻击方面提供支持
 ![云安全中心徽标图像](images/cloudsecuritycenter-logo.png)| [云安全中心](https://go.microsoft.com/fwlink/?linkid=2099315) | InSpark 的云安全中心是一项 24x7 托管服务，可提供保护、检测&响应功能
@@ -44,6 +45,7 @@ ms.locfileid: "51862147"
 ![Dell 技术高级威胁防护徽标的图像](images/dell-logo.png)| [Dell 技术高级威胁防护](https://go.microsoft.com/fwlink/?linkid=2091004) | 针对恶意行为和异常的专业监视服务（24/7 功能）
 ![终结点威胁DXC-Managed和响应徽标的图像](images/dxc-logo.png)| [DXC 托管的终结点威胁检测和响应](https://go.microsoft.com/fwlink/?linkid=2090395) | 识别规避传统安全防护的终结点威胁，并包含小时数或分钟数（而不是数天）
 ![eSentire 日志的图像](images/esentire-logo.png) | [eSentire 托管检测和响应](https://go.microsoft.com/fwlink/?linkid=2154970) | 通过 Microsoft Defender for Endpoint 进行 24x7 威胁调查和响应。
+![徽标图像](images/expel-logo.png)| [Microsoft Defender 终结点的托管检测和响应](https://go.microsoft.com/fwlink/?linkid=2162430) | 通过检测 Microsoft Defender 终结点中的安全风险，Microsoft 可帮助你保持安全。
 ![NTT 安全徽标的图像](images/ntt-logo.png)| [NTT 安全性](https://go.microsoft.com/fwlink/?linkid=2095320) | NTT 的 EDR 服务跨终结点和网络提供 24/7 &安全监视和响应
 ![OneVinn 徽标的图像](images/onevinn-logo.png) | [Onevinn MDR](https://go.microsoft.com/fwlink/?linkid=2155203)| 基于 Microsoft Defender 和 Azure Sentinel 构建的 24/7 托管检测和响应，使用 Onevinn 的威胁智能进行丰富。
 ![仲裁网络徽标的图像](images/quorum-logo.png) | [仲裁网络](https://go.microsoft.com/fwlink/?linkid=2155202)| 一项边缘威胁搜寻&安全工程服务。

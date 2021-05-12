@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -12,20 +13,18 @@ localization_priority: Priority
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
-- commerce
-search.appverid:
-- MET150
-ms.assetid: 4436582f-211a-45ec-b72e-33647f97d8a3
+- commerce_subscriptions
+search.appverid: MET150
 description: 了解 Microsoft 365 for Business 订阅到期、禁用或取消后对我的数据的影响。
-ms.openlocfilehash: 45f331fd14abb2f851c8ff84e729b8443a60b59b
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.date: 04/08/2021
+ms.openlocfilehash: f226514078a9f6d6bc1f4761269e2740300ef88d
+ms.sourcegitcommit: 68383240ef7a673d5f28e2ecfab9f105bf1d8c8f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52297268"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "52326794"
 ---
 # <a name="what-happens-to-my-data-and-access-when-my-microsoft-365-for-business-subscription-ends"></a>Microsoft 365 for Business 订阅结束后对我的数据和访问有何影响？
 
@@ -78,23 +77,14 @@ ms.locfileid: "52297268"
 订阅的到期日期真正到来之前，你有一些选择：
   
 - **为订阅启用定期计费**。
-
   - 如果已打开 **定期计费**，则无需执行任何操作。 系统自动对你的订阅计费，并且根据你当前的缴费频率，向你额外收取一年或一个月的费用。 如果由于某种原因关闭了 **定期计费**，可随时 [重新开启定期计费](renew-your-subscription.md)。
-
   - 如果通过预付卡购买了 Microsoft 365 商业应用版，则可以为你的订阅[打开定期计费](renew-your-subscription.md)。
-
   - 如果你是使用预付费一年订阅的“开放式批量许可”客户，请与合作伙伴联系以购买新的产品密钥。 你将通过电子邮件收到在[批量许可服务中心](https://go.microsoft.com/fwlink/p/?LinkID=282016)中激活密钥的说明。 若要了解如何查找新合作伙伴或过去合作过的合作伙伴，请参阅[查找合作伙伴或经销商](../../admin/manage/find-your-partner-or-reseller.md)。
-
   - 如果具有 Microsoft 365 商业应用版，请参阅 [管理订阅的定期计费](renew-your-subscription.md)。
-
 - **让订阅过期。**
-
   - 如果使用信用卡或发票支付，而又不想继续订阅，请将 [“定时计费”关闭](renew-your-subscription.md)。 你的订阅在到期日结束，可以忽略所有相关的电子邮件通知。
-
   - 如果是与合作伙伴合作的开放批量授权客户，则无需采取任何行动，让订阅到期。
-
   - 如果你是 Microsoft 365 商业标准版客户，并且你的订阅是预付费且通过产品密钥激活，则无需采取操作即可让订阅过期。
-
 - **在订阅到期前取消。** 有关详细信息，请参阅 [取消订阅](cancel-your-subscription.md)。
 
 ## <a name="what-happens-after-my-subscription-expires"></a>我的订阅到期之后会发生什么情况？
@@ -105,7 +95,7 @@ ms.locfileid: "52297268"
   
 ### <a name="state-expired"></a>状态：已过期
 
- **预期结果：** 大多数订阅的已过期阶段持续 30 天，其中包括在大多数国家和地区通过 [Microsoft Open](https://go.microsoft.com/fwlink/p/?LinkID=613298) 购买的订阅。 对于批量许可产品（Microsoft Open 除外），已过期阶段将持续 90 天。
+**预期结果：** 大多数订阅的已过期阶段持续 30 天，其中包括在大多数国家和地区通过 [Microsoft Open](https://go.microsoft.com/fwlink/p/?LinkID=613298) 购买的订阅。 对于批量许可产品（Microsoft Open 除外），已过期阶段将持续 90 天。
 
 在这种状态下，用户可以正常访问 Microsoft 365 门户、Office 应用程序以及电子邮件和 SharePoint Online 等服务。
   
@@ -113,7 +103,7 @@ ms.locfileid: "52297268"
   
 ### <a name="state-disabled"></a>状态：已禁用
 
- **预期结果：** 如果未重新激活处于已过期阶段的订阅，则订阅将进入已停用阶段，这一阶段在大多数国家和地区的大多数订阅中将持续 90 天。 对于批量许可产品，禁用期将持续 30 天。
+**预期结果：** 如果未重新激活处于已过期阶段的订阅，则订阅将进入已停用阶段，这一阶段在大多数国家和地区的大多数订阅中将持续 90 天。 对于批量许可产品，禁用期将持续 30 天。
 
 在此状态下，访问量会大大降低。 用户无法登录，也无法访问电子邮件或 SharePoint Online 等服务。 Office 应用程序最终会进入只读的缩减功能模式，并显示 [未授权产品通知](https://support.microsoft.com/office/0d23d3c0-c19c-4b2f-9845-5344fedc4380.aspx)。 你仍然可以登录并进入管理中心，但不能为用户分配许可证。 你的客户数据 (包括团队网站上的所有用户数据、电子邮件和文件) 都仅向你和其他管理员开放。
 
@@ -121,13 +111,14 @@ ms.locfileid: "52297268"
 
 ### <a name="state-deleted"></a>状态：已删除
   
- **预期结果：** 如果未重新激活处于已过期或已停用的订阅，则将删除订阅。
+**预期结果：** 如果未重新激活处于已过期或已停用的订阅，则将删除订阅。
   
 管理员和用户无法访问订阅时所附带的服务或 Office 应用程序。 将永久删除所有客户数据 (从用户数据到文档和电子邮件)，且无法恢复。
   
 此时不能重新激活订阅。但是，作为全局管理员或帐单管理员，你仍然可以访问管理中心来管理其他订阅，或购买新订阅以满足你的业务需求。
   
 > [!NOTE]
+>
 > - 添加已删除的相同类型新订阅，不会恢复与已删除订阅相关联的数据。
 > - 如果已停用 CSP 许可，则不享有 30 天的已过期阶段，而是立即停用服务。 如果租户没有通过添加新的许可证来重新激活，则数据将在 90 天后删除。
 
@@ -136,12 +127,11 @@ ms.locfileid: "52297268"
 试用结束后，不能继续免费使用 Microsoft 365。您有几个选项：
 
 - **购买 Microsoft 365。** 试用版到期时，将进入已过期阶段，并提供 30 天（针对大多数国家和地区中的大多数订阅）时间以考虑产品购买 Microsoft 365。 若要了解如何将试用版转换为付费订阅，请参阅 [从免费试用版购买订阅](../try-or-buy-microsoft-365.md#buy-a-subscription-from-your-free-trial)。
-
 - **延长试用期。** 需要更多时间来评估 Microsoft 365？ 在某些情况下，可以 [延长试用期](../extend-your-trial.md)。
-
 - **取消试用或让它过期。** 如果决定不购买 Microsoft 365，可让试用版到期，或 [取消它](cancel-your-subscription.md)。 备份要保留的所有数据。 30 天已过期阶段之后，将会永久删除试用账户信息和数据。
 
 > [!NOTE]
+>
 > 本页上的信息受 [Microsoft 政策免责声明和变更通知](https://go.microsoft.com/fwlink/p/?LinkId=613651) 的约束。 定期返回本网站查看有无任何变化。
 
 ## <a name="related-content"></a>相关内容

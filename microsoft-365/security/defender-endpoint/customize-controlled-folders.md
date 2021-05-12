@@ -1,5 +1,5 @@
 ---
-title: 自定义受控文件夹访问权限
+title: 自定义受控文件夹访问
 description: 添加应受受控文件夹访问权限保护的其他文件夹，或允许错误阻止对重要文件更改的应用。
 keywords: 受控文件夹访问权限， windows 10， windows defender， 勒索软件， 保护， 文件， 文件夹， 自定义， 添加文件夹， 添加应用， 允许， 添加可执行文件
 search.product: eADQiWindows 10XVcnh
@@ -12,28 +12,26 @@ author: denisebmsft
 ms.author: deniseb
 ms.reviewer: jcedola, dbodorin, vladiso, nixanm, anvascon
 manager: dansimp
-ms.date: 03/24/2021
+ms.date: 05/10/2021
 ms.technology: mde
 ms.topic: how-to
-ms.openlocfilehash: 0962913df63e6837664cdb8ff79710d66e66977c
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: e12368b6241a2c79eead66ed77b30b7864af3955
+ms.sourcegitcommit: 68383240ef7a673d5f28e2ecfab9f105bf1d8c8f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51199897"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "52326520"
 ---
-# <a name="customize-controlled-folder-access"></a>自定义受控文件夹访问权限
+# <a name="customize-controlled-folder-access"></a>自定义受控文件夹访问
 
 **适用于：**
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->想要体验适用于终结点的 Defender？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
+> [!TIP]
+> 想要体验适用于终结点的 Defender？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
-
-受控文件夹访问权限可帮助你保护重要数据免受恶意应用和威胁（如勒索软件）的侵害。 受控文件夹访问权限在 Windows Server 2019 和 Windows 10 客户端上受支持。
-
-本文介绍如何自定义受控文件夹访问权限，并包括以下部分：
+受控文件夹访问权限可帮助你保护重要数据免受恶意应用和威胁（如勒索软件）的侵害。 受控文件夹访问权限在 Windows Server 2019 和 Windows 10 客户端上受支持。 本文介绍如何自定义受控文件夹访问权限，并包括以下部分：
 
 - [保护其他文件夹](#protect-additional-folders)
 - [添加应允许访问受保护文件夹的应用](#allow-specific-apps-to-make-changes-to-controlled-folders)
@@ -49,13 +47,13 @@ ms.locfileid: "51199897"
 
 当你不将文件存储在默认 Windows 库中，或者你已更改库的默认位置时，向受控文件夹访问权限添加其他文件夹可能会很有帮助。
 
-还可以指定网络共享和映射驱动器。 支持环境变量和通配符。 有关使用通配符的信息，请参阅在文件名和文件夹路径或扩展名排除列表中 [使用通配符](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-extension-file-exclusions-microsoft-defender-antivirus#use-wildcards-in-the-file-name-and-folder-path-or-extension-exclusion-lists)。
+还可以指定网络共享和映射驱动器。 支持环境变量和通配符。 有关使用通配符的信息，请参阅在文件名和文件夹路径或扩展名排除列表中 [使用通配符](configure-extension-file-exclusions-microsoft-defender-antivirus.md)。
 
-可以使用 Windows 安全应用、组策略、PowerShell cmdlet 或移动设备管理配置服务提供程序添加和删除其他受保护的文件夹。
+可以使用 Windows 安全应用、组策略、PowerShell cmdlet 或移动设备管理配置服务提供程序添加和删除受保护的文件夹。
 
 ### <a name="use-the-windows-security-app-to-protect-additional-folders"></a>使用 Windows 安全应用保护其他文件夹
 
-1. 通过选择任务栏中的防护图标或搜索"安全"的"开始"菜单打开 Windows 安全 **应用**。
+1. 通过在任务栏中选择防护图标或在"开始"菜单中搜索安全性来打开 Windows 安全应用。 
 
 2. 选择 **病毒&威胁防护**，然后向下滚动到 **勒索软件保护** 部分。
 
@@ -65,37 +63,41 @@ ms.locfileid: "51199897"
 
 5. 在 **"用户访问****控制"提示符上选择"是**"。 将显示 **"受保护的文件夹** "窗格。
 
-4. 选择 **"添加受保护的文件夹"，** 然后按照提示添加文件夹。
+6. 选择 **"添加受保护的文件夹"，** 然后按照提示添加文件夹。
 
 ### <a name="use-group-policy-to-protect-additional-folders"></a>使用组策略保护其他文件夹
 
-1. 在组策略管理计算机上，打开组 [策略](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)?preserve=true)管理控制台，右键单击要配置的组策略对象， **然后选择编辑**。
+1. 在组策略管理计算机上，打开 [策略管理控制台](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)?preserve=true)。 
 
-2. 在组 **策略管理编辑器中**，转到计算机 **配置，** 然后选择 **管理模板**。
+2. 右键单击要配置的组策略对象， **然后选择编辑**。
 
-3. 将树展开到 **Windows 组件** Microsoft Defender  >  **防病毒**  >  **Windows Defender攻击防护**  >  **受控文件夹访问权限**。
+3. 在组 **策略管理编辑器中**，转到计算机 **配置**  >  **策略**  >  **管理模板**。
 
-4. 双击"**已配置的受保护文件夹"，** 将选项设置为"**已启用"。** 选择 **"显示** "并输入每个文件夹。
+4. 将树展开到 **Windows 组件** Microsoft Defender  >  **防病毒**  >  **Windows Defender攻击防护**  >  **受控文件夹访问权限**。 <br/>**注意**：在较旧版本的 Windows 上，你可能会看到 **Windows Defender防病毒** ，而不是 Microsoft **Defender 防病毒**。
+
+5. 双击"**已配置的受保护文件夹"，** 然后将该选项设置为"**已启用"。** 选择 **"** 显示"，并指定要保护的每个文件夹。
+
+6. 像通常一样部署组策略对象。
 
 ### <a name="use-powershell-to-protect-additional-folders"></a>使用 PowerShell 保护其他文件夹
 
 1. 在 **"开始"菜单中键入 PowerShell，** 右 **键单击** "Windows PowerShell并选择"以 **管理员角色运行"**
 
-2. 输入以下 cmdlet：
+2. 键入以下 PowerShell cmdlet，将 替换为文件夹的路径 `<the folder to be protected>` (例如 `"c:\apps\"`) ：
 
     ```PowerShell
     Add-MpPreference -ControlledFolderAccessProtectedFolders "<the folder to be protected>"
     ```
-3. 重复步骤 2，直到添加了要保护的所有文件夹。 添加的文件夹在 Windows 安全应用中可见。
+3. 对要保护的每个文件夹重复步骤 2。 受保护的文件夹在 Windows 安全应用中可见。
 
-   ![输入上述 cmdlet 的 PowerShell 窗口屏幕截图](/microsoft-365/security/defender-endpoint/images/cfa-allow-folder-ps)
+   :::image type="content" source="images/cfa-allow-folder-ps.png" alt-text="显示 cmdlet 的 PowerShell 窗口":::
 
 > [!IMPORTANT]
-> 用于 `Add-MpPreference` 向列表中追加或添加应用。 使用 `Set-MpPreference` cmdlet 将覆盖现有列表。
+> 用于 `Add-MpPreference` 向列表追加或添加应用，而不是 `Set-MpPreference` 。 使用 `Set-MpPreference` cmdlet 将覆盖现有列表。
 
 ### <a name="use-mdm-csps-to-protect-additional-folders"></a>使用 MDM CSP 保护其他文件夹
 
-使用 [./Vendor/MSFT/Policy/Config/Defender/GuardedFoldersList](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-guardedfolderslist) 配置服务提供程序 (CSP) 允许应用对受保护的文件夹进行更改。
+使用 [./Vendor/MSFT/Policy/Config/Defender/GuardedFoldersList](/windows/client-management/mdm/policy-csp-defender#defender-guardedfolderslist) 配置服务提供程序 (CSP) 允许应用对受保护的文件夹进行更改。
 
 ## <a name="allow-specific-apps-to-make-changes-to-controlled-folders"></a>允许特定应用对受控文件夹进行更改
 
@@ -122,9 +124,9 @@ ms.locfileid: "51199897"
 
 ### <a name="use-group-policy-to-allow-specific-apps"></a>使用组策略允许特定应用
 
-1. 在组策略管理设备上，打开组 [策略管理控制台](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)?preserve=true)，右键单击要配置的组策略对象， **然后选择编辑**。
+1. 在组策略管理设备上，打开组 [策略管理控制台](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)?preserve=true)，右键单击要配置的组策略对象， **然后选择编辑**。
 
-2. 在组 **策略管理编辑器中**，转到计算机 **配置，** 然后选择 **管理模板**。
+2. 在 **策略管理编辑器** 中， **计算机配置** 并选择 **管理模板**。
 
 3. 将树展开到 **Windows 组件** Microsoft Defender  >  **防病毒**  >  **Windows Defender攻击防护**  >  **受控文件夹访问权限**。
 
@@ -154,21 +156,21 @@ ms.locfileid: "51199897"
 
 ### <a name="use-mdm-csps-to-allow-specific-apps"></a>使用 MDM CSP 允许特定应用
 
-使用 [./Vendor/MSFT/Policy/Config/Defender/GuardedFoldersAllowedApplications](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-guardedfoldersallowedapplications) 配置服务提供程序 (CSP) 以允许应用对受保护的文件夹进行更改。
+使用 [./Vendor/MSFT/Policy/Config/Defender/GuardedFoldersAllowedApplications](/windows/client-management/mdm/policy-csp-defender#defender-guardedfoldersallowedapplications) 配置服务提供程序 (CSP) 以允许应用对受保护的文件夹进行更改。
 
 ## <a name="allow-signed-executable-files-to-access-protected-folders"></a>允许已签名的可执行文件访问受保护的文件夹
 
-Microsoft Defender for Endpoint 证书和文件指示器可以允许已签名的可执行文件访问受保护的文件夹。 有关实现的详细信息，请参阅 [创建基于证书的指示器](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/indicator-certificates)。
+Microsoft Defender for Endpoint 证书和文件指示器可以允许已签名的可执行文件访问受保护的文件夹。 有关实现的详细信息，请参阅 [创建基于证书的指示器](indicator-certificates.md)。
 
 > [!Note]
 > 这不适用于脚本引擎，包括 Powershell
 
 ## <a name="customize-the-notification"></a>自定义通知
 
-有关在触发规则并阻止应用或文件时自定义通知的信息，请参阅在 [Microsoft Defender for Endpoint 中配置警报通知](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/configure-email-notifications)。
+有关在触发规则并阻止应用或文件时自定义通知的信息，请参阅在 [Microsoft Defender for Endpoint 中配置警报通知](configure-email-notifications.md)。
 
 ## <a name="see-also"></a>另请参阅
 
 - [使用受控文件夹访问权限保护重要文件夹](controlled-folders.md)
-- [启用受控文件夹访问权限](enable-controlled-folders.md)
-- [评估攻击面减少规则](evaluate-attack-surface-reduction.md)
+- [启用受控文件夹访问](enable-controlled-folders.md)
+- [评估减少攻击面规则](evaluate-attack-surface-reduction.md)

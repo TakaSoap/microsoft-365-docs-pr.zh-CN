@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
 description: 了解如何使用集中式加载项将加载项部署到组织中用户和组。
-ms.openlocfilehash: 8503ed7ea2e088a8e17b52e619ee999aa05f497a
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 76bfa6272ec784518f045a50299fc7cda719eec8
+ms.sourcegitcommit: 68383240ef7a673d5f28e2ecfab9f105bf1d8c8f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51579286"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "52327194"
 ---
 # <a name="manage-add-ins-in-the-admin-center"></a>在管理中心管理加载项
 
@@ -39,9 +39,9 @@ Office 加载项有助于个性化设置文档，并简化访问 Web (方式，�
 
 加载项可以"开"或"关 **"** 状态。 
   
-|**状态**|**状态出现的原因**|**影响**|
+| 状态 | 此状态如何出现 | 影响 |
 |:-----|:-----|:-----|
-|**Active**  <br/> |管理员已上载外接程序并将其分配给用户或组。  <br/> |分配了加载项的用户和组可在相关客户端中看到它。  <br/> |
+|**活动**  <br/> |管理员已上载外接程序并将其分配给用户或组。  <br/> |分配了加载项的用户和组可在相关客户端中看到它。  <br/> |
 |**已禁用**  <br/> |管理员已禁用加载项。  <br/> |分配了外接程序的用户和组无法再访问它。  <br/> 如果外接程序的状态更改为"可用"，则用户和组将再次有权访问它。  <br/> |
 |**已删除**  <br/> |管理员已删除加载项。  <br/> |分配了加载项的用户和组无法再访问它。  <br/> |
    
@@ -53,22 +53,22 @@ Office 加载项有助于个性化设置文档，并简化访问 Web (方式，�
 
 1. In the admin center， go to the **Settings**  >  **Services & add-ins** page.
 
-     > [!NOTE]
+    > [!NOTE]
     > 管理中心将更新为集成应用的部署体验。 如果看不到上述步骤，请转到"集中部署"部分，**具体方法为** 转到"设置""集成应用  >  **"。** 在"集成应用"**页面顶部**，选择"**加载项"。**
 
 2. 选择已部署的外接程序。
 
 3. 单击"**删除外接程序"。** 删除右下角的"加载项"按钮。
 
-4. 验证您的选择，然后选择"**删除外接程序"。**
+4. 验证你所做的选择，然后选择“**删除加载项**”。
 
-## <a name="edit-add-in-access"></a>编辑外接程序访问
+## <a name="edit-add-in-access"></a>编辑加载项访问
 
 部署后，管理员还可以管理用户对外接程序的访问权限。
 
 1. In the admin center， go to the **Settings**  >  **Services & add-ins** page.
 
-     > [!NOTE]
+    > [!NOTE]
     > 管理中心将更新为集成应用的部署体验。 如果看不到上述步骤，请转到"集中部署"部分，**具体方法为** 转到"设置""集成应用  >  **"。** 在"集成应用"**页面顶部**，选择"**加载项"。**
 
 2. 选择已部署的外接程序。
@@ -88,29 +88,27 @@ Office 加载项有助于个性化设置文档，并简化访问 Web (方式，�
   
 1. 在管理中心，转到“**设置**”\> [服务和加载项](https://go.microsoft.com/fwlink/p/?linkid=2053743)页面。
 
-     > [!NOTE]
+    > [!NOTE]
     > 管理中心将更新为集成应用的部署体验。 如果看不到上述步骤，请转到"集中部署"部分，**具体方法为** 转到"设置""集成应用  >  **"。** 在"集成应用"**页面顶部**，选择"**加载项"。**
     
-3. 选择 **"用户拥有的应用和服务"。**
+3. 选择“**用户自有应用和服务**”。
     
-4. 清除允许用户访问 Office 商店的选项。
+4. 清除允许用户访问 Office 应用商店的选项。
 
-这将阻止所有用户从应用商店获取以下外接程序。
-  
-- 适用于 Word、Excel 和 PowerPoint 2016 的外接程序来自：
-    
-  - Windows
-    
-  - Mac
-    
-  - Office
-    
-    
-- 从 **AppSource 内开始购置**
-    
-- Microsoft 365 中的外接程序
-    
-尝试访问应用商店的用户将看到以下消息：抱歉 **，Microsoft 365** 已配置为阻止单独获取 Office 应用商店外接程序。
+    这将阻止所有用户从应用商店获取以下外接程序。
+      
+    - 适用于 Word、Excel 和 PowerPoint 2016 的外接程序来自：
+        
+      - Windows
+      - Mac
+      - Office
+        
+        
+    - 从 **AppSource 内开始购置**
+        
+    - Microsoft 365 中的外接程序
+        
+    尝试访问应用商店的用户将看到以下消息：抱歉 **，Microsoft 365** 已配置为阻止单独获取 Office 应用商店外接程序。
   
 以下版本支持关闭 Office 应用商店：
   
@@ -126,8 +124,8 @@ Office 加载项有助于个性化设置文档，并简化访问 Web (方式，�
   
 若要防止用户使用 Microsoft 帐户登录，可以将登录限制为仅使用组织帐户。 有关详细信息，请参阅[Identity， authentication， and authorization in Office 2016。](/DeployOffice/security/identity-authentication-and-authorization-in-office)  
 
-> [!NOTE]
-> 阻止用户访问 Office 商店也会阻止他们旁加载 [Office 外接程序进行测试](/office/dev/add-ins/testing/create-a-network-shared-folder-catalog-for-task-pane-and-content-add-ins)。
+> [!NOTE] 
+> 阻止用户访问 Office 商店还会阻止他们从网络共享旁加载 [Office 外接程序进行测试](/office/dev/add-ins/testing/create-a-network-shared-folder-catalog-for-task-pane-and-content-add-ins)。
 
 ## <a name="more-about-the-end-user-experience-with-add-ins"></a>有关外接程序的最终用户体验的更多内容
 
@@ -145,13 +143,17 @@ Office 加载项有助于个性化设置文档，并简化访问 Web (方式，�
     
 2. 选择 Office 加载项窗口中的" **由管理员管理** "选项卡。 
     
-3. 双击先前部署的加载项（在本例中是" **引文** "）。 <br/>!["Office 加载项"页的"管理""托管"选项卡](../../media/fd36ba81-9882-40f0-9fce-74f991aa97d5.png)
+3. 双击您之前部署的外接程序 (，本示例中为 **引文**) 。
+
+    !["Office 加载项"页的"管理""托管"选项卡](../../media/fd36ba81-9882-40f0-9fce-74f991aa97d5.png)
   
 ### <a name="in-outlook"></a>在 Outlook 中
 
-1. 在"**主页"** 功能区上，选择 **"获取外接程序"。**<br/>![Outlook 中的'应用商店'按钮](../../media/getaddinsicon.png)
+1. 在"**主页"** 功能区上，选择 **"获取外接程序"。**
+
+    ![Outlook 中的'应用商店'按钮](../../media/getaddinsicon.png)
   
-2. 在 **左侧导航中选择** "管理员管理"。 
+2. 在左侧导航中选择“**管理员托管**”。 
 
 ## <a name="learn-more"></a>了解详细信息
 

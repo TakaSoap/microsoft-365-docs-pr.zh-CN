@@ -22,19 +22,21 @@ search.appverid:
 - MOE150
 ms.assetid: bb229ee9-e7be-4990-b3eb-354e75740496
 description: '从共享邮箱中删除许可证以将其分配给其他用户。 '
-ms.openlocfilehash: 82ec863d5c2ae550fb401e71744715a27c89d382
-ms.sourcegitcommit: d4604e333507c6f57d5bf327531a241b649052de
+ms.openlocfilehash: 873b50b34b9887ada92cc56f7083e3b748a52035
+ms.sourcegitcommit: 68383240ef7a673d5f28e2ecfab9f105bf1d8c8f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51470615"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "52327218"
 ---
 # <a name="remove-a-license-from-a-shared-mailbox"></a>从共享邮箱中删除许可证
 
 共享邮箱通常不需要许可证。 按照以下说明从共享邮箱中删除许可证，以便你可以将其分配给用户或返回许可证，以便无需为不需要的许可证付费。
 
 > [!NOTE]
+>
 > 在下列情况下需要许可证：
+>
 > 1. 共享邮箱使用的存储空间超过 50 GB。
 > 2. 共享邮箱使用就地存档。
 > 3. 共享邮箱置于诉讼保留状态。

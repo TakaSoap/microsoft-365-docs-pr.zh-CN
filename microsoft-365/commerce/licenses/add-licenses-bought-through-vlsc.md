@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: shegu, nicholak
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -12,23 +13,18 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- commerce
-- Adm_NonTOC
-ms.custom: AdminSurgePortfolio
-search.appverid:
-- BCS160
-- MET150
-- MOE150
-- BEA160
-ms.assetid: 82ba88fa-ebdf-4d44-a7b3-cea82b25d71a
+ms.custom:
+- AdminSurgePortfolio
+- commerce_licensing
+search.appverid: MET150
 ROBOTS: NOINDEX
 description: 了解如何将许可证添加到通过 Microsoft 识别的第三方合作伙伴购买的 Microsoft 365 订阅。
-ms.openlocfilehash: 6a20955e83a05a46c1ac52c63dda374ec9d83f51
-ms.sourcegitcommit: 0ff6edbf52562138a69c6675cb0274ec984986c3
+ms.openlocfilehash: f40ca8f208d95ed150ad0fcea982347405e3d801
+ms.sourcegitcommit: 68383240ef7a673d5f28e2ecfab9f105bf1d8c8f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "51615335"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "52327150"
 ---
 # <a name="add-licenses-to-a-subscription-purchased-through-the-volume-licensing-service-center"></a>向通过批量许可服务中心购买的订阅添加许可证
 
