@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 设置 Microsoft 365 终结点数据丢失防护，以监视文件活动，并将针对这些文件的保护措施实施到终结点。
-ms.openlocfilehash: 118c2f3f87df5ac9930bebd1338157d323b1e5e1
-ms.sourcegitcommit: 5a1cb7d95070eef47d401a4693cc137a90550a5e
+ms.openlocfilehash: 8fc8bef62827a5e6125565f5d7227a88cd923dcf
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52259495"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52332806"
 ---
 # <a name="get-started-with-endpoint-data-loss-prevention"></a>终结点数据丢失防护入门
 
@@ -147,7 +147,7 @@ Microsoft 终结点数据丢失防护（终结点 DLP）是 Microsoft 365 数据
     - 使用 Microsoft Endpoint Configuration Manager 载入 Windows 10 计算机
     - 使用移动设备管理工具载入 Windows 10 计算机
     - 使用本地脚本载入 Windows 10 计算机
-    - 载入非持久性虚拟桌面基础结构 (VDI) 计算机。
+    - 在单一会话场景中载入非持久性虚拟桌面基础结构 (VDI) 计算机。
 
 完成操作并启用终结点后，它应该在设备列表中可见，并且还应开始向活动资源管理器报告审核活动日志。
 

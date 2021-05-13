@@ -1,5 +1,5 @@
 ---
-title: 'Microsoft 365Network Insights (预览) '
+title: Microsoft 365Network Insights
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
@@ -13,15 +13,15 @@ search.appverid:
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
-description: 'Microsoft 365Network Insights (预览) '
-ms.openlocfilehash: ca665f4e492b071e5a387ffde0efae8336bd96bc
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+description: Microsoft 365Network Insights
+ms.openlocfilehash: 10b1c66a8f9aae555c2841b2b290f341bec3c7ec
+ms.sourcegitcommit: fb6c5e04ade1e82b26b2f911577b5ac721f1c544
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245776"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "52470535"
 ---
-# <a name="microsoft-365-network-insights-preview"></a>Microsoft 365Network Insights (预览) 
+# <a name="microsoft-365-network-insights"></a>Microsoft 365Network Insights
 
 **网络见解** 是从 Microsoft 365 租户收集的性能指标，可供租户中的管理用户查看。 Insights are displayed in the Microsoft 365 Center at <https://portal.microsoft.com/adminportal/home#/networkperformance> .
 

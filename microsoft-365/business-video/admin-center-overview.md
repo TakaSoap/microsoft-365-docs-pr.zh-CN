@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 管理中心 - 概述
+title: Microsoft 365管理中心 - 概述
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -20,38 +20,40 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: 详细了解 Microsoft 365 管理中心。
-ms.openlocfilehash: 47eafbf49ac70d86b4065d3a67672c79abc16e63
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+description: 详细了解管理Microsoft 365中心。
+ms.openlocfilehash: 7d355b5064c2a0344ac62653afcae8712dbfc73f
+ms.sourcegitcommit: fb6c5e04ade1e82b26b2f911577b5ac721f1c544
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52332242"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "52470420"
 ---
 # <a name="overview-of-the-microsoft-365-admin-center"></a>Microsoft 365 管理中心概述
 
 - [简化视图中的管理中心](#the-admin-center-in-simplified-view)
 - [仪表板视图中的管理中心](#the-admin-center-in-dashboard-view)
 
+管理Microsoft 365有两个视图：简化的视图可帮助小型组织管理其最常见的任务。 仪表板视图包括更复杂的设置和任务。 可以从管理中心顶部的按钮切换它们。
+
 ## <a name="the-admin-center-in-simplified-view"></a>简化视图中的管理中心
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWD3sq?autoplay=false]
 
-借助 Microsoft 365 管理中心，可以在一个地方重置密码、查看发票、添加或删除用户等。
+使用 Microsoft 365管理中心，可以在一个地方重置密码、查看发票、添加或删除用户等。
 
-登录以 Office.com 工作帐户登录，然后选择应用启动器。 
+使用你的工作Office登录 Office.com，然后选择应用启动器。 
 
 如果你有权访问管理中心， **你将在列表中** 看到"管理员"。 选择它。 
 
-在管理中心顶部，查看你执行的顶部操作。 你可能会看到不同的操作，具体取决于你已设置的操作，例如创建新帐户、使用 Teams、设置电子邮件和安装 Office 应用。 
+在管理中心顶部，查看你执行的顶部操作。 你可能会看到不同的操作，具体取决于你已设置的操作，例如创建新帐户、使用 Teams、设置电子邮件和安装Office应用。 
  
 在 **"用户**"选项卡上的"你的组织"下，是可以访问应用和服务、添加新用户、重置密码或使用"更多操作"菜单 **的用户** 列表。 选择一个人以查看或编辑其信息和设置。  
 
-在 **"Teams"** 选项卡上，创建新团队或管理现有团队。 你可以管理团队成员或选择更多 **操作来更改** 其他 Teams 设置。 
+在 **"Teams"** 选项卡上，创建新团队或管理现有团队。 你可以管理团队成员或选择"更多操作"以更改其他Teams设置。 
 
 在 **"订阅"** 选项卡上，添加更多产品、添加许可证或使用"更多操作 **"菜单修改** 许可证或付款方式。
 
-在" **学习** "选项卡上，浏览有关管理中心和其他 Microsoft 365 功能的视频和文章。 若要浏览管理中心的更高级功能，请打开导航菜单并展开标题以查看更多信息。 选择 **"全部** 显示"以查看导航菜单中的所有内容，或使用搜索栏快速找到您寻找的内容。
+在"**学习**"选项卡上，浏览有关管理中心和其他管理中心功能的Microsoft 365文章。 若要浏览管理中心的更高级功能，请打开导航菜单并展开标题以查看更多信息。 选择 **"全部** 显示"以查看导航菜单中的所有内容，或使用搜索栏快速找到您寻找的内容。
 
 如果需要帮助，请选择"**帮助&支持"。** 搜索需要帮助的主题并查看建议的解决方案，或选择耳机联系支持人员，然后输入你的问题及联系信息。 
 
@@ -59,7 +61,7 @@ ms.locfileid: "52332242"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWfvDL?autoplay=false]
 
-Microsoft 365 管理中心是你在云中管理业务的地方。 可以完成添加和删除用户、更改许可证和重置密码等任务。 
+管理Microsoft 365中心是你在云中管理业务的地方。 可以完成添加和删除用户、更改许可证和重置密码等任务。 
 
 专家工作区（如安全性或设备管理）允许更精细的控制。 有关管理中心如何协同工作的信息，请参阅本文中的 WHAT [about the specific types of IT roles and other workspaces like Security， Device Management， or Exchange？。](#what-about-the-specific-types-of-it-roles-and-other-workspaces-like-security-device-management-or-exchange)
 
@@ -81,9 +83,9 @@ To get to the Microsoft 365 admin center， go to [admin.microsoft.com](https://
 
 有关管理计费、密码、用户和管理员详细信息，请参阅此课程的其他课程。
 
-## <a name="who-is-an-admin"></a>谁是管理员？ 
+## <a name="who-is-an-admin"></a>Who管理员？ 
 
-默认情况下，注册并购买 Microsoft 365 商业版订阅的用户会获得管理员权限。 此人可以将管理员权限分配给其他人，以帮助他们管理组织的 Microsoft 365。
+默认情况下，注册并购买商业版订阅Microsoft 365获得管理员权限。 此人可以将管理员权限分配给其他人，以帮助他们Microsoft 365组织管理权限。
 
 如果收到消息"你没有访问此页面或执行此操作的权限"，你不是管理员。
   
@@ -105,7 +107,7 @@ To get to the Microsoft 365 admin center， go to [admin.microsoft.com](https://
 
 ## <a name="turn-on-targeted-release"></a>打开定向发布
 
-1. 登录位置为 [admin.microsoft.com，](https://admin.microsoft.com)转到导航窗格，**然后选择"设置**"" \> **组织配置文件"。**
+1. 登录位置为 [admin.microsoft.com，](https://admin.microsoft.com)转到导航窗格，**然后选择"设置** \> **组织配置文件"。**
 
 2. 转到"**发布首选项"卡**，然后选择"编辑 **"。** 
     
@@ -119,29 +121,29 @@ To get to the Microsoft 365 admin center， go to [admin.microsoft.com](https://
 
 在此处看不到你的问题的答案？ 转到此页面 **底部的** "反馈"部分，提出你的问题。 
   
-### <a name="which-microsoft-365-plans-are-available-to-trial-or-buy"></a>哪些 Microsoft 365 计划可供试用或购买？
+### <a name="which-microsoft-365-plans-are-available-to-trial-or-buy"></a>哪些Microsoft 365计划可供试用或购买？
 
-Microsoft 365 是一个完整的智能解决方案，包括 Office 365、Windows 10 和企业移动性 + 安全性，使每个人都能够发挥创造力并安全地协同工作。 以下 Microsoft 365 订阅可在管理中心内立即试用或购买：
+Microsoft 365是一个完整的智能解决方案，包括 Office 365、Windows 10 和 企业移动性 + 安全性，使每个人都能够发挥创造力并安全地协同工作。 管理Microsoft 365以下订阅可供你立即试用或购买：
   
 - Microsoft 365 商业版
 - Microsoft 365 企业版 E3
 - Microsoft 365 企业版 E5
     
-有关详细信息，请参阅试用 [或购买 Microsoft 365 订阅](../commerce/try-or-buy-microsoft-365.md)。
+有关详细信息，请参阅试用[或购买Microsoft 365订阅](../commerce/try-or-buy-microsoft-365.md)。
 
 ### <a name="i-found-a-bug-or-i-want-to-request-a-feature-enhancement-how-do-i-let-microsoft-know"></a>我发现了一个 bug，或者我想请求增强功能。 如何让 Microsoft 知道？
 
-我们喜欢听到您的声音！ 报告 Bug 和共享反馈有助于我们改进 Microsoft 365 管理中心。 若要提供反馈 **，请选择页面** 底部的"反馈"按钮，并使用表单向我们发送你的想法。 如果你希望 Microsoft 365 管理中心团队中的某人跟进你的评论，请选中此复选框并确认你的电子邮件地址。 我们不能保证跟进每个反馈，但我们会尝试！ 
+我们喜欢听到您的声音！ 报告 Bug 和共享反馈可帮助我们Microsoft 365管理中心。 若要提供反馈 **，请选择页面** 底部的"反馈"按钮，并使用表单向我们发送你的想法。 如果你希望来自管理中心团队的Microsoft 365跟进你的评论，请选中此复选框并确认你的电子邮件地址。 我们不能保证跟进每个反馈，但我们会尝试！ 
   
 您还可以在 UserVoice 论坛中提供来自管理中心外部的反馈。 可以使用此页面提出其他论坛用户可以投票的功能建议 [：UserVoice forum for the new admin center](https://go.microsoft.com/fwlink/?linkid=2024994)。
 
-### <a name="what-about-the-specific-types-of-it-roles-and-other-workspaces-like-security-device-management-or-exchange"></a>What about the specific types of IT roles and other workspaces like Security, Device Management, or Exchange?
+### <a name="what-about-the-specific-types-of-it-roles-and-other-workspaces-like-security-device-management-or-exchange"></a>WHAT about the specific types of IT roles and other workspaces like Security， Device Management， or Exchange？
 
-Microsoft 365 管理中心是管理 Microsoft 365 的所有团队和角色的常见入口点。 体验、信息和控件针对每个管理员和角色进行定制和自定义。 此外，专家工作区还允许深入、精细的控制。 这些专家工作区包括 SharePoint、Teams &amp; Skype、Exchange、安全性、合规性、设备管理和 Azure Active Directory。 您可以在 Microsoft 365 管理中心的导航窗格中找到专家工作区 [https://admin.microsoft.com](https://go.microsoft.com/fwlink/?linkid=2024339) 。
+管理Microsoft 365中心是管理团队的所有团队和角色的Microsoft 365。 体验、信息和控件针对每个管理员和角色进行定制和自定义。 此外，专家工作区还允许深入、精细的控制。 这些专家工作区包括SharePoint、Teams Skype、Exchange、安全、合规性、设备 &amp; 管理和Azure Active Directory。 您可以在管理中心的导航窗格中找到专家Microsoft 365工作区 [https://admin.microsoft.com](https://go.microsoft.com/fwlink/?linkid=2024339) 。
 
 ### <a name="what-language-options-are-available-the-admin-center"></a>管理中心提供了哪些语言选项？
 
-Microsoft 365 管理中心完全本地化为 40 种语言。
+管理Microsoft 365中心完全本地化为 40 种语言。
 
 |语言 |Locale |
 |---------|---------|

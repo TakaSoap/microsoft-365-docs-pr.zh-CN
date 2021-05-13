@@ -1,7 +1,7 @@
 ---
 title: Microsoft 365 Defender 高级搜寻架构中的数据表
 description: 了解高级搜寻架构中的表，以了解可运行威胁搜寻查询的数据
-keywords: 高级搜寻， 威胁搜寻， 网络威胁搜寻， Microsoft 365 Defender， microsoft 365， m365， 搜索， 查询， 遥测， 架构参考， kusto， 表， 数据
+keywords: 高级搜寻， 威胁搜寻， 网络威胁搜寻， Microsoft 365 Defender， microsoft 365， m365， 搜索， 查询， 遥测， 架构参考， kusto， 表格， 数据
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 0313d1e95682d52e44cf90360c8ef322f0cad5db
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 3c8c65d012467317bf8335f47c3f686a5d7255d1
+ms.sourcegitcommit: fb6c5e04ade1e82b26b2f911577b5ac721f1c544
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51932913"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "52470576"
 ---
 # <a name="understand-the-advanced-hunting-schema"></a>了解高级搜寻架构
 
@@ -59,8 +59,7 @@ ms.locfileid: "51932913"
 |------------|-------------|
 | **[AlertEvidence](advanced-hunting-alertevidence-table.md)** | 与警报关联的文件、IP 地址、URL、用户或设备 |
 | **[AlertInfo](advanced-hunting-alertinfo-table.md)** | 来自 Microsoft Defender for Endpoint、Microsoft Defender for Office 365、Microsoft Cloud App Security 和 Microsoft Defender for Identity 的警报，包括严重性信息和威胁分类  |
-| **[AppFileEvents](advanced-hunting-appfileevents-table.md)** | 云应用和服务中的文件相关活动 |
-| **[CloudAppEvents](advanced-hunting-cloudappevents-table.md)** | 涉及 Office 365 和其他云应用和服务中的帐户和对象的事件 |
+| **[CloudAppEvents](advanced-hunting-cloudappevents-table.md)** | 涉及客户和其他云应用Office 365中的帐户和对象的事件 |
 | **[DeviceEvents](advanced-hunting-deviceevents-table.md)** | 多个事件类型，包括安全控件（如 Windows Defender 防病毒和 Exploit Protection）触发的事件 |
 | **[DeviceFileCertificateInfo](advanced-hunting-DeviceFileCertificateInfo-table.md)** | 从终结点上的证书验证事件获取的已签名文件的证书信息 |
 | **[DeviceFileEvents](advanced-hunting-devicefileevents-table.md)** | 文件创建、修改和其他文件系统事件 |
@@ -77,11 +76,11 @@ ms.locfileid: "51932913"
 | **[DeviceTvmSoftwareVulnerabilities](advanced-hunting-devicetvmsoftwarevulnerabilities-table.md)** | 在设备上发现的软件漏洞以及可解决每个漏洞的可用安全更新列表 |
 | **[DeviceTvmSoftwareVulnerabilitiesKB](advanced-hunting-devicetvmsoftwarevulnerabilitieskb-table.md)** | 公开披露的漏洞的知识库，包括攻击代码是否已公开 |
 | **[EmailAttachmentInfo](advanced-hunting-emailattachmentinfo-table.md)** | 有关附加到电子邮件的文件的信息 |
-| **[EmailEvents](advanced-hunting-emailevents-table.md)** | Microsoft 365 电子邮件事件，包括电子邮件传递和阻止事件 |
-| **[EmailPostDeliveryEvents](advanced-hunting-emailpostdeliveryevents-table.md)** | 在 Microsoft 365 将电子邮件传递到收件人邮箱后发生的安全事件 |
+| **[EmailEvents](advanced-hunting-emailevents-table.md)** | Microsoft 365电子邮件事件，包括电子邮件传递和阻止事件 |
+| **[EmailPostDeliveryEvents](advanced-hunting-emailpostdeliveryevents-table.md)** | 邮件送达后发生的安全事件Microsoft 365将电子邮件传递到收件人邮箱之后 |
 | **[EmailUrlInfo](advanced-hunting-emailurlinfo-table.md)** | 有关电子邮件 URL 的信息 |
 | **[IdentityDirectoryEvents](advanced-hunting-identitydirectoryevents-table.md)** | 涉及运行 Active Directory 和 AD (本地域控制器) 。 此表涵盖域控制器上一系列与标识相关的事件和系统事件。 |
-| **[IdentityInfo](advanced-hunting-identityinfo-table.md)** | 来自各种源的帐户信息，包括 Azure Active Directory |
+| **[IdentityInfo](advanced-hunting-identityinfo-table.md)** | 来自各种源的帐户信息，包括Azure Active Directory |
 | **[IdentityLogonEvents](advanced-hunting-identitylogonevents-table.md)** | Active Directory 和 Microsoft 联机服务上的身份验证事件 |
 | **[IdentityQueryEvents](advanced-hunting-identityqueryevents-table.md)** | 对 Active Directory 对象的查询，例如用户、组、设备和域 |
 

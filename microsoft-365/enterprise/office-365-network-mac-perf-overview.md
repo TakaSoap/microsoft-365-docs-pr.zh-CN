@@ -1,5 +1,5 @@
 ---
-title: 'Microsoft 365 管理中心 (预览) '
+title: Microsoft 365管理中心中的网络连接
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
@@ -14,15 +14,15 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 - m365initiative-coredeploy
-description: 'Microsoft 365 管理中心 (预览版中的网络连接) '
-ms.openlocfilehash: 4f88b3ad5bf8f0c32059a26348a651a6024ad544
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+description: Microsoft 365管理中心中的网络连接概述
+ms.openlocfilehash: 75451a73ed56dade796f6de288f7f4acfb147960
+ms.sourcegitcommit: fb6c5e04ade1e82b26b2f911577b5ac721f1c544
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245764"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "52470618"
 ---
-# <a name="network-connectivity-in-the-microsoft-365-admin-center-preview"></a>Microsoft 365 管理中心 (预览) 
+# <a name="network-connectivity-in-the-microsoft-365-admin-center"></a>Microsoft 365管理中心中的网络连接
 
 管理Microsoft 365中心现在包括从 Microsoft 365 租户收集的聚合网络连接指标，并且仅可供租户中的管理用户查看。
 

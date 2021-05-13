@@ -18,18 +18,19 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 34feeec0f8c34748678862b9aa7b20f84087eb5e
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 29e9eefdf85c80b6d3c44eba01d0df57be0193a4
+ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934521"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52346386"
 ---
 # <a name="resources-for-microsoft-defender-for-endpoint-on-macos"></a>macOS 上的 Microsoft Defender for Endpoint 的资源
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **适用于：**
+
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -51,7 +52,7 @@ ms.locfileid: "51934521"
 
 2. 重现问题
 
-3. 运行 `sudo mdatp diagnostic create` 以备份适用于终结点的 Microsoft Defender 日志。 这些文件将存储在 .zip 存档中。 此命令还会在操作成功后输出备份的文件路径。
+3. 运行 `sudo mdatp diagnostic create` 以备份适用于终结点的 Microsoft Defender 日志。 这些文件将存储在一个.zip中。 此命令还会在操作成功后输出备份的文件路径。
 
    > [!TIP]
    > 默认情况下，诊断日志将保存到 `/Library/Application Support/Microsoft/Defender/wdavdiag/` 。 若要更改保存诊断日志的目录，请传递给以下命令， `--path [directory]` `[directory]` 将 替换为所需的目录。
@@ -59,6 +60,7 @@ ms.locfileid: "51934521"
    ```bash
    sudo mdatp diagnostic create
    ```
+
    ```console
    Diagnostic file created: "/Library/Application Support/Microsoft/Defender/wdavdiag/932e68a8-8f2e-4ad0-a7f2-65eb97c0de01.zip"
    ```
@@ -68,6 +70,7 @@ ms.locfileid: "51934521"
    ```bash
    mdatp log level set --level info
    ```
+
    ```console
    Log level configured successfully
    ```
@@ -80,7 +83,7 @@ ms.locfileid: "51934521"
 
 ## <a name="uninstalling"></a>卸载
 
-有几种方法可以卸载 macOS 上的 Microsoft Defender for Endpoint。 请注意，尽管集中管理的卸载在 JAMF 上可用，但它尚不可用于 Microsoft Intune。
+有几种方法可以卸载 macOS 上的 Microsoft Defender for Endpoint。 请注意，尽管集中管理的卸载在 JAMF 上可用，但它尚不可用于Microsoft Intune。
 
 ### <a name="interactive-uninstallation"></a>交互式卸载
 
@@ -88,14 +91,13 @@ ms.locfileid: "51934521"
 
 ### <a name="from-the-command-line"></a>从命令行
 
-- ```sudo rm -rf '/Applications/Microsoft Defender ATP.app'```
-- ```sudo rm -rf '/Library/Application Support/Microsoft/Defender/'```
+- ```sudo '/Library/Application Support/Microsoft/Defender/uninstall/uninstall'```
 
 ## <a name="configuring-from-the-command-line"></a>从命令行配置
 
 可以通过命令行完成重要任务，如控制产品设置和触发按需扫描：
 
-|Group        |方案                                   |命令                                                                           |
+|Group        |应用场景                                   |Command                                                                           |
 |-------------|-------------------------------------------|----------------------------------------------------------------------------------|
 |配置|打开/关闭实时保护           |`mdatp config real-time-protection --value [enabled/disabled]`                    |
 |配置|打开/关闭云保护               |`mdatp config cloud --value [enabled/disabled]`                                   |
@@ -117,7 +119,7 @@ ms.locfileid: "51934521"
 |Protection   |执行完全扫描                             |`mdatp scan full`                                                                 |
 |Protection   |取消正在进行的按需扫描           |`mdatp scan cancel`                                                               |
 |Protection   |请求安全智能更新     |`mdatp definitions update`                                                        |
-|EDR          |将组标记添加到设备。 EDR 标记用于管理设备组。 有关详细信息，请访问 https://docs.microsoft.com/microsoft-365/security/defender-endpoint/machine-groups |`mdatp edr tag set --name GROUP --value [name]` |
+|EDR          |将组标记添加到设备。 EDR标记用于管理设备组。 有关详细信息，请访问 https://docs.microsoft.com/microsoft-365/security/defender-endpoint/machine-groups |`mdatp edr tag set --name GROUP --value [name]` |
 |EDR          |从设备中删除组标记               |`mdatp edr tag remove --tag-name [name]`                                          |
 |EDR          |添加组 ID                               |`mdatp edr group-ids --group-id [group]`                                          |
 
@@ -158,4 +160,4 @@ echo "source /Applications/Microsoft\ Defender\ ATP.app/Contents/Resources/Tools
 
 ## <a name="microsoft-defender-for-endpoint-portal-information"></a>适用于终结点的 Microsoft Defender 门户信息
 
-[适用于 macOS 的 EDR](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/edr-capabilities-for-macos-have-now-arrived/ba-p/1047801)功能现已到达，位于 Microsoft Defender for Endpoint 博客上，提供有关 Microsoft Defender for Endpoint Security Center 中预期内容的详细指南。
+[EDR macOS](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/edr-capabilities-for-macos-have-now-arrived/ba-p/1047801)的一些功能现已到达，位于 Microsoft Defender for Endpoint 博客上，提供有关 Microsoft Defender for Endpoint 安全中心中预期内容的详细指南。

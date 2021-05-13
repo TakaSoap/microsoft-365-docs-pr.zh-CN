@@ -1,5 +1,5 @@
 ---
-title: 使用共享日历
+title: 创建共享日历
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -20,14 +20,14 @@ search.appverid:
 - MET150
 - MOE150
 description: 了解如何创建共享日历。
-ms.openlocfilehash: 684122bcbccd7e8a419cc98eb0d0028c6218141a
-ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
+ms.openlocfilehash: 21b594d1d5f28cc38c907cb8e85085a296ef20b8
+ms.sourcegitcommit: aff2331f9a3f22591f8ace1a646809969d28c120
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51903690"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52464350"
 ---
-# <a name="create-a-shared-calendar"></a>使用共享日历
+# <a name="create-a-shared-calendar"></a>创建共享日历
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FYWm?autoplay=false]
 
@@ -35,7 +35,7 @@ ms.locfileid: "51903690"
 
 共享日历可帮助你快速查看何时有人员可用于会议或其他活动。
 
-1. 在 Outlook 中，选择日历图标。
+1. 在Outlook中，选择日历图标。
 1. 在"**主页"** 选项卡上，选择"**添加日历"，** 然后选择"**自通讯簿"。**
 1. 通过输入用户的姓名或从列表中选择其姓名，将用户添加到共享日历，然后选择"确定 **"。**
 1. 现在，可以查看已添加人员的日历和日历。
@@ -43,4 +43,8 @@ ms.locfileid: "51903690"
 
 ## <a name="related-content"></a>相关内容
 
-[Manage your calendar and contacts in Outlook](https://support.microsoft.com/office/manage-your-calendar-and-contacts-in-outlook-631a182a-21e0-4e41-8fa2-0d83e55da02d) (article) [Email collaboration](https://docs.microsoft.com/microsoft-365/admin/email/email-collaboration) (article) Overview of the [Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/business-video/admin-center-overview) (article) 
+[管理日历和联系人Outlook (](https://support.microsoft.com/office/manage-your-calendar-and-contacts-in-outlook-631a182a-21e0-4e41-8fa2-0d83e55da02d)文章) 
+
+[电子邮件协作](../admin/email/email-collaboration.md) (文章) 
+
+[管理中心Microsoft 365概述 (](admin-center-overview.md)文章) 

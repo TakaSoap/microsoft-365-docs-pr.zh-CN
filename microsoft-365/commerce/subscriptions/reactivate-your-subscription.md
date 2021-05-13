@@ -21,12 +21,12 @@ ms.custom:
 search.appverid: MET150
 description: 了解如何在订阅过期、被禁用或取消时重新激活订阅。
 ms.date: 04/07/2021
-ms.openlocfilehash: 7f77a9782e9028521cbcefbdbffc49bc28db8e9c
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: 902be48b32acdff5173a0dd5cc84dbd5972e1ba9
+ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 05/12/2021
-ms.locfileid: "52333166"
+ms.locfileid: "52345138"
 ---
 # <a name="reactivate-your-subscription"></a>重新激活订阅
 
@@ -65,6 +65,6 @@ ms.locfileid: "52333166"
 
 ## <a name="related-content"></a>相关内容
 
-[试用或购买 Microsoft 365 商业版订阅 (](../try-or-buy-microsoft-365.md) 文章) \
+[试用或购买Microsoft 365商业版订阅 (](../try-or-buy-microsoft-365.md)文章) \
 [续订 Microsoft 365 商业版](renew-your-subscription.md) (文章)\
 [取消订阅 (](cancel-your-subscription.md) 文章) 

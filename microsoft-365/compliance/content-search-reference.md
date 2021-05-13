@@ -1,5 +1,5 @@
 ---
-title: 内容搜索参考
+title: 内容搜索的功能参考
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -20,14 +20,16 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: 本文包含有关 Microsoft 365 合规中心中的内容搜索电子数据展示工具的参考信息，可帮助你了解有关内容搜索的众多详细信息。
-ms.openlocfilehash: c345cf00bddba30cb543ad9682a2a332607d31fe
-ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
+ms.openlocfilehash: f3545cc4644ca8b0a96ee37713d8fe62be7466e5
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "52314260"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52332890"
 ---
-# <a name="content-search-reference"></a>内容搜索参考
+# <a name="feature-reference-for-content-search"></a>内容搜索的功能参考
+
+本文描述了内容搜索的特性和功能。
 
 ## <a name="content-search-limits"></a>内容搜索限制
 
@@ -71,6 +73,10 @@ ms.locfileid: "52314260"
     
 - 如果搜索查询中包含非英语字符（例如中文字符）关键字，则可以单击“**查询语言-国家/地区**”“![内容搜索中的查询语言-国家/地区](../media/8d4b60c8-e1f1-40f9-88ae-ee2a7eca0886.png)”并为该搜索选择语言-国家/地区文化代码值。 默认语言/区域是中性的。 如何判断是否需要更改内容搜索的语言设置？ 如果确定内容位置中包含所搜索的非英语字符，但搜索没有返回结果，则可能是语言设置的原因。 
   
+## <a name="partially-indexed-items"></a>部分索引项
+
+- 邮箱中的部分索引项将包括在估计搜索结果中。 SharePoint 和 OneDrive 中的部分索引项不会包括在估计搜索结果中。 有关详细信息，请参阅[电子数据展示中的部分索引项](partially-indexed-items-in-content-search.md)。
+
 ## <a name="searching-onedrive-accounts"></a>搜索 OneDrive 帐户
 
 - 若要收集组织中的 OneDrive 网站 URL 列表，请参阅[在组织中创建所有 OneDrive 位置的列表](/onedrive/list-onedrive-urls)。 本文中的脚本将创建包含所有 OneDrive 网站的文本文件。 若要运行此脚本，必须安装并使用 SharePoint Online Management Shell。 请务必将你组织的 MySite 域的 URL 附加到你想要搜索的每个 OneDrive 网站。 这是包含你所有的 OneDrive 的域；例如，`https://contoso-my.sharepoint.com`。 下面是用户的 OneDrive 网站的 URL 示例：`https://contoso-my.sharepoint.com/personal/sarad_contoso_onmicrosoft.com`。
@@ -228,12 +234,6 @@ ms.locfileid: "52314260"
 - 如果使用 **New-ComplianceSearch** cmdlet 创建内容搜索，并将某个已断开连接的邮箱指定为要搜索的 Exchange 内容位置，则该内容搜索不会返回任何来自该已断开连接的邮箱的搜索结果。
 
 如果需要保留某个已断开连接的邮箱中的数据以使其可搜索，则必须在删除许可证之前保留该邮箱。 这将保留数据并使已断开连接的邮箱保持可搜索，直至保留被删除。 有关保留的详细信息，请参阅[如何识别为 Exchange Online 邮箱设置的保留类型](identify-a-hold-on-an-exchange-online-mailbox.md)。
-
-## <a name="partially-indexed-items"></a>部分索引项
-
-- 如前面所述，邮箱中的部分索引项将包括在估计的搜索结果中。 SharePoint 和 OneDrive 中的部分索引项不会包括在估计的搜索结果中。
-
-- 如果部分索引项符合搜索查询（因为其他邮件或文档属性满足搜索条件），则它不会包含在未编入索引的项目的估计数中。 如果部分索引项被搜索条件排除在外，则它不会包括在未索引项的估计数中。 有关详细信息，请参阅 [Office 365 内容搜索中的部分索引项](partially-indexed-items-in-content-search.md)。
 
 ## <a name="searching-for-content-in-a-sharepoint-multi-geo-environment"></a>在 SharePoint 多地理位置环境中搜索内容
 

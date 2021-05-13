@@ -17,15 +17,15 @@ ms.custom:
 - AdminSurgePortfolio
 - okr_SMB
 - commerce_purchase
-search.appverid: MET150
-description: 了解如何将促销代码应用到 Microsoft 365 订阅来降低价格，以及如何在出现错误时对促销代码进行故障排除。
+search.appverid: MET150 S
+description: 了解如何将促销代码应用到你的 Microsoft 365 订阅来降低价格，以及如何解决促销代码出错的问题。
 ms.date: 03/17/2021
-ms.openlocfilehash: 30484915246e1d8b1389f09d71d9d67865962a7e
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: 2a75f3e31a417e505c0f91044c61270f8bad8bae
+ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 05/12/2021
-ms.locfileid: "52332914"
+ms.locfileid: "52344646"
 ---
 # <a name="use-your-promo-code-to-reduce-price"></a>使用促销代码来降低价格
 
@@ -42,7 +42,7 @@ ms.locfileid: "52332914"
   
 ## <a name="promo-code-terms"></a>促销代码期限
 
-以下指南适用于 Microsoft 365 商业版订阅的促销代码。
+以下准则适用于商业版订阅Microsoft 365促销代码。
   
 - **每个订阅的促销代码数** 您可以对同一个订单中的多个订阅使用一个促销代码，但是不能对同一订阅使用多个促销代码。
 - **折扣期限** 一旦应用到您的订单，促销代码折扣将在您的订阅期限内有效。 如果订阅期限按月计，则促销代码折扣将持续到您输入的帐单月份末尾。如果订阅期限按年计（即使它是按月支付），则促销代码折扣将持续到您输入的帐单年份末尾。

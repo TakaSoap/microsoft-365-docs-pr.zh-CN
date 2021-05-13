@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 42b15edd933d80dd397f4681c4f0fdb035f030f2
-ms.sourcegitcommit: 682ed2c4e2bc6979025cdb89094866cef6c8751a
+ms.openlocfilehash: 29505a6e975fdfa2283efe3391c615e40e678164
+ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "51943001"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52346374"
 ---
 # <a name="set-preferences-for-microsoft-defender-for-endpoint-on-linux"></a>在 Linux 上设置适用于终结点的 Microsoft Defender 的首选项
 
@@ -105,6 +105,7 @@ ms.locfileid: "51943001"
 #### <a name="scan-exclusions"></a>扫描排除项
 
 从扫描中排除的实体。 排除项可以通过完整路径、扩展名或文件名指定。
+ (排除项指定为项目数组，则管理员可以按任意顺序指定所需数量的元素) 
 
 |||
 |:---|:---|
@@ -305,7 +306,7 @@ ms.locfileid: "51943001"
 确定是否将 (可能包含威胁的可疑) 发送到 Microsoft。 有三个级别用于控制示例提交：
 
 - **无**：不会向 Microsoft 提交任何可疑样本。
-- **安全**：仅自动提交不包含个人身份信息 (PII) 的可疑示例。 这是此设置的默认值。
+- **保险箱：** 只有不包含个人身份信息的可疑样本 (个人身份) 自动提交。 这是此设置的默认值。
 - **全部**：所有可疑示例都提交到 Microsoft。
 
 |||
@@ -387,7 +388,12 @@ ms.locfileid: "51943001"
          {
             "$type":"excludedPath",
             "isDirectory":true,
-            "path":"/home"
+            "path":"/run"
+         },
+         {
+            "$type":"excludedPath",
+            "isDirectory":true,
+            "path":"/home/*/git"
          },
          {
             "$type":"excludedFileExtension",

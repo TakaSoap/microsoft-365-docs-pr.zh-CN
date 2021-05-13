@@ -18,17 +18,16 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: f13734392e4975738a0d60d38e618595b5175667
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: b706cb8dbd43d545768c1c573021b5ef401e3c09
+ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934557"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52346398"
 ---
 # <a name="set-preferences-for-microsoft-defender-for-endpoint-on-macos"></a>在 macOS 上设置适用于终结点的 Microsoft Defender 的首选项
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
-
 
 **适用于：**
 
@@ -106,6 +105,7 @@ ms.locfileid: "51934557"
 #### <a name="scan-exclusions"></a>扫描排除项
 
 指定被扫描排除的实体。 排除项可以通过完整路径、扩展名或文件名指定。
+ (排除项指定为项目数组，则管理员可以按任意顺序指定所需数量的元素) 
 
 |节|值|
 |:---|:---|
@@ -136,6 +136,27 @@ ms.locfileid: "51934557"
 | **数据类型** | String |
 | **可能的值** | 有效路径 |
 | **备注** | 仅在 *排除$type**时适用* |
+
+## <a name="supported-exclusion-types"></a>支持的排除类型
+
+下表显示了 Mac 上的 Defender for Endpoint 支持的排除类型。
+
+排除 | 定义 | 示例
+---|---|---
+文件扩展名 | 扩展名位于设备上任意位置的所有文件 | `.test`
+文件 | 由完整路径标识的特定文件 | `/var/log/test.log`<br/>`/var/log/*.log`<br/>`/var/log/install.?.log`
+文件夹 | 指定文件夹下的所有 (以递归)  | `/var/log/`<br/>`/var/*/`
+流程 | 特定进程 (的完整路径或文件名指定，) 它打开的所有文件 | `/bin/cat`<br/>`cat`<br/>`c?t`
+
+> [!IMPORTANT]
+> 上述路径必须是硬链接，而不是符号链接，才能成功排除。 可以通过运行 来检查路径是否为符号链接 `file <path-name>` 。
+
+文件、文件夹和进程排除项支持以下通配符：
+
+通配符 | 说明 | 示例 | 匹配 | 不匹配
+---|---|---|---|---
+\* |    匹配任意数目的任何字符，包括无 (请注意，当在路径内使用此通配符时，它将仅替换一个)  | `/var/\*/\*.log` | `/var/log/system.log` | `/var/log/nested/system.log`
+? | 匹配任何单个字符 | `file?.log` | `file1.log`<br/>`file2.log` | `file123.log`
 
 ##### <a name="path-type-file--directory"></a>文件 (目录的路径) 
 
@@ -358,7 +379,7 @@ ms.locfileid: "51934557"
 
 ### <a name="endpoint-detection-and-response-preferences"></a>终结点检测和响应首选项
 
-管理 macOS 上 Microsoft Defender for Endpoint (EDR) 组件的终结点检测和响应首选项。
+管理 macOS 上 Microsoft Defender for Endpoint (EDR) 的终结点检测和响应的首选项。
 
 |节|值|
 |:---|:---|
@@ -577,6 +598,14 @@ ms.locfileid: "51934557"
             </dict>
             <dict>
                 <key>$type</key>
+                <string>excludedPath</string>
+                <key>isDirectory</key>
+                <true/>
+                <key>path</key>
+                <string>/Users/*/git</string>
+            </dict>
+            <dict>
+                <key>$type</key>
                 <string>excludedFileExtension</string>
                 <key>extension</key>
                 <string>pdf</string>
@@ -719,6 +748,14 @@ ms.locfileid: "51934557"
                         </dict>
                         <dict>
                             <key>$type</key>
+                            <string>excludedPath</string>
+                            <key>isDirectory</key>
+                            <true/>
+                            <key>path</key>
+                            <string>/Users/*/git</string>
+                        </dict>
+                        <dict>
+                            <key>$type</key>
                             <string>excludedFileExtension</string>
                             <key>extension</key>
                             <string>pdf</string>
@@ -812,7 +849,7 @@ com.microsoft.wdav.plist: OK
 
 ### <a name="jamf-deployment"></a>JAMF 部署
 
-从 JAMF 控制台中，打开 **"计算机** 配置文件"，导航到你要使用的配置文件，  >  然后选择"自定义 **设置"。** 使用 创建用作 `com.microsoft.wdav` 首选项域的条目并上载之前生成的 *.plist。*
+从 JAMF 控制台中，打开 **计算机** 配置文件，导航到你要使用的配置文件，  >  然后选择自定义设置。  使用 创建用作 `com.microsoft.wdav` 首选项域的条目并上载之前生成的 *.plist。*
 
 >[!CAUTION]
 >必须输入正确的首选项域 `com.microsoft.wdav` () ;否则，Microsoft Defender for Endpoint 无法识别首选项。

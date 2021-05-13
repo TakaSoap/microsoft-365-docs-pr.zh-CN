@@ -20,12 +20,12 @@ ms.custom:
 search.appverid: MET150
 description: 了解如何升级到其他计划。
 ms.date: 04/21/2021
-ms.openlocfilehash: 2cfb5c3c6c5052a813e7dd078f15b6c0c943b004
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: 4882ad4296eb05faf0bb549ebf850562a7ebf780
+ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 05/12/2021
-ms.locfileid: "52333094"
+ms.locfileid: "52344610"
 ---
 # <a name="upgrade-to-a-different-plan"></a>升级到其他计划
 
@@ -99,7 +99,7 @@ ms.locfileid: "52333094"
 
 #### <a name="you-have-two-or-more-plans-for-the-same-product"></a>针对同一产品有两个或多个计划
 
-只有当所有用户订阅同 **一个** 计划时，才能使用"升级"选项卡。 例如，如果你有两个 Microsoft 365 商业标准版计划，则不能自动将其中一个计划升级到另一个计划。
+只有当所有用户订阅同 **一个** 计划时，才能使用"升级"选项卡。 例如，如果你有两个Microsoft 365 商业标准版计划，则不能自动将其中一个计划升级到另一个计划。
 
 #### <a name="you-have-a-prepaid-plan"></a>你拥有预付费计划
 
@@ -143,11 +143,11 @@ ms.locfileid: "52333094"
 
 旧订阅的用户将自动移至新订阅。
   
-如果旧订阅包含多个服务，并且你已更改用户分配到的这些服务，你可能想要在升级计划之前记下这一点，以便以后可以重新创建这些更改。 所有用户都将被授予新订阅中所有服务的访问权限。 例如，如果你之前为全部 100 个用户购买了 Microsoft 365 商业高级版，但其中 50 个用户未分配 SharePoint Online 服务，则升级计划后不会保留此更改。
+如果旧订阅包含多个服务，并且你已更改用户分配到的这些服务，你可能想要在升级计划之前记下这一点，以便以后可以重新创建这些更改。 所有用户都将被授予新订阅中所有服务的访问权限。 例如，如果你之前为全部 100 个用户购买了 Microsoft 365 商业高级版，但从其中 50 个用户取消分配 SharePoint Online 服务，则升级计划后不会保留此更改。
   
 如果在升级计划之前拥有多个订阅，并且向用户分配了多个订阅的许可证，则此分配模式将尽可能保留在新订阅中。
   
-升级过程中将保留所有用户数据，包括 Exchange 邮箱和 SharePoint Online 文档、列表和其他信息。
+升级过程中将保留所有用户数据，包括Exchange邮箱SharePoint联机文档、列表和其他信息。
   
 ### <a name="billing"></a>计费
 
@@ -165,4 +165,4 @@ ms.locfileid: "52333094"
 ## <a name="related-content"></a>相关内容
 
 [手动更改计划](change-plans-manually.md) (文章) \
-[在切换 Microsoft 365](back-up-data-before-switching-plans.md) 商业版计划前备份 (文章) 
+[在切换业务Microsoft 365之前备份数据 (](back-up-data-before-switching-plans.md)文章) 

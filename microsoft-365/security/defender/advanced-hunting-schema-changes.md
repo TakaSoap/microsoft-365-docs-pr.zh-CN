@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: eb6dfa628488239e3953d19d5e78b338e76f50a2
-ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
+ms.openlocfilehash: a387892dde0fbe96e4a523b2247448a3c7e374b8
+ms.sourcegitcommit: fb6c5e04ade1e82b26b2f911577b5ac721f1c544
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52023781"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "52470492"
 ---
 # <a name="advanced-hunting-schema---naming-changes"></a>高级搜寻架构 - 命名更改
 
@@ -67,7 +67,7 @@ ms.locfileid: "52023781"
 | `DetectionSource` | AutomatedInvestigation |自动调查 | 重新品牌 |
 | `DetectionSource` | ThreatExperts | Microsoft 威胁专家 | 重新品牌 |
 | `DetectionSource` | 第三方 TI | 第三方传感器 | 重新品牌 |
-| `ServiceSource` | 每个租户| Microsoft Defender for Endpoint | 重新品牌 |
+| `ServiceSource` | Microsoft Defender ATP| Microsoft Defender for Endpoint | 重新品牌 |
 |`ServiceSource` |Microsoft 威胁防护   | Microsoft 365 Defender | 重新品牌 |
 | `ServiceSource` | Office 365 ATP  |Microsoft Defender for Office 365 | 重新品牌 |
 | `ServiceSource` |Azure ATP    |Microsoft Defender for Identity | 重新品牌 |
@@ -78,12 +78,12 @@ ms.locfileid: "52023781"
 
 1. 在 [EmailAttachmentInfo 和](advanced-hunting-emailattachmentinfo-table.md) [EmailEvents](advanced-hunting-emailevents-table.md) 表中，和 列 `MalwareFilterVerdict` `PhishFilterVerdict` 已替换为 `ThreatTypes` 列。 和 `MalwareDetectionMethod` `PhishDetectionMethod` 列也替换为 `DetectionMethods` 列。 通过简化，可以在新列下提供详细信息。 映射如下所示。
 
-| 表名 | 原始列名称 | 新列名称 | 更改原因
-|--|--|--|--|
-| `EmailAttachmentInfo` | `MalwareDetectionMethod` <br> `PhishDetectionMethod` | `DetectionMethods` | 包括更多检测方法 |
-| `EmailAttachmentInfo`  | `MalwareFilterVerdict` <br>`PhishFilterVerdict` | `ThreatTypes` | 包括更多威胁类型 |
-| `EmailEvents` | `MalwareDetectionMethod` <br> `PhishDetectionMethod` | `DetectionMethods` | 包括更多检测方法 |
-| `EmailEvents` | `MalwareFilterVerdict` <br>`PhishFilterVerdict` | `ThreatTypes` | 包括更多威胁类型 |
+    | 表名 | 原始列名称 | 新列名称 | 更改原因
+    |--|--|--|--|
+    | `EmailAttachmentInfo` | `MalwareDetectionMethod` <br> `PhishDetectionMethod` | `DetectionMethods` | 包括更多检测方法 |
+    | `EmailAttachmentInfo`  | `MalwareFilterVerdict` <br>`PhishFilterVerdict` | `ThreatTypes` | 包括更多威胁类型 |
+    | `EmailEvents` | `MalwareDetectionMethod` <br> `PhishDetectionMethod` | `DetectionMethods` | 包括更多检测方法 |
+    | `EmailEvents` | `MalwareFilterVerdict` <br>`PhishFilterVerdict` | `ThreatTypes` | 包括更多威胁类型 |
 
 
 2. 在 `EmailAttachmentInfo` 和 `EmailEvents` 表中， `ThreatNames` 添加了 列以提供有关电子邮件威胁详细信息。 此列包含"垃圾邮件"或"钓鱼邮件"等值。
@@ -92,18 +92,20 @@ ms.locfileid: "52023781"
 
 4. 在 [DeviceEvents](advanced-hunting-deviceevents-table.md) 表中，修改了几个 ActionType 名称，以更好地反映操作的说明。 可在下方找到更改的详细信息。
 
-| 表名 | 原始 ActionType 名称 | 新的 ActionType 名称 | 更改原因
-|--|--|--|--|
-| `DeviceEvents` | `DlpPocPrintJob` | `FilePrinted` | 客户反馈 |
-| `DeviceEvents` | `UsbDriveMount` | `UsbDriveMounted` | 客户反馈 |
-| `DeviceEvents` | `UsbDriveUnmount` | `UsbDriveUnmounted` | 客户反馈 |
-| `DeviceEvents` | `WriteProcessMemoryApiCall` | `WriteToLsassProcessMemory` | 客户反馈 |
+    | 表名 | 原始 ActionType 名称 | 新的 ActionType 名称 | 更改原因
+    |--|--|--|--|
+    | `DeviceEvents` | `DlpPocPrintJob` | `FilePrinted` | 客户反馈 |
+    | `DeviceEvents` | `UsbDriveMount` | `UsbDriveMounted` | 客户反馈 |
+    | `DeviceEvents` | `UsbDriveUnmount` | `UsbDriveUnmounted` | 客户反馈 |
+    | `DeviceEvents` | `WriteProcessMemoryApiCall` | `WriteToLsassProcessMemory` | 客户反馈 |
 
 ## <a name="march-2021"></a>2021 年 3 月
 
 `DeviceTvmSoftwareInventoryVulnerabilities`该表已被弃用。 将 替换为 `DeviceTvmSoftwareInventory` 和 `DeviceTvmSoftwareVulnerabilities` 表。
 
+## <a name="may-2021"></a>2021 年 5 月
 
+`AppFileEvents`该表已被弃用。 `CloudAppEvents`该表包含以前在表中的信息 `AppFileEvents` ，以及云服务中的其他活动。
 
 ## <a name="related-topics"></a>相关主题
 - [高级搜寻概述](advanced-hunting-overview.md)

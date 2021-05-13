@@ -19,14 +19,14 @@ ms.collection:
 - m365solution-migratetomdatp
 ms.topic: article
 ms.custom: migrationguides
-ms.date: 05/10/2021
+ms.date: 05/11/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
-ms.openlocfilehash: cdf73ba8b97db06537785dff6e2b3f017d47023d
-ms.sourcegitcommit: 68383240ef7a673d5f28e2ecfab9f105bf1d8c8f
+ms.openlocfilehash: 265f32f5a24b982933ac6a876b244b10802cdd60
+ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "52327350"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52345808"
 ---
 # <a name="switch-to-microsoft-defender-for-endpoint---phase-1-prepare"></a>切换到 Microsoft Defender for Endpoint - 阶段 1：准备
 
@@ -41,9 +41,13 @@ ms.locfileid: "52327350"
 **欢迎使用切换到 Microsoft [Defender for Endpoint 的"准备"阶段](switch-to-microsoft-defender-migration.md#the-migration-process)**。 
 
 此迁移阶段包括以下步骤：
+
 1. [在组织设备上获取和部署更新](#get-and-deploy-updates-across-your-organizations-devices)
+
 2. [获取 Microsoft Defender for Endpoint](#get-microsoft-defender-for-endpoint)。
+
 3. [授予对 Microsoft Defender 安全中心 的访问权限](#grant-access-to-the-microsoft-defender-security-center)。
+
 4. [配置设备代理和 Internet 连接设置](#configure-device-proxy-and-internet-connectivity-settings)。
 
 ## <a name="get-and-deploy-updates-across-your-organizations-devices"></a>在组织设备上获取和部署更新
@@ -73,9 +77,12 @@ ms.locfileid: "52327350"
 现在，你已更新组织的设备，下一步是获取 Microsoft Defender for Endpoint、分配许可证并确保已预配服务。
 
 1. 立即购买或试用 Microsoft Defender for Endpoint。 [启动免费试用版或请求使用引号](https://aka.ms/mdatp)。 
-2. 验证许可证是否正确预配。 [检查你的许可证状态](/microsoft-365/security/defender-endpoint/production-deployment#check-license-state)。
-3. 作为全局管理员或安全管理员，设置 Microsoft Defender for Endpoint 的专用云实例。 请参阅 [Microsoft Defender for Endpoint setup： Tenant configuration](/microsoft-365/security/defender-endpoint/production-deployment#tenant-configuration)。
-4. 如果终结点 (，) 使用代理访问 Internet，请参阅 [Microsoft Defender for Endpoint setup： Network configuration](/microsoft-365/security/defender-endpoint/production-deployment#network-configuration)。
+
+2. 验证许可证是否正确预配。 [检查你的许可证状态](production-deployment.md#check-license-state)。
+
+3. 作为全局管理员或安全管理员，设置 Microsoft Defender for Endpoint 的专用云实例。 请参阅 [Microsoft Defender for Endpoint setup： Tenant configuration](production-deployment.md#tenant-configuration)。
+
+4. 如果终结点 (，) 使用代理访问 Internet，请参阅 [Microsoft Defender for Endpoint setup： Network configuration](production-deployment.md#network-configuration)。
  
 此时，您已准备好向将使用安全管理策略的安全管理员和安全 [https://aka.ms/MDATPportal](https://aka.ms/MDATPportal) Microsoft Defender 安全中心 () 。 
 
@@ -89,11 +96,17 @@ ms.locfileid: "52327350"
 可以使用 RBAC Microsoft Defender 安全中心基本权限或基于角色的访问控制来授予 (权限) 。 我们建议使用 RBAC，以便可以更精细地控制权限。
 
 1. 为安全管理员和安全操作员规划角色和权限。 请参阅 [基于角色的访问控制](prepare-deployment.md#role-based-access-control)。
+
 2. 设置和配置 RBAC。 我们建议使用[Intune](/mem/intune/fundamentals/what-is-intune)配置 RBAC，尤其是在组织结合使用 Windows 10、macOS、iOS 和 Android 设备时。 请参阅[使用 Intune 设置 RBAC。](/mem/intune/fundamentals/role-based-access-control)
+
     如果你的组织需要 Intune 外的其他方法，请选择以下选项之一：
+
     - [配置管理器](/mem/configmgr/core/servers/deploy/configure/configure-role-based-administration)
+
     - [高级组策略管理](/microsoft-desktop-optimization-pack/agpm)
+
     - [Windows管理中心](/windows-server/manage/windows-admin-center/overview)
+
 3. 向用户授予Microsoft Defender 安全中心。  (需要帮助？ 请参阅 [使用 RBAC 管理门户](rbac.md)) 。
 
 ## <a name="configure-device-proxy-and-internet-connectivity-settings"></a>配置设备代理和 Internet 连接设置
@@ -102,10 +115,10 @@ ms.locfileid: "52327350"
 
 |功能  | 操作系统 | 资源 |
 |--|--|--|
-|[终结点检测和响应](overview-endpoint-detection-response.md) (EDR)  |- [Windows 10](/windows/release-health/release-information) <br/>- [WindowsServer 2019](/windows/release-health/status-windows-10-1809-and-windows-server-2019)<br/>- [Windows服务器 1803 或更高版本](/windows-server/get-started/whats-new-in-windows-server-1803)  |[配置计算机代理和 Internet 连接设置](configure-proxy-internet.md) |
-|EDR |- [Windows Server 2016](/windows/release-health/status-windows-10-1607-and-windows-server-2016) <br/>- [Windows Server 2012R2](/windows/release-health/status-windows-8.1-and-windows-server-2012-r2)<br/>- [WindowsServer 2008 R2 SP1](/windows/release-health/status-windows-7-and-windows-server-2008-r2-sp1)<br/>- [Windows 8.1](/windows/release-health/status-windows-8.1-and-windows-server-2012-r2)<br/>- [Windows 7 SP1](/windows/release-health/status-windows-7-and-windows-server-2008-r2-sp1) |[配置代理和 Internet 连接设置](onboard-downlevel.md#configure-proxy-and-internet-connectivity-settings) |
-|EDR  |macOS： <br/>- 10.15 (加泰罗尼亚语) <br/>- 10.14 (Mojave)  <br/>- 10.13 (High Sierra)   |[macOS 上的 Microsoft Defender for Endpoint：网络连接](microsoft-defender-endpoint-mac.md#network-connections)  |
-|[Microsoft Defender 防病毒](microsoft-defender-antivirus-in-windows-10.md) |- [Windows 10](/windows/release-health/release-information) <br/>- [WindowsServer 2019](/windows/release-health/status-windows-10-1809-and-windows-server-2019)<br/>- [Windows服务器 1803 或更高版本](/windows-server/get-started/whats-new-in-windows-server-1803) <br/>- [Windows Server 2016](/windows-server/get-started/whats-new-in-windows-server-2016) |[配置和验证 Microsoft Defender 防病毒软件网络连接](configure-network-connections-microsoft-defender-antivirus.md)<br/> |
+|[终结点检测和响应](overview-endpoint-detection-response.md) (EDR)  |[Windows 10](/windows/release-health/release-information) <p>[Windows Server 2019](/windows/release-health/status-windows-10-1809-and-windows-server-2019)<p>[Windows服务器 1803 或更高版本](/windows-server/get-started/whats-new-in-windows-server-1803)  |[配置计算机代理和 Internet 连接设置](configure-proxy-internet.md) |
+|EDR |[Windows Server 2016](/windows/release-health/status-windows-10-1607-and-windows-server-2016) <p>[Windows Server 2012 R2](/windows/release-health/status-windows-8.1-and-windows-server-2012-r2)<p>[Windows Server 2008 R2 SP1](/windows/release-health/status-windows-7-and-windows-server-2008-r2-sp1)<p>[Windows 8.1](/windows/release-health/status-windows-8.1-and-windows-server-2012-r2)<p>[Windows 7 SP1](/windows/release-health/status-windows-7-and-windows-server-2008-r2-sp1) |[配置代理和 Internet 连接设置](onboard-downlevel.md#configure-proxy-and-internet-connectivity-settings) |
+|EDR  |macOS： <br/>- 11.3.1 (大 Sur) <br/>- 10.15 (加泰罗尼亚语) <br/>- 10.14 (Mojave)    |[macOS 上的 Microsoft Defender for Endpoint：网络连接](microsoft-defender-endpoint-mac.md#network-connections)  |
+|[Microsoft Defender 防病毒](microsoft-defender-antivirus-in-windows-10.md) |[Windows 10](/windows/release-health/release-information) <p>[Windows Server 2019](/windows/release-health/status-windows-10-1809-and-windows-server-2019)<p>[Windows服务器 1803 或更高版本](/windows-server/get-started/whats-new-in-windows-server-1803) <p>[Windows Server 2016](/windows-server/get-started/whats-new-in-windows-server-2016) |[配置和验证 Microsoft Defender 防病毒软件网络连接](configure-network-connections-microsoft-defender-antivirus.md)<br/> |
 |防病毒 |macOS： <br/>- 11.3.1 (大 Sur) <br/>- 10.15 (加泰罗尼亚语) <br/>- 10.14 (Mojave)  |[macOS 上的 Microsoft Defender for Endpoint：网络连接](microsoft-defender-endpoint-mac.md#network-connections) |
 |防病毒 |Linux： <br/>- RHEL 7.2+<br/>- CentOS Linux 7.2 及以上<br/>- Ubuntu 16 LTS 或更高版本 LTS<br/>- SLES 12+<br/>- Debian 9+<br/>- Oracle Linux 7.2 |[Linux 上的 Microsoft Defender for Endpoint：网络连接](microsoft-defender-endpoint-linux.md#network-connections) |
 

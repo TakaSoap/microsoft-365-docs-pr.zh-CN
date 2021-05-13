@@ -15,12 +15,12 @@ ms.reviewer: oogunrinde
 manager: dansimp
 ms.technology: mde
 ms.topic: how-to
-ms.openlocfilehash: fc04db0c9fe8ee6d09efc9802ab4a747af0b3e9c
-ms.sourcegitcommit: 68383240ef7a673d5f28e2ecfab9f105bf1d8c8f
+ms.openlocfilehash: fc952ceec7d26d853e39cab0a803daace62a4767
+ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "52326659"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52345881"
 ---
 # <a name="enable-attack-surface-reduction-rules"></a>启用攻击面减少规则
 
@@ -167,32 +167,32 @@ ASR 规则支持环境变量和通配符。 有关使用通配符的信息，请
    > [!WARNING]
    > 请勿使用引号，因为"值名称"列或"值"列不支持 **引号**。
 
-## <a name="microsoft-endpoint-manager-custom-procedure"></a>Microsoft Endpoint Manager 自定义过程
+## <a name="microsoft-endpoint-manager-custom-procedure"></a>Microsoft Endpoint Manager自定义过程
 
-可以使用 Microsoft Endpoint Manager (MEM) 配置自定义 ASR 规则。
+可以在管理中心Microsoft Endpoint Manager (MEM) 配置自定义 ASR 规则。
 
-1. 打开 Microsoft Endpoint Manager (MEM) 管理中心。 在"**开始"** 菜单中，单击 **"设备"，** 选择 **"配置文件**"，然后单击"**创建配置文件"。**
+1. 打开管理Microsoft Endpoint Manager (MEM) 管理中心。 在"**开始"** 菜单中，单击 **"设备"，** 选择 **"配置文件**"，然后单击"**创建配置文件"。**
 
    ![MEM 创建配置文件](images/mem01-create-profile.png)
 
 2. 在 **"创建配置文件"** 中的以下两个下拉列表中，选择以下选项：
 
-   - 在 **平台** 中，选择 **Windows 10 和更高版本**
+   - 在 **"平台**"**中，Windows 10和更高版本"**
    - 在 **"配置文件类型"** 中， **选择"模板"**
 
    选择 **"自定义**"，然后单击"**创建"。**
 
    ![MEM 规则配置文件属性](images/mem02-profile-attributes.png)
 
-3. 自定义模板工具将打开到步骤 **1 基础知识**。 在 **"1 基础知识"** 的 **"名称**"中，键入模板的名称，在"说明" **中，可以** 键入可选说明。
+3. 自定义模板工具将打开到步骤 **1 基础知识**。 在 **"1 基础知识**"的 **"名称**"中，键入模板的名称，在"说明"中，可以键入 (可选) 。
 
    ![MEM 基本属性](images/mem03-1-basics.png)
 
-4. 点击 **“下一步”**。 步骤 **2 将打开配置** 设置。 对于 OMA-URI 设置， **单击添加**。 此时将显示两个选项："**添加"和**"**导出"。**
+4. 点击 **“下一步”**。 步骤 **2 将打开配置** 设置。 对于 OMA-URI 设置，**单击添加**。 此时将显示两个选项："**添加"和**"**导出"。**
 
    ![MEM 配置设置](images/mem04-2-configuration-settings.png)
 
-5. 再次 **单击"添加** "。 添加 **行 OMA-URI 设置将** 打开。 在 **"添加行"** 中，执行以下操作：
+5. 再次 **单击"添加** "。 添加 **行 OMA-URI 设置** 打开。 在 **"添加行"** 中，执行以下操作：
 
    - 在 **"名称**"中，键入规则的名称。
    - 在 **"说明**"中，键入简要说明。
@@ -223,7 +223,7 @@ ASR 规则支持环境变量和通配符。 有关使用通配符的信息，请
    - 在 **"** 属性"中，选择要应用此规则的属性
    - 在 **"值**"中，输入适用的值或值范围
 
-   ![MEM 适用性规则](images/mem07-5-applicability -rules.png)
+   ![MEM 适用性规则](images/mem07-5-applicability-rules.png)
 
 10. 点击 **“下一步”**。 在"**步骤 6 查看 + 创建**"中，查看已选择并输入的设置和信息，然后单击"创建 **"。**
 
@@ -260,6 +260,12 @@ ASR 规则支持环境变量和通配符。 有关使用通配符的信息，请
     ```PowerShell
     Add-MpPreference -AttackSurfaceReductionRules_Ids <rule ID> -AttackSurfaceReductionRules_Actions Warn
     ```
+
+    若要启用 ASR 阻止滥用被攻击的易受攻击的已签名驱动程序，请使用以下 cmdlet：
+
+   ```PowerShell
+   "& {&'Add-MpPreference' -AttackSurfaceReductionRules_Ids 56a863a9-875e-4185-98a7-b882c64b5ce5 -AttackSurfaceReductionRules_Actions Enabled"}
+   ```
 
     若要关闭 ASR 规则，请使用以下 cmdlet：
 

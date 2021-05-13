@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ROBOTS: NOINDEX, NOFOLLOW
 description: 如果启用了"将 AAD 与奖励链接"功能，则拥有个人 Microsoft 帐户的用户可以获得与工作搜索有关的 Microsoft 奖励点数。
-ms.openlocfilehash: 92a319d5917c49f0457a560fe52212608bd26dc2
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 8cbd88de530ec4aa566962bb74715dc9c417f296
+ms.sourcegitcommit: aff2331f9a3f22591f8ace1a646809969d28c120
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52297064"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52464338"
 ---
 # <a name="manage-microsoft-rewards"></a>管理 Microsoft 奖励
 
@@ -33,3 +33,13 @@ ms.locfileid: "52297064"
 对于具有未成年人的教育组织的管理员，需要具有家长 Microsoft 帐户的子用户才能参加 Microsoft 奖励。 家长帐户不会与学生的组织帐户关联。 有关适用于儿童的 Microsoft 帐户详细信息，请参阅 [家长同意和 Microsoft 子帐户](https://support.microsoft.com/account-billing/c6951746-8ee5-8461-0809-fbd755cd902e)。
 
 此功能不适用于政府用户。 管理员应确保其组织的合规性策略允许将个人 Microsoft 奖励帐户用于工作搜索。
+
+## <a name="related-content"></a>相关内容
+
+[设置 Microsoft 搜索](/microsoftsearch/setup-microsoft-search.md) (文章) 
+
+[支持在家工作的安全团队的 12](../../security/top-security-tasks-for-remote-work.md) 大 (文章) 
+
+[Microsoft 365 (](https://support.microsoft.com/en-us/office/what-s-new-in-microsoft-365-95c8d81d-08ba-42c1-914f-bca4603e1426)中的) 
+
+

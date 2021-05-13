@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: article
 description: 打开对 SharePoint 和 OneDrive 中标记和加密的文档启用共同创作和自动保存的设置。
-ms.openlocfilehash: 4b2c4551579d2609b66b5cd8fa8857f98b966a7d
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 6506f72a7ff663c1fc1c32ca22a562f1f8ad3e0a
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52297256"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52332722"
 ---
 # <a name="enable-co-authoring-for-files-encrypted-with-sensitivity-labels"></a>为使用敏感度标签加密的文件启用共同创作
 
@@ -84,7 +84,7 @@ ms.locfileid: "52297256"
 
 - 适用于企业的 Microsoft 365 应用：
     - **Windows**：预览： [频道（预览）](https://office.com/insider)
-    - **macOS**：预览： [Beta 频道](https://office.com/insider)
+    - **macOS**：预览： [当前频道（预览）](https://office.com/insider)
     - **iOS**：尚不支持
     - **Android**：尚不支持
 

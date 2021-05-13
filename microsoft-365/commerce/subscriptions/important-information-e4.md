@@ -17,15 +17,15 @@ ms.custom:
 - customer-email
 - commerce_subscriptions
 search.appverid: MET150
-ROBOTS: NOINDEX, NOFOLLOW
 description: 有关升级或更改使用 E4 订阅的客户计划Office 365重要信息。
+ROBOTS: NOINDEX, NOFOLLOW
 ms.date: 08/14/2020
-ms.openlocfilehash: 4cbaaf87205e9e4dc3df155342543d99e589acc5
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: 6ad72adc6904ee885dc4ce878a6e5c1fcc669263
+ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 05/12/2021
-ms.locfileid: "52333322"
+ms.locfileid: "52344658"
 ---
 # <a name="important-information-for-office-365-e4-customers"></a>适用于 E4 Office 365的重要信息
 
