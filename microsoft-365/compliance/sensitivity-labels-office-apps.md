@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: 适用于管理 Office 应用中针对桌面、移动和 Web 的敏感度标签的 IT 管理员的信息。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a9755542b608c8ed7d3cd93bebbd764fd56b9768
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: cb385ec5589af115ce1a0d323e3660def42179b9
+ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 05/12/2021
-ms.locfileid: "52332710"
+ms.locfileid: "52345760"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>管理 Office 应用中的敏感度标签
 
@@ -92,7 +92,7 @@ Office for iOS 和 Office for Android：敏感度标签内置于 [Office 应用]
 |[要求用户将标签应用于其电子邮件和文档](#require-users-to-apply-a-label-to-their-email-and-documents)   | 2101+                        | 16.43+ <sup>\*</sup>                    | 4.2111+            | 4.2111+                | 是                |
 |[审核标签相关的用户活动](data-classification-activity-explorer.md) | 2011+ | 审阅中 | 审阅中           | 审阅中               | 审阅中 |
 |[将敏感度标签自动应用于内容](apply-sensitivity-label-automatically.md)                    | 2009+                      | 16.44+ <sup>\*</sup>                    | 审阅中           | 审阅中               | 是 |
-|[默认标签和强制标签的不同设置](#outlook-specific-options-for-default-label-and-mandatory-labeling)                    | 推出预览版：[Beta 版频道](https://office.com/insider)                      | 16.43.1108+                   | 4.2111+           | 4.2111+               | 是 |
+|[默认标签和强制标签的不同设置](#outlook-specific-options-for-default-label-and-mandatory-labeling)                    | 2105+                      | 16.43.1108+                   | 4.2111+           | 4.2111+               | 是 |
 |
 
 **Footnotes:**

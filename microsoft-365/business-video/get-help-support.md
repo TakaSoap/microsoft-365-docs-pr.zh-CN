@@ -21,7 +21,7 @@ search.appverid:
 description: 了解如何在 Microsoft 365 商业高级版中获取管理员帮助或支持。
 ms.openlocfilehash: 8db4f7675f96bac2157c9c0f93ab506c8a39e1bb
 ms.sourcegitcommit: 68383240ef7a673d5f28e2ecfab9f105bf1d8c8f
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 05/11/2021
 ms.locfileid: "52327182"
@@ -43,7 +43,7 @@ ms.locfileid: "52327182"
 
 可通过在线发起服务请求节省时间。我们将帮助你查找解决方案，或请技术支持人员与你联系。
 
-1. 转到位于 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> 的管理中心。 如果您收到一条消息，指出您无权访问此页面或执行此操作，则不是管理员。 (有关详细信息，请参阅 Who 在我的公司中拥有管理员[权限？。](admin-center-overview.md#who-has-admin-permissions-in-my-business)) 
+1. 转到位于 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> 的管理中心。 如果收到消息，显示你无权访问此页或执行此操作，那么你应该不是管理员。（有关详细信息，请参阅[谁在我的公司中拥有管理员权限？](admin-center-overview.md#who-has-admin-permissions-in-my-business)。）
 
 2. 选择“**需要帮助?**”按钮。
 
@@ -215,7 +215,7 @@ Office 365 允许委派多个类型的管理员来行使不同的职能。此服
 
 ## <a name="feature-availability"></a>功能可用性
 
-若要查看跨 Office 365 计划的功能可用性，请参阅 [Office 365 服务说明](/office365/servicedescriptions/office-365-platform-service-description/office-365-operated-by-21vianet)。
+若要查看各个 Office 365 计划的功能可用性，请参阅 [Office 365 服务说明](/office365/servicedescriptions/office-365-platform-service-description/office-365-operated-by-21vianet)。
 
 ## <a name="follow-us-on-wechat"></a>在微信上关注我们
 
