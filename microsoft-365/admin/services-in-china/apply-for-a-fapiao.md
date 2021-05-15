@@ -24,7 +24,7 @@ monikerRange: o365-21vianet
 ms.date: 03/30/2021
 ms.openlocfilehash: 605e1bf001f6c6acb3a8b5044adeb66e110641b0
 ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 05/12/2021
 ms.locfileid: "52332458"
