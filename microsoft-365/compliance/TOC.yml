@@ -172,13 +172,11 @@
           href: office-365-service-encryption.md
         - name: 客户密钥
           items:
-            - name: 租户级 Microsoft 365 客户密钥（公共预览版）
-              href: customer-key-tenant-level.md
-            - name: 使用 Office 365 中的客户密钥执行服务加密
+            - name: Microsoft 365 中的客户密钥
               href: customer-key-overview.md
-            - name: 设置 Office 365 的客户密钥
+            - name: 设置 Microsoft 365 的客户密钥
               href: customer-key-set-up.md
-            - name: 管理 Office 365 的客户密钥
+            - name: 管理 Microsoft 365 的客户密钥
               href: customer-key-manage.md
             - name: 滚动或旋转客户密钥或可用性密钥
               href: customer-key-availability-key-roll.md
@@ -501,9 +499,11 @@
       items:
         - name: 内容搜索概述
           href: search-for-content.md
-        - name: 使用内容搜索
+        - name: 搜索内容
           href: content-search.md
           items:
+            - name: 内容搜索的功能参考
+              href: content-search-reference.md
             - name: 关键字查询和搜索条件
               href: keyword-queries-and-search-conditions.md
             - name: 预览电子数据展示搜索结果
@@ -663,32 +663,20 @@
               href: error-remediation-when-processing-data-in-advanced-ediscovery.md
             - name: 单个项目错误修正
               href: single-item-error-remediation.md
-        - name: 为案例收集内容（预览）
+        - name: 为案例收集内容
           items:
-            - name: 了解集合（预览）
+            - name: 了解集合
               href: collections-overview.md
-            - name: 创建一个草稿集合
+            - name: 创建草稿集合
               href: create-draft-collection.md
-            - name: 将一个草稿集合提交到审阅集中（预览）
+            - name: 将草稿集合提交到审阅集中
               href: commit-draft-collection.md
-            - name: 集合数据和报告（预览）
+            - name: 集合数据和报告
               href: collection-statistics-reports.md
             - name: 生成搜索查询内容集合
               href: building-search-queries.md
             - name: 关键字查询和搜索条件
               href: keyword-queries-and-search-conditions.md
-        - name: 收集事例数据
-          items:
-            - name: 创建搜索
-              href: create-search-to-collect-data.md
-            - name: 生成搜索查询
-              href: building-search-queries.md
-            - name: 关键字查询和搜索条件
-              href: keyword-queries-and-search-conditions.md
-            - name: 搜索统计信息
-              href: search-statistics-in-advanced-ediscovery.md
-            - name: 将搜索结果添加到审阅集
-              href: add-data-to-review-set.md
         - name: 管理审阅集
           href: managing-review-sets.md
           items:
@@ -840,6 +828,8 @@
       items:
         - name: 了解合规性管理器
           href: compliance-manager.md
+        - name: 合规性管理器新增功能
+          href: compliance-manager-whats-new.md
         - name: 合规性管理器快速入门
           href: compliance-manager-quickstart.md
         - name: 合规性管理器入门
