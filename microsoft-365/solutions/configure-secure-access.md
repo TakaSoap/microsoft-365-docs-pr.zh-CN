@@ -1,5 +1,5 @@
 ---
-title: 配置对 Microsoft 365 服务的安全访问
+title: 配置对服务的安全Microsoft 365访问
 description: 查找针对三层保护（基线、敏感、高度敏感）实施 MFA、条件访问和相关策略的规范性指南。
 ms.author: samanro
 author: samanro
@@ -19,6 +19,6 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 03/23/2021
 ms.locfileid: "51050882"
 ---
-# <a name="configure-secure-access-to-microsoft-365-services"></a><span data-ttu-id="cf262-103">配置对 Microsoft 365 服务的安全访问</span><span class="sxs-lookup"><span data-stu-id="cf262-103">Configure secure access to Microsoft 365 services</span></span>
+# <a name="configure-secure-access-to-microsoft-365-services"></a><span data-ttu-id="5e2d5-103">配置对服务的安全Microsoft 365访问</span><span class="sxs-lookup"><span data-stu-id="5e2d5-103">Configure secure access to Microsoft 365 services</span></span>
 
-<span data-ttu-id="cf262-104">此解决方案基于["M365 黄金配置](../security/defender-365-security/microsoft-365-policies-configurations.md)" -- 针对三层保护实现 MFA、条件访问和相关策略的指导：基线、敏感、高度敏感。</span><span class="sxs-lookup"><span data-stu-id="cf262-104">This solution is based on the "[M365 golden config](../security/defender-365-security/microsoft-365-policies-configurations.md)" -- prescriptive guidance for implementing MFA, conditional access, and related policies for three tiers of protection: baseline, sensitive, highly sensitive.</span></span>
+<span data-ttu-id="5e2d5-104">此解决方案基于["M365 黄金配置](../security/defender-365-security/microsoft-365-policies-configurations.md)" -- 针对三层保护实现 MFA、条件访问和相关策略的指导：基线、敏感、高度敏感。</span><span class="sxs-lookup"><span data-stu-id="5e2d5-104">This solution is based on the "[M365 golden config](../security/defender-365-security/microsoft-365-policies-configurations.md)" -- prescriptive guidance for implementing MFA, conditional access, and related policies for three tiers of protection: baseline, sensitive, highly sensitive.</span></span>
