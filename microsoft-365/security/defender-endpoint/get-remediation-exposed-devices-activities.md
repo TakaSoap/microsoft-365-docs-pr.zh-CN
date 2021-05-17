@@ -1,5 +1,5 @@
 ---
-title: 列出一个修正活动的公开设备
+title: 列出修正活动的暴露设备
 description: 返回有关指定修正任务的公开设备的信息。
 keywords: api， 修正， 修正 api， 获取， 修正任务， 修正公开的设备
 search.product: eADQiWindows 10XVcnh
@@ -22,7 +22,7 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 05/06/2021
 ms.locfileid: "52241708"
 ---
-# <a name="list-exposed-devices-of-one-remediation-activity"></a>列出一个修正活动的公开设备
+# <a name="list-exposed-devices-of-one-remediation-activity"></a>列出修正活动的暴露设备
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -62,10 +62,10 @@ ms.locfileid: "52241708"
 
 属性 (id)  | 数据类型 | 说明 | 示例
 :---|:---|:---|:---
-id | 字符串 | 设备 ID | w2957837fwda8w9ae7f023dba081059dw8d94503
-computerDnsName | 字符串 | 设备名称 | PC-SRV2012R2Foo.UserNameVldNet.local
-osPlatform | 字符串 | 设备操作系统 | WindowsServer2012R2
-rbacGroupName | 字符串 | 与此设备关联的设备组的名称 | 服务器
+id | String | 设备 ID | w2957837fwda8w9ae7f023dba081059dw8d94503
+computerDnsName | String | 设备名称 | PC-SRV2012R2Foo.UserNameVldNet.local
+osPlatform | String | 设备操作系统 | WindowsServer2012R2
+rbacGroupName | String | 与此设备关联的设备组的名称 | 服务器
 
 ## <a name="example"></a>示例
 

@@ -35,7 +35,7 @@ ms.locfileid: "52023194"
 - Microsoft 365 Defender
 - Microsoft Defender for Endpoint
 
-高级搜寻架构中的杂项设备事件或表包含有关各种事件类型的信息，包括安全控件触发的事件 `DeviceEvents` ，Windows Defender防病毒和 exploit Protection。 [](advanced-hunting-overview.md) 使用此参考来构建从此表返回信息的查询。
+高级搜寻架构中的杂项设备事件或表包含有关各种事件类型的信息，包括安全控件触发的事件，如Windows Defender 防病毒 `DeviceEvents` 和 Exploit Protection。 [](advanced-hunting-overview.md) 使用此参考来构建从此表返回信息的查询。
 
 >[!TIP]
 > 有关表支持的事件类型 () ，请使用安全中心中提供的内置架构 `ActionType` 参考。

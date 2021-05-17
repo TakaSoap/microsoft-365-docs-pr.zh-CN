@@ -1,5 +1,5 @@
 ---
-title: 高级电子数据展示的 CJK/Double 字节支持
+title: CJK/Double Byte 对 Advanced eDiscovery
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -15,7 +15,7 @@ search.appverid:
 - MET150
 ms.custom:
 - seo-marvel-apr2020
-description: 了解 Microsoft 365 中的高级电子数据展示如何支持使用双字节字符集的 CJK (CJK) 中文、日语和朝鲜语。
+description: Learn how Advanced eDiscovery in Microsoft 365 supports Chinese， Japanese， and Korean (CJK) languages， which use a double-byte character set.
 ms.openlocfilehash: ee47c5cd7f1a378ccfff05b8f7712e91092907cb
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -23,9 +23,9 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 03/19/2021
 ms.locfileid: "50926598"
 ---
-# <a name="cjk-language-support-for-advanced-ediscovery"></a>高级电子数据展示的 CJK 语言支持
+# <a name="cjk-language-support-for-advanced-ediscovery"></a>CJK 语言支持Advanced eDiscovery
 
-高级电子数据展示支持双字节字符集语言 (包括简体中文、繁体中文、日语和朝鲜语，这些语言统称为 *CJK* 语言) ，用于审阅集的以下高级方案：
+Advanced eDiscovery支持双字节字符集语言 (包括简体中文、繁体中文、日语和朝鲜语，这些语言统称为 *CJK* 语言) ，用于审阅集的以下高级方案：
 
 - 查询 [审阅集 内的数据时](review-set-search.md)。
 
@@ -33,11 +33,11 @@ ms.locfileid: "50926598"
 
 - 当你 [使用近重复检测、](analyzing-data-in-review-set.md) 电子邮件线程和主题分析来分析审阅集内的情况数据时。
 
-## <a name="frequently-asked-questions"></a>常见问题
+## <a name="frequently-asked-questions"></a>常见问题解答
 
 **如何创建搜索以收集包含 CJK 字符的项目？**
 
-在高级电子数据展示中搜索内容[](building-search-queries.md#keyword-searches)时，可以将[](keyword-queries-and-search-conditions.md)CJK 字符用于关键字搜索、关键字查询和搜索条件。 在核心电子数据展示和内容搜索中搜索内容时，也支持搜索 CJK 字符。
+在搜索关键字搜索中的内容时，[](building-search-queries.md#keyword-searches)可以将 CJK 字符用于关键字搜索、关键字查询和Advanced eDiscovery。 [](keyword-queries-and-search-conditions.md) 在核心电子数据展示和内容搜索中搜索内容时，也支持搜索 CJK 字符。
 
 我们针对所有搜索运算符和搜索条件 [](keyword-queries-and-search-conditions.md#search-operators)（包括布尔 [](keyword-queries-and-search-conditions.md#search-conditions)运算符 **AND** **、OR、NOT** 和 **NEAR）** 提供 CJK 支持。 
 
@@ -47,13 +47,13 @@ ms.locfileid: "50926598"
 
 这取决于你的搜索方案。
 
-- 在 [高级电子数据展示中](review-set-search.md) 查询审阅集内的数据时，可以搜索多种语言。
+- 在[查询评价集](review-set-search.md)内的数据时Advanced eDiscovery，可以搜索多种语言。
 
 - 创建 [搜索以收集数据时](create-search-to-collect-data.md)，请为所面向的每种语言创建单独的搜索。 例如，如果要搜索同时包含中文和朝鲜语的文档，请选择"中文"作为第一个查询，并选择"朝鲜语"作为第二个查询。
 
 **我看不到查询语言-国家/地区图标来选择审阅集内查询的语言。如何在审阅集搜索中指定查询语言？**
 
-对于审阅集查询，无需指定文档语言。 向审阅集添加内容时，高级电子数据展示自动检测文档语言。 这有助于在审阅集内优化查询结果。
+对于审阅集查询，无需指定文档语言。 Advanced eDiscovery内容添加到审阅集时自动检测文档语言。 这有助于在审阅集内优化查询结果。
 
 **能否在文件元数据中查看 [检测到的语言](view-documents-in-review-set.md#file-metadata)？**
 
@@ -69,7 +69,7 @@ ms.locfileid: "50926598"
 
 **如何将显示语言更改为中文、日语或朝鲜语？**
 
-若要了解如何更改显示语言和时区，请参阅如何为 [Office 365](/office365/troubleshoot/access-management/set-language-and-region)设置语言和地区设置。
+若要了解如何更改显示语言和时区，请参阅如何为用户设置语言和[Office 365。](/office365/troubleshoot/access-management/set-language-and-region)
 
 ## <a name="known-issues"></a>已知问题
 

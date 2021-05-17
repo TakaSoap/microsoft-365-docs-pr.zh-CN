@@ -27,13 +27,13 @@ ms.locfileid: "50925548"
 
 |**操作**|**说明**|
 |:---------|:--------------|
-| [编辑用户帐户属性](#edit-user-account-attributes) | 填写 Azure Active Directory 中可用于定义分段的属性。<br/>在用户未包括在用户应包含的分段中时编辑用户帐户属性，更改用户所在分段，或者使用不同的属性定义分段。 |
-| [编辑线段](#edit-a-segment) | 在需要更改线段定义时编辑线段。 <br/>例如，您可能最初使用 *Department* 定义了分段，但现在想要使用另一个属性，例如 *MemberOf*。 |
-| [编辑策略](#edit-a-policy) | 在想要更改策略的工作方式时编辑信息屏障策略。<br/>例如，你可能决定只允许在某些分段之间发生通信，而不是阻止两个段之间的通信。 |
+| [编辑用户帐户属性](#edit-user-account-attributes) | 在可用于定义Azure Active Directory填充属性。<br/>当用户未包含在自己本该在的区段时，请编辑用户帐户属性，以更改用户所在的区段，或使用不同的属性定义区段。 |
+| [编辑区段](#edit-a-segment) | 希望更改区段定义方式时编辑区段。 <br/>例如，您可能最初使用 *Department* 定义了分段，但现在想要使用另一个属性，例如 *MemberOf*。 |
+| [编辑策略](#edit-a-policy) | 想要更改策略的工作方式时，编辑信息屏障策略。<br/>例如，你可能决定只允许在某些分段之间发生通信，而不是阻止两个段之间的通信。 |
 | [将策略设置为非活动状态](#set-a-policy-to-inactive-status) |在想要更改策略时，或者不希望策略生效时，将策略设置为非活动状态。 |
 | [删除策略](#remove-a-policy) | 如果不再需要特定策略，请删除信息屏障策略。 |
 | [停止策略应用程序](#stop-a-policy-application) | 若要停止应用信息屏障策略的过程，请执行该操作。<br/> 停止策略应用程序不是即时的，它不会撤消已应用于用户的策略。 |
-| [定义信息屏障的策略](information-barriers-policies.md) | 如果尚未制定此类策略，并且必须限制或限制特定用户组之间的通信，请定义信息屏障策略。 |
+| [定义信息屏障策略](information-barriers-policies.md) | 如果尚未制定此类策略，并且必须限制或限制特定用户组之间的通信，请定义信息屏障策略。 |
 | [信息屏障疑难解答](information-barriers-troubleshooting.md) | 当您遇到信息障碍的意外问题时，请参阅本文。 |
 
 > [!IMPORTANT]
@@ -47,17 +47,17 @@ ms.locfileid: "50925548"
 
     |**语法**|**示例**|
     |:---------|:----------|
-    | `Get-InformationBarrierRecipientStatus -Identity <value> -Identity2 <value>` <p> 可以使用任何能够唯一标识每个用户的值，例如名称、别名、可分辨名称、规范域名、电子邮件地址或 GUID。 <p>  (也可以对单个用户使用此 cmdlet：) `Get-InformationBarrierRecipientStatus -Identity <value>` |`Get-InformationBarrierRecipientStatus -Identity meganb -Identity2 alexw` <p> 在此示例中，我们引用了 Office 365 中的两个用户帐户 *：Meganb* 表示 *Megan，alexw* 表示 *Alex。* |
+    | `Get-InformationBarrierRecipientStatus -Identity <value> -Identity2 <value>` <p> 可以使用任何能够唯一标识每个用户的值，例如名称、别名、可分辨名称、规范域名、电子邮件地址或 GUID。 <p>  (也可以对单个用户使用此 cmdlet：) `Get-InformationBarrierRecipientStatus -Identity <value>` |`Get-InformationBarrierRecipientStatus -Identity meganb -Identity2 alexw` <p> 本示例中，我们引用了 Office 365 中的两个用户帐户 *：meganb* 表示 *Megan，alexw* 表示 *Alex。*  |
 
 2. 确定要编辑用户帐户配置文件的属性 () 。 有关详细信息，请参阅 [信息屏障策略的属性](information-barriers-attributes.md)。 
 
 3. 编辑一个或多个用户帐户以包含你在上一步中所选的属性的值。 若要执行此操作，请使用以下过程之一：
 
-    - 若要编辑单个帐户，请参阅使用 [Azure Active Directory](/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal)添加或更新用户配置文件信息。
+    - 若要编辑单个帐户，请参阅使用帐户添加或更新[Azure Active Directory。](/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal)
 
-    - 若要编辑多个帐户 (或使用 PowerShell 编辑单个帐户) ，请参阅使用 [Office 365 PowerShell 配置用户帐户属性](../enterprise/configure-user-account-properties-with-microsoft-365-powershell.md)。
+    - 若要编辑多个帐户 (或使用 PowerShell 编辑单个帐户) ，请参阅 Configure user account [properties with Office 365 PowerShell](../enterprise/configure-user-account-properties-with-microsoft-365-powershell.md)。
 
-## <a name="edit-a-segment"></a>编辑线段
+## <a name="edit-a-segment"></a>编辑区段
 
 使用此过程可编辑用户区段的定义。 例如，您可以更改线段的名称，或更改用于确定该线段中包括哪些人使用的筛选器。
 
@@ -165,9 +165,9 @@ ms.locfileid: "50925548"
 ## <a name="resources"></a>资源
 
 - [获取信息屏障概述](information-barriers.md)
-- [定义信息屏障的策略](information-barriers-policies.md)
-- [详细了解 Microsoft Teams 中的信息屏障](/MicrosoftTeams/information-barriers-in-teams)
-- [详细了解 SharePoint Online 中的信息屏障](/sharepoint/information-barriers)
-- [详细了解 OneDrive 中的信息屏障](/onedrive/information-barriers)
+- [定义信息屏障策略](information-barriers-policies.md)
+- [详细了解信息障碍Microsoft Teams](/MicrosoftTeams/information-barriers-in-teams)
+- [详细了解 SharePoint Online 中的信息障碍](/sharepoint/information-barriers)
+- [详细了解信息障碍OneDrive](/onedrive/information-barriers)
 - [信息屏障策略的属性](information-barriers-attributes.md)
 - [信息屏障疑难解答](information-barriers-troubleshooting.md)

@@ -1,5 +1,5 @@
 ---
-title: Windows 和 Office 部署实验室工具包
+title: Windows和Office部署实验室工具包
 f1.keywords:
 - NOCSH
 ms.author: greglin
@@ -22,11 +22,11 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 04/27/2021
 ms.locfileid: "52060869"
 ---
-# <a name="windows-and-office-deployment-lab-kit"></a>Windows 和 Office 部署实验室工具包
+# <a name="windows-and-office-deployment-lab-kit"></a>Windows和Office部署实验室工具包
 
-Windows 和 Office 部署实验室工具包旨在帮助你规划、测试和验证运行 Windows 10 企业版和 Microsoft 365 企业应用版桌面的部署和管理。 工具包中的实验室包括使用 Microsoft Endpoint Configuration Manager、桌面分析、Office 自定义工具、OneDrive、Windows Autopilot 等。
+Windows和 Office 部署实验室工具包旨在帮助你规划、测试和验证运行 Windows 10 企业版 和 Microsoft 365 企业应用版 的桌面的部署Microsoft 365 企业应用版。 工具包中的实验室包括使用 Microsoft Endpoint Configuration Manager、桌面分析、Office自定义工具、OneDrive、Windows Autopilot 等。
 
-强烈建议准备升级到 Windows 10 的 Windows 8.1 的组织使用本工具包。 如果你当前使用的是 Windows 10、Microsoft 365 企业应用版（以前 (Office 365 专业增强版) 或 Office 2019，则适用。 作为隔离环境，生成的实验室非常适合探索部署工具更新和测试与部署相关的自动化。
+强烈建议准备升级到 Windows 8.1 的组织Windows 10。 如果当前使用的是 2019 Windows 10、Microsoft 365 企业应用版 (或 Office 365 专业增强版) ，Office适用。 作为隔离环境，生成的实验室非常适合探索部署工具更新和测试与部署相关的自动化。
 
 [下载 Windows 和 Office 部署实验室工具包](https://www.microsoft.com/evalcenter/evaluate-lab-kit)。
 
@@ -34,7 +34,7 @@ Windows 和 Office 部署实验室工具包旨在帮助你规划、测试和验�
 
 该工具包提供自动配置的虚拟实验室环境，包括加入域的桌面客户端、域控制器、Internet 网关和完全配置的 Configuration Manager 实例。 该工具包包含以下产品的最新评估版本：
 
-  - 新增内容！ Windows 10 企业版版本 20H2
+  - 新增内容！ Windows 10 企业版，版本 20H2
   - Windows 7 企业版
   - Microsoft Endpoint Configuration Manager，版本 2010*
   - 适用于 Windows 10 的 Windows 评估和部署工具包
@@ -47,7 +47,7 @@ Windows 和 Office 部署实验室工具包旨在帮助你规划、测试和验�
 生成的实验室旨在连接到以下试用版： 
 
   - Microsoft 365 E5
-  - 具有企业移动性 + 安全性的 Office 365 E5 (EMS) 
+  - Office 365使用 EMS 企业移动性 + 安全性 (E5) 
 
 ## <a name="step-by-step-labs"></a>分步实验室
 
@@ -61,41 +61,41 @@ Windows 和 Office 部署实验室工具包旨在帮助你规划、测试和验�
 
 ### <a name="prepare-configuration"></a>准备配置   
 
-- 优化 Windows 10 更新传递   
-- 使用组策略维护 Windows 10
-- 使用 Microsoft Intune 维护 Windows 10   
-- 使用 Configuration Manager 维护 Windows 10   
-- 使用 Configuration Manager 为 Microsoft 365 企业应用版提供服务   
-- 使用 Intune 为 Microsoft 365 企业应用版提供服务  
+- 优化Windows 10传递   
+- 使用Windows 10维护服务
+- 使用Windows 10服务Microsoft Intune   
+- 使用Windows 10管理器维护服务   
+- 使用Microsoft 365 企业应用版管理器维护服务   
+- 使用 Intune Microsoft 365 企业应用版服务服务  
 - 安全性和合规性   
 
 ### <a name="prepare-applications"></a>准备应用程序    
 
-- Office Toolkit准备情况  
+- Toolkit准备情况Office  
 - WIN32 应用程序的 MSIX 打包和转换   
 
 ### <a name="deploy-windows-10"></a>部署 Windows 10   
 
 - Configuration Manager 中的 OS 部署任务序列
-- Microsoft Deployment Toolkit (MDT) 
+- Microsoft Deployment Toolkit (MDT) 中的 OS 部署任务序列
 - Windows Autopilot
-- 部署和管理新的 Microsoft Edge  
+- 部署和管理新Microsoft Edge  
 
 ### <a name="deploy-microsoft-365-apps-for-enterprise"></a>部署 Microsoft 365 企业应用版    
 
 - 云托管部署  
 - 本地托管部署    
-- 在未加入 AD 的设备上部署 Microsoft 365 企业应用版 
-- 使用 Configuration Manager 的企业托管部署
-- 使用 Microsoft Intune 的企业托管部署  
-- 使用 Microsoft Intune 部署和管理 LOB
-- 部署 Microsoft Teams
+- Microsoft 365 企业应用版在未加入 AD 的设备上部署 
+- Enterprise Configuration Manager 管理部署
+- Enterprise托管部署Microsoft Intune  
+- LOB 部署和管理与Microsoft Intune
+- 部署Microsoft Teams
 
-### <a name="deploy-windows-virtual-desktop"></a>部署 Windows 虚拟桌面  
+### <a name="deploy-windows-virtual-desktop"></a>部署Windows虚拟桌面  
 
 - 准备、部署、优化
  
-## <a name="where-to-find-the-windows-and-office-deployment-lab-kit"></a>在哪里可以找到 Windows 和 Office 部署实验室工具包
+## <a name="where-to-find-the-windows-and-office-deployment-lab-kit"></a>在哪里可以找到 Windows Office 部署实验室工具包
 
 [下载 Windows 和 Office 部署实验室工具包](https://www.microsoft.com/evalcenter/evaluate-lab-kit)。
 

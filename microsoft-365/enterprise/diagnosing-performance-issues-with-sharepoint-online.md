@@ -30,15 +30,15 @@ ms.locfileid: "50927608"
 
 本文介绍了如何使用开发人员工具诊断 SharePoint Online Internet Explorer常见问题。
   
-有三种不同的方法可以确定 SharePoint Online 网站中的页面存在自定义项的性能问题。
+有三种不同的方法可以标识联机网站上页面SharePoint自定义项存在性能问题。
   
 - F12 工具栏网络监视器
 
 - 与非自定义基线的比较
 
-- SharePoint Online 响应头指标
+- SharePoint联机响应头指标
 
-本主题介绍如何使用其中每种方法诊断性能问题。 找到问题的原因后，您可以使用有关提高 SharePoint 性能的文章（可在 上找到）来寻求解决方案 https://aka.ms/tune 。
+本主题介绍如何使用其中每种方法诊断性能问题。 找到问题的原因后，可以使用有关提高性能SharePoint文章，找到解决方案 https://aka.ms/tune 。
   
 ## <a name="using-the-f12-tool-bar-to-diagnose-performance-in-sharepoint-online"></a>使用 F12 工具栏诊断 SharePoint Online 中的性能
 <a name="F12ToolInfo"> </a>
@@ -66,14 +66,14 @@ ms.locfileid: "50927608"
 ## <a name="setting-up-a-non-customized-baseline-for-sharepoint-online"></a>为 SharePoint Online 设置非自定义基线
 <a name="F12ToolInfo"> </a>
 
-确定网站性能较弱点的最佳方法就是，在 SharePoint Online 中设置全新的网站集。 这样，就可以将网站的所有方面与页面上没有自定义的内容进行比较。 OneDrive for Business 主页是不可能具有任何自定义的单独网站集的一个很好的示例。
+确定网站性能较弱点的最佳方法就是，在 SharePoint Online 中设置全新的网站集。 这样，就可以将网站的所有方面与页面上没有自定义的内容进行比较。 网站OneDrive for Business是单独的网站集的一个很好的示例，该网站集不可能具有任何自定义项。
   
-## <a name="viewing-sharepoint-response-header-information"></a>查看 SharePoint 响应头信息
+## <a name="viewing-sharepoint-response-header-information"></a>查看SharePoint头信息
 <a name="F12ToolInfo"> </a>
 
 在 SharePoint Online 中，可以访问在每个文件的响应标头中发送回浏览器的信息。 用于诊断性能问题的最有用值是 **SPRequestDuration，** 它显示服务器处理请求所花时间。 这可以帮助确定请求是否非常重且需要大量资源。 这是对服务器为页面提供服务所完成工作的最佳见解。
 
-### <a name="to-view-sharepoint-response-header-information"></a>查看 SharePoint 响应头信息
+### <a name="to-view-sharepoint-response-header-information"></a>查看SharePoint头信息
   
 1. 确保已安装 F12 工具。 有关下载和安装这些工具详细信息，请参阅 [F12 工具中的新增功能](/previous-versions/windows/internet-explorer/ie-developer/dev-guides/bg182632(v=vs.85))。
 
@@ -87,10 +87,10 @@ ms.locfileid: "50927608"
 
     ![显示响应头的 URL 的图表](../media/efc7076e-447e-447e-882a-ae3aa721e2c3.png)
   
-## <a name="whats-causing-performance-issues-in-sharepoint-online"></a>SharePoint Online 中导致性能问题的原因是什么？
+## <a name="whats-causing-performance-issues-in-sharepoint-online"></a>导致联机联机中出现性能问题SharePoint？
 <a name="F12ToolInfo"> </a>
 
-[SharePoint Online](navigation-options-for-sharepoint-online.md)的导航选项一文演示了使用 SPRequestDuration 值确定复杂的结构导航导致页面需要很长时间在服务器上处理的示例。 通过为没有自定义的 (网站集) ，可以确定加载任何给定文件是否需要很长时间。 [SharePoint Online 的导航选项](navigation-options-for-sharepoint-online.md)中使用的示例是主 .aspx 文件。 该文件包含大多数为页面 ASP.NET 运行的代码。 根据您使用的网站模板，如果自定义主页，这可以是 start.aspx、home.aspx、default.aspx 或其他名称。 如果此数字远高于基线网站，则说明您的页面中出现导致性能问题的复杂情况。
+SharePoint [Online](navigation-options-for-sharepoint-online.md)的导航选项一文演示了一个使用 SPRequestDuration 值确定复杂的结构导航导致页面需要很长时间在服务器上处理的示例。 通过为没有自定义的 (网站集) ，可以确定加载任何给定文件是否需要很长时间。 SharePoint Online[的](navigation-options-for-sharepoint-online.md)导航选项中使用的示例是主 .aspx 文件。 该文件包含大多数为页面 ASP.NET 运行的代码。 根据您使用的网站模板，如果自定义主页，这可以是 start.aspx、home.aspx、default.aspx 或其他名称。 如果此数字远高于基线网站，则说明您的页面中出现导致性能问题的复杂情况。
   
 在确定了特定于网站的问题后，确定导致性能不佳的原因的推荐方法就是消除所有可能的原因，如页面自定义，然后将它们一个一个地添加回网站。 删除页面运行良好的足够自定义项后，可以一个一个地添加返回特定自定义项。
   

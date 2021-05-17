@@ -34,7 +34,7 @@ Microsoft 托管桌面使用 [Windows Autopilot](/windows/deployment/windows-aut
 Microsoft 托管桌面在用于用户设备的 Autopilot 配置文件中使用这些设置：
 
 
-|Setting  |值  |
+|设置  |值  |
 |---------|---------|
 |部署模式 |  用户驱动       |
 |作为 加入 Azure AD     |  已加入 Azure AD       |
@@ -53,7 +53,7 @@ Microsoft 托管桌面在用于用户设备的 Autopilot 配置文件中使用�
 Microsoft 托管桌面将这些设置用于注册状态页面体验：
 
 
-|Setting  |值  |
+|设置  |值  |
 |---------|---------|
 |显示应用和配置文件配置进度     | 是        |
 |当安装时间超过指定分钟数时显示错误     |  60       |

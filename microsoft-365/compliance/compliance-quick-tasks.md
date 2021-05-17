@@ -100,7 +100,7 @@ Microsoft 提供了几个内置警报策略，可帮助识别管理员权限滥�
 
 敏感度标签、敏感信息类型、保留标签和策略以及可训练分类器可用于对 Exchange、SharePoint 和 OneDrive 中的敏感项目进行分类和标记，如前面的任务所见。 快速任务旅程中的最后一步是查看哪些项目已标记，以及用户正在针对这些敏感项目采取的操作。 [内容资源管理器](data-classification-content-explorer.md)[和活动资源管理器](data-classification-activity-explorer.md)提供此可见性。
 
-### <a name="content-explorer"></a>内容浏览器
+### <a name="content-explorer"></a>内容资源管理器
  内容资源管理器允许你以本机格式查看已分类为敏感信息类型或属于可训练分类器特定分类的所有项目，以及应用了敏感度或保留标签的所有项目。
 
 有关使用内容资源管理器的分步指南，请参阅了解数据 [-](data-classification-overview.md)数据分类概述和内容 [资源管理器入门](data-classification-content-explorer.md)。

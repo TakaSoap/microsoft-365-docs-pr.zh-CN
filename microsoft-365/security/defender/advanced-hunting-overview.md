@@ -28,7 +28,7 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 04/28/2021
 ms.locfileid: "52073957"
 ---
-# <a name="proactively-hunt-for-threats-with-advanced-hunting-in-microsoft-365-defender"></a>在 Microsoft 365 Defender 中通过高级搜寻主动搜寻威胁
+# <a name="proactively-hunt-for-threats-with-advanced-hunting-in-microsoft-365-defender"></a>在 defender 中通过高级搜寻主动Microsoft 365威胁
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -46,14 +46,14 @@ ms.locfileid: "52073957"
 
 你可以使用相同的威胁搜寻查询来构建自定义检测规则。 这些规则将自动运行，以检查并响应可疑的泄露活动、错误配置的计算机和其他发现。
 
-此功能类似于 Microsoft [Defender for Endpoint 中的高级搜寻](/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview)。 此功能在 Microsoft 365 安全中心中可用，它支持从检查更广泛的数据集的查询：
+此功能类似于 Microsoft [Defender for Endpoint 中的高级搜寻](/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview)。 此功能Microsoft 365安全中心中提供，它支持从中检查更广泛的数据集的查询：
 
 - Microsoft Defender for Endpoint
 - Microsoft Defender for Office 365
 - Microsoft Cloud App Security
 - Microsoft Defender for Identity
 
-若要使用高级搜寻， [请打开 Microsoft 365 Defender](m365d-enable.md)。
+若要使用高级搜寻，[请Microsoft 365 Defender。](m365d-enable.md)
 
 ## <a name="get-started-with-advanced-hunting"></a>高级搜寻入门
 
@@ -69,7 +69,7 @@ ms.locfileid: "52073957"
 | **创建自定义检测规则** | 了解如何使用高级搜寻查询来触发警报并自动执行响应操作。 | - [自定义检测概述](custom-detections-overview.md) <br />- [自定义检测规则](custom-detection-rules.md) |
 
 ## <a name="get-access"></a>获取访问权限
-若要使用高级搜寻或其他 [Microsoft 365 Defender](microsoft-365-defender.md) 功能，你需要在 Azure Active Directory 中担任适当的角色。 [阅读高级搜寻所需的角色和权限](custom-roles.md)。
+若要使用高级搜寻或其他[Microsoft 365 Defender](microsoft-365-defender.md)功能，你需要在高级搜索Azure Active Directory。 [阅读高级搜寻所需的角色和权限](custom-roles.md)。
 
 此外，对终结点数据的访问由基于角色的访问控制 (Microsoft Defender for Endpoint) RBAC 设置确定。 [阅读有关管理对 Microsoft 365 Defender 的访问权限](m365d-permissions.md)。
 

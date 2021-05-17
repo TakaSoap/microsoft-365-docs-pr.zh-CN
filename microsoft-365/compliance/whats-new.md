@@ -182,7 +182,7 @@ ms.locfileid: "52029036"
 - [了解敏感信息类型](https://docs.microsoft.com/microsoft-365/compliance/sensitive-information-type-learn-about)
 - [使用 PowerShell 创建自定义敏感信息类型](https://docs.microsoft.com/microsoft-365/compliance/create-a-custom-sensitive-information-type-in-scc-powershell)
 - [使用基于精确数据匹配的分类创建自定义敏感信息类型](https://docs.microsoft.com/microsoft-365/compliance/create-custom-sensitive-information-types-with-exact-data-match-based-classification)
-- [敏感信息类型实体定义](https://docs.microsoft.com/microsoft-365/compliance/sensitive-information-type-entity-definitions)
+- [敏感信息类型属性定义](https://docs.microsoft.com/microsoft-365/compliance/sensitive-information-type-entity-definitions)
 
 
 ### <a name="sensitivity-labels"></a>敏感度标签

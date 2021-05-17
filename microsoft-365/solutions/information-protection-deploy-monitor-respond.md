@@ -26,9 +26,9 @@ ms.locfileid: "50928420"
 ---
 # <a name="monitor-and-respond-to-data-privacy-incidents-in-your-organization"></a>监视和响应组织中数据隐私事件
 
-Microsoft 365 功能可用于帮助你在操作相关功能时监视、调查和响应贵组织的数据隐私事件。 为每项流程、过程和其他文档提供过程、过程和其他文档可能也很重要，以证明对监管机构的遵从性。
+Microsoft 365功能可帮助您在操作相关功能时监视、调查和响应组织的数据隐私事件。 为每项流程、过程和其他文档提供过程、过程和其他文档可能也很重要，以证明对监管机构的遵从性。
 
-具体包括： 
+其中包括： 
 
 - 审核和警报策略
 - 数据主体请求 (包括内容搜索和电子数据展示) 
@@ -56,7 +56,7 @@ Microsoft 365 功能可用于帮助你在操作相关功能时监视、调查和
 
 您的组织可能还希望出于其他目的（如其他合规性需求或出于业务原因）执行监视和响应活动。 应制定数据隐私的监视和响应方案，作为整体监视和响应规划、实施和管理的一部分。
 
-为了帮助你开始使用 Microsoft 365 中针对数据隐私法规的监视和响应方案，本文列出了 Microsoft 365 中用于回答如下问题的有用功能： 
+为了帮助你开始使用 Microsoft 365 中针对数据隐私法规的监视和响应方案，本文列出了 Microsoft 365 中用于回答以下问题的有用功能： 
 
 - 对于不同的数据类型和源，提供了哪类日常监视、调查和报告技术？
 - 需要哪些机制来处理 DSR 请求 (DSR) 任何修正操作（如匿名化、修订和删除）。
@@ -72,12 +72,12 @@ Microsoft 365 功能可用于帮助你在操作相关功能时监视、调查和
 
 ## <a name="data-subject-requests-for-the-gdpr-and-ccpa"></a>针对 GDPR 和 CCPA 的数据主体请求
 
-有关在 Microsoft 365 中响应 DSR 的信息，请参阅 GDPR 的数据主体请求和[CCPA。](/compliance/regulatory/gdpr-dsr-Office365)
+有关[响应 GDPR](/compliance/regulatory/gdpr-dsr-Office365)和 CCPA 中 DSR 的信息，请参阅 GDPR 和 CCPA Microsoft 365。
 
 ## <a name="manage-deleted-users-in-microsoft-stream"></a>在 Microsoft Stream 中管理已删除的用户
 
-对于 Microsoft Stream，从 Azure Active Directory (Azure AD) 中删除用户时，如果用户姓名与该时间点之前发布 Stream 视频相关联，则他们的电子邮件地址仍与该视频相关联。 请参阅 [从 Microsoft Stream 管理已删除的用户](/stream/managing-deleted-users) 以将其删除。
+对于 Microsoft Stream，当用户从 Azure Active Directory (Azure AD) 中删除时，如果他们的名称与该时间点之前发布 Stream 视频相关联，则他们的电子邮件地址仍与该视频相关联。 请参阅 [从 Microsoft Stream 管理已删除的用户](/stream/managing-deleted-users) 以将其删除。
 
 ## <a name="insider-risk-management-as-an-investigative-tool"></a>内部风险管理作为调查工具
 
-[Microsoft 365](../compliance/insider-risk-management.md) 中的内部风险管理是 Microsoft 合规性管理中心的一项功能，可帮助你通过检测、调查和操作组织中存在风险的活动来最大程度地降低内部风险。
+[Microsoft 365](../compliance/insider-risk-management.md)中的内部风险管理是 Microsoft 合规性管理中心的一项功能，通过该功能，您可以检测、调查和操作组织中存在风险的活动，从而帮助您将内部风险降至最低。

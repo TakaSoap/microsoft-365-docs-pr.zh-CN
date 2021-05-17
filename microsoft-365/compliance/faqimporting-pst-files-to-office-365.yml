@@ -31,7 +31,7 @@ sections:
   questions:
   - question: >
       在 Office 365 导入服务中创建导入作业需要哪些权限？
-    answer: "必须分配有 Exchange Online 中的邮箱导入导出角色，才能将 PST 文件导入到 Microsoft 365 邮箱。 默认情况下，不会向 Exchange Online 中任何角色组分配此角色。 您可以向“组织管理”角色组添加“邮箱导入导出”角色。 或者可以创建新的角色组，分配邮箱导入导出角色，然后将自己或其他用户添加为成员。 有关详细信息，请参阅[管理 Exchange Online 中的角色组](/Exchange/permissions-exo/role-groups)中的“向角色组添加角色”或“创建角色组”部分。\n  \n此外，若要在安全与合规中心创建导入作业，必须满足以下条件之一：\n  \n- 必须分配有 Exchange Onlin 中的“邮件收件人”角色。 默认情况下，此角色分配给“组织管理和收件人管理”角色组。\n    \n    或\n    \n- 必须是你组织中的全局管理员。\n    \n> [!TIP]\n> 请考虑在 Exchange Online 中创建新角色组，此角色组专门用于将 PST 文件导入 Office 365。 若要获取导入 PST 文件所需的最低级别权限，请将“邮件导入导出和邮件收件人”角色分配给新角色组，然后添加成员。 \n  \n"
+    answer: "必须分配有 Exchange Online 中的邮箱导入导出角色，才能将 PST 文件导入到 Microsoft 365 邮箱。 默认情况下，不会向 Exchange Online 中任何角色组分配此角色。 您可以向“组织管理”角色组添加“邮箱导入导出”角色。 或者可以创建新的角色组，分配邮箱导入导出角色，然后将自己或其他用户添加为成员。 有关详细信息，请参阅[管理 Exchange Online 中的角色组](/Exchange/permissions-exo/role-groups)中的“向角色组添加角色”或“创建角色组”部分。\n  \n此外，若要在安全与合规中心创建导入作业，必须满足以下条件之一：\n  \n- 在 Exchange Online 中必须分配有“邮件收件人”角色。默认情况下，此角色分配给“组织管理和收件人管理”角色组。\n    \n    或\n    \n- 必须是你组织中的全局管理员。\n    \n> [!TIP]\n> 请考虑在 Exchange Online 中创建新角色组，此角色组专门用于将 PST 文件导入 Office 365。 若要获取导入 PST 文件所需的最低级别权限，请将“邮件导入导出和邮件收件人”角色分配给新角色组，然后添加成员。 \n  \n"
   - question: >
       Where is network upload available?
     answer: "目前，在以下区域提供网络上传功能：美国、加拿大、巴西、英国、法国、德国、瑞士、挪威、欧洲、印度、东亚、东南亚、日本、韩国、澳大利亚和阿拉伯联合酋长国 (UAE)。该功能将很快在更多区域中提供。\n  \n"
@@ -82,7 +82,7 @@ sections:
       有关分步说明，请参阅使用驱动器寄送将[PST 文件导入Office 365。](use-drive-shipping-to-import-pst-files-to-office-365.md)
   - question: >
       在 Office 365 导入服务中创建导入作业需要哪些权限？
-    answer: "必须分配有邮箱导入导出角色，才能将 PST 文件导入到 Microsoft 365 邮箱。 默认情况下，不会向 Exchange Online 中任何角色组分配此角色。 您可以向“组织管理”角色组添加“邮箱导入导出”角色。 或者可以创建新的角色组，分配邮箱导入导出角色，然后将自己或其他用户添加为成员。 有关详细信息，请参阅[管理 Exchange Online 中的角色组](/Exchange/permissions-exo/role-groups)中的“向角色组添加角色”或“创建角色组”部分。\n  \n此外，若要在安全与合规中心创建导入作业，必须满足以下条件之一：\n  \n- 必须分配有 Exchange Onlin 中的“邮件收件人”角色。 默认情况下，此角色分配给“组织管理和收件人管理”角色组。\n    \n    或\n    \n- 必须是你组织中的全局管理员。\n    \n> [!TIP]\n> 请考虑在 Exchange Online 中创建新角色组，此角色组专门用于将 PST 文件导入 Office 365。 若要获取导入 PST 文件所需的最低级别权限，请将“邮件导入导出和邮件收件人”角色分配给新角色组，然后添加成员。 \n  \n"
+    answer: "必须分配有邮箱导入导出角色，才能将 PST 文件导入到 Microsoft 365 邮箱。 默认情况下，不会向 Exchange Online 中任何角色组分配此角色。 您可以向“组织管理”角色组添加“邮箱导入导出”角色。 或者可以创建新的角色组，分配邮箱导入导出角色，然后将自己或其他用户添加为成员。 有关详细信息，请参阅[管理 Exchange Online 中的角色组](/Exchange/permissions-exo/role-groups)中的“向角色组添加角色”或“创建角色组”部分。\n  \n此外，若要在安全与合规中心创建导入作业，必须满足以下条件之一：\n  \n- 在 Exchange Online 中必须分配有“邮件收件人”角色。默认情况下，此角色分配给“组织管理和收件人管理”角色组。\n    \n    或\n    \n- 必须是你组织中的全局管理员。\n    \n> [!TIP]\n> 请考虑在 Exchange Online 中创建新角色组，此角色组专门用于将 PST 文件导入 Office 365。 若要获取导入 PST 文件所需的最低级别权限，请将“邮件导入导出和邮件收件人”角色分配给新角色组，然后添加成员。 \n  \n"
   - question: >
       Where is drive shipping available?
     answer: "当前，美国、加拿大、巴西、英国、欧洲、印度、东亚地址、东南亚、日本、韩国和澳大利亚已推出驱动器传送。 不久之后，还会有更多地区推出驱动器传送。\n\n> [!NOTE]\n> 目前，不可在德国和瑞士使用驱动器发运导入 PST 文件。 当这些国家/地区提供驱动器发运功能后，此常见问题解答将更新。\n  \n"
@@ -163,7 +163,7 @@ sections:
   - question: >
       Can I use a custom courier shipping service, such as FedEx Custom Shipping, to ship my hard drive to Microsoft?
     answer: >
-      是。
+      是的。
   - question: >
       If I have to ship my hard drive to another country, is there anything I need to do?
     answer: The hard drive that you ship to Microsoft might have to cross international borders. 如果是，你有责任确保硬盘及其包含的数据是根据适用法律导入和/或导出的。 Before shipping a hard drive, check with your advisors to verify that your drive and data can legally be shipped to the specified Microsoft data center. This will help to ensure that it reaches Microsoft in a timely manner.

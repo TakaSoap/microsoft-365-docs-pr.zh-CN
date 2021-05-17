@@ -39,7 +39,7 @@ ms.locfileid: "52086735"
 您可能已经猜到，文档并非真的有指纹，只是"指纹"这个词可以表明其功能。 人的指纹各不相同，同理，文档的单词模式也各不相同。 上载文件时，DLP 标识文档中的唯一单词模式，基于该模式创建文档指纹，并使用该文档指纹检测包含相同模式的出站文档。 这也是为什么上载表单或模板可以创建最有效的文档指纹的原因。 填写表单的每个人使用相同的单词集，然后在文档中添加自己的词句。 只要出站文档不受密码保护且包含原始表单的所有文本，DLP 就可以确定文档是否与文档指纹匹配。
 
 > [!IMPORTANT]
-> 目前，DLP 可以将文档指纹用作仅联机Exchange检测方法。
+> 目前，DLP 只能在 Exchange Online 中将文档指纹用作检测方法。
 
 下列示例说明了当您基于父模板创建文档指纹时发生了什么，但您可以使用任何表单作为基础来创建文档指纹。
   
@@ -66,7 +66,7 @@ ms.locfileid: "52086735"
 
 ## <a name="use-powershell-to-create-a-classification-rule-package-based-on-document-fingerprinting"></a>使用 PowerShell 创建基于文档指纹的分类规则包
 
-请注意，当前只能使用安全与合规中心中的 PowerShell 创建文档 &amp; 指纹。 若要连接，请参阅[连接安全&中心 PowerShell。](/powershell/exchange/connect-to-scc-powershell)
+请注意，当前只能使用安全与合规中心中的 PowerShell 创建文档 &amp; 指纹。 若要连接，请参阅[连接到安全&合规中心 PowerShell。](/powershell/exchange/connect-to-scc-powershell)
 
 DLP 使用分类规则包检测敏感内容。 若要创建基于文档指纹的分类规则包，请使用 **New-DlpFingerprint** 和 **New-DlpSensitiveInformationType** cmdlet。 由于 **New-DlpFingerprint** 的结果不存储在数据分类规则外部，因此始终在同一 PowerShell 会话中运行 **New-DlpFingerprint** 和 **New-DlpSensitiveInformationType** 或 **Set-DlpSensitiveInformationType。** 以下示例基于文件 C:\My Documents\Contoso Employee Template.docx 创建新的文档指纹。 将新指纹存储为变量，以便可以在同一 PowerShell 会话中将新指纹与 **New-DlpSensitiveInformationType** cmdlet 一同使用。
   
@@ -91,7 +91,7 @@ New-DlpSensitiveInformationType -Name "Contoso Customer Confidential" -Fingerpri
 New-DlpComplianceRule -Name "ContosoConfidentialRule" -Policy "ConfidentialPolicy" -ContentContainsSensitiveInformation @{Name="Contoso Customer Confidential"} -BlockAccess $True
 ```
 
-您还可以使用邮件流规则中的数据分类规则包Exchange Online，如以下示例所示。 若要运行此命令，首先需要连接[Exchange Online PowerShell。](/powershell/exchange/connect-to-exchange-online-powershell) 另请注意，规则包需要一段时间才能从安全与合规中心同步到Exchange &amp; 中心。
+您还可以在 Exchange Online 的邮件流规则中使用数据分类规则包，如以下示例所示。 若要运行此命令，首先需要 [连接到 Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)。 另请注意，规则包从安全与合规中心同步到 Exchange &amp; 管理中心需要一些时间。
   
 ```powershell
 New-TransportRule -Name "Notify :External Recipient Contoso confidential" -NotifySender NotifyOnly -Mode Enforce -SentToScope NotInOrganization -MessageContainsDataClassification @{Name=" Contoso Customer Confidential"}

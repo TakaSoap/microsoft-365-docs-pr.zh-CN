@@ -204,7 +204,7 @@ Set-RetentionCompliancePolicy -Identity <retention policy GUID without prefix or
    Get-MailboxSearch $InPlaceHold.Name | FL Sources
    ```
 
-## <a name="more-information"></a>更多信息
+## <a name="more-information"></a>详细信息
 
 - **非活动邮箱是一种软删除邮箱。** 在 Exchange Online 中，软删除邮箱是指已删除但可以在特定保留期内恢复的邮箱。 A previously inactive mailbox will be available as a soft-deleted mailbox in Exchange Online for 183 days. 这意味着邮箱可以在软删除后 183 天内恢复。 183 天后，软删除邮箱将标记为永久删除且无法恢复。
 

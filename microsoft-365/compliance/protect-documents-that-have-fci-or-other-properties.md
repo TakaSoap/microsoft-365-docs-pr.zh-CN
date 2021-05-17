@@ -152,7 +152,7 @@ DLP 策略只需查找特定的属性名称/值对。 可以使用任何文档�
 
 ## <a name="more-information"></a>更多信息
 
-- [了解终结点数据丢失防护](dlp-learn-about-dlp.md)
+- [了解数据丢失防护](dlp-learn-about-dlp.md)
 
 - [从模板创建 DLP 策略](create-a-dlp-policy-from-a-template.md)
 

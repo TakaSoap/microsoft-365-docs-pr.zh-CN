@@ -1,5 +1,5 @@
 ---
-title: 在管理中心内管理Microsoft 365第三方应用许可证
+title: 在 Microsoft 365 管理中心管理第三方应用许可证
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -18,7 +18,7 @@ ms.custom:
 ms.reviewer: argani
 search.appverid:
 - MET150
-description: 了解如何在管理中心管理第三方Microsoft 365许可证。
+description: 了解如何在 Microsoft 365 管理中心管理第三方应用的许可证。
 ms.openlocfilehash: 91c2a75aefe28b3525996522f7fdd55d22524d43
 ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
 ms.translationtype: MT
@@ -26,7 +26,7 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 04/30/2021
 ms.locfileid: "52107712"
 ---
-# <a name="manage-third-party-app-licenses-in-the-microsoft-365-admin-center"></a>在管理中心内管理Microsoft 365第三方应用许可证
+# <a name="manage-third-party-app-licenses-in-the-microsoft-365-admin-center"></a>在 Microsoft 365 管理中心管理第三方应用许可证
 
 第三方应用是一种从除 Microsoft 外的软件供应商购买的应用。
 
@@ -36,7 +36,7 @@ ms.locfileid: "52107712"
 
 ## <a name="assign-third-party-app-licenses-to-users-or-groups"></a>向用户或组分配第三方应用许可证
 
-1. 在管理Microsoft 365中，转到"帐单  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">""许可证"</a>页面。
+1. 在 Microsoft 365 管理中心中，转到"帐单  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">""许可证"</a>页面。
 2. 选择要为其分配许可证的应用。
 3. 在许可证详细信息页面上，选择分配 **许可证**。
 4. 在 **"分配许可证"** 窗格中，开始键入用户或组的名称，然后从结果中选择它以将其添加到列表中。

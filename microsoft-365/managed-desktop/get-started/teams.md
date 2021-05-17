@@ -23,7 +23,7 @@ ms.locfileid: "50920652"
 
 ## <a name="initial-deployment"></a>初始部署
 
-大多数硬件供应商尚未将 Teams 作为映像的一部分，因此 Microsoft 托管桌面使用 Microsoft Intune 将 Teams 部署到你的设备。 所有托管设备都安装了 [Teams .msi](/MicrosoftTeams/msi-deployment#how-the-microsoft-teams-msi-package-works) 程序包，确保登录到设备的所有用户都准备好使用 Microsoft Teams。 程序包首次安装完成后，Teams 将自动启动，并将快捷方式添加到桌面。
+大多数硬件供应商尚未将 Teams 作为映像的一部分，因此 Microsoft 托管桌面使用 Microsoft Intune 将 Teams 部署到你的设备。 所有托管设备都安装了 [Teams .msi](/MicrosoftTeams/msi-deployment#how-the-microsoft-teams-msi-package-works) 程序包，从而确保登录到设备的所有用户都准备好使用 Microsoft Teams。 程序包首次安装完成后，Teams 将自动启动，并将快捷方式添加到桌面。
 
 ### <a name="microsoft-intune-changes"></a>Microsoft Intune 更改
 

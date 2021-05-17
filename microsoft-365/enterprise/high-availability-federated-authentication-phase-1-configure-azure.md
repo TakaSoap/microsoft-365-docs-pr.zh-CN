@@ -13,7 +13,7 @@ f1.keywords:
 - CSH
 ms.custom: Ent_Solutions
 ms.assetid: 91266aac-4d00-4b5f-b424-86a1a837792c
-description: 摘要：配置 Microsoft Azure 基础结构以托管 Microsoft 365 的高可用性联合身份验证。
+description: 摘要：配置 Microsoft Azure 基础结构，以承载 Microsoft 365 的高可用性联合身份验证。
 ms.openlocfilehash: 7f9a935648fedd2c6235c443f7398f97c0a06e06
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "50929104"
 ---
 # <a name="high-availability-federated-authentication-phase-1-configure-azure"></a>高可用性联合身份验证阶段 1：配置 Azure
 
-在此阶段，你将在 Azure 中创建资源组、虚拟网络 (VNet) 和可用性集，这些组将在第 2、3 和 4 阶段托管虚拟机。 必须先完成此阶段，然后才能进入阶段 [2：配置域控制器](high-availability-federated-authentication-phase-2-configure-domain-controllers.md)。 有关 [所有阶段，请参阅在 Azure 中为 Microsoft 365](deploy-high-availability-federated-authentication-for-microsoft-365-in-azure.md) 部署高可用性联合身份验证。
+在此阶段，你将在 Azure 中创建资源组、虚拟网络 (VNet) 和可用性集，这些组将在第 2、3 和 4 阶段托管虚拟机。 必须先完成此阶段，然后才能进入阶段 [2：配置域控制器](high-availability-federated-authentication-phase-2-configure-domain-controllers.md)。 请参阅[在 Azure 中为](deploy-high-availability-federated-authentication-for-microsoft-365-in-azure.md)Microsoft 365部署高可用性联合身份验证了解所有阶段。
   
 必须使用以下基本组件预配 Azure：
   
@@ -106,10 +106,10 @@ ms.locfileid: "50929104"
    
  **表 L：本地网络的地址前缀**
   
-现在，让我们开始构建 Azure 基础结构，以托管 Microsoft 365 的联合身份验证。
+现在，让我们开始构建 Azure 基础结构，以托管用于Microsoft 365。
   
 > [!NOTE]
-> [!注意] 下面的命令集使用最新版 Azure PowerShell。 请参阅 [Azure PowerShell 入门](/powershell/azure/get-started-azureps)。 
+> [!注意] 下面的命令集使用最新版 Azure PowerShell。 请参阅[开始Azure PowerShell。](/powershell/azure/get-started-azureps) 
   
 首先，启动 Azure PowerShell 提示符并登录到你的帐户。
   
@@ -118,7 +118,7 @@ Connect-AzAccount
 ```
 
 > [!TIP]
-> 若要根据自定义设置生成可运行的 PowerShell 命令块，请使用此 Microsoft [Excel 配置工作簿](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/O365FedAuthInAzure_Config.xlsx)。 
+> 若要根据自定义设置生成可运行的 PowerShell 命令块，请使用此Microsoft Excel[工作簿](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/O365FedAuthInAzure_Config.xlsx)。 
 
 使用以下命令获得订阅名称。
   
@@ -126,13 +126,13 @@ Connect-AzAccount
 Get-AzSubscription | Sort Name | Select Name
 ```
 
-对于较旧版本的 Azure PowerShell，请改为使用此命令。
+对于早期版本的 Azure PowerShell，请改为使用此命令。
   
 ```powershell
 Get-AzSubscription | Sort Name | Select SubscriptionName
 ```
 
-设置 Azure 订阅。 用正确的名称替换引号内 \< and > 的所有内容（包括字符）。
+设置 Azure 订阅。使用正确的名称替换引号内的所有内容（包括 \< and > 字符）。
   
 ```powershell
 $subscrName="<subscription name>"
@@ -159,25 +159,25 @@ Get-AzResourceGroup | Sort ResourceGroupName | Select ResourceGroupName
 使用这些命令创建新的资源组。
   
 ```powershell
-$locName="<an Azure location, such as West US>"
-$rgName="<Table R - Item 1 - Name column>"
+$locName="<an Azure location, such as West US>&quot;
+$rgName=&quot;<Table R - Item 1 - Name column>&quot;
 New-AzResourceGroup -Name $rgName -Location $locName
-$rgName="<Table R - Item 2 - Name column>"
+$rgName=&quot;<Table R - Item 2 - Name column>&quot;
 New-AzResourceGroup -Name $rgName -Location $locName
-$rgName="<Table R - Item 3 - Name column>"
+$rgName=&quot;<Table R - Item 3 - Name column>&quot;
 New-AzResourceGroup -Name $rgName -Location $locName
-$rgName="<Table R - Item 4 - Name column>"
+$rgName=&quot;<Table R - Item 4 - Name column>&quot;
 New-AzResourceGroup -Name $rgName -Location $locName
 ```
 
 接下来，创建 Azure 虚拟网络及其子网。
   
 ```powershell
-$rgName="<Table R - Item 4 - Resource group name column>"
-$locName="<your Azure location>"
-$vnetName="<Table V - Item 1 - Value column>"
-$vnetAddrPrefix="<Table V - Item 4 - Value column>"
-$dnsServers=@( "<Table D - Item 1 - DNS server IP address column>", "<Table D - Item 2 - DNS server IP address column>" )
+$rgName=&quot;<Table R - Item 4 - Resource group name column>&quot;
+$locName=&quot;<your Azure location>&quot;
+$vnetName=&quot;<Table V - Item 1 - Value column>&quot;
+$vnetAddrPrefix=&quot;<Table V - Item 4 - Value column>&quot;
+$dnsServers=@( &quot;<Table D - Item 1 - DNS server IP address column>&quot;, &quot;<Table D - Item 2 - DNS server IP address column>" )
 # Get the shortened version of the location
 $locShortName=(Get-AzResourceGroup -Name $rgName).Location
 
@@ -283,7 +283,7 @@ Get-AzPublicIpAddress -Name $publicGatewayVipName -ResourceGroupName $rgName
   
 在第 2、3 和 4 阶段中创建虚拟机时，将需要这些名称。
   
-使用这些 Azure PowerShell 命令创建新的可用性集。
+使用这些命令创建新的可用性Azure PowerShell集。
   
 ```powershell
 $locName="<the Azure location for your new resource group>"
@@ -300,9 +300,9 @@ New-AzAvailabilitySet -ResourceGroupName $rgName -Name $avName -Location $locNam
 
 这是该阶段成功完成后生成的配置。
   
-**第 1 阶段：Microsoft 365 高可用性联合身份验证的 Azure 基础结构**
+**阶段 1：用于高可用性联合身份验证的 Azure 基础结构Microsoft 365**
 
-![Azure 中具有 Azure 基础结构的高可用性 Microsoft 365 联合身份验证的第 1 阶段](../media/4e7ba678-07df-40ce-b372-021bf7fc91fa.png)
+![第 1 阶段的高可用性Microsoft 365 Azure 中的联合身份验证和 Azure 基础结构](../media/4e7ba678-07df-40ce-b372-021bf7fc91fa.png)
   
 ## <a name="next-step"></a>后续步骤
 
@@ -312,8 +312,8 @@ New-AzAvailabilitySet -ResourceGroupName $rgName -Name $avName -Location $locNam
 
 [在 Azure 中为 Microsoft 365 部署高可用性联合身份验证](deploy-high-availability-federated-authentication-for-microsoft-365-in-azure.md)
   
-[Microsoft 365 开发/测试环境的联合身份](federated-identity-for-your-microsoft-365-dev-test-environment.md)
+[用于开发/测试Microsoft 365联合标识](federated-identity-for-your-microsoft-365-dev-test-environment.md)
   
 [Microsoft 365 解决方案和体系结构中心](../solutions/index.yml)
 
-[了解 Microsoft 365 标识和 Azure Active Directory](about-microsoft-365-identity.md)
+[了解Microsoft 365标识和Azure Active Directory](about-microsoft-365-identity.md)

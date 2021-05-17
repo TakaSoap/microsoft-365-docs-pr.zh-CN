@@ -28,11 +28,11 @@ ms.locfileid: "50921500"
 ---
 # <a name="password-hash-synchronization-for-your-microsoft-365-test-environment"></a>Microsoft 365 测试环境的密码哈希同步
 
-*此测试实验室指南可用于 Microsoft 365 企业版和 Office 365 企业版测试环境。*
+*本测试实验室指南可用于企业Microsoft 365和Office 365 企业版环境。*
 
 许多组织使用 Azure AD Connect 和密码哈希同步来同步他们内部部署的 Active Directory 域服务 (AD DS) 林帐户集与 Microsoft 365 订阅的 Azure AD 租户帐户集。 
 
-本文介绍如何将密码哈希同步添加到 Microsoft 365 测试环境，这将生成此配置：
+本文介绍如何将密码哈希同步添加到Microsoft 365测试环境，这将生成此配置：
   
 ![使用密码哈希同步测试环境的模拟企业配置](../media/password-hash-sync-m365-ent-test-environment/Phase3.png)
   
@@ -42,11 +42,11 @@ ms.locfileid: "50921500"
 - [第 3 阶段：在 APP1 上安装 Azure AD Connect](#phase-3-install-azure-ad-connect-on-app1)
     
 > [!TIP]
-> 有关 Microsoft 365 企业版测试实验室指南堆栈中所有文章的直观地图，请转到 [Microsoft 365 企业版测试实验室指南堆栈](../downloads/Microsoft365EnterpriseTLGStack.pdf)。
+> 有关企业测试实验室指南堆栈中Microsoft 365文章的直观映射，请转到 Microsoft 365[企业测试实验室指南堆栈](../downloads/Microsoft365EnterpriseTLGStack.pdf)。
   
 ## <a name="phase-1-create-the-microsoft-365-simulated-enterprise-test-environment"></a>第 1 阶段：创建 Microsoft 365 模拟企业测试环境
 
-按照 Microsoft [365 的模拟企业基础配置中的说明进行操作](simulated-ent-base-configuration-microsoft-365-enterprise.md)。 生成的配置如下所示：
+按照模拟企业[基础配置中的说明操作Microsoft 365。](simulated-ent-base-configuration-microsoft-365-enterprise.md) 生成的配置如下所示：
   
 ![模拟企业基础配置](../media/password-hash-sync-m365-ent-test-environment/Phase1.png)
   
@@ -61,7 +61,7 @@ ms.locfileid: "50921500"
 
 首先，与公共 DNS 注册提供商合作，创建一个基于当前域名的新公共 DNS 域名，然后将其添加到订阅中。 我们建议使用名称 **testlab.<*公共域* >**。 例如，如果公共域名是 **<span>contoso</span>.com，** 请添加公共域名 **<span>：testlab</span>.contoso.com**。
   
-接下来，通过完成域注册 **< >** 将你的公共域域添加到 Microsoft 365 试用版或付费订阅。 这包括向公共域的 **testlab.<*添加其他 DNS* >** 记录。 有关详细信息，请参阅将[域添加到 Microsoft 365。](../admin/setup/add-domain.md)
+接下来，通过<注册过程，将你的公共域Microsoft 365 **testlab.Microsoft 365 >** 或付费订阅。 这包括向公共域的 **testlab.<*添加其他 DNS* >** 记录。 有关详细信息，请参阅将[域添加到Microsoft 365。](../admin/setup/add-domain.md)
 
 生成的配置如下所示：
   
@@ -69,7 +69,7 @@ ms.locfileid: "50921500"
   
 此配置包括：
 
-- 具有 DNS 域 testlab.<注册的公共域名的 Microsoft 365 E5 *试用版或付费*>订阅。
+- 注册Microsoft 365 E5域名为 dns 域 testlab.<*试用* 或付费>订阅。
 - 连接到 Internet 的简化的组织 Intranet，由 Azure 虚拟网络子网中的 DC1、APP1 和 CLIENT1 虚拟机组成。
 
 请注意您的公共域名<*testlab.>* 现在如何：
@@ -80,9 +80,9 @@ ms.locfileid: "50921500"
      
 ## <a name="phase-3-install-azure-ad-connect-on-app1"></a>第 3 阶段：在 APP1 上安装 Azure AD Connect
 
-在此阶段中，在 APP1 上安装和配置 Azure AD Connect 工具，然后验证它是否正常工作。
+在此阶段，在 APP1 上安装和配置 Azure AD 连接工具，然后验证它是否正常工作。
   
-首先，在 APP1 上安装和配置 Azure AD Connect。
+首先，在 APP1 上安装和连接 Azure AD 应用。
 
 1. 在 [Azure 门户](https://portal.azure.com)中，使用全局管理员帐户进行登录，再使用 TESTLAB\\User1 帐户连接到 APP1。
     
@@ -96,15 +96,15 @@ ms.locfileid: "50921500"
 
 3. 从任务栏中选择 **"Internet Explorer"，** 然后转到 [https://aka.ms/aadconnect](https://aka.ms/aadconnect) 。
     
-4. 在"Microsoft Azure Active Directory Connect"页上，选择 **"下载**"，然后选择"运行 **"。**
+4. 在"Microsoft Azure Active Directory 连接"页上，选择 **"下载"，** 然后选择"运行 **"。**
     
-5. 在"**欢迎使用 Azure AD Connect"** 页上，选择 **"我同意"，** 然后选择"继续 **"。**
+5. 在"**欢迎使用 Azure AD 连接** 页面上，选择 **"我同意"，** 然后选择"继续 **"。**
     
-6. 在"**快速设置"** 页上，选择 **"使用快速设置"。**
+6. 在 Express **设置** 页面上，选择 **"使用快速设置"。**
     
-7. 在"**连接到 Azure AD"** 页面上，在"用户名"中输入全局管理员帐户名称，在"密码"中输入其密码，然后选择"下一 **步"。**
+7. 在 **"连接 Azure AD"** 页面上，在"用户名"中输入全局管理员帐户名称，在"密码"中输入其密码，然后选择"下一 **步"。**
     
-8. 在"**连接到 AD DS"** 页上的"用户名"中输入 **TESTLAB \\ User1，** 在"密码"中输入其密码，然后选择"下一 **步"。** 
+8. 在 **"连接 AD DS"** 页上，在"用户名"中输入 **TESTLAB \\ User1，** 在"密码"中输入其密码，然后选择"下一 **步"。**
     
 9. 在"**准备配置"页上，** 选择"安装 **"。**
     
@@ -118,7 +118,7 @@ ms.locfileid: "50921500"
     
 13. 选择 **User1 帐户**，然后选择"**许可证和应用"。**
     
-14. 在 **"产品许可证**"中，根据需要选择 (位置) 禁用 **Office 365 E5** 许可证，然后启用 Microsoft **365 E5** 许可证。 
+14. 在 **"产品许可证**"中，根据需要选择 (位置) 禁用 Office 365 **E5** 许可证，然后启用 **Microsoft 365 E5许可证。** 
 
 15. 选择 **页面** 底部的"保存"，然后选择"关闭 **"。**
     
@@ -136,8 +136,8 @@ ms.locfileid: "50921500"
 
 此配置包括： 
   
-- 已注册域名为 TESTLAB.<的 Microsoft 365 E5 或 Office 365 E5 试用 *订阅或付费*>订阅。
-- 连接到 Internet 的简化的组织 Intranet，由 Azure 虚拟网络子网中的 DC1、APP1 和 CLIENT1 虚拟机组成。 Azure AD Connect 在 APP1 上运行，以定期将 TESTLAB AD DS 域同步到 Microsoft 365 订阅的 Azure AD 租户。
+- Microsoft 365 E5注册Office 365 DNS 域 TESTLAB.<注册的 E5 试用版或付费>订阅。 
+- 连接到 Internet 的简化的组织 Intranet，由 Azure 虚拟网络子网中的 DC1、APP1 和 CLIENT1 虚拟机组成。 Azure AD 连接 APP1 上运行，以定期将 TESTLAB AD DS 域同步到你的 Microsoft 365 租户。
 - TESTLAB  AD DS 域中的 User1 帐户已与 Azure AD 租户同步。
 
 ## <a name="next-step"></a>后续步骤

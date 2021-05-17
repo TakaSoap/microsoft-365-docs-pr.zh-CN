@@ -27,11 +27,11 @@ ms.locfileid: "50921476"
 ---
 # <a name="password-writeback-for-your-microsoft-365-test-environment"></a>Microsoft 365 测试环境的密码写回
 
-*本测试实验室指南仅适用于 Microsoft 365 企业版测试环境。*
+*本测试实验室指南只能用于Microsoft 365测试环境。*
 
 用户可以使用密码写回通过 Azure Active Directory (Azure AD) 更新其密码，然后复制到本地 Active Directory 域服务 (AD DS) 。 使用密码写回，用户不必通过存储其原始用户帐户的本地 AD DS 更新其密码。 这有助于没有到本地网络的远程访问连接的漫游或远程用户。
 
-本文介绍如何为 Microsoft 365 测试环境配置密码写回。
+本文介绍如何配置密码写Microsoft 365测试环境。
 
 配置密码写回的测试环境包括两个阶段：
 - [阶段 1：为 Microsoft 365 测试环境配置密码哈希同步](#phase-1-configure-password-hash-synchronization-for-your-microsoft-365-test-environment)
@@ -40,7 +40,7 @@ ms.locfileid: "50921476"
 ![Microsoft 云测试实验室指南](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
     
 > [!TIP]
-> 有关 Microsoft 365 企业版测试实验室指南堆栈中所有文章的直观地图，请转到 [Microsoft 365 企业版测试实验室指南堆栈](../downloads/Microsoft365EnterpriseTLGStack.pdf)。
+> 有关企业测试实验室指南堆栈中Microsoft 365文章的直观映射，请转到 Microsoft 365[企业测试实验室指南堆栈](../downloads/Microsoft365EnterpriseTLGStack.pdf)。
 
 ## <a name="phase-1-configure-password-hash-synchronization-for-your-microsoft-365-test-environment"></a>阶段 1：为 Microsoft 365 测试环境配置密码哈希同步
 
@@ -109,9 +109,9 @@ ms.locfileid: "50921476"
 
 4. 在"**其他任务"** 页上，选择"**自定义同步选项**"，然后选择"下一 **步"。**
 
-5. 在"**连接到 Azure AD"** 页上，输入全局管理员帐户凭据，然后选择"下一步 **"。**
+5. 在 **"连接 Azure AD"** 页上，输入全局管理员帐户凭据，然后选择"下一 **步"。**
 
-6. 在"**连接目录"** 和"**域/OU 筛选**"页上，选择"下一 **步"。**
+6. 在"连接"和 **"域/OU 筛选**"页上，选择"下一 **步"。** 
 
 7. 在"**可选功能"** 页上，选择 **"密码写回**"，然后选择"下一 **步"。**
 
@@ -127,7 +127,7 @@ ms.locfileid: "50921476"
 
 此配置包括：
 
-- 具有 DNS 域 TESTLAB 的 Microsoft 365 E5 试用版或付费订阅。\<*your domain name*> 。
+- 使用MICROSOFT 365 E5 TESTLAB 的试用或付费订阅。\<*your domain name*> 。
 - 连接到 Internet 的简化的组织 Intranet，由 Azure 虚拟网络子网中的 DC1、APP1 和 CLIENT1 虚拟机组成。
 - 在 APP1 上运行的 Azure AD Connect，用于将 Azure AD 租户中的帐户和组列表从 Microsoft 365 订阅同步到 TESTLAB AD DS 域。
 - 已启用密码写回，因此用户可以通过 Azure AD 更改其密码，而无需连接到简化的 Intranet。

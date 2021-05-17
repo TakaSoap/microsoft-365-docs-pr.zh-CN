@@ -65,7 +65,7 @@ ms.locfileid: "52024251"
 | `ProcessVersionInfoFileDescription` | string | 新创建的过程的版本信息中的说明 |
 | `ProcessId` | int | 新 (的进程) PID 进程 ID |
 | `ProcessCommandLine` | string | 用于创建新过程的命令行 |
-| `ProcessIntegrityLevel` | string | 新创建的过程的完整性级别。 Windows 根据某些特征（例如是否从下载的 Internet 启动）将完整性级别分配给进程。 这些完整性级别影响对资源的权限 |
+| `ProcessIntegrityLevel` | string | 新创建的过程的完整性级别。 Windows某些特征（例如是否从下载的 Internet 启动）为进程分配完整性级别。 这些完整性级别影响对资源的权限 |
 | `ProcessTokenElevation` | string | 指示应用于新创建进程的令牌提升的类型。 可能的值：TokenElevationTypeLimited (restricted) 、TokenElevationTypeDefault (standard) 和 TokenElevationTypeFull (提升)  |
 | `ProcessCreationTime` | datetime | 创建过程的日期和时间 |
 | `AccountDomain` | string | 帐户的域 |
@@ -80,7 +80,7 @@ ms.locfileid: "52024251"
 | `InitiatingProcessAccountUpn` | string | 用户主体 (UPN) 运行负责事件的进程的帐户的名称 |
 | `InitiatingProcessAccountObjectId` | string | 运行负责事件的进程的用户帐户的 Azure AD 对象 ID |
 | `InitiatingProcessLogonId` | string | 启动事件的进程的登录会话的标识符。 此标识符仅在重新启动之间在同一计算机上是唯一的。 |
-| `InitiatingProcessIntegrityLevel` | string | 启动事件的过程的完整性级别。 Windows 根据某些特征（例如是否从 Internet 下载启动）将完整性级别分配给进程。 这些完整性级别影响对资源的权限 |
+| `InitiatingProcessIntegrityLevel` | string | 启动事件的过程的完整性级别。 Windows某些特征（例如是否从 Internet 下载启动）为进程分配完整性级别。 这些完整性级别影响对资源的权限 |
 | `InitiatingProcessTokenElevation` | string | 指示是否存在用户访问控制的令牌类型 (UAC) 启动事件的进程应用的特权提升 |
 | `InitiatingProcessSHA1` | string | 启动事件 (映像) 的 SHA-1 |
 | `InitiatingProcessSHA256` | string | 启动事件 (映像文件) SHA-256。 通常不会填充此字段 — 可用时使用 SHA1 列。 |

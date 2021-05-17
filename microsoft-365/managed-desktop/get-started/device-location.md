@@ -1,6 +1,6 @@
 ---
 title: Windows 10 位置服务
-description: 如何为设备打开 Windows 定位服务
+description: 如何为Windows启用定位服务
 keywords: Microsoft 托管桌面, Microsoft 365, 服务, 文档
 ms.service: m365-md
 author: jaimeo
@@ -21,31 +21,31 @@ ms.locfileid: "50929461"
 ---
 # <a name="windows-10-location-service"></a>Windows 10 位置服务
 
-Microsoft 托管桌面中的设备是使用 Windows Autopilot 注册的。 此过程允许我们使用 Azure Active Directory 和 Microsoft Intune 管理它们。 默认情况下，当设备首次打开时，Windows 10 位置服务处于禁用状态，除非在"开箱即用体验"期间的隐私设置中启用了此功能。 这些设置在 Microsoft 托管桌面的 Autopilot 注册过程中隐藏。 For more information about how Autopilot is set up， see [First-run experience with Autopilot and the Enrollment Status Page](esp-first-run.md).
+设备中的Microsoft 托管桌面使用 Autopilot Windows注册。 通过此过程，我们Azure Active Directory和Microsoft Intune。 默认情况下，Windows 10设备首次打开时禁用定位服务，除非在"开箱即用体验"期间的隐私设置中启用此功能。 这些设置在 Autopilot 注册期间Microsoft 托管桌面。 For more information about how Autopilot is set up， see [First-run experience with Autopilot and the Enrollment Status Page](esp-first-run.md).
 
-因此，Microsoft 托管桌面设备无法获取其设备位置，这将限制多个 Windows 功能（如时区）的功能。 有关 Windows 10 位置服务详细信息，请参阅 [Windows 10 位置服务和隐私](https://support.microsoft.com/windows/windows-10-location-service-and-privacy-3a8eee0a-5b0b-dc07-eede-2a5ca1c49088)。
+因此，Microsoft 托管桌面设备无法获取其设备位置，这将限制多个Windows功能（如时区）的功能。 有关定位服务Windows 10，请参阅Windows 10[定位服务和隐私](https://support.microsoft.com/windows/windows-10-location-service-and-privacy-3a8eee0a-5b0b-dc07-eede-2a5ca1c49088)。
 
-你不必使用定位服务才能参与 Microsoft 托管桌面，但用户体验将受到限制。 例如，当用户在不同的时区工作时，设备将无法自动确定它们所在的时区。
+你不必使用定位服务才能参与Microsoft 托管桌面，但用户体验将受到限制。 例如，当用户在不同的时区工作时，设备将无法自动确定它们所在的时区。
 
 ## <a name="enable-the-location-service"></a>启用定位服务
 
-在将设备注册到 Microsoft 托管桌面服务时，可以选择使用定位服务，也可以注册后打开或关闭该服务。
+当你将设备注册到 Microsoft 托管桌面 服务时，你可以选择使用定位服务，或者可以在注册后打开或关闭该服务。
 
 ### <a name="opt-in-during-enrollment"></a>在注册期间选择加入
 
-您可以让 Microsoft 托管桌面服务启用定位服务。 在注册序列中，将要求你选择是否要允许在设备上启用 Windows 10 定位服务。
+您可以让Microsoft 托管桌面启用定位服务。 在注册序列期间，将要求你选择是否要允许在设备上Windows 10定位服务。
 
 ### <a name="control-the-location-service-after-enrollment"></a>注册后控制定位服务
 
 通过管理门户提交支持 (，) 定位服务处于打开状态或[关闭状态](access-admin-portal.md)。 [](../working-with-managed-desktop/admin-support.md)
 
-## <a name="how-microsoft-managed-desktop-configures-the-windows-10-location-service"></a>Microsoft 托管桌面如何配置 Windows 10 定位服务
+## <a name="how-microsoft-managed-desktop-configures-the-windows-10-location-service"></a>如何Microsoft 托管桌面配置Windows 10定位服务
 
-如果你选择使用定位服务，我们将使用所需的最低设置，而不会影响用户的隐私。 有关详细信息，请参阅 [Windows 10 位置服务和隐私](https://support.microsoft.com/windows/windows-10-location-service-and-privacy-3a8eee0a-5b0b-dc07-eede-2a5ca1c49088)。
+如果你选择使用定位服务，我们将使用所需的最低设置，而不会影响用户的隐私。 有关详细信息，请参阅Windows 10[服务和隐私](https://support.microsoft.com/windows/windows-10-location-service-and-privacy-3a8eee0a-5b0b-dc07-eede-2a5ca1c49088)。
 
-Microsoft 托管桌面将 Windows 设置 **中的**"位置隐私"**设置** 启用为 **"允许访问此设备上的位置"。** 用户界面如下所示：
+Microsoft 托管桌面启用"位置 **隐私**"设置Windows **设置以****允许访问此设备上的位置**。 用户界面如下所示：
 
- :::image type="content" source="../../media/MMD-location-services-UI.png" alt-text="Windows 设置中的位置设置":::
+ :::image type="content" source="../../media/MMD-location-services-UI.png" alt-text="位置设置Windows设置":::
 
 > [!NOTE]
-> 如果你选择使用位置服务，这仅适用于 Windows 操作系统本身。 不允许应用使用位置服务。 每个用户都可以选择是否允许应用访问其位置。
+> 如果你选择使用定位服务，这仅适用于Windows操作系统本身。 不允许应用使用位置服务。 每个用户都可以选择是否允许应用访问其位置。

@@ -78,7 +78,7 @@ ms.locfileid: "52023709"
   
 |**任务**|**查找详细信息**|
 |:-----|:-----|
-|登录到 Office  <br/> |转到 [https://www.office.com](https://www.office.com) ，选择 **登录**，然后输入你的用户 ID 和密码。  <br/> |
+|登录 Office  <br/> |转到 [https://www.office.com](https://www.office.com) ，选择 **登录**，然后输入你的用户 ID 和密码。  <br/> |
 |将 Office 应用安装到您的计算机上。  <br/><br/> |登录时，主页具有下载和安装 Word 和 Outlook 等应用的链接。  选择 **"安装 Office"。**         有关说明，请参阅[如何安装 Office。](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658)  <br/> |
 |在 Outlook 2016 中设置电子邮件。  <br/> |在计算机上安装 Office 应用后，设置电子邮件。 有关说明，[请参阅如何设置 Outlook。](https://support.microsoft.com/office/6e27792a-9267-4aa4-8bb6-c84ef146101b)  <br/> |
 |设置 Skype for Business，以便你可以与公司或世界各地的同事或业务合作伙伴联系。 可以使用 IM、语音或视频呼叫开始对话。  <br/> |[在计算机上安装 Skype for Business。](https://support.microsoft.com/office/8a0d4da8-9d58-44f9-9759-5c8f340cb3fb)  <br/> <br/>若要了解如何使用 Skype for Business， [请观看视频。](https://support.microsoft.com/office/3a21eca4-434d-41f1-ab06-3d4a268573b7) <br/> <br/>你已设置 Skype for Business，以便你的员工可以联系你的企业外部使用免费 Skype 应用的人员吗？ 如果没有，请告知你的新员工，以便他们了解使用 Skype for Business 时预期的结果。  <br/> |

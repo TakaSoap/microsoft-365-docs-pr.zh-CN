@@ -1,6 +1,6 @@
 ---
 title: Microsoft 365 设备管理指南
-keywords: Microsoft 365， Microsoft 365 企业版， Microsoft 365 文档， 移动设备管理， Intune
+keywords: Microsoft 365、Microsoft 365企业版、Microsoft 365文档、移动设备管理、Intune
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
@@ -14,7 +14,7 @@ ms.technology: ''
 ms.assetid: fb4182e6-5e78-45d0-9641-d791c4519441
 audience: ITPro
 ms.custom: microsoft-intune
-description: 设置 Microsoft 365 设备管理的路线图。
+description: 为设备设置设备管理的Microsoft 365。
 ms.openlocfilehash: ec284a96fc8e7285f89e8a909b76c782b4469ce1
 ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
@@ -24,7 +24,7 @@ ms.locfileid: "51051456"
 ---
 # <a name="device-management-roadmap-for-microsoft-365"></a>Microsoft 365 设备管理指南
 
-Microsoft 365 企业版包括可帮助在组织中管理设备及其应用的功能。 管理移动设备可帮助您保护组织的资源。
+Microsoft 365企业版包括可帮助在组织中管理设备及其应用的功能。 管理移动设备可帮助您保护组织的资源。
 
 设备管理有两个选项：
 
@@ -33,15 +33,15 @@ Microsoft 365 企业版包括可帮助在组织中管理设备及其应用的功
 
 ## <a name="microsoft-intune"></a>Microsoft Intune
 
-可以使用 Microsoft Intune 通过移动设备管理或移动应用程序管理来管理对组织的访问权限。 移动设备管理是当用户在 Intune 中"注册"其设备时。 注册设备后，它是托管设备;因此，它可以接收组织的策略、规则和设置。 例如，你可以安装特定应用、创建密码策略、安装 VPN 连接等。
+可以使用Microsoft Intune移动设备管理或移动应用程序管理来管理对组织的访问权限。 移动设备管理是当用户在 Intune 中"注册"其设备时。 注册设备后，它是托管设备;因此，它可以接收组织的策略、规则和设置。 例如，你可以安装特定应用、创建密码策略、安装 VPN 连接等。
 
-具有其自己的个人设备的用户可能不希望注册其设备或由 Intune 和组织的策略进行管理。 但仍需要保护组织的资源和数据。 在此方案中，可以使用移动应用程序管理来保护应用。 例如，可以使用移动应用程序管理策略，要求用户在设备上访问 SharePoint Online 时输入 PIN。
+具有其自己的个人设备的用户可能不希望注册其设备或由 Intune 和组织的策略进行管理。 但仍需要保护组织的资源和数据。 在此方案中，可以使用移动应用程序管理来保护应用。 例如，可以使用移动应用程序管理策略，要求用户在访问 SharePoint Online 时输入 PIN。
 
 你还将确定如何管理个人设备和组织拥有的设备。 你可能希望以不同方式处理设备，具体取决于设备的用途。
 
 ## <a name="basic-mobility-and-security"></a>基本移动性和安全性
 
-这内置于 Microsoft 365 中，可帮助你保护和管理用户的移动设备，如 iPhone、iPad、Android 和 Windows 手机。 可以创建和管理设备安全策略，远程擦除设备，以及查看详细的设备报告。
+这内置于 Microsoft 365，可帮助你保护和管理用户的移动设备，如 iPhone、iPad、Android 和 Windows 手机。 可以创建和管理设备安全策略，远程擦除设备，以及查看详细的设备报告。
 
 ## <a name="choose-between-the-two-options"></a>在两个选项中进行选择
 
@@ -59,6 +59,6 @@ Microsoft 提供了一组有关[身份和设备访问](../security/defender-365-
 - [先决条件](../security/defender-365-security/identity-access-prerequisites.md)
 - [常见标识和设备访问策略](../security/defender-365-security/identity-access-policies.md)
 
-## <a name="how-contoso-did-device-management-for-microsoft-365"></a>Contoso 如何管理 Microsoft 365 的设备
+## <a name="how-contoso-did-device-management-for-microsoft-365"></a>Contoso 如何管理设备Microsoft 365
 
-有关虚构但具有代表性的多方企业如何使用 Microsoft 365 云服务部署其移动设备管理基础结构的信息，请参阅 [Contoso](contoso-mdm.md)移动设备管理。
+有关虚构但具有代表性的跨国家/公司如何使用 Microsoft 365 部署其移动设备管理基础结构的信息，请参阅[Contoso](contoso-mdm.md)移动设备管理。

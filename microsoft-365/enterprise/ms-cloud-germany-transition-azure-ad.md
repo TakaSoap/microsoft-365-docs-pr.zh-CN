@@ -119,7 +119,7 @@ ms.locfileid: "50923846"
 
 - 租户迁移后，将在 Office 365 Germany 门户和 Office 365 门户中显示有关 Azure AD Connect 版本的警告。 如果迁移完成后版本警告不再显示警告，可以忽略此警告。 如果在迁移之前或之后在任一门户中出现警告，则必须更新 Azure AD Connect。 警告消息显示："我们检测到你正在使用过时的目录同步工具。 我们建议你转到 Microsoft 下载中心，获取最新版本的 Azure AD Connect。"
 
-## <a name="more-information"></a>更多信息
+## <a name="more-information"></a>详细信息
 
 入门：
 

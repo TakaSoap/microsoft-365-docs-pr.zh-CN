@@ -1,6 +1,6 @@
 ---
 title: 信息屏障策略的属性
-description: 本文是 Azure Active Directory 用户帐户属性的参考，可用于定义信息屏障分段。
+description: 本文是一个参考，Azure Active Directory可用于定义信息屏障分段的用户帐户属性。
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -22,13 +22,13 @@ ms.locfileid: "50919728"
 ---
 # <a name="attributes-for-information-barrier-policies"></a>信息屏障策略的属性
 
-Azure Active Directory 中的某些属性可用于划分用户。 定义段后，这些线段可以用作信息屏障策略的筛选器。 例如，可以使用部门按组织内部的部门定义用户细分 (假定没有单个员工同时为两个部门工作) 。
+网站中的某些Azure Active Directory可用于划分用户。 定义段后，这些线段可以用作信息屏障策略的筛选器。 例如，可以使用部门按组织内部的部门定义用户细分 (假定没有单个员工同时为两个部门工作) 。
 
 本文介绍如何将属性与信息障碍一同使用，并提供了可以使用的属性列表。 若要了解有关信息屏障详细信息，请参阅以下资源：
 
 - [信息屏障](information-barriers.md)
-- [在 Microsoft Teams 中定义信息屏障策略](information-barriers-policies.md)
-- [编辑 (或删除) 信息屏障策略](information-barriers-edit-segments-policies.md)
+- [定义信息屏障策略Microsoft Teams](information-barriers-policies.md)
+- [编辑（删除）信息屏障策略](information-barriers-edit-segments-policies.md)
 
 ## <a name="how-to-use-attributes-in-information-barrier-policies"></a>如何在信息屏障策略中使用属性
 
@@ -38,9 +38,9 @@ Azure Active Directory 中的某些属性可用于划分用户。 定义段后�
 
 2. 确保用户帐户已针对在步骤 1 中 (属性) 填充值。 查看用户帐户详细信息，如有必要，编辑用户帐户以包括属性值。 
 
-    - 若要编辑多个帐户 (或使用 PowerShell 编辑单个帐户) ，请参阅使用 [Office 365 PowerShell 配置用户帐户属性](../enterprise/configure-user-account-properties-with-microsoft-365-powershell.md)。
+    - 若要编辑多个帐户 (或使用 PowerShell 编辑单个帐户) ，请参阅 Configure user account [properties with Office 365 PowerShell](../enterprise/configure-user-account-properties-with-microsoft-365-powershell.md)。
 
-    - 若要编辑单个帐户，请参阅使用 [Azure Active Directory](/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal)添加或更新用户配置文件信息。
+    - 若要编辑单个帐户，请参阅使用帐户添加或更新[Azure Active Directory。](/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal)
 
 3. [使用 PowerShell](information-barriers-policies.md#define-segments-using-powershell)定义分段，与以下示例类似：
 
@@ -57,10 +57,10 @@ Azure Active Directory 中的某些属性可用于划分用户。 定义段后�
 
 下表列出了可用于信息障碍的属性。
 
-|**LDAP (Azure Active Directory <br/> 显示名称)**|**Exchange 属性名称**|
+|**Azure Active Directory LDAP (<br/> 属性显示名称)**|**Exchange属性名称**|
 |:---------------------------------------------------------------|:-------------------------|
 | Co | Co |
-| Company | 公司 |
+| 公司 | 公司 |
 | Department | Department |
 | ExtensionAttribute1 | CustomAttribute1 |
 | ExtensionAttribute2 | CustomAttribute2 |
@@ -96,6 +96,6 @@ Azure Active Directory 中的某些属性可用于划分用户。 定义段后�
 
 ## <a name="resources"></a>资源
 
-- [在 Microsoft Teams 中定义信息屏障策略](information-barriers-policies.md)
+- [定义信息屏障策略Microsoft Teams](information-barriers-policies.md)
 - [信息屏障疑难解答](information-barriers-troubleshooting.md)
 - [信息屏障](information-barriers.md)

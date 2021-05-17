@@ -25,16 +25,16 @@ ms.locfileid: "50924764"
 ---
 # <a name="use-powershell-to-perform-an-imap-migration-to-microsoft-365"></a>使用 PowerShell 将 IMAP 迁移到 Microsoft 365
 
-*本文适用于 Microsoft 365 企业版和 Office 365 企业版。*
+*此文章适用于 Microsoft 365 企业版和 Office 365 企业版。* 
 
-作为 Microsoft 365 部署过程的一部分，可以选择将 Internet 邮件访问协议 (IMAP) 电子邮件服务中的用户邮箱内容迁移到 Microsoft 365。 本文将向您介绍如何通过 Exchange Online PowerShell 执行电子邮件 IMAP 迁移的任务。 
+作为部署 Microsoft 365 过程的一部分，您可以选择将 Internet 邮件访问协议 (IMAP) 电子邮件服务中的用户邮箱内容迁移到 Microsoft 365。 本文将向您介绍如何通过 Exchange Online PowerShell 执行电子邮件 IMAP 迁移的任务。 
   
 > [!NOTE]
 > 您还可以使用 Exchange 管理中心来执行 IMAP 迁移。 请参阅 [迁移 IMAP 邮箱](/Exchange/mailbox-migration/migrating-imap-mailboxes/migrating-imap-mailboxes)。 
   
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>在开始之前，您需要知道什么？
 
-估计完成该任务的时间：2-5 分钟，用于创建迁移批处理。 迁移批处理启动后，迁移的持续时间会有所不同，具体取决于批处理中邮箱的数量、每个邮箱的大小和可用网络容量。 有关影响将邮箱迁移到 Microsoft 365 所花的时间的其他因素的信息，请参阅迁移 [性能](/Exchange/mailbox-migration/office-365-migration-best-practices)。
+估计完成该任务的时间：2-5 分钟，用于创建迁移批处理。 迁移批处理启动后，迁移的持续时间会有所不同，具体取决于批处理中邮箱的数量、每个邮箱的大小和可用网络容量。 有关影响将邮箱迁移到邮箱服务器所花费时间的其他Microsoft 365，请参阅迁移[性能](/Exchange/mailbox-migration/office-365-migration-best-practices)。
   
 你必须先获得权限，然后才能执行此过程。要查看你需要哪些权限，请参阅[收件人权限](/exchange/recipients-permissions-exchange-2013-help)主题的一个表中的"迁移"条目。
   
@@ -55,9 +55,9 @@ ms.locfileid: "50924764"
 ### <a name="step-1-prepare-for-an-imap-migration"></a>步骤 1：准备 IMAP 迁移
 <a name="BK_Step1"> </a>
 
-- **如果你有 IMAP 组织的域，请将其添加为 Microsoft 365 组织的接受域。** 如果要对 Microsoft 365 邮箱使用已拥有的同一域，首先必须将其添加为 Microsoft 365 接受域。 添加后，可以在 Microsoft 365 中创建用户。 有关详细信息，请参阅验证[域](../admin/setup/add-domain.md)。
+- **如果你的 IMAP 组织有一个域，请将其添加为你的组织接受Microsoft 365域。** 如果要对邮箱使用已拥有Microsoft 365域，首先必须将其添加为接受域以Microsoft 365。 添加后，可以在网站中创建Microsoft 365。 有关详细信息，请参阅验证[域](../admin/setup/add-domain.md)。
     
-- **将每个用户添加到 Microsoft 365，以便他们拥有一个邮箱。** 有关说明，请参阅[将用户添加到 Microsoft 365 商业版](../admin/add-users/add-users.md)。
+- **将每个用户添加到Microsoft 365，以便他们拥有一个邮箱。** 有关说明，请参阅[向企业Microsoft 365用户](../admin/add-users/add-users.md)。
     
 - **获取 IMAP 服务器的 FQDN**。在创建 IMAP 迁移终结点时，你需要提供从中迁移邮箱数据的 IMAP 服务器的完全限定域名 (FQDN)（也称为完整的计算机名称）。可使用 IMAP 客户端或 PING 命令来验证你能否使用此 FQDN 通过 Internet 与 IMAP 服务器进行通信。
     
@@ -84,7 +84,7 @@ ms.locfileid: "50924764"
   
 以下是每个用户的必需特性： 
   
-- **EmailAddress** 指定用户的 Microsoft 365 邮箱的用户 ID。
+- **EmailAddress** 指定用户邮箱Microsoft 365 ID。
     
 - **UserName** 指定帐户用来访问 IMAP 服务器上邮箱的登录名。
     
@@ -152,7 +152,7 @@ paulc@contoso.edu,mailadmin,P@ssw0rd,/users/paul.cannon
 ### <a name="step-3-create-an-imap-migration-endpoint"></a>步骤 3：创建 IMAP 迁移终结点
 <a name="BK_Step3"> </a>
 
-若要成功迁移电子邮件，Microsoft 365 需要与源电子邮件系统连接并进行通信。 为此，Microsoft 365 使用迁移终结点。 迁移终结点还定义同时迁移的邮箱数和每 24 小时执行一次的增量同步过程中同时同步的邮箱数。 要创建用于 IMAP 迁移的迁移终结点，首先[连接到 Exchange Online](/powershell/exchange/connect-to-exchange-online-powershell)。 
+若要成功迁移电子邮件，Microsoft 365连接到源电子邮件系统并进行通信。 为此，Microsoft 365迁移终结点。 迁移终结点还定义同时迁移的邮箱数和每 24 小时执行一次的增量同步过程中同时同步的邮箱数。 要创建用于 IMAP 迁移的迁移终结点，首先[连接到 Exchange Online](/powershell/exchange/connect-to-exchange-online-powershell)。 
   
 有关迁移命令的完整列表，请参阅[移动和迁移 cmdlet](/powershell/exchange/)。
   
@@ -205,10 +205,10 @@ Get-MigrationBatch -Identity IMAPBatch1 | Format-List
 Get-MigrationBatch -Identity IMAPBatch1 | Format-List Status
 ```
 
-### <a name="step-5-route-your-email-to-microsoft-365"></a>步骤 5：将电子邮件路由到 Microsoft 365
+### <a name="step-5-route-your-email-to-microsoft-365"></a>步骤 5：将电子邮件路由到Microsoft 365
 <a name="BK_Step5"> </a>
 
-电子邮件系统使用称为 MX 记录的 DNS 记录来查明电子邮件的传递位置。 在电子邮件迁移过程中，MX 记录指向您的源电子邮件系统。 至 Microsoft 365 的电子邮件迁移已完成，现在可以将 MX 记录指向 Microsoft 365。 这可帮助确保电子邮件已传递到 Microsoft 365 邮箱。 通过移动 MX 记录，您还可以在准备就绪的时候关闭旧的电子邮件系统。 
+电子邮件系统使用称为 MX 记录的 DNS 记录来查明电子邮件的传递位置。 在电子邮件迁移过程中，MX 记录指向您的源电子邮件系统。 至此，电子邮件Microsoft 365已完成，是时候将 MX 记录指向 Microsoft 365。 这可帮助确保电子邮件已传递到Microsoft 365邮箱。 通过移动 MX 记录，您还可以在准备就绪的时候关闭旧的电子邮件系统。 
   
 对于很多 DNS 提供商而言，更改您的 MX 记录需要遵循特定的说明。 如果您的 DNS 提供商不包括在内或您要获取统一指导，我们也会提供 [MX 记录的统一说明](https://go.microsoft.com/fwlink/?LinkId=397449)。
   
@@ -217,11 +217,11 @@ Get-MigrationBatch -Identity IMAPBatch1 | Format-List Status
 ### <a name="step-6-delete-imap-migration-batch"></a>步骤 6：删除 IMAP 迁移批处理
 <a name="BK_Step6"> </a>
 
-更改 MX 记录并验证所有电子邮件是否路由到 Microsoft 365 邮箱后，通知用户他们的邮件将发送到 Microsoft 365。 此后，您可以删除 IMAP 迁移批处理。 在删除迁移批处理之前验证以下内容。
+更改 MX 记录并验证所有电子邮件是否Microsoft 365邮箱后，通知用户其邮件将Microsoft 365。 此后，您可以删除 IMAP 迁移批处理。 在删除迁移批处理之前验证以下内容。
   
-- 所有用户都使用 Microsoft 365 邮箱。 删除批处理后，发送到本地邮箱Exchange Server不会复制到相应的 Microsoft 365 邮箱。
+- 所有用户都正在使用Microsoft 365邮箱。 删除批处理后，发送到内部部署邮箱Exchange Server邮件不会复制到相应的Microsoft 365邮箱。
     
-- 在邮件开始直接发送到 Microsoft 365 邮箱后，至少同步一次。 为此，请确保迁移批处理的"上次同步时间"框中的值比邮件开始直接路由到 Microsoft 365 邮箱时更新。
+- Microsoft 365邮箱开始直接发送到邮箱后至少同步一次。 为此，请确保迁移批处理的"上次同步时间"框中的值比邮件开始直接路由到邮箱Microsoft 365更新。
     
 要从 Exchange Online PowerShell 中删除“IMAPBatch1”迁移批处理，请运行以下命令：
   

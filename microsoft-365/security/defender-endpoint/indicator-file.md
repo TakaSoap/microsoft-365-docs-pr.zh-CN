@@ -43,23 +43,23 @@ ms.locfileid: "51995053"
 - 通过使用文件详细信息页面中的"添加指示器"按钮创建上下文指示器
 - 通过指示器 [API 创建指示器](ti-indicator.md)
 
-## <a name="before-you-begin"></a>准备工作
+## <a name="before-you-begin"></a>开始之前
 
 在创建文件指示器之前，了解以下先决条件很重要：
 
-- 如果你的组织在活动模式下使用 Microsoft Defender 防病毒 **(，** 并且启用了) 保护，则此功能 **可用**。 有关详细信息，请参阅 [管理基于云的保护](/windows/security/threat-protection/microsoft-defender-antivirus/deploy-manage-report-microsoft-defender-antivirus)。
+- 如果你的组织在活动模式下使用 **Microsoft Defender 防病毒 (，) 启用** 基于云的保护，则此功能 **可用**。 有关详细信息，请参阅 [管理基于云的保护](/windows/security/threat-protection/microsoft-defender-antivirus/deploy-manage-report-microsoft-defender-antivirus)。
 
 - 反恶意软件客户端版本必须为 4.18.1901.x 或更高版本。 请参阅 [每月平台和引擎版本](manage-updates-baselines-microsoft-defender-antivirus.md#monthly-platform-and-engine-versions)
 
-- 在 Windows 10 版本 1703 或更高版本、Windows Server 2016 和 2019 的设备上受支持。
+- 在具有 Windows 10 版本 1703 或更高版本、Windows Server 2016 2019 的设备上受支持。
 
-- 若要开始阻止文件，首先需要启用"设置" [中的"阻止或允许"](advanced-features.md) 功能。
+- 若要开始阻止文件，首先需要打开"阻止或允许 ["设置。](advanced-features.md)
 
-此功能旨在防止从 web (可疑恶意软件) 潜在恶意文件。 它当前支持可移植的可执行 (PE) 文件，包括 .exe 和 .dll 文件。 覆盖范围将随着时间的推移而延长。
+此功能旨在防止从 web (可疑恶意软件) 潜在恶意文件。 它目前支持可移植的可执行 (PE) 文件，包括.exe和.dll文件。 覆盖范围将随着时间的推移而延长。
 
 ## <a name="create-an-indicator-for-files-from-the-settings-page"></a>从设置页创建文件指示器
 
-1. 在导航窗格中，选择"设置 **>指示器"。**
+1. 在导航窗格中，选择 **"设置 >标记"。**
 
 2. 选择" **文件哈希"**   选项卡。
 
@@ -89,7 +89,7 @@ ms.locfileid: "51995053"
 
 证书和文件 IoC 策略处理冲突将遵循以下顺序：
 
-- 如果应用程序控制和 AppLocker Windows Defender文件强制模式策略/策略 **，则阻止**
+- 如果应用程序控制和 AppLocker Windows Defender策略不允许该文件，**则阻止**
 
 - 否则，如果 Defender 防病毒排除允许该文件 **，则允许**
 
@@ -99,11 +99,11 @@ ms.locfileid: "51995053"
 
 - 否则，如果该文件被 ASR 规则、CFA、AV、SmartScreen 阻止，则 **阻止**  
 
-- Else **Allow** (AppLocker Windows Defender应用程序控制&，则任何 IoC 规则都不适用于它) 
+- Else **Allow** (AppLocker 策略Windows Defender应用程序控制&，任何 IoC 规则都不适用于它) 
 
 如果存在具有相同强制类型和目标的冲突文件 IoC 策略，则更安全的文件 ioC 策略 (这意味着将应用) 哈希时间更长。 例如，如果 SHA-256 文件哈希 IoC 策略定义同一个文件，它将在 MD5 文件哈希 IoC 策略中获胜。
 
-请注意，威胁和漏洞管理阻止易受攻击的应用程序功能使用文件 IoC 进行强制执行，并遵循上述冲突处理顺序。
+请注意，危险和漏洞管理阻止易受攻击的应用程序功能使用文件 IoC 进行强制执行，并且将遵循上述冲突处理顺序。
 
 ### <a name="examples"></a>示例
 

@@ -33,7 +33,7 @@ ms.locfileid: "51995077"
 
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
  
-如果你的系统具有与 Microsoft Defender for Endpoint 中的实时保护服务相关的高 CPU 使用率或性能问题，你可以向 Microsoft 支持部门提交票证。 按照收集 [Microsoft Defender 防病毒诊断数据 中的步骤操作](collect-diagnostic-data.md)。
+如果你的系统具有与 Microsoft Defender for Endpoint 中的实时保护服务相关的高 CPU 使用率或性能问题，你可以向 Microsoft 支持部门提交票证。 按照收集诊断[Microsoft Defender 防病毒中的步骤操作](collect-diagnostic-data.md)。
 
 作为管理员，还可以自行解决这些问题。 
 
@@ -43,7 +43,7 @@ ms.locfileid: "51995077"
 
 还可以按照以下步骤向 Microsoft 支持人员提供提交的其他日志：
 - [使用进程监视器捕获进程日志](#capture-process-logs-using-process-monitor)
-- [使用 Windows Performance Recorder 捕获性能日志](#capture-performance-logs-using-windows-performance-recorder) 
+- [使用 Performance Recorder Windows性能日志](#capture-performance-logs-using-windows-performance-recorder) 
 
 ## <a name="check-with-vendor-for-antivirus-exclusions"></a>与供应商核实防病毒排除项
 
@@ -67,9 +67,9 @@ ms.locfileid: "51995077"
 | MaxTimeFile | 此进程访问的文件的路径，其中记录了持续时间最长的 `MaxTime` 扫描 |
 | EstimatedImpact | 在此过程遇到扫描活动的时间段外，扫描此过程访问的文件所花费的时间百分比 |
 
-如果性能影响很大，请尝试按照配置和验证 Microsoft Defender 防病毒扫描的排除项中的步骤将进程添加到路径/进程 [排除项](collect-diagnostic-data.md)。
+如果性能影响很大，请尝试按照配置并验证进程扫描的排除项中的步骤将进程添加到路径[/Microsoft Defender 防病毒排除项](collect-diagnostic-data.md)。
 
-如果上一步不能解决问题，可以通过进程监视器或[Windows Performance Recorder](#capture-performance-logs-using-windows-performance-recorder) [](#capture-process-logs-using-process-monitor)在下列部分中收集更多信息。
+如果上一步不能解决问题，可以通过以下部分中的进程监视器或Windows[记录器](#capture-performance-logs-using-windows-performance-recorder)来收集[](#capture-process-logs-using-process-monitor)更多信息。
      
 ## <a name="capture-process-logs-using-process-monitor"></a>使用进程监视器捕获进程日志
 
@@ -81,13 +81,13 @@ Process Monitor (ProcMon) 是一种高级监视工具，可显示实时进程。
     1. 右键单击 **"ProcessMonitor.zip** 并选择"属性 **"。**
     1. 在"*常规"选项卡* 下，查找"安全性 *"。*
     1. 选中"取消阻止 **"旁边的框**。
-    1. 选择“**应用**”。
+    1. 选择 **应用**。
     
     ![删除 MOTW](images/procmon-motw.png) 
 
 3. 在 中解压缩文件 `C:\temp` ，使文件夹路径为 `C:\temp\ProcessMonitor` 。 
 
-4. 将 **ProcMon.exe**  复制到正在排除故障的 Windows 客户端或 Windows 服务器。  
+4. 将 **ProcMon.exe** 复制到Windows故障排除Windows客户端或服务器。  
 
 5. 在运行 ProcMon 之前，请确保已关闭与 CPU 使用率高问题不相关的所有其他应用程序。 执行此操作将最大程度地减少要检查的进程数。
 
@@ -150,15 +150,15 @@ Process Monitor (ProcMon) 是一种高级监视工具，可显示实时进程。
 13. 压缩 .pml 文件，并提交到 Microsoft 支持。
 
 
-## <a name="capture-performance-logs-using-windows-performance-recorder"></a>使用 Windows Performance Recorder 捕获性能日志
+## <a name="capture-performance-logs-using-windows-performance-recorder"></a>使用 Performance Recorder Windows性能日志
 
-可以使用 Windows Performance Recorder (WPR) 向 Microsoft 支持人员提交其他信息。 WPR 是一款功能强大的录制工具，可创建 Windows 录制的事件跟踪。 
+可以使用 WPR Windows记录器 (WPR) 向 Microsoft 支持人员提交其他信息。 WPR 是一款功能强大的录制工具，可创建记录Windows跟踪。 
 
-WPR 是 Windows ADK (部署工具包的一) ，可以从下载并 [安装 Windows ADK 下载](/windows-hardware/get-started/adk-install)。 还可以下载它作为 Windows 10 SDK 的 Windows 10 软件开发工具包的 [一部分](https://developer.microsoft.com/windows/downloads/windows-10-sdk/)。
+WPR 是 Windows Assessment and Deployment Kit (Windows ADK) 的一部分，可以从下载并安装 Windows [ADK 下载](/windows-hardware/get-started/adk-install)。 也可以下载它作为 Windows 10 SDK 中 Windows 10 软件开发[工具包的一部分](https://developer.microsoft.com/windows/downloads/windows-10-sdk/)。
 
 可以按照使用 WPR UI 捕获性能日志中的步骤使用 [WPR 用户界面](#capture-performance-logs-using-the-wpr-ui)。 
 
-或者，也可以按照使用 [WPR CLI](#capture-performance-logs-using-the-wpr-cli)捕获性能日志中的步骤，使用命令行工具 *wpr.exe*（在 Windows 8 和更高版本中提供）。
+或者，也可以按照使用 [WPR CLI](#capture-performance-logs-using-the-wpr-cli)捕获性能日志中的步骤，使用 Windows 8 及更高版本中提供的命令行工具 *wpr.exe*。
 
 
 ### <a name="capture-performance-logs-using-the-wpr-ui"></a>使用 WPR UI 捕获性能日志
@@ -168,7 +168,7 @@ WPR 是 Windows ADK (部署工具包的一) ，可以从下载并 [安装 Window
 
 1. 下载并安装 WPR。
 
-2. 在 *"Windows 工具包"* 下，右键单击 **"Windows Performance Recorder"。** 
+2. 在 *Windows工具包"* 下，右键单击Windows **录制器"。** 
 
     ![“开始”菜单](images/wpr-01.png)
 
@@ -245,11 +245,11 @@ WPR 是 Windows ADK (部署工具包的一) ，可以从下载并 [安装 Window
 
 ### <a name="capture-performance-logs-using-the-wpr-cli"></a>使用 WPR CLI 捕获性能日志
 
-命令行工具 *wpr.exe* Windows 8 开始的操作系统的一部分。 若要使用命令行工具收集 WPR 跟踪，wpr.exe：
+命令行工具 *wpr.exe* 操作系统的一部分，从 Windows 8。 若要使用命令行工具收集 WPR 跟踪，wpr.exe：
 
 1. 将 **[Microsoft Defender for Endpoint 分析](https://github.com/YongRhee-MDE/Scripts/blob/master/MDAV.wprp)** 配置文件的性能跟踪下载到本地目录中名为 的文件，例如 `WD.wprp` `C:\traces` 。
 
-3. 右键单击" **开始** "菜单图标，然后选择 **"Windows PowerShell (") "** 命令提示符 **" (") "** 管理员"命令提示符窗口。
+3. 右键单击"**开始"** 菜单图标，然后选择"Windows PowerShell (**管理员**) 或命令提示符 **(") "** 管理员"命令提示符窗口。
 
 4. 当出现"用户帐户控制"对话框时，选择"**是"。**
 
@@ -260,7 +260,7 @@ WPR 是 Windows ADK (部署工具包的一) ，可以从下载并 [安装 Window
     ```
     
     >[!WARNING]
-    >如果你的 Windows Server 具有 64 GB 或 RAM 或更多，请分别使用配置文件而不是配置文件和 `WDForLargeServers.Light` `WDForLargeServers.Verbose` `WD.Light` `WD.Verbose` 。 否则，你的系统可能会占用大量未分页的池内存或缓冲区，这可能会导致系统不稳定。
+    >如果您的 Windows 服务器具有 64 GB 或 RAM 或更多，请分别使用配置文件， `WDForLargeServers.Light` `WDForLargeServers.Verbose` 而不是配置文件和 `WD.Light` `WD.Verbose` 。 否则，你的系统可能会占用大量未分页的池内存或缓冲区，这可能会导致系统不稳定。
 
 6. 重现问题。
 
@@ -279,5 +279,5 @@ WPR 是 Windows ADK (部署工具包的一) ，可以从下载并 [安装 Window
 
 ## <a name="see-also"></a>另请参阅
 
-- [收集 Microsoft Defender 防病毒诊断数据](collect-diagnostic-data.md)
-- [配置并验证 Microsoft Defender 防病毒扫描的排除项](configure-exclusions-microsoft-defender-antivirus.md)
+- [收集Microsoft Defender 防病毒诊断数据](collect-diagnostic-data.md)
+- [配置并验证扫描的Microsoft Defender 防病毒项](configure-exclusions-microsoft-defender-antivirus.md)

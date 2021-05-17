@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 加密链 - DOD 和 GCC High
+title: Microsoft 365加密链 - DOD 和 GCC High
 f1.keywords:
 - NOCSH
 ms.author: kvice
@@ -16,7 +16,7 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 - Strat_O365_IP
-description: 查看 Microsoft 365 中 CA (DOD 和 GCC 高根证书) 证书颁发机构的完整列表。
+description: 查看 DOD 和 GCC High root 证书的完整列表， (CA) Microsoft 365。
 ms.openlocfilehash: 016c7d6b4c5557b7930763c2628525cc3c2c409f
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -24,24 +24,24 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 03/19/2021
 ms.locfileid: "50927802"
 ---
-# <a name="microsoft-365-encryption-chains---dod-and-gcc-high"></a>Microsoft 365 加密链 - DOD 和 GCC High
+# <a name="microsoft-365-encryption-chains---dod-and-gcc-high"></a>Microsoft 365加密链 - DOD 和 GCC High
 
-Microsoft 365 利用许多不同的证书提供程序。 下面介绍了 DOD 和 **GCC High** 客户在访问 Microsoft 365 时可能会遇到的已知 Microsoft 365 根证书的完整列表。 有关可能需要在你自己的基础结构中安装的证书的信息，请参阅为 [Microsoft 365](../enterprise/plan-for-third-party-ssl-certificates.md)规划第三方 SSL 证书。
+Microsoft 365利用许多不同的证书提供程序。 下面介绍了 **DOD** 和 Microsoft 365高客户在访问 Microsoft 365 时可能遇到的已知 GCC 根证书的完整Microsoft 365。 有关可能需要在您自己的基础结构中安装的证书的信息，请参阅 Plan for [third-party SSL certificates for Microsoft 365](../enterprise/plan-for-third-party-ssl-certificates.md)。
 
-以下证书信息适用于所有 **DOD 和 GCC High 客户**。
+以下证书信息适用于所有 **DOD 和** GCC 高客户。
 
 Last updated： **10/16/2020**
 
 >[!NOTE]
->有关适用于全球客户的证书 **信息，** 请参阅 Microsoft [365 加密链](encryption-office-365-certificate-chains.md)。
+>有关适用于全球客户的证书信息，请参阅Microsoft 365[加密链。](encryption-office-365-certificate-chains.md)
 
 | **证书类型** | **P7b 下载** | **CRL 终结点** | **OCSP 终结点** |
 | --- | --- | --- | --- | --- |
-| 公共信任根证书和中间证书 | [Microsoft 365 ITAR 证书捆绑包 (P7B) ](https://download.microsoft.com/download/b/3/a/b3ae08a2-516c-46a9-8723-6256e4fd6383/m365_chain_certs_itar20201012.p7b) | crl.entrust.net<br>crl3.digicert.com<br>crl4.digicert.com | ocsp.digicert.com<br>ocsp.entrust.net |
+| 公共信任根证书和中间证书 | [Microsoft 365P7B (ITAR 证书) ](https://download.microsoft.com/download/b/3/a/b3ae08a2-516c-46a9-8723-6256e4fd6383/m365_chain_certs_itar20201012.p7b) | crl.entrust.net<br>crl3.digicert.com<br>crl4.digicert.com | ocsp.digicert.com<br>ocsp.entrust.net |
 
 展开下面的根部分和中间部分以查看有关证书提供程序的其他详细信息。
 
-## <a name="microsoft-365-certificate-details"></a>**Microsoft 365 证书详细信息**
+## <a name="microsoft-365-certificate-details"></a>**Microsoft 365证书详细信息**
 
 ### <a name="baltimore-cybertrust-root"></a>**Baltimore CyberTrust Root**
 
@@ -146,7 +146,7 @@ Last updated： **10/16/2020**
 | **签名算法** | sha256RSA |
 | **Validity Not Before** | Oct 22 00：00：00 2013 UTC |
 | **Validity Not After** | Oct 22 00：00：00 2028 UTC |
-| **主题密钥标识符** | 3D：D3：50：A5：D6：A0：AD：EE：F3：4A：60：0A：65：D3：21：D4：F8：F8：D6：0F |
+| **主题密钥标识符** | 3D：D3：50：A5：D6：A0：AD：企业版：F3：4A：60：0A：65：D3：21：D4：F8：F8：D6：0F |
 | **颁发机构密钥标识符** | keyID：b1：3e：c3：69：03：f8：bf：47：01：d4：98：26：1a：08：02：ef：63：64：2b：c3 |
 | **SHA-1 (指纹)** | 7E2F3A4F8FE8FA8A5730AECA029696637E986F3F |
 | **SHA-256 (指纹)** | 403E062A2653059113285BAF80A0D4AE422C848C9F78FAD01FC94BC5B87FEF1A |
@@ -314,7 +314,7 @@ Last updated： **10/16/2020**
 | **CRL URL** | http://crl.entrust.net/g2ca.crl |
 | **OCSP URL** | http://ocsp.entrust.net |
 
-### <a name="microsoft-azure-tls-issuing-ca-01"></a>**Microsoft Azure TLS 颁发 CA 01**
+### <a name="microsoft-azure-tls-issuing-ca-01"></a>**Microsoft AzureTLS 颁发 CA 01**
 
 | **主题** | CN=Microsoft Azure TLS 颁发 CA 01<br>O=Microsoft Corporation<br>C=US |
 | --- | --- |
@@ -331,7 +331,7 @@ Last updated： **10/16/2020**
 | **CRL URL** | http://crl3.digicert.com/DigiCertGlobalRootG2.crl http://crl4.digicert.com/DigiCertGlobalRootG2.crl |
 | **OCSP URL** | http://ocsp.digicert.com |
 
-### <a name="microsoft-azure-tls-issuing-ca-02"></a>**Microsoft Azure TLS 颁发 CA 02**
+### <a name="microsoft-azure-tls-issuing-ca-02"></a>**Microsoft AzureTLS 颁发 CA 02**
 
 | **主题** | CN=Microsoft Azure TLS 颁发 CA 02<br>O=Microsoft Corporation<br>C=US |
 | --- | --- |
@@ -348,7 +348,7 @@ Last updated： **10/16/2020**
 | **CRL URL** | http://crl3.digicert.com/DigiCertGlobalRootG2.crl http://crl4.digicert.com/DigiCertGlobalRootG2.crl |
 | **OCSP URL** | http://ocsp.digicert.com |
 
-### <a name="microsoft-azure-tls-issuing-ca-05"></a>**Microsoft Azure TLS 颁发 CA 05**
+### <a name="microsoft-azure-tls-issuing-ca-05"></a>**Microsoft AzureTLS 颁发 CA 05**
 
 | **主题** | CN=Microsoft Azure TLS 颁发 CA 05<br>O=Microsoft Corporation<br>C=US |
 | --- | --- |
@@ -365,7 +365,7 @@ Last updated： **10/16/2020**
 | **CRL URL** | http://crl3.digicert.com/DigiCertGlobalRootG2.crl http://crl4.digicert.com/DigiCertGlobalRootG2.crl |
 | **OCSP URL** | http://ocsp.digicert.com |
 
-### <a name="microsoft-azure-tls-issuing-ca-06"></a>**Microsoft Azure TLS 颁发 CA 06**
+### <a name="microsoft-azure-tls-issuing-ca-06"></a>**Microsoft AzureTLS 颁发 CA 06**
 
 | **主题** | CN=Microsoft Azure TLS 颁发 CA 06<br>O=Microsoft Corporation<br>C=US |
 | --- | --- |

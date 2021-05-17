@@ -1,5 +1,5 @@
 ---
-title: 使用 PowerShell 管理 SharePoint
+title: 使用 PowerShell SharePoint管理服务
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -19,7 +19,7 @@ ms.custom:
 - SPO_Content
 - seo-marvel-apr2020
 ms.assetid: d0d3877a-831f-4744-96b0-d8167f06cca2
-description: 了解如何使用适用于 Microsoft 365 的 PowerShell 管理用户、组和网站组。
+description: 了解如何使用 PowerShell for Microsoft 365管理用户、组和网站组。
 ms.openlocfilehash: bb7c48a5a44bc82aa0a16e0d38c7ea5036358ee7
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -27,19 +27,19 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 03/19/2021
 ms.locfileid: "50923263"
 ---
-# <a name="manage-sharepoint-with-powershell"></a>使用 PowerShell 管理 SharePoint
+# <a name="manage-sharepoint-with-powershell"></a>使用 PowerShell SharePoint管理服务
 
-*本文适用于 Microsoft 365 企业版和 Office 365 企业版。*
+*此文章适用于 Microsoft 365 企业版和 Office 365 企业版。* 
 
-SharePoint 管理员必须管理网站、网站组和用户。 尽管可以在 Microsoft 365 管理中心中执行其中一些任务，但其他任务在 PowerShell 中更简单。 有关详细信息，请参阅以下文章：
+SharePoint管理员必须管理网站、网站组和用户。 尽管可以在管理中心内执行其中一Microsoft 365，但其他任务在 PowerShell 中更简单。 有关详细信息，请参阅以下文章：
 
 - [SharePoint Online 命令行管理程序入门](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)
   
-- [使用 PowerShell 创建 SharePoint Online 网站并添加用户](create-sharepoint-sites-and-add-users-with-powershell.md)
+- [创建SharePoint网站，然后使用 PowerShell 添加用户](create-sharepoint-sites-and-add-users-with-powershell.md)
     
-- [使用 PowerShell 管理 SharePoint Online 用户和组](manage-sharepoint-users-and-groups-with-powershell.md)
+- [使用 PowerShell SharePoint联机用户和组](manage-sharepoint-users-and-groups-with-powershell.md)
     
-- [使用 PowerShell 管理 SharePoint Online 网站组](manage-sharepoint-site-groups-with-powershell.md)
+- [使用 SharePoint PowerShell 管理联机网站组](manage-sharepoint-site-groups-with-powershell.md)
     
 ## <a name="see-also"></a>另请参阅
 

@@ -17,7 +17,7 @@ ms.custom:
 - Ent_TLGs
 - seo-marvel-apr2020
 ms.assetid: 6f916a77-301c-4be2-b407-6cec4d80df76
-description: 使用此测试实验室指南为 Microsoft 365 企业版创建模拟企业测试环境。
+description: 使用此测试实验室指南创建适用于企业的 Microsoft 365模拟企业测试环境。
 ms.openlocfilehash: 8df63e1a580b57aa263c11dccaed947f46f2cbb9
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -27,9 +27,9 @@ ms.locfileid: "50926040"
 ---
 # <a name="the-simulated-enterprise-base-configuration"></a>模拟企业基础配置
 
-*此测试实验室指南可用于 Microsoft 365 企业版和 Office 365 企业版测试环境。*
+*本测试实验室指南可用于企业Microsoft 365和Office 365 企业版环境。*
 
-本文介绍如何为 Microsoft 365 企业版创建一个简化的环境，其中包括：
+本文介绍如何为企业版创建简化Microsoft 365环境，其中包括：
 
 - Microsoft 365 E5 试用版或付费版订阅。
 - 连接到 Internet 的简化的组织 Intranet，由 Azure 虚拟网络上的三个虚拟机 (DC1、APP1 和 CLIENT1) 。
@@ -40,18 +40,18 @@ ms.locfileid: "50926040"
 - [第 1 阶段：创建模拟 Intranet](#phase-1-create-a-simulated-intranet)
 - [第 2 阶段：创建 Microsoft 365 E5 订阅](#phase-2-create-your-microsoft-365-e5-subscription)
 
-可以使用生成的环境通过其他测试实验室指南或自行测试 Microsoft [365](https://www.microsoft.com/microsoft-365/enterprise)企业版的特性和功能[](m365-enterprise-test-lab-guides.md)。
+您可以使用生成的环境通过额外的测试实验室指南Microsoft 365[测试](https://www.microsoft.com/microsoft-365/enterprise)企业版的功能。 [](m365-enterprise-test-lab-guides.md)
 
 ![Microsoft 云测试实验室指南](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
 > [!TIP]
-> 有关 Microsoft 365 企业版测试实验室指南堆栈中所有文章的直观地图，请转到 [Microsoft 365 企业版测试实验室指南堆栈](../downloads/Microsoft365EnterpriseTLGStack.pdf)。
+> 有关企业测试实验室指南堆栈中Microsoft 365文章的直观映射，请转到 Microsoft 365[企业测试实验室指南堆栈](../downloads/Microsoft365EnterpriseTLGStack.pdf)。
 
 ## <a name="phase-1-create-a-simulated-intranet"></a>第 1 阶段：创建模拟 Intranet
 
 在此阶段，在 Azure 基础结构服务中构建模拟 Intranet，其中包括 Active Directory 域服务 (AD DS) 域控制器、应用程序服务器和客户端计算机。
 
-你将在其他 [Microsoft 365](m365-enterprise-test-lab-guides.md) 企业版测试实验室指南中使用这些计算机来配置和演示混合标识和其他功能。
+你将在企业测试实验室指南的其他Microsoft 365[](m365-enterprise-test-lab-guides.md)使用这些计算机来配置和演示混合标识和其他功能。
 
 ### <a name="method-1-build-your-simulated-intranet-with-an-azure-resource-manager-template"></a>方法 1：使用 Azure 资源管理器模板构建模拟 Intranet
 
@@ -160,19 +160,19 @@ New-AzVM -ResourceGroupName $rgName -Location $locName -VM $vm
   
 接下来，连接到 DC1 虚拟机：
   
-1. 在 [Azure 门户中](https://portal.azure.com)，**选择"资源** > <新资源组 ***的名称 _> > _* DC1**  >  **Connect"**。
+1. 在 [Azure 门户中](https://portal.azure.com)，选择"资源 > <新资源组 ***的名称 _> > _* DC1**  >  **连接。**
     
-2. 在打开的窗格中，选择 **下载 RDP 文件**。 打开下载的 DC1.rdp 文件，然后选择"连接 **"。**
+2. 在打开的窗格中，选择 **下载 RDP 文件**。 打开下载的 DC1.rdp 文件，然后选择 **"连接"。**
     
 3. 指定 DC1 本地管理员帐户名：
     
    - 对于 Windows 7：
     
-     在 **"Windows 安全"** 对话框中，选择"**使用另一个帐户"。** 在 **"用户名"** 中，**输入 \\ DC1** < *本地管理员帐户>。*
+     在 **"Windows 安全中心** 对话框中，选择"**使用另一个帐户"。** 在 **"用户名"** 中，**输入 \\ DC1** < *本地管理员帐户>。*
     
    - 对于 Windows 8 或 Windows 10：
     
-     在 **"Windows 安全**"对话框中，选择"**更多选项**"，然后选择"**使用不同的帐户"。** 在 **"用户名"** 中，**输入 \\ DC1** < *本地管理员帐户>。*
+     在 **"Windows 安全中心"** 对话框中，选择"**更多选项**"，然后选择"**使用不同的帐户"。** 在 **"用户名"** 中，**输入 \\ DC1** < *本地管理员帐户>。*
     
 4. 在 **"密码**"中，输入本地管理员帐户的密码，然后选择"确定 **"。**
     
@@ -197,11 +197,11 @@ Install-ADDSForest -DomainName testlab.$yourDomain -DatabasePath "F:\NTDS" -Sysv
   
 DC1 重启后，重新连接到 DC1 虚拟机。
   
-1. 在 [Azure 门户中，](https://portal.azure.com)选择"资源 **组** > <*你的资源组名称> >* **DC1**  >  **Connect"。**
+1. 在 [Azure 门户中](https://portal.azure.com)，**选择"资源** 组 > <*你的资源组名称*> > **DC1**  >  **连接。**
     
-2. 运行下载的 DC1.rdp 文件，然后选择"连接 **"。**
+2. 运行下载的 DC1.rdp 文件，然后选择 **"连接"。**
     
-3. 在 **Windows 安全中**，选择 **"使用另一个帐户"。** 在 **"用户名"** 中，输入 **TESTLAB \\** < *本地管理员帐户>。*
+3. 在 **Windows 安全中心** 中，选择"**使用另一个帐户"。** 在 **"用户名"** 中，输入 **TESTLAB \\** < *本地管理员帐户>。*
     
 4. 在 **"密码**"框中，输入本地管理员帐户的密码，然后选择"确定 **"。**
     
@@ -379,13 +379,13 @@ Restart-Computer
 
 #### <a name="using-an-office-365-e5-test-environment"></a>使用 Office 365 E5 测试环境
 
-如果只需要 Office 365 测试环境，则无需阅读本文的其余部分。
+如果您只需要一Office 365测试环境，则无需阅读本文的其余部分。
 
-有关适用于 Microsoft 365 和 Office 365 的其他测试实验室指南，请参阅 [Microsoft 365 企业版测试实验室指南](m365-enterprise-test-lab-guides.md)。
+有关适用于 Microsoft 365 和 Office 365 的其他测试实验室Microsoft 365，请参阅企业测试[实验室指南](m365-enterprise-test-lab-guides.md)。
 
 ### <a name="add-a-microsoft-365-e5-trial-subscription"></a>添加 Microsoft 365 E5 试用版订阅
 
-若要添加 Microsoft 365 E5 试用订阅并配置具有许可证的用户帐户，请执行轻型基本配置测试实验室指南阶段 [3](lightweight-base-configuration-microsoft-365-enterprise.md#phase-3-add-a-microsoft-365-e5-trial-subscription) 中的说明。
+若要添加Microsoft 365 E5订阅，并配置具有许可证的用户帐户，请执行轻型基本配置测试实验室指南阶段[3](lightweight-base-configuration-microsoft-365-enterprise.md#phase-3-add-a-microsoft-365-e5-trial-subscription)中的说明。
 
   
 ## <a name="results"></a>结果
@@ -400,7 +400,7 @@ Restart-Computer
   
 ![模拟企业基础配置的第 2 阶段](../media/simulated-ent-base-configuration-microsoft-365-enterprise/Phase4.png)
   
-现在，你已准备好试用 [Microsoft 365 企业版的其他功能](https://www.microsoft.com/microsoft-365/enterprise)。
+现在，你已准备好试用适用于企业的 Microsoft 365[功能](https://www.microsoft.com/microsoft-365/enterprise)。
   
 ## <a name="next-steps"></a>后续步骤
 

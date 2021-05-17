@@ -115,4 +115,4 @@ ms.locfileid: "52114004"
 - [了解敏感度标签](sensitivity-labels.md)
 - [了解保留策略和保留标签](retention.md)
 - [了解敏感信息类型](sensitive-information-type-learn-about.md)
-- [了解数据分类](data-classification-overview.md)
+- [了解数据分类。](data-classification-overview.md)

@@ -1,5 +1,5 @@
 ---
-title: 在 Microsoft 365 管理中心分配管理员角色
+title: 在管理中心Microsoft 365管理员角色
 f1.keywords:
 - NOCSH
 ms.author: kwekua

@@ -1,5 +1,5 @@
 ---
-title: 将组织数据迁移到 Microsoft 365 企业版
+title: 将组织数据迁移到Microsoft 365 企业版
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -16,7 +16,7 @@ ms.assetid: e2fdfc8d-547e-4419-8628-2738ed4e0f46
 f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
-description: 本文将介绍帮助你将组织数据迁移到 Microsoft 365 的资源。
+description: 本文将介绍可帮助您将组织数据迁移到 Microsoft 365。
 ms.openlocfilehash: 084cd4f6b89cfa1b8c5ad89fade3f01a0bf53dce
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -24,22 +24,22 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 03/19/2021
 ms.locfileid: "50924068"
 ---
-# <a name="migrate-your-organization-data-to-microsoft-365-enterprise"></a>将组织数据迁移到 Microsoft 365 企业版
+# <a name="migrate-your-organization-data-to-microsoft-365-enterprise"></a>将组织数据迁移到Microsoft 365 企业版
 
-## <a name="ready-to-migrate-your-data-to-microsoft-365"></a>准备好将数据迁移到 Microsoft 365 了吗？
+## <a name="ready-to-migrate-your-data-to-microsoft-365"></a>准备好将数据迁移到 Microsoft 365？
 
-我们 [的基本设置说明](https://support.office.com/article/Set-up-Office-365-for-business-6a3a29a0-e616-4713-99d1-15eda62d04fa) 可帮助你在尽可能短的时间让所有人使用 Microsoft 365 服务和应用程序。 这将跳过混合方案以及迁移到 Microsoft 365 的更高级方法。 
+我们[的基本设置说明](https://support.office.com/article/Set-up-Office-365-for-business-6a3a29a0-e616-4713-99d1-15eda62d04fa)可帮助你尽可能Microsoft 365使用你的服务和应用程序。 这将跳过混合方案以及更高级的方法，以迁移到Microsoft 365。 
   
-如果需要有关设置 Microsoft 365 的帮助 [，FastTrack](https://fasttrack.microsoft.com/office) 是部署 Microsoft 365 的最简单方法，还可以登录并使用 Microsoft [365](setup-guides-for-microsoft-365.md)服务的安装指南。
+如果需要有关设置Microsoft 365的帮助[，FastTrack](https://fasttrack.microsoft.com/office)是部署 Microsoft 365 的最简单方法，还可以登录并使用 Microsoft 365[指南](setup-guides-for-microsoft-365.md)。
 
-## <a name="migrate-email-to-microsoft-365"></a>将电子邮件迁移到 Microsoft 365
-- 使用 Exchange 部署助理 与 [Exchange 混合迁移](https://technet.microsoft.com/exdeploy2013)。  (管理员) 
-- 详细了解将电子邮件迁移到 [Microsoft 365](https://support.office.com/article/Ways-to-migrate-multiple-email-accounts-to-Office-365-0a4913fe-60fb-498f-9155-a86516418842)的不同方法。
+## <a name="migrate-email-to-microsoft-365"></a>将电子邮件迁移到Microsoft 365
+- 使用 [Exchange 部署助理](https://technet.microsoft.com/exdeploy2013)通过 Exchange 混合迁移。（管理员）
+- 了解有关将电子邮件[迁移到电子邮件的不同方法Microsoft 365。](https://support.office.com/article/Ways-to-migrate-multiple-email-accounts-to-Office-365-0a4913fe-60fb-498f-9155-a86516418842)
 - 寻找[可以迁移组织中的人员的电子邮件、联系人和日历](https://support.office.com/article/Migrate-email-and-contacts-to-Office-365-for-business-a3e3bddb-582e-4133-8670-e61b9f58627e)的替代方法。
 
 ## <a name="migrate-files-and-folders"></a>迁移文件和文件夹
-- [迁移到 SharePoint Online 和 OneDrive。](/sharepointmigration/migrate-to-sharepoint-online)  (管理员) 
-- [SharePoint Server 混合配置路线图](/SharePoint/hybrid/configuration-roadmaps)。  (管理员) 
+- [迁移到 SharePoint Online 和 OneDrive](/sharepointmigration/migrate-to-sharepoint-online)。  (管理员) 
+- [SharePoint服务器混合配置路线图](/SharePoint/hybrid/configuration-roadmaps)。  (管理员) 
 
 ## <a name="migrate-skype-for-business-users"></a>迁移 Skype for Business 用户
 - [迁移到 Skype for Business Online](/SkypeForBusiness/hybrid/move-users-between-on-premises-and-cloud?bc=%2fSkypeForBusiness%2fbreadcrumb%2ftoc.json&toc=%2fSkypeForBusiness%2ftoc.json)。（管理员）

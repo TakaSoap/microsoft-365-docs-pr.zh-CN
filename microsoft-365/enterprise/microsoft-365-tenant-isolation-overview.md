@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 中的租户隔离
+title: 租户隔离Microsoft 365
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -14,7 +14,7 @@ ms.collection:
 - M365-security-compliance
 f1.keywords:
 - NOCSH
-description: 本文汇总了 Microsoft 如何在 Microsoft 365 等云服务中强制执行租户隔离。
+description: 本文汇总了 Microsoft 如何在云服务（如 Microsoft 365）中强制执行租户Microsoft 365。
 ms.custom: seo-marvel-apr2020
 ms.openlocfilehash: 7c5be65186b75f6056a64b776e4f0d25bcd55eb1
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
@@ -23,7 +23,7 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 03/19/2021
 ms.locfileid: "50923072"
 ---
-# <a name="tenant-isolation-in-microsoft-365"></a>Microsoft 365 中的租户隔离
+# <a name="tenant-isolation-in-microsoft-365"></a>租户隔离Microsoft 365
 
 云计算的主要好处之一是同时跨多个客户共享、通用的基础结构的概念，这导致规模下降。 此概念称为 *"多租户"。* Microsoft 持续致力于确保云服务的多租户体系结构支持企业级安全性、机密性、隐私性、完整性和可用性标准。
 
@@ -34,12 +34,12 @@ ms.locfileid: "50923072"
 1.    防止跨租户泄露客户内容或未经授权访问客户内容;和
 2.    防止一个租户的操作对另一个租户的服务造成负面影响
 
-Microsoft 365 中实施了多种形式的保护，以防止客户危害 Microsoft 365 服务或应用程序，或获取对其他租户或 Microsoft 365 系统本身信息未经授权的访问，包括：
+在整个 Microsoft 365 中实施了多种形式的保护，以防止客户危害 Microsoft 365 服务或应用程序，或获取对其他租户或 Microsoft 365 系统本身信息的未经授权的访问，包括：
 
-- Microsoft 365 服务的每个租户中的客户内容逻辑隔离通过 Azure Active Directory 授权和基于角色的访问控制实现。
-- SharePoint Online 在存储级别提供数据隔离机制。
-- Microsoft 使用严格的物理安全、背景屏蔽和多层加密策略来保护客户内容的机密性和完整性。 所有 Microsoft 365 数据中心均具有生物识别访问控制，大多数要求使用软打印才能获得物理访问权限。 此外，作为招聘过程的一部分，所有美国 Microsoft 员工都需要成功完成标准背景检查。 有关 Microsoft 365 中用于管理访问的控件详细信息，请参阅 [Microsoft 365 管理访问控制](/compliance/assurance/assurance-administrative-access-controls-overview)。
-- Microsoft 365 使用对静态和传输中的客户内容进行加密的服务器端技术，包括 BitLocker、每个文件加密、传输层安全性 (TLS) 和 Internet 协议安全性 (IPsec) 。 有关 Microsoft 365 中的加密的特定详细信息，请参阅 [Microsoft 365](../compliance/office-365-encryption-in-the-microsoft-cloud-overview.md)中的数据加密技术。
+- 通过基于授权和基于角色的访问控制Microsoft 365租户中的客户内容Azure Active Directory逻辑隔离。
+- SharePointOnline 在存储级别提供数据隔离机制。
+- Microsoft 使用严格的物理安全、背景屏蔽和多层加密策略来保护客户内容的机密性和完整性。 数据中心Microsoft 365均具有生物识别访问控制，大多数要求使用打印的指纹才能获得物理访问权限。 此外，作为招聘过程的一部分，所有美国 Microsoft 员工都需要成功完成标准背景检查。 有关在管理中用于管理访问的控件Microsoft 365，请参阅Microsoft 365[访问控制"。](/compliance/assurance/assurance-administrative-access-controls-overview)
+- Microsoft 365使用对静态和传输中的客户内容进行加密的服务器端技术，包括 BitLocker、每个文件加密、传输层安全性 (TLS) 和 Internet 协议安全性 (IPsec) 。 有关加密中加密的特定Microsoft 365，请参阅数据[加密技术Microsoft 365。](../compliance/office-365-encryption-in-the-microsoft-cloud-overview.md)
 
 同时，上面列出的保护提供了强大的逻辑隔离控件，提供与单独由物理隔离提供的威胁保护和缓解等效。
 

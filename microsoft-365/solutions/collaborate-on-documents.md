@@ -16,7 +16,7 @@ ms.custom:
 - seo-marvel-apr2020
 localization_priority: Normal
 f1.keywords: NOCSH
-description: 本文将了解如何与来宾协作处理 SharePoint 和 OneDrive 中的文档。
+description: 本文将了解如何与来宾协作处理 SharePoint OneDrive。
 ms.openlocfilehash: 9158ec7692ef90eb2e270242472fceb10d0e60b7
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -26,7 +26,7 @@ ms.locfileid: "50920224"
 ---
 # <a name="collaborate-with-guests-on-a-document"></a>在文档中与来宾协作
 
-如果需要与组织外部人员就 SharePoint 或 OneDrive 中的文档进行协作，可以发送给他们一个指向该文档的共享链接。 本文将介绍为 SharePoint 和 OneDrive 设置共享链接以满足组织需求所需的 Microsoft 365 配置步骤。
+如果需要与组织外部人员协作处理SharePoint或OneDrive文档，您可以向这些人员发送一个指向该文档的共享链接。 本文将介绍为 Microsoft 365 和 SharePoint 设置共享链接所需的 OneDrive 配置步骤，以满足组织的需要。
 
 ## <a name="video-demonstration"></a>视频演示
 
@@ -36,7 +36,7 @@ ms.locfileid: "50920224"
 
 ## <a name="azure-external-collaboration-settings"></a>Azure 外部协作设置
 
-Microsoft 365 中的共享在最高级别由 [Azure Active Directory 中的 B2B 外部协作设置](/azure/active-directory/external-identities/delegate-invitations) 管理。 如果在 Azure AD 中禁用或限制来宾共享，此设置将覆盖在 Microsoft 365 中配置的任何共享设置。
+Microsoft 365 中的共享在最高级别由 [Azure Active Directory 中的 B2B 外部协作设置](/azure/active-directory/external-identities/delegate-invitations) 管理。 如果在 Azure AD 中禁用或限制来宾共享，则此设置将覆盖在 Azure AD 中配置的任何Microsoft 365。
 
 检查 B2B 外部协作设置，确保不会阻止与来宾共享。
 
@@ -55,15 +55,15 @@ Microsoft 365 中的共享在最高级别由 [Azure Active Directory 中的 B2B 
 
 如果与多个组织的来宾合作，可能需要限制其访问目录数据的能力。  这将阻止他们查看目录中的来宾。 为此，在 **“来宾用户访问限制”** 下，选择 **“来宾用户具有对目录对象设置的属性和成员身份的有限访问权限”** 或 **“来宾用户访问仅限于其自己的目录对象的属性和成员身份”**。
 
-## <a name="sharepoint-organization-level-sharing-settings"></a>SharePoint 组织级共享设置
+## <a name="sharepoint-organization-level-sharing-settings"></a>SharePoint组织级别的共享设置
 
-为了让组织外部人员能够访问 SharePoint 或 OneDrive 中的文档，SharePoint 和 OneDrive 组织级共享设置必须允许与组织外部人员共享。
+为了使组织外部人员能够访问 SharePoint 或 OneDrive 中的文档，SharePoint 和 OneDrive 组织级别的共享设置必须允许与组织外部人员共享。
 
-SharePoint 的组织级别设置决定了各个 SharePoint 网站可用的设置。 网站设置不能比组织级别设置更宽松。 OneDrive 的组织级别设置确定将在用户的 OneDrive 库中可用的共享级别。
+网站的组织级别SharePoint确定各个网站可用的SharePoint设置。 网站设置不能比组织级别设置更宽松。 用户的组织级别设置OneDrive确定将在用户的管理库中可用的OneDrive级别。
 
-对于 SharePoint 和 OneDrive，如果要允许未经身份验证的文件和文件夹共享，请选择"任何人 **"。** 如果希望确保组织外部人员必须进行身份验证，请选择"**新来宾和现有来宾"。** *任何人* 链接是最简单的共享方式：组织外部人员无需身份验证即可打开链接，并可以自由将链接传递给其他人。
+For SharePoint and OneDrive， if you want to allow unauthenticated file and folder sharing， choose **Anyone**. 如果希望确保组织外部人员必须进行身份验证，请选择"**新来宾和现有来宾"。** *任何人* 链接是最简单的共享方式：组织外部人员无需身份验证即可打开链接，并可以自由将链接传递给其他人。
 
-对于 SharePoint，选择组织中任何网站所需的最宽松设置。
+对于SharePoint，请选择组织中任何网站所需的最宽松设置。
 
 ![SharePoint 组织级别共享设置的屏幕截图](../media/sharepoint-organization-external-sharing-controls.png)
 
@@ -71,15 +71,15 @@ SharePoint 的组织级别设置决定了各个 SharePoint 网站可用的设置
 设置 SharePoint 组织级共享设置
 
 1. 在 Microsoft 365 管理中心左侧导航窗格中的 **“管理中心”** 下，单击 **“SharePoint”**。
-2. 在 SharePoint 管理中心的左侧导航窗格中，在"策略"**下，单击**"共享 **"。**
-3. 确保 SharePoint 或 OneDrive 的外部共享设置为"任何人"或"**新来宾和现有来宾"。**  (请注意，OneDrive 设置不能比 SharePoint 设置更宽松。) 
+2. In the SharePoint admin center， in the left navigation pane， under **Policies**， click **Sharing**.
+3. 确保将用户或SharePoint的外部OneDrive设置为"任何人"或"**新来宾和现有来宾"。**   (请注意，OneDrive设置不能比 SharePoint 设置更宽松。) 
 4. 如果进行了任何更改，请单击 **“保存”**。
 
 ## <a name="sharepoint-organization-level-default-link-settings"></a>SharePoint 组织级别的默认链接设置
 
 默认文件和文件夹链接设置确定在用户共享文件或文件夹时默认向用户显示的链接选项。 如果需要，用户可以在共享之前将链接类型更改为其他选项之一。
 
-请记住，此设置会影响您组织的 SharePoint 网站以及 OneDrive。
+请记住，此设置会影响SharePoint网站和网站OneDrive。
 
 从以下任一类型中选择一个链接，然后在用户共享文件和文件夹时默认选择该链接：
 
@@ -90,7 +90,7 @@ SharePoint 的组织级别设置决定了各个 SharePoint 网站可用的设置
 ![SharePoint 组织级别文件和文件夹共享设置的屏幕截图](../media/sharepoint-organization-files-folders-sharing-settings.png)
 
 
-设置 SharePoint 和 OneDrive 组织级别的默认链接设置
+设置网站SharePoint OneDrive组织级别的默认链接设置
 
 1. 导航到 SharePoint 管理中心的"共享"页面。
 2. 在 **“文件夹链接”** 下，选择要使用的默认共享链接。
@@ -115,7 +115,7 @@ SharePoint 的组织级别设置决定了各个 SharePoint 网站可用的设置
 
 ## <a name="sharepoint-site-level-sharing-settings"></a>SharePoint 网站级别共享设置
 
-如果您要共享 SharePoint 网站中的文件和文件夹，则还需要检查该网站的网站级别共享设置。
+如果要共享网站中的文件和文件夹SharePoint，还需要检查该网站的网站级别共享设置。
 
 ![SharePoint 网站外部共享设置的屏幕截图](../media/sharepoint-site-external-sharing-settings.png)
 
@@ -131,7 +131,7 @@ SharePoint 的组织级别设置决定了各个 SharePoint 网站可用的设置
 
 ## <a name="invite-users"></a>邀请用户
 
-来宾共享设置现已配置;以便用户现在可以与组织外部人员共享文件和文件夹。 有关详细信息 [，请参阅共享 OneDrive 文件和文件夹](https://support.office.com/article/9fcc2f7d-de0c-4cec-93b0-a82024800c07) 和 [SharePoint](https://support.office.com/article/1fe37332-0f9a-4719-970e-d2578da4941c) 文件或文件夹。
+来宾共享设置现已配置;以便用户现在可以与组织外部人员共享文件和文件夹。 有关详细信息[，OneDrive共享文件和文件夹和](https://support.office.com/article/9fcc2f7d-de0c-4cec-93b0-a82024800c07)[共享 SharePoint 文件或](https://support.office.com/article/1fe37332-0f9a-4719-970e-d2578da4941c)文件夹。
 
 ## <a name="see-also"></a>另请参阅
 

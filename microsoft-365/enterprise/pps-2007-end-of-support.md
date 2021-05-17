@@ -25,7 +25,7 @@ ms.locfileid: "50927332"
 ---
 # <a name="performancepoint-server-2007-end-of-support-roadmap"></a>PerformancePoint Server 2007 停止提供支持路线图
 
-*本文适用于 Microsoft 365 企业版和 Office 365 企业版。*
+*此文章适用于 Microsoft 365 企业版和 Office 365 企业版。* 
 
 Office 2007 服务器和应用程序已终止支持，包括可能用作 商业智能 (BI 解决方案一) 的服务器和应用程序。 下表列出了受影响的 BI 应用程序：
   

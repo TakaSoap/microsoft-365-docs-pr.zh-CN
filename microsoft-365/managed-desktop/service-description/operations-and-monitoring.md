@@ -31,7 +31,7 @@ ms.locfileid: "50920416"
 
 ### <a name="balance-of-responsibility"></a>责任平衡
 
-Responsibility | Microsoft 托管桌面服务 | Microsoft 365 客户端软件 | 本地客户端和服务器 | 非 Microsoft 和自定义软件
+职责 | Microsoft 托管桌面服务 | Microsoft 365 客户端软件 | 本地客户端和服务器 | 非 Microsoft 和自定义软件
 ----- | ----- | ----- | ----- | -----
 提供新功能 | Microsoft | Microsoft | 两者都有 | 客户
 测试新功能用于质量保证 |  Microsoft | Microsoft | 两者都有 | 客户

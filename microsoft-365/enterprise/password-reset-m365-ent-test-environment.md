@@ -27,11 +27,11 @@ ms.locfileid: "50921488"
 ---
 # <a name="password-reset-for-your-microsoft-365-test-environment"></a>Microsoft 365 测试环境的密码重置
 
-*本测试实验室指南仅适用于 Microsoft 365 企业版测试环境。*
+*本测试实验室指南只能用于Microsoft 365测试环境。*
 
 借助 Azure Active Directory (Azure AD) 自助服务密码重置 (SSPR)，用户可重置或解锁其密码或帐户。
 
-本文介绍如何在 Microsoft 365 测试环境中配置和测试密码重置。
+本文介绍如何在测试环境中配置和测试密码Microsoft 365重置。
 
 设置 SSPR 包括三个阶段：
 - [阶段 1：为 Microsoft 365 测试环境配置密码哈希同步](#phase-1-configure-password-hash-synchronization-for-your-microsoft-365-test-environment)
@@ -41,7 +41,7 @@ ms.locfileid: "50921488"
 ![Microsoft 云测试实验室指南](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
     
 > [!TIP]
-> 有关 Microsoft 365 企业版测试实验室指南堆栈中所有文章的直观地图，请转到 [Microsoft 365 企业版测试实验室指南堆栈](../downloads/Microsoft365EnterpriseTLGStack.pdf)。
+> 有关企业测试实验室指南堆栈中Microsoft 365文章的直观映射，请转到 Microsoft 365[企业测试实验室指南堆栈](../downloads/Microsoft365EnterpriseTLGStack.pdf)。
 
 ## <a name="phase-1-configure-password-hash-synchronization-for-your-microsoft-365-test-environment"></a>阶段 1：为 Microsoft 365 测试环境配置密码哈希同步
 
@@ -74,7 +74,7 @@ ms.locfileid: "50921488"
 3. 将“**组类型**”设置为“**安全**”，将“**组名称**”设置为“**PWReset**”，将“**成员身份类型**”设置为“**已分配**”。
 4. 选择 **"成员**"，查找并选择 **"用户 3"，** 选择 **"选择**"，然后选择"创建 **"。**
 5. 关闭“**组**”窗格。
-6. 在 Azure Active Directory 窗格中，选择左侧导航 **中的** "密码重置"。
+6. In the Azure Active Directory pane， select **Password reset** in the left navigation.
 7. 在“**密码重置属性**”窗格的“**已启用自助式密码重置**”选项下，选中“**已选择**”。
 8. 选择 **"选择组"，** 选择 **"PWReset"** 组，然后选择"**保存**  >  **"。**
 9. 关闭专用浏览器实例。

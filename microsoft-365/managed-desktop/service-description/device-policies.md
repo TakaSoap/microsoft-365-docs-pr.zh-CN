@@ -34,7 +34,7 @@ ms.locfileid: "50920488"
 
 此表突出显示了在设备预配期间应用于所有 Microsoft 托管桌面设备的默认策略。 Microsoft 托管桌面操作团队未批准对由 Microsoft 托管桌面管理的对象进行的所有检测到的更改都将还原。
 
-Policy | 说明
+策略 | 说明
 --- | ---
 安全基线 | [MDM 的 Microsoft](/windows/device-security/windows-security-baselines) 安全基线已针对所有 Microsoft 托管桌面设备进行配置。 此基线是行业标准配置。 它公开发布，经过良好测试，并经过 Microsoft 安全专家审查，以确保 Microsoft 托管的桌面设备和应用在新式工作场所中的安全性。 <br><br>为了在不断演变的安全威胁形势中缓解威胁，Microsoft 安全基线将进行更新，并随每个 Windows 10 功能更新部署到 Microsoft 托管桌面设备。<br><br>有关详细信息，请参阅 [Windows 安全基线](/windows/security/threat-protection/windows-security-baselines)。
 Microsoft 托管桌面建议的安全模板 | 对安全基线的一组建议更改，可优化用户体验。  这些更改记录在安全附录 [中](#security-addendum)。 根据需要更新策略附录。  

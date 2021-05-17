@@ -11,7 +11,7 @@ f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
 localization_priority: Normal
-description: 了解 Exchange Online 中的多地理位置功能，例如功能限制和邮箱放置。
+description: 了解邮箱中的多地理位置Exchange Online，如功能限制和邮箱放置。
 ms.openlocfilehash: bf1c3c8f510c57f47cbfc7b2609d97f5932e05d3
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT

@@ -19,7 +19,7 @@ f1.keywords:
 ms.assetid: 94f4e86d-b8e5-42dd-b558-e6092f830ec9
 ms.custom:
 - seo-marvel-apr2020
-description: 使用集中部署 PowerShell cmdlet 可帮助你为 Microsoft 365 组织部署和管理 Office 外接程序。
+description: 使用集中部署 PowerShell cmdlet 可帮助你为 Office 部署和管理 Microsoft 365 外接程序。
 ms.openlocfilehash: 7872deedfcfe058f0a4ac63c489bbed139699d18
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -29,7 +29,7 @@ ms.locfileid: "50924668"
 ---
 # <a name="use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins"></a>使用集中部署 PowerShell cmdlet 管理外接程序
 
-作为 Microsoft 365 全局管理员，可以通过集中部署功能将 Office 加载项部署到用户 (请参阅在管理中心部署 Office [) 。](../admin/manage/manage-deployment-of-add-ins.md) 除了通过 Microsoft 365 管理中心部署 Office 加载项外，您还可以使用 Microsoft PowerShell。 安装适用于 Windows PowerShell 的[O365 集中Add-In部署Windows PowerShell。](https://www.powershellgallery.com/packages/O365CentralizedAddInDeployment) 
+作为Microsoft 365管理员，可以通过集中部署功能将 Office 加载项部署到用户 (请参阅在管理中心部署[Office](../admin/manage/manage-deployment-of-add-ins.md)加载项) 。 除了通过Office中心部署加载项Microsoft 365，您还可以使用 Microsoft PowerShell。 安装[O365 集中Add-In部署模块Windows PowerShell。](https://www.powershellgallery.com/packages/O365CentralizedAddInDeployment) 
 
 下载模块后，打开常规Windows PowerShell窗口并运行以下 cmdlet：
 
@@ -37,19 +37,19 @@ ms.locfileid: "50924668"
  Import-Module -Name O365CentralizedAddInDeployment
 ```
     
-## <a name="connect-using-your-admin-credentials"></a>使用管理员凭据进行连接
+## <a name="connect-using-your-admin-credentials"></a>连接管理员凭据登录
 
 在可以使用集中部署 cmdlet 之前，需要登录。
   
 1. 启动 PowerShell。
     
-2. 使用公司管理员凭据连接到 PowerShell。 运行以下 cmdlet。
+2. 连接公司管理员凭据访问 PowerShell。 运行以下 cmdlet。
     
   ```powershell
   Connect-OrganizationAddInService
   ```
 
-3. 在" **输入凭据"** 页中，输入 Microsoft 365 全局管理员凭据。 或者，你可以直接在 cmdlet 中输入凭据。 
+3. 在"**输入凭据"** 页中，Microsoft 365全局管理员凭据。 或者，你可以直接在 cmdlet 中输入凭据。 
     
     运行以下 cmdlet，将公司管理员凭据指定为 PSCredential 对象。
     
@@ -60,9 +60,9 @@ ms.locfileid: "50924668"
   ```
 
 > [!NOTE]
-> 有关使用 PowerShell 的信息，请参阅[使用 PowerShell 连接到 Microsoft 365。](./connect-to-microsoft-365-powershell.md) 
+> 有关使用 PowerShell 的信息，请参阅连接[Microsoft 365 PowerShell。](./connect-to-microsoft-365-powershell.md) 
   
-## <a name="upload-an-add-in-manifest"></a>上传加载项清单
+## <a name="upload-an-add-in-manifest"></a>Upload加载项清单
 
 运行 **New-OrganizationAdd-In** cmdlet，从路径（可以是文件位置或 URL）上载外接程序清单。 以下示例显示  _ManifestPath_ 参数值的文件位置。 
   
@@ -76,9 +76,9 @@ New-OrganizationAddIn -ManifestPath 'C:\Users\Me\Desktop\taskpane.xml' -Locale '
 New-OrganizationAddIn -ManifestPath 'C:\Users\Me\Desktop\taskpane.xml' -Locale 'en-US' -Members  'KathyBonner@contoso.com', 'MaxHargrave@contoso.com'
 ```
 
-## <a name="upload-an-add-in-from-the-office-store"></a>从 Office 应用商店上载外接程序
+## <a name="upload-an-add-in-from-the-office-store"></a>Upload应用商店中Office加载项
 
-运行 **New-OrganizationAddIn** cmdlet 以从 Office 应用商店上载清单。
+运行 **New-OrganizationAddIn** cmdlet 从应用商店Office清单。
   
 在下面的示例中 **，New-OrganizationAddIn** cmdlet 指定适用于美国位置和内容市场的外接程序的 AssetId。
   
@@ -86,7 +86,7 @@ New-OrganizationAddIn -ManifestPath 'C:\Users\Me\Desktop\taskpane.xml' -Locale '
 New-OrganizationAddIn -AssetId 'WA104099688' -Locale 'en-US' -ContentMarket 'en-US'
 ```
 
-若要确定  _AssetId_ 参数的值，可以从外接程序的 Office 商店网页的 URL 复制它。 AssetIds 始终以"WA"开头，后跟数字。 例如，在上一示例中，ASSETId 值 WA104099688 的源是外接程序的 Office 商店网页 [https://store.office.com/en-001/app.aspx?assetid=WA104099688](https://store.office.com/en-001/app.aspx?assetid=WA104099688) URL：。
+若要确定 _AssetId_ 参数的值，可以从外接程序的 Office 应用商店网页的 URL 复制它。 AssetIds 始终以"WA"开头，后跟数字。 例如，在上一示例中，WA104099688 的 AssetId 值源是外接程序的 Office Store 网页 [https://store.office.com/en-001/app.aspx?assetid=WA104099688](https://store.office.com/en-001/app.aspx?assetid=WA104099688) URL：。
   
 _Locale_ 参数和 _ContentMarket_ 参数的值相同，指示您尝试安装外接程序的国家/地区。 格式为 en-US、fr-FR。 等等。 
   

@@ -1,5 +1,5 @@
 ---
-title: 在 Microsoft 365 中查看目录同步状态
+title: 查看目录中的目录Microsoft 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -28,31 +28,31 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 03/19/2021
 ms.locfileid: "50924656"
 ---
-# <a name="view-directory-synchronization-status-in-microsoft-365"></a>在 Microsoft 365 中查看目录同步状态
+# <a name="view-directory-synchronization-status-in-microsoft-365"></a>查看目录中的目录Microsoft 365
 
-如果你通过将本地环境与 Microsoft 365 同步，将本地 Active Directory 域服务 (AD DS) 与 Azure Active Directory (Azure AD) 集成，则还可以检查同步的状态。
+如果通过将本地环境与 Microsoft 365 同步，将本地 Active Directory 域服务 (AD DS) 与 Azure Active Directory (Azure AD) 集成，则还可以检查同步的状态。
   
 ## <a name="view-directory-synchronization-status"></a>查看目录同步状态
 
-- 登录到 Microsoft [365 管理中心，](https://admin.microsoft.com) 然后选择主页上的 **"DirSync** 状态"。
+- 登录到管理中心 [Microsoft 365](https://admin.microsoft.com)主页上的 **"DirSync** 状态"。
 - 或者，你可以转到"用户 **""** 活动用户"，在"活动用户"页面上， \> 选择"**更多** \> **目录同步"。** 在"**目录同步"窗格中**，选择 **"转到目录同步管理"。**
 
 ## <a name="information-on-the-manage-directory-synchronization-page"></a>"管理目录同步"页上的信息
 
 下表列出了可在页面上获取相关信息的功能。
   
-如果您的目录同步出现问题，则此页上也列出了这些错误。 有关可能遇到的不同错误的详细信息，请参阅在 [Microsoft 365](identify-directory-synchronization-errors.md)中标识目录同步错误。
+如果您的目录同步出现问题，则此页上也列出了这些错误。 有关可能遇到的不同错误的详细信息，请参阅在 Microsoft 365[中标识目录同步Microsoft 365。](identify-directory-synchronization-errors.md)
   
-|Item|它有何用途？|
+|项目|它有何用途？|
 |:-----|:-----|
-|**已验证域** | 已验证你自己的 Microsoft 365 租户中的域数。 |
+|**已验证域** | 已验证你拥有Microsoft 365租户中的域数。 |
 |**未验证域** | 已添加但未经验证的域。 |
 |**启用目录同步** |TRUE 或 FALSE。 指定是否已启用目录同步。 |
 |**最新目录同步** | 上次运行目录同步的时间。 如果上次同步的时间超过三天，将显示一条警告和一个指向疑难解答工具的链接。 |
-|**启用密码同步** | TRUE 或 FALSE。 指定您是否具有本地和 Microsoft 365 租户之间的密码哈希同步。 |
+|**启用密码同步** | TRUE 或 FALSE。 指定本地租户和本地租户之间是否Microsoft 365哈希同步。 |
 |**上次密码同步** | 上次运行密码哈希同步的时间。 如果上次同步的时间超过三天，将显示一条警告和一个指向疑难解答工具的链接。 |
-|**目录同步客户端版本** | 如果已发布新版本的 Azure AD Connect，包含下载链接。 |
-|**目录同步服务帐户** | 显示 Microsoft 365 目录同步服务帐户的名称。 |
+|**目录同步客户端版本** | 如果已发布新版本的 Azure AD 连接包含下载链接。 |
+|**目录同步服务帐户** | 显示你的目录Microsoft 365服务帐户的名称。 |
 |||
 
 ## <a name="monitor-synchronization-health"></a>监控同步运行状况

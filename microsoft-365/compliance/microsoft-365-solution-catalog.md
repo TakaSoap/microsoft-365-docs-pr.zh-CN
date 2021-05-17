@@ -78,7 +78,7 @@ Microsoft 365中的合规性解决方案是集成功能的集合，可用于帮�
 
 若要访问Microsoft 365目录，请转到 全局管理员、合规性管理员或合规性数据管理员并 [https://compliance.microsoft.com](https://compliance.microsoft.com) 登录。 选择 **屏幕** 左侧导航窗格中的"目录"以打开目录主页。
 
-## <a name="frequently-asked-questions"></a>常见问题
+## <a name="frequently-asked-questions"></a>常见问题解答
 
 **为什么我看不到解决方案Microsoft 365目录？**
 

@@ -32,11 +32,11 @@ ms.locfileid: "50927948"
 
 ## <a name="more-information"></a>更多信息
 
-自 2020 年 1 月起，我们已经开始弃用 TLS 1.0 和 1.1。 不支持通过 TLS 1.0 或 1.1 在我们的 DoD 或 GCC High 实例中连接到 Office 365 的任何客户端、设备或服务。 对于 Office 365 的商业客户，TLS 1.0 和 1.1 弃用将于 2020 年 10 月 15 日开始，并持续数周和数月推出。 
+自 2020 年 1 月起，我们已经开始弃用 TLS 1.0 和 1.1。 不支持通过 TLS 1.0 或 1.1 在我们的 DoD 或 GCC High 实例中连接到 Office 365 的任何客户端、设备或服务。 对于 Office 365 商业客户，TLS 1.0 和 1.1 的弃用将于 2020 年 10 月 15 日开始，并持续数周和数月推出。 
 
 我们建议所有客户端-服务器和浏览器-服务器组合使用 TLS1.2（或更高版本）以保持与 Office 365 服务的连接。 你可能必须更新某些客户端-服务器和浏览器-服务器组合。
 
-你需要通过 TLS 1.0 或 TLS 1.1 更新调用 Microsoft 365 API 的应用程序以使用 TLS 1.2。 .NET 4.5 默认为 TLS 1.1。 若要更新 .NET 配置，请参阅如何在客户端上启用传输层安全性[ (TLS) 1.2。](/mem/configmgr/core/plan-design/security/enable-tls-1-2-client)
+你需要更新通过 TLS 1.0 或 TLS 1.1 调用 Microsoft 365 API 的应用程序，以使用 TLS 1.2。 .NET 4.5 默认为 TLS 1.1。 若要更新 .NET 配置，请参阅如何在客户端上启用传输层安全性[ (TLS) 1.2。](/mem/configmgr/core/plan-design/security/enable-tls-1-2-client)
 
 以下是已知的无法使用 TLS 1.2 的客户端。 更新这些客户端以确保对服务的访问不会间断。
 

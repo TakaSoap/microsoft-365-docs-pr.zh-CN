@@ -1,5 +1,5 @@
 ---
-title: 通过远程工作为小型企业提供能力
+title: 通过远程工作为小型企业提供支持
 f1.keywords:
 - NOCSH
 ms.author: twerner
@@ -22,7 +22,7 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 04/26/2021
 ms.locfileid: "52023733"
 ---
-# <a name="empower-your-small-business-with-remote-work"></a>通过远程工作为小型企业提供能力
+# <a name="empower-your-small-business-with-remote-work"></a>通过远程工作为小型企业提供支持
 
 随着企业适应让员工进行远程工作并虚拟与客户联系的需求不断增加，此网站将更新为使用 Microsoft 365 的企业远程工作的最新操作方法信息、提示、资源和指南。
 

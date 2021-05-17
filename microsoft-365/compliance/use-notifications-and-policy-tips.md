@@ -283,7 +283,7 @@ Office桌面程序自动直接从 Office 365 同步 DLP 策略，然后扫描文
   
 ## <a name="more-information"></a>更多信息
 
-- [了解终结点数据丢失防护](dlp-learn-about-dlp.md)    
+- [了解数据丢失防护](dlp-learn-about-dlp.md)    
 - [从模板创建 DLP 策略](create-a-dlp-policy-from-a-template.md)
 - [DLP 策略条件、例外和操作 (预览) ](./dlp-microsoft-teams.md) 
 - [创建 DLP 策略来保护具有 FCI 或其他属性的文档](protect-documents-that-have-fci-or-other-properties.md)

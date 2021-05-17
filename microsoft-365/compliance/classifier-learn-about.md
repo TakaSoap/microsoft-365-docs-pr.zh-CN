@@ -136,8 +136,8 @@ Microsoft 365五个预先训练的分类器：
 ## <a name="see-also"></a>另请参阅
 
 - [保留标签](retention.md)
-- [了解终结点数据丢失防护](dlp-learn-about-dlp.md)
+- [了解数据丢失防护](dlp-learn-about-dlp.md)
 - [敏感度标签](sensitivity-labels.md)
-- [敏感信息类型实体定义](sensitive-information-type-entity-definitions.md)
+- [敏感信息类型属性定义](sensitive-information-type-entity-definitions.md)
 - [文档手指打印](document-fingerprinting.md)
 - [精确数据匹配](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)

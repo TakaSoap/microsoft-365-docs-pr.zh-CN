@@ -26,7 +26,7 @@ ms.locfileid: "51051468"
 
 使用这些资源部署新式桌面：
 
-- [Windows 10 部署](/windows/deployment/)
+- [Windows 10部署](/windows/deployment/)
 - [部署 Microsoft 365 应用版](/deployoffice/deployment-guide-microsoft-365-apps)
 - [Microsoft Intune](/mem/intune/fundamentals/planning-guide)
 - [标识和设备访问策略](../security/defender-365-security/microsoft-365-policies-configurations.md)
@@ -37,6 +37,6 @@ ms.locfileid: "51051468"
 
 ## <a name="windows-and-office-deployment-lab-kit"></a>Windows 和 Office 部署实验室工具包
 
-此工具包可帮助你规划、测试和验证运行 Windows 10 企业版和 Microsoft 365 企业应用版桌面的部署和管理。 实验室包括使用 Microsoft Endpoint Configuration Manager、桌面分析、Office 自定义工具、OneDrive、Windows Autopilot 等。
+此工具包可帮助你规划、测试和验证对运行 Windows 10 企业版 和 Microsoft 365 企业应用版 的桌面的部署Microsoft 365 企业应用版。 实验室包括使用 Microsoft Endpoint Configuration Manager、桌面Office自定义工具、OneDrive、Windows Autopilot 等。
 
-有关详细信息 [，请参阅 Windows 和 Office 部署实验室](modern-desktop-deployment-and-management-lab.md) 工具包。
+有关详细信息[Windows Office部署实验室工具包](modern-desktop-deployment-and-management-lab.md)。

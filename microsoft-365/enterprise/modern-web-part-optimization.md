@@ -20,7 +20,7 @@ ms.custom:
 ms.reviewer: sstewart
 search.appverid:
 - MET150
-description: 了解如何使用页面诊断优化 SharePoint Online 新式网站页面中 Web 部件的性能。
+description: 了解如何使用页面诊断优化 SharePoint Online 新式网站页面中的 Web 部件性能。
 ms.openlocfilehash: 2a72ecd8bc1f6dee4166809f72ce5f9bce422dc9
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT

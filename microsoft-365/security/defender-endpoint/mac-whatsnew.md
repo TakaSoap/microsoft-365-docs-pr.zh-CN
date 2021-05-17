@@ -114,7 +114,7 @@ ms.locfileid: "51994993"
 
 ## <a name="1010723"></a>101.07.23
 
-- 向 输出添加了新字段，用于检查被动模式的状态和 `mdatp --health` EDR 组 ID
+- 向 输出添加了新字段，用于检查被动模式的状态和EDR `mdatp --health` ID
 
   > [!NOTE]
   > `mdatp --health` 将在将来的 `mdatp health` 产品更新中替换为 。
@@ -178,9 +178,9 @@ ms.locfileid: "51994993"
 ## <a name="1008691"></a>100.86.91
 
 > [!CAUTION]
-> 为了确保对 macOS 设备进行最完整的保护，并符合 Apple 停止将 macOS 本机安全更新交付到低于 [current – 2] 的操作系统版本，macOS Sierra [10.12] 上将不再支持适用于 Mac 的 MDATP 部署和更新。 适用于 Mac 的 MDATP 更新和增强功能将传递到运行版本 Catalina [10.15]、Mojave [10.14] 和 High Sierra [10.13] 的设备。 
+> 为了确保对 macOS 设备进行最完整的保护，并且与 Apple 停止向低于 [current – 2] 的操作系统版本交付 macOS 本机安全更新一致，macOS Sierra [10.12] 将不再支持 MDATP for Mac 部署和更新。 MDATP For Mac 更新和增强功能将传递到运行版本 Catalina [10.15]、Mojave [10.14] 和 High Sierra [10.13] 的设备。 
 >
-> 如果你已经将适用于 Mac 的 MDATP 部署到 Sierra [10.12] 设备，请升级到最新的 macOS 版本以消除丢失保护的风险。
+> 如果你已经将 MDATP for Mac 部署到 Sierra [10.12] 设备，请升级到最新的 macOS 版本以消除丢失保护的风险。
 
 - Bug 修复&性能改进
 
@@ -231,6 +231,6 @@ ms.locfileid: "51994993"
   > 授予此同意的机制取决于你部署适用于终结点的 Microsoft Defender 的方式：
   >
   > - 有关手动部署，请参阅手动部署主题 [中的更新](mac-install-manually.md#how-to-allow-full-disk-access) 说明。
-  > - 有关托管部署，请参阅基于 [JAMF](mac-install-with-jamf.md) 的部署和基于 Microsoft [Intune](mac-install-with-intune.md#create-system-configuration-profiles) 的部署主题中的更新说明。
+  > - 有关托管部署，请参阅基于[JAMF](mac-install-with-jamf.md)的部署和基于Microsoft Intune[部署主题中的更新](mac-install-with-intune.md#create-system-configuration-profiles)说明。
 
 - Bug 修复&性能改进

@@ -1,5 +1,5 @@
 ---
-title: 使用 PowerShell 查看 Microsoft 365 许可证和服务
+title: 使用 PowerShell Microsoft 365许可证和服务
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -19,7 +19,7 @@ ms.custom:
 - LIL_Placement
 - PowerShell
 ms.assetid: bb5260a9-a6a3-4f34-b19a-06c6699f6723
-description: 介绍如何使用 PowerShell 查看有关 Microsoft 365 组织中可用的许可计划、服务和许可证的信息。
+description: 介绍如何使用 PowerShell 查看有关你的组织可用的许可计划、服务和许可证Microsoft 365的信息。
 ms.openlocfilehash: 08f48301001ee6a40318428f3310eab8b0d0a351
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -27,24 +27,24 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 03/19/2021
 ms.locfileid: "50924632"
 ---
-# <a name="view-microsoft-365-licenses-and-services-with-powershell"></a>使用 PowerShell 查看 Microsoft 365 许可证和服务
+# <a name="view-microsoft-365-licenses-and-services-with-powershell"></a>使用 PowerShell Microsoft 365许可证和服务
 
-*本文适用于 Microsoft 365 企业版和 Office 365 企业版。*
+*此文章适用于 Microsoft 365 企业版和 Office 365 企业版。* 
 
-每个 Microsoft 365 订阅包含以下元素：
+每个Microsoft 365订阅都由以下元素组成：
 
-- **许可计划** 这些也称为许可证计划或 Microsoft 365 计划。 许可计划定义可供用户使用的 Microsoft 365 服务。 你的 Microsoft 365 订阅可能包含多个许可计划。 Microsoft 365 E3 就是一个许可计划示例。
+- **许可计划** 这些也称为许可证计划或Microsoft 365计划。 许可计划定义Microsoft 365可用的服务。 你的Microsoft 365订阅可能包含多个许可计划。 例如，许可计划Microsoft 365 E3。
     
-- **服务** 这些也称为服务计划。 服务是每个许可计划中提供的 Microsoft 365 产品、特性和功能，例如，Exchange Online 和 Microsoft 365 企业应用版 (以前称为 Office 365 专业增强版) 。 可以从授予不同服务访问权限的不同许可计划向用户分配多个许可证。
+- **服务** 这些也称为服务计划。 服务是Microsoft 365许可计划中提供的主要产品、特性和功能，例如Exchange Online和Microsoft 365 企业应用版 (名称Office 365 专业增强版) 。 可以从授予不同服务访问权限的不同许可计划向用户分配多个许可证。
     
-- **许可证** 每个许可计划都包含你购买的许可证数量。 你可以向用户分配许可证，以便他们可以使用许可计划定义的 Microsoft 365 服务。 每个用户帐户至少需要一个许可计划中的一个许可证，以便他们可以登录到 Microsoft 365 并使用服务。
+- **许可证** 每个许可计划都包含你购买的许可证数量。 你向用户分配许可证，以便Microsoft 365许可计划定义的服务。 每个用户帐户至少需要一个许可计划中的一个许可证，以便他们可以登录到Microsoft 365并使用服务。
     
-可以使用适用于 Microsoft 365 的 PowerShell 查看有关 Microsoft 365 组织中可用许可计划、许可证和服务的详细信息。 有关不同 Office 365 订阅中提供的产品、功能和服务的详细信息，请参阅 [Office 365 计划选项](/office365/servicedescriptions/office-365-platform-service-description/office-365-plan-options)。
+可以使用 PowerShell for Microsoft 365查看有关组织中可用许可计划、许可证和服务Microsoft 365的详细信息。 有关不同订阅中提供的产品、功能和服务Office 365，请参阅Office 365[选项"](/office365/servicedescriptions/office-365-platform-service-description/office-365-plan-options)。
 
 
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>使用用于图表模块的 Azure Active Directory PowerShell
 
-首先， [连接到 Microsoft 365 租户](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)。
+首先，[连接到你的Microsoft 365租户](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)。
   
 若要查看有关当前许可计划以及每个计划的可用许可证的摘要信息，请运行以下命令：
   
@@ -54,13 +54,13 @@ Get-AzureADSubscribedSku | Select -Property Sku*,ConsumedUnits -ExpandProperty P
 
 结果包含：
   
-- **SkuPartNumber：** 显示组织的可用许可计划。 例如， `ENTERPRISEPACK` 是 Office 365 企业版 E3 的许可证计划名称。
+- **SkuPartNumber：** 显示组织的可用许可计划。 例如， `ENTERPRISEPACK` 是 E3 的许可证Office 365 企业版名称。
     
 - **已启用：** 你为特定许可计划购买的许可证数量。
     
 - **ConsumedUnits：** 从特定许可计划向用户分配的许可证数。
     
-若要查看所有许可证计划中可用的 Microsoft 365 服务的详细信息，请首先显示许可证计划的列表。
+若要查看有关所有许可证Microsoft 365中可用的服务的详细信息，请首先显示许可证计划的列表。
 
 ```powershell
 Get-AzureADSubscribedSku | Select SkuPartNumber
@@ -103,10 +103,10 @@ ENTERPRISEPREMIUM 是第三行。 因此，索引值是 (3 - 1) 2。
 
 ## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>使用用于 Windows PowerShell 的 Microsoft Azure Active Directory 模块
 
-首先， [连接到 Microsoft 365 租户](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)。
+首先，[连接到你的Microsoft 365租户](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)。
 
 >[!Note]
->PowerShell 脚本可自动执行本主题中描述的过程。 具体而言，该脚本允许你查看和禁用 Microsoft 365 组织（包括 Sway）中的服务。 有关详细信息，请参阅使用 [PowerShell 禁用对 Sway 的访问](disable-access-to-sway-with-microsoft-365-powershell.md)。
+>PowerShell 脚本可自动执行本主题中描述的过程。 具体而言，该脚本允许你查看和禁用 Microsoft 365 中的服务，包括 Sway。 有关详细信息，请参阅使用 [PowerShell 禁用对 Sway 的访问](disable-access-to-sway-with-microsoft-365-powershell.md)。
 >
     
 若要查看有关当前许可计划以及每个计划的可用许可证的摘要信息，请运行以下命令：
@@ -121,7 +121,7 @@ Get-MsolAccountSku
 
 结果包含以下信息：
   
-- **AccountSkuId：** 使用 语法 显示组织的可用许可计划 `<CompanyName>:<LicensingPlan>` 。  _\<CompanyName>_ 是你在 Microsoft 365 中注册时提供的值，并且对于你的组织是唯一的。 _\<LicensingPlan>_ 该值对于每个人都是相同的。 例如，在值 中，公司名称是 ，许可计划名称 `litwareinc:ENTERPRISEPACK`  `litwareinc` 是  `ENTERPRISEPACK` Office 365 企业版 E3 的系统名称。
+- **AccountSkuId：** 使用 语法 显示组织的可用许可计划 `<CompanyName>:<LicensingPlan>` 。  _\<CompanyName>_ 是当你在组织中注册时Microsoft 365的值，并且对于你的组织是唯一的。 _\<LicensingPlan>_ 该值对于每个人都是相同的。 例如，在值 中，公司名称是 ，许可计划名称 `litwareinc:ENTERPRISEPACK` `litwareinc` 是 `ENTERPRISEPACK` E3 Office 365 企业版名称。
     
 - **ActiveUnits：** 你为特定许可计划购买的许可证数量。
     
@@ -129,13 +129,13 @@ Get-MsolAccountSku
     
 - **ConsumedUnits：** 从特定许可计划向用户分配的许可证数。
     
-若要查看所有许可证计划中可用的 Microsoft 365 服务的详细信息，请运行以下命令：
+若要查看有关所有许可证Microsoft 365中可用的服务的详细信息，请运行以下命令：
   
 ```powershell
 Get-MsolAccountSku | Select -ExpandProperty ServiceStatus
 ```
 
-下表显示了最常见服务的 Microsoft 365 服务计划及其友好名称。 服务计划列表可能会有所不同。 
+下表显示了最常见的Microsoft 365服务计划及其友好名称。 服务计划列表可能会有所不同。 
   
 |**服务计划**|**说明**|
 |:-----|:-----|
@@ -143,7 +143,7 @@ Get-MsolAccountSku | Select -ExpandProperty ServiceStatus
 | `TEAMS1` <br/> |Microsoft Teams  <br/> |
 | `YAMMER_ENTERPRISE` <br/> |Yammer  <br/> |
 | `RMS_S_ENTERPRISE` <br/> |Azure 权限管理 (RMS)  <br/> |
-| `OFFICESUBSCRIPTION` <br/> |以前名为 Office 365 专业增强 (*Microsoft 365* 企业应用版)   <br/> |
+| `OFFICESUBSCRIPTION` <br/> |*Microsoft 365 企业应用版 (之前名为 Office 365 专业增强版)*  <br/> |
 | `MCOSTANDARD` <br/> |Skype for Business Online  <br/> |
 | `SHAREPOINTWAC` <br/> |Office  <br/> |
 | `SHAREPOINTENTERPRISE` <br/> |SharePoint Online  <br/> |
@@ -151,13 +151,13 @@ Get-MsolAccountSku | Select -ExpandProperty ServiceStatus
    
 有关许可证计划的完整列表 (也称为产品名称) 、包含的服务计划及其对应的友好名称，请参阅许可的产品名称和服务计划 [标识符](/azure/active-directory/users-groups-roles/licensing-service-plan-reference)。
 
-若要查看特定许可计划中提供的 Microsoft 365 服务的详细信息，请使用以下语法。
+若要查看有关特定Microsoft 365计划中可用的服务的详细信息，请使用以下语法。
   
 ```powershell
 (Get-MsolAccountSku | where {$_.AccountSkuId -eq "<AccountSkuId>"}).ServiceStatus
 ```
 
-此示例显示 office 365 企业版 E3 许可计划 (litwareinc：ENTERPRISEPACK) 服务。
+此示例显示 litwareinc：ENTERPRISEPACK (Office 365 企业版 E3) 计划中可用的服务。
   
 ```powershell
 (Get-MsolAccountSku | where {$_.AccountSkuId -eq "litwareinc:ENTERPRISEPACK"}).ServiceStatus

@@ -17,7 +17,7 @@ f1.keywords:
 - NOCSH
 ms.custom:
 - seo-marvel-apr2020
-description: 本文介绍了如何从 Skype for Business 和 Exchange 中删除或禁用混合新式验证。
+description: 本文介绍了如何删除或禁用混合新式验证Skype for Business和Exchange。
 ms.openlocfilehash: 9442ef3e19d0835bfd59f27ec425e36fd7dfcf7a
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -27,41 +27,41 @@ ms.locfileid: "50927284"
 ---
 # <a name="removing-or-disabling-hybrid-modern-authentication-from-skype-for-business-and-exchange"></a>从 Skype for Business 和 Exchange 删除或禁用混合新式验证
 
-*本文适用于 Microsoft 365 企业版和 Office 365 企业版。*
+*此文章适用于 Microsoft 365 企业版和 Office 365 企业版。* 
 
 如果已启用混合新式验证 (HMA) 仅发现它不适合当前环境，可以禁用 HMA。 本文介绍如何。
   
-## <a name="who-is-this-article-for"></a>本文针对谁？
+## <a name="who-is-this-article-for"></a>Who本文针对的是什么？
 
-如果你已启用 Skype for Business Online 或本地、和/或 Exchange Online 或本地的新式验证，并且发现你需要禁用 HMA，这些步骤适合你。
+如果你在 Skype for Business Online 或本地、和/或 Exchange Online 或本地中启用了新式验证，并且发现你需要禁用 HMA，则这些步骤适合你。
 
 > [!IMPORTANT]
-> 如果你位于 Skype for Business Online 或本地，拥有混合拓扑 HMA，并且需要在开始之前查看支持的拓扑，请参阅' Skype[for Business topologies supported with Modern Authentication](/skypeforbusiness/plan-your-deployment/modern-authentication/topologies-supported)'一文。
+> 如果你位于[](/skypeforbusiness/plan-your-deployment/modern-authentication/topologies-supported)Skype for Business Online 或本地，拥有混合拓扑 HMA，并且需要在开始之前查看支持的拓扑，请参阅'新式验证支持的 Skype for Business 拓扑'文章。
   
-## <a name="how-to-disable-hybrid-modern-authentication-exchange"></a>如何禁用 Exchange (混合新式) 
+## <a name="how-to-disable-hybrid-modern-authentication-exchange"></a>如何禁用混合新式验证 (Exchange) 
 
-1. **Exchange 本地**：打开 Exchange 命令行管理程序 并运行以下命令： 
+1. **Exchange本地：** 打开命令行Exchange命令行管理程序并运行以下命令： 
 
 ```powershell
 Set-OrganizationConfig -OAuth2ClientProfileEnabled $false
 Set-AuthServer -Identity evoSTS -IsDefaultAuthorizationEndpoint $false
 ```
 
-2. **Exchange** [Online：使用远程](/powershell/exchange/connect-to-exchange-online-powershell) PowerShell 连接到 Exchange Online。 运行以下命令以将  *OAuth2ClientProfileEnabled*  标志变成"false"：
+2. **Exchange Online：连接**[远程Exchange Online](/powershell/exchange/connect-to-exchange-online-powershell) PowerShell 进行连接。 运行以下命令以将  *OAuth2ClientProfileEnabled*  标志变成"false"：
 
 ```powershell    
 Set-OrganizationConfig -OAuth2ClientProfileEnabled:$false
 ```
     
-## <a name="how-to-disable-hybrid-modern-authentication-skype-for-business"></a>如何禁用 Skype for Business (混合新式) 
+## <a name="how-to-disable-hybrid-modern-authentication-skype-for-business"></a>如何禁用混合新式验证 (Skype for Business) 
 
-1. **本地 Skype for Business**：在 Skype for Business 命令行管理程序 中运行以下命令：
+1. **Skype for Business本地：** 在命令行管理程序中Skype for Business命令：
 
 ```powershell
 Set-CsOAuthConfiguration -ClientAuthorizationOAuthServerIdentity ""
 ```
 
-2. **Skype for Business Online：** 使用远程 PowerShell 连接到 [Skype for Business Online。](manage-skype-for-business-online-with-microsoft-365-powershell.md) 运行以下命令以禁用新式验证：
+2. **Skype for Business** [Online：连接远程 powerShell Skype for Business Online。](manage-skype-for-business-online-with-microsoft-365-powershell.md) 运行以下命令以禁用新式验证：
 
 ```powershell    
 Set-CsOAuthConfiguration -ClientAdalAuthOverride Disallowed

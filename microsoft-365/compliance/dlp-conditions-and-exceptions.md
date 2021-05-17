@@ -46,7 +46,7 @@ DLP 策略中的条件和例外可标识策略应用于的敏感项目。 操作
 - [邮件头](#message-headers)
 - [邮件属性](#message-properties)
 
-### <a name="senders"></a>Senders
+### <a name="senders"></a>发件人
 
 
 |**DLP 中的条件或例外**  |**powerShell 中的条件/Microsoft 365参数** |**属性类型**  |**说明**|
@@ -81,7 +81,7 @@ DLP 策略中的条件和例外可标识策略应用于的敏感项目。 操作
 | 主题或正文包含字词    | condition： *SubjectOrBodyContainsWords* <br/> exception： *ExceptIfSubjectOrBodyContainsWords*    | Words    | 主题字段或邮件正文中具有指定词语的邮件    |
 
 
-### <a name="attachments"></a>Attachments
+### <a name="attachments"></a>附件
 
 |**DLP 中的条件或例外**| **powerShell 中的条件/Microsoft 365参数**| **属性类型**   |**说明**|
 |---------|---------|---------|---------|

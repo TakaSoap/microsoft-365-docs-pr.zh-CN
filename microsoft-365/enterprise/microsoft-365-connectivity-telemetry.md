@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 连接遥测
+title: Microsoft 365连接遥测
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
@@ -19,7 +19,7 @@ search.appverid:
 - MET150
 - BCS160
 ms.assetid: f5ee6c33-bcd7-4b0b-b0f8-dc1d9fb8d132
-description: 本文包含有关 Microsoft 365 连接遥测的信息。
+description: 本文包含有关连接遥测Microsoft 365的信息。
 ms.openlocfilehash: 9ad7abbabc293e1b283d6742966982b09f0bffa1
 ms.sourcegitcommit: e02cf5702af178ddd2968877a808874ecb49ed2c
 ms.translationtype: MT
@@ -27,7 +27,7 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 04/26/2021
 ms.locfileid: "52029143"
 ---
-# <a name="microsoft-365-connectivity-telemetry"></a>Microsoft 365 连接遥测
+# <a name="microsoft-365-connectivity-telemetry"></a>Microsoft 365连接遥测
 
 本文正在进行中。
 

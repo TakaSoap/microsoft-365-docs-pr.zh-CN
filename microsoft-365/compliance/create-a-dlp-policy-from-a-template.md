@@ -186,7 +186,7 @@ OneDrive for Business帐户使整个组织的人可以轻松协作和共享文�
   
 ## <a name="more-information"></a>更多信息
 
-- [了解终结点数据丢失防护](dlp-learn-about-dlp.md)
+- [了解数据丢失防护](dlp-learn-about-dlp.md)
 - [发送通知，并显示 DLP 策略的策略提示](use-notifications-and-policy-tips.md)
 - [创建 DLP 策略来保护具有 FCI 或其他属性的文档](protect-documents-that-have-fci-or-other-properties.md)
 - [DLP 策略模板包含的内容](what-the-dlp-policy-templates-include.md)

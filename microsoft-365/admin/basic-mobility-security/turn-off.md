@@ -55,4 +55,4 @@ ms.locfileid: "52023865"
 3.  在"警告"对话框中，选择"**是"。**
 
 >[!NOTE]
->有关在组织设备仍处于阻止状态时取消阻止设备的更多步骤，请参阅博客文章从 [Office 365](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Removing-Access-Control-from-Mobile-Device-Management-for-Office/ba-p/279934)移动设备管理中删除访问控制。
+>有关在组织设备仍处于阻止状态时取消阻止设备的更多步骤，请参阅博客文章从 Office 365 移动设备管理[。](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Removing-Access-Control-from-Mobile-Device-Management-for-Office/ba-p/279934)

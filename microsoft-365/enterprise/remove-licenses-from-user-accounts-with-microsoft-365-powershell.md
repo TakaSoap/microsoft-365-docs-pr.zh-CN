@@ -1,5 +1,5 @@
 ---
-title: 使用 PowerShell 从用户帐户中删除 Microsoft 365 许可证
+title: 使用 Microsoft 365从用户帐户删除许可证
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -19,7 +19,7 @@ ms.custom:
 - LIL_Placement
 - O365ITProTrain
 ms.assetid: e7e4dc5e-e299-482c-9414-c265e145134f
-description: 介绍如何使用 PowerShell 删除之前分配给用户的 Microsoft 365 许可证。
+description: 介绍如何使用 PowerShell 删除Microsoft 365分配给用户的许可证。
 ms.openlocfilehash: 9944d1ab056d109b6bf71a44fe01acef78ce1f14
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -27,17 +27,17 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 03/19/2021
 ms.locfileid: "50920664"
 ---
-# <a name="remove-microsoft-365-licenses-from-user-accounts-with-powershell"></a>使用 PowerShell 从用户帐户中删除 Microsoft 365 许可证
+# <a name="remove-microsoft-365-licenses-from-user-accounts-with-powershell"></a>使用 Microsoft 365从用户帐户删除许可证
 
-*本文适用于 Microsoft 365 企业版和 Office 365 企业版。*
+*此文章适用于 Microsoft 365 企业版和 Office 365 企业版。* 
 
 >[!Note]
->[了解如何使用](../admin/manage/remove-licenses-from-users.md) Microsoft 365 管理中心删除用户帐户的许可证。 有关其他资源的列表，请参阅管理 [用户和组](../admin/add-users/index.yml)。
+>[了解如何使用管理中心从用户帐户](../admin/manage/remove-licenses-from-users.md)Microsoft 365许可证。 有关其他资源的列表，请参阅管理 [用户和组](../admin/add-users/index.yml)。
 >
 
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>使用用于图表模块的 Azure Active Directory PowerShell
 
-首先， [连接到 Microsoft 365 租户](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)。
+首先，[连接到你的Microsoft 365租户](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)。
 
 接下来，使用此命令列出租户的许可证计划。
 
@@ -81,7 +81,7 @@ if($userList.Count -ne 0) {
 
 ## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>使用用于 Windows PowerShell 的 Microsoft Azure Active Directory 模块
 
-首先， [连接到 Microsoft 365 租户](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)。
+首先，[连接到你的Microsoft 365租户](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)。
    
 要查看组织中的许可计划 (**AccountSkuID**) 信息，请参阅下列主题：
     
@@ -103,14 +103,14 @@ Set-MsolUserLicense -UserPrincipalName <Account> -RemoveLicenses "<AccountSkuId1
 >PowerShell Core 不支持用于 Windows PowerShell 模块和 cmdlet 的其名称中包含 **Msol** 的 Microsoft Azure Active Directory 模块。 若要继续使用这些 cmdlet，必须从 Windows PowerShell 运行它们。
 >
 
-此示例从用户帐户 **管理 (删除 litwareinc：ENTERPRISEPACK**) Office 365 企业版 E3 BelindaN@litwareinc.com。
+此示例从用户帐户中删除 **litwareinc：ENTERPRISEPACK** (Office 365 企业版 E3) 许可证 BelindaN@litwareinc.com。
   
 ```powershell
 Set-MsolUserLicense -UserPrincipalName belindan@litwareinc.com -RemoveLicenses "litwareinc:ENTERPRISEPACK"
 ```
 
 >[!Note]
->不能使用 `Set-MsolUserLicense` cmdlet 取消为用户分配 *已取消的许可证* 。 你必须为 Microsoft 365 管理中心的每个用户帐户分别执行这一操作。
+>不能使用 `Set-MsolUserLicense` cmdlet 取消为用户分配 *已取消的许可证* 。 你必须为管理中心中的每个用户帐户单独Microsoft 365帐户。
 >
 
 若要删除一组现有许可用户的所有许可证，请使用以下方法之一：
@@ -154,7 +154,7 @@ kakers@contoso.com
   Set-MsolUserLicense -UserPrincipalName $x[$i] -RemoveLicenses "<AccountSkuId1>","<AccountSkuId2>"...
   }
   ```
-此示例从文本文件 C：Documents\Accounts.txt\My (中定义的用户帐户中删除 **litwareinc：ENTERPRISEPACK** (Office 365 企业版 E3) 许可证。
+此示例从文本文件 C：Documents\Accounts.txt\My (Office 365 企业版 中定义的用户帐户) **litwareinc：ENTERPRISEPACK**) E3 许可证。
     
   ```powershell
   $x=Get-Content "C:\My Documents\Accounts.txt"

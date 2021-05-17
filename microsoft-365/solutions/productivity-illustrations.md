@@ -1,6 +1,6 @@
 ---
 title: Microsoft 365 生产力插图
-description: 使用这些图示（如 Teams 体系结构图）可了解实现 Microsoft 365 生产力解决方案的体系结构基础知识。
+description: 使用这些图示（如 Teams 体系结构图）可了解实现Microsoft 365解决方案的体系结构基础知识。
 ms.author: samanro
 author: samanro
 manager: bcarter
@@ -22,18 +22,18 @@ ms.locfileid: "52029083"
 ---
 # <a name="microsoft-365-productivity-illustrations"></a>Microsoft 365 生产力插图
 
-Microsoft 365 企业版解决方案系列提供了实现 Microsoft 365 功能的指南，尤其是跨技术的功能（包括 Teams 体系结构图） 的指南。
+企业Microsoft 365系列提供了实现 Microsoft 365 功能的指南，尤其是跨技术（包括 Teams 体系结构图）的功能。
 
 ## <a name="microsoft-teams-and-related-productivity-services-in-microsoft-365-for-it-architects"></a>面向 IT 架构师的 Microsoft 365 中的 Microsoft Teams 和相关生产力服务
 Microsoft 365 中生产力服务的逻辑体系结构，以 Microsoft Teams 为主导。
 
 | 项目 | 说明 |
 |:-----|:-----|
-|[![Teams 逻辑体系结构海报](../downloads/msft-teams-logical-architecture-thumb.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-teams-logical-architecture.pdf) <br/> [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-teams-logical-architecture.pdf) \| [Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-teams-logical-architecture.vsdx)  <br>2021 年 1 月更新   |Microsoft 提供了一系列生产力服务，这些服务协同工作，提供数据治理、安全性和符合性相关功能的协作体验。 <br/> <br/>此系列图示展示了企业架构师生产力服务的逻辑体系结构，以 Microsoft Teams 为主导。|
+|[![Teams逻辑体系结构海报](../downloads/msft-teams-logical-architecture-thumb.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-teams-logical-architecture.pdf) <br/> [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-teams-logical-architecture.pdf) \| [Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-teams-logical-architecture.vsdx)  <br>2021 年 1 月更新   |Microsoft 提供了一系列生产力服务，这些服务协同工作，提供数据治理、安全性和符合性相关功能的协作体验。 <br/> <br/>此系列图示展示了企业架构师生产力服务的逻辑体系结构，以 Microsoft Teams 为主导。|
 
 
 ## <a name="groups-in-microsoft-365-for-it-architects"></a>面向 IT 架构师的 Microsoft 365 中的组
-此图包括 IT 架构师有关 Microsoft 365 组的信息。 若要了解如何在组织中配置和管理 Microsoft 365 组和团队进行协作，请参阅设置[与 Microsoft 365](/microsoft-365/solutions/setup-secure-collaboration-with-teams)的安全协作和[什么是协作治理？。](/microsoft-365/solutions/collaboration-governance-overview)
+此图包括 IT 架构师有关组Microsoft 365的信息。 若要了解如何在组织中配置和管理Microsoft 365组和团队进行协作，请参阅使用 Microsoft 365 设置安全协作[和](/microsoft-365/solutions/setup-secure-collaboration-with-teams)[什么是协作治理？。](/microsoft-365/solutions/collaboration-governance-overview)
 
 | 项目 | 说明 |
 |:-----|:-----|
@@ -41,15 +41,15 @@ Microsoft 365 中生产力服务的逻辑体系结构，以 Microsoft Teams 为�
 
 ## <a name="migrate-to-microsoft-365"></a>迁移到 Microsoft 365
 
-Microsoft 提供了用于将本地网络文件共享和 SharePoint Server 网站迁移到 Microsoft 365 的工具，强调在迁移过程中保护和确保内容的安全性。 这组插图演示了可用于将内容移动到 SharePoint、Teams 和 OneDrive 的各种方法，以及数据如何流动到整个过程。 
+Microsoft 提供了用于将本地网络文件共享和 SharePoint Server 网站迁移到 Microsoft 365，强调在迁移过程中保护和确保内容的安全性。 这组插图演示了可用于将内容移动到 SharePoint、Teams 和 OneDrive 的各种方法，以及数据在过程中如何流动。 
 
 | 项目 | 说明 |
 |:-----|:-----|
-|[![模型海报：迁移到 Microsoft 365](../media/solutions-architecture-center/msft-migration-thumb.png)](https://download.microsoft.com/download/0/5/b/05b7fb7c-1557-4ebb-9036-c5fc3a4cd94c/Migration-posters-mm-spmt.pdf) <br/> [以 PDF 格式下载](https://download.microsoft.com/download/0/5/b/05b7fb7c-1557-4ebb-9036-c5fc3a4cd94c/Migration-posters-mm-spmt.pdf) \|[下载为 Visio](https://download.microsoft.com/download/0/5/b/05b7fb7c-1557-4ebb-9036-c5fc3a4cd94c/Migration-posters-mm-spmt.vsdx)   <br/> 2021 年 3 月更新 |包括： <ul><li>  文件共享迁移</li><li>SharePoint Server 迁移 </li> </ul><br> 有关详细信息，请参阅[将内容迁移到 Microsoft 365。](/sharepointmigration/migrate-to-sharepoint-online)|
+|[![模型海报：迁移到Microsoft 365](../media/solutions-architecture-center/msft-migration-thumb.png)](https://download.microsoft.com/download/0/5/b/05b7fb7c-1557-4ebb-9036-c5fc3a4cd94c/Migration-posters-mm-spmt.pdf) <br/> [以 PDF 格式下载](https://download.microsoft.com/download/0/5/b/05b7fb7c-1557-4ebb-9036-c5fc3a4cd94c/Migration-posters-mm-spmt.pdf)  \| [以 Visio 格式下载](https://download.microsoft.com/download/0/5/b/05b7fb7c-1557-4ebb-9036-c5fc3a4cd94c/Migration-posters-mm-spmt.vsdx) <br/> 2021 年 3 月更新 |包括： <ul><li>  文件共享迁移</li><li>SharePoint Server 迁移 </li> </ul><br> 有关详细信息，请参阅[将内容迁移到Microsoft 365。](/sharepointmigration/migrate-to-sharepoint-online)|
 
-## <a name="microsoft-365-information-protection-and-compliance-capabilities"></a>Microsoft 365 信息保护和合规性功能
+## <a name="microsoft-365-information-protection-and-compliance-capabilities"></a>Microsoft 365信息保护和合规性功能
 
-Microsoft 365 包括一组广泛的信息保护和合规性功能。 这些功能与 Microsoft 的生产力工具一起旨在帮助组织实时协作，同时遵守严格的法规合规性框架。 
+Microsoft 365包括一组广泛的信息保护和合规性功能。 这些功能与 Microsoft 的生产力工具一起旨在帮助组织实时协作，同时遵守严格的法规合规性框架。 
 
 这组插图使用监管最严格的行业之一金融服务，演示如何应用这些功能来解决常见的法规要求。 可随时根据自己的使用情况来修改这些插图。 
 
@@ -60,7 +60,7 @@ Microsoft 365 包括一组广泛的信息保护和合规性功能。 这些功�
 
 
 ## <a name="security-and-information-protection-for-multi-region-organizations"></a>多区域组织安全和信息保护
-具有单个 Microsoft 365 租户的多地区组织的安全和信息保护
+具有单个租户的多区域组织的安全和信息Microsoft 365保护
 
 | 项目 | 说明 |
 |:-----|:-----|
@@ -77,22 +77,22 @@ Microsoft 365 包括一组广泛的信息保护和合规性功能。 这些功�
 
 
 <a name="BKMK_O365IDP"></a>
-## <a name="identity-and-device-protection-for-microsoft-365"></a>Microsoft 365 的标识和设备保护
+## <a name="identity-and-device-protection-for-microsoft-365"></a>适用于用户的身份和设备Microsoft 365
 
-用于保护访问 Microsoft 365、其他 SaaS 服务以及使用 Azure AD 应用程序代理发布的本地应用程序的标识和设备的建议功能。
+用于保护访问 azure AD 应用程序代理发布的 Microsoft 365、其他 SaaS 服务和本地应用程序的标识和设备的建议功能。
 
 | 项目 | 说明 |
 |:-----|:-----|
-|[![模型海报：Microsoft 365 的标识和设备保护](../media/microsoft-365-policies-configurations/O365_Identity_device_protection_thumb.png)](../downloads/MSFT_cloud_architecture_identity&device_protection.pdf) <br/>  [以 PDF 格式查看](../downloads/MSFT_cloud_architecture_identity&device_protection.pdf) \|[以 PDF 格式下载](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_identity&device_protection.pdf) \|[下载为 Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_identity&device_protection.vsdx)   <br/> 2020 年 9 月更新|请务必在数据、标识和设备中使用一致的保护级别。 此模型显示了可与保护标识和设备的功能相媲美的功能详细信息。  <br/> |
+|[![模型海报：适用于用户的身份和设备Microsoft 365](../media/microsoft-365-policies-configurations/O365_Identity_device_protection_thumb.png)](../downloads/MSFT_cloud_architecture_identity&device_protection.pdf) <br/>  [以 PDF 格式查看](../downloads/MSFT_cloud_architecture_identity&device_protection.pdf) \|[以 PDF 格式下载](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_identity&device_protection.pdf) \|[下载为Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_identity&device_protection.vsdx)   <br/> 2020 年 9 月更新|请务必在数据、标识和设备中使用一致的保护级别。 此模型显示了可与保护标识和设备的功能相媲美的功能详细信息。  <br/> |
  
 <a name="BKMK_ediscovery"></a>
-## <a name="advanced-ediscovery-architecture-in-microsoft-365"></a>Microsoft 365 中的高级电子数据展示体系结构
+## <a name="advanced-ediscovery-architecture-in-microsoft-365"></a>Advanced eDiscovery体系结构Microsoft 365
 
-高级电子数据展示端到端工作流和数据流，包括在 Microsoft 365 多地理位置环境中。 
+Advanced eDiscovery端到端工作流和数据流，Microsoft 365多地理位置环境中。 
 
 | 项目 | 说明 |
 |:-----|:-----|
-|[![模型海报：Microsoft 365 中的高级电子数据展示体系结构](../media/solutions-architecture-center/ediscovery-poster-thumb.png)](../media/solutions-architecture-center/m365-advanced-ediscovery-architecture.png) <br/> [以图像视图](../media/solutions-architecture-center/m365-advanced-ediscovery-architecture.png) \|[以 PDF 格式下载](https://download.microsoft.com/download/d/1/c/d1ce536d-9bcf-4d31-b75b-fcf0dc560665/m365-advanced-ediscovery-architecture.pdf) \|[下载为 Visio](https://download.microsoft.com/download/d/1/c/d1ce536d-9bcf-4d31-b75b-fcf0dc560665/m365-advanced-ediscovery-architecture.vsdx)   <br/> 2020 年 10 月更新|包括： <ul><li>  单个环境中端到端工作流</li><li>Microsoft 365 多地理位置环境中端到端工作流 </li><li>支持 EDRM 工作流的端到端数据流</li> |
+|[![模型海报：Advanced eDiscovery体系结构Microsoft 365](../media/solutions-architecture-center/ediscovery-poster-thumb.png)](../media/solutions-architecture-center/m365-advanced-ediscovery-architecture.png) <br/> [以图像视图](../media/solutions-architecture-center/m365-advanced-ediscovery-architecture.png) \|[以 PDF 格式下载](https://download.microsoft.com/download/d/1/c/d1ce536d-9bcf-4d31-b75b-fcf0dc560665/m365-advanced-ediscovery-architecture.pdf) \|[下载为Visio](https://download.microsoft.com/download/d/1/c/d1ce536d-9bcf-4d31-b75b-fcf0dc560665/m365-advanced-ediscovery-architecture.vsdx)   <br/> 更新时间：2020年 10 月|包括： <ul><li>  单个环境中端到端工作流</li><li>多地理位置环境中Microsoft 365端到端工作流 </li><li>支持 EDRM 工作流的端到端数据流</li> |
   
 
 
@@ -102,22 +102,22 @@ Microsoft 365 包括一组广泛的信息保护和合规性功能。 这些功�
 
 | 项目 | 说明 |
 |:-----|:-----|
-|[![Microsoft 电话解决方案海报](../media/solutions-architecture-center/microsoft-telephony-solutions-thumb.png)](https://download.microsoft.com/download/4/3/5/435cd4e9-ca56-4fd1-acb6-d1fda7952320/microsoft-voice-solutions.pdf) <br/> [PDF](https://download.microsoft.com/download/4/3/5/435cd4e9-ca56-4fd1-acb6-d1fda7952320/microsoft-voice-solutions.pdf) \| [Visio](https://download.microsoft.com/download/7/5/c/75c13012-e20c-48bd-a6dd-ea49d1a3420d/microsoft-voice-solutions.vsdx) <br/>2021 年 3 月更新 | 有关详细信息，请参阅规划 [Teams 语音解决方案](/microsoftteams/cloud-voice-landing-page)。|
+|[![Microsoft 电话解决方案海报](../media/solutions-architecture-center/microsoft-telephony-solutions-thumb.png)](https://download.microsoft.com/download/4/3/5/435cd4e9-ca56-4fd1-acb6-d1fda7952320/microsoft-voice-solutions.pdf) <br/> [PDF](https://download.microsoft.com/download/4/3/5/435cd4e9-ca56-4fd1-acb6-d1fda7952320/microsoft-voice-solutions.pdf) \| [Visio](https://download.microsoft.com/download/7/5/c/75c13012-e20c-48bd-a6dd-ea49d1a3420d/microsoft-voice-solutions.vsdx) <br/>2021 年 3 月更新 | 有关详细信息，请参阅规划[语音Teams解决方案](/microsoftteams/cloud-voice-landing-page)。|
 
 
 ## <a name="empower-remote-workers"></a>让远程工作者效能更上一层楼
 
-通过 Microsoft 365 和其他 Microsoft 云技术，你可以为工作人员提供安全访问组织本地和基于云的信息、工具和资源，从他们家访问。 
+借助 Microsoft 365 和其他 Microsoft 云技术，你可以为工作人员提供安全访问组织的本地和基于云的信息、工具和资源。 
 
 [![“为远程工作者提供强大功能”海报](../media/empower-people-to-work-remotely/empower-remote-workers-poster.png)](../downloads/empower-remote-workers.pdf) <br/>
 [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/empower-remote-workers.pdf)  | [PowerPoint](https://download.microsoft.com/download/5/1/1/511b77a9-a34c-4ea7-af2a-32b07f20b780/empower-remote-workers.pptx) <br>
 2020 年 7 月更新
 
-有关详细信息，请参阅此海报文章：为远程工作者提供 [Microsoft 365 支持](empower-people-to-work-remotely.md)。
+有关详细信息，请参阅此海报文章：为[远程](empower-people-to-work-remotely.md)工作者提供Microsoft 365。
 
-## <a name="microsoft-teams-with-security-isolation"></a>具有安全隔离的 Microsoft Teams
+## <a name="microsoft-teams-with-security-isolation"></a>Microsoft Teams安全隔离
 
-使用 Microsoft 365，可以在 Microsoft Teams 中配置私人团队，并使用 SharePoint 网站安全设置和唯一的敏感度标签加密文件，以便只有团队成员才能解密文件。
+使用 Microsoft 365，可以在 Microsoft Teams 中配置专用团队，并使用 SharePoint 网站安全设置和唯一的敏感度标签加密文件，以便只有团队成员才能解密文件。
 
 [![“采用安全隔离的 Microsoft Teams”文章](../media/secure-teams-security-isolation/team-security-isolation-poster.png)](../downloads/team-security-isolation-poster.pdf) <br/>
 [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/team-security-isolation-poster.pdf)  | [PowerPoint](https://download.microsoft.com/download/8/0/5/8057fc16-c044-40b6-a652-7ed555ba2895/team-security-isolation-poster.pptx) <br> 2020 年 8 月更新

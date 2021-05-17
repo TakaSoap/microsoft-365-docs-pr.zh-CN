@@ -57,7 +57,7 @@ ms.locfileid: "52114368"
     
     此外，若要在安全与合规中心创建导入作业，必须满足以下条件之一：
     
-  - 必须分配有 Exchange Onlin 中的“邮件收件人”角色。 默认情况下，此角色分配给“组织管理和收件人管理”角色组。
+  - 在 Exchange Online 中必须分配有“邮件收件人”角色。默认情况下，此角色分配给“组织管理和收件人管理”角色组。
     
     或
     
@@ -240,7 +240,7 @@ ms.locfileid: "52114368"
     | `FilePath` <br/> | 指定 PST 文件将在Azure 存储到 Microsoft 时复制到的文件夹区域中的文件夹位置。  <br/>  在 CSV 文件的此列中添加的内容取决于您在上一步中为 参数  `/dstdir:` 指定的内容。 如果源位置上具有子文件夹，则参数中的值必须包含子文件夹的相对路径;例如 `FilePath` ，/folder1/user1/。  <br/>  如果使用 ，  `/dstdir:"ingestiondata/"` 则此参数在 CSV 文件中保留为空。  <br/>  如果为参数的值包括可选的 pathname (例如 ， ，则使用该路径名 (不包括 CSV 文件中此参数的  `/dstdir:`  `/dstdir:"ingestiondata/FILESERVER01/PSTs"` "ingestiondata") 。 此参数的值区分大小写。  <br/>  无论采用哪种方法，均 *不要* 在 `FilePath` 参数的值中包含“ingestiondata”。 保留此参数为空或仅指定可选的 pathname。  <br/> > [!IMPORTANT]> 文件路径名称的大小写必须与在上一步中的 参数中指定的  `/dstdir:` 大小写相同。 例如，如果在上一步中对子文件夹名称使用了 ，但在 CSV 文件的 参数中使用了 ，PST 文件的导入  `"ingestiondata/FILESERVER01/PSTs"`  `fileserver01/psts`  `FilePath` 将失败。 请务必在两种情况下都使用相同的大小写。           |（保留为空白）  <br/> 或  <br/>  `FILESERVER01/PSTs` <br/> |
     | `Name` <br/> |指定要导入到用户邮箱的 PST 文件的名称。 此参数的值区分大小写。  <br/> > [!IMPORTANT]> CSV 文件中 PST 文件名的大小写必须与步骤 2 中上载到 Azure 存储 位置的 PST 文件相同。 例如，如果在 CSV 文件中的 `Name` 参数中使用 `annb.pst`，但实际 PST 文件的名称为 `AnnB.pst`，则导入该 PST 文件将会失败。 请确保 CSV 文件中的 PST 名称使用与实际 PST 文件相同的大小写。           | `annb.pst` <br/> |
     | `Mailbox` <br/> |指定要将 PST 文件导入到的邮箱的电子邮件地址。 不能指定公用文件夹，因为 PST 导入服务不支持将 PST 文件导入公用文件夹。  <br/> 若要将 PST 文件导入到非活动邮箱，必须为此参数指定邮箱 GUID。 若要获取此 GUID，请在 Exchange Online 中运行以下 PowerShell 命令：`Get-Mailbox <identity of inactive mailbox> -InactiveMailboxOnly | FL Guid` <br/> > [!NOTE]>有时，您可能有多个邮箱具有相同的电子邮件地址，其中一个邮箱是活动邮箱，另一个邮箱处于软删除 (或处于非活动) 状态。 在这种情况下，必须指定邮箱 GUID 来唯一标识要将 PST 文件导入到的邮箱。 若要获取活动邮箱的此 GUID，请运行以下 PowerShell 命令：`Get-Mailbox <identity of active mailbox> | FL Guid`。 若要获取软删除邮箱或非 (的 GUID) ，请运行以下命令  `Get-Mailbox <identity of soft-deleted or inactive mailbox> -SoftDeletedMailbox | FL Guid` ：。           | `annb@contoso.onmicrosoft.com` <br/> 或  <br/>  `2d7a87fe-d6a2-40cc-8aff-1ebea80d4ae7` <br/> |
-    | `IsArchive` <br/> | 指定是否要将 PST 文件导入到用户的存档邮箱。 有两个选项：  <br/> **FALSE** 将 PST 文件导入到用户的主邮箱。  <br/> **TRUE** 将 PST 文件导入到用户的存档邮箱。 这是假设[用户的存档邮箱已启用](enable-archive-mailboxes.md)的情况。 如果将此参数设置为 `TRUE`，但用户的存档邮箱未启用，则针对此用户进行的导入将失败。 如果针对某个用户的导入失败（因为他们的存档邮箱未启用，并且此属性设置为 `TRUE`），导入作业中的其他用户将不会受到影响。  <br/>  如果将此参数留空，PST 文件会导入到用户的主邮箱中。  <br/> **注意：** 若要针对主邮箱位于本地的某个用户将 PST 文件导入到基于云的存档邮箱，只需将此参数指定为 `TRUE`，并将 `Mailbox` 参数指定为该用户本地邮箱的电子邮件地址。  <br/> | `FALSE` <br/> 或  <br/>  `TRUE` <br/> |
+    | `IsArchive` <br/> | 指定是否将 PST 文件导入到用户的存档邮箱。有两个选项：  <br/> **FALSE** 将 PST 文件导入到用户的主邮箱。  <br/> **TRUE** 将 PST 文件导入到用户的存档邮箱。 这是假设[用户的存档邮箱已启用](enable-archive-mailboxes.md)的情况。 如果将此参数设置为 `TRUE`，但用户的存档邮箱未启用，则针对此用户进行的导入将失败。 如果针对某个用户的导入失败（因为他们的存档邮箱未启用，并且此属性设置为 `TRUE`），导入作业中的其他用户将不会受到影响。  <br/>  如果将此参数留空，PST 文件会导入到用户的主邮箱中。  <br/> **注意：** 若要针对主邮箱位于本地的某个用户将 PST 文件导入到基于云的存档邮箱，只需将此参数指定为 `TRUE`，并将 `Mailbox` 参数指定为该用户本地邮箱的电子邮件地址。  <br/> | `FALSE` <br/> 或  <br/>  `TRUE` <br/> |
     | `TargetRootFolder` <br/> | 指定要将 PST 文件导入到的邮箱文件夹。  <br/>  如果保留此参数为空，PST 将导入到名为 **Imported** 的新文件夹，该文件夹位于邮箱根级别 (与"收件箱"文件夹和其他默认邮箱文件夹位于同一级别) 。  <br/>  如果指定  `/` ，PST 文件中的项目将直接导入到用户的收件箱文件夹中。  <br/>  如果指定  `/<foldername>` ，PST 文件中的项目将导入到名为 的文件夹  *\<foldername\>* 。 例如，如果使用 `/ImportedPst`，项目将被导入到名为 **ImportedPst** 的文件夹中。 此文件夹将位于用户邮箱内，与“收件箱”文件夹属于同一级别。  <br/> |（保留为空白）  <br/> 或  <br/>  `/` <br/> 或  <br/>  `/ImportedPst` <br/> |
     | `ContentCodePage` <br/> |此可选参数指定用于导入 ANSI 文件格式的 PST 文件的代码页的数值。 此参数用于从中国、日本和韩国 (CJK) 组织导入 PST 文件，因为这些语言通常使用双字节字符集 (DBCS) 进行字符编码。 对于为邮箱文件夹名使用 DBCS 的语言，如果此参数未用于导入 PST 文件，则在导入文件后，这些文件夹名通常会混淆。  <br/> 有关要用于此参数的受支持值的列表，请参阅[代码页标识符](/windows/win32/intl/code-page-identifiers)。  <br/> > [!NOTE]>如前所述，这是一个可选参数，你不必在 CSV 文件中添加它。 或者，你可以包含该参数，并在一行或多行中将其值留空。           |（保留为空白）  <br/> 或  <br/>  `932`（这是 ANSI/OEM 日语的代码页标识符）  <br/> |
     | `SPFileContainer` <br/> |对于 PST 导入，将该参数留空。  <br/> |不适用  <br/> |
@@ -451,7 +451,7 @@ Microsoft Azure 存储资源管理器处于预览阶段。
     > [!NOTE]
     > 若要帮助您解决 PST 导入 CSV 映射文件的问题，请使用 [Azure 存储资源管理器](#view-a-list-of-the-pst-files-uploaded-to-microsoft-365)工具查看从硬盘驱动器上载到 Azure 存储区域中的 PST 文件的 **ingestiondata** 容器中的文件夹结构。 映射文件错误通常是由 FilePath 参数中的错误值导致的。 此参数指定 PST 文件在 Azure 存储区域中的位置。 请参阅步骤 3 中的表中 FilePath [参数的说明](#step-3-create-the-pst-import-mapping-file)。 如前所述，当您在步骤 2 中运行 WAImportExport.exe 工具时，参数指定 PST 文件在 Azure  `/dstdir:` 存储 [区域中的位置](#step-2-copy-the-pst-files-to-the-hard-drive)。 
   
-## <a name="more-information"></a>更多信息
+## <a name="more-information"></a>详细信息
 
 - 驱动器寄送是一种将大量存档邮件数据导入到 Microsoft 365以利用组织可用的合规性功能的有效方式。 将存档数据导入到用户邮箱后，您可以：
     

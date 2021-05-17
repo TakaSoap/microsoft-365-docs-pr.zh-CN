@@ -29,13 +29,13 @@ ms.locfileid: "50928002"
 > [!IMPORTANT]
 > 若要执行本文中所述的任务，您必须分配有适当的角色，例如以下角色之一：<br/>- Microsoft 365 企业版全局管理员<br/>- 全局管理员<br/>- 合规性管理员<br/>- IBM 合规性管理 (这是一个新角色！) <p>若要了解有关信息屏障的先决条件详细信息，请参阅S [prerequisites (for information barrier policies) ](information-barriers-policies.md#prerequisites)。<p>确保连接到[安全与&中心 PowerShell。](/powershell/exchange/connect-to-scc-powershell)
 
-## <a name="issue-users-are-unexpectedly-blocked-from-communicating-with-others-in-microsoft-teams"></a>问题：用户意外被阻止与 Microsoft Teams 中的其他人通信 
+## <a name="issue-users-are-unexpectedly-blocked-from-communicating-with-others-in-microsoft-teams"></a>问题：意外阻止用户与用户中的其他人Microsoft Teams 
 
-在这种情况下，人们报告与 Microsoft Teams 中的其他人通信时出现意外问题。 示例如下：
+在这种情况下，人们报告与企业中的其他人通信时出现意外Microsoft Teams。 示例如下：
 
-- 用户在 Microsoft Teams 中搜索另一个用户，但无法找到该用户。
-- 用户可以在 Microsoft Teams 中查找但无法选择其他用户。
-- 用户在 Microsoft Teams 中可以看到另一个用户，但无法向该其他用户发送消息。
+- 用户在搜索中搜索另一个用户，但Microsoft Teams。
+- 用户可以在搜索中查找另一个用户，但不能Microsoft Teams。
+- 用户可以看到另一个用户，但不能在邮件中向该其他用户Microsoft Teams。
 
 ### <a name="what-to-do"></a>需执行的操作
 
@@ -79,9 +79,9 @@ ms.locfileid: "50928002"
 
     **如果信息屏障策略仍有问题，请联系支持** 人员。
 
-## <a name="issue-communications-are-allowed-between-users-who-should-be-blocked-in-microsoft-teams"></a>问题：允许在 Microsoft Teams 中阻止的用户之间通信
+## <a name="issue-communications-are-allowed-between-users-who-should-be-blocked-in-microsoft-teams"></a>问题：允许在网站中阻止的用户之间Microsoft Teams
 
-在这种情况下，虽然定义了、激活和应用了信息屏障，但应阻止彼此通信的人在 Microsoft Teams 中以某种方式能够相互聊天和通话。
+在这种情况下，虽然定义了、激活和应用了信息屏障，但应阻止相互通信的人以某种方式能够与对方聊天，并Microsoft Teams。
 
 ### <a name="what-to-do"></a>需执行的操作
 
@@ -91,7 +91,7 @@ ms.locfileid: "50928002"
 
     |**语法** _|_ *示例**|
     |:----------|:----------|
-    | `Get-InformationBarrierRecipientStatus -Identity <value> -Identity2 <value>` <p> 可以使用任何能够唯一标识每个用户的值，例如名称、别名、可分辨名称、规范域名、电子邮件地址或 GUID。 |`Get-InformationBarrierRecipientStatus -Identity meganb -Identity2 alexw` <p> 在此示例中，我们引用了 Office 365 中的两个用户帐户 *：Meganb* 表示 *Megan，alexw* 表示 *Alex。* |
+    | `Get-InformationBarrierRecipientStatus -Identity <value> -Identity2 <value>` <p> 可以使用任何能够唯一标识每个用户的值，例如名称、别名、可分辨名称、规范域名、电子邮件地址或 GUID。 |`Get-InformationBarrierRecipientStatus -Identity meganb -Identity2 alexw` <p> 本示例中，我们引用了 Office 365 中的两个用户帐户 *：meganb* 表示 *Megan，alexw* 表示 *Alex。*  |
 
     > [!TIP]
     > 还可以对单个用户使用此 cmdlet： `Get-InformationBarrierRecipientStatus -Identity <value>`
@@ -102,28 +102,28 @@ ms.locfileid: "50928002"
 
     |**结果**|**下一步要做什么**|
     |:----------|:------------------|
-    | 未针对所选用户列表列出任何 ()  | 执行下列操作之一：<br/>- 在 Azure Active Directory 中编辑用户的用户配置文件，将用户分配到现有区段。  (请参阅使用 [Office 365 PowerShell](../enterprise/configure-user-account-properties-with-microsoft-365-powershell.md).) <br/>- 使用信息屏障 [的受支持属性定义一个段](information-barriers-attributes.md)。 然后，[定义新策略或](information-barriers-policies.md#part-2-define-information-barrier-policies)[编辑现有策略](information-barriers-edit-segments-policies.md#edit-a-policy)以包含该区段。 |
+    | 未针对所选用户列表列出任何 ()  | 执行下列操作之一：<br/>- 通过编辑用户的用户配置文件，将用户分配给现有Azure Active Directory。  (请参阅 Configure [user account properties with Office 365 PowerShell](../enterprise/configure-user-account-properties-with-microsoft-365-powershell.md).) <br/>- 使用信息屏障 [的受支持属性定义一个段](information-barriers-attributes.md)。 然后，[定义新策略或](information-barriers-policies.md#part-2-define-information-barrier-policies)[编辑现有策略](information-barriers-edit-segments-policies.md#edit-a-policy)以包含该区段。 |
     | 列出了分段，但没有向这些分段分配信息屏障策略 | 执行下列操作之一：<br/>- [为问题的每个段](information-barriers-policies.md#part-2-define-information-barrier-policies) 定义新的信息屏障策略 <br/>- [编辑现有信息屏障策略](information-barriers-edit-segments-policies.md#edit-a-policy) 以将其分配到正确的段 |
     | 列出了各个分段，并且每个分段都包含在信息屏障策略中 | - 运行 `Get-InformationBarrierPolicy` cmdlet 以验证信息屏障策略是否处于活动状态<br/>- 运行 `Get-InformationBarrierPoliciesApplicationStatus` cmdlet 以确认策略已应用<br/>- 运行 `Start-InformationBarrierPoliciesApplication` cmdlet 以应用所有活动信息屏障策略 |
 
 ## <a name="issue-i-need-to-remove-a-single-user-from-an-information-barrier-policy"></a>问题：我需要从信息屏障策略中删除单个用户
 
-在这种情况下，信息屏障策略生效，一个或多个用户意外被阻止与 Microsoft Teams 中的其他人通信。 你可以从信息屏障策略中删除一个或多个单个用户，而不是完全删除信息屏障策略。
+在这种情况下，信息屏障策略生效，一个或多个用户意外被阻止与网站中的其他用户Microsoft Teams。 你可以从信息屏障策略中删除一个或多个单个用户，而不是完全删除信息屏障策略。
 
 ### <a name="what-to-do"></a>需执行的操作
 
-信息屏障策略分配给用户细分。 使用用户帐户配置文件 中的 [某些属性定义分段](information-barriers-attributes.md)。 如果必须从单个用户中删除策略，请考虑在 Azure Active Directory 中编辑该用户的配置文件，使该用户不再包含在受信息屏障影响的段中。
+信息屏障策略分配给用户细分。 使用用户帐户配置文件 中的 [某些属性定义分段](information-barriers-attributes.md)。 如果必须从单个用户中删除策略，请考虑在 Azure Active Directory中编辑该用户的配置文件，使该用户不再包含在受信息屏障影响的段中。
 
 1. 将 **Get-InformationBarrierRecipientStatus** cmdlet 与 Identity 参数一同使用。 此 cmdlet 返回有关用户的信息，例如属性值和应用的任何信息屏障策略。
 
     |**语法**|**示例**|
     |:---------|:----------|
-    | `Get-InformationBarrierRecipientStatus -Identity <value> -Identity2 <value>` <p> 可以使用任何能够唯一标识每个用户的值，例如名称、别名、可分辨名称、规范域名、电子邮件地址或 GUID。 | `Get-InformationBarrierRecipientStatus -Identity meganb -Identity2 alexw` <p> 在此示例中，我们引用了 Office 365 中的两个用户帐户 *：Meganb* 表示 *Megan，alexw* 表示 *Alex。*          |
-    | `Get-InformationBarrierRecipientStatus -Identity <value>` <p> 可以使用任何能够唯一标识该用户的值，如名称、别名、可分辨名称、规范域名、电子邮件地址或 GUID。|`Get-InformationBarrierRecipientStatus -Identity jeanp`<p> 在此例中，我们引用 Office 365 中的单个帐户： *用户*。 |
+    | `Get-InformationBarrierRecipientStatus -Identity <value> -Identity2 <value>` <p> 可以使用任何能够唯一标识每个用户的值，例如名称、别名、可分辨名称、规范域名、电子邮件地址或 GUID。 | `Get-InformationBarrierRecipientStatus -Identity meganb -Identity2 alexw` <p> 本示例中，我们引用了 Office 365 中的两个用户帐户 *：meganb* 表示 *Megan，alexw* 表示 *Alex。*           |
+    | `Get-InformationBarrierRecipientStatus -Identity <value>` <p> 可以使用任何能够唯一标识该用户的值，如名称、别名、可分辨名称、规范域名、电子邮件地址或 GUID。|`Get-InformationBarrierRecipientStatus -Identity jeanp`<p> 此示例引用了 Office 365 中的单个 *帐户*。 |
 
 2. 查看结果，查看是否分配了信息屏障策略，以及用户所属的 (所属的)  (类别) 类别。
 
-3. 若要从受信息障碍影响的区段中删除用户，请更新 [Azure Active Directory 中的用户配置文件信息](/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal)。
+3. 若要从受信息障碍影响的区段中删除用户，请更新用户[Azure Active Directory。](/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal)
 
 4. 等待大约 30 分钟，FwdSync 发生。 或者，运行 `Start-InformationBarrierPoliciesApplication` cmdlet 以应用所有活动信息屏障策略。
 
@@ -145,7 +145,7 @@ ms.locfileid: "50928002"
 
 2. 根据上一步的结果，执行下列步骤之一：
   
-    |**状态**|**下一步**|
+    |**状态**|**后续步骤**|
     |:---------|:------------|
     | **未启动** | 如果自 **Start-InformationBarrierPoliciesApplication** cmdlet 运行以来已超过 45 分钟，请查看 审核日志 以查看策略定义中是否有错误，或应用程序未启动的其他原因。 |
     | **失败** | 如果应用程序失败，请查看审核日志。 此外，查看你的分段和策略。 是否向多个用户分配了多个段？ 是否向任何分段分配了多个策略？ 如有必要， [编辑分段](information-barriers-edit-segments-policies.md#edit-a-segment) 和/ [或编辑策略](information-barriers-edit-segments-policies.md#edit-a-policy)，然后再次运行 **Start-InformationBarrierPoliciesApplication** cmdlet。 |
@@ -157,15 +157,15 @@ ms.locfileid: "50928002"
 
 ### <a name="what-to-do"></a>需执行的操作
 
-确保您的组织没有 Exchange [通讯簿](/exchange/address-books/address-book-policies/address-book-policies) 策略。 此类策略将阻止应用信息屏障策略。
+确保您的组织没有Exchange[通讯簿](/exchange/address-books/address-book-policies/address-book-policies)策略。 此类策略将阻止应用信息屏障策略。
 
 1. 连接到 [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)。
 
 2. 运行 [Get-AddressBookPolicy](/powershell/module/exchange/get-addressbookpolicy) cmdlet 并查看结果。
 
-    |**结果**|**下一步**|
+    |**结果**|**后续步骤**|
     |:----------|:------------|
-    | 列出了 Exchange 通讯簿策略 | [删除通讯簿策略](/exchange/address-books/address-book-policies/remove-an-address-book-policy) |
+    | Exchange通讯簿策略 | [删除通讯簿策略](/exchange/address-books/address-book-policies/remove-an-address-book-policy) |
     | 不存在通讯簿策略 |查看审核日志，了解策略应用程序失败的原因 |
 
 3. [查看用户帐户、分段、策略或策略应用程序的状态](information-barriers-policies.md#view-status-of-user-accounts-segments-policies-or-policy-application)。
@@ -211,5 +211,5 @@ $DetailedLogs = Search-UnifiedAuditLog -EndDate <yyyy-mm-ddThh:mm:ss>  -StartDat
 
 ## <a name="resources"></a>资源
 
-- [在 Microsoft Teams 中定义信息屏障策略](information-barriers-policies.md)
+- [定义信息屏障策略Microsoft Teams](information-barriers-policies.md)
 - [信息屏障](information-barriers.md)

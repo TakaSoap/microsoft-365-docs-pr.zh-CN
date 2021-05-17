@@ -1,7 +1,7 @@
 ---
 title: Microsoft 365 Defender 的新增功能
 description: 列出 Microsoft 365 Defender 中的新特性和功能
-keywords: Microsoft 365 Defender 中的新增功能， ga， 通用， 功能， 可用， 新增
+keywords: what's new in Microsoft 365 Defender， ga， generally available， capabilities， available， new
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -32,7 +32,7 @@ ms.locfileid: "52029024"
 > 希望体验 Microsoft 365 Defender？ 你可[在验室环境中评估](m365d-evaluation.md?ocid=cx-docs-MTPtriallab) 或[生产中运行试点项目](m365d-pilot.md?ocid=cx-evalpilot)。
 >
 
-在最新版本的 Microsoft 365 defender (GA) 通常提供以下功能。
+在最新版本的 (Defender) 通用版本Microsoft 365提供以下功能。
 
 RSS 源：在此页面更新时收到通知，方法为将以下 URL 复制并粘贴到源阅读器中：
 ```http
@@ -40,17 +40,17 @@ https://docs.microsoft.com/api/search/rss?search=%22Lists+the+new+features+and+f
 ```
 
 ## <a name="april-2021"></a>2021 年 4 月
-- 改进的 Microsoft 365 安全中心 <br> 改进的 [Microsoft 365 安全中心](https://security.microsoft.com)现已提供公共预览版。 此新体验将 Defender for Endpoint、Defender for Office、365 Microsoft 365 Defender 等引入了 Microsoft 365 安全中心。 这是用于管理安全控制的新主页。 [了解新增功能](./overview-security-center.md)。
+- 改进Microsoft 365安全中心 <br> 改进的 [Microsoft 365 安全中心](https://security.microsoft.com)现已提供公共预览版。 此新体验将 Defender for Endpoint、Defender for Office、365 Microsoft 365 Defender 等引入了 Microsoft 365 安全中心。 这是用于管理安全控制的新主页。 [了解新增功能](./overview-security-center.md)。
 
-- [Microsoft 365 Defender 威胁分析报告](threat-analytics.md)<br>
- 威胁分析可帮助你响应活动攻击并最大限度地减少其影响。 还可以了解 Microsoft 365 Defender 解决方案阻止的攻击尝试，采取预防措施来降低进一步曝光的风险并增加复原能力。 作为统一安全体验的一部分，威胁分析现在适用于 Microsoft Defender for Endpoint 和 Microsoft Defender for Office E5 许可证持有者。
+- [Microsoft 365Defender 威胁分析报告](threat-analytics.md)<br>
+ 威胁分析可帮助你响应活动攻击并最大限度地减少其影响。 还可以了解 Defender 解决方案阻止Microsoft 365攻击尝试，采取预防措施来降低进一步曝光的风险并增加恢复能力。 作为统一安全体验的一部分，威胁分析现在适用于 Microsoft Defender for Endpoint 和 Microsoft Defender for Office E5 许可证持有者。
 
 ## <a name="march-2021"></a>2021 年 3 月
-- [CloudAppEvents 表](advanced-hunting-cloudappevents-table.md) <br>查找有关 Microsoft Cloud App Security 涵盖的各种云应用和服务中的事件的信息。 此表还包括之前在 中提供的信息 `AppFileEvents` 。
+- [CloudAppEvents 表](advanced-hunting-cloudappevents-table.md) <br>查找有关应用程序涵盖的各种云应用和服务中的Microsoft Cloud App Security。 此表还包括之前在 中提供的信息 `AppFileEvents` 。
 ## <a name="february-2021"></a>2021 年 2 月
--  (预览) 增强[的 Microsoft https://security.microsoft.com) 365](https://security.microsoft.com)安全中心 (现在提供公共预览版。 这一新体验将 Defender for Endpoint 和 Defender for Office 365 引入中心。 [了解有关更改的详细信息](./overview-security-center.md)。
+-  (预览) 增强Microsoft 365[安全 https://security.microsoft.com) ](https://security.microsoft.com) (现在适用于公共预览版。 这一新体验将 Defender for Endpoint 和 Defender for Office 365中心。 [了解有关更改的详细信息](./overview-security-center.md)。
 
-## <a name="september-2020"></a>2020 年 9 月
+## <a name="september-2020"></a>2020 年 9 
 - [IdentityDirectoryEvents 表](advanced-hunting-identitydirectoryevents-table.md) <br> 查找涉及本地域控制器的事件，该域控制器运行 Active Directory (AD) 。 此 [高级搜寻](advanced-hunting-overview.md) 架构表涵盖域控制器上一系列与标识相关的事件和系统事件。
 - [AssignedIPAddresses () 函数](advanced-hunting-assignedipaddresses-function.md) <br> 在高级搜寻查询中使用此函数可快速获取分配给设备的最新 IP 地址或特定时间的最新 IP 地址。
 
@@ -75,4 +75,4 @@ https://docs.microsoft.com/api/search/rss?search=%22Lists+the+new+features+and+f
 ## <a name="march-2019"></a>2019 年 3 月
 - 高级搜寻 <br> 各种搜寻功能的登陆页面，可让你主动查找影响电子邮件和数据、设备和标识的威胁。
 - [Microsoft 安全功能分数](microsoft-secure-score.md) <br> 衡量组织的安全状态，较高的数字表示采取更多改进措施。 按照安全功能分数建议可保护你的组织免遭威胁。 
-- [报表](overview-security-center.md) <br>  功能一系列卡片，涵盖安全分析师和管理员在日常操作中跟踪的一系列领域。
+- [报告](overview-security-center.md) <br>  功能一系列卡片，涵盖安全分析师和管理员在日常操作中跟踪的一系列领域。

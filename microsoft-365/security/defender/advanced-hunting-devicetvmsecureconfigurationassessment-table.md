@@ -1,6 +1,6 @@
 ---
 title: 高级搜寻架构中的 DeviceTvmSecureConfigurationAssessment 表
-description: 了解高级搜寻架构的 DeviceTvmSecureConfigurationAssessment 表中的安全评估事件。 这些威胁&漏洞管理事件提供设备信息以及安全配置详细信息、影响和合规性信息。
+description: 了解高级搜寻架构的 DeviceTvmSecureConfigurationAssessment 表中的安全评估事件。 这些威胁& 漏洞管理事件提供设备信息以及安全配置详细信息、影响和合规性信息。
 keywords: 高级搜寻， 威胁搜寻， 网络威胁搜寻， Microsoft 365 Defender， microsoft 365， m365， 搜索， 查询， 遥测， 架构参考， kusto， 表格， 列， 数据类型， 描述， 威胁 & 漏洞管理， TVM， 设备管理， 安全配置， DeviceTvmSecureConfigurationAssessment
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
