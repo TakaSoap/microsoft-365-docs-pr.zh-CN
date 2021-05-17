@@ -22,15 +22,15 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 03/24/2021
 ms.locfileid: "51166345"
 ---
-# <a name="get-alert-related-files-information-api"></a><span data-ttu-id="65ebc-104">获取警报相关的文件信息 API</span><span class="sxs-lookup"><span data-stu-id="65ebc-104">Get alert related files information API</span></span>
+# <a name="get-alert-related-files-information-api"></a><span data-ttu-id="c6ae7-104">获取警报相关的文件信息 API</span><span class="sxs-lookup"><span data-stu-id="c6ae7-104">Get alert related files information API</span></span>
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-<span data-ttu-id="65ebc-105">**适用于：**</span><span class="sxs-lookup"><span data-stu-id="65ebc-105">**Applies to:**</span></span>
-- [<span data-ttu-id="65ebc-106">Microsoft Defender for Endpoint</span><span class="sxs-lookup"><span data-stu-id="65ebc-106">Microsoft Defender for Endpoint</span></span>](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [<span data-ttu-id="65ebc-107">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="65ebc-107">Microsoft 365 Defender</span></span>](https://go.microsoft.com/fwlink/?linkid=2118804)
+<span data-ttu-id="c6ae7-105">**适用于：**</span><span class="sxs-lookup"><span data-stu-id="c6ae7-105">**Applies to:**</span></span>
+- [<span data-ttu-id="c6ae7-106">Microsoft Defender for Endpoint</span><span class="sxs-lookup"><span data-stu-id="c6ae7-106">Microsoft Defender for Endpoint</span></span>](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [<span data-ttu-id="c6ae7-107">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="c6ae7-107">Microsoft 365 Defender</span></span>](https://go.microsoft.com/fwlink/?linkid=2118804)
  
-> <span data-ttu-id="65ebc-108">想要体验 Microsoft Defender for Endpoint？</span><span class="sxs-lookup"><span data-stu-id="65ebc-108">Want to experience Microsoft Defender for Endpoint?</span></span> [<span data-ttu-id="65ebc-109">注册免费试用版。</span><span class="sxs-lookup"><span data-stu-id="65ebc-109">Sign up for free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+> <span data-ttu-id="c6ae7-108">想要体验 Microsoft Defender for Endpoint？</span><span class="sxs-lookup"><span data-stu-id="c6ae7-108">Want to experience Microsoft Defender for Endpoint?</span></span> [<span data-ttu-id="c6ae7-109">注册免费试用版。</span><span class="sxs-lookup"><span data-stu-id="c6ae7-109">Sign up for free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
@@ -38,59 +38,59 @@ ms.locfileid: "51166345"
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
 
-## <a name="api-description"></a><span data-ttu-id="65ebc-110">API 说明</span><span class="sxs-lookup"><span data-stu-id="65ebc-110">API description</span></span>
-<span data-ttu-id="65ebc-111">检索与特定警报相关的所有文件。</span><span class="sxs-lookup"><span data-stu-id="65ebc-111">Retrieves all files related to a specific alert.</span></span>
+## <a name="api-description"></a><span data-ttu-id="c6ae7-110">API 说明</span><span class="sxs-lookup"><span data-stu-id="c6ae7-110">API description</span></span>
+<span data-ttu-id="c6ae7-111">检索与特定警报相关的所有文件。</span><span class="sxs-lookup"><span data-stu-id="c6ae7-111">Retrieves all files related to a specific alert.</span></span>
 
 
-## <a name="limitations"></a><span data-ttu-id="65ebc-112">限制</span><span class="sxs-lookup"><span data-stu-id="65ebc-112">Limitations</span></span>
-1. <span data-ttu-id="65ebc-113">你可以根据配置的保留期查询上次更新的警报。</span><span class="sxs-lookup"><span data-stu-id="65ebc-113">You can query on alerts last updated according to your configured retention period.</span></span>
-2. <span data-ttu-id="65ebc-114">此 API 的速率限制是每分钟 100 个调用和每小时 1500 个调用。</span><span class="sxs-lookup"><span data-stu-id="65ebc-114">Rate limitations for this API are 100 calls per minute and 1500 calls per hour.</span></span>
+## <a name="limitations"></a><span data-ttu-id="c6ae7-112">限制</span><span class="sxs-lookup"><span data-stu-id="c6ae7-112">Limitations</span></span>
+1. <span data-ttu-id="c6ae7-113">你可以根据配置的保留期查询上次更新的警报。</span><span class="sxs-lookup"><span data-stu-id="c6ae7-113">You can query on alerts last updated according to your configured retention period.</span></span>
+2. <span data-ttu-id="c6ae7-114">此 API 的速率限制是每分钟 100 个调用和每小时 1500 个调用。</span><span class="sxs-lookup"><span data-stu-id="c6ae7-114">Rate limitations for this API are 100 calls per minute and 1500 calls per hour.</span></span>
 
 
-## <a name="permissions"></a><span data-ttu-id="65ebc-115">权限</span><span class="sxs-lookup"><span data-stu-id="65ebc-115">Permissions</span></span>
-<span data-ttu-id="65ebc-116">若要调用此 API，需要以下权限之一。</span><span class="sxs-lookup"><span data-stu-id="65ebc-116">One of the following permissions is required to call this API.</span></span> <span data-ttu-id="65ebc-117">若要了解更多信息（包括如何选择权限），请参阅使用 [Microsoft Defender for Endpoint API](apis-intro.md)</span><span class="sxs-lookup"><span data-stu-id="65ebc-117">To learn more, including how to choose permissions, see [Use Microsoft Defender for Endpoint APIs](apis-intro.md)</span></span>
+## <a name="permissions"></a><span data-ttu-id="c6ae7-115">权限</span><span class="sxs-lookup"><span data-stu-id="c6ae7-115">Permissions</span></span>
+<span data-ttu-id="c6ae7-116">若要调用此 API，需要以下权限之一。</span><span class="sxs-lookup"><span data-stu-id="c6ae7-116">One of the following permissions is required to call this API.</span></span> <span data-ttu-id="c6ae7-117">若要了解更多信息（包括如何选择权限），请参阅使用 [Microsoft Defender for Endpoint API](apis-intro.md)</span><span class="sxs-lookup"><span data-stu-id="c6ae7-117">To learn more, including how to choose permissions, see [Use Microsoft Defender for Endpoint APIs](apis-intro.md)</span></span>
 
-<span data-ttu-id="65ebc-118">权限类型</span><span class="sxs-lookup"><span data-stu-id="65ebc-118">Permission type</span></span> | <span data-ttu-id="65ebc-119">权限</span><span class="sxs-lookup"><span data-stu-id="65ebc-119">Permission</span></span> | <span data-ttu-id="65ebc-120">权限显示名称</span><span class="sxs-lookup"><span data-stu-id="65ebc-120">Permission display name</span></span>
+<span data-ttu-id="c6ae7-118">权限类型</span><span class="sxs-lookup"><span data-stu-id="c6ae7-118">Permission type</span></span> | <span data-ttu-id="c6ae7-119">权限</span><span class="sxs-lookup"><span data-stu-id="c6ae7-119">Permission</span></span> | <span data-ttu-id="c6ae7-120">权限显示名称</span><span class="sxs-lookup"><span data-stu-id="c6ae7-120">Permission display name</span></span>
 :---|:---|:---
-<span data-ttu-id="65ebc-121">Application</span><span class="sxs-lookup"><span data-stu-id="65ebc-121">Application</span></span> | <span data-ttu-id="65ebc-122">File.Read.All</span><span class="sxs-lookup"><span data-stu-id="65ebc-122">File.Read.All</span></span> | <span data-ttu-id="65ebc-123">"读取文件配置文件"</span><span class="sxs-lookup"><span data-stu-id="65ebc-123">'Read file profiles'</span></span>
-<span data-ttu-id="65ebc-124">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="65ebc-124">Delegated (work or school account)</span></span> | <span data-ttu-id="65ebc-125">File.Read.All</span><span class="sxs-lookup"><span data-stu-id="65ebc-125">File.Read.All</span></span> | <span data-ttu-id="65ebc-126">"读取文件配置文件"</span><span class="sxs-lookup"><span data-stu-id="65ebc-126">'Read file profiles'</span></span>
+<span data-ttu-id="c6ae7-121">应用程序</span><span class="sxs-lookup"><span data-stu-id="c6ae7-121">Application</span></span> | <span data-ttu-id="c6ae7-122">File.Read.All</span><span class="sxs-lookup"><span data-stu-id="c6ae7-122">File.Read.All</span></span> | <span data-ttu-id="c6ae7-123">"读取文件配置文件"</span><span class="sxs-lookup"><span data-stu-id="c6ae7-123">'Read file profiles'</span></span>
+<span data-ttu-id="c6ae7-124">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="c6ae7-124">Delegated (work or school account)</span></span> | <span data-ttu-id="c6ae7-125">File.Read.All</span><span class="sxs-lookup"><span data-stu-id="c6ae7-125">File.Read.All</span></span> | <span data-ttu-id="c6ae7-126">"读取文件配置文件"</span><span class="sxs-lookup"><span data-stu-id="c6ae7-126">'Read file profiles'</span></span>
 
 >[!Note]
-> <span data-ttu-id="65ebc-127">使用用户凭据获取令牌时：</span><span class="sxs-lookup"><span data-stu-id="65ebc-127">When obtaining a token using user credentials:</span></span>
->- <span data-ttu-id="65ebc-128">用户至少需要具有以下角色权限："查看数据"权限 (有关详细信息，请参阅创建和管理) [](user-roles.md)</span><span class="sxs-lookup"><span data-stu-id="65ebc-128">The user needs to have at least the following role permission: 'View Data' (See [Create and manage roles](user-roles.md) for more information)</span></span>
->- <span data-ttu-id="65ebc-129">用户需要具有与警报关联的设备的访问权限，根据设备组设置 (请参阅创建和管理 [设备](machine-groups.md) 组，了解) </span><span class="sxs-lookup"><span data-stu-id="65ebc-129">The user needs to have access to the device associated with the alert, based on device group settings (See [Create and manage device groups](machine-groups.md) for more information)</span></span>
+> <span data-ttu-id="c6ae7-127">使用用户凭据获取令牌时：</span><span class="sxs-lookup"><span data-stu-id="c6ae7-127">When obtaining a token using user credentials:</span></span>
+>- <span data-ttu-id="c6ae7-128">用户至少需要具有以下角色权限："查看数据"权限 (有关详细信息，请参阅创建和管理) [](user-roles.md)</span><span class="sxs-lookup"><span data-stu-id="c6ae7-128">The user needs to have at least the following role permission: 'View Data' (See [Create and manage roles](user-roles.md) for more information)</span></span>
+>- <span data-ttu-id="c6ae7-129">用户需要具有与警报关联的设备的访问权限，根据设备组设置 (请参阅创建和管理 [设备](machine-groups.md) 组，了解) </span><span class="sxs-lookup"><span data-stu-id="c6ae7-129">The user needs to have access to the device associated with the alert, based on device group settings (See [Create and manage device groups](machine-groups.md) for more information)</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="65ebc-130">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="65ebc-130">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="c6ae7-130">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="c6ae7-130">HTTP request</span></span>
 ```
 GET /api/alerts/{id}/files
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="65ebc-131">请求标头</span><span class="sxs-lookup"><span data-stu-id="65ebc-131">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="c6ae7-131">请求标头</span><span class="sxs-lookup"><span data-stu-id="c6ae7-131">Request headers</span></span>
 
-<span data-ttu-id="65ebc-132">名称</span><span class="sxs-lookup"><span data-stu-id="65ebc-132">Name</span></span> | <span data-ttu-id="65ebc-133">类型</span><span class="sxs-lookup"><span data-stu-id="65ebc-133">Type</span></span> | <span data-ttu-id="65ebc-134">说明</span><span class="sxs-lookup"><span data-stu-id="65ebc-134">Description</span></span>
+<span data-ttu-id="c6ae7-132">名称</span><span class="sxs-lookup"><span data-stu-id="c6ae7-132">Name</span></span> | <span data-ttu-id="c6ae7-133">类型</span><span class="sxs-lookup"><span data-stu-id="c6ae7-133">Type</span></span> | <span data-ttu-id="c6ae7-134">说明</span><span class="sxs-lookup"><span data-stu-id="c6ae7-134">Description</span></span>
 :---|:---|:---
-<span data-ttu-id="65ebc-135">Authorization</span><span class="sxs-lookup"><span data-stu-id="65ebc-135">Authorization</span></span> | <span data-ttu-id="65ebc-136">String</span><span class="sxs-lookup"><span data-stu-id="65ebc-136">String</span></span> | <span data-ttu-id="65ebc-137">Bearer {token}。</span><span class="sxs-lookup"><span data-stu-id="65ebc-137">Bearer {token}.</span></span> <span data-ttu-id="65ebc-138">**必需**。</span><span class="sxs-lookup"><span data-stu-id="65ebc-138">**Required**.</span></span>
+<span data-ttu-id="c6ae7-135">Authorization</span><span class="sxs-lookup"><span data-stu-id="c6ae7-135">Authorization</span></span> | <span data-ttu-id="c6ae7-136">String</span><span class="sxs-lookup"><span data-stu-id="c6ae7-136">String</span></span> | <span data-ttu-id="c6ae7-137">Bearer {token}。</span><span class="sxs-lookup"><span data-stu-id="c6ae7-137">Bearer {token}.</span></span> <span data-ttu-id="c6ae7-138">**必需**。</span><span class="sxs-lookup"><span data-stu-id="c6ae7-138">**Required**.</span></span>
 
-## <a name="request-body"></a><span data-ttu-id="65ebc-139">请求正文</span><span class="sxs-lookup"><span data-stu-id="65ebc-139">Request body</span></span>
-<span data-ttu-id="65ebc-140">Empty</span><span class="sxs-lookup"><span data-stu-id="65ebc-140">Empty</span></span>
+## <a name="request-body"></a><span data-ttu-id="c6ae7-139">请求正文</span><span class="sxs-lookup"><span data-stu-id="c6ae7-139">Request body</span></span>
+<span data-ttu-id="c6ae7-140">Empty</span><span class="sxs-lookup"><span data-stu-id="c6ae7-140">Empty</span></span>
 
-## <a name="response"></a><span data-ttu-id="65ebc-141">响应</span><span class="sxs-lookup"><span data-stu-id="65ebc-141">Response</span></span>
-<span data-ttu-id="65ebc-142">如果成功且警报和文件存在 - 200 正常。</span><span class="sxs-lookup"><span data-stu-id="65ebc-142">If successful and alert and files exist - 200 OK.</span></span> <span data-ttu-id="65ebc-143">如果未找到警报 - 404 未找到。</span><span class="sxs-lookup"><span data-stu-id="65ebc-143">If alert not found - 404 Not Found.</span></span>
+## <a name="response"></a><span data-ttu-id="c6ae7-141">响应</span><span class="sxs-lookup"><span data-stu-id="c6ae7-141">Response</span></span>
+<span data-ttu-id="c6ae7-142">如果成功且警报和文件存在 - 200 正常。</span><span class="sxs-lookup"><span data-stu-id="c6ae7-142">If successful and alert and files exist - 200 OK.</span></span> <span data-ttu-id="c6ae7-143">如果未找到警报 - 404 未找到。</span><span class="sxs-lookup"><span data-stu-id="c6ae7-143">If alert not found - 404 Not Found.</span></span>
 
 
-## <a name="example"></a><span data-ttu-id="65ebc-144">示例</span><span class="sxs-lookup"><span data-stu-id="65ebc-144">Example</span></span>
+## <a name="example"></a><span data-ttu-id="c6ae7-144">示例</span><span class="sxs-lookup"><span data-stu-id="c6ae7-144">Example</span></span>
 
-<span data-ttu-id="65ebc-145">**请求**</span><span class="sxs-lookup"><span data-stu-id="65ebc-145">**Request**</span></span>
+<span data-ttu-id="c6ae7-145">**请求**</span><span class="sxs-lookup"><span data-stu-id="c6ae7-145">**Request**</span></span>
 
-<span data-ttu-id="65ebc-146">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="65ebc-146">Here is an example of the request.</span></span>
+<span data-ttu-id="c6ae7-146">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="c6ae7-146">Here is an example of the request.</span></span>
 
 ```http
 GET https://api.securitycenter.microsoft.com/api/alerts/636688558380765161_2136280442/files
 ```
 
-<span data-ttu-id="65ebc-147">**响应**</span><span class="sxs-lookup"><span data-stu-id="65ebc-147">**Response**</span></span>
+<span data-ttu-id="c6ae7-147">**响应**</span><span class="sxs-lookup"><span data-stu-id="c6ae7-147">**Response**</span></span>
 
-<span data-ttu-id="65ebc-148">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="65ebc-148">Here is an example of the response.</span></span>
+<span data-ttu-id="c6ae7-148">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="c6ae7-148">Here is an example of the response.</span></span>
 
 
 ```json

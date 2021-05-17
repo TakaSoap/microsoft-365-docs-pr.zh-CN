@@ -15,7 +15,7 @@ metadata:
   ms.custom: AdminSurgePortfolio
 productDirectory:
   items:
-    - title: 开始行动
+    - title: 入门
       imageSrc: 'https://docs.microsoft.com/office/media/icons/get-started-blue.svg'
       summary: 规划向Microsoft 365迁移。
       url: what-is-microsoft-365.md

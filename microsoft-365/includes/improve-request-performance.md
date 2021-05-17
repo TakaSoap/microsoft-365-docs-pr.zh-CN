@@ -22,7 +22,7 @@ ms.lasthandoff: 03/23/2021
 ms.locfileid: "51166302"
 ---
 >[!TIP]
-><span data-ttu-id="68789-104">为了提高性能，可以使用距离地理位置更近的服务器：</span><span class="sxs-lookup"><span data-stu-id="68789-104">For better performance, you can use server closer to your geo location:</span></span>
-> - <span data-ttu-id="68789-105">api-us.securitycenter.microsoft.com</span><span class="sxs-lookup"><span data-stu-id="68789-105">api-us.securitycenter.microsoft.com</span></span>
-> - <span data-ttu-id="68789-106">api-eu.securitycenter.microsoft.com</span><span class="sxs-lookup"><span data-stu-id="68789-106">api-eu.securitycenter.microsoft.com</span></span>
-> - <span data-ttu-id="68789-107">api-uk.securitycenter.microsoft.com</span><span class="sxs-lookup"><span data-stu-id="68789-107">api-uk.securitycenter.microsoft.com</span></span>
+><span data-ttu-id="0af99-104">为了提高性能，可以使用距离地理位置更近的服务器：</span><span class="sxs-lookup"><span data-stu-id="0af99-104">For better performance, you can use server closer to your geo location:</span></span>
+> - <span data-ttu-id="0af99-105">api-us.securitycenter.microsoft.com</span><span class="sxs-lookup"><span data-stu-id="0af99-105">api-us.securitycenter.microsoft.com</span></span>
+> - <span data-ttu-id="0af99-106">api-eu.securitycenter.microsoft.com</span><span class="sxs-lookup"><span data-stu-id="0af99-106">api-eu.securitycenter.microsoft.com</span></span>
+> - <span data-ttu-id="0af99-107">api-uk.securitycenter.microsoft.com</span><span class="sxs-lookup"><span data-stu-id="0af99-107">api-uk.securitycenter.microsoft.com</span></span>
