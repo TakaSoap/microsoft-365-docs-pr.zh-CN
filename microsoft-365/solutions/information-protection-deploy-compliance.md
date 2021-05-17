@@ -31,14 +31,14 @@ Microsoft 合规性管理器可帮助你管理与数据隐私法规相关的改�
 本文提供有关出于数据隐私目的使用此工具的指南。
 
 >[!Note]
->来自合规性管理器的建议不应解释为合规性保证。 由你根据法规环境评估和验证客户控制措施的有效性。 这些服务受联机服务条款中的 [条款和条件限制](https://go.microsoft.com/fwlink/?linkid=2108910)。 另请参阅 [Microsoft 365 安全性和合规性许可指南](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#compliance-manager)
+>来自合规性管理器的建议不应解释为合规性保证。 由你根据法规环境评估和验证客户控制措施的有效性。 这些服务受联机服务条款中的 [条款和条件限制](https://go.microsoft.com/fwlink/?linkid=2108910)。 另请参阅[Microsoft 365安全性和合规性许可指南](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#compliance-manager)
 >
 
 ## <a name="getting-started-with-compliance-manager"></a>合规性管理器入门
 
 #### <a name="what-is-compliance-manager"></a>什么是合规性管理器
 
-[合规性管理器](../compliance/compliance-manager.md) 是 Microsoft 365 合规中心中基于工作流的风险评估工具，用于管理与 Microsoft 云服务相关的法规合规性活动。 作为 Microsoft 365 或 Azure Active Directory (Azure AD) 订阅的一部分，合规性管理器可帮助你在 Microsoft 云服务的共享责任模型中管理法规合规性。
+[合规性管理器](../compliance/compliance-manager.md)是 Microsoft 365 中心中基于工作流的风险评估工具，用于管理与 Microsoft 云服务相关的法规合规性活动。 作为 Azure AD Microsoft 365 或 Azure Active Directory (订阅的一) ，合规性管理器可帮助你在 Microsoft 云服务的共享责任模型中管理法规合规性。
 
 **准备使用评估**
 
@@ -66,7 +66,7 @@ Microsoft 合规性管理器可帮助你管理与数据隐私法规相关的改�
     - 执行实施和测试工作以改进操作以完成评估中的控制措施
     - 了解不同操作对合规性分数的影响
 - [向上扩展：使用高级功能来满足自定义需求](../compliance/compliance-manager-quickstart.md#scaling-up-use-advanced-functionality-to-meet-your-custom-needs)
-    - 创建自定义评估以跟踪非 Microsoft 365 产品
+    - 创建自定义评估以跟踪非Microsoft 365产品
     - 修改现有模板以添加或删除控件
     - 设置改进操作自动化测试
 

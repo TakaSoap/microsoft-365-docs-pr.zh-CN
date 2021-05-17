@@ -1,7 +1,7 @@
 ---
 title: Microsoft Defender for Endpoint Flow 连接器
 ms.reviewer: ''
-description: 使用 Microsoft Defender for Endpoint Flow 连接器实现安全性自动化，并创建在租户上出现新警报时触发的流。
+description: 使用 Microsoft Defender for Endpoint Flow 连接器自动实现安全性，并创建在租户上出现新警报时触发的流。
 keywords: 流， 受支持的 api， api， Microsoft 流， 查询， 自动化
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -23,7 +23,7 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 04/21/2021
 ms.locfileid: "51929295"
 ---
-# <a name="microsoft-power-automate-formerly-microsoft-flow-and-azure-functions"></a>Microsoft Power Automate (Microsoft Flow) 和 Azure Functions
+# <a name="microsoft-power-automate-formerly-microsoft-flow-and-azure-functions"></a>Microsoft Power Automate (以前Microsoft Flow) 和 Azure Functions
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -34,9 +34,9 @@ ms.locfileid: "51929295"
 
 - 想要体验 Microsoft Defender for Endpoint？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
-自动执行安全过程是每个新式安全操作中心的标准要求。 缺少专业网络防御者会强制 SOC 以最有效的方式工作，自动化是一项必须完成的工作。 Microsoft Power Automate 支持专为这一点构建的不同连接器。 您可以几分钟内生成端到端过程自动化。
+自动执行安全过程是每个新式安全操作中心的标准要求。 缺少专业网络防御者会强制 SOC 以最有效的方式工作，自动化是一项必须完成的工作。 Microsoft Power Automate支持专为这一点构建的不同连接器。 您可以几分钟内生成端到端过程自动化。
 
-Microsoft Defender API 具有具有许多功能的官方流连接器。
+Microsoft Defender API 具有官方 Flow 连接器，具有许多功能。
 
 ![编辑凭据的图像1](images/api-flow-0.png)
 
@@ -46,19 +46,19 @@ Microsoft Defender API 具有具有许多功能的官方流连接器。
 
 ## <a name="usage-example"></a>用法示例
 
-以下示例演示了如何创建在租户上出现新警报时触发的 Flow。
+以下示例演示如何创建一个Flow在租户上出现新警报时触发的警报。
 
-1. 登录到 [Microsoft Power Automate](https://flow.microsoft.com)。
+1. 登录到[Microsoft Power Automate。](https://flow.microsoft.com)
 
 2. Go to **My flows**  >  **New**  >  **Automated-from blank**.
 
     ![编辑凭据的图像2](images/api-flow-1.png)
 
-3. 选择 Flow 的名称，搜索"Microsoft Defender ATP 触发器"作为触发器，然后选择新的警报触发器。
+3. 为用户选择一个Flow，搜索"Microsoft Defender ATP触发器"作为触发器，然后选择新的警报触发器。
 
     ![编辑凭据的图像3](images/api-flow-2.png)
 
-现在，你拥有每次出现新警报时都会触发的 Flow。
+现在，你Flow发生新警报时触发的警报。
 
 ![编辑凭据的图像4](images/api-flow-3.png)
 
@@ -68,7 +68,7 @@ Microsoft Defender API 具有具有许多功能的官方流连接器。
 
 ### <a name="get-the-alert-entity-using-the-connector"></a>使用连接器获取 Alert 实体
 
-1. 选择 **"Microsoft Defender ATP"** 作为新步骤。
+1. 选择 **"Microsoft Defender ATP"** 以执行新步骤。
 
 2. 选择 **警报 - 获取单个警报 API。**
 
@@ -82,11 +82,11 @@ Microsoft Defender API 具有具有许多功能的官方流连接器。
 
 2. 检查警报严重性 **是否等于"高** "。
 
-   如果是，请添加 **Microsoft Defender ATP - 使用** 计算机 ID 和注释隔离计算机操作。
+   如果是，请添加Microsoft Defender ATP **- 使用** 计算机 ID 和注释隔离计算机操作。
 
     ![编辑凭据的图像6](images/api-flow-5.png)
 
-3. 添加有关警报和隔离的电子邮件的新步骤。 有多个电子邮件连接器非常易于使用，例如 Outlook 或 Gmail。
+3. 添加有关警报和隔离的电子邮件的新步骤。 有多个电子邮件连接器非常易于使用，例如Outlook Gmail。
 
 4. 保存流。
 

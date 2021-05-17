@@ -1,5 +1,5 @@
 ---
-title: 还原已删除的 Microsoft 365 组
+title: 还原已删除的Microsoft 365组
 ms.reviewer: arvaradh
 f1.keywords: CSH
 ms.author: mikeplum
@@ -19,7 +19,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: b7c66b59-657a-4e1a-8aa0-8163b1f4eb54
-description: 了解如何还原已删除的 Microsoft 365 组。
+description: 了解如何还原已删除的Microsoft 365组。
 ms.openlocfilehash: f3b6435d82d5beddf44f5920011b076b39c7dcd5
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -27,19 +27,19 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 03/19/2021
 ms.locfileid: "50910542"
 ---
-# <a name="restore-a-deleted-microsoft-365-group"></a>还原已删除的 Microsoft 365 组
+# <a name="restore-a-deleted-microsoft-365-group"></a>还原已删除的Microsoft 365组
 
 如果已删除某个组，默认情况下该组将保留 30 天。 此 30 天期限被视为"软删除"，因为您仍可以还原组。 30 天后，该组及其关联内容将永久删除且无法还原。
 
 还原组时，还可还原以下内容：
   
-- Azure Active Directory (AD) Microsoft 365 组对象、属性和成员。
+- Azure Active Directory (组) Microsoft 365、属性和成员创建 AD。
     
 - 组的电子邮件地址。
     
-- Exchange Online 共享收件箱和日历。
+- Exchange Online共享收件箱和日历。
     
-- SharePoint Online 团队网站和文件。
+- SharePoint联机团队网站和文件。
     
 - OneNote 笔记本
     
@@ -47,16 +47,16 @@ ms.locfileid: "50910542"
     
 - Teams
 
-- Yammer 组和组内容 (如果 Microsoft 365 组是从 Yammer) 
+- Yammer组和组 (如果Microsoft 365组是Yammer) 
 
 > [!NOTE]
-> 本文介绍仅还原 Microsoft 365 组。 所有其他组在删除后无法还原。
+> 本文介绍仅还原Microsoft 365组。 所有其他组在删除后无法还原。
 
 ## <a name="restore-a-group"></a>还原组
 
 # <a name="outlook"></a>[Outlook](#tab/outlook)
 
-如果你是 Microsoft 365 组的所有者，可以按照以下步骤操作，在 Outlook 网页版中自己还原组：
+如果你是组的所有者，Microsoft 365以下步骤在 Web 上的Outlook中自己还原组：
 
 1. 在"[已删除的组"页上](https://outlook.office.com/people/group/deleted)**，选择"** 组"节点下的"管理组"选项，然后选择"**已删除"。**
 
@@ -66,7 +66,7 @@ ms.locfileid: "50910542"
 
 # <a name="admin-center"></a>[管理中心](#tab/admin-center)
 
-如果你是全局管理员或组管理员，可以在 Microsoft 365 管理中心还原已删除的组：
+如果你是全局管理员或组管理员，可以在管理中心还原Microsoft 365组：
 
 1. 转到[管理中心](https://admin.microsoft.com)。
 2. 展开 **"组**"，然后单击"**已删除组"。**
@@ -77,13 +77,13 @@ ms.locfileid: "50910542"
 
 ---
 
-## <a name="got-questions-about-microsoft-365-groups"></a>对 Microsoft 365 组有疑问？
+## <a name="got-questions-about-microsoft-365-groups"></a>对组Microsoft 365问题？
 
-访问 [Microsoft 技术社区，](https://techcommunity.microsoft.com/t5/Office-365-Groups/ct-p/Office365Groups) 发布问题并参与有关 Microsoft 365 组的对话。 
+请访问[Microsoft 技术Community](https://techcommunity.microsoft.com/t5/Office-365-Groups/ct-p/Office365Groups)发布问题并参与有关用户Microsoft 365对话。 
   
 ## <a name="related-articles"></a>相关文章
 
-[使用 PowerShell 管理 Microsoft 365 组](../../enterprise/manage-microsoft-365-groups-with-powershell.md)
+[使用 PowerShell Microsoft 365组](../../enterprise/manage-microsoft-365-groups-with-powershell.md)
   
 [使用 Remove-UnifiedGroup cmdlet 删除组](/powershell/module/exchange/remove-unifiedgroup)
   

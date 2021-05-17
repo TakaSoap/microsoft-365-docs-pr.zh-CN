@@ -45,9 +45,9 @@ ms.locfileid: "51862063"
 > [!NOTE]  
 > 2021 年 4 月[](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/network-device-discovery-and-vulnerability-assessments/ba-p/2267548) \( 13 日发布的网络设备发现和漏洞评估博客提供了有关 Defender for Endpoint 中新网络设备发现功能的 \) 见解。  本文概述了网络设备发现旨在应对的挑战，并详细介绍了如何使用这些新功能。
 
-Microsoft 365 安全中心和 Microsoft Defender 安全中心控制台的设备清单部分提供了网络发现功能。  
+网络发现功能在安全中心和 Microsoft 365控制台的"设备Microsoft Defender 安全中心部分中提供。  
 
-指定的 Microsoft Defender for Endpoint 设备将用于每个网段，以定期对预配置的网络设备执行经过身份验证的扫描。 发现后，终结点的 Defender 威胁和漏洞管理功能将提供集成的工作流，用于保护发现的交换机、路由器、WLAN 控制器、防火墙和 VPN 网关。  
+指定的 Microsoft Defender for Endpoint 设备将用于每个网段，以定期对预配置的网络设备执行经过身份验证的扫描。 发现后，适用于终结点的 defender 危险和漏洞管理 功能将提供集成的工作流，用于保护发现的交换机、路由器、WLAN 控制器、防火墙和 VPN 网关。  
 
 发现网络设备并进行分类后，安全管理员将能够接收最新的安全建议，并查看最近在组织中部署的网络设备上发现的漏洞。
 
@@ -103,14 +103,14 @@ Microsoft 365 安全中心和 Microsoft Defender 安全中心控制台的设备�
     > [!NOTE]
     > 并非所有 URL 都指定在 Defender for Endpoint 记录允许的数据收集列表中。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
-若要配置评估作业，需要以下用户权限选项： **在安全中心中管理安全设置**。 可以通过访问"设置""角色 **"来查找**  >  **权限**。 有关详细信息，请参阅为基于角色 [的访问控制创建和管理角色](user-roles.md)。
+若要配置评估作业，需要以下用户权限选项： **在安全中心中管理安全设置**。 可以通过访问角色 来设置  >  **权限**。 有关详细信息，请参阅为基于角色 [的访问控制创建和管理角色](user-roles.md)。
 
 ## <a name="install-the-network-scanner"></a>安装网络扫描程序
 
-1. 转到 **"Microsoft 365 安全设置**""终结点"" ( >    >    >  **网络评估"** 下) 。
-    1. 在 Microsoft Defender 安全中心中，转到"设置>评估作业"页面。
+1. 转到 **"Microsoft 365网络设置** 下 (终结点  >    >    >  **评估**) 。
+    1. In the Microsoft Defender 安全中心， go to 设置 > Assessment jobs page.
 
 2. 下载网络扫描程序，将其安装在指定的 Defender for Endpoint 评估设备上。
 
@@ -134,7 +134,7 @@ Microsoft 365 安全中心和 Microsoft Defender 安全中心控制台的设备�
 
 ## <a name="configure-a-new-assessment-job"></a>配置新的评估作业  
 
-在"设置"中的"评估作业 **"页中**，选择 **"添加网络评估作业"。** 按照设置过程选择要定期扫描并添加到设备清单的网络设备。
+在"评估作业"页 **设置，** 选择"**添加网络评估作业"。** 按照设置过程选择要定期扫描并添加到设备清单的网络设备。
 
 若要防止网络设备清单中的设备重复，请确保跨多个评估设备仅配置每个 IP 地址一次。
 
@@ -193,7 +193,7 @@ Microsoft 365 安全中心和 Microsoft Defender 安全中心控制台的设备�
 
 验证扫描程序是否正常运行。 然后转到扫描定义，然后选择"运行测试"。 检查从相关 IP 地址返回的错误消息。
 
-### <a name="required-threat-and-vulnerability-management-user-permission"></a>必需的威胁和漏洞管理用户权限
+### <a name="required-threat-and-vulnerability-management-user-permission"></a>必需的危险和漏洞管理用户权限
 
 注册后出现错误："看起来你没有足够的权限添加新代理。 所需权限为"在安全中心管理安全设置"。
 

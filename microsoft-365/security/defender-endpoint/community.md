@@ -1,6 +1,6 @@
 ---
 title: 访问 Microsoft Defender for Endpoint 社区中心
-description: 访问 Microsoft Defender for Endpoint 社区中心，以共享体验、参与并了解产品。
+description: 访问 Microsoft Defender for Endpoint Community 中心，以共享体验、参与并了解产品。
 keywords: 社区， 社区中心， 技术社区， 对话， 公告
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -34,7 +34,7 @@ ms.locfileid: "51893421"
 
 >想要体验适用于终结点的 Defender？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
-Defender for Endpoint 社区中心是社区成员可以学习、协作和共享产品体验的地方。 
+Defender for Endpoint Community 中心是社区成员可以学习、协作和共享产品体验的地方。 
 
 你可以浏览多个空格来了解特定信息：
 - 公告 
@@ -42,11 +42,11 @@ Defender for Endpoint 社区中心是社区成员可以学习、协作和共享�
 - 威胁智能
 
 
-可以通过多种方式访问社区中心：
-- 在 Microsoft Defender 安全中心导航窗格中，选择社区 **中心**。  将打开一个新的浏览器选项卡，并带你访问 Defender for Endpoint 技术社区页面。 
-- 通过 Microsoft [Defender 终结点技术社区页面访问](https://techcommunity.microsoft.com/t5/Windows-Defender-Advanced-Threat/ct-p/WindowsDefenderAdvanced) 社区
+可通过多种方式访问 Community 中心：
+- 在导航Microsoft Defender 安全中心中，选择"Community **中心"。**  将打开一个新的浏览器选项卡，并让你访问 Defender for Endpoint Tech Community页面。 
+- 通过 Microsoft [Defender 终结点技术中心页面访问Community](https://techcommunity.microsoft.com/t5/Windows-Defender-Advanced-Threat/ct-p/WindowsDefenderAdvanced)社区
 
 
 你可以立即查看和阅读社区中发布的对话。 
 
-若要获得社区中的完整体验，例如能够评论帖子，你需要加入社区。 若要详细了解如何开始使用 Microsoft 技术社区，请参阅 [Microsoft 技术社区：入门](https://techcommunity.microsoft.com/t5/Getting-Started/Microsoft-Tech-Community-Getting-Started-Guide/m-p/77888#M15)。
+若要获得社区中的完整体验，例如能够评论帖子，你需要加入社区。 若要详细了解如何开始使用 Microsoft Tech Community，请参阅 Microsoft Tech [Community：入门](https://techcommunity.microsoft.com/t5/Getting-Started/Microsoft-Tech-Community-Getting-Started-Guide/m-p/77888#M15)。

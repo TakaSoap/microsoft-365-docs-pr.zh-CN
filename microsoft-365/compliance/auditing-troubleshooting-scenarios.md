@@ -17,7 +17,7 @@ search.appverid:
 - MOE150
 ms.custom:
 - seo-marvel-apr2020
-description: 了解如何使用 Microsoft 365 审核日志工具帮助解决电子邮件帐户的常见支持问题。
+description: 了解如何使用 Microsoft 365 审核日志 搜索工具帮助解决电子邮件帐户的常见支持问题。
 ms.openlocfilehash: 5f753163b5d4d6c04c121a7ce3fae970690a57b0
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -43,7 +43,7 @@ ms.locfileid: "50906090"
 
 ### <a name="permissions-required-to-use-the-audit-log-search-tool"></a>使用搜索工具审核日志所需的权限
 
-您必须分配有 Exchange Online View-Only审核日志或审核日志角色，以搜索审核日志。 默认情况下，在 Exchange 管理中心中的“**权限**”页上将这些角色分配给“合规性管理”和“组织管理”角色组。 Office 365 和 Microsoft 365 中的全局管理员将自动添加为 Exchange Online 中的组织管理角色组的成员。 有关详细信息，请参阅[在 Exchange Online 中管理角色组](/Exchange/permissions-exo/role-groups)。
+必须分配有"审核View-Only"或"审核日志"角色Exchange Online搜索审核日志。 默认情况下，在 Exchange 管理中心中的“**权限**”页上将这些角色分配给“合规性管理”和“组织管理”角色组。 Office 365 和 Microsoft 365 中的全局管理员将自动添加为组织中组织管理角色Exchange Online。 有关详细信息，请参阅[在 Exchange Online 中管理角色组](/Exchange/permissions-exo/role-groups)。
 
 ### <a name="running-audit-log-searches"></a>运行审核日志搜索
 
@@ -57,7 +57,7 @@ ms.locfileid: "50906090"
   
 4. 可以配置以下搜索条件。 本文中的每个疑难解答方案都推荐了有关配置这些字段的特定指南。
     
-    a. **活动：** 选择下拉列表以显示可搜索的活动。 运行搜索后，只显示所选活动的审核记录。 选择 **"显示所有活动的结果"** 将显示满足其他搜索条件的所有活动的结果。 在某些疑难解答方案中，您还必须将此字段留空。
+    a. **活动：** 选择下拉列表以显示可搜索的活动。 运行搜索后，仅将显示所选活动的审核日志项目。 选择 **"显示所有活动的结果"** 将显示满足其他搜索条件的所有活动的结果。 在某些疑难解答方案中，您还必须将此字段留空。
     
     b. **开始日期** 和 **结束日期：** 选择日期和时间范围以显示该时段内发生的事件。 默认情况下选择最近七天。 日期和时间将以协调世界时 (UTC) 格式显示。 可指定的最大日期范围为 90 天。
 
@@ -81,10 +81,10 @@ ms.locfileid: "50906090"
 
 下面是如何为此方案配置审核日志搜索查询：
 
-**活动：** 如果与案例相关，请选择要搜索的特定活动。 有关帐户遭到入侵的疑难解答，请考虑选择"Exchange 邮箱活动"下的"用户登录邮箱 **活动"。** 这将返回审核记录，这些记录显示登录邮箱时使用的 IP 地址。 否则，将此字段留空可返回所有活动的审核记录。 
+**活动：** 如果与案例相关，请选择要搜索的特定活动。 对于被入侵的帐户疑难解答，请考虑选择邮箱活动下的用户Exchange **邮箱活动**。 这将返回审核记录，这些记录显示登录邮箱时使用的 IP 地址。 否则，将此字段留空可返回所有活动的审核记录。 
 
 > [!TIP]
-> 将此字段留空将返回 **UserLoggedIn** 活动，这是 Azure Active Directory 活动，指示某人已登录用户帐户。 使用搜索结果中的筛选功能显示 **UserLoggedIn** 审核记录。
+> 将此字段留空将返回 **UserLoggedIn** 活动，Azure Active Directory用户登录用户帐户的一种活动。 使用搜索结果中的筛选功能显示 **UserLoggedIn** 审核记录。
 
 **开始日期****和结束日期**：选择适用于你的调查的日期范围。
 
@@ -96,7 +96,7 @@ ms.locfileid: "50906090"
 
 ## <a name="determine-who-set-up-email-forwarding-for-a-mailbox"></a>确定为邮箱设置电子邮件转发的用户
 
-为邮箱配置电子邮件转发时，发送到邮箱的电子邮件将被转发到另一个邮箱。 可以将邮件转发给组织内部或外部的用户。 在邮箱上设置电子邮件转发时，使用的基础 Exchange Online cmdlet 为 **Set-Mailbox**。
+为邮箱配置电子邮件转发时，发送到邮箱的电子邮件将被转发到另一个邮箱。 可以将邮件转发给组织内部或外部的用户。 在邮箱上设置电子邮件转发时，Exchange Online使用的基础 cmdlet 为 **Set-Mailbox**。
 
 下面是如何为此方案配置审核日志搜索查询：
 
@@ -124,7 +124,7 @@ c. *DeliverToMailboxAndForward* 参数的 *True* 值指示邮件副本将传递�
 
 d. **UserId** 字段指示在 **ObjectId** 字段中指定的邮箱上设置电子邮件转发的用户。 此用户还会显示在搜索结果 **页上** 的"用户"列中。 在这种情况下，邮箱所有者似乎在邮箱上设置了电子邮件转发。
 
-如果确定不应在邮箱上设置电子邮件转发，可以在 Exchange Online PowerShell 中运行以下命令将其删除：
+如果您确定不应在邮箱上设置电子邮件转发，可以通过在 PowerShell 中运行以下命令Exchange Online转发：
 
 ```powershell
 Set-Mailbox <mailbox alias> -ForwardingSmtpAddress $null 
@@ -134,13 +134,13 @@ Set-Mailbox <mailbox alias> -ForwardingSmtpAddress $null
 
 ## <a name="determine-if-a-user-deleted-email-items"></a>确定用户是否删除了电子邮件项目
 
-从 2019 年 1 月开始，Microsoft 将默认启用所有 Office 365 和 Microsoft 组织的邮箱审核日志记录。 这意味着自动记录由邮箱所有者执行的某些操作，并且当您在邮箱邮箱中搜索相应的邮箱审核记录时，这些记录审核日志。 默认情况下，在启用邮箱审核之前，您必须为组织的每个用户邮箱手动启用它。 
+从 2019 年 1 月开始，Microsoft 将针对所有邮箱组织和 Microsoft 组织Office 365邮箱审核日志记录。 这意味着自动记录由邮箱所有者执行的某些操作，并且当您在邮箱邮箱中搜索相应的邮箱审核记录时，这些记录审核日志。 默认情况下，在启用邮箱审核之前，您必须为组织的每个用户邮箱手动启用它。 
 
 默认情况下记录的邮箱操作包括邮箱所有者执行的 SoftDelete 和 HardDelete 邮箱操作。 这意味着您可以使用以下步骤在电子邮件审核日志搜索与已删除电子邮件项目相关的事件。 有关默认情况下的邮箱审核功能详细信息，请参阅 [管理邮箱审核](enable-mailbox-auditing.md)。
 
 下面是如何为此方案配置审核日志搜索查询：
 
-**活动：** 在 **"Exchange 邮箱活动**"下，选择以下一项或两项活动：
+**活动：** 在 **Exchange邮箱活动"** 下，选择以下一个或两个活动：
 
 - **从"已删除邮件"文件夹中删除的邮件：** 此活动对应于 **SoftDelete** 邮箱审核操作。 当用户通过选择项目并按 **Shift+Delete** 来永久删除某个项目时，也会记录此活动。 在永久删除项目后，用户可以恢复它，直到已删除项目的保留期过期。
 
@@ -164,23 +164,23 @@ Set-Mailbox <mailbox alias> -ForwardingSmtpAddress $null
 
 ### <a name="recover-deleted-email-items"></a>恢复已删除的电子邮件项目
 
-如果已删除项目的保留期尚未过期，用户可以恢复软删除的项目。 在 Exchange Online 中，默认已删除项目的保留期为 14 天，但管理员可以将此设置最多增加至 30 天。 将用户指向" [在 Outlook](https://support.office.com/article/Recover-deleted-items-or-email-in-Outlook-Web-App-C3D8FC15-EEEF-4F1C-81DF-E27964B7EDD4) 网页中恢复已删除项目或电子邮件"一文，查看有关恢复已删除项目的说明。
+如果已删除项目的保留期尚未过期，用户可以恢复软删除的项目。 在Exchange Online，默认已删除项目的保留期为 14 天，但管理员可以将此设置增加至最多 30 天。 将用户指向"在 Web 上恢复已删除Outlook[或电子邮件"](https://support.office.com/article/Recover-deleted-items-or-email-in-Outlook-Web-App-C3D8FC15-EEEF-4F1C-81DF-E27964B7EDD4)一文，查看有关恢复已删除项目的说明。
 
-如前所述，如果已删除项目的保留期尚未过期或邮箱已置于保留状态（在这种情况下，项目将一直保留到保留期到期，则管理员可以恢复硬删除的项目）。 运行内容搜索时，搜索结果中将返回"可恢复的项目"文件夹中的软删除和硬删除项目（如果它们与搜索查询匹配）。 有关运行内容搜索的信息，请参阅 Content [Search in Office 365。](content-search.md)
+如前所述，如果已删除项目的保留期尚未过期或邮箱已置于保留状态（在这种情况下，项目将一直保留到保留期到期，则管理员可以恢复硬删除的项目）。 运行内容搜索时，搜索结果中将返回"可恢复的项目"文件夹中的软删除和硬删除项目（如果它们与搜索查询匹配）。 有关运行内容搜索的信息，请参阅内容搜索[Office 365。](content-search.md)
 
 > [!TIP]
 > 若要搜索已删除的电子邮件项目，请搜索在审核记录的 **AffectedItems** 字段中显示的整个或部分主题行。
 
 ## <a name="determine-if-a-user-created-an-inbox-rule"></a>确定用户是否创建了收件箱规则
 
-当用户为 Exchange Online 邮箱创建收件箱规则时，相应的审核记录将保存到审核日志。 有关收件箱规则详细信息，请参阅：
+当用户为邮箱创建收件箱规则Exchange Online，相应的审核记录将保存到审核日志。 有关收件箱规则详细信息，请参阅：
 
-- [使用 Outlook 网页中的收件箱规则](https://support.office.com/article/use-inbox-rules-in-outlook-on-the-web-8400435c-f14e-4272-9004-1548bb1848f2)
-- [使用规则管理 Outlook 中的电子邮件](https://support.office.com/article/Manage-email-messages-by-using-rules-C24F5DEA-9465-4DF4-AD17-A50704D66C59)
+- [在 Web Outlook中的收件箱规则](https://support.office.com/article/use-inbox-rules-in-outlook-on-the-web-8400435c-f14e-4272-9004-1548bb1848f2)
+- [使用规则管理Outlook电子邮件](https://support.office.com/article/Manage-email-messages-by-using-rules-C24F5DEA-9465-4DF4-AD17-A50704D66C59)
 
 下面是如何为此方案配置审核日志搜索查询：
 
-**活动：** 在 **"Exchange 邮箱活动"** 下，选择 **"新建收件箱规则创建/修改/启用/禁用收件箱规则"。**
+**活动：** 在 **Exchange活动"** 下，选择 **"新建收件箱规则创建/修改/启用/禁用收件箱规则"。**
 
 **开始日期****和结束日期**：选择适用于你的调查的日期范围。
 
@@ -202,12 +202,12 @@ d. **UserId** 字段指示创建在 **ObjectId** 字段中指定的收件箱规�
 
 ## <a name="investigate-why-there-was-a-successful-login-by-a-user-outside-your-organization"></a>调查为什么组织外部的用户成功登录
 
-在检查审核记录审核日志，你可能会看到指示外部用户已通过 Azure Active Directory 身份验证并成功登录到组织的记录。 例如，contoso.onmicrosoft.com 管理员可能会看到一条审核记录，显示来自不同组织的用户 (例如，fabrikam.onmicrosoft.com) 已成功登录到 contoso.onmicrosoft.com。 同样，你可能会看到审核记录，指示具有 Microsoft 帐户 (MSA) （如 Outlook.com 或 Live.com）的用户已成功登录到你的组织。 在这些情况下，审核的活动为 **"用户登录"。** 
+在检查审核记录审核日志，您可能会看到指示外部用户已通过 Azure Active Directory 身份验证并成功登录到组织的记录。 例如，contoso.onmicrosoft.com 管理员可能会看到一条审核记录，显示来自不同组织的用户 (例如，fabrikam.onmicrosoft.com) 已成功登录到 contoso.onmicrosoft.com。 同样，你可能会看到指示具有 Microsoft 帐户 (MSA) （如 Outlook.com 或 Live.com）的用户已成功登录到组织的审核记录。 在这些情况下，审核的活动为 **"用户登录"。** 
 
-此行为是设计使然。 Azure Active Directory (Azure AD) （目录服务）允许在外部用户尝试访问您组织的 SharePoint 站点或 OneDrive 位置时进行称为传递身份验证的内容。 当外部用户尝试这样做时，系统会提示他们输入其凭据。 Azure AD 使用凭据对用户进行身份验证，这意味着只有 Azure AD 会验证用户是否即表示他们的身份。 审核记录中成功登录的指示是 Azure AD 验证用户的结果。 成功的登录并不意味着用户能够访问任何资源或在组织中执行任何其他操作。 它仅指示用户已通过 Azure AD 进行身份验证。 为了让传递用户访问 SharePoint 或 OneDrive 资源，贵组织的用户必须通过向外部用户发送共享邀请或匿名共享链接来明确共享资源。 
+此行为是设计使然。 Azure Active Directory (Azure AD) （目录服务）允许外部用户尝试访问 SharePoint站点或组织中 OneDrive 位置时称为传递身份验证。 当外部用户尝试这样做时，系统会提示他们输入其凭据。 Azure AD 使用凭据对用户进行身份验证，这意味着只有 Azure AD 会验证用户是否即表示他们的身份。 审核记录中成功登录的指示是 Azure AD 验证用户的结果。 成功的登录并不意味着用户能够访问任何资源或在组织中执行任何其他操作。 它仅指示用户已通过 Azure AD 进行身份验证。 为了让传递用户访问 SharePoint 或 OneDrive 资源，您组织的用户必须通过向外部用户发送共享邀请或匿名共享链接来显式共享资源。 
 
 > [!NOTE]
-> Azure AD 仅允许第一方应用程序（如 SharePoint Online 和 OneDrive for Business）进行传递身份验证。 其他第三方应用程序不允许使用。
+> Azure AD 仅允许第一方应用程序（如 SharePoint Online 和 OneDrive for Business）进行传递OneDrive for Business。 其他第三方应用程序不允许使用。
 
 下面是作为传递身份验证结果的用户登录事件的审核记录中的相关属性的示例和说明。 选择审核记录以显示"**详细信息**"飞出页，然后选择"**详细信息"。**
 
@@ -217,21 +217,21 @@ d. **UserId** 字段指示创建在 **ObjectId** 字段中指定的收件箱规�
 
    b. 此字段显示尝试访问组织中资源的外部用户的 UPN。 此用户 ID 也在审核记录的 **User** 和 **UserId** 属性中标识。
 
-   c. **ApplicationId** 属性标识触发登录请求的应用程序。 此审核记录中的 ApplicationId 属性中显示的 000000003-0000-0ff1-ce00-0000000000000 的值指示 SharePoint Online。 OneDrive for Business 也具有相同的 ApplicationId。
+   c. **ApplicationId** 属性标识触发登录请求的应用程序。 此审核记录中的 ApplicationId 属性中显示的 000000003-0000-0ff1-ce00-00000000000000 的值指示 SharePoint Online。 OneDrive for Business也具有相同的 ApplicationId。
 
    d. 这表示传递身份验证成功。 换句话说，用户已通过 Azure AD 成功进行身份验证。 
 
    e. **RecordType** 值 **15** 指示审核的活动 (UserLoggedIn) 是 Azure AD 中的安全令牌服务 (STS) 登录事件。
 
-有关 UserLoggedIn 审核记录中显示的其他属性的信息，请参阅 [Office 365](/office/office-365-management-api/office-365-management-activity-api-schema#azure-active-directory-base-schema)管理活动 API 架构中的 Azure AD 相关架构信息。
+有关 UserLoggedIn 审核记录中显示的其他属性的信息，请参阅 Azure AD 相关架构信息Office 365[管理活动 API 架构。](/office/office-365-management-api/office-365-management-activity-api-schema#azure-active-directory-base-schema)
 
 下面是由于传递身份验证导致用户成功登录审核活动的两个示例方案： 
 
-  - 拥有 Microsoft 帐户 (（如 SaraD@outlook.com) ）的用户尝试访问 fourthcoffee.onmicrosoft.com 中的 OneDrive for Business 帐户中的文档，fourthcoffee.onmicrosoft.com 中没有适用于 SaraD@outlook.com 的相应来宾用户帐户。
+  - 拥有 Microsoft 帐户 (（如 SaraD@outlook.com) ）的用户尝试访问 fourthcoffee.onmicrosoft.com 中 OneDrive for Business 帐户中的文档，fourthcoffee.onmicrosoft.com 中没有 SaraD@outlook.com 的相应来宾用户帐户。
 
-  - 在组织中拥有工作或学校帐户的用户 (如 pilarp@fabrikam.onmicrosoft.com) 已尝试访问 contoso.onmicrosoft.com 中的 SharePoint 网站，contoso.onmicrosoft.com 中没有 pilarp@fabrikam.com 对应的来宾用户帐户。
+  - 在组织中拥有工作或学校帐户的用户 (例如 pilarp@fabrikam.onmicrosoft.com) 已尝试访问 contoso.onmicrosoft.com 中的 SharePoint 网站，contoso.onmicrosoft.com 中没有 pilarp@fabrikam.com 对应的来宾用户帐户。
 
-### <a name="tips-for-investigating-successful-logins-resulting-from-pass-through-authentication"></a>有关调查通过传递身份验证成功登录的提示
+### <a name="tips-for-investigating-successful-logins-resulting-from-pass-through-authentication"></a>使用技巧通过传递身份验证成功登录进行调查
 
 - 搜索审核日志用户登录审核记录中标识的外部 **用户执行的活动** 。 在"用户"框中键入外部用户的 UPN，并使用日期范围（如果与方案相关）。  例如，您可以使用以下搜索条件创建搜索：
 
@@ -239,9 +239,9 @@ d. **UserId** 字段指示创建在 **ObjectId** 字段中指定的收件箱规�
 
     除了"用户登录"活动外，可能返回其他审核记录，例如指示组织中用户与外部用户共享资源的记录，以及外部用户是否访问、修改或下载了与外部用户共享的文档。
 
-- 搜索 SharePoint 共享活动，这些活动指示文件已与由登录审核记录的用户标识 **的外部用户** 共享。 有关详细信息，请参阅[在审核日志中使用共享审核](use-sharing-auditing.md)。
+- 搜索SharePoint共享活动，这些活动指示文件已与由登录审核记录的用户标识 **的外部用户** 共享。 有关详细信息，请参阅[在审核日志中使用共享审核](use-sharing-auditing.md)。
 
-- 导出审核日志包含与调查相关的记录的搜索结果，以便您可以使用 Excel 搜索与外部用户相关的其他活动。 有关详细信息，请参阅导出  [、配置和查看审核日志记录](export-view-audit-log-records.md)。
+- 导出审核日志调查相关记录的搜索结果，以便您可以使用Excel搜索与外部用户相关的其他活动。 有关详细信息，请参阅导出  [、配置和查看审核日志记录](export-view-audit-log-records.md)。
 
 ## <a name="search-for-mailbox-activities-performed-by-users-with-non-e5-licenses"></a>搜索具有非 E5 许可证的用户执行的邮箱活动
 
@@ -249,12 +249,12 @@ d. **UserId** 字段指示创建在 **ObjectId** 字段中指定的收件箱规�
 
 若要检索审核日志 E5 用户的邮箱记录，可以执行以下解决方法之一：
 
-- 手动启用单个邮箱的邮箱审核 (`Set-Mailbox -Identity <MailboxIdentity> -AuditEnabled $true` Exchange Online PowerShell) 。 完成此操作后，使用合规中心 **、Search-UnifiedAuditLog** cmdlet 或 Office 365 管理活动 API 搜索邮箱审核活动。
+- 手动启用单个邮箱的邮箱审核 (`Set-Mailbox -Identity <MailboxIdentity> -AuditEnabled $true` 在 PowerShell Exchange Online中运行) 。 完成此操作后，使用合规中心 **、Search-UnifiedAuditLog** cmdlet 或 Office 365 活动 API 搜索邮箱审核活动。
   
   > [!NOTE]
   > 如果邮箱审核功能在邮箱上显示为已启用，但搜索未返回任何结果，请更改 _AuditEnabled_ 参数的值，然后再更改 `$false` 回 `$true` 。
   
-- 在 Exchange Online PowerShell 中使用以下 cmdlet：
+- 在 PowerShell 中使用以下 cmdlet Exchange Online Cmdlet：
 
   - [Search-MailboxAuditLog](/powershell/module/exchange/search-mailboxauditlog) 搜索特定审核日志邮箱邮箱。
 
@@ -262,7 +262,7 @@ d. **UserId** 字段指示创建在 **ObjectId** 字段中指定的收件箱规�
 
 ## <a name="search-for-mailbox-activities-performed-in-a-specific-mailbox-including-shared-mailboxes"></a>搜索特定邮箱邮箱中执行的邮箱 (包括共享邮箱) 
 
-使用合规性中心的审核日志 搜索工具中的"用户"下拉列表或 Exchange Online PowerShell 中的 **Search-UnifiedAuditLog -UserIds** 命令时，可以搜索特定用户执行的活动。 对于邮箱审核活动，这种类型的搜索将搜索指定用户执行的活动。 这并不保证在同一邮箱中执行的所有活动都返回在搜索结果中。 例如，审核日志 搜索不会返回由委派用户执行的活动的审核记录，因为搜索特定用户执行的邮箱活动不会返回由分配了访问其他用户邮箱的权限的代理用户执行的活动。  (委派用户是已分配有其他用户邮箱的 SendAs、SendOnBehalf 或 FullAccess 邮箱权限的用户。) 
+使用合规性中心的审核日志 搜索工具中的"用户"下拉列表或在 Exchange Online PowerShell 中使用 **Search-UnifiedAuditLog -UserIds** 命令时，可以搜索特定用户执行的活动。 对于邮箱审核活动，这种类型的搜索将搜索指定用户执行的活动。 这并不保证在同一邮箱中执行的所有活动都返回在搜索结果中。 例如，审核日志 搜索不会返回由委派用户执行的活动的审核记录，因为搜索特定用户执行的邮箱活动不会返回由分配了访问其他用户邮箱的权限的代理用户执行的活动。  (委派用户是已分配有其他用户邮箱的 SendAs、SendOnBehalf 或 FullAccess 邮箱权限的用户。) 
 
 此外，使用审核日志 工具中的"用户"下拉列表或 **Search-UnifiedAuditLog -UserIds** 不会返回共享邮箱中执行的活动的结果。
 

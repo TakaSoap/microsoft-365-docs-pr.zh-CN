@@ -243,7 +243,7 @@ $subscr="<subscription name>"
 Get-AzSubscription -SubscriptionName $subscr | Select-AzSubscription
 ```
 
-接下来，创建一个新的资源组。 要确定一个唯一的资源组名称，请使用此命令列出你现有的资源组。
+接下来，创建一个新的资源组。要确定一个唯一的资源组名称，请使用此命令列出你现有的资源组。
   
 ```powershell
 Get-AzResourceGroup | Sort ResourceGroupName | Select ResourceGroupName

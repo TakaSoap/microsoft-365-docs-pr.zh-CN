@@ -33,9 +33,9 @@ ms.locfileid: "51861141"
 
 > 想要体验 Microsoft Defender for Endpoint？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-网络保护有助于减少基于 Internet 的事件对设备的攻击面。 它防止员工使用任何应用程序访问可能承载网络钓鱼欺诈、攻击和 Internet 上的其他恶意内容危险域。 网络保护扩展了 Microsoft [Defender SmartScreen](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview) 的范围，以阻止所有基于域或主机名 (尝试连接到低信誉源 (的出站 HTTP) ) 。
+网络保护有助于减少基于 Internet 的事件对设备的攻击面。 它防止员工使用任何应用程序访问可能承载网络钓鱼欺诈、攻击和 Internet 上的其他恶意内容危险域。 网络保护扩展[Microsoft Defender SmartScreen](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview)以阻止所有尝试基于域或主机名连接到低信誉源 (的出站 HTTP () ) 。
 
-从 Windows 10 版本 1709 开始，Windows 支持网络保护。 网络保护在其他操作系统上尚不受支持，但使用基于 Chromium 的新 Microsoft Edge 支持 Web 保护。 若要了解更多信息，请参阅 [Web 保护](web-protection-overview.md)。
+网络保护在 Windows版本 1709 Windows 10起受支持。 网络保护在其他操作系统上尚不受支持，但 Web 保护支持使用基于 Microsoft Edge 的新Chromium。 若要了解更多信息，请参阅 [Web 保护](web-protection-overview.md)。
 
 网络保护将 Web 保护 [中的保护扩展到](web-protection-overview.md) 操作系统级别。 它在 Edge 中为其他受支持的浏览器和非浏览器应用程序提供 Web 保护功能。 此外，当与终结点检测和响应一 (ICS 时，网络保护) 和阻止泄露[指示器。](overview-endpoint-detection-response.md) 例如，网络保护适用于你的 [自定义指示器](manage-indicators.md)。
 
@@ -52,11 +52,11 @@ ms.locfileid: "51861141"
 
 ## <a name="requirements"></a>要求
 
-网络保护需要 Windows 10 专业版或企业版以及 Microsoft Defender 防病毒实时保护。
+网络保护Windows 10 专业版或Enterprise，Microsoft Defender 防病毒实时保护。
 
 | Windows 版本 | Microsoft Defender 防病毒 |
 |:---|:---|
-| Windows 10 版本 1709 或更高版本 <p>Windows Server 1803 或更高版本 | [必须启用 Microsoft Defender 防病毒实时](configure-real-time-protection-microsoft-defender-antivirus.md)[保护和云保护](enable-cloud-protection-microsoft-defender-antivirus.md) |
+| Windows 10版本 1709 或更高版本 <p>Windows服务器 1803 或更高版本 | [Microsoft Defender 防病毒必须启用](configure-real-time-protection-microsoft-defender-antivirus.md)实时[保护和云保护](enable-cloud-protection-microsoft-defender-antivirus.md) |
 
 启用服务后，可能需要配置网络或防火墙，以允许服务和设备之间的连接 (也称为终结点) 。  
 
@@ -76,13 +76,13 @@ DeviceEvents
 | where ActionType in ('ExploitGuardNetworkProtectionAudited','ExploitGuardNetworkProtectionBlocked')
 ```
 
-## <a name="review-network-protection-events-in-windows-event-viewer"></a>在 Windows 事件查看器中查看网络保护事件
+## <a name="review-network-protection-events-in-windows-event-viewer"></a>在事件查看器中查看Windows保护事件
 
-你可以查看 Windows 事件日志以查看网络保护阻止访问恶意 IP 或域 (或审核) IP 或域时创建的事件：
+你可以查看Windows事件日志，以查看网络保护阻止访问恶意 IP 或 (或审核) IP 或域时创建的事件：
 
 1. [直接复制 XML。](event-views.md)
 
-2. 选择“确定”。
+2. 选择“**确定**”。
 
 此过程将创建一个自定义视图，该视图筛选为只显示与网络保护相关的以下事件：
 
@@ -92,15 +92,15 @@ DeviceEvents
 | 1125 | 在审核模式下触发网络保护时的事件 |
 | 1126 | 在阻止模式下触发网络保护时的事件 |
 
-## <a name="considerations-for-windows-virtual-desktop-running-windows-10-enterprise-multi-session"></a>运行 Windows 10 企业版多会话的 Windows 虚拟桌面的注意事项
+## <a name="considerations-for-windows-virtual-desktop-running-windows-10-enterprise-multi-session"></a>在多Windows中运行虚拟Windows 10 企业版的注意事项
 
-由于 Windows 10 企业版具有多用户特性，请注意以下几点：
+由于应用程序具有多用户Windows 10 企业版，请记住以下几点：
 
 1. 网络保护是设备范围内的一项功能，不能面向特定的用户会话。
 
 2. Web 内容筛选策略也是设备范围的。
 
-3. 如果需要区分用户组，请考虑创建单独的 Windows 虚拟桌面主机池和分配。
+3. 如果需要区分用户组，请考虑创建单独的虚拟Windows池和分配。
 
 4. 在审核模式下测试网络保护，以在推出之前评估其行为。 
 
@@ -108,7 +108,7 @@ DeviceEvents
 
 ### <a name="alternative-option-for-network-protection"></a>网络保护的备用选项
 
-对于在 Azure 上的 Windows 虚拟桌面中使用的 Windows 10 企业版多会话 1909 及更新，可以使用以下方法启用 Microsoft Edge 的网络保护：
+对于Windows 10 企业版会话 1909 及之后（在 Azure 上的 Windows 虚拟桌面中使用）中，可以使用以下方法启用 Microsoft Edge 的网络保护：
 
 1. 使用 ["打开网络保护](enable-network-protection.md) "并按照说明应用策略。
 

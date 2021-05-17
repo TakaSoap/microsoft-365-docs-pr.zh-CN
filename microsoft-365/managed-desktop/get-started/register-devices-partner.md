@@ -41,7 +41,7 @@ ms.locfileid: "51689229"
 2. 从 **合作伙伴** 中心菜单中选择客户，然后选择你想要管理其设备的客户。
 3. 在客户的详细信息页面上，选择 **设备**。
 4. 在 **"将配置文件** 应用到设备"下，选择 **"添加设备"。**
-5. 为所选的设备配置文件输入相应的组标记 (如下表) 所示，然后选择"浏览"以将 .csv 文件格式) 的客户列表 (上载到合作伙伴中心。
+5. 为所选的设备配置文件输入相应的组标记 (如下表) 所示，然后选择"浏览"将 .csv) 文件格式的客户列表 (上载到合作伙伴中心。
 
 |[设备配置文件](../service-description/profiles.md)  |组标记  |
 |---------|---------|
@@ -53,9 +53,9 @@ ms.locfileid: "51689229"
 > 组名称必须与表中列出的名称完全匹配，包括大写和特殊字符。 这将允许使用 Microsoft 托管桌面 Autopilot 配置文件分配新注册的设备。
 
 >[!NOTE]
-> 你应该已使用设备购买收到此 .csv 文件。 如果未收到 .csv 文件，可以按照将设备添加到 Windows Autopilot 中的步骤操作 [，自己创建一个文件](/windows/deployment/windows-autopilot/add-devices#collecting-the-hardware-id-from-existing-devices-using-powershell)。 the Windows PowerShell script is different from the one used for the [Microsoft Managed Desktop Admin portal](./register-devices-self.md#obtain-the-hardware-hash). 合作伙伴应在合作伙伴 [中心使用 Get-WindowsAutoPilotInfo](https://www.powershellgallery.com/packages/Get-WindowsAutoPilotInfo) 为 Microsoft 托管桌面设备注册设备。
+> 你应该已经收到此.csv购买的文件。 如果你未收到.csv文件，可以按照将设备添加到 Windows Autopilot 中的步骤操作 [，自己创建一个](/windows/deployment/windows-autopilot/add-devices#collecting-the-hardware-id-from-existing-devices-using-powershell)。 the Windows PowerShell script is different from the one used for the [Microsoft Managed Desktop Admin portal](./register-devices-self.md#obtain-the-hardware-hash). 合作伙伴应在合作伙伴 [中心使用 Get-WindowsAutoPilotInfo](https://www.powershellgallery.com/packages/Get-WindowsAutoPilotInfo) 为 Microsoft 托管桌面设备注册设备。
 
-如果在尝试上载 .csv 文件时收到错误消息，请检查该文件的格式。 确保列顺序与使用新设备的 [Windows Autopilot](/partner-center/autopilot#add-devices-to-a-customers-account)配置文件自定义客户的全新体验中所述相匹配。 您还可以使用添加设备旁边的链接中提供的示例 .csv **文件** 来创建设备列表。 
+如果在尝试上载文件时收到.csv错误消息，请检查该文件的格式。 确保列顺序与使用新设备的 [Windows Autopilot](/partner-center/autopilot#add-devices-to-a-customers-account)配置文件自定义客户的全新体验中所述相匹配。 您还可以使用添加设备.csv旁边链接提供的示例文件创建设备列表。  
 
 有关合作伙伴方案中的 Autopilot 详细信息，请参阅 [将设备添加到客户的帐户](/partner-center/autopilot#add-devices-to-a-customers-account)。
 

@@ -1,6 +1,6 @@
 ---
 title: Microsoft Defender for Endpoint 中的设备运行状况和合规性报告
-description: 使用设备运行状况和合规性报告跟踪设备运行状况状态检测、防病毒状态、操作系统平台和 Windows 10 版本
+description: 使用设备运行状况和合规性报告跟踪Windows 10运行状况检测、防病毒状态、操作系统平台和版本
 keywords: 运行状况状态， 防病毒， 操作系统平台， windows 10 版本， 版本， 运行状况， 合规性， 状态
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -35,7 +35,7 @@ ms.locfileid: "51860287"
 
 > 想要体验 Microsoft Defender for Endpoint？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-设备状态报告提供有关组织中设备的高级别信息。 该报告包括显示传感器运行状况状态、防病毒状态、操作系统平台和 Windows 10 版本的趋势信息。
+设备状态报告提供有关组织中设备的高级别信息。 该报告包括显示传感器运行状况状态、防病毒状态、操作系统平台和Windows 10信息。
 
 仪表板分为两个部分： ![ 设备报表的图像](images/device-reports.png)
  
@@ -72,11 +72,11 @@ ms.locfileid: "51860287"
  
 - **运行状况：** 显示有关设备上传感器状态的信息，提供活动、通信受损、非活动或未看到传感器数据的设备的聚合视图。
   
-- **活动 Windows 10** 设备的防病毒状态：显示设备数和 Microsoft Defender 防病毒状态。
+- **活动Windows 10防病毒状态**：显示设备数量和Microsoft Defender 防病毒。
     
 - **操作系统** 平台 ：显示存在于您的组织中的操作系统平台的分布。 
  
-- **Windows 10 版本**：显示 Windows 10 设备及其在组织中版本的分布。
+- **Windows 10版本**： 显示组织中Windows 10设备及其版本的分布。
  
  
  
@@ -89,11 +89,11 @@ ms.locfileid: "51860287"
 >[!NOTE]
 >这些筛选器适用于 **报告中** 的所有卡片。
  
-例如，若要显示有关具有活动传感器运行状况的 Windows 10 设备的数据：
+例如，若要显示有关Windows 10传感器运行状况状态的设备的数据：
  
 1. 在 **筛选器>传感器运行状况状态>处于活动状态。**
-2. 然后选择 Windows **10 >操作系统平台**。
-3. 选择“**应用**”。
+2. 然后选择操作系统 **平台> Windows 10。**
+3. 选择 **应用**。
 
 
 ## <a name="related-topic"></a>相关主题

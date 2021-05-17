@@ -36,7 +36,7 @@ ms.locfileid: "51903678"
 
 ## <a name="try-it"></a>试一试！
 
-1. 从 Microsoft 365 管理中心，选择 **"Exchange"** 和"**邮件** 流"，在"规则"选项卡上，选择加号并选择"**创建新规则"。**
+1. 从Microsoft 365管理中心，选择"Exchange、邮件流"，在"规则"选项卡上，选择加号并选择"**创建新规则"。** 
 1. 选择“其他选项”。 命名新规则。
 1. 然后打开下拉以应用此规则 **if**，选择发件人 **，然后****是外部内部**。
 1. 选择 **"组织内部"，** 然后选择"确定 **"。**
@@ -50,4 +50,4 @@ ms.locfileid: "51903678"
 
 ## <a name="related-content"></a>相关内容
 
-[为用户](https://docs.microsoft.com/microsoft-365/admin/email/add-another-email-alias-for-a-user) 添加另一个电子邮件别名 (文章) 在 [Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/email/configure-email-forwarding) (中配置电子邮件转发) 查找并修复作为 [Office 365](https://docs.microsoft.com/exchange/troubleshoot/email-delivery/email-delivery-issues) 商业版管理员的电子邮件 (问题) 
+[为用户添加](https://docs.microsoft.com/microsoft-365/admin/email/add-another-email-alias-for-a-user)另一个电子邮件别名 (文章) 在[Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/email/configure-email-forwarding) (中配置电子邮件转发) 查找并修复作为 Office 365 [for Business](https://docs.microsoft.com/exchange/troubleshoot/email-delivery/email-delivery-issues)管理员的电子邮件传递 (文章) 

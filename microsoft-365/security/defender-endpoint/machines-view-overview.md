@@ -89,7 +89,7 @@ ms.locfileid: "51861571"
 
 ### <a name="antivirus-status"></a>防病毒状态
 
-按防病毒状态筛选设备。 仅适用于活动的 Windows 10 设备。
+按防病毒状态筛选设备。 仅适用于活动Windows 10设备。
 
 - **已禁用** - &威胁防护已关闭。
 - **不报告** - 病毒&威胁防护未报告。
@@ -103,9 +103,9 @@ ms.locfileid: "51861571"
 
 若要了解有关特定威胁的更多信息，请参阅 [威胁分析](threat-analytics.md)。 有关缓解信息，请参阅[威胁&漏洞管理。](next-gen-threat-and-vuln-mgt.md)
 
-### <a name="windows-10-version"></a>Windows 10 版本
+### <a name="windows-10-version"></a>Windows 10版本
 
-仅选择你有兴趣调查的 Windows 10 版本。
+仅选择Windows 10关注的版本。
 
 ### <a name="tags--groups"></a>标记&组
 

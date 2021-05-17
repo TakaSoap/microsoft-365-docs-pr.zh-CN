@@ -1,5 +1,5 @@
 ---
-title: 使用 PowerShell 删除 Microsoft 365 用户帐户
+title: 使用 powerShell Microsoft 365用户帐户
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -19,7 +19,7 @@ ms.custom:
 - O365ITProTrain
 - seo-marvel-apr2020
 ms.assetid: 209c9868-448c-49bc-baae-11e28b923a39
-description: 了解如何在 PowerShell 中使用不同的模块来删除 Microsoft 365 用户帐户。
+description: 了解如何在 PowerShell 中使用不同的模块来删除Microsoft 365用户帐户。
 ms.openlocfilehash: 32081d1ce0cbc7aac89b337cf8b5d08bc8e43dfa
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -27,19 +27,19 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 03/19/2021
 ms.locfileid: "50919136"
 ---
-# <a name="delete-microsoft-365-user-accounts-with-powershell"></a>使用 PowerShell 删除 Microsoft 365 用户帐户
+# <a name="delete-microsoft-365-user-accounts-with-powershell"></a>使用 powerShell Microsoft 365用户帐户
 
-可以使用 PowerShell for Microsoft 365 删除和还原用户帐户。
+可以使用 PowerShell for Microsoft 365删除和还原用户帐户。
 
 >[!Note]
->了解如何 [使用](../admin/add-users/restore-user.md) Microsoft 365 管理中心还原用户帐户。
+>了解如何使用[管理中心Microsoft 365](../admin/add-users/restore-user.md)用户帐户。
 >
 >有关其他资源的列表，请参阅管理 [用户和组](../admin/add-users/index.yml)。
 >   
    
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>使用用于图表模块的 Azure Active Directory PowerShell
 
-首先， [连接到 Microsoft 365 租户](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)。
+首先，[连接到你的Microsoft 365租户](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)。
 
 连接后，使用以下语法删除单个用户帐户：
   
@@ -79,9 +79,9 @@ Remove-AzureADUser -ObjectID (Get-AzureADUser | where {$_.DisplayName -eq $userN
 
 ## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>使用用于 Windows PowerShell 的 Microsoft Azure Active Directory 模块
 
-通过 Microsoft Azure Active Directory 模块删除用户帐户进行Windows PowerShell，该帐户不会永久删除。 您可以在 30 天内还原已删除的用户帐户。
+当您通过 Microsoft Azure Active Directory 模块删除用户帐户Windows PowerShell，该帐户不会永久删除。 您可以在 30 天内还原已删除的用户帐户。
 
-首先， [连接到 Microsoft 365 租户](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)。
+首先，[连接到你的Microsoft 365租户](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)。
 
 若要删除一个用户帐户，请使用下面的语法：
   

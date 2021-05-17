@@ -13,7 +13,7 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.collection: M365-security-compliance
-description: 管理员可以设置数据连接器，以将员工数据从组织的人力资源部门导入到 Microsoft 365 () 人力资源系统。 这样，你可以将 HR 数据用于内部风险管理策略，以帮助你检测特定用户可能对组织造成内部威胁的活动。
+description: 管理员可以设置数据连接器，以从组织的人力资源部门导入员工数据， (HR) 系统Microsoft 365。 这样，你可以将 HR 数据用于内部风险管理策略，以帮助你检测特定用户可能对组织造成内部威胁的活动。
 ms.openlocfilehash: eb11eb5790ca9c585db8bbb95b41747a72e5c8f1
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -23,23 +23,23 @@ ms.locfileid: "50911372"
 ---
 # <a name="set-up-a-connector-to-import-hr-data"></a>设置连接器以导入 HR 数据
 
-可以在 Microsoft 365 合规中心中设置数据连接器，以导入与事件相关的人力资源 (HR) 数据，如用户的决定或用户工作级别的更改。 然后，内部风险管理解决方案可以使用 HR[](insider-risk-management.md)数据生成风险指示器，以帮助你识别组织内部用户可能恶意活动或数据盗窃。
+您可以在 Microsoft 365 合规中心中设置数据连接器，以导入与事件（如用户的变化或用户的工作级别变化）相关的人力资源 (HR) 数据。 然后，内部风险管理解决方案可以使用 HR[](insider-risk-management.md)数据生成风险指示器，以帮助你识别组织内部用户可能恶意活动或数据盗窃。
 
-为内部风险管理策略可用于生成风险指标的 HR 数据设置连接器包括创建一个包含 HR 数据的 CSV 文件、在 Azure Active Directory 中创建用于身份验证的应用、在 Microsoft 365 合规中心创建 HR 数据连接器，然后按计划运行脚本 () 该脚本将 CSV 文件的 HR 数据导入到 Microsoft 云，以便对内部风险管理解决方案可用。
+为内部风险管理策略可用于生成风险指标的 HR 数据设置连接器包括创建一个包含 HR 数据的 CSV 文件、在 Azure Active Directory 中创建用于身份验证的应用程序、在 Microsoft 365 (合规中心创建 HR 数据连接器，然后按计划运行) 该脚本) 该脚本将 CSV 文件的 HR 数据导入到 Microsoft 云，以便它可用于内部风险管理解决方案。
 
 ## <a name="before-you-begin"></a>开始之前
 
-- 确定要导入到 Microsoft 365 的 HR 方案和数据。 这将帮助你确定需要创建的 CSV 文件和 HR 连接器的个数，以及如何生成和构建 CSV 文件。 导入的 HR 数据由要实施的内部风险管理策略确定。 有关详细信息，请参阅步骤 1。
+- 确定哪些 HR 方案和数据要导入Microsoft 365。 这将帮助你确定需要创建的 CSV 文件和 HR 连接器的个数，以及如何生成和构建 CSV 文件。 导入的 HR 数据由要实施的内部风险管理策略确定。 有关详细信息，请参阅步骤 1。
 
 - 确定如何检索或导出组织的 HR 系统 (并定期) 并将其添加到在步骤 1 创建的 CSV 文件中。 在步骤 4 中运行的脚本将 CSV 文件的 HR 数据上载到 Microsoft 云。
 
-- 必须在 Exchange Online 中为在步骤 3 中创建 HR 连接器的用户分配邮箱导入导出角色。 默认情况下，不会向 Exchange Online 中任何角色组分配此角色。 可以将"邮箱导入导出"角色添加到 Exchange Online 中的"组织管理"角色组。 也可以创建新的角色组，分配"邮箱导入导出"角色，然后将相应的用户添加为成员。 有关详细信息，请参阅"在[](/Exchange/permissions-exo/role-groups#create-role-groups)Exchange Online[](/Exchange/permissions-exo/role-groups#modify-role-groups)中管理角色组"一文的创建角色组或修改角色组部分。
+- 必须在步骤 3 中为在步骤 3 中创建 HR 连接器的用户分配邮箱导入导出Exchange Online。 默认情况下，不会向 Exchange Online 中任何角色组分配此角色。 可以将"邮箱导入导出"角色添加到组织中"组织管理"角色Exchange Online。 也可以创建新的角色组，分配"邮箱导入导出"角色，然后将相应的用户添加为成员。 有关详细信息，请参阅"在角色[](/Exchange/permissions-exo/role-groups#create-role-groups)组中管理角色组[](/Exchange/permissions-exo/role-groups#modify-role-groups)"一文的"创建角色组"或"修改角色Exchange Online"。
 
 - 在步骤 4 中运行的示例脚本将你的 HR 数据上传到 Microsoft 云，以便内部风险管理解决方案可以使用该数据。 本示例脚本在任何 Microsoft 标准支持计划或服务下都不受支持。 示例脚本“原样”提供，不提供任何形式的保证。 Microsoft 进一步拒绝所有默示保证，包括但不限于针对特定用途的适销性或适用性的任何默示保证。 由于示例脚本及文档的使用或性能所引起的全部风险均由你承担。 在任何情况下，对于由于使用或者无法使用示例脚本或文档所引起的任何损失（包括但不限于商业利润损失、业务中断、商业信息丢失或者其他经济损失），Microsoft、其作者或者参与创建、制作或交付脚本的任何人概不负责，即使 Microsoft 已被告知可能会出现此类损失。
 
 ## <a name="step-1-prepare-a-csv-file-with-your-hr-data"></a>步骤 1：准备包含 HR 数据的 CSV 文件
 
-第一步是创建一个 CSV 文件，其中包含连接器将导入到 Microsoft 365 的 HR 数据。 此数据将被内部风险解决方案用于生成潜在风险指标。 以下 HR 方案的数据可以导入到 Microsoft 365：
+第一步是创建一个 CSV 文件，其中包含连接器将导入Microsoft 365。 此数据将被内部风险解决方案用于生成潜在风险指标。 可以将以下 HR 方案的数据导入Microsoft 365：
 
 - 员工满意度。 有关已离开组织的用户的信息。
 
@@ -61,7 +61,7 @@ ms.locfileid: "50911372"
 | 离开用户违反安全策略   | 员工员工                                                 |
 | 优先级用户违反安全策略    | 不适用                                                        |
 | 解除限制的用户违反安全策略 | 作业级别更改、绩效考核、绩效改进计划 |
-| 电子邮件中的冒犯性语言                     | 不适用                                                        |
+| 邮件中的冒犯性语言                     | 不适用                                                        |
 
 有关内部风险管理的策略模板详细信息，请参阅 [预览体验成员风险管理策略](insider-risk-management-policies.md#policy-templates)。
 
@@ -70,7 +70,7 @@ ms.locfileid: "50911372"
 创建包含所需 HR 数据的 CSV 文件后，请存储在步骤 4 中运行脚本的本地计算机上。 还应实施更新策略，以确保 CSV 文件始终包含最新信息，以便无论运行脚本，最新 HR 数据都将上载到 Microsoft 云中，并且可供内部风险管理解决方案访问。
 
 > [!IMPORTANT]
-> 以下各节中介绍的列名称不是必需参数，而只是示例。 可以在 CSV 文件中使用任意列名称。 但是，在 CSV 文件中使用的列名称必须映射到数据类型步骤 3 中的 HR 连接器时，该列名必须映射到该位置。 另请注意，以下各节中的示例 CSV 文件显示在记事本视图中。 在 Microsoft Excel 中查看和编辑 CSV 文件要容易得多。
+> 以下各节中介绍的列名称不是必需参数，而只是示例。 可以在 CSV 文件中使用任意列名称。 但是，在 CSV 文件中使用的列名称必须映射到数据类型步骤 3 中的 HR 连接器时，该列名必须映射到该位置。 另请注意，以下各节中的示例 CSV 文件显示在记事本视图中。 在文件视图中查看和编辑 CSV 文件Microsoft Excel。
 
 以下各节介绍每个 HR 方案所需的 CSV 数据。
 
@@ -197,9 +197,9 @@ Performance improvement plan,pillarp@contoso.com,,,2019-04-23T15:18:02.4675041+0
 
 根据组织的 HR 系统以及您将 HR 数据导出到 CSV 文件如何，您可能必须创建多个 CSV 文件，其中包含一个 HR 数据类型。 在这种情况下，您仍可以创建单个 HR 连接器以从不同的 CSV 文件导入数据。 为此，只需将 HRScenario 列添加到 CSV 文件并指定 HR 数据类型。 然后您可以运行每个 CSV 文件的脚本，但对连接器使用相同的作业 ID。 请参阅[步骤 4。](#step-4-run-the-sample-script-to-upload-your-hr-data)
 
-## <a name="step-2-create-an-app-in-azure-active-directory"></a>步骤 2：在 Azure Active Directory 中创建应用
+## <a name="step-2-create-an-app-in-azure-active-directory"></a>步骤 2：在 Azure Active Directory
 
-下一步是在 Azure Active Directory (Azure AD) 。 该应用将对应于你在步骤 3 创建的 HR 连接器。 创建此应用将允许 Azure AD 在 HR 连接器运行时进行身份验证，并尝试访问你的组织。 此应用还将用于对在步骤 4 中运行的脚本进行身份验证，以将 HR 数据上传到 Microsoft 云。 创建此 Azure AD 应用期间，请务必保存以下信息。 这些值将在步骤 3 和步骤 4 中使用。
+下一步是在 Azure AD Azure Active Directory (创建和注册) 。 该应用将对应于你在步骤 3 创建的 HR 连接器。 创建此应用将允许 Azure AD 在 HR 连接器运行时进行身份验证，并尝试访问你的组织。 此应用还将用于对在步骤 4 中运行的脚本进行身份验证，以将 HR 数据上传到 Microsoft 云。 创建此 Azure AD 应用期间，请务必保存以下信息。 这些值将在步骤 3 和步骤 4 中使用。
 
 - Azure AD 应用程序 ID (也称为 *应用 ID* 或 *客户端 ID*) 
 
@@ -207,11 +207,11 @@ Performance improvement plan,pillarp@contoso.com,,,2019-04-23T15:18:02.4675041+0
 
 - 租户 ID (*也称为目录 ID*) 
 
-有关在 Azure AD 中创建应用的分步说明，请参阅向 Microsoft 标识平台 [注册应用程序](/azure/active-directory/develop/quickstart-register-app)。
+有关在 Azure AD 中创建应用的分步说明，请参阅使用 Microsoft 标识平台[注册应用程序](/azure/active-directory/develop/quickstart-register-app)。
 
 ## <a name="step-3-create-the-hr-connector"></a>步骤 3：创建 HR 连接器
 
-下一步是在 Microsoft 365 合规中心创建 HR 连接器。 在步骤 4 中运行脚本后，您创建的 HR 连接器将导入 CSV 文件的 HR 数据到 Microsoft 365 组织。 创建连接器之前，请确保您具有 HR 方案的列表以及每个方案对应的 CSV 列名称。 配置连接器时，您必须将每个方案所需的数据映射到 CSV 文件中的实际列名称。 或者，您可以在配置连接器时上载示例 CSV 文件，向导将帮助您将列的名称映射到所需的数据类型。
+下一步是在合规中心内Microsoft 365 HR 连接器。 在步骤 4 中运行脚本后，您创建的 HR 连接器将从 CSV 文件将 HR 数据导入Microsoft 365组织。 创建连接器之前，请确保您具有 HR 方案的列表以及每个方案对应的 CSV 列名称。 配置连接器时，您必须将每个方案所需的数据映射到 CSV 文件中的实际列名称。 或者，您可以在配置连接器时上载示例 CSV 文件，向导将帮助您将列的名称映射到所需的数据类型。
 
 完成此步骤后，请确保复制创建连接器时生成的作业 ID。 运行脚本时，将使用作业 ID。
 
@@ -231,9 +231,9 @@ Performance improvement plan,pillarp@contoso.com,,,2019-04-23T15:18:02.4675041+0
 
 6. 在文件映射方法页上，选择下列选项之一，然后单击下一 **步**。
 
-   - **上载示例文件**。 如果选择此选项，请单击" **上载示例** 文件"以上载在步骤 1 中准备的 CSV 文件。 此选项允许您从下拉列表中快速选择 CSV 文件的列名称，以将其映射到您之前选择的 HR 方案的数据类型。
+   - **Upload示例文件**。 如果选择此选项，请单击"Upload文件"以上载在步骤 1 中准备的 CSV 文件。 此选项允许您从下拉列表中快速选择 CSV 文件的列名称，以将其映射到您之前选择的 HR 方案的数据类型。
 
-   或
+   OR
 
    - **手动提供映射详细信息**。 如果选择此选项，您必须在 CSV 文件中键入列的名称，以将它们映射到之前选择的 HR 方案的数据类型。
 
@@ -251,7 +251,7 @@ Performance improvement plan,pillarp@contoso.com,,,2019-04-23T15:18:02.4675041+0
 
    1. **作业 ID。** 您需要此作业 ID，以在下一步中运行脚本。 可以从此页面或连接器飞出页复制它。
 
-   1. **指向示例脚本的链接。** 单击 **"此处** "链接以转到 GitHub 网站以访问示例脚本 (该链接将打开一个新的) 。 保持此窗口为打开状态，以便你可以复制步骤 4 中的脚本。 或者，您可以为目标添加书签或复制 URL，以便可以在运行脚本时再次访问它。 连接器飞出页面上也提供此链接。
+   1. **指向示例脚本的链接。** 单击 **"此处**"链接可转到 GitHub 网站以访问示例脚本 (该链接将打开一个新窗口) 。 保持此窗口为打开状态，以便你可以复制步骤 4 中的脚本。 或者，您可以为目标添加书签或复制 URL，以便可以在运行脚本时再次访问它。 连接器飞出页面上也提供此链接。
 
 9. 单击“**完成**”。
 
@@ -267,9 +267,9 @@ Performance improvement plan,pillarp@contoso.com,,,2019-04-23T15:18:02.4675041+0
 
 ## <a name="step-4-run-the-sample-script-to-upload-your-hr-data"></a>步骤 4：运行示例脚本以上载 HR 数据
 
-设置 HR 连接器的最后一步是运行示例脚本，该脚本将在 CSV 文件 (（在步骤 1) 中创建）中将 HR 数据上载到 Microsoft 云。 具体而言，脚本将数据上载到 HR 连接器。 运行脚本后，在步骤 3 中创建的 HR 连接器将 HR 数据导入到 Microsoft 365 组织，其他合规性工具（如预览体验成员风险管理解决方案）可以访问该组织。 运行脚本后，请考虑安排一项任务，每天自动运行一次，以便将最新的员工离职数据上传到 Microsoft 云。 请参阅 [计划脚本自动运行](#optional-step-6-schedule-the-script-to-run-automatically)。
+设置 HR 连接器的最后一步是运行示例脚本，该脚本将在 CSV 文件 (（在步骤 1) 中创建）中将 HR 数据上载到 Microsoft 云。 具体而言，脚本将数据上载到 HR 连接器。 运行脚本后，在步骤 3 中创建的 HR 连接器将 HR 数据导入 Microsoft 365 组织，其他合规性工具（如预览体验成员风险管理解决方案）可以访问该组织。 运行脚本后，请考虑安排一项任务，每天自动运行一次，以便将最新的员工离职数据上传到 Microsoft 云。 请参阅 [计划脚本自动运行](#optional-step-6-schedule-the-script-to-run-automatically)。
 
-1. 转到上一步中打开的窗口，以使用示例脚本访问 GitHub 网站。 或者，打开已添加书签的网站或使用您复制的 URL。
+1. 转到上一步中打开的窗口，通过示例脚本GitHub网站。 或者，打开已添加书签的网站或使用您复制的 URL。
 
 2. 单击" **原始** "按钮以在文本视图中显示脚本。
 
@@ -291,8 +291,8 @@ Performance improvement plan,pillarp@contoso.com,,,2019-04-23T15:18:02.4675041+0
 
    | 参数 | 说明 |
    |:-----|:-----|:-----|
-   |`tenantId`|这是在步骤 2 中获取的 Microsoft 365 组织的 ID。 还可以在 Azure AD 管理中心的"概述"边栏选项卡上获取组织的租户 ID。 这用于标识您的组织。|
-   |`appId` |这是你在步骤 2 中的 Azure AD 中创建的应用的 Azure AD 应用程序 ID。 当脚本尝试访问你的 Microsoft 365 组织时，Azure AD 会使用此功能进行身份验证。 | 
+   |`tenantId`|这是在步骤 2 Microsoft 365获得的组织 ID。 还可以在 Azure AD 管理中心的"概述"边栏选项卡上获取组织的租户 ID。 这用于标识您的组织。|
+   |`appId` |这是你在步骤 2 中的 Azure AD 中创建的应用的 Azure AD 应用程序 ID。 当脚本尝试访问你的组织时，Azure AD 会Microsoft 365身份验证。 | 
    |`appSecret`|这是你在步骤 2 中的 Azure AD 中创建的应用的 Azure AD 应用程序密码。 这还用于身份验证。|
    |`jobId`|这是在步骤 3 中创建的 HR 连接器的作业 ID。 这用于将上载到 Microsoft 云的 HR 数据与 HR 连接器关联。|
    |`csvFilePath`|这是 CSV 文件的文件路径， (步骤 1 中创建的脚本) 存储在同一系统中。 尝试避免文件路径中的空格;否则请使用单引号。|
@@ -304,14 +304,14 @@ Performance improvement plan,pillarp@contoso.com,,,2019-04-23T15:18:02.4675041+0
     .\HRConnector.ps1 -tenantId d5723623-11cf-4e2e-b5a5-01d1506273g9 -appId 29ee526e-f9a7-4e98-a682-67f41bfd643e -appSecret MNubVGbcQDkGCnn -jobId b8be4a7d-e338-43eb-a69e-c513cd458eba -csvFilePath 'C:\Users\contosoadmin\Desktop\Data\employee_termination_data.csv'
     ```
 
-   如果上传成功，脚本将显示" **上传成功"** 消息。
+   如果上传成功，脚本将显示"Upload **成功"** 消息。
 
    > [!NOTE]
    > 如果由于执行策略而运行上一个命令时遇到问题，[](/powershell/module/microsoft.powershell.core/about/about_execution_policies)请参阅关于执行策略和[Set-ExecutionPolicy，](/powershell/module/microsoft.powershell.security/set-executionpolicy)了解设置执行策略的指南。
 
 ## <a name="step-5-monitor-the-hr-connector"></a>步骤 5：监视 HR 连接器
 
-创建 HR 连接器并运行脚本以上传 HR 数据后，可以在 Microsoft 365 合规中心查看连接器并上传状态。 如果安排脚本定期自动运行，还可以在上次运行脚本后查看当前状态。
+创建 HR 连接器并运行脚本以上传 HR 数据后，可以查看该连接器，并上传Microsoft 365合规中心。 如果安排脚本定期自动运行，还可以在上次运行脚本后查看当前状态。
 
 1. 转到左侧 [https://compliance.microsoft.com](https://compliance.microsoft.com) 导航 **导航中的"数据** 连接器"，然后单击" 数据连接器"。
 
@@ -333,7 +333,7 @@ Performance improvement plan,pillarp@contoso.com,,,2019-04-23T15:18:02.4675041+0
 
 You can user the Task Scheduler app in Windows to automatically run the script every day.
 
-1. 在本地计算机上，单击 **Windows"开始"** 按钮，然后键入 **"任务计划程序"。**
+1. 在本地计算机上，单击 **"Windows"** 按钮，然后键入 **"任务计划程序"。**
 
 2. 单击任务 **计划程序** 应用以打开它。
 
@@ -349,7 +349,7 @@ You can user the Task Scheduler app in Windows to automatically run the script e
 
 6. 选择 **"触发器"** 选项卡，单击 **"新建**"，然后执行以下操作：
 
-   1. 在 **"** 设置"下，选择" **每天** "选项，然后选择首次运行脚本的日期和时间。 脚本将每天在同一指定时间运行。
+   1. 在 **设置"** 下，选择"**每天**"选项，然后选择首次运行脚本的日期和时间。 脚本将每天在同一指定时间运行。
 
    1. 在 **"高级设置**"下，确保 **选中"已启用** "复选框。
 

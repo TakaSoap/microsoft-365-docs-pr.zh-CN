@@ -19,7 +19,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 832276bd-d024-47b6-a80a-a6b884907a5b
-description: '了解如何使用 Exchange PowerShell 为组织中所有用户或特定用户启用或禁用待筛选邮件功能。 '
+description: '了解如何使用 PowerShell 为组织中所有用户或特定用户启用或禁用待筛选Exchange功能。 '
 ms.openlocfilehash: ac68893bc0aeea5ab214698c54524921e2b1921d
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -32,11 +32,11 @@ ms.locfileid: "50915898"
 > [!TIP]
 > [重点收件箱](../setup/configure-focused-inbox.md) 将替换待筛选邮件。 了解更多信息 [：更新重点收件箱和待筛选邮件计划](https://techcommunity.microsoft.com/t5/Outlook-Blog/Update-on-Focused-Inbox-and-our-plans-for-Clutter/ba-p/136448)
   
-作为管理员，您可能必须管理 Microsoft 365 中的待筛选邮件功能。 若要为组织的用户打开/关闭待筛选邮件功能，必须使用 Exchange PowerShell。  (个人可以使用以下说明打开/关闭它：在 Outlook 中关闭 [/打开待筛选邮件](https://support.microsoft.com/office/a9c72a77-1bc4-40e6-ba6d-103c1d1aba4c)。
+作为管理员，您可能必须管理待筛选邮件功能Microsoft 365。 若要为组织的用户打开/关闭待筛选邮件功能，必须使用 Exchange PowerShell。  (个人可以使用以下说明打开/关闭它：关闭[/打开](https://support.microsoft.com/office/a9c72a77-1bc4-40e6-ba6d-103c1d1aba4c)待筛选邮件Outlook。
   
-有关使用 [Exchange PowerShell](/powershell/exchange/exchange-online-powershell) 的详细信息，请参阅将 PowerShell 与 Exchange Online 一同使用和连接到 Exchange [Online](/powershell/exchange/connect-to-exchange-online-powershell) PowerShell。 您需要具有至少具有 Exchange 服务管理员角色且具有使用 PowerShell 连接到 Exchange Online 的能力的帐户。 
+请参阅将[PowerShell](/powershell/exchange/exchange-online-powershell)与 Exchange Online 一连接 Exchange Online [PowerShell，](/powershell/exchange/connect-to-exchange-online-powershell)详细了解如何Exchange PowerShell。 您需要具有至少具有 Exchange 服务管理员角色且能够使用 PowerShell Exchange Online帐户。 
   
-## <a name="turn-clutter-on-using-exchange-powershell"></a>使用 Exchange PowerShell 启用待筛选邮件功能
+## <a name="turn-clutter-on-using-exchange-powershell"></a>使用 PowerShell 打开待筛选Exchange功能
 
 可以通过运行 [Set-Clutter](/powershell/module/exchange/set-clutter) cmdlet 手动为邮箱启用待筛选邮件功能。 您还可以通过运行 [Get-Clutter](/powershell/module/exchange/get-clutter) cmdlet 查看组织中邮箱的待筛选邮件设置。 
   
@@ -45,7 +45,7 @@ ms.locfileid: "50915898"
 `Set-Clutter -Identity "Allie Bellew" -Enable $true`
 
 
-## <a name="turn-clutter-off-using-exchange-powershell"></a>使用 Exchange PowerShell 关闭待筛选邮件功能
+## <a name="turn-clutter-off-using-exchange-powershell"></a>使用 PowerShell Exchange待筛选邮件功能
 
 可以通过运行 [Set-Clutter](/powershell/module/exchange/set-clutter) cmdlet 手动禁用邮箱的待筛选邮件功能。 您还可以通过运行[Get-Clutter](/powershell/module/exchange/get-clutter) cmdlet 查看组织中邮箱的待筛选邮件设置。 
   
@@ -55,12 +55,12 @@ ms.locfileid: "50915898"
 
 如果使用 PowerShell 批量创建用户，则需要针对每个用户的邮箱运行 [Set-Clutter](/powershell/module/exchange/set-clutter) 来管理待筛选邮件。 
   
-## <a name="when-does-the-clutter-onoff-switch-appear-to-users-in-outlook-on-the-web"></a>何时在 Outlook 网页中向用户显示待筛选邮件打开/关闭开关？
+## <a name="when-does-the-clutter-onoff-switch-appear-to-users-in-outlook-on-the-web"></a>何时对 Web 上的用户显示待筛选邮件Outlook开关？
 <a name="bkmk_onoff"> </a>
 
-作为管理员，您可以使用 Exchange PowerShell 重新启用待筛选邮件功能。 完成此操作后，重点收件箱将关闭，待筛选邮件功能将再次处于活动状态。 
+作为管理员，您可以使用 PowerShell 重新启用待筛选邮件Exchange功能。 完成此操作后，重点收件箱将关闭，待筛选邮件功能将再次处于活动状态。 
   
- **如果你将 Outlook 网页版与 Microsoft 365 商业高级版订阅一同使用：**
+ **如果你将 Web 上的Outlook订阅一Microsoft 365 商业高级版：**
   
 - 如果用户当前已启用待筛选邮件功能： 
     
@@ -72,7 +72,7 @@ ms.locfileid: "50915898"
     
 - 如果"待筛选邮件"或"重点收件箱"均未启用： 
     
-  - 待筛选邮件和重点收件箱均显示为用户的邮件设置中的选项
+  - 待筛选邮件和重点收件箱均显示为用户邮件邮箱中的设置
     
  **如果你使用的是 Outlook.com：**
   
@@ -86,7 +86,7 @@ ms.locfileid: "50915898"
     
 - 如果"待筛选邮件"或"重点收件箱"均未启用： 
     
-  - 待筛选邮件和重点收件箱均显示为用户的邮件设置中的选项
+  - 待筛选邮件和重点收件箱均显示为用户邮件邮箱中的设置
     
 - 如果用户在过去某一时间点启用重点收件箱：
     
@@ -99,8 +99,8 @@ ms.locfileid: "50915898"
 ## <a name="related-articles"></a>相关文章
 <a name="bkmk_onoff"> </a>
 
-[使用待筛选邮件对 Outlook 中的低优先级邮件进行排序](https://support.microsoft.com/office/7b50c5db-7704-4e55-8a1b-dfc7bf1eafa0)
+[使用待筛选邮件对邮件中的低优先级Outlook](https://support.microsoft.com/office/7b50c5db-7704-4e55-8a1b-dfc7bf1eafa0)
     
 [使用待筛选邮件对 OWA 中的低优先级邮件进行排序](https://support.microsoft.com/office/fe4d64ca-bf73-48f1-91b4-9a659e008bce)
     
-[关闭 Outlook 中的待筛选邮件功能](https://support.microsoft.com/office/a9c72a77-1bc4-40e6-ba6d-103c1d1aba4c)
+[关闭待筛选邮件Outlook](https://support.microsoft.com/office/a9c72a77-1bc4-40e6-ba6d-103c1d1aba4c)

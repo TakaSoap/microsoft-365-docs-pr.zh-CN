@@ -19,7 +19,7 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: 了解如何在 Microsoft Teams 中以来宾加入团队。
+description: 了解如何在团队中以来宾Microsoft Teams。
 ms.openlocfilehash: 0260365e8a064dd96cda75c9becf9f82bc6871a3
 ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
 ms.translationtype: MT
@@ -33,7 +33,7 @@ ms.locfileid: "51903714"
 
 ## <a name="try-it"></a>试一试！
 
-如果你收到 Microsoft Teams 加入团队的邀请，则有几个步骤可以接受邀请。
+如果你收到Microsoft Teams邀请，请执行几个步骤来接受邀请。
 
 1. 打开电子邮件邀请，然后选择"打开 **Microsoft Teams"。** 如果看不到邀请，请检查垃圾邮件或垃圾邮件文件夹。
   1. 如果您的电子邮件地址之前尚未用于创建 Microsoft 帐户，则需要创建一个。
@@ -41,14 +41,14 @@ ms.locfileid: "51903714"
      在"**创建帐户"** 对话框中，选择"**下** 一步"，创建密码，然后选择"下一 **步"。**
   1. 若要验证您的电子邮件地址，请打开验证电子邮件，然后复制安全代码。
   1. 在"验证电子邮件"对话框中输入安全代码，选择"下一步"，在"输入你看到的字符"行中输入CAPTCHA，选择"下一步"，然后选择"**接受"。**  
-1. 如果不想下载 Microsoft Teams 应用，请选择"**改为使用 Web 应用"。**
+1. 如果你不希望下载应用，请选择Microsoft Teams **Web 应用。**
 1. 在 Teams Web 应用中，可以查看或回复帖子，也可以创建自己的帖子，然后选择"文件"选项卡以查看或编辑团队文档。
 
-    如果你已在组织中使用 Teams 应用作为来宾加入团队，则非常简单。
+    如果你已在组织中使用 Teams应用作为来宾加入团队，则非常简单。
 
-1. 只需打开 Microsoft Teams 应用  **，然后选择"**  是"以切换到受邀加入的团队。  现在，你可以协作处理 Teams 中的项目。
+1. 只需打开Microsoft Teams应用 **，然后选择"** 是"以切换到受邀加入的团队。  现在，您可以协作处理 Teams。
 2. 若要切换回公司的团队，请从"组织"下拉列表  **中选择**  它。
 
 ## <a name="related-content"></a>相关内容
 
-Teams[中的](https://docs.microsoft.com/microsoftteams/guest-experience)来宾体验 (文章) 管理[组织的 Microsoft Teams](https://docs.microsoft.com/microsoftteams/enable-features-office-365)设置 (文章) 使用来宾访问和外部访问与组织[](https://docs.microsoft.com/microsoftteams/communicate-with-users-from-other-organizations)外部人员 (协作) 
+[](https://docs.microsoft.com/microsoftteams/guest-experience) Teams (文章) [管理](https://docs.microsoft.com/microsoftteams/enable-features-office-365)组织的 Microsoft Teams 设置 (文章) 使用来宾访问和外部访问与组织外部人员进行[协作 (文章](https://docs.microsoft.com/microsoftteams/communicate-with-users-from-other-organizations)) 

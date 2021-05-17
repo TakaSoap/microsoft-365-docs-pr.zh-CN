@@ -20,7 +20,7 @@ search.appverid:
 - MOE150
 ms.assetid: 481b460e-f799-4fac-9592-4d5c51bdcbd8
 ROBOTS: NOINDEX
-description: 了解如何删除或还原用户的 Microsoft 365 帐户。
+description: 了解如何删除或还原用户的帐户Microsoft 365帐户。
 ms.openlocfilehash: 3b078b782246229d1ddfb1f1fa51282140e71eb0
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -30,7 +30,7 @@ ms.locfileid: "50914782"
 ---
 # <a name="quick-help-deleted-user"></a>快速帮助：已删除的用户
 
-可能需要删除组织中的某个[用户](../add-users/add-users.md)。 当有人离开组织时，通常会删除该用户。 
+可能需要删除组织中的某个[用户](../add-users/add-users.md)。当有人离开组织时，通常会删除该用户。 
   
 ## <a name="delete-a-user"></a>删除用户
 
@@ -73,13 +73,13 @@ ms.locfileid: "50914782"
 
 已删除的[用户](../add-users/add-users.md)是要从组织中删除的工作或学校帐户。 
   
-## <a name="does-deleting-a-user-free-up-their-microsoft-365-license"></a>删除用户是否将释放其 Microsoft 365 许可证？
+## <a name="does-deleting-a-user-free-up-their-microsoft-365-license"></a>删除用户是否将释放其Microsoft 365许可证？
 
-可以，删除用户会释放分配给该用户的 Microsoft 365 许可证。 然后，您可以分配该许可证给另一个用户。 [阅读完整文章](../../commerce/licenses/buy-licenses.md)。
+可以，删除用户会释放分配给Microsoft 365许可证的许可证。 然后，您可以分配该许可证给另一个用户。 [阅读完整文章](../../commerce/licenses/buy-licenses.md)。
   
-## <a name="i-had-a-deleted-user-listed-in-deleted-users-and-then-it-disappeared-what-happened"></a>"已删除的用户"中列有一个已删除的用户，然后它消失了。 发生了什么？
+## <a name="i-had-a-deleted-user-listed-in-deleted-users-and-then-it-disappeared-what-happened"></a>"已删除的用户"中列有一个已删除的用户，然后它消失了。发生了什么？
 
-已删除的用户会在组织中保留 30 天。 30 天后，会从组织中永久删除该用户。
+已删除的用户会在组织中保留 30 天。30 天后，会从组织中永久删除该用户。
   
 ## <a name="how-long-do-i-have-if-i-want-to-restore-a-user"></a>有多少天可用于还原用户？
 

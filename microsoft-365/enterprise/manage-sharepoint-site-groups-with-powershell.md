@@ -19,7 +19,7 @@ ms.custom:
 - SPO_Content
 - seo-marvel-apr2020
 ms.assetid: d0d3877a-831f-4744-96b0-d8167f06cca2
-description: 本文将介绍使用 PowerShell for Microsoft 365 管理 SharePoint Online 网站组的过程。
+description: 本文将介绍使用 PowerShell for Microsoft 365管理 SharePoint Online 网站组的过程。
 ms.openlocfilehash: bcc7a00a6114a6fa2ba8aa02520267bd03a0abf5
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -29,24 +29,24 @@ ms.locfileid: "50909534"
 ---
 # <a name="manage-sharepoint-online-site-groups-with-powershell"></a>使用 PowerShell 管理 SharePoint Online 网站用户组
 
-*本文适用于 Microsoft 365 企业版和 Office 365 企业版。*
+*此文章适用于 Microsoft 365 企业版和 Office 365 企业版。* 
 
-虽然可以使用 Microsoft 365 管理中心，但您也可以使用适用于 Microsoft 365 的 PowerShell 管理 SharePoint Online 网站组。
+尽管可以使用 Microsoft 365管理中心，但您也可以使用 PowerShell for Microsoft 365管理 SharePoint Online 网站组。
 
 ## <a name="before-you-begin"></a>开始之前
 
 本文中的过程需要您连接到 SharePoint Online。 有关说明，请参阅[Connect to SharePoint Online PowerShell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)。
 
-## <a name="view-sharepoint-online-with-powershell-for-microsoft-365"></a>使用 PowerShell for Microsoft 365 查看 SharePoint Online
+## <a name="view-sharepoint-online-with-powershell-for-microsoft-365"></a>使用 PowerShell SharePoint Online Microsoft 365
 
-SharePoint Online 管理中心具有一些易于使用的方法来管理网站组。 例如，假设您要查看网站的组和 `https://litwareinc.sharepoint.com/sites/finance` 组成员。 下面是您必须执行以下工作：
+SharePoint Online 管理中心提供一些易于使用的方法来管理网站组。 例如，假设您要查看网站的组和 `https://litwareinc.sharepoint.com/sites/finance` 组成员。 下面是您必须执行以下工作：
 
-1. 在 SharePoint 管理中心中，单击 **"活动网站**"，然后单击网站的 URL。
-2. 在网站页面上，单击位于 (右上角的"设置"图标，) "网站 **权限"。**
+1. 从SharePoint管理中心，单击"**活动站点**"，然后单击网站的 URL。
+2. 在网站页面上，单击设置位于 (右上角的"网站"图标，) "网站 **权限"。**
 
 然后对您要查看的下一个网站重复此过程。
 
-若要使用 PowerShell for Microsoft 365 获取组列表，可以使用以下命令：
+若要使用 PowerShell for Microsoft 365获取组列表，可以使用以下命令：
 
 ```powershell
 $siteURL = "https://litwareinc.sharepoint.com/sites/finance"
@@ -59,10 +59,10 @@ foreach ($y in $x)
     }
 ```
 
-有两种方法在 SharePoint Online 命令行管理程序命令提示符中运行此命令集：
+在命令行管理程序命令行管理程序命令提示符SharePoint运行此命令集的方法有两种：
 
-- 将命令复制到记事本 (或其他文本编辑器) 中，修改 **$siteURL** 变量的值，选择命令，然后将其粘贴到 SharePoint Online 命令行管理程序命令提示符中。 执行时，PowerShell 将在提示符下 **>>** 停止。 按 Enter 执行 `foreach` 命令。<br/>
-- 将命令复制到记事本（或其他文本编辑器），修改 **$siteURL** 变量值，然后在合适的文件夹中使用一个名称和.ps1 扩展名保存该文本文件。 接下来，通过指定其路径和文件名，从 SharePoint Online 命令行管理程序命令提示符运行脚本。 下面是一个示例命令：
+- 将命令复制到 记事本 (或其他文本编辑器) ，修改 **$siteURL** 变量的值，选择命令，然后将其粘贴到 SharePoint Online 命令行管理程序命令提示符中。 执行时，PowerShell 将在提示符下 **>>** 停止。 按 Enter 执行 `foreach` 命令。<br/>
+- 将命令复制到记事本（或其他文本编辑器），修改 **$siteURL** 变量值，然后在合适的文件夹中使用一个名称和.ps1 扩展名保存该文本文件。 接下来，通过指定脚本的路径和文件名SharePoint命令行管理程序命令提示符运行脚本。 下面是一个示例命令：
 
 ```powershell
 C:\Scripts\SiteGroupsAndUsers.ps1
@@ -70,11 +70,11 @@ C:\Scripts\SiteGroupsAndUsers.ps1
 
 在这两种情况下，应该会看到类似下面的内容：
 
-![SharePoint Online 网站组](../media/SPO-site-groups.png)
+![SharePoint联机网站组](../media/SPO-site-groups.png)
 
 这些是为网站创建的所有组，以及 `https://litwareinc.sharepoint.com/sites/finance` 分配给这些组的所有用户。 组名为黄色，以帮助你从其成员中辨别组名。
 
-另一个示例是，下面是一个命令集，用于列出所有 SharePoint Online 网站的组及其所有组成员身份。
+另一个示例是，下面是一个命令集，用于列出所有联机网站的所有组SharePoint成员身份。
 
 ```powershell
 $x = Get-SPOSite

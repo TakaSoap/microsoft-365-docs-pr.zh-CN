@@ -31,9 +31,9 @@ ms.locfileid: "50906024"
 
 ## <a name="first-visit-get-to-know-compliance-manager"></a>首次访问：了解合规性管理器
 
-合规性管理器位于 的 Microsoft 365 合规中心 https://compliance.microsoft.com 。 开始使用合规性管理器之前，组织的全局管理员需要[](compliance-manager-setup.md#set-user-permissions-and-assign-roles)设置用户权限并分配角色。
+合规性管理器位于 Microsoft 365合规中心 https://compliance.microsoft.com 。 开始使用合规性管理器之前，组织的全局管理员需要[](compliance-manager-setup.md#set-user-permissions-and-assign-roles)设置用户权限并分配角色。
 
-首次访问合规性管理器时，你将看到组织的合规性分数。 合规性管理器已在根据数据保护基线评估当前 Microsoft 365 环境。 开始熟悉合规性管理器的最好办法就是了解它显示的内容、它的关键元素以及如何自定义仪表板。
+首次访问合规性管理器时，你将看到组织的合规性分数。 合规性管理器已在根据数据保护Microsoft 365评估当前环境。 开始熟悉合规性管理器的最好办法就是了解它显示的内容、它的关键元素以及如何自定义仪表板。
 
 合规性 [管理器概述页面](compliance-manager.md) 是全面查看什么是合规性管理器及其工作方式的最佳第一步。 你可能还需要使用下面的链接直接跳转到文档的关键部分：
 
@@ -58,7 +58,7 @@ ms.locfileid: "50906024"
 
 当你习惯在合规性管理器中管理评估时，可以使用模板通过自己的操作和控制措施修改合规性管理器评估。 您还可以创建自己的自定义评估。 自定义评估有助于：
 
-- 管理第三方应用和服务、本地应用程序和其他资产等非 Microsoft 365 产品的合规性。
+- 管理非Microsoft 365产品（如第三方应用和服务、本地应用程序和其他资产）的合规性。
 - 管理你自己的自定义或业务特定的合规性控制。
 
 您还可以设置所有或部分改进操作自动化测试。 请访问以下链接，了解合规性管理器中的更高级功能：

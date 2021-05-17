@@ -34,7 +34,7 @@ ms.locfileid: "50915970"
   
  **如果 Microsoft 管理 DNS 记录**，若要将流量路由到在 Microsoft 外部托管的现有公共网站，在将域添加到 Microsoft 后，请执行下列操作： 
   
-## <a name="update-dns-records-in-the-microsoft-365-admin-center"></a>在 Microsoft 365 管理中心更新 DNS 记录
+## <a name="update-dns-records-in-the-microsoft-365-admin-center"></a>更新管理中心Microsoft 365 DNS 记录
 1. 在管理中心，转到“**设置**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">域</a>”页面。
 
 2. 在"**域**"页面上，选择域，然后选择 **"DNS 记录"。**

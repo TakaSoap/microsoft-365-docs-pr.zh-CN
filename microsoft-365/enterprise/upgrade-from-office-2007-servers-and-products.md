@@ -22,7 +22,7 @@ search.appverid:
 ms.assetid: b2acaeca-4986-40f4-92b7-a1bdd06e549d
 f1.keywords:
 - NOCSH
-description: 本文提供的资源可帮助您从 Office 2007 服务器和客户端升级，因为对 Office 2007 的支持已结束。
+description: 本文提供的资源可帮助您从 Office 2007 服务器和客户端进行升级，因为对 Office 2007 的支持已结束。
 ms.custom: seo-marvel-apr2020
 ms.openlocfilehash: 36ae7ab70b8a95a7762f426f5a0d463083e7bc71
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
@@ -33,17 +33,17 @@ ms.locfileid: "50909282"
 ---
 # <a name="resources-to-help-you-upgrade-from-office-2007-servers-and-clients"></a>帮助您从 Office 2007 服务器和客户端升级的资源
 
-*本文适用于 Microsoft 365 企业版和 Office 365 企业版。*
+*此文章适用于 Microsoft 365 企业版和 Office 365 企业版。* 
 
-如果您使用的是 Office 2007 产品和服务，请注意，这些应用程序的支持已结束。 请考虑从 Microsoft 365 开始迁移到 Microsoft 云。 使用本文作为起点来查看选项并规划升级。
+如果您使用的是 Office 2007 产品和服务，请注意，这些应用程序的支持已结束。 请考虑迁移到 Microsoft 云，从 Microsoft 365。 使用本文作为起点来查看选项并规划升级。
       
 ## <a name="office-2007-planning-roadmaps"></a>Office 2007 规划路线图
   
-对 Office 2007 产品和服务的支持已结束。 以下路线图可帮助您现在规划升级。
+2007 Office 2007 产品和服务的支持已终止。 以下路线图可帮助您现在规划升级。
 
 |**规划内容**|**结束日期支持**|
 |:-----|:-----|
-|[Office 2007 停止提供支持路线图](/DeployOffice/office-2007-end-support-roadmap) <br/> |2017 年 10 月 10 日  <br/> |
+|[Office 2007 年停止提供支持路线图](/DeployOffice/office-2007-end-support-roadmap) <br/> |2017 年 10 月 10 日  <br/> |
 |[Exchange 2007 停止提供支持路线图](exchange-2007-end-of-support.md) <br/> |2017 年 4 月 11 日  <br/> |
 |[SharePoint Server 2007 停止提供支持路线图](sharepoint-2007-end-of-support.md) <br/> |2017 年 10 月 10 日  <br/> |
 |[Project Server 2007 停止提供支持路线图](project-server-2007-end-of-support.md) <br/> |2017 年 10 月 10 日  <br/> |
@@ -60,7 +60,7 @@ ms.locfileid: "50909282"
 
 ## <a name="im-a-home-user-what-do-i-do"></a>我是一位家庭用户。 我怎么办？
 
-如果在家使用 Office 2007 产品和应用程序，请参阅 [此信息](plan-upgrade-previous-versions-office.md#im-a-home-user-what-do-i-do)。
+如果你在家使用 Office 2007 产品和应用程序，请参阅[此信息](plan-upgrade-previous-versions-office.md#im-a-home-user-what-do-i-do)。
      
 ## <a name="related-topics"></a>相关主题
 

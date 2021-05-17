@@ -83,7 +83,7 @@ Microsoft Defender for Endpoint 自动调查警报中所有事件支持的事件
 Microsoft Defender for Endpoint 将威胁信息聚合到事件中，以便你可以查看来自各种数据点的模式和相关。 可以通过事件图查看此类关联。
 
 ### <a name="incident-graph"></a>事件图
-**Graph** 将介绍网络安全攻击的情景。 例如，它显示入口点是什么，哪个指示在哪个设备上观察到了泄露或活动。 等。
+此 **Graph** 将介绍网络安全攻击的情景。 例如，它显示入口点是什么，哪个指示在哪个设备上观察到了泄露或活动。 等。
 
 ![事件图的图像](images/atp-incident-graph-tab.png)
 

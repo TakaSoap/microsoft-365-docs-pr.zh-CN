@@ -42,9 +42,9 @@ ms.locfileid: "51861043"
 
 ## <a name="enable-raw-data-streaming"></a>启用原始数据流：
 
-1. 以 * 全局管理员 **_** 或 _* 安全管理员 **登录 [Microsoft Defender](https://securitycenter.windows.com) _安全中心_。
+1. 以 * [Microsoft Defender 安全中心](https://securitycenter.windows.com)**_** 或 _*_安全_ 管理员 **登录安全帐户。
 
-2. 转到 Microsoft Defender [安全中心上的](https://securitycenter.windows.com/interoperability/dataexport) "数据导出设置"页面。
+2. 转到"数据[导出设置"页上Microsoft Defender 安全中心。](https://securitycenter.windows.com/interoperability/dataexport)
 
 3. 单击"**添加数据导出设置"。**
 
@@ -88,7 +88,7 @@ ms.locfileid: "51861043"
 
 若要获取事件属性的数据类型，请执行下列操作：
 
-1. 登录到 [Microsoft Defender 安全中心，](https://securitycenter.windows.com) 然后转到高级 [搜寻页面](https://securitycenter.windows.com/hunting-package)。
+1. 登录[以Microsoft Defender 安全中心](https://securitycenter.windows.com)转到高级[搜寻页面](https://securitycenter.windows.com/hunting-package)。
 
 2. 运行以下查询，获取每个事件的数据类型映射：
  

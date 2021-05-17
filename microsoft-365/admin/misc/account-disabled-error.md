@@ -1,5 +1,5 @@
 ---
-title: 在 Outlook 网页中收到帐户禁用错误？
+title: 在 Web 上收到帐户Outlook错误？
 f1.keywords:
 - CSH
 ms.author: pebaum
@@ -24,8 +24,8 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 03/19/2021
 ms.locfileid: "50914938"
 ---
-# <a name="getting-an-account-disabled-error-in-outlook-on-the-web"></a>在 Outlook 网页中收到帐户禁用错误
+# <a name="getting-an-account-disabled-error-in-outlook-on-the-web"></a>在 Web 上Outlook帐户禁用错误
 
-如果在尝试打开 Outlook网页 (以前称为 Outlook Web App) 时收到错误"帐户已被禁用"，则管理员可能已禁用对 Web 上的 `X-OWA-Error: Microsoft.Exchange.Data.Storage.AccountDisabledException` Outlook 的访问。
+如果收到错误 尝试在 Web Outlook 上打开 Outlook（以前称为 (Outlook Web App) ）时，帐户已被禁用，则管理员可能已禁用对 `X-OWA-Error: Microsoft.Exchange.Data.Storage.AccountDisabledException` Outlook 网页的访问权限。
 
-管理员可按照启用或禁用邮箱的邮箱Outlook Web App [中的步骤修复此错误](/exchange/recipients-in-exchange-online/manage-user-mailboxes/enable-or-disable-outlook-web-app)。
+管理员可按照启用或禁用邮箱的邮箱Outlook Web App[中的步骤修复此错误](/exchange/recipients-in-exchange-online/manage-user-mailboxes/enable-or-disable-outlook-web-app)。

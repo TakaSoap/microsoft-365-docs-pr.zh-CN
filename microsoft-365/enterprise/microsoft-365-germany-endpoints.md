@@ -1,5 +1,5 @@
 ---
-title: 德国 Office 365 终结点
+title: Office 365德国的终结点
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
@@ -18,7 +18,7 @@ ms.custom:
 - seo-marvel-apr2020
 search.appverid: MOE150
 ms.assetid: 8a113a50-0071-4155-bb8e-eba5a8dbd4c8
-description: 本文将介绍在德国使用 Office 365 的客户可访问的终结点。
+description: 本文将介绍在德国使用 Office 365的终结点。
 hideEdit: true
 ms.openlocfilehash: 0d96300e77c67ac05ea18ab23d63c01d4f840dfb
 ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
@@ -29,13 +29,13 @@ ms.locfileid: "51759890"
 ---
 # <a name="office-365-germany-endpoints"></a>Office 365 Germany 终结点
 
- *适用于：Office 365 管理员*
+ *适用于：Office 365 Admin*
 
-Office 365 需要连接到 Internet。 以下终结点应仅适用于使用 **Office 365 Germany** 计划的客户。
+Office 365需要连接到 Internet。 对于使用德国计划的客户，应Office 365 **终结点**。
 
 > [!NOTE]
-> 对于正在转换到德国的新 Microsoft 365 数据中心区域的客户，终结点将发生变化。
-> 有关其他信息，请参阅从德国 Microsoft 云迁移到新的德国数据中心区域的 [Office 365 服务](ms-cloud-germany-transition.md)。
+> 对于正在转换到德国新数据中心Microsoft 365的客户，终结点将发生变化。
+> 有关其他信息，请参阅从德国 Microsoft 云迁移到Office 365[新的德国数据中心区域。](ms-cloud-germany-transition.md)
   
  **Office 365 终结点：**[全球（包括 GCC）](urls-and-ip-address-ranges.md)  | [由世纪互联运营的 Office 365](urls-and-ip-address-ranges-21vianet.md)  | *Office 365 Germany* | [Office 365 美国政府版 DoD](microsoft-365-u-s-government-dod-endpoints.md) | [Office 365 美国政府版 GCC High](microsoft-365-u-s-government-gcc-high-endpoints.md)  |
   
@@ -47,7 +47,7 @@ Office 365 需要连接到 Internet。 以下终结点应仅适用于使用 **Of
 
 此页下方显示的数据全部基于 REST 的 web 服务生成。 如果正在使用脚本或网络设备访问此数据，应直接转到 [Web 服务](microsoft-365-ip-web-service.md)。
 
-以下终结点数据列出了从用户计算机到 Office 365 的连接要求。 它不包括从 Microsoft 到客户网络的网络连接，有时称为混合或入站网络连接。
+以下终结点数据列出了从用户计算机到用户计算机的连接Office 365。 它不包括从 Microsoft 到客户网络的网络连接，有时称为混合或入站网络连接。
 
 终结点分为四个服务区域。可以独立选择前三个服务区域进行连接。第四个服务区域是一个常见的依赖项（称为 Microsoft 365 Common 和 Office），并且必须始终具有网络连接。
 

@@ -1,6 +1,6 @@
 ---
 title: 自行注册现有设备
-description: 注册你可能已拥有的重复使用的设备，以便它们可以通过 Microsoft 托管桌面进行管理
+description: 注册你可能已拥有的重复使用的设备，以便它们可以通过Microsoft 托管桌面
 ms.service: m365-md
 author: jaimeo
 f1.keywords:
@@ -21,11 +21,11 @@ ms.locfileid: "51893271"
 # <a name="register-existing-devices-yourself"></a>自行注册现有设备
 
 >[!NOTE]
->本主题介绍重复使用已有设备的步骤，并在 Microsoft 托管桌面中注册这些设备。 如果你使用全新的设备，请改为按照在 Microsoft 托管桌面中注册新 [设备中的步骤](register-devices-self.md) 操作。
+>本主题介绍用于重复使用已拥有的设备并在设备中注册Microsoft 托管桌面。 如果你使用全新的设备，请改为按照在设备上注册新Microsoft 托管桌面[中的步骤](register-devices-self.md)操作。
 
 合作伙伴过程记录在合作伙伴 [注册设备的步骤中](register-devices-partner.md)。
 
-Microsoft 托管桌面可以与全新的设备一起工作，或者你可以重复使用你可能已有的设备 (这将要求你重新映像它们) 。 可以在 Microsoft Endpoint Manager 门户中向 Microsoft 托管桌面注册设备。
+Microsoft 托管桌面全新的设备，或者你可以重复使用你可能已拥有的设备 (这将要求你重新映像它们) 。 可以在应用门户Microsoft 托管桌面注册Microsoft Endpoint Manager设备。
 
 ## <a name="prepare-to-register-existing-devices"></a>准备注册现有设备
 
@@ -34,7 +34,7 @@ Microsoft 托管桌面可以与全新的设备一起工作，或者你可以重�
 
 1. [获取每台设备的硬件哈希。](#obtain-the-hardware-hash)
 2. [合并哈希数据](#merge-hash-data)
-3. [在 Microsoft 托管桌面中注册设备](#register-devices-by-using-the-admin-portal)。
+3. [在 中注册Microsoft 托管桌面。](#register-devices-by-using-the-admin-portal)
 4. [仔细检查图像是否正确。](#check-the-image)
 5. [交付设备](#deliver-the-device)
 
@@ -43,24 +43,24 @@ Microsoft 托管桌面可以与全新的设备一起工作，或者你可以重�
 Microsoft 托管桌面通过引用其硬件哈希来唯一标识每台设备。 有四个选项用于从你已在使用的设备获取此信息：
 
 - 请你的 OEM 供应商提供 AutoPilot 注册文件，该文件将包含硬件哈希。
-- 在 [Microsoft Endpoint Configuration Manager 中收集信息](#microsoft-endpoint-configuration-manager)。
+- 在 Microsoft Endpoint Configuration Manager[中收集信息](#microsoft-endpoint-configuration-manager)。
 - 运行Windows PowerShell脚本（通过使用[Active Directory](#active-directory-powershell-script-method)或在每台设备上[](#manual-powershell-script-method)手动运行）并收集文件中的结果。
-- 启动每台设备（但不完成 Windows 设置体验）并收集可移动闪存 [驱动器上的哈希](#flash-drive-method)。
+- 启动每台设备（但无法完成Windows安装体验）并收集可移动闪存[驱动器上的哈希](#flash-drive-method)。
 
 #### <a name="microsoft-endpoint-configuration-manager"></a>Microsoft Endpoint Configuration Manager
 
-可以使用 Microsoft Endpoint Configuration Manager 从要注册到 Microsoft 托管桌面的现有设备收集硬件哈希。
+可以使用Microsoft Endpoint Configuration Manager从要注册到 Microsoft 托管桌面 的现有设备收集硬件Microsoft 托管桌面。
 
 > [!IMPORTANT]
-> 要获取此信息的任何设备都必须运行 Windows 10 版本 1703 或更高版本。 
+> 要获取此信息的任何设备都必须在 Windows 10版本 1703 或更高版本上运行。 
 
 如果满足所有这些先决条件，就可以按照以下步骤收集信息：
 
 1. 在 Configuration Manager 控制台中，选择"监视 **"。** 
 2. 在"监控"工作区中，展开" **报告"** 节点，展开" **报告**"，然后选择" **硬件 - 常规"** 节点。 
-3. 运行报告 **、Windows Autopilot 设备信息**，并查看结果。
+3. 运行报告 **，Windows Autopilot 设备信息**，并查看结果。
 4. 在报告查看器中， **选择"导出** "图标，然后选择"CSV (**逗号分隔**) 选项。
-5. 保存文件后，你需要仅筛选结果到计划向 Microsoft 托管桌面注册的设备，并将数据上载到 Microsoft 托管桌面。 打开 Microsoft Endpoint Manager 并导航到 **"设备**"菜单，然后查找"Microsoft 托管桌面"部分并选择 **"设备"。** 选择 **+ 注册设备**，这将打开一个飞入以注册新设备。
+5. 保存文件后，你将需要仅筛选结果到计划注册到 Microsoft 托管桌面 的设备，并将数据上载到Microsoft 托管桌面。 打开Microsoft Endpoint Manager并导航到 **"设备**"菜单，然后查找"Microsoft 托管桌面部分并选择 **"设备"。** 选择 **+ 注册设备**，这将打开一个飞入以注册新设备。
 
 
 有关详细信息 [，请参阅使用管理门户注册](#register-devices-by-using-the-admin-portal) 设备。
@@ -73,11 +73,11 @@ Microsoft 托管桌面通过引用其硬件哈希来唯一标识每台设备。 
 - WinRM 已启用。
 - 你想要注册的设备在网络设备上处于活动状态 (也就是说，它们未断开连接或) 。
 - 确保你有一个域凭据参数，该参数有权在设备上远程执行。
-- 确保 Windows 防火墙允许访问 WMI。 为此，请执行以下步骤：
+- 确保防火墙Windows访问 WMI。 为此，请执行以下步骤：
 
-    1. 打开 **"Windows Defender防火墙**"控制面板，然后选择"允许应用或功能通过Windows Defender **防火墙"。**
+    1. 打开Windows Defender 防火墙 **控制面板**，然后 **通过""按钮选择"允许应用或Windows Defender 防火墙"。**
     
-    2. 在列表中查找 Windows Management Instrumentation (**WMI**) ，同时启用 **"** 专用"和"公用"，然后选择"确定 **"。**
+    2. 在 **列表中Windows Management Instrumentation (WMI**) ，同时启用 **"** 专用"和"公用"，然后选择"确定 **"。**
 
 1.  使用管理权限打开 PowerShell 提示符。
 
@@ -94,9 +94,9 @@ Microsoft 托管桌面通过引用其硬件哈希来唯一标识每台设备。 
     Set-ExecutionPolicy powershell -ExecutionPolicy Unrestricted Get-WindowsAutoPilotInfo.ps1 -credential Domainname\<accountname> -Name Machine1,Machine2,Machine3
     ```
 
-3. 访问可能有设备条目的任何目录。 从所有目录（包括 Windows  Server Active Directory 域服务和 Azure Active Directory）中删除每台设备的条目。 请注意，删除可能需要几个小时才能完全完成。
+3. 访问可能有设备条目的任何目录。 从所有目录中删除每台设备的条目，包括Windows Server Active Directory 域服务和Azure Active Directory。 请注意，删除可能需要几个小时才能完全完成。
 
-4. 访问管理服务，其中可能有设备条目。 从所有管理服务（包括 Microsoft  Endpoint Configuration Manager、Microsoft Intune 和 Windows Autopilot）中删除每个设备的条目。 请注意，删除可能需要几个小时才能完全完成。
+4. 访问管理服务，其中可能有设备条目。 从所有管理服务中删除每台设备的条目，包括 Microsoft Endpoint Configuration Manager、Microsoft Intune 和 Windows Autopilot。 请注意，删除可能需要几个小时才能完全完成。
 
 现在，你可以继续 [注册设备](#register-devices-by-using-the-admin-portal)。
 
@@ -138,7 +138,7 @@ Import-CSV -Path (Get-ChildItem -Filter *.csv) | ConvertTo-Csv -NoTypeInformatio
 
 ## <a name="register-devices-by-using-the-admin-portal"></a>使用管理门户注册设备
 
-在[Microsoft Endpoint Manager](https://endpoint.microsoft.com/)中，选择左侧导航窗格中的"设备"。  查找菜单的"Microsoft 托管桌面"部分，然后选择"**设备"。** 在 Microsoft 托管桌面设备工作区中，选择 **+ 注册设备**，这将打开一个飞入以注册新设备。
+在 [Microsoft Endpoint Manager](https://endpoint.microsoft.com/)**中，选择** 左侧导航窗格中的"设备"。 查找菜单Microsoft 托管桌面部分，**然后选择设备。** 在Microsoft 托管桌面设备"工作区中，选择 **" +** 注册设备"，这将打开一个飞入以注册新设备。
 
 <!-- Update with new picture [![Fly-in after selecting Register devices, listing devices with columns for assigned users, serial number, status, last-seen date, and age](../../media/new-registration-ui.png)](../../media/new-registration-ui.png) -->
 
@@ -153,7 +153,7 @@ Import-CSV -Path (Get-ChildItem -Filter *.csv) | ConvertTo-Csv -NoTypeInformatio
 3. 选择 **注册设备**。 系统将设备添加到设备边栏选项卡上的设备列表，标记为 **注册挂起**。  注册通常少于 10 分钟，并且成功后，设备将显示为"为用户准备就绪"，这意味着它已准备好并等待用户开始使用。
 
 > [!NOTE]
-> 如果你手动将 Azure Active Directory (AAD) 设备组成员身份，它将自动重新分配到组，用于其设备配置文件，并删除任何冲突组。
+> 如果手动更改设备Azure Active Directory (AAD) 组成员身份，系统会自动将其重新分配给设备配置文件的组，并删除任何冲突组。
 
 你可以监视主页上的设备注册进度。 其中报告的可能状态包括：
 
@@ -177,7 +177,7 @@ Import-CSV -Path (Get-ChildItem -Filter *.csv) | ConvertTo-Csv -NoTypeInformatio
 
 ## <a name="check-the-image"></a>检查图像
 
-如果你的设备来自 Microsoft 托管桌面合作伙伴供应商，则映像应该正确。
+如果你的设备来自合作伙伴Microsoft 托管桌面，则映像应该正确。
 
 如果愿意，也欢迎您自行应用该图像。 To get started， contact the Microsoft representative you're working with and they will provide you the location and steps for applying the image.
 
@@ -186,7 +186,7 @@ Import-CSV -Path (Get-ChildItem -Filter *.csv) | ConvertTo-Csv -NoTypeInformatio
 > [!IMPORTANT]
 > 在将设备交还给用户之前，请确保你已获取并应用了 [该用户的适当许可证](../get-ready/prerequisites.md) 。
 
-如果应用所有许可证，你可以让用户准备好使用[](get-started-devices.md)设备，然后你的用户可以启动设备并继续 Windows 安装体验。
+如果应用了所有许可证，你可以让用户准备好[](get-started-devices.md)使用设备，然后你的用户可以启动设备并继续Windows设置体验。
 
 
 

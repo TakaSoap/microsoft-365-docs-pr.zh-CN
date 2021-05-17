@@ -24,26 +24,26 @@ ms.locfileid: "50917948"
 # <a name="onboard-non-persistent-virtual-desktop-infrastructure-vdi-devices"></a>载入非持久性虚拟桌面基础结构 (VDI) 设备。
 
 **适用于：**
-- [Microsoft 365 终结点数据丢失防护 (DLP) ](./endpoint-dlp-learn-about.md)
+- [Microsoft 365DLP (终结点数据丢失) ](./endpoint-dlp-learn-about.md)
 
 - 虚拟桌面基础结构 (VDI) 设备
 
 >[!WARNING]
-> Windows 虚拟桌面的 Microsoft 365 终结点数据丢失防护支持支持单个会话方案。 Windows 虚拟桌面上的多会话方案当前不受支持。
+> Microsoft 365虚拟桌面的终结点数据丢失防护Windows支持单个会话方案。 当前不支持Windows桌面上的多会话方案。
 
 ## <a name="onboard-vdi-devices"></a>载入 VDI 设备
 
-Microsoft 365 终结点数据丢失防护支持非永久性 VDI 会话载入。 
+Microsoft 365终结点数据丢失防护支持非永久性 VDI 会话载入。 
 
 >[!Note]
 >若要载入非永久性 VDI 会话，VDI 设备必须位于 Windows 10 1809 或更高版本上。
 
 载入 VDIS 时可能存在相关挑战。 以下是此方案的典型挑战：
 
-- 即时提前载入短期会话，这些会话在实际预配之前必须载入到 Microsoft 365 终结点数据丢失防护。
+- 即时提前载入短期会话，在实际预配之前，必须Microsoft 365终结点数据丢失防护。
 - 设备名称通常重新用于新会话。
 
-VDI 设备可以在 Microsoft 365 合规中心显示为：
+VDI 设备可以在合规性中心Microsoft 365显示为：
 
 - 每台设备的单个条目。  
 请注意，在这种情况下，创建会话时必须配置相同的设备名称，例如使用无人参与应答文件。
@@ -52,17 +52,17 @@ VDI 设备可以在 Microsoft 365 合规中心显示为：
 以下步骤将指导你完成载入 VDI 设备，并重点介绍单项和多条目的步骤。
 
 >[!WARNING]
-> 对于资源配置较低的环境，VDI 启动过程可能会减慢 Microsoft 365 终结点数据丢失防护载入的速度。 
+> 对于资源配置较低的环境，VDI 启动过程可能会Microsoft 365终结点数据丢失防护载入。 
 
-1.  打开 VDI 配置包 .zip *(DeviceCompliancePackage.zip)* 从服务载入向导下载的文件。
+1.  打开 VDI 配置包.zip文件 *(DeviceCompliancePackage.zip)* 从服务载入向导下载的内容。
 
-2.  在导航窗格中，选择"**设置**  >  **""设备载入**  >  **"。**
+2.  在导航窗格中，选择 **"设置**  >  **载入**  >  **"。**
 
 3. 在 **"部署方法"** 字段中，选择 **"非永久性终结点的 VDI 载入脚本"。**
 
-5. 单击 **下载程序包** 并保存 .zip 文件。
+5. 单击 **下载程序包** 并保存.zip文件。
 
-6. 从 .zip 文件提取的 DeviceCompliancePackage 文件夹中的文件复制到路径 `golden/master` 下的映像 `C:\WINDOWS\System32\GroupPolicy\Machine\Scripts\Startup` 中。 
+6. 将文件从 DeviceCompliancePackage 文件夹中从 .zip 文件复制到路径 `golden/master` 下的映像 `C:\WINDOWS\System32\GroupPolicy\Machine\Scripts\Startup` 中。 
 
 7. 如果未针对每台设备实现单个条目，请复制 DeviceComplianceOnboardingScript.cmd。
 
@@ -71,7 +71,7 @@ VDI 设备可以在 Microsoft 365 合规中心显示为：
     > [!NOTE]
     > 如果看不到该文件夹 `C:\WINDOWS\System32\GroupPolicy\Machine\Scripts\Startup` ，它可能处于隐藏状态。 你需要从文件资源管理器中选择显示隐藏 **文件和** 文件夹选项。
 
-9. 打开本地组策略编辑器窗口并导航到计算机 **配置**  >  **Windows 设置**  >  **脚本**  >  **启动**。
+9. 打开本地组策略编辑器窗口并导航 **到计算机配置**  >  **Windows 设置**  >  **脚本**  >  **启动**。
 
    > [!NOTE]
    > 域组策略还可用于载入非永久性 VDI 设备。
@@ -80,11 +80,11 @@ VDI 设备可以在 Microsoft 365 合规中心显示为：
 
    **对于每台设备的单个条目**
    
-   选择 **"PowerShell 脚本**"选项卡，然后单击"添加 (Windows 资源管理器将在你之前复制载入脚本的路径中直接) 。 导航到载入 PowerShell 脚本 `Onboard-NonPersistentMachine.ps1` 。
+   选择 **"PowerShell 脚本**"选项卡，然后单击"添加 (Windows资源管理器将在你之前复制载入脚本的路径中直接) 。 导航到载入 PowerShell 脚本 `Onboard-NonPersistentMachine.ps1` 。
    
    **对于每台设备的多个条目**：
    
-   选择" **脚本** "选项卡，然后单击 **"添加** (Windows 资源管理器将在你之前复制载入脚本的路径中直接) 。 导航到载入 Bash 脚本 `DeviceComplianceOnboardingScript.cmd` 。
+   选择"**脚本**"选项卡，然后单击 **"添加** (Windows资源管理器将在你之前复制载入脚本的路径中直接) 。 导航到载入 Bash 脚本 `DeviceComplianceOnboardingScript.cmd` 。
 
 5. 测试解决方案：
 
@@ -96,8 +96,8 @@ VDI 设备可以在 Microsoft 365 合规中心显示为：
 
    1. 使用其他用户登录到设备。
       
-   1. **对于每台设备的单个条目**：在 Microsoft Defender 安全中心中仅检查一个条目。<br>
-      **对于每台设备的多个条目**：在 Microsoft Defender 安全中心中检查多个条目。
+   1. **For single entry for each device**： Check only one entry in Microsoft Defender 安全中心.<br>
+      **For multiple entries for each device**： Check multiple entries in Microsoft Defender 安全中心.
 
 6. 单击 **导航窗格上的** "设备列表"。
 
@@ -114,13 +114,13 @@ DISM /Unmount-Image /MountDir:"C:\Temp\OfflineServicing" /commit
 ```
 
 有关 DISM 命令和脱机服务的详细信息，请参阅以下文章：
-- [使用 DISM 修改 Windows 映像](/windows-hardware/manufacture/desktop/mount-and-modify-a-windows-image-using-dism)
+- [使用 DISM Windows映像](/windows-hardware/manufacture/desktop/mount-and-modify-a-windows-image-using-dism)
 - [DISM 映像管理Command-Line选项](/windows-hardware/manufacture/desktop/dism-image-management-command-line-options-s14)
-- [减小脱机 Windows 映像中组件存储的大小](/windows-hardware/manufacture/desktop/reduce-the-size-of-the-component-store-in-an-offline-windows-image)
+- [减小脱机映像中组件存储Windows大小](/windows-hardware/manufacture/desktop/reduce-the-size-of-the-component-store-in-an-offline-windows-image)
 
 如果脱机服务不是非永久性 VDI 环境的可行选项，应执行以下步骤以确保一致性和传感器运行状况：
 
-1. 启动主映像进行联机维护或修补后，运行载出脚本以关闭 Microsoft 365 终结点数据丢失防护传感器。 有关详细信息，请参阅使用本地 [脚本的载出设备](dlp-configure-endpoints-script.md#offboard-devices-using-a-local-script)。
+1. 启动主映像进行联机维护或修补后，运行一个载出脚本Microsoft 365终结点数据丢失防护传感器。 有关详细信息，请参阅使用本地 [脚本的载出设备](dlp-configure-endpoints-script.md#offboard-devices-using-a-local-script)。
 
 2. 在 CMD 窗口中运行以下命令，确保传感器已停止：
 
@@ -143,8 +143,8 @@ DISM /Unmount-Image /MountDir:"C:\Temp\OfflineServicing" /commit
 5. 像平常一样重新密封黄金/主图像。
 
 ## <a name="related-topics"></a>相关主题
-- [使用组策略载入 Windows 10 设备](dlp-configure-endpoints-gp.md)
-- [使用 Microsoft Endpoint Configuration Manager 载入 Windows 10 设备](dlp-configure-endpoints-sccm.md)
+- [使用Windows 10载入设备](dlp-configure-endpoints-gp.md)
+- [使用Windows 10载入Microsoft Endpoint Configuration Manager](dlp-configure-endpoints-sccm.md)
 - [使用移动设备管理工具载入 Windows 10 设备](dlp-configure-endpoints-mdm.md)
 - [使用本地脚本载入 Windows 10 设备](dlp-configure-endpoints-script.md)
-- [Microsoft Defender 高级威胁防护载入问题疑难解答](/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding)
+- [载入Microsoft Defender 高级威胁防护疑难解答](/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding)

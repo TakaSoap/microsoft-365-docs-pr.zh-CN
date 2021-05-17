@@ -29,7 +29,7 @@ ms.locfileid: "50908406"
 ---
 # <a name="create-a-report-on-holds-in-ediscovery-cases"></a>创建电子数据展示事例中的保留的报告
 
-本文中的脚本允许电子数据展示管理员和电子数据展示管理员生成一个报告，其中包含与 Office 365 或 Microsoft 365 合规中心中的电子数据展示事例相关联的所有保留的信息。 报告包含诸如与保留关联的案例的名称、置于保留状态的内容位置以及保留是否基于查询的信息。 如果存在没有任何保留的情况，脚本将创建一个附加报告，其中包含不含保留的事例列表。
+本文中的脚本允许电子数据展示管理员和电子数据展示管理员生成一个报告，其中包含有关与 Office 365 或 Microsoft 365 合规中心中的电子数据展示事例关联的所有保留的信息。 报告包含诸如与保留关联的案例的名称、置于保留状态的内容位置以及保留是否基于查询的信息。 如果存在没有任何保留的情况，脚本将创建一个附加报告，其中包含不含保留的事例列表。
 
 有关 [报告中包含的](#more-information) 信息的详细说明，请参阅详细信息部分。
 
@@ -41,7 +41,7 @@ ms.locfileid: "50908406"
 
 - 本主题中的示例脚本不受任何 Microsoft 标准支持计划或服务支持。示例脚本按原样提供，不提供任何种类的担保。Microsoft 进一步声明，不提供任何默示担保，包括但不限于适销性或特定用途适用性的默示担保。使用或运行示例脚本和文档所产生的任何风险均由你自己承担。对于因使用或无法使用示例脚本或文档而产生的任何损失（包括但不限于商业利润损失、业务中断、业务信息丢失或其他金钱损失），Microsoft、脚本作者或参与创建、生成或交付脚本的任何人都不承担任何责任，即使 Microsoft 已被告知存在这种损失的可能性，也不例外。
 
-## <a name="step-1-connect-to-the-security--compliance-center-powershell"></a>步骤 1：连接到安全与&中心 PowerShell
+## <a name="step-1-connect-to-the-security--compliance-center-powershell"></a>步骤 1：连接安全与合规& PowerShell
 
 第一步是连接到组织&安全与合规中心 PowerShell。 有关分步说明，请参阅[连接到安全与合规中心 PowerShell](/powershell/exchange/connect-to-scc-powershell)。
 
@@ -49,7 +49,7 @@ ms.locfileid: "50908406"
 
 连接到安全与合规& PowerShell 后，下一步是创建并运行收集组织中电子数据展示事例相关信息的脚本。
 
-1. 使用文件名后缀 .ps1 将以下文本Windows PowerShell脚本文件;例如，CaseHoldsReport.ps1。
+1. 将以下文本保存到Windows PowerShell脚本文件中，使用文件名后缀 .ps1;例如，CaseHoldsReport.ps1。
 
    ```powershell
    #script begin
@@ -139,7 +139,7 @@ ms.locfileid: "50908406"
    #script end
    ```
 
-2. 在步骤 1 中打开的 Windows PowerShell 会话中，转到保存脚本的文件夹。
+2. 在Windows PowerShell 1 中打开的脚本会话中，转到保存脚本的文件夹。
 
 3. 运行脚本;例如：
 
@@ -154,7 +154,7 @@ ms.locfileid: "50908406"
    > [!TIP]
    > 若要将报告保存在脚本所在的同一文件夹中，请键入一个 ("。") 目标文件夹时显示。 若要将报表保存在脚本所在的文件夹的子文件夹中，只需键入子文件夹的名称。
 
-   脚本开始收集有关组织中所有电子数据展示事例的信息。 脚本运行时，请勿访问报告文件。 脚本完成后，在脚本会话中将显示一条Windows PowerShell消息。 显示此消息后，可以访问在步骤 4 中指定的文件夹中的报告。 报告的文件名为 `CaseHoldsReport<DateTimeStamp>.csv` 。
+   脚本开始收集有关组织中所有电子数据展示事例的信息。 脚本运行时，请勿访问报告文件。 脚本完成后，将在会话会话中Windows PowerShell消息。 显示此消息后，可以访问在步骤 4 中指定的文件夹中的报告。 报告的文件名为 `CaseHoldsReport<DateTimeStamp>.csv` 。
 
    此外，脚本还会创建一个包含没有任何保留案例列表的报告。 此报告的文件名为 `CaseswithNoHolds<DateTimeStamp>.csv` 。
 
@@ -162,7 +162,7 @@ ms.locfileid: "50908406"
 
    ![运行脚本后的输出CaseHoldsReport.ps1脚本](../media/7d312ed5-505e-4ec5-8f06-3571e3524a1a.png)
 
-## <a name="more-information"></a>更多信息
+## <a name="more-information"></a>详细信息
 
 在运行本文中的脚本时创建的保留报告包含有关每个保留的以下信息。 如前所述，你必须是电子数据展示管理员才能返回组织中所有保留的信息。 有关事例保留详细信息，请参阅 [电子数据展示事例](./get-started-core-ediscovery.md)。
 
@@ -178,7 +178,7 @@ ms.locfileid: "50908406"
 
 - 如果案例已关闭，则关闭案例的人以及关闭它的时间和日期。
 
-- 保留的 Exchange 邮箱和 SharePoint 网站位置。
+- The Exchange mailboxes and SharePoint sites locations that are on hold.
 
 - 如果保留基于查询，则查询语法。
 

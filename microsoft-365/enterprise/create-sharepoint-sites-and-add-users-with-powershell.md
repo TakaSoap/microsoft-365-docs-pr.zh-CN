@@ -28,17 +28,17 @@ ms.locfileid: "50907614"
 ---
 # <a name="create-sharepoint-online-sites-and-add-users-with-powershell"></a>使用 PowerShell 创建 SharePoint Online 网站并添加用户
 
-*本文适用于 Microsoft 365 企业版和 Office 365 企业版。*
+*此文章适用于 Microsoft 365 企业版和 Office 365 企业版。* 
 
-使用适用于 Microsoft 365 的 PowerShell 创建 SharePoint Online 网站和添加用户时，快速重复执行任务的速度比在 Microsoft 365 管理中心快得多。 还可以执行在 Microsoft 365 管理中心中无法执行的任务。 
+使用 PowerShell for Microsoft 365创建 SharePoint Online 网站并添加用户时，快速重复执行任务的速度比在 Microsoft 365 管理中心快得多。 还可以执行在管理中心内无法Microsoft 365的任务。 
 
 ## <a name="connect-to-sharepoint-online"></a>连接到 SharePoint Online
 
-本主题中的过程需要您连接到 SharePoint Online。 有关说明，请参阅 [连接到 SharePoint Online PowerShell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)
+本主题中的过程需要您连接到 SharePoint Online。 有关说明，请参阅[连接 SharePoint Online PowerShell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)
 
 ## <a name="step-1-create-new-site-collections-using-powershell"></a>步骤 1：使用 PowerShell 创建新的网站集
 
-使用 PowerShell 创建多个网站，以及使用提供的示例代码和记事本创建的 .csv 文件。 在此步骤中，你将使用你自己的网站和租户特定信息替换括号中显示的占位符信息。 此过程允许你创建单个文件并运行使用该文件的单个 PowerShell 命令。 这使得所采取的操作具有可重复性和可移植性，并可以减少许多（如果不是全部）因向 SharePoint Online 命令行管理程序键入长命令而导致的错误。 此步骤包括两个部分。 首先，您将创建一个 .csv 文件，然后使用 PowerShell 引用该 .csv 文件，它将使用该文件的内容来创建网站。
+使用 PowerShell 创建多个网站，以及.csv示例代码创建的网站文件，记事本。 在此步骤中，你将使用你自己的网站和租户特定信息替换括号中显示的占位符信息。 此过程允许你创建单个文件并运行使用该文件的单个 PowerShell 命令。 这使得所采取的操作具有可重复性和可移植性，并可以减少许多（如果不是全部）因向 SharePoint Online 命令行管理程序键入长命令而导致的错误。 此步骤包括两个部分。 首先，创建一个.csv文件，然后使用 PowerShell 引用该.csv文件，它将使用其内容创建网站。
 
 PowerShell cmdlet 导入 .csv 文件，然后通过管道将该文件通过管道传输至大括号内的循环，该循环将读取文件的第一行作为列标题。 然后，PowerShell cmdlet 会访问其余记录，为每个记录创建一个新的网站集，然后根据列标题分配网站集的属性。
 
@@ -56,16 +56,16 @@ owner@tenant.onmicrosoft.com,100,https://tenant.sharepoint.com/sites/Blog01,25,B
 owner@tenant.onmicrosoft.com,150,https://tenant.sharepoint.com/sites/Project01,25,PROJECTSITE#0,10,Project Alpha
 owner@tenant.onmicrosoft.com,150,https://tenant.sharepoint.com/sites/Community01,25,COMMUNITY#0,10,Community Site
 ```
-<br/>其中 *，tenant* 是租户的名称 *，owner* 是租户上要授予其主要网站集管理员角色的用户的用户名。<br/> (使用记事本更快地进行批量替换时，可以按 Ctrl+H。) <br/>
+<br/>其中 *，tenant* 是租户的名称 *，owner* 是租户上要授予其主要网站集管理员角色的用户的用户名。<br/> (使用 Ctrl+H 进行快速批量记事本按 Ctrl+H。) <br/>
 
 2. 将桌面上的文件另存为 **SiteCollections.csv。**<br/>
 
 > [!TIP]
-> 在使用此脚本文件或其他任何 .csv 或 Windows PowerShell 脚本文件之前，最佳做法是确保没有多余的或非打印字符。 在 Word 中打开该文件，在功能区单击“段落”图标以显示非打印字符。 应该没有多余的非打印字符。 例如，除了文件末尾的最后一个段落标记之外，应该没有其他任何段落标记。
+> 在使用此脚本文件.csv或Windows PowerShell脚本文件之前，一定要确保没有多余的或非打印字符。 在 Word 中打开该文件，在功能区单击“段落”图标以显示非打印字符。 应该没有多余的非打印字符。 例如，除了文件末尾的最后一个段落标记之外，应该没有其他任何段落标记。
 
 ### <a name="run-the-windows-powershell-command"></a>运行 Windows PowerShell 命令
 
-1. 在Windows PowerShell，键入或复制并粘贴以下命令，然后按 Enter：<br/>
+1. 在命令Windows PowerShell，键入或复制并粘贴以下命令，然后按 Enter：<br/>
 ```powershell
 Import-Csv C:\users\MyAlias\desktop\SiteCollections.csv | ForEach-Object {New-SPOSite -Owner $_.Owner -StorageQuota $_.StorageQuota -Url $_.Url -NoWait -ResourceQuota $_.ResourceQuota -Template $_.Template -TimeZoneID $_.TimeZoneID -Title $_.Name}
 ```
@@ -82,7 +82,7 @@ Get-SPOSite -Detailed | Format-Table -AutoSize
 
 4. 请注意列表中的新网站集。 使用示例 CSV 文件，你将看到以下网站集 **：TeamSite01、Blog01、Project01** 和 **Community01**  
 
-就是这样。 已使用创建的 .csv 文件和一个 Windows PowerShell 命令创建多个网站集。 现在，可以创建用户并将其分配给这些网站。
+就是这样。 已使用您创建的 .csv 和一个 Windows PowerShell 命令创建多个网站集。 现在，可以创建用户并将其分配给这些网站。
 
 ## <a name="step-2-add-users-and-groups"></a>步骤 2：添加用户和组
 

@@ -28,39 +28,39 @@ ms.locfileid: "50905688"
 
 门户是 Intranet 上的一个 SharePoint 网站，其中包含大量使用网站内容的网站查看者。 在大型组织中，可能有几种；例如公司门户和人力资源门户。 通常，门户创建和创作网站及其内容的人员相对较少。 门户的大多数访问者仅读取和使用内容。
 
-本文介绍如何规划 SharePoint Online 的部署和推出计划。 它还提供了遵循的方法，因为 SharePoint Online 上不允许传统负载测试。 SharePoint Online 是一项云服务，该服务中的负载功能、运行状况和总体负载平衡由 Microsoft 管理。
+本文介绍如何规划部署和推出计划以使用 SharePoint Online。 它还提供了遵循的方法，因为系统不允许在 SharePoint Online 上执行传统负载测试。 SharePoint联机是一项云服务，负载功能、服务负载的运行状况和总体平衡由 Microsoft 管理。
 
 为了帮助创建成功的门户，请遵循创建、启动和维护正常运行的门户中详述的 [指导原则、实践和建议](/sharepoint/portal-health) 
 
 下面重点介绍了部署方法。
 
 ## <a name="overview-of-capacity-planning-in-sharepoint-online"></a>SharePoint Online 中的容量规划概述
-为了高效地使用容量并应对意外增长，在任何服务器场中，我们都有用于跟踪特定使用方案的自动化。 尽管任何一个服务器场中的任一租户的确切增长不可预测，但随着时间的推移，请求总数是可预测的。 通过确定 SharePoint Online 中的增长趋势，我们可以规划未来的扩展。 有关容量规划和 [负载测试 SharePoint Online 详细信息](capacity-planning-and-load-testing-sharepoint-online.md)。
+为了高效地使用容量并应对意外增长，在任何服务器场中，我们都有用于跟踪特定使用方案的自动化。 尽管任何一个服务器场中的任一租户的确切增长不可预测，但随着时间的推移，请求总数是可预测的。 通过确定 SharePoint Online 的增长趋势，我们可以规划未来的扩展。 有关 Capacity [planning and load testing SharePoint Online （ 联机容量SharePoint的信息](capacity-planning-and-load-testing-sharepoint-online.md)。
 
 成功启动的关键部分是下面详述的"wave"或"阶段性推出"方法。 
 
-## <a name="can-i-load-test-sharepoint-online"></a>能否加载测试 SharePoint Online？
-SharePoint Online 是一个共享的多租户环境，它跨服务器场和规模进行平衡，并定期进行调整。 负载测试环境（如 SharePoint Online）的扩展会不断更改，不仅会获得意外结果，而且不允许进行。 
+## <a name="can-i-load-test-sharepoint-online"></a>能否加载测试SharePoint Online？
+SharePoint联机是一个共享的多租户环境，它跨服务器场进行平衡，并定期调整规模。 负载测试环境（如 SharePoint Online）的扩展会不断更改，不仅会获得意外结果，而且不允许进行。 
 
-了解更多信息  [：SharePoint Online 的容量规划和负载测试](capacity-planning-and-load-testing-sharepoint-online.md)
+了解更多信息[：Capacity planning and load testing SharePoint Online](capacity-planning-and-load-testing-sharepoint-online.md)
 
 ## <a name="optimize-pages-by-following-recommended-guidelines"></a>按照建议的准则优化页面
-不应简单地将本地部署中的页面移动到 SharePoint Online，而不要根据针对 SharePoint Online 的建议准则查看这些页面。 最佳方法是始终为 SharePoint 中任何网站或门户优化任何主页，因为这是组织中大多数用户将访问作为网站集 (的起点) 。
+本地部署中的页面不应简单地被移动，因为它们位于 SharePoint Online 上，而不根据针对 SharePoint Online 的建议准则进行查看。 最佳方法是始终为 SharePoint 中任何网站或门户优化任何主页，因为这是组织中大多数用户将作为网站网站 (的起点访问) 。
 
 应考虑一些基本因素：
 - 本地部署可以利用传统的服务器端缓存，如对象缓存、输出缓存和 blob 缓存。 由于云中的拓扑差异，这些选项不一定可用，因为范围差异使这些方法不太可行。
 - 对于用于云使用的任何页面/功能/自定义，应针对更高的延迟以及用户的分布式位置进行优化，以便不同区域或区域的用户拥有更加一致的体验。 云提供内容交付网络 (CDN) 等优化，以针对分布式用户群和新式 SharePoint 进行优化，我们的开箱即用 (OOTB) Web 部件利用上一个已知的良好 (LKG) 。
 
 ### <a name="what-to-do"></a>要执行哪些工作：
- - 对于 SharePoint Online 中所有网站[](./page-diagnostics-for-spo.md)页面，请使用页面诊断工具，该工具是 Chromium 扩展，可帮助分析和提供指导。 网站所有者、编辑者、管理员和开发人员可以使用此功能，因为它旨在作为分析和优化的起点。
+ - 对于 SharePoint Online 中的所有网站页面，请使用[](./page-diagnostics-for-spo.md)页面诊断工具，该工具是一个Chromium扩展，可帮助分析和提供指导。 网站所有者、编辑者、管理员和开发人员可以使用此功能，因为它旨在作为分析和优化的起点。
  - 开发人员还应在新式页面上使用开发工具（如 F12 浏览器开发人员工具）以及浏览器中的 Ctrl-F12。 [Fiddler](https://www.telerik.com/download/fiddler) 还可用于查看大小权重 (页面的大小（以 MB 为单位）) 以及影响整个页面负载的调用和元素数。 
 
 本节是优化页面的简短摘要。  若要了解更多信息，请参阅：  [创建、启动和维护正常运行的门户](/sharepoint/portal-health)。
 
 ## <a name="follow-a-wave--phased-roll-out-approach"></a>遵循 Wave/分阶段推出方法
-网站启动的传统重大方法不允许验证自定义项、外部源、服务或流程是否经过适当的测试。 这并不意味着启动需要几个月的时间，但建议至少几天时间，这取决于您的组织规模。 因此，按照一波推出计划，您可以选择在继续下一阶段之前暂停并解决问题，从而降低受任何问题影响的潜在用户数。 SharePoint 即服务根据使用情况和预测的使用情况扩展容量，尽管我们不需要你通知我们你的启动，你应该遵循指南以确保成功。
+网站启动的传统重大方法不允许验证自定义项、外部源、服务或流程是否经过适当的测试。 这并不意味着启动需要几个月的时间，但建议至少几天时间，这取决于您的组织规模。 因此，按照一波推出计划，您可以选择在继续下一阶段之前暂停并解决问题，从而降低受任何问题影响的潜在用户数。 SharePoint服务根据使用情况和预测的使用情况扩展容量，尽管我们不需要你通知我们你的启动，你应该遵循指南以确保成功。
   
-如下图所示，受邀用户的数量通常明显高于实际使用该网站的用户数。 此图显示了如何推出版本的策略。 此方法可帮助确定在大部分用户看到 SharePoint 网站之前改进 SharePoint 网站的方法。
+如下图所示，受邀用户的数量通常明显高于实际使用该网站的用户数。 此图显示了如何推出版本的策略。 此方法可帮助确定大多数用户SharePoint网站之前改进该网站的方法。
   
 ![显示受邀并且处于活动状态的用户的图形](../media/0bc14a20-9420-4986-b9b9-fbcd2c6e0fb9.png)
   

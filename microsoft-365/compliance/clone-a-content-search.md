@@ -17,7 +17,7 @@ search.appverid:
 ms.assetid: 7b40eeaa-544c-4534-b89b-9f79998e374c
 ms.custom:
 - seo-marvel-apr2020
-description: 使用本文中的 PowerShell 脚本快速克隆 Office 365 或 Microsoft 365 合规中心中的现有内容搜索。
+description: 使用本文中的 PowerShell 脚本快速克隆合规性中心中的现有内容搜索，Office 365或Microsoft 365。
 ms.openlocfilehash: c64cec2415819dc53f30c303c241e3902f34017d
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -27,7 +27,7 @@ ms.locfileid: "50918058"
 ---
 # <a name="clone-a-content-search"></a>克隆内容搜索
 
-在 Office 365 或 Microsoft 365 合规中心内创建搜索多个邮箱或 SharePoint 和 OneDrive for Business 网站的内容搜索可能需要一段时间。 如果键入的 URL 错误，指定要搜索的网站也容易出错。 若要避免这些问题，您可以使用本文中的 Windows PowerShell 脚本快速克隆现有内容搜索。 克隆搜索时，会创建一 (名称为) 的新搜索，其中包含与原始搜索相同的属性 (如内容位置和搜索查询) 。 然后，您可以通过更改关键字查询或日期范围来编辑新的搜索，然后运行它。
+在 Office 365 或 Microsoft 365 合规中心创建内容搜索SharePoint OneDrive for Business网站可能需要一段时间。 如果键入的 URL 错误，指定要搜索的网站也容易出错。 若要避免这些问题，您可以使用本文中的 Windows PowerShell 脚本快速克隆现有内容搜索。 克隆搜索时，会创建一 (名称为) 的新搜索，其中包含与原始搜索相同的属性 (如内容位置和搜索查询) 。 然后，您可以通过更改关键字查询或日期范围来编辑新的搜索，然后运行它。
   
 为什么要克隆内容搜索？
   
@@ -53,7 +53,7 @@ ms.locfileid: "50918058"
 
 此步骤中的脚本通过克隆现有内容搜索来创建新的内容搜索。 运行此脚本时，系统将提示您输入以下信息：
   
-- **你的用户凭据** - 脚本将使用你的凭据，通过 & 连接到组织的安全与合规Windows PowerShell。 如前所述，你必须是安全中心电子数据展示管理员角色组&运行脚本。 
+- **你的用户凭据**- 脚本将使用你的凭据连接到组织的安全&合规中心，并使用此Windows PowerShell。 如前所述，你必须是安全中心电子数据展示管理员角色组&运行脚本。 
     
 - **现有搜索的名称** - 这是要克隆的内容搜索。 
     
@@ -61,7 +61,7 @@ ms.locfileid: "50918058"
     
 克隆搜索：
   
-1. 使用文件名后缀 .ps1 将以下文本Windows PowerShell脚本文件;例如， `CloneSearch.ps1` 。
+1. 使用 Windows PowerShell 文件名后缀将以下文本保存到脚本.ps1;例如， `CloneSearch.ps1` 。
     
   ```powershell
   # This PowerShell script clones an existing content search in the Security &amp; Compliance Center.
@@ -121,7 +121,7 @@ ms.locfileid: "50918058"
   }
   ```
 
-2. 打开Windows PowerShell，然后转到保存脚本的文件夹。
+2. 打开Windows PowerShell并转到保存脚本的文件夹。
     
 3. 运行脚本;例如：
     

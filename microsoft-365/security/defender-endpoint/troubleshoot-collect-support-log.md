@@ -45,7 +45,7 @@ ms.locfileid: "51893409"
  
 2.  在 [需要调查的](live-response.md#initiate-a-live-response-session-on-a-device) 计算机上启动实时响应会话。
 
-3.  选择 **"将文件上载到库"。**
+3.  选择 **Upload文件到库"**。
 
     ![上传文件的图像](images/upload-file.png)
 

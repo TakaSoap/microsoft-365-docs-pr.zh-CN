@@ -18,7 +18,7 @@ f1.keywords:
 - CSH
 ms.custom: Adm_O365
 ms.assetid: f0522d4a-fbf4-41f9-854e-c9b59555091d
-description: 包含指向其他文章的链接，这些文章介绍了如何提高 SharePoint Online 页面下载时间的性能。
+description: 包含指向其他文章的链接，这些文章介绍了如何提高 SharePoint Online 的页面下载时间。
 ms.openlocfilehash: 9ce463898b81e1653932864276be2fa8d6ce830b
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -28,11 +28,11 @@ ms.locfileid: "50909330"
 ---
 # <a name="tune-sharepoint-online-performance"></a>优化 SharePoint Online 性能
 
-本文包含指向其他文章的链接，这些文章介绍了如何提高 SharePoint Online 页面下载时间的性能。 本文是 Office [365 项目的网络规划和性能调整的一](./network-planning-and-performance.md) 部分。
+本文包含指向其他文章的链接，这些文章介绍了如何提高 SharePoint Online 的页面下载时间性能。 本文是 Network [planning and performance tuning for Office 365项目的一](./network-planning-and-performance.md)部分。
 
-## <a name="articles-about-fine-tuning-sharepoint-online-performance"></a>有关微调 SharePoint Online 性能的文章
+## <a name="articles-about-fine-tuning-sharepoint-online-performance"></a>有关微调联机性能SharePoint的文章
 
-使用这些文章微调 SharePoint Online 性能。
+使用这些文章微调联机SharePoint性能。
   
 - [SharePoint Online 性能优化简介](introduction-to-performance-tuning-for-sharepoint-online.md)
 
@@ -60,7 +60,7 @@ ms.locfileid: "50909330"
 
 - [如何：避免在 SharePoint Online 中受限制或被阻止](/sharepoint/dev/general-development/how-to-avoid-getting-throttled-or-blocked-in-sharepoint-online)
 
-- [在 SharePoint Online 新式门户页面中优化 iFrame](modern-iframe-optimization.md)
+- [优化 SharePoint Online 新式门户页面中的 iFrame](modern-iframe-optimization.md)
 
 - [优化 SharePoint Online 新式门户页面中的 Web 部件性能](modern-web-part-optimization.md)
 

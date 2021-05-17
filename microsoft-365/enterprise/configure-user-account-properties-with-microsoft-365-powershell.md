@@ -1,5 +1,5 @@
 ---
-title: 使用 PowerShell 配置 Microsoft 365 用户帐户属性
+title: 使用 Microsoft 365 PowerShell 配置用户帐户属性
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -17,7 +17,7 @@ ms.custom:
 - Ent_Office_Other
 - PowerShell
 ms.assetid: 30813f8d-b08d-444b-98c1-53df7c29b4d7
-description: 使用适用于 Microsoft 365 的 PowerShell 在 Microsoft 365 租户中配置单个或多个用户帐户的属性。
+description: 使用 PowerShell for Microsoft 365配置租户中单个或多个用户帐户Microsoft 365属性。
 ms.openlocfilehash: 6b674641842f89fd8c8e22dc26350cdd53734b9e
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -25,17 +25,17 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 03/19/2021
 ms.locfileid: "50911080"
 ---
-# <a name="configure-microsoft-365-user-account-properties-with-powershell"></a>使用 PowerShell 配置 Microsoft 365 用户帐户属性
+# <a name="configure-microsoft-365-user-account-properties-with-powershell"></a>使用 Microsoft 365 PowerShell 配置用户帐户属性
 
-*本文适用于 Microsoft 365 企业版和 Office 365 企业版。*
+*此文章适用于 Microsoft 365 企业版和 Office 365 企业版。* 
 
-可以使用 Microsoft 365 管理中心为 Microsoft 365 租户的用户帐户配置属性。 在 PowerShell 中，还可以执行此操作，以及一些在管理中心中无法执行的其他操作。
+可以使用 Microsoft 365 管理中心为租户的用户帐户Microsoft 365属性。 在 PowerShell 中，还可以执行此操作，以及一些在管理中心中无法执行的其他操作。
   
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>使用用于图表模块的 Azure Active Directory PowerShell
 
-若要在 Azure Active Directory PowerShell graph 模块中配置用户帐户的属性，请使用 [**Set-AzureADUser**](/powershell/module/azuread/set-azureaduser?view=azureadps-2.0) cmdlet 并指定要设置或更改的属性。
+若要在 Azure Active Directory PowerShell for Graph 模块中配置用户帐户的属性，请使用 [**Set-AzureADUser**](/powershell/module/azuread/set-azureaduser?view=azureadps-2.0) cmdlet 并指定要设置或更改的属性。
 
-首先， [连接到 Microsoft 365 租户](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)。
+首先，[连接到你的Microsoft 365租户](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)。
    
 ### <a name="change-properties-for-a-specific-user-account"></a>更改特定用户帐户的属性
 
@@ -149,9 +149,9 @@ Get-AzureADUser | Where {$_.Department -eq "Accounting"} | Set-AzureADUser -Usag
     
 ## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>使用用于 Windows PowerShell 的 Microsoft Azure Active Directory 模块
 
-若要使用适用于 Windows PowerShell 的 Microsoft Azure Active Directory 模块配置用户帐户的属性，请使用 **Set-MsolUser** cmdlet 并指定要设置或更改的属性。
+若要使用 Microsoft Azure Active Directory Module for Windows PowerShell 配置用户帐户的属性，请使用 **Set-MsolUser** cmdlet 并指定要设置或更改的属性。
 
-首先， [连接到 Microsoft 365 租户](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)。
+首先，[连接到你的Microsoft 365租户](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)。
   
 >[!Note]
 >PowerShell Core 不支持用于 Windows PowerShell 和 cmdlet 的其名称中包含 *Msol* 的 Microsoft Azure Active Directory 模块。 从 Windows PowerShell 运行这些 cmdlet。

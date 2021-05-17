@@ -64,7 +64,7 @@ Microsoft Defender for Endpoint 与现有安全解决方案无缝集成。 集�
 ![Micro Focus ArcSight 徽标的图像](images/arcsight-logo.png) | [Micro Focus ArcSight](https://go.microsoft.com/fwlink/?linkid=2113548) | 使用 Micro Focus ArcSight 拉取 Defender 进行终结点检测
 ![RSA NetWitness 徽标的图像](images/rsa-netwitness-logo.png) | [RSA NetWitness](https://go.microsoft.com/fwlink/?linkid=2118566) | Stream Defender for Endpoint Alerts to RSA NetWitness using Microsoft Graph Security API
 ![SafeBreach 徽标的图像](images/safebreach-logo.png) | [SafeBreach](https://go.microsoft.com/fwlink/?linkid=2114114)| 了解与 SafeBreach 模拟自动关联的 Defender for Endpoint 安全事件
-![Skybox 漏洞控制徽标的图像](images/skybox-logo.png) | [Skybox 漏洞控制](https://go.microsoft.com/fwlink/?linkid=2127467) | Skybox 漏洞控制可切断漏洞管理的干扰，关联业务、网络和威胁上下文，以发现风险最大的漏洞
+![Skybox 漏洞控制徽标的图像](images/skybox-logo.png) | [Skybox 漏洞控制](https://go.microsoft.com/fwlink/?linkid=2127467) | Skybox 漏洞控制可切断网络漏洞管理关联业务、网络和威胁上下文的干扰，以发现风险最大的漏洞
 ![Splunk 徽标的图像](images/splunk-logo.png) | [Splunk](https://go.microsoft.com/fwlink/?linkid=2129805) | Defender for Endpoint 加载项允许 Splunk 用户将所有警报和支持信息都加入其 Splunk
 ![XM 网络徽标的图像](images/xmcyber-logo.png) | [XM 网络](https://go.microsoft.com/fwlink/?linkid=2136700) | 根据风险因素和高价值资产确定对警报的响应优先级
 
@@ -76,9 +76,9 @@ Microsoft Defender for Endpoint 与现有安全解决方案无缝集成。 集�
 ![CyberSponse CyOps 徽标的图像](images/cybersponse-logo.png) | [CyberSponse CyOps](https://go.microsoft.com/fwlink/?linkid=2115943) | CyOps 与 Defender for Endpoint 集成，以自动执行客户的高速事件响应操作手册
 ![Delta Risk ActiveEye 徽标的图像](images/delta-risk-activeeye-logo.png) | [Delta Risk ActiveEye](https://go.microsoft.com/fwlink/?linkid=2127468) | Delta Risk 是 SOC 即服务和安全服务的领先提供商，将 Defender for Endpoint 与云本机 SOAR 平台 ActiveEye 集成。
 ![一个 Palo Alto Networks 公司徽标，为一个 Palisto 的图像](images/demisto-logo.png) | [Isto，Palo Alto Networks 公司](https://go.microsoft.com/fwlink/?linkid=2108414) | Isto 与 Defender for Endpoint 集成，使安全团队可以安排和自动化终结点安全监视、扩充和响应
-![Microsoft Flow & Azure Functions 徽标的图像](images/ms-flow-logo.png) | [Microsoft Flow & Azure 函数](https://go.microsoft.com/fwlink/?linkid=2114300) | 使用适用于 Azure 逻辑应用的 Defender for Endpoint 连接器& Microsoft Flow 自动执行安全过程
+![Azure Microsoft Flow &徽标的图像](images/ms-flow-logo.png) | [Microsoft Flow & Azure 函数](https://go.microsoft.com/fwlink/?linkid=2114300) | 使用 Defender for Endpoint 连接器进行Azure 逻辑应用 & Microsoft Flow自动化安全过程
 ![Rapid7 InsightConnect 徽标的图像](images/rapid7-logo.png) | [Rapid7 InsightConnect](https://go.microsoft.com/fwlink/?linkid=2116040) | InsightConnect 与 Defender for Endpoint 集成，以加速、简化和集成时间密集型安全流程
-![ServiceNow 徽标的图像](images/servicenow-logo.png) | [ServiceNow](https://go.microsoft.com/fwlink/?linkid=2135621) | 根据 Microsoft Graph API 集成将警报加入 ServiceNow 安全操作解决方案
+![ServiceNow 徽标的图像](images/servicenow-logo.png) | [ServiceNow](https://go.microsoft.com/fwlink/?linkid=2135621) | 将警报纳入基于 Microsoft Graph API 集成的 ServiceNow 安全操作解决方案
 ![Image of Swimlane logo](images/swimlane-logo.png) | [卡里拉尼](https://go.microsoft.com/fwlink/?linkid=2113902) | 最大限度地利用与 Endpoint 一起利用"一号球"和"Defender for Endpoint"的事件响应功能
 
 
@@ -109,8 +109,8 @@ Microsoft Defender for Endpoint 与现有安全解决方案无缝集成。 集�
 ![更好的移动徽标的图像](images/bettermobile-logo.png) | [更好的移动功能](https://go.microsoft.com/fwlink/?linkid=2086214)| 基于 AI 的 MTD 解决方案，可阻止移动威胁&网络钓鱼。 保护用户隐私的专用 Internet 浏览 
 ![Corrata 徽标图像](images/corrata-logo.png)| [Corrata](https://go.microsoft.com/fwlink/?linkid=2081148) | 移动解决方案 — 通过 Corrata 的精细可见性和控制来保护移动设备 
 ![Lookout 徽标的图像](images/lookout-logo.png)| [Lookout](https://go.microsoft.com/fwlink/?linkid=866935)| 获取 Android 和 iOS 移动设备的 Lookout 移动威胁防护遥测
-![Symantec Endpoint Protection Mobile 徽标的图像](images/symantec-logo.png) | [Symantec Endpoint Protection Mobile](https://go.microsoft.com/fwlink/?linkid=2090992)| SEP 移动可帮助企业预测、检测和防止移动设备上的安全威胁和漏洞 
-![Zimperium 徽标的图像](images/zimperium-logo.png)| [Zimperium](https://go.microsoft.com/fwlink/?linkid=2118044)|使用基于机器学习的移动威胁防护将 Defender for Endpoint 扩展到 iOS 和 Android
+![Symantec Endpoint Protection移动徽标的图像](images/symantec-logo.png) | [Symantec Endpoint Protection Mobile](https://go.microsoft.com/fwlink/?linkid=2090992)| SEP 移动可帮助企业预测、检测和防止移动设备上的安全威胁和漏洞 
+![Zimperium 徽标的图像](images/zimperium-logo.png)| [Zimperium](https://go.microsoft.com/fwlink/?linkid=2118044)|使用基于移动设备的移动威胁防护将 Defender for Endpoint 扩展到 iOS 机器学习 Android
 
 
 
@@ -152,5 +152,5 @@ Defender for Endpoint 提供独特的自动调查和修正功能，可大规模�
 
 Defender for Endpoint 当前支持文件和网络指示器的 IOC 匹配和修正。 文件指示器支持阻止。  
 
-## <a name="support-for-non-windows-platforms"></a>支持非 Windows 平台
-Defender for Endpoint 为 Windows 和非 Windows 平台（包括移动设备）提供集中式安全操作体验。 你将能够在门户中查看来自各种受支持操作系统 (操作系统) 警报，并更好地保护组织的网络。 
+## <a name="support-for-non-windows-platforms"></a>支持非Windows平台
+Defender for Endpoint 为 Windows 和非 Windows平台（包括移动设备）提供集中式安全操作体验。 你将能够在门户中查看来自各种受支持操作系统 (操作系统) 警报，并更好地保护组织的网络。 

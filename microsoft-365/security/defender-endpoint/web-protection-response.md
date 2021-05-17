@@ -1,6 +1,6 @@
 ---
 title: 在 Microsoft Defender for Endpoint 中响应 Web 威胁
-description: 响应与恶意和不需要的网站相关的警报。 了解 Web 威胁防护如何通过最终用户的 Web 浏览器和 Windows 通知通知最终用户
+description: 响应与恶意和不需要的网站相关的警报。 了解 Web 威胁防护如何通过最终用户的 Web 浏览器和通知Windows通知
 keywords: Web 保护， Web 威胁防护， Web 浏览， 警报， 响应， 安全性， 网络钓鱼， 恶意软件， 攻击， 网站， 网络保护， Edge， Internet Explorer， Chrome， Firefox， Web 浏览器， 通知， 最终用户， Windows 通知， 阻止页面，
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -66,15 +66,15 @@ Microsoft Defender for Endpoint 针对恶意 [或](manage-alerts.md) 可疑 Web 
 
 [了解有关设备实体页面的信息](investigate-machines.md)
 
-## <a name="web-browser-and-windows-notifications-for-end-users"></a>针对最终用户的 Web 浏览器和 Windows 通知
+## <a name="web-browser-and-windows-notifications-for-end-users"></a>Web 浏览器Windows最终用户通知
 
-借助适用于终结点的 Microsoft Defender 中的 Web 保护，将阻止最终用户使用 Microsoft Edge 或其他浏览器访问恶意或不需要的网站。 由于阻止是由网络 [保护执行的](network-protection.md)，因此他们将从 Web 浏览器看到一个常规错误。 他们还将看到来自 Windows 的通知。
+借助适用于终结点的 Microsoft Defender 中的 Web 保护，将阻止最终用户使用 Microsoft Edge浏览器访问恶意或不需要的网站。 由于阻止是由网络 [保护执行的](network-protection.md)，因此他们将从 Web 浏览器看到一个常规错误。 他们还将看到来自用户Windows。
 
-![Microsoft Edge 显示 403 错误和 Microsoft Edge 上阻止的 Windows 通知 ](images/wtp-browser-blocking-page.png)
- *Web 威胁的图像*
+![显示Microsoft Edge 403 错误和通知 Web 威胁Windows 403 ](images/wtp-browser-blocking-page.png)
+ *的图像* Microsoft Edge
 
-![显示安全连接警告和 Chrome 上阻止的 Windows 通知 Web 威胁的 ](images/wtp-chrome-browser-blocking-page.png)
- *Chrome Web 浏览器的图像*
+![显示安全连接警告的 Chrome Web 浏览器图像，Windows Chrome 上阻止的通知 ](images/wtp-chrome-browser-blocking-page.png)
+ *Web 威胁*
 
 ## <a name="related-topics"></a>相关主题
 - [Web 保护功能概述](web-protection-overview.md)

@@ -1,7 +1,7 @@
 ---
 title: 行为阻止和控制
 description: 了解 Microsoft Defender for Endpoint 中的行为阻止和包含功能
-keywords: Microsoft Defender for Endpoint， EDR in block mode， passive mode blocking
+keywords: Microsoft Defender for Endpoint，EDR阻止模式，被动模式阻止
 search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
 author: denisebmsft
@@ -38,19 +38,19 @@ ms.locfileid: "51929045"
 
 ## <a name="overview"></a>概述
 
-如今的威胁形势被无文件恶意软件所溢出[](https://docs.microsoft.com/windows/security/threat-protection/intelligence/fileless-threats)，并位于陆地外，其变化速度比传统解决方案快的高度多态威胁，以及适应攻击者在遭到入侵的设备上发现的攻击。 传统安全解决方案不足以阻止此类攻击;你需要人工智能 (AI) 设备学习 (ML) 支持的功能，例如行为阻止和抑制，包含在 [Defender for Endpoint 中](https://docs.microsoft.com/windows/security)。 
+如今的威胁形势被无文件恶意软件所溢出[](https://docs.microsoft.com/windows/security/threat-protection/intelligence/fileless-threats)，并位于陆地外，其变化速度比传统解决方案快的高度多态威胁，以及适应攻击者在遭到入侵的设备上发现的攻击。 传统安全解决方案不足以阻止此类攻击;你需要人工智能 (AI) 和设备学习 (ML) 支持的功能，如行为阻止和抑制，包含在[Defender for Endpoint 中](https://docs.microsoft.com/windows/security)。 
 
-行为阻止和抑制功能可帮助根据威胁的行为和进程树识别和停止威胁，即使威胁已开始执行。 下一代保护、EDR 和适用于终结点的 Defender 组件和功能在行为阻止和抑制功能中协同工作。 
+行为阻止和抑制功能可帮助根据威胁的行为和进程树识别和停止威胁，即使威胁已开始执行。 下一代保护、EDR和适用于终结点的 Defender 组件和功能在行为阻止和抑制功能中协同工作。 
 
 :::image type="content" source="images/mdatp-next-gen-EDR-behavblockcontain.png" alt-text="行为阻止和控制":::
 
 行为阻止和包含功能适用于 Defender for Endpoint 的多个组件和功能，可立即停止攻击并阻止攻击的进行。
 
-- [下一代](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10) (包括 Microsoft Defender 防病毒) 可通过分析行为来检测威胁，并停止已开始运行的威胁。
+- [下一代](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10) (防护功能Microsoft Defender 防病毒) 分析行为来检测威胁，并停止已开始运行的威胁。
 
-- [终结点检测和响应](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response) (EDR) 网络、设备和内核行为接收安全信号。 检测到威胁时，将创建警报。 同一类型的多个警报将聚合到事件中，这便于安全运营团队调查和响应。
+- [终结点检测和响应 (EDR) ](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response)网络、设备和内核行为接收安全信号。 检测到威胁时，将创建警报。 同一类型的多个警报将聚合到事件中，这便于安全运营团队调查和响应。
 
-- [除了通过](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response) EDR 接收的网络、终结点和内核行为信号之外，Defender for Endpoint 还具有各种标识、电子邮件、数据和应用的光学系统。 [Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/defender/microsoft-threat-protection)的一个组件，适用于终结点的 Defender 处理和关联这些信号，引发检测警报，并连接事件中的相关警报。
+- [Defender for Endpoint](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response)具有广泛的光学系统，包括标识、电子邮件、数据和应用，以及通过 EDR 接收的网络、终结点和内核行为信号。 Microsoft 365 [Defender](https://docs.microsoft.com/microsoft-365/security/defender/microsoft-threat-protection)的一个组件，用于处理和关联这些信号，引发检测警报，并连接事件中的相关警报。
 
 借助这些功能，可以阻止或阻止更多威胁，即使它们开始运行。 只要检测到可疑行为，就会包含威胁，创建警报，并停止威胁。 
 
@@ -60,15 +60,15 @@ ms.locfileid: "51929045"
 
 ## <a name="components-of-behavioral-blocking-and-containment"></a>行为阻止和包含的组件
 
-- **客户端上策略驱动的 [攻击面减少规则](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/attack-surface-reduction)** 根据攻击面减少规则，防止执行预定义的常见攻击行为。 当此类行为尝试执行时，可以在 Microsoft Defender 安全中心内看到 [https://securitycenter.windows.com](https://securitycenter.windows.com) 它们作为信息警报。  (攻击面减少规则默认情况下未启用;在 Microsoft Defender 安全中心配置策略) 
+- **客户端上策略驱动的 [攻击面减少规则](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/attack-surface-reduction)** 根据攻击面减少规则，防止执行预定义的常见攻击行为。 当此类行为尝试执行时，可以在电子邮件中Microsoft Defender 安全中心 [https://securitycenter.windows.com](https://securitycenter.windows.com) 信息警报。  (攻击面减少规则默认情况下未启用;在 Microsoft Defender 安全中心.) 
 
 - **[客户端行为阻止](client-behavioral-blocking.md)** 终结点上的威胁通过机器学习进行检测，然后自动阻止和修正。  (启用客户端行为阻止。)  
 
 - **[反馈循环阻止 (](feedback-loop-blocking.md)** 也称为快速保护) 行为智能观察到威胁检测。 威胁将停止并阻止在其他终结点上运行。  (启用反馈循环阻止。)  
 
-- **[在阻止模式下 (EDR) 终结点检测和响应](edr-in-block-mode.md)** 通过泄露后保护观察到的恶意项目或行为将被阻止和包含。 即使 Microsoft Defender 防病毒不是主要的防病毒解决方案，阻止模式下的 EDR 也有效。  (阻止模式下启用 EDR;在 Microsoft Defender 安全中心中将其打开。)  
+- **[终结点检测和响应 (EDR) 阻止模式](edr-in-block-mode.md)** 通过泄露后保护观察到的恶意项目或行为将被阻止和包含。 EDR阻止模式运行，即使Microsoft Defender 防病毒不是主要的防病毒解决方案。  (EDR在阻止模式下未启用;在 Microsoft Defender 安全中心.)  
 
-随着 Microsoft 继续改进威胁防护特性和功能，预期行为阻止和抑制领域会有更多的变化。 若要了解现在的计划和推出，请访问 [Microsoft 365 路线图](https://www.microsoft.com/microsoft-365/roadmap)。
+随着 Microsoft 继续改进威胁防护特性和功能，预期行为阻止和抑制领域会有更多的变化。 若要了解现在的计划和推出，请访问 Microsoft 365[路线图](https://www.microsoft.com/microsoft-365/roadmap)。
 
 ## <a name="examples-of-behavioral-blocking-and-containment-in-action"></a>操作中的行为阻止和包含的示例
 
@@ -96,9 +96,9 @@ Defender for Endpoint 中基于行为的设备学习模型在攻击链中的两�
 - 第一个保护层检测到攻击行为。 云中的设备学习分类器正确地将威胁标识为 并立即指示客户端设备阻止攻击。
 - 第二个保护层，帮助阻止攻击通过第一层、检测到进程正在停靠、停止该进程并删除了相应文件 (如 Lokibot) 。 
 
-在检测到并停止攻击时，警报（如"初始访问警报"）会触发并出现在 Microsoft Defender 安全中心 [https://securitycenter.windows.com](https://securitycenter.windows.com) () ：
+在检测到并停止攻击时，警报（如"初始访问警报）"将触发并出现在 [https://securitycenter.windows.com](https://securitycenter.windows.com) Microsoft Defender 安全中心 () ：
 
-:::image type="content" source="images/behavblockcontain-initialaccessalert.png" alt-text="Microsoft Defender 安全中心的初始访问警报":::
+:::image type="content" source="images/behavblockcontain-initialaccessalert.png" alt-text="服务中的初始访问Microsoft Defender 安全中心":::
 
 此示例演示云中基于行为的设备学习模型如何添加抵御攻击的新保护层，即使它们开始运行。
 
@@ -124,8 +124,8 @@ Defender for Endpoint 中基于行为的设备学习模型在攻击链中的两�
 
 - [配置攻击面减少规则](attack-surface-reduction.md)
 
-- [在阻止模式下启用 EDR](edr-in-block-mode.md)
+- [启用EDR阻止模式](edr-in-block-mode.md)
 
 - [查看最近的全球威胁活动](https://www.microsoft.com/wdsi/threats)
 
-- [获取 Microsoft 365 Defender 概述 ](https://docs.microsoft.com/microsoft-365/security/defender/microsoft-threat-protection)
+- [获取 Defender Microsoft 365概述](https://docs.microsoft.com/microsoft-365/security/defender/microsoft-threat-protection)

@@ -16,7 +16,7 @@ f1.keywords:
 ms.custom: Adm_O365
 search.appverid: SPO160
 ms.assetid: 81c4be5f-327e-435d-a568-526d68cffef0
-description: 本文介绍了在设计页面以在 SharePoint Online 中实现最佳性能时需要考虑的特定方面。
+description: 本文介绍了在 SharePoint Online 中设计页面时需要考虑的特定方面。
 ms.openlocfilehash: 6f40243c9d6a1657b6716a071288f5b4fb018164
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -26,11 +26,11 @@ ms.locfileid: "50909734"
 ---
 # <a name="introduction-to-performance-tuning-for-sharepoint-online"></a>SharePoint Online 性能优化简介
 
-本文介绍了在设计页面以在 SharePoint Online 中实现最佳性能时需要考虑的特定方面。
+本文介绍了在 SharePoint Online 中设计页面时需要考虑的特定方面。
      
-## <a name="sharepoint-online-metrics"></a>SharePoint Online 指标
+## <a name="sharepoint-online-metrics"></a>SharePoint联机指标
 
-SharePoint Online 的以下广泛指标提供有关性能的实际数据：
+以下适用于 SharePoint Online 的广泛指标提供有关性能的真实数据：
   
 - 页面加载速度
     
@@ -48,23 +48,23 @@ SharePoint Online 的以下广泛指标提供有关性能的实际数据：
     
 - 非自定义页面加载速度非常快。
     
-- OneDrive for Business、团队网站和系统页面（_layouts等）都可以快速加载。
+- OneDrive for Business、工作组网站和系统页面（_layouts等）都可以快速加载。
     
-- 最慢的 1% 的 SharePoint Online 页面的加载时间超过 5，000 毫秒。
+- 最慢的 1% SharePoint Online 页面的加载时间超过 5，000 毫秒。
     
 可以使用的一个简单的基准测试是，通过将您自己的门户的加载时间与 OneDrive for Business 主页的加载时间进行比较来测量性能，因为它使用很少的自定义功能。 这通常是在解决网络性能问题时支持会要求你完成的第一步。
   
 ## <a name="use-a-standard-user-account-when-checking-performance"></a>检查性能时使用标准用户帐户
 
-网站集管理员、网站所有者、编辑者或参与者属于其他安全组，具有其他权限，因此具有 SharePoint 在页面上加载的其他元素。
+网站集管理员、网站所有者、编辑者或参与者属于其他安全组，具有其他权限，因此具有可SharePoint加载的其他元素。
   
-这适用于本地 SharePoint 和 SharePoint Online，但在本地方案中，差异不会像在 SharePoint Online 中一样容易注意到。
+这适用于本地SharePoint和 SharePoint Online，但在本地方案中，差异不会像 SharePoint Online 中一样容易注意到。
   
 为了正确评估页面将如何为用户执行，您应该使用标准用户帐户，以避免加载创作控件和安全组相关的其他通信。
   
 ## <a name="connection-categories-for-performance-tuning"></a>用于性能调整的连接类别
 
-可以将服务器和用户之间的连接分为三个主要组件。 在设计 SharePoint Online 页面以深入了解加载时间时，请考虑以下这些。
+可以将服务器和用户之间的连接分为三个主要组件。 在设计联机页面时SharePoint这些页面，以深入了解加载时间。
   
 - **服务器** Microsoft 在数据中心托管的服务器。
     
@@ -86,11 +86,11 @@ SharePoint Online 的以下广泛指标提供有关性能的实际数据：
     
 ### <a name="server-connection"></a>服务器连接
 
-影响 SharePoint 本地性能的许多问题也适用于 SharePoint Online。
+影响本地部署SharePoint的很多问题也适用于 SharePoint Online。
   
-正如您预期，您可以更加控制服务器使用本地 SharePoint 执行。 在 SharePoint Online 中，内容有所不同。 服务器执行的工作越多，呈现页面所花的时间越长。 对于 SharePoint，此方面的最大原因就是包含多个 Web 部件的复杂页面。
+正如您预期，您可以更加控制服务器使用本地部署SharePoint。 使用 SharePoint Online，内容会有所不同。 服务器执行的工作越多，呈现页面所花的时间越长。 使用SharePoint，这一方面的最大原因就是包含多个 Web 部件的复杂页面。
   
-SharePoint Server 本地
+SharePoint服务器本地
   
 ![内部部署服务器的屏幕截图](../media/a8e9b646-cdff-4131-976a-b5f891da44ac.png)
   
@@ -98,7 +98,7 @@ SharePoint Online
   
 ![联机服务器的屏幕截图](../media/46b27ded-d8a4-4287-b3e0-2603a764b8f8.png)
   
-使用 SharePoint Online，某些页面请求实际上可能会结束调用多个服务器。 最终，您可以为单个请求在服务器之间创建一个请求矩阵。 从页面加载的角度来看，这些交互成本很高，并且会使情况变慢。
+使用 SharePoint Online，某些页面请求可能最终调用多个服务器。 最终，您可以为单个请求在服务器之间创建一个请求矩阵。 从页面加载的角度来看，这些交互成本很高，并且会使情况变慢。
   
 这些服务器与服务器交互的示例包括：
   
@@ -106,11 +106,11 @@ SharePoint Online
     
 - Web 到应用程序服务器
     
-另一个会降低服务器交互速度的方面是缓存丢失。 与本地 SharePoint 不同，您点击之前访问的页面的同一台服务器的可能性非常小;这使得对象缓存过时。
+另一个会降低服务器交互速度的方面是缓存丢失。 与本地SharePoint不同，您命中之前访问的页面的同一服务器的可能性非常小;这使得对象缓存过时。
   
 ### <a name="network-connection"></a>网络连接
 
-对于不使用 WAN 的本地 SharePoint，您可以在数据中心和最终用户之间使用高速连接。 通常，从网络角度来说，操作很容易管理。
+对于不使用 WAN SharePoint本地服务器，您可以在数据中心和最终用户之间使用高速连接。 通常，从网络角度来说，操作很容易管理。
   
 对于 SharePoint Online，还有一些要考虑的因素;例如：
   
@@ -120,7 +120,7 @@ SharePoint Online
     
 - The ISP
     
-无论使用哪个版本的 SharePoint (以及) ，通常会导致网络繁忙的事情包括：
+无论使用哪个SharePoint (以及) 网络，通常会导致网络繁忙的事情包括：
   
 - 大型负载
     
@@ -128,7 +128,7 @@ SharePoint Online
     
 - 与服务器的物理距离较大
     
-可以在 SharePoint Online 中利用的一项功能是 Microsoft CDN (内容交付网络) 。 CDN 基本上是跨多个数据中心部署的服务器的分布式集合。 使用 CDN，即使客户端与原始 SharePoint Server 距离非常远，页面上的内容也可以托管在靠近客户端的服务器上。 Microsoft 将在未来使用更多资源来存储无法自定义的页面的本地实例，例如 SharePoint Online 管理员主页。 有关 CDN 的信息，请参阅内容 [交付网络](content-delivery-networks.md)。
+Microsoft SharePoint Online 中可以利用的一CDN (内容分发网络) 。 一CDN基本上是跨多个数据中心部署的服务器的分布式集合。 使用 CDN，即使客户端与原始 SharePoint 服务器距离非常远，页面上的内容也可以托管在靠近客户端的服务器上。 Microsoft 将在将来使用此功能来存储无法自定义的页面的本地实例，例如 SharePoint Online 管理员主页。 有关 CDN 的信息，请参阅内容 [交付网络](content-delivery-networks.md)。
   
 需要注意但可能无法执行很多工作的是 ISP 的连接速度。 简单的速度测试工具将告知你连接速度。
   
@@ -138,7 +138,7 @@ SharePoint Online
   
 访问复杂页面会影响性能。 大多数浏览器只有一个小型缓存 (大约 90 MB) ，而平均网页通常约为 1.6 MB。 这不会花很长时间就用不上。
   
-带宽也可能成为问题。 例如，如果用户在另一个会话中观看视频，这将影响 SharePoint 页面的性能。 虽然无法阻止用户流式传输媒体，但可以控制页面加载用户的方式。
+带宽也可能成为问题。 例如，如果用户在另一个会话中观看视频，这将影响你的SharePoint性能。 虽然无法阻止用户流式传输媒体，但可以控制页面加载用户的方式。
   
 请查看以下文章，了解不同的 SharePoint Online 页面自定义技术和其他最佳做法，以帮助你实现最佳性能。
   

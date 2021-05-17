@@ -1,5 +1,5 @@
 ---
-title: 在 Microsoft 365 组中添加或删除成员
+title: 在组中添加或删除Microsoft 365成员
 ms.reviewer: arvaradh
 f1.keywords: NOCSH
 ms.author: mikeplum
@@ -17,7 +17,7 @@ ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 ms.assetid: e186d224-a324-4afa-8300-0e4fc0c3000a
-description: 了解如何在 Microsoft 365 管理中心向组添加成员、从组中删除成员和管理组所有者状态。
+description: 了解如何在管理中心向组添加成员、从组中删除成员和管理Microsoft 365状态。
 ms.openlocfilehash: 997145b85d2990d5bf7184f5e97a0a8d1c86dae9
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -25,12 +25,12 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 03/19/2021
 ms.locfileid: "50907912"
 ---
-# <a name="add-or-remove-members-from-microsoft-365-groups-using-the-admin-center"></a>使用管理中心在 Microsoft 365 组中添加或删除成员
+# <a name="add-or-remove-members-from-microsoft-365-groups-using-the-admin-center"></a>使用管理中心Microsoft 365或删除组的成员
 
-在 Microsoft 365 中，组成员通常创建自己的组、将自己添加到要加入的组或受组所有者邀请的组。 如果组所有权发生更改，或者确定应添加或删除成员，则作为管理员，还可以进行此更改。 只有全局管理员、Exchange 管理员、组管理员或用户管理员才能进行这些更改。 [什么是 Microsoft 365 组？](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2)
+在Microsoft 365中，团队成员通常创建自己的组、将自己添加到要加入的组或受组所有者邀请的组。 如果组所有权发生更改，或者确定应添加或删除成员，则作为管理员，还可以进行此更改。 只有全局管理员、Exchange管理员、组管理员或用户管理员才能进行这些更改。 [什么是Microsoft 365组？](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2)
 
 > [!TIP]
-> 如果你不是管理员，可以使用 Outlook [添加或删除成员](https://support.microsoft.com/office/3b650f4a-5c9b-4f94-a1bb-0cca4b1091de)。
+> 如果你不是管理员，你可以添加[或删除成员，Outlook。](https://support.microsoft.com/office/3b650f4a-5c9b-4f94-a1bb-0cca4b1091de)
   
 ## <a name="add-a-member-to-a-group-in-the-admin-center"></a>将成员添加到管理中心中的组
 
@@ -111,12 +111,12 @@ ms.locfileid: "50907912"
 
 ## <a name="articles-about-managing-groups"></a>有关组管理的文章
 
-- [在 Outlook 中将通讯组列表升级到 Microsoft 365 组](../manage/upgrade-distribution-lists.md)
+- [将通讯组列表Microsoft 365通讯组Outlook](../manage/upgrade-distribution-lists.md)
 
 - [为什么应将通讯组列表升级至 Outlook 中的组](https://support.microsoft.com/office/7fb3d880-593b-4909-aafa-950dd50ce188)
 
-- [在 Microsoft 365 组中管理来宾访问](manage-guest-access-in-groups.md)
+- [管理来宾组中来宾Microsoft 365访问](manage-guest-access-in-groups.md)
 
-- [使用 PowerShell 管理 Microsoft 365](../../enterprise/manage-microsoft-365-groups-with-powershell.md)组 ：本文介绍了关键 cmdlet 并提供示例
+- [使用 PowerShell Microsoft 365](../../enterprise/manage-microsoft-365-groups-with-powershell.md)组：本文介绍了关键 cmdlet 并提供示例
 
-- [Microsoft 365 组命名策略](../../solutions/groups-naming-policy.md)
+- [Microsoft 365组命名策略](../../solutions/groups-naming-policy.md)

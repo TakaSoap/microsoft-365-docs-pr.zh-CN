@@ -49,7 +49,7 @@ ms.locfileid: "50915862"
 
 3. 选择用户邮箱。 在 **"转换为共享邮箱"下，** 选择"**转换"。**
 
-4. 如果邮箱小于 50 GB，可以从用户中删除许可证，[](../manage/remove-licenses-from-users.md)并停止付费。 不要删除用户帐户。 共享邮箱需要它作为定位标记。 如果要转换离开组织的员工的邮箱，应执行其他步骤以确保他们不再登录。 请参阅从 [Microsoft 365](../add-users/remove-former-employee.md)中删除以前的员工。
+4. 如果邮箱小于 50 GB，可以从用户中删除许可证，[](../manage/remove-licenses-from-users.md)并停止付费。 不要删除用户帐户。 共享邮箱需要它作为定位标记。 如果要转换离开组织的员工的邮箱，应执行其他步骤以确保他们不再登录。 请参阅从[公司中删除以前的Microsoft 365。](../add-users/remove-former-employee.md)
     
 > [!NOTE]
 > 无需在邮箱转换期间重置用户密码。 但是，如果未重置密码，则 **完成** 邮箱转换后，原始用户名和密码将继续工作。
@@ -66,7 +66,7 @@ ms.locfileid: "50915862"
 
 1. [还原用户帐户](../add-users/restore-user.md)。
 
-2. 确保已为其分配 Microsoft 365 许可证。
+2. 请确保分配Microsoft 365许可证。
 
 3. 重置用户密码。
     
@@ -93,14 +93,14 @@ ms.locfileid: "50915862"
 
 ## <a name="convert-a-users-mailbox-in-a-hybrid-environment"></a>在混合环境中转换用户邮箱
 
-有关在 Exchange 混合环境中将用户邮箱转换为共享邮箱的信息，请参阅：
+有关将用户邮箱转换为混合环境中共享邮箱Exchange，请参阅：
 
- - [用于创建或修改本地 Exchange 环境中远程共享邮箱的 Cmdlet](https://support.microsoft.com/office/cmdlets-to-create-or-modify-a-remote-shared-mailbox-in-an-on-premises-exchange-environment-9e83fb59-c001-729c-a4c0-b2964c154b49)
- - [在 Exchange 混合部署中运行目录同步后，共享邮箱意外转换为用户邮箱](/exchange/troubleshoot/user-and-shared-mailboxes/shared-mailboxes-unexpectedly-converted-to-user-mailboxes)
+ - [在内部部署部署环境中创建或修改远程共享邮箱Exchange Cmdlet](https://support.microsoft.com/office/cmdlets-to-create-or-modify-a-remote-shared-mailbox-in-an-on-premises-exchange-environment-9e83fb59-c001-729c-a4c0-b2964c154b49)
+ - [在混合部署中运行目录同步后，共享邮箱Exchange转换为用户邮箱](/exchange/troubleshoot/user-and-shared-mailboxes/shared-mailboxes-unexpectedly-converted-to-user-mailboxes)
  
 
 > [!NOTE]
-> 如果您是组织管理或收件人管理角色组的成员，您可以使用 Exchange 命令行管理程序 将用户邮箱更改为本地共享邮箱。 例如，`Set-Mailbox -Identity mailbox1@contoso.com -Type Shared`。
+> 如果您是组织管理或收件人管理角色组的成员，可以使用 Exchange 命令行管理程序将用户邮箱更改为本地共享邮箱。 例如，`Set-Mailbox -Identity mailbox1@contoso.com -Type Shared`。
 
 ## <a name="related-articles"></a>相关文章
 

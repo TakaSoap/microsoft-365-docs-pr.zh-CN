@@ -336,4 +336,4 @@ $vnetConnection=New-AzVirtualNetworkGatewayConnection -Name $vnetConnectionName 
   
 ## <a name="next-step"></a>后续步骤
   
-[在 Microsoft Azure 中部署 Microsoft 365 目录同步](deploy-microsoft-365-directory-synchronization-dirsync-in-microsoft-azure.md)
+[在Microsoft 365部署目录Microsoft Azure](deploy-microsoft-365-directory-synchronization-dirsync-in-microsoft-azure.md)

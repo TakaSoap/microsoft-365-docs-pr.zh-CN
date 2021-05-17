@@ -22,17 +22,17 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 03/19/2021
 ms.locfileid: "50907936"
 ---
-# <a name="prevent-guests-from-being-added-to-a-specific-microsoft-365-group-or-microsoft-teams-team"></a>阻止来宾添加到特定的 Microsoft 365 组或 Microsoft Teams 团队
+# <a name="prevent-guests-from-being-added-to-a-specific-microsoft-365-group-or-microsoft-teams-team"></a>阻止来宾添加到特定组或Microsoft 365组Microsoft Teams组
 
 如果要允许对大多数组和团队进行来宾访问，但希望阻止某些组和团队访问来宾，可以阻止单个组和团队的来宾访问。  (通过阻止来宾访问关联组来阻止来宾访问团队。) 这将阻止添加新来宾，但不删除已加入组或团队的来宾。
 
-如果你在你的组织中使用敏感度标签，我们建议使用它们以按组控制来宾访问。 若要了解如何执行此操作，请使用敏感度标签 [保护 Microsoft Teams、Microsoft 365 组和 SharePoint 网站中的内容](../compliance/sensitivity-labels-teams-groups-sites.md)。 这是建议的方法。
+如果你在你的组织中使用敏感度标签，我们建议使用它们以按组控制来宾访问。 若要了解如何进行此操作，请使用敏感度标签来保护网站Microsoft Teams、Microsoft 365[组SharePoint内容](../compliance/sensitivity-labels-teams-groups-sites.md)。 这是建议的方法。
 
 ## <a name="change-group-settings-using-microsoft-powershell"></a>使用 Microsoft PowerShell 更改组设置
 
-您还可以使用 PowerShell 阻止向各个组添加新来宾。  (请记住，团队的关联 SharePoint 网站具有 [单独的来宾共享控件](/sharepoint/change-external-sharing-site)) 
+您还可以使用 PowerShell 阻止向各个组添加新来宾。  (请记住，团队的关联网站SharePoint单独的[来宾](/sharepoint/change-external-sharing-site)共享控件 。) 
 
-必须使用预览版 [Azure Active Directory PowerShell graph](/powershell/azure/active-directory/install-adv2) (模块名称 **AzureADPreview**) 更改组级来宾访问设置：
+你必须使用 Azure Active Directory [PowerShell](/powershell/azure/active-directory/install-adv2)的预览版Graph (**AzureADPreview**) 更改组级别的来宾访问设置：
 
 - 如果之前未安装任何 Azure AD PowerShell 模块版本，请参阅[安装 Azure AD 模块](/powershell/azure/active-directory/install-adv2?preserve-view=true&view=azureadps-2.0-preview)并按照说明安装公共预览版。
 
@@ -75,7 +75,7 @@ Get-AzureADObjectSetting -TargetObjectId $groupID -TargetType Groups | fl Values
 
 ## <a name="add-guests-to-the-global-address-list"></a>将来宾添加到全局地址列表
 
-默认情况下，来宾在 Exchange 全局地址列表中不可见。 使用下面列出的步骤使来宾在全局地址列表中可见。
+默认情况下，来宾在全局地址列表中Exchange可见。 使用下面列出的步骤使来宾在全局地址列表中可见。
 
 通过运行以下方法查找来宾的 ObjectID：
 
@@ -95,8 +95,8 @@ Set-AzureADUser -ObjectId cfcbd1a0-ed18-4210-9b9d-cf0ba93cf6b2 -ShowInAddressLis
 
 [创建协作管理计划](collaboration-governance-first.md)
 
-[在 Microsoft 365 管理中心管理组成员身份](../admin/create-groups/add-or-remove-members-from-groups.md)
+[管理管理中心Microsoft 365组成员身份](../admin/create-groups/add-or-remove-members-from-groups.md)
   
-[Azure Active Directory 访问评审](/azure/active-directory/active-directory-azure-ad-controls-perform-access-review)
+[Azure Active Directory访问评审](/azure/active-directory/active-directory-azure-ad-controls-perform-access-review)
 
 [Set-AzureADUser](/powershell/module/azuread/set-azureaduser)

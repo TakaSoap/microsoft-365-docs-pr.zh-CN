@@ -13,7 +13,7 @@ f1.keywords:
 - NOCSH
 ms.custom: ''
 ms.assetid: ff93a341-6f0f-4f06-9690-726052e1be64
-description: 摘要：使用 PowerShell 通过策略管理 Skype for Business Online 用户帐户属性。
+description: 摘要：使用 PowerShell 通过策略Skype for Business Online 用户帐户属性。
 ms.openlocfilehash: a10929bbdce499ad26f9714127f675beeef58765
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -23,9 +23,9 @@ ms.locfileid: "50916698"
 ---
 # <a name="manage-skype-for-business-online-policies-with-powershell"></a>使用 PowerShell 管理 Skype for Business Online 策略
 
-*本文适用于 Microsoft 365 企业版和 Office 365 企业版。*
+*此文章适用于 Microsoft 365 企业版和 Office 365 企业版。* 
 
-若要管理 Skype for Business Online 用户帐户的许多属性，必须使用 PowerShell for Microsoft 365 将它们指定为策略的属性。
+若要管理 Skype for Business Online 用户帐户的许多属性，必须使用 PowerShell for Microsoft 365 将其指定为策略Microsoft 365。
   
 ## <a name="before-you-begin"></a>开始之前
 
@@ -66,7 +66,7 @@ EnablePublicCloudAudioVideoAccess : True
 EnableOutsideAccess               : True
 ```
 
-本示例中，此策略中的值确定在与联盟用户通信时，使用可以或不能执行哪些用途。 例如，EnableOutsideAccess 属性必须设置为 True，用户才能与组织外部人员通信。 请注意，此属性不会显示在 Microsoft 365 管理中心中。 而是根据你做出的其他选择自动将该属性设置为 True 或 False。 其他两个感兴趣的属性是：
+本示例中，此策略中的值确定在与联盟用户通信时，使用可以或不能执行哪些用途。 例如，EnableOutsideAccess 属性必须设置为 True，用户才能与组织外部人员通信。 请注意，此属性不会显示在管理Microsoft 365中。 而是根据你做出的其他选择自动将该属性设置为 True 或 False。 其他两个感兴趣的属性是：
   
 - **EnableFederationAccess** 指示用户是否可以与联合域的用户通信。
     
@@ -88,7 +88,7 @@ Get-CsOnlineUser -Identity "Alex Darrow" | ForEach {Get-CsExternalAccessPolicy -
 
 此命令查找分配给用户的策略，然后查找该策略中已启用或禁用的功能。
   
-若要使用 PowerShell 管理 Skype for Business Online 策略，请参阅以下 cmdlet：
+若要使用 PowerShell Skype for Business Online 策略，请参阅以下 cmdlet：
 
 - [客户端策略](/previous-versions//mt228132(v=technet.10)#client-policy-cmdlets)
 - [会议策略](/previous-versions//mt228132(v=technet.10)#conferencing-policy-cmdlets)
@@ -98,7 +98,7 @@ Get-CsOnlineUser -Identity "Alex Darrow" | ForEach {Get-CsExternalAccessPolicy -
 
 
 > [!NOTE]
-> Skype for Business Online 拨号计划是除名称以外的每个方面的策略。 为了提供与 Office Communications Server 和 Exchange 的向后兼容性，选择了名称"拨号计划"，而不是"拨号策略"。 
+> "Skype for Business Online 拨号计划"是除名称以外的每个方面的策略。 选择名称"拨号计划"，而不是"拨号策略"，以提供与 Office Communications Server 和 Exchange 的向后Exchange。 
   
 例如，若要查看所有可供使用的语音策略，请运行以下命令：
   
@@ -116,7 +116,7 @@ Get-CsExternalAccessPolicy -ApplicableTo "Alex Darrow"
 
 ApplicableTo 参数可将返回的数据限制为可分配到特定用户的策略（例如，Alex Darrow）。根据不同的授权和使用位置限制，可能会代表所有可用策略的子集。 
   
-在某些情况下，策略的属性不用于 Microsoft 365，而其他属性只能由 Microsoft 支持人员管理。 
+在某些情况下，策略的属性不用于Microsoft 365，而其他属性只能由 Microsoft 支持人员进行管理。 
   
 使用 Skype for Business Online，用户必须由某种策略进行管理。 如果与策略相关的有效属性为空，则意味着相关用户由全局策略管理，全局策略是自动应用于用户的策略，除非专门为其分配每用户策略。 因为我们未看到为用户帐户列出的客户端策略，所以它由全局策略管理。 可以使用此命令确定全局客户端策略：
   

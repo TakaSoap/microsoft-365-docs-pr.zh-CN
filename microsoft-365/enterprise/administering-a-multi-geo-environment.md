@@ -14,7 +14,7 @@ ms.collection:
 - Strat_SP_gtc
 - SPO_Content
 localization_priority: Normal
-description: 管理员可以了解如何在多地理位置环境中管理 SharePoint 和 OneDrive 服务。
+description: 管理员可以了解如何在多地理位置SharePoint OneDrive和启用服务。
 ms.openlocfilehash: 213070f2f7a04e15a1e2ac3cd9a3ae697b66a718
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -107,4 +107,4 @@ Stream 当前可在以下地区使用：
 
 ## <a name="yammer"></a>Yammer
 
-Yammer 不是多地理位置工作负载。 Yammer 中存储的 Yammer 线程将放置在租户的中心位置。 Yammer 正在推出文件存储更改，它将在 SharePoint 中存储 Yammer 文件。 存储在 SharePoint 中的 Yammer 文件将置于与 Yammer 组关联的 SharePoint 网站。 SharePoint 组网站基于 [SharePoint](multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-microsoft-365.md#sharepoint-sites-and-groups)网站和组中列出的 PDL 逻辑。
+Yammer不是多地理位置工作负载。 Yammer中存储Yammer线程将放置在租户的中心位置。 Yammer推出文件存储更改，将在Yammer存储SharePoint。 Yammer中存储SharePoint文件将SharePoint组关联的Yammer网站。 SharePoint组网站基于 PDL 逻辑，如SharePoint[和组所述](multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-microsoft-365.md#sharepoint-sites-and-groups)。

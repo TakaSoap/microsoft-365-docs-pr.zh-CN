@@ -19,7 +19,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: b9707ec8-2247-4e25-9bad-f11ddbc686e4
-description: 了解如何验证电子邮件和域所有权以接管 Microsoft 365 中的非托管租户
+description: 了解如何验证电子邮件和域所有权以接管非托管租户Microsoft 365
 ms.openlocfilehash: 72278fd0e373848a79f9823e186b19bc1cb47770
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -39,9 +39,9 @@ ms.locfileid: "50914842"
 ## <a name="step-1-verify-your-email-address"></a>步骤 1：验证电子邮件地址
 
 > [!NOTE]
-> 如果在租户中启用了自助服务，用户可以自行订阅免费服务，如 Power BI。 这些步骤假定自助服务用户订阅已创建你想要以管理员角色接管的非托管租户。第一步，在非托管租户中创建用户上下文，使用 Power BI 演示管理员接管路径。
+> 如果在租户中启用了自助服务，用户可以自行订阅免费服务，Power BI服务。 这些步骤假定自助服务用户订阅已创建你想要以管理员角色接管的非托管租户。第一步，在非托管租户中创建用户上下文，Power BI管理员接管路径。
 
-1. 若要注册 Power BI，请转到 Power BI 网站，然后选择"与[Power BI](https://powerbi.com)专业版共享 (免费启动免费试用版  >  ) 。 
+1. 若要注册Power BI，请转到 Power BI[网站](https://powerbi.com)，然后选择"开始免费启动免费试用  >   (in Share with Power BI Pro") 。 
 
 2. 使用使用组织的域名的用户帐户进行注册， (如 `powerbiadmin@contoso.com`) 。 如果你的帐户已在使用中，请使用当前密码登录。
 
@@ -68,10 +68,10 @@ ms.locfileid: "50914842"
   
 ## <a name="related-articles"></a>相关文章
 
-YouTube：执行 Power BI 和[Microsoft 365 IT](https://www.youtube.com/watch?v=xt5EsrQBZZk)管理员接管的 3 个步骤
+[YouTube：为用户和用户执行 IT](https://www.youtube.com/watch?v=xt5EsrQBZZk)管理员接管Power BI 3 Microsoft 365
 
 [Azure AD 中的管理员接管](/azure/active-directory/users-groups-roles/domains-admin-takeover)
 
 [在组织中使用自助式注册](self-service-sign-up.md)
   
-[了解 Power BI 服务管理员角色](/power-bi/service-admin-role)
+[了解Power BI管理员角色](/power-bi/service-admin-role)

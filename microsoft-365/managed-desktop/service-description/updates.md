@@ -68,9 +68,9 @@ Microsoft 托管桌面使用四个 Azure AD 组来管理更新：
     <tr><td>操作系统的功能更新</td><td>0 天</td><td>30 天</td><td>60 天</td><td>90 天</td></tr>
     <tr><td>驱动程序/固件</td><td colspan="4">遵循质量更新计划</td></tr>
     <tr><td>防病毒定义</td><td colspan="4">通过每次扫描更新</td></tr>
-    <tr><td>适用于企业的 Microsoft 365 应用</td><td colspan="4"><a href="/microsoft-365/managed-desktop/get-started/m365-apps#updates-to-microsoft-365-apps">了解更多</a></td></tr>
-    <tr><td>Microsoft Edge</td><td colspan="4"><a href="/microsoft-365/managed-desktop/get-started/edge-browser-app#updates-to-microsoft-edge">了解更多</a></td></tr>
-    <tr><td>Microsoft Teams</td><td colspan="4"><a href="/microsoft-365/managed-desktop/get-started/teams#updates">了解更多</a></td></tr>
+    <tr><td>Microsoft 365 企业应用版</td><td colspan="4"><a href="/microsoft-365/managed-desktop/get-started/m365-apps#updates-to-microsoft-365-apps">了解详细信息</a></td></tr>
+    <tr><td>Microsoft Edge</td><td colspan="4"><a href="/microsoft-365/managed-desktop/get-started/edge-browser-app#updates-to-microsoft-edge">了解详细信息</a></td></tr>
+    <tr><td>Microsoft Teams</td><td colspan="4"><a href="/microsoft-365/managed-desktop/get-started/teams#updates">了解详细信息</a></td></tr>
 </table>
 
 >[!NOTE]

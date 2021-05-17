@@ -52,7 +52,7 @@ Microsoft Defender for Endpoint 支持 OAuth 2.0 协议从 API 拉取检测。
 
 有关 OAuth 规范详细信息，请参阅 [OAuth 网站](http://www.oauth.net)。
 
-Microsoft Defender for Endpoint 支持 _授权_ 流和客户端凭据流，以获取拉取检测的访问权限，Azure Active Directory (AAD) 作为授权服务器。 
+Microsoft Defender for Endpoint 支持 _授权_ 授予流和客户端凭据流来获取拉取检测的访问权限，Azure Active Directory (AAD) 授权服务器。 
 
 授权 _授予流_ 使用用户凭据获取授权代码，然后使用授权代码获取访问令牌。
 
@@ -64,7 +64,7 @@ Microsoft Defender for Endpoint 支持 _授权_ 流和客户端凭据流，以�
 >Microsoft Defender 安全中心将类似的警报检测合并到单个警报中。 此 API 基于您设置的查询参数，以原始形式拉取警报检测，从而使您可以应用自己的分组和筛选。 
 
 ## <a name="before-you-begin"></a>开始之前
-- 在调用 Microsoft Defender for Endpoint 终结点以拉取检测之前，你需要在 Azure Active Directory (AAD) 。 有关详细信息，请参阅在 [Microsoft Defender for Endpoint 中启用 SIEM 集成](enable-siem-integration.md)。
+- 在调用 Microsoft Defender for Endpoint 终结点以拉取检测之前，你需要在 AAD Azure Active Directory (启用 SIEM) 。 有关详细信息，请参阅在 [Microsoft Defender for Endpoint 中启用 SIEM 集成](enable-siem-integration.md)。
 
 - 请记下 Azure 应用程序注册过程中的下列值。需要使用这些值在服务或守护程序应用中配置 OAuth 流：
   - 应用程序 ID（应用程序专用）
@@ -106,7 +106,7 @@ resource=https%3A%2F%2Fgraph.windows.net&client_id=35e0f735-5fe4-4693-9e68-3de80
 借助访问令牌，你的应用可以向 Microsoft Defender for Endpoint API 提出经过身份验证的请求。 您的应用必须将访问令牌附加到各个请求的授权头中。
 
 ### <a name="request-syntax"></a>请求语法
-Method | 请求 URI
+方法 | 请求 URI
 :---|:---|
 GET| 使用适用于你地区的 URI。 <br><br> **对于欧盟**： `https://wdatp-alertexporter-eu.windows.com/api/alerts` </br> **对于美国**： `https://wdatp-alertexporter-us.windows.com/api/alerts` <br> **对于英国**： `https://wdatp-alertexporter-uk.windows.com/api/alerts` 
 
@@ -127,7 +127,7 @@ ago | string | 在下列时间范围内拉取警报： `(current_time - ago)` �
 limit | int | 定义要检索的警报数。 将基于定义的号码检索最新警报。<br><br> **注意**：如果未指定，将检索该时间范围内可用的所有警报。
 machinegroups | string | 指定要拉取警报的设备组。 <br><br> **注意**：如果未指定，将检索来自所有设备组的警报。 <br><br> 示例： <br><br> ```https://wdatp-alertexporter-eu.securitycenter.windows.com/api/alerts/?machinegroups=UKMachines&machinegroups=FranceMachines```
 DeviceCreatedMachineTags | string | 注册表中的单个设备标记。
-CloudCreatedMachineTags | string | 在 Microsoft Defender 安全中心中创建的设备标记。
+CloudCreatedMachineTags | string | 在活动中创建的设备Microsoft Defender 安全中心。
 
 ### <a name="request-example"></a>请求示例
 以下示例演示如何检索组织的所有检测。

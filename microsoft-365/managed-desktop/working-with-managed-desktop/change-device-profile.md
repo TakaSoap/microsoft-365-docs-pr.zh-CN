@@ -28,7 +28,7 @@ ms.locfileid: "51689989"
 
 你选择的设备配置文件将应用于你在第一步中选择的所有设备。 若要将单独的设备移动到不同的配置文件，你需要对每个设备配置文件重复此过程。 
 
-1. 在 Microsoft Endpoint Manager 中， **选择** 左侧   窗格中的"设备"。 在菜单 **的"Microsoft 托管桌面**"部分，选择" **设备"。**  
+1. In Microsoft Endpoint Manager， select **Devices**   in the left pane. 在菜单 **Microsoft 托管桌面"** 部分，选择" **设备"。**  
 2. 选中要修改的设备复选框。 
 3. 选择 **"更改设备配置文件";** 将打开一个飞入。
 4. 使用下拉菜单选择新的设备配置文件。

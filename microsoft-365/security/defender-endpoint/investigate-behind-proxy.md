@@ -45,11 +45,11 @@ Defender for Endpoint 通过网络保护支持高级 HTTP 级别监视。 打开
 
 可以使用以下模式控制网络保护：
 
-- **阻止** <br> 将阻止用户或应用连接到危险域。 你将能够在 Microsoft Defender 安全中心看到此活动。
-- **审核** <br> 不会阻止用户或应用连接到危险域。 但是，你仍将在 Microsoft Defender 安全中心看到此活动。
+- **阻止** <br> 将阻止用户或应用连接到危险域。 你将能够在活动中心内看到此Microsoft Defender 安全中心。
+- **审核** <br> 不会阻止用户或应用连接到危险域。 但是，你仍将看到此活动Microsoft Defender 安全中心。
 
 
-如果关闭网络保护，将不会阻止用户或应用连接到危险域。 你将在 Microsoft Defender 安全中心中看不到任何网络活动。
+如果关闭网络保护，将不会阻止用户或应用连接到危险域。 你将不会在 Microsoft Defender 安全中心 中看到任何网络Microsoft Defender 安全中心。
 
 如果未配置它，则默认情况下将关闭网络阻止。
 

@@ -39,7 +39,7 @@ ms.locfileid: "51893313"
 订阅 [适用于终结点开发人员的 Microsoft Defender 开发人员许可证](https://winatpregistration-prd.trafficmanager.net/Developer/UserAgreement?Length=9)。 订阅允许你将 Microsoft Defender for Endpoint 租户与最多 10 台设备一起用于开发与 Microsoft Defender for Endpoint 集成的解决方案。 
 
 ## <a name="step-2-fulfill-the-solution-validation-and-certification-requirements"></a>步骤 2：满足解决方案验证和认证要求
-技术合作伙伴认证其集成工作的最佳方法就是让联合客户批准建议的集成设计 (客户可以使用 Microsoft Defender 安全中心) 合作伙伴应用程序页面中的推荐合作伙伴选项，并[](https://securitycenter.microsoft.com/interoperability/partners)经过测试并降级到 Microsoft Defender for Endpoint 团队。
+技术合作伙伴认证其集成工作的最佳方法就是让联合客户批准建议的集成设计 (客户可以使用 Microsoft Defender 安全中心) 合作伙伴应用程序页面中的推荐合作伙伴选项，并测试并降级到 Microsoft [](https://securitycenter.microsoft.com/interoperability/partners) Defender for Endpoint 团队。
 
 Microsoft Defender for Endpoint 团队审阅并批准集成后，我们将指导你成为 Microsoft 智能安全协会的合作伙伴。
 
@@ -56,7 +56,7 @@ Microsoft Defender for Endpoint 支持使用嵌入在 Microsoft Defender [](part
 3. 提供 15 字的产品说明。
 4. 链接到客户完成集成或博客文章的登陆页面，该集成或博客文章将为客户提供足够的信息。 营销和工程团队应审阅任何新闻稿，包括 Microsoft Defender for Endpoint 产品名称。 等待至少 10 天，待审阅过程完成。
 5.  如果使用多租户 Azure AD 方法，我们将需要 Azure AD 应用程序名称来跟踪应用程序的使用情况。
-6. 在User-Agent Microsoft Defender for Endpoint 公共 API 集或 Graph 安全性 API 的每个 API 调用中包括"安全"字段。 这将用于统计目的、疑难解答和合作伙伴识别。 此外，此步骤是 Microsoft Intelligent Security Association (MISA) 。
+6. 在User-Agent Microsoft Defender for Endpoint 公共 API 集或安全中心 API 的每个 API 调用Graph字段。 这将用于统计目的、疑难解答和合作伙伴识别。 此外，此步骤是 Microsoft Intelligent Security Association (MISA) 。
 
     请按以下步骤操作：
     

@@ -32,16 +32,16 @@ ms.locfileid: "50919278"
 Microsoft 365 和 Office 365 企业版组织默认已打开审核日志搜索。 这包括具有 E3/G3 或 E5/G5 订阅的组织。 当审核日志中心中启用搜索时，组织的用户和管理员活动将记录在 审核日志 中，并保留 90 天，最多保留一年，具体取决于分配给用户的许可证。 但是，您的组织可能出于不希望记录并保留数据审核日志的原因。 在这种情况下，全局管理员可能会决定在 Microsoft 365 中关闭审核。
 
 > [!IMPORTANT]
-> 如果关闭 Microsoft 365 审核日志搜索，则你无法使用 Office 365 管理活动 API 或 Azure Sentinel 访问组织的审核数据。 按照本文中的步骤关闭 审核日志 搜索意味着在使用安全 & 合规中心搜索 审核日志 或在 Exchange Online PowerShell 中运行 **Search-UnifiedAuditLog** cmdlet 时不会返回任何结果。 这也意味着审核日志无法通过 Office 365 管理活动 API 或 Azure Sentinel 提供。
+> 如果关闭 审核日志 中的Microsoft 365搜索，则你无法通过 Office 365 管理活动 API 或 Azure Sentinel 访问组织的审核数据。 按照本文中的步骤关闭 审核日志 搜索意味着在使用安全 & 合规中心搜索 审核日志 或在 Exchange Online PowerShell 中运行 **Search-UnifiedAuditLog** cmdlet 时不会返回任何结果。 这也意味着审核日志无法通过 Office 365管理活动 API 或 Azure Sentinel 提供。
   
 ## <a name="before-you-turn-audit-log-search-on-or-off"></a>打开或审核日志搜索之前
 
-- 您必须在 Exchange Online 中分配审核日志角色，审核日志 Microsoft 365 组织中启用或关闭搜索功能。 默认情况下，此角色分配给 Exchange 管理中心中"权限"页上的"合规性管理"和"组织管理"角色组。 Microsoft 365 中的全局管理员是 Exchange Online 中组织管理角色组的成员。 
+- 您必须在组织中分配有"审核日志"Exchange Online，审核日志启用或关闭Microsoft 365搜索。 默认情况下，此角色分配给管理中心中"权限"页上的"合规性管理"和"组织Exchange组。 Microsoft 365中的全局管理员是组织中组织管理角色Exchange Online。 
     
     > [!NOTE]
-    > 用户必须分配有 Exchange Online 中的权限，才能审核日志或关闭搜索。 如果在安全与合规中心的"权限"页上为用户分配"审核日志"角色&，他们将无法打开或关闭审核日志搜索。 这是因为基础 cmdlet 是 Exchange Online PowerShell cmdlet。 
+    > 用户必须分配有权限才能Exchange Online或审核日志搜索。 如果在安全与合规中心的"权限"页上为用户分配"审核日志"角色&，他们将无法打开或关闭审核日志搜索。 这是因为基础 cmdlet 是一个Exchange Online PowerShell cmdlet。 
     
-- 有关搜索安全与合规中心的分步审核日志，请参阅在安全审核日志[搜索&搜索。](search-the-audit-log-in-security-and-compliance.md) 有关 Microsoft 365 管理活动 API 详细信息，请参阅 [Microsoft 365 管理 API 入门](/office/office-365-management-api/get-started-with-office-365-management-apis)。
+- 有关搜索安全与合规中心的分步审核日志，请参阅在安全审核日志[搜索&搜索。](search-the-audit-log-in-security-and-compliance.md) 有关管理活动 API Microsoft 365，请参阅 Microsoft 365 管理[API 入门](/office/office-365-management-api/get-started-with-office-365-management-apis)。
 
 - 若要验证审核日志搜索是否打开，可以在 Exchange Online PowerShell 中运行以下命令：
 
@@ -53,7 +53,7 @@ Microsoft 365 和 Office 365 企业版组织默认已打开审核日志搜索。
     
 ## <a name="turn-on-audit-log-search"></a>打开"审核日志搜索"
 
-如果未审核日志启用搜索，可以在合规中心或通过使用 Exchange Online PowerShell 将其打开。 打开搜索后，可能需要几个小时审核日志才能在搜索搜索时返回审核日志。
+如果审核日志未为组织启用搜索，可以在合规中心或通过使用 PowerShell Exchange Online它。 打开搜索后，可能需要几个小时审核日志才能在搜索搜索时返回审核日志。
   
 ### <a name="use-the-compliance-center-to-turn-on-audit-log-search"></a>使用合规中心启用审核日志搜索
 
@@ -73,7 +73,7 @@ Microsoft 365 和 Office 365 企业版组织默认已打开审核日志搜索。
 
 1. [连接到 Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)
 
-2. 运行以下 PowerShell 命令以在 Office 365 中审核日志搜索功能。
+2. 运行以下 PowerShell 命令以在 Office 365 中审核日志搜索。
 
     ```powershell
     Set-AdminAuditLogConfig -UnifiedAuditLogIngestionEnabled $true
@@ -93,7 +93,7 @@ Microsoft 365 和 Office 365 企业版组织默认已打开审核日志搜索。
     Set-AdminAuditLogConfig -UnifiedAuditLogIngestionEnabled $false
     ```
 
-3. 一段时间之后，确认审核日志搜索已关闭， (禁用) 。 可通过 2 种方法执行此操作：
+3. 一段时间之后，确认审核日志搜索已关闭， (禁用) 。 可以通过两种方式来执行此操作：
 
     - 在 Exchange Online PowerShell 中，运行以下命令：
 

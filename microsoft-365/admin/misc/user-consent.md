@@ -1,5 +1,5 @@
 ---
-title: 在 Microsoft 365 中管理用户对应用的同意
+title: 管理用户对应用程序中应用Microsoft 365
 f1.keywords:
 - CSH
 ms.author: kwekua
@@ -19,7 +19,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 7e453a40-66df-44ab-92a1-96786cb7fb34
-description: 了解用户同意应用，以及如何启用应用以允许第三方应用访问用户的 Microsoft 365 信息。
+description: 了解用户对应用的同意，以及如何启用它们以允许第三方应用访问用户Microsoft 365信息。
 ms.openlocfilehash: 1f6f08161d6dd85964f07ec4d48f9f2cc23a1ead
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -27,9 +27,9 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 03/19/2021
 ms.locfileid: "50914554"
 ---
-# <a name="managing-user-consent-to-apps-in-microsoft-365"></a>在 Microsoft 365 中管理用户对应用的同意
+# <a name="managing-user-consent-to-apps-in-microsoft-365"></a>管理用户对应用程序中应用Microsoft 365
 
-此设置控制用户是否可以同意使用 OpenID Connect 和 OAuth 2.0 进行登录和请求访问数据的应用。 可以从你自己的组织创建应用，也可以来自另一个 Office 365 组织或第三方。
+此设置控制用户是否可以同意使用 OpenID 连接和 OAuth 2.0 进行登录和请求访问数据的应用。 可以从你自己的组织创建应用，也可以来自另一Office 365组织或第三方。
 
 如果启用此设置，这些应用将要求用户授予访问组织数据的权限，用户可以选择是否允许。 如果关闭此设置，则管理员必须先同意这些应用，用户才能使用它们。 在这种情况下，请考虑在 Azure 门户中设置管理员同意工作流，以便用户可以发送管理员批准请求以使用任何阻止的应用。
 
@@ -40,7 +40,7 @@ ms.locfileid: "50914554"
 
 下面将了解如何打开或关闭用户对应用的同意。
 
-1. 在管理中心中，转到 **"设置** \> **""组织** 设置""服务"页，  >  [](https://go.microsoft.com/fwlink/p/?linkid=2053743)然后选择"**用户同意应用"。**
+1. In the admin center， go to the **设置** \> **Org settings**  >  [Services](https://go.microsoft.com/fwlink/p/?linkid=2053743) page， and then select **User consent to apps**.
 
 2. 在" **用户同意应用"页上** ，选择打开或关闭用户同意的选项。
 

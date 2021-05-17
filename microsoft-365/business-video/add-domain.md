@@ -36,14 +36,14 @@ ms.locfileid: "51903738"
 
 ## <a name="try-it"></a>试一试！
 
-1. 在 Microsoft 365 管理中心中，选择"设置 **"。**
+1. In the Microsoft 365 admin center， choose **Setup**.
 1. 在 **"设置自定义域"下，选择**"查看 **"。**
 1. 选择 **"管理**"，然后选择"**添加域"。**
 1. 输入要添加的新域名，然后选择"下一步 **"。**
 1. 登录域注册机构（在这种情况下为 GoDaddy），然后选择"下一步 **"。**
 1. 如果系统提示，登录注册机构，然后选择"授权 **"。**
 1. 选择 **"为我添加 DNS 记录"，** 然后选择"下一 **步"。**
-1. 选择新域的服务并清除将由其他域处理的任何服务的复选框。 例如，如果你只想将新域用于电子邮件，请选择 **"Exchange"，** 然后清除 **"Skype for Business"** 和 **"Office 365** 移动设备管理"复选框。
+1. 选择新域的服务并清除将由其他域处理的任何服务的复选框。 例如，如果你只想将新域用于电子邮件，请选择"Exchange"，并清除"新建"和"Skype for Business Office 365 移动设备管理"。  
 1. 选择 **"下** 一 **步"，"** 授权 **"，"** 下一步"，然后选择"**完成"。** 已添加新域。
 
 若要在你的新域中接收电子邮件，你需要为每个用户添加新的电子邮件别名：
@@ -56,4 +56,4 @@ ms.locfileid: "51903738"
 
 ## <a name="related-content"></a>相关内容
 
-将域添加到[Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain) (文章) 添加[DNS](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider)记录以连接域 (文章) 更改名称服务器以设置具有任何域注册机构的[Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/change-nameservers-at-any-domain-registrar) (文章) [Domains FAQ](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) (article) 
+[](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain)将域添加到 Microsoft 365 (文章) 添加[DNS](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider)记录以连接您的域 (文章) [更改名称服务器](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/change-nameservers-at-any-domain-registrar)以设置 Microsoft 365 与任何域注册机构 (文章) [Domains FAQ](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) (article) 

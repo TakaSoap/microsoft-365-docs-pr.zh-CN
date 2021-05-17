@@ -17,7 +17,7 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Microsoft 365 分类器是一种工具，你可以训练它，通过提供要查看的示例来识别各种类型的内容。 本文演示如何创建和训练自定义分类器以及如何重新设置它们以提高准确性。
+description: 一Microsoft 365分类器是一种工具，你可以训练它，通过提供要查看的示例来识别各种类型的内容。 本文演示如何创建和训练自定义分类器以及如何重新设置它们以提高准确性。
 ms.openlocfilehash: 90e47ec94528bbadeb98dc9eb590929e25ae6ff1
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -27,7 +27,7 @@ ms.locfileid: "50918176"
 ---
 # <a name="get-started-with-trainable-classifiers"></a>可训练的分类器入门
 
-Microsoft 365 可训练分类器是一种工具，你可以训练它，通过提供要查看的示例来识别各种类型的内容。 接受培训后，可以使用它标识用于应用 Office 敏感度标签、通信合规性策略和保留标签策略的项目。
+可Microsoft 365分类器是一种工具，你可以训练它，通过提供要查看的示例来识别各种类型的内容。 接受培训后，可用于标识用于应用敏感度Office、通信合规性策略和保留标签策略的项目。
 
 首先，创建自定义可训练分类器涉及为分类器提供人工选取且与类别积极匹配的示例。 然后，处理完这些样本后，通过向分类器提供正样本和负样本的组合来测试分类器预测的能力。 本文介绍了如何创建和训练自定义分类器，以及如何在自定义可训练分类器及其生存期内通过重新培训提高这些分类器的性能。
 
@@ -40,13 +40,13 @@ Microsoft 365 可训练分类器是一种工具，你可以训练它，通过提
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWyGL7]
 
 
-## <a name="prerequisites"></a>先决条件
+## <a name="prerequisites"></a>必备条件
 
 ### <a name="licensing-requirements"></a>许可要求
 
-分类器是 Microsoft 365 E5 或 E5 合规性功能。 你必须拥有其中一个订阅，以使用这些订阅。
+分类器是Microsoft 365 E5 E5 合规性功能。 你必须拥有其中一个订阅，以使用这些订阅。
 
-### <a name="permissions"></a>权限
+### <a name="permissions"></a>Permissions
 
 若要访问 UI 中的分类器：： 
 
@@ -73,7 +73,7 @@ Microsoft 365 可训练分类器是一种工具，你可以训练它，通过提
 ![trainable-classifier-timeline](../media/trainable-classifier-deployment-timeline_border.png)
 
 > [!TIP]
-> 可训练分类器首次需要选择加入。 Microsoft 365 需要 12 天才能完成组织内容的基准评估。 请与全局管理员联系以启动选择加入过程。
+> 可训练分类器首次需要选择加入。 完成组织内容的Microsoft 365评估需要 12 天。 请与全局管理员联系以启动选择加入过程。
 
 ### <a name="overall-workflow"></a>总体工作流
 
@@ -95,7 +95,7 @@ Microsoft 365 可训练分类器是一种工具，你可以训练它，通过提
 
 ## <a name="how-to-create-a-trainable-classifier"></a>如何创建可训练分类器
 
-1. 收集 50-500 个种子内容项。 这些必须只是强烈表示您希望可训练分类器积极标识为分类类别的内容类型的示例。 有关受支持的文件类型，请参阅 [SharePoint Server](/sharepoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types) 中的默认已爬网文件扩展名和分析文件类型。
+1. 收集 50-500 个种子内容项。 这些必须只是强烈表示您希望可训练分类器积极标识为分类类别的内容类型的示例。 有关受支持的[文件类型](/sharepoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types)，请参阅 SharePoint Server 中的默认已爬网文件扩展名和分析文件类型。
 
    > [!IMPORTANT]
    > 种子和测试示例项不得加密，并且必须为英语。
@@ -103,12 +103,12 @@ Microsoft 365 可训练分类器是一种工具，你可以训练它，通过提
    > [!IMPORTANT]
    > 请确保种子集内的项目是 **类别的** 强示例。 可训练分类器最初基于你为它设定种子的模型构建模型。 分类器假定所有种子样本都是强正数，并且无法知道样本是该类别的弱匹配还是负匹配。
 
-2. 将种子内容放在专用于仅持有种子内容的 SharePoint Online *文件夹中*。 记下网站、库和文件夹 URL。
+2. 将种子内容放在专用于SharePoint种子内容的联机 *文件夹中*。 记下网站、库和文件夹 URL。
 
    > [!TIP]
    > 如果为种子数据创建新的站点和文件夹，请至少允许一小时对位置编制索引，然后再创建使用该种子数据的可训练分类器。
 
-3. 使用合规性管理员或安全管理员角色访问权限登录到 Microsoft 365 合规中心，然后打开 **Microsoft 365** 合规中心或 **Microsoft 365 安全** 中心  >  **数据分类**。
+3. 使用合规性管理员Microsoft 365安全管理员角色访问权限登录到合规性中心，然后打开Microsoft 365 **中心** 或Microsoft 365 **安全中心**  >  **数据分类。**
 
 4. 选择" **可训练分类器"** 选项卡。
 
@@ -116,7 +116,7 @@ Microsoft 365 可训练分类器是一种工具，你可以训练它，通过提
 
 6. 为希望此可训练分类器标识的项目类别的 和 字段填写相应的 `Name` `Description` 值。
 
-7. 从步骤 2 中为种子内容网站选取 SharePoint Online 网站、库和文件夹 URL。 选择 `Add` 。
+7. 从SharePoint 2 中为种子内容网站选择"联机网站、库和文件夹 URL"。 选择 `Add` 。
 
 8. 查看设置并选择 `Create trainable classifier` 。
 
@@ -127,19 +127,19 @@ Microsoft 365 可训练分类器是一种工具，你可以训练它，通过提
     > [!div class="mx-imgBorder"]
     > ![可供测试的可训练分类器](../media/classifier-trainable-ready-to-test-detail.png)
 
-11. 收集至少 200 个最大 (10，000) 测试内容项，以获得最佳结果。 它们应该是强正值、强负和一些本质上不太明显的项目的组合。 有关受支持的文件类型，请参阅 [SharePoint Server](/sharepoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types) 中的默认已爬网文件扩展名和分析文件类型。
+11. 收集至少 200 个最大 (10，000) 测试内容项，以获得最佳结果。 它们应该是强正值、强负和一些本质上不太明显的项目的组合。 有关受支持的[文件类型](/sharepoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types)，请参阅 SharePoint Server 中的默认已爬网文件扩展名和分析文件类型。
 
     > [!IMPORTANT]
     > 示例项目不得加密，并且必须为英语。
 
-12. 将测试内容放在专用于仅保持测试内容的 SharePoint Online *文件夹中*。 记下 SharePoint Online 网站、库和文件夹 URL。
+12. 将测试内容放在专用于SharePoint测试内容的联机 *文件夹中*。 记下联机SharePoint库和文件夹 URL。
 
     > [!TIP]
     > 如果为测试数据创建新的站点和文件夹，请至少允许一小时对位置编制索引，然后再创建使用该种子数据的可训练分类器。
 
 13. 选择 `Add items to test` 。
 
-14. 从步骤 12 中为测试内容网站选取 SharePoint Online 网站、库和文件夹 URL。 选择 `Add` 。
+14. 从SharePoint 12 中选取测试内容网站的联机网站、库和文件夹 URL。 选择 `Add` 。
 
 15. 通过选择 完成向导 `Done` 。 可训练分类器最多需要一小时处理测试文件。
 
@@ -150,7 +150,7 @@ Microsoft 365 可训练分类器是一种工具，你可以训练它，通过提
 
 17. 选择 `Tested items to review` 选项卡查看项目。
 
-18. Microsoft 365 将一次显示 30 个项目。 查看它们，在 `We predict this item is "Relevant". Do you agree?` 框中选择 或 `Yes` `No` 或 `Not sure, skip to next item` 。 模型准确性每 30 个项目自动更新一次。
+18. Microsoft 365一次显示 30 个项目。 查看它们，在 `We predict this item is "Relevant". Do you agree?` 框中选择 或 `Yes` `No` 或 `Not sure, skip to next item` 。 模型准确性每 30 个项目自动更新一次。
 
     > [!div class="mx-imgBorder"]
     > !["审阅项目"框](../media/classifier-trainable-review-detail.png)
@@ -162,4 +162,4 @@ Microsoft 365 可训练分类器是一种工具，你可以训练它，通过提
 
 20. 发布分类器。
 
-21. 发布分类器后，分类器将用作[Office](apply-sensitivity-label-automatically.md)自动标记（带有敏感度标签）中的一个[](apply-retention-labels-automatically.md#configuring-conditions-for-auto-apply-retention-labels)条件，根据条件和通信合规性自动应用[保留标签策略](communication-compliance.md)。
+21. 发布分类器后，将用作使用敏感度标签Office自动[](apply-sensitivity-label-automatically.md)标记的条件，根据条件和通信合规性自动应用保留[标签策略](communication-compliance.md)。 [](apply-retention-labels-automatically.md#configuring-conditions-for-auto-apply-retention-labels)

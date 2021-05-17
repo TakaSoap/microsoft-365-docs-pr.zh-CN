@@ -20,7 +20,7 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: 了解如何让用户在 Microsoft 365 商业高级版中重置自己的密码。
+description: 了解如何让用户在 Microsoft 365 商业高级版 中重置自己的Microsoft 365 商业高级版。
 ms.openlocfilehash: 62f82f106327c5378310bac0d41fde8462449329
 ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
 ms.translationtype: MT
@@ -32,11 +32,11 @@ ms.locfileid: "51903702"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3AY8S?autoplay=false]
 
-若要让用户重置自己的密码而无需每次联系你，可以在 Microsoft 365 商业高级版中设置自助服务密码重置。
+若要让用户重置自己的密码而无需每次联系您，可以在 Microsoft 365 商业高级版 中设置自助服务密码重置。
 
 ## <a name="try-it"></a>试一试！
 
-1. 在 Microsoft 365 管理中心的左侧导航窗格中，选择"设置"，然后选择"安全&**隐私"。**
+1. 在"Microsoft 365管理中心"的左侧导航窗格中，选择"设置"，**然后选择**"安全&**隐私"。**
 1. 在 **"让你的用户重置自己的密码"下**，选择 **"Azure AD 管理中心"。**
 1. 在左侧导航窗格中，选择"**用户"，** 然后在"用户 **-** 所有用户"页上，选择"**密码重置"。**
 1. 选择 **"全部**"以启用自助服务密码重置，然后选择"保存 **"。**

@@ -34,7 +34,7 @@ ms.locfileid: "51688965"
 
 >想要体验 Microsoft Defender for Endpoint？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-main-abovefoldlink&rtc=1)
 
-Microsoft Defender for Endpoint 中的 Web 保护是一项由 [Web 威胁](web-threat-protection.md) 防护和 Web 内容筛选 [构成的功能](web-content-filtering.md)。 通过 Web 保护，您可以保护设备免受 Web 威胁，并帮助您控制不需要的内容。 可以通过访问"报告"或"Web 保护"，在 Microsoft Defender 安全中心 **> Web 保护报告**。
+Microsoft Defender for Endpoint 中的 Web 保护是一项由 [Web 威胁](web-threat-protection.md) 防护和 Web 内容筛选 [构成的功能](web-content-filtering.md)。 通过 Web 保护，您可以保护设备免受 Web 威胁，并帮助您控制不需要的内容。 可以在 Web 保护中查找 Web Microsoft Defender 安全中心，> **Web 保护**。
 
 ![所有 Web 保护卡的图像](images/web-protection.png)
 

@@ -83,7 +83,7 @@ ms.locfileid: "51860383"
    Set-CaseHoldPolicy <policyname> -RetryDistribution
    ```
 
-## <a name="more-information"></a>更多信息
+## <a name="more-information"></a>详细信息
 
 - "建议的做法"部分中有关为多个用户更新保留策略的指南是系统阻止同时更新保留策略的结果。 这意味着，当更新的保留策略应用于新内容位置且保留策略为挂起状态时，其他内容位置无法添加到保留策略。 以下是一些需要记住的以帮助你缓解此问题的一些内容：
   

@@ -33,7 +33,7 @@ ms.locfileid: "51759950"
 ![显示管理员角色的图](../../media/roles-main-page.png)
 
 > [!TIP]
-> 是否在查找详细的角色说明？ 请查看 Azure [Active Directory 中的](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles) 管理员角色权限和 [关于管理员角色](/microsoft-365/admin/add-users/about-admin-roles)。
+> 是否在查找详细的角色说明？ 请查看管理员[角色和关于管理员Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)[中的管理员角色权限](/microsoft-365/admin/add-users/about-admin-roles)。
 
 ## <a name="about-the-admin-roles-page"></a>关于管理员角色页面
 
@@ -43,7 +43,7 @@ ms.locfileid: "51759950"
 
 |||
 |:-----|:-----|
-|  <br/> |使用 **"导出管理员** 列表"获取组织中所有管理员用户的完整列表。 该列表存储在 Excel .csv 文件中。   <br/> |
+|  <br/> |使用 **"导出管理员** 列表"获取组织中所有管理员用户的完整列表。 该列表存储在一个Excel .csv文件中。   <br/> |
 |  <br/> |使用 **"** 搜索"搜索管理员角色，并查看分配到该角色的用户。   <br/> |
 |  <br/> |使用 **筛选器** 更改显示的管理员角色的视图。   <br/> |
 
@@ -56,7 +56,7 @@ ms.locfileid: "51759950"
 
 ### <a name="exchange-admin"></a>Exchange 管理员
 
-为需要查看和管理用户的电子邮件邮箱、Microsoft 365 组和 Exchange Online 的用户分配 Exchange 管理员角色。 他们还可以打开并管理向 Microsoft 支持部门提出的服务请求。 [了解更多](/microsoft-365/admin/add-users/about-exchange-online-admin-role)
+将Exchange管理员角色分配给需要查看和管理用户的电子邮件邮箱、Microsoft 365组Exchange Online。 他们还可以打开并管理向 Microsoft 支持部门提出的服务请求。 [了解详细信息](/microsoft-365/admin/add-users/about-exchange-online-admin-role)
 
 ### <a name="global-admin"></a>全局管理员
 
@@ -64,27 +64,27 @@ ms.locfileid: "51759950"
 
 ### <a name="global-reader"></a>全局读取者
 
-将全局读者管理员角色分配给需要查看全局管理员可查看的所有管理中心中的管理员功能和设置的用户。 全局读者管理员角色无法编辑任何设置。 [了解更多](/microsoft-365/admin/add-users/about-admin-roles#roles-available-in-the-microsoft-365-admin-center)
+将全局读者管理员角色分配给需要查看全局管理员可查看的所有管理中心中的管理员功能和设置的用户。 全局读者管理员角色无法编辑任何设置。 [了解详细信息](/microsoft-365/admin/add-users/about-admin-roles#roles-available-in-the-microsoft-365-admin-center)
 
 ### <a name="helpdesk-admin"></a>支持管理员
 
-将支持管理员角色分配给想要重置密码的用户，强制用户注销任何安全问题。 他们还可以打开并管理向 Microsoft 支持部门提出的服务请求。 支持人员管理员只能帮助非管理员用户和分配了这些角色的用户：目录读取者、来宾邀请者、支持人员管理员、消息中心读者和报告阅读器。 [了解更多](/microsoft-365/admin/add-users/about-admin-roles#roles-available-in-the-microsoft-365-admin-center)
+将支持管理员角色分配给想要重置密码的用户，强制用户注销任何安全问题。 他们还可以打开并管理向 Microsoft 支持部门提出的服务请求。 支持人员管理员只能帮助非管理员用户和分配了这些角色的用户：目录读取者、来宾邀请者、支持人员管理员、消息中心读者和报告阅读器。 [了解详细信息](/microsoft-365/admin/add-users/about-admin-roles#roles-available-in-the-microsoft-365-admin-center)
 
 ### <a name="service-admin"></a>服务管理员
 
-为需要为 Azure、Microsoft 365 和 Office 365 服务创建服务请求的用户分配服务管理员角色。 [了解更多](/microsoft-365/admin/add-users/about-admin-roles#roles-available-in-the-microsoft-365-admin-center)
+将服务管理员角色分配给需要为 Azure、Microsoft 365和 Office 365服务创建服务请求的用户。 [了解详细信息](/microsoft-365/admin/add-users/about-admin-roles#roles-available-in-the-microsoft-365-admin-center)
 
 ### <a name="sharepoint-admin"></a>SharePoint 管理员
 
-购买 Microsoft 365 订阅时，将自动创建团队网站，全局管理员设置为网站集主管理员。 向要访问 SharePoint 管理中心的用户分配 SharePoint 管理员角色。 具有 SharePoint 管理员角色的用户可以创建和管理网站集、指定网站集管理员和管理用户配置文件。 具有 SharePoint 管理员角色的用户还可以管理 Microsoft 365 组，并通过 Microsoft 支持打开服务请求。 [了解更多](/sharepoint/sharepoint-admin-role)
+购买订阅Microsoft 365，将自动创建团队网站，全局管理员设置为网站集主管理员。 将SharePoint管理员角色分配给要访问管理中心SharePoint用户。 具有管理SharePoint用户可以创建和管理网站集、指定网站集管理员和管理用户配置文件。 具有管理员SharePoint用户还可以管理Microsoft 365组，并通过 Microsoft 支持打开服务请求。 [了解详细信息](/sharepoint/sharepoint-admin-role)
 
 ### <a name="teams-service-admin"></a>Teams 服务管理员
 
-将 Teams 管理员角色分配给你要访问和管理 Skype 管理中心& Teams 管理员角色。 具有 Teams 管理员角色的用户还可以管理 Microsoft 365 组，并通过 Microsoft 支持打开服务请求。 [了解更多](/MicrosoftTeams/using-admin-roles)
+向Teams管理中心的用户分配 Teams & Skype 管理员角色。 具有管理员Teams用户还可以管理Microsoft 365组，并通过 Microsoft 支持打开服务请求。 [了解详细信息](/MicrosoftTeams/using-admin-roles)
 
 ### <a name="user-admin"></a>用户管理员
 
-向要访问和管理用户密码重置和管理用户和组的用户分配用户管理员角色。 他们还可以打开并管理向 Microsoft 支持部门提出的服务请求。 [了解更多](/microsoft-365/admin/add-users/about-admin-roles#roles-available-in-the-microsoft-365-admin-center)
+向要访问和管理用户密码重置和管理用户和组的用户分配用户管理员角色。 他们还可以打开并管理向 Microsoft 支持部门提出的服务请求。 [了解详细信息](/microsoft-365/admin/add-users/about-admin-roles#roles-available-in-the-microsoft-365-admin-center)
 
 ## <a name="compare-roles"></a>比较角色
 

@@ -39,11 +39,11 @@ Microsoft Defender for Endpoint 设备控件通过监视和控制组织中设备
 审核事件包括：
 
 - **USB 驱动器装入和卸载：** 装载或卸载 USB 驱动器时生成的审核事件。
-- **PnP：** 即插即用审核事件在可移动存储、打印机或Bluetooth媒体连接时生成。
+- **PnP：** 即插即用审核事件在可移动存储、打印机或蓝牙媒体连接时生成。
 
 ## <a name="monitor-device-control-security"></a>监视设备控制安全性
 
-Microsoft Defender for Endpoint 中的设备控制使安全管理员能够使用工具通过报告跟踪其组织的设备控制安全性。 可以通过访问"报告""设备保护"，在 Microsoft 365 安全> **报告**。
+Microsoft Defender for Endpoint 中的设备控制使安全管理员能够使用工具通过报告跟踪其组织的设备控制安全性。 你可以找到安全中心中的设备Microsoft 365报告，>**设备保护**" 。
 
 "报告"仪表板上的设备保护卡片显示过去 180 天内媒体类型生成的审核事件数。
 
@@ -61,7 +61,7 @@ Microsoft Defender for Endpoint 中的设备控制使安全管理员能够使用
 
 - **一般详细信息：** 日期、操作模式和此事件的策略。
 - **媒体信息：** 媒体信息包括媒体名称、类名称、类 GUID、设备 ID、供应商 ID、卷、序列号和总线类型。
-- **位置详细信息：** 设备名称和 MDATP 设备 ID。
+- **位置详细信息：** 设备名称和MDATP设备 ID。
 
 > [!div class="mx-imgBorder"]
 > ![FilterOnDeviceControlReport](images/devicecontrolreportfilter.png)

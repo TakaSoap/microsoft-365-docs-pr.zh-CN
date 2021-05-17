@@ -96,7 +96,7 @@ ms.locfileid: "50906862"
 
     - 保留" **将原始列名称用作前缀"复选框** 选中以将 AuditData 前缀添加到列名称;例如 **，AuditData.RecordType** 或 **AuditData.SourceFileName**。
 
-9. 单击 **确定**。
+9. 单击“**确定**”。
 
     **AuditData** 列拆分为多列。 每个新列对应于 AuditData JSON 对象中的一个属性。 列的每一行都包含属性的值。 如果属性不包含值，则显示 *null* 值。 在 Excel 中，值为 null 的单元格为空。
   

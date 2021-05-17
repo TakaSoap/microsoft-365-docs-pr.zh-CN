@@ -1,7 +1,7 @@
 ---
 title: 在 Windows 虚拟桌面中载入 Windows 10 多会话设备
-description: 阅读本文中有关在 Windows 虚拟桌面中载入 Windows 10 多会话设备
-keywords: Windows 虚拟桌面， WVD， microsoft defender， 终结点， 载入
+description: 阅读本文中有关在虚拟桌面Windows 10多会话设备载入Windows内容
+keywords: Windows虚拟桌面， WVD， microsoft defender， 终结点， 载入
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: manage
@@ -26,19 +26,19 @@ ms.locfileid: "51764313"
 6 分钟阅读 
 
 应用于： 
-- 在 Windows 虚拟桌面和 WVD (上运行的 Windows 10 多)  
+- Windows 10虚拟桌面 Windows WVD (上运行的多)  
 
-Microsoft Defender for Endpoint 支持监视 VDI 和 Windows 虚拟桌面会话。 根据组织的需求，你可能需要实现 VDI 或 Windows 虚拟桌面会话，以帮助你的员工从非托管设备、远程位置或类似方案访问公司数据和应用。 通过 Microsoft Defender for Endpoint，你可以监视这些虚拟机的异常活动。
+Microsoft Defender for Endpoint 支持监视 VDI Windows虚拟桌面会话。 根据组织的需求，你可能需要实现 VDI 或 Windows 虚拟桌面会话，以帮助你的员工从非托管设备、远程位置或类似方案访问公司数据和应用。 通过 Microsoft Defender for Endpoint，你可以监视这些虚拟机的异常活动。
 
- ## <a name="before-you-begin"></a>准备工作
-熟悉非永久性 [VDI 的注意事项](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/configure-endpoints-vdi#onboard-non-persistent-virtual-desktop-infrastructure-vdi-devices-1)。 虽然 [Windows 虚拟](https://docs.microsoft.com/azure/virtual-desktop/overview) 桌面不提供非持久性选项，但它确实提供了使用黄金 Windows 映像的方法，该映像可用于预配新主机和重新部署计算机。 这会增加环境中的变化，从而影响在 Microsoft Defender 终结点门户中创建和维护的条目，从而可能降低安全分析师的可见性。
+ ## <a name="before-you-begin"></a>开始之前
+熟悉非永久性 [VDI 的注意事项](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/configure-endpoints-vdi#onboard-non-persistent-virtual-desktop-infrastructure-vdi-devices-1)。 尽管[Windows](https://docs.microsoft.com/azure/virtual-desktop/overview)桌面不提供非持久性选项，但它确实提供了使用黄金 Windows 映像的方法，该映像可用于预配新主机和重新部署计算机。 这会增加环境中的变化，从而影响在 Microsoft Defender 终结点门户中创建和维护的条目，从而可能降低安全分析师的可见性。
 
 > [!NOTE]
 > 根据你选择的载入方法，设备可以在 Microsoft Defender for Endpoint 门户中显示为： 
 > - 每个虚拟桌面的单个条目 
 > - 每个虚拟桌面的多个条目 
 
-Microsoft 建议将 Windows 虚拟桌面作为每个虚拟桌面的单个条目载入。 这可确保 Microsoft Defender 终结点门户中的调查体验基于计算机名称在一台设备的上下文中。 经常删除和重新部署 WVD 主机的组织应强烈建议使用此方法，因为它会阻止在 Microsoft Defender for Endpoint 门户中创建同一台计算机的多个对象。 这可能会导致调查事件时混淆。 对于测试或非可变环境，你可以选择不同的选择。 
+Microsoft 建议将虚拟Windows虚拟桌面作为每个虚拟桌面的单个条目载入。 这可确保 Microsoft Defender 终结点门户中的调查体验基于计算机名称在一台设备的上下文中。 经常删除和重新部署 WVD 主机的组织应强烈建议使用此方法，因为它会阻止在 Microsoft Defender for Endpoint 门户中创建同一台计算机的多个对象。 这可能会导致调查事件时混淆。 对于测试或非可变环境，你可以选择不同的选择。 
 
 Microsoft 建议将 Microsoft Defender for Endpoint 载入脚本添加到 WVD 黄金映像。 这样，你可以确保此载入脚本在首次启动时立即运行。 它作为启动脚本在首次启动时在从 WVD 黄金映像预配的所有 WVD 计算机上执行。 但是，如果使用的库图像之一未经修改，则将脚本放在共享位置，然后从本地或域组策略调用它。 
 
@@ -61,16 +61,16 @@ Microsoft 建议将 Microsoft Defender for Endpoint 载入脚本添加到 WVD �
 #### <a name="scenario-2-using-domain-group-policy"></a>*方案 2：使用域组策略*
 此方案使用位于中央的脚本并使用基于域的组策略运行它。 还可以将脚本放在黄金映像中，并使用相同的方式运行它。
 
-**从WindowsDefenderATPOnboardingPackage.zip安全中心Windows Defender文件**
+**从 WindowsDefenderATPOnboardingPackage.zip 安全中心Windows Defender文件**
 
-1. 打开 VDI 配置包 .zip 文件 (WindowsDefenderATPOnboardingPackage.zip)   
+1. 打开 VDI 配置包.zip文件 (WindowsDefenderATPOnboardingPackage.zip)   
 
-    1. 在 Microsoft Defender 安全中心导航窗格中，**选择设置**  >  **载入**。 
-    1. 选择 Windows 10 作为操作系统。 
+    1. 在"Microsoft Defender 安全中心窗格中，选择 **"设置**  >  **载入"。** 
+    1. 选择Windows 10操作系统。 
     1. 在" **部署方法"** 字段中，选择"非永久性终结点的 VDI 载入脚本"。 
-    1. 单击 **下载程序包** 并保存 .zip 文件。 
+    1. 单击 **下载程序包** 并保存.zip文件。 
 
-2. 将 .zip 文件的内容提取到设备可以访问的共享只读位置。 你应该有一个名为 **OptionalParamsPolicy** 的文件夹以及 **WindowsDefenderATPOnboardingScript.cmd** 和 **Onboard-NonPersistentMachine.ps1**。
+2. 将文件内容.zip到设备可以访问的共享只读位置。 你应该有一个名为 **OptionalParamsPolicy** 的文件夹以及 **WindowsDefenderATPOnboardingScript.cmd** 和 **Onboard-NonPersistentMachine.ps1**。
 
 **当虚拟机启动时，使用组策略管理控制台运行脚本**
 
@@ -78,7 +78,7 @@ Microsoft 建议将 Microsoft Defender for Endpoint 载入脚本添加到 WVD �
 
 2. 在组策略管理编辑器中，转到计算机 **配置** \> **首选项** \> **控制面板设置**。 
 
-3. 右键单击 **计划任务**，单击 **新建**， **然后单击即时任务** (Windows 7) 。 
+3. 右键单击 **计划任务**，单击 **新建**，**然后单击立即任务** (至少Windows 7) 。 
 
 4. 在打开的任务窗口中，转到常规 **选项卡** 。在" **安全选项"** 下 **，单击"更改用户或组"** 并键入 SYSTEM。 单击 **"检查名称"，** 然后单击"确定"。 NT AUTHORITY\SYSTEM 显示为任务将运行的用户帐户。 
 
@@ -96,12 +96,12 @@ Microsoft 建议将 Microsoft Defender for Endpoint 载入脚本添加到 WVD �
 
 #### <a name="scenario-3-onboarding-using-management-tools"></a>*方案 3：使用管理工具载入*
 
-如果你计划使用管理工具管理计算机，可以使用 Microsoft Endpoint Configuration Manager 载入设备。
+如果你计划使用管理工具管理计算机，可以使用 Microsoft Endpoint Configuration Manager。
 
-有关详细信息，请参阅使用 Configuration Manager 载入 [Windows 10 设备](configure-endpoints-sccm.md)。
+有关详细信息，请参阅使用配置[Windows 10载入设备](configure-endpoints-sccm.md)。
 
 > [!WARNING]
-> 如果你计划使用攻击面减少 [规则](attack-surface-reduction.md)，请注意，不应使用规则"阻止源自[PSExec](attack-surface-reduction.md#block-process-creations-originating-from-psexec-and-wmi-commands)和 WMI 命令的进程创建"，因为该规则与通过 Microsoft Endpoint Configuration Manager 管理不兼容。 该规则阻止 Configuration Manager 客户端用于正常运行的 WMI 命令。 
+> 如果你计划使用攻击面[](attack-surface-reduction.md)减少规则，请注意，不应使用规则"阻止源自[PSExec](attack-surface-reduction.md#block-process-creations-originating-from-psexec-and-wmi-commands)和 WMI 命令的进程创建"，因为该规则与通过 Microsoft Endpoint Configuration Manager 管理不兼容。 该规则阻止 Configuration Manager 客户端用于正常运行的 WMI 命令。 
 
 > [!TIP]
 > 载入设备后，你可以选择运行检测测试，以验证设备是否正确载入到服务。 有关详细信息，请参阅对新载入的 [Microsoft Defender for Endpoint](run-detection-test.md)设备运行检测测试。 
@@ -146,5 +146,5 @@ Microsoft 建议将 Microsoft Defender for Endpoint 载入脚本添加到 WVD �
 
 #### <a name="licensing-requirements"></a>许可要求 
 
-许可注意事项：使用 Windows 10 企业版多会话时，根据你的要求，你可以选择通过 Microsoft Defender for Endpoint (针对每个用户) 、Windows 企业版 E5、Microsoft 365 安全或 Microsoft 365 E5 授权所有用户，或者通过 Azure Defender 许可 VM。
+许可注意事项：使用 Windows 10 企业版 多会话时，根据你的要求，你可以选择让所有用户通过 Microsoft Defender 针对终结点 (（针对每个用户) 、Windows Enterprise E5、Microsoft 365 安全或 Microsoft 365 E5）获得许可，或者通过 Azure Defender 许可 VM。
 有关 Microsoft Defender 终结点的许可要求，可位于： [许可要求](minimum-requirements.md#licensing-requirements)。

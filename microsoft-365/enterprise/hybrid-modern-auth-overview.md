@@ -15,7 +15,7 @@ ms.collection:
 f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
-description: 本文将介绍混合新式验证，以及用于本地 Skype for Business 和 Exchange 服务器的先决条件。
+description: 本文将介绍混合新式验证，以及用于内部部署服务器和 Skype for Business Exchange的先决条件。
 ms.openlocfilehash: 33bcf9bde2cda0388160337d3ffe6b81ab94eb12
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -48,7 +48,7 @@ _新式验证_ 是一种标识管理，它提供更安全的用户身份验证�
 
 请注意，由于 Skype for Business 与 Exchange 紧密合作，因此 Skype for Business 客户端用户将看到的登录行为将受 Exchange 的新式验证状态影响。 如果你具有 Skype for Business _拆分域_ 混合体系结构，你在其中同时拥有本地 Skype for Business Online 和本地 Skype for Business，并且用户同时位于两个位置，则此方式也适用。
 
-有关 Office 365 中的新式验证详细信息，请参阅 [Office 365 客户端应用支持 - 多重身份验证](microsoft-365-client-support-multi-factor-authentication.md)。
+有关企业中的新式验证Office 365，请参阅Office 365[客户端应用支持 - 多重身份验证](microsoft-365-client-support-multi-factor-authentication.md)。
 
 > [!IMPORTANT]
 > 自 2017 年 8 月起，包括 Skype for Business Online 和 Exchange Online 在内的所有新 Office 365 租户都将默认启用新式验证。 既有租户的默认 MA 状态不会发生变化，但是所有新租户都会自动支持上面列出的一组扩展身份功能。 若要查看你的 MA 状态，请参阅[检查本地环境的新式验证状态](hybrid-modern-auth-overview.md#BKMK_CheckStatus)部分。
@@ -149,16 +149,16 @@ Get-CSOAuthConfiguration
 
     新式验证的可用性由客户端、协议和配置的组合决定。 如果客户端、协议和/或配置不支持新式验证，则客户端将继续利用旧身份验证。
   
-    在环境中启用新式验证时，以下客户端和协议支持使用内部部署 Exchange 进行新式验证：
+    在环境中启用新式身份验证时，以下客户端和协议Exchange内部部署身份验证：
 
   |**客户端**|**主协议**|**备注**|
   |:-----|:-----|:-----|
   |Outlook 2013 及更高版本  <br/> |MAPI over HTTP  <br/> |必须在 Exchange 中启用 MAPI over HTTP，以对这些客户端使用新式验证（对于新安装的 Exchange 2013 Service Pack 1 和更高版本，通常已启用或为“True”）；有关详细信息，请参阅[如何将新式验证用于 Office 2013 和 Office 2016 客户端应用](modern-auth-for-office-2013-and-2016.md)。  <br/> 确保运行的是最低要求的 Outlook 内部版本；请参阅[使用 Windows Installer (MSI) 的 Outlook 版本的最新更新](/officeupdates/outlook-updates-msi)。  <br/> |
-  |Outlook 2016 for Mac 及更高版本  <br/> |Exchange Web 服务  <br/> |  <br/> |
+  |Outlook 2016 for Mac及更高版本  <br/> |Exchange Web 服务  <br/> |  <br/> |
   |Outlook for iOS 和 Outlook for Android  <br/> | Microsoft 同步技术 <br/> |有关详细信息，请参阅[将混合新式验证用于 Outlook for iOS 和 Outlook for Android](/Exchange/clients/outlook-for-ios-and-android/use-hybrid-modern-auth)。  <br/> |
   |Exchange ActiveSync 客户端（例如，iOS11 邮件）  <br/> |Exchange ActiveSync  <br/> |对于支持新式验证的 Exchange ActiveSync 客户端，必须重新创建配置文件才能从基本身份验证切换到新式验证。  <br/> |
 
-    未列出的客户端和/或协议 (例如 POP3) 不支持使用内部部署 Exchange 的新式验证，并且即使在环境中启用了新式验证之后，仍继续使用旧身份验证机制。
+    未列出的客户端和/或协议 (例如 POP3) 不支持使用本地 Exchange 的新式验证，并且即使在环境中启用了新式验证后，仍继续使用旧身份验证机制。
 
 - **一般先决条件**
   - 资源林方案将需要与帐户林的双向信任，以确保在混合新式身份验证请求期间执行正确的 SID 查找。 

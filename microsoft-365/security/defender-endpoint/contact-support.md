@@ -40,7 +40,7 @@ Defender for Endpoint 最近升级了支持流程，可提供更现代、更高�
 - 查找常见问题的解决方案
 - 向 Microsoft 支持团队提交支持案例
 
-## <a name="prerequisites"></a>先决条件
+## <a name="prerequisites"></a>必备条件
 了解有权打开支持案例的特定角色很重要。
 
 至少必须具有服务支持管理员 **或支持管理员** 角色。
@@ -58,7 +58,7 @@ Defender for Endpoint 最近升级了支持流程，可提供更现代、更高�
 
     ![选中问号时小组件的图像](images/support-widget.png)
 
-2. 单击需要帮助 **？**  Microsoft Defender 安全中心右下角的 按钮：
+2. 单击需要帮助 **？**  按钮，位于Microsoft Defender 安全中心：
 
 
     !["需要帮助"按钮的图像](images/need-help.png)

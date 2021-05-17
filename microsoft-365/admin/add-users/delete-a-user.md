@@ -19,7 +19,7 @@ ms.custom:
 search.appverid:
 - MET150
 ms.assetid: d5155593-3bac-4d8d-9d8b-f4513a81479e
-description: 了解如何删除用户帐户。 决定使用用户电子邮件和 OneDrive 内容应执行哪些操作。 并决定是保留产品许可证还是停止付费。
+description: 了解如何删除用户帐户。 决定使用用户的电子邮件和内容OneDrive操作。 并决定是保留产品许可证还是停止付费。
 ms.openlocfilehash: d40f70534499b08073278ffc2bed2b098ae1c4da
 ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
@@ -29,32 +29,32 @@ ms.locfileid: "51860733"
 ---
 # <a name="delete-a-user-from-your-organization"></a>从组织删除用户
   
-**正在查找 *如何删除你在* 工作或学校使用自己的 Microsoft 365 用户帐户？请与工作或大学中的技术支持人员联系，以执行这些步骤。**
+**正在查找如何删除 *Microsoft 365* 或学校使用的用户帐户？请与工作或大学中的技术支持人员联系，以执行这些步骤。**
 
 ## <a name="what-you-need-to-know-about-deleting-users"></a>删除用户需知事项
 
-- 只有具有 [Microsoft 365 全局管理员](about-admin-roles.md) 或企业或学校的用户管理权限的用户才能删除用户帐户。
+- 只有具有全局[Microsoft 365](about-admin-roles.md)或企业或学校的用户管理权限的用户才能删除用户帐户。
 - 永久删除用户数据前 30 天内可[还原](restore-user.md)帐户。
 - 若要保留用户的 OneDrive 数据，请将其移动到其他位置。 您甚至可以在删除帐户后最多 30 天移动数据。 请参阅[访问并备份以往用户的数据](get-access-to-and-back-up-a-former-user-s-data.md)。 无需移动其 SharePoint 文件；仍将有权访问它们。
 - 若要保留用户的电子邮件，请在删除帐户 **之前** ，将电子邮件移动到其他位置。如果已删除该帐户：如果删除时间未超过 30 天，可恢复该帐户，然后移动电子邮件数据，最后删除该帐户。请参阅 [访问并备份以往用户的数据](get-access-to-and-back-up-a-former-user-s-data.md)。
-- 如果你有 Office 365 企业版 E3 等企业版订阅，则可以通过将已删除用户帐户的邮箱数据转换为非活动邮箱来 *保留该帐户的邮箱数据*。 若要了解详细信息，请参阅 [管理 Exchange Online 中的非活动邮箱](../../compliance/inactive-mailboxes-in-office-365.md)。
+- 如果您具有 Enterprise E3 Office 365 企业版订阅，则可以通过将已删除用户帐户的邮箱数据转换为非活动邮箱来 *保留此用户帐户的邮箱数据*。 若要了解详细信息，请参阅 [管理 Exchange Online 中的非活动邮箱](../../compliance/inactive-mailboxes-in-office-365.md)。
 
-## <a name="global-admin-delete-a-user-stop-paying-for-their-license-and-choose-what-to-do-with-their-email-and-onedrive-content"></a>全局管理员：删除用户、停止支付其许可证费用，然后选择使用电子邮件和 OneDrive 内容执行哪些操作
+## <a name="global-admin-delete-a-user-stop-paying-for-their-license-and-choose-what-to-do-with-their-email-and-onedrive-content"></a>全局管理员：删除用户、停止支付其许可证费用，然后选择使用电子邮件和内容OneDrive操作
 
-如果你是全局管理员，在删除用户时，还可以向其他用户授予访问其电子邮件的访问权限，并选择使用 OneDrive 内容执行哪些操作。
+如果你是全局管理员，在删除用户时，还可以向另一个用户授予访问其电子邮件的访问权限，并选择使用其电子邮件OneDrive操作。
 
 ### <a name="things-to-consider"></a>要考虑的事项...
 
-开始之前，考虑想要使用用户的电子邮件和 OneDrive 内容，以及是想要保留许可证还是停止支付许可证费用。
+在开始之前，考虑想要使用用户的电子邮件和内容OneDrive，以及是想要保留许可证还是停止支付许可证费用。
   
 |项目 | 说明 |
 |:-----|:-----|
 |产品许可证  <br/> |你可以从用户中删除许可证，并从订阅中删除该许可证，以停止支付该许可证费用。 如果选择此选项，许可证将自动从订阅中删除。  <br/><br/> **如果通过合作伙伴或** 批量许可购买了许可证，则不能删除该许可证。 如果你为年度计划付费，或正在计费周期中，那么在承诺完成之前，你将无法从订阅中删除许可证。  <br/> |
-|OneDrive 内容  <br/> |如果用户将文件保存到 OneDrive，你可以向其他用户授予对这些文件的访问权限。  <br/><br/> 你需要在为 OneDrive 文件设置的保留期内移动想要保留的文件。 **默认情况下，保留期为 30 天。** 如果在删除用户后没有在保留期内移动文件，OneDrive 内容将永久删除。 若要增加保留已删除帐户的 OneDrive 文件的天数，请参阅为已删除的用户设置 [OneDrive 保留期](/onedrive/set-retention)。  <br/><br/> **重要说明！** 如果已删除的用户使用个人计算机从 SharePoint 和 OneDrive 下载文件，则你无法擦除存储在其计算机中的文件。 他们将继续有权访问从 OneDrive 同步的任何文件。           |
-|电子邮件  <br/> | 向其他用户提供对已删除用户的电子邮件的访问权限会将已删除用户的邮箱转换为共享邮箱。 然后，新邮箱所有者可以访问邮箱并监视新电子邮件。 还可以选择以下选项：  <br/>  <br/>更改显示名称 - 建议更改显示名称，以便轻松识别"活动用户"列表中的 **共享** 邮箱。  <br/>  启用自动答复 - 我们已经为用户撰写了一份很乐于回复的自动答复。 您可以向组织内部人员以及组织外部人员发送不同的自动答复。  <br/> <br/> 清理别名 - 别名是用户的其他电子邮件地址。 某些组织不使用它们，因此，如果没有，则无需在这里执行任何其他工作。 如果用户具有别名，我们建议删除这些别名，以便可以重复使用这些电子邮件地址。 否则，在已删除邮箱的保留期过去之前，无法重复使用这些电子邮件地址。 默认情况下，已删除的邮箱可恢复 30 天。 有关详细信息，请参阅删除  [或还原 Exchange Online 中的用户邮箱](/exchange/recipients-in-exchange-online/delete-or-restore-mailboxes#delete-a-user-mailbox)。 <br/> |
+|OneDrive内容  <br/> |如果用户将文件保存到OneDrive，您可以授予其他用户对这些文件的访问权限。  <br/><br/> 你需要在为文件设置的保留期内移动OneDrive文件。 **默认情况下，保留期为 30 天。** 如果在删除用户后没有在保留期内移动文件，则OneDrive内容将被永久删除。 若要增加保留已删除帐户的 OneDrive 文件天数，请参阅为已删除OneDrive[设置保留时间](/onedrive/set-retention)。  <br/><br/> **重要说明！** 如果已删除的用户使用个人计算机从 SharePoint 和 OneDrive 下载文件，则你无法擦除他们存储在其计算机中的文件。 他们将继续具有对从服务器同步的任何OneDrive。           |
+|电子邮件  <br/> | 向其他用户提供对已删除用户的电子邮件的访问权限会将已删除用户的邮箱转换为共享邮箱。 然后，新邮箱所有者可以访问邮箱并监视新电子邮件。 还可以选择以下选项：  <br/>  <br/>更改显示名称 - 建议更改显示名称，以便轻松识别"活动用户"列表中的 **共享** 邮箱。  <br/>  启用自动答复 - 我们已经为用户撰写了一份很乐于回复的自动答复。 您可以向组织内部人员以及组织外部人员发送不同的自动答复。  <br/> <br/> 清理别名 - 别名是用户的其他电子邮件地址。 某些组织不使用它们，因此，如果没有，则无需在这里执行任何其他工作。 如果用户具有别名，我们建议删除这些别名，以便可以重复使用这些电子邮件地址。 否则，在已删除邮箱的保留期过去之前，无法重复使用这些电子邮件地址。 默认情况下，已删除的邮箱可恢复 30 天。 有关详细信息，请参阅删除[或还原用户邮箱Exchange Online。](/exchange/recipients-in-exchange-online/delete-or-restore-mailboxes#delete-a-user-mailbox) <br/> |
 |Active Directory  <br/> |如果你的公司使用与 Azure AD 同步的 **Active Directory** ，则需要从 Active Directory 中删除用户帐户。 无法通过 Office 365 删除帐户。 有关说明，请参阅 [删除用户帐户](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc753730(v=ws.11))。  <br/> |
 
-### <a name="get-started"></a>开始行动
+### <a name="get-started"></a>入门
 
 由于指导体验将完成删除用户的步骤，下面介绍如何开始操作。
 
@@ -78,7 +78,7 @@ ms.locfileid: "51860733"
 
 2. 选择要删除的用户，然后选择"删除 **用户"。**
 
-## <a name="user-management-admin-delete-one-or-more-users-from-office-365"></a>用户管理管理员：从 Office 365 中删除一个或多个用户
+## <a name="user-management-admin-delete-one-or-more-users-from-office-365"></a>用户管理管理员：从用户中删除一个或多个Office 365
 
 > [!IMPORTANT]
 > 如果已将其转换为共享邮箱，或已设置该帐户的电子邮件转发[](../email/convert-user-mailbox-to-shared-mailbox.md)，请不要删除该用户帐户。 这些函数仍然需要帐户。 共享邮箱不需要许可证。 如果已将帐户转换为共享邮箱，可以 [停止支付许可证费用](#stop-paying-for-the-license)。 如果已设置帐户的电子邮件转发，则不能删除许可证。 这样做将停止电子邮件转发并停用邮箱。
@@ -163,11 +163,11 @@ ms.locfileid: "51860733"
   
 - **You get an error message along the lines of "User cannot be deleted.请稍后重试。"** 仔细检查帐户是否设置了电子邮件转发，或者是否将其转换为共享邮箱。 这两者都将导致该错误。 如果帐户具有电子邮件转发或已转换为共享邮箱，请不要删除该帐户。
 
-- **你没有删除用户的相应权限** 。 只有 Microsoft [365 全局管理员或用户管理管理员才能](about-admin-roles.md) 删除用户。 该管理员通常是学校或企业中的技术支持人员。
+- **你没有删除用户的相应权限** 。 只有全局Microsoft 365管理员或[用户管理管理员才能](about-admin-roles.md)删除用户。 该管理员通常是学校或企业中的技术支持人员。
 
 - **删除用户后，用户姓名继续显示在全局通讯录中** 。 企业使用 Active Directory 时会出现这种情况。 您必须从 Active Directory 中删除用户帐户。 有关说明，请参阅 [删除用户帐户。](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc753730(v=ws.11))
 
-**是否要从计算机中删除 Microsoft 365？转到 [取消订阅](../../commerce/subscriptions/cancel-your-subscription.md)。**
+**是否要从计算机Microsoft 365文件？转到 [取消订阅](../../commerce/subscriptions/cancel-your-subscription.md)。**
 
 ## <a name="related-articles"></a>相关文章
 

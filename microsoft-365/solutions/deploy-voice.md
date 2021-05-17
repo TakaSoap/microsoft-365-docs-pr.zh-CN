@@ -1,5 +1,5 @@
 ---
-title: 在 Microsoft 365 中部署语音
+title: 在 Microsoft 365
 ms.author: crowe
 author: CarolynRowe
 manager: serdars
@@ -16,7 +16,7 @@ ms.custom:
 - M365solutions
 - seo-marvel-jun2020
 f1.keywords: NOCSH
-description: 了解如何为组织选择和部署正确的 Teams 语音解决方案。
+description: 了解如何为组织选择和部署Teams语音解决方案。
 ms.openlocfilehash: ede8075767e9d0a80123ac742403f8a4d171392e
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -26,13 +26,13 @@ ms.locfileid: "50918378"
 ---
 # <a name="plan-and-deploy-a-teams-voice-solution"></a>计划和部署 Teams 语音解决方案
 
-Teams 语音解决方案使贵组织内部和外部人员能够拨打电话。 完整的语音解决方案包括 Teams、Microsoft Phone System 以及用于连接到公用电话交换网和 PSTN (选项) 。
+使用Teams语音解决方案，组织内部和外部人员均可以拨打电话。 完整的语音解决方案包括Teams、Microsoft 电话系统以及用于连接到公用电话交换网和 PSTN (的选项) 。
 
-![Teams 语音解决方案概述](..\media\solutions-architecture-center\voice-concepts.png)
+![Teams语音解决方案概述](..\media\solutions-architecture-center\voice-concepts.png)
 
-电话系统为组织 (完整的专用交换机) PBX 功能。 组织中用户之间的呼叫（无论其地理位置如何）在电话系统内部处理，因此可消除这些内部呼叫的长途成本。  
+电话系统为组织提供完整的专用Exchange (PBX) 功能。 组织中用户之间的呼叫（无论其地理位置如何）均在内部电话系统因此可消除这些内部呼叫的长途成本。  
 
-通过将电话系统连接到公用电话交换网 (PSTN) ，Teams 用户还可以在组织外部拨打电话。
+通过将 电话系统连接到公用电话交换 (PSTN) ，Teams用户还可以在组织外部拨打电话。
 
 此解决方案指南可帮助你：
 
@@ -49,12 +49,12 @@ Teams 语音解决方案使贵组织内部和外部人员能够拨打电话。 �
 
 3. 通过选择下列选项之一或组合设置 PSTN 连接：
    - [通话套餐](/microsoftteams/set-up-calling-plans?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json) - Microsoft 的全云解决方案，Microsoft 作为 PSTN 运营商
-   - [直接路由](/microsoftteams/direct-routing-configure?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json) - 使用直接路由将你自己的 PSTN 运营商连接到 Teams 
+   - [直接路由](/microsoftteams/direct-routing-configure?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json)- 使用直接路由将你自己的 PSTN 运营商连接到Teams 
 
-此外，您可能希望了解 [Contoso](/MicrosoftTeams/voice-case-study-overview?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json)案例研究中大型的跨国公司如何迁移到 Teams 语音解决方案。
+此外，您可能希望了解[Contoso](/MicrosoftTeams/voice-case-study-overview?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json)案例研究中大型的跨国公司如何迁移到Teams语音解决方案。
 
 有关所需许可证的信息，请参阅以下内容：
 
-- [Teams 附加许可证](/microsoftteams/teams-add-on-licensing/microsoft-teams-add-on-licensing?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&tabs=enterprise#what-voice-features-are-available-with-my-plan/toc.json)
+- [Teams加载项许可证](/microsoftteams/teams-add-on-licensing/microsoft-teams-add-on-licensing?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&tabs=enterprise#what-voice-features-are-available-with-my-plan/toc.json)
 
 - [直接路由许可要求](/microsoftteams/direct-routing-plan?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json#licensing-and-other-requirements/toc.json)

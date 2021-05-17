@@ -37,7 +37,7 @@ ms.locfileid: "51903924"
 
 `mkdir mdatp/files`
 
-将可以从 Microsoft Defender 安全中心门户下载的 Linux Server 载入 zip 文件转移到此新文件文件夹。
+将可以从 Microsoft Defender 安全中心 门户下载的 Linux Server 载入 zip 文件转移到此新文件文件夹。
 
 On the Recipe Workstation， navigate to the mdatp/recipes folder. 此文件夹是在生成手册时创建的。 使用首选文本编辑器 (vi 或 nano) 将以下说明添加到 default.rb 文件的末尾：
 -   include_recipe"：：onboard_mdatp"
@@ -127,7 +127,7 @@ end
 若要将此步骤作为食谱的一部分，只需include_recipe"：：settings_mdatp"添加到食谱文件夹中的 default.rb 文件。
 还可使用 crontab 安排自动更新[计划 Microsoft Defender for Endpoint (Linux) 。 ](linux-update-MDE-Linux.md)
 
-卸载 MDATP 手册：
+卸载MDATP手册：
 
 ```powershell
 #Uninstall the Defender package

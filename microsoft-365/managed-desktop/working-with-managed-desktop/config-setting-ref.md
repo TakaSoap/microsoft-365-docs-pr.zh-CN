@@ -23,7 +23,7 @@ ms.locfileid: "50917700"
 ## <a name="desktop-background-picture"></a>桌面背景图片
 你可以自定义组织中 Microsoft 托管桌面设备的桌面背景图片。 可以使用它应用公司品牌或营销材料。 
 
-### <a name="requirements"></a>Requirements
+### <a name="requirements"></a>要求
 
 桌面背景图片必须满足以下要求：
 - 图片文件格式 - .jpg、jpeg 或 .png
@@ -42,7 +42,7 @@ ms.locfileid: "50917700"
 ## <a name="browser-start-pages"></a>浏览器起始页
 当用户启动 Microsoft Edge 时，浏览器起始页在单个选项卡中打开。 如果希望用户轻松打开他们经常使用的一组网站，请添加每个网站的浏览器起始页。 
 
-### <a name="requirements"></a>Requirements
+### <a name="requirements"></a>要求
 
 必须为浏览器起始页的 Intranet 或 Internet (FQDN) 完全限定域名。 如果配置了内部站点，请让用户知道，只有在办公室或通过 VPN 连接连接到内部网络时，才允许访问这些站点。 
 
@@ -63,7 +63,7 @@ ms.locfileid: "50917700"
 
 你可以指定 https:// 托管企业模式站点列表的内部共享的位置。 
 
-### <a name="requirements"></a>Requirements
+### <a name="requirements"></a>要求
 
 企业模式站点列表文件必须满足以下要求：
 - 文件格式 - 满足文件要求的 XML [文件](/internet-explorer/ie11-deploy-guide/what-is-enterprise-mode#site-list-xml-file)
@@ -94,7 +94,7 @@ ms.locfileid: "50917700"
 - 区域 3 – Internet 区域
 - 区域 4 – 受限制的站点区域
 
-### <a name="requirements"></a>Requirements
+### <a name="requirements"></a>要求
 
 提供每个受信任站点 (Intranet) Internet 站点的完全限定域名和 FQDN。 
 
@@ -126,7 +126,7 @@ ms.locfileid: "50917700"
 > [!NOTE]
 > 更新默认代理例外列表始终比客户部署优先。 这意味着，如果存在默认代理例外列表的部署，则暂存在部署将暂停。  
 
-### <a name="requirements"></a>Requirements
+### <a name="requirements"></a>要求
 
 对于代理服务器和代理站点例外，必须满足以下要求：
 - 必须是有效的服务器地址和端口号

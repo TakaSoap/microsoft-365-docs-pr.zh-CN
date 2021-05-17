@@ -35,7 +35,7 @@ ms.locfileid: "51760703"
 
 ## <a name="workloads"></a>工作负载
 
-Microsoft [365](https://compliance.microsoft.com/)合规中心中的[DLP](https://compliance.microsoft.com/datalossprevention?viewid=dlpalerts)警报管理仪表板显示有关这些工作负载的 DLP 策略警报：
+DLP[警报管理仪表板](https://compliance.microsoft.com/datalossprevention?viewid=dlpalerts)（位于[Microsoft 365中心](https://compliance.microsoft.com/)）中，显示有关这些工作负载的 DLP 策略警报：
 
 - Exchange
 - SharePoint
@@ -44,7 +44,7 @@ Microsoft [365](https://compliance.microsoft.com/)合规中心中的[DLP](https:
 - Windows 10 设备 
 
 > [!TIP]
-> 使用符合[Teams DLP](endpoint-dlp-learn-about.md)条件的客户将在[](dlp-microsoft-teams.md)DLP 警报管理仪表板中查看其终结点 DLP 策略警报和 Teams DLP 策略警报。
+> 使用符合[使用 DLP](endpoint-dlp-learn-about.md)条件Teams终结点[DLP](dlp-microsoft-teams.md)的客户将在 DLP 警报管理仪表板中Teams终结点 DLP 策略警报和 DLP 策略警报。
 
 ## <a name="single-alert-and-aggregate-alert"></a>单个警报和聚合警报
 
@@ -60,7 +60,7 @@ Microsoft [365](https://compliance.microsoft.com/)合规中心中的[DLP](https:
 
 ### <a name="event-details"></a>事件详情
 
-|属性名  |描述  |事件类型  |
+|属性名  |说明  |事件类型  |
 |---------|---------|---------|
 |ID |与事件关联的唯一 ID |所有事件 |
 |位置 |检测到事件的工作负荷|所有事件 |
@@ -68,29 +68,29 @@ Microsoft [365](https://compliance.microsoft.com/)合规中心中的[DLP](https:
 
 ### <a name="impacted-entities"></a>影响的实体
 
-|属性名 |描述| 事件类型|
+|属性名 |说明| 事件类型|
 |---------|---------|---------|
 |user | 执行导致策略匹配的操作的用户 | 所有事件|
 |hostname | 发生 DLP 策略匹配的计算机的主机名 | 设备事件|
 |IP 地址 | 发生 DLP 策略匹配的计算机的 IP 地址 | 设备事件|
 |sha1 |文件的 SHA-1 哈希 | 设备事件|
 |sha256 | 文件的 SHA-256 哈希 | 设备事件|
-|MDATP 设备 ID | 终结点设备 MDATP ID|
+|MDATP设备 ID | 终结点设备MDATP ID|
 |文件大小 | 文件大小| SharePoint、OneDrive 和设备事件|
 |文件路径 | DLP 策略匹配所涉及的项目的绝对路径 | SharePoint、OneDrive 和设备事件|
-|电子邮件收件人 |如果电子邮件是符合 DLP 策略的敏感项目，则此字段包括该电子邮件的收件人| Exchange 事件|
-|电子邮件主题 |与 DLP 策略匹配的电子邮件主题 |Exchange 事件|
-|电子邮件附件 | 电子邮件中匹配 DLP 策略的附件的名称| Exchange 事件|
-|网站所有者 |网站所有者的名称| SharePoint 和 OneDrive 事件|
-|网站 URL |DLP 策略匹配发生时的 SharePoint 或 OneDrive 网站的完整 URL |SharePoint 和 OneDrive 事件|
-|已创建文件 |创建与 DLP 策略匹配的文件的时间 |SharePoint 和 OneDrive 事件|
-|上次修改文件 | 上次更改匹配 DLP 策略的文件的时间 | SharePoint 和 OneDrive 事件|
-|文件大小 | 与 DLP 策略匹配的文件大小 |SharePoint 和 OneDrive 事件|
-|文件所有者 |与 DLP 策略匹配的文件的所有者 |SharePoint 和 OneDrive 事件|  
+|电子邮件收件人 |如果电子邮件是符合 DLP 策略的敏感项目，则此字段包括该电子邮件的收件人| Exchange事件|
+|电子邮件主题 |与 DLP 策略匹配的电子邮件主题 |Exchange事件|
+|电子邮件附件 | 电子邮件中匹配 DLP 策略的附件的名称| Exchange事件|
+|网站所有者 |网站所有者的名称| SharePoint事件OneDrive事件|
+|网站 URL |DLP 策略匹配SharePoint或OneDrive的完整 URL |SharePoint事件OneDrive事件|
+|已创建文件 |创建与 DLP 策略匹配的文件的时间 |SharePoint事件OneDrive事件|
+|上次修改文件 | 上次更改匹配 DLP 策略的文件的时间 | SharePoint事件OneDrive事件|
+|文件大小 | 与 DLP 策略匹配的文件大小 |SharePoint事件OneDrive事件|
+|文件所有者 |与 DLP 策略匹配的文件的所有者 |SharePoint事件OneDrive事件|  
 
 ### <a name="policy-details"></a>策略详细信息
 
-|属性名 |描述 |事件类型 |
+|属性名 |说明 |事件类型 |
 |---------|---------|---------|
 |匹配的 DLP 策略 |匹配的 DLP 策略的名称 |所有事件|
 |规则匹配 |匹配的 DLP 策略规则的名称 |所有事件|

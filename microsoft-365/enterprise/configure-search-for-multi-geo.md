@@ -12,7 +12,7 @@ ms.collection: Strat_SP_gtc
 localization_priority: Normal
 f1.keywords:
 - NOCSH
-description: 了解如何在多地理位置环境中配置搜索。 只有某些客户端（如 OneDrive for Business）可以在多地理位置环境中返回结果。
+description: 了解如何在多地理位置环境中配置搜索。 只有某些客户端（OneDrive for Business）可以在多地理位置环境中返回结果。
 ms.openlocfilehash: b3a96b1d0652cb954c58ae410583befa078460d9
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -44,7 +44,7 @@ ms.locfileid: "50911158"
 
 多地理位置环境一旦设置，在 Delve 中搜索的用户即可获得来自所有地理位置的结果。
 
-Delve 源和个人资料卡仅显示存储在中心位置的文件的预览。 对于存储在附属位置的文件，则会显示文件类型的图标。
+Delve 源和个人资料卡片只能显示存储在中央位置中的文件预览。对于存储在附属位置的文件，将改为显示文件类型的图标。
 
 ### <a name="the-sharepoint-home-page"></a>SharePoint 主页
 
@@ -131,7 +131,7 @@ Delve 源和个人资料卡仅显示存储在中心位置的文件的预览。 �
 
 所有搜索客户端均使用现有 SharePoint Search REST API 与搜索索引进行交互。
 
-![显示 SharePoint 搜索 REST API 如何与搜索索引交互的关系图](../media/configure-search-for-multi-geo-image1-1.png)
+![显示搜索SHAREPOINT REST API 如何与搜索索引交互的关系图](../media/configure-search-for-multi-geo-image1-1.png)
 
 1. 搜索客户端使用查询属性 EnableMultiGeoSearch= true 来调用搜索 REST 终结点。
 2. 查询将被发送到租户中的所有地理位置。
@@ -151,7 +151,7 @@ Delve 源和个人资料卡仅显示存储在中心位置的文件的预览。 �
 
 3. 选择要设置的类别，单击右上角的 **“设置”** 齿轮图标，然后单击 **“编辑页面”**。搜索结果页将在编辑模式下打开。
 
-   ![在"设置"中编辑页面选择](../media/configure-search-for-multi-geo-image2.png)
+   ![编辑页面中的页面设置](../media/configure-search-for-multi-geo-image2.png)
 
 4. 在搜索结果 Web 部件中，将鼠标指针移动到 Web 部件的右上角，单击箭头，然后单击菜单上的“**编辑 Web 部件** ”。 搜索结果 Web 部件工具窗格在页面右上角的功能区下方打开。
 
@@ -168,7 +168,7 @@ Delve 源和个人资料卡仅显示存储在中心位置的文件的预览。 �
 <span id="_Get_custom_search" class="anchor"><span id="_Ref501388387" class="anchor"></span></span>
 ## <a name="get-custom-search-applications-to-show-results-from-all-or-some-geo-locations"></a>获取自定义搜索应用程序，以显示来自所有（或部分）地理位置的结果
 
-自定义搜索应用程序通过使用对 SharePoint 搜索 REST API 的请求指定查询参数，从所有或部分地理位置获取结果。 根据查询参数，查询会扇出到所有地理位置或某些地理位置。 例如，如果只需要查询地理位置的子集以查找相关信息，你可以仅控制扇出到这些地理位置。 如果请求成功，SharePoint 搜索 REST API 将返回响应数据。
+自定义搜索应用程序通过指定对 SharePoint Search REST API 的请求的查询参数获取来自所有（或部分）地理位置的结果。根据查询参数，查询将被扇出到所有（或部分）地理位置。例如，如果只需要查询地理位置的子集来查找相关信息，可以控制仅扇出到这些子集。如果请求成功，则 SharePoint Search REST API 将返回响应数据。
 
 ### <a name="requirement"></a>要求
 

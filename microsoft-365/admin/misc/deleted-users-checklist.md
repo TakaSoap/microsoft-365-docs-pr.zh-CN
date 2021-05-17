@@ -20,7 +20,7 @@ search.appverid:
 - MOE150
 ms.assetid: 6016b50e-2b6e-4164-b565-2fde401fda3a
 ROBOTS: NOINDEX
-description: 删除用户的 Microsoft 365 帐户时，请遵循此清单。
+description: 删除用户的帐户时，请遵循Microsoft 365清单。
 ms.openlocfilehash: de0c69c0a785787491d60f5fe6d17c0129b929db
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -32,7 +32,7 @@ ms.locfileid: "50914758"
 
 因此，你已决定从组织中删除用户。 例如，一旦该用户离开组织，就可以删除该用户。 在删除该用户之前和之后，应执行一些操作。 本快速清单可帮助你执行这些步骤。
   
-## <a name="remove-the-microsoft-365-license-from-the-user"></a>从用户中删除 Microsoft 365 许可证
+## <a name="remove-the-microsoft-365-license-from-the-user"></a>从Microsoft 365删除许可证
 
 您可以通过在主页上搜索用户，或从"活动用户"页中搜索用户，然后选择用户，从用户删除许可证。 在 **"许可证和应用"** 选项卡上，清除要从用户中删除的许可证的复选框。 [阅读完整文章](../manage/remove-licenses-from-users.md)。
   
@@ -50,7 +50,7 @@ ms.locfileid: "50914758"
   
 ## <a name="what-to-do-with-the-unassigned-license"></a>使用未分配许可证可做什么
 
-如果你的新员工或人员正在加入你的组织，你可以为其分配此许可证，以便他们可以使用 Microsoft 365。 您可以在主页上或"活动用户"页面中搜索用户，然后选择他们。 在 **"许可证和应用"** 选项卡上，选中要添加到新用户的许可证的复选框。 [阅读完整文章](../manage/assign-licenses-to-users.md)。
+如果你的新员工或人员正在加入你的组织，你可以为其分配此许可证，以便他们可以使用Microsoft 365。 您可以在主页上或"活动用户"页面中搜索用户，然后选择他们。 在 **"许可证和应用"** 选项卡上，选中要添加到新用户的许可证的复选框。 [阅读完整文章](../manage/assign-licenses-to-users.md)。
   
 ## <a name="remove-license-so-you-dont-have-to-pay-for-it"></a>删除许可证，以便你不必支付许可证费用
 

@@ -1,5 +1,5 @@
 ---
-title: 'Microsoft 365 商业版决策者 (BDM) '
+title: 'Microsoft 365业务决策者的安全 (BDM) '
 f1.keywords:
 - NOCSH
 ms.author: bcarter
@@ -13,7 +13,7 @@ ms.collection:
 - M365-security-compliance
 search.appverid:
 - MET150
-description: 组织当前针对其 Microsoft 365 环境所面临的最常见威胁和攻击方案，以及用于缓解这些风险的建议操作。
+description: 组织当前针对其生产环境所面临的最常见威胁和攻击Microsoft 365以及用于缓解这些风险的建议操作。
 ms.openlocfilehash: 056e1e64a992f12f3bf9a4b76c29f723ac1b5f3a
 ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
@@ -21,13 +21,13 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 04/21/2021
 ms.locfileid: "51930169"
 ---
-# <a name="microsoft-365-security-for-business-decision-makers-bdms"></a>Microsoft 365 商业版决策者 (BDM) 
+# <a name="microsoft-365-security-for-business-decision-makers-bdms"></a>Microsoft 365业务决策者的安全 (BDM) 
 
-本文讨论组织当前针对其 Microsoft 365 环境面临的一些最常见的威胁和攻击方案，以及用于缓解这些风险的建议操作。 虽然 Microsoft 365 附带了各种预配置安全功能，但还需要客户负责保护用于访问云服务的你自己的标识、数据和设备。 本指南由 Microsoft 云安全 () 的 Kozeta 一 (和一位 Microsoft 高级) 。
+本文讨论组织当前针对其生产环境所面临的一些最常见的威胁和攻击Microsoft 365，以及用于缓解这些风险的建议操作。 尽管Microsoft 365各种预配置安全功能，但还需要客户负责保护用于访问云服务的你自己的标识、数据和设备。 本指南由 Microsoft 云安全 () 的 Kozeta 一 (和一位 Microsoft 高级) 。
 
-本文按工作优先级进行组织，首先保护用于管理最重要的服务和资产（如租户、电子邮件和 SharePoint）的帐户。 它提供了一种接近安全性的有条理的方法，并可以与以下电子表格协同工作，以便你可以跟踪你在整个组织中与利益干系人和团队的进度 [：Microsoft 365 安全 BDM 电子表格](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/Microsoft-365-BDM-security-recommendations-spreadsheet.xlsx)。 
+本文按工作优先级进行组织，首先保护用于管理最重要的服务和资产（如租户、电子邮件和 SharePoint） 的帐户。 它提供了一种接近安全性的有条理的方法，并可以与以下电子表格协同工作，以便你可以跟踪你在整个组织中与利益干系人及团队的进度：Microsoft 365 BDM 电子表格[的安全性](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/Microsoft-365-BDM-security-recommendations-spreadsheet.xlsx)。 
 
-[![缩略图 Microsoft 365 BDM 安全建议电子表格](../downloads/microsoft-365-bdm-security-recommendations-spreadsheet-thumb.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/Microsoft-365-BDM-security-recommendations-spreadsheet.xlsx)
+[![BDM Microsoft 365建议电子表格中的缩略图](../downloads/microsoft-365-bdm-security-recommendations-spreadsheet-thumb.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/Microsoft-365-BDM-security-recommendations-spreadsheet.xlsx)
 
 Microsoft 在租户中提供了安全分数工具，可基于常规活动自动分析安全状态、分配分数并提供安全改进建议。 在采取本文建议的操作之前，请记下当前的分数和建议。 本文中建议的操作将提高分数。 目标不是获得最大分数，而是注意以不会对用户工作效率造成负面影响的方式保护环境的机会。 请参阅 [Microsoft 安全分数](defender/microsoft-secure-score.md)。
 
@@ -42,8 +42,8 @@ Microsoft 在租户中提供了安全分数工具，可基于常规活动自动�
 |建议  |E3 |E5  |
 |---------|---------|---------|
 |针对所有管理帐户 (多重) MFA 身份验证。|![绿色选中标记](../media/green-check-mark.png)|![绿色选中标记](../media/green-check-mark.png)| 
-|实现 Azure Active Directory (Azure AD) Privileged Identity Management (PIM) ，以将实时特权访问应用到 Azure AD 和 Azure 资源。 还可以发现谁有权访问并查看特权访问。|         | ![绿色选中标记](../media/green-check-mark.png)|
-|实现特权访问管理，以管理对 Office 365 中特权管理任务的精细访问控制。 |         | ![绿色选中标记](../media/green-check-mark.png)|
+|实现Azure Active Directory (Azure AD) Privileged Identity Management (PIM) ，以将实时特权访问应用到 Azure AD 和 Azure 资源。 还可以发现谁有权访问并查看特权访问。|         | ![绿色选中标记](../media/green-check-mark.png)|
+|实现特权访问管理，以管理对管理中特权管理任务的细化Office 365。 |         | ![绿色选中标记](../media/green-check-mark.png)|
 |Configure and use Privileged Access Workstations (PAW) to administer services. 不要使用相同的工作站浏览 Internet 并检查与管理帐户不相关的电子邮件。|  ![绿色选中标记](../media/green-check-mark.png)|![绿色选中标记](../media/green-check-mark.png) | 
 
 下图说明了这些功能。
@@ -70,10 +70,10 @@ Microsoft 在租户中提供了安全分数工具，可基于常规活动自动�
 
 |建议  |E3  |E5  |
 |---------|---------|---------|
-|**设置多重身份验证并使用建议的条件访问策略，包括登录风险策略**。 Microsoft 推荐并测试了一组协同工作以保护所有云应用（包括 Office 365 和 Microsoft 365 服务）的策略。 请参阅 [标识和设备访问配置](./office-365-security/microsoft-365-policies-configurations.md)。 | |![绿色选中标记](../media/green-check-mark.png)|
+|**设置多重身份验证并使用建议的条件访问策略，包括登录风险策略**。 Microsoft 推荐并测试了一组协同工作以保护所有云应用的策略，包括Office 365和Microsoft 365服务。 请参阅 [标识和设备访问配置](./office-365-security/microsoft-365-policies-configurations.md)。 | |![绿色选中标记](../media/green-check-mark.png)|
 |**要求所有用户进行多重身份验证**。 如果您没有实施建议的条件访问策略所需的许可，则至少需要为所有用户进行多重身份验证。|![绿色选中标记](../media/green-check-mark.png)|![绿色选中标记](../media/green-check-mark.png)|
-|**提高邮件中恶意软件防护的级别**。 Office 365 或 Microsoft 365 环境包括恶意软件防护，但您可以通过阻止包含通常用于恶意软件的文件类型的附件来增强此保护。|![绿色选中标记](../media/green-check-mark.png)|![绿色选中标记](../media/green-check-mark.png)|
-|**保护你的电子邮件免受目标网络钓鱼攻击**。 如果为 Office 365 或 Microsoft 365 环境配置了一个或多个自定义域，可以配置目标防钓鱼保护。 防钓鱼保护是 Office 365 Defender 的一部分，可帮助保护你的组织免受基于恶意模拟的网络钓鱼攻击和其他网络钓鱼攻击。 如果您尚未配置自定义域，则无需这样做。| |![绿色选中标记](../media/green-check-mark.png)|
+|**提高邮件中恶意软件防护的级别**。 您的Office 365环境Microsoft 365恶意软件防护，但您可以通过阻止具有通常用于恶意软件的文件类型的附件来增强此保护。|![绿色选中标记](../media/green-check-mark.png)|![绿色选中标记](../media/green-check-mark.png)|
+|**保护你的电子邮件免受目标网络钓鱼攻击**。 如果已针对您的 Office 365 或 Microsoft 365 环境配置了一个或多个自定义域，您可以配置目标防钓鱼保护。 防钓鱼保护是 Defender for Office 365的一部分，可帮助保护你的组织免受基于恶意模拟的网络钓鱼攻击和其他网络钓鱼攻击。 如果您尚未配置自定义域，则无需这样做。| |![绿色选中标记](../media/green-check-mark.png)|
 |**防范电子邮件中的勒索软件攻击**。 勒索软件通过加密文件或锁定计算机屏幕来删除对数据的访问权限。 然后，它尝试通过请求"勒索"（通常采用加密货币（如"为"用户"）来勒索资金，以交换对数据的返回访问权限。 通过创建一个或多个邮件流规则来阻止通常用于勒索软件的文件扩展名，或警告通过电子邮件接收这些附件的用户，可以帮助防御勒索软件。|![绿色选中标记](../media/green-check-mark.png)|![绿色选中标记](../media/green-check-mark.png)|
 |阻止来自不与 有业务关系 **的国家/地区建立的连接**。 创建 Azure AD 条件访问策略以阻止来自这些国家/地区的任何连接，从而有效地在租户周围创建地理位置防火墙。| |![绿色选中标记](../media/green-check-mark.png)|
 
@@ -82,25 +82,25 @@ Microsoft 在租户中提供了安全分数工具，可基于常规活动自动�
 
 ## <a name="protect-against-unknown-threats"></a>防范未知威胁
 
-向特权帐户添加额外保护并防范已知攻击后，将注意力转移到防范未知威胁。 更加确定和高级的攻击者使用创新且未知的方法来攻击组织。 通过 Microsoft 收集的数十亿设备、应用程序和服务数据丰富的遥测，我们可以在 Windows、Office 365 和 Azure 上执行 Office 365 的 Defender，以防止 Zero-Day 攻击、利用沙盒环境，并检查有效性，然后再允许访问内容。 
+向特权帐户添加额外保护并防范已知攻击后，将注意力转移到防范未知威胁。 更加确定和高级的攻击者使用创新且未知的方法来攻击组织。 通过 Microsoft 收集的数十亿设备、应用程序和服务数据丰富的遥测，我们可以在 Windows、Office 365 和 Azure 上执行 Office 365 Defender，以防范 Zero-Day 攻击、利用沙盒环境，并检查有效性，然后再允许访问内容。 
 
 
 |建议  |E3  |E5  |
 |---------|---------|---------|
-|**配置 Microsoft Defender for Office 365：**<br>* 安全附件<br>* 安全链接<br>* 适用于 SharePoint、OneDrive 和 Microsoft Teams 的 Microsoft Defender for Endpoint<br>* Defender for Office 365 保护中的防钓鱼|         |![绿色选中标记](../media/green-check-mark.png) |
-|**为终结点功能配置 Microsoft Defender：**<br>* Windows Defender防病毒 <br>* Exploit Protection <br> * 攻击面减少 <br> * 基于硬件的隔离 <br>* 受控文件夹访问权限     |         |![绿色选中标记](../media/green-check-mark.png) |
-|**使用 Microsoft Cloud App Security** 发现 SaaS 应用并开始使用行为分析和异常检测。 |         |![绿色选中标记](../media/green-check-mark.png) |
+|**配置 Microsoft Defender for Office 365：**<br>* 保险箱 Attachments<br>* 保险箱 链接<br>* Microsoft Defender for Endpoint for SharePoint、OneDrive 和 Microsoft Teams<br>* Defender for Office 365保护中的防钓鱼|         |![绿色选中标记](../media/green-check-mark.png) |
+|**为终结点功能配置 Microsoft Defender：**<br>* Windows Defender 防病毒 <br>* Exploit Protection <br> * 攻击面减少 <br> * 基于硬件的隔离 <br>* 受控文件夹访问权限     |         |![绿色选中标记](../media/green-check-mark.png) |
+|**使用Microsoft Cloud App Security** 发现 SaaS 应用，并开始使用行为分析和异常检测。 |         |![绿色选中标记](../media/green-check-mark.png) |
 
 下图说明了这些功能。
 ![用于抵御未知威胁的推荐功能](../media/m365-security-bdm-illustrations-unknown-threats.png)
 
 其他建议：
 - 保护合作伙伴通道通信，如使用 TLS 的电子邮件。
-- 仅向你通信的合作伙伴打开 Teams 联盟。
+- 仅Teams合作伙伴打开联盟联盟。
 - 不要向允许列表添加发件人域、单个发件人或源 IP，因为允许这些发件人绕过垃圾邮件和恶意软件检查 — 客户通常的做法是添加其自己的接受域或大量其他域，其中电子邮件流问题可能已报告给允许列表。 不要将域添加到"垃圾邮件和连接筛选"列表中，因为这可能会绕过所有垃圾邮件检查。 
 - 启用出站垃圾邮件通知 — 在内部向支持人员或 IT 管理员团队启用对通讯组列表的出站垃圾邮件通知，以报告任何内部用户是否正在外部发送垃圾邮件。 这可能是帐户遭到入侵的指示器。
 - 为所有用户禁用远程 PowerShell — 管理员主要使用远程 PowerShell 访问服务以用于管理目的或编程 API 访问。 我们建议为非管理员用户禁用此选项，以避免重新出现，除非他们具有访问该选项的业务要求。 
-- 阻止所有非管理员访问 Microsoft Azure 管理门户。 可以通过创建条件访问规则来阻止所有用户（管理员除外）来实现此目的。 
+- 阻止所有Microsoft Azure访问管理门户。 可以通过创建条件访问规则来阻止所有用户（管理员除外）来实现此目的。 
 
 
 ## <a name="assume-breach"></a>假定泄露
@@ -111,18 +111,18 @@ Microsoft 在租户中提供了安全分数工具，可基于常规活动自动�
 
 零信任网络策略还要求你了解信息存储位置，并应用适当的控件进行分类、保护和保留。 若要有效保护最关键和敏感的资产，你需要首先确定它们所在的位置并清点库存，这非常具有挑战性。 接下来，与您的组织一起定义管理策略。 为组织定义分类架构并配置策略、标签和条件需要仔细规划和准备。 认识到这不是 IT 驱动的流程，这一点很重要。 请务必与法律和合规性团队合作，为组织的数据开发适当的分类和标签架构。
 
-Microsoft 365 信息保护功能可帮助你发现你拥有的信息、存储位置以及需要额外保护的信息。 信息保护是一个持续的过程，Microsoft 365 功能可让你了解用户如何使用和分发敏感信息、当前存储信息的位置以及信息流的位置。 还可以查看用户如何处理受监管以确保应用了适当的标签和保护的信息。
+Microsoft 365信息保护功能可帮助你发现你拥有的信息、存储的位置以及需要额外保护的信息。 信息保护是一个持续的过程，Microsoft 365功能使你可以了解用户如何使用和分发敏感信息、当前存储信息的位置以及信息流的位置。 还可以查看用户如何处理受监管以确保应用了适当的标签和保护的信息。
 
 
 |建议 |E3|E5 |
 |---------|---------|---------|
-|**查看并优化条件访问和相关策略，以与零信任网络的目标保持一致**。 防范已知威胁包括实现一组建议 [的策略](./office-365-security/microsoft-365-policies-configurations.md)。 查看这些策略的实现，以确保保护应用和数据免受获得网络访问权限的黑客的攻击。 适用于 Windows 10 的推荐 Intune 应用保护策略支持 Windows 信息保护 (WIP) 。 WIP 防止通过应用和服务（如电子邮件、社交媒体和公共云）意外泄露组织数据。 |         |![绿色选中标记](../media/green-check-mark.png)|
+|**查看并优化条件访问和相关策略，以与零信任网络的目标保持一致**。 防范已知威胁包括实现一组建议 [的策略](./office-365-security/microsoft-365-policies-configurations.md)。 查看这些策略的实现，以确保保护应用和数据免受获得网络访问权限的黑客的攻击。 建议用于应用的 Intune 应用保护Windows 10启用Windows WIP (WIP) 。 WIP 防止通过应用和服务（如电子邮件、社交媒体和公共云）意外泄露组织数据。 |         |![绿色选中标记](../media/green-check-mark.png)|
 |**禁用外部电子邮件转发**。 获取用户邮箱访问权限的黑客可以通过将邮箱设置为自动转发电子邮件来窃取您的邮件。 即使没有用户感知，也可能发生此情况。 您可以通过配置邮件流规则来防止发生这种情况。|![绿色选中标记](../media/green-check-mark.png) |![绿色选中标记](../media/green-check-mark.png)|
 |**禁用匿名外部日历共享**。 默认情况下，允许外部匿名日历共享。 [禁用日历](/exchange/sharing/sharing-policies/modify-a-sharing-policy) 共享以减少敏感信息的潜在泄露。|![绿色选中标记](../media/green-check-mark.png) |![绿色选中标记](../media/green-check-mark.png)|
-|**为敏感数据配置数据丢失防护策略**。 在安全与合规中心创建数据丢失防护策略，以发现和保护敏感数据，如信用卡号、社会保险号 &amp; 和银行帐号。 Microsoft 365 包括许多可在数据丢失防护策略中使用的预定义敏感信息类型。 您还可以为环境自定义的敏感数据创建自己的敏感信息类型。 |![绿色选中标记](../media/green-check-mark.png)|![绿色选中标记](../media/green-check-mark.png)|
+|**为敏感数据配置数据丢失防护策略**。 在安全与合规中心创建数据丢失防护策略，以发现和保护敏感数据，如信用卡号、社会保险号 &amp; 和银行帐号。 Microsoft 365数据丢失防护策略中可以使用的许多预定义敏感信息类型。 您还可以为环境自定义的敏感数据创建自己的敏感信息类型。 |![绿色选中标记](../media/green-check-mark.png)|![绿色选中标记](../media/green-check-mark.png)|
 |**实现数据分类和信息保护策略**。 实现敏感度标签，并使用这些标签对敏感数据进行分类和应用保护。 您还可以在数据丢失防护策略中使用这些标签。 如果你使用的是 Azure 信息保护标签，我们建议你避免在其他管理中心创建新标签。|         |![绿色选中标记](../media/green-check-mark.png)|
-|使用 Cloud App Security 保护第三 **方应用和服务中的数据**。 配置 Cloud App Security 策略以保护跨第三方云应用（如 Salesforce、Box 或 Dropbox）的敏感信息。 可以使用你在云应用安全策略中创建的敏感信息类型和敏感度标签，并在整个 SaaS 应用中应用它们。 <br><br>Microsoft Cloud App Security 允许你强制执行各种自动化过程。 可以设置策略以提供连续合规性扫描、法律电子数据展示任务、公开共享的敏感内容的 DLP 等。 Cloud App Security 可以监视基于 20 多个元数据筛选器的任何文件类型 (，例如访问级别、文件类型) 。 |         |![绿色选中标记](../media/green-check-mark.png)|
-|**使用 [Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/information-protection-in-windows-overview) 确定用户是否将敏感信息存储在其 Windows 设备上**。 |         |![绿色选中标记](../media/green-check-mark.png)|
+|使用 云应用安全 保护第三 **方应用和服务云应用安全。** 配置云应用安全策略来保护跨第三方云应用（如 Salesforce、Box 或 Dropbox）的敏感信息。 可以使用在策略中创建的敏感信息类型和云应用安全标签，并跨 SaaS 应用应用它们。 <br><br>Microsoft Cloud App Security可强制执行各种自动化过程。 可以设置策略以提供连续合规性扫描、法律电子数据展示任务、公开共享的敏感内容的 DLP 等。 云应用安全基于 20 多个元数据筛选器监视任何文件类型，例如 (级别、文件类型) 。 |         |![绿色选中标记](../media/green-check-mark.png)|
+|**使用 [Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/information-protection-in-windows-overview)确定用户是否将敏感信息存储在Windows设备上**。 |         |![绿色选中标记](../media/green-check-mark.png)|
 |**使用 [AIP 扫描](/azure/information-protection/deploy-aip-scanner) 程序跨服务器和文件共享标识和分类信息**。 使用 AIP 报告工具查看结果并采取适当的操作。|         |![绿色选中标记](../media/green-check-mark.png)|
 
 下图说明了这些功能。
@@ -130,7 +130,7 @@ Microsoft 365 信息保护功能可帮助你发现你拥有的信息、存储位
 
 ## <a name="continuous-monitoring-and-auditing"></a>持续监视和审核
 
-最后（但并非最不一样）持续监视和审核 Microsoft 365 环境以及 Windows 和设备对于确保你能够快速检测和修正任何入侵至关重要。 安全分数、安全中心和 Microsoft Intelligent Graph 高级分析等工具向租户提供有价值的信息，并链接大量威胁情报和安全数据，从而提供强大的威胁防护和检测功能。
+最后（但并非至少）持续监视和审核 Microsoft 365 环境以及 Windows 和设备对于确保能够快速检测和修正任何入侵至关重要。 安全分数、安全中心和 Microsoft Intelligent Graph 的高级分析等工具向租户提供有价值的信息，并链接大量威胁情报和安全数据，从而提供强大的威胁防护和检测。
 
 
 |建议 |E3 |E5 |

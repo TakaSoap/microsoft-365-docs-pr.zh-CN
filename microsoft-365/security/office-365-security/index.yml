@@ -1,9 +1,9 @@
 ### YamlMime:Landing
-title: Microsoft Defender for Office 365 文档
-summary: 了解 Defender for Office 365 中用于更好地保护电子邮件和协作工具的稳固安全解决方案。
+title: Microsoft Defender for Office 365文档
+summary: 了解 Defender for Office 365中强大的安全解决方案，以更好地保护你的电子邮件和协作工具。
 metadata:
-  title: Microsoft Defender for Office 365 安全文档
-  description: 了解 Defender for Office 365 中用于更好地保护电子邮件和协作工具的稳固安全解决方案。
+  title: Microsoft Defender for Office 365安全文档
+  description: 了解 Defender for Office 365中强大的安全解决方案，以更好地保护你的电子邮件和协作工具。
   services: office-365-security-compliance
   ms.service: O365-seccomp
   ms.subservice: subservice
@@ -20,23 +20,23 @@ metadata:
   ms.lasthandoff: 04/14/2021
   ms.locfileid: "51760256"
 landingContent:
-- title: 适用于 Office 365 & Exchange Online Protection 的 Defender
+- title: Defender for Office 365 & Exchange Online Protection
   linkLists:
   - linkListType: overview
     links:
     - text: Office 365 安全性概览
       url: overview.md
-    - text: 在 EOP 和 Defender for Office 365 中设置预设安全策略
+    - text: 在 EOP 和 Defender for Office 365 中设置预设Office 365
       url: preset-security-policies.md
-- title: Office 365 Defender 入门
+- title: Defender for Office 365
   linkLists:
   - linkListType: get-started
     links:
     - text: 抵御威胁
       url: protect-against-threats.md
-    - text: 在 EOP 和 Microsoft Defender for Office 365 中预设安全策略
+    - text: 在 EOP 和 Microsoft Defender for Office 365
       url: preset-security-policies.md
-    - text: Microsoft Defender for Office 365 的新增功能
+    - text: Microsoft Defender for Office 365
       url: whats-new-in-defender-for-office-365.md
 - title: 评估 Defender for Office 365
   linkLists:
@@ -44,7 +44,7 @@ landingContent:
     links:
     - text: 评估 Defender for Office 365
       url: office-365-evaluation.md
-    - text: 切换到 Exchange Online Protection
+    - text: 切换到Exchange Online Protection
       url: switch-to-eop-from-google-postini-the-barracuda-spam-and-virus-firewall-or-cisco.md
 - title: 设置电子邮件身份验证保护
   linkLists:
@@ -62,15 +62,15 @@ landingContent:
     links:
     - text: Exchange Online Protection 概述
       url: exchange-online-protection-overview.md
-    - text: EOP 和 Microsoft Defender for Office 365 安全性的推荐设置设置
+    - text: EOP 和 Microsoft Defender 的推荐设置Office 365安全设置
       url: recommended-settings-for-eop-and-office365.md
 - title: 防御
   linkLists:
   - linkListType: overview
     links:
-    - text: 配置 Microsoft 365 租户以提升安全性
+    - text: 配置 Microsoft 365 租户以提高安全性
       url: tenant-wide-setup-for-increased-security.md
-    - text: 适用于 Office 365 的 EOP 和 Defender 中的配置分析器
+    - text: EOP 和 Defender for Office 365
       url: configuration-analyzer-for-security-policies.md
     - text: 通过攻击模拟培训获得见解
       url: attack-simulation-training-insights.md
@@ -92,9 +92,9 @@ landingContent:
       url: threat-explorer-views.md
     - text: Microsoft Defender for Office 365 中的市场活动视图
       url: campaigns.md
-    - text: 调查在 Office 365 中传递的恶意电子邮件
+    - text: 调查在邮件中传递的恶意Office 365
       url: investigate-malicious-email-that-was-delivered.md
-    - text: 查看适用于 Office 365 的 Defender 报告
+    - text: 查看 Defender for Office 365 报告
       url: view-reports-for-mdo.md
 - title: 在 EOP 中进行调查
   linkLists:
@@ -108,11 +108,11 @@ landingContent:
   linkLists:
   - linkListType: overview
     links:
-    - text: 修正在 Office 365 中传递的恶意电子邮件
+    - text: 修正邮件中传递的恶意Office 365
       url: remediate-malicious-email-delivered-office-365.md
     - text: 响应遭到入侵的电子邮件帐户
       url: responding-to-a-compromised-email-account.md
-    - text: 修正 Outlook 规则和自定义窗体注入攻击
+    - text: 修正Outlook和自定义窗体注入攻击
       url: detect-and-remediate-outlook-rules-forms-attack.md
     - text: 提交误报/漏报
       url: admin-submission.md
@@ -120,9 +120,9 @@ landingContent:
   linkLists:
   - linkListType: overview
     links:
-    - text: AIR 自动调查和响应 (AIR) 在 Defender for Office 365 中的工作方式
+    - text: AIR 自动调查和响应 (AIR) 在 Defender for Office 365
       url: automated-investigation-response-office.md
-    - text: Office 365 Defender 中的 AIR 入门
+    - text: 入门 Defender for Office 365 中的 AIR 进行Office 365
       url: office-365-air.md
     - text: 使用 AIR 处理遭到入侵的用户帐户
       url: address-compromised-users-quickly.md
