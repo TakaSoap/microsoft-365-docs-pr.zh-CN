@@ -19,20 +19,20 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 05/10/2021
 ms.locfileid: "52297772"
 ---
-# <a name="contact-support-for-saint-vincent-and-the-grenadines"></a><span data-ttu-id="dd679-103">请联系圣文特和格林纳西斯的支持</span><span class="sxs-lookup"><span data-stu-id="dd679-103">Contact support for Saint Vincent and the Grenadines</span></span>
+# <a name="contact-support-for-saint-vincent-and-the-grenadines"></a><span data-ttu-id="25033-103">请联系圣文特和格林纳西斯的支持</span><span class="sxs-lookup"><span data-stu-id="25033-103">Contact support for Saint Vincent and the Grenadines</span></span>
 
-<span data-ttu-id="dd679-104">[查找另一个国家/地区](../../business-video/get-help-support.md)。</span><span class="sxs-lookup"><span data-stu-id="dd679-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
+<span data-ttu-id="25033-104">[查找另一个国家/地区](../../business-video/get-help-support.md)。</span><span class="sxs-lookup"><span data-stu-id="25033-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="dd679-105">电话号码</span><span class="sxs-lookup"><span data-stu-id="dd679-105">Phone number</span></span>
-<span data-ttu-id="dd679-106">+1 312 843 5145</span><span class="sxs-lookup"><span data-stu-id="dd679-106">+1 312 843 5145</span></span>
+## <a name="phone-number"></a><span data-ttu-id="25033-105">电话号码</span><span class="sxs-lookup"><span data-stu-id="25033-105">Phone number</span></span>
+<span data-ttu-id="25033-106">+1 312 843 5145</span><span class="sxs-lookup"><span data-stu-id="25033-106">+1 312 843 5145</span></span>
 
-## <a name="hours"></a><span data-ttu-id="dd679-107">工作时间</span><span class="sxs-lookup"><span data-stu-id="dd679-107">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="dd679-108">计费支持：</span><span class="sxs-lookup"><span data-stu-id="dd679-108">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="25033-107">工作时间</span><span class="sxs-lookup"><span data-stu-id="25033-107">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="25033-108">计费支持：</span><span class="sxs-lookup"><span data-stu-id="25033-108">Billing Support:</span></span>
 
-<span data-ttu-id="dd679-109">英语：Mon-Fri上午 9 点到下午 5 点</span><span class="sxs-lookup"><span data-stu-id="dd679-109">English: Mon-Fri 9 AM-5 PM</span></span>
+<span data-ttu-id="25033-109">英语：Mon-Fri上午 9 点到下午 5 点</span><span class="sxs-lookup"><span data-stu-id="25033-109">English: Mon-Fri 9 AM-5 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="dd679-110">技术支持：</span><span class="sxs-lookup"><span data-stu-id="dd679-110">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="25033-110">技术支持：</span><span class="sxs-lookup"><span data-stu-id="25033-110">Technical Support:</span></span>
 
-<span data-ttu-id="dd679-111">英语：全天候</span><span class="sxs-lookup"><span data-stu-id="dd679-111">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="25033-111">英语：全天候</span><span class="sxs-lookup"><span data-stu-id="25033-111">English: 24 hours a day, 7 days a week</span></span>
 
-<span data-ttu-id="dd679-112">国际呼叫费用适用</span><span class="sxs-lookup"><span data-stu-id="dd679-112">International call charges apply</span></span>
+<span data-ttu-id="25033-112">国际呼叫费用适用</span><span class="sxs-lookup"><span data-stu-id="25033-112">International call charges apply</span></span>

@@ -19,18 +19,18 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 05/10/2021
 ms.locfileid: "52297976"
 ---
-# <a name="contact-support-for-nepal"></a><span data-ttu-id="6712b-103">联系尼泊尔支持人员</span><span class="sxs-lookup"><span data-stu-id="6712b-103">Contact support for Nepal</span></span>
+# <a name="contact-support-for-nepal"></a><span data-ttu-id="6ab75-103">联系尼泊尔支持人员</span><span class="sxs-lookup"><span data-stu-id="6ab75-103">Contact support for Nepal</span></span>
 
-<span data-ttu-id="6712b-104">[查找另一个国家/地区](../../business-video/get-help-support.md)。</span><span class="sxs-lookup"><span data-stu-id="6712b-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
+<span data-ttu-id="6ab75-104">[查找另一个国家/地区](../../business-video/get-help-support.md)。</span><span class="sxs-lookup"><span data-stu-id="6ab75-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="6712b-105">电话号码</span><span class="sxs-lookup"><span data-stu-id="6712b-105">Phone number</span></span>
-<span data-ttu-id="6712b-106">电话支持不可用;仅联机支持。</span><span class="sxs-lookup"><span data-stu-id="6712b-106">Telephone support not available; only online support.</span></span>
+## <a name="phone-number"></a><span data-ttu-id="6ab75-105">电话号码</span><span class="sxs-lookup"><span data-stu-id="6ab75-105">Phone number</span></span>
+<span data-ttu-id="6ab75-106">电话支持不可用;仅联机支持。</span><span class="sxs-lookup"><span data-stu-id="6ab75-106">Telephone support not available; only online support.</span></span>
 
-## <a name="hours"></a><span data-ttu-id="6712b-107">工作时间</span><span class="sxs-lookup"><span data-stu-id="6712b-107">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="6712b-108">计费支持：</span><span class="sxs-lookup"><span data-stu-id="6712b-108">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="6ab75-107">工作时间</span><span class="sxs-lookup"><span data-stu-id="6ab75-107">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="6ab75-108">计费支持：</span><span class="sxs-lookup"><span data-stu-id="6ab75-108">Billing Support:</span></span>
 
-<span data-ttu-id="6712b-109">手机不可用</span><span class="sxs-lookup"><span data-stu-id="6712b-109">Not available by phone</span></span>
+<span data-ttu-id="6ab75-109">手机不可用</span><span class="sxs-lookup"><span data-stu-id="6ab75-109">Not available by phone</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="6712b-110">技术支持：</span><span class="sxs-lookup"><span data-stu-id="6712b-110">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="6ab75-110">技术支持：</span><span class="sxs-lookup"><span data-stu-id="6ab75-110">Technical Support:</span></span>
 
-<span data-ttu-id="6712b-111">手机不可用</span><span class="sxs-lookup"><span data-stu-id="6712b-111">Not available by phone</span></span>
+<span data-ttu-id="6ab75-111">手机不可用</span><span class="sxs-lookup"><span data-stu-id="6ab75-111">Not available by phone</span></span>

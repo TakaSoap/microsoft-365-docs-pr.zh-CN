@@ -23,58 +23,58 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 04/21/2021
 ms.locfileid: "51932771"
 ---
-# <a name="get-kb-collection-api"></a><span data-ttu-id="7b73f-104">获取 KB 集合 API</span><span class="sxs-lookup"><span data-stu-id="7b73f-104">Get KB collection API</span></span>
+# <a name="get-kb-collection-api"></a><span data-ttu-id="846a7-104">获取 KB 集合 API</span><span class="sxs-lookup"><span data-stu-id="846a7-104">Get KB collection API</span></span>
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-<span data-ttu-id="7b73f-105">**适用于：Microsoft** [Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)</span><span class="sxs-lookup"><span data-stu-id="7b73f-105">**Applies to:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)</span></span>
+<span data-ttu-id="846a7-105">**适用于：Microsoft** [Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)</span><span class="sxs-lookup"><span data-stu-id="846a7-105">**Applies to:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)</span></span>
 
-- <span data-ttu-id="7b73f-106">想要体验 Microsoft Defender for Endpoint？</span><span class="sxs-lookup"><span data-stu-id="7b73f-106">Want to experience Microsoft Defender for Endpoint?</span></span> [<span data-ttu-id="7b73f-107">注册免费试用版。</span><span class="sxs-lookup"><span data-stu-id="7b73f-107">Sign up for a free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+- <span data-ttu-id="846a7-106">想要体验 Microsoft Defender for Endpoint？</span><span class="sxs-lookup"><span data-stu-id="846a7-106">Want to experience Microsoft Defender for Endpoint?</span></span> [<span data-ttu-id="846a7-107">注册免费试用版。</span><span class="sxs-lookup"><span data-stu-id="846a7-107">Sign up for a free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
 
-<span data-ttu-id="7b73f-108">检索 RBAC 设备组的集合。</span><span class="sxs-lookup"><span data-stu-id="7b73f-108">Retrieves a collection of RBAC device groups.</span></span>
+<span data-ttu-id="846a7-108">检索 RBAC 设备组的集合。</span><span class="sxs-lookup"><span data-stu-id="846a7-108">Retrieves a collection of RBAC device groups.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="7b73f-109">权限</span><span class="sxs-lookup"><span data-stu-id="7b73f-109">Permissions</span></span>
-<span data-ttu-id="7b73f-110">用户需要读取权限。</span><span class="sxs-lookup"><span data-stu-id="7b73f-110">User needs read permissions.</span></span>
+## <a name="permissions"></a><span data-ttu-id="846a7-109">Permissions</span><span class="sxs-lookup"><span data-stu-id="846a7-109">Permissions</span></span>
+<span data-ttu-id="846a7-110">用户需要读取权限。</span><span class="sxs-lookup"><span data-stu-id="846a7-110">User needs read permissions.</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="7b73f-111">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="7b73f-111">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="846a7-111">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="846a7-111">HTTP request</span></span>
 ```
 GET /testwdatppreview/machinegroups
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="7b73f-112">请求标头</span><span class="sxs-lookup"><span data-stu-id="7b73f-112">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="846a7-112">请求标头</span><span class="sxs-lookup"><span data-stu-id="846a7-112">Request headers</span></span>
 
-<span data-ttu-id="7b73f-113">标头</span><span class="sxs-lookup"><span data-stu-id="7b73f-113">Header</span></span> | <span data-ttu-id="7b73f-114">值</span><span class="sxs-lookup"><span data-stu-id="7b73f-114">Value</span></span> 
+<span data-ttu-id="846a7-113">标头</span><span class="sxs-lookup"><span data-stu-id="846a7-113">Header</span></span> | <span data-ttu-id="846a7-114">值</span><span class="sxs-lookup"><span data-stu-id="846a7-114">Value</span></span> 
 :---|:---
-<span data-ttu-id="7b73f-115">Authorization</span><span class="sxs-lookup"><span data-stu-id="7b73f-115">Authorization</span></span> | <span data-ttu-id="7b73f-116">Bearer {token}。</span><span class="sxs-lookup"><span data-stu-id="7b73f-116">Bearer {token}.</span></span> <span data-ttu-id="7b73f-117">**必需**。</span><span class="sxs-lookup"><span data-stu-id="7b73f-117">**Required**.</span></span>
-<span data-ttu-id="7b73f-118">内容类型</span><span class="sxs-lookup"><span data-stu-id="7b73f-118">Content type</span></span> | <span data-ttu-id="7b73f-119">application/json</span><span class="sxs-lookup"><span data-stu-id="7b73f-119">application/json</span></span>
+<span data-ttu-id="846a7-115">Authorization</span><span class="sxs-lookup"><span data-stu-id="846a7-115">Authorization</span></span> | <span data-ttu-id="846a7-116">Bearer {token}。</span><span class="sxs-lookup"><span data-stu-id="846a7-116">Bearer {token}.</span></span> <span data-ttu-id="846a7-117">**必需**。</span><span class="sxs-lookup"><span data-stu-id="846a7-117">**Required**.</span></span>
+<span data-ttu-id="846a7-118">内容类型</span><span class="sxs-lookup"><span data-stu-id="846a7-118">Content type</span></span> | <span data-ttu-id="846a7-119">application/json</span><span class="sxs-lookup"><span data-stu-id="846a7-119">application/json</span></span>
 
-## <a name="request-body"></a><span data-ttu-id="7b73f-120">请求正文</span><span class="sxs-lookup"><span data-stu-id="7b73f-120">Request body</span></span>
-<span data-ttu-id="7b73f-121">Empty</span><span class="sxs-lookup"><span data-stu-id="7b73f-121">Empty</span></span>
+## <a name="request-body"></a><span data-ttu-id="846a7-120">请求正文</span><span class="sxs-lookup"><span data-stu-id="846a7-120">Request body</span></span>
+<span data-ttu-id="846a7-121">Empty</span><span class="sxs-lookup"><span data-stu-id="846a7-121">Empty</span></span>
 
-## <a name="response"></a><span data-ttu-id="7b73f-122">响应</span><span class="sxs-lookup"><span data-stu-id="7b73f-122">Response</span></span>
-<span data-ttu-id="7b73f-123">如果成功 - 200 正常。</span><span class="sxs-lookup"><span data-stu-id="7b73f-123">If successful - 200 OK.</span></span>
+## <a name="response"></a><span data-ttu-id="846a7-122">响应</span><span class="sxs-lookup"><span data-stu-id="846a7-122">Response</span></span>
+<span data-ttu-id="846a7-123">如果成功 - 200 正常。</span><span class="sxs-lookup"><span data-stu-id="846a7-123">If successful - 200 OK.</span></span>
 
-## <a name="example"></a><span data-ttu-id="7b73f-124">示例</span><span class="sxs-lookup"><span data-stu-id="7b73f-124">Example</span></span>
+## <a name="example"></a><span data-ttu-id="846a7-124">示例</span><span class="sxs-lookup"><span data-stu-id="846a7-124">Example</span></span>
 
-<span data-ttu-id="7b73f-125">**请求**</span><span class="sxs-lookup"><span data-stu-id="7b73f-125">**Request**</span></span>
+<span data-ttu-id="846a7-125">**请求**</span><span class="sxs-lookup"><span data-stu-id="846a7-125">**Request**</span></span>
 
-<span data-ttu-id="7b73f-126">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="7b73f-126">Here is an example of the request.</span></span>
+<span data-ttu-id="846a7-126">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="846a7-126">Here is an example of the request.</span></span>
 
 ```
 GET https://graph.microsoft.com/testwdatppreview/machinegroups
 Content-type: application/json
 ```
 
-<span data-ttu-id="7b73f-127">**响应**</span><span class="sxs-lookup"><span data-stu-id="7b73f-127">**Response**</span></span>
+<span data-ttu-id="846a7-127">**响应**</span><span class="sxs-lookup"><span data-stu-id="846a7-127">**Response**</span></span>
 
-<span data-ttu-id="7b73f-128">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="7b73f-128">Here is an example of the response.</span></span>
-<span data-ttu-id="7b73f-129">字段 ID 包含设备组 **ID，** 并且等于设备信息中的字段 **rbacGroupId。**</span><span class="sxs-lookup"><span data-stu-id="7b73f-129">Field id contains device group **id** and equal to field **rbacGroupId** in devices info.</span></span> <span data-ttu-id="7b73f-130">只有 **对于尚未** 分配到任何组的所有设备的一个组，取消分组的字段才为 true。</span><span class="sxs-lookup"><span data-stu-id="7b73f-130">Field **ungrouped** is true only for one group for all devices that have not been assigned to any group.</span></span> <span data-ttu-id="7b73f-131">像往常一样，此组的名称为"UnassignedGroup"。</span><span class="sxs-lookup"><span data-stu-id="7b73f-131">This group as usual has name "UnassignedGroup".</span></span>
+<span data-ttu-id="846a7-128">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="846a7-128">Here is an example of the response.</span></span>
+<span data-ttu-id="846a7-129">字段 ID 包含设备组 **ID，** 并且等于设备信息中的字段 **rbacGroupId。**</span><span class="sxs-lookup"><span data-stu-id="846a7-129">Field id contains device group **id** and equal to field **rbacGroupId** in devices info.</span></span> <span data-ttu-id="846a7-130">只有 **对于尚未** 分配到任何组的所有设备的一个组，取消分组的字段才为 true。</span><span class="sxs-lookup"><span data-stu-id="846a7-130">Field **ungrouped** is true only for one group for all devices that have not been assigned to any group.</span></span> <span data-ttu-id="846a7-131">像往常一样，此组的名称为"UnassignedGroup"。</span><span class="sxs-lookup"><span data-stu-id="846a7-131">This group as usual has name "UnassignedGroup".</span></span>
 
 ```
 HTTP/1.1 200 OK

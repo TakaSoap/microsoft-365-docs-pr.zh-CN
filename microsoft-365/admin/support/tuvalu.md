@@ -19,20 +19,20 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 05/10/2021
 ms.locfileid: "52297496"
 ---
-# <a name="contact-support-for-tuvalu"></a><span data-ttu-id="92787-103">联系支持人员，该技术支持人员</span><span class="sxs-lookup"><span data-stu-id="92787-103">Contact support for Tuvalu</span></span>
+# <a name="contact-support-for-tuvalu"></a><span data-ttu-id="5df69-103">联系支持人员，该技术支持人员</span><span class="sxs-lookup"><span data-stu-id="5df69-103">Contact support for Tuvalu</span></span>
 
-<span data-ttu-id="92787-104">[查找另一个国家/地区](../../business-video/get-help-support.md)。</span><span class="sxs-lookup"><span data-stu-id="92787-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
+<span data-ttu-id="5df69-104">[查找另一个国家/地区](../../business-video/get-help-support.md)。</span><span class="sxs-lookup"><span data-stu-id="5df69-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="92787-105">电话号码</span><span class="sxs-lookup"><span data-stu-id="92787-105">Phone number</span></span>
-<span data-ttu-id="92787-106">+1 312 843 5148</span><span class="sxs-lookup"><span data-stu-id="92787-106">+1 312 843 5148</span></span>
+## <a name="phone-number"></a><span data-ttu-id="5df69-105">电话号码</span><span class="sxs-lookup"><span data-stu-id="5df69-105">Phone number</span></span>
+<span data-ttu-id="5df69-106">+1 312 843 5148</span><span class="sxs-lookup"><span data-stu-id="5df69-106">+1 312 843 5148</span></span>
 
-## <a name="hours"></a><span data-ttu-id="92787-107">工作时间</span><span class="sxs-lookup"><span data-stu-id="92787-107">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="92787-108">计费支持：</span><span class="sxs-lookup"><span data-stu-id="92787-108">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="5df69-107">工作时间</span><span class="sxs-lookup"><span data-stu-id="5df69-107">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="5df69-108">计费支持：</span><span class="sxs-lookup"><span data-stu-id="5df69-108">Billing Support:</span></span>
 
-<span data-ttu-id="92787-109">英语：Mon-Fri上午 9 点到下午 5 点</span><span class="sxs-lookup"><span data-stu-id="92787-109">English: Mon-Fri 9 AM-5 PM</span></span>
+<span data-ttu-id="5df69-109">英语：Mon-Fri上午 9 点到下午 5 点</span><span class="sxs-lookup"><span data-stu-id="5df69-109">English: Mon-Fri 9 AM-5 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="92787-110">技术支持：</span><span class="sxs-lookup"><span data-stu-id="92787-110">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="5df69-110">技术支持：</span><span class="sxs-lookup"><span data-stu-id="5df69-110">Technical Support:</span></span>
 
-<span data-ttu-id="92787-111">英语：全天候</span><span class="sxs-lookup"><span data-stu-id="92787-111">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="5df69-111">英语：全天候</span><span class="sxs-lookup"><span data-stu-id="5df69-111">English: 24 hours a day, 7 days a week</span></span>
 
-<span data-ttu-id="92787-112">国际呼叫费用适用</span><span class="sxs-lookup"><span data-stu-id="92787-112">International call charges apply</span></span>
+<span data-ttu-id="5df69-112">国际呼叫费用适用</span><span class="sxs-lookup"><span data-stu-id="5df69-112">International call charges apply</span></span>

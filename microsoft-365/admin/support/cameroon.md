@@ -19,28 +19,28 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 05/10/2021
 ms.locfileid: "52296391"
 ---
-# <a name="contact-support-for-cameroon"></a><span data-ttu-id="6cc65-103">联系喀麦隆支持人员</span><span class="sxs-lookup"><span data-stu-id="6cc65-103">Contact support for Cameroon</span></span>
+# <a name="contact-support-for-cameroon"></a><span data-ttu-id="dba04-103">联系喀麦隆支持人员</span><span class="sxs-lookup"><span data-stu-id="dba04-103">Contact support for Cameroon</span></span>
 
-<span data-ttu-id="6cc65-104">[查找另一个国家/地区](../../business-video/get-help-support.md)。</span><span class="sxs-lookup"><span data-stu-id="6cc65-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
+<span data-ttu-id="dba04-104">[查找另一个国家/地区](../../business-video/get-help-support.md)。</span><span class="sxs-lookup"><span data-stu-id="dba04-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="6cc65-105">电话号码</span><span class="sxs-lookup"><span data-stu-id="6cc65-105">Phone number</span></span>
-<span data-ttu-id="6cc65-106">+225 20 24 24 90</span><span class="sxs-lookup"><span data-stu-id="6cc65-106">+225 20 24 24 90</span></span>
+## <a name="phone-number"></a><span data-ttu-id="dba04-105">电话号码</span><span class="sxs-lookup"><span data-stu-id="dba04-105">Phone number</span></span>
+<span data-ttu-id="dba04-106">+225 20 24 24 90</span><span class="sxs-lookup"><span data-stu-id="dba04-106">+225 20 24 24 90</span></span>
 
-<span data-ttu-id="6cc65-107">选择选项 9</span><span class="sxs-lookup"><span data-stu-id="6cc65-107">Select option 9</span></span>
+<span data-ttu-id="dba04-107">选择选项 9</span><span class="sxs-lookup"><span data-stu-id="dba04-107">Select option 9</span></span>
 
-<span data-ttu-id="6cc65-108">输入代码 7703</span><span class="sxs-lookup"><span data-stu-id="6cc65-108">Enter code 7703</span></span>
+<span data-ttu-id="dba04-108">输入代码 7703</span><span class="sxs-lookup"><span data-stu-id="dba04-108">Enter code 7703</span></span>
 
-## <a name="hours"></a><span data-ttu-id="6cc65-109">工作时间</span><span class="sxs-lookup"><span data-stu-id="6cc65-109">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="6cc65-110">计费支持：</span><span class="sxs-lookup"><span data-stu-id="6cc65-110">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="dba04-109">工作时间</span><span class="sxs-lookup"><span data-stu-id="dba04-109">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="dba04-110">计费支持：</span><span class="sxs-lookup"><span data-stu-id="dba04-110">Billing Support:</span></span>
 
-<span data-ttu-id="6cc65-111">法语：Mon-Fri上午 8 点到下午 4 点</span><span class="sxs-lookup"><span data-stu-id="6cc65-111">French: Mon-Fri 8 AM-4 PM</span></span>
+<span data-ttu-id="dba04-111">法语：Mon-Fri上午 8 点到下午 4 点</span><span class="sxs-lookup"><span data-stu-id="dba04-111">French: Mon-Fri 8 AM-4 PM</span></span>
 
-<span data-ttu-id="6cc65-112">英语：Mon-Fri上午 8 点到下午 4 点</span><span class="sxs-lookup"><span data-stu-id="6cc65-112">English: Mon-Fri 8 AM-4 PM</span></span>
+<span data-ttu-id="dba04-112">英语：Mon-Fri上午 8 点到下午 4 点</span><span class="sxs-lookup"><span data-stu-id="dba04-112">English: Mon-Fri 8 AM-4 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="6cc65-113">技术支持：</span><span class="sxs-lookup"><span data-stu-id="6cc65-113">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="dba04-113">技术支持：</span><span class="sxs-lookup"><span data-stu-id="dba04-113">Technical Support:</span></span>
 
-<span data-ttu-id="6cc65-114">法语：Mon-Fri上午 8 点到下午 9 点</span><span class="sxs-lookup"><span data-stu-id="6cc65-114">French: Mon-Fri 8 AM-9 PM</span></span>
+<span data-ttu-id="dba04-114">法语：Mon-Fri上午 8 点到下午 9 点</span><span class="sxs-lookup"><span data-stu-id="dba04-114">French: Mon-Fri 8 AM-9 PM</span></span>
 
-<span data-ttu-id="6cc65-115">英语：全天候</span><span class="sxs-lookup"><span data-stu-id="6cc65-115">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="dba04-115">英语：全天候</span><span class="sxs-lookup"><span data-stu-id="dba04-115">English: 24 hours a day, 7 days a week</span></span>
 
-<span data-ttu-id="6cc65-116">国际呼叫费用适用</span><span class="sxs-lookup"><span data-stu-id="6cc65-116">International call charges apply</span></span>
+<span data-ttu-id="dba04-116">国际呼叫费用适用</span><span class="sxs-lookup"><span data-stu-id="dba04-116">International call charges apply</span></span>

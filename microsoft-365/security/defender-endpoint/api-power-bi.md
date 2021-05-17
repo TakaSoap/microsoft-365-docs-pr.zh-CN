@@ -1,5 +1,5 @@
 ---
-title: 与 Power BI 的 Microsoft Defender for Endpoint API 连接
+title: Microsoft Defender for Endpoint API 到 Power BI
 ms.reviewer: ''
 description: 在 Microsoft Defender for Endpoint API (BI) 报告。
 keywords: api， 受支持的 api， Power BI， 报告
@@ -23,38 +23,38 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 04/21/2021
 ms.locfileid: "51935037"
 ---
-# <a name="create-custom-reports-using-power-bi"></a><span data-ttu-id="19e99-104">使用 Power BI 创建自定义报告</span><span class="sxs-lookup"><span data-stu-id="19e99-104">Create custom reports using Power BI</span></span>
+# <a name="create-custom-reports-using-power-bi"></a><span data-ttu-id="b99eb-104">使用自定义报告Power BI</span><span class="sxs-lookup"><span data-stu-id="b99eb-104">Create custom reports using Power BI</span></span>
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-<span data-ttu-id="19e99-105">**适用于：**</span><span class="sxs-lookup"><span data-stu-id="19e99-105">**Applies to:**</span></span>
-- [<span data-ttu-id="19e99-106">Microsoft Defender for Endpoint</span><span class="sxs-lookup"><span data-stu-id="19e99-106">Microsoft Defender for Endpoint</span></span>](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [<span data-ttu-id="19e99-107">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="19e99-107">Microsoft 365 Defender</span></span>](https://go.microsoft.com/fwlink/?linkid=2118804)
+<span data-ttu-id="b99eb-105">**适用于：**</span><span class="sxs-lookup"><span data-stu-id="b99eb-105">**Applies to:**</span></span>
+- [<span data-ttu-id="b99eb-106">Microsoft Defender for Endpoint</span><span class="sxs-lookup"><span data-stu-id="b99eb-106">Microsoft Defender for Endpoint</span></span>](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [<span data-ttu-id="b99eb-107">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="b99eb-107">Microsoft 365 Defender</span></span>](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
-- <span data-ttu-id="19e99-108">想要体验 Microsoft Defender for Endpoint？</span><span class="sxs-lookup"><span data-stu-id="19e99-108">Want to experience Microsoft Defender for Endpoint?</span></span> [<span data-ttu-id="19e99-109">注册免费试用版。</span><span class="sxs-lookup"><span data-stu-id="19e99-109">Sign up for a free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+- <span data-ttu-id="b99eb-108">想要体验 Microsoft Defender for Endpoint？</span><span class="sxs-lookup"><span data-stu-id="b99eb-108">Want to experience Microsoft Defender for Endpoint?</span></span> [<span data-ttu-id="b99eb-109">注册免费试用版。</span><span class="sxs-lookup"><span data-stu-id="b99eb-109">Sign up for a free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-<span data-ttu-id="19e99-110">在此部分中，你将了解在 Defender for Endpoint API 顶部创建 Power BI 报告。</span><span class="sxs-lookup"><span data-stu-id="19e99-110">In this section you will learn create a Power BI report on top of Defender for Endpoint APIs.</span></span>
+<span data-ttu-id="b99eb-110">在此部分中，你将了解在 Defender for Endpoint API Power BI创建一个报告。</span><span class="sxs-lookup"><span data-stu-id="b99eb-110">In this section you will learn create a Power BI report on top of Defender for Endpoint APIs.</span></span>
 
-<span data-ttu-id="19e99-111">第一个示例演示了如何将 Power BI 连接到高级搜寻 API，第二个示例演示了与 OData API（如计算机操作或警报）的连接。</span><span class="sxs-lookup"><span data-stu-id="19e99-111">The first example demonstrates how to connect Power BI to Advanced Hunting API and the second example demonstrates a connection to our OData APIs, such as Machine Actions or Alerts.</span></span>
+<span data-ttu-id="b99eb-111">第一个示例演示如何将Power BI高级搜寻 API，第二个示例演示了与 OData API（如计算机操作或警报）的连接。</span><span class="sxs-lookup"><span data-stu-id="b99eb-111">The first example demonstrates how to connect Power BI to Advanced Hunting API and the second example demonstrates a connection to our OData APIs, such as Machine Actions or Alerts.</span></span>
 
-## <a name="connect-power-bi-to-advanced-hunting-api"></a><span data-ttu-id="19e99-112">将 Power BI 连接到高级搜寻 API</span><span class="sxs-lookup"><span data-stu-id="19e99-112">Connect Power BI to Advanced Hunting API</span></span>
+## <a name="connect-power-bi-to-advanced-hunting-api"></a><span data-ttu-id="b99eb-112">连接 Power BI高级搜寻 API</span><span class="sxs-lookup"><span data-stu-id="b99eb-112">Connect Power BI to Advanced Hunting API</span></span>
 
-- <span data-ttu-id="19e99-113">打开 Microsoft Power BI</span><span class="sxs-lookup"><span data-stu-id="19e99-113">Open Microsoft Power BI</span></span>
+- <span data-ttu-id="b99eb-113">打开 Microsoft Power BI</span><span class="sxs-lookup"><span data-stu-id="b99eb-113">Open Microsoft Power BI</span></span>
 
-- <span data-ttu-id="19e99-114">单击 **"获取**  >  **数据空白查询"**</span><span class="sxs-lookup"><span data-stu-id="19e99-114">Click **Get Data** > **Blank Query**</span></span>
+- <span data-ttu-id="b99eb-114">单击 **"获取**  >  **数据空白查询"**</span><span class="sxs-lookup"><span data-stu-id="b99eb-114">Click **Get Data** > **Blank Query**</span></span>
 
     ![创建空白查询的图像](images/power-bi-create-blank-query.png)
 
-- <span data-ttu-id="19e99-116">单击 **"高级编辑器"**</span><span class="sxs-lookup"><span data-stu-id="19e99-116">Click **Advanced Editor**</span></span>
+- <span data-ttu-id="b99eb-116">单击 **"高级编辑器"**</span><span class="sxs-lookup"><span data-stu-id="b99eb-116">Click **Advanced Editor**</span></span>
 
     ![打开的高级编辑器的图像](images/power-bi-open-advanced-editor.png)
 
-- <span data-ttu-id="19e99-118">复制以下内容并将其粘贴到编辑器中：</span><span class="sxs-lookup"><span data-stu-id="19e99-118">Copy the below and paste it in the editor:</span></span>
+- <span data-ttu-id="b99eb-118">复制以下内容并将其粘贴到编辑器中：</span><span class="sxs-lookup"><span data-stu-id="b99eb-118">Copy the below and paste it in the editor:</span></span>
 
 ```
     let 
@@ -95,31 +95,31 @@ ms.locfileid: "51935037"
 
 ```
 
-- <span data-ttu-id="19e99-119">单击 **完成**</span><span class="sxs-lookup"><span data-stu-id="19e99-119">Click **Done**</span></span>
+- <span data-ttu-id="b99eb-119">单击 **完成**</span><span class="sxs-lookup"><span data-stu-id="b99eb-119">Click **Done**</span></span>
 
-- <span data-ttu-id="19e99-120">单击 **"编辑凭据"**</span><span class="sxs-lookup"><span data-stu-id="19e99-120">Click **Edit Credentials**</span></span>
+- <span data-ttu-id="b99eb-120">单击 **"编辑凭据"**</span><span class="sxs-lookup"><span data-stu-id="b99eb-120">Click **Edit Credentials**</span></span>
 
     ![编辑凭据的图像0](images/power-bi-edit-credentials.png)
 
-- <span data-ttu-id="19e99-122">选择 **"组织**  >  **帐户""登录"**</span><span class="sxs-lookup"><span data-stu-id="19e99-122">Select **Organizational account** > **Sign in**</span></span>
+- <span data-ttu-id="b99eb-122">选择 **"组织**  >  **帐户""登录"**</span><span class="sxs-lookup"><span data-stu-id="b99eb-122">Select **Organizational account** > **Sign in**</span></span>
 
     ![集凭据的图像1](images/power-bi-set-credentials-organizational.png)
 
-- <span data-ttu-id="19e99-124">输入凭据并等待登录</span><span class="sxs-lookup"><span data-stu-id="19e99-124">Enter your credentials and wait to be signed in</span></span>
+- <span data-ttu-id="b99eb-124">输入凭据并等待登录</span><span class="sxs-lookup"><span data-stu-id="b99eb-124">Enter your credentials and wait to be signed in</span></span>
 
-- <span data-ttu-id="19e99-125">单击 **"连接"**</span><span class="sxs-lookup"><span data-stu-id="19e99-125">Click **Connect**</span></span>
+- <span data-ttu-id="b99eb-125">单击 **连接**</span><span class="sxs-lookup"><span data-stu-id="b99eb-125">Click **Connect**</span></span>
 
     ![集凭据的图像2](images/power-bi-set-credentials-organizational-cont.png)
 
-- <span data-ttu-id="19e99-127">现在，查询结果将显示为表格，你可以开始在它上面生成可视化效果！</span><span class="sxs-lookup"><span data-stu-id="19e99-127">Now the results of your query will appear as table and you can start build visualizations on top of it!</span></span>
+- <span data-ttu-id="b99eb-127">现在，查询结果将显示为表格，你可以开始在它上面生成可视化效果！</span><span class="sxs-lookup"><span data-stu-id="b99eb-127">Now the results of your query will appear as table and you can start build visualizations on top of it!</span></span>
 
-- <span data-ttu-id="19e99-128">你可以复制此表、重命名该表并编辑内部的高级搜寻查询，以获取任何你想获取的数据。</span><span class="sxs-lookup"><span data-stu-id="19e99-128">You can duplicate this table, rename it and edit the Advanced Hunting query inside to get any data you would like.</span></span>
+- <span data-ttu-id="b99eb-128">你可以复制此表、重命名该表并编辑内部的高级搜寻查询，以获取任何你想获取的数据。</span><span class="sxs-lookup"><span data-stu-id="b99eb-128">You can duplicate this table, rename it and edit the Advanced Hunting query inside to get any data you would like.</span></span>
 
-## <a name="connect-power-bi-to-odata-apis"></a><span data-ttu-id="19e99-129">将 Power BI 连接到 OData API</span><span class="sxs-lookup"><span data-stu-id="19e99-129">Connect Power BI to OData APIs</span></span>
+## <a name="connect-power-bi-to-odata-apis"></a><span data-ttu-id="b99eb-129">连接 Power BI OData API</span><span class="sxs-lookup"><span data-stu-id="b99eb-129">Connect Power BI to OData APIs</span></span>
 
-- <span data-ttu-id="19e99-130">与上述示例的唯一区别是编辑器内的查询。</span><span class="sxs-lookup"><span data-stu-id="19e99-130">The only difference from the above example is the query inside the editor.</span></span> 
+- <span data-ttu-id="b99eb-130">与上述示例的唯一区别是编辑器内的查询。</span><span class="sxs-lookup"><span data-stu-id="b99eb-130">The only difference from the above example is the query inside the editor.</span></span> 
 
-- <span data-ttu-id="19e99-131">复制以下内容并将其粘贴到编辑器中以拉取 **组织** 的所有计算机操作：</span><span class="sxs-lookup"><span data-stu-id="19e99-131">Copy the below and paste it in the editor to pull all **Machine Actions** from your organization:</span></span>
+- <span data-ttu-id="b99eb-131">复制以下内容并将其粘贴到编辑器中以拉取 **组织** 的所有计算机操作：</span><span class="sxs-lookup"><span data-stu-id="b99eb-131">Copy the below and paste it in the editor to pull all **Machine Actions** from your organization:</span></span>
 
 ```
     let
@@ -132,19 +132,19 @@ ms.locfileid: "51935037"
 
 ```
 
-- <span data-ttu-id="19e99-132">你可以对警报和 **计算机** 执行相同的 **操作**。</span><span class="sxs-lookup"><span data-stu-id="19e99-132">You can do the same for **Alerts** and **Machines**.</span></span>
+- <span data-ttu-id="b99eb-132">你可以对警报和 **计算机** 执行相同的 **操作**。</span><span class="sxs-lookup"><span data-stu-id="b99eb-132">You can do the same for **Alerts** and **Machines**.</span></span>
 
-- <span data-ttu-id="19e99-133">您还可以将 OData 查询用于查询筛选器，请参阅使用 [OData 查询](exposed-apis-odata-samples.md)</span><span class="sxs-lookup"><span data-stu-id="19e99-133">You also can use OData queries for queries filters, see [Using OData Queries](exposed-apis-odata-samples.md)</span></span>
-
-
-## <a name="power-bi-dashboard-samples-in-github"></a><span data-ttu-id="19e99-134">GitHub 中的 Power BI 仪表板示例</span><span class="sxs-lookup"><span data-stu-id="19e99-134">Power BI dashboard samples in GitHub</span></span>
-<span data-ttu-id="19e99-135">有关详细信息，请参阅 [Power BI 报告模板](https://github.com/microsoft/MicrosoftDefenderATP-PowerBI)。</span><span class="sxs-lookup"><span data-stu-id="19e99-135">For more information see the [Power BI report templates](https://github.com/microsoft/MicrosoftDefenderATP-PowerBI).</span></span>
-
-## <a name="sample-reports"></a><span data-ttu-id="19e99-136">示例报告</span><span class="sxs-lookup"><span data-stu-id="19e99-136">Sample reports</span></span>
-<span data-ttu-id="19e99-137">查看 Microsoft Defender for Endpoint Power BI 报告示例。</span><span class="sxs-lookup"><span data-stu-id="19e99-137">View the Microsoft Defender for Endpoint Power BI report samples.</span></span> <span data-ttu-id="19e99-138">有关详细信息，请参阅浏览 [代码示例](https://docs.microsoft.com/samples/browse/?products=mdatp)。</span><span class="sxs-lookup"><span data-stu-id="19e99-138">For more information, see [Browse code samples](https://docs.microsoft.com/samples/browse/?products=mdatp).</span></span>
+- <span data-ttu-id="b99eb-133">您还可以将 OData 查询用于查询筛选器，请参阅使用 [OData 查询](exposed-apis-odata-samples.md)</span><span class="sxs-lookup"><span data-stu-id="b99eb-133">You also can use OData queries for queries filters, see [Using OData Queries](exposed-apis-odata-samples.md)</span></span>
 
 
-## <a name="related-topic"></a><span data-ttu-id="19e99-139">相关主题</span><span class="sxs-lookup"><span data-stu-id="19e99-139">Related topic</span></span>
-- [<span data-ttu-id="19e99-140">适用于终结点的 Defender API</span><span class="sxs-lookup"><span data-stu-id="19e99-140">Defender for Endpoint APIs</span></span>](apis-intro.md)
-- [<span data-ttu-id="19e99-141">高级搜寻 API</span><span class="sxs-lookup"><span data-stu-id="19e99-141">Advanced Hunting API</span></span>](run-advanced-query-api.md)
-- [<span data-ttu-id="19e99-142">使用 OData 查询</span><span class="sxs-lookup"><span data-stu-id="19e99-142">Using OData Queries</span></span>](exposed-apis-odata-samples.md)
+## <a name="power-bi-dashboard-samples-in-github"></a><span data-ttu-id="b99eb-134">Power BI仪表板GitHub</span><span class="sxs-lookup"><span data-stu-id="b99eb-134">Power BI dashboard samples in GitHub</span></span>
+<span data-ttu-id="b99eb-135">有关详细信息，请参阅Power BI[模板](https://github.com/microsoft/MicrosoftDefenderATP-PowerBI)。</span><span class="sxs-lookup"><span data-stu-id="b99eb-135">For more information see the [Power BI report templates](https://github.com/microsoft/MicrosoftDefenderATP-PowerBI).</span></span>
+
+## <a name="sample-reports"></a><span data-ttu-id="b99eb-136">示例报告</span><span class="sxs-lookup"><span data-stu-id="b99eb-136">Sample reports</span></span>
+<span data-ttu-id="b99eb-137">查看 Microsoft Defender for Endpoint Power BI报告示例。</span><span class="sxs-lookup"><span data-stu-id="b99eb-137">View the Microsoft Defender for Endpoint Power BI report samples.</span></span> <span data-ttu-id="b99eb-138">有关详细信息，请参阅浏览 [代码示例](https://docs.microsoft.com/samples/browse/?products=mdatp)。</span><span class="sxs-lookup"><span data-stu-id="b99eb-138">For more information, see [Browse code samples](https://docs.microsoft.com/samples/browse/?products=mdatp).</span></span>
+
+
+## <a name="related-topic"></a><span data-ttu-id="b99eb-139">相关主题</span><span class="sxs-lookup"><span data-stu-id="b99eb-139">Related topic</span></span>
+- [<span data-ttu-id="b99eb-140">适用于终结点的 Defender API</span><span class="sxs-lookup"><span data-stu-id="b99eb-140">Defender for Endpoint APIs</span></span>](apis-intro.md)
+- [<span data-ttu-id="b99eb-141">高级搜寻 API</span><span class="sxs-lookup"><span data-stu-id="b99eb-141">Advanced Hunting API</span></span>](run-advanced-query-api.md)
+- [<span data-ttu-id="b99eb-142">使用 OData 查询</span><span class="sxs-lookup"><span data-stu-id="b99eb-142">Using OData Queries</span></span>](exposed-apis-odata-samples.md)

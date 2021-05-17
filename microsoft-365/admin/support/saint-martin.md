@@ -19,24 +19,24 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 05/10/2021
 ms.locfileid: "52297784"
 ---
-# <a name="contact-support-for-saint-martin"></a><span data-ttu-id="06907-103">联系圣文达文的支持人员</span><span class="sxs-lookup"><span data-stu-id="06907-103">Contact support for Saint Martin</span></span>
+# <a name="contact-support-for-saint-martin"></a><span data-ttu-id="f19e6-103">联系圣文达文的支持人员</span><span class="sxs-lookup"><span data-stu-id="f19e6-103">Contact support for Saint Martin</span></span>
 
-<span data-ttu-id="06907-104">[查找另一个国家/地区](../../business-video/get-help-support.md)。</span><span class="sxs-lookup"><span data-stu-id="06907-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
+<span data-ttu-id="f19e6-104">[查找另一个国家/地区](../../business-video/get-help-support.md)。</span><span class="sxs-lookup"><span data-stu-id="f19e6-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="06907-105">电话号码</span><span class="sxs-lookup"><span data-stu-id="06907-105">Phone number</span></span>
-<span data-ttu-id="06907-106">+1 312 843 5147</span><span class="sxs-lookup"><span data-stu-id="06907-106">+1 312 843 5147</span></span>
+## <a name="phone-number"></a><span data-ttu-id="f19e6-105">电话号码</span><span class="sxs-lookup"><span data-stu-id="f19e6-105">Phone number</span></span>
+<span data-ttu-id="f19e6-106">+1 312 843 5147</span><span class="sxs-lookup"><span data-stu-id="f19e6-106">+1 312 843 5147</span></span>
 
-## <a name="hours"></a><span data-ttu-id="06907-107">工作时间</span><span class="sxs-lookup"><span data-stu-id="06907-107">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="06907-108">计费支持：</span><span class="sxs-lookup"><span data-stu-id="06907-108">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="f19e6-107">工作时间</span><span class="sxs-lookup"><span data-stu-id="f19e6-107">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="f19e6-108">计费支持：</span><span class="sxs-lookup"><span data-stu-id="f19e6-108">Billing Support:</span></span>
 
-<span data-ttu-id="06907-109">法语：Mon-Fri上午 4 点到中午 4 点</span><span class="sxs-lookup"><span data-stu-id="06907-109">French: Mon-Fri 4 AM-noon</span></span>
+<span data-ttu-id="f19e6-109">法语：Mon-Fri上午 4 点到中午 4 点</span><span class="sxs-lookup"><span data-stu-id="f19e6-109">French: Mon-Fri 4 AM-noon</span></span>
 
-<span data-ttu-id="06907-110">英语：Mon-Fri中午 4 点</span><span class="sxs-lookup"><span data-stu-id="06907-110">English: Mon-Fri 4 AM-noon</span></span>
+<span data-ttu-id="f19e6-110">英语：Mon-Fri中午 4 点</span><span class="sxs-lookup"><span data-stu-id="f19e6-110">English: Mon-Fri 4 AM-noon</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="06907-111">技术支持：</span><span class="sxs-lookup"><span data-stu-id="06907-111">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="f19e6-111">技术支持：</span><span class="sxs-lookup"><span data-stu-id="f19e6-111">Technical Support:</span></span>
 
-<span data-ttu-id="06907-112">法语：Mon-Fri 3 AM-4 PM</span><span class="sxs-lookup"><span data-stu-id="06907-112">French: Mon-Fri 3 AM-4 PM</span></span>
+<span data-ttu-id="f19e6-112">法语：Mon-Fri 3 AM-4 PM</span><span class="sxs-lookup"><span data-stu-id="f19e6-112">French: Mon-Fri 3 AM-4 PM</span></span>
 
-<span data-ttu-id="06907-113">英语：全天候</span><span class="sxs-lookup"><span data-stu-id="06907-113">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="f19e6-113">英语：全天候</span><span class="sxs-lookup"><span data-stu-id="f19e6-113">English: 24 hours a day, 7 days a week</span></span>
 
-<span data-ttu-id="06907-114">国际呼叫费用适用</span><span class="sxs-lookup"><span data-stu-id="06907-114">International call charges apply</span></span>
+<span data-ttu-id="f19e6-114">国际呼叫费用适用</span><span class="sxs-lookup"><span data-stu-id="f19e6-114">International call charges apply</span></span>

@@ -19,34 +19,34 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 05/10/2021
 ms.locfileid: "52297520"
 ---
-# <a name="contact-support-for-tunisia"></a><span data-ttu-id="403f5-103">联系突尼斯支持人员</span><span class="sxs-lookup"><span data-stu-id="403f5-103">Contact support for Tunisia</span></span>
+# <a name="contact-support-for-tunisia"></a><span data-ttu-id="d5428-103">联系突尼斯支持人员</span><span class="sxs-lookup"><span data-stu-id="d5428-103">Contact support for Tunisia</span></span>
 
-<span data-ttu-id="403f5-104">[查找另一个国家/地区](../../business-video/get-help-support.md)。</span><span class="sxs-lookup"><span data-stu-id="403f5-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
+<span data-ttu-id="d5428-104">[查找另一个国家/地区](../../business-video/get-help-support.md)。</span><span class="sxs-lookup"><span data-stu-id="d5428-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="403f5-105">电话号码</span><span class="sxs-lookup"><span data-stu-id="403f5-105">Phone number</span></span>
-<span data-ttu-id="403f5-106">71 168 700</span><span class="sxs-lookup"><span data-stu-id="403f5-106">71 168 700</span></span>
+## <a name="phone-number"></a><span data-ttu-id="d5428-105">电话号码</span><span class="sxs-lookup"><span data-stu-id="d5428-105">Phone number</span></span>
+<span data-ttu-id="d5428-106">71 168 700</span><span class="sxs-lookup"><span data-stu-id="d5428-106">71 168 700</span></span>
 
-<span data-ttu-id="403f5-107">选择选项 1</span><span class="sxs-lookup"><span data-stu-id="403f5-107">Select option 1</span></span>
+<span data-ttu-id="d5428-107">选择选项 1</span><span class="sxs-lookup"><span data-stu-id="d5428-107">Select option 1</span></span>
 
-<span data-ttu-id="403f5-108">选择选项 9</span><span class="sxs-lookup"><span data-stu-id="403f5-108">Select option 9</span></span>
+<span data-ttu-id="d5428-108">选择选项 9</span><span class="sxs-lookup"><span data-stu-id="d5428-108">Select option 9</span></span>
 
-<span data-ttu-id="403f5-109">输入代码 7703</span><span class="sxs-lookup"><span data-stu-id="403f5-109">Enter code 7703</span></span>
+<span data-ttu-id="d5428-109">输入代码 7703</span><span class="sxs-lookup"><span data-stu-id="d5428-109">Enter code 7703</span></span>
 
-## <a name="hours"></a><span data-ttu-id="403f5-110">工作时间</span><span class="sxs-lookup"><span data-stu-id="403f5-110">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="403f5-111">计费支持：</span><span class="sxs-lookup"><span data-stu-id="403f5-111">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="d5428-110">工作时间</span><span class="sxs-lookup"><span data-stu-id="d5428-110">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="d5428-111">计费支持：</span><span class="sxs-lookup"><span data-stu-id="d5428-111">Billing Support:</span></span>
 
-<span data-ttu-id="403f5-112">阿拉伯语：Sun-Thu上午 9 点到下午 5 点</span><span class="sxs-lookup"><span data-stu-id="403f5-112">Arabic: Sun-Thu 9 AM-5 PM</span></span>
+<span data-ttu-id="d5428-112">阿拉伯语：Sun-Thu上午 9 点到下午 5 点</span><span class="sxs-lookup"><span data-stu-id="d5428-112">Arabic: Sun-Thu 9 AM-5 PM</span></span>
 
-<span data-ttu-id="403f5-113">法语：Mon-Fri上午 9 点到下午 5 点</span><span class="sxs-lookup"><span data-stu-id="403f5-113">French: Mon-Fri 9 AM-5 PM</span></span>
+<span data-ttu-id="d5428-113">法语：Mon-Fri上午 9 点到下午 5 点</span><span class="sxs-lookup"><span data-stu-id="d5428-113">French: Mon-Fri 9 AM-5 PM</span></span>
 
-<span data-ttu-id="403f5-114">英语：Mon-Fri上午 9 点到下午 5 点</span><span class="sxs-lookup"><span data-stu-id="403f5-114">English: Mon-Fri 9 AM-5 PM</span></span>
+<span data-ttu-id="d5428-114">英语：Mon-Fri上午 9 点到下午 5 点</span><span class="sxs-lookup"><span data-stu-id="d5428-114">English: Mon-Fri 9 AM-5 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="403f5-115">技术支持：</span><span class="sxs-lookup"><span data-stu-id="403f5-115">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="d5428-115">技术支持：</span><span class="sxs-lookup"><span data-stu-id="d5428-115">Technical Support:</span></span>
 
-<span data-ttu-id="403f5-116">阿拉伯语：Sun-Thu上午 9 点到下午 5 点</span><span class="sxs-lookup"><span data-stu-id="403f5-116">Arabic: Sun-Thu 9 AM-5 PM</span></span>
+<span data-ttu-id="d5428-116">阿拉伯语：Sun-Thu上午 9 点到下午 5 点</span><span class="sxs-lookup"><span data-stu-id="d5428-116">Arabic: Sun-Thu 9 AM-5 PM</span></span>
 
-<span data-ttu-id="403f5-117">法语：Mon-Fri上午 8 点到下午 9 点</span><span class="sxs-lookup"><span data-stu-id="403f5-117">French: Mon-Fri 8 AM-9 PM</span></span>
+<span data-ttu-id="d5428-117">法语：Mon-Fri上午 8 点到下午 9 点</span><span class="sxs-lookup"><span data-stu-id="d5428-117">French: Mon-Fri 8 AM-9 PM</span></span>
 
-<span data-ttu-id="403f5-118">英语：全天候</span><span class="sxs-lookup"><span data-stu-id="403f5-118">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="d5428-118">英语：全天候</span><span class="sxs-lookup"><span data-stu-id="d5428-118">English: 24 hours a day, 7 days a week</span></span>
 
-<span data-ttu-id="403f5-119">本地呼叫费用适用</span><span class="sxs-lookup"><span data-stu-id="403f5-119">Local call charges apply</span></span>
+<span data-ttu-id="d5428-119">本地呼叫费用适用</span><span class="sxs-lookup"><span data-stu-id="d5428-119">Local call charges apply</span></span>

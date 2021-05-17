@@ -19,22 +19,22 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 05/10/2021
 ms.locfileid: "52297941"
 ---
-# <a name="contact-support-for-nicaragua"></a><span data-ttu-id="89f8f-103">联系尼加拉瓜支持人员</span><span class="sxs-lookup"><span data-stu-id="89f8f-103">Contact support for Nicaragua</span></span>
+# <a name="contact-support-for-nicaragua"></a><span data-ttu-id="9e6ab-103">联系尼加拉瓜支持人员</span><span class="sxs-lookup"><span data-stu-id="9e6ab-103">Contact support for Nicaragua</span></span>
 
-<span data-ttu-id="89f8f-104">[查找另一个国家/地区](../../business-video/get-help-support.md)。</span><span class="sxs-lookup"><span data-stu-id="89f8f-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
+<span data-ttu-id="9e6ab-104">[查找另一个国家/地区](../../business-video/get-help-support.md)。</span><span class="sxs-lookup"><span data-stu-id="9e6ab-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="89f8f-105">电话号码</span><span class="sxs-lookup"><span data-stu-id="89f8f-105">Phone number</span></span>
-<span data-ttu-id="89f8f-106">1800 0164</span><span class="sxs-lookup"><span data-stu-id="89f8f-106">1800 0164</span></span>
+## <a name="phone-number"></a><span data-ttu-id="9e6ab-105">电话号码</span><span class="sxs-lookup"><span data-stu-id="9e6ab-105">Phone number</span></span>
+<span data-ttu-id="9e6ab-106">1800 0164</span><span class="sxs-lookup"><span data-stu-id="9e6ab-106">1800 0164</span></span>
 
-<span data-ttu-id="89f8f-107">拨号后，输入</span><span class="sxs-lookup"><span data-stu-id="89f8f-107">After dialing, enter</span></span>
+<span data-ttu-id="9e6ab-107">拨号后，输入</span><span class="sxs-lookup"><span data-stu-id="9e6ab-107">After dialing, enter</span></span>
 
-<span data-ttu-id="89f8f-108">877 635 7036</span><span class="sxs-lookup"><span data-stu-id="89f8f-108">877 635 7036</span></span>
+<span data-ttu-id="9e6ab-108">877 635 7036</span><span class="sxs-lookup"><span data-stu-id="9e6ab-108">877 635 7036</span></span>
 
-## <a name="hours"></a><span data-ttu-id="89f8f-109">工作时间</span><span class="sxs-lookup"><span data-stu-id="89f8f-109">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="89f8f-110">计费支持：</span><span class="sxs-lookup"><span data-stu-id="89f8f-110">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="9e6ab-109">工作时间</span><span class="sxs-lookup"><span data-stu-id="9e6ab-109">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="9e6ab-110">计费支持：</span><span class="sxs-lookup"><span data-stu-id="9e6ab-110">Billing Support:</span></span>
 
-<span data-ttu-id="89f8f-111">西班牙语：Mon-Fri上午 9 点到下午 5 点</span><span class="sxs-lookup"><span data-stu-id="89f8f-111">Spanish: Mon-Fri 9 AM-5 PM</span></span>
+<span data-ttu-id="9e6ab-111">西班牙语：Mon-Fri上午 9 点到下午 5 点</span><span class="sxs-lookup"><span data-stu-id="9e6ab-111">Spanish: Mon-Fri 9 AM-5 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="89f8f-112">技术支持：</span><span class="sxs-lookup"><span data-stu-id="89f8f-112">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="9e6ab-112">技术支持：</span><span class="sxs-lookup"><span data-stu-id="9e6ab-112">Technical Support:</span></span>
 
-<span data-ttu-id="89f8f-113">西班牙语：一天 24 小时，每周 7 天</span><span class="sxs-lookup"><span data-stu-id="89f8f-113">Spanish: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="9e6ab-113">西班牙语：一天 24 小时，每周 7 天</span><span class="sxs-lookup"><span data-stu-id="9e6ab-113">Spanish: 24 hours a day, 7 days a week</span></span>

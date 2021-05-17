@@ -27,19 +27,19 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 04/21/2021
 ms.locfileid: "51935745"
 ---
-# <a name="other-security-and-threat-protection-apis"></a><span data-ttu-id="7f867-104">其他安全和威胁防护 API</span><span class="sxs-lookup"><span data-stu-id="7f867-104">Other security and threat protection APIs</span></span>
+# <a name="other-security-and-threat-protection-apis"></a><span data-ttu-id="d452e-104">其他安全和威胁防护 API</span><span class="sxs-lookup"><span data-stu-id="d452e-104">Other security and threat protection APIs</span></span>
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-<span data-ttu-id="7f867-105">**适用于：**</span><span class="sxs-lookup"><span data-stu-id="7f867-105">**Applies to:**</span></span>
+<span data-ttu-id="d452e-105">**适用于：**</span><span class="sxs-lookup"><span data-stu-id="d452e-105">**Applies to:**</span></span>
 
-- <span data-ttu-id="7f867-106">Microsoft 365 Defender API</span><span class="sxs-lookup"><span data-stu-id="7f867-106">Microsoft 365 Defender API</span></span>
+- <span data-ttu-id="d452e-106">Microsoft 365Defender API</span><span class="sxs-lookup"><span data-stu-id="d452e-106">Microsoft 365 Defender API</span></span>
 
 > [!IMPORTANT]
-> <span data-ttu-id="7f867-107">某些信息与预发布的产品有关，在商业发布之前可能有重大修改。</span><span class="sxs-lookup"><span data-stu-id="7f867-107">Some information relates to prereleased product which may be substantially modified before it's commercially released.</span></span> <span data-ttu-id="7f867-108">Microsoft 对此处所提供的信息不作任何明示或默示的保证。</span><span class="sxs-lookup"><span data-stu-id="7f867-108">Microsoft makes no warranties, express or implied, with respect to the information provided here.</span></span>
+> <span data-ttu-id="d452e-107">某些信息与预发布的产品有关，在商业发布之前可能有重大修改。</span><span class="sxs-lookup"><span data-stu-id="d452e-107">Some information relates to prereleased product which may be substantially modified before it's commercially released.</span></span> <span data-ttu-id="d452e-108">Microsoft 对此处所提供的信息不作任何明示或默示的保证。</span><span class="sxs-lookup"><span data-stu-id="d452e-108">Microsoft makes no warranties, express or implied, with respect to the information provided here.</span></span>
 
-<span data-ttu-id="7f867-109">以下资源提供有关可用于 Microsoft 365 Defender API 之外的其他 Microsoft 安全解决方案 API 的更多信息。</span><span class="sxs-lookup"><span data-stu-id="7f867-109">The following resources provide more information about APIs available for other Microsoft security solutions, beyond the Microsoft 365 Defender API.</span></span>
+<span data-ttu-id="d452e-109">以下资源提供有关可用于其他 Microsoft 安全解决方案（除 Microsoft 365 Defender API）的更多信息。</span><span class="sxs-lookup"><span data-stu-id="d452e-109">The following resources provide more information about APIs available for other Microsoft security solutions, beyond the Microsoft 365 Defender API.</span></span>
 
-- [<span data-ttu-id="7f867-110">Microsoft Defender for Endpoint</span><span class="sxs-lookup"><span data-stu-id="7f867-110">Microsoft Defender for Endpoint</span></span>](/windows/security/threat-protection/microsoft-defender-atp/apis-intro)
-- [<span data-ttu-id="7f867-111">Microsoft Defender for Office 365</span><span class="sxs-lookup"><span data-stu-id="7f867-111">Microsoft Defender for Office 365</span></span>](/office/office-365-management-api/)
-- [<span data-ttu-id="7f867-112">Microsoft Cloud App Security</span><span class="sxs-lookup"><span data-stu-id="7f867-112">Microsoft Cloud App Security</span></span>](/cloud-app-security/api-introduction)
+- [<span data-ttu-id="d452e-110">Microsoft Defender for Endpoint</span><span class="sxs-lookup"><span data-stu-id="d452e-110">Microsoft Defender for Endpoint</span></span>](/windows/security/threat-protection/microsoft-defender-atp/apis-intro)
+- [<span data-ttu-id="d452e-111">Microsoft Defender for Office 365</span><span class="sxs-lookup"><span data-stu-id="d452e-111">Microsoft Defender for Office 365</span></span>](/office/office-365-management-api/)
+- [<span data-ttu-id="d452e-112">Microsoft Cloud App Security</span><span class="sxs-lookup"><span data-stu-id="d452e-112">Microsoft Cloud App Security</span></span>](/cloud-app-security/api-introduction)

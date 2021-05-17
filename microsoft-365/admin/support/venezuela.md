@@ -19,18 +19,18 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 05/10/2021
 ms.locfileid: "52297436"
 ---
-# <a name="contact-support-for-venezuela"></a><span data-ttu-id="656f4-103">联系委内瑞拉支持人员</span><span class="sxs-lookup"><span data-stu-id="656f4-103">Contact support for Venezuela</span></span>
+# <a name="contact-support-for-venezuela"></a><span data-ttu-id="65c6b-103">联系委内瑞拉支持人员</span><span class="sxs-lookup"><span data-stu-id="65c6b-103">Contact support for Venezuela</span></span>
 
-<span data-ttu-id="656f4-104">[查找另一个国家/地区](../../business-video/get-help-support.md)。</span><span class="sxs-lookup"><span data-stu-id="656f4-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
+<span data-ttu-id="65c6b-104">[查找另一个国家/地区](../../business-video/get-help-support.md)。</span><span class="sxs-lookup"><span data-stu-id="65c6b-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="656f4-105">电话号码</span><span class="sxs-lookup"><span data-stu-id="656f4-105">Phone number</span></span>
-<span data-ttu-id="656f4-106">0800 100 8763</span><span class="sxs-lookup"><span data-stu-id="656f4-106">0800 100 8763</span></span>
+## <a name="phone-number"></a><span data-ttu-id="65c6b-105">电话号码</span><span class="sxs-lookup"><span data-stu-id="65c6b-105">Phone number</span></span>
+<span data-ttu-id="65c6b-106">0800 100 8763</span><span class="sxs-lookup"><span data-stu-id="65c6b-106">0800 100 8763</span></span>
 
-## <a name="hours"></a><span data-ttu-id="656f4-107">工作时间</span><span class="sxs-lookup"><span data-stu-id="656f4-107">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="656f4-108">计费支持：</span><span class="sxs-lookup"><span data-stu-id="656f4-108">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="65c6b-107">工作时间</span><span class="sxs-lookup"><span data-stu-id="65c6b-107">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="65c6b-108">计费支持：</span><span class="sxs-lookup"><span data-stu-id="65c6b-108">Billing Support:</span></span>
 
-<span data-ttu-id="656f4-109">西班牙语：Mon-Fri上午 9 点到下午 5 点</span><span class="sxs-lookup"><span data-stu-id="656f4-109">Spanish: Mon-Fri 9 AM-5 PM</span></span>
+<span data-ttu-id="65c6b-109">西班牙语：Mon-Fri上午 9 点到下午 5 点</span><span class="sxs-lookup"><span data-stu-id="65c6b-109">Spanish: Mon-Fri 9 AM-5 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="656f4-110">技术支持：</span><span class="sxs-lookup"><span data-stu-id="656f4-110">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="65c6b-110">技术支持：</span><span class="sxs-lookup"><span data-stu-id="65c6b-110">Technical Support:</span></span>
 
-<span data-ttu-id="656f4-111">西班牙语：一天 24 小时，每周 7 天</span><span class="sxs-lookup"><span data-stu-id="656f4-111">Spanish: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="65c6b-111">西班牙语：一天 24 小时，每周 7 天</span><span class="sxs-lookup"><span data-stu-id="65c6b-111">Spanish: 24 hours a day, 7 days a week</span></span>

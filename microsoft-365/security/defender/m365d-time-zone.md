@@ -1,5 +1,5 @@
 ---
-title: 设置 Microsoft 365 Defender 功能的时区
+title: 设置 Defender 功能Microsoft 365时区
 description: 了解如何为与事件、自动调查和修复和高级搜寻关联的日期和时间信息选择时区
 keywords: 时区， 日期， 时间， Microsoft 365 Defender， M365， 安全， 事件， 自动调查和响应， AIR， 高级搜寻
 search.product: eADQiWindows 10XVcnh
@@ -27,19 +27,19 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 04/21/2021
 ms.locfileid: "51934413"
 ---
-# <a name="set-the-time-zone-for-microsoft-365-defender"></a><span data-ttu-id="07b9e-104">设置 Microsoft 365 Defender 的时区</span><span class="sxs-lookup"><span data-stu-id="07b9e-104">Set the time zone for Microsoft 365 Defender</span></span>
+# <a name="set-the-time-zone-for-microsoft-365-defender"></a><span data-ttu-id="254fd-104">设置 Microsoft 365 Defender 的时区</span><span class="sxs-lookup"><span data-stu-id="254fd-104">Set the time zone for Microsoft 365 Defender</span></span>
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
-<span data-ttu-id="07b9e-105">**适用于：**</span><span class="sxs-lookup"><span data-stu-id="07b9e-105">**Applies to:**</span></span>
-- <span data-ttu-id="07b9e-106">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="07b9e-106">Microsoft 365 Defender</span></span>
+<span data-ttu-id="254fd-105">**适用于：**</span><span class="sxs-lookup"><span data-stu-id="254fd-105">**Applies to:**</span></span>
+- <span data-ttu-id="254fd-106">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="254fd-106">Microsoft 365 Defender</span></span>
 
 
 
-<span data-ttu-id="07b9e-107">Microsoft 365 Defender 可以使用本地时区或 UTC 显示日期和时间信息。</span><span class="sxs-lookup"><span data-stu-id="07b9e-107">Microsoft 365 Defender can display date and time information using either your local time zone or UTC.</span></span> <span data-ttu-id="07b9e-108">所选时区将应用于 Microsoft 365 安全中心的以下功能中所示的所有日期和时间信息：</span><span class="sxs-lookup"><span data-stu-id="07b9e-108">The selected time zone will apply to all date and time information shown in the following features in the Microsoft 365 security center:</span></span>
-- <span data-ttu-id="07b9e-109">事件</span><span class="sxs-lookup"><span data-stu-id="07b9e-109">Incidents</span></span>
-- <span data-ttu-id="07b9e-110">自动调查和修复，包括操作中心</span><span class="sxs-lookup"><span data-stu-id="07b9e-110">Automated investigation and remediation, including the action center</span></span>
-- <span data-ttu-id="07b9e-111">高级搜寻</span><span class="sxs-lookup"><span data-stu-id="07b9e-111">Advanced hunting</span></span>
+<span data-ttu-id="254fd-107">Microsoft 365Defender 可以使用你的本地时区或 UTC 显示日期和时间信息。</span><span class="sxs-lookup"><span data-stu-id="254fd-107">Microsoft 365 Defender can display date and time information using either your local time zone or UTC.</span></span> <span data-ttu-id="254fd-108">所选时区将应用于 Microsoft 365 安全中心的以下功能中所示的所有日期和时间信息：</span><span class="sxs-lookup"><span data-stu-id="254fd-108">The selected time zone will apply to all date and time information shown in the following features in the Microsoft 365 security center:</span></span>
+- <span data-ttu-id="254fd-109">事件</span><span class="sxs-lookup"><span data-stu-id="254fd-109">Incidents</span></span>
+- <span data-ttu-id="254fd-110">自动调查和修复，包括操作中心</span><span class="sxs-lookup"><span data-stu-id="254fd-110">Automated investigation and remediation, including the action center</span></span>
+- <span data-ttu-id="254fd-111">高级搜寻</span><span class="sxs-lookup"><span data-stu-id="254fd-111">Advanced hunting</span></span>
 
-<span data-ttu-id="07b9e-112">若要设置这些功能的时区，请转到设置 Microsoft   >  **365 Defender**  >  **时区**。</span><span class="sxs-lookup"><span data-stu-id="07b9e-112">To set the time zone for these features, go to **Settings** > **Microsoft 365 Defender** > **Time zone**.</span></span>
+<span data-ttu-id="254fd-112">若要设置这些功能的时区，请转到"设置Microsoft 365   >  **Defender**  >  **时区"。**</span><span class="sxs-lookup"><span data-stu-id="254fd-112">To set the time zone for these features, go to **Settings** > **Microsoft 365 Defender** > **Time zone**.</span></span>
