@@ -19,20 +19,20 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 05/10/2021
 ms.locfileid: "52296235"
 ---
-# <a name="contact-support-for-faroe-islands"></a><span data-ttu-id="9cbdf-103">联系法罗群岛支持人员</span><span class="sxs-lookup"><span data-stu-id="9cbdf-103">Contact support for Faroe Islands</span></span>
+# <a name="contact-support-for-faroe-islands"></a><span data-ttu-id="83c6e-103">联系法罗群岛支持人员</span><span class="sxs-lookup"><span data-stu-id="83c6e-103">Contact support for Faroe Islands</span></span>
 
-<span data-ttu-id="9cbdf-104">[查找另一个国家/地区](../../business-video/get-help-support.md)。</span><span class="sxs-lookup"><span data-stu-id="9cbdf-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
+<span data-ttu-id="83c6e-104">[查找另一个国家/地区](../../business-video/get-help-support.md)。</span><span class="sxs-lookup"><span data-stu-id="83c6e-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="9cbdf-105">电话号码</span><span class="sxs-lookup"><span data-stu-id="9cbdf-105">Phone number</span></span>
-<span data-ttu-id="9cbdf-106">+45 38 48 70 67</span><span class="sxs-lookup"><span data-stu-id="9cbdf-106">+45 38 48 70 67</span></span>
+## <a name="phone-number"></a><span data-ttu-id="83c6e-105">电话号码</span><span class="sxs-lookup"><span data-stu-id="83c6e-105">Phone number</span></span>
+<span data-ttu-id="83c6e-106">+45 38 48 70 67</span><span class="sxs-lookup"><span data-stu-id="83c6e-106">+45 38 48 70 67</span></span>
 
-## <a name="hours"></a><span data-ttu-id="9cbdf-107">工作时间</span><span class="sxs-lookup"><span data-stu-id="9cbdf-107">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="9cbdf-108">计费支持：</span><span class="sxs-lookup"><span data-stu-id="9cbdf-108">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="83c6e-107">工作时间</span><span class="sxs-lookup"><span data-stu-id="83c6e-107">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="83c6e-108">计费支持：</span><span class="sxs-lookup"><span data-stu-id="83c6e-108">Billing Support:</span></span>
 
-<span data-ttu-id="9cbdf-109">英语：Mon-Fri上午 9 点到下午 5 点</span><span class="sxs-lookup"><span data-stu-id="9cbdf-109">English: Mon-Fri 9 AM-5 PM</span></span>
+<span data-ttu-id="83c6e-109">英语：Mon-Fri上午 9 点到下午 5 点</span><span class="sxs-lookup"><span data-stu-id="83c6e-109">English: Mon-Fri 9 AM-5 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="9cbdf-110">技术支持：</span><span class="sxs-lookup"><span data-stu-id="9cbdf-110">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="83c6e-110">技术支持：</span><span class="sxs-lookup"><span data-stu-id="83c6e-110">Technical Support:</span></span>
 
-<span data-ttu-id="9cbdf-111">英语：全天候</span><span class="sxs-lookup"><span data-stu-id="9cbdf-111">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="83c6e-111">英语：全天候</span><span class="sxs-lookup"><span data-stu-id="83c6e-111">English: 24 hours a day, 7 days a week</span></span>
 
-<span data-ttu-id="9cbdf-112">国际呼叫费用适用</span><span class="sxs-lookup"><span data-stu-id="9cbdf-112">International call charges apply</span></span>
+<span data-ttu-id="83c6e-112">国际呼叫费用适用</span><span class="sxs-lookup"><span data-stu-id="83c6e-112">International call charges apply</span></span>

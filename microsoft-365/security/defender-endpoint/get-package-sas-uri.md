@@ -21,71 +21,71 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 04/20/2021
 ms.locfileid: "51893337"
 ---
-# <a name="get-package-sas-uri-api"></a><span data-ttu-id="1e270-104">获取程序包 SAS URI API</span><span class="sxs-lookup"><span data-stu-id="1e270-104">Get package SAS URI API</span></span>
+# <a name="get-package-sas-uri-api"></a><span data-ttu-id="7f740-104">获取程序包 SAS URI API</span><span class="sxs-lookup"><span data-stu-id="7f740-104">Get package SAS URI API</span></span>
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-<span data-ttu-id="1e270-105">**适用于：Microsoft** [Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)</span><span class="sxs-lookup"><span data-stu-id="1e270-105">**Applies to:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)</span></span>
+<span data-ttu-id="7f740-105">**适用于：Microsoft** [Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)</span><span class="sxs-lookup"><span data-stu-id="7f740-105">**Applies to:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)</span></span>
 
-- <span data-ttu-id="1e270-106">想要体验 Microsoft Defender for Endpoint？</span><span class="sxs-lookup"><span data-stu-id="1e270-106">Want to experience Microsoft Defender for Endpoint?</span></span> [<span data-ttu-id="1e270-107">注册免费试用版。</span><span class="sxs-lookup"><span data-stu-id="1e270-107">Sign up for a free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+- <span data-ttu-id="7f740-106">想要体验 Microsoft Defender for Endpoint？</span><span class="sxs-lookup"><span data-stu-id="7f740-106">Want to experience Microsoft Defender for Endpoint?</span></span> [<span data-ttu-id="7f740-107">注册免费试用版。</span><span class="sxs-lookup"><span data-stu-id="7f740-107">Sign up for a free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-## <a name="api-description"></a><span data-ttu-id="1e270-108">API 说明</span><span class="sxs-lookup"><span data-stu-id="1e270-108">API description</span></span>
-<span data-ttu-id="1e270-109">获取允许下载调查包 [的](collect-investigation-package.md)URI。</span><span class="sxs-lookup"><span data-stu-id="1e270-109">Get a URI that allows downloading of an [Investigation package](collect-investigation-package.md).</span></span>
+## <a name="api-description"></a><span data-ttu-id="7f740-108">API 说明</span><span class="sxs-lookup"><span data-stu-id="7f740-108">API description</span></span>
+<span data-ttu-id="7f740-109">获取允许下载调查包 [的](collect-investigation-package.md)URI。</span><span class="sxs-lookup"><span data-stu-id="7f740-109">Get a URI that allows downloading of an [Investigation package](collect-investigation-package.md).</span></span>
 
 
-## <a name="permissions"></a><span data-ttu-id="1e270-110">权限</span><span class="sxs-lookup"><span data-stu-id="1e270-110">Permissions</span></span>
-<span data-ttu-id="1e270-111">若要调用此 API，需要以下权限之一。</span><span class="sxs-lookup"><span data-stu-id="1e270-111">One of the following permissions is required to call this API.</span></span> <span data-ttu-id="1e270-112">若要了解更多信息（包括如何选择权限），请参阅 [访问 Microsoft Defender for Endpoint API](apis-intro.md)</span><span class="sxs-lookup"><span data-stu-id="1e270-112">To learn more, including how to choose permissions, see [Access the Microsoft Defender for Endpoint APIs](apis-intro.md)</span></span>
+## <a name="permissions"></a><span data-ttu-id="7f740-110">权限</span><span class="sxs-lookup"><span data-stu-id="7f740-110">Permissions</span></span>
+<span data-ttu-id="7f740-111">若要调用此 API，需要以下权限之一。</span><span class="sxs-lookup"><span data-stu-id="7f740-111">One of the following permissions is required to call this API.</span></span> <span data-ttu-id="7f740-112">若要了解更多信息（包括如何选择权限），请参阅 [访问 Microsoft Defender for Endpoint API](apis-intro.md)</span><span class="sxs-lookup"><span data-stu-id="7f740-112">To learn more, including how to choose permissions, see [Access the Microsoft Defender for Endpoint APIs](apis-intro.md)</span></span>
 
-<span data-ttu-id="1e270-113">权限类型</span><span class="sxs-lookup"><span data-stu-id="1e270-113">Permission type</span></span> |   <span data-ttu-id="1e270-114">权限</span><span class="sxs-lookup"><span data-stu-id="1e270-114">Permission</span></span>  |   <span data-ttu-id="1e270-115">权限显示名称</span><span class="sxs-lookup"><span data-stu-id="1e270-115">Permission display name</span></span>
+<span data-ttu-id="7f740-113">权限类型</span><span class="sxs-lookup"><span data-stu-id="7f740-113">Permission type</span></span> |   <span data-ttu-id="7f740-114">权限</span><span class="sxs-lookup"><span data-stu-id="7f740-114">Permission</span></span>  |   <span data-ttu-id="7f740-115">权限显示名称</span><span class="sxs-lookup"><span data-stu-id="7f740-115">Permission display name</span></span>
 :---|:---|:---
-<span data-ttu-id="1e270-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="1e270-116">Application</span></span> |   <span data-ttu-id="1e270-117">Machine.CollectForensics</span><span class="sxs-lookup"><span data-stu-id="1e270-117">Machine.CollectForensics</span></span> |  <span data-ttu-id="1e270-118">"收集取证"</span><span class="sxs-lookup"><span data-stu-id="1e270-118">'Collect forensics'</span></span>
-<span data-ttu-id="1e270-119">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="1e270-119">Delegated (work or school account)</span></span> | <span data-ttu-id="1e270-120">Machine.CollectForensics</span><span class="sxs-lookup"><span data-stu-id="1e270-120">Machine.CollectForensics</span></span> | <span data-ttu-id="1e270-121">"收集取证"</span><span class="sxs-lookup"><span data-stu-id="1e270-121">'Collect forensics'</span></span>
+<span data-ttu-id="7f740-116">应用程序</span><span class="sxs-lookup"><span data-stu-id="7f740-116">Application</span></span> |   <span data-ttu-id="7f740-117">Machine.CollectForensics</span><span class="sxs-lookup"><span data-stu-id="7f740-117">Machine.CollectForensics</span></span> |  <span data-ttu-id="7f740-118">"收集取证"</span><span class="sxs-lookup"><span data-stu-id="7f740-118">'Collect forensics'</span></span>
+<span data-ttu-id="7f740-119">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="7f740-119">Delegated (work or school account)</span></span> | <span data-ttu-id="7f740-120">Machine.CollectForensics</span><span class="sxs-lookup"><span data-stu-id="7f740-120">Machine.CollectForensics</span></span> | <span data-ttu-id="7f740-121">"收集取证"</span><span class="sxs-lookup"><span data-stu-id="7f740-121">'Collect forensics'</span></span>
 
 >[!Note]
-> <span data-ttu-id="1e270-122">使用用户凭据获取令牌时：</span><span class="sxs-lookup"><span data-stu-id="1e270-122">When obtaining a token using user credentials:</span></span>
->- <span data-ttu-id="1e270-123">用户至少需要具有以下角色权限："警报调查" (有关详细信息，请参阅创建和管理) [](user-roles.md)</span><span class="sxs-lookup"><span data-stu-id="1e270-123">The user needs to have at least the following role permission: 'Alerts Investigation' (See [Create and manage roles](user-roles.md) for more information)</span></span>
->- <span data-ttu-id="1e270-124">用户需要具有对设备的访问权限，根据设备组设置 (请参阅创建和管理 [设备](machine-groups.md) 组，了解) </span><span class="sxs-lookup"><span data-stu-id="1e270-124">The user needs to have access to the device, based on device group settings (See [Create and manage device groups](machine-groups.md) for more information)</span></span>
+> <span data-ttu-id="7f740-122">使用用户凭据获取令牌时：</span><span class="sxs-lookup"><span data-stu-id="7f740-122">When obtaining a token using user credentials:</span></span>
+>- <span data-ttu-id="7f740-123">用户至少需要具有以下角色权限："警报调查" (有关详细信息，请参阅创建和管理) [](user-roles.md)</span><span class="sxs-lookup"><span data-stu-id="7f740-123">The user needs to have at least the following role permission: 'Alerts Investigation' (See [Create and manage roles](user-roles.md) for more information)</span></span>
+>- <span data-ttu-id="7f740-124">用户需要具有对设备的访问权限，根据设备组设置 (请参阅创建和管理 [设备](machine-groups.md) 组，了解) </span><span class="sxs-lookup"><span data-stu-id="7f740-124">The user needs to have access to the device, based on device group settings (See [Create and manage device groups](machine-groups.md) for more information)</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="1e270-125">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="1e270-125">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="7f740-125">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="7f740-125">HTTP request</span></span>
 
 ```http
 GET https://api.securitycenter.microsoft.com/api/machineactions/{machine action id}/getPackageUri
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="1e270-126">请求标头</span><span class="sxs-lookup"><span data-stu-id="1e270-126">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="7f740-126">请求标头</span><span class="sxs-lookup"><span data-stu-id="7f740-126">Request headers</span></span>
 
-<span data-ttu-id="1e270-127">名称</span><span class="sxs-lookup"><span data-stu-id="1e270-127">Name</span></span> | <span data-ttu-id="1e270-128">类型</span><span class="sxs-lookup"><span data-stu-id="1e270-128">Type</span></span> | <span data-ttu-id="1e270-129">说明</span><span class="sxs-lookup"><span data-stu-id="1e270-129">Description</span></span>
+<span data-ttu-id="7f740-127">名称</span><span class="sxs-lookup"><span data-stu-id="7f740-127">Name</span></span> | <span data-ttu-id="7f740-128">类型</span><span class="sxs-lookup"><span data-stu-id="7f740-128">Type</span></span> | <span data-ttu-id="7f740-129">说明</span><span class="sxs-lookup"><span data-stu-id="7f740-129">Description</span></span>
 :---|:---|:---
-<span data-ttu-id="1e270-130">Authorization</span><span class="sxs-lookup"><span data-stu-id="1e270-130">Authorization</span></span> | <span data-ttu-id="1e270-131">String</span><span class="sxs-lookup"><span data-stu-id="1e270-131">String</span></span> | <span data-ttu-id="1e270-132">Bearer {token}。</span><span class="sxs-lookup"><span data-stu-id="1e270-132">Bearer {token}.</span></span> <span data-ttu-id="1e270-133">**必需**。</span><span class="sxs-lookup"><span data-stu-id="1e270-133">**Required**.</span></span>
+<span data-ttu-id="7f740-130">Authorization</span><span class="sxs-lookup"><span data-stu-id="7f740-130">Authorization</span></span> | <span data-ttu-id="7f740-131">String</span><span class="sxs-lookup"><span data-stu-id="7f740-131">String</span></span> | <span data-ttu-id="7f740-132">Bearer {token}。</span><span class="sxs-lookup"><span data-stu-id="7f740-132">Bearer {token}.</span></span> <span data-ttu-id="7f740-133">**必需**。</span><span class="sxs-lookup"><span data-stu-id="7f740-133">**Required**.</span></span>
 
 
-## <a name="request-body"></a><span data-ttu-id="1e270-134">请求正文</span><span class="sxs-lookup"><span data-stu-id="1e270-134">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="7f740-134">请求正文</span><span class="sxs-lookup"><span data-stu-id="7f740-134">Request body</span></span>
 
-<span data-ttu-id="1e270-135">Empty</span><span class="sxs-lookup"><span data-stu-id="1e270-135">Empty</span></span>
+<span data-ttu-id="7f740-135">Empty</span><span class="sxs-lookup"><span data-stu-id="7f740-135">Empty</span></span>
 
-## <a name="response"></a><span data-ttu-id="1e270-136">响应</span><span class="sxs-lookup"><span data-stu-id="1e270-136">Response</span></span>
+## <a name="response"></a><span data-ttu-id="7f740-136">响应</span><span class="sxs-lookup"><span data-stu-id="7f740-136">Response</span></span>
 
-<span data-ttu-id="1e270-137">如果成功，此方法返回 200 正常响应代码，该对象在"value"参数中保存指向包的链接。</span><span class="sxs-lookup"><span data-stu-id="1e270-137">If successful, this method returns 200, Ok response code with object that holds the link to the package in the “value” parameter.</span></span> <span data-ttu-id="1e270-138">此链接的有效期非常短，应该立即用于将程序包下载到本地存储。</span><span class="sxs-lookup"><span data-stu-id="1e270-138">This link is valid for a very short time and should be used immediately for downloading the package to a local storage.</span></span>
+<span data-ttu-id="7f740-137">如果成功，此方法返回 200 正常响应代码，该对象在"value"参数中保存指向包的链接。</span><span class="sxs-lookup"><span data-stu-id="7f740-137">If successful, this method returns 200, Ok response code with object that holds the link to the package in the “value” parameter.</span></span> <span data-ttu-id="7f740-138">此链接的有效期非常短，应该立即用于将程序包下载到本地存储。</span><span class="sxs-lookup"><span data-stu-id="7f740-138">This link is valid for a very short time and should be used immediately for downloading the package to a local storage.</span></span>
 
 
-## <a name="example"></a><span data-ttu-id="1e270-139">示例</span><span class="sxs-lookup"><span data-stu-id="1e270-139">Example</span></span>
+## <a name="example"></a><span data-ttu-id="7f740-139">示例</span><span class="sxs-lookup"><span data-stu-id="7f740-139">Example</span></span>
 
-<span data-ttu-id="1e270-140">**请求**</span><span class="sxs-lookup"><span data-stu-id="1e270-140">**Request**</span></span>
+<span data-ttu-id="7f740-140">**请求**</span><span class="sxs-lookup"><span data-stu-id="7f740-140">**Request**</span></span>
 
-<span data-ttu-id="1e270-141">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="1e270-141">Here is an example of the request.</span></span>
+<span data-ttu-id="7f740-141">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="7f740-141">Here is an example of the request.</span></span>
 
 ```http
 GET https://api.securitycenter.microsoft.com/api/machineactions/7327b54fd718525cbca07dacde913b5ac3c85673/GetPackageUri
 
 ```
 
-<span data-ttu-id="1e270-142">**响应**</span><span class="sxs-lookup"><span data-stu-id="1e270-142">**Response**</span></span>
+<span data-ttu-id="7f740-142">**响应**</span><span class="sxs-lookup"><span data-stu-id="7f740-142">**Response**</span></span>
 
-<span data-ttu-id="1e270-143">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="1e270-143">Here is an example of the response.</span></span>
+<span data-ttu-id="7f740-143">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="7f740-143">Here is an example of the response.</span></span>
 
 ```http
 HTTP/1.1 200 Ok

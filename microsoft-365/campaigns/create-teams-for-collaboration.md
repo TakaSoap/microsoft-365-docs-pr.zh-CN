@@ -22,7 +22,7 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: 使用 Microsoft Teams 为团队创建协作空间。
+description: 为团队创建一个协作空间，Microsoft Teams。
 ms.openlocfilehash: ddce111b758fcbd4840ca3493601779690684eeb
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -30,66 +30,66 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 03/19/2021
 ms.locfileid: "50912218"
 ---
-# <a name="create-teams-for-collaboration-in-microsoft-teams"></a><span data-ttu-id="35cde-103">在 Microsoft Teams 中创建协作团队</span><span class="sxs-lookup"><span data-stu-id="35cde-103">Create teams for collaboration in Microsoft Teams</span></span>
+# <a name="create-teams-for-collaboration-in-microsoft-teams"></a><span data-ttu-id="9d6ba-103">创建团队以在 Microsoft Teams</span><span class="sxs-lookup"><span data-stu-id="9d6ba-103">Create teams for collaboration in Microsoft Teams</span></span>
 
-<span data-ttu-id="35cde-104">Microsoft Teams 是一款协作应用，可帮助员工从任何设备保持有序并展开对话。</span><span class="sxs-lookup"><span data-stu-id="35cde-104">Microsoft Teams is a collaboration app that helps your staff stay organized and have conversations, from any device.</span></span> <span data-ttu-id="35cde-105">可以使用 Microsoft Teams 与组织外部的员工或来宾进行即时对话。</span><span class="sxs-lookup"><span data-stu-id="35cde-105">You can use Microsoft Teams to have instant conversations with members of your staff or guests outside your organization.</span></span> <span data-ttu-id="35cde-106">还可以拨打电话、主持会议和共享文件。</span><span class="sxs-lookup"><span data-stu-id="35cde-106">You can also make phone calls, host meetings, and share files.</span></span>
+<span data-ttu-id="9d6ba-104">Microsoft Teams是一款协作应用，可帮助员工从任何设备保持有序并展开对话。</span><span class="sxs-lookup"><span data-stu-id="9d6ba-104">Microsoft Teams is a collaboration app that helps your staff stay organized and have conversations, from any device.</span></span> <span data-ttu-id="9d6ba-105">可以使用Microsoft Teams与组织外部的员工或来宾进行即时对话。</span><span class="sxs-lookup"><span data-stu-id="9d6ba-105">You can use Microsoft Teams to have instant conversations with members of your staff or guests outside your organization.</span></span> <span data-ttu-id="9d6ba-106">还可以拨打电话、主持会议和共享文件。</span><span class="sxs-lookup"><span data-stu-id="9d6ba-106">You can also make phone calls, host meetings, and share files.</span></span>
 
-## <a name="best-practices"></a><span data-ttu-id="35cde-107">最佳做法</span><span class="sxs-lookup"><span data-stu-id="35cde-107">Best practices</span></span>
+## <a name="best-practices"></a><span data-ttu-id="9d6ba-107">最佳做法</span><span class="sxs-lookup"><span data-stu-id="9d6ba-107">Best practices</span></span>
 
-1. <span data-ttu-id="35cde-108">为敏感信息创建私人团队。</span><span class="sxs-lookup"><span data-stu-id="35cde-108">Create private teams for sensitive information.</span></span>
-1. <span data-ttu-id="35cde-109">创建组织范围的团队，以与组织中的每个人通信。</span><span class="sxs-lookup"><span data-stu-id="35cde-109">Create an org-wide team for communication with everyone across your organization.</span></span>
-1. <span data-ttu-id="35cde-110">为特定项目创建团队，并基于应包含哪些人应用适当的保护。</span><span class="sxs-lookup"><span data-stu-id="35cde-110">Create teams for specific projects and apply the right amount of protection based on who should be included.</span></span>
-1. <span data-ttu-id="35cde-111">创建与外部合作伙伴通信的特定团队，使这些团队与业务敏感内容分开。</span><span class="sxs-lookup"><span data-stu-id="35cde-111">Create specific teams for communication with external partners to keep them separate from anything sensitive for your business.</span></span>
+1. <span data-ttu-id="9d6ba-108">为敏感信息创建私人团队。</span><span class="sxs-lookup"><span data-stu-id="9d6ba-108">Create private teams for sensitive information.</span></span>
+1. <span data-ttu-id="9d6ba-109">创建组织范围的团队，以与组织中的每个人通信。</span><span class="sxs-lookup"><span data-stu-id="9d6ba-109">Create an org-wide team for communication with everyone across your organization.</span></span>
+1. <span data-ttu-id="9d6ba-110">为特定项目创建团队，并基于应包含哪些人应用适当的保护。</span><span class="sxs-lookup"><span data-stu-id="9d6ba-110">Create teams for specific projects and apply the right amount of protection based on who should be included.</span></span>
+1. <span data-ttu-id="9d6ba-111">创建与外部合作伙伴通信的特定团队，使这些团队与业务敏感内容分开。</span><span class="sxs-lookup"><span data-stu-id="9d6ba-111">Create specific teams for communication with external partners to keep them separate from anything sensitive for your business.</span></span>
 
-<span data-ttu-id="35cde-112">例如，企业、法律公司或医疗保健部门可以创建以下团队：</span><span class="sxs-lookup"><span data-stu-id="35cde-112">For example, a business, legal firm, or healthcare practice could create the following teams:</span></span>
+<span data-ttu-id="9d6ba-112">例如，企业、法律公司或医疗保健部门可以创建以下团队：</span><span class="sxs-lookup"><span data-stu-id="9d6ba-112">For example, a business, legal firm, or healthcare practice could create the following teams:</span></span>
 
-1. <span data-ttu-id="35cde-113">**业务团队、公司团队或业务范围团队：** 这是供每个人在日常通信中使用，并在整个企业内工作。</span><span class="sxs-lookup"><span data-stu-id="35cde-113">**A business-, firm-, or practice-wide team:** This is for everyone to use for day to day communications and work across your business.</span></span> <span data-ttu-id="35cde-114">您可以使用此团队发布公告或共享整个公司或业务感兴趣的信息。</span><span class="sxs-lookup"><span data-stu-id="35cde-114">You can use this team to post announcements or share information of interest for your whole firm or practice.</span></span>
-1. <span data-ttu-id="35cde-115">**单个团队：** 为较小的组设置团队，以协作处理其日常工作。</span><span class="sxs-lookup"><span data-stu-id="35cde-115">**Individual teams:** Set up teams for smaller groups to collaborate about their day to day work.</span></span>
-1. <span data-ttu-id="35cde-116">**外部通信团队：** 与供应商、合作伙伴或客户进行协调，而不让他们进入任何敏感内容。</span><span class="sxs-lookup"><span data-stu-id="35cde-116">**An external communications team or teams:** Coordinate with your vendors, partners, or clients without allowing them into anything sensitive.</span></span> <span data-ttu-id="35cde-117">为特定组设置不同的频道。</span><span class="sxs-lookup"><span data-stu-id="35cde-117">Set up different channels for specific groups.</span></span>
+1. <span data-ttu-id="9d6ba-113">**业务团队、公司团队或业务范围团队：** 这是供每个人在日常通信中使用，并在整个企业内工作。</span><span class="sxs-lookup"><span data-stu-id="9d6ba-113">**A business-, firm-, or practice-wide team:** This is for everyone to use for day to day communications and work across your business.</span></span> <span data-ttu-id="9d6ba-114">您可以使用此团队发布公告或共享整个公司或业务感兴趣的信息。</span><span class="sxs-lookup"><span data-stu-id="9d6ba-114">You can use this team to post announcements or share information of interest for your whole firm or practice.</span></span>
+1. <span data-ttu-id="9d6ba-115">**单个团队：** 为较小的组设置团队，以协作处理其日常工作。</span><span class="sxs-lookup"><span data-stu-id="9d6ba-115">**Individual teams:** Set up teams for smaller groups to collaborate about their day to day work.</span></span>
+1. <span data-ttu-id="9d6ba-116">**外部通信团队：** 与供应商、合作伙伴或客户进行协调，而不让他们进入任何敏感内容。</span><span class="sxs-lookup"><span data-stu-id="9d6ba-116">**An external communications team or teams:** Coordinate with your vendors, partners, or clients without allowing them into anything sensitive.</span></span> <span data-ttu-id="9d6ba-117">为特定组设置不同的频道。</span><span class="sxs-lookup"><span data-stu-id="9d6ba-117">Set up different channels for specific groups.</span></span>
 
-![包含三个单独的团队的 Microsoft Teams 窗口图示，允许在企业内进行安全通信和协作](../media/m365-democracy-teams-business-collab.png)
+![包含三Microsoft Teams团队的"安全通信和协作"窗口关系图](../media/m365-democracy-teams-business-collab.png)
 
-<span data-ttu-id="35cde-119">市场活动可以创建以下团队来安全地沟通和协作：</span><span class="sxs-lookup"><span data-stu-id="35cde-119">And campaigns could create the following teams to communicate and collaborate securely:</span></span>
+<span data-ttu-id="9d6ba-119">市场活动可以创建以下团队来安全地沟通和协作：</span><span class="sxs-lookup"><span data-stu-id="9d6ba-119">And campaigns could create the following teams to communicate and collaborate securely:</span></span>
 
-1. <span data-ttu-id="35cde-120">**活动潜在客户团队：** 将此功能设置为私人团队，以便只有你的主要市场活动成员可以访问它并讨论潜在的敏感问题。</span><span class="sxs-lookup"><span data-stu-id="35cde-120">**A campaign Leads team:** Set this up as a private team so that only your key campaign members can access it and discuss potentially sensitive concerns.</span></span>
-2. <span data-ttu-id="35cde-121">**常规宣传活动团队：** 这是供所有人用于日常通信和工作。</span><span class="sxs-lookup"><span data-stu-id="35cde-121">**A general campaign team:** This is for everyone to use for day to day communications and work.</span></span> <span data-ttu-id="35cde-122">个人、组或委员会可在此团队中设置频道以完成他们的工作。</span><span class="sxs-lookup"><span data-stu-id="35cde-122">Individuals, groups, or committees can set up channels in this team to do their work.</span></span> <span data-ttu-id="35cde-123">例如，事件规划人员可以设置一个频道来聊天并协调宣传活动的后勤工作。</span><span class="sxs-lookup"><span data-stu-id="35cde-123">For example, the event planning people can set up a channel to chat and coordinate logistics for campaign events.</span></span>
-3. <span data-ttu-id="35cde-124">**合作伙伴团队：** 与供应商、合作伙伴或志愿者进行协调，而不让他们进入任何敏感内容。</span><span class="sxs-lookup"><span data-stu-id="35cde-124">**A partners team:** Coordinate with your vendors, partners, or volunteers without allowing them into anything sensitive.</span></span>
+1. <span data-ttu-id="9d6ba-120">**活动潜在客户团队：** 将此功能设置为私人团队，以便只有你的主要市场活动成员可以访问它并讨论潜在的敏感问题。</span><span class="sxs-lookup"><span data-stu-id="9d6ba-120">**A campaign Leads team:** Set this up as a private team so that only your key campaign members can access it and discuss potentially sensitive concerns.</span></span>
+2. <span data-ttu-id="9d6ba-121">**常规宣传活动团队：** 这是供所有人用于日常通信和工作。</span><span class="sxs-lookup"><span data-stu-id="9d6ba-121">**A general campaign team:** This is for everyone to use for day to day communications and work.</span></span> <span data-ttu-id="9d6ba-122">个人、组或委员会可在此团队中设置频道以完成他们的工作。</span><span class="sxs-lookup"><span data-stu-id="9d6ba-122">Individuals, groups, or committees can set up channels in this team to do their work.</span></span> <span data-ttu-id="9d6ba-123">例如，事件规划人员可以设置一个频道来聊天并协调宣传活动的后勤工作。</span><span class="sxs-lookup"><span data-stu-id="9d6ba-123">For example, the event planning people can set up a channel to chat and coordinate logistics for campaign events.</span></span>
+3. <span data-ttu-id="9d6ba-124">**合作伙伴团队：** 与供应商、合作伙伴或志愿者进行协调，而不让他们进入任何敏感内容。</span><span class="sxs-lookup"><span data-stu-id="9d6ba-124">**A partners team:** Coordinate with your vendors, partners, or volunteers without allowing them into anything sensitive.</span></span>
 
-![包含三个单独的团队的 Microsoft Teams 窗口图示，允许在活动内进行安全通信和协作](../media/m365-democracy-teams-collab.png)
+![包含三Microsoft Teams团队的"活动"窗口图示，允许在活动中实现安全通信和协作](../media/m365-democracy-teams-collab.png)
 
-<span data-ttu-id="35cde-126">创建团队时，将创建以下其他内容：</span><span class="sxs-lookup"><span data-stu-id="35cde-126">When you create a team, here's what else gets created:</span></span>
+<span data-ttu-id="9d6ba-126">创建团队时，将创建以下其他内容：</span><span class="sxs-lookup"><span data-stu-id="9d6ba-126">When you create a team, here's what else gets created:</span></span>
 
-- <span data-ttu-id="35cde-127">新的 [Microsoft 365 组](/MicrosoftTeams/office-365-groups)</span><span class="sxs-lookup"><span data-stu-id="35cde-127">A new [Microsoft 365 group](/MicrosoftTeams/office-365-groups)</span></span>
-- <span data-ttu-id="35cde-128">用于 [存储团队文件的 SharePoint Online](/MicrosoftTeams/sharepoint-onedrive-interact) 网站和文档库</span><span class="sxs-lookup"><span data-stu-id="35cde-128">A [SharePoint Online](/MicrosoftTeams/sharepoint-onedrive-interact) site and document library to store team files</span></span>
-- <span data-ttu-id="35cde-129">[Exchange Online](/MicrosoftTeams/exchange-teams-interact)共享邮箱和日历</span><span class="sxs-lookup"><span data-stu-id="35cde-129">An [Exchange Online](/MicrosoftTeams/exchange-teams-interact) shared mailbox and calendar</span></span>
-- <span data-ttu-id="35cde-130">OneNote 笔记本</span><span class="sxs-lookup"><span data-stu-id="35cde-130">A OneNote notebook</span></span>
-- <span data-ttu-id="35cde-131">与其他 Office 365 应用（如 Planner 和 Power BI）的紧密关系</span><span class="sxs-lookup"><span data-stu-id="35cde-131">Ties into other Office 365 apps such as Planner and Power BI</span></span>
+- <span data-ttu-id="9d6ba-127">新Microsoft 365[组](/MicrosoftTeams/office-365-groups)</span><span class="sxs-lookup"><span data-stu-id="9d6ba-127">A new [Microsoft 365 group](/MicrosoftTeams/office-365-groups)</span></span>
+- <span data-ttu-id="9d6ba-128">一[SharePoint Online](/MicrosoftTeams/sharepoint-onedrive-interact)网站和文档库来存储团队文件</span><span class="sxs-lookup"><span data-stu-id="9d6ba-128">A [SharePoint Online](/MicrosoftTeams/sharepoint-onedrive-interact) site and document library to store team files</span></span>
+- <span data-ttu-id="9d6ba-129">共享[Exchange Online](/MicrosoftTeams/exchange-teams-interact)日历</span><span class="sxs-lookup"><span data-stu-id="9d6ba-129">An [Exchange Online](/MicrosoftTeams/exchange-teams-interact) shared mailbox and calendar</span></span>
+- <span data-ttu-id="9d6ba-130">OneNote 笔记本</span><span class="sxs-lookup"><span data-stu-id="9d6ba-130">A OneNote notebook</span></span>
+- <span data-ttu-id="9d6ba-131">与其他应用Office 365，如 Planner 和 Power BI</span><span class="sxs-lookup"><span data-stu-id="9d6ba-131">Ties into other Office 365 apps such as Planner and Power BI</span></span>
 
-<span data-ttu-id="35cde-132">在 Microsoft Teams 内，你可以找到：</span><span class="sxs-lookup"><span data-stu-id="35cde-132">Inside Microsoft Teams, you can find:</span></span>
+<span data-ttu-id="9d6ba-132">在Microsoft Teams内，你可以找到：</span><span class="sxs-lookup"><span data-stu-id="9d6ba-132">Inside Microsoft Teams, you can find:</span></span>
 
-1. <span data-ttu-id="35cde-133">**Teams：** 查找属于或创建自己的频道。</span><span class="sxs-lookup"><span data-stu-id="35cde-133">**Teams:** Find channels to belong to or create your own.</span></span> <span data-ttu-id="35cde-134">可以在内部频道内召开现场会议、进行对话和共享文件。</span><span class="sxs-lookup"><span data-stu-id="35cde-134">Inside channels you can hold on-the-spot meetings, have conversations, and share files.</span></span>
-2. <span data-ttu-id="35cde-135">**会议：** 查看在一天或一周排好电话的所有内容。</span><span class="sxs-lookup"><span data-stu-id="35cde-135">**Meetings:** See everything you've got lined up for the day or week.</span></span> <span data-ttu-id="35cde-136">或者，安排会议。</span><span class="sxs-lookup"><span data-stu-id="35cde-136">Or, schedule a meeting.</span></span> <span data-ttu-id="35cde-137">此日历与 Outlook 日历同步。</span><span class="sxs-lookup"><span data-stu-id="35cde-137">This calendar syncs with your Outlook calendar.</span></span>
-3. <span data-ttu-id="35cde-138">**呼叫：** 在某些情况下，如果你的组织已设置它，你可以从 Microsoft Teams 呼叫任何人，即使他们没有使用 Microsoft Teams。</span><span class="sxs-lookup"><span data-stu-id="35cde-138">**Calls:** In some cases, if your organization has it set up, you can call anyone from Microsoft Teams, even if they're not using Microsoft Teams.</span></span>
-4. <span data-ttu-id="35cde-139">**活动：** 跟进所有未读邮件、@mentions、回复等。</span><span class="sxs-lookup"><span data-stu-id="35cde-139">**Activity:** Catch up on all your unread messages, @mentions, replies, and more.</span></span>
+1. <span data-ttu-id="9d6ba-133">**Teams：** 查找属于或创建自己的频道。</span><span class="sxs-lookup"><span data-stu-id="9d6ba-133">**Teams:** Find channels to belong to or create your own.</span></span> <span data-ttu-id="9d6ba-134">可以在内部频道内召开现场会议、进行对话和共享文件。</span><span class="sxs-lookup"><span data-stu-id="9d6ba-134">Inside channels you can hold on-the-spot meetings, have conversations, and share files.</span></span>
+2. <span data-ttu-id="9d6ba-135">**会议：** 查看在一天或一周排好电话的所有内容。</span><span class="sxs-lookup"><span data-stu-id="9d6ba-135">**Meetings:** See everything you've got lined up for the day or week.</span></span> <span data-ttu-id="9d6ba-136">或者，安排会议。</span><span class="sxs-lookup"><span data-stu-id="9d6ba-136">Or, schedule a meeting.</span></span> <span data-ttu-id="9d6ba-137">此日历与你的日历Outlook同步。</span><span class="sxs-lookup"><span data-stu-id="9d6ba-137">This calendar syncs with your Outlook calendar.</span></span>
+3. <span data-ttu-id="9d6ba-138">**呼叫：** 在某些情况下，如果你的组织已设置它，你可以从 Microsoft Teams呼叫任何人，即使他们没有使用 Microsoft Teams。</span><span class="sxs-lookup"><span data-stu-id="9d6ba-138">**Calls:** In some cases, if your organization has it set up, you can call anyone from Microsoft Teams, even if they're not using Microsoft Teams.</span></span>
+4. <span data-ttu-id="9d6ba-139">**活动：** 跟进所有未读邮件、@mentions、回复等。</span><span class="sxs-lookup"><span data-stu-id="9d6ba-139">**Activity:** Catch up on all your unread messages, @mentions, replies, and more.</span></span>
 
-<span data-ttu-id="35cde-140">使用顶部的命令框搜索特定项目或人员、执行快速操作并启动应用。</span><span class="sxs-lookup"><span data-stu-id="35cde-140">Use the command box at the top to search for specific items or people, take quick actions, and launch apps.</span></span>
+<span data-ttu-id="9d6ba-140">使用顶部的命令框搜索特定项目或人员、执行快速操作并启动应用。</span><span class="sxs-lookup"><span data-stu-id="9d6ba-140">Use the command box at the top to search for specific items or people, take quick actions, and launch apps.</span></span>
 
-## <a name="set-it-up"></a><span data-ttu-id="35cde-141">设置</span><span class="sxs-lookup"><span data-stu-id="35cde-141">Set it up</span></span>
+## <a name="set-it-up"></a><span data-ttu-id="9d6ba-141">设置</span><span class="sxs-lookup"><span data-stu-id="9d6ba-141">Set it up</span></span>
 
-<span data-ttu-id="35cde-142">仅为业务所有者和经理或市场活动经理和候选人创建私人团队，如下所示。</span><span class="sxs-lookup"><span data-stu-id="35cde-142">Create a private team for just the business owner and managers, or campaign manager and candidate like this.</span></span>
+<span data-ttu-id="9d6ba-142">仅为业务所有者和经理或市场活动经理和候选人创建私人团队，如下所示。</span><span class="sxs-lookup"><span data-stu-id="9d6ba-142">Create a private team for just the business owner and managers, or campaign manager and candidate like this.</span></span>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWeqWA]
 
-<span data-ttu-id="35cde-143">创建组织范围的团队，企业或活动中的每个人都可以使用该团队进行通信和共享文件。</span><span class="sxs-lookup"><span data-stu-id="35cde-143">Create an organization-wide team that everyone in the business or campaign can use to communicate and share files.</span></span>
+<span data-ttu-id="9d6ba-143">创建组织范围的团队，企业或活动中的每个人都可以使用该团队进行通信和共享文件。</span><span class="sxs-lookup"><span data-stu-id="9d6ba-143">Create an organization-wide team that everyone in the business or campaign can use to communicate and share files.</span></span>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2GCG9]
 
-<span data-ttu-id="35cde-144">创建与组织外部的来宾共享的团队，例如广告或财务。</span><span class="sxs-lookup"><span data-stu-id="35cde-144">Create a team that you share with guests outside your organization, such as for advertising or finances.</span></span>
+<span data-ttu-id="9d6ba-144">创建与组织外部的来宾共享的团队，例如广告或财务。</span><span class="sxs-lookup"><span data-stu-id="9d6ba-144">Create a team that you share with guests outside your organization, such as for advertising or finances.</span></span>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FQMp]
 
-<span data-ttu-id="35cde-145">若要详细了解 Microsoft Teams，请参阅 [Microsoft Teams 技术文档](/microsoftteams/microsoft-teams)</span><span class="sxs-lookup"><span data-stu-id="35cde-145">Learn more about Microsoft Teams at [Microsoft Teams technical documentation](/microsoftteams/microsoft-teams)</span></span>
+<span data-ttu-id="9d6ba-145">若要详细了解Microsoft Teams，请参阅[Microsoft Teams文档](/microsoftteams/microsoft-teams)</span><span class="sxs-lookup"><span data-stu-id="9d6ba-145">Learn more about Microsoft Teams at [Microsoft Teams technical documentation](/microsoftteams/microsoft-teams)</span></span>
 
-## <a name="admin-settings"></a><span data-ttu-id="35cde-146">管理员设置</span><span class="sxs-lookup"><span data-stu-id="35cde-146">Admin settings</span></span>
+## <a name="admin-settings"></a><span data-ttu-id="9d6ba-146">管理员设置</span><span class="sxs-lookup"><span data-stu-id="9d6ba-146">Admin settings</span></span>
 
-<span data-ttu-id="35cde-147">你必须是管理员才能创建组织范围的团队。</span><span class="sxs-lookup"><span data-stu-id="35cde-147">You must be an admin to create an organization-wide team.</span></span> <span data-ttu-id="35cde-148">有关详细信息，请参阅什么是[Microsoft 365 中的管理员？。](https://support.office.com/article/what-is-an-admin-e123627e-4892-4461-b9aa-1b6d57a5cfa4?ui=en-US&rs=en-US&ad=US)</span><span class="sxs-lookup"><span data-stu-id="35cde-148">For more information, see [What is an Admin in Microsoft 365?](https://support.office.com/article/what-is-an-admin-e123627e-4892-4461-b9aa-1b6d57a5cfa4?ui=en-US&rs=en-US&ad=US).</span></span>
+<span data-ttu-id="9d6ba-147">你必须是管理员才能创建组织范围的团队。</span><span class="sxs-lookup"><span data-stu-id="9d6ba-147">You must be an admin to create an organization-wide team.</span></span> <span data-ttu-id="9d6ba-148">有关详细信息，请参阅[什么是管理员Microsoft 365？。](https://support.office.com/article/what-is-an-admin-e123627e-4892-4461-b9aa-1b6d57a5cfa4?ui=en-US&rs=en-US&ad=US)</span><span class="sxs-lookup"><span data-stu-id="9d6ba-148">For more information, see [What is an Admin in Microsoft 365?](https://support.office.com/article/what-is-an-admin-e123627e-4892-4461-b9aa-1b6d57a5cfa4?ui=en-US&rs=en-US&ad=US).</span></span>

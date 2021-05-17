@@ -20,62 +20,62 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 04/20/2021
 ms.locfileid: "51893690"
 ---
-# <a name="protect-your-organizations-data-with-device-control"></a><span data-ttu-id="423cf-103">使用设备控制保护组织的数据</span><span class="sxs-lookup"><span data-stu-id="423cf-103">Protect your organization’s data with device control</span></span>
+# <a name="protect-your-organizations-data-with-device-control"></a><span data-ttu-id="caea4-103">使用设备控制保护组织的数据</span><span class="sxs-lookup"><span data-stu-id="caea4-103">Protect your organization’s data with device control</span></span>
 
-<span data-ttu-id="423cf-104">**适用于：Microsoft** [Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2069559)</span><span class="sxs-lookup"><span data-stu-id="423cf-104">**Applies to:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2069559)</span></span>
+<span data-ttu-id="caea4-104">**适用于：Microsoft** [Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2069559)</span><span class="sxs-lookup"><span data-stu-id="caea4-104">**Applies to:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2069559)</span></span>
 
-<span data-ttu-id="423cf-105">Microsoft Defender for Endpoint 设备控件通过监视和控制组织中设备的媒体使用（如使用可移动存储设备和 USB 驱动器）防止数据丢失。</span><span class="sxs-lookup"><span data-stu-id="423cf-105">Microsoft Defender for Endpoint device control protects against data loss, by monitoring and controlling media use by devices in your organization, such as the use of removable storage devices and USB drives.</span></span>
+<span data-ttu-id="caea4-105">Microsoft Defender for Endpoint 设备控件通过监视和控制组织中设备的媒体使用（如使用可移动存储设备和 USB 驱动器）防止数据丢失。</span><span class="sxs-lookup"><span data-stu-id="caea4-105">Microsoft Defender for Endpoint device control protects against data loss, by monitoring and controlling media use by devices in your organization, such as the use of removable storage devices and USB drives.</span></span>
 
-<span data-ttu-id="423cf-106">借助设备控件报告，可以查看与媒体使用情况相关的事件，例如：</span><span class="sxs-lookup"><span data-stu-id="423cf-106">With the device control report, you can view events that relate to media usage, such as:</span></span>
+<span data-ttu-id="caea4-106">借助设备控件报告，可以查看与媒体使用情况相关的事件，例如：</span><span class="sxs-lookup"><span data-stu-id="caea4-106">With the device control report, you can view events that relate to media usage, such as:</span></span>
 
-- <span data-ttu-id="423cf-107">**审核事件：** 显示连接外部媒体时发生的审核事件数。</span><span class="sxs-lookup"><span data-stu-id="423cf-107">**Audit events:** Shows the number of audit events that occur when external media is connected.</span></span>
-- <span data-ttu-id="423cf-108">**策略事件：** 显示触发设备控制策略时发生的策略事件数。</span><span class="sxs-lookup"><span data-stu-id="423cf-108">**Policy events:** Shows the number of policy events that occur when a device control policy is triggered.</span></span>
+- <span data-ttu-id="caea4-107">**审核事件：** 显示连接外部媒体时发生的审核事件数。</span><span class="sxs-lookup"><span data-stu-id="caea4-107">**Audit events:** Shows the number of audit events that occur when external media is connected.</span></span>
+- <span data-ttu-id="caea4-108">**策略事件：** 显示触发设备控制策略时发生的策略事件数。</span><span class="sxs-lookup"><span data-stu-id="caea4-108">**Policy events:** Shows the number of policy events that occur when a device control policy is triggered.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="423cf-109">默认情况下，会为载入到 Microsoft Defender for Endpoint 的设备启用跟踪媒体使用情况的审核事件。</span><span class="sxs-lookup"><span data-stu-id="423cf-109">The audit event to track media usage is enabled by default for devices onboarded to Microsoft Defender for Endpoint.</span></span>
+> <span data-ttu-id="caea4-109">默认情况下，会为载入到 Microsoft Defender for Endpoint 的设备启用跟踪媒体使用情况的审核事件。</span><span class="sxs-lookup"><span data-stu-id="caea4-109">The audit event to track media usage is enabled by default for devices onboarded to Microsoft Defender for Endpoint.</span></span>
 
-## <a name="understanding-the-audit-events"></a><span data-ttu-id="423cf-110">了解审核事件</span><span class="sxs-lookup"><span data-stu-id="423cf-110">Understanding the audit events</span></span>
+## <a name="understanding-the-audit-events"></a><span data-ttu-id="caea4-110">了解审核事件</span><span class="sxs-lookup"><span data-stu-id="caea4-110">Understanding the audit events</span></span>
 
-<span data-ttu-id="423cf-111">审核事件包括：</span><span class="sxs-lookup"><span data-stu-id="423cf-111">The audit events include:</span></span>
+<span data-ttu-id="caea4-111">审核事件包括：</span><span class="sxs-lookup"><span data-stu-id="caea4-111">The audit events include:</span></span>
 
-- <span data-ttu-id="423cf-112">**USB 驱动器装入和卸载：** 装载或卸载 USB 驱动器时生成的审核事件。</span><span class="sxs-lookup"><span data-stu-id="423cf-112">**USB drive mount and unmount:** Audit events that are generated when a USB drive is mounted or unmounted.</span></span>
-- <span data-ttu-id="423cf-113">**PnP：** 即插即用审核事件在可移动存储、打印机或Bluetooth媒体连接时生成。</span><span class="sxs-lookup"><span data-stu-id="423cf-113">**PnP:** Plug and Play audit events are generated when removable storage, a printer, or Bluetooth media is connected.</span></span>
+- <span data-ttu-id="caea4-112">**USB 驱动器装入和卸载：** 装载或卸载 USB 驱动器时生成的审核事件。</span><span class="sxs-lookup"><span data-stu-id="caea4-112">**USB drive mount and unmount:** Audit events that are generated when a USB drive is mounted or unmounted.</span></span>
+- <span data-ttu-id="caea4-113">**PnP：** 即插即用审核事件在可移动存储、打印机或蓝牙媒体连接时生成。</span><span class="sxs-lookup"><span data-stu-id="caea4-113">**PnP:** Plug and Play audit events are generated when removable storage, a printer, or Bluetooth media is connected.</span></span>
 
-## <a name="monitor-device-control-security"></a><span data-ttu-id="423cf-114">监视设备控制安全性</span><span class="sxs-lookup"><span data-stu-id="423cf-114">Monitor device control security</span></span>
+## <a name="monitor-device-control-security"></a><span data-ttu-id="caea4-114">监视设备控制安全性</span><span class="sxs-lookup"><span data-stu-id="caea4-114">Monitor device control security</span></span>
 
-<span data-ttu-id="423cf-115">Microsoft Defender for Endpoint 中的设备控制使安全管理员能够使用工具通过报告跟踪其组织的设备控制安全性。</span><span class="sxs-lookup"><span data-stu-id="423cf-115">Device control in Microsoft Defender for Endpoint empowers security administrators with tools that enable them to track their organization’s device control security through reports.</span></span> <span data-ttu-id="423cf-116">可以通过访问"报告""设备保护"，在 Microsoft 365 安全> **报告**。</span><span class="sxs-lookup"><span data-stu-id="423cf-116">You can find the device control report in the Microsoft 365 security center by going to **Reports > Device protection**.</span></span>
+<span data-ttu-id="caea4-115">Microsoft Defender for Endpoint 中的设备控制使安全管理员能够使用工具通过报告跟踪其组织的设备控制安全性。</span><span class="sxs-lookup"><span data-stu-id="caea4-115">Device control in Microsoft Defender for Endpoint empowers security administrators with tools that enable them to track their organization’s device control security through reports.</span></span> <span data-ttu-id="caea4-116">你可以找到安全中心中的设备Microsoft 365报告，>**设备保护**" 。</span><span class="sxs-lookup"><span data-stu-id="caea4-116">You can find the device control report in the Microsoft 365 security center by going to **Reports > Device protection**.</span></span>
 
-<span data-ttu-id="423cf-117">"报告"仪表板上的设备保护卡片显示过去 180 天内媒体类型生成的审核事件数。</span><span class="sxs-lookup"><span data-stu-id="423cf-117">The Device protection card on the **Reports** dashboard shows the number of audit events generated by media type, over the last 180 days.</span></span>
-
-> [!div class="mx-imgBorder"]
-> <span data-ttu-id="423cf-118">![DeviceControlReportCard](images/devicecontrolcard.png)</span><span class="sxs-lookup"><span data-stu-id="423cf-118">![DeviceControlReportCard](images/devicecontrolcard.png)</span></span>
-
-<span data-ttu-id="423cf-119">" **查看详细信息** "按钮在设备控件报告页中显示 **更多媒体使用情况** 数据。</span><span class="sxs-lookup"><span data-stu-id="423cf-119">The **View details** button shows more media usage data in the **device control report** page.</span></span>
-
-<span data-ttu-id="423cf-120">该页面提供一个仪表板，其中包含每种类型的聚合事件数和一个事件列表。</span><span class="sxs-lookup"><span data-stu-id="423cf-120">The page provides a dashboard with aggregated number of events per type and a list of events.</span></span> <span data-ttu-id="423cf-121">管理员可以根据时间范围、媒体类名称和设备 ID 进行筛选。</span><span class="sxs-lookup"><span data-stu-id="423cf-121">Administrators can filter on time range, media class name, and device ID.</span></span>
+<span data-ttu-id="caea4-117">"报告"仪表板上的设备保护卡片显示过去 180 天内媒体类型生成的审核事件数。</span><span class="sxs-lookup"><span data-stu-id="caea4-117">The Device protection card on the **Reports** dashboard shows the number of audit events generated by media type, over the last 180 days.</span></span>
 
 > [!div class="mx-imgBorder"]
-> <span data-ttu-id="423cf-122">![DeviceControlReportDetails](images/Detaileddevicecontrolreport.png)</span><span class="sxs-lookup"><span data-stu-id="423cf-122">![DeviceControlReportDetails](images/Detaileddevicecontrolreport.png)</span></span>
+> <span data-ttu-id="caea4-118">![DeviceControlReportCard](images/devicecontrolcard.png)</span><span class="sxs-lookup"><span data-stu-id="caea4-118">![DeviceControlReportCard](images/devicecontrolcard.png)</span></span>
 
-<span data-ttu-id="423cf-123">选择事件时，将显示一个显示详细信息的飞出图：</span><span class="sxs-lookup"><span data-stu-id="423cf-123">When you select an event, a flyout appears that shows you more information:</span></span>
+<span data-ttu-id="caea4-119">" **查看详细信息** "按钮在设备控件报告页中显示 **更多媒体使用情况** 数据。</span><span class="sxs-lookup"><span data-stu-id="caea4-119">The **View details** button shows more media usage data in the **device control report** page.</span></span>
 
-- <span data-ttu-id="423cf-124">**一般详细信息：** 日期、操作模式和此事件的策略。</span><span class="sxs-lookup"><span data-stu-id="423cf-124">**General details:** Date, Action mode, and the policy of this event.</span></span>
-- <span data-ttu-id="423cf-125">**媒体信息：** 媒体信息包括媒体名称、类名称、类 GUID、设备 ID、供应商 ID、卷、序列号和总线类型。</span><span class="sxs-lookup"><span data-stu-id="423cf-125">**Media information:** Media information includes Media name, Class name, Class GUID, Device ID, Vendor ID, Volume, Serial number, and Bus type.</span></span>
-- <span data-ttu-id="423cf-126">**位置详细信息：** 设备名称和 MDATP 设备 ID。</span><span class="sxs-lookup"><span data-stu-id="423cf-126">**Location details:** Device name and MDATP device ID.</span></span>
+<span data-ttu-id="caea4-120">该页面提供一个仪表板，其中包含每种类型的聚合事件数和一个事件列表。</span><span class="sxs-lookup"><span data-stu-id="caea4-120">The page provides a dashboard with aggregated number of events per type and a list of events.</span></span> <span data-ttu-id="caea4-121">管理员可以根据时间范围、媒体类名称和设备 ID 进行筛选。</span><span class="sxs-lookup"><span data-stu-id="caea4-121">Administrators can filter on time range, media class name, and device ID.</span></span>
 
 > [!div class="mx-imgBorder"]
-> <span data-ttu-id="423cf-127">![FilterOnDeviceControlReport](images/devicecontrolreportfilter.png)</span><span class="sxs-lookup"><span data-stu-id="423cf-127">![FilterOnDeviceControlReport](images/devicecontrolreportfilter.png)</span></span>
+> <span data-ttu-id="caea4-122">![DeviceControlReportDetails](images/Detaileddevicecontrolreport.png)</span><span class="sxs-lookup"><span data-stu-id="caea4-122">![DeviceControlReportDetails](images/Detaileddevicecontrolreport.png)</span></span>
 
-<span data-ttu-id="423cf-128">若要查看组织中此媒体实时活动，请选择"打开高级搜寻 **"** 按钮。</span><span class="sxs-lookup"><span data-stu-id="423cf-128">To see real-time activity for this media across the organization, select the **Open Advanced hunting** button.</span></span> <span data-ttu-id="423cf-129">这包括嵌入的预定义查询。</span><span class="sxs-lookup"><span data-stu-id="423cf-129">This includes an embedded, pre-defined query.</span></span>
+<span data-ttu-id="caea4-123">选择事件时，将显示一个显示详细信息的飞出图：</span><span class="sxs-lookup"><span data-stu-id="caea4-123">When you select an event, a flyout appears that shows you more information:</span></span>
+
+- <span data-ttu-id="caea4-124">**一般详细信息：** 日期、操作模式和此事件的策略。</span><span class="sxs-lookup"><span data-stu-id="caea4-124">**General details:** Date, Action mode, and the policy of this event.</span></span>
+- <span data-ttu-id="caea4-125">**媒体信息：** 媒体信息包括媒体名称、类名称、类 GUID、设备 ID、供应商 ID、卷、序列号和总线类型。</span><span class="sxs-lookup"><span data-stu-id="caea4-125">**Media information:** Media information includes Media name, Class name, Class GUID, Device ID, Vendor ID, Volume, Serial number, and Bus type.</span></span>
+- <span data-ttu-id="caea4-126">**位置详细信息：** 设备名称和MDATP设备 ID。</span><span class="sxs-lookup"><span data-stu-id="caea4-126">**Location details:** Device name and MDATP device ID.</span></span>
 
 > [!div class="mx-imgBorder"]
-> <span data-ttu-id="423cf-130">![QueryOnDeviceControlReport](images/Devicecontrolreportquery.png)</span><span class="sxs-lookup"><span data-stu-id="423cf-130">![QueryOnDeviceControlReport](images/Devicecontrolreportquery.png)</span></span>
+> <span data-ttu-id="caea4-127">![FilterOnDeviceControlReport](images/devicecontrolreportfilter.png)</span><span class="sxs-lookup"><span data-stu-id="caea4-127">![FilterOnDeviceControlReport](images/devicecontrolreportfilter.png)</span></span>
 
-<span data-ttu-id="423cf-131">To see the security of the device， select the **Open device page** button on the flyout.</span><span class="sxs-lookup"><span data-stu-id="423cf-131">To see the security of the device, select the **Open device page** button on the flyout.</span></span> <span data-ttu-id="423cf-132">此按钮将打开设备实体页面。</span><span class="sxs-lookup"><span data-stu-id="423cf-132">This button opens the device entity page.</span></span>
+<span data-ttu-id="caea4-128">若要查看组织中此媒体实时活动，请选择"打开高级搜寻 **"** 按钮。</span><span class="sxs-lookup"><span data-stu-id="caea4-128">To see real-time activity for this media across the organization, select the **Open Advanced hunting** button.</span></span> <span data-ttu-id="caea4-129">这包括嵌入的预定义查询。</span><span class="sxs-lookup"><span data-stu-id="caea4-129">This includes an embedded, pre-defined query.</span></span>
 
 > [!div class="mx-imgBorder"]
-> <span data-ttu-id="423cf-133">![DeviceEntityPage](images/Devicesecuritypage.png)</span><span class="sxs-lookup"><span data-stu-id="423cf-133">![DeviceEntityPage](images/Devicesecuritypage.png)</span></span>
+> <span data-ttu-id="caea4-130">![QueryOnDeviceControlReport](images/Devicecontrolreportquery.png)</span><span class="sxs-lookup"><span data-stu-id="caea4-130">![QueryOnDeviceControlReport](images/Devicecontrolreportquery.png)</span></span>
 
-## <a name="reporting-delays"></a><span data-ttu-id="423cf-134">报告延迟</span><span class="sxs-lookup"><span data-stu-id="423cf-134">Reporting delays</span></span>
+<span data-ttu-id="caea4-131">To see the security of the device， select the **Open device page** button on the flyout.</span><span class="sxs-lookup"><span data-stu-id="caea4-131">To see the security of the device, select the **Open device page** button on the flyout.</span></span> <span data-ttu-id="caea4-132">此按钮将打开设备实体页面。</span><span class="sxs-lookup"><span data-stu-id="caea4-132">This button opens the device entity page.</span></span>
 
-<span data-ttu-id="423cf-135">设备控制报告可以有 12 小时延迟，从媒体连接发生到事件反映在卡片或域列表中。</span><span class="sxs-lookup"><span data-stu-id="423cf-135">The device control report can have a 12-hour delay from the time a media connection occurs to the time the event is reflected in the card or in the domain list.</span></span>
+> [!div class="mx-imgBorder"]
+> <span data-ttu-id="caea4-133">![DeviceEntityPage](images/Devicesecuritypage.png)</span><span class="sxs-lookup"><span data-stu-id="caea4-133">![DeviceEntityPage](images/Devicesecuritypage.png)</span></span>
+
+## <a name="reporting-delays"></a><span data-ttu-id="caea4-134">报告延迟</span><span class="sxs-lookup"><span data-stu-id="caea4-134">Reporting delays</span></span>
+
+<span data-ttu-id="caea4-135">设备控制报告可以有 12 小时延迟，从媒体连接发生到事件反映在卡片或域列表中。</span><span class="sxs-lookup"><span data-stu-id="caea4-135">The device control report can have a 12-hour delay from the time a media connection occurs to the time the event is reflected in the card or in the domain list.</span></span>

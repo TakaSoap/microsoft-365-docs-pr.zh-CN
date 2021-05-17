@@ -2,7 +2,7 @@
 title: Microsoft 365 Defender
 summary: 了解 Microsoft 365 Defender 中可靠的安全解决方案，以便你可以跨攻击面更好地保护企业。
 metadata:
-  title: Microsoft 365 Defender 文档
+  title: Microsoft 365Defender 文档
   description: 了解 Microsoft 365 Defender 中可靠的安全解决方案，以便你可以跨攻击面更好地保护企业。
   services: office-365-security-compliance
   ms.service: O365-seccomp
@@ -42,7 +42,7 @@ landingContent:
       url: m365d-evaluation.md
     - text: 在生产中运行试验项目
       url: m365d-pilot.md
-- title: 开始行动
+- title: 入门
   linkLists:
   - linkListType: get-started
     links:
@@ -70,9 +70,9 @@ landingContent:
       url: /office-365-security/defender-for-office-365
     - text: Defender for Office 365 服务说明
       url: /office365/servicedescriptions/office-365-advanced-threat-protection-service-description
-    - text: Microsoft 365 Defender 中的 Office 365 Defender
+    - text: defender for Office 365 in Microsoft 365 Defender
       url: /defender/microsoft-365-security-center-mdo
-    - text: 在 Microsoft 365 Defender 中重定向适用于 Office 365 的 Defender
+    - text: 重定向 Defender for Office 365 defender Microsoft 365 Defender
       url: /defender/microsoft-365-security-mdo-redirection
 - title: Microsoft Defender for Endpoint
   linkLists:
@@ -82,7 +82,7 @@ landingContent:
       url: /defender-endpoint/microsoft-defender-endpoint
     - text: Microsoft 365 Defender 中的 Defender for Endpoint
       url: /defender/microsoft-365-security-cente
-    - text: 在 Microsoft 365 Defender 中重定向 Defender for Endpoint
+    - text: 在 defender 中重定向适用于终结点Microsoft 365 Defender
       url: /defender/microsoft-365-security-mde-redirection
 - title: Microsoft 365 安全中心
   linkLists:
@@ -90,7 +90,7 @@ landingContent:
     links:
     - text: Microsoft 365 安全中心概述
       url: overview-security-center.md
-    - text: Microsoft 365 安全中心中的 Microsoft Defender for Endpoint
+    - text: 安全中心中的 Microsoft Defender Microsoft 365终结点
       url: microsoft-365-security-center-mde.md
     - text: Microsoft 365 安全中心中适用于 Office 365 的 Microsoft Defender
       url: ../defender/microsoft-365-security-center-mdo.md
@@ -118,5 +118,5 @@ landingContent:
   linkLists:
   - linkListType: reference
     links:
-    - text: 'Microsoft 365 Defender API (预览) '
+    - text: 'Microsoft 365Defender API (预览) '
       url: api-overview.md

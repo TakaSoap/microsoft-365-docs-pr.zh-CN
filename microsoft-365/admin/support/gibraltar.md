@@ -19,20 +19,20 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 05/10/2021
 ms.locfileid: "52296175"
 ---
-# <a name="contact-support-for-gibraltar"></a><span data-ttu-id="c973e-103">联系支持人员，帮助其获得帮助</span><span class="sxs-lookup"><span data-stu-id="c973e-103">Contact support for Gibraltar</span></span>
+# <a name="contact-support-for-gibraltar"></a><span data-ttu-id="35106-103">联系支持人员，帮助其获得帮助</span><span class="sxs-lookup"><span data-stu-id="35106-103">Contact support for Gibraltar</span></span>
 
-<span data-ttu-id="c973e-104">[查找另一个国家/地区](../../business-video/get-help-support.md)。</span><span class="sxs-lookup"><span data-stu-id="c973e-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
+<span data-ttu-id="35106-104">[查找另一个国家/地区](../../business-video/get-help-support.md)。</span><span class="sxs-lookup"><span data-stu-id="35106-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="c973e-105">电话号码</span><span class="sxs-lookup"><span data-stu-id="c973e-105">Phone number</span></span>
-<span data-ttu-id="c973e-106">+1 312 843 5151</span><span class="sxs-lookup"><span data-stu-id="c973e-106">+1 312 843 5151</span></span>
+## <a name="phone-number"></a><span data-ttu-id="35106-105">电话号码</span><span class="sxs-lookup"><span data-stu-id="35106-105">Phone number</span></span>
+<span data-ttu-id="35106-106">+1 312 843 5151</span><span class="sxs-lookup"><span data-stu-id="35106-106">+1 312 843 5151</span></span>
 
-## <a name="hours"></a><span data-ttu-id="c973e-107">工作时间</span><span class="sxs-lookup"><span data-stu-id="c973e-107">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="c973e-108">计费支持：</span><span class="sxs-lookup"><span data-stu-id="c973e-108">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="35106-107">工作时间</span><span class="sxs-lookup"><span data-stu-id="35106-107">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="35106-108">计费支持：</span><span class="sxs-lookup"><span data-stu-id="35106-108">Billing Support:</span></span>
 
-<span data-ttu-id="c973e-109">英语：Mon-Fri 11 AM-7 PM</span><span class="sxs-lookup"><span data-stu-id="c973e-109">English: Mon-Fri 11 AM-7 PM</span></span>
+<span data-ttu-id="35106-109">英语：Mon-Fri 11 AM-7 PM</span><span class="sxs-lookup"><span data-stu-id="35106-109">English: Mon-Fri 11 AM-7 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="c973e-110">技术支持：</span><span class="sxs-lookup"><span data-stu-id="c973e-110">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="35106-110">技术支持：</span><span class="sxs-lookup"><span data-stu-id="35106-110">Technical Support:</span></span>
 
-<span data-ttu-id="c973e-111">英语：全天候</span><span class="sxs-lookup"><span data-stu-id="c973e-111">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="35106-111">英语：全天候</span><span class="sxs-lookup"><span data-stu-id="35106-111">English: 24 hours a day, 7 days a week</span></span>
 
-<span data-ttu-id="c973e-112">国际呼叫费用适用</span><span class="sxs-lookup"><span data-stu-id="c973e-112">International call charges apply</span></span>
+<span data-ttu-id="35106-112">国际呼叫费用适用</span><span class="sxs-lookup"><span data-stu-id="35106-112">International call charges apply</span></span>

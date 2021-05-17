@@ -25,73 +25,73 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 03/19/2021
 ms.locfileid: "50909702"
 ---
-# <a name="the-lightweight-base-configuration"></a><span data-ttu-id="f2295-103">轻型基本配置</span><span class="sxs-lookup"><span data-stu-id="f2295-103">The lightweight base configuration</span></span>
+# <a name="the-lightweight-base-configuration"></a><span data-ttu-id="8dc82-103">轻型基本配置</span><span class="sxs-lookup"><span data-stu-id="8dc82-103">The lightweight base configuration</span></span>
 
-<span data-ttu-id="f2295-104">*此测试实验室指南可用于 Microsoft 365 企业版和 Office 365 企业版测试环境。*</span><span class="sxs-lookup"><span data-stu-id="f2295-104">*This Test Lab Guide can be used for both Microsoft 365 for enterprise and Office 365 Enterprise test environments.*</span></span>
+<span data-ttu-id="8dc82-104">*此测试实验室指南可用于 Microsoft 365 企业版和 Office 365 企业版测试环境。*</span><span class="sxs-lookup"><span data-stu-id="8dc82-104">*This Test Lab Guide can be used for both Microsoft 365 for enterprise and Office 365 Enterprise test environments.*</span></span>
 
-<span data-ttu-id="f2295-105">本文介绍如何使用 Microsoft 365 E5 订阅和运行 Windows 10 企业版的计算机创建简化的环境。</span><span class="sxs-lookup"><span data-stu-id="f2295-105">This article describes how to create a simplified environment with a Microsoft 365 E5 subscription and a computer running Windows 10 Enterprise.</span></span>
+<span data-ttu-id="8dc82-105">本文介绍如何使用 Microsoft 365 E5 订阅和运行 Windows 10 企业版的计算机创建简化的环境。</span><span class="sxs-lookup"><span data-stu-id="8dc82-105">This article describes how to create a simplified environment with a Microsoft 365 E5 subscription and a computer running Windows 10 Enterprise.</span></span>
 
 ![轻量级 Microsoft 365 企业版测试环境](../media/lightweight-base-configuration-microsoft-365-enterprise/Phase4.png)
 
-<span data-ttu-id="f2295-107">创建轻型测试环境包括五个阶段：</span><span class="sxs-lookup"><span data-stu-id="f2295-107">Creating a lightweight test environment involves five phases:</span></span>
-- [<span data-ttu-id="f2295-108">第 1 阶段：创建 Microsoft 365 E5 订阅</span><span class="sxs-lookup"><span data-stu-id="f2295-108">Phase 1: Create your Microsoft 365 E5 subscription</span></span>](#phase-1-create-your-microsoft-365-e5-subscription)
-- [<span data-ttu-id="f2295-109">第 2 阶段：配置 Office 365 试用版订阅</span><span class="sxs-lookup"><span data-stu-id="f2295-109">Phase 2: Configure your Office 365 trial subscription</span></span>](#phase-2-configure-your-office-365-trial-subscription)
-- [<span data-ttu-id="f2295-110">第 3 阶段：添加 Microsoft 365 E5 试用版订阅</span><span class="sxs-lookup"><span data-stu-id="f2295-110">Phase 3: Add a Microsoft 365 E5 trial subscription</span></span>](#phase-3-add-a-microsoft-365-e5-trial-subscription)
-- [<span data-ttu-id="f2295-111">第 4 阶段：创建 Windows 10 企业版计算机</span><span class="sxs-lookup"><span data-stu-id="f2295-111">Phase 4: Create a Windows 10 Enterprise computer</span></span>](#phase-4-create-a-windows-10-enterprise-computer)
-- [<span data-ttu-id="f2295-112">第 5 阶段：将 Windows 10 计算机加入到 Azure AD</span><span class="sxs-lookup"><span data-stu-id="f2295-112">Phase 5: Join your Windows 10 computer to Azure AD</span></span>](#phase-5-join-your-windows-10-computer-to-azure-ad)
+<span data-ttu-id="8dc82-107">创建轻型测试环境包括五个阶段：</span><span class="sxs-lookup"><span data-stu-id="8dc82-107">Creating a lightweight test environment involves five phases:</span></span>
+- [<span data-ttu-id="8dc82-108">第 1 阶段：创建 Microsoft 365 E5 订阅</span><span class="sxs-lookup"><span data-stu-id="8dc82-108">Phase 1: Create your Microsoft 365 E5 subscription</span></span>](#phase-1-create-your-microsoft-365-e5-subscription)
+- [<span data-ttu-id="8dc82-109">第 2 阶段：配置 Office 365 试用版订阅</span><span class="sxs-lookup"><span data-stu-id="8dc82-109">Phase 2: Configure your Office 365 trial subscription</span></span>](#phase-2-configure-your-office-365-trial-subscription)
+- [<span data-ttu-id="8dc82-110">第 3 阶段：添加 Microsoft 365 E5 试用版订阅</span><span class="sxs-lookup"><span data-stu-id="8dc82-110">Phase 3: Add a Microsoft 365 E5 trial subscription</span></span>](#phase-3-add-a-microsoft-365-e5-trial-subscription)
+- [<span data-ttu-id="8dc82-111">第 4 阶段：创建 Windows 10 企业版计算机</span><span class="sxs-lookup"><span data-stu-id="8dc82-111">Phase 4: Create a Windows 10 Enterprise computer</span></span>](#phase-4-create-a-windows-10-enterprise-computer)
+- [<span data-ttu-id="8dc82-112">第 5 阶段：将 Windows 10 计算机加入到 Azure AD</span><span class="sxs-lookup"><span data-stu-id="8dc82-112">Phase 5: Join your Windows 10 computer to Azure AD</span></span>](#phase-5-join-your-windows-10-computer-to-azure-ad)
 
-<span data-ttu-id="f2295-113">使用生成的环境来测试 [Microsoft 365](https://www.microsoft.com/microsoft-365/enterprise)企业版 的特性和功能。</span><span class="sxs-lookup"><span data-stu-id="f2295-113">Use the resulting environment to test the features and functionality of [Microsoft 365 for enterprise](https://www.microsoft.com/microsoft-365/enterprise).</span></span>
+<span data-ttu-id="8dc82-113">使用生成的环境来测试 [Microsoft 365](https://www.microsoft.com/microsoft-365/enterprise)企业版 的特性和功能。</span><span class="sxs-lookup"><span data-stu-id="8dc82-113">Use the resulting environment to test the features and functionality of [Microsoft 365 for enterprise](https://www.microsoft.com/microsoft-365/enterprise).</span></span>
 
 ![Microsoft 云测试实验室指南](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
   
 > [!TIP]
-> <span data-ttu-id="f2295-115">有关 Microsoft 365 企业版测试实验室指南堆栈中所有文章的直观地图，请参阅 [Microsoft 365 企业版测试实验室指南堆栈](../downloads/Microsoft365EnterpriseTLGStack.pdf)。</span><span class="sxs-lookup"><span data-stu-id="f2295-115">For a visual map to all the articles in the Microsoft 365 for enterprise Test Lab Guide stack, see [Microsoft 365 for enterprise Test Lab Guide Stack](../downloads/Microsoft365EnterpriseTLGStack.pdf).</span></span>
+> <span data-ttu-id="8dc82-115">有关 Microsoft 365 企业版测试实验室指南堆栈中所有文章的直观地图，请参阅 [Microsoft 365 企业版测试实验室指南堆栈](../downloads/Microsoft365EnterpriseTLGStack.pdf)。</span><span class="sxs-lookup"><span data-stu-id="8dc82-115">For a visual map to all the articles in the Microsoft 365 for enterprise Test Lab Guide stack, see [Microsoft 365 for enterprise Test Lab Guide Stack](../downloads/Microsoft365EnterpriseTLGStack.pdf).</span></span>
 
 >[!NOTE]
-><span data-ttu-id="f2295-116">不妨打印这篇文章，以便记录在 30 天的 Office 365 试用版订阅期内需要对此环境使用的特定信息。</span><span class="sxs-lookup"><span data-stu-id="f2295-116">You might want to print this article to record the specific information that you will need for this environment over the 30 days of the Office 365 trial subscription.</span></span> <span data-ttu-id="f2295-117">可以轻松地将该订阅的试用期再延长 30 天。</span><span class="sxs-lookup"><span data-stu-id="f2295-117">You can easily extend the trail subscription for another 30 days.</span></span> <span data-ttu-id="f2295-118">对于永久性测试环境，请创建一个包含单独 Azure AD 租户和少量许可证的新付费订阅。</span><span class="sxs-lookup"><span data-stu-id="f2295-118">For a permanent test environment, create a new paid subscription with a separate Azure AD tenant and a small number of licenses.</span></span>
+><span data-ttu-id="8dc82-116">不妨打印这篇文章，以便记录在 30 天的 Office 365 试用版订阅期内需要对此环境使用的特定信息。</span><span class="sxs-lookup"><span data-stu-id="8dc82-116">You might want to print this article to record the specific information that you will need for this environment over the 30 days of the Office 365 trial subscription.</span></span> <span data-ttu-id="8dc82-117">可以轻松地将该订阅的试用期再延长 30 天。</span><span class="sxs-lookup"><span data-stu-id="8dc82-117">You can easily extend the trail subscription for another 30 days.</span></span> <span data-ttu-id="8dc82-118">对于永久性测试环境，请创建一个包含单独 Azure AD 租户和少量许可证的新付费订阅。</span><span class="sxs-lookup"><span data-stu-id="8dc82-118">For a permanent test environment, create a new paid subscription with a separate Azure AD tenant and a small number of licenses.</span></span>
 
-## <a name="phase-1-create-your-microsoft-365-e5-subscription"></a><span data-ttu-id="f2295-119">第 1 阶段：创建 Microsoft 365 E5 订阅</span><span class="sxs-lookup"><span data-stu-id="f2295-119">Phase 1: Create your Microsoft 365 E5 subscription</span></span>
+## <a name="phase-1-create-your-microsoft-365-e5-subscription"></a><span data-ttu-id="8dc82-119">第 1 阶段：创建 Microsoft 365 E5 订阅</span><span class="sxs-lookup"><span data-stu-id="8dc82-119">Phase 1: Create your Microsoft 365 E5 subscription</span></span>
 
-<span data-ttu-id="f2295-120">我们从 Microsoft 365 E5 试用订阅开始，然后向它添加 Microsoft 365 E5 订阅。</span><span class="sxs-lookup"><span data-stu-id="f2295-120">We start with an Microsoft 365 E5 trial subscription and then add the Microsoft 365 E5 subscription to it.</span></span>
+<span data-ttu-id="8dc82-120">我们从 Microsoft 365 E5 试用订阅开始，然后向它添加 Microsoft 365 E5 订阅。</span><span class="sxs-lookup"><span data-stu-id="8dc82-120">We start with an Microsoft 365 E5 trial subscription and then add the Microsoft 365 E5 subscription to it.</span></span>
 
 >[!NOTE]
-><span data-ttu-id="f2295-121">我们建议你创建 Office 365 的试用订阅，以便你的测试环境具有独立于你当前拥有的任何付费订阅的 Azure AD 租户。</span><span class="sxs-lookup"><span data-stu-id="f2295-121">We recommend that you create a trial subscription of Office 365 so that your test environment has a separate Azure AD tenant from any paid subscriptions you currently have.</span></span> <span data-ttu-id="f2295-122">这种分离意味着可以在测试租户中添加和删除用户和组，而不会影响生产订阅。</span><span class="sxs-lookup"><span data-stu-id="f2295-122">This separation means that you can add and remove users and groups in the test tenant without affecting your production subscriptions.</span></span>
+><span data-ttu-id="8dc82-121">我们建议你创建 Office 365 的试用订阅，以便你的测试环境具有独立于你当前拥有的任何付费订阅的 Azure AD 租户。</span><span class="sxs-lookup"><span data-stu-id="8dc82-121">We recommend that you create a trial subscription of Office 365 so that your test environment has a separate Azure AD tenant from any paid subscriptions you currently have.</span></span> <span data-ttu-id="8dc82-122">这种分离意味着可以在测试租户中添加和删除用户和组，而不会影响生产订阅。</span><span class="sxs-lookup"><span data-stu-id="8dc82-122">This separation means that you can add and remove users and groups in the test tenant without affecting your production subscriptions.</span></span>
 
-<span data-ttu-id="f2295-123">要启动 Microsoft 365 E5 试用版订阅，你首先需要一个虚构公司名称和一个新的 Microsoft 帐户。</span><span class="sxs-lookup"><span data-stu-id="f2295-123">To start your Microsoft 365 E5 trial subscription, you first need a fictitious company name and a new Microsoft account.</span></span>
+<span data-ttu-id="8dc82-123">要启动 Microsoft 365 E5 试用版订阅，你首先需要一个虚构公司名称和一个新的 Microsoft 帐户。</span><span class="sxs-lookup"><span data-stu-id="8dc82-123">To start your Microsoft 365 E5 trial subscription, you first need a fictitious company name and a new Microsoft account.</span></span>
   
-1. <span data-ttu-id="f2295-p103">我们建议你将公司名称 Contoso 的变体用作你的公司名称，它是 Microsoft 示例内容中使用的虚构公司，但这并不是必需的。在此记录虚构的公司名称：</span><span class="sxs-lookup"><span data-stu-id="f2295-p103">We recommend that you use a variant of the company name Contoso for your company name, which is a fictitious company used in Microsoft sample content, but it isn't required. Record your fictitious company name here:</span></span> ![折线图](../media/Common-Images/TableLine.png)
+1. <span data-ttu-id="8dc82-p103">我们建议你将公司名称 Contoso 的变体用作你的公司名称，它是 Microsoft 示例内容中使用的虚构公司，但这并不是必需的。在此记录虚构的公司名称：</span><span class="sxs-lookup"><span data-stu-id="8dc82-p103">We recommend that you use a variant of the company name Contoso for your company name, which is a fictitious company used in Microsoft sample content, but it isn't required. Record your fictitious company name here:</span></span> ![折线图](../media/Common-Images/TableLine.png)
     
-2. <span data-ttu-id="f2295-p104">要注册新的 Microsoft 帐户，请转到 [https://outlook.com](https://outlook.com)，然后使用新的电子邮件帐户和地址创建一个帐户。此帐户将用于注册 Office 365。</span><span class="sxs-lookup"><span data-stu-id="f2295-p104">To sign up for a new Microsoft account, go to [https://outlook.com](https://outlook.com) and create an account with a new email account and address. You will use this account to sign up for Office 365.</span></span>
+2. <span data-ttu-id="8dc82-p104">要注册新的 Microsoft 帐户，请转到 [https://outlook.com](https://outlook.com)，然后使用新的电子邮件帐户和地址创建一个帐户。此帐户将用于注册 Office 365。</span><span class="sxs-lookup"><span data-stu-id="8dc82-p104">To sign up for a new Microsoft account, go to [https://outlook.com](https://outlook.com) and create an account with a new email account and address. You will use this account to sign up for Office 365.</span></span>
     
-    - <span data-ttu-id="f2295-129">在此记录新帐户的名字和姓氏：</span><span class="sxs-lookup"><span data-stu-id="f2295-129">Record the first and last name of your new account here:</span></span> ![折线图](../media/Common-Images/TableLine.png)
+    - <span data-ttu-id="8dc82-129">在此记录新帐户的名字和姓氏：</span><span class="sxs-lookup"><span data-stu-id="8dc82-129">Record the first and last name of your new account here:</span></span> ![折线图](../media/Common-Images/TableLine.png)
     
-    - <span data-ttu-id="f2295-131">在此记录新的电子邮件帐户地址：</span><span class="sxs-lookup"><span data-stu-id="f2295-131">Record the new email account address here:</span></span> ![折线图](../media/Common-Images/TableLine.png)<span data-ttu-id="f2295-133">@outlook.com</span><span class="sxs-lookup"><span data-stu-id="f2295-133">@outlook.com</span></span>
+    - <span data-ttu-id="8dc82-131">在此记录新的电子邮件帐户地址：</span><span class="sxs-lookup"><span data-stu-id="8dc82-131">Record the new email account address here:</span></span> ![折线图](../media/Common-Images/TableLine.png)<span data-ttu-id="8dc82-133">@outlook.com</span><span class="sxs-lookup"><span data-stu-id="8dc82-133">@outlook.com</span></span>
     
-### <a name="sign-up-for-an-office-365-e5-trial-subscription"></a><span data-ttu-id="f2295-134">注册 Office 365 E5 试用订阅</span><span class="sxs-lookup"><span data-stu-id="f2295-134">Sign up for an Office 365 E5 trial subscription</span></span>
+### <a name="sign-up-for-an-office-365-e5-trial-subscription"></a><span data-ttu-id="8dc82-134">注册 Office 365 E5 试用订阅</span><span class="sxs-lookup"><span data-stu-id="8dc82-134">Sign up for an Office 365 E5 trial subscription</span></span>
 
-1. <span data-ttu-id="f2295-135">在浏览器中，转到 [https://aka.ms/e5trial](https://aka.ms/e5trial) 。</span><span class="sxs-lookup"><span data-stu-id="f2295-135">In your browser, go to [https://aka.ms/e5trial](https://aka.ms/e5trial).</span></span>
+1. <span data-ttu-id="8dc82-135">在浏览器中，转到 [https://aka.ms/e5trial](https://aka.ms/e5trial) 。</span><span class="sxs-lookup"><span data-stu-id="8dc82-135">In your browser, go to [https://aka.ms/e5trial](https://aka.ms/e5trial).</span></span>
     
-2. <span data-ttu-id="f2295-136">在"感谢您选择 **Office 365 E5"** 页面的步骤 1 中，输入新的电子邮件帐户地址。</span><span class="sxs-lookup"><span data-stu-id="f2295-136">In step 1 of the **Thank you for choosing Office 365 E5** page, enter your new email account address.</span></span>
-3. <span data-ttu-id="f2295-137">在跟踪订阅过程的步骤 2 中，输入请求的信息，然后执行验证。</span><span class="sxs-lookup"><span data-stu-id="f2295-137">In step 2 of the trail subscription process, enter the requested information, and then perform the verification.</span></span>
-4. <span data-ttu-id="f2295-138">在步骤 3 中，输入组织名称，然后输入将成为订阅全局管理员的帐户名称。</span><span class="sxs-lookup"><span data-stu-id="f2295-138">In step 3, enter an organization name and then an account name that will be the global admin for the subscription.</span></span>
-5. <span data-ttu-id="f2295-139">在第 4 步中，在此记录登录页面（选择并复制）：</span><span class="sxs-lookup"><span data-stu-id="f2295-139">For step 4, record the sign-in page here (select and copy):</span></span> ![折线图](../media/Common-Images/TableLine.png)
-6. <span data-ttu-id="f2295-141">在此记录用户 ID：![Line](../media/Common-Images/TableLine.png).onmicrosoft.com</span><span class="sxs-lookup"><span data-stu-id="f2295-141">Record the user ID here: ![Line](../media/Common-Images/TableLine.png).onmicrosoft.com</span></span>  
-   <span data-ttu-id="f2295-142">记录在安全位置输入的密码。</span><span class="sxs-lookup"><span data-stu-id="f2295-142">Record the password that you entered in a secure location.</span></span>
-   <span data-ttu-id="f2295-143">此值被称为 **“全局管理员名称”**。</span><span class="sxs-lookup"><span data-stu-id="f2295-143">This value will be referred to as the **global administrator name**.</span></span>
-7. <span data-ttu-id="f2295-144">选择 **"转到设置"。**</span><span class="sxs-lookup"><span data-stu-id="f2295-144">Select **Go to Setup**.</span></span>
-8. <span data-ttu-id="f2295-145">In Office 365 E5 Setup， select **Continue using your *organization*.onmicrosoft.com for email and signing in**， and then select Exit and continue **later**.</span><span class="sxs-lookup"><span data-stu-id="f2295-145">In Office 365 E5 Setup, select **Continue using *your organization*.onmicrosoft.com for email and signing in**, and then select **Exit and continue later**.</span></span>
+2. <span data-ttu-id="8dc82-136">在"感谢您选择 **Office 365 E5"** 页面的步骤 1 中，输入新的电子邮件帐户地址。</span><span class="sxs-lookup"><span data-stu-id="8dc82-136">In step 1 of the **Thank you for choosing Office 365 E5** page, enter your new email account address.</span></span>
+3. <span data-ttu-id="8dc82-137">在跟踪订阅过程的步骤 2 中，输入请求的信息，然后执行验证。</span><span class="sxs-lookup"><span data-stu-id="8dc82-137">In step 2 of the trail subscription process, enter the requested information, and then perform the verification.</span></span>
+4. <span data-ttu-id="8dc82-138">在步骤 3 中，输入组织名称，然后输入将成为订阅全局管理员的帐户名称。</span><span class="sxs-lookup"><span data-stu-id="8dc82-138">In step 3, enter an organization name and then an account name that will be the global admin for the subscription.</span></span>
+5. <span data-ttu-id="8dc82-139">在第 4 步中，在此记录登录页面（选择并复制）：</span><span class="sxs-lookup"><span data-stu-id="8dc82-139">For step 4, record the sign-in page here (select and copy):</span></span> ![折线图](../media/Common-Images/TableLine.png)
+6. <span data-ttu-id="8dc82-141">在此记录用户 ID：![Line](../media/Common-Images/TableLine.png).onmicrosoft.com</span><span class="sxs-lookup"><span data-stu-id="8dc82-141">Record the user ID here: ![Line](../media/Common-Images/TableLine.png).onmicrosoft.com</span></span>  
+   <span data-ttu-id="8dc82-142">记录在安全位置输入的密码。</span><span class="sxs-lookup"><span data-stu-id="8dc82-142">Record the password that you entered in a secure location.</span></span>
+   <span data-ttu-id="8dc82-143">此值被称为 **“全局管理员名称”**。</span><span class="sxs-lookup"><span data-stu-id="8dc82-143">This value will be referred to as the **global administrator name**.</span></span>
+7. <span data-ttu-id="8dc82-144">选择 **"转到设置"。**</span><span class="sxs-lookup"><span data-stu-id="8dc82-144">Select **Go to Setup**.</span></span>
+8. <span data-ttu-id="8dc82-145">In Office 365 E5 Setup， select **Continue using your *organization*.onmicrosoft.com for email and signing in**， and then select Exit and continue **later**.</span><span class="sxs-lookup"><span data-stu-id="8dc82-145">In Office 365 E5 Setup, select **Continue using *your organization*.onmicrosoft.com for email and signing in**, and then select **Exit and continue later**.</span></span>
 
-<span data-ttu-id="f2295-146">你应当查看 Microsoft 365 管理中心。</span><span class="sxs-lookup"><span data-stu-id="f2295-146">You should see the Microsoft 365 admin center.</span></span>
+<span data-ttu-id="8dc82-146">你应当查看 Microsoft 365 管理中心。</span><span class="sxs-lookup"><span data-stu-id="8dc82-146">You should see the Microsoft 365 admin center.</span></span>
     
-## <a name="phase-2-configure-your-office-365-trial-subscription"></a><span data-ttu-id="f2295-147">第 2 阶段：配置 Office 365 试用版订阅</span><span class="sxs-lookup"><span data-stu-id="f2295-147">Phase 2: Configure your Office 365 trial subscription</span></span>
+## <a name="phase-2-configure-your-office-365-trial-subscription"></a><span data-ttu-id="8dc82-147">第 2 阶段：配置 Office 365 试用版订阅</span><span class="sxs-lookup"><span data-stu-id="8dc82-147">Phase 2: Configure your Office 365 trial subscription</span></span>
 
-<span data-ttu-id="f2295-148">在这个阶段，你为订阅配置其他用户，并向这些用户分配 Office 365 E5 许可证。</span><span class="sxs-lookup"><span data-stu-id="f2295-148">In this phase, you configure your subscription with additional users and assign them Office 365 E5 licenses.</span></span>
+<span data-ttu-id="8dc82-148">在这个阶段，你为订阅配置其他用户，并向这些用户分配 Office 365 E5 许可证。</span><span class="sxs-lookup"><span data-stu-id="8dc82-148">In this phase, you configure your subscription with additional users and assign them Office 365 E5 licenses.</span></span>
   
-<span data-ttu-id="f2295-149">若要从计算机使用 Azure Active Directory PowerShell graph 模块连接到订阅，请使用使用 [PowerShell 连接到 Microsoft 365 中的说明](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)。</span><span class="sxs-lookup"><span data-stu-id="f2295-149">To connect to your subscription with the Azure Active Directory PowerShell for Graph module from your computer, use the instructions in [Connect to Microsoft 365 with PowerShell](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).</span></span>
+<span data-ttu-id="8dc82-149">若要从计算机使用 Azure Active Directory PowerShell graph 模块连接到订阅，请使用使用 [PowerShell 连接到 Microsoft 365 中的说明](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)。</span><span class="sxs-lookup"><span data-stu-id="8dc82-149">To connect to your subscription with the Azure Active Directory PowerShell for Graph module from your computer, use the instructions in [Connect to Microsoft 365 with PowerShell](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).</span></span>
     
-<span data-ttu-id="f2295-150">在 **"Windows PowerShell凭据** 请求"对话框中，输入全局管理员 (例如，jdoe@contosotoycompany.onmicrosoft.com) 密码。 </span><span class="sxs-lookup"><span data-stu-id="f2295-150">In the **Windows PowerShell Credential Request** dialog box, enter the global administrator name (for example, *jdoe@contosotoycompany.onmicrosoft.com*) and password.</span></span>
+<span data-ttu-id="8dc82-150">在 **"Windows PowerShell凭据** 请求"对话框中，输入全局管理员 (例如，jdoe@contosotoycompany.onmicrosoft.com) 密码。 </span><span class="sxs-lookup"><span data-stu-id="8dc82-150">In the **Windows PowerShell Credential Request** dialog box, enter the global administrator name (for example, *jdoe@contosotoycompany.onmicrosoft.com*) and password.</span></span>
   
-<span data-ttu-id="f2295-151">填写组织名称 (例如 *contosotoycompany*) 、位置的两字符国家/地区代码、公用帐户密码，然后从 PowerShell 提示符处运行以下命令：</span><span class="sxs-lookup"><span data-stu-id="f2295-151">Fill in your organization name (for example, *contosotoycompany*), the two-character country code for your location, a common account password, and then run the following commands from the PowerShell prompt:</span></span>
+<span data-ttu-id="8dc82-151">填写组织名称 (例如 *contosotoycompany*) 、位置的两字符国家/地区代码、公用帐户密码，然后从 PowerShell 提示符处运行以下命令：</span><span class="sxs-lookup"><span data-stu-id="8dc82-151">Fill in your organization name (for example, *contosotoycompany*), the two-character country code for your location, a common account password, and then run the following commands from the PowerShell prompt:</span></span>
 
 ```powershell
 $orgName="<organization name>"
@@ -125,131 +125,131 @@ $LicensesToAssign.AddLicenses = $License
 Set-AzureADUserLicense -ObjectId $userUPN -AssignedLicenses $LicensesToAssign
 ```
 > [!NOTE]
-> <span data-ttu-id="f2295-152">此处使用公用密码旨在自动配置测试环境，简化配置过程。</span><span class="sxs-lookup"><span data-stu-id="f2295-152">The use of a common password here is for automation and ease of configuration for a test environment.</span></span> <span data-ttu-id="f2295-153">显然，对于生产订阅，这是非常不鼓励的。</span><span class="sxs-lookup"><span data-stu-id="f2295-153">Obviously, this is highly discouraged for production subscriptions.</span></span> 
+> <span data-ttu-id="8dc82-152">此处使用公用密码旨在自动配置测试环境，简化配置过程。</span><span class="sxs-lookup"><span data-stu-id="8dc82-152">The use of a common password here is for automation and ease of configuration for a test environment.</span></span> <span data-ttu-id="8dc82-153">显然，对于生产订阅，这是非常不鼓励的。</span><span class="sxs-lookup"><span data-stu-id="8dc82-153">Obviously, this is highly discouraged for production subscriptions.</span></span> 
 
-### <a name="record-key-information-for-future-reference"></a><span data-ttu-id="f2295-154">记录关键信息供将来参考</span><span class="sxs-lookup"><span data-stu-id="f2295-154">Record key information for future reference</span></span>
+### <a name="record-key-information-for-future-reference"></a><span data-ttu-id="8dc82-154">记录关键信息供将来参考</span><span class="sxs-lookup"><span data-stu-id="8dc82-154">Record key information for future reference</span></span>
 
-<span data-ttu-id="f2295-155">如果尚未记录这些值，请现在录制它们：</span><span class="sxs-lookup"><span data-stu-id="f2295-155">If you haven't already recorded these values, record them now:</span></span>
+<span data-ttu-id="8dc82-155">如果尚未记录这些值，请现在录制它们：</span><span class="sxs-lookup"><span data-stu-id="8dc82-155">If you haven't already recorded these values, record them now:</span></span>
   
-- <span data-ttu-id="f2295-156">全局管理员名称：</span><span class="sxs-lookup"><span data-stu-id="f2295-156">Global administrator name:</span></span> ![折线图](../media/Common-Images/TableLine.png)<span data-ttu-id="f2295-158">.onmicrosoft.com（在第 1 阶段的第 6 步中）</span><span class="sxs-lookup"><span data-stu-id="f2295-158">.onmicrosoft.com (from step 6 of Phase 1)</span></span>
+- <span data-ttu-id="8dc82-156">全局管理员名称：</span><span class="sxs-lookup"><span data-stu-id="8dc82-156">Global administrator name:</span></span> ![折线图](../media/Common-Images/TableLine.png)<span data-ttu-id="8dc82-158">.onmicrosoft.com（在第 1 阶段的第 6 步中）</span><span class="sxs-lookup"><span data-stu-id="8dc82-158">.onmicrosoft.com (from step 6 of Phase 1)</span></span>
     
-    <span data-ttu-id="f2295-159">此外，还应将此帐户的密码记录在安全位置。</span><span class="sxs-lookup"><span data-stu-id="f2295-159">Also record the password for this account in a secure location.</span></span>
+    <span data-ttu-id="8dc82-159">此外，还应将此帐户的密码记录在安全位置。</span><span class="sxs-lookup"><span data-stu-id="8dc82-159">Also record the password for this account in a secure location.</span></span>
     
-- <span data-ttu-id="f2295-160">试用订阅组织名称：</span><span class="sxs-lookup"><span data-stu-id="f2295-160">Your trial subscription organization name:</span></span> ![折线图](../media/Common-Images/TableLine.png) <span data-ttu-id="f2295-162">（在第 1 阶段的第 4 步中）</span><span class="sxs-lookup"><span data-stu-id="f2295-162">(from step 4 of Phase 1)</span></span>
+- <span data-ttu-id="8dc82-160">试用订阅组织名称：</span><span class="sxs-lookup"><span data-stu-id="8dc82-160">Your trial subscription organization name:</span></span> ![折线图](../media/Common-Images/TableLine.png) <span data-ttu-id="8dc82-162">（在第 1 阶段的第 4 步中）</span><span class="sxs-lookup"><span data-stu-id="8dc82-162">(from step 4 of Phase 1)</span></span>
     
-- <span data-ttu-id="f2295-163">要列出 User 2、User 3、User 4 和 User 5 的帐户，从用于 Windows PowerShell 的 Windows Azure Active Directory 模块提示符中运行以下命令：</span><span class="sxs-lookup"><span data-stu-id="f2295-163">To list the accounts for User 2, User 3, User 4, and User 5, run the following command from the Windows Azure Active Directory Module for Windows PowerShell prompt:</span></span>
+- <span data-ttu-id="8dc82-163">要列出 User 2、User 3、User 4 和 User 5 的帐户，从用于 Windows PowerShell 的 Windows Azure Active Directory 模块提示符中运行以下命令：</span><span class="sxs-lookup"><span data-stu-id="8dc82-163">To list the accounts for User 2, User 3, User 4, and User 5, run the following command from the Windows Azure Active Directory Module for Windows PowerShell prompt:</span></span>
     
   ```powershell
   Get-AzureADUser | Sort UserPrincipalName | Select UserPrincipalName
   ```
 
-    <span data-ttu-id="f2295-164">在此记录帐户名称：</span><span class="sxs-lookup"><span data-stu-id="f2295-164">Record the account names here:</span></span>
+    <span data-ttu-id="8dc82-164">在此记录帐户名称：</span><span class="sxs-lookup"><span data-stu-id="8dc82-164">Record the account names here:</span></span>
     
-  - <span data-ttu-id="f2295-165">用户 2 帐户名：user2@</span><span class="sxs-lookup"><span data-stu-id="f2295-165">User 2 account name: user2@</span></span>![折线图](../media/Common-Images/TableLine.png)<span data-ttu-id="f2295-167">.onmicrosoft.com</span><span class="sxs-lookup"><span data-stu-id="f2295-167">.onmicrosoft.com</span></span>
+  - <span data-ttu-id="8dc82-165">用户 2 帐户名：user2@</span><span class="sxs-lookup"><span data-stu-id="8dc82-165">User 2 account name: user2@</span></span>![折线图](../media/Common-Images/TableLine.png)<span data-ttu-id="8dc82-167">.onmicrosoft.com</span><span class="sxs-lookup"><span data-stu-id="8dc82-167">.onmicrosoft.com</span></span>
     
-  - <span data-ttu-id="f2295-168">用户 3 帐户名：user3@</span><span class="sxs-lookup"><span data-stu-id="f2295-168">User 3 account name: user3@</span></span>![折线图](../media/Common-Images/TableLine.png)<span data-ttu-id="f2295-170">.onmicrosoft.com</span><span class="sxs-lookup"><span data-stu-id="f2295-170">.onmicrosoft.com</span></span>
+  - <span data-ttu-id="8dc82-168">用户 3 帐户名：user3@</span><span class="sxs-lookup"><span data-stu-id="8dc82-168">User 3 account name: user3@</span></span>![折线图](../media/Common-Images/TableLine.png)<span data-ttu-id="8dc82-170">.onmicrosoft.com</span><span class="sxs-lookup"><span data-stu-id="8dc82-170">.onmicrosoft.com</span></span>
     
-  - <span data-ttu-id="f2295-171">用户 4 帐户名：user4@</span><span class="sxs-lookup"><span data-stu-id="f2295-171">User 4 account name: user4@</span></span>![折线图](../media/Common-Images/TableLine.png)<span data-ttu-id="f2295-173">.onmicrosoft.com</span><span class="sxs-lookup"><span data-stu-id="f2295-173">.onmicrosoft.com</span></span>
+  - <span data-ttu-id="8dc82-171">用户 4 帐户名：user4@</span><span class="sxs-lookup"><span data-stu-id="8dc82-171">User 4 account name: user4@</span></span>![折线图](../media/Common-Images/TableLine.png)<span data-ttu-id="8dc82-173">.onmicrosoft.com</span><span class="sxs-lookup"><span data-stu-id="8dc82-173">.onmicrosoft.com</span></span>
     
-  - <span data-ttu-id="f2295-174">用户 5 帐户名：user5@</span><span class="sxs-lookup"><span data-stu-id="f2295-174">User 5 account name: user5@</span></span>![折线图](../media/Common-Images/TableLine.png)<span data-ttu-id="f2295-176">.onmicrosoft.com</span><span class="sxs-lookup"><span data-stu-id="f2295-176">.onmicrosoft.com</span></span>
+  - <span data-ttu-id="8dc82-174">用户 5 帐户名：user5@</span><span class="sxs-lookup"><span data-stu-id="8dc82-174">User 5 account name: user5@</span></span>![折线图](../media/Common-Images/TableLine.png)<span data-ttu-id="8dc82-176">.onmicrosoft.com</span><span class="sxs-lookup"><span data-stu-id="8dc82-176">.onmicrosoft.com</span></span>
     
-    <span data-ttu-id="f2295-177">此外，在安全位置记录这些帐户的公用密码。</span><span class="sxs-lookup"><span data-stu-id="f2295-177">Also record the common password for these accounts in a secure location.</span></span>
+    <span data-ttu-id="8dc82-177">此外，在安全位置记录这些帐户的公用密码。</span><span class="sxs-lookup"><span data-stu-id="8dc82-177">Also record the common password for these accounts in a secure location.</span></span>
    
-### <a name="using-an-office-365-test-environment"></a><span data-ttu-id="f2295-178">使用 Office 365 测试环境</span><span class="sxs-lookup"><span data-stu-id="f2295-178">Using an Office 365 test environment</span></span>
+### <a name="using-an-office-365-test-environment"></a><span data-ttu-id="8dc82-178">使用 Office 365 测试环境</span><span class="sxs-lookup"><span data-stu-id="8dc82-178">Using an Office 365 test environment</span></span>
 
-<span data-ttu-id="f2295-179">如果只需要 Office 365 测试环境，则无需阅读本文的其余部分。</span><span class="sxs-lookup"><span data-stu-id="f2295-179">If you need only an Office 365 test environment, you do not need to read the rest of this article.</span></span>
+<span data-ttu-id="8dc82-179">如果只需要 Office 365 测试环境，则无需阅读本文的其余部分。</span><span class="sxs-lookup"><span data-stu-id="8dc82-179">If you need only an Office 365 test environment, you do not need to read the rest of this article.</span></span>
 
-<span data-ttu-id="f2295-180">有关适用于 Office 365 和 Microsoft 365 的其他测试实验室指南，请参阅 [Microsoft 365 企业版测试实验室指南](m365-enterprise-test-lab-guides.md)。</span><span class="sxs-lookup"><span data-stu-id="f2295-180">For additional Test Lab Guides that apply to both Office 365 and Microsoft 365, see [Microsoft 365 for enterprise Test Lab Guides](m365-enterprise-test-lab-guides.md).</span></span>
+<span data-ttu-id="8dc82-180">有关适用于 Office 365 和 Microsoft 365 的其他测试实验室指南，请参阅 [Microsoft 365 企业版测试实验室指南](m365-enterprise-test-lab-guides.md)。</span><span class="sxs-lookup"><span data-stu-id="8dc82-180">For additional Test Lab Guides that apply to both Office 365 and Microsoft 365, see [Microsoft 365 for enterprise Test Lab Guides](m365-enterprise-test-lab-guides.md).</span></span>
   
-## <a name="phase-3-add-a-microsoft-365-e5-trial-subscription"></a><span data-ttu-id="f2295-181">第 3 阶段：添加 Microsoft 365 E5 试用版订阅</span><span class="sxs-lookup"><span data-stu-id="f2295-181">Phase 3: Add a Microsoft 365 E5 trial subscription</span></span>
+## <a name="phase-3-add-a-microsoft-365-e5-trial-subscription"></a><span data-ttu-id="8dc82-181">第 3 阶段：添加 Microsoft 365 E5 试用版订阅</span><span class="sxs-lookup"><span data-stu-id="8dc82-181">Phase 3: Add a Microsoft 365 E5 trial subscription</span></span>
 
-<span data-ttu-id="f2295-182">在该阶段中，可注册 Microsoft 365 E5 试用版订阅，并将其添加到 Office 365 E5 试用版订阅所在的组织中。</span><span class="sxs-lookup"><span data-stu-id="f2295-182">In this phase, you sign up for the Microsoft 365 E5 trial subscription and add it to the same organization as your Office 365 E5 trial subscription.</span></span>
+<span data-ttu-id="8dc82-182">在该阶段中，可注册 Microsoft 365 E5 试用版订阅，并将其添加到 Office 365 E5 试用版订阅所在的组织中。</span><span class="sxs-lookup"><span data-stu-id="8dc82-182">In this phase, you sign up for the Microsoft 365 E5 trial subscription and add it to the same organization as your Office 365 E5 trial subscription.</span></span>
   
-<span data-ttu-id="f2295-183">首先，请添加 Microsoft 365 E5 试用版订阅并向全局管理员帐户分配一个新的 Microsoft 365 许可证。</span><span class="sxs-lookup"><span data-stu-id="f2295-183">First, add the Microsoft 365 E5 trial subscription and assign the new Microsoft 365 license to your global administrator account.</span></span>
+<span data-ttu-id="8dc82-183">首先，请添加 Microsoft 365 E5 试用版订阅并向全局管理员帐户分配一个新的 Microsoft 365 许可证。</span><span class="sxs-lookup"><span data-stu-id="8dc82-183">First, add the Microsoft 365 E5 trial subscription and assign the new Microsoft 365 license to your global administrator account.</span></span>
   
-1. <span data-ttu-id="f2295-184">在 Internet 浏览器专用窗口中，使用全局管理员帐户凭据登录到位于 的 Microsoft 365 管理中心 [https://admin.microsoft.com](https://admin.microsoft.com) 。</span><span class="sxs-lookup"><span data-stu-id="f2295-184">In an internet browser private window, use your global administrator account credentials to sign in to the Microsoft 365 admin center at [https://admin.microsoft.com](https://admin.microsoft.com).</span></span>
+1. <span data-ttu-id="8dc82-184">在 Internet 浏览器专用窗口中，使用全局管理员帐户凭据登录到位于 的 Microsoft 365 管理中心 [https://admin.microsoft.com](https://admin.microsoft.com) 。</span><span class="sxs-lookup"><span data-stu-id="8dc82-184">In an internet browser private window, use your global administrator account credentials to sign in to the Microsoft 365 admin center at [https://admin.microsoft.com](https://admin.microsoft.com).</span></span>
     
-2. <span data-ttu-id="f2295-185">在 **Microsoft 365** 管理中心页面的左侧导航中，选择"帐单>**购买服务"。**</span><span class="sxs-lookup"><span data-stu-id="f2295-185">On the **Microsoft 365 admin center** page, in the left navigation, select **Billing > Purchase services**.</span></span>
+2. <span data-ttu-id="8dc82-185">在 **Microsoft 365** 管理中心页面的左侧导航中，选择"帐单>**购买服务"。**</span><span class="sxs-lookup"><span data-stu-id="8dc82-185">On the **Microsoft 365 admin center** page, in the left navigation, select **Billing > Purchase services**.</span></span>
     
-3. <span data-ttu-id="f2295-186">在"**购买服务"** 页上，选择 **"Microsoft 365 E5"，** 然后选择"**获取免费试用版"。**</span><span class="sxs-lookup"><span data-stu-id="f2295-186">On the **Purchase services** page, select **Microsoft 365 E5**, and then select **Get free trial**.</span></span>
+3. <span data-ttu-id="8dc82-186">在"**购买服务"** 页上，选择 **"Microsoft 365 E5"，** 然后选择"**获取免费试用版"。**</span><span class="sxs-lookup"><span data-stu-id="8dc82-186">On the **Purchase services** page, select **Microsoft 365 E5**, and then select **Get free trial**.</span></span>
 
-4. <span data-ttu-id="f2295-187">在 **"Microsoft 365 E5** 试用版"页面上，决定接收短信或电话呼叫，输入电话号码，然后选择"**给我** 发短信"或"**呼叫我"。**</span><span class="sxs-lookup"><span data-stu-id="f2295-187">On the **Microsoft 365 E5 Trial** page, decide to receive a text message or a phone call, enter your phone number, and then select **Text me** or **Call me**.</span></span> <span data-ttu-id="f2295-188">执行验证。</span><span class="sxs-lookup"><span data-stu-id="f2295-188">Perform the verification.</span></span>
+4. <span data-ttu-id="8dc82-187">在 **"Microsoft 365 E5** 试用版"页面上，决定接收短信或电话呼叫，输入电话号码，然后选择"**给我** 发短信"或"**呼叫我"。**</span><span class="sxs-lookup"><span data-stu-id="8dc82-187">On the **Microsoft 365 E5 Trial** page, decide to receive a text message or a phone call, enter your phone number, and then select **Text me** or **Call me**.</span></span> <span data-ttu-id="8dc82-188">执行验证。</span><span class="sxs-lookup"><span data-stu-id="8dc82-188">Perform the verification.</span></span>
 
-5. <span data-ttu-id="f2295-189">在"**确认订单"页上**，选择"**立即试用"。**</span><span class="sxs-lookup"><span data-stu-id="f2295-189">On the **Confirm your order** page, select **Try now**.</span></span>
+5. <span data-ttu-id="8dc82-189">在"**确认订单"页上**，选择"**立即试用"。**</span><span class="sxs-lookup"><span data-stu-id="8dc82-189">On the **Confirm your order** page, select **Try now**.</span></span>
 
-6. <span data-ttu-id="f2295-190">在"**订单收据"** 页上，选择"继续 **"。**</span><span class="sxs-lookup"><span data-stu-id="f2295-190">On the **Order receipt** page, select **Continue**.</span></span>
+6. <span data-ttu-id="8dc82-190">在"**订单收据"** 页上，选择"继续 **"。**</span><span class="sxs-lookup"><span data-stu-id="8dc82-190">On the **Order receipt** page, select **Continue**.</span></span>
 
-7. <span data-ttu-id="f2295-191">在 Microsoft 365 管理中心中，选择">**活动用户"。**</span><span class="sxs-lookup"><span data-stu-id="f2295-191">In the Microsoft 365 admin center, select **Users > Active users**.</span></span>
+7. <span data-ttu-id="8dc82-191">在 Microsoft 365 管理中心中，选择">**活动用户"。**</span><span class="sxs-lookup"><span data-stu-id="8dc82-191">In the Microsoft 365 admin center, select **Users > Active users**.</span></span>
 
-8. <span data-ttu-id="f2295-192">在 **"活动用户"** 中，选择管理员帐户。</span><span class="sxs-lookup"><span data-stu-id="f2295-192">In **Active users**, select your administrator account.</span></span>
+8. <span data-ttu-id="8dc82-192">在 **"活动用户"** 中，选择管理员帐户。</span><span class="sxs-lookup"><span data-stu-id="8dc82-192">In **Active users**, select your administrator account.</span></span>
 
-9. <span data-ttu-id="f2295-193">选择 **"许可证和应用"。**</span><span class="sxs-lookup"><span data-stu-id="f2295-193">Select **Licenses and apps**.</span></span>
+9. <span data-ttu-id="8dc82-193">选择 **"许可证和应用"。**</span><span class="sxs-lookup"><span data-stu-id="8dc82-193">Select **Licenses and apps**.</span></span>
 
-10. <span data-ttu-id="f2295-194">禁用 Office 365 企业版 E5 的许可证，并启用 Microsoft 365 E5 的许可证。</span><span class="sxs-lookup"><span data-stu-id="f2295-194">Disable the license for Office 365 Enterprise E5 and enable the license for Microsoft 365 E5.</span></span>
+10. <span data-ttu-id="8dc82-194">禁用 Office 365 企业版 E5 的许可证，并启用 Microsoft 365 E5 的许可证。</span><span class="sxs-lookup"><span data-stu-id="8dc82-194">Disable the license for Office 365 Enterprise E5 and enable the license for Microsoft 365 E5.</span></span>
 
-11. <span data-ttu-id="f2295-195">选择 **"保存更改**"，然后关闭用户帐户信息窗格。</span><span class="sxs-lookup"><span data-stu-id="f2295-195">Select **Save changes**, and then close the user account information pane.</span></span>
+11. <span data-ttu-id="8dc82-195">选择 **"保存更改**"，然后关闭用户帐户信息窗格。</span><span class="sxs-lookup"><span data-stu-id="8dc82-195">Select **Save changes**, and then close the user account information pane.</span></span>
 
-<span data-ttu-id="f2295-196">接下来，对其他所有帐户（用户 2、用户 3、用户 4 和用户 5）重复执行上面过程的第 8 步到第 11 步。</span><span class="sxs-lookup"><span data-stu-id="f2295-196">Next, repeat steps 8 through 11 of the previous procedure for all of your other accounts (User 2, User 3, User 4, and User 5).</span></span>
+<span data-ttu-id="8dc82-196">接下来，对其他所有帐户（用户 2、用户 3、用户 4 和用户 5）重复执行上面过程的第 8 步到第 11 步。</span><span class="sxs-lookup"><span data-stu-id="8dc82-196">Next, repeat steps 8 through 11 of the previous procedure for all of your other accounts (User 2, User 3, User 4, and User 5).</span></span>
   
 > [!NOTE]
-> <span data-ttu-id="f2295-197">Microsoft 365 E5 试用版订阅的时长为 30 天。</span><span class="sxs-lookup"><span data-stu-id="f2295-197">The length of the Microsoft 365 E5 trial subscription is 30 days.</span></span> <span data-ttu-id="f2295-198">对于永久测试环境，将此试用版订阅转换为带少量许可证的付费订阅。</span><span class="sxs-lookup"><span data-stu-id="f2295-198">For a permanent test environment, convert this trial subscription into a paid subscription with a small number of licenses.</span></span>
+> <span data-ttu-id="8dc82-197">Microsoft 365 E5 试用版订阅的时长为 30 天。</span><span class="sxs-lookup"><span data-stu-id="8dc82-197">The length of the Microsoft 365 E5 trial subscription is 30 days.</span></span> <span data-ttu-id="8dc82-198">对于永久测试环境，将此试用版订阅转换为带少量许可证的付费订阅。</span><span class="sxs-lookup"><span data-stu-id="8dc82-198">For a permanent test environment, convert this trial subscription into a paid subscription with a small number of licenses.</span></span>
   
-<span data-ttu-id="f2295-199">测试环境现在包含：</span><span class="sxs-lookup"><span data-stu-id="f2295-199">Your test environment now has:</span></span>
+<span data-ttu-id="8dc82-199">测试环境现在包含：</span><span class="sxs-lookup"><span data-stu-id="8dc82-199">Your test environment now has:</span></span>
   
-- <span data-ttu-id="f2295-200">Microsoft 365 E5 试用版订阅。</span><span class="sxs-lookup"><span data-stu-id="f2295-200">A Microsoft 365 E5 trial subscription.</span></span>
-- <span data-ttu-id="f2295-201">所有适当的用户帐户（无论是全局管理员帐户还是全部五个用户帐户）都可以使用 Microsoft 365 E5。</span><span class="sxs-lookup"><span data-stu-id="f2295-201">All your appropriate user accounts (either just the global administrator or all five user accounts) are enabled to use Microsoft 365 E5.</span></span>
+- <span data-ttu-id="8dc82-200">Microsoft 365 E5 试用版订阅。</span><span class="sxs-lookup"><span data-stu-id="8dc82-200">A Microsoft 365 E5 trial subscription.</span></span>
+- <span data-ttu-id="8dc82-201">所有适当的用户帐户（无论是全局管理员帐户还是全部五个用户帐户）都可以使用 Microsoft 365 E5。</span><span class="sxs-lookup"><span data-stu-id="8dc82-201">All your appropriate user accounts (either just the global administrator or all five user accounts) are enabled to use Microsoft 365 E5.</span></span>
     
-<span data-ttu-id="f2295-202">生成的配置（添加 Microsoft 365 E5）如下所示：</span><span class="sxs-lookup"><span data-stu-id="f2295-202">Your resulting configuration, which adds Microsoft 365 E5, looks like this:</span></span>
+<span data-ttu-id="8dc82-202">生成的配置（添加 Microsoft 365 E5）如下所示：</span><span class="sxs-lookup"><span data-stu-id="8dc82-202">Your resulting configuration, which adds Microsoft 365 E5, looks like this:</span></span>
   
 ![Microsoft 365 企业版测试环境的第 3 阶段](../media/lightweight-base-configuration-microsoft-365-enterprise/Phase2.png)
   
-## <a name="phase-4-create-a-windows-10-enterprise-computer"></a><span data-ttu-id="f2295-204">第 4 阶段：创建 Windows 10 企业版计算机</span><span class="sxs-lookup"><span data-stu-id="f2295-204">Phase 4: Create a Windows 10 Enterprise computer</span></span>
+## <a name="phase-4-create-a-windows-10-enterprise-computer"></a><span data-ttu-id="8dc82-204">第 4 阶段：创建 Windows 10 企业版计算机</span><span class="sxs-lookup"><span data-stu-id="8dc82-204">Phase 4: Create a Windows 10 Enterprise computer</span></span>
 
-<span data-ttu-id="f2295-205">在这一阶段，将运行 Windows 10 企业版的独立计算机创建为物理计算机、虚拟机或 Azure 虚拟机。</span><span class="sxs-lookup"><span data-stu-id="f2295-205">In this phase, you create a standalone computer running Windows 10 Enterprise as either a physical computer, a virtual machine, or an Azure virtual machine.</span></span>
+<span data-ttu-id="8dc82-205">在这一阶段，将运行 Windows 10 企业版的独立计算机创建为物理计算机、虚拟机或 Azure 虚拟机。</span><span class="sxs-lookup"><span data-stu-id="8dc82-205">In this phase, you create a standalone computer running Windows 10 Enterprise as either a physical computer, a virtual machine, or an Azure virtual machine.</span></span>
   
-### <a name="physical-computer"></a><span data-ttu-id="f2295-206">物理计算机</span><span class="sxs-lookup"><span data-stu-id="f2295-206">Physical computer</span></span>
+### <a name="physical-computer"></a><span data-ttu-id="8dc82-206">物理计算机</span><span class="sxs-lookup"><span data-stu-id="8dc82-206">Physical computer</span></span>
 
-<span data-ttu-id="f2295-207">在个人计算机上，安装 Windows 10 企业版。</span><span class="sxs-lookup"><span data-stu-id="f2295-207">On a personal computer, install Windows 10 Enterprise.</span></span> <span data-ttu-id="f2295-208">你可以在此处下载 Windows 10 企业版 [试用版](https://www.microsoft.com/evalcenter/evaluate-windows-10-enterprise)。</span><span class="sxs-lookup"><span data-stu-id="f2295-208">You can download the Windows 10 Enterprise trial [here](https://www.microsoft.com/evalcenter/evaluate-windows-10-enterprise).</span></span>
+<span data-ttu-id="8dc82-207">在个人计算机上，安装 Windows 10 企业版。</span><span class="sxs-lookup"><span data-stu-id="8dc82-207">On a personal computer, install Windows 10 Enterprise.</span></span> <span data-ttu-id="8dc82-208">你可以在此处下载 Windows 10 企业版 [试用版](https://www.microsoft.com/evalcenter/evaluate-windows-10-enterprise)。</span><span class="sxs-lookup"><span data-stu-id="8dc82-208">You can download the Windows 10 Enterprise trial [here](https://www.microsoft.com/evalcenter/evaluate-windows-10-enterprise).</span></span>
   
-### <a name="virtual-machine"></a><span data-ttu-id="f2295-209">虚拟机</span><span class="sxs-lookup"><span data-stu-id="f2295-209">Virtual machine</span></span>
+### <a name="virtual-machine"></a><span data-ttu-id="8dc82-209">虚拟机</span><span class="sxs-lookup"><span data-stu-id="8dc82-209">Virtual machine</span></span>
 
-<span data-ttu-id="f2295-210">使用你选择的虚拟机监控程序创建虚拟机，然后在虚拟机上安装 Windows 10 企业版。</span><span class="sxs-lookup"><span data-stu-id="f2295-210">Use the hypervisor of your choice to create a virtual machine, and then install Windows 10 Enterprise on it.</span></span> <span data-ttu-id="f2295-211">你可以在此处下载 Windows 10 企业版 [试用版](https://www.microsoft.com/evalcenter/evaluate-windows-10-enterprise)。</span><span class="sxs-lookup"><span data-stu-id="f2295-211">You can download the Windows 10 Enterprise trial [here](https://www.microsoft.com/evalcenter/evaluate-windows-10-enterprise).</span></span>
+<span data-ttu-id="8dc82-210">使用你选择的虚拟机监控程序创建虚拟机，然后在虚拟机上安装 Windows 10 企业版。</span><span class="sxs-lookup"><span data-stu-id="8dc82-210">Use the hypervisor of your choice to create a virtual machine, and then install Windows 10 Enterprise on it.</span></span> <span data-ttu-id="8dc82-211">你可以在此处下载 Windows 10 企业版 [试用版](https://www.microsoft.com/evalcenter/evaluate-windows-10-enterprise)。</span><span class="sxs-lookup"><span data-stu-id="8dc82-211">You can download the Windows 10 Enterprise trial [here](https://www.microsoft.com/evalcenter/evaluate-windows-10-enterprise).</span></span>
   
-### <a name="virtual-machine-in-azure"></a><span data-ttu-id="f2295-212">Azure 中的虚拟机</span><span class="sxs-lookup"><span data-stu-id="f2295-212">Virtual machine in Azure</span></span>
+### <a name="virtual-machine-in-azure"></a><span data-ttu-id="8dc82-212">Azure 中的虚拟机</span><span class="sxs-lookup"><span data-stu-id="8dc82-212">Virtual machine in Azure</span></span>
 
-<span data-ttu-id="f2295-p111">要在 Microsoft Azure 中创建 Windows 10 虚拟机，***你必须拥有基于 Visual Studio 的订阅***，以便有权访问 Windows 10 企业版的映像。其他类型的 Azure 订阅（如试用版和付费订阅）均无权访问此映像。有关最新信息，请参阅 [在 Azure 中使用 Windows 客户端实现开发/测试方案](/azure/virtual-machines/windows/client-images)。</span><span class="sxs-lookup"><span data-stu-id="f2295-p111">To create a Windows 10 virtual machine in Microsoft Azure, ***you must have a Visual Studio-based subscription***, which has access to the image for Windows 10 Enterprise. Other types of Azure subscriptions, such as trial and paid subscriptions, do not have access to this image. For the latest information, see [Use Windows client in Azure for dev/test scenarios](/azure/virtual-machines/windows/client-images).</span></span>
+<span data-ttu-id="8dc82-p111">要在 Microsoft Azure 中创建 Windows 10 虚拟机，***你必须拥有基于 Visual Studio 的订阅***，以便有权访问 Windows 10 企业版的映像。其他类型的 Azure 订阅（如试用版和付费订阅）均无权访问此映像。有关最新信息，请参阅 [在 Azure 中使用 Windows 客户端实现开发/测试方案](/azure/virtual-machines/windows/client-images)。</span><span class="sxs-lookup"><span data-stu-id="8dc82-p111">To create a Windows 10 virtual machine in Microsoft Azure, ***you must have a Visual Studio-based subscription***, which has access to the image for Windows 10 Enterprise. Other types of Azure subscriptions, such as trial and paid subscriptions, do not have access to this image. For the latest information, see [Use Windows client in Azure for dev/test scenarios](/azure/virtual-machines/windows/client-images).</span></span>
   
 > [!NOTE]
-> <span data-ttu-id="f2295-216">[!注意] 下面的命令集使用最新版 Azure PowerShell。</span><span class="sxs-lookup"><span data-stu-id="f2295-216">The following command sets use the latest version of Azure PowerShell.</span></span> <span data-ttu-id="f2295-217">请参阅 [Get started with Azure PowerShell cmdlets](/powershell/azureps-cmdlets-docs/)（Azure PowerShell cmdlet 使用入门）。</span><span class="sxs-lookup"><span data-stu-id="f2295-217">See [Get started with Azure PowerShell cmdlets](/powershell/azureps-cmdlets-docs/).</span></span> <span data-ttu-id="f2295-218">这些命令集生成名为 WIN10 的 Windows 10 企业版虚拟机及其所有必需的基础结构，包括资源组、存储帐户和虚拟网络。</span><span class="sxs-lookup"><span data-stu-id="f2295-218">These command sets build a Windows 10 Enterprise virtual machine named WIN10 and all of its required infrastructure, including a resource group, a storage account, and a virtual network.</span></span> <span data-ttu-id="f2295-219">如果你已熟悉 Azure 基础结构服务，请根据当前部署的基础结构调整这些说明。</span><span class="sxs-lookup"><span data-stu-id="f2295-219">If you are already familiar with Azure infrastructure services, adapt these instructions to suit your currently deployed infrastructure.</span></span>
+> <span data-ttu-id="8dc82-216">[!注意] 下面的命令集使用最新版 Azure PowerShell。</span><span class="sxs-lookup"><span data-stu-id="8dc82-216">The following command sets use the latest version of Azure PowerShell.</span></span> <span data-ttu-id="8dc82-217">请参阅 [Get started with Azure PowerShell cmdlets](/powershell/azureps-cmdlets-docs/)（Azure PowerShell cmdlet 使用入门）。</span><span class="sxs-lookup"><span data-stu-id="8dc82-217">See [Get started with Azure PowerShell cmdlets](/powershell/azureps-cmdlets-docs/).</span></span> <span data-ttu-id="8dc82-218">这些命令集生成名为 WIN10 的 Windows 10 企业版虚拟机及其所有必需的基础结构，包括资源组、存储帐户和虚拟网络。</span><span class="sxs-lookup"><span data-stu-id="8dc82-218">These command sets build a Windows 10 Enterprise virtual machine named WIN10 and all of its required infrastructure, including a resource group, a storage account, and a virtual network.</span></span> <span data-ttu-id="8dc82-219">如果你已熟悉 Azure 基础结构服务，请根据当前部署的基础结构调整这些说明。</span><span class="sxs-lookup"><span data-stu-id="8dc82-219">If you are already familiar with Azure infrastructure services, adapt these instructions to suit your currently deployed infrastructure.</span></span>
   
-<span data-ttu-id="f2295-220">首先，启动 Microsoft PowerShell 提示符。</span><span class="sxs-lookup"><span data-stu-id="f2295-220">First, start a Microsoft PowerShell prompt.</span></span>
+<span data-ttu-id="8dc82-220">首先，启动 Microsoft PowerShell 提示符。</span><span class="sxs-lookup"><span data-stu-id="8dc82-220">First, start a Microsoft PowerShell prompt.</span></span>
   
-<span data-ttu-id="f2295-221">使用此命令登录 Azure 帐户。</span><span class="sxs-lookup"><span data-stu-id="f2295-221">Sign in to your Azure account with this command.</span></span>
+<span data-ttu-id="8dc82-221">使用此命令登录 Azure 帐户。</span><span class="sxs-lookup"><span data-stu-id="8dc82-221">Sign in to your Azure account with this command.</span></span>
   
 ```powershell
 Connect-AzAccount
 ```
 
-<span data-ttu-id="f2295-222">使用此命令获取订阅名称。</span><span class="sxs-lookup"><span data-stu-id="f2295-222">Get your subscription name using this  command.</span></span>
+<span data-ttu-id="8dc82-222">使用此命令获取订阅名称。</span><span class="sxs-lookup"><span data-stu-id="8dc82-222">Get your subscription name using this  command.</span></span>
   
 ```powershell
 Get-AzSubscription | Sort Name | Select Name
 ```
 
-<span data-ttu-id="f2295-223">设置 Azure 订阅。</span><span class="sxs-lookup"><span data-stu-id="f2295-223">Set your Azure subscription.</span></span> <span data-ttu-id="f2295-224">用正确的名称替换引号内 \< and > 的所有内容（包括字符）。</span><span class="sxs-lookup"><span data-stu-id="f2295-224">Replace everything within the quotation marks, including the \< and > characters, with the correct name.</span></span>
+<span data-ttu-id="8dc82-223">设置 Azure 订阅。</span><span class="sxs-lookup"><span data-stu-id="8dc82-223">Set your Azure subscription.</span></span> <span data-ttu-id="8dc82-224">用正确的名称替换引号内 \< and > 的所有内容（包括字符）。</span><span class="sxs-lookup"><span data-stu-id="8dc82-224">Replace everything within the quotation marks, including the \< and > characters, with the correct name.</span></span>
   
 ```powershell
 $subscr="<subscription name>"
 Get-AzSubscription -SubscriptionName $subscr | Select-AzSubscription
 ```
 
-<span data-ttu-id="f2295-225">接下来，创建一个新的资源组。</span><span class="sxs-lookup"><span data-stu-id="f2295-225">Next, create a new resource group.</span></span> <span data-ttu-id="f2295-226">要确定一个唯一的资源组名称，请使用此命令列出你现有的资源组。</span><span class="sxs-lookup"><span data-stu-id="f2295-226">To determine a unique resource group name, use this command to list your existing resource groups.</span></span>
+<span data-ttu-id="8dc82-p114">接下来，创建一个新的资源组。要确定一个唯一的资源组名称，请使用此命令列出你现有的资源组。</span><span class="sxs-lookup"><span data-stu-id="8dc82-p114">Next, create a new resource group. To determine a unique resource group name, use this command to list your existing resource groups.</span></span>
   
 ```powershell
 Get-AzResourceGroup | Sort ResourceGroupName | Select ResourceGroupName
 ```
 
-<span data-ttu-id="f2295-227">使用这些命令创建新的资源组。</span><span class="sxs-lookup"><span data-stu-id="f2295-227">Create your new resource group with these commands.</span></span> <span data-ttu-id="f2295-228">用正确的名称替换引号内 \< and > 的所有内容（包括字符）。</span><span class="sxs-lookup"><span data-stu-id="f2295-228">Replace everything within the quotation marks, including the \< and > characters, with the correct names.</span></span>
+<span data-ttu-id="8dc82-227">使用这些命令创建新的资源组。</span><span class="sxs-lookup"><span data-stu-id="8dc82-227">Create your new resource group with these commands.</span></span> <span data-ttu-id="8dc82-228">用正确的名称替换引号内 \< and > 的所有内容（包括字符）。</span><span class="sxs-lookup"><span data-stu-id="8dc82-228">Replace everything within the quotation marks, including the \< and > characters, with the correct names.</span></span>
   
 ```powershell
 $rgName="<resource group name>"
@@ -257,7 +257,7 @@ $locName="<location name, such as West US>"
 New-AzResourceGroup -Name $rgName -Location $locName
 ```
 
-<span data-ttu-id="f2295-229">接下来，使用这些命令创建新的虚拟网络和 WIN10 虚拟机。</span><span class="sxs-lookup"><span data-stu-id="f2295-229">Next, create a new virtual network and the WIN10 virtual machine with these commands.</span></span> <span data-ttu-id="f2295-230">当系统提示时，提供 WIN10 的本地管理员帐户的名称和密码，并存储在安全的位置。</span><span class="sxs-lookup"><span data-stu-id="f2295-230">When prompted, provide the name and password of the local administrator account for WIN10 and store these in a secure location.</span></span>
+<span data-ttu-id="8dc82-229">接下来，使用这些命令创建新的虚拟网络和 WIN10 虚拟机。</span><span class="sxs-lookup"><span data-stu-id="8dc82-229">Next, create a new virtual network and the WIN10 virtual machine with these commands.</span></span> <span data-ttu-id="8dc82-230">当系统提示时，提供 WIN10 的本地管理员帐户的名称和密码，并存储在安全的位置。</span><span class="sxs-lookup"><span data-stu-id="8dc82-230">When prompted, provide the name and password of the local administrator account for WIN10 and store these in a secure location.</span></span>
   
 ```powershell
 $corpnetSubnet=New-AzVirtualNetworkSubnetConfig -Name Corpnet -AddressPrefix 10.0.0.0/24
@@ -279,62 +279,62 @@ $vm=Set-AzVMOSDisk -VM $vm -Name WIN10-TestLab-OSDisk -DiskSizeInGB 128 -CreateO
 New-AzVM -ResourceGroupName $rgName -Location $locName -VM $vm
 ```
 
-## <a name="phase-5-join-your-windows-10-computer-to-azure-ad"></a><span data-ttu-id="f2295-231">第 5 阶段：将 Windows 10 计算机加入到 Azure AD</span><span class="sxs-lookup"><span data-stu-id="f2295-231">Phase 5: Join your Windows 10 computer to Azure AD</span></span>
+## <a name="phase-5-join-your-windows-10-computer-to-azure-ad"></a><span data-ttu-id="8dc82-231">第 5 阶段：将 Windows 10 计算机加入到 Azure AD</span><span class="sxs-lookup"><span data-stu-id="8dc82-231">Phase 5: Join your Windows 10 computer to Azure AD</span></span>
 
-<span data-ttu-id="f2295-232">在创建具有 Windows 10 企业版的物理计算机或虚拟机之后，使用本地管理员帐户登录。</span><span class="sxs-lookup"><span data-stu-id="f2295-232">After the physical or virtual machine with Windows 10 Enterprise is created, sign in with a local administrator account.</span></span>
+<span data-ttu-id="8dc82-232">在创建具有 Windows 10 企业版的物理计算机或虚拟机之后，使用本地管理员帐户登录。</span><span class="sxs-lookup"><span data-stu-id="8dc82-232">After the physical or virtual machine with Windows 10 Enterprise is created, sign in with a local administrator account.</span></span>
   
 > [!NOTE]
-> <span data-ttu-id="f2295-233">对于 Azure 中的虚拟机，请使用  [以下](/azure/virtual-machines/windows/connect-logon) 说明连接到它。</span><span class="sxs-lookup"><span data-stu-id="f2295-233">For a virtual machine in Azure, use  [these instructions](/azure/virtual-machines/windows/connect-logon) to connect to it.</span></span>
+> <span data-ttu-id="8dc82-233">对于 Azure 中的虚拟机，请使用  [以下](/azure/virtual-machines/windows/connect-logon) 说明连接到它。</span><span class="sxs-lookup"><span data-stu-id="8dc82-233">For a virtual machine in Azure, use  [these instructions](/azure/virtual-machines/windows/connect-logon) to connect to it.</span></span>
   
-<span data-ttu-id="f2295-234">接下来，将 WIN10 计算机联接到 Microsoft 365 E5 订阅的 Azure AD 租户中。</span><span class="sxs-lookup"><span data-stu-id="f2295-234">Next, join the WIN10 computer to the Azure AD tenant of your Microsoft 365 E5 subscription.</span></span>
+<span data-ttu-id="8dc82-234">接下来，将 WIN10 计算机联接到 Microsoft 365 E5 订阅的 Azure AD 租户中。</span><span class="sxs-lookup"><span data-stu-id="8dc82-234">Next, join the WIN10 computer to the Azure AD tenant of your Microsoft 365 E5 subscription.</span></span>
   
-1. <span data-ttu-id="f2295-235">在 WIN10 计算机的桌面上，选择"开始>设置 **>帐户>访问工作或学校>连接"。**</span><span class="sxs-lookup"><span data-stu-id="f2295-235">On the desktop of the WIN10 computer, select **Start > Settings > Accounts > Access work or school > Connect**.</span></span>
+1. <span data-ttu-id="8dc82-235">在 WIN10 计算机的桌面上，选择"开始>设置 **>帐户>访问工作或学校>连接"。**</span><span class="sxs-lookup"><span data-stu-id="8dc82-235">On the desktop of the WIN10 computer, select **Start > Settings > Accounts > Access work or school > Connect**.</span></span>
     
-2. <span data-ttu-id="f2295-236">在 **"设置工作或学校帐户**"对话框中，选择 **"将此设备加入 Azure Active Directory"。**</span><span class="sxs-lookup"><span data-stu-id="f2295-236">In the **Set up a work or school account** dialog box, select **Join this device to Azure Active Directory**.</span></span>
+2. <span data-ttu-id="8dc82-236">在 **"设置工作或学校帐户**"对话框中，选择 **"将此设备加入 Azure Active Directory"。**</span><span class="sxs-lookup"><span data-stu-id="8dc82-236">In the **Set up a work or school account** dialog box, select **Join this device to Azure Active Directory**.</span></span>
     
-3. <span data-ttu-id="f2295-237">在 **"工作或学校帐户**"中，输入 Microsoft 365 E5 订阅的全局管理员帐户名称，然后选择"下一步 **"。**</span><span class="sxs-lookup"><span data-stu-id="f2295-237">In **Work or school account**, enter the global administrator account name of your Microsoft 365 E5 subscription, and then select **Next**.</span></span>
+3. <span data-ttu-id="8dc82-237">在 **"工作或学校帐户**"中，输入 Microsoft 365 E5 订阅的全局管理员帐户名称，然后选择"下一步 **"。**</span><span class="sxs-lookup"><span data-stu-id="8dc82-237">In **Work or school account**, enter the global administrator account name of your Microsoft 365 E5 subscription, and then select **Next**.</span></span>
     
-4. <span data-ttu-id="f2295-238">在 **"输入密码**"中，输入全局管理员帐户的密码，然后选择"**登录"。**</span><span class="sxs-lookup"><span data-stu-id="f2295-238">In **Enter password**, enter the password for your global administrator account, and then select **Sign in**.</span></span>
+4. <span data-ttu-id="8dc82-238">在 **"输入密码**"中，输入全局管理员帐户的密码，然后选择"**登录"。**</span><span class="sxs-lookup"><span data-stu-id="8dc82-238">In **Enter password**, enter the password for your global administrator account, and then select **Sign in**.</span></span>
     
-5. <span data-ttu-id="f2295-239">当系统提示确保这是您的组织时，请选择"**加入**"，然后选择"完成 **"。**</span><span class="sxs-lookup"><span data-stu-id="f2295-239">When prompted to make sure that this is your organization, select **Join**, and then select **Done**.</span></span>
+5. <span data-ttu-id="8dc82-239">当系统提示确保这是您的组织时，请选择"**加入**"，然后选择"完成 **"。**</span><span class="sxs-lookup"><span data-stu-id="8dc82-239">When prompted to make sure that this is your organization, select **Join**, and then select **Done**.</span></span>
     
-6. <span data-ttu-id="f2295-240">关闭“设置”窗口。</span><span class="sxs-lookup"><span data-stu-id="f2295-240">Close the settings window.</span></span>
+6. <span data-ttu-id="8dc82-240">关闭“设置”窗口。</span><span class="sxs-lookup"><span data-stu-id="8dc82-240">Close the settings window.</span></span>
     
-<span data-ttu-id="f2295-241">接下来，在 WIN10 计算机上安装 Microsoft 365 企业应用版：</span><span class="sxs-lookup"><span data-stu-id="f2295-241">Next, install Microsoft 365 Apps for enterprise on the WIN10 computer:</span></span>
+<span data-ttu-id="8dc82-241">接下来，在 WIN10 计算机上安装 Microsoft 365 企业应用版：</span><span class="sxs-lookup"><span data-stu-id="8dc82-241">Next, install Microsoft 365 Apps for enterprise on the WIN10 computer:</span></span>
   
-1. <span data-ttu-id="f2295-242">打开 Microsoft Edge 浏览器，然后使用全局管理员帐户凭据登录 [Microsoft 365](https://admin.microsoft.com) 管理中心。</span><span class="sxs-lookup"><span data-stu-id="f2295-242">Open the Microsoft Edge browser and sign in to the [Microsoft 365 admin center](https://admin.microsoft.com) with your global administrator account credentials.</span></span>
+1. <span data-ttu-id="8dc82-242">打开 Microsoft Edge 浏览器，然后使用全局管理员帐户凭据登录 [Microsoft 365](https://admin.microsoft.com) 管理中心。</span><span class="sxs-lookup"><span data-stu-id="8dc82-242">Open the Microsoft Edge browser and sign in to the [Microsoft 365 admin center](https://admin.microsoft.com) with your global administrator account credentials.</span></span>
     
-2. <span data-ttu-id="f2295-243">在 **"Microsoft Office主页"** 选项卡上，选择"**安装 Office"。**</span><span class="sxs-lookup"><span data-stu-id="f2295-243">On the **Microsoft Office Home** tab, select **Install Office**.</span></span>
+2. <span data-ttu-id="8dc82-243">在 **"Microsoft Office主页"** 选项卡上，选择"**安装 Office"。**</span><span class="sxs-lookup"><span data-stu-id="8dc82-243">On the **Microsoft Office Home** tab, select **Install Office**.</span></span>
     
-3. <span data-ttu-id="f2295-244">当系统提示要执行哪些操作时，请选择"**运行**"，然后 **为"用户帐户** 控制 **"选择"是"。**</span><span class="sxs-lookup"><span data-stu-id="f2295-244">When prompted with what to do, select **Run**, and then select **Yes** for **User Account Control**.</span></span>
+3. <span data-ttu-id="8dc82-244">当系统提示要执行哪些操作时，请选择"**运行**"，然后 **为"用户帐户** 控制 **"选择"是"。**</span><span class="sxs-lookup"><span data-stu-id="8dc82-244">When prompted with what to do, select **Run**, and then select **Yes** for **User Account Control**.</span></span>
     
-4. <span data-ttu-id="f2295-245">等待 Office 完成安装。</span><span class="sxs-lookup"><span data-stu-id="f2295-245">Wait for Office to complete its installation.</span></span> <span data-ttu-id="f2295-246">当你看到" **你已全部设置！"时，** 选择"关闭 **"两** 次。</span><span class="sxs-lookup"><span data-stu-id="f2295-246">When you see **You're all set!**, select **Close** twice.</span></span>
+4. <span data-ttu-id="8dc82-245">等待 Office 完成安装。</span><span class="sxs-lookup"><span data-stu-id="8dc82-245">Wait for Office to complete its installation.</span></span> <span data-ttu-id="8dc82-246">当你看到" **你已全部设置！"时，** 选择"关闭 **"两** 次。</span><span class="sxs-lookup"><span data-stu-id="8dc82-246">When you see **You're all set!**, select **Close** twice.</span></span>
     
-<span data-ttu-id="f2295-247">生成的环境如下所示：</span><span class="sxs-lookup"><span data-stu-id="f2295-247">Your resulting environment looks like this:</span></span>
+<span data-ttu-id="8dc82-247">生成的环境如下所示：</span><span class="sxs-lookup"><span data-stu-id="8dc82-247">Your resulting environment looks like this:</span></span>
 
 ![Microsoft 365 企业版测试环境的第 5 阶段](../media/lightweight-base-configuration-microsoft-365-enterprise/Phase4.png)
 
-<span data-ttu-id="f2295-249">这包括符合以下条件的 WIN10 计算机：</span><span class="sxs-lookup"><span data-stu-id="f2295-249">This includes the WIN10 computer that has:</span></span>
+<span data-ttu-id="8dc82-249">这包括符合以下条件的 WIN10 计算机：</span><span class="sxs-lookup"><span data-stu-id="8dc82-249">This includes the WIN10 computer that has:</span></span>
 
-- <span data-ttu-id="f2295-250">已联接 Microsoft 365 E5 订阅的 Azure AD 租户。</span><span class="sxs-lookup"><span data-stu-id="f2295-250">Joined the Azure AD tenant of your Microsoft 365 E5 subscription.</span></span>
-- <span data-ttu-id="f2295-251">已注册为 Microsoft Intune (EMS) 中的 Azure AD 设备。</span><span class="sxs-lookup"><span data-stu-id="f2295-251">Enrolled as an Azure AD device in Microsoft Intune (EMS).</span></span>
-- <span data-ttu-id="f2295-252">已安装 Microsoft 365 企业应用版。</span><span class="sxs-lookup"><span data-stu-id="f2295-252">Microsoft 365 Apps for enterprise installed.</span></span>
+- <span data-ttu-id="8dc82-250">已联接 Microsoft 365 E5 订阅的 Azure AD 租户。</span><span class="sxs-lookup"><span data-stu-id="8dc82-250">Joined the Azure AD tenant of your Microsoft 365 E5 subscription.</span></span>
+- <span data-ttu-id="8dc82-251">已注册为 Microsoft Intune (EMS) 中的 Azure AD 设备。</span><span class="sxs-lookup"><span data-stu-id="8dc82-251">Enrolled as an Azure AD device in Microsoft Intune (EMS).</span></span>
+- <span data-ttu-id="8dc82-252">已安装 Microsoft 365 企业应用版。</span><span class="sxs-lookup"><span data-stu-id="8dc82-252">Microsoft 365 Apps for enterprise installed.</span></span>
   
-<span data-ttu-id="f2295-253">现在，你已准备好试用 [Microsoft 365 企业版的其他功能](https://www.microsoft.com/microsoft-365/enterprise)。</span><span class="sxs-lookup"><span data-stu-id="f2295-253">You are now ready to experiment with additional features of [Microsoft 365 for enterprise](https://www.microsoft.com/microsoft-365/enterprise).</span></span>
+<span data-ttu-id="8dc82-253">现在，你已准备好试用 [Microsoft 365 企业版的其他功能](https://www.microsoft.com/microsoft-365/enterprise)。</span><span class="sxs-lookup"><span data-stu-id="8dc82-253">You are now ready to experiment with additional features of [Microsoft 365 for enterprise](https://www.microsoft.com/microsoft-365/enterprise).</span></span>
   
-## <a name="next-steps"></a><span data-ttu-id="f2295-254">后续步骤</span><span class="sxs-lookup"><span data-stu-id="f2295-254">Next steps</span></span>
+## <a name="next-steps"></a><span data-ttu-id="8dc82-254">后续步骤</span><span class="sxs-lookup"><span data-stu-id="8dc82-254">Next steps</span></span>
 
-<span data-ttu-id="f2295-255">浏览下面这些附加的一系列测试实验室指南：</span><span class="sxs-lookup"><span data-stu-id="f2295-255">Explore these additional sets of Test Lab Guides:</span></span>
+<span data-ttu-id="8dc82-255">浏览下面这些附加的一系列测试实验室指南：</span><span class="sxs-lookup"><span data-stu-id="8dc82-255">Explore these additional sets of Test Lab Guides:</span></span>
   
-- [<span data-ttu-id="f2295-256">标识</span><span class="sxs-lookup"><span data-stu-id="f2295-256">Identity</span></span>](m365-enterprise-test-lab-guides.md#identity)
-- [<span data-ttu-id="f2295-257">移动设备管理</span><span class="sxs-lookup"><span data-stu-id="f2295-257">Mobile device management</span></span>](m365-enterprise-test-lab-guides.md#mobile-device-management)
-- [<span data-ttu-id="f2295-258">信息保护</span><span class="sxs-lookup"><span data-stu-id="f2295-258">Information protection</span></span>](m365-enterprise-test-lab-guides.md#information-protection)
+- [<span data-ttu-id="8dc82-256">标识</span><span class="sxs-lookup"><span data-stu-id="8dc82-256">Identity</span></span>](m365-enterprise-test-lab-guides.md#identity)
+- [<span data-ttu-id="8dc82-257">移动设备管理</span><span class="sxs-lookup"><span data-stu-id="8dc82-257">Mobile device management</span></span>](m365-enterprise-test-lab-guides.md#mobile-device-management)
+- [<span data-ttu-id="8dc82-258">信息保护</span><span class="sxs-lookup"><span data-stu-id="8dc82-258">Information protection</span></span>](m365-enterprise-test-lab-guides.md#information-protection)
    
 
-## <a name="see-also"></a><span data-ttu-id="f2295-259">另请参阅</span><span class="sxs-lookup"><span data-stu-id="f2295-259">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="8dc82-259">另请参阅</span><span class="sxs-lookup"><span data-stu-id="8dc82-259">See also</span></span>
 
-[<span data-ttu-id="f2295-260">Microsoft 365 企业版测试实验室指南</span><span class="sxs-lookup"><span data-stu-id="f2295-260">Microsoft 365 for enterprise Test Lab Guides</span></span>](m365-enterprise-test-lab-guides.md)
+[<span data-ttu-id="8dc82-260">Microsoft 365 企业版测试实验室指南</span><span class="sxs-lookup"><span data-stu-id="8dc82-260">Microsoft 365 for enterprise Test Lab Guides</span></span>](m365-enterprise-test-lab-guides.md)
 
-[<span data-ttu-id="f2295-261">Microsoft 365 企业版概述</span><span class="sxs-lookup"><span data-stu-id="f2295-261">Microsoft 365 for enterprise overview</span></span>](microsoft-365-overview.md)
+[<span data-ttu-id="8dc82-261">Microsoft 365 企业版概述</span><span class="sxs-lookup"><span data-stu-id="8dc82-261">Microsoft 365 for enterprise overview</span></span>](microsoft-365-overview.md)
 
-[<span data-ttu-id="f2295-262">适用于企业的 Microsoft 365 文档</span><span class="sxs-lookup"><span data-stu-id="f2295-262">Microsoft 365 for enterprise documentation</span></span>](/microsoft-365-enterprise/)
+[<span data-ttu-id="8dc82-262">适用于企业的 Microsoft 365 文档</span><span class="sxs-lookup"><span data-stu-id="8dc82-262">Microsoft 365 for enterprise documentation</span></span>](/microsoft-365-enterprise/)
