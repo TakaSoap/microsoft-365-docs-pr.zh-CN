@@ -12,7 +12,7 @@ localization_priority: Normal
 ms.assetid: e109077e-cc85-4c19-ae40-d218ac7d0548
 ms.custom:
 - seo-marvel-apr2020
-description: 管理员可以了解在 Exchange Online Protection 中配置邮件流和路由的选项 (EOP) 。
+description: 管理员可以了解在 EOP 服务中配置邮件流和Exchange Online Protection () 。
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: 7cd5bfcc95227c59f645422d4939ea6ff77bee1e
@@ -31,7 +31,7 @@ ms.locfileid: "51203803"
 - [Microsoft Defender for Office 365 计划 1 和计划 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-在具有 Exchange Online 邮箱的 Microsoft 365 组织中，或没有 Exchange Online 邮箱的独立 Exchange Online Protection (EOP) 组织中，发送到组织的所有邮件都先通过 EOP，然后工作人员才能看到这些邮件。 在邮件路由到工作线程收件箱之前，可以通过 EOP 路由邮件进行处理，有一些选项可供选择。
+在Microsoft 365具有 Exchange Online 邮箱的组织或没有 Exchange Online 邮箱的独立 Exchange Online Protection (EOP) 组织中，发送到组织的所有邮件都先通过 EOP，然后工作人员才能看到这些邮件。 在邮件路由到工作线程收件箱之前，可以通过 EOP 路由邮件进行处理，有一些选项可供选择。
 
 ## <a name="working-with-messages-and-message-access-options"></a>使用邮件和邮件访问选项
 
@@ -41,7 +41,7 @@ EOP 提供了邮件路由方式的灵活性。 以下主题说明了邮件流过
 
 [View or Edit Managed Domains in EOP](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)介绍了如何管理与 EOP 服务相关的域。
 
-如果将子域添加到组织，则 EOP 服务也可以帮助您管理这些子域。 有关子域的更多信息，请 [通过 Enable mail flow for subdomains in Exchange Online 了解](/exchange/mail-flow-best-practices/manage-accepted-domains/enable-mail-flow-for-subdomains)。
+如果将子域添加到组织，则 EOP 服务也可以帮助您管理这些子域。 有关子域的更多信息，请通过 为 Exchange Online 中的子域[启用邮件流](/exchange/mail-flow-best-practices/manage-accepted-domains/enable-mail-flow-for-subdomains)。
 
 [使用连接器配置邮件流](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow) 介绍了连接器，并展示了如何使用连接器自定义邮件路由。 方案包括确保与合作伙伴组织进行安全通信，并设置智能主机。
 
@@ -53,4 +53,4 @@ EOP 提供了邮件路由方式的灵活性。 以下主题说明了邮件流过
 
 要验证包括连接器配置在内的 EOP 安装是否正常工作，请参阅[设置 EOP 服务](set-up-your-eop-service.md)中的"您如何知道此任务有效？"部分。
 
-[通过验证 Microsoft 365](/exchange/mail-flow-best-practices/test-mail-flow) 连接器测试邮件流提供了有关测试邮件流是否正确设置的说明。
+[通过验证您的邮件Microsoft 365连接器](/exchange/mail-flow-best-practices/test-mail-flow)提供了测试您的邮件流是否正确设置的说明。

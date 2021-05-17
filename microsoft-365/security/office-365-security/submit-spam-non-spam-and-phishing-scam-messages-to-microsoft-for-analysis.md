@@ -35,7 +35,7 @@ ms.locfileid: "51203830"
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 > [!NOTE]
-> 如果你是具有 Exchange Online 邮箱的组织的管理员，我们建议你使用安全与合规中心中的&门户。 有关详细信息，请参阅使用[管理员提交将可疑的垃圾邮件、网络钓鱼、URL 和文件提交到 Microsoft。](admin-submission.md)
+> 如果你是拥有多个邮箱Exchange Online管理员，我们建议你使用安全与合规中心&提交门户。 有关详细信息，请参阅使用[管理员提交将可疑的垃圾邮件、网络钓鱼、URL 和文件提交到 Microsoft。](admin-submission.md)
 
 如果组织的用户在收件箱中收到垃圾邮件 (垃圾邮件) 或钓鱼邮件，或者他们因被标记为垃圾邮件而未收到合法电子邮件，可能很令人沮丧。 我们会不断微调垃圾邮件筛选器，以更加准确。
 
@@ -47,7 +47,7 @@ ms.locfileid: "51203830"
 ## <a name="submit-false-negatives-to-microsoft"></a>向 Microsoft 提交漏报
 
 > [!TIP]
-> Outlook 和 Web 上的 Outlook (（以前称为 Outlook Web App) ）中的用户可以使用报告邮件外接程序或报告网络钓鱼外接程序，而不是使用以下过程报告漏报。 若要了解如何安装和使用这些工具，请参阅启用报告邮件加载项和[](enable-the-report-message-add-in.md)启用报告钓鱼[加载项](enable-the-report-phish-add-in.md)。
+> Outlook 和 Outlook (网页用户（以前称为 Outlook Web App) ）中的用户可以使用报告邮件外接程序或报告网络钓鱼外接程序，而不是使用以下过程报告漏报。 若要了解如何安装和使用这些工具，请参阅启用报告邮件加载项和[](enable-the-report-message-add-in.md)启用报告钓鱼[加载项](enable-the-report-phish-add-in.md)。
 
 如果您收到通过垃圾邮件筛选且应被标识为垃圾邮件或网络钓鱼的邮件，您可以将该邮件提交到 Microsoft 垃圾邮件分析团队和 Microsoft 网络钓鱼分析团队（如果适用）。 如果邮件符合分类条件，分析员将查看邮件并将其添加到服务范围的筛选器。
 
@@ -65,7 +65,7 @@ ms.locfileid: "51203830"
    >
    > - 保留新的邮件正文空白。
    >
-   > - 使用 .msg (默认 Outlook) 或 .eml (附加邮件的默认 Outlook 网页) 格式。
+   > - 对于附加 (，Outlook .msg) 或 .eml (默认Outlook格式) Web 格式。
 
 3. 完成后，单击"发送 **"。**
 
@@ -75,7 +75,7 @@ ms.locfileid: "51203830"
 ## <a name="submit-false-positives-to-microsoft"></a>向 Microsoft 提交误报
 
 > [!TIP]
-> Outlook 和 Web 上的 Outlook (（以前称为 Outlook Web App) ）中的用户可以使用报告邮件外接程序或报告网络钓鱼外接程序，而不是使用以下过程报告误报。 若要了解如何安装和使用这些工具，请参阅启用报告邮件加载项和[](enable-the-report-message-add-in.md)启用报告钓鱼[加载项](enable-the-report-phish-add-in.md)。
+> Outlook 和 Outlook 网页 (（以前称为 Outlook Web App) ）中的用户可以使用报告邮件外接程序或报告网络钓鱼外接程序，而不是使用以下过程报告误报。 若要了解如何安装和使用这些工具，请参阅启用报告邮件加载项和[](enable-the-report-message-add-in.md)启用报告钓鱼[加载项](enable-the-report-phish-add-in.md)。
 
 
 如果邮件被错误地标识为垃圾邮件，你可以将邮件提交给 Microsoft 垃圾邮件分析团队。 分析员将评估邮件， (根据分析结果) 可以调整服务范围的筛选器以允许邮件通过。
@@ -90,7 +90,7 @@ ms.locfileid: "51203830"
    >
    > - 保留新的邮件正文空白。
    >
-   > - 使用 .msg (默认 Outlook) 或 .eml (附加邮件的默认 Outlook 网页) 格式。
+   > - 对于附加 (，Outlook .msg) 或 .eml (默认Outlook格式) Web 格式。
 
 3. 完成后，单击"发送 **"。**
 
@@ -99,7 +99,7 @@ ms.locfileid: "51203830"
 
 ## <a name="where-is-the-data-from-submissions-to-microsoft-stored"></a>从提交到 Microsoft 的数据存储在何处？
 
-数据位于北美数据中心的 Office 365 合规性边界内。 数据由工程团队的分析师审阅，以帮助提高筛选器的有效性。
+数据位于北美数据中心Office 365合规性边界。 数据由工程团队的分析师审阅，以帮助提高筛选器的有效性。
 
 ## <a name="create-a-mail-flow-rule-to-receive-copies-of-messages-that-are-reported-to-microsoft"></a>创建邮件流规则以接收报告给 Microsoft 的邮件的副本
 

@@ -65,7 +65,7 @@ GET https://api.securitycenter.microsoft.com/api/machineactions/{id}
 
 名称 | 类型 | 说明
 :---|:---|:---
-Authorization | 字符串 | Bearer {token}。 **必需**。
+Authorization | String | Bearer {token}。 **必需**。
 
 
 ## <a name="request-body"></a>请求正文

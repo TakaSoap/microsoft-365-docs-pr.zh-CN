@@ -15,7 +15,7 @@ search.appverid:
 ms.assetid: eef8408b-54d3-4d7d-9cf7-ad2af10b2e0e
 ms.collection:
 - M365-security-compliance
-description: 管理员可以了解 Exchange Online Protection (EOP (拒绝的电子邮件地址类型) Outlook.com 有助于防止网络钓鱼。
+description: 管理员可以了解 EOP Exchange Online Protection (和) Outlook.com 接受或拒绝的电子邮件地址类型，以帮助防止网络钓鱼。
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
@@ -90,7 +90,7 @@ ms.locfileid: "51203247"
 
 以下"From"电子邮件地址无效：
 
-- **否"来自** 地址"：某些自动邮件不包括"自"地址。 过去，当 Microsoft 365 或 Outlook.com 收到不含"收件人"地址的邮件时，该服务添加了以下默认 From： 地址，使邮件可交付：
+- **否"来自** 地址"：某些自动邮件不包括"自"地址。 过去，当 Microsoft 365 或 Outlook.com 收到不含"收件人"地址的邮件时，该服务添加了以下默认"收件人："地址，使邮件可交付：
 
   `From: <>`
 
@@ -124,16 +124,16 @@ ms.locfileid: "51203247"
 noreply.contoso.com IN MX .
 ```
 
-有关设置 MX 记录的信息，请参阅在任何 DNS 托管提供商为 [Microsoft 365](../../admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md)创建 DNS 记录。
+有关设置 MX 记录的信息，请参阅在任何 DNS 托管提供商上为用户创建[DNS Microsoft 365。](../../admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md)
 
 有关发布空 MX 的信息，请参阅[RFC 7505。](https://tools.ietf.org/html/rfc7505)
 
 ## <a name="override-from-address-enforcement"></a>替代自地址强制
 
-若要绕过入站电子邮件的发件人地址要求，可以使用 IP 允许列表 (连接筛选) 或邮件流规则 (也称为传输规则) 如在 [Microsoft 365](create-safe-sender-lists-in-office-365.md)中创建安全发件人列表中所述。
+若要绕过入站电子邮件的发件人地址要求，可以使用 IP 允许列表 (连接筛选) 或邮件流规则 (也称为传输规则) 如在 Microsoft 365 中创建安全[发件人列表中所述](create-safe-sender-lists-in-office-365.md)。
 
-无法覆盖从 Microsoft 365 发送的出站电子邮件的"发送地址"要求。 此外，Outlook.com 即使支持，也不允许进行任何类型的覆盖。
+无法覆盖从邮件发送的出站电子邮件的"发送地址Microsoft 365。 此外，Outlook.com 将不允许进行任何类型的覆盖，即使通过支持。
 
-## <a name="other-ways-to-prevent-and-protect-against-cybercrimes-in-microsoft-365"></a>在 Microsoft 365 中防止和防范网络攻击的其他方法
+## <a name="other-ways-to-prevent-and-protect-against-cybercrimes-in-microsoft-365"></a>防止和防范网络攻击的其他Microsoft 365
 
-若要详细了解如何加强组织防御网络钓鱼、垃圾邮件、数据泄露和其他威胁，请参阅保护 [Microsoft 365](../../admin/security-and-compliance/secure-your-business-data.md)商业版计划的十大方法。
+若要详细了解如何加强组织防御网络钓鱼、垃圾邮件、数据泄露和其他威胁，请参阅保护商业Microsoft 365安全的[十大方法](../../admin/security-and-compliance/secure-your-business-data.md)。

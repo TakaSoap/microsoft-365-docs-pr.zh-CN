@@ -23,7 +23,7 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 03/23/2021
 ms.locfileid: "51199713"
 ---
-# <a name="advanced-hunting-using-python"></a>使用 Python 的高级搜寻
+# <a name="advanced-hunting-using-python"></a>通过 Python 高级搜寻
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -158,4 +158,4 @@ outputFile.close()
 ## <a name="related-topic"></a>相关主题
 - [适用于终结点的 Microsoft Defender API](apis-intro.md)
 - [高级搜寻 API](run-advanced-query-api.md)
-- [使用 PowerShell 的高级搜寻](run-advanced-query-sample-powershell.md)
+- [通过 PowerShell 高级搜寻](run-advanced-query-sample-powershell.md)

@@ -23,12 +23,12 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 03/25/2021
 ms.locfileid: "51203891"
 ---
-# <a name="set-up-virtual-certificate-collection-in-exchange-online-to-validate-smime"></a>在 Exchange Online 中设置虚拟证书集合以验证 S/MIME
+# <a name="set-up-virtual-certificate-collection-in-exchange-online-to-validate-smime"></a>在证书集中设置虚拟证书Exchange Online以验证 S/MIME
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
-作为管理员，您需要在 Exchange Online 中配置用于验证 S/MIME 证书的虚拟证书集合。 此虚拟证书集合设置为具有 SST 文件名扩展名的证书存储。 SST 文件包含验证 S/MIME 证书时使用的所有根证书和中间证书。
+作为管理员，您需要在用于验证 S/MIME Exchange Online配置虚拟证书集合。 此虚拟证书集合设置为具有 SST 文件名扩展名的证书存储。 SST 文件包含验证 S/MIME 证书时使用的所有根证书和中间证书。
 
 ## <a name="create-and-save-an-sst"></a>创建并保存 SST
 
@@ -50,7 +50,7 @@ Set-SmimeConfig -SMIMECertificateIssuingCA (Get-Content "C:\My Documents\Exporte
 
 ## <a name="ensuring-a-certificate-is-valid"></a>确保证书有效
 
-在 Exchange Online 中，仅 SST 用于证书验证。
+在Exchange Online中，仅 SST 用于证书验证。
 
 ## <a name="more-information"></a>更多信息
 

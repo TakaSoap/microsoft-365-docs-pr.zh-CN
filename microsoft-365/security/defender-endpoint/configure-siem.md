@@ -40,7 +40,7 @@ ms.locfileid: "51222331"
 >- [Microsoft Defender for Endpoint Detection](api-portal-mapping.md) 由设备上发生的可疑事件及其相关的警报详细信息组成。
 >-Microsoft Defender for Endpoint 警报 API 是警报使用的最新 API，包含每个警报的相关证据的详细列表。 有关详细信息，请参阅[警报方法和属性和](alerts.md)[列表警报](get-alerts.md)。
 
-Defender for Endpoint 支持安全信息和事件管理 (SIEM) 拉取检测工具。 Defender for Endpoint 通过 Azure 中托管的 HTTPS 终结点公开警报。 终结点可以配置为使用 AAD 应用程序的 OAuth 2.0 身份验证协议从 Azure Active Directory (AAD) 中的企业租户拉取检测，此协议表示环境中安装的特定 SIEM 连接器。
+Defender for Endpoint 支持安全信息和事件管理 (SIEM) 拉取检测工具。 Defender for Endpoint 通过 Azure 中托管的 HTTPS 终结点公开警报。 终结点可以配置为使用 OAuth 2.0 身份验证协议从 Azure Active Directory (AAD) 中的企业租户拉取检测，此协议适用于表示环境中安装的特定 SIEM 连接器的 AAD 应用程序。
 
 Defender for Endpoint 当前通过专用 SIEM 集成模型支持以下特定 SIEM 解决方案工具：
 

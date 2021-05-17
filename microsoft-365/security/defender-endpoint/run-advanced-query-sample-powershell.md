@@ -23,7 +23,7 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 03/23/2021
 ms.locfileid: "51198667"
 ---
-# <a name="advanced-hunting-using-powershell"></a>使用 PowerShell 的高级搜寻
+# <a name="advanced-hunting-using-powershell"></a>通过 PowerShell 高级搜寻
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -39,7 +39,7 @@ ms.locfileid: "51198667"
 
 在此部分中，我们将共享 PowerShell 示例以检索令牌并使用它运行查询。
 
-## <a name="before-you-begin"></a>准备工作
+## <a name="before-you-begin"></a>开始之前
 首先需要 [创建应用](apis-intro.md)。
 
 ## <a name="preparation-instructions"></a>准备说明
@@ -129,4 +129,4 @@ $results | ConvertTo-Json | Set-Content file1.json
 ## <a name="related-topic"></a>相关主题
 - [适用于终结点的 Microsoft Defender API](apis-intro.md)
 - [高级搜寻 API](run-advanced-query-api.md)
-- [使用 Python 的高级搜寻](run-advanced-query-sample-python.md)
+- [通过 Python 高级搜寻](run-advanced-query-sample-python.md)

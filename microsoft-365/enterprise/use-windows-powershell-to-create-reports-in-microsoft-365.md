@@ -15,7 +15,7 @@ ms.custom:
 - Ent_Office_Other
 - seo-marvel-apr2020
 ms.assetid: 1ea4d4ec-af89-496f-9678-701867f5a6fc
-description: 摘要：使用适用于 Microsoft 365 的 PowerShell 创建无法通过 Microsoft 365 管理中心生成的报告。
+description: 摘要：使用 PowerShell for Microsoft 365创建无法通过管理中心Microsoft 365的报告。
 ms.openlocfilehash: dc183ae8a315bf788befc85474d0647802ac91ee
 ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
 ms.translationtype: MT
@@ -25,26 +25,26 @@ ms.locfileid: "51222775"
 ---
 # <a name="use-powershell-to-create-reports-for-microsoft-365"></a>使用 PowerShell 创建 Microsoft 365 报告
 
-*本文适用于 Microsoft 365 企业版和 Office 365 企业版。*
+*此文章适用于 Microsoft 365 企业版和 Office 365 企业版。* 
 
-Microsoft 365 管理中心提供了许多不同的报告。 但是这些报告仅提供太多信息，有时你还需要更多信息。 这就是需要 PowerShell for Microsoft 365 的时候。
+管理中心提供了许多不同的Microsoft 365报告。 但是这些报告仅提供太多信息，有时你还需要更多信息。 这就是需要 PowerShell 进行Microsoft 365。
   
-这些文章介绍如何使用适用于 Microsoft 365 的 PowerShell 从 Microsoft 365 租户获取信息：
+这些文章介绍如何使用 PowerShell for Microsoft 365从你的租户Microsoft 365信息：
   
-- 开始使用适用于 Microsoft 365 的 PowerShell 报告：
+- 开始使用 PowerShell 进行报告，Microsoft 365：
     
   - [为什么需要使用 PowerShell for Microsoft 365](./why-you-need-to-use-microsoft-365-powershell.md)
     
     
 - 用户帐户和许可证报告：
     
-  - [使用 PowerShell 查看 Microsoft 365 许可证和服务](view-licenses-and-services-with-microsoft-365-powershell.md)
+  - [使用 PowerShell Microsoft 365许可证和服务](view-licenses-and-services-with-microsoft-365-powershell.md)
     
-  - [使用 PowerShell 查看 Microsoft 365 许可和未授权的用户](view-licensed-and-unlicensed-users-with-microsoft-365-powershell.md)
+  - [使用 PowerShell Microsoft 365许可和未授权的用户](view-licensed-and-unlicensed-users-with-microsoft-365-powershell.md)
     
-  - [使用 PowerShell 查看 Microsoft 365 帐户许可证和服务详细信息](view-account-license-and-service-details-with-microsoft-365-powershell.md)
+  - [使用 PowerShell Microsoft 365帐户许可证和服务详细信息](view-account-license-and-service-details-with-microsoft-365-powershell.md)
     
-  - [使用 PowerShell 查看 Microsoft 365 用户帐户](view-user-accounts-with-microsoft-365-powershell.md)
+  - [使用 PowerShell Microsoft 365用户帐户](view-user-accounts-with-microsoft-365-powershell.md)
     
 - SharePoint Online 报告：
     
@@ -63,6 +63,6 @@ Microsoft 365 管理中心提供了许多不同的报告。 但是这些报告�
   
 [PowerShell for Microsoft 365 入门](getting-started-with-microsoft-365-powershell.md)
   
-[使用 PowerShell 管理 SharePoint](manage-sharepoint-online-with-microsoft-365-powershell.md)
+[使用 PowerShell SharePoint管理服务](manage-sharepoint-online-with-microsoft-365-powershell.md)
   
 [使用 PowerShell 管理 Microsoft 365 用户帐户、许可证和组](manage-user-accounts-and-licenses-with-microsoft-365-powershell.md)

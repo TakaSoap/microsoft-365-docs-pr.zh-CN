@@ -36,7 +36,7 @@ ms.locfileid: "51470507"
 
  如果找不到要查找的内容，请 **[查看域常见问题解答](../setup/domains-faq.yml)**。 
   
-### <a name="sign-in-and-go-to-settings--domains--buy-a-domain"></a>登录并转到"设置 \> ""域 \> ""购买域"
+### <a name="sign-in-and-go-to-settings--domains--buy-a-domain"></a>登录并转到设置 \> \> 域购买域
 
 1. 在管理中心，转到“**设置**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">域</a>”页面。
     
@@ -72,7 +72,7 @@ ms.locfileid: "51470507"
 通过购买域，我们提供免费的域隐私订阅。 这样一来，你的联系人信息将附加到你的域注册中，并保留为专用 DNS。 [了解更多信息。](https://whois.icann.org/en/privacy-and-proxy-services)
   
 ### <a name="buy-a-domain-from-another-domain-registrar"></a>从另一域注册机构购买域
-如果要从 [GoDaddy](https://www.godaddy.com)外部的域注册机构购买域，我们建议你使用以下支持自动设置 (域连接) 。 
+如果要从 GoDaddy 域注册机构（而非[GoDaddy）](https://www.godaddy.com)购买域，建议使用以下支持自动设置 (域连接) 。 
   
 - [1 &amp; 1 IONOS](https://www.1and1.com/)
 - [WordPress](https://www.wordpress.com) 
@@ -94,17 +94,17 @@ ms.locfileid: "51470507"
 
 如果尚没有自己的域，可轻松联机进行购买，可在域名注册机构、域经销商，甚至是在当前的 Internet 提供商处购买。注册 由世纪互联运营的 Office 365 时可获取一个域名，例如，contoso.onmicrosoft.com。但你可能希望使用自定义域名，例如 fourthcoffee.com。
   
-若要在 Microsoft 365 中设置域，你必须拥有一个域并更改域的一些 DNS 记录。
+若要在域中设置Microsoft 365，您必须拥有一个域并更改您的域的一些 DNS 记录。
   
 > [!CAUTION]
-> 某些域注册机构或 DNS 托管提供商不允许创建 Microsoft 365 所需的所有 DNS 记录。 下面列出的托管提供商支持所有所需的记录。 如果您正在考虑使用其他托管提供商，[Service limitations when your hosting provider does not support SRV, CNAME, TXT, or redirection](https://support.microsoft.com/office/dfbb03e3-08c1-4c4e-b2f0-891665b29b77)。 
+> 某些域注册机构或 DNS 托管提供商不允许创建所有 DNS 记录Microsoft 365。 下面列出的托管提供商支持所有所需的记录。 如果您正在考虑使用其他托管提供商，[Service limitations when your hosting provider does not support SRV, CNAME, TXT, or redirection](https://support.microsoft.com/office/dfbb03e3-08c1-4c4e-b2f0-891665b29b77)。 
   
-在域注册机构 (注册域) 后，以管理员角色登录 Microsoft 365 并设置域，以便可以与电子邮件地址和其他服务一同使用它。
+在域注册机构 (注册域) 后，以管理员角色登录到 Microsoft 365 并设置域，以便可以与电子邮件地址和其他服务一同使用它。
   
 > [!NOTE]
-> 本文中的 SharePoint Online 公共网站信息仅适用于在 2015 年 3 月 9 日之前购买 Microsoft 365 的组织。 
+> 本文SharePoint联机公共网站的信息仅适用于您的组织在 2015 年 3 Microsoft 365 9 之前购买的网站。 
 
-## <a name="domain-registrars-that-support-all-dns-records-required-for-microsoft-365"></a>支持 Microsoft 365 所需的所有 DNS 记录的域注册机构
+## <a name="domain-registrars-that-support-all-dns-records-required-for-microsoft-365"></a>支持所有 DNS 记录所需的域注册机构Microsoft 365
 
 - [Oray](https://oray.com/)
     

@@ -1,5 +1,5 @@
 ---
-title: 安装和使用 Microsoft Outlook 的垃圾邮件报告外接程序
+title: 安装并使用 Microsoft 垃圾邮件报告外接程序Outlook
 f1.keywords:
 - NOCSH
 ms.author: siosulli
@@ -22,7 +22,7 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 03/25/2021
 ms.locfileid: "51203265"
 ---
-# <a name="install-and-use-the-junk-email-reporting-add-in-for-microsoft-outlook"></a>安装和使用 Microsoft Outlook 的垃圾邮件报告外接程序
+# <a name="install-and-use-the-junk-email-reporting-add-in-for-microsoft-outlook"></a>安装并使用 Microsoft 垃圾邮件报告外接程序Outlook
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -34,7 +34,7 @@ ms.locfileid: "51203265"
 > [!NOTE]
 > 如果您当前没有使用垃圾邮件报告外接程序，我们建议改为使用报告邮件外接程序或报告网络钓鱼[外接程序](enable-the-report-phish-add-in.md)。 [](enable-the-report-message-add-in.md) 有关详细信息，请参见[向 Microsoft 报告邮件和文件](report-junk-email-messages-to-microsoft.md)。
 
-Microsoft Outlook 垃圾邮件报告外接程序允许用户向 Microsoft 提交误报 (标记为垃圾邮件) 、漏报 (错误电子邮件) 以及网络钓鱼邮件。 如果您的组织不使用 Exchange Online Protection (例如本地 Exchange 或 Exchange Online) 的电子邮件服务，则垃圾邮件报告提交不会影响垃圾邮件筛选。
+Microsoft Outlook 垃圾邮件报告外接程序允许用户向 Microsoft 提交误报 (标记为垃圾邮件) 、漏报 (错误电子邮件) 以及网络钓鱼邮件。 如果您的组织不使用 Exchange Online Protection (，例如本地 Exchange 或除 Exchange Online) 外的电子邮件服务，则垃圾邮件报告提交不会影响垃圾邮件筛选。
 
 本主题介绍如何安装和使用垃圾邮件报告外接程序。
 
@@ -42,10 +42,10 @@ Microsoft Outlook 垃圾邮件报告外接程序允许用户向 Microsoft 提交
 
 - 若要安装垃圾邮件报告外接程序，请参阅本文稍后介绍的安装 [垃圾](#install-the-junk-email-reporting-add-in) 电子邮件报告外接程序一节。
 
-- 垃圾邮件报告外接程序适用于以下版本的 Outlook：
+- 垃圾邮件报告外接程序适用于以下版本的Outlook：
 
   - Outlook 2013 或更高版本
-  - Microsoft 365 企业应用版中包含的 Outlook
+  - Outlook包含在Microsoft 365 企业应用版
 
 - 有关向 Microsoft 报告邮件的信息，请参阅 [向 Microsoft 报告邮件和文件](report-junk-email-messages-to-microsoft.md)。
 
@@ -111,20 +111,20 @@ Microsoft Outlook 垃圾邮件报告外接程序允许用户向 Microsoft 提交
 
 - 您需要在要安装外接程序的计算机上拥有管理员权限。
 
-- 转到 <https://www.microsoft.com/download/details.aspx?id=18275> Office 版本，将相应的 .msi 文件下载到易于查找的位置：
+- 转到 <https://www.microsoft.com/download/details.aspx?id=18275> 并下载适用于.msi版本Office文件下载到易于查找的位置：
 
   - **32 位**： `Junk Reporting Add-in for Office 2007, 2010, 2013, and 2016 (32-bit).msi`
   - **64 位**： `Junk Reporting Add-in for Office 2007, 2010, 2013, and 2016 (64-bit).msi`
 
-- 对于 Outlook 2013 或更高版本，唯一的先决条件是 Microsoft .NET Framework 2.0。 在 Windows 10 中，你无法从.NET Framework安装 2.0。
+- 对于 Outlook 2013 或更高版本，唯一的先决条件是 Microsoft .NET Framework 2.0。 在Windows 10中，你无法从.NET Framework安装 2.0。
 
 ### <a name="install-the-junk-email-reporting-add-in-using-the-setup-wizard"></a>使用安装向导安装垃圾电子邮件报告外接程序
 
 1. 在您的计算机上关闭 Outlook。
 
-2. 在 Windows 10 中，验证 .NET Framework 2.0 是否已启用。 有关说明，请参阅[在控制面板.NET Framework启用 3.5。](/dotnet/framework/install/dotnet-35-windows-10#enable-the-net-framework-35-in-control-panel)
+2. In Windows 10， verify the .NET Framework 2.0 is enabled. 有关说明，请参阅[在控制面板.NET Framework启用 3.5。](/dotnet/framework/install/dotnet-35-windows-10#enable-the-net-framework-35-in-control-panel)
 
-3. 找到您下载的 .msi 文件，然后双击它。
+3. 找到.msi下载的文件，然后双击它。
 
 4. 在“欢迎使用 Microsoft 垃圾电子邮件报告外接程序安装程序”页面上，单击“下一步”。
 
@@ -134,7 +134,7 @@ Microsoft Outlook 垃圾邮件报告外接程序允许用户向 Microsoft 提交
 
 启动 Outlook。
 
-在 Outlook **功能区** 上查找"垃圾邮件"按钮。 现在，可以通过在收件箱中选择垃圾电子邮件并单击“报告垃圾邮件”按钮，向 Microsoft 报告垃圾电子邮件。
+在"垃圾邮件 **"** 功能区上Outlook按钮。 现在，可以通过在收件箱中选择垃圾电子邮件并单击“报告垃圾邮件”按钮，向 Microsoft 报告垃圾电子邮件。
 
 如果想要向 Microsoft 报告仿冒垃圾电子邮件，请选择“垃圾邮件”旁边的向下箭头查看更多选项，如“报告为仿冒邮件”。如果一封电子邮件被错误识别为垃圾邮件，则在垃圾邮件文件夹中，您还可以选择“报告不是垃圾邮件”。
 
@@ -142,7 +142,7 @@ Microsoft Outlook 垃圾邮件报告外接程序允许用户向 Microsoft 提交
 
 1. 在您的计算机上关闭 Outlook。
 
-2. 在 Windows 10 中，运行.NET Framework安装 2.0 版本：
+2. 在Windows 10中，运行以下.NET Framework安装 2.0：
 
    ```dos
    DISM /Online /Enable-Feature /FeatureName:NetFx3 /All
@@ -175,7 +175,7 @@ Microsoft Outlook 垃圾邮件报告外接程序允许用户向 Microsoft 提交
 
 ### <a name="how-do-you-know-this-worked"></a>如何知道操作成功？
 
-若要验证您是否已成功安装垃圾邮件报告外接程序，请执行 Outlook 中的以下任一步骤：
+若要验证您是否已成功安装垃圾邮件报告外接程序，请执行以下任一Outlook：
 
 - 选择邮件或打开邮件。 在功能 **区的"****主页"** 或"邮件"选项卡中，单击"**垃圾邮件**"，并验证以下选项是否可用：
 
@@ -212,21 +212,21 @@ Microsoft Outlook 垃圾邮件报告外接程序允许用户向 Microsoft 提交
 
 ## <a name="uninstall-the-junk-email-reporting-add-in"></a>卸载垃圾电子邮件报告外接程序
 
-关闭 Outlook 后，使用以下任一过程卸载垃圾电子邮件报告外接程序：
+关闭Outlook后，请使用以下任一过程卸载垃圾电子邮件报告外接程序：
 
-- **控制面板：** 按 Windows 键 + R。在打开 **的"运行**"对话框中，输入 `control appwiz.cpl` ，然后单击"确定 **"。**
+- **控制面板：** 按Windows键 + R。在打开 **的"运行**"对话框中，输入 `control appwiz.cpl` ，然后单击"确定 **"。**
 
   在列表中查找并选择 **"Microsoft 垃圾邮件报告** 外接程序"，然后单击"卸载 **"。**
 
-- **Windows Installer 程序包**：查找或下载相应的 .msi 文件，然后双击它。
+- **Windows安装程序程序包**：查找或下载.msi文件，然后双击它。
 
   - **32 位**： `Junk Reporting Add-in for Office 2007, 2010, 2013, and 2016 (32-bit).msi`
 
   - **64 位**： `Junk Reporting Add-in for Office 2007, 2010, 2013, and 2016 (64-bit).msi`
 
-  在出现的对话框中，选择"删除 **Outlook 的 Microsoft 垃圾邮件报告** 外接程序"，然后单击"下一步 **"。**
+  在出现的对话框中，选择"删除 Microsoft 垃圾邮件报告外接程序 **"Outlook** 然后单击"下一步 **"。**
 
-- **静默** 模式：查找或下载相应的 .msi 文件。 在命令提示符窗口中，将 替换为 .msi 文件的位置，然后运行以下命令 \<PathToFile\> 之一：
+- **静默** 模式：查找或下载相应的.msi文件。 在命令提示符窗口中，将 替换为 .msi \<PathToFile\> 文件的位置，然后运行以下命令之一：
 
   - **32 位**：
 
@@ -240,11 +240,11 @@ Microsoft Outlook 垃圾邮件报告外接程序允许用户向 Microsoft 提交
     msiexec /x "<PathToFile>\Junk Reporting Add-in for Office 2007, 2010, 2013, and 2016 (64-bit).msi" /qn MSIRESTARTMANAGERCONTROL="DisableShutdown"
     ```
 
-卸载后打开 Outlook 时，垃圾邮件（非垃圾邮件）和网络钓鱼报告选项应该会消失。
+在卸载Outlook打开邮件时，垃圾邮件（非垃圾邮件）和网络钓鱼报告选项应该会消失。
 
 ## <a name="troubleshooting-the-junk-email-reporting-add-in"></a>垃圾邮件报告外接程序疑难解答
 
-有时，在添加垃圾电子邮件报告外接程序后，您可能会遇到 Outlook 问题。 本节介绍您可能遇到的问题，以及解决这些问题的提示。
+有时，在添加垃圾邮件报告Outlook后，您可能遇到与垃圾邮件报告外接程序有关的问题。 本节介绍您可能遇到的问题，以及解决这些问题的提示。
 
 ### <a name="troubleshooting-for-users"></a>用户疑难解答
 
@@ -256,7 +256,7 @@ Microsoft Outlook 垃圾邮件报告外接程序允许用户向 Microsoft 提交
 
 若要解决此问题，请执行以下步骤：
 
-1. 关闭并重新启动 Outlook。
+1. 关闭并重新启动Outlook。
 2. 创建并发送测试邮件，并验证收件人是否收到该邮件。
 3. 如果问题仍然存在，请与管理员联系。
 
@@ -268,7 +268,7 @@ Microsoft Outlook 垃圾邮件报告外接程序允许用户向 Microsoft 提交
 
 1. 验证注册表 `LoggingLevel` 项或将注册表项设置为值"Verbose"：
 
-   - **32 位 Windows 上的 32 位 Outlook**：
+   - **32 位Outlook 32 位** Windows：
 
      ```text
      Windows Registry Editor Version 5.00
@@ -277,7 +277,7 @@ Microsoft Outlook 垃圾邮件报告外接程序允许用户向 Microsoft 提交
      "LoggingLevel"="Verbose"
      ```
 
-   - **64 位 Windows 上的 32 位 Outlook：**
+   - **64 位Outlook 32 位** Windows：
 
      ```text
      Windows Registry Editor Version 5.00
@@ -286,7 +286,7 @@ Microsoft Outlook 垃圾邮件报告外接程序允许用户向 Microsoft 提交
      "LoggingLevel"="Verbose"
      ```
 
-   - **64 位 Outlook：**
+   - **64 位Outlook：**
 
      ```text
      Windows Registry Editor Version 5.00
@@ -295,7 +295,7 @@ Microsoft Outlook 垃圾邮件报告外接程序允许用户向 Microsoft 提交
      "LoggingLevel"="Verbose"
      ```
 
-2. 重新启动 Outlook 并要求用户在看到错误消息时进行报告。
+2. 重新启动Outlook，并要求用户在看到错误消息时返回报告。
 
 3. 收集在以下位置找到的日志信息：
 

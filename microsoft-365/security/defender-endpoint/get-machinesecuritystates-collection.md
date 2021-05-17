@@ -37,7 +37,7 @@ ms.locfileid: "51200361"
 
 检索设备安全状态的集合。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 用户需要读取权限。
 
 ## <a name="http-request"></a>HTTP 请求

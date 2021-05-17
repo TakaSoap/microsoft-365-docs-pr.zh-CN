@@ -40,7 +40,7 @@ ICS (泄露) 是每个终结点保护解决方案中的重要功能。 此功能
 
 创建定义实体的检测、防护和排除的指示器。 你可以定义要采取的操作以及何时应用该操作的持续时间，以及要应用该操作的设备组的范围。
 
-当前支持的源是 Defender for Endpoint 的云检测引擎、自动调查和修正引擎以及 Microsoft Defender 防病毒 (终结点) 。
+当前支持的源是 Defender for Endpoint 的云检测引擎、自动调查和修正引擎以及终结点防护引擎 (Microsoft Defender 防病毒) 。
 
 **云检测引擎**<br>
 Defender for Endpoint 的云检测引擎会定期扫描收集的数据并尝试匹配你设置的指示器。 当有匹配时，将按照你为 IoC 指定的设置来采取措施。
@@ -68,7 +68,7 @@ Defender for Endpoint 的云检测引擎会定期扫描收集的数据并尝试�
 
 
 > [!NOTE]
-> 每个租户限制为 15，000 个指示器。 文件和证书指示器不会阻止为 [Microsoft Defender 防病毒定义的排除项](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-exclusions-microsoft-defender-antivirus)。 当 Microsoft Defender 防病毒处于被动模式时，该标记不受支持。 
+> 每个租户限制为 15，000 个指示器。 文件和证书指示器不会阻止[为文件定义排除Microsoft Defender 防病毒。](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-exclusions-microsoft-defender-antivirus) 当指示器处于被动模式Microsoft Defender 防病毒不支持指示器。 
 
 
 ## <a name="related-topics"></a>相关主题

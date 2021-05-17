@@ -54,7 +54,7 @@ ms.locfileid: "51203230"
 
 ![单击"修复慢速邮件流规则"见解上的"查看详细信息"后显示的详细信息 flyout](../../media/mfi-fix-slow-mail-flow-rules-details.png)
 
-有关邮件流规则中的条件和例外的信息，请参阅 [Mail flow rule conditions and exceptions (predicates) in Exchange Online](/Exchange/security-and-compliance/mail-flow-rules/conditions-and-exceptions)。
+有关邮件流规则中的条件和例外的信息，请参阅邮件流规则条件和例外 ([中的) 和Exchange Online。](/Exchange/security-and-compliance/mail-flow-rules/conditions-and-exceptions)
 
 ## <a name="see-also"></a>另请参阅
 

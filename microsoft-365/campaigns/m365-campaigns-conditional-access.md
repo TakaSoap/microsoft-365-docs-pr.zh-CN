@@ -39,17 +39,17 @@ ms.locfileid: "51398286"
 
 如果订阅是在 2019 年 10 月 22 日当天或之后创建的，则可能会自动启用安全默认值，你应该 &mdash; 检查设置以确认。
 
-若要在 Azure AD (Azure Active Directory 中启用) 或检查它们是否已启用：
+若要在 Azure AD Azure Active Directory (启用) 或检查它们是否已启用：
 
-1. 使用全局管理员凭据登录 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365</a> 管理中心。
+1. 使用全局管理员<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365</a>登录管理中心。
 
-2. 在左侧窗格中，选择"**全部显示**"，然后在"**管理中心**"下，选择 **"Azure Active Directory"。**
+2. 在左侧窗格中，选择"全部 **显示**"，**然后在"管理** 中心"下，选择"Azure Active Directory"。 
 
-3. 在 Azure Active **Directory** 管理中心的左侧窗格中，选择 **"Azure Active Directory"。**
+3. 在管理中心的左窗格中Azure Active Directory **选择****"Azure Active Directory"。**
 
 4. 从仪表板的左侧菜单中的"管理"**部分**，选择"属性 **"。**
 
-    :::image type="content" source="../media/m365-campaigns-conditional-access/azure-ad-properties.png" alt-text="显示&quot;属性&quot;菜单项位置的 Azure Active Directory 管理中心的屏幕截图。":::
+    :::image type="content" source="../media/m365-campaigns-conditional-access/azure-ad-properties.png" alt-text="显示&quot;Azure Active Directory&quot;菜单项位置的&quot;管理中心&quot;屏幕截图。":::
 
 5. 在"属性"页 **底部**，选择"**管理安全性默认值"。**
 
@@ -68,10 +68,10 @@ ms.locfileid: "51398286"
 
 安全默认值可供所有客户使用，而条件访问需要以下计划之一的许可证：
 
-- Azure Active Directory Premium P1 或 P2
+- Azure Active Directory 高级版 P1 或 P2
 - Microsoft 365 商业高级版
 - Microsoft 365 E3 或 E5
-- 企业移动性&安全性 E3 或 E5
+- Enterprise移动性&安全性 E3 或 E5
 
 如果要使用条件访问配置与安全默认值启用的策略等效的策略，请查看以下分步指南：
 
@@ -79,7 +79,7 @@ ms.locfileid: "51398286"
 - [需要 MFA 进行 Azure 管理](/azure/active-directory/conditional-access/howto-conditional-access-policy-azure-management)
 - [阻止旧身份验证](/azure/active-directory/conditional-access/howto-conditional-access-policy-block-legacy)
 - [要求对所有用户执行 MFA](/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa)
-- [需要 Azure AD MFA 注册](/azure/active-directory/identity-protection/howto-identity-protection-configure-mfa-policy) - 需要 Azure AD Identity Protection，这是 Azure Active Directory Premium P2 的一部分
+- [需要 Azure AD MFA 注册](/azure/active-directory/identity-protection/howto-identity-protection-configure-mfa-policy)- 需要 Azure AD Identity Protection，这是 Azure Active Directory 高级版 P2 的一部分
 
 若要详细了解条件访问，请参阅 [什么是条件访问？](/azure/active-directory/conditional-access/overview) 有关创建条件访问策略的信息，请参阅 [创建条件访问策略](/azure/active-directory/authentication/tutorial-enable-azure-mfa#create-a-conditional-access-policy)。
 

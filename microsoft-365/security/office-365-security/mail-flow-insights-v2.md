@@ -69,12 +69,12 @@ ms.locfileid: "51203787"
 
 - **安全与** 合规中心&组织 (全局管理员) 。
 
-- **[Azure](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#exchange-administrator)** Active Directory 中的 Exchange 管理员。
+- **[Exchange管理员](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#exchange-administrator)** Azure Active Directory。
 
-- **安全与** 合规中心&邮件流管理员。 如果该帐户不是组织管理或 Exchange 管理员角色组的成员，请考虑以下问题：
+- **安全与** 合规中心&邮件流管理员。 如果该帐户不是组织管理或管理员Exchange组的成员，请考虑以下问题：
   - 用户必须直接登录到安全&合规中心 <https://protection.office.com> 。
   - 用户仅对邮件流仪表板具有只读权限。
-  - 用户无法访问 Microsoft 365 管理中心。
+  - 用户无法访问管理Microsoft 365中心。
 
 有关权限详细信息，请参阅安全与合规中心& [权限](permissions-in-the-security-and-compliance-center.md) 和向用户授予对安全与合规& [的访问权限](grant-access-to-the-security-and-compliance-center.md)。
 

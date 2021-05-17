@@ -1,5 +1,5 @@
 ---
-title: 获取与警报相关的域信息
+title: 获取有关域信息的警报
 description: 使用 Microsoft Defender for Endpoint 检索与特定警报相关的所有域。
 keywords: api， 图形 api， 受支持的 api， 获取警报信息， 警报信息， 相关域
 search.product: eADQiWindows 10XVcnh
@@ -65,7 +65,7 @@ GET /api/alerts/{id}/domains
 
 名称 | 类型 | 说明
 :---|:---|:---
-Authorization | 字符串 | Bearer {token}。 **必需**。
+Authorization | String | Bearer {token}。 **必需**。
 
 
 ## <a name="request-body"></a>请求正文

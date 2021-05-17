@@ -14,7 +14,7 @@ search.appverid:
 ms.assetid: 97921f0e-832f-40c7-b56d-414faede5191
 ms.collection:
 - M365-security-compliance
-description: 了解独立 Exchange Online Protection (EOP) 中的 Web 管理界面。
+description: 了解独立 EOP 应用程序中的 web Exchange Online Protection () 。
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: ab834d14673370a39e148aefa568591ff4c50b8f
@@ -29,27 +29,27 @@ ms.locfileid: "51203887"
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **适用对象**
--  [独立 Exchange Online Protection](exchange-online-protection-overview.md)
+-  [Exchange Online Protection独立](exchange-online-protection-overview.md)
 
-Exchange 管理中心 (EAC) 是适用于独立 Exchange Online Protection (EOP) 的基于 Web 的管理控制台。
+EAC Exchange管理 (中心) 是适用于独立 EOP Exchange Online Protection (Web 的管理) 。
 
-正在查找此主题的 Exchange Online 版本？ 请参阅 [Exchange admin center in Exchange Online](/exchange/exchange-admin-center)。
+正在查找此主题的 Exchange Online 版本？请参阅 [Exchange admin center in Exchange Online](/exchange/exchange-admin-center)。
 
 ## <a name="open-the-eac-in-eop"></a>在 EOP 中打开 EAC
 
 独立 EOP 客户可以通过以下方法访问 EAC：
 
-- **从 Microsoft 365 管理中心：**
+- **从Microsoft 365管理中心：**
 
   1. 转到 ， <https://admin.microsoft.com> 然后单击全部 **显示**。
 
-     ![单击"在 Microsoft 365 管理中心中全部显示"](../../media/m365-center-show-all.png)
+     ![单击"在管理中心Microsoft 365全部"](../../media/m365-center-show-all.png)
 
   2. 在出现的 **"管理中心**"部分中，单击"**所有管理中心"。**
 
-     ![单击 Microsoft 365 管理中心中的"所有管理中心"](../../media/m365-center-select-all-admin-centers.png)
+     ![单击管理中心内的所有Microsoft 365中心](../../media/m365-center-select-all-admin-centers.png)
 
-  3. 在出现的 **"所有管理中心"** 页上，单击 **"Exchange Online Protection"。**
+  3. 在出现的 **"所有管理中心**"页上，单击 **"Exchange Online Protection"。**
 
 - 直接转到 `https://admin.protection.outlook.com/ecp/` 。
 
@@ -57,7 +57,7 @@ Exchange 管理中心 (EAC) 是适用于独立 Exchange Online Protection (EOP) 
 
 本部分将介绍 EAC 中的用户界面元素。
 
-![Exchange Online Protection 中的 Exchange 管理中心](../../media/EOP-AdminCenter.png)
+![Exchange管理中心Exchange Online Protection](../../media/EOP-AdminCenter.png)
 
 ### <a name="feature-pane"></a>功能窗格
 
@@ -74,9 +74,9 @@ Exchange 管理中心 (EAC) 是适用于独立 Exchange Online Protection (EOP) 
   > [!NOTE]
   > 应在安全与合规中心内管理反恶意软件策略和&筛选器策略。 有关详细信息，请参阅在 [EOP](configure-anti-malware-policies.md) 中配置反恶意软件策略和 [在 EOP](configure-the-connection-filter-policy.md)中配置连接筛选。
 
-- **邮件** 流：这是管理邮件流规则的位置 (传输规则) 、接受域和连接器，以及运行邮件跟踪的位置。
+- **邮件** Flow：这是您将管理邮件流规则 (也称为传输规则) 、接受域和连接器的位置，以及您可以运行邮件跟踪的位置。
 
-- **混合**：这是您可以运行混合配置 [向导](/Exchange/hybrid-configuration-wizard)的地方，您可以在其中安装 Exchange Online [PowerShell 模块](/powershell/exchange/mfa-connect-to-exchange-online-powershell)。
+- **混合**：可以在其中运行混合配置 [向导](/Exchange/hybrid-configuration-wizard)，并可在其中安装 Exchange Online [PowerShell 模块](/powershell/exchange/mfa-connect-to-exchange-online-powershell)。
 
 ### <a name="tabs"></a>选项卡
 
@@ -114,13 +114,13 @@ Exchange 管理中心 (EAC) 是适用于独立 Exchange Online Protection (EOP) 
 
 - **帮助**：单击 ![ "帮助 ](../../media/ITPro-EAC-HelpIcon.gif) 图标"查看联机帮助内容。
 - **反馈**：留下反馈。
-- **社区**：在社区论坛中发布问题以查找答案。
+- **Community：** 在社区论坛中发布查找答案的问题。
 - **禁用帮助气泡**：当您创建或编辑对象时，帮助气泡会显示字段的上下文帮助。 您可以关闭"帮助"气泡，如果已被禁用，也可以打开它。
 - **显示命令日志记录**：将打开一个新窗口，根据 EAC 中配置的功能显示等效的 PowerShell 命令。
 
 ## <a name="supported-browsers"></a>支持的浏览器
 
-若要获得最佳的 EAC 使用体验，我们建议您始终使用最新的浏览器、Office 客户端和应用程序。 我们还建议您安装可用的软件更新。 有关服务支持的浏览器和系统要求的信息，请参阅 [Office 的系统要求](https://products.office.com/office-system-requirements)。
+若要获得最佳的 EAC 使用体验，我们建议您始终使用最新的浏览器、Office 客户端和应用程序。 我们还建议您安装可用的软件更新。 有关服务支持的浏览器和系统要求的信息，请参阅适用于 Office 的系统[要求](https://products.office.com/office-system-requirements)。
 
 ## <a name="supported-languages"></a>支持的语言
 

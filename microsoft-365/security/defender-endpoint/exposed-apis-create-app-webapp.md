@@ -38,10 +38,10 @@ ms.locfileid: "51200001"
 
 此页面介绍如何创建应用程序，以在没有用户的情况下以编程方式访问 Defender for Endpoint。 如果你需要代表用户以编程方式访问 Defender for Endpoint，请参阅使用 [用户上下文获取访问权限](exposed-apis-create-app-nativeapp.md)。 如果你不确定所需的访问权限，请参阅 [入门](apis-intro.md)。
 
-Microsoft Defender for Endpoint 通过一组编程 API 公开其大部分数据和操作。 这些 API 将帮助你自动执行基于 Defender for Endpoint 功能的工作流和创新。 API 访问需要 OAuth2.0 身份验证。 有关详细信息，请参阅 [OAuth 2.0 授权代码流](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-code)。
+Microsoft Defender for Endpoint 通过一组编程 API 公开其大部分数据和操作。 这些 API 将帮助你自动执行基于 Defender for Endpoint 功能的工作流和创新。 API 访问需要 OAuth2.0 身份验证。 有关详细信息，请参阅[OAuth 2.0 授权代码Flow。](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-code)
 
 通常，你将需要执行以下步骤来使用 API：
-- 创建 Azure Active Directory (Azure AD) 应用程序。
+- 创建 Azure AD Azure Active Directory (应用程序) 应用程序。
 - 使用此应用程序获取访问令牌。
 - 使用令牌访问 Defender for Endpoint API。
 
@@ -51,9 +51,9 @@ Microsoft Defender for Endpoint 通过一组编程 API 公开其大部分数据�
 
 1. 使用具有全局管理员角色 **的用户登录到** [Azure。](https://portal.azure.com)
 
-2. 导航到 **Azure Active Directory**  >  **应用注册**  >  **新注册**。 
+2. 导航到 **Azure Active Directory**  >  **应用注册**  >  **""新注册"。** 
 
-   ![Microsoft Azure 的图像和应用程序注册导航](images/atp-azure-new-app2.png)
+   ![应用程序注册Microsoft Azure导航的图像](images/atp-azure-new-app2.png)
 
 3. 在注册表单中，选择应用程序的名称，然后选择"注册 **"。**
 
@@ -141,10 +141,10 @@ $token = $authResponse.access_token
 
 ### <a name="use-c"></a>使用C#：
 
-以下代码已使用 NuGet Microsoft.IdentityModel.Clients.ActiveDirectory 3.19.8 进行测试。
+使用 Microsoft.IdentityModel.Clients.ActiveDirectory 3.19.8 NuGet测试了以下代码。
 
 1. 创建新的控制台应用程序。
-1. 安装 NuGet [Microsoft.IdentityModel.Clients.ActiveDirectory](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory/)。
+1. 安装NuGet [Microsoft.IdentityModel.Clients.ActiveDirectory](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory/)。
 1. 添加以下内容：
 
     ```
@@ -175,7 +175,7 @@ $token = $authResponse.access_token
 ### <a name="use-curl"></a>使用时
 
 > [!NOTE]
-> 以下过程假定计算机上已安装了 Windows 的一部分。
+> 以下过程假定计算机上已安装 Windows 的一部分。
 
 1. 打开命令提示符，CLIENT_ID Azure 应用程序 ID。
 1. 将CLIENT_SECRET Azure 应用程序密码。
@@ -222,5 +222,5 @@ curl -i -X POST -H "Content-Type:application/x-www-form-urlencoded" -d "grant_ty
 ```
 
 ## <a name="see-also"></a>另请参阅
-- [支持的 Microsoft Defender 终结点 API](exposed-apis-list.md)
+- [支持的 Microsoft Defender for Endpoint API](exposed-apis-list.md)
 - [代表用户访问 Microsoft Defender for Endpoint](exposed-apis-create-app-nativeapp.md)

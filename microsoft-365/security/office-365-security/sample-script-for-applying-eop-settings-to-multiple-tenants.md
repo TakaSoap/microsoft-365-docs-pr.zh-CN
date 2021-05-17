@@ -27,15 +27,15 @@ ms.locfileid: "51203841"
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **适用对象**
--  [独立 Exchange Online Protection](exchange-online-protection-overview.md)
+-  [Exchange Online Protection独立](exchange-online-protection-overview.md)
 
-以下示例脚本允许管理多个租户的 Microsoft Exchange Online Protection (EOP) 管理员 (公司) 使用 Exchange Online PowerShell 查看和/或将配置设置应用到其租户。
+以下示例脚本允许管理多个租户的 Microsoft Exchange Online Protection (EOP) 管理员 () 使用 Exchange Online PowerShell 查看和/或将配置设置应用到其租户。
 
 ## <a name="to-run-a-script-or-cmdlet-on-multiple-tenants"></a>在多个租户上运行脚本或 cmdlet
 
-1. 如果尚未安装，请安装 [Exchange Online V2 模块](/powershell/exchange/exchange-online-powershell-v2#install-and-maintain-the-exo-v2-module)。
+1. 如果尚未安装，请安装[Exchange Online V2 模块](/powershell/exchange/exchange-online-powershell-v2#install-and-maintain-the-exo-v2-module)。
 
-2. 使用电子表格应用程序 (例如 Excel) ，创建具有以下详细信息的 .csv 文件：
+2. 使用电子表格应用程序 (例如，Excel) ，创建.csv详细信息的电子表格文件：
 
    - UserName 列：用于连接帐户的帐户 (，例如 `admin@contoso.onmicrosoft.com`) 。
    - Cmdlet 列：例如，要运行或 (cmdlet `Get-AcceptedDomain` 或 `Get-AcceptedDomain | FT Name`) 。
@@ -48,9 +48,9 @@ ms.locfileid: "51203841"
    admin@fabrikam.onmicrosoft.com,Get-AcceptedDomain | FT Name
    ```
 
-3. 将 .csv 文件保存在易于查找的位置， (例如，c:\scripts\inputfile.csv) 。
+3. 将.csv文件保存在易于查找的位置，例如 (，c:\scripts\inputfile.csv) 。
 
-4. 将 [RunCmdletOnMultipleTenants.ps1](#runcmdletonmultipletenantsps1) 脚本复制到记事本中，然后将文件保存到易于查找的位置 (例如 c：\scripts) 。
+4. 将RunCmdletOnMultipleTenants.ps1[脚本](#runcmdletonmultipletenantsps1)复制到记事本，然后将文件保存到易于查找的位置 (例如 c：\scripts) 。
 
 5. 使用以下语法运行此脚本：
 
@@ -69,7 +69,7 @@ ms.locfileid: "51203841"
 ## <a name="runcmdletonmultipletenantsps1"></a>RunCmdletOnMultipleTenants.ps1
 
 > [!NOTE]
-> 您可能需要修改脚本 `Connect-IPPSSession` 中的行以匹配您的环境。 例如，Office 365 Germany 需要与脚本中的当前值不同的 _ConnectionUri_ 值。 有关详细信息，请参阅连接到[Exchange Online Powershell。](/powershell/exchange/connect-to-exchange-online-protection-powershell)
+> 您可能需要修改脚本 `Connect-IPPSSession` 中的行以匹配您的环境。 例如，Office 365德国需要与脚本中的当前值不同的 _ConnectionUri_ 值。 有关详细信息，请参阅 连接 Exchange Online [Powershell](/powershell/exchange/connect-to-exchange-online-protection-powershell)。
 
 ```powershell
 # This script runs Windows PowerShell cmdlets on multiple tenants.

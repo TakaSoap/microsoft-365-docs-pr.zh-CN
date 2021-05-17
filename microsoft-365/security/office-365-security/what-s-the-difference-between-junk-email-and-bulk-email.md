@@ -16,7 +16,7 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: 管理员可以了解 Exchange Online Protection (EOP) 中的垃圾邮件和 (灰色) 垃圾邮件 (差异) 。
+description: 管理员可以了解 EOP (中的垃圾邮件和) 垃圾邮件 (灰色) Exchange Online Protection (差异) 。
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: fc9c94946c3da2f9a14f45070a86c557a5c7dc85
@@ -35,7 +35,7 @@ ms.locfileid: "51203925"
 - [Microsoft Defender for Office 365 计划 1 和计划 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-在邮箱在 Exchange Online 或独立 Exchange Online Protection (EOP) 组织中没有 Exchange Online 邮箱的 Microsoft 365 组织中，客户有时会问："垃圾邮件和批量电子邮件之间有什么区别？" 本主题介绍区别，并介绍 EOP 中可用的控件。
+在Microsoft 365邮箱在 Exchange Online 或独立 Exchange Online Protection (EOP) 组织中没有 Exchange Online 邮箱的组织，客户有时会问："垃圾邮件和批量电子邮件之间有什么区别？" 本主题介绍区别，并介绍 EOP 中可用的控件。
 
 - **垃圾邮件是** 垃圾邮件，如果标识正确，垃圾邮件是未经请求 (不必要的) 。 默认情况下，EOP 根据源电子邮件服务器的信誉拒绝垃圾邮件。 如果邮件通过源 IP 检查，则发送到垃圾邮件筛选。 如果邮件被垃圾邮件筛选分类为垃圾邮件，则默认情况下 (邮件) 目标收件人并移动到其"垃圾邮件"文件夹。
 

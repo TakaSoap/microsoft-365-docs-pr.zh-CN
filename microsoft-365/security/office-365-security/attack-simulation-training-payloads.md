@@ -21,7 +21,7 @@ ms.locfileid: "51203210"
 ---
 # <a name="create-a-custom-payload-for-attack-simulation-training"></a>创建用于攻击模拟培训的自定义负载
 
-Microsoft 为各种社交工程技术提供了可靠的有效负载目录，以与攻击模拟培训配对。 但是，你可能希望创建更适用于你的组织的自定义有效负载。 本文介绍如何在 Microsoft Defender for Office 365 的攻击模拟培训中创建有效负载。
+Microsoft 为各种社交工程技术提供了可靠的有效负载目录，以与攻击模拟培训配对。 但是，你可能希望创建更适用于你的组织的自定义有效负载。 本文介绍如何在 Microsoft Defender for Office 365 攻击模拟培训中创建负载。
 
 可以通过在专用"有效负载"选项卡或模拟创建向导中单击"创建有效负载"[来创建有效负载](attack-simulation-training.md#selecting-a-payload)。 [  ](https://security.microsoft.com/attacksimulator?viewid=payload)
 
@@ -40,7 +40,7 @@ Microsoft 为各种社交工程技术提供了可靠的有效负载目录，以�
 
 格式文本编辑器可用于创建有效负载。 还可以导入预先创建的电子邮件。 创建电子邮件正文时，请利用动态标记将电子邮件个性化到目标。 单击 **"网络钓鱼"** 链接，将以前选择的网络钓鱼 URL 添加到邮件正文中。
 
-![在 Microsoft Defender for Office 365 的有效负载创建中突出显示的网络钓鱼链接和动态标记](../../media/attack-sim-preview-payload-email-body.png)
+![在 Microsoft Defender for Office 365 的有效负载创建中突出显示的网络钓鱼链接和Office 365](../../media/attack-sim-preview-payload-email-body.png)
 
 > [!TIP]
 > 为了节省时间，请切换为将电子邮件中所有链接 **替换为网络钓鱼链接 的选项**。

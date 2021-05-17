@@ -37,8 +37,8 @@ ms.locfileid: "51398201"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2MmQR]
 
-有关详细信息，请参阅在 [Microsoft 365 中设置多重身份验证](https://support.office.com/article/a32541df-079c-420d-9395-9d59354f7225)
+有关详细信息[，请参阅在](https://support.office.com/article/a32541df-079c-420d-9395-9d59354f7225)Microsoft 365
 
-## <a name="use-the-outlook-app-in-your-devices"></a>在设备上使用 Outlook 应用
+## <a name="use-the-outlook-app-in-your-devices"></a>在Outlook应用
 
-在你的管理员要求你使用 MFA 并且你已设置验证器应用作为第二种形式的身份验证后，我们建议你安装并仅使用 Outlook 应用来访问你的 Microsoft 365 电子邮件。 请参阅 [设置移动设备，](../business/set-up-mobile-devices.md) 了解如何在手机上安装 Office 应用（包括 Outlook）。
+在你的管理员要求你使用 MFA 并且你已设置验证器应用作为第二种形式的身份验证后，我们建议你安装并仅使用 Outlook 应用来访问你的 Microsoft 365 电子邮件。 请参阅[设置移动设备，](../business/set-up-mobile-devices.md)了解如何在手机上Office应用，Outlook移动设备。

@@ -38,25 +38,25 @@ ms.locfileid: "51203184"
 
 配置分析器分析以下类型的策略：
 
-- **Exchange Online Protection (EOP)** 策略：这包括具有 Exchange Online 邮箱的 Microsoft 365 组织和没有 Exchange Online 邮箱的独立 EOP 组织：
+- **Exchange Online Protection (EOP)** 策略：这包括Microsoft 365邮箱的 Exchange Online 组织，以及没有邮箱Exchange Online独立 EOP 组织：
 
   - [反垃圾邮件策略](configure-your-spam-filter-policies.md)。
   - [反恶意软件策略](configure-anti-malware-policies.md)。
   - [EOP 防钓鱼策略](set-up-anti-phishing-policies.md#spoof-settings)。
 
-- **Microsoft Defender for Office 365 策略**：这包括具有 Microsoft 365 E5 或适用于 Office 365 的 Defender 附加订阅的组织：
+- **Microsoft Defender for Office 365** 策略：这包括具有 Microsoft 365 E5 或 Defender for Office 365 加载项订阅的组织：
 
-  - Microsoft Defender for Office 365 中的防钓鱼策略，其中包括：
+  - Microsoft Defender for Office 365 中的防钓鱼策略，包括：
 
     - EOP [防钓鱼](set-up-anti-phishing-policies.md#spoof-settings) 策略中可用的相同欺骗设置。
     - [模拟设置](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)
     - [高级网络钓鱼阈值](set-up-anti-phishing-policies.md#advanced-phishing-thresholds-in-anti-phishing-policies-in-microsoft-defender-for-office-365)
 
-  - [安全链接策略](set-up-safe-links-policies.md)。
+  - [保险箱链接策略](set-up-safe-links-policies.md)。
 
-  - [安全附件策略](set-up-safe-attachments-policies.md)。
+  - [保险箱附件策略 。](set-up-safe-attachments-policies.md)
 
-用作 **基线****的标准** 和严格策略设置值在 EOP 和 [Microsoft Defender for Office 365](recommended-settings-for-eop-and-office365.md)安全推荐设置中进行了介绍。
+用作 **基线****的标准** 和严格策略设置值在 [EOP](recommended-settings-for-eop-and-office365.md)和 Microsoft Defender 的推荐设置中进行了Office 365安全。
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>开始前，有必要了解什么？
 
@@ -92,15 +92,15 @@ ms.locfileid: "51203184"
 
 默认情况下，选项卡在与标准保护配置文件的比较中打开。 可以通过单击查看严格建议切换到严格保护 **配置文件的比较**。 若要切换回，请选择 **"查看标准建议"。**
 
-![配置分析器中的设置和建议视图](../../media/configuration-analyzer-settings-and-recommendations-view.png)
+![设置分析器中的"配置和建议"视图](../../media/configuration-analyzer-settings-and-recommendations-view.png)
 
 默认情况下，" **策略组/** 设置名称"列包含不同类型的安全策略的折叠视图以及需要改进的设置 (（如果有) ）。 策略类型为：
 
 - **反垃圾邮件**
 - **防钓鱼**
 - **反恶意软件**
-- **如果订阅包含** Microsoft Defender for Office 365 (，ATP 安全附件) 
-- **如果你的订阅** 包含 Microsoft Defender for Office 365 (，ATP 安全链接) 
+- **如果你的保险箱 Microsoft Defender** for (，ATP Office 365) 
+- **如果你保险箱 Microsoft** Defender for (，ATP Office 365) 
 
 在默认视图中，所有内容都折叠。 在每个策略旁边，有一个策略 (的比较结果摘要，您可以修改) 以及标准或严格保护配置文件 (其中不能修改) 的相应策略中的设置。 你将看到要进行比较的保护配置文件的以下信息：
 
@@ -124,7 +124,7 @@ For favorable comparisons， you'll see the text： **All settings follow** \<**
 
 - **上次修改** 时间：上次修改策略的日期。
 
-- **建议**：Standard 或 Strict 保护配置文件中的设置的值。 若要更改策略中的设置值以匹配保护配置文件中的推荐值，请单击"采用 **"。** 如果更改成功，你将看到消息："**建议已成功采用"。** 单击 **"** 刷新"查看建议数量减少以及从结果删除特定设置/策略行。
+- **推荐**：标准或严格保护配置文件中的设置的值。 若要更改策略中的设置值以匹配保护配置文件中的推荐值，请单击"采用 **"。** 如果更改成功，你将看到以下消息 **：推荐成功采用**。 单击 **"** 刷新"查看建议数量减少以及从结果删除特定设置/策略行。
 
 ### <a name="configuration-drift-analysis-and-history-tab-in-the-configuration-analyzer"></a>配置分析器中的"配置偏移分析和历史记录"选项卡
 
@@ -141,6 +141,6 @@ For favorable comparisons， you'll see the text： **All settings follow** \<**
 - **开始时间和****结束 (** 日期) 
 - **标准保护** 或 **严格保护**
 
-若要将结果导出到 .csv 文件，请单击"导出 **"。**
+若要将结果导出到.csv文件，请单击"导出 **"。**
 
 ![配置分析器中的配置偏移分析和历史记录视图](../../media/configuration-analyzer-configuration-drift-analysis-view.png)

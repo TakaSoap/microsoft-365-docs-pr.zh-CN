@@ -35,11 +35,11 @@ ms.locfileid: "51203231"
 
 ![安全与合规中心内"邮件流"仪表板中的"出站和入站&小组件](../../media/mfi-outbound-and-inbound-mail-flow-report-widget.png)
 
-小部件中的信息与 Microsoft 365 中的连接器和 TLS 邮件保护相关。 有关详细信息，请参阅以下主题：
+小部件中的信息与连接器和 TLS 邮件保护Microsoft 365。 有关详细信息，请参阅以下主题：
 
 - [使用连接器配置邮件流](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow)
 - [Exchange Online 如何使用 TLS 保护电子邮件连接](../../compliance/exchange-online-uses-tls-to-secure-email-connections.md)
-- [有关 Microsoft 365 中加密的技术参考详细信息](../../compliance/technical-reference-details-about-encryption.md)
+- [有关加密技术技术Microsoft 365](../../compliance/technical-reference-details-about-encryption.md)
 
 ## <a name="message-protected-in-transit-by-tls"></a>在传输过程中受 TLS (保护) 
 
@@ -47,11 +47,11 @@ ms.locfileid: "51203231"
 
 ![在传输过程中 (由 TLS) 显示在单击"出站和入站电子邮件"小部件上的"查看详细信息"后出现的飞出](../../media/mfi-outbound-and-inbound-mail-flow-report-details.png)
 
-目前，TLS 1.2 是 Microsoft 365 提供的最安全的 TLS 版本。 通常，需要知道用于合规性审核的 TLS 加密。 您可能与大多数源和目标电子邮件服务器没有直接关系 (您不拥有它们，Microsoft) 也没有关系，因此您没有很多选项可以改进这些服务器使用的 TLS 加密。
+目前，TLS 1.2 是由 TLS 提供的最安全Microsoft 365。 通常，需要知道用于合规性审核的 TLS 加密。 您可能与大多数源和目标电子邮件服务器没有直接关系 (您不拥有它们，Microsoft) 也没有关系，因此您没有很多选项可以改进这些服务器使用的 TLS 加密。
 
-但是，您可以使用 [连接器来确保](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow) 电子邮件服务器和 Microsoft 365 之间发送的邮件的最佳可用 TLS 保护。 Microsoft 365 和属于你的合作伙伴的你自己的电子邮件服务器之间的邮件流通常比常规邮件重要和敏感，因此你需要为这些邮件应用额外的安全性和敏感性。
+但是，您可以使用[连接器来确保](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow)电子邮件服务器和电子邮件服务器之间发送的邮件的最佳可用 TLS Microsoft 365。 邮件流Microsoft 365属于你的合作伙伴的电子邮件服务器或服务器之间的邮件流通常比常规邮件重要和敏感，因此，你需要为这些邮件应用额外的安全性和安全性。
 
-您可以升级或修复自己的电子邮件服务器，以改进所使用的 TLS 加密，或联系合作伙伴以执行相同的操作。 连接器 **报告** 显示使用 Microsoft 365 连接器的邮件的邮件流卷和 TLS 加密。
+您可以升级或修复自己的电子邮件服务器，以改进所使用的 TLS 加密，或联系合作伙伴以执行相同的操作。 连接器 **报告** 显示使用您的连接器的邮件的邮件流量和 TLS Microsoft 365加密。
 
 You can click the **Connector report** link to go to the [Connector report](view-mail-flow-reports.md#connector-report). 如果检测到关联条件，则 **"** 连接器报告"页上可能会提供以下见解：
 

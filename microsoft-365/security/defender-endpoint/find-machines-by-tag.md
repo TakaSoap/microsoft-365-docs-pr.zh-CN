@@ -68,14 +68,14 @@ GET /api/machines/findbytag?tag={tag}&useStartsWithFilter={true/false}
 
 名称 | 类型 | 说明
 :---|:---|:---
-Authorization | 字符串 | Bearer {token}。 **必需**。
+Authorization | String | Bearer {token}。 **必需**。
 
 ## <a name="request-uri-parameters"></a>请求 URI 参数
 
 名称 | 类型 | 说明
 :---|:---|:---
-tag | 字符串 | 标记名称。 **必需**。
-useStartsWithFilter | 布尔值 | 设置为 true 时，搜索将查找标记名称以查询中的给定标记开头的所有设备。 默认值为 false。 **可选。**
+tag | String | 标记名称。 **必需**。
+useStartsWithFilter | Boolean | 设置为 true 时，搜索将查找标记名称以查询中的给定标记开头的所有设备。 默认值为 false。 **可选。**
 
 ## <a name="request-body"></a>请求正文
 Empty

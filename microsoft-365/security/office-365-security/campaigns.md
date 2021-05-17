@@ -16,7 +16,7 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
-description: 了解 Microsoft Defender for Office 365 中的市场活动视图。
+description: 了解 Microsoft Defender for Office 365 中的市场活动Office 365。
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: e3c84b9e6253dd813ff930314fc2c1d0a947e94e
@@ -33,7 +33,7 @@ ms.locfileid: "51203189"
 **适用对象**
 - [适用于 Office 365 计划 2 的 Microsoft Defender](defender-for-office-365.md)
 
-市场活动视图是 Microsoft Defender for Office 365 计划 2 中的一项功能 (例如 Microsoft 365 E5 或具有 Defender for Office 365 计划 2 附加设备) 。 安全与合规&中的活动视图标识和分类服务中的网络钓鱼攻击。 Campaign Views 可以帮助你：
+市场活动视图是 Microsoft Defender for Office 365 计划 2 中的一项功能 (例如 Microsoft 365 E5 或具有 Defender for Office 365 计划 2 加载项的) 。 安全与合规&中的活动视图标识和分类服务中的网络钓鱼攻击。 Campaign Views 可以帮助你：
 
 - 高效调查和应对钓鱼攻击。
 - 更好地了解攻击范围。
@@ -92,7 +92,7 @@ Campaign Views is available in the [Security & Compliance Center](https://protec
   - **网络钓鱼**：如果可用，则此市场活动所钓鱼的品牌。 例如 `Microsoft` `365` `Unknown` ，、、、、 `Outlook` 或 `DocuSign` 。
   - **恶意软件**：例如 或 `HTML/PHISH` `HTML/<MalwareFamilyName>` 。
 
-  如果可用，此市场活动所钓鱼的品牌。 当检测由 Defender for Office 365 技术驱动时，前缀 **ATP-** 将添加到子类型值。
+  如果可用，此市场活动所钓鱼的品牌。 当 Defender 针对技术驱动检测Office 365，前缀 **ATP-** 将添加到子类型值。
 
 - **收件人**：此活动所面向的用户数。
 
@@ -104,7 +104,7 @@ Campaign Views is available in the [Security & Compliance Center](https://protec
 
   请注意， **点击** 率不用于恶意软件市场活动。
 
-- **已访问**：实际上有多少用户进入有效负载网站。 如果存在 **Clicked 值** ，但安全链接阻止了对网站的访问，则此值将为 0。
+- **已访问**：实际上有多少用户进入有效负载网站。 如果存在 **Clicked 值**，保险箱链接阻止访问网站，则此值将为 0。
 
 " **宣传活动源** "选项卡显示世界地图中的邮件源。
 
@@ -144,7 +144,7 @@ Campaign Views is available in the [Security & Compliance Center](https://protec
   - **Internet 邮件 ID：** 在邮件 **头的 Message-ID** 头字段中可用。 示例值是 `<08f1e0f6806a47b4ac103961109ae6ef@server.domain>` (尖括号) 。
   - **网络邮件 ID：** 在邮件头的 **X-MS-Exchange-Organization-Network-Message-Id** 头字段中可用的 GUID 值。
   - **发件人 IP**
-  - **附件 SHA256：** 若要在 Windows 中查找文件的 SHA256 哈希值，在命令提示符中运行以下命令 `certutil.exe -hashfile "<Path>\<Filename>" SHA256` ：。
+  - **附件 SHA256：** 若要在命令提示符中查找文件的 SHA256 哈希Windows，在命令提示符中运行以下命令： `certutil.exe -hashfile "<Path>\<Filename>" SHA256` 。
   - **群集 ID**
   - **警报策略 ID**
   - **ZAP URL 信号**
@@ -168,7 +168,7 @@ Campaign Views is available in the [Security & Compliance Center](https://protec
 
 若要导出图表或市场活动列表，请单击"导出 **"，然后选择**"**导出图表** 数据"或"**导出市场活动列表"。**
 
-如果你有 Microsoft Defender for Endpoint 订阅，可以单击 **"MDE** 设置"，通过 Microsoft Defender for Endpoint 连接或断开市场活动信息。 有关详细信息，请参阅将 [适用于 Office 365](integrate-office-365-ti-with-mde.md)的 Microsoft Defender 与 Microsoft Defender for Endpoint 集成。
+如果你有 Microsoft Defender for Endpoint 订阅，可以单击 **MDE 设置** Microsoft Defender for Endpoint 连接或断开活动信息。 有关详细信息，请参阅将[Microsoft Defender for Office 365与 Microsoft Defender for Endpoint 集成](integrate-office-365-ti-with-mde.md)。
 
 ## <a name="campaign-details"></a>活动详细信息
 
@@ -198,10 +198,10 @@ Campaign Views is available in the [Security & Compliance Center](https://protec
 
 ### <a name="campaign-flow"></a>活动流
 
-在活动详细信息视图的中间，有关市场活动的重要详细信息在水平流程图的"流"部分 (称为 _Sankey_ 图表) 。 这些详细信息将帮助你了解活动的元素和组织中的潜在影响。
+在活动详细信息视图的中间，有关市场活动的重要详细信息将在水平流程图的 **Flow** 部分 (称为 _Sankey_ 图表) 。 这些详细信息将帮助你了解活动的元素和组织中的潜在影响。
 
 > [!TIP]
-> "流程"图中显示的信息由日程表中带阴影的日期范围控制，如上一节中所述。
+> 图表中显示的信息由日程表中的Flow日期范围控制，如上一节中所述。
 
 ![不包含用户 URL 单击次数的活动详细信息](../../media/campaign-details-no-recipient-actions.png)
 
@@ -224,9 +224,9 @@ Campaign Views is available in the [Security & Compliance Center](https://protec
   |**已发布**|`SFV:SKQ`|邮件由于从隔离区中释放而跳过了垃圾邮件筛选。|
   |**租户允许**<sup>\*</sup>|`SFV:SKA`|邮件由于反垃圾邮件策略中的设置而跳过了垃圾邮件筛选。 例如，发件人在允许的发件人列表或允许的域列表中。|
   |**租户阻止**<sup>\*\*</sup>|`SFV:SKA`|邮件被垃圾邮件筛选阻止，因为反垃圾邮件策略中的设置。 例如，发件人在允许的发件人列表或允许的域列表中。|
-  |**用户允许**<sup>\*</sup>|`SFV:SFE`|邮件跳过了垃圾邮件筛选，因为发件人位于用户的安全发件人列表中。|
+  |**用户允许**<sup>\*</sup>|`SFV:SFE`|邮件跳过了垃圾邮件筛选，因为发件人位于用户的"发件人保险箱列表中。|
   |**用户阻止**<sup>\*\*</sup>|`SFV:BLK`|邮件被垃圾邮件筛选阻止，因为发件人位于用户的"阻止的发件人"列表中。|
-  |**ZAP**|无|[零时差自动清除 (ZAP) ](zero-hour-auto-purge.md) 已传递的邮件移动到垃圾邮件文件夹或隔离邮箱。 您可以在反垃圾邮件策略中配置操作。|
+  |**ZAP**|不适用|[零时差自动清除 (ZAP) ](zero-hour-auto-purge.md) 已传递的邮件移动到垃圾邮件文件夹或隔离邮箱。 您可以在反垃圾邮件策略中配置操作。|
   |
 
   <sup>\*</sup> 查看反垃圾邮件策略，因为允许的邮件可能已被服务阻止。
@@ -256,9 +256,9 @@ Campaign Views is available in the [Security & Compliance Center](https://protec
 如果用户单击网络钓鱼邮件的有效负载 URL，操作将显示在活动详细信息视图中图表的 **URL** 单击区域中。
 
 - **允许**
-- **BlockPage：** 收件人单击了有效负载 URL，但他们对恶意网站的访问被贵组织中安全 [链接](safe-links.md) 策略阻止。
-- **BlockPageOverride：** 收件人单击了邮件中的有效负载 URL，安全链接尝试将其停止，但允许它们覆盖此阻止。 检查安全 [链接策略](set-up-safe-links-policies.md) ，了解为什么允许用户替代安全链接裁定并继续访问恶意网站。
-- **PendingDetonationPage：Microsoft** Defender for Office 365 中的安全附件正在打开和调查虚拟计算机环境中的有效负载 URL。
+- **BlockPage：** 收件人单击了有效负载 URL，但他们对恶意网站的访问被保险箱 [链接](safe-links.md)策略阻止。
+- **BlockPageOverride：** 收件人单击了邮件中的有效负载 URL，保险箱链接试图阻止它们，但允许它们覆盖此块。 检查你的[保险箱](set-up-safe-links-policies.md)链接策略，了解为什么允许用户替代"链接保险箱裁定并继续访问恶意网站。
+- **PendingDetonationPage**： 保险箱 Attachments in Microsoft Defender for Office 365 is in the process of opening and investigating the payload URL in a virtual computer environment.
 - **PendingDetonationPageOverride：** 允许收件人替代有效负载触发过程并打开 URL，而无需等待结果。
 
 ### <a name="tabs"></a>选项卡

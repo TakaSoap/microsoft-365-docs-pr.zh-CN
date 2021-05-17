@@ -30,17 +30,17 @@ ms.locfileid: "51222069"
 ---
 # <a name="turn-off-strong-password-requirements-for-users"></a>为用户关闭强密码要求
 
-本文介绍如何为用户关闭强密码要求。 Microsoft 365 商业版组织中默认启用强密码要求。 您的组织可能要求禁用强密码。 请按照以下步骤关闭强密码要求。 您必须使用 PowerShell 完成这些步骤。
+本文介绍如何为用户关闭强密码要求。 默认情况下，在适用于企业组织的 Microsoft 365启用强密码要求。 您的组织可能要求禁用强密码。 请按照以下步骤关闭强密码要求。 您必须使用 PowerShell 完成这些步骤。
 
-## <a name="before-you-begin"></a>准备工作
+## <a name="before-you-begin"></a>开始之前
 
 本文适用于管理企业、学校或非营利组织的密码策略的用户。 若要完成这些步骤，你需要使用 Microsoft 365 管理员帐户登录。 [什么是管理员帐户？](https://docs.microsoft.com/microsoft-365/business-video/admin-center-overview) 您必须是全局 [管理员或密码管理员](about-admin-roles.md) 才能执行这些步骤。
 
-还必须使用 PowerShell 连接到 Microsoft 365。
+还必须使用 PowerShell Microsoft 365客户端。
 
 ## <a name="set-strong-passwords"></a>设置强密码
 
-1. [使用 PowerShell 连接到 Microsoft 365。](/office365/enterprise/powershell/connect-to-office-365-powershell#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)
+1. [连接 PowerShell Microsoft 365 。](/office365/enterprise/powershell/connect-to-office-365-powershell#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)
 
 2. 使用 PowerShell，可以使用以下命令关闭所有用户的强密码要求：
 
@@ -58,7 +58,7 @@ ms.locfileid: "51222069"
 
 ## <a name="related-content"></a>相关内容
 
-[如何使用 PowerShell 连接到 Microsoft 365](/office365/enterprise/powershell/connect-to-office-365-powershell#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)
+[如何使用 PowerShell Microsoft 365客户端](/office365/enterprise/powershell/connect-to-office-365-powershell#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)
 
 [有关 PowerShell MsolUser 命令详细信息](/powershell/module/msonline/set-msoluser?view=azureadps-1.0)
 

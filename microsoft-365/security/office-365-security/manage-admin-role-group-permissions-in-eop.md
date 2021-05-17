@@ -10,7 +10,7 @@ audience: ITPro
 ms.topic: how-to
 localization_priority: Normal
 ms.assetid: 125834f4-1024-4325-ad5a-d2573cfb005e
-description: 管理员可以了解如何在 Exchange Online Protection 中的 Exchange 管理中心 (EAC) 权限。
+description: 管理员可以了解如何在 Exchange Online Protection 中的 EAC Exchange管理中心 () 或删除Exchange Online Protection。
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: 5e712c47d49508934ec7dd2438beff00eb6e1a20
@@ -25,7 +25,7 @@ ms.locfileid: "51203782"
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **适用对象**
--  [独立 Exchange Online Protection](exchange-online-protection-overview.md)
+-  [Exchange Online Protection独立](exchange-online-protection-overview.md)
 
 在没有 Exchange Online 邮箱的独立 Exchange Online Protection (EOP) 组织中，可以使用 Exchange 管理中心 (EAC) 将用户添加到角色组。 向角色组添加用户会为用户提供执行特定管理任务的权限。 还可以从角色组中删除用户。
 
@@ -33,13 +33,13 @@ ms.locfileid: "51203782"
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>开始前，有必要了解什么？
 
-- 若要打开 Exchange 管理中心 (EAC) ，请参阅独立 [EOP](exchange-admin-center-in-exchange-online-protection-eop.md)中的 Exchange 管理中心。
+- 若要在 EAC Exchange管理 (中心) ，请参阅Exchange [EOP 中的管理中心](exchange-admin-center-in-exchange-online-protection-eop.md)。
 
-- 若要打开独立 EOP PowerShell，请参阅[连接到 Exchange Online Protection PowerShell。](/powershell/exchange/connect-to-exchange-online-protection-powershell)
+- 若要打开独立 EOP PowerShell，请参阅 连接[to Exchange Online Protection PowerShell。](/powershell/exchange/connect-to-exchange-online-protection-powershell)
 
-- 您需在 Exchange Online Protection 中获得权限，然后才能执行本文中的过程。 具体来说，您需要角色 **管理** 角色，该角色默认分配给 **组织管理** 角色组。 有关详细信息，请参阅 [Permissions in standalone EOP](feature-permissions-in-eop.md) 和 [Use the EAC modify the list of members in role groups](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups)。
+- 您需在 Exchange Online Protection权限，然后才能执行本文中的过程。 具体来说，您需要角色 **管理** 角色，该角色默认分配给 **组织管理** 角色组。 有关详细信息，请参阅 [Permissions in standalone EOP](feature-permissions-in-eop.md) 和 [Use the EAC modify the list of members in role groups](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups)。
 
-- 有关可能适用于本文中的过程的键盘快捷方式的信息，请参阅[Keyboard shortcuts for the Exchange admin center in Exchange Online。](/Exchange/accessibility/keyboard-shortcuts-in-admin-center)
+- 有关可能适用于本文中的过程的键盘快捷方式的信息，请参阅 Exchange Online 中适用于 Exchange[管理中心的键盘快捷方式](/Exchange/accessibility/keyboard-shortcuts-in-admin-center)。
 
 > [!TIP]
 > 是否有任何疑问？ 请在 [Exchange Online Protection](https://social.technet.microsoft.com/Forums/forefront/home?forum=FOPE) 论坛中寻求帮助。
@@ -98,7 +98,7 @@ ms.locfileid: "51203782"
 
    - 选择要删除的用户，然后单击"删除 **""删除** ![ "图标 ](../../media/ITPro-EAC-RemoveIcon.gif) 。
 
-3. 完成后，单击“保存”。
+3. 完成后，单击“**保存**”。
 
    > [!NOTE]
    > 在角色组中添加或删除成员后，用户可能必须先注销，然后重新登录才会看到其管理权限的更改。
@@ -153,9 +153,9 @@ Get-RoleGroup -Filter "Members -eq 'CN=Julia,OU=contoso.onmicrosoft.com,OU=Micro
   New-RoleGroup -Name "Unique Name" -Description "Descriptive text" -Roles <"Role1","Role2"...>
   ```
 
-  - _Roles_ 参数通过以下语法指定要分配给角色组的管理角色 `"Role1","Role1",..."RoleN"` 。 可以使用 **Get-ManagementRole** cmdlet 查看可用角色。
+  - _Roles_ 参数通过以下语法指定要分配给角色组的管理角色 `"Role1","Role1",..."RoleN"` 。 你可以使用 **Get-ManagementRole** cmdlet 来查看可用角色。
 
-  - Members 参数通过以下语法指定角色组的成员： `"Member1","Member2",..."MemberN"` 。 可以指定用户、启用邮件的通用安全组 (USG) 或其他角色 (安全) 。
+  - Members 参数通过以下语法指定角色组的成员： `"Member1","Member2",..."MemberN"` 。 你可以指定用户、已启用邮件的通用安全组 (USG) 或其他角色组（安全主体）。
 
   本示例将创建一个名为"Limited Recipient Management"的新角色组，并具有以下设置：
 
@@ -181,7 +181,7 @@ Get-RoleGroup -Filter "Members -eq 'CN=Julia,OU=contoso.onmicrosoft.com,OU=Micro
      New-RoleGroup -Name "<Unique Name>" -Roles $RoleGroup.Roles [-Members <Members>]
      ```
 
-     Members 参数通过以下语法指定角色组的成员： `"Member1","Member2",..."MemberN"` 。 可以指定用户、启用邮件的通用安全组 (USG) 或其他角色 (安全) 。
+     Members 参数通过以下语法指定角色组的成员： `"Member1","Member2",..."MemberN"` 。 你可以指定用户、已启用邮件的通用安全组 (USG) 或其他角色组（安全主体）。
 
      本示例将组织管理角色组复制到名为"Limited Organization Management"的新角色组。 角色组的成员是 Isab一、Carter 和 Lukas。
 
@@ -246,7 +246,7 @@ Remove-RoleGroup -Identity "Training Administrators"
 
 - 在 EAC 中，转到"**权限**""管理员角色"，验证角色组是否 (\> 列出) 。 选择角色组，并验证"详细信息"窗格中的设置或单击 **"编辑编辑** ![ "图标 ](../../media/ITPro-EAC-EditIcon.png) 以验证设置。
 
-- 在 Exchange Online PowerShell 中，将 替换为角色组的名称，然后运行以下命令来验证角色组是否存在 (或不存在) 验证 \<Role Group Name\> 设置：
+- 在 Exchange Online PowerShell 中，将 替换为角色组的名称，并运行以下命令来验证角色组是否存在 (或不存在) 验证 \<Role Group Name\> 设置：
 
     ```PowerShell
     Get-RoleGroup -Identity "<Role Group Name>" | Format-List

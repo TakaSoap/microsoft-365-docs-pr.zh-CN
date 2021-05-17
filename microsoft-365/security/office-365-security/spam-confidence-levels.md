@@ -16,7 +16,7 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: 管理员可以了解应用于 Exchange Online Protection (EOP) 中的邮件的垃圾邮件可信度 (SCL) 。
+description: 管理员可以了解应用于 EOP (中的) 邮件的垃圾邮件可信度Exchange Online Protection (SCL) 。
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: 951bbcb5fcbcc7b7916ee1c34c4ab489d54b6667
@@ -35,7 +35,7 @@ ms.locfileid: "51203204"
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
-在具有 Exchange Online 邮箱或独立 Exchange Online Protection (EOP) 组织中没有 Exchange Online 邮箱的 Microsoft 365 组织中，入站邮件通过 EOP 中的垃圾邮件筛选，并分配有垃圾邮件得分。 该分数映射到添加到 X 标头中的 (SCL) 单个垃圾邮件可信度。 SCL 越高，邮件就越有可能是垃圾邮件。 EOP 根据 SCL 对邮件采取操作。
+在Microsoft 365邮箱位于 Exchange Online 或独立 Exchange Online Protection (EOP) 组织中，没有 Exchange Online 邮箱的入站邮件会通过 EOP 中的垃圾邮件筛选，并为其分配垃圾邮件得分。 该分数映射到添加到 X 标头中的 (SCL) 单个垃圾邮件可信度。 SCL 越高，邮件就越有可能是垃圾邮件。 EOP 根据 SCL 对邮件采取操作。
 
 下表介绍了 SCL 的含义以及对邮件执行的默认操作。 有关可以基于垃圾邮件筛选裁定对邮件采取的操作详细信息，请参阅在 [EOP](configure-your-spam-filter-policies.md)中配置反垃圾邮件策略。
 
@@ -57,4 +57,4 @@ ms.locfileid: "51203204"
 
 ****
 
-![LinkedIn Learning New ](../../media/eac8a413-9498-4220-8544-1e37d1aaea13.png) **to Microsoft 365 的简短图标** 发现 LinkedIn Learning 为 **Microsoft 365** 管理员和 IT 专业人员提供的免费视频课程。
+![LinkedIn Learning New ](../../media/eac8a413-9498-4220-8544-1e37d1aaea13.png) **to Microsoft 365？** 发现 LinkedIn Learning Microsoft 365为管理员 **和 IT** 专业人员提供的免费视频课程。

@@ -1,5 +1,5 @@
 ---
-title: 使用 Microsoft Defender for Office 365 模拟网络钓鱼攻击
+title: 使用 Microsoft Defender for Office 365
 ms.author: chrisda
 author: chrisda
 manager: dansimp
@@ -10,7 +10,7 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
-description: 管理员可以了解如何使用适用于 Office 365 的 Microsoft Defender 中的攻击模拟培训模拟网络钓鱼攻击并培训其用户防钓鱼。
+description: 管理员可以了解如何使用 Microsoft Defender for Office 365 中的攻击模拟培训其用户模拟网络钓鱼Office 365。
 ms.technology: mdo
 ms.openlocfilehash: 27279f927a15ea94ae84112ffdc23d88ea42d2ff
 ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
@@ -21,15 +21,15 @@ ms.locfileid: "51203762"
 ---
 # <a name="simulate-a-phishing-attack"></a>模拟网络钓鱼攻击
 
-使用适用于 Office 365 的 Microsoft Defender 攻击模拟培训，可以在组织上运行恶意网络攻击模拟，以测试安全策略和做法，并培训员工提高认知度并减少他们对攻击的敏感性。 本文将指导你完成使用攻击模拟培训创建模拟网络钓鱼攻击。
+Microsoft Defender for Office 365 中的攻击模拟培训允许你在组织中运行恶意网络攻击模拟，以测试你的安全策略和做法，并培训你的员工提高认知度并减少他们对攻击的敏感性。 本文将指导你完成使用攻击模拟培训创建模拟网络钓鱼攻击。
 
 有关攻击模拟培训的入门信息，请参阅使用 [攻击模拟培训入门](attack-simulation-training-get-started.md)。
 
-若要启动模拟钓鱼攻击，请打开 Microsoft [365](https://security.microsoft.com/)安全中心，转到电子邮件 **& 协作** 攻击模拟培训 ，然后切换到 \> [**模拟**](https://security.microsoft.com/attacksimulator?viewid=simulations)选项卡。
+若要启动模拟网络钓鱼攻击，请打开 Microsoft 365 [](https://security.microsoft.com/)安全中心，转到"电子邮件&**协作** \> **攻击模拟培训**"，然后切换到 [**"模拟"**](https://security.microsoft.com/attacksimulator?viewid=simulations)选项卡。
 
 在 **"模拟"** 下，选择 **"+ 启动模拟"。**
 
-![在 Microsoft 365 安全中心启动模拟按钮](../../media/attack-sim-preview-launch.png)
+![在安全中心启动Microsoft 365按钮](../../media/attack-sim-preview-launch.png)
 
 > [!NOTE]
 > 在模拟创建期间的任何时间点，你都可以保存并关闭，以在以后继续配置模拟。
@@ -47,7 +47,7 @@ ms.locfileid: "51203762"
 > [!TIP]
 > 单击 **每种技术** 描述中的"查看详细信息"将显示该技术的进一步信息和模拟步骤。
 >
-> ![Microsoft 365 安全中心攻击模拟培训中凭据收集的模拟步骤](../../media/attack-sim-preview-sim-steps.png)
+> ![安全中心内攻击模拟培训中凭据收集Microsoft 365步骤](../../media/attack-sim-preview-sim-steps.png)
 
 选择该技术并单击"下一步"后，为模拟指定名称和说明（可选）。
 
@@ -58,12 +58,12 @@ ms.locfileid: "51203762"
 有效负载具有多个数据点，可帮助你选择：
 
 - **单击率** 计算单击此有效负载的人数。
-- **根据 Microsoft** Defender for Office 365 客户有效负载的历史数据，预测受此负载危害的百分比。
+- **预测的泄露率** 根据 Microsoft Defender 中负载的历史数据来预测受此负载危害的百分比，Office 365客户。
 - **模拟启动** 计算此有效负载在其他模拟中使用的次数。
 - **复杂度**（通过 **筛选器提供**）根据有效负载中的指示器数量计算，这些指示器可提示攻击中的目标。 指示器越多，复杂性越低。
 - **Source**（通过 **筛选器提供**）指示有效负载是在租户上创建的，还是 Microsoft 预先存在的有效负载目录的一部分， (全局) 。
 
-![Microsoft 365 安全中心的攻击模拟培训中选定的有效负载](../../media/attack-sim-preview-select-payload.png)
+![安全中心内的攻击模拟Microsoft 365负载](../../media/attack-sim-preview-select-payload.png)
 
 从列表中选择一个有效负载，以查看有效负载的预览，并提供有关它的其他信息。
 
@@ -76,7 +76,7 @@ ms.locfileid: "51203762"
 当你选择仅 **包含特定用户和组时** ，你可以：
 
 - **添加** 用户 ，这允许你利用租户的搜索，以及高级搜索和筛选功能，如面向过去 3 个月内未通过模拟定位的用户。
-  ![Microsoft 365 安全中心攻击模拟培训中的用户筛选](../../media/attack-sim-preview-user-targeting.png)
+  ![安全中心上攻击模拟培训中的Microsoft 365筛选](../../media/attack-sim-preview-user-targeting.png)
 - **从 CSV 导入** 允许你导入此模拟的预定义用户集。
 
 ## <a name="assigning-training"></a>分配培训
@@ -90,7 +90,7 @@ ms.locfileid: "51203762"
 > [!NOTE]
 > 如果你选择自己选择课程和模块，你仍然可以看到推荐的内容以及所有可用的课程和模块。
 >
-> ![在 Microsoft 365 安全中心的攻击模拟培训中添加建议的培训](../../media/attack-sim-preview-add-training.png)
+> ![在安全中心内的攻击模拟Microsoft 365建议培训](../../media/attack-sim-preview-add-training.png)
 
 在以下步骤中，如果选择自己选择培训，将需要添加培训，并自定义培训登陆页面。 你将能够预览培训登陆页面，并更改其标头和正文。
 

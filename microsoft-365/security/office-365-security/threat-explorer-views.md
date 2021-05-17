@@ -35,12 +35,12 @@ ms.locfileid: "51203814"
 
 ![威胁资源管理器](../../media/ThreatExplorerFirstOpened.png)
 
-[威胁](threat-explorer.md) (和实时检测报告) 是一款功能强大的近实时工具，可帮助安全运营团队在安全与合规中心内调查和&威胁。 Explorer (和实时检测报告) 显示有关 Office 365 电子邮件和文件中可疑恶意软件和网络钓鱼的信息，以及组织面临的其他安全威胁和风险。
+[威胁](threat-explorer.md) (和实时检测报告) 是一款功能强大的近实时工具，可帮助安全运营团队在安全与合规中心内调查和&威胁。 Explorer (和实时检测报告) 显示有关 Office 365 中电子邮件和文件中可疑恶意软件和网络钓鱼的信息，以及组织面临的其他安全威胁和风险。
 
-- 如果你有 [Microsoft Defender for Office 365](defender-for-office-365.md) 计划 2，则你有资源管理器。
-- 如果你有 Microsoft Defender for Office 365 计划 1，则你有实时检测。
+- 如果你有[Microsoft Defender for Office 365](defender-for-office-365.md)计划 2，则你有资源管理器。
+- 如果你有 Microsoft Defender for Office 365计划 1，则你有实时检测。
 
-首次打开浏览器 (或实时检测报告) ，默认视图会显示过去 7 天内的电子邮件恶意软件检测。 此报告还可以显示 Microsoft Defender for Office 365 检测，如安全链接[](safe-links.md)检测到的恶意 URL 和安全附件检测到的恶意[文件](safe-attachments.md)。 此报告可修改为显示过去 30 天的数据 (Microsoft Defender for Office 365 P2 付费订阅) 。 试用版订阅仅包含过去七天的数据。
+首次打开浏览器 (或实时检测报告) ，默认视图会显示过去 7 天内的电子邮件恶意软件检测。 此报告还可以显示 Microsoft Defender 进行Office 365检测，例如由 保险箱[链接](safe-links.md)检测到的恶意 URL，以及由"附件"保险箱[恶意文件](safe-attachments.md)。 此报告可修改为显示过去 30 天内使用 Microsoft Defender (P2 付费订阅Office 365的数据) 。 试用版订阅仅包含过去七天的数据。
 
 ****
 
@@ -48,7 +48,7 @@ ms.locfileid: "51203814"
 |---|---|---|
 |Microsoft Defender for Office 365 P1 试用版|实时检测|7 |
 |Microsoft Defender for Office 365 P1 付费|实时检测|30|
-|适用于 Office 365 P1 的 Microsoft Defender 付费测试 Defender for Office 365 P2 试用版|威胁资源管理器|7 |
+|Microsoft Defender for Office 365 P1 付费测试 Defender Office 365 P2 试用版|威胁资源管理器|7 |
 |Microsoft Defender for Office 365 P2 试用版|威胁资源管理器|7 |
 |Microsoft Defender for Office 365 P2 付费|威胁资源管理器|30|
 |
@@ -123,7 +123,7 @@ ms.locfileid: "51203814"
 > [!NOTE]
 > 如果收到读取要显示 **的数据** 过多的错误，请添加筛选器，如有必要，缩小正在查看的日期范围。
 
-若要应用筛选器，请选择" **发件人**"，选择列表中的某个项目，然后单击"刷新"按钮。 在我们的示例中，我们使用了 **检测** 技术作为筛选器 (提供了多个可用的) 。 查看发件人、发件人的域、收件人、主题、附件文件名、恶意软件系列、保护状态 (Office 365) 中的威胁防护功能和策略采取的操作、检测技术 (检测) 等。
+若要应用筛选器，请选择" **发件人**"，选择列表中的某个项目，然后单击"刷新"按钮。 在我们的示例中，我们使用了 **检测** 技术作为筛选器 (提供了多个可用的) 。 查看发件人、发件人的域、收件人、主题、附件文件名、恶意软件系列、 (威胁防护功能和策略在 Office 365) 中采取的保护状态 (操作、检测技术 (检测恶意软件) 等。
 
 ![通过检测技术查看有关检测到的电子邮件的数据](../../media/0c032eb3-6021-4174-9f06-ff8f30c245ca.png)
 
@@ -131,9 +131,9 @@ ms.locfileid: "51203814"
 
 ## <a name="content--malware"></a>恶意软件>内容
 
-若要查看此报告，在资源管理器 (或实时检测中，) **查看** \> **内容** \> **恶意软件"。** 此视图显示被 [SharePoint Online、OneDrive for Business](mdo-for-spo-odb-and-teams.md)和 Microsoft Teams 中的 Microsoft Defender for Office 365 标识为恶意的文件。
+若要查看此报告，在资源管理器 (或实时检测中，) **查看** \> **内容** \> **恶意软件"。** 此视图显示 Microsoft Defender 在 Office 365 Online、SharePoint 和 OneDrive for Business 中Microsoft Teams恶意[Microsoft Teams。](mdo-for-spo-odb-and-teams.md)
 
-按恶意软件系列、检测技术 (检测恶意软件) ，以及 OneDrive、SharePoint 或 Teams (工作负载) 。
+按恶意软件系列、检测技术 (检测恶意软件) ，以及工作负荷 (OneDrive、SharePoint或Teams) 。
 
 ![查看有关检测到的恶意软件的数据](../../media/d11dc568-b091-4159-b261-df13d76b520b.png)
 
@@ -147,9 +147,9 @@ ms.locfileid: "51203814"
 
 单击 **此图中的 ATP** 触发将产生如下所示的视图：
 
-![已筛选为仅显示 Defender for Office 365 爆炸结果的资源管理器](../../media/7241d7dd-27bc-467d-9db8-6e806c49df14.png)
+![已筛选为仅显示触发Office 365 Defender 的资源管理器](../../media/7241d7dd-27bc-467d-9db8-6e806c49df14.png)
 
-在此视图中，我们正在寻找由安全附件触发 [的文件的数据](safe-attachments.md)。 在图表下方，我们可以看到有关具有安全附件检测到的附件的特定电子邮件的详细信息。
+在此视图中，我们现在查看由附件 触发保险箱[数据](safe-attachments.md)。 在图表下方，我们可以看到有关附件由"附件"检测到的特定保险箱的详细信息。
 
 ![有关带检测到附件的电子邮件的特定详细信息](../../media/c91fb05c-d1d4-4085-acc6-f7008a415c2a.png)
 

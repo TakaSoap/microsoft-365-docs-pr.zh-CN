@@ -50,22 +50,22 @@ ms.locfileid: "51199977"
 ## <a name="properties"></a>属性
 |属性 | 类型    |   说明 |
 |:---|:---|:---|
-|sha1 | 字符串 | 文件内容的 Sha1 哈希 |
-|sha256 | 字符串 | 文件内容的 Sha256 哈希 |
+|sha1 | String | 文件内容的 Sha1 哈希 |
+|sha256 | String | 文件内容的 Sha256 哈希 |
 |globalPrevalence | Nullable long | 跨组织的文件普遍程度 |
 |globalFirstObserved | DateTimeOffset | 首次观察到文件时 |
 |globalLastObserved | DateTimeOffset | 上次观测到该文件的时间 |
-|size | Nullable long | 文件大小 |
-|fileType | 字符串 | 文件类型 |
-|isPeFile | 布尔值 | 如果文件是可移植的可执行文件 (例如"DLL"、"EXE"等，则其为 true)  |
-|filePublisher | 字符串 | 文件发布者 |
-|fileProductName | 字符串 | 产品名称 |
-|signer | 字符串 | 文件签名者 |
-|issuer | 字符串 | 文件颁发者 |
-|signerHash | 字符串 | 签名证书的哈希 |
-|isValidCertificate | 布尔值 | Microsoft Defender for Endpoint 代理是否成功验证了对证书的签名 |
-|determinationType | 字符串 | 文件的确定类型 |
-|determinationValue | 字符串 | 确定值 |
+|大小 | Nullable long | 文件大小 |
+|fileType | String | 文件类型 |
+|isPeFile | Boolean | 如果文件是可移植的可执行文件 (例如"DLL"、"EXE"等，则其为 true)  |
+|filePublisher | String | 文件发布者 |
+|fileProductName | String | 产品名称 |
+|signer | String | 文件签名者 |
+|issuer | String | 文件颁发者 |
+|signerHash | String | 签名证书的哈希 |
+|isValidCertificate | Boolean | Microsoft Defender for Endpoint 代理是否成功验证了对证书的签名 |
+|determinationType | String | 文件的确定类型 |
+|determinationValue | String | 确定值 |
 
 
 ## <a name="json-representation"></a>Json 表示形式

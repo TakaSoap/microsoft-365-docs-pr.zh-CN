@@ -32,15 +32,15 @@ ms.locfileid: "51203714"
 - [Microsoft Defender for Office 365 计划 1 和计划 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-在具有 Exchange Online 邮箱的 Microsoft 365 组织中或没有 Exchange Online 邮箱的独立 Exchange Online Protection (EOP) 组织中，用户有多种方法将邮件报告给 Microsoft 进行分析，如将邮件和文件报告给 [Microsoft](report-junk-email-messages-to-microsoft.md)中所述。
+在 Microsoft 365 组织中，邮箱在 Exchange Online 或独立 Exchange Online Protection (EOP) 组织中没有 Exchange Online 邮箱，用户有多种方法将邮件报告给 Microsoft 进行分析，如将邮件和文件报告给[Microsoft](report-junk-email-messages-to-microsoft.md)中所述。
 
 您可以创建邮件流规则 (也称为传输规则) ，用于查找用户报告给 Microsoft 的邮件，还可以将"Bcc"收件人配置为接收这些报告的邮件的副本。
 
-您可以在 Exchange 管理中心 (EAC) 和 PowerShell (Exchange Online PowerShell 中为在 Exchange Online 中拥有邮箱的 Microsoft 365 组织创建邮件流规则;适用于没有 Exchange Online 邮箱的组织的独立 EOP PowerShell) 。
+您可以在 Exchange 管理中心 (EAC) 和 Power (Exchange Online Shell PowerShell 中为 Microsoft 365 组织创建邮件流规则Exchange Online;适用于没有邮箱或邮箱Exchange Online的独立 EOP PowerShell) 。
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>开始前，有必要了解什么？
 
-- 您需在 Exchange Online 或 Exchange Online Protection 中分配权限，然后才能执行本文中的过程。 具体来说，您需要传输规则角色，默认情况下，该角色分配给组织管理、合规性 **管理 (全局** 管理员) 角色组和 **记录** 管理角色组。
+- 您需在 Exchange Online 或 Exchange Online Protection 权限，然后才能执行本文中的过程。 具体来说，您需要传输规则角色，默认情况下，该角色分配给组织管理、合规性 **管理 (全局** 管理员) 角色组和 **记录** 管理角色组。
 
   有关详细信息，请参阅下列主题：
 
@@ -48,13 +48,13 @@ ms.locfileid: "51203714"
   - [独立 EOP 中的权限](feature-permissions-in-eop.md)
   - [使用 EAC 修改角色组的成员列表](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups)
 
-- 若要在 Exchange Online 中打开 EAC，请参阅 [Exchange Online 中的 Exchange 管理中心](/Exchange/exchange-admin-center)。 若要在独立 EOP 中打开 EAC，请参阅 [独立 EOP 中的 Exchange 管理中心](exchange-admin-center-in-exchange-online-protection-eop.md)。
+- 若要在管理中心中Exchange Online EAC，Exchange[管理中心Exchange Online。](/Exchange/exchange-admin-center) 若要在独立 EOP 中打开 EAC，请参阅Exchange [EOP 中的管理中心](exchange-admin-center-in-exchange-online-protection-eop.md)。
 
 - 若要连接到 Exchange Online PowerShell，请参阅[连接到 Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)。 若要连接到独立 EOP PowerShell，请参阅[连接到 Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell)。
 
-- 有关 Exchange Online 和独立 EOP 中的邮件流规则详细信息，请参阅下列主题：
+- 有关独立 EOP 中的邮件流规则Exchange Online，请参阅下列主题：
   - [Exchange Online 中的邮件流规则（传输规则）](/Exchange/security-and-compliance/mail-flow-rules/mail-flow-rules)
-  - [Exchange Online 中的邮件流规则 (和) 谓词](/Exchange/security-and-compliance/mail-flow-rules/conditions-and-exceptions)
+  - [Exchange Online 中的邮件流规则条件和例外（谓词）](/Exchange/security-and-compliance/mail-flow-rules/conditions-and-exceptions)
   - [Exchange Online 中的邮件流规则操作](/Exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions)
 
 ## <a name="use-the-eac-to-create-a-mail-flow-rule-to-receive-copies-of-reported-messages"></a>使用 EAC 创建邮件流规则以接收报告的邮件副本
@@ -84,7 +84,7 @@ ms.locfileid: "51203714"
 
 4. 您可以进行其他选择，以审核规则、测试规则、激活特定时间段的规则以及其他设置。 建议在强制执行规则之前测试它。
 
-5. 完成后，单击“保存”。
+5. 完成后，单击“**保存**”。
 
 ## <a name="use-powershell-to-create-a-mail-flow-rule-to-receive-copies-of-reported-messages"></a>使用 PowerShell 创建邮件流规则以接收报告的邮件副本
 

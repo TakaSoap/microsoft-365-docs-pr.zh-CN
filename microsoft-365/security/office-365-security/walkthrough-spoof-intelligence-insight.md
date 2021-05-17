@@ -26,7 +26,7 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 03/25/2021
 ms.locfileid: "51203885"
 ---
-# <a name="walkthrough---spoof-intelligence-insight-in-microsoft-defender-for-office-365"></a>演练 - Microsoft Defender for Office 365 中的欺骗智能见解
+# <a name="walkthrough---spoof-intelligence-insight-in-microsoft-defender-for-office-365"></a>演练 - Microsoft Defender for Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -34,7 +34,7 @@ ms.locfileid: "51203885"
 - [Microsoft Defender for Office 365 计划 1 和计划 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-在具有适用于 Office 365 的 Defender 的 Microsoft 365 组织中，您可以使用欺骗智能见解快速确定哪些外部发件人合法地从未通过 SPF、DKIM 或 DMARC 检查) 的域中向您发送未经身份验证的电子邮件 (邮件。
+在 Microsoft 365 组织中，使用 Defender for Office 365，可以使用欺骗智能见解快速确定哪些外部发件人从未通过 SPF、DKIM 或 DMARC 检查) 的域中合法地向您发送未经身份验证的电子邮件 (邮件。
 
 通过允许已知外部发件人从已知位置发送欺骗邮件，你可以减少误报 (标记为错误) 。 通过监视允许的欺骗发件人，你可以提供额外的安全层，以防止不安全的邮件到达你的组织。
 
@@ -43,7 +43,7 @@ ms.locfileid: "51203885"
 本演练是安全与合规中心&之一。 有关导航报告和见解的信息，请参阅相关主题 [部分中的演练](#related-topics) 。
 
 > [!NOTE]
-> 欺骗智能见解显示过去 7 天的数据。 Exchange Online PowerShell [中的](learn-about-spoof-intelligence.md) 欺骗智能策略和相应的 [Get-PhishFilterPolicy](/powershell/module/exchange/get-phishfilterpolicy) cmdlet 显示过去 30 天的数据。 [Get-SpoofMailReport](/powershell/module/exchange/get-spoofmailreport)最多显示 90 天的数据。
+> 欺骗智能见解显示过去 7 天的数据。 PowerShell[中的](learn-about-spoof-intelligence.md)欺骗智能策略和相应的[Get-PhishFilterPolicy](/powershell/module/exchange/get-phishfilterpolicy) cmdlet Exchange Online显示过去 30 天的数据。 [Get-SpoofMailReport](/powershell/module/exchange/get-spoofmailreport)最多显示 90 天的数据。
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>开始前，有必要了解什么？
 
@@ -55,15 +55,15 @@ ms.locfileid: "51203885"
   - **组织管理**
   - **安全管理员**
   - **安全读者**
-  - **全局读者**
+  - **全局读取者**
 
   有关详细信息，请参阅[安全与合规中心中的权限](permissions-in-the-security-and-compliance-center.md)。
 
-  注意：将用户添加到 Microsoft 365 管理中心的相应 Azure Active Directory 角色会为用户提供安全 & 合规中心所需的权限以及Microsoft 365 中其他功能的权限。 有关详细信息，请参阅 [关于管理员角色](../../admin/add-users/about-admin-roles.md)。
+  **注意**：将用户添加到 Microsoft 365 管理中心的相应 Azure Active Directory 角色会为用户提供安全与合规中心中所需的权限&以及安全与合规中心中其他功能Microsoft 365。 有关详细信息，请参阅 [关于管理员角色](../../admin/add-users/about-admin-roles.md)。
 
-- 在 Microsoft Defender for Office 365 中的反网络钓鱼策略中启用和禁用欺骗智能。 默认情况下启用欺骗智能。 有关详细信息，请参阅在 [Microsoft Defender for Office 365](configure-atp-anti-phishing-policies.md)中配置防钓鱼策略。
+- 在 Microsoft Defender for Office 365 中的反网络钓鱼策略中启用和禁用Office 365。 默认情况下启用欺骗智能。 有关详细信息，请参阅 Configure [anti-phishing policies in Microsoft Defender for Office 365](configure-atp-anti-phishing-policies.md)。
 
-- 若要使用欺骗智能监视和管理发送未经身份验证的邮件的发件人，请参阅 [在 Microsoft 365](learn-about-spoof-intelligence.md)中配置欺骗智能。
+- 若要使用欺骗智能监视和管理发送未经身份验证的邮件的发件人，请参阅在 Microsoft 365 中[配置欺骗智能](learn-about-spoof-intelligence.md)。
 
 ## <a name="open-the-spoof-intelligence-insight-in-the-security--compliance-center"></a>在安全与合规中心内打开&见解
 
@@ -106,7 +106,7 @@ ms.locfileid: "51203885"
      - **是**：允许来自欺骗用户域和发送基础结构组合的邮件，且不会被视为欺骗电子邮件。
      - **否**：来自欺骗用户域和发送基础结构组合的邮件被标记为欺骗邮件。 该操作由默认反网络钓鱼策略或自定义防钓鱼策略控制， (默认值为"将邮件移动到垃圾邮件文件夹") 。 
 
-     有关详细信息，请参阅在 [Microsoft Defender for Office 365](configure-atp-anti-phishing-policies.md)中配置防钓鱼策略。
+     有关详细信息，请参阅 Configure [anti-phishing policies in Microsoft Defender for Office 365](configure-atp-anti-phishing-policies.md)。
 
 2. 在列表中选择一个项目，以查看有关在飞出视图中的域/发送基础结构对的详细信息。 这些信息包括：
    - 我们为什么捕获到此。
@@ -132,4 +132,4 @@ ms.locfileid: "51203885"
 
 ## <a name="related-topics"></a>相关主题
 
-[Microsoft 365 中的反欺骗保护](anti-spoofing-protection.md)
+[安全机制中的反欺骗Microsoft 365](anti-spoofing-protection.md)

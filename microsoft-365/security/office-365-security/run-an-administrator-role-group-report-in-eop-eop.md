@@ -12,7 +12,7 @@ localization_priority: Normal
 ms.assetid: 23b47b57-0eec-46a3-a03b-366ea014ab31
 ms.custom:
 - seo-marvel-apr2020
-description: 管理员可以了解如何在独立 Exchange Online Protection 和 EOP (运行管理员角色组) 。 此报告记录管理员向管理员角色组添加或删除成员时。
+description: 管理员可以了解如何在独立 EOP Exchange Online Protection (中运行管理员角色组) 。 此报告记录管理员向管理员角色组添加或删除成员时。
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: 0281dcb13f5cee0ba8db8c4faed5054f481337cf
@@ -27,19 +27,19 @@ ms.locfileid: "51203848"
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **适用对象**
--  [独立 Exchange Online Protection](exchange-online-protection-overview.md)
+-  [Exchange Online Protection独立](exchange-online-protection-overview.md)
 
-在独立 Exchange Online Protection (EOP) 没有 Exchange Online 邮箱的组织，当管理员向 管理角色 组添加或删除成员时，该服务将记录每次事件。 有关独立 EOP 中的角色组详细信息，请参阅 [Permissions in standalone EOP](feature-permissions-in-eop.md)。
+在独立 Exchange Online Protection (EOP) 组织中Exchange Online，当管理员向 管理角色 组添加或删除成员时，服务将记录每次事件。 有关独立 EOP 中的角色组详细信息，请参阅 [Permissions in standalone EOP](feature-permissions-in-eop.md)。
 
 在 Exchange 管理中心 (EAC) 中运行管理员角色组报告时，条目将显示为搜索结果，其中包括受影响的角色组、更改角色组成员身份的用户、更改时间以及进行了哪些成员身份更新。 使用此报告可以对已分配给组织中的用户的管理权限的更改进行监视。
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>开始前，有必要了解什么？
 
-- 若要打开 Exchange 管理中心，请参阅 [独立 EOP 中的 Exchange 管理中心](exchange-admin-center-in-exchange-online-protection-eop.md)。
+- 若要打开Exchange中心，请参阅Exchange [EOP 中的管理中心](exchange-admin-center-in-exchange-online-protection-eop.md)。
 
-- 您需在 Exchange Online Protection 中获得权限，然后才能执行本文中的过程。 具体来说，您需要"**审核日志**"或"仅查看审核日志"角色，默认情况下会将其分配给组织管理、合规性管理和安全 **管理员** 角色组。 有关详细信息，请参阅 [Permissions in standalone EOP](feature-permissions-in-eop.md) 和 [Use the EAC modify the list of members in role groups](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups)。
+- 您需在 Exchange Online Protection权限，然后才能执行本文中的过程。 具体来说，您需要"**审核日志**"或"仅查看审核日志"角色，默认情况下会将其分配给组织管理、合规性管理和安全 **管理员** 角色组。 有关详细信息，请参阅 [Permissions in standalone EOP](feature-permissions-in-eop.md) 和 [Use the EAC modify the list of members in role groups](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups)。
 
-- 有关可能适用于本文中的过程的键盘快捷方式的信息，请参阅[Keyboard shortcuts for the Exchange admin center in Exchange Online。](/Exchange/accessibility/keyboard-shortcuts-in-admin-center)
+- 有关可能适用于本文中的过程的键盘快捷方式的信息，请参阅 Exchange Online 中适用于 Exchange[管理中心的键盘快捷方式](/Exchange/accessibility/keyboard-shortcuts-in-admin-center)。
 
 > [!TIP]
 > 是否有任何疑问？ 请在 [Exchange Online Protection](https://social.technet.microsoft.com/Forums/forefront/home?forum=FOPE) 论坛中寻求帮助。
@@ -77,9 +77,9 @@ ms.locfileid: "51203848"
 - 在 2018 年 2 月 6 日，他们添加了用户 tonip。
 - 在 2018 年 2 月 19 日，他们删除了用户 pilarp。
 
-## <a name="use-standalone-exchange-online-powershell-to-search-for-audit-log-entries"></a>使用独立 Exchange Online PowerShell 搜索审核日志条目
+## <a name="use-standalone-exchange-online-powershell-to-search-for-audit-log-entries"></a>使用独立Exchange Online PowerShell 搜索审核日志条目
 
-您可以使用 Exchange Online PowerShell 搜索满足审核日志条件的电子邮件条目。 有关搜索条件的列表，请参阅 [Search-AdminAuditLog 搜索条件](/Exchange/policy-and-compliance/admin-audit-logging/admin-audit-logging#search-adminauditlog-cmdlet)。 此过程使用 **Search-AdminAuditLog** cmdlet，并显示 Exchange Online PowerShell 中的搜索结果。 如果需要返回超出在 **New-AdminAuditLogSearch** cmdlet 或 EAC"审核报告"报告中定义的限制的一组结果时，可使用此 cmdlet。
+可以使用 PowerShell Exchange Online搜索符合审核日志的条件的条目。 有关搜索条件的列表，请参阅 [Search-AdminAuditLog 搜索条件](/Exchange/policy-and-compliance/admin-audit-logging/admin-audit-logging#search-adminauditlog-cmdlet)。 此过程使用 **Search-AdminAuditLog** cmdlet，在 PowerShell 中Exchange Online搜索结果。 如果需要返回超出在 **New-AdminAuditLogSearch** cmdlet 或 EAC"审核报告"报告中定义的限制的一组结果时，可使用此 cmdlet。
 
 若要搜索满足指定条件的审核日志，请使用以下语法。
 
@@ -112,7 +112,7 @@ Search-AdminAuditLog -Cmdlets Set-Mailbox -Parameters ProhibitSendQuota,Prohibit
 Search-AdminAuditLog -StartDate 05/01/2018 -EndDate 10/03/2018 -ObjectID contoso.com/Users/DavidS
 ```
 
-如果搜索返回许多日志条目，我们建议您使用本文稍后介绍的使用 Exchange Online **PowerShell** 搜索 审核日志 条目并将结果发送给收件人中提供的过程。 该部分提供的过程将 XML 文件以电子邮件附件的形式发送给指定的收件人，从而使您更易于提取您感兴趣的数据。
+如果搜索返回许多日志条目，我们建议您使用本文稍后介绍的使用 **Exchange Online PowerShell** 搜索 审核日志 条目并将结果发送给收件人中提供的过程。 该部分提供的过程将 XML 文件以电子邮件附件的形式发送给指定的收件人，从而使您更易于提取您感兴趣的数据。
 
 有关详细的语法和参数信息，请参阅 [Search-AdminAuditLog](/powershell/module/exchange/search-adminauditlog)。
 
@@ -120,7 +120,7 @@ Search-AdminAuditLog -StartDate 05/01/2018 -EndDate 10/03/2018 -ObjectID contoso
 
 **Search-AdminAuditLog** cmdlet 返回审核日志 [内容中所述的字段](/Exchange/policy-and-compliance/admin-audit-logging/admin-audit-logging#audit-log-contents)。 在此 cmdlet 返回的字段中， **CmdletParameters** 和 **ModifiedProperties** 两个字段包含默认情况下不可见的附加信息。
 
-若要查看 **CmdletParameters** 和 **ModifiedProperties** 字段的内容，请执行以下步骤。 或者，您可以使用使用 **Exchange Online PowerShell** 搜索 审核日志 条目，并将结果发送给本文稍后介绍的收件人来创建 XML 文件。
+若要查看 **CmdletParameters** 和 **ModifiedProperties** 字段的内容，请执行以下步骤。 或者，您可以使用本文Exchange Online **PowerShell** 搜索 审核日志 条目并将结果发送给收件人中的过程来创建 XML 文件。
 
 此过程将使用以下概念：
 

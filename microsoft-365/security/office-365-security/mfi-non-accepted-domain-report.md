@@ -11,7 +11,7 @@ localization_priority: Normal
 ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
-description: 管理员可以了解如何使用安全 & 合规中心的邮件流仪表板中的"非接受域"报告监视来自未在 Microsoft 365 中配置发件人域本地组织的邮件。
+description: 管理员可以了解如何使用安全 & 合规中心的邮件流仪表板中的"未接受的域"报告监视来自未在 Microsoft 365 中配置发件人域内部部署组织的邮件。
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: fb33feb56bf2b52731c03273ce0c6444c333f348
@@ -30,9 +30,9 @@ ms.locfileid: "51203797"
 - [Microsoft Defender for Office 365 计划 1 和计划 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-安全与合规中心内邮件流仪表板[](mail-flow-insights-v2.md)中的"非接受域"报告显示有关来自本地电子邮件组织的邮件的信息，其中发件人的域未配置为 Microsoft 365 组织中接受的域。 [&](https://protection.office.com)
+安全与合规中心内邮件流仪表板[](mail-flow-insights-v2.md)中的"非接受域"报告显示有关来自内部部署电子邮件组织的邮件的信息，其中发件人的域未配置为 Microsoft 365 组织中接受的域。 [&](https://protection.office.com)
 
-如果我们有数据可以证明这些邮件的意图是恶意的，Microsoft 365 可能会限制这些邮件。 因此，了解发生的情况并解决该问题非常重要。
+Microsoft 365有数据可以证明这些邮件的意图是恶意的，则系统可能会限制这些邮件。 因此，了解发生的情况并解决该问题非常重要。
 
 ![安全与合规中心内"邮件流"仪表板中的"非接受&小组件](../../media/mfi-non-accepted-domain-report-widget.png)
 
@@ -50,7 +50,7 @@ ms.locfileid: "51203797"
 
 如果单击 **视图中的"** 查看详细信息"报表视图，将显示以下信息：
 
-- "日期"
+- **Date**
 - **入站连接器名称**
 - **发件人域**
 - **邮件计数**
@@ -62,7 +62,7 @@ ms.locfileid: "51203797"
 
 选择表格中的行时，将显示一个包含以下信息的飞出图：
 
-- "日期"
+- **Date**
 - **入站连接器名称**
 - **发件人域**
 - **邮件计数**

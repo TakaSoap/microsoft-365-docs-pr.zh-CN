@@ -22,7 +22,7 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 03/25/2021
 ms.locfileid: "51203254"
 ---
-# <a name="control-automatic-external-email-forwarding-in-microsoft-365"></a>在 Microsoft 365 中控制自动外部电子邮件转发
+# <a name="control-automatic-external-email-forwarding-in-microsoft-365"></a>控制邮件中的自动外部电子邮件Microsoft 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -34,7 +34,7 @@ ms.locfileid: "51203254"
 作为管理员，你可能要求限制或控制自动转发给组织外部收件人 (外部收件人的邮件) 。 电子邮件转发可能很有用，但也可能由于信息泄露而带来安全风险。 攻击者可能会使用此信息来攻击你的组织或合作伙伴。
 
 
-以下类型的自动转发在 Microsoft 365 中可用：
+以下类型的自动转发在Microsoft 365：
 
 - 用户可以将 [收件箱规则](https://support.microsoft.com/office/c24f5dea-9465-4df4-ad17-a50704d66c59) 配置为自动将邮件转发给外部发件人 (或由于帐户遭到入侵) 。
 
@@ -62,7 +62,7 @@ ms.locfileid: "51203254"
 
 - [允许或](/exchange/mail-flow-best-practices/remote-domains/remote-domains) 阻止自动电子邮件转发到某些或所有外部域的远程域。
 
-- Exchange 邮件流规则 [中的](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules) 条件和操作 (传输规则) 检测并阻止自动转发给外部收件人的邮件。
+- 邮件流规则中的Exchange[和](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules)操作 (传输规则) 检测并阻止自动转发给外部收件人的邮件。
 
 远程域设置和邮件流规则独立于出站垃圾邮件筛选器策略中的设置。 例如：
 

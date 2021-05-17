@@ -40,11 +40,11 @@ ms.locfileid: "51199617"
 
 方法 |返回类型 |说明
 :---|:---|:---
-[获取警报](get-alert-info-by-id.md) | [Alert](alerts.md) | 获取单个 [alert](alerts.md) 对象。
+[获取警报](get-alert-info-by-id.md) | [提醒](alerts.md) | 获取单个 [alert](alerts.md) 对象。
 [列出警报](get-alerts.md) | [警报](alerts.md) 集合 | 列出 [警报](alerts.md) 集合。
-[更新警报](update-alert.md) | [Alert](alerts.md) | 更新特定 [警报](alerts.md)。
+[更新警报](update-alert.md) | [提醒](alerts.md) | 更新特定 [警报](alerts.md)。
 [批更新通知](batch-update-alerts.md) | | 更新一批 [警报](alerts.md)。
-[创建警报](create-alert-by-reference.md)|[Alert](alerts.md)|根据从高级搜寻 获取的事件数据 [创建警报](run-advanced-query-api.md)。
+[创建警报](create-alert-by-reference.md)|[提醒](alerts.md)|根据从高级搜寻 获取的事件数据 [创建警报](run-advanced-query-api.md)。
 [列出相关域](get-alert-related-domain-info.md)|域集合| 列出与警报关联的 URL。
 [列出相关文件](get-alert-related-files-info.md) | [文件](files.md) 集合 |  列出 [与](files.md) 警报关联的文件 [实体](alerts.md)。
 [列出相关 IP](get-alert-related-ip-info.md) | IP 集合 | 列出与警报关联的 IP。
@@ -56,7 +56,7 @@ ms.locfileid: "51199617"
 
 属性 |    类型    |    说明
 :---|:---|:---
-id | 字符串 | 警报 ID。
+id | String | 警报 ID。
 title | String | 警报标题。
 说明 | String | 警报说明。
 alertCreationTime | Nullable DateTimeOffset | 创建警报时 (UTC) 日期和时间。
@@ -72,14 +72,14 @@ severity | 枚举 | 警报的严重性。 可能的值包括："UnSpecified"、"
 状态 | 枚举 | 指定警报的当前状态。 可能的值是："Unknown"、"New"、"InProgress"和"Resolved"。
 classification | Nullable Enum | 警报的规范。 可能的值是："Unknown"、"FalsePositive"、"TruePositive"。
 确定 | Nullable Enum | 指定警报的确定。 可能的值包括："NotAvailable"、"Apt"、"Malware"、SecurityPersonnel、"SecurityTesting"、"UnwantedSoftware"和"Other"。
-“类别”| 字符串 | 警报的类别。
-detectionSource | 字符串 | 检测源。
-threatFamilyName | 字符串 | 威胁系列。
-threatName | 字符串 | 威胁名称。
-machineId | 字符串 | 与 [警报关联的](machine.md) 计算机实体的 ID。
-computerDnsName | 字符串 | [计算机](machine.md) 完全限定的名称。
-aadTenantId | 字符串 | Azure Active Directory ID。
-一个 | 字符串 | 触发警报的检测器的 ID。
+“类别”| String | 警报的类别。
+detectionSource | String | 检测源。
+threatFamilyName | String | 威胁系列。
+threatName | String | 威胁名称。
+machineId | String | 与 [警报关联的](machine.md) 计算机实体的 ID。
+computerDnsName | String | [计算机](machine.md) 完全限定的名称。
+aadTenantId | String | 用户Azure Active Directory ID。
+一个 | String | 触发警报的检测器的 ID。
 comments | 警报注释列表 | Alert Comment 对象包含：注释字符串、createdBy 字符串和 createTime 日期时间。
 证据 | 警报证据列表 | 与警报相关的证据。 请参阅下面的示例。
 

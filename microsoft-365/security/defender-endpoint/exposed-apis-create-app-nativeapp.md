@@ -43,7 +43,7 @@ ms.locfileid: "51198879"
 
 如果不确定需要哪种访问权限，请阅读" [简介"页](apis-intro.md)。
 
-Microsoft Defender for Endpoint 通过一组编程 API 公开其大部分数据和操作。 借助这些 API，你可以基于 Microsoft Defender for Endpoint 功能自动执行数据流创新。 API 访问需要 OAuth2.0 身份验证。 有关详细信息，请参阅 [OAuth 2.0 授权代码流](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-code)。
+Microsoft Defender for Endpoint 通过一组编程 API 公开其大部分数据和操作。 借助这些 API，你可以基于 Microsoft Defender for Endpoint 功能自动执行数据流创新。 API 访问需要 OAuth2.0 身份验证。 有关详细信息，请参阅[OAuth 2.0 授权代码Flow。](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-code)
 
 通常，你将需要执行以下步骤来使用 API：
 - 创建 AAD 应用程序
@@ -63,9 +63,9 @@ Microsoft Defender for Endpoint 通过一组编程 API 公开其大部分数据�
 
 1. 使用具有全局管理员角色的用户帐户 **登录到** [Azure。](https://portal.azure.com)
 
-2. 导航到 **Azure Active Directory**  >  **应用注册**  >  **新注册**。 
+2. 导航到 **Azure Active Directory**  >  **应用注册**  >  **""新注册"。** 
 
-   ![Microsoft Azure 的图像和应用程序注册导航](images/atp-azure-new-app2.png)
+   ![应用程序注册Microsoft Azure导航的图像](images/atp-azure-new-app2.png)
 
 3. 出现“**注册应用程序**”页面后，输入应用程序的注册信息：
 

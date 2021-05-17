@@ -13,7 +13,7 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 - MET150
-description: 管理员可以了解在 Microsoft 365 中通过网络钓鱼邮件的原因和方式，以及在将来如何防止更多网络钓鱼邮件。
+description: 管理员可以了解钓鱼邮件在电子邮件中Microsoft 365的原因和方式，以及在将来如何防止更多网络钓鱼邮件。
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: 1772a0329825b8808352892c8d99f0d7680112f5
@@ -32,31 +32,31 @@ ms.locfileid: "51203731"
 - [Microsoft Defender for Office 365 计划 1 和计划 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-尽管 Microsoft 365 附带了各种默认情况下启用的防钓鱼功能，但某些网络钓鱼邮件可能仍可以到达你的邮箱。 本主题介绍您可以执行哪些操作来发现网络钓鱼邮件通过的原因，以及您可以如何调整 Microsoft 365 组织的反网络钓鱼设置，而不会意外使情况变得 _更糟_。
+尽管Microsoft 365附带了各种默认情况下启用的防钓鱼功能，但某些网络钓鱼邮件可能仍可以到达您的邮箱。 本主题介绍您可以执行哪些操作来发现网络钓鱼邮件通过的原因，以及您可以如何调整 Microsoft 365 组织中防钓鱼设置，而不会意外使情况 _变得更糟_。
 
 ## <a name="first-things-first-deal-with-any-compromised-accounts-and-make-sure-you-block-any-more-phishing-messages-from-getting-through"></a>首先：处理任何遭到入侵的帐户，并确保阻止更多网络钓鱼邮件通过
 
-如果收件人的帐户由于网络钓鱼邮件而泄露，请按照在 [Microsoft 365](responding-to-a-compromised-email-account.md)中响应遭到入侵的电子邮件帐户中的步骤操作。
+如果收件人的帐户由于网络钓鱼邮件而泄露，请按照响应电子邮件中遭到入侵的电子邮件帐户中的[Microsoft 365。](responding-to-a-compromised-email-account.md)
 
-如果你的订阅包含适用于 Office 365 的 Microsoft Defender，可以使用 [Office 365](office-365-ti.md) 威胁智能来识别还收到网络钓鱼邮件的其他用户。 有其他选项可以阻止钓鱼邮件：
+如果你的订阅包含 Microsoft Defender for Office 365，可以使用[](office-365-ti.md)Office 365 威胁智能来识别还收到网络钓鱼邮件的其他用户。 有其他选项可以阻止钓鱼邮件：
 
-- [Microsoft Defender for Office 365 中的安全链接](set-up-safe-links-policies.md)
+- [保险箱Microsoft Defender for Office 365](set-up-safe-links-policies.md)
 
-- [Microsoft Defender for Office 365 中的安全附件](set-up-safe-attachments-policies.md)
+- [保险箱Microsoft Defender for Office 365](set-up-safe-attachments-policies.md)
 
 - [Microsoft Defender for Office 365 中的防钓鱼策略](configure-atp-anti-phishing-policies.md)。 请注意，你可以暂时将策略中的高级网络钓鱼阈值从 **"标准**"提高为 **"主动**"、更 **主动** 或 **最具有攻击性**。
 
-验证这些 Defender for Office 365 功能是否打开。
+验证这些 Defender Office 365功能是否打开。
 
 ## <a name="report-the-phishing-message-to-microsoft"></a>向 Microsoft 报告网络钓鱼邮件
 
-报告网络钓鱼邮件有助于优化用于保护 Microsoft 365 中所有客户的筛选器。 有关说明，请参阅 [向 Microsoft 报告邮件和文件](report-junk-email-messages-to-microsoft.md)。
+报告网络钓鱼邮件有助于优化用于保护电子邮件中所有客户的Microsoft 365。 有关说明，请参阅 [向 Microsoft 报告邮件和文件](report-junk-email-messages-to-microsoft.md)。
 
 ## <a name="inspect-the-message-headers"></a>检查邮件头
 
 你可以检查网络钓鱼邮件的邮件头，看看是否有自己能够阻止更多网络钓鱼邮件通过的内容。 换句话说，检查邮件头可以帮助您识别组织中负责允许网络钓鱼邮件进入的任何设置。
 
-具体来说，应检查邮件头中的 **X-Forefront-Antispam-Report** 头字段，以在 SFV 垃圾邮件筛选裁定 (值中指示已跳过对垃圾邮件或网络钓鱼) 筛选。 跳过筛选的邮件将具有 的条目，这意味着你的其中一个设置允许通过覆盖由服务确定的垃圾邮件或网络钓鱼 `SCL:-1` 裁定来传递此邮件。 若要详细了解如何获取邮件头以及所有可用反垃圾邮件和反网络钓鱼邮件头的完整列表，请参阅 [Microsoft 365](anti-spam-message-headers.md)中的反垃圾邮件邮件头。
+具体来说，应检查邮件头中的 **X-Forefront-Antispam-Report** 头字段，以在 SFV 垃圾邮件筛选裁定 (值中指示已跳过对垃圾邮件或网络钓鱼) 筛选。 跳过筛选的邮件将具有 的条目，这意味着你的其中一个设置允许通过覆盖由服务确定的垃圾邮件或网络钓鱼 `SCL:-1` 裁定来传递此邮件。 若要详细了解如何获取邮件头以及所有可用反垃圾邮件和反网络钓鱼邮件头的完整列表，请参阅 Microsoft 365[中的反垃圾邮件邮件头](anti-spam-message-headers.md)。
 
 ## <a name="best-practices-to-stay-protected"></a>保持受保护状态的最佳方案
 
@@ -72,7 +72,7 @@ ms.locfileid: "51203731"
 
 - 一些客户无意中允许网络钓鱼邮件通过，他们通过将自己的域放在反垃圾邮件策略的"允许发件人"或"允许域"列表中。 尽管此配置将允许某些合法邮件通过，但它还将允许通常被垃圾邮件和/或网络钓鱼筛选器阻止的恶意邮件。 应纠正基础问题，而不是允许域。
 
-  处理由 Microsoft 365 (误报) 阻止的合法邮件（涉及域中的发件人）的最好办法就是在所有电子邮件域的 DNS 中完全完全配置 SPF、DKIM 和 DMARC 记录： 
+  处理由 Microsoft 365 (误报) 阻止的合法邮件（涉及域中的发件人）的最好办法就是在所有电子邮件域的 DNS 中完全配置 SPF、DKIM 和 DMARC 记录： 
 
   - 验证 SPF 记录是否 _标识_ 域中发件人的所有电子邮件 (不要忘记第三方服务！) 。
 
@@ -86,7 +86,7 @@ ms.locfileid: "51203731"
 
   - [使用 DMARC 验证电子邮件](use-dmarc-to-validate-email.md)
 
-- 建议尽可能将域的电子邮件直接发送到 Microsoft 365。 换句话说，将 Microsoft 365 域的 MX 记录指向 Microsoft 365。 Exchange Online Protection (EOP) 可以在邮件直接传递到 Microsoft 365 时为云用户提供最佳保护。 如果必须在 EOP 前面使用第三方电子邮件清洁系统，请使用增强的连接器筛选功能。 有关说明，请参阅 [增强的 Exchange Online 中的连接器筛选](/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors)。
+- 建议尽可能将域的电子邮件直接发送到Microsoft 365。 换句话说，将你的Microsoft 365域的 MX 记录指向Microsoft 365。 Exchange Online Protection (EOP) 在邮件直接传递到云中时，可以为云用户提供最佳Microsoft 365。 如果必须在 EOP 前面使用第三方电子邮件清洁系统，请使用增强的连接器筛选功能。 有关说明，请参阅[增强的连接器筛选Exchange Online。](/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors)
 
 - 用户应该使用["报告邮件"](enable-the-report-message-add-in.md)加载项或"报告[](enable-the-report-phish-add-in.md)钓鱼邮件"加载项向 Microsoft 报告邮件，Microsoft 可以训练我们的系统。 管理员还应利用管理员 [提交](admin-submission.md) 功能。
 

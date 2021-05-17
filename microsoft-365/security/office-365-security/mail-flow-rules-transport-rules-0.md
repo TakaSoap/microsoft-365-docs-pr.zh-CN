@@ -33,17 +33,17 @@ ms.locfileid: "51203779"
 
 本主题介绍邮件流规则的组件及其工作方式。
 
-有关创建、复制和管理邮件流规则的步骤，请参阅 [管理 Exchange Online](/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules)中的邮件流规则。 可以选择强制实施每个规则、只是测试规则，或测试每个规则并通知发件人。 若要了解有关测试选项的详细信息，请参阅 [在](/exchange/security-and-compliance/mail-flow-rules/test-mail-flow-rules) Exchange Online 中测试邮件流 [规则和策略提示](/exchange/security-and-compliance/data-loss-prevention/policy-tips)。
+有关创建、复制和管理邮件流规则的步骤，[请参阅在邮件](/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules)流Exchange Online。 可以选择强制实施每个规则、只是测试规则，或测试每个规则并通知发件人。 若要了解有关测试选项的详细信息，[请参阅测试邮件](/exchange/security-and-compliance/mail-flow-rules/test-mail-flow-rules)流规则和使用技巧[策略Exchange Online。](/exchange/security-and-compliance/data-loss-prevention/policy-tips)
 
 有关匹配邮件流规则的邮件的摘要和详细报告，请参阅使用邮件保护报告查看有关恶意软件、垃圾邮件 [和规则检测的数据](/exchange/monitoring/use-mail-protection-reports)。
 
 若要通过使用邮件流规则实现特定的邮件策略，请参阅下列主题：
 
-- [使用邮件流规则检查 Exchange Online 中的邮件附件](/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments)
+- [使用邮件流规则检查邮件附件Exchange Online](/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments)
 
 - [设置 Office 365 企业版中的加密](../../compliance/set-up-encryption.md)
 
-- [Exchange Online 中的组织范围内的邮件免责声明、签名、页脚或邮件头](/exchange/security-and-compliance/mail-flow-rules/disclaimers-signatures-footers-or-headers)
+- [组织范围内的邮件免责声明、签名、页脚或邮件头Exchange Online](/exchange/security-and-compliance/mail-flow-rules/disclaimers-signatures-footers-or-headers)
 
 - [使用邮件流规则设置邮件中的垃圾邮件可信度 (SCL)](use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md)
 
@@ -51,7 +51,7 @@ ms.locfileid: "51203779"
 
 - [通过 Exchange Online Protection 中的文件附件阻止功能降低恶意软件的威胁](reducing-malware-threats-through-file-attachment-blocking-in-exchange-online-pro.md)
 
-- [定义在 Office 365 中加密或解密电子邮件的规则](../../compliance/define-mail-flow-rules-to-encrypt-email.md)
+- [定义规则以加密或解密电子邮件Office 365](../../compliance/define-mail-flow-rules-to-encrypt-email.md)
 
 以下视频演示了在独立 EOP 中设置邮件流规则。
 
@@ -63,13 +63,13 @@ ms.locfileid: "51203779"
 
 - **条件**：标识要应用操作的邮件。 一些条件检查邮件头字段（例如“收件人”、“发件人”或“抄送”字段）。 其他条件检查邮件属性（例如邮件主题、正文、附件、邮件大小或邮件分类）。 大多数条件要求你指定比较运算符（例如等于、不等于或包含）以及要匹配的值。 如果没有条件或例外，规则将应用到所有邮件。
 
-有关独立 EOP 中的邮件流规则条件详细信息，请参阅 Mail [flow rule conditions and exceptions (predicates) in Exchange Online](/exchange/security-and-compliance/mail-flow-rules/conditions-and-exceptions)。
+有关独立 EOP 中的邮件流规则条件详细信息，请参阅邮件流规则条件和例外 ([中的) Exchange Online。](/exchange/security-and-compliance/mail-flow-rules/conditions-and-exceptions)
 
 - **例外**：（可选）标识操作不应应用到的邮件。 条件中可用的相同邮件标识符同样在例外中可用。 例外会覆盖条件并阻止规则操作应用于邮件，即使邮件匹配所有配置的条件也是如此。
 
 - **操作**：指定对与规则中的条件匹配且不匹配任何例外的邮件执行哪些操作。 例外会覆盖条件并阻止将操作应用于电子邮件，即使该邮件符合所有配置的条件也是如此。
 
-有关独立 EOP 中可用的邮件流规则操作详细信息，请参阅[Mail flow rule actions in Exchange Online。](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions)
+有关独立 EOP 中可用的邮件流规则操作详细信息，请参阅邮件流[规则操作Exchange Online。](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions)
 
 - **属性**：指定条件、例外或操作之外的其他规则设置。 例如，应何时应用规则、是否强制实施或测试规则，以及规则可用的时间段。
 
@@ -81,7 +81,7 @@ Use a transport rule so messages can bypass Clutter
 
 ****
 
-|组件|逻辑|注释|
+|组件|逻辑|备注|
 |---|---|---|
 |注释|AND|邮件必须匹配该规则的所有条件。如果需要匹配一个条件或另一个条件，请对每个条件使用不同的规则。例如，如果要为带有附件的邮件和包含指定文本的邮件添加相同的免责声明，请为每个条件创建一个规则。在 EAC 中，你可以轻松地复制规则。|
 |邮件必须匹配该规则的所有条件。如果需要匹配一个条件或另一个条件，请对每个条件使用不同的规则。例如，如果您要为带有附件的邮件和内容匹配某个模式的邮件添加相同的免责声明，请为每个条件创建一个规则。您可以轻松地复制规则。|OR|一些条件允许你指定多个值。邮件必须匹配任一（并非全部）指定值。例如，如果电子邮件的主题为 Stock price information，并且 **主题包含这些词中的任一个** 条件被配置为匹配单词 Contoso 或 stock，则符合该条件，因为主题中至少包含指定值中的一个。  |
@@ -122,9 +122,9 @@ All messages that flow through your organization are evaluated against the enabl
 |通过组织的邮件有几种类型。下表显示了哪些消息类型可以通过传输规则进行处理。|消息类型|
 |---|---|
 |**常规邮件**：包含 RTF 格式 (RTF) 、HTML 或纯文本邮件正文或多部分或备用邮件正文集的邮件。|是|
-|**Office 365 邮件加密**：由 Office 365 中的 Office 365 邮件加密加密的邮件。 有关详细信息，请参阅 [Office 365 中的加密](../../compliance/encryption.md)。|规则可始终根据检查这些标头的条件来访问信封头并处理邮件。 <p> 对于检查或修改加密邮件内容的规则，需要验证是否启用了传输解密（强制或可选；默认为可选）。 有关详细信息，请参阅在 [Office 365](../../compliance/define-mail-flow-rules-to-encrypt-email.md)中定义加密或解密电子邮件的规则。|
+|**Office 365 邮件加密：** 在邮件Office 365 邮件加密加密Office 365。 有关详细信息，请参阅 [Office 365 中的加密](../../compliance/encryption.md)。|规则可始终根据检查这些标头的条件来访问信封头并处理邮件。 <p> 对于检查或修改加密邮件内容的规则，需要验证是否启用了传输解密（强制或可选；默认为可选）。 有关详细信息，请参阅 Define [rules to encrypt or decrypt email messages in Office 365](../../compliance/define-mail-flow-rules-to-encrypt-email.md)。|
 |**S/MIME 加密邮件**|规则仅可根据检查这些标头的条件来访问信封头并处理邮件。 <p> 无法处理具有需要检查邮件内容的条件的规则或可以修改邮件内容的操作。|
-|**RMS 保护的邮件**：应用了 AD RMS Active Directory Rights Management Services (或 Azure 权限) 策略 (Azure 权限) 的邮件。|规则可始终根据检查这些标头的条件来访问信封头并处理邮件。 <p> 对于检查或修改 RMS 保护的邮件内容的规则，需要验证是否启用了传输解密（强制或可选；默认为可选）。|
+|**RMS 保护的邮件**：应用了 AD RMS Active Directory Rights Management Services (或 Azure 权限) 或 Azure 权限 (策略) 的邮件。|规则可始终根据检查这些标头的条件来访问信封头并处理邮件。 <p> 对于检查或修改 RMS 保护的邮件内容的规则，需要验证是否启用了传输解密（强制或可选；默认为可选）。|
 |**已清除签名的邮件**：已签名但未加密的邮件。|是|
 |**UM 邮件**：由统一消息服务创建或处理的邮件，例如语音邮件、传真、未接来电通知以及使用 Microsoft Outlook Voice Access。|是|
 |**匿名邮件**：匿名发件人发送的邮件。|是|
@@ -133,13 +133,13 @@ All messages that flow through your organization are evaluated against the enabl
 
 ## <a name="what-else-should-i-know"></a>我还应该知道些什么？
 
-- 在 Exchange Online Protection 中，规则的 Version 或 **RuleVersion** 属性值不十分重要。
+- 规则 **的版本** 或 **RuleVersion** 属性值在规则Exchange Online Protection。
 
 - 创建或修改邮件流规则后，可能需要 30 分钟才能将新的或更新的规则应用于邮件。
 
-## <a name="for-more-information"></a>更多信息
+## <a name="for-more-information"></a>详细信息
 
-[使用邮件流规则检查 Exchange Online 中的邮件附件](/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments)
+[使用邮件流规则检查邮件附件Exchange Online](/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments)
 
 [Office 365 中的电子邮件加密](../../compliance/email-encryption.md)
 

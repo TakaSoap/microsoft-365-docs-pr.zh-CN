@@ -19,15 +19,15 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 03/29/2021
 ms.locfileid: "51408173"
 ---
-# <a name="double-key-encryption-for-microsoft-365"></a>Microsoft 365 的双密钥加密
+# <a name="double-key-encryption-for-microsoft-365"></a>双密钥加密Microsoft 365
 
-> *适用于：Microsoft 365 的双密钥加密 [、Microsoft 365 合规性](https://www.microsoft.com/microsoft-365/business/compliance-management) [、Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)*
+> *适用于：双密钥加密Microsoft 365、Microsoft 365 [合规性](https://www.microsoft.com/microsoft-365/business/compliance-management)[、Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)*
 >
-> *说明： [适用于 Windows 的 Azure 信息保护统一标记客户端](/azure/information-protection/faqs#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)*
+> *说明 [：Azure 信息保护统一标签客户端Windows](/azure/information-protection/faqs#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)*
 >
-> *服务说明 [：Microsoft 365 合规性](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)*
+> *服务说明 [：Microsoft 365合规性](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)*
 
-双密钥加密 (DKE) 使用两个密钥来访问受保护的内容。 Microsoft 在 Microsoft Azure 中存储一个密钥，你持有另一个密钥。 使用双密钥加密服务维护对其中一个密钥的完全控制。 使用 Azure 信息保护统一标记客户端对高度敏感的内容应用保护。
+双密钥加密 (DKE) 使用两个密钥来访问受保护的内容。 Microsoft 将一个密钥存储在Microsoft Azure中，并且你持有另一个密钥。 使用双密钥加密服务维护对其中一个密钥的完全控制。 使用 Azure 信息保护统一标记客户端对高度敏感的内容应用保护。
 
 双密钥加密支持云和本地部署。 这些部署有助于确保加密数据在存储受保护数据的位置都保持不透明。
 
@@ -35,13 +35,13 @@ ms.locfileid: "51408173"
 
 ## <a name="when-your-organization-should-adopt-dke"></a>组织何时应采用 DKE
 
-双密钥加密适用于符合最严格的保护要求的最敏感数据。 DKE 并非适用于所有数据。 通常，你将使用双密钥加密来保护整个数据的一小部分。 在部署之前，应谨慎确定要在此解决方案中涵盖的合适数据。 在某些情况下，你可能需要缩小范围，并针对你的大多数数据使用其他解决方案，例如 Microsoft 信息保护（包含 Microsoft 托管的密钥）或 BYOK。 这些解决方案足以用于不受增强的保护和法规要求的文档。 此外，这些解决方案还使您能够使用最强大的 Office 365 服务;不能与 DKE 加密内容一同使用的服务。 例如：
+双密钥加密适用于符合最严格的保护要求的最敏感数据。 DKE 并非适用于所有数据。 通常，你将使用双密钥加密来保护整个数据的一小部分。 在部署之前，应谨慎确定要在此解决方案中涵盖的合适数据。 在某些情况下，你可能需要缩小范围，并针对你的大多数数据使用其他解决方案，例如 Microsoft 信息保护（包含 Microsoft 托管的密钥）或 BYOK。 这些解决方案足以用于不受增强的保护和法规要求的文档。 此外，这些解决方案还使您能够使用功能最强大的Office 365服务;不能与 DKE 加密内容一同使用的服务。 例如：
 
 - 需要查看附件的传输规则，包括反恶意软件和垃圾邮件
 - Microsoft Delve
 - 电子数据展示
 - 内容搜索和索引
-- 包括共同授权功能的 Office Web Apps
+- Office包括共同授权功能的 Web 应用
 
 任何未通过 MIP SDK 与 DKE 集成的外部应用程序或服务将无法对加密数据执行操作。
 
@@ -57,21 +57,21 @@ Microsoft 信息保护 SDK 1.7+ 支持双密钥加密;与 SDK 集成的应用程
 
 ## <a name="system-and-licensing-requirements-for-dke"></a>DKE 的系统和许可要求
 
-**Microsoft 365 的** 双密钥加密随 Microsoft 365 E5 一起提供。 如果你没有 Microsoft 365 E5 许可证，可以[注册试用版。](https://aka.ms/M365E5ComplianceTrial) 有关这些许可证详细信息，请参阅 [Microsoft 365](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)安全与合规&指南。
+**双密钥加密Microsoft 365** 密码Microsoft 365 E5。 如果你没有许可证，Microsoft 365 E5许可证，可以[注册试用版。](https://aka.ms/M365E5ComplianceTrial) 有关这些许可证详细信息，请参阅Microsoft 365安全[与合规&指南](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。
 
 **Azure 信息保护**。 DKE 使用敏感度标签，并且需要 Azure 信息保护。
 
-DKE 敏感度标签通过 Office 桌面应用程序中的敏感度功能区提供给最终用户。 在要保护和使用受保护文档的每台客户端计算机上安装这些必备组件。
+DKE 敏感度标签通过桌面应用中的敏感度功能区提供给Office最终用户。 在要保护和使用受保护文档的每台客户端计算机上安装这些必备组件。
 
-**Microsoft Office Windows 上的** 桌面版 Word、PowerPoint 和 Excel (2009 企业应用版) 更高版本。
+**Microsoft Office** 2009 企业应用版或更高版本 (桌面版 Word、PowerPoint 和 Excel) Windows。
 
 **Azure 信息保护统一标签客户端** 版本 2.7.93.0 或更高版本。 从 Microsoft 下载中心下载并安装统 [一标签客户端](https://www.microsoft.com/download/details.aspx?id=53018)。
 
 ## <a name="supported-environments-for-storing-and-viewing-dke-protected-content"></a>用于存储和查看受 DKE 保护的内容的支持的环境
 
-**支持的应用程序**。 [Windows 上的 Microsoft 365](https://www.microsoft.com/microsoft-365/business/microsoft-365-apps-for-enterprise-product) 企业应用版客户端，包括 Word、Excel 和 PowerPoint。
+**支持的应用程序**。 [Microsoft 365 企业应用版](https://www.microsoft.com/microsoft-365/business/microsoft-365-apps-for-enterprise-product)客户端Windows，包括 Word、Excel 和 PowerPoint。
 
-**联机内容支持**。 可以在 Microsoft SharePoint 和 OneDrive for Business 中联机存储受双密钥加密保护的文档和文件。 在上载到这些位置之前，必须通过受支持的应用程序使用 DKE 标记和保护文档和文件。 可以通过电子邮件共享加密内容，但无法联机查看加密文档和文件。 相反，必须使用本地计算机上受支持的桌面应用程序和客户端查看受保护的内容。
+**联机内容支持**。 可以在 Microsoft SharePoint 和 microsoft OneDrive for Business 中联机存储受双密钥加密保护的文档和OneDrive for Business。 在上载到这些位置之前，必须通过受支持的应用程序使用 DKE 标记和保护文档和文件。 可以通过电子邮件共享加密内容，但无法联机查看加密文档和文件。 相反，必须使用本地计算机上受支持的桌面应用程序和客户端查看受保护的内容。
 
 ## <a name="overview-of-deploying-dke"></a>部署 DKE 的概述
 
@@ -79,7 +79,7 @@ DKE 敏感度标签通过 Office 桌面应用程序中的敏感度功能区提�
 
 1. 部署 DKE 服务，如本文所述。
 
-2. 使用双密钥加密创建标签。 导航到 [Microsoft 365](https://compliance.microsoft.com) 合规中心下的信息保护，然后使用双密钥加密创建新标签。 请参阅 [使用敏感度标签应用加密来限制对内容的访问](./encryption-sensitivity-labels.md)。
+2. 使用双密钥加密创建标签。 导航到合规性中心Microsoft 365[信息](https://compliance.microsoft.com)保护，然后使用双密钥加密创建新标签。 请参阅 [使用敏感度标签应用加密来限制对内容的访问](./encryption-sensitivity-labels.md)。
 
 3. 使用双密钥加密标签。 通过从"敏感度"功能区中选择"双密钥加密"标签来保护Microsoft Office。
 
@@ -94,7 +94,7 @@ DKE 敏感度标签通过 Office 桌面应用程序中的敏感度功能区提�
 你将按照这些常规步骤为组织设置双密钥加密。
 
 1. [安装 DKE 服务的必备软件](#install-software-prerequisites-for-the-dke-service)
-1. [克隆双密钥加密 GitHub 存储库](#clone-the-dke-github-repository)
+1. [克隆双密钥加密GitHub存储库](#clone-the-dke-github-repository)
 1. [修改应用程序设置](#modify-application-settings)
 1. [生成测试密钥](#generate-test-keys)
 1. [生成项目](#build-the-project)
@@ -105,7 +105,7 @@ DKE 敏感度标签通过 Office 桌面应用程序中的敏感度功能区提�
 1. [在客户端中启用 DKE](#enable-dke-in-your-client)
 1. [将受保护的文件从 HYOK 标签迁移到 DKE 标签](#migrate-protected-files-from-hyok-labels-to-dke-labels)
 
-完成后，可以使用 DKE 加密文档和文件。 有关信息，请参阅 [向 Office 中的文件和电子邮件应用敏感度标签](https://support.microsoft.com/office/2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)。
+完成后，可以使用 DKE 加密文档和文件。 有关信息，请参阅将[敏感度标签应用于你的文件和电子邮件Office。](https://support.microsoft.com/office/2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)
 
 ### <a name="install-software-prerequisites-for-the-dke-service"></a>安装 DKE 服务的必备软件
 
@@ -113,9 +113,9 @@ DKE 敏感度标签通过 Office 桌面应用程序中的敏感度功能区提�
 
 **.NET Core 3.1 SDK**。 从下载 [.NET Core 3.1 下载并安装](https://dotnet.microsoft.com/download/dotnet-core/3.1)SDK。
 
-**Visual Studio代码**。 从 Visual Studio代码 [https://code.visualstudio.com/](https://code.visualstudio.com) 。 安装完成后，运行Visual Studio代码并选择 **查看** \> **扩展**。 安装这些扩展。
+**Visual Studio Code**。 从 Visual Studio Code [https://code.visualstudio.com/](https://code.visualstudio.com) 下载文件。 安装完成后，运行Visual Studio Code并选择 **查看** \> **扩展**。 安装这些扩展。
 
-- C#代码Visual Studio代码
+- C#Visual Studio Code
 
 - NuGet 程序包管理器
 
@@ -123,17 +123,17 @@ DKE 敏感度标签通过 Office 桌面应用程序中的敏感度功能区提�
 
 - [Git](https://git-scm.com/downloads)
 
-- [GitHub 桌面](https://desktop.github.com/)
+- [GitHub桌面](https://desktop.github.com/)
 
-- [GitHub 企业版](https://github.com/enterprise)
+- [GitHub Enterprise](https://github.com/enterprise)
 
 **OpenSSL** 部署 DKE [后，必须安装 OpenSSL](https://slproweb.com/products/Win32OpenSSL.html)以生成测试密钥。 [](#generate-test-keys) 请确保从环境变量路径正确调用它。 例如，有关详细信息，请参阅 中的"将安装目录添加到 [https://www.osradar.com/install-openssl-windows/](https://www.osradar.com/install-openssl-windows/) PATH"。
 
-### <a name="clone-the-dke-github-repository"></a>克隆 DKE GitHub 存储库
+### <a name="clone-the-dke-github-repository"></a>克隆 DKE GitHub存储库
 
-Microsoft 在 GitHub 存储库中提供 DKE 源文件。 克隆存储库以在本地生成项目供组织使用。 DKE GitHub 存储库位于 [https://github.com/Azure-Samples/DoubleKeyEncryptionService](https://github.com/Azure-Samples/DoubleKeyEncryptionService) 。
+Microsoft 在数据库存储库中提供 DKE GitHub文件。 克隆存储库以在本地生成项目供组织使用。 DKE GitHub存储库位于 [https://github.com/Azure-Samples/DoubleKeyEncryptionService](https://github.com/Azure-Samples/DoubleKeyEncryptionService) 。
 
-以下说明适用于没有经验的 git 或 Visual Studio Code 用户：
+以下说明适用于没有经验的 git 或 Visual Studio Code用户：
 
 1. 在浏览器中，转到 [https://github.com/Azure-Samples/DoubleKeyEncryptionService](https://github.com/Azure-Samples/DoubleKeyEncryptionService) ：。
 
@@ -142,22 +142,22 @@ Microsoft 在 GitHub 存储库中提供 DKE 源文件。 克隆存储库以在�
     例如：
 
    > [!div class="mx-imgBorder"]
-   > ![从 GitHub 克隆双密钥加密服务存储库](../media/dke-clone.png)
+   > ![从数据库克隆双密钥加密服务GitHub](../media/dke-clone.png)
 
-3. 在Visual Studio代码"中，选择 **"查看** \> **命令调色板**"，然后选择 **"Git： 克隆"。** 若要跳转到列表中的选项，请开始键入以筛选 `git: clone` 条目，然后从下拉列表中选择它。 例如：
+3. In Visual Studio Code， select **View** \> **Command Palette** and select **Git： Clone**. 若要跳转到列表中的选项，请开始键入以筛选 `git: clone` 条目，然后从下拉列表中选择它。 例如：
 
    > [!div class="mx-imgBorder"]
-   > ![Visual Studio代码 GIT：Clone 选项](../media/dke-vscode-clone.png)
+   > ![Visual Studio CodeGIT：Clone 选项](../media/dke-vscode-clone.png)
 
-4. 在文本框中，粘贴从 Git 复制的 URL，然后选择"从 **GitHub 克隆"。**
+4. 在文本框中，粘贴从 Git 复制的 URL，然后从"克隆 **GitHub"。**
 
 5. 在出现的 **"选择** 文件夹"对话框中，浏览到存储库并选择存储位置。 在提示符下，选择"打开 **"。**
 
-    存储库在代码Visual Studio打开，在左下角显示当前 Git 分支。 例如，分支应为 **主**。 例如：
+    存储库在 Visual Studio Code 中打开，在左下角显示当前 Git 分支。 例如，分支应为 **主**。 例如：
 
-   ![显示主分支Visual Studio代码中的 DKE 存储库的屏幕截图](../media/dke-vscode-main-branch.jpg)
+   ![显示主分支Visual Studio Code DKE 存储库的屏幕截图](../media/dke-vscode-main-branch.jpg)
 
-6. 如果你不在主分支上，则需要选择它。 在Visual Studio代码"中，选择 **分支，然后** 从显示的分支列表中选择"主"。
+6. 如果你不在主分支上，则需要选择它。 在Visual Studio Code中，选择 **分支，然后** 从显示的分支列表中选择"主"。
 
    > [!IMPORTANT]
    > 选择主分支可确保你拥有用于生成项目的正确文件。 如果不选择正确的分支，部署将失败。
@@ -171,7 +171,7 @@ Microsoft 在 GitHub 存储库中提供 DKE 源文件。 克隆存储库以在�
 - [密钥访问设置](#key-access-settings)
 - [租户和密钥设置](#tenant-and-key-settings)
 
-修改"打开"appsettings.js中的应用程序设置。 此文件位于在 DoubleKeyEncryptionService\src\customer-key-store 下本地克隆的 DoubleKeyEncryptionService 存储库。 例如，在Visual Studio代码中，您可以浏览到文件，如下图所示。
+修改"打开"appsettings.js中的应用程序设置。 此文件位于在 DoubleKeyEncryptionService\src\customer-key-store 下本地克隆的 DoubleKeyEncryptionService 存储库。 例如，在Visual Studio Code中，您可以浏览到该文件，如下图所示。
 
 ![在文件上appsettings.jsDKE 的配置文件。](../media/dke-appsettingsjson.png)
 
@@ -263,7 +263,7 @@ DKE 租户和密钥设置位于appsettings.js **on** 文件中。
 
 生成密钥：
 
-1. 从 Windows"开始"菜单中，运行 OpenSSL 命令提示符。
+1. 从"Windows"菜单中，运行 OpenSSL 命令提示符。
 
 2. 更改为要保存测试密钥的文件夹。 通过完成此任务中的步骤创建的文件存储在同一文件夹中。
 
@@ -294,7 +294,7 @@ DKE 租户和密钥设置位于appsettings.js **on** 文件中。
     > [!IMPORTANT]
     > 复制此内容时，请勿删除任何 PEM 数据。
 
-9. 在Visual Studio代码中，浏览到 **Startup.cs** 文件。 此文件位于在 DoubleKeyEncryptionService\src\customer-key-store\ 下本地克隆的 DoubleKeyEncryptionService 存储库。
+9. 在Visual Studio Code中，浏览到 **Startup.cs** 文件。 此文件位于在 DoubleKeyEncryptionService\src\customer-key-store\ 下本地克隆的 DoubleKeyEncryptionService 存储库。
 
 10. 找到以下行：
 
@@ -322,7 +322,7 @@ DKE 租户和密钥设置位于appsettings.js **on** 文件中。
 
 使用以下说明在本地生成 DKE 项目：
 
-1. 在Visual Studio代码的 DKE 服务存储库中，选择"查看命令调色板"，然后在提示符 \> 下键入 build。
+1. In Visual Studio Code， in the DKE service repository， select **View** \> **Command Palette** and then type **build** at the prompt.
 
 2. From the list， choose **Tasks： Run build task**.
 
@@ -374,7 +374,7 @@ DKE 租户和密钥设置位于appsettings.js **on** 文件中。
 
 若要发布密钥存储，需要创建 Azure 应用服务实例来托管 DKE 部署。 接下来，将生成的密钥发布到 Azure。
 
-1. 在浏览器中，登录到 [Microsoft Azure 门户](https://ms.portal.azure.com)，然后转到应用 **服务**  >  **添加**。
+1. 在浏览器中，登录到 Microsoft Azure 门户，然后转到"应用 [服务](https://ms.portal.azure.com)""**添加**  >  **"。**
 
 2. 选择订阅和资源组并定义实例详细信息。
 
@@ -409,15 +409,15 @@ DKE 租户和密钥设置位于appsettings.js **on** 文件中。
 
    例如：`customer-key-store\src\customer-key-store\bin\Debug\netcoreapp3.1\publish\`
 
-4. 将发布目录中的所有文件都发送到 .zip 文件。 创建 .zip 文件时，请确保目录中的所有文件都位于 .zip 文件的根级别。
+4. 将发布目录中的所有文件都发送到.zip文件。 创建.zip文件时，请确保目录中的所有文件都位于文件.zip级别。
 
-5. 将创建的 .zip 文件拖放到上面打开的 ZipDeployUI 网站。 例如：https://dkeservice.scm.azurewebsites.net/ZipDeployUI
+5. 将创建的.zip文件拖放到上面打开的 ZipDeployUI 网站。 例如：https://dkeservice.scm.azurewebsites.net/ZipDeployUI
 
 DKE 已部署，你可以浏览到已创建的测试密钥。 继续验证 [以下](#validate-your-deployment) 部署。
 
 #### <a name="publish-via-ftp"></a>通过 FTP 发布
 
-1. 连接到上面创建的应用 [服务](#deploy-the-dke-service-and-publish-the-key-store)。
+1. 连接上创建[的应用服务。](#deploy-the-dke-service-and-publish-the-key-store)
 
    在浏览器中，转到 **：Azure 门户**  >  **应用服务**  >  **部署中心**  >  **手动部署**  >  **FTP**  >  **仪表板**。
 
@@ -437,9 +437,9 @@ DKE 已部署，你可以浏览到已创建的测试密钥。 继续验证 [以�
 
    例如：`customer-key-store\src\customer-key-store\bin\Debug\netcoreapp3.1\publish\`
 
-6. 将发布目录中的所有文件都发送到 zip 文件。 创建 .zip 文件时，请确保目录中的所有文件都位于 .zip 文件的根级别。
+6. 将发布目录中的所有文件都发送到 zip 文件。 创建.zip文件时，请确保目录中的所有文件都位于文件.zip级别。
 
-7. 从 FTP 客户端，使用复制的连接信息连接到应用服务。 将上一步中创建的 .zip 文件上载到 Web 应用的根目录。
+7. 从 FTP 客户端，使用复制的连接信息连接到应用服务。 Upload.zip步骤中创建的 web 应用程序根目录的文件。
 
 DKE 已部署，你可以浏览到已创建的测试密钥。 接下来， [验证部署](#validate-your-deployment)。
 
@@ -469,13 +469,13 @@ key_store_tester.ps1 https://mydkeservice.com/mykey
 
 注册 DKE 服务：
 
-1. 在浏览器中，打开 [Microsoft Azure 门户](https://ms.portal.azure.com/)，然后转到"所有 **服务** \> **标识** \> **应用注册"。**
+1. 在浏览器中，[打开Microsoft Azure门户](https://ms.portal.azure.com/)，然后转到"所有 **服务** \> **标识** \> **应用注册"。**
 
 2. 选择 **"新建注册**"，然后输入有意义的名称。
 
 3. 从显示的选项中选择帐户类型。
 
-   如果你将 Microsoft Azure 与非自定义域（如 **onmicrosoft.com）** 一同使用，请选择"仅 Microsoft (- 单租户 **) "。**
+   如果对非自定义Microsoft Azure（如 **onmicrosoft.com）** 使用帐户，请选择"仅 microsoft (- 单租户 **) "。**
 
    例如：
 
@@ -522,7 +522,7 @@ key_store_tester.ps1 https://mydkeservice.com/mykey
 
     在新的客户端应用程序中：
 
-    1. 将客户端 ID 定义为 `d3590ed6-52b3-4102-aeff-aad2292ab01c` 。 此值是Microsoft Office ID，使 Office 能够获取密钥存储的访问令牌。
+    1. 将客户端 ID 定义为 `d3590ed6-52b3-4102-aeff-aad2292ab01c` 。 此值是Microsoft Office客户端 ID，Office获取密钥存储的访问令牌。
 
     2. 在 **"授权范围"****下，选择** user_impersonation范围。
 
@@ -536,21 +536,21 @@ key_store_tester.ps1 https://mydkeservice.com/mykey
 
 ## <a name="create-sensitivity-labels-using-dke"></a>使用 DKE 创建敏感度标签
 
-在 Microsoft 365 合规中心，创建一个新的敏感度标签，并像否则一样应用加密。 选择 **"使用双密钥加密** "，然后输入密钥的终结点 URL。
+在Microsoft 365中心中，创建新的敏感度标签，并像否则一样应用加密。 选择 **"使用双密钥加密** "，然后输入密钥的终结点 URL。
 
 例如：
 
 > [!div class="mx-imgBorder"]
-> ![选择 Microsoft 365 合规中心中的"使用双密钥加密"](../media/dke-use-dke.png)
+> ![选择安全与合规中心中的"使用Microsoft 365密钥加密"](../media/dke-use-dke.png)
 
-你添加的任何 DKE 标签都将开始在最新版本的 Microsoft 365 企业应用版中向用户显示。
+你添加的任何 DKE 标签都将开始在最新版本的 Microsoft 365 企业应用版 中显示。
 
 > [!NOTE]
 > 客户端可能需要 24 小时才能刷新新标签。
 
 ### <a name="enable-dke-in-your-client"></a>在客户端中启用 DKE
 
-如果你是 Office 预览体验成员，则启用 DKE。 否则，请通过添加以下注册表项为客户端启用 DKE：
+如果你是预览体验成员Office，将启用 DKE。 否则，请通过添加以下注册表项为客户端启用 DKE：
 
 ```console
    [HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\MSIPC\flighting]

@@ -1,5 +1,5 @@
 ---
-title: Microsoft 托管桌面存档设备
+title: Microsoft 托管桌面存档的设备
 description: 即将停用的设备仍可注册，但支持时间将缩短
 keywords: Microsoft 托管桌面, Microsoft 365, 服务, 文档
 ms.service: m365-md
@@ -18,12 +18,12 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 03/25/2021
 ms.locfileid: "51218732"
 ---
-# <a name="microsoft-managed-desktop-archived-devices"></a>Microsoft 托管桌面存档设备
+# <a name="microsoft-managed-desktop-archived-devices"></a>Microsoft 托管桌面存档的设备
 
-为确保获得最佳用户体验，Microsoft 托管桌面在特定时间点停用对设备的支持。 本文列出了即将在几年内停用的设备，我们将这些设备称为"已存档"。 如果你使用已有的设备开始使用 Microsoft 托管桌面，应仔细检查此列表。
+为了确保最佳的用户体验，Microsoft 托管桌面某个时间点停用对设备的支持。 本文列出了即将在几年内停用的设备，我们将这些设备称为"已存档"。 如果你开始使用已拥有Microsoft 托管桌面，应仔细检查此列表。
 
 >[!IMPORTANT]
->现在，你仍然可以注册这些设备，但它们使用 Microsoft 托管桌面的服务时间将更短。 如果你要购买新设备，你应该使用活动设备 [列表中的型号](./device-list.md)。
+>现在，你仍然可以注册这些设备，但使用此类设备Microsoft 托管桌面。 如果你要购买新设备，你应该使用活动设备 [列表中的型号](./device-list.md)。
 
 <!-- Microsoft 365 E5; Device as a Service -->
 <!-- Split from device & technologies topic. Destination topic for aka.ms/device-list  -->
@@ -32,9 +32,9 @@ ms.locfileid: "51218732"
 
 
 >[!NOTE]
->在此表中，"停用日期"是 Microsoft 托管桌面不再支持此模型的日期。 在此日期，此模型的所有注册设备都将从 Microsoft 托管桌面中删除，无论设备何时注册。
+>在此表中，"停用日期"是系统不再支持此Microsoft 托管桌面的日期。 在此日期，此模型的所有注册设备都将从Microsoft 托管桌面中删除，无论设备何时注册。
 
-#### <a name="microsoft-managed-desktop-archived-devices"></a>Microsoft 托管桌面存档设备
+#### <a name="microsoft-managed-desktop-archived-devices"></a>Microsoft 托管桌面存档的设备
 
 | 模型  | 最低规格  | 其他要求   | 停用日期 |
 |---------|---------|---------|---------|
@@ -76,9 +76,9 @@ ms.locfileid: "51218732"
 
 此外，设备还必须：
 
-- 具有 Microsoft 托管桌面批准的映像。 在订购设备时，请确保指定它们正与 Microsoft 托管桌面一同使用。
-- 尚未完成 Windows 首次运行体验。
-- 使用设备注册功能向 Microsoft 托管[桌面注册](../get-started/register-devices-self.md)
+- 将图像批准Microsoft 托管桌面。 在订购设备时，请确保指定它们正与设备Microsoft 托管桌面。
+- 尚未完成首次Windows体验。
+- 使用设备Microsoft 托管桌面[注册功能向用户](../get-started/register-devices-self.md)注册
 
 #### <a name="more-help"></a>更多帮助
 

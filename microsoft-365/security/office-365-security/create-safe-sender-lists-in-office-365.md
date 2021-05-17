@@ -14,7 +14,7 @@ search.appverid:
 ms.assetid: 9721b46d-cbea-4121-be51-542395e6fd21
 ms.custom:
 - seo-marvel-apr2020
-description: 管理员可以了解在 Exchange Online Protection 和 EOP (中允许入站邮件的可用) 。
+description: 管理员可以了解在 EOP 服务中允许入站邮件的可用Exchange Online Protection (首选) 。
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: e5473f8c37b4edcf6c2451cf995b430edbe09533
@@ -33,12 +33,12 @@ ms.locfileid: "51203675"
 - [Microsoft Defender for Office 365 计划 1 和计划 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-如果你是在 Exchange Online 中拥有邮箱的 Microsoft 365 客户，或者没有 Exchange Online 邮箱的独立 Exchange Online Protection (EOP) 客户，EOP 提供了多种方式确保用户将接收来自受信任发件人的电子邮件。 这些选项包括 Exchange 邮件流规则 (也称为传输规则) 、Outlook 安全发件人、IP 允许列表 (连接筛选) 以及反垃圾邮件策略中允许的发件人列表或允许的域列表。 您一起可以将这些选项视为安全 _发件人列表_。
+如果你是在 Exchange Online 中拥有邮箱的 Microsoft 365 客户或没有 Exchange Online 邮箱的独立 Exchange Online Protection (EOP) 客户，EOP 提供了多种方式确保用户将接收来自受信任发件人的电子邮件。 这些选项包括 Exchange 邮件流规则 (也称为传输规则) 、Outlook 保险箱 发件人、IP 允许列表 (连接筛选) 以及反垃圾邮件策略中允许的发件人列表或允许的域列表。 您一起可以将这些选项视为安全 _发件人列表_。
 
 以下列表中介绍了可用安全发件人列表，从最推荐到最不推荐的顺序：
 
 1. 邮件流规则
-2. Outlook 安全发件人
+2. Outlook 保险箱发件人
 3. IP 允许列表 (连接筛选) 
 4. 允许发件人列表或允许的域 (反垃圾邮件策略) 
 
@@ -52,13 +52,13 @@ ms.locfileid: "51203675"
 >
 > - 若要允许域发送未经身份验证的电子邮件 (绕过反欺骗保护) 但不绕过反垃圾邮件和反恶意软件检查，可以将其添加到 [AllowedToSpoof 安全发件人列表中](walkthrough-spoof-intelligence-insight.md)
 >
-> - EOP 和 Outlook 检查不同的邮件属性以确定邮件的发件人。 有关详细信息，请参阅本文稍后 [介绍的](#considerations-for-bulk-email) 批量电子邮件的注意事项部分。
+> - EOP 和 Outlook检查不同的邮件属性以确定邮件的发件人。 有关详细信息，请参阅本文稍后 [介绍的](#considerations-for-bulk-email) 批量电子邮件的注意事项部分。
 
 相比之下，您还可以使用阻止的发件人列表来阻止来自 _特定来源的电子邮件_。 有关详细信息，请参阅[在 EOP 中创建阻止发件人列表](create-block-sender-lists-in-office-365.md)。
 
 ## <a name="recommended-use-mail-flow-rules"></a> (推荐) 使用邮件流规则
 
-Exchange Online 和独立 EOP 中的邮件流规则使用条件和例外来标识邮件，以及指定应针对这些邮件执行哪些操作的操作。 有关详细信息，请参阅 Mail [flow rules (transport rules) in Exchange Online](/Exchange/security-and-compliance/mail-flow-rules/mail-flow-rules)。
+邮件流规则Exchange Online和独立 EOP 中的邮件流规则使用条件和例外来标识邮件，以及用于指定应针对这些邮件执行哪些操作的操作。 有关详细信息，请参阅邮件[流规则 (中的) 传输Exchange Online。](/Exchange/security-and-compliance/mail-flow-rules/mail-flow-rules)
 
 以下示例假定您需要来自以下组织的电子邮件 contoso.com 跳过垃圾邮件筛选。 为此，请配置以下设置：
 
@@ -100,14 +100,14 @@ Exchange Online 和独立 EOP 中的邮件流规则使用条件和例外来标�
 
 ![EAC 中用于绕过垃圾邮件筛选的邮件流规则设置。](../../media/1-AllowList-SkipFilteringFromContoso.png)
 
-## <a name="use-outlook-safe-senders"></a>使用 Outlook 安全发件人
+## <a name="use-outlook-safe-senders"></a>使用Outlook 保险箱发件人
 
 > [!CAUTION]
-> 此方法会为攻击者将电子邮件成功发送到收件箱带来高风险，否则会进行筛选;但是，用户的安全发件人列表或安全域列表不会阻止筛选恶意软件或高可信度网络钓鱼邮件。
+> 此方法会为攻击者将电子邮件成功发送到收件箱带来高风险，否则会进行筛选;但是，用户的"发件人保险箱或保险箱"列表不会阻止恶意软件或高可信度网络钓鱼邮件被筛选。
 
-用户或管理员可以将发件人电子邮件地址添加到邮箱中的"安全发件人"列表中，而不是组织设置。 有关说明，请参阅 [在 Office 365 中配置 Exchange Online](configure-junk-email-settings-on-exo-mailboxes.md)邮箱上的垃圾邮件设置。 在大多数情况下，这是不可取的，因为发件人将绕过筛选堆栈的某些部分。 尽管您信任发件人，但发件人仍然可能会遭到入侵并发送恶意内容。 最好让筛选器执行检查每封邮件所需的操作，然后在筛选器出错时向 Microsoft 报告误报 [/](report-junk-email-messages-to-microsoft.md) 负数。 绕过筛选堆栈也会干扰 [ZAP](zero-hour-auto-purge.md)。
+用户或管理员可以将发件人电子邮件地址添加到邮箱中的"发件人保险箱列表中，而不是组织设置。 有关说明，请参阅 Configure [junk email settings on Exchange Online mailboxes in Office 365](configure-junk-email-settings-on-exo-mailboxes.md)。 在大多数情况下，这是不可取的，因为发件人将绕过筛选堆栈的某些部分。 尽管您信任发件人，但发件人仍然可能会遭到入侵并发送恶意内容。 最好让筛选器执行检查每封邮件所需的操作，然后在筛选器出错时向 Microsoft 报告误报 [/](report-junk-email-messages-to-microsoft.md) 负数。 绕过筛选堆栈也会干扰 [ZAP](zero-hour-auto-purge.md)。
 
-当邮件由于用户的安全发件人列表而跳过垃圾邮件筛选时 **，X-Forefront-Antispam-Report** 头字段将包含值 ，该值指示已绕过对垃圾邮件、欺骗和网络钓鱼的 `SFV:SFE` 筛选。
+当由于用户的 保险箱 发件人列表导致邮件跳过垃圾邮件筛选时 **，X-Forefront-Antispam-Report** 头字段将包含值 ，该值指示已绕过对垃圾邮件、欺骗和网络钓鱼的筛选。 `SFV:SFE`
 
 ## <a name="use-the-ip-allow-list"></a>使用 IP 允许列表
 
@@ -150,13 +150,13 @@ Exchange Online 和独立 EOP 中的邮件流规则使用条件和例外来标�
 
 - 地址 `5321.MailFrom` 为 blueyonder.airlines@margiestravel.com。
 
-- 该 `5322.From` 地址 blueyonder@news.blueyonderairlines.com，你将在 Outlook 中看到该地址。
+- 地址是 blueyonder@news.blueyonderairlines.com，你将在邮件中 `5322.From` Outlook。
 
-EOP 中的反垃圾邮件策略中的安全发件人列表和安全域列表仅检查地址，这类似于使用该地址的 `5322.From` Outlook 安全 `5322.From` 发件人。
+保险箱 EOP 中的反垃圾邮件策略中的发件人列表和安全域列表仅检查这些地址， `5322.From` 这Outlook 保险箱地址的发件人类似 `5322.From` 。
 
 若要阻止筛选此邮件，可以执行以下步骤：
 
-- 添加 blueyonder@news.blueyonderairlines.com (Outlook `5322.From`) 发件人的地址。
+- 添加 blueyonder@news.blueyonderairlines.com (`5322.From` 发件人) 地址Outlook 保险箱地址。
 
 - [将邮件流规则](#recommended-use-mail-flow-rules) 与以下条件一同使用：查找 blueyonder@news.blueyonderairlines.com (、blueyonder.airlines@margiestravel.com (或) `5322.From` `5321.MailFrom` 的邮件。
 

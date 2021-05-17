@@ -106,7 +106,7 @@ ms.locfileid: "51203750"
 - **详细信息**
 - **Count**
 - **开始日期**
-- **建议**：你可以从此处单击链接以在 Microsoft 365 管理中心管理用户。
+- **建议**：你可以从此处单击链接，在管理中心Microsoft 365用户。
 
 !["转发修改"报告中"新建转发用户"视图的详细信息表中的"详细信息"飞出](../../media/mfi-forwarding-modifications-report-new-forwarding-users-view-details-table-details.png)
 

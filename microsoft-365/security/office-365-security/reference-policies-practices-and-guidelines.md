@@ -39,15 +39,15 @@ Microsoft 致力于在 Web 上提供最可信赖的用户体验。 因此，Micr
 
 ## <a name="general-microsoft-policies"></a>Microsoft 一般性策略
 
-发送给 Microsoft 365 用户的电子邮件必须遵守管理电子邮件传输和使用 Microsoft 365 的所有 Microsoft 策略。
+发送到用户Microsoft 365用户必须遵守管理电子邮件传输和使用电子邮件传输的所有 Microsoft Microsoft 365。
 
-- 适用于 Microsoft 365 的服务条款;特别是，禁止使用服务发送垃圾邮件或分发恶意软件。
+- 适用于服务条款Microsoft 365;特别是，禁止使用服务发送垃圾邮件或分发恶意软件。
 
 - [Microsoft 服务协议](https://www.microsoft.com/servicesagreement/)
 
 ## <a name="governmental-regulations"></a>政府法规
 
-发送给 Microsoft 365 用户的电子邮件必须遵守在适用管辖下管理电子邮件通信的所有适用法律和法规。
+发送给用户Microsoft 365必须遵守在适用管辖下管理电子邮件通信的所有适用法律和法规。
 
 - [CAN-SPAM Act:A Compliance Guide for Business](https://www.ftc.gov/tips-advice/business-center/guidance/can-spam-act-compliance-guide-business)
 
@@ -55,13 +55,13 @@ Microsoft 致力于在 Web 上提供最可信赖的用户体验。 因此，Micr
 
 ## <a name="technical-guidelines"></a>技术指南
 
-发送给 Microsoft 365 的电子邮件应遵循以下文档中所列的适用建议 (某些链接仅提供英文版) 。
+发送到 Microsoft 365 的电子邮件应符合以下文档中所列的适用建议 (某些链接仅提供英文) 。
 
 - [RFC 2505:Anti-Spam Recommendations for SMTP MTAs](https://www.ietf.org/rfc/rfc2505.txt)
 
 - [RFC 2920:SMTP Service Extension for Command Pipelining](https://www.ietf.org/rfc/rfc2920.txt)
 
-此外，连接到 Microsoft 365 的电子邮件服务器必须遵守以下要求：
+此外，连接到 Microsoft 365服务器必须遵守以下要求：
 
 - 发件人应符合互联网电子邮件传输的所有技术标准，该标准由互联网协会的互联网工程任务组 (IETF) 发布，包括 RFC 5321、RFC 5322 和其他。
 
@@ -81,9 +81,9 @@ Microsoft 致力于在 Web 上提供最可信赖的用户体验。 因此，Micr
 
 发件人、ISP 和其他服务提供商应主动管理出站 IP 地址的信誉。
 
-## <a name="microsoft-365-limits"></a>Microsoft 365 限制
+## <a name="microsoft-365-limits"></a>Microsoft 365限制
 
-发件人必须遵守 Exchange [Online Protection](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-limits)Limits 中列出的 Microsoft 365 限制。
+发件人必须遵守Microsoft 365限制中列出的Exchange Online Protection[限制](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-limits)。
 
 ## <a name="email-delivery-resources-and-organizations"></a>电子邮件传送资源和组织
 

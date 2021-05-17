@@ -46,8 +46,8 @@ ms.locfileid: "51218773"
 
 - [评估攻击面减少](./evaluate-attack-surface-reduction.md)
 - [评估 Exploit Protection](./evaluate-exploit-protection.md)
-- [评估网络保护](./evaluate-exploit-protection.md)
-- [评估受控文件夹访问权限](./evaluate-controlled-folder-access.md)
+- [网络保护功能评估](./evaluate-exploit-protection.md)
+- [受控文件夹访问评估](./evaluate-controlled-folder-access.md)
 - [评估应用程序防护](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-application-guard/test-scenarios-md-app-guard)
 - [评估网络防火墙](https://docs.microsoft.com/windows/security/threat-protection/windows-firewall/evaluating-windows-firewall-with-advanced-security-design-examples)
 

@@ -17,7 +17,7 @@ ms.collection:
 - m365initiative-m365-defender
 ms.custom:
 - seo-marvel-apr2020
-description: 管理员可以了解有关 Microsoft 365 E5 或 Microsoft Defender for Office 365 计划 2 组织中攻击模拟和培训的部署注意事项和常见问题。
+description: 管理员可以了解有关部署注意事项和有关攻击模拟和 Microsoft Defender for Microsoft 365 E5 For Office 365 Plan 2 组织中培训的常见问题。
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: f404e2a47756a611135fc70026bf0cce3eec62c4
@@ -29,7 +29,7 @@ ms.locfileid: "51203214"
 ---
 # <a name="attack-simulation-training-deployment-considerations-and-faq"></a>攻击模拟培训部署注意事项和常见问题解答
 
-攻击模拟培训现已 [普遍可用](https://techcommunity.microsoft.com/t5/microsoft-security-and/attack-simulation-training-in-microsoft-defender-for-office-365/ba-p/2037291)。 攻击模拟培训使 Microsoft 365 E5 或 Microsoft Defender for Office 365 计划 2 组织可以度量和管理社交工程风险，通过允许创建和管理由实际、已取消武器化钓鱼负载的网络钓鱼模拟。 与 Terranova 安全性合作提供的超目标培训可帮助提高知识并改变员工行为。
+攻击模拟培训现已 [普遍可用](https://techcommunity.microsoft.com/t5/microsoft-security-and/attack-simulation-training-in-microsoft-defender-for-office-365/ba-p/2037291)。 攻击模拟培训使 Microsoft 365 E5 或 Microsoft Defender for Office 365 计划 2 组织能够度量和管理社交工程风险，通过允许创建和管理由实际、已取消武器化网络钓鱼有效负载的网络钓鱼模拟。 与 Terranova 安全性合作提供的超目标培训可帮助提高知识并改变员工行为。
 
 有关攻击模拟培训入门的信息，请参阅使用 [攻击模拟培训入门](attack-simulation-training-get-started.md)。
 
@@ -37,15 +37,15 @@ ms.locfileid: "51203214"
 
 ## <a name="issues-with-end-user-experiences"></a>最终用户体验问题
 
-### <a name="phishing-simulation-urls-blocked-by-google-safe-browsing"></a>Google 安全浏览阻止的网络钓鱼模拟 URL
+### <a name="phishing-simulation-urls-blocked-by-google-safe-browsing"></a>Google 网页浏览阻止的网络钓鱼保险箱 URL
 
-URL 信誉服务可能会将攻击模拟培训使用的一个或多个 URL 标识为不安全。 Google Chrome 中的 Google 安全浏览会阻止一些带有欺骗性网站提前消息的模拟网络钓鱼 **URL。** 虽然我们与许多 URL 信誉供应商合作，始终允许我们的模拟 URL，但并不总是具有完全覆盖。
+URL 信誉服务可能会将攻击模拟培训使用的一个或多个 URL 标识为不安全。 Google 保险箱 Chrome 中的浏览功能会阻止一些带有欺骗性网站提前消息的模拟网络钓鱼 **URL。** 虽然我们与许多 URL 信誉供应商合作，始终允许我们的模拟 URL，但并不总是具有完全覆盖。
 
 ![Google Chrome 中的欺骗性网站提前警告](../../media/attack-sim-chrome-deceptive-site-message.png)
 
-请注意，此问题不会影响 Microsoft Edge。
+请注意，此问题不会影响Microsoft Edge。
 
-作为规划阶段的一部分，请务必先检查 URL 在支持的 Web 浏览器中的可用性，然后再在网络钓鱼活动中使用该 URL。 如果 Google 安全浏览阻止 URL，请按照[](https://support.google.com/chrome/a/answer/7532419)Google 的本指南允许访问 URL。
+作为规划阶段的一部分，请务必先检查 URL 在支持的 Web 浏览器中的可用性，然后再在网络钓鱼活动中使用该 URL。 如果 Google 保险箱阻止 URL，请按照 Google 的本指南[](https://support.google.com/chrome/a/answer/7532419)允许访问 URL。
 
 有关 [攻击模拟培训当前](attack-simulation-training-get-started.md) 使用的 URL 列表，请参阅使用攻击模拟培训入门。
 
@@ -70,7 +70,7 @@ URL 信誉服务可能会将攻击模拟培训使用的一个或多个 URL 标�
 
 - 收件人电子邮件地址无效。
 - 来宾用户。
-- 在 Azure AD (Azure Active Directory 中不再) 。
+- 在 Azure AD Azure Active Directory (中不再) 。
 
 只有具有有效邮箱的有效非来宾用户才包括在模拟中。 如果使用通讯组或启用邮件的安全组作为目标用户，可以使用[Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)中的[Get-DistributionGroupMember](/powershell/module/exchange/get-distributiongroupmember) cmdlet 查看和验证通讯组成员。
 
@@ -124,7 +124,7 @@ URL 信誉服务可能会将攻击模拟培训使用的一个或多个 URL 标�
 - 放弃其凭据的用户。
 - 将邮件报告为网络钓鱼的用户。
 
-如果用户报告为网络钓鱼的邮件未在攻击模拟培训模拟报告中捕获，则可能有 Exchange 邮件流规则 (也称为传输规则) 它阻止将报告的邮件送达 Microsoft。 验证任何邮件流规则是否未阻止到以下电子邮件地址的传递：
+如果用户报告为网络钓鱼的邮件未在攻击模拟培训模拟报告中捕获，则可能有 Exchange 邮件流规则 (也称为传输规则) 该规则阻止将报告的邮件送达 Microsoft。 验证任何邮件流规则是否未阻止到以下电子邮件地址的传递：
 
 - junk@office365.microsoft.com
 - abuse@messaging.microsoft.com
@@ -160,7 +160,7 @@ URL 信誉服务可能会将攻击模拟培训使用的一个或多个 URL 标�
 
 ### <a name="q-how-can-i-switch-to-other-languages-for-my-admin-portal-and-training-experience"></a>问：如何切换到其他语言以用于我的管理门户和培训体验？
 
-答：在 Microsoft 365 或 Office 365 中，每个用户帐户的语言配置都是特定的集中式。 有关如何更改语言设置的说明，请参阅更改 Microsoft [365 商业](https://support.microsoft.com/office/6f238bff-5252-441e-b32b-655d5d85d15b)版中的显示语言和时区。
+答：在Microsoft 365或Office 365中，语言配置是特定于每个用户帐户的集中式配置。 有关如何更改语言设置的说明，请参阅更改 Microsoft 365 for Business 中的显示语言[和时区](https://support.microsoft.com/office/6f238bff-5252-441e-b32b-655d5d85d15b)。
 
 请注意，配置更改可能需要 30 分钟才能在所有服务之间同步。
 

@@ -17,7 +17,7 @@ ms.collection:
 - m365initiative-defender-office365
 ms.custom:
 - seo-marvel-apr2020
-description: 管理员可以了解如何使用攻击模拟器在 Microsoft 365 E5 或 Microsoft Defender for Office 365 计划 2 组织中运行模拟钓鱼和密码攻击。
+description: 管理员可以了解如何使用攻击模拟器在 Microsoft 365 E5 或 Microsoft Defender for Office 365 计划 2 组织中运行模拟网络钓鱼和密码攻击。
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: 637e84281b85e8c859207ae81342a3c6ab3d00be
@@ -31,13 +31,13 @@ ms.locfileid: "51203257"
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
-**适用于** [Microsoft Defender for Office 365 计划 2](defender-for-office-365.md)
+**适用于 Microsoft** [Defender for Office 365计划 2](defender-for-office-365.md)
 
-如果你的组织拥有 Microsoft Defender for Office 365 计划[](office-365-ti.md)2（包括威胁调查和响应功能）。可以使用安全 & 合规中心中的攻击模拟器在组织中运行真实的攻击方案。 这些模拟攻击可以帮助你在真实攻击影响你的最后一线之前识别和查找易受攻击的用户。 阅读本文可了解更多信息。
+如果你的组织拥有 Microsoft Defender for Office 365 计划 2（包括威胁调查和响应功能）。可以使用安全 & 合规中心中的攻击模拟器在组织中运行真实的攻击方案。 [](office-365-ti.md) 这些模拟攻击可以帮助你在真实攻击影响你的最后一线之前识别和查找易受攻击的用户。 阅读本文可了解更多信息。
 
 > [!NOTE]
 >
-> 攻击模拟器（如本文中所述）现在是只读的，已替换为[Microsoft 365](https://security.microsoft.com)安全中心中"电子邮件&协作"节点中的攻击模拟培训。  有关详细信息，请参阅使用攻击 [模拟培训入门](attack-simulation-training-get-started.md)。
+> 攻击模拟器（如本文中所述）现在是只读的，已替换为安全中心中电子邮件&**协作** 节点中的攻击 [Microsoft 365培训](https://security.microsoft.com)。 有关详细信息，请参阅使用攻击 [模拟培训入门](attack-simulation-training-get-started.md)。
 >
 > 已禁用从此版本的攻击模拟器启动新模拟的能力。 但是，您仍然可以访问自 2021 年 1 月 24 日起最多 90 天的报告。
 
@@ -45,7 +45,7 @@ ms.locfileid: "51203257"
 
 - 若要打开安全与合规中心，请转到 <https://protection.office.com/>。 攻击模拟器位于威胁管理 **攻击** \> **模拟器 中**。 转到直接转到攻击模拟器，打开 <https://protection.office.com/attacksimulator> 。
 
-- 有关不同 Microsoft 365 订阅中攻击模拟器的可用性详细信息，请参阅 [Microsoft Defender for Office 365 服务说明](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)。
+- 有关跨不同用户订阅提供攻击模拟器Microsoft 365，请参阅[Microsoft Defender for Office 365 service description](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)。
 
 - 您必须是组织管理或 **安全管理员****角色组** 的成员。 若要详细了解安全与合规中心内的角色组，请参阅[安全与合规中心内的权限](permissions-in-the-security-and-compliance-center.md)。
 
@@ -55,7 +55,7 @@ ms.locfileid: "51203257"
 
 - 网络钓鱼活动将在 30 天内收集和处理事件。 历史市场活动数据将在你启动市场活动后最多 90 天内可用。
 
-- 攻击模拟和培训相关的数据与 Microsoft 365 服务的其他客户数据存储在一起。 有关详细信息，请参阅 [Microsoft 365 数据位置](../../enterprise/o365-data-locations.md)。
+- 攻击模拟和培训相关的数据与其他客户数据存储在一起，Microsoft 365服务。 有关详细信息，请参阅[Microsoft 365位置](../../enterprise/o365-data-locations.md)。
 
 - 攻击模拟器没有对应的 PowerShell cmdlet。
 
@@ -170,7 +170,7 @@ ms.locfileid: "51203257"
 
 4. 在 **"目标收件人"** 步骤中，执行下列步骤之一：
 
-   - 单击 **"通讯簿** "以选择 (活动) 或组的用户或组。 每个目标收件人都必须有一个 Exchange Online 邮箱。 如果在 **未输入搜索****条件** 的情况下单击"筛选"和"应用"，将返回所有收件人并添加到活动。
+   - 单击 **"通讯簿** "以选择 (活动) 或组的用户或组。 每个目标收件人必须具有一个Exchange Online邮箱。 如果在 **未输入搜索****条件** 的情况下单击"筛选"和"应用"，将返回所有收件人并添加到活动。
 
    - 单击 **"** 导入 **"，** 然后单击"文件导入"，以 (CSV) 或电子邮件地址的行分隔文件导入逗号分隔值。 每行必须包含收件人的电子邮件地址。
 
@@ -207,9 +207,9 @@ ms.locfileid: "51203257"
      >
      > - 您需要选择 URL。 对于 **网络钓鱼** (附件) 活动，可以在下一步中删除邮件正文中的链接 (否则邮件将包含链接和附件) 。 
 
-   - **附件类型**：此设置仅在网络网络钓鱼和附件 (**活动中)** 可用。 单击下拉列表并选择 **。DOCX** 或 **。列表中的 PDF。**
+   - **附件类型**：此设置仅在网络网络钓鱼和附件 (**活动中)** 可用。 单击下拉列表，**然后从.DOCX****或.PDF** 选择"选项"。
 
-   - **附件名称**：此设置仅在网络网络钓鱼和附件 (**活动中)** 可用。 输入 .docx 或 .pdf 附件的文件名。
+   - **附件名称**：此设置仅在网络网络钓鱼和附件 (**活动中)** 可用。 输入附件或附件.docx.pdf文件名。
 
    - **自定义登陆页面 URL：** 输入可选登陆页面，如果用户单击网络钓鱼链接并输入其凭据，将在此进行登录。 此链接将替换默认登陆页面。 例如，如果你有内部意识培训，可以在此处指定该 URL。
 
@@ -265,7 +265,7 @@ ms.locfileid: "51203257"
 
 4. 在 **"目标用户"** 步骤中，执行下列步骤之一：
 
-   - 单击 **"通讯簿** "以选择 (活动) 或组的用户或组。 每个目标收件人都必须有一个 Exchange Online 邮箱。 如果在 **未输入搜索****条件** 的情况下单击"筛选"和"应用"，将返回所有收件人并添加到活动。
+   - 单击 **"通讯簿** "以选择 (活动) 或组的用户或组。 每个目标收件人必须具有一个Exchange Online邮箱。 如果在 **未输入搜索****条件** 的情况下单击"筛选"和"应用"，将返回所有收件人并添加到活动。
 
    - 单击 **"** 导入 **"，** 然后单击"文件导入"，以 (CSV) 或电子邮件地址的行分隔文件导入逗号分隔值。 每行必须包含收件人的电子邮件地址。
 
@@ -277,7 +277,7 @@ ms.locfileid: "51203257"
 
      - **手动输入密码**：在 **"按 Enter 添加密码"框中** ，键入密码，然后按 Enter。 根据需要重复执行此步骤（次数不限）。
 
-     - **从字典文件上载** 密码：单击"上载"导入现有文本文件，其中包含每行一个密码和一个空最后一行。 文本文件的大小必须小于或小于 10 MB，并且不能超过 30000 个密码。
+     - **Upload词典文件添加** 密码：单击"Upload"导入现有文本文件，其中包含每行一个密码和一个空最后一行。 文本文件的大小必须小于或小于 10 MB，并且不能超过 30000 个密码。
 
    - **密码攻击**：在 **密码 () 攻击框中输入** 一个密码。
 
@@ -335,7 +335,7 @@ ms.locfileid: "51203257"
 
   - 客户端 IP 地址。
 
-  - 有关用户版本的 Windows 和 Web 浏览器的详细信息。
+  - 有关用户的网站和 Web 浏览器Windows的详细信息。
 
   可以单击 **"导出** "将结果导出到 CSV 文件。
 

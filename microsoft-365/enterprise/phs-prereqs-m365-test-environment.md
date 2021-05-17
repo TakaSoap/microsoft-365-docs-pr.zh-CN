@@ -23,11 +23,11 @@ ms.locfileid: "51199437"
 ---
 # <a name="identity-and-device-access-prerequisites-for-password-hash-synchronization-in-your-microsoft-365-test-environment"></a>Microsoft 365 测试环境中密码哈希同步的标识和设备访问先决条件
 
-*本测试实验室指南仅适用于 Microsoft 365 企业版测试环境。*
+*本测试实验室指南只能用于Microsoft 365测试环境。*
 
-[](../security/office-365-security/microsoft-365-policies-configurations.md)标识和设备访问配置是一组配置和条件访问策略，用于保护对 Microsoft 365 企业版中与 Azure Active Directory (Azure AD) 集成的所有服务的访问。
+[标识和设备访问](../security/office-365-security/microsoft-365-policies-configurations.md)配置是一组配置和条件访问策略，用于保护对 Microsoft 365 中与 Azure AD Azure Active Directory (集成的所有服务) 。
 
-本文介绍如何配置 Microsoft 365 测试环境，该环境满足标识和设备访问的混合密码哈希 [同步](../security/office-365-security/identity-access-prerequisites.md#prerequisites) 身份验证先决条件配置的要求。
+本文介绍如何配置满足Microsoft 365密码哈希同步身份验证先决条件配置的标识和设备访问的混合要求的测试环境。 [](../security/office-365-security/identity-access-prerequisites.md#prerequisites)
 
 设置此测试环境有 10 个阶段：
 
@@ -37,7 +37,7 @@ ms.locfileid: "51199437"
 4. 配置密码写回服务
 5. 为所有用户帐户配置自助密码重置
 6. 为所有用户帐户配置多重身份验证
-7. 启用已加入域的 Windows 计算机的自动设备注册
+7. 启用已加入域的计算机的Windows注册
 8. 配置 Azure AD 密码保护 
 9. 启用 Azure AD Identity Protection
 10. 启用 Exchange Online 和 Skype for Business Online 的新式身份验证
@@ -87,9 +87,9 @@ ms.locfileid: "51199437"
 
 仅为用户 2 帐户测试多重身份验证。
 
-## <a name="phase-7-enable-automatic-device-registration-of-domain-joined-windows-computers"></a>阶段 7：启用已加入域的 Windows 计算机的自动设备注册 
+## <a name="phase-7-enable-automatic-device-registration-of-domain-joined-windows-computers"></a>阶段 7：启用已加入域的计算机的Windows注册 
 
-按照 [以下说明](/azure/active-directory/devices/hybrid-azuread-join-plan) 启用已加入域的 Windows 计算机的自动设备注册。
+按照[以下说明](/azure/active-directory/devices/hybrid-azuread-join-plan)启用已加入域的计算机的自动Windows注册。
 
 ## <a name="phase-8-configure-azure-ad-password-protection"></a>第 8 阶段：配置 Azure AD 密码保护 
 

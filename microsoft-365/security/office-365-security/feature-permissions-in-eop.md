@@ -10,7 +10,7 @@ audience: ITPro
 ms.topic: conceptual
 localization_priority: Normal
 ms.assetid: 34674847-a6b7-4a7e-9eaa-b64f22bc150d
-description: 了解独立 Exchange Online Protection 中的任务所需的权限
+description: 了解独立部署中的任务所需的Exchange Online Protection
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: 212a109c792522270b7e5000747bec950b7f4fe2
@@ -25,13 +25,13 @@ ms.locfileid: "51203927"
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **适用对象**
--  [独立 Exchange Online Protection](exchange-online-protection-overview.md)
+-  [Exchange Online Protection独立](exchange-online-protection-overview.md)
 
-没有 Exchange Online (EOP) 的独立 Exchange Online Protection 使用基于角色的访问控制 (RBAC) 权限模型轻松地向管理员授予权限。 可以使用独立 EOP 中的权限功能快速启动并运行新组织。
+独立Exchange Online Protection (EOP) 邮箱Exchange Online基于角色的访问控制 (RBAC) 权限模型轻松地向管理员授予权限。 可以使用独立 EOP 中的权限功能快速启动并运行新组织。
 
 若要向用户授予权限，请参阅在 EOP 中管理 [管理员角色组](manage-admin-role-group-permissions-in-eop.md)。
 
-有关 Microsoft 365 中的权限详细信息，请参阅关于 [管理员角色](../../admin/add-users/about-admin-roles.md)。
+有关跨用户的权限Microsoft 365，请参阅关于[管理员角色](../../admin/add-users/about-admin-roles.md)。
 
 ## <a name="role-based-permissions"></a>基于角色的权限
 
@@ -41,7 +41,7 @@ ms.locfileid: "51203927"
 
 ## <a name="role-groups"></a>角色组
 
-为了便于向用户分配角色，独立 EOP 使用角色组。 管理角色将分配给角色组，角色组的成员将获取与角色关联的权限。 换句话说，管理角色不会直接分配给用户;它们将被分配给角色组。 此模型允许您一次向多个角色组成员分配多个角色。 角色组的成员可以是邮件用户、启用邮件的安全组、来自 Microsoft 365 管理中心的用户和其他角色组。
+为了便于向用户分配角色，独立 EOP 使用角色组。 管理角色将分配给角色组，角色组的成员将获取与角色关联的权限。 换句话说，管理角色不会直接分配给用户;它们将被分配给角色组。 此模型允许您一次向多个角色组成员分配多个角色。 角色组的成员可以是邮件用户、启用邮件的安全组、Microsoft 365管理中心的用户和其他角色组。
 
 下图显示了用户、角色组和角色之间的关系。
 
@@ -53,17 +53,17 @@ ms.locfileid: "51203927"
 
 |角色组|说明|分配的默认角色|
 |---|---|---|
-|ComplianceManagement|在组织中配置和管理合规性设置，包括 DLP (DLP) DLP 功能时。 <p> Azure AD [中合规性管理员](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#compliance-administrator) 角色的成员会自动获得此角色组的权限。|审核日志 <p> 合规性管理 <p> 信息权限管理 <p> 保留管理 <p> View-Only审核日志 <p> 仅查看配置 <p> 仅查看收件人|
+|ComplianceManagement|在组织中配置和管理合规性设置，包括 DLP (DLP) DLP 功能时。 <p> Azure AD [中合规性管理员](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#compliance-administrator) 角色的成员会自动获得此角色组的权限。|审核日志 <p> 合规性管理 <p> 信息权限管理 <p> 保留管理 <p> 仅供查看审核日志 <p> 仅查看配置 <p> 仅查看收件人|
 |ContentExplorerContentViewer|未使用。|数据分类内容查看器|
 |ContentExplorerListViewer|未使用。|数据分类列表查看器|
 |HelpDesk|查看和管理邮件用户。|重置密码 <p> 用户选项 <p> 仅查看收件人|
 |HygieneManagement|管理反 (、反恶意软件等保护) 。|传输清洁 <p> 仅查看配置 <p> 仅查看收件人|
 |MailFlowAdministrator|查看和管理接受域和连接器|远程域和接受域 <p> 仅查看收件人|
-|OrganizationManagement|管理员访问整个组织以及执行几乎任何任务的能力。 <p> Azure AD [中的全局管理员](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#global-administrator--company-administrator) 角色的成员会自动获取此角色组的权限。 <p> **重要** 提示：由于 OrganizationManagement 角色组是一个强大的角色，因此只有执行组织级别管理任务的用户才能成为此角色组的成员。|AntiMalware <p> AntiSpam <p> 审核日志 <p> 合规性管理员 <p> 动态通讯组 <p> 信息权限管理 <p> 邮件收件人创建 <p> 邮件收件人 <p> 邮件跟踪 <p> 迁移 <p> 组织客户端访问 <p> 组织配置 <p> 组织传输设置 <p> Quarantine <p> 收件人策略 <p> 远程域和接受域 <p> 重置密码 <p> 保留管理 <p> 角色管理 <p> 安全管理员 <p> 安全组创建和成员身份 <p> 安全读取者 <p> 敏感度标签管理员 <p> 监督 <p> 传输清洁 <p> 传输规则 <p> 用户选项 <p> View-Only AntiMalware <p> View-Only AntiSpam <p> View-Only审核日志 <p> 仅查看配置 <p> View-Only隔离 <p> 仅查看收件人 <p> View-Only威胁智能|
-|QuarantineAdministrator|管理所有收件人的隔离邮件。|Quarantine|
+|OrganizationManagement|管理员访问整个组织以及执行几乎任何任务的能力。 <p> Azure AD [中的全局管理员](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#global-administrator--company-administrator) 角色的成员会自动获取此角色组的权限。 <p> **重要** 提示：由于 OrganizationManagement 角色组是一个强大的角色，因此只有执行组织级别管理任务的用户才能成为此角色组的成员。|AntiMalware <p> AntiSpam <p> 审核日志 <p> 合规性管理员 <p> 动态通讯组 <p> 信息权限管理 <p> 邮件收件人创建 <p> 邮件收件人 <p> 邮件跟踪 <p> 迁移 <p> 组织客户端访问 <p> 组织配置 <p> 组织传输设置 <p> 隔离 <p> 收件人策略 <p> 远程域和接受域 <p> 重置密码 <p> 保留管理 <p> 角色管理 <p> 安全管理员 <p> 安全组创建和成员身份 <p> 安全读取者 <p> 敏感度标签管理员 <p> 监督 <p> 传输清洁 <p> 传输规则 <p> 用户选项 <p> View-Only AntiMalware <p> View-Only AntiSpam <p> 仅供查看审核日志 <p> 仅查看配置 <p> View-Only隔离 <p> 仅查看收件人 <p> View-Only威胁智能|
+|QuarantineAdministrator|管理所有收件人的隔离邮件。|隔离|
 |RecipientManagement|在组织中创建、管理和删除收件人对象。|动态通讯组 <p> 邮件收件人创建 <p> 邮件收件人 <p> 邮件跟踪 <p> 迁移 <p> 收件人策略 <p> 重置密码|
 |RecordsManagement|配置遵从性功能，如保留策略标记、邮件分类和邮件流规则 (也称为传输) 。|邮件跟踪 <p> 保留管理 <p> 传输规则|
-|SecurityAdministrator|配置组织中保护的各个方面 (反垃圾邮件、反恶意软件、反欺骗、隔离等) 。 <p> Azure AD [中安全管理员](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#security-administrator) 角色的成员会自动获取此角色组的权限。|AntiMalware <p> AntiSpam <p> 审核日志 <p> Quarantine <p> 安全管理员 <p> 敏感度标签管理员 <p> View-Only AntiMalware <p> View-Only AntiSpam <p> View-Only审核日志 <p> View-Only隔离 <p> View-Only威胁智能|
+|SecurityAdministrator|配置组织中保护的各个方面 (反垃圾邮件、反恶意软件、反欺骗、隔离等) 。 <p> Azure AD [中安全管理员](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#security-administrator) 角色的成员会自动获取此角色组的权限。|AntiMalware <p> AntiSpam <p> 审核日志 <p> 隔离 <p> 安全管理员 <p> 敏感度标签管理员 <p> View-Only AntiMalware <p> View-Only AntiSpam <p> 仅供查看审核日志 <p> View-Only隔离 <p> View-Only威胁智能|
 |SecurityReader|对组织中保护的各个方面的仅查看 (反垃圾邮件、反恶意软件、反欺骗、隔离等) 。 <p> Azure AD [中安全读者](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#security-reader) 角色的成员会自动获取此角色组的权限。|安全读取者 <p> View-Only AntiMalware <p> View-Only AntiSpam <p> View-Only隔离 <p> View-Only威胁智能|
 |TenantAdmins|此角色组的成员身份跨服务进行同步并集中管理。 默认情况下，不会为此角色组分配任何角色。 但是，它将是组织管理角色组的成员，并且将继承这些权限。|无|
 |ViewOnlyOrganizationManagement|查看收件人、保护和配置对象及其在组织中的属性。|合规性管理员 <p> 安全管理员 <p> 安全读取者 <p> 敏感度标签管理员 <p> 仅查看配置 <p> 仅查看收件人|
@@ -97,7 +97,7 @@ ms.locfileid: "51203927"
 |组织客户端访问<sup>\*</sup>||OrganizationManagement|
 |组织配置|查看报告。|OrganizationManagement|
 |组织传输设置<sup>\*</sup>||OrganizationManagement|
-|Quarantine|管理所有收件人的所有类型的隔离邮件。|OrganizationManagement <p> QuarantineAdministrator <p> SecurityAdministrator|
+|隔离|管理所有收件人的所有类型的隔离邮件。|OrganizationManagement <p> QuarantineAdministrator <p> SecurityAdministrator|
 |收件人策略<sup>\*</sup>||OrganizationManagement <p> RecipientManagement|
 |远程域和接受域|管理远程域、接受域和连接器。|MailFlowAdministrator <p> OrganizationManagement|
 |重置密码<sup>\*</sup>||HelpDesk <p> OrganizationManagement <p> RecipientManagement|
@@ -113,7 +113,7 @@ ms.locfileid: "51203927"
 |用户选项|修改现有邮件用户。|HelpDesk <p> OrganizationManagement|
 |View-Only AntiMalware|查看反恶意软件功能的配置和报告。|OrganizationManagement <p> SecurityAdministrator <p> SecurityReader|
 |View-Only AntiSpam|查看反垃圾邮件功能的配置和报告。|OrganizationManagement <p> SecurityAdministrator <p> SecurityReader|
-|View-Only审核日志|搜索管理员审核日志并查看结果。|ComplianceManagement <p> OrganizationManagement <p> SecurityAdministrator|
+|仅供查看审核日志|搜索管理员审核日志并查看结果。|ComplianceManagement <p> OrganizationManagement <p> SecurityAdministrator|
 |仅查看配置|查看组织的所有组织和非 (邮件) 设置。|ComplianceManagement <p> HygieneManagement <p> OrganizationManagement <p> ViewOnlyOrganizationManagement|
 |View-Only隔离|查看所有收件人的所有隔离邮件。|OrganizationManagement <p> SecurityAdministrator <p> SecurityReader|
 |仅查看收件人|查看收件人属性并运行邮件跟踪。|ComplianceManagement <p> HelpDesk <p> HygieneManagement <p> MailFlowAdministrator <p>  OrganizationManagement <p> ViewOnlyOrganizationManagement|
@@ -122,18 +122,18 @@ ms.locfileid: "51203927"
 
 <sup>\*</sup> 尽管此角色可用，但它基本上在独立 EOP 中没有任何用处。
 
-## <a name="microsoft-365-permissions-in-standalone-eop"></a>独立 EOP 中的 Microsoft 365 权限
+## <a name="microsoft-365-permissions-in-standalone-eop"></a>Microsoft 365 EOP 中的权限
 
-在 Microsoft 365 管理中心创建用户时，可以选择是否向用户分配各种管理角色，如全局管理员、服务管理员、密码管理员等。 某些（但不是全部）Microsoft 365 角色在 EOP 中授予用户管理权限。
+在 Microsoft 365 管理中心创建用户时，可以选择是否向用户分配各种管理角色，例如全局管理员、服务管理员、密码管理员等。 某些（而不是全部）Microsoft 365角色在 EOP 中授予用户管理权限。
 
 > [!NOTE]
 > 用于创建独立 EOP 组织的帐户将自动分配给全局管理员角色。
 
-下表列出了 Microsoft 365 角色及其对应的独立 EOP 角色组。 有关这些角色详细信息，请参阅关于 [管理员角色](../../admin/add-users/about-admin-roles.md)。
+下表列出了这些Microsoft 365角色及其对应的独立 EOP 角色组。 有关这些角色详细信息，请参阅关于 [管理员角色](../../admin/add-users/about-admin-roles.md)。
 
 ****
 
-|Microsoft 365 角色|EOP 角色组|
+|Microsoft 365角色|EOP 角色组|
 |---|---|
 |Exchange 管理员|OrganizationManagement|
 |全局管理员|OrganizationManagement <p> **注意**：全局管理员角色和 OrganizationManagement 角色组使用特殊的公司管理员角色组关联在一起。 公司管理员角色组在内部管理，不能直接修改。|
@@ -143,9 +143,9 @@ ms.locfileid: "51203927"
 |安全读者|SecurityReader|
 |
 
-其他 Microsoft 365 角色没有对应的 EOP 角色组，也不会在 EOP 中授予管理权限。 有关向用户分配 Microsoft 365 角色的信息，请参阅分配 [管理员角色](../../admin/add-users/assign-admin-roles.md)。
+其他Microsoft 365角色没有对应的 EOP 角色组，也不会在 EOP 中授予管理权限。 有关向用户分配Microsoft 365角色的信息，请参阅分配[管理员角色](../../admin/add-users/assign-admin-roles.md)。
 
-可以在 EOP 中向用户授予管理权限，而无需将用户添加到 Microsoft 365 角色。 为此，将用户添加为 EOP 角色组的成员。 用户将获取 EOP 中的权限，但他们不会在其他 Microsoft 365 工作负载中获取权限。
+可以在 EOP 中向用户授予管理权限，而无需将用户添加到Microsoft 365角色。 为此，将用户添加为 EOP 角色组的成员。 用户将在 EOP 中获取权限，但他们不会获得其他任务Microsoft 365权限。
 
 ### <a name="how-do-you-know-this-worked"></a>如何知道操作成功？
 
@@ -153,7 +153,7 @@ ms.locfileid: "51203927"
 
 - 在 EAC 中，转到"**权限**""管理员角色"，验证角色组是否 (\> 列出) 。 选择角色组，并验证"详细信息"窗格中的设置或单击 **"编辑编辑** ![ "图标 ](../../media/ITPro-EAC-EditIcon.png) 以验证设置。
 
-- 在 Exchange Online PowerShell 中，将 替换为角色组的名称，然后运行以下命令来验证角色组是否存在 (或不存在) 验证 \<Role Group Name\> 设置：
+- 在 Exchange Online PowerShell 中，将 替换为角色组的名称，并运行以下命令来验证角色组是否存在 (或不存在) 验证 \<Role Group Name\> 设置：
 
   ```PowerShell
   Get-RoleGroup -Identity "<Role Group Name>" | Format-List

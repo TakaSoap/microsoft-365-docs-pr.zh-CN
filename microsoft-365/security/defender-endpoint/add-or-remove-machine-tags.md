@@ -72,7 +72,7 @@ POST https://api.securitycenter.microsoft.com/api/machines/{id}/tags
 
 名称 | 类型 | 说明
 :---|:---|:---
-Authorization | 字符串 | Bearer {token}。 **必需**。
+Authorization | String | Bearer {token}。 **必需**。
 Content-Type | string | application/json. **必需**。
 
 ## <a name="request-body"></a>请求正文
@@ -82,7 +82,7 @@ Content-Type | string | application/json. **必需**。
 参数 |    类型    | 说明
 :---|:---|:---
 值 |    String |    标记名称。 **必需**。
-操作    | 枚举 |    添加或删除。 允许的值包括："Add"或"Remove"。 **必需**。
+Action    | 枚举 |    添加或删除。 允许的值包括："Add"或"Remove"。 **必需**。
 
 
 ## <a name="response"></a>响应

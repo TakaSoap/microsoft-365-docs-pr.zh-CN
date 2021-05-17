@@ -10,7 +10,7 @@ audience: ITPro
 ms.topic: how-to
 localization_priority: Normal
 ms.assetid: 4bfaf2ab-e633-4227-8bde-effefb41a3db
-description: 了解如何在 Exchange Online Protection (EOP) 管理邮件用户，包括使用目录同步、EAC 和 PowerShell 管理用户。
+description: 了解如何在 EOP Exchange Online Protection (管理邮件) ，包括使用目录同步、EAC 和 PowerShell 管理用户。
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
@@ -26,12 +26,12 @@ ms.locfileid: "51203181"
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **适用对象**
--  [独立 Exchange Online Protection](exchange-online-protection-overview.md)
+-  [Exchange Online Protection独立](exchange-online-protection-overview.md)
 
-在独立 Exchange Online Protection (EOP) 没有 Exchange Online 邮箱的组织，邮件用户是基本类型的用户帐户。 邮件用户在独立 EOP 组织中具有帐户凭据，并且可以访问 (分配有权限) 。 邮件用户的电子邮件地址是外部 (例如，在本地电子邮件环境中) 。
+在独立Exchange Online Protection (EOP) 组织中Exchange Online邮箱，邮件用户是基本类型的用户帐户。 邮件用户在独立 EOP 组织中具有帐户凭据，并且可以访问 (分配有权限) 。 邮件用户的电子邮件地址是外部 (例如，在本地电子邮件环境中) 。
 
 > [!NOTE]
-> 创建邮件用户时，相应的用户帐户在 Microsoft 365 管理中心可用。 在 Microsoft 365 管理中心创建用户帐户时，该帐户不能用于创建邮件用户。
+> 创建邮件用户时，相应的用户帐户在管理中心Microsoft 365可用。 在管理中心内创建用户帐户Microsoft 365，无法使用此帐户创建邮件用户。
 
 在独立 EOP 中创建和管理邮件用户的推荐方法是使用目录同步，如本文稍后的使用目录同步管理 [邮件](#use-directory-synchronization-to-manage-mail-users) 用户一节中所述。
 
@@ -39,18 +39,18 @@ ms.locfileid: "51203181"
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>开始前，有必要了解什么？
 
-- 若要打开 Exchange 管理中心 (EAC) ，请参阅独立 [EOP](exchange-admin-center-in-exchange-online-protection-eop.md)中的 Exchange 管理中心。
+- 若要在 EAC Exchange管理 (中心) ，请参阅Exchange [EOP 中的管理中心](exchange-admin-center-in-exchange-online-protection-eop.md)。
 
 - 若要连接到独立 EOP PowerShell，请参阅[连接到 Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell)。
 
 - 在 EOP PowerShell 中创建邮件用户时，可能会遇到限制。 此外，EOP PowerShell cmdlet 使用批处理方法，该方法在命令结果可见之前导致传播延迟几分钟。
 
-- 您需在 Exchange Online Protection 中获得权限，然后才能执行本文中的过程。 具体来说，您需要邮件收件人创建 **(** 创建) 和邮件收件人 **(** 修改) 角色，这些角色默认分配给组织管理 **(** 全局管理员) 和 **收件人** 管理角色组。 有关详细信息，请参阅 [Permissions in standalone EOP](feature-permissions-in-eop.md) 和 [Use the EAC modify the list of members in role groups](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups)。
+- 您需在 Exchange Online Protection权限，然后才能执行本文中的过程。 具体来说，您需要邮件收件人创建 **(** 创建) 和邮件收件人 **(** 修改) 角色，这些角色默认分配给组织管理 **(** 全局管理员) 和 **收件人** 管理角色组。 有关详细信息，请参阅 [Permissions in standalone EOP](feature-permissions-in-eop.md) 和 [Use the EAC modify the list of members in role groups](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups)。
 
-- 有关可能适用于本文中的过程的键盘快捷方式的信息，请参阅[Keyboard shortcuts for the Exchange admin center in Exchange Online。](/Exchange/accessibility/keyboard-shortcuts-in-admin-center)
+- 有关可能适用于本文中的过程的键盘快捷方式的信息，请参阅 Exchange Online 中适用于 Exchange[管理中心的键盘快捷方式](/Exchange/accessibility/keyboard-shortcuts-in-admin-center)。
 
 > [!TIP]
-> 是否有任何疑问？ 在 Exchange 论坛中寻求帮助。 请访问 [Exchange Online Protection](https://social.technet.microsoft.com/Forums/forefront/home?forum=FOPE) 论坛。
+> 是否有任何疑问？ 在 Exchange 论坛中寻求帮助。 请访问[Exchange Online Protection](https://social.technet.microsoft.com/Forums/forefront/home?forum=FOPE)论坛。
 
 ## <a name="use-the-exchange-admin-center-to-manage-mail-users"></a>使用 Exchange 管理中心管理邮件用户
 
@@ -58,7 +58,7 @@ ms.locfileid: "51203181"
 
 1. 在 EAC 中，转到 **"收件人** \> **""联系人"**
 
-2. 单击 **"新建** ![ "图标 ](../../media/ITPro-EAC-AddIcon.png) 。 在打开 **的"新建** 邮件用户"页中，配置以下设置。 标有 的 <sup>\*</sup> 设置是必需的。
+2. 单击 **"新建** ![ "图标 ](../../media/ITPro-EAC-AddIcon.png) 。 在打开 **的"新建** 邮件用户"页中，配置以下设置。 设置标记的 <sup>\*</sup> 是必需的。
 
    - **名**：使用此框可以键入用户的名。
 
@@ -86,7 +86,7 @@ ms.locfileid: "51203181"
 
 3. 在打开的邮件用户属性页上，单击下列选项卡之一以查看或更改属性。
 
-   完成后，单击“保存”。
+   完成后，单击“**保存**”。
 
 #### <a name="general"></a>常规
 
@@ -100,9 +100,9 @@ ms.locfileid: "51203181"
 
 - **显示名称**：此名称出现在组织的通讯簿中、电子邮件的"To："和"From："行以及 EAC 中的联系人列表中。 此姓名不能在显示姓名之前或之后包含空格。
 
-- **用户 ID：** 这是 Microsoft 365 中的用户帐户。 不能在此处修改此值。
+- **用户 ID：** 这是用户Microsoft 365。 不能在此处修改此值。
 
-#### <a name="contact-information"></a>联系人信息
+#### <a name="contact-information"></a>联系信息
 
 使用 **"联系人信息** "选项卡可以查看或更改用户的联系信息。 该页上的信息显示在通讯簿中。
 
@@ -119,7 +119,7 @@ ms.locfileid: "51203181"
   - **Office**
   - **住宅电话**
   - **网页**
-  - **注释**
+  - **备注**
 
 #### <a name="organization"></a>组织
 
@@ -253,15 +253,15 @@ Remove-EOPMailUser -Identity "Jeffrey Zeng"
 
 ## <a name="use-directory-synchronization-to-manage-mail-users"></a>使用目录同步管理邮件用户
 
-在独立 EOP 中，目录同步可用于具有本地 Active Directory 的客户。 可以将这些帐户同步到 Azure AD (Azure AD) Azure Active Directory，其中帐户的副本存储在云中。 将现有用户帐户同步到 Azure Active Directory 时，可以在 Exchange 管理中心 (EAC) 或独立 EOP PowerShell 的"收件人"窗格中查看这些用户。
+在独立 EOP 中，目录同步可用于具有本地 Active Directory 的客户。 可以将这些帐户同步Azure Active Directory (Azure AD) ，其中帐户的副本存储在云中。 将现有用户帐户同步到 Azure Active Directory 时，可以在 Exchange 管理中心 (EAC (的"收件人"窗格中或独立 EOP PowerShell) 这些用户。 
 
 **注意**：
 
-- 如果使用目录同步管理收件人，仍可以在 Microsoft 365 管理中心中添加和管理用户，但是用户不会与本地 Active Directory 同步。 这是因为目录同步只能将来自本地 Active Directory 的收件人同步到云。
+- 如果使用目录同步来管理收件人，您仍可以在 Microsoft 365 管理中心中添加和管理用户，但用户不会与本地 Active Directory 同步。 这是因为目录同步只能将来自本地 Active Directory 的收件人同步到云。
 
 - 建议将目录同步用于以下功能：
 
-  - **Outlook 安全发件人列表和** 阻止发件人列表：当同步到服务时，这些列表将优先于服务中的垃圾邮件筛选。 这使用户可以使用单个发件人和域条目管理其自己的安全发件人列表和阻止发件人列表。 有关详细信息，请参阅[配置 Exchange Online 邮箱上的垃圾邮件设置](configure-junk-email-settings-on-exo-mailboxes.md)。
+  - **Outlook 保险箱发件人列表** 和阻止发件人列表：同步到服务时，这些列表将优先于服务中的垃圾邮件筛选。 这样，用户可以使用单个发件人和域保险箱管理自己的发件人列表和阻止发件人列表。 有关详细信息，请参阅[配置 Exchange Online 邮箱上的垃圾邮件设置](configure-junk-email-settings-on-exo-mailboxes.md)。
 
   - **基于目录的边缘阻止 (DBEB) ：** 有关 DBEB 有关详细信息，请参阅使用基于目录的边缘阻止拒绝发送给 [无效收件人的邮件](/Exchange/mail-flow-best-practices/use-directory-based-edge-blocking)。
 
@@ -269,15 +269,15 @@ Remove-EOPMailUser -Identity "Jeffrey Zeng"
 
   - 邮件流规则 (也称为传输规则 **) ：** 使用目录同步时，现有 Active Directory 用户和组将自动上载到云，然后可以创建面向特定用户和/或组的邮件流规则，而无需手动将它们添加到服务中。 请注意， [动态通讯组](/Exchange/recipients-in-exchange-online/manage-dynamic-distribution-groups/manage-dynamic-distribution-groups)无法通过目录同步进行同步。
 
-获取必要的权限并准备目录同步，如什么是 Azure Active [Directory 混合标识？](/azure/active-directory/hybrid/whatis-hybrid-identity)中所述。
+获取必要的权限并准备目录同步，如什么是混合标识[与 Azure Active Directory？](/azure/active-directory/hybrid/whatis-hybrid-identity)中所述。
 
-### <a name="synchronize-directories-with-azure-active-directory-connect-aad-connect"></a>将目录与 Azure Active Directory Connect (AAD Connect) 
+### <a name="synchronize-directories-with-azure-active-directory-connect-aad-connect"></a>将目录与Azure Active Directory 连接 (AAD 连接) 
 
-1. 激活目录同步，如 [Azure AD Connect sync： Understand and customize synchronization 中所述](/azure/active-directory/hybrid/how-to-connect-sync-whatis)。
+1. 激活目录同步，如[Azure AD 连接 sync： Understand and customize synchronization 中所述](/azure/active-directory/hybrid/how-to-connect-sync-whatis)。
 
-2. 安装和配置本地计算机以运行 AAD Connect，如 [Prerequisites for Azure AD Connect 中所述](/azure/active-directory/hybrid/how-to-connect-install-prerequisites)。
+2. 安装和配置本地计算机以运行 AAD 连接如[Prerequisites for Azure AD 连接 中所述](/azure/active-directory/hybrid/how-to-connect-install-prerequisites)。
 
-3. [选择要用于 Azure AD Connect 的安装类型](/azure/active-directory/hybrid/how-to-connect-install-select-installation)：
+3. [选择要用于 Azure AD 连接：](/azure/active-directory/hybrid/how-to-connect-install-select-installation)
 
    - [Express](/azure/active-directory/hybrid/how-to-connect-install-express)
 
@@ -286,6 +286,6 @@ Remove-EOPMailUser -Identity "Jeffrey Zeng"
    - [传递身份验证](/azure/active-directory/hybrid/how-to-connect-pta-quick-start)
 
 > [!IMPORTANT]
-> 完成 Azure Active Directory 同步工具配置向导后 **，MSOL_AD_SYNC** Active Directory 林中创建帐户。 此帐户用于读取和同步您的本地 Active Directory 信息。 为了使目录同步正常工作，请确保本地目录同步服务器上的 TCP 443 处于打开状态。
+> 完成同步工具Azure Active Directory向导后，MSOL_AD_SYNC Active Directory林中创建该帐户。 此帐户用于读取和同步您的本地 Active Directory 信息。 为了使目录同步正常工作，请确保本地目录同步服务器上的 TCP 443 处于打开状态。
 
-配置同步后，请确保验证 AAD Connect 是否正确同步。 在 EAC 中，转到"**收件人**""联系人"，并查看用户列表是否从本地环境 \> 正确同步。
+配置同步后，请确保验证 AAD 连接是否正确同步。 在 EAC 中，转到"**收件人**""联系人"，并查看用户列表是否从本地环境 \> 正确同步。

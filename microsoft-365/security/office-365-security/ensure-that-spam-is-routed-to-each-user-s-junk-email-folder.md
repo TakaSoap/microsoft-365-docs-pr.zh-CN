@@ -14,7 +14,7 @@ search.appverid:
 ms.assetid: 0cbaccf8-4afc-47e3-a36d-a84598a55fb8
 ms.collection:
 - M365-security-compliance
-description: 管理员可以了解如何将垃圾邮件路由到 Exchange Online Protection 混合环境中的用户垃圾邮件文件夹。
+description: 管理员可以了解如何将垃圾邮件路由到混合环境中用户Exchange Online Protection文件夹。
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
@@ -30,10 +30,10 @@ ms.locfileid: "51203274"
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **适用对象**
--  [独立 Exchange Online Protection](exchange-online-protection-overview.md)
+-  [Exchange Online Protection独立](exchange-online-protection-overview.md)
 
 > [!IMPORTANT]
-> 本主题仅适用于混合环境中的独立 EOP 客户。 本主题不适用于具有 Exchange Online 邮箱的 Microsoft 365 客户。
+> 本主题仅适用于混合环境中的独立 EOP 客户。 本主题不适用于拥有Microsoft 365邮箱Exchange Online客户。
 
 如果您是混合环境中的独立 Exchange Online Protection (EOP) 客户，则需要将内部部署 Exchange 组织配置为识别和转换 EOP 的垃圾邮件筛选裁定，以便内部部署邮箱中的垃圾邮件规则可以将邮件移动到"垃圾邮件"文件夹。
 
@@ -47,32 +47,32 @@ ms.locfileid: "51203274"
 
 有关这些邮件头值的信息，请参阅 [反垃圾邮件邮件头](anti-spam-message-headers.md)。
 
-本主题介绍如何在 Exchange 管理中心 (EAC) 和内部部署 Exchange 组织的 Exchange 命令行管理程序 (Exchange PowerShell) 中创建这些邮件流规则。
+本主题介绍如何在 Exchange 管理中心 (EAC) 和本地 Exchange 组织的 Exchange 命令行管理程序 (Exchange PowerShell) 中创建这些邮件流规则。
 
 > [!TIP]
 > 您可以在 EOP 中配置反垃圾邮件策略以隔离 EOP 中的垃圾邮件，而不是将邮件发送到本地用户的"垃圾邮件"文件夹。 有关详细信息，请参阅[在 EOP 中配置反垃圾邮件策略](configure-your-spam-filter-policies.md)。
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>开始前，有必要了解什么？
 
-- 您需在本地 Exchange 环境中获得权限，然后才能执行这些过程。 具体来说，您需要分配有传输规则角色，该角色默认分配给组织管理、合规性管理和 **记录管理** 角色。   有关详细信息，请参阅向 [角色组添加成员](/Exchange/permissions/role-group-members#add-members-to-a-role-group)。
+- 您需在内部部署部署环境中Exchange权限，然后才能执行这些过程。 具体来说，您需要分配有传输规则角色，该角色默认分配给组织管理、合规性管理和 **记录管理** 角色。   有关详细信息，请参阅向 [角色组添加成员](/Exchange/permissions/role-group-members#add-members-to-a-role-group)。
 
-- 如果将邮件传递到内部部署 Exchange 组织的"垃圾邮件"文件夹，则当邮件被以下设置组合控制时：
+- 如果将邮件传递到内部部署组织的"垃圾邮件"文件夹，Exchange以下设置的组合控制：
 
-  - Exchange 命令行管理程序 [中 Set-OrganizationConfig](/powershell/module/exchange/set-organizationconfig) cmdlet 上的 _SCLJunkThreshold_ 参数值。 默认值为 4，这意味着 SCL 为 5 或更高值时，应该将邮件发送到用户的"垃圾邮件"文件夹。
+  - 命令行管理程序中 [Set-OrganizationConfig](/powershell/module/exchange/set-organizationconfig) cmdlet 上的 _SCLJunkThreshold_ Exchange值。 默认值为 4，这意味着 SCL 为 5 或更高值时，应该将邮件发送到用户的"垃圾邮件"文件夹。
 
-  - Exchange 命令行管理程序 [中 Set-Mailbox](/powershell/module/exchange/set-mailbox) cmdlet 上的 _SCLJunkThreshold_ 参数值。 默认值为空值 ($null) ，这意味着使用组织设置。
+  - 命令行管理程序中 [Set-Mailbox](/powershell/module/exchange/set-mailbox) cmdlet 上的 _SCLJunkThreshold_ Exchange值。 默认值为空值 ($null) ，这意味着使用组织设置。
 
-  有关详细信息，请参阅 [Exchange 垃圾邮件可信度 (SCL](/Exchange/antispam-and-antimalware/antispam-protection/scl)) 阈值。
+  有关详细信息，请参阅Exchange[垃圾邮件可信度 (SCL) 阈值。](/Exchange/antispam-and-antimalware/antispam-protection/scl)
 
-  - 是否对邮箱启用垃圾邮件规则 (Exchange 命令行管理程序 $true 中 [Set-MailboxJunkEmailConfiguration](/powershell/module/exchange/set-mailboxjunkemailconfiguration) cmdlet 的 _Enabled_ 参数值) 。 垃圾邮件规则实际上是在邮件传递后将邮件移动到"垃圾邮件"文件夹。 默认情况下，对邮箱启用垃圾邮件规则。 有关详细信息，请参阅在邮箱 [上配置 Exchange 反垃圾邮件设置](/Exchange/antispam-and-antimalware/antispam-protection/configure-antispam-settings)。
+  - 是否对邮箱启用了垃圾邮件规则 (_命令行_ 管理程序$true命令行管理程序中的 [Set-MailboxJunkEmailConfiguration](/powershell/module/exchange/set-mailboxjunkemailconfiguration) cmdlet Exchange Enabled 参数) 。 垃圾邮件规则实际上是在邮件传递后将邮件移动到"垃圾邮件"文件夹。 默认情况下，对邮箱启用垃圾邮件规则。 有关详细信息，请参阅 Configure [Exchange antispam settings on mailboxes](/Exchange/antispam-and-antimalware/antispam-protection/configure-antispam-settings)。
 
-- 若要打开 EAC 上的 Exchange Server，请参阅 [Exchange admin center in Exchange Server](/Exchange/architecture/client-access/exchange-admin-center)。 若要打开 EAC，请参阅 Exchange Server 中的 Exchange 管理中心中。若要打开 Exchange 命令行管理程序，请参阅[打开 Exchange 命令行管理程序](/powershell/exchange/open-the-exchange-management-shell)。
+- 若要打开 EAC 上的 Exchange Server，请参阅 Exchange[中的 Exchange Server。](/Exchange/architecture/client-access/exchange-admin-center) 若要打开 EAC，请参阅 Exchange Server 中的 Exchange 管理中心中。若要打开 Exchange 命令行管理程序，请参阅[打开 Exchange 命令行管理程序](/powershell/exchange/open-the-exchange-management-shell)。
 
-- 有关本地 Exchange 中的邮件流规则详细信息，请参阅下列主题：
+- 有关本地部署中的邮件流规则Exchange，请参阅下列主题：
 
   - [邮件流规则Exchange Server](/Exchange/policy-and-compliance/mail-flow-rules/mail-flow-rules)
 
-  - [邮件流规则条件和例外 (中) 谓词Exchange Server](/Exchange/policy-and-compliance/mail-flow-rules/conditions-and-exceptions)
+  - [邮件流规则条件和例外 (中) 的Exchange Server](/Exchange/policy-and-compliance/mail-flow-rules/conditions-and-exceptions)
 
   - [邮件流规则操作Exchange Server](/Exchange/policy-and-compliance/mail-flow-rules/actions)
 
@@ -110,7 +110,7 @@ ms.locfileid: "51203274"
 
 对 **SFV：SPM、SFV：SKS** 或 **SFV：SKB** (剩余 EOP 垃圾邮件裁定值重复) 。 
 
-## <a name="use-the-exchange-management-shell-to-create-mail-flow-rules-that-set-the-scl-of-eop-spam-messages"></a>使用 Exchange 命令行管理程序 创建设置 EOP 垃圾邮件 SCL 的邮件流规则
+## <a name="use-the-exchange-management-shell-to-create-mail-flow-rules-that-set-the-scl-of-eop-spam-messages"></a>使用 Exchange命令行管理程序创建设置 EOP 垃圾邮件 SCL 的邮件流规则
 
 使用以下语法创建三个邮件流规则：
 
@@ -140,7 +140,7 @@ New-TransportRule -Name "EOP SFV:SKB to SCL 6" -HeaderContainsMessageHeader "X-F
 
 - 在 EAC 中，**转到"邮件** 流""规则"，选择规则， \> 然后单击"编辑 ![ 编辑"图标 ](../../media/ITPro-EAC-EditIcon.png) 以验证设置。
 
-- 在 Exchange 命令行管理程序 中，将 替换为邮件流规则的名称， \<RuleName\> 并运行以下命令来验证设置：
+- 在Exchange命令行管理程序中，将 替换为邮件流规则的名称， \<RuleName\> 并运行以下命令来验证设置：
 
   ```powershell
   Get-TransportRule -Identity "<RuleName>" | Format-List

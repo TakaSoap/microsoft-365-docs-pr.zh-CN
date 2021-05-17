@@ -36,10 +36,10 @@ ms.locfileid: "51199362"
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-此页面介绍如何在 Azure AD (Azure AD) 应用程序创建 Azure Active Directory，以代表客户以编程方式访问 Microsoft Defender for Endpoint。
+此页面介绍如何创建 Azure AD Azure Active Directory (应用程序) 代表客户以编程方式访问 Microsoft Defender for Endpoint。
 
 
-Microsoft Defender for Endpoint 通过一组编程 API 公开其大部分数据和操作。 这些 API 将帮助你基于 Microsoft Defender for Endpoint 功能自动执行数据流创新。 API 访问需要 OAuth2.0 身份验证。 有关详细信息，请参阅 [OAuth 2.0 授权代码流](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-code)。
+Microsoft Defender for Endpoint 通过一组编程 API 公开其大部分数据和操作。 这些 API 将帮助你基于 Microsoft Defender for Endpoint 功能自动执行数据流创新。 API 访问需要 OAuth2.0 身份验证。 有关详细信息，请参阅[OAuth 2.0 授权代码Flow。](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-code)
 
 通常，你将需要执行以下步骤来使用 API：
 - 创建 **多租户** Azure AD 应用程序。
@@ -53,9 +53,9 @@ Microsoft Defender for Endpoint 通过一组编程 API 公开其大部分数据�
 
 1. 使用具有全局 [管理员](https://portal.azure.com) 角色的用户登录到 **Azure** 租户。
 
-2. 导航到 **Azure Active Directory**  >  **应用注册**  >  **新注册**。 
+2. 导航到 **Azure Active Directory**  >  **应用注册**  >  **""新注册"。** 
 
-   ![Microsoft Azure 的图像和应用程序注册导航](images/atp-azure-new-app2.png)
+   ![应用程序注册Microsoft Azure导航的图像](images/atp-azure-new-app2.png)
 
 3. 在注册表单中：
 
@@ -65,7 +65,7 @@ Microsoft Defender for Endpoint 通过一组编程 API 公开其大部分数据�
 
     - 重定向 URI - 类型：Web、URI： https://portal.azure.com
 
-    ![Microsoft Azure 合作伙伴应用程序注册的图像](images/atp-api-new-app-partner.png)
+    ![合作伙伴Microsoft Azure注册的图像](images/atp-api-new-app-partner.png)
 
 
 4. 允许应用程序访问 Microsoft Defender for Endpoint，并为其分配完成集成所需的最低权限集。
@@ -169,7 +169,7 @@ return $token
 >以下代码已使用 Nuget Microsoft.IdentityModel.Clients.ActiveDirectory 进行测试
 
 - 创建新的控制台应用程序
-- 安装 NuGet [Microsoft.IdentityModel.Clients.ActiveDirectory](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory/)
+- 安装NuGet [Microsoft.IdentityModel.Clients.ActiveDirectory](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory/)
 - 使用 添加以下内容
 
     ```
@@ -200,7 +200,7 @@ return $token
 ### <a name="using-curl"></a>使用百度
 
 > [!NOTE]
-> 以下过程假设计算机上已安装了适用于 Windows 的一部分
+> 以下过程假设计算机上Windows的一部分
 
 - 打开命令窗口
 - 将CLIENT_ID设置为 Azure 应用程序 ID
@@ -248,5 +248,5 @@ curl -i -X POST -H "Content-Type:application/x-www-form-urlencoded" -d "grant_ty
     ```
 
 ## <a name="see-also"></a>另请参阅
-- [支持的 Microsoft Defender 终结点 API](exposed-apis-list.md)
+- [支持的 Microsoft Defender for Endpoint API](exposed-apis-list.md)
 - [代表用户访问 Microsoft Defender for Endpoint](exposed-apis-create-app-nativeapp.md)

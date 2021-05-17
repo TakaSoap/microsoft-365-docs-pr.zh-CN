@@ -1,7 +1,7 @@
 ---
 title: 内部风险管理警报
-description: 了解 Microsoft 365 中的内部风险管理警报
-keywords: Microsoft 365， 内部风险， 风险管理， 合规性
+description: 了解企业内部风险管理Microsoft 365
+keywords: Microsoft 365、内部风险、风险管理、合规性
 localization_priority: Normal
 ms.prod: microsoft-365-enterprise
 ms.topic: article
@@ -75,7 +75,7 @@ ms.locfileid: "51445650"
 
 若要对内部风险警报进行会审，请完成以下步骤：
 
-1. 在 [Microsoft 365](https://compliance.microsoft.com)合规中心中，转到 **"内部风险管理** "并选择 **"警报"** 选项卡。
+1. In the [Microsoft 365 compliance center，](https://compliance.microsoft.com)go to **Insider risk management** and select the **Alerts** tab.
 2. 在 **警报仪表板上**，选择要会审的警报。
 3. 在 **警报详细信息窗格中**，你可以查看以下选项卡并会审警报：
     - **摘要：** 此选项卡包含有关警报的常规信息，并允许你确认警报并创建新案例或允许你消除警报。 它包括警报的当前状态和警报风险严重性级别，列为 *高*、*中或**低*。 如果警报未分类，严重性级别可能会随着时间的推移增加或减小。
@@ -100,7 +100,7 @@ ms.locfileid: "51445650"
 
 若要使用 **活动资源管理器**，请完成以下步骤：
 
-1. 在 Microsoft 365 合规中心，转到 **"预览** 体验成员风险管理"并选择 **"警报"** 选项卡。
+1. 在"Microsoft 365合规中心"中，转到 **"内部风险管理**"并选择 **"警报"** 选项卡。
 2. 在 **警报仪表板上**，选择要会审的警报。
 3. 在警报 **详细信息窗格中，选择** 打开 **展开的视图**。
 4. 在所选警报的页面上，选择" **活动资源管理器"** 选项卡。
@@ -113,7 +113,7 @@ ms.locfileid: "51445650"
 
 在审核和会审警报时，您可以创建一个新案例以进一步调查风险活动。 若要为警报创建案例，请按照以下步骤操作：
 
-1. 在 [Microsoft 365](https://compliance.microsoft.com)合规中心中，转到 **"内部风险管理** "并选择 **"警报"** 选项卡。
+1. In the [Microsoft 365 compliance center，](https://compliance.microsoft.com)go to **Insider risk management** and select the **Alerts** tab.
 2. 在 **警报仪表板上**，选择要确认的警报并创建一个新案例。
 3. 在警报 **详细信息窗格中，选择****操作**  >  **确认警报&创建案例**。
 4. 在" **确认警报并创建内部** 风险案例"对话框中，输入案例名称，选择要添加为参与者的用户，并根据需要添加注释。 注释会自动作为案例注释添加到案例。

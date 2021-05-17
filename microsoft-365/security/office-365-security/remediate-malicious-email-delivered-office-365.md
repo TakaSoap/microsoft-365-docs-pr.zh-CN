@@ -1,5 +1,5 @@
 ---
-title: 修正在 Office 365 中传递的恶意电子邮件
+title: 修正在邮件中传递的恶意Office 365
 author: msfttracyp
 ms.author: tracyp
 manager: dansimp
@@ -22,7 +22,7 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 03/25/2021
 ms.locfileid: "51203853"
 ---
-# <a name="remediate-malicious-email-delivered-in-office-365"></a>修正在 Office 365 中传递的恶意电子邮件
+# <a name="remediate-malicious-email-delivered-in-office-365"></a>修正邮件中传递的恶意Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -43,7 +43,7 @@ ms.locfileid: "51203853"
 *当安全* 团队使用威胁资源管理器中的搜索和筛选功能手动识别威胁时，将发生手动搜寻。 确定一组需要修复的电子邮件后，可以通过任何电子邮件视图 (*恶意软件*、网络钓鱼或所有电子邮件) 触发手动电子邮件修正。
 
 > [!div class="mx-imgBorder"]
-> [![按日期在 Office 365 威胁资源管理器中手动搜寻。](../../media/tp-RemediationArticle1.png)](../../media/tp-RemediationArticle1.png#lightbox)
+> [![按日期Office 365威胁资源管理器中的手动搜寻。](../../media/tp-RemediationArticle1.png)](../../media/tp-RemediationArticle1.png#lightbox)
 
 安全团队可以通过多种方式使用威胁资源管理器选择电子邮件：
 
@@ -88,7 +88,7 @@ ms.locfileid: "51203853"
       > 目前，只有有权访问邮箱的用户才能从软删除文件夹恢复项目。
 
   - **不可操作**：以下位置中的电子邮件无法处理或移动在修正操作中：
-    - Quarantine
+    - 隔离
     - 硬删除文件夹
     - 本地/外部
     - 失败/放弃
@@ -104,7 +104,7 @@ ms.locfileid: "51203853"
   > [!NOTE]
   > 为获得最佳结果，修正应分批完成，数量应少于或少于 50，000 个。
 
-  修正期间仅处理可修复的电子邮件。 Office 365 电子邮件系统无法修复不安全的电子邮件，因为它们未存储在云邮箱中。
+  修正期间仅处理可修复的电子邮件。 电子邮件系统无法修复Office 365电子邮件，因为它们未存储在云邮箱中。
 
   如果需要，管理员可以对隔离中的电子邮件采取措施，但是如果未手动清除这些电子邮件，则这些电子邮件将过期，无法隔离。 由于恶意内容而隔离的电子邮件无法被用户访问，因此安全人员不必执行任何操作来清除隔离中的威胁。 如果电子邮件是本地或外部的，可以联系用户以处理可疑电子邮件。 或者管理员可以使用单独的电子邮件服务器/安全工具进行删除。 可以通过在威胁资源管理器中应用传递位置 *= 内部* 外部筛选器来标识这些电子邮件。 对于失败或丢弃的电子邮件，或者用户无法访问的电子邮件，没有任何要缓解的电子邮件，因为这些邮件无法到达邮箱。
 

@@ -19,7 +19,7 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: 管理员可以了解零时差自动清除 (ZAP) 如何以反向方式将 Exchange Online 邮箱中的已送达邮件移动到垃圾邮件文件夹或被反向发现为垃圾邮件或网络钓鱼的隔离邮箱。
+description: 管理员可以了解零时差自动清除 (ZAP) 如何反向将 Exchange Online 邮箱中的已送达邮件移动到垃圾邮件文件夹或被反向发现为垃圾邮件或网络钓鱼的隔离邮箱。
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: 81d37b3d02cb1009ef718fdd0d50eeadd819d3b6
@@ -29,7 +29,7 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 03/25/2021
 ms.locfileid: "51203902"
 ---
-# <a name="zero-hour-auto-purge-zap-in-exchange-online"></a>Exchange Online 中的零时差 (ZAP) 清除
+# <a name="zero-hour-auto-purge-zap-in-exchange-online"></a>零时差自动清除 (ZAP) 中Exchange Online
 
 **适用对象**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
@@ -43,7 +43,7 @@ ms.locfileid: "51203902"
 
 在具有 Exchange Online 邮箱的 Microsoft 365 组织中，零时差自动清除 (ZAP) 是一种电子邮件保护功能，可主动检测并消除已传递到 Exchange Online 邮箱的恶意网络钓鱼、垃圾邮件或恶意软件邮件。
 
-ZAP 在保护本地 Exchange 邮箱的独立 Exchange Online Protection (EOP) 环境中不起作用。
+ZAP 在保护内部部署Exchange Online Protection (邮箱) 独立 EOP Exchange工作。
 
 ## <a name="how-zap-works"></a>ZAP 的工作原理
 
@@ -51,7 +51,7 @@ ZAP 在保护本地 Exchange 邮箱的独立 Exchange Online Protection (EOP) �
 
 ZAP 操作对于用户是无缝的;如果检测到并移动了邮件，系统不会通知他们。
 
-[安全发件人列表](create-safe-sender-lists-in-office-365.md)、邮件流规则 (传输规则) 收件箱规则或其他筛选器优先于 ZAP。 与邮件流中发生的情况类似，这意味着即使服务确定已传递的邮件需要 ZAP，由于安全发件人配置，邮件不会处理。 这是在配置邮件以绕过筛选时要谨慎的另一个原因。
+[保险箱列表、](create-safe-sender-lists-in-office-365.md)邮件流规则 (传输规则) 收件箱规则或其他筛选器优先于 ZAP。 与邮件流中发生的情况类似，这意味着即使服务确定已传递的邮件需要 ZAP，由于安全发件人配置，邮件不会处理。 这是在配置邮件以绕过筛选时要谨慎的另一个原因。
 
 ### <a name="malware-zap"></a>恶意软件 ZAP
 
@@ -65,13 +65,13 @@ ZAP 操作对于用户是无缝的;如果检测到并移动了邮件，系统不
 
 - **添加 X-Header** **、Prepend subject line with text** **、Redirect message to email address、Delete** **message**：ZAP 对邮件不执行任何操作。
 
-- **将邮件移动到** 垃圾邮件 ：ZAP 将邮件移动到"垃圾邮件"文件夹，只要在邮箱上启用了垃圾邮件规则 (该规则默认启用) 。 有关详细信息，请参阅在 [Microsoft 365 中配置 Exchange Online](configure-junk-email-settings-on-exo-mailboxes.md)邮箱上的垃圾邮件设置。
+- **将邮件移动到** 垃圾邮件 ：ZAP 将邮件移动到"垃圾邮件"文件夹，只要在邮箱上启用了垃圾邮件规则 (该规则默认启用) 。 有关详细信息，请参阅 Configure [junk email settings on Exchange Online mailboxes in Microsoft 365](configure-junk-email-settings-on-exo-mailboxes.md)。
 
 - **隔离邮件**：ZAP 隔离邮件。
 
 默认情况下，在反垃圾邮件策略中启用网络钓鱼 ZAP，网络钓鱼电子邮件筛选裁定的默认操作是隔离邮件，这意味着网络钓鱼ZAP 默认隔离邮件。
 
-有关配置垃圾邮件筛选裁定的信息，请参阅在 Microsoft [365](configure-your-spam-filter-policies.md)中配置反垃圾邮件策略。
+有关配置垃圾邮件筛选裁定的信息，请参阅在邮件中配置[反垃圾邮件Microsoft 365。](configure-your-spam-filter-policies.md)
 
 ### <a name="spam-zap"></a>垃圾邮件 ZAP
 
@@ -79,21 +79,21 @@ ZAP 操作对于用户是无缝的;如果检测到并移动了邮件，系统不
 
 - **添加 X-Header** **、Prepend subject line with text** **、Redirect message to email address、Delete** **message**：ZAP 对邮件不执行任何操作。
 
-- **将邮件移动到** 垃圾邮件 ：ZAP 将邮件移动到"垃圾邮件"文件夹，只要在邮箱上启用了垃圾邮件规则 (该规则默认启用) 。 有关详细信息，请参阅在 [Microsoft 365 中配置 Exchange Online](configure-junk-email-settings-on-exo-mailboxes.md)邮箱上的垃圾邮件设置。
+- **将邮件移动到** 垃圾邮件 ：ZAP 将邮件移动到"垃圾邮件"文件夹，只要在邮箱上启用了垃圾邮件规则 (该规则默认启用) 。 有关详细信息，请参阅 Configure [junk email settings on Exchange Online mailboxes in Microsoft 365](configure-junk-email-settings-on-exo-mailboxes.md)。
 
 - **隔离邮件**：ZAP 隔离邮件。 最终用户可以查看和管理自己的垃圾邮件隔离邮件。
 
 默认情况下，反垃圾邮件策略中已启用垃圾邮件 ZAP，垃圾邮件筛选裁定的默认操作是"将邮件移动到垃圾邮件文件夹"，这意味着默认情况下，垃圾邮件 ZAP 会将未读邮件移动到"垃圾邮件"文件夹。 
 
-有关配置垃圾邮件筛选裁定的信息，请参阅在 Microsoft [365](configure-your-spam-filter-policies.md)中配置反垃圾邮件策略。
+有关配置垃圾邮件筛选裁定的信息，请参阅在邮件中配置[反垃圾邮件Microsoft 365。](configure-your-spam-filter-policies.md)
 
-### <a name="zap-considerations-for-microsoft-defender-for-office-365"></a>适用于 Office 365 的 Microsoft Defender 的 ZAP 注意事项
+### <a name="zap-considerations-for-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 的 ZAP 注意事项
 
-ZAP 不会隔离正在安全附件扫描中动态传递，或者 [](safe-attachments.md#dynamic-delivery-in-safe-attachments-policies)EOP 恶意软件筛选已用恶意软件警报文件替换附件 **Text.txt邮件。** 如果收到这些类型的邮件的网络钓鱼或垃圾邮件信号，并且反垃圾邮件策略中的筛选裁定设置为对邮件 (Move to Junk， Redirect， Delete， or Quarantine) 则 ZAP 将默认为"移动到垃圾邮件"操作。
+ZAP 不会隔离正在 保险箱 附件扫描中动态传递 [](safe-attachments.md#dynamic-delivery-in-safe-attachments-policies)的任何邮件，或者 EOP 恶意软件筛选已使用恶意软件警报文件替换附件 **Text.txt邮件。** 如果收到这些类型的邮件的网络钓鱼或垃圾邮件信号，并且反垃圾邮件策略中的筛选裁定设置为对邮件 (Move to Junk， Redirect， Delete， or Quarantine) 则 ZAP 将默认为"移动到垃圾邮件"操作。
 
 ## <a name="how-to-see-if-zap-moved-your-message"></a>如何查看 ZAP 是否移动了邮件
 
-若要确定 ZAP 是否移动了邮件，可以使用威胁防护[](view-email-security-reports.md#threat-protection-status-report)状态报告或威胁资源管理器 (和实时检测[) 。 ](threat-explorer.md) 请注意，作为系统操作，ZAP 不会记录在 Exchange 邮箱审核日志中。
+若要确定 ZAP 是否移动了邮件，可以使用威胁防护[](view-email-security-reports.md#threat-protection-status-report)状态报告或威胁资源管理器 (和实时检测[) 。 ](threat-explorer.md) 请注意，作为系统操作，ZAP 不会记录在Exchange审核日志中。
 
 ## <a name="zap-faq"></a>ZAP 常见问题解答
 
@@ -107,11 +107,11 @@ ZAP 将基于反垃圾邮件策略的配置对邮件采取措施，如本文前�
 
 ### <a name="what-if-im-using-safe-senders-mail-flow-rules-or-allowedblocked-sender-lists"></a>如果我使用安全发件人、邮件流规则或允许/阻止的发件人列表，该做什么？
 
-安全发件人、邮件流规则或阻止和允许组织设置优先。 这些消息从 ZAP 中排除，因为服务正在执行你配置它所执行的工作。 这是在配置邮件以绕过筛选时要谨慎的另一个原因。
+保险箱发件人、邮件流规则或阻止和允许组织设置优先。 这些消息从 ZAP 中排除，因为服务正在执行你配置它所执行的工作。 这是在配置邮件以绕过筛选时要谨慎的另一个原因。
 
 ### <a name="what-are-the-licensing-requirements-for-zap-to-work"></a>ZAP 的许可要求如何工作？
 
-对许可证没有限制。 ZAP 适用于 Exchange Online 上托管的所有邮箱。 ZAP 在保护本地 Exchange 邮箱的独立 Exchange Online Protection (EOP) 环境中不起作用。
+对许可证没有限制。 ZAP 适用于联机邮箱上托管Exchange邮箱。 ZAP 在保护内部部署Exchange Online Protection (邮箱) 独立 EOP Exchange工作。
 
 ### <a name="what-if-a-message-is-moved-to-another-folder-eg-inbox-rules"></a>如果将邮件移动到其他文件夹（例如收件箱规则 (，) ？
 
@@ -121,4 +121,4 @@ ZAP 将基于反垃圾邮件策略的配置对邮件采取措施，如本文前�
 
 ZAP 不会隔离来自保留邮箱的邮件。 ZAP 可以基于为反垃圾邮件策略中的垃圾邮件或网络钓鱼裁定配置的操作，将邮件移动到"垃圾邮件"文件夹。
 
-有关 Exchange Online 中的保留功能详细信息，请参阅 Exchange Online 中的就地保留 [和诉讼保留](/Exchange/security-and-compliance/in-place-and-litigation-holds)。
+有关用户中的保留Exchange Online，请参阅 Exchange Online[中的就地保留和诉讼Exchange Online。](/Exchange/security-and-compliance/in-place-and-litigation-holds)

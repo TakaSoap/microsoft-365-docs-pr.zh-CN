@@ -31,18 +31,18 @@ ms.locfileid: "51203215"
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
-如果你的组织拥有 Microsoft 365 E5 或 Microsoft Defender for Office 365 计划 2，其中包括威胁调查和响应功能，可以在 Microsoft 安全中心内使用攻击模拟培训在组织中运行真实的攻击方案。 [](office-365-ti.md) 这些模拟攻击可以帮助你在真实攻击影响你的最后一线之前识别和查找易受攻击的用户。 阅读本文可了解更多信息。
+如果你的组织拥有 Microsoft 365 E5 或 Microsoft Defender for Office 365 计划 2（包括[](office-365-ti.md)威胁调查和响应功能）。可以在 Microsoft 安全中心内使用攻击模拟培训在组织中运行真实的攻击方案。 这些模拟攻击可以帮助你在真实攻击影响你的最后一线之前识别和查找易受攻击的用户。 阅读本文可了解更多信息。
 
 > [!NOTE]
-> 攻击模拟培训取代了 Microsoft [Defender for Office 365](attack-simulator.md)中攻击模拟器中所述的旧攻击模拟器 v1 体验。
+> 攻击模拟培训取代了 Microsoft Defender for Office 365 攻击模拟器中所述的旧攻击[模拟器 v1 体验](attack-simulator.md)。
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>开始前，有必要了解什么？
 
 - 若要打开 Microsoft 安全中心，请转到 <https://security.microsoft.com/> 。 攻击模拟培训位于电子邮件和 **协作** \> **攻击模拟培训中**。 若要直接转到攻击模拟培训，请打开 <https://security.microsoft.com/attacksimulator> 。
 
-- 有关不同 Microsoft 365 订阅中攻击模拟培训的可用性详细信息，请参阅 [Microsoft Defender for Office 365 服务说明](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)。
+- 有关跨不同订阅提供攻击模拟培训Microsoft 365，请参阅 Microsoft Defender for Office 365 [service description](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)。
 
-- 您需在安全与合规中心或 Azure Active Directory &分配权限，然后才能执行本文中的过程。 具体来说，你需要是组织管理、安全 **管理员** 或以下角色之一的成员： 
+- 您需在安全与合规&或Azure Active Directory分配权限，然后才能执行本文中的过程。 具体来说，你需要是组织管理、安全 **管理员** 或以下角色之一的成员： 
   - **攻击模拟器管理员**：创建和管理攻击模拟活动的所有方面。
   - **攻击模拟器有效负载作者**：创建管理员稍后可以启动的攻击负载。
 
@@ -50,7 +50,7 @@ ms.locfileid: "51203215"
 
 - 没有用于攻击模拟培训的相应 PowerShell cmdlet。
 
-- 攻击模拟和培训相关的数据与 Microsoft 365 服务的其他客户数据存储在一起。 有关详细信息，请参阅 [Microsoft 365 数据位置](../../enterprise/o365-data-locations.md)。 攻击模拟可用于以下区域：NAM、APC、EUR、IND、CAN、AUS、FRA、GBR、JPN 和 EUR。
+- 攻击模拟和培训相关的数据与其他客户数据存储在一起，Microsoft 365服务。 有关详细信息，请参阅[Microsoft 365位置](../../enterprise/o365-data-locations.md)。 攻击模拟可用于以下区域：NAM、APC、EUR、IND、CAN、AUS、FRA、GBR、JPN 和 EUR。
 
 ## <a name="simulations"></a>模拟
 
@@ -64,12 +64,12 @@ ms.locfileid: "51203215"
 
 - **附件中的链接**：这是凭据获取的混合。 攻击者向收件人发送一封邮件，其中包含附件内的 URL。 当收件人打开附件并单击该 URL 时，他们会访问一个网站，该网站通常显示一个对话框，要求用户输入用户名和密码。 通常，目标页面以表示已知网站为标题，以在用户中建立信任。
 
-- 链接到 **恶意软件**：攻击者向收件人发送一封邮件，其中包含指向已知文件共享网站 (例如，SharePoint Online 或 Dropbox) 的附件的链接。 当收件人单击 URL 时，附件将打开并任意代码 (例如，宏) 在用户设备上运行，以帮助攻击者安装其他代码或进一步安装代码。
+- **链接到恶意软件**：攻击者向收件人发送一封邮件，其中包含指向已知文件共享网站上附件的链接 (例如，SharePoint Online 或 Dropbox) 。 当收件人单击 URL 时，附件将打开并任意代码 (例如，宏) 在用户设备上运行，以帮助攻击者安装其他代码或进一步安装代码。
 
 - **按 URL 驱动器**：攻击者向收件人发送包含 URL 的邮件。 当收件人单击 URL 时，他们会被带至尝试运行后台代码的网站。 此后台代码尝试收集有关收件人的信息或在设备上部署任意代码。 通常，目标网站是已遭到入侵的已知网站或已知网站的克隆。 熟悉网站有助于让用户确信链接可安全单击。 此技术也称为水 _洞攻击_。
 
 > [!NOTE]
-> 在网络钓鱼活动中使用该 URL 之前，请检查模拟网络钓鱼 URL 在受支持的 Web 浏览器中的可用性。 虽然我们与许多 URL 信誉供应商合作，始终允许这些模拟 URL，但我们并不总是具有完全覆盖 (例如，Google 安全浏览) 。 大多数供应商提供的指导允许你始终允许特定 URL (例如 <https://support.google.com/chrome/a/answer/7532419> ，) 。
+> 在网络钓鱼活动中使用该 URL 之前，请检查模拟网络钓鱼 URL 在受支持的 Web 浏览器中的可用性。 虽然我们与许多 URL 信誉供应商合作以始终允许这些模拟 URL，但我们不会始终具有完全覆盖范围 (例如，Google 保险箱浏览) 。 大多数供应商提供的指导允许你始终允许特定 URL (例如 <https://support.google.com/chrome/a/answer/7532419> ，) 。
 
 攻击模拟培训使用的 URL 如下列表所述：
 
@@ -111,4 +111,4 @@ ms.locfileid: "51203215"
 有关如何通过报告获取见解的分步说明，请参阅通过 [攻击模拟培训获取见解](attack-simulation-training-insights.md)。
 
 > [!NOTE]
-> 攻击模拟器使用 Defender for Office 365 中的安全链接安全跟踪发送给网络钓鱼活动的目标收件人的有效负载消息中 URL 的单击数据，即使安全链接策略中的"不跟踪用户单击"设置已打开。
+> 攻击模拟器使用 保险箱 Links in Defender for Office 365 安全跟踪发送给网络钓鱼活动的目标收件人的有效负载邮件中 URL 的单击数据，即使 保险箱 链接策略中已打开"不跟踪用户单击"设置。

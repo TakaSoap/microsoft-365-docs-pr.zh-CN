@@ -16,7 +16,7 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: 管理员可以了解如何在 Exchange Online Protection 和 EOP (中查看和管理) 。 使用 Microsoft Defender for Office 365 的组织中管理员还可以在 SharePoint Online、OneDrive for Business 和 Microsoft Teams 中管理隔离文件。
+description: 管理员可以了解如何在 EOP 管理中心中查看和管理所有用户Exchange Online Protection () 。 使用 Microsoft Defender for Office 365 的组织的管理员还可以在 SharePoint Online、OneDrive for Business 和 Microsoft Teams 中管理隔离Microsoft Teams。
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: c5e2d6a3729a24766652d4c7c0973c63b1dcb207
@@ -39,9 +39,9 @@ ms.locfileid: "52272200"
 
 管理员可以查看、释放和删除所有用户的所有类型的隔离邮件。 只有管理员才能管理被隔离为恶意软件、高可信度网络钓鱼的邮件，或由于邮件流规则 (也称为传输规则) 。 管理员还可以向 Microsoft 报告误报。
 
-使用 Microsoft Defender for Office 365 的组织中管理员还可以在 SharePoint Online、OneDrive for Business 和 Microsoft Teams 中查看、下载和删除隔离文件。
+使用 Microsoft Defender for Office 365 的组织的管理员还可以在 SharePoint Online、OneDrive for Business 和 Microsoft Teams 中查看、下载和删除隔离Microsoft Teams。
 
-在安全 &与合规中心内或在 PowerShell (Exchange Online PowerShell 中查看和管理隔离邮件，适用于在 Exchange Online 中拥有邮箱的 Microsoft 365 组织;适用于没有 Exchange Online 邮箱的组织的独立 EOP PowerShell) 。
+在安全与合规中心或 PowerShell & PowerShell 中查看和管理隔离邮件， (Exchange Online Microsoft 365邮箱位于 Exchange Online;适用于没有邮箱或邮箱Exchange Online的独立 EOP PowerShell) 。
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>开始前，有必要了解什么？
 
@@ -59,12 +59,12 @@ ms.locfileid: "52272200"
 
   - 在 Microsoft 365 管理中心将用户添加到相应的 Azure Active Directory 角色后，将为用户提供所需的权限 _和_ Microsoft 365 中其他功能的所需权限。 有关详细信息，请参阅 [关于管理员角色](../../admin/add-users/about-admin-roles.md)。
   - [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) 中的 **仅查看组织管理人员** 角色组也提供到该功能的只读访问。
-  - <sup>\*</sup>隔离管理员 **角色** 组的成员还需要是 [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups)中清洁管理角色组的成员，才能在 Exchange Online PowerShell 中执行隔离过程。
+  - <sup>\*</sup>隔离管理员 **角色** 组的成员还需要是 Exchange Online 中清洁管理角色组的成员，才能在 [](/Exchange/permissions-exo/permissions-exo#role-groups)PowerShell 中执行Exchange Online过程。
 
 - 隔离邮件在被自动删除之前将保留一段默认时间：
   - 30 天内，由反垃圾邮件策略隔离的邮件 (垃圾邮件、网络钓鱼和批量电子邮件) 。 这是默认值和最大值。 若要配置 (此值) ，请参阅配置 [反垃圾邮件策略](configure-your-spam-filter-policies.md)。
   - 包含恶意软件的邮件的 15 天。
-  - 15 天，用于由 SharePoint、OneDrive 和 Microsoft Teams 安全附件在 Defender for Office 365 中隔离的文件。
+  - 对于在 Defender for 保险箱 中由 SharePoint、OneDrive 和 Microsoft Teams 附件隔离Microsoft Teams 15 Office 365。
 
   当邮件从隔离区过期时，你无法恢复它。
 
@@ -113,7 +113,7 @@ ms.locfileid: "52272200"
 
    - **策略类型**：按策略类型筛选邮件：
      - **反恶意软件策略**
-     - **安全附件策略**
+     - **保险箱附件策略**
      - **反网络钓鱼策略**
      - **托管内容筛选器策略**（反垃圾邮件策略）
      - **传输规则**
@@ -196,7 +196,7 @@ ms.locfileid: "52272200"
 
 - **下载邮件**：在显示的浮出控件窗格中，选择“我了解下载此邮件所面临的风险”，以使用 .eml 格式保存邮件的本地副本。
 
-- **阻止发件人**：将发件人添加到邮箱上的"阻止的发件人"列表中。 有关详细信息，请参阅阻止 [邮件发件人](https://support.microsoft.com/office/b29fd867-cac9-40d8-aed1-659e06a706e4)。
+- **阻止发件人**：将发件人添加到邮箱上的"阻止发件人"列表中。 有关详细信息，请参阅 [阻止邮件发件人](https://support.microsoft.com/office/b29fd867-cac9-40d8-aed1-659e06a706e4)。
 
 - **提交邮件**：在出现的飞出窗格中，选择以下选项：
 
@@ -225,12 +225,12 @@ ms.locfileid: "52272200"
 
 完成后，单击“关闭”。
 
-## <a name="microsoft-defender-for-office-365-only-use-the-security--compliance-center-to-manage-quarantined-files"></a>仅适用于 Office 365 的 Microsoft Defender：使用安全与&中心管理隔离的文件
+## <a name="microsoft-defender-for-office-365-only-use-the-security--compliance-center-to-manage-quarantined-files"></a>仅适用于 Office 365 的 Microsoft Defender：使用安全&安全与合规中心管理隔离的文件
 
 > [!NOTE]
-> 本部分中隔离文件的过程仅适用于 Microsoft Defender for Office 365 计划 1 和计划 2 订阅者。
+> 本部分中隔离文件的过程仅适用于 Microsoft Defender for Office 365计划 1 和计划 2 订阅者。
 
-在具有 Defender for Office 365 的组织中，管理员可以在 SharePoint Online、OneDrive for Business 和 Microsoft Teams 中管理隔离文件。 若要启用对这些文件的保护，请参阅启用 [SharePoint、OneDrive](turn-on-mdo-for-spo-odb-and-teams.md)和 Microsoft Teams 的安全附件。
+在具有 Defender for Office 365 的组织中，管理员可以在 SharePoint Online、OneDrive for Business 和 Microsoft Teams 中管理隔离Microsoft Teams。 若要启用对这些文件的保护，请参阅打开保险箱[附件SharePoint、OneDrive和Microsoft Teams。](turn-on-mdo-for-spo-odb-and-teams.md)
 
 ### <a name="view-quarantined-files"></a>查看隔离文件
 
@@ -271,7 +271,7 @@ ms.locfileid: "52272200"
 - **文件 URL：** 用于定义文件位置的 URL (例如，在 SharePoint Online) 。
 - **检测到的恶意内容** 文件的隔离日期/时间。
 - **Expires**：从隔离区删除文件的日期。
-- **检测者**：适用于 Office 365 的 Defender 或 Microsoft 的反恶意软件引擎。
+- **检测者**：defender Office 365或 Microsoft 的反恶意软件引擎。
 - **释放?**
 - **恶意软件名称**
 - **文档 ID：** 文档的唯一标识符。
@@ -308,6 +308,6 @@ ms.locfileid: "52272200"
 
 - [Get-QuarantineMessage](/powershell/module/exchange/get-quarantinemessage)
 
-- [Preview-QuarantineMessage：](/powershell/module/exchange/preview-quarantinemessage)请注意，此 cmdlet 仅适用于邮件，不用于 SharePoint、OneDrive 和 Microsoft Teams 的安全附件中的隔离文件。
+- [Preview-QuarantineMessage：](/powershell/module/exchange/preview-quarantinemessage)请注意，此 cmdlet 仅适用于邮件，而不是来自 保险箱 Attachments for SharePoint、OneDrive 和 Microsoft Teams 的隔离Microsoft Teams。
 
 - [Release-QuarantineMessage](/powershell/module/exchange/release-quarantinemessage)

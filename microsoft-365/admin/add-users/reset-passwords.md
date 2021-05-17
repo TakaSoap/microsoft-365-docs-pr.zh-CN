@@ -50,7 +50,7 @@ ms.locfileid: "52290991"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FVVP]
 
-如果你觉得这段视频有用，请查看[适用于小型企业和 Microsoft 365 新手的完整培训系列](../../business-video/index.yml)。
+如果你发现此视频有帮助，请查看[适用于小型企业和 Microsoft 365 新用户的完整培训系列](../../business-video/index.yml)。
   
 ## <a name="steps-reset-a-business-password-for-a-user"></a>步骤：重置用户的业务密码
 

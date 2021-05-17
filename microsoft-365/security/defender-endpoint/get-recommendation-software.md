@@ -1,7 +1,7 @@
 ---
-title: 获取软件建议
+title: 按软件获取建议
 description: 检索与特定软件相关的安全建议。
-keywords: api， 图形 api， 受支持的 api， 获取， 安全建议， 软件的安全建议， 威胁和漏洞管理， 威胁和漏洞管理 api
+keywords: api， 图形 api， 受支持的 api， 获取， 安全建议， 软件安全建议， 危险和漏洞管理， 危险和漏洞管理 api
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -21,7 +21,7 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 03/23/2021
 ms.locfileid: "51199497"
 ---
-# <a name="get-recommendation-by-software"></a>获取软件建议
+# <a name="get-recommendation-by-software"></a>按软件获取建议
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -55,7 +55,7 @@ GET /api/recommendations/{id}/software
 
 名称 | 类型 | 说明
 :---|:---|:---
-Authorization | 字符串 | Bearer {token}。 **必需**。
+Authorization | String | Bearer {token}。 **必需**。
 
 
 ## <a name="request-body"></a>请求正文

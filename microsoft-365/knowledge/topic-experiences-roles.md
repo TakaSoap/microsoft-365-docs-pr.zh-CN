@@ -23,65 +23,65 @@ ms.locfileid: "51222763"
 ---
 # <a name="microsoft-viva-topics-roles"></a>Microsoft Viva 主题角色 
 
-在 Microsoft 365 环境中使用 Viva 主题时，你的用户可以具有以下角色：
--   主题查看器
+当您在环境环境中使用 Viva Microsoft 365，您的用户可以具有以下角色：
+-   主题查看者
 -   主题参与者
--   知识管理器
+-   知识经理
 -   知识管理员
 
-## <a name="topic-viewer"></a>主题查看器
+## <a name="topic-viewer"></a>主题查看者
 
-主题查看者是组织中可以查看其 SharePoint 新式网站中突出显示的主题的用户、通过 SharePoint 的 Microsoft 搜索 Office.com 主题中心查看主题。 他们可以在主题页面上查看有关主题的更多详细信息。 
+主题查看者是组织中可以查看其 SharePoint 新式网站、microsoft Search through SharePoint、Office.com 和主题中心中突出显示的主题的用户。 他们可以在主题页面上查看有关主题的更多详细信息。 
 
-若要使主题突出显示及其主题页面对主题查看器可见，用户必须：
--   由 Microsoft 365[管理员分配 Viva](./set-up-topic-experiences.md#assign-licenses)主题许可证。
--   允许查看主题。 此任务由知识管理员在 Microsoft 365 管理中心的 Viva 主题设置页面中完成。
+若要使主题突出显示及其主题页面对主题查看者可见，用户必须：
+-   [由管理员为其分配 Viva](./set-up-topic-experiences.md#assign-licenses)主题Microsoft 365许可证。
+-   允许查看主题。 此任务由知识管理员在管理中心的 Viva 主题设置页Microsoft 365完成。
 
 
 ## <a name="topic-contributors"></a>主题参与者
 
-主题参与者是组织中不仅具有主题查看器权限，还可以编辑现有主题或创建新主题的用户。 它们在手动"选择"AI 或手动提供 (主题页中的信息，以确保其) 非常重要。
+主题参与者是组织中不仅具有主题查看者权限，而且可编辑现有主题或创建新主题的用户。 它们在手动"选择"AI 或手动提供 (主题页中的信息，以确保其) 非常重要。
 
 具有主题参与者权限的用户将在主题页面上看到"编辑"按钮，该按钮允许他们更新和发布主题。
 
-主题参与者还可以通过其主题中心创建和发布新主题。
+主题参与者也可以通过其主题中心创建和发布新主题。
 
 若要创建和编辑主题，用户必须：
 
--   由 Microsoft 365[管理员分配 Viva](./set-up-topic-experiences.md#assign-licenses)主题许可证。
--   [分配有创建和编辑主题的权限](./topic-experiences-user-permissions.md)。 此任务由知识管理员在 Microsoft 365 管理中心的 Viva 主题设置页面中完成。
+-   [由管理员为其分配 Viva](./set-up-topic-experiences.md#assign-licenses)主题Microsoft 365许可证。
+-   [分配有创建和编辑主题的权限](./topic-experiences-user-permissions.md)。 此任务由知识管理员在管理中心的 Viva 主题设置页Microsoft 365完成。
 
 ## <a name="knowledge-managers"></a>知识经理
 
-知识经理是管理组织中主题的用户。  主题管理通过主题中心的"管理主题"页完成，并且仅对知识管理员可见。
+知识经理是管理组织中主题的用户。  主题管理是通过主题中心的“管理主题”页面完成的，并且只有知识经理才能看到。
 
-在"管理主题"页中，知识管理人员可以执行以下任务：
+在“管理主题”页面中，知识经理可以执行下列任务：
 -   查看 AI 建议的主题。
 -   查看主题以确认它们有效。
 -   删除不希望用户看到的主题。
 
-此外，知识管理员还可以编辑现有主题或创建新主题。
+此外，知识经理可以编辑现有主题或创建新主题。
 
 若要管理主题，用户必须：
--   由 Microsoft 365[管理员分配 Viva](./set-up-topic-experiences.md#assign-licenses)主题许可证。
--   [分配有管理主题) 。](./topic-experiences-user-permissions.md) 此任务由知识管理员在 Microsoft 365 管理中心的 Viva 主题设置页面中完成。
+-   [由管理员为其分配 Viva](./set-up-topic-experiences.md#assign-licenses)主题Microsoft 365许可证。
+-   [分配有管理主题) 。](./topic-experiences-user-permissions.md) 此任务由知识管理员在管理中心的 Viva 主题设置页Microsoft 365完成。
 
 对业务有全面了解的用户可能是担任知识经理角色的良好候选者。 这些人员不仅可能了解主题是否有效，还可能会了解公司内与这些主题相关的人员。
 
 
 ## <a name="knowledge-admins"></a>知识管理员
 
-知识管理员是在你的 Microsoft 365 环境中设置和配置 Viva 主题的管理员。 他们还会在设置完成后管理 Viva 主题设置。 知识管理员角色要求你是 Microsoft 365 全局管理员或 SharePoint 管理员，因为设置和管理在 Microsoft 365 管理中心完成。
+知识管理员是在你的环境中设置和配置 Viva 主题Microsoft 365管理员。 他们还会在设置完成后管理 Viva 主题设置。 知识管理员角色需要你成为全局Microsoft 365管理员或SharePoint管理员，因为设置和管理在 Microsoft 365 中心完成。
 在设置过程中，知识管理员可以将 Viva 主题配置为：
 
--   选择将针对主题对哪些 SharePoint 网站进行爬网。
--   选择哪些许可用户可以查看主题 (查看者) 。
--   选择要识别的主题。
--   选择要创建和编辑主题的许可用户 (参与者) 。
--   选择哪些许可用户可以管理 (管理员) 。
+-   选择将爬网哪些 SharePoint 网站来识别主题。
+-   选择哪些许可用户可以查看主题（主题查看者）。
+-   选择要排除而不识别的主题。
+-   选择哪些许可用户可以创建和编辑主题（主题参与者）。
+-   选择哪些许可用户可以管理主题（知识经理）。
 -   将主题中心命名。
 
-知识管理人员需要能够与组织的所有 Viva 主题利益干系人进行协调，以了解如何进行配置。 例如，如果新项目包含敏感信息，则需要通知知识经理，以便他们可以确保不会针对主题对 SharePoint 网站进行爬网，或者需要排除特定主题名称。
+知识经理需要能与组织内的所有 Viva Topics 利益干系人协调以了解如何对其进行配置。 例如，如果新项目包含敏感信息，则需要通知知识经理，以便他们可以确保不针对主题对 SharePoint 网站进行爬网，或者需要排除特定主题名称。
 
 
 ## <a name="see-also"></a>另请参阅

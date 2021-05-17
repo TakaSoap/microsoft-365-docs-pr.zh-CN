@@ -1,7 +1,7 @@
 ---
 title: 按 Id 获取建议
 description: 按 ID 检索安全建议。
-keywords: api， 图形 api， 受支持的 api， 获取， 安全建议， 按 ID 的安全建议， 威胁和漏洞管理， 威胁和漏洞管理 api
+keywords: api， 图形 api， 受支持的 api， 获取， 安全建议， 按 ID 的安全建议， 危险和漏洞管理， 危险和漏洞管理 api
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -55,7 +55,7 @@ GET /api/recommendations/{id}
 
 名称 | 类型 | 说明
 :---|:---|:---
-Authorization | 字符串 | Bearer {token}。 **必需**。
+Authorization | String | Bearer {token}。 **必需**。
 
 
 ## <a name="request-body"></a>请求正文

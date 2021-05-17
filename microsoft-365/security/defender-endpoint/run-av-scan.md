@@ -35,7 +35,7 @@ ms.locfileid: "51200205"
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
 ## <a name="api-description"></a>API 说明
-在设备上启动 Microsoft Defender 防病毒扫描。
+在Microsoft Defender 防病毒启动扫描。
 
 
 ## <a name="limitations"></a>限制
@@ -66,7 +66,7 @@ POST https://api.securitycenter.microsoft.com/api/machines/{id}/runAntiVirusScan
 
 名称 | 类型 | 说明
 :---|:---|:---
-Authorization | 字符串 | Bearer {token}。 **必需**。
+Authorization | String | Bearer {token}。 **必需**。
 Content-Type | string | application/json
 
 ## <a name="request-body"></a>请求正文
@@ -75,7 +75,7 @@ Content-Type | string | application/json
 参数 | 类型    | 说明
 :---|:---|:---
 评论 |   字符串 | 要与操作关联的注释。 **必需**。
-ScanType|   字符串  | 定义扫描的类型。 **必需**。
+ScanType|   String  | 定义扫描的类型。 **必需**。
 
 **ScanType** 控制要执行扫描的类型，可以是下列类型之一：
 

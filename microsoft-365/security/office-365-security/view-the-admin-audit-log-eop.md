@@ -10,7 +10,7 @@ audience: ITPro
 ms.topic: how-to
 localization_priority: Normal
 ms.assetid: 003d7a74-3e16-4453-ae0c-9dbae51f66d1
-description: 管理员可以了解如何在独立 Exchange Online Protection 审核日志 EOP (中查看和搜索) 。
+description: 管理员可以了解如何在独立 EOP 审核日志中查看和Exchange Online Protection (管理员) 。
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: 5ed1d1eb121c06e6f5727e8782ba1d8bc8d23a99
@@ -23,12 +23,12 @@ ms.locfileid: "51203180"
 # <a name="view-the-admin-audit-log-in-standalone-eop"></a>在独立 EOP 中查看管理员审核日志
 
 **适用对象**
-- [独立 Exchange Online Protection](exchange-online-protection-overview.md)
+- [Exchange Online Protection独立](exchange-online-protection-overview.md)
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
-在没有 Exchange Online 邮箱的独立 Exchange Online Protection (EOP) 组织中，可以使用 Exchange 管理中心 (EAC) 或独立 EOP PowerShell 搜索和查看管理 审核日志 中的条目。
+在没有 Exchange Online 邮箱的独立 Exchange Online Protection (EOP) 组织中，可以使用 Exchange 管理中心 (EAC) 或独立 EOP PowerShell 搜索和查看管理审核日志。
 
 管理员审核日志管理员和分配了管理权限的用户基于独立 EOP PowerShell cmdlet 记录特定操作。 管理中心中的条目审核日志有关运行的 cmdlet、使用的参数、运行 cmdlet 的用户以及受影响的对象的信息。
 
@@ -42,13 +42,13 @@ ms.locfileid: "51203180"
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>开始前，有必要了解什么？
 
-- 若要打开 Exchange 管理中心，请参阅 [独立 EOP 中的 Exchange 管理中心](exchange-admin-center-in-exchange-online-protection-eop.md)。
+- 若要打开Exchange中心，请参阅Exchange [EOP 中的管理中心](exchange-admin-center-in-exchange-online-protection-eop.md)。
 
 - 若要连接到独立 EOP PowerShell，请参阅[连接到 Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell)。
 
-- 您需在 Exchange Online Protection 中获得权限，然后才能执行本文中的过程。 具体来说，您需要"**审核日志**"或"仅查看审核日志"角色，默认情况下会将其分配给组织管理、合规性管理和安全 **管理员** 角色组。 有关详细信息，请参阅 [Permissions in standalone EOP](feature-permissions-in-eop.md) 和 [Use the EAC modify the list of members in role groups](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups)。
+- 您需在 Exchange Online Protection权限，然后才能执行本文中的过程。 具体来说，您需要"**审核日志**"或"仅查看审核日志"角色，默认情况下会将其分配给组织管理、合规性管理和安全 **管理员** 角色组。 有关详细信息，请参阅 [Permissions in standalone EOP](feature-permissions-in-eop.md) 和 [Use the EAC modify the list of members in role groups](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups)。
 
-- 有关可能适用于本文中的过程的键盘快捷方式的信息，请参阅[Keyboard shortcuts for the Exchange admin center in Exchange Online。](/Exchange/accessibility/keyboard-shortcuts-in-admin-center)
+- 有关可能适用于本文中的过程的键盘快捷方式的信息，请参阅 Exchange Online 中适用于 Exchange[管理中心的键盘快捷方式](/Exchange/accessibility/keyboard-shortcuts-in-admin-center)。
 
 > [!TIP]
 > 是否有任何疑问？ 请在 [Exchange Online Protection](https://social.technet.microsoft.com/Forums/forefront/home?forum=FOPE) 论坛中寻求帮助。

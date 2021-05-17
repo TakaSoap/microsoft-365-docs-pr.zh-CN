@@ -14,7 +14,7 @@ search.appverid:
 ms.assetid: 351c932e-99c1-4512-a6e8-788e90b7838f
 ms.custom:
 - seo-marvel-apr2020
-description: 本文将介绍在 Exchange Online 中发送受 S/MIME 保护的邮件之前，如何向 Office 365 发布相应的证书。
+description: 本文将了解如何在邮件中发送受 S/MIME Office 365邮件之前，将相应的证书发布到Exchange Online。
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: 387f9f405afd45254c6568aa92334a7ee5b4171f
@@ -29,13 +29,13 @@ ms.locfileid: "51203820"
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
-必须先设置适当的证书，然后才能在 Exchange Online 中发送受 S/MIME 保护的邮件。 若要通过 Exchange Online 发送加密邮件，发件人的电子邮件应用使用收件人的公共证书加密邮件。 此公用 X.509 证书必须向 Office 365 发布。
+必须先设置适当的证书，然后任何人都可以在 Exchange Online 中发送受 S/MIME 保护的邮件。 若要通过邮件Exchange Online，发件人的电子邮件应用程序会使用收件人的公共证书对邮件进行加密。 此公用 X.509 证书必须向 Office 365 发布。
 
 ## <a name="to-sync-certificates-that-support-smime"></a>对支持 S/MIME 的证书进行同步
 
 首先，通过颁发证书并在本地 Active Directory 域服务中发布证书来设置 S/MIME。 有关详细信息，请参阅 [Active Directory 证书服务概述](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh831740(v=ws.11))。
 
-发布证书后，使用 Azure AD Connect 工具将用户数据从本地 Exchange 环境同步到 Office 365。 有关此过程详细信息，请参阅 Azure [AD Connect 同步：了解并自定义同步](/azure/active-directory/hybrid/how-to-connect-sync-whatis)。
+发布证书后，使用 Azure AD 连接 工具将本地部署环境中的用户数据Exchange同步到Office 365。 有关此过程详细信息，请参阅 Azure [AD 连接同步：了解并自定义同步](/azure/active-directory/hybrid/how-to-connect-sync-whatis)。
 
 除了同步其他目录数据，出于 S/MIME 目的，该工具还将同步每个用户对象的  **userCertificate** 和 **userSMIMECertificate** 属性，以便数据可用于对邮件进行签名和加密。
 

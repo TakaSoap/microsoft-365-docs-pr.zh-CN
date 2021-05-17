@@ -44,7 +44,7 @@ ms.locfileid: "51203199"
 
 单击报表仪表板或仪表板上"热门见解"&建议"区域中的"查看全部"后，选择见解后， (**进入** 此 \>  <https://protection.office.com/insightdashboard> 详细信息) 。
 
-若要阻止自动将邮件转发到外部域，请为部分或所有外部域配置远程域。 有关详细信息，请参阅在 [Exchange Online 中管理远程域](/Exchange/mail-flow-best-practices/remote-domains/manage-remote-domains)。
+若要阻止自动将邮件转发到外部域，请为部分或所有外部域配置远程域。 有关详细信息，请参阅管理[Exchange Online 中的远程域](/Exchange/mail-flow-best-practices/remote-domains/manage-remote-domains)。
 
 ## <a name="related-topics"></a>相关主题
 

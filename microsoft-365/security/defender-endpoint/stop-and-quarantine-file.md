@@ -67,7 +67,7 @@ POST https://api.securitycenter.microsoft.com/api/machines/{id}/StopAndQuarantin
 
 名称 | 类型 | 说明
 :---|:---|:---
-Authorization | 字符串 | Bearer {token}。 **必需**。
+Authorization | String | Bearer {token}。 **必需**。
 Content-Type | string | application/json. **必需**。
 
 ## <a name="request-body"></a>请求正文
@@ -76,7 +76,7 @@ Content-Type | string | application/json. **必需**。
 参数 | 类型    | 说明
 :---|:---|:---
 评论 |   字符串 |    要与操作关联的注释。 **必需**。
-Sha1 |  字符串   | 在设备上停止和隔离的文件的 Sha1。 **必需**。
+Sha1 |  String   | 在设备上停止和隔离的文件的 Sha1。 **必需**。
 
 ## <a name="response"></a>响应
 如果成功，此方法在响应正文中返回 201 - 已创建响应 [代码和计算机](machineaction.md) 操作。

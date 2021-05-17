@@ -13,7 +13,7 @@ search.appverid:
 ms.assetid: 2889c82e-fab0-4e85-87b0-b001b2ccd4f7
 ms.collection:
 - M365-security-compliance
-description: 管理员可以了解如何使用邮件流规则 (传输规则) Exchange Online Protection (EOP) 中的批量邮件 (邮件) 。
+description: 管理员可以了解如何使用邮件流规则 (传输规则) EOP (中的 (邮件) 邮件Exchange Online Protection (邮件) 。
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
@@ -33,15 +33,15 @@ ms.locfileid: "51203703"
 - [Microsoft Defender for Office 365 计划 1 和计划 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-在邮箱在 Exchange Online 或独立 Exchange Online Protection (EOP) 组织中没有 Exchange Online 邮箱的 Microsoft 365 组织中，EOP 使用反垃圾邮件策略 (也称为垃圾邮件筛选器策略或内容筛选器策略) 扫描入站邮件中的垃圾邮件和批量邮件 (也称为灰色邮件) 。 有关详细信息，请参阅[在 EOP 中配置反垃圾邮件策略](configure-your-spam-filter-policies.md)。
+在 Microsoft 365 组织中，邮箱在 Exchange Online 或独立 Exchange Online Protection (EOP) 组织中没有 Exchange Online 邮箱，EOP 使用反垃圾邮件策略 (也称为垃圾邮件筛选器策略或内容筛选器策略) 扫描入站邮件中的垃圾邮件和批量邮件 (也称为灰色邮件) 。 有关详细信息，请参阅[在 EOP 中配置反垃圾邮件策略](configure-your-spam-filter-policies.md)。
 
 如果您希望更多选项来筛选批量邮件，可以创建邮件流规则 (也称为传输规则) 以搜索批量邮件中经常发现的文本模式或短语，并标记这些邮件为垃圾邮件。 有关批量邮件详细信息，请参阅垃圾邮件和批量邮件之间有什么区别 [？](what-s-the-difference-between-junk-email-and-bulk-email.md) 和批量投诉级别 (BCL) [EOP 中](bulk-complaint-level-values.md)。
 
-本主题介绍如何在 Exchange 管理中心 (EAC) 和 PowerShell (Exchange Online PowerShell 中为在 Exchange Online 中拥有邮箱的 Microsoft 365 组织创建这些邮件流规则;适用于没有 Exchange Online 邮箱的组织的独立 EOP PowerShell) 。
+本主题介绍如何在 Exchange 管理中心 (EAC) 和 PowerShell (Exchange Online PowerShell 中为 Microsoft 365 组织创建这些邮件流规则，Exchange Online;适用于没有邮箱或邮箱Exchange Online的独立 EOP PowerShell) 。
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>开始前，有必要了解什么？
 
-- 您需在 Exchange Online 或 Exchange Online Protection 中分配权限，然后才能执行本文中的过程。 具体来说，您需要传输规则角色，默认情况下，该角色分配给组织管理、合规性 **管理 (全局** 管理员) 角色组和 **记录** 管理角色组。
+- 您需在 Exchange Online 或 Exchange Online Protection 权限，然后才能执行本文中的过程。 具体来说，您需要传输规则角色，默认情况下，该角色分配给组织管理、合规性 **管理 (全局** 管理员) 角色组和 **记录** 管理角色组。
 
   有关详细信息，请参阅下列主题：
 
@@ -49,15 +49,15 @@ ms.locfileid: "51203703"
   - [独立 EOP 中的权限](feature-permissions-in-eop.md)
   - [使用 EAC 修改角色组的成员列表](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups)
 
-- 若要在 Exchange Online 中打开 EAC，请参阅 [Exchange Online 中的 Exchange 管理中心](/Exchange/exchange-admin-center)。 若要在独立 EOP 中打开 EAC，请参阅 [独立 EOP 中的 Exchange 管理中心](exchange-admin-center-in-exchange-online-protection-eop.md)。
+- 若要在管理中心中Exchange Online EAC，Exchange[管理中心Exchange Online。](/Exchange/exchange-admin-center) 若要在独立 EOP 中打开 EAC，请参阅Exchange [EOP 中的管理中心](exchange-admin-center-in-exchange-online-protection-eop.md)。
 
 - 若要连接到 Exchange Online PowerShell，请参阅[连接到 Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)。 若要连接到独立 EOP PowerShell，请参阅[连接到 Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell)。
 
-- 有关 Exchange Online 和独立 EOP 中的邮件流规则详细信息，请参阅下列主题：
+- 有关独立 EOP 中的邮件流规则Exchange Online，请参阅下列主题：
 
   - [Exchange Online 中的邮件流规则（传输规则）](/Exchange/security-and-compliance/mail-flow-rules/mail-flow-rules)
 
-  - [Exchange Online 中的邮件流规则 (和) 谓词](/Exchange/security-and-compliance/mail-flow-rules/conditions-and-exceptions)
+  - [Exchange Online 中的邮件流规则条件和例外（谓词）](/Exchange/security-and-compliance/mail-flow-rules/conditions-and-exceptions)
 
   - [Exchange Online 中的邮件流规则操作](/Exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions)
 
