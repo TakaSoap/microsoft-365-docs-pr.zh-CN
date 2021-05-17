@@ -35,13 +35,13 @@ ms.locfileid: "51935805"
 **适用于：**
 - Microsoft 365 Defender
 
-高级搜寻架构中的表包含有关通过 Microsoft Defender 捕获本地 Active Directory 进行身份验证活动的信息，以及与 Microsoft Cloud App Security 捕获的 Microsoft 联机服务相关的身份验证活动 `IdentityLogonEvents` 。 [](advanced-hunting-overview.md) 使用此参考来构建从此表返回信息的查询。
+高级搜寻架构中的表包含有关通过 Microsoft Defender 捕获本地 Active Directory 进行身份验证活动的信息，以及 Microsoft Defender 捕获的与 Microsoft 联机服务相关的身份验证 `IdentityLogonEvents` Microsoft Cloud App Security。 [](advanced-hunting-overview.md) 使用此参考来构建从此表返回信息的查询。
 
 >[!TIP]
 > 有关表支持的事件类型 () ，请使用安全中心中提供的内置架构 `ActionType` 参考。
 
 >[!NOTE]
->此表涵盖 Azure Active Directory (AD) Cloud App Security 跟踪的登录活动，特别是使用 ActiveSync 和其他旧协议进行交互式登录和身份验证活动。 此表中不可用的非交互式登出可以在 Azure AD 审核日志。 [详细了解将 Cloud App Security 连接到 Microsoft 365](/cloud-app-security/connect-office-365-to-microsoft-cloud-app-security)
+>此表Azure Active Directory (由) 跟踪的 AD 登录云应用安全，特别是使用 ActiveSync 和其他旧协议的交互式登录和身份验证活动。 此表中不可用的非交互式登出可以在 Azure AD 审核日志。 [详细了解如何连接云应用安全Microsoft 365](/cloud-app-security/connect-office-365-to-microsoft-cloud-app-security)
 
 有关高级搜寻架构中其他表的信息，请[参阅高级搜寻参考](advanced-hunting-schema-tables.md)。
 

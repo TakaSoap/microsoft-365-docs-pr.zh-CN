@@ -1,5 +1,5 @@
 ---
-title: AssignedIPAddresses () Microsoft 365 Defender 高级搜寻中的函数
+title: AssignedIPAddresses () Defender 高级搜寻中的Microsoft 365函数
 description: 了解如何使用 AssignedIPAddresses () 函数获取分配给设备的最新 IP 地址
 keywords: 高级搜寻， 威胁搜寻， 网络威胁搜寻， Microsoft 365 Defender， microsoft 365， m365， 搜索， 查询， 遥测， 架构参考， kusto， FileProfile， 文件配置文件， 函数， 扩充
 search.product: eADQiWindows 10XVcnh

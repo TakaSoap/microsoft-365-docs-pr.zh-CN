@@ -42,11 +42,11 @@ ms.locfileid: "51933837"
 
 **打开事件查看器并查找 Microsoft Defender for Endpoint 服务事件日志：**
 
-1. 单击 **Windows** 菜单上的"开始"，键入 **"事件查看器"，** 然后按 **Enter。**
+1. 单击 **菜单** 上的"开始 **Windows，键入事件查看器**，然后按 **Enter。**
 
-2. 在日志列表中的"日志 **摘要"下**，滚动到看到 **"Microsoft-Windows-SENSE/Operational"。** 双击该项以打开日志。
+2. 在日志列表中的"日志 **摘要"下**，滚动，直到看到 **Microsoft-Windows-SENSE/Operational。** 双击该项以打开日志。
 
-   a.  您还可以通过展开"应用程序和服务日志  >  **""Microsoft**  >  **Windows**  >  **SENSE"** 并单击"操作"来访问 **日志**。
+   a.  您还可以通过展开应用程序和服务日志Microsoft Windows SENSE 并单击操作 来访问  >    >    >  **日志**。
 
    > [!NOTE]
    > SENSE 是内部名称，用于引用支持 Microsoft Defender for Endpoint 的行为传感器。
@@ -99,14 +99,14 @@ ms.locfileid: "51933837"
 <td>设备未正确载入，不会向门户报告。</td>
 <td>在启动该服务之前，必须运行载入。<br>
 检查载入设置和脚本是否正确部署。 尝试重新部署配置包。<br>
-请参阅 <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices](configure-endpoints.md)">载入 Windows 10 设备</a>。</td>
+请参阅<a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices](configure-endpoints.md)">载入Windows 10设备</a>。</td>
 </tr>
 <tr>
 <td>7 </td>
 <td>Microsoft Defender for Endpoint 服务无法读取载入参数。 失败 <code>variable</code> ：。</td>
 <td>变量 = 详细的错误描述。 设备未正确载入，不会向门户报告。</td>
 <td>检查载入设置和脚本是否正确部署。 尝试重新部署配置包。<br>
-请参阅 <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices](configure-endpoints.md)">载入 Windows 10 设备</a>。</td>
+请参阅<a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices](configure-endpoints.md)">载入Windows 10设备</a>。</td>
 </tr>
 <tr>
 <td>8 </td>
@@ -114,21 +114,21 @@ ms.locfileid: "51933837"
 <td><b>载入期间：</b> 服务在载入期间未能清理其配置。 载入过程继续进行。 <br><br> <b>在载出期间：</b> 该服务在载出过程中未能清理其配置。 载出过程已完成，但服务继续运行。
  </td>
 <td><b>载入：</b> 无需任何操作。 <br><br> <b>载出：</b> 重新启动系统。<br>
-请参阅 <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices](configure-endpoints.md)">载入 Windows 10 设备</a>。</td>
+请参阅<a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices](configure-endpoints.md)">载入Windows 10设备</a>。</td>
 </tr>
 <tr>
 <td>9 </td>
 <td>Microsoft Defender for Endpoint 服务未能更改其启动类型。 失败代码 <code>variable</code> ：。</td>
 <td><b>载入期间：</b> 设备未正确载入，不会向门户报告。 <br><br><b>在载出期间：</b> 未能更改服务启动类型。 载出过程继续进行。 </td>
 <td>检查载入设置和脚本是否正确部署。 尝试重新部署配置包。<br>
-请参阅 <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices](configure-endpoints.md)">载入 Windows 10 设备</a>。</td>
+请参阅<a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices](configure-endpoints.md)">载入Windows 10设备</a>。</td>
 </tr>
 <tr>
 <td>10  </td>
 <td>Microsoft Defender for Endpoint 服务无法保留载入信息。 失败代码 <code>variable</code> ：。</td>
 <td>设备未正确载入，不会向门户报告。</td>
 <td>检查载入设置和脚本是否正确部署。 尝试重新部署配置包。<br>
-请参阅 <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices](configure-endpoints.md)">载入 Windows 10 设备</a>。</td>
+请参阅<a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices](configure-endpoints.md)">载入Windows 10设备</a>。</td>
 </tr>
 <tr>
 <td>11</td>
@@ -150,7 +150,7 @@ ms.locfileid: "51933837"
 <td>正常操作通知;无需任何操作。</td>
 </tr>
 <tr>
-<td>15 </td>
+<td>15</td>
 <td>Microsoft Defender for Endpoint 无法使用 URL 启动命令通道 <code>variable</code> ：。</td>
 <td>变量 = 适用于终结点处理服务器的 Defender 的 URL。<br>
 该服务无法通过该 URL 与外部处理服务器联系。</td>
@@ -159,29 +159,29 @@ ms.locfileid: "51933837"
 <tr>
 <td>17 </td>
 <td>Microsoft Defender for Endpoint 服务未能更改连接用户体验和遥测服务位置。 失败代码 <code>variable</code> ：。</td>
-<td>Windows 遥测服务出错。</td>
+<td>遥测服务Windows错误。</td>
 <td><a href="troubleshoot-onboarding.md#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy" data-raw-source="[Ensure the diagnostic data service is enabled](troubleshoot-onboarding.md#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy)">确保诊断数据服务已启用</a>。<br>
 检查载入设置和脚本是否正确部署。 尝试重新部署配置包。<br>
-请参阅 <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices](configure-endpoints.md)">载入 Windows 10 设备</a>。</td>
+请参阅<a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices](configure-endpoints.md)">载入Windows 10设备</a>。</td>
 </tr>
 <tr>
 <td>18 </td>
-<td>OOBE (Windows 欢迎) 已完成。</td>
-<td>服务仅在任何 Windows 更新完成安装后启动。</td>
+<td>OOBE (Windows完成) 欢迎使用。</td>
+<td>只有在任何更新完成安装Windows服务才能启动。</td>
 <td>正常操作通知;无需任何操作。</td>
 </tr>
 <tr>
 <td>19</td>
-<td>OOBE (Windows 欢迎) 尚未完成。</td>
-<td>服务仅在任何 Windows 更新完成安装后启动。</td>
+<td>OOBE (Windows欢迎) 尚未完成。</td>
+<td>只有在任何更新完成安装Windows服务才能启动。</td>
 <td>正常操作通知;无需任何操作。<br>
-如果在系统重新启动后此错误仍然存在，请确保所有 Windows 更新都已安装完整。</td>
+如果此错误在系统重新启动后仍然存在，请确保Windows安装完整更新。</td>
 </tr>
 <tr>
 <td>20</td>
-<td>无法等待 OOBE (Windows 欢迎) 完成。 失败代码 <code>variable</code> ：。</td>
+<td>无法等待 OOBE (Windows欢迎) 完成。 失败代码 <code>variable</code> ：。</td>
 <td>内部错误。</td>
-<td>如果在系统重新启动后此错误仍然存在，请确保所有 Windows 更新都已安装完整。</td>
+<td>如果此错误在系统重新启动后仍然存在，请确保Windows安装完整更新。</td>
 </tr>
 <tr>
 <td>25</td>
@@ -189,7 +189,7 @@ ms.locfileid: "51933837"
 <td>设备未正确载入。
 它将报告给门户，但该服务可能不会显示为在 SCCM 或注册表中注册。</td>
 <td>检查载入设置和脚本是否正确部署。 尝试重新部署配置包。<br>
-请参阅 <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices](configure-endpoints.md)">载入 Windows 10 设备</a>。</td>
+请参阅<a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices](configure-endpoints.md)">载入Windows 10设备</a>。</td>
 </tr>
 <tr>
 <td>26</td>
@@ -197,23 +197,23 @@ ms.locfileid: "51933837"
 <td>设备未正确载入。<br>
 它将报告给门户，但该服务可能不会显示为在 SCCM 或注册表中注册。</td>
 <td>检查载入设置和脚本是否正确部署。 尝试重新部署配置包。<br>
-请参阅 <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices](configure-endpoints.md)">载入 Windows 10 设备</a>。</td>
+请参阅<a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices](configure-endpoints.md)">载入Windows 10设备</a>。</td>
 </tr>
 <tr>
 <td>27</td>
-<td>Microsoft Defender for Endpoint 服务未能在 Microsoft Defender 防病毒中启用 SENSE 感知模式。 载入过程失败。 失败代码 <code>variable</code> ：。</td>
-<td>通常情况下，如果另一个实时反恶意软件产品正在设备上正常运行，并且设备向 Defender for Endpoint 报告，Microsoft Defender 防病毒将进入特殊的被动状态。</td>
+<td>Microsoft Defender for Endpoint 服务在运行中无法启用 SENSE 感知Microsoft Defender 防病毒。 载入过程失败。 失败代码 <code>variable</code> ：。</td>
+<td>通常，Microsoft Defender 防病毒设备正常运行，并且设备正在向 Defender for Endpoint 报告其他实时反恶意软件产品，则设备将进入特殊的被动状态。</td>
 <td>检查载入设置和脚本是否正确部署。 尝试重新部署配置包。<br>
-请参阅 <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices](configure-endpoints.md)">载入 Windows 10 设备</a>。<br>
+请参阅<a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices](configure-endpoints.md)">载入Windows 10设备</a>。<br>
 确保实时反恶意软件保护运行正常。</td>
 </tr>
 <tr>
 <td>28</td>
 <td>Microsoft Defender 终结点连接用户体验和遥测服务注册失败。 失败代码 <code>variable</code> ：。</td>
-<td>Windows 遥测服务出错。</td>
+<td>遥测服务Windows错误。</td>
 <td><a href="troubleshoot-onboarding.md#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy" data-raw-source="[Ensure the diagnostic data service is enabled](troubleshoot-onboarding.md#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy)">确保诊断数据服务已启用</a>。<br>
 检查载入设置和脚本是否正确部署。 尝试重新部署配置包。<br>
-请参阅 <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices](configure-endpoints.md)">载入 Windows 10 设备</a>。</td>
+请参阅<a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices](configure-endpoints.md)">载入Windows 10设备</a>。</td>
 </tr>
 <tr>
 <td>29</td>
@@ -223,17 +223,17 @@ ms.locfileid: "51933837"
 </tr>
 <tr>
 <td>30</td>
-<td>Microsoft Defender for Endpoint 服务在 Microsoft Defender 防病毒中未能禁用 SENSE 感知模式。 失败代码 <code>variable</code> ：。</td>
-<td>通常情况下，如果另一个实时反恶意软件产品正在设备上正常运行，并且设备向 Defender for Endpoint 报告，Microsoft Defender 防病毒将进入特殊的被动状态。</td>
+<td>Microsoft Defender for Endpoint 服务在运行中无法禁用 SENSE 感知Microsoft Defender 防病毒。 失败代码 <code>variable</code> ：。</td>
+<td>通常，Microsoft Defender 防病毒设备正常运行，并且设备正在向 Defender for Endpoint 报告其他实时反恶意软件产品，则设备将进入特殊的被动状态。</td>
 <td>检查载入设置和脚本是否正确部署。 尝试重新部署配置包。<br>
-请参阅 <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices](configure-endpoints.md)">载入 Windows 10 设备</a><br>
+请参阅<a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices](configure-endpoints.md)">载入Windows 10设备</a><br>
 确保实时反恶意软件保护运行正常。</td>
 </tr>
 <tr>
 <td>31</td>
 <td>Microsoft Defender 终结点连接用户体验和遥测服务注销失败。 失败代码 <code>variable</code> ：。</td>
-<td>载入期间 Windows 遥测服务出错。 载出过程继续进行。</td>
-<td><a href="troubleshoot-onboarding.md#ensure-the-diagnostic-data-service-is-enabled" data-raw-source="[Check for errors with the Windows telemetry service](troubleshoot-onboarding.md#ensure-the-diagnostic-data-service-is-enabled)">检查 Windows 遥测服务的错误</a>。</td>
+<td>载入期间，Windows遥测服务出错。 载出过程继续进行。</td>
+<td><a href="troubleshoot-onboarding.md#ensure-the-diagnostic-data-service-is-enabled" data-raw-source="[Check for errors with the Windows telemetry service](troubleshoot-onboarding.md#ensure-the-diagnostic-data-service-is-enabled)">检查遥测服务 Windows错误</a>。</td>
 </tr>
 <tr>
 <td>32</td>
@@ -251,17 +251,17 @@ ms.locfileid: "51933837"
 <tr>
 <td>34</td>
 <td>Microsoft Defender for Endpoint 服务无法将自身添加为连接用户体验和遥测服务的依赖项，从而导致载入过程失败。 失败代码 <code>variable</code> ：。</td>
-<td>Windows 遥测服务出错。</td>
+<td>遥测服务Windows错误。</td>
 <td><a href="troubleshoot-onboarding.md#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy" data-raw-source="[Ensure the diagnostic data service is enabled](troubleshoot-onboarding.md#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy)">确保诊断数据服务已启用</a>。<br>
 检查载入设置和脚本是否正确部署。 尝试重新部署配置包。<br>
-请参阅 <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices](configure-endpoints.md)">载入 Windows 10 设备</a>。</td>
+请参阅<a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices](configure-endpoints.md)">载入Windows 10设备</a>。</td>
 </tr>
 <tr>
 <td>35</td>
 <td>Microsoft Defender for Endpoint 服务无法删除自身作为连接用户体验和遥测服务的依赖项。 失败代码 <code>variable</code> ：。</td>
-<td>在载出期间 Windows 遥测服务出错。 载出过程继续进行。
+<td>在载出期间Windows遥测服务出错。 载出过程继续进行。
 </td>
-<td>检查 Windows 诊断数据服务的错误。</td>
+<td>检查诊断数据服务Windows错误。</td>
 </tr>
 <tr>
 <td>36</td>
@@ -494,7 +494,7 @@ ms.locfileid: "51933837"
 </tr>
 <tr>
    <td>84</td>
-   <td>设置Windows Defender防病毒运行模式。 强制被动模式：%1，结果代码：%2。</td>
+   <td>设置Windows Defender 防病毒模式。 强制被动模式：%1，结果代码：%2。</td>
    <td>将 defender 运行模式设置为 (或被动) 。</td>
    <td>正常操作通知;无需任何操作。</td>
 </tr>

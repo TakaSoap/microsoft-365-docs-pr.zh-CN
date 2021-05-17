@@ -33,19 +33,19 @@ ms.locfileid: "51935925"
 
 > 想要体验 Microsoft Defender for Endpoint？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-> 有关 Windows 10 企业版特性和功能详细信息，请参阅 [Windows 10 企业版](https://www.microsoft.com/WindowsForBusiness/buy)。
+> 有关 Windows 10 企业版 Edition 特性和功能的信息，请参阅 Windows 10 企业版[edition](https://www.microsoft.com/WindowsForBusiness/buy)。
 
 Microsoft Defender for Endpoint 是一个企业终结点安全平台，旨在帮助企业网络预防、检测、调查和响应高级威胁。
 <p></p>
 
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4wDob]
 
-Defender for Endpoint 使用 Windows 10 中内置的技术和 Microsoft 强大的云服务的以下组合：
+Defender for Endpoint 使用内置于 Windows 10 和 Microsoft 强大的云服务中的以下技术组合：
 
--   **终结点行为** 传感器：这些传感器嵌入在 Windows 10 中，可收集和处理来自操作系统的行为信号，并将此传感器数据发送到适用于 Endpoint 的 Microsoft Defender 的私有、隔离云实例。
+-   **终结点行为** 传感器：这些传感器嵌入 Windows 10 中，可收集和处理来自操作系统的行为信号，并将此传感器数据发送到 Microsoft Defender for Endpoint 的私有、隔离云实例。
 
 
--   云 **安全** 分析：跨 Windows 生态系统、企业云产品 (（如 Office 365) ）和联机资产利用大数据、设备学习以及独特的 Microsoft 光学系统，将行为信号转换为对高级威胁的见解、检测和建议响应。
+-   云 **安全** 分析：利用 Windows 生态系统中的大数据、设备学习以及独特的 Microsoft 光学系统、企业云产品 (（如 Office 365) ）和在线资产，行为信号将转换为对高级威胁的见解、检测和建议响应。
 
 -   **威胁智能**：威胁智能由 Microsoft 情报人员、安全团队生成，由合作伙伴提供的威胁智能进行增强，使 Defender for Endpoint 能够识别攻击者工具、技术和过程，并可在收集的传感器数据中观察到它们时生成警报。
 
@@ -64,7 +64,7 @@ Defender for Endpoint 使用 Windows 10 中内置的技术和 Microsoft 强大�
 <a href="#apis"><center><b>集中配置和管理、API</a></b></center></td>
 </tr>
 <tr>
-<td colspan="7"><a href="#mtp"><center><b>Microsoft 365 Defender</a></center></b></td>
+<td colspan="7"><a href="#mtp"><center><b>Microsoft 365Defender</a></center></b></td>
 </tr>
 </table>
 <br>
@@ -99,7 +99,7 @@ Defender for Endpoint 使用 Windows 10 中内置的技术和 Microsoft 强大�
 
 <a name="ai"></a>
 
-**[自动调查和修复](automated-investigations.md)**<br>
+**[自动调查和修正](automated-investigations.md)**<br>
 Microsoft Defender for Endpoint 与快速响应高级攻击结合使用，提供自动调查和修正功能，可帮助在数分钟内大规模减少警报量。 
 
 <a name="ss"></a>
@@ -114,8 +114,8 @@ Defender for Endpoint 包括适用于设备的 Microsoft 安全分数，可帮�
 Microsoft Defender for Endpoint 的新托管威胁搜寻服务提供了主动搜寻、优先顺序和其他上下文和见解，进一步使安全运营中心 (SOC) 可以快速准确地识别和响应威胁。
 
 >[!IMPORTANT]
->Defender for Endpoint 客户需要申请 Microsoft 威胁专家托管威胁搜寻服务，以获得主动目标攻击通知并按需与专家协作。 专家按需服务是一项附加服务。 接受 Microsoft 威胁专家托管威胁搜寻服务后，始终包含目标攻击通知。<p>
-><p>如果你尚未注册并且希望体验其优势，请转到设置常规高级<b></b>> <b></b>> <b></b>> <b>功能 Microsoft 威胁</b>专家要应用。 接受后，你将受益于定向攻击通知，并开始 90 天的按需专家试用版。 请与 Microsoft 代表联系，获取完整的专家按需订阅。
+>Defender for Endpoint 客户需要申请托管威胁Microsoft 威胁专家服务，以获得主动目标攻击通知，并按需与专家协作。 专家按需服务是一项附加服务。 目标攻击通知始终包含在你接受到托管威胁Microsoft 威胁专家服务中。<p>
+><p>如果你尚未注册并且希望体验其优势，请转到设置<b></b>> <b>高级常规</b>> <b></b>> <b>Microsoft 威胁专家应用。</b> 接受后，你将受益于定向攻击通知，并开始 90 天的按需专家试用版。 请与 Microsoft 代表联系，获取完整的专家按需订阅。
 
 <a name="apis"></a>
 
@@ -135,7 +135,7 @@ Defender for Endpoint 直接与各种 Microsoft 解决方案集成，包括：
 - Skype for Business
 
 **[Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/defender/microsoft-threat-protection)**<br>
-借助 Microsoft 365 Defender、Defender for Endpoint 和各种 Microsoft 安全解决方案，形成统一的攻破前和入侵后企业防御套件，可跨终结点、标识、电子邮件和应用程序进行本机集成，以检测、阻止、调查和自动响应复杂的攻击。
+借助 Microsoft 365 Defender，Defender for Endpoint 和各种 Microsoft 安全解决方案形成统一的攻破前和入侵后企业防御套件，可跨终结点、标识、电子邮件和应用程序进行本机集成，以检测、阻止、调查和自动响应复杂的攻击。
 
 
 ## <a name="related-topic"></a>相关主题

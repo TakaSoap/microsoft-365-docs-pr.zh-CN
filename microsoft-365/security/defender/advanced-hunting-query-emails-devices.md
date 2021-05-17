@@ -35,10 +35,10 @@ ms.locfileid: "51932961"
 **适用于：**
 - Microsoft 365 Defender
 
-[](advanced-hunting-overview.md) Microsoft 365 Defender 中的高级搜寻允许你跨：
+[使用](advanced-hunting-overview.md)Microsoft 365 Defender 中的高级搜寻，你可以跨：
 - 由 Microsoft Defender for Endpoint 管理的设备
-- 由 Microsoft 365 处理的电子邮件
-- 由 Microsoft Cloud App Security 和 Microsoft Defender for Identity 跟踪的云应用活动、身份验证事件和域控制器活动
+- 由用户处理Microsoft 365
+- 由 Microsoft Defender 和 Microsoft Defender for Identity 跟踪的云应用Microsoft Cloud App Security、身份验证事件和域控制器活动
 
 借助此可见性级别，你可以快速搜寻遍历网络各部分的威胁，包括到达电子邮件或 Web 的复杂的入侵、提升本地特权、获取特权域凭据以及横向移动到整个设备。 
 

@@ -1,7 +1,7 @@
 ---
 title: 列出软件
 description: 检索软件清单列表
-keywords: api， 图形 api， 受支持的 api， 获取， 列表， 文件， 信息， 软件清单， 威胁 & 漏洞管理 api， Microsoft Defender for Endpoint tvm api
+keywords: api， 图形 api， 受支持的 api， 获取， 列表， 文件， 信息， 软件清单， 威胁& 漏洞管理 api， Microsoft Defender for Endpoint tvm api
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy

@@ -1,7 +1,7 @@
 ---
 title: 列出所有建议
 description: 检索影响组织的所有安全建议的列表。
-keywords: api， 图形 api， 受支持的 api， 获取， 安全建议， Microsoft Defender for Endpoint tvm api， 威胁和漏洞管理， 威胁和漏洞管理 api
+keywords: api， 图形 api， 受支持的 api， 获取， 安全建议， Microsoft Defender for Endpoint tvm api， 危险和漏洞管理， 危险和漏洞管理 api
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy

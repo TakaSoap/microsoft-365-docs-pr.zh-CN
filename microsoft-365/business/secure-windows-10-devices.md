@@ -26,7 +26,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 21e5551f-fa35-4f13-9418-f80d668b6a2b
-description: 了解如何配置任何 Windows 10 设备在登录工作或学校帐户时将收到的默认设备策略的设置。
+description: 了解如何配置任何设备在登录工作或学校帐户Windows 10接收的默认设备策略的设置。
 ms.openlocfilehash: 86db1c152f9f6ac1fe6093b4a55a74b69fbd8b0f
 ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
@@ -36,9 +36,9 @@ ms.locfileid: "51579966"
 ---
 # <a name="secure-windows-10-devices"></a>保护 Windows 10 设备
 
-本文适用于 Microsoft 365 商业高级版。
+本文适用于Microsoft 365 商业高级版。
 
-在此处配置的设置属于 Windows 10 的默认设备策略。 通过使用工作帐户登录来连接 Windows 10 设备（包括移动设备和电脑）的所有用户将自动收到这些设置。 建议在设置过程中接受默认策略，稍后添加面向特定用户组的策略。
+在此处配置的设置属于 Windows 10 的默认设备策略。 通过使用工作帐户Windows 10移动设备和电脑）连接移动设备的所有用户将自动收到这些设置。 建议在设置过程中接受默认策略，稍后添加面向特定用户组的策略。
   
 ## <a name="settings-to-secure-windows-10-devices"></a>保护 Windows 10 设备的设置
 

@@ -46,15 +46,15 @@ ms.locfileid: "51933417"
 
 ## <a name="how-client-behavioral-blocking-works"></a>客户端行为阻止的工作原理
 
-[Microsoft Defender 防病毒](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10) 可以在设备上检测可疑行为、恶意代码、无文件攻击和内存中攻击等。 当检测到可疑行为时，Microsoft Defender 防病毒将监视这些可疑行为及其进程树并将其发送到云保护服务。 机器学习在毫秒内区分恶意应用程序和良好行为，并分类每个项目。 在几乎实时中，只要发现项目是恶意项目，就会在设备上被阻止。 
+[Microsoft Defender 防病毒](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10)检测设备上可疑行为、恶意代码、无文件攻击和内存中攻击等。 当检测到可疑行为时，Microsoft Defender 防病毒监控这些可疑行为并将其进程树发送到云保护服务。 机器学习在毫秒内区分恶意应用程序和良好行为，并分类每个项目。 在几乎实时中，只要发现项目是恶意项目，就会在设备上被阻止。 
 
-只要检测到可疑行为，就会生成 [警报](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/alerts-queue) ，并且该警报在 Microsoft Defender 安全中心 [https://securitycenter.windows.com](https://securitycenter.windows.com) () 。
+只要检测到可疑行为，就会生成[警报](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/alerts-queue)，并且该警报 [https://securitycenter.windows.com](https://securitycenter.windows.com) Microsoft Defender 安全中心 () 。
 
 客户端行为阻止非常有效，因为它不仅有助于防止攻击启动，还有助于阻止已开始执行的攻击。 此外， [通过反馈循环](feedback-loop-blocking.md) (行为阻止和) 功能，可以阻止组织中其他设备的攻击。
 
 ## <a name="behavior-based-detections"></a>基于行为的检测
 
-基于行为的检测根据 [MITRE ATT&CK Matrix for Enterprise 进行命名](https://attack.mitre.org/matrices/enterprise)。 命名约定有助于识别观测到恶意行为的攻击阶段：
+基于行为的检测根据[MITRE ATT&CK 矩阵进行命名Enterprise。](https://attack.mitre.org/matrices/enterprise) 命名约定有助于识别观测到恶意行为的攻击阶段：
 
 
 |策略 |   检测威胁名称 |
@@ -65,7 +65,7 @@ ms.locfileid: "51933417"
 |特权提升   | Behavior：Win32/PrivilegeEscalation.*！ml |
 |防御者    | Behavior：Win32/DefenseEvasion.*！ml |
 |凭据访问  | Behavior：Win32/CredentialAccess.*！ml |
-|Discovery  | Behavior：Win32/Discovery.*！ml |
+|发现  | Behavior：Win32/Discovery.*！ml |
 |横向移动 | Behavior：Win32/LateralMovement.*！ml |
 |集合 |   Behavior：Win32/Collection.*！ml |
 |命令和控件 | Behavior：Win32/CommandAndControl.*！ml |

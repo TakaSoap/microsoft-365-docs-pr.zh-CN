@@ -53,8 +53,8 @@ macOS 上的 Microsoft Defender for Endpoint 可以检测和报告 PUA 文件。
 可通过以下方法之一配置 macOS 上适用于终结点的 Microsoft Defender 中的 PUA 保护：
 
 - **关闭**：PUA 保护已禁用。
-- **审核**：PUA 文件在产品日志中报告，但不在 Microsoft Defender 安全中心中报告。 不会向用户显示任何通知，产品不会采取任何操作。
-- **阻止**：PUA 文件在产品日志和 Microsoft Defender 安全中心中报告。 用户会收到通知，产品会采取操作。
+- **审核**：PUA 文件在产品日志中报告，但不在Microsoft Defender 安全中心。 不会向用户显示任何通知，产品不会采取任何操作。
+- **Block**：PUA 文件在产品日志中和产品日志中Microsoft Defender 安全中心。 用户会收到通知，产品会采取操作。
 
 >[!WARNING]
 >默认情况下，PUA 保护在 **审核模式下配置** 。

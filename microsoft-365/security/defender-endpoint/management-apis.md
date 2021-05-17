@@ -41,7 +41,7 @@ Defender for Endpoint 支持多种选项，以确保客户可以轻松采用平�
 
 ## <a name="endpoint-onboarding-and-portal-access"></a>终结点载入和门户访问 
 
-设备载入已完全集成到适用于客户端设备的 Microsoft Endpoint Manager 和 Microsoft Intune 以及适用于服务器设备的 Azure Defender 中，从而提供配置、部署和监视的完整端到端体验。 此外，Microsoft Defender for Endpoint 还支持用于设备管理的组策略和其他第三方工具。
+设备载入已完全集成到 Microsoft Endpoint Manager 和 Microsoft Intune 客户端设备和适用于服务器设备的 Azure Defender 中，从而提供配置、部署和监视的完整端到端体验。 此外，Microsoft Defender for Endpoint 还支持用于设备管理的组策略和其他第三方工具。
 
 Defender for Endpoint 提供对具有门户访问权限的用户的精细控制，可通过基于角色的访问控制和 RBAC (查看和) 。 RBAC 模型支持各种安全团队结构：
 - 全局分布的组织和安全团队
@@ -80,7 +80,7 @@ Defender for Endpoint 事件信息直接推送到 Azure 存储以用于长期数
 
 
 ## <a name="siem-api"></a>SIEM API
-当你通过 SIEM) 集成启用安全信息和事件管理 (，它允许你使用 SIEM 解决方案或直接连接到检测 REST API 从 Microsoft Defender 安全中心拉取检测。 这会使用预填充的值激活 SIEM 连接器访问详细信息部分，并且应用程序是在 Azure AD 租户的 Azure Active Directory (创建的) 部分。 有关详细信息，请参阅 [SIEM 集成](enable-siem-integration.md)。
+当你使用 SIEM) 集成启用安全信息和事件 (时，它允许你使用 SIEM 解决方案或直接连接到检测 REST API 从 Microsoft Defender 安全中心 拉取检测。 这会使用预填充的值激活 SIEM 连接器访问详细信息部分，并且应用程序在 Azure Active Directory (Azure AD) 租户下创建。 有关详细信息，请参阅 [SIEM 集成](enable-siem-integration.md)。
 
 ## <a name="related-topics"></a>相关主题
 - [访问适用于终结点的 Microsoft Defender API ](apis-intro.md)

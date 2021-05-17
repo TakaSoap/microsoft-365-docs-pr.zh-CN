@@ -33,7 +33,7 @@ ms.locfileid: "51932937"
 
 >想要体验 Microsoft Defender for Endpoint？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-onboardconfigure-abovefoldlink)
 
-每个载入的设备在 EDR (添加额外的终结点检测和响应) ，并提升对网络中泄露活动的可见性。 载入还确保可以检查设备是否具有易受攻击的组件以及安全配置问题，并可在攻击期间接收关键修正操作。
+每个已载入的设备在传感器上添加额外的终结点检测和 (EDR) ，并提升对网络中泄露活动的可见性。 载入还确保可以检查设备是否具有易受攻击的组件以及安全配置问题，并可在攻击期间接收关键修正操作。
 
 在你可以跟踪和管理设备的载入之前：
 - [将设备注册到 Intune 管理](configure-machines.md#enroll-devices-to-intune-management)
@@ -41,17 +41,17 @@ ms.locfileid: "51932937"
 
 ## <a name="discover-and-track-unprotected-devices"></a>发现和跟踪未受保护的设备
 
-载入卡通过将已实际载入 Defender for Endpoint 的 Windows 10 设备数与 Intune 管理的 Windows 10 设备的总数进行比较，提供载入率的简要概述。
+载入卡通过将已实际载入 Defender for Endpoint 的 Windows 10 设备数与 Intune 托管的 Windows 10 设备总数进行比较，提供载入率的简要概述。
 
 ![设备配置管理载入卡](images/secconmgmt_onboarding_card.png)<br>
-*显示已载入设备与 Intune 管理的 Windows 10 设备总数比较的卡片*
+*显示已载入设备与 Intune 托管的设备总数Windows 10卡片*
 
 >[!NOTE]
 >如果你使用安全中心配置管理器、载入脚本或其他不使用 Intune 配置文件的载入方法，你可能会遇到数据差异。 若要解决这些差异，请为 Defender for Endpoint 载入创建相应的 Intune 配置文件，并将该配置文件分配给你的设备。
 
 ## <a name="onboard-more-devices-with-intune-profiles"></a>使用 Intune 配置文件载入更多设备
 
-Defender for Endpoint 提供了几个用于载入 [Windows 10 设备的便捷选项](onboard-configure.md)。 但是，对于 Intune 托管的设备，你可以利用 Intune 配置文件便捷地部署 Defender for Endpoint 传感器以选择设备，从而有效地将这些设备载入服务。
+Defender for Endpoint 为载入设备提供了几个[Windows 10选项](onboard-configure.md)。 但是，对于 Intune 托管的设备，你可以利用 Intune 配置文件便捷地部署 Defender for Endpoint 传感器以选择设备，从而有效地将这些设备载入服务。
 
 从 **载入卡中** ， **选择载入更多设备** 以在 Intune 上创建和分配配置文件。 该链接将你指向 Intune 上的设备合规性页面，该页面提供了载入状态类似的概述。
 
@@ -59,7 +59,7 @@ Defender for Endpoint 提供了几个用于载入 [Windows 10 设备的便捷选
    *Intune 设备管理上的 Microsoft Defender for Endpoint 设备合规性页面*
 
 >[!TIP]
->或者，你可以从 [Microsoft Defender](https://portal.azure.com/) ATP 的所有服务 > Intune > 设备合规性> Microsoft Azure 门户中的 Defender for **Endpoint 载入合规性页面**。
+>或者，你可以导航到 [Microsoft Azure](https://portal.azure.com/)门户中的 Defender for Endpoint 载入合规性页面，从 **Intune**> 设备合规性>所有> Microsoft Defender ATP。
 
 >[!NOTE]
 > 如果你想要查看最新的设备数据，请单击没有 **ATP 传感器的设备列表**。

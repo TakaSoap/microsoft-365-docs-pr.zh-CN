@@ -1,6 +1,6 @@
 ---
-title: 为网络通信检查指定其他定义集Microsoft Defender 防病毒
-description: 为网络通信检查指定其他定义集Microsoft Defender 防病毒。
+title: 为 Microsoft Defender 防病毒的网络流量检查指定其他定义集
+description: 为 Microsoft Defender 防病毒的网络流量检查指定其他定义集。
 keywords: Microsoft Defender 防病毒， 反恶意软件， 安全性， Defender， 网络流量检查
 search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
@@ -37,7 +37,7 @@ ms.locfileid: "52300116"
 
 1. 在组策略管理终结点上，打开组 [策略管理控制台](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11))。
 
-2. 转到网络 **Windows系统**  >  **Microsoft Defender 防病毒**  >  **组件"。** 
+2. 转到 **Windows 组件**  >  **Microsoft Defender 防病毒**  >  **网络检查系统**。 
 
 3. 选择 **指定网络流量检查的其他定义集**。 默认情况下，此策略设置为"**未配置"。** 
 
@@ -52,7 +52,7 @@ ms.locfileid: "52300116"
 7. 选择 **"确定**"，然后部署更新的组策略对象。 请参阅 [组策略管理控制台](/windows/win32/srvnodes/group-policy)。
 
 > [!TIP]
-> 是否在本地使用组策略对象？ 查看它们在云中如何转换。 [在预览版中，使用组策略分析Microsoft Endpoint Manager本地组策略对象](/mem/intune/configuration/group-policy-analytics)。 
+> 是否在本地使用组策略对象？ 查看它们在云中如何转换。 使用 Microsoft Endpoint [Manager 中的组策略](/mem/intune/configuration/group-policy-analytics)分析分析本地组策略对象 - 预览 。 
   
 ## <a name="related-articles"></a>相关文章
 

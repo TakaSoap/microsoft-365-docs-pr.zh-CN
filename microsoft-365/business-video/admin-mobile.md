@@ -19,7 +19,7 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: 了解如何在手机上安装 Microsoft 365 管理移动应用。
+description: 了解如何在手机上Microsoft 365管理移动应用。
 ms.openlocfilehash: 0367123e9bd74ab79c17b38eb49cc31fc6fba8e4
 ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
@@ -27,15 +27,15 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 04/02/2021
 ms.locfileid: "51580698"
 ---
-# <a name="install-the-microsoft-365-admin-mobile-app-on-your-phone"></a>在手机上安装 Microsoft 365 管理移动应用
+# <a name="install-the-microsoft-365-admin-mobile-app-on-your-phone"></a>在Microsoft 365安装管理移动应用
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWe8Kw?autoplay=false]
 
-可以使用 Microsoft 365 管理移动应用管理用户、监视服务运行状况以及从手机执行其他管理任务。
+可以使用管理Microsoft 365移动应用管理用户、监视服务运行状况以及从手机执行其他管理任务。
 
 ## <a name="try-it"></a>试一试！
 
-1. 若要获取 Microsoft 365 管理移动应用，在设备的应用商店中搜索  **Microsoft 365**  管理员并安装它。
+1. 若要获取 Microsoft 365 Admin 移动应用，Microsoft 365设备的应用商店中搜索管理员并安装它。
 2. 使用全局管理员电子邮件地址登录，并查看仪表板以查看服务运行状况、监视用户许可证以及查看消息和服务请求。
 3. 以下是你可以对应用执行一些常见任务：
 
@@ -56,6 +56,6 @@ ms.locfileid: "51580698"
 
 ### <a name="turn-on-notifications"></a>打开通知
 
-1. 在主菜单上，选择"设置 **"。**
+1. 在主菜单上，选择 **"设置"。**
 2. 在 **"应用设置"下**，选择"**通知"。**
 3. 选中"服务运行状况"和"**消息中心****"旁边的复选框**。

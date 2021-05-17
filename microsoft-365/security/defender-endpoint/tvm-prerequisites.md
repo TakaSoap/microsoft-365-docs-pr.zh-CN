@@ -1,7 +1,7 @@
 ---
-title: 权限&的先决条件 - 威胁和漏洞管理
-description: 在开始使用威胁和漏洞管理之前，请确保你拥有相关的配置和权限。
-keywords: 威胁&漏洞管理权限先决条件、威胁和漏洞管理权限先决条件、Microsoft Defender 终结点 TVM 权限先决条件、漏洞管理
+title: 权限&的先决条件 - 危险和漏洞管理
+description: 在开始使用危险和漏洞管理，请确保您具有相关的配置和权限。
+keywords: 威胁& 漏洞管理权限先决条件、危险和漏洞管理权限先决条件、适用于 Endpoint TVM 的 Microsoft Defender 权限先决条件漏洞管理
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -23,7 +23,7 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 04/21/2021
 ms.locfileid: "51935181"
 ---
-# <a name="prerequisites--permissions---threat-and-vulnerability-management"></a>权限&的先决条件 - 威胁和漏洞管理
+# <a name="prerequisites--permissions---threat-and-vulnerability-management"></a>权限&的先决条件 - 危险和漏洞管理
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -43,33 +43,33 @@ ms.locfileid: "51935181"
 
 > 发布 | 安全更新 KB 编号和链接
 > :---|:---
-> Windows 10 版本 1709 | [KB4493441](https://support.microsoft.com/help/4493441/windows-10-update-kb4493441) [和 KB 4516071](https://support.microsoft.com/help/4516071/windows-10-update-kb4516071)
-> Windows 10 版本 1803 | [KB4493464](https://support.microsoft.com/help/4493464) 和 [KB 4516045](https://support.microsoft.com/help/4516045/windows-10-update-kb4516045)
-> Windows 10 版本 1809 | [KB 4516077](https://support.microsoft.com/help/4516077/windows-10-update-kb4516077)
-> Windows 10 版本 1903 | [KB 4512941](https://support.microsoft.com/help/4512941/windows-10-update-kb4512941)
+> Windows 10版本 1709 | [KB4493441](https://support.microsoft.com/help/4493441/windows-10-update-kb4493441) [和 KB 4516071](https://support.microsoft.com/help/4516071/windows-10-update-kb4516071)
+> Windows 10版本 1803 | [KB4493464](https://support.microsoft.com/help/4493464) 和 [KB 4516045](https://support.microsoft.com/help/4516045/windows-10-update-kb4516045)
+> Windows 10版本 1809 | [KB 4516077](https://support.microsoft.com/help/4516077/windows-10-update-kb4516077)
+> Windows 10版本 1903 | [KB 4512941](https://support.microsoft.com/help/4512941/windows-10-update-kb4512941)
 
-- 已载入到 [Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/what-is-intune) 和  [Microsoft Endpoint Configuration Manager，](https://docs.microsoft.com/mem/configmgr/protect/deploy-use/endpoint-protection-configure) 以帮助修正威胁和漏洞管理发现的威胁。 如果你使用的是 Configuration Manager，请更新控制台到最新版本。
+- 已[载入](https://docs.microsoft.com/mem/intune/fundamentals/what-is-intune)Microsoft Intune Microsoft Endpoint Configuration Manager，以帮助修正由[](https://docs.microsoft.com/mem/configmgr/protect/deploy-use/endpoint-protection-configure)安全危险和漏洞管理。 如果你使用的是 Configuration Manager，请更新控制台到最新版本。
     - **注意**：如果启用了 Intune 连接，则创建修正请求时可以选择创建 Intune 安全任务。 如果未设置连接，则不显示此选项。
 - 具有至少一个可在设备页面中查看的安全建议
 - 已标记或标记为共同管理
 
 ## <a name="relevant-permission-options"></a>相关权限选项
 
-1. 使用分配有安全管理员或全局管理员角色的帐户登录到 Microsoft Defender 安全中心。
-2. 在导航窗格中，选择"设置 **>角色"。**
+1. 使用分配Microsoft Defender 安全中心全局管理员角色的帐户登录登录。
+2. 在导航窗格中，选择"设置 >**角色"。**
 
 有关详细信息，请参阅为基于角色 [的访问控制创建和管理角色](user-roles.md)
 
 ### <a name="view-data"></a>查看数据
 
 - **安全操作** - 在门户中查看所有安全操作数据
-- **威胁和漏洞管理** - 在门户中查看威胁和漏洞管理数据
+- **威胁漏洞管理**- 危险和漏洞管理门户中查看数据
 
 ### <a name="active-remediation-actions"></a>活动修正操作
 
 - **安全操作** - 执行响应操作、批准或消除挂起的修正操作、管理自动化和指示器的允许/阻止列表
-- **威胁和漏洞管理 - 异常处理** - 创建新的异常并管理活动异常
-- **威胁和漏洞管理 - 修正处理** - 提交新的修正请求、创建票证和管理现有修正活动
+- **威胁和漏洞管理 - 异常处理**- 创建新的异常和管理活动异常
+- **威胁和漏洞管理 - 修正处理**- 提交新的修正请求、创建票证和管理现有修正活动
 
 有关详细信息，请参阅 [RBAC 权限选项](user-roles.md#permission-options)
 

@@ -43,8 +43,8 @@ ms.locfileid: "51939654"
 你可以使用相同的威胁搜寻查询来构建自定义检测规则。 这些规则将自动运行，以检查并响应可疑的泄露活动、错误配置的计算机和其他发现。
 
 >[!TIP]
->使用 [Microsoft 365 Defender](/microsoft-365/security/defender/advanced-hunting-overview) 中的高级搜寻，使用来自 Defender for Endpoint、Microsoft Defender for Office 365、Microsoft Cloud App Security 和 Microsoft Defender for Identity 的数据搜寻威胁。 [打开 Microsoft 365 Defender](/microsoft-365/security/defender/m365d-enable)。<br><br>
-在从 Microsoft Defender for Endpoint 迁移高级搜寻查询中，详细了解如何将高级搜寻工作流从 Microsoft Defender for Endpoint 移动到 Microsoft 365 [Defender。](/microsoft-365/security/defender/advanced-hunting-migrate-from-mde)
+>使用[Microsoft 365 Defender 中的高级](/microsoft-365/security/defender/advanced-hunting-overview)搜寻，使用来自 Defender for Endpoint、Microsoft Defender for Office 365、Microsoft Cloud App Security 和 Microsoft Defender for Identity 的数据搜寻威胁。 [打开 Microsoft 365 Defender](/microsoft-365/security/defender/m365d-enable)。<br><br>
+在从 Microsoft Defender for Endpoint 迁移高级搜寻查询中，了解有关如何将高级搜寻工作流从 Microsoft Defender for Endpoint 移动到 Microsoft 365 Defender[中。](/microsoft-365/security/defender/advanced-hunting-migrate-from-mde)
 
 ## <a name="get-started-with-advanced-hunting"></a>高级搜寻入门
 

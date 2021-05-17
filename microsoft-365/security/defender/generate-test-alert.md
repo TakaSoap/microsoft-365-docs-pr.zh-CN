@@ -1,7 +1,7 @@
 ---
-title: 生成测试 Microsoft 365 Defender 警报
-description: 生成测试警报以尝试 Microsoft 365 Defender 实验室环境的工作方式
-keywords: Microsoft 365 Defender 模拟，试用 Microsoft 365 Defender，在 Microsoft 365 Defender 中生成测试警报，在 Microsoft 365 Defender 评估实验室中测试警报
+title: 在 Defender 警报Microsoft 365测试
+description: 生成测试警报，以尝试Microsoft 365 Defender 实验室环境的工作方式
+keywords: Microsoft 365Defender 模拟， 尝试 Microsoft 365 Defender， 在 Microsoft 365 Defender 中生成测试警报， Microsoft 365 Defender 评估实验室中的测试警报
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -35,12 +35,12 @@ ms.locfileid: "51935649"
 **适用于：**
 - Microsoft 365 Defender
 
-现在，你已完成 Microsoft 365 Defender 评估实验室设置和配置，你可以运行威胁攻击模拟，以体验集成安全解决方案的检测、警报关联和自我修复修正功能。  
+现在，你已完成 Microsoft 365 Defender 评估实验室设置和配置，你可以运行威胁攻击模拟，以体验集成安全解决方案的检测、警报关联和自修复修正功能。  
 
 1. 登录到 https://security.microsoft.com
 2. 在主页上，查找标题为 Simulation 的 **磁贴**。  查看演练指南，查看在 Microsoft 365 Defender 中创建测试事件的步骤。
-<br>![Microsoft 365 安全仪表板中的模拟卡图像](../../media/mtp-eval-73.png) <br>
+<br>![Microsoft 365安全仪表板中的模拟卡的图像](../../media/mtp-eval-73.png) <br>
 
 ## <a name="next-steps"></a>后续步骤
 
-浏览 [Microsoft 365 解决方案](../../solutions/index.yml) 和体系结构中心，了解如何设计适合你的组织的解决方案和体系结构。
+浏览Microsoft 365[解决方案](../../solutions/index.yml)和体系结构中心，了解如何设计适合贵组织的解决方案和体系结构。

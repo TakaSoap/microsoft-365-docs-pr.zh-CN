@@ -45,7 +45,7 @@ Android 上的 Microsoft Defender for Endpoint 以及 Microsoft Intune 和 Azure
 Android 上的 Defender for Endpoint 使管理员能够配置自定义指示器以支持 Android 设备。 若要详细了解如何配置自定义指示器，请参阅管理 [指示器](manage-indicators.md)。
 
 ## <a name="configure-web-protection"></a>配置 Web 保护
-Android 上的 Defender for Endpoint 允许 IT 管理员配置 Web 保护功能。 此功能在 Microsoft Endpoint Manager 管理中心内可用。
+Android 上的 Defender for Endpoint 允许 IT 管理员配置 Web 保护功能。 此功能在管理中心Microsoft Endpoint Manager可用。
 
 > [!NOTE]
 > Android 上的 Defender for Endpoint 将使用 VPN 来提供 Web 保护功能。 这不是常规 VPN，它是不接受设备外流量的本地/自循环 VPN。 有关详细信息，请参阅在运行 [Android 的设备上配置 Web 保护](https://docs.microsoft.com/mem/intune/protect/advanced-threat-protection-manage-android)。

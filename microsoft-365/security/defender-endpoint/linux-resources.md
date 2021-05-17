@@ -52,7 +52,7 @@ ms.locfileid: "51933321"
 
 2. 重现问题。
 
-3. 运行以下命令以备份适用于终结点日志的 Defender。 这些文件将存储在 .zip 存档内部。
+3. 运行以下命令以备份适用于终结点日志的 Defender。 这些文件将存储在存档.zip内部。
 
    ```bash
    sudo mdatp diagnostic create
@@ -79,7 +79,7 @@ ms.locfileid: "51933321"
 
 详细日志将保存到 `/var/log/microsoft/mdatp_install.log` 。 如果在安装过程中遇到问题，请将此文件发送给我们，以便我们可以帮助诊断原因。
 
-## <a name="uninstall"></a>Uninstall
+## <a name="uninstall"></a>卸载
 
 有几种方法可以卸载 Linux 上的 Defender for Endpoint。 如果你使用的是配置工具（如"开发工具"，请按照配置工具的程序包卸载说明操作）。
 
@@ -101,7 +101,7 @@ ms.locfileid: "51933321"
 
 下表列出了一些最常见方案的命令。 从 `mdatp help` 终端运行以查看受支持命令的完整列表。
 
-|Group                 |方案                                                |命令                                                                |
+|Group                 |应用场景                                                |Command                                                                |
 |----------------------|--------------------------------------------------------|-----------------------------------------------------------------------|
 |配置         |打开/关闭实时保护                        |`mdatp config real-time-protection --value [enabled\|disabled]`        |
 |配置         |打开/关闭行为监视                         |`mdatp config behavior-monitoring --value [enabled\|disabled]` 
@@ -145,7 +145,7 @@ ms.locfileid: "51933321"
 在 Defender for Endpoint 门户中，你将看到两类信息：
 
 - 防病毒警报，包括：
-  - Severity
+  - 严重性
   - 扫描类型
   - 设备信息 (主机名、设备标识符、租户标识符、应用版本和操作系统类型) 
   - 文件信息 (名称、路径、大小和哈希) 
@@ -163,8 +163,8 @@ ms.locfileid: "51933321"
 
 ### <a name="known-issues"></a>已知问题
 
-- 你可能会在 Microsoft Defender 安全中心门户的机器信息页中看到"无传感器数据，通信受损"，即使产品正在正常工作。 我们正在解决此问题。
-- 登录的用户不会显示在 Microsoft Defender 安全中心门户中。
+- 你可能会在门户的"计算机信息"页中看到"无传感器数据，通信受损"Microsoft Defender 安全中心，即使产品正在正常工作。 我们正在解决此问题。
+- 登录的用户不会显示在Microsoft Defender 安全中心门户中。
 - 在 SUSE 分发中，如果 *libatomic1* 安装失败，应验证操作系统是否注册：
 
    ```bash

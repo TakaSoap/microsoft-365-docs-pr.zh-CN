@@ -50,9 +50,9 @@ ms.locfileid: "51932639"
 
 |阶段 |说明 |
 |--|--|
-|[准备迁移](mcafee-to-microsoft-defender-prepare.md) |在 [**"准备**](mcafee-to-microsoft-defender-prepare.md) "阶段，更新组织设备、获取 Microsoft Defender for Endpoint、规划角色和权限，并授予对 Microsoft Defender 安全中心的访问权限。 还可以配置设备代理和 Internet 设置，以启用组织设备与适用于终结点的 Microsoft Defender 之间的通信。 |
-|[设置 Microsoft Defender for Endpoint](mcafee-to-microsoft-defender-setup.md) |在设置 [**阶段，**](mcafee-to-microsoft-defender-setup.md) 启用 Microsoft Defender 防病毒并确保它处于被动模式，并配置 Microsoft Defender 防病毒& Microsoft Defender 终结点和 McAfee 的设置排除项。 还可以创建设备组、集合和组织单位。 最后，配置反恶意软件策略和实时保护设置。|
-|[载入到 Microsoft Defender for Endpoint](mcafee-to-microsoft-defender-onboard.md) |在 [**载入**](mcafee-to-microsoft-defender-onboard.md) 阶段，将你的设备载入到 Microsoft Defender for Endpoint 并验证这些设备是否正在与 Microsoft Defender for Endpoint 通信。 最后，卸载 McAfee 并确保通过 Microsoft Defender 防病毒& Microsoft Defender for Endpoint 的保护处于活动状态。 |
+|[准备迁移](mcafee-to-microsoft-defender-prepare.md) |在 [**"准备**](mcafee-to-microsoft-defender-prepare.md)"阶段，更新组织设备、获取 Microsoft Defender for Endpoint、规划角色和权限，并授予对 Microsoft Defender 安全中心。 还可以配置设备代理和 Internet 设置，以启用组织设备与适用于终结点的 Microsoft Defender 之间的通信。 |
+|[设置 Microsoft Defender for Endpoint](mcafee-to-microsoft-defender-setup.md) |在设置 [**阶段，**](mcafee-to-microsoft-defender-setup.md)启用 Microsoft Defender 防病毒 并确保它处于被动模式，并配置 &、Microsoft Defender for Endpoint 和 McAfee 的设置 Microsoft Defender 防病毒 排除项。 还可以创建设备组、集合和组织单位。 最后，配置反恶意软件策略和实时保护设置。|
+|[载入到 Microsoft Defender for Endpoint](mcafee-to-microsoft-defender-onboard.md) |在 [**载入**](mcafee-to-microsoft-defender-onboard.md) 阶段，将你的设备载入到 Microsoft Defender for Endpoint 并验证这些设备是否正在与 Microsoft Defender for Endpoint 通信。 最后，卸载 McAfee 并确保通过 Microsoft Defender for Endpoint Microsoft Defender 防病毒 &保护处于活动状态。 |
 
 ## <a name="whats-included-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint 中包含哪些内容？
 
@@ -60,14 +60,14 @@ ms.locfileid: "51932639"
 
 | 功能 | 说明 |
 |---|---|
-| [威胁和漏洞管理](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt) | 威胁&漏洞管理功能有助于识别、评估和修正终结点（如 (设备）中的) 。 |
+| [威胁和漏洞管理](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt) | 威胁& 漏洞管理功能有助于识别、评估和修正跨终结点（如 (设备）中的) 。 |
 | [减少攻击面](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/overview-attack-surface-reduction) | 攻击面减少规则有助于保护组织的设备和应用程序免受网络威胁和攻击。 |
-| [下一代保护](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/windows-defender-antivirus-in-windows-10) | 下一代保护包括可帮助阻止威胁和恶意软件的 Microsoft Defender 防病毒。 |
+| [下一代保护](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/windows-defender-antivirus-in-windows-10) | 下一代保护包括Microsoft Defender 防病毒帮助阻止威胁和恶意软件。 |
 | [终结点检测和响应](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response) | 终结点检测和响应功能可检测、调查和响应入侵尝试和主动泄露。  |
 | [高级搜寻](advanced-hunting-overview.md) | 高级搜寻功能使安全运营团队能够找到已知或潜在威胁的指示器和实体。 |
 | [行为阻止和控制](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/behavioral-blocking-containment) | 行为阻止和包含功能有助于根据威胁的行为和进程树识别和停止威胁，即使威胁已开始执行。 |
-| [自动调查和修复](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/automated-investigations) | 自动调查和响应功能可检查警报，并立即采取修正措施来解决违规问题。 |
-| Microsoft[威胁专家](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/microsoft-threat-experts) (威胁搜寻)  | 威胁搜寻服务为安全运营团队提供专家级别的监视和分析，并帮助确保不会错过关键威胁。 |
+| [自动调查和修正](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/automated-investigations) | 自动调查和响应功能可检查警报，并立即采取修正措施来解决违规问题。 |
+| [威胁搜寻服务](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/microsoft-threat-experts) (Microsoft 威胁专家)  | 威胁搜寻服务为安全运营团队提供专家级别的监视和分析，并帮助确保不会错过关键威胁。 |
 
 **想要了解更多信息？请参阅 [Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection)。**
 

@@ -60,9 +60,9 @@ iOS 上的 Defender for Endpoint 从已配置的 iOS 设备收集信息，并存
 
 - 租户、设备和用户信息 
 
-    - Azure Active Directory (AD) 设备 ID 和 Azure 用户 ID - 唯一标识设备，分别位于 Azure Active directory 中的用户。 
+    - Azure Active Directory (AD) 设备 ID 和 Azure 用户 ID - 唯一标识设备，即 Azure Active Directory 中的用户。 
 
-    - Azure 租户 ID - 标识 Azure Active Directory 中的组织的 GUID。 
+    - Azure 租户 ID - 标识组织内部Azure Active Directory。 
 
     - Microsoft Defender for Endpoint 组织 ID - 与设备所属的企业关联的唯一标识符。 允许 Microsoft 确定是否有影响一组选定企业的问题以及受到影响的企业数量。 
 

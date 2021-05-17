@@ -1,5 +1,5 @@
 ---
-title: 处理 Microsoft 365 Defender 高级搜寻中的错误
+title: 处理 Defender 高级搜寻Microsoft 365错误
 description: 了解使用高级搜寻时显示的错误
 keywords: 高级搜寻， 威胁搜寻， 网络威胁搜寻， Microsoft 365 Defender， microsoft 365， m365， 搜索， 查询， 遥测， 架构， kusto， 超时， 资源， 错误， 未知错误， 限制， 配额， 参数， 分配
 search.product: eADQiWindows 10XVcnh

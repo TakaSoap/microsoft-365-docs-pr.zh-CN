@@ -133,7 +133,7 @@ The privacy controls for the various types of data described in the preceding se
 | cloud_service.service_uri                           | 用于与云通信的 URI。 |
 | cloud_service.diagnostic_level                      | 设备诊断级别 (可选) 。 |
 | cloud_service.automatic_sample_submission           | 是否打开自动提交示例。 |
-| edr.early_preview                                   | 设备是否应该运行 EDR 早期预览功能。 |
+| edr.early_preview                                   | 设备是否应该运行EDR早期预览功能。 |
 | edr.group_id                                        | 检测和响应组件使用的组标识符。 |
 | edr.tags                                            | 用户定义的标记。 |
 | 功能。 \[可选功能名称\]                  | 预览功能列表，以及是否已启用。 |
@@ -165,7 +165,7 @@ The privacy controls for the various types of data described in the preceding se
 | ------------------------------ | ----------- |
 | v1_crash_count                 | 每小时 V1 引擎进程在客户端计算机上崩溃次数  |
 | v2_crash_count                 | 每小时 V2 引擎进程在客户端计算机上崩溃次数  |
-| EDR_crash_count                | 每小时在客户端计算机上 EDR 进程崩溃次数        |
+| EDR_crash_count                | 客户端计算机上EDR进程每小时崩溃次数        |
 
 **内核扩展统计信息**
 
@@ -244,7 +244,7 @@ The privacy controls for the various types of data described in the preceding se
 | 字段            | 说明 |
 | ---------------- | ----------- |
 | sha256           | 支持日志的 SHA256 标识符。 |
-| size             | 支持日志的大小。 |
+| 大小             | 支持日志的大小。 |
 | original_path    | 始终在 */library/ (/Microsoft/Defender/wdavdiag/ 下* 的支持日志) 。 |
 | format           | 支持日志的格式。 |
 

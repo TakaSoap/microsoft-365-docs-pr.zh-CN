@@ -1,5 +1,5 @@
 ---
-title: 管理 Microsoft 365 Defender 中的事件
+title: 在 Microsoft 365 Defender 中管理事件
 description: 了解如何分配、更新状态
 keywords: 事件， 事件， 分析， 响应， 警报， 相关警报， 分配， 更新， 状态， 管理， 分类， microsoft， 365， m365
 search.product: eADQiWindows 10XVcnh
@@ -29,7 +29,7 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 05/10/2021
 ms.locfileid: "52299997"
 ---
-# <a name="manage-incidents-in-microsoft-365-defender"></a>管理 Microsoft 365 Defender 中的事件
+# <a name="manage-incidents-in-microsoft-365-defender"></a>在 Microsoft 365 Defender 中管理事件
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -39,7 +39,7 @@ ms.locfileid: "52299997"
 
 事件管理对于确保包含和解决威胁至关重要。
 
-在快速启动 Microsoft 365安全中心&事件>事件 (security.microsoft.com) 。 [](https://security.microsoft.com) 下面是一个示例。
+在快速启动 Microsoft  365 安全中心&事件>事件或事件管理事件 (security.microsoft.com) 。 [](https://security.microsoft.com) 下面是一个示例。
 
 :::image type="content" source="../../media/incidents-queue/incidents-ss-incidents.png" alt-text="事件队列示例":::
 
@@ -65,7 +65,7 @@ ms.locfileid: "52299997"
 
 ## <a name="edit-the-incident-name"></a>编辑事件名称
 
-Microsoft 365Defender 根据警报属性自动分配名称，如受影响的终结点数、受影响的用户数、检测源或类别。 这使您可以快速了解事件的范围。 例如： *多个源报告的多个终结点上的多阶段事件。*
+Microsoft 365 Defender 根据警报属性自动分配名称，如受影响的终结点数、受影响的用户数、检测源或类别。 这使您可以快速了解事件的范围。 例如： *多个源报告的多个终结点上的多阶段事件。*
 
 可以从"管理事件"窗格上的" **事件名称** "字段中 **编辑事件** 名称。
 

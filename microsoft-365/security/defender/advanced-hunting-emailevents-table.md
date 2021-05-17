@@ -1,6 +1,6 @@
 ---
 title: 高级搜寻架构中的 EmailEvents 表
-description: 在高级搜寻架构的 EmailEvents 表中了解与 Microsoft 365 电子邮件关联的事件
+description: 在高级搜寻架构的 EmailEvents 表中了解Microsoft 365电子邮件关联的事件
 keywords: 高级搜寻， 威胁搜寻， 网络威胁搜寻， Microsoft 365 Defender， microsoft 365， m365， 搜索， 查询， 遥测， 架构参考， kusto， 表格， 列， 数据类型， 说明， EmailEvents， 网络消息 ID， 发件人， 收件人， 附件 ID， 附件名称， 恶意软件裁定， 网络钓鱼裁定， 附件计数， 链接计数， url 计数
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -35,7 +35,7 @@ ms.locfileid: "51935481"
 
 - Microsoft 365 Defender
 
-高级 `EmailEvents` 搜寻 [架构中的](advanced-hunting-overview.md) 表包含有关涉及在 Microsoft Defender for Office 365 上处理电子邮件的事件的信息。 使用此参考来构建从此表返回信息的查询。
+高级 `EmailEvents` 搜寻[架构中的](advanced-hunting-overview.md)表包含有关 Microsoft Defender for Office 365 上涉及处理电子邮件的事件的信息。 使用此参考来构建从此表返回信息的查询。
 
 >[!TIP]
 > 有关表支持的事件类型 () ，请使用安全中心中提供的内置架构 `ActionType` 参考。
@@ -45,7 +45,7 @@ ms.locfileid: "51935481"
 | 列名称 | 数据类型 | 说明 |
 |-------------|-----------|-------------|
 | `Timestamp` | datetime | 记录事件的日期和时间 |
-| `NetworkMessageId` | string | 由 Microsoft 365 生成的电子邮件的唯一标识符 |
+| `NetworkMessageId` | string | 由用户生成的电子邮件的唯一Microsoft 365 |
 | `InternetMessageId` | string | 发送电子邮件系统设置的电子邮件的面向公众的标识符 |
 | `SenderMailFromAddress` | string | “发件人”标题（又称为“信件发送方”或“返回路径地址”）中的发件人电子邮件地址 |
 | `SenderFromAddress` | string | 发件人标题中的发件人电子邮件地址（电子邮件收件人在其电子邮件客户端上可以看到） |

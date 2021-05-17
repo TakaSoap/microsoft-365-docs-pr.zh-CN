@@ -1,5 +1,5 @@
 ---
-title: 按 Id 获取软件
+title: 按 ID 获取软件
 description: 按设备组检索曝光评分列表。
 keywords: api， 图形 api， 受支持的 api， 获取， 软件， Microsoft Defender for Endpoint tvm api
 search.product: eADQiWindows 10XVcnh
@@ -21,7 +21,7 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 04/21/2021
 ms.locfileid: "51934305"
 ---
-# <a name="get-software-by-id"></a>按 Id 获取软件
+# <a name="get-software-by-id"></a>按 ID 获取软件
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 

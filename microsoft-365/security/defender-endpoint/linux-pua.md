@@ -45,15 +45,15 @@ Linux 上的 Defender for Endpoint (PUA) 保护功能可能不需要的应用程
 
 Linux 上的 Defender for Endpoint 可以检测和报告 PUA 文件。 在阻止模式下配置时，PUA 文件将移动到隔离区。
 
-在终结点上检测到 PUA 时，Linux 上的 Defender for Endpoint 会记录威胁历史记录中的感染情况。 可以从 Microsoft Defender 安全中心门户或命令行工具可视化 `mdatp` 历史记录。 威胁名称将包含单词"Application"。
+在终结点上检测到 PUA 时，Linux 上的 Defender for Endpoint 会记录威胁历史记录中的感染情况。 可以从管理门户或命令行Microsoft Defender 安全中心可视化 `mdatp` 历史记录。 威胁名称将包含单词"Application"。
 
 ## <a name="configure-pua-protection"></a>配置 PUA 保护
 
 可通过以下方法之一配置 Linux 上的 Defender for Endpoint 中的 PUA 保护：
 
 - **关闭**：PUA 保护已禁用。
-- **审核**：PUA 文件在产品日志中报告，但不在 Microsoft Defender 安全中心中报告。 威胁历史记录中未存储任何感染记录，产品不采取措施。
-- **阻止**：PUA 文件在产品日志和 Microsoft Defender 安全中心中报告。 感染的记录存储在威胁历史记录中，产品会采取措施。
+- **审核**：PUA 文件在产品日志中报告，但不在Microsoft Defender 安全中心。 威胁历史记录中未存储任何感染记录，产品不采取措施。
+- **Block**：PUA 文件在产品日志中和产品日志中Microsoft Defender 安全中心。 感染的记录存储在威胁历史记录中，产品会采取措施。
 
 >[!WARNING]
 >默认情况下，PUA 保护在 **审核模式下配置** 。

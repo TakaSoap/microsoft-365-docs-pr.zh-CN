@@ -1,7 +1,7 @@
 ---
-title: 威胁和漏洞管理中的曝光评分
-description: 威胁和漏洞管理暴露分数反映了组织对网络安全威胁的易受攻击程度。
-keywords: 曝光分数， 适用于终结点曝光分数的 Microsoft Defender， 适用于终结点电视曝光分数的 Microsoft Defender， 组织曝光分数， 电视组织曝光分数， 威胁和漏洞管理， 适用于终结点的 Microsoft Defender
+title: 曝光分数（以危险和漏洞管理
+description: 公开危险和漏洞管理分数反映了组织对网络安全威胁的易受攻击程度。
+keywords: 曝光分数， 适用于终结点曝光分数的 Microsoft Defender， 适用于终结点电视曝光分数的 Microsoft Defender， 组织曝光分数， 电视组织曝光分数， 危险和漏洞管理， 适用于终结点的 Microsoft Defender
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -25,7 +25,7 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 04/21/2021
 ms.locfileid: "51934101"
 ---
-# <a name="exposure-score---threat-and-vulnerability-management"></a>曝光评分 - 威胁和漏洞管理
+# <a name="exposure-score---threat-and-vulnerability-management"></a>曝光分数 - 危险和漏洞管理
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -37,7 +37,7 @@ ms.locfileid: "51934101"
 
 >想要体验 Microsoft Defender for Endpoint？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
 
-你的曝光分数显示在 Microsoft Defender 安全中心的威胁 [和](tvm-dashboard-insights.md) 漏洞管理仪表板中。 它反映了你的组织对网络安全威胁的易受攻击程度。 低曝光分数意味着你的设备更容易被利用。
+你的曝光分数显示在威胁和漏洞管理[仪表板](tvm-dashboard-insights.md)中Microsoft Defender 安全中心。 它反映了你的组织对网络安全威胁的易受攻击程度。 低曝光分数意味着你的设备更容易被利用。
 
 - 快速了解和识别有关组织中安全状态的高层次要点。
 - 检测和响应需要调查或操作以改进当前状态的区域。
@@ -59,7 +59,7 @@ ms.locfileid: "51934101"
 
 ## <a name="reduce-your-threat-and-vulnerability-exposure"></a>减少威胁和漏洞暴露
 
-通过修正安全建议降低威胁 [和漏洞暴露](tvm-security-recommendation.md)。 通过修正最高安全建议（可在威胁和漏洞管理仪表板中查看）来对曝光评分 [产生最大影响](tvm-dashboard-insights.md)。
+通过修正安全建议降低威胁 [和漏洞暴露](tvm-security-recommendation.md)。 通过修正最高安全建议（可在仪表板中查看）来对曝光[危险和漏洞管理最大影响](tvm-dashboard-insights.md)。
 
 ## <a name="related-topics"></a>相关主题
 

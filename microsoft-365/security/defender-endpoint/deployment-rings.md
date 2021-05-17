@@ -105,15 +105,15 @@ Microsoft Defender for Endpoint 支持可载入到服务的各种终结点。 �
 
 ## <a name="existing-deployments"></a>现有部署
 
-### <a name="windows-endpoints"></a>Windows终结点
-对于 Windows 和/或 Windows 服务器，可以使用 SUVP) 安全更新验证计划选择多个计算机在修补 (之前提前测试 (**SVP) 。**
+### <a name="windows-endpoints"></a>Windows 终结点
+对于 Windows 和/或 Windows 服务器，通过使用安全更新验证计划 (**SUVP**) 在修补星期二 (之前选择多台计算机) 。
 
 有关详细信息，请参阅：
 - [什么是安全更新验证计划](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/what-is-the-security-update-validation-program/ba-p/275767)
 - [软件更新验证计划与Microsoft 恶意软件防护中心 - TwC 交互式时间线第 4 部分](https://www.microsoft.com/security/blog/2012/03/28/software-update-validation-program-and-microsoft-malware-protection-center-establishment-twc-interactive-timeline-part-4/)
 
 
-### <a name="non-windows-endpoints"></a>非Windows终结点
+### <a name="non-windows-endpoints"></a>非 Windows 终结点
 使用 macOS 和 Linux，可以使用几个系统，在 Beta 渠道中运行。
 
 >[!NOTE]

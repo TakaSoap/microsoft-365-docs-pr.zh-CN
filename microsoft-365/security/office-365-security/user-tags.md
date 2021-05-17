@@ -1,5 +1,5 @@
 ---
-title: Microsoft Defender for Office 365 中的用户标记
+title: Microsoft Defender for Office 365
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -13,7 +13,7 @@ search.appverid:
 - MET150
 ms.collection:
 - M365-security-compliance
-description: 管理员可以了解如何在 Microsoft Defender for Office 365 计划 2 中标识具有用户标记的特定用户组。 可在 Microsoft Defender for Office 365 中的警报、报告和调查之间使用标签筛选，以快速识别标记的用户。
+description: 管理员可以了解如何在 Microsoft Defender for Office 365 计划 2 中标识具有用户标记的特定用户组。 可在 Microsoft Defender for Office 365警报、报告和调查之间使用标签筛选，以快速识别标记用户。
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: 2c1dc426bae77cd35b567bf166032855327a8ffe
@@ -23,17 +23,17 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 04/22/2021
 ms.locfileid: "51943007"
 ---
-# <a name="user-tags-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 中的用户标记
+# <a name="user-tags-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365
 
 > [!NOTE]
-> 用户标记功能在预览版中，不可供所有人使用，并且可能会更改。 有关发布计划的信息，请查看 [Microsoft 365 路线图](https://www.microsoft.com/microsoft-365/roadmap)。
+> 用户标记功能在预览版中，不可供所有人使用，并且可能会更改。 有关发布计划的信息，请查看Microsoft 365[路线图](https://www.microsoft.com/microsoft-365/roadmap)。
 
-用户标记是 [Microsoft Defender for Office 365](defender-for-office-365.md)中特定用户组的标识符。 有两种类型的用户标记：
+用户标记是 Microsoft Defender for Office 365[中的特定用户组的标识符](defender-for-office-365.md)。 有两种类型的用户标记：
 
 - **系统标记**：目前 [，优先级帐户](../../admin/setup/priority-accounts.md) 是唯一类型的系统标记。
 - **自定义标记**：你可自己创建这些用户标记。
 
-如果你的组织具有 Defender for Office 365 计划 2 (包含在订阅中或作为加载项) ，则除了使用优先级帐户标记外，还可以创建自定义用户标记。
+如果你的组织拥有 Defender for Office 365 计划 2 (包含在订阅中或作为加载项) ，则除了使用优先级帐户标记外，还可以创建自定义用户标记。
 
 > [!NOTE]
 > 目前，只能将用户标记应用于邮箱用户。
@@ -44,14 +44,14 @@ ms.locfileid: "51943007"
 - [威胁资源管理器和实时检测](threat-explorer.md)
 - [威胁防护状态报告](view-email-security-reports.md#threat-protection-status-report)
 - [市场活动视图](campaigns.md)
-- 对于优先级帐户，可以使用 Exchange[](/exchange/monitoring/mail-flow-reports/mfr-email-issues-for-priority-accounts-report)管理中心中的"优先级帐户的电子邮件问题"报告 (EAC) 。
+- 对于优先级帐户，可以在 EAC [](/exchange/monitoring/mail-flow-reports/mfr-email-issues-for-priority-accounts-report) Exchange管理中心 (优先级帐户) 。
 
 本文介绍如何在安全与合规中心内配置&标记。 安全与合规中心& cmdlet 用于管理用户标记。
 
-若要了解用户标记如何作为策略的一部分来帮助保护高影响的用户帐户，请参阅 Microsoft [365](security-recommendations-for-priority-accounts.md)中优先级帐户的安全建议。
+若要了解用户标记如何作为策略的一部分来帮助保护高影响的用户帐户，请参阅安全建议[中](security-recommendations-for-priority-accounts.md)优先级帐户Microsoft 365。
 
 > [!NOTE]
-> 如果使用统一的 Microsoft 365 安全中心，可以在此处设置标记 https://security.microsoft.com/userTags ：。
+> 如果使用统一安全Microsoft 365，可以在此处设置标记 https://security.microsoft.com/userTags ：。
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>开始前，有必要了解什么？
 
@@ -69,7 +69,7 @@ ms.locfileid: "51943007"
   - 向 Microsoft 365 管理中心相应的 Azure 活动目录添加用户会向其提供安全与合规中心的必备权限 _以及_ Microsoft 365其它功能的权限。 有关详细信息，请参阅 [关于管理员角色](../../admin/add-users/about-admin-roles.md)。
   - 用户标记管理由 Tag **Reader** 和 **Tag Manager 角色** 控制。
 
-- 还可以在 Microsoft 365 管理中心管理和监视优先帐户。 有关说明，请参阅 [管理和监视优先级帐户](../../admin/setup/priority-accounts.md)。
+- 还可以在管理中心内管理和监视Microsoft 365帐户。 有关说明，请参阅 [管理和监视优先级帐户](../../admin/setup/priority-accounts.md)。
 
 - 有关保护管理员帐户 (特权 _帐户_) ，请参阅 [本主题](/azure/architecture/framework/security/critical-impact-accounts)。
 

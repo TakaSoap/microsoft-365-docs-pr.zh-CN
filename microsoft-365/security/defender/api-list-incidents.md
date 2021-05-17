@@ -1,6 +1,6 @@
 ---
-title: 在 Microsoft 365 Defender 中列出事件 API
-description: 了解如何在 Microsoft 365 Defender 中列出事件 API
+title: 在 defender 中列出Microsoft 365 API
+description: 了解如何在 defender 中列出Microsoft 365 API
 keywords: 列表， 事件， 事件， api
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -27,7 +27,7 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 04/21/2021
 ms.locfileid: "51935733"
 ---
-# <a name="list-incidents-api-in-microsoft-365-defender"></a>在 Microsoft 365 Defender 中列出事件 API
+# <a name="list-incidents-api-in-microsoft-365-defender"></a>在 defender 中列出Microsoft 365 API
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -57,7 +57,7 @@ API 支持以下 **OData** 运算符：
 
 ## <a name="permissions"></a>权限
 
-若要调用此 API，需要以下权限之一。 若要了解更多信息（包括如何选择权限），请参阅 [访问 Microsoft 365 Defender API](api-access.md)
+若要调用此 API，需要以下权限之一。 若要了解更多信息（包括如何选择权限），请参阅[Access Microsoft 365 Defender API](api-access.md)
 
 权限类型 | 权限 | 权限显示名称
 -|-|-
@@ -143,7 +143,7 @@ mitreTechniques | 攻击技术，与 [MITRE ATT](https://attack.mitre.org/)&CK �
 字段名 | 说明 | 示例值
 -|-|-
 DeviceId | 在 Microsoft Defender for Endpoint 中指定的设备 ID。 | 24c222b0b60fe148eeece49ac83910cc6a7ef491
-aadDeviceId |  Azure Active Directory 中指定的[设备 ID。](/azure/active-directory/fundamentals/active-directory-whatis) 仅适用于已加入域的设备。 | 空
+aadDeviceId |  中指定的设备 ID [Azure Active Directory。](/azure/active-directory/fundamentals/active-directory-whatis) 仅适用于已加入域的设备。 | 空
 deviceDnsName | 设备的完全限定域名。 | user5cx.middleeast.corp.contoso.com
 osPlatform | 设备正在运行的操作系统平台。| WindowsServer2016
 osBuild | 设备正在运行的操作系统的生成版本。 | 14393

@@ -35,7 +35,7 @@ ms.locfileid: "51932579"
 **适用于：**
 - Microsoft 365 Defender
 
-高级搜寻架构中的表包含与 `AlertEvidence` 来自 Microsoft Defender for Endpoint、Microsoft Defender for Office 365、Microsoft Cloud App Security 和 Microsoft Defender for Identity 的警报关联的各种实体（文件、IP 地址[](advanced-hunting-overview.md)、URL、用户或设备）的信息。 使用此参考来构建从此表返回信息的查询。
+高级搜寻架构中的表包含与 `AlertEvidence` 来自 Microsoft Defender for Endpoint、Microsoft Defender for Office 365、Microsoft Cloud App Security 和 Microsoft Defender for Identity 的警报相关联的各种实体（文件、IP 地址、URL、用户或设备）[](advanced-hunting-overview.md)的信息。 使用此参考来构建从此表返回信息的查询。
 
 有关高级搜寻架构中其他表的信息，请[参阅高级搜寻参考](advanced-hunting-schema-tables.md)。
 
@@ -58,7 +58,7 @@ ms.locfileid: "51932579"
 | `AccountName` | string | 帐户的用户名 |
 | `AccountDomain` | string | 帐户的域 |
 | `AccountSid` | string | 帐户 (SID) 安全标识符 |
-| `AccountObjectId` | string | Azure Active Directory 中帐户的唯一标识符 |
+| `AccountObjectId` | string | Azure Active Directory |
 | `AccountUpn` | string | 帐户 (UPN) 用户主体名称 |
 | `DeviceId` | string | 服务中设备的唯一标识符 |
 | `DeviceName` | string | 计算机的完全限定域名 (FQDN) |

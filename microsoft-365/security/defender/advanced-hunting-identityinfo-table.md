@@ -35,7 +35,7 @@ ms.locfileid: "51935817"
 **适用于：**
 - Microsoft 365 Defender
 
-高级 `IdentityInfo` 搜寻 [架构中的](advanced-hunting-overview.md) 表包含有关从各种服务（包括 Azure Active Directory）获取的用户帐户的信息。 使用此参考来构建从此表返回信息的查询。
+高级 `IdentityInfo` 搜寻[架构中的](advanced-hunting-overview.md)表包含有关从各种服务（包括Azure Active Directory）获取的用户帐户的信息。 使用此参考来构建从此表返回信息的查询。
 
 >[!NOTE]
 >此表被重命名为 `AccountInfo` 。 在重命名过程中，门户中保存的所有查询将自动更新。 检查已保存在其他位置的查询。

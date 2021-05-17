@@ -1,5 +1,5 @@
 ---
-title: Office 365 管理员应用程序防护
+title: 适用于管理员Office 365应用程序防护
 keywords: 应用程序防护， 保护， 隔离， 隔离容器， 硬件隔离
 f1.keywords:
 - NOCSH
@@ -23,13 +23,13 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 03/31/2021
 ms.locfileid: "51488307"
 ---
-# <a name="application-guard-for-office-for-admins"></a>适用于管理员的 Office 应用程序防护
+# <a name="application-guard-for-office-for-admins"></a>适用于管理员Office应用程序防护
 
-**适用于：** Word、Excel 和 PowerPoint for Microsoft 365、Windows 10 企业版
+**适用于：** Word、Excel 和 Microsoft 365 专属 PowerPoint、Windows 10 企业版
 
-适用于 Office 的 Microsoft Defender 应用程序防护 (Office 应用程序防护) 有助于防止不受信任的文件访问受信任资源，使企业避免受到新的和新出现的攻击。 本文将指导管理员设置设备以预览 Office 应用程序防护。 它提供有关在设备上启用 Office 应用程序防护的系统要求和安装步骤的信息。
+Microsoft Defender 应用程序防护 Office (应用程序防护Office) 有助于防止不受信任的文件访问受信任资源，确保企业不受新的和新出现的攻击。 本文将指导管理员设置设备，以预览适用于Office。 它提供有关在设备上启用应用程序防护的系统要求Office安装步骤的信息。
 
-## <a name="prerequisites"></a>先决条件
+## <a name="prerequisites"></a>必备条件
 
 ### <a name="minimum-hardware-requirements"></a>最低硬件要求
 
@@ -39,26 +39,26 @@ ms.locfileid: "51488307"
 
 ### <a name="minimum-software-requirements"></a>最低软件要求
 
-* **Windows 10：Windows** 10 企业版、客户端内部版本 2004 (20H1) 版本 19041 或更高版本
-* **Office：Office** Current Channel 和每月企业频道，内部版本 2011 16.0.13530.10000 或更高版本。 支持 32 位和 64 位版本的 Office。
-* **更新程序包**：Windows 10 累积每月安全更新 [KB4571756](https://support.microsoft.com/help/4571756/windows-10-update-KB4571756)
+* **Windows 10：Windows 10 企业版** 版客户端内部版本 2004 (20H1) 版本 19041 或更高版本
+* **Office：Office** 当前频道和每月 Enterprise 频道，内部版本 2011 16.0.13530.10000 或更高版本。 支持 32 位和 64 位版本的 Office。
+* **更新程序包**：Windows 10累积每月安全更新 [KB4571756](https://support.microsoft.com/help/4571756/windows-10-update-KB4571756)
 
-有关详细的系统要求，请参阅 [Microsoft Defender 应用程序防护的系统要求](/windows/security/threat-protection/microsoft-defender-application-guard/reqs-md-app-guard)。 此外，请参阅计算机制造商的指南，了解如何启用虚拟化技术。
-若要详细了解 Office 更新频道，请参阅 [Microsoft 365 更新频道概述](/deployoffice/overview-update-channels)。
+有关详细的系统要求，请参阅 system [requirements for Microsoft Defender 应用程序防护](/windows/security/threat-protection/microsoft-defender-application-guard/reqs-md-app-guard)。 此外，请参阅计算机制造商的指南，了解如何启用虚拟化技术。
+若要了解有关更新Office，请参阅更新[频道概述Microsoft 365。](/deployoffice/overview-update-channels)
 
 ### <a name="licensing-requirements"></a>许可要求
 
-* Microsoft 365 E5 或 Microsoft 365 E5 安全中心
+* Microsoft 365 E5 或 Microsoft 365 E5 安全性
 
-## <a name="deploy-application-guard-for-office"></a>部署 Office 应用程序防护
+## <a name="deploy-application-guard-for-office"></a>部署应用程序防护Office
 
-### <a name="enable-application-guard-for-office"></a>启用 Office 应用程序防护
+### <a name="enable-application-guard-for-office"></a>为应用程序防护启用Office
 
-1. 下载并安装 **Windows 10 累积每月安全更新 KB4571756。**
+1. 下载并安装 **Windows 10累积每月安全更新 KB4571756。**
 
-2. 在 **Windows 功能下选择 Microsoft Defender 应用程序** 防护，然后选择确定。  启用应用程序防护功能将提示重新启动系统。 可以选择立即重启，也可以选择在步骤 3 之后重新启动。
+2. 选择 **Microsoft Defender 应用程序防护** 功能Windows选择"确定 **"。** 启用应用程序防护功能将提示重新启动系统。 可以选择立即重启，也可以选择在步骤 3 之后重新启动。
 
-   ![显示 AG 的 Windows 功能对话框](../../media/ag03-deploy.png)
+   ![Windows显示 AG 的功能对话框](../../media/ag03-deploy.png)
 
    还可以以管理员角色运行以下 PowerShell 命令来启用该功能：
 
@@ -66,13 +66,13 @@ ms.locfileid: "51488307"
    Enable-WindowsOptionalFeature -online -FeatureName Windows-Defender-ApplicationGuard
    ```
 
-3. 在托管模式下搜索 **Microsoft Defender 应用程序防护**，计算机配置 管理模板 **Windows 组件 Microsoft Defender \\ 应用程序防护 中的 \\ \\ 组策略**。 打开此策略，将选项下的值设置为 **2** 或 **3，** 然后选择确定 **或****应用**。
+3. 在托管 **Microsoft Defender 应用程序防护** 中搜索策略，这是计算机配置 管理模板 和组件中的Windows **\\ \\ \\ 组Microsoft Defender 应用程序防护。** 打开此策略，将选项下的值设置为 **2** 或 **3，** 然后选择确定 **或****应用**。
 
    ![在托管模式下打开 AG](../../media/ag04-deploy.png)
 
    相反，你可以设置相应的云解决方案提供商策略：
 
-   > **OMA-URI：./Device/Vendor/MSFT/WindowsDefenderApplicationGuard/Settings/AllowWindowsDefenderApplicationGuard** <br> 数据类型 **：Integer** <br> 值 **：2**
+   > **OMA-URI：./Device/Vendor/MSFT/WindowsDefenderApplicationGuard/设置/AllowWindowsDefenderApplicationGuard** <br> 数据类型 **：Integer** <br> 值 **：2**
 
 4. 重新启动系统。
 
@@ -81,13 +81,13 @@ ms.locfileid: "51488307"
 > [!NOTE]
 > 但是，这不是必需的，配置可选诊断数据将有助于诊断报告的问题。
 
-此步骤确保识别并解决问题所需的数据已到达 Microsoft。 请按照以下步骤在 Windows 设备上启用诊断：
+此步骤确保识别并解决问题所需的数据已到达 Microsoft。 请按照以下步骤在设备上启用Windows诊断：
 
-1. 从 **"开始** "菜单中打开"设置"。
+1. 从 **设置** 菜单打开"开始"菜单。
 
    ![“开始”菜单](../../media/ag05-diagnostic.png)
 
-2. 在 **"Windows 设置"** 上，选择"**隐私"。**
+2. On **Windows 设置，** select **Privacy**.
 
    ![Windows 设置菜单](../../media/ag06-diagnostic.png)
 
@@ -95,19 +95,19 @@ ms.locfileid: "51488307"
 
    ![诊断和反馈菜单](../../media/ag07a-diagnostic.png)
 
-有关配置 Windows 诊断设置的信息，请参阅在组织中配置 [Windows 诊断数据](/windows/privacy/configure-windows-diagnostic-data-in-your-organization#enterprise-management)。
+有关配置诊断Windows，请参阅在Windows[配置诊断数据](/windows/privacy/configure-windows-diagnostic-data-in-your-organization#enterprise-management)。
 
-### <a name="confirm-that-application-guard-for-office-is-enabled-and-working"></a>确认 Office 应用程序防护已启用且正常工作
+### <a name="confirm-that-application-guard-for-office-is-enabled-and-working"></a>确认应用程序防护Office启用且正常工作
 
-在确认 Office 相关应用程序防护已启用之前，在已部署策略的设备上启动 Word、Excel 或 PowerPoint。 确保 Office 已激活。 你可能需要先使用你的工作标识激活 Office 产品。
+在确认应用程序防护Office之前，在已部署策略Excel设备上启动 Word、Excel 或 PowerPoint。 请确保Office激活。 你可能需要使用你的工作标识来激活Office产品。
 
-若要确认 Office 应用程序防护已启用，请启动 Word、Excel 或 PowerPoint，然后打开不受信任的文档。 例如，可以打开从 Internet 下载的文档或组织外部人员的电子邮件附件。
+若要确认应用程序防护Office，请启动 Word、Excel 或 PowerPoint，然后打开不受信任的文档。 例如，可以打开从 Internet 下载的文档或组织外部人员的电子邮件附件。
 
-首次打开不受信任的文件时，可能会看到 Office 初始屏幕，如以下示例所示。 它可能在 Office 应用程序防护被激活和文件打开时显示一段时间。 随后打开不受信任的文件应更快。
+首次打开不受信任的文件时，你可能会看到一个Office如以下示例所示的初始屏幕。 它可能在应用程序防护的激活Office文件打开时显示一段时间。 随后打开不受信任的文件应更快。
 
 ![Office 应用初始屏幕](../../media/ag08-confirm.png)
 
-打开后，文件应显示几个可视指示器，指示文件是在 Office 应用程序防护内打开的：
+打开后，文件应显示几个可视指示器，指示文件在应用程序防护内打开Office：
 
 * 功能区中的标注
 
@@ -117,39 +117,39 @@ ms.locfileid: "51488307"
 
   ![任务栏中的图标](../../media/ag12-limitations.png)
 
-## <a name="configure-application-guard-for-office"></a>为 Office 配置应用程序防护
+## <a name="configure-application-guard-for-office"></a>配置应用程序防护Office
 
-Office 支持以下策略，以使您能够配置 Office 应用程序防护的功能。 可以通过组策略或 Office 云策略服务 [配置这些策略](/DeployOffice/overview-office-cloud-policy-service)。
-查看 User  **Configuration \\ Administrative Templates Microsoft Office \\ 2016 Security Settings Trust Center \\ Application \\ \\ Guard** 中的组策略设置，查看管理员设置的配置。
+Office支持以下策略，以便你可以配置应用程序防护的Office。 可以通过组策略或云策略服务配置Office[策略](/DeployOffice/overview-office-cloud-policy-service)。
+请参阅 User **Configuration \\ Administrative Templates Microsoft Office \\ 2016 Security 设置 \\ Application \\ \\ Guard** 中的组策略设置，查看管理员设置的配置。
 
 
 > [!NOTE]
-> 配置这些策略可以禁用在 Office 相关应用程序防护中打开的文件的一些功能。
+> 配置这些策略可以针对在应用程序防护中打开的文件禁用某些Office。
 
-|Policy|说明|
+|策略|说明|
 |---|---|
-|请勿使用 Office 应用程序防护|启用此策略将强制 Word、Excel 和 PowerPoint 使用受保护的视图隔离容器，而不是 Office 应用程序防护。 当为 Microsoft Edge 启用此策略时，当存在问题时，可以使用此策略临时禁用 Office 应用程序防护。|
-|为 Office 容器预创建配置应用程序防护|此策略确定是否预先创建 Office 应用程序防护容器（用于隔离不受信任的文件）以提高运行时性能。 如果启用此设置，可以指定继续预创建容器的天数，或允许 Office 内置启发式预创建容器。
-|不允许复制/粘贴在 Office 相关应用程序防护中打开的 Office 文档|启用此策略将阻止用户将内容从在 Office 应用程序防护中打开的文档复制并粘贴到其外部打开的文档。|
-|在 Office 应用程序防护中禁用硬件加速|此策略控制 Office 应用程序防护是否使用硬件加速来呈现图形。 如果启用此设置，Office 应用程序防护将使用基于软件的 (CPU) 呈现，并且不会加载任何第三方图形驱动程序，也不会与任何连接的图形硬件交互。
-|在 Office 应用程序防护中禁用不受支持的文件类型保护|此策略控制 Office 应用程序防护是否阻止打开不受支持的文件类型，或者是否允许重定向到受保护的视图。
-|关闭在 Office 相关应用程序防护中打开的文档的相机和麦克风访问|启用此策略将删除 Office 对 Office 应用程序防护内的相机和麦克风的 Office 访问权限。|
-|限制打印在 Office 应用程序防护中打开的文档|启用此策略将限制用户可从 Office 应用程序防护中打开的文件打印到的打印机。 例如，可以使用此策略将用户限制为仅打印为 PDF。|
-|阻止用户删除应用程序防护以对文件进行 Office 保护|启用此策略将删除 Office 应用程序体验 (禁用 Office 保护) 或打开 Office 应用程序防护外部的文件的选项。 <p> **注意：** 用户仍可以通过手动从文件中删除 Web 标记属性或将文档移动到受信任位置来绕过此策略。|
+|请勿将应用程序防护用于Office|启用此策略将强制 Word、Excel 和 PowerPoint 使用受保护的视图隔离容器，而不是应用程序防护Office。 此策略可用于暂时禁用应用程序防护，Office当存在问题而将其保留为启用状态Microsoft Edge。|
+|配置应用程序防护Office容器预创建|此策略确定是否预先创建了用于Office应用程序防护容器（用于隔离不受信任的文件）以提高运行时性能。 如果启用此设置，可以指定继续预创建容器的天数，或让 Office 内置启发式预创建容器。
+|不允许复制/粘贴在应用程序防护中Office打开的文档Office|启用此策略将阻止用户将内容从应用程序防护中打开的文档中复制Office粘贴到在应用程序防护外部打开的文档。|
+|在应用程序防护中禁用硬件加速Office|此策略控制应用程序防护Office硬件加速来呈现图形。 如果启用此设置，Office 应用程序防护将使用基于软件的 (CPU) 呈现，并且不会加载任何第三方图形驱动程序，也不会与任何连接的图形硬件交互。
+|在应用程序防护中禁用不支持的文件类型保护Office|此策略控制应用程序防护Office阻止打开不受支持的文件类型，还是启用到受保护视图的重定向。
+|关闭应用程序防护中打开的文档的相机和麦克风Office|启用此策略将Office应用程序防护内的相机和麦克风的访问权限，Office。|
+|限制从应用程序防护中打开的文档打印Office|启用此策略将限制用户可从应用程序防护中打开的文件打印到的打印机Office。 例如，可以使用此策略将用户限制为仅打印为 PDF。|
+|阻止用户删除应用程序防护Office文件保护|启用此策略将删除 Office 应用程序体验) 中的 (选项，以禁用 Office 保护的应用程序防护或打开应用程序防护外部的文件Office。 <p> **注意：** 用户仍可以通过手动从文件中删除 Web 标记属性或将文档移动到受信任位置来绕过此策略。|
 |
 
 > [!NOTE]
-> 以下策略将要求用户注销并再次登录到 Windows，以生效：
+> 以下策略将要求用户注销并再次登录Windows生效：
 >
-> * 针对在 Office 应用程序防护中打开的文档禁用复制/粘贴
-> * 限制打印在 Office 相关应用程序防护中打开的文档
-> * 关闭对在 Office 相关应用程序防护中打开的文档的相机和麦克风访问
+> * 针对在应用程序防护中打开的文档禁用复制/粘贴Office
+> * 限制打印在应用程序防护中打开的文档Office
+> * 关闭对应用程序防护中打开的文档的相机和麦克风Office
 
 ## <a name="submit-feedback"></a>提交反馈
 
 ### <a name="submit-feedback-via-feedback-hub"></a>通过反馈中心提交反馈
 
-如果在启动 Office 应用程序防护时遇到任何问题，建议你通过反馈中心提交反馈：
+如果在启动应用程序防护时遇到任何问题Office，建议你通过反馈中心提交反馈：
 
 1. 打开 **反馈中心应用** 并登录。
 
@@ -159,7 +159,7 @@ Office 支持以下策略，以使您能够配置 Office 应用程序防护的�
 
 4. 在"详细说明"框中输入您遇到的问题以及所执行步骤的详细说明，然后选择"下一步 **"。**
 
-5. 选择"问题"旁边的 **气泡**。 确保选择的类别是安全和隐私 **Microsoft \> Defender 应用程序防护 - Office，** 然后选择下一 **步**。
+5. 选择"问题"旁边的 **气泡**。 确保选择的类别为"安全和隐私Microsoft Defender 应用程序防护 **\> – Office"，** 然后选择"下一 **步"。**
 
 6. 选择 **"新建反馈"，** 然后选择"下一 **步"。**
 
@@ -181,59 +181,59 @@ Office 支持以下策略，以使您能够配置 Office 应用程序防护的�
 
 9. 选择“**提交**”。
 
-### <a name="submit-feedback-via-office-customer-voice"></a>通过 Office 客户语音提交反馈
+### <a name="submit-feedback-via-office-customer-voice"></a>通过客户语音Office反馈
 
-如果问题在应用程序防护中打开 Office 文档时发生，还可以从 Office 内提交反馈。 请参阅 [Office 预览体验成员手册](https://insider.office.com/handbook) 以提交反馈。
+如果当应用程序防护中打开Office文档时Office提交反馈。 请参阅[《Office预览](https://insider.office.com/handbook)体验成员手册》，以提交反馈。
 
-## <a name="integration-with-microsoft-defender-for-endpoint-and-microsoft-defender-for-office-365"></a>与 Microsoft Defender for Endpoint 和 Microsoft Defender for Office 365 集成
+## <a name="integration-with-microsoft-defender-for-endpoint-and-microsoft-defender-for-office-365"></a>与 Microsoft Defender for Endpoint 和 Microsoft Defender for Office 365
 
-Office 应用程序防护与 Microsoft Defender for Endpoint 集成，以提供对隔离环境中发生的恶意活动的监视和警报。
+适用于 Office 应用程序防护与 Microsoft Defender for Endpoint 集成，以提供对隔离环境中发生的恶意活动的监视和警报。
 
-[Microsoft E365 E5](/microsoft-365/security/office-365-security/safe-docs) 中的安全文档是一项使用 Microsoft Defender for Endpoint 扫描在 Office 应用程序防护中打开的文档的功能。 为了提供额外的保护层，在确定扫描结果之前，用户无法离开 Office 应用程序防护。
+[保险箱 Microsoft E365 E5 中的](/microsoft-365/security/office-365-security/safe-docs)文档是一项使用 Microsoft Defender for Endpoint 扫描在应用程序防护中打开的文档Office。 对于另一层保护，用户无法离开应用程序防护Office直到确定扫描结果。
 
 Microsoft Defender for Endpoint 是一个安全平台，旨在帮助企业网络预防、检测、调查和响应高级威胁。 有关此平台的更多详细信息，请参阅 [Microsoft Defender for Endpoint](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp)。 若要了解有关将设备载入此平台的信息，请参阅将设备载入 [到 Microsoft Defender for Endpoint 服务](/windows/security/threat-protection/microsoft-defender-atp/onboard-configure)。
 
-还可以配置适用于 Office 365 的 Microsoft Defender 以使用 Defender for Endpoint。 有关详细信息，请参阅将适用于 [Office 365](integrate-office-365-ti-with-mde.md)的 Defender 与 Microsoft Defender for Endpoint 集成。
+还可以将 Microsoft Defender 配置为Office 365 Defender for Endpoint 使用。 有关详细信息，请参阅将[Defender for Office 365与 Microsoft Defender for Endpoint 集成](integrate-office-365-ti-with-mde.md)。
 
 ## <a name="limitations-and-considerations"></a>限制和注意事项
 
-* Office 相关应用程序防护是一种受保护的模式，可隔离不受信任的文档，以便它们无法访问受信任的公司资源、Intranet、用户标识和计算机上的任意文件。 因此，如果用户尝试访问依赖此类访问的功能（例如，从磁盘上的本地文件插入图片）访问将失败并生成类似以下示例的提示。 若要使不受信任的文档能够访问受信任的资源，用户必须从文档中删除应用程序防护保护。
+* Office应用程序防护是一种受保护的模式，可隔离不受信任的文档，以便它们无法访问受信任的公司资源、Intranet、用户标识和计算机上的任意文件。 因此，如果用户尝试访问依赖此类访问的功能（例如，从磁盘上的本地文件插入图片）访问将失败并生成类似以下示例的提示。 若要使不受信任的文档能够访问受信任的资源，用户必须从文档中删除应用程序防护保护。
 
   ![对话框显示"为了帮助你保持安全，此功能不可用"](../../media/ag10-limitations.png)
 
   > [!NOTE]
   > 建议用户仅在信任文件及其来源或来源时删除保护。
 
-* 宏和控件等文档中的活动ActiveX在 Office 应用程序防护中处于禁用状态。 用户需要删除应用程序防护保护才能启用活动内容。
+* 宏和控件等文档中的活动ActiveX在应用程序防护中禁用Office。 用户需要删除应用程序防护保护才能启用活动内容。
 
-* 来自网络共享的不受信任的文件或来自不同组织的 OneDrive、OneDrive for Business 或 SharePoint Online 共享的文件在应用程序防护中以只读方式打开。 用户可以保存此类文件的本地副本以在容器中继续工作，或删除保护以直接使用原始文件。
+* 来自不同组织的网络共享或共享自 OneDrive、OneDrive for Business 或 SharePoint Online 的不受信任文件在应用程序防护中以只读方式打开。 用户可以保存此类文件的本地副本以在容器中继续工作，或删除保护以直接使用原始文件。
 
 * 默认情况下，受信息权限管理 (IRM) 文件将被阻止。 如果用户想要在受保护的视图中打开此类文件，则管理员必须为组织配置不受支持的文件类型的策略设置。
 
-* 用户退出并再次登录或设备重启后，Office 应用程序防护 for Office 应用程序的任何自定义不会保留。
+* 在应用程序防护Office应用程序的任何自定义Office在用户重新登录或设备重启后不会保留。
 
-* 只有使用 UIA 框架的辅助功能工具才能为在 Office 应用程序防护中打开的文件提供辅助体验。
+* 只有使用 UIA 框架的辅助功能工具才能为在应用程序防护中打开的文件提供辅助Office。
 
 * 安装后首次启动应用程序防护需要网络连接。 应用程序防护需要连接才能验证许可证。
 
 * 在文档的信息部分中 *，"上次修改* 者"属性可能会将 **WDAGUtilityAccount** 显示为用户。 WDAGUtilityAccount 是在应用程序防护中配置的匿名用户。 桌面用户的身份不在应用程序防护容器内共享。
 
-## <a name="performance-optimizations-for-application-guard-for-office"></a>Office 应用程序防护的性能优化
+## <a name="performance-optimizations-for-application-guard-for-office"></a>适用于应用程序防护的应用程序防护的性能Office
 
-本部分概述了 Office 应用程序防护中使用的性能优化。 此信息可以帮助管理员在启用应用程序防护时诊断来自用户的报告，这些报告与 Office 或整个系统的性能相关。
+本部分概述了应用程序防护中用于实现性能优化Office。 此信息可以帮助管理员在启用应用程序防护时诊断Office系统性能相关的用户报告。
 
 应用程序防护使用虚拟化容器将不受信任的文档与系统隔离。 创建容器和设置应用程序防护容器以打开 Office 文档的过程具有性能开销，在用户打开不受信任的文档时可能会对用户体验产生负面影响。
 
 为了为用户提供预期的文件打开体验，当系统满足以下启发性要求时，应用程序防护使用逻辑预创建容器：用户在过去 28 天内以受保护的视图或应用程序防护打开文件。
 
-当满足此启发性要求时，Office 将在用户登录 Windows 后为用户预先创建应用程序防护容器。 虽然此预创建操作正在进行中，但系统可能会遇到性能缓慢的问题，但该操作完成后，该影响将立即解决。
+如果满足此启发Office，用户登录后，用户会预先创建应用程序防护Windows。 虽然此预创建操作正在进行中，但系统可能会遇到性能缓慢的问题，但该操作完成后，该影响将立即解决。
 
 > [!NOTE]
-> 用户使用它们时，Office 应用程序会生成预先创建容器的启发式提示。 如果用户在启用了应用程序防护的新系统中安装 Office，则 Office 不会预先创建容器，直到用户首次在系统上打开不受信任的文档。 用户将观察到，在应用程序防护中打开第一个文件需要更长时间。
+> 启发式预创建容器所需的提示由用户Office应用程序生成。 如果用户在Office应用程序防护的新系统中安装此文档，则 Office 在用户首次在系统上打开不受信任的文档之前不会预创建容器。 用户将观察到，在应用程序防护中打开第一个文件需要更长时间。
 
 ## <a name="known-issues"></a>已知问题
 
 * 选择 (`http` 或 `https`) Web 链接不会打开浏览器。
-* 目前不支持将 RTF 格式 (RTF) 应用程序防护打开的 Office 文档中的内容或图像。
+* 目前不支持将 RTF 格式 (RTF) 应用程序防护Office打开的文档中的内容或图像。
 * 不受支持的文件类型保护策略的默认设置是阻止打开信息权限管理 、IRM (、CSV 或 HTML) 不受信任的文件类型。
-* 更新 .NET 可能会导致文件在应用程序防护中无法打开。 作为一种解决方法，用户可以在遇到此故障时重新启动其设备。 有关该问题的详细信息，请 [通过应用程序](https://support.microsoft.com/help/4575917/receiving-an-error-message-when-attempting-to-open-windows-defender-ap)防护或 Windows 沙盒Windows Defender时收到错误消息。
+* 更新 .NET 可能会导致文件在应用程序防护中无法打开。 作为一种解决方法，用户可以在遇到此故障时重新启动其设备。 有关该问题的详细信息，请[通过接收错误消息尝试打开沙盒Windows Defender 应用程序防护Windows沙盒。](https://support.microsoft.com/help/4575917/receiving-an-error-message-when-attempting-to-open-windows-defender-ap)

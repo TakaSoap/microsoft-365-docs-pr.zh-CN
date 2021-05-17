@@ -45,9 +45,9 @@ ms.locfileid: "51934737"
 
 主题 | 说明
 :---|:---
-[配置 Microsoft Defender 安全中心设置](preferences-setup.md) | 配置与门户相关的设置，如常规设置、高级功能或启用预览体验。
+[配置Microsoft Defender 安全中心设置](preferences-setup.md) | 配置与门户相关的设置，如常规设置、高级功能或启用预览体验。
 [配置攻击面减少功能](configure-attack-surface-reduction.md) | 配置攻击面减少功能，以确保正确应用设置，并设置攻击缓解技术。
 [配置下一代保护](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-microsoft-defender-antivirus-features) | 配置下一代保护，以捕获所有类型的新兴威胁。
-[配置 Microsoft 威胁专家功能](configure-microsoft-threat-experts.md) | 配置和管理来自 Microsoft 威胁专家的网络安全威胁智能。
+[配置Microsoft 威胁专家功能](configure-microsoft-threat-experts.md) | 配置和管理来自安全中心的网络安全威胁Microsoft 威胁专家。
 [配置 Microsoft 365 Defender 集成](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/threat-protection-integration) | 配置与 Defender for Endpoint 集成的其他解决方案。
-[管理和 API 支持](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/management-apis) | 将警报拉取到 SIEM 安全信息和事件 (SIEM) 或使用 API 创建自定义警报。 创建和生成 Power BI 报表。
+[管理和 API 支持](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/management-apis) | 将警报拉取到 SIEM 安全信息和事件 (SIEM) 或使用 API 创建自定义警报。 创建和生成Power BI报告。

@@ -50,7 +50,7 @@ ms.locfileid: "51933093"
 
 ## <a name="enrollment-method-1-enrollment-invitations"></a>注册方法 1：注册邀请
 
-1. 在 Jamf Pro 仪表板中，导航到 **注册邀请**。
+1. 在 Jamf Pro仪表板中，导航到"**注册邀请"。**
 
     ![配置设置的图像1](images/a347307458d6a9bbfa88df7dbe15398f.png)
 
@@ -80,7 +80,7 @@ ms.locfileid: "51933093"
 
 ## <a name="enrollment-method-2-prestage-enrollments"></a>注册方法 2：预阶段注册
 
-1. 在 Jamf Pro 仪表板中，导航到 **Prestage 注册**。
+1. 在 Jamf Pro仪表板中，导航到 **Prestage 注册**。
 
     ![配置设置的图像9](images/6fd0cb2bbb0e60a623829c91fd0826ab.png)
 
@@ -90,24 +90,24 @@ ms.locfileid: "51933093"
 
 1. 选择 **"继续** "，然后从"系统首选项" **窗口安装 CA** 证书。
 
-    ![Jamf Pro 注册图像1](images/jamfpro-ca-certificate.png)
+    ![Jamf 注册Pro图像1](images/jamfpro-ca-certificate.png)
 
 2. 安装 CA 证书后，返回到浏览器窗口，然后选择" **继续** "并安装 MDM 配置文件。 
 
-    ![Jamf Pro 注册的图像2](images/jamfpro-install-mdm-profile.png)
+    ![Jamf 注册Pro图像2](images/jamfpro-install-mdm-profile.png)
 
 3. 选择 **允许** 从 JAMF 下载。
 
-    ![Jamf Pro 注册的图像3](images/jamfpro-download.png)
+    ![Jamf 注册Pro图像3](images/jamfpro-download.png)
 
 4. 选择 **"** 继续"继续安装 MDM 配置文件。 
 
-    ![Jamf Pro 注册的图像4](images/jamfpro-install-mdm.png)
+    ![Jamf 注册Pro图像4](images/jamfpro-install-mdm.png)
 
 5. 选择 **"继续** "以安装 MDM 配置文件。
 
-    ![Jamf Pro 注册图像5](images/jamfpro-mdm-unverified.png)
+    ![Jamf 注册Pro图像5](images/jamfpro-mdm-unverified.png)
 
 6. 选择 **"继续**  "以完成配置。 
 
-    ![Jamf Pro 注册图像6](images/jamfpro-mdm-profile.png)
+    ![Jamf 注册Pro图像6](images/jamfpro-mdm-profile.png)

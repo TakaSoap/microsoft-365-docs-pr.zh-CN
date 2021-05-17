@@ -37,17 +37,17 @@ ms.locfileid: "51935577"
 
 1. 输入你的凭据。
 
-    ![Jamf Pro 仪表板的图像1](images/jamf-pro-portal1.png)
+    ![Jamf 仪表板Pro图像1](images/jamf-pro-portal1.png)
 
 2. 选择 **计算机**。
 
-    ![Jamf Pro 仪表板 2 的图像](images/jamf-pro-dashboard.png)
+    ![Jamf 仪表板Pro 2 的图像](images/jamf-pro-dashboard.png)
 
 3. 你将看到可用的设置。
 
-     ![Jamf Pro 仪表板的图像3](images/jamfpro-settings.png)
+     ![Jamf 仪表板Pro图像3](images/jamfpro-settings.png)
 
 
 ## <a name="next-step"></a>后续步骤
-[在 Jamf Pro 中设置设备组](mac-jamfpro-device-groups.md)
+[在 Jamf 中设置设备Pro](mac-jamfpro-device-groups.md)
 

@@ -44,7 +44,7 @@ ms.locfileid: "51932807"
 ![安全配置管理页](images/secconmgmt_main.png)<br>
 *设备配置管理页*
 
-你可以跟踪组织级别的配置状态，并通过指向 Microsoft Intune 和 Microsoft 365 安全中心上的设备管理页面的直接深层链接，快速采取行动，以响应载入范围不佳、合规性问题以及攻击面缓解性能不佳的问题。
+可以通过指向 Microsoft Intune 和 Microsoft 365 安全中心上的设备管理页面的直接深层链接，在组织级别跟踪配置状态并快速采取措施，以响应载入范围不佳、合规性问题以及攻击面缓解的不优化情况。
 
 在执行此操作时，您将受益于：
 - 设备上事件的全面可见性
@@ -54,12 +54,12 @@ ms.locfileid: "51932807"
 
 ## <a name="enroll-devices-to-intune-management"></a>将设备注册到 Intune 管理
 
-设备配置管理与 Intune 设备管理密切合作，以建立组织中设备的清单和基线安全配置。 你将能够在 Intune 托管的 Windows 10 设备上跟踪和管理配置问题。
+设备配置管理与 Intune 设备管理密切合作，以建立组织中设备的清单和基线安全配置。 你将能够在 Intune 托管的设备上跟踪和管理Windows 10问题。
 
-在确保设备配置正确之前，请将其注册到 Intune 管理。 Intune 注册很可靠，并且具有多个适用于 Windows 10 设备的注册选项。 有关 Intune 注册选项的详细信息，请阅读有关 [为 Windows 设备设置注册的信息](https://docs.microsoft.com/intune/windows-enroll)。
+在确保设备配置正确之前，请将其注册到 Intune 管理。 Intune 注册很可靠，并且具有多个适用于Windows 10注册选项。 有关 Intune 注册选项的详细信息，请阅读有关为设备Windows[注册的信息](https://docs.microsoft.com/intune/windows-enroll)。
 
 >[!NOTE]
->若要将 Windows 设备注册到 Intune，管理员必须已分配有许可证。 [阅读有关分配设备注册许可证的信息](https://docs.microsoft.com/intune/licenses-assign)。
+>若要Windows设备注册到 Intune，管理员必须已分配有许可证。 [阅读有关分配设备注册许可证的信息](https://docs.microsoft.com/intune/licenses-assign)。
 
 >[!TIP] 
 >若要通过 Intune 优化设备管理， [请将 Intune 连接到 Defender for Endpoint](https://docs.microsoft.com/intune/advanced-threat-protection#enable-windows-defender-atp-in-intune)。
@@ -85,6 +85,6 @@ ms.locfileid: "51932807"
 :---|:---
 [将设备载入到 Defender for Endpoint](configure-machines-onboarding.md)| 跟踪 Intune 托管设备的载入状态，并通过 Intune 载入更多设备。 
 [提高 Defender for Endpoint 安全基线的合规性](configure-machines-security-baseline.md) | 跟踪基线合规性和不符合情况。 将安全基线部署到更多 Intune 托管的设备。
-[优化 ASR 规则部署和检测](configure-machines-asr.md) | 查看规则部署，然后使用 Microsoft 365 安全中心中的影响分析工具调整检测。
+[优化 ASR 规则部署和检测](configure-machines-asr.md) | 查看规则部署，然后使用安全中心内的影响分析工具Microsoft 365检测。
 
 >想要体验适用于终结点的 Defender？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-onboardconfigure-belowfoldlink)

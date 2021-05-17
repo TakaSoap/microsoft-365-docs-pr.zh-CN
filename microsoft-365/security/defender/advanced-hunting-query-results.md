@@ -1,6 +1,6 @@
 ---
-title: 在 Microsoft 365 Defender 中处理高级搜寻查询结果
-description: 在 Microsoft 365 Defender 中充分利用高级搜寻返回的查询结果
+title: 在 defender 中处理高级搜寻Microsoft 365结果
+description: 在 Defender 中充分利用高级搜寻返回的Microsoft 365结果
 keywords: 高级搜寻， 威胁搜寻， 网络威胁搜寻， Microsoft 365 Defender， microsoft 365， m365， 搜索， 查询， 遥测， 自定义检测， 架构， kusto， 可视化， 图表， 筛选器， 深化
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -122,7 +122,7 @@ AppFileEvents
 ## <a name="export-tables-and-charts"></a>导出表格和图表
 运行查询后，选择 **"导出** "将结果保存到本地文件。 所选视图确定结果的导出方式：
 
-- **表视图** — 查询结果以表格形式导出为 Microsoft Excel 工作簿
+- **表视图**— 查询结果以表格形式导出为Microsoft Excel工作簿
 - **任何图表** — 查询结果导出为已呈现图表的 JPEG 图像
 
 ## <a name="drill-down-from-query-results"></a>从查询结果向下钻取
@@ -155,7 +155,7 @@ AppFileEvents
 应用筛选器以修改查询并运行查询后，将相应更新结果。
 
 >[!NOTE]
->本文中的某些表在 Microsoft Defender for Endpoint 中可能不可用。 [打开 Microsoft 365 Defender](m365d-enable.md) 以使用更多数据源搜寻威胁。 你可以按照从 Microsoft Defender for Endpoint 迁移高级搜寻查询中的步骤将高级搜寻工作流从 [Microsoft Defender for Endpoint](advanced-hunting-migrate-from-mde.md)移动到 Microsoft 365 Defender。
+>本文中的某些表在 Microsoft Defender for Endpoint 中可能不可用。 [打开 Microsoft 365 Defender](m365d-enable.md)以使用更多数据源搜寻威胁。 你可以按照从 Microsoft Defender for Endpoint 迁移高级搜寻查询中的步骤，将高级搜寻工作流从 Microsoft Defender for Endpoint 移动到 Microsoft 365 [Defender。](advanced-hunting-migrate-from-mde.md)
 
 ## <a name="related-topics"></a>相关主题
 - [高级搜寻概述](advanced-hunting-overview.md)

@@ -54,11 +54,11 @@ ms.locfileid: "51939632"
 
 以下引用列出了高级搜寻架构中的所有表。 每个表名称链接到描述该表的列名称的页面。
 
-表和列名称还会在 Microsoft Defender 安全中心内以高级搜寻屏幕上的架构表示形式列出。
+表和列名称也列在Microsoft Defender 安全中心中，在高级搜寻屏幕上的架构表示形式中。
 
 | 表名 | 说明 |
 |------------|-------------|
-| **[DeviceAlertEvents](advanced-hunting-devicealertevents-table.md)** | Microsoft Defender 安全中心警报 |
+| **[DeviceAlertEvents](advanced-hunting-devicealertevents-table.md)** | 有关警报Microsoft Defender 安全中心 |
 | **[DeviceInfo](advanced-hunting-deviceinfo-table.md)** | 设备信息，包括操作系统信息 |
 | **[DeviceNetworkInfo](advanced-hunting-devicenetworkinfo-table.md)** | 设备的网络属性，包括适配器、IP 和 MAC 地址，以及连接的网络和域 |
 | **[DeviceProcessEvents](advanced-hunting-deviceprocessevents-table.md)** | 过程创建和相关事件 |
@@ -67,7 +67,7 @@ ms.locfileid: "51939632"
 | **[DeviceRegistryEvents](advanced-hunting-deviceregistryevents-table.md)** | 创建和修改注册表项 |
 | **[DeviceLogonEvents](advanced-hunting-devicelogonevents-table.md)** | 登录和其他身份验证事件 |
 | **[DeviceImageLoadEvents](advanced-hunting-deviceimageloadevents-table.md)** | DLL 加载事件 |
-| **[DeviceEvents](advanced-hunting-deviceevents-table.md)** | 多个事件类型，包括由安全控件（如 Microsoft Defender 防病毒和 Exploit Protection）触发的事件 |
+| **[DeviceEvents](advanced-hunting-deviceevents-table.md)** | 多个事件类型，包括由安全控件触发的事件，Microsoft Defender 防病毒和 Exploit Protection |
 | **[DeviceFileCertificateInfo](advanced-hunting-devicefilecertificateinfo-table.md)** | 从终结点上的证书验证事件获取的已签名文件的证书信息 |
 | **[DeviceTvmSoftwareInventory](advanced-hunting-devicetvmsoftwareinventory-table.md)** | 设备上安装的软件清单，包括其版本信息和停止支持状态 |
 | **[DeviceTvmSoftwareVulnerabilities](advanced-hunting-devicetvmsoftwarevulnerabilities-table.md)** | 在设备上发现的软件漏洞以及可解决每个漏洞的可用安全更新列表 |
@@ -76,8 +76,8 @@ ms.locfileid: "51939632"
 | **[DeviceTvmSecureConfigurationAssessmentKB](advanced-hunting-devicetvmsecureconfigurationassessmentkb-table.md)** | 威胁和漏洞管理用于评估设备的各种安全配置的知识库；包括各种标准和基准的映射 |
 
 >[!TIP]
->使用 [Microsoft 365 Defender](/microsoft-365/security/defender/advanced-hunting-overview) 中的高级搜寻，使用来自 Defender for Endpoint、Microsoft Defender for Office 365、Microsoft Cloud App Security 和 Microsoft Defender for Identity 的数据搜寻威胁。 [打开 Microsoft 365 Defender](/microsoft-365/security/defender/m365d-enable)<br><br>
-在从 Microsoft Defender for Endpoint 迁移高级搜寻查询中，详细了解如何将高级搜寻工作流从 Microsoft Defender for Endpoint 移动到 Microsoft 365 [Defender。](/microsoft-365/security/defender/advanced-hunting-migrate-from-mde)
+>使用[Microsoft 365 Defender 中的高级](/microsoft-365/security/defender/advanced-hunting-overview)搜寻，使用来自 Defender for Endpoint、Microsoft Defender for Office 365、Microsoft Cloud App Security 和 Microsoft Defender for Identity 的数据搜寻威胁。 [打开 Microsoft 365 Defender](/microsoft-365/security/defender/m365d-enable)<br><br>
+在从 Microsoft Defender for Endpoint 迁移高级搜寻查询中，了解有关如何将高级搜寻工作流从 Microsoft Defender for Endpoint 移动到 Microsoft 365 Defender[中。](/microsoft-365/security/defender/advanced-hunting-migrate-from-mde)
 
 ## <a name="related-topics"></a>相关主题
 - [高级搜寻概述](advanced-hunting-overview.md)

@@ -45,6 +45,6 @@ Defender for Endpoint API 受 [Microsoft API 许可和使用条款控制](https:
 
 Microsoft 和任何参与者在 Creative Commons Attribution 4.0 International Public License 下授予你 Microsoft 文档和此存储库中其他内容的许可证，请参阅许可证文件。
 
-本文档中引用的 Microsoft、Windows、Microsoft Azure 和/或其他 Microsoft 产品和服务可能是 Microsoft 在美国和/或其他国家/地区中的商标或注册商标。 此项目的许可证不授予你使用任何 Microsoft 名称、徽标或商标的权利。 可在 上找到 Microsoft 的一般商标准则 https://go.microsoft.com/fwlink/?LinkID=254653 。
+本文档Windows、Microsoft Azure和/或其他 Microsoft 产品和服务可能是 Microsoft 在美国和/或其他国家/地区中的商标或注册商标。 此项目的许可证不授予你使用任何 Microsoft 名称、徽标或商标的权利。 可在 上找到 Microsoft 的一般商标准则 https://go.microsoft.com/fwlink/?LinkID=254653 。
 
 隐私信息可在 Microsoft 找到，任何参与者保留所有其他权利，无论是根据其各自的版权、专利还是商标，无论是通过暗示、阻止拼写还是 https://privacy.microsoft.com/en-us/ 其他方式。

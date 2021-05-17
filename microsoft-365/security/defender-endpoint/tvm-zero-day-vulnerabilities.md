@@ -1,7 +1,7 @@
 ---
-title: 缓解零日漏洞 - 威胁和漏洞管理
-description: 了解如何通过威胁和漏洞管理查找并减少环境中零日漏洞。
-keywords: Microsoft Defender for Endpoint tvm zero day vulnerabilities， tvm， threat & vulnerability management， zero day， 0-day， mitigate 0 day vulnerabilities， vulnerable CVE
+title: 缓解零日漏洞 - 危险和漏洞管理
+description: 了解如何通过以下方法查找并减少环境中零日危险和漏洞管理。
+keywords: Microsoft Defender for Endpoint tvm zero day vulnerabilities， tvm， threat & 漏洞管理， zero day， 0-day， mitigate 0 day vulnerabilities， vulnerable CVE
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -25,7 +25,7 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 04/21/2021
 ms.locfileid: "51933057"
 ---
-# <a name="mitigate-zero-day-vulnerabilities---threat-and-vulnerability-management"></a>缓解零日漏洞 - 威胁和漏洞管理
+# <a name="mitigate-zero-day-vulnerabilities---threat-and-vulnerability-management"></a>缓解零日漏洞 - 危险和漏洞管理
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -39,11 +39,11 @@ ms.locfileid: "51933057"
 
 零日漏洞是公开披露的漏洞，尚未发布正式的修补程序或安全更新程序。 零日漏洞通常具有高严重性级别，并且被主动利用。
 
-威胁和漏洞管理将仅显示其拥有相关信息的零日漏洞。
+威胁漏洞管理仅显示其拥有相关信息的零日漏洞。
 
 ## <a name="find-information-about-zero-day-vulnerabilities"></a>查找有关零日漏洞的信息
 
-一旦发现零日漏洞，相关信息将在 Microsoft Defender 安全中心通过以下体验传达。
+一旦发现零日漏洞，有关该漏洞的信息将通过该漏洞中的以下Microsoft Defender 安全中心。
 
 ### <a name="threat-and-vulnerability-management-dashboard"></a>威胁和漏洞管理仪表板
 
@@ -69,13 +69,13 @@ ms.locfileid: "51933057"
 
 查找带零日标记的软件。 按"零日"标记进行筛选，以仅查看具有零日漏洞的软件。
 
-![软件清单页中的 Windows Server 2016 零日示例。](images/tvm-zero-day-software-inventory.png)
+![软件清单页Windows Server 2016零日示例。](images/tvm-zero-day-software-inventory.png)
 
 ### <a name="software-page"></a>"软件"页
 
 查找受零日漏洞影响的每个软件的零日标记。
 
-![Windows Server 2016 软件页的零日示例。](images/tvm-zero-day-software-page.png)
+![软件页的零Windows Server 2016日示例。](images/tvm-zero-day-software-page.png)
 
 ### <a name="security-recommendations-page"></a>"安全建议"页
 
@@ -83,7 +83,7 @@ ms.locfileid: "51933057"
 
 如果有软件具有零日漏洞和其他要解决的漏洞，你将获得有关所有漏洞的一个建议。
 
-![安全建议页中的 Windows Server 2016 零日示例。](images/tvm-zero-day-security-recommendation.png)
+![零日示例Windows Server 2016安全建议页中显示的内容。](images/tvm-zero-day-security-recommendation.png)
 
 ## <a name="addressing-zero-day-vulnerabilities"></a>解决零日漏洞
 
@@ -93,17 +93,17 @@ ms.locfileid: "51933057"
 
 打开修正选项并选择注意类型。 建议对零日漏洞使用"注意"修正选项，因为更新尚未发布。 由于没有要执行的特定操作，因此无法选择截止日期。 如果你希望修正此软件存在较旧的漏洞，你可以替代"需要注意"的修正选项并选择"更新"。
 
-![安全建议页中 Windows Server 2016 的零日飞出示例。](images/tvm-zero-day-recommendation-flyout400.png)
+![安全建议页中Windows Server 2016零日飞出示例。](images/tvm-zero-day-recommendation-flyout400.png)
 
 ## <a name="track-zero-day-remediation-activities"></a>跟踪零日修正活动
 
-转到威胁和漏洞管理 [修正](tvm-remediation.md) 页面以查看修正活动项。 如果选择"注意需要"修正选项，则没有进度栏、票证状态或截止日期，因为我们可以监视任何实际操作。 您可以按修正类型（如"软件更新"或"需要注意"）进行筛选，以查看同一类别的所有活动项。
+转到["危险和漏洞管理"](tvm-remediation.md)页以查看修正活动项。 如果选择"注意需要"修正选项，则没有进度栏、票证状态或截止日期，因为我们可以监视任何实际操作。 您可以按修正类型（如"软件更新"或"需要注意"）进行筛选，以查看同一类别的所有活动项。
 
 ## <a name="patching-zero-day-vulnerabilities"></a>修补零日漏洞
 
 当修补程序在零日发布时，建议将更改为"更新"，其旁边的蓝色标签显示"零日的新安全更新"。 它不再视为零日，将从所有页面中删除零日标记。
 
-![建议使用新的修补程序标签"更新 Microsoft Windows 10"。](images/tvm-zero-day-patch.jpg)
+![建议使用新修补程序Windows 10"更新 Microsoft Windows 10"。](images/tvm-zero-day-patch.jpg)
 
 ## <a name="related-articles"></a>相关文章
 

@@ -41,7 +41,7 @@ ms.locfileid: "51934377"
 
 在将多个设备载入服务之前，你可能想要体验 Defender for Endpoint。 为此，可以在一些测试设备上运行受控攻击模拟。 运行模拟攻击后，你可以查看 Defender for Endpoint 如何显示恶意活动，并探索它如何启用有效的响应。
 
-## <a name="before-you-begin"></a>准备工作
+## <a name="before-you-begin"></a>开始之前
 
 若要运行任何提供的模拟，你至少需要一 [个已载入的设备](onboard-configure.md)。 
 

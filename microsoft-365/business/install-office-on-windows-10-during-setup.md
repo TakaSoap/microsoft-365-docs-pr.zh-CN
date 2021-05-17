@@ -25,7 +25,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 5ffd5327-a83a-4d53-94d6-22ba2f9fd090
-description: 了解如何使用 Microsoft 365 商业高级版自动确保用户在所有 Windows 10 设备上具有最新版本的 Office。
+description: 了解如何使用Microsoft 365 商业高级版，自动确保用户在所有设备上Office最新版本Windows 10版本。
 ms.openlocfilehash: d3c62eb42ea73c7af6df6012dbc9488828cd1ba8
 ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
@@ -37,6 +37,6 @@ ms.locfileid: "51580166"
 
 ![指向 的横幅 https://aka.ms/aboutM365preview 。](../media/m365admincenterchanging.png)
 
-默认情况下，此设置处于关闭状态。 你可以将其打开以确保用户在所有 Windows 10 设备上具有最新版本的 Office，但首先验证是否满足所有先决条件。 用户必须获得 Microsoft 365 商业高级版许可，此设置将软件推送到设备，此外，Microsoft [365](prepare-for-office-client-deployment.md)商业高级版 准备 Office 客户端部署中所述的其他要求。
+默认情况下，此设置处于关闭状态。 你可以将其打开以确保用户在所有 Office 设备上具有最新版本的 Windows 10，但首先验证是否满足所有先决条件。 除了准备 Office 客户端部署中介绍的其他要求外，用户还必须获得Microsoft 365 商业高级版许可证，此设置将软件推送[到设备Microsoft 365 商业高级版。](prepare-for-office-client-deployment.md)
   
 建议您在设置过程中接受默认设置。

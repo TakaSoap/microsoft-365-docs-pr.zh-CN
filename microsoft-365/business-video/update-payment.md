@@ -20,7 +20,7 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: 了解如何更新 Microsoft 365 商业版付款方式。
+description: 了解如何更新适用于企业Microsoft 365付款方式。
 ms.openlocfilehash: 3b659da6745c92d777629b2912114ee214582623
 ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
@@ -32,7 +32,7 @@ ms.locfileid: "51580350"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3AVxy?autoplay=false]
 
-可以轻松更新 Microsoft 365 商业版订阅的付款方式。 你可以更改详细信息，如使用的信用卡、姓名或地址。
+可以轻松地更新你的订阅的付款方式Microsoft 365 商业版方法。 你可以更改详细信息，如使用的信用卡、姓名或地址。
 
 ## <a name="try-it"></a>试一试！
 

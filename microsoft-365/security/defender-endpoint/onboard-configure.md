@@ -1,6 +1,6 @@
 ---
 title: 将设备载入到 Microsoft Defender for Endpoint 服务
-description: 载入 Windows 10 设备、服务器、非 Windows 设备，并了解如何运行检测测试。
+description: 载入Windows 10设备、服务器、Windows设备，并了解如何运行检测测试。
 keywords: 载入， Microsoft Defender for Endpoint onboarding， sccm， 组策略， mdm， 本地脚本， 检测测试
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -63,10 +63,10 @@ ms.locfileid: "51933549"
 ## <a name="in-this-section"></a>本节内容
 主题 | 说明
 :---|:---
-[载入以前版本的 Windows](onboard-downlevel.md)| 将 Windows 7 和 Windows 8.1 设备载入到 Defender for Endpoint。 
+[载入以前版本的 Windows](onboard-downlevel.md)| 将 Windows 7 和 Windows 8.1设备载入到 Defender for Endpoint。 
 [载入 Windows 10 设备](configure-endpoints.md) | 你需要载入设备，以向 Defender for Endpoint 服务报告。 了解可用于在企业中配置设备的工具和方法。
-[载入服务器](configure-server-endpoints.md) |  将 Windows Server 2008 R2 SP1、Windows Server 2012 R2、Windows Server 2016、Windows Server (SAC) 版本 1803 和更高版本、Windows Server 2019 及更高版本以及 Windows Server 2019 核心版载入 Defender for Endpoint。
-[载入非 Windows 设备](configure-endpoints-non-windows.md) | Defender for Endpoint 为 Windows 和非 Windows 平台提供了集中式安全操作体验。 你将能够在 Microsoft Defender 安全中心内查看各种受支持操作系统 (操作系统) 警报，并更好地保护组织的网络。 此体验利用第三方安全产品的传感器数据。 
+[载入服务器](configure-server-endpoints.md) |  将 Windows Server 2008 R2 SP1、Windows Server 2012 R2、Windows Server 2016、Windows Server (SAC) 版本 1803 及更高版本、Windows Server 2019 及更高版本以及 Windows Server 2019 核心版本载入 Defender for Endpoint。
+[载入非 Windows 设备](configure-endpoints-non-windows.md) | Defender for Endpoint 为用户和非 Windows平台提供了集中式安全Windows体验。 你将能够查看来自各种支持的操作系统和操作系统警报 (操作系统) Microsoft Defender 安全中心更好地保护组织的网络。 此体验利用第三方安全产品的传感器数据。 
 [在新载入的设备上运行检测测试](run-detection-test.md) | 在新载入的设备上运行脚本，验证它是否正确报告给 Defender for Endpoint 服务。
 [配置代理和 Internet 设置](configure-proxy-internet.md)| 通过配置代理和 Internet 连接设置，启用与 Defender for Endpoint 云服务的通信。
 [解决载入问题](troubleshoot-onboarding.md) | 了解如何解决载入期间可能出现的问题。

@@ -42,14 +42,14 @@ ms.locfileid: "51952556"
 
 若要管理自定义检测，需要分配有以下角色之一：
 
-- **安全管理员**- 具有 [此 Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#security-administrator) 角色的用户可以在 Microsoft 365 安全中心和其他门户和服务中管理安全设置。
+- **安全管理员**- 具有 [此Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#security-administrator)角色的用户可以在安全中心Microsoft 365和其他门户和服务中管理安全设置。
 
-- **安全操作员**- 具有 [此 Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#security-administrator) 角色的用户可以管理警报，并且对安全相关功能（包括 Microsoft 365 安全中心内的所有信息）具有全局只读访问权限。 只有在 Microsoft Defender for Endpoint 中关闭基于角色的访问控制 (RBAC) ，此角色才足以管理自定义检测。 如果已配置 RBAC，则还需要 Defender for Endpoint **的** "管理安全设置"权限。
+- **安全** 操作员 - 具有 [](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#security-administrator)此 Azure Active Directory 角色的用户可以管理警报，并且对安全相关功能（包括安全中心内Microsoft 365具有全局只读访问权限。 只有在 Microsoft Defender for Endpoint 中关闭基于角色的访问控制 (RBAC) ，此角色才足以管理自定义检测。 如果已配置 RBAC，则还需要 Defender for Endpoint **的** "管理安全设置"权限。
 
 若要管理所需的权限，全局 **管理员可以** ：
 
-- 在 **Microsoft** [365](https://admin.microsoft.com/)管理中心中，在角色安全管理员 下分配安全管理员 **或**  >  **安全操作员角色**。
-- 在"设置权限角色"下，在 [Microsoft Defender](https://securitycenter.windows.com/)安全中心中检查适用于终结点的 Microsoft Defender 的 RBAC  >    >  **设置**。 选择相应的角色以分配 **管理安全设置** 权限。
+- 在"**角色安全** 管理员"**下的**"Microsoft 365 [中心中分配](https://admin.microsoft.com/)安全管理员 **或**  >  **安全操作员角色**。
+- Check RBAC settings for Microsoft Defender for Endpoint in [Microsoft Defender 安全中心](https://securitycenter.windows.com/)under **设置**  >  **Permissions**  >  **Roles**. 选择相应的角色以分配 **管理安全设置** 权限。
 
 > [!NOTE]
 > 若要管理自定义检测，**如果** RBAC 已打开，安全操作员将需要 Microsoft Defender for Endpoint 中的管理安全设置权限。
@@ -57,7 +57,7 @@ ms.locfileid: "51952556"
 ## <a name="create-a-custom-detection-rule"></a>创建自定义检测规则
 ### <a name="1-prepare-the-query"></a>1。准备查询。
 
-在 Microsoft 365 安全中心，转到高级 **搜寻** 并选择现有查询或创建新查询。 使用新查询时，运行查询以标识错误并了解可能的结果。
+在Microsoft 365安全中心，转到"**高级** 搜寻"并选择现有查询或创建新查询。 使用新查询时，运行查询以标识错误并了解可能的结果。
 
 >[!IMPORTANT]
 >为了防止服务返回太多警报，每个规则都限制为每次运行时仅生成 100 个警报。 创建规则之前，请调整查询以避免提醒正常、日常活动。
@@ -145,7 +145,7 @@ DeviceEvents
 这些操作适用于查询结果 `DeviceId` 列中的设备：
 - **隔离设备**— 使用 Microsoft Defender for Endpoint 应用完全网络隔离，阻止设备连接到任何应用程序或服务。 [了解有关适用于终结点计算机隔离的 Microsoft Defender 有关详细信息](/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#isolate-devices-from-the-network)
 - **收集调查包**- 在 ZIP 文件中收集设备信息。 [了解有关适用于终结点的 Microsoft Defender 调查包的更多信息](/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#collect-investigation-package-from-devices)
-- **运行防病毒扫描**- 在Windows Defender执行完全防病毒扫描
+- **运行防病毒扫描**- 在设备上Windows Defender 防病毒完全扫描
 - **启动调查**— 在 [设备上](m365d-autoir.md) 启动自动调查
 - **限制应用** 执行 — 在设备上设置限制，以仅允许使用 Microsoft 颁发的证书签名的文件运行。 [详细了解 Microsoft Defender for Endpoint 的应用限制](/microsoft-365/security/defender-endpoint/respond-machine-alerts#restrict-app-execution)
 
@@ -153,10 +153,10 @@ DeviceEvents
 选中后，您可以选择对查询结果的、 、 或 列中 `SHA1` 的文件应用隔离 `InitiatingProcessSHA1` `SHA256` `InitiatingProcessSHA256` 文件操作。 此操作将文件从当前位置删除，并隔离副本。
 
 #### <a name="actions-on-users"></a>用户操作
-选中后 **，将针对** 查询结果的 、 或 列中的用户执行"将用户标记为已泄露 `AccountObjectId` `InitiatingProcessAccountObjectId` `RecipientObjectId` "操作。 此操作将 Azure Active Directory 中的用户风险级别设置为"高"，从而触发相应的 [标识保护策略](/azure/active-directory/identity-protection/overview-identity-protection)。
+选中后 **，将针对** 查询结果的 、 或 列中的用户执行"将用户标记为已泄露 `AccountObjectId` `InitiatingProcessAccountObjectId` `RecipientObjectId` "操作。 此操作将用户风险级别在 Azure Active Directory中，从而触发相应的[标识保护策略](/azure/active-directory/identity-protection/overview-identity-protection)。
 
 > [!NOTE]
-> Microsoft 365 Defender 当前不支持自定义检测规则的允许或阻止操作。
+> 自定义检测规则的允许或阻止操作当前在 Microsoft 365 Defender 上不受支持。
 
 ### <a name="5-set-the-rule-scope"></a>5. 设置规则范围。
 设置范围以指定规则涵盖的设备。 作用域影响检查设备的规则，而不影响仅检查邮箱和用户帐户或标识的规则。
@@ -222,7 +222,7 @@ DeviceEvents
 >若要快速查看信息并针对表中的项目采取操作，请使用表格左侧的选择列 [&#10003;] 。
 
 >[!NOTE]
->本文中的某些列在 Microsoft Defender for Endpoint 中可能不可用。 [打开 Microsoft 365 Defender](m365d-enable.md) 以使用更多数据源搜寻威胁。 你可以按照从 Microsoft Defender for Endpoint 迁移高级搜寻查询中的步骤将高级搜寻工作流从 [Microsoft Defender for Endpoint](advanced-hunting-migrate-from-mde.md)移动到 Microsoft 365 Defender。
+>本文中的某些列在 Microsoft Defender for Endpoint 中可能不可用。 [打开 Microsoft 365 Defender](m365d-enable.md)以使用更多数据源搜寻威胁。 你可以按照从 Microsoft Defender for Endpoint 迁移高级搜寻查询中的步骤，将高级搜寻工作流从 Microsoft Defender for Endpoint 移动到 Microsoft 365 [Defender。](advanced-hunting-migrate-from-mde.md)
 
 ## <a name="see-also"></a>另请参阅
 - [自定义检测概述](custom-detections-overview.md)

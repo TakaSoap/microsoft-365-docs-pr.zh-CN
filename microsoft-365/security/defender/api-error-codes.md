@@ -38,7 +38,7 @@ ms.locfileid: "51932877"
 > [!IMPORTANT]
 > 某些信息与预发布的产品有关，在商业发布之前可能有重大修改。 Microsoft 对此处所提供的信息不作任何明示或默示的保证。
 
-任何 Microsoft 365 Defender API 上的操作可能会返回错误代码。 每个错误响应都将包含一条错误消息，有助于解决问题。 表部分中的错误消息列提供了一些示例消息。 实际消息的内容因触发响应的因素而异。 表中用尖括号指示变量内容。
+任何 Defender API 上的操作可能会返回Microsoft 365代码。 每个错误响应都将包含一条错误消息，有助于解决问题。 表部分中的错误消息列提供了一些示例消息。 实际消息的内容因触发响应的因素而异。 表中用尖括号指示变量内容。
 
 ## <a name="error-codes"></a>错误代码
 
@@ -99,7 +99,7 @@ InternalServerError | 内部服务器错误 (500)  | *注意：无错误消息�
 
 ## <a name="related-articles"></a>相关文章
 
-- [Microsoft 365 Defender API 概述](api-overview.md)
+- [Microsoft 365Defender API 概述](api-overview.md)
 - [支持的 Microsoft 365 Defender API](api-supported.md)
 - [访问 Microsoft 365 Defender API](api-access.md)
 - [了解 API 限制和许可](api-terms.md)

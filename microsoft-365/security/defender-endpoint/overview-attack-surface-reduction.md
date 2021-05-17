@@ -44,12 +44,12 @@ ms.locfileid: "51933525"
 
 文章 | 说明
 -|-
-[减少攻击面](./attack-surface-reduction.md) | 使用有助于停止恶意软件的智能规则，减少应用程序中的漏洞（攻击面）。  (需要 Microsoft Defender 防病毒) 。
-[基于硬件的隔离](/windows/security/threat-protection/microsoft-defender-application-guard/md-app-guard-overview) | 在系统启动时和运行时保护和维护系统的完整性。 通过本地和远程证明验证系统完整性。 此外，使用 Microsoft Edge 的容器隔离来帮助防范恶意网站。
+[减少攻击面](./attack-surface-reduction.md) | 使用有助于停止恶意软件的智能规则，减少应用程序中的漏洞（攻击面）。  (需要Microsoft Defender 防病毒) 。
+[基于硬件的隔离](/windows/security/threat-protection/microsoft-defender-application-guard/md-app-guard-overview) | 在系统启动时和运行时保护和维护系统的完整性。 通过本地和远程证明验证系统完整性。 此外，将容器隔离用于Microsoft Edge帮助防范恶意网站。
 [应用程序控制](/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control) | 使用应用程序控制，以便应用程序必须获得信任才能运行。
 [漏洞保护](./exploit-protection.md) | 帮助保护组织使用的操作系统和应用免遭攻击。 Exploit Protection 还适用于第三方防病毒解决方案。
-[网络保护](./network-protection.md) | 将保护扩展到组织设备上网络流量和连接。  (需要 Microsoft Defender 防病毒) 
+[网络保护](./network-protection.md) | 将保护扩展到组织设备上网络流量和连接。  (需要Microsoft Defender 防病毒) 
 [Web 保护功能](./web-protection-overview.md) | 保护设备免受 Web 威胁，并帮助您控制不需要的内容。
-[受控文件夹访问](./controlled-folders.md) | 帮助防止恶意或可疑应用 (包括文件加密勒索软件恶意软件) 需要 Microsoft Defender 防病毒程序更改关键系统 (中的) 
+[受控文件夹访问](./controlled-folders.md) | 帮助防止恶意或可疑应用 (包括文件加密勒索软件恶意软件) 更改关键系统文件夹中的文件（ (要求Microsoft Defender 防病毒) 
 [网络防火墙](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security) | 通过双向网络流量筛选，防止未经授权的流量流入或流出组织设备。
 [关于减少攻击面的常见问题解答](./attack-surface-reduction-faq.md) | 有关攻击面减少规则、许可等的常见问题。

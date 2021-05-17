@@ -47,15 +47,15 @@ ms.locfileid: "51939608"
 - 使用示例：仅需要复制/粘贴短 PowerShell 脚本
 
 ### <a name="do-i-need-a-permission-to-connect"></a>是否需要连接权限？
-对于应用程序注册阶段，你必须在 Azure  AD 租户的 Azure Active Directory (全局) 角色。
+对于应用程序注册阶段，你必须在 **Azure** AD 租户Azure Active Directory (全局) 角色。
 
-### <a name="step-1---create-an-app-in-azure-active-directory"></a>步骤 1 - 在 Azure Active Directory 中创建应用
+### <a name="step-1---create-an-app-in-azure-active-directory"></a>步骤 1 - 在 Azure Active Directory
 
 1. 使用全局管理员 **用户登录到** [Azure。](https://portal.azure.com)
 
-2. 导航到 **Azure Active Directory**  >  **应用注册**  >  **新注册**。 
+2. 导航到 **Azure Active Directory**  >  **应用注册**  >  **""新注册"。** 
 
-   ![Microsoft Azure 的图像和应用程序注册导航](images/atp-azure-new-app2.png)
+   ![应用程序注册Microsoft Azure导航的图像](images/atp-azure-new-app2.png)
 
 3. 在注册表单中，为应用程序选择一个名称，然后单击"注册 **"。**
 

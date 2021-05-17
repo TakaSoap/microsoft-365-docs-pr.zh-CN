@@ -58,7 +58,7 @@ ms.locfileid: "51932997"
 | `AccountDomain` | string | 帐户的域 |
 | `AccountUpn` | string | 帐户 (UPN) 用户主体名称 |
 | `AccountSid` | string | 帐户 (SID) 安全标识符 |
-| `AccountObjectId` | string | Azure Active Directory 中帐户的唯一标识符 |
+| `AccountObjectId` | string | Azure Active Directory |
 | `AccountDisplayName` | string | 通讯簿中显示的帐户用户的名称。 通常是给定或名字、中间启动和姓氏或姓氏的组合。 |
 | `DeviceName` | string | 设备的完全限定 (FQDN) FQDN |
 | `IPAddress` | string | 通信期间分配给设备的 IP 地址 |

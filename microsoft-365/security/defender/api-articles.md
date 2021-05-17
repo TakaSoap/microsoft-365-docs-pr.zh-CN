@@ -33,12 +33,12 @@ ms.locfileid: "51935745"
 
 **适用于：**
 
-- Microsoft 365 Defender API
+- Microsoft 365Defender API
 
 > [!IMPORTANT]
 > 某些信息与预发布的产品有关，在商业发布之前可能有重大修改。 Microsoft 对此处所提供的信息不作任何明示或默示的保证。
 
-以下资源提供有关可用于 Microsoft 365 Defender API 之外的其他 Microsoft 安全解决方案 API 的更多信息。
+以下资源提供有关可用于其他 Microsoft 安全解决方案（除 Microsoft 365 Defender API）的更多信息。
 
 - [Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/apis-intro)
 - [Microsoft Defender for Office 365](/office/office-365-management-api/)

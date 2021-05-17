@@ -39,7 +39,7 @@ ms.locfileid: "51935025"
 本文提供有关如何定义适用于按需扫描以及实时保护和监视的排除项的信息。
 
 >[!IMPORTANT]
->本文中介绍的排除项不适用于 Mac 上的其他 Defender for Endpoint 功能，包括终结点检测和响应 (EDR) 。 使用本文中所述的方法排除的文件仍可以触发 EDR 警报和其他检测。
+>本文中介绍的排除项不适用于 Mac 上的其他 Defender for Endpoint 功能，包括终结点检测和响应 (EDR) 。 使用本文中所述的方法排除的文件仍可以触发EDR检测。
 
 你可以从 Mac 上的 Defender for Endpoint 扫描中排除某些文件、文件夹、进程和进程打开的文件。
 
@@ -56,7 +56,7 @@ ms.locfileid: "51935025"
 ---|---|---
 文件扩展名 | 计算机上任意位置具有扩展名的所有文件 | `.test`
 文件 | 由完整路径标识的特定文件 | `/var/log/test.log`<br/>`/var/log/*.log`<br/>`/var/log/install.?.log`
-Folder | 指定文件夹下的所有 (以递归)  | `/var/log/`<br/>`/var/*/`
+文件夹 | 指定文件夹下的所有 (以递归)  | `/var/log/`<br/>`/var/*/`
 流程 | 特定进程 (的完整路径或文件名指定，) 它打开的所有文件 | `/bin/cat`<br/>`cat`<br/>`c?t`
 
 文件、文件夹和进程排除项支持以下通配符：

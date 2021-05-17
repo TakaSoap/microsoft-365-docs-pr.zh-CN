@@ -1,5 +1,5 @@
 ---
-title: 与 Power BI 的 Microsoft Defender for Endpoint API 连接
+title: Microsoft Defender for Endpoint API 到 Power BI
 ms.reviewer: ''
 description: 在 Microsoft Defender for Endpoint API (BI) 报告。
 keywords: api， 受支持的 api， Power BI， 报告
@@ -23,7 +23,7 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 04/21/2021
 ms.locfileid: "51935037"
 ---
-# <a name="create-custom-reports-using-power-bi"></a>使用 Power BI 创建自定义报告
+# <a name="create-custom-reports-using-power-bi"></a>使用自定义报告Power BI
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -38,11 +38,11 @@ ms.locfileid: "51935037"
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-在此部分中，你将了解在 Defender for Endpoint API 顶部创建 Power BI 报告。
+在此部分中，你将了解在 Defender for Endpoint API Power BI创建一个报告。
 
-第一个示例演示了如何将 Power BI 连接到高级搜寻 API，第二个示例演示了与 OData API（如计算机操作或警报）的连接。
+第一个示例演示如何将Power BI高级搜寻 API，第二个示例演示了与 OData API（如计算机操作或警报）的连接。
 
-## <a name="connect-power-bi-to-advanced-hunting-api"></a>将 Power BI 连接到高级搜寻 API
+## <a name="connect-power-bi-to-advanced-hunting-api"></a>连接 Power BI高级搜寻 API
 
 - 打开 Microsoft Power BI
 
@@ -107,7 +107,7 @@ ms.locfileid: "51935037"
 
 - 输入凭据并等待登录
 
-- 单击 **"连接"**
+- 单击 **连接**
 
     ![集凭据的图像2](images/power-bi-set-credentials-organizational-cont.png)
 
@@ -115,7 +115,7 @@ ms.locfileid: "51935037"
 
 - 你可以复制此表、重命名该表并编辑内部的高级搜寻查询，以获取任何你想获取的数据。
 
-## <a name="connect-power-bi-to-odata-apis"></a>将 Power BI 连接到 OData API
+## <a name="connect-power-bi-to-odata-apis"></a>连接 Power BI OData API
 
 - 与上述示例的唯一区别是编辑器内的查询。 
 
@@ -137,11 +137,11 @@ ms.locfileid: "51935037"
 - 您还可以将 OData 查询用于查询筛选器，请参阅使用 [OData 查询](exposed-apis-odata-samples.md)
 
 
-## <a name="power-bi-dashboard-samples-in-github"></a>GitHub 中的 Power BI 仪表板示例
-有关详细信息，请参阅 [Power BI 报告模板](https://github.com/microsoft/MicrosoftDefenderATP-PowerBI)。
+## <a name="power-bi-dashboard-samples-in-github"></a>Power BI仪表板GitHub
+有关详细信息，请参阅Power BI[模板](https://github.com/microsoft/MicrosoftDefenderATP-PowerBI)。
 
 ## <a name="sample-reports"></a>示例报告
-查看 Microsoft Defender for Endpoint Power BI 报告示例。 有关详细信息，请参阅浏览 [代码示例](https://docs.microsoft.com/samples/browse/?products=mdatp)。
+查看 Microsoft Defender for Endpoint Power BI报告示例。 有关详细信息，请参阅浏览 [代码示例](https://docs.microsoft.com/samples/browse/?products=mdatp)。
 
 
 ## <a name="related-topic"></a>相关主题

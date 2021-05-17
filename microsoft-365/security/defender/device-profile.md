@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 安全门户中的设备配置文件
+title: 安全门户Microsoft 365配置文件
 description: 查看组织中设备的风险和曝光级别。 分析过去和现在的威胁，使用最新更新保护设备。
 keywords: 安全， 恶意软件， Microsoft 365， M365， Microsoft 365 Defender， 安全中心， Microsoft Defender for Endpoint， Microsoft Defender for Office 365， Microsoft Defender for Identity， 设备页面， 设备配置文件， 计算机页面， 计算机配置文件
 ms.prod: m365-security
@@ -25,7 +25,7 @@ ms.locfileid: "51935661"
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
-Microsoft 365 安全门户提供设备配置文件页面，以便快速评估网络上设备的运行状况和状态。
+安全Microsoft 365门户提供了设备配置文件页面，以便你可以快速评估网络上设备的运行状况和状态。
 
 > [!IMPORTANT]
 > 设备配置文件页面可能略有不同，具体取决于设备是注册 Microsoft Defender for Endpoint、Microsoft Defender for Identity 还是同时注册两者。
@@ -75,10 +75,10 @@ Microsoft 365 安全门户提供设备配置文件页面，以便快速评估网
 设备配置文件页上可用的操作包括：
 
 * **管理标记** - 更新已应用于此设备的自定义标记。
-* **隔离设备** - 将设备与组织的网络隔离，同时将其连接到 Microsoft Defender for Endpoint。 你可以选择允许 Outlook、Teams 和 Skype for Business 在设备隔离时运行，以用于通信目的。
+* **隔离设备** - 将设备与组织的网络隔离，同时将其连接到 Microsoft Defender for Endpoint。 你可以选择允许Outlook、Teams和Skype for Business隔离时运行，以用于通信目的。
 * **操作中心** - 查看已提交操作的状态。 仅在已选择其他操作时可用。
 * **限制应用执行** - 阻止未由 Microsoft 签名的应用程序运行。
-* **运行防病毒扫描** - 更新Windows Defender定义并立即运行防病毒扫描。 在快速扫描或完全扫描之间选择。
+* **运行防病毒扫描**- Windows Defender 防病毒定义并立即运行防病毒扫描。 在快速扫描或完全扫描之间选择。
 * **收集调查包** - 收集有关设备的信息。 调查完成后，可以下载它。
 * **启动实时响应会话** - 在设备上加载远程 Shell 进行 [深入安全调查](/microsoft-365/security/defender-endpoint/live-response)。
 * **启动自动调查** - [自动调查和修正威胁](../office-365-security/office-365-air.md)。 尽管你可以手动触发自动调查以从此页运行，但某些警报策略[](../../compliance/alert-policies.md?view=o365-worldwide#default-alert-policies)会自行触发自动调查。
@@ -180,7 +180,7 @@ Microsoft 365 安全门户提供设备配置文件页面，以便快速评估网
 
 ## <a name="related-topics"></a>相关主题
 
-* [Microsoft 365 Defender 概述](microsoft-365-defender.md)
+* [Microsoft 365Defender 概述](microsoft-365-defender.md)
 * [打开 Microsoft 365 Defender](m365d-enable.md)
 * [使用实时响应调查设备上的实体](../defender-endpoint/live-response.md)
-* [Office 365 中的 AIR (自动调查和) 响应](../office-365-security/office-365-air.md)
+* [自动调查和响应 (AIR) 中Office 365](../office-365-security/office-365-air.md)

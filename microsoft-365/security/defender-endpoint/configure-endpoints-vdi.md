@@ -61,19 +61,19 @@ VDI 设备可以在 Defender for Endpoint 门户中显示为：
 > 对于资源配置较低的环境，VDI 启动过程可能会减慢 Defender for Endpoint 传感器载入的速度。 
 
 
-### <a name="for-windows-10-or-windows-server-2019"></a>对于 Windows 10 或 Windows Server 2019
+### <a name="for-windows-10-or-windows-server-2019"></a>For Windows 10 or Windows Server 2019
 
-1.  打开 VDI 配置包 .zip *(WindowsDefenderATPOnboardingPackage.zip)* 从服务载入向导下载的文件。 还可以从 Microsoft Defender 安全中心 [获取程序包](https://securitycenter.windows.com/)：
+1.  打开 VDI 配置包.zip文件 *(WindowsDefenderATPOnboardingPackage.zip)* 从服务载入向导下载的内容。 还可以从以下版本获取[Microsoft Defender 安全中心：](https://securitycenter.windows.com/)
 
-    1.  在导航窗格中，选择"**设置**  >  **""载入"。**
+    1.  在导航窗格中，选择 **"设置**  >  **载入"。**
 
-    1. 选择 Windows 10 作为操作系统。
+    1. 选择Windows 10操作系统。
 
     1.  在 **"部署方法"** 字段中，选择 **"非永久性终结点的 VDI 载入脚本"。**
 
-    1. 单击 **下载程序包** 并保存 .zip 文件。
+    1. 单击 **下载程序包** 并保存.zip文件。
 
-2. 将文件从从 .zip 文件中提取的 WindowsDefenderATPOnboardingPackage 文件夹复制到路径 `golden/master` 下的映像 `C:\WINDOWS\System32\GroupPolicy\Machine\Scripts\Startup` 中。 
+2. 将文件从 windowsDefenderATPOnboardingPackage 文件夹中从 .zip 文件复制到路径 `golden/master` 下的映像 `C:\WINDOWS\System32\GroupPolicy\Machine\Scripts\Startup` 中。 
 
     1. 如果不为每台设备实现单个条目，请复制 WindowsDefenderATPOnboardingScript.cmd。
 
@@ -82,7 +82,7 @@ VDI 设备可以在 Defender for Endpoint 门户中显示为：
     > [!NOTE]
     > 如果看不到该文件夹 `C:\WINDOWS\System32\GroupPolicy\Machine\Scripts\Startup` ，它可能处于隐藏状态。 你需要从文件资源管理器中选择显示隐藏 **文件和** 文件夹选项。
 
-3. 打开本地组策略编辑器窗口并导航到计算机 **配置**  >  **Windows 设置**  >  **脚本**  >  **启动**。
+3. 打开本地组策略编辑器窗口并导航 **到计算机配置**  >  **Windows 设置**  >  **脚本**  >  **启动**。
 
    > [!NOTE]
    > 域组策略还可用于载入非永久性 VDI 设备。
@@ -91,11 +91,11 @@ VDI 设备可以在 Defender for Endpoint 门户中显示为：
 
    - 对于每台设备的单个条目：
    
-     选择 **"PowerShell 脚本**"选项卡，然后单击"添加 (Windows 资源管理器将在你之前复制载入脚本的路径中直接) 。 导航到载入 PowerShell 脚本 `Onboard-NonPersistentMachine.ps1` 。 无需指定其他文件，因为它将自动触发。
+     选择 **"PowerShell 脚本**"选项卡，然后单击"添加 (Windows资源管理器将在你之前复制载入脚本的路径中直接) 。 导航到载入 PowerShell 脚本 `Onboard-NonPersistentMachine.ps1` 。 无需指定其他文件，因为它将自动触发。
    
    - 对于每台设备的多个条目：
    
-     选择" **脚本** "选项卡，然后单击 **"添加** (Windows 资源管理器将在你之前复制载入脚本的路径中直接) 。 导航到载入 Bash 脚本 `WindowsDefenderATPOnboardingScript.cmd` 。
+     选择"**脚本**"选项卡，然后单击 **"添加** (Windows资源管理器将在你之前复制载入脚本的路径中直接) 。 导航到载入 Bash 脚本 `WindowsDefenderATPOnboardingScript.cmd` 。
 
 5. 测试解决方案：
 
@@ -111,11 +111,11 @@ VDI 设备可以在 Defender for Endpoint 门户中显示为：
    
       - 对于每台设备的单个条目： 
     
-        在 Microsoft Defender 安全中心中仅检查一个条目。
+        只需检查一个Microsoft Defender 安全中心。
 
       - 对于每台设备的多个条目： 
        
-        检查 Microsoft Defender 安全中心中的多个条目。
+        检查查询中的多个Microsoft Defender 安全中心。
 
 6. 单击 **导航窗格上的** "设备列表"。
 
@@ -155,9 +155,9 @@ DISM /Unmount-Image /MountDir:"C:\Temp\OfflineServicing" /commit
 ```
 
 有关 DISM 命令和脱机服务的详细信息，请参阅以下文章：
-- [使用 DISM 修改 Windows 映像](https://docs.microsoft.com/windows-hardware/manufacture/desktop/mount-and-modify-a-windows-image-using-dism)
+- [使用 DISM Windows映像](https://docs.microsoft.com/windows-hardware/manufacture/desktop/mount-and-modify-a-windows-image-using-dism)
 - [DISM 映像管理Command-Line选项](https://docs.microsoft.com/windows-hardware/manufacture/desktop/dism-image-management-command-line-options-s14)
-- [减小脱机 Windows 映像中组件存储的大小](https://docs.microsoft.com/windows-hardware/manufacture/desktop/reduce-the-size-of-the-component-store-in-an-offline-windows-image)
+- [减小脱机映像中组件存储Windows大小](https://docs.microsoft.com/windows-hardware/manufacture/desktop/reduce-the-size-of-the-component-store-in-an-offline-windows-image)
 
 如果脱机服务不是非永久性 VDI 环境的可行选项，应执行以下步骤以确保一致性和传感器运行状况：
 
@@ -184,8 +184,8 @@ DISM /Unmount-Image /MountDir:"C:\Temp\OfflineServicing" /commit
 5. 像平常一样重新密封黄金/主图像。
 
 ## <a name="related-topics"></a>相关主题
-- [使用组策略载入 Windows 10 设备](configure-endpoints-gp.md)
-- [使用 Microsoft Endpoint Configuration Manager 载入 Windows 10 设备](configure-endpoints-sccm.md)
+- [使用Windows 10载入设备](configure-endpoints-gp.md)
+- [使用Windows 10载入Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md)
 - [使用移动设备管理工具载入 Windows 10 设备](configure-endpoints-mdm.md)
 - [使用本地脚本载入 Windows 10 设备](configure-endpoints-script.md)
 - [Microsoft Defender 终结点载入问题疑难解答](troubleshoot-onboarding.md)

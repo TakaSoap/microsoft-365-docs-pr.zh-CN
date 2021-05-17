@@ -1,5 +1,5 @@
 ---
-title: DeviceFromIP () Microsoft 365 Defender 高级搜寻中的功能
+title: DeviceFromIP () Defender 高级搜寻Microsoft 365函数
 description: 了解如何使用 DeviceFromIP () 函数获取已分配了特定 IP 地址的设备
 keywords: 高级搜寻， 威胁搜寻， 网络威胁搜寻， Microsoft 365 Defender， microsoft 365， m365， 搜索， 查询， 遥测， 架构参考， kusto， 设备， devicefromIP， 函数， 扩充
 search.product: eADQiWindows 10XVcnh

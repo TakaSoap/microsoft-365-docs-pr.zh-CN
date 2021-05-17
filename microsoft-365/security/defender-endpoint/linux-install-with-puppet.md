@@ -51,9 +51,9 @@ ms.locfileid: "51934569"
 
 ## <a name="download-the-onboarding-package"></a>下载载入程序包
 
-从 Microsoft Defender 安全中心下载载入程序包：
+从以下网站下载载入Microsoft Defender 安全中心：
 
-1. 在 Microsoft Defender 安全中心中，转到"设备>**设置>载入"。**
+1. In Microsoft Defender 安全中心， go to **设置 > Device Management > Onboarding**.
 2. 在"第一个"下拉菜单中，选择 **"Linux Server"** 作为操作系统。 In the second drop-down menu， select **Your preferred Linux configuration management tool** as the deployment method.
 3. 选择 **下载载入程序包**。 将文件另存为WindowsDefenderATPOnboardingPackage.zip。
 

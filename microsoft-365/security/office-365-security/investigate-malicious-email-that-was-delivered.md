@@ -1,5 +1,5 @@
 ---
-title: 调查在 Office 365 中传递的恶意电子邮件，查找并调查恶意电子邮件
+title: 调查电子邮件中传递的恶意Office 365，查找并调查恶意电子邮件
 keywords: TIMailData-Inline， 安全事件， 事件， Microsoft Defender for Endpoint PowerShell， 电子邮件恶意软件， 遭到入侵的用户， 电子邮件钓鱼邮件， 电子邮件恶意软件， 阅读电子邮件头， 阅读邮件头， 打开电子邮件头， 特殊操作
 f1.keywords:
 - NOCSH
@@ -27,7 +27,7 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 04/21/2021
 ms.locfileid: "51933369"
 ---
-# <a name="investigate-malicious-email-that-was-delivered-in-office-365"></a>调查在 Office 365 中传递的恶意电子邮件
+# <a name="investigate-malicious-email-that-was-delivered-in-office-365"></a>调查在邮件中传递的恶意Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -36,20 +36,20 @@ ms.locfileid: "51933369"
 - [Microsoft Defender for Office 365 计划 1 和计划 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-[Microsoft Defender for Office 365](defender-for-office-365.md) 使你能够调查使组织成员面临风险的活动，并采取措施来保护你的组织。 例如，如果你是组织安全团队的一员，你可以查找并调查传递的可疑电子邮件。 为此，可以使用威胁资源管理器 ([或实时检测) 。 ](threat-explorer.md)
+[Microsoft Defender for Office 365](defender-for-office-365.md)使你能够调查使组织成员面临风险的活动，并采取措施来保护你的组织。 例如，如果你是组织安全团队的一员，你可以查找并调查传递的可疑电子邮件。 为此，可以使用威胁资源管理器 ([或实时检测) 。 ](threat-explorer.md)
 
 > [!NOTE]
 > 跳转到此处的修正 [文章](remediate-malicious-email-delivered-office-365.md)。
 
-## <a name="before-you-begin"></a>准备工作
+## <a name="before-you-begin"></a>开始之前
 
 请确保满足以下要求：
 
-- 你的组织具有 [适用于 Office 365](defender-for-office-365.md) 的 Microsoft Defender， [许可证已分配给用户](../../admin/manage/assign-licenses-to-users.md)。
+- 你的组织具有[Microsoft Defender for](defender-for-office-365.md) Office 365[许可证已分配给用户](../../admin/manage/assign-licenses-to-users.md)。
 
 - [为](../../compliance/turn-audit-log-search-on-or-off.md) 组织启用审核日志记录。
 
-- 您的组织为反垃圾邮件、反恶意软件、防钓鱼等定义了策略。 请参阅 [Office 365 中的威胁防护](protect-against-threats.md)。
+- 您的组织为反垃圾邮件、反恶意软件、防钓鱼等定义了策略。 请参阅[防止威胁Office 365。](protect-against-threats.md)
 
 - 你是全局管理员，或者你在安全与合规中心分配了安全管理员或&清除角色。 请参阅 [安全与合规&中的权限](permissions-in-the-security-and-compliance-center.md)。 对于一些操作，还必须分配有新的 Preview 角色。
 
@@ -67,10 +67,10 @@ ms.locfileid: "51933369"
 |
 
 > [!NOTE]
-> *预览* 是一个角色，而不是角色组;Preview 角色必须添加到 Office 365 角色的现有角色组中， () 。 <https://protection.office.com> 转到 **"权限"，** 然后编辑现有角色组或添加分配了 **预览** 角色的新角色组。
-> 全局管理员角色分配有 Microsoft 365 管理中心 () ，安全管理员和安全读者角色在安全&合规中心 (<https://admin.microsoft.com> <https://protection.office.com>) 中分配。 若要详细了解角色和权限，请参阅 [安全与合规&中的权限](permissions-in-the-security-and-compliance-center.md)。
+> *预览* 是一个角色，而不是角色组;必须将 Preview 角色添加到现有角色组中，Office 365 (角色 <https://protection.office.com>) 。 转到 **"权限"，** 然后编辑现有角色组或添加分配了 **预览** 角色的新角色组。
+> 全局管理员角色分配有 Microsoft 365 管理中心 () ，安全管理员和安全读者角色在安全& <https://admin.microsoft.com> 合规中心 <https://protection.office.com> () 。 若要详细了解角色和权限，请参阅 [安全与合规&中的权限](permissions-in-the-security-and-compliance-center.md)。
 
-我们知道预览和下载电子邮件是敏感活动，因此为这些活动启用了审核功能。 管理员在电子邮件上执行这些活动后，将针对相同内容生成审核日志，可在 Office 365 安全与合规中心&查看 <https://protection.office.com> () 。 转到"**搜索**  >  **审核日志搜索"，** 并筛选"搜索"部分中的管理员名称。 筛选出的结果将显示活动 **AdminMailAccess**。 选择一行以查看有关预览或下载的电子邮件的详细信息部分的详细信息。
+我们知道预览和下载电子邮件是敏感活动，因此为这些活动启用了审核功能。 管理员在电子邮件上执行这些活动后，会生成相同的审核日志，可在 Office 365 安全与合规中心 & <https://protection.office.com> () 。 转到"**搜索**  >  **审核日志搜索"，** 并筛选"搜索"部分中的管理员名称。 筛选出的结果将显示活动 **AdminMailAccess**。 选择一行以查看有关预览或下载的电子邮件的详细信息部分的详细信息。
 
 ## <a name="find-suspicious-email-that-was-delivered"></a>查找已送达的可疑电子邮件
 
@@ -79,7 +79,7 @@ ms.locfileid: "51933369"
 > [!NOTE]
 > 资源管理器中的默认搜索当前不包括"已删除"项目。  这适用于所有视图，例如恶意软件或网络钓鱼视图。 若要包含 Zapped 项目，你需要添加 **一个"** 传递"操作集，以包含 **"由 ZAP 删除"。** 如果包括所有选项，你将看到所有传递操作结果，包括"已删除的项目"。
 
-1. **导航到威胁资源管理器**：转到 ，然后 <https://protection.office.com> 使用 Office 365 的工作或学校帐户登录。 这会将你带去安全&中心。
+1. **导航到威胁资源管理器**：转到 ，然后使用工作 <https://protection.office.com> 或学校帐户登录Office 365。 这会将你带去安全&中心。
 
 2. 在左侧导航快速启动中，选择"**威胁管理资源管理器** \> **"。**
 
@@ -93,7 +93,7 @@ ms.locfileid: "51933369"
 
     恶意软件 *视图* 当前为默认视图，并捕获检测到恶意软件威胁的电子邮件。 对于 *网络钓鱼* ，网络钓鱼视图的运行方式相同。
 
-    但是 *，所有电子邮件* 视图都会列出组织接收的每封邮件，无论是否已检测到威胁。 正如您想象的那样，这有很多数据，这就是此视图显示要求应用筛选器的占位符的原因。  (此视图仅适用于 Office 365 P2 客户的 Defender。) 
+    但是 *，所有电子邮件* 视图都会列出组织接收的每封邮件，无论是否已检测到威胁。 正如您想象的那样，这有很多数据，这就是此视图显示要求应用筛选器的占位符的原因。  (此视图仅适用于 P2 Office 365 Defender。) 
 
     *提交* 视图显示管理员或用户提交给 Microsoft 的所有邮件。
 
@@ -122,7 +122,7 @@ ms.locfileid: "51933369"
     - **已** 送达 - 电子邮件已传递到用户的收件箱或文件夹，用户可以直接访问它。
     - **垃圾邮件** (传递到垃圾邮件) – 电子邮件已发送到用户的垃圾邮件文件夹或已删除文件夹，并且用户有权访问其"垃圾邮件"或"已删除"文件夹中的电子邮件。
     - **已阻止** – 隔离、失败或已丢弃的任何电子邮件。  (user.) 
-    - **已** 替换 – 任何恶意附件替换为 .txt 文件的电子邮件，其中指出附件是恶意附件
+    - **已** 替换 – 任何恶意附件替换为.txt附件是恶意附件的文件的电子邮件
 
     **传递位置**：提供传递位置筛选器，以帮助管理员了解可疑恶意邮件的结束位置以及已对邮件采取的操作。 生成的数据可以导出到电子表格。 可能的传递位置包括：
 
@@ -179,7 +179,7 @@ ms.locfileid: "51933369"
 
 - **已阻止** – 隔离、失败或已丢弃的任何电子邮件。  (user.) 
 
-- **已** 替换 – 任何将恶意附件替换为 .txt 文件的电子邮件，其中指出附件是恶意附件。
+- **已** 替换 – 任何恶意附件替换为.txt附件是恶意附件的文件的电子邮件。
 
 传递位置显示运行传递后的策略和检测的结果。 它链接到传递操作。 添加了此字段，可深入了解在发现问题邮件时采取的操作。 以下是传递位置的可能值：
 
@@ -206,10 +206,10 @@ ms.locfileid: "51933369"
 
 ## <a name="related-topics"></a>相关主题
 
-[修正在 Office 365 中传递的恶意电子邮件](remediate-malicious-email-delivered-office-365.md)
+[修正邮件中传递的恶意Office 365](remediate-malicious-email-delivered-office-365.md)
 
 [Microsoft Defender for Office 365](office-365-ti.md)
 
-[在 Office 365 中抵御威胁](protect-against-threats.md)
+[防范威胁Office 365](protect-against-threats.md)
 
-[查看适用于 Office 365 的 Defender 报告](view-reports-for-mdo.md)
+[查看 Defender for Office 365](view-reports-for-mdo.md)

@@ -39,7 +39,7 @@ Defender for Endpoint 最近升级了支持流程，可提供更现代、更高�
 
 环境 | 门户 URL
 :---|:---
-GCC-M（商业） | [https://securitycenter.microsoft.com](https://securitycenter.microsoft.com)
+商业上的 GCC-M | [https://securitycenter.microsoft.com](https://securitycenter.microsoft.com)
 GCC-M | [https://gcc.securitycenter.microsoft.us](https://gcc.securitycenter.microsoft.us)
 GCC-H | [https://securitycenter.microsoft.us](https://securitycenter.microsoft.us)
 DoD | [https://securitycenter.microsoft.us](https://securitycenter.microsoft.us)

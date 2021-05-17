@@ -1,6 +1,6 @@
 ---
 title: Microsoft 安全分数中的新增功能
-description: 介绍 Microsoft 365 安全中心中的 Microsoft 安全分数发生了哪些新更改。
+description: 介绍安全中心内 Microsoft 安全分数Microsoft 365更改。
 keywords: microsoft 安全分数， 安全分数， office 365 安全分数， Microsoft 安全分数， microsoft 365 安全中心
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -34,19 +34,19 @@ ms.locfileid: "51933861"
 
 为了更好地代表 Microsoft 安全分数的安全状态，我们进行了一些更改。 若要了解计划更改，请参阅 Microsoft 安全分数 [中即将提供哪些功能？](microsoft-secure-score-whats-coming.md)
 
-Microsoft 安全分数位于 https://security.microsoft.com/securescore [Microsoft 365 安全中心](overview-security-center.md)。
+Microsoft 安全分数位于安全Microsoft 365 https://security.microsoft.com/securescore [中心。](overview-security-center.md)
     
 ## <a name="february-2021"></a>2021 年 2 月
 
 ### <a name="compatibility-with-graph-api"></a>与 Graph API 的兼容性
 
-通过 Graph API 提供的 Microsoft 安全分数建议的外观和权重与当前在 Microsoft 365 安全中心看到的建议相同。
+通过 Graph API 提供的 Microsoft 安全分数建议的外观和权重将与当前在安全中心内看到的建议Microsoft 365相同。
 
 ## <a name="january-2021"></a>2021 年 1 月
 
-### <a name="added-our-first-security-recommendation-for-microsoft-teams"></a>添加了针对 Microsoft Teams 的第一个安全建议
+### <a name="added-our-first-security-recommendation-for-microsoft-teams"></a>添加了针对安全保护的第一Microsoft Teams
 
-Microsoft Teams 客户将在安全分数中看到"限制匿名用户加入会议"作为新的改进操作。
+Microsoft Teams安全分数中的一项新增改进操作，客户会看到"限制匿名用户加入会议"。
 
 ## <a name="december-2020"></a>2020 年 12 月
 
@@ -67,7 +67,7 @@ Microsoft Teams 客户将在安全分数中看到"限制匿名用户加入会议
 
 ### <a name="added-three-services-related-improvement-actions-for-microsoft-defender-for-endpoint"></a>为 Microsoft Defender for Endpoint 添加了三个与服务相关的改进操作：
 
-- 修复 Windows 服务的未标出服务路径
+- 修复服务未标出Windows路径
 - 将服务可执行路径更改为公用受保护位置
 - 更改服务帐户以避免在 Windows 注册表中缓存密码
 
@@ -75,11 +75,11 @@ Microsoft Teams 客户将在安全分数中看到"限制匿名用户加入会议
 
 ### <a name="remove-improvement-action-related-to-microsoft-defender-for-endpoint"></a>删除与 Microsoft Defender for Endpoint 相关的改进操作
 
-- 将 Microsoft Defender SmartScreen Windows 应用商店应用 Web 内容检查设置为警告
+- 将Microsoft Defender SmartScreen Windows应用商店应用 Web 内容检查设置为警告
 
 ## <a name="august-2020"></a>2020 年 8 月
 
-### <a name="updated-improvement-action-for-azure-active-directory"></a>更新了 Azure Active Directory 的改进操作
+### <a name="updated-improvement-action-for-azure-active-directory"></a>更新了针对 Azure Active Directory
 
 - 启用策略以阻止旧身份验证
 
@@ -91,7 +91,7 @@ Identity Secure Score 将采用新的评分模型。 在此之前，客户将看
 
 ## <a name="updated-improvement-actions"></a>更新后的改进操作
 
-- 添加了 Azure Active Directory 改进操作
+- 添加了Azure Active Directory改进操作
 - 添加了 Microsoft Defender for Identity 改进操作
 - 支持 Microsoft Defender 终结点 [威胁&漏洞管理](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt) 安全建议
     - 现在，TVM 提供的所有已发布安全建议都可用

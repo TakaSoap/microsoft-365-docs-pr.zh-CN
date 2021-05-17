@@ -39,7 +39,7 @@ ms.locfileid: "51932771"
 
 检索 RBAC 设备组的集合。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 用户需要读取权限。
 
 ## <a name="http-request"></a>HTTP 请求

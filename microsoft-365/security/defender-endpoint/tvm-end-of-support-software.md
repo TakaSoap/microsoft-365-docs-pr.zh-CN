@@ -1,7 +1,7 @@
 ---
 title: 规划支持终止的软件和硬件版本
 description: 发现并规划不再受支持且不会接收安全更新的软件和硬件版本。
-keywords: 威胁和漏洞管理， 适用于终结点的 Microsoft Defender 电视安全建议， 网络安全建议， 可操作的安全建议
+keywords: 危险和漏洞管理， 适用于终结点的 Microsoft Defender 电视安全建议， 网络安全建议， 可操作的安全建议
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -25,7 +25,7 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 04/21/2021
 ms.locfileid: "51934125"
 ---
-# <a name="plan-for-end-of-support-software-and-software-versions-with-threat-and-vulnerability-management"></a>使用威胁和漏洞管理规划支持终止的软件和硬件版本
+# <a name="plan-for-end-of-support-software-and-software-versions-with-threat-and-vulnerability-management"></a>规划支持终止的软件版本和 危险和漏洞管理
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -43,14 +43,14 @@ ms.locfileid: "51934125"
 
 ## <a name="find-software-or-software-versions-that-are-no-longer-supported"></a>查找不再受支持的软件或软件版本
 
-1. 从"威胁和漏洞管理"菜单中，导航到"[**安全建议"。**](tvm-security-recommendation.md)
+1. 从"危险和漏洞管理"菜单中，导航到"[**安全建议"。**](tvm-security-recommendation.md)
 2. 转到筛选器 **面板** 并查找标记部分。 选择一个或多个 EOS 标记选项。 然后 **应用**。
 
     ![显示 EOS 软件、EOS 版本和即将推出的 EOS 版本的屏幕截图标记。](images/tvm-eos-tag.png)
 
 3. 你将看到与已结束支持的软件、停止提供支持的软件版本或即将停止提供支持的版本相关的建议列表。 这些标记还显示在软件清单 [页面中](tvm-software-inventory.md) 。
 
-    ![带 EOS 标记的建议。](images/tvm-eos-tags-column.png)
+    ![推荐 EOS 标记。](images/tvm-eos-tags-column.png)
 
 ## <a name="list-of-versions-and-dates"></a>版本和日期列表
 

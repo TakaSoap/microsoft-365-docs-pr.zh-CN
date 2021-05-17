@@ -1,7 +1,7 @@
 ---
-title: 我的组织中存在漏洞 - 威胁和漏洞管理
-description: 列出 CVE 的常见 () 在组织中运行的软件中发现漏洞的 ID。 由 Microsoft Defender 终结点威胁和漏洞管理功能发现。
-keywords: Microsoft Defender for Endpoint threat & vulnerability management， threat and vulnerability management， Microsoft Defender for Endpoint tvm vulnerabilites page， finding vulnerabilites through tvm， tvm vulnerability list， vulnerability details in tvm
+title: 我的组织中漏洞 - 危险和漏洞管理
+description: 列出 CVE 的常见 () 在组织中运行的软件中发现漏洞的 ID。 由 Microsoft Defender for Endpoint 危险和漏洞管理发现。
+keywords: Microsoft Defender for Endpoint threat & 漏洞管理， 危险和漏洞管理， Microsoft Defender for Endpoint tvm vulnerabilites page， finding vulnerabilites through tvm， tvm vulnerability list， vulnerability details in tvm
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -25,7 +25,7 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 04/21/2021
 ms.locfileid: "51933069"
 ---
-# <a name="vulnerabilities-in-my-organization---threat-and-vulnerability-management"></a>我的组织中存在漏洞 - 威胁和漏洞管理
+# <a name="vulnerabilities-in-my-organization---threat-and-vulnerability-management"></a>我的组织中漏洞 - 危险和漏洞管理
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -36,12 +36,12 @@ ms.locfileid: "51933069"
 
 >想要体验 Microsoft Defender for Endpoint？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
 
-威胁和漏洞管理使用 Defender 终结点保护中的相同信号扫描和检测漏洞。
+威胁和漏洞管理使用 Defender for Endpoint 终结点保护中的相同信号扫描和检测漏洞。
 
 " **漏洞** "页通过列出 CVE 中"常见漏洞和曝光" (CVE) 漏洞。 还可以查看严重性、常见漏洞评分系统 (CVSS) 分级、组织中的普遍程度、相应的漏洞、威胁见解等。
 
 >[!NOTE]
->如果没有为漏洞分配正式的 CVE-ID，则由威胁和漏洞管理分配漏洞名称。
+>如果没有为漏洞分配正式的 CVE-ID，则此漏洞名称由 危险和漏洞管理。
 
 >[!TIP]
 >若要获取有关新漏洞事件的电子邮件，请参阅在 Microsoft [Defender for Endpoint](configure-vulnerability-email-notifications.md)中配置漏洞电子邮件通知
@@ -50,12 +50,12 @@ ms.locfileid: "51933069"
 
 以几种不同方式访问"漏洞"页面：
 
-- 从 Microsoft Defender 安全中心的威胁和漏洞管理导航菜单中选择["漏洞"](portal-overview.md)
+- 从 **导航菜单中** 的危险和漏洞管理选择"漏洞 ["Microsoft Defender 安全中心](portal-overview.md)
 - 全局搜索
 
 ### <a name="navigation-menu"></a>导航菜单
 
-转到威胁和漏洞管理导航菜单，然后选择 **"漏洞** "以打开 CVEs 列表。
+转到"危险和漏洞管理菜单并选择 **"漏洞**"以打开 CVEs 列表。
 
 ### <a name="vulnerabilities-in-global-search"></a>全局搜索中的漏洞
 
@@ -97,7 +97,7 @@ ms.locfileid: "51933069"
 
 ### <a name="software-that-isnt-supported"></a>不支持的软件
 
-当前不受威胁和漏洞管理&的 CVES 仍位于"漏洞"页面中。 由于软件不受支持，因此只有有限的数据可用。
+当前不受威胁威胁支持的软件的 & 漏洞管理"漏洞"页中仍然存在。 由于软件不受支持，因此只有有限的数据可用。
 
 使用不受支持的软件的 CES 不会提供公开的设备信息。 通过选择"公开设备"部分中的"不可用"选项，按不受支持的软件进行筛选。
 
@@ -107,7 +107,7 @@ ms.locfileid: "51933069"
 
 ### <a name="top-vulnerable-software-in-the-dashboard"></a>仪表板中最易受攻击的软件
 
-1. 转到威胁 [和漏洞管理仪表板](tvm-dashboard-insights.md) ，然后向下滚动到" **最易受攻击的软件"小组件** 。 你将看到每个软件中发现漏洞的数量，以及威胁信息和设备曝光的一段时间的高级别视图。
+1. Go to the [危险和漏洞管理 dashboard](tvm-dashboard-insights.md) and scroll down to the Top **vulnerable software** widget. 你将看到每个软件中发现漏洞的数量，以及威胁信息和设备曝光的一段时间的高级别视图。
 
     ![具有四列的主要易受攻击的软件卡：软件、漏洞、威胁、公开的设备。](images/tvm-top-vulnerable-software500.png)
 
@@ -115,13 +115,13 @@ ms.locfileid: "51933069"
 3. 选择" **发现的漏洞"** 选项卡。
 4. 选择要调查的漏洞，了解有关漏洞详细信息的详细信息
 
-    ![Windows Server 2019 向下钻取概述。](images/windows-server-drilldown.png)
+    ![WindowsServer 2019 向下钻取概述。](images/windows-server-drilldown.png)
 
 ### <a name="discover-vulnerabilities-in-the-device-page"></a>发现设备页面中的漏洞
 
 在设备页面中查看相关漏洞信息。
 
-1. 转到 Microsoft Defender 安全中心导航菜单栏，然后选择设备图标。 将 **打开"设备"** 列表页。
+1. 转到导航Microsoft Defender 安全中心栏，然后选择设备图标。 将 **打开"设备"** 列表页。
 2. 在 **"设备"列表** 页中，选择要调查的设备名称。
 
     ![包含要调查的选定设备的设备列表。](images/tvm_machinetoinvestigate.png)
@@ -137,7 +137,7 @@ ms.locfileid: "51933069"
 
 与软件证据类似，我们现在显示了在设备上应用的检测逻辑，以表明该设备易受攻击。 新部分称为"检测逻辑" (发现的设备页中发现的任何漏洞) 显示检测逻辑和来源。
 
-相关方案中也显示了"OS 功能"类别。 只有在启用了特定操作系统组件时，CVE 才会影响运行易受攻击的操作系统的设备。 假设 Windows Server 2019 的 DNS 组件存在漏洞。 借助此新功能，我们将仅将此 CVE 附加到操作系统中启用了 DNS 功能的 Windows Server 2019 设备。
+相关方案中也显示了"OS 功能"类别。 只有在启用了特定操作系统组件时，CVE 才会影响运行易受攻击的操作系统的设备。 假设 Windows Server 2019 在其 DNS 组件中具有漏洞。 借助此新功能，我们将仅将此 CVE 附加到 Windows Server 2019 设备，这些设备的 OS 中启用了 DNS 功能。
 
 ![检测逻辑示例，列出在设备和 KB 上检测到的软件。](images/tvm-cve-detection-logic.png)
 
@@ -148,7 +148,7 @@ ms.locfileid: "51933069"
 1. 打开"漏洞"页上的 CVE。
 2. 选择 **"报告不准确"，** 将打开一个飞出窗格。
 3. 从下拉菜单中选择不准确类别，并填写您的电子邮件地址和不准确的详细信息。
-4. 选择“**提交**”。 将立即将反馈发送给威胁和漏洞管理专家。
+4. 选择“**提交**”。 你的反馈将立即发送给危险和漏洞管理专家。
 
 ## <a name="related-articles"></a>相关文章
 

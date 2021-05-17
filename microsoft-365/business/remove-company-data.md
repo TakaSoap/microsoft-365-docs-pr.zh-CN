@@ -23,7 +23,7 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 80bdae57-f8bc-4e40-a58c-956007117ecb
-description: 了解如何使用 Microsoft 365 商业版删除用户设备或 Windows 电脑中的公司数据。
+description: 了解如何使用 Microsoft 365 企业应用来删除用户设备或电脑Windows数据。
 ms.openlocfilehash: 2e1af384d83937d65fd5c8ae655d228df48422cd
 ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
@@ -33,11 +33,11 @@ ms.locfileid: "51579986"
 ---
 # <a name="remove-company-data-from-devices"></a>从设备中删除公司数据
 
-本文适用于 Microsoft 365 商业高级版。
+本文适用于Microsoft 365 商业高级版。
 
 ## <a name="remove-company-data"></a>删除公司数据
 
-可以使用 Microsoft 365 商业版删除用户具有的设备或受 Microsoft [](app-protection-settings-for-android-and-ios.md) 365 保护的[Windows 电脑](protection-settings-for-windows-10-devices.md)的公司数据。 **从设备中删除公司数据后，该数据不可恢复** 。 
+可以使用适用于Microsoft 365来删除用户具有的设备或受 Windows 保护的 PC 上的[](app-protection-settings-for-android-and-ios.md)公司Microsoft 365。 [](protection-settings-for-windows-10-devices.md) **从设备中删除公司数据后，该数据不可恢复** 。 
   
 1. 转到位于 <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> 的管理中心。
     

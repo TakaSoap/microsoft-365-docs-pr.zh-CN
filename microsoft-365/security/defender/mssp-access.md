@@ -1,7 +1,7 @@
 ---
 title: 提供托管安全服务提供程序 (MSSP) 访问
-description: 了解从 Microsoft Defender 安全中心到 Microsoft 365 安全中心的更改
-keywords: Microsoft 365 安全中心、适用于 Office 365 的 Microsoft Defender、适用于终结点的 Microsoft Defender、MDO、MDE、单窗格的门户、聚合门户、安全门户、Defender 安全门户入门
+description: 了解从安全中心Microsoft Defender 安全中心安全Microsoft 365更改
+keywords: 入门：Microsoft 365安全中心、适用于 Office 365 的 Microsoft Defender、适用于终结点的 Microsoft Defender、MDO、MDE、单窗格的门户、聚合门户、安全门户、Defender 安全门户
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
 localization_priority: Normal
@@ -38,26 +38,26 @@ ms.locfileid: "51935349"
 
 若要实现多租户委派访问解决方案，请执行以下步骤：
 
-1. 在[](/windows/security/threat-protection/microsoft-defender-atp/rbac) Microsoft 365 安全中心的 Defender for Endpoint 中启用基于角色的访问控制，并与 Azure Active Directory (Azure AD) 连接。
+1. 在[安全中心的](/windows/security/threat-protection/microsoft-defender-atp/rbac)Defender for Endpoint 中启用基于角色Microsoft 365，并与 Azure AD Azure Active Directory (组) 连接。
 
 2. 配置 [用于访问请求](/azure/active-directory/governance/identity-governance-overview) 和预配的治理访问包。
 
 3. 在 [Microsoft Myaccess 中管理访问请求和审核](/azure/active-directory/governance/entitlement-management-request-approve)。
 
-## <a name="enable-role-based-access-controls-in-microsoft-defender-for-endpoint-in-microsoft-365-security-center"></a>在 Microsoft 365 安全中心的 Microsoft Defender for Endpoint 中启用基于角色的访问控制
+## <a name="enable-role-based-access-controls-in-microsoft-defender-for-endpoint-in-microsoft-365-security-center"></a>在安全中心的 Microsoft Defender for Endpoint 中Microsoft 365基于角色的访问控制
 
 1. **为客户 AAD 中的 MSSP 资源创建访问组：组**
 
-    这些组将链接到你在 Microsoft 365 安全中心的 Defender for Endpoint 中创建的角色。 为此，在客户 AD 租户中，创建三个组。 在我们的示例方法中，我们将创建以下组：
+    这些组将链接到你在安全中心的 Defender for Endpoint Microsoft 365角色。 为此，在客户 AD 租户中，创建三个组。 在我们的示例方法中，我们将创建以下组：
 
     - 第 1 层分析员 
     - 第 2 层分析员 
     - MSSP 分析员审批者  
 
 
-2. 在 Microsoft 365 安全中心角色和组的客户 Defender for Endpoint 中为相应的访问级别创建适用于终结点的 Defender 角色。
+2. 在安全中心角色和组的 Customer Defender for Endpoint 中为Microsoft 365 Defender 终结点角色创建 Defender。
 
-    若要在客户 Microsoft 365 安全中心中启用 RBAC，请通过具有全局管理员或安全管理员权限的用户帐户访问权限 > 终结点角色 **& 组 > 角色** 。
+    若要在客户安全中心Microsoft 365 RBAC，请通过具有全局管理员>安全管理员权限的用户帐户&组>角色"访问"权限">终结点角色"。
 
     ![MSSP 访问的图像](../../media/mssp-access.png)
 
@@ -130,9 +130,9 @@ ms.locfileid: "51935349"
     示例： `https://myaccess.microsoft.com/@M365x440XXX.onmicrosoft.com#/`   
 2. 在 UI 的" **审批"部分批准** 或拒绝请求。
 
-     此时，已预配分析师访问权限，并且每个分析师应能够访问客户的 Microsoft 365 安全中心： 
+     此时，已预配分析师访问权限，并且每个分析师都应能够访问客户的安全Microsoft 365中心： 
 
     `https://security.microsoft.com/?tid=<CustomerTenantId>` 具有分配的权限和角色。
 
 > [!IMPORTANT]
-> Microsoft 365 安全中心内 Microsoft Defender 终结点的委派访问权限当前允许每个浏览器窗口访问单个租户。
+> 安全中心内 Microsoft Defender for Endpoint Microsoft 365当前允许每个浏览器窗口访问单个租户。

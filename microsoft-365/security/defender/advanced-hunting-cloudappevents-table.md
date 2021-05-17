@@ -1,7 +1,7 @@
 ---
 title: 高级搜寻架构中的 CloudAppEvents 表
 description: 了解高级搜寻架构的 CloudAppEvents 表中的云应用和服务中的事件
-keywords: 高级搜寻， 威胁搜寻， 网络威胁搜寻， Microsoft 365 Defender， microsoft 365， m365， 搜索， 查询， 遥测， 架构参考， kusto， 表格， 列， 数据类型， 说明， CloudAppEvents， Cloud App Security， MCAS
+keywords: 高级搜寻， 威胁搜寻， 网络威胁搜寻， Microsoft 365 Defender， microsoft 365， m365， 搜索， 查询， 遥测， 架构参考， kusto， 表格， 列， 数据类型， 说明， CloudAppEvents， 云应用安全， MCAS
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -37,10 +37,10 @@ ms.locfileid: "51935865"
 
 
 
-高级 `CloudAppEvents` 搜寻 [架构中的](advanced-hunting-overview.md) 表包含有关 Microsoft Cloud App Security 涵盖的各种云应用和服务中的活动的信息。 有关完整列表，跳转到 [涵盖的应用和服务](#apps-and-services-covered)。 使用此参考来构建从此表返回信息的查询。 
+高级 `CloudAppEvents` 搜寻[架构中的](advanced-hunting-overview.md)表包含有关云应用和服务中活动的信息，Microsoft Cloud App Security。 有关完整列表，跳转到 [涵盖的应用和服务](#apps-and-services-covered)。 使用此参考来构建从此表返回信息的查询。 
 
 >[!IMPORTANT]
->此表包含以前在表中可用的 `AppFileEvents` 信息。 从 2021 年 3 月 7 开始，在此日期及之后，在云服务中搜寻与文件相关的活动的用户应改为使用 `CloudAppEvents` 表。 <br><br>请确保搜索仍使用表的查询和自定义检测规则，并 `AppFileEvents` 编辑它们以使用 `CloudAppEvents` 该表。 有关转换受影响查询的更多指南，可在 [使用 Microsoft 365 Defender](https://techcommunity.microsoft.com/t5/microsoft-365-defender/hunt-across-cloud-app-activities-with-microsoft-365-defender/ba-p/1893857)高级搜寻的云应用活动中找到。
+>此表包含以前在表中可用的 `AppFileEvents` 信息。 从 2021 年 3 月 7 开始，在此日期及之后，在云服务中搜寻与文件相关的活动的用户应改为使用 `CloudAppEvents` 表。 <br><br>请确保搜索仍使用表的查询和自定义检测规则，并 `AppFileEvents` 编辑它们以使用 `CloudAppEvents` 该表。 有关转换受影响查询的更多指南，可在使用 Defender 高级搜寻的跨云应用[Microsoft 365中找到](https://techcommunity.microsoft.com/t5/microsoft-365-defender/hunt-across-cloud-app-activities-with-microsoft-365-defender/ba-p/1893857)。
 
 
 有关高级搜寻架构中其他表的信息，请[参阅高级搜寻参考](advanced-hunting-schema-tables.md)。
@@ -51,7 +51,7 @@ ms.locfileid: "51935865"
 | `ActionType` | string | 触发事件的活动类型 |
 | `Application` | string | 执行录制的操作的应用程序 |
 | `ApplicationId` | string | 应用程序的唯一标识符 |
-| `AccountObjectId` | string | Azure Active Directory 中帐户的唯一标识符 |
+| `AccountObjectId` | string | Azure Active Directory |
 | `AccountDisplayName` | string | 通讯簿中显示的帐户用户的名称。 通常是给定或名字、中间启动和姓氏或姓氏的组合。 |
 | `IsAdminOperation` | string | 指示活动是否由管理员执行 |
 | `DeviceType` | string | 基于用途和功能的设备类型，例如"网络设备"、"工作站"、"服务器"、"移动"、"游戏控制台"或"打印机" | 

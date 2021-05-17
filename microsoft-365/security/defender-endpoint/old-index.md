@@ -1,5 +1,5 @@
 ---
-title: 'Windows 10 (威胁防护) '
+title: '威胁防护 (Windows 10) '
 description: Microsoft Defender for Endpoint 是一个统一的平台，可用于预防性保护、入侵后检测、自动调查和响应。
 keywords: 威胁防护， 适用于终结点的 Microsoft Defender， 攻击面减少， 下一代保护， 终结点检测和响应， 自动调查和响应， Microsoft 威胁专家， Microsoft 设备安全分数， 高级搜寻， 网络威胁搜寻， Web 威胁防护
 search.product: eADQiWindows 10XVcnh
@@ -30,7 +30,7 @@ ms.locfileid: "51934929"
 <center><h2>Microsoft Defender for Endpoint</center></h2>
 <table>
 <tr>
-<td><a href="#tvm"><center><img src="images/TVM_icon.png" alt="threat and vulnerability icon"> <br><b>威胁&漏洞管理</b></center></a></td>
+<td><a href="#tvm"><center><img src="images/TVM_icon.png" alt="threat and vulnerability icon"> <br><b>威胁& 漏洞管理</b></center></a></td>
 <td><a href="#asr"><center><img src="images/asr-icon.png" alt="attack surface reduction icon"> <br><b>攻击面减少</b></center></a></td>
 <td><center><a href="#ngp"><img src="images/ngp-icon.png" alt="next generation protection icon"><br> <b>下一代保护</b></a></center></td>
 <td><center><a href="#edr"><img src="images/edr-icon.png" alt="endpoint detection and response icon"><br> <b>终结点检测和响应</b></a></center></td>
@@ -42,7 +42,7 @@ ms.locfileid: "51934929"
 <a href="#apis"><center><b>集中配置和管理、API</a></b></center></td>
 </tr>
 <tr>
-<td colspan="7"><a href="#mtp"><center><b>Microsoft 365 Defender</a></center></b></td>
+<td colspan="7"><a href="#mtp"><center><b>Microsoft 365Defender</a></center></b></td>
 </tr>
 </table>
 <br>
@@ -55,7 +55,7 @@ ms.locfileid: "51934929"
 **[威胁和漏洞管理](next-gen-threat-and-vuln-mgt.md)**<br>
 此内置功能使用基于游戏变化风险的方法发现、确定终结点漏洞和错误配置的优先顺序并修正。
 
-- [威胁&漏洞管理概述](next-gen-threat-and-vuln-mgt.md)
+- [威胁& 漏洞管理概述](next-gen-threat-and-vuln-mgt.md)
 - [入门](tvm-prerequisites.md)
 - [访问安全状态](tvm-dashboard-insights.md)
 - [改善安全状况并降低风险](tvm-security-recommendation.md)
@@ -102,21 +102,21 @@ ms.locfileid: "51934929"
 
 <a name="ai"></a>
 
-**[自动调查和修复](automated-investigations.md)**<br>
+**[自动调查和修正](automated-investigations.md)**<br>
 除了快速响应高级攻击外，Microsoft Defender for Endpoint 还提供自动调查和修正功能，可帮助以分钟数为比例减少警报量。
 
-- [自动调查和修复](automated-investigations.md)
+- [自动调查和修正](automated-investigations.md)
 - [查看自动化调查的详细信息和结果](auto-investigation-action-center.md)
 - [查看和批准修正操作](manage-auto-investigation.md)
 
 <a name="mte"></a>
 
 **[Microsoft 威胁专家](microsoft-threat-experts.md)**<br>
-Microsoft Defender for Endpoint 的新托管威胁搜寻服务提供主动搜寻、优先顺序和其他上下文和见解。 Microsoft 威胁专家进一步授权安全操作 (SOC) 快速准确地识别和响应威胁。
+Microsoft Defender for Endpoint 的新托管威胁搜寻服务提供主动搜寻、优先顺序和其他上下文和见解。 Microsoft 威胁专家使安全运营中心 (SOC) 快速准确地识别和响应威胁。
 
 - [目标攻击通知](microsoft-threat-experts.md)
 - [专家按需](microsoft-threat-experts.md)
-- [配置 Microsoft 365 Defender 托管搜寻服务](configure-microsoft-threat-experts.md)
+- [配置你的 Microsoft 365 Defender 托管搜寻服务](configure-microsoft-threat-experts.md)
 
 <a name="apis"></a>
 
@@ -136,8 +136,8 @@ Microsoft Defender for Endpoint 的新托管威胁搜寻服务提供主动搜寻
 - Microsoft Defender for Identity
 - Azure Defender
 - Skype for Business
-- Microsoft 云应用安全
+- Microsoft Cloud App Security
 
 <a name="mtp"></a>
-**[Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/defender/microsoft-threat-protection)**<br>
+**[Microsoft 365Defender](https://docs.microsoft.com/microsoft-365/security/defender/microsoft-threat-protection)**<br>
  借助 Microsoft 365 Defender，Microsoft Defender for Endpoint 和各种 Microsoft 安全解决方案形成统一的攻破前和入侵后企业防御套件，可跨终结点、标识、电子邮件和应用程序进行本机集成，以检测、阻止、调查和自动响应复杂的攻击。

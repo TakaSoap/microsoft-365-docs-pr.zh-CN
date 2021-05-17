@@ -58,7 +58,7 @@ ms.locfileid: "51932747"
 
 2. 在 Customer Defender for Endpoint 中为相应的访问级别创建适用于终结点的 Defender 角色。
 
-    若要在客户 Microsoft Defender 安全中心中启用RBAC，请从具有全局管理员或安全管理员权限的用户帐户访问"设置>权限>角色"和"启用角色"。
+    若要在客户策略中启用 RBAC Microsoft Defender 安全中心，请设置 >全局管理员或安全管理员权限的用户帐户访问 > **Permissions > Roles** 和"Turn on roles"。
 
     ![MSSP 访问的图像](images/mssp-access.png)
 
@@ -132,7 +132,7 @@ ms.locfileid: "51932747"
     示例： `https://myaccess.microsoft.com/@M365x440XXX.onmicrosoft.com#/`   
 2. 在 UI 的" **审批"部分批准** 或拒绝请求。
 
-    此时，已预配分析师访问权限，并且每个分析师应能够访问客户的 Microsoft Defender 安全中心： `https://securitycenter.Microsoft.com/?tid=<CustomerTenantId>`
+    此时，已预配分析师访问权限，并且每个分析师应能够访问客户的Microsoft Defender 安全中心：`https://securitycenter.Microsoft.com/?tid=<CustomerTenantId>`
 
 ## <a name="related-topics"></a>相关主题
 - [访问 MSSP 客户门户](access-mssp-portal.md)

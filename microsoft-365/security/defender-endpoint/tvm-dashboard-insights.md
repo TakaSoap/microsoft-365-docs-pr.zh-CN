@@ -1,7 +1,7 @@
 ---
-title: 仪表板见解 - 威胁和漏洞管理
-description: 威胁和漏洞管理仪表板可帮助 SecOps 和安全管理员应对网络安全威胁，并构建其组织的安全恢复能力。
-keywords: Microsoft Defender for Endpoint-tvm， Microsoft Defender for Endpoint-tvm dashboard， 威胁 & 漏洞管理， 威胁和漏洞管理， 基于风险的威胁 & 漏洞管理， 安全配置， Microsoft 设备安全分数， 曝光分数
+title: 仪表板见解 - 危险和漏洞管理
+description: 仪表板危险和漏洞管理 SecOps 和安全管理员解决网络安全威胁，并构建其组织的安全恢复能力。
+keywords: Microsoft Defender for Endpoint-tvm， Microsoft Defender for Endpoint-tvm dashboard， 威胁 & 漏洞管理， 危险和漏洞管理， 基于风险的威胁 & 漏洞管理， 安全配置， 适用于设备的 Microsoft 安全分数， 曝光分数
 search.appverid: met150
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -25,7 +25,7 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 04/21/2021
 ms.locfileid: "51934137"
 ---
-# <a name="dashboard-insights---threat-and-vulnerability-management"></a>仪表板见解 - 威胁和漏洞管理
+# <a name="dashboard-insights---threat-and-vulnerability-management"></a>仪表板见解 - 危险和漏洞管理
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -37,24 +37,24 @@ ms.locfileid: "51934137"
 
 > 想要体验适用于终结点的 Defender？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
 
-威胁和漏洞管理是 Defender for Endpoint 的一个组件，可为安全管理员和安全运营团队提供独特的价值，包括：
+威胁漏洞管理是 Defender for Endpoint 的一个组件，可为安全管理员和安全运营团队提供独特的价值，包括：
 
 
 - 与终结点漏洞相关的实时终结点检测和响应（EDR）见解
 - 事件调查期间有价值的设备漏洞上下文
-- 通过 Microsoft Intune 和 Microsoft Endpoint Configuration Manager 的内置修正过程  
+- 内置修正过程通过Microsoft Intune Microsoft Endpoint Configuration Manager  
   
-可以使用 [Microsoft Defender](https://securitycenter.windows.com/) 安全中心的威胁和漏洞管理功能：
+可以使用 中的 危险和漏洞管理[功能](https://securitycenter.windows.com/)Microsoft Defender 安全中心：
 
 - 查看设备的曝光分数和 Microsoft 安全分数，以及顶级安全建议、软件漏洞、修正活动和公开的设备
-- 将 EDR 见解与终结点漏洞关联并处理它们
+- 将EDR与终结点漏洞关联并处理它们
 - 选择修正选项进行会审并跟踪修正任务
 - 选择例外选项并跟踪活动异常
 
 > [!NOTE]
-> 对于反映组织的威胁和漏洞管理曝光分数和 Microsoft 设备安全分数的数据，未考虑过去 30 天内未处于活动状态的设备。
+> 过去 30 天内未处于活动状态的设备不会在反映组织的 危险和漏洞管理 曝光分数和 Microsoft 设备安全分数的数据中考虑。
 
-观看此视频，快速概览威胁和漏洞管理仪表板中是什么内容。
+观看此视频，快速概览仪表板危险和漏洞管理内容。
 
 >[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4r1nv]
 
@@ -62,9 +62,9 @@ ms.locfileid: "51934137"
 
  ![适用于终结点的 Microsoft Defender 门户](images/tvm-dashboard-devices.png)
 
-区域 | 说明
+领域 | 说明
 :---|:---
-**所选设备组 (#/#)**   | 按设备组筛选你想要在仪表板和卡片中查看的威胁和漏洞管理数据。 在筛选器中选择的内容将应用于整个威胁和漏洞管理页面。
+**所选设备组 (#/#)**   | 按危险和漏洞管理组筛选想要在仪表板和卡片中查看的数据。 在筛选器中选择的内容将应用于整个危险和漏洞管理页。
 [**风险评分**](tvm-exposure-score.md)   | 查看组织设备面临的威胁和漏洞的当前状态。 有几个因素会影响组织的曝光评分：在设备中发现的缺点、设备被泄露的可能性、设备对组织的价值，以及设备发现的相关警报。 目标是降低组织的曝光分数，以更安全。 若要降低分数，需要修正安全建议中列出的相关安全配置问题。
 [**设备的 Microsoft 安全功能分数**](tvm-microsoft-secure-score-devices.md) | 查看组织的操作系统、应用程序、网络、帐户和安全控制的安全状态。 目标是修正相关的安全配置问题，以增加设备的分数。 选择条形将你访问" **安全建议"** 页。
 **设备曝光分布** | 查看基于其曝光级别公开的设备数。 选择圆环图中的某个部分，以转到"设备"列表页并查看受影响的设备名称、曝光级别、风险级别和其他详细信息，如域、操作系统平台、其运行状况、上次查看时间及其标记。

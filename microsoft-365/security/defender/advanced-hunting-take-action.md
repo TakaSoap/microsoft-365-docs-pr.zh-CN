@@ -1,5 +1,5 @@
 ---
-title: 在 Microsoft 365 Defender 中对高级搜寻查询结果采取措施
+title: 对 defender 中的高级搜寻查询结果Microsoft 365操作
 description: 在高级搜寻查询结果中快速解决威胁和受影响的资产
 keywords: 高级搜寻， 威胁搜寻， 网络威胁搜寻， Microsoft 365 Defender， microsoft 365， m365， 搜索， 查询， 遥测， 采取行动
 search.product: eADQiWindows 10XVcnh
@@ -46,7 +46,7 @@ ms.locfileid: "51952604"
 ## <a name="required-permissions"></a>所需权限
 若要能够通过高级搜寻采取行动，你需要具有在设备上提交修正操作的权限的 Microsoft Defender for Endpoint [角色](/windows/security/threat-protection/microsoft-defender-atp/user-roles#permission-options)。 如果无法采取措施，请与全局管理员联系，获取以下权限：
 
-*威胁和>管理的活动修正操作 - 修正处理*
+*威胁和>活动漏洞管理 - 修正处理*
 
 ## <a name="take-various-actions-on-devices"></a>在设备上执行各种操作
 可以在查询结果中的列标识的 `DeviceId` 设备上执行以下操作：
@@ -72,7 +72,7 @@ ms.locfileid: "51952604"
 >[!NOTE]
 >若要查找并隔离文件，查询结果还应包括作为 `DeviceId` 设备标识符的值。  
 
-## <a name="take-action"></a>采取操作
+## <a name="take-action"></a>采取行动
 若要执行任何描述的操作，请在查询结果中选择一个或多个记录，然后选择"**采取操作"。** 向导将指导你完成选择并提交首选操作的过程。
 
 ![包含用于检查记录的面板的选定记录的图像](../../media/mtp-ah/ah-take-actions.png)
@@ -81,7 +81,7 @@ ms.locfileid: "51952604"
 每个操作都单独记录在操作中心的"[](m365d-action-center.md)操作中心历史记录  >  " (security.microsoft.com/action-center/history) 。 [](https://security.microsoft.com/action-center/history) 转到操作中心以检查每个操作的状态。
  
 >[!NOTE]
->本文中的某些表在 Microsoft Defender for Endpoint 中可能不可用。 [打开 Microsoft 365 Defender](m365d-enable.md) 以使用更多数据源搜寻威胁。 你可以按照从 Microsoft Defender for Endpoint 迁移高级搜寻查询中的步骤将高级搜寻工作流从 [Microsoft Defender for Endpoint](advanced-hunting-migrate-from-mde.md)移动到 Microsoft 365 Defender。
+>本文中的某些表在 Microsoft Defender for Endpoint 中可能不可用。 [打开 Microsoft 365 Defender](m365d-enable.md)以使用更多数据源搜寻威胁。 你可以按照从 Microsoft Defender for Endpoint 迁移高级搜寻查询中的步骤，将高级搜寻工作流从 Microsoft Defender for Endpoint 移动到 Microsoft 365 [Defender。](advanced-hunting-migrate-from-mde.md)
 
 ## <a name="related-topics"></a>相关主题
 - [高级搜寻概述](advanced-hunting-overview.md)

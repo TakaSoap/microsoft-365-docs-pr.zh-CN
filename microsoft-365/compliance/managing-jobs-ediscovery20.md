@@ -28,7 +28,7 @@ ms.locfileid: "51471075"
 
 | 作业类型            | 说明     |
 | :----------------- | :----------     |
-|正在添加数据到审阅集。 | 用户向审阅集添加集合。 此作业包括 2 个子作业： </br>• **Export** - 生成集合中的项列表。 </br>• **Ingestion & Indexing** - 在名为"ingestion) "的过程中，与搜索查询匹配的集合中的项复制到 Azure存储位置 (，然后对 Azure 存储位置中的这些项目重新编制索引。 新索引将用于在数据集中查询和分析项目。 </br></br>有关详细信息，请参阅 [添加搜索结果到审阅集](add-data-to-review-set.md)。 |
+|正在添加数据到审阅集。 | 用户向审阅集添加集合。 此作业包括 2 个子作业： </br>• **Export** - 生成集合中的项列表。 </br>• **Ingestion & Indexing** - 在名为) 的进程中，与搜索查询匹配的集合中的项复制到 Azure 存储 位置 *(，* 然后对 Azure 存储 位置中的这些项目重新编制索引。 新索引将用于在数据集中查询和分析项目。 </br></br>有关详细信息，请参阅 [添加搜索结果到审阅集](add-data-to-review-set.md)。 |
 |正在将数据添加到另一审阅集 | 用户将一个审阅集中的文档添加到同一案例中的另一个不同的审阅集。 有关详细信息，请参阅 [将其它审阅集中数据添加到审阅集](add-data-to-review-set-from-another-review-set.md)。|
 |正在将非 Microsoft 365 数据添加到审阅集。 | 用户将非 Microsoft 365 数据上传到审阅集。 在此进程中还会编制数据的索引。 例如，将本地文件服务器或客户端计算机的文件上传到审阅集。 有关详细信息，请参阅 [加载非 Microsoft 365 数据到审阅集](load-non-office-365-data-into-a-review-set.md)。| 
 |正在将已修正数据添加到审阅集 | 已修正出现处理错误的数据，并且已将其加载回审阅集。 有关详细信息，请参阅：</br>• [处理数据时修正错误](error-remediation-when-processing-data-in-advanced-ediscovery.md)</br>• [单个项目错误修正](single-item-error-remediation.md)| 

@@ -12,7 +12,7 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 ms.date: 02/25/2020
-description: 了解如何在 Microsoft Defender for Office 365 计划 2 中通过自动调查和响应功能加快检测和解决遭到入侵的用户帐户的过程。
+description: 了解如何通过 Microsoft Defender for Office 365 计划 2 中的自动调查和响应功能来加快检测和解决遭到入侵的用户帐户的过程。
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: c500221a10c00cc3b8d9d99c102ce8ec54fa2a48
@@ -32,7 +32,7 @@ ms.locfileid: "51934689"
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 
-[Microsoft Defender for Office 365 计划 2](defender-for-office-365.md#microsoft-defender-for-office-365-plan-1-and-plan-2)包括强大的自动调查和响应 (AIR) 功能。 [](office-365-air.md) 此类功能可以节省安全运营团队处理威胁的时间和精力。 Microsoft 继续改进安全性功能。 最近，AIR 功能得到增强，包括当前处于预览版 (用户安全) 。 阅读本文，详细了解遭到入侵的用户安全手册。 有关其他详细信息，请参阅博客文章使用 [Microsoft Defender for Office 365](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Speed-up-time-to-detect-and-respond-to-user-compromise-and-limit/ba-p/977053) 加快检测和响应用户泄露的时间并限制泄露范围。
+[Microsoft Defender for Office 365 计划 2](defender-for-office-365.md#microsoft-defender-for-office-365-plan-1-and-plan-2)包括强大的自动调查和响应 (AIR) 功能。 [](office-365-air.md) 此类功能可以节省安全运营团队处理威胁的时间和精力。 Microsoft 继续改进安全性功能。 最近，AIR 功能得到增强，包括当前处于预览版 (用户安全) 。 阅读本文，详细了解遭到入侵的用户安全手册。 有关其他详细信息，请参阅博客文章使用[Microsoft Defender](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Speed-up-time-to-detect-and-respond-to-user-compromise-and-limit/ba-p/977053) Office 365检测并响应用户泄露并限制泄露范围。
 
 ![针对受损用户的自动调查](/microsoft-365/media/office365atp-compduserinvestigation.jpg)
 
@@ -46,7 +46,7 @@ ms.locfileid: "51934689"
 
 ## <a name="compromised-user-alerts"></a>遭到入侵的用户警报
 
-当用户帐户受到威胁时，会发生异常或异常行为。 例如，网络钓鱼和垃圾邮件可能从受信任的用户帐户内部发送。 Defender for Office 365 可以检测 Office 365 中电子邮件模式和协作活动中的此类异常。 发生这种情况时，将触发警报，并开始威胁缓解过程。
+当用户帐户受到威胁时，会发生异常或异常行为。 例如，网络钓鱼和垃圾邮件可能从受信任的用户帐户内部发送。 Defender for Office 365 可以检测电子邮件模式和内部协作活动中的Office 365。 发生这种情况时，将触发警报，并开始威胁缓解过程。
 
 例如，下面是由于可疑电子邮件发送而触发的警报：
 
@@ -81,7 +81,7 @@ ms.locfileid: "51934689"
 
    这将打开受限用户的列表。
 
-   ![Office 365 中的受限用户](/microsoft-365/media/office365atp-restrictedusers.jpg)
+   ![网站中的受限Office 365](/microsoft-365/media/office365atp-restrictedusers.jpg)
 
 4. 在列表中选择用户帐户以查看详细信息并采取措施，例如 [释放受限制的用户](removing-user-from-restricted-users-portal-after-spam.md)。
 
@@ -103,8 +103,8 @@ ms.locfileid: "51934689"
 
 - [查看使用 AIR 功能所需的权限](office-365-air.md#required-permissions-to-use-air-capabilities)
 
-- [在 Office 365 中查找并调查恶意电子邮件](investigate-malicious-email-that-was-delivered.md)
+- [在电子邮件中查找并调查恶意Office 365](investigate-malicious-email-that-was-delivered.md)
 
 - [了解 Microsoft Defender for Endpoint 中的 AIR](/windows/security/threat-protection/microsoft-defender-atp/automated-investigations)
 
-- [访问 Microsoft 365 路线图，了解即将推出和即将推出哪些功能](https://www.microsoft.com/microsoft-365/roadmap?filters=)
+- [访问Microsoft 365路线图，了解即将推出和即将推出哪些功能](https://www.microsoft.com/microsoft-365/roadmap?filters=)

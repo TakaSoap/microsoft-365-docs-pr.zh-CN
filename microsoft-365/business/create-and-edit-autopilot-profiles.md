@@ -40,7 +40,7 @@ ms.locfileid: "51580246"
 
 配置文件适用于单个设备或一组设备，
   
-1. 在 Microsoft 365 管理中心，选择 **设备** \> **AutoPilot**。
+1. In the Microsoft 365 admin center， choose **Devices** \> **AutoPilot**.
   
 2. 在 **AutoPilot 页面上** ，选择 **配置文件** 选项卡 \> **创建配置文件**。
     

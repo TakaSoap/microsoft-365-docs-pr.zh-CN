@@ -41,7 +41,7 @@ ms.locfileid: "51933753"
 配置浏览器以允许 Cookie。
 
 ## <a name="elements-or-data-missing-on-the-portal"></a>门户上缺少的元素或数据
-如果 Microsoft Defender 安全中心中缺少某些元素或数据，则代理设置可能会阻止它。
+如果客户端上缺少某些元素或Microsoft Defender 安全中心代理设置可能会阻止它。
 
 确保包括 `*.securitycenter.windows.com` 代理允许列表。
 
@@ -57,7 +57,7 @@ ms.locfileid: "51933753"
 
 如果载入设备成功完成，但 Microsoft Defender for Endpoint 在重启后未启动，并且显示错误 577，请检查Windows Defender策略是否禁用了该设置。
 
-有关详细信息，请参阅 [确保策略](troubleshoot-onboarding.md#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy)未禁用 Microsoft Defender 防病毒。
+有关详细信息，请参阅[确保策略Microsoft Defender 防病毒禁用策略](troubleshoot-onboarding.md#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy)。
 
 ## <a name="known-issues-with-regional-formats"></a>区域格式的已知问题
 

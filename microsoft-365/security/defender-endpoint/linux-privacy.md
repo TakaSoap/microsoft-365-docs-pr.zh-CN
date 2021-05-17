@@ -68,7 +68,7 @@ Microsoft 致力于提供你在 Linux 上使用 Defender for Endpoint 时，选�
 有三个级别用于控制示例提交：
 
 - **无**：不会向 Microsoft 提交任何可疑样本。
-- **安全**：仅自动提交不包含个人身份信息 (PII) 的可疑示例。 这是此设置的默认值。
+- **保险箱：** 只有不包含个人身份信息的可疑样本 (个人身份) 自动提交。 这是此设置的默认值。
 - **全部**：所有可疑示例都提交到 Microsoft。
 
 ## <a name="manage-privacy-controls-with-policy-settings"></a>通过策略设置管理隐私控件
@@ -135,7 +135,7 @@ The privacy controls for the various types of data described in the preceding se
 | cloud_service.service_uri                           | 用于与云通信的 URI。 |
 | cloud_service.diagnostic_level                      | 设备诊断级别 (可选) 。 |
 | cloud_service.automatic_sample_submission           | 设备的自动示例提交级别 (无、安全、) 。 |
-| edr.early_preview                                   | 设备是否应该运行 EDR 早期预览功能。 |
+| edr.early_preview                                   | 设备是否应该运行EDR早期预览功能。 |
 | edr.group_id                                        | 检测和响应组件使用的组标识符。 |
 | edr.tags                                            | 用户定义的标记。 |
 | 功能。 \[可选功能名称\]                  | 预览功能列表，以及是否已启用。 |
@@ -232,7 +232,7 @@ The privacy controls for the various types of data described in the preceding se
 | 字段            | 说明 |
 | ---------------- | ----------- |
 | sha256           | 支持日志的 SHA256 标识符。 |
-| size             | 支持日志的大小。 |
+| 大小             | 支持日志的大小。 |
 | original_path    | 始终在 */var/opt/microsoft/mdatp/wdavdiag/ (下* 的支持日志) 。 |
 | format           | 支持日志的格式。 |
 

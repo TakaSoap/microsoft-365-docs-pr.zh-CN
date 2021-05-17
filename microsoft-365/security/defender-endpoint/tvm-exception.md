@@ -1,7 +1,7 @@
 ---
-title: 创建和查看安全建议例外 - 威胁和漏洞管理
-description: 创建并监视威胁和漏洞管理中的安全建议异常。
-keywords: Microsoft Defender for Endpoint tvm 修正， Microsoft Defender for Endpoint tvm， 威胁和漏洞管理， 威胁 & 漏洞管理， 威胁 & 漏洞管理修正， tvm 修正 intune， tvm 修正 sccm
+title: 创建和查看安全建议例外 - 危险和漏洞管理
+description: 创建并监视安全建议在危险和漏洞管理。
+keywords: Microsoft Defender for Endpoint tvm 修正， Microsoft Defender for Endpoint tvm， 危险和漏洞管理， 威胁 & 漏洞管理， 威胁 & 漏洞管理 修正， tvm 修正 intune， tvm 修正 sccm
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -25,7 +25,7 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 04/21/2021
 ms.locfileid: "51933741"
 ---
-# <a name="create-and-view-exceptions-for-security-recommendations---threat-and-vulnerability-management"></a>创建和查看安全建议例外 - 威胁和漏洞管理
+# <a name="create-and-view-exceptions-for-security-recommendations---threat-and-vulnerability-management"></a>创建和查看安全建议例外 - 危险和漏洞管理
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -42,7 +42,7 @@ ms.locfileid: "51933741"
 
 为建议创建例外时，建议在例外持续时间结束之前不会处于活动状态。 建议状态将更改为"完全 **异常**"或"部分异常 (按设备组) 。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 只有具有"异常处理"权限的用户才能管理异常 (包括创建或取消) 。 [详细了解 RBAC 角色](user-roles.md)。
 
@@ -62,9 +62,9 @@ ms.locfileid: "51933741"
 
 #### <a name="filtered-views"></a>筛选的视图
 
-如果你已在任何威胁和漏洞管理页面上按设备组进行筛选，则只有经过筛选的设备组将显示为选项。
+如果你已按任意页面的设备组进行危险和漏洞管理，则只有经过筛选的设备组将显示为选项。
 
-这是在任何威胁和漏洞管理页面上按设备组筛选的按钮： 
+这是要按设备组筛选任意页面的危险和漏洞管理按钮： 
 
 ![显示所选设备组筛选器。](images/tvm-selected-device-groups.png)
 
@@ -128,7 +128,7 @@ ms.locfileid: "51933741"
 
 ## <a name="view-impact-after-exceptions-are-applied"></a>应用例外后查看影响
 
-在"安全建议"页中，选择"自定义列 **"，** 并选中"在异常发生后公开 ("和"在) 后影响 ("复选框 **) 。**
+在"安全推荐页上，选择"自定义列"，并选中"在异常发生后公开 ("和"在) 后影响 ("复选框 **) 。**
 
 ![显示自定义列选项。](images/tvm-after-exceptions.png)
 

@@ -1,7 +1,7 @@
 ---
 title: 高级搜寻架构中的 AADSignInEventsBeta 表
-description: 了解与高级搜寻架构的 Azure Active Directory 登录事件表关联的信息
-keywords: 高级搜寻， 威胁搜寻， 网络威胁搜寻， Microsoft 365 Defender， microsoft 365， m365， 搜索， 查询， 遥测， 架构参考， kusto， 表格， 列， 数据类型， 说明， 文件， IP 地址， 设备， 计算机， 用户， 帐户， 标识， AAD
+description: 了解与高级搜寻Azure Active Directory登录事件表关联的信息
+keywords: 高级搜寻， 威胁搜寻， 网络威胁搜寻， Microsoft 365 Defender， microsoft 365， m365， 搜索， 查询， 遥测， 架构参考， kusto， 表格， 列， 数据类型， 描述， 文件， IP 地址， 设备， 计算机， 用户， 帐户， 标识， AAD
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -34,12 +34,12 @@ ms.locfileid: "51932603"
 - Microsoft 365 Defender
 
 >[!IMPORTANT]
-> 该表当前处于 beta 版本，并短期提供，以便你可以通过 Azure Active Directory (`AADSignInEventsBeta` AAD) 登录事件。 我们最终将所有登录架构信息移动到 `IdentityLogonEvents` 表中。<br><br>
-> 通过 Azure Defender 的集成 Microsoft Defender 终结点解决方案访问 Microsoft 365 Defender，但没有 Microsoft Defender for Office、Microsoft Defender for Identity 或 Microsoft Cloud App Security 许可证的客户将无法查看此架构。 
+> 该表当前处于 beta 版中，并短期提供，以便你可以从 AAD Azure Active Directory (登录) `AADSignInEventsBeta` 进行搜寻。 我们最终将所有登录架构信息移动到 `IdentityLogonEvents` 表中。<br><br>
+> 可以通过 Azure Defender 的集成 Microsoft Defender 终结点解决方案访问 Microsoft 365 Defender，但没有适用于 Office、Microsoft Defender for Identity 或 Microsoft Cloud App Security 的 Microsoft Defender 许可证的客户将无法查看此架构。 
 
  
 
-高级 `AADSignInEventsBeta` 搜寻架构中的表包含有关 Azure Active Directory 交互式和非交互式登录的信息。了解有关 Azure [Active Directory](/azure/active-directory/reports-monitoring/concept-all-sign-ins)登录活动报告中的登录的详细信息 - 预览 。
+高级 `AADSignInEventsBeta` 搜寻架构中的表包含有关Azure Active Directory和非交互式登录的信息。了解有关登录活动报告中Azure Active Directory[的详细信息 - 预览](/azure/active-directory/reports-monitoring/concept-all-sign-ins)。
 
 使用此参考来构建从该表返回信息的查询。
 有关高级搜寻架构中其他表的信息，请参阅[高级搜寻参考](/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-reference)。
@@ -75,7 +75,7 @@ ms.locfileid: "51932603"
 | `IsCompliant`                     | int       | 指示启动登录的设备是否符合 (1) 0 (不兼容)                                                                                        |
 | `AuthenticationProcessingDetails` | string        | 有关身份验证处理器的详细信息                                                                                                                                          |
 | `AuthenticationRequirement`       | string        | 登录所需的身份验证类型。 可能的值：multiFactorAuthentication (MFA 是必需的) singleFactorAuthentication (不需要 MFA) 。                |
-| `TokenIssuerType`                 | int        | 指示令牌颁发者是 Azure Active Directory (0) 还是 Active Directory 联合身份验证服务 (1)                                                                              |
+| `TokenIssuerType`                 | int        | 指示令牌颁发者是否Azure Active Directory (0) Active Directory 联合身份验证服务 (1)                                                                              |
 | `RiskLevelAggregated`                       | int        | 登录期间聚合的风险级别。 可能的值：0 (未设置) 、1 (无) 、10 (低) 、50 (medium) 或 100 (high) 。                               |
 | `RiskDetails`                      | int        | 有关登录用户的风险状态的详细信息                                                                                                                            |
 | `RiskState`                       | int        | 指示有风险的用户状态。 可能的值：0 (无) 、1 (确认安全) 、2 (已修复) 、3 (已消除) 、4 (有风险) 或 5 (确认遭到入侵) 。                                |

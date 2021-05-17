@@ -47,9 +47,9 @@ ms.locfileid: "51935325"
 
 ## <a name="download-installation-and-onboarding-packages"></a>下载安装和载入程序包
 
-从 Microsoft Defender 安全中心下载安装和载入程序包：
+从以下位置下载安装和载入Microsoft Defender 安全中心：
 
-1. 在 Microsoft Defender 安全中心中，转到"设备>**设置>载入"。**
+1. In Microsoft Defender 安全中心， go to **设置 > Device Management > Onboarding**.
 2. 在页面的第 1 部分中，将操作系统设置为 **macOS，** 将 Deployment 方法设置为 **本地脚本**。
 3. 在页面的第 2 部分中，选择 **下载安装程序包**。 将其另存为 wdav.pkg 到本地目录。
 4. 在页面的第 2 部分中，选择 **下载载入程序包**。 将其另存WindowsDefenderATPOnboardingPackage.zip同一目录。
@@ -107,11 +107,11 @@ ms.locfileid: "51935325"
 
 5. 对通过 Mac 上的 Microsoft Defender for Endpoint 分发的所有系统扩展重复步骤 3 & 4。
 
-6. 作为终结点检测和响应功能的一部分，Mac 上的 Microsoft Defender for Endpoint 会检查套接字流量，将此信息报告给 Microsoft Defender 安全中心门户。 当系统提示授予 Microsoft Defender 终结点权限以筛选网络流量时，请选择"允许 **"。**
+6. 作为终结点检测和响应功能的一部分，Mac 上的 Microsoft Defender for Endpoint 会检查套接字流量，将此信息报告给 Microsoft Defender 安全中心 门户。 当系统提示授予 Microsoft Defender 终结点权限以筛选网络流量时，请选择"允许 **"。**
 
     ![系统扩展安全首选项2](images/big-sur-install-4.png)
 
-7. 打开 **"系统** 首选项&隐私"并导航到"隐私"选项卡。授予 Microsoft Defender ATP 和 Microsoft Defender ATP 终结点安全扩展的"完全磁盘  >  **访问权限"。**   
+7. 打开 **"系统** 首选项&隐私"并导航到"隐私"选项卡。授予对"Microsoft Defender ATP和Microsoft Defender ATP终结点安全扩展"的  >  **"完全磁盘访问权限"。**   
 
     ![完全磁盘访问](images/big-sur-install-5.png)
 
@@ -170,11 +170,11 @@ ms.locfileid: "51935325"
         mdatp threat list
         ```
 
-3. 运行 EDR 检测测试，验证设备是否正确载入并报告给服务。 对新载入的设备执行以下步骤：
+3. 运行EDR检测测试，验证设备已正确载入并报告给服务。 对新载入的设备执行以下步骤：
 
-   1. 在浏览器（如 Microsoft Edge for Mac 或 Safari）中。
+   1. 在浏览器（如 Microsoft Edge For Mac 或 Safari）中。
 
-   1. 下载 MDATP MacOS DIY.zip https://aka.ms/mdatpmacosdiy 并从中提取。
+   1. 下载MDATP MacOS DIY.zip https://aka.ms/mdatpmacosdiy 并从中提取。
 
       系统可能会提示你：
 
@@ -185,22 +185,22 @@ ms.locfileid: "51935325"
 
 5. 打开 **下载**。
 
-6. 你应该会看到 **MDATP MacOS DIY**。
+6. 你应该会看到 MDATP **MacOS DIY**。
 
    > [!TIP]
    > 如果双击，将收到以下消息：
    > 
-   > > **无法打开"MDATP MacOS DIY"，因为开发人员无法验证程序。**<br/>
+   > > **无法MDATP MacOS DIY"，因为开发人员无法验证。**<br/>
    > > macOS 无法验证此应用程序是否不含恶意软件。<br/>
    > > **\[ 移动到回收 \]****\[ 站取消 \]** 
   
 7. Click **Cancel**.
 
-8. 右键单击 **"MDATP MacOS DIY"，** 然后单击"打开 **"。** 
+8. 右键单击 **MDATP MacOS DIY"，** 然后单击"打开 **"。** 
 
     系统应显示以下消息：
 
-    > **macOS 无法验证 **MDATP MacOS DIY 的开发人员**。确定要打开它吗？**<br/>
+    > **macOS 无法验证 **MacOS DIY MDATP开发人员**。确定要打开它吗？**<br/>
     > 通过打开此应用，你将覆盖系统安全，这样可能会向可能损害 Mac 或隐私的恶意软件公开计算机和个人信息。
 
 10. 单击“打开”。
@@ -208,17 +208,17 @@ ms.locfileid: "51935325"
     系统应显示以下消息：
 
     > Microsoft Defender for Endpoint - macOS EDR DIY 测试文件<br/>
-    > MDATP 门户中将提供相应的警报。
+    > 相应的警报将在 MDATP 门户中提供。
 
 11. 单击“打开”。
 
-    几分钟后，将引发名为"macOS EDR 测试警报"的警报。
+    几分钟后，将引发名为"macOS EDR测试警报"的警报。
 
-12. 转到 Microsoft Defender 安全中心 https://SecurityCenter.microsoft.com) (。
+12. 转到 https://SecurityCenter.microsoft.com) "Microsoft Defender 安全中心 ("。
 
 13. 转到警报队列。
 
-    :::image type="content" source="images/b8db76c2-c368-49ad-970f-dcb87534d9be.png" alt-text="显示严重性、类别、检测源和折叠操作菜单的 macOS EDR 测试警报示例。":::
+    :::image type="content" source="images/b8db76c2-c368-49ad-970f-dcb87534d9be.png" alt-text="macOS 示例EDR显示严重性、类别、检测源和折叠的操作菜单的测试警报。":::
     
     查看警报详细信息和设备时间线，并执行常规调查步骤。
 

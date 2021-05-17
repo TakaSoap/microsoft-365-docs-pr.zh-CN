@@ -102,6 +102,6 @@ ms.locfileid: "51934509"
 
 ## <a name="schedule-a-scan-with-intune"></a>使用 Intune 计划扫描
 
-还可使用 Microsoft Intune 计划扫描。 当 [runMDATPQuickScan.sh](https://github.com/microsoft/shell-intune-samples/tree/master/Misc/MDATP#runmdatpquickscansh) 睡眠模式恢复时， [适用于 Microsoft Defender for Endpoint](https://github.com/microsoft/shell-intune-samples/tree/master/Misc/MDATP) 的脚本中提供的命令行管理程序脚本将持续存在。 
+还可以计划使用扫描Microsoft Intune。 当 [runMDATPQuickScan.sh](https://github.com/microsoft/shell-intune-samples/tree/master/Misc/MDATP#runmdatpquickscansh) 睡眠模式恢复时， [适用于 Microsoft Defender for Endpoint](https://github.com/microsoft/shell-intune-samples/tree/master/Misc/MDATP) 的脚本中提供的命令行管理程序脚本将持续存在。 
 
 有关如何 [在企业中使用此脚本](https://docs.microsoft.com/mem/intune/apps/macos-shell-scripts) 的详细说明，请参阅在 Intune 中使用 macOS 设备的 shell 脚本。

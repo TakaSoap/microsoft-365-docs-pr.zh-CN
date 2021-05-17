@@ -81,7 +81,7 @@ MAU 包括一个称为 *msupdate* 的命令行工具，该工具专为 IT 管理
 | **域** | `com.microsoft.autoupdate2` |
 | **Key** | ChannelName |
 | **数据类型** | String |
-| **可能的值** | Beta <br/> 预览 <br/> Current |
+| **可能的值** | Beta 版本 <br/> 预览 <br/> Current |
 |||
 
 >[!WARNING]
@@ -130,7 +130,7 @@ MAU 包括一个称为 *msupdate* 的命令行工具，该工具专为 IT 管理
 
 ### <a name="disable-insider-checkbox"></a>禁用预览体验成员复选框
 
-设置为 true 可进行"加入 Office 预览体验计划..."。复选框不可用/灰度为用户。
+设置为 true 将"加入 Office预览体验计划..."。复选框不可用/灰度为用户。
 
 |节|值|
 |:--|:--|

@@ -1,6 +1,6 @@
 ---
 title: Microsoft Defender 安全中心时区设置
-description: 使用此处包含的信息配置 Microsoft Defender 安全中心时区设置并查看许可证信息。
+description: 使用此处包含的信息配置Microsoft Defender 安全中心时区设置并查看许可证信息。
 keywords: 设置， Microsoft Defender， 网络安全威胁智能， 适用于终结点的 Microsoft Defender， 时区， utc， 本地时间， 许可证
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -68,12 +68,12 @@ Microsoft Defender for Endpoint 可以显示协调世界时 (UTC) 本地时间�
 3. 选择 **时区 UTC** 或本地时区，例如 -7：00。
 
 ### <a name="regional-settings"></a>区域设置
-若要为 Microsoft Defender for Endpoint 应用不同的日期格式，请使用 IE Internet Explorer (和 Microsoft Edge)  (Edge) 的区域设置。 如果你使用的是其他浏览器（如 Google Chrome），请按照所需步骤更改该浏览器的时间和日期设置。 
+若要为 Microsoft Defender for Endpoint 应用不同的日期格式，请使用 IE Internet Explorer (区域设置) Microsoft Edge (Edge) 。 如果你使用的是其他浏览器（如 Google Chrome），请按照所需步骤更改该浏览器的时间和日期设置。 
 
 
 **Internet Explorer (IE) 和 Microsoft Edge**
 
-IE 和 Microsoft  Edge 使用"控制面板"中"时钟、**语言** 和地区"选项中配置的"区域"设置。 
+IE 和 Microsoft Edge使用"控制面板"中"时钟、**语言** 和地区"选项中配置的"区域"设置。 
 
 
 #### <a name="known-issues-with-regional-formats"></a>区域格式的已知问题

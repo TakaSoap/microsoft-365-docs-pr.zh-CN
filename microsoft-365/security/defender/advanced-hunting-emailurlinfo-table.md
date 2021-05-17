@@ -35,14 +35,14 @@ ms.locfileid: "51935457"
 **适用于：**
 - Microsoft 365 Defender
 
-高级 `EmailUrlInfo` 搜寻 [架构中的](advanced-hunting-overview.md) 表包含有关由 Microsoft Defender for Office 365 处理的电子邮件和附件的 URL 的信息。 使用此参考来构建从此表返回信息的查询。 
+高级 `EmailUrlInfo` 搜寻[架构中的](advanced-hunting-overview.md)表包含有关由 Microsoft Defender for Office 365 处理的电子邮件和附件的 URL 的信息。 使用此参考来构建从此表返回信息的查询。 
 
 有关高级搜寻架构中其他表的信息，请[参阅高级搜寻参考](advanced-hunting-schema-tables.md)。
 
 | 列名称 | 数据类型 | 说明 |
 |-------------|-----------|-------------|
 | `Timestamp` | datetime | 记录事件的日期和时间 |
-| `NetworkMessageId` | string | 由 Microsoft 365 生成的电子邮件的唯一标识符 |
+| `NetworkMessageId` | string | 由用户生成的电子邮件的唯一Microsoft 365 |
 | `Url` | string | 电子邮件主题、正文或附件中的完整 URL |
 | `UrlDomain` | string | URL 的域名或主机名 |
 | `ReportId` | long | 基于重复计数器的事件标识符。 若要标识唯一事件，此列必须与 DeviceName 和 Timestamp 列一起使用 |

@@ -34,11 +34,11 @@ ms.locfileid: "51934809"
 **适用于：**
 - Microsoft 365 Defender
 
-勒索软件已从影响单个计算机用户的简单商品恶意软件快速演变为严重影响行业和政府机构的企业威胁。 [虽然 Microsoft 365 Defender](microsoft-365-defender.md)提供了许多检测和阻止勒索软件和相关入侵活动的功能，但主动检查泄露的迹象有助于保护你的网络。
+勒索软件已从影响单个计算机用户的简单商品恶意软件快速演变为严重影响行业和政府机构的企业威胁。 尽管[Microsoft 365 Defender](microsoft-365-defender.md)提供了许多检测和阻止勒索软件和相关入侵活动的功能，但主动检查泄露的迹象有助于保护你的网络。
 
 > [阅读有关人工操作的勒索软件](https://www.microsoft.com/security/blog/2020/03/05/human-operated-ransomware-attacks-a-preventable-disaster/)
 
-借助[](advanced-hunting-overview.md) Microsoft 365 Defender 中的高级搜寻功能，你可以创建查询，以查找与勒索软件活动关联的单个项目。 还可以运行更复杂的查询，以查找活动的迹象并权衡这些符号以查找需要立即关注的设备。
+使用[Microsoft 365](advanced-hunting-overview.md) Defender 中的高级搜寻，你可以创建查询，以查找与勒索软件活动关联的单个项目。 还可以运行更复杂的查询，以查找活动的迹象并权衡这些符号以查找需要立即关注的设备。
 
 ## <a name="signs-of-ransomware-activity"></a>勒索软件活动的迹象
 Microsoft 安全研究人员在由复杂的恶意软件启动的许多勒索软件活动中观察到各种常见但很细微的项目。 这些符号主要涉及使用系统工具准备加密、阻止检测和清除取证证据。

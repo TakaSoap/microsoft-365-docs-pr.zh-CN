@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 Defender 中的高级搜寻查询最佳做法
+title: Microsoft 365 Defender 中的高级搜寻查询最佳实践
 description: 了解如何使用高级搜寻构建快速、高效且无错误的威胁搜寻查询
 keywords: 高级搜寻， 威胁搜寻， 网络威胁搜寻， Microsoft 365 Defender， microsoft 365， m365， 搜索， 查询， 遥测， 架构， kusto， 避免超时， 命令行， 进程 ID， 优化， 最佳做法， 分析， 加入， 总结
 search.product: eADQiWindows 10XVcnh
@@ -61,7 +61,7 @@ ms.locfileid: "51952688"
 - **分析，不要提取**— 尽可能使用 [分析](/azure/data-explorer/kusto/query/parseoperator) 运算符或分析函数（ [如 parse_json ()](/azure/data-explorer/kusto/query/parsejsonfunction)）。 避免 `matches regex` 使用字符串运算符或 [extract () 函数](/azure/data-explorer/kusto/query/extractfunction)，两者均使用正则表达式。 保留对更复杂的方案的正则表达式的使用。 [阅读有关分析函数的更多信息](#parse-strings)
 - **筛选表不是表达式**-如果可以筛选表列，则不要筛选计算列。
 - **无三字符术语**- 避免使用带三个字符或更少字符的术语进行比较或筛选。 这些术语未编制索引，匹配它们将需要更多资源。
-- **选择性地** 项目 — 仅预测所需的列，使结果更易于理解。 在运行联接或类似 [操作之前规划](/azure/data-explorer/kusto/query/joinoperator) 特定列还有助于提高性能。
+- **Project** 选择性地创建 - 仅预测所需的列，使结果更易于理解。 在运行联接或类似 [操作之前规划](/azure/data-explorer/kusto/query/joinoperator) 特定列还有助于提高性能。
 
 ## <a name="optimize-the-join-operator"></a>优化 `join` 运算符
 联接 [运算符](/azure/data-explorer/kusto/query/joinoperator) 通过匹配指定列中的值来合并两个表中的行。 应用这些提示以优化使用此运算符的查询。
@@ -265,7 +265,7 @@ SHA256,ThreatTypes,DetectionMethods
 若要了解所有受支持的分析函数，请阅读 [Kusto 字符串函数](/azure/data-explorer/kusto/query/scalarfunctions#string-functions)。 
 
 >[!NOTE]
->本文中的某些表在 Microsoft Defender for Endpoint 中可能不可用。 [打开 Microsoft 365 Defender](m365d-enable.md) 以使用更多数据源搜寻威胁。 你可以按照从 Microsoft Defender for Endpoint 迁移高级搜寻查询中的步骤将高级搜寻工作流从 [Microsoft Defender for Endpoint](advanced-hunting-migrate-from-mde.md)移动到 Microsoft 365 Defender。
+>本文中的某些表在 Microsoft Defender for Endpoint 中可能不可用。 [打开 Microsoft 365 Defender](m365d-enable.md)以使用更多数据源搜寻威胁。 你可以按照从 Microsoft Defender for Endpoint 迁移高级搜寻查询中的步骤，将高级搜寻工作流从 Microsoft Defender for Endpoint 移动到 Microsoft 365 [Defender。](advanced-hunting-migrate-from-mde.md)
 
 ## <a name="related-topics"></a>相关主题
 - [Kusto 查询语言文档](/azure/data-explorer/kusto/query/)

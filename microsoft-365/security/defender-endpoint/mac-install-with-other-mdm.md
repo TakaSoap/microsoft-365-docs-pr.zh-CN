@@ -68,7 +68,7 @@ macOS 上的 Microsoft Defender for Endpoint 不依赖于任何特定于供应�
 
 ### <a name="package"></a>程序包
 
-配置所需应用程序 [包](mac-install-with-jamf.md)的部署，安装程序包 (wdav.pkg) [从 Microsoft Defender 安全中心下载](mac-install-with-jamf.md)。
+配置所需应用程序[包的](mac-install-with-jamf.md)部署，安装包 (wdav.pkg [) 从](mac-install-with-jamf.md)Microsoft Defender 安全中心。
 
 若要将程序包部署到企业，请使用与 MDM 解决方案关联的说明。
 
@@ -78,7 +78,7 @@ macOS 上的 Microsoft Defender for Endpoint 不依赖于任何特定于供应�
 
 MDM 解决方案可能称其为"自定义设置配置文件"，因为 macOS 上的 Microsoft Defender for Endpoint 不是 macOS 的一部分。
 
-使用属性列表 jamf/WindowsDefenderATPOnboarding.plist，可从从 Microsoft Defender 安全中心下载的载入 [包中提取](mac-install-with-jamf.md)。
+使用属性列表 jamf/WindowsDefenderATPOnboarding.plist，可从从 Microsoft Defender 安全中心 下载的载入[包中提取](mac-install-with-jamf.md)。
 您的系统可能支持 XML 格式的任意属性列表。 在这种情况下，你可以像现在一样上传 jamf/WindowsDefenderATPOnboarding.plist 文件。
 或者，可能需要先将属性列表转换为其他格式。
 
@@ -116,7 +116,7 @@ MDM 使用它将设置文件部署到客户端设备的 **/Library/Managed Prefe
 
 ### <a name="network-extension-policy"></a>网络扩展策略
 
-作为终结点检测和响应功能的一部分，macOS 上的 Microsoft Defender for Endpoint 会检查套接字流量，将此信息报告给 Microsoft Defender 安全中心门户。 以下策略允许网络扩展执行此功能。
+作为终结点检测和响应功能的一部分，macOS 上的 Microsoft Defender for Endpoint 会检查套接字流量，将此信息报告给 Microsoft Defender 安全中心 门户。 以下策略允许网络扩展执行此功能。
 
 - 筛选器类型：插件
 - 插件捆绑包标识符： `com.microsoft.wdav`

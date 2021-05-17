@@ -1,6 +1,6 @@
 ---
 title: 高级搜寻架构中的 EmailPostDeliveryEvents 表
-description: 在高级搜寻架构的 EmailPostDeliveryEvents 表中了解对 Microsoft 365 电子邮件采取的传递后操作
+description: 在高级搜寻架构的 EmailPostDeliveryEvents 表中了解Microsoft 365电子邮件的传递后操作
 keywords: 高级搜寻， 威胁搜寻， 网络威胁搜寻， Microsoft 365 Defender， microsoft 365， m365， 搜索， 查询， 遥测， 架构参考， kusto， 表格， 列， 数据类型， 说明， EmailPostDeliveryEvents， 网络消息 ID， 发件人， 收件人， 附件 ID， 附件名称， 恶意软件裁定， 网络钓鱼裁定， 附件计数， 链接计数， url 计数
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -35,7 +35,7 @@ ms.locfileid: "51935469"
 **适用于：**
 - Microsoft 365 Defender
 
-高级 `EmailPostDeliveryEvents` 搜寻 [架构中的](advanced-hunting-overview.md) 表包含有关对 Microsoft 365 处理的电子邮件执行传递后操作的信息。 使用此参考来构建从此表返回信息的查询。
+高级 `EmailPostDeliveryEvents` 搜寻[架构中的](advanced-hunting-overview.md)表包含有关对邮件发送者处理的电子邮件执行传递后Microsoft 365。 使用此参考来构建从此表返回信息的查询。
 
 >[!TIP]
 > 有关表支持的事件类型 () ，请使用安全中心中提供的内置架构 `ActionType` 参考。
@@ -45,7 +45,7 @@ ms.locfileid: "51935469"
 | 列名称 | 数据类型 | 说明 |
 |-------------|-----------|-------------|
 | `Timestamp` | datetime | 记录事件的日期和时间 |
-| `NetworkMessageId` | string | 由 Microsoft 365 生成的电子邮件的唯一标识符 |
+| `NetworkMessageId` | string | 由用户生成的电子邮件的唯一Microsoft 365 |
 | `InternetMessageId` | string | 发送电子邮件系统设置的电子邮件的面向公众的标识符 |
 | `Action` | string | 对实体采取的操作 |
 | `ActionType` | string | 触发事件的活动类型：手动修正、钓鱼邮件 ZAP、恶意软件 ZAP |

@@ -58,9 +58,9 @@ preinstall com.microsoft.wdav end [2020-03-11 13:08:49 -0700] 804 => 1
 本示例中，实际原因的前缀为 `[ERROR]` 。
 安装失败，因为不支持这些版本之间的降级。
 
-## <a name="mdatp-install-log-missing-or-not-updated"></a>MDATP 安装日志缺失或未更新
+## <a name="mdatp-install-log-missing-or-not-updated"></a>MDATP安装日志丢失或未更新
 
-在极少数情况下，安装不会在 MDATP 的 /Library/Logs/Microsoft/mdatp/install.日志文件。
+在极少数情况下，安装不会在 MDATP /Library/Logs/Microsoft/mdatp/install.日志文件。
 你可以验证安装是否发生，并分析可能的错误，通过查询 macOS 日志 (当没有客户端 UI 支持时，这对 MDM 部署) 。 建议您使用较窄的时间窗口来运行查询，并按日志记录进程名称进行筛选，因为将会存在大量信息。
 
 ```bash

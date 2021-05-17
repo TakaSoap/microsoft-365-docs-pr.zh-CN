@@ -35,7 +35,7 @@ ms.locfileid: "51935385"
 
 本部分涵盖有关 Defender for Endpoint 的隐私和数据处理的一些最常见的问题。
 > [!NOTE]
-> 本文档介绍与 Defender for Endpoint 相关的数据存储和隐私详细信息。 有关适用于终结点的 Defender 以及其他产品和服务（如 Microsoft Defender 防病毒和 Windows 10） [的信息](https://go.microsoft.com/fwlink/?linkid=827576)，请参阅 Microsoft 隐私声明。 有关详细信息，请参阅 [Windows 10](https://go.microsoft.com/fwlink/?linkid=827577) 隐私常见问题解答。
+> 本文档介绍与 Defender for Endpoint 相关的数据存储和隐私详细信息。 有关 Defender for Endpoint 以及其他产品和服务（如 Microsoft Defender 防病毒 和 Windows 10）的信息，请参阅[Microsoft 隐私声明](https://go.microsoft.com/fwlink/?linkid=827576)。 有关详细信息[，Windows 10隐私](https://go.microsoft.com/fwlink/?linkid=827577)常见问题解答。
 
 
 ## <a name="what-data-does-microsoft-defender-for-endpoint-collect"></a>Microsoft Defender for Endpoint 会收集哪些数据？
@@ -44,7 +44,7 @@ Microsoft Defender for Endpoint 将在特定于服务的客户专用和隔离租
 
 收集的信息包括文件数据 (如文件名、大小和哈希) 、进程数据 (正在运行的进程、哈希) 、注册表数据、网络连接数据 (主机 IP 和端口) 以及设备详细信息 (例如设备标识符、名称和操作系统版本) 。
 
-Microsoft 在 Microsoft Azure 中安全地存储此数据，并依据 Microsoft 隐私做法和 [Microsoft 信任中心策略进行维护](https://go.microsoft.com/fwlink/?linkid=827578)。
+Microsoft 安全地存储此数据Microsoft Azure根据 Microsoft 隐私实践和[Microsoft 信任中心策略进行维护](https://go.microsoft.com/fwlink/?linkid=827578)。
 
 此数据使 Defender for Endpoint 能够：
 - 主动识别组织中 IA (攻击) IA
@@ -54,7 +54,7 @@ Microsoft 在 Microsoft Azure 中安全地存储此数据，并依据 Microsoft 
 Microsoft 不会将你的数据用于广告。
 
 ## <a name="data-protection-and-encryption"></a>数据保护和加密
-Defender for Endpoint 服务利用基于 Microsoft Azure 基础结构的一流数据保护技术。 
+Defender for Endpoint 服务利用基于安全基础结构的Microsoft Azure技术。 
 
 我们的服务需要处理与数据保护相关的各个方面。 加密是最关键之一，它包括静态数据加密、进行中的加密和密钥保管库的密钥管理。 有关 Defender for Endpoint 服务使用的其他技术详细信息，请参阅 [Azure 加密概述](https://docs.microsoft.com/azure/security/security-azure-encryption-overview)。 
 
@@ -63,7 +63,7 @@ Defender for Endpoint 服务利用基于 Microsoft Azure 基础结构的一流�
 
 ## <a name="data-storage-location"></a>数据存储位置
 
-Defender for Endpoint 在欧盟、英国或美国的 Microsoft Azure 数据中心中运行。 该服务收集的客户数据存储在： () 预配期间标识的租户地理位置; (b) 如果 Defender for Endpoint 使用另一个 Microsoft 联机服务处理此类数据，即其他联机服务的数据存储规则定义的地理位置。
+Defender for Endpoint 在Microsoft Azure、英国或美国的数据中心运行。 该服务收集的客户数据存储在： () 预配期间标识的租户地理位置; (b) 如果 Defender for Endpoint 使用另一个 Microsoft 联机服务处理此类数据，即其他联机服务的数据存储规则定义的地理位置。
 
 假名形式的客户数据也可以存储在美国的中央存储和处理系统中。
 
@@ -82,7 +82,7 @@ Defender for Endpoint 在欧盟、英国或美国的 Microsoft Azure 数据中�
 
 此外，Microsoft 对某些操作人员执行后台验证检查，并限制根据后台验证级别对应用程序、系统和网络基础结构的访问。 当运营人员在履行职责时需要访问客户的帐户或相关信息时，他们会遵循正式的流程。
 
-Microsoft Azure 政府数据中心中部署的服务的数据访问权限仅授予经过筛选和批准以处理符合某些政府法规和要求（如 FedRAMP、NIST 800.171 (DIB) 、ITAR、IRS 1075、DoD L4 和 CJIS）的操作人员。
+对 Microsoft Azure 政府数据中心中部署的服务的数据的访问权限仅授予经过筛选和批准以处理符合某些政府法规和要求（如 FedRAMP、NIST 800.171 (DIB) 、ITAR、IRS 1075、DoD L4 和 CJIS）的操作人员。
 
 
 ## <a name="is-data-shared-with-other-customers"></a>数据是否与其他客户共享？

@@ -1,7 +1,7 @@
 ---
 title: 设备的 Microsoft 安全功能分数
 description: 你的设备分数显示设备在应用程序、操作系统、网络、帐户和安全控件中的统一安全配置状态。
-keywords: Microsoft 设备安全分数、适用于终结点的 Microsoft Defender 设备安全分数、安全分数、配置分数、威胁和漏洞管理、安全控制、改进机会、一段时间的安全配置分数、安全状况、基线
+keywords: Microsoft 设备安全分数， Microsoft Defender for Endpoint Microsoft 设备安全分数， 安全分数， 配置分数， 危险和漏洞管理， 安全控制， 改进机会， 一段时间的安全配置分数， 安全状况， 基线
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -39,9 +39,9 @@ ms.locfileid: "51934077"
 
 
 >[!NOTE]
-> 配置分数现在是威胁和漏洞管理的一部分，作为 Microsoft 设备安全分数。
+> 配置分数现在是 Microsoft 危险和漏洞管理 Microsoft 安全分数的一部分。
 
-你的设备分数显示在 Microsoft Defender[](tvm-dashboard-insights.md)安全中心的威胁和漏洞管理仪表板中。 设备的 Microsoft 安全分数越高，你的终结点就更能够抵御网络安全威胁攻击。 它反映你的设备跨以下类别的安全配置状态：
+你的设备分数显示在危险和漏洞管理[仪表板](tvm-dashboard-insights.md)中Microsoft Defender 安全中心。 设备的 Microsoft 安全分数越高，你的终结点就更能够抵御网络安全威胁攻击。 它反映你的设备跨以下类别的安全配置状态：
 
 - 应用程序
 - 操作系统
@@ -57,7 +57,7 @@ ms.locfileid: "51934077"
 
 更改可能需要几个小时才能反映在仪表板中。
 
-1. 在导航窗格中，**转到"设置**  >  **""高级功能"** 
+1. 在导航窗格中，转到 **"设置**  >  **高级功能"** 
 
 2. 向下滚动到 **Microsoft 安全分数**，将设置切换为 **"打开"。**
 
@@ -79,7 +79,7 @@ Microsoft 设备安全分数卡中的数据是不断发现漏洞的过程的产�
 
 通过修正安全建议列表中的问题来改进安全配置。 当你这样做时，你的 Microsoft 设备安全分数会提高，并且你的组织可以更加抵御网络安全威胁和漏洞。
 
-1. 从威胁和漏洞管理仪表板中的"Microsoft 设备安全分数"卡中，选择其中一个类别。 您将查看与类别相关的建议列表。 它将你访问" [**安全建议"**](tvm-security-recommendation.md) 页。 如果要查看所有安全建议，在进入"安全建议"页面后，清除搜索字段。
+1. 从仪表板中的 Microsoft 设备安全分数危险和漏洞管理，选择其中一个类别。 您将查看与类别相关的建议列表。 它将你访问" [**安全建议"**](tvm-security-recommendation.md) 页。 如果要查看所有安全建议，在进入"安全建议"页面后，清除搜索字段。
 
 2. 在列表中选择一个项。 该飞出面板将打开，并包含与建议相关的详细信息。 选择 **修正选项**。
 

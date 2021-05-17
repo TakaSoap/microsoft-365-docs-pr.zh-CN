@@ -1,7 +1,7 @@
 ---
 title: 运行 Microsoft 365 Defender 攻击模拟
-description: 运行 Microsoft 365 Defender 试点项目的攻击模拟，了解其展开方式并快速修复。
-keywords: Microsoft 365 Defender 试点攻击模拟， 运行 Microsoft 365 Defender 试点攻击模拟， 在 Microsoft 365 Defender 中模拟攻击， Microsoft 365 Defender 试点项目， 网络安全， 高级永久性威胁， 企业安全， 设备， 设备， 标识， 用户， 数据， 应用程序， 事件， 自动调查和修正， 高级搜寻
+description: 为 Defender 试点Microsoft 365攻击模拟，查看其展开方式并快速修正。
+keywords: Microsoft 365Defender 试点攻击模拟， 运行 Microsoft 365 Defender 试点攻击模拟， 模拟 Microsoft 365 Defender 中的攻击， Microsoft 365 Defender 试点项目， 网络安全， 高级永久性威胁， 企业安全， 设备， 设备， 标识， 用户， 数据， 应用程序， 事件， 自动调查和修正， 高级搜寻
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -39,7 +39,7 @@ ms.locfileid: "51934473"
 
 你当前处于攻击模拟阶段。
 
-准备试点环境后，可以测试 Microsoft 365 Defender 事件管理和自动调查和修正功能了。 我们将帮助你模拟复杂的攻击，该攻击利用高级技术在检测中隐藏。 该攻击枚举域控制器上打开 (SMB) 会话，并检索用户设备的最新 IP 地址。 此类攻击通常不包括在被攻击的设备上丢弃的文件，它们仅出现在内存中。 他们通过使用现有系统和管理工具"离开陆地"，将其代码注入系统进程以隐藏其执行，此类行为允许他们规避检测并保留在设备上。
+准备试点环境后，可以测试 defender 事件Microsoft 365自动调查和修正功能了。 我们将帮助你模拟复杂的攻击，该攻击利用高级技术在检测中隐藏。 该攻击枚举域控制器上打开 (SMB) 会话，并检索用户设备的最新 IP 地址。 此类攻击通常不包括在被攻击的设备上丢弃的文件，它们仅出现在内存中。 他们通过使用现有系统和管理工具"离开陆地"，将其代码注入系统进程以隐藏其执行，此类行为允许他们规避检测并保留在设备上。
 
 在此模拟中，我们的示例方案从 PowerShell 脚本开始。 用户可能会被欺骗运行脚本。 或者，脚本可能从远程连接从以前受感染的设备（尝试在网络中进行后向移动的攻击者）从远程连接运行到另一台计算机。 检测这些脚本可能很困难，因为管理员通常还远程运行脚本以执行各种管理活动。
 
@@ -60,16 +60,16 @@ ms.locfileid: "51934473"
 
    - 设备使用 Windows Server 2008 R2 或更高版本运行。
    - 测试域控制器到 [Microsoft Defender 的标识并](/azure/security-center/security-center-wdatp) 启用 [远程管理](/windows-server/administration/server-manager/configure-remote-management-in-server-manager)。
-   - 验证 [是否已启用 Microsoft Defender for Identity 和 Microsoft Cloud App Security](/cloud-app-security/mdi-integration) 集成。
+   - 验证是否[已启用 Microsoft Defender 的标识Microsoft Cloud App Security集成](/cloud-app-security/mdi-integration)。
    - 在域中创建测试用户 - 无需管理员权限。
 
 3. 验证测试设备配置：
 
-   1. 设备使用 Windows 10 版本 1903 或更高版本运行。
+   1. 设备使用 Windows 10版本 1903 或更高版本运行。
 
    1. 测试设备已加入测试域。
 
-   1. [打开Windows Defender防病毒 。](/windows/security/threat-protection/windows-defender-antivirus/configure-windows-defender-antivirus-features) 如果在启用防病毒Windows Defender时遇到问题，请参阅 [此疑难解答主题](/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding#ensure-that-windows-defender-antivirus-is-not-disabled-by-a-policy)。
+   1. [打开"Windows Defender 防病毒"。](/windows/security/threat-protection/windows-defender-antivirus/configure-windows-defender-antivirus-features) 如果无法启用Windows Defender 防病毒，请参阅此[疑难解答主题](/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding#ensure-that-windows-defender-antivirus-is-not-disabled-by-a-policy)。
 
    1. 验证测试设备已载入[Microsoft Defender 终结点) 。 ](/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints)
 
@@ -81,7 +81,7 @@ ms.locfileid: "51934473"
 
 1. 使用测试用户帐户登录到测试设备。
 
-2. 在测试Windows PowerShell打开一个窗口。
+2. 在测试Windows PowerShell打开一个"打开"窗口。
 
 3. 复制以下模拟脚本：
 
@@ -99,7 +99,7 @@ ms.locfileid: "51934473"
 4. 在提示符下，粘贴并运行复制的脚本。
 
 > [!NOTE]
-> 如果使用远程桌面协议 (RDP) 运行 PowerShell，请使用 RDP 客户端中的"键入剪贴板文本"命令，因为 **CTRL-V** 热键或右键单击粘贴方法可能不起作用。 PowerShell 的最新版本有时也不接受该方法，您可能首先必须复制到内存中的记事本，将其复制到虚拟机中，然后将其粘贴到 PowerShell 中。
+> 如果使用远程桌面协议 (RDP) 运行 PowerShell，请使用 RDP 客户端中的"键入剪贴板文本"命令，因为 **CTRL-V** 热键或右键单击粘贴方法可能不起作用。 PowerShell 的最新版本有时也不接受该方法，您可能首先必须复制到内存中的 记事本，将其复制到虚拟机中，然后将其粘贴到 PowerShell 中。
 
 几秒钟后，notepad.exe<i>打开。</i> 模拟攻击代码将注入到notepad.exe。 将自动生成的记事本实例保持打开状态，以体验完整方案。
 
@@ -120,13 +120,13 @@ To see the Automated Incident and Response feature in action， keep the notepad
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Bzwz?]
 
-切换到 SOC 分析员的角度，你现在可以在 Microsoft 365 安全中心门户中开始调查攻击。
+切换到 SOC 分析员的角度，你现在可以在安全中心门户中开始Microsoft 365攻击。
 
-1. 从任何 [设备打开 Microsoft 365](https://security.microsoft.com/incidents) 安全中心门户事件队列。
+1. 从任何[Microsoft 365打开安全中心](https://security.microsoft.com/incidents)门户事件队列。
 
 2. 从 **菜单导航到** "事件"。
 
-    ![Microsoft 365 安全中心的左侧菜单上显示的事件屏幕截图](../../media/mtp/fig1.png)
+    ![事件屏幕截图，如Microsoft 365安全中心的左侧菜单上所示](../../media/mtp/fig1.png)
 
 3. 模拟攻击的新事件将显示在事件队列中。
 
@@ -134,7 +134,7 @@ To see the Automated Incident and Response feature in action， keep the notepad
 
 ### <a name="investigate-the-attack-as-a-single-incident"></a>将攻击作为单个事件进行调查
 
-Microsoft 365 Defender 将分析关联在一起，并将不同产品的所有相关警报和调查聚合到一个事件实体中。 通过执行此操作，Microsoft 365 Defender 展示了更广泛的攻击案例，让 SOC 分析师可以了解和响应复杂的威胁。
+Microsoft 365Defender 将分析关联，并将不同产品的相关警报和调查聚合到一个事件实体中。 通过执行此操作，Microsoft 365 Defender 显示更广泛的攻击案例，让 SOC 分析师可以了解和响应复杂的威胁。
 
 此模拟期间生成的警报与同一威胁相关联，因此，自动聚合为单个事件。
 
@@ -152,7 +152,7 @@ Microsoft 365 Defender 将分析关联在一起，并将不同产品的所有相
 
 3. 选择 **"打开事件** 页面"获取有关事件详细信息。
 
-   在 **"事件** "页中，你可以看到与事件相关的所有警报和信息。 这些信息包括警报中涉及的实体和资产、警报的检测源 (Microsoft Defender for Identity、EDR) ，以及它们链接在一起的原因。 查看事件警报列表将显示攻击进度。 从此视图中，你可以查看和调查各个警报。
+   在 **"事件** "页中，你可以看到与事件相关的所有警报和信息。 该信息包括警报中涉及的实体和资产、警报的检测源 (Microsoft Defender for Identity、EDR) ，以及它们链接在一起的原因。 查看事件警报列表将显示攻击进度。 从此视图中，你可以查看和调查各个警报。
 
    您还可以从右侧 **菜单中** 单击"管理事件"，以标记事件、将其分配给自己并添加注释。
 
@@ -165,11 +165,11 @@ Microsoft 365 Defender 将分析关联在一起，并将不同产品的所有相
 让我们看一下模拟攻击期间生成的一些警报。
 
 > [!NOTE]
-> 我们将仅演练模拟攻击期间生成的一些警报。 根据 Windows 版本和在测试设备上运行的 Microsoft 365 Defender 产品，你可能会看到按略有不同的顺序显示更多警报。
+> 我们将仅演练模拟攻击期间生成的一些警报。 根据测试设备上Windows的 Microsoft 365 Defender 产品的版本，你可能会看到更多警报以略有不同的顺序显示。
 
 ![生成的警报的屏幕截图](../../media/mtp/fig6.png)
 
-#### <a name="alert-suspicious-process-injection-observed-source-microsoft-defender-for-endpoint-edr"></a>警报：在源中观察到的可疑 (：适用于终结点 EDR 的 Microsoft Defender) 
+#### <a name="alert-suspicious-process-injection-observed-source-microsoft-defender-for-endpoint-edr"></a>警报：发现可疑进程注入 (源：Microsoft Defender for Endpoint EDR) 
 
 高级攻击者使用复杂而复杂的方法来保留内存，并隐藏在检测工具中。 一种常见技术是在受信任的系统进程（而不是恶意可执行文件）内进行操作，使得检测工具和安全操作难以发现恶意代码。
 
@@ -177,7 +177,7 @@ Microsoft 365 Defender 将分析关联在一起，并将不同产品的所有相
 
 ![有关注入潜在恶意代码的警报的屏幕截图](../../media/mtp/fig7.png)
 
-#### <a name="alert-unexpected-behavior-observed-by-a-process-run-with-no-command-line-arguments-source-microsoft-defender-for-endpoint-edr"></a>警报：在源：适用于终结点 EDR (没有命令行参数的进程运行时观察到的意外) 
+#### <a name="alert-unexpected-behavior-observed-by-a-process-run-with-no-command-line-arguments-source-microsoft-defender-for-endpoint-edr"></a>警报：进程在运行时观察到的意外行为，没有命令行参数 (Source： Microsoft Defender for Endpoint EDR) 
 
 Microsoft Defender 终结点检测通常针对攻击技术最常见的属性。 此方法可确保持续性，并提升攻击者切换到较新策略的漏洞。
 
@@ -227,7 +227,7 @@ Microsoft Defender 终结点检测通常针对攻击技术最常见的属性。 
 
 选择用户名以打开用户配置文件页，可在其中执行进一步调查。 [阅读更多有关调查有风险的用户。](/cloud-app-security/tutorial-ueba#identify)
 
-![Cloud App Security 用户页面的屏幕截图](../../media/mtp/fig13.png)
+![用户云应用安全屏幕截图](../../media/mtp/fig13.png)
 
 ## <a name="automated-investigation-and-remediation"></a>自动调查和修复
 
@@ -236,7 +236,7 @@ Microsoft Defender 终结点检测通常针对攻击技术最常见的属性。 
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4BzwB]
 
-在 Microsoft 365 安全中心门户中导航回事件。 " **事件"** 页中的"调查 **"选项卡显示** 由 Microsoft Defender for Identity 和 Microsoft Defender for Endpoint 触发的自动调查。 以下屏幕截图仅显示 Defender for Endpoint 触发的自动调查。 默认情况下，Defender for Endpoint 会自动修正队列中找到的项目，这需要进行修正。
+在安全中心门户中Microsoft 365事件。 " **事件"** 页中的"调查 **"选项卡显示** 由 Microsoft Defender for Identity 和 Microsoft Defender for Endpoint 触发的自动调查。 以下屏幕截图仅显示 Defender for Endpoint 触发的自动调查。 默认情况下，Defender for Endpoint 会自动修正队列中找到的项目，这需要进行修正。
 
 ![与事件相关的自动调查的屏幕截图](../../media/mtp/fig14.png)
 
@@ -262,7 +262,7 @@ Microsoft Defender 终结点检测通常针对攻击技术最常见的属性。 
 
 选择 **"管理事件"。** 将状态设置为 **"解决事件"** 并选择相关分类。
 
-当事件解决时，它将关闭 Microsoft 365 安全中心和相关门户中所有关联的警报。
+事件解决后，它将关闭安全中心和相关门户Microsoft 365警报。
 
 !["事件"页面的屏幕截图，其中打开"管理事件"面板，可在其中单击开关来解决事件](../../media/mtp/fig16.png)
 
@@ -281,15 +281,15 @@ Microsoft Defender 终结点检测通常针对攻击技术最常见的属性。 
 
 1. 验证租户是否已启用[Microsoft 365 Defender。](m365d-enable.md#confirm-that-the-service-is-on)
 2. 确定用于接收电子邮件的目标邮箱。
-    a. Microsoft Defender for Office 365 b 必须监视此邮箱。 要求 3 中的设备需要访问此邮箱
-3. 配置测试设备：a. 确保使用的是 Windows 10 版本 1903 或更高版本。
+    a. Microsoft Defender 必须监视此邮箱，Office 365 b。 要求 3 中的设备需要访问此邮箱
+3. 配置测试设备：a. 确保使用的是 Windows 10 1903 或更高版本。
     b. 将测试设备加入测试域。
-    c. [打开Windows Defender防病毒 。](/windows/security/threat-protection/windows-defender-antivirus/configure-windows-defender-antivirus-features) 如果在启用防病毒Windows Defender时遇到问题，请参阅 [此疑难解答主题](/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding#ensure-that-windows-defender-antivirus-is-not-disabled-by-a-policy)。
+    c. [打开"Windows Defender 防病毒"。](/windows/security/threat-protection/windows-defender-antivirus/configure-windows-defender-antivirus-features) 如果无法启用Windows Defender 防病毒，请参阅[此疑难解答主题](/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding#ensure-that-windows-defender-antivirus-is-not-disabled-by-a-policy)。
     d. [载入到 Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints)。
 
 ### <a name="run-the-simulation"></a>运行模拟
 
-1. 从外部电子邮件帐户，将电子邮件发送到测试环境要求部分的步骤 2 中标识的邮箱。 包括任何现有电子邮件筛选器策略允许的附件。 此文件不需要是恶意文件或可执行文件。 建议的文件类型是<i>.pdf、.exe</i> (（如果允许) ）或 Office 文档（如 Word 文件）。 <i></i>
+1. 从外部电子邮件帐户，将电子邮件发送到测试环境要求部分的步骤 2 中标识的邮箱。 包括任何现有电子邮件筛选器策略允许的附件。 此文件不需要是恶意文件或可执行文件。 建议的文件类型包括.pdf、.exe(（如果) ）或Office Word 文件等文档。 <i> </i> <i></i>
 2. 打开从设备发送的电子邮件，如测试环境要求部分的步骤 3 中的定义。 打开附件或将文件保存到设备。
 
 #### <a name="go-hunting"></a>转到搜寻
@@ -420,7 +420,7 @@ Microsoft Defender 终结点检测通常针对攻击技术最常见的属性。 
 
    对于此试点，你可能希望将此规则限制为生产环境中的测试设备的子集。
 
-6. 选择“创建”。 然后，从 **导航面板中选择** "自定义检测规则"。
+6. 选择 **创建**。 然后，从 **导航面板中选择** "自定义检测规则"。
 
    ![菜单中的"自定义检测规则"选项的屏幕截图](../../media/mtp/fig27a.png)
 
@@ -435,14 +435,14 @@ Microsoft Defender 终结点检测通常针对攻击技术最常见的属性。 
 若要详细了解高级搜寻，以下 Web 广播将演练 Microsoft 365 Defender 中高级搜寻的功能，以创建跨支柱查询、透视实体并创建自定义检测和修正操作。
 
 > [!NOTE]
-> 使用自己的 GitHub 帐户做好准备，以在试点测试实验室环境中运行搜寻查询。
+> 请准备好自己的GitHub帐户，以在试点测试实验室环境中运行搜寻查询。
 
 |标题|说明|下载 MP4|观看 YouTube|CSL 文件使用|
 |---|---|---|---|---|
 |第 1 节：KQL 基础知识|我们将介绍 Microsoft 365 Defender 中高级搜寻功能的基础知识。 了解可用的高级搜寻数据和基本 KQL 语法和运算符。|[MP4](https://aka.ms/MTP15JUL20_MP4)|[YouTube](https://youtu.be/0D9TkGjeJwM)|[第 1 部分：Git 中的 CSL 文件](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%201%20-%20KQL%20Fundamentals.csl)|
 |第 2 集：加入|我们将继续了解高级搜寻数据以及如何将表联接在一起。 了解内部、外部、唯一和半联接，以及默认 Kusto innerunique 联接的细微差别。|[MP4](https://aka.ms/MTP22JUL20_MP4)|[YouTube](https://youtu.be/LMrO6K5TWOU)|[第 2 部分：Git 中的 CSL 文件](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%202%20-%20Joins.csl)|
 |第 3 部分：汇总、透视和可视化数据|既然我们可以筛选、操作和联接数据，现在可以开始汇总、量化、透视和可视化了。 在此剧集，我们将介绍汇总运算符和一些可在高级搜寻架构中深入其他表时执行的计算。 我们将数据集转换为可帮助改善分析的图表。|[MP4](https://aka.ms/MTP29JUL20_MP4)|[YouTube](https://youtu.be/UKnk9U1NH6Y)|[第 3 部分：Git 中的 CSL 文件](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%203%20-%20Summarizing%2C%20Pivoting%2C%20and%20Joining.csl)|
-|第 4 集：让我们搜寻！ 将 KQL 应用于事件跟踪|跟踪某些攻击者活动的时间！ 在此集中，我们将使用对 Microsoft 365 Defender 中的 KQL 和高级搜寻的改进了解来跟踪攻击。 了解字段中用于跟踪攻击者活动的一些提示和技巧，包括网络安全的 APC 以及如何将它们应用到事件响应。|[MP4](https://aka.ms/MTP5AUG20_MP4)|[YouTube](https://youtu.be/2EUxOc_LNd8)|[第 4 部分：Git 中的 CSL 文件](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%204%20-%20Lets%20Hunt.csl)|
+|第 4 集：让我们搜寻！ 将 KQL 应用于事件跟踪|跟踪某些攻击者活动的时间！ 在此剧集，我们将使用对 Microsoft 365 Defender 中的 KQL 和高级搜寻的改进了解来跟踪攻击。 了解字段中用于跟踪攻击者活动的一些提示和技巧，包括网络安全的 APC 以及如何将它们应用到事件响应。|[MP4](https://aka.ms/MTP5AUG20_MP4)|[YouTube](https://youtu.be/2EUxOc_LNd8)|[第 4 部分：Git 中的 CSL 文件](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%204%20-%20Lets%20Hunt.csl)|
 |
 
 ## <a name="next-step"></a>后续步骤

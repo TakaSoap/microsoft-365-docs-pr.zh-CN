@@ -34,35 +34,35 @@ ms.locfileid: "51934629"
 
 > 想要体验 Microsoft Defender for Endpoint？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
-了解如何在 Intune 公司门户注册的设备上在 Android 上部署 Defender for Endpoint。 有关 Intune 设备注册详细信息，请参阅  [注册设备](https://docs.microsoft.com/mem/intune/user-help/enroll-device-android-company-portal)。
+了解如何在已注册的设备上在 Android Intune 公司门户 Defender for Endpoint。 有关 Intune 设备注册详细信息，请参阅  [注册设备](https://docs.microsoft.com/mem/intune/user-help/enroll-device-android-company-portal)。
 
 > [!NOTE]
 > **Android 上的 Defender for Endpoint 现已在 [Google Play 上可用](https://play.google.com/store/apps/details?id=com.microsoft.scmx)** <br>
-> 你可以从 Intune 连接到 Google Play，以跨设备管理员和 Android 企业版注册模式部署 Defender for Endpoint 应用。
+> 你可以从 Intune 连接到 Google Play，以跨设备管理员和 Android Enterprise终结点应用。
 通过 Google Play 自动更新应用。
 
 ## <a name="deploy-on-device-administrator-enrolled-devices"></a>在设备管理员注册的设备上部署
 
-**在 Intune 公司门户上的 Android 上部署 Defender for Endpoint - 设备管理员注册的设备**
+**在 Android 设备上部署 Defender for Endpoint Intune 公司门户 - 设备管理员注册的设备**
 
-了解如何在 Intune 公司门户上的 Android 上部署 Defender for Endpoint - 设备管理员注册的设备。 
+了解如何在 Android 设备上部署 Defender for Endpoint Intune 公司门户 - 设备管理员注册的设备。 
 
 ### <a name="add-as-android-store-app"></a>添加为 Android 应用商店应用
 
-1. 在 [Microsoft Endpoint Manager 管理中心中](https://go.microsoft.com/fwlink/?linkid=2109431)，转到 **"应用""Android** \> **应用** \> **""添加 \> Android 应用商店"应用**，然后选择"**选择"。**
+1. In [Microsoft Endpoint Manager admin center，](https://go.microsoft.com/fwlink/?linkid=2109431) go to **Apps** \> **Android Apps** Add Android store \> **\> app** and choose **Select**.
 
-   ![Microsoft Endpoint Manager 管理中心添加 android 应用商店应用程序的图像](images/mda-addandroidstoreapp.png)
+   ![管理中心Microsoft Endpoint Manager android 应用商店应用程序的图像](images/mda-addandroidstoreapp.png)
 
 2. 在" **添加应用程序"页** 的"应用程序信息"部分 *，输入* ： 
 
    - **名称** 
    - **说明**
-   - **作为** Microsoft 发布服务器。
+   - **Publisher** Microsoft。
    - **作为 Defender** for https://play.google.com/store/apps/details?id=com.microsoft.scmx Endpoint (的应用商店 URL Google Play 应用商店 URL)  
 
    其他字段是可选的。 选择“**下一步**”。
 
-   ![Microsoft Endpoint Manager 管理中心添加应用信息的图像](images/mda-addappinfo.png)
+   ![管理中心Microsoft Endpoint Manager应用信息的图像](images/mda-addappinfo.png)
 
 3. 在" *分配"* 部分，转到" **必需"** 部分并选择" **添加组"。** 然后，你可以选择要 (Android) Defender for Endpoint 的用户组。 选择 **"选择**"，然后选择"下一 **步"。**
 
@@ -71,18 +71,18 @@ ms.locfileid: "51934629"
 
     > [!div class="mx-imgBorder"]
 
-    > ![Microsoft Endpoint Manager 管理中心选定用户组的图像](images/363bf30f7d69a94db578e8af0ddd044b.png)
+    > ![管理中心Microsoft Endpoint Manager用户组的图像](images/363bf30f7d69a94db578e8af0ddd044b.png)
 
 4. 在"**审阅+创建**"部分，验证输入的所有信息是否正确，然后选择"创建 **"。**
 
     片刻后，将成功创建 Defender for Endpoint 应用，页面右上角将显示一条通知。
 
-    ![Defender 终结点应用的 Microsoft Endpoint Manager 管理中心通知的图像](images/86cbe56f88bb6e93e9c63303397fc24f.png)
+    ![Defender Microsoft Endpoint Manager应用管理员中心通知的图像](images/86cbe56f88bb6e93e9c63303397fc24f.png)
 
 5. 在显示的"应用信息"页的"监视器"部分，选择"设备安装状态"以验证设备安装是否成功完成。
 
     > [!div class="mx-imgBorder"]
-    > ![Microsoft Endpoint Manager 管理中心设备安装的图像](images/513cf5d59eaaef5d2b5bc122715b5844.png)
+    > ![管理Microsoft Endpoint Manager安装的图像](images/513cf5d59eaaef5d2b5bc122715b5844.png)
 
 ### <a name="complete-onboarding-and-check-status"></a>完成载入和检查状态
 
@@ -92,13 +92,13 @@ ms.locfileid: "51934629"
 
 2. 点击 Microsoft Defender for Endpoint 应用图标并按照屏幕上的说明完成应用载入。 详细信息包括最终用户接受 Android 上的 Defender for Endpoint 所需的 Android 权限。
 
-3. 成功载入后，设备将开始显示在 Microsoft Defender 安全中心的"设备"列表上。
+3. 成功载入后，设备将开始显示在设备列表中的Microsoft Defender 安全中心。
 
     ![Defender for Endpoint 门户中的设备图像](images/9fe378a1dce0f143005c3aa53d8c4f51.png)
 
-## <a name="deploy-on-android-enterprise-enrolled-devices"></a>在 Android 企业版注册的设备上部署
+## <a name="deploy-on-android-enterprise-enrolled-devices"></a>在 Android Enterprise注册的设备上部署
 
-Android 上的 Defender for Endpoint 支持 Android 企业版注册的设备。
+Android 上的 Defender for Endpoint 支持 Android Enterprise注册的设备。
 
 有关 Intune 支持的注册选项的详细信息，请参阅 [注册选项](https://docs.microsoft.com/mem/intune/enrollment/android-enroll)。
 
@@ -108,14 +108,14 @@ Android 上的 Defender for Endpoint 支持 Android 企业版注册的设备。
 
 按照以下步骤将 Microsoft Defender for Endpoint 应用添加到托管 Google Play。
 
-1. 在 [Microsoft Endpoint Manager 管理中心中](https://go.microsoft.com/fwlink/?linkid=2109431)，转到 **"应用""Android** \> **应用** \> **""添加**"，然后选择 **"托管 Google Play 应用"。**
+1. In [Microsoft Endpoint Manager admin center，](https://go.microsoft.com/fwlink/?linkid=2109431) go to **Apps** \> **Android Apps** \> **Add** and select Managed Google **Play app**.
 
     > [!div class="mx-imgBorder"]
-    > ![Microsoft Endpoint Manager 管理中心托管 google play 的图像](images/579ff59f31f599414cedf63051628b2e.png)
+    > ![管理中心Microsoft Endpoint Manager google play 的图像](images/579ff59f31f599414cedf63051628b2e.png)
 
 2. 在随后加载的托管 Google Play 页面上，转到搜索框并查找 **Microsoft Defender。** 你的搜索应在托管 Google Play 中显示 Microsoft Defender for Endpoint 应用。 从应用搜索结果中单击 Microsoft Defender for Endpoint 应用。
 
-    ![Microsoft Endpoint Manager 管理中心应用搜索的图像](images/0f79cb37900b57c3e2bb0effad1c19cb.png)
+    ![管理Microsoft Endpoint Manager应用搜索的图像](images/0f79cb37900b57c3e2bb0effad1c19cb.png)
 
 3. 在接下来启动的应用描述页面中，你应该能够看到 Defender for Endpoint 上的应用详细信息。 查看页面上的信息，然后选择"批准 **"。**
 
@@ -126,7 +126,7 @@ Android 上的 Defender for Endpoint 支持 Android 企业版注册的设备。
 
     ![适用于终结点预览应用审批的 Defender 屏幕截图](images/206b3d954f06cc58b3466fb7a0bd9f74.png)
 
-5. You'll be presented with the Approval settings page. 此页面确认你优先处理 Android 上的 Defender for Endpoint 可能请求的新应用权限。 查看选项并选择首选选项。 选择“**完成**”。
+5. You'll be presented with the Approval settings page. 此页面确认你优先处理 Android 上的 Defender for Endpoint 可能请求的新应用权限。 查看选项并选择首选选项。 选择“完成”。
 
     默认情况下，托管 Google Play 在应用请求新权限时 *选择"保持已批准"*
 
@@ -151,19 +151,19 @@ Android 上的 Defender for Endpoint 支持 Android 企业版注册的设备。
 
     1. 在应用 **页面中** ，转到策略 **>应用配置策略>添加>托管设备**。
 
-       ![Microsoft Endpoint Manager 管理中心 android 托管设备的图像](images/android-mem.png)
+       ![android Microsoft Endpoint Manager管理中心托管设备的图像](images/android-mem.png)
 
     1. 在" **创建应用配置策略"** 页中，输入以下详细信息：
     
         - 名称：Microsoft Defender for Endpoint。
-        - 选择 **"Android 企业** 版"作为平台。
+        - 选择 **Android Enterprise** 作为平台。
         - 选择 **"仅作为配置文件类型** 的工作配置文件"。
-        - 单击 **"选择应用"，** 选择 **"Microsoft Defender ATP"，** 选择 **"确定**"，然后选择"下一 **步"。**
+        - 单击 **选择应用**，选择 **Microsoft Defender ATP，** 选择 **确定**，然后选择下一 **步**。
     
         > [!div class="mx-imgBorder"]
         > ![创建应用配置策略页的图像](images/android-create-app.png)
 
-    1. 在" **设置** "页中，转到"权限"部分，单击"添加"以查看支持的权限列表。 在"添加权限"部分，选择以下权限：
+    1. In the **设置** page， go to the Permissions section click on Add to view the list of supported permissions. 在"添加权限"部分，选择以下权限：
 
        - 外部存储 (读取) 
        - 外部存储 (写入) 
@@ -192,12 +192,12 @@ Android 上的 Defender for Endpoint 支持 Android 企业版注册的设备。
         > ![Android 评价创建应用配置策略的图像](images/android-review-create.png)
 
 
-10. 在 **"属性分配编辑"列表中选择"Microsoft Defender ATP** \>  \>  \> **应用"。**
+10. 在 **Microsoft Defender ATP** 属性分配编辑"中选择"应用 \>  \>  \> **"。**
 
     ![应用列表的图像](images/mda-properties.png)
 
 
-11. 将应用分配为 *用户组所需的* 应用。 它通过公司门户 *应用* 在设备下次同步期间自动安装在工作配置文件中。 此分配可通过导航到"必需"部分"添加组"，选择用户组并单击" \> 选择 **"完成**。
+11. 将应用分配为 *用户组所需的* 应用。 在设备下一次 *同步* 期间，它会自动安装在工作配置文件中，公司门户应用。 此分配可通过导航到"必需"部分"添加组"，选择用户组并单击" \> 选择 **"完成**。
 
     > [!div class="mx-imgBorder"]
     > ![编辑应用程序页的图像](images/ea06643280075f16265a596fb9a96042.png)
@@ -206,12 +206,12 @@ Android 上的 Defender for Endpoint 支持 Android 企业版注册的设备。
 12. 在" **编辑应用程序"** 页中，查看上面输入的所有信息。 然后选择" **审阅 + 保存** "，然后 **再次"保存** "以开始工作分配。
 
 ### <a name="auto-setup-of-always-on-vpn"></a>自动设置始终打开 VPN 
-Defender for Endpoint 通过 Intune 支持托管设备的设备配置策略。 此功能可用于在 Android 企业版注册设备上自动设置始终打开 **VPN，** 因此最终用户无需在载入时设置 VPN 服务。
-1.  在 **"设备"上**，根据设备注册类型，选择"配置文件  >  **""** 创建配置文件平台  >    >  **""Android 企业** 版"，选择以下其中一项下的设备限制 
+Defender for Endpoint 通过 Intune 支持托管设备的设备配置策略。 此功能可用于在 Android Enterprise设备上自动设置始终打开 **VPN，** 因此最终用户无需在载入时设置 VPN 服务。
+1.  在 **"设备"** 上，选择"  >  配置文件 **""** 创建配置文件平台 Android Enterprise根据你的设备注册类型，选择下列选项之一  >    >  下的设备限制 
 - **完全托管、专用Corporate-Owned工作配置文件**
 - **个人拥有的工作配置文件**
 
-选择“创建”。
+选择 **创建**。
  
    > ![创建设备配置文件的图像](images/1autosetupofvpn.png)
     
@@ -254,7 +254,7 @@ Defender for Endpoint 通过 Intune 支持托管设备的设备配置策略。 �
 
     ![使用 Microsoft Defender for Endpoint 应用的移动设备的图像](images/mda-devicesafe.png)
 
-4. 在此阶段，设备已成功载入 Android 上的 Defender for Endpoint。 你可以导航到设备页面，在 [Microsoft Defender 安全](https://securitycenter.microsoft.com)**中心验证这一** 点。
+4. 在此阶段，设备已成功载入 Android 上的 Defender for Endpoint。 可以通过导航到"设备 ["Microsoft Defender 安全中心](https://securitycenter.microsoft.com)在设备上 **验证这一** 点。
 
     ![适用于终结点的 Microsoft Defender 门户的图像](images/9fe378a1dce0f143005c3aa53d8c4f51.png)
 

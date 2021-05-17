@@ -33,11 +33,11 @@ ms.locfileid: "51580638"
 
 ## <a name="try-it"></a>试一试！
 
-Microsoft 365 不包括适用于你的企业的公共网站。 若要设置一个，请考虑使用 Web 托管公司，如 GoDaddy、Wix 或 WordPress。
+Microsoft 365不包括企业的公共网站。 若要设置一个，请考虑使用 Web 托管公司，如 GoDaddy、Wix 或 WordPress。
 
 1. 搜索可在其中生成网站的 Web 宿主提供商。
 
      您可能会发现，在注册域名的同一公司中选择网站生成器最为简单。
 1. 设计业务网站，确保包括你的企业徽标、业务用途、文本、图像和链接。
-1. 若要将网站与 Microsoft 365 集成，可以将业务电子邮件添加到网站，并链接到 Microsoft Teams、SharePoint 或其他协作工具。
-1. 请确保将你的网站连接到你的域名，&#39;Microsoft 365 上用于电子邮件的域名。
+1. 若要将网站与Microsoft 365集成，您可以将业务电子邮件添加到网站，并添加指向 Microsoft Teams、SharePoint 或其他协作工具的链接。
+1. 请确保将网站连接到域名，&#39;用于电子邮件Microsoft 365。

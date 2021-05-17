@@ -54,4 +54,4 @@ ms.locfileid: "51500947"
 :---|:---|:---
 得分 | 双精度 | 当前分数。
 时间 | 日期时间 | 调用此 API 的日期和时间。
-RbacGroupName | 字符串 | 设备组名称。
+RbacGroupName | String | 设备组名称。

@@ -1,7 +1,7 @@
 ---
-title: 威胁和漏洞管理的安全建议
-description: 获取威胁和漏洞管理中按威胁、被泄露可能性和价值确定优先级的可操作安全建议。
-keywords: 威胁和漏洞管理， 适用于终结点的 Microsoft Defender 电视安全建议， 网络安全建议， 可操作的安全建议
+title: 安全建议危险和漏洞管理
+description: 获取可操作的安全建议（按威胁、泄露可能性和价值危险和漏洞管理。
+keywords: 危险和漏洞管理， 适用于终结点的 Microsoft Defender 电视安全建议， 网络安全建议， 可操作的安全建议
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -25,7 +25,7 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 04/21/2021
 ms.locfileid: "51933729"
 ---
-# <a name="security-recommendations---threat-and-vulnerability-management"></a>安全建议 - 威胁和漏洞管理
+# <a name="security-recommendations---threat-and-vulnerability-management"></a>安全建议 - 危险和漏洞管理
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -39,7 +39,7 @@ ms.locfileid: "51933729"
 
 组织中标识的网络安全漏洞将映射到可操作的安全建议，并按其影响确定优先级。 优先建议有助于缩短缓解或修正漏洞和推动合规性的时间。
 
-每个安全建议都包括可操作修正步骤。 为了帮助进行任务管理，也可使用 Microsoft Intune 和 Microsoft Endpoint Configuration Manager 发送建议。 当威胁形势发生变化时，建议也会发生变化，因为它会持续从你的环境收集信息。
+每个安全建议都包括可操作修正步骤。 为了帮助进行任务管理，也可使用 Microsoft Intune 和 Microsoft Endpoint Configuration Manager。 当威胁形势发生变化时，建议也会发生变化，因为它会持续从你的环境收集信息。
 
 >[!TIP]
 >若要获取有关新漏洞事件的电子邮件，请参阅在 Microsoft [Defender for Endpoint](configure-vulnerability-email-notifications.md)中配置漏洞电子邮件通知
@@ -58,8 +58,8 @@ ms.locfileid: "51933729"
 
 以几种不同方式访问"安全建议"页：
 
-- Microsoft Defender 安全中心中的威胁和 [漏洞管理导航菜单](portal-overview.md)
-- 威胁和漏洞管理 [仪表板中的主要安全建议](tvm-dashboard-insights.md)
+- 威胁漏洞管理导航菜单中[的Microsoft Defender 安全中心](portal-overview.md)
+- 仪表板中危险和漏洞管理[建议](tvm-dashboard-insights.md)
 
 查看以下位置的相关安全建议：
 
@@ -68,11 +68,11 @@ ms.locfileid: "51933729"
 
 ### <a name="navigation-menu"></a>导航菜单
 
-转到威胁和漏洞管理导航菜单，然后选择 **安全建议**。 此页面包含针对组织中发现的威胁和漏洞的安全建议列表。
+转到导航危险和漏洞管理，然后选择 **安全建议**。 此页面包含针对组织中发现的威胁和漏洞的安全建议列表。
 
-### <a name="top-security-recommendations-in-the-threat-and-vulnerability-management-dashboard"></a>威胁和漏洞管理仪表板中的主要安全建议
+### <a name="top-security-recommendations-in-the-threat-and-vulnerability-management-dashboard"></a>危险和漏洞管理仪表板中危险和漏洞管理建议
 
-在给定一天中，作为安全管理员，你可以查看威胁和漏洞管理[](tvm-dashboard-insights.md)仪表板，并排查看你的曝光分数和[](tvm-exposure-score.md) [Microsoft 设备安全分数](tvm-microsoft-secure-score-devices.md)。 目标是 **降低组织对** 漏洞的暴露程度，提高组织的设备安全性，以更稳定地抵御网络安全威胁攻击。 顶级安全建议列表可帮助你实现该目标。
+在给定一天中，作为安全管理员，你可以查看 危险和漏洞管理 仪表板[](tvm-dashboard-insights.md)，以查看你的曝光分数与设备的[](tvm-exposure-score.md)Microsoft 安全[分数并排](tvm-microsoft-secure-score-devices.md)显示。 目标是 **降低组织对** 漏洞的暴露程度，提高组织的设备安全性，以更稳定地抵御网络安全威胁攻击。 顶级安全建议列表可帮助你实现该目标。
 
 ![顶级安全建议卡片示例，具有四个安全建议。](images/top-security-recommendations350.png)
 
@@ -85,7 +85,7 @@ ms.locfileid: "51933729"
 "公开设备 **"图的颜色** 随着趋势的变化而更改。 如果公开的设备数量上升，则颜色将变为红色。 如果公开设备的数量减少，图形的颜色将变为绿色。
 
 >[!NOTE]
->威胁和漏洞管理显示最多 **30** 天之前使用的设备。 这不同于适用于终结点的 Microsoft Defender 的其余部分，如果设备已使用超过 7 天，则设备处于"非活动"状态。
+>威胁漏洞管理显示最多 **30** 天之前使用的设备。 这不同于适用于终结点的 Microsoft Defender 的其余部分，如果设备已使用超过 7 天，则设备处于"非活动"状态。
 
 ![安全建议登录页面示例。](images/tvmsecrec-updated.png)
 
@@ -106,7 +106,7 @@ ms.locfileid: "51933729"
 
 - **打开软件页** - 打开软件页，获取有关软件及其分发方式的更多上下文。 这些信息可能包括威胁上下文、相关建议、发现的漏洞、公开的设备数量、发现的漏洞、已安装软件的设备的名称和详细信息以及版本分发。
 
-- [**修正选项**](tvm-remediation.md) - 提交修正请求以在 Microsoft Intune 中打开票证，让 IT 管理员进行选取和解决。 在"修正"页中跟踪修正活动。
+- [**修正选项**](tvm-remediation.md)- 提交修正请求以在 Microsoft Intune中打开票证，让 IT 管理员进行选取和解决。 在"修正"页中跟踪修正活动。
 
 - [**例外选项**](tvm-exception.md) - 提交异常、提供理由以及设置异常持续时间（如果尚无法修正问题）。
 
@@ -123,7 +123,7 @@ ms.locfileid: "51933729"
 
 ## <a name="request-remediation"></a>请求修正
 
-威胁和漏洞管理修正功能通过修正请求工作流填补了安全和 IT 管理员之间的空白。 安全管理员（如你可以请求 IT 管理员将漏洞从安全建议页面修正到Intune） [了解有关修正选项的详细信息](tvm-remediation.md)
+此危险和漏洞管理修复功能通过修正请求工作流填补了安全和 IT 管理员之间的空白。 安全管理员（如你可以请求 IT 管理员将漏洞从安全建议页面修正到Intune） [了解有关修正选项的详细信息](tvm-remediation.md)
 
 ### <a name="how-to-request-remediation"></a>如何请求修正
 
@@ -157,7 +157,7 @@ ms.locfileid: "51933729"
 
 3. 从弹出窗格中，从下拉菜单中选择不准确类别，填写您的电子邮件地址和有关不准确的详细信息。
 
-4. 选择“**提交**”。 将立即将反馈发送给威胁和漏洞管理专家。
+4. 选择“**提交**”。 你的反馈将立即发送给危险和漏洞管理专家。
 
 ## <a name="related-articles"></a>相关文章
 

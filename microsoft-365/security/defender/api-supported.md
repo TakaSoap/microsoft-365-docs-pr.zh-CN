@@ -1,7 +1,7 @@
 ---
 title: 支持的 Microsoft 365 Defender API
 description: 支持的 Microsoft 365 Defender API
-keywords: Microsoft 365 Defender， API， api
+keywords: Microsoft 365Defender， API， api
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -58,7 +58,7 @@ ms.locfileid: "51935721"
 
 ## <a name="related-articles"></a>相关文章
 
-- [Microsoft 365 Defender API 概述](api-overview.md)
+- [Microsoft 365Defender API 概述](api-overview.md)
 - [访问 Microsoft 365 Defender API](api-access.md)
 - [了解 API 限制和许可](api-terms.md)
 - [了解错误代码](api-error-codes.md)

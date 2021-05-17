@@ -73,7 +73,7 @@ Testing connection with https://v20.events.data.microsoft.com/ping ... [OK]
 
 > [!WARNING]
 > 不支持经过身份验证的代理。 确保仅使用 PAC、WPAD 或静态代理。 出于安全考虑，也不支持 SSL 检查和截获代理。 为 SSL 检查和代理服务器配置例外，以将数据从 macOS 上的 Microsoft Defender for Endpoint 直接传递到相关 URL，而不会拦截。 将拦截证书添加到全局存储将不允许拦截。
-若要测试连接是否未阻止：在 Microsoft Edge for Mac 或 Safari 等浏览器中打开 https://x.cp.wd.microsoft.com/api/report https://cdn.x.cp.wd.microsoft.com/ping 和 。
+若要测试连接是否未阻止：在浏览器（如 Microsoft Edge for Mac 或 Safari）中打开 https://x.cp.wd.microsoft.com/api/report https://cdn.x.cp.wd.microsoft.com/ping 和 。
 
 （可选）在终端中，运行以下命令：
 

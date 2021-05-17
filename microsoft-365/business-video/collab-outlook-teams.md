@@ -1,5 +1,5 @@
 ---
-title: 使用 Outlook 和 Teams 进行协作
+title: 通过使用协作和Outlook Teams
 f1.keywords:
 - NOCSH
 ms.author: efrene
@@ -29,7 +29,7 @@ ms.locfileid: "51580662"
 ---
 # <a name="use-outlook-and-teams-together"></a>结合使用 Outlook 和 Teams
 
-当你与小型企业的员工、合作伙伴、客户和其他人员通信时，请使用 Microsoft 365 中的 Outlook 和 Teams。 在 Outlook 中，你将找到电子邮件、日历、联系人和任务，而在 Teams 中，你将找到对话、文件、会议和快速访问 Microsoft 和第三方应用。 下面汇总了如何在企业内使用每一项功能。
+当你与小型企业的员工、合作伙伴、客户和其他人员通信时，Outlook Teams和Microsoft 365。 在 Outlook 中，你将找到电子邮件、日历、联系人和任务，而在 Teams 你将找到对话、文件、会议和快速访问 Microsoft 和第三方应用。 下面汇总了如何在企业内使用每一项功能。
 
 ## <a name="microsoft-outlook"></a>Microsoft Outlook
 
@@ -45,13 +45,13 @@ ms.locfileid: "51580662"
 - 与团队进行丰富的实时对话，并邀请客户或来宾加入对话。
 - 进行私人聊天或通话，并与其他人共享你的屏幕。
 - 安排和加入与员工和来宾的会议。
-- 在关联的 SharePoint 站点或 OneDrive for Business 中添加或共享文件。
-- 将 Planner、Power BI 或 GitHub 等更多应用添加到 Teams。
+- 添加或共享与网站或SharePoint关联的OneDrive for Business。
+- 将更多应用（如 Planner、Power BI 或 GitHub）Teams。
 
-:::image type="content" source="../media/teams-model.png" alt-text="Microsoft Teams 主页的样式化图像。"::: 
+:::image type="content" source="../media/teams-model.png" alt-text="主页样式化Microsoft Teams图像。"::: 
 
 ## <a name="related-articles"></a>相关文章
 
-[什么是 Outlook？](https://support.microsoft.com/office10f1fa35-f33a-4cb7-838c-a7f3e6228b20)
+[什么是Outlook？](https://support.microsoft.com/office10f1fa35-f33a-4cb7-838c-a7f3e6228b20)
 
-[Teams 概述](/MicrosoftTeams/Teams-overview)
+[Teams概述](/MicrosoftTeams/Teams-overview)

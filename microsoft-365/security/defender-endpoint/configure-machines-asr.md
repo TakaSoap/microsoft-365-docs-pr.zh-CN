@@ -38,21 +38,21 @@ ms.locfileid: "51932843"
 ![攻击面管理卡](images/secconmgmt_asr_card.png)<br>
 *攻击面管理卡*
 
-攻击 *面管理卡* 是 Microsoft 365 安全中心工具的入口点，可用于：
+攻击 *面管理卡* 是安全中心中Microsoft 365入口点，可用于：
 
 * 了解 ASR 规则当前在组织中是如何部署的。
 * 查看 ASR 检测并识别可能的不正确检测。
 * 分析排除的影响并生成要排除的文件路径列表。
 
-选择 **转到攻击面管理**  >  **监视&报告>攻击面减少规则>添加排除项**。 可以在那里导航到 Microsoft 365 安全中心的其他部分。
+选择 **转到攻击面管理**  >  **监视&报告>攻击面减少规则>添加排除项**。 然后，你可以导航到安全中心Microsoft 365分区。
 
-![Microsoft 365 安全中心的"攻击面减少规则"页中的"添加排除项"选项卡](images/secconmgmt_asr_m365exlusions.png)<br>
-*Microsoft 365 安全中心的"攻击面减少规则"页中的"添加排除项"选项卡*
+![在安全中心的"攻击面减少规则"Microsoft 365排除项"选项卡](images/secconmgmt_asr_m365exlusions.png)<br>
+安全 ***中心的"攻击** 面减少规则"页中的"添加排除Microsoft 365选项卡*
 
 > [!NOTE]
-> 若要访问 Microsoft 365 安全中心，你需要 Microsoft 365 E3 或 E5 许可证和在 Azure Active Directory 上具有特定角色的帐户。 [阅读所需的许可证和权限](https://docs.microsoft.com/office365/securitycompliance/microsoft-security-and-compliance#required-licenses-and-permissions)。
+> 若要访问Microsoft 365安全中心，您需要一个 Microsoft 365 E3 或 E5 许可证以及一个在安全中心具有特定角色Azure Active Directory。 [阅读所需的许可证和权限](https://docs.microsoft.com/office365/securitycompliance/microsoft-security-and-compliance#required-licenses-and-permissions)。
 
-有关 Microsoft 365 安全中心中的 ASR 规则部署详细信息，请参阅监视 [和管理 ASR 规则部署和检测](https://docs.microsoft.com/office365/securitycompliance/monitor-devices#monitor-and-manage-asr-rule-deployment-and-detections)。
+有关安全中心中 ASR 规则部署Microsoft 365，请参阅监视和管理[ASR 规则部署和检测](https://docs.microsoft.com/office365/securitycompliance/monitor-devices#monitor-and-manage-asr-rule-deployment-and-detections)。
 
 **相关主题**
 

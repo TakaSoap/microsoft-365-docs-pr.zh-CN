@@ -1,5 +1,5 @@
 ---
-title: 自定义 Microsoft 365 使用情况分析中的报告
+title: 自定义使用情况Microsoft 365中的报告
 f1.keywords:
 - NOCSH
 ms.author: efrene
@@ -19,7 +19,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 9b76065f-29b9-4b89-8059-c5f9db9ddbf6
-description: 了解如何在浏览器和 Power BI Desktop 中自定义报表。
+description: 了解如何在浏览器和 web 浏览器中自定义Power BI Desktop。
 ms.openlocfilehash: 0ef2364c82318dfea93e8df4e64d53a66caa8d74
 ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
@@ -27,9 +27,9 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 04/02/2021
 ms.locfileid: "51580770"
 ---
-# <a name="customize-the-reports-in-microsoft-365-usage-analytics"></a>自定义 Microsoft 365 使用情况分析中的报告
+# <a name="customize-the-reports-in-microsoft-365-usage-analytics"></a>自定义使用情况Microsoft 365中的报告
 
-Microsoft 365 使用情况分析在 Power BI 中提供了一个仪表板，可提供用户采用和使用 Microsoft 365 的见解。 这个仪表板只是与使用情况数据进行交互的起点。 可以自定义报表，从而获得更加个性化的见解。
+Microsoft 365使用情况分析提供了一个Power BI仪表板，可深入了解用户如何采用和使用Microsoft 365。 这个仪表板只是与使用情况数据进行交互的起点。 可以自定义报表，从而获得更加个性化的见解。
   
 还可以使用 Power BI Desktop 将报表连接到其他数据源来进一步自定义报表，以获得有关业务的更加丰富的见解。
   
@@ -43,7 +43,7 @@ Microsoft 365 使用情况分析在 Power BI 中提供了一个仪表板，可�
   
 1. 在" **激活/许可"** 报告中，选择" **激活"** 选项卡。
     
-2. 通过选择顶部的"编辑 **"** 按钮，通过 Power BI 按钮中的"更多页面"按钮进入 ![ 编辑 ](../../media/d8da3c19-3f2d-4bf6-811e-faa804f74770.png) 模式。 
+2. 通过选择顶部的"编辑"按钮，通过"编辑页面"按钮进入编辑Power BI ![ ](../../media/d8da3c19-3f2d-4bf6-811e-faa804f74770.png) 按钮。 
     
     ![Click Edit report on the top right navigation](../../media/e2c16663-1fbd-4d7f-887c-0cbb891d3b3d.png)
   
@@ -61,11 +61,11 @@ Microsoft 365 使用情况分析在 Power BI 中提供了一个仪表板，可�
 
 以下示例演示如何创建新的视觉对象，以按月跟踪新的 Yammer 用户。
   
-1. 使用左侧 **导航转到"产品** 使用情况"报告，然后选择 **"Yammer"** 选项卡。
+1. 使用左侧 **导航导航** 转到"产品使用情况"报告，**然后选择"Yammer** 选项卡。
     
-2. 通过选择 Power BI 中的" ![ 更多页面"按钮和 ](../../media/d8da3c19-3f2d-4bf6-811e-faa804f74770.png) "编辑"切换到 **编辑模式**。 
+2. 通过选择"编辑"和"编辑"中的" ![ 更多页面"Power BI ](../../media/d8da3c19-3f2d-4bf6-811e-faa804f74770.png) 编辑 **模式**。 
     
-3. 在页面底部，选择 ![Power BI 中的"添加页面"按钮](../../media/d3b8c117-17d4-4f53-b078-8fefc2155b24.png) 创建新页面。
+3. 在页面底部，选择 ![外接程序中的"添加页面"Power BI](../../media/d3b8c117-17d4-4f53-b078-8fefc2155b24.png) 创建新页面。
   
 4. 在右侧 **"可视化"** 区域中，选择顶部 (的堆积条形图，从左到左) 。
 
@@ -87,9 +87,9 @@ Microsoft 365 使用情况分析在 Power BI 中提供了一个仪表板，可�
 
 11. 在出现的" **筛选器类型**"区域中，选中" **Yammer**"复选框。
 
-    ![选中 Yammer 复选框](../../media/82e99730-0de9-42da-928a-76aab0c3e609.png)
+    ![选中Yammer复选框](../../media/82e99730-0de9-42da-928a-76aab0c3e609.png)
   
-12. 在可视化效果列表正下方，选择 Power  BI Visualizaions 中的"格式"图标 ![ "格式"图标 ](../../media/ee0602f3-3df5-4930-b862-db1d90ae4ae2.png) 。
+12. 在可视化效果列表正下方，选择 Visualizaions 中的"格式"图标 ![ Power BI图标 ](../../media/ee0602f3-3df5-4930-b862-db1d90ae4ae2.png) 。
 
 13. 展开标题并将" **标题文本**"值更改为" **每月首次使用 Yammer 的用户**"。
     
@@ -105,7 +105,7 @@ Microsoft 365 使用情况分析在 Power BI 中提供了一个仪表板，可�
   
 ### <a name="use-the-reporting-apis"></a>使用报告 API
 
-你可以从支持这些报告的 Microsoft 365 直接连接到 ODATA 报告 API 开始。
+你可以从为这些报告提供Microsoft 365直接连接到 ODATA 报告 API。
   
 1. 转到" **获取数据**"\>" **其他**"\>" **ODATA 源**"\>" **连接**"。
     
@@ -115,23 +115,23 @@ Microsoft 365 使用情况分析在 Power BI 中提供了一个仪表板，可�
   
     ![OData feed URL for Power BI desktop](../../media/c0ef967e-a454-4eba-bc8e-61e113170053.png)
   
-3. 系统提示时，输入 (Microsoft 365) 或学校管理员凭据以向 Microsoft 365 进行身份验证。
+3. 输入你的Microsoft 365 (或学校) 管理员凭据，以在Microsoft 365时进行身份验证。
     
-    有关 [谁](usage-analytics.md#faq) 可以访问 Microsoft 365 Adoption 模板应用报告，请参阅常见问题解答。 
+    有关[允许](usage-analytics.md#faq)谁访问应用采用模板应用报告Microsoft 365常见问题解答。 
     
 4. 授权连接后，将看到显示可连接到的数据集的"导航器"窗口。
     
     全选 **，然后选择加载**。
     
-    这会将数据下载到 Power BI Desktop。 保存该文件，然后可以开始创建所需报表。
+    这会将数据下载到 Power BI Desktop。保存该文件，然后可以开始创建所需报表。
     
     ![报告 API 中可用的 ODATA 值](../../media/545b4d17-dbbd-4cfc-b75a-a8b27283d438.png)
   
-### <a name="use-the-microsoft-365-usage-analytics-template"></a>使用 Microsoft 365 使用情况分析模板
+### <a name="use-the-microsoft-365-usage-analytics-template"></a>使用Microsoft 365分析模板
 
-还可以将对应于 Microsoft 365 使用情况分析报表的 Power BI 模板文件用作连接到数据的起点。 使用 pbit 文件的优点是它已建立连接字符串。 也可以利用已创建的所有自定义度量值，在基础架构所返回数据的基础上进一步进行构建。
+您还可以使用与Power BI使用情况分析报告相对应的Microsoft 365模板文件作为连接数据的起点。 使用 pbit 文件的优点是它已建立连接字符串。 也可以利用已创建的所有自定义度量值，在基础架构所返回数据的基础上进一步进行构建。
   
-可以从 Microsoft 下载中心下载 Power BI [模板文件](https://download.microsoft.com/download/7/8/2/782ba8a7-8d89-4958-a315-dab04c3b620c/Microsoft%20365%20Usage%20Analytics.pbit)。 下载 Power BI 模板文件后，请按照以下步骤开始：
+可以从 Microsoft Power BI下载模板[文件](https://download.microsoft.com/download/7/8/2/782ba8a7-8d89-4958-a315-dab04c3b620c/Microsoft%20365%20Usage%20Analytics.pbit)。 下载模板Power BI后，请按照以下步骤开始：
   
 1. 打开 pbit 文件。
     
@@ -139,9 +139,9 @@ Microsoft 365 使用情况分析在 Power BI 中提供了一个仪表板，可�
     
     ![Enter your tenant ID to open the pbit file](../../media/071ed0bf-8b9d-49c6-81fc-fd4c6cc85bd3.png)
   
-3. 当系统提示时，输入管理员凭据以向 Microsoft 365 进行身份验证。
+3. 输入管理员凭据以在系统Microsoft 365进行身份验证。
     
-     有关允许谁访问 Microsoft 365 使用情况分析报告的信息。 
+     有关允许谁访问使用率分析报告Microsoft 365详细信息。 
     
     获得授权后，将刷新 Power BI 文件中的数据。
     

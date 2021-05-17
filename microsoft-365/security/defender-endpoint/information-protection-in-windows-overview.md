@@ -1,7 +1,7 @@
 ---
 title: Windows 中的信息保护概述
 ms.reviewer: ''
-description: 了解 Windows 中信息保护如何识别和保护敏感信息
+description: 了解信息保护在Windows和保护敏感信息的工作方式
 keywords: 信息， 保护， dlp， 数据， 丢失， 防护， 保护
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -37,16 +37,16 @@ ms.locfileid: "51933345"
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-信息保护是 Microsoft 365 企业版套件的组成部分，可提供智能保护，在保证敏感数据安全的同时在工作场所中提高工作效率。
+信息保护是 Microsoft 365 企业版的一部分，可提供智能保护，以确保敏感数据的安全，同时在工作场所中提高工作效率。
 
 
 >[!TIP]
-> 阅读我们的博客文章，了解如何将 Microsoft Defender for Endpoint 与 Microsoft 信息保护集成，以发现、保护和监视 Windows 设备上 [敏感数据](https://cloudblogs.microsoft.com/microsoftsecure/2019/01/17/windows-defender-atp-integrates-with-microsoft-information-protection-to-discover-protect-and-monitor-sensitive-data-on-windows-devices/)。
+> 阅读我们的博客文章，了解如何将 Microsoft Defender for Endpoint 与 Microsoft 信息保护集成，以发现、保护和监视Windows[敏感数据](https://cloudblogs.microsoft.com/microsoftsecure/2019/01/17/windows-defender-atp-integrates-with-microsoft-information-protection-to-discover-protect-and-monitor-sensitive-data-on-windows-devices/)。
 
 Defender for Endpoint 应用以下方法来发现、分类和保护数据：
 
-- **数据发现** - 识别 Windows 设备上存在风险的敏感数据
-- **数据分类** - 根据 Office 365 安全与合规中心 (管理) Microsoft 信息保护& MIP 策略对数据进行自动分类。 自动分类允许你保护敏感数据，即使最终用户尚未手动分类它。
+- **数据发现**- 识别Windows的敏感数据
+- **数据分类**- 根据 Microsoft 安全与合规中心 (管理) Microsoft 信息保护Office 365 MIP &数据分类。 自动分类允许你保护敏感数据，即使最终用户尚未手动分类它。
 
 
 ## <a name="data-discovery-and-data-classification"></a>数据发现和数据分类
@@ -55,7 +55,7 @@ Defender for Endpoint 自动发现具有敏感度标签的文件和包含敏感�
 
 敏感度标签分类并帮助保护敏感内容。
 
-DLP 策略实施中的 Office 365 数据丢失防护 (类型) 两类：
+DLP 策略实施Office 365数据丢失防护 (敏感信息) 分为两类：
 
 - 默认值
 - 自定义警报
@@ -64,7 +64,7 @@ DLP 策略实施中的 Office 365 数据丢失防护 (类型) 两类：
 
 自定义类型是您定义的类型，旨在保护不同类型的敏感信息，例如 (，例如员工 ID 或项目) 。 有关详细信息，请参阅创建自定义 [敏感信息类型](https://docs.microsoft.com/office365/securitycompliance/create-a-custom-sensitive-information-type)。
 
-在 Windows 设备上创建或编辑文件时，Defender for Endpoint 会扫描内容以评估是否包含敏感信息。
+在设备上创建或编辑文件时，Windows Defender for Endpoint 会扫描内容，以评估其中是否包含敏感信息。
 
 启用 Azure 信息保护集成，以便当 Defender for Endpoint 通过标签或信息类型发现包含敏感信息的文件时，该文件会自动从设备转发到 Azure 信息保护。
 
@@ -103,8 +103,8 @@ InformationProtectionLogs_CL
 **先决条件：**
 
 - 客户必须订阅 Azure 信息保护。
-- 在 Microsoft Defender 安全中心中启用 Azure 信息保护集成：
-    - 转到 **Microsoft** Defender 安全中心中的"设置"，单击"常规 **"下的"高级****设置"。**
+- 在服务中启用 Azure 信息保护Microsoft Defender 安全中心：
+    - 转到 **"设置"** 中的Microsoft Defender 安全中心，单击"常规 **"设置"高级****"。**
 
 
 

@@ -47,7 +47,7 @@ Unisolate 设备 | 从隔离中删除设备。
 停止和隔离文件 |  运行此调用以停止正在运行的进程、隔离文件并删除持久性（如注册表项）。
 请求示例 | 运行此调用，从特定设备请求文件示例。 文件会从设备中收集并上载到安全存储。
 阻止文件 | 运行此 API，通过禁止潜在恶意文件或可疑恶意软件，防止攻击在组织中进一步传播。 
-取消阻止文件 | 允许使用 Microsoft Defender 防病毒在组织中运行文件。
+取消阻止文件 | 允许文件在组织中使用 Microsoft Defender 防病毒。
 获取程序包 SAS URI | 运行此 API 获取允许下载调查包的 URI。
 获取 MachineAction 对象 | 运行此 API 获取 MachineAction 对象。
 获取 MachineActions 集合 | 运行它可获取 MachineAction 集合。

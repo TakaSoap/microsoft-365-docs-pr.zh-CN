@@ -43,7 +43,7 @@ ms.locfileid: "51933405"
 - OData ```$filter``` 在所有属性上均受支持。
 
 >[!Tip]
->这是适用于 Power [BI 集成的出色的 API。](api-power-bi.md)
+>这是适用于集成Power BI [API。](api-power-bi.md)
 
 ## <a name="permissions"></a>权限
 若要调用此 API，需要以下权限之一。 若要了解详细信息（包括如何选择权限），请参阅使用 [Microsoft Defender for Endpoint API](apis-intro.md) 了解详细信息。
@@ -119,5 +119,5 @@ GET https://api.securitycenter.microsoft.com/api/vulnerabilities/machinesVulnera
 
 ## <a name="see-also"></a>另请参阅
 
-- [基于风险的威胁和漏洞管理](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
+- [基于风险危险和漏洞管理](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
 - [组织中漏洞](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/tvm-weaknesses)

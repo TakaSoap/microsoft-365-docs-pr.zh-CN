@@ -1,7 +1,7 @@
 ---
 title: 通过软件 ID 获取缺失的 KB
 description: 按软件 ID 检索缺少的安全更新
-keywords: api， 图形 api， 受支持的 api， 获取， 列表， 文件， 信息， 软件 ID， 威胁 & 漏洞管理 api， Microsoft Defender for Endpoint tvm api
+keywords: api， 图形 api， 受支持的 api， 获取， 列表， 文件， 信息， 软件 ID， 威胁& 漏洞管理 api， Microsoft Defender for Endpoint tvm api
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy

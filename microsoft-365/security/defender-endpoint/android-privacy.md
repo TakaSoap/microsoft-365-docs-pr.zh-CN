@@ -47,7 +47,7 @@ Android 上的 Defender for Endpoint 从已配置的 Android 设备收集信息�
 有关设备上 **恶意** Android (程序包) API 的信息，包括
 
 -  安装源
--  存储 (APK) 文件路径
+-  存储 APK (文件路径) 位置
 -  安装时间、APK 大小和权限
 
 ### <a name="web-page--network-information"></a>网页/网络信息
@@ -68,7 +68,7 @@ Android 上的 Defender for Endpoint 从已配置的 Android 设备收集信息�
 - 租户、设备和用户信息
     -   Azure Active Directory (AD) 设备 ID 和 Azure 用户 ID：唯一标识设备，分别在 Azure Active directory 中标识用户。
 
-    -   Azure 租户 ID - 标识 Azure Active Directory 中的组织的 GUID
+    -   Azure 租户 ID - 用于标识组织中组织的 GUID Azure Active Directory
 
     -   Microsoft Defender for Endpoint 组织 ID - 与设备所属的企业关联的唯一标识符。 允许 Microsoft 确定问题是否影响一组选定企业以及有多少企业受到影响 
 

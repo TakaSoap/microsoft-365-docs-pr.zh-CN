@@ -1,6 +1,6 @@
 ---
-title: Microsoft 365 Defender 高级搜寻 API
-description: 了解如何使用 Microsoft 365 Defender 的高级搜寻 API 运行高级搜寻查询
+title: Microsoft 365Defender 高级搜寻 API
+description: 了解如何使用 Defender 的高级搜寻 API Microsoft 365高级搜寻查询
 keywords: 高级搜寻， API， api， M365 Defender， Microsoft 365 Defender
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -27,7 +27,7 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 04/21/2021
 ms.locfileid: "51932889"
 ---
-# <a name="microsoft-365-defender-advanced-hunting-api"></a>Microsoft 365 Defender 高级搜寻 API
+# <a name="microsoft-365-defender-advanced-hunting-api"></a>Microsoft 365Defender 高级搜寻 API
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -55,9 +55,9 @@ ms.locfileid: "51932889"
 > [!NOTE]
 > 上面列出的所有配额 (例如，每个租户大小每) 15 次呼叫。 这些配额是最小值。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
-调用高级搜寻 API 需要以下权限之一。 若要了解更多信息（包括如何选择权限），请参阅 [访问 Microsoft 365 Defender Protection API](api-access.md)
+调用高级搜寻 API 需要以下权限之一。 若要了解更多信息（包括如何选择权限），请参阅访问[Microsoft 365 Defender 保护 API](api-access.md)
 
 权限类型 | 权限 | 权限显示名称
 -|-|-

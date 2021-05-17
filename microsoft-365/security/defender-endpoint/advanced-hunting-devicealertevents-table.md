@@ -35,7 +35,7 @@ ms.locfileid: "51939644"
 
 >想要体验适用于终结点的 Defender？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-advancedhuntingref-abovefoldlink)
 
-高级 `DeviceAlertEvents` 搜寻 [架构中的](advanced-hunting-overview.md) 表包含有关 Microsoft Defender 安全中心警报的信息。 使用此参考来构建从该表返回信息的查询。
+高级 `DeviceAlertEvents` 搜寻[架构中的](advanced-hunting-overview.md)表包含有关搜索中警报Microsoft Defender 安全中心。 使用此参考来构建从该表返回信息的查询。
 
 有关高级搜寻架构中其他表的信息，请参阅 [高级搜寻架构参考](advanced-hunting-schema-reference.md)。
 

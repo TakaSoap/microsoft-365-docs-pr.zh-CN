@@ -1,5 +1,5 @@
 ---
-title: 在 Microsoft Teams 中启动和固定聊天
+title: 在聊天中开始和固定Microsoft Teams
 f1.keywords:
 - NOCSH
 ms.author: efrene
@@ -19,7 +19,7 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: 了解如何在 Microsoft Teams 中启动和固定聊天。
+description: 了解如何在聊天中启动和固定Microsoft Teams。
 ms.openlocfilehash: 8755abfa3e961ef5408ab612f6712dbeef948074
 ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT

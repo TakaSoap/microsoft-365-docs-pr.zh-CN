@@ -1,5 +1,5 @@
 ---
-title: FileProfile () Microsoft 365 Defender 高级搜寻中的函数
+title: FileProfile () Defender 高级搜寻Microsoft 365函数
 description: 了解如何使用 FileProfile () 丰富有关高级搜寻查询结果中的文件的信息
 keywords: 高级搜寻， 威胁搜寻， 网络威胁搜寻， Microsoft 365 Defender， microsoft 365， m365， 搜索， 查询， 遥测， 架构参考， kusto， FileProfile， 文件配置文件， 函数， 扩充
 search.product: eADQiWindows 10XVcnh
@@ -74,7 +74,7 @@ invoke FileProfile(x,y)
 
 ## <a name="examples"></a>示例
 
-### <a name="project-only-the-sha1-column-and-enrich-it"></a>仅规划 SHA1 列并扩充它
+### <a name="project-only-the-sha1-column-and-enrich-it"></a>Project SHA1 列并扩充它
 
 ```kusto
 DeviceFileEvents

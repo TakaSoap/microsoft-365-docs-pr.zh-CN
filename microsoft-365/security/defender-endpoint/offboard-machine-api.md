@@ -50,7 +50,7 @@ ms.locfileid: "51934173"
 [!include[Machine actions note](../../includes/machineactionsnote.md)]
 
 >[!Note]
-> 此 API 在 Windows 10 版本 1703 和更高版本或 Windows Server 2019 及更高版本上受支持。 此 API 在 MacOS 或 Linux 设备上不受支持。
+> 此 API 在 Windows 10 版本 1703 及更高版本或 Windows Server 2019 及更高版本上受支持。 此 API 在 MacOS 或 Linux 设备上不受支持。
 
 ## <a name="permissions"></a>权限
 若要调用此 API，需要以下权限之一。 若要了解更多信息（包括如何选择权限），请参阅对 [终结点 API 使用 Defender](apis-intro.md)

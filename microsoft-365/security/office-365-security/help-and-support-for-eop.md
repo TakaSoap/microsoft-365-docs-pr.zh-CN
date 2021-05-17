@@ -29,25 +29,25 @@ ms.locfileid: "52298024"
 - [Microsoft Defender for Office 365 计划 1 和计划 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-在具有 Exchange Online 或独立 Exchange Online Protection (EOP) 组织邮箱且没有 Exchange Online 邮箱的 Microsoft 365 组织中，如果在使用 EOP 时遇到困难，本文中列出的技术支持资源将帮助您找到答案。 Microsoft 在多处通过多种方法为 EOP 提供帮助，包括自助支持和协助支持。
+在具有 Exchange Online 邮箱的 Microsoft 365 组织中或没有 Exchange Online 邮箱的独立 Exchange Online Protection (EOP) 组织中，如果在使用 EOP 时遇到困难，本文中列出的技术支持资源将帮助您找到答案。 Microsoft 在多处通过多种方法为 EOP 提供帮助，包括自助支持和协助支持。
 
 ## <a name="self-support-options"></a>自助支持选项
 
-登录后，Microsoft 365管理中心提供有关组织服务状态的信息。 此外，服务运行状况部分还显示服务的当前状态、有关中断和中断的详细信息，并列出计划的维护时间。 管理Microsoft 365中心还提供了已知问题和预期解决方案的信息。 如果受服务级事件影响，应查看通信警报（通常标有钟形图标）。 我们建议你阅读所有项的信息，然后酌情进行处理。 有关服务运行状况区域详细信息，请参阅服务 [运行状况和连续性](/office365/servicedescriptions/office-365-platform-service-description/service-health-and-continuity)。 您可以使用此处列出的工具、论坛和社区网站自行查找更多帮助。
+登录后，Microsoft 365 管理中心提供有关组织服务状态的信息。 此外，服务运行状况部分还显示服务的当前状态、有关中断和中断的详细信息，并列出计划的维护时间。 Microsoft 365 管理中心还提供有关已知问题和预期解决方案的信息。 如果受服务级事件影响，应查看通信警报（通常标有钟形图标）。 我们建议你阅读所有项的信息，然后酌情进行处理。 有关服务运行状况区域详细信息，请参阅服务 [运行状况和连续性](/office365/servicedescriptions/office-365-platform-service-description/service-health-and-continuity)。 您可以使用此处列出的工具、论坛和社区网站自行查找更多帮助。
 
 [Exchange Online Protection 产品概述](https://products.office.com/exchange/exchange-email-security-spam-protection)
 
 [联系商业版产品的支持人员 - 管理员帮助](../../business-video/get-help-support.md)
 
-[Microsoft 365社区](https://techcommunity.microsoft.com/t5/Office-365/ct-p/Office365)
+[Microsoft 365 社区](https://techcommunity.microsoft.com/t5/Office-365/ct-p/Office365)
 
-[Microsoft 支持和恢复助手 (SaRA) ](https://support.microsoft.com/office/e90bb691-c2a7-4697-a94f-88836856c72f)
+[SaRA (Microsoft 支持和恢复) ](https://support.microsoft.com/office/e90bb691-c2a7-4697-a94f-88836856c72f)
 
 [邮件流疑难解答程序](https://aka.ms/FixEmail)
 
 ## <a name="assisted-support-from-microsoft"></a>Microsoft 协助支持
 
-可以通过在管理中心内启动新服务请求或Microsoft 365来从 Microsoft 获取帮助。 Premier Support 订阅者具有额外的支持选项。
+可以通过在 Microsoft 365 管理中心内启动新服务请求或通过电话获得 Microsoft 帮助。 Premier Support 订阅者具有额外的支持选项。
 
 ### <a name="support-for-microsoft-premier-support-subscribers"></a>对 Microsoft Premier Support 订阅者的支持
 
@@ -57,7 +57,7 @@ ms.locfileid: "52298024"
 
 ### <a name="ask-for-help-on-the-web"></a>在 Web 上寻求帮助
 
-1. 登录到管理Microsoft 365中心。
+1. 登录到 Microsoft 365 管理中心。
 
 2. Go to **Support** \> **Ask for Customer Support** \> **New Service Request**
 
@@ -65,7 +65,7 @@ ms.locfileid: "52298024"
 
 ### <a name="ask-for-help-on-the-telephone"></a>致电寻求帮助
 
-1. 登录到管理Microsoft 365中心。
+1. 登录到 Microsoft 365 管理中心。
 
 2. 有关常规产品问题， **请转到支持** \> **人员询问客户支持** \> **致电技术支持** 人员。
 

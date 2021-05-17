@@ -56,9 +56,9 @@ ms.locfileid: "51935217"
 
 攻击面减少规则仅适用于具有以下条件的设备：
 
-- 终结点运行的是 Windows 10 企业版版本 1709 (也称为 Fall Creators Update) 。
+- 终结点运行Windows 10 企业版版本 1709 (也称为 Fall Creators Update) 。
 
-- 终结点使用 Microsoft Defender 防病毒作为唯一的防病毒保护应用。 [使用任何其他防病毒应用将导致 Microsoft Defender AV 自行禁用](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility)。
+- 终结点将 Microsoft Defender 防病毒用作唯一的防病毒保护应用。 [使用任何其他防病毒应用将导致 Microsoft Defender AV 自行禁用](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility)。
 
 - [实时保护](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus) 已启用。
 
@@ -68,7 +68,7 @@ ms.locfileid: "51935217"
 
 ## <a name="use-audit-mode-to-test-the-rule"></a>使用审核模式测试规则
 
-你可以访问 demo.wd.microsoft.com 上的 [Windows Defender](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) 测试场网站，以确认攻击面减少规则通常适用于设备上预配置的方案和流程，或者可以使用审核模式（启用仅报告规则）。
+你可以访问 demo.wd.microsoft.com 上的[Windows Defender](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground)测试场网站，以确认攻击面减少规则通常适用于设备上预配置的方案和进程，或者可以使用审核模式（它仅启用报告规则）。
 
 按照使用演示 [工具中的以下](evaluate-attack-surface-reduction.md) 说明查看攻击面减少规则如何工作，以测试遇到问题的特定规则。
 
@@ -100,7 +100,7 @@ ms.locfileid: "51935217"
 
 ## <a name="report-a-false-positive-or-false-negative"></a>报告误报或漏报
 
-使用Windows Defender [安全智能基于 Web](https://www.microsoft.com/wdsi/filesubmission) 的提交表单报告网络保护的漏报或误报。 使用 Windows E5 订阅，还可以 [提供指向任何关联警报的链接](alerts-queue.md)。
+使用Windows Defender[安全智能基于](https://www.microsoft.com/wdsi/filesubmission)Web 的提交表单报告网络保护的漏报或误报。 使用 Windows E5 订阅，还可以提供[指向任何关联警报的链接](alerts-queue.md)。
 
 ## <a name="collect-diagnostic-data-for-file-submissions"></a>收集文件提交的诊断数据
 

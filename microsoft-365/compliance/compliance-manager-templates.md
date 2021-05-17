@@ -13,7 +13,7 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-description: 了解如何使用和管理模板在 Microsoft 合规性管理器中生成评估。 使用格式化的 Excel 文件创建和修改模板。
+description: 了解如何使用和管理模板在 Microsoft 合规性管理器中生成评估。 使用格式化的文件创建和修改Excel模板。
 ms.openlocfilehash: ac5fe5f0a62c3b20021a9829499d8cec9339f72a
 ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "51499022"
 ---
 # <a name="working-with-assessment-templates-in-compliance-manager"></a>在合规性管理器中使用评估模板
 
-**本文内容：** 了解 **模板如何工作****以及如何从评估模板** 页管理它们。 获取有关创建新 **模板、** 修改现有模板、使用 **Excel** 设置模板数据格式以及导出模板报告 **的说明**。
+**本文内容：** 了解 **模板如何工作****以及如何从评估模板** 页管理它们。 获取有关创建新 **模板、** 修改现有模板、使用 Excel 格式化模板数据以及导出模板报告 **的说明**。
 
 > [!IMPORTANT]
 > 组织可用的评估模板取决于您的许可协议。 [查看详细信息](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。
@@ -41,7 +41,7 @@ ms.locfileid: "51499022"
 可供使用的模板基于组织的许可协议， ([许可详细信息) 。](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#compliance-manager) 模板分为两类：包含模板和高级模板。
 
 1. **包含的** 模板可作为组织的许可协议的一部分使用。
-2. **必须购买** 高级模板才能从它们创建评估。 购买后，你可根据需要从模板创建尽可能多的评估。 [了解如何购买高级模板](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#compliance-manager)。
+2. **高级版模板**，才能从模板创建评估。 购买后，你可根据需要从模板创建尽可能多的评估。 [了解如何购买高级模板](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#compliance-manager)。
 
 #### <a name="active-and-inactive-templates"></a>活动模板和无效模板
 
@@ -66,11 +66,11 @@ ms.locfileid: "51499022"
 
 合规性管理器中的"评估模板"页显示模板列表和关键详细信息。 该列表包括合规性管理器提供的模板，以及组织已修改或创建的任何模板。 你可以应用筛选器，以根据认证、产品范围、国家/地区、行业、创建模板的人以及模板是否已启用评估创建来查找模板。
 
-Select a template from its row to bring up its details page. 此页面包含模板的说明，以及有关认证、范围和控制详细信息的进一步信息。 在此页中，您可以选择相应的按钮来创建评估、将模板数据导出到 Excel 或修改模板。
+Select a template from its row to bring up its details page. 此页面包含模板的说明，以及有关认证、范围和控制详细信息的进一步信息。 在此页中，可以选择相应的按钮来创建评估、将模板数据导出到Excel，或修改模板。
 
 ## <a name="creating-and-modifying-templates-overview"></a>创建和修改模板概述
 
-若要修改现有模板或创建自己的新模板，您需要使用经过特殊格式的 Excel (下载示例) 组合必要的控件数据。 [](https://go.microsoft.com/fwlink/?linkid=2124865) 完成电子表格后，在创建或修改模板的过程中将其导入合规性管理器。
+若要修改现有模板或创建自己的新模板，您需要使用经过特殊格式的 Excel 电子表格 (示例) 来组合必要的控件数据。 [](https://go.microsoft.com/fwlink/?linkid=2124865) 完成电子表格后，在创建或修改模板的过程中将其导入合规性管理器。
 
 > [!NOTE]
 > 电子表格具有必须使用的特定格式和架构，否则它将不会正确导入合规性管理器。 格式 [说明](#formatting-your-template-data-with-excel) 如下。
@@ -86,17 +86,17 @@ Select a template from its row to bring up its details page. 此页面包含模�
 1. 转到合规性 **管理器中的** 评估模板页面。
 2. 选择 **"创建新模板"。** 将打开模板创建向导。
 3. 选择要创建的模板类型。 在这种情况下，请选择"**创建自定义模板"，** 然后选择"下一 **步"。**
-4. 在"**上载文件**"屏幕上，选择"浏览"查找并上载包含所有所需模板数据的格式化 Excel 文件 (查看正确设置文件 [](#formatting-your-template-data-with-excel)格式) 。
-5. 如果文件没有问题，将显示上载的文件的名称。 选择 **"下一** 步"继续。  (如果需要更改文件，请选择"上传 **其他** 文件") 。
+4. 在Upload **文件**"屏幕上，选择"浏览"查找并上载包含所有所需模板数据的格式化 Excel 文件 (查看正确设置文件格式的说明) 。 [](#formatting-your-template-data-with-excel)
+5. 如果文件没有问题，将显示上载的文件的名称。 选择 **"下一** 步"继续。  (如果需要更改文件，请选择"更改Upload **文件) 。**
     - 如果文件出错，顶部的错误消息将说明错误。 你将需要修复文件并再次上传它。 如果电子表格的格式不正确，或者某些字段中的信息无效， (再次参考格式设置) 。 [](#formatting-your-template-data-with-excel)  
     
 6. " **审阅和完成** "屏幕显示改进操作和控件的数量以及模板的最大分数。 准备好批准后，选择" **创建模板"。**  (如果需要进行更改，请选择"上 **一** 步") 
 7. 最后一个屏幕确认已创建一个新模板。 选择 **"完成** "退出向导。
 8. 你将到达新模板的详细信息页面，可在其中 [创建评估](compliance-manager-assessments.md#create-your-own-custom-assessment)。
 
-## <a name="formatting-your-template-data-with-excel"></a>使用 Excel 设置模板数据的格式
+## <a name="formatting-your-template-data-with-excel"></a>使用模板数据设置Excel
 
-用于创建模板的 Excel 电子表格包含四个选项卡，其中三个选项卡是必需的：
+用于创建Excel的表单电子表格包含四个选项卡，其中三个选项卡是必需的：
 
 1. [模板](#template-tab) (模板) 
 2. [ControlFamily](#controlfamily-tab) (必需) 
@@ -107,7 +107,7 @@ Select a template from its row to bring up its details page. 此页面包含模�
 
 ##### <a name="template-tab"></a>"模板"选项卡
 
-" **模板** "选项卡是必需的。 此选项卡中的信息提供有关模板的元数据。 有四个必需列。 列必须保留 Excel 工作表上的顺序，如下所示。 您可以在这四列 **后** 添加您自己的列以提供您自己的维度。 如果这样做，请务必按照下面的说明将它们添加到" **维度** " [选项卡](#dimensions-tab)。
+" **模板** "选项卡是必需的。 此选项卡中的信息提供有关模板的元数据。 有四个必需列。 这些列必须保留工作表Excel的顺序，如下所示。 您可以在这四列 **后** 添加您自己的列以提供您自己的维度。 如果这样做，请务必按照下面的说明将它们添加到" **维度** " [选项卡](#dimensions-tab)。
 
 - **title**：这是模板的标题，必须是唯一的。 它不能与合规性管理器中拥有的另一个模板共享名称，包括你自己的模板或合规性管理器模板。
 
@@ -115,7 +115,7 @@ Select a template from its row to bring up its details page. 此页面包含模�
 
 - **certification：** This is the regulation you're using for the template.
 
-- **inScopeServices：** 这些是此评估针对的 (例如，如果将 Office 365 列为产品，Microsoft Teams 可能是范围内服务) 。 可以列出用两个分号分隔的多个服务。
+- **inScopeServices：** 这些是此评估处理的服务 (例如，如果将 Office 365 列为产品，Microsoft Teams可能是范围内服务) 。 可以列出用两个分号分隔的多个服务。
 
 > [!NOTE]
 > 导入电子表格以创建或自定义模板后，无法编辑在产品和认证单元格中插入的数据。 此外，组不能包含具有相同产品/认证组合的 **两** 个评估。 你可以有多个模板，它们具有相同的产品/认证组合。
@@ -166,7 +166,7 @@ You can view your existing dimensions by going to **Tenant Management** and sele
 
 ## <a name="modify-a-template"></a>修改模板
 
-您可能需要修改已创建的模板，例如添加控件，或者添加或删除改进操作。 此过程类似于模板创建过程，因为您将上载包含模板数据的格式化 Excel 文件。
+您可能需要修改已创建的模板，例如添加控件，或者添加或删除改进操作。 此过程类似于模板创建过程，你将使用模板数据Excel格式化文件。
 
 但是，在将文件格式化为对现有模板数据进行更改时，需要了解一些特定的详细信息。 **我们建议您仔细阅读这些说明，以确保不会覆盖要保留的任何现有数据。**
 
@@ -175,12 +175,12 @@ You can view your existing dimensions by going to **Tenant Management** and sele
 若要修改模板，请按照以下步骤操作：
 
 1. 从 **评估模板页面中** ，选择要修改的模板，这将显示其详细信息页面。
-2. 选择 **"导出到 Excel"。** 将下载包含所有模板数据的 Excel 文件。 将文件保存到本地计算机。
-3. 使用下面的说明修改 [Excel 文件，以更改模板](#formatting-your-excel-file-to-modify-a-template)。
-4. 完成对 Excel 文件的更改后，保存该文件。
+2. 选择 **"导出到Excel"。** 将Excel模板数据的文件。 将文件保存到本地计算机。
+3. 通过使用下面的说明修改 Excel[文件来更改模板](#formatting-your-excel-file-to-modify-a-template)。
+4. 完成对文件所做的更改后，Excel文件。
 5. 在模板的详细信息页上，选择 **"修改模板** "以启动修改向导。 
-6. 在" **上载文件"** 屏幕上，选择 **"浏览** "查找并上载 Excel 文件。
-7. 如果文件没有问题，下一个屏幕将显示已上传文件的名称。 如果需要 **更改** (，请选择"下一步"以继续) 。 
+6. 在 **"Upload文件**"屏幕上，选择"浏览"查找并上载Excel文件。
+7. 如果文件没有问题，下一个屏幕将显示已上传文件的名称。 如果需要 **更改** (，请选择"下一步"以继续Upload **文件) 。**
     - 如果文件有问题，顶部会显示一条错误消息，说明错误所在。 你将需要修复文件并再次上传它。 如果电子表格的格式不正确，或者某些字段中的信息无效，则会导致错误。
 
 8. " **审阅和完成** "屏幕显示改进操作和控件的数量以及模板的最大分数。 准备好批准后，选择"下一 **步"。**
@@ -189,9 +189,9 @@ You can view your existing dimensions by going to **Tenant Management** and sele
 您的模板现在将包含您所做的更改。 使用此修改后模板的任何评估现在将显示挂起的更新，你将需要接受对评估的更新以反映在模板中所做的更改。 详细了解评估 [更新](compliance-manager-assessments.md#accepting-updates-to-assessments)。
 
 > [!NOTE]
-> 如果使用英语语言而非英语的合规性管理器，你会注意到，将模板导出到 Excel 时，某些文本以英语显示。 这些操作的标题 (改进操作和 Microsoft) 都必须是英语，控件必须识别它们。 如果对操作标题进行更改，请确保以英语编写它，以便正确导入文件。
+> 如果使用英语语言而非英语的合规性管理器，则你会注意到，导出模板进行自定义时，某些文本以英语Excel。 这些操作的标题 (改进操作和 Microsoft) 都必须是英语，控件必须识别它们。 如果对操作标题进行更改，请确保以英语编写它，以便正确导入文件。
 
-### <a name="formatting-your-excel-file-to-modify-a-template"></a>设置 Excel 文件的格式以修改模板
+### <a name="formatting-your-excel-file-to-modify-a-template"></a>格式化Excel文件以修改模板
 
 跳转到下面的部分，快速找到所需的说明：
 
@@ -256,8 +256,8 @@ You can view your existing dimensions by going to **Tenant Management** and sele
 
 ## <a name="export-a-template"></a>导出模板
 
-可以导出包含模板的所有数据的 Excel 文件。 你需要导出模板才能修改模板，因为这将是你在修改过程中编辑和上载的 Excel [文件](#modify-a-template)。
+可以导出Excel模板数据的所有模板文件。 你需要导出模板才能修改模板，因为这将是你在修改过程中编辑Excel[上传的文件。](#modify-a-template)
 
-若要导出模板，请转到模板详细信息页面并选择" **导出到 Excel"** 按钮。
+若要导出模板，请转到模板详细信息页面并选择"**导出到** Excel按钮。
 
 请注意，导出从合规性管理器模板扩展的模板时，导出的文件将仅包含您添加到模板的属性。 导出的文件不包括 Microsoft 提供的原始模板数据。 若要获取此类报告，请参阅导出 [评估报告的说明](compliance-manager-assessments.md#export-an-assessment-report)。

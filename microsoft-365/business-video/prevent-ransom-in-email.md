@@ -32,7 +32,7 @@ ms.locfileid: "51580494"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWrWGt?autoplay=false]
 
-Microsoft 365 有助于防止在 Outlook 中打开具有潜在危险的文件（如 JavaScript、批处理和可执行文件）来帮助保护你的企业免受勒索软件攻击。 若要通过添加阻止或警告其他类型的文件的规则来增强此级别的保护，请按照以下步骤操作。
+Microsoft 365防止 JavaScript、批处理和可执行文件等潜在危险文件在 Outlook 中打开，帮助保护你的企业免受勒索软件Outlook。 若要通过添加阻止或警告其他类型的文件的规则来增强此级别的保护，请按照以下步骤操作。
 
 ## <a name="try-it"></a>试一试！
 

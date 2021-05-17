@@ -40,7 +40,7 @@ ms.locfileid: "51952616"
 
 ## <a name="try-your-first-query"></a>尝试你的第一个查询
 
-在 Microsoft 365 安全中心，转到 **搜寻** 以运行你的第一个查询。 使用以下示例：
+在Microsoft 365中心，**转到搜寻以** 运行你的第一个查询。 使用以下示例：
 
 ```kusto
 // Finds PowerShell execution events that could involve a download
@@ -176,14 +176,14 @@ FileName, ProcessCommandLine, RemoteIP, RemoteUrl, RemotePort, RemoteIPType
 ![高级搜寻窗口的图像](../../media/advanced-hunting-get-started.png)
 
 >[!NOTE]
->除了基本查询示例之外，你还可以访问特定威胁搜寻方案的[共享查询](advanced-hunting-shared-queries.md)。 浏览页面左侧或 GitHub 查询存储库 [上的共享查询](https://aka.ms/hunting-queries)。
+>除了基本查询示例之外，你还可以访问特定威胁搜寻方案的[共享查询](advanced-hunting-shared-queries.md)。 浏览页面左侧或查询存储库的GitHub[查询](https://aka.ms/hunting-queries)。
 
 ## <a name="access-query-language-documentation"></a>访问查询语言文档
 
 有关 Kusto 查询语言和受支持运算符的详细信息，请参阅 [Kusto 查询语言文档](/azure/kusto/query/)。
 
 >[!NOTE]
->本文中的某些表在 Microsoft Defender for Endpoint 中可能不可用。 [打开 Microsoft 365 Defender](m365d-enable.md) 以使用更多数据源搜寻威胁。 你可以按照从 Microsoft Defender for Endpoint 迁移高级搜寻查询中的步骤将高级搜寻工作流从 [Microsoft Defender for Endpoint](advanced-hunting-migrate-from-mde.md)移动到 Microsoft 365 Defender。
+>本文中的某些表在 Microsoft Defender for Endpoint 中可能不可用。 [打开 Microsoft 365 Defender](m365d-enable.md)以使用更多数据源搜寻威胁。 你可以按照从 Microsoft Defender for Endpoint 迁移高级搜寻查询中的步骤，将高级搜寻工作流从 Microsoft Defender for Endpoint 移动到 Microsoft 365 [Defender。](advanced-hunting-migrate-from-mde.md)
 
 ## <a name="related-topics"></a>相关主题
 - [高级搜寻概述](advanced-hunting-overview.md)

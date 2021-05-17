@@ -51,8 +51,8 @@ ms.locfileid: "51935877"
 网络保护仅适用于具有以下条件的设备：
 
 >[!div class="checklist"]
-> - 终结点运行的是 Windows 10 专业版或企业版版本 1709 或更高版本。
-> - 终结点使用 Microsoft Defender 防病毒作为唯一的防病毒保护应用。 [查看使用非 Microsoft 防病毒解决方案时会发生什么情况](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility)。
+> - 终结点运行Windows 10 专业版或Enterprise版本 1709 或更高版本。
+> - 终结点将 Microsoft Defender 防病毒用作唯一的防病毒保护应用。 [查看使用非 Microsoft 防病毒解决方案时会发生什么情况](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility)。
 > - [实时保护](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus) 已启用。
 > - [云提供的保护](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus) 已启用。
 > - 审核模式未启用。 使用 [组策略](enable-network-protection.md#group-policy)将规则设置为禁用 (值 **：0**) 。
@@ -79,7 +79,7 @@ ms.locfileid: "51935877"
 
 ## <a name="report-a-false-positive-or-false-negative"></a>报告误报或漏报
 
-如果已使用演示网站和审核模式测试了该功能，并且网络保护适用于预配置的方案，但无法按预期为特定连接工作，请使用 [基于 Windows Defender](https://www.microsoft.com/wdsi/filesubmission) 安全智能 Web 的提交表单报告网络保护的漏报或误报。 使用 E5 订阅，还可以 [提供指向任何关联警报的链接](alerts-queue.md)。
+如果已使用演示网站和审核模式测试了功能，并且网络保护适用于预配置的方案，但无法按预期为特定连接工作，请使用[基于 Windows Defender 安全](https://www.microsoft.com/wdsi/filesubmission)智能 Web 的提交表单报告网络保护的漏报或误报。 使用 E5 订阅，还可以 [提供指向任何关联警报的链接](alerts-queue.md)。
 
 请参阅在 Microsoft Defender for Endpoint 中解决 [误报/负数](defender-endpoint-false-positives-negatives.md)。
 
@@ -120,10 +120,10 @@ reg add "HKLM\Software\Microsoft\Windows Defender" /v ProxyServer /d "<proxy IP 
 reg add "HKLM\Software\Microsoft\Windows Defender" /v ProxyPacUrl /d "<Proxy PAC url>" /f
 ```
 
-可以使用 PowerShell、Microsoft Endpoint Manager 或组策略配置注册表项。 以下是一些可帮助的资源：
+可以使用 PowerShell、注册表项或组策略Microsoft Endpoint Manager注册表项。 以下是一些可帮助的资源：
 - [使用注册表项](/powershell/scripting/samples/working-with-registry-keys)
-- [配置 Endpoint Protection 的自定义客户端设置](/mem/configmgr/protect/deploy-use/endpoint-protection-configure-client)
-- [使用组策略设置管理 Endpoint Protection](/mem/configmgr/protect/deploy-use/endpoint-protection-group-policies)
+- [为客户端配置自定义Endpoint Protection](/mem/configmgr/protect/deploy-use/endpoint-protection-configure-client)
+- [使用组策略设置来管理Endpoint Protection](/mem/configmgr/protect/deploy-use/endpoint-protection-group-policies)
 
 ## <a name="see-also"></a>另请参阅
 

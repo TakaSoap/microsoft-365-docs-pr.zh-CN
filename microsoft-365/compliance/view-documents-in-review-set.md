@@ -1,5 +1,5 @@
 ---
-title: 在高级电子数据展示中查看审阅集内的文档
+title: 查看审阅集内的文档Advanced eDiscovery
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -13,7 +13,7 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-description: 选择在高级电子数据展示中查看内容（如文本、批注、转换或本机视图）中的内容。
+description: 选择在视图视图中查看内容Advanced eDiscovery，如文本、批注、转换或本机视图。
 ms.custom: seo-marvel-mar2020
 ms.openlocfilehash: aa8e8e9ea22469ab6d0b223c1bcc9285e2c2ef40
 ms.sourcegitcommit: d4604e333507c6f57d5bf327531a241b649052de
@@ -22,9 +22,9 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 03/31/2021
 ms.locfileid: "51471065"
 ---
-# <a name="view-documents-in-a-review-set-in-advanced-ediscovery"></a>在高级电子数据展示中查看审阅集内的文档
+# <a name="view-documents-in-a-review-set-in-advanced-ediscovery"></a>查看审阅集内的文档Advanced eDiscovery
 
-高级电子数据展示通过多个查看器显示内容，每个查看器具有不同的用途。 通过单击审阅集内的任何文档，可以使用各种查看者。 当前提供的查看者包括：
+高级电子数据展示通过多个查看者显示内容，每个查看者用途不同。 可以通过单击审阅集内的任何文档来使用多种观看者。 当前提供的查看者包括：
 
 - 文件元数据
 - 本机视图
@@ -33,23 +33,23 @@ ms.locfileid: "51471065"
 
 ## <a name="file-metadata"></a>文件元数据
 
-此面板可以切换为打开/关闭，以显示与文档关联的各种元数据。 尽管可以自定义搜索结果网格以显示特定元数据，但在某些情况下，查看数据时水平滚动可能比较困难。 "文件"元数据面板允许用户在查看器中切换视图。
+此面板可以切换为打开/关闭，以显示与文档关联的各种元数据。 虽然可以自定义搜索结果网格以显示特定元数据，但在某些情况下，查看数据时水平滚动可能比较困难。 "文件元数据"面板允许用户在查看器中切换视图。
 
 ![文件元数据面板
 ](../media/Reviewimage2.png)
 
 ## <a name="native-view"></a>本机视图
 
-本机查看器显示文档的最丰富视图。 它支持数百种文件类型，旨在尽可能显示真实到本机体验。 对于Microsoft Office，查看者使用 Office 应用程序的 Web 版本来显示文档注释、Excel 公式、隐藏的行/列和 PowerPoint 注释等内容。
+本机查看器显示文档的最丰富视图。 它支持数百种文件类型，旨在尽可能显示最真实本机体验。 对于 Microsoft Office 文件，查看器使用 Office 应用的 Web 版本显示文档批注、Excel 公式、隐藏的行/列和 PowerPoint 笔记等内容。
 
 ![本机视图
 ](../media/Reviewimage3.png)
 
 ## <a name="text-view"></a>文本视图
 
-文本查看器提供文件提取文本的视图。 它会忽略任何嵌入的图像和格式，但如果您尝试快速了解内容，则非常有效。 文本视图还包括以下功能：
+文本查看器提供文件提取文本的视图。 它会忽略任何嵌入的图像和格式，但是尝试快速了解内容十分有效。 文本视图还包括这些功能：
 
-  - 行计数器使引用文档的特定部分变得更容易
+  - 通过行计数器可以更轻松地引用文档的特定部分
 
   - 搜索词突出显示，突出显示文档中的术语以及滚动条
 

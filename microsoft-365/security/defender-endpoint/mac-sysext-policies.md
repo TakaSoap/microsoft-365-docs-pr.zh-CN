@@ -69,7 +69,7 @@ ms.locfileid: "51932735"
 
 ### <a name="network-extension-policy"></a>网络扩展策略
 
-作为终结点检测和响应功能的一部分，macOS 上的 Microsoft Defender for Endpoint 会检查套接字流量，将此信息报告给 Microsoft Defender 安全中心门户。 以下策略允许网络扩展执行此功能。
+作为终结点检测和响应功能的一部分，macOS 上的 Microsoft Defender for Endpoint 会检查套接字流量，将此信息报告给 Microsoft Defender 安全中心 门户。 以下策略允许网络扩展执行此功能。
 
 >[!NOTE]
 >JAMF 没有对内容筛选策略的内置支持，这是启用 MacOS 上的 Microsoft Defender for Endpoint 在设备上安装的网络扩展的先决条件。 此外，JAMF 有时会更改正在部署的策略的内容。
@@ -170,7 +170,7 @@ ms.locfileid: "51932735"
     $ security cms -S -N "SigningCertificate" -i ~/Documents/com.microsoft.network-extension.mobileconfig -o ~/Documents/com.microsoft.network-extension.signed.mobileconfig
     ```
     
-5. 从 JAMF 门户中，导航到 **"配置文件"，** 然后单击" **上载"** 按钮。 在 `com.microsoft.network-extension.signed.mobileconfig` 系统提示您输入文件时选择。
+5. 从 JAMF 门户中，导航到 **"配置文件**"，**然后单击"Upload** 按钮。 在 `com.microsoft.network-extension.signed.mobileconfig` 系统提示您输入文件时选择。
 
 ## <a name="intune"></a>Intune
 
@@ -179,7 +179,7 @@ ms.locfileid: "51932735"
 批准系统扩展：
 
 1. 在 Intune 中，打开 **"管理**  >  **设备配置"。** 选择 **"管理**  >  **配置文件**  >  **""创建配置文件"。**
-2. 选择配置文件的名称。 将 **Platform=macOS** 更改为 **Profile type=Extensions**。 选择“创建”。
+2. 选择配置文件的名称。 将 **Platform=macOS** 更改为 **Profile type=Extensions**。 选择 **创建**。
 3. 在 `Basics` 选项卡中，为此新配置文件命名。
 4. 在 `Configuration settings` 选项卡中，在 部分中添加以下 `Allowed system extensions` 条目：
 

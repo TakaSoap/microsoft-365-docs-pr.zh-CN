@@ -1,7 +1,7 @@
 ---
 title: 发现漏洞
 description: 检索与给定设备 ID 相关的已发现漏洞的集合。
-keywords: api， 图形 api， 受支持的 api， 获取， 列表， 文件， 信息， 发现的漏洞， 威胁 & 漏洞管理 api， Microsoft Defender for Endpoint tvm api
+keywords: api， 图形 api， 受支持的 api， 获取， 列表， 文件， 信息， 发现的漏洞， 威胁& 漏洞管理 api， Microsoft Defender for Endpoint tvm api
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
