@@ -27,19 +27,19 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 04/02/2021
 ms.locfileid: "51578671"
 ---
-# <a name="securely-share-files-externally"></a><span data-ttu-id="6cb5f-103">在外部安全地共享文件</span><span class="sxs-lookup"><span data-stu-id="6cb5f-103">Securely share files externally</span></span>
+# <a name="securely-share-files-externally"></a><span data-ttu-id="0d5a9-103">在外部安全地共享文件</span><span class="sxs-lookup"><span data-stu-id="0d5a9-103">Securely share files externally</span></span>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE22Yf0?autoplay=false]
 
-<span data-ttu-id="6cb5f-104">在 Microsoft 365 商业版中，与组织人员共享文件很容易，但有时你还需要与组织外部人员共享文件。</span><span class="sxs-lookup"><span data-stu-id="6cb5f-104">In Microsoft 365 for business, it's easy to share files with people in your organization, but sometimes you will also need to share with people outside your organization.</span></span> <span data-ttu-id="6cb5f-105">若要与客户安全地共享文件，可以发送安全链接。</span><span class="sxs-lookup"><span data-stu-id="6cb5f-105">To share files securely with your customers, you can send a secure link.</span></span>
+<span data-ttu-id="0d5a9-104">在Microsoft 365中，与组织人员共享文件很容易，但有时你还需要与组织外部人员共享文件。</span><span class="sxs-lookup"><span data-stu-id="0d5a9-104">In Microsoft 365 for business, it's easy to share files with people in your organization, but sometimes you will also need to share with people outside your organization.</span></span> <span data-ttu-id="0d5a9-105">若要与客户安全地共享文件，可以发送安全链接。</span><span class="sxs-lookup"><span data-stu-id="0d5a9-105">To share files securely with your customers, you can send a secure link.</span></span>
 
-## <a name="try-it"></a><span data-ttu-id="6cb5f-106">试一试！</span><span class="sxs-lookup"><span data-stu-id="6cb5f-106">Try it!</span></span>
+## <a name="try-it"></a><span data-ttu-id="0d5a9-106">试一试！</span><span class="sxs-lookup"><span data-stu-id="0d5a9-106">Try it!</span></span>
 
-1. <span data-ttu-id="6cb5f-107">在 SharePoint 网站上的文档库顶部，单击"新建 **"，然后选择**"文件夹 **"。**</span><span class="sxs-lookup"><span data-stu-id="6cb5f-107">At the top of the Documents library on your SharePoint site, click **New**, and then select **Folder**.</span></span>
-1. <span data-ttu-id="6cb5f-108">为文件夹命名，然后单击"创建 **"。**</span><span class="sxs-lookup"><span data-stu-id="6cb5f-108">Give the folder a name, and then click **Create**.</span></span>
-1. <span data-ttu-id="6cb5f-109">将要共享的文件上载到新库，或选择"新建"以直接在库中创建新文档。</span><span class="sxs-lookup"><span data-stu-id="6cb5f-109">Upload the files you want to share to the new library, or choose **New** to create new documents directly in the library.</span></span>
-1. <span data-ttu-id="6cb5f-110">在"文档"库中选择新文件夹，然后单击"共享 **"** 按钮。</span><span class="sxs-lookup"><span data-stu-id="6cb5f-110">Select your new folder in the Documents library, and then click the **Share** button.</span></span>
-1. <span data-ttu-id="6cb5f-111">在"**发送链接"** 窗口中，单击顶部的列表，选择"特定人员"，选择"**允许编辑**"，然后选择"应用 **"。**</span><span class="sxs-lookup"><span data-stu-id="6cb5f-111">In the **Send Link** window, click the list at the top, choose **Specific people**, select **Allow editing**, and then choose **Apply**.</span></span>
-1. <span data-ttu-id="6cb5f-112">在 **"发送链接**"窗口中，输入客户的电子邮件地址，键入一条消息，然后选择"发送 **"。**</span><span class="sxs-lookup"><span data-stu-id="6cb5f-112">In the **Send Link** window, enter your customer's email address, type a message, and choose **Send**.</span></span>
+1. <span data-ttu-id="0d5a9-107">在"文档"库顶部，单击"SharePoint"新建"，然后选择"文件夹 **"。**</span><span class="sxs-lookup"><span data-stu-id="0d5a9-107">At the top of the Documents library on your SharePoint site, click **New**, and then select **Folder**.</span></span>
+1. <span data-ttu-id="0d5a9-108">为文件夹命名，然后单击"创建 **"。**</span><span class="sxs-lookup"><span data-stu-id="0d5a9-108">Give the folder a name, and then click **Create**.</span></span>
+1. <span data-ttu-id="0d5a9-109">Upload要共享的文件共享到新库，或选择"新建"以直接在库中创建新文档。</span><span class="sxs-lookup"><span data-stu-id="0d5a9-109">Upload the files you want to share to the new library, or choose **New** to create new documents directly in the library.</span></span>
+1. <span data-ttu-id="0d5a9-110">在"文档"库中选择新文件夹，然后单击"共享 **"** 按钮。</span><span class="sxs-lookup"><span data-stu-id="0d5a9-110">Select your new folder in the Documents library, and then click the **Share** button.</span></span>
+1. <span data-ttu-id="0d5a9-111">在"**发送链接"** 窗口中，单击顶部的列表，选择"特定人员"，选择"**允许编辑**"，然后选择"应用 **"。**</span><span class="sxs-lookup"><span data-stu-id="0d5a9-111">In the **Send Link** window, click the list at the top, choose **Specific people**, select **Allow editing**, and then choose **Apply**.</span></span>
+1. <span data-ttu-id="0d5a9-112">在 **"发送链接**"窗口中，输入客户的电子邮件地址，键入一条消息，然后选择"发送 **"。**</span><span class="sxs-lookup"><span data-stu-id="0d5a9-112">In the **Send Link** window, enter your customer's email address, type a message, and choose **Send**.</span></span>
 
-    <span data-ttu-id="6cb5f-113">你的客户将收到一封包含验证码的电子邮件，他们需要向自己发送该验证码以访问你的文件夹。</span><span class="sxs-lookup"><span data-stu-id="6cb5f-113">Your customer will receive an email with a verification code, which they'll need to send to themselves to access your folder.</span></span> <span data-ttu-id="6cb5f-114">如果找不到电子邮件，应检查"垃圾邮件"文件夹。</span><span class="sxs-lookup"><span data-stu-id="6cb5f-114">If they can't find the email, they should check their Spam folder.</span></span>
+    <span data-ttu-id="0d5a9-113">你的客户将收到一封包含验证码的电子邮件，他们需要向自己发送该验证码以访问你的文件夹。</span><span class="sxs-lookup"><span data-stu-id="0d5a9-113">Your customer will receive an email with a verification code, which they'll need to send to themselves to access your folder.</span></span> <span data-ttu-id="0d5a9-114">如果找不到电子邮件，应检查"垃圾邮件"文件夹。</span><span class="sxs-lookup"><span data-stu-id="0d5a9-114">If they can't find the email, they should check their Spam folder.</span></span>

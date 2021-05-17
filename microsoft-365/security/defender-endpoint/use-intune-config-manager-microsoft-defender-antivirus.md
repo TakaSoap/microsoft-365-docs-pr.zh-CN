@@ -24,35 +24,35 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 05/07/2021
 ms.locfileid: "52275320"
 ---
-# <a name="use-microsoft-endpoint-manager-and-microsoft-intune-to-configure-and-manage-microsoft-defender-antivirus"></a><span data-ttu-id="18bec-104">使用Microsoft Endpoint Manager和Microsoft Intune配置和管理Microsoft Defender 防病毒</span><span class="sxs-lookup"><span data-stu-id="18bec-104">Use Microsoft Endpoint Manager and Microsoft Intune to configure and manage Microsoft Defender Antivirus</span></span>
+# <a name="use-microsoft-endpoint-manager-and-microsoft-intune-to-configure-and-manage-microsoft-defender-antivirus"></a><span data-ttu-id="d49b4-104">使用Microsoft Endpoint Manager和Microsoft Intune配置和管理Microsoft Defender 防病毒</span><span class="sxs-lookup"><span data-stu-id="d49b4-104">Use Microsoft Endpoint Manager and Microsoft Intune to configure and manage Microsoft Defender Antivirus</span></span>
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-<span data-ttu-id="18bec-105">**适用于：**</span><span class="sxs-lookup"><span data-stu-id="18bec-105">**Applies to:**</span></span>
+<span data-ttu-id="d49b4-105">**适用于：**</span><span class="sxs-lookup"><span data-stu-id="d49b4-105">**Applies to:**</span></span>
 
-- [<span data-ttu-id="18bec-106">Microsoft Defender for Endpoint</span><span class="sxs-lookup"><span data-stu-id="18bec-106">Microsoft Defender for Endpoint</span></span>](/microsoft-365/security/defender-endpoint/)
+- [<span data-ttu-id="d49b4-106">Microsoft Defender for Endpoint</span><span class="sxs-lookup"><span data-stu-id="d49b4-106">Microsoft Defender for Endpoint</span></span>](/microsoft-365/security/defender-endpoint/)
 
-<span data-ttu-id="18bec-107">如果你正在使用 Microsoft Endpoint Manager 或 Microsoft Intune 管理你的网络上终结点，你现在可以使用 Microsoft Endpoint Manager 管理Microsoft Defender 防病毒扫描。</span><span class="sxs-lookup"><span data-stu-id="18bec-107">If you were using Microsoft Endpoint Manager or Microsoft Intune to manage the endpoints on your network, you can now use Microsoft Endpoint Manager to manage Microsoft Defender Antivirus scans.</span></span>
+<span data-ttu-id="d49b4-107">如果你正在使用 Microsoft Endpoint Manager 或 Microsoft Intune 管理你的网络上终结点，你现在可以使用 Microsoft Endpoint Manager 管理Microsoft Defender 防病毒扫描。</span><span class="sxs-lookup"><span data-stu-id="d49b4-107">If you were using Microsoft Endpoint Manager or Microsoft Intune to manage the endpoints on your network, you can now use Microsoft Endpoint Manager to manage Microsoft Defender Antivirus scans.</span></span>
 
-1. <span data-ttu-id="18bec-108">In the Microsoft Endpoint Manager admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) ， navigate to **Endpoint Security**.</span><span class="sxs-lookup"><span data-stu-id="18bec-108">In the Microsoft Endpoint Manager admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)), navigate to **Endpoint Security**.</span></span>
+1. <span data-ttu-id="d49b4-108">In the Microsoft Endpoint Manager admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) ， navigate to **Endpoint Security**.</span><span class="sxs-lookup"><span data-stu-id="d49b4-108">In the Microsoft Endpoint Manager admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)), navigate to **Endpoint Security**.</span></span>
 
-2. <span data-ttu-id="18bec-109">在 **"管理"** 下，**选择"防病毒"。**</span><span class="sxs-lookup"><span data-stu-id="18bec-109">Under **Manage**, choose **Antivirus**.</span></span>
+2. <span data-ttu-id="d49b4-109">在 **"管理"** 下，**选择"防病毒"。**</span><span class="sxs-lookup"><span data-stu-id="d49b4-109">Under **Manage**, choose **Antivirus**.</span></span>
 
-3. <span data-ttu-id="18bec-110">选择你的Microsoft Defender 防病毒策略。</span><span class="sxs-lookup"><span data-stu-id="18bec-110">Select your Microsoft Defender Antivirus policy.</span></span> 
+3. <span data-ttu-id="d49b4-110">选择你的Microsoft Defender 防病毒策略。</span><span class="sxs-lookup"><span data-stu-id="d49b4-110">Select your Microsoft Defender Antivirus policy.</span></span> 
 
-4. <span data-ttu-id="18bec-111">在 **"管理"** 下，选择"**属性"。**</span><span class="sxs-lookup"><span data-stu-id="18bec-111">Under **Manage**, choose **Properties**.</span></span>
+4. <span data-ttu-id="d49b4-111">在“**管理**”下，选择“**属性**”。</span><span class="sxs-lookup"><span data-stu-id="d49b4-111">Under **Manage**, choose **Properties**.</span></span>
 
-5. <span data-ttu-id="18bec-112">在"**配置设置"旁边，** 选择"编辑 **"。**</span><span class="sxs-lookup"><span data-stu-id="18bec-112">Next to **Configuration settings**, choose **Edit**.</span></span>
+5. <span data-ttu-id="d49b4-112">选择“**配置设置**”旁的“**编辑**”。</span><span class="sxs-lookup"><span data-stu-id="d49b4-112">Next to **Configuration settings**, choose **Edit**.</span></span>
 
-6. <span data-ttu-id="18bec-113">展开扫描 **部分** ，然后查看或编辑扫描设置。</span><span class="sxs-lookup"><span data-stu-id="18bec-113">Expand the **Scan** section, and review or edit your scanning settings.</span></span>
+6. <span data-ttu-id="d49b4-113">展开扫描 **部分** ，然后查看或编辑扫描设置。</span><span class="sxs-lookup"><span data-stu-id="d49b4-113">Expand the **Scan** section, and review or edit your scanning settings.</span></span>
 
-7. <span data-ttu-id="18bec-114">选择 **"审阅 + 保存"**</span><span class="sxs-lookup"><span data-stu-id="18bec-114">Choose **Review + save**</span></span>
+7. <span data-ttu-id="d49b4-114">选择 **"审阅 + 保存"**</span><span class="sxs-lookup"><span data-stu-id="d49b4-114">Choose **Review + save**</span></span>
 
-<span data-ttu-id="18bec-115">需要帮助?</span><span class="sxs-lookup"><span data-stu-id="18bec-115">Need help?</span></span> <span data-ttu-id="18bec-116">请参阅[管理终结点安全Microsoft Intune。](/mem/intune/protect/endpoint-security)</span><span class="sxs-lookup"><span data-stu-id="18bec-116">See [Manage endpoint security in Microsoft Intune](/mem/intune/protect/endpoint-security).</span></span>
+<span data-ttu-id="d49b4-115">需要帮助?</span><span class="sxs-lookup"><span data-stu-id="d49b4-115">Need help?</span></span> <span data-ttu-id="d49b4-116">请参阅[管理终结点安全Microsoft Intune。](/mem/intune/protect/endpoint-security)</span><span class="sxs-lookup"><span data-stu-id="d49b4-116">See [Manage endpoint security in Microsoft Intune](/mem/intune/protect/endpoint-security).</span></span>
 
 
-## <a name="related-articles"></a><span data-ttu-id="18bec-117">相关文章</span><span class="sxs-lookup"><span data-stu-id="18bec-117">Related articles</span></span>
+## <a name="related-articles"></a><span data-ttu-id="d49b4-117">相关文章</span><span class="sxs-lookup"><span data-stu-id="d49b4-117">Related articles</span></span>
 
-- [<span data-ttu-id="18bec-118">有关管理和配置工具的参考主题</span><span class="sxs-lookup"><span data-stu-id="18bec-118">Reference topics for management and configuration tools</span></span>](configuration-management-reference-microsoft-defender-antivirus.md)
-- [<span data-ttu-id="18bec-119">Microsoft Defender 防病毒Windows 10</span><span class="sxs-lookup"><span data-stu-id="18bec-119">Microsoft Defender Antivirus in Windows 10</span></span>](microsoft-defender-antivirus-in-windows-10.md)
+- [<span data-ttu-id="d49b4-118">有关管理和配置工具的参考主题</span><span class="sxs-lookup"><span data-stu-id="d49b4-118">Reference topics for management and configuration tools</span></span>](configuration-management-reference-microsoft-defender-antivirus.md)
+- [<span data-ttu-id="d49b4-119">Windows 10 中的 Microsoft Defender 防病毒</span><span class="sxs-lookup"><span data-stu-id="d49b4-119">Microsoft Defender Antivirus in Windows 10</span></span>](microsoft-defender-antivirus-in-windows-10.md)

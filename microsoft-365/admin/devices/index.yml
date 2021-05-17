@@ -24,7 +24,7 @@ landingContent:
     links:
     - text: 查看设备和应用数据保护选项
       url: choose-device-security.md
-- title: 使用 Microsoft Intune 管理设备和应用数据
+- title: 使用应用程序管理设备和Microsoft Intune
   linkLists:
   - linkListType: overview
     links:
@@ -32,13 +32,13 @@ landingContent:
       url: /mem/intune/enrollment/device-enrollment
   - linkListType: how-to-guide
     links:
-    - text: 设置 Windows 10 设备的自动注册
+    - text: 设置自动注册Windows 10设备
       url: /mem/intune/enrollment/quickstart-setup-auto-enrollment
     - text: 设置 Android 注册
       url: /mem/intune/enrollment/android-enroll
     - text: 设置 iOS/iPadOS 注册
       url: /mem/intune/enrollment/ios-enroll
-- title: 使用 Microsoft 365 商业高级版管理设备和应用数据
+- title: 使用应用程序管理设备和Microsoft 365 商业高级版
   linkLists:
   - linkListType: how-to-guide
     links:
@@ -46,15 +46,15 @@ landingContent:
       url: ../../business/view-policies-and-devices.md
     - text: 从设备中删除公司数据
       url: ../../business/remove-company-data.md
-    - text: 将 Windows 设备重置为出厂设置
+    - text: 将Windows重置为出厂设置
       url: ../../business/reset-devices-to-factory-settings.md
-- title: 使用 Microsoft 365 企业版管理设备和应用数据
+- title: 使用企业应用版管理Microsoft 365应用数据
   linkLists:
   - linkListType: overview
     links:
-    - text: Microsoft 365 企业版概述
+    - text: 企业Microsoft 365概述
       url: ../../enterprise/microsoft-365-overview.md
-    - text: Microsoft 365 企业版的设备管理路线图
+    - text: 适用于企业的 Microsoft 365的设备管理路线图
       url: ../../enterprise/device-management-roadmap-microsoft-365.md
 - title: 使用基本移动性和安全性管理设备和应用数据
   linkLists:

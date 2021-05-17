@@ -19,8 +19,8 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 05/07/2021
 ms.locfileid: "52274108"
 ---
-# <a name="payment-information-for-brazil"></a><span data-ttu-id="0ea80-103">巴西的付款信息</span><span class="sxs-lookup"><span data-stu-id="0ea80-103">Payment information for Brazil</span></span>
+# <a name="payment-information-for-brazil"></a><span data-ttu-id="da63a-103">巴西的付款信息</span><span class="sxs-lookup"><span data-stu-id="da63a-103">Payment information for Brazil</span></span>
 
-<span data-ttu-id="0ea80-104">[查找另一个国家/地区](../billing-and-payments/pay-for-your-subscription.md)。</span><span class="sxs-lookup"><span data-stu-id="0ea80-104">[Find another country or region](../billing-and-payments/pay-for-your-subscription.md).</span></span>
+<span data-ttu-id="da63a-104">[查找另一个国家/地区](../billing-and-payments/pay-for-your-subscription.md)。</span><span class="sxs-lookup"><span data-stu-id="da63a-104">[Find another country or region](../billing-and-payments/pay-for-your-subscription.md).</span></span>
 
-<span data-ttu-id="0ea80-105">Please follow payment instruction on your invoice and reference invoice number () on the payment invoice.</span><span class="sxs-lookup"><span data-stu-id="0ea80-105">Please follow payment instruction on your invoice and reference invoice number(s) on the payment remittance.</span></span>  
+<span data-ttu-id="da63a-105">Please follow payment instruction on your invoice and reference invoice number () on the payment invoice.</span><span class="sxs-lookup"><span data-stu-id="da63a-105">Please follow payment instruction on your invoice and reference invoice number(s) on the payment remittance.</span></span>  

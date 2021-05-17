@@ -22,7 +22,7 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: fae8819d-7235-495f-9f07-d016f545887f
-description: 验证 Windows 10 设备上 Microsoft 365 商业高级版应用保护设置，并验证用户无法将公司数据复制到个人文件或非托管应用。
+description: 验证Microsoft 365 商业高级版设备上是否Windows 10应用保护设置，并验证用户无法将公司数据复制到个人文件或非托管应用。
 ms.openlocfilehash: e319ffa5149f055b5de45078facc8899acffc223
 ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
@@ -30,66 +30,66 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 04/02/2021
 ms.locfileid: "51579854"
 ---
-# <a name="validate-app-protection-settings-on-windows-10-pcs"></a><span data-ttu-id="f0e02-103">验证 Windows 10 电脑上的应用保护设置</span><span class="sxs-lookup"><span data-stu-id="f0e02-103">Validate app protection settings on Windows 10 PCs</span></span>
+# <a name="validate-app-protection-settings-on-windows-10-pcs"></a><span data-ttu-id="a33aa-103">验证 Windows 10 电脑上的应用保护设置</span><span class="sxs-lookup"><span data-stu-id="a33aa-103">Validate app protection settings on Windows 10 PCs</span></span>
 
-## <a name="verify-that-users-cannot-copy-company-data-to-personal-files-on-corporate-devices"></a><span data-ttu-id="f0e02-104">确定用户不能将公司数据复制到企业设备上的个人文件中</span><span class="sxs-lookup"><span data-stu-id="f0e02-104">Verify that users cannot copy company data to personal files on corporate devices</span></span>
+## <a name="verify-that-users-cannot-copy-company-data-to-personal-files-on-corporate-devices"></a><span data-ttu-id="a33aa-104">确定用户不能将公司数据复制到企业设备上的个人文件中</span><span class="sxs-lookup"><span data-stu-id="a33aa-104">Verify that users cannot copy company data to personal files on corporate devices</span></span>
 
-<span data-ttu-id="f0e02-105">[设置应用保护策略](protection-settings-for-windows-10-devices.md) 后，可能需要几个小时策略才会在用户的设备上生效。</span><span class="sxs-lookup"><span data-stu-id="f0e02-105">After you [set up app protection policies](protection-settings-for-windows-10-devices.md), it may take up to a few hours for the policy to take effect on users' devices.</span></span> <span data-ttu-id="f0e02-106">如果为公司拥有的设备打开"阻止用户将公司数据复制到个人文件并强制他们将工作文件保存到 **OneDrive for Business"** 设置，可以在用户连接到 Azure AD 并登录后在用户设备上检查此设置。</span><span class="sxs-lookup"><span data-stu-id="f0e02-106">If you turned **On** the **Prevent users from copying company data to personal files and force them to save work files to OneDrive for Business** setting for company owned devices, you can check this on the user's device after they've connected to Azure AD and signed in.</span></span> 
+<span data-ttu-id="a33aa-105">[设置应用保护策略](protection-settings-for-windows-10-devices.md) 后，可能需要几个小时策略才会在用户的设备上生效。</span><span class="sxs-lookup"><span data-stu-id="a33aa-105">After you [set up app protection policies](protection-settings-for-windows-10-devices.md), it may take up to a few hours for the policy to take effect on users' devices.</span></span> <span data-ttu-id="a33aa-106">如果你为公司拥有的设备打开"阻止用户将公司数据复制到个人文件并强制他们将工作文件保存到 **OneDrive for Business"** 设置，可以在用户连接到 Azure AD 并登录后在用户设备上检查此设置。</span><span class="sxs-lookup"><span data-stu-id="a33aa-106">If you turned **On** the **Prevent users from copying company data to personal files and force them to save work files to OneDrive for Business** setting for company owned devices, you can check this on the user's device after they've connected to Azure AD and signed in.</span></span> 
   
- <span data-ttu-id="f0e02-107">**验证连接设置**</span><span class="sxs-lookup"><span data-stu-id="f0e02-107">**Verify connection settings**</span></span>
+ <span data-ttu-id="a33aa-107">**验证连接设置**</span><span class="sxs-lookup"><span data-stu-id="a33aa-107">**Verify connection settings**</span></span>
   
-1. <span data-ttu-id="f0e02-108">使用 Microsoft 365 商业高级版凭据登录并连接到 Azure AD（如为 [Microsoft 365](set-up-windows-devices.md)商业高级版用户设置 Windows 设备中所述）后，请转到 **Windows 设置** 帐户访问工作或 \>  \> **学校**。</span><span class="sxs-lookup"><span data-stu-id="f0e02-108">After you sign in with Microsoft 365 Business Premium credentials and connect to Azure AD as described in [Set up Windows devices for Microsoft 365 Business Premium users](set-up-windows-devices.md), go to **Windows Settings** \> **Accounts** \> **Access work or school**.</span></span> <span data-ttu-id="f0e02-109">选择 **"连接到 \<tenant name\> Azure AD"，** 然后选择"信息 **"。**</span><span class="sxs-lookup"><span data-stu-id="f0e02-109">Choose **Connected to \<tenant name\> Azure AD**, and then choose **Info**.</span></span>
+1. <span data-ttu-id="a33aa-108">使用 Microsoft 365 商业高级版 凭据登录并连接到 Azure AD（如为 Microsoft 365 商业高级版 用户设置 Windows 设备中所述 [）](set-up-windows-devices.md)后，请转到 Windows 设置 \> **Accounts** \> **Access work or school**。</span><span class="sxs-lookup"><span data-stu-id="a33aa-108">After you sign in with Microsoft 365 Business Premium credentials and connect to Azure AD as described in [Set up Windows devices for Microsoft 365 Business Premium users](set-up-windows-devices.md), go to **Windows Settings** \> **Accounts** \> **Access work or school**.</span></span> <span data-ttu-id="a33aa-109">选择 **"连接到 \<tenant name\> Azure AD"，** 然后选择"信息 **"。**</span><span class="sxs-lookup"><span data-stu-id="a33aa-109">Choose **Connected to \<tenant name\> Azure AD**, and then choose **Info**.</span></span>
     
     ![Click or tap Info on the Connected to Azure AD dialog.](../media/a36ede2b-d1a0-4d4e-8ea7-af39b4b63890.png)
   
-2. <span data-ttu-id="f0e02-111">On the **Managed by** \<tenant name\> page， you can see the Connection **info** that includes a Management **Server Address** like the one shown in the following figure.</span><span class="sxs-lookup"><span data-stu-id="f0e02-111">On the **Managed by** \<tenant name\> page, you can see the **Connection info** that includes a **Management Server Address** like the one shown in the following figure.</span></span> 
+2. <span data-ttu-id="a33aa-111">On the **Managed by** \<tenant name\> page， you can see the Connection **info** that includes a Management **Server Address** like the one shown in the following figure.</span><span class="sxs-lookup"><span data-stu-id="a33aa-111">On the **Managed by** \<tenant name\> page, you can see the **Connection info** that includes a **Management Server Address** like the one shown in the following figure.</span></span> 
     
     ![Managed by page shows connection info of the device manager URL.](../media/47515a8e-2d0c-4bea-99f0-6b2545b88a11.png)
   
- <span data-ttu-id="f0e02-113">**验证您是否无法将公司数据粘贴到非托管应用程序中**</span><span class="sxs-lookup"><span data-stu-id="f0e02-113">**Verify that you cannot paste company data in a non-managed app**</span></span>
+ <span data-ttu-id="a33aa-113">**验证您是否无法将公司数据粘贴到非托管应用程序中**</span><span class="sxs-lookup"><span data-stu-id="a33aa-113">**Verify that you cannot paste company data in a non-managed app**</span></span>
   
-1. <span data-ttu-id="f0e02-114">打开由 Microsoft 365 商业高级版安装的 Outlook 2016。</span><span class="sxs-lookup"><span data-stu-id="f0e02-114">Open Outlook 2016 that was installed by Microsoft 365 Business Premium.</span></span>
+1. <span data-ttu-id="a33aa-114">打开Outlook 2016安装的应用程序Microsoft 365 商业高级版。</span><span class="sxs-lookup"><span data-stu-id="a33aa-114">Open Outlook 2016 that was installed by Microsoft 365 Business Premium.</span></span>
     
-2. <span data-ttu-id="f0e02-115">打开一封电子邮件，并复制其中的某些内容。</span><span class="sxs-lookup"><span data-stu-id="f0e02-115">Open an email and copy some content from it.</span></span>
+2. <span data-ttu-id="a33aa-115">打开一封电子邮件，并复制其中的某些内容。</span><span class="sxs-lookup"><span data-stu-id="a33aa-115">Open an email and copy some content from it.</span></span>
     
-    <span data-ttu-id="f0e02-116">打开记事本，并尝试将该内容粘贴到其中。</span><span class="sxs-lookup"><span data-stu-id="f0e02-116">Open Notepad and attempt to paste the content in.</span></span>
+    <span data-ttu-id="a33aa-116">打开记事本，并尝试将该内容粘贴到其中。</span><span class="sxs-lookup"><span data-stu-id="a33aa-116">Open Notepad and attempt to paste the content in.</span></span>
     
-    <span data-ttu-id="f0e02-117">你将收到一条错误，指出应用无法访问内容。</span><span class="sxs-lookup"><span data-stu-id="f0e02-117">You'll receive an error that states the app can't access content.</span></span>
+    <span data-ttu-id="a33aa-117">你将收到一条错误，指出应用无法访问内容。</span><span class="sxs-lookup"><span data-stu-id="a33aa-117">You'll receive an error that states the app can't access content.</span></span>
     
     ![A dialog that states app can't access content when you paste into an unmanaged app.](../media/5e82b154-cf2f-43c8-ae80-b45d8ad80e56.png)
   
-    <span data-ttu-id="f0e02-119">但是，可以将相同的内容粘贴到 Word 2016。</span><span class="sxs-lookup"><span data-stu-id="f0e02-119">You can, however, paste the same content into Word 2016.</span></span>
+    <span data-ttu-id="a33aa-119">但是，可以将相同的内容粘贴到 Word 2016。</span><span class="sxs-lookup"><span data-stu-id="a33aa-119">You can, however, paste the same content into Word 2016.</span></span>
     
-## <a name="verify-that-users-cannot-copy-company-data-to-personal-files-on-personal-devices"></a><span data-ttu-id="f0e02-120">验证用户不能将公司数据复制到个人设备上的个人文件中</span><span class="sxs-lookup"><span data-stu-id="f0e02-120">Verify that users cannot copy company data to personal files on personal devices</span></span>
+## <a name="verify-that-users-cannot-copy-company-data-to-personal-files-on-personal-devices"></a><span data-ttu-id="a33aa-120">验证用户不能将公司数据复制到个人设备上的个人文件中</span><span class="sxs-lookup"><span data-stu-id="a33aa-120">Verify that users cannot copy company data to personal files on personal devices</span></span>
 
- <span data-ttu-id="f0e02-121">**验证连接设置**</span><span class="sxs-lookup"><span data-stu-id="f0e02-121">**Verify connection settings**</span></span>
+ <span data-ttu-id="a33aa-121">**验证连接设置**</span><span class="sxs-lookup"><span data-stu-id="a33aa-121">**Verify connection settings**</span></span>
   
-1. <span data-ttu-id="f0e02-122">在以本地用户身份登录的 Windows 10 个人设备上，转到 **Windows** 设置，然后单击 **或点击帐户** \> **访问工作或学校**。</span><span class="sxs-lookup"><span data-stu-id="f0e02-122">On your Windows 10 personal device where you're logged in as a local user, go to **Windows Settings**, and click or tap **Accounts** \> **Access work or school**.</span></span>
+1. <span data-ttu-id="a33aa-122">在Windows 10本地用户登录的个人设备上，转到"Windows 设置"，然后单击 **或点击"** 帐户""访问工作或学校 \> **"。**</span><span class="sxs-lookup"><span data-stu-id="a33aa-122">On your Windows 10 personal device where you're logged in as a local user, go to **Windows Settings**, and click or tap **Accounts** \> **Access work or school**.</span></span>
     
-2. <span data-ttu-id="f0e02-123">在" **访问工作或学校帐户**"下选择" **连接**"。</span><span class="sxs-lookup"><span data-stu-id="f0e02-123">Under the **Access work or school**, choose **Connect**.</span></span>
+2. <span data-ttu-id="a33aa-123">在" **访问工作或学校帐户**"下选择" **连接**"。</span><span class="sxs-lookup"><span data-stu-id="a33aa-123">Under the **Access work or school**, choose **Connect**.</span></span>
     
-3. <span data-ttu-id="f0e02-124">在"设置工作或学校帐户"对话框"登录"中输入你的 Microsoft 365 商业高级 \> **版凭据**。</span><span class="sxs-lookup"><span data-stu-id="f0e02-124">Enter your Microsoft 365 Business Premium credential into the **Set up a work or school account dialog** \> **Sign in**.</span></span>
+3. <span data-ttu-id="a33aa-124">Enter your Microsoft 365 商业高级版 credential into the **Set up a work or school account dialog** Sign \> **in**.</span><span class="sxs-lookup"><span data-stu-id="a33aa-124">Enter your Microsoft 365 Business Premium credential into the **Set up a work or school account dialog** \> **Sign in**.</span></span>
     
-4. <span data-ttu-id="f0e02-125">在" **访问工作或学校帐户**"页面，选择" **工作或学校帐户**"，然后选择" **信息**"。</span><span class="sxs-lookup"><span data-stu-id="f0e02-125">On the **Access work or school** page, choose the **Work or school account**, and then choose **Info**.</span></span>
+4. <span data-ttu-id="a33aa-125">在" **访问工作或学校帐户**"页面，选择" **工作或学校帐户**"，然后选择" **信息**"。</span><span class="sxs-lookup"><span data-stu-id="a33aa-125">On the **Access work or school** page, choose the **Work or school account**, and then choose **Info**.</span></span>
     
     ![单击或点击工作或学校帐户对话框中的信息。](../media/63bd8b32-cb32-4afa-8ce0-6070ac403abc.png)
   
-5. <span data-ttu-id="f0e02-127">在 **"访问工作或** 学校"页上，你可以看到包含管理服务器地址的连接信息，如下图所示，并包括单词 *wip* 和 *mam。*</span><span class="sxs-lookup"><span data-stu-id="f0e02-127">On the **Access work or school** page, you can see the **Connection info** that includes a **Management Server Address** like the one shown in the following figure, and includes the words  *wip*  and  *mam*  within.</span></span> 
+5. <span data-ttu-id="a33aa-127">在 **"访问工作或** 学校"页上，你可以看到包含管理服务器地址的连接信息，如下图所示，并包括单词 *wip* 和 *mam。*</span><span class="sxs-lookup"><span data-stu-id="a33aa-127">On the **Access work or school** page, you can see the **Connection info** that includes a **Management Server Address** like the one shown in the following figure, and includes the words  *wip*  and  *mam*  within.</span></span> 
     
     ![Managed by page shows connection info URL that includes the words mam and wpi.](../media/abd4eaf4-44fa-4538-a3e8-1e0d331dfe1e.png)
   
- <span data-ttu-id="f0e02-129">**验证您是否无法将公司数据粘贴到非托管应用程序中**</span><span class="sxs-lookup"><span data-stu-id="f0e02-129">**Verify that you cannot paste company data in a non-managed app**</span></span>
+ <span data-ttu-id="a33aa-129">**验证您是否无法将公司数据粘贴到非托管应用程序中**</span><span class="sxs-lookup"><span data-stu-id="a33aa-129">**Verify that you cannot paste company data in a non-managed app**</span></span>
   
-1. <span data-ttu-id="f0e02-130">打开 Outlook 2016 并根据需要添加 Microsoft 365 商业高级版帐户，然后使用 Microsoft 365 商业高级版凭据登录。</span><span class="sxs-lookup"><span data-stu-id="f0e02-130">Open Outlook 2016 and add your Microsoft 365 Business Premium account if necessary and sign in with your Microsoft 365 Business Premium credentials.</span></span>
+1. <span data-ttu-id="a33aa-130">打开Outlook 2016并根据需要添加 Microsoft 365 商业高级版 帐户，然后使用你的 Microsoft 365 商业高级版 凭据登录。</span><span class="sxs-lookup"><span data-stu-id="a33aa-130">Open Outlook 2016 and add your Microsoft 365 Business Premium account if necessary and sign in with your Microsoft 365 Business Premium credentials.</span></span>
     
-2. <span data-ttu-id="f0e02-131">打开一封电子邮件，并复制其中的某些内容。</span><span class="sxs-lookup"><span data-stu-id="f0e02-131">Open an email and copy some content from it.</span></span>
+2. <span data-ttu-id="a33aa-131">打开一封电子邮件，并复制其中的某些内容。</span><span class="sxs-lookup"><span data-stu-id="a33aa-131">Open an email and copy some content from it.</span></span>
     
-    <span data-ttu-id="f0e02-132">打开记事本，并尝试将该内容粘贴到其中。</span><span class="sxs-lookup"><span data-stu-id="f0e02-132">Open Notepad and attempt to paste the content in.</span></span>
+    <span data-ttu-id="a33aa-132">打开记事本，并尝试将该内容粘贴到其中。</span><span class="sxs-lookup"><span data-stu-id="a33aa-132">Open Notepad and attempt to paste the content in.</span></span>
     
-    <span data-ttu-id="f0e02-133">你将收到一条错误，指出应用无法访问内容。</span><span class="sxs-lookup"><span data-stu-id="f0e02-133">You'll receive an error that states App can't access content.</span></span>
+    <span data-ttu-id="a33aa-133">你将收到一条错误，指出应用无法访问内容。</span><span class="sxs-lookup"><span data-stu-id="a33aa-133">You'll receive an error that states App can't access content.</span></span>
     
     ![A dialog that states app can't access content when you paste into an unmanaged app.](../media/5e82b154-cf2f-43c8-ae80-b45d8ad80e56.png)
   
-    <span data-ttu-id="f0e02-135">但是，可以将相同的内容粘贴到 Word 2016。</span><span class="sxs-lookup"><span data-stu-id="f0e02-135">You can, however, paste the same content into Word 2016.</span></span>
+    <span data-ttu-id="a33aa-135">但是，可以将相同的内容粘贴到 Word 2016。</span><span class="sxs-lookup"><span data-stu-id="a33aa-135">You can, however, paste the same content into Word 2016.</span></span>
     
 
