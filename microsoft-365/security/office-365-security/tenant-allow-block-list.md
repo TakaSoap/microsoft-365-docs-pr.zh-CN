@@ -35,17 +35,17 @@ ms.locfileid: "51587583"
 > [!NOTE]
 > 目前，你 **无法** 配置租户允许/阻止列表中的允许项。
 
-在具有 Exchange Online 邮箱或独立 Exchange Online Protection (EOP) （没有 Exchange Online 邮箱）的 Microsoft 365 组织中，您可能对 EOP 筛选裁定有意见不一致。 例如，一条好邮件可能标记为 (误报) ，或者可能允许错误消息通过 (漏报) 。
+在Microsoft 365没有邮箱的 Exchange Online 或独立 Exchange Online Protection (EOP) 组织中Exchange Online，您可能会与 EOP 筛选裁定不一致。 例如，一条好邮件可能标记为 (误报) ，或者可能允许错误消息通过 (漏报) 。
 
-安全与合规中心中的租户允许/阻止&提供了一种手动替代 Microsoft 365 筛选裁定的方法。 租户允许/阻止列表在邮件流期间和用户单击时使用。 您可以指定要始终阻止的 URL 或文件。
+安全与合规中心中的租户&/阻止列表提供了一种手动覆盖Microsoft 365裁定的方法。 租户允许/阻止列表在邮件流期间和用户单击时使用。 您可以指定要始终阻止的 URL 或文件。
 
-本文介绍如何在安全与合规中心或 PowerShell & (Exchange Online PowerShell 中为在 Exchange Online 中拥有邮箱的 Microsoft 365 组织配置租户允许/阻止列表中的条目;适用于没有 Exchange Online 邮箱的组织的独立 EOP PowerShell) 。
+本文介绍如何在安全& 合规中心或 PowerShell (Exchange Online PowerShell 中为在 Exchange Online 中拥有邮箱的 Microsoft 365 组织配置租户允许/阻止Exchange Online;适用于没有邮箱或邮箱Exchange Online的独立 EOP PowerShell) 。
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>开始前，有必要了解什么？
 
 - 安全与合规中心的打开网址为 <https://protection.office.com/>。 若要直接转到租户 **允许/阻止列表** 页面，请使用 <https://protection.office.com/tenantAllowBlockList> 。
 
-- 使用文件的 SHA256 哈希值指定文件。 若要在 Windows 中查找文件的 SHA256 哈希值，在命令提示符中运行以下命令：
+- 使用文件的 SHA256 哈希值指定文件。 若要在命令提示符中查找文件的 SHA256 哈希Windows，在命令提示符中运行以下命令：
 
   ```console
   certutil.exe -hashfile "<Path>\<Filename>" SHA256

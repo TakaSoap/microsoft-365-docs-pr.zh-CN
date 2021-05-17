@@ -271,7 +271,7 @@ URL 单击飞出也显示标记信息。 若要查看它，请转到网络钓鱼
 - [Exchange Online 中的功能权限](/exchange/permissions-exo/feature-permissions)
 - [Exchange Online PowerShell](/powershell/exchange/exchange-online-powershell)
 
-## <a name="more-information"></a>更多信息
+## <a name="more-information"></a>详细信息
 
 - [查找和调查投递的恶意电子邮件](investigate-malicious-email-that-was-delivered.md) 
 - [查看在 SharePoint Online、OneDrive 和 Microsoft Teams](mdo-for-spo-odb-and-teams.md) 

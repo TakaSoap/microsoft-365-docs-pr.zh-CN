@@ -1,7 +1,7 @@
 ---
 title: 内部风险管理计划
 description: 了解如何在组织中规划使用内部风险管理策略。
-keywords: Microsoft 365， 内部风险， 风险管理， 合规性
+keywords: Microsoft 365、内部风险、风险管理、合规性
 localization_priority: Normal
 ms.prod: microsoft-365-enterprise
 ms.topic: article
@@ -42,32 +42,32 @@ ms.locfileid: "50820144"
 
 ## <a name="plan-for-the-review-and-investigation-workflow"></a>规划审阅和调查工作流
 
-选择专门的利益干系人，定期在 [Microsoft 365](https://compliance.microsoft.com/)合规中心 中监视和查看警报和案例。 请务必了解如何向内部风险管理中提供的不同角色组分配不同的利益干系人。
+选择专门的利益干系人，定期在合规中心 中监视和查看Microsoft 365[和案例](https://compliance.microsoft.com/)。 请务必了解如何向内部风险管理中提供的不同角色组分配不同的利益干系人。
 
-根据合规性管理团队的结构，你可以将用户分配到特定角色组来管理不同的内部风险管理功能集。 若要查看 Office  365 安全与合规中心中的"权限"选项卡&管理角色组，您需要被分配到组织管理角色组，或需要分配有"*角色管理"角色*。 配置内部风险管理时，请从以下角色组选项中进行选择：
+根据合规性管理团队的结构，有选项将用户分配到特定角色组，以管理不同的预览体验计划风险管理功能集。 若要查看 Office 365安全&合规中心中的"权限"选项卡并管理角色组，您需要被分配到组织管理角色组，或者需要分配有"角色管理 *"角色*。 配置内部风险管理时，请从以下角色组选项中进行选择：
 
 | **角色组** | **角色权限** |
 | :------------- | :------------------- |
-| **内部风险管理** | 使用此角色组在单个组中管理组织的内部风险管理。 通过添加指定管理员、分析师、研究人员和审核员的所有用户帐户，可以在单个组中配置内部风险管理权限。 此角色组包含所有内部风险管理权限角色和相关权限。 此配置是快速开始使用内部风险管理的最简单方法，非常适合不需要为单独的用户组定义单独权限的组织。 |
+| **内部风险管理** | 使用此角色组来管理单个组中组织的预览体验成员风险管理。 通过添加指定管理员、分析师、研究人员和审核员的所有用户帐户，可以在单个组中配置内部风险管理权限。 此角色组包含所有内部风险管理权限角色和相关权限。 此配置是快速开始使用内部风险管理的最简单方法，非常适合不需要为单独的用户组定义单独权限的组织。 |
 | **内部风险管理管理员** | 使用此角色组最初配置内部风险管理，稍后再将内部风险管理员隔离到定义的组中。 此角色组的用户可启用和查看分析见解，并创建、读取、更新和删除内部风险管理策略、全局设置和角色组分配。 |
-| **预览体验计划风险管理分析员** | 使用此组向将充当内部风险案例分析员的用户分配权限。 此角色组的用户可以访问和查看所有内部风险管理警报、案例、分析见解和通知模板。 他们无法访问内部风险内容资源管理器。 |
-| **预览体验计划风险管理调查员** | 使用此组向将充当内部风险数据调查者的用户分配权限。 此角色组的用户可以访问所有事例的内部风险管理警报、案例、通知模板和内容资源管理器。 |
+| **预览体验计划风险管理分析员** | 使用此组为将充当预览体验成员案例分析员的用户分配权限。 此角色组的用户可以访问和查看所有内部风险管理警报、案例、分析见解和通知模板。 他们无法访问内部风险内容资源管理器。 |
+| **预览体验计划风险管理调查员** | 使用此组为将充当预览体验成员、风险数据执行者的用户分配权限。 此角色组的用户可以访问所有事例的内部风险管理警报、案例、通知模板和内容资源管理器。 |
 | **内部风险管理审核员** | 使用此组向将审核内部风险管理活动的用户分配权限。 此角色组的用户可以访问内部风险审核日志。 |
 
 ## <a name="understand-requirements-and-dependencies"></a>了解要求和依赖关系
 
-根据计划实施内部风险管理策略的方法，你需要拥有正确的 Microsoft 365 许可订阅，并了解和规划某些解决方案先决条件。
+根据计划实施内部风险管理策略的方法，您需要具有适当的Microsoft 365许可订阅，并了解和规划某些解决方案先决条件。
 
-**许可：** 内部风险管理是广泛选择 Microsoft 365 许可订阅的一部分。 有关详细信息，请参阅内部风险管理 [入门文章](insider-risk-management-configure.md#subscriptions-and-licensing) 。
+**许可：** 内部风险管理作为各种许可订阅的一Microsoft 365提供。 有关详细信息，请参阅内部风险管理 [入门文章](insider-risk-management-configure.md#subscriptions-and-licensing) 。
 
-如果你没有现有的 Microsoft 365 企业版 E5 计划，并且想要尝试内部风险管理，可以将[Microsoft 365](/office365/admin/try-or-buy-microsoft-365)添加到现有订阅或注册[](https://www.microsoft.com/microsoft-365/enterprise)Microsoft 365 企业版 E5 的试用版。
+如果你没有现有的 Microsoft 365 企业版 E5 计划，并且想要尝试内部风险管理，可以将[Microsoft 365](/office365/admin/try-or-buy-microsoft-365)添加到现有订阅或注册 E5 Microsoft 365 企业版试用版。 [](https://www.microsoft.com/microsoft-365/enterprise)
 
 **策略模板要求：** 根据选择的策略模板，在组织中配置内部风险管理之前，您需要了解和规划以下要求：
 
-- 使用"离开 **用户的数据** 盗窃"模板时，必须配置 Microsoft 365 HR 连接器，以便定期导入组织中用户的终止日期和终止日期信息。 有关 [为组织配置](import-hr-data.md) Microsoft 365 HR 连接器的分步指南，请参阅使用 HR 连接器导入数据一文。
+- 使用"离开 **用户的数据** 盗窃"模板时，必须配置一个Microsoft 365 HR 连接器，以便定期导入组织中用户的过期和终止日期信息。 请参阅[使用 HR 连接器导入](import-hr-data.md)数据一文，了解为组织配置 Microsoft 365 HR 连接器的分步指南。
 - 使用数据泄露模板时，必须至少配置一个数据丢失防护 (DLP) 策略，以定义您组织的敏感信息，并接收针对高严重性 DLP 策略警报的内部风险警报。 有关 [为组织配置 DLP](create-test-tune-dlp-policy.md) 策略的分步指南，请参阅创建、测试和调整 DLP 策略一文。
 - 使用 **安全策略违反** 模板时，必须在 Defender 安全中心中为内部风险管理集成启用 Microsoft Defender for Endpoint，以导入安全违反警报。 有关启用 Defender for Endpoint 与内部风险管理集成的分步指南，请参阅在 [Microsoft Defender](/windows/security/threat-protection/microsoft-defender-atp/advanced-features) 中配置高级功能一文。
-- 使用 **Disgruntled** 用户模板时，必须将 Microsoft 365 HR 连接器配置为定期导入组织中用户的绩效或降级状态信息。 有关 [为组织配置](import-hr-data.md) Microsoft 365 HR 连接器的分步指南，请参阅使用 HR 连接器导入数据一文。
+- 使用 **Disgruntled** 用户模板时，您必须将 Microsoft 365 HR 连接器配置为定期导入组织中用户的绩效或降级状态信息。 请参阅[使用 HR 连接器导入](import-hr-data.md)数据一文，了解为组织配置 Microsoft 365 HR 连接器的分步指南。
 
 ## <a name="test-with-a-small-group-of-users-in-a-production-environment"></a>在生产环境中对一小组用户进行测试
 
@@ -87,7 +87,7 @@ ms.locfileid: "50820144"
 - [使用内部风险内容资源管理器查看案例数据](insider-risk-management-content-explorer.md)
 - [创建内部风险通知模板](insider-risk-management-notices.md)
 
-## <a name="ready-to-get-started"></a>准备好开始了吗？
+## <a name="ready-to-get-started"></a>准备好开始了吗?
 
 准备好为组织配置内部风险管理了吗？ 查看以下文章：
 

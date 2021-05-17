@@ -32,19 +32,19 @@ ms.locfileid: "51581030"
 
 ## <a name="obtain-the-checker"></a>获取检查器
 
-从 下载 .zip 文件 https://aka.ms/mmddratoolv0 。
+从 下载.zip文件 https://aka.ms/mmddratoolv0 。
 
 > [!NOTE]
 > 运行该工具的用户必须在运行该工具的设备上具有本地管理员权限。
 
  然后按照以下步骤运行该工具：
 
-1. 将下载的 .zip 文件复制到要检查的每个设备。
+1. 将下载.zip文件复制到你想要检查的每个设备。
 2. 在压缩的下载中解压缩所有文件。
 3. 运行 **Microsoft.MMD.DeviceReadinessAssessmentTool.exe**。
 4. 出现"用户访问控制"提示时，选择"**是"。** 该工具将运行，并打开默认浏览器中的报告。
 
-您还可以将 .zip 存档下载并解压缩到共享位置，从 **Microsoft.MMD.DeviceReadinessAssessmentTool.exe访问该** 存档，然后在本地运行它。
+还可以下载并提取.zip存档到共享位置，从 **Microsoft.MMD.DeviceReadinessAssessmentTool.exe访问该** 存档，然后在本地运行它。
 
 
 ## <a name="checks"></a>检查

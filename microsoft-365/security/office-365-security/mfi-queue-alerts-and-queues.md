@@ -28,12 +28,12 @@ ms.locfileid: "51599979"
 - [Microsoft Defender for Office 365 计划 1 和计划 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-当无法将邮件从组织发送到使用连接器本地或合作伙伴电子邮件服务器时，这些邮件将在 Microsoft 365 中排队。 导致出现此条件的常见示例包括：
+如果无法将邮件从组织发送到使用连接器本地或合作伙伴电子邮件服务器，则这些邮件会排入Microsoft 365。 导致出现此条件的常见示例包括：
 
 - 连接器配置不正确。
 - 本地环境中已发生网络或防火墙更改。
 
-Microsoft 365 将继续重试传递 24 小时。 24 小时后，这些邮件将过期，并返回到未送达报告中的发件人 (也称为"未送达报告"或"退回邮件) 。
+Microsoft 365 24 小时内继续重试传递。 24 小时后，这些邮件将过期，并返回到未送达报告中的发件人 (也称为"未送达报告"或"退回邮件) 。
 
 如果排队的电子邮件卷超过预定义的阈值 (默认值为 200 封邮件) ，则信息可在以下位置获取：
 
@@ -81,7 +81,7 @@ Microsoft 365 将继续重试传递 24 小时。 24 小时后，这些邮件将�
 If you click the number of messages on the widget， a **Messages queued** flyout appears with the following information：
 
 - **排队邮件数**
-- **连接器名称**：单击连接器名称，在 Exchange 管理中心通过 EAC (管理) 。
+- **连接器名称**：单击连接器名称，在 EAC Exchange管理中心 (连接器) 。
 - **队列启动时间**
 - **最旧邮件已过期**
 - **目标服务器**

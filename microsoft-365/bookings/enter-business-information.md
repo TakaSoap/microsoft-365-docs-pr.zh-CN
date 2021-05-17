@@ -1,5 +1,5 @@
 ---
-title: 输入你的业务信息
+title: 输入商业信息
 ms.author: kwekua
 author: kwekuako
 manager: scotv
@@ -8,7 +8,7 @@ ms.topic: article
 ms.service: bookings
 localization_priority: Normal
 ms.assetid: 828a17db-956a-401e-bb62-d153b6dffd53
-description: 请按照以下说明创建 "关于我们" 页面，包括 Microsoft 预订中的 "业务名称"、"地址"、"电话号码"、"网站 URL"、"徽标" 和 "营业时间"。
+description: 按照以下说明创建"关于我们"页面，包括 Microsoft Bookings 中的公司名称、地址、电话号码、网站 URL、徽标和营业时间。
 ms.openlocfilehash: 0424794d4627d7c6770f86f32d81d4653f889163
 ms.sourcegitcommit: 7c0873d2a804f17697844fb13f1a100fabce86c4
 ms.translationtype: MT
@@ -16,71 +16,71 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 09/18/2020
 ms.locfileid: "47962497"
 ---
-# <a name="enter-your-business-information"></a>输入你的业务信息
+# <a name="enter-your-business-information"></a>输入商业信息
 
-在 Microsoft 预订中，web 应用程序中的业务信息页面包含您通常会在业务 "关于我们" 页面上发现的所有详细信息。 这些详细信息包括你的相关名称、地址、电话号码、网站 URL、隐私策略 URL、徽标和工作时间。
+在 Microsoft Bookings 中，Web 应用内的"业务信息"页面包含通常位于企业"关于我们"页面上的所有详细信息。 这些详细信息包括相关名称、地址、电话号码、网站 URL、隐私策略 URL、徽标和工作时间。
 
-您在此处提供的信息将显示在页面上，客户和客户端用来预订约会 (称为预订页面) 以及通过预订发送给他们的邮件和提醒。 下面突出显示了预订页面上的此信息的示例。
+你在此处提供的信息将显示在客户和客户用于预订约会的页面 (称为预订页面) 以及 Bookings 发送给他们的邮件和提醒中。 下面突出显示了预订页面上的此信息示例。
 
-   ![Microsoft 预订中的业务信息页面的图像示例](../media/bookings-business-info.png)
+   ![Microsoft Bookings 中的"业务信息"页面示例的图像](../media/bookings-business-info.png)
 
 > [!NOTE]
-> 若要开始，请参阅 [获取 Microsoft 预订的访问权限](get-access.md)。 若要打开或关闭预订，请参阅 [开启或关闭组织的预订](turn-bookings-on-or-off.md)。
+> 若要开始，请参阅 [获取对 Microsoft Bookings 的访问权限](get-access.md)。 若要打开或关闭 Bookings，请参阅[为组织打开或关闭 Bookings。](turn-bookings-on-or-off.md)
 
-## <a name="provide-business-name-and-contact-information"></a>提供业务名称和联系人信息
+## <a name="provide-business-name-and-contact-information"></a>提供公司名称和联系人信息
 
-1. 在 Microsoft 365 中，选择应用启动器，然后选择 " **预订**"。
+1. In Microsoft 365， select the App launcher， and then select **Bookings**.
 
-1. 在导航窗格中，选择 " **业务信息**"。
+1. 在导航窗格中，选择"业务 **信息"。**
 
-1. 输入要用于预订日历的相关名称、地址和电话号码。
+1. 输入要用于 Bookings 日历的相关名称、地址和电话号码。
 
-1. 在 " **向客户发送答复**" 中，键入电子邮件答复预定确认和提醒应转发到的首选电子邮件地址。
+1. 在 **"将客户答复** 发送到"中，键入首选电子邮件地址，其中应转发对预订确认和提醒的电子邮件答复。
 
-1. 在 " **网站 URL** " 字段中，输入您的业务主页的 URL。
+1. 在 **"网站 URL"** 字段中，输入企业主页的 URL。
 
-1. 输入 **隐私策略** 和 **条款 url & 条件** url。
+1. 输入 **隐私策略和****条款&条件** URL。
 
 1. 选择“**保存**”。
 
-## <a name="set-your-business-hours"></a>设置你的营业时间
+## <a name="set-your-business-hours"></a>设置营业时间
 
-默认情况下，预订应用中的营业时间设置为上午8点。 到下午5点（周一至周五）。 以15分钟为增量提供时间。 预订应用使用12小时制。
+默认情况下，Bookings 应用中的工作时间设置为 8 a.m。 从星期一到星期五的下午 5 点到下午 5 点。 时间以 15 分钟为增量提供。 Bookings 应用使用 12 小时制。
 
-将 " **营业时间** " 设置为 "运营时间"。 这是所有预订受限制的小时数。 可以分别为每个服务和 "服务" 和 "员工" 页面中的每个教职员工成员设置约会可预订的其他时间限制。
+将 **工作时间设置为** 您的营业时间。 这些时段是限制所有预订的时间。 可以分别针对每个服务和"员工"页中的每项服务以及每个员工设置预定约会的时间的其他限制。
 
-1. 在 "业务信息" 页上的 "营业时间" 下，使用下拉列表选择每天的 "开始时间" 和 "结束时间"。
+1. 在"业务信息"页上的"营业时间"下，使用下拉列表选择每天的开始时间和结束时间。
 
-1. 单击 **+** 此处，添加开始和结束时间选择器。
+1. 单击 **+** 添加开始时间和结束时间选择器。
 
-## <a name="how-to-set-hours-for-a-split-shift"></a>操作方法-设置拆分班次的小时数
+## <a name="how-to-set-hours-for-a-split-shift"></a>如何设置拆分班次的小时数
 
-您可能需要将一天或一周的一部分阻止，以让员工会议、更新清单或处理其他节奏业务详细信息。 通过预订应用程序，可以将客户约会限制在指定的时间段内。
+你可能需要每天或每周的一部分时间阻止员工会议、更新清单或处理其他节奏的业务详细信息。 Bookings 应用允许你将客户约会限制为指定的时间段。
 
-例如，你的员工每星期四从1点钟到2:30，并且想要将该时间阻止，以便你的所有员工都可以参加会议。 若要执行此操作：
+例如，你每周四的 1 点到 2：30 都有员工会议，并且想要阻止该时间，以便你的所有员工都可以参加会议。 为此，请执行以下操作：
 
-1. 在 "业务信息" 页上的 "营业时间" 下，选择星期四的开始时间和结束时间。 在此示例中，我们将设置 8:00 a.m.。 到 1:00 p.m.。
+1. 在"业务信息"页上的"营业时间"下，选择周四的开始时间和结束时间。 本示例将设置 8：00 a.m. 到下午 1：00
 
-1. 选择 **+** 以创建一个新的星期四的行。
+1. 选择 **+** 为"星期四"创建新行。
 
    ![营业时间 UI 的图像](../media/bookings-split-shift.png)
 
-1. 在新行中，选择 2:30 p.m.。 在开始时间和 6:00 p.m.。 结束时间。
+1. In the new row， select 2：30 p.m. 开始时间和下午 6：00 结束时间。
 
-   ![添加了小时的营业时间 UI 的图像](../media/bookings-split-shift-hours.png)
+   ![添加了小时数的营业时间 UI 的图像](../media/bookings-split-shift-hours.png)
 
 1. 选择"保存"。
 
-    当客户转到您的预订页面时，他/她将看到您的企业已在星期四上从1到2:30 关闭。
+    当客户转到你的预订页面时，他/她将看到你的业务在星期四的 1 到 2：30 关闭。
 
-## <a name="upload-your-logo"></a>上传你的徽标
+## <a name="upload-your-logo"></a>Upload徽标
 
-如果尚未将你的业务徽标上传到预定应用，则可以从业务信息页面执行此操作。
+如果尚未将业务徽标上载到 Bookings 应用，可以从"业务信息"页面执行。
 
-1. 在 "业务信息" 页上的 "上载徽标" 下，选择 " **更改**"。
+1. 在"业务信息"页上的"Upload徽标"下，选择"更改 **"。**
 
-1. 选择 " **上载照片**"。
+1. 选择 **Upload照片"**。
 
-   !["上载照片" 按钮的图像](../media/bookings-upload-photo.png)
+   ![上载照片按钮的图像](../media/bookings-upload-photo.png)
 
-1. 选择“保存”****。
+1. 选择“保存”。

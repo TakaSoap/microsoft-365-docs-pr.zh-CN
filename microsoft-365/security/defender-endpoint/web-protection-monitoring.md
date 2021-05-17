@@ -33,7 +33,7 @@ ms.locfileid: "51687419"
 
 >想要体验 Microsoft Defender for Endpoint？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-main-abovefoldlink&rtc=1)
 
-通过 Web 保护，可以通过 Microsoft Defender 安全中心中"报告 web > Web 保护" **下的报告监视** 组织的 Web 浏览安全。 该报告包含提供 Web 威胁检测统计信息的卡片。
+通过 Web 保护，可以通过"报告"和"Web 保护"下的报表>**组织的 Web** 浏览Microsoft Defender 安全中心。 该报告包含提供 Web 威胁检测统计信息的卡片。
 
 - **随着时间的推移进行** Web 威胁防护检测 - 此趋势卡片显示在所选时间段（"最近 30 天 (最近 30 天、过去 3 个月、过去 6 个月）内按类型检测到的 Web 威胁) 
  

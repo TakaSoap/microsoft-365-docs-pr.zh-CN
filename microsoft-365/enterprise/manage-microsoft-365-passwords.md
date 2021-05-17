@@ -1,5 +1,5 @@
 ---
-title: 管理 Microsoft 365 用户帐户密码
+title: 管理Microsoft 365用户帐户密码
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -21,7 +21,7 @@ search.appverid:
 - MED150
 - BCS160
 ms.assetid: 98ca5b3f-f720-4d8e-91be-fe656548a25a
-description: 了解如何管理 Microsoft 365 用户帐户密码。
+description: 了解如何管理Microsoft 365用户帐户密码。
 ms.openlocfilehash: 2062da49310121ec18f7ce21f523531f10d6df9b
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -29,15 +29,15 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 03/19/2021
 ms.locfileid: "50905088"
 ---
-# <a name="manage-microsoft-365-user-account-passwords"></a>管理 Microsoft 365 用户帐户密码
+# <a name="manage-microsoft-365-user-account-passwords"></a>管理Microsoft 365用户帐户密码
 
-*本文适用于 Microsoft 365 企业版和 Office 365 企业版。*
+*此文章适用于 Microsoft 365 企业版和 Office 365 企业版。* 
 
-可以通过几种不同的方式管理 Microsoft 365 用户帐户密码，具体取决于标识配置。 可以在 [Microsoft 365](../admin/add-users/index.yml)管理中心、Active Directory 域服务 (AD DS) 或 Azure Active Directory (Azure AD) 管理中心管理用户帐户。
+可以通过几种Microsoft 365管理用户帐户密码，具体取决于您的标识配置。 可以在 Microsoft 365 管理中心、Active Directory 域服务 (AD DS) 或 Azure Active Directory (Azure AD) 管理中心管理用户帐户。 [](../admin/add-users/index.yml)
 
 ## <a name="plan-for-where-and-how-you-will-manage-your-user-account-passwords"></a>规划管理用户帐户密码的去向和方式
 
-在哪里以及如何管理用户帐户取决于你要用于 Microsoft 365 的标识模型。 这两种模型是仅云模型和混合模型。
+在哪里以及如何管理用户帐户取决于要用于用户帐户的标识Microsoft 365。 这两种模型是仅云模型和混合模型。
   
 ### <a name="cloud-only"></a>仅限云
 

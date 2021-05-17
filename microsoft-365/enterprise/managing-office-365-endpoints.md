@@ -17,7 +17,7 @@ ms.custom:
 - seo-marvel-apr2020
 search.appverid: MOE150
 ms.assetid: 99cab9d4-ef59-4207-9f2b-3728eb46bf9a
-description: 了解如何管理 Office 365 终结点，以便它们与企业组织网络体系结构一起工作。
+description: 了解如何管理Office 365终结点，以便它们与企业组织网络体系结构一起工作。
 ms.openlocfilehash: ea89c263b1d2c89ff49ec7263269afc6030292e8
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -27,17 +27,17 @@ ms.locfileid: "50905112"
 ---
 # <a name="managing-office-365-endpoints"></a>管理 Office 365 终结点
 
-具有多个办公室位置和连接的 WAN 的大多数企业组织将需要配置 Office 365 网络连接。 绕过所有其他包级别检查或处理过程，直接通过防火墙发送所有 Office 365 可信网络请求可优化网络。 这样可减少延迟和外围容量要求。 识别 Office 365 网络流量是为用户提供最佳性能的第一步。 有关详细信息，请参阅 [Office 365 网络连接原则](microsoft-365-network-connectivity-principles.md)。
+具有多个办公室位置和连接的 WAN 的大多数企业组织将需要配置 Office 365 网络连接。 绕过所有其他包级别检查或处理过程，直接通过防火墙发送所有 Office 365 可信网络请求可优化网络。 这样可减少延迟和外围容量要求。 识别 Office 365 网络流量是为用户提供最佳性能的第一步。 有关详细信息，请参阅Office 365[网络连接原则。](microsoft-365-network-connectivity-principles.md)
 
-Microsoft 建议使用 Office 365 IP 地址和 URL Web 服务访问 [Office 365](microsoft-365-ip-web-service.md)网络终结点和正在进行的更改。
+Microsoft 建议你使用 Office 365 IP 地址和 URL Web 服务访问 Office 365 网络终结点和正在进行的[更改](microsoft-365-ip-web-service.md)。
 
 无论如何管理重要的 Office 365 网络流量，Office 365 都需要 Internet 连接。 [Office 365 IP 地址和 URL Web 服务中未包括的其他终结点](additional-office365-ip-addresses-and-urls.md)列出了需要连接的其他网络终结点。
 
-如何使用 Office 365 网络终结点将取决于你的企业组织网络体系结构。 本文概述了企业网络体系结构可以与 Office 365 IP 地址和 URL 集成的几种方式。 选择要信任的网络请求的最简单方法是在每个办公室位置使用支持自动 Office 365 配置的 SD-WAN 设备。
+如何使用 Office 365 网络终结点将取决于你的企业组织网络体系结构。 本文概述了企业网络体系结构可以与 Office 365 IP 地址和 URL 集成的几种方式。 选择要信任的网络请求的最简单方法是在每个办公室位置使用支持自动Office 365配置的 SD-WAN 设备。
 
-## <a name="sd-wan-for-local-branch-egress-of-vital-office-365-network-traffic"></a>用于重要 Office 365 网络流量的本地分支出口的 SD-WAN
+## <a name="sd-wan-for-local-branch-egress-of-vital-office-365-network-traffic"></a>用于重要网络通信的本地分支出口Office 365 SD-WAN
 
-在每个分支机构位置，可以提供配置为将 Office 365"优化"类别的终结点流量路由到 Microsoft 网络的 SD-WAN 设备，或"优化"和"允许"类别。 其他网络流量（包括本地数据中心流量、常规 Internet 网站流量以及到 Office 365 默认类别终结点的流量）将发送到你具有更大网络外围的位置。
+在每个分支机构位置，您可以提供配置为将终结点的 Office 365 Optimize 类别或"优化"和"允许"类别的流量直接路由到 Microsoft 网络的 SD-WAN 设备。 其他网络流量（包括本地数据中心流量、常规 Internet 网站流量以及到 Office 365 默认类别终结点的流量）将发送到你具有更大网络外围的位置。
 
 Microsoft 正在与 SD-WAN 提供程序合作以启用自动配置。 有关详细信息，请参阅 [Office 365 网络合作伙伴计划](microsoft-365-networking-partner-program.md)。
 
@@ -76,7 +76,7 @@ Get-PacFile -ClientRequestId b10c5ed1-bad1-445f-b386-b919946339a7
 | 参数 | 描述 |
 |:-----|:-----|
 |**ClientRequestId** <br/> |这是必需的，并且是传递给 Web 服务的 GUID，它代表进行呼叫的客户端计算机。 <br/> |
-|**实例** <br/> |Office 365 服务实例，默认为 Worldwide。 这也会传递到 Web 服务。 <br/> |
+|**实例** <br/> |The Office 365 service instance， which defaults to Worldwide. 这也会传递到 Web 服务。 <br/> |
 |**TenantName** <br/> |你的 Office 365 租户名称。 传递到 Web 服务并用作某些 Office 365 URL 中的可替换参数。 <br/> |
 |**类型** <br/> |要生成的代理 PAC 文件的类型。 <br/> |
 
@@ -120,7 +120,7 @@ Office 365 IP 地址和 URL Web 服务提供了一个 RSS 源，你可以在 Out
 <a name="FAQ"> </a>
 ## <a name="office-365-network-endpoints-faq"></a>Office 365 网络终结点常见问题
 
-请参阅以下有关 Office 365 网络连接的常见问题。
+请参阅以下有关网络连接Office 365常见问题。
   
 ### <a name="how-do-i-submit-a-question"></a>如何提交问题？
 
@@ -146,7 +146,7 @@ Office 365 IP 地址和 URL Web 服务提供了一个 RSS 源，你可以在 Out
 1. 使用 CIDR 计算器检查该 IP 地址是否包含在较大的已发布范围内，如 [IPv4](https://www.ipaddressguide.com/cidr) 或 [IPv6](https://www.ipaddressguide.com/ipv6-cidr) 的 IP 地址。 例如，40.96.0.0/13 包括 IP 地址40.103.0.1，尽管40.96 与 40.103 不匹配。
 2. 查看合作伙伴是否拥有含 [whois 查询](https://dnsquery.org/)的 IP。 如果该 IP 为 Microsoft 所有，则它可能是内部合作伙伴。 许多伙伴网络终结点被列为属于 _默认_ 类别，其 IP 地址未发布。
 3. 该 IP 地址可能不是 Office 365 的一部分或与其无从属关系。 Office 365 网络终结点发布不包括所有 Microsoft 网络终结点。
-4. 检查证书。 使用浏览器，使用 HTTPS:// 连接到 IP *\<IP_ADDRESS\>* 地址，并检查证书中列出的域，了解哪些域与 IP 地址相关联。 如果是 Microsoft 拥有的 IP 地址，但不在 Office 365 IP 地址列表中，则 IP 地址可能是与 Microsoft CDN（如 MSOCDN.NET 或另一个 Microsoft 域  *）*  关联的，而未发布 IP 信息。 如果发现证书上的域确实是我们宣称列出 IP 地址的域，请告知我们。
+4. 检查证书。 使用浏览器，使用 HTTPS:// 连接到 IP *\<IP_ADDRESS\>* 地址，并检查证书中列出的域，了解哪些域与 IP 地址相关联。 如果它是 Microsoft 拥有的 IP 地址，但不在 Office 365 IP 地址列表中，则 IP 地址很可能与 Microsoft CDN（如 *MSOCDN.NET）* 或另一个 Microsoft 域关联，而未发布 IP 信息。 如果发现证书上的域确实是我们宣称列出 IP 地址的域，请告知我们。
 
 <a name="bkmk_cname"> </a>
 ### <a name="some-office-365-urls-point-to-cname-records-instead-of-a-records-in-the-dns-what-do-i-have-to-do-with-the-cname-records"></a>某些 Office 365 URL 指向 CNAME 记录，而不是 DNS 中的 A 记录。 我与 CNAME 记录有什么关系？
@@ -159,14 +159,14 @@ serviceA.office.com -> CNAME: serviceA.domainA.com -> CNAME: serviceA.domainB.co
 
 这些 CNAME 重定向是 DNS 的常规部分，对客户端计算机和代理服务器都是透明的。 它们用于负载平衡、内容交付网络、高可用性和服务事件缓解。 Microsoft 不会发布中间 CNAME 记录，它们随时可能更改，因此无需按照代理服务器中允许的内容对其进行配置。
 
-代理服务器验证初始 URL，如上例 serviceA.office.com，此 URL 将包含在 Office 365 发布中。 代理服务器请求将该 URL 的 DNS 解析为 IP 地址，并将收到 IP_1。 它不会验证中间的 CNAME 重定向记录。
+代理服务器验证初始 URL，如上例 serviceA.office.com，此 URL 将包含在Office 365中。 代理服务器请求将该 URL 的 DNS 解析为 IP 地址，并将收到 IP_1。 它不会验证中间的 CNAME 重定向记录。
 
-不建议使用硬编码配置或基于间接 Office 365 FQN 的白名单，Microsoft 也不支持，并且已知会导致客户连接问题。 阻止 CNAME 重定向或错误地解析 Office 365 DNS 条目的 DNS 解决方案可以通过启用了 DNS 递归的 DNS 转发器或通过使用 DNS 根提示来解决。 许多第三方网络外围产品使用 [Office 365 IP](microsoft-365-ip-web-service.md)地址和 URL Web 服务将推荐的 Office 365 终结点白名单本机集成到其配置中。
+不建议使用硬编码配置或基于Office 365 FQN 的白名单，Microsoft 也不支持，并且已知会导致客户连接问题。 阻止 CNAME 重定向或错误地解析 Office 365 DNS 条目的 DNS 解决方案可以通过启用了 DNS 递归的 DNS 转发器或通过使用 DNS 根提示来解决。 许多第三方网络外围产品本机使用 Office 365 IP 地址和 URL Web 服务将推荐的终结点白名单Office 365[配置中](microsoft-365-ip-web-service.md)。
 
 <a name="bkmk_akamai"> </a>
 ### <a name="why-do-i-see-names-such-as-nsatcnet-or-akadnsnet-in-the-microsoft-domain-names"></a>为什么会在 Microsoft 域名中看到 nsatc.net 或 akadns.net 等名称？
 
-Office 365 和其他 Microsoft 服务使用几项第三方服务（如 Akamai 和 MarkMonitor）来改进 Office 365 体验。 为了尽可能提供最佳体验，我们以后可能会更改这些服务。 第三方域可以承载 CDN 等内容，也可以托管服务，如地理流量管理服务。 目前正在使用的一些服务包括：
+Office 365 和其他 Microsoft 服务使用几项第三方服务（如 Akamai 和 MarkMonitor）来改进 Office 365 体验。 为了尽可能提供最佳体验，我们以后可能会更改这些服务。 第三方域可以承载内容（如 CDN）或承载服务，如地理流量管理服务。 目前正在使用的一些服务包括：
   
 [当你看到](https://www.markmonitor.com/)包含 .nsatc.net 的请求时 *\* ，MarkMonitor nsatc.net。* 此服务提供域名称保护和监控功能，抵御恶意行为。
   
@@ -200,9 +200,9 @@ Office 365 套件分为几个主要服务区域。 可以选择性地为连接�
 |**Skype for Business Online 和 Microsoft Teams** <br/> |Skype for Business 和 Microsoft Teams <br/> |
 |**常见** <br/> |Office 365 专业增强版、浏览器中的 Office、Azure AD 和其他常见网络终结点 <br/> |
 
-除了基本的 Internet 服务外，还有一些仅用于集成功能的第三方服务。 虽然集成需要这些组件，但 Office 365 终结点一文将这些功能标记为可选，这意味着如果终结点无法访问，服务的核心功能将继续运行。 所需的任何网络终结点都将必需的属性设置为 true。 任何可选网络终结点的必需属性都将设置为 false，并且 notes 属性将详细说明在连接被阻止时预期缺少的功能。
+除了基本的 Internet 服务外，还有一些仅用于集成功能的第三方服务。 尽管集成需要这些组件，但是它们在 Office 365 终结点文章中标记为可选，这意味着如果终结点无法访问，服务的核心功能将继续运行。 所需的任何网络终结点都将必需的属性设置为 true。 任何可选网络终结点的必需属性都将设置为 false，并且 notes 属性将详细说明在连接被阻止时预期缺少的功能。
   
-如果你正在尝试使用 Office 365 并且发现第三方服务不可访问，你会希望确保允许通过代理和防火墙访问本文中标记为必需或可选的所有[FQN。](urls-and-ip-address-ranges.md)
+如果你尝试使用 Office 365并且发现第三方服务不可访问，你会希望确保允许通过代理和防火墙访问本文中标记为必需或可选的所有[FQN。](urls-and-ip-address-ranges.md)
   
 <a name="bkmk_consumer"> </a>
 ### <a name="how-do-i-block-access-to-microsofts-consumer-services"></a>如何阻止对 Microsoft 消费者服务的访问？
@@ -214,7 +214,7 @@ Office 365 套件分为几个主要服务区域。 可以选择性地为连接�
 <a name="bkmk_IPOnlyFirewall"> </a>
 ### <a name="my-firewall-requires-ip-addresses-and-cannot-process-urls-how-do-i-configure-it-for-office-365"></a>我的防火墙需要 IP 地址，并且无法处理 URL。 如何针对 Office 365 进行配置？
 
-Office 365 不提供所有必需的网络终结点的 IP 地址。 有些仅作为 URL 提供，并且被归类为“默认”。 应允许通过代理服务器使用默认类别中的 URL。 如果您没有代理服务器，请了解如何配置用户键入 Web 浏览器地址栏中的 URL 的 Web 请求;用户也不提供 IP 地址。 不提供 IP 地址的 Office 365 默认类别 URL 应该以相同方式配置。
+Office 365 不提供所有必需的网络终结点的 IP 地址。 有些仅作为 URL 提供，并且被归类为“默认”。 应允许通过代理服务器使用默认类别中的 URL。 如果您没有代理服务器，请了解如何配置用户键入 Web 浏览器地址栏中的 URL 的 Web 请求;用户也不提供 IP 地址。 应Office 365 IP 地址的默认类别 URL 配置方式相同。
 
 ## <a name="related-topics"></a>相关主题
 

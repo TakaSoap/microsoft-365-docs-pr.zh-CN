@@ -12,7 +12,7 @@ localization_priority: Normal
 ms.assetid: 1270a65f-ddc3-4430-b500-4d3a481efb1e
 ms.custom:
 - seo-marvel-apr2020
-description: 了解 Exchange Online Protection (EOP) 如何在独立和混合环境中帮助保护本地电子邮件组织。
+description: 了解Exchange Online Protection (EOP) 如何在独立和混合环境中帮助保护本地电子邮件组织。
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: b699c0d6353d725b8d03cf4cf556a3e2ac798041
@@ -31,9 +31,9 @@ ms.locfileid: "51687049"
 - [Microsoft Defender for Office 365 计划 1 和计划 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Exchange Online Protection (EOP) 是基于云的筛选服务，可帮助保护组织免受垃圾邮件和恶意软件的攻击。 EOP 包含在所有具有 Exchange Online 邮箱的 Microsoft 365 组织中。 但是，EOP 也可在下列本地方案中使用：
+Exchange Online Protection (EOP) 是基于云的筛选服务，可帮助保护组织免受垃圾邮件和恶意软件的攻击。 EOP 包含在具有邮箱Microsoft 365的所有Exchange Online中。 但是，EOP 也可在下列本地方案中使用：
 
-- **在独立方案中**：EOP 为本地 Exchange 组织或任何其他本地 SMTP 电子邮件解决方案提供基于云的电子邮件保护。
+- **在独立方案中**：EOP 为本地组织或其他任何本地 SMTP 电子邮件解决方案Exchange基于云的电子邮件保护。
 
 - **在混合部署** 中：当您混合使用本地邮箱和云邮箱时，EOP 可以配置为保护您的电子邮件环境并控制邮件路由。
 
@@ -51,7 +51,7 @@ Exchange Online Protection (EOP) 是基于云的筛选服务，可帮助保护�
 
 - 然后检查邮件是否有恶意软件的迹象。 如果在邮件或附件中发现恶意软件， (邮件) 仅路由到管理员隔离存储。 你可以在此处了解有关配置反恶意软件 [的更多信息](configure-anti-malware-policies.md)。
 
-- 邮件将继续通过策略筛选，其中根据自定义邮件流规则（也称为 (模板创建) 强制实施的传输规则）评估邮件。 例如，你可以将规则设置为当收到来自特定发件人的邮件时向管理器发送通知。 此时， (EXCHANGE Enterprise CAL with Services) 也会进行数据丢失防护 (DLP) 。
+- 邮件将继续通过策略筛选，其中根据自定义邮件流规则（也称为 (模板创建) 强制实施的传输规则）评估邮件。 例如，你可以将规则设置为当收到来自特定发件人的邮件时向管理器发送通知。 此时， (CAL with Services) 也会进行数据丢失防护 (Exchange Enterprise DLP) 。
 
 - 接下来，邮件将经过内容筛选 (也称为反垃圾邮件) 。 此筛选器确定为垃圾邮件或网络钓鱼的邮件可以发送到隔离区，或者用户的"垃圾邮件"文件夹以及其他选项。 有关详细信息，请参阅[配置反垃圾邮件策略和](configure-your-spam-filter-policies.md)[配置反网络钓鱼策略](configure-anti-phishing-policies-eop.md)。
 
@@ -65,14 +65,14 @@ Exchange Online Protection (EOP) 是基于云的筛选服务，可帮助保护�
 
 - **独立 EOP：** 注册 EOP 以保护本地电子邮件组织。
 
-- **Exchange Online 中的 EOP** 功能：任何包含 Exchange Online (或作为 Microsoft 365) 的一部分的订阅都使用 EOP 来保护 Exchange Online 邮箱。
+- **eOP features in Exchange Online**： Any subscription that includes Exchange Online (standalone or as part of Microsoft 365) uses EOP to protect your Exchange Online mailboxes.
 
 - **Exchange Enterprise CAL with Services：** 如果你有一个本地 Exchange 组织，你已购买其他 Exchange Enterprise CAL with Services 许可证，则 EOP 是所包括服务的一部分。
 
-有关所有 EOP 订阅计划的要求、重要限制以及功能可用性的信息，请参阅 [Exchange Online Protection 服务说明](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)。
+有关所有 EOP 订阅计划的要求、重要限制以及功能可用性的信息，请参阅Exchange Online Protection[说明](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)。
 
 > [!NOTE]
-> 如果你有 Office **365 E3 订阅，它包含 EOP**。 有关在订阅中设置 EOP 安全功能的步骤，以及 Microsoft Defender for Office 365 订阅可为您提供的新增安全性的信息，请参阅防止 [威胁](protect-against-threats.md)。 有关用于设置的 EOP 功能的建议设置，可在建议文章中[](best-practices-for-configuring-eop.md)找到，其中已明确调用 EOP 设置。
+> 如果你有 **E3 Office 365订阅，它包含 EOP**。 有关在订阅中设置 EOP 安全功能的步骤，以及 Microsoft Defender for Office 365 订阅可为您提供的附加安全性的信息，请参阅防止[威胁](protect-against-threats.md)。 有关用于设置的 EOP 功能的建议设置，可在本文[推荐](best-practices-for-configuring-eop.md)明确调用 EOP 设置。
 
 ## <a name="setting-up-eop-for-on-premises-email-organizations"></a>为内部部署电子邮件组织设置 EOP
 
@@ -88,15 +88,15 @@ EOP 在数据中心之间执行负载平衡，但仅限在一个区域内。如�
 
 - 在欧洲、中东和非洲 (EMEA)，所有 Exchange Online 邮箱均位于 EMEA 数据中心，所有邮件均通过 EMEA 数据中心路由以进行 EOP 筛选。
 
-- 在 Asia-Pacific (APAC) 中，所有 Exchange Online 邮箱都位于 APAC 数据中心，并且邮件当前通过 APAC 数据中心进行路由，以用于 EOP 筛选。
+- 在 Asia-Pacific (APAC) 中，Exchange Online邮箱都位于 APAC 数据中心，并且邮件当前通过 APAC 数据中心路由，用于 EOP 筛选。
 
 - 在美洲，服务分布在以下位置：
 
-  - 南非：Exchange Online 邮箱位于巴西和智利的数据中心。 所有邮件均通过本地数据中心进行 EOP 筛选。 隔离邮件存储在租户所在的数据中心中。
+  - 南非：Exchange Online邮箱位于巴西和智利的数据中心。 所有邮件均通过本地数据中心进行 EOP 筛选。 隔离邮件存储在租户所在的数据中心中。
 
-  - 加拿大：Exchange Online 邮箱位于加拿大的数据中心。 所有邮件均通过本地数据中心进行 EOP 筛选。 隔离邮件存储在租户所在的数据中心中。
+  - 加拿大：Exchange Online位于加拿大的数据中心。 所有邮件均通过本地数据中心进行 EOP 筛选。 隔离邮件存储在租户所在的数据中心中。
 
-  - 美国：Exchange Online 邮箱位于美国数据中心。 所有邮件均通过本地数据中心进行 EOP 筛选。 隔离邮件存储在租户所在的数据中心中。
+  - 美国：Exchange Online邮箱位于美国数据中心。 所有邮件均通过本地数据中心进行 EOP 筛选。 隔离邮件存储在租户所在的数据中心中。
 
 - 对于政府社区云 (GCC)，所有 Exchange Online 邮箱均位于美国数据中心，所有邮件均通过美国数据中心路由以进行 EOP 筛选。
 
@@ -104,7 +104,7 @@ EOP 在数据中心之间执行负载平衡，但仅限在一个区域内。如�
 
 针对 EOP 管理员的帮助内容包括以下顶级类别：
 
-- [Configure EOP， Day 1， for Microsoft Defender for Office 365 admins：](protect-against-threats.md)Configuring EOP protection and detection tools at the core of Microsoft Defender for Office 365.
+- 为 Microsoft Defender for Office 365 管理员配置[EOP，第 1](protect-against-threats.md)天：在 Microsoft Defender 的核心为 Office 365 配置 EOP 保护和Office 365。
 
 - [EOP 功能](eop-features.md)：提供 EOP 中提供的功能列表。
 
@@ -122,10 +122,10 @@ EOP 在数据中心之间执行负载平衡，但仅限在一个区域内。如�
 
 - [EOP 中的](anti-spam-and-anti-malware-protection.md)反垃圾邮件和反恶意软件保护：介绍垃圾邮件筛选和恶意软件筛选，并演示如何自定义它们以最好地满足组织的需求。 还介绍了管理员和最终用户可以对隔离邮件执行的任务。
 
-- [Exchange Online Protection 中的报告和邮件跟踪](reporting-and-message-trace-in-exchange-online-protection.md)：介绍了可用的报告和疑难解答工具。
+- [reporting and message trace in Exchange Online Protection](reporting-and-message-trace-in-exchange-online-protection.md)： Describes the reports and troubleshooting tools that are available.
 
-- [独立 EOP](exchange-admin-center-in-exchange-online-protection-eop.md)中的 Exchange 管理中心 ：介绍如何通过 Exchange 管理中心 (EAC) 管理界面访问和导航，以便管理 EOP 服务。
+- [Exchange EOP](exchange-admin-center-in-exchange-online-protection-eop.md)中的管理中心：介绍如何通过 Exchange 管理中心 (EAC) 管理界面访问和导航，以便管理 EOP 服务。
 
-- [Exchange Online Protection PowerShell：](/powershell/exchange/exchange-online-protection-powershell)提供有关远程 PowerShell 的信息，使您可以从命令行管理 EOP 服务。
+- [Exchange Online Protection PowerShell：](/powershell/exchange/exchange-online-protection-powershell)提供有关远程 PowerShell 的信息，通过远程 PowerShell，你可以从命令行管理 EOP 服务。
 
 - [EOP 帮助与支持](help-and-support-for-eop.md) 提供有关获取帮助和技术支持的信息。

@@ -27,9 +27,9 @@ ms.locfileid: "51599565"
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **适用对象**
--  [独立 Exchange Online Protection](exchange-online-protection-overview.md)
+-  [Exchange Online Protection独立](exchange-online-protection-overview.md)
 
-在独立 Exchange Online Protection (EOP) 没有 Exchange Online 邮箱的组织，您可以创建、修改和删除以下类型的组：
+在没有Exchange Online Protection (邮箱) EOP Exchange Online中，可以创建、修改和删除以下类型的组：
 
 - **通讯组**：邮件用户或其他通讯组的集合。 例如，需要在共同关注领域接收或发送电子邮件的团队或其他临时组。 通讯组专用于分发电子邮件，并且不是安全 (他们无法为其分配) 。
 
@@ -41,24 +41,24 @@ ms.locfileid: "51599565"
     >
     > - 不要向启用邮件的安全组添加通讯组。
 
-您可以在 Exchange 管理中心和 EAC (和) EOP PowerShell 中管理组。
+可以在 EAC Exchange管理中心 (和) EOP PowerShell 中管理组。
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>开始前，有必要了解什么？
 
-- 若要打开 Exchange 管理中心，请参阅 [独立 EOP 中的 Exchange 管理中心](exchange-admin-center-in-exchange-online-protection-eop.md)。
+- 若要打开Exchange中心，请参阅Exchange [EOP 中的管理中心](exchange-admin-center-in-exchange-online-protection-eop.md)。
 
 - 若要连接到独立 EOP PowerShell，请参阅[连接到 Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell)。
 
 - 在独立 EOP PowerShell 中管理组时，可能会遇到限制。 本文中的 PowerShell 过程使用批处理方法，该方法在命令结果可见之前导致传播延迟几分钟。
 
-- 您需在 Exchange Online Protection 中获得权限，然后才能执行本文中的过程。 具体来说，您需要"**通讯组"** 角色，该角色默认分配给"组织管理"和"**收件人管理**"角色组。 有关详细信息，请参阅 [Permissions in standalone EOP](feature-permissions-in-eop.md) 和 [Use the EAC modify the list of members in role groups](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups)。
+- 您需在 Exchange Online Protection权限，然后才能执行本文中的过程。 具体来说，您需要"**通讯组"** 角色，该角色默认分配给"组织管理"和"**收件人管理**"角色组。 有关详细信息，请参阅 [Permissions in standalone EOP](feature-permissions-in-eop.md) 和 [Use the EAC modify the list of members in role groups](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups)。
 
-- 有关可能适用于本文中的过程的键盘快捷方式的信息，请参阅[Keyboard shortcuts for the Exchange admin center in Exchange Online。](/Exchange/accessibility/keyboard-shortcuts-in-admin-center)
+- 有关可能适用于本文中的过程的键盘快捷方式的信息，请参阅 Exchange Online 中适用于 Exchange[管理中心的键盘快捷方式](/Exchange/accessibility/keyboard-shortcuts-in-admin-center)。
 
 > [!TIP]
 > 是否有任何疑问？ 请在 [Exchange Online Protection](https://social.technet.microsoft.com/Forums/forefront/home?forum=FOPE) 论坛中寻求帮助。
 
-## <a name="use-the-exchange-admin-center-to-manage-distribution-groups"></a>使用 Exchange 管理中心管理通讯组
+## <a name="use-the-exchange-admin-center-to-manage-distribution-groups"></a>使用Exchange管理中心管理通讯组
 
 ### <a name="use-the-eac-to-create-groups"></a>使用 EAC 创建组
 
@@ -70,7 +70,7 @@ ms.locfileid: "51599565"
 
    - **启用邮件的安全组**
 
-3. 在打开的新组页中，配置以下设置。 标有 的 <sup>\*</sup> 设置是必需的。
+3. 在打开的新组页中，配置以下设置。 设置标记的 <sup>\*</sup> 是必需的。
 
    - <sup>\*</sup>**显示名称**：此名称将出现在组织的通讯簿中、电子邮件发送到该组时位于"To："行上以及 EAC 中的"组"列表中。 该显示名称是必需的，必须是唯一的，并且应该用户友好，以便用户能够识别它。
 
@@ -104,7 +104,7 @@ ms.locfileid: "51599565"
 
    完成后，单击“**保存**”。
 
-#### <a name="general"></a>概要
+#### <a name="general"></a>常规
 
 使用此选项卡可以查看或更改有关组的基本信息。
 

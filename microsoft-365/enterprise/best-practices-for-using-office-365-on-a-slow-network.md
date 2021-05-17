@@ -1,5 +1,5 @@
 ---
-title: 在慢速网络上使用 Office 365 的最佳实践
+title: 在慢速网络上Office 365的最佳实践
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
@@ -19,7 +19,7 @@ ms.assetid: fd16c8d2-4799-4c39-8fd7-045f06640166
 f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
-description: 本文将指导你完成在慢速网络中使用 Office 365 时可采用的最佳方案。
+description: 本文将指导你完成在慢速网络中使用 Office 365可采用的最佳方案。
 ms.openlocfilehash: effa1038b03a9fcafc74166a1f53682186688906
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -27,9 +27,9 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 03/19/2021
 ms.locfileid: "50905256"
 ---
-# <a name="best-practices-for-using-office-365-on-a-slow-network"></a>在慢速网络上使用 Office 365 的最佳实践
+# <a name="best-practices-for-using-office-365-on-a-slow-network"></a>在慢速网络上Office 365的最佳实践
 
-如果 Internet 连接始终快速且从不关闭，那么不很好吗？ 也许这一天将来。 但在此期间，你可以采取一些实际操作来解决不稳定的网络，但仍可以完成日常工作。 虽然 Office 365 是一项基于云的服务，但它还提供了多种脱机使用内容的方法，并可以平稳地保持更改同步。 此外，有时脱机处理内容效率更高，因为应用程序运行速度更快，用户界面响应更快。 要点是：Office 365 为您提供了两全其美。 下面将了解如何利用这一点。 
+如果 Internet 连接始终快速且从不关闭，那么不很好吗？ 也许这一天将来。 但在此期间，你可以采取一些实际操作来解决不稳定的网络，但仍可以完成日常工作。 尽管Office 365基于云的服务，但它还提供了许多脱机使用内容的方法，并平滑保持更改同步。 此外，有时脱机处理内容效率更高，因为应用程序运行速度更快，用户界面响应更快。 要点是：Office 365两全其美。 下面将了解如何利用这一点。 
   
 > [!TIP]
 > 想要了解网络连接 (速度) 速度有多慢？ 尝试 [ OOKLA 速度测试 ](https://www.speedtest.net/) 或 [网络速度测试应用](https://www.windowsphone.com/store/app/network-speed-test/9b9ae06b-2961-41ef-987d-b09567cffe70)。 
@@ -60,11 +60,11 @@ ms.locfileid: "50905256"
 
 - 如果可能，请购买更多内存。 添加内存是提高设备性能的最简单且最有效的方式。 在使用大型文件和视频时尤其有用。
 
-有关详细信息，请参阅 [ Windows 性能和维护 ](https://windows.microsoft.com/windows/performance-maintenance-help#performance-maintenance-help) 以及 [改进 Windows 10 中的电脑性能的提示](https://support.microsoft.com/en-za/help/4002019/windows-10-improve-pc-performance)。
+有关详细信息，请参阅Windows[性能和维护](https://windows.microsoft.com/windows/performance-maintenance-help#performance-maintenance-help)以及使用技巧[以改进电脑Windows 10。](https://support.microsoft.com/en-za/help/4002019/windows-10-improve-pc-performance)
 
 ## <a name="best-practices-for-using-your-browser"></a>使用浏览器的最佳实践
 
-浏览器是 Office 365 的网关，因此它可能会影响性能，尤其是加载页面的时间以及往返 Office 365 服务的时间。
+浏览器是Office 365网关，因此它可能会影响性能，尤其是加载页面的时间以及往返 Office 365 服务的时间。
   
  **浏览器一般**
   
@@ -80,7 +80,7 @@ ms.locfileid: "50905256"
 
 - 如果页面打开时间太长，请停止页面下载 (按 ESC) 然后刷新页面 (按 F5) 。 
 
--  如果可能，请减少到 Office 365 的往返行程。 例如，使用搜索查找大型库中的文件，在列表中进行筛选以直接获取想要的结果，而不是分页浏览列表或库。 或者，创建可最大程度地缩短页面加载时间的视图。 有关详细信息，请参阅在 [Office 365 中管理大型列表和库](https://support.office.com/article/b4038448-ec0e-49b7-b853-679d3d8fb784#BKMK_PAGES)。
+-  如果可能，请减少往返Office 365。 例如，使用搜索查找大型库中的文件，在列表中进行筛选以直接获取想要的结果，而不是分页浏览列表或库。 或者，创建可最大程度地缩短页面加载时间的视图。 有关详细信息，请参阅管理大型[列表和](https://support.office.com/article/b4038448-ec0e-49b7-b853-679d3d8fb784#BKMK_PAGES)库中Office 365。
 
 - 如果视频性能较差，你或许可以下载视频，然后在你的设备上观看视频。 下载链接可能可用，或者你可以右键单击视频链接，然后选择将目标 **另存为**。
 
@@ -96,46 +96,46 @@ ms.locfileid: "50905256"
 
 - **Chrome** 有关详细信息，请参阅 [Chrome 帮助](https://support.google.com/chrome/?hl=en)。
   
-## <a name="best-practices-for-using-outlook-and-outlook-web-app"></a>使用 Outlook 和 Outlook Outlook Web App
+## <a name="best-practices-for-using-outlook-and-outlook-web-app"></a>使用 Outlook 和 Outlook Web App
 
-阅读、编写和组织电子邮件是每个人一天中的重要组成部分。 Outlook 和 Outlook Web App (OWA) 都提供脱机支持。 在智能手机上使用电子邮件应用是另一个有用的替代方法。 使用以下最符合需要的选项：
+阅读、编写和组织电子邮件是每个人一天中的重要组成部分。 OWA Outlook 和 Outlook Web App (都) 脱机支持。 在智能手机上使用电子邮件应用是另一个有用的替代方法。 使用以下最符合需要的选项：
   
 - 升级到最新版本的 Outlook，以显著改进早期版本的性能。 
 
--  Outlook Web App OWA 下一次能够连接到 Office 365 时上载的脱机消息、联系人和日历事件。 有关在脱机模式下设置和使用 OWA 的信息，请参阅脱机Outlook Web App [OWA。](https://support.office.com/article/3214839c-0604-4162-8a97-6856b4c27b36)
+-  Outlook Web App创建脱机消息、联系人和日历事件，当 OWA 下一次能够连接到 Office 365。 有关在脱机模式下设置和使用 OWA 的信息，请参阅脱机Outlook Web App [OWA。](https://support.office.com/article/3214839c-0604-4162-8a97-6856b4c27b36)
 
-- Outlook 允许您在缓存模式下工作，在缓存模式下，它将尽可能自动连接。 You can have Outlook download your entire mailbox， or just a portion of it. 有关详细信息，请参阅在 Outlook 中 [打开缓存 Exchange 模式](https://support.office.com/article/7885af08-9a60-4ec3-850a-e221c1ed0c1c) 和 [脱机工作](https://support.office.com/article/f3a1251c-6dd5-4208-aef9-7c8c9522d633)。
+- Outlook允许你在缓存模式下工作，在缓存模式下，它可以尽可能自动连接。 您可以下载Outlook邮箱，也可以只下载其中一部分。 有关详细信息，请参阅打开缓存模式[Exchange模式和](https://support.office.com/article/7885af08-9a60-4ec3-850a-e221c1ed0c1c)在[缓存模式下Outlook。](https://support.office.com/article/f3a1251c-6dd5-4208-aef9-7c8c9522d633)
 
-- Outlook 还提供脱机模式。 若要使用此模式，必须先设置缓存模式，以便从你的帐户将信息复制到计算机。 在脱机模式下，Outlook 将尝试使用发送和接收设置进行连接，或在手动将其设置为联机工作时进行连接。 有关详细信息，请参阅脱机工作以避免[数据](https://support.office.com/article/827fe51f-5609-4062-82b4-3578057f9282)连接费用、在脱机工作时更改[](https://support.office.com/article/f681ec10-cb14-40cb-8709-1909a13c304a)发送和接收设置和从脱机工作切换到[联机](https://support.office.com/article/2460e4a8-16c7-47fc-b204-b1549275aac9)。
+- Outlook还提供脱机模式。 若要使用此模式，必须先设置缓存模式，以便从你的帐户将信息复制到计算机。 在脱机模式下，Outlook尝试使用发送和接收设置进行连接，或者手动将其设置为联机工作。 有关详细信息，请参阅脱机工作以避免[数据](https://support.office.com/article/827fe51f-5609-4062-82b4-3578057f9282)连接费用、在脱机工作时更改[](https://support.office.com/article/f681ec10-cb14-40cb-8709-1909a13c304a)发送和接收设置和从脱机工作切换到[联机](https://support.office.com/article/2460e4a8-16c7-47fc-b204-b1549275aac9)。
 
 - 如果你有智能手机，可以使用它通过手机运营商的网络对电子邮件和日历进行会审。
 
 > [!NOTE]
-> 下面是有关何时使用 Outlook 或 OWA 的一些指南。 如果磁盘空间在你的设备上不是问题，则 Outlook 具有一整套功能，可能最适合你。 如果磁盘空间在你的设备上是一个问题，请考虑使用具有部分功能的 OWA，但在联机情况下也最适合。 当然，可以使用这两者，因为它们能很好地协同工作。
+> 下面是有关何时使用 Outlook OWA 的一些指南。 如果磁盘空间在你的设备上不是问题，Outlook一组完整的功能，并且可能最适合你。 如果磁盘空间在你的设备上是一个问题，请考虑使用具有部分功能的 OWA，但在联机情况下也最适合。 当然，可以使用这两者，因为它们能很好地协同工作。
   
-## <a name="best-practices-for-using-onedrive-for-business"></a>使用 OneDrive for Business 的最佳实践
+## <a name="best-practices-for-using-onedrive-for-business"></a>使用方法的OneDrive for Business
 
-OneDrive for Business 从零开始设计，可联机和脱机使用文件。 设置更改后，无论何时何地以及无论何时进行更改，都会自动可靠地同步更改。 如果网络速度较慢，可以使用脱机版本的文件。
+OneDrive for Business从零开始设计，以联机和脱机使用文件。 设置更改后，无论何时何地以及无论何时进行更改，都会自动可靠地同步更改。 如果网络速度较慢，可以使用脱机版本的文件。
   
-OneDrive for Business 同步应用附带 SharePoint Online 和 Office 365[](https://support.microsoft.com/kb/2903984)商业版订阅，也可以免费下载 OneDrive for Business 同步应用。 此应用程序还比使用"在资源管理器中打开 **"或"****上传"命令更快**。 有关详细信息，请参阅将 [计算机设置为在 Office 365](https://support.office.com/article/23e1f12b-d896-4cb1-a238-f91d19827a16)中同步 OneDrive for Business 文件。
+the OneDrive for Business sync app with a SharePoint Online and Office 365 business subscription， or you can [download](https://support.microsoft.com/kb/2903984) the OneDrive for Business sync app for free. 此应用还比使用"在资源管理器中打开"或 **Upload更快**。 有关详细信息，请参阅将[计算机设置为](https://support.office.com/article/23e1f12b-d896-4cb1-a238-f91d19827a16)在 Office 365 中同步OneDrive for Business文件。
   
-下面是使用 OneDrive for Business 同步应用的一些其他指南：
+下面是使用同步应用的其他OneDrive for Business指南：
   
 - 如果是首次同步大型库，在非工作时间（例如，夜间）开始同步。
 
-- 可以使用停止将库 [与 OneDrive for Business](https://support.office.com/article/a7e41f1f-3a98-4ca7-9443-f10250688330) 应用同步功能暂时停止同步更新。 但是，使用此功能的时间很短（如一次几小时）以避免排队大量更新，并尽可能降低多个人员处理同一文档时出现合并冲突的风险。
+- 可以使用停止将库与 OneDrive for Business[同步功能](https://support.office.com/article/a7e41f1f-3a98-4ca7-9443-f10250688330)来临时停止同步更新。 但是，使用此功能的时间很短（如一次几小时）以避免排队大量更新，并尽可能降低多个人员处理同一文档时出现合并冲突的风险。
   
-## <a name="best-practices-for-using-onenote"></a>使用 OneNote 的最佳实践
+## <a name="best-practices-for-using-onenote"></a>使用方法的OneNote
 
-每个 SharePoint 团队网站都有一个内置的 OneNote 笔记本，你可以轻松创建自己的笔记本。 OneNote 是一种很好的方法，可以收集你每天完成任务所需的及时信息。 例如，许多团队使用 OneNote 作为每周会议、项目笔记、想法、计划和状态报告的集合点。 您可以使用页面、节和选项卡完全组织此不同的信息。
+每个SharePoint网站都有一个内置的OneNote笔记本，并且可以轻松创建自己的笔记本。 OneNote是收集完成任务所需的及时信息的主要方式。 例如，许多团队OneNote每周会议、项目笔记、想法、计划和状态报告的集合点。 您可以使用页面、节和选项卡完全组织此不同的信息。
   
-OneNote 的一个功能是，几乎可以从任何设备（无论是台式机、笔记本电脑、平板电脑还是智能手机）访问内容。 并且，无需担心保存或同步，因为 OneNote 会为用户执行保存或同步。
+其OneNote一点就是，几乎可以从任何设备（台式机、笔记本电脑、平板电脑或智能手机）访问内容。 你无需担心保存或同步，因为OneNote会进行保存或同步。
   
-有关详细信息，请参阅 [Microsoft OneNote](https://office.microsoft.com/onenote)。
+有关详细信息，[请参阅Microsoft OneNote。](https://office.microsoft.com/onenote)
 
-## <a name="best-practices-for-using-skype-for-business-and-lync-online"></a>使用 Skype for Business 和 Lync Online 的最佳实践
+## <a name="best-practices-for-using-skype-for-business-and-lync-online"></a>使用 Lync Online Skype for Business最佳实践
 
-以下是在网络较慢时使用 Skype for Business 或 Lync Online 的一般准则：
+以下是在网络较慢时Skype for Business Lync Online 的一般准则：
 
 - 尽可能使用即时消息，因为它在慢速网络中运行良好。
 
@@ -143,43 +143,43 @@ OneNote 的一个功能是，几乎可以从任何设备（无论是台式机、
 
 - 请确保你的音频设备已获得批准。 有关详细信息，请参阅 Phones [and Devices Qualified for Microsoft Lync。](/skypeforbusiness/lync-cert/ip-phones)
 
-- 在联机演示文稿中使用 PowerPoint 时，请减小幻灯片的大小和复杂性。 有关详细信息，请参阅 [有关提高演示文稿性能的提示](https://support.office.com/article/34c82835-5f23-4bf0-98cc-72235bbd2949)。
+- 在PowerPoint演示文稿时，请减小幻灯片的大小和复杂性。 有关详细信息，请参阅使用技巧[演示文稿的性能。](https://support.office.com/article/34c82835-5f23-4bf0-98cc-72235bbd2949)
 
 - 视频性能非常依赖于网络性能。 如果网络较慢，请避免使用视频。
 
-有关详细信息，请参阅 [Lync Online 中的音频或视频质量](https://support.microsoft.com/kb/2386655)差，或如何 [排查 Skype for Business 中的连接问题](https://support.office.com/article/troubleshoot-connection-issues-in-skype-for-business-ca302828-783f-425c-bbe2-356348583771)。
+有关详细信息，请参阅[Lync Online 中的音频或视频质量](https://support.microsoft.com/kb/2386655)差，或如何在 lync Online 中排[查Skype for Business。](https://support.office.com/article/troubleshoot-connection-issues-in-skype-for-business-ca302828-783f-425c-bbe2-356348583771)
   
-## <a name="best-practices-for-using-sharepoint-lists"></a>使用 SharePoint 列表的最佳实践
+## <a name="best-practices-for-using-sharepoint-lists"></a>使用列表SharePoint最佳实践
 
-脱机使用列表数据以"擦除"、"分析"或报告数据是最大程度地减小慢速网络的影响的一种好方法。 通过链接到 Microsoft Access 2019 和 Microsoft Access 2016，可以读取和写入大多数列表。 还可以将列表导出到 Excel Table，这将在 Excel 表和列表之间创建单向数据连接。 了解如何脱机 [使用链接到 SharePoint 列表的表](https://support.office.com/article/work-offline-with-tables-that-are-linked-to-sharepoint-lists-5d66594a-6176-4a25-a198-320f13ccf41e)。
+脱机使用列表数据以"擦除"、"分析"或报告数据是最大程度地减小慢速网络的影响的一种好方法。 可以通过链接到 Microsoft Access 2019 和 Microsoft Access 2016和写入大多数列表。 您还可以将列表导出到 Excel Table，这将在表和列表之间创建Excel数据连接。 了解如何脱机[使用链接到列表的SharePoint。](https://support.office.com/article/work-offline-with-tables-that-are-linked-to-sharepoint-lists-5d66594a-6176-4a25-a198-320f13ccf41e)
   
-有关详细信息，请参阅管理 [Office 365](https://support.office.com/article/b4038448-ec0e-49b7-b853-679d3d8fb784)中的大型列表和库中的"有关管理大型列表的更多内容"一节。
+有关详细信息，请参阅管理大型列表和库中的"有关管理大型列表[Office 365。](https://support.office.com/article/b4038448-ec0e-49b7-b853-679d3d8fb784)
   
 ## <a name="best-practices-for-customizing-web-pages"></a>自定义网页的最佳实践
 
 自定义网页时，可能会无意中导致页面性能不佳。 许多因素都可能会影响页面，例如页面的复杂性和大小、添加的 Web 部件数量、最初显示的列表或库项目数以及您编码页面的方式。
   
-有关详细信息，请参阅优化 [SharePoint Online 性能](tune-sharepoint-online-performance.md)。
+有关详细信息，请参阅优化[SharePoint Online 性能](tune-sharepoint-online-performance.md)。
   
-## <a name="best-practices-for-using-project-online"></a>使用 Project Online 的最佳实践
+## <a name="best-practices-for-using-project-online"></a>使用方法的Project Online
 
 以下指南可帮助改善网络性能。
   
-- Project Online 和 SharePoint Online 需要同步，这非常耗时。 如果您的项目工作组的周转较低，请禁用"项目网站同步"以改进"项目发布"和"项目详细信息页面"性能。 将 Active Directory 同步限制为实际需要使用系统的资源组，并监视在同步大型组后的任何潜在权限问题。
+- Project Online SharePoint Online 需要同步，这非常耗时。 如果项目团队的周转率较低，Project网站同步以改进Project发布Project页面性能。 将 Active Directory 同步限制为实际需要使用系统的资源组，并监视在同步大型组后的任何潜在权限问题。
 
 - 如果您的组织使用项目网站，请按需创建这些网站，而不是自动创建。 这将加快第一次发布体验，并避免创建不必要的网站和内容。
 
-- PDP (项目详细信息) 可以触发整个项目的重新计算并启动工作流操作，这两种操作都可能是性能密集型操作。 为了避免在同一 PDP 上同时触发两个更新进程，请避免更新日历字段 (开始日期、完成日期、状态日期和当前日期) 以及非计划字段 (项目名称、说明和所有者) 。
+- Project详细信息 (PDP) 可触发整个项目的重新计算并启动工作流操作，这两种操作都可能是性能密集型操作。 为了避免在同一 PDP 上同时触发两个更新进程，请避免更新日历字段 (开始日期、完成日期、状态日期和当前日期) 以及非计划字段 (项目名称、说明和所有者) 。
 
 - 减少每个 PDP Web 部件自定义字段的数量。 创建具有仅需要更新的字段的专用 PDP，以改进负载并节省时间。
 
 - 使用 OData 进行报告时，使用服务器端筛选限制运行时查询的数据量。
 
-有关详细信息，请参阅优化 [Project Online 性能](https://support.office.com/article/12ba0ebd-c616-42e5-b9b6-cad570e8409c)。
+有关详细信息，请参阅优化Project Online[性能](https://support.office.com/article/12ba0ebd-c616-42e5-b9b6-cad570e8409c)。
   
 ## <a name="whats-the-best-way-to-report-problems"></a>报告问题的最佳方法是什么？
 
-Microsoft 通过监视网络、测量带宽和延迟、缩短页面加载时间、减少磁盘 I/O、重新设计页面以使用最少下载策略、向数据中心添加硬件以及添加更多数据中心，持续提高 Office 365 的整体性能。 有关检查当前状态和报告问题详细信息，请参阅如何 [检查 Office 365 服务运行状况](view-service-health.md)。
+Microsoft 通过监视网络、测量带宽和延迟、缩短页面加载时间、减少磁盘 I/O、重新设计页面以使用最少下载策略、向数据中心添加硬件以及添加更多数据中心，持续提高 Office 365 的整体性能。 有关检查当前状态和报告问题详细信息，请参阅如何[检查Office 365运行状况](view-service-health.md)。
   
 ## <a name="see-also"></a>另请参阅
 

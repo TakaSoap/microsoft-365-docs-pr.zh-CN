@@ -14,7 +14,7 @@ ms.collection:
 localization_priority: Normal
 search.appverid:
 - MET150
-description: 了解如何识别和修正 365 中的非法同意授予Microsoft Office攻击。
+description: 了解如何识别和修正非法同意授权攻击Microsoft Office 365。
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
@@ -33,18 +33,18 @@ ms.locfileid: "51644676"
 - [Microsoft Defender for Office 365 计划 1 和计划 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-**摘要**  了解如何识别和修正 Office 365 中的非法许可授予攻击。
+**摘要** 了解如何识别和修正非法同意授权攻击Office 365。
 
-## <a name="what-is-the-illicit-consent-grant-attack-in-office-365"></a>Office 365 中的非法许可授予攻击是什么？
+## <a name="what-is-the-illicit-consent-grant-attack-in-office-365"></a>什么是非法许可授予攻击Office 365？
 
 在非法许可授予攻击中，攻击者创建 Azure 注册的应用程序，请求访问联系人信息、电子邮件或文档等数据。 攻击者随后会通过网络钓鱼攻击或将非法代码注入受信任的网站，来欺骗最终用户授予该应用程序访问其数据的同意。 在非法应用程序获得同意后，它无需组织帐户即可对数据进行帐户级访问。 正常修正步骤（如重置泄露帐户的密码或要求帐户使用多重身份验证 (MFA) ）无法抵御此类攻击，因为此类攻击是第三方应用程序且位于组织外部。
 
 这些攻击利用一个交互模型，该模型认为调用信息的实体是自动化的，而不是人为的。
 
 > [!IMPORTANT]
-> 你是否怀疑目前遇到来自应用的非法许可问题？ Microsoft Cloud App Security (MCAS) 提供了用于检测、调查和修正 OAuth 应用的工具。 本 MCAS 文章包含一个教程，概述了如何调查 [有风险的 OAuth 应用](/cloud-app-security/investigate-risky-oauth)。 还可以设置 [OAuth](/cloud-app-security/app-permission-policy) 应用策略以调查应用请求的权限（用户正在授权这些应用的权限）并广泛批准或禁止这些权限请求。
+> 你是否怀疑目前遇到来自应用的非法许可问题？ Microsoft Cloud App Security (MCAS) 具有用于检测、调查和修正 OAuth 应用的工具。 本 MCAS 文章包含一个教程，概述了如何调查 [有风险的 OAuth 应用](/cloud-app-security/investigate-risky-oauth)。 还可以设置 [OAuth](/cloud-app-security/app-permission-policy) 应用策略以调查应用请求的权限（用户正在授权这些应用的权限）并广泛批准或禁止这些权限请求。
 
-## <a name="what-does-an-illicit-consent-grant-attack-look-like-in-office-365"></a>非法许可授予攻击在 Office 365 中的外观如何？
+## <a name="what-does-an-illicit-consent-grant-attack-look-like-in-office-365"></a>非法同意授予攻击在攻击中Office 365？
 
 你需要搜索安全审核日志，也称为"泄露指示器" (IOC) 攻击。 对于具有许多 Azure 注册应用程序和大型用户群的组织，最佳做法是每周查看一次组织同意授予。
 
@@ -72,7 +72,7 @@ ms.locfileid: "51644676"
 
 如果你有上面列出的一个或多个 ICS 实例，则需要进行进一步调查，以积极确认攻击已发生。 可以使用以下三种方法之一确认攻击：
 
-- 使用 Azure Active Directory 门户清点应用程序及其权限。 此方法很全面，但一次只能检查一个用户，如果有许多用户要检查，则检查可能非常耗时。
+- 使用管理门户清点应用程序及其Azure Active Directory权限。 此方法很全面，但一次只能检查一个用户，如果有许多用户要检查，则检查可能非常耗时。
 
 - 使用 PowerShell 清点应用程序及其权限。 这是最快、最彻底的方法，开销最少。
 
@@ -84,11 +84,11 @@ ms.locfileid: "51644676"
 
 ### <a name="steps-for-using-the-azure-active-directory-portal"></a>使用 Azure Active Directory 门户的步骤
 
-可以使用 [Azure Active Directory](https://portal.azure.com/)门户查找任何单个用户已授予权限的应用程序。
+您可以通过使用管理门户 来查找任何单个用户已授予权限[Azure Active Directory应用程序](https://portal.azure.com/)。
 
 1. 使用管理权限登录到 Azure 门户。
 
-2. 选择"Azure Active Directory"边栏选项卡。
+2. 选择"Azure Active Directory边栏选项卡。
 
 3. 选择 **用户**。
 
@@ -104,7 +104,7 @@ ms.locfileid: "51644676"
 
 ### <a name="steps-for-doing-this-with-powershell"></a>使用 PowerShell 执行此操作的步骤
 
-验证非法同意授予攻击的最简单方法就是运行 [Get-AzureADPSPermissions.ps1](https://gist.github.com/psignoret/41793f8c6211d2df5051d77ca3728c09)，这将将租户中所有用户的所有 OAuth 许可授权和 OAuth 应用转储到一个 .csv 文件中。
+验证非法同意授予攻击的最简单方法就是运行 [Get-AzureADPSPermissions.ps1](https://gist.github.com/psignoret/41793f8c6211d2df5051d77ca3728c09)，这将将租赁中所有用户的所有 OAuth 许可授权和 OAuth 应用转储到一个 .csv 文件中。
 
 #### <a name="pre-requisites"></a>先决条件
 
@@ -119,11 +119,11 @@ ms.locfileid: "51644676"
 
 1. 使用本地管理员权限登录到您将从中运行脚本的计算机。
 
-2. 从 GitHub [ 下载Get-AzureADPSPermissions.ps1](https://gist.github.com/psignoret/41793f8c6211d2df5051d77ca3728c09) 脚本，或将其复制到运行脚本的文件夹。 这将是将输出"permissions.csv"文件写入的同一文件夹。
+2. 下载或复制[Get-AzureADPSPermissions.ps1](https://gist.github.com/psignoret/41793f8c6211d2df5051d77ca3728c09)脚本GitHub脚本的文件夹中运行该脚本。 这将是将输出"permissions.csv"文件写入的同一文件夹。
 
 3. 以管理员角色打开 PowerShell 实例，然后打开脚本保存到的文件夹。
 
-4. 使用 [Connect-AzureAD](/powershell/module/azuread/connect-azuread) cmdlet 连接到目录。
+4. [连接-AzureAD](/powershell/module/azuread/connect-azuread) cmdlet 连接目录。
 
 5. 运行此 PowerShell 命令：
 
@@ -133,7 +133,7 @@ ms.locfileid: "51644676"
 
 该脚本生成一个名为 Permissions.csv。 按照以下步骤查找非法应用程序权限授予：
 
-1. 在 ConsentType 列 (G 列) 搜索值"AllPrinciples"。 AllPrincipals 权限允许客户端应用程序访问租赁中每个人的内容。 本机 Microsoft 365 应用程序需要此权限才能正常工作。 应仔细查看每个具有此权限的非 Microsoft 应用程序。
+1. 在 ConsentType 列 (G 列) 搜索值"AllPrinciples"。 AllPrincipals 权限允许客户端应用程序访问租赁中每个人的内容。 本机Microsoft 365应用程序需要此权限才能正常工作。 应仔细查看每个具有此权限的非 Microsoft 应用程序。
 
 2. 在"权限 (列F) 查看每个委派应用程序对内容具有的权限。 查找"读取"和"写入"权限或"*"。所有"权限，并仔细查看这些权限，因为它们可能不适合。
 
@@ -143,7 +143,7 @@ ms.locfileid: "51644676"
 
 ## <a name="determine-the-scope-of-the-attack"></a>确定攻击范围
 
-完成清点应用程序访问后，请查看 **审核日志以确定泄露** 的完整范围。 搜索受影响的用户、非法应用程序有权访问您的组织的时间范围以及应用程序具有的权限。 可以在 Microsoft 365 **安全审核日志**[中心中搜索安全中心。](../../compliance/search-the-audit-log-in-security-and-compliance.md)
+完成清点应用程序访问后，请查看 **审核日志以确定泄露** 的完整范围。 搜索受影响的用户、非法应用程序有权访问您的组织的时间范围以及应用程序具有的权限。 可以在 **安全审核日志中心** Microsoft 365 [搜索安全与合规中心。](../../compliance/search-the-audit-log-in-security-and-compliance.md)
 
 > [!IMPORTANT]
 > [在攻击](../../compliance/enable-mailbox-auditing.md)[之前，必须为](../../compliance/turn-audit-log-search-on-or-off.md)管理员和用户启用邮箱审核和活动审核才能获取此信息。
@@ -152,9 +152,9 @@ ms.locfileid: "51644676"
 
 在标识具有非法权限的应用程序后，您具有几种删除该访问权限的方法。
 
-- 可以通过以下方法在 Azure Active Directory 门户中撤销应用程序的权限：
+- 可以通过以下方法撤销应用程序在 Azure Active Directory 中的权限：
 
-  - 在"Azure Active Directory 用户"边栏 **选项卡中导航到受影响的** 用户。
+  - 在"用户"边栏选项卡中Azure Active Directory **受影响的** 用户。
 
   - 选择 **"应用程序"。**
 
@@ -184,10 +184,10 @@ ms.locfileid: "51644676"
 
 - ["我的应用程序"列表中的"](/azure/active-directory/application-access-unexpected-application) 意外应用程序"将指导管理员完成在意识到存在具有数据访问权限的意外应用程序后可能想要执行的各种操作。
 
-- [将应用程序与 Azure Active Directory](/azure/active-directory/active-directory-apps-permissions-consent) 集成是同意和权限的简要概述。
+- [将应用程序Azure Active Directory](/azure/active-directory/active-directory-apps-permissions-consent)应用程序是同意和权限的简要概述。
 
 - [开发我的应用程序时](/azure/active-directory/active-directory-application-dev-development-content-map) 遇到问题提供了指向各种许可相关文章的链接。
 
-- [Azure Active Directory ](/azure/active-directory/develop/active-directory-application-objects) (Azure AD) 中的应用程序和服务主体对象概述了应用程序模型的核心应用程序和服务主体对象。
+- [Azure AD Azure Active Directory (](/azure/active-directory/develop/active-directory-application-objects)中的应用程序和服务主体) 概述了应用程序模型的核心应用程序和服务主体对象。
 
 - [管理对应用](/azure/active-directory/active-directory-managing-access-to-apps) 的访问权限是管理员管理用户对应用的访问权限所必须的功能概述。

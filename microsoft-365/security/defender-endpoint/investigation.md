@@ -42,7 +42,7 @@ ms.locfileid: "51587679"
 <br> 有关详细信息 [，请参阅自动](automated-investigations.md) 调查概述。
 
 ## <a name="methods"></a>方法
-方法|返回类型 |Description
+方法|返回类型 |说明
 :---|:---|:---
 [列表调查](get-investigation-collection.md) | 调查集合 | 获取调查集合
 [获取单个调查](get-investigation-object.md) | 调查实体 | 获取单个 Investigation 实体。

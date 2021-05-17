@@ -1,5 +1,5 @@
 ---
-title: 查看高级电子数据展示中的案例数据
+title: 查看服务中的Advanced eDiscovery
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -16,7 +16,7 @@ search.appverid:
 - MET150
 ms.assetid: ''
 ROBOTS: NOINDEX, NOFOLLOW
-description: 了解如何在高级电子数据展示中查看审阅集中的案例数据。
+description: 了解如何在 Advanced eDiscovery 中查看审阅集内Advanced eDiscovery。
 ms.openlocfilehash: 890edc0e813f620944cea1e73bc8f9dc45132eb3
 ms.sourcegitcommit: 2160e7cf373f992dd4d11793a59cb8c44f8d587e
 ms.translationtype: MT
@@ -24,6 +24,6 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 09/26/2020
 ms.locfileid: "48285348"
 ---
-# <a name="review-case-data-in-advanced-ediscovery"></a>查看高级电子数据展示中的案例数据
+# <a name="review-case-data-in-advanced-ediscovery"></a>查看服务中的Advanced eDiscovery
 
 即将推出。

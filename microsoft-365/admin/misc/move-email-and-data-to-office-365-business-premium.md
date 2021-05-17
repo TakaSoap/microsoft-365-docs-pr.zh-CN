@@ -1,5 +1,5 @@
 ---
-title: 将电子邮件和数据移动到 Microsoft 365 商业标准
+title: 将电子邮件和数据移动到Microsoft 365 商业标准版
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -21,7 +21,7 @@ search.appverid:
 - MOE150
 ms.assetid: 1062115d-e312-482a-bb5a-765235990f41
 ROBOTS: NOINDEX
-description: 了解如何将数据移动到新的业务标识。
+description: 了解如何将数据转移到新的业务标识。
 ms.openlocfilehash: 4f105e00ab6496a5d1d3edfc0e0f1abd4eced412
 ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
@@ -29,32 +29,32 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 10/21/2020
 ms.locfileid: "48645031"
 ---
-# <a name="move-email-and-data-to-microsoft-365-business-standard"></a>将电子邮件和数据移动到 Microsoft 365 商业标准
+# <a name="move-email-and-data-to-microsoft-365-business-standard"></a>将电子邮件和数据移动到Microsoft 365 商业标准版
 
-当您升级到 Microsoft 365 商业标准版时，我们将为你提供一种全新的  *业务标识*。 为业务数据提供新的电子邮件帐户和单独的 OneDrive 帐户。 
+升级到 Microsoft 365 商业标准版 时，我们将为您提供全新的 *业务标识*。 为业务数据提供新的电子邮件帐户和单独的 OneDrive 帐户。 
   
 若要将一些个人数据移到新的企业标识，请按照下面的说明进行操作。
   
 ## <a name="onedrive"></a>[OneDrive](#tab/OneDrive)
   
  **复制 OneDrive 数据**
-1. 在硬盘上创建一个临时文件夹，以临时存储要迁移到 Microsoft 365 for business 的文件。
+1. 在硬盘驱动器上创建一个临时文件夹，临时存储要迁移到企业Microsoft 365文件。
     
-2. 转到 [https://onedrive.live.com/](https://onedrive.live.com/) 并使用用于访问 microsoft 365 系列订阅的 microsoft 帐户登录。 
+2. 转到 [https://onedrive.live.com/](https://onedrive.live.com/) 并使用用于访问你的订阅的 Microsoft 帐户Microsoft 365 家庭版登录。 
     
-3. 将您想要用于 Microsoft 365 for business 的文件复制到您在步骤1中创建的本地文件夹中。
+3. 将要用于企业Microsoft 365复制到在步骤 1 中创建的本地文件夹。
     
- **将 OneDrive 文件导入到 Microsoft 365 for business**
-1. 转到 [admin.microsoft.com](https://go.microsoft.com/fwlink/?LinkId=816877) ，并使用 Microsoft 365 应用程序登录商业用户名和密码。 
+ **将OneDrive文件导入Microsoft 365企业**
+1. 转到[admin.microsoft.com，](https://go.microsoft.com/fwlink/?LinkId=816877)然后使用你的Microsoft 365 商业应用版用户名和密码登录。 
     
 2. 在左上角选择" **应用启动器**"图标，然后选择" **OneDrive**"。
   
     > [!TIP]
-    > 第一次打开 OneDrive for Business 时，需要设置 OneDrive。 如果出现这种情况，请在 " **欢迎使用 OneDrive for** business" 页上选择 " **下一步**"。 设置 OneDrive 后，选择你的 **onedrive 已准备就绪**。 
+    > 第一次打开 OneDrive for Business 时，需要设置 OneDrive。 如果发生这种情况，请在"欢迎使用 **OneDrive for Business，** 选择"下一 **步"。** 设置OneDrive后，选择 **"OneDrive准备就绪"。** 
   
-3. 你将转到一个空的 OneDrive 文件夹。 如果要创建子文件夹，请选择 " **新建** \> **文件夹**"。
+3. 你将转到一个空的 OneDrive 文件夹。 如果要创建子文件夹，请选择"新建 **文件夹** \> **"。**
 
-4. 选择 " **上传** "，从你复制 OneDrive 文件的硬盘驱动器复制文件。 
+4. 选择 **Upload** 从硬盘驱动器复制文件，其中OneDrive文件。 
   
     > [!NOTE]
     >  可以一次上传一个文件，也可以同时上传多个文件（如特定文件夹中的所有文件），但不能将文件夹复制到 OneDrive for Business。而需要在 OneDrive for Business 上创建所需的文件夹结构。 >  如果想将文件复制到步骤 4 中创建的文件夹，请先打开该文件夹，然后再上传文件。否则会将文件上传到根文件夹。上传文件之后，你也可以在 OneDrive for Business 中的各文件夹之间移动文件。 
@@ -67,14 +67,14 @@ ms.locfileid: "48645031"
 2. 每位用户需要完成[将电子邮件、联系人和日历导出或备份到 Outlook .pst 文件](https://support.microsoft.com/office/14252b52-3075-4e9b-be4e-ff9ef1068f91)中所述的步骤。
     
  **在 Outlook 中设置新的电子邮件帐户**
-1. 每个用户都需要设置其在 Microsoft 365 for business 订阅附带的新电子邮件帐户。 因此，他们需要新电子邮件帐户的地址。 每个用户的电子邮件帐户与他们用于登录 Microsoft 365 for business 的用户名相同。 比如 sue@contoso.onmicrosoft.com 或 david@contoso.com。
+1. 每个用户都需要设置其新电子邮件帐户，该帐户随 Microsoft 365商业版订阅一起提供。 因此，他们需要新电子邮件帐户的地址。 每个用户的电子邮件帐户与用于登录到企业Microsoft 365用户名相同。 比如 sue@contoso.onmicrosoft.com 或 david@contoso.com。
     
 2. 让每位用户将其电子邮件帐户添加到 Outlook。若要了解如何操作，请参阅[在 Outlook (for Windows) 中设置电子邮件](https://support.microsoft.com/office/6e27792a-9267-4aa4-8bb6-c84ef146101b)或[在 Outlook for Mac 2011 中设置电子邮件](https://support.microsoft.com/office/de372dc4-9648-4044-a76c-e8a60e178d54)。
     
  **从 Outlook 数据文件导入信息**
-1. 这会将存储在 PST 文件中的电子邮件、日历、任务和联系人合并到 Microsoft 365 商业版电子邮件帐户中。
+1. 这会将 PST 文件中存储的电子邮件、日历、任务和联系人合并到Microsoft 365企业电子邮件帐户。
     
-2. 若要将存储在 PST 文件中的信息导入到 Microsoft 365 商业电子邮件帐户，请让每个用户在 [Outlook .pst 文件中完成导入电子邮件、联系人和日历](https://support.microsoft.com/office/431a8e9a-f99f-4d5f-ae48-ded54b3440ac)中的步骤。
+2. 若要将 PST 文件中存储的信息导入 Microsoft 365 for business 电子邮件帐户，请让每个用户完成从 Outlook .pst 文件导入电子邮件、联系人[和日历中的步骤](https://support.microsoft.com/office/431a8e9a-f99f-4d5f-ae48-ded54b3440ac)。
     
 ---
 

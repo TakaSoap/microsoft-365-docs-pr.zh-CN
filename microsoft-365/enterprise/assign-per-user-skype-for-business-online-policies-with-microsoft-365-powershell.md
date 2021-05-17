@@ -1,5 +1,5 @@
 ---
-title: 使用适用于 Microsoft 365 的 PowerShell 分配每用户 Skype for Business Online 策略
+title: 使用 PowerShell 为用户分配Skype for Business Online 策略Microsoft 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -13,7 +13,7 @@ f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
 ms.assetid: 36743c86-46c2-46be-b9ed-ad9d4e85d186
-description: 摘要：使用适用于 Microsoft 365 的 PowerShell 通过 Skype for Business Online 策略分配每用户通信设置。
+description: 摘要：使用 PowerShell Microsoft 365 Online 策略分配每用户Skype for Business设置。
 ms.openlocfilehash: 2d3d953fe0beb74cc63f914137942f068ce90be7
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -21,11 +21,11 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 03/19/2021
 ms.locfileid: "50905400"
 ---
-# <a name="assign-per-user-skype-for-business-online-policies-with-powershell-for-microsoft-365"></a>使用适用于 Microsoft 365 的 PowerShell 分配每用户 Skype for Business Online 策略
+# <a name="assign-per-user-skype-for-business-online-policies-with-powershell-for-microsoft-365"></a>使用 PowerShell 为用户分配Skype for Business Online 策略Microsoft 365
 
-*本文适用于 Microsoft 365 企业版和 Office 365 企业版。*
+*此文章适用于 Microsoft 365 企业版和 Office 365 企业版。* 
 
-使用适用于 Microsoft 365 的 PowerShell 是使用 Skype for Business Online 策略分配每用户通信设置的一种有效方法。
+使用 PowerShell for Microsoft 365是使用联机策略分配每用户通信Skype for Business一种有效方法。
   
 ## <a name="prepare-to-run-the-powershell-commands"></a>准备运行 PowerShell 命令
 
@@ -59,7 +59,7 @@ ms.locfileid: "50905400"
 Get-CsExternalAccessPolicy -Include All| Where-Object {$_.EnableFederationAccess -eq $True -and $_.EnablePublicCloudAccess -eq $False}
 ```
 
-除非已创建 ExternalAccessPolicy 的任何自定义实例，否则该命令将返回一个符合 FederationOnly (条件) 。 如以下示例所示：
+除非已创建 ExternalAccessPolicy 的任何自定义实例，否则该命令将返回一个符合 FederationOnly (条件) 。 下面是一个示例：
   
 ```powershell
 Identity                          : Tag:FederationOnly
@@ -71,7 +71,7 @@ EnablePublicCloudAudioVideoAccess : False
 EnableOutsideAccess               : True
 ```
 
-现在，你已了解要分配给 Alex 的策略，可以使用 [Grant-CsExternalAccessPolicy](/powershell/module/skype/Get-CsExternalAccessPolicy) cmdlet 分配该策略。 如以下示例所示：
+现在，你已了解要分配给 Alex 的策略，可以使用 [Grant-CsExternalAccessPolicy](/powershell/module/skype/Get-CsExternalAccessPolicy) cmdlet 分配该策略。 下面是一个示例：
   
 ```powershell
 Grant-CsExternalAccessPolicy -Identity "Alex Darrow" -PolicyName "FederationOnly"

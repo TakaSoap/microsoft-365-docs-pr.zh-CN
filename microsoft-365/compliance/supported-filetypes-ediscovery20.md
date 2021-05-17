@@ -1,5 +1,5 @@
 ---
-title: 高级电子数据展示中支持的文件类型
+title: 支持的文件类型Advanced eDiscovery
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -14,7 +14,7 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-description: Microsoft 365 高级电子数据展示中受支持的文件类型的列表，包括高级电子数据展示中的 OCR 功能支持的图像文件类型。
+description: 应用程序支持的文件类型Microsoft 365 Advanced eDiscovery，包括 OCR 功能支持的图像Advanced eDiscovery。
 ms.custom: seo-marvel-apr2020
 ms.openlocfilehash: 719a0474d45825114cf4ea3fbd19082bb8df7622
 ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
@@ -23,9 +23,9 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 04/06/2021
 ms.locfileid: "51599827"
 ---
-# <a name="supported-file-types-in-advanced-ediscovery"></a>高级电子数据展示中支持的文件类型
+# <a name="supported-file-types-in-advanced-ediscovery"></a>支持的文件类型Advanced eDiscovery
 
-高级电子数据展示支持许多不同级别的许多文件类型。 支持文件类型在本文的下表中进行了介绍。 此列表尚未最终确定，我们将在继续验证测试时添加新的文件类型。 这些表指示文本提取 (以及图像文件) 的光学字符识别或 OCR 文本提取是否支持文件类型，可以在本机查看器中查看，并且还支持高级电子数据展示中的注释查看器。
+Advanced eDiscovery支持许多不同级别的许多文件类型。 支持文件类型在本文的下表中进行了介绍。 此列表尚未最终确定，我们将在继续验证测试时添加新的文件类型。 这些表指示文件类型是否支持文本提取 (以及图像文件) 的光学字符识别或 OCR 文本提取（在本机查看器中可查看）以及 Advanced eDiscovery 中的注释查看器中是否支持。
 
 ## <a name="archive--container"></a>存档/容器
 
@@ -41,7 +41,7 @@ ms.locfileid: "51599827"
 
 | Mime 类型 | 文件标识 | 元数据提取 | 文本提取 | 本机查看器 | 为查看器添加注释 | 可能的扩展 |
 |:------| :------| :------| :------| :------| :------| :------|
-| application/mp4 | 是 | 是 | 否 | 是 | 否 | .f4v; .m4a; .m4v; .mp4; .mp4v; .mpeg; .mpeg4 |
+| application/mp4 | 是 | 是 | 否 | 是 | 否 | .f4v; .m4a; .m4v;.mp4;.mp4v;.mpeg; .mpeg4 |
 |audio/mpeg | 是 | 是 | 否 | 是 | 否 | .mpeg |
 |video/3gpp | 是 | 是 | 否 | 是 | 否 | .3gp |
 |video/3gpp2 | 是 | 是 | 否 | 是 | 否 | .3g2; .3gp2 |
@@ -49,7 +49,7 @@ ms.locfileid: "51599827"
 |video/x-m4v | 是 | 是 | 否 | 是 | 否 | .m4v |
 ||||||||
 
-## <a name="database"></a>数据库
+## <a name="database"></a>Database
 
 | Mime 类型 | 文件标识 | 元数据提取 | 文本提取 | 本机查看器 | 为查看器添加注释 | 可能的扩展 |
 |:------| :------| :------| :------| :------| :------| :------|
@@ -79,7 +79,7 @@ ms.locfileid: "51599827"
 |:------| :------| :------| :------| :------| :------| :------|
 |application/xhtml+xml | 是 | 是 | 是 | 是 | 是 | .xhtml |
 |application/xml | 是 | 是 | 是 | 是 | 是 | .xml |
-|text/html | 是 | 是 | 是 | 是 | 是 | .htm; .html; .shtml |
+|text/html | 是 | 是 | 是 | 是 | 是 | .htm;.html;.shtml |
 ||||||||
 
 ## <a name="image"></a>图像
@@ -89,7 +89,7 @@ ms.locfileid: "51599827"
 |image/bmp | 是 | 是 | 是 | 是 | 是 | .bmp |
 |image/emf | 是 | 是 | 是 | 是 | 是 | .emf |
 |image/gif | 是 | 是 | 是 | 是 | 是 | .gif |
-|image/jpeg | 是 | 是 | 是 | 是 | 是 | .jpeg; .jpg |
+|image/jpeg | 是 | 是 | 是 | 是 | 是 | .jpeg;.jpg |
 |image/png | 是 | 是 | 是 | 是 | 是 | .png |
 |image/svg+xml | 是 | 是 | 是 | 是 | 否 | .svg |
 |image/tiff | 是 | 是 | 是 | 是 | 是 | .tif |
@@ -101,7 +101,7 @@ ms.locfileid: "51599827"
 
 | Mime 类型 | 文件标识 | 元数据提取 | 文本提取 | 本机查看器 | 为查看器添加注释 | 可能的扩展 |
 |:------| :------| :------| :------| :------| :------| :------|
-|application/vnd.ms-excel | 是 | 是 | 是 | 是 | 是 | .dat; .xls |
+|application/vnd.ms-excel | 是 | 是 | 是 | 是 | 是 | .dat;.xls |
 |application/vnd.ms-excel.sheet.binary.macroenabled.12 | 是 | 是 | 是 | 是 | 否 | .xlsb |
 |application/vnd.ms-excel.sheet.macroenabled.12 | 是 | 是 | 是 | 是 | 是 | .xlsm |
 |application/vnd.ms-excel.template.macroenabled.12 | 是 | 是 | 是 | 否 | 否 | .xltm |
@@ -120,7 +120,7 @@ ms.locfileid: "51599827"
 
 | Mime 类型 | 文件标识 | 元数据提取 | 文本提取 | 本机查看器 | 为查看器添加注释 | 可能的扩展 |
 |:------| :------| :------| :------| :------| :------| :------|
-|application/vnd.ms-powerpoint | 是 | 是 | 是 | 是 | 是 | .pot; .pps; .ppt |
+|application/vnd.ms-powerpoint | 是 | 是 | 是 | 是 | 是 | .pot;.pps;.ppt |
 |application/vnd.openxmlformats-officedocument.presentationml.presentation | 是 | 是 | 是 | 是 | 是 | .pptx |
 |application/vnd.openxmlformats-officedocument.presentationml.幻灯片 | 是 | 是 | 是 | 是 | 是 | .ppsx |
 |application/vnd.openxmlformats-officedocument.presentationml.template | 是 | 是 | 是 | 是 | 是 | .potx |
@@ -152,8 +152,8 @@ ms.locfileid: "51599827"
 
 | Mime 类型 | 文件标识 | 元数据提取 | 文本提取 | 本机查看器 | 为查看器添加注释 | 可能的扩展 |
 |:------| :------| :------| :------| :------| :------| :------|
-|application/msword | 是 | 是 | 是 | 是 | 是 | .dat; .doc |
-| application/rtf | 是 | 是 | 是 | 是 | 是 | .doc; .rtf |
+|application/msword | 是 | 是 | 是 | 是 | 是 | .dat;.doc |
+| application/rtf | 是 | 是 | 是 | 是 | 是 | .doc;.rtf |
 |application/vnd.ms-word.document.macroenabled.12 | 是 | 是 | 是 | 是 | 是 | .docm |
 |application/vnd.ms-word.template.macroenabled.12 | 是 | 是 | 是 | 是 | 是 | .dotm |
 |application/vnd.openxmlformats-officedocument.wordprocessingml.document | 是 | 是 | 是 | 是 | 是 | .docx |
@@ -190,7 +190,7 @@ ms.locfileid: "51599827"
 | Mime 类型 | 文件标识 | 元数据提取 | 文本提取 | 本机查看器 | 为查看器添加注释 | 可能的扩展 |
 |:------| :------| :------| :------| :------| :------| :------|
 |text/csv | 是 | 是 | 是 | 是 | 是 | .csv |
-|text/plain | 是 | 是 | 是 | 是 | 是 | .con; .css; .csv; .dat; .pl; .txt |
+|text/plain | 是 | 是 | 是 | 是 | 是 | .con;.css;.csv; .dat; .pl;.txt |
 ||||||||
 
 ## <a name="portable-document-format"></a>Portable Document Format

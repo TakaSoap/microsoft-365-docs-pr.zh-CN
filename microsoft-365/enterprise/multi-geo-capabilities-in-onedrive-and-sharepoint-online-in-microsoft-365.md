@@ -27,7 +27,7 @@ ms.locfileid: "48995905"
 ---
 # <a name="multi-geo-capabilities-in-onedrive-and-sharepoint-online"></a>OneDrive 和 SharePoint Online 中的多地理位置功能
 
-OneDrive 和 SharePoint Online 中的多地理位置功能允许控制共享资源，如 SharePoint 工作组网站和存储在某个国家或地区的 Microsoft 365 组邮箱。
+OneDrive 和 SharePoint Online 中的多地理位置功能支持控制共享资源，如 SharePoint 团队网站和存储在国家/地区或区域静止的 Microsoft 365 组邮箱。
 
 每个用户、组邮箱和 SharePoint 站点都有一个首选数据位置 (PDL)，表示要在其中存储相关数据的地理位置。 可将用户的个人数据（Exchange 邮箱和 OneDrive）以及用户创建的任何 Microsoft 365 组或 SharePoint 站点存储在指定地理位置，以满足数据驻留要求。 你可以[为每个地理位置指定不同的管理员](add-a-sharepoint-geo-admin.md)。
 

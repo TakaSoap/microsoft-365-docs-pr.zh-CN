@@ -1,5 +1,5 @@
 ---
-title: 适用于 Microsoft 365 企业版测试环境的 Azure AD Identity Protection
+title: 适用于企业测试环境Microsoft 365 Azure AD Identity Protection
 f1.keywords:
 - NOCSH
 ms.author: josephd
@@ -14,7 +14,7 @@ ms.collection: M365-identity-device-management
 ms.custom:
 - TLG
 - Ent_TLGs
-description: 配置 Azure AD Identity Protection 并分析 Microsoft 365 企业版测试环境中的当前帐户。
+description: 配置 Azure AD Identity Protection 并分析企业测试Microsoft 365中的当前帐户。
 ms.openlocfilehash: 0cb0acf3faee13676573b04178bd6b4d3d36da4d
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -22,23 +22,23 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 03/19/2021
 ms.locfileid: "50905340"
 ---
-# <a name="azure-ad-identity-protection-for-your-microsoft-365-for-enterprise-test-environment"></a>适用于 Microsoft 365 企业版测试环境的 Azure AD Identity Protection
+# <a name="azure-ad-identity-protection-for-your-microsoft-365-for-enterprise-test-environment"></a>适用于企业测试环境Microsoft 365 Azure AD Identity Protection
 
-*本测试实验室指南仅适用于 Microsoft 365 企业版测试环境。*
+*本测试实验室指南只能用于Microsoft 365测试环境。*
 
-可以使用 Azure Active Directory (Azure AD) Identity Protection 检测影响组织标识的潜在漏洞，配置自动响应并调查事件。 本文介绍如何使用 Azure AD Identity Protection 查看测试环境帐户的分析。
+可以使用 Azure AD Azure Active Directory (Identity Protection) 检测影响组织标识的潜在漏洞，配置自动响应并调查事件。 本文介绍如何使用 Azure AD Identity Protection 查看测试环境帐户的分析。
 
-在 Microsoft 365 企业版测试环境中设置 Azure AD Identity Protection 涉及两个阶段：
+在企业测试环境中Microsoft 365 Azure AD Identity Protection 包括两个阶段：
 
-- [第 1 阶段：构建 Microsoft 365 企业版测试环境](#phase-1-build-out-your-microsoft-365-for-enterprise-test-environment)
+- [第 1 阶段：构建Microsoft 365测试环境](#phase-1-build-out-your-microsoft-365-for-enterprise-test-environment)
 - [阶段 2：使用 Azure AD Identity Protection](#phase-2-use-azure-ad-identity-protection)
 
 ![Microsoft 云测试实验室指南](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
     
 > [!TIP]
-> 有关 Microsoft 365 企业版测试实验室指南堆栈中所有文章的直观地图，请转到 [Microsoft 365 企业版测试实验室指南堆栈](../downloads/Microsoft365EnterpriseTLGStack.pdf)。
+> 有关企业测试实验室指南堆栈中Microsoft 365文章的直观映射，请转到 Microsoft 365[企业测试实验室指南堆栈](../downloads/Microsoft365EnterpriseTLGStack.pdf)。
   
-## <a name="phase-1-build-out-your-microsoft-365-for-enterprise-test-environment"></a>第 1 阶段：构建 Microsoft 365 企业版测试环境
+## <a name="phase-1-build-out-your-microsoft-365-for-enterprise-test-environment"></a>第 1 阶段：构建Microsoft 365测试环境
 
 如果你希望仅测试具有最低要求的轻型 Azure AD Identity Protection，请按照轻型基本配置 [中的说明进行操作](lightweight-base-configuration-microsoft-365-enterprise.md)。
   
@@ -49,7 +49,7 @@ ms.locfileid: "50905340"
   
 ## <a name="phase-2-use-azure-ad-identity-protection"></a>阶段 2：使用 Azure AD Identity Protection
 
-1. 打开浏览器的专用实例，然后使用 Microsoft 365 企业版测试环境的全局管理员帐户登录到 Azure [https://portal.azure.com](https://portal.azure.com) 门户 。。
+1. 打开浏览器的专用实例，然后使用适用于企业测试环境的 Microsoft 365 的全局管理员帐户登录到 Azure [https://portal.azure.com](https://portal.azure.com) 门户。
 2. 在 Azure 门户中， **在搜索框中** 键入标识保护，然后选择 **Azure AD Identity Protection**。
 3. 在 **"Identity Protection - 概述"** 边栏选项卡中，选择每个报告以查看报告内容。
 4. 在 **"通知"** 下 **，选择"处于风险中检测到警报的用户"。**

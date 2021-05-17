@@ -81,7 +81,7 @@ Content-Type    | application/json
 
 在请求正文中，提供具有以下参数的 JSON 对象：
 
-参数 | 类型    | Description
+参数 | 类型    | 说明
 :---|:---|:---
 查询 | 文本 |  要运行的查询。 **必需**。
 
@@ -115,7 +115,7 @@ POST https://api.securitycenter.microsoft.com/api/advancedqueries/run
 下面是一个响应示例。
 
 >[!NOTE]
->为简洁起见，可能会截断此处所示的响应对象。 将从实际调用中返回所有属性。
+>为简洁起见，可能会截断此处所示的响应对象。 所有属性都将通过实际调用返回。
 
 ```json
 {

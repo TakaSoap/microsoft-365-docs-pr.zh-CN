@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 客户端应用支持：条件访问
+title: Microsoft 365客户端应用支持：条件访问
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -14,7 +14,7 @@ ms.collection:
 - M365-subscription-management
 f1.keywords:
 - NOCSH
-description: 本文将了解哪些平台、客户端和 PowerShell 模块支持 Microsoft 365 的条件访问。
+description: 本文将了解哪些平台、客户端和 PowerShell 模块支持条件Microsoft 365 专属 Access。
 ms.custom: seo-marvel-apr2020
 ms.openlocfilehash: c7b0b65ea25091aad01fd8741f9925f2b545e9c4
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
@@ -23,17 +23,17 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 03/19/2021
 ms.locfileid: "50904957"
 ---
-# <a name="microsoft-365-client-app-support-conditional-access"></a>Microsoft 365 客户端应用支持：条件访问
+# <a name="microsoft-365-client-app-support-conditional-access"></a>Microsoft 365客户端应用支持：条件访问
 
 在现代工作场所中，用户可以从任何位置使用各种设备和应用访问组织的资源。 因此，只关注谁可以访问资源已不够用。 您的组织还必须支持在访问控制基础结构中访问资源以及如何访问资源。
 
-借助 Azure Active Directory 设备、位置和基于多重身份验证的条件访问，你可以满足此新要求。 条件访问是 Azure Active Directory 的一项功能，它使你能够强制执行对环境中应用的访问权限控制，所有这些操作都基于特定条件，并且从中心位置进行管理。
+使用Azure Active Directory、位置和基于多重身份验证的条件访问，你可以满足此新要求。 条件访问是一项Azure Active Directory，它使你能够强制执行对环境中应用的访问权限控制，所有这些操作都基于特定条件，并且从一个中心位置进行管理。
 
-详细了解 [Azure Active Directory 条件访问](/azure/active-directory/conditional-access/)。
+详细了解条件Azure Active Directory[访问](/azure/active-directory/conditional-access/)。
 
 ## <a name="supported-clients--platforms"></a>受支持的客户端&平台
 
-以下客户端和平台的最新版本支持条件访问。 有关 Microsoft 365 中的平台支持详细信息，请参阅 [Microsoft 365](/microsoft-365/microsoft-365-and-office-resources)的系统要求。
+以下客户端和平台的最新版本支持条件访问。 有关应用程序平台支持Microsoft 365，请参阅 system [requirements for Microsoft 365](/microsoft-365/microsoft-365-and-office-resources)。
 <br>
 <br>
 
@@ -41,6 +41,6 @@ ms.locfileid: "50904957"
 
 ## <a name="supported-powershell-modules"></a>支持的 PowerShell 模块
 
-- [Azure Active Directory PowerShell](/powershell/azure/active-directory/overview?view=azureadps-2.0)
+- [Azure Active DirectoryPowerShell](/powershell/azure/active-directory/overview?view=azureadps-2.0)
 - [Exchange Online PowerShell](/powershell/exchange/exchange-online-powershell)
 - [SharePoint Online PowerShell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)

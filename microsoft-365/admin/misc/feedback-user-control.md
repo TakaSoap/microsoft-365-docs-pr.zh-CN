@@ -31,7 +31,7 @@ ms.locfileid: "51650051"
 用户反馈是 Microsoft 了解 Microsoft 产品的用户体验的重要信号。 Microsoft 重视用户的意见。 用户反馈将直接告诉我们的工程师，并帮助我们塑造所有用户的 Microsoft 产品和服务的未来。  
 在本主题中，你将找到有关存在哪些反馈类型、如何收集反馈、我们收集的内容以及如何处理数据的信息。
 
-作为管理员，你可以管理组织的反馈信号。 我们将引入一组新的策略设置，帮助你在组织的 Microsoft 365 应用程序中管理用户反馈集合。 这些策略设置将帮助面向 Azure Active Directory 组，并配置组织的反馈收集体验。 用户反馈将直接告诉我们的工程师，并帮助我们塑造所有用户的 Microsoft 产品和服务的未来。 可以在管理组织的 Microsoft 反馈中了解有关这些策略设置、它们适用于哪些应用程序以及[最佳做法。](../manage/manage-feedback-ms-org.md)
+作为管理员，你可以管理组织的反馈信号。 我们将引入一组新的策略设置，帮助你在组织的 Microsoft 365 应用程序中管理用户反馈集合。 这些策略设置将帮助您面向Azure Active Directory组，并配置组织的反馈收集体验。 用户反馈将直接告诉我们的工程师，并帮助我们塑造所有用户的 Microsoft 产品和服务的未来。 可以在管理组织的 Microsoft 反馈中了解有关这些策略设置、它们适用于哪些应用程序以及[最佳做法。](../manage/manage-feedback-ms-org.md)
 
 ## <a name="feedback-types"></a>反馈类型
 
@@ -42,12 +42,12 @@ ms.locfileid: "51650051"
 #### <a name="in-product-feedback-examples"></a>产品内反馈示例
 
 :::image type="content" source="../../media/In-appfeedbackbackstage.png" alt-text="屏幕截图：产品内反馈示例":::
-:::image type="content" source="../../media/In-appfeedbackwindows.png" alt-text="屏幕截图：Windows 产品内反馈示例 ":::
-:::image type="content" source="../../media/TeamsIn-appFeedback.png" alt-text="屏幕截图：Teams 产品内反馈示例":::
+:::image type="content" source="../../media/In-appfeedbackwindows.png" alt-text="屏幕截图：Windows产品内反馈示例":::
+:::image type="content" source="../../media/TeamsIn-appFeedback.png" alt-text="屏幕截图：Teams产品内反馈示例":::
 
 ### <a name="in-product-surveys"></a>产品内调查
 
-用户还可通过系统启动的调查提示对体验进行评分并提供其体验的其他信息。 这些提示时时出现在 Microsoft 365 产品中。 当系统提示时，用户可以选择是否要提供反馈。 调查提示通常显示在应用程序右下角。 如果用户决定提供反馈、消除提示或让提示自行消失，该用户将在一段时间后不会再次看到该调查。 Microsoft 还利用管理过程来限制这些系统发起的调查的数量。  管理的目的是确保用户不会因调查提示的数量而不知所措。
+用户还可通过系统启动的调查提示对体验进行评分并提供其体验的其他信息。 这些提示时时Microsoft 365产品内出现。 当系统提示时，用户可以选择是否要提供反馈。 调查提示通常显示在应用程序右下角。 如果用户决定提供反馈、消除提示或让提示自行消失，该用户将在一段时间后不会再次看到该调查。 Microsoft 还利用管理过程来限制这些系统发起的调查的数量。  管理的目的是确保用户不会因调查提示的数量而不知所措。
 
 :::image type="content" source="../../media/feedback-love.png" alt-text="屏幕截图：产品内反馈请求示例":::
 
@@ -57,7 +57,7 @@ ms.locfileid: "51650051"
 
 详细且可操作的反馈对于更改和改进 Microsoft 产品至关重要。 如果你的用户对如何改进有问题或建议，我们希望听到它。 下面是发送给 Microsoft 的可操作反馈的一些提示和示例。
 
-- **简洁的描述性标题**   描述性标题和特定标题可帮助我们了解报告的问题。 示例：Excel 的 **"最近使用的文件** "列表不包括最近添加的 OneDrive 文件。
+- **简洁的描述性标题**   描述性标题和特定标题可帮助我们了解报告的问题。 示例：Excel的 **"最近** 使用的文件"列表不包含最近添加OneDrive文件。
 - **一次只关注一个问题**   针对一个问题或一次提供一个项目的建议提供反馈。 这可确保每次提交时都收到正确的日志和数据，并可以分配进行跟踪。 如果你有多个问题，请针对每个问题提交新的反馈请求。 这有助于我们确定收到的特定问题的反馈量。
 - **在"说明"框中写入详细信息**   有关你的设备、操作系统和应用的信息会自动包含在每个报告的反馈中。 添加有关你认为非常重要的问题的其他任何信息。 例如，包括重现问题的详细步骤。
 
@@ -82,7 +82,7 @@ Microsoft 使用反馈来改进 Microsoft 产品。 我们以问题、问题、�
 - **应用生成**   提交时捕获的 Microsoft 产品内部版本号。
 - **应用语言**   提交时捕获的 Microsoft 产品的语言。
 - **附件**   是否包含 (附件 屏幕截图，) 收集为反馈的一部分？  (是/否) 。
-- **TenantId**   如果从与 TenantId 关联的 Azure Active Directory 帐户提交反馈。
+- **TenantId**  如果从租户帐户提交Azure Active Directory，则 TenantId 已关联。
 
 ## <a name="data-handling-and-privacy"></a>数据处理和隐私
 
@@ -93,4 +93,4 @@ Microsoft 使用反馈来改进 Microsoft 产品。 我们以问题、问题、�
 
 ## <a name="how-can-i-see-my-users-feedback"></a>如何查看用户的反馈？
 
-即将推出，我们将将收集的 Microsoft 产品反馈数据分享给你。 我们正在处理 Microsoft 365 管理中心的新体验，让你可以查看、删除和导出组织的反馈数据。 这可让你直接了解用户使用 Microsoft 365 产品时获得的透明度以及有用的见解。
+即将推出，我们将将收集的 Microsoft 产品反馈数据分享给你。 We're working on a new experience in the Microsoft 365 admin center that let's you view， delete and export the feedback data for your organization. 这可让你直接了解用户使用产品或产品时Microsoft 365见解。

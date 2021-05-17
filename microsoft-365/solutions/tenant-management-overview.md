@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 企业版租户管理
+title: 适用于企业的 Microsoft 365 租户管理
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -15,7 +15,7 @@ ms.collection:
 - tenant-management
 ms.custom:
 - Ent_Solutions
-description: Microsoft 365 租户的规划、部署和持续操作概述。
+description: 规划、部署和持续操作应用程序租户的Microsoft 365概述。
 ms.openlocfilehash: 42bde00fbd4ddc1cf92236f099a22b2260dbb980
 ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
 ms.translationtype: MT
@@ -23,89 +23,89 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 03/03/2021
 ms.locfileid: "50405674"
 ---
-# <a name="tenant-management-for-microsoft-365-for-enterprise"></a>Microsoft 365 企业版租户管理
+# <a name="tenant-management-for-microsoft-365-for-enterprise"></a>适用于企业的 Microsoft 365 租户管理
 
-通过云计算创建组织数字化转型的路径需要一个稳固的基础，您的工作人员可以依靠该途径获得生产力、协作、性能、隐私、合规性和安全性。
+通过云计算创建组织数字化转型的路径需要一个稳固的基础，员工可以依靠这些基础来提高工作效率、协作、性能、隐私、合规性和安全性。
 
-正确配置 Microsoft 365 租户可提供该基础，让员工专注于完成工作，IT 部门专注于提供其他业务价值端到端解决方案。 
+正确配置租户Microsoft 365提供了基础，让工作人员专注于完成工作，IT 部门专注于提供其他业务价值的端到端解决方案。 
 
-此解决方案将执行以下步骤中该基础的配置：
+此解决方案将按照以下步骤完成该基础的配置：
 
 1. 确定租户
 2. 优化网络
 3. 同步标识并强制执行安全登录
-4. 迁移 Windows 设备、Office 客户端和本地 Office 服务器和数据
+4. 迁移Windows设备、Office客户端和本地 Office 服务器和数据
 5. 部署设备和应用管理
 
-但是首先，让我们花些时间了解一下租户是什么，以及提供稳固基础的租户的外观。
+但是首先，让我们花些时间了解一下什么是租户，以及提供稳固基础的租户的外观。
 
-## <a name="a-microsoft-365-tenant-defined"></a>定义的 Microsoft 365 租户
+## <a name="a-microsoft-365-tenant-defined"></a>定义的Microsoft 365租户
 
-Microsoft 365 租户是 Microsoft 365 服务的专用实例，以及存储在特定默认位置（如欧洲或北美）中的组织数据。 为组织创建租户时指定此位置。 每个 Microsoft 365 租户各不相同、唯一，并且独立于所有其他 Microsoft 365 租户。 从 Microsoft 购买一个或多个产品（如 Microsoft 365 E3 或 E5）时，将创建一个 Microsoft 365 租户，并为每个租户创建一组许可证。
+Microsoft 365租户是特定默认位置（如欧洲或北美Microsoft 365存储的组织数据的专用服务实例。 为组织创建租户时指定此位置。 每个Microsoft 365租户都是独特、唯一的，并且独立于所有其他Microsoft 365租户。 从 Microsoft Microsoft 365一个或多个产品（如 Microsoft 365 E3 或 E5）时创建一个租户，并为每个租户创建一组许可证。
 
-Microsoft 365 租户还包括 Azure Active Directory (Azure AD) 租户，这是用户帐户、组和其他对象的 Azure AD 专用实例。 每个 Azure AD 租户都是不同、唯一的，并且独立于所有其他 Azure AD 租户。 虽然你的组织可以有多个可以使用 Azure 订阅设置的 Azure AD 租户，但 Microsoft 365 租户只能使用单个 Azure AD 租户，即创建租户时创建的租户。 
+你的 Microsoft 365 租户还包括一Azure Active Directory (Azure AD) 租户，这是用户帐户、组和其他对象的 Azure AD 的专用实例。 每个 Azure AD 租户各不相同、唯一，并且独立于所有其他 Azure AD 租户。 虽然你的组织可以有多个可以使用 Azure 订阅设置的 Azure AD 租户，Microsoft 365 租户只能使用单个 Azure AD 租户，即创建租户时创建的租户。 
 
-如以下示例所示：
+下面是一个示例：
 
-![具有 Azure AD 租户的 Microsoft 365 租户示例](../media/tenant-management-overview/tenant-management-example-tenant.png)
+![具有 Azure AD Microsoft 365租户的租户示例](../media/tenant-management-overview/tenant-management-example-tenant.png)
 
-*租户管理* 是 Microsoft 365 租户的规划、部署和持续操作。 
+*租户管理* 是租户租户的规划、部署和Microsoft 365操作。 
 
 ## <a name="attributes-of-a-well-designed-and-operating-tenant"></a>设计良好且运行良好的租户的属性
 
-除了租户的正确名称和位置之外，还需要规划、部署和管理其他元素，以确保使用云生产力应用（如 Microsoft Teams 和 Exchange Online）的用户体验有效、安全且 &mdash; &mdash; 具有性能。
+除了租户的正确名称和位置之外，还需要规划、部署和管理其他元素，以确保使用云生产力应用（如 Microsoft Teams 和 Exchange Online）的用户体验有效、安全且 &mdash; &mdash; 性能高。
 
 以下是元素：
 
 - 你拥有一组正确的产品 (订阅和) 许可证。
-  - 这组产品符合你的业务、IT 和安全需求。
-  - 为员工提供足够数量的许可证和预期的人员配备变化。
+  - 一组产品符合你的业务、IT 和安全需求。
+  - 为工作人员提供足够数量的许可证以及人员配备的预期变化。
 - 对于网络：
-  - 您配置了正确的 DNS 域名。
+  - 已配置正确的 DNS 域名。
   - 对于企业网络，已针对现场工作人员优化了到 Microsoft 网络的网络流量。
-  - 已针对使用 VPN 客户端的远程工作者优化了网络流量。
+  - 你已针对使用 VPN 客户端的远程工作人员优化了网络流量。
 - 已同步 Active Directory 域服务 (AD DS) 帐户、组和其他对象。
-  - Azure AD 租户帐户将映射到具有电子邮件地址的正确 DNS 域的 Exchange Online 邮箱。
-  - 你的用户帐户从正确的购买产品（如 Microsoft 365 E3 或 E5 (）分配了正确的) 。
+  - 你的 Azure AD 租户帐户将映射到Exchange Online DNS 域正确的电子邮件地址邮箱。
+  - 你的用户帐户已分配有正确的许可证，这些许可证来自正确的已购买 (产品，Microsoft 365 E3或 E5) 。
 - 已配置强标识和访问管理。
-  - 您需要使用无密码身份验证或多重身份验证安全用户登录 (MFA) 。
-  - 您具有条件访问策略，这些策略强制实施登录要求和限制，提高安全级别。
-- 本地 Office 服务器及其数据已迁移到云应用或正在混合配置中使用。
-- 你将使用内置于 Microsoft 365 的 Intune 或基本移动性和安全性进行设备管理。
+  - 你需要使用无密码身份验证或多重身份验证和 MFA (安全) 。
+  - 您具有条件访问策略，这些策略强制实施登录要求和针对较高安全级别的限制。
+- 本地Office服务器及其数据已迁移到云应用或正在混合配置中使用。
+- 你使用内置于设备的 Intune 或基本移动性和安全性进行Microsoft 365。
   - 组织拥有的设备已注册和管理。
   - 管理个人设备的应用。
 
-下面是一个 Microsoft 365 租户示例，其中所有元素已就位。
+下面是一个包含Microsoft 365元素的租户示例。
 
-![Microsoft 365 租户示例](../media/tenant-management-overview/tenant-management-tenant-config.png)
+![租户Microsoft 365示例](../media/tenant-management-overview/tenant-management-tenant-config.png)
 
-在此图中，Microsoft 365 租户包括：
+在此图中，Microsoft 365租户包括：
 
-- Microsoft 365 E3 和 E5 的产品和许可证。
-- Microsoft 365 生产力应用。
-- 具有已注册的设备以及设备和应用程序策略的 Intune。
-- 已同步用户帐户的 Azure AD 租户 (组和其他目录对象不会显示在) 、域和条件访问策略中。
+- 适用于 Microsoft 365 E3 和 E5 的产品和许可证。
+- Microsoft 365工作效率应用。
+- Intune，具有已注册的设备以及设备和应用程序策略。
+- 在组、域和条件访问策略中 (用户帐户和其他目录对象的 Azure AD) 不会显示。
 
-## <a name="tenant-capabilities-for-microsoft-365-for-enterprise"></a>Microsoft 365 企业版租户功能
+## <a name="tenant-capabilities-for-microsoft-365-for-enterprise"></a>适用于企业的 Microsoft 365 租户功能
 
-以下各节和表格列出了此解决方案中步骤的关键功能和许可。
+以下各节和表列出了此解决方案中步骤的关键功能和许可。
 
-### <a name="tenant"></a>Tenant
+### <a name="tenant"></a>租户
 
 | 功能或特性 | 说明 | 许可 |
 |:-------|:-----|:-------|
-| 多个租户 | 每个 Microsoft 365 租户各不相同、唯一，并且独立于所有其他 Microsoft 365 租户。 对于多个租户，在管理租户和为用户提供服务时，存在一些限制和其他注意事项。 | Microsoft 365 E3 或 E5 | 
-| 交叉租户邮箱迁移 | 租户管理员可以在租户之间移动邮箱，其内部部署系统中基础结构依赖关系最小。 这无需注销和载入邮箱。 | Microsoft 365 E3 或 E5 | 
-| 多地理位置 | 租户可以将其余数据存储在已选择满足数据驻留要求的其他数据中心地理位置中。 | Microsoft 365 E3 或 E5 | 
-| 将核心数据移动到新的数据中心地理位置 | 随着 Microsoft 为额外的容量和计算资源添加新的数据中心地理位置，你可以请求数据中心地理位置移动，以驻留核心客户数据。 | Microsoft 365 E3 或 E5 | 
+| 多个租户 | 每个Microsoft 365租户都是独特、唯一的，并且独立于所有其他Microsoft 365租户。 对于多个租户，在管理租户和为用户提供服务时，存在一些限制和其他注意事项。 | Microsoft 365 E3 或 E5 | 
+| 交叉租户邮箱迁移 | 租户管理员可以在本地系统中以最少的基础结构依赖项在租户之间移动邮箱。 这将无需离开和载入邮箱。 | Microsoft 365 E3 或 E5 | 
+| 多地理位置 | 租户可以在选择满足数据驻留要求的其他数据中心地理位置中存储静止数据。 | Microsoft 365 E3 或 E5 | 
+| 将核心数据移动到新的数据中心地理位置 | 随着 Microsoft 添加新的数据中心地理位置来增加容量和计算资源，你可以请求为核心客户数据的地理位置内数据驻留进行数据中心异地移动。 | Microsoft 365 E3 或 E5 | 
 ||||
 
 ### <a name="networking"></a>网络
 
 | 功能或特性 | 说明 | 许可 |
 |:-------|:-----|:-------|
-| 网络见解 | 从 Microsoft 365 租户收集的网络性能指标可帮助您为办公室位置设计网络外围。 | Microsoft 365 E3 或 E5 | 
-| 自动化终结点更新 | 自动执行客户端 PAC 文件和网络设备和服务中 Microsoft 365 终结点的配置和持续更新。 | Microsoft 365 E3 或 E5 | 
+| Network Insights | 从租户中收集的网络Microsoft 365指标，有助于设计办公地点的网络外围。 | Microsoft 365 E3 或 E5 | 
+| 自动化终结点更新 | 自动执行客户端 PAC 文件和网络设备Microsoft 365终结点的配置和持续更新。 | Microsoft 365 E3 或 E5 | 
 ||||
 
 ### <a name="identity"></a>标识
@@ -123,9 +123,9 @@ Microsoft 365 租户还包括 Azure Active Directory (Azure AD) 租户，这是�
 
 | 功能或特性 | 说明 | 许可 |
 |:-------|:-----|:-------|
-| 迁移到 Windows 10 | 将运行 Windows 7 或 Windows 8.1 的设备迁移到 Windows 10 企业版。 | Microsoft 365 E3 或 E5 中包含的 Windows 10 企业版许可证 | 
-| 迁移到 Microsoft 365 企业应用版 | 将 Office 客户端应用程序（如 Word 和 PowerPoint）迁移到通过新功能更新的云中安装的版本。 | Microsoft 365 E3 或 E5 | 
-| 将本地服务器和数据迁移到 Microsoft 365 | 将 Exchange 邮箱、SharePoint 网站和 Skype for Business Online 迁移到 Microsoft 365 云服务。 | Microsoft 365 E3 或 E5 | 
+| 迁移到 Windows 10 | 将运行 Windows 7 或 Windows 8.1 的设备Windows 10 企业版。 | Windows 10 企业版或 E5 Microsoft 365 E3许可证 | 
+| 迁移到Microsoft 365 企业应用版 | 将 Office 客户端应用（如 Word 和 PowerPoint）迁移到从云中安装且已更新新功能的版本。 | Microsoft 365 E3 或 E5 | 
+| 将本地服务器和数据迁移到Microsoft 365 | 将Exchange邮箱、SharePoint网站和 Skype for Business Online Microsoft 365云服务。 | Microsoft 365 E3 或 E5 | 
 ||||
 
 ### <a name="device-and-app-management"></a>设备和应用管理
@@ -133,21 +133,21 @@ Microsoft 365 租户还包括 Azure Active Directory (Azure AD) 租户，这是�
 | 功能或特性 | 说明 | 许可 |
 |:-------|:-----|:-------|
 | Microsoft Intune | 基于云的服务，提供移动设备管理 (MDM) 和移动应用程序管理 (MAM) ，以控制组织的应用程序和设备的使用方式，包括移动电话、平板电脑和笔记本电脑。 | Microsoft 365 E3 或 E5 | 
-| 基本移动性和安全性 | 通过此内置服务保护和管理用户的移动设备，如 iPhone、iPad、Android 和 Windows 手机。  | Microsoft 365 E3 或 E5 | 
+| 基本移动性和安全性 | 通过此内置服务保护和管理用户的移动设备，如 iPhone、iPad、Android 和 Windows 电话。  | Microsoft 365 E3 或 E5 | 
 ||||
 
 ## <a name="next-steps"></a>后续步骤
 
-使用以下步骤设置和管理 Microsoft 365 租户。
+使用以下步骤设置和管理你的Microsoft 365租户。
 
 1. [确定租户](tenant-management-tenants.md)
 2. [优化网络](tenant-management-networking.md)
 3. [同步标识并强制执行安全登录](tenant-management-identity.md)
-4. [迁移本地 Office 服务器和数据](tenant-management-migration.md)
+4. [迁移本地部署Office服务器和数据](tenant-management-migration.md)
 5. [部署设备和应用管理](tenant-management-device-management.md)
 
-[![部署和管理 Microsoft 365 租户的步骤](../media/tenant-management-overview/tenant-management-step-grid.png)](tenant-management-tenants.md)
+[![部署和管理租户Microsoft 365步骤](../media/tenant-management-overview/tenant-management-step-grid.png)](tenant-management-tenants.md)
 
 每个步骤描述部署选项、总结结果和正在进行的维护任务。
 
-若要了解虚构但具有代表性的跨国家组织如何部署其 Microsoft 365 租户的元素，请参阅 [Contoso 案例研究](../enterprise/contoso-case-study.md)。
+若要了解虚构但具有代表性的跨国家组织如何部署其 Microsoft 365 租户的元素，请参阅[Contoso 案例研究](../enterprise/contoso-case-study.md)。

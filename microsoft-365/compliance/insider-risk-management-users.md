@@ -1,7 +1,7 @@
 ---
 title: 内部风险管理用户仪表板
-description: 了解 Microsoft 365 中的内部风险管理用户仪表板
-keywords: Microsoft 365， 内部风险管理， 风险管理， 合规性
+description: 了解企业内部风险管理用户仪表板Microsoft 365
+keywords: Microsoft 365、内部风险管理、风险管理、合规性
 localization_priority: Normal
 ms.prod: microsoft-365-enterprise
 ms.topic: article
@@ -64,7 +64,7 @@ ms.locfileid: "50819995"
 "用户"仪表板 **中显示的每个用户** 都有以下信息：
 
 - **用户**：用户的用户名。 如果启用了内部风险管理的全局匿名化设置，则对此字段进行匿名处理。
-- **风险级别**：用户当前计算的风险级别。 此分数每 24 小时计算一次，并使用与用户关联的所有活动警报的警报风险评分。 对于仅具有触发指示器的用户，风险级别为零。
+- **风险级别**：用户当前计算的风险级别。 此分数每 24 小时计算一次，并使用与用户关联的所有活动警报中的警报风险分数。 对于仅具有触发指示器的用户，风险级别为零。
 - **活动警报**：所有策略的活动警报数。
 - **已确认的** 违反 ：已 *确认用户违反* 策略的情况下解决的事例数。
 - **Case：** 用户的当前活动案例。
@@ -79,7 +79,7 @@ ms.locfileid: "50819995"
 若要查看有关用户风险活动的更多详细信息，请通过双击用户仪表板中的用户来打开用户 **详细信息窗格**。 在详细信息窗格中，可以查看以下信息：
 
 - **"用户配置文件"** 选项卡
-    - **名称和标题**：Azure Active Directory 中用户的名称和位置标题。 如果启用了内部风险管理的全局匿名化设置，则这些用户字段将被匿名处理或为空。
+    - **名称和职务**：用户从以下位置获得的名称和Azure Active Directory。 如果启用了内部风险管理的全局匿名化设置，则这些用户字段将被匿名处理或为空。
     - **用户电子邮件**：用户的电子邮件地址。
     - **别名**：用户的网络别名。
     - **组织或部门**：用户的组织或部门。
@@ -96,22 +96,22 @@ ms.locfileid: "50819995"
 
 若要在所有内部风险管理策略中手动从范围内删除用户，请完成以下步骤：
 
-1. 在 [Microsoft 365](https://compliance.microsoft.com)合规中心，转到 **"内部风险管理** "并选择"用户 **"** 选项卡。
+1. In the [Microsoft 365 compliance center，](https://compliance.microsoft.com)go to **Insider risk management** and select the **Users** tab.
 2. 在 **"用户"仪表板** 上，选择要从内部风险管理策略范围内删除的一个或多个用户。
 3. 选择 **"删除用户"。**
 4. 在" **删除用户"** 窗格中，选择 **"删除** "或" **取消** "以放弃更改并关闭对话框。
 5. 选择 **确认** 窗格上的"删除"以删除用户。
 
-## <a name="run-automated-tasks-with-power-automate-flows-for-a-user"></a>使用 Power Automate 流为用户运行自动任务
+## <a name="run-automated-tasks-with-power-automate-flows-for-a-user"></a>使用用户流Power Automate自动任务
 
-使用建议的 Power Automate 流，风险研究人员和分析师可以快速采取行动以：
+通过使用Power Automate流，风险研究人员和分析师可以快速采取措施：
 
 - 将用户添加到内部风险策略时通知用户
 
-为内部风险管理用户运行、管理或创建 Power Automate 流：
+若要为内部风险管理用户运行Power Automate或创建管理流：
 
 1. 在 **用户** 操作工具栏上选择"自动"。
-2. 选择要运行的 Power Automate 流，然后选择"**运行流"。**
+2. 选择要运行的Power Automate流，然后选择"运行 **流"。**
 3. 流完成后，**选择完成。**
 
-若要了解有关适用于内部风险管理的 Power Automate 流的信息，请参阅内部 [风险管理设置入门](insider-risk-management-settings.md#power-automate-flows-preview)。
+若要了解有关内部Power Automate流的信息，请参阅内部[风险管理设置入门](insider-risk-management-settings.md#power-automate-flows-preview)。

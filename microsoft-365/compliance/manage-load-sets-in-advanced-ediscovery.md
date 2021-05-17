@@ -1,5 +1,5 @@
 ---
-title: 在高级电子数据展示中管理加载集
+title: 管理负载集Advanced eDiscovery
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -15,7 +15,7 @@ search.appverid:
 - MOE150
 - MET150
 ROBOTS: NOINDEX, NOFOLLOW
-description: 了解如何在高级电子数据展示中管理加载集。
+description: 了解如何管理 Advanced eDiscovery 中的负载Advanced eDiscovery。
 ms.openlocfilehash: 38eb0e19c7e62a42df85343d3328b941332adc03
 ms.sourcegitcommit: 2160e7cf373f992dd4d11793a59cb8c44f8d587e
 ms.translationtype: MT
@@ -23,6 +23,6 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 09/26/2020
 ms.locfileid: "48285598"
 ---
-# <a name="manage-load-sets-in-advanced-ediscovery"></a>在高级电子数据展示中管理加载集
+# <a name="manage-load-sets-in-advanced-ediscovery"></a>管理负载集Advanced eDiscovery
 
 内容即将推出。

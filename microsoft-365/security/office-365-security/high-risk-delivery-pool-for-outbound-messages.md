@@ -14,7 +14,7 @@ search.appverid:
 ms.assetid: ac11edd9-2da3-462d-8ea3-bbf9dbc6f948
 ms.collection:
 - M365-security-compliance
-description: 了解如何使用传递池保护 Microsoft 365 数据中心中电子邮件服务器的信誉。
+description: 了解如何使用传递池来保护数据中心中电子邮件Microsoft 365信誉。
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: ac3469150ef5cf5c1040fcddf7f0bc95e7a18805
@@ -33,12 +33,12 @@ ms.locfileid: "51599907"
 - [Microsoft Defender for Office 365 计划 1 和计划 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Microsoft 365 数据中心的电子邮件服务器可能暂时没有发送垃圾邮件。 例如，本地电子邮件组织中通过 Microsoft 365 发送出站邮件或 Microsoft 365 帐户遭到入侵的恶意软件或恶意垃圾邮件攻击。 攻击者还尝试通过 Microsoft 365 转发中继邮件来避免检测。
+数据中心内的电子邮件Microsoft 365可能暂时没有发送垃圾邮件。 例如，内部部署电子邮件组织中通过邮件发送出站邮件或帐户遭到入侵Microsoft 365恶意软件或Microsoft 365攻击。 攻击者还尝试通过邮件转发来中继邮件，Microsoft 365检测。
 
-这些方案可能导致受影响的 Microsoft 365 数据中心服务器的 IP 地址显示在第三方阻止列表中。 使用这些阻止列表的目标电子邮件组织将拒绝来自这些邮件源的电子邮件。
+这些方案可能导致受影响的数据中心服务器的 IP 地址Microsoft 365第三方阻止列表上出现。 使用这些阻止列表的目标电子邮件组织将拒绝来自这些邮件源的电子邮件。
 
 ## <a name="high-risk-delivery-pool"></a>高风险传送池
-为了防止这种情况，来自 Microsoft 365 数据中心服务器的所有出站邮件（被确定为垃圾邮件或超过服务的发送限制或出站 [](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits-across-office-365-options)垃圾邮件策略）[](configure-the-outbound-spam-policy.md)都通过高风险传送池 _发送_。
+为了防止这种情况，来自 Microsoft 365 数据中心服务器的所有出站邮件（被确定为垃圾邮件或超过服务或出站垃圾邮件策略的发送限制）[](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits-across-office-365-options)都通过高风险 [](configure-the-outbound-spam-policy.md)传递池 _发送_。
 
 高风险传递池是出站电子邮件的单独 IP 地址池，仅用于发送"低质量" (例如垃圾邮件和退信) 。 [](backscatter-messages-and-eop.md) 使用高风险传送池有助于防止出站电子邮件的正常 IP 地址池发送垃圾邮件。 出站电子邮件的正常 IP 地址池维护发送"高质量"邮件的信誉，这会降低这些 IP 地址出现在 IP 阻止列表上的可能性。
 

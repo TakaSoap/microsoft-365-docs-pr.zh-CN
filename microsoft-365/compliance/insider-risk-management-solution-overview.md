@@ -1,7 +1,7 @@
 ---
-title: Microsoft 365 中的内部风险管理
-description: 了解如何在 Microsoft 365 中配置内部风险管理。
-keywords: Microsoft 365， 内部风险， 合规性
+title: 内部风险管理Microsoft 365
+description: 了解如何在管理中心中配置内部Microsoft 365。
+keywords: Microsoft 365、内部风险、合规性
 localization_priority: Normal
 ms.prod: microsoft-365-enterprise
 ms.topic: article
@@ -23,19 +23,19 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 03/15/2021
 ms.locfileid: "50819744"
 ---
-# <a name="insider-risk-management-in-microsoft-365"></a>Microsoft 365 中的内部风险管理
+# <a name="insider-risk-management-in-microsoft-365"></a>内部风险管理Microsoft 365
 
 越来越多的员工能够跨各种平台和服务创建、管理和共享数据。 在大多数情况下，组织具有有限的资源和工具来识别和缓解组织范围内的风险，同时还满足合规性要求和员工隐私标准。 这些风险可能包括因离职员工而窃取数据，以及因意外泄露或恶意意图而泄露组织外部信息。
 
-Microsoft 365 中的内部风险管理使用整个服务和第三方指标来帮助你快速识别、会审和操作有风险的用户活动。 通过使用 Microsoft 365 和 Microsoft Graph 中的日志，内部风险管理允许你定义特定策略，以确定风险指标并采取措施缓解这些风险。
+Microsoft 365中的内部风险管理使用整个服务和第三方指标来帮助你快速识别、会审和操作有风险的用户活动。 通过使用 microsoft Microsoft 365 和 Microsoft Graph 中的日志，内部风险管理允许你定义特定策略，以确定风险指标并采取措施来缓解这些风险。
 
-## <a name="configure-insider-risk-management-for-microsoft-365"></a>配置 Microsoft 365 的内部风险管理
+## <a name="configure-insider-risk-management-for-microsoft-365"></a>配置内部风险管理Microsoft 365
 
 使用以下步骤为组织配置内部风险管理：
 
 ![内部风险解决方案内部风险管理步骤](../media/ir-solution-ir-steps.png)
 
-1. 了解 Microsoft 365 [中的内部](insider-risk-management.md) 风险管理
+1. 了解[企业内部风险管理](insider-risk-management.md)Microsoft 365
 2. 规划 [内部风险管理并验证许可](insider-risk-management-plan.md)
 3. 配置 [内部风险管理设置](insider-risk-management-settings.md)
 4. 配置[连接器](insider-risk-management-configure.md#step-1-enable-permissions-for-insider-risk-management)[的权限&先决条件](insider-risk-management-configure.md#step-4-configure-prerequisites-for-policies)

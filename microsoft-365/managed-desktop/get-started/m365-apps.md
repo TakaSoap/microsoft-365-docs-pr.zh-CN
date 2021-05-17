@@ -17,7 +17,7 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 03/19/2021
 ms.locfileid: "50904848"
 ---
-# <a name="microsoft-365-apps-for-enterprise"></a>适用于企业的 Microsoft 365 应用
+# <a name="microsoft-365-apps-for-enterprise"></a>Microsoft 365 企业应用版
 
 ## <a name="initial-deployment"></a>初始部署
 

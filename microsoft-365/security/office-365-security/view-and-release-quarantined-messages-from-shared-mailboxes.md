@@ -29,7 +29,7 @@ ms.locfileid: "51599507"
 > [!NOTE]
 > 本文中介绍的功能目前处于预览阶段，不可供所有人使用，并且可能会更改。
 
-用户可以管理隔离邮件，其中他们是收件人之一，如在 EOP 中以用户方式查找并释放隔离 [邮件中所述](find-and-release-quarantined-messages-as-a-user.md)。 但是，如果用户具有邮箱的"完全访问"和"代理发送"或"代表发送"权限（如 [Exchange Online](/exchange/collaboration-exo/shared-mailboxes)中的共享邮箱中所述）呢？
+用户可以管理隔离邮件，其中他们是收件人之一，如在 EOP 中以用户方式查找并释放隔离 [邮件中所述](find-and-release-quarantined-messages-as-a-user.md)。 但是，用户对邮箱具有"完全访问"和"代理发送"或"代表发送"权限的共享邮箱[呢，如](/exchange/collaboration-exo/shared-mailboxes)共享邮箱Exchange Online？
 
 以前，用户能够管理发送到共享邮箱的隔离邮件，这要求管理员为共享邮箱启用自动映射 (管理员向用户授予对另一个邮箱) 的访问权限时，将默认启用自动映射。 但是，根据用户有权访问的邮箱的大小和数量，Outlook 尝试打开用户有权访问的所有邮箱时，性能可能会受到影响。  因此，许多管理员选择 [删除共享邮箱的自动映射](/outlook/troubleshoot/profiles-and-accounts/remove-automapping-for-shared-mailbox)。
 

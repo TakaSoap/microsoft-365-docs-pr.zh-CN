@@ -1,5 +1,5 @@
 ---
-title: 用于允许来宾和外部用户 B2B 访问的标识和设备访问策略 - Microsoft 365 企业版|Microsoft Docs
+title: 用于允许来宾和外部用户 B2B 访问的标识和设备访问策略 - Microsoft 365企业|Microsoft Docs
 description: 介绍用于保护来宾和外部用户访问的建议条件访问和相关策略。
 ms.prod: m365-security
 ms.topic: article
@@ -42,7 +42,7 @@ ms.locfileid: "51615491"
 
 下表列出了创建和更新所需的策略。 常见策略链接到常见标识和设备访问策略文章中的关联 [配置说明](identity-access-policies.md) 。
 
-|保护级别|策略|更多信息|
+|保护级别|策略|详细信息|
 |---|---|---|
 |**Baseline**|[始终要求来宾和外部用户使用 MFA](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|创建新策略并配置： <ul><li>对于 **">包括** 的用户和组>，选择"**选择用户和** 组"，然后选择"所有 **来宾和外部用户"。**</li><li>对于 **">** 条件">"登录"，保留所有选项未选中状态，以始终在 MFA (多重) 。</li></ul>|
 ||[当登录风险为中或高 *时需要* MFA](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|修改此策略以排除来宾和外部用户。|
@@ -52,11 +52,11 @@ ms.locfileid: "51615491"
 
 ![用于排除来宾和外部用户的控件的屏幕捕获](../../media/microsoft-365-policies-configurations/identity-access-exclude-guests-ui.png)
 
-## <a name="more-information"></a>更多信息
+## <a name="more-information"></a>详细信息
 
-### <a name="guests-and-external-user-access-with-microsoft-teams"></a>使用 Microsoft Teams 的来宾和外部用户访问
+### <a name="guests-and-external-user-access-with-microsoft-teams"></a>来宾和外部用户访问Microsoft Teams
 
-Microsoft Teams 定义以下用户：
+Microsoft Teams定义以下用户：
 
 - **来宾访问** 使用 Azure AD B2B 帐户，该帐户可添加为团队成员，并且有权访问团队的通信和资源。
 
@@ -64,7 +64,7 @@ Microsoft Teams 定义以下用户：
 
 有关详细信息，请参阅 teams [的来宾和外部用户访问之间的比较](/microsoftteams/communicate-with-users-from-other-organizations#compare-external-and-guest-access)。
 
-有关保护 Teams 的标识和设备访问策略的信息，请参阅用于保护 Teams 聊天、组和文件 [的策略建议](teams-access-policies.md)。
+有关保护用户标识和设备访问策略Teams，请参阅用于保护用户Teams、组和[文件的策略建议](teams-access-policies.md)。
 
 ### <a name="require-mfa-always-for-guest-and-external-users"></a>始终对来宾用户和外部用户要求 MFA
 
@@ -82,7 +82,7 @@ Microsoft Teams 定义以下用户：
 
 ## <a name="next-step"></a>后续步骤
 
-![步骤 4：Microsoft 365 云应用和 Microsoft Cloud App Security 的策略](../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-4.png)
+![步骤 4：云应用Microsoft 365策略Microsoft Cloud App Security](../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-4.png)
 
 为：配置条件访问策略：
 

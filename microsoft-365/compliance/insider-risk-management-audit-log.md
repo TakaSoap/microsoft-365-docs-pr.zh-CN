@@ -1,7 +1,7 @@
 ---
 title: 内部风险管理审核日志
-description: 了解 Microsoft 365 审核日志内部风险管理策略
-keywords: Microsoft 365， 内部风险管理， 风险管理， 合规性
+description: 了解企业内部风险管理审核日志Microsoft 365
+keywords: Microsoft 365、内部风险管理、风险管理、合规性
 localization_priority: Normal
 ms.prod: microsoft-365-enterprise
 ms.topic: article
@@ -39,7 +39,7 @@ ms.locfileid: "50820267"
 若要查看和导出数据，审核日志内部风险管理或内部风险管理审核 *员* 角色组。  若要详细了解内部风险管理角色组，请参阅内部风险管理入门步骤 [1：启用权限](insider-risk-management-configure.md#step-1-enable-permissions-for-insider-risk-management)。
 
 >[!NOTE]
->内部风险管理审核日志与 Microsoft 365 审核日志，它们是独立的审核系统，并捕获有关单独活动的信息。 禁用 Microsoft 365 审核不会影响内部风险管理中的活动审核。
+>内部风险管理审核日志与组织无关，它们Microsoft 365 审核日志独立审核系统并捕获有关单独活动的信息。 禁用Microsoft 365审核不会影响内部风险管理中的活动审核。
 
 ## <a name="view-activity-in-the-insider-risk-audit-log"></a>查看内部风险中心审核日志
 
@@ -65,12 +65,12 @@ ms.locfileid: "50820267"
 该文件包含以下字段的活动信息：
 
 - **由：** 修改项目值的用户的用户名。 此处列出的用户被分配到以下一个或多个角色内部风险管理角色组 *：Insider Risk Management、Insider* Risk *Management Admins、Insider* *Risk Management Analysts、Insider* *Risk Management访问人员*。 [](insider-risk-management-configure.md#step-1-enable-permissions-for-insider-risk-management) 每个角色组具有不同的权限级别来管理内部风险功能。
-- **活动：** 对项目执行的活动。 值为 *Viewed、Deleted、Added、Edited policy、Case、User、Alert 和* *Settings。*
+- **活动：** 对项目执行的活动。 值为 *Viewed、Deleted、Added、Edited policy、Case、User、Alert* 和 *设置。*
 - **添加**：在活动期间添加的对象，如用户、文件类型或域。
 - **警报量**：内部风险管理设置中定义的警报量级别。
 - **金额**：当前选定的策略自定义指示器金额。
 - **资产 ID：** 执行活动的优先级物理资产的资产 ID。
-- **类别：** 修改的项目的类别。 值为 *Policies、Cases、Users、Alerts、Settings 和* *Notice 模板。*
+- **类别：** 修改的项目的类别。 值为 *Policies、Cases、Users、Alerts、设置 和* Notice *模板。*
 - **日期：** 日期和时间，在组织的本地日期和时间中列出。
 - **说明**：用户为要处理的对象（如策略 (优先级用户组）输入的说明) 。
 - **DLP 策略**：已选择 (DLP) 策略，以触发包含在内部风险管理策略中。

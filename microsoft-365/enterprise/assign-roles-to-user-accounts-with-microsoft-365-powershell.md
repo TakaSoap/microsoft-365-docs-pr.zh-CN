@@ -1,5 +1,5 @@
 ---
-title: 使用 PowerShell 向 Microsoft 365 用户帐户分配角色
+title: 使用 PowerShell Microsoft 365用户帐户分配角色
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -19,7 +19,7 @@ ms.custom:
 - Ent_Office_Other
 - seo-marvel-apr2020
 ms.assetid: ede7598c-b5d5-4e3e-a488-195f02f26d93
-description: 本文将了解如何快速轻松地使用适用于 Microsoft 365 的 PowerShell 将管理员角色分配给用户帐户。
+description: 本文将了解如何快速轻松地使用 PowerShell for Microsoft 365向用户帐户分配管理员角色。
 ms.openlocfilehash: 84e785052c970ca15487540c3904eacdd0e9ca28
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -27,28 +27,28 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 03/19/2021
 ms.locfileid: "50905376"
 ---
-# <a name="assign-admin-roles-to-microsoft-365-user-accounts-with-powershell"></a>使用 PowerShell 将管理员角色分配给 Microsoft 365 用户帐户
+# <a name="assign-admin-roles-to-microsoft-365-user-accounts-with-powershell"></a>使用 PowerShell 将Microsoft 365角色分配给用户帐户
 
-*本文适用于 Microsoft 365 企业版和 Office 365 企业版。*
+*此文章适用于 Microsoft 365 企业版和 Office 365 企业版。* 
 
-通过使用适用于 Microsoft 365 的 PowerShell，可以轻松地将角色分配给用户帐户。
+通过使用 PowerShell for Microsoft 365，可以轻松地将角色分配给Microsoft 365。
 
 >[!Note]
->了解如何  [使用](../admin/add-users/assign-admin-roles.md) Microsoft 365 管理中心向用户帐户分配管理员角色。
+>了解如何使用[管理中心向](../admin/add-users/assign-admin-roles.md)用户帐户Microsoft 365角色。
 >
 >有关其他资源的列表，请参阅管理 [用户和组](../admin/add-users/index.yml)。
 >
 
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>使用用于图表模块的 Azure Active Directory PowerShell
 
-首先，使用全局管理员帐户连接到 [Microsoft 365 租户](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)。
+首先，使用全局管理员帐户[连接到你的Microsoft 365租户。](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)
   
 接下来，确定要添加到角色角色中的用户帐户的登录名 (示例：fredsm \@ contoso.com) 。 这也称为 UPN (用户主体) 。
 
-接下来，确定角色的名称。 请参阅 [Azure Active Directory 中的管理员角色权限](/azure/active-directory/users-groups-roles/directory-assign-admin-roles)。
+接下来，确定角色的名称。 请参阅[管理员角色权限Azure Active Directory。](/azure/active-directory/users-groups-roles/directory-assign-admin-roles)
 
 >[!Note]
->请注意本文中的说明。 某些角色名称对于 Azure Active Directory (Azure AD) PowerShell 有所不同。 例如，Microsoft 365 管理中心中的 *SharePoint* 管理员角色是 Azure AD PowerShell 中的 *SharePoint* 服务管理员。
+>请注意本文中的说明。 对于 Azure AD 和 PowerShell，Azure Active Directory (角色) 不同。 例如 *，SharePoint中心* 中的 Microsoft 365 管理员角色SharePoint Azure AD PowerShell中的服务管理员。
 >
 
 接下来，填写登录名和角色名称并运行以下命令：
@@ -65,7 +65,7 @@ $role = Get-AzureADDirectoryRole | Where {$_.displayName -eq $roleName}
 Add-AzureADDirectoryRoleMember -ObjectId $role.ObjectId -RefObjectId (Get-AzureADUser | Where {$_.UserPrincipalName -eq $userName}).ObjectID
 ```
 
-下面是一个完成的命令集示例，该命令集将 SharePoint 服务管理员角色分配给 *belindan \@ contoso.com* 帐户：
+下面是一个完成的命令集示例，该命令集将 SharePoint 服务管理员角色分配给 *belindan \@* contoso.com 帐户：
   
 ```powershell
 $userName="belindan@contoso.com"
@@ -88,7 +88,7 @@ Get-AzureADDirectoryRole | Where { $_.DisplayName -eq $roleName } | Get-AzureADD
 
 ## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>使用用于 Windows PowerShell 的 Microsoft Azure Active Directory 模块
 
-首先，使用全局管理员帐户连接到 [Microsoft 365 租户](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)。
+首先，使用全局管理员帐户[连接到你的Microsoft 365租户。](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)
   
 ### <a name="for-a-single-role-change"></a>对于单个角色更改
 
@@ -134,7 +134,7 @@ $roleName="<The admin role name you want to assign to the account>"
 Add-MsolRoleMember -RoleMemberEmailAddress (Get-MsolUser -All | Where DisplayName -eq $dispName).UserPrincipalName -RoleName $roleName
 ```
 
-将命令粘贴到记事本中。 对于 *$dispName* 和 *$roleName，* 请将说明文本替换为其值。 删除 \< and > 字符，但保留引号。 将修改的行粘贴到 Microsoft Azure Active Directory 模块中，Windows PowerShell运行这些行。 或者，您可以使用 ISE Windows PowerShell集成脚本 (脚本) 。
+将命令粘贴到记事本。 对于 *$dispName* 和 *$roleName，* 请将说明文本替换为其值。 删除 \< and > 字符，但保留引号。 将修改的行粘贴到Microsoft Azure Active Directory模块中Windows PowerShell以运行这些行。 或者，您可以使用 ISE Windows PowerShell集成脚本 (脚本) 。
   
 下面是已完成的命令集的示例：
   
@@ -180,7 +180,7 @@ $roleName="<The role name you want to assign to the account>"
 Add-MsolRoleMember -RoleMemberEmailAddress $upnName -RoleName $roleName
 ```
 
-复制命令并将其粘贴到记事本中。 对于 **$upnName** 和 **$roleName** 变量。 将说明文本替换为其值。 删除 \< and > 字符，但保留引号。 将修改的行粘贴到 Microsoft Azure Active Directory 模块Windows PowerShell窗口运行它们。 或者，可以使用 ISE Windows PowerShell ISE。
+复制命令并将其粘贴到记事本。 对于 **$upnName** 和 **$roleName** 变量。 将说明文本替换为其值。 删除 \< and > 字符，但保留引号。 将修改过Microsoft Azure Active Directory粘贴到 Windows PowerShell 模块中，以运行这些行。 或者，可以使用 ISE Windows PowerShell ISE。
   
 下面是已完成的命令集的示例：
   
@@ -202,7 +202,7 @@ Add-MsolRoleMember -RoleMemberEmailAddress $upnName -RoleName $roleName
   Get-MsolRole | Sort Name | Select Name,Description
   ```
 
-接下来，使用 CSV (或) 名称字段的 CSV 显示名称创建一个逗号分隔值。 可以在 Microsoft Excel 中轻松完成此操作。
+接下来，使用 CSV (或) 名称字段的 CSV 显示名称创建一个逗号分隔值。 在管理中可以轻松地Microsoft Excel。
 
 下面是显示名称的示例：
   

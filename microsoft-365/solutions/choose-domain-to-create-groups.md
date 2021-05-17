@@ -1,5 +1,5 @@
 ---
-title: 选择创建 Microsoft 365 组时使用的域
+title: 选择在创建组时Microsoft 365域
 ms.reviewer: arvaradh
 f1.keywords: NOCSH
 ms.author: mikeplum
@@ -16,7 +16,7 @@ ms.collection:
 search.appverid:
 - MET150
 ms.assetid: 7cf5655d-e523-4bc3-a93b-3ccebf44a01a
-description: 了解如何通过使用 PowerShell 配置电子邮件地址策略，选择创建 Microsoft 365 组时将使用的域。
+description: 了解如何使用 PowerShell 配置电子邮件地址策略，选择Microsoft 365组时使用的域。
 ms.openlocfilehash: 4908d5bd58ca6d0fbb50151983ddb459f0732284
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -24,13 +24,13 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 03/19/2021
 ms.locfileid: "50904680"
 ---
-# <a name="choose-the-domain-to-use-when-creating-microsoft-365-groups"></a>选择创建 Microsoft 365 组时使用的域
+# <a name="choose-the-domain-to-use-when-creating-microsoft-365-groups"></a>选择在创建组时Microsoft 365域
 
-一些组织使用单独的电子邮件域，以区分不同的业务部分。 可以指定在用户创建 Microsoft 365 组时应该使用哪个域。
+一些组织使用单独的电子邮件域，以区分不同的业务部分。 可以指定在用户创建组时应该Microsoft 365域。
   
 如果你的组织需要用户在企业的默认接受域外的其他域中创建其组，则可以通过使用 PowerShell 为 EAP (电子邮件地址策略) 允许此操作。
 
-在运行 PowerShell cmdlet 之前，请下载并安装一个模块，该模块可让你与组织交谈。 请查看使用[远程 PowerShell 连接到 Exchange Online。](/powershell/exchange/connect-to-exchange-online-powershell)
+在运行 PowerShell cmdlet 之前，请下载并安装一个模块，该模块可让你与组织交谈。 请查看连接[powerShell Exchange Online进行远程访问](/powershell/exchange/connect-to-exchange-online-powershell)。
 
 ## <a name="example-scenarios"></a>示例场景
 
@@ -45,11 +45,11 @@ ms.locfileid: "50904680"
 以下两种方案说明了如何完成此操作。
 
 > [!NOTE]
-> 当你拥有多个 EAP 时，将按优先级顺序评估它们。 值 1 表示最高优先级。 EAP 匹配后，不会进一步计算 EAP，并且按匹配的 EAP 在组上标记的地址。 > 如果没有符合指定条件的 EAP，则组将设置在组织的默认接受域中。 请参阅在 [Exchange Online 中管理](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) 接受域，详细了解如何添加接受域。
+> 当你拥有多个 EAP 时，将按优先级顺序评估它们。 值 1 表示最高优先级。 EAP 匹配后，不会进一步计算 EAP，并且按匹配的 EAP 在组上标记的地址。 > 如果没有符合指定条件的 EAP，则组将设置在组织的默认接受域中。 请参阅管理[域中的接受Exchange Online，](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)详细了解如何添加接受域。
   
 ### <a name="scenario-1"></a>方案 1
 
-以下示例演示如何在组织域中预配组织的所有 Microsoft 365 groups.contoso.com 组。
+以下示例演示如何在 groups.contoso.com 域中设置组织Microsoft 365组。
   
 ```
 New-EmailAddressPolicy -Name Groups -IncludeUnifiedGroupRecipients -EnabledEmailAddressTemplates "SMTP:@groups.contoso.com" -Priority 1
@@ -57,7 +57,7 @@ New-EmailAddressPolicy -Name Groups -IncludeUnifiedGroupRecipients -EnabledEmail
 
 ### <a name="scenario-2"></a>方案 2
 
-假设你想要控制创建 Microsoft 365 组的子域。 你想要：
+假设你想要控制在哪些子域中Microsoft 365创建组。 你想要：
   
 - 学生创建的组 (部门设置为"学生") 域中students.groups.contoso.com组。 请使用此命令：
     
@@ -100,7 +100,7 @@ Remove-EmailAddressPolicy -Identity StudentsGroups
   
 ## <a name="hybrid-requirements"></a>混合要求
 
-如果你的组织在混合方案中配置，请查看使用本地 Exchange 混合配置 [Microsoft 365](/exchange/hybrid-deployment/set-up-microsoft-365-groups) 组，以确保你的组织满足创建 Microsoft 365 组的要求。 
+如果您的组织在混合方案中配置，请查看使用本地 Exchange 混合配置[Microsoft 365](/exchange/hybrid-deployment/set-up-microsoft-365-groups)组，以确保组织满足创建 Microsoft 365 组的要求。 
   
 ## <a name="additional-info-about-using-email-address-policies-groups"></a>有关使用电子邮件地址策略组的其他信息：
 
@@ -124,4 +124,4 @@ Remove-EmailAddressPolicy -Identity StudentsGroups
 
 [创建协作管理计划](collaboration-governance-first.md)
 
-[在管理中心创建 Microsoft 365 组](../admin/create-groups/create-groups.md)
+[在管理Microsoft 365创建一个组](../admin/create-groups/create-groups.md)

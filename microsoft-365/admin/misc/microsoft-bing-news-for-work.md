@@ -25,7 +25,7 @@ ms.locfileid: "51649958"
 
 ## <a name="what-is-it"></a>这是什么？
 
-利用 Microsoft 必应搜索引擎功能，行业更新是来自 Web 的最重要的工作新闻的集合，仅针对你选择。
+利用 Microsoft 的搜索引擎必应，行业更新是来自 Web 的最重要的工作新闻的集合，仅针对你选择。
 
 ## <a name="how-does-it-work"></a>它的工作原理
 
@@ -33,7 +33,7 @@ ms.locfileid: "51649958"
 
 ## <a name="how-do-i-customize-my-industry-updates-email"></a>如何自定义行业更新电子邮件？
 
-若要自定义体验，请访问设置页面，以遵循对你有重要影响的主题和兴趣。 访问你的个人设置页面，方法是在 [必应](https://www.bing.com/news/professional?pn=setting&mkt=en-us&form=BAWLOG&frb=1) 、Edge 和行业更新新闻稿上为自定义内容添加书签，或单击行业更新电子邮件中的设置按钮。
+若要自定义体验，请访问设置页面，以遵循对你有重要影响的主题和兴趣。 访问你的个人设置页面，方法是为自定义[必应、Edge 和 Industry Updates 新闻稿](https://www.bing.com/news/professional?pn=setting&mkt=en-us&form=BAWLOG&frb=1)上的内容添加书签，或单击行业更新电子邮件中的设置按钮。
 
 [立即](https://www.bing.com/news/professional?pn=setting&mkt=en-us&asnl=1&form=BAWLOG&frb=1) 订阅并获取发送到收件箱的行业更新电子邮件！
 

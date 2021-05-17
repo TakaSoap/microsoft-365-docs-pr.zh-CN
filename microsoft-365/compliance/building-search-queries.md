@@ -1,5 +1,5 @@
 ---
-title: 在高级电子数据展示中生成搜索查询
+title: 在查询中生成Advanced eDiscovery
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -15,7 +15,7 @@ search.appverid:
 - MOE150
 - MET150
 ms.custom: seo-marvel-mar2020
-description: 使用 Microsoft 365 中的高级电子数据展示搜索数据时，使用关键字和条件缩小搜索范围。
+description: 在搜索数据时，使用关键字和条件缩小搜索范围，Advanced eDiscovery Microsoft 365。
 ms.openlocfilehash: e0df319257776d3995a4b8e37781d7b5dad54d82
 ms.sourcegitcommit: 8f1721de52dbe3a12c11a0fa5ed0ef5972ca8196
 ms.translationtype: MT
@@ -23,19 +23,19 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 03/17/2021
 ms.locfileid: "50838476"
 ---
-# <a name="build-search-queries-for-collections-in-advanced-ediscovery"></a>在高级电子数据展示中生成集合的搜索查询
+# <a name="build-search-queries-for-collections-in-advanced-ediscovery"></a>为集合生成搜索查询Advanced eDiscovery
 
-在高级电子数据展示案例中创建集合时[](collections-overview.md)配置搜索查询时，可以使用关键字查找特定内容和条件，以缩小搜索范围以返回与法律调查最相关的项目。
+在 Advanced eDiscovery 案例创建集合时配置[](collections-overview.md)搜索查询时，可以使用关键字查找特定内容和条件，以缩小搜索范围以返回与法律调查最相关的项目。
 
 ![使用关键字和条件缩小搜索结果范围](../media/SearchQueryBox.png)
 
 ## <a name="keyword-searches"></a>关键字搜索
 
-在搜索查询的 **"关键字"** 框中键入关键字查询。 您可以指定关键字、电子邮件属性（如发送日期和接收日期）或文档属性（如文件名或上次更改文档的日期）。 可以使用采用布尔运算符的更复杂查询，例如 **AND**、**OR**、**NOT** 和 **NEAR**。 还可以搜索敏感信息 (例如 SharePoint 和 OneDrive) 文档中的社会保险号 (不在电子邮件) 中，或者搜索在外部共享的文档。 如果将" **关键字"框** 留空，则位于指定内容位置的所有内容都位于搜索结果中。
+在搜索查询的 **"关键字"** 框中键入关键字查询。 您可以指定关键字、电子邮件属性（如发送日期和接收日期）或文档属性（如文件名或上次更改文档的日期）。 可以使用采用布尔运算符的更复杂查询，例如 **AND**、**OR**、**NOT** 和 **NEAR**。 您还可以搜索敏感信息 (例如 SharePoint 文档中的社会保险号) 和 OneDrive (不在电子邮件) 中，或者搜索在外部共享的文档。 如果将 **关键字** 框留空，则指定内容位置中的所有内容都将位于搜索结果中。
 
 ## <a name="keyword-list"></a>关键字列表
 
-或者，也可以选中"显示关键字 **列表** "复选框，并在每行中键入关键字或关键字短语。 每行中的关键字由逻辑运算符 (该逻辑运算符在搜索查询语法) 中表示为 *c：s，* 其功能类似于所创建的搜索查询中的 **OR** 运算符。 这意味着任何行中包含任何关键字的项目均在搜索结果中。 您可以在高级电子数据展示搜索查询的关键字列表中最多添加 180 行。
+或者，也可以选中"显示关键字 **列表** "复选框，并在每行中键入关键字或关键字短语。 每行中的关键字由逻辑运算符 (该逻辑运算符在搜索查询语法) 中表示为 *c：s，* 其功能类似于所创建的搜索查询中的 **OR** 运算符。 这意味着任何行中包含任何关键字的项目均在搜索结果中。 在搜索查询中，关键字列表中最多可以添加 180 Advanced eDiscovery行。
 
 ![使用关键字列表获取查询中每个关键字的统计信息](../media/KeywordListSearch.png)
 

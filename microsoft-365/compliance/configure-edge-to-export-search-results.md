@@ -1,5 +1,5 @@
 ---
-title: 在 Microsoft Edge 中使用电子数据展示导出工具
+title: 使用电子数据展示导出工具Microsoft Edge
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -12,7 +12,7 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-description: 您必须启用 ClickOnce 支持，才能使用 Microsoft Edge 的最新版本从 "安全与合规中心" 中的内容搜索和电子数据展示下载搜索结果。
+description: 必须启用ClickOnce支持，才能使用最新版本的 Microsoft Edge 从安全与合规中心的内容搜索和电子数据展示下载搜索结果。
 ms.openlocfilehash: 60f42d2884c56aaff40bc0a6a979e99698a3cd2e
 ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
@@ -20,44 +20,44 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 09/12/2020
 ms.locfileid: "47546816"
 ---
-# <a name="use-the-ediscovery-export-tool-in-microsoft-edge"></a>在 Microsoft Edge 中使用电子数据展示导出工具
+# <a name="use-the-ediscovery-export-tool-in-microsoft-edge"></a>使用电子数据展示导出工具Microsoft Edge
 
-由于最近对 Microsoft Edge 版本所做的更改，ClickOnce 支持在默认情况下不再启用。 若要继续使用电子数据展示导出工具下载内容搜索或电子数据展示搜索结果，您需要使用 [Microsoft Internet Explorer](https://support.microsoft.com/help/17621/internet-explorer-downloads) 或在最新版本的 microsoft Edge 中启用 ClickOnce 支持。
+由于最近对最新版本的 Microsoft Edge，ClickOnce不再启用支持。 若要继续使用电子数据展示导出工具下载内容搜索或电子数据展示搜索结果，您需要使用[Microsoft Internet Explorer](https://support.microsoft.com/help/17621/internet-explorer-downloads)或在最新版本的 Microsoft Edge 中启用 ClickOnce 支持。
 
-## <a name="enable-clickonce-support-in-microsoft-edge"></a>在 Microsoft Edge 中启用 ClickOnce 支持
+## <a name="enable-clickonce-support-in-microsoft-edge"></a>在ClickOnce中启用Microsoft Edge
 
-1. 在 Microsoft Edge 中，转到 "edge://flags/"， **然后单击 "#edge"**。
+1. 在Microsoft Edge中，转到 **"edge://flags/#edge-click-once"。**
 
-2. 如果在下拉列表中将现有值设置为 " **默认** " 或 " **禁用** "，请将其更改为 " **启用**"。
+2. 如果下拉列表中现有值设置为 **"默认**"或"已禁用"，请更改为"**已启用"。**
 
-   ![从下拉列表中选择 "启用"](../media/ClickOnceimage1.png)
+   ![从下拉列表中选择已启用](../media/ClickOnceimage1.png)
 
-3. 向下滚动到浏览器窗口的底部，然后单击 " **重新启动** " 以重新启动边缘。
+3. 向下滚动到浏览器窗口底部，然后单击重启 **以** 重新启动 Edge。
 
-   ![单击 "重新启动"](../media/ClickOnceimage2.png)
+   ![单击"重新启动"](../media/ClickOnceimage2.png)
 
-**注意：** 组织可以使用组策略禁用 ClickOnce 支持。 若要检查是否存在 ClickOnce 支持的组织策略，请转到 **edge://policy**。 下面的屏幕截图显示在整个组织中启用 ClickOnce。 如果将此策略值设置为 **false**，则需要与组织中的管理员联系。
+**注意：** 组织可以使用组策略禁用ClickOnce支持。 若要检查是否有组织策略支持ClickOnce，请转到 **"edge://policy"。** 以下屏幕截图显示ClickOnce整个组织中启用此策略。 如果此策略值设置为 **false，** 你将需要联系你组织的管理员。
 
 ![边缘组织策略列表](../media/ClickOnceimage3.png)
 
 ## <a name="install-and-run-the-ediscovery-export-tool"></a>安装和运行电子数据展示导出工具
 
-1. 单击 "在内容搜索中导出" 的飞出页面或电子数据展示事例中的 " **下载结果** "。
+1. 单击 **内容搜索** 或电子数据展示案例中导出的飞出页面上的"下载结果"。
 
-   ![单击弹出页面上的 "下载结果" 以下载搜索结果](../media/ClickOnceExport1.png)
+   ![单击飞出页面上的"下载结果"以下载搜索结果](../media/ClickOnceExport1.png)
 
-2. 系统将提示您确认启动该工具，请单击 " **打开**"。
+2. 系统将提示你确认启动该工具，单击"打开 **"。**
 
-   ![单击 "打开" 以启动电子数据展示导出工具](../media/ClickOnceimage4.png)
+   ![单击"打开"以启动电子数据展示导出工具](../media/ClickOnceimage4.png)
 
-   如果未安装电子数据展示导出工具，则系统会提示您提供安全警告， 
+   如果未安装电子数据展示导出工具，系统将提示你出现安全警告， 
 
-   ![单击 "安装" 以安装电子数据展示导出工具](../media/ClickOnceimage5.png)
+   ![单击安装以安装电子数据展示导出工具](../media/ClickOnceimage5.png)
 
-3. 单击“**安装**”。 安装完成后，"导出" 工具将自动启动。
+3. 单击“**安装**”。 安装后，导出工具将自动启动。
 
 有关详细信息，请参阅下列主题：
 
 - [导出内容搜索结果](export-search-results.md)
 
-- [如何在 Microsoft Edge 中启用实验标志](https://microsoftedgesupport.microsoft.com/hc/articles/360034075294-How-to-enable-experiment-flags-in-Microsoft-Edge-Insider-channels)
+- [如何启用实验标记Microsoft Edge](https://microsoftedgesupport.microsoft.com/hc/articles/360034075294-How-to-enable-experiment-flags-in-Microsoft-Edge-Insider-channels)

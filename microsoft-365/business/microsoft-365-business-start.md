@@ -65,7 +65,7 @@ Microsoft 365企业版最多需要 300 个许可证。 如果需要更多许可�
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FYSM] 
 
-如果你觉得这段视频有用，请查看[适用于小型企业和 Microsoft 365 新手的完整培训系列](../business-video/index.yml)。
+如果你发现此视频有帮助，请查看[适用于小型企业和 Microsoft 365 新用户的完整培训系列](../business-video/index.yml)。
 
   
 ### <a name="1-set-up-microsoft-365-for-business-admin"></a>1：设置Microsoft 365商业 (管理员) 

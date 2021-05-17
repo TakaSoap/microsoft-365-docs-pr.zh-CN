@@ -26,7 +26,7 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 04/06/2021
 ms.locfileid: "51592068"
 ---
-# <a name="how-to-opt-in-for-new-migration-from-microsoft-cloud-germany-microsoft-cloud-deutschland-to-office-365-services-in-the-new-german-datacenter-regions"></a>如何选择加入从德国 Microsoft 云到德国 microsoft 云 (到新的德国数据中心) Office 365 服务的新迁移
+# <a name="how-to-opt-in-for-new-migration-from-microsoft-cloud-germany-microsoft-cloud-deutschland-to-office-365-services-in-the-new-german-datacenter-regions"></a>如何选择加入从德国 Microsoft 云到德国 microsoft 云 (到德国) Office 365数据中心区域的新迁移服务
 
 > [!NOTE]
 > 本文仅适用于德国 Microsoft 云 (德国 microsoft 云) 客户。
@@ -34,13 +34,13 @@ ms.locfileid: "51592068"
 
 ## <a name="how-to-request-migration"></a>如何请求迁移
 
-如果你是在德国 Microsoft 云 (Microsoft 云) 中预配服务的合格客户，并且你已作为租户 (全局) 管理员登录，则 Microsoft 365 管理中心中的页面允许你选择加入迁移。
+如果你是在德国 Microsoft 云 (Microsoft 云) 中预配了服务的合格客户，并且你已作为租户 (全局) 管理员登录，Microsoft 365 管理中心中的页面允许你选择加入迁移。
 
-若要访问页面 **，请在左侧** 导航窗格中展开"设置"，然后单击"**组织配置文件"。**
+若要访问该页面，请在 **设置** 导航窗格中展开"组织配置文件"，然后单击"**组织配置文件"。**
 
 在“**组织档案**”页面上，向下滚动到“**从德国 Microsoft 云迁移到新的德国数据中心区域内的 Office 365 服务**”部分。
 
-如果要将德国 Microsoft 云服务 (德国) 迁移到新的德国数据中心区域的 Office 365 服务，请单击 **"选择加入"。**
+如果要将服务从德国 Microsoft 云 (德国) 迁移到新的德国数据中心Office 365服务，请单击"**选择加入"。**
  
 ![“选择加入”简介](../media/ms-cloud-germany-migration-opt-in/tenant-migration.png)
 
@@ -48,7 +48,7 @@ ms.locfileid: "51592068"
  
 ![接受“选择加入”](../media/ms-cloud-germany-migration-opt-in/tenant-migration-new-regions.png)
 
-代表租户选择加入后，所有管理员都将看到"从德国 Microsoft 云 (Microsoft 云) 迁移到新的德国数据中心区域 **中的 Office 365** 服务"部分（包括选择加入日期）中的确认信息。 管理员还将在 Microsoft 365 管理中心的消息中心收到确认。 
+代表租户选择加入后，所有管理员都将看到"从 **德国 Microsoft 云** 迁移 (Microsoft 云) 至德国 Office 365 服务"部分中确认，包括选择加入日期。 管理员还将在管理中心的消息中心收到Microsoft 365确认。 
  
 ![确认“选择加入”](../media/ms-cloud-germany-migration-opt-in/tenant-migration2.png)
 
@@ -62,17 +62,17 @@ ms.locfileid: "51592068"
 
 客户租户管理员将收到电子邮件和消息中心通知，提示 Microsoft 协助的迁移将自动选择加入迁移。 此通知将在自动选择加入前至少 30 天发送。 迁移选择加入后，所有通信和状态更新将发送给消息中心中的客户租户管理员。
 
-建议客户和合作伙伴租户管理员选择在 Microsoft 365 管理中心中加入迁移，以便迁移过程可以尽快开始。
+建议客户和合作伙伴租户管理员选择在 Microsoft 365 管理中心进行迁移，以便迁移过程可以尽快开始。
 
 ## <a name="next-step"></a>后续步骤
 
 [了解迁移期间客户体验](ms-cloud-germany-transition-experience.md)
 
-## <a name="more-information"></a>更多信息
+## <a name="more-information"></a>详细信息
 
 入门：
 
-- [从德国 Microsoft 云迁移到新的德国数据中心区域的 Office 365 服务](ms-cloud-germany-transition.md)
+- [从德国 Microsoft 云迁移到Office 365新的德国数据中心区域提供服务](ms-cloud-germany-transition.md)
 - [德国 Microsoft 云迁移助手](https://aka.ms/germanymigrateassist)
 - [迁移期间客户体验](ms-cloud-germany-transition-experience.md)
 

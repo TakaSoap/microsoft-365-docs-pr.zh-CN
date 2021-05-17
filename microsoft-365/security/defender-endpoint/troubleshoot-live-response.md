@@ -62,12 +62,12 @@ ms.locfileid: "51687407"
 5. 对复制的文件运行要执行的操作。
 
 ## <a name="slow-live-response-sessions-or-delays-during-initial-connections"></a>初始连接期间实时响应会话慢或延迟
-实时响应利用 Defender for Endpoint 传感器注册和 Windows 中的 WNS 服务。 如果实时响应的连接问题，请确认以下详细信息：
+实时响应利用 Defender for Endpoint 传感器注册和 WNS 服务在 Windows。 如果实时响应的连接问题，请确认以下详细信息：
 1. `notify.windows.com` 不会在你的环境中被阻止。 有关详细信息，请参阅配置 [设备代理和 Internet 连接设置](configure-proxy-internet.md#enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server)。
-2. 未 (WpnService) Windows 推送通知系统服务。
+2. 未 (Windows WpnService) 推送通知系统服务。
 
 请参阅以下文章，以完全了解 WpnService 服务行为和要求：
-- [Windows 推送通知服务 (WNS) 概述](https://docs.microsoft.com/windows/uwp/design/shell/tiles-and-notifications/windows-push-notification-services--wns--overview)
-- [支持 WNS 流量的企业防火墙和代理配置](https://docs.microsoft.com/windows/uwp/design/shell/tiles-and-notifications/firewall-allowlist-config)
+- [Windows推送通知服务 (WNS) 概述](https://docs.microsoft.com/windows/uwp/design/shell/tiles-and-notifications/windows-push-notification-services--wns--overview)
+- [Enterprise支持 WNS 流量的防火墙和代理配置](https://docs.microsoft.com/windows/uwp/design/shell/tiles-and-notifications/firewall-allowlist-config)
 - [Microsoft 推送通知服务 (MPNS) 公共 IP 范围](https://www.microsoft.com/en-us/download/details.aspx?id=44535)
 

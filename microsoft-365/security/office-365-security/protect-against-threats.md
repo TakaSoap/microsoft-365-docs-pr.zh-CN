@@ -59,9 +59,9 @@ ms.locfileid: "51687083"
 |防钓鱼保护|[EOP](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)|
 |反垃圾邮件保护|[EOP](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)|
 |零时差自动清除 (电子邮件)|[EOP](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)|
-|保护电子邮件和 Office 文档中的恶意 URL 和文件 (安全链接和安全附件) |[Microsoft Defender for Office 365](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)|
-|打开 SharePoint、OneDrive 和 Microsoft Teams 工作负载的安全附件|[Microsoft Defender for Office 365](turn-on-mdo-for-spo-odb-and-teams.md)|
-|高级反钓鱼保护|[Microsoft Defender for Office 365](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)|
+|保护电子邮件和附件文档中的恶意 URL 和Office (保险箱链接保险箱附件) |[Microsoft Defender for Office 365](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)|
+|打开保险箱、SharePoint OneDrive和Microsoft Teams附件|[Microsoft Defender for Office 365](turn-on-mdo-for-spo-odb-and-teams.md)|
+|高级反钓鱼防护|[Microsoft Defender for Office 365](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)|
 
 ### <a name="roles-and-permissions"></a>角色和权限
 
@@ -212,7 +212,7 @@ ms.locfileid: "51687083"
 
 若要了解详细信息，请参阅“[设置安全链接策略](set-up-safe-links-policies.md)”。
 
-## <a name="part-5---verify-safe-attachments-for-sharepoint-onedrive-and-microsoft-teams-is-turned-on"></a>第 5 部分 - 验证 SharePoint、OneDrive 和 Microsoft Teams 的安全附件是否打开
+## <a name="part-5---verify-safe-attachments-for-sharepoint-onedrive-and-microsoft-teams-is-turned-on"></a>第 5 部分 - 保险箱是否SharePoint、OneDrive和Microsoft Teams附件
 
 SharePoint、OneDrive 和 Teams 这样的工作负载是为协作而构建的。 使用 Defender for Office 365 帮助组织和检测在团队站点和文件库中识别为恶意的文件。 你可以在[这里](mdo-for-spo-odb-and-teams.md)阅读有关详细信息。
 
@@ -221,7 +221,7 @@ SharePoint、OneDrive 和 Teams 这样的工作负载是为协作而构建的。
 
 1. 在 [安全与合规中心](https://protection.office.com)中， 选择“**威胁管理**” \> “**策略**” \> “**ATP 安全附件**”，然后单击“**全局设置**”。
 
-2. 验证 **"打开适用于 SharePoint、OneDrive** 和 Microsoft Teams 的 Office 365 Defender"开关是否位于右侧： ![ 打开切换， ](../../media/scc-toggle-on.png) 然后单击"保存 **"。**
+2. 验证打开 **Defender for Office 365 for SharePoint、OneDrive** 和 Microsoft Teams 开关是否位于右侧：打开切换，然后单击 ![ ](../../media/scc-toggle-on.png) 保存。 
 
 3. 检查（并合适地编辑）组织的[安全附件策略](set-up-safe-attachments-policies.md)和[安全链接策略](set-up-safe-links-policies.md)。
 

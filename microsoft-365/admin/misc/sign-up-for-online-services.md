@@ -19,7 +19,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 4f374dc7-b96c-49c7-80ed-554716ba0138
-description: '了解如何使用工作或学校电子邮件注册 Microsoft online services，而不涉及其 IT 部门。 '
+description: '了解如何使用工作或学校电子邮件注册 Microsoft 在线服务，而无需 IT 部门参与。 '
 ms.openlocfilehash: ad46d698398da32d88d0c1617499b326e8fcb163
 ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
@@ -27,7 +27,7 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 10/21/2020
 ms.locfileid: "48644863"
 ---
-# <a name="your-domain-may-be-in-use-if-someone-else-signed-up-with-it"></a>如果其他人对你的域进行了注册，则可能会使用你的域
+# <a name="your-domain-may-be-in-use-if-someone-else-signed-up-with-it"></a>如果其他人已注册你的域，则你的域可能会使用
 
 具有工作或学校电子邮件的用户可以[注册某些 Microsoft 在线服务](self-service-sign-up.md)，无需 IT 部门参与。 例如，Office 365、Power BI 和 Rights Management Services 等服务。 完成自助注册后（通过提供其工作或学校电子邮件地址进行此操作），他们有权访问服务中包括的功能，但是不能管理服务（添加用户、添加许可证、管理域等）。 
   

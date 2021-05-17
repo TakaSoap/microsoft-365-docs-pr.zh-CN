@@ -1,6 +1,6 @@
 ---
 title: Microsoft Defender 安全中心概述
-description: 了解 Microsoft Defender 安全中心上的功能，包括警报如何工作，以及如何调查可能的泄露和攻击的建议。
+description: 了解警报功能Microsoft Defender 安全中心，包括警报如何工作，以及如何调查可能的泄露和攻击的建议。
 keywords: 仪表板， 警报队列， 管理警报， 调查， 调查警报， 调查设备， 提交文件， 深度分析， 高， 中， 低， 严重性， ioc， ioa
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -35,7 +35,7 @@ ms.locfileid: "51581090"
 
 >想要体验 Microsoft Defender for Endpoint？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-usewdatp-abovefoldlink)
 
-Microsoft Defender 安全中心是一个门户，你可以在这里访问 Microsoft Defender for Endpoint 功能。
+Microsoft Defender 安全中心是一个门户，可在其中访问 Microsoft Defender for Endpoint 功能。
 
 使用 **安全操作** 仪表板可深入了解网络中设备和用户的各种警报。
 
@@ -46,7 +46,7 @@ Microsoft Defender 安全中心是一个门户，你可以在这里访问 Micros
 ## <a name="microsoft-defender-for-endpoint-interactive-guide"></a>Microsoft Defender for Endpoint 交互式指南
 在此交互式指南中，你将了解如何使用 Microsoft Defender for Endpoint 调查对组织的威胁。 你将看到 Microsoft Defender for Endpoint 如何帮助你识别可疑活动、调查组织面临的风险和修正威胁。
 
-[查看交互式指南](https://aka.ms/MSDE-IG)
+[请查看交互指南](https://aka.ms/MSDE-IG)
 
 ### <a name="in-this-section"></a>本节内容
 

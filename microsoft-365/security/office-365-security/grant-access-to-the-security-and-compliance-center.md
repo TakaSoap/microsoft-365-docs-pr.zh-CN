@@ -16,7 +16,7 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 2cfce2c8-20c5-47f9-afc4-24b059c1bd76
-description: 用户需要在 Microsoft 365 安全与合规中心&权限，然后才能管理其任何安全或合规性功能。
+description: 用户需要在安全与合规Microsoft 365中心&权限，然后才能管理其任何安全或合规性功能。
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
@@ -44,9 +44,9 @@ ms.locfileid: "51599919"
 
 - 你需要是全局管理员或安全与合规中心中 OrganizationManagement 角色组&才能完成本文中的步骤。
 
-- 安全与合规中心&组的名称可能类似于 Exchange Online 中的角色组，但它们不同。
+- 安全与合规&的角色组的名称可能与 Exchange Online 中的角色组的名称相似，但名称不同。
 
-- 角色组成员身份不会在 Exchange Online 和安全与合规中心&共享。
+- 角色组成员身份不会在安全与Exchange Online中心&共享。
 
 - 委派访问权限 (DAP) AOBO (AOBO) 权限无法访问安全与合规&管理。
 
@@ -82,7 +82,7 @@ ms.locfileid: "51599919"
 
 有关语法和参数的详细信息，请参阅 [Add-RoleGroupMember](/powershell/module/exchange/add-rolegroupmember)
 
-### <a name="how-do-you-know-this-worked"></a>如何判断是否生效？
+### <a name="how-do-you-know-this-worked"></a>如何知道操作成功？
 
 若要验证是否成功授予了对安全与合规&访问权，请执行以下步骤之一：
 

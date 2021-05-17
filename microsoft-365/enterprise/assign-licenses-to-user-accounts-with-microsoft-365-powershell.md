@@ -1,5 +1,5 @@
 ---
-title: 使用 PowerShell 将 Microsoft 365 许可证分配给用户帐户
+title: 使用 PowerShell Microsoft 365用户帐户分配许可证
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -20,7 +20,7 @@ ms.custom:
 ms.assetid: ba235f4f-e640-4360-81ea-04507a3a70be
 search.appverid:
 - MET150
-description: 本文将了解如何使用 PowerShell 将 Microsoft 365 许可证分配给未授权的用户。
+description: 本文将了解如何使用 PowerShell 向未授权Microsoft 365许可证。
 ms.openlocfilehash: 5fb5f9095d4f732b0bf23f26eebb22eff608b48c
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -28,13 +28,13 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 03/19/2021
 ms.locfileid: "50905460"
 ---
-# <a name="assign-microsoft-365-licenses-to-user-accounts-with-powershell"></a>使用 PowerShell 将 Microsoft 365 许可证分配给用户帐户
+# <a name="assign-microsoft-365-licenses-to-user-accounts-with-powershell"></a>使用 PowerShell Microsoft 365用户帐户分配许可证
 
-*本文适用于 Microsoft 365 企业版和 Office 365 企业版。*
+*此文章适用于 Microsoft 365 企业版和 Office 365 企业版。* 
 
-在从许可计划为其帐户分配许可证之前，用户不能使用任何 Microsoft 365 服务。 可以使用 PowerShell 将许可证快速分配给未授权的帐户。 
+在从许可计划为其帐户Microsoft 365许可证之前，用户才能使用任何服务。 可以使用 PowerShell 将许可证快速分配给未授权的帐户。 
 
-必须先为用户帐户分配位置。 指定位置是在 [Microsoft 365](../admin/add-users/add-users.md)管理中心中创建新用户帐户的必需部分。 
+必须先为用户帐户分配位置。 指定位置是在管理中心中创建新用户帐户的必需Microsoft 365[部分](../admin/add-users/add-users.md)。 
 
 默认情况下，从本地 Active Directory 域服务同步的帐户没有指定位置。 你可以从以下位置为这些帐户配置位置：
 
@@ -43,12 +43,12 @@ ms.locfileid: "50905460"
  - Azure [门户 (](/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal) Active **Directory** 用户>  >  配置文件>  >  **联系人信息**"  >  **的** 用户帐户) 。
 
 >[!Note]
->[了解如何使用](../admin/manage/assign-licenses-to-users.md) Microsoft 365 管理中心向用户帐户分配许可证。 有关其他资源的列表，请参阅管理 [用户和组](../admin/add-users/index.yml)。
+>[了解如何使用管理中心向用户帐户](../admin/manage/assign-licenses-to-users.md)Microsoft 365许可证。 有关其他资源的列表，请参阅管理 [用户和组](../admin/add-users/index.yml)。
 >
 
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>使用用于图表模块的 Azure Active Directory PowerShell
 
-首先， [连接到 Microsoft 365 租户](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)。
+首先，[连接到你的Microsoft 365租户](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)。
   
 
 接下来，使用此命令列出租户的许可证计划。
@@ -87,7 +87,7 @@ Set-AzureADUserLicense -ObjectId $userUPN -AssignedLicenses $LicensesToAssign
 
 ## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>使用用于 Windows PowerShell 的 Microsoft Azure Active Directory 模块
 
-首先， [连接到 Microsoft 365 租户](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)。
+首先，[连接到你的Microsoft 365租户](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)。
 
 运行 `Get-MsolAccountSku` 命令以查看组织中可用的许可计划以及每个计划的可用许可证数量。 每个计划中可用的许可证数量为 **ActiveUnits**  -  **WarningUnits**  -  **ConsumedUnits**。 有关许可计划、许可证和服务的信息，请参阅 [使用 PowerShell 查看许可证和服务](view-licenses-and-services-with-microsoft-365-powershell.md)。
 
@@ -101,7 +101,7 @@ Set-AzureADUserLicense -ObjectId $userUPN -AssignedLicenses $LicensesToAssign
 Get-MsolUser -All -UnlicensedUsersOnly
 ```
 
-只能将许可证分配给 **UsageLocation** 属性设置为有效的 ISO 3166-1 alpha-2 国家/地区代码的用户帐户。 例如，US 代表美国，FR 代表法国。 某些 Microsoft 365 服务在某些国家/地区不可用。 有关详细信息，请参阅[关于许可证限制](https://go.microsoft.com/fwlink/p/?LinkId=691730)。
+只能将许可证分配给 **UsageLocation** 属性设置为有效的 ISO 3166-1 alpha-2 国家/地区代码的用户帐户。 例如，US 代表美国，FR 代表法国。 某些Microsoft 365服务在某些国家/地区不可用。 有关详细信息，请参阅[关于许可证限制](https://go.microsoft.com/fwlink/p/?LinkId=691730)。
     
 若要查找没有 **UsageLocation** 值的帐户，请运行此命令。
 
@@ -147,7 +147,7 @@ Get-MsolUser -All -UnlicensedUsersOnly [<FilterableAttributes>] | Set-MsolUserLi
 >您无法使用相同的许可计划为用户分配多个许可证。 如果没有足够可用的许可证，将按照 **Get-MsolUser** cmdlet 返回的顺序为用户分配许可证，直到可用许可证用尽。
 >
 
-此示例将来自 office 365 企业版 E3 (许可证计划的 **litwareinc：ENTERPRISEPACK**) 许可证分配给所有未授权用户：
+此示例将 **litwareinc：ENTERPRISEPACK** (Office 365 企业版 E3) 许可证计划中的许可证分配给所有未授权用户：
   
 ```powershell
 Get-MsolUser -All -UnlicensedUsersOnly | Set-MsolUserLicense -AddLicenses "litwareinc:ENTERPRISEPACK"
@@ -159,9 +159,9 @@ Get-MsolUser -All -UnlicensedUsersOnly | Set-MsolUserLicense -AddLicenses "litwa
 Get-MsolUser -All -Department "Sales" -UsageLocation "US" -UnlicensedUsersOnly | Set-MsolUserLicense -AddLicenses "litwareinc:ENTERPRISEPACK"
 ```
   
-## <a name="move-a-user-to-a-different-subscription-license-plan-with-the-azure-active-directory-powershell-for-graph-module"></a>使用 Azure Active Directory PowerShell graph (将用户移动到其他订阅) 许可证计划
+## <a name="move-a-user-to-a-different-subscription-license-plan-with-the-azure-active-directory-powershell-for-graph-module"></a>使用 PowerShell for (模块将) 移动到其他订阅Azure Active Directory许可证Graph计划
 
-首先， [连接到 Microsoft 365 租户](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)。
+首先，[连接到你的Microsoft 365租户](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)。
   
 接下来，获取要切换订阅的用户帐户的登录名，也称为 UPN (用户) 。
 

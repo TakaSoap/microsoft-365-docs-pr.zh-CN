@@ -16,7 +16,7 @@ search.appverid:
 ms.assetid: 2e5fbe9f-ee4d-4178-8ff8-4356bc1b168e
 ms.custom:
 - seo-marvel-apr2020
-description: 使用 Office 365 &安全与合规中心中的电子数据展示事例来管理组织的法律调查。
+description: 使用安全与合规中心&电子数据Office 365管理组织的法律调查。
 ms.openlocfilehash: c052daab8de33e21cccc3c638ab4995a007f60fb
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -48,19 +48,19 @@ ms.locfileid: "50903456"
   
 - [创建电子数据展示保留](create-a-report-on-holds-in-ediscovery-cases.md) 报告，其中包含有关组织中与电子数据展示事例关联的所有保留的信息。
 
-- [将用户列表的](use-a-script-to-add-users-to-a-hold-in-ediscovery.md) 邮箱和 OneDrive 位置添加到电子数据展示保留。
+- [将用户OneDrive](use-a-script-to-add-users-to-a-hold-in-ediscovery.md)邮箱和邮箱位置添加到电子数据展示保留中。
   
-## <a name="manage-legal-investigations-with-the-advanced-ediscovery-solution-in-microsoft-365"></a>使用 Microsoft 365 中的高级电子数据展示解决方案管理法律调查
+## <a name="manage-legal-investigations-with-the-advanced-ediscovery-solution-in-microsoft-365"></a>使用 Microsoft 365 中的 Advanced eDiscovery 解决方案管理法律Microsoft 365
 
-Microsoft 365 中的高级电子数据展示解决方案基于 Office 365 中的现有电子数据展示和分析功能。 这一称为 *"高级* 电子数据展示"的新解决方案提供端到端工作流，以保留、收集、审阅、分析和导出对组织内部和外部调查做出响应的内容。 它还允许法律团队管理整个法定保留通知工作流，以与案件涉及的保管人进行通信。
+Advanced eDiscovery解决方案Microsoft 365中现有的电子数据展示和分析功能Office 365。 这一称为 *Advanced eDiscovery* 的新解决方案提供了端到端工作流，以保留、收集、审阅、分析和导出对组织内部和外部调查做出响应的内容。 它帮助法律团队管理整个法定保留通知工作流，与案件有关保管人进行沟通。
 
-高级电子数据展示需要你的 Microsoft 365 或 Office 365 组织的 E5 订阅。 有关许可详细信息，请参阅设置 [高级电子数据展示](get-started-with-advanced-ediscovery.md#step-1-verify-and-assign-appropriate-licenses)。
+Advanced eDiscovery组织或组织需要 E5 Microsoft 365 Office 365订阅。 有关许可详细信息，[请参阅设置](get-started-with-advanced-ediscovery.md#step-1-verify-and-assign-appropriate-licenses)Advanced eDiscovery。
 
-以下是高级电子数据展示中内置工作流的快速概述。 有关详细信息，请参阅 [管理高级电子数据展示工作流](create-and-manage-advanced-ediscoveryv2-case.md#manage-the-workflow)。
+下面简要概述了 Advanced eDiscovery 中的内置Advanced eDiscovery。 有关详细信息，请参阅管理[Advanced eDiscovery工作流](create-and-manage-advanced-ediscoveryv2-case.md#manage-the-workflow)。
 
 - [创建一个](create-and-manage-advanced-ediscoveryv2-case.md#create-a-case) 案例以开始。
 
-- [通过将保管](managing-custodians.md) 人添加到案例并合法保留其邮箱、OneDrive 帐户和 Microsoft Teams 中的内容，管理保管人。
+- [通过将保管](managing-custodians.md)人添加到案例，并合法保留其邮箱中的内容、OneDrive帐户和Microsoft Teams他们的成员，来管理保管人。
 
 - [通过自动](managing-custodian-communications.md) 执行合法保留通知流程，管理与保管人的通信。
 
@@ -74,4 +74,4 @@ Microsoft 365 中的高级电子数据展示解决方案基于 Office 365 中的
 
 - [导出案例数据](exporting-data-ediscover20.md) ，供外部律师审阅。
 
-- [在高级电子数据展示](managing-jobs-ediscovery20.md) 中管理长时间运行的作业。
+- [在作业中管理长时间运行的](managing-jobs-ediscovery20.md)Advanced eDiscovery。

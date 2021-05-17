@@ -39,15 +39,15 @@ ms.locfileid: "50904248"
 :::image type="content" source="../../media/basic-mobility-security/bms-7-powershell-parameters.png" alt-text="基本移动性和安全性 PowerShell 参数":::
 
 >[!NOTE]
->本文中的命令和脚本还返回有关 [由 Microsoft Intune](https://www.microsoft.com/cloud-platform/microsoft-intune)管理的任何设备的详细信息。
+>本文中的命令和脚本还返回有关由 Microsoft Intune 管理 [的任何设备的详细信息](https://www.microsoft.com/cloud-platform/microsoft-intune)。
 
 ## <a name="before-you-begin"></a>开始之前
 
 需要设置一些操作以运行本文中所述的命令和脚本。
 
-### <a name="step-1-download-and-install-the-azure-active-directory-module-for-windows-powershell"></a>步骤 1：下载并安装 Azure Active Directory 模块Windows PowerShell
+### <a name="step-1-download-and-install-the-azure-active-directory-module-for-windows-powershell"></a>步骤 1：下载并安装Azure Active Directory模块Windows PowerShell
 
-有关这些步骤详细信息，请参阅使用 PowerShell 连接到 [Microsoft 365。](/office365/enterprise/powershell/connect-to-office-365-powershell)
+有关这些步骤详细信息，请参阅 连接 [Microsoft 365 PowerShell。](/office365/enterprise/powershell/connect-to-office-365-powershell)
 
 1. 转到"Microsoft Online Services Sign-In IT 专业人员 [RTWl"，](https://www.microsoft.com/download/details.aspx?id=41950)然后选择   "下载 **Microsoft Online Services登录助手"。**
 
@@ -63,13 +63,13 @@ ms.locfileid: "50904248"
 
     5. 安装完成后，关闭 PowerShell 命令窗口。
 
-### <a name="step-2-connect-to-your-microsoft-365-subscription"></a>步骤 2：连接到 Microsoft 365 订阅
+### <a name="step-2-connect-to-your-microsoft-365-subscription"></a>步骤 2：连接订阅Microsoft 365订阅
 
-1. 在Windows Azure Active Directory 模块中Windows PowerShell运行以下命令。  
+1. 在Windows Azure Active Directory模块Windows PowerShell，运行以下命令。  
 
     $UserCredential = Get-Credential
 
-2. 在"Windows PowerShell凭据请求"对话框中，键入 Microsoft 365 全局管理员帐户的用户名和密码，然后选择"确定 **"。**
+2. 在"Windows PowerShell凭据请求"对话框中，键入您的全局管理员帐户Microsoft 365用户名和密码，然后选择"确定 **"。**
 
 3. 运行以下命令。
 
@@ -82,7 +82,7 @@ ms.locfileid: "50904248"
 
 若要运行 Get-MsolUserDeviceComplianceStatus.ps1 脚本，需要启用 PowerShell 脚本的运行。
 
-1. 在 Windows 桌面版中， **选择"开始**"，然后键入Windows PowerShell。 右键单击"Windows PowerShell"，然后选择"以 **管理员角色运行"。**
+1. From your Windows Desktop， select **Start**， and then type Windows PowerShell. 右键单击"Windows PowerShell"，然后选择"以 **管理员角色运行"。**
 
 2. 运行以下命令。
 
@@ -104,7 +104,7 @@ ms.locfileid: "50904248"
 
 首先，将脚本保存到计算机。
 
-1. 将以下文本复制并粘贴到记事本中。  
+1. 将以下文本复制并粘贴到记事本。  
 
 2.  param (
 
@@ -263,7 +263,7 @@ ms.locfileid: "50904248"
 70.  }
     
 
-71.  使用文件扩展Windows PowerShell .ps1 将其另存为脚本文件;例如，Get-MsolUserDeviceComplianceStatus.ps1。   
+71.  使用文件扩展Windows PowerShell文件，将其另存为脚本.ps1;例如，Get-MsolUserDeviceComplianceStatus.ps1。   
 
 ## <a name="run-the-script-to-get-device-information-for-a-single-user-account"></a>运行脚本获取单个用户帐户的设备信息
 
@@ -281,7 +281,7 @@ ms.locfileid: "50904248"
 
     .\Get-MsolUserDeviceComplianceStatus.ps1 -User $u -Export
 
-信息作为 CSV 文件导出到 Windows 桌面。 可以使用其他参数指定 CSV 的文件名和路径。
+信息作为 CSV 文件导出Windows桌面。 可以使用其他参数指定 CSV 的文件名和路径。
 
 ## <a name="run-the-script-to-get-device-information-for-a-group-of-users"></a>运行脚本获取一组用户的设备信息
 
@@ -299,11 +299,11 @@ ms.locfileid: "50904248"
 
     .\Get-MsolUserDeviceComplianceStatus.ps1 -User $u -Export
 
-信息作为 CSV 文件导出到 Windows 桌面。 可以使用其他参数指定 CSV 的文件名和路径。
+信息作为 CSV 文件导出Windows桌面。 可以使用其他参数指定 CSV 的文件名和路径。
 
 ## <a name="related-topics"></a>相关主题
 
-[Microsoft Connect 已停用](/collaborate/connect-redirect)
+[Microsoft 连接已停用](/collaborate/connect-redirect)
 
 [基本移动性和安全性概览](overview.md)
 
