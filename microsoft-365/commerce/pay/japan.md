@@ -19,18 +19,18 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 05/07/2021
 ms.locfileid: "52273508"
 ---
-# <a name="payment-information-for-japan"></a><span data-ttu-id="a15cb-103">日本付款信息</span><span class="sxs-lookup"><span data-stu-id="a15cb-103">Payment information for Japan</span></span>
+# <a name="payment-information-for-japan"></a><span data-ttu-id="0f58c-103">日本付款信息</span><span class="sxs-lookup"><span data-stu-id="0f58c-103">Payment information for Japan</span></span>
 
-<span data-ttu-id="a15cb-104">[查找另一个国家/地区](../billing-and-payments/pay-for-your-subscription.md)。</span><span class="sxs-lookup"><span data-stu-id="a15cb-104">[Find another country or region](../billing-and-payments/pay-for-your-subscription.md).</span></span>
+<span data-ttu-id="0f58c-104">[查找另一个国家/地区](../billing-and-payments/pay-for-your-subscription.md)。</span><span class="sxs-lookup"><span data-stu-id="0f58c-104">[Find another country or region](../billing-and-payments/pay-for-your-subscription.md).</span></span>
 
-<span data-ttu-id="a15cb-105">Please pay in JPY only and reference invoice number (s) on your payment payment payment.</span><span class="sxs-lookup"><span data-stu-id="a15cb-105">Please pay in JPY only and reference invoice number(s) on your payment remittance.</span></span>
+<span data-ttu-id="0f58c-105">Please pay in JPY only and reference invoice number (s) on your payment payment payment.</span><span class="sxs-lookup"><span data-stu-id="0f58c-105">Please pay in JPY only and reference invoice number(s) on your payment remittance.</span></span>
 
-## <a name="electronic-funds-transfer"></a><span data-ttu-id="a15cb-106">电子资金转帐</span><span class="sxs-lookup"><span data-stu-id="a15cb-106">Electronic Funds Transfer</span></span>
+## <a name="electronic-funds-transfer"></a><span data-ttu-id="0f58c-106">电子资金转帐</span><span class="sxs-lookup"><span data-stu-id="0f58c-106">Electronic Funds Transfer</span></span>
 
-<span data-ttu-id="a15cb-107">**Bank：** Bank， N.A</span><span class="sxs-lookup"><span data-stu-id="a15cb-107">**Bank:** Citibank, N.A</span></span>  
-<span data-ttu-id="a15cb-108">**银行** ID：0401</span><span class="sxs-lookup"><span data-stu-id="a15cb-108">**Bank ID:** 0401</span></span>  
-<span data-ttu-id="a15cb-109">**分支：** Tokyo Branch</span><span class="sxs-lookup"><span data-stu-id="a15cb-109">**Branch:** Tokyo Branch</span></span>  
-<span data-ttu-id="a15cb-110">**分支代码** ：730</span><span class="sxs-lookup"><span data-stu-id="a15cb-110">**Branch code:** 730</span></span>  
-<span data-ttu-id="a15cb-111">**SWIFT 代码：** 一个</span><span class="sxs-lookup"><span data-stu-id="a15cb-111">**SWIFT Code:** CITIJPJT</span></span>  
-<span data-ttu-id="a15cb-112">**帐号** ：160609028</span><span class="sxs-lookup"><span data-stu-id="a15cb-112">**Account Number:** 160609028</span></span>  
-<span data-ttu-id="a15cb-113">**帐户名称：** Microsoft Japan Co.， Ltd.</span><span class="sxs-lookup"><span data-stu-id="a15cb-113">**Account Name:** Microsoft Japan Co., Ltd.</span></span>
+<span data-ttu-id="0f58c-107">**Bank：** Bank， N.A</span><span class="sxs-lookup"><span data-stu-id="0f58c-107">**Bank:** Citibank, N.A</span></span>  
+<span data-ttu-id="0f58c-108">**银行** ID：0401</span><span class="sxs-lookup"><span data-stu-id="0f58c-108">**Bank ID:** 0401</span></span>  
+<span data-ttu-id="0f58c-109">**分支：** Tokyo Branch</span><span class="sxs-lookup"><span data-stu-id="0f58c-109">**Branch:** Tokyo Branch</span></span>  
+<span data-ttu-id="0f58c-110">**分支代码** ：730</span><span class="sxs-lookup"><span data-stu-id="0f58c-110">**Branch code:** 730</span></span>  
+<span data-ttu-id="0f58c-111">**SWIFT 代码：** 一个</span><span class="sxs-lookup"><span data-stu-id="0f58c-111">**SWIFT Code:** CITIJPJT</span></span>  
+<span data-ttu-id="0f58c-112">**帐号** ：160609028</span><span class="sxs-lookup"><span data-stu-id="0f58c-112">**Account Number:** 160609028</span></span>  
+<span data-ttu-id="0f58c-113">**帐户名称：** Microsoft Japan Co.， Ltd.</span><span class="sxs-lookup"><span data-stu-id="0f58c-113">**Account Name:** Microsoft Japan Co., Ltd.</span></span>

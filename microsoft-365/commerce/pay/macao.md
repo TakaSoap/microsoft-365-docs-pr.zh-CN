@@ -19,15 +19,15 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 05/07/2021
 ms.locfileid: "52273352"
 ---
-# <a name="payment-information-for-macao"></a><span data-ttu-id="ff176-103">澳门的付款信息</span><span class="sxs-lookup"><span data-stu-id="ff176-103">Payment information for Macao</span></span>
+# <a name="payment-information-for-macao"></a><span data-ttu-id="e80f1-103">澳门的付款信息</span><span class="sxs-lookup"><span data-stu-id="e80f1-103">Payment information for Macao</span></span>
 
-<span data-ttu-id="ff176-104">[查找另一个国家/地区](../billing-and-payments/pay-for-your-subscription.md)。</span><span class="sxs-lookup"><span data-stu-id="ff176-104">[Find another country or region](../billing-and-payments/pay-for-your-subscription.md).</span></span>
+<span data-ttu-id="e80f1-104">[查找另一个国家/地区](../billing-and-payments/pay-for-your-subscription.md)。</span><span class="sxs-lookup"><span data-stu-id="e80f1-104">[Find another country or region](../billing-and-payments/pay-for-your-subscription.md).</span></span>
 
-<span data-ttu-id="ff176-105">Please pay in USD only and reference invoice number (s) on your payment invoice.</span><span class="sxs-lookup"><span data-stu-id="ff176-105">Please pay in USD only and reference invoice number(s) on your payment remittance.</span></span>
+<span data-ttu-id="e80f1-105">Please pay in USD only and reference invoice number (s) on your payment invoice.</span><span class="sxs-lookup"><span data-stu-id="e80f1-105">Please pay in USD only and reference invoice number(s) on your payment remittance.</span></span>
 
-## <a name="electronic-funds-transfer"></a><span data-ttu-id="ff176-106">电子资金转帐</span><span class="sxs-lookup"><span data-stu-id="ff176-106">Electronic Funds Transfer</span></span>
+## <a name="electronic-funds-transfer"></a><span data-ttu-id="e80f1-106">电子资金转帐</span><span class="sxs-lookup"><span data-stu-id="e80f1-106">Electronic Funds Transfer</span></span>
 
-<span data-ttu-id="ff176-107">**Bank：** Bank，新加坡</span><span class="sxs-lookup"><span data-stu-id="ff176-107">**Bank:** Citibank, Singapore</span></span>  
-<span data-ttu-id="ff176-108">**SWIFT 代码：** 一个</span><span class="sxs-lookup"><span data-stu-id="ff176-108">**SWIFT Code:** CITISGSG</span></span>  
-<span data-ttu-id="ff176-109">**帐号** ：0-817543-138</span><span class="sxs-lookup"><span data-stu-id="ff176-109">**Account Number:** 0-817543-138</span></span>  
-<span data-ttu-id="ff176-110">**帐户名称：** MICROSOFT REGIONAL SALES CORP</span><span class="sxs-lookup"><span data-stu-id="ff176-110">**Account Name:** MICROSOFT REGIONAL SALES CORP</span></span>  
+<span data-ttu-id="e80f1-107">**Bank：** Bank，新加坡</span><span class="sxs-lookup"><span data-stu-id="e80f1-107">**Bank:** Citibank, Singapore</span></span>  
+<span data-ttu-id="e80f1-108">**SWIFT 代码：** 一个</span><span class="sxs-lookup"><span data-stu-id="e80f1-108">**SWIFT Code:** CITISGSG</span></span>  
+<span data-ttu-id="e80f1-109">**帐号** ：0-817543-138</span><span class="sxs-lookup"><span data-stu-id="e80f1-109">**Account Number:** 0-817543-138</span></span>  
+<span data-ttu-id="e80f1-110">**帐户名称：** MICROSOFT REGIONAL SALES CORP</span><span class="sxs-lookup"><span data-stu-id="e80f1-110">**Account Name:** MICROSOFT REGIONAL SALES CORP</span></span>  

@@ -19,16 +19,16 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 05/07/2021
 ms.locfileid: "52273952"
 ---
-# <a name="payment-information-for-curacao"></a><span data-ttu-id="7455c-103">库拉索的付款信息</span><span class="sxs-lookup"><span data-stu-id="7455c-103">Payment information for Curacao</span></span>
+# <a name="payment-information-for-curacao"></a><span data-ttu-id="7b6be-103">库拉索的付款信息</span><span class="sxs-lookup"><span data-stu-id="7b6be-103">Payment information for Curacao</span></span>
 
-<span data-ttu-id="7455c-104">[查找另一个国家/地区](../billing-and-payments/pay-for-your-subscription.md)。</span><span class="sxs-lookup"><span data-stu-id="7455c-104">[Find another country or region](../billing-and-payments/pay-for-your-subscription.md).</span></span>
+<span data-ttu-id="7b6be-104">[查找另一个国家/地区](../billing-and-payments/pay-for-your-subscription.md)。</span><span class="sxs-lookup"><span data-stu-id="7b6be-104">[Find another country or region](../billing-and-payments/pay-for-your-subscription.md).</span></span>
 
-<span data-ttu-id="7455c-105">Please pay in USD only and reference invoice number (s) on your payment invoice.</span><span class="sxs-lookup"><span data-stu-id="7455c-105">Please pay in USD only and reference invoice number(s) on your payment remittance.</span></span>
+<span data-ttu-id="7b6be-105">Please pay in USD only and reference invoice number (s) on your payment invoice.</span><span class="sxs-lookup"><span data-stu-id="7b6be-105">Please pay in USD only and reference invoice number(s) on your payment remittance.</span></span>
 
-## <a name="electronic-funds-transfer"></a><span data-ttu-id="7455c-106">电子资金转帐</span><span class="sxs-lookup"><span data-stu-id="7455c-106">Electronic Funds Transfer</span></span>
+## <a name="electronic-funds-transfer"></a><span data-ttu-id="7b6be-106">电子资金转帐</span><span class="sxs-lookup"><span data-stu-id="7b6be-106">Electronic Funds Transfer</span></span>
 
-<span data-ttu-id="7455c-107">**Bank：** 美洲银行</span><span class="sxs-lookup"><span data-stu-id="7455c-107">**Bank:** Bank of America</span></span>  
-<span data-ttu-id="7455c-108">**分支：** Dallas</span><span class="sxs-lookup"><span data-stu-id="7455c-108">**Branch:** Dallas</span></span>  
-<span data-ttu-id="7455c-109">**SWIFT 代码：** BOFAUS3N</span><span class="sxs-lookup"><span data-stu-id="7455c-109">**SWIFT Code:** BOFAUS3N</span></span>  
-<span data-ttu-id="7455c-110">**帐号** ：4426587954</span><span class="sxs-lookup"><span data-stu-id="7455c-110">**Account Number:** 4426587954</span></span>  
-<span data-ttu-id="7455c-111">**帐户名称：** Microsoft</span><span class="sxs-lookup"><span data-stu-id="7455c-111">**Account Name:** Microsoft</span></span>  
+<span data-ttu-id="7b6be-107">**Bank：** 美洲银行</span><span class="sxs-lookup"><span data-stu-id="7b6be-107">**Bank:** Bank of America</span></span>  
+<span data-ttu-id="7b6be-108">**分支：** Dallas</span><span class="sxs-lookup"><span data-stu-id="7b6be-108">**Branch:** Dallas</span></span>  
+<span data-ttu-id="7b6be-109">**SWIFT 代码：** BOFAUS3N</span><span class="sxs-lookup"><span data-stu-id="7b6be-109">**SWIFT Code:** BOFAUS3N</span></span>  
+<span data-ttu-id="7b6be-110">**帐号** ：4426587954</span><span class="sxs-lookup"><span data-stu-id="7b6be-110">**Account Number:** 4426587954</span></span>  
+<span data-ttu-id="7b6be-111">**帐户名称：** Microsoft</span><span class="sxs-lookup"><span data-stu-id="7b6be-111">**Account Name:** Microsoft</span></span>  

@@ -19,16 +19,16 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 05/07/2021
 ms.locfileid: "52273916"
 ---
-# <a name="payment-information-for-democratic-republic-of-congo"></a><span data-ttu-id="0dff1-103">卢旺达共和国的付款信息</span><span class="sxs-lookup"><span data-stu-id="0dff1-103">Payment information for Democratic Republic of Congo</span></span>
+# <a name="payment-information-for-democratic-republic-of-congo"></a><span data-ttu-id="a7cce-103">卢旺达共和国的付款信息</span><span class="sxs-lookup"><span data-stu-id="a7cce-103">Payment information for Democratic Republic of Congo</span></span>
 
-<span data-ttu-id="0dff1-104">[查找另一个国家/地区](../billing-and-payments/pay-for-your-subscription.md)。</span><span class="sxs-lookup"><span data-stu-id="0dff1-104">[Find another country or region](../billing-and-payments/pay-for-your-subscription.md).</span></span> 
+<span data-ttu-id="a7cce-104">[查找另一个国家/地区](../billing-and-payments/pay-for-your-subscription.md)。</span><span class="sxs-lookup"><span data-stu-id="a7cce-104">[Find another country or region](../billing-and-payments/pay-for-your-subscription.md).</span></span> 
 
-<span data-ttu-id="0dff1-105">Please pay in USD only and reference invoice number (s) on your payment invoice.</span><span class="sxs-lookup"><span data-stu-id="0dff1-105">Please pay in USD only and reference invoice number(s) on your payment remittance.</span></span>
+<span data-ttu-id="a7cce-105">Please pay in USD only and reference invoice number (s) on your payment invoice.</span><span class="sxs-lookup"><span data-stu-id="a7cce-105">Please pay in USD only and reference invoice number(s) on your payment remittance.</span></span>
 
-## <a name="electronic-funds-transfer"></a><span data-ttu-id="0dff1-106">电子资金转帐</span><span class="sxs-lookup"><span data-stu-id="0dff1-106">Electronic Funds Transfer</span></span>
+## <a name="electronic-funds-transfer"></a><span data-ttu-id="a7cce-106">电子资金转帐</span><span class="sxs-lookup"><span data-stu-id="a7cce-106">Electronic Funds Transfer</span></span>
 
-<span data-ttu-id="0dff1-107">**Bank：** 年，伦敦</span><span class="sxs-lookup"><span data-stu-id="0dff1-107">**Bank:** Citibank, London</span></span>  
-<span data-ttu-id="0dff1-108">**SWIFT 代码：** 一百万</span><span class="sxs-lookup"><span data-stu-id="0dff1-108">**SWIFT Code:** CITIGB2L</span></span>  
-<span data-ttu-id="0dff1-109">**IBAN：** GB95CITI18500812510049</span><span class="sxs-lookup"><span data-stu-id="0dff1-109">**IBAN:** GB95CITI18500812510049</span></span>  
-<span data-ttu-id="0dff1-110">**帐号** ：12510049</span><span class="sxs-lookup"><span data-stu-id="0dff1-110">**Account Number:** 12510049</span></span>  
-<span data-ttu-id="0dff1-111">**帐户名称：** MICROSOFT</span><span class="sxs-lookup"><span data-stu-id="0dff1-111">**Account Name:** MICROSOFT</span></span>  
+<span data-ttu-id="a7cce-107">**Bank：** 年，伦敦</span><span class="sxs-lookup"><span data-stu-id="a7cce-107">**Bank:** Citibank, London</span></span>  
+<span data-ttu-id="a7cce-108">**SWIFT 代码：** 一百万</span><span class="sxs-lookup"><span data-stu-id="a7cce-108">**SWIFT Code:** CITIGB2L</span></span>  
+<span data-ttu-id="a7cce-109">**IBAN：** GB95CITI18500812510049</span><span class="sxs-lookup"><span data-stu-id="a7cce-109">**IBAN:** GB95CITI18500812510049</span></span>  
+<span data-ttu-id="a7cce-110">**帐号** ：12510049</span><span class="sxs-lookup"><span data-stu-id="a7cce-110">**Account Number:** 12510049</span></span>  
+<span data-ttu-id="a7cce-111">**帐户名称：** MICROSOFT</span><span class="sxs-lookup"><span data-stu-id="a7cce-111">**Account Name:** MICROSOFT</span></span>  
