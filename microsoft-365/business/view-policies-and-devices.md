@@ -22,7 +22,7 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 6b70fa27-d171-4593-8ecf-f78bb4ed2e99
-description: 使用全局管理员凭据登录 Microsoft 365 商业版以查看设备策略和操作。
+description: 使用全局管理员凭据登录企业Microsoft 365查看设备策略和操作。
 ms.openlocfilehash: 39d88e8fa84055e4bac62899a1b84bdf42f366a2
 ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
@@ -32,7 +32,7 @@ ms.locfileid: "51578019"
 ---
 # <a name="view-and-manage-policies-and-devices"></a>查看和管理策略和设备
 
-本文适用于 Microsoft 365 商业高级版。
+本文适用于Microsoft 365 商业高级版。
 
 ## <a name="view-and-edit-device-policies"></a>查看和编辑设备策略
 

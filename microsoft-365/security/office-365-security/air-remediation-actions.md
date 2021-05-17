@@ -60,12 +60,12 @@ Microsoft Defender for Office 365包括解决各种威胁的修正操作。 自�
 |电子邮件|用户报告的错过 [的](enable-the-report-message-add-in.md) 网络钓鱼电子邮件|[由用户报告触发的自动调查](automated-investigation-response-office.md#example-a-user-reported-phish-message-launches-an-investigation-playbook)|
 |电子邮件|卷异常 <br>  (匹配条件，最近使用的电子邮件数量超过前 7-10 ) |自动调查不会导致特定的挂起操作。 <p>卷异常不是一个明显的威胁，只是表示与过去 7-10 天相比，最近几天的电子邮件数量更大。 <p>尽管大量的电子邮件可能指示潜在问题，但需要根据恶意裁定或手动审阅电子邮件/群集进行确认。 请参阅 [查找已送达的可疑电子邮件](investigate-malicious-email-that-was-delivered.md#find-suspicious-email-that-was-delivered)。|
 |电子邮件|未发现威胁 <br>  (根据文件、URL 或电子邮件群集裁定分析，系统找不到任何威胁。) |自动调查不会导致特定的挂起操作。 <p>调查 [完成后发现](zero-hour-auto-purge.md) 和消除的威胁不会反映在调查的数字结果中，但此类威胁可以在威胁 [资源管理器中查看](threat-explorer.md)。|
-|User|用户单击了恶意 URL <br>  (用户导航到之后发现是恶意页面，或者用户绕过[保险箱 链接](safe-links.md#warning-pages-from-safe-links)警告页面进入恶意页面。) |自动调查不会导致特定的挂起操作。 <p>阻止 URL（单击时） <p>使用威胁资源管理器 [查看有关 URL 的数据并单击裁定](threat-explorer.md#view-phishing-url-and-click-verdict-data)。 <p>如果你的组织正在使用 [Microsoft Defender for Endpoint，](/windows/security/threat-protection/)请考虑调查 [用户](/microsoft-365/security/defender-endpoint/investigate-user) 以确定他们的帐户是否遭到入侵。|
-|User|用户正在发送恶意软件/网络钓鱼|自动调查不会导致特定的挂起操作。 <p> 用户可能会报告恶意软件/网络钓鱼，或者有人可能会欺骗 [用户作为攻击](anti-spoofing-protection.md) 的一部分。 使用 [威胁资源管理器](threat-explorer.md) 查看和处理包含恶意软件 [或](threat-explorer-views.md#email--malware) 网络钓鱼 [的电子邮件](threat-explorer-views.md#email--phish)。|
-|User|电子邮件转发 <br>  (邮箱转发规则，这可用于数据 exfiltration.) |删除转发规则 <p> 使用 [邮件流见解](mail-flow-insights-v2.md)（包括自动转发 [邮件](mfi-auto-forwarded-messages-report.md)报告）查看有关转发电子邮件的更具体的详细信息。|
-|User|电子邮件委派规则 <br>  (用户帐户设置了委派。) |删除委派规则 <p> 如果你的组织正在使用[Microsoft Defender for Endpoint，](/windows/security/threat-protection/)请考虑调查获取委派权限的用户。 [](/microsoft-365/security/defender-endpoint/investigate-user)|
-|User|数据外泄 <br>  (违反电子邮件或文件共享 [DLP 策略的用户](../../compliance/dlp-learn-about-dlp.md) |自动调查不会导致特定的挂起操作。 <p> [查看 DLP 报告并采取措施](../../compliance/view-the-dlp-reports.md)。|
-|User|异常电子邮件发送 <br>  (用户最近发送的电子邮件数多于前 7-10 天) |自动调查不会导致特定的挂起操作。 <p> 发送大量电子邮件本身不是恶意的;用户可能刚刚向一大组收件人发送了事件的电子邮件。 若要调查，请使用[邮件流见解](mail-flow-insights-v2.md)（包括邮件流[](mfi-mail-flow-map-report.md)地图报告）来确定要执行哪些操作并采取措施。|
+|用户|用户单击了恶意 URL <br>  (用户导航到之后发现是恶意页面，或者用户绕过[保险箱 链接](safe-links.md#warning-pages-from-safe-links)警告页面进入恶意页面。) |自动调查不会导致特定的挂起操作。 <p>阻止 URL（单击时） <p>使用威胁资源管理器 [查看有关 URL 的数据并单击裁定](threat-explorer.md#view-phishing-url-and-click-verdict-data)。 <p>如果你的组织正在使用 [Microsoft Defender for Endpoint，](/windows/security/threat-protection/)请考虑调查 [用户](/microsoft-365/security/defender-endpoint/investigate-user) 以确定他们的帐户是否遭到入侵。|
+|用户|用户正在发送恶意软件/网络钓鱼|自动调查不会导致特定的挂起操作。 <p> 用户可能会报告恶意软件/网络钓鱼，或者有人可能会欺骗 [用户作为攻击](anti-spoofing-protection.md) 的一部分。 使用 [威胁资源管理器](threat-explorer.md) 查看和处理包含恶意软件 [或](threat-explorer-views.md#email--malware) 网络钓鱼 [的电子邮件](threat-explorer-views.md#email--phish)。|
+|用户|电子邮件转发 <br>  (邮箱转发规则，这可用于数据 exfiltration.) |删除转发规则 <p> 使用 [邮件流见解](mail-flow-insights-v2.md)（包括自动转发 [邮件](mfi-auto-forwarded-messages-report.md)报告）查看有关转发电子邮件的更具体的详细信息。|
+|用户|电子邮件委派规则 <br>  (用户帐户设置了委派。) |删除委派规则 <p> 如果你的组织正在使用[Microsoft Defender for Endpoint，](/windows/security/threat-protection/)请考虑调查获取委派权限的用户。 [](/microsoft-365/security/defender-endpoint/investigate-user)|
+|用户|数据外泄 <br>  (违反电子邮件或文件共享 [DLP 策略的用户](../../compliance/dlp-learn-about-dlp.md) |自动调查不会导致特定的挂起操作。 <p> [查看 DLP 报告并采取措施](../../compliance/view-the-dlp-reports.md)。|
+|用户|异常电子邮件发送 <br>  (用户最近发送的电子邮件数多于前 7-10 天) |自动调查不会导致特定的挂起操作。 <p> 发送大量电子邮件本身不是恶意的;用户可能刚刚向一大组收件人发送了事件的电子邮件。 若要调查，请使用[邮件流见解](mail-flow-insights-v2.md)（包括邮件流[](mfi-mail-flow-map-report.md)地图报告）来确定要执行哪些操作并采取措施。|
 
 ## <a name="next-steps"></a>后续步骤
 

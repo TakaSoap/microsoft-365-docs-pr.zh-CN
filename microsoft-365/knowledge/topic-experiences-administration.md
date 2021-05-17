@@ -19,16 +19,16 @@ ms.locfileid: "50107717"
 ---
 # <a name="change-the-name-of-the-topic-center-in-microsoft-viva-topics"></a>在 Microsoft Viva 主题中更改主题中心的名称
 
-可以在 [Microsoft 365](https://admin.microsoft.com)管理中心更改主题中心的名称。 您必须是全局管理员或 SharePoint 管理员才能执行这些任务。
+可以在管理中心 中更改Microsoft 365[的名称](https://admin.microsoft.com)。 您必须是全局管理员或SharePoint才能执行这些任务。
 
-## <a name="to-access-topics-management-settings"></a>访问主题管理设置：
+## <a name="to-access-topics-management-settings"></a>若要访问主题管理设置：
 
-1. 在 Microsoft 365 管理中心中，单击"**设置**"，然后单击"**组织设置"。**
+1. 在管理Microsoft 365，单击"设置"，**然后单击"****组织设置"。**
 2. 在"**服务"** 选项卡上，单击 **"主题体验"。**
 
-    ![将人员连接到知识](../media/admin-org-knowledge-options-completed.png) 
+    ![连接人员了解知识](../media/admin-org-knowledge-options-completed.png) 
 
-3. 选择 **"主题中心"** 选项卡。有关每个设置的信息，请参阅以下各节。
+3. 选择" **主题中心"** 选项卡。有关每个设置的信息，请参阅以下各节。
 
     ![knowledge-network-settings](../media/knowledge-network-settings-topic-center.png) 
 
@@ -36,8 +36,8 @@ ms.locfileid: "50107717"
 
 更改主题中心的名称
 
-1. 在 **"主题中心"** 选项卡上的 **"主题中心名称"下**，选择"**编辑"。**
-2. 在 **"编辑主题中心名称** "页上的主题 **中心名称** 框中，键入主题中心的新名称。
+1. 在"**主题中心"选项卡上的**"**主题中心名称"下**，选择"编辑 **"。**
+2. 在" **编辑主题中心名称** "页上的" **主题中心** 名称"框中，键入主题中心的新名称。
 3. 选择“**保存**”
 
     ![编辑主题中心名称](../media/manage-topic-center-name.png)  

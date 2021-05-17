@@ -36,7 +36,7 @@ ms.locfileid: "51578623"
 ## <a name="try-it"></a>试一试！
 
 1. From your SharePoint site， select the folder you want to share， choose **Share**， and then click the link settings button.
-1. 在" **链接设置"** 窗口中，确保 **选中** "任何人"。 如果此选项灰显，需要在 SharePoint 管理中心中将其打开。
+1. 在"**链接设置** 窗口中，确保 **已选择**"任何人"。 如果此选项灰显，需要在管理中心SharePoint打开。
 1. （可选）选中" **允许编辑"** 复选框并输入链接的到期日期。
 1. 选择"**应用"。**
 1. 在 **"发送链接**"窗口中，输入客户的电子邮件地址，键入一条消息，然后选择"发送 **"。**

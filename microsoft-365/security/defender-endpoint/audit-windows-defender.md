@@ -34,16 +34,16 @@ ms.locfileid: "51570968"
 
 在测试这些功能在组织中工作的方式时，可能需要启用审核模式。 这将帮助确保你的业务线应用不受影响。 还可以了解在一定时段内发生的可疑文件修改尝试次数。
 
-这些功能不会阻止或阻止应用、脚本或文件被修改。 但是，Windows 事件日志将记录事件，就像功能完全启用一样。 使用审核模式，你可以查看事件日志，以查看如果启用该功能，将有什么影响。
+这些功能不会阻止或阻止应用、脚本或文件被修改。 但是，Windows事件日志将记录事件，就像功能完全启用一样。 使用审核模式，你可以查看事件日志，以查看如果启用该功能，将有什么影响。
 
-若要查找审核的条目，请转到应用程序和服务  >  **Microsoft**  >  **Windows**  >  **Windows Defender**  >  **操作**。
+若要查找审核的条目，请转到应用程序和服务Microsoft Windows  >    >  **Windows Defender**  >    >  **操作**。
 
 可以使用 Defender for Endpoint 获取每个事件的更多详细信息，尤其是调查攻击面减少规则。 使用 Defender for Endpoint 控制台，你可以调查作为警报时间线和调查方案的 [一部分的问题](investigate-alerts.md)。
 
 可以使用组策略、PowerShell 和配置服务提供程序 (启用) 模式。
 
 > [!TIP]
-> 您还可以访问 Testground Windows Defender [网站，demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) 确认这些功能是否正常工作并查看它们如何工作。
+> 您还可以访问 Testground Windows Defender[网站，demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground)确认这些功能是否正常工作并查看它们如何工作。
 
  **审核选项** | **如何启用审核模式** | **如何查看事件**
 |---------|---------|---------|

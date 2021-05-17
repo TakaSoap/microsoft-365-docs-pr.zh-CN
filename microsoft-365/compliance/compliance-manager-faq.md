@@ -73,7 +73,7 @@ Microsoft 合规性管理器作为 Microsoft 服务信任门户内的合规性�
 
 ## <a name="are-there-licensing-requirements-for-using-compliance-manager"></a>使用合规性管理器是否有许可要求？
 
-正确。 合规性管理器的 GA 版本包含新的许可条款。 拥有 Office 365 和 Microsoft 365 许可证以及美国政府社区版 (GCC) Moderate、GCC High 和国防部 (DoD) 客户的所有组织均有权访问合规性管理器。 但是，组织可用的评估以及管理评估模板的方式取决于您的许可协议。 有关详细信息，请访问 [Microsoft 365 安全与合规许可](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance) 指南。
+是的。 合规性管理器的 GA 版本包含新的许可条款。 拥有 Office 365 和 Microsoft 365 许可证以及美国政府社区版 (GCC) Moderate、GCC High 和国防部 (DoD) 客户的所有组织均有权访问合规性管理器。 但是，组织可用的评估以及管理评估模板的方式取决于您的许可协议。 有关详细信息，请访问 [Microsoft 365 安全与合规许可](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance) 指南。
 
 ## <a name="if-i-have-a-high-score-does-it-mean-im-fully-compliant"></a>如果我有高分，这是否意味着我完全兼容？
 

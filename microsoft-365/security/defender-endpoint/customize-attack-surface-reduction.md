@@ -38,11 +38,11 @@ ms.locfileid: "51570347"
 
 了解如何通过排除文件和文件夹或向用户计算机上[](#exclude-files-and-folders)显示的通知警报添加自定义文本[](#customize-the-notification)来自定义攻击面减少规则。
 
-你可以为运行以下任一版本的 Windows 的设备设置攻击面减少规则：
-- Windows 10 专业 [版版本 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) 或更高版本
-- Windows 10 企业版 [版本 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) 或更高版本
-- Windows Server [版本 1803 (半年 ](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1803) 频道) 或更高版本
-- [Windows Server 2019](https://docs.microsoft.com/windows-server/get-started-19/whats-new-19) 可以使用组策略、PowerShell 和移动设备管理 (MDM) CSP (配置) 配置这些设置。
+你可以为运行以下任一版本和版本的设备设置攻击面减少规则Windows：
+- Windows 10 专业版版本[1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709)或更高版本
+- Windows 10 企业版版本[1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709)或更高版本
+- Windows服务器版本[1803 (半年频道) ](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1803)或更高版本
+- [Windows Server 2019](https://docs.microsoft.com/windows-server/get-started-19/whats-new-19)可以使用组策略、PowerShell 和移动设备管理 (MDM) CSP (配置) 配置这些设置。
 
 ## <a name="exclude-files-and-folders"></a>排除文件和文件夹
 
@@ -60,19 +60,19 @@ ms.locfileid: "51570347"
 
 规则说明 | GUID
 -|-|-
-阻止所有 Office 应用程序创建子进程 | D4F940AB-401B-4EFC-AADC-AD5F3C50688A
+阻止所有Office应用程序创建子进程 | D4F940AB-401B-4EFC-AADC-AD5F3C50688A
 阻止执行可能混淆的脚本 | 5BEB7EFE-FD9A-4556-801D-275E5FFC04CC
-阻止从 Office 宏调用 Win32 API | 92E97FA1-2EDF-4476-BDD6-9DD0B4DDDC7B
-阻止 Office 应用程序创建可执行内容 | 3B576869-A4EC-4529-8536-B80A7769E899
-阻止 Office 应用程序将代码注入其他进程 | 75668C1F-73B5-4CF0-BB93-3ECF5CB7CC84
+从宏中阻止 Win32 API Office调用 | 92E97FA1-2EDF-4476-BDD6-9DD0B4DDDC7B
+阻止Office应用程序创建可执行内容 | 3B576869-A4EC-4529-8536-B80A7769E899
+阻止Office代码注入其他进程 | 75668C1F-73B5-4CF0-BB93-3ECF5CB7CC84
 阻止 JavaScript 或 VBScript 启动下载的可执行内容 | D3E037E1-3EB8-44C8-A917-57927947596D
 阻止来自电子邮件客户端和 Webmail 的可执行内容 | BE9BA2D9-53EA-4CDC-84E5-9B1EEEE46550
 阻止可执行文件运行，除非它们满足普遍标准、年龄或受信任的列表条件 | 01443614-cd74-433a-b99e-2ecdc07bfc25
 使用高级防护抵御勒索软件 | c1db55ab-c21a-4637-bb3f-a12568109d35
-阻止从 Windows 本地安全机构子系统中窃取 (lsass.exe)  | 9e6c4e1f-7d60-472f-ba1a-a39ef669e4b2
+阻止本地安全机构子系统Windows窃取凭据 (lsass.exe)  | 9e6c4e1f-7d60-472f-ba1a-a39ef669e4b2
 阻止源自 PSExec 和 WMI 命令的进程创建 | d1e49aac-8f56-4280-b9ba-993a6d77406c
 阻止从 USB 运行的不受信任的和未签名的进程 | b2b3f03d-6a65-4f7b-a9c7-1c7ef74a9ba4
-阻止 Office 通信应用程序创建子进程 | 26190899-1602-49e8-8b27-eb1d0a1ce869
+阻止Office应用程序创建子进程 | 26190899-1602-49e8-8b27-eb1d0a1ce869
 阻止 Adobe Reader 创建子进程 | 7674ba52-37eb-4a4f-a9a1-f0f9a1619a2c
 通过 WMI 事件订阅阻止持久性 | e6db77e5-3df2-4cf1-b95a-636979351e5b
 
@@ -80,11 +80,11 @@ ms.locfileid: "51570347"
 
 ### <a name="use-group-policy-to-exclude-files-and-folders"></a>使用组策略排除文件和文件夹
 
-1. 在组策略管理计算机上，打开组 [策略管理控制台](https://technet.microsoft.com/library/cc731212.aspx)，右键单击要配置的组策略对象， **然后选择编辑**。
+1. 在组策略管理计算机上，打开 [组策略管理控制台](https://technet.microsoft.com/library/cc731212.aspx)，右键单击要配置的组策略对象，然后选择 **编辑**。
 
 2. 在组 **策略管理编辑器中**，转到计算机 **配置，** 然后单击 **管理模板**。
 
-3. 将树展开到 **Windows 组件** Microsoft Defender  >  **防病毒**  >  **Windows Defender攻击防护**  >  **攻击面减少**。
+3. 展开树以 **Windows攻击**  >  **Microsoft Defender 防病毒Windows Defender**  >  **攻击**  >  **面减少的组件**。
 
 4. 双击从攻击 **面减少规则中排除** 文件和路径设置，将选项设置为 **已启用**。 选择 **"显示** "，在"值名称"列中 **输入每个文件或** 文件夹。 在"值"**列中为** 每个项目输入 **0。**
 
@@ -93,7 +93,7 @@ ms.locfileid: "51570347"
 
 ### <a name="use-powershell-to-exclude-files-and-folders"></a>使用 PowerShell 排除文件和文件夹
 
-1. 在 **"开始"菜单中键入 powershell，** 右 **键单击** "Windows PowerShell并选择"以 **管理员角色运行"**
+1. 在 **"开始"菜单中键入 powershell，** 右 **键单击**"Windows PowerShell并选择"以 **管理员角色运行"**
 2. 输入以下 cmdlet：
 
     ```PowerShell
@@ -111,7 +111,7 @@ ms.locfileid: "51570347"
 
 ## <a name="customize-the-notification"></a>自定义通知
 
-你可以自定义何时触发规则并阻止应用或文件的通知。 请参阅 [Windows 安全](/windows/security/threat-protection/windows-defender-security-center/windows-defender-security-center#customize-notifications-from-the-windows-defender-security-center) 文章。
+你可以自定义何时触发规则并阻止应用或文件的通知。 请参阅[Windows 安全中心](/windows/security/threat-protection/windows-defender-security-center/windows-defender-security-center#customize-notifications-from-the-windows-defender-security-center)文章。
 
 ## <a name="related-topics"></a>相关主题
 

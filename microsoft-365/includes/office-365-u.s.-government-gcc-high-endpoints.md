@@ -17,7 +17,7 @@ ID | 类别 | ER | Addresses | 端口
 ID | 类别 | ER | Addresses | 端口
 -- | -------------------- | --- | ------------------------------------------------------------------------------------------------------------------------- | ----------------
 9  | 优化<BR>必填 | 是 | `*.sharepoint.us`<BR>`20.34.8.0/22, 104.212.50.0/23, 2001:489a:2204:2::/63, 2001:489a:2204:800::/54` | **TCP：** 443、80
-10  | 默认<BR>必填 | 否 | `*.wns.windows.com, admin.onedrive.us, g.live.com, odc.officeapps.live.com, officeclient.microsoft.com, oneclient.sfx.ms` | **TCP：** 443、80
+10   | 默认<BR>必填 | 否 | `*.wns.windows.com, admin.onedrive.us, g.live.com, odc.officeapps.live.com, officeclient.microsoft.com, oneclient.sfx.ms` | **TCP：** 443、80
 20 | 默认<BR>必填 | 否 | `*.svc.ms, az741266.vo.msecnd.net, spoprod-a.akamaihd.net, static.sharepointonline.com, tb.pipe.aria.microsoft.com` | **TCP：** 443、80
 
 ## <a name="skype-for-business-online-and-microsoft-teams"></a>Skype for Business Online 和 Microsoft Teams
@@ -35,13 +35,13 @@ ID | 类别 | ER | Addresses | 端口
 12  | 默认<BR>必填 | 是 | `*.cdn.office365.us` | **TCP：** 443
 13 | 允许<BR>必填 | 是 | `*.gov.us.microsoftonline.com, graph.microsoft.us, graph.microsoftazure.us, login.microsoftonline.us`<BR>`20.140.232.0/23, 52.126.194.0/23` | **TCP：** 443
 14  | 默认<BR>必填 | 否 | `*.msauth.net, *.msauthimages.us, *.msftauth.net, *.msftauthimages.us, clientconfig.microsoftonline-p.net, graph.windows.net, login.microsoftonline.com, login.microsoftonline-p.com, login.windows.net, loginex.microsoftonline.com, login-us.microsoftonline.com, mscrl.microsoft.com, nexus.microsoftonline-p.com, secure.aadcdn.microsoftonline-p.com` | **TCP：** 443
-15  | 默认<BR>必填 | 否 | `officehome.msocdn.us, prod.msocdn.us` | **TCP：** 443、80
+15 | 默认<BR>必填 | 否 | `officehome.msocdn.us, prod.msocdn.us` | **TCP：** 443、80
 16  | 允许<BR>必填 | 是 | `portal.office365.us, www.office365.us`<BR>`13.72.179.48/32, 52.227.167.206/32, 52.227.170.242/32` | **TCP：** 443、80
 17  | 允许<BR>必填 | 是 | `*.osi.office365.us, gcchigh.loki.office365.us, tasks.office365.us`<BR>`52.127.240.0/20, 2001:489a:2206::/48` | **TCP：** 443
 18  | 默认<BR>必填 | 否 | `activation.sls.microsoft.com, crl.microsoft.com, go.microsoft.com, insertmedia.bing.office.net, ocsa.officeapps.live.com, ocsredir.officeapps.live.com, ocws.officeapps.live.com, office15client.microsoft.com, officecdn.microsoft.com, officecdn.microsoft.com.edgesuite.net, officepreviewredir.microsoft.com, officeredir.microsoft.com, ols.officeapps.live.com, r.office.microsoft.com` | **TCP：** 443、80
 19 | 默认<BR>必填 | 否 | `cdn.odc.officeapps.live.com, odc.officeapps.live.com, officeclient.microsoft.com` | **TCP：** 443、80
 23 | 默认<BR>必填 | 否 | `*.office365.us` | **TCP：** 443、80
-24 | 默认<BR>必填 | 否 | `lpcres.delve.office.com` | **TCP：** 443
+24 | 默认值<BR>必填 | 否 | `lpcres.delve.office.com` | **TCP：** 443
 25 | 默认<BR>必填 | 否 | `*.cdn.office.net` | **TCP：** 443
 26 | 允许<BR>必填 | 是 | `*.compliance.microsoft.us, *.security.microsoft.us, compliance.microsoft.us, security.microsoft.us`<BR>`13.72.179.197/32, 13.72.183.70/32, 23.103.191.0/24, 23.103.199.128/25, 23.103.208.0/22, 52.227.170.14/32, 52.227.170.120/32, 52.227.178.94/32, 52.227.180.138/32, 52.227.182.149/32, 52.238.74.212/32, 52.244.65.13/32, 2001:489a:2202:4::/62, 2001:489a:2202:c::/62, 2001:489a:2202:2000::/63` | **TCP：** 443、80
 28 | 默认<BR>必填 | 否 | `activity.windows.com` | **TCP：** 443

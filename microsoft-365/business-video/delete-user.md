@@ -1,5 +1,5 @@
 ---
-title: 从 Microsoft 365 商业版中删除用户
+title: 从企业Microsoft 365用户
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -20,7 +20,7 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: 了解如何删除 Microsoft 365 商业版中的用户。
+description: 了解如何删除企业Microsoft 365用户。
 ms.openlocfilehash: 8b2f0db242197aecb04df2261caac3688ad4f1b2
 ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
@@ -32,7 +32,7 @@ ms.locfileid: "51578923"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOfR?autoplay=false]
 
-当员工离开公司时，你需要从 Microsoft 365 商业版中删除他们。 在执行此操作之前，应阻止他们访问公司文件、保留他们创建的文档，并执行与删除用户相关的其他一些管理任务。
+当员工离开公司时，你需要将其从企业Microsoft 365中删除。 在执行此操作之前，应阻止他们访问公司文件、保留他们创建的文档，并执行与删除用户相关的其他一些管理任务。
 
 ## <a name="try-it"></a>试一试！
 
@@ -40,7 +40,7 @@ ms.locfileid: "51578923"
 1. 选择要删除的用户，然后选择"删除 **用户"。**
 1. 选中此框可删除其许可证，并选中此框可删除其电子邮件别名。
 1. 如果用户具有委派邮箱权限，可以在此处删除这些权限。
-1. 选中此框以向另一个用户授予对前员工的 OneDrive 的访问权限，然后搜索该用户。
+1. 选中此框以向另一个用户授予对前员工OneDrive访问权限，然后搜索该用户。
 1. 选择他们的名称。
 1. 此用户现在有 30 天的时间将文件移动到新位置。
 1. 选中此框以向另一个用户授予对前员工的电子邮件的访问权限，然后选择"**选择用户并设置电子邮件选项"。**

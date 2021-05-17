@@ -28,17 +28,17 @@ ms.locfileid: "51570554"
 
 **本文内容：** 本文可帮助你设置合规性管理器。 了解如何访问 **合规性** 管理器 **、设置角色和权限** 以及配置 **改进操作自动测试**。 演练 **合规性管理器仪表板** 并了解主要页面：改进行动页、解决方案页、评估页和评估模板页。
 
-## <a name="who-can-access-compliance-manager"></a>谁可以访问合规性管理器
+## <a name="who-can-access-compliance-manager"></a>Who可以访问合规性管理器
 
-合规性管理器适用于具有 Office 365 和 Microsoft 365 许可证的组织，以及美国政府社区云 (GCC) 中等、GCC High 和国防部 (DoD) 客户。 评估可用性和管理功能取决于您的许可协议。  [查看服务说明详细信息](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。
+合规性管理器适用于具有 Office 365 和 Microsoft 365 许可证的组织，以及美国 政府社区云 (GCC) 中等、GCC 高和国防部 (DoD) 客户。 评估可用性和管理功能取决于您的许可协议。  [查看服务说明详细信息](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。
 
-## <a name="before-you-begin"></a>准备工作
+## <a name="before-you-begin"></a>开始之前
 
-组织的 Microsoft 365 全局管理员可能是第一个访问合规性管理器的用户。 我们建议全局管理员登录并设置用户权限，如第一次访问合规性管理器时所述。
+组织的Microsoft 365管理员可能是第一个访问合规性管理器的用户。 我们建议全局管理员登录并设置用户权限，如第一次访问合规性管理器时所述。
 
 ## <a name="sign-in"></a>登录
 
-1. 转到 [Microsoft 365](https://compliance.microsoft.com/) 合规中心 **，然后使用** Microsoft 365 全局管理员帐户登录。
+1. 转到合规性 [Microsoft 365，](https://compliance.microsoft.com/)**然后使用你的** Microsoft 365 全局管理员帐户登录。
 2. 选择 **左侧导航** 窗格中的"合规性管理器"。 你将到达合规性管理器 [仪表板](#understand-the-compliance-manager-dashboard)。
 
 访问合规性管理器的直接链接是 [https://compliance.microsoft.com/compliancemanager](https://compliance.microsoft.com/compliancemanager) 。
@@ -49,14 +49,14 @@ ms.locfileid: "51570554"
 
 ### <a name="where-to-set-permissions"></a>在何处设置权限
 
-拥有组织的全局管理员角色的人可以设置合规性管理器的用户权限。 权限可以在 Office 365 安全与合规中心& Azure AD (Azure Active Directory) 。
+拥有组织的全局管理员角色的人可以设置合规性管理器的用户权限。 可以在安全与合规中心Office 365 Azure AD &设置权限Azure Active Directory (Azure AD) 。
 
 > [!NOTE]
-> 美国政府社区 (GCC) 高和国防部 (DoD) 环境的客户只能在 Azure AD 中为合规性管理器设置用户权限和角色。 有关 Azure AD 说明和角色类型定义，请参阅下文。
+> 美国政府高级Community (GCC) 和国防部 (DoD) 环境的客户只能在 Azure AD 中为合规性管理器设置用户权限和角色。 有关 Azure AD 说明和角色类型定义，请参阅下文。
 
-若要在 Office 365 安全与合规中心中设置权限&分配角色，请按照以下步骤操作：
+若要在安全与合规Office 365中&和分配角色，请按照以下步骤操作：
 
-1. 转到 [Office 365 安全与&中心，](https://protection.office.com/) 然后选择左侧导航 **上的权限** 。
+1. 转到安全Office 365 [安全&中心，](https://protection.office.com/)然后选择左侧 **导航上的权限**。
 
 2. 查找要添加一个或多个用户的角色组，并选中组名称左侧的框。  (请参阅 [下面的角色和相关函数列表](#role-types)。 角色组名称模仿角色名称。) 
 
@@ -70,17 +70,17 @@ ms.locfileid: "51570554"
 
 7. 分配完用户后，选择"完成"，然后选择"**保存**"，然后选择"**关闭"。**
 
-##### <a name="more-about-the-office-365-security--compliance-center"></a>有关 Office 365 安全与&中心
+##### <a name="more-about-the-office-365-security--compliance-center"></a>有关安全Office 365合规&中心
 
-详细了解 Office [365 安全](../security/office-365-security/permissions-in-the-security-and-compliance-center.md)与合规中心&权限。
+详细了解安全[与合规Office 365&权限](../security/office-365-security/permissions-in-the-security-and-compliance-center.md)。
 
-如果您无法访问 Office 365 安全与合规中心，或者您需要访问 Microsoft 服务信任门户中的经典版本的合规性管理器，则服务信任门户中的管理员设置提供了另一种分配角色 (查看说明[) 。](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md#assigning-compliance-manager-roles-to-users) 请注意，此类角色的功能更加有限。
+如果您无法访问 Office 365 安全与合规中心，或者您需要访问 Microsoft 服务信任门户中的经典版本的合规性管理器，则服务信任门户中的管理员设置提供了另一种方法来分配角色 ([查看](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md#assigning-compliance-manager-roles-to-users)说明) 。 请注意，此类角色的功能更加有限。
 
 ##### <a name="more-about-azure-ad"></a>有关 Azure AD 的更多信息
 
-若要在 Azure AD 中分配角色和设置权限，请参阅使用 Azure Active Directory 向用户分配管理员 [和非管理员角色](/azure/active-directory/fundamentals/active-directory-users-assign-role-azure-portal)。
+若要在 Azure AD 中分配角色和设置权限，请参阅将管理员和非[管理员](/azure/active-directory/fundamentals/active-directory-users-assign-role-azure-portal)角色分配给具有Azure Active Directory。
 
-具有 Azure AD 标识的用户没有 Office 365 或 Microsoft 365 订阅，将无法访问 Microsoft 365 合规中心中的合规性管理器。 若要在访问合规性管理器方面寻求帮助 [，请联系](mailto:cmresearch@microsoft.com)cmresearch@microsoft.com。
+具有 Azure AD 标识的用户（没有 Office 365 或 Microsoft 365 订阅）将无法访问 Microsoft 365 合规中心中的合规性管理器。 若要在访问合规性管理器方面寻求帮助 [，请联系](mailto:cmresearch@microsoft.com)cmresearch@microsoft.com。
 
 ### <a name="role-types"></a>角色类型
 
@@ -95,24 +95,24 @@ ms.locfileid: "51570554"
 | **管理评估、模板和租户数据**| 合规性管理器管理 | 合规性管理员、合规性数据管理员、安全管理员  | 
 | **分配用户**| 全局管理员 | 全局管理员 | 
 
-## <a name="settings-for-automated-testing-and-user-history"></a>自动测试和用户历史记录的设置
+## <a name="settings-for-automated-testing-and-user-history"></a>设置自动测试和用户历史记录
 
-Microsoft 365 合规中心中的合规性管理器设置允许你启用和禁用改进操作自动测试。 这些设置还允许您管理与改进操作关联的用户数据，包括将改进操作重新分配给其他用户的能力。  只有具有全局管理员或合规性管理器管理员角色的人才能访问合规性管理器设置。
+合规性中心中的合规性Microsoft 365设置允许您启用和禁用改进操作自动测试。 这些设置还允许您管理与改进操作关联的用户数据，包括将改进操作重新分配给其他用户的能力。  只有具有全局管理员或合规性管理器管理员角色的人才能访问合规性管理器设置。
 
 > [!NOTE]
-> GCC High 和 DoD 环境中的客户无法使用自动测试功能，因为这些环境中没有安全功能分数。 GCC High 和 DoD 客户需要手动实施和测试其改进操作。
+> 自动测试功能不适用于高GCC DoD 环境中的客户，因为这些环境中没有安全功能分数。 GCC高和 DoD 客户需要手动实施和测试其改进操作。
 
 ### <a name="set-up-automated-testing"></a>设置自动测试
 
 合规性管理器中的一些改进操作也受 [Microsoft 安全](../security/defender/microsoft-secure-score.md)分数 监视。 可以设置对共同监视的操作的自动测试，这意味着在安全分数中对操作进行测试和更新时，这些结果会与合规性管理器中的相同操作同步，并计入合规性分数。
 
-默认情况下，对使用合规性管理器的组织启用自动测试。 首次部署 Microsoft 365 或 Office 365 时，安全分数需要大约 7 天的时间，以完全收集数据，并纳入合规性分数中。  启用自动测试后，不会更新该操作的测试日期，但其测试状态将更新。 创建新评估后，分数将自动包含 Microsoft 控制分数和安全分数集成。
+默认情况下，对使用合规性管理器的组织启用自动测试。 首次部署Microsoft 365或Office 365时，安全分数需要大约 7 天的时间，以完全收集数据，并纳入合规性分数中。  启用自动测试后，不会更新该操作的测试日期，但其测试状态将更新。 创建新评估后，分数将自动包含 Microsoft 控制分数和安全分数集成。
 
 组织的全局管理员可以随时更改自动测试的设置。 您可以关闭常见改进操作自动化测试，或为单个操作启用它。 按照下面的说明更改自动测试设置。
 
 #### <a name="to-manage-your-automated-testing-settings"></a>若要管理自动测试设置：
 
-1. 从 Microsoft 365 合规中心中的任意位置选择[左侧导航上的"设置"。](https://compliance.microsoft.com/)
+1. Select **设置** on the left navigation fromanywhere in the [Microsoft 365 compliance center](https://compliance.microsoft.com/).
 
 2. 在设置页上，选择合规性 **管理器**。
 
@@ -134,7 +134,7 @@ Microsoft 365 合规中心中的合规性管理器设置允许你启用和禁用
 
 **若要查找用户历史记录设置，请执行以下操作：**
 
-1. 从 Microsoft 365 合规中心中的任意位置选择[左侧导航上的"设置"。](https://compliance.microsoft.com/)
+1. Select 设置 on the left navigation fromanywhere in the [Microsoft 365 compliance center](https://compliance.microsoft.com/).
 
 2. 在设置页上，选择合规性 **管理器**。
 
@@ -146,13 +146,13 @@ Microsoft 365 合规中心中的合规性管理器设置允许你启用和禁用
 
 #### <a name="export-a-report-of-user-history-data"></a>导出用户历史记录数据报告
 
-可以导出包含当前分配给用户的改进操作列表的 Excel 文件。  该报告还列出了该用户上载的任何证据文件。 此信息可帮助您重新分配开放改进操作。
+您可以导出一Excel文件，其中包含当前分配给用户的改进操作列表。  该报告还列出了该用户上载的任何证据文件。 此信息可帮助您重新分配开放改进操作。
 
 该报告反映自创建日期起改进操作的状态。 这不是之前对状态或工作分配的所有更改的历史报告， (从改进操作页面[导出) 。](compliance-manager-improvement-actions.md#export-a-report)
 
 **按照以下步骤按用户导出报告：**
 
-1. 从 Microsoft 365 合规中心中的任意位置选择[左侧导航上的"设置"。](https://compliance.microsoft.com/)
+1. Select **设置** on the left navigation fromanywhere in the [Microsoft 365 compliance center](https://compliance.microsoft.com/).
 
 2. 在设置页上，选择合规性 **管理器**。
 
@@ -162,7 +162,7 @@ Microsoft 365 合规中心中的合规性管理器设置允许你启用和禁用
 
 5. 从"**选择"** 下拉菜单中，选择"导出 **报告"。**
 
-6. 生成报表的 Excel 文件后，可以将其打开并保存到本地计算机。
+6. 生成Excel文件后，你可以打开它并将其保存到本地计算机。
 
 #### <a name="reassign-improvement-actions-to-another-user"></a>将改进操作重新分配给其他用户
 
@@ -170,7 +170,7 @@ Microsoft 365 合规中心中的合规性管理器设置允许你启用和禁用
 
 **按照以下步骤将改进操作重新分配给其他用户：**
 
-1. 从 Microsoft 365 合规中心中的任意位置选择[左侧导航上的"设置"。](https://compliance.microsoft.com/)
+1. Select **设置** on the left navigation fromanywhere in the [Microsoft 365 compliance center](https://compliance.microsoft.com/).
 
 2. 在设置页上，选择合规性 **管理器**。
 
@@ -197,7 +197,7 @@ Microsoft 365 合规中心中的合规性管理器设置允许你启用和禁用
 
 若要删除用户的历史记录，请按照以下步骤操作：
 
-1. 从 Microsoft 365 合规中心中的任意位置选择[左侧导航上的"设置"。](https://compliance.microsoft.com/)
+1. Select **设置** on the left navigation fromanywhere in the [Microsoft 365 compliance center](https://compliance.microsoft.com/).
 
 2. 在设置页上，选择合规性 **管理器**。
 
@@ -217,15 +217,15 @@ Microsoft 365 合规中心中的合规性管理器设置允许你启用和禁用
 
 ![合规性管理器 - 仪表板](../media/compliance-manager-dashboard.png "合规性管理器仪表板")
 
-### <a name="overall-compliance-score"></a>总体合规性分数
+### <a name="overall-compliance-score"></a>整体合规性分数
 
 合规性分数特别推荐在最上面。 它根据完成解决关键数据保护标准和法规的改进操作可达到的分数来显示百分比。 Microsoft 操作 [中的](compliance-manager-assessments.md#microsoft-actions-tab)分数（管理我的 Microsoft）也计入合规性分数中。
 
-当你首次访问合规性管理器时，你的初始分数基于 [Microsoft 365 数据保护基线](compliance-manager-assessments.md#data-protection-baseline-default-assessment)。 此基线评估可供所有组织使用，是一组包含常见行业法规和标准的控制措施。 合规性管理器可扫描现有的 Microsoft 365 解决方案，并基于当前的隐私和安全设置进行初始评估。 添加与组织相关的评估时，分数将变得更加有意义。
+当你第一次访问合规性管理器时，你的初始分数基于Microsoft 365[基线 。](compliance-manager-assessments.md#data-protection-baseline-default-assessment) 此基线评估可供所有组织使用，是一组包含常见行业法规和标准的控制措施。 合规性管理器可扫描Microsoft 365解决方案，并基于当前隐私和安全设置进行初始评估。 添加与组织相关的评估时，分数将变得更加有意义。
 
 **了解更多信息：**[了解如何计算合规性分数](compliance-score-calculation.md)。
 
-### <a name="key-improvement-actions"></a>关键改进操作
+### <a name="key-improvement-actions"></a>关键性改进措施
 
 本部分列出了你现在可以采取的最大改进措施，以对整体合规性分数产生最大正面影响。 选择 **"查看所有改进操作** "以转到您的改进操作页面。
 
@@ -233,7 +233,7 @@ Microsoft 365 合规中心中的合规性管理器设置允许你启用和禁用
 
 本节重点介绍包含可直接影响分数的改进操作的解决方案，以及这些解决方案中未完成的改进操作的数量。 选择 **"查看所有解决方案** "以访问您的解决方案页面。
 
-### <a name="compliance-score-breakdown"></a>合规性分数细分
+### <a name="compliance-score-breakdown"></a>合规性分数细目
 
 本部分以两种不同的方式为你提供分数的更详细视图：
 
@@ -316,7 +316,7 @@ Microsoft 365 合规中心中的合规性管理器设置允许你启用和禁用
 
 1. 在预期解决方案行的"剩余操作" **列下，** 选择超链接编号。 你将看到改进操作屏幕的筛选视图，其中显示了该解决方案的未经测试的改进操作。
 
-2. 在预期解决方案行的"打开解决方案"列下，选择"打开 **"。** 你将在 Microsoft 365 和 Office 365 安全与合规中心内看到解决方案或位置，你可以在这里采取建议的操作。
+2. 在预期解决方案行的"打开解决方案"列下，选择"打开 **"。** 你将在安全与合规中心Microsoft 365解决方案Office 365位置，你可以在这里采取建议的操作。
 
 ## <a name="assessments-page"></a>评估页面
 
@@ -336,7 +336,7 @@ Microsoft 365 合规中心中的合规性管理器设置允许你启用和禁用
 - **改进操作**：满足控件实施要求已完成操作的数量
 - **Microsoft 操作**：满足 Microsoft 控件实现已完成操作的数量
 - **组**：评估所属组的名称
-- **产品**：关联的 Microsoft 365 服务
+- **产品**：关联的Microsoft 365服务
 - **法规**：适用于评估的法规标准、策略或法律
 
 ### <a name="filtering-your-assessments-view"></a>筛选评估视图
@@ -353,13 +353,13 @@ Microsoft 365 合规中心中的合规性管理器设置允许你启用和禁用
 
 默认情况下，你将在评估页面上看到数据保护[](compliance-manager-assessments.md#data-protection-baseline-default-assessment)基线评估。 合规性管理器还提供了多个用于生成 [评估](compliance-manager-templates-list.md) 的预建模板。
 
-## <a name="assessment-templates-page"></a>评估模板页
+## <a name="assessment-templates-page"></a>评估模板页面
 
-模板是在合规性管理器中创建评估的框架。 评估模板页显示模板列表和关键详细信息。 该列表包括合规性管理器提供的模板，以及组织已修改或创建的任何模板。 你可以应用筛选器以根据认证、产品范围、国家/地区、行业以及创建者来查找模板。
+模板是用于在合规性管理器中创建评估的框架， 评估模板页面将显示模板和关键详细信息的列表。 该列表包括合规性管理器提供的模板，以及组织已修改或创建的任何模板。 你可以应用筛选器以根据认证、产品范围、国家/地区、行业以及创建者来查找模板。
 
 页面 **顶部附近的** 已激活模板计数器显示在可供组织使用的模板总数中当前使用的活动评估模板的数量。 有关详细信息 [，请参阅](compliance-manager-templates.md#template-types-included-and-premium-active-and-inactive) 模板类型。
 
-Select a template from its row to bring up its details page， which contains a description of the template and further information about certification， scope， and controls details. 在此页中，您可以选择相应的按钮来创建评估、将模板数据导出到 Excel 或修改模板。
+Select a template from its row to bring up its details page， which contains a description of the template and further information about certification， scope， and controls details. 在此页中，可以选择相应的按钮来创建评估、将模板数据导出到Excel，或修改模板。
 
 **了解更多信息：**[了解如何使用评估模板](compliance-manager-templates.md)。
 

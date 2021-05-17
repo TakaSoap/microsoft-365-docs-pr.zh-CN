@@ -36,17 +36,17 @@ ms.locfileid: "51569739"
 
 本文列出了所有事件及其关联的功能或设置，并介绍如何创建自定义视图以筛选到特定事件。
 
-获取事件的详细报告，并阻止作为 Windows 安全性的一部分（如果你有 E5 订阅并使用 [Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)）。
+获取事件和块的详细报告，Windows 安全中心 E5 订阅并使用[Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)。
 
 ## <a name="use-custom-views-to-review-attack-surface-reduction-capabilities"></a>使用自定义视图查看攻击面减少功能
 
-在 Windows 事件查看器中创建自定义视图，以仅查看特定功能和设置的事件。 最简单的方法是将自定义视图导入为 XML 文件。 您可以直接从此页面复制 XML。
+在事件查看器中Windows视图，以仅查看特定功能和设置的事件。 最简单的方法是将自定义视图导入为 XML 文件。 您可以直接从此页面复制 XML。
 
 还可以手动导航到与功能对应的事件区域。
 
 ### <a name="import-an-existing-xml-custom-view"></a>导入现有 XML 自定义视图
 
-1. 创建一个空 .txt 文件，将想要使用的自定义视图的 XML 复制到 .txt 文件中。 为想要使用的每个自定义视图执行这一操作。 按如下所示重命名文件 (确保将类型从 .txt 更改为 .xml) ：
+1. 创建一个.txt文件，将想要使用的自定义视图的 XML 复制到.txt文件中。 为想要使用的每个自定义视图执行这一操作。 按如下所示重命名文件 (确保将类型从 .txt 更改为 .xml) ：
     - 受控文件夹访问事件自定义视图 *：cfa-events.xml*
     - Exploit Protection 事件自定义视图 *：ep-events.xml*
     - 攻击面减少事件自定义视图 *：asr-events.xml*
@@ -66,13 +66,13 @@ ms.locfileid: "51569739"
 
 ### <a name="copy-the-xml-directly"></a>直接复制 XML
 
-1. 在 **"开始** "菜单中键入事件查看器，然后打开 Windows **事件查看器**。
+1. 在 **"开始**"菜单中键入事件查看器，然后Windows **事件查看器。**
 
 2. 在左侧面板的"操作 **"下**，选择 **"创建自定义视图..."。**
 
     ![在事件查看器窗口中突出显示"创建自定义视图"选项的动画](/windows/security/threat-protection/images/events-create)
 
-3. 转到"XML"选项卡，然后选择"**手动编辑查询"。** 如果使用的是 XML 选项，则会看到一条警告，提示你无法使用"筛选器"选项卡编辑查询。 选择“**是**”。
+3. 转到"XML"选项卡，然后选择"**手动编辑查询"。** 如果使用的是 XML 选项，则会看到一条警告，提示你无法使用"筛选器"选项卡编辑查询。 选择“是”。
 
 4. 将您希望从中筛选事件的功能的 XML 代码粘贴到 XML 部分。
 
@@ -135,12 +135,12 @@ ms.locfileid: "51569739"
 
 ## <a name="list-of-attack-surface-reduction-events"></a>攻击面减少事件列表
 
-所有攻击面减少事件都位于 Microsoft **> Windows** 应用程序和服务日志>下，然后位于下表中列出的文件夹或提供程序下。
+所有攻击面减少事件都位于 **Microsoft** > 应用程序和服务日志> Windows下，然后位于下表中列出的文件夹或提供程序下。
 
-可以在 Windows 事件查看器中访问这些事件：
+可以在事件查看器中Windows这些事件：
 
 1. 打开" **开始"** 菜单并 **键入事件查看器**，然后选择 **事件查看器** 结果。
-2. 展开 **Microsoft > Windows** >应用程序和服务日志"，然后转到下表中的"提供程序 **/源** "下列出的文件夹。
+2. 展开 **Microsoft >** 应用程序和服务日志> Windows然后转到下表中的提供程序 **/源** 下列出的文件夹。
 3. 双击子项以查看事件。 滚动浏览事件以查找你正在查找的事件。
 
    ![使用事件查看器显示动画](/windows/security/threat-protection/images/event-viewer)
@@ -161,7 +161,7 @@ ms.locfileid: "51569739"
 漏洞保护 | Security-Mitigations (内核模式/用户模式)  | 12  | 代码完整性防护块
 漏洞保护 | Security-Mitigations (内核模式/用户模式)  | 13 | EAF 审核
 漏洞保护 | Security-Mitigations (内核模式/用户模式)  | 14  | EAF 强制
-漏洞保护 | Security-Mitigations (内核模式/用户模式)  | 15  | EAF+ 审核
+漏洞保护 | Security-Mitigations (内核模式/用户模式)  | 15 | EAF+ 审核
 漏洞保护 | Security-Mitigations (内核模式/用户模式)  | 16  | EAF+ 强制
 漏洞保护 | Security-Mitigations (内核模式/用户模式)  | 17  | IAF 审核
 漏洞保护 | Security-Mitigations (内核模式/用户模式)  | 18  | IAF 强制

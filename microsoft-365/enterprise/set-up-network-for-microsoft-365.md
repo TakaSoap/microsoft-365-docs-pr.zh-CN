@@ -1,5 +1,5 @@
 ---
-title: 为 Microsoft 365 设置你的网络
+title: 为用户设置Microsoft 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -19,7 +19,7 @@ ms.custom:
 - Ent_TLGs
 - seo-marvel-apr2020
 ms.assetid: ''
-description: 查找指向文章的链接，这些文章包含可帮助您为 Microsoft 365 设置网络的信息，其中包括网络连接概述和终结点列表。
+description: 查找指向文章的链接，这些文章包含可帮助您为 Microsoft 365设置网络的信息，包括网络连接概述和终结点列表。
 ms.openlocfilehash: f0e0499c70745d31399240372c190758285408aa
 ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
 ms.translationtype: MT
@@ -27,25 +27,25 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 08/14/2020
 ms.locfileid: "46687644"
 ---
-# <a name="set-up-your-network-for-microsoft-365"></a>为 Microsoft 365 设置你的网络
+# <a name="set-up-your-network-for-microsoft-365"></a>为用户设置Microsoft 365
 
 *此文章适用于 Microsoft 365 企业版和 Office 365 企业版。* 
 
-你的 Microsoft 365 加入的一个重要部分是确保设置了你的网络和 Internet 连接以实现优化的访问。 配置您的本地网络以访问全局分布式软件即服务 (SaaS) 云不同于针对本地数据中心和中心 Internet 连接进行了优化的传统网络。 
+载入的一Microsoft 365一部分是为了确保网络和 Internet 连接已设置为优化访问。 将本地网络配置为访问全局分布式软件即服务 (SaaS) 云与针对到内部部署数据中心的流量和中央 Internet 连接进行了优化的传统网络不同。 
 
 使用以下文章来理解它们之间的关键区别，并修改你的边缘设备、客户端计算机和内部网络，以为本地用户获得最佳性能。
 
-## <a name="how-microsoft-365-networking-works"></a>Microsoft 365 网络的工作原理
+## <a name="how-microsoft-365-networking-works"></a>网络Microsoft 365工作原理
 
-请参阅以下文章，了解 Microsoft 365 的连接概述：
+请参阅以下文章，大致了解Microsoft 365：
 
 - [Microsoft 365 网络连接概述](microsoft-365-networking-overview.md)
 - [Microsoft 365 网络连接原则](microsoft-365-network-connectivity-principles.md)
 - [评估 Microsoft 365 网络连接](assessing-network-connectivity.md)
 
-有关增强性能的建议，请参阅 [适用于 Microsoft 365 的网络规划和性能调整](network-planning-and-performance.md)。
+有关增强性能的建议，请参阅 Network [planning and performance tuning for Microsoft 365](network-planning-and-performance.md)。
 
-## <a name="support-microsoft-365-networking-as-a-network-equipment-vendor"></a>支持将 Microsoft 365 网络作为网络设备供应商
+## <a name="support-microsoft-365-networking-as-a-network-equipment-vendor"></a>作为Microsoft 365供应商支持网络
 
 如果你是网络设备供应商，请加入 [Office 365 网络合作伙伴计划](microsoft-365-networking-partner-program.md)。加入该计划即可在你的产品和解决方案中构建 Office 365 网络连接原则。 
 
@@ -61,7 +61,7 @@ ms.locfileid: "46687644"
 
 | 终结点 | 说明 |
 |:-------|:-----|
-| [全球端点](urls-and-ip-address-ranges.md) | 针对全球 Office 365 订阅的端点，其中包括美国政府社区云 (GCC) 订阅。 |
+| [全球终结点](urls-and-ip-address-ranges.md) | 针对全球 Office 365 订阅的端点，其中包括美国政府社区云 (GCC) 订阅。 |
 | [美国政府 DoD 端点](microsoft-365-u-s-government-dod-endpoints.md) | 针对美国国防部 (DoD) 订阅的端点。 |
 | [美国政府 GCC 高端点](microsoft-365-u-s-government-gcc-high-endpoints.md) | 针对美国政府社区云高（GCC 高）订阅的端点。 |
 | [由世纪互联运营的 Office 365 端点](urls-and-ip-address-ranges-21vianet.md) | 由世纪互联运营的 Office 365 的端点，旨在满足中国境内对 Office 365 的需求。 |
@@ -76,9 +76,9 @@ ms.locfileid: "46687644"
 - [Office 2016 for Mac 中的网络请求](network-requests-in-office-2016-for-mac.md)
 
 
-## <a name="additional-topics-for-microsoft-365-networking"></a>Microsoft 365 网络的其他主题
+## <a name="additional-topics-for-microsoft-365-networking"></a>有关网络Microsoft 365主题
 
-请参阅以下文章，了解 Microsoft 365 网络中的专门主题：
+请参阅以下文章，了解Microsoft 365主题：
 
 - [内容分发网络](content-delivery-networks.md)
 - [Office 365 服务中的 IPv6 支持](ipv6-support.md)

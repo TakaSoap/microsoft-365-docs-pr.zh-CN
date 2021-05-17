@@ -19,7 +19,7 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: 了解如何安排与来宾一起举行 Teams 会议。
+description: 了解如何安排与来宾Teams会议。
 ms.openlocfilehash: 1a48fa290211507453004c54637e588ad9ad6759
 ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
@@ -31,17 +31,17 @@ ms.locfileid: "51578695"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOhP?autoplay=false]
 
-你可以邀请组织外部人员参加会议，而无需将其添加到 Microsoft Teams。 下面是客户或合作伙伴在没有 Teams 帐户的情况下加入会议 [时的工作方式](https://support.microsoft.com/office/c6efc38f-4e03-4e79-b28f-e65a4c039508)。
+你可以邀请组织外部人员参加会议，而无需将其添加到Microsoft Teams。 下面是客户或合作伙伴在没有帐户的情况下加入会议Teams[的工作原理](https://support.microsoft.com/office/c6efc38f-4e03-4e79-b28f-e65a4c039508)。
 
 ## <a name="try-it"></a>试一试！
 
 使用 Microsoft Teams，可以在启动新项目或添加客户时创建新团队。
 
-1. 在 **"Teams"** 选项卡上，选择"加入 **或创建团队"，"** 创建团队"，"从头开始建立团队"，然后选择"**专用"。**  
+1. 在 **"Teams"** 选项卡上，选择"加入或创建团队"，"创建团队"，"从头开始建立团队"，然后选择"**专用"。**
 2. 输入团队的名称、说明，然后选择"创建 **"。**
 3. 在"**添加成员**"页上，通过搜索和选择内部成员来添加内部成员，然后通过输入来宾成员的电子邮件地址来添加来宾成员，然后选择"添加 **"。**
 
-    如果你看到  **我们找不到任何匹配项** ，则必须启用来宾共享。 转到 Microsoft 365 管理中心，选择 Teams 管理中心，选择"**组织范围的** 设置"和"来宾访问"，然后打开"**在 Teams 中允许来宾访问"。**  此更改最多可能需要 24 小时。
+    如果你看到  **我们找不到任何匹配项** ，则必须启用来宾共享。 转到"Microsoft 365管理中心"，选择"Teams管理中心"，选择"组织 **范围的** 设置"和"来宾访问"，然后打开"允许来宾访问 **Teams"。**  此更改最多可能需要 24 小时。
 
 1. 选择 **"关闭"。** 你的来宾和成员将收到对团队的邀请。
 2. 在"常规"频道上，输入每个人的问候语，然后选择"**发送"。**

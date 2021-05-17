@@ -25,7 +25,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: c3ac23c5-d4b4-4b1b-b7ce-ea759521bf8c
-description: 在 Microsoft 365 商业版管理员主页的"设备操作"列表中了解各种设备状态。
+description: 了解适用于企业管理员主页的"设备操作"列表中的Microsoft 365状态。
 ms.openlocfilehash: e6f1b428413d094e0a1ce3afb026528074038736
 ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
@@ -35,7 +35,7 @@ ms.locfileid: "51578459"
 ---
 # <a name="device-states"></a>设备状态
 
-本文适用于 Microsoft 365 商业高级版。
+本文适用于Microsoft 365 商业高级版。
 
 " **设备操作**"列表中的设备（管理员主页 \>" **设备操作**"）可具有以下状态。
   
@@ -43,8 +43,8 @@ ms.locfileid: "51578459"
   
 |**状态**|**说明**|
 |:-----|:-----|
-|由 Intune 托管  <br/> |由 Microsoft 365 商业高级版管理。  <br/> |
-|等待停用  <br/> |Microsoft 365 商业高级版已准备好从设备中删除公司数据。  <br/> |
+|由 Intune 托管  <br/> |由 Microsoft 365 商业高级版。  <br/> |
+|等待停用  <br/> |Microsoft 365 商业高级版准备好从设备中删除公司数据。  <br/> |
 |正在停用  <br/> |Microsoft 365 商业高级版当前正在从设备中删除公司数据。  <br/> |
 |停用失败  <br/> | 删除公司数据操作失败。  <br/> |
 |已取消停用  <br/> |已取消停用操作。  <br/> |

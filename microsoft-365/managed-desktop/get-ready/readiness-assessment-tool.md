@@ -48,7 +48,7 @@ ms.locfileid: "51579394"
 |适用于企业的 Microsoft Store     | 确认适用于 Business 的 Microsoft Store 已启用，并且已与 Intune 同步        |
 |多重身份验证 | 验证多重身份验证是否未应用于 Microsoft 托管桌面服务帐户。
 |PowerShell 脚本     | 检查Windows PowerShell *脚本的分配* 方式是否面向 Microsoft 托管桌面设备    |
-|地区     | 检查你的区域是否受 Microsoft 托管桌面支持        |
+|区域     | 检查你的区域是否受 Microsoft 托管桌面支持        |
 |安全基线     | 检查安全基线配置文件不面向所有用户，或安全基线策略 (所有设备不应面向任何 Microsoft 托管桌面设备。)        |
 |Windows 应用     | 查看要分配给 Microsoft 托管桌面设备的应用      |
 |Windows Hello 企业版     | 检查 Windows Hello 企业版本是否已启用        |
@@ -93,7 +93,7 @@ ms.locfileid: "51579394"
 
 ## <a name="steps-to-get-ready"></a>准备步骤
 
-1. 查看 [Microsoft 托管桌面的先决条件](prerequisites.md)。
+1. 查看 [托管桌面应用](prerequisites.md)。
 2. 使用 [准备情况评估工具](readiness-assessment-tool.md)。  (本文) 
 3. [来宾帐户的先决条件](guest-accounts.md)
 4. [Microsoft 托管桌面的网络配置](network.md)

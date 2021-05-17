@@ -30,17 +30,17 @@ ms.locfileid: "52274468"
 - [Microsoft Defender for Office 365 计划 1 和计划 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-安全与合规中心&跟踪电子邮件在通过 Exchange Online 组织时跟踪。 您可以确定服务是否接收、拒绝、延迟或传递了邮件。 它还显示在邮件达到最终状态之前对邮件采取的操作。
+安全与合规中心&邮件跟踪在电子邮件经过组织时Exchange Online跟踪。 您可以确定服务是否接收、拒绝、延迟或传递了邮件。 它还显示在邮件达到最终状态之前对邮件采取的操作。
 
 您可以使用邮件跟踪中的信息有效回答用户有关邮件发生的情况的问题、解决邮件流问题并验证策略更改。
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>开始前，有必要了解什么？
 
-- 你需要是 **Exchange Online** 中组织管理、合规性 **管理** 或 **技术支持** 角色组的成员，以使用邮件跟踪。 有关详细信息，请参阅 [Exchange Online 中权限](/exchange/permissions-exo/permissions-exo)。
+- 你需要是组织中组织管理、合规性管理或 **技术支持** 角色 **Exchange Online的成员，** 以使用邮件跟踪。 有关详细信息，请参阅 [Exchange Online 中权限](/exchange/permissions-exo/permissions-exo)。
 
-  **备注：Microsoft** 365 管理中心中相应 Azure Active Directory 角色的成员身份为用户提供 Microsoft  365 中其他功能所需的权限。 有关详细信息，请参阅 [关于管理员角色](../../admin/add-users/about-admin-roles.md)。
+  **备注**：Azure Active Directory管理中心的相应 Microsoft 365 角色中的成员身份为用户提供了对 Microsoft 365 中其他功能所需的权限。  有关详细信息，请参阅 [关于管理员角色](../../admin/add-users/about-admin-roles.md)。
 
-- 邮件跟踪结果中显示的邮件的最大数量取决于您选择的报告类型 (请参阅"选择报告类型"部分，了解) 。 [](#choose-report-type) Exchange Online PowerShell 或独立 EOP PowerShell 中的 [Get-HistoricalSearch](/powershell/module/exchange/get-historicalsearch) cmdlet 在结果中返回所有邮件。
+- 邮件跟踪结果中显示的邮件的最大数量取决于您选择的报告类型 (请参阅"选择报告类型"部分，了解) 。 [](#choose-report-type) PowerShell 或独立 EOP PowerShell 中的[Get-HistoricalSearch](/powershell/module/exchange/get-historicalsearch) cmdlet Exchange Online返回结果中的所有消息。
 
 ## <a name="open-message-trace"></a>打开邮件跟踪
 
@@ -52,7 +52,7 @@ ms.locfileid: "52274468"
 
 从此处，可以通过单击"启动跟踪"按钮来 **启动新的默认** 跟踪。 这将搜索过去两天内所有发件人和收件人的所有邮件。 或者，您可以使用可用查询类别中的其中一个存储的查询，并像现在一样运行它们，或者将它们用作您自己的查询的起点：
 
-- **默认查询**：Microsoft 365 提供的内置查询。
+- **默认查询**：由用户提供的内置Microsoft 365。
 - **自定义查询**：由组织中管理员保存供将来使用的查询。
 - **自动保存的查询**：最近运行的十个查询。 此列表使你能够轻松从你离开的地方继续操作。
 
@@ -105,7 +105,7 @@ ms.locfileid: "52274468"
 - **失败**：邮件未送达。
 - **已隔离**：邮件被隔离 (垃圾邮件、批量邮件或网络钓鱼邮件) 。 有关详细信息，请参阅 [EOP 中的隔离电子邮件](quarantine-email-messages.md)。
 - **筛选为垃圾邮件**：邮件被标识为垃圾邮件，并且被拒绝或阻止 (未隔离) 。
-- **获取状态：** 此邮件最近由 Microsoft 365 接收，但尚没有其他状态数据可用。 请几分钟后重新检查。
+- **获取状态：** 邮件最近由用户Microsoft 365，但尚没有其他状态数据可用。 请几分钟后重新检查。
 
 > [!NOTE]
 > 值 **Pending、Quarantined** 和 **Filter as spam** 仅适用于少于 10 天的搜索。 此外，实际和报告的传递状态之间可能有 5 到 10 分钟的延迟。
@@ -140,7 +140,7 @@ This is the internet message ID (also known as the Client ID) that's found in th
 >
 > - 增强摘要和扩展报告是使用存档的邮件跟踪数据准备的，可能需要几个小时才能下载报告。 根据多少其他管理员还在同一时间提交了报告请求，你还可能会注意到排队请求开始处理之前有延迟。
 > - 尽管您可以为任意日期/时间范围选择"增强摘要"或"扩展报告"，但通常，这两种类型的报告通常不会提供过去四小时的存档数据。
-> - 可下载报告的最大大小为 500 MB。 如果可下载的报告超过 500 MB，则不能打开 Excel 或记事本中的报表。
+> - 可下载报告的最大大小为 500 MB。 如果可下载的报告超过 500 MB，则不能打开 Excel 或 记事本。
 
 单击"下一步"时，将显示一个摘要页，其中列出了所选的筛选选项、报告的唯一 (可编辑) 标题，以及邮件跟踪完成 (且可编辑且必须在你的组织的接受域) 之一中时收到通知的电子邮件地址。 单击 **"准备报告** "提交邮件跟踪。 在主 **"邮件跟踪"** 页上，您可以在"可下载的报告"部分查看 **报告** 的状态。
 
@@ -204,7 +204,7 @@ You can export the results after you've selected one or more rows by clicking **
   > [!NOTE]
   >
   > - 成功传递的无事件邮件将在邮件 **跟踪** 中生成多个事件条目。
-  > - 此列表并不详尽。 有关更多事件的说明，请参阅 [邮件跟踪日志中的事件类型](/Exchange/mail-flow/transport-logs/message-tracking#event-types-in-the-message-tracking-log)。 请注意，此链接是Exchange Server (Exchange) 主题。
+  > - 此列表并不详尽。 有关更多事件的说明，请参阅 [邮件跟踪日志中的事件类型](/Exchange/mail-flow/transport-logs/message-tracking#event-types-in-the-message-tracking-log)。 请注意，此链接是Exchange Server (本地Exchange) 主题。
 
 - **详细信息 ：** 此部分包含以下详细信息：
   - **邮件 ID：** 此值在本文前面的消息 [ID](#message-id) 部分中介绍。 例如，`<d9683b4c-127b-413a-ae2e-fa7dfb32c69d@DM3NAM06BG401.Eop-nam06.prod.protection.outlook.com>`。
@@ -228,7 +228,7 @@ You can export the results after you've selected one or more rows by clicking **
 - **network_message_id：** 唯一的邮件 ID 值，因混淆或通讯组扩展而创建的邮件的所有副本中均保留。 示例值为 `1341ac7b13fb42ab4d4408cf7f55890f` 。
 - **original_client_ip**：发件人客户端的 IP 地址。
 - **方向** 性：指示邮件是 (1) 发送到组织的入站邮件，还是从组织 (2) 出站邮件。
-- **connector_id**：源连接器或目标连接器的名称。 有关 Exchange Online 中的连接器详细信息，请参阅 [在 Office 365](/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow)中配置使用连接器的邮件流。
+- **connector_id**：源连接器或目标连接器的名称。 有关邮箱中的连接器Exchange Online，请参阅使用 Office 365[中的连接器配置邮件流](/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow)。
 - **delivery_priority：** <sup>*</sup> 邮件是使用高、**低还是** 普通优先级 **发送**。
 
 <sup>*</sup> 这些属性仅在增强摘要报告中可用。
@@ -244,12 +244,12 @@ Available (completed) Extended reports are available in the **Downloadable repor
 - **source_context：** 与源字段关联的 **额外** 信息。 例如：
   - `Protocol Filter Agent`
   - `3489061114359050000`
-- **source**：负责事件的 Exchange Online 组件。 例如：
+- **source：Exchange Online** 事件的组件。 例如：
   - `AGENT`
   - `MAILBOXRULE`
   - `SMTP`
 - **event_id：** 这些值对应于"查找此邮件的相关记录"部分中介绍的 **Message** [事件](#find-related-records-for-this-message) 值。
-- **internal_message_id：** 由当前正在处理邮件的 Exchange Online 服务器分配的邮件标识符。
+- **internal_message_id：** 由当前正在处理邮件Exchange Online服务器分配的邮件标识符。
 - **recipient_address：** 邮件收件人的电子邮件地址。 多个电子邮件地址通过分号字符 (;) 分隔。
 - **recipient_count：** 邮件中的收件人总数。
 - **related_recipient_address：** 与 、 和 事件一起用来显示与邮件关联的其他 `EXPAND` `REDIRECT` `RESOLVE` 收件人电子邮件地址。
@@ -262,15 +262,15 @@ Available (completed) Extended reports are available in the **Downloadable repor
   - **MAILBOXRULE：****包含internal_message_id** 收件箱规则生成出站邮件的入站邮件的邮箱值。 对于其他类型的事件，此字段通常为空。
 - **return_path**：发送邮件的 **MAIL FROM** 命令指定的返回电子邮件地址。 尽管此字段从不为空，但它可以将空发件人地址值表示为 `<>` 。
 - **message_info：** 有关邮件的其他信息。 例如：
-  - 和 事件的邮件来源日期-时间 `DELIVER` `SEND` （UTC）。 起始日期-时间是邮件首次进入 Exchange Online 组织的时间。 UTC 日期-时间以 ISO 8601 日期-时间格式表示：，其中 = 年， = 月， = 天，表示时间部分的开始 `yyyy-mm-ddThh:mm:ss.fffZ` `yyyy` `mm` `dd` `T` `hh` ，= 小时， `mm` = 分钟， `ss` = 秒， `fff` = `Z` `Zulu` 秒的小数，并指示 ，这是表示 UTC 的另一种方式。
+  - 和 事件的邮件来源日期-时间 `DELIVER` `SEND` （UTC）。 起始日期-时间是邮件首次进入组织Exchange Online的时间。 UTC 日期-时间以 ISO 8601 日期-时间格式表示：，其中 = 年， = 月， = 天，表示时间部分的开始 `yyyy-mm-ddThh:mm:ss.fffZ` `yyyy` `mm` `dd` `T` `hh` ，= 小时， `mm` = 分钟， `ss` = 秒， `fff` = `Z` `Zulu` 秒的小数，并指示 ，这是表示 UTC 的另一种方式。
   - 身份验证错误。 例如，您可能会看到身份验证出错时所使用的值 `11a` 和身份验证类型。
-- **tenant_id：** 表示 Exchange Online 组织的 GUID (例如 `39238e87-b5ab-4ef6-a559-af54c6b07b42` ，) 。
+- **tenant_id：** 一个 GUID 值，Exchange Online组织 (，例如 `39238e87-b5ab-4ef6-a559-af54c6b07b42`) 。
 - **original_server_ip**：原始服务器的 IP 地址。
 - **custom_data：** 包含与特定事件类型相关的数据。 有关详细信息，请参阅以下部分。
 
 #### <a name="custom_data-values"></a>custom_data值
 
-事件的 **custom_data** 字段由各种 Exchange Online 代理用于 `AGENTINFO` 记录邮件处理详细信息。 以下各节介绍了一些更有趣的代理。
+各种 **custom_data** 代理使用事件的"Exchange Online `AGENTINFO` 字段来记录邮件处理详细信息。 以下各节介绍了一些更有趣的代理。
 
 #### <a name="spam-filter-agent"></a>垃圾邮件筛选器代理
 
@@ -344,8 +344,8 @@ Available (completed) Extended reports are available in the **Downloadable repor
 |---|---|
 |`ETR|ruleId=<guid>`|匹配的规则 ID。|
 |`St=<datetime>`|规则匹配发生时的日期和时间（UTC）。|
-|`Action=<ActionDefinition>`|应用的操作。 有关可用操作的列表，请参阅[Mail flow rule actions in Exchange Online。](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions)|
-|`Mode=<Mode>`|规则模式。 有效值为：<ul><li>**强制**：将强制执行对规则执行的所有操作。</li><li>**使用策略提示进行测试：** 将发送任何策略提示操作，但不执行其他强制操作。</li><li>**不带策略提示的测试**：操作将列在日志文件，但不会以任何方式通知发件人，并且不会对强制操作采取行动。</li></ul>|
+|`Action=<ActionDefinition>`|应用的操作。 有关可用操作的列表，请参阅邮件流[规则操作Exchange Online。](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions)|
+|`Mode=<Mode>`|规则模式。 有效值为：<ul><li>**强制**：将强制执行对规则执行的所有操作。</li><li>**使用策略使用技巧** 测试：将发送任何策略提示操作，但不执行其他强制操作。</li><li>**不带策略使用技巧** 测试：操作将列在 日志文件 中，但不会以任何方式通知发件人，并且不会对强制操作采取行动。</li></ul>|
 |
 
 与 **custom_data** 规则条件匹配的邮件的示例值如下所示：

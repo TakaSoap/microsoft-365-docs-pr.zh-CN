@@ -21,7 +21,7 @@ search.appverid:
 - MSO150
 - BCS160
 ms.assetid: 4307bdbf-6097-458d-9a6a-048112695c59
-description: 作为管理员，查找帮助以设置 Skype for Business Online 的各个部分，包括您的网络、会议和即时消息以及用户的外部访问。
+description: 作为管理员，查找有关设置 Skype for Business Online 部分的帮助，包括你的网络、会议和 IM 以及用户的外部访问。
 ms.openlocfilehash: 1e3807199fc83d642399b29870f2cac477d2ec75
 ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: MT
@@ -33,7 +33,7 @@ ms.locfileid: "47415702"
 
 ## <a name="were-here-to-help"></a>我们随时提供帮助！
 
-作为 Office 365 商业版的管理员，你可以免费联系我们的资深支持专员。 如果在此网站上未找到所需的信息， **[请联系商业版产品支持人员-管理员帮助](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)**
+作为 Office 365 商业版的管理员，你可以免费联系我们的资深支持专员。 如果在此网站上找不到所需的信息，请联系商业产品支持人员 - **[管理员帮助](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)**
   
 ## <a name="let-your-users-contact-external-skype-or-skype-for-business-users"></a>让用户与外部 Skype 或 Skype for Business 用户联系
 
@@ -65,23 +65,23 @@ ms.locfileid: "47415702"
     
 ## <a name="fix-problems-for-your-users"></a>修复你的用户遇到的问题
 
-- [设置 Skype for Business 中的个人选项](https://support.office.com/article/68bacc31-71d3-44c3-a4d4-64da78c447aa#bkmk-stop-automatic-startup)
+- [在"设置个人"选项Skype for Business](https://support.office.com/article/68bacc31-71d3-44c3-a4d4-64da78c447aa#bkmk-stop-automatic-startup)
     
-- [需要帮助登录到 Skype for Business 吗？](https://support.office.com/article/448b8ea7-5b33-444a-afd4-175fc9930d05)
+- [需要有关登录登录Skype for Business？](https://support.office.com/article/448b8ea7-5b33-444a-afd4-175fc9930d05)
     
-- [视频：登录和注销 Skype for Business](https://support.office.com/article/8abed4b3-ac48-493e-9d76-0e10140e9451)
+- [视频：登录和注销Skype for Business](https://support.office.com/article/8abed4b3-ac48-493e-9d76-0e10140e9451)
     
-- [在 Skype for Business 中设置音频设备选项](https://support.office.com/article/2533d929-9814-4349-8ae4-fca29246e2ff)
+- [在"设置音频设备"Skype for Business](https://support.office.com/article/2533d929-9814-4349-8ae4-fca29246e2ff)
     
 - [加入 Skype for Business 会议](https://support.office.com/article/3862be6d-758a-4064-a016-67c0febf3cd5)
     
-- [卸载 Skype for Business](https://support.office.com/article/28C4A036-7F22-406C-B7F4-87894CBAF902)
+- [卸载Skype for Business](https://support.office.com/article/28C4A036-7F22-406C-B7F4-87894CBAF902)
     
 ## <a name="help-your-users-get-started-quickly"></a>帮助你的用户快速入门！
 
 - [探索 Skype for Business](https://support.office.com/article/8a3491a3-c095-4718-80cf-cbbe4afe4eba)：面向你的用户的培训资源 
     
-- [安装 Skype for Business](https://support.office.com/article/8a0d4da8-9d58-44f9-9759-5c8f340cb3fb)
+- [安装Skype for Business](https://support.office.com/article/8a0d4da8-9d58-44f9-9759-5c8f340cb3fb)
     
 - [视频：Skype for Business 中的状态和即时消息](https://support.office.com/article/c873b869-4ce0-4375-9bea-5de150eaf081)
     
@@ -89,6 +89,6 @@ ms.locfileid: "47415702"
     
 - [开始 Skype for Business 电话会议](https://support.office.com/article/8dc8ac52-91ac-4db9-8672-11551fdaf997)
     
- **有关用户的更多文章，请参阅 [Skype For Business 帮助](https://support.office.com/article/4fbe07ce-6b15-4a06-bcf0-baea57890410)。**
+ **有关用户更多文章，请参阅Skype for Business [帮助](https://support.office.com/article/4fbe07ce-6b15-4a06-bcf0-baea57890410)。**
   
 

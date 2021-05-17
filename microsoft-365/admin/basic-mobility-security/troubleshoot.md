@@ -13,7 +13,7 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 ms.custom: AdminSurgePortfolio
-description: 尝试以下步骤来跟踪基本移动性和安全性问题
+description: 尝试以下步骤以跟踪基本移动性和安全性问题
 ms.openlocfilehash: b8df8c17f3a2fc5b7b6cce21769ca20742dbd397
 ms.sourcegitcommit: 8849dd6f80217c29f427c7f008d918f30c792240
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "49876848"
 ---
 # <a name="troubleshoot-basic-mobility-and-security"></a>基本移动性和安全性疑难解答
 
-如果在尝试在基本移动性和安全性中注册设备时出现问题，请尝试此处的步骤来跟踪该问题。 如果常规步骤无法修复该问题，请参阅以下部分之一，了解设备类型的特定步骤。
+如果在尝试在基本移动性和安全性中注册设备时出现问题，请尝试此处的步骤以跟踪该问题。 如果常规步骤无法解决此问题，请参阅以下部分之一，其中提供设备类型的特定步骤。
 
 ## <a name="steps-to-try-first"></a>首先尝试的步骤
 
@@ -35,33 +35,33 @@ ms.locfileid: "49876848"
 
 - 在设备上切换到其他 WIFI 或手机网络。
 
-- 对于 Android 或 iOS 设备，卸载并重新安装设备上的 Intune 公司门户应用。 
+- 对于 Android 或 iOS 设备，卸载并重新安装Intune 公司门户应用。 
 
 ## <a name="ios-phone-or-tablet"></a>iOS 手机或平板电脑
 
-- 请确保你已设置 APN 证书。 有关详细信息，请参阅为 [iOS 设备创建 APNs 证书](create-an-apns-certificate-for-ios-devices.md)。
+- 请确保你已设置 APNs 证书。 有关详细信息，请参阅为 [iOS 设备创建 APNs 证书](create-an-apns-certificate-for-ios-devices.md)。
 
-- 在 **"**   >  **设置**   >  **常规 (或设备**) 中，确保尚未安装管理配置文件。 如果是，请将其删除。
+- 在 **设置**   >  **配置文件 (**   >  **或设备管理)** 中，确保尚未安装管理配置文件。 如果是，请将其删除。
 
-- 如果看到错误消息"设备注册失败"，请登录到 Microsoft 365，并确保已将包含 Exchange Online 的许可证分配给登录设备的用户。
+- 如果看到错误消息"设备注册失败"，请登录到 Microsoft 365并确保已向登录到设备的用户分配了包含 Exchange Online 的许可证。
 
 - 如果看到错误消息"配置文件安装失败"，请尝试以下操作之一：
 
     - 确保 Safari 是设备上的默认浏览器，并且未禁用 Cookie。
 
-    - 重新启动设备，然后导航到portal.manage.microsoft.com。 使用 Microsoft 365 用户 ID 和密码登录，并尝试手动安装配置文件。
+    - 重新启动设备，然后导航到 portal.manage.microsoft.com。 使用你的 Microsoft 365 ID 和密码登录，并尝试手动安装配置文件。
 
 ## <a name="windows-rt"></a>Windows RT
 
-- 请确保你的域在 Microsoft 365 中设置为使用基本移动性和安全性。 有关详细信息，请参阅"[设置基本移动性和安全性"。](set-up.md)
+- 请确保域已设置为Microsoft 365基本移动性和安全性。 有关详细信息，请参阅设置 [基本移动性和安全性](set-up.md)。
     
-- 确保用户选择"打开 ****   "，而不是选择" **加入"。**
+- 确保用户选择"打开 **"，**   而不是选择"加入 **"。**
 
-## <a name="windows-10-pc"></a>Windows 10 电脑
+## <a name="windows-10-pc"></a>Windows 10电脑
 
-- 请确保你的域在 Microsoft 365 中设置为使用基本移动性和安全性。 有关详细信息，请参阅["设置基本移动性和安全性"。](set-up.md)
+- 请确保域已设置为Microsoft 365基本移动性和安全性。 有关详细信息，请参阅设置 [基本移动性和安全性](set-up.md)。
     
-- 除非你拥有 Azure Active Directory Premium，否则请确保用户 **仅选择"** 在设备管理中注册   "，而不是选择 **"连接"。**
+- 除非你已Azure Active Directory 高级版，否则请确保用户选择仅在设备管理中注册 ****   ， **而不是** 选择连接。
 
 ## <a name="android-phone-or-tablet"></a>Android 手机或平板电脑
 
@@ -69,6 +69,6 @@ ms.locfileid: "49876848"
 
 - 确保 Chrome 是最新的，并设置为默认浏览器。
 
-- 如果看到错误消息"我们无法注册此设备"，请登录到 Microsoft 365，并确保已将包含 Exchange Online 的许可证分配给登录设备的用户。
+- 如果看到错误消息"我们无法注册此设备"，请登录到 Microsoft 365并确保已向登录到设备的用户分配了包含 Exchange Online 的许可证。
 
-- 检查设备上的通知区域以查看任何所需的最终用户操作是否挂起，如果挂起，则完成这些操作。
+- 检查设备上的通知区域，以查看任何所需的最终用户操作是否挂起，如果是，则完成这些操作。

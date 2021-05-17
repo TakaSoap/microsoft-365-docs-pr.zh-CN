@@ -23,6 +23,6 @@ ms.locfileid: "49876908"
 ---
 # <a name="privacy-and-security-in-basic-mobility-and-security"></a>基本移动性和安全性中的隐私和安全性
 
-基本移动性和安全性是一项基于云的服务，由 Microsoft Intune 提供，可帮助你管理和保护组织中移动设备的安全。 激活基本移动性和安全性后，可以创建移动设备管理策略。 然后，可以将这些策略部署到由组织中授权 Microsoft 365 用户注册的移动设备。
+基本移动性和安全性是一种基于云的服务，由 Microsoft Intune，可帮助你管理和保护组织中移动设备。 激活基本移动性和安全性后，可以创建移动设备管理策略。 然后，可以将这些策略部署到已由组织中许可的 Microsoft 365注册的移动设备。
 
-Microsoft Intune 向 Microsoft 365 发送有关每个托管设备的合规性状态的信息，然后你可以生成报告，以根据已设置的策略显示组织中托管设备是否合规。 若要了解有关 Microsoft 对隐私和安全性的承诺，请参阅 [Microsoft 信任中心](https://www.microsoft.com/trust-center)。
+Microsoft Intune向用户Microsoft 365有关每个托管设备的合规性状态的信息，然后你可以生成报告，以显示你的组织中托管设备是否符合已设置的策略。 若要了解有关 Microsoft 对隐私和安全性的承诺，请参阅 [Microsoft 信任中心](https://www.microsoft.com/trust-center)。

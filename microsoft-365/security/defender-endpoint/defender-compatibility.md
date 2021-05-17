@@ -1,6 +1,6 @@
 ---
 title: 防病毒解决方案与 Defender for Endpoint 的兼容性
-description: 了解 Windows Defender Defender for Endpoint 的工作原理，以及它如何使用第三方反恶意软件客户端。
+description: 了解Windows Defender Microsoft Defender for Endpoint 的工作原理，以及它如何使用第三方反恶意软件客户端。
 keywords: windows defender 兼容性， defender， 适用于终结点的 Microsoft Defender， 终结点的 defender， 防病毒， mde
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -35,17 +35,17 @@ ms.locfileid: "52274876"
 
 >想要体验适用于终结点的 Defender？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-defendercompat-abovefoldlink)
 
-Microsoft Defender for Endpoint 代理依赖 Microsoft Defender 防病毒进行某些功能，如文件扫描。
+Microsoft Defender for Endpoint 代理依赖于Microsoft Defender 防病毒某些功能（如文件扫描）的功能。
 
 >[!IMPORTANT]
->Defender for Endpoint 不遵循 Microsoft Defender 防病毒排除设置。 
+>Defender for Endpoint 不遵循"Microsoft Defender 防病毒排除"设置。 
 
-你必须在 Defender for Endpoint 设备上配置安全智能更新，无论 Microsoft Defender 防病毒是否是活动的反恶意软件。 有关详细信息，请参阅管理 [Microsoft Defender 防病毒更新和应用基线](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/manage-updates-baselines-microsoft-defender-antivirus.md)。
+你必须在 Defender for Endpoint 设备上配置安全智能更新，Microsoft Defender 防病毒反恶意软件是否有效。 有关详细信息，请参阅管理更新[Microsoft Defender 防病毒应用基线](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/manage-updates-baselines-microsoft-defender-antivirus.md)。
 
-如果载入的设备受第三方反恶意软件客户端保护，该终结点上的 Microsoft Defender 防病毒将进入被动模式。
+如果载入的设备受第三方反恶意软件客户端保护，Microsoft Defender 防病毒上的设备将进入被动模式。
 
-Microsoft Defender 防病毒将继续接收更新 *，mspeng.exe* 进程将列为正在运行的服务，但它不会执行扫描，并且不会替换正在运行的第三方反恶意软件客户端。
+Microsoft Defender 防病毒接收更新，mspeng.exe进程将列为正在运行的服务，但它不会执行扫描，并且不会替换正在运行的第三方反恶意软件客户端。
 
-Microsoft Defender 防病毒界面将被禁用，并且设备上的用户将不能使用 Microsoft Defender 防病毒执行按需扫描或配置大多数选项。
+设备Microsoft Defender 防病毒将禁用，并且设备上的用户将Microsoft Defender 防病毒执行按需扫描或配置大多数选项。
 
-有关详细信息，请参阅 Microsoft [Defender 防病毒和适用于终结点的 Defender 兼容性主题](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility)。
+有关详细信息，请参阅适用于终结点的[Microsoft Defender 防病毒和 Defender 兼容性主题](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility)。

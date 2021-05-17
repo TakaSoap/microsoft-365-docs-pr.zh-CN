@@ -31,11 +31,11 @@ ms.locfileid: "51571004"
 
 >想要体验适用于终结点的 Defender？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
-[受控文件夹访问权限](controlled-folders.md) 可帮助你保护重要数据免受恶意应用和威胁（如勒索软件）的侵害。 受控文件夹访问权限包含在 Windows 10 和 Windows Server 2019 中。
+[受控文件夹访问权限](controlled-folders.md) 可帮助你保护重要数据免受恶意应用和威胁（如勒索软件）的侵害。 受控文件夹访问权限包含在 Windows 10 Windows Server 2019 中。
 
 可以使用以下任一方法启用受控文件夹访问权限：
 
-* [Windows 安全应用](#windows-security-app)
+* [Windows 安全中心应用](#windows-security-app)
 * [Microsoft Intune](#intune)
 * [移动设备管理 (MDM)](#mobile-device-management-mdm)
 * [Microsoft Endpoint Configuration Manager](#microsoft-endpoint-configuration-manager)
@@ -46,23 +46,23 @@ ms.locfileid: "51571004"
 
 禁用本地管理员列表合并的组策略设置将覆盖受控文件夹访问权限设置。 它们还通过受控文件夹访问权限覆盖受保护的文件夹和允许的本地管理员设置的应用。 这些策略包括：
 
-* Microsoft Defender 防病毒 **为列表配置本地管理员合并行为**
-* System Center Endpoint Protection **允许用户添加排除项和替代项**
+* Microsoft Defender 防病毒 **配置列表的本地管理员合并行为**
+* System Center Endpoint Protection **允许用户添加排除和替代**
 
 有关禁用本地列表合并的信息，请参阅阻止或 [允许用户在本地修改 Microsoft Defender AV 策略设置](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-local-policy-overrides-microsoft-defender-antivirus#configure-how-locally-and-globally-defined-threat-remediation-and-exclusions-lists-are-merged)。
 
-## <a name="windows-security-app"></a>Windows 安全应用
+## <a name="windows-security-app"></a>Windows 安全中心应用
 
-1. 通过选择任务栏中的防护图标打开 Windows 安全应用。 还可以搜索 Defender 的"开始" **菜单**。
+1. 在任务栏Windows 安全中心防护图标，打开应用。 还可以搜索 Defender 的"开始" **菜单**。
 
 2. 选择病毒 **&威胁** 防护磁贴 (或左侧菜单栏上的防护图标) 然后选择勒索 **软件保护**。
 
 3. 将受控文件夹访问权限 **的开关设置为****开**。
 
 > [!NOTE]
-> 如果使用组策略、PowerShell 或 MDM CSP 配置受控文件夹访问权限，则状态将在设备重启后在 Windows 安全应用中更改。
-> If the feature is set to **Audit mode** with any of those tools， the Windows Security app will show the state as **Off**.
-> 如果要保护用户配置文件数据，我们建议用户配置文件应位于默认 Windows 安装驱动器上。
+> 如果使用组策略、PowerShell 或 MDM CSP 配置受控文件夹访问权限，则设备重启后，Windows 安全中心应用中的状态将发生变化。
+> If the feature is set to **Audit mode** with any of those tools， the Windows 安全中心 app will show the state as **Off**.
+> 如果要保护用户配置文件数据，我们建议用户配置文件应位于默认安装Windows驱动器上。
 
 ## <a name="intune"></a>Intune
 
@@ -70,7 +70,7 @@ ms.locfileid: "51571004"
 
 2. 转到设备 **配置文件**  >  **创建**  >  **配置文件**。
 
-3. 将配置文件命名，选择 **"Windows 10 及更高版本**"和"**终结点保护"。** <br/> ![创建终结点保护配置文件](/microsoft-365/security/defender-endpoint/images/create-endpoint-protection-profile) <br/>
+3. 命名配置文件，选择 **"Windows 10及更高版本"和**"**终结点保护"。** <br/> ![创建终结点保护配置文件](/microsoft-365/security/defender-endpoint/images/create-endpoint-protection-profile) <br/>
 
 4. 转到配置 **Windows Defender**  >  **攻击防护**  >  **受控文件夹访问权限**  >  **启用**。
 
@@ -89,7 +89,7 @@ ms.locfileid: "51571004"
 
 ## <a name="microsoft-endpoint-configuration-manager"></a>Microsoft Endpoint Configuration Manager
 
-1. 在 Microsoft Endpoint Configuration Manager 中，转到 **"资产和** 合规性  >  **Endpoint Protection**  >  **Windows Defender攻击防护"。**
+1. In Microsoft Endpoint Configuration Manager， go to **Assets and Compliance**  >  **Endpoint Protection** Windows Defender Exploit  >  **Guard**.
 
 2. 选择 **"主页**  >  **创建攻击防护策略"。**
 
@@ -107,16 +107,16 @@ ms.locfileid: "51571004"
 
 1. 在组策略管理设备上，打开组 [策略管理控制台](https://technet.microsoft.com/library/cc731212.aspx)，右键单击要配置的组策略对象， **然后选择编辑**。
 
-2. 在组 **策略管理编辑器中**，转到计算机 **配置，** 然后选择 **管理模板**。
+2. 在 **策略管理编辑器** 中， **计算机配置** 并选择 **管理模板**。
 
-3. 将树展开到 Windows 组件> Microsoft Defender 防病毒> Windows Defender攻击防护> **受控文件夹访问权限**。
+3. 展开树以 **Windows攻击> Microsoft Defender 防病毒 > Windows Defender受控>访问权限的组件**。
 
 4. 双击配置受控文件夹 **访问权限** 设置，将选项设置为 **已启用**。 在选项部分中，必须指定以下选项之一：
-    * **启用** - 不允许恶意和可疑应用对受保护文件夹中的文件进行更改。 通知将在 Windows 事件日志中提供。
+    * **启用** - 不允许恶意和可疑应用对受保护文件夹中的文件进行更改。 将在事件日志中提供Windows通知。
     * **禁用 (默认)** - 受控文件夹访问权限功能将不起作用。 所有应用都可以对受保护的文件夹中的文件进行更改。
-    * **审核模式** - 如果恶意或可疑应用尝试更改受保护文件夹中的文件，将允许更改。 但是，它将记录在 Windows 事件日志中，你可以在这里评估对组织的影响。
-    * **仅阻止磁盘修改** - 不受信任的应用尝试写入磁盘扇区将记录在 Windows 事件日志中。 这些日志位于 Microsoft  > Windows > Operational > Windows Defender > Id 1123 >日志。
-    * **仅** 审核磁盘修改 - 仅在 Windows 事件日志中记录写入受保护磁盘扇区的尝试 (应用程序和服务日志  >  **Microsoft**  >  **Windows**  >  **Windows Defender**  >  **操作**  >  **ID 1124**) 。 不会记录修改或删除受保护文件夹中的文件的尝试。
+    * **审核模式** - 如果恶意或可疑应用尝试更改受保护文件夹中的文件，将允许更改。 但是，它将记录在事件Windows日志中，您可以在其中评估对组织的影响。
+    * **仅阻止磁盘修改**- 不受信任的应用尝试写入磁盘扇区将记录在Windows日志中。 可以在 Microsoft > Operational **> Windows > Windows Defender >** Id 1123 的应用程序>日志中找到这些日志。
+    * **仅** 审核磁盘修改 - 仅在应用程序和服务日志Microsoft Windows Windows Defender Operational ID  >    >    >    >    >  **1124**) 下的 Windows (事件日志中记录写入受保护磁盘扇区的尝试。 不会记录修改或删除受保护文件夹中的文件的尝试。
 
       ![在下拉列表中选中的组策略选项"启用"和"审核模式"的屏幕截图](/microsoft-365/security/defender-endpoint/images/cfa-gp-enable)
 

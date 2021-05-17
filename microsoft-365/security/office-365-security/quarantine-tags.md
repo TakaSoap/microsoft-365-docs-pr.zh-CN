@@ -29,7 +29,7 @@ ms.locfileid: "52274456"
 > [!NOTE]
 > 本文中介绍的功能目前处于预览阶段，不可供所有人使用，并且可能会更改。
 
-Exchange Online Protection (EOP) 中的隔离标记允许管理员根据邮件如何到达隔离区来控制用户能够对隔离邮件执行哪些操作。
+EOP Exchange Online Protection (中的隔离标记) 管理员根据邮件到达隔离区后如何控制用户可以对隔离邮件执行哪些操作。
 
 EOP 在传统上允许或阻止隔离和最终用户垃圾邮件通知中的邮件的某些[交互级别](use-spam-notifications-to-release-and-report-quarantined-messages.md)。 [](find-and-release-quarantined-messages-as-a-user.md) 例如，最终用户可以查看并释放被反垃圾邮件筛选隔离为垃圾邮件或批量邮件的邮件，但他们无法查看或释放被隔离为高可信度网络钓鱼的邮件。
 
@@ -59,7 +59,7 @@ EOP 在传统上允许或阻止隔离和最终用户垃圾邮件通知中的邮�
 
 如果您不喜欢预设权限组中的默认权限，可以在创建或修改自定义隔离标记时使用自定义权限。 有关每个权限执行哪些操作的详细信息，请参阅本文稍后介绍的 [隔离](#quarantine-tag-permission-details) 标记权限详细信息部分。
 
-在安全与合规中心或 PowerShell &为具有 Exchange Online 邮箱的 Microsoft 365 (Exchange Online PowerShell 创建和分配隔离标记;EOP 组织中没有 Exchange Online 邮箱的独立 EOP PowerShell) 。
+在安全与 &合规中心内或在 PowerShell (Exchange Online PowerShell 中为邮箱Microsoft 365组织创建和Exchange Online隔离标记;EOP 组织中独立的 EOP PowerShell，Exchange Online邮箱) 。
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>开始前，有必要了解什么？
 
@@ -111,7 +111,7 @@ EOP 在传统上允许或阻止隔离和最终用户垃圾邮件通知中的邮�
 
 ### <a name="create-quarantine-tags-in-powershell"></a>在 PowerShell 中创建隔离标记
 
-如果你想要使用 PowerShell 创建隔离标记，请连接到 Exchange Online PowerShell 或 Exchange Online Protection PowerShell 并使用 **New-QuarantineTag** cmdlet。 有两种不同的方法可供选择：
+如果你希望使用 PowerShell 创建隔离标记，请Exchange Online PowerShell 或 Exchange Online Protection PowerShell 并使用 **New-QuarantineTag** cmdlet。 有两种不同的方法可供选择：
 
 - 使用 _EndUserQuarantinePermissionsValue_ 参数。
 - 使用 _EndUserQuarantinePermissions_ 参数。
@@ -245,7 +245,7 @@ New-QuarantineTag -Name LimitedAccess -EndUserQuarantinePermissions $LimitedAcce
 |[邮件流规则](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules) (操作) 传输规则： **将** 邮件发送到托管隔离邮箱 (_隔离_) 。|否|不适用|
 |
 
-<sup>\*</sup> 模拟保护设置仅适用于 Microsoft Defender for Office 365 中的防钓鱼策略。
+<sup>\*</sup>模拟保护设置仅在 Microsoft Defender for Office 365 中的反网络钓鱼策略中Office 365。
 
 如果您对默认隔离标记提供的最终用户权限满意，则无需执行任何操作。 如果您希望自定义最终用户功能， (垃圾邮件) 或隔离邮件详细信息中的可用按钮，您可以分配自定义隔离标记。
 
@@ -269,7 +269,7 @@ New-QuarantineTag -Name LimitedAccess -EndUserQuarantinePermissions $LimitedAcce
 
 #### <a name="assign-quarantine-tags-in-anti-spam-policies-in-powershell"></a>在 PowerShell 中的反垃圾邮件策略中分配隔离标记
 
-如果希望使用 PowerShell 在反垃圾邮件策略中分配隔离标记，请连接到 Exchange Online PowerShell 或 Exchange Online Protection PowerShell，然后使用以下语法：
+如果您更希望使用 PowerShell 在反垃圾邮件策略中分配隔离标记，请连接到 Exchange Online PowerShell 或 Exchange Online Protection PowerShell 并使用以下语法：
 
 ```powershell
 <New-HostedContentFilterPolicy -Name "<Unique name>" | Set-HostedContentFilterPolicy -Identity "<Policy name>">  [-SpamAction Quarantine] [-SpamQuarantineTag <QuarantineTagName>] [-HighConfidenceSpamAction Quarantine] [-HighConfidenceSpamQuarantineTag <QuarantineTagName>] [-PhishSpamAction Quarantine] [-PhishQuarantineTag <QuarantineTagName>] [-HighConfidencePhishQuarantineTag <QuarantineTagName>] [-BulkSpamAction Quarantine] [-BulkQuarantineTag <QuarantineTagName>] ...
@@ -320,7 +320,7 @@ Set-HostedContentFilterPolicy -Identity "Human Resources" -SpamAction Quarantine
 
 3. 在打开 **的"隔离** 通知设置"飞出中，配置以下部分或所有设置：
 
-   - **使用我的公司徽标**：选择此选项可替换最终用户垃圾邮件通知顶部使用的默认 Microsoft 徽标。 在这样做之前，需要按照自定义 [组织的 Microsoft 365](../../admin/setup/customize-your-organization-theme.md) 主题中的说明上载自定义徽标。
+   - **使用我的公司徽标**：选择此选项可替换最终用户垃圾邮件通知顶部使用的默认 Microsoft 徽标。 在这样做之前，你需要按照自定义组织的自定义Microsoft 365[主题](../../admin/setup/customize-your-organization-theme.md)中的说明上载自定义徽标。
 
      以下屏幕截图显示了最终用户垃圾邮件通知中的自定义徽标：
 
@@ -477,7 +477,7 @@ Remove-QuarantineTag -Identity "<TagName>"
 
 #### <a name="allow-sender-permission"></a>允许发件人权限
 
-_PermissionToAllowSender (PermissionToAllowSender_) 控制对按钮的访问权限，该按钮允许用户方便地将隔离的邮件发件人添加到其安全发件人列表。 
+_PermissionToAllowSender_ ("允许发件人"权限) 控制对按钮的访问，该按钮允许用户方便地将隔离的邮件发件人添加到其"保险箱发件人"列表中。 
 
 - **隔离邮件详细信息**：
   - **启用发件人** 权限：" **允许发件人"** 按钮可用。
@@ -485,7 +485,7 @@ _PermissionToAllowSender (PermissionToAllowSender_) 控制对按钮的访问权�
 
 - **最终用户垃圾邮件通知：** 不起作用。
 
-有关安全发件人列表详细信息，请参阅防止受信任发件人[](https://support.microsoft.com/office/274ae301-5db2-4aad-be21-25413cede077#__toc304379666)被阻止和使用 Exchange Online PowerShell 配置邮箱[的安全列表集合](configure-junk-email-settings-on-exo-mailboxes.md#use-exchange-online-powershell-to-configure-the-safelist-collection-on-a-mailbox)。
+有关发件人列表保险箱，请参阅防止阻止受信任发件人和使用 Exchange Online [](https://support.microsoft.com/office/274ae301-5db2-4aad-be21-25413cede077#__toc304379666) PowerShell 配置邮箱[的安全列表集合](configure-junk-email-settings-on-exo-mailboxes.md#use-exchange-online-powershell-to-configure-the-safelist-collection-on-a-mailbox)。
 
 #### <a name="block-sender-permission"></a>阻止发件人权限
 

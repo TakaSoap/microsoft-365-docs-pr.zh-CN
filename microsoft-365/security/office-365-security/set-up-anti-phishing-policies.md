@@ -14,7 +14,7 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: 管理员可以了解 Exchange Online Protection (EOP) 和 Microsoft Defender for Office 365 中提供的防钓鱼策略。
+description: 管理员可以了解 EOP Exchange Online Protection (和 Microsoft Defender for) 中提供的防钓鱼Office 365。
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: 44472d49936f400ee16227f3f29141738ad28daa
@@ -24,7 +24,7 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 04/02/2021
 ms.locfileid: "51571016"
 ---
-# <a name="anti-phishing-policies-in-microsoft-365"></a>Microsoft 365 中的防钓鱼策略
+# <a name="anti-phishing-policies-in-microsoft-365"></a>邮件中的防钓鱼Microsoft 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -33,20 +33,20 @@ ms.locfileid: "51571016"
 - [Microsoft Defender for Office 365 计划 1 和计划 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-配置防钓鱼保护设置的策略适用于具有 Exchange Online 邮箱的 Microsoft 365 组织、没有 Exchange Online 邮箱的独立 Exchange Online Protection (EOP) 组织以及适用于 Office 365 的 Microsoft Defender 组织。
+配置防钓鱼保护设置的策略适用于具有 Exchange Online 邮箱的 Microsoft 365 组织、没有 Exchange Online 邮箱的独立 Exchange Online Protection (EOP) 组织以及适用于 Office 365 组织的 Microsoft Defender。
 
-Microsoft Defender for Office 365 中的反网络钓鱼策略仅适用于具有 Defender for Office 365 的组织。 例如：
+Microsoft Defender for Office 365 中的反网络钓鱼策略仅适用于具有 Defender for Office 365。 例如：
 
-- Microsoft 365 企业版 E5、Microsoft 365 教育版 A5 等
+- Microsoft 365 企业版E5、Microsoft 365 教育版 A5 等。
 - [Microsoft 365 企业版](https://www.microsoft.com/microsoft-365/enterprise/home)
 - [Microsoft 365 商业版](https://www.microsoft.com/microsoft-365/business)
-- [作为加载项的 Microsoft Defender for Office 365](https://products.office.com/exchange/advance-threat-protection)
+- [Microsoft Defender Office 365加载项](https://products.office.com/exchange/advance-threat-protection)
 
 下表介绍了 EOP 中的反网络钓鱼策略与 Microsoft Defender for Office 365 中的反网络钓鱼策略之间的高级差异：
 
 ****
 
-|功能|EOP 中的防钓鱼策略|Microsoft Defender for Office 365 中的防钓鱼策略|
+|功能|EOP 中的防钓鱼策略|Microsoft Defender for Office 365|
 |---|:---:|:---:|
 |自动创建的默认策略|![复选标记](../../media/checkmark.png)|![复选标记](../../media/checkmark.png)|
 |创建自定义策略|![复选标记](../../media/checkmark.png)|![复选标记](../../media/checkmark.png)|
@@ -62,13 +62,13 @@ Microsoft Defender for Office 365 中的反网络钓鱼策略仅适用于具有 
 
 - [在 EOP 中配置反垃圾邮件策略](configure-anti-phishing-policies-eop.md)
 
-- [在 Microsoft Defender for Office 365 中配置防钓鱼策略](configure-atp-anti-phishing-policies.md)
+- [在 Microsoft Defender for Office 365](configure-atp-anti-phishing-policies.md)
 
-本文的其余部分介绍了 EOP 和 Defender for Office 365 中的反网络钓鱼策略中可用的设置。
+本文的其余部分介绍了 EOP 和 Defender for Office 365 中的防钓鱼策略中的设置。
 
 ## <a name="policy-settings"></a>策略设置
 
-以下策略设置在 EOP 和 Microsoft Defender for Office 365 中的防钓鱼策略中可用：
+以下策略设置在 EOP 和 Microsoft Defender for Office 365 中的防钓鱼策略中Office 365：
 
 - **名称**：无法重命名默认的防钓鱼策略。 创建自定义防钓鱼策略后，无法从安全与合规中心&策略。
 
@@ -80,7 +80,7 @@ Microsoft Defender for Office 365 中的反网络钓鱼策略仅适用于具有 
 
   - **收件人为**：您的组织中的一个或多个邮箱、邮件用户或邮件联系人。
   - **Recipient 是 ：** 组织中一个或多个组的成员。
-  - **收件人域为**：Microsoft 365 中配置的一个或多个接受域。
+  - **收件人域为**：域中配置的一个或多个接受Microsoft 365。
 
   - **例外：** 规则例外。 设置和行为与条件完全相同：
 
@@ -89,13 +89,13 @@ Microsoft Defender for Office 365 中的反网络钓鱼策略仅适用于具有 
     - **收件人域为**
 
   > [!NOTE]
-  > 自定义 **防** 钓鱼策略中需要"应用于"设置，以标识策略应用于 <u>的邮件收件人</u>。 Microsoft Defender for Office 365 中的反网络钓鱼[](#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)策略还具有模拟设置，可在其中指定将接收模拟保护的单个<u></u>发件人电子邮件地址或发件人域，如本文稍后所述。
+  > 自定义 **防** 钓鱼策略中需要"应用于"设置，以标识策略应用于 <u>的邮件收件人</u>。 Microsoft Defender for Office 365 中的反网络钓鱼策略还具有模拟[](#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)设置，可在其中指定将接收模拟保护的单个发件人电子邮件地址或发件人<u></u>域，如本文稍后所述。
 
 ## <a name="spoof-settings"></a>欺骗设置
 
-欺骗是电子邮件中的发件人地址 (电子邮件客户端中显示的发件人地址) 与电子邮件源的域不匹配。 有关欺骗功能详细信息，请参阅 [Microsoft 365](anti-spoofing-protection.md)中的反欺骗保护。
+欺骗是电子邮件中的发件人地址 (电子邮件客户端中显示的发件人地址) 与电子邮件源的域不匹配。 有关欺骗功能详细信息，请参阅 Microsoft 365[中的反欺骗Microsoft 365。](anti-spoofing-protection.md)
 
-EOP 和 Microsoft Defender for Office 365 中的防钓鱼策略中提供了以下欺骗设置：
+EOP 和 Microsoft Defender for Office 365 中的反网络钓鱼策略中提供了以下欺骗Office 365：
 
 - **反欺骗保护**：启用或禁用反欺骗保护。 建议保持启用状态。 使用欺骗 **智能策略允许** 或阻止特定的欺骗内部和外部发件人。 有关详细信息，请参阅[在 Microsoft 365 中配置欺骗智能](learn-about-spoof-intelligence.md)。
 
@@ -103,27 +103,27 @@ EOP 和 Microsoft Defender for Office 365 中的防钓鱼策略中提供了以�
   >
   > - 默认情况下，在默认防钓鱼策略和您创建的任何新的自定义防钓鱼策略中启用反欺骗保护。
   >
-  > - 如果你的 MX 记录不指向 Microsoft 365，你无需禁用反欺骗保护;改为启用连接器的增强筛选。 有关说明，请参阅 [增强的 Exchange Online 中的连接器筛选](/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors)。
+  > - 如果你的 MX 记录没有指向任何位置，你无需禁用反欺骗Microsoft 365;改为启用连接器的增强筛选。 有关说明，请参阅[增强的连接器筛选Exchange Online。](/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors)
   >
   > - 禁用反欺骗保护只会禁用来自复合身份验证检查的隐式 [欺骗](email-validation-and-authentication.md#composite-authentication) 保护。 如果发件人未通过显式 [DMARC](use-dmarc-to-validate-email.md) 检查，则策略被设置为隔离或拒绝，邮件仍将被隔离或拒绝。
 
   对于来自被阻止的欺骗发件人的邮件，还可以指定对邮件要采取的操作：
 
-  - **将邮件移动到"垃圾邮件"文件夹**：这是默认值。 邮件将传递到邮箱，并移动到"垃圾邮件"文件夹。 在 Exchange Online 中，如果对邮箱启用了垃圾邮件规则，则邮件将移动到"垃圾邮件"文件夹 (该邮件默认) 。 有关详细信息，请参阅在 [Microsoft 365 中配置 Exchange Online](configure-junk-email-settings-on-exo-mailboxes.md)邮箱上的垃圾邮件设置。
+  - **将邮件移动到"垃圾邮件"文件夹**：这是默认值。 邮件将传递到邮箱，并移动到"垃圾邮件"文件夹。 在Exchange Online中，如果对邮箱启用了垃圾邮件规则，则邮件将移动到"垃圾邮件"文件夹 (该邮件默认启用) 。 有关详细信息，请参阅 Configure [junk email settings on Exchange Online mailboxes in Microsoft 365](configure-junk-email-settings-on-exo-mailboxes.md)。
 
   - **隔离邮件**：将邮件发送到隔离邮箱，而不是目标收件人。 有关隔离的信息，请参阅以下文章：
 
-    - [Microsoft 365 中的隔离](quarantine-email-messages.md)
-    - [在 Microsoft 365 中以管理员角色管理隔离的邮件和文件](manage-quarantined-messages-and-files.md)
-    - [在 Microsoft 365 中以用户状态查找并释放隔离邮件](find-and-release-quarantined-messages-as-a-user.md)
+    - [隔离Microsoft 365](quarantine-email-messages.md)
+    - [以管理员角色管理隔离的邮件和Microsoft 365](manage-quarantined-messages-and-files.md)
+    - [在邮件中以用户模式查找并释放隔离Microsoft 365](find-and-release-quarantined-messages-as-a-user.md)
 
 - **未经身份验证的发件人**：请参阅下一节中的信息。
 
 ### <a name="unauthenticated-sender"></a>未经身份验证的发件人
 
-未经身份验证的发件人标识是 EOP 和[](#spoof-settings)Microsoft Defender for Office 365 中的反网络钓鱼策略中提供的欺骗设置的一部分，如上一节中所述。
+未经身份验证的发件人标识是 EOP 和[](#spoof-settings)Microsoft Defender for Office 365 中的反网络钓鱼策略中提供的欺骗设置的一部分，如上一部分所述。
 
-" **未经身份验证的发件人"** 设置在 Outlook 中启用或禁用未经身份验证的发件人标识。 具体来说：
+"**未经身份验证的发件人"** 设置在邮件中启用或禁用未经身份验证的发件人Outlook。 具体来说：
 
 - 如果 ( DKIM 检查) 邮件未通过 SPF 或 DKIM 检查，并且邮件未通过 DMARC 或复合身份验证，则向发件人的照片添加问号[](email-validation-and-authentication.md#composite-authentication)。 禁用未经身份验证的发件人标识可防止将问号添加到发件人的照片中。
 
@@ -133,22 +133,22 @@ EOP 和 Microsoft Defender for Office 365 中的防钓鱼策略中提供了以�
 
 若要防止向来自特定发件人的邮件添加问号或通过标记，可以使用以下选项：
 
-- 允许发件人在欺骗智能策略中欺骗。 当禁用未经身份验证的发件人标识时，此操作将阻止通过标记出现在发件人的邮件中。 有关说明，请参阅在 [Microsoft 365 中配置欺骗智能](learn-about-spoof-intelligence.md)。
+- 允许发件人在欺骗智能策略中欺骗。 当禁用未经身份验证的发件人标识时，此操作将阻止通过标记出现在发件人的邮件中。 有关说明，请参阅在 Microsoft 365 中[配置欺骗智能](learn-about-spoof-intelligence.md)。
 
 - [为发件人域](email-validation-and-authentication.md#configure-email-authentication-for-domains-you-own) 配置电子邮件身份验证。
   - 对于发件人照片中的问号，SPF 或 DKIM 是最重要的。
   - 对于 via 标记，请确认 DKIM 签名中的域或 **MAIL FROM** 地址 (或是") "地址中域的子域。
 
-有关详细信息，请参阅在 outlook [网页 Outlook.com 识别可疑邮件](https://support.microsoft.com/office/3d44102b-6ce3-4f7c-a359-b623bec82206)
+有关详细信息，请参阅在[Outlook.com Outlook识别可疑邮件](https://support.microsoft.com/office/3d44102b-6ce3-4f7c-a359-b623bec82206)
 
-## <a name="exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 中的防钓鱼策略中的独占设置
+## <a name="exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 中的防钓鱼策略中的独占Office 365
 
-本部分介绍仅在 Microsoft Defender for Office 365 中的反网络钓鱼策略中可用的策略设置。
+本部分介绍仅在 Microsoft Defender for Office 365 中的反网络钓鱼策略中可用的策略Office 365。
 
 > [!NOTE]
-> Microsoft Defender for Office 365 中的默认防钓鱼 [策略可为所有](set-up-anti-phishing-policies.md#spoof-settings) 收件人提供欺骗保护和邮箱智能。 但是，其他 [可用的模拟保护](#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) 功能和 [高级](set-up-anti-phishing-policies.md#advanced-phishing-thresholds-in-anti-phishing-policies-in-microsoft-defender-for-office-365) 设置未在默认策略中配置或启用。 若要启用所有保护功能，请修改默认的防钓鱼策略或创建其他防钓鱼策略。
+> Microsoft Defender for Office 365[中默认的](set-up-anti-phishing-policies.md#spoof-settings)防钓鱼策略可为所有收件人提供欺骗保护和邮箱智能。 但是，其他 [可用的模拟保护](#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) 功能和 [高级](set-up-anti-phishing-policies.md#advanced-phishing-thresholds-in-anti-phishing-policies-in-microsoft-defender-for-office-365) 设置未在默认策略中配置或启用。 若要启用所有保护功能，请修改默认的防钓鱼策略或创建其他防钓鱼策略。
 
-### <a name="impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 中的防钓鱼策略中的模拟设置
+### <a name="impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 中的防钓鱼策略中的模拟Office 365
 
 模拟是邮件中的发件人或发件人的电子邮件域看起来类似于真实发件人或域的情况：
 
@@ -157,7 +157,7 @@ EOP 和 Microsoft Defender for Office 365 中的防钓鱼策略中提供了以�
 
 模拟的域可能被视为合法（注册的域、配置的电子邮件身份验证记录等），但其意图是欺骗收件人。
 
-以下模拟设置仅适用于 Microsoft Defender for Office 365 中的防钓鱼策略：
+以下模拟设置仅在 Microsoft Defender for Office 365 中的反网络钓鱼策略中Office 365：
 
 - **要保护的用户**：防止指定的内部或外部电子邮件地址被模拟 **为邮件发件人**。 例如，您收到一封来自公司副总裁的电子邮件，要求您向她发送一些内部公司信息。 是否执行？ 许多人在未思考的情况下发送回复。
 
@@ -188,13 +188,13 @@ EOP 和 Microsoft Defender for Office 365 中的防钓鱼策略中提供了以�
 
   - **将邮件重定向到其他电子邮件地址**：将邮件发送给指定收件人，而不是目标收件人。
 
-  - **将邮件移动到"垃圾邮件"文件夹**：邮件被传递到邮箱并移动到"垃圾邮件"文件夹。 在 Exchange Online 中，如果对邮箱启用了垃圾邮件规则，则邮件将移动到"垃圾邮件"文件夹 (该邮件默认) 。 有关详细信息，请参阅在 [Microsoft 365 中配置 Exchange Online](configure-junk-email-settings-on-exo-mailboxes.md)邮箱上的垃圾邮件设置。
+  - **将邮件移动到"垃圾邮件"文件夹**：邮件被传递到邮箱并移动到"垃圾邮件"文件夹。 在Exchange Online中，如果对邮箱启用了垃圾邮件规则，则邮件将移动到"垃圾邮件"文件夹 (该邮件默认启用) 。 有关详细信息，请参阅 Configure [junk email settings on Exchange Online mailboxes in Microsoft 365](configure-junk-email-settings-on-exo-mailboxes.md)。
 
     - **隔离邮件**：将邮件发送到隔离邮箱，而不是目标收件人。 有关隔离的信息，请参阅以下文章：
 
-    - [Microsoft 365 中的隔离](quarantine-email-messages.md)
-    - [在 Microsoft 365 中以管理员角色管理隔离的邮件和文件](manage-quarantined-messages-and-files.md)
-    - [在 Microsoft 365 中以用户状态查找并释放隔离邮件](find-and-release-quarantined-messages-as-a-user.md)
+    - [隔离Microsoft 365](quarantine-email-messages.md)
+    - [以管理员角色管理隔离的邮件和Microsoft 365](manage-quarantined-messages-and-files.md)
+    - [在邮件中以用户模式查找并释放隔离Microsoft 365](find-and-release-quarantined-messages-as-a-user.md)
 
   - **传递邮件，将其他地址添加到"Bcc"** 行：将邮件传递至目标收件人，以静默方式将邮件传递至指定的收件人。
 
@@ -208,9 +208,9 @@ EOP 和 Microsoft Defender for Office 365 中的防钓鱼策略中提供了以�
 
   > [!IMPORTANT]
   >
-  > 即使禁用了模拟安全提示，也建议您使用邮件流规则 (也称为传输规则) 向邮件添加名为 **X-MS-Exchange-EnableFirstContactSafetyTip** 的邮件头，并启用值。  安全提示将在收件人第一次收到来自发件人的邮件时或他们经常不从发件人获取邮件时通知收件人。 此功能添加了一层额外的安全保护，防止潜在的模拟攻击。
+  > 即使关闭模拟安全提示，也建议您使用邮件流规则 (也称为传输规则) 来添加名为 **X-MS-Exchange-EnableFirstContactSafetyTip** 的邮件头，并启用值。  如果安全提示收到发件人发送的邮件，或者他们经常不接收发件人发送的邮件，则邮件收件人会通知收件人。 此功能添加了一层额外的安全保护，防止潜在的模拟攻击。
   >
-  > :::image type="content" source="../../media/safety-tip-first-contact-multiple-recipients.png" alt-text="用于对多个收件人进行模拟保护的安全提示文本。":::
+  > :::image type="content" source="../../media/safety-tip-first-contact-multiple-recipients.png" alt-text="用于对多个安全提示进行模拟保护的文本。":::
 
 - **邮箱智能**：启用或禁用 ai (AI) ，该智能智能功能可确定具有常用联系人的用户电子邮件模式。 此设置可帮助 AI 区分来自合法发件人和模拟发件人的邮件。
 
@@ -229,7 +229,7 @@ EOP 和 Microsoft Defender for Office 365 中的防钓鱼策略中提供了以�
 
 - **受信任的发件人和域**：模拟保护设置的例外。 策略不会将来自指定发件人和发件人域的邮件分类为基于模拟的攻击。 换句话说，对受保护的发件人、受保护的域或邮箱智能保护的操作不会应用于这些受信任的发件人或发件人域。 这些列表的最大限制为大约 1000 个条目。
 
-### <a name="advanced-phishing-thresholds-in-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 中的防钓鱼策略中的高级网络钓鱼阈值
+### <a name="advanced-phishing-thresholds-in-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 中的反网络钓鱼策略中的高级网络钓鱼Office 365
 
 以下高级网络钓鱼阈值仅适用于 Microsoft Defender for Office 365 中的防钓鱼策略。 这些阈值控制将机器学习模型应用到邮件以确定网络钓鱼裁定的敏感度：
 
@@ -241,4 +241,4 @@ EOP 和 Microsoft Defender for Office 365 中的防钓鱼策略中提供了以�
 
 - **4 - 最积极**：被标识为低、中或高可信度网络钓鱼的邮件被视为可信度非常高的邮件。
 
-当你增加此设置时， (标记为错误) 误报的可能性会增加。 有关建议设置的信息，请参阅 [Microsoft Defender for Office 365 设置](recommended-settings-for-eop-and-office365.md#anti-phishing-policy-settings-in-microsoft-defender-for-office-365)中的防钓鱼策略。
+当你增加此设置时， (标记为错误) 误报的可能性会增加。 有关推荐设置的信息，请参阅 Microsoft Defender 中的防钓鱼策略[Office 365设置](recommended-settings-for-eop-and-office365.md#anti-phishing-policy-settings-in-microsoft-defender-for-office-365)。

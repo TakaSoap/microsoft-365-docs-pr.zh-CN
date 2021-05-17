@@ -69,4 +69,4 @@ Get-MpThreat
 ## <a name="related-articles"></a>相关文章
 
 - [自定义、启动和查看扫描Microsoft Defender 防病毒修正的结果](customize-run-review-remediate-scans-microsoft-defender-antivirus.md)
-- [Microsoft Defender 防病毒Windows 10](microsoft-defender-antivirus-in-windows-10.md)
+- [Windows 10 中的 Microsoft Defender 防病毒](microsoft-defender-antivirus-in-windows-10.md)

@@ -141,13 +141,13 @@ SubmitSamplesConsent
 ## <a name="turn-on-cloud-delivered-protection-on-individual-clients-with-the-windows-security-app"></a>使用云保护应用在个别客户端上Windows 安全中心保护
 
 > [!NOTE]
-> 如果"**为** 报告 Microsoft MAPS 组策略配置本地设置覆盖"设置为"已禁用"，则 Windows 设置 中的基于云的保护设置将灰出且不可用。  必须先通过组策略对象所做的更改部署到各个终结点，然后才能在 Windows 设置 中更新设置。
+> 如果"**为** 报告 Microsoft MAPS 组策略配置本地设置覆盖"设置为"已禁用"，则 Windows 设置 中的基于云的保护设置将灰出且不可用。  通过组策略对象进行的更改必须先部署到个别终结点，然后 Windows 设置中的相关设置才会更新。
 
 1. 打开Windows 安全中心应用，选择任务栏中的防护图标，或搜索 Defender 的"开始"**菜单**。
 
 2. 选择病毒&**威胁** 防护磁贴 (左侧菜单栏上的防护图标) 然后选择病毒防护威胁防护 **&标签：**
 
-    ![Screenshot of the Virus & threat protection settings label in the Windows 安全中心 app](images/defender/wdav-protection-settings-wdsc.png)
+    ![Windows 安全应用中病毒和威胁防护设置标签的屏幕截图](images/defender/wdav-protection-settings-wdsc.png)
 
 3. 确认 **基于云的保护和****自动提交示例** 已切换到 **开**。
 
@@ -163,4 +163,4 @@ SubmitSamplesConsent
 - [Defender cmdlet](/powershell/module/defender/)
 - [在云中使用 Microsoft 云提供的Microsoft Defender 防病毒](cloud-protection-microsoft-defender-antivirus.md)
 - [如何创建和部署反恶意软件策略：云保护服务](/configmgr/protect/deploy-use/endpoint-antimalware-policies#cloud-protection-service)
-- [Microsoft Defender 防病毒Windows 10](microsoft-defender-antivirus-in-windows-10.md)
+- [Windows 10 中的 Microsoft Defender 防病毒](microsoft-defender-antivirus-in-windows-10.md)

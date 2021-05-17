@@ -21,7 +21,7 @@ ms.custom:
 search.appverid:
 - BCS160
 - MET150
-description: 使用 Microsoft 365 的隐私和同意通知自定义登录页面。
+description: 使用隐私和同意通知自定义登录页面，以Microsoft 365。
 ms.openlocfilehash: 652566ca1caf46cd224e5205da3bebfd7b25cefa
 ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
@@ -33,7 +33,7 @@ ms.locfileid: "51579802"
 
 通过向登录页添加隐私和同意通知，你的企业或活动可以更轻松地让执法机构向在线犯罪人士提出法律费用。
 
-可以使用品牌自定义登录页。 还可以添加文本来帮助用户登录，或指出获取 Microsoft 365 资源访问权限的法律要求或限制。
+可以使用品牌自定义登录页。 还可以添加文本来帮助用户登录，或指出获取对资源的访问权限的法律要求Microsoft 365限制。
 
 ## <a name="design-customization-the-text-on-your-sign-in-page"></a>设计自定义登录页上的文本
 

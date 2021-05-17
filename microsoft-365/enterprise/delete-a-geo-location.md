@@ -12,7 +12,7 @@ f1.keywords:
 ms.custom: seo-marvel-mar2020
 ms.collection: Strat_SP_gtc
 localization_priority: Normal
-description: 了解如何删除 Microsoft 365 多地理位置中的附属位置。 删除卫星位置时，所有用户数据也会永久删除。
+description: 了解如何删除 Microsoft 365 多地理位置中的附属位置。 删除附属位置时，还将永久删除所有用户数据。
 ms.openlocfilehash: 7a58ed91a0bb801fc41ed0a89889ede5e65b4a21
 ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
 ms.translationtype: MT
@@ -35,12 +35,12 @@ ms.locfileid: "46687955"
 
 1. 打开 SharePoint 管理中心
 
-2. 导航到“地理位置”**** 选项卡。
+2. 导航到“地理位置”选项卡。
 
 3. 在地图上，单击要删除的地理位置。
 
-4. 单击“删除位置”。****
+4. 单击“删除位置”。
 
 5. 通过选择确认复选框来确认删除。
 
-6. 单击“删除”。****
+6. 单击“删除”。

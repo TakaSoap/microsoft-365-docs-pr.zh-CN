@@ -1,5 +1,5 @@
 ---
-title: 在高级电子数据展示中管理保留项
+title: 管理保留Advanced eDiscovery
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -17,7 +17,7 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: 了解如何保留保管人及其数据源，以保留高级电子数据展示案例的相关内容。
+description: 了解如何对保管人及其数据源设置保留，以保留与托管案例Advanced eDiscovery内容。
 ms.custom: seo-marvel-mar2020
 ms.openlocfilehash: 70390a933de788a6b1190e42b5087b85a175b9a2
 ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
@@ -26,19 +26,19 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 04/02/2021
 ms.locfileid: "51570586"
 ---
-# <a name="manage-holds-in-advanced-ediscovery"></a>在高级电子数据展示中管理保留项
+# <a name="manage-holds-in-advanced-ediscovery"></a>管理保留Advanced eDiscovery
 
-可以使用高级电子数据展示案例创建保留，以保留可能与案例相关的内容。 使用高级电子数据展示保留功能，您可以保留保管人及其数据源。 此外，可以将邮箱和 OneDrive for Business 网站置于非安全保留状态。 还可以将 Microsoft 365 组的组邮箱、SharePoint 网站和 OneDrive for Business 网站置于保留状态。 同样，可以将与 Microsoft Teams 关联的邮箱和网站置于保留状态。 当您将内容位置保留时，内容将一直保留，直到您释放保管人、删除特定数据位置或删除保留策略。
+您可以使用一个Advanced eDiscovery案例来创建保留，以保留可能与案例相关的内容。 使用Advanced eDiscovery保留功能，您可以保留保管人及其数据源。 此外，您还可以将邮箱和网站置于非OneDrive for Business保留。 您还可以将组邮箱、SharePoint网站和OneDrive for Business组的网站置于Microsoft 365状态。 同样，可以将与邮箱关联的邮箱和网站置于保留Microsoft Teams。 当您将内容位置保留时，内容将一直保留，直到您释放保管人、删除特定数据位置或删除保留策略。
 
 ## <a name="manage-custodian-based-holds"></a>管理基于保管人的保留
 
-在某些情况下，您可能具有一组已识别的保管人，并且已决定在案例期间保留其数据。 在高级电子数据展示中，当这些保管人处于保留状态时，用户及其所选的数据源将自动添加到保管人保留策略。
+在某些情况下，您可能具有一组已识别的保管人，并且已决定在案例期间保留其数据。 在Advanced eDiscovery中，当这些保管人处于保留状态时，用户及其所选的数据源将自动添加到保管人保留策略。
 
 查看保管人保留策略：
 
-1. 在 Microsoft 365 合规中心中，单击 **">高级** 版"以显示组织中事例的列表。
+1. 在Microsoft 365中心，单击 **">高级**"以显示组织中事例的列表。
 
-2. 转到" **源"** 选项卡，在你的案例中添加保管人。 若要了解如何在高级电子数据展示案例中添加保管人并保留保管人，请参阅向案例 [添加保管人](add-custodians-to-case.md)。 如果已添加保管人并置于保留状态，请转到步骤 3。
+2. 转到" **源"** 选项卡，在你的案例中添加保管人。 若要了解如何在案例内添加保管人并Advanced eDiscovery保管人，请参阅向案例[添加保管人](add-custodians-to-case.md)。 如果已添加保管人并置于保留状态，请转到步骤 3。
 
 3. 转到保留选项卡 **，** 然后单击 **CustodianHold \<HoldId>**。
 
@@ -52,9 +52,9 @@ ms.locfileid: "51570586"
   
 - 您可以指定一个日期范围，以仅保留该日期范围内发送、接收或创建的内容。 或者，您可以保留所有内容，而不考虑何时发送、接收或创建内容。
 
-若要为高级电子数据展示案例创建非预保留，请：
+若要为事件案例创建非Advanced eDiscovery保留：
 
-1. 在 Microsoft 365 合规中心中，单击 **">高级** 版"以显示组织中事例的列表。
+1. 在Microsoft 365中心，单击 **">高级**"以显示组织中事例的列表。
   
 2. 单击 **要** 创建保留的案例旁边的"打开"。
   
@@ -66,21 +66,21 @@ ms.locfileid: "51570586"
  
 6.  (可选) **在"说明** "框中，添加保留的说明。
   
-7. 单击"下一步"。
+7. 点击 **“下一步”**。
   
-8. 选择要保留的内容位置。 可以将邮箱、网站和公用文件夹置于保留状态。
+8. 选择要保留的内容位置。 可以将邮箱、站点和公用文件夹置于保留状态。
 
-   1. **Exchange 电子邮件** - 单击 **"选择用户、组或团队** "，然后再次单击"选择用户、组 **或** 团队"以指定要置于保留中的邮箱。 使用搜索框查找用户邮箱和通讯 (将要置于保留状态) 的组成员的邮箱置于保留状态。 还可以将 Microsoft 365 组或 Microsoft 团队的关联邮箱置于保留状态。 选中用户、组、团队复选框，单击 **"选择**"，然后单击"完成 **"。**
+   1. **Exchange电子邮件**- 单击 **"选择用户、组或团队**"，然后再次单击"选择用户、组或团队"以指定要置于保留中的邮箱。 使用搜索框查找用户邮箱和通讯组（将组成员的邮箱置于保留状态）以置于保留状态。 还可以将组或 Microsoft 团队的关联邮箱Microsoft 365保留。 选中用户、组、团队复选框，单击 **"选择**"，然后单击"完成 **"。**
  
       > [!NOTE]
       > 单击" **选择用户、组或** 团队"指定要置于保留中的邮箱时，显示的邮箱选取器为空。 这种设计旨在增强性能。 若要向此列表添加人员，在 (键入至少 3 个字符) 键入一个名称。
 
-   1. **SharePoint 网站**- 单击 **"选择网站**"，然后单击"再次选择网站"以指定要保留的 SharePoint 和 OneDrive for Business 网站。 键入要保留的每个网站的 URL。 还可以为 Microsoft 365 组或 Microsoft 团队添加 SharePoint 网站的 URL。 单击 **"选择**"，然后单击"完成 **"。**
+   1. **SharePoint网站**- 单击 **"选择** 网站"，然后再次单击"选择网站"以指定SharePoint和OneDrive for Business保留的网站。 键入你想要置于保留状态的每个站点的 URL。 还可以为 SharePoint 组或 Microsoft Microsoft 365网站添加 URL。 单击 **"选择**"，然后单击"完成 **"。**
 
       > [!NOTE]
-      > 用户的 OneDrive 帐户的 URL 包括其用户主体名称 (UPN)  (例如 `https://alpinehouse-my.sharepoint.com/personal/sarad_alpinehouse_onmicrosoft_com` ，) 。 在极少数情况下，更改了某个人的 UPN，其 OneDrive URL 也将更改以合并新的 UPN。 如果用户的 OneDrive 帐户属于非安全保留，并且其 UPN 已更改，则需要更新保留并指向新的 OneDrive URL。 有关详细信息，请参阅 [UPN 更改如何影响 OneDrive URL](/onedrive/upn-changes)。
+      > 用户的用户帐户的 URL OneDrive其用户主体名称 (UPN)  (例如 `https://alpinehouse-my.sharepoint.com/personal/sarad_alpinehouse_onmicrosoft_com` ，) 。 在极少数情况下，更改了某个人的 UPN，OneDrive URL 也会更改以合并新的 UPN。 如果用户的帐户是OneDrive保留的一部分，并且其 UPN 已更改，则需要更新保留并指向新的 OneDrive URL。 有关详细信息，请参阅 [UPN 更改如何影响 OneDrive URL](/onedrive/upn-changes)。
 
-   1. **Exchange 公用文件夹** - 将切换开关移动到"所有"位置，将 Exchange Online 组织的所有公用文件夹置于保留状态。 请注意，你无法选择要置于保留状态的特定公用文件夹。 如果不想将 **公用文件夹置于** 保留状态，将切换开关设置为"无"。
+   1. **Exchange公用文件夹**- 将切换开关移动到"所有"位置，将组织的所有公用Exchange Online置于保留状态。 请注意，你无法选择要置于保留状态的特定公用文件夹。 如果不想将 **公用文件夹置于** 保留状态，将切换开关设置为"无"。
 
 9. 完成向保留添加内容位置后，单击"下一 **步"。**
   
@@ -104,24 +104,24 @@ ms.locfileid: "51570586"
 
 - 保留项总数指示置于保留状态的所有内容源中的项目数。 如果已创建基于查询的保留，则此统计信息指示与查询匹配的项目数。
   
-- 保留的项目数还包括在内容位置找到的未索引项目。 请注意，如果创建基于查询的保留，内容位置中所有未建立索引的项目将置于保留状态。 这包括不匹配基于查询的保留的搜索条件的未索引项和可能超出日期范围条件的未索引项。 这不同于运行内容搜索时发生的情况，即搜索结果中不包含与搜索查询不匹配或按日期范围条件排除的未索引项目。 有关未编制索引的项目详细信息，请参阅 Content [Search in Office 365](partially-indexed-items-in-content-search.md)中的部分索引项。 
+- 保留的项目数还包括在内容位置找到的未索引项目。 请注意，如果创建基于查询的保留，内容位置中所有未建立索引的项目将置于保留状态。 这包括不匹配基于查询的保留的搜索条件的未索引项和可能超出日期范围条件的未索引项。 这不同于运行内容搜索时发生的情况，即搜索结果中不包含与搜索查询不匹配或按日期范围条件排除的未索引项目。 有关未编制索引的项目的信息，请参阅 Content [Search in Office 365 中的部分索引Office 365。](partially-indexed-items-in-content-search.md) 
 
 - 可以通过单击"更新统计信息"重新运行计算当前保留项目数的搜索估计，获取最新的保留统计信息。
 
 - 如有必要，请单击工具栏中的"刷新"以更新详细信息窗格中的保留统计信息。
 
-- 保留项目数会随着时间的推移而增加，这是正常的，因为其邮箱或网站置于保留状态的用户通常会发送或接收新电子邮件并创建新的 SharePoint 和 OneDrive for Business 文档。
+- 保留项目数会随着时间的推移而增加，这是正常的，因为邮箱或网站置于保留状态的用户通常会发送或接收新电子邮件，并创建新的 SharePoint OneDrive for Business 文档。
 
-- 如果将 SharePoint 站点或 OneDrive 帐户移动到多地理位置环境中的不同区域，则保留统计信息中不会包含该网站的统计信息。 但是，网站中的内容仍将处于保留状态。 此外，如果将网站移动到其他区域，将不会更新在保留中显示的 URL。 您必须编辑保留并更新 URL。
+- 如果将SharePoint或OneDrive帐户移动到多地理位置环境中的不同区域，则保留统计信息中不会包含该网站的统计信息。 但是，网站中的内容仍将处于保留状态。 此外，如果将网站移动到其他区域，将不会更新在保留中显示的 URL。 您必须编辑保留并更新 URL。
 
-## <a name="place-a-hold-on-microsoft-teams-and-office-365-groups"></a>将 Microsoft Teams 和 Office 365 组保留
+## <a name="place-a-hold-on-microsoft-teams-and-office-365-groups"></a>将组和组Microsoft Teams Office 365保留
 
-Microsoft Teams 基于 Office 365 组构建。 因此，将它们置于高级电子数据展示中的保留状态非常相似。
+Microsoft Teams基于组Office 365构建。 因此，将它们置于保留状态Advanced eDiscovery非常相似。
 
-- **如何将其他 Microsoft 365 组或 Microsoft Teams 网站映射到保管人？那么将非安全保留置于 Microsoft 365 组和 Microsoft Teams 中呢？** Microsoft Teams 基于 Microsoft 365 组构建。 因此，在电子数据展示案例中将其置于保留状态非常相似。 将 Microsoft 365 组和 Microsoft Teams 置于保留状态时，请记住以下事项。
-  - 若要将 Microsoft 365 组和 Microsoft Teams 中的内容置于保留状态，必须指定与组或团队关联的邮箱和 SharePoint 网站。
+- **如何将其他组Microsoft 365或Microsoft Teams映射到保管人？那么，将非 Microsoft 365 保留Microsoft Teams？** Microsoft Teams基于组Microsoft 365构建。 因此，在电子数据展示案例中将其置于保留状态非常相似。 将组和组置于保留Microsoft 365请记住Microsoft Teams事项。
+  - 若要将位于组Microsoft 365中的内容Microsoft Teams保留，必须指定与组或SharePoint关联的邮箱和网站。
   
-  - 在 Exchange Online 中运行 **Get-UnifiedGroup** cmdlet 以查看 Microsoft 365 组或 Microsoft 团队的属性。 这是获取与 Microsoft 365 组或 Microsoft 团队关联的网站的 URL 的一个好方法。 例如，以下命令显示名为“高层领导团队”的 Microsoft 365 组的选定属性：
+  - 在 Exchange Online 中运行 **Get-UnifiedGroup** cmdlet 以查看 Microsoft 365 组或 Microsoft 团队的属性。 这是获取与组或 Microsoft 团队Microsoft 365 URL 的一个好方法。 例如，以下命令显示名为“高层领导团队”的 Microsoft 365 组的选定属性：
 
 
     ```console
@@ -150,7 +150,7 @@ Microsoft Teams 基于 Office 365 组构建。 因此，将它们置于高级电
   
 - 或者，属于 Microsoft Teams 中聊天列表的对话将存储在参与聊天的用户的邮箱中。  用户在聊天对话中共享的文件存储在共享文件的用户的 OneDrive for Business 网站中。 因此，您必须将单个用户邮箱和 OneDrive for Business 网站置于保留状态，以在"聊天"列表中保留对话和文件。 
   
-- 每个 Microsoft 团队或团队频道都包含一个 Wiki，用于做笔记和进行协作。 Wiki 内容将会自动保存至采用 .mht 格式的文件。 此文件存储在团队 SharePoint 网站的 Teams Wiki 数据文档库中。 通过将团队的 SharePoint 网站置于保留状态，您可以将 Wiki 中的内容置于保留状态。
+- 每个 Microsoft 团队或团队频道都包含一个 Wiki，用于做笔记和进行协作。 Wiki 内容将会自动保存至采用 .mht 格式的文件。 此文件存储在团队 SharePoint 网站的 Teams Wiki 数据文档库中。 您可以通过将团队的 SharePoint 网站置于保留状态，在 Wiki 中保留内容。
 
   > [!NOTE]
   > 当您将团队的 SharePoint 网站保留 (保留 Microsoft 团队或团队频道的 Wiki 内容的功能于 2017 年 6 月 22) 发布。 如果团队网站保留，Wiki 内容将自该日期开始保留。 但是，如果团队网站在 2017 年 6 月 22 之前被保留，且 Wiki 内容已删除，则 Wiki 内容不会保留。

@@ -1,5 +1,5 @@
 ---
-title: 规划 Microsoft 365 企业版
+title: 规划Microsoft 365 企业版
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -21,7 +21,7 @@ search.appverid:
 - MOE150
 - BCS160
 ms.assetid: 712fced7-f9d0-4fde-8b79-286262a5d0bc
-description: 本文提供了用于规划 Microsoft 365 企业版部署的清单和其他资源。
+description: 本文提供了用于规划部署部署的清单Microsoft 365 企业版其他资源。
 ms.openlocfilehash: d31f97ecc13d78ae3e5786cc86f4d8cf44be45b1
 ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
 ms.translationtype: MT
@@ -29,36 +29,36 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 08/14/2020
 ms.locfileid: "46688121"
 ---
-# <a name="plan-for-microsoft-365-enterprise"></a>规划 Microsoft 365 企业版
+# <a name="plan-for-microsoft-365-enterprise"></a>规划Microsoft 365 企业版
 
-在将企业组织迁移到 Microsoft 365 时，请务必提前规划并做出关键设计决策，从而简化 IT 部署和用户采用。 
+将企业组织移动到Microsoft 365时，提前规划并做出可简化 IT 部署和用户采用的关键设计决策非常重要。 
 
-## <a name="planning-with-microsoft-365-fasttrack"></a>使用 Microsoft 365 FastTrack 进行规划
+## <a name="planning-with-microsoft-365-fasttrack"></a>使用 FastTrack Microsoft 365规划
 
-[FastTrack For microsoft 365](https://www.microsoft.com/fasttrack/microsoft-365) 是获取 microsoft 在规划 microsoft 365 部署的帮助的最佳方法。 FastTrack 可帮助您完成最常见的设计考虑，还可以回答问题。 
+[FastTrack for Microsoft 365](https://www.microsoft.com/fasttrack/microsoft-365)是从 Microsoft 获取有关规划部署部署帮助Microsoft 365方法。 FastTrack 可以帮助你解决最常见的设计注意事项，并可以回答一直的问题。 
 
 >[!Note]
->你也可以从 [Microsoft 合作伙伴](https://www.microsoft.com/solution-providers/home)获取帮助。
+>还可以从 Microsoft 合作伙伴 [获取帮助](https://www.microsoft.com/solution-providers/home)。
 >
 
-## <a name="do-it-yourself-planning-for-microsoft-365"></a>为 Microsoft 365 做自己的规划
+## <a name="do-it-yourself-planning-for-microsoft-365"></a>自己规划Microsoft 365
 
-若要自己规划 Microsoft 365，请逐步完成对以下领域的规划和设计决策：
+若要自行Microsoft 365规划，请逐步完成这些领域的规划和设计决策：
 
 - 你的 Microsoft 365 租户
 
-  包括规划与 Internet 的网络连接、Microsoft 365 标识以及与应用、内部部署、Azure 和其他元素的集成。 有关详细信息，请转到 [Microsoft 云服务的订阅、许可证、帐户和租户](subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings.md) 。
+  包括规划到 Internet 的网络连接、Microsoft 365标识，以及与应用、本地、Azure 和其他元素的集成。 有关详细信息 [，请转到 Microsoft](subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings.md) 云产品/服务订阅、许可证、帐户和租户。
 
 - 对客户端的支持
 
-  包括基于证书的身份验证、移动设备管理、身份验证选项和租户间协作。 有关详细信息，请转到 [基于证书的身份验证](microsoft-365-client-support-certificate-based-authentication.md) 。
+  包括基于证书的身份验证、移动设备管理、身份验证选项和租户间协作。 有关详细信息 [，请转到基于证书的](microsoft-365-client-support-certificate-based-authentication.md) 身份验证。
 
-- 支持混合新式身份验证
+- 对混合新式验证的支持
 
-  包括在使用关键 Microsoft 365 生产力应用的混合配置时规划新式验证。 有关详细信息，请转到 " [混合新式身份验证概述和先决条件](hybrid-modern-auth-overview.md) "。
+  包括规划使用密钥和生产力应用的混合配置Microsoft 365新式验证。 有关详细信息， [请转到混合新式验证概述和](hybrid-modern-auth-overview.md) 先决条件。
 
-- 较旧的 Office 客户端和服务器
+- 较Office客户端和服务器
 
-  包括 Office 2007 和 Office 2010 客户端和服务器产品的迁移信息。 有关详细信息，请参阅 [规划升级](plan-upgrade-previous-versions-office.md) 。
+  包括有关 Office 2007 和 Office 2010 客户端和服务器产品的迁移信息。 有关详细信息 [，请转到规划](plan-upgrade-previous-versions-office.md) 升级。
 
-您还可以登录到 Microsoft 365 订阅，并使用 [microsoft 365 和 Office 365 服务的设置指南](setup-guides-for-microsoft-365.md)。
+还可以登录到你的 Microsoft 365 订阅，并使用 Microsoft 365 和 Office 365[安装指南](setup-guides-for-microsoft-365.md)。

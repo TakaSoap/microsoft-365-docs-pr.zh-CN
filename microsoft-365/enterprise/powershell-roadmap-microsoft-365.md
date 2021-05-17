@@ -1,5 +1,5 @@
 ---
-title: 适用于 Microsoft 365 的 PowerShell 路线图
+title: PowerShell Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: josephd
@@ -12,7 +12,7 @@ ms.service: o365-solutions
 localization_priority: Normal
 ms.collection: M365-subscription-management
 ms.custom: it-pro
-description: 使用适用于 Microsoft 365 的 PowerShell 的指南。
+description: 使用 PowerShell for Microsoft 365。
 ms.openlocfilehash: 76a7fe72d6ba640d6dcea240310ae3f6efdba477
 ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
 ms.translationtype: MT
@@ -20,7 +20,7 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 08/14/2020
 ms.locfileid: "46687675"
 ---
-# <a name="powershell-roadmap-for-microsoft-365"></a>适用于 Microsoft 365 的 PowerShell 路线图
+# <a name="powershell-roadmap-for-microsoft-365"></a>PowerShell Microsoft 365
 
 PowerShell 路线图内容
 

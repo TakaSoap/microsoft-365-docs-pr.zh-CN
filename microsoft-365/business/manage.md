@@ -1,5 +1,5 @@
 ---
-title: 管理 Microsoft 365 商业版
+title: 管理Microsoft 365企业部署
 f1.keywords:
 - NOCSH
 ms.author: efrene
@@ -21,7 +21,7 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 27ff1678-865a-4707-8145-e1155aa815d6
-description: 了解如何管理 Microsoft 365 商业版相关的管理任务、移动设备、Windows 10 电脑和许多此类任务。
+description: 了解如何管理Microsoft 365管理任务、移动设备、Windows 10电脑和许多此类任务。
 ms.openlocfilehash: 0ad2326bdcc785c0d8d1a52dee74187cdc1668e7
 ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
@@ -29,25 +29,25 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 04/02/2021
 ms.locfileid: "51578359"
 ---
-# <a name="manage-microsoft-365-for-business"></a>管理 Microsoft 365 商业版
+# <a name="manage-microsoft-365-for-business"></a>管理Microsoft 365企业部署
 
-## <a name="general-microsoft-365-for-business-admin-tasks"></a>常规 Microsoft 365 商业版管理任务
+## <a name="general-microsoft-365-for-business-admin-tasks"></a>业务Microsoft 365任务的常规任务
 
-Office 365 [大部分](/office365/admin/admin-home) 管理员内容也适用于 Microsoft 365 商业版。
+适用于企业[管理员Office 365](/office365/admin/admin-home)也适用于企业Microsoft 365内容。
 
-- [向 Microsoft 365 商业版添加更多用户](../admin/add-users/add-users.md)
+- [向企业Microsoft 365更多用户](../admin/add-users/add-users.md)
     
 - [查看策略和设备](view-policies-and-devices.md)
     
-- [Microsoft 365 商业版安全功能](security-features.md)
+- [Microsoft 365商业安全功能](security-features.md)
     
-- [Microsoft 365 商业版中的保护功能如何映射到 Intune 设置](map-protection-features-to-intune-settings.md)
+- [适用于企业Microsoft 365中的保护功能如何映射到 Intune 设置](map-protection-features-to-intune-settings.md)
     
-请参阅以下部分，了解如何使用 Microsoft 365 商业版保护电脑和移动设备上的组织数据。
+请参阅以下各节，了解如何Microsoft 365企业版保护电脑和移动设备上的组织数据。
   
 ## <a name="manage-mobile-devices"></a>管理移动设备
 
-- [为 Microsoft 365 商业版用户设置移动设备](set-up-mobile-devices.md)
+- [为商业用户设置Microsoft 365移动设备](set-up-mobile-devices.md)
     
 - [设置 Android 或 iOS 设备的应用保护设置](app-protection-settings-for-android-and-ios.md)
     
@@ -57,17 +57,17 @@ Office 365 [大部分](/office365/admin/admin-home) 管理员内容也适用于 
     
 ## <a name="manage-windows-10-pcs"></a>管理 Windows 10 电脑
 
-- [为 Microsoft 365 商业版用户设置 Windows 设备](set-up-windows-devices.md)
+- [为Windows用户设置 Microsoft 365 设备](set-up-windows-devices.md)
 
-    在 [自动安装 Office 之前，请阅读准备 Microsoft 365 商业](prepare-for-office-client-deployment.md) 版部署 Office 客户端。 
+    阅读[准备Office企业Microsoft 365部署客户端，](prepare-for-office-client-deployment.md)然后再自动安装Office。 
     
 - [设置 Windows 10 设备的设备保护设置](protection-settings-for-windows-10-pcs.md)
     
-    若要确保这有效，请参阅验证 [Windows 10 设备上的设备保护设置](validate-settings-on-windows-10-pcs.md)。 
+    若要确保这有效，请参阅验证设备上Windows 10[设置](validate-settings-on-windows-10-pcs.md)。 
     
 - [设置 Windows 10 设备的应用程序保护设置](protection-settings-for-windows-10-devices.md)
     
-    若要确保这有效，请参阅验证 [Windows 10 电脑的应用保护设置](validate-protection-settings-on-windows-10-pcs.md)。 
+    若要确保这有效，请参阅验证[Windows 10保护设置](validate-protection-settings-on-windows-10-pcs.md)。 
     
 - [从设备中删除公司数据](remove-company-data.md)
     
@@ -75,7 +75,7 @@ Office 365 [大部分](/office365/admin/admin-home) 管理员内容也适用于 
     
 ### <a name="use-autopilot-to-deploy-windows-10-devices"></a>使用 AutoPilot 部署 Windows 10 设备
 
-以下主题介绍了如何使用 Microsoft 365 商业版中的 Windows AutoPilot 预配置 Windows 10 设备。
+以下主题介绍如何在 Windows for business Microsoft 365 AutoPilot 来预配置Windows 10设备。
   
 - [使用分步指南添加 Autopilot 设备和配置文件](add-autopilot-devices-and-profile.md)
     
@@ -91,12 +91,12 @@ Office 365 [大部分](/office365/admin/admin-home) 管理员内容也适用于 
     
 ## <a name="set-up-and-prerequisite-information"></a>设置和先决条件信息
 
-- [使用 Microsoft 365 商业版保护设备上数据的先决条件](pre-requisites-for-data-protection.md)
+- [使用适用于企业的设备保护Microsoft 365的先决条件](pre-requisites-for-data-protection.md)
     
-- [使用设置向导设置 Microsoft 365 商业版](set-up.md)
+- [使用Microsoft 365设置向导设置企业应用](set-up.md)
     
-- [迁移到 Microsoft 365 商业版](migrate-to-microsoft-365-business.md)
+- [迁移到Microsoft 365企业](migrate-to-microsoft-365-business.md)
     
-- [允许 Microsoft 365 商业版管理加入域的 Windows 10 设备](manage-windows-devices.md)
+- [允许企业Windows 10已加入域Microsoft 365设备](manage-windows-devices.md)
     
 - [其他安全功能](security-features.md#additional-security-features)

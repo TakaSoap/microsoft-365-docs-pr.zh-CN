@@ -1,7 +1,7 @@
 ---
-title: 将 ServiceNow 票证集成到 Microsoft 365 安全中心和合规中心
-description: 了解如何从 Microsoft 365 安全中心和合规中心在 ServiceNow 创建和跟踪票证。
-keywords: 安全， Microsoft 365， M365， 合规性， 合规中心， 安全中心， ServiceNow， 票证， 任务， 数据， 连接
+title: 将 ServiceNow 票证集成到Microsoft 365安全中心和合规中心
+description: 了解如何从安全中心和合规中心在 ServiceNow Microsoft 365跟踪票证。
+keywords: 安全， Microsoft 365， M365， 合规性， 合规中心， 安全中心， ServiceNow， 票证， 任务， 数据量， 连接
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 localization_priority: Normal
@@ -27,7 +27,7 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 04/02/2021
 ms.locfileid: "51569861"
 ---
-# <a name="integrate-servicenow-tickets-into-the-microsoft-365-security-center-and-compliance-center"></a>将 ServiceNow 票证集成到 Microsoft 365 安全中心和合规中心
+# <a name="integrate-servicenow-tickets-into-the-microsoft-365-security-center-and-compliance-center"></a>将 ServiceNow 票证集成到Microsoft 365安全中心和合规中心
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 

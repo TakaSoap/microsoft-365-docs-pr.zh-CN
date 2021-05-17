@@ -54,7 +54,7 @@ ms.locfileid: "52274624"
 
 2. 单击病毒&**威胁** 防护磁贴 (左侧菜单栏上的防护图标) 然后单击病毒防护威胁防护 **&标签：**
 
-    ![Screenshot of the Virus & threat protection settings label in the Windows 安全中心 app](images/defender/wdav-protection-settings-wdsc.png)
+    ![Windows 安全应用中病毒和威胁防护设置标签的屏幕截图](images/defender/wdav-protection-settings-wdsc.png)
 
 3. 滚动到通知 **部分** ，然后单击更改 **通知设置**。
 
@@ -111,5 +111,5 @@ ms.locfileid: "52274624"
 
 ## <a name="related-topics"></a>相关主题
 
-- [Microsoft Defender 防病毒Windows 10](microsoft-defender-antivirus-in-windows-10.md)
+- [Windows 10 中的 Microsoft Defender 防病毒](microsoft-defender-antivirus-in-windows-10.md)
 - [配置最终用户与最终用户的Microsoft Defender 防病毒](configure-end-user-interaction-microsoft-defender-antivirus.md)

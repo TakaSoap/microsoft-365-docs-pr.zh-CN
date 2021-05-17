@@ -43,7 +43,7 @@ ms.locfileid: "52274936"
 
 ## <a name="how-to-install-microsoft-defender-for-endpoint-on-linux"></a>如何在 Linux 上安装 Microsoft Defender for Endpoint
 
-### <a name="prerequisites"></a>先决条件
+### <a name="prerequisites"></a>必备条件
 
 - 访问 Microsoft Defender 安全中心 门户
 - 使用系统 [系统管理器的](https://systemd.io/) Linux 分发

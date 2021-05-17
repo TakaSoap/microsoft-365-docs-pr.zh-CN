@@ -1,6 +1,6 @@
 ---
 title: Microsoft 安全分数即将提供哪些功能
-description: 介绍 Microsoft 365 安全中心中的 Microsoft 安全分数即将发生哪些新更改。
+description: 介绍 Microsoft 安全分数安全中心中即将Microsoft 365更改。
 keywords: microsoft 安全分数， 安全分数， office 365 安全分数， Microsoft 安全分数， microsoft 365 安全中心， 改进操作
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -29,7 +29,7 @@ ms.locfileid: "51569799"
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-Microsoft 安全分数位于 https://security.microsoft.com/securescore [Microsoft 365 安全中心](overview-security-center.md)。
+Microsoft 安全分数位于安全Microsoft 365 https://security.microsoft.com/securescore [中心。](overview-security-center.md)
 
 ## <a name="proposed-changes"></a>建议的更改
 

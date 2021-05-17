@@ -77,7 +77,7 @@ ms.locfileid: "52274816"
 所有修正操作（无论是挂起还是已完成）都跟踪在操作 [中心中](auto-investigation-action-center.md)。 如有必要，安全运营团队可以撤消修正操作。 若要了解更多信息，请参阅 [在自动调查后审阅和批准修正操作](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/manage-auto-investigation)。
 
 > [!TIP]
-> 查看 Microsoft 365 安全中心中新的统一调查页面。 若要了解更多信息，请参阅 ([ NEW！) Unified investigation page](/microsoft-365/security/defender/m365d-autoir-results#new-unified-investigation-page)。
+> 查看安全中心内新的统一Microsoft 365调查页面。 若要了解更多信息，请参阅 ([ NEW！) Unified investigation page](/microsoft-365/security/defender/m365d-autoir-results#new-unified-investigation-page)。
 
 
 ## <a name="requirements-for-air"></a>AIR 的要求
@@ -86,9 +86,9 @@ ms.locfileid: "52274816"
 
 目前，AIR 仅支持以下操作系统版本：
 - Windows Server 2019
-- Windows 10 版本 1709 (操作系统版本 16299.1085（包含 [KB4493441](https://support.microsoft.com/help/4493441/windows-10-update-kb4493441)) 或更高版本）
-- Windows 10 版本 1803 (操作系统内部版本 17134.704（具有 [KB4493464](https://support.microsoft.com/help/4493464/windows-10-update-kb4493464)) 或更高版本）
-- Windows 10 版本 [1803](https://docs.microsoft.com/windows/release-information/status-windows-10-1809-and-windows-server-2019) 或更高版本
+- Windows 10版本 1709 (OS 内部版本 16299.1085（包含[KB4493441](https://support.microsoft.com/help/4493441/windows-10-update-kb4493441)) 或更高版本）
+- Windows 10版本 1803 (OS 内部版本 17134.704（包含[KB4493464](https://support.microsoft.com/help/4493464/windows-10-update-kb4493464)) 或更高版本）
+- Windows 10版本[1803](https://docs.microsoft.com/windows/release-information/status-windows-10-1809-and-windows-server-2019)或更高版本
 
 ## <a name="next-steps"></a>后续步骤
 
@@ -99,5 +99,5 @@ ms.locfileid: "52274816"
 ## <a name="see-also"></a>另请参阅
 
 - [PUA 保护](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus)
-- [Microsoft Defender for Office 365 中的自动调查和响应](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air)
+- [Microsoft Defender for Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air)
 - [Microsoft 365 Defender 中的自动调查和响应](https://docs.microsoft.com/microsoft-365/security/defender/mtp-autoir)

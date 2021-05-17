@@ -14,7 +14,7 @@ ms.collection:
 - Strat_SP_gtc
 - SPO_Content
 localization_priority: Normal
-description: 本文为全球或 SharePoint 管理员提供有关在卫星地理位置启用 SharePoint 多地理位置的信息。
+description: 本文向全局管理员或SharePoint管理员提供有关在附属SharePoint Multi-Geo启用权限的信息。
 ms.openlocfilehash: 78f0e925a333dd48a6016bc749459b13e1ac21c0
 ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
 ms.translationtype: MT
@@ -24,10 +24,10 @@ ms.locfileid: "46688158"
 ---
 # <a name="enabling-sharepoint-multi-geo-in-your-satellite-geo-location"></a>在卫星定位中启用 SharePoint 多地理位置功能
 
-本文面向 2019 年 3 月 27 日正式发布 SharePoint 多地理位置功能**以前**已创建多地理位置卫星位置且未在其卫星地理位置启用 SharePoint 多地理位置的全局或 SharePoint 管理员。 
+本文面向 2019 年 3 月 27 日正式发布 SharePoint 多地理位置功能 **以前** 已创建多地理位置卫星位置且未在其卫星地理位置启用 SharePoint 多地理位置的全局或 SharePoint 管理员。 
 
 >[!Note]
->如果已在 **3 月 27 日后**添加新的地理位置，则无需执行这些说明，因为新的地理位置已针对 OneDrive 和 SharePoint 多地理位置启用。
+>如果已在 **3 月 27 日后** 添加新的地理位置，则无需执行这些说明，因为新的地理位置已针对 OneDrive 和 SharePoint 多地理位置启用。
 
 通过这些说明，可以在卫星位置启用 SharePoint，因此多地理位置卫星用户可以利用 O365 中的 OneDrive 和 SharePoint 多地理位置功能。 
 

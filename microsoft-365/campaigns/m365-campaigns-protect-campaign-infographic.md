@@ -33,7 +33,7 @@ ms.locfileid: "50044392"
 ---
 # <a name="infographic-help-protect-yourself-and-your-campaign-from-digital-threats"></a>信息图：帮助保护你自己和市场活动免受数字威胁
 
-可以下载并打印以下 PowerPoint 和 PDF 链接，格式为 (分类帐、11 x 17 或 A3) 。
+可以下载并打印 PowerPoint 和 PDF 的以下链接，格式为 (分类帐、11 x 17 或 A3) 。
 
 [![用于保护你的帮助保护市场活动信息图形的图像](../media/M365-Campaigns-WhatCanUsersDoToSecure-358x201.png)](downloads/M365CampaignsWhatCanUsersDoToSecure.pdf)
 

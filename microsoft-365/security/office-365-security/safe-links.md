@@ -27,12 +27,12 @@ ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: 本文中，管理员可了解 defender 保险箱链接保护，Office 365保护组织免受使用恶意 URL 的网络钓鱼和其他攻击。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: c93ed2ec46cd0fd82ae1808ff7cfdb4a4f758117
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 86ecea1e250821f6a7f08d204586db0e60052e5c
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52246497"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52274432"
 ---
 # <a name="safe-links-in-microsoft-defender-for-office-365"></a>保险箱Microsoft Defender for Office 365
 
@@ -107,9 +107,7 @@ ms.locfileid: "52246497"
   - 没有有效信誉的 URL 将在后台异步触发。
 
 - **对指向文件的** 可疑链接应用实时 URL 扫描：启用链接（包括指向可下载内容的电子邮件中的链接）实时扫描。 建议的值已启用。
-
   - **等待 URL 扫描完成，然后再传递邮件**：
-
     - 已启用：包含 URL 的邮件将一直进行，直到扫描完成。 仅在确认 URL 是安全的之后，才传递邮件。 这是建议的值。
     - 已禁用：如果 URL 扫描无法完成，无论如何都传递邮件。
 
@@ -128,7 +126,6 @@ ms.locfileid: "52246497"
   有关链接策略的标准策略和严格策略设置的建议值保险箱，请参阅保险箱[链接策略设置。](recommended-settings-for-eop-and-office365.md#safe-links-policy-settings)
 
 - **收件人** 筛选器：需要指定确定策略适用的收件人条件和例外。 可以将这些属性用于条件和例外：
-
   - **收件人为**
   - **收件人域为**
   - **收件人为以下组的成员**
@@ -259,26 +256,23 @@ ms.locfileid: "52246497"
 
 您可以在全局设置中为"链接"配置保险箱列表。 有关说明，请参阅 [配置"阻止以下 URL"列表](configure-global-settings-for-safe-links.md#configure-the-block-the-following-urls-list-in-the-security--compliance-center)。
 
-> [!NOTE]
-> 
-> - 有关被阻止的 URL 的真正通用列表，请参阅管理 [租户允许/阻止列表](tenant-allow-block-list.md)。
-> 
-> - 限制：
->   - 最大条目数为 500。
->   - 条目的最大长度为 128 个字符。
->   - 所有条目不能超过 10，000 个字符。
-> 
-> - 不要在 URL 末尾添加 `/` () 斜杠。 例如，使用 `https://www.contoso.com` ，而不是 `https://www.contoso.com/` 。
-> 
-> - 例如或 (仅域 URL) `contoso.com` `tailspintoys.com` 将阻止包含该域的任何 URL。
-> 
-> - 可以阻止子域，但不阻止整个域。 例如，阻止包含子域的任何 URL，但不阻止包含完整域 `toys.contoso.com*` 的 `contoso.com` URL。
-> 
-> - 每个 URL 条目可以包含最多三 () `*` 通配符。
+**注意**：
+
+- 有关被阻止的 URL 的真正通用列表，请参阅管理 [租户允许/阻止列表](tenant-allow-block-list.md)。
+- 阻止以下 **URL 列表** 的限制：
+  - 最大条目数为 500。
+  - 条目的最大长度为 128 个字符。
+  - 所有条目不能超过 10，000 个字符。
+- 不要在 URL 末尾添加 `/` () 斜杠。 例如，使用 `https://www.contoso.com` ，而不是 `https://www.contoso.com/` 。
+- 例如或 (仅域 URL) `contoso.com` `tailspintoys.com` 将阻止包含该域的任何 URL。
+- 可以阻止子域，但不阻止整个域。 例如，阻止包含子域的任何 URL，但不阻止包含完整域 `toys.contoso.com*` 的 `contoso.com` URL。
+- 每个 URL 条目可以包含最多三 () `*` 通配符。
 
 ### <a name="entry-syntax-for-the-block-the-following-urls-list"></a>"阻止以下 URL"列表的条目语法
 
 下表介绍了您可以输入的值及其结果的示例：
+
+<br>
 
 ****
 
@@ -299,24 +293,24 @@ ms.locfileid: "52246497"
 
 若要将条目添加到新列表或现有链接保险箱，请参阅 Create 保险箱 Links [policies](set-up-safe-links-policies.md#use-the-security--compliance-center-to-create-safe-links-policies)或 Modify 保险箱[Links policies](set-up-safe-links-policies.md#use-the-security--compliance-center-to-modify-safe-links-policies)。
 
-> [!NOTE]
-> 
-> - 以下客户端无法识别"不重写链接"**策略** 中的保险箱 URL 列表。 根据以下客户端中链接扫描的结果，可阻止包含在保险箱中的用户访问 URL：
-> 
->   - Microsoft Teams
->   - Office Web 应用
-> 
->   有关任何地方允许的 URL 的真正通用列表，请参阅 [管理租户允许/阻止列表](tenant-allow-block-list.md)。
-> 
-> - 请考虑将常用的内部 URL 添加到列表中，以改进用户体验。 例如，如果你有本地服务（如 Skype for Business 或 SharePoint，可以添加这些 URL 以将其从扫描中排除。
-> 
-> - 如果"链接"**策略** 中已有"不重写保险箱 URL 条目，请务必查看列表并根据需要添加通配符。 例如，你的列表有一个类似 的条目 `https://contoso.com/a` ，你稍后决定包括子路径，如 `https://contoso.com/a/b` 。 不要添加新条目，而是向现有条目添加通配符，以便它成为 `https://contoso.com/a/*` 。
-> 
-> - 每个 URL 条目可以包含最多三 () `*` 通配符。 通配符明确包括前缀或子域。 例如，条目与 不同，因为允许用户访问指定域中的子域 `contoso.com` `*.contoso.com/*` `*.contoso.com/*` 和路径。
+**注意**：
+
+- 以下客户端无法识别"不重写链接"**策略** 中的保险箱 URL 列表。 根据以下客户端中链接扫描的结果，可阻止包含在保险箱中的用户访问 URL：
+  - Microsoft Teams
+  - Office Web 应用
+
+  有关任何地方允许的 URL 的真正通用列表，请参阅 [管理租户允许/阻止列表](tenant-allow-block-list.md)。
+
+- 请考虑将常用的内部 URL 添加到列表中，以改进用户体验。 例如，如果你有本地服务（如 Skype for Business 或 SharePoint，可以添加这些 URL 以将其从扫描中排除。
+- 如果"链接"**策略** 中已有"不重写保险箱 URL 条目，请务必查看列表并根据需要添加通配符。 例如，你的列表有一个类似 的条目 `https://contoso.com/a` ，你稍后决定包括子路径，如 `https://contoso.com/a/b` 。 不要添加新条目，而是向现有条目添加通配符，以便它成为 `https://contoso.com/a/*` 。
+- 每个 URL 条目可以包含最多三 () `*` 通配符。 通配符明确包括前缀或子域。 例如，条目与 不同，因为允许用户访问指定域中的子域 `contoso.com` `*.contoso.com/*` `*.contoso.com/*` 和路径。
+- 如果 URL 使用 HTTP 到 HTTPS (（例如，302 重定向到) ）的自动重定向，并且您尝试为列表中的同一 URL 输入 HTTP 和 HTTPS 条目，您可能会注意到第二个 URL 条目将替换第一 `http://www.contoso.com` 个 URL 条目。 `https://www.contoso.com` 如果 URL 的 HTTP 和 HTTPS 版本是完全独立的，则不会发生此行为。
 
 ### <a name="entry-syntax-for-the-do-not-rewrite-the-following-urls-list"></a>"不重写以下 URL"列表的条目语法
 
 下表介绍了您可以输入的值及其结果的示例：
+
+<br>
 
 ****
 

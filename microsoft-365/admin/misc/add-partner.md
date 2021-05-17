@@ -20,7 +20,7 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: f86e8177-936e-491e-9024-44dea2b296ff
-description: 了解如何在购买 Microsoft 365 时将订阅顾问合作伙伴添加为记录合作伙伴、更改合作伙伴或删除订阅中的合作伙伴。
+description: 了解如何在购买时添加订阅顾问合作伙伴作为记录合作伙伴Microsoft 365更改合作伙伴，或者从订阅中删除合作伙伴。
 ms.openlocfilehash: 913b0e14e1bc08cfd4037775aa4b72b7280c704c
 ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
@@ -33,19 +33,19 @@ ms.locfileid: "51579226"
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 本文适用于中国的由世纪互联运营的 Office 365。 它适用于希望允许世纪银行合作伙伴管理其 Office 365 订阅的组织。
+> 本文适用于中国的由世纪互联运营的 Office 365。 它适用于希望允许世纪银行合作伙伴管理其 Office 365订阅的组织。
 
 ::: moniker-end
 
 ::: moniker range="o365-worldwide"
 
-作为你的订阅顾问的 Microsoft 授权合作伙伴可向你提供销售、支持和技术方面的专业知识，以帮助你设置和维护订阅。 可以在购买 Microsoft 365 时或其他时间将订阅顾问合作伙伴添加为记录合作伙伴。 如果当前未与合作伙伴合作，还可以在 [Microsoft Pinpoint](https://pinpoint.microsoft.com) 网站上找到一个合作伙伴。
+作为你的订阅顾问的 Microsoft 授权合作伙伴可向你提供销售、支持和技术方面的专业知识，以帮助你设置和维护订阅。 购买订阅顾问合作伙伴或其他时间时，你可以添加Microsoft 365合作伙伴作为记录合作伙伴。 如果当前未与合作伙伴合作，还可以在 [Microsoft Pinpoint](https://pinpoint.microsoft.com) 网站上找到一个合作伙伴。
 
 ::: moniker-end
 
 ::: moniker range="o365-worldwide"
 
-你选择的合作伙伴取决于你使用的 Microsoft 服务以及你将使用这些服务的每个国家/地区。 如果您要添加合作伙伴或更改您的订阅的合作伙伴，首先需要通过向合作伙伴询问来获取合作伙伴的 Microsoft 合作伙伴 ID。
+你选择的合作伙伴取决于您Microsoft 服务使用的服务的国家/地区或区域。 如果您要添加合作伙伴或更改您的订阅的合作伙伴，首先需要通过向合作伙伴询问来获取合作伙伴的 Microsoft 合作伙伴 ID。
 
 ::: moniker-end
 
@@ -63,7 +63,7 @@ ms.locfileid: "51579226"
 
 ::: moniker range="o365-21vianet"
 
-作为 Office 365 的管理员，您可以创建或编辑用户、重置用户密码、管理用户许可证、管理域以及向组织中其他用户分配管理员权限等。 但是，如果希望其他人执行这些管理任务，可以通过创建合作伙伴关系，将此角色委派给世纪银行的授权合作伙伴。
+作为 Office 365管理员，您可以创建或编辑用户、重置用户密码、管理用户许可证、管理域以及将管理员权限分配给组织中其他用户等。 但是，如果希望其他人执行这些管理任务，可以通过创建合作伙伴关系，将此角色委派给世纪银行的授权合作伙伴。
 
 ::: moniker-end
 
@@ -123,7 +123,7 @@ ms.locfileid: "51579226"
 接受此优惠
   
 1. 阅读电子邮件中的合作伙伴条款。
-2. 若要授权协议，请选择指向 Office 365 中的授权页面的链接。
+2. 若要授权协议，请选择该链接，该链接将转到 Office 365。
 3. 在 **"合作伙伴关系****"** 下，选择"是"以授权合作伙伴成为你的委派管理员，然后选择"下一 **步"。**
 4. 如果合作伙伴关系优惠与试用订阅或购买产品/服务一起提供，请创建试用版或订阅帐户。
 
@@ -160,7 +160,7 @@ ms.locfileid: "51579226"
 
 ## <a name="view-your-partner-relationships"></a>查看你的合作伙伴关系
 
-- 在管理中心，转到"设置  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2074649" target="_blank">""合作伙伴关系"</a>页面。 你的合作伙伴将在此页面上列出。
+- 在管理中心，转到 **"设置**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2074649" target="_blank">关系"</a>页面。 你的合作伙伴将在此页面上列出。
 
   如果你没有合作伙伴，你将看到一条消息，显示"此处没有内容"。
   
@@ -220,4 +220,4 @@ ms.locfileid: "51579226"
 
 ## <a name="related-articles"></a>相关文章
 
-[查找你的 Microsoft 365 合作伙伴或经销商](../manage/find-your-partner-or-reseller.md)
+[查找你的Microsoft 365合作伙伴或经销商](../manage/find-your-partner-or-reseller.md)

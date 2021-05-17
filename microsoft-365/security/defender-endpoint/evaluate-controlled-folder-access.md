@@ -52,11 +52,11 @@ Set-MpPreference -EnableControlledFolderAccess AuditMode
 
 > [!TIP]
 > 如果你想要完全审核受控文件夹访问权限在组织中如何工作，你将需要使用管理工具将此设置部署到网络 (设备) 。
-您还可以使用组策略、Intune、移动设备管理 (MDM) 或 Microsoft Endpoint Manager 配置和部署设置，如主要的受控文件夹 [访问权限主题中所述](controlled-folders.md)。
+您还可以使用组策略、Intune、移动设备管理 (MDM) 或 Microsoft Endpoint Manager 配置和部署设置，如主要的受控文件夹[访问权限主题中所述](controlled-folders.md)。
 
-## <a name="review-controlled-folder-access-events-in-windows-event-viewer"></a>在 Windows 事件查看器中查看受控文件夹访问权限事件
+## <a name="review-controlled-folder-access-events-in-windows-event-viewer"></a>在事件查看器中查看受控Windows访问事件
 
-以下受控文件夹访问权限事件显示在 Microsoft/Windows/Windows Defender/Operational 文件夹下的 Windows 事件查看器中。
+以下受控文件夹访问权限事件显示在 microsoft/Windows/Windows Windows Defender/Operational 文件夹下的 Windows 事件查看器中。
 
 事件 ID | 说明
 -|-
@@ -65,7 +65,7 @@ Set-MpPreference -EnableControlledFolderAccess AuditMode
  1123 | 阻止的受控文件夹访问事件
 
 > [!TIP]
-> 你可以配置 [Windows 事件转发订阅](https://docs.microsoft.com/windows/win32/wec/setting-up-a-source-initiated-subscription) 以集中收集日志。 
+> 你可以配置Windows[转发订阅](https://docs.microsoft.com/windows/win32/wec/setting-up-a-source-initiated-subscription)以集中收集日志。 
 
 ## <a name="customize-protected-folders-and-apps"></a>自定义受保护的文件夹和应用
 

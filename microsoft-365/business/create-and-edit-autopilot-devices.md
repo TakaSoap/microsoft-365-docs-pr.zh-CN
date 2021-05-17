@@ -25,7 +25,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 0f7b1d7c-4086-4331-8534-45d7886f9f34
-description: 了解如何使用 Microsoft 365 商业高级版中的 AutoPilot 上载设备。 你可以将配置文件分配给设备或一组设备。
+description: 了解如何在设备上使用 AutoPilot Microsoft 365 商业高级版。 你可以将配置文件分配给设备或一组设备。
 ms.openlocfilehash: 506ff44e3cb6656b19174e82688b5af141ea2b79
 ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
@@ -41,11 +41,11 @@ ms.locfileid: "51578479"
   
 设备必须满足以下要求：
   
-- Windows 10 版本 1703 或更高版本
+- Windows 10版本 1703 或更高版本
     
-- 尚未通过 Windows 全新体验的新设备
+- 尚未体验全新体验Windows全新体验的新设备
 
-1. 在 Microsoft 365 管理中心，选择 **设备** \> **AutoPilot**。
+1. In the Microsoft 365 admin center， choose **Devices** \> **AutoPilot**.
   
 2. 在 **AutoPilot 页面上**，选择 **"设备**"选项卡 \> **"添加设备"。**
     
@@ -57,7 +57,7 @@ ms.locfileid: "51578479"
     
 ## <a name="assign-a-profile-to-a-device-or-a-group-of-devices"></a>向单个设备或一组设备应用配置文件
 
-1. 在" **准备 Windows"** 页上，选择" **设备** "选项卡，然后选中一个或多个设备旁边的复选框。 
+1. 在"**准备Windows"** 页上，选择"设备"**选项卡，** 然后选中一个或多个设备旁边的复选框。 
     
 2. 在" **设备**"面板中，从" **分配的配置文件**"下拉列表中选择一个配置文件。 
     

@@ -24,7 +24,7 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
-description: 了解如何使用 Outlook 发送加密电子邮件。
+description: 了解如何使用电子邮件发送加密Outlook。
 ms.openlocfilehash: 209734bd52d1d97278d5632f035723758fe2e016
 ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
@@ -47,21 +47,21 @@ ms.locfileid: "51576969"
 
 ## <a name="set-it-up"></a>设置
 
-如果要加密不满足预定义规则的邮件，或者管理员未设置任何规则，可以在发送邮件之前应用各种不同的加密规则。 若要从 Outlook 2013 或 2016 或 Outlook 2016 for Mac 发送加密邮件，请选择"选项 **">"** 权限"，然后选择所需的保护选项。 您还可以通过选择 Outlook 网页中的"保护"按钮发送加密邮件。 有关详细信息，请参阅在 [Outlook for PC](https://support.microsoft.com/en-us/office/send-view-and-reply-to-encrypted-messages-in-outlook-for-pc-eaa43495-9bbb-4fca-922a-df90dee51980)中发送、查看和回复加密邮件。
+如果要加密不满足预定义规则的邮件，或者管理员未设置任何规则，可以在发送邮件之前应用各种不同的加密规则。 若要从 Outlook 2013 或 2016 或 Outlook 2016 for Mac 发送加密邮件，请选择"选项 **">"** 权限"，然后选择所需的保护选项。 您还可以通过选择 Web 上的"网站"中的"保护"Outlook发送加密邮件。 有关详细信息，请参阅S [send， view， and reply to encrypted messages in Outlook for PC](https://support.microsoft.com/en-us/office/send-view-and-reply-to-encrypted-messages-in-outlook-for-pc-eaa43495-9bbb-4fca-922a-df90dee51980)。
 
 ## <a name="admin-settings"></a>管理员设置
 
-可在 Microsoft 365 中的电子邮件加密中了解有关设置 [电子邮件加密的所有信息](../compliance/email-encryption.md)。
+有关设置电子邮件加密的所有信息，请通过 Microsoft 365 中的[电子邮件加密](../compliance/email-encryption.md)。
 
 ### <a name="automatically-encrypt-email-messages"></a>自动加密电子邮件
 
 管理员可以创建邮件流规则，以自动保护从市场活动中发送和接收的电子邮件。 设置规则以加密任何传出电子邮件，并从来自组织内部的加密邮件或对从组织发送的加密邮件的答复中删除加密。
 
-创建邮件流规则以使用新的 Office 365 邮件加密和 OME (加密) 电子邮件。 使用 Exchange 管理中心和 EAC (定义邮件流规则，以使用新的 OME 功能) 。 
+创建邮件流规则以使用新的 OME Office 365 邮件加密 (加密) 电子邮件。 定义邮件流规则，以使用 EAC Exchange管理中心 (OME) 。 
 
 1. 在 Web 浏览器中，使用已被授予全局管理员权限的工作或学校帐户登录。
 2. 选择"管理"磁贴。
-3. In the admin center， choose **Admin centers > Exchange**.
+3. 在管理中心中，选择"**管理中心> Exchange"。**
 
 有关详细信息，请参阅定义 [用于加密电子邮件的邮件流规则](../compliance/define-mail-flow-rules-to-encrypt-email.md)。
 

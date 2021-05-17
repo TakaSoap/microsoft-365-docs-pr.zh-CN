@@ -48,7 +48,7 @@ Windows 安全中心应用是 Windows 10 版本 1703 及更高版本上的客户
 
 ## <a name="review-virus-and-threat-protection-settings-in-the-windows-security-app"></a>查看应用程序应用中的病毒和威胁Windows 安全中心设置
 
-![Screenshot of the Virus & threat protection settings label in the Windows 安全中心 app](images/defender/wdav-protection-settings-wdsc.png)
+![Windows 安全应用中病毒和威胁防护设置标签的屏幕截图](images/defender/wdav-protection-settings-wdsc.png)
 
 1. 通过Windows 安全中心任务栏中的防护图标或搜索 Defender 的"开始"菜单打开"开始 **"菜单。**
 
@@ -57,7 +57,7 @@ Windows 安全中心应用是 Windows 10 版本 1703 及更高版本上的客户
 以下各节介绍如何在查看或与应用中的 Microsoft Defender 防病毒 所提供的威胁防护交互时执行一些最常见的Windows 安全中心任务。
 
 > [!NOTE]
-> 如果使用组策略配置和部署这些设置，本部分中所述的设置将灰出，并且无法用于各个终结点。 必须先通过组策略对象所做的更改部署到各个终结点，然后才能在 Windows 设置 中更新设置。 Configure [end-user interaction with Microsoft Defender 防病毒](configure-end-user-interaction-microsoft-defender-antivirus.md)主题介绍了如何配置本地策略覆盖设置。
+> 如果使用组策略配置和部署这些设置，本部分中所述的设置将灰出，并且无法用于各个终结点。 通过组策略对象进行的更改必须先部署到个别终结点，然后 Windows 设置中的相关设置才会更新。 Configure [end-user interaction with Microsoft Defender 防病毒](configure-end-user-interaction-microsoft-defender-antivirus.md)主题介绍了如何配置本地策略覆盖设置。
 
 ## <a name="run-a-scan-with-the-windows-security-app"></a>使用应用运行Windows 安全中心扫描
 
@@ -109,7 +109,7 @@ Windows 安全中心应用是 Windows 10 版本 1703 及更高版本上的客户
 
 |排除类型  |定义者  |发生的情况  |
 |---------|---------|---------|
-|**File** |位置 <br/>示例：`c:\sample\sample.test` |特定文件将被用户跳过Microsoft Defender 防病毒。 |
+|**文件** |位置 <br/>示例：`c:\sample\sample.test` |特定文件将被用户跳过Microsoft Defender 防病毒。 |
 |**Folder**    |位置 <br/>示例：`c:\test\sample`       |指定文件夹中的所有项目都将被用户跳过Microsoft Defender 防病毒。         |
 |**文件类型**   |文件扩展名 <br/>示例：`.test` |设备上任意位置 `.test` 具有扩展名的所有文件都将被用户跳过Microsoft Defender 防病毒。         |
 |**进程**     |可执行文件路径 <br>示例：`c:\test\process.exe`         |特定进程以及该流程打开的任何文件都将被用户跳过Microsoft Defender 防病毒。         |

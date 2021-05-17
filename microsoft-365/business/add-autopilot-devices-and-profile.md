@@ -24,7 +24,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: be5b6d90-3344-4c5e-bf40-5733eb845beb
-description: 了解如何使用 Windows AutoPilot 为企业设置新的 Windows 10 设备，以便员工可以使用这些设备。
+description: 了解如何使用 Windows AutoPilot 为Windows 10设置新设备，以便员工可以使用这些设备。
 ms.openlocfilehash: cd8777e6ae2e395506d2bf308c99309de1e24805
 ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
@@ -34,15 +34,15 @@ ms.locfileid: "51578519"
 ---
 # <a name="use-the-step-by-step-guide-to-add-autopilot-devices-and-profile"></a>使用分步指南添加 Autopilot 设备和配置文件
 
-可以使用 Windows AutoPilot 为企业设置新的 **Windows** 10 设备，以便当你将这些设备授予你的员工时，这些设备可供使用。
+可以使用 Windows AutoPilot 为Windows 10设置新的设备，以便当你将这些设备授予你的员工时，这些设备可供使用。
   
 ## <a name="device-requirements"></a>设备要求
 
 设备必须满足以下要求：
   
-- Windows 10 版本 1703 或更高版本
+- Windows 10版本 1703 或更高版本
     
-- 尚未通过 Windows 全新体验的新设备
+- 尚未体验全新体验Windows全新体验的新设备
     
 ## <a name="use-the-setup-guide-to-create-devices-and-profiles"></a>使用设置指南创建设备和配置文件
 
@@ -60,7 +60,7 @@ ms.locfileid: "51578519"
     
     ![Click Start guide for step-by-step instructions for Autopilot.](../media/31662655-d1e6-437d-87ea-c0dec5da56f7.png)
   
-3. 在" **上传包含设备列表的 .csv** 文件"页上，浏览到准备好的位置。CSV 文件，然后打开 **下** \> **一个**。 文件必须具有三个标头：
+3. On the **Upload .csv file with list of devices** page， browse to a location where you have the prepared .CSV file， then **Open** \> **Next**. 文件必须具有三个标头：
     
     - 列 A：设备序列号
     
@@ -73,7 +73,7 @@ ms.locfileid: "51578519"
     有关详细信息，请参阅 [设备列表 CSV 文件](../admin/misc/device-list.md)。还可在" **上传设备列表 .csv 文件**"页面下载示例文件。 
     
 > [!NOTE]
-> 此脚本使用 WMI 检索客户在 Windows Autopilot 中注册设备所需的属性。 请注意，生成的 CSV 文件不收集 Windows 产品 ID (PKID) 值是正常的，因为注册设备不需要这样做，并且输出 CSV 中的 PKID 为 NULL 完全正常。 将仅填充序列号和硬件哈希。
+> 此脚本使用 WMI 检索客户在 Autopilot 中注册设备Windows属性。 请注意，生成的 CSV 文件不收集 Windows 产品 ID (PKID) 值是正常的，因为注册设备不需要这样做，并且输出 CSV 中的 PKID 为 NULL 完全正常。 将仅填充序列号和硬件哈希。
     
 4. 在 **"分配配置文件"** 页上，您可以选择现有配置文件或创建新配置文件。 如果还没有，系统将提示你创建一个。 
     
@@ -81,11 +81,11 @@ ms.locfileid: "51578519"
     
     默认功能是必需的，并且会自动设置。 默认功能是：
     
-    - 跳过 Cortana、OneDrive 和 OEM 注册。
+    - 跳过 Cortana、OneDrive和 OEM 注册。
     
     - 使用公司品牌创建登录体验。
     
-    - 将设备连接到 Azure Active Directory 帐户，并自动注册它们以由 Microsoft 365 商业高级版管理。
+    - 连接你的设备Azure Active Directory帐户，并自动注册它们，以由Microsoft 365 商业高级版。
     
     有关详细信息，请参阅关于 [AutoPilot 配置文件设置](autopilot-profile-settings.md)。 
     

@@ -22,27 +22,27 @@ ms.locfileid: "51579262"
 ---
 # <a name="pin-apps-to-your-users-app-launcher"></a>将应用固定到用户的应用启动器
 
-可以使用 Azure Active Directory 门户中的控件将最多三个应用固定到 Office.com 组织中所有用户的应用启动器。 还可以组织应用程序组。 你添加的任何应用稍后都可以由用户随时取消固定。 若要为用户固定应用，你必须是云应用程序管理员、Azure Active Directory 中的应用程序管理员或 Office 365 中的全局管理员。 有关管理员角色详细信息，请参阅 [Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles) 中的管理员角色和 [Microsoft 365](../add-users/about-admin-roles.md)中的管理员角色。 
+可以使用 Azure Active Directory 门户中的控件将最多三个应用固定到 Office.com，以及组织中所有用户的应用启动器。 还可以组织应用程序组。 你添加的任何应用稍后都可以由用户随时取消固定。 若要为用户固定应用，你必须是云应用程序管理员、Azure Active Directory管理员或 Office 365。 有关管理员角色详细信息，请参阅 Azure Active Directory[中的](/azure/active-directory/users-groups-roles/directory-assign-admin-roles)管理员角色和[Microsoft 365。](../add-users/about-admin-roles.md) 
 
-有关应用启动器和应用启动器 Office.com，请参阅了解应用启动[](https://support.microsoft.com/office/79f12104-6fed-442f-96a0-eb089a3f476a)器和 office.com 和[Office 365](https://techcommunity.microsoft.com/t5/office-365-blog/updates-to-office-com-and-the-office-365-app-launcher/ba-p/1150503)应用启动器博客文章。
+有关应用启动器和 Office.com 的信息，请参阅了解应用启动器和[](https://support.microsoft.com/office/79f12104-6fed-442f-96a0-eb089a3f476a)office.com 更新和 Office 365[应用](https://techcommunity.microsoft.com/t5/office-365-blog/updates-to-office-com-and-the-office-365-app-launcher/ba-p/1150503)启动器博客文章。
 
-## <a name="use-the-azure-active-directory-portal-to-pin-apps"></a>使用 Azure Active Directory 门户固定应用
+## <a name="use-the-azure-active-directory-portal-to-pin-apps"></a>使用 Azure Active Directory门户固定应用
 
-1. 转到 Microsoft 365 管理中心，位于 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> 。
-2. 在左侧导航中，选择"**全部显示**"，在"管理 **中心**"下，选择 **"Azure Active Directory"。**
-3. 在 **Azure Active Directory 中**，选择 **"企业应用程序**  >  **""用户设置"。**
+1. 转到位于 Microsoft 365管理中心 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> 。
+2. 在左侧导航中，选择"**全部显示**"，在"管理中心"**下，选择**"Azure Active Directory"。 
+3. In **Azure Active Directory，** choose **Enterprise applications**  >  **User settings**.
 4. 在 **"Office 365 设置"** 部分，选择"**添加应用程序"。**
 5. 选择要固定到用户的应用启动器的应用程序，然后选择"添加 **"。**
 
-:::image type="content" source="../../media/add-apps.png" alt-text="用于固定应用的 Microsoft 365 设置。":::
+:::image type="content" source="../../media/add-apps.png" alt-text="Microsoft 365设置固定应用。":::
 
 ### <a name="pin-a-custom-app"></a>固定自定义应用
 
 > [!NOTE]
-> 用户界面将指示是否需要购买其他 Azure AD 许可证以使用此功能。 有关详细信息，请参阅 [Azure Active Directory 定价](https://azure.microsoft.com/pricing/details/active-directory/)。
+> 用户界面将指示是否需要购买其他 Azure AD 许可证以使用此功能。 有关详细信息，请参阅Azure Active Directory[定价](https://azure.microsoft.com/pricing/details/active-directory/)。
 
-1. 在 **Azure Active Directory 中**，选择"所有应用程序"页面顶部的  >  "企业应用程序""**新建应用程序**"。
-2. 在"**添加应用程序"页上**，选择"非库应用程序"或"创建你自己的应用程序"（如果你位于 Azure Active Directory 的预览版中）。 
+1. In **Azure Active Directory，** choose **Enterprise applications**  >  **New application** on the top of the All **applications** page.
+2. 在"**添加应用程序"** 页上，选择"非库应用程序"或"创建您自己的应用程序"（如果位于 Azure Active Directory 预览版中）。 
 3. 键入应用程序的名称，然后在"用户和组"选项卡 **中分配** 用户。
 4. 使用" **属性** "选项卡上传应用的图标。
 5. 若要向应用分配 URL，请在"单一登录 **"选项卡中选择** "链接 **"，然后** 输入 URL。

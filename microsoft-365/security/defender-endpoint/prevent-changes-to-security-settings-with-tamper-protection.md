@@ -302,7 +302,7 @@ Windows 10OS 1709、1803、1809 或更高版本以及[Microsoft Defender for End
 
 ### <a name="will-there-be-an-alert-about-tamper-protection-status-changing-in-the-microsoft-defender-security-center"></a>是否将在更新过程中收到有关篡改保护状态更改的Microsoft Defender 安全中心？
 
-对。 警报显示在警报 [https://securitycenter.microsoft.com](https://securitycenter.microsoft.com) **下**。
+是的。 警报显示在警报 [https://securitycenter.microsoft.com](https://securitycenter.microsoft.com) **下**。
 
 安全运营团队还可使用搜寻查询，如以下示例：
 

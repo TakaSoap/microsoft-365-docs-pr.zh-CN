@@ -26,9 +26,9 @@ ms.locfileid: "51579130"
 ---
 # <a name="security-info-graphic-for-small-businesses"></a>小型企业的安全信息图形
 
-**摘要：** 了解企业面临的威胁的基本术语，以及你可以如何保护你的数据、帐户和设备。 作为 Microsoft 365 商业版管理员，采取行动使企业更安全，并帮助每位员工了解如何保护业务数据和设备安全。
+**摘要：** 了解企业面临的威胁的基本术语，以及你可以如何保护你的数据、帐户和设备。 作为企业Microsoft 365管理员，采取行动使企业更安全，并帮助每位员工了解如何保护业务数据和设备的安全。
 
-下面的 PowerPoint 和 PDF 链接可以下载并打印为分类帐 (分类帐、11 x 17 或 A3) 。
+下面的 PowerPoint 和 PDF 的链接可以下载并打印为小报格式 (也称为分类帐、11 x 17 或 A3) 。
 
 ![用于保护小型企业信息图形的图像](../media/smbthreatprotectioninfographic-thumbnail.png)
 

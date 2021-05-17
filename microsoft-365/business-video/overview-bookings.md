@@ -35,7 +35,7 @@ Microsoft Bookings 是一款适用于小型企业的联机和移动应用，可�
 
 ## <a name="get-started-with-bookings"></a>Bookings 入门
 
-1. 若要开始登录到 Microsoft 365，然后从应用启动 **器中选择 Bookings。**
+1. 若要开始登录到 Microsoft 365，请从应用启动 **器中选择 Bookings。**
 1. 在 **Bookings 页面上** 选择"现在 **获取** "。
 1. 添加你的业务信息，你已准备好开始使用 Bookings。
 

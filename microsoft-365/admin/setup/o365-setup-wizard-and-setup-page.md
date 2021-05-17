@@ -29,36 +29,36 @@ ms.locfileid: "51579106"
 ---
 # <a name="difference-between-the-setup-wizard-and-the-setup-page"></a>安装向导和"安装"页的区别
 
-Microsoft 365 提供两种设置体验： 
+Microsoft 365两种设置体验： 
 
 - 使用安装向导进行的初始设置
 - 使用"设置"页进行 **持续和高级** 设置
 
-安装向导提供了指导性演练，用于设置基本 Microsoft 365 配置。 完成初始设置后，可以转到"设置"页以完成订阅所提供服务的设置和配置。
+安装向导提供了指导性演练，用于设置基本Microsoft 365配置。 完成初始设置后，可以转到"设置"页以完成订阅所提供服务的设置和配置。
 
 ## <a name="use-the-setup-wizard-to-complete-initial-setup-tasks"></a>使用安装向导完成初始设置任务
 
 若要设置帐户，请转到管理中心，选择 [](https://go.microsoft.com/fwlink/p/?linkid=2024339)左侧导航窗格中的"设置"，然后在"设置"页上选择"引导 **式设置**"。
 
-![启动 Microsoft 365 商业应用版设置向导](../../media/o365b-guided-setup.png)
+![启动Microsoft 365 商业应用版安装向导](../../media/o365b-guided-setup.png)
 
 安装向导将指导您完成以下步骤：
 
-1. 在计算机上安装 Microsoft 365 应用。
+1. 在Microsoft 365安装应用。
 
 2. 选择并验证域，例如 contoso.com。
 
-3. 添加新用户并为其分配许可证，以便他们可以下载和安装 Microsoft 365 应用。
+3. 添加新用户并为其分配许可证，以便他们可以下载和安装Microsoft 365应用。
 
 4. 连接域。
 
 ## <a name="use-the-setup-page-to-complete-and-manage-your-configuration"></a>使用"安装"页完成和管理配置
 
-若要访问管理 **中心** 中的"安装" [页，](https://go.microsoft.com/fwlink/p/?linkid=2024339)请在导航 **窗格中** 选择"设置"。 此处显示基于你已购买的产品、你设置的功能以及你的管理员角色、来自 Microsoft 365 的任务和相关信息。
+若要访问管理 **中心** 中的"安装" [页，](https://go.microsoft.com/fwlink/p/?linkid=2024339)请在导航 **窗格中** 选择"设置"。 根据你已购买的产品、你设置的功能以及你的管理员角色，你在此处Microsoft 365任务和相关信息。
 
 你将看到按逻辑类别排列的安装任务的完整列表，包括你在安装向导中完成的任务。
 
-![Microsoft 365 商业版设置页](../../media/o365b-setup-page.png)
+![Microsoft 365企业设置"页](../../media/o365b-setup-page.png)
 
 选择 **"查看** "查看任何任务，获取概览信息，如任务说明、用户影响、先决条件、实现努力以及安全性和采用统计信息，以帮助你在继续之前了解后果和影响。
 

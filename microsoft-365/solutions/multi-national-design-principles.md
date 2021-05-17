@@ -1,5 +1,5 @@
 ---
-title: 适用于 Microsoft 365 的多国设计原则
+title: 用于设计的国家/Microsoft 365
 description: 说明。
 ms.author: samanro
 author: samanro
@@ -19,6 +19,6 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 07/29/2020
 ms.locfileid: "46521095"
 ---
-# <a name="multi-national-design-principles-for-microsoft-365"></a>适用于 Microsoft 365 的多国设计原则
+# <a name="multi-national-design-principles-for-microsoft-365"></a>用于设计的国家/Microsoft 365
 
 文本

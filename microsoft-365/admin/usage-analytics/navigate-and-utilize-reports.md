@@ -65,13 +65,13 @@ ms.locfileid: "51579046"
 
 若要共享报告，只需选择"共享"按钮 ![Power BI Share icon](../../media/dbb0569d-2013-4f9d-ab9d-d01b09631b92.png) 位于页面顶部。
 
-若要了解如何自定义报告，请参阅自定义 [Microsoft 365 使用情况分析中的报告](customize-reports.md)。
+若要了解如何自定义报告，请参阅自定义使用情况Microsoft 365[中的报告](customize-reports.md)。
 
 可以在 Power BI 帮助文档中找到许多额外信息：
 
-- [Power BI 基本概念](/power-bi/service-basic-concepts)
+- [Power BI概念](/power-bi/service-basic-concepts)
 
-    了解仪表板、数据集、报表和其他 Power BI 概念。
+    了解仪表板、数据集、报表和其他Power BI概念。
 
 - [Power BI 入门](/power-bi/service-get-started?wt.mc_id=O365_Reports_PBI_contentpack)
 

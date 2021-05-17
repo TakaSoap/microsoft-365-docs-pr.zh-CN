@@ -19,7 +19,7 @@ ms.locfileid: "51574603"
 ---
 # <a name="prerequisites-for-guest-accounts"></a>来宾帐户的先决条件
 
-Microsoft 托管桌面需要 Azure AD 组织中用于来宾帐户访问的以下设置。 可以在 Azure 门户的"[](https://portal.azure.com)外部标识 **/外部协作"下调整这些设置**：
+Microsoft 托管桌面 Azure AD 组织中需要以下设置来访问来宾帐户。 可以在 Azure 门户的"[](https://portal.azure.com)外部标识 **/外部协作"下调整这些设置**：
 
 -   **具有来宾邀请者角色的管理员和用户可以将邀请设置为****"是"**
 -   对于 **"协作限制"，** 选择以下任一选项：
@@ -27,11 +27,11 @@ Microsoft 托管桌面需要 Azure AD 组织中用于来宾帐户访问的以下
     -   如果选择" **拒绝对指定** 域的邀请"，请确保 Microsoft.com 未列在目标域中。
     -   如果选择"**仅允许** 对限制最严格的 (域) "，请确保 Microsoft.com 列出该域。 
 
-如果设置与这些设置交互的限制，请确保排除 Azure Active Directory **新式工作区服务帐户**。 例如，如果你有一个阻止来宾帐户访问 Intune 门户的条件访问策略，则从此策略中排除 **Modern Workplace Service Accounts** 组。
+如果设置与这些设置交互的限制，请确保排除"Azure Active Directory **工作区服务帐户"。** 例如，如果你有一个阻止来宾帐户访问 Intune 门户的条件访问策略，则从此策略中排除 **Modern Workplace Service Accounts** 组。
 
 ## <a name="steps-to-get-ready"></a>准备步骤
 
-1. 查看 [Microsoft 托管桌面的先决条件](prerequisites.md)。
+1. 查看 [托管桌面应用](prerequisites.md)。
 2. 使用 [准备情况评估工具](readiness-assessment-tool.md)。
 3. [来宾帐户帐户 (](guest-accounts.md) 本文) 
 4. [Microsoft 托管桌面的网络配置](network.md)

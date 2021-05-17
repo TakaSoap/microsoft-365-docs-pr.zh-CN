@@ -1,5 +1,5 @@
 ---
-title: 处理高级电子数据展示中的处理错误
+title: 在任务中处理Advanced eDiscovery
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -17,7 +17,7 @@ search.appverid:
 ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
-description: 有关在高级电子数据展示中处理各种形式的数据的概述。
+description: 有关在表单中处理各种Advanced eDiscovery。
 ms.openlocfilehash: d7969b1ef77fc161cccc85a8dee020ebe21acdb0
 ms.sourcegitcommit: 98b889e674ad1d5fa37d4b6c5fc3eda60a1d67f3
 ms.translationtype: MT
@@ -25,13 +25,13 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 01/05/2021
 ms.locfileid: "49751509"
 ---
-# <a name="work-with-processing-errors-in-advanced-ediscovery"></a>处理高级电子数据展示中的处理错误
+# <a name="work-with-processing-errors-in-advanced-ediscovery"></a>在任务中处理Advanced eDiscovery
 
-处理过程包括图像文件的文件标识、嵌入文档和附件的扩展、文本提取和光学字符识别 (OCR) ) 以及随后对内容编制索引。  
+*处理* 过程包括文件标识、扩展嵌入文档和附件、文本提取以及图像文件的光学字符识别 (OCR) ) 以及随后对内容编制索引。  
 
-在"源"选项卡上向案例添加保管人和非保管人数据源时，将处理 Microsoft 365 的所有部分索引项，使其完全可搜索。 同样，当内容从 Microsoft 365 和非 Microsoft 365 数据源添加到审阅集时，也会处理此内容。
+当您将保管人和非保管人数据源添加到"源"选项卡上的案例时，将处理来自 Microsoft 365 的所有部分索引项，使其完全可搜索。 同样，在将内容添加到来自源和非Microsoft 365的审阅Microsoft 365，也会处理此内容。
 
-高级 **电子** 数据展示中的"处理"选项卡提供不同处理方案的高级索引状态的见解。
+高级电子数据展示中的“**处理**”选项卡提供有关不同处理方案的高级索引编制状态的见解。
 
 有关详细信息，请参阅以下文章：
 

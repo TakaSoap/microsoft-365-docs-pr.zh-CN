@@ -19,30 +19,30 @@ ms.locfileid: "50107659"
 ---
 # <a name="manage-topic-visibility-in-microsoft-viva-topics"></a>在 Microsoft Viva 主题中管理主题可见性
 
-你可以管理一组可在 [Microsoft 365](https://admin.microsoft.com)管理中心内查看主题突出显示、主题卡片和主题中心的用户。 您必须是全局管理员或 SharePoint 管理员才能执行这些任务。
+你可以管理一组可在管理中心内查看主题突出显示、主题卡片和主题Microsoft 365[的用户](https://admin.microsoft.com)。 您必须是全局管理员或SharePoint才能执行这些任务。
 
-## <a name="to-access-topics-management-settings"></a>访问主题管理设置：
+## <a name="to-access-topics-management-settings"></a>若要访问主题管理设置：
 
-1. 在 Microsoft 365 管理中心中，单击"**设置**"，然后单击"**组织设置"。**
+1. 在管理Microsoft 365，单击"设置"，**然后单击"****组织设置"。**
 2. 在"**服务"** 选项卡上，单击 **"主题体验"。**
 
-    ![将人员连接到知识](../media/admin-org-knowledge-options-completed.png) 
+    ![连接人员了解知识](../media/admin-org-knowledge-options-completed.png) 
 
-3. 选择 **"主题可见性"** 选项卡。有关每个设置的信息，请参阅以下各节。
+3. 选择" **主题可见性"** 选项卡。有关每个设置的信息，请参阅以下各节。
 
     ![knowledge-network-settings](../media/knowledge-network-settings-topic-visibility.png) 
 
 ##  <a name="change-who-can-see-topics-in-your-organization"></a>更改可在组织中查看主题的人
 
-您可以更改可在组织中查看主题的用户。
+可以更改可以看到组织中主题的用户。
 
-1. 在"**主题可见性"** 选项卡上的 **"谁可以看到主题"下**，选择"**编辑"。**
-2. 在" **谁可以看到** 主题"页上，选择谁有权访问主题详细信息，例如突出显示的主题、主题卡片、搜索中的主题答案和主题页面。 可以选择：
+1. 在"**主题可见性"** 选项卡上的"Who **可以看到主题"下，** 选择"编辑 **"。**
+2. On the **Who see topics** page， you choose who will have access to topic details， such as highlighted topics， topic cards， topic answers in search， and topic pages. 可以选择：
     - **组织中的所有人**
     - **仅选定人员或安全组**
     - **没人**
 
-    ![谁可以看到主题](../media/k-manage-who-can-see-topics.png) 
+    ![Who主题](../media/k-manage-who-can-see-topics.png) 
 
 3. 选择“**保存**”。  
  

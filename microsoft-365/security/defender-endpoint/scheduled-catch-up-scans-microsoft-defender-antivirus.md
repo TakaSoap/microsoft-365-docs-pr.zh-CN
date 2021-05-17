@@ -155,7 +155,7 @@ RandomizeScheduleTaskTimes
 Set-MpPreference -ScanOnlyIfIdleEnabled
 ```
 
-有关详细信息，请参阅使用[PowerShell cmdlet](use-powershell-cmdlets-microsoft-defender-antivirus.md)配置和运行 Microsoft Defender 防病毒 和[Defender cmdlet。](/powershell/module/defender/)
+有关详细信息，请参阅 [使用 PowerShell cmdlet 配置并运行 Microsoft Defender 防病毒软件](use-powershell-cmdlets-microsoft-defender-antivirus.md)和 [Defender cmdlet](/powershell/module/defender/)。
 
 ### <a name="use-windows-management-instruction-wmi"></a>使用 Windows Management Instruction (WMI) 
 
@@ -251,4 +251,4 @@ ScanScheduleQuickScanTime
 - [配置 Microsoft Defender 防病毒软件扫描选项](configure-advanced-scan-types-microsoft-defender-antivirus.md)
 - [管理Microsoft Defender 防病毒更新并应用基线](manage-updates-baselines-microsoft-defender-antivirus.md)
 - [管理何时应下载和应用保护更新](manage-protection-update-schedule-microsoft-defender-antivirus.md) 
-- [Microsoft Defender 防病毒Windows 10](microsoft-defender-antivirus-in-windows-10.md)
+- [Windows 10 中的 Microsoft Defender 防病毒](microsoft-defender-antivirus-in-windows-10.md)

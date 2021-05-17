@@ -39,7 +39,7 @@ ms.locfileid: "51570920"
 
 在审核模式下启用网络保护以查看哪些 IP 地址和域已被阻止。 你可以确保它不会影响业务线应用，或了解阻止出现频繁发生的情况。
 
-1. 在 **"开始"菜单中键入 powershell，** 右 **键单击** "Windows PowerShell并选择"以 **管理员角色运行"**
+1. 在 **"开始"菜单中键入 powershell，** 右 **键单击**"Windows PowerShell并选择"以 **管理员角色运行"**
 2. 输入以下 cmdlet：
 
     ```PowerShell
@@ -54,9 +54,9 @@ ms.locfileid: "51570920"
 
 将允许网络连接，并显示测试消息。
 
-![显示"已阻止连接：你的 IT 管理员导致 Windows 安全中心阻止此网络连接"的通知示例。 请与 IT 技术支持联系。](/microsoft-365/security/defender-endpoint/images/np-notif)
+![显示"已阻止连接：IT 管理员Windows 安全中心阻止此网络连接的示例通知。 请与 IT 技术支持联系。](/microsoft-365/security/defender-endpoint/images/np-notif)
 
-## <a name="review-network-protection-events-in-windows-event-viewer"></a>在 Windows 事件查看器中查看网络保护事件
+## <a name="review-network-protection-events-in-windows-event-viewer"></a>在事件查看器中查看Windows保护事件
 
 若要查看已阻止的应用，请打开事件查看器，并筛选 Microsoft-Windows-Windows-Defender/Operational 日志中的事件 ID 1125。 下表列出了所有网络保护事件。
 

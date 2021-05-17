@@ -47,6 +47,6 @@ Microsoft Defender for Office 365（以前称为 Microsoft 365 ATP 或高级威�
 
 已更新 ATP 安全附件规则。
 
-现在，保护已到位，你将无法从 Outlook、OneDrive、SharePoint 或 Teams 打开恶意文件。 受影响的文件旁边将具有红色防护。 如果有人尝试打开阻止的文件，他们将收到一条警告消息。
+现在，保护已就位，你将无法从 Outlook、OneDrive、SharePoint 或 Teams 打开恶意Teams。 受影响的文件旁边将具有红色防护。 如果有人尝试打开阻止的文件，他们将收到一条警告消息。
 
 策略实施一段时间后，请访问"报告"页面查看已扫描的内容。

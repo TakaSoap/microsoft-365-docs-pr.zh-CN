@@ -70,7 +70,7 @@ Microsoft Defender 防病毒允许你确定更新是应该 (，还是不应) 发
 Set-MpPreference -CheckForSignaturesBeforeRunningScan
 ```
 
-有关详细信息，请参阅使用[PowerShell cmdlet](use-powershell-cmdlets-microsoft-defender-antivirus.md)配置和运行 Microsoft Defender 防病毒 和[Defender cmdlet。](/powershell/module/defender/index)
+有关详细信息，请参阅 [使用 PowerShell cmdlet 配置并运行 Microsoft Defender 防病毒软件](use-powershell-cmdlets-microsoft-defender-antivirus.md)和 [Defender cmdlet](/powershell/module/defender/index)。
 
 ### <a name="use-windows-management-instruction-wmi-to-check-for-protection-updates-before-running-a-scan"></a>使用 Windows Management Instruction (WMI) 在运行扫描之前检查保护更新
 
@@ -166,4 +166,4 @@ Microsoft Defender AV 可以基于云保护更改其保护。 此类更改可能
 - [管理何时应下载和应用保护更新](manage-protection-update-schedule-microsoft-defender-antivirus.md)
 - [管理过期终结点的更新](manage-outdated-endpoints-microsoft-defender-antivirus.md)
 - [管理移动设备和虚拟机 （VM） 的更新](manage-updates-mobile-devices-vms-microsoft-defender-antivirus.md)
-- [Microsoft Defender 防病毒Windows 10](microsoft-defender-antivirus-in-windows-10.md)
+- [Windows 10 中的 Microsoft Defender 防病毒](microsoft-defender-antivirus-in-windows-10.md)

@@ -1,5 +1,5 @@
 ---
-title: 帮助用户连接到 Microsoft 365 商业高级版
+title: 帮助用户连接到Microsoft 365 商业高级版
 f1.keywords:
 - NOCSH
 ms.author: efrene
@@ -35,14 +35,14 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 04/02/2021
 ms.locfileid: "51578439"
 ---
-# <a name="help-users-connect-to-microsoft-365-business-premium"></a>帮助用户连接到 Microsoft 365 商业高级版
+# <a name="help-users-connect-to-microsoft-365-business-premium"></a>帮助用户连接到Microsoft 365 商业高级版
 
-完成设置后，你的默认设备策略就位并已准备好应用。 在移动设备上，用户下载 Office 应用。 然后，当用户使用工作或学校帐户登录时，将应用策略。 此外，还需执行一些其他操作（如就地升级），策略才能应用于 Windows 电脑。 请参阅并共享以下主题，以帮助用户进行设置和连接：
+完成设置后，你的默认设备策略就位并已准备好应用。 在移动设备上，用户下载Office应用。 然后，当用户使用工作或学校帐户登录时，将应用策略。 此外，还需执行一些其他操作（如就地升级），策略才能应用于 Windows 电脑。 请参阅并共享以下主题，以帮助用户进行设置和连接：
   
-[为 Microsoft 365 商业高级版用户设置 Windows 设备](set-up-windows-devices.md)
+[为Windows用户设置Microsoft 365 商业高级版设备](set-up-windows-devices.md)
   
 [使用分步指南添加 Autopilot 设备和配置文件](add-autopilot-devices-and-profile.md)
   
-[为 Microsoft 365 商业高级版用户设置移动设备](set-up-mobile-devices.md)
+[为用户设置Microsoft 365 商业高级版设备](set-up-mobile-devices.md)
   
 

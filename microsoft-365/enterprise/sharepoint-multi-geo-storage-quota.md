@@ -14,7 +14,7 @@ ms.collection:
 - Strat_SP_gtc
 - SPO_Content
 localization_priority: Normal
-description: 了解多地理位置环境中的 SharePoint 存储配额以及 SharePoint Online 管理员如何管理配额。
+description: 了解SharePoint多地理位置环境中配置存储配额，以及如何由 SharePoint Online 管理员管理配额。
 ms.openlocfilehash: ec736a6bd6061f8b028fca7a1c34d5278a84db89
 ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
 ms.translationtype: MT

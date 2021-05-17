@@ -41,9 +41,9 @@ ms.locfileid: "52275320"
 
 3. 选择你的Microsoft Defender 防病毒策略。 
 
-4. 在 **"管理"** 下，选择"**属性"。**
+4. 在“**管理**”下，选择“**属性**”。
 
-5. 在"**配置设置"旁边，** 选择"编辑 **"。**
+5. 选择“**配置设置**”旁的“**编辑**”。
 
 6. 展开扫描 **部分** ，然后查看或编辑扫描设置。
 
@@ -55,4 +55,4 @@ ms.locfileid: "52275320"
 ## <a name="related-articles"></a>相关文章
 
 - [有关管理和配置工具的参考主题](configuration-management-reference-microsoft-defender-antivirus.md)
-- [Microsoft Defender 防病毒Windows 10](microsoft-defender-antivirus-in-windows-10.md)
+- [Windows 10 中的 Microsoft Defender 防病毒](microsoft-defender-antivirus-in-windows-10.md)

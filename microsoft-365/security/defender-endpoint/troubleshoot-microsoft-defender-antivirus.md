@@ -1204,7 +1204,7 @@ UAC </dt>
 由于Microsoft Defender 防病毒，客户端遇到了此错误。 终结点可能不受保护。 查看错误描述，然后按照下面的相关 <b>用户操作</b> 步骤操作。
 <table>
 <tr>
-<th>操作</th>
+<th>Action</th>
 <th>用户操作</th>
 </tr>
 <tr>
@@ -3116,4 +3116,4 @@ Microsoft Defender 防病毒无法修正在存档内检测到的威胁。 请考
 ## <a name="related-topics"></a>相关主题
 
 - [有关保护Microsoft Defender 防病毒报告](report-monitor-microsoft-defender-antivirus.md)
-- [Microsoft Defender 防病毒Windows 10](microsoft-defender-antivirus-in-windows-10.md)
+- [Windows 10 中的 Microsoft Defender 防病毒](microsoft-defender-antivirus-in-windows-10.md)

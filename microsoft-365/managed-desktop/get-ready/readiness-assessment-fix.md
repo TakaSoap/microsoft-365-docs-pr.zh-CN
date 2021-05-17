@@ -179,7 +179,7 @@ Windows PowerShell脚本无法以面向 Microsoft 托管桌面设备的方式分
 
 请确保 Azure AD Windows PowerShell中的脚本不面向任何 Microsoft 管理桌面设备或用户。 不要将 PowerShell 脚本分配给所有用户、所有设备或两者。 更改策略以使用面向不包括任何 Microsoft 托管桌面设备或用户的特定 Azure AD 组的分配。 有关详细信息，请参阅在 [Intune 中的 Windows 10 设备上使用 PowerShell 脚本](/mem/intune/apps/intune-management-extension)。
 
-### <a name="region"></a>地区
+### <a name="region"></a>区域
 
 你的区域必须受 Microsoft 托管桌面支持。
 

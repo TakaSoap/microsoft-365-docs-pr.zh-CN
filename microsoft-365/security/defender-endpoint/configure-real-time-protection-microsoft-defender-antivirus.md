@@ -59,7 +59,7 @@ ms.locfileid: "52275128"
        | 设置 | 说明 | 默认设置 |
        |-----------------------------|------------------------|-------------------------------|
        | 允许反恶意软件服务以普通优先级启动 | 你可以降低 Microsoft Defender 防病毒 引擎的优先级，在希望尽可能精简启动过程的轻型部署中，这可能很有用。 这可能会影响对终结点的保护。 | 已启用
-       | 允许反恶意软件服务始终运行 | 如果已禁用保护更新，你可以将Microsoft Defender 防病毒仍运行。 这将降低终结点上的保护。 | 禁用的 |
+       | 允许反恶意软件服务始终运行 | 如果已禁用保护更新，你可以将Microsoft Defender 防病毒仍运行。 这将降低终结点上的保护。 | 已禁用 |
     
     1. 配置相应设置，然后单击"确定 **"。**
     
@@ -139,4 +139,4 @@ ms.locfileid: "52275128"
 ## <a name="related-articles"></a>相关文章
 
 - [配置方案、高要求和实时保护](configure-protection-features-microsoft-defender-antivirus.md)
-- [Microsoft Defender 防病毒Windows 10](microsoft-defender-antivirus-in-windows-10.md)
+- [Windows 10 中的 Microsoft Defender 防病毒](microsoft-defender-antivirus-in-windows-10.md)

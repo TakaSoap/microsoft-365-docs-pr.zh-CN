@@ -18,7 +18,7 @@ search.appverid:
 - OGD150
 - MOE150
 ms.assetid: ''
-description: 摘要：适用于 Office 365 的 DNS 记录（GCC 高）
+description: 摘要：高Office 365 GCC DNS 记录
 hideEdit: true
 ms.openlocfilehash: 9edcda4616d50d05331db0e2d6c4d89967b02fdc
 ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
@@ -29,47 +29,47 @@ ms.locfileid: "46687790"
 ---
 # <a name="dns-records-for-office-365-gcc-high"></a>Office 365 GCC High DNS 记录
 
-*本文适用于 Office 365 GCC 高和 Microsoft 365 GCC 高*
+*本文适用于 Office 365 GCC High 和 Microsoft 365 GCC High*
 
-作为加入 Office 365 GCC 的一部分，你需要将 SMTP 和 SIP 域添加到你的在线服务租户。  你将使用 Azure AD PowerShell 中的 MsolDomain cmdlet 执行此操作，或使用 [Azure 政府门户](https://portal.azure.us) 启动添加域和证明所有权的过程。
+作为加入高Office 365 GCC的一部分，您需要将 SMTP 和 SIP 域添加到联机服务租户。  你将使用 Azure AD PowerShell 中的 New-MsolDomain cmdlet 完成此操作，或使用 [Azure](https://portal.azure.us) 政府门户启动添加域和证明所有权的过程。
 
-将你的域添加到租户并进行验证后，请使用以下指南为以下服务添加适当的 DNS 记录。  您可能需要根据组织的入站 MX 记录 (s) 和任何现有的 Exchange 自动发现记录 (s) 修改下表，以满足组织对入站 MX 记录的需求。  强烈建议将这些 DNS 记录与邮件团队进行协调，以避免任何中断或电子邮件的误传递。
+将域添加到租户并进行验证后，请使用以下指南为以下服务添加相应的 DNS 记录。  您可能需要修改下表，以满足组织对入站 MX 记录 (s) 以及您已有的任何现有 Exchange 自动发现 () 的需求。  我们强烈建议与邮件团队协调这些 DNS 记录，以避免电子邮件出现任何中断或错误传递。
 
 ## <a name="exchange-online"></a>Exchange Online
 
-| 类型 | 优先级 | 主机名 | 指向 "地址" 或 "值" | TTL |
+| 类型 | 优先级 | 主机名 | 指向地址或值 | TTL |
 | --- | --- | --- | --- | --- |
-| MX | 0 | @ | *tenant*mail.protection.office365.us (详细信息，请参阅下文)  | 1 Hour |
-| TXT | - | @ | v = spf1 包括 include spf.protection.outlook.com-all | 1 小时 |
+| MX | 0 | @ | *tenant*.mail.protection.office365.us (请参阅下文了解其他详细信息)  | 1 Hour |
+| TXT | - | @ | v=spf1 include：spf.protection.office365.us -all | 1 小时 |
 | CNAME | - | autodiscover | autodiscover.office365.us | 1 Hour |
 
-### <a name="exchange-autodiscover-record"></a>Exchange 自动发现记录
+### <a name="exchange-autodiscover-record"></a>Exchange自动发现记录
 
-如果您有本地 Exchange Server，我们建议您在迁移到 Exchange Online 时就地保留现有记录，并在完成迁移后立即更新该记录。 
+如果在本地Exchange Server，我们建议在迁移到 Exchange Online 时保留现有记录，并完成迁移后更新该记录。 
 
-### <a name="exchange-online-mx-record"></a>Exchange Online MX 记录
+### <a name="exchange-online-mx-record"></a>Exchange OnlineMX 记录
 
-您的接受域的 MX 记录值遵循上面所述的标准 *格式： mail.protection.office365.us*，将 *租户* 替换为默认租户名称的第一部分。
+接受域的 MX 记录值遵循上述标准格式 *：tenant*.mail.protection.office365.us，将 *租户* 替换为默认租户名称的第一部分。
 
-例如，如果您的租户名称为 contoso.onmicrosoft.us，则应使用 **contoso.mail.protection.office365.us** 作为 MX 记录的值。
+例如，如果你的租户名称 contoso.onmicrosoft.us，你将使用 contoso.mail.protection.office365.us **作为** MX 记录的值。
 
 ## <a name="skype-for-business-online"></a>Skype for Business Online
 
 ### <a name="cname-records"></a>CNAME 记录
 
-| 类型 | 主机名 | 指向 "地址" 或 "值" | TTL |
+| 类型 | 主机名 | 指向地址或值 | TTL |
 | --- | --- | --- | --- |
 | CNAME | sip | sipdir.online.gov.skypeforbusiness.us | 1 小时 |
 | CNAME | lyncdiscover | webdir.online.gov.skypeforbusiness.us | 1 Hour |
 
 ### <a name="srv-records"></a>SRV 记录
 
-| 类型 | 服务 | 协议 | 端口 | 粗细 | Priority | 名称 | Target | TTL |
+| 类型 | 服务 | 协议 | 端口 | 粗细 | 优先级 | 名称 | Target | TTL |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| SRV | \_sip | \_eap-tls | 443 | 1 | 100 | @ | sipdir.online.gov.skypeforbusiness.us | 1 Hour |
-| SRV | \_sipfederationtls | \_rdp-tcp | 5061 | 1 | 100 | @ | sipfed.online.gov.skypeforbusiness.us | 1 Hour |
+| SRV | \_sip | \_tls | 443 | 1 | 100 | @ | sipdir.online.gov.skypeforbusiness.us | 1 Hour |
+| SRV | \_sipfederationtls | \_tcp | 5061 | 1 | 100 | @ | sipfed.online.gov.skypeforbusiness.us | 1 Hour |
 
 ## <a name="additional-dns-records"></a>其他 DNS 记录
 
 > [!IMPORTANT]
-> 如果您的 DNS 区域中有一个现有的 *msoid* CNAME 记录，则您必须在此时 **删除** dns 中的记录。  Msoid 记录与 Microsoft 365 企业版应用程序不兼容 * (以前的 Office 365 专业增强版) * ，将阻止激活成功。
+> 如果 DNS 区域中已有 *msoid* CNAME 记录，则此时必须从 DNS 中删除该记录。  msoid 记录与以前Microsoft 365 企业版应用程序 (*应用程序* Office 365 专业增强版) ，并且将阻止激活成功。

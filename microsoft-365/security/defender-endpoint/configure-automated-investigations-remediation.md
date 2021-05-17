@@ -43,20 +43,20 @@ ms.locfileid: "52274540"
 
 ## <a name="turn-on-automated-investigation-and-remediation"></a>启用自动调查和修正
 
-1. 作为全局管理员或安全管理员，转到 Microsoft Defender 安全中心 () [https://securitycenter.windows.com](https://securitycenter.windows.com) 登录。
-2. 在导航窗格中，选择"设置 **"。**
+1. 作为全局管理员或安全管理员，转到Microsoft Defender 安全中心 () [https://securitycenter.windows.com](https://securitycenter.windows.com) 并登录。
+2. 在导航窗格中，选择 **"设置"。**
 3. 在"**常规"** 部分，选择"**高级功能"。**
 4. 同时启用 **自动调查和****自动解决警报**。
 
 ## <a name="set-up-device-groups"></a>设置设备组
 
-1. 在 Microsoft Defender 安全中心 () "设置"页面上的"权限"下， [https://securitycenter.windows.com](https://securitycenter.windows.com) 选择 **"设备组"。** 
+1. In the Microsoft Defender 安全中心 ([https://securitycenter.windows.com](https://securitycenter.windows.com)) ， on the **设置** page， under **Permissions，** select **Device groups**.
 2. 选择 **+ 添加设备组**。
 3. 创建至少一个设备组，如下所示：
    - 为设备组指定名称和说明。
    - 在"**自动化级别"列表中**，选择一个级别，例如 **"完全 - 自动修正威胁"。** 自动化级别确定是自动执行修正操作，还是仅在批准后执行修正操作。 若要了解更多信息，请参阅 [自动化调查和修正中的自动化级别](automation-levels.md)。
    - 在 **"成员** "部分，使用一个或多个条件来标识和包括设备。
-   - 在 **"用户访问"** 选项卡上，选择应有权访问所创建设备组的 [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-manage-groups?context=azure/active-directory/users-groups-roles/context/ugr-context) 组。
+   - 在 **"用户访问"**[选项卡上，Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-manage-groups?context=azure/active-directory/users-groups-roles/context/ugr-context)应有权访问所创建设备组的用户组。
 4. 完成 **设备** 组的设置后，选择"完成"。
 
 ## <a name="next-steps"></a>后续步骤

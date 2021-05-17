@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 商业版中的策略如何保护公司数据
+title: 企业策略Microsoft 365保护公司数据
 f1.keywords:
 - NOCSH
 ms.author: sharik
@@ -34,18 +34,18 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 04/02/2021
 ms.locfileid: "51578419"
 ---
-# <a name="how-policies-in-microsoft-365-for-business-protect-company-data"></a>Microsoft 365 商业版中的策略如何保护公司数据
+# <a name="how-policies-in-microsoft-365-for-business-protect-company-data"></a>企业策略Microsoft 365保护公司数据
 
-本文适用于 Microsoft 365 商业高级版。
+本文适用于Microsoft 365 商业高级版。
 
 所创建的策略特定于设备类型，可应用于特定用户组。这意味着可以创建两个策略，一个应用于管理层，另一个应用于所有其他人。
   
-对于 Android 和 iOS 设备，可以添加或编辑用于保护 Office 应用和由 Office 应用使用的工作文件的应用程序策略。 我们可以再多控制一点 Windows 10 设备，因此应用程序策略可以包括更多设置，如对网络和云位置的加密和保护。 此外，还可创建 Windows 10 设备的设备策略，用于强制实施病毒保护和自动更新等设置。 我们建议你坚持使用在设置期间创建的策略，但是如果你想要微调策略或添加更多策略，请参阅以下文章：
+对于 Android 和 iOS 设备，可以添加或编辑用于保护 Office 应用和由 Office 应用使用的工作文件的应用程序策略。 我们可以进一Windows 10控制设备，因此应用程序策略可以包括更多设置，如对网络和云位置的加密和保护。 此外，还可创建 Windows 10 设备的设备策略，用于强制实施病毒保护和自动更新等设置。 我们建议你坚持使用在设置期间创建的策略，但是如果你想要微调策略或添加更多策略，请参阅以下文章：
   
 [设置 Android 或 iOS 设备的应用配置](app-protection-settings-for-android-and-ios.md)
   
 [设置 Windows 10 电脑的设备配置](protection-settings-for-windows-10-pcs.md)
   
-[设置 Windows 10 设备的应用保护设置](protection-settings-for-windows-10-devices.md)
+[为设备设置Windows 10设置](protection-settings-for-windows-10-devices.md)
   
 

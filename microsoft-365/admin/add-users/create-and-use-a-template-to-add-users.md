@@ -43,8 +43,8 @@ ms.locfileid: "51579382"
 - 许可证位置
 - 许可证选择
 - 应用程序选择
-- Role
-- 大多数配置文件信息，例如 **作业配置文件**、**部门****、Office、Office****电话** 和 **街道地址** 
+- 角色
+- 大多数个人资料信息，例如作业 **配置文件**、**部门****、Office、Office****电话** 和 **街道地址** 
 
 以下信息特定于用户，不会保存在模板中：
 
@@ -91,5 +91,5 @@ ms.locfileid: "51579382"
 
 [同时添加用户和分配许可证](add-users.md)
 
-[从 Microsoft 365 中删除以前的员工](remove-former-employee.md)
+[从公司中删除以前的Microsoft 365](remove-former-employee.md)
   
