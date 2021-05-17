@@ -1,5 +1,5 @@
 ---
-title: 管理自动化文件夹排除项
+title: 管理自动化文件夹排除
 description: 添加自动化文件夹排除项，以控制从自动调查中排除的文件。
 keywords: 管理， 自动化， 排除， 阻止， 清理， 恶意
 search.product: eADQiWindows 10XVcnh
@@ -23,7 +23,7 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 03/24/2021
 ms.locfileid: "51185833"
 ---
-# <a name="manage-automation-folder-exclusions"></a>管理自动化文件夹排除项 
+# <a name="manage-automation-folder-exclusions"></a>管理自动化文件夹排除 
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -59,32 +59,32 @@ ms.locfileid: "51185833"
 
 
 ## <a name="add-an-automation-folder-exclusion"></a>添加自动化文件夹排除
-1. 在导航窗格中，选择"**设置**  >  **""自动化文件夹排除"。**  
+1. 在导航窗格中，**选择"设置**  >  **文件夹排除项"。**  
 
 2. 单击 **"新建文件夹排除"。**  
 
 3. 输入文件夹详细信息：
 
-    - Folder
+    - 文件夹
     - 扩展
     - 文件名
     - 说明
     
 
-4. 单击“**保存**”。
+4. 单击“保存”。
 
 >[!NOTE]
 > 用于收集或检查已排除文件的 Live Response 命令将失败，并出现错误："已排除文件"。 此外，自动调查将忽略排除的项目。
 
 ## <a name="edit-an-automation-folder-exclusion"></a>编辑自动化文件夹排除 
-1. 在导航窗格中，选择"**设置**  >  **""自动化文件夹排除"。** 
+1. 在导航窗格中，**选择"设置**  >  **文件夹排除项"。** 
 
 2. 单击 **文件夹** 排除上的"编辑"。  
 
 3. 更新规则的详细信息，**然后单击保存。**
 
 ## <a name="remove-an-automation-folder-exclusion"></a>删除自动化文件夹排除 
-1. 在导航窗格中，选择"**设置**  >  **""自动化文件夹排除"。**  
+1. 在导航窗格中，**选择"设置**  >  **文件夹排除项"。**  
 2. 单击 **"删除排除"。** 
 
 

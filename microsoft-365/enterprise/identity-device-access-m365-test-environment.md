@@ -23,9 +23,9 @@ ms.locfileid: "51197871"
 ---
 # <a name="identity-and-device-access-for-your-microsoft-365-test-environment"></a>针对 Microsoft 365 的标识和设备访问测试环境
 
-*本测试实验室指南仅适用于 Microsoft 365 企业版测试环境。*
+*本测试实验室指南只能用于Microsoft 365测试环境。*
 
-[标识和设备访问](../security/office-365-security/microsoft-365-policies-configurations.md) 配置是一组建议配置和条件访问策略，用于保护对与 Azure AD (Azure Active Directory 集成的所有服务) 。
+[标识和设备访问配置](../security/office-365-security/microsoft-365-policies-configurations.md)是一组建议配置和条件访问策略，用于保护对与 Azure AD Azure Active Directory (集成的所有服务) 。
 
 若要创建具有通用标识和设备访问配置的测试环境，请执行以下操作：
 

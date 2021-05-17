@@ -132,4 +132,4 @@ $response
 ## <a name="see-also"></a>另请参阅
 - [适用于终结点的 Microsoft Defender API](apis-intro.md)
 - [高级搜寻 API](run-advanced-query-api.md)
-- [使用 Python 的高级搜寻](run-advanced-query-sample-python.md)
+- [通过 Python 高级搜寻](run-advanced-query-sample-python.md)

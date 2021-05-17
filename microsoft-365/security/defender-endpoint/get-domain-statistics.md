@@ -50,7 +50,7 @@ ms.locfileid: "51166464"
 
 权限类型 |   权限  |   权限显示名称
 :---|:---|:---
-Application |   URL。Read.All |  "读取 URL"
+应用程序 |   URL。Read.All |  "读取 URL"
 委派（工作或学校帐户） | URL。Read.All | "读取 URL"
 
 >[!Note]

@@ -35,7 +35,7 @@ ms.locfileid: "52245188"
 
 1. 选择"**新建"。**
 1. 添加有关订单的详细信息。
-1. 选择 **保存**。
+1. 选择“**保存**”。
 
 ### <a name="share-the-list-with-partners-or-coworkers"></a>与合作伙伴或同事共享列表
 

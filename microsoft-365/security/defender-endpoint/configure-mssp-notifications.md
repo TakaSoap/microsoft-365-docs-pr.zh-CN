@@ -49,6 +49,6 @@ ms.locfileid: "51166049"
 
 
 ## <a name="related-topics"></a>相关主题
-- [授予对门户的 MSSP 访问权限](grant-mssp-access.md)
+- [授予 MSSP 对门户的访问权限](grant-mssp-access.md)
 - [访问 MSSP 客户门户](access-mssp-portal.md)
-- [从客户租户提取警报](fetch-alerts-mssp.md)
+- [从客户租户获取警报](fetch-alerts-mssp.md)

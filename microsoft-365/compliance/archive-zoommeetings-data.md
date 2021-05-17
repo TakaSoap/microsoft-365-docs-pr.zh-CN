@@ -1,5 +1,5 @@
 ---
-title: 设置连接器以在 Microsoft 365 中存档"缩放会议"数据
+title: 设置连接器以在"会议"中存档"缩放Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -11,7 +11,7 @@ ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
-description: 管理员可以设置连接器，以将数据从"Microsoft 365 放大"会议导入和存档。 这使你可以存档 Microsoft 365 中第三方数据源的数据，以便可以使用合规性功能（如合法保留、内容搜索和保留策略）来管理组织的第三方数据。
+description: 管理员可以设置一个连接器，以将来自"显示会议"的"会议"导入和存档Microsoft 365。 这样，您可以在 Microsoft 365 中存档来自第三方数据源的数据，以便您可以使用合规性功能（如合法保留、内容搜索和保留策略）来管理组织的第三方数据。
 ms.openlocfilehash: b67098f3ddb1149927f4b82270c8fa4f14bbe558
 ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
 ms.translationtype: MT
@@ -21,13 +21,13 @@ ms.locfileid: "51163722"
 ---
 # <a name="set-up-a-connector-to-archive-zoom-meetings-data"></a>设置连接器以存档"缩放会议"数据
 
-使用 Microsoft 365 合规中心中的"Microsoft 365"连接器，将"缩放会议"数据导入并存档到 Microsoft 365 组织的用户邮箱。 Microsoft 提供 [缩放](https://globanet.com/zoom/) 会议连接器，配置为定期捕获第三方数据源 (中的项目) 将这些项目导入到 Microsoft 365。 连接器将会议内容 (包括聊天、录制的文件和元数据) 从 Zoom Meetings 帐户转换为电子邮件格式，然后将这些项目导入到 Microsoft 365 中的用户邮箱。
+使用 Microsoft 365 合规中心中的一个 Microsoft 365 连接器，将数据从 Zoom Meetings 导入并存档到组织中用户Microsoft 365邮箱。 该[连接器配置为定期](https://globanet.com/zoom/)捕获第三方数据源 (中的项目，) 将这些项目导入Microsoft 365。 连接器会将会议内容 (包括聊天、录制的文件和元数据) 从 Zoom Meetings 帐户转换为电子邮件格式，然后将这些项目导入 Microsoft 365 中的用户邮箱。
 
-缩放会议数据存储在用户邮箱中后，可以应用 Microsoft 365 合规性功能，如诉讼保留、电子数据展示、保留策略和保留标签以及通信合规性。 使用 Zoom Meetings 连接器在 Microsoft 365 中导入和存档数据可帮助组织遵守政府法规策略。
+缩放会议数据存储在用户邮箱中后，可以应用 Microsoft 365 合规性功能，如诉讼保留、电子数据展示、保留策略和保留标签以及通信合规性。 使用 Zoom Meetings 连接器在 Microsoft 365 导入和存档数据可帮助组织遵守政府及法规策略。
 
 ## <a name="overview-of-archiving-zoom-meetings-data"></a>存档缩放会议数据概述
 
-以下概述介绍了使用连接器在 Microsoft 365 中存档 Zoom Meetings 数据的过程。
+以下概述介绍使用连接器在会议记录中存档"缩放会议"Microsoft 365。
 
 ![缩放会议存档工作流](../media/ZoomMeetingsConnectorWorkflow.png)
 
@@ -35,15 +35,15 @@ ms.locfileid: "51163722"
 
 2. 每 24 小时一次，"缩放会议"中的会议项目将复制到"是否合并 1"网站。 连接器还会将会议内容转换为电子邮件格式。
 
-3. 在 Microsoft 365 合规中心创建的缩放会议连接器，每天连接到 Microsoft Merge1，将会议消息转移到 Microsoft 云中安全的 Azure 存储位置。
+3. 在 Microsoft 365 合规中心创建的"缩放会议"连接器，每天连接到"Microsoft Merge1"，将会议消息传输至 Microsoft 云中的安全 Azure 存储 位置。
 
 4. 连接器使用 *Email* 属性的值和自动用户映射将转换的会议项目导入特定用户的邮箱，如步骤 3 中所述。 "收件箱"文件夹中名为"缩放会议"的新子文件夹是在用户邮箱中创建的，并且会议项目将导入到该文件夹中。 连接器使用 *Email* 属性的值实现此操作。 每个会议项目都包含此属性，其中填充了会议每个参与者的电子邮件地址。
 
-## <a name="before-you-begin"></a>准备工作
+## <a name="before-you-begin"></a>开始之前
 
 - 为 Microsoft 连接器创建一个 Microsoft Merge1 帐户。 若要创建此帐户，请联系["用户支持人员"。](https://globanet.com/ms-connectors-contact) 在步骤 1 中创建连接器时，将登录到此帐户。
 
-- 获取组织的 Zoom Business 或 Zoom Enterprise 帐户的用户名和密码。 配置"缩放会议"连接器时，需要在步骤 2 中登录此帐户。
+- 获取组织的 Zoom Business 或 Zoom Enterprise用户名和密码。 配置"缩放会议"连接器时，需要在步骤 2 中登录此帐户。
 
 - 在缩放市场中创建 [以下应用程序](https://marketplace.zoom.us)：
 
@@ -55,11 +55,11 @@ ms.locfileid: "51163722"
 
   有关如何创建 OAuth 和 JWT 应用程序的分步说明，请参阅 [Merge1 Third-Party Connectors User Guide](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20Zoom%20Meetings%20User%20Guide%20.pdf)。
 
-- 必须在步骤 1 (步骤 3) 创建"缩放会议"连接器的用户分配到 Exchange Online 中的"邮箱导入导出"角色。 在 Microsoft 365 合规中心的"数据连接器"页面上添加连接器需要此角色。 默认情况下，此角色不会分配给 Exchange Online 中的角色组。 可以将"邮箱导入导出"角色添加到 Exchange Online 中的"组织管理"角色组。 也可以创建角色组，分配邮箱导入导出角色，然后将相应的用户添加为成员。 有关详细信息，请参阅"在[](/Exchange/permissions-exo/role-groups#create-role-groups)Exchange Online[](/Exchange/permissions-exo/role-groups#modify-role-groups)中管理角色组"一文的创建角色组或修改角色组部分。
+- 必须在步骤 1 中创建"缩放会议"连接器 (在步骤 3) 中完成该连接器的用户必须分配至 Exchange Online 中的"邮箱导入导出"角色。 若要在合规性中心的"数据连接器"页上添加 **连接器，Microsoft 365** 此角色。 默认情况下，此角色不会分配给角色组Exchange Online。 可以将"邮箱导入导出"角色添加到组织中"组织管理"角色Exchange Online。 也可以创建角色组，分配邮箱导入导出角色，然后将相应的用户添加为成员。 有关详细信息，请参阅"在角色[](/Exchange/permissions-exo/role-groups#create-role-groups)组中管理角色组[](/Exchange/permissions-exo/role-groups#modify-role-groups)"一文的"创建角色组"或"修改角色Exchange Online"。
 
 ## <a name="step-1-set-up-the-zoom-meetings-connector"></a>步骤 1：设置缩放会议连接器
 
-第一步是访问 Microsoft  365 合规中心的数据连接器并创建"缩放会议"连接器。
+第一步是在合规性中心内访问Microsoft 365连接器并创建"缩放会议"连接器。
 
 1. 转到 ， [https://compliance.microsoft.com](https://compliance.microsoft.com/) 然后单击"数据 **连接器""**  >  **缩放会议"。**
 
@@ -75,19 +75,19 @@ ms.locfileid: "51163722"
 
 第二步是在 Merge1 网站上配置"缩放会议"连接器。 若要详细了解如何在"一线合并"网站上配置"缩放会议"连接器，请参阅 [Merge1 第三方连接器用户指南](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20Zoom%20Meetings%20User%20Guide%20.pdf)。
 
-单击 **"保存&** 完成"后，将显示 Microsoft  365 合规中心中的连接器向导中的"用户映射"页。
+单击"保存&**完成**"后，将显示合规性中心内连接器Microsoft 365中的"用户映射"页。
 
 ## <a name="step-3-map-users-and-complete-the-connector-setup"></a>步骤 3：映射用户并完成连接器设置
 
-1. 在" **将外部用户映射到 Microsoft 365** 用户"页上，启用自动用户映射。
+1. 在"**将外部用户映射到 Microsoft 365"页上**，启用自动用户映射。
 
-   "缩放会议"项目包括一个称为 *"电子邮件* "的属性，该属性包含组织中用户的电子邮件地址。 如果连接器可以将此地址与 Microsoft 365 用户关联，则项目将导入该用户的邮箱
+   "缩放会议"项目包括一个称为 *"电子邮件* "的属性，该属性包含组织中用户的电子邮件地址。 如果连接器可以将此地址与Microsoft 365关联，则项目将导入该用户的邮箱
 
 2. 单击 **"下** 一步"，查看设置，然后转到"数据连接器"页以查看新连接器的导入过程的进度。
 
 ## <a name="step-4-monitor-the-zoom-meetings-connector"></a>步骤 4：监视 Zoom 会议连接器
 
-创建"缩放会议"连接器后，可以在 Microsoft 365 合规中心查看连接器状态。
+创建"缩放会议"连接器后，可以在合规性中心内查看Microsoft 365状态。
 
 1. 转到左侧 [https://compliance.microsoft.com](https://compliance.microsoft.com) 导航 **导航中的"数据** 连接器"，然后单击" 数据连接器"。
 

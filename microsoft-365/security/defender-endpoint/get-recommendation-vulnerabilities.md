@@ -1,7 +1,7 @@
 ---
 title: 按建议列出漏洞
 description: 检索与安全建议关联的漏洞列表。
-keywords: api， 图形 api， 受支持的 api， 获取， 漏洞列表， 安全建议， 针对漏洞的安全建议， 威胁和漏洞管理， 威胁和漏洞管理 api
+keywords: api， 图形 api， 受支持的 api， 获取， 漏洞列表， 安全建议， 针对漏洞的安全建议， 危险和漏洞管理， 危险和漏洞管理 api
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -54,7 +54,7 @@ GET /api/recommendations/{id}/vulnerabilities
 
 名称 | 类型 | 说明
 :---|:---|:---
-Authorization | 字符串 | Bearer {token}。 **必需**。
+Authorization | String | Bearer {token}。 **必需**。
 
 
 ## <a name="request-body"></a>请求正文

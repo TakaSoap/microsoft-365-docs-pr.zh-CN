@@ -47,7 +47,7 @@ ms.locfileid: "52246461"
 - Upload PowerShell 脚本或可执行文件到库，然后从租户级别在设备上运行它。
 - 执行或撤消修正操作。
 
-## <a name="before-you-begin"></a>准备工作
+## <a name="before-you-begin"></a>开始之前
 
 在设备上启动会话之前，请确保满足以下要求：
 

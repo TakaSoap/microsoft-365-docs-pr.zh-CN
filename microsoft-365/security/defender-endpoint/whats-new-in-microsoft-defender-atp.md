@@ -54,7 +54,7 @@ ms.locfileid: "52246473"
 ## <a name="december-2020"></a>2020 年 12 月
 - [iOS 上的 Microsoft Defender for Endpoint](microsoft-defender-endpoint-ios.md) <br> Microsoft Defender for Endpoint 现在增加了对 iOS 的支持。 了解如何在 iOS 上安装、配置、更新和使用 Microsoft Defender for Endpoint。
 
-## <a name="september-2020"></a>2020 年 9 月
+## <a name="september-2020"></a>2020 年 9 
 - [Android 上的 Microsoft Defender for Endpoint](microsoft-defender-endpoint-android.md) <br> Microsoft Defender for Endpoint 现在增加了对 Android 的支持。 了解如何在 Android 上安装、配置、更新和使用 Microsoft Defender for Endpoint。
 - [威胁和漏洞管理 macOS 支持](tvm-supported-os.md)<br> 适用于 macOS 的威胁漏洞管理现在公开预览版，它将持续检测 macOS 设备上存在漏洞，以帮助你通过关注风险确定修复优先级。 有关详细信息，请从[Microsoft Tech Community博客文章](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/microsoft-defender-for-endpoint-adds-depth-and-breadth-to-threat/ba-p/1695824)。
 

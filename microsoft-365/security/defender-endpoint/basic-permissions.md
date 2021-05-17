@@ -1,5 +1,5 @@
 ---
-title: 使用基本权限访问 Microsoft Defender 安全中心
+title: 使用基本权限访问Microsoft Defender 安全中心
 description: 了解如何使用基本权限访问 Microsoft Defender for Endpoint 门户。
 keywords: 分配用户角色， 分配读取和写入访问权限， 分配只读访问权限， 用户， 用户角色， 角色
 search.product: eADQiWindows 10XVcnh
@@ -42,19 +42,19 @@ ms.locfileid: "51163667"
 
 若要精细控制权限， [请切换到基于角色的访问控制](rbac.md)。
 
-## <a name="assign-user-access-using-azure-powershell"></a>使用 Azure PowerShell 分配用户访问权限
+## <a name="assign-user-access-using-azure-powershell"></a>使用资源分配Azure PowerShell
 您可以向用户分配以下权限级别之一：
 - 可读写 (完全访问权限) 
 - 只读访问
 
-### <a name="before-you-begin"></a>准备工作
+### <a name="before-you-begin"></a>开始之前
 
 - 安装 Azure PowerShell。 有关详细信息，请参阅如何安装和配置[Azure PowerShell。](https://azure.microsoft.com/documentation/articles/powershell-install-configure/)<br>
 
     > [!NOTE]
     > 需要在提升的命令行中运行 PowerShell cmdlet。
 
-- 连接到 Azure Active Directory。 有关详细信息，请参阅[Connect-MsolService。](https://docs.microsoft.com/powershell/module/msonline/connect-msolservice?view=azureadps-1.0&preserve-view=true)
+- 连接文件Azure Active Directory。 有关详细信息，请参阅[连接-MsolService](https://docs.microsoft.com/powershell/module/msonline/connect-msolservice?view=azureadps-1.0&preserve-view=true)。
 
 **完全访问权限** <br>
 具有完全访问权限的用户可以登录、查看所有系统信息并解决警报、提交文件进行深入分析以及下载载入程序包。
@@ -79,11 +79,11 @@ ms.locfileid: "51163667"
   Add-MsolRoleMember -RoleName "Security Reader" -RoleMemberEmailAddress "reader@Contoso.onmicrosoft.com"
   ```
 
-有关详细信息，请参阅使用 [Azure Active Directory 添加或删除组的成员](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-groups-members-azure-portal)。
+有关详细信息，请参阅使用 Azure Active Directory 添加[或删除Azure Active Directory。](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-groups-members-azure-portal)
 
 ## <a name="assign-user-access-using-the-azure-portal"></a>使用 Azure 门户分配用户访问权限
 
-有关详细信息，请参阅使用 [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-users-assign-role-azure-portal)向用户分配管理员和非管理员角色。
+有关详细信息，请参阅 Assign [administrator and non-administrator roles to users with Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-users-assign-role-azure-portal)。
 
 ## <a name="related-topic"></a>相关主题
 

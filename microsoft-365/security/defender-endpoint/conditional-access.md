@@ -41,7 +41,7 @@ ms.locfileid: "51166193"
 
 你可以定义安全条件，在这些设备和应用程序可以运行和访问来自网络的信息时，通过强制执行策略来阻止应用程序运行，直到设备返回到兼容状态。 
 
-Defender for Endpoint 中条件访问的实现基于 Microsoft Intune (Intune) 设备合规性策略和 Azure Active Directory (Azure AD) 条件访问策略。 
+Defender for Endpoint 中条件访问的实现基于 Intune Microsoft Intune (设备合规性) 策略，Azure Active Directory (Azure AD) 条件访问策略。 
 
 合规性策略与条件访问一起用于仅允许满足一个或多个设备合规性策略规则的设备访问应用程序。 
 

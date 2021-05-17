@@ -38,14 +38,14 @@ ms.locfileid: "51165389"
 
 若要编辑现有主题，您需要：
 - 拥有 Viva 主题许可证。
-- 对可以创建或 [**编辑主题的用户具有权限**](./topic-experiences-user-permissions.md)。 知识管理员可以在 Viva 主题权限设置中为用户提供此权限。 
+- 具有创建或 [**Who主题的权限**](./topic-experiences-user-permissions.md)。 知识管理员可以在 Viva 主题的主题权限设置中向用户授予此权限。 
 
 > [!Note] 
 > 具有在主题中心管理主题的权限的用户 (知识管理员) 创建和编辑主题的权限。
 
 ## <a name="how-to-edit-a-topic-page"></a>如何编辑主题页面
 
-具有"**谁可以创建** 或编辑主题"权限的用户可以通过从主题突出显示中打开主题页面，然后选择主题页面右上方的"编辑"按钮 <b></b>来编辑主题。 还可以从主题中心主页打开主题页面，您可以在其中找到已连接到的所有主题。
+具有 **此权限Who** 可以创建或编辑主题权限的用户可以通过从主题突出显示中打开主题页面，然后选择主题页面右上方的"编辑"按钮来编辑 <b></b>主题。 还可以从主题中心主页打开主题页面，您可以在其中找到已连接到的所有主题。
 
    !["编辑"按钮](../media/knowledge-management/edit-button.png) </br> 
 
@@ -75,16 +75,16 @@ ms.locfileid: "51165389"
 
    ![固定建议的人](../media/knowledge-management/suggested-people.png)</br>
 
-5. 在 <b>"固定的文件和</b> 页面"部分，可以添加或"固定"与主题关联的文件或 SharePoint 网站页面。
+5. 在<b>"固定的文件和</b>页面"部分，可以添加或"固定"SharePoint主题关联的文件或页面。
 
    !["固定的文件和页面"部分](../media/knowledge-management/pinned-files-and-pages.png)</br>
  
-    若要添加新文件，请选择"添加<b></b>"，从"常用"或"关注的网站"中选择 SharePoint 网站，然后从网站的文档库中选择该文件。
+    若要添加新文件，请选择"添加<b></b>"，从"常用SharePoint"或"关注的网站"中选择"网站"，然后从网站的文档库中选择该文件。
 
     您还可以通过提供 URL，<b></b>使用"自链接"选项添加文件或页面。 
 
    > [!Note] 
-   > 添加的文件和页面必须位于同一 Microsoft 365 租户中。 如果要在主题中添加指向外部资源的链接，可以通过步骤 9 中的画布图标添加该链接。
+   > 添加的文件和页面必须位于同一租户Microsoft 365租户中。 如果要在主题中添加指向外部资源的链接，可以通过步骤 9 中的画布图标添加该链接。
 
 6. 建议 <b>的文件和页面</b> 部分显示 AI 建议与主题关联的文件和页面。
 
@@ -100,7 +100,7 @@ ms.locfileid: "51165389"
     
     ![选择站点](../media/knowledge-management/sites.png)</br>
 
-8. " <b>相关主题</b> "部分显示主题之间存在的连接。 您可以通过选择"连接到相关主题"按钮，然后键入相关<b></b>主题的名称，然后从搜索结果中选择该名称，来添加到其他主题的连接。 
+8. " <b>相关主题</b> "部分显示主题之间存在的连接。 您可以通过选择"与相关主题的 连接"按钮，<b></b>然后键入相关主题的名称，然后从搜索结果中选择它，来添加与其他主题的连接。 
 
    ![相关主题部分](../media/knowledge-management/related-topic.png)</br>  
 
@@ -108,7 +108,7 @@ ms.locfileid: "51165389"
 
    ![相关主题说明](../media/knowledge-management/related-topics-update.png)</br> 
 
-   您添加的相关主题将显示为已连接的主题。
+   所添加的相关主题将显示为已连接的主题。
 
    ![已连接的相关主题](../media/knowledge-management/related-topics-final.png)</br> 
 
@@ -121,7 +121,7 @@ ms.locfileid: "51165389"
    ![确认删除](../media/knowledge-management/remove-related-confirm.png)</br> 
 
 
-9. 您还可以通过选择画布图标（可在简短说明下方找到）将静态项目（如文本、图像或链接）添加到页面。 选择它将打开 SharePoint 工具箱，您可以从中选择要添加到页面的项。
+9. 您还可以通过选择画布图标（可在简短说明下方找到）将静态项目（如文本、图像或链接）添加到页面。 选择它将打开SharePoint工具箱，您可以从中选择要添加到页面的项。
 
    ![画布图标](../media/knowledge-management/webpart-library.png)</br> 
 

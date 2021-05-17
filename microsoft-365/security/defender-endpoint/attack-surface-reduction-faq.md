@@ -44,7 +44,7 @@ ASR 最初是作为 Microsoft Defender 防病毒 版本 1709 Windows 10的主要
 
 ## <a name="is-asr-supported-if-i-have-an-e3-license"></a>如果我有 E3 许可证，是否支持 ASR？
 
-对。 E3 及Windows Enterprise支持 ASR。 
+是的。 E3 及Windows Enterprise支持 ASR。 
 
 ## <a name="which-features-are-supported-with-an-e5-license"></a>E5 许可证支持哪些功能？
 
@@ -135,7 +135,7 @@ ASR 规则排除项支持通配符、路径和环境变量。 若要详细了解
 
 ## <a name="does-asr-support-file-or-folder-exclusions-that-include-system-variables-and-wildcards-in-the-path"></a>ASR 是否支持路径中包括系统变量和通配符的文件或文件夹排除项？
 
-对。 有关从 ASR 规则中排除文件或文件夹的更多详细信息，请参阅从[ASR](enable-attack-surface-reduction.md#exclude-files-and-folders-from-asr-rules)规则中排除文件和文件夹[](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-extension-file-exclusions-microsoft-defender-antivirus#use-wildcards-in-the-file-name-and-folder-path-or-extension-exclusion-lists);有关在排除的文件路径中使用系统变量和通配符的详细信息，请参阅基于文件扩展名和文件夹位置配置和验证排除项。
+是的。 有关从 ASR 规则中排除文件或文件夹的更多详细信息，请参阅从[ASR](enable-attack-surface-reduction.md#exclude-files-and-folders-from-asr-rules)规则中排除文件和文件夹[](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-extension-file-exclusions-microsoft-defender-antivirus#use-wildcards-in-the-file-name-and-folder-path-or-extension-exclusion-lists);有关在排除的文件路径中使用系统变量和通配符的详细信息，请参阅基于文件扩展名和文件夹位置配置和验证排除项。
 
 ## <a name="do-asr-rules-cover-all-applications-by-default"></a>默认情况下，ASR 规则是否涵盖所有应用程序？
 

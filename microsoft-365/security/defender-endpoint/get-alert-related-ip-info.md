@@ -1,5 +1,5 @@
 ---
-title: 获取与警报相关的 IP 信息
+title: 获取通知相关 IP 信息
 description: 使用 Microsoft Defender for Endpoint 检索与特定警报相关的所有 IP。
 keywords: api， 图形 api， 受支持的 api， 获取警报信息， 警报信息， 相关 ip
 search.product: eADQiWindows 10XVcnh
@@ -52,7 +52,7 @@ ms.locfileid: "51166439"
 
 权限类型 |   权限  |   权限显示名称
 :---|:---|:---
-Application |   Ip.Read.All |   "读取 IP 地址配置文件"
+应用程序 |   Ip.Read.All |   "读取 IP 地址配置文件"
 委派（工作或学校帐户） | Ip.Read.All |  "读取 IP 地址配置文件"
 
 >[!Note]

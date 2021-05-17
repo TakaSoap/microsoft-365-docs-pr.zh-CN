@@ -1,6 +1,6 @@
 ---
-title: Microsoft 365 Defender API 许可证和使用条款
-description: Microsoft 365 Defender 中 API 的许可和使用条款说明
+title: Microsoft 365Defender API 许可证和使用条款
+description: Microsoft 365 Defender 中 API 的许可和使用条款的说明
 keywords: api， api， 许可， 条款， api， 法律， 通知， 行为准则
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -27,7 +27,7 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 03/23/2021
 ms.locfileid: "51054901"
 ---
-# <a name="microsoft-365-defender-apis-license-and-terms-of-use"></a>Microsoft 365 Defender API 许可证和使用条款
+# <a name="microsoft-365-defender-apis-license-and-terms-of-use"></a>Microsoft 365Defender API 许可证和使用条款
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -40,13 +40,13 @@ ms.locfileid: "51054901"
 
 ## <a name="official-terms"></a>正式条款
 
-Microsoft 365 Defender API 受 [Microsoft API 许可证和使用条款约束](/legal/microsoft-apis/terms-of-use)。
+Microsoft 365Defender API 受 Microsoft [API 许可证和使用条款约束](/legal/microsoft-apis/terms-of-use)。
 
 ## <a name="legal-notices"></a>法律声明
 
 Microsoft 和任何参与者根据 Creative Commons Attribution 4.0 国际公共许可证授予你 Microsoft 文档以及此存储库中的其他内容的许可证。 [](https://github.com/MicrosoftDocs/microsoft-365-docs) 有关详细信息，请参阅 [LICENSE](https://github.com/MicrosoftDocs/microsoft-365-docs/blob/public/LICENSE) 文件。
 
-本文档中引用的 Microsoft、Windows、Microsoft Azure 和/或其他 Microsoft 产品和服务可能是 Microsoft 在美国和/或其他国家/地区中的商标或注册商标。
+本文档Windows、Microsoft Azure和/或其他 Microsoft 产品和服务可能是 Microsoft 在美国和/或其他国家/地区中的商标或注册商标。
 
 此项目的许可证不授予你使用任何 Microsoft 名称、徽标或商标的权利。 可以在 Microsoft 商标上找到 Microsoft 的一般 [商标准则](https://go.microsoft.com/fwlink/?LinkID=254653)。
 
@@ -74,6 +74,6 @@ Microsoft 365 Defender API 具有限制阈值。
 
 ## <a name="related-articles"></a>相关文章
 
-- [Microsoft 365 Defender API 概述](api-overview.md)
+- [Microsoft 365Defender API 概述](api-overview.md)
 - [支持的 Microsoft 365 Defender API](api-supported.md)
 - [访问 Microsoft 365 Defender API](api-access.md)

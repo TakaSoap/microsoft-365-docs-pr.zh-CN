@@ -42,7 +42,7 @@ ms.locfileid: "51187056"
 
 方法|返回类型 |说明
 :---|:---|:---
-[列表指示器](get-ti-indicators-collection.md) | [指示器](ti-indicator.md) 集合 | 列表 [指示器](ti-indicator.md) 实体。
+[列出指示器](get-ti-indicators-collection.md) | [指示器](ti-indicator.md) 集合 | 列表 [指示器](ti-indicator.md) 实体。
 [提交指示器](post-ti-indicator.md) | [指示器](ti-indicator.md) | 提交或更新 [指示器](ti-indicator.md) 实体。
 [导入指示器](import-ti-indicators.md) | [指示器](ti-indicator.md) 集合 | 提交或更新 [指示器](ti-indicator.md) 实体。
 [删除指示器](delete-ti-indicator-by-id.md) | 无内容 | 删除 [指示器](ti-indicator.md) 实体。

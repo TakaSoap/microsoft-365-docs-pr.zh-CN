@@ -47,7 +47,7 @@ ms.locfileid: "51166480"
 
 权限类型 |   权限  |   权限显示名称
 :---|:---|:---
-Application |   Ip.Read.All |   "读取 IP 地址配置文件"
+应用程序 |   Ip.Read.All |   "读取 IP 地址配置文件"
 委派（工作或学校帐户） | Ip.Read.All |  "读取 IP 地址配置文件"
 
 >[!NOTE]

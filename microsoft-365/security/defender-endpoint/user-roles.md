@@ -1,6 +1,6 @@
 ---
 title: 为基于角色的访问控制创建和管理角色
-description: 创建角色，并定义作为 Microsoft Defender 安全中心中基于角色的访问控制实现一部分分配给角色的权限
+description: 创建角色，并将分配给角色的权限定义为该角色中基于角色的访问控制实现Microsoft Defender 安全中心
 keywords: 用户角色， 角色， 访问 rbac
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -35,13 +35,13 @@ ms.locfileid: "51055880"
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-## <a name="create-roles-and-assign-the-role-to-an-azure-active-directory-group"></a>创建角色并将角色分配给 Azure Active Directory 组
+## <a name="create-roles-and-assign-the-role-to-an-azure-active-directory-group"></a>创建角色并将角色分配给Azure Active Directory组
 
-以下步骤将指导你如何在 Microsoft Defender 安全中心创建角色。 它假定你已创建 Azure Active Directory 用户组。
+以下步骤将指导您如何在 Microsoft Defender 安全中心。 它假定你已创建Azure Active Directory用户组。
 
-1. 使用分配有 [安全管理员](https://securitycenter.windows.com/) 或全局管理员角色的帐户登录到 Microsoft Defender 安全中心。
+1. 使用分配[Microsoft Defender 安全中心](https://securitycenter.windows.com/)全局管理员角色的帐户登录登录。
 
-2. 在导航窗格中，选择"设置 **>角色"。**
+2. 在导航窗格中，选择"设置 >**角色"。**
 
 3. 选择 **"添加项目"。**
 
@@ -62,12 +62,12 @@ ms.locfileid: "51055880"
 
 - **查看数据**
     - **安全操作** - 在门户中查看所有安全操作数据
-    - **威胁和漏洞管理** - 在门户中查看威胁和漏洞管理数据
+    - **威胁漏洞管理**- 危险和漏洞管理门户中查看数据
 
 - **活动修正操作**
     - **安全操作** - 执行响应操作、批准或消除挂起的修正操作、管理自动化和指示器的允许/阻止列表
-    - **威胁和漏洞管理 - 异常处理** - 创建新的异常并管理活动异常
-    - **威胁和漏洞管理 - 修正处理** - 提交新的修正请求、创建票证和管理现有修正活动
+    - **威胁和漏洞管理 - 异常处理**- 创建新的异常和管理活动异常
+    - **威胁和漏洞管理 - 修正处理**- 提交新的修正请求、创建票证和管理现有修正活动
 
 - **警报调查** - 管理警报、启动自动调查、运行扫描、收集调查包、管理设备标记，以及仅下载可移植的可执行 (PE) 文件 
 
@@ -85,7 +85,7 @@ ms.locfileid: "51055880"
     - **高级** 命令：
         - 通过实时响应从远程设备下载文件
         - 从文件页面下载 PE 和非 PE 文件
-        - 将文件上传到远程设备
+        - Upload文件到远程设备
         - 从文件库查看脚本
         - 从文件库在远程设备上执行脚本
 
@@ -93,9 +93,9 @@ ms.locfileid: "51055880"
   
 ## <a name="edit-roles"></a>编辑角色
 
-1. 使用分配有 [安全管理员](https://securitycenter.windows.com/) 或全局管理员角色的帐户登录到 Microsoft Defender 安全中心。
+1. 使用分配[Microsoft Defender 安全中心](https://securitycenter.windows.com/)全局管理员角色的帐户登录登录。
 
-2. 在导航窗格中，选择"设置 **>角色"。**
+2. 在导航窗格中，选择"设置 >**角色"。**
 
 3. 选择要编辑的角色。
 
@@ -107,9 +107,9 @@ ms.locfileid: "51055880"
 
 ## <a name="delete-roles"></a>删除角色
 
-1. 使用分配有 [安全管理员](https://securitycenter.windows.com/) 或全局管理员角色的帐户登录到 Microsoft Defender 安全中心。
+1. 使用分配[Microsoft Defender 安全中心](https://securitycenter.windows.com/)全局管理员角色的帐户登录登录。
 
-2. 在导航窗格中，选择"设置 **>角色"。**
+2. 在导航窗格中，选择"设置 >**角色"。**
 
 3. 选择要删除的角色。
 

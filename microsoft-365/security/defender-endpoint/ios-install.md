@@ -37,7 +37,7 @@ ms.locfileid: "52245249"
 
 本主题介绍在已注册的设备上在 iOS Intune 公司门户 Defender for Endpoint。 有关 Intune 设备注册详细信息，请参阅在 Intune 中注册 [iOS/iPadOS 设备](https://docs.microsoft.com/mem/intune/enrollment/ios-enroll)。
 
-## <a name="before-you-begin"></a>准备工作
+## <a name="before-you-begin"></a>开始之前
 
 - 确保你有权访问 [Microsoft Endpoint Manager 管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
 
@@ -152,7 +152,7 @@ Intune 允许你通过应用配置策略配置适用于 iOS 的 Defender 应用�
 
    部署到用户组时，用户必须在应用策略之前登录设备。
 
-   单击“**下一步**”。
+   点击 **“下一步”**。
 
 1. 在"**审阅 + 创建**"页上，完成后，选择"创建 **"。** 新配置文件显示在配置文件列表中。
 
@@ -164,7 +164,7 @@ Intune 允许你通过应用配置策略配置适用于 iOS 的 Defender 应用�
     > ![管理Microsoft Endpoint Manager中心 7 的图像](images/ios-deploy-7.png)
 
     - 提供配置文件的名称。 当系统提示导入配置文件时，请选择上面下载的文件。
-    - 在 **"分配** "部分，选择要应用此配置文件的设备组。 最佳做法是，这应该应用于所有托管的 iOS 设备。 单击“**下一步**”。
+    - 在 **"分配** "部分，选择要应用此配置文件的设备组。 最佳做法是，这应该应用于所有托管的 iOS 设备。 点击 **“下一步”**。
     - 在"**审阅 + 创建**"页上，完成后，选择"创建 **"。** 新配置文件显示在配置文件列表中。
 
 ## <a name="next-steps"></a>后续步骤

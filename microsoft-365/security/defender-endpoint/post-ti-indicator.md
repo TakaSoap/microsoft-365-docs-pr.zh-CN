@@ -73,12 +73,12 @@ Content-Type | string | application/json. **必需**。
 
 参数 | 类型    | 说明
 :---|:---|:---
-indicatorValue | String | Indicator [实体的](ti-indicator.md) 标识。 **必需**
-indicatorType | 枚举 | 指示器的类型。 可能的值是："FileSha1"、"FileSha256"、"IpAddress"、"DomainName"和"Url"。 **必需**
-action | 枚举 | 如果在组织中发现指示器，将采取的操作。 可能的值是："Alert"、"AlertAndBlock"和"Allowed"。 **必需**
+indicatorValue | String | Indicator [实体的](ti-indicator.md) 标识。 **Required**
+indicatorType | 枚举 | 指示器的类型。 可能的值是："FileSha1"、"FileSha256"、"IpAddress"、"DomainName"和"Url"。 **Required**
+action | 枚举 | 如果在组织中发现指示器，将采取的操作。 可能的值是："Alert"、"AlertAndBlock"和"Allowed"。 **Required**
 应用程序 | String | 与指示器关联的应用程序。 **可选**
-title | String | 指示器警报标题。 **必需**
-说明 | String | 指示器的说明。 **必需**
+title | String | 指示器警报标题。 **Required**
+说明 | String | 指示器的说明。 **Required**
 expirationTime | DateTimeOffset | 指示器的过期时间。 **可选**
 severity | 枚举 | 指示器的严重性。 可能的值包括："Informational"、"Low"、"Medium"和"High"。 **可选**
 recommendedActions | String | TI 指示器警报建议操作。 **可选**

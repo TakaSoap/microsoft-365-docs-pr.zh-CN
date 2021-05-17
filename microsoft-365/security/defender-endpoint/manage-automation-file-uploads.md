@@ -41,7 +41,7 @@ ms.locfileid: "51185845"
 
 ## <a name="add-file-extension-names-and-attachment-extension-names"></a>添加文件扩展名和附件扩展名。
 
-1. 在导航窗格中，选择"**设置**  >  **""自动化文件上载"。** 
+1. 在导航窗格中，选择 **"设置**  >  **文件上载"。** 
 
 2. 在开和 **关之间切换** 内容分析 **设置**。
 
@@ -50,4 +50,4 @@ ms.locfileid: "51185845"
   
 
 ## <a name="related-topics"></a>相关主题
-- [管理自动化文件夹排除项](manage-automation-folder-exclusions.md)
+- [管理自动化文件夹排除](manage-automation-folder-exclusions.md)

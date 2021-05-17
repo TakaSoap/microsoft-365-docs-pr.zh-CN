@@ -40,7 +40,7 @@ ms.locfileid: "51166479"
 
 检索 KB 和 KB 详细信息的集合。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 用户需要读取权限。
 
 ## <a name="http-request"></a>HTTP 请求

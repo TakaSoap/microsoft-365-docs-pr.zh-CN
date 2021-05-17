@@ -46,11 +46,11 @@ ms.locfileid: "51187054"
 方法 |返回类型 |说明
 :---|:---|:---
 [列出软件](get-software.md) | 软件集合 | 列出组织软件清单。
-[按 ID 获取软件](get-software-by-id.md) | 软件 | 按软件 ID 获取特定软件。
+[按 Id 获取软件](get-software-by-id.md) | 软件 | 按软件 ID 获取特定软件。
 [列出软件版本分发](get-software-ver-distribution.md)| 通讯组集合 | 按软件 ID 列出软件版本分发。
 [按软件列出计算机](get-machines-by-software.md)| MachineRef 集合 | 检索与软件 ID 关联的设备列表。
 [按软件列出漏洞](get-vuln-by-software.md) | [漏洞](vulnerability.md) 集合 | 检索与软件 ID 关联的漏洞列表。
-[获取缺少的 KB](get-missing-kbs-software.md) | KB 集合 | 获取与软件 ID 关联的缺失的 KB 列表
+[查找缺失的 KBS](get-missing-kbs-software.md) | KB 集合 | 获取与软件 ID 关联的缺失的 KB 列表
 
 ## <a name="properties"></a>属性
 

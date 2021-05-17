@@ -96,7 +96,7 @@ ms.locfileid: "51185463"
 
 
 ## <a name="see-also"></a>另请参阅
-- [查看和组织"设备"列表](machines-view-overview.md)
+- [查看和组织设备列表](machines-view-overview.md)
 - [Microsoft Defender for Endpoint 设备时间线事件标志](device-timeline-event-flag.md) 
 
 

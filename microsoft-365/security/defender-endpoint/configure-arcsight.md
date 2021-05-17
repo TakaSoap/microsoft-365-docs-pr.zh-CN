@@ -1,6 +1,6 @@
 ---
 title: 配置 Micro Focus ArcSight 以拉取 Microsoft Defender 进行终结点检测
-description: 配置 Micro Focus ArcSight 以从 Microsoft Defender 安全中心接收和拉取检测
+description: 配置 Micro Focus ArcSight 以接收和拉取来自Microsoft Defender 安全中心
 keywords: 配置 Micro Focus ArcSight， 安全信息和事件管理工具， arcsight
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -40,13 +40,13 @@ ms.locfileid: "51166181"
 >- [Defender for Endpoint Alert](alerts.md) 由一个或多个检测组成
 >- [Defender for Endpoint Detection](api-portal-mapping.md) 由设备上发生的可疑事件及其相关的警报详细信息组成。
 
-## <a name="before-you-begin"></a>准备工作
+## <a name="before-you-begin"></a>开始之前
 
-配置 Micro Focus ArcSight 连接器工具需要多个配置文件，以从 Azure Active Directory (AAD) 检测。
+配置微型焦点 ArcSight 连接器工具需要多个配置文件，以拉取和分析来自 AAD Azure Active Directory (应用程序的) 检测。
 
 本部分将指导你获取正确设置和使用所需配置文件的必要信息。
 
-- 确保你已启用"设置"菜单中的 SIEM **集成** 功能。 有关详细信息，请参阅在 Defender [for Endpoint 中启用 SIEM 集成](enable-siem-integration.md)。
+- 确保你已从"开始"菜单启用 SIEM **设置** 功能。 有关详细信息，请参阅在 Defender [for Endpoint 中启用 SIEM 集成](enable-siem-integration.md)。
 
 - 准备好启用 SIEM 集成功能时保存的文件。 你需要获取以下值：
   - OAuth 2.0 令牌刷新 URL
@@ -57,7 +57,7 @@ ms.locfileid: "51166181"
   - WDATP-connector.properties
   - WDATP-connector.jsonparser.properties
 
-    当你选择 Micro Focus ArcSight 作为你在组织使用的 SIEM 类型时，你将保存包含这两个文件的 .zip 文件。
+    当你选择 Micro Focus ArcSight 作为你在组织.zip SIEM 类型时，你将保存一个包含这两个文件的配置文件。
 
 - 请确保生成以下令牌并准备好：
   - 访问令牌
@@ -105,7 +105,7 @@ ms.locfileid: "51166181"
     </tr>
     <tr>
     <td>配置文件</td>
-    <td>键入客户端属性文件的名称。 该名称必须与下载的 .zip 中提供的文件匹配。
+    <td>键入客户端属性文件的名称。 该名称必须与下载的 .zip中提供的文件匹配。
 例如，如果 flexagent 目录中的配置文件名为 &quot; &quot;WDATP-Connector.js&quot; onparser.properties，则必须键入 &quot; &quot; WDATP-Connector 作为客户端属性 &quot; 文件的名称。</td>
     </tr>
     <td>事件 URL</td>
@@ -116,7 +116,7 @@ ms.locfileid: "51166181"
     <td>OAuth 2</td>
     </tr>
     <td>OAuth 2 客户端属性文件</td>
-    <td>浏览到 <em>wdatp-connector.properties 文件</em> 的位置。 该名称必须与下载的 .zip 中提供的文件匹配。</td>
+    <td>浏览到 <em>wdatp-connector.properties 文件</em> 的位置。 该名称必须与下载的 .zip中提供的文件匹配。</td>
     <tr>
     <td>刷新令牌</td>
     <td>可以通过两种方式获取刷新令牌：从 <b>SIEM</b> 设置页生成刷新令牌，或者使用 restutil 工具。 <br><br> 有关从首选项设置生成刷新令牌详细信息 <b>，</b> 请参阅在 Defender for Endpoint 中启用 <a href="enable-siem-integration.md" data-raw-source="[Enable SIEM integration in Defender for Endpoint](enable-siem-integration.md)">SIEM 集成</a>。 </br> </br><b>使用 restutil 工具获取刷新令牌：</b> </br> a. 打开命令提示符。 导航到 C：\<em>folder_location</em>\current\bin，folder_location表示安装该工具的位置。 <em></em> </br></br> b. 类型： <code>arcsight restutil token -config</code> 从 bin 目录。例如 <b>：arcsight restutil boxtoken -proxy proxy.location.hp.com:8080</b> Web 浏览器窗口将打开。 </br> </br>c. 键入凭据，然后单击密码字段，让页面重定向。 在登录提示中，输入凭据。 </br> </br>d. 刷新令牌显示在命令提示符中。 </br></br> e. 将其复制并粘贴到 <b>"刷新令牌"</b> 字段中。
@@ -135,9 +135,9 @@ ms.locfileid: "51166181"
 
 9. 选择 **ArcSight 管理器 (加密)** 作为目标，然后单击下一 **步**。
 
-10. 在"管理器主机名"中键入目标IP/主机名，在参数表单中键入凭据。 表单中的所有其他值都应保留为默认值。 单击“**下一步**”。
+10. 在"管理器主机名"中键入目标IP/主机名，在参数表单中键入凭据。 表单中的所有其他值都应保留为默认值。 点击 **“下一步”**。
 
-11. 在连接器详细信息表单中键入连接器的名称。 表单中的所有其他值都是可选的，可以留空。 单击“**下一步**”。
+11. 在连接器详细信息表单中键入连接器的名称。 表单中的所有其他值都是可选的，可以留空。 点击 **“下一步”**。
 
 12. 将显示 ESM 管理器导入证书窗口。 选择 **"将证书从目标导入连接器"，然后单击**"下一 **步"。** 将显示 **"添加连接器摘要** "窗口，并导入证书。
 
@@ -145,9 +145,9 @@ ms.locfileid: "51166181"
 
 14. 选择 **"安装为服务"，** 然后单击"下一 **步"。**
 
-15. 在"服务内部名称" **字段中键入** 名称。 窗体中的所有其他值都可以使用默认值保留或留空。 单击“**下一步**”。
+15. 在"服务内部名称" **字段中键入** 名称。 窗体中的所有其他值都可以使用默认值保留或留空。 点击 **“下一步”**。
 
-16. 键入服务参数，然后单击下一 **步**。 将显示一个 **包含"安装服务摘要"** 的窗口。 单击“**下一步**”。
+16. 键入服务参数，然后单击下一 **步**。 将显示一个 **包含"安装服务摘要"** 的窗口。 点击 **“下一步”**。
 
 17. 通过选择"退出"和"下一步 **"完成****安装**。
 
@@ -177,7 +177,7 @@ ms.locfileid: "51166181"
 
 9. 导航到 **"活动通道设置**  >  **新建条件**  >  **设备**  >  **设备产品"。**
 
-10. 设置 **设备产品 = Microsoft Defender ATP**。 当你验证事件是否流向该工具时，请再次停止该过程，然后转到 Windows 服务并启动 ArcSight FlexConnector REST。
+10. 设置 **设备产品 = Microsoft Defender ATP**。 验证事件是否流向工具后，请再次停止此过程，然后转到 Windows Services 并启动 ArcSight FlexConnector REST。
 
 现在可以在 Micro Focus ArcSight 控制台中运行查询。
 

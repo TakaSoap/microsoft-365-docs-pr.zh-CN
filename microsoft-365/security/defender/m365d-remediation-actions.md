@@ -1,6 +1,6 @@
 ---
 title: Microsoft 365 Defender 中的修正操作
-description: 大致了解在 Microsoft 365 Defender 中执行自动调查后采取的修正操作
+description: 大致了解在 Microsoft 365 Defender 中执行自动调查后Microsoft 365操作
 keywords: 自动化, 调查, 警报, 触发器, 操作, 修正
 search.appverid: met150
 ms.prod: m365-security
@@ -36,7 +36,7 @@ ms.locfileid: "52269464"
 **适用于：**
 - Microsoft 365 Defender
 
-在 Microsoft 365 Defender 的自动调查期间和之后，会针对恶意或可疑项目识别修正操作。 某些类型的修正操作在设备上执行，也称为终结点。 对电子邮件内容执行其他修正操作。 自动调查在采取、批准或拒绝修正操作后完成。
+在 Defender 自动调查期间Microsoft 365后，会针对恶意或可疑项目标识修正操作。 某些类型的修正操作在设备上执行，也称为终结点。 对电子邮件内容执行其他修正操作。 自动调查在采取、批准或拒绝修正操作后完成。
 
 > [!IMPORTANT]
 > 修正操作是自动执行还是仅在审批后执行取决于某些设置，例如自动化级别的方式。 若要了解更多信息，请参阅以下文章：
@@ -44,7 +44,7 @@ ms.locfileid: "52269464"
 > - [如何在设备上修正威胁](../defender-endpoint/automated-investigations.md)
 > - [对电子邮件和协作内容&和修正操作](../office-365-security/air-remediation-actions.md#threats-and-remediation-actions)
 
-下表总结了 Microsoft 365 Defender 中当前支持的修正操作。 
+下表总结了 Defender 中当前支持的修正Microsoft 365操作。 
 
 |设备 (终结点) 修正操作  |电子邮件修正操作  |
 |:---------|:---------|

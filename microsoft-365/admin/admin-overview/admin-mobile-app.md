@@ -22,7 +22,7 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: 获取Microsoft 365管理应用，并了解如何从手机或平板电脑管理联机组织。
+description: 获取 Microsoft 365 管理应用，并了解如何从手机或平板电脑管理联机组织。
 ms.openlocfilehash: 2f6b27b409dd456a88a17a9825fae3ec24d787a4
 ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
@@ -30,23 +30,23 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 05/06/2021
 ms.locfileid: "52244016"
 ---
-# <a name="about-the-microsoft-365-admin-mobile-app"></a>关于Microsoft 365移动应用
+# <a name="about-the-microsoft-365-admin-mobile-app"></a>关于 Microsoft 365 管理移动应用
 
-你是经常在外访问的管理员吗？ 即使没有，有时可能需要从手机或平板电脑Microsoft 365管理设备。 查看免费的 Microsoft 365[管理应用](https://go.microsoft.com/fwlink/?LinkID=627216)，这是基于 Web 的 Microsoft 365 管理中心的最佳助手。 你可以从 Apple App [Store](https://apps.apple.com/app/apple-store/id761397963?pt=80423&ct=docsaboutadminapp&mt=8)和 Google Play 应用商店下载 [应用](https://play.google.com/store/apps/details?id=com.ms.office365admin&referrer=utm_source%3Ddocsaboutadminapp%26utm_campaign%25docsaboutadminapp)。
+你是经常在外访问的管理员吗？ 即使没有，有时可能需要从手机或平板电脑管理 Microsoft 365。 查看免费的 [Microsoft 365 管理](https://go.microsoft.com/fwlink/?LinkID=627216)应用，这是基于 Web 的 Microsoft 365 管理中心的完美助手。 你可以从 Apple App [Store](https://apps.apple.com/app/apple-store/id761397963?pt=80423&ct=docsaboutadminapp&mt=8)和 Google Play 应用商店下载 [应用](https://play.google.com/store/apps/details?id=com.ms.office365admin&referrer=utm_source%3Ddocsaboutadminapp%26utm_campaign%25docsaboutadminapp)。
 
 :::image type="content" source="../../media/DocsMicrosoftFinalImage.PNG" alt-text="Screenshot： Admin mobile app's home page， displaying search， Message center， health， and quick links":::
 
-管理应用具有许多功能，当你Microsoft 365计算机时，这些功能将使您能够从移动设备或平板电脑设备管理设备。 下面是你可以从应用执行一些任务的列表：
+管理应用具有许多功能，当你无法到达计算机时，这些功能将使您能够从移动或平板电脑设备管理 Microsoft 365。 下面是你可以从应用执行一些任务的列表：
 
 - **管理用户和设备** 添加或编辑用户、重置用户密码、分配角色、阻止用户、删除用户、管理别名、分配许可证、擦除设备数据等。
 - **管理组** 添加组、在组中添加或删除用户。
 - **许可证管理和计费** 查看已购买和分配的许可证的列表、向用户分配许可证、购买或删除许可证以及查看和下载发票。
 - **支持** 创建新的服务请求，并跟踪你在外时与服务请求相关的所有更新。
-- **消息中心** 随时了解即将推出的更改、计划维护或与项目相关的Microsoft 365
+- **消息中心** 随时了解即将推出的所有更改、计划维护或与 Microsoft 365 相关的其他重要通知
 - **服务运行状况** 通过查看服务的当前状态和有关服务中断的详细信息来监视所有服务的运行状况。
 - **通知** 通过推送通知了解与消息中心帖子、服务运行状况和计费相关的所有重要信息和更新。 甚至可以自定义要通知哪些信息。
 
-如果你是管理员并且负责多个组织Microsoft 365，可以登录到多个组织并快速切换。 应用支持深色主题，有 39 种语言版本。
+如果你是管理员并且负责多个 Microsoft 365 组织，可以登录到多个组织并快速切换。 应用支持深色主题，有 39 种语言版本。
   
 > [!IMPORTANT]
 > 如果在 iOS 或 Android 上使用管理移动应用 [时遇到](mailto:feedback365@microsoft.com) 问题，请通过电子邮件 feedback365@microsoft.com 告知我们。
@@ -67,21 +67,21 @@ ms.locfileid: "52244016"
   
 ### <a name="what-do-i-need-to-do-to-be-able-to-use-the-app"></a>要使用该应用，我需要做什么？
 
-若要使用应用，你需要拥有管理员权限和以下订阅之一的有效Microsoft 365订阅：
+若要使用应用，你需要拥有管理员权限和以下 Microsoft 365 订阅之一的有效订阅：
 
 - Microsoft 365 企业应用版
-- Microsoft 365 应用版 for Business
+- Microsoft 365 商业应用版
 - Microsoft 365 商业高级版
 - Microsoft 365 商业标准版
 - Microsoft 365 商业基础版
 - Microsoft 365 E3/E5
 - Office 365：E1、E3/E5
-- Exchange Online计划
-- OneDrive商业计划
+- Exchange Online 计划
+- OneDrive for Business 计划
   
-### <a name="can-i-use-the-app-with-my-microsoft-365-family-subscription"></a>能否将应用与我的 Microsoft 365 家庭版一起使用？
+### <a name="can-i-use-the-app-with-my-microsoft-365-family-subscription"></a>能否将该应用与 Microsoft 365 家庭版订阅一同使用？
 
-否，应用不能与订阅Microsoft 365 家庭版Microsoft 365 个人版一。
+否，应用不能与 Microsoft 365 家庭版或 Microsoft 365 个人版订阅一起使用。
 
 ### <a name="will-the-app-work-if-my-organization-has-directory-synchronization-enabled"></a>如果我的组织启用了目录同步，是否可使用该应用？
 
@@ -89,7 +89,7 @@ ms.locfileid: "52244016"
   
 ### <a name="what-languages-are-supported-by-the-app"></a>该应用支持什么语言？
 
-该应用支持基于 Web 的 Microsoft 365支持的所有 39 种语言。 若要更改语言，请在管理中心的左侧导航菜单中，转到"设置语言"或选择管理移动应用主页的"快速链接"部分中的"语言  >  "图标。  
+该应用支持基于 Web 的 Microsoft 365 管理中心支持的所有 39 种语言。 若要更改语言，请在管理中心的左侧导航菜单中，转到"设置语言"或选择管理移动应用主页的"快速链接"部分中的"语言  >  "图标。  
   
 ### <a name="how-can-i-share-the-service-incidents-and-messages-with-the-rest-of-my-organization"></a>我如何与组织的其余用户共享服务事件和邮件？
 
@@ -105,12 +105,12 @@ ms.locfileid: "52244016"
 
 1. 关闭并重新打开应用。
 1. 卸载并重新安装应用。 确保你使用最新版本的应用。
-1. 如果你的设备Microsoft Authenticator或公司门户应用，请尝试重新安装它或更新到最新版本。
+1. 如果你的设备上安装了 Microsoft Authenticator 或公司门户应用，请尝试重新安装它或更新到最新版本。
 1. 如果不起作用，可以通过电子邮件联系我们 feedback365@microsoft.com 告知我们。
 
 ### <a name="how-do-i-manage-notifications-in-the-app"></a>如何在应用中管理通知？
 
-从左侧导航菜单中，**转到"设置**  >  **通知"。** 你可以在此处管理服务运行状况、消息中心和帐单通知。
+从左侧导航菜单中，转到"设置""**通知**  >  **"。** 你可以在此处管理服务运行状况、消息中心和帐单通知。
 
 ### <a name="what-do-i-do-if-my-question-isnt-answered"></a>如果我的问题未获得答复怎么办？
 
@@ -118,4 +118,4 @@ ms.locfileid: "52244016"
   
 ## <a name="related-content"></a>相关内容 
 
-[Microsoft 365企业培训视频 (](../../business-video/index.yml)链接页) 
+[Microsoft 365 商业版培训视频 (](../../business-video/index.yml) 链接页) 

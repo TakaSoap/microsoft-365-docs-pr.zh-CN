@@ -37,7 +37,7 @@ ms.locfileid: "51185941"
 >想要体验适用于终结点的 Defender？ [注册免费试用版。](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-automationexclusionlist-abovefoldlink)
 
 
-1. 在导航窗格中，选择"**设置**  >  **""指示器"。**
+1. 在导航窗格中，选择 **"设置**  >  **标记"。**
 
 2. 选择要管理的实体类型的选项卡。  
 
@@ -49,7 +49,7 @@ ms.locfileid: "51185941"
 
 下载示例 CSV，了解受支持的列属性。
 
-1. 在导航窗格中，选择"**设置**  >  **""指示器"。**
+1. 在导航窗格中，选择 **"设置**  >  **标记"。**
 
 2. 选择要导入其指示器的实体类型的选项卡。
 
@@ -57,23 +57,23 @@ ms.locfileid: "51185941"
 
 4. 选择“**导入**”。 为要导入的所有文件执行这一操作。 
 
-5. 选择“**完成**”。
+5. 选择“完成”。
 
 下表显示了受支持的参数。
 
 参数 | 类型    |   说明
 :---|:---|:---
-indicatorType | 枚举 | 指示器的类型。 可能的值是："FileSha1"、"FileSha256"、"IpAddress"、"DomainName"和"Url"。 **必需**
-indicatorValue | String | Indicator [实体的](ti-indicator.md) 标识。 **必需**
-action | 枚举 | 如果在组织中发现指示器，将采取的操作。 可能的值是："Alert"、"AlertAndBlock"和"Allowed"。 **必需**
-title | String | 指示器警报标题。 **必需**
-说明 | String |  指示器的说明。 **必需**
+indicatorType | 枚举 | 指示器的类型。 可能的值是："FileSha1"、"FileSha256"、"IpAddress"、"DomainName"和"Url"。 **Required**
+indicatorValue | String | Indicator [实体的](ti-indicator.md) 标识。 **Required**
+action | 枚举 | 如果在组织中发现指示器，将采取的操作。 可能的值是："Alert"、"AlertAndBlock"和"Allowed"。 **Required**
+title | String | 指示器警报标题。 **Required**
+说明 | String |  指示器的说明。 **Required**
 expirationTime | DateTimeOffset | 指示器的过期时间，格式为 YYYY-MM-DDTHH：MM：SS.0Z。 **可选**
 severity | 枚举 | 指示器的严重性。 可能的值包括："Informational"、"Low"、"Medium"和"High"。 **可选**
 recommendedActions | String | TI 指示器警报建议操作。 **可选**
 rbacGroupNames | String | 将应用指示器的 RBAC 组名称的逗号分隔列表。 **可选**
 “类别” | String | 警报的类别。 示例包括：执行和凭据访问。 **可选**
-mitretechniques| String | MITRE 技术代码/id (逗号分隔) 。 有关详细信息，请参阅企业 [策略](https://attack.mitre.org/tactics/enterprise/)。 **可选** 建议在 MITRE 技术时在类别中添加值。
+mitretechniques| String | MITRE 技术代码/id (逗号分隔) 。 有关详细信息，请参阅策略[Enterprise策略](https://attack.mitre.org/tactics/enterprise/)。 **可选** 建议在 MITRE 技术时在类别中添加值。
 
 有关详细信息，请参阅 [Microsoft Defender for Endpoint 警报类别现在与 MITRE ATT&CK！](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/microsoft-defender-atp-alert-categories-are-now-aligned-with/ba-p/732748)一致。
 
@@ -81,5 +81,5 @@ mitretechniques| String | MITRE 技术代码/id (逗号分隔) 。 有关详细�
 ## <a name="see-also"></a>另请参阅
 - [创建指示器](manage-indicators.md)
 - [创建文件指示器](indicator-file.md)
-- [为 IP 和 URL/域创建指示器](indicator-ip-domain.md)
+- [创建 IP 和 URL/域指示器](indicator-ip-domain.md)
 - [创建基于证书的指示器](indicator-certificates.md)

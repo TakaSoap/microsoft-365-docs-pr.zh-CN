@@ -1,5 +1,5 @@
 ---
-title: 使用基于角色的访问控制授予对 Microsoft Defender 安全中心的精细访问权限
+title: 使用基于角色的访问控制向用户授予精细Microsoft Defender 安全中心
 description: 在安全操作内创建角色和组以授予对门户的访问权限。
 keywords: rbac， role， based， access， control， groups， control， tier， aad
 search.product: eADQiWindows 10XVcnh
@@ -51,24 +51,24 @@ Defender for Endpoint RBAC 旨在支持你基于层或基于角色的选择模�
   - 创建自定义角色并控制他们可以通过粒度访问的 Defender for Endpoint 功能。
  
 - **控制谁可以看到有关特定设备组的信息**
-  - [按特定条件](machine-groups.md) （如名称、标记、域和其他）创建设备组，然后使用特定的 Azure Active Directory (Azure AD) 访问它们。
+  - [按特定条件](machine-groups.md)（如名称、标记、域和其他条件）创建设备组，然后使用特定的 Azure AD Azure Active Directory (向) 授予角色访问权限。
 
 若要实现基于角色的访问，你需要定义管理员角色、分配相应的权限，以及分配分配给这些角色的 Azure AD 用户组。
 
 
-### <a name="before-you-begin"></a>准备工作
+### <a name="before-you-begin"></a>开始之前
 在使用 RBAC 之前，了解可以授予权限的角色以及启用 RBAC 的后果非常重要。
 
 
 > [!WARNING]
 > 在启用该功能之前，你必须在 Azure AD 中拥有全局管理员角色或安全管理员角色，并且你的 Azure AD 组已准备好降低被锁定在门户外的风险，这一点很重要。 
 
-首次登录 Microsoft Defender 安全中心时，你被授予完全访问权限或只读访问权限。 完全访问权限授予在 Azure AD 中具有安全管理员或全局管理员角色的用户。 只读访问权限授予在 Azure AD 中具有安全读者角色的用户。 
+首次登录时Microsoft Defender 安全中心，将被授予完全访问权限或只读访问权限。 完全访问权限授予在 Azure AD 中具有安全管理员或全局管理员角色的用户。 只读访问权限授予在 Azure AD 中具有安全读者角色的用户。 
 
 具有 Defender for Endpoint 全局管理员角色的用户可以不受限制地访问所有设备，无论其设备组关联和 Azure AD 用户组分配如何
 
 > [!WARNING]
-> 最初，只有具有 Azure AD 全局管理员或安全管理员权限的用户才能在 Microsoft Defender 安全中心创建和分配角色，因此，在 Azure AD 中准备好正确的组非常重要。
+> 最初，只有具有 Azure AD 全局管理员或安全管理员权限的用户才能在 Microsoft Defender 安全中心 中创建和分配角色，因此在 Azure AD 中准备好正确的组非常重要。
 >
 > **启用基于角色的访问控制将导致具有只读权限的用户 (例如，分配给 Azure AD 安全读者角色) 的用户将失去访问权限，直到他们被分配到角色。** 
 >

@@ -268,5 +268,5 @@ Set-ComplianceSecurityFilter -FilterName OttawaUsersFilter -Users $filterusers.u
 
 - **允许用户搜索特定服务中所有内容位置是否也会阻止他们搜索其他服务中的内容位置？** 否。 如前所述，您必须创建搜索权限筛选器以明确阻止用户搜索特定服务 (例如阻止用户搜索任何 Exchange 邮箱或任何 SharePoint 网站) 。 换句话说，创建允许用户搜索组织中所有SharePoint的搜索权限筛选器不会阻止该用户搜索邮箱。 例如，若要SharePoint管理员仅搜索SharePoint网站，必须创建一个筛选器来阻止他们搜索邮箱。 同样，Exchange管理员只能搜索邮箱，必须创建一个筛选器来阻止他们搜索网站。
 
-- **搜索权限筛选器是否计入搜索查询字符限制？** 对。 搜索权限筛选器根据搜索查询的字符限制计数。 有关详细信息，请参阅 Advanced eDiscovery 中的[限制](limits-ediscovery20.md)。
+- **搜索权限筛选器是否计入搜索查询字符限制？** 是的。 搜索权限筛选器根据搜索查询的字符限制计数。 有关详细信息，请参阅 Advanced eDiscovery 中的[限制](limits-ediscovery20.md)。
 

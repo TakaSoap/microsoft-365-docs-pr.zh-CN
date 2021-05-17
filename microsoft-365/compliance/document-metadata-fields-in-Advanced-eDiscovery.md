@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: 本文定义审阅集内文档的元数据字段，在 Advanced eDiscovery 中Microsoft 365。
-ms.openlocfilehash: 77df40f4922718a7ed30431b0c1bd91f5c075425
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: e801f60b69c796dfcd2cb6d83cc4fbc721dc7658
+ms.sourcegitcommit: 5a1cb7d95070eef47d401a4693cc137a90550a5e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244596"
+ms.locfileid: "52259459"
 ---
 # <a name="document-metadata-fields-in-advanced-ediscovery"></a>高级电子数据展示中的文档元数据字段
 
@@ -38,7 +38,7 @@ ms.locfileid: "52244596"
 > [!NOTE]
 > 审阅 **集搜索** 中的关键字 [字段使用](./review-set-search.md) 关键字查询语言 (KQL) 。 "可搜索字段名称"列中列出的字段可在审阅集搜索的 **"** 关键字"字段中使用，以形成复杂的查询，而无需使用查询生成器。 有关 KQL 详细信息，请参阅 [关键字查询语言语法参考](/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)。
 
-|**字段名** 和 **显示字段名**|**可搜索字段名称**|**导出的字段名称**|**描述**|
+|**字段名** 和 **显示字段名**|**可搜索字段名称**|**导出的字段名称**|**说明**|
 |:-----|:-----|:-----|:-----|
 |附件内容 ID|AttachmentContentId||项目的附件内容 ID。|
 |律师客户特权分数|AttorneyClientPrivilegeScore||律师-客户特权模型内容分数。|
@@ -119,7 +119,7 @@ ms.locfileid: "52244596"
 |会议结束日期|MeetingEndDate|Meeting_end_date|会议的会议结束日期。|
 |会议开始日期|MeetingStartDate|Meeting_start_date|会议的会议开始日期。|
 |邮件类型|MessageKind|Message_kind|要搜索的邮件类型。 可能的值 **<br /> <br /> <br /> ：contacts docs <br /> email <br /> externaldata <br /> faxs im meetings <br /> <br /> <br /> <br /> microsoftteams** (returns items from chats， meetings， and calls in Microsoft Teams) **<br /> notes <br /> posts <br /> rssfeeds <br /> tasks <br /> voicemail**| 
-|ModernAttachment_ParentId||ModernAttachment_ParentId||
+|新式附件父 ID||ModernAttachment_ParentId|文档的父级的不可变 ID。|
 |本机扩展|NativeExtension|Native_extension|项的本机扩展。|
 |本机文件名|NativeFileName|Native_file_name|项的本机文件名。|
 |NativeMD5||Native_MD5|MD5 哈希 (文件流) 128 位哈希值。|
@@ -164,6 +164,7 @@ ms.locfileid: "52244596"
 |标题|标题|Doc_title|文档元数据中的标题。|
 |到|到|Email_to|邮件类型的收件人字段。 Format 为 **DisplayName \<SmtpAddress>**|
 |在电子邮件集内是唯一的|UniqueInEmailSet||**假** 如果电子邮件集的附件副本。|
+|版本组 ID||Version_Group_Id|将同一文档的不同版本分组在一起。|
 |已修正|WasRemediated|Was_Remediated|**如此** 如果该项已修正，否则 **为 假**。|
 |Word count|WordCount|Word_count|项中的字数。|
 |||||

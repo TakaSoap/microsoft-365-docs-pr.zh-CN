@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 Defender 事件 API 和事件资源类型
+title: Microsoft 365Defender 事件 API 和事件资源类型
 description: 了解 Microsoft 365 Defender 中的事件资源类型的方法和属性
 keywords: 事件， 事件， api
 search.product: eADQiWindows 10XVcnh
@@ -27,7 +27,7 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 03/23/2021
 ms.locfileid: "51054610"
 ---
-# <a name="microsoft-365-defender-incidents-api-and-the-incident-resource-type"></a>Microsoft 365 Defender 事件 API 和事件资源类型
+# <a name="microsoft-365-defender-incidents-api-and-the-incident-resource-type"></a>Microsoft 365Defender 事件 API 和事件资源类型
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -38,7 +38,7 @@ ms.locfileid: "51054610"
 > [!IMPORTANT]
 > 某些信息与预发布的产品有关，在商业发布之前可能有重大修改。 Microsoft 对此处所提供的信息不作任何明示或默示的保证。
 
-[事件](incidents-overview.md)是帮助描述攻击的相关警报的集合。 来自组织中不同实体的事件由 Microsoft 365 Defender 自动聚合。 可以使用事件 API 以编程方式访问组织的事件和相关警报。
+[事件](incidents-overview.md)是帮助描述攻击的相关警报的集合。 来自组织中不同实体的事件由 Defender 自动Microsoft 365聚合。 可以使用事件 API 以编程方式访问组织的事件和相关警报。
 
 ## <a name="quotas-and-resource-allocation"></a>配额和资源分配
 
@@ -46,7 +46,7 @@ ms.locfileid: "51054610"
 
 HTTP 响应代码指示你已按发送的请求数或按分配的运行时间 `429` 达到配额。 响应正文将包括重置达到的配额之前的时间。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 事件 API 需要针对其每个方法的不同类型的权限。 有关所需权限详细信息，请参阅相应方法的文章。
 
@@ -80,7 +80,7 @@ tags | 字符串列表 | 事件标记列表。
 
 ## <a name="related-articles"></a>相关文章
 
-- [Microsoft 365 Defender API 概述](api-overview.md)
+- [Microsoft 365Defender API 概述](api-overview.md)
 - [事件概述](incidents-overview.md)
 - [列出事件 API](api-list-incidents.md)
 - [更新事件 API](api-update-incidents.md)

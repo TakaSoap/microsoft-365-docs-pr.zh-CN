@@ -70,7 +70,7 @@ Microsoft Defender for Endpoint 计算机时间线是高级搜寻的替代方法
 
 ### <a name="querying-which-rules-are-active"></a>查询哪些规则处于活动状态
 确定 ASR 规则是否已启用的最简单方法之一是，通过 PowerShell cmdlet Get-MpPreference。
-示例如下：
+下面是一个示例：
 
 :::image type="content" source="images/getmpreferencescriptnew.png" alt-text="get mppreference 脚本":::
 

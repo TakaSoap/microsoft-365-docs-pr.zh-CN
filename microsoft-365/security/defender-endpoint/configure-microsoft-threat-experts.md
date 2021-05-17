@@ -36,34 +36,34 @@ ms.locfileid: "51166097"
 
 >想要体验适用于终结点的 Defender？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
-## <a name="before-you-begin"></a>准备工作 
+## <a name="before-you-begin"></a>开始之前 
 > [!NOTE]
-> 在适用于 Microsoft 威胁专家 - 目标攻击通知托管威胁搜寻服务之前，与 Microsoft 技术服务提供商和帐户团队讨论资格要求。
+> 在适用于目标攻击通知托管威胁搜寻服务之前，与 Microsoft 技术服务提供商和帐户团队Microsoft 威胁专家资格要求。
 
 确保在你的环境中部署了 Defender for Endpoint 并注册了设备，而不只是在实验室设置上。
 
-如果你是适用于终结点的 Defender 客户，你需要申请 **Microsoft 威胁** 专家 - 目标攻击通知，获取特殊的见解和分析，以帮助识别最重要的威胁，以便你可以快速响应它们。 联系你的客户团队或 Microsoft 代表，订阅 **Microsoft 威胁** 专家 - 专家按需咨询我们的威胁专家，了解相关检测和对手。
+如果你是适用于终结点的 Defender 客户，你需要申请 **Microsoft 威胁专家 -** 目标攻击通知，获取特殊的见解和分析，以帮助识别最重要的威胁，以便你可以快速响应它们。 联系你的客户团队或 Microsoft 代表，订阅 Microsoft 威胁专家 **-** 专家按需咨询我们的威胁专家，了解相关检测和对手。
 
 ## <a name="apply-for-microsoft-threat-experts---targeted-attack-notifications-service"></a>适用于 Microsoft 威胁专家 - 目标攻击通知服务 
-如果你已经是适用于终结点的 Defender 客户，可以通过 Microsoft Defender 安全中心申请。 
+如果你已经是适用于终结点的 Defender 客户，可以通过以下渠道Microsoft Defender 安全中心。 
 
-1. 在导航窗格中，转到"设置">"常规> Microsoft 威胁专家 - >攻击通知"中的 **"高级功能"。**
+1. 从导航窗格中，转到"常规设置 >高级> - > Microsoft 威胁专家 **攻击通知"。**
 
 2. 单击“**应用**”。
 
-    ![Microsoft 威胁专家设置的图像](images/mte-collaboratewithmte.png)
+    ![图像Microsoft 威胁专家设置](images/mte-collaboratewithmte.png)
 
 3. 输入你的姓名和电子邮件地址，以便 Microsoft 可以在你的应用程序上返回给你。
 
-    ![Microsoft 威胁专家应用程序的图像](images/mte-apply.png)
+    ![应用程序Microsoft 威胁专家的图像](images/mte-apply.png)
 
 4. 阅读 [隐私声明，](https://privacy.microsoft.com/en-us/privacystatement)**完成后单击提交**。 应用程序获得批准后，您将收到欢迎电子邮件。
 
-    ![Microsoft 威胁专家应用程序确认图像](images/mte-applicationconfirmation.png)
+    ![应用程序Microsoft 威胁专家的图像](images/mte-applicationconfirmation.png)
 
 接受后，你将收到欢迎电子邮件，并且你将看到"应用"按钮更改为"打开"的切换。 如果你希望将自己从目标攻击通知服务中退出，请滑动切换"关闭"，然后单击页面底部的"保存首选项"。 
 
-## <a name="where-youll-see-the-targeted-attack-notifications-from-microsoft-threat-experts"></a>你将在哪里看到来自 Microsoft 威胁专家的定向攻击通知 
+## <a name="where-youll-see-the-targeted-attack-notifications-from-microsoft-threat-experts"></a>你将在什么位置看到来自你的目标攻击Microsoft 威胁专家 
 可以通过以下媒体从 Microsoft 威胁专家接收目标攻击通知：  
 - 终结点门户的 Defender **事件** 页面 
 - Defender for Endpoint 门户 **的警报** 仪表板  
@@ -77,17 +77,17 @@ ms.locfileid: "51166097"
 可以创建规则来发送通知收件人的电子邮件通知。 有关详细信息  [，请参阅配置警报](configure-email-notifications.md) 通知以创建、编辑、删除或解决电子邮件通知问题。
 
 ## <a name="view-the-targeted-attack-notification"></a>查看目标攻击通知  
-在将系统配置为接收电子邮件通知后，你将开始在电子邮件中收到来自 Microsoft 威胁专家的定向攻击通知。  
+在将系统配置为接收电子邮件通知后，Microsoft 威胁专家电子邮件中收到目标攻击通知。  
 
 1. 单击电子邮件中的链接，转到使用威胁专家标记的仪表板中的相应 **警报上下文**。 
 
 2. 从仪表板中，选择与从电子邮件获得相同的警报主题，以查看详细信息。  
 
-## <a name="subscribe-to-microsoft-threat-experts---experts-on-demand"></a>订阅 Microsoft 威胁专家 - 专家按需
-这作为订阅服务提供。 如果你已经是适用于 Endpoint 的 Defender 客户，你可以联系你的 Microsoft 代表，订阅 Microsoft 威胁专家 - 专家按需订阅。 
+## <a name="subscribe-to-microsoft-threat-experts---experts-on-demand"></a>订阅Microsoft 威胁专家 - 专家按需
+这作为订阅服务提供。 如果你已经是 Endpoint 的 Defender 客户，可以联系 Microsoft 代表，订阅 Microsoft 威胁专家 - 专家按需。 
 
 ## <a name="consult-a-microsoft-threat-expert-about-suspicious-cybersecurity-activities-in-your-organization"></a>咨询 Microsoft 威胁专家，了解组织中可疑的网络安全活动 
-你可以与可直接在 Microsoft Defender 安全中心内参与的 Microsoft 威胁专家合作，以及时准确地做出响应。 专家提供见解，以更好地了解复杂的威胁、你收到的定向攻击通知，或者如果你需要有关警报、可能受到威胁的设备或你在门户仪表板上看到的威胁智能上下文详细信息。 
+你可以与可以直接Microsoft 威胁专家内部参与的Microsoft Defender 安全中心进行及时准确的响应。 专家提供见解，以更好地了解复杂的威胁、你收到的定向攻击通知，或者如果你需要有关警报、可能受到威胁的设备或你在门户仪表板上看到的威胁智能上下文详细信息。 
 
 > [!NOTE]
 > - 目前不支持与组织的自定义威胁情报数据相关的警报查询。 有关详细信息，请咨询安全运营或事件响应团队。
@@ -97,21 +97,21 @@ ms.locfileid: "51166097"
 
 2. 从右上角的菜单中，单击" **？"** 图标。 然后，选择 **"咨询威胁专家"。** 
 
-    ![来自菜单的 Microsoft 威胁专家按需专家的图像](images/mte-eod-menu.png)
+    ![菜单中Microsoft 威胁专家专家按需提供的图像](images/mte-eod-menu.png)
 
     将打开一个飞出屏幕。 以下屏幕显示你何时使用试用版订阅。
 
-    ![Microsoft 威胁专家按需屏幕的图像](images/mte-eod.png)
+    ![按需Microsoft 威胁专家专家屏幕的图像](images/mte-eod.png)
 
-    以下屏幕显示你何时使用完整的 Microsoft 威胁专家 - 专家按需订阅。
+    以下屏幕显示你何时使用完整Microsoft 威胁专家专家按需订阅。
 
-    ![Microsoft 威胁专家按需专家完整订阅屏幕的图像](images/mte-eod-fullsubscription.png)
+    ![按需Microsoft 威胁专家专家完整订阅屏幕的图像](images/mte-eod-fullsubscription.png)
 
     " **查询"** 主题字段预填充了指向调查请求的相关页面的链接。 例如，指向发出请求时所访问的事件、警报或设备详细信息页面的链接。
 
-3.  In the next field， provide enough information to give the Microsoft Threat Experts enough context to start the investigation.
+3.  In the next field， provide enough information to give the Microsoft 威胁专家 enough context to start the investigation.
   
-4. 输入要用于与 Microsoft 威胁专家对应的电子邮件地址。
+4. 输入要用于与电子邮件地址对应的电子邮件地址Microsoft 威胁专家。
 
 > [!NOTE]
 > 如果要通过 Microsoft 服务中心跟踪专家按需案例的状态，请联系你的技术客户经理。 
@@ -122,7 +122,7 @@ ms.locfileid: "51166097"
 
 
    
-## <a name="sample-investigation-topics-that-you-can-consult-with-microsoft-threat-experts---experts-on-demand"></a>可以咨询 Microsoft 威胁专家 - 按需专家的示例调查主题 
+## <a name="sample-investigation-topics-that-you-can-consult-with-microsoft-threat-experts---experts-on-demand"></a>可以咨询的样本调查主题-Microsoft 威胁专家 - 专家按需 
 
 **警报信息**
 - 我们会看到一种针对陆地外活动二进制文件的新警报类型：[AlertID]。 能否告诉我们有关此警报以及我们可以如何进一步调查的更多信息？
@@ -138,18 +138,18 @@ ms.locfileid: "51166097"
 - 我们检测到一封钓鱼电子邮件，该电子邮件向用户传递了恶意 Word 文档。 恶意 Word 文档引发了一系列可疑事件，触发了针对 [恶意软件名称] 恶意软件的多个 Microsoft Defender 警报。 你是否有关于此恶意软件的信息？ 如果是，可以向我发送链接吗？
 - 我最近看到[社交媒体参考，例如 Twitter 或博客]文章，关于面向我的行业的威胁。 你可以帮助我了解针对此威胁参与者的 Defender 提供什么保护？ 
 
-**Microsoft 威胁专家的警报通信** 
+**Microsoft 威胁专家警报通信** 
 - 事件响应团队能否帮助我们处理我们得到的目标攻击通知？
-- 我收到了来自 Microsoft 威胁专家的此目标攻击通知。 我们还没有自己的事件响应团队。 现在，我们可以做什么，如何包含事件？
-- 我收到了来自 Microsoft 威胁专家的定向攻击通知。 您可以向我们提供哪些数据，我们可以将这些数据传递给事件响应团队？
+- 我收到了来自该邮件的此目标Microsoft 威胁专家。 我们还没有自己的事件响应团队。 现在，我们可以做什么，如何包含事件？
+- 我收到了来自用户的攻击Microsoft 威胁专家。 您可以向我们提供哪些数据，我们可以将这些数据传递给事件响应团队？
 
   >[!NOTE]
-  >Microsoft 威胁专家是一项托管网络安全搜寻服务，而不是事件响应服务。 但是，专家可以在必要时将调查无缝转换到 Microsoft 网络安全解决方案组 (CSG) 的检测和响应团队 () 服务。 还可以选择与自己的事件响应团队合作，以解决需要事件响应的问题。 
+  >Microsoft 威胁专家托管网络安全搜寻服务，而不是事件响应服务。 但是，专家可以在必要时将调查无缝转换到 Microsoft 网络安全解决方案组 (CSG) 的检测和响应团队 () 服务。 还可以选择与自己的事件响应团队合作，以解决需要事件响应的问题。 
 
-## <a name="scenario"></a>方案
+## <a name="scenario"></a>应用场景
 
 ### <a name="receive-a-progress-report-about-your-managed-hunting-inquiry"></a>接收有关托管搜寻查询的进度报告 
-Microsoft 威胁专家的响应因你的查询而异。 他们将在两天内通过电子邮件向你发送关于咨询威胁专家查询的进度报告，以传达以下类别的调查状态： 
+来自Microsoft 威胁专家响应因你的查询而异。 他们将在两天内通过电子邮件向你发送关于咨询威胁专家查询的进度报告，以传达以下类别的调查状态： 
 - 需要更多信息才能继续执行调查 
 - 需要一个或多个文件示例来确定技术上下文 
 - 调查需要更多时间   

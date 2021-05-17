@@ -1,6 +1,6 @@
 ---
-title: 访问 Microsoft Defender 安全中心 MSSP 客户门户
-description: 访问 Microsoft Defender 安全中心 MSSP 客户门户
+title: 访问 MSSP Microsoft Defender 安全中心门户
+description: 访问 MSSP Microsoft Defender 安全中心门户
 keywords: 托管安全服务提供程序， mssp， 配置， 集成
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -23,7 +23,7 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 03/24/2021
 ms.locfileid: "51164853"
 ---
-# <a name="access-the-microsoft-defender-security-center-mssp-customer-portal"></a>访问 Microsoft Defender 安全中心 MSSP 客户门户
+# <a name="access-the-microsoft-defender-security-center-mssp-customer-portal"></a>访问 MSSP Microsoft Defender 安全中心门户
 
 **适用于：**
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
@@ -44,7 +44,7 @@ ms.locfileid: "51164853"
 >[!NOTE] 
 >这些步骤集面向 MSSP。 
 
-默认情况下，MSSP 客户通过以下 URL 访问其 Microsoft Defender 安全中心租户 `https://securitycenter.windows.com` ：。
+默认情况下，MSSP 客户通过以下MICROSOFT DEFENDER 安全中心访问其租户 `https://securitycenter.windows.com` ：。
  
 
 但是，MSSP 将需要使用以下格式的特定于租户的 URL：  `https://securitycenter.windows.com?tid=customer_tenant_id` 访问 MSSP 客户门户。 
@@ -58,12 +58,12 @@ ms.locfileid: "51164853"
 
 2. 将目录切换到 MSSP 客户的租户。
 
-3.  选择 **"Azure Active Directory >属性"。** 你将在"目录 ID"字段中找到租户 ID。 
+3.  选择 **Azure Active Directory >属性 "。** 你将在"目录 ID"字段中找到租户 ID。 
 
 4. 通过替换以下 URL 中的值访问 MSSP `customer_tenant_id` 客户门户 `https://securitycenter.windows.com?tid=customer_tenant_id` ：。
 
 
 ## <a name="related-topics"></a>相关主题
-- [授予对门户的 MSSP 访问权限](grant-mssp-access.md)
+- [授予 MSSP 对门户的访问权限](grant-mssp-access.md)
 - [配置警报通知](configure-mssp-notifications.md)
-- [从客户租户提取警报](fetch-alerts-mssp.md)
+- [从客户租户获取警报](fetch-alerts-mssp.md)

@@ -1,7 +1,7 @@
 ---
 title: 适用于终结点资源的有用 Microsoft Defender
 description: 访问有用的资源，例如指向博客的链接和与 Microsoft Defender for Endpoint 相关的其他资源
-keywords: Microsoft Defender 安全中心， 产品简介， 简短， 功能， 许可
+keywords: Microsoft Defender 安全中心、产品简介、简短、功能、许可
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -61,4 +61,4 @@ ms.locfileid: "51165437"
 
 - [自动化如何为安全团队带来价值](https://techcommunity.microsoft.com/t5/Microsoft-Defender-ATP/How-automation-brings-value-to-your-security-teams/ba-p/729297)
 
-- [在 Microsoft Defender for Endpoint 中解决误报/负数](defender-endpoint-false-positives-negatives.md)
+- [解决 Microsoft Defender for Endpoint 中的误报/漏报](defender-endpoint-false-positives-negatives.md)

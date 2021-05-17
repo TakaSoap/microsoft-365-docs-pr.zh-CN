@@ -23,7 +23,7 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 03/23/2021
 ms.locfileid: "51055913"
 ---
-# <a name="understand-threat-intelligence-concepts"></a>了解威胁情报概念
+# <a name="understand-threat-intelligence-concepts"></a>了解威胁智能概念
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -64,10 +64,10 @@ IIC 与警报定义具有多对一关系，因此警报定义可以具有许多�
 主题 | 说明
 :---|:---
 [将检测拉取到 SIEM 工具](configure-siem.md)| 了解拉取检测的不同方法。
-[在 Microsoft Defender for Endpoint 中启用 SIEM 集成](enable-siem-integration.md)| 了解如何在门户的"设置"页中启用SIEM 集成功能，以便可以使用和生成配置支持的 SIEM 工具所需的信息。
+[在 Microsoft Defender for Endpoint 中启用 SIEM 集成](enable-siem-integration.md)| 了解如何在门户的 设置 页面中启用 SIEM 集成功能，以便可以使用和生成配置支持的 SIEM 工具所需的信息。 
 [配置 Splunk 以拉取 Microsoft Defender 进行终结点检测](configure-siem.md)| 了解如何安装 REST API 模块化输入应用和其他配置设置，以使 Splunk 能够拉取 Microsoft Defender for Endpoint 检测。
 [配置 HP ArcSight 以拉取 Microsoft Defender 进行终结点检测](configure-arcsight.md)| 了解如何安装 HP ArcSight REST FlexConnector 程序包以及配置 ArcSight 以拉取 Microsoft Defender 进行终结点检测所需的文件。
-[适用于终结点检测字段的 Microsoft Defender](api-portal-mapping.md) | 了解哪些数据字段作为警报 API 的一部分公开，以及如何映射到 Microsoft Defender 安全中心。
+[适用于终结点检测字段的 Microsoft Defender](api-portal-mapping.md) | 了解哪些数据字段作为警报 API 的一部分公开，以及如何映射到Microsoft Defender 安全中心。
 [使用 REST API 拉取 Microsoft Defender 的终结点检测](pull-alerts-using-rest-api.md) | 使用客户端凭据 OAuth 2.0 流，使用 REST API 从 Microsoft Defender for Endpoint 拉取检测。
 [SIEM 工具集成问题疑难解答](troubleshoot-siem.md) | 解决在使用 SIEM 集成功能时可能遇到的问题。
 

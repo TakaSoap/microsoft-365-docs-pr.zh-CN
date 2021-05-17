@@ -1,6 +1,6 @@
 ---
-title: 定义 Microsoft Defender 防病毒如何更新移动设备
-description: 使用 Microsoft Defender 防病毒保护更新管理移动设备（如笔记本电脑）的更新方式。
+title: 定义移动设备更新方法Microsoft Defender 防病毒
+description: 管理如何使用移动设备（如笔记本电脑）更新Microsoft Defender 防病毒保护更新。
 keywords: 更新， 保护， 计划更新， 电池， 移动设备， 笔记本电脑， 笔记本， 选择加入， Microsoft 更新， wsus， 替代
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -45,7 +45,7 @@ ms.locfileid: "52269536"
 
 ## <a name="opt-in-to-microsoft-update-on-mobile-computers-without-a-wsus-connection"></a>选择在没有 WSUS 连接的情况下在移动计算机上加入 Microsoft 更新
 
-当运行 Microsoft Defender 防病毒的移动设备未连接到企业网络或没有 WSUS 连接时，可以使用 Microsoft 更新使这些设备的安全智能保持最新。 
+当运行 Microsoft Defender 防病毒 的移动设备未连接到企业网络或没有 WSUS 连接时，可以使用 Microsoft 更新使安全智能保持最新。 
 
 这意味着，即使将 WSUS 设置为覆盖 Microsoft 更新 (Microsoft 更新) 保护更新也可以传递到设备。
 
@@ -53,7 +53,7 @@ ms.locfileid: "52269536"
 
 - 使用组策略更改设置。
 - 使用 VBScript 创建脚本，然后在网络的每台计算机中运行该脚本。
-- 通过"设置"菜单手动选择加入网络 **的每** 台计算机。
+- 通过"开始"菜单手动选择加入 **设置计算机。**
 
 ### <a name="use-group-policy-to-opt-in-to-microsoft-update"></a>使用组策略选择加入 Microsoft 更新
 
@@ -63,7 +63,7 @@ ms.locfileid: "52269536"
 
 3. 选择 **"策略****"，然后选择"管理模板"。**
 
-4. 将树展开到 **Windows 组件** Microsoft Defender  >  **防病毒**  >  **签名更新**。
+4. 展开树以Windows **签名Microsoft Defender 防病毒**  >    >  **组件**。
 
 5. 将 **"允许安全智能更新从 Microsoft 更新"设置为****"已启用"，** 然后选择"确定 **"。**
 
@@ -76,15 +76,15 @@ ms.locfileid: "52269536"
 
 ### <a name="manually-opt-in-to-microsoft-update"></a>手动选择加入 Microsoft 更新
 
-1. 在 **"更新****"&** 要选择加入的计算机的"更新和安全设置"中打开 Windows 更新。
+1. 在 **Windows选择** 加入 **&** 更新"中打开"更新""安全设置"。
 
 2. 选择 **"高级选项** "。
 
-3. 选中"更新 Windows **时为我提供其他 Microsoft** 产品的更新"复选框。
+3. 选中"更新 Microsoft 产品 **时为** 我提供其他 Microsoft 产品的更新Windows。
 
 ## <a name="prevent-security-intelligence-updates-when-running-on-battery-power"></a>使用电池电源运行时阻止安全智能更新
 
-你可以将 Microsoft Defender 防病毒配置为仅在电脑连接到有线电源时下载保护更新。 
+你可以将Microsoft Defender 防病毒配置为仅在电脑连接到有线电源时下载保护更新。 
 
 ### <a name="use-group-policy-to-prevent-security-intelligence-updates-on-battery-power"></a>使用组策略阻止使用电池电源进行安全智能更新
 
@@ -94,11 +94,11 @@ ms.locfileid: "52269536"
 
 3.  选择 **"策略****"，然后选择"管理模板"。**
 
-4.  将树展开到 **Windows 组件** Microsoft Defender  >  **防病毒**  >  **签名更新**，然后将使用电池电源运行时允许安全智能更新设置为 **已禁用**。 然后，选择“**确定**”。 
+4.  展开树以Windows **签名** Microsoft Defender 防病毒的组件，然后将使用电池电源运行时允许安全智能更新设置为  >    >  **已禁用**。  然后，选择“**确定**”。 
 
 此操作可防止在电脑使用电池电源时下载保护更新。
 
 ## <a name="related-articles"></a>相关文章
 
-- [管理 Microsoft Defender 防病毒更新和应用基线](manage-updates-baselines-microsoft-defender-antivirus.md)
-- [在 Windows 10 中更新和管理 Microsoft Defender 防病毒](deploy-manage-report-microsoft-defender-antivirus.md)
+- [管理Microsoft Defender 防病毒更新并应用基线](manage-updates-baselines-microsoft-defender-antivirus.md)
+- [更新和管理Microsoft Defender 防病毒中的Windows 10](deploy-manage-report-microsoft-defender-antivirus.md)

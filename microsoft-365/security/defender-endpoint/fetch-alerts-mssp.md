@@ -48,15 +48,15 @@ ms.locfileid: "51056535"
 
 步骤 2：从客户的租户获取访问和刷新令牌
  
-步骤 3：允许 Microsoft Defender 安全中心上的应用程序
+步骤 3：允许应用程序Microsoft Defender 安全中心
  
-### <a name="step-1-create-an-application-in-azure-active-directory-azure-ad"></a>步骤 1：在 Azure Active Directory (Azure AD) 
+### <a name="step-1-create-an-application-in-azure-active-directory-azure-ad"></a>步骤 1：在 Azure AD Azure Active Directory (创建) 
  
 你需要创建一个应用程序，并授予它从客户的适用于终结点租户的 Microsoft Defender 获取警报的权限。
 
 1. 登录到 Azure [AD 门户](https://aad.portal.azure.com/)。
 
-2. 选择 **"Azure Active Directory**  >  **应用注册"。**
+2. 选择 **Azure Active Directory**  >  **应用注册"。**
  
 3. 单击"**新建注册"。**
 
@@ -85,7 +85,7 @@ ms.locfileid: "51056535"
  
 
 ### <a name="step-2-get-access-and-refresh-tokens-from-your-customers-tenant"></a>步骤 2：从客户的租户获取访问和刷新令牌
-本部分指导你如何使用 PowerShell 脚本从客户的租户获取令牌。 此脚本使用上一步中的应用程序，使用 OAuth 授权代码流获取访问令牌和刷新令牌。
+本部分指导你如何使用 PowerShell 脚本从客户的租户获取令牌。 此脚本使用上一步中的应用程序，使用 OAuth 授权代码和刷新令牌Flow。
 
 提供凭据后，你需要同意应用程序，以便应用程序在客户的租户中预配。
 
@@ -159,14 +159,14 @@ ms.locfileid: "51056535"
 
 8. 在 PowerShell 窗口中，您将收到访问令牌和刷新令牌。 保存刷新令牌以配置 SIEM 连接器。 
  
-### <a name="step-3-allow-your-application-on-microsoft-defender-security-center"></a>步骤 3：允许 Microsoft Defender 安全中心上的应用程序
-你需要允许你在 Microsoft Defender 安全中心中创建的应用程序。
+### <a name="step-3-allow-your-application-on-microsoft-defender-security-center"></a>步骤 3：允许应用程序Microsoft Defender 安全中心
+你需要允许在应用程序中创建的应用程序Microsoft Defender 安全中心。
  
 你需要具有管理门户 **系统设置权限** 才能允许应用程序。 否则，你将需要请求客户允许应用。
 
 1. 转到 `https://securitycenter.windows.com?tid=<customer_tenant_id>` (客户租户 ID \<customer_tenant_id\> 替换。
 
-2. 单击 **设置**  >  **SIEM**。 
+2. 单击 **"设置**  >  **SIEM"。** 
 
 3. 选择 **"MSSP"** 选项卡。
 
@@ -187,6 +187,6 @@ ms.locfileid: "51056535"
 
 
 ## <a name="see-also"></a>另请参阅
-- [授予对门户的 MSSP 访问权限](grant-mssp-access.md)
+- [授予 MSSP 对门户的访问权限](grant-mssp-access.md)
 - [访问 MSSP 客户门户](access-mssp-portal.md)
 - [配置警报通知](configure-mssp-notifications.md)

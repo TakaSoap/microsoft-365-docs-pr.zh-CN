@@ -1,6 +1,6 @@
 ---
 title: Microsoft 365 企业版资源规划 - 网络安全体系结构
-description: Learn how to overcome security challenges in Microsoft Enterprise architecture from Kozeta Garrett, Cybersecurity Architect at Microsoft.
+description: Learn how to overcome security challenges in Microsoft Enterprise architecture from Kozeta Garrett， Cybersecurity Architect in Microsoft.
 ms.author: bcarter
 author: brendacarter
 manager: bcarter
@@ -47,7 +47,7 @@ Microsoft 网络安全架构师 [Kozeta Garrett](https://www.linkedin.com/in/koz
 
 ## <a name="build-a-modern-identity-based-security-perimeter"></a>构建基于 (标识的新式) 安全外围
 
-接下来，采用零信任体系结构方法。 首先构建一个基于身份的新式安全外围。 设计安全体系结构，在验证每次访问尝试（无论是 On-prem 还是云）之前，都会被视为不受信任的—"从不信任，始终验证"。 此设计方法不仅提高了安全性和工作效率，还允许用户从任何位置使用任意设备类型。 Microsoft 365 中包含的复杂云控件可帮助你保护用户的身份，同时根据用户风险级别控制对有价值资源的访问。
+接下来，采用零信任体系结构方法。 首先构建一个基于身份的新式安全外围。 设计安全体系结构，在验证每次访问尝试（无论是 On-prem 还是云）之前，都会被视为不受信任的—"从不信任，始终验证"。 此设计方法不仅提高了安全性和工作效率，还允许用户从任何位置使用任意设备类型。 应用程序中包含的复杂云Microsoft 365有助于保护用户的身份，同时根据用户风险级别控制对有价值资源的访问。
 
 有关建议的配置，请参阅 [标识和设备访问配置](../security/defender-365-security/microsoft-365-policies-configurations.md)。
 
@@ -55,7 +55,7 @@ Microsoft 网络安全架构师 [Kozeta Garrett](https://www.linkedin.com/in/koz
 
 许多安全团队仍在使用为所有本地世界构建的传统安全最佳做法，包括维护"网络外围安全"并尝试"强制"本地安全工具和控件到云解决方案。 此类控件并非针对云设计，效率很低，并且阻碍现代云功能的采用。 适用于网络外围安全方法的过程和工具已证明效率低下、阻碍云功能，并且不允许利用新式和自动化安全功能。
 
-你可以将防御策略转移到云托管保护、自动调查和修正、自动笔测试、适用于 Office 365 的 Defender 以及事件分析，来克服这一障碍。 使用现代设备管理解决方案的客户在所有设备上实现了自动化管理、标准化修补、防病毒、策略实施和应用程序保护 (无论是智能手机、个人计算机、笔记本电脑还是平板电脑) 。 这样就无需使用 VPN、Microsoft System Center Configuration Manager (SCCM) 和 Active Directory 组策略。 这一点与条件访问策略相结合，提供了强大的控制和可见性，并简化了对资源的访问，无论用户从何处操作。
+你可以克服这一障碍，将防御策略转移到云托管保护、自动调查和修正、自动笔测试、Office 365 Defender 和事件分析。 使用现代设备管理解决方案的客户在所有设备上实现了自动化管理、标准化修补、防病毒、策略实施和应用程序保护 (无论是智能手机、个人计算机、笔记本电脑还是平板电脑) 。 这样就无需使用 VPN、Microsoft System Center Configuration Manager (SCCM) 和 Active Directory 组策略。 这一点与条件访问策略相结合，提供了强大的控制和可见性，并简化了对资源的访问，无论用户从何处操作。
 
 ## <a name="strive-for-best-together-security-tools"></a>努力实现"最佳协作"安全工具
 
@@ -67,7 +67,7 @@ Microsoft 网络安全架构师 [Kozeta Garrett](https://www.linkedin.com/in/koz
 
 由于我来自一个很长的网络安全背景和体验，因此我倾向于从开箱即用的最安全的配置开始，并允许组织根据运营和安全需求来放宽安全配置。 但是，这可能会以丢失功能和较差的用户体验的非常代价实现。 正如许多组织所了解的，如果安全对于用户来说太困难，他们将找到一种解决您问题的方法，包括使用非托管云服务。 我很难接受，但我已经意识到必须实现成就的功能-安全性平衡。
 
-意识到用户将采取一切操作来完成工作的组织确认，"影子 IT 影子"不值得打斗。 他们意识到，IT 员工是卷影 IT 以及使用未批准的 SaaS 应用程序工作的最大障碍。 他们转变了策略，鼓励其 (，而不是) 并专注于缓解它可能导致的风险暴露。 组织的安全团队不会坚持阻止、记录所有内容，并通过反向代理或 VPN 发送所有内容。 相反，这些安全团队会减少努力来保护重要和敏感数据，防止向错误方或恶意应用公开。 它们努力保护数据的完整性。 他们将充分利用更高级的云信息保护功能，包括加密、安全多重身份验证、自动风险和合规性以及 Cloud App Security Broker (CASB) 功能，同时允许甚至鼓励跨多个平台的受保护共享。 他们将影子 IT 转变为激发创造力、生产力和协作，从而允许其业务保持竞争优势。
+意识到用户将采取一切操作来完成工作的组织确认，"影子 IT 影子"不值得打斗。 他们意识到，IT 员工是卷影 IT 以及使用未批准的 SaaS 应用程序工作的最大障碍。 他们转变了策略，鼓励其 (，而不是) 并专注于缓解它可能导致的风险暴露。 组织的安全团队不会坚持阻止、记录所有内容，并通过反向代理或 VPN 发送所有内容。 相反，这些安全团队会减少努力来保护重要和敏感数据，防止向错误方或恶意应用公开。 它们努力保护数据的完整性。 他们将充分利用更高级的云信息保护功能，包括加密、安全多重身份验证、自动风险和合规性以及 云应用安全 Broker (CASB) 功能，同时允许甚至鼓励跨多个平台的受保护共享。 他们将影子 IT 转变为激发创造力、生产力和协作，从而允许其业务保持竞争优势。
 
 ## <a name="adopt-a-methodical-approach"></a>采用有条理的方法
 
@@ -78,7 +78,7 @@ Microsoft 网络安全架构师 [Kozeta Garrett](https://www.linkedin.com/in/koz
 |Resource   |详细信息  |
 |---------|---------|
 |[安全团队为支持在家办公需完成的首要任务](../security/top-security-tasks-for-remote-work.md)      | 如果你发现自己突然支持大多数在家工作的员工，本文可帮助你快速提高安全性。 它包括根据你的许可计划建议执行的主要任务。    |
-|[Microsoft 365 商业安全决策制定者](../security/Microsoft-365-security-for-bdm.md)    | 当你有时间来制定更全面的计划时，本文包括跨 Microsoft 365 的建议，按攻击面确定优先级。 它甚至附带了一个电子表格，可用于根据许可和区域 (，如标识、威胁防护和监视) 。  |
+|[Microsoft 365Security for Business Decisions Makers](../security/Microsoft-365-security-for-bdm.md)    | 当你有时间来制定更全面的计划时，本文包括跨多个Microsoft 365，按攻击面确定优先级的建议。 它甚至附带了一个电子表格，可用于根据许可和区域 (，如标识、威胁防护和监视) 。  |
 |[Microsoft 安全体系结构建议](/security/compass/compass)    | 如果您是安全架构师，请务必查看按学科组织的安全建议，包括标识、网络和安全操作。   |
 |[Microsoft 安全操作建议](/security/compass/security-operations-videos-and-decks)|了解有关在 SOC 环境中设置和运行安全操作中心 (Microsoft)  |
 |[CISO (研讨会) 首席信息安全官](/security/ciso-workshop/ciso-workshop)   | 如果你是云安全新人，请不要错过这一系列视频。        |

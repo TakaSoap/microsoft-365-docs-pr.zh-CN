@@ -63,7 +63,7 @@ POST https://api.securitycenter.microsoft.com/api/indicators/import
 
 名称 | 类型 | 说明
 :---|:---|:---
-Authorization | 字符串 | Bearer {token}。 **必需**。
+Authorization | String | Bearer {token}。 **必需**。
 Content-Type | string | application/json. **必需**。
 
 ## <a name="request-body"></a>请求正文
@@ -71,7 +71,7 @@ Content-Type | string | application/json. **必需**。
 
 参数 | 类型    | 说明
 :---|:---|:---
-指示器 | 列表<[指示器](ti-indicator.md)> | 指标 [列表](ti-indicator.md)。 **必需**
+指示器 | 列表<[指示器](ti-indicator.md)> | 指标 [列表](ti-indicator.md)。 **Required**
 
 
 ## <a name="response"></a>响应

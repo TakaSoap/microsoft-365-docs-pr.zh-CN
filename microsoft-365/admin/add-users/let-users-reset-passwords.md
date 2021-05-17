@@ -36,7 +36,7 @@ ms.locfileid: "52241828"
 
 作为Microsoft 365管理员，你可以让用户使用自助服务密码重置工具，这样[](https://go.microsoft.com/fwlink/p/?LinkId=522677)你就不必重置其密码。 减少工作量！
   
-## <a name="before-you-begin"></a>准备工作
+## <a name="before-you-begin"></a>开始之前
   
 - 你可以免费为云用户重置自助服务密码 **，Microsoft 365商业**、教育或非营利组织付费计划。 它不能与试用版Microsoft 365一。
 

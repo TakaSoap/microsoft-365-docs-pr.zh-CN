@@ -52,7 +52,7 @@ ms.locfileid: "51166448"
 
 权限类型 |   权限  |   权限显示名称
 :---|:---|:---
-Application |   Alerts.ReadWrite.All |  "读取和写入所有警报"
+应用程序 |   Alerts.ReadWrite.All |  "读取和写入所有警报"
 委派（工作或学校帐户） | Alert.ReadWrite | "读取和写入警报"
 
 >[!Note]
@@ -80,7 +80,7 @@ Content-Type | String | application/json. **必需**。
 
 属性 | 类型 | 说明
 :---|:---|:---
-alertIds | 列表 &lt; 字符串&gt;| 要更新的警报的 ID 列表。 **必需**
+alertIds | 列表 &lt; 字符串&gt;| 要更新的警报的 ID 列表。 **Required**
 状态 | String | 指定指定警报的更新状态。 属性值为："New"、InProgress 和"Resolved"。
 assignedTo | String | 指定警报的所有者
 classification | 字符串 | 指定指定警报的规范。 属性值为："Unknown"、"FalsePositive"和"TruePositive"。 

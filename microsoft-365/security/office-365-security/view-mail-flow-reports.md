@@ -545,7 +545,7 @@ The **Top senders and recipients** report is a pie chart showing your top email 
 - **组织管理**
 - **安全管理员**
 - **安全读者**
-- **全局读者**
+- **全局读取者**
 
 有关详细信息，请参阅 [安全与合规中心的权限](permissions-in-the-security-and-compliance-center.md)。
 

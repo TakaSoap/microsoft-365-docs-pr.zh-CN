@@ -82,7 +82,7 @@ ms.locfileid: "52245836"
 
 3. 配置一个或多个条目，如"阻止以下 URL"列表的条目 [语法中所述](safe-links.md#entry-syntax-for-the-block-the-following-urls-list)。
 
-   完成后，请单击“保存”。
+   完成后，单击“**保存**”。
 
 ### <a name="configure-the-block-the-following-urls-list-in-powershell"></a>在 PowerShell 中配置"阻止以下 URL"列表
 
@@ -131,7 +131,7 @@ ms.locfileid: "52245836"
 
    - **不允许用户** 单击保险箱指向原始 URL 的链接：验证切换是否位于右侧，以防止用户在受支持的 Office 365 应用中单击到原始阻止的 URL：打开 ![ ](../../media/scc-toggle-on.png) 。
 
-   完成后，请单击“保存”。
+   完成后，单击“**保存**”。
 
 ### <a name="configure-safe-links-protection-for-office-365-apps-in-powershell"></a>在 PowerShell 保险箱为 Office 365 应用配置链接保护
 

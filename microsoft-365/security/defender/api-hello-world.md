@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 Defender REST API 的 Hello World
+title: Hello World for Microsoft 365 Defender REST API
 description: 了解如何创建应用并使用令牌访问 Microsoft 365 Defender API
 keywords: 应用， 令牌， 访问， aad， 应用， 应用程序注册， powershell， 脚本， 全局管理员， 权限， microsoft 365 defender
 search.product: eADQiWindows 10XVcnh
@@ -27,7 +27,7 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 03/23/2021
 ms.locfileid: "51055572"
 ---
-# <a name="hello-world-for-microsoft-365-defender-rest-api"></a>Microsoft 365 Defender REST API 的 Hello World
+# <a name="hello-world-for-microsoft-365-defender-rest-api"></a>Hello World for Microsoft 365 Defender REST API
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -42,20 +42,20 @@ ms.locfileid: "51055572"
 
 完成此项目需要 5 到 10 分钟。 此时间估计包括注册应用程序，以及应用 PowerShell 示例脚本中的代码。
 
-### <a name="register-an-app-in-azure-active-directory"></a>在 Azure Active Directory 中注册应用
+### <a name="register-an-app-in-azure-active-directory"></a>在应用商店中Azure Active Directory
 
 1. 以具有全局管理员角色的用户 **登录** [Azure。](https://portal.azure.com)
 
-2. 导航到 **Azure Active Directory**  >  **应用注册**  >  **新注册**。
+2. 导航到 **Azure Active Directory**  >  **应用注册**  >  **""新注册"。**
 
-   ![Microsoft Azure 的图像和应用程序注册导航](../../media/atp-azure-new-app2.png)
+   ![应用程序注册Microsoft Azure导航的图像](../../media/atp-azure-new-app2.png)
 
 3. 在注册表单中，选择应用程序的名称，然后选择"注册 **"。** 选择重定向 URI 是可选的。 完成此示例不需要一个。
 
-4. 在应用程序页面上，选择 **"API** 权限""添加我的组织使用>  >    >   API"，键入 **"Microsoft 威胁** 防护"，然后选择 **"Microsoft 威胁防护"。** 你的应用现在可以访问 Microsoft 365 Defender。
+4. 在应用程序页面上，选择 **"API** 权限""添加我的组织使用> API"，Microsoft 威胁防护"，然后选择  >    >  **"Microsoft 威胁防护"。**  你的应用现在可以访问 Microsoft 365 Defender。
 
    > [!TIP]
-   > *Microsoft 威胁防护* 是 Microsoft 365 Defender 的以前名称，不会显示在原始列表中。 你需要开始在文本框中写入其名称，以查看其显示。
+   > *Microsoft 威胁防护* 是 Defender 的Microsoft 365名称，不会显示在原始列表中。 你需要开始在文本框中写入其名称，以查看其显示。
    ![API 权限选择的图像](../../media/apis-in-my-org-tab.PNG)
 
    - 选择 **"应用程序权限**  >  **""Incident.Read.All"，** 然后选择"**添加权限"。**
@@ -79,7 +79,7 @@ ms.locfileid: "51055572"
 
 ### <a name="get-a-token-using-the-app-and-use-the-token-to-access-the-api"></a>使用应用获取令牌，并使用令牌访问 API
 
-有关 Azure Active Directory 令牌详细信息，请参阅 [Azure AD 教程](/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds)。
+有关令牌Azure Active Directory，请参阅[Azure AD 教程](/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds)。
 
 > [!IMPORTANT]
 > 尽管此演示应用中的示例鼓励你为了测试目的粘贴密码值，但不应将密码硬编码为在生产中运行的应用程序。 第三方可以使用你的密码访问资源。 通过使用 Azure 密钥保管库，可帮助保护 [应用密钥的安全](/azure/key-vault/general/about-keys-secrets-certificates)。 有关如何保护应用的实际示例，请参阅使用 Azure Key Vault 管理 [服务器应用中的密钥](/learn/modules/manage-secrets-with-azure-key-vault/)。
@@ -172,10 +172,10 @@ Out-File -FilePath $outputJsonPath -InputObject $incidents
 
 ## <a name="related-articles"></a>相关文章
 
-- [Microsoft 365 Defender API 概述](api-overview.md)
+- [Microsoft 365Defender API 概述](api-overview.md)
 - [访问 Microsoft 365 Defender API](api-access.md)
-- [创建应用以在没有用户的情况下访问 Microsoft 365 Defender](api-create-app-web.md)
-- [创建应用以代表用户访问 Microsoft 365 Defender API](api-create-app-user-context.md)
-- [创建具有对 Microsoft 365 Defender API 的多租户合作伙伴访问权限的应用](api-partner-access.md)
+- [创建应用以在没有用户Microsoft 365 Defender](api-create-app-web.md)
+- [创建应用以Microsoft 365用户访问 Defender API](api-create-app-user-context.md)
+- [创建具有对 Defender API 的多租户合作伙伴访问权限Microsoft 365应用](api-partner-access.md)
 - [使用 Azure Key Vault 管理服务器应用中的密钥](/learn/modules/manage-secrets-with-azure-key-vault/)
 - [OAuth 2.0 用户登录和 API 访问授权](/azure/active-directory/develop/active-directory-v2-protocols-oauth-code)

@@ -56,7 +56,7 @@ ms.locfileid: "51166443"
 
 权限类型 |   权限  |   权限显示名称
 :---|:---|:---
-Application |   Alerts.ReadWrite.All |  "读取和写入所有警报"
+应用程序 |   Alerts.ReadWrite.All |  "读取和写入所有警报"
 委派（工作或学校帐户） | Alert.ReadWrite | "读取和写入警报"
 
 >[!Note]

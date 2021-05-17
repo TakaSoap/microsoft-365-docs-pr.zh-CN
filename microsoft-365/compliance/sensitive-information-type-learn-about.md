@@ -81,7 +81,7 @@ ms.locfileid: "52245644"
 
 ### <a name="checksum"></a>校验和
 
-不支持
+否
 
 ### <a name="definition"></a>定义
 

@@ -51,7 +51,7 @@ ms.locfileid: "51165161"
 |:-------|:-----|
 | [阶段 1：准备](prepare-deployment.md)| 了解部署适用于终结点的 Defender 时需要考虑的问题，例如利益干系人审批、环境注意事项、访问权限和功能采用顺序。 
 | [阶段 2：设置](production-deployment.md)|  获取有关需要执行的初始步骤的指导，以便你可以访问门户，例如验证许可、完成安装向导和网络配置。 
-| [阶段 3：载入](onboarding.md) | 了解如何使用部署圈、基于终结点类型支持的载入工具以及配置可用功能。 
+| [阶段 3：开始使用](onboarding.md) | 了解如何使用部署圈、基于终结点类型支持的载入工具以及配置可用功能。 
 
 
 完成本指南后，你将使用正确的访问权限进行设置，你的终结点将载入，并且向服务报告传感器数据，并且下一代保护和攻击面减少等功能将就位。
@@ -67,7 +67,7 @@ ms.locfileid: "51165161"
 
 
 
-## <a name="key-capabilities"></a>主要功能
+## <a name="key-capabilities"></a>关键功能
 
 虽然 Microsoft Defender for Endpoint 提供了许多功能，但此部署指南的主要目的是通过载入设备入门。 除了载入之外，本指南还让你开始使用以下功能。
 
@@ -85,9 +85,9 @@ ms.locfileid: "51165161"
 
 ### <a name="in-scope"></a>在作用域内
 
--   使用 Microsoft Endpoint Manager 和 Microsoft Endpoint Manager 将终结点载入服务并配置功能
+-   使用 Microsoft Endpoint Manager 和 Microsoft Endpoint Manager将终结点载入服务并配置功能
 
--   启用 Defender 的终结点终结点检测和响应 (EDR) 功能
+-   启用 Defender 终结点检测和响应 (EDR) 功能
 
 -   启用适用于终结点保护平台的 Defender (EPP) 功能
 
@@ -110,5 +110,5 @@ ms.locfileid: "51165161"
 ## <a name="see-also"></a>另请参阅
 - [阶段 1：准备](prepare-deployment.md)
 - [阶段 2：设置](production-deployment.md)
-- [阶段 3：载入](onboarding.md)
-- [规划部署](deployment-strategy.md)
+- [阶段 3：开始使用](onboarding.md)
+- [计划部署](deployment-strategy.md)

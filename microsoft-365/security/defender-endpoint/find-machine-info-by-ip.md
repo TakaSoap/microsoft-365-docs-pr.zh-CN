@@ -44,8 +44,8 @@ ms.locfileid: "51166467"
 
 权限类型 | 权限 | 权限显示名称
 :---|:---|:---
-Application | Machine.Read.All | "读取所有计算机配置文件"
-Application | Machine.ReadWrite.All | "读取和写入所有计算机信息"
+应用程序 | Machine.Read.All | "读取所有计算机配置文件"
+应用程序 | Machine.ReadWrite.All | "读取和写入所有计算机信息"
 
 ## <a name="http-request"></a>HTTP 请求
 ```

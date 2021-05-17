@@ -35,17 +35,17 @@ ms.locfileid: "51185799"
 
 此页面提供了详细步骤，用于解决设置 Microsoft Defender for Endpoint 服务时可能发生的问题。
 
-如果收到错误消息，Microsoft Defender 安全中心将详细说明问题，并提供相关链接。
+如果您收到错误消息，Microsoft Defender 安全中心将详细说明问题是什么，并提供相关链接。
 
 ## <a name="no-subscriptions-found"></a>未找到订阅
 
-如果在访问 Microsoft Defender 安全中心时收到"未找到订阅"消息，这意味着用于登录门户的 Azure Active Directory (Azure AD) 没有 Microsoft Defender 终结点许可证。
+如果在访问 Microsoft Defender 安全中心收到"未找到订阅"消息，这意味着用于登录门户的用户的 Azure Active Directory (Azure AD) 没有 Microsoft Defender for Endpoint 许可证。
 
 可能的原因：
 - Windows E5 和 Office E5 许可证是分开的。
 - 许可证已购买，但没有预配到此 Azure AD 实例。
     - 这可能是许可证预配问题。
-    - 可能是你无意中将许可证预配到与用于向服务进行身份验证不同的 Microsoft Azure AD。
+    - 可能是您无意中将许可证预配到与用于Microsoft Azure AD身份验证的许可证不同的位置。
 
 对于这两种情况，你应联系 Microsoft 支持部门，地址为 [适用于终结点的一](https://support.microsoft.com/getsupport?wf=0&tenant=ClassicCommercial&oaspworkflow=start_1.0.0.0&locale=en-us&supportregion=en-us&pesid=16055&ccsid=636419533611396913) 般 Microsoft Defender 或 [批量许可证支持](https://www.microsoft.com/licensing/servicecenter/Help/Contact.aspx)。
 
@@ -53,7 +53,7 @@ ms.locfileid: "51185799"
 
 ## <a name="your-subscription-has-expired"></a>你的订阅已过期
 
-如果在访问 Microsoft Defender 安全中心时收到订阅 **已过期** 消息，则你的联机服务订阅已过期。 与任何其他联机服务订阅一样，Microsoft Defender for Endpoint 订阅具有到期日期。 
+如果在访问Microsoft Defender 安全中心收到你的订阅 **已过期** 的消息，则你的联机服务订阅已过期。 与任何其他联机服务订阅一样，Microsoft Defender for Endpoint 订阅具有到期日期。 
 
 你可以选择随时续订或延长许可证。 在过期日期后访问门户时，如果选择不续订许可证，将显示你的订阅已过期的消息，你可以选择下载设备载出包。
 

@@ -42,10 +42,10 @@ ms.locfileid: "51187062"
 
 创建通知规则，以便当使用本地载入或载出脚本时，将通知你。 
 
-## <a name="before-you-begin"></a>准备工作
+## <a name="before-you-begin"></a>开始之前
 你将需要有权访问：
- - Microsoft Flow (Flow Plan 1 至少为) 。 有关详细信息，请参阅 Flow [pricing page](https://flow.microsoft.com/pricing/)。
- - Azure 表或 SharePoint 列表或库/SQL DB
+ - Microsoft Flow (Flow计划 1 的最低) 。 有关详细信息，请参阅定价[Flow页面](https://flow.microsoft.com/pricing/)。
+ - Azure 表或SharePoint列表或库/SQL DB
 
 ## <a name="create-the-notification-flow"></a>创建通知流
 
@@ -73,11 +73,11 @@ ms.locfileid: "51187062"
    - 方法："GET"作为获取设备列表的值。
    - URI：输入 `https://api.securitycenter.microsoft.com/api/machines` 。
    - 身份验证：选择"Active Directory OAuth"。
-   - 租户：登录并导航到 https://portal.azure.com Azure **Active Directory >应用注册并** 获取租户 ID 值。
+   - 租户：登录并导航到Azure Active Directory > https://portal.azure.com **应用注册并** 获取租户 ID 值。
    - 访问群体： `https://securitycenter.onmicrosoft.com/windowsatpservice\`
-   - 客户端 ID：登录并导航到 https://portal.azure.com **Azure Active Directory >应用注册并** 获取客户端 ID 值。
+   - 客户端 ID：登录并导航到Azure Active Directory > https://portal.azure.com **应用注册并** 获取客户端 ID 值。
    - 凭据类型：选择"机密"。
-   - 密码：登录并导航到 https://portal.azure.com Azure **Active Directory >应用注册并** 获取租户 ID 值。
+   - 密码：登录并导航到Azure Active Directory > https://portal.azure.com **应用注册并** 获取租户 ID 值。
 
     ![HTTP 条件的图像](images/http-conditions.png)
 
@@ -176,9 +176,9 @@ ms.locfileid: "51187062"
 
     ```
 
-10.  从 JSON 调用中提取值，并检查已载入 (设备) /是否已在 SharePoint 列表中注册为示例：
+10.  从 JSON 调用中提取值，并检查已载入设备 (是否) /已在 SharePoint 列表注册为示例：
 - 如果是，则不触发任何通知
-- 如果否，将在 SharePoint (注册) 新载入的设备，并且会向 Defender for Endpoint 管理员发送通知
+- 如果否，将在 SharePoint 列表中注册新的已 (设备) ，并且会向 Defender for Endpoint 管理员发送通知
 
     ![适用于每个图像的图像](images/flow-apply.png)
 

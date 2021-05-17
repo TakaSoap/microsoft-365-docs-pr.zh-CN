@@ -38,7 +38,7 @@ ms.locfileid: "51056536"
 
 ## <a name="how-feedback-loop-blocking-works"></a>反馈循环阻止的工作原理
 
-当检测到可疑行为或文件时（如由 Microsoft [Defender 防病毒](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10)检测出）时，有关项目的信息会发送到多个分类器。 快速保护循环引擎检查信息并将信息与其他信号关联，以决定是否阻止文件。 检查和分类项目会快速发生。 它可快速阻止已确认的恶意软件，并驱动整个生态系统的保护。 
+当检测到可疑行为或文件时（如通过[Microsoft Defender 防病毒）时](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10)，有关项目的信息将被发送到多个分类器。 快速保护循环引擎检查信息并将信息与其他信号关联，以决定是否阻止文件。 检查和分类项目会快速发生。 它可快速阻止已确认的恶意软件，并驱动整个生态系统的保护。 
 
 借助快速保护，攻击可以在设备、组织的其他设备和其他组织中的设备上停止，因为攻击尝试扩大其位置。
 
@@ -53,13 +53,13 @@ ms.locfileid: "51056536"
 
 - [块模式下的 EDR](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/edr-in-block-mode)
 
-- [攻击面减少](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/attack-surface-reduction)
+- [减少攻击面](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/attack-surface-reduction)
 
 - [下一代保护](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-microsoft-defender-antivirus-features) (防病毒) 
 
 ## <a name="related-articles"></a>相关文章
 
-- [行为阻止和抑制](behavioral-blocking-containment.md)
+- [行为阻止和控制](behavioral-blocking-containment.md)
 
 - [ (博客) 行为阻止和抑制：将光学镜头转换为保护](https://www.microsoft.com/security/blog/2020/03/09/behavioral-blocking-and-containment-transforming-optics-into-protection/)
 

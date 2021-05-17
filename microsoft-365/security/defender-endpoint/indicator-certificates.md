@@ -42,13 +42,13 @@ ms.locfileid: "51164677"
 - 阻止在整个组织中使用特定的已签名应用程序。 通过创建用于阻止应用程序证书的指示器，Windows Defender AV 将阻止文件执行 (并修正) 自动调查和修正的行为相同。
 
 
-### <a name="before-you-begin"></a>准备工作
+### <a name="before-you-begin"></a>开始之前
 
 在创建证书指示器之前，了解以下要求很重要：
 
-- 如果你的组织使用防病毒和基于云的Windows Defender，此功能可用。 有关详细信息，请参阅 [管理基于云的保护](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/deploy-manage-report-microsoft-defender-antivirus)。
+- 如果你的组织使用基于云的保护Windows Defender 防病毒启用基于云的保护，则此功能可用。 有关详细信息，请参阅 [管理基于云的保护](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/deploy-manage-report-microsoft-defender-antivirus)。
 - 反恶意软件客户端版本必须为 4.18.1901.x 或更高版本。
-- 在 Windows 10 版本 1703 或更高版本、Windows Server 2016 和 2019 上的计算机上受支持。
+- 在 Windows 10 版本 1703 或更高版本、Windows 2016 和 2019 的计算机中受支持。
 - 病毒和威胁防护定义必须最新的。
 - 此功能当前支持输入 。CER 或 。PEM 文件扩展名。
 
@@ -62,7 +62,7 @@ ms.locfileid: "51164677"
 >[!IMPORTANT]
 > 创建和删除证书 IoC 可能需要 3 小时。
 
-1. 在导航窗格中，选择"**设置**  >  **""指示器"。**  
+1. 在导航窗格中，选择 **"设置**  >  **标记"。**  
 
 2. 选择" **证书"** 选项卡。
 
@@ -78,5 +78,5 @@ ms.locfileid: "51164677"
 ## <a name="related-topics"></a>相关主题
 - [创建指示器](manage-indicators.md)
 - [创建文件指示器](indicator-file.md)
-- [为 IP 和 URL/域创建指示器](indicator-ip-domain.md)
+- [创建 IP 和 URL/域指示器](indicator-ip-domain.md)
 - [管理指示器](indicator-manage.md)

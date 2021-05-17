@@ -23,7 +23,7 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 03/24/2021
 ms.locfileid: "51165245"
 ---
-# <a name="configure-managed-security-service-provider-integration"></a>配置托管安全服务提供程序集成
+# <a name="configure-managed-security-service-provider-integration"></a>配置托管的安全服务提供商集成
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -44,20 +44,20 @@ ms.locfileid: "51165245"
 
 该集成将允许 MSSP 执行以下操作：
 
-- 获取对 MSSP 客户的 Microsoft Defender 安全中心门户的访问权限
+- 获取对 MSSP 客户门户Microsoft Defender 安全中心的访问权限
 - 获取电子邮件通知和 
 - 使用 SIEM 工具通过安全信息和事件管理 (警报) 警报
 
 MSSP 客户需要授予对 Defender for Endpoint 租户的访问权限，以便 MSSP 可以访问门户，MSSP 客户才能执行这些操作。 
  
 
-通常，MSSP 客户执行初始配置步骤以授予 MSSP 访问其 Windows Defender 安全中心租户的权限。 授予访问权限后，MSSP 客户或 MSSP 可以执行其他配置步骤。
+通常，MSSP 客户执行初始配置步骤以授予 MSSP 访问其Windows Defender中心租户的权限。 授予访问权限后，MSSP 客户或 MSSP 可以执行其他配置步骤。
 
 
 通常，需要执行以下配置步骤：
 
 
-- **向 MICROSOFT Defender 安全中心授予 MSSP 访问权限** <br>
+- **向 MSSP 授予对 Microsoft Defender 安全中心** <br>
 此操作需要由 MSSP 客户执行。 它向 MSSP 客户授予对 MSSP 客户的 Defender for Endpoint 租户的访问权限。
  
 
@@ -75,8 +75,8 @@ MSSP 客户或 MSSP 可以执行此操作。 这使 MSSP 知道需要为 MSSP �
 
 
 ## <a name="related-topics"></a>相关主题
-- [授予对门户的 MSSP 访问权限](grant-mssp-access.md)
+- [授予 MSSP 对门户的访问权限](grant-mssp-access.md)
 - [访问 MSSP 客户门户](access-mssp-portal.md)
 - [配置警报通知](configure-mssp-notifications.md)
-- [从客户租户提取警报](fetch-alerts-mssp.md)
+- [从客户租户获取警报](fetch-alerts-mssp.md)
 

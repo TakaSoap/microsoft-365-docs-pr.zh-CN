@@ -44,7 +44,7 @@ ms.locfileid: "52246424"
 
 ## <a name="how-to-install-microsoft-defender-for-endpoint-on-android"></a>如何在 Android 上安装 Microsoft Defender for Endpoint
 
-### <a name="prerequisites"></a>先决条件
+### <a name="prerequisites"></a>必备条件
 
 -   **对于最终用户**
 

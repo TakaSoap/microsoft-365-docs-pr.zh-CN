@@ -47,12 +47,12 @@ ms.locfileid: "51186637"
 [获取登录用户](get-machine-log-on-users.md) | [user](user.md) 集合 | 获取登录到 [计算机](user.md) 的用户 [集](machine.md)。
 [获取相关警报](get-machine-related-alerts.md) | [警报](alerts.md)集合 | 获取 [计算机上引发](alerts.md) 警报实体 [集](machine.md)。
 [获取已安装的软件](get-installed-software.md) | [software](software.md) 集合 | 检索与给定计算机 ID 相关的已安装软件的集合。
-[获取发现的漏洞](get-discovered-vulnerabilities.md) | [漏洞](vulnerability.md) 集合 | 检索与给定计算机 ID 相关的已发现漏洞的集合。
+[发现漏洞](get-discovered-vulnerabilities.md) | [漏洞](vulnerability.md) 集合 | 检索与给定计算机 ID 相关的已发现漏洞的集合。
 [获取安全建议](get-security-recommendations.md) | [建议](recommendation.md) 集合 | 检索与给定计算机 ID 相关的安全建议集合。
 [添加或删除计算机标记](add-or-remove-machine-tags.md) | [计算机](machine.md) | 向特定计算机添加或删除标记。
 [按 IP 查找计算机](find-machines-by-ip.md) | [计算机](machine.md) 集合 | 查找使用 IP 查看的计算机。
-[按标记查找计算机](find-machines-by-tag.md) | [计算机](machine.md) 集合 | 按标记 查找 [计算机](machine-tags.md)。
-[获取缺少的 KB](get-missing-kbs-machine.md) | KB 集合 | 获取与计算机 ID 关联的缺失的 KB 列表
+[通过标记查找计算机](find-machines-by-tag.md) | [计算机](machine.md) 集合 | 按标记 查找 [计算机](machine-tags.md)。
+[查找缺失的 KBS](get-missing-kbs-machine.md) | KB 集合 | 获取与计算机 ID 关联的缺失的 KB 列表
 [设置设备值](set-device-value.md)| [计算机](machine.md) 集合 | 设置 [设备 的值](tvm-assign-device-value.md)。
 
 ## <a name="properties"></a>属性

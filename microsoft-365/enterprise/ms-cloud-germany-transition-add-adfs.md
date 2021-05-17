@@ -28,7 +28,7 @@ ms.locfileid: "51165653"
 # <a name="ad-fs-migration-steps-for-the-migration-from-microsoft-cloud-deutschland"></a>从德国 Microsoft 云迁移的 AD FS 迁移步骤
 
 此配置更改需要在阶段 2 启动之前随时应用。
-第 2 阶段完成后，配置更改将正常工作，并且你能够通过 Office 365 全局终结点（如 ）登录 `https://portal.office.com` 。 如果在阶段 2 之前实现配置更改，Office 365 全局终结点将尚不起作用，但新的信赖方信任仍然是 Active Directory 联合身份验证服务 (AD FS) 配置的一部分。
+第 2 阶段完成后，配置更改将正常工作，并且你能够通过 Office 365 全局终结点（如 ）登录 `https://portal.office.com` 。 如果在阶段 2 之前实现配置更改，Office 365 全局终结点将不起作用，但新的信赖方信任仍然是 Active Directory 联合身份验证服务 (AD FS) 配置的一部分。
 
 将联合身份验证与 Active Directory 联合身份验证服务 (AD FS) 一同使用的客户不应更改在迁移期间用于本地 Active Directory 域服务 (AD DS) 的所有身份验证的颁发者 URI。 更改颁发者 URI 将导致域中用户的身份验证失败。 可以在 AD FS 中直接更改颁发者 URI，或在将域从托管域转换为联合域时更改，反之亦然。 建议不要添加、删除或转换已迁移的 Azure AD 租户中的联合域。 完全完成迁移后，可更改颁发者 URI。
 
@@ -37,7 +37,7 @@ ms.locfileid: "51165653"
 1. 按照以下步骤备份 AD FS 设置，包括现有的德国 Microsoft 云信赖 [方信任](#backup)。 将备份 **名称为 MicrosoftCloudDeutschlandOnly** 以指示它仅包含 Microsoft 云德国租户信息。
 
    > [!NOTE]
-   > 备份将不仅包含 Microsoft 云德国的现有 Office 365 信赖方信任，还包含各个 AD FS 场上存在的所有其他信赖方信任。
+   > 备份将不仅包含 Microsoft 云德国Office 365信赖方信任，还包含各个 AD FS 场上存在的所有其他信赖方信任。
 
 2. 使用 MicrosoftCloudDeutschlandOnly 备份测试还原，AD FS 场应继续仅作为德国 Microsoft 云运行。
 
@@ -51,9 +51,9 @@ ms.locfileid: "51165653"
 
 4. 在 **"** 添加信赖 **方信任** "向导的"欢迎"页上选择"开始"。
 
-5. 在"**选择数据源"** 页上，选择"导入有关联机发布的信赖方或本地 **网络的数据"。** 联合 **元数据地址 (主机名或 URL**) 的值必须设置为 `https://nexus.microsoftonline-p.com/federationmetadata/2007-06/federationmetadata.xml` 。 单击“**下一步**”。
+5. 在"**选择数据源"** 页上，选择"导入有关联机发布的信赖方或本地 **网络的数据"。** 联合 **元数据地址 (主机名或 URL**) 的值必须设置为 `https://nexus.microsoftonline-p.com/federationmetadata/2007-06/federationmetadata.xml` 。 点击 **“下一步”**。
 
-6. 在" **指定显示名称** "页上，键入 显示名称，Microsoft Office **365 Identity Platform WorldWide**。 单击“**下一步**”。
+6. 在"**指定显示名称**"页上，键入显示名称 Identity Platform **WorldWide Microsoft Office 365"。** 点击 **“下一步”**。
 
 7. 如果你使用的是 Windows Server 2012 中的 ADFS，请在向导页面"现在配置多重身份验证？"上，根据你的身份验证要求选择合适的选项。 如果坚持使用默认值，请选择"我目前不想为此信赖方信任配置多重 **身份验证设置"。** 如果需要，可以在以后更改此设置。
 
@@ -65,12 +65,12 @@ ms.locfileid: "51165653"
 
 11. 单击 **"完成** " **页上的"关闭** "。
 
-通过关闭向导，可建立与 Office 365 全局服务之间的信赖方信任。 但是，尚未配置任何颁发转换规则。
+通过关闭向导，可建立信赖方信任Office 365全局服务。 但是，尚未配置任何颁发转换规则。
 
 可以使用 [AD FS 帮助](https://adfshelp.microsoft.com/AadTrustClaims/ClaimsGenerator) 生成正确的颁发转换规则。 使用 AD FS 帮助创建的生成的声明规则可通过 AD FS 管理控制台手动添加，也可通过 PowerShell 手动添加。 AD FS 帮助将生成需要执行的必要 PowerShell 脚本。  
 
 > [!NOTE]
-> [AD FS 帮助](https://adfshelp.microsoft.com/AadTrustClaims/ClaimsGenerator) 将生成随产品一起提供的标准发布转换规则。 但是，如果 Microsoft 云德国信赖方信任 (（例如，自定义颁发者 URI、非标准不可变的 ID 或任何其他自定义项) ）中已制定自定义颁发转换规则，则必须修改 AD FS 生成的规则，以适合 Microsoft 云德国信赖方信任当前就地的自定义逻辑。 如果这些自定义项未集成到通过 [AD FS](https://adfshelp.microsoft.com/AadTrustClaims/ClaimsGenerator)帮助生成的规则中，则对 **Microsoft Office 365 Identity Platform WorldWide** 进行身份验证很可能对联合身份不起作用。 
+> [AD FS 帮助](https://adfshelp.microsoft.com/AadTrustClaims/ClaimsGenerator) 将生成随产品一起提供的标准发布转换规则。 但是，如果 Microsoft 云德国信赖方信任 (（例如，自定义颁发者 URI、非标准不可变的 ID 或任何其他自定义项) ）中已制定自定义颁发转换规则，则必须修改 AD FS 生成的规则，以适合 Microsoft 云德国信赖方信任当前就地的自定义逻辑。 如果这些自定义项未集成到通过 [AD FS](https://adfshelp.microsoft.com/AadTrustClaims/ClaimsGenerator)帮助生成的规则中，Microsoft Office 365 **Identity Platform WorldWide** 的身份验证很可能对联合身份不起作用。
 
 1. 在 [AD FS](https://adfshelp.microsoft.com/AadTrustClaims/ClaimsGenerator)帮助上运行"生成声明"，然后使用脚本右上角的"复制"选项复制 PowerShell 脚本。
 
@@ -88,7 +88,7 @@ ms.locfileid: "51165653"
    Set-AdfsRelyingPartyTrust -TargetIdentifier urn:federation:MicrosoftOnline -IssuanceTransformRules $RuleSet.ClaimRulesString;
    ```
 
-3. 确认存在两个信赖方Ttrusts;一个适用于德国 Microsoft 云，另一个适用于 Office 365 全球服务。 以下命令可用于检查。 它应返回两行以及各自的名称和标识符。
+3. 确认存在两个信赖方Ttrusts;一个针对德国 Microsoft 云，另一个Office 365全球服务。 以下命令可用于检查。 它应返回两行以及各自的名称和标识符。
 
    ```powershell
    Get-AdfsRelyingPartyTrust | Where-Object {$_.Identifier -like 'urn:federation:MicrosoftOnline*'} | Select-Object Name, Identifier
@@ -136,11 +136,11 @@ ms.locfileid: "51165653"
 
 3. 将新的 DNS 记录或负载平衡器指向新的 AD FS 服务器。
 
-## <a name="more-information"></a>更多信息
+## <a name="more-information"></a>详细信息
 
 入门：
 
-- [从德国 Microsoft 云迁移到新的德国数据中心区域的 Office 365 服务](ms-cloud-germany-transition.md)
+- [从德国 Microsoft 云迁移到Office 365新的德国数据中心区域提供服务](ms-cloud-germany-transition.md)
 - [德国 Microsoft 云迁移助手](https://aka.ms/germanymigrateassist)
 - [如何选择加入迁移](ms-cloud-germany-migration-opt-in.md)
 - [迁移期间客户体验](ms-cloud-germany-transition-experience.md)

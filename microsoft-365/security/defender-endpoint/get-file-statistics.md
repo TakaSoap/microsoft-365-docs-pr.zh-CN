@@ -50,7 +50,7 @@ ms.locfileid: "51166460"
 
 权限类型 |   权限  |   权限显示名称
 :---|:---|:---
-Application |   File.Read.All | "读取文件配置文件"
+应用程序 |   File.Read.All | "读取文件配置文件"
 委派（工作或学校帐户） | File.Read.All | "读取文件配置文件"
 
 >[!Note]

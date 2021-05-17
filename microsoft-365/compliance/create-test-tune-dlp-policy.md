@@ -36,7 +36,7 @@ DLP 检查电子邮件和文件，以查找敏感信息，如信用卡号。 使
 - 向发送电子邮件或共享文件的最终用户显示警告
 - 主动阻止电子邮件或文件共享发生
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 创建 DLP 策略的合规性团队成员需要具有对合规中心的访问权限。 默认情况下，租户管理员将具有访问权限，可授予合规部官员和其他人员访问权限。 请按以下步骤操作：
   
@@ -73,9 +73,9 @@ DLP 通过正则表达式 (RegEx) 模式匹配，以及其他指示器（如某�
 
 当数据泄露的风险并不明显时，很难确定应从何处开始实施 DLP。 幸运的是，DLP 策略可以在"测试模式"中运行，从而允许您在启用它们之前评估其有效性和准确性。
 
-可以通过 Exchange 管理中心管理 Exchange Online 的 DLP 策略。 但是，可以通过安全与合规中心配置所有& DLP 策略，以便本文中将使用此策略进行演示。 在安全&合规中心，您可以在数据丢失防护策略下 **找到** DLP  >  **策略**。 选择 **"创建策略** "开始。
+dlp policies for Exchange Online can be managed through the Exchange admin center. 但是，可以通过安全与合规中心配置所有& DLP 策略，以便本文中将使用此策略进行演示。 在安全&合规中心，您可以在数据丢失防护策略下 **找到** DLP  >  **策略**。 选择 **"创建策略** "开始。
 
-Microsoft 365 提供了一系列可用于创建策略的 [DLP](what-the-dlp-policy-templates-include.md) 策略模板。 假设你是澳大利亚企业。 可以筛选澳大利亚上的模板，然后选择"财务、医疗与健康"和"隐私"。
+Microsoft 365提供了一系列可用于创建策略的[DLP](what-the-dlp-policy-templates-include.md)策略模板。 假设你是澳大利亚企业。 可以筛选澳大利亚上的模板，然后选择"财务、医疗与健康"和"隐私"。
 
 ![用于选择国家/地区的选项](../media/DLP-create-test-tune-choose-country.png)
 
@@ -91,13 +91,13 @@ Microsoft 365 提供了一系列可用于创建策略的 [DLP](what-the-dlp-poli
 
 ![选择所有位置的选项](../media/DLP-create-test-tune-choose-locations.png)
 
-第一 **个"策略设置"** 步骤中，现在只需接受默认值。 您可以自定义 DLP 策略，但默认设置是很好的开始。
+第一 **步设置，** 现在只需接受默认值。 您可以自定义 DLP 策略，但默认设置是很好的开始。
 
 ![用于自定义要保护的内容类型的选项](../media/DLP-create-test-tune-default-customization-settings.png)
 
-单击下一步后，**你将看到一个包含更多自定义 **选项的其他策略** 设置页面。 对于你刚刚测试的策略，你可以在这里开始进行一些调整。
+单击"下一步"后，**你将看到一个包含更多自定义 **设置** 策略策略页。 对于你刚刚测试的策略，你可以在这里开始进行一些调整。
 
-- 我目前已关闭策略提示，如果你只是测试了一些内容，并且还不想向用户显示任何内容，这是一个合理的步骤。 策略提示向用户显示即将违反 DLP 策略的警告。 例如，Outlook 用户会看到一条警告，提示他们附加的文件包含信用卡号，并会导致其电子邮件被拒绝。 策略提示的目标是在不符合行为发生之前停止该行为。
+- 我目前已关闭策略提示，如果你只是测试了一些内容，并且还不想向用户显示任何内容，这是一个合理的步骤。 策略提示向用户显示即将违反 DLP 策略的警告。 例如，Outlook用户会看到一条警告，提示他们附加的文件包含信用卡号，并会导致其电子邮件被拒绝。 策略提示的目标是在不符合行为发生之前停止该行为。
 - 我还将实例数量从 10 个减少为 1 个，以便此策略将检测澳大利亚 PII 数据的任何共享，而不只是批量共享数据。
 - 我还将另一个收件人添加到事件报告电子邮件中。
 
@@ -131,7 +131,7 @@ Microsoft 365 提供了一系列可用于创建策略的 [DLP](what-the-dlp-poli
 
 如果您将 DLP 策略保留为测试模式并分析事件报告电子邮件，您可以开始了解 DLP 策略的准确性以及强制执行策略时它的有效度。 除了事件报告之外，您还可以使用 [DLP](view-the-dlp-reports.md) 报告查看整个租户内策略匹配项的聚合视图。
 
-## <a name="tune-a-dlp-policy"></a>调整 DLP 策略
+## <a name="tune-a-dlp-policy"></a>优化 DLP 策略
 
 在分析策略命中时，可能需要对策略的行为方式进行一些调整。 作为一个简单的示例，你可能会确定电子邮件中的一个 TFN 不是问题 (我认为它仍然是问题，但为了演示) ，让我们使用它，但两个或多个实例是一个问题。 多个实例可能是一个风险场景，例如员工通过电子邮件发送从 HR 数据库到外部方（例如外部会计服务）的 CSV 导出。 当然，你更希望检测和阻止某些内容。
 
@@ -173,9 +173,9 @@ Microsoft 365 提供了一系列可用于创建策略的 [DLP](what-the-dlp-poli
 
 ![在测试模式下显示策略提示的选项](../media/DLP-create-test-tune-show-policy-tips.png)
 
-在服务器端 (或云端（如果) ，由于处理间隔不同，更改可能不会立即生效。 如果要进行向用户显示新策略提示的 DLP 策略更改，用户可能不会看到更改立即在 Outlook 客户端中生效，从而每 24 小时检查一次策略更改。 如果你想要加快测试速度，可以使用此注册表修补程序从 [PolicyNudges](https://support.microsoft.com/en-au/help/2823261/changes-to-a-data-loss-prevention-policy-don-t-take-effect-in-outlook?__hstc=18650278.46377037dc0a82baa8a30f0ef07a7b2f.1538687978676.1538693509953.1540315763430.3&__hssc=18650278.1.1540315763430&__hsfp=3446956451)项中清除上次下载时间戳。 下次重新启动 Outlook 并开始撰写电子邮件时，Outlook 将下载最新策略信息。
+在服务器端 (或云端（如果) ，由于处理间隔不同，更改可能不会立即生效。 如果要进行向用户显示新策略提示的 DLP 策略更改，用户可能不会看到更改立即在 Outlook 客户端中生效，从而每 24 小时检查一次策略更改。 如果你想要加快测试速度，可以使用此注册表修补程序从 [PolicyNudges](https://support.microsoft.com/en-au/help/2823261/changes-to-a-data-loss-prevention-policy-don-t-take-effect-in-outlook?__hstc=18650278.46377037dc0a82baa8a30f0ef07a7b2f.1538687978676.1538693509953.1540315763430.3&__hssc=18650278.1.1540315763430&__hsfp=3446956451)项中清除上次下载时间戳。 Outlook下一次重启并开始撰写电子邮件时，系统将会下载最新策略信息。
 
-如果已启用策略提示，用户将开始在 Outlook 中看到这些提示，并且可以在出现误报时向用户报告误报。
+如果已启用策略提示，用户将开始在策略提示Outlook提示，并可以在出现误报时报告误报。
 
 ![策略提示，提供报告误报的选项](../media/DLP-create-test-tune-policy-tip-in-outlook.png)
 
@@ -216,7 +216,7 @@ DLP 策略模板并非开箱即用。 您可能发现环境中出现一些误报
 
 ![打开策略的选项](../media/DLP-create-test-tune-turn-on-policy.png)
  
-如果你正在等待查看策略何时生效，请连接到安全与合规& [PowerShell](/powershell/exchange/connect-to-scc-powershell) 并运行 [Get-DlpCompliancePolicy cmdlet](/powershell/module/exchange/get-dlpcompliancepolicy) 以查看 DistributionStatus。
+如果你正在等待查看策略何时生效，连接安全&合规中心[PowerShell](/powershell/exchange/connect-to-scc-powershell)并运行[Get-DlpCompliancePolicy cmdlet](/powershell/module/exchange/get-dlpcompliancepolicy)以查看 DistributionStatus。
 
 ![在 PowerShell 中运行 cmdlet](../media/DLP-create-test-tune-PowerShell.png)
 

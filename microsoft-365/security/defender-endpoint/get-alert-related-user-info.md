@@ -1,5 +1,5 @@
 ---
-title: 获取与警报相关的用户信息
+title: 获取警报相关用户信息
 description: 了解如何使用获取与警报相关的用户信息 API 检索与 Microsoft Defender for Endpoint 中的特定警报相关的用户。
 keywords: api， 图形 api， 受支持的 api， 获取， 警报， 信息， 相关， 用户
 search.product: eADQiWindows 10XVcnh

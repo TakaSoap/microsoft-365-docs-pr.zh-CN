@@ -40,7 +40,7 @@ ms.locfileid: "51166328"
 
 检索 CVE 到 KB 和 CVE 详细信息的地图。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 用户需要读取权限。
 
 ## <a name="http-request"></a>HTTP 请求

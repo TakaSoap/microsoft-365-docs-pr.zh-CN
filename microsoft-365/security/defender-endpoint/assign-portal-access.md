@@ -1,5 +1,5 @@
 ---
-title: 向用户分配对 Microsoft Defender 安全中心的访问权限
+title: 向用户分配Microsoft Defender 安全中心
 description: 分配对 Microsoft Defender 终结点门户的读取和写入或只读访问权限。
 keywords: 分配用户角色， 分配读取和写入访问权限， 分配只读访问权限， 用户， 用户角色， 角色
 search.product: eADQiWindows 10XVcnh
@@ -24,7 +24,7 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 03/24/2021
 ms.locfileid: "51164745"
 ---
-# <a name="assign-user-access-to-microsoft-defender-security-center"></a>向用户分配对 Microsoft Defender 安全中心的访问权限
+# <a name="assign-user-access-to-microsoft-defender-security-center"></a>向用户分配Microsoft Defender 安全中心
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 

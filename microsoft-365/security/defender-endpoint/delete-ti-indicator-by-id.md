@@ -50,8 +50,8 @@ ms.locfileid: "51166455"
 
 权限类型 |   权限  |   权限显示名称
 :---|:---|:---
-Application |   Ti.ReadWrite |  "读取和写入 TI 指示器"
-Application |   Ti.ReadWrite.All |  "读取和写入指示器"
+应用程序 |   Ti.ReadWrite |  "读取和写入 TI 指示器"
+应用程序 |   Ti.ReadWrite.All |  "读取和写入指示器"
 
 
 ## <a name="http-request"></a>HTTP 请求

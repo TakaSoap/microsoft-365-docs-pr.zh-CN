@@ -44,10 +44,10 @@ ms.locfileid: "51187378"
 |:------------------------------------------------------------------|:-----------------------------------|:------------------------------------------------------------|
 | [列出 MachineActions](get-machineactions-collection.md)           | [计算机操作](machineaction.md) | 列出 [计算机操作](machineaction.md) 实体。           |
 | [获取 MachineAction](get-machineaction-object.md)                  | [计算机操作](machineaction.md) | 获取单个 [Machine Action](machineaction.md) 实体。     |
-| [收集调查包](collect-investigation-package.md) | [计算机操作](machineaction.md) | 从计算机收集调查 [包](machine.md)。 |
+| [收集调查程序包](collect-investigation-package.md) | [计算机操作](machineaction.md) | 从计算机收集调查 [包](machine.md)。 |
 | [获取调查包 SAS URI](get-package-sas-uri.md)       | [计算机操作](machineaction.md) | 获取用于下载调查包的 URI。          |
 | [隔离计算机](isolate-machine.md)                             | [计算机操作](machineaction.md) | 将 [计算机](machine.md) 与网络隔离。                 |
-| [解除计算机隔离](unisolate-machine.md)            | [计算机操作](machineaction.md) | 解除 [计算机](machine.md) 隔离。               |
+| [从隔离释放计算机](unisolate-machine.md)            | [计算机操作](machineaction.md) | 解除 [计算机](machine.md) 隔离。               |
 | [限制应用执行](restrict-code-execution.md)              | [计算机操作](machineaction.md) | 限制应用程序执行。                             |
 | [删除应用限制](unrestrict-code-execution.md)            | [计算机操作](machineaction.md) | 删除应用程序执行限制。                   |
 | [运行防病毒扫描](run-av-scan.md)                              | [计算机操作](machineaction.md) | 如果适用，请Windows Defender (AV) 。    |

@@ -50,8 +50,8 @@ ms.locfileid: "51166315"
 
 权限类型 |   权限  |   权限显示名称
 :---|:---|:---
-Application |   Machine.Read.All |  "读取所有计算机配置文件"
-Application |   Machine.ReadWrite.All | "读取和写入所有计算机信息"
+应用程序 |   Machine.Read.All |  "读取所有计算机配置文件"
+应用程序 |   Machine.ReadWrite.All | "读取和写入所有计算机信息"
 委派（工作或学校帐户） | Machine.Read | "读取计算机信息"
 委派（工作或学校帐户） | Machine.ReadWrite | "读取和写入计算机信息"
 

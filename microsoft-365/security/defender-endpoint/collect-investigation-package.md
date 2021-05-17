@@ -51,7 +51,7 @@ ms.locfileid: "51166447"
 
 权限类型 |   权限  |   权限显示名称
 :---|:---|:---
-Application |   Machine.CollectForensics |  "收集取证"
+应用程序 |   Machine.CollectForensics |  "收集取证"
 委派（工作或学校帐户） |    Machine.CollectForensics |  "收集取证"
 
 >[!Note]

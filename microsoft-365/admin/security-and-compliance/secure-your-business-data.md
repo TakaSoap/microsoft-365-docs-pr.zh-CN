@@ -55,7 +55,7 @@ Microsoft 建议你完成下表中列出的适用于你的服务计划的任务�
 |9 |[防范恶意附件和带附件保险箱文件](secure-your-business-data.md#atp)||![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |10  |[使用链接抵御网络钓鱼保险箱攻击](secure-your-business-data.md#phishingatp)||![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
 
-如果你有 Microsoft Business 高级版，设置安全性并开始安全协作的最快方法就是按照以下库中的指导操作：Microsoft 365[小型企业和市场活动](../../campaigns/index.md)。 本指南是与 Microsoft 防御百年团队合作开发的，可保护所有小型企业客户免受复杂黑客发起的网络威胁。
+如有 Microsoft 商业高级版，设置安全性并开始安全协作的最快方法是遵循此库中的指南：[面向小型企业和活动的 Microsoft 365](../../campaigns/index.md)。 此指南是与 Microsoft Defending Democracy 团队合作制定的，旨在保护所有小型企业客户免受老练黑客发起的网络威胁。
 
 开始之前，[请在安全中心](https://docs.microsoft.com/microsoft-365/security/defender/microsoft-secure-score)Microsoft 365安全Microsoft 365安全分数。 在集中式仪表板中，你可以监视和提高Microsoft 365标识、数据、应用、设备和基础结构的安全性。 您将获得配置建议安全功能、执行与安全相关的任务 (如查看报告) ，或者使用第三方应用程序或软件解决建议。 通过进一步深入了解一组更广泛的 Microsoft 产品和服务，你可以确信地报告组织的安全运行状况。
 
@@ -159,7 +159,7 @@ Microsoft 还建议用户采取以下文章中建议的操作来保护其个人�
 
 5. 针对每个规则应用下表中的设置。 将其余设置保留为默认值，除非您要更改这些设置。
 
-6. 选择 **保存**。
+6. 选择“**保存**”。
     
 | 设置 | 在打开文件附件之前Office警告 | 阻止可能包含勒索软件或其他恶意代码的文件类型 |
 |:-----|:-----|:-----|
@@ -195,7 +195,7 @@ Microsoft 还建议用户采取以下文章中建议的操作来保护其个人�
 
 5. 应用下表中的设置。 将其余设置保留为默认值，除非您要更改这些设置。
 
-6. 选择 **保存**。
+6. 选择“**保存**”。
 
 |设置|拒绝自动将电子邮件转发到外部域|
 |---|---|
@@ -333,7 +333,7 @@ In Outlook for PC， select **Options** in the email， and then choose **Permis
 
 3. 在 **设置** 应用于电子邮件以外的内容"下，选择"Office 365 **应用程序**"、"不跟踪用户单击安全链接时"和"不允许用户单击指向原始 **URL 的安全链接"。**
 
-4. 选择 **保存**。
+4. 选择“**保存**”。
 
 要创建面向域中所有收件人的新策略，请执行：
 
@@ -341,7 +341,7 @@ In Outlook for PC， select **Options** in the email， and then choose **Permis
 
 2. 应用下表中列出的设置。
 
-3. 选择 **保存**。
+3. 选择“**保存**”。
 
 |设置或选项|推荐设置|
 |---|---|

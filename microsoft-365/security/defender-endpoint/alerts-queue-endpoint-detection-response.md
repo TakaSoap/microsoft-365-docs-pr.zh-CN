@@ -1,7 +1,7 @@
 ---
-title: Microsoft Defender 安全中心中的警报队列
+title: 警报队列中Microsoft Defender 安全中心
 ms.reviewer: ''
-description: 查看和管理 Microsoft Defender 安全中心内显示警报
+description: 查看和管理警报中Microsoft Defender 安全中心
 keywords: ''
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -25,7 +25,7 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 03/23/2021
 ms.locfileid: "51056243"
 ---
-# <a name="alerts-queue-in-microsoft-defender-security-center"></a>Microsoft Defender 安全中心中的警报队列
+# <a name="alerts-queue-in-microsoft-defender-security-center"></a>警报队列中Microsoft Defender 安全中心
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
