@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 按照以下步骤删除以前员工的用户帐户。
-ms.openlocfilehash: 0afa9b112919d2668d7553ac5bcf08e664bc1749
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 5ca428079091c4af44ef1efa9be3d7340e254995
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244169"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52535934"
 ---
 # <a name="step-7---delete-a-former-employees-user-account"></a>步骤 7 - 删除以前员工的用户帐户
 
@@ -43,7 +43,13 @@ ms.locfileid: "52244169"
 3. 在用户名称下，选择"删除 **用户"。** 选择此用户需要的选项，然后选择"删除 **用户"。** 如果已向其他用户提供访问此用户的电子邮件和OneDrive，则不必在此处再次执行。
 
 删除用户后，其帐户将在大约 30 天内处于非活动状态。在永久删除用户之前，可还原帐户。
-  
+
+## <a name="watch-delete-a-former-employees-user-account"></a>观看：删除以前员工的用户帐户
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOfR]
+
+如果你发现此视频有帮助，请查看[适用于小型企业和 Microsoft 365 新用户的完整培训系列](../../business-video/index.yml)。
+
 ## <a name="does-your-organization-use-active-directory"></a>组织是否使用 Active Directory？
 
 如果组织将用户帐户与本地 Active Directory Microsoft 365同步，则必须在本地 Active Directory 服务中删除和还原这些用户帐户。 你无法在 Office 365 中删除或还原它们。
@@ -81,3 +87,5 @@ ms.locfileid: "52244169"
 ## <a name="related-articles"></a>相关文章
 
 [还原用户](restore-user.md)
+
+[重置密码](reset-passwords.md)

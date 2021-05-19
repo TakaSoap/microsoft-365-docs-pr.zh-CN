@@ -20,12 +20,12 @@ search.appverid: MET150
 description: 通过购买新订阅并确保两个订阅都列出且处于活动状态，手动更改订阅。
 ROBOTS: NOINDEX
 ms.date: 03/17/2021
-ms.openlocfilehash: 4935301c6d2a530f34d628f946032b7007e5c907
-ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
+ms.openlocfilehash: f5a44b7a3c01883ed42ca4ed203b63ccf77f9b72
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52345174"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52536102"
 ---
 # <a name="change-plans-manually"></a>手动更改计划
 
@@ -94,7 +94,7 @@ OR
 
 2. 选择要替换现有许可证的用户姓名旁边的圆圈。
 
-3. At the top， select **More options** (**...**) ， and then choose Manage **product licenses**.
+3. At the top， select the three dots (more actions) ， and then choose **Manage product licenses**.
 
 4. 选择" **替换现有的产品许可证分配**"\>" **下一步**"。
 

@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: 使用 Microsoft 365 合规中心搜索统一审计日志来查看组织中用户和管理员的活动。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f61a67b29dec114d222dfc7b25e44c163859ba41
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: dfda69e5695d2097de5bfae48b580e23799edf87
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51051734"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52536042"
 ---
 # <a name="search-the-audit-log-in-the-compliance-center"></a>在合规中心搜索审核日志
 
@@ -447,7 +447,7 @@ ms.locfileid: "51051734"
 |已将记录状态更改为“未锁定”|UnlockRecord|将文档分类为记录的保留标签的记录状态为“未锁定”。 这意味着可以修改或删除文档。 仅至少分配有网站参与者权限的用户才能更改文档的记录状态。|
 |已签入文件|FileCheckedIn|用户签入其从文档库中签出的文档。|
 |已签出文件|FileCheckedOut|用户签出位于文档库中的文档。 用户可以对与其共享的文档执行签出和更改操作。|
-|已复制文件|FileCopied|用户从网站复制文档。 可以将复制的文件保存到网站上的另一个文件夹。|
+|已复制文件|FileCopied|用户从网站复制文档。可以将复制的文件保存到网站上的其他文件夹中。|
 |已删除文件|FileDeleted|用户从网站删除文档。|
 |从回收站删除文件|FileDeletedFirstStageRecycleBin|用户从网站的回收站中删除文件。|
 |从第二阶段回收站删除文件|FileDeletedSecondStageRecycleBin|用户从网站的第二阶段回收站中删除文件。|
@@ -501,7 +501,7 @@ FilePreviewed 和 FileAccessed 事件都表明用户的调用导致了对文件�
 
 - Microsoft 365 组。 用户或管理员创建新组时，会生成审核记录，用于创建网站集、更新列表以及将成员添加到 SharePoint 组。 应用程序将代表创建组的用户执行这些任务。
 
-- Microsoft Teams。 与 Microsoft 365 组类似，也会生成审核记录，用于创建网站集、更新列表以及在创建团队时将成员添加到 SharePoint 组。
+- Microsoft Teams。与 Microsoft 365 组类似，也会生成审核记录，用于创建网站集、更新列表以及在创建团队时将成员添加到 SharePoint 组。
 
 - 合规性功能。 管理员实现合规性功能（如保留策略、电子数据展示保留和自动应用敏感度标签）时。
 
@@ -575,7 +575,7 @@ FilePreviewed 和 FileAccessed 事件都表明用户的调用导致了对文件�
 |已拒绝访问请求 |AccessRequestDenied|对网站、文件夹或文档的访问请求被拒绝。|
 |已删除公司可共享链接|CompanyLinkRemoved|用户删除了指向某资源的公司范围链接。 无法再使用该链接访问资源。|
 |已删除匿名链接|AnonymousLinkRemoved|用户删除了指向某资源的匿名链接。 无法再使用该链接访问资源。|
-|已共享文件、文件夹或网站|SharingSet|用户（成员或来宾）与组织目录中的用户共享了 SharePoint 或 OneDrive for Business 中的文件、文件夹或网站。 此活动的“**详细信息**”列中的值标识了与之共享资源的用户的名称以及该用户是成员还是来宾。 <br/><br/> 此活动通常伴有第二事件，描述向用户授予资源访问权限的方式。 例如将用户添加到可以访问资源的组。|
+|已共享文件、文件夹或网站|SharingSet|用户（成员或来宾）与组织目录中的用户共享了 SharePoint 或 OneDrive for Business 中的文件、文件夹或网站。 此活动的“**详细信息**”列中的值标识了与之共享资源的用户的名称以及该用户是成员还是来宾。 <br/><br/> 此活动通常伴有第二事件，描述向用户授予资源访问权限的方式，例如将用户添加到可以访问资源的组。|
 |已更新访问请求|AccessRequestUpdated|已更新项目的访问请求。|
 |已更新匿名链接|AnonymousLinkUpdated|用户更新了指向某资源的匿名链接。 导出搜索结果时，EventData 属性中包括更新后的字段。|
 |已更新共享邀请|SharingInvitationUpdated|已更新外部共享邀请。|
@@ -612,7 +612,7 @@ FilePreviewed 和 FileAccessed 事件都表明用户的调用导致了对文件�
 |已向 SharePoint 组添加用户或组|AddedToGroup|用户向 SharePoint 组添加了成员或来宾。 这可能是目的性操作，也可能是其他活动（例如共享事件）的结果。|
 |中断权限级别继承|PermissionLevelsInheritanceBroken|已更改项目，使其不再从父级继承权限级别。|
 |中断共享继承|SharingInheritanceBroken|已更改项目，使其不再从父级继承共享权限。|
-|已创建组|GroupAdded|网站管理员或所有者为网站创建组，或执行将导致创建组的任务。 例如，当用户首次创建共享文件的链接时，系统组会被添加到用户的 OneDrive for Business 网站中。 此事件也可以是用户使用编辑权限创建共享文件链接的结果。|
+|已创建组|GroupAdded|网站管理员或所有者为网站创建组，或执行将导致创建组的任务。例如，当用户首次创建共享文件的链接时，系统组会被添加到用户的 OneDrive for Business 网站中。此事件也可以是用户使用编辑权限创建共享文件链接的结果。|
 |已删除组|GroupRemoved|用户从网站删除组。|
 |已修改访问请求设置|WebRequestAccessModified|已修改网站上的访问请求设置。|
 |已修改“成员可共享”设置|WebMembersCanShareModified|已修改网站上的“**成员可共享**”设置。|
@@ -623,7 +623,7 @@ FilePreviewed 和 FileAccessed 事件都表明用户的调用导致了对文件�
 |已从 SharePoint 组中删除用户或组|RemovedFromGroup|用户已从 SharePoint 组中删除成员或来宾。 这可能是一项目的性操作，也可能是其他活动（例如取消共享事件）的结果。|
 |已请求网站管理员权限|SiteAdminChangeRequest|用户请求将自己添加为网站集的网站集管理员。 网站集管理员具有网站集和所有子网站的完全控制权限。|
 |已还原共享继承|SharingInheritanceReset|已进行更改，使项目能够从父级继承共享权限。|
-|已更新组|GroupUpdated|网站管理员或所有者为网站更改组设置。 这可能包括更改组名、可以查看或编辑组成员身份的人员，以及成员身份请求的处理方式。|
+|已更新组|GroupUpdated|网站管理员或所有者为网站更改组设置。这可能包括更改组名、可查看或编辑组成员身份的人员，以及成员身份请求的处理方式。|
 ||||
 
 ### <a name="site-administration-activities"></a>网站管理活动
@@ -639,7 +639,7 @@ FilePreviewed 和 FileAccessed 事件都表明用户的调用导致了对文件�
 |已取消网站地域移动|SiteGeoMoveCancelled|SharePoint 或全局管理员成功取消 SharePoint 或 OneDrive 网站地域移动。 Multi-Geo 功能可让一个组织跨越多个 Microsoft 数据中心地理位置（称之为“地理位置”）。 有关详细信息，请参阅 [OneDrive 和 SharePoint Online 的 Multi-Geo 功能](../enterprise/multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-microsoft-365.md)。|
 |已更改共享策略|SharingPolicyChanged|SharePoint 或全局管理员使用 Microsoft 365 管理门户、SharePoint 管理门户或 SharePoint Online 命令行管理程序更改了 SharePoint 共享策略。 将记录对组织中的共享策略设置所做的任何更改。 已更改的策略在事件记录详细属性的 **ModifiedProperties** 字段中标识。|
 |已更改设备访问策略|DeviceAccessPolicyChanged|SharePoint 或全局管理员已更改组织的非托管设备策略。 此策略控制未加入组织的设备对 SharePoint、OneDrive 和 Microsoft 365 的访问权限。 配置此策略需要企业移动性 + 安全性订阅。 有关详细信息，请参阅[控制非托管设备的访问](/sharepoint/control-access-from-unmanaged-devices)。|
-|已更改豁免用户代理|CustomizeExemptUsers|SharePoint 或全局管理员自定义 SharePoint 管理中心的豁免用户代理列表。 你可以指定免于接收要索引的整个网页的用户代理。 这意味着，当指定为豁免的用户代理遇到 InfoPath 表单时，表单将作为 XML 文件而不是整个网页返回。 这可以加速对 InfoPath 表单编制索引。|
+|已更改豁免用户代理|CustomizeExemptUsers|SharePoint 或全局管理员自定义 SharePoint 管理中心的豁免用户代理列表。可以指定免于接收要索引的整个网页的用户代理。这意味着指定的豁免用户代理遇到 InfoPath 表单时，该表单将作为 XML 文件而非整个网页返回。这可加速索引 InfoPath 表单。|
 |已更改网络访问策略|NetworkAccessPolicyChanged|SharePoint 或全局管理员已通过 SharePoint 管理中心或 SharePoint Online PowerShell 更改基于位置的访问策略（也称为“受信任的网络边界”）。 这类策略基于指定的授权 IP 地址范围控制组织中的用户对 SharePoint 和 OneDrive 资源的访问权限。 有关详细信息，请参阅[基于网络位置控制对 SharePoint Online 和 OneDrive 数据的访问权限](/sharepoint/control-access-based-on-network-location)。|
 |已完成网站地域移动|SiteGeoMoveCompleted|组织中的全局管理员计划的网站地域移动已成功完成。 Multi-Geo 功能可让一个组织跨越多个 Microsoft 数据中心地理位置（称之为“地理位置”）。 有关详细信息，请参阅 [Office 365 中 OneDrive 和 SharePoint Online 的多地理位置功能](../enterprise/multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-microsoft-365.md)。|
 |已创建“收件人​​”连接|SendToConnectionAdded|SharePoint 或全局管理员在 SharePoint 管理中心中的“记录管理”页上创建新“发送至”连接。 “发送至”连接指定文档存储库或记录中心设置。 创建“收件人”连接时，内容管理器可以将文档提交到指定位置。|
@@ -648,10 +648,10 @@ FilePreviewed 和 FileAccessed 事件都表明用户的调用导致了对文件�
 |已删除“收件人”连接|SendToConnectionRemoved|SharePoint 或全局管理员在 SharePoint 管理中心的“记录管理”页上删除“发送至”连接。|
 |已删除网站|SiteDeleted|网站管理员删除网站。|
 |已启用文档预览|PreviewModeEnabledSet|网站管理员为网站启用文档预览。|
-|已启用传统工作流|LegacyWorkflowEnabledSet|网站管理员或所有者向网站添加 SharePoint 2013 Workflow Task 内容类型。 全局管理员还可以在 SharePoint 管理中心中对整个组织启用工作流。|
+|已启用传统工作流|LegacyWorkflowEnabledSet|网站管理员或所有者将 SharePoint 2013 工作流任务内容类型添加到网站。全局管理员还可以在 SharePoint 管理中心中启用整个组织的工作流。|
 |已启用 Office on Demand|OfficeOnDemandSet|网站管理员启用 Office on Demand，允许用户访问最新版本的 Office 桌面应用程序。 SharePoint 管理中心启用了 Office on Demand，并需要包括全套已安装的 Office 应用程序的 Microsoft 365 订阅。|
 |已启用人员搜索的结果来源|PeopleResultsScopeSet|网站管理员为网站创建人员搜索的结果来源。|
-|已启用 RSS 源|NewsFeedEnabledSet|网站管理员或所有者为网站启用 RSS 源。 全局管理员可以在 SharePoint 管理中心中对整个组织启用 RSS 源。|
+|已启用 RSS 源|NewsFeedEnabledSet|网站管理员或所有者为网站启用 RSS 源。全局管理员还可以在 SharePoint 管理中心为整个组织启用 RSS 源。|
 |已将网站加入到中心网站|HubSiteJoined|网站所有者将其网站与中心网站相关联。|
 |注册中心网站|HubSiteRegistered|SharePoint 或全局管理员创建中心网站。 结果是该网站已注册为中心网站。|
 |已删除允许的数据位置|AllowedDataLocationDeleted|SharePoint 或全局管理员在多地理环境中删除了允许的数据位置。|
@@ -673,7 +673,7 @@ FilePreviewed 和 FileAccessed 事件都表明用户的调用导致了对文件�
 |友好名称|操作|说明|
 |:-----|:-----|:-----|
 |访问的邮箱项目|MailItemsAccessed|已在邮箱中读取或访问邮件。 此活动的审核记录通过下面两种方式之一触发：当邮箱客户端（如 Outlook）对邮件执行绑定操作时，或者当邮箱客户端（如 Exchange ActiveSync 或 IMAP）同步邮箱文件夹中的项目时。 仅对具有 Office 365 或 Microsoft 365 E5 许可证的用户记录此活动。 调查被盗用的电子邮件帐户时，分析此活动的审核记录非常有用。 有关详细信息，请参阅 [高级审核](advanced-audit.md#access-to-crucial-events-for-investigations)中的“访问关键事件进行调查”部分。 |
-|已添加代理邮箱权限|AddMailboxPermissions|管理员已将一位用户（称为“代理”）的 FullAccess 邮箱权限分配给另一用户邮箱。 FullAccess 权限允许代理打开他人的邮箱，查看和管理邮箱内容。|
+|已添加代理邮箱权限|Add-MailboxPermission|管理员已将一位用户（称为“代理”）的 FullAccess 邮箱权限分配给另一用户邮箱。 FullAccess 权限允许代理打开他人的邮箱，查看和管理邮箱内容。|
 |已添加或删除具有日历文件夹代理访问权限的用户|UpdateCalendarDelegation|已在其他用户邮箱的日历中添加或删除具有代理身份的用户。 日历代理为同一组织内的其他人授予管理邮箱所有者日历的权限。|
 |已向文件夹添加权限|AddFolderPermissions|已添加文件夹权限。 文件夹权限用于控制组织中的哪些用户可以访问邮箱中的文件夹以及位于这些文件夹中的邮件。|
 |已将邮件复制到其他文件夹|复制|已将邮件复制到其他文件夹。|
@@ -900,7 +900,7 @@ FilePreviewed 和 FileAccessed 事件都表明用户的调用导致了对文件�
 
 ### <a name="quarantine-activities"></a>隔离活动
 
-下表列出了可在审核日志中搜索的隔离活动。 有关隔离的详细信息，请参阅 [Office 365 中的隔离电子邮件](../security/defender-365-security/quarantine-email-messages.md)。
+下表列出了可在审核日志中搜索的隔离活动。 有关隔离的详细信息，请参阅 [Office 365 中的隔离电子邮件](../security/office-365-security/quarantine-email-messages.md)。
 
 |友好名称|操作|说明|
 |:-----|:-----|:-----|
@@ -999,7 +999,7 @@ Forms 支持在设计表单时和分析响应时进行协作。 表单协作者�
 
 ### <a name="briefing-email-activities"></a>简介电子邮件活动
 
-下表列出在 “简介电子邮件” 中的记录在 Office 365 审核日志中的活动。 有关简介电子邮件的详细信息，请参阅: 
+下表列出在“简介电子邮件”中的记录在 Office 365 审核日志中的活动。有关简介电子邮件的详细信息，请参阅：
 
 - [简介电子邮件概述](/Briefing/be-overview)
 
@@ -1091,7 +1091,7 @@ Forms 支持在设计表单时和分析响应时进行协作。 表单协作者�
 
 **审核服务是否支持记录的重复数据删除？**
 
-不正确。 审核服务管道几乎是实时的，因此不能支持重复数据删除。
+否。审核服务管道几乎是实时的，因此不能支持重复数据删除。
 
 **审核数据是否跨地域流动？**
 

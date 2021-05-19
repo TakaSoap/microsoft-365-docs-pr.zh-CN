@@ -17,19 +17,19 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: 活动资源管理器中可用的标签操作列表。
-ms.openlocfilehash: ed51c908d6968e3aeae0adbe06d9ba55887bcf83
-ms.sourcegitcommit: 1c53f114a810e7aaa2dc876b84d66348492ea36c
+description: 活动资源管理器中可用的标签活动列表。
+ms.openlocfilehash: d4f6884ad39b16aeb0345f0c976d6ad87f03c05a
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51902940"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52532250"
 ---
 # <a name="labeling-activities-that-are-available-in-activity-explorer"></a>活动资源管理器中可用的标记活动
 
 ## <a name="sensitivity-label-applied"></a>应用的敏感度标签
 
-每次标记未标记的文档或发送带有标签的电子邮件时，将生成此事件。 
+每次标记未标记的文档或发送带有敏感度标签的电子邮件时，将生成此事件。 
 
 - 在本机应用程序和 Web 应用程序中保存Office捕获它。 
 - 在 Azure 信息保护加载项中出现时捕获它。 
@@ -50,7 +50,7 @@ ms.locfileid: "51902940"
 
 ## <a name="sensitivity-label-changed"></a>敏感度标签已更改
 
-每次更新文档或电子邮件的标签时，将生成此事件。
+每次更新文档或电子邮件的敏感度标签时，将生成此事件。
 
 - 对于 AIP 统一客户端、统一扫描程序和 MIP  SDK 源，AIP 升级标签和 *降级* 标签操作映射到活动资源管理器 *标签已更改*
 
@@ -75,7 +75,7 @@ ms.locfileid: "51902940"
 
 ## <a name="sensitivity-label-removed"></a>删除了敏感度标签
 
-每次从文件或文档中删除标签时，将生成此事件。
+每次从文件或文档中删除敏感度标签时，将生成此事件。
 
 - 在本机应用程序和 Web 应用程序中保存Office捕获此事件。
 - 在 Azure 信息保护加载项中出现时捕获它。 
@@ -97,7 +97,7 @@ ms.locfileid: "51902940"
 
 ## <a name="sensitivity-label-file-read"></a>已读取敏感度标签文件
 
-每次打开已标记或受保护的文档时，将生成此事件。
+每次打开标记为或受保护的文档的敏感度文档时，将生成此事件。
 
 |源  |在活动资源管理器中报告 | 注释  |
 |---------|---------|---------| 
@@ -113,7 +113,7 @@ ms.locfileid: "51902940"
 |MCAS     |否         |         |
 
 
-## <a name="sensitivity-label-files-discovered"></a>发现的敏感度标签文件
+## <a name="files-discovered"></a>发现的文件
 
 每次发现文件时，当使用 AIP 扫描程序扫描不同位置的敏感数据并查找文件时，将生成此事件。
 
@@ -149,7 +149,7 @@ ms.locfileid: "51902940"
 |MCAS     |否         |         |
 
 
-## <a name="sensitivity-label-file-removed"></a>删除了敏感度标签文件
+## <a name="file-removed"></a>文件已删除
 
 每次 AIP 扫描程序检测到之前扫描的文件已删除时，将生成此事件。
 
@@ -166,7 +166,7 @@ ms.locfileid: "51902940"
 |Power BI桌面和 Web         |不适用  |
 |MCAS     |不适用        |         |
 
-### <a name="sensitivity-label-protection-applied"></a>应用的敏感度标签保护
+### <a name="protection-applied"></a>已应用保护
 
 此事件生成首次保护时手动添加到没有标签的项。
 
@@ -183,7 +183,7 @@ ms.locfileid: "51902940"
 |Power BI桌面和 Web         |不适用            |
 |MCAS     |不适用        |         |
 
-## <a name="sensitivity-label-protection-changed"></a>敏感度标签保护已更改
+## <a name="protection-changed"></a>保护已更改
 
 每次手动更改未标记文档的保护时，将生成此事件。
 
@@ -200,7 +200,7 @@ ms.locfileid: "51902940"
 |Power BI桌面和 Web         |不适用            |
 |MCAS     |不适用        |
 
-## <a name="sensitivity-label-protection-removed"></a>删除了敏感度标签保护
+## <a name="protection-removed"></a>已删除保护
 
 每次手动更改未标记文档的保护时，将生成此事件。
 
@@ -217,9 +217,9 @@ ms.locfileid: "51902940"
 |Power BI桌面和 Web         |不适用            |
 |MCAS     |不适用        |
 
-## <a name="sensitivity-label-dlp-policy-matched"></a>已匹配的敏感度标签 DLP 策略
+## <a name="dlp-policy-matched"></a>匹配的 DLP 策略
 
-每次匹配 DLP 策略时，将生成此事件。
+每次在文档或电子邮件上匹配 DLP 策略时，将生成此事件。
 
 |源  |在活动资源管理器中报告 |
 |---------|---------| 
@@ -247,9 +247,9 @@ ms.locfileid: "51902940"
 
 ## <a name="retention-label-applied"></a>应用的保留标签 
 
-每次标记未标记的文档或发送带有标签的电子邮件时，将生成此事件。
+每次标记未标记的文档或发送带有保留标签的电子邮件时，将生成此事件。
 
-- 在本机应用程序和 Web 应用程序中保存Office捕获它。
+- 它在保存文档时和发送电子邮件时捕获。
 
 |源  |在活动资源管理器中报告 |
 |---------|---------| 
@@ -261,7 +261,7 @@ ms.locfileid: "51902940"
 
 每次在文档或电子邮件上更新标签时，将生成此事件。
 
-- 它在保存时捕获。
+- 它在保存文档时和发送电子邮件时捕获。
 
 |源  |在活动资源管理器中报告 |
 |---------|---------| 
@@ -273,7 +273,7 @@ ms.locfileid: "51902940"
 
 每次从文件或文档中删除标签时，将生成此事件。
 
-- 它在保存时捕获。
+- 它在保存文档时和发送电子邮件时捕获。
 
 |源  |在活动资源管理器中报告 |
 |---------|---------| 

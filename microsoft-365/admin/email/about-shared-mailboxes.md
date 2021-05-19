@@ -22,18 +22,20 @@ search.appverid:
 - MET150
 - MOE150
 description: 当多个用户需要访问同一个邮箱时，会使用共享邮箱。 在创建共享邮箱之前，了解您需要了解的内容。
-ms.openlocfilehash: 83e779d59a8e763b3d0c0482966e75604d5f1574
-ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
+ms.openlocfilehash: 156ba100cb2c51d1e54a2ee82c45db20845931f9
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51903210"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52535850"
 ---
 # <a name="about-shared-mailboxes"></a>关于共享邮箱
 
 当多个用户需要访问同一邮箱（例如公司信息或支持电子邮件地址、接待台或其他可能由多个用户共享的其他功能）时，将使用共享邮箱。
 
 如果管理员已授予用户执行该操作的权限，具有组邮箱权限的用户可以作为或代表邮箱电子邮件地址发送。 这对帮助和支持邮箱尤其有用，因为用户可从 "Contoso 支持" 或 "构建 A 接待台" 发送电子邮件。
+
+## <a name="before-you-begin"></a>开始之前
 
 创建 [共享邮箱之前](create-a-shared-mailbox.md)，应了解以下一些情况：
 
@@ -65,12 +67,12 @@ ms.locfileid: "51903210"
 
 ## <a name="related-content"></a>相关内容
 
-[创建共享邮箱](create-a-shared-mailbox.md)
+[创建共享邮箱 (](create-a-shared-mailbox.md) 文章) 
 
-[配置共享邮箱](configure-a-shared-mailbox.md)
+[配置共享邮箱 (](configure-a-shared-mailbox.md) 文章) 
 
-[将用户邮箱转换为共享邮箱](convert-user-mailbox-to-shared-mailbox.md)
+[将用户邮箱转换为共享邮箱 (](convert-user-mailbox-to-shared-mailbox.md) 文章) 
 
-[从共享邮箱删除许可证](remove-license-from-shared-mailbox.md)
+[从共享邮箱中删除许可证 (](remove-license-from-shared-mailbox.md) 文章) 
 
-[解决共享邮箱问题](resolve-issues-with-shared-mailboxes.md)
+[解决共享邮箱问题 (](resolve-issues-with-shared-mailboxes.md) 本文) 

@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 ms.assetid: d5155593-3bac-4d8d-9d8b-f4513a81479e
 description: 了解如何删除用户帐户。 决定使用用户的电子邮件和内容OneDrive操作。 并决定是保留产品许可证还是停止付费。
-ms.openlocfilehash: d40f70534499b08073278ffc2bed2b098ae1c4da
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: f4b1e0b1fb591d369cc09010db86dd995d7d4896
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51860733"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52535970"
 ---
 # <a name="delete-a-user-from-your-organization"></a>从组织删除用户
   
@@ -43,7 +43,7 @@ ms.locfileid: "51860733"
 
 如果你是全局管理员，在删除用户时，还可以向另一个用户授予访问其电子邮件的访问权限，并选择使用其电子邮件OneDrive操作。
 
-### <a name="things-to-consider"></a>要考虑的事项...
+### <a name="things-to-consider"></a>注意事项
 
 在开始之前，考虑想要使用用户的电子邮件和内容OneDrive，以及是想要保留许可证还是停止支付许可证费用。
   
@@ -87,7 +87,7 @@ ms.locfileid: "51860733"
 
 1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。  
 
-2. 选择要删除的用户的名称，选择"其他选项"" (...) "，然后选择"删除 **用户"。** 
+2. 选择要删除的用户的名称，选择三个点 (执行更多) ，然后选择"删除 **用户"。**
 
    虽然删除了用户帐户， **但仍需要支付许可证费用**。 请参阅下一过程以停止支付许可证费用。  或者，你可以将许可证分配给其他用户。 它不会自动分配给某人。
 
@@ -155,7 +155,7 @@ ms.locfileid: "51860733"
 
 ## <a name="delete-many-users-at-the-same-time"></a>同时删除多个用户
 
-请参阅 [Remove-MsolUser](https://docs.microsoft.com/powershell/module/msonline/remove-msoluser) PowerShell cmdlet。
+请参阅 [Remove-MsolUser](/powershell/module/msonline/remove-msoluser) PowerShell cmdlet。
 
 ## <a name="fix-issues-with-deleting-a-user"></a>解决删除用户时遇到的问题
 

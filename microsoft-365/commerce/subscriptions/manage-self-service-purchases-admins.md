@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 description: 管理员可以了解如何管理其组织中用户购买的自助服务。
 ms.date: 03/26/2021
-ms.openlocfilehash: af1786b7e3d1b3e4a03202d605d734271acb1da5
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: a4ac4b79a9a73f80fc22e6f14696e25925df9faf
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52333334"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52536090"
 ---
 # <a name="manage-self-service-purchases-admin"></a>管理自助购买（管理员）
 
@@ -200,6 +200,6 @@ ms.locfileid: "52333334"
 
 ## <a name="need-help-contact-us"></a>需要帮助? 请联系我们。
 
-有关自助服务购买的常见问题，请参阅 [自助服务购买常见问题](self-service-purchase-faq.md)解答。
+有关自助服务购买的常见问题，请参阅 [自助服务购买常见问题](self-service-purchase-faq.yml)解答。
 
 如果你有问题或需要自助服务购买帮助， [请联系支持](../../business-video/get-help-support.md)人员。

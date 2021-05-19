@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: ed48d448-3714-4c42-85f5-10f75f6a4278
 description: 将搜索结果从 Microsoft 365 中心的内容搜索导出到本地计算机。 电子邮件结果导出为 PST 文件。 来自SharePoint和OneDrive for Business的内容作为本机文档Office导出。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b5e900d44e59c2c37263c1162a7e631b1635cb06
-ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
+ms.openlocfilehash: 8ec09706fecbe703fa2ab38cad5f8f8304484f44
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "52311942"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52536054"
 ---
 # <a name="export-content-search-results"></a>导出内容搜索结果
 
@@ -122,7 +122,7 @@ ms.locfileid: "52311942"
   
 5. 配置以下附加选项：
 
-   ![Exchange选项](../media/OtherExportOptions.png)
+   ![配置其他导出选项](../media/OtherExportOptions.png)
 
    1. 选中"**为内容启用重复Exchange复选框** 以排除重复邮件。
   
@@ -173,7 +173,7 @@ ms.locfileid: "52311942"
   
     **电子数据展示工具** 显示有关导出过程的状态信息，包括要下载的剩余项的估计数量（和大小）。 导出过程完成后，您可以在下载文件的位置访问这些文件。
 
-## <a name="more-information"></a>更多信息
+## <a name="more-information"></a>详细信息
 
 以下是有关导出搜索结果的信息。
   

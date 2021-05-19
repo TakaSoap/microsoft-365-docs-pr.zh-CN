@@ -17,14 +17,14 @@ ms.custom:
 - AdminSurgePortfolio
 - commerce_subscriptions
 search.appverid: MET150
-description: 了解如何取消 Microsoft 365 商业版试用或付费订阅。
+description: 如果你的用户的许可证少于 25 个，则你可以在管理中心取消 Microsoft 365 商业版试用或付费订阅。
 ms.date: 04/08/2021
-ms.openlocfilehash: 022981e91abc985a0540acccccd6f211b39620a4
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: 583433e2c2cc939724f772c1cd699cc5763cb21c
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52333310"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52536114"
 ---
 # <a name="cancel-your-subscription"></a>取消订阅
 
@@ -46,7 +46,7 @@ ms.locfileid: "52333310"
 ::: moniker range="o365-worldwide"
 
 1. 在管理中心中，转到“**计费**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">你的产品</a>”页面。
-2. 找到要取消的订阅。 选择“**更多操作**”（三个点），然后选择“**取消订阅**”。
+2. 找到要取消的订阅。 选择三个点（更多操作），然后选择“**取消订阅**”。
 3. 在“**取消订阅**”窗格中，选择取消原因。 (可选)提供反馈。
 4. 选择“**保存**”。
 
@@ -69,7 +69,7 @@ ms.locfileid: "52333310"
 ::: moniker-end
 
 2. 选择“**产品**”选项卡。
-3. 找到要取消的订阅。 选择“**更多操作**”（三个点），然后选择“**取消订阅**”。
+3. 找到要取消的订阅。 选择三个点（更多操作），然后选择“**取消订阅**”。
 4. 在“**取消订阅**”窗格中，选择取消原因。 (可选)提供反馈。
 5. 选择“**保存**”。
 

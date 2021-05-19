@@ -2,22 +2,23 @@
 title: 英国付款信息
 f1.keywords:
 - NOCSH
-author: cmcatee-MSFT
 ms.author: cmcatee
+author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
-ms.custom: CommercePayInfo
+ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: 了解在哪里发送订阅付款。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 466daef6c5413c81d0e81c3d468592b20014b03e
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: 4ac549ca6509d8c1a2f8f272c0f8891a82bd6d38
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52272632"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52536246"
 ---
 # <a name="payment-information-for-united-kingdom"></a>英国付款信息
 
@@ -29,19 +30,19 @@ ms.locfileid: "52272632"
 
 如果你有由 **Microsoft Ireland Operations Limited** 计费的发票，请使用此银行信息：
 
-Bank：Bank， London\
-SWIFT 代码：SWIFTGB2L\
-IBAN 代码：GB41CITI18500812207605\
-SORT 代码：185008\
-帐号：12207605\
-帐户名称：MICROSOFT
+**Bank：** 年，伦敦  
+**SWIFT 代码：** 一百万  
+**IBAN 代码：** GB41CITI18500812207605  
+**SORT 代码** ：185008  
+**帐号** ：12207605  
+**帐户名称：** MICROSOFT
 
 如果你有由 **Microsoft Limited** 针对从 2021 年 3 月 1 日开始的订单和消耗计费的发票，请使用此银行信息：
 
-Bank：Bank Europe plc\
-SWIFT 代码：SWIFTIE2X\
-IBAN 代码：IE65CITI99005170000121\
-帐号：70000121\
-帐户名称：MICROSOFT
+**Bank：** Bank Europe plc  
+**SWIFT 代码：** 一台或多张  
+**IBAN 代码：** IE65CITI99005170000121  
+**帐号** ：70000121  
+**帐户名称：** MICROSOFT
 
 从本地 Microsoft 子公司颁发的发票使用标准 VAT/销售税/GST 费率颁发，并被视为用于 VAT/销售税/GST 的国内服务提供。

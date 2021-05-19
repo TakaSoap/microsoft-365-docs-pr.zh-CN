@@ -22,13 +22,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: fb5ac074-e203-4e1f-9843-b9d1a3e03297
-description: '了解全局管理员可以如何更改用户的电子邮件地址和显示名称。 '
-ms.openlocfilehash: a785ef17f0823429ad5eb216a330dc6f04dc7761
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+description: '了解 Microsoft 365 全局管理员可以如何更改用户的电子邮件地址和在名称更改时显示名称。 '
+ms.openlocfilehash: 2614e0ae53e5ff1cf08ded384e7470cc5967e682
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52291015"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52535982"
 ---
 # <a name="change-a-user-name-and-email-address"></a>更改用户名和电子邮件地址
 
@@ -251,8 +251,10 @@ Set-MsolUserPrincipalName -UserPrincipalName anne.wallace@contoso.onmicrosoft.co
   
 若要了解如何使用 Windows Server 2003 及更早版本在 Active Directory 中更改用户的用户名，请参阅[重命名用户帐户](/previous-versions/windows/it-pro/windows-server-2003/cc772952(v=ws.10))。
   
-## <a name="related-articles"></a>相关文章
+## <a name="related-content"></a>相关内容
 
-[管理员：重置一个或多个用户的密码](reset-passwords.md)
+[管理员：重置一个或多个用户的密码](reset-passwords.md)（文章）
   
-[为用户添加另一个电子邮件地址](../email/add-another-email-alias-for-a-user.md)
+[为用户添加另一个电子邮件地址](../email/add-another-email-alias-for-a-user.md)（文章）
+
+[创建共享邮箱](../email/create-a-shared-mailbox.md)（文章）

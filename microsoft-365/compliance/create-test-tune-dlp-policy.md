@@ -19,12 +19,12 @@ ms.custom:
 - seo-marvel-mar2020
 ms.assetid: 59414438-99f5-488b-975c-5023f2254369
 description: 本文将了解如何根据组织需求创建、测试和调整 DLP 策略。
-ms.openlocfilehash: bd4857a2baefb22d789fc713a537d7e4a656718d
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: e252c7328c59c246f739caf4b70acd44de010e42
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51052080"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52532514"
 ---
 # <a name="create-test-and-tune-a-dlp-policy"></a>创建、测试和优化 DLP 策略
 
@@ -50,7 +50,7 @@ DLP 检查电子邮件和文件，以查找敏感信息，如信用卡号。 使
 
 使用" **仅查看 DLP 合规性管理** "角色创建具有 DLP 策略和 DLP 报告仅查看权限的角色组。
 
-有关详细信息，请访问[向用户授予对 Office 365 合规中心的访问权限](../security/defender-365-security/grant-access-to-the-security-and-compliance-center.md)。
+有关详细信息，请访问[向用户授予对 Office 365 合规中心的访问权限](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md)。
   
 创建和应用 DLP 策略时需要这些权限，才能不强制执行策略。
 
@@ -152,7 +152,7 @@ Microsoft 365提供了一系列可用于创建策略的[DLP](what-the-dlp-policy
 - 条件，包括将触发规则的敏感数据实例的类型和数量。
 - 采取的操作，例如限制对内容的访问。
 - 用户通知，这是在用户的电子邮件客户端或 Web 浏览器中显示的策略提示。
-- 用户替代，确定用户是否可以选择继续其电子邮件或文件共享。
+- 用户替代确定用户是否可以选择继续其电子邮件或文件共享。
 - 事件报告，以通知管理员。
 
 ![编辑规则部分的选项](../media/DLP-create-test-tune-editing-options.png)
@@ -199,14 +199,12 @@ DLP 策略模板并非开箱即用。 您可能发现环境中出现一些误报
 
 
 一个选项是从策略中删除澳大利亚驾驶证信息类型。 它就在那里，因为它是 DLP 策略模板的一部分，但不强制我们使用它。 如果你只对税务文件编号（而不是驱动程序许可证）感兴趣，则只需将其删除。 例如，你可以将其从策略中的低容量规则中删除，但将其保留为高容量规则，以便仍检测到多个驱动程序许可证的列表。
-
-![从规则中删除敏感信息类型的选项](../media/DLP-create-test-tune-delete-low-volume-rule.png)
  
-另一个选项是只需增加实例计数，以便仅在存在多个实例时检测到低容量的驱动程序许可证。
+另一个选项是增加实例计数，以便仅在存在多个实例时检测到低容量的驱动程序许可证。
 
 ![编辑实例计数的选项](../media/DLP-create-test-tune-edit-instance-count.png)
 
-除了更改实例计数之外，还可以调整匹配准确度 (可信度) 。 如果您的敏感信息类型具有多个模式，您可以调整规则中的匹配准确度，以便规则仅匹配特定模式。 例如，为了帮助减少误报，你可以设置规则的匹配准确度，以便它仅匹配可信度最高的模式。 了解可信度的计算方式有点复杂 (超出本文) 的范围，但下面详细说明了如何使用可信度调整 [规则](data-loss-prevention-policies.md#match-accuracy)。
+除了更改实例计数之外，还可以调整匹配准确度 (可信度) 。 如果您的敏感信息类型具有多个模式，您可以调整规则中的匹配准确度，以便规则仅匹配特定模式。 例如，为了帮助减少误报，你可以设置规则的匹配准确度，以便它仅匹配可信度最高的模式。 有关置信水平详细信息，请参阅 [如何使用可信度调整规则](data-loss-prevention-policies.md#match-accuracy)。
 
 最后，如果你希望更高级一点，可以自定义任何敏感信息类型，例如，可以从澳大利亚驾驶证号码的关键字列表中删除"澳大利亚 NSW"，以消除上面触发的误报。 [](sensitive-information-type-entity-definitions.md#australia-drivers-license-number) 若要了解如何使用 XML 和 PowerShell 执行此操作，请参阅自定义内置 [敏感信息类型](customize-a-built-in-sensitive-information-type.md)。
 

@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 本文介绍如何管理核心电子数据展示事例。 这包括关闭案例、重新打开已关闭的案例和删除案例。
-ms.openlocfilehash: 251ca932954071cf949c45343130f122464dcf01
-ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
+ms.openlocfilehash: 8a54d5c8f93d36351538bc235a6dbeaaa602c3e9
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "52310872"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52532442"
 ---
 # <a name="close-reopen-and-delete-a-core-ediscovery-case"></a>关闭、重新打开和删除核心电子数据展示案例
 
@@ -82,7 +82,7 @@ ms.locfileid: "52310872"
 
     该过程完成后，在核心电子数据展示页面上将案例的状态更改为"活动 **"。**
 
-7.  (可选) 若要启用与重新打开的案例关联的任何保留项，请转到保留选项卡，选择保留，然后选择保留项飞出页面上的"状态"下的复选框。 
+6.  (可选) 若要启用与重新打开的案例关联的任何保留项，请转到保留选项卡，选择保留，然后选择保留项飞出页面上的"状态"下的复选框。 
   
 ## <a name="delete-a-case"></a>删除案例
 
@@ -108,6 +108,6 @@ ms.locfileid: "52310872"
 
 3. 在案例主页上的"状态"**下**，单击"**删除大小写"。**
 
-      ![重新打开已关闭的案例](../media/eDiscoveryCaseHomePageDelete.png)
+      ![删除案例](../media/eDiscoveryCaseHomePageDelete.png)
 
 如果你尝试删除的案例仍包含电子数据展示保留，你将收到错误消息。 您必须删除与案例关联的所有保留，然后重试以删除该案例。

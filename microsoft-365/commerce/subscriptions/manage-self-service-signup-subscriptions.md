@@ -19,12 +19,12 @@ ms.custom:
 search.appverid: MET150
 description: 了解如何管理组织的免费自助注册订阅。
 ms.date: 03/17/2021
-ms.openlocfilehash: 9c29d36ff28e312fa3782b60f89fa755d4df9bf3
-ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
+ms.openlocfilehash: 741c9e0b45f127ffc0753b34982073f90c525d5b
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52345126"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52536066"
 ---
 # <a name="manage-self-service-sign-up-subscriptions"></a>管理自助服务注册订阅
 
@@ -39,7 +39,7 @@ ms.locfileid: "52345126"
 
 ## <a name="how-are-these-subscriptions-different-from-self-service-purchase-subscriptions"></a>这些订阅与自助服务购买订阅如何不同？
 
-自助服务注册订阅是免费的，可用于比自助服务购买订阅更大的产品列表。 当用户注册自助服务购买订阅时，他们负责支付该订阅费用。 自助服务购买订阅仅适用于 Power Platform (Power BI、Power Apps、Power Automate) 、Project 和 Visio。 有关详细信息，请参阅 [自助服务购买常见问题解答](self-service-purchase-faq.md)。
+自助服务注册订阅是免费的，可用于比自助服务购买订阅更大的产品列表。 当用户注册自助服务购买订阅时，他们负责支付该订阅费用。 自助服务购买订阅仅适用于 Power Platform (Power BI、Power Apps、Power Automate) 、Project 和 Visio。 有关详细信息，请参阅 [自助服务购买常见问题解答](self-service-purchase-faq.yml)。
 
 ## <a name="block-users-from-signing-up"></a>阻止用户注册
 
