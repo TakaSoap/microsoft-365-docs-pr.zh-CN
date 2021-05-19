@@ -21,12 +21,12 @@ search.appverid:
 description: 了解如何使用 AllowSelfServicePurchase PowerShell cmdlet 打开或关闭自助服务购买。
 ROBOTS: NOINDEX, NOFOLLOW
 ms.date: 03/18/2021
-ms.openlocfilehash: 09161f69e72babe8270b339243d73444b93d9959
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: 012874a8794e006d97c4f74014e92e1f7f3c2709
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52333370"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52536126"
 ---
 # <a name="use-allowselfservicepurchase-for-the-mscommerce-powershell-module"></a>将 AllowSelfServicePurchase 用于 MSCommerce PowerShell 模块
 
@@ -43,6 +43,7 @@ ms.locfileid: "52333370"
 若要使用 **MSCommerce** PowerShell 模块，您需要：
 
 - Windows 10设备
+- PowerShell 5 或以下产品。 当前，此模块不支持 PowerShell 6.x/7.x。
 - 设备的管理员权限
 - 租户的全局或帐单管理员角色
 
@@ -161,3 +162,9 @@ To remove the **MSCommerce** PowerShell module from your computer, run the follo
 ```powershell
 Uninstall-Module -Name MSCommerce
 ```-->
+
+## <a name="related-content"></a>相关内容
+
+[管理自助服务购买 (管理)  (](manage-self-service-purchases-admins.md) 文章) 
+
+[自助服务购买常见问题 (](self-service-purchase-faq.yml) 文章) 

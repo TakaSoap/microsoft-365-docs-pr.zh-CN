@@ -18,19 +18,19 @@ ms.custom:
 - AdminSurgePortfolio
 - commerce_licensing
 search.appverid: MET150
-description: 了解如何查看和批准或拒绝来自用户针对 Microsoft 365 商业版订阅的许可证请求。
+description: 了解如何查看和批准或拒绝用户针对企业版订阅Microsoft 365请求。
 ms.date: 08/07/2020
-ms.openlocfilehash: 06ee210b39c19c1f2c8a2041c463568e55001b6e
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: 6cbfd81f4f6deba642729f1fef0b826b07a99f56
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52331546"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52535670"
 ---
 # <a name="manage-license-requests"></a>管理许可证请求
 
 > [!NOTE]
-> 本文中的信息仅适用于自助购买的产品。 若要了解更多信息，请参阅 [自助服务购买常见问题解答](../subscriptions/self-service-purchase-faq.md)。
+> 本文中的信息仅适用于自助购买的产品。 若要了解更多信息，请参阅 [自助服务购买常见问题解答](../subscriptions/self-service-purchase-faq.yml)。
 
 如果在组织中禁用自助服务购买，可以使用许可证请求来管理用户的许可证请求过程。 当用户尝试为已阻止的产品进行自助购买时，他们可以向管理员提交许可证请求。当他们提出请求时，他们可以添加还需要产品许可证的其他用户的姓名。
 
@@ -39,7 +39,7 @@ ms.locfileid: "52331546"
 
 若要查看和管理许可证请求，管理员使用"许可"页上的"请求 **"** 选项卡。 该列表显示所请求的产品的名称、请求许可证的人的姓名、请求的日期以及请求的状态。 管理员可以筛选列表以显示挂起或已完成的请求。 请求将进行 30 天。
 
-## <a name="before-you-begin"></a>准备工作
+## <a name="before-you-begin"></a>开始之前
 
 你必须是全局管理员才能执行本文中的任务。 有关详细信息，请参阅 [关于管理员角色](../../admin/add-users/about-admin-roles.md)。
 

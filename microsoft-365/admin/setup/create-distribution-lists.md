@@ -23,12 +23,12 @@ ms.custom:
 - AdminSurgePortfolio
 - okr_smb
 description: 了解如何在管理中心内创建Microsoft 365组或列表，以便你可以向组发送电子邮件，而无需键入每个收件人的姓名。
-ms.openlocfilehash: 5c4781653a5f18b7a41dc20212771368132801cd
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: bd5e246caa8d1b56a33db21d70eb5cbdb7b5ed92
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50914242"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52535814"
 ---
 # <a name="create-distribution-groups-in-the-microsoft-365-admin-center"></a>在管理中心Microsoft 365通讯组
   
@@ -70,6 +70,6 @@ ms.locfileid: "50914242"
     
 6. 若要将用户添加到通讯组列表，请参阅向通讯组添加 [用户或联系人](../email/add-user-or-contact-to-distribution-list.md)。
     
-在"使用联系人组Outlook 2016或Outlook通讯组"主题中， (web 上的) 组[Outlook。](https://support.microsoft.com/office/1c97fcb2-0ed4-41e6-b401-58f9d7d40e39) 
+在"使用联系人组Outlook 2016 Outlook"中的"使用联系人组"中 (之前) 通讯组列表[Outlook。](https://support.microsoft.com/office/1c97fcb2-0ed4-41e6-b401-58f9d7d40e39) 
   
 请查看通讯 [组问题，](/office365/troubleshoot/groups/distribution-list-issues) 帮助解决通讯组列表问题。 

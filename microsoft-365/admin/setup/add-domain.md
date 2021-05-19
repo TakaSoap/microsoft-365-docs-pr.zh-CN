@@ -25,13 +25,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 6383f56d-3d09-4dcb-9b41-b5f5a5efd611
-description: 通过添加 DNS 主机Microsoft 365 DNS 记录Microsoft 365管理中心将域添加到管理中心。 安装向导将指导你完成该过程。
-ms.openlocfilehash: 747de5f61dc9fce53f82f52b65f701572a56f8d4
-ms.sourcegitcommit: d4604e333507c6f57d5bf327531a241b649052de
+description: 使用设置向导，通过添加 DNS Microsoft 365 DNS Microsoft 365管理中心将域添加到管理中心。
+ms.openlocfilehash: 96849e90a420dc31dbde8c55d5a1108f73f85978
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51470877"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52535826"
 ---
 # <a name="add-a-domain-to-microsoft-365"></a>将域添加到 Microsoft 365
 
@@ -39,17 +39,9 @@ ms.locfileid: "51470877"
   
  *若要添加、修改或删除域，**你必须** 是企业 **或** 企业计划的 [全局管理员](https://products.office.com/business/office)。这些更改会影响整个 *租户，自定义* 管理员或常规用户将无法进行这些更改。*  
 
- 按照以下步骤添加、设置或继续设置域。 
+ ## <a name="add-a-domain"></a>添加域
 
-::: moniker range="o365-worldwide"
-  
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/dda6df6d-37b0-41ff-905b-089448355a31?autoplay=false]
-  
-::: moniker-end
+按照以下步骤添加、设置或继续设置域。 
 
 ::: moniker range="o365-worldwide"
 
@@ -70,7 +62,7 @@ ms.locfileid: "51470877"
     
 2. 转到 **"设置**  >  **域"** 页面。 
 
-3. 选择 **添加域**。
+3. 选择 “**添加域**”。
     
 4. 输入要添加的域的名称，然后选择"下一步 **"。**
     
@@ -142,12 +134,12 @@ ms.locfileid: "51470877"
   
 如果你有一个用于你的企业的网站，它将在其所在的位置保持工作。 域连接设置步骤不会影响您的网站。
 
-## <a name="related-articles"></a>相关文章
+## <a name="related-content"></a>相关内容
 
-[关于域的常见问题](domains-faq.yml)
+[域常见问题](domains-faq.yml) (文章) 
 
-[什么是域？](../get-help-with-domains/what-is-a-domain.md)
+[什么是域？](../get-help-with-domains/what-is-a-domain.md)  (文章) 
 
-[在 Microsoft 365 中购买域名](../get-help-with-domains/buy-a-domain-name.md)
+[购买域名Microsoft 365 (](../get-help-with-domains/buy-a-domain-name.md)文章) 
 
-[设置域（主机特定的操作说明）](../get-help-with-domains/set-up-your-domain-host-specific-instructions.md)
+[设置域设置](../get-help-with-domains/set-up-your-domain-host-specific-instructions.md) (文章) 

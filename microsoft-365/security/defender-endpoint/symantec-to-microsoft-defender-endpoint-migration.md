@@ -19,15 +19,15 @@ ms.collection:
 - m365solution-symantecmigrate
 - m365solution-overview
 ms.topic: article
-ms.date: 05/10/2021
+ms.date: 05/14/2021
 ms.custom: migrationguides
 ms.reviewer: depicker, yongrhee, chriggs
-ms.openlocfilehash: 3e3a30ac4d03a40157fd7ec7f06e6e2a82c685a0
-ms.sourcegitcommit: 68383240ef7a673d5f28e2ecfab9f105bf1d8c8f
+ms.openlocfilehash: 62a916fcf89432a512ada1b85002cce401e4dd23
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "52327386"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52530894"
 ---
 # <a name="migrate-from-symantec-to-microsoft-defender-for-endpoint"></a>从 Symantec 迁移到 Microsoft Defender for Endpoint
 如果你计划从 Symantec Endpoint Protection (Symantec) 切换到适用于 Endpoint (的[Microsoft Defender for Endpoint](microsoft-defender-endpoint.md)) ，你的位置正确。 使用本文作为指南。
@@ -48,9 +48,9 @@ ms.locfileid: "52327386"
 
 |阶段 |说明 |
 |--|--|
-|[准备迁移](symantec-to-microsoft-defender-atp-prepare.md) |在 **"准备**"阶段，获取适用于终结点的 Microsoft Defender，规划角色和权限，并授予对 Microsoft Defender 安全中心。 还可以配置设备代理和 Internet 设置，以启用组织设备与适用于终结点的 Microsoft Defender 之间的通信。 |
-|[设置 Microsoft Defender for Endpoint](symantec-to-microsoft-defender-atp-setup.md) |在 **安装** 阶段，配置 Microsoft Defender 防病毒 和 Symantec Endpoint Protection。 还可以创建设备组、集合和组织单位。 最后，配置反恶意软件策略和实时保护设置。|
-|[载入到 Microsoft Defender for Endpoint](symantec-to-microsoft-defender-atp-onboard.md) |在 **载入** 阶段，将你的设备载入到 Microsoft Defender for Endpoint 并验证这些设备是否正在与 Microsoft Defender for Endpoint 通信。 最后，卸载 Symantec 并确保通过 Microsoft Defender for Endpoint 的保护处于活动状态。 |
+|[准备迁移](symantec-to-microsoft-defender-atp-prepare.md) |在 **"准备**"阶段，更新组织设备、获取 Microsoft Defender for Endpoint、规划角色和权限，并授予对 Microsoft Defender 安全中心。 还可以配置设备代理和 Internet 设置，以启用组织设备与适用于终结点的 Defender 之间的通信。 |
+|[设置 Microsoft Defender for Endpoint](symantec-to-microsoft-defender-atp-setup.md) |在 **设置阶段**，启用Microsoft Defender 防病毒并设置为被动模式。 还可以为 & 和 Symantec Microsoft Defender 防病毒配置设置Endpoint Protection。 然后，创建设备组、集合和组织单位。 最后，配置反恶意软件策略和实时保护设置。|
+|[载入到 Microsoft Defender for Endpoint](symantec-to-microsoft-defender-atp-onboard.md) |在载入 **阶段，** 将设备载入到 Microsoft Defender for Endpoint，确认 Microsfot Defender 防病毒正在被动模式下运行，并验证终结点是否正在与 Defender for Endpoint 通信。 然后，卸载 Symantec 并确保 Defender for Endpoint 正常工作。 |
 
 ## <a name="whats-included-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint 中包含哪些内容？
 

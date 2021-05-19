@@ -21,12 +21,12 @@ ms.custom:
 search.appverid: MET150
 description: 了解如何解读 Microsoft 365 商业版的费用、帐单和付款信息或发票，以及如何更改采购订单号。
 ms.date: 05/04/2021
-ms.openlocfilehash: 3b183c219e25bcef21add70e2c704a7a0f3fe354
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: febcbdee563c18b3f17ee35b98f2d68b15f456d8
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52331954"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52535682"
 ---
 # <a name="understand-your-bill-or-invoice-for-microsoft-365-for-business"></a>了解你的 Microsoft 365 商业版账单或发票
 
@@ -128,5 +128,12 @@ ms.locfileid: "52331954"
 
 ## <a name="related-content"></a>相关内容
 
+[了解如何查找和查看帐单或](view-your-bill-or-invoice.md) 发票 (文章) 
+
+[更改帐单邮寄地址](change-your-billing-addresses.md) (文章) 
+
+[更改组织地址、技术联系人电子邮件和其他信息](../../admin/manage/change-address-contact-and-more.md) ， (文章) 
+
 [支付商业Microsoft 365订阅费用](pay-for-your-subscription.md) (文章) \
+
 [Minecraft:Education Edition 付款方式](/education/windows/school-get-minecraft)（文章）

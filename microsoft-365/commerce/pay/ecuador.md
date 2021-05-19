@@ -1,23 +1,24 @@
 ---
 title: 厄瓜多尔的付款信息
-author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
+author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
-ms.custom: CommercePayInfo
+ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: 了解在哪里发送订阅付款。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 495206c84dbc427e98024355ca31742d8556d39e
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: df2db6704d1cbeebc5d4a90b2e4df318a9c04e53
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52273880"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52535598"
 ---
 # <a name="payment-information-for-ecuador"></a>厄瓜多尔的付款信息
 
@@ -31,4 +32,4 @@ Please pay in USD only and reference invoice number (s) on your payment invoice.
 **分支：** Dallas  
 **SWIFT 代码：** BOFAUS3N  
 **帐号** ：4426587954  
-**帐户名称：** Microsoft  
+**帐户名称：** Microsoft

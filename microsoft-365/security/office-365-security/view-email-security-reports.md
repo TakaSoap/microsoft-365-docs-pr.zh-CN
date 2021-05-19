@@ -19,12 +19,12 @@ description: 了解如何查找和使用组织的电子邮件安全报告。 安
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 5d9f6d12fef8a2ef6241fbbd5e0e2a980284e9cc
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 11fe6fd76d21b2dbd7a3e651d40efaa79f675a43
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51203767"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52531005"
 ---
 # <a name="view-email-security-reports-in-the-security--compliance-center"></a>查看安全与合规中心内的电子邮件安全报告
 
@@ -246,36 +246,52 @@ ms.locfileid: "51203767"
 
 ## <a name="spoof-detections-report"></a>欺骗检测报告
 
-欺骗 **检测** 报告显示检测到的欺骗邮件数，以及出于合法业务原因 (欺骗邮件被视为"良好"的邮件) 。 有关欺骗功能详细信息，请参阅 [EOP 中的反欺骗保护](anti-spoofing-protection.md)。
+> [!NOTE]
+> 本文中所述的改进的欺骗检测报告在预览版中，可能会更改，并且并非在所有组织中都可用。 较旧版本的报告只显示"**良好邮件"和**"**捕获为垃圾邮件"。**
 
-报告聚合视图允许筛选 90 天，而详细信息视图仅允许筛选 10 天。
+欺骗 **检测报告显示** 有关由于欺骗被阻止或允许的邮件的信息。 有关欺骗功能详细信息，请参阅 [EOP 中的反欺骗保护](anti-spoofing-protection.md)。
+
+报告聚合视图允许筛选 45 天，而详细信息视图仅 <sup>\*</sup> 允许筛选 10 天。
+
+<sup>\*</sup> 最终，你将能够使用最多 90 天的筛选。
 
 若要查看报告，请打开安全与&中心，**转到报告**[仪表板](https://protection.office.com) \> 并选择 **欺骗检测**。 若要直接转到报告，请打开 <https://protection.office.com/reportv2?id=SpoofMailReport> 。
 
 ![报告仪表板中的欺骗检测小组件](../../media/spoof-detections-widget.png)
 
-当您将鼠标悬停在 (中) 的数据点时，可以看到经过多少封欺骗邮件。
+当您将鼠标悬停在 (中) 的数据点时，可以看到检测到的欺骗邮件的个个和原因。
 
 通过单击"筛选器"并选择以下一个或多个值，可以筛选图表和详细信息表：
 
 - **开始日期和****结束日期**
 
-- **良好的邮件**
+- **结果**
+  - **Pass**
+  - **失败**
+  - **SoftPass**
+  - **无**
+  - **其他**
 
-- **捕获为垃圾邮件**
+- **欺骗类型**：**内部和外部**
 
 ![欺骗检测报告中的报告视图](../../media/spoof-detections-report-view.png)
 
 如果单击 **"查看详细信息表"，** 可以看到以下详细信息：
 
 - **Date**
-- **欺骗发件人**
-- **真正的发件人**
-- **发件人 IP**
-- **Action**
+- **欺骗用户**
+- **发送基础结构**
+- **欺骗类型**
+- **结果**
+- **结果代码**
+- **SPF**
+- **DKIM**
+- **DMARC**
 - **邮件计数**
 
 若要返回到报告报表视图，请单击"查看 **报告"。**
+
+有关复合身份验证结果代码详细信息，请参阅邮件中的[反垃圾邮件Microsoft 365。](anti-spam-message-headers.md)
 
 ## <a name="threat-protection-status-report"></a>威胁防护状态报告
 

@@ -22,21 +22,14 @@ search.appverid:
 - MOE150
 ms.assetid: de2da300-dbb6-4725-bb12-b85a9d296e75
 description: '保护你的业务电子邮件和数据免受网络威胁，包括勒索软件、网络钓鱼和恶意附件。 '
-ms.openlocfilehash: c20b0d070c4c4ca28ee681e560c4a91c412241fc
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: dcaeb9588f50d1e12bdff5164f5f41a0beee2e47
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244535"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52535874"
 ---
 # <a name="top-10-ways-to-secure-microsoft-365-for-business-plans"></a>保护业务计划的 Microsoft 365的十大方法
-
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> 管理中心正在发生改变。 如果你的体验与此处提供的详细信息不匹配，请参阅[有关新版 Microsoft 365 管理中心](../microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet)。
-
-::: moniker-end
 
 如果你是使用 Microsoft 业务计划之一的中小型组织，并且你的组织类型被网络犯罪和黑客攻击，请使用本文中的指导提高组织的安全性。 本指南可帮助你的组织实现《时分学校网络安全宣传活动手册》中所述 [的目标](https://go.microsoft.com/fwlink/p/?linkid=2015598)。
 
@@ -57,7 +50,7 @@ Microsoft 建议你完成下表中列出的适用于你的服务计划的任务�
 
 如有 Microsoft 商业高级版，设置安全性并开始安全协作的最快方法是遵循此库中的指南：[面向小型企业和活动的 Microsoft 365](../../campaigns/index.md)。 此指南是与 Microsoft Defending Democracy 团队合作制定的，旨在保护所有小型企业客户免受老练黑客发起的网络威胁。
 
-开始之前，[请在安全中心](https://docs.microsoft.com/microsoft-365/security/defender/microsoft-secure-score)Microsoft 365安全Microsoft 365安全分数。 在集中式仪表板中，你可以监视和提高Microsoft 365标识、数据、应用、设备和基础结构的安全性。 您将获得配置建议安全功能、执行与安全相关的任务 (如查看报告) ，或者使用第三方应用程序或软件解决建议。 通过进一步深入了解一组更广泛的 Microsoft 产品和服务，你可以确信地报告组织的安全运行状况。
+开始之前，[请在安全中心](../../security/defender/microsoft-secure-score.md)Microsoft 365安全Microsoft 365安全分数。 在集中式仪表板中，你可以监视和提高Microsoft 365标识、数据、应用、设备和基础结构的安全性。 您将获得配置建议安全功能、执行与安全相关的任务 (如查看报告) ，或者使用第三方应用程序或软件解决建议。 通过进一步深入了解一组更广泛的 Microsoft 产品和服务，你可以确信地报告组织的安全运行状况。
 
 ![Microsoft 安全分数的屏幕截图](../../media/secure-score.png)
 

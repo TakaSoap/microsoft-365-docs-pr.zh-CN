@@ -1,23 +1,24 @@
 ---
 title: 摩尔多瓦的付款信息
-author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
+author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
-ms.custom: CommercePayInfo
+ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: 了解在哪里发送订阅付款。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: f99d4cb7e62a436bcc8bce7cd789880bd36fa500
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: c8ec5612d2f5e7f1dfcad4c2bb7a6017692996c0
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52273280"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52535406"
 ---
 # <a name="payment-information-for-moldova"></a>摩尔多瓦的付款信息
 
@@ -31,4 +32,4 @@ Please pay in USD only and reference invoice number (s) on your payment invoice.
 **SWIFT 代码：** 一百万  
 **IBAN：** GB95CITI18500812510049  
 **帐号** ：12510049  
-**帐户名称：** MICROSOFT  
+**帐户名称：** MICROSOFT

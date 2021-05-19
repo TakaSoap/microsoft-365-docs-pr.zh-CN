@@ -24,41 +24,29 @@ search.appverid:
 - MET150
 - MOE150
 description: 按照此解决方案中的步骤从员工Microsoft 365并保护组织的数据。
-ms.openlocfilehash: 4b4cf59fdce81b3098ee333095daa8e1af1cd5c5
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 79baf5cbd94d555c1dff1859f5045cde3dbcfdc0
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52241732"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52535900"
 ---
 # <a name="overview-remove-a-former-employee-and-secure-data"></a>概述：删除以前的员工和安全数据
 
 我们经常收到一个问题："当员工离开我的组织时，我应该如何保护数据和保护访问？" 本系列文章介绍如何阻止访问Microsoft 365、保护数据应执行的步骤以及如何允许其他员工访问数据。
 
-观看有关删除员工的简短视频。 <br><br>
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOfR] 
-
-如果你发现此视频有帮助，请查看[适用于小型企业和 Microsoft 365 新用户的完整培训系列](../../business-video/index.yml)。
-
-防止员工登录：
-
-1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。
-2. 选择用户名旁边的框，然后选择重置 **密码**。
-3. 输入新密码，然后选择"重置 **"。**  (不要将其发送给他们。) 
-4. 选择要转到其属性窗格的用户名称，在"帐户"选项卡上，选择"**启动注销"。**
-
-> [!NOTE]
-> 你需要是全局管理员才能启动注销。
-
-在一小时内（或离开当前Microsoft 365页面后）将提示他们重新登录。 访问令牌适合一小时，因此时间线取决于该令牌所剩的时间，以及他们是否导航到当前网页。
-
-> [!IMPORTANT]
-> 尽管我们已对此解决方案中的步骤进行编号，并且不必按确切顺序完成解决方案，但我们建议采用这种方法执行这些步骤。
+:::image type="content" source="../../media/delete-user-overview.png" alt-text="Screenshot： Overview steps for removing a former employee":::
 
 ## <a name="before-you-begin"></a>开始之前
 
 您需要是全局管理员才能完成此解决方案中的步骤。
+
+## <a name="solution-remove-a-former-employee"></a>解决方案：删除以前的员工
+
+> [!IMPORTANT]
+> 尽管我们已对此解决方案中的步骤进行编号，并且不必按确切顺序完成解决方案，但我们建议采用这种方法执行这些步骤。
+
+:::image type="content" source="../../media/delete-user-account.png" alt-text="Screenshot： Steps for removing a former employee from your organization":::
 
 |||
 |:-----|:-----|

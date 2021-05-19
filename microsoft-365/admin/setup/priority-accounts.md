@@ -13,12 +13,12 @@ ms.collection:
 - Adm_O365
 ms.custom: AdminSurgePortfolio
 description: 监视发送到或发送自对业务影响较高的帐户的失败和延迟的电子邮件。
-ms.openlocfilehash: f67b9c6f0eaa229b650026670cf1b2adf88ab3c0
-ms.sourcegitcommit: 58fbcfd6437bfb08966b79954ca09556e636ff4a
+ms.openlocfilehash: 2a58f4090244fc6d68be69cf6b3c8ab6e00874fa
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/08/2021
-ms.locfileid: "51632176"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52535802"
 ---
 # <a name="manage-and-monitor-priority-accounts"></a>管理和监视优先级帐户
 
@@ -75,7 +75,7 @@ ms.locfileid: "51632176"
 
 1. 转到位于 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> 的管理中心。
 
-2. 转到 **"用户**  >  **""** 活动用户"，然后选择页面顶部的"..."。 选择 **管理优先级帐户**。
+2. 转到"**用户**  >  **""** 活动用户"， (三个点) 页面顶部的其他操作。 选择 **管理优先级帐户**。
 
 3. 选择 **"添加帐户**"，在" **添加优先级** 帐户"页上的搜索字段中，键入要添加到优先级帐户列表的人的姓名。
 

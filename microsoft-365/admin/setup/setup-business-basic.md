@@ -24,12 +24,12 @@ search.appverid:
 - MOE150
 - BEA160
 description: 了解如何设置 Microsoft 365 商业基础版订阅。
-ms.openlocfilehash: a4636006a6819769752ef6ae61a5cb7155d5289e
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 51a83d4cc230fa4bdb78bba71c9c7193a36fd391
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244463"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52535718"
 ---
 # <a name="set-up-microsoft-365-business-basic"></a>设置 Microsoft 365 商业基础版
 
@@ -53,13 +53,13 @@ ms.locfileid: "52244463"
 
 ::: moniker range="o365-germany"
 
-1. 如果使用 Office 365 Germany，请转到[此管理中心](https://go.microsoft.com/fwlink/p/?linkid=848041)。
+1. 转到位于 <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">https://portal.office.de</a> 的管理中心。
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. 如果使用 由世纪互联运营的 Office 365，请转到[此管理中心](https://go.microsoft.com/fwlink/p/?linkid=850627)。
+1. 转到位于 <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">https://portal.partner.microsoftonline.cn</a> 的管理中心。
 
 ::: moniker-end 
 

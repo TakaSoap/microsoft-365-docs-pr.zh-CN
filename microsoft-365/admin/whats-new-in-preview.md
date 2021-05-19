@@ -21,12 +21,12 @@ description: 管理Microsoft 365中心 - 了解本月添加的功能。
 ms.custom:
 - MACDashWhatsNew
 - AdminSurgePortfolio
-ms.openlocfilehash: b226f48edd5f65100c81e95d2026c7c172959c8d
-ms.sourcegitcommit: b169f6ad3e44a7fcebf77f43be9eb5edd84ea5ef
+ms.openlocfilehash: b75c6be901dfe2bcfe9a0d8fad8fbb56eecd34d6
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "52077307"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52535742"
 ---
 # <a name="whats-new-in-the-microsoft-365-admin-center"></a>Microsoft 365管理中心的新增功能
 
@@ -37,7 +37,7 @@ ms.locfileid: "52077307"
 
 ::: moniker-end
 
-我们正在不断将新功能添加到 Microsoft 365[管理](https://docs.microsoft.com/microsoft-365/business-video/admin-center-overview)中心，修复我们了解的问题，并基于你的反馈进行更改。 请看下面的内容，了解现在可供你使用的信息。 一些功能以不同的速度为客户提供推出。 如果尚未看到功能，请尝试 [将自己添加到定向发布](manage/release-options-in-office-365.md)。
+我们正在不断将新功能添加到 Microsoft 365[管理](../business-video/admin-center-overview.md)中心，修复我们了解的问题，并基于你的反馈进行更改。 请看下面的内容，了解现在可供你使用的信息。 一些功能以不同的速度为客户提供推出。 如果尚未看到功能，请尝试 [将自己添加到定向发布](manage/release-options-in-office-365.md)。
 
 如果你希望了解其他 Microsoft 云服务的新增功能：
 
@@ -48,7 +48,7 @@ ms.locfileid: "52077307"
 - [Microsoft 365 Defender 的新增功能](../security/mtp/whats-new.md)
 - [SharePoint管理中心的新增功能](/sharepoint/what-s-new-in-admin-center)
 - [Office 更新](/OfficeUpdates/)
-- [如何检查Windows发布运行状况](https://docs.microsoft.com/windows/deployment/update/check-release-health)
+- [如何检查Windows发布运行状况](/windows/deployment/update/check-release-health)
 
 ## <a name="april-2021"></a>2021 年 4 月
 
@@ -123,7 +123,7 @@ ms.locfileid: "52077307"
 
 有两种方法可以开始：
 
-- 转到 **"用户"，** 然后在"更多操作"菜单中选择"管理 **优先级帐户** "以将用户添加到列表中。
+- 转到 **"用户"，** 然后在"执行更多操作 (菜单中) 管理 **优先级** 帐户"，将用户添加到列表中。
 - 转到"**设置"，** 找到"监视 **最重要的** 帐户"设置任务，然后选择"**开始使用"。**
 
 有关优先级帐户详细信息，请查看监视 [优先级帐户](./setup/priority-accounts.md)。
@@ -135,7 +135,7 @@ ms.locfileid: "52077307"
 - The Search box moved to the header area where it says "Microsoft 365 admin center" so you now search from any page， not just the Home page. 我们甚至有一个快捷方式 **：Alt+S**。
 - 搜索更智能，可以更快地提供更好的结果。 尝试键入"2fa"以开始。
 - 搜索结果按您可以执行的项目或操作类型进行组织。
-  - **用户**：选择用户的名称，你可以直接编辑该用户。 如果选择其名称旁边的"更多操作"菜单，可以重置其密码。 可以按用户显示名称、名字、用户名或主电子邮件地址以及电子邮件别名进行搜索。 但是，若要获取完全匹配项，请按主电子邮件地址或用户名进行搜索。
+  - **用户**：选择用户的名称，你可以直接编辑该用户。 如果选择其名称旁边的三个点 (其他) 菜单，可以重置其密码。 可以按用户显示名称、名字、用户名或主电子邮件地址以及电子邮件别名进行搜索。 但是，若要获取完全匹配项，请按主电子邮件地址或用户名进行搜索。
   - **组**：从任何页面编辑组、添加成员、分配所有者。
   - **操作**：与搜索用户然后重置其密码的方式类似，您还可以从任何页面搜索"重置密码"，然后为用户重置一个或多个密码。
   - **导航**：导航下的结果可以快速帮助你快速访问管理中心中的页面。 例如，搜索"角色"将你访问 Azure AD 角色的角色页面。

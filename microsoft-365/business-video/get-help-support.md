@@ -18,13 +18,13 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: 了解如何在 Microsoft 365 商业高级版中获取管理员帮助或支持。
-ms.openlocfilehash: 8db4f7675f96bac2157c9c0f93ab506c8a39e1bb
-ms.sourcegitcommit: 68383240ef7a673d5f28e2ecfab9f105bf1d8c8f
-ms.translationtype: HT
+description: 你必须是商业版订阅的管理员，才能获得管理员帮助，或在线或电话Microsoft 365 商业高级版。
+ms.openlocfilehash: e6308a9728731052d540cf3e872b6e153b64aae2
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "52327182"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52535706"
 ---
 # <a name="get-support"></a>获取支持
 
@@ -252,3 +252,12 @@ Office 365 允许委派多个类型的管理员来行使不同的职能。此服
 你也可以[搜索 Microsoft 365 商业版社区论坛](https://go.microsoft.com/fwlink/p/?LinkId=518605)，查找已知问题和新潮主题，或发帖提出新问题。社区论坛由训练有素的 Microsoft 支持专员监管，他们可以帮助你解决问题。
 
 ::: moniker-end
+
+
+## <a name="related-content"></a>相关内容
+
+[查找文档和培训](find-help-answers.md) (文章) 
+
+[员工快速设置](employee-quick-setup.md) (文章) 
+
+[设置Microsoft 365 商业高级版视频](setup-overview.md) (概述) 

@@ -11,17 +11,17 @@ localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 12/28/2020
+ms.date: 05/17/2021
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 8c049a7301cc651dbf2621d0baa398117856b925
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: 5e754c2f4b5406d4b91ef624415f3819d3171305
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52274636"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52536018"
 ---
 # <a name="configure-and-validate-microsoft-defender-antivirus-network-connections"></a>配置和验证 Microsoft Defender 防病毒软件网络连接
 
@@ -32,25 +32,23 @@ ms.locfileid: "52274636"
 
 - [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
 
-为了确保Microsoft Defender 防病毒保护正常工作，需要配置网络以允许终结点和某些 Microsoft 服务器连接。
-
-本文列出必须允许的连接（如使用防火墙规则）并提供验证连接的说明。 正确配置保护有助于确保从云提供的保护服务获得最佳价值。
+为了确保Microsoft Defender 防病毒保护正常工作，需要配置网络以允许终结点和某些 Microsoft 服务器连接。 本文列出必须允许的连接（如使用防火墙规则）并提供验证连接的说明。 正确配置保护有助于确保从云提供的保护服务获得最佳价值。
 
 有关网络连接的一些详细信息，请参阅博客文章 [对 Microsoft Active Protection Services](https://techcommunity.microsoft.com/t5/Configuration-Manager-Archive/Important-changes-to-Microsoft-Active-Protection-Service-MAPS/ba-p/274006) 终结点的重要更改。
 
->[!TIP]
->还可以访问 Microsoft Defender for Endpoint 演示[](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground)网站，demo.wd.microsoft.com 确认以下功能是否正常工作：
+> [!TIP]
+> 还可以访问 Microsoft Defender for Endpoint 演示[](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground)网站，demo.wd.microsoft.com 确认以下功能是否正常工作：
 >
->- 云端保护
->- 快速学习 (包括首次看到时阻止) 
->- 可能不需要的应用程序阻止
+> - 云端保护
+> - 快速学习 (包括首次看到时阻止) 
+> - 可能不需要的应用程序阻止
 
 ## <a name="allow-connections-to-the-microsoft-defender-antivirus-cloud-service"></a>允许连接到 Microsoft Defender 防病毒 云服务
 
 云Microsoft Defender 防病毒为终结点提供快速、强大的保护。 启用云保护服务是可选的，但强烈建议这样做，因为它可提供针对终结点和整个网络的恶意软件的重要保护。
 
->[!NOTE]
->Microsoft Defender 防病毒云服务是一种向网络和终结点提供更新保护的机制。 尽管它称为云服务，但它并不仅仅是对存储在云中的文件的保护，而是使用分布式资源和机器学习以比传统安全智能更新快得多的速度为终结点提供保护。
+> [!NOTE]
+> Microsoft Defender 防病毒云服务是一种向网络和终结点提供更新保护的机制。 尽管它称为云服务，但它并不仅仅是对存储在云中的文件的保护，而是使用分布式资源和机器学习以比传统安全智能更新快得多的速度为终结点提供保护。
 
 请参阅[启用云保护](enable-cloud-protection-microsoft-defender-antivirus.md)，了解有关使用 Intune、Microsoft Endpoint Configuration Manager、组策略、PowerShell cmdlet 或在 Windows 安全中心 应用中各个客户端上启用服务的详细信息。 
 
@@ -65,7 +63,7 @@ ms.locfileid: "52274636"
 | :--: | :-- | :-- |
 | Microsoft Defender 防病毒云提供的保护服务，也称为MICROSOFT ACTIVE PROTECTION SERVICE (MAPS) |由Microsoft Defender 防病毒提供云保护|`*.wdcp.microsoft.com` <br/> `*.wdcpalt.microsoft.com` <br/> `*.wd.microsoft.com`|
 | MICROSOFT Update Service (MU)  <br/> Windows更新服务 (WU) |  安全智能和产品更新   |`*.update.microsoft.com` <br/> `*.delivery.mp.microsoft.com`<br/> `*.windowsupdate.com` <br/><br/> 有关详细信息，请参阅[Connection endpoints for Windows Update](/windows/privacy/manage-windows-1709-endpoints#windows-update)|
-|安全智能更新 ADL (备用) |   如果安装的安全Microsoft Defender 防病毒在安装后 7 天或 7 (过期，则安全智能更新的备用) |    `*.download.microsoft.com`  </br> `*.download.windowsupdate.com`</br> `https://fe3cr.delivery.mp.microsoft.com/ClientWebService/client.asmx`|
+|安全智能更新 ADL (备用) |   如果安装的安全Microsoft Defender 防病毒在安装后 7 天或 7 (过期，则安全智能更新的备用) |    `*.download.microsoft.com`  </br> `*.download.windowsupdate.com`</br>  `go.microsoft.com`</br> `https://fe3cr.delivery.mp.microsoft.com/ClientWebService/client.asmx`|
 | 恶意软件提交存储|Upload提交表单或自动示例提交提交到 Microsoft 的文件的提交位置    | `ussus1eastprod.blob.core.windows.net` <br/>    `ussus2eastprod.blob.core.windows.net` <br/>    `ussus3eastprod.blob.core.windows.net` <br/>    `ussus4eastprod.blob.core.windows.net` <br/>    `wsus1eastprod.blob.core.windows.net` <br/>    `wsus2eastprod.blob.core.windows.net` <br/>    `ussus1westprod.blob.core.windows.net` <br/>    `ussus2westprod.blob.core.windows.net` <br/>    `ussus3westprod.blob.core.windows.net` <br/>    `ussus4westprod.blob.core.windows.net` <br/>    `wsus1westprod.blob.core.windows.net` <br/>    `wsus2westprod.blob.core.windows.net` <br/>    `usseu1northprod.blob.core.windows.net` <br/>    `wseu1northprod.blob.core.windows.net` <br/>    `usseu1westprod.blob.core.windows.net` <br/>    `wseu1westprod.blob.core.windows.net` <br/>    `ussuk1southprod.blob.core.windows.net` <br/>    `wsuk1southprod.blob.core.windows.net` <br/>    `ussuk1westprod.blob.core.windows.net` <br/>    `wsuk1westprod.blob.core.windows.net` |
 | CRL (证书吊销) |供Windows创建与 MAPS 的 SSL 连接以更新 CRL 时使用   | `http://www.microsoft.com/pkiops/crl/` <br/> `http://www.microsoft.com/pkiops/certs` <br/>   `http://crl.microsoft.com/pki/crl/products` <br/> `http://www.microsoft.com/pki/certs` |
 | 符号存储|由 Microsoft Defender 防病毒在修正流期间还原某些关键文件  | `https://msdl.microsoft.com/download/symbols` |
@@ -94,8 +92,8 @@ ms.locfileid: "52274636"
 
 通过访问 下载 [https://aka.ms/ioavtest](https://aka.ms/ioavtest) 文件。
 
->[!NOTE]
->此文件不是恶意软件的实际部分。 这是一个假文件，旨在测试你是否正确连接到云。
+> [!NOTE]
+> 此文件不是恶意软件的实际部分。 这是一个假文件，旨在测试你是否正确连接到云。
 
 如果连接正确，你将看到一条警告Microsoft Defender 防病毒通知。
 

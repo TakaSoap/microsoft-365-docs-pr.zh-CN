@@ -19,12 +19,12 @@ description: 了解安全与合规中心提供的智能报告和见解&，以及
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 8e945cd3e3ba3dd0a80214e032c420bf7ecad18e
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: 2ece53bd0b857fb00e394982f6e3b4c8c81d8b83
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52274420"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52530870"
 ---
 # <a name="smart-reports-and-insights-in-the-security--compliance-center"></a>安全与合规中心内的智能报告和见解
 
@@ -39,7 +39,7 @@ ms.locfileid: "52274420"
 
 ## <a name="smart-reports-and-insights-overview"></a>智能报告和见解概述
 
-安全与合规中心提供的监视功能&智能报告和见解，使安全与合规管理员能够重点关注高优先级问题，如安全攻击或可疑活动增加。 在仪表板中，智能报表和见解类似于下图：
+安全与合规中心提供的监视功能&智能报告和见解，使合规性和安全管理员能够重点关注高优先级问题，如安全攻击或可疑活动增加。 在仪表板中，智能报表和见解类似于下图：
 
 ![安全与合规中心&报告仪表板](../../media/2a668c3d-3fa3-4e37-8149-46989b33ae8c.png)
 
@@ -49,9 +49,11 @@ ms.locfileid: "52274420"
 
 安全与合规中心提供了各种&报告。  (**转到"** 报表仪表板"，获取一个全部视图。) 下表列出了可用的报告以及 \> 用于了解更多信息的链接：
 
+<br>
+
 ****
 
-|信息类型|如何到达那里|在何处了解更多信息| 
+|信息类型|如何到达那里|在何处了解更多信息|
 |---|---|---|
 |**安全&合规中心报告** (全部)  <p> 顶级见解和建议，以及指向安全与&报告的链接，包括数据丢失防护报告、标签、电子邮件安全报告、Defender for Office 365 报告等|在安全与&中心，转到"报告 **仪表板** \> **"**|[监视和查看安全Microsoft 365报告](../defender/overview-security-center.md)|
 |**数据丢失防护** <p> 数据丢失防护策略匹配、误报和覆盖以及用于创建或编辑策略的链接|在安全&合规中心，转到 **"数据丢失防护** \> **策略"**|[查看数据丢失防护报告](../../compliance/view-the-dlp-reports.md)|
