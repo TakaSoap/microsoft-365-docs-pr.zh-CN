@@ -1,23 +1,24 @@
 ---
 title: 塞浦路斯的付款信息
-author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
+author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
-ms.custom: CommercePayInfo
+ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: 了解在哪里发送订阅付款。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: cf870e30b392329989cfcf412f63dd10fc9ab57d
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: 66dba0402a83e6375c64f965464973139bd4ea9a
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52273940"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52536882"
 ---
 # <a name="payment-information-for-cyprus"></a>塞浦路斯的付款信息
 
@@ -32,4 +33,4 @@ ms.locfileid: "52273940"
 **IBAN：** GB31CITI18500812207591  
 **SORT 代码** ：185008  
 **帐号** ：12207591  
-**帐户名称：** MICROSOFT  
+**帐户名称：** MICROSOFT

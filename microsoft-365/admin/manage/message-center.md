@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 38fb3333-bfcc-4340-a37b-deda509c2093
 description: 大致了解邮件Microsoft 365及其在变更管理中的角色。
-ms.openlocfilehash: af65db32edd56b11adede0e4e690b3f69b07180e
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 01e43eb6fa9502c138bfc9ab3595c47ec33ad098
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244415"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52537519"
 ---
 # <a name="message-center"></a>消息中心
 
@@ -249,66 +249,21 @@ ms.locfileid: "52244415"
 
 需要与另一个管理员进行跟踪，以确保他们意识到了更改并采取措施？ 可生成可在电子邮件或即时消息中共享的链接，例如将用户直接连接到该邮件。 与你共享链接的人必须有权访问消息中心。 请参阅[没有消息中心访问权的管理员角色](message-center.md#admin-roles-that-dont-have-access-to-the-message-center)以了解详细信息。
 
-::: moniker range="o365-worldwide"
-
 1. 选择邮件将其打开。
 
 2. 选择“**复制链接**”。
 
 3. 使用 Ctrl+V 或右键单击并选择 **“粘贴”**，将链接插入任何希望使用的文档。
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. 选择邮件将其打开。
-
-2. 选择 **从** \> **栏** 链接或链接"。
-
-3. 允许网页访问剪贴板。 直接链接复制到剪贴板。
-
-4. 使用 Ctrl+V 或右键单击并选择 **粘贴** 以插入链接。
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-1. 选择邮件将其打开。
-
-2. 选择“**复制链接**”。
-
-3. 使用 Ctrl+V 或右键单击并选择 **“粘贴”**，将链接插入任何希望使用的文档。
-
-::: moniker-end
 
 ## <a name="read-and-unread-states"></a>已读和未读状态
 
 消息中心中未读的任何邮件都将以粗体显示。 打开邮件时，邮件标记为已读。 可以将邮件标记为未读。
 
-::: moniker range="o365-worldwide"
 
 - 在消息中心主页上，选择邮件旁边的 **“更多选项”** 省略号，然后选择 **“标记为未读”**。
 
 还可在详细信息面板中打开邮件，将其标记为未读。
   
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. 选择邮件将其打开。
-
-2. 选择 **"** \> **未读邮件"的**。
-
-3. 关闭邮件。
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-- 在消息中心主页上，选择邮件旁边的 **“更多选项”** 省略号，然后选择 **“标记为未读”**。
-
-::: moniker-end
-
 ## <a name="archive-and-restore"></a>存档和还原
 
 如果你看到一条不相关的邮件，或者你可能已对邮件执行过操作，你可以存档邮件以将其从“收件箱”中删除。 在消息中心看到的视图是特定于你的用户帐户的，因此从视图中存档不会影响其他管理员。 邮件存档有两种方法。

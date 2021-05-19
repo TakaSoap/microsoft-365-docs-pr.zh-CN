@@ -21,12 +21,12 @@ search.appverid:
 - GEA150
 ms.assetid: f86e8177-936e-491e-9024-44dea2b296ff
 description: 了解如何在购买时添加订阅顾问合作伙伴作为记录合作伙伴Microsoft 365更改合作伙伴，或者从订阅中删除合作伙伴。
-ms.openlocfilehash: 913b0e14e1bc08cfd4037775aa4b72b7280c704c
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: d45f9e3278b0a25cc5603d322c96f40eee45e6f8
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51579226"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52537471"
 ---
 # <a name="add-change-or-delete-a-subscription-advisor-partner"></a>添加、更改或删除订阅顾问合作伙伴
 
@@ -110,7 +110,7 @@ ms.locfileid: "51579226"
 
 1. 在管理中心，转到“**计费**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">订阅</a>”页面。
 2. 如果你有多个订阅，请选择要编辑的订阅。
-3. 在右侧，在订阅成本下，选择"**更多操作** > **""添加记录的合作伙伴"。**
+3. 在右侧，在订阅成本下，选择三个点 (添加记录合作伙伴) > **执行更多操作**。
 4. 键入要添加的合作伙伴的 Microsoft 合作伙伴 ID，选择" **检查 ID**"，然后选择" **提交**"。你可以通过向合作伙伴询问来获取其 Microsoft 合作伙伴 ID。
 5. 合作伙伴 ID 将显示在" **订阅**"页面。
 

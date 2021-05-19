@@ -1,23 +1,24 @@
 ---
 title: 针对海地的付款信息
-author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
+author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
-ms.custom: CommercePayInfo
+ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: 了解在哪里发送订阅付款。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 4616037c86cac361aca18b9f7a57800998eb97b5
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: 36c76a2aee8d2a64a741f29aed4b7740024c4f43
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52273652"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52536726"
 ---
 # <a name="payment-information-for-haiti"></a>针对海地的付款信息
 
@@ -31,4 +32,4 @@ Please pay in USD only and reference your invoice number (s) on your invoice inv
 **分支** Dallas  
 **SWIFT 代码：** BOFAUS3N  
 **帐号** ：4426587954  
-**帐户名称：** Microsoft  
+**帐户名称：** Microsoft

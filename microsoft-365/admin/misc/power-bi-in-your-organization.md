@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: d7941332-8aec-4e5e-87e8-92073ce73dc5
 ROBOTS: NOINDEX
 description: 了解Power BI组织的用户如何使用此业务分析服务。
-ms.openlocfilehash: c2f07c4e1e6da814eb31186ba0c132021479ad4a
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 34a48ed6ee854f0057e79ba86dbd888a65b41c5e
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50914698"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52537423"
 ---
 # <a name="power-bi-in-your-organization"></a>您的组织中的 Power BI
 
@@ -167,46 +167,30 @@ Microsoft Power BI 使用户能够以全新的直观方法可视化数据、共�
 ## <a name="how-do-i-remove-power-bi-for-users-that-already-signed-up"></a>如何为已注册的用户删除 Power BI？
 
 如果用户注册了Power BI，但您不再希望他们有权访问 Power BI，您可以删除该用户Power BI许可证。
-
-::: moniker range="o365-worldwide"
   
+::: moniker range="o365-worldwide"
+
 1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。
+
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+ 1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">活动用户</a>”页面。
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+ 1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">活动用户</a>”页面。
+
+::: moniker-end
 
 2. 查找要删除其许可证的用户，然后选择其名称。
 
 3. 在"**许可证和应用"** 选项卡上，清除 **"Microsoft Power BI** 复选框。
 
 4. 选择“**保存更改**”。
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">活动用户</a>”页面。
-
-2. 查找要删除其许可证的用户，然后选择其名称。
-
-3. 在"产品 **许可证"旁边，** 选择"编辑 **"。**
-
-4. 关闭 **Microsoft** Power BI 选项。
-
-5. 选择“**保存**”。
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">活动用户</a>”页面。
-
-2. 查找要删除其许可证的用户，然后选择其名称。
-
-3. 在"产品 **许可证"旁边，** 选择"编辑 **"。**
-
-4. 关闭 **Microsoft** Power BI 选项。
-
-5. 选择“**保存**”。
-
-::: moniker-end
 
 ## <a name="how-do-i-know-when-new-users-have-joined-my-tenant"></a>我如何知道新用户何时加入我的租户？
 

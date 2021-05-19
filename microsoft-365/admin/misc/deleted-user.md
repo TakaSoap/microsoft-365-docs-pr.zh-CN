@@ -21,48 +21,40 @@ search.appverid:
 ms.assetid: 481b460e-f799-4fac-9592-4d5c51bdcbd8
 ROBOTS: NOINDEX
 description: 了解如何删除或还原用户的帐户Microsoft 365帐户。
-ms.openlocfilehash: 3b078b782246229d1ddfb1f1fa51282140e71eb0
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 56d53a718465d369d4e4e0202c4c97939b70e258
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50914782"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52537447"
 ---
 # <a name="quick-help-deleted-user"></a>快速帮助：已删除的用户
 
 可能需要删除组织中的某个[用户](../add-users/add-users.md)。当有人离开组织时，通常会删除该用户。 
   
 ## <a name="delete-a-user"></a>删除用户
-
-::: moniker range="o365-worldwide"
   
+::: moniker range="o365-worldwide"
+
 1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。
 
-2. 选择一个用户，然后在用户列表上方选择"更多选项"" (...) "，然后选择"删除 **用户"。** 
-  
-3. 在删除确认窗格中，选择"**删除用户"。** <br/>[阅读完整文章。](../add-users/delete-a-user.md)
-  
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">活动用户</a>”页面。  
-
-2. 选择用户，然后在用户列表上方选择"更多 > **删除用户"。**
-  
-3. 在删除确认窗格中，选择"**删除用户"。** <br/>[阅读完整文章。](../add-users/delete-a-user.md)
+ 1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">活动用户</a>”页面。
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">活动用户</a>”页面。 
-
-2. 选择用户，然后在用户列表上方选择"更多 > **删除用户"。**
-  
-3. 在删除确认窗格中，选择"**删除用户"。** <br/>[阅读完整文章。](../add-users/delete-a-user.md)
+ 1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">活动用户</a>”页面。
 
 ::: moniker-end
+
+2. 选择一个用户，然后在用户列表上方选择三个点 (执行更多) ，然后选择"删除 **用户"。**
+  
+3. 在删除确认窗格中，选择"**删除用户"。** <br/>[阅读完整文章。](../add-users/delete-a-user.md)
 
   
 ## <a name="restore-a-user"></a>还原用户

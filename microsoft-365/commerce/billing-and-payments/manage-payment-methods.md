@@ -19,14 +19,14 @@ ms.custom:
 - AdminSurgePortfolio
 - commerce_billing
 search.appverid: MET150
-description: 了解如何在 Microsoft 365 管理中心管理你的付款方式。
+description: 使用现有付款方式，或在 Microsoft 365 管理中心添加新的付款方式，从 Microsoft 购买企业产品或服务。
 ms.date: 04/02/2021
-ms.openlocfilehash: b6fe62a70d478a98eb13a17fafb4320afc6b5952
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: bda7eca29b92cdf131c6d3f5a6069ea2be77f6fa
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52332002"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52537315"
 ---
 # <a name="manage-payment-methods"></a>管理支付方式
 
@@ -87,7 +87,7 @@ ms.locfileid: "52332002"
 
 1. 在管理中心中，转到“**账单**” > “<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">你的产品</a>”页面。
 2. 在" **"** 选项卡上，找到你想要使用备用付款方式付款的订阅。
-3. 选择 **执行更多** （三个点），然后选择 **替换付款方式**。
+3. 选择三个点（更多操作），然后选择“**替换付款方式**”。
 4. 在 **替换付款方式** "窗格中的下拉列表中，选择其他付款方式，或选择添加付款方式。
 5. 如果添加付款方式，请输入卡或帐户详细信息，然后选择 **另**。
 6. 验证所选付款方式是否正确，然后选择“**替换**”。。

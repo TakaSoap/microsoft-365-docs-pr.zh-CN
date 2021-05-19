@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 了解如何使用管理中心中的搜索功能获得更快速的结果。
-ms.openlocfilehash: 4faf761c1bb478dbdd578f3acec4fb108ca7269a
-ms.sourcegitcommit: ea8a096df5acedecdce1780969f2b189c3fadf73
+ms.openlocfilehash: 87e7fb78e9d7ce535f481151515791c20c115836
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2021
-ms.locfileid: "50054091"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52537507"
 ---
 # <a name="search-in-the-microsoft-365-admin-center"></a>在 Microsoft 365 管理中心中搜索
 
@@ -44,7 +44,7 @@ ms.locfileid: "50054091"
 
 :::image type="content" source="../../media/User-search-stock-picture-domain-blanked.png" alt-text="Screenshot： Search for a user Felix Henderson":::
 
-如果选择其名称旁边的"更多操作"菜单，可以重置其密码。
+如果选择其名称旁边的三个点 (其他) 菜单，可以重置其密码。
 
 :::image type="content" source="../../media/User-search-stock-picture-reset-password-domain-blanked.png" alt-text="Screenshot： User search with the option to reset password from search result":::
 

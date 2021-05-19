@@ -21,12 +21,12 @@ ms.custom:
 search.appverid: MET150
 description: 了解如何从用户帐户取消分配许可证。
 ms.date: 07/01/2020
-ms.openlocfilehash: 6f2cbf65e1d6a38a4b1ed00976d4dd473d7331e9
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: 5ef28b3065703ec224e6426c4fdbfffdb5269b22
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52332410"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52537495"
 ---
 # <a name="unassign-licenses-from-users"></a>取消分配用户许可证
 
@@ -35,7 +35,7 @@ ms.locfileid: "52332410"
 > [!NOTE]
 > 作为管理员，你不能为组织中用户购买的自助购买订阅分配或取消分配许可证。 你可以 [接管自助购买订阅](../../commerce/subscriptions/manage-self-service-purchases-admins.md#take-over-a-self-service-purchase-subscription)，然后分配或取消分配许可证。
 
-## <a name="before-you-begin"></a>准备工作
+## <a name="before-you-begin"></a>开始之前
 
 - 你必须是全局、许可证、用户管理员才能取消分配许可证。 有关详细信息，请参阅[关于 Microsoft 365 管理员角色](../add-users/about-admin-roles.md)。
 - 可[使用 Office 365 PowerShell 删除用户帐户的许可证](../../enterprise/remove-licenses-from-user-accounts-with-microsoft-365-powershell.md)。
@@ -47,18 +47,19 @@ ms.locfileid: "52332410"
 
 ::: moniker range="o365-worldwide"
 
-1. 在管理中心，转到“**计费**”>“<a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">许可证</a>”页面。
+1. 在管理中心，转到“**计费**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">许可证</a>”页面。
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. 在 <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">管理中心</a> 内，转到“**计费**”>“**许可证**”页面。
+ 1. 在管理中心，转到“**计费**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=848038" target="_blank">许可证</a>”页面。
+
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. 在 <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">管理中心</a> 内，转到“**计费**”>“**许可证**”页面。
+ 1. 在管理中心，转到“**计费**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=850625" target="_blank">许可证</a>”页面。
 
 ::: moniker-end
 
@@ -72,22 +73,22 @@ ms.locfileid: "52332410"
 使用"活动 **用户"** 页取消分配许可证时，将取消为用户分配产品许可证。
 
 ### <a name="unassign-licenses-from-one-user"></a>取消分配来自一个用户的许可证
-  
+
 ::: moniker range="o365-worldwide"
 
-1. 在管理中心，转到“**用户**”>“<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。
+1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. 在 <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">管理中心</a> 内，转到“**计费**”>“**活动用户**”页面。
+ 1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">活动用户</a>”页面。
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. 在 <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">管理中心</a> 内，转到“**计费**”>“**活动用户**”页面。
+ 1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">活动用户</a>”页面。
 
 ::: moniker-end
 
@@ -99,24 +100,24 @@ ms.locfileid: "52332410"
 
 ::: moniker range="o365-worldwide"
 
-1. 在管理中心，转到“**用户**”>“<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。
+1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. 在 <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">管理中心</a> 内，转到“**计费**”>“**活动用户**”页面。
+ 1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">活动用户</a>”页面。
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. 在 <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">管理中心</a> 内，转到“**计费**”>“**活动用户**”页面。
+ 1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">活动用户</a>”页面。
 
 ::: moniker-end
 
 2. 选择要取消分配许可证的用户姓名旁边的圆圈。
-3. 在顶部选择“**更多选项(...)**”，然后选择“**管理产品许可证**”。
+3. At the top， select the three dots (more actions) ， then select **Manage product licenses**.
 4. 在“**管理产品许可证**”窗格中，选择“**替换现有产品许可证分配**”\>“**下一步**”。
 5. 在"替换现有产品"窗格的底部，选中"从所选用户删除所有产品许可证"复选框，然后选择"替换"" \> **关闭"。**
 

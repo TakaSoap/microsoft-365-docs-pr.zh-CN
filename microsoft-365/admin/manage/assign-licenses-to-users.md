@@ -21,14 +21,14 @@ ms.custom:
 - manage_licenses
 - commerce_licensing
 search.appverid: MET150
-description: 了解如何向用户分配许可证。
+description: 分配许可证取决于是要向特定用户分配产品许可证还是向特定产品分配用户许可证。
 ms.date: 04/26/2021
-ms.openlocfilehash: ef8169658c6aef03cf8ff0cf9714c980ce63b060
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: 707c1c952aa737f0aa91d886e9fa304eabe26321
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52332482"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52537531"
 ---
 # <a name="assign-licenses-to-users"></a>向用户分配许可证
 
@@ -53,20 +53,22 @@ ms.locfileid: "52332482"
 
 ::: moniker range="o365-worldwide"
 
-1. 在管理中心，转到“**计费**”>“<a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">许可证</a>”页面。
+1. 在管理中心，转到“**计费**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">许可证</a>”页面。
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. 在 <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">管理中心</a> 内，转到“**计费**”>“**许可证**”页面。
+ 1. 在管理中心，转到“**计费**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=848038" target="_blank">许可证</a>”页面。
+
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. 在 <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">管理中心</a> 内，转到“**计费**”>“**许可证**”页面。
+ 1. 在管理中心，转到“**计费**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=850625" target="_blank">许可证</a>”页面。
 
 ::: moniker-end
+
 
 2. 选择产品。
 3. 在产品详细信息页面上，选择“**分配许可证**”。
@@ -80,21 +82,22 @@ ms.locfileid: "52332482"
 
 ::: moniker range="o365-worldwide"
 
-1. 在管理中心，转到“**计费**”>“<a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">许可证</a>”页面。
+1. 在管理中心，转到“**计费**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">许可证</a>”页面。
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. 在 <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">管理中心</a> 内，转到“**计费**”>“**许可证**”页面。
+ 1. 在管理中心，转到“**计费**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=848038" target="_blank">许可证</a>”页面。
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. 在 <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">管理中心</a> 内，转到“**计费**”>“**许可证**”页面。
+ 1. 在管理中心，转到“**计费**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=850625" target="_blank">许可证</a>”页面。
 
 ::: moniker-end
+
 
 2. 在“**许可证**”页面上，选择特定用户所对应的行。
 3. 在右侧窗格中，选择或取消选择要授予或取消访问权限的应用和服务。
@@ -114,18 +117,19 @@ ms.locfileid: "52332482"
 
 ::: moniker range="o365-germany"
 
-1. 在 <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">管理中心</a> 内，转到“**计费**”>“**活动用户**”页面。
+ 1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">活动用户</a>”页面。
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. 在 <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">管理中心</a> 内，转到“**计费**”>“**活动用户**”页面。
+ 1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">活动用户</a>”页面。
 
 ::: moniker-end
 
+
 2. 选中要向其分配许可证的用户姓名旁边的圆圈。
-3. 在顶部选择“**更多选项(...)**”，然后选择“**管理产品许可证**”。
+3. 在顶部选择三个点（更多操作），然后选择“**管理产品许可证**”。
 4. 在“**管理产品许可证**”窗格中，选择“**添加到现有产品许可证分配**”\>“**下一步**”。
 5. 在“**添加到现有产品**”窗格中，将希望所选用户具备的许可证的开关切换到“**开**”位置。\
     默认情况下，与这些许可证关联的所有服务都将自动分配给该用户。 可限制能提供给用户的具体服务。 将不希望所选用户具备的服务的开关切换到“**关**”。
@@ -145,15 +149,16 @@ ms.locfileid: "52332482"
 
 ::: moniker range="o365-germany"
 
-1. 在 <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">管理中心</a> 内，转到“**计费**”>“**活动用户**”页面。
+ 1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">活动用户</a>”页面。
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. 在 <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">管理中心</a> 内，转到“**计费**”>“**活动用户**”页面。
+ 1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">活动用户</a>”页面。
 
 ::: moniker-end
+
 
 2. 选择要向其分配许可证的用户所对应的行。
 3. 在右侧窗格，选择“**许可证和应用**”。

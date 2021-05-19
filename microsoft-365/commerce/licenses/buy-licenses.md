@@ -21,18 +21,18 @@ ms.custom:
 search.appverid: MET150
 description: 了解如何购买更多许可证或减少企业版订阅Microsoft 365许可证数量。
 ms.date: 04/07/2021
-ms.openlocfilehash: a327149a780d2059cfc69068fc4b2122e549773c
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: a20e89ff28c582018c55281a85dbe115b58f9d74
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52331678"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52537267"
 ---
 # <a name="buy-or-remove-licenses"></a>购买或删除许可证
 
 可以通过以下步骤购买更多许可证或减少订阅的许可证数量。
 
-## <a name="before-you-begin"></a>准备工作
+## <a name="before-you-begin"></a>开始之前
 
 - 你必须是全局管理员或帐单管理员才能执行本文中所述的任务。 有关详细信息，请参阅 [关于管理员角色](../../admin/add-users/about-admin-roles.md)。
 - 可以 [同时添加用户和分配许可证](../../admin/add-users/add-users.md)。
@@ -68,7 +68,7 @@ ms.locfileid: "52331678"
 1. 在管理中心中，转到“**计费**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">你的产品</a>”页面。
 ::: moniker-end
 
-2. 在 **"产品** "选项卡上，找到要购买或删除许可证的订阅。 Select **More actions (** three dots) ， then select Buy **licenses**. [如果看不到"购买许可证"或"删除许可证"按钮，如何操作？](#what-if-i-dont-see-the-buy-licenses-or-remove-licenses-buttons)
+2. 在 **"产品** "选项卡上，找到要购买或删除许可证的订阅。 选择三个点 (操作) ，然后选择购买 **许可证**。 [如果看不到"购买许可证"或"删除许可证"按钮，如何操作？](#what-if-i-dont-see-the-buy-licenses-or-remove-licenses-buttons)
 3. 如果要减少许可证数量，请在"购买许可证"窗格顶部，选择"**删除许可证"。**
 4. 若要购买或删除许可证 **，请在"** 许可证总数"框中的"新数量"下，输入要用于此订阅的许可证总数。 例如，如果你有 100 个许可证，并且想要再添加 5 个，请输入 105。 如果要删除其中五个，请输入 95。
 5. 选择“**保存**”。

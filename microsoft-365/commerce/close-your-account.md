@@ -20,18 +20,18 @@ ms.custom:
 search.appverid: MET150
 description: 了解如何关闭 Microsoft 帐户。
 ms.date: 04/02/2021
-ms.openlocfilehash: 767a82088500bc24c0d4755a2dafd40742fc796c
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: ed73c191063a328490945c54dc2f5101c88f17e8
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52331762"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52537291"
 ---
 # <a name="close-your-account"></a>关闭你的帐户
 
 当关闭你的 Microsoft 帐户时，与你的帐户相关的所有信息都将被删除。 此信息包括订阅、许可证、付款方式、用户和用户数据。
 
-## <a name="before-you-begin"></a>准备工作
+## <a name="before-you-begin"></a>开始之前
 
 开始此过程之前，请确保备份要保留的所有数据。
 
@@ -47,12 +47,12 @@ ms.locfileid: "52331762"
 
 您还可以使用 [Remove-MsolUser](/powershell/module/msonline/remove-msoluser) PowerShell cmdlet 批量删除用户。
 
-如果你的组织使用与 Microsoft Azure Active Directory 同步的 Active Directory (Azure AD) ，请改为从 Active Directory 中删除用户帐户。 有关说明，请参阅 [在 Azure Active Directory](/azure/active-directory/users-groups-roles/users-bulk-delete)中批量删除用户。
+如果你的组织使用与 Azure AD Microsoft Azure Active Directory (同步的 Active Directory) ，请改为从 Active Directory 中删除用户帐户。 有关说明，请参阅批量[删除用户Azure Active Directory。](/azure/active-directory/users-groups-roles/users-bulk-delete)
 
 ## <a name="step-2-cancel-all-active-subscriptions"></a>步骤 2：取消所有活动订阅
 
 1. 在管理中心中，转到“**账单**” > “<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">你的产品</a>”页面。
-2. 在" **产品"** 选项卡上，查找活动订阅。 选择“**更多操作**”（三个点），然后选择“**取消订阅**”。
+2. 在" **产品"** 选项卡上，查找活动订阅。 Select the three dots (more actions) ， then select **Cancel subscription**.
 3. 在“**取消订阅**”窗格中，选择取消原因。 (可选)提供反馈。
 4. 选择“**保存**”。
 5. 重复步骤 1 至 4 以取消所有活动订阅。
@@ -79,7 +79,7 @@ ms.locfileid: "52331762"
 您还可以使用 [PowerShell 为多个用户禁用多重身份验证](/azure/active-directory/authentication/howto-mfa-userstates#change-state-using-powershell)。
 
 
-## <a name="step-5-delete-the-directory-in-azure-active-directory"></a>步骤 5：删除 Azure Active Directory 中的目录
+## <a name="step-5-delete-the-directory-in-azure-active-directory"></a>步骤 5：删除Azure Active Directory
 
 1. 使用全局管理员帐户登录到 <a href="https://aad.portal.azure.com/" target="_blank">Azure AD</a> 管理中心。
 2. 选择 **Azure Active Directory**。

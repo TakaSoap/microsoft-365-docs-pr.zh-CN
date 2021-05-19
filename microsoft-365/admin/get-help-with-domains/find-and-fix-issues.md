@@ -24,12 +24,12 @@ search.appverid:
 - GEA150
 ms.assetid: 40398b0b-bdd0-4afd-ab5e-b5ae6b7990bf
 description: 了解如何通过确保正确设置 DNS 记录来跟踪在设置自定义域时遇到的任何问题。
-ms.openlocfilehash: dfb3c93c169a3d31c14d912ddd2cc94fb1e4ace1
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 5959cae02b87cf481fc06edd941a6da284b71736
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50915634"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52537543"
 ---
 # <a name="find-and-fix-issues-after-adding-your-domain-or-dns-records"></a>查找并修复添加域或 DNS 记录之后出现的问题
 
@@ -38,7 +38,7 @@ ms.locfileid: "50915634"
 设置域以使用Microsoft 365可能非常困难。 DNS 系统要求严格，很难使用，并且，你的域的 DNS 设置会影响重要的业务活动，如电子邮件！
 
 > [!NOTE]
-> 可以通过检查域的状态来检查域的问题。 转到"**设置**  >  **域**"，在"状态"列中 **查看** 通知。 If you see an issue， select More actions (three dots) ， and then choose **Check health**. 打开的窗格将描述您的域发生的任何问题。
+> 可以通过检查域的状态来检查域的问题。 转到"**设置**  >  **域**"，在"状态"列中 **查看** 通知。 如果看到问题，请选择三个点 (执行) ，然后选择"检查运行状况 **"。** 打开的窗格将描述您的域发生的任何问题。
   
 ## <a name="whats-going-on"></a>What's going on?
 

@@ -21,32 +21,24 @@ ms.custom:
 search.appverid: MET150
 description: 了解计费配置文件如何支持发票。
 ms.date: 04/02/2021
-ms.openlocfilehash: 36d762e50627763b7856ed1fe6c109e8da2b4789
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: e66efe12e05d2aaf286b689c955f17c8401144f1
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52332026"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52537327"
 ---
 # <a name="understand-billing-profiles"></a>了解计费配置文件
 
-对于从 Microsoft 购买产品和服务的商业客户，帐单配置文件允许您自定义发票中包含的项目以及如何支付发票费用。
+计费配置文件包含付款方式、帐单邮寄信息和其他发票设置，如采购订单编号和电子邮件发票首选项。 使用计费配置文件支付从 Microsoft 购买的产品。 当用户进行自助购买时，将自动创建计费配置文件。 每个计费配置文件都单独开票。
 
-计费配置文件包括以下信息：
+> [!NOTE]
+>
+> 从管理中心购买产品和服务的客户 Microsoft.com 或管理中心的"购买服务"Microsoft 365配置文件。 
 
-- **计费帐户** &ndash; 配置文件相关的计费帐户的名称
-- **付款方式** &ndash; 信用卡或借记卡、银行帐户、支票或数据传输
-- **联系人信息** &ndash; 帐单邮寄地址和联系人姓名
-- **发票设置** &ndash; 基于计费帐户的国家/地区、可选 PO 编号以及接收作为电子邮件附件的发票的选项的货币
-- **权限** &ndash; 允许您更改计费配置文件、支付帐单或使用帐单配置文件上的付款方式进行购买的权限
+## <a name="what-are-billing-profile-roles"></a>什么是计费配置文件角色？
 
-使用计费配置文件来控制你的购买并自定义你的发票。 为使用计费配置文件购买的产品生成每月发票。 你可以自定义发票，例如更新采购订单编号和电子邮件发票首选项。
-
-首次购买时，系统会自动为帐单帐户创建计费配置文件。 可以在"计费配置文件"页上创建计费 <a href="https://go.microsoft.com/fwlink/p/?linkid=2103629" target="_blank">配置文件</a> 以设置更多发票。 例如，为组织的每个部门进行购买时，可以使用不同的计费配置文件。 下一个计费日期，你将收到每个计费配置文件的发票。
-
-## <a name="billing-profile-roles"></a>计费配置文件角色
-
-帐单配置文件上的角色具有控制购买以及查看和管理发票的权限。 向跟踪、组织和支付发票的用户分配这些角色，例如组织中采购团队成员。
+帐单配置文件上的角色具有控制购买以及查看和管理发票的权限。 向跟踪、组织和支付发票的用户分配这些角色。 例如，您组织中采购工作组的成员。
 
 | 角色                         | 说明                                                                      |
 |----------------------------- |--------------------------------------------------------------------------------- |
@@ -55,21 +47,36 @@ ms.locfileid: "52332026"
 | 计费配置文件读取器       | 帐单配置文件中所有项的只读视图                                |
 | 发票管理器              | 查看和支付帐单，并且对帐单配置文件中所有内容具有只读视图  |
 
-## <a name="view-billing-profiles"></a>查看计费配置文件
+## <a name="view-my-billing-profiles"></a>查看我的计费配置文件
+
+> [!NOTE]
+>
+> 如果按照这些步骤操作，并且计费配置文件列表为空，则意味着你没有计费配置文件，并且无法使用此功能。
 
 1. 在管理中心，转到“**账单**”\> “<a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">账单和付款</a>”页。
-2. 选择 **"计费配置文件**"，然后从列表中选择计费配置文件。
+2. 选择" **计费配置文件** "选项卡，然后从列表中选择计费配置文件。
 
-    - 在" **概述** "选项卡上，可以编辑计费配置文件详细信息，并通过电子邮件打开或关闭发送发票。
-    - 在 **"权限"** 选项卡上，可以将角色分配给用户以支付发票。
-    - 在 **"Azure 信用余额** "选项卡上，Azure 客户可以看到该计费配置文件使用的 Azure 信用的交易余额历史记录。
-    - 在 **"Azure 信用额度** "选项卡上，Azure 客户可以看到与该计费配置文件关联的 Azure 信用列表及其到期日期。
+每个计费配置文件包括以下信息：
 
-    > [!NOTE]
-    > 如果你没有任何 Azure 信用额度，你将看不到 **Azure** 信用余额或 **Azure 信用** 表。
+- **计费配置文件名称和状态** &ndash; 计费配置文件的唯一名称，以及计费配置文件是处于活动状态还是已禁用进行购买。
+- **发票设置** &ndash; 基于计费帐户的国家/地区的货币、有关发票频率和日期的信息、作为电子邮件附件接收发票的选项以及可选的 PO 编号字段
+- **付款方式** &ndash; 显示配置文件的主付款方式和备份付款方式（如果有）
+- **计费帐户** &ndash; 配置文件相关的计费帐户的名称。 有关计费帐户详细信息，请参阅 [了解计费帐户](../manage-billing-accounts.md)。
+- **联系人信息** &ndash; 帐单邮寄地址、联系人姓名和电子邮件地址
+- **计费配置文件角色** &ndash; 分配了其中一个计费配置文件角色以执行该配置文件操作的用户列表。 例如，支付帐单、添加 PO 编号或替换用于进行购买的付款方式。
+
+> [!NOTE]
+>
+> 只能将计费配置文件角色分配给贵组织的用户。
 
 ## <a name="need-help-contact-support"></a>需要帮助? 联系支持人员
 
 如果对 Azure 费用有疑问或需要帮助，请通过 Azure 支持 创建 <a href="https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportrequest" target="_blank">支持请求</a>。
 
-如果对 Microsoft 365 管理中心中的帐单配置文件有疑问或需要帮助，请联系 [商业版产品支持人员](../../business-video/get-help-support.md)。
+如果对管理中心中的帐单配置文件有疑问或Microsoft 365帮助，请联系[支持](../../business-video/get-help-support.md)人员。
+
+## <a name="related-content"></a>相关内容
+
+[How to pay for your subscription with a billing profile (](pay-for-subscription-billing-profile.md) article) \
+[了解帐单 (](../manage-billing-accounts.md) 文章) \
+[管理付款方式 (](manage-payment-methods.md) 文章) 
