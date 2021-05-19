@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 创建敏感度标签时，你可以自动为文档或电子邮件分配标签，也可以提示用户选择你建议的标签。
-ms.openlocfilehash: f5281255db48b61e7cf21a1ac8d6b5bdd18ebc20
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: d7559e5fa75db1fb23592dec1a3a5f35bad603df
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52332974"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538528"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>将敏感度标签自动应用于内容
 
@@ -133,7 +133,7 @@ Azure 信息保护统一标记客户端支持适用于 Windows 的 Office 应用
 
 与配置 DLP 策略时类似，你可以通过更改实例计数和匹配准确度来优化条件。例如：
 
-![匹配准确度和实例计数选项](../media/sensitivity-labels-instance-count-match-accuracy.png)
+![匹配准确度和实例计数选项](../media/sit-confidence-level.png)
 
 可通过以下 DLP 文档了解有关这些配置选项的详细信息：[调整规则，使它们更易或更难匹配](data-loss-prevention-policies.md#tuning-rules-to-make-them-easier-or-harder-to-match)。
 
@@ -189,7 +189,7 @@ Azure 信息保护统一标记客户端支持适用于 Windows 的 Office 应用
 
 - 对于桌面版 Word 中的建议标签，触发建议的敏感内容会被标记，这样用户就能审阅和删除敏感内容，而不用应用建议的敏感度标签。
 
-- 若要详细了解如何在 Office 应用中应用这些标签、示例屏幕截图，以及如何检测敏感信息，请参阅[对 Office 中的文件和电子邮件自动应用或建议敏感度标签](https://support.office.com/zh-CN/article/automatically-apply-or-recommend-sensitivity-labels-to-your-files-and-emails-in-office-622e0d9c-f38c-470a-bcdb-9e90b24d71a1)。
+- 若要详细了解如何在 Office 应用中应用这些标签、示例屏幕截图，以及如何检测敏感信息，请参阅[对 Office 中的文件和电子邮件自动应用或建议敏感度标签](https://support.office.com/en-us/article/automatically-apply-or-recommend-sensitivity-labels-to-your-files-and-emails-in-office-622e0d9c-f38c-470a-bcdb-9e90b24d71a1)。
 
 特定于 Azure 信息保护统一标记客户端的注意事项：
 

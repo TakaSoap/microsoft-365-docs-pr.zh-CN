@@ -16,13 +16,14 @@ ms.collection:
 search.appverid:
 - MET150
 ms.assetid: 6ceca4d3-cad1-4532-9f0f-d469dfbbb552
+recommendations: false
 description: 了解如何为组创建Microsoft 365策略。
-ms.openlocfilehash: 7fd2ea36b536924d85c7ca09b55593161a24dbe4
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 5ab5f252e2b81470413b4efea17b131613aabc18
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50921044"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538167"
 ---
 # <a name="microsoft-365-groups-naming-policy"></a>Microsoft 365组命名策略
 

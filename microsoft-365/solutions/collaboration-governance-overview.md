@@ -15,13 +15,14 @@ ms.collection:
 ms.custom:
 - M365solutions
 f1.keywords: NOCSH
+recommendations: false
 description: 了解如何管理组、Microsoft 365、Teams、SharePoint和Yammer 中的相关Yammer。
-ms.openlocfilehash: b31e9bf1cd46f94343a489497fb5eb00e138ce60
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 3b526297a3f131364a2098b92de09245ab45feb8
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50916438"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538947"
 ---
 # <a name="what-is-collaboration-governance"></a>什么是协作管理？
 
@@ -58,7 +59,7 @@ Microsoft 365组包括一套链接资源，用户可使用这些资源进行通�
 |[Calendar](https://support.office.com/article/schedule-a-meeting-on-a-group-calendar-in-outlook-0cf1ad68-1034-4306-b367-d75e9818376a)|对于与组相关的计划事件|
 |[收件箱](https://support.office.com/article/have-a-group-conversation-in-outlook-a0482e24-a769-4e39-a5ba-a7c56e828b22)|对于团队成员之间的电子邮件对话。 此收件箱具有电子邮件地址，可以设置为接受来自组外部甚至组织外部人员的邮件，这非常像传统通讯组列表。|
 |[OneNote 笔记本](https://support.office.com/article/get-started-with-onenote-e768fafa-8f9b-4eac-8600-65aa10b2fe97)|收集想法、研究和信息|
-|[计划表](https://support.office.com/article/microsoft-planner-help-4a9a13c6-3adf-4a60-a6fc-15c0b15e16fc)|在团队成员之间分配和管理项目任务|
+|[Planner](https://support.office.com/article/microsoft-planner-help-4a9a13c6-3adf-4a60-a6fc-15c0b15e16fc)|在团队成员之间分配和管理项目任务|
 |[Power BIWorkspace](/power-bi/collaborate-share/service-new-workspaces)|包含仪表板和报表的数据协作空间|
 |[Project和路线图](https://support.microsoft.com/project)|基于 Web 的项目管理工具|
 |[SharePoint 团队网站](https://support.office.com/article/what-is-a-sharepoint-team-site-75545757-36c3-46a7-beed-0aaa74f0401e)|与组有关的信息、链接和内容的中央存储库|

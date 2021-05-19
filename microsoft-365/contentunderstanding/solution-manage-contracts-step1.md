@@ -6,22 +6,24 @@ manager: pamgreen
 ms.reviewer: ssquires
 audience: admin
 ms.topic: article
-ms.date: 05/10/2021
+ms.date: 05/17/2021
 ms.prod: microsoft-365-enterprise
 search.appverid: ''
 localization_priority: None
 ROBOTS: NOINDEX, NOFOLLOW
 description: 了解如何使用 SharePoint Syntex 来识别合约文件，并使用 Microsoft 365 提取数据。
-ms.openlocfilehash: e0d58164d1a12987a4606ef84c15fa3d20c0195f
-ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
+ms.openlocfilehash: f246dd4ed619dd9885d2c45c69d607cfa9c2483f
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52281088"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538551"
 ---
 # <a name="step-1-use-sharepoint-syntex-to-identify-contract-files-and-extract-data"></a>步骤 1. 使用 SharePoint Syntex 标识协定文件并提取数据
 
 贵组织需要一种方法从您收到的许多文件中标识所有合同文档并对这些文档进行分类。 您还需要能够快速查看每个识别为 (合同文件中的几个关键元素，例如，Client、Contract 和 Fee  *amount*) 。  为此，可以使用[Syntex](index.md) SharePoint文档理解模型，并应用到文档库。
+
+## <a name="overview-of-the-process"></a>过程概述
 
 [文档理解](document-understanding-overview.md) 使用人工智能 (AI) 模型来自动分类文件和提取信息。 从非结构化和半结构化文档提取信息时，文档理解模型也是最佳选择，其中您需要的信息未包含在表或表单（如合同）中。
 
@@ -35,7 +37,169 @@ ms.locfileid: "52281088"
 
    ![文档库中的协定](../media/content-understanding/doc-lib-solution.png)
 
-5. 此外，如果您有合同保留要求，您还可以使用模型应用保留标签，以防止在指定的时段内[](apply-a-retention-label-to-a-model.md)删除合同。
+5. 如果你对合同有保留要求，则还可使用模型应用保留标签，防止在[](apply-a-retention-label-to-a-model.md)指定的时段内删除合同。
+
+## <a name="steps-to-create-and-train-your-model"></a>创建和训练模型的步骤
+
+> [!NOTE]
+> 对于这些步骤，可以使用 Microsoft SharePoint[示例存储库中的示例文件](https://github.com/pnp/syntex-samples)。 此存储库中的示例包含文档了解模型文件和用于训练模型的文件。
+
+### <a name="create-a-contract-model"></a>创建合同模型
+
+第一步是创建合同模型。
+
+1. 从内容中心中，选择“**新建**”，然后选择“**创建模型**”。
+
+2. 在" **新建文档理解模型** "窗格的" **名称** "字段中，键入模型的名称。 对于此合同管理解决方案，您可以命名模型 *合同*。
+
+4. 选择 **“创建”**。 这将为该模型创建主页。</br>
+
+    ![合同主页的屏幕截图。](../media/content-understanding/models-contract-home-page.png)
+
+
+### <a name="train-your-model-to-classify-a-type-of-file"></a>培训模型以对文件类型进行分类
+
+#### <a name="add-example-files-for-your-model"></a>为模型添加示例文件
+
+您需要添加至少五个作为合同文档的示例文件，以及一个不是合同文档的示例文件 (例如，工作) 。 
+
+1. 在"**模型>"** 页上的"**关键操作**  >  **""添加示例文件"下**，选择"**添加文件"。**
+
+   ![显示突出显示"添加示例文件"选项的"合同"页面的屏幕截图。](../media/content-understanding/key-actions-add-example-files.png)
+
+2. 在"**为模型选择示例** 文件"页上，打开"合同"文件夹，选择想要使用的文件，然后选择"添加 **"。** 如果没有示例文件，请选择 **Upload添加它们**。
+
+#### <a name="label-the-files-as-positive-or-negative-examples"></a>将文件标记为正或负示例
+
+1. On the **Models > Contract** page， under Key **actions** Classify files and  >  **run training，** select Train **classifier**.
+
+   ![显示突出显示了"分类文件并运行培训"选项的"合同"页面的屏幕截图。](../media/content-understanding/key-actions-classify-files.png)
+
+2. 在"模型>合同>分类器"页上，第一个示例文件顶部的查看器中，你将看到询问该文件是否就是您创建的合同模型示例的文本。 如果是正例，请选择 **“是”**。 如果是反例，请选择 **“否”**。
+
+3. 从 **左侧的"已** 标记示例"列表中，选择要用作示例的其他文件，然后标记它们。 
+
+    ![分类器主页](../media/content-understanding/models-contract-classifier.png) 
+
+#### <a name="add-at-least-one-explanation-to-train-the-classifier&quot;></a>至少添加一个解释来训练分类器 
+
+1. 在&quot; **合同>分类>&quot;** 页上，选择&quot; **训练&quot;** 选项卡。
+
+2. 在 **&quot;训练文件** &quot;部分，你将看到之前标记的示例文件列表。 从列表中选择一个正文件，以在查看器中显示。
+
+3. 在&quot;**说明&quot;** 部分，选择 **&quot;新建&quot;，** 然后选择&quot;**空白&quot;。**
+
+4. 在“**创建说明**”页面上：
+
+    a. 在 **&quot;名称** &quot;字段中，键入说明名称 (&quot;协议") 。
+
+    b. 在" **说明类型"** 字段中，选择" **短语列表"，** 因为您添加了文本字符串。
+
+    c. 在" **短语"列表** 框中，键入字符串 ("AGREEMENT") 。 如果字符串 **需要区分** 大小写，可以选择区分大小写。
+
+    d. 选择 **保存并训练**。
+
+    !["创建说明"面板的屏幕截图。](../media/content-understanding/contract-classifier-create-explanation.png) 
+
+#### <a name="test-your-model"></a>测试模型
+
+你可以对之前未看到的示例文件测试合同模型。 这是可选的，但它可能是一种有用的最佳做法。
+
+1. 在" **模型>合同>分类** 器"页上，选择"测试 **"** 选项卡。这将对未标记的示例文件运行模型。
+
+2. 在 **"测试文件** "列表中，示例文件显示并显示模型是否预测它们为正数或负数。 使用此信息以帮助确定分类器在文档识别中的有效性。
+
+    !["文本文件"列表中未标记文件的屏幕截图](../media/content-understanding/test-on-files.png) 
+
+3. 完成后，选择退出 **培训**。
+
+### <a name="create-and-train-an-extractor"></a>创建和训练提取程序
+
+1. On the **Models > Contract** page， under Key **actions** Create and  >  **train extractors，** select Create **extractor**.
+
+   ![显示突出显示了"创建和训练提取程序"选项的"合同"页面的屏幕截图。](../media/content-understanding/key-actions-create-extractors.png)
+
+2. 在" **新建实体提取程序"** 面板的" **新建名称** "字段中，键入提取程序的名称。 例如， *如果要从每个* 合约中提取客户端的名称，则将它取名称为 Client。
+
+3. 完成后，选择创建 **。**
+
+#### <a name="label-the-entity-you-want-to-extract"></a>标记要提取的实体
+
+创建提取程序时，将打开提取程序页。 此时，将看到示例文件的列表，并在查看器中显示列表中的第一个文件。
+
+!["客户端提取程序标记的示例"页的屏幕截图。](../media/content-understanding/client-extractor-labeled-examples.png) 
+
+若要标记实体，
+
+1. 从查看器中，选择要从文件中提取的数据。 例如，如果要提取 *客户端*，请突出显示此示例中第一个文件 ("最适合您有机 *) ，* 然后选择"保存 **"。** 你将看到"标签"列下的"已标记示例"列表中文件 **显示** 的值。
+
+2. 选择 **"下** 一个文件"以自动保存，然后打开查看器列表中的下一个文件。 或选择 **"保存**"，然后从"已 **标记的示例"列表中选择另一** 个文件。
+
+3. 在查看器中，重复步骤 1 和 2，然后重复，直到将标签保存在所有文件中。
+
+标记文件后，将显示通知横幅，通知你移动到培训。 可以选择标记更多文档或继续培训。
+
+#### <a name="add-an-explanation"></a>添加说明
+
+你可以创建一个说明，该说明提供有关实体格式本身及其在示例文件中可能具有的变体的提示。 例如，日期值可能采用许多不同的格式，例如：
+
+- 10/14/2019
+- 2019 年 10 月 14 日
+- 星期一，2019 年 10 月 14 日
+
+为了帮助确定 *合同开始日期*，可以创建模式说明。
+
+1. 在"**说明"** 部分，选择 **"新建"，** 然后选择"**空白"。**
+
+2. 在“**创建说明**”页面上：
+
+    a. 在 **"名称** "字段中，键入说明的名称 (如 *Date*) 。
+
+    b. 在"**说明类型"** 字段中，选择"**模式列表"。**
+
+    c. 在 **"值** "字段中，提供显示在示例文件中的日期变体。 例如，如果你的日期格式显示为 0/00/0000，则可在文档中输入显示的任何变体，如：
+
+    - 0/0/0000
+    - 0/00/0000
+    - 00/0/0000
+    - 00/00/0000
+
+4. 选择 **保存并训练**。
+
+#### <a name="test-your-model-again"></a>再次测试模型
+
+你可以对之前未看到的示例文件测试合同模型。 这是可选的，但它可能是一种有用的最佳做法。
+
+1. 在" **模型>合同>分类** 器"页上，选择"测试 **"** 选项卡。这将对未标记的示例文件运行模型。
+
+2. 在 **"测试文件** "列表中，示例文件显示并显示模型能否提取您需要的信息。 使用此信息以帮助确定分类器在文档识别中的有效性。
+
+3. 完成后，选择退出 **培训**。
+
+### <a name="apply-your-model-to-a-document-library"></a>将模型应用到文档库
+
+若要将模型应用到SharePoint库：
+
+1. 在"**模型>"** 页上 **的"将** 模型应用到库的关键操作"下，  >  选择"**应用模型"。**
+
+   ![Screenshot showing the Contracts page with Apply model to libraries option highlighted.](../media/content-understanding/key-actions-apply-model.png)
+
+2. 在 **"添加** 合同"SharePoint，选择包含要应用模型的文档库的网站。 如果该网站未显示在列表中，请使用搜索框进行查找。 选择“**添加**”。
+
+    > [!NOTE]
+    > 你必须拥有 *管理列表* 权限，或者 *编辑* 对应用模型的文档库的权限。
+
+3. 选择网站后，选择要应用模型的文档库。
+
+4. 由于模型与内容类型相关联，因此在将模型应用到库时，它将添加内容类型及其视图，其中提取的标签以列显示。 默认情况下，此视图是库的默认视图，但可以选择不作为默认视图，选择"高级设置"并清除"将这个新视图设置为 **默认视图"** 复选框。
+
+5. 选择 **“添加”** 将模型应用到库中。
+
+6. 在 **"模型>合约**"页上的"具有此模型的库"部分，你将看到列出的SharePoint URL。
+
+    ![显示"具有此模型的库"部分合同主页的屏幕截图。](../media/content-understanding/contract-libraries-with-this-model.png)
+
+将模型应用到文档库后，您可以开始将文档上载到网站并查看结果。
 
 ## <a name="next-step"></a>后续步骤
 

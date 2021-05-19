@@ -14,13 +14,14 @@ ms.collection:
 ms.custom:
 - M365solutions
 f1.keywords: NOCSH
+recommendations: false
 description: 组、团队和团队的生命周期结束Yammer。
-ms.openlocfilehash: 468f41df747b6cf12d3f6619d79cb97248eba1d1
-ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
+ms.openlocfilehash: fccdf838b7ebec6a1ab1fae2f709824bfbd3b6d1
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52346422"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538827"
 ---
 # <a name="end-of-lifecycle-options-for-groups-teams-and-yammer"></a>组、团队和团队的生命周期结束Yammer
 
@@ -265,3 +266,7 @@ Power BI数据和工作区可以独立于组和团队运行，并且与其他工
 **导出网络数据**
 
 Yammer管理员导出[网络数据](/yammer/manage-security-and-compliance/export-yammer-enterprise-data)。 但是，这样做将导出整个网络的所有对话。 生成的导出将列出组 ID。 可以基于此 ID 筛选对话。
+
+## <a name="related-topics"></a>相关主题
+
+[删除以前的员工和安全数据](/microsoft-365/admin/add-users/remove-former-employee)

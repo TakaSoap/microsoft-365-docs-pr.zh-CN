@@ -19,14 +19,14 @@ ms.collection:
 - m365solution-migratetomdatp
 ms.topic: article
 ms.custom: migrationguides
-ms.date: 05/11/2021
+ms.date: 05/14/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
-ms.openlocfilehash: 265f32f5a24b982933ac6a876b244b10802cdd60
-ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
+ms.openlocfilehash: 6d3f1e2b0986fe12f0bf318b53100ca31f1ed700
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52345808"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538371"
 ---
 # <a name="switch-to-microsoft-defender-for-endpoint---phase-1-prepare"></a>切换到 Microsoft Defender for Endpoint - 阶段 1：准备
 
@@ -38,13 +38,13 @@ ms.locfileid: "52345808"
 |--|--|--|
 |*你在这里！*| | |
 
-**欢迎使用切换到 Microsoft [Defender for Endpoint 的"准备"阶段](switch-to-microsoft-defender-migration.md#the-migration-process)**。 
+**欢迎使用切换到 Defender [for Endpoint 的"准备"阶段](switch-to-microsoft-defender-migration.md#the-migration-process)**。 
 
 此迁移阶段包括以下步骤：
 
 1. [在组织设备上获取和部署更新](#get-and-deploy-updates-across-your-organizations-devices)
 
-2. [获取 Microsoft Defender for Endpoint](#get-microsoft-defender-for-endpoint)。
+2. [获取 Defender for Endpoint](#get-microsoft-defender-for-endpoint)。
 
 3. [授予对 Microsoft Defender 安全中心 的访问权限](#grant-access-to-the-microsoft-defender-security-center)。
 
@@ -52,7 +52,7 @@ ms.locfileid: "52345808"
 
 ## <a name="get-and-deploy-updates-across-your-organizations-devices"></a>在组织设备上获取和部署更新
 
-最佳做法是使组织的设备和终结点保持最新。 请确保现有终结点保护和防病毒解决方案是最新的，并且组织的操作系统和应用也具有最新的更新。 现在执行此操作可帮助防止以后迁移到 Microsoft Defender for Endpoint 和 Microsoft Defender 防病毒。
+最佳做法是使组织的设备和终结点保持最新。 请确保现有终结点保护和防病毒解决方案是最新的，并且组织的操作系统和应用也具有最新的更新。 现在执行此操作可帮助防止以后迁移到 Defender for Endpoint 和 Microsoft Defender 防病毒。
 
 ### <a name="make-sure-your-existing-solution-is-up-to-date"></a>确保现有解决方案是最新的
 
@@ -74,24 +74,24 @@ ms.locfileid: "52345808"
 
 ## <a name="get-microsoft-defender-for-endpoint"></a>获取 Microsoft Defender for Endpoint
 
-现在，你已更新组织的设备，下一步是获取 Microsoft Defender for Endpoint、分配许可证并确保已预配服务。
+现在，你已更新组织的设备，下一步是获取适用于终结点的 Defender、分配许可证并确保已预配服务。
 
-1. 立即购买或试用 Microsoft Defender for Endpoint。 [启动免费试用版或请求使用引号](https://aka.ms/mdatp)。 
+1. 立即购买或试用 Defender for Endpoint。 [启动免费试用版或请求使用引号](https://aka.ms/mdatp)。 
 
 2. 验证许可证是否正确预配。 [检查你的许可证状态](production-deployment.md#check-license-state)。
 
-3. 作为全局管理员或安全管理员，设置 Microsoft Defender for Endpoint 的专用云实例。 请参阅 [Microsoft Defender for Endpoint setup： Tenant configuration](production-deployment.md#tenant-configuration)。
+3. 作为全局管理员或安全管理员，设置适用于终结点的 Defender 的专用云实例。 请参阅 [Defender for Endpoint setup： Tenant configuration](production-deployment.md#tenant-configuration)。
 
-4. 如果终结点 (，) 使用代理访问 Internet，请参阅 [Microsoft Defender for Endpoint setup： Network configuration](production-deployment.md#network-configuration)。
+4. 如果终结点 (，) 使用代理访问 Internet，请参阅 [Defender for Endpoint setup： Network configuration](production-deployment.md#network-configuration)。
  
 此时，您已准备好向将使用安全管理策略的安全管理员和安全 [https://aka.ms/MDATPportal](https://aka.ms/MDATPportal) Microsoft Defender 安全中心 () 。 
 
 > [!NOTE]
-> The Microsoft Defender 安全中心 is sometimes referred to the Microsoft Defender for Endpoint portal， and can be accessed at [https://aka.ms/MDATPportal](https://aka.ms/MDATPportal) . 
+> The Microsoft Defender 安全中心 is sometimesreferred to the Defender for Endpoint portal， and can be accessed at [https://aka.ms/MDATPportal](https://aka.ms/MDATPportal) . 
 
 ## <a name="grant-access-to-the-microsoft-defender-security-center"></a>向用户授予Microsoft Defender 安全中心
 
-你Microsoft Defender 安全中心 () 配置 [https://aka.ms/MDATPportal](https://aka.ms/MDATPportal) Microsoft Defender for Endpoint 的特性和功能。 若要了解更多信息，请参阅[Microsoft Defender 安全中心 概述](use.md)。
+此 [https://aka.ms/MDATPportal](https://aka.ms/MDATPportal) Microsoft Defender 安全中心 () 访问和配置 Defender for Endpoint 的特性和功能。 若要了解更多信息，请参阅[Microsoft Defender 安全中心 概述](use.md)。
 
 可以使用 RBAC Microsoft Defender 安全中心基本权限或基于角色的访问控制来授予 (权限) 。 我们建议使用 RBAC，以便可以更精细地控制权限。
 
@@ -111,19 +111,19 @@ ms.locfileid: "52345808"
 
 ## <a name="configure-device-proxy-and-internet-connectivity-settings"></a>配置设备代理和 Internet 连接设置
 
-若要启用设备和 Microsoft Defender for Endpoint 之间的通信，请配置代理和 Internet 设置。 下表包含指向可用于为各种操作系统和功能配置代理和 Internet 设置的资源的链接：
+若要启用设备和 Defender for Endpoint 之间的通信，请配置代理和 Internet 设置。 下表包含指向可用于为各种操作系统和功能配置代理和 Internet 设置的资源的链接：
 
 |功能  | 操作系统 | 资源 |
 |--|--|--|
 |[终结点检测和响应](overview-endpoint-detection-response.md) (EDR)  |[Windows 10](/windows/release-health/release-information) <p>[Windows Server 2019](/windows/release-health/status-windows-10-1809-and-windows-server-2019)<p>[Windows服务器 1803 或更高版本](/windows-server/get-started/whats-new-in-windows-server-1803)  |[配置计算机代理和 Internet 连接设置](configure-proxy-internet.md) |
 |EDR |[Windows Server 2016](/windows/release-health/status-windows-10-1607-and-windows-server-2016) <p>[Windows Server 2012 R2](/windows/release-health/status-windows-8.1-and-windows-server-2012-r2)<p>[Windows Server 2008 R2 SP1](/windows/release-health/status-windows-7-and-windows-server-2008-r2-sp1)<p>[Windows 8.1](/windows/release-health/status-windows-8.1-and-windows-server-2012-r2)<p>[Windows 7 SP1](/windows/release-health/status-windows-7-and-windows-server-2008-r2-sp1) |[配置代理和 Internet 连接设置](onboard-downlevel.md#configure-proxy-and-internet-connectivity-settings) |
-|EDR  |macOS： <br/>- 11.3.1 (大 Sur) <br/>- 10.15 (加泰罗尼亚语) <br/>- 10.14 (Mojave)    |[macOS 上的 Microsoft Defender for Endpoint：网络连接](microsoft-defender-endpoint-mac.md#network-connections)  |
+|EDR  |macOS： <p>11.3.1 (Big Sur) <p>10.15 (加泰罗尼亚语) <p>10.14 (Mojave)    |[macOS 上的 Defender for Endpoint：网络连接](microsoft-defender-endpoint-mac.md#network-connections)  |
 |[Microsoft Defender 防病毒](microsoft-defender-antivirus-in-windows-10.md) |[Windows 10](/windows/release-health/release-information) <p>[Windows Server 2019](/windows/release-health/status-windows-10-1809-and-windows-server-2019)<p>[Windows服务器 1803 或更高版本](/windows-server/get-started/whats-new-in-windows-server-1803) <p>[Windows Server 2016](/windows-server/get-started/whats-new-in-windows-server-2016) |[配置和验证 Microsoft Defender 防病毒软件网络连接](configure-network-connections-microsoft-defender-antivirus.md)<br/> |
-|防病毒 |macOS： <br/>- 11.3.1 (大 Sur) <br/>- 10.15 (加泰罗尼亚语) <br/>- 10.14 (Mojave)  |[macOS 上的 Microsoft Defender for Endpoint：网络连接](microsoft-defender-endpoint-mac.md#network-connections) |
-|防病毒 |Linux： <br/>- RHEL 7.2+<br/>- CentOS Linux 7.2 及以上<br/>- Ubuntu 16 LTS 或更高版本 LTS<br/>- SLES 12+<br/>- Debian 9+<br/>- Oracle Linux 7.2 |[Linux 上的 Microsoft Defender for Endpoint：网络连接](microsoft-defender-endpoint-linux.md#network-connections) |
+|防病毒 |macOS： <p>11.3.1 (Big Sur) <p>10.15 (加泰罗尼亚语) <p>10.14 (Mojave)  |[macOS 上的 Defender for Endpoint：网络连接](microsoft-defender-endpoint-mac.md#network-connections) |
+|防病毒 |Linux： <p>RHEL 7.2+<p>CentOS Linux 7.2+<p>Ubuntu 16 LTS 或更高版本 LTS<p>SLES 12+<p>Debian 9+<p>Oracle Linux 7.2 |[Linux 上的 Defender for Endpoint：网络连接](microsoft-defender-endpoint-linux.md#network-connections) |
 
 ## <a name="next-step"></a>后续步骤
 
-**恭喜！** 你已完成切换到 Microsoft  Defender for Endpoint 的"准备["阶段](switch-to-microsoft-defender-migration.md#the-migration-process)！
+**恭喜！** 你已完成切换到 **Defender** for [Endpoint 的"准备"阶段](switch-to-microsoft-defender-migration.md#the-migration-process)！
 
-- [继续设置适用于终结点的 Microsoft Defender。](switch-to-microsoft-defender-setup.md)
+- [继续为终结点设置 Defender。](switch-to-microsoft-defender-setup.md)

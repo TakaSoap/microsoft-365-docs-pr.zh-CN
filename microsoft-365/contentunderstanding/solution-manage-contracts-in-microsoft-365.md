@@ -13,12 +13,12 @@ search.appverid: ''
 localization_priority: None
 ROBOTS: NOINDEX, NOFOLLOW
 description: 了解如何使用 Syntex、Microsoft 365 和 SharePoint 的 Microsoft Teams 解决方案管理Power Automate。
-ms.openlocfilehash: 806ea9fd048dec198a19fa79f3b60f3f3cb81018
-ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
+ms.openlocfilehash: 057c581559aa2e5cfd6e98b379783a7d73e0bccc
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52281081"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538563"
 ---
 # <a name="manage-contracts-using-a-microsoft-365-solution"></a>使用解决方案管理Microsoft 365合同
 
@@ -67,6 +67,10 @@ ms.locfileid: "52281081"
 4. 通过使用Power Automate，合同将经过审批流程在 Teams 通道中移动。 当成员批准合同时，合同状态更改为批准，通过 Teams 帖子通知所有成员，并创建一个行项目以显示合同已准备好付款。 此过程可以扩展为直接写入第三方财务应用程序进行支付。
 
 5.  当成员拒绝合同时，状态将更改为"已拒绝"，并且将通过一条帖子通知所有成员Teams通知。
+
+6. 此解决方案的最终结果是业务流程自动部署。 员工可以轻松使用自定义磁贴视图Teams启动和监视文档的审批工作流。 
+
+     !["合同"选项卡。](../media/content-understanding/tile-view.png)
 
 ## <a name="create-the-solution"></a>创建解决方案
 

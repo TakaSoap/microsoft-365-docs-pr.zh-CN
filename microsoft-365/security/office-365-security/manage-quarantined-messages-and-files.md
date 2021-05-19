@@ -19,12 +19,12 @@ ms.custom:
 description: 管理员可以了解如何在 EOP 管理中心中查看和管理所有用户Exchange Online Protection () 。 使用 Microsoft Defender for Office 365 的组织的管理员还可以在 SharePoint Online、OneDrive for Business 和 Microsoft Teams 中管理隔离Microsoft Teams。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: c5e2d6a3729a24766652d4c7c0973c63b1dcb207
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: 508866fd66e4cbd00f559446d4ce52a4be063c94
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52272200"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52539103"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-admin-in-eop"></a>在 EOP 中以管理员身份管理已隔离邮件和文件
 
@@ -72,7 +72,7 @@ ms.locfileid: "52272200"
 
 ### <a name="view-quarantined-email"></a>查看隔离电子邮件
 
-1. 在安全与合规中心内，依次转到“威胁管理”\>“审阅”\>“隔离”。
+1. 在安全与&中心，转到"**威胁管理** \> **""审阅隔离** \> **"。**
 
 2. 验证“**查看隔离项目**”是否设置为默认值“**电子邮件**”。
 
@@ -234,7 +234,7 @@ ms.locfileid: "52272200"
 
 ### <a name="view-quarantined-files"></a>查看隔离文件
 
-1. 在安全与合规中心内，依次转到“威胁管理”\>“审阅”\>“隔离”。
+1. 在安全与&中心，转到"**威胁管理** \> **""审阅隔离** \> **"。**
 
 2. 将 **隔离视图更改为** 值 **文件**。 可以通过单击可用列标题对字段进行排序。
 

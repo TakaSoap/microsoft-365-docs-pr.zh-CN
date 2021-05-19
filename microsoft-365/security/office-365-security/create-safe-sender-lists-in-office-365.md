@@ -17,12 +17,12 @@ ms.custom:
 description: 管理员可以了解在 EOP 服务中允许入站邮件的可用Exchange Online Protection (首选) 。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e5473f8c37b4edcf6c2451cf995b430edbe09533
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: f76b34a439d2eaf2c8315d174483b0b30d3b3b0b
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51203675"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538755"
 ---
 # <a name="create-safe-sender-lists-in-eop"></a>在 EOP 中创建安全发件人列表
 
@@ -50,7 +50,7 @@ ms.locfileid: "51203675"
 >
 > - 虽然您可以使用安全发件人列表帮助处理误报 (标记为错误) ，但您应考虑将安全发件人列表用作临时解决方案，如果可能，应避免使用安全发件人列表。 我们不建议使用安全发件人列表管理误报，因为垃圾邮件筛选的例外可能会让组织遭受欺骗和其他攻击。 如果您坚持使用安全发件人列表来管理误报，则需要保持谨慎，并随时向 [Microsoft](report-junk-email-messages-to-microsoft.md) 报告邮件和文件主题。
 >
-> - 若要允许域发送未经身份验证的电子邮件 (绕过反欺骗保护) 但不绕过反垃圾邮件和反恶意软件检查，可以将其添加到 [AllowedToSpoof 安全发件人列表中](walkthrough-spoof-intelligence-insight.md)
+> - 若要允许域发送未经身份验证的电子邮件 (绕过反欺骗保护) 但不绕过反垃圾邮件和反恶意软件检查，可以使用欺骗智能见解和租户允许[/阻止列表](tenant-allow-block-list.md)。 [](learn-about-spoof-intelligence.md)
 >
 > - EOP 和 Outlook检查不同的邮件属性以确定邮件的发件人。 有关详细信息，请参阅本文稍后 [介绍的](#considerations-for-bulk-email) 批量电子邮件的注意事项部分。
 

@@ -19,12 +19,12 @@ ms.custom:
 description: 了解如何更新域名服务 (DNS) 记录，以便可以在 Office 365 中使用发件人策略框架 (SPF) 和自定义域。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1d200c4cf17a3d42ddafca301fecbf18c249ac37
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 828d76b95a1e3f8d1a1851121d28603a1922f486
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245680"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538983"
 ---
 # <a name="set-up-spf-to-help-prevent-spoofing"></a>设置 SPF 以防欺骗
 
@@ -45,6 +45,13 @@ ms.locfileid: "52245680"
 本文介绍了如何更新域名服务 (DNS) 记录，以便可以在 Office 365 中结合使用发件人策略框架 (SPF) 电子邮件身份验证和自定义域。
 
 SPF 帮助 *验证* 从你的自定义域发送的出站电子邮件（是否来自所其显示地址）。 这是建立完全推荐的 SPF、[DKIM](use-dkim-to-validate-outbound-email.md) 和 [DMARC](use-dmarc-to-validate-email.md) 电子邮件身份验证方法的第一步。
+
+- [先决条件](#prerequisites)
+- [创建或更新你的 SPF TXT 记录](#create-or-update-your-spf-txt-record)
+  - [如何处理子域？](#how-to-handle-subdomains)
+- [SPF 电子邮件身份验证实际上做什么？](#what-does-spf-email-authentication-actually-do)
+  - [SPF 疑难解答](#troubleshooting-spf)
+- [有关 SPF 的详细信息](#more-information-about-spf)
 
 ## <a name="prerequisites"></a>先决条件
 
@@ -118,7 +125,6 @@ Office 365 的 SPF TXT 记录将在任何自定义域或子域的外部 DNS 中�
 ## <a name="troubleshooting-spf"></a>SPF 疑难解答
 
 是否遇到与 SPF TXT 记录相关的问题？阅读[故障排除：Office 365 中 SPF 的最佳实践](how-office-365-uses-spf-to-prevent-spoofing.md#SPFTroubleshoot)。
-
 
 ## <a name="what-does-spf-email-authentication-actually-do"></a>SPF 电子邮件身份验证实际上做什么？
 

@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 8e8fc228b8856df03b580e748bf00efc8d4333c3
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: bb436cbd2d0fa453872760c1d2656585e02d1767
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934125"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538863"
 ---
 # <a name="plan-for-end-of-support-software-and-software-versions-with-threat-and-vulnerability-management"></a>规划支持终止的软件版本和 危险和漏洞管理
 
@@ -40,6 +40,9 @@ ms.locfileid: "51934125"
 软件或软件版本的支持终止 (EOS) （也称为生命周期结束 (EOL) ）意味着它们将不再受支持或获得服务，并且不会接收安全更新。 当你使用具有结束支持的软件或软件版本时，你将使组织面临安全漏洞、法律和财务风险。
 
 安全与 IT 管理员必须协同工作，并确保组织的软件清单配置为获得最佳结果、合规性和正常的网络生态系统。 他们应检查删除或替换已到达停止支持的应用的选项，并更新不再受支持的版本。 最好在支持日期结束之前 **创建** 和实施计划。
+
+>[!NOTE]
+> EOS 功能当前不适用于 Mac、Linux Windows 等 (非) ;但是，以后会添加它。
 
 ## <a name="find-software-or-software-versions-that-are-no-longer-supported"></a>查找不再受支持的软件或软件版本
 

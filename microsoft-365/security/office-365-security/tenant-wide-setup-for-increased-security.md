@@ -20,12 +20,12 @@ ms.custom:
 description: 本主题将指导你完成对影响租户环境安全性的租户范围内设置Microsoft 365配置。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: efcc468dc9b6a41af79ecf2f22a6ad58a410e08f
-ms.sourcegitcommit: a46532bb422ee51331f478ff50cc5444586bf6a9
+ms.openlocfilehash: 686768d05e37a4e103640c2973fd30abaa25630b
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/09/2021
-ms.locfileid: "51650322"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538935"
 ---
 # <a name="configure-your-microsoft-365-tenant-for-increased-security"></a>配置 Microsoft 365 租户以提高安全性
 
@@ -50,20 +50,20 @@ Office 365安全分数根据常规活动和安全设置分析组织的安全性�
 
 |领域|包括默认策略|建议|
 |---|---|---|
-|**防钓鱼**|是|如果你有自定义域，请配置默认的防钓鱼策略来保护你的最有价值用户的电子邮件帐户，例如 CEO，并保护你的域。 <p> 查看[Office 365](set-up-anti-phishing-policies.md)中的反网络钓鱼策略，并参阅在[EOP](configure-anti-phishing-policies-eop.md)中配置防钓鱼策略或在 Microsoft Defender 中配置防钓鱼策略[Office 365。](configure-atp-anti-phishing-policies.md)|
+|**防钓鱼**|是|<ul><li>模拟保护 - 如果你有适用于 Office 365 的 Defender 和自定义域，请配置默认防钓鱼策略中的模拟保护设置，以保护最有价值用户的电子邮件帐户（如 CEO）并保护你的域。 详细信息：[反网络钓鱼策略中的模拟设置和](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)[模拟见解](impersonation-insight.md)</li><li>欺骗智能 — 审查正在欺骗你的域的发件人。 阻止或允许这些发件人。 详细信息 [：EOP 中的欺骗智能](learn-about-spoof-intelligence.md) 见解 [和管理租户允许/阻止列表](tenant-allow-block-list.md)。</li></ul>|
 |**反恶意软件引擎**|是| 编辑默认策略： <ul><li>常见附件类型筛选器：选择"打开"</li></ul> <p> 您还可以创建自定义恶意软件筛选器策略，并应用于组织中指定的用户、组或域。 <p> 详细信息： <ul><li>[反恶意软件保护](anti-malware-protection.md)</li><li>[配置反恶意软件策略](configure-anti-malware-policies.md)</li></ul>|
 |**保险箱Microsoft Defender for Office 365**|否|在"附件"保险箱主页上，单击"**全局设置**"并启用此设置： <ul><li>**启用适用于 SharePoint、OneDrive 和 Microsoft Teams 的 Defender for Office 365**</li></ul> <p> 使用保险箱创建"附件"策略： <ul><li> **阻止**：选择 **"阻止** "作为未知恶意软件响应。</li><li>**启用重定向**：选中此框并输入电子邮件地址，例如管理员或隔离帐户。</li><li>**如果恶意软件扫描附件出现时间过或出现错误，请** 应用上述选择：选中此框。</li><li>**_应用于_*： **收件人域是选择** \> 你的域。</li></ul> <p> 详细信息[：保险箱附件SharePoint、OneDrive和Microsoft Teams](mdo-for-spo-odb-and-teams.md)设置保险箱[附件策略](set-up-safe-attachments-policies.md)|
 |**保险箱Microsoft Defender for Office 365**|是|在"链接"保险箱，单击"**全局设置"：** <ul><li>**Use 保险箱 Links in： Office 365 applications**： Verify this setting is turned on.</li><li>**Do not track when users click 保险箱 Links**： Turn this setting off to track user clicks.</li></ul> <p> 使用保险箱创建链接策略： <ul><li>**选择邮件中未知潜在恶意 URL 的操作**：验证此设置为 **"打开"。**</li><li>**Select the action for unknown or potentially malicious urls within Microsoft Teams**： Verify this setting is **On**.</li><li>**对指向文件的可疑链接应用实时 URL** 扫描：选中此框。</li><li>**等待 URL 扫描完成，然后再传递消息**：选中此框。</li><li>**Apply 保险箱 Links to email messages sent within the organization**： Check this box</li><li>**不允许用户单击到原始 URL：** 选中此框。</li><li>**应用于**： **收件人域是选择** \> 你的域。</li></ul> <p> 详细信息：[设置保险箱链接策略。](set-up-safe-links-policies.md)|
-|**反垃圾邮件 (邮件筛选)**|是| 要关注哪些方面： <ul><li>垃圾邮件过多 — 选择"自定义"设置并编辑"默认垃圾邮件筛选器"策略。</li><li>欺骗智能 — 审查欺骗你的域的发件人。 阻止或允许这些发件人。</li></ul> <p> 详细信息[：Microsoft 365电子邮件反垃圾邮件保护。](anti-spam-protection.md)|
+|**反垃圾邮件 (邮件筛选)**|是| 监视内容：垃圾邮件过多 — 选择"自定义"设置并编辑"默认垃圾邮件筛选器"策略。 详细信息[：Microsoft 365电子邮件反垃圾邮件保护。](anti-spam-protection.md)|
 |***电子邮件身份验证***|是|电子邮件身份验证使用域名系统 (DNS) 向电子邮件添加有关电子邮件发件人的可验证信息。 Microsoft 365为默认域设置电子邮件 (onmicrosoft.com) ，Microsoft 365管理员也可以对自定义域使用电子邮件身份验证。 使用三种身份验证方法： <ul><li>发件人策略框架 (SPF) 。</li><ul><li>有关设置，请参阅在 Microsoft 365[中设置 SPF 以帮助防止欺骗](set-up-spf-in-office-365-to-help-prevent-spoofing.md)。</li></ul> <li>域密钥标识的邮件 (DKIM) 。</li><ul><li>请参阅 [使用 DKIM 验证从自定义域发送的出站电子邮件](use-dkim-to-validate-outbound-email.md)。</li><li>配置 DKIM 后，在安全中心启用它。</li></ul><li>基于域的邮件身份验证、报告和一致性 (DMARC) 。</li><ul><li>对于 DMARC[设置 使用 DMARC 验证电子邮件Microsoft 365。](use-dmarc-to-validate-email.md)</li></ul></ul>|
 |
 
 > [!NOTE]
 > 对于 SPF 的非标准部署、混合部署和故障排除：Microsoft 365 如何使用发件人策略框架[ (SPF](how-office-365-uses-spf-to-prevent-spoofing.md)) 防止欺骗。
 
-## <a name="view-dashboards-and-reports-in-the-security-and-compliance-centers"></a>查看安全与合规中心中的仪表板和报告
+## <a name="view-dashboards-and-reports-in-the-security--compliance-center"></a>在安全与合规中心内查看&和报告
 
-访问这些报告和仪表板，详细了解环境的运行状况。 随着组织使用服务，这些报告Office 365更加丰富。 现在，请熟悉可以监视和采取操作的操作。 有关详细信息，请参阅：安全[与合规Microsoft 365报告](../../compliance/reports-in-security-and-compliance.md)。
+访问这些报告和仪表板，详细了解环境的运行状况。 随着组织使用服务，这些报告Office 365更加丰富。 现在，请熟悉可以监视和采取操作的操作。 有关详细信息，请参阅安全 [与合规中心&报告](../../compliance/reports-in-security-and-compliance.md)。
 
 ****
 

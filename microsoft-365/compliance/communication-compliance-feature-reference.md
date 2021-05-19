@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 1921c0985128b49e3f8e11a29df8bc75cdbda829
-ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
+ms.openlocfilehash: dcae50150eb3b21e65e68a5cea376a0cdef31a65
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52114378"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538443"
 ---
 # <a name="communication-compliance-feature-reference"></a>通信合规性功能参考
 
@@ -178,20 +178,20 @@ ms.locfileid: "52114378"
 - **Racy 图像**：扫描本质上是建议但包含的显式内容少于视为成人的图像的图像。
 - **Gory 图像**：扫描描述暴力和暴力的图像。
 
-*"成人**"、Racy* 和 *Gory* 图像分类器扫描 .jpeg、.png、.gif 和 .bmp 格式的文件。 图像文件的大小必须小于 4 MB (MB) 并且图像的尺寸必须大于 50x50 像素和大于 50 KB (KB) ，图像才符合评估条件。 Exchange Online 电子邮件和 Microsoft Teams 频道和聊天支持图像标识。
+*"成人**"、Racy* 和 *Gory* 图像分类器扫描 .jpeg、.png、.gif 和 .bmp 格式的文件。 图像文件的大小必须小于 4 MB (MB) 并且图像的尺寸必须大于 50x50 像素和大于 50 KB (KB) ，图像才符合评估条件。 图像标识受电子邮件Exchange Online频道和聊天Microsoft Teams支持。
 
 内置可训练和全局分类器并未提供这些领域的术语或图像的详尽列表。 此外，语言和文化标准会不断改变，因此，Microsoft 保留自行决定更新分类器的权利。 虽然分类器可帮助组织监视这些方面，但分类器并不适合提供组织监视或处理此类语言或图像的唯一方式。 你的组织（而非 Microsoft）仍负责与监视、扫描和阻止这些领域的语言和图像相关的所有决策，包括遵守本地隐私和其他适用法律。 Microsoft 鼓励在部署和使用之前咨询法律顾问。
 
 >[!NOTE]
 >使用分类器的策略将检查和评估字数为 6 或更大值的邮件。 在使用分类器的策略中，不评估包含少于 6 个单词的邮件。 若要识别包含不当内容的较短邮件并采取措施，我们建议在监控此类内容的通信合规性策略中包含自定义关键字词典。
 
-有关 Microsoft 365 中可训练分类器的信息，请参阅 [可训练分类器入门](classifier-get-started-with.md)。
+有关可训练分类器在Microsoft 365的信息，请参阅可[训练分类器入门](classifier-get-started-with.md)。
 
 ### <a name="optical-character-recognition-ocr-preview"></a>OCR 预览 (光学)  (识别) 
 
 配置内置或自定义通信合规性策略，以扫描和识别组织中可能不适合的图像中的打印或手写文本。 集成的 Azure 认知服务和用于识别图像文本的光学扫描支持可帮助分析员和研究人员检测并处理在主要非文本通信中可能错过不当行为的实例。
 
-可以从模板、 (自定义策略) 新策略中启用光学字符识别功能，以扩展对处理嵌入图像和附件的支持。 在从策略模板创建的策略中启用时，电子邮件和 Microsoft Teams 聊天消息中的嵌入或附加图像支持自动扫描。 对于自定义策略，必须在策略中配置一个或多个与关键字、内置分类器或敏感信息类型关联的条件设置，以允许选择 OCR 扫描。
+可以从模板、 (自定义策略) 新策略中启用光学字符识别功能，以扩展对处理嵌入图像和附件的支持。 在从策略模板创建的策略中启用时，电子邮件和聊天消息中的嵌入或附加图像Microsoft Teams自动扫描。 对于自定义策略，必须在策略中配置一个或多个与关键字、内置分类器或敏感信息类型关联的条件设置，以允许选择 OCR 扫描。
 
 扫描和处理采用以下图像格式的 50 KB 到 4 MB 的图像：
 
@@ -337,9 +337,9 @@ ms.locfileid: "52114378"
 
 1. 使用 Microsoft 365 组织中的管理员账户凭据登录 [https://compliance.microsoft.com](https://compliance.microsoft.com)。
 
-2. 在 Microsoft 365 合规中心，转到"策略 **"。**
+2. 在"Microsoft 365合规中心"中，转到"**策略"。**
 
-3. 选择 **"策略"页上的"Office 365** 警报"，打开 **Office 365** 安全与合规中心中的"警报&页面。 
+3. 选择 **Office 365** 策略"页上的"警报策略"页面，打开"Office 365安全与合规 **&"页面**。
 
 4. 选中要更新的通信合规性策略的复选框，然后选择"编辑 **策略"。**
 
@@ -349,78 +349,78 @@ ms.locfileid: "52114378"
 
 7. 选择 **"关闭** "退出警报策略详细信息页面。
 
-## <a name="power-automate-flows"></a>Power Automate 流
+## <a name="power-automate-flows"></a>Power Automate流
 
-[Microsoft Power Automate](/power-automate/getting-started) 是一种工作流服务，可自动执行应用程序和服务中的操作。 通过使用来自模板的流或手动创建的流，可以自动执行与这些应用程序和服务关联的常见任务。 启用 Power Automate 流以实现通信合规性时，可以自动执行警报和用户的重要任务。 你可以配置 Power Automate 流，以在用户具有通信合规性警报和其他应用程序时通知管理员。
+[Microsoft Power Automate](/power-automate/getting-started)是一种工作流服务，可跨应用程序和服务自动执行操作。 通过使用来自模板的流或手动创建的流，可以自动执行与这些应用程序和服务关联的常见任务。 启用通信Power Automate流时，可以自动执行警报和用户的重要任务。 您可以配置Power Automate流，以在用户具有通信合规性警报和其他应用程序时通知管理员。
 
-具有包含通信合规性的 Microsoft 365 订阅的客户无需其他 Power Automate 许可证，就可使用建议的默认通信合规性 Power Automate 模板。 可以自定义默认模板以支持您的组织并涵盖核心通信合规性方案。 如果你选择在这些模板中使用高级 Power Automate 功能，使用 Microsoft 365 合规性连接器创建自定义模板，或者将 Power Automate 模板用于 Microsoft 365 的其他合规性区域，你可能需要其他 Power Automate 许可证。
+具有包含Microsoft 365合规性的订阅的客户无需额外的 Power Automate 许可证，就可使用建议的默认通信合规性Power Automate模板。 可以自定义默认模板以支持您的组织并涵盖核心通信合规性方案。 如果您选择使用这些模板中的高级 Power Automate 功能、使用 Microsoft 365 合规性连接器创建自定义模板或使用 Microsoft 365 中其他合规性领域的 Power Automate 模板，您可能需要其他 Power Automate 许可证。
 
 >[!IMPORTANT]
->在测试 Power Automate 流时是否收到有关其他许可证验证的提示？ 您的组织可能尚未收到此预览功能的服务更新。 更新正在部署中，具有 Microsoft 365 订阅（包括通信合规性）的所有组织都应具有对在 2020 年 10 月 30 日从建议的 Power Automate 模板创建的流的许可证支持。
+>在测试流时是否收到有关其他许可证验证Power Automate提示？ 您的组织可能尚未收到此预览功能的服务更新。 更新正在部署中，具有 Microsoft 365 订阅（包括通信合规性）的所有组织都应具有到 2020 年 10 月 30 日从推荐的 Power Automate 模板创建的流的许可证支持。
 
-![通信合规性 Power Automate](../media/communication-compliance-power-automate.png)
+![通信合规性Power Automate](../media/communication-compliance-power-automate.png)
 
-以下 Power Automate 模板提供给客户以支持通信合规性警报的流程自动化：
+以下Power Automate模板提供给客户，以支持通信合规性警报的流程自动化：
 
 - **当用户具有通信合规性警报** 时通知经理：当用户具有通信合规性警报时，某些组织可能需要立即发送管理通知。 配置和选择此流后，会向案例用户的经理发送一封电子邮件，包含有关所有警报的以下信息：
     - 警报的适用策略
     - 警报的日期/时间
     - 警报的严重性级别
 
-### <a name="create-a-power-automate-flow"></a>创建 Power Automate 流
+### <a name="create-a-power-automate-flow"></a>创建Power Automate流
 
-若要从建议的默认模板创建 Power Automate 流，在警报中直接操作时，你将使用"自动化"控件中的"管理 **Power Automate** 流"选项。 若要使用管理 Power Automate 流创建 Power **Automate** 流，您必须至少是一个通信合规性角色组的成员。
+若要从Power Automate模板创建流，在警报中直接操作时 **，你将** 使用"自动化"控件中的"管理 Power Automate 流"选项。 若要使用管理Power Automate **流创建Power Automate** 流，您必须是至少一个通信合规性角色组的成员。
 
-完成以下步骤以从默认模板创建 Power Automate 流：
+完成以下步骤以创建Power Automate模板的流：
 
-1. 在 Microsoft 365 合规中心中，转到"**通信** 合规性策略"，然后选择具有  >  你要查看的警报的策略。
+1. 在"Microsoft 365合规中心"中，转到"**通信** 合规性策略"，然后选择具有  >  要查看的警报的策略。
 2. 从策略中选择"挂起 **"** 选项卡并选择挂起的警报。
-3. 从 **警报操作菜单中选择"Power Automate"。**
-4. 在 **"Power Automate"** 页上，从页面上的"通信合规性模板 **"部分选择** 一个默认模板。
+3. Select **Power Automate** from the alert action menu.
+4. 在 **"Power Automate"** 页上，从页面上的"通信合规性模板 **"部分选择** 默认模板。
 5. 该流将列出该流所需的嵌入连接，并显示连接状态是否可用。 如果需要，请更新任何未显示为可用的连接。 选择"**继续"。**
-6. 默认情况下，使用为流完成分配的任务所需的推荐通信合规性和 Microsoft 365 服务数据字段预配置建议流。 如果需要，使用"显示高级选项"控件并配置流组件的可用属性来自定义流组件。
+6. 默认情况下，推荐流预配置了推荐的通信合规性，Microsoft 365为流完成分配的任务所需的服务数据字段。 如果需要，使用"显示高级选项"控件并配置流组件的可用属性来自定义流组件。
 7. 如果需要，通过选择"新建步骤"按钮将任何其他步骤 **添加到** 流中。 在大多数情况下，建议的默认模板不需要此更改。
 8. 选择 **"保存草稿**"以保存流以稍后进行进一步配置，或选择"保存"以完成流的配置。
-9. 选择 **"关闭** "以返回到"Power Automate 流"页。 新模板将在"我的流"选项卡上作为流列出，并自动从 Power Automate 控件为在使用通信合规性警报时创建流的用户使用。
+9. 选择 **"** 关闭"返回到"Power Automate"页面。 新模板将在"我的流"选项卡上作为流列出，并自动从 Power Automate 控件中为在使用通信合规性警报时创建流的用户使用。
 
-### <a name="share-a-power-automate-flow"></a>共享 Power Automate 流
+### <a name="share-a-power-automate-flow"></a>共享Power Automate流
 
-默认情况下，用户创建的 Power Automate 流仅对该用户可用。 若要使其他通信合规性用户具有访问权限并使用流，流创建者必须共享该流。 若要共享流，当你直接在警报中操作时，你将使用 **Power Automate** 控件。
+默认情况下，Power Automate创建的流仅对该用户可用。 若要使其他通信合规性用户具有访问权限并使用流，流创建者必须共享该流。 若要共享流，在警报中直接操作 **时** Power Automate控件。
 
-若要共享 Power Automate 流，您必须至少是一个通信合规性角色组的成员。
-完成以下步骤以共享 Power Automate 流：
+若要共享Power Automate流，您必须至少是一个通信合规性角色组的成员。
+完成以下步骤以共享Power Automate流：
 
-1. 在 Microsoft 365 合规中心中，转到"**通信** 合规性策略"，然后选择具有  >  你要查看的警报的策略。
+1. 在"Microsoft 365合规中心"中，转到"**通信** 合规性策略"，然后选择具有  >  要查看的警报的策略。
 2. 从策略中选择"挂起 **"** 选项卡并选择挂起的警报。
-3. 从 **警报操作菜单中选择"Power Automate"。**
-4. 在 **"Power Automate 流"** 页上，选择" **我的** 流"或" **团队流"** 选项卡。
+3. Select **Power Automate** from the alert action menu.
+4. 在 **"Power Automate流**"页上，选择"**我的** 流"或"**团队流"** 选项卡。
 5. 选择要共享的流 **，然后从** "流选项"菜单中选择"共享"。
 6. 在"流共享"页上，输入要添加为流所有者的用户或组的名称。
 7. 在" **已使用** 连接"对话框中，选择 **"确定** "确认添加的用户或组将具有对流的完全访问权限。
 
-### <a name="edit-a-power-automate-flow"></a>编辑 Power Automate 流
+### <a name="edit-a-power-automate-flow"></a>编辑Power Automate流
 
-如果需要编辑流，在警报中直接操作时，将使用 **Power Automate** 控件。 若要编辑 Power Automate 流，您必须至少是一个通信合规性角色组的成员。
+如果需要编辑流，则直接在警报中Power Automate控件。  若要编辑Power Automate流，您必须至少是一个通信合规性角色组的成员。
 
-完成以下步骤以编辑 Power Automate 流：
+完成以下步骤以编辑Power Automate流：
 
-1. 在 Microsoft 365 合规中心中，转到"**通信** 合规性策略"，然后选择具有  >  你要查看的警报的策略。
+1. 在"Microsoft 365合规中心"中，转到"**通信** 合规性策略"，然后选择具有  >  要查看的警报的策略。
 2. 从策略中选择"挂起 **"** 选项卡并选择挂起的警报。
-3. 从 **警报操作菜单中选择"Power Automate"。**
-4. 在 **"Power Automate 流"** 页上，选择要编辑的流。 从 **流控制** 菜单中选择"编辑"。
-5. 选择 **省略号**  >  **"设置"** 以更改流组件设置或省略号  >  **"** 删除"以删除流组件。
+3. Select **Power Automate** from the alert action menu.
+4. 在 **"Power Automate流"** 页上，选择要编辑的流。 从 **流控制** 菜单中选择"编辑"。
+5. 选择省略 **号设置** 更改流组件设置或省略号"删除"  >    >  以删除流组件。
 6. 选择 **"保存****"，** 然后选择"关闭"以完成流的编辑。
 
-### <a name="delete-a-power-automate-flow"></a>删除 Power Automate 流
+### <a name="delete-a-power-automate-flow"></a>删除Power Automate流
 
-如果需要删除流，则当直接在警报中操作时，将使用 **Power Automate** 控件。 若要删除 Power Automate 流，您必须至少是一个通信合规性角色组的成员。
+如果需要删除流，则直接在警报中Power Automate控件。  若要删除Power Automate流，您必须至少是一个通信合规性角色组的成员。
 
-完成以下步骤以删除 Power Automate 流：
+完成以下步骤以删除Power Automate流：
 
-1. 在 Microsoft 365 合规中心中，转到"**通信** 合规性策略"，然后选择具有  >  你要查看的警报的策略。
+1. 在"Microsoft 365合规中心"中，转到"**通信** 合规性策略"，然后选择具有  >  要查看的警报的策略。
 2. 从策略中选择"挂起 **"** 选项卡并选择挂起的警报。
-3. 从 **警报操作菜单中选择"Power Automate"。**
-4. 在 **"Power Automate 流"** 页上，选择要删除的流。 从 **流控制** 菜单中选择"删除"。
+3. Select **Power Automate** from the alert action menu.
+4. 在 **"Power Automate流**"页上，选择要删除的流。 从 **流控制** 菜单中选择"删除"。
 5. 在删除确认对话框中，选择 **"删除** "以删除流，或选择" **取消** "退出删除操作。
 
 ## <a name="reports"></a>报表
@@ -482,7 +482,7 @@ ms.locfileid: "52114378"
 在某些情况下，您必须向法规或合规性审核员提供相关信息，以证明监督用户活动和通信。 此信息可能是与已定义的组织策略相关联的所有活动的摘要，或者通信合规性策略发生更改时。 通信合规性策略具有内置的审核跟踪，可完全准备内部或外部审核。 通信策略会捕获每个创建、编辑和删除操作的详细审核历史记录，以提供监管程序的证明。
 
 >[!Important]
->必须先为组织启用审核，然后才能记录通信合规性事件。 若要启用审核，请参阅[启用审核日志。](communication-compliance-configure.md#step-2-required-enable-the-audit-log)
+>必须先为组织启用审核，然后才能记录通信合规性事件。 若要启用审核，请参阅[启用审核日志。](communication-compliance-configure.md#step-2-required-enable-the-audit-log) 当活动触发在 Microsoft 365 审核日志 捕获的事件时，可能需要 48 小时才能在通信合规性策略中查看这些事件。
 
 若要查看通信合规性策略更新活动，请在任何策略的主页上选择"导出策略更新"控件。 必须分配有全局管理员或 *通信合规性管理员* 角色才能导出更新活动。 此操作将生成包含以下信息.csv审核文件：
 
@@ -545,8 +545,8 @@ Search-UnifiedAuditLog -StartDate $startDate -EndDate $endDate -Operations Super
 - 在策略匹配中Office 365保存在监督中的邮件不能移动或共享到 Microsoft 365。
 - 对于在转换过程中并行使用这两个解决方案的组织，每个解决方案中使用的策略必须具有唯一的策略名称。 在过渡期间，可以在两种策略之间共享组和自定义关键字词典。
 
-有关 Office 365 中监督的停用信息，请参阅 [Microsoft 365 路线图](https://www.microsoft.com/microsoft-365/roadmap) 了解详细信息。
+有关停用信息，Office 365，请参阅Microsoft 365[路线图](https://www.microsoft.com/microsoft-365/roadmap)了解详细信息。
 
 ## <a name="ready-to-get-started"></a>准备好开始了吗?
 
-若要为 Microsoft 365 组织配置通信合规性，请参阅 [为 Microsoft 365](communication-compliance-configure.md)组织配置通信合规性。
+若要为组织配置通信合规性Microsoft 365，请参阅为组织配置通信[Microsoft 365合规性](communication-compliance-configure.md)。

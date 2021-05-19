@@ -14,13 +14,14 @@ ms.collection:
 ms.custom:
 - M365solutions
 f1.keywords: NOCSH
+recommendations: false
 description: 与协作工具的生命周期管理选项Microsoft 365
-ms.openlocfilehash: ff3a3a60ce49c423410b51dc6fee2137ebf8952a
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 7d88618b75ef731bf38df029970efdc05f3eea5a
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50907924"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538815"
 ---
 # <a name="plan-organization-and-lifecycle-governance-for-microsoft-365-groups-and-microsoft-teams"></a>规划组和组织的组织和生命周期Microsoft 365和Microsoft Teams
 
@@ -80,3 +81,5 @@ Microsoft 365组具有一组丰富的工具来实施组织所需的管理功能�
 [协作治理规划分步规划](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
 
 [创建协作管理计划](collaboration-governance-first.md)
+
+[删除以前的员工和安全数据](/microsoft-365/admin/add-users/remove-former-employee)

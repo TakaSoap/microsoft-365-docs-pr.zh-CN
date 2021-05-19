@@ -8,19 +8,19 @@ manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Priority
+localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
 description: 了解如何在合规中心中创建并导入策略的自定义敏感信息类型。
-ms.openlocfilehash: 18679e171fa704341094dee582124f36a950f8a5
-ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
-ms.translationtype: HT
+ms.openlocfilehash: 75e767b0ea5ebe4940af5ee0fbfa85f858f65e9c
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52113984"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538696"
 ---
 # <a name="create-a-custom-sensitive-information-type-using-powershell"></a>使用 PowerShell 创建自定义敏感信息类型
 
@@ -176,7 +176,7 @@ ms.locfileid: "52113984"
   
 若符合，模式返回可用于策略内条件中的计数和可信度。向策略添加用于检测敏感信息类型的条件时，可以编辑计数和可信度（如下所示）。本主题稍后将解释可信度（亦称为匹配准确度）。
   
-![“实例计数”和“匹配准确度”选项](../media/11d0b51e-7c3f-4cc6-96d8-b29bcdae1aeb.png)
+![“实例计数”和“匹配准确度”选项](../media/sit-confidence-level.png)
   
 创建正则表达式时，请注意一些潜在问题。例如，如果编写并上传的正则表达式标识过多内容，这可能会影响性能。若要详细了解这些潜在问题，请参阅后面的[要注意的潜在验证问题](#potential-validation-issues-to-be-aware-of)部分。
   
@@ -296,7 +296,7 @@ Any 元素有可选的 minMatches 和 maxMatches 特性，可用于定义必须�
   
 Pattern 元素有必需的 confidenceLevel 属性。可将 confidenceLevel 值（介于 1 和 100 之间的整数）视为实体中每个模式的唯一 ID - 实体中的模式必须具有你分配的不同的可信度。整数值是否精确并不重要 - 只需选取对合规性团队有意义的数字即可。上传自定义敏感信息类型和创建策略后，可以在所创建规则的条件中引用这些可信度。
   
-![显示包含不同 confidenceLevel 特性值的 Pattern 元素的 XML 标记](../media/301e0ba1-2deb-4add-977b-f6e9e18fba8b.png)
+![显示包含不同 confidenceLevel 特性值的 Pattern 元素的 XML 标记](../media/sit-xml-markedup-2.png)
   
 除每个模式的 confidenceLevel 外，Entity 还有一个 recommendedConfidence 属性。 可将推荐的可信度属性视为规则的默认可信度级别。 在策略中创建规则时，如果不指定规则要使用的可信度级别，则该规则将基于推荐的实体可信度级别进行匹配。 请注意，规则包中的每个实体 ID 都必须使用 recommendedConfidence 属性，如果该属性缺失，将无法保存使用敏感信息类型的策略。 
   

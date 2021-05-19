@@ -14,13 +14,14 @@ ms.collection:
 ms.custom:
 - M365solutions
 f1.keywords: NOCSH
+recommendations: false
 description: 组服务交互
-ms.openlocfilehash: 331c30c86481b1729251c685de2d663fb14f390b
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: f9b0d7ca61d55e3d23aa94577fc8257073b26675
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50921020"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52539199"
 ---
 # <a name="groups-services-interactions"></a>组服务交互
 

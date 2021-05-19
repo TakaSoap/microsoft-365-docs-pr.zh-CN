@@ -15,12 +15,12 @@ ms.assetid: d74c6ddf-11b0-43ee-b298-8bb0340895f0
 description: 管理员可以了解如何设置独立电子邮件Exchange Online Protection (EOP) 保护本地电子邮件环境。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: bbad39475f87be27a83edc0c27e2bbe46f8e39ac
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 63504dd2d729674fd84eff2fd5548c8d077cd1f1
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51203896"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538971"
 ---
 # <a name="set-up-your-standalone-eop-service"></a>设置独立 EOP 服务
 
@@ -66,7 +66,7 @@ ms.locfileid: "51203896"
 
 在能使邮件在 EOP 和你的内部部署邮件服务器间流动的 Set up connectors to route mail between Office 365 and your own email servers (EAC) 中创建连接器。 有关详细说明，请参阅设置[连接器以在邮件Microsoft 365和您自己的电子邮件服务器之间路由邮件](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-to-route-mail)。
 
-### <a name="how-do-you-know-this-task-worked"></a>如何判断此任务生效？
+### <a name="how-do-you-know-this-worked"></a>如何知道操作成功？
 
 检查服务与环境之间的邮件流。 有关详细信息，请参阅通过验证[您的邮件连接器测试Microsoft 365流](/exchange/mail-flow-best-practices/test-mail-flow)。
 
@@ -101,6 +101,6 @@ ms.locfileid: "51203896"
 - 如果您想进行出站电子邮件测试，可以发送组织中一个用户的电子邮件到基于 Web 的电子邮件帐户并确认是否收到邮件。
 
 > [!TIP]
-> 完成安装后，您无需进行其他操作，EOP 即可删除垃圾邮件和恶意软件。 EOP 会自动删除垃圾邮件和恶意软件。 但是，您可以根据业务需求微调设置。 有关详细信息，请参阅反垃圾邮件[和反恶意软件保护Office 365](anti-spam-and-anti-malware-protection.md)配置[欺骗智能](learn-about-spoof-intelligence.md)。
+> 完成安装后，您无需进行其他操作，EOP 即可删除垃圾邮件和恶意软件。 EOP 会自动删除垃圾邮件和恶意软件。 但是，您可以根据业务需求微调设置。 有关详细信息，请参阅 EOP 中的反垃圾邮件[和反恶意软件](anti-spam-and-anti-malware-protection.md)保护[Microsoft 365。](anti-phishing-protection.md)
 >
 > 现在服务正在运行，我们建议阅读 Best [practices for configuring EOP](best-practices-for-configuring-eop.md)，其中介绍了设置 EOP 后的建议设置和注意事项。

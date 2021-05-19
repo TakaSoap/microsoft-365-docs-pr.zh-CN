@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: 81f1b4154de25f6186679adc5b1f24f78f302415
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 8aaea65c617300a16f99a9a3e3a62d94b7983198
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51933753"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538347"
 ---
 # <a name="troubleshoot-service-issues"></a>服务疑难解答
 
@@ -34,7 +34,7 @@ ms.locfileid: "51933753"
 > 想要体验适用于终结点的 Defender？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-pullalerts-abovefoldlink) 
 
 
-本部分解决使用 Microsoft Defender 高级威胁服务时可能出现的问题。
+本部分解决使用 Microsoft Defender for Endpoint 服务时可能出现的问题。
 
 ## <a name="server-error---access-is-denied-due-to-invalid-credentials"></a>服务器错误 - 由于凭据无效，访问被拒绝
 如果在尝试访问服务时遇到服务器错误，则需要更改浏览器 Cookie 设置。

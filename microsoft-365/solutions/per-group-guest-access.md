@@ -14,13 +14,14 @@ ms.collection:
 ms.custom:
 - M365solutions
 f1.keywords: NOCSH
+recommendations: false
 description: 了解如何阻止将来宾添加到特定组
-ms.openlocfilehash: 572746a666586920ad85dafddbd78997940490d7
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 1db2055f3e546c05905dbf4c854333387112f06e
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50907936"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538923"
 ---
 # <a name="prevent-guests-from-being-added-to-a-specific-microsoft-365-group-or-microsoft-teams-team"></a>阻止来宾添加到特定组或Microsoft 365组Microsoft Teams组
 

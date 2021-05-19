@@ -15,13 +15,14 @@ ms.collection:
 ms.custom: ''
 localization_priority: Normal
 f1.keywords: NOCSH
+recommendations: false
 description: 了解如何使用合作伙伴组织的托管来宾创建 B2B Extranet 站点或团队。
-ms.openlocfilehash: f9b8d9326f302233ed85c9d168fdf6f343dc6cbf
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: d76951da5d8affa1dac08cbdc68a91329ca069ed
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50904752"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538239"
 ---
 # <a name="create-a-b2b-extranet-with-managed-guests"></a>创建托管有来宾的 B2B 外联网
 

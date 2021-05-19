@@ -19,12 +19,12 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-overview
 ms.technology: mdo
-ms.openlocfilehash: 464a99ca67da72633879840263fe64ad8311fd4c
-ms.sourcegitcommit: 7cc2be0244fcc30049351e35c25369cacaaf4ca9
+ms.openlocfilehash: 948f4515b37f27695e1e66730134aa19114ca1cf
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "51952568"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538995"
 ---
 # <a name="identity-and-device-access-configurations"></a>标识和设备访问配置
 
@@ -157,7 +157,7 @@ Azure AD 提供了一整套标识管理功能。 我们建议使用这些功能�
 
 ### <a name="windows-10-and-microsoft-365-apps-for-enterprise"></a>Windows 10 和 Microsoft 365 企业应用版
 
-Windows 10是Microsoft 365 企业应用版电脑的推荐客户端环境。 我们建议Windows 10，因为 Azure 旨在为本地和 Azure AD 提供尽可能流畅的体验。 Windows 10还包括可通过 Intune 管理的高级安全功能。 Microsoft 365 企业应用版包括最新版本的 Office 应用程序。 这些身份验证使用新式验证，这是更安全且条件访问的要求。 这些应用还包括增强的安全性和合规性工具。
+Windows 10是Microsoft 365 企业应用版电脑的推荐客户端环境。 我们建议Windows 10，因为 Azure 旨在为本地和 Azure AD 提供尽可能流畅的体验。 Windows 10还包括可通过 Intune 管理的高级安全功能。 Microsoft 365 企业应用版包括最新版本的 Office 应用程序。 这些身份验证使用新式验证，这是更安全且条件访问的要求。 这些应用还包括增强的合规性和安全工具。
 
 ## <a name="applying-these-capabilities-across-the-three-tiers-of-protection"></a>跨三层保护应用这些功能
 

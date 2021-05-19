@@ -13,18 +13,18 @@ ms.collection:
 - m365initiative-viva-topics
 localization_priority: None
 description: 了解使用 Viva 主题管理组织中许多主题的最佳实践。
-ms.openlocfilehash: 3246c7e91c315dadb6c2b14008c9a4da378409d5
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: dd9fe658d4f698ac50563b5c9ea141a090f6141d
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52333933"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538407"
 ---
 # <a name="manage-topics-at-scale-in-microsoft-viva-topics"></a>在 Microsoft Viva 主题中大规模管理主题
 
 为 Viva 主题SharePoint或整个组织编制索引时，可能会生成许多主题。 如果发生这种情况，并且你在"管理主题"页上看到数千个建议的主题，那么了解从何处开始可能会非常困难。 本文介绍 Viva 主题如何帮助您优化向搜索信息的用户显示的主题和信息，即使在具有大量主题的大型组织中。
 
-首先，提醒主题的四种状态：
+首先，提醒主题 [的四个阶段](manage-topics.md#topic-stages)：
 
 - **建议**: 主题已由 AI 标识，且具有足够的支持资源、连接和属性。  (UI.) 
 

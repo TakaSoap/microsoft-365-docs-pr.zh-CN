@@ -16,13 +16,14 @@ ms.collection:
 search.appverid:
 - MET150
 ms.assetid: 0ad41414-0cc6-4b97-90fb-06bec7bcf590
+recommendations: false
 description: 了解如何允许组的成员以组Microsoft 365或代表组发送电子邮件Microsoft 365发送电子邮件。
-ms.openlocfilehash: cc0a9472f127fae94d77f618ed7347d844879ba8
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 07db8f415da46e6235c051e262237de79e61c8b9
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50904740"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538251"
 ---
 # <a name="allow-members-to-send-as-or-send-on-behalf-of-a-group"></a>允许成员以组的名义发送或代表组发送
 

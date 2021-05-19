@@ -1,5 +1,5 @@
 ---
-title: Microsoft Defender for Office 365 (MDO) 实体页面
+title: Microsoft Defender for Office 365 (MDO) 电子邮件实体页面
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -15,12 +15,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 description: Microsoft Defender for Office 365 E5、P1 和 P2 客户现在可以通过电子邮件实体页面获得每个电子邮件的 360 度视图。
-ms.openlocfilehash: 8b531980852336679aad5f2013d63269c238e49c
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: aa5d7effb66c4805f6983fa1afac19255bc996e4
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51933357"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52539091"
 ---
 # <a name="the-email-entity-page"></a>"电子邮件实体"页面
 
@@ -30,11 +30,11 @@ ms.locfileid: "51933357"
 - [使用电子邮件实体页面选项卡](#use-email-entity-page-tabs)
 - [电子邮件实体页面的新增内容](#new-to-the-email-entity-page)
 
-Microsoft Defender for Office 365 (或 MDO) E5 以及 MDO P1 和 P2 的管理员使用"电子邮件"实体页面 360 度查看 **电子邮件**。 创建此转到电子邮件页面是增强威胁资源管理器"电子邮件详细信息"飞[出上的信息。](threat-explorer-views.md)
+Microsoft Defender for Office 365 (或 MDO) E5 以及 MDO P1 和 P2 的管理员具有使用"电子邮件"实体页面的 360 度 **电子邮件视图**。 创建此转到电子邮件页面是增强威胁资源管理器"电子邮件详细信息"飞[出上的信息。](threat-explorer-views.md)
 
 ## <a name="reach-the-email-entity-page"></a>访问电子邮件实体页面
 
-现有的 Office 安全与合规中心 (protection.office.com) Microsoft 365 安全中心 (security.microsoft.com) ，你可以查看和使用电子邮件实体页面。
+通过现有安全&安全 (protection.office.com) 或Microsoft 365安全 (security.microsoft.com) ，你可以查看和使用电子邮件实体页面。
 
 |居中|URL|导航|
 |---|---|---|
@@ -111,12 +111,12 @@ Microsoft Defender for Office 365 (或 MDO) E5 以及 MDO P1 和 P2 的管理员
 
 *电子邮件详细信息*：深入了解"分析"选项卡中提供的电子邮件 *所需的* 详细信息。
 
-- *Exchange 传输规则 (ETR* 或邮件流规则) ：这些规则适用于传输层的邮件，优先于网络钓鱼和垃圾邮件裁定。 只能在 Exchange 管理中心创建和修改这些名称，但如果任何 ETR 适用于邮件，则此处将显示 ETR 名称和 GUID。 用于跟踪的有用信息。
+- *Exchange传输规则 (ETR* 或邮件流规则) ：这些规则适用于传输层的邮件，并优先于网络钓鱼和垃圾邮件裁定。 只能在管理中心内创建和修改Exchange，但如果任何 ETR 适用于邮件，则此处将显示 ETR 名称和 GUID。 用于跟踪的有用信息。
 
 - 系统 *覆盖：这是* 根据威胁和检测技术要求覆盖系统 (给定的传递位置来对邮件的传递位置进行) 。
 
 - *垃圾邮件规则*："垃圾邮件"是隐藏的收件箱规则，默认在邮箱中启用。
-  - 在邮箱上启用垃圾邮件规则后，Exchange Online Protection (EOP) 可根据某些条件将邮件移动到垃圾邮件。 移动可以基于垃圾邮件筛选裁定操作 将 *邮件移动到垃圾邮件文件夹*，或邮箱上的阻止发件人列表。 禁用垃圾邮件规则可阻止根据邮箱上的"安全发件人"列表将邮件发送到"垃圾邮件"文件夹。
+  - 在邮箱上启用垃圾邮件规则后，Exchange Online Protection (EOP) 根据某些条件将邮件移动到垃圾邮件。 移动可以基于垃圾邮件筛选裁定操作 将 *邮件移动到垃圾邮件文件夹*，或邮箱上的阻止发件人列表。 禁用垃圾邮件规则可阻止根据邮箱上的"发件人"列表将 *保险箱"垃圾邮件*"文件夹。
   - 在邮箱上禁用垃圾邮件规则后，EOP 无法根据垃圾邮件筛选裁定操作"将邮件移动到垃圾邮件文件夹"或邮箱的安全列表集合，将邮件移动到"垃圾邮件"文件夹。
 
 - *批量投诉级别 (BCL) ：* 邮件的批量投诉 (BCL) 级别。 BCL 越高，如果电子邮件可能是垃圾邮件，则 () 产生投诉的可能性更大。
@@ -131,7 +131,7 @@ Microsoft Defender for Office 365 (或 MDO) E5 以及 MDO P1 和 P2 的管理员
 
 - *域创建日期*：指定发送域的创建日期。 如果其他信号指示某些可疑行为，则新创建的域是你可以小心的。
 
-*电子邮件身份验证*：Microsoft 365 使用的电子邮件身份验证方法包括 SPF、DKIM 和 DMARC。
+*电子邮件身份验证*：用户使用的电子邮件Microsoft 365包括 SPF、DKIM 和 DMARC。
 
 - 发件人策略框架 (**SPF**) ：描述邮件的 SPF 检查结果。 可能的值可以是：
   - Pass (IP address) ： The SPF check for the message passed and includes the sender's IP address. 已授权客户端代表发件人的域发送或中继电子邮件。
@@ -153,4 +153,4 @@ Microsoft Defender for Office 365 (或 MDO) E5 以及 MDO P1 和 P2 的管理员
   - Bestguesspass：指示不存在域的 DMARC TXT 记录，但如果已存在，则邮件的 DMARC 检查已经通过。
   - 无：指示 DNS 中不存在发送域的 DMARC TXT 记录。
 
-*复合身份验证*：这是 Microsoft 365 使用的值来组合电子邮件身份验证（如 SPF、DKIM 和 DMARC）以确定邮件是否可信。 它使用 *邮件的 From：* 域作为评估的基础。
+*复合身份验证*：这是一个值，Microsoft 365 SPF、DKIM 和 DMARC 等电子邮件身份验证，以确定邮件是否可信。 它使用 *邮件的 From：* 域作为评估的基础。

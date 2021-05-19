@@ -14,13 +14,13 @@ ms.reviewer: pahuijbr, shwjha
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.date: 04/23/2021
-ms.openlocfilehash: 175b06738b8c1508dab68c1e19648aa5385a7137
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.date: 05/13/2021
+ms.openlocfilehash: 1a1083d15698eb5bbdf2f6080b152b6f326c689a
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52269488"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52539271"
 ---
 # <a name="microsoft-defender-antivirus-on-windows-server"></a>Windows Server 上的 Microsoft Defender 防病毒软件
 
@@ -131,9 +131,9 @@ sc query Windefend
 
 |方法  |说明  |
 |---------|---------|
-|**Windows控制面板** 中的更新     |- **自动安装更新** 会导致自动安装所有更新，Windows Defender安全智能更新。 <br/>- **下载更新，但允许我** 选择是否安装它们Windows Defender自动下载和安装安全智能更新，但不会自动安装其他更新。       |
+|**Windows控制面板** 中的更新     | **自动安装更新** 会导致自动安装所有更新，Windows Defender安全智能更新。 <p>**下载更新，但允许我** 选择是否安装它们Windows Defender自动下载和安装安全智能更新，但不会自动安装其他更新。       |
 |**组策略**     | 您可以使用组策略中提供的设置设置和管理 Windows 更新，路径如下：**管理模板\Windows 组件\Windows更新\配置自动更新**         |
-|**AUOptions** 注册表项     |以下两个值允许Windows更新自动下载和安装安全智能更新： <br/>- **4**  - **自动安装更新**。 此值会导致自动安装所有更新，包括Windows Defender安全智能更新。 <br/>- **3**  - **下载更新，但允许我选择是否安装它们**。  此值允许Windows Defender下载和安装安全智能更新，但不会自动安装其他更新。         |
+|**AUOptions** 注册表项     | 以下两个值允许Windows更新自动下载和安装安全智能更新： <p>**4**  - **自动安装更新**。 此值会导致自动安装所有更新，包括Windows Defender安全智能更新。 <p>**3**  - **下载更新，但允许我选择是否安装它们**。  此值允许Windows Defender下载和安装安全智能更新，但不会自动安装其他更新。         |
 
 为了确保对恶意软件的保护得到维护，我们建议您启用以下服务：
 
@@ -185,16 +185,6 @@ sc query Windefend
 - 在 Windows Server、版本 1803 或更高版本或 Windows Server 2019 上，可以将Microsoft Defender 防病毒设置为被动模式。  
 
 - 在Windows Server 2016，Microsoft Defender 防病毒 Microsoft 防病毒/反恶意软件产品不支持此产品。 在这些情况下，你必须将Microsoft Defender 防病毒设置为禁用模式。
-
-### <a name="set-microsoft-defender-antivirus-to-passive-mode-using-powershell"></a>使用 powerShell Microsoft Defender 防病毒被动模式
-
-如果使用的是 Windows Server 版本 1803 或 Windows Server 2019，可以使用以下 PowerShell cmdlet 将 Microsoft Defender 防病毒 设置为被动模式：
-
-`CMDLET NEEDED`
-
-### <a name="set-microsoft-defender-antivirus-to-passive-mode-using-group-policy"></a>使用Microsoft Defender 防病毒设置为被动模式
-
-所需的过程
 
 ### <a name="set-microsoft-defender-antivirus-to-passive-mode-using-a-registry-key"></a>使用Microsoft Defender 防病毒将用户设置为被动模式
 

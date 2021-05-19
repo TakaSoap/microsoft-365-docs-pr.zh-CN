@@ -16,12 +16,12 @@ manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 3ca8f5234f90624c8570cbfb10e75bd0ee9380ae
-ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
+ms.openlocfilehash: da4b7fce66a6c51da61edd7c44216ee268c3156a
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52345832"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538659"
 ---
 # <a name="use-attack-surface-reduction-rules-to-prevent-malware-infection"></a>使用攻击面减少规则防止恶意软件感染
 
@@ -160,7 +160,7 @@ DeviceEvents
 
 |规则名称|GUID|文件&文件夹排除项|支持的最低操作系统|
 |---|:---:|---|---|
-|[阻止滥用被攻击的易受攻击的已签名驱动程序](#block-abuse-of-exploited-vulnerable-signed-drivers)|`56a863a9-875e-4185-98a7-b882c64b5ce5`|受支持|[Windows 10，版本 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709)|
+|[阻止滥用被攻击的易受攻击的已签名驱动程序](#block-abuse-of-exploited-vulnerable-signed-drivers)|`56a863a9-875e-4185-98a7-b882c64b5ce5`|受支持|[Windows 10版本 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3，内部版本 16299) 或)  |
 |[阻止 Adobe Reader 创建子进程](#block-adobe-reader-from-creating-child-processes)|`7674ba52-37eb-4a4f-a9a1-f0f9a1619a2c`|受支持|[Windows 10版本 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3，内部版本 16299) 或更高|
 |[阻止所有Office应用程序创建子进程](#block-all-office-applications-from-creating-child-processes)|`D4F940AB-401B-4EFC-AADC-AD5F3C50688A`|受支持|[Windows 10版本 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3，内部版本 16299) 或更高|
 |[阻止本地安全机构子系统Windows凭据 (lsass.exe) ](#block-credential-stealing-from-the-windows-local-security-authority-subsystem)|`9e6c4e1f-7d60-472f-ba1a-a39ef669e4b2`|受支持|[Windows 10版本 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3，内部版本 16299) 或更高|
@@ -184,6 +184,14 @@ DeviceEvents
 
 此规则不会阻止加载系统中已存在的驱动程序。
 
+>[!NOTE]
+>
+> 可以使用 [MEM OMA-URI 的 MEM OMA-URI](enable-attack-surface-reduction.md#mem) 自定义规则过程信息配置此规则。
+>
+> 此规则也可使用 [PowerShell 进行配置](enable-attack-surface-reduction.md#powershell)。
+>
+> 您可以使用此网站提交 [驱动程序进行分析](https://www.microsoft.com/en-us/wdsi/driversubmission)。
+
 此规则在支持 ASR 的所有版本中均受支持;即：
 
 - [Windows 10 专业版版本 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709)或更高版本
@@ -194,16 +202,6 @@ DeviceEvents
 Intune 名称： `Block abuse of exploited vulnerable signed drivers`
 
 GUID：  `56a863a9-875e-4185-98a7-b882c64b5ce5`
-
-有关[MEM Microsoft Endpoint Manager](enable-attack-surface-reduction.md#microsoft-endpoint-manager-custom-procedure)过程信息，请参阅自定义过程。
-
-可以在命令行中运行此命令以启用 ASR 规则：
-
-```powershell
-"& {&'Add-MpPreference' -AttackSurfaceReductionRules_Ids 56a863a9-875e-4185-98a7-b882c64b5ce5 -AttackSurfaceReductionRules_Actions Enabled"}
-```
-
-您可以使用此网站提交 [驱动程序进行分析](https://www.microsoft.com/en-us/wdsi/driversubmission)。
 
 ### <a name="block-adobe-reader-from-creating-child-processes"></a>阻止 Adobe Reader 创建子进程
 

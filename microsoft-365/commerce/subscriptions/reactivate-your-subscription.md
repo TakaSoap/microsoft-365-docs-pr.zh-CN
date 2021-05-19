@@ -21,18 +21,18 @@ ms.custom:
 search.appverid: MET150
 description: 了解如何在订阅过期、被禁用或取消时重新激活订阅。
 ms.date: 04/07/2021
-ms.openlocfilehash: 902be48b32acdff5173a0dd5cc84dbd5972e1ba9
-ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
+ms.openlocfilehash: 63c65e90d01bfd2c67d1d2ecfed32a4d4ff8d27a
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52345138"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538455"
 ---
 # <a name="reactivate-your-subscription"></a>重新激活订阅
 
 如果订阅已过期、Microsoft 已禁用或在订阅期中间取消订阅，可以在管理中心重新激活订阅。
   
-## <a name="before-you-begin"></a>准备工作
+## <a name="before-you-begin"></a>开始之前
 
 你必须是全局管理员或帐单管理员才能重新激活订阅。 有关详细信息，请参阅 [关于管理员角色](../../admin/add-users/about-admin-roles.md)。
 
@@ -58,7 +58,7 @@ ms.locfileid: "52345138"
 
 ::: moniker-end
 
-2. 在“**产品**”选项卡上，找到要重新激活的订阅。 Select **More actions (** three dots) ， then select **Reactivate this subscription**.\
+2. 在“**产品**”选项卡上，找到要重新激活的订阅。 Select the three dots (more actions) ， then select **Reactivate this subscription**.\
     如果看不到重新激活 **此订阅，请联系**[支持人员](../../business-video/get-help-support.md)。
 3. 在“**重新激活此订阅**”窗格中，从下拉列表中选择支付方式，或选择“**添加付款方式**”。
 4. 选择“**保存**”。

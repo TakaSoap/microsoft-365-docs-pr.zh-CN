@@ -21,12 +21,12 @@ ms.custom:
 description: 管理员可以了解反垃圾邮件设置和筛选器，这些设置和筛选器有助于在 EOP Exchange Online Protection (中) 。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: eaff771d6fa0490819ec076b5a9a43ac843cf207
-ms.sourcegitcommit: a46532bb422ee51331f478ff50cc5444586bf6a9
+ms.openlocfilehash: e6a4113925956c67e80a5239b8f9823acaf7f75b
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/09/2021
-ms.locfileid: "51650262"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538311"
 ---
 # <a name="anti-spam-protection-in-eop"></a>EOP 中的反垃圾邮件保护
 
@@ -57,9 +57,6 @@ EOP 中的反垃圾邮件设置由以下技术决定：
 
 - 连接 **筛选**：在入站电子邮件连接的早期，通过 IP 允许列表、IP 阻止列表和安全 *列表 (标识* 良好和坏的电子邮件源服务器，这是由 Microsoft) 维护的受信任发件人的动态但不可编辑的列表。 您可以在连接筛选器策略中配置这些设置。 有关详细信息，请[通过配置连接筛选。](configure-the-connection-filter-policy.md)
 
-  > [!NOTE]
-  > 欺骗智能使用连接筛选来创建允许和阻止欺骗您的电子邮件域的发件人列表。 有关详细信息，请参阅[Learn more about spoof intelligence in Microsoft 365](learn-about-spoof-intelligence.md)。
-
 - **垃圾邮件筛选 (** 内容筛选) ：EOP 使用垃圾邮件筛选裁定 **垃圾邮件**、高可信度垃圾邮件、批量电子邮件、网络钓鱼电子邮件和高可信度钓鱼电子邮件对邮件进行分类。  您可以配置要基于这些裁定采取的操作，还可以为隔离而不是传递的邮件配置最终用户通知选项。 有关详细信息，请参阅 Configure [anti-spam policies in Microsoft 365](configure-your-spam-filter-policies.md)。
 
   > [!NOTE]
@@ -67,7 +64,7 @@ EOP 中的反垃圾邮件设置由以下技术决定：
 
 - **出站垃圾邮件筛选**：EOP 还会进行检查以确保您的用户不会在出站邮件内容中或超出出站邮件限制中发送垃圾邮件。 有关详细信息，请参阅 Configure [outbound spam filtering in Microsoft 365](configure-the-outbound-spam-policy.md)。
 
-- **欺骗智能**：有关详细信息，请参阅 [在](learn-about-spoof-intelligence.md)电子邮件中了解有关Microsoft 365。
+- **欺骗智能**：有关详细信息，请参阅 [EOP 中的反欺骗保护](anti-spoofing-protection.md)。
 
 ## <a name="manage-errors-in-spam-filtering"></a>管理垃圾邮件筛选中的错误
 

@@ -14,13 +14,14 @@ ms.collection:
 ms.custom:
 - M365solutions
 f1.keywords: NOCSH
+recommendations: false
 description: 了解通信治理协作方案。
-ms.openlocfilehash: 5386b127ead11f27dad94207383b7a5afddfde6f
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 6b49f0725cb300316580e972626a96b7057b5ccb
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50920900"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538131"
 ---
 # <a name="communications-governance-for-collaboration-scenarios"></a>协作方案的通信治理
 

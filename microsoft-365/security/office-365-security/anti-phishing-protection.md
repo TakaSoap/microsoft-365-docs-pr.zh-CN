@@ -21,12 +21,12 @@ ms.custom:
 description: 管理员可以了解 Exchange Online Protection (EOP) 和 Microsoft Defender for Office 365 中的防钓鱼Office 365。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a100e28ddee1629b2fe35e28742a43b891d13e57
-ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
+ms.openlocfilehash: 290f5f7797d987fb65a99e3f9e656bfec4cf83f3
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51570608"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538335"
 ---
 # <a name="anti-phishing-protection-in-microsoft-365"></a>邮件中的防钓鱼Microsoft 365
 
@@ -53,9 +53,11 @@ ms.locfileid: "51570608"
 
 EOP (，即Microsoft 365 Microsoft Defender for Office 365) 的组织包含可帮助保护组织免受网络钓鱼威胁的功能：
 
-- **欺骗智能**：审查来自内外部域发件人的欺骗邮件，并允许或阻止这些发件人。 有关详细信息，请参阅在 [EOP 中配置欺骗智能](learn-about-spoof-intelligence.md)。
+- **欺骗智能**：使用欺骗智能见解查看来自外部域和内部域的邮件中检测到的欺骗发件人，并手动允许或阻止这些检测到的发件人。 有关详细信息，请参阅 [EOP 中的欺骗智能见解](learn-about-spoof-intelligence.md)。
 
-- **EOP** 中的反网络钓鱼策略：打开或关闭欺骗智能，打开或关闭 Outlook 中的未经身份验证的发件人标识，并指定针对被阻止的欺骗发件人的操作 (移动到垃圾邮件文件夹或隔离) 。 有关详细信息，请参阅在 [EOP 中配置防钓鱼策略](configure-anti-phishing-policies-eop.md)。
+- **EOP** 中的反网络钓鱼策略：打开或关闭欺骗智能、打开或关闭 Outlook 中的未经身份验证的发件人标识，并指定针对被阻止的欺骗发件人的操作。 有关详细信息，请参阅在 [EOP 中配置防钓鱼策略](configure-anti-phishing-policies-eop.md)。
+
+- 允许或阻止租户允许/阻止列表中的欺骗发件人：当你替代欺骗智能见解中裁定时，欺骗发件人将成为仅出现在租户允许 **/** 阻止列表中的"欺骗"选项卡上的手动允许或阻止条目。  还可以在欺骗智能检测到欺骗发件人之前，手动为这些发件人创建允许或阻止条目。 有关详细信息，请参阅在 [EOP 中管理租户允许/阻止列表](tenant-allow-block-list.md)。
 
 - 隐式 **电子邮件** 身份验证：EOP 通过发件人信誉、发件人历史记录、收件人历史记录、行为分析和其他高级技术增强入站电子邮件 ([SPF、DKIM](set-up-spf-in-office-365-to-help-prevent-spoofing.md)和 [DMARC](use-dmarc-to-validate-email.md)) 的标准电子邮件身份验证检查，以帮助识别伪造的发件人。 [](use-dkim-to-validate-outbound-email.md) 有关详细信息，请参阅 [Microsoft 365 中的电子邮件身份验证](email-validation-and-authentication.md)。
 
@@ -63,7 +65,7 @@ EOP (，即Microsoft 365 Microsoft Defender for Office 365) 的组织包含可�
 
 Microsoft Defender for Office 365 包含其他更高级的反网络钓鱼功能：
 
-- **适用于 Office 365** 的 Microsoft Defender 中的防钓鱼策略：创建新的自定义策略、配置反模拟设置 (保护用户和域免受模拟) 、邮箱智能设置和可调整的高级网络钓鱼阈值的影响。 有关详细信息，请参阅 Configure [anti-phishing policies in Microsoft Defender for Office 365](configure-atp-anti-phishing-policies.md)。 有关 EOP 中的反网络钓鱼策略与 Defender for Office 365 中的反网络钓鱼策略之间的差异详细信息，请参阅 Microsoft 365 中的反网络钓鱼[策略](set-up-anti-phishing-policies.md)。
+- **Microsoft Defender for Office 365** 中的反网络钓鱼策略：为特定邮件发件人和发件人域配置模拟保护设置、邮箱智能设置和可调整的高级网络钓鱼阈值。 有关详细信息，请参阅 Configure [anti-phishing policies in Microsoft Defender for Office 365](configure-atp-anti-phishing-policies.md)。 有关 EOP 中的反网络钓鱼策略与 Defender for Office 365 中的反网络钓鱼策略之间的差异详细信息，请参阅 Microsoft 365 中的反网络钓鱼[策略](set-up-anti-phishing-policies.md)。
 
 - **市场活动视图**：机器学习和其他启发式技术可标识和分析针对整个服务和组织的协调网络钓鱼攻击所涉及的邮件。 有关详细信息，请参阅[Microsoft Defender for Office 365 中的市场活动视图](campaigns.md)。
 

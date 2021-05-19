@@ -20,12 +20,12 @@ search.appverid:
 - BCS160
 ms.assetid: 53cdb60c-a6b2-4848-b3ff-e7b75dc3fd1f
 description: 本文将介绍可用于监视和维护连接的工具Microsoft 365技术。
-ms.openlocfilehash: db3811b70f91efb9fd1e9f023df12d0852ce0189
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: dfba158085e6642856049d7894b4156f42353236
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50920772"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538803"
 ---
 # <a name="monitor-microsoft-365-connectivity"></a>监视 Microsoft 365 连接性
 
@@ -36,7 +36,7 @@ ms.locfileid: "50920772"
 |||
 |:-----|:-----|
 |**获取新终结点Microsoft 365通知** <br/> |如果要管理[Microsoft 365](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a)终结点，那么在发布新终结点时，需要接收通知，可以使用最喜爱的 RSS 阅读器订阅我们的 RSS 源。 下面是如何通过[Outlook](https://go.microsoft.com/fwlink/p/?LinkId=532416)订阅，或者你可以通过电子邮件将[RSS 源更新通过电子邮件发送给你](https://go.microsoft.com/fwlink/p/?LinkId=532417)。  <br/> |
-|**使用System Center监视Microsoft 365** <br/> |如果使用的是 Microsoft System Center，可以下载 System Center [Management Pack Office 365](https://www.microsoft.com/download/details.aspx?id=43708)立即开始Microsoft 365监视。 有关更详细的指导，请参阅管理包操作指南或此博客文章 [Office365 Monitoring using System Centre Operations Manager](https://blogs.msdn.com/b/mvpawardprogram/archive/2015/07/08/office365-monitoring-using-system-centre-operations-manager.aspx) <br/> |
+|**使用System Center监视Microsoft 365** <br/> |如果使用的是 Microsoft System Center，可以下载 System Center [Management Pack Office 365](https://www.microsoft.com/download/details.aspx?id=43708)立即开始Microsoft 365监视。 有关更详细的指南，请参阅管理包操作指南。 <br/> |
 |**监视 Azure ExpressRoute 运行状况** <br/> |如果要使用适用于 Microsoft 365 的 Azure ExpressRoute 连接到 Microsoft 365，需要确保同时使用 Microsoft 365 服务运行状况仪表板和 Azure 减少 Azure 资源运行状况疑难解答[时间](https://azure.microsoft.com/blog/reduce-troubleshooting-time-with-azure-resource-health/) <br/> |
 |**将 Azure AD Connect Health 与 AD FS 一起使用** <br/> |如果你将 AD FS 用于 Single Sign-On with Microsoft 365，你将希望开始使用 Azure AD 连接 Health 来监视[AD FS 基础结构](/azure/active-directory/hybrid/how-to-connect-health-adfs)。  <br/> |
 |**以编程方式监视Microsoft 365** <br/> |请参阅我们的有关 Microsoft 365[管理 API 的指南](/office/office-365-management-api/office-365-management-apis-overview)。  <br/> |

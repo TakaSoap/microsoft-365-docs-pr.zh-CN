@@ -20,12 +20,12 @@ description: 管理员可以在 Microsoft 365 中学习威胁防护并为组织�
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: b55391247bf7d21c68c67e29f93bac1b7088b035
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 3381ce66433f1f4e32f0251c45601e3cb84865b6
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51687083"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538719"
 ---
 # <a name="protect-against-threats"></a>抵御威胁
 
@@ -106,7 +106,7 @@ ms.locfileid: "51687083"
 
 下列过程介绍了如何在 Microsoft Defender for Office 365 中配置反钓鱼策略。 这些步骤与在 EOP 中配置反钓鱼策略相似。
 
-1. 在 [安全与合规中心](https://protection.office.com)中， 选择“**威胁管理**” \> “**策略**” \> “**ATP 反钓鱼**”。
+1. 在安全 [&中心，](https://protection.office.com)选择 **"威胁管理** \> **策略** \> **""防钓鱼"。**
 
 2. 单机“**默认策略**”。
 

@@ -13,12 +13,12 @@ localization_priority: Normal
 description: 通过 Microsoft Defender for Office 365 中的威胁筛选堆栈跟踪传入Office 365。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 0760bd7a67f175e4af114324ccc729355ad5f593
-ms.sourcegitcommit: 4e05f19c00e172b65f637f19ca461db5b21dff4e
+ms.openlocfilehash: 01ad901f7f746d9b5d2c50632c1344701120c20f
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "51601365"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538683"
 ---
 # <a name="step-by-step-threat-protection-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 中的威胁防护步骤
 
@@ -61,7 +61,7 @@ Microsoft Defender for Office 365 保护或筛选堆栈可以分为 4 个阶段�
     - **DMARC** 允许管理员按其域中的要求标记 SPF 和 DKIM，并强制在这两种技术的结果之间保持一致。
     - **ARC** 未进行客户配置，但基于 DMARC 构建，以用于邮件列表中的转发，同时记录身份验证链。
 
-3. 欺骗智能能够筛选允许"欺骗" (即代表其他帐户发送邮件，或转发来自恶意欺骗程序模仿组织或已知外部域的邮件列表) 的用户。 它将合法"代表"邮件与欺骗发件人分开，以传递垃圾邮件和网络钓鱼邮件。 
+3. 欺骗智能能够筛选允许"欺骗" (即代表其他帐户发送邮件，或从模仿组织或已知外部域的恶意发件人转发邮件列表) 。 它将合法"代表"邮件与欺骗邮件传递垃圾邮件和网络钓鱼邮件的发件人分开。
 
     **组织内部欺骗智能** 检测并阻止来自组织内部域的欺骗尝试。
 

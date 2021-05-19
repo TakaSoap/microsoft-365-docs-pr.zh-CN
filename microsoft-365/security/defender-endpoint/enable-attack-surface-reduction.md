@@ -15,12 +15,12 @@ ms.reviewer: oogunrinde
 manager: dansimp
 ms.technology: mde
 ms.topic: how-to
-ms.openlocfilehash: fc952ceec7d26d853e39cab0a803daace62a4767
-ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
+ms.openlocfilehash: b3460e2c9b6073c518bea46147be69d4b89cd96a
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52345881"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538635"
 ---
 # <a name="enable-attack-surface-reduction-rules"></a>启用攻击面减少规则
 
@@ -98,6 +98,86 @@ ASR 规则支持环境变量和通配符。 有关使用通配符的信息，请
 
 4. 在 **三** 个配置窗格中选择"确定"。 然后，**如果要** 创建新的终结点保护文件，请选择"创建";如果要编辑现有终结点保护文件，请选择"保存"。
 
+## <a name="mem"></a>MEM
+
+可以使用 OMA-URI Microsoft Endpoint Manager (MEM) 配置自定义 ASR 规则。 以下过程使用规则 [阻止滥用攻击的易受攻击的已](attack-surface-reduction.md#block-abuse-of-exploited-vulnerable-signed-drivers) 签名驱动程序作为示例。
+
+1. 打开管理Microsoft Endpoint Manager (MEM) 管理中心。 在"**开始"** 菜单中，单击 **"设备"，** 选择 **"配置文件**"，然后单击"**创建配置文件"。**
+
+   > [!div class="mx-imgBorder"]
+   > ![MEM 创建配置文件](images/mem01-create-profile.png)
+
+2. 在 **"创建配置文件"** 中的以下两个下拉列表中，选择以下选项：
+
+   - 在 **"平台**"**中，Windows 10和更高版本"**
+   - 在 **"配置文件类型"** 中， **选择"模板"**
+
+   选择 **"自定义**"，然后单击"**创建"。**
+
+   > [!div class="mx-imgBorder"]
+   > ![MEM 规则配置文件属性](images/mem02-profile-attributes.png)
+
+3. 自定义模板工具将打开到步骤 **1 基础知识**。 在 **"1 基础知识**"的 **"名称**"中，键入模板的名称，在"说明"中，可以键入 (可选) 。
+
+   > [!div class="mx-imgBorder"]
+   > ![MEM 基本属性](images/mem03-1-basics.png)
+
+4. 点击 **“下一步”**。 步骤 **2 将打开配置** 设置。 对于 OMA-URI 设置，**单击添加**。 此时将显示两个选项："**添加"和**"**导出"。**
+
+   > [!div class="mx-imgBorder"]
+   > ![MEM 配置设置](images/mem04-2-configuration-settings.png)
+
+5. 再次 **单击"添加** "。 添加 **行 OMA-URI 设置** 打开。 在 **"添加行"** 中，执行以下操作：
+
+   - 在 **"名称**"中，键入规则的名称。
+   - 在 **"说明**"中，键入简要说明。
+   - 在 **OMA-URI** 中，键入或粘贴要添加的规则的特定 OMA-URI 链接。
+   - 在 **"数据类型"中**，选择"**字符串"。**
+   - 在 **"值**"中，键入或粘贴 GUID 值、无空格的符号和 \= State (_GUID=StateValue_) 。 其中： {0 ： 禁用 (禁用 ASR 规则) }，{1 ： 阻止 (启用 ASR 规则) }，{2 ： 审核 (评估 ASR 规则在启用) } 时对组织的影响，{6 ： 警告 (启用 ASR 规则，但允许最终用户绕过阻止) }
+
+   > [!div class="mx-imgBorder"]
+   > ![MEM OMA URI 配置](images/mem05-add-row-oma-uri.png)
+
+6. 单击“保存”。 **添加行** 关闭。 在 **"自定义"** 中，单击"下 **一步"。** 在步骤 **3 范围标记中**，范围标记是可选的。 执行下列操作之一：
+
+   - 单击 **"选择范围标记"，** 选择作用域 (可选) ，然后单击"下一步 **"。**
+   - 或单击" **下一步"**
+
+7. 在步骤 **4"分配**"中，在" **包含** 的组 " - 对于您希望应用此规则的组 - 从以下选项中进行选择：
+
+   - **添加组**
+   - **添加所有用户**
+   - **添加所有设备**
+
+   > [!div class="mx-imgBorder"]
+   > ![MEM 分配](images/mem06-4-assignments.png)
+
+8. 在 **"已排除的** 组"中，选择要从此规则中排除的任何组，然后单击"下一步 **"。**
+
+9. 在步骤 **5 针对** 以下设置的适用性规则中，执行以下操作：
+
+   - 在 **"规则**"中，选择"如果 **分配配置文件"** 或" **不分配配置文件"（如果为 ）**
+   - 在 **"** 属性"中，选择要应用此规则的属性
+   - 在 **"值**"中，输入适用的值或值范围
+
+   > [!div class="mx-imgBorder"]
+   > ![MEM 适用性规则](images/mem07-5-applicability-rules.png)
+
+10. 点击 **“下一步”**。 在"**步骤 6 查看 + 创建**"中，查看已选择并输入的设置和信息，然后单击"创建 **"。**
+
+    > [!div class="mx-imgBorder"]
+    > ![MEM 审阅和创建](images/mem08-6-review-create.png)
+
+    > [!NOTE]
+    > 规则处于活动状态，且数分钟内有效。
+
+>[!NOTE]
+> 冲突处理：
+> 
+> 如果为设备分配了两个不同的 ASR 策略，则处理冲突的方式为分配了不同状态的规则，没有实施冲突管理，因此会出现错误。
+> 
+> 非冲突规则不会生成错误，并且规则将正确应用。 结果是应用第一个规则，后续的非冲突规则将合并到该策略中。
+
 ## <a name="mdm"></a>MDM
 
 使用 [./Vendor/MSFT/Policy/Config/Defender/AttackSurfaceReductionRules](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-attacksurfacereductionrules) 配置服务提供程序 (CSP) 单独启用和设置每个规则的模式。
@@ -166,75 +246,6 @@ ASR 规则支持环境变量和通配符。 有关使用通配符的信息，请
 
    > [!WARNING]
    > 请勿使用引号，因为"值名称"列或"值"列不支持 **引号**。
-
-## <a name="microsoft-endpoint-manager-custom-procedure"></a>Microsoft Endpoint Manager自定义过程
-
-可以在管理中心Microsoft Endpoint Manager (MEM) 配置自定义 ASR 规则。
-
-1. 打开管理Microsoft Endpoint Manager (MEM) 管理中心。 在"**开始"** 菜单中，单击 **"设备"，** 选择 **"配置文件**"，然后单击"**创建配置文件"。**
-
-   ![MEM 创建配置文件](images/mem01-create-profile.png)
-
-2. 在 **"创建配置文件"** 中的以下两个下拉列表中，选择以下选项：
-
-   - 在 **"平台**"**中，Windows 10和更高版本"**
-   - 在 **"配置文件类型"** 中， **选择"模板"**
-
-   选择 **"自定义**"，然后单击"**创建"。**
-
-   ![MEM 规则配置文件属性](images/mem02-profile-attributes.png)
-
-3. 自定义模板工具将打开到步骤 **1 基础知识**。 在 **"1 基础知识**"的 **"名称**"中，键入模板的名称，在"说明"中，可以键入 (可选) 。
-
-   ![MEM 基本属性](images/mem03-1-basics.png)
-
-4. 点击 **“下一步”**。 步骤 **2 将打开配置** 设置。 对于 OMA-URI 设置，**单击添加**。 此时将显示两个选项："**添加"和**"**导出"。**
-
-   ![MEM 配置设置](images/mem04-2-configuration-settings.png)
-
-5. 再次 **单击"添加** "。 添加 **行 OMA-URI 设置** 打开。 在 **"添加行"** 中，执行以下操作：
-
-   - 在 **"名称**"中，键入规则的名称。
-   - 在 **"说明**"中，键入简要说明。
-   - 在 **OMA-URI** 中，键入或粘贴要添加的规则的特定 OMA-URI 链接。
-   - 在 **"数据类型"中**，选择"**字符串"。**
-   - 在 **"值**"中，键入或粘贴 GUID 值、无空格的符号和 \= State (_GUID=StateValue_) 。 其中： {0 ： 禁用 (禁用 ASR 规则) }，{1 ： 阻止 (启用 ASR 规则) }，{2 ： 审核 (评估 ASR 规则在启用) } 时对组织的影响，{6 ： 警告 (启用 ASR 规则，但允许最终用户绕过阻止) }
-
-   ![MEM OMA URI 配置](images/mem05-add-row-oma-uri.png)
-
-6. 单击“保存”。 **添加行** 关闭。 在 **"自定义"** 中，单击"下 **一步"。** 在步骤 **3 范围标记中**，范围标记是可选的。 执行下列操作之一：
-
-   - 单击 **"选择范围标记"，** 选择作用域 (可选) ，然后单击"下一步 **"。**
-   - 或单击" **下一步"**
-
-7. 在步骤 **4"分配**"中，在" **包含** 的组 " - 对于您希望应用此规则的组 - 从以下选项中进行选择：
-
-   - **添加组**
-   - **添加所有用户**
-   - **添加所有设备**
-
-   ![MEM 分配](images/mem06-4-assignments.png)
-
-8. 在 **"已排除的** 组"中，选择要从此规则中排除的任何组，然后单击"下一步 **"。**
-
-9. 在步骤 **5 针对** 以下设置的适用性规则中，执行以下操作：
-
-   - 在 **"规则**"中，选择"如果 **分配配置文件"** 或" **不分配配置文件"（如果为 ）**
-   - 在 **"** 属性"中，选择要应用此规则的属性
-   - 在 **"值**"中，输入适用的值或值范围
-
-   ![MEM 适用性规则](images/mem07-5-applicability-rules.png)
-
-10. 点击 **“下一步”**。 在"**步骤 6 查看 + 创建**"中，查看已选择并输入的设置和信息，然后单击"创建 **"。**
-
-   ![MEM 审阅和创建](images/mem08-6-review-create.png)
-
->[!NOTE]
-> 规则处于活动状态，且数分钟内有效。
-
->[!NOTE]
-> 冲突处理：如果为设备分配了两个不同的 ASR 策略，则处理冲突的方式为分配了不同状态的规则，没有进行冲突管理，因此会出现错误。
-> 非冲突规则不会生成错误，并且规则将正确应用。 结果是应用第一个规则，后续的非冲突规则将合并到该策略中。
 
 ## <a name="powershell"></a>PowerShell
 
