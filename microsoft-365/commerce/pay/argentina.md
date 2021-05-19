@@ -1,34 +1,35 @@
 ---
 title: 阿根廷的付款信息
-author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
+author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
-ms.custom: CommercePayInfo
+ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: 了解在哪里发送订阅付款。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 4673182312391891b851c56a21b0d14f07d2bf04
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: f6fe73b603f826aad60af8703d2cfd3716e84d71
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52274300"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52535610"
 ---
-# <a name="payment-information-for-argentina"></a><span data-ttu-id="ce141-103">阿根廷的付款信息</span><span class="sxs-lookup"><span data-stu-id="ce141-103">Payment information for Argentina</span></span>
+# <a name="payment-information-for-argentina"></a><span data-ttu-id="5d930-103">阿根廷的付款信息</span><span class="sxs-lookup"><span data-stu-id="5d930-103">Payment information for Argentina</span></span>
 
-<span data-ttu-id="ce141-104">[查找另一个国家/地区](../billing-and-payments/pay-for-your-subscription.md)。</span><span class="sxs-lookup"><span data-stu-id="ce141-104">[Find another country or region](../billing-and-payments/pay-for-your-subscription.md).</span></span>
+<span data-ttu-id="5d930-104">[查找另一个国家/地区](../billing-and-payments/pay-for-your-subscription.md)。</span><span class="sxs-lookup"><span data-stu-id="5d930-104">[Find another country or region](../billing-and-payments/pay-for-your-subscription.md).</span></span>
 
-<span data-ttu-id="ce141-105">Please pay in USD only and reference your invoice number (s) on your payment payment payment.</span><span class="sxs-lookup"><span data-stu-id="ce141-105">Please pay in USD only and reference your invoice number(s) on your payment remittance.</span></span>
+<span data-ttu-id="5d930-105">Please pay in USD only and reference your invoice number (s) on your payment payment payment.</span><span class="sxs-lookup"><span data-stu-id="5d930-105">Please pay in USD only and reference your invoice number(s) on your payment remittance.</span></span>
 
-## <a name="electronic-funds-transfer"></a><span data-ttu-id="ce141-106">电子资金转帐</span><span class="sxs-lookup"><span data-stu-id="ce141-106">Electronic Funds Transfer</span></span>
+## <a name="electronic-funds-transfer"></a><span data-ttu-id="5d930-106">电子资金转帐</span><span class="sxs-lookup"><span data-stu-id="5d930-106">Electronic Funds Transfer</span></span>
 
-<span data-ttu-id="ce141-107">**Bank：** 美洲银行</span><span class="sxs-lookup"><span data-stu-id="ce141-107">**Bank:** Bank of America</span></span>  
-<span data-ttu-id="ce141-108">**分支** Dallas</span><span class="sxs-lookup"><span data-stu-id="ce141-108">**Branch** Dallas</span></span>  
-<span data-ttu-id="ce141-109">**SWIFT 代码：** BOFAUS3N</span><span class="sxs-lookup"><span data-stu-id="ce141-109">**SWIFT Code:** BOFAUS3N</span></span>  
-<span data-ttu-id="ce141-110">**帐号** ：4426587954</span><span class="sxs-lookup"><span data-stu-id="ce141-110">**Account Number:** 4426587954</span></span>  
-<span data-ttu-id="ce141-111">**帐户名称：** Microsoft</span><span class="sxs-lookup"><span data-stu-id="ce141-111">**Account Name:** Microsoft</span></span>  
+<span data-ttu-id="5d930-107">**Bank：** 美洲银行</span><span class="sxs-lookup"><span data-stu-id="5d930-107">**Bank:** Bank of America</span></span>  
+<span data-ttu-id="5d930-108">**分支** Dallas</span><span class="sxs-lookup"><span data-stu-id="5d930-108">**Branch** Dallas</span></span>  
+<span data-ttu-id="5d930-109">**SWIFT 代码：** BOFAUS3N</span><span class="sxs-lookup"><span data-stu-id="5d930-109">**SWIFT Code:** BOFAUS3N</span></span>  
+<span data-ttu-id="5d930-110">**帐号** ：4426587954</span><span class="sxs-lookup"><span data-stu-id="5d930-110">**Account Number:** 4426587954</span></span>  
+<span data-ttu-id="5d930-111">**帐户名称：** Microsoft</span><span class="sxs-lookup"><span data-stu-id="5d930-111">**Account Name:** Microsoft</span></span>

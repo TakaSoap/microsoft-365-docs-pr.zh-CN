@@ -1,35 +1,36 @@
 ---
 title: 法罗群岛的付款信息
-author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
+author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
-ms.custom: CommercePayInfo
+ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: 了解在哪里发送订阅付款。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 0972d9912d7eb56c0fcb2e83a040a679a7b16eb4
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: a4d2db1ce27d6da9ba32baa2f646ea0872c2636f
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52273820"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52535538"
 ---
-# <a name="payment-information-for-faroe-islands"></a><span data-ttu-id="35f8f-103">法罗群岛的付款信息</span><span class="sxs-lookup"><span data-stu-id="35f8f-103">Payment information for Faroe Islands</span></span>
+# <a name="payment-information-for-faroe-islands"></a><span data-ttu-id="86c33-103">法罗群岛的付款信息</span><span class="sxs-lookup"><span data-stu-id="86c33-103">Payment information for Faroe Islands</span></span>
 
-<span data-ttu-id="35f8f-104">[查找另一个国家/地区](../billing-and-payments/pay-for-your-subscription.md)。</span><span class="sxs-lookup"><span data-stu-id="35f8f-104">[Find another country or region](../billing-and-payments/pay-for-your-subscription.md).</span></span>
+<span data-ttu-id="86c33-104">[查找另一个国家/地区](../billing-and-payments/pay-for-your-subscription.md)。</span><span class="sxs-lookup"><span data-stu-id="86c33-104">[Find another country or region](../billing-and-payments/pay-for-your-subscription.md).</span></span>
 
-<span data-ttu-id="35f8f-105">请仅以 EUR 支付，并参考 (付款) 的发票编号。</span><span class="sxs-lookup"><span data-stu-id="35f8f-105">Please pay in EUR only and reference invoice number(s) on your payment remittance.</span></span>
+<span data-ttu-id="86c33-105">请仅以 EUR 支付，并参考 (付款) 的发票编号。</span><span class="sxs-lookup"><span data-stu-id="86c33-105">Please pay in EUR only and reference invoice number(s) on your payment remittance.</span></span>
 
-## <a name="electronic-funds-transfer"></a><span data-ttu-id="35f8f-106">电子资金转帐</span><span class="sxs-lookup"><span data-stu-id="35f8f-106">Electronic Funds Transfer</span></span>
+## <a name="electronic-funds-transfer"></a><span data-ttu-id="86c33-106">电子资金转帐</span><span class="sxs-lookup"><span data-stu-id="86c33-106">Electronic Funds Transfer</span></span>
 
-<span data-ttu-id="35f8f-107">**Bank：** 年，伦敦</span><span class="sxs-lookup"><span data-stu-id="35f8f-107">**Bank:** Citibank, London</span></span>  
-<span data-ttu-id="35f8f-108">**SWIFT 代码/BIC：** 一百万</span><span class="sxs-lookup"><span data-stu-id="35f8f-108">**SWIFT Code/BIC:** CITIGB2L</span></span>  
-<span data-ttu-id="35f8f-109">**IBAN：** GB31CITI18500812207591</span><span class="sxs-lookup"><span data-stu-id="35f8f-109">**IBAN:** GB31CITI18500812207591</span></span>  
-<span data-ttu-id="35f8f-110">**SORT 代码** ：185008</span><span class="sxs-lookup"><span data-stu-id="35f8f-110">**SORT Code:** 185008</span></span>  
-<span data-ttu-id="35f8f-111">**帐号** ：12207591</span><span class="sxs-lookup"><span data-stu-id="35f8f-111">**Account Number:** 12207591</span></span>  
-<span data-ttu-id="35f8f-112">**帐户名称：** MICROSOFT</span><span class="sxs-lookup"><span data-stu-id="35f8f-112">**Account Name:** MICROSOFT</span></span>  
+<span data-ttu-id="86c33-107">**Bank：** 年，伦敦</span><span class="sxs-lookup"><span data-stu-id="86c33-107">**Bank:** Citibank, London</span></span>  
+<span data-ttu-id="86c33-108">**SWIFT 代码/BIC：** 一百万</span><span class="sxs-lookup"><span data-stu-id="86c33-108">**SWIFT Code/BIC:** CITIGB2L</span></span>  
+<span data-ttu-id="86c33-109">**IBAN：** GB31CITI18500812207591</span><span class="sxs-lookup"><span data-stu-id="86c33-109">**IBAN:** GB31CITI18500812207591</span></span>  
+<span data-ttu-id="86c33-110">**SORT 代码** ：185008</span><span class="sxs-lookup"><span data-stu-id="86c33-110">**SORT Code:** 185008</span></span>  
+<span data-ttu-id="86c33-111">**帐号** ：12207591</span><span class="sxs-lookup"><span data-stu-id="86c33-111">**Account Number:** 12207591</span></span>  
+<span data-ttu-id="86c33-112">**帐户名称：** MICROSOFT</span><span class="sxs-lookup"><span data-stu-id="86c33-112">**Account Name:** MICROSOFT</span></span>
