@@ -1,34 +1,35 @@
 ---
 title: 乌兹别克斯坦的付款信息
-author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
+author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
-ms.custom: CommercePayInfo
+ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: 了解在哪里发送订阅付款。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: f8fa212a98337a510459d2907c17ada5f21a164e
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: 62664e77cfb8a2f6b4bf4411f010745796a3371a
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52273436"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52536486"
 ---
-# <a name="payment-information-for-kyrgyzstan"></a><span data-ttu-id="0fd3f-103">乌兹别克斯坦的付款信息</span><span class="sxs-lookup"><span data-stu-id="0fd3f-103">Payment information for Kyrgyzstan</span></span>
+# <a name="payment-information-for-kyrgyzstan"></a><span data-ttu-id="05eba-103">乌兹别克斯坦的付款信息</span><span class="sxs-lookup"><span data-stu-id="05eba-103">Payment information for Kyrgyzstan</span></span>
 
-<span data-ttu-id="0fd3f-104">[查找另一个国家/地区](../billing-and-payments/pay-for-your-subscription.md)。</span><span class="sxs-lookup"><span data-stu-id="0fd3f-104">[Find another country or region](../billing-and-payments/pay-for-your-subscription.md).</span></span> 
+<span data-ttu-id="05eba-104">[查找另一个国家/地区](../billing-and-payments/pay-for-your-subscription.md)。</span><span class="sxs-lookup"><span data-stu-id="05eba-104">[Find another country or region](../billing-and-payments/pay-for-your-subscription.md).</span></span>
 
-<span data-ttu-id="0fd3f-105">Please pay in USD only and reference invoice number (s) on your payment invoice.</span><span class="sxs-lookup"><span data-stu-id="0fd3f-105">Please pay in USD only and reference invoice number(s) on your payment remittance.</span></span>
+<span data-ttu-id="05eba-105">Please pay in USD only and reference invoice number (s) on your payment invoice.</span><span class="sxs-lookup"><span data-stu-id="05eba-105">Please pay in USD only and reference invoice number(s) on your payment remittance.</span></span>
 
-## <a name="electronic-funds-transfer"></a><span data-ttu-id="0fd3f-106">电子资金转帐</span><span class="sxs-lookup"><span data-stu-id="0fd3f-106">Electronic Funds Transfer</span></span>
+## <a name="electronic-funds-transfer"></a><span data-ttu-id="05eba-106">电子资金转帐</span><span class="sxs-lookup"><span data-stu-id="05eba-106">Electronic Funds Transfer</span></span>
 
-<span data-ttu-id="0fd3f-107">**Bank：** 年，伦敦</span><span class="sxs-lookup"><span data-stu-id="0fd3f-107">**Bank:** Citibank, London</span></span>  
-<span data-ttu-id="0fd3f-108">**SWIFT 代码：** 一百万</span><span class="sxs-lookup"><span data-stu-id="0fd3f-108">**SWIFT Code:** CITIGB2L</span></span>  
-<span data-ttu-id="0fd3f-109"> IBAN：12510049，</span><span class="sxs-lookup"><span data-stu-id="0fd3f-109">**IBAN:** 12510049,</span></span>  
-<span data-ttu-id="0fd3f-110">**帐户编号：** GB95CITI18500812510049</span><span class="sxs-lookup"><span data-stu-id="0fd3f-110">**Account Number:** GB95CITI18500812510049</span></span>  
-<span data-ttu-id="0fd3f-111">**帐户名称：** MICROSOFT</span><span class="sxs-lookup"><span data-stu-id="0fd3f-111">**Account Name:** MICROSOFT</span></span>  
+<span data-ttu-id="05eba-107">**Bank：** 年，伦敦</span><span class="sxs-lookup"><span data-stu-id="05eba-107">**Bank:** Citibank, London</span></span>  
+<span data-ttu-id="05eba-108">**SWIFT 代码：** 一百万</span><span class="sxs-lookup"><span data-stu-id="05eba-108">**SWIFT Code:** CITIGB2L</span></span>  
+<span data-ttu-id="05eba-109"> IBAN：12510049，</span><span class="sxs-lookup"><span data-stu-id="05eba-109">**IBAN:** 12510049,</span></span>  
+<span data-ttu-id="05eba-110">**帐户编号：** GB95CITI18500812510049</span><span class="sxs-lookup"><span data-stu-id="05eba-110">**Account Number:** GB95CITI18500812510049</span></span>  
+<span data-ttu-id="05eba-111">**帐户名称：** MICROSOFT</span><span class="sxs-lookup"><span data-stu-id="05eba-111">**Account Name:** MICROSOFT</span></span>

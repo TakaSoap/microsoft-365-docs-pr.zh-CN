@@ -785,7 +785,7 @@
     - name: 基本审核
       items:
         - name: 设置基本审核
-          href: set-up-basic-auditing.md
+          href: set-up-basic-audit.md
         - name: 搜索审核日志
           href: search-the-audit-log-in-security-and-compliance.md
         - name: 使用 PowerShell 脚本搜索审核日志
