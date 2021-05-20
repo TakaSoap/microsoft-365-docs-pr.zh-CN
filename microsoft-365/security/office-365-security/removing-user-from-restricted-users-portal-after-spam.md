@@ -20,12 +20,12 @@ description: 管理员可以了解如何在 Office 365 中从“受限的用户�
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 32748d717762d7af727a1583226b6d47ee7697c6
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 2171e2465aa40e187f8104c7c0d2675562f115ce
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51203594"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52537867"
 ---
 # <a name="remove-blocked-users-from-the-restricted-users-portal-in-office-365"></a>在 Office 365 中从“受限的用户”门户中删除被阻止的用户
 
@@ -81,7 +81,7 @@ ms.locfileid: "51203594"
 
 ## <a name="verify-the-alert-settings-for-restricted-users"></a>验证用于受限的用户的警报设置
 
-默认警报策略“被限制发送电子邮件的用户”会在用户被阻止发送出站邮件时自动通知管理员。 可以验证这些设置，并添加其他要通知的用户。 若要详细了解警报策略，请参阅[安全与合规中心内的警报策略](../../compliance/alert-policies.md)。
+默认警报策略“被限制发送电子邮件的用户”会在用户被阻止发送出站邮件时自动通知管理员。 可以验证这些设置，并添加其他要通知的用户。 有关警报策略的详细信息，请参阅 [Microsoft 365 中的警报策略](../../compliance/alert-policies.md)。
 
 > [!IMPORTANT]
 > 必须启用审核日志搜索，这样警报才能正常运行。 有关详细信息，请参阅[启用或禁用审核日志搜索](../../compliance/turn-audit-log-search-on-or-off.md)。

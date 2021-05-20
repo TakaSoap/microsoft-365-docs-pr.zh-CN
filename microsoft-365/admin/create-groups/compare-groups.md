@@ -21,13 +21,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 758759ad-63ee-4ea9-90a3-39f941897b7d
-description: 了解可以使用的组类型。
-ms.openlocfilehash: 9f36688972f00a27a274b6a974d958d1d590aa93
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+description: Microsoft 365 组成员将获得组电子邮件和用于对话、文件和日历事件的共享工作区，以及 Stream 和 Planner。
+ms.openlocfilehash: d8bf2e20b428063b99d540896bac3e6e1ae59481
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52243980"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52535862"
 ---
 # <a name="compare-groups"></a>比较组
 

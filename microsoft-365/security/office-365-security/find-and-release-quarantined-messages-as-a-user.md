@@ -20,12 +20,12 @@ ms.custom:
 description: 用户可在 Exchange Online Protection （EOP）中了解如何查看和管理应该已提供给他们的隔离邮件。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 036aa164b8b77efd2365d56c07d26870eac243f5
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: 68656d21b8c10157ebae5d030e56293ba1ce07f7
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52274444"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52539115"
 ---
 # <a name="find-and-release-quarantined-messages-as-a-user-in-eop"></a>在 EOP 中以用户身份查找和释放已隔离邮件
 
@@ -54,7 +54,7 @@ ms.locfileid: "52274444"
 
 ## <a name="view-your-quarantined-messages"></a>查看已隔离邮件
 
-1. 在安全与合规中心内，依次转到“威胁管理”\>“审阅”\>“隔离”。
+1. 在安全与合规中心内，依次转到“**威胁管理**”\>“**审阅**”\>“**隔离**”。
 
 2. 若要对结果进行排序，可以单击可用列标题。 单击“修改列”最多可显示七列。 默认值标有星号 (<sup>\*</sup>)：
 

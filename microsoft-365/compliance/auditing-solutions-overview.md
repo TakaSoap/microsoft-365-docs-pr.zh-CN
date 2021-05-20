@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 description: 了解如何审核 Microsoft 365 组织中用户和管理员的活动。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 214ea43348a4a33e6ce1b754cbaf9be6a43b2c70
-ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
+ms.openlocfilehash: d8686a2cd7b1fc6e9082e85b18ba352c1fd7f830
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "52314263"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538495"
 ---
 # <a name="auditing-solutions-in-microsoft-365"></a>Microsoft 365 中的审核解决方案
 
@@ -32,13 +32,15 @@ Microsoft 365 审核解决方案提供集成解决方案，帮助组织有效响
 
 ## <a name="microsoft-365-auditing-solutions"></a>Microsoft 365 审核解决方案
 
-Microsoft 365 提供两个审核解决方案：基本审核和高级审核。
+Microsoft 365 提供两种审核解决方案：基本审核和高级审核。
 
-### <a name="basic-auditing"></a>基本审核
+![基本审核和高级审核的关键功能](..\media\AuditingSolutionsComparison.png)
 
-基本审核让你能够记录和搜索经审核的活动，并支持你的文件、IT、合规性和法律调查。
+### <a name="basic-audit"></a>基本审核
 
-- **默认情况下启用**。 默认为具有相应订阅的所有组织启用基本审核。 这意味着将捕获并搜索经审核的活动的记录。 只需分配访问审核日志搜索工具（及相应 cmdlet）所需的权限，并确保用户获得使用高级审核功能的相应许可证。
+通过基本审核，可以记录和搜索经审核的活动，并支持法务、IT、合规性和法律调查。
+
+- **默认情况下启用**。 默认为具有适当订阅的所有组织启用基本审核。 这意味着将捕获并搜索经审核的活动的记录。 只需分配访问审核日志搜索工具（及相应 cmdlet）所需的权限，并确保用户获得使用高级审核功能的相应许可证。
 - **数以千计的可搜索审计事件**。 可搜索组织中大多数 Microsoft 365 服务中经审核的活动。 有关可搜索的活动的部分列表，请参阅 [经审核活动](search-the-audit-log-in-security-and-compliance.md#audited-activities)。 有关支持经审核活动的服务和功能的列表，请参阅 [审核日志记录类型](/office/office-365-management-api/office-365-management-activity-api-schema#auditlogrecordtype)。
 - **Microsoft 365 合规中心内审核**。 使用 Microsoft 365 合规中心中的审核日志搜索工具搜索审核记录。 可以搜索特定活动、特定用户执行的活动以及按日期范围发生的活动。 下面是合规中心中审核搜索工具的屏幕截图。
 
@@ -46,26 +48,26 @@ Microsoft 365 提供两个审核解决方案：基本审核和高级审核。
 
 - **Search-UnifiedAuditLog cmdlet**. 您也可以在 Exchange Online PowerShell（搜索工具的基础 cmdlet）中使用 **Search-UnifiedAuditLog** cmdlet 来搜索审核事件或在脚本中使用。 有关详细信息，请参阅：
 
-  - [Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog)
+  - [Search-UnifiedAuditLog cmdlet 参考](/powershell/module/exchange/search-unifiedauditlog)
   - [使用 PowerShell 脚本搜索审核日志](audit-log-search-script.md)
 
-- **将审核记录导出为 CSV 文件**。 在合规中心运行审核日志搜索工具后，可以将搜索返回的审核记录导出到 CSV 文件。 这将允许对不同的审核记录属性使用 Microsoft Excel 排序和筛选。 还可使用 Excel Power Query 转换功能将 AuditData JSON 对象中的每个属性拆分为其自己的列。 通过此操作可有效查看和比较不同事件的类似数据。 有关详细信息，请参阅[导出、配置和查看审核日志记录](export-view-audit-log-records.md)。
+- **将审核记录导出为 CSV 文件**。 在合规中心内运行审核日志搜索工具后，可以将搜索返回的审核记录导出到 CSV 文件。 这将允许对不同的审核记录属性使用 Microsoft Excel 排序和筛选。 还可使用 Excel Power Query 转换功能将 AuditData JSON 对象中的每个属性拆分为其自己的列。 通过此操作可有效查看和比较不同事件的类似数据。 有关详细信息，请参阅[导出、配置和查看审核日志记录](export-view-audit-log-records.md)。
 
-- **通过Office 365管理活动API访问审核日志**。 用于访问和检索审核记录的第三种方法就是使用 Office 365 管理活动 API。 这使组织可以审核数据超过默认 90 天的时间，并可以将其审核数据导入 SIEM 解决方案。 有关信息，请参阅 [Office 365 管理活动 API 参考](/office/office-365-management-api/office-365-management-activity-api-reference)。
+- **通过Office 365管理活动API访问审核日志**。 用于访问和检索审核记录的第三种方法就是使用 Office 365 管理活动 API。 这使组织可以审核数据超过默认 90 天的时间，并可以将其审核数据导入 SIEM 解决方案。 有关详细信息，请参阅 [Office 365 管理活动 API 参考](/office/office-365-management-api/office-365-management-activity-api-reference)。
 
 - **90 天审核日志保留期**。 当用户或管理员执行审核活动时，将生成审核记录并将其存储在组织的审核日志中。 在基本审核中，记录将保留 90 天，这意味着可以搜索过去三个月内发生的活动。
 
 ### <a name="advanced-audit"></a>高级审核
 
-高级审核基于基本审核的功能，提供审核日志保留策略、审核记录较长的保留时间、高价值关键事件，以及 Office 365 管理活动 API 的更大带宽访问。
+高级审核以基本审核功能为基础，提供审核日志保留策略、较长的审核记录保留时间、高价值关键事件，以及对于 Office 365 管理活动 API 的更高带宽访问。
 
 - **审核日志保留策略**。 可创建自定义审核日志保留策略，将审核记录保留更长一年（对于需要附加设备许可证的用户，最多保留 10 年）。 可创建一个策略，以保留基于被审核活动、经审核的特定活动或执行经审核活动的用户的服务的审核记录。
 
-- **审核记录被延长的保留**。 默认情况下，Exchange、SharePoint 和 Azure Active Directory 审核记录将保留一年。 默认情况下，所有其他活动的审核记录将保留 90 天，默认情况下，可以使用审核日志保留策略来配置较长的保留期。
+- **审核记录被延长的保留**。 默认情况下，Exchange、SharePoint 和 Azure Active Directory 审核记录将保留一年。 默认情况下，所有其他活动的审核记录将保留 90 天，或者可以使用审核日志保留策略来配置较长的保留期。
 
-- **具有较高价值、关键事件**。 关键事件的审核记录提供有关事件（例如邮件项目访问时间、邮件项目答复和转发时间，以及用户在 Exchange Online 和 SharePoint Online 中何时和在 SharePoint Online 中搜索内容）的可见性，帮助组织进行邮件和合规性调查。 这些关键事件可以帮助你调查可能的违规行为，并确定泄露的范围。
+- **高价值关键事件**。 关键事件的审计记录可以帮助组织进行法务调查和合规调查，方法是提供事件的可见性，如访问邮件时间、回复和转发邮件时间、用户在 Exchange Online 和 Sharepoint Online 中搜索的时间和内容。 这些关键事件可以帮助你调查可能的违规行为，并确定泄露的范围。
 
-- **Office 365管理活动API的更高带宽**。 高级审核为组织提供了更多的带宽来通过 Office 365 管理活动 API 访问审核日志。 虽然所有组织（具有基本审核或高级审核）最初都分配了每分钟 2，000 个请求的基准，但根据组织的席位数及其许可订阅，此限制将动态增加。 其结果为使用高级审核的组织获得与具有基本审核的组织大约两倍的带宽。
+- **Office 365管理活动API的更高带宽**。 高级审核为组织提供了更多的带宽来通过 Office 365 管理活动 API 访问审核日志。 虽然所有组织（具有基本审核或高级审核）最初都分配了每分钟 2000 个请求的基线，但根据组织的席位数及其许可订阅，此限制将动态增加。 这导致采用高级审核的组织获得的带宽是采用基本审核的组织的两倍。
 
 有关高级审核功能的更多详细信息，请参阅 [365 高级审核](advanced-audit.md)。
 
@@ -78,7 +80,7 @@ Microsoft 365 提供两个审核解决方案：基本审核和高级审核。
 |默认情况下启用|![支持](../media/check-mark.png)|![支持](../media/check-mark.png)|
 |数千个可搜索的审核事件|![支持](../media/check-mark.png)|![支持](../media/check-mark.png)|
 |Microsoft 365 合规中心中的审核搜索工具|![支持](../media/check-mark.png)|![支持](../media/check-mark.png)|
-|**Search-UnifiedAuditLog** cmdlet|![支持](../media/check-mark.png)|![支持](../media/check-mark.png)|
+|Search-UnifiedAuditLog cmdlet|![支持](../media/check-mark.png)|![支持](../media/check-mark.png)|
 |将审核记录导出到 CSV 文件|![支持](../media/check-mark.png)|![支持](../media/check-mark.png)|
 |通过Office 365管理活动API访问审核日志<sup>1</sup>|![受支持](../media/check-mark.png)|![支持](../media/check-mark.png)</sup>|
 |90 天审核日志保留|![支持](../media/check-mark.png)|![支持](../media/check-mark.png)|
@@ -92,9 +94,9 @@ Microsoft 365 提供两个审核解决方案：基本审核和高级审核。
 
 ## <a name="licensing-requirements"></a>许可要求
 
-以下各节确定基本审核和高级审核的许可要求。 高级审核中包括基本审核功能。
+以下部分确定了基本审核和高级审核的许可要求。 高级审核中包括基本审核功能。
 
-### <a name="basic-auditing"></a>基本审核
+### <a name="basic-audit"></a>基本审核
 
 - Microsoft 365 企业版 E3 订阅
 - Microsoft 365 商业高级版
@@ -125,21 +127,23 @@ Microsoft 365 提供两个审核解决方案：基本审核和高级审核。
 
 若要开始在 Microsoft 365 使用审核解决方案，请参阅以下设置指南。
 
-### <a name="set-up-basic-auditing"></a>设置基本审核
+### <a name="set-up-basic-audit"></a>设置基本审核
 
 第一步是设置基本审核，然后开始运行审核日志搜索。
 
-![用于设置基本审核的工作流](../media/BasicAuditingWorkflow.png)
+![设置基本审核的工作流](../media/BasicAuditingWorkflow.png)
 
-1. 验证你的组织具有支持基本审核的订阅，以及支持高级审核的订阅（如果适用）。
+1. 验证组织是否具有支持基本审核的订阅，以及支持高级审核的订阅（如果适用）。
 
-2. 在 Exchange Online 中向组织内部人员分配权限，这些人员将使用 Microsoft 365 合规中心或 **Search-UnifiedAuditLog** cmdlet 中的审核日志搜索工具。 具体而言，向用户分配 Exchange Online 中的"仅查看审核日志"或"审核日志"角色。
+2. 将 Exchange Online 中的权限分配给组织中将使用 Microsoft 365 合规中心中的审核日志搜索工具，或将使用 **Search-UnifiedAuditLog** cmdlet 的人员。 具体而言，必须向用户分配 Exchange Online 中的仅查看审核日志或审核日志角色。
 
-3. 搜索审核日志。 完成步骤 1 和步骤 2 后，你组织中的用户可以使用审核日志搜索工具（或相应的 cmdlet）搜索经审核的活动。
+3. 搜索审核日志。完成步骤 1 和步骤 2 后，组织中的用户可以使用审核日志搜索工具（或相应的 cmdlet）搜索经审核的活动。
+
+有关更详细的说明，请参阅 [设置基本审核](set-up-basic-audit.md)。
 
 ### <a name="set-up-advanced-audit"></a>设置高级审核
 
-如果你的组织具有支持高级审核的订阅，请执行以下步骤来设置和使用高级审核中的其他功能。
+如果组织具有支持高级审核的订阅，请执行以下步骤来设置和使用高级审核中的其他功能。
 
 ![设置高级审核的工作流](../media/AdvancedAuditWorkflow.png)
 
@@ -153,10 +157,12 @@ Microsoft 365 提供两个审核解决方案：基本审核和高级审核。
 
 2. 启用关键事件，以便用户在 Exchange Online 和 SharePoint Online 中执行搜索时记录。
 
-3. 设置审核日志保留策略。 除了将 Exchange、SharePoint 和 Azure AD 审核记录保留一年的默认策略外，可以创建其他审核日志保留策略以满足组织安全操作、IT 和合规团队的要求。
+3. 设置审核记录保留策略。除了将 Exchange、SharePoint 和 Azure AD 审核记录保留一年的默认策略外，可以创建其他审核日志保留策略以满足组织安全操作、IT 和合规团队的要求。
 
-4. 执行调查时，搜索关键事件和其他活动。 完成步骤 1 和步骤 2 后，可在审核日志中搜索关键事件和调查已泄露帐户以及其他类型的安全或合规性调查期间的其他活动。
+4. 执行法务调查时，搜索关键事件和其他活动。完成步骤 1 和步骤 2 后，可在审核日志中搜索关键事件和调查已泄露帐户以及其他类型的安全或合规性调查期间的其他活动。
+
+有关更详细的说明，请参阅 [高级审核](set-up-advanced-audit.md)。
 
 ## <a name="training"></a>培训
 
-在基本审核和高级审核中培训安全运营团队、IT 管理员和合规部团队，可帮助组织更快开始使用审核来帮助完成调查。 Microsoft 365 提供了以下资源来帮助你组织中这些用户开始进行审核： [描述Microsoft 365中的审核功能](/learn/modules/describe-audit-capabilities-microsoft-365)。
+在基本审核和高级审核中培训安全运营团队、IT 管理员和合规调查团队，可帮助组织更快开始使用审核来帮助完成调查。 Microsoft 365 提供了以下资源来帮助你组织中这些用户开始进行审核： [描述Microsoft 365中的审核功能](/learn/modules/describe-audit-capabilities-microsoft-365)。

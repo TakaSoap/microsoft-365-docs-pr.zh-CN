@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: 适用于管理 Office 应用中针对桌面、移动和 Web 的敏感度标签的 IT 管理员的信息。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: cb385ec5589af115ce1a0d323e3660def42179b9
-ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
+ms.openlocfilehash: f280cae2364a3ad76a3a3ff91ce382fdf69eab2b
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52345760"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52532046"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>管理 Office 应用中的敏感度标签
 
@@ -170,7 +170,7 @@ Azure 信息保护统一标签客户端同时支持 Open XML 格式和 Microsoft
 
 - 用户将" **\所有员工"** 标签应用于文档，并且此标签配置为对组织中所有用户应用加密设置。 然后，此用户手动配置 IRM 设置以限制对组织外部用户的访问权限。 结果是一个标记为"机密 **\所有员工** 加密的文档，但您的组织中的用户无法如预期打开它。
 
-- 用户向 **应用"机密\收件人** 标签，此电子邮件配置为应用" **请勿转发"**。 在 Outlook 应用程序中，该用户然后手动配置 IRM 设置，以便电子邮件不受限制。 最终结果是电子邮件可以由收件人转发，尽管有“**机密\收件人**”标签。
+- 用户向 **应用"机密\收件人** 标签，此电子邮件配置为应用" **请勿转发"**。 在 Outlook 应用中，此用户随后手动选择“仅加密的 IRM 设置”。 最终结果是虽然电子邮件确实保持加密状态，但收件人仍可以转发此邮件，尽管邮件具有“**机密\仅限收件人**”标签。
     
     作为例外，对于 Outlook 网页版，在当前选定标签应用加密时，用户无法选择“**加密**”菜单中的选项。
 
@@ -178,13 +178,23 @@ Azure 信息保护统一标签客户端同时支持 Open XML 格式和 Microsoft
 
 如果已标记文档或电子邮件，如果内容尚未加密，或者其具有"导出"或"完全控制" [或完全控制](/azure/information-protection/configure-usage-rights#usage-rights-and-descriptions) ，用户可以执行这些操作。 
 
-为获得更一致的标签体验和有意义的报告，提供合适的标签和指南，以便用户仅应用标签以保护文档。例如：
+为获得更一致的标签体验和有意义的报告，向用户提供合适的标签和指南，以便仅应用标签以保护文档。例如：
 
 - 对于用户必须分配自己的权限的例外情况，请提供标签 [允许用户向用户分配](encryption-sensitivity-labels.md#let-users-assign-permissions)。 
 
 - 如果用户需要具有相同的分类而无加密标签，则用户无需在选择应用加密的标签后手动删除加密，而是提供子标记替代项。例如：
     - **机密 \ 所有员工**
     - **机密 \ 任何人（无加密）**
+
+- 请考虑禁用 IRM 设置以防止用户选择这些设置：
+    - Outlook for Windows： 
+        - HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Common\DRM 中的注册表项 (DWORD:00000001) *DisableDNF* 和 *DisableEO*
+        - 确保未配置组策略设置 **配置“加密”按钮的默认加密选项**
+    - Outlook for Mac： 
+        - 记录在 [设置 Outlook for Mac 首选项](/DeployOffice/mac/preferences-outlook) 中的注册表项 *DisableEncryptOnly* 和 *DisableDoNotForward* 安全设置
+    - Outlook 网页版: 
+        - 为 [Set-IRMConfiguration](/powershell/module/exchange/set-irmconfiguration) 记录的参数 *SimplifiedClientAccessDoNotForwardDisabled* 和 *SimplifiedClientAccessEncryptOnlyDisabled*
+        - Outlook for iOS 和 Android：这些应用不支持用户在无标签的情况下应用加密，因此无需禁用任何项目。
 
 > [!NOTE]
 > 如果用户从存储在SharePoint或OneDrive中的带标签文档中手动删除加密，并且已在[SharePoint和OneDrive中为Office文件启用了敏感性标签](sensitivity-labels-sharepoint-onedrive-files.md)，则下次访问或下载文档时，标签加密将自动恢复。 
@@ -413,7 +423,7 @@ PowerShell 示例，其中标签策略命名为 **全局**：
 
 #### <a name="powershell-tips-for-specifying-the-advanced-settings"></a>指定高级设置的 PowerShell 提示
 
-要为 Outlook 指定其他默认标签，必须指定标签 GUID。 要查找此值，可使用以下命令：
+若要为 Outlook 指定其他默认标签，请通过其 GUID 来标识标签。 要查找此值，可使用以下命令：
 
 ````powershell
 Get-Label | Format-Table -Property DisplayName, Name, Guid

@@ -17,19 +17,20 @@ ms.collection:
 - m365solution-securecollab
 ms.custom:
 - Ent_Solutions
+recommendations: false
 description: 了解如何部署具有敏感数据保护的团队。
-ms.openlocfilehash: 03f10c91461d440413ace418a3b6fdd84da1660a
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 16b60230c18f4a4f5e10b4bd421fd1bf02b39779
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50916222"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538179"
 ---
 # <a name="configure-teams-with-protection-for-sensitive-data"></a>配置具有敏感数据保护的团队
 
 在本文中，我们将了解如何针对敏感级别的保护设置团队。 在执行本文中的步骤之前，请确保已完成[部署具有基线保护的团队](configure-teams-baseline-protection.md)中的步骤。 敏感级别提供了以下超出基线层级的额外保护：
 
-- 团队的敏感度标签，可用于打开或关闭来宾共享，并仅允许未托管设备通过 Web 访问 SharePoint 内容。 此标签还可用于对文件进行分类。
+- 团队的敏感度标签，可用于打开或关闭来宾共享，并仅允许未托管设备通过 Web 访问 SharePoint 内容。此标签还可用于对文件进行分类。
 - 限制性更强的默认共享链接类型
 - 只有团队所有者可以创建专用频道。
 
