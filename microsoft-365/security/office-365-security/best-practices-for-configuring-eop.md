@@ -12,12 +12,12 @@ ms.assetid: faf1efd1-3b0c-411a-804d-17f37292eac0
 description: 请遵循这些适用于独立 EOP Exchange Online Protection (的最佳实践) 以便成功设置并避免常见的配置错误。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 94586d409d6d8b53ba68c22b6b4f62d2b72266db
-ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
+ms.openlocfilehash: 266da2d8fe6b8ede79e703e49e48d17fccdd2928
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "51599467"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52537951"
 ---
 # <a name="best-practices-for-configuring-standalone-eop"></a>配置独立 EOP 的最佳实践
 
@@ -62,7 +62,7 @@ ms.locfileid: "51599467"
 |经过身份验证的 SMTP 提交|已禁用|已禁用|生成和发送电子邮件 (POP3 和 IMAP4 客户端以及应用程序和设备需要经过身份验证 (客户端 SMTP 提交或 SMTP AUTH) 。 <p> 有关全局或选择性地启用和禁用 SMTP AUTH 的说明，请参阅在 Exchange Online 中启用或禁用[经过身份验证的客户端 SMTP Exchange Online。](/exchange/clients-and-mobile-in-exchange-online/authenticated-client-smtp-submission)|
 |与邮箱的 EWS 连接|已禁用|已禁用|Outlook使用 Exchange Web 服务进行忙/闲设置、外出设置和日历共享。 如果无法全局禁用 EWS，则有以下选项： <ul><li>如果你 [的客户端](/exchange/clients-and-mobile-in-exchange-online/disable-basic-authentication-in-exchange-online) 支持新式身份验证和新式身份验证，请使用身份验证策略 (EWS) 。</li><li>使用 [客户端访问规则](/exchange/clients-and-mobile-in-exchange-online/client-access-rules/client-access-rules) 将 EWS 限制为特定用户或源 IP 地址。</li><li>控制全局或每个用户对特定应用程序的 EWS 访问。 有关说明，请参阅[控制对 Exchange 中的 EWS 的访问](/exchange/client-developer/exchange-web-services/how-to-control-access-to-ews-in-exchange)。</li></ul> <p> 报告[邮件外接程序和](enable-the-report-message-add-in.md)"报告网络钓鱼外接程序[](enable-the-report-phish-add-in.md)"默认在支持的环境中使用 REST，但如果 REST 不可用，将回退到 EWS。 使用 REST 的受支持环境包括：<ul><li>Exchange Online</li><li>Exchange 2019 或 Exchange 2016</li><li>Current Outlook for Windows from a Microsoft 365 subscription or one-time purchase Outlook 2019.</li><li>当前Outlook for Mac 2016 Microsoft 365或更高版本的订阅或一Outlook for Mac购买。</li><li>Outlook for iOS 和 Android</li><li>Outlook 网页版</li></ul>|
 |[PowerShell 连接](/powershell/exchange/disable-access-to-exchange-online-powershell)|已禁用|已禁用|适用于由 [Get-User](/powershell/module/exchange/get-user) cmdlet (返回的用户对象的邮箱用户或邮件) 。|
-|使用 [欺骗智能](learn-about-spoof-intelligence.md) 将发件人添加到允许列表|是|是||
+|使用 [欺骗智能见解](learn-about-spoof-intelligence.md) 和 [租户允许/阻止列表](tenant-allow-block-list.md)将发件人添加到允许列表|是|是||
 |[基于目录的边缘阻止 (DBEB) ](/Exchange/mail-flow-best-practices/use-directory-based-edge-blocking)|已启用|已启用|域类型 = 权威|
 |[设置所有管理员帐户的多重身份验证](../../admin/security-and-compliance/set-up-multi-factor-authentication.md)|已启用|已启用||
 |

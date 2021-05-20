@@ -17,12 +17,12 @@ ms.custom:
 description: 管理员可以了解 EOP Exchange Online Protection (和 Microsoft Defender for) 中提供的防钓鱼Office 365。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 44472d49936f400ee16227f3f29141738ad28daa
-ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
+ms.openlocfilehash: d20d9c3839cf72d1e99a185186d0716d9a513c5f
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51571016"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52537855"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>邮件中的防钓鱼Microsoft 365
 
@@ -97,7 +97,12 @@ Microsoft Defender for Office 365 中的反网络钓鱼策略仅适用于具有 
 
 EOP 和 Microsoft Defender for Office 365 中的反网络钓鱼策略中提供了以下欺骗Office 365：
 
-- **反欺骗保护**：启用或禁用反欺骗保护。 建议保持启用状态。 使用欺骗 **智能策略允许** 或阻止特定的欺骗内部和外部发件人。 有关详细信息，请参阅[在 Microsoft 365 中配置欺骗智能](learn-about-spoof-intelligence.md)。
+- **启用欺骗智能？：** 打开或关闭欺骗智能。 建议将其保持打开。
+
+  启用欺骗智能后， **欺骗** 智能见解会显示欺骗智能自动检测、允许或阻止的欺骗发件人。 你可以手动替代欺骗智能裁定，以允许或阻止在见解中检测到的欺骗性发件人。 但当你这样做时，欺骗的发件人将从欺骗智能见解中消失，并且现在仅在租户允许/阻止列表中的"欺骗"选项卡上可见。 还可以在租户允许/阻止列表中手动为欺骗性发件人创建允许或阻止条目。 有关详细信息，请参阅下列主题：
+
+  - [EOP 中的欺骗智能见解](learn-about-spoof-intelligence.md)
+  - [在 EOP 中管理租户允许/阻止列表](tenant-allow-block-list.md)
 
   > [!NOTE]
   >
@@ -107,9 +112,11 @@ EOP 和 Microsoft Defender for Office 365 中的反网络钓鱼策略中提供�
   >
   > - 禁用反欺骗保护只会禁用来自复合身份验证检查的隐式 [欺骗](email-validation-and-authentication.md#composite-authentication) 保护。 如果发件人未通过显式 [DMARC](use-dmarc-to-validate-email.md) 检查，则策略被设置为隔离或拒绝，邮件仍将被隔离或拒绝。
 
-  对于来自被阻止的欺骗发件人的邮件，还可以指定对邮件要采取的操作：
+- **未经身份验证的发件人设置**：请参阅下一节中的信息。
 
-  - **将邮件移动到"垃圾邮件"文件夹**：这是默认值。 邮件将传递到邮箱，并移动到"垃圾邮件"文件夹。 在Exchange Online中，如果对邮箱启用了垃圾邮件规则，则邮件将移动到"垃圾邮件"文件夹 (该邮件默认启用) 。 有关详细信息，请参阅 Configure [junk email settings on Exchange Online mailboxes in Microsoft 365](configure-junk-email-settings-on-exo-mailboxes.md)。
+- **操作**：对于来自被阻止的欺骗 (发件人的邮件自动被欺骗智能阻止或在租户允许/阻止列表) 中手动阻止，还可以指定对邮件采取的操作：
+
+  - **将邮件移动到收件人的"垃圾邮件"文件夹**：这是默认值。 邮件将传递到邮箱，并移动到"垃圾邮件"文件夹。 在Exchange Online中，如果对邮箱启用了垃圾邮件规则，则邮件将移动到"垃圾邮件"文件夹 (该邮件默认启用) 。 有关详细信息，请参阅 Configure [junk email settings on Exchange Online mailboxes in Microsoft 365](configure-junk-email-settings-on-exo-mailboxes.md)。
 
   - **隔离邮件**：将邮件发送到隔离邮箱，而不是目标收件人。 有关隔离的信息，请参阅以下文章：
 
@@ -117,23 +124,20 @@ EOP 和 Microsoft Defender for Office 365 中的反网络钓鱼策略中提供�
     - [以管理员角色管理隔离的邮件和Microsoft 365](manage-quarantined-messages-and-files.md)
     - [在邮件中以用户模式查找并释放隔离Microsoft 365](find-and-release-quarantined-messages-as-a-user.md)
 
-- **未经身份验证的发件人**：请参阅下一节中的信息。
-
 ### <a name="unauthenticated-sender"></a>未经身份验证的发件人
 
-未经身份验证的发件人标识是 EOP 和[](#spoof-settings)Microsoft Defender for Office 365 中的反网络钓鱼策略中提供的欺骗设置的一部分，如上一部分所述。
+未经身份验证的发件人设置是 EOP 和[](#spoof-settings)Microsoft Defender for Office 365 中提供的欺骗设置的一部分，如上一部分所述。
 
-"**未经身份验证的发件人"** 设置在邮件中启用或禁用未经身份验证的发件人Outlook。 具体来说：
+- 启用未经身份验证的发件人问号 **(？) 符号？：** 当启用此设置时，如果邮件未通过 SPF 或 DKIM 检查，并且邮件未通过 DMARC 或复合身份验证，则发件人的照片中会添加问号。 [](email-validation-and-authentication.md#composite-authentication) 关闭此设置后，不会将问号添加到发件人的照片中。
 
-- 如果 ( DKIM 检查) 邮件未通过 SPF 或 DKIM 检查，并且邮件未通过 DMARC 或复合身份验证，则向发件人的照片添加问号[](email-validation-and-authentication.md#composite-authentication)。 禁用未经身份验证的发件人标识可防止将问号添加到发件人的照片中。
+- 启用 **"via"标记？：** 当启用此设置时，如果发件人地址 (电子邮件客户端中显示的邮件发件人) 中的域不同于 DKIM 签名或 MAIL FROM 地址中的域，则通过标记 <sup>\*</sup> (chris@contoso.com <u>via</u> fabrikam.com) 将添加到"发件人"框中。 有关这些地址详细信息，请参阅 [电子邮件标准概述](how-office-365-validates-the-from-address.md#an-overview-of-email-message-standards)。
 
-- 如果" (chris@contoso.com <u>发件人"</u> 地址 (电子邮件客户端中显示的邮件发件人) 中的域不同于 DKIM 签名或 **MAIL FROM** 地址中的域，则添加通过 fabrikam.com) 的 via 标记。 有关这些地址详细信息，请参阅 [电子邮件标准概述](how-office-365-validates-the-from-address.md#an-overview-of-email-message-standards)。
-
-  如果发件人地址中的域与 DKIM 签名或 MAIL FROM 地址中的域不同，禁用未经身份验证的发件人标识不会阻止添加 via 标记。
+> [!NOTE]
+> 目前 **，"启用""通过"标记** ？设置并非在所有组织中都可用。 如果您没有"启用""通过"标记？设置，则问号和通过标记都受组织中"启用未经身份验证的发件人问号 **(？) "** 设置控制。
 
 若要防止向来自特定发件人的邮件添加问号或通过标记，可以使用以下选项：
 
-- 允许发件人在欺骗智能策略中欺骗。 当禁用未经身份验证的发件人标识时，此操作将阻止通过标记出现在发件人的邮件中。 有关说明，请参阅在 Microsoft 365 中[配置欺骗智能](learn-about-spoof-intelligence.md)。
+- 允许在欺骗智能见解 [中或手动](learn-about-spoof-intelligence.md) 在租户允许/阻止列表中允许 [欺骗发件人](tenant-allow-block-list.md)。 禁用未经身份验证的发件人标识后，允许欺骗发件人将阻止在发件人发送的邮件中显示 via 标记。
 
 - [为发件人域](email-validation-and-authentication.md#configure-email-authentication-for-domains-you-own) 配置电子邮件身份验证。
   - 对于发件人照片中的问号，SPF 或 DKIM 是最重要的。
@@ -159,7 +163,7 @@ EOP 和 Microsoft Defender for Office 365 中的反网络钓鱼策略中提供�
 
 以下模拟设置仅在 Microsoft Defender for Office 365 中的反网络钓鱼策略中Office 365：
 
-- **要保护的用户**：防止指定的内部或外部电子邮件地址被模拟 **为邮件发件人**。 例如，您收到一封来自公司副总裁的电子邮件，要求您向她发送一些内部公司信息。 是否执行？ 许多人在未思考的情况下发送回复。
+- **添加要保护的用户**：防止指定的内部或外部电子邮件地址被模拟 **为邮件发件人**。 例如，您收到一封来自公司副总裁的电子邮件，要求您向她发送一些内部公司信息。 是否执行？ 许多人在未思考的情况下发送回复。
 
   您可以使用受保护的用户添加内部和外部发件人电子邮件地址，防止模拟。 受 **用户模拟** 保护的发件人列表不同于策略应用于默认策略的所有 (收件人的列表; 特定收件人，如"策略设置"部分"[应用于"设置](#policy-settings)) 。
 
@@ -173,7 +177,7 @@ EOP 和 Microsoft Defender for Office 365 中的反网络钓鱼策略中提供�
 
   当您将内部或外部电子邮件地址添加到"用户保护"列表时，来自这些发件人的邮件将受模拟保护检查。 如果邮件发送到应用于默认策略的所有收件人的收件人，则检查 (是否模拟;**应用于自定义** 策略邮箱中的) 。 如果在发件人的电子邮件地址中检测到模拟，则用户模拟保护操作将应用于邮件 (对邮件执行哪些操作，是否显示模拟用户安全提示等) 。
 
-- **要保护** 的域：阻止在邮件发件人的域中 **模拟指定的域**。 例如，你拥有的所有域 (接受) 或特定 ([](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)或合作伙伴域) 。 此防止 **模拟** 的发件人域列表不同于策略应用于默认策略的所有 (收件人的收件人列表;特定收件人，如"策略设置"部分"[应用于"设置](#policy-settings)) 。
+- **添加要保护** 的域：阻止在邮件发件人的域中 **模拟指定的域**。 例如，你拥有的所有域 (接受) 或特定 ([](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)或合作伙伴域) 。 此防止 **模拟** 的发件人域列表不同于策略应用于默认策略的所有 (收件人的收件人列表;特定收件人，如"策略设置"部分"[应用于"设置](#policy-settings)) 。
 
   > [!NOTE]
   > 可以在所有防钓鱼策略中定义的受保护域的最大数量为 50 个。
@@ -182,16 +186,15 @@ EOP 和 Microsoft Defender for Office 365 中的反网络钓鱼策略中提供�
 
   当您将域添加到"域 **"以保护列表时**，来自这些域中发件人的邮件将接受模拟保护检查。 如果邮件发送到应用于默认策略的所有收件人的收件人，则检查 (是否模拟;**应用于自定义** 策略邮箱中的) 。 如果在发件人域中检测到模拟，则域的模拟保护操作将应用于邮件 (以及对邮件执行哪些操作、是否显示模拟的用户安全提示等) 。
 
-- **受保护的用户或域的操作**：选择要对包含针对策略中的受保护用户和受保护域的模拟尝试的入站邮件采取的操作。 您可以指定用于模拟受保护用户与模拟受保护域的不同操作：
+- **操作**：选择要对入站邮件采取的操作，这些入站邮件包含针对策略中受保护的用户和受保护域的模拟尝试。 您可以指定用于模拟受保护用户与模拟受保护域的不同操作：
 
   - **不应用任何操作**
 
   - **将邮件重定向到其他电子邮件地址**：将邮件发送给指定收件人，而不是目标收件人。
 
-  - **将邮件移动到"垃圾邮件"文件夹**：邮件被传递到邮箱并移动到"垃圾邮件"文件夹。 在Exchange Online中，如果对邮箱启用了垃圾邮件规则，则邮件将移动到"垃圾邮件"文件夹 (该邮件默认启用) 。 有关详细信息，请参阅 Configure [junk email settings on Exchange Online mailboxes in Microsoft 365](configure-junk-email-settings-on-exo-mailboxes.md)。
+  - **将邮件移动到收件人的"垃圾邮件"文件夹**：邮件被传递到邮箱并移动到"垃圾邮件"文件夹。 在Exchange Online中，如果对邮箱启用了垃圾邮件规则，则邮件将移动到"垃圾邮件"文件夹 (该邮件默认启用) 。 有关详细信息，请参阅 Configure [junk email settings on Exchange Online mailboxes in Microsoft 365](configure-junk-email-settings-on-exo-mailboxes.md)。
 
-    - **隔离邮件**：将邮件发送到隔离邮箱，而不是目标收件人。 有关隔离的信息，请参阅以下文章：
-
+  - **隔离邮件**：将邮件发送到隔离邮箱，而不是目标收件人。 有关隔离的信息，请参阅以下文章：
     - [隔离Microsoft 365](quarantine-email-messages.md)
     - [以管理员角色管理隔离的邮件和Microsoft 365](manage-quarantined-messages-and-files.md)
     - [在邮件中以用户模式查找并释放隔离Microsoft 365](find-and-release-quarantined-messages-as-a-user.md)
@@ -200,11 +203,10 @@ EOP 和 Microsoft Defender for Office 365 中的反网络钓鱼策略中提供�
 
   - **在邮件传递之前删除邮件**：以静默方式删除整个邮件，包括所有附件。
 
-- **安全提示**：启用或禁用以下模拟安全提示，这些提示将显示未通过模拟检查的邮件：
-
-  - **模拟用户**："来源"地址包含受保护的用户。
-  - **模拟域**："自"地址包含受保护的域。
-  - 异常 **字符**：发件人地址包含特殊字符集 (例如，数学符号和文本，或者大写和小写字母) 或域中的混合字符。
+- **打开模拟安全提示**：打开或关闭以下模拟安全提示，这些提示将显示未通过模拟检查的邮件：
+  - **为模拟用户显示提示**："自"地址包含受保护的用户。
+  - **显示模拟域的提示**："来自"地址包含受保护的域。
+  - 显示异常字符的提示：发件人地址包含异常字符集 (例如，数学符号和文本，或者大写和小写字母) 在受保护的发件人或域中。
 
   > [!IMPORTANT]
   >
@@ -222,12 +224,12 @@ EOP 和 Microsoft Defender for Office 365 中的反网络钓鱼策略中提供�
 
   - **不要应用任何操作**：请注意，此值与启用邮箱智能但关闭基于邮箱智能的 **模拟保护具有相同的结果**。
   - **将邮件重定向到其他电子邮件地址**
-  - **将邮件移动到"垃圾邮件"文件夹**
+  - **将邮件移动到收件人的"垃圾邮件"文件夹**
   - **隔离邮件**
   - **传递邮件，将其他地址添加到"Bcc"行**
   - **在邮件传递之前删除邮件**
 
-- **受信任的发件人和域**：模拟保护设置的例外。 策略不会将来自指定发件人和发件人域的邮件分类为基于模拟的攻击。 换句话说，对受保护的发件人、受保护的域或邮箱智能保护的操作不会应用于这些受信任的发件人或发件人域。 这些列表的最大限制为大约 1000 个条目。
+- **添加受信任的发件人和域**：模拟保护设置例外。 策略不会将来自指定发件人和发件人域的邮件分类为基于模拟的攻击。 换句话说，对受保护的发件人、受保护的域或邮箱智能保护的操作不会应用于这些受信任的发件人或发件人域。 这些列表的最大限制为大约 1000 个条目。
 
 ### <a name="advanced-phishing-thresholds-in-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 中的反网络钓鱼策略中的高级网络钓鱼Office 365
 

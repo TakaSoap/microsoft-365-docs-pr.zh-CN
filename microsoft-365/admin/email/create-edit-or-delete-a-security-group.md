@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 55c96b32-e086-4c9e-948b-a018b44510cb
 description: 了解如何创建、编辑或删除安全组。
-ms.openlocfilehash: 03e391727f9a61b1fc8e819e92d5a119017c38e0
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 8f76b5fa803ea43e53e89cf6479eb7572a2857c2
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51579334"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52537591"
 ---
 # <a name="create-edit-or-delete-a-security-group-in-the-microsoft-365-admin-center"></a>在管理中心内创建、编辑Microsoft 365安全组
 
@@ -49,8 +49,6 @@ ms.locfileid: "51579334"
 4. 按照步骤完成组的创建。 
  
 ### <a name="add-members-to-a-security-group"></a>向安全组添加成员
-
-::: moniker range="o365-worldwide"
     
 1. 在"组"页上 **选择安全组** 名称，在"成员 **"选项卡上**，选择"**查看所有和管理成员"。** 
     
@@ -58,65 +56,13 @@ ms.locfileid: "51579334"
     
     若要删除成员，请选择其名称旁边的 X。 
   
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. 在"组"页上 **选择安全组** 名称，**然后选择"成员**"旁边的"编辑 **"。** 
-    
-2. 在组窗格中，选择"**添加** 成员"，然后从列表中选择人员，或在"搜索"框中键入要添加的人的姓名，然后选择"保存 **"。**
-    
-    若要删除成员，请选择其名称旁边的 X。 
-  
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-
-1. 在"组"页上 **选择安全组** 名称，**然后选择"成员**"旁边的"编辑 **"。** 
-    
-2. 在组窗格中，选择"**添加** 成员"，然后从列表中选择人员，或在"搜索"框中键入要添加的人的姓名，然后选择"保存 **"。**
-    
-    若要删除成员，请选择其名称旁边的 X。
-
-::: moniker-end
-
 ### <a name="edit-a-security-group"></a>编辑安全组
-
-::: moniker range="o365-worldwide"
 
 1. 在管理中心，转到组 \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">组</a>页面。
   
 2. 在 **"组** "页上，选择组的名称。 
     
 3. 在设置窗格中，选择"常规 **"** 选项卡或" **成员** "选项卡以编辑组详细信息或成员。
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. 在管理 <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">中心</a>中，转到组 \> **组** 页面。  
-  
-2. 在 **"组** "页上，选择组的名称。 
-    
-3. 在安全组窗格中，选择"名称"或"成员"选项卡旁边的"编辑"以编辑组详细信息或成员。 
-    
-4. 进行更改后，选择"保存"" \> **关闭"。**
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-1. 在管理 <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">中心</a>中，转到组 \> **组** 页面。
-  
-2. 在 **"组** "页上，选择组的名称。 
-    
-3. 在安全组窗格中，选择"名称"或"成员"选项卡旁边的"编辑"以编辑组详细信息或成员。 
-    
-4. 进行更改后，选择"保存"" > **关闭"。**
-
-::: moniker-end
-
 
 ### <a name="delete-a-security-group"></a>删除安全组
 

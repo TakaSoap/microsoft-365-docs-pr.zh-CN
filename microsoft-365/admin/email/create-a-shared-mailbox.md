@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: 871a246d-3acd-4bba-948e-5de8be0544c9
 description: 创建共享邮箱，让企业中的多名人员分担查看和答复发送到同一地址的电子邮件的责任。
-ms.openlocfilehash: 004473b329b14be9287f249b1d640c3b0803412a
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 808b98b45c3d6f5ba3cd9847ba2aa843ff53d106
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50915874"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52537603"
 ---
 # <a name="create-a-shared-mailbox"></a>创建共享邮箱 
 
@@ -38,7 +38,7 @@ ms.locfileid: "50915874"
 
 创建共享邮箱很容易，通过共享邮箱，多位人员可以从一个公用电子邮件地址（如 info@contoso.com）监控和发送电子邮件。当群组中的某个人员答复发送到共享邮箱的邮件时，系统显示电子邮件来自共享邮箱，而不是单个用户。
 
-共享邮箱包含共享日历。 许多小型企业喜欢使用共享日历，方便每个人在其中输入约会。 例如，如果有 3 个人在进行客户访问工作，则他们都可以使用共享日历来输入约会。 这是使每个人都知道他人位置的简便方法。
+共享邮箱包含共享日历。许多小型企业喜欢使用共享日历，方便每个人在其中输入约会。例如，如果有 3 个人在进行客户访问工作，那么他们都可以使用共享日历来输入约会。这是使每个人都知道他人位置的简便方法。
 
 创建共享邮箱之前，请务必阅读[关于共享邮箱](about-shared-mailboxes.md)了解详细信息。
 
@@ -198,14 +198,14 @@ ms.locfileid: "50915874"
 
 3. 共享邮箱的所有成员都可以在该日历上创建、查看和管理约会，就像处理自己的个人约会一样。 共享邮箱的所有成员都可以看到他们对共享日历所做的更改。
 
-## <a name="related-articles"></a>相关文章
+## <a name="related-content"></a>相关内容
 
-[关于共享邮箱](about-shared-mailboxes.md)
+[关于共享邮箱](about-shared-mailboxes.md)（文章）
 
-[配置共享邮箱](configure-a-shared-mailbox.md)
+[配置共享邮箱](configure-a-shared-mailbox.md)（文章）
 
-[将用户邮箱转换为共享邮箱](convert-user-mailbox-to-shared-mailbox.md)
+[将用户邮箱转换为共享邮箱](convert-user-mailbox-to-shared-mailbox.md)（文章）
 
-[从共享邮箱删除许可证](remove-license-from-shared-mailbox.md)
+[从共享邮箱删除许可证](remove-license-from-shared-mailbox.md)（文章）
 
-[解决共享邮箱问题](resolve-issues-with-shared-mailboxes.md)
+[解决共享邮箱问题](resolve-issues-with-shared-mailboxes.md)（文章）

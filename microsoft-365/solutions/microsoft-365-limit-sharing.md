@@ -18,13 +18,14 @@ search.appverid:
 f1.keywords: NOCSH
 ms.custom: ''
 localization_priority: Priority
+recommendations: false
 description: 了解在 Microsoft 365 中用于限制或禁用共享的选项。
-ms.openlocfilehash: 46cef1aac6d3387366a5e8ce9f9c1129f6c83e61
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: f237df883bb401342a3a5c93432beeb5028cfce6
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50920200"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52539187"
 ---
 # <a name="limit-sharing-in-microsoft-365"></a>限制 Microsoft 365 中的共享
 
@@ -211,7 +212,7 @@ Set-SPOSite -Identity https://contoso.sharepoint.com -DisableCompanyWideSharingL
 
 Azure Active Directory 条件访问提供的选项可根据网络位置、设备运行状况、登录风险和其他因素限制或防止与人员共享。 查看[什么是条件访问？](/azure/active-directory/conditional-access/overview)
 
-SharePoint 提供与 Azure AD 条件访问的直接集成，适用于未托管的设备和网络位置。 有关详细信息，请参阅以下参考：
+SharePoint 提供与 Azure AD 条件访问的直接集成，适用于未托管的设备和网络位置。有关详细信息，请参阅以下参考：
 
 - [控制来自非托管设备的访问](/sharepoint/control-access-from-unmanaged-devices)
 - [根据网络位置控制对 SharePoint 和 OneDrive 数据的访问](/sharepoint/control-access-based-on-network-location)

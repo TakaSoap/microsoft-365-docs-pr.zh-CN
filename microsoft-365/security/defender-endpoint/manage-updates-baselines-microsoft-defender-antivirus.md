@@ -16,13 +16,13 @@ ms.custom: nextgen
 ms.reviewer: pahuijbr
 manager: dansimp
 ms.technology: mde
-ms.date: 05/10/2021
-ms.openlocfilehash: 5b599e9d5a5c3d098033af1f1df96ee9f26025ee
-ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
+ms.date: 05/13/2021
+ms.openlocfilehash: 17a76b39b51293de82cf9b3e5f0e323ec3d28844
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "52312008"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538035"
 ---
 # <a name="manage-microsoft-defender-antivirus-updates-and-apply-baselines"></a>管理Microsoft Defender 防病毒更新并应用基线
 
@@ -83,11 +83,11 @@ Microsoft Defender 防病毒需要每月更新 [ (KB4052623](https://support.mic
 - 集成改进 (云，Microsoft 365 Defender) 。
 <br/>
 <details>
-<summary> 2021 年 4 月 (平台：4.18.2104.9 |引擎：1.1.18100.5) </summary>
+<summary> 2021 年 4 月 (平台：4.18.2104.14 |引擎：1.1.18100.5) </summary>
 
 &ensp;安全智能更新版本 **：1.337.2.0**  
 &ensp;发布时间 **：2021 年 4 月 1 日**  
-&ensp;平台 **：4.18.2104.9**  
+&ensp;平台 **：4.18.2104.14**  
 &ensp;引擎 **：1.1.18100.5**  
 &ensp;支持阶段： **安全和关键更新**
     

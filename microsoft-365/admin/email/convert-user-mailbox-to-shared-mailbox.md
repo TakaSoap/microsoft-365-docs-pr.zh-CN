@@ -19,13 +19,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 2e122487-e1f5-4f26-ba41-5689249d93ba
-description: '了解如何将专用邮箱转换为多个用户可以访问的共享邮箱。 '
-ms.openlocfilehash: d5b33731908d2d555a8dd12d5d7fbbd462bd83ad
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+description: '了解如何将专用邮箱转换为多个人员（而不是一个人）可以访问的共享邮箱。 '
+ms.openlocfilehash: 73e2bad40037e1343f4e08c07ca6b26df16b1a30
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50915862"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52537615"
 ---
 # <a name="convert-a-user-mailbox-to-a-shared-mailbox"></a>将用户邮箱转换为共享邮箱
 
@@ -102,14 +102,14 @@ ms.locfileid: "50915862"
 > [!NOTE]
 > 如果您是组织管理或收件人管理角色组的成员，可以使用 Exchange 命令行管理程序将用户邮箱更改为本地共享邮箱。 例如，`Set-Mailbox -Identity mailbox1@contoso.com -Type Shared`。
 
-## <a name="related-articles"></a>相关文章
+## <a name="related-content"></a>相关内容
 
-[关于共享邮箱](about-shared-mailboxes.md)
+[关于共享邮箱 (](about-shared-mailboxes.md) 文章) 
 
-[创建共享邮箱](create-a-shared-mailbox.md)
+[创建共享邮箱 (](create-a-shared-mailbox.md) 文章) 
 
-[配置共享邮箱](configure-a-shared-mailbox.md)
+[配置共享邮箱 (](configure-a-shared-mailbox.md) 文章) 
 
-[从共享邮箱删除许可证](remove-license-from-shared-mailbox.md)
+[从共享邮箱中删除许可证 (](remove-license-from-shared-mailbox.md) 文章) 
 
-[解决共享邮箱问题](resolve-issues-with-shared-mailboxes.md)
+[解决共享邮箱问题 (](resolve-issues-with-shared-mailboxes.md) 本文) 

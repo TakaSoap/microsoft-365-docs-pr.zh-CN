@@ -15,12 +15,12 @@ ms.collection:
 description: 管理员可以了解如何创建、修改和删除 Microsoft Defender for Office 365 组织提供的高级防钓鱼Office 365。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1c8d61aee9afb332a8426890560ad221a9c87c7d
-ms.sourcegitcommit: 8685b0f7d53c99577fa65144ab60295dfa60f46f
+ms.openlocfilehash: 3660b9574f4faf4ee9c0602ac23b36f8634650dc
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51218779"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52537903"
 ---
 # <a name="configure-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>在 Microsoft Defender for Office 365
 
@@ -61,7 +61,7 @@ Microsoft Defender for [Office 365](defender-for-office-365.md)中的反网络�
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>开始前，有必要了解什么？
 
-- 安全与合规中心的打开网址为 <https://protection.office.com/>。 若要直接转到 **ATP 防钓鱼页面** ，请使用 <https://protection.office.com/antiphishing> 。
+- 安全与合规中心的打开网址为 <https://protection.office.com/>。 若要直接转到" **防钓鱼"页面** ，请使用 <https://protection.office.com/antiphishing> 。
 
 - 若要连接到 Exchange Online PowerShell，请参阅[连接到 Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)。
 
@@ -89,7 +89,7 @@ Microsoft Defender for [Office 365](defender-for-office-365.md)中的反网络�
 
 创建防钓鱼策略时，只能指定策略名称、说明和收件人筛选器，以标识策略的适用者。 创建策略后，可以修改该策略以更改或查看默认的防钓鱼设置。
 
-1. 在安全&中心，转到威胁 **管理** \> **策略** \> **ATP 防钓鱼**。
+1. 在安全&合规中心，转到"**威胁管理** \> **策略** \> **""防钓鱼"。**
 
 2. 在"**防钓鱼"页上，** 单击"创建 **"。**
 
@@ -137,7 +137,7 @@ Microsoft Defender for [Office 365](defender-for-office-365.md)中的反网络�
 
 使用以下过程可修改防钓鱼策略：您创建的新策略或已自定义的现有策略。
 
-1. 如果尚未开始，请打开安全与合规&， **然后转到威胁** 管理 \> **策略** \> **ATP 防钓鱼**。
+1. 如果尚未开始，请打开安全与合规&，然后转到威胁管理 \> **策略** \> **防钓鱼**。
 
 2. 选择要修改的自定义防钓鱼策略。 如果已选择，请取消选择它，然后再次选择它。
 
@@ -156,9 +156,9 @@ Microsoft Defender for [Office 365](defender-for-office-365.md)中的反网络�
 
    完成后，单击任意 **页面上** 的"保存"。
 
-5. **模拟**：单击 **"** 编辑"修改策略中的受保护的发件人和受保护的域。 这些设置是策略的一个条件，用于标识欺骗性发件人，以单独 (或按域) 入站邮件的发件人地址查找邮件。 有关详细信息，请参阅 Microsoft Defender for Office 365 中的防钓鱼[策略中的模拟Office 365。](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)
+5. **模拟**：单击 **"** 编辑"修改策略中的受保护发件人和受保护的发件人域。 这些设置是策略的一个条件，用于标识要单独或按 (发件人地址中的域) 查找邮件的特定发件人。 有关详细信息，请参阅 Microsoft Defender for Office 365 中的防钓鱼[策略中的模拟Office 365。](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)
 
-   - **添加要保护的用户**：默认值为 **Off**。 若要将其打开，将切换开关滑动到 **"开**"，然后单击出现的 **"添加用户** "按钮。
+   - **添加要保护的用户**：默认值为 **Off** ![ Toggle Off ](../../media/scc-toggle-off.png) 。 若要将其打开，将切换开关滑动到开 ![ 切换开 ](../../media/scc-toggle-on.png) ，然后单击出现的 **添加** 用户按钮。
 
      在出现的 **"添加** 用户"飞出中，配置以下值：
 
@@ -182,43 +182,48 @@ Microsoft Defender for [Office 365](defender-for-office-365.md)中的反网络�
 
    - **添加要保护的域**：配置以下一个或两个设置：
 
-     - **自动包含我拥有的域**：默认值为 **Off**。 若要将其打开，将切换开关滑动到 **开**。
-     - **包含自定义域**：默认值为 **Off**。 若要将其打开，将开关滑动到 **"** 开"，在"添加域"框中，输入域名 (例如 contoso.com) ，按 Enter，然后根据需要重复。
+     - **自动包含我拥有的域**：默认值为 **Off** ![ Toggle Off ](../../media/scc-toggle-off.png) 。 若要将其打开，将切换开关滑动到 **开** ![ 切换开 ](../../media/scc-toggle-on.png) 。
+
+       若要查看你拥有的域，请选择"**查看我拥有的域"。**
+
+     - **包含自定义域**：默认值为 **Off** ![ Toggle Off ](../../media/scc-toggle-off.png) 。 若要将其打开，将切换开关滑动到"打开""打开"，在"添加域"框中，输入域名 (例如，contoso.com) ，按 ![ ](../../media/scc-toggle-on.png) Enter，然后根据需要重复。 
 
      > [!NOTE]
      > 在所有防钓鱼策略中最多可以有 50 个域。
 
    - **操作**：单击 **"编辑"**
 
-     - **如果电子邮件由** 模拟用户发送：为欺骗性发件人是添加要保护的用户中指定的受保护用户之一的邮件配置以下操作 **之一**：
+     - **如果电子邮件由模拟用户发送**：为发件人是添加要保护的用户中指定的受保护用户之一的邮件配置以下操作 **之一**：
 
        - **不应用任何操作**
        - **将邮件重定向到其他电子邮件地址**
-       - **将邮件移动到"垃圾邮件"文件夹**
+       - **将邮件移动到收件人的"垃圾邮件"文件夹**
        - **隔离邮件**
        - **传递邮件，将其他地址添加到"Bcc"行**
        - **在邮件传递之前删除邮件**
 
-     - **如果电子邮件是由** 模拟域发送的：为欺骗性发件人位于你在添加要保护的域中指定的其中一个受保护的域的邮件配置以下操作 **之一**：
+     - **如果电子邮件由** 模拟域发送：为发件人的域位于添加要保护的域中指定的其中一个受保护的域的邮件配置以下操作 **之一**：
 
        - **不应用任何操作**
        - **将邮件重定向到其他电子邮件地址**
-       - **将邮件移动到"垃圾邮件"文件夹**
+       - **将邮件移动到收件人的"垃圾邮件"文件夹**
        - **隔离邮件**
        - **传递邮件，将其他地址添加到"Bcc"行**
        - **在邮件传递之前删除邮件**
 
    - 单击 **"打开模拟安全提示"** 并配置以下任一设置：
 
-     - **显示模拟用户的提示**：默认值为 **Off**。 若要将其打开，将切换开关滑动到 **开**。
-     - **显示模拟域的提示**：默认值为 **Off**。 若要将其打开，将切换开关滑动到 **开**。
-     - **显示异常字符的提示**：默认值为 **Off**。 若要将其打开，将切换开关滑动到 **开**。
+     - **为模拟用户显示提示**
+     - **显示模拟域的提示**
+     - **显示异常字符的提示**
+
+     所有提示的默认值为 **Off** ![ Toggle Off ](../../media/scc-toggle-off.png) 。 若要打开其中任何一个，将开关滑动到 **开**[切换开](../../media/scc-toggle-on.png)。
 
      完成后，单击“**保存**”。
 
    - **邮箱智能**：
 
-     - **启用邮箱智能？：** 默认值为 **On。** 若要关闭它，将切换开关滑动到 **关闭**。
+     - **启用邮箱智能？：** 默认值为 **On** [Toggle On](../../media/scc-toggle-on.png)。 若要将其关闭，将切换开关滑动到 **关闭** ![ 切换关闭 ](../../media/scc-toggle-off.png) 。
 
      - **启用基于邮箱智能的模拟保护？：** 此设置仅在启用 **邮箱智能时可用？** 为 **On**。 打开此设置可指定对邮件执行的操作，以从邮箱智能结果进行模拟检测。
 
@@ -226,7 +231,7 @@ Microsoft Defender for [Office 365](defender-for-office-365.md)中的反网络�
 
        - **不要应用任何操作**：请注意，此值与启用邮箱智能具有相同的结果 **？但关闭** 启用基于邮箱 **智能的模拟保护？。**
        - **将邮件重定向到其他电子邮件地址**
-       - **将邮件移动到"垃圾邮件"文件夹**
+       - **将邮件移动到收件人的"垃圾邮件"文件夹**
        - **隔离邮件**
        - **传递邮件，将其他地址添加到"Bcc"行**
        - **在邮件传递之前删除邮件**
@@ -253,18 +258,20 @@ Microsoft Defender for [Office 365](defender-for-office-365.md)中的反网络�
 
    完成后，单击任意 **页面上** 的"保存"。
 
-6. **欺骗**：单击"编辑"打开或关闭欺骗智能，在 Outlook 中打开或关闭未经身份验证的发件人标识，并配置操作以应用于来自被阻止的欺骗发件人的邮件。 有关详细信息，请参阅反网络钓鱼 [策略中的欺骗设置](set-up-anti-phishing-policies.md#spoof-settings)。
+6. **欺骗**：单击"编辑"打开或关闭欺骗智能，在 Outlook 中打开或关闭未经身份验证的发件人标识，并配置操作以应用于来自被阻止的欺骗发件人的邮件。 有关这些设置详细信息，请参阅反网络钓鱼 [策略中的欺骗设置](set-up-anti-phishing-policies.md#spoof-settings)。
 
    请注意，EOP 中的防钓鱼策略中也提供了这些相同的设置。
 
-   - **欺骗筛选器设置**：默认值为 **"开**"，建议保持打开状态。 若要关闭它，将切换开关滑动到 **关闭**。 有关详细信息，请参阅在 [EOP 中配置欺骗智能](learn-about-spoof-intelligence.md)。
+   - **欺骗筛选器设置**：使用启用 **欺骗智能？** 设置打开或关闭欺骗智能。 默认值为 **On，** 建议保持打开状态。 若要将其关闭，将切换开关滑动到 **关闭** ![ 切换关闭 ](../../media/scc-toggle-off.png) 。
 
      > [!NOTE]
-     > 如果你的 MX 记录没有指向任何位置，你无需禁用反欺骗Microsoft 365;改为启用连接器的增强筛选。 有关说明，请参阅[增强的连接器筛选Exchange Online。](/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors)
+     > 如果你的 MX 记录没有指向反欺骗保护，则无需关闭Microsoft 365;改为启用连接器的增强筛选。 有关说明，请参阅[增强的连接器筛选Exchange Online。](/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors)
 
-   - **启用未经身份验证的发件人功能**：默认值为 **On**。 若要关闭它，将切换开关滑动到 **关闭**。
+   - **未经身份验证的发件人设置**：可以配置以下设置：
+     - 启用未经身份验证的发件人问号 **(？) 符号？：** 如果邮件未通过 SPF 或 DKIM 检查且邮件未通过 DMARC 或复合身份验证，则向 Outlook 的发件人框中的发件人照片添加问 [号。](email-validation-and-authentication.md#composite-authentication) 默认值为“打开”。 若要将其关闭，将切换开关滑动到 **关闭** ![ 切换关闭 ](../../media/scc-toggle-off.png) 。
+     - **启用"via"标记？：** 如果"收件人"框中的电子邮件地址不同于 DKIM 签名或 **MAIL FROM** 地址中的域 (chris@contoso.com 请通过 fabrikam.com) 添加 via 标记。 默认值为“打开”。 若要将其关闭，将切换开关滑动到 **关闭** ![ 切换关闭 ](../../media/scc-toggle-off.png) 。
 
-   - **操作**：指定对未通过欺骗智能的邮件采取的操作：
+   - **操作**：指定对来自被阻止的欺骗发件人的邮件采取的操作：
 
      **如果电子邮件是由不允许欺骗你的域的人发送的**：
 
@@ -275,8 +282,9 @@ Microsoft Defender for [Office 365](defender-for-office-365.md)中的反网络�
 
      - 可以单击每个 **部分** 中的"编辑"跳转回相关页面。
      - 您可以直接在此页面上切换以下设置 **：打开****或关闭**：
-       - **启用反应答保护**
-       - **启用未经身份验证的发件人功能**
+       - **欺骗筛选器设置**
+       - **未经身份验证的发件人设置**
+       - **Actions**
 
    完成后，单击任意 **页面上** 的"保存"。
 
@@ -299,7 +307,7 @@ Microsoft Defender for [Office 365](defender-for-office-365.md)中的反网络�
 
 Microsoft Defender for Office 365 中的默认防钓鱼策略名为"Office365 反钓鱼默认策略"，它不会显示在策略列表中。 若要修改默认的防钓鱼策略，请执行以下步骤：
 
-1. 在安全&中心，转到威胁 **管理** \> **策略** \> **ATP 防钓鱼**。
+1. 在安全&合规中心，转到"**威胁管理** \> **策略** \> **""防钓鱼"。**
 
 2. 在"**反网络钓鱼"页上**，单击"**默认策略"。**
 
@@ -319,13 +327,13 @@ Microsoft Defender for Office 365 中的默认防钓鱼策略名为"Office365 �
 
 ### <a name="enable-or-disable-custom-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>在 Microsoft Defender 中为用户启用或禁用自定义防钓鱼Office 365
 
-1. 在安全&中心，转到威胁 **管理** \> **策略** \> **ATP 防钓鱼**。
+1. 在安全&合规中心，转到"**威胁管理** \> **策略** \> **""防钓鱼"。**
 
 2. 请注意"状态" **列中** 的值：
 
-   - 将开关滑动到 **"关闭"** 以禁用该策略。
+   - 将切换开关滑动 **到"关闭** ![ ""关闭 ](../../media/scc-toggle-off.png) "以禁用该策略。
 
-   - 将切换开关滑动 **到"打开** "以启用策略。
+   - 将切换开关滑动 **到"打开** ![ "" ](../../media/scc-toggle-on.png) 打开"以启用策略。
 
 无法禁用默认的防钓鱼策略。
 
@@ -341,7 +349,7 @@ Microsoft Defender for Office 365 中的默认防钓鱼策略名为"Office365 �
 
 若要更改策略的优先级，请单击策略属性中的"增加优先级"或"减少优先级 (你无法直接修改安全与合规中心&优先级) 。  更改策略的优先级仅在有多个策略时有意义。
 
-1. 在安全&中心，转到威胁 **管理** \> **策略** \> **ATP 防钓鱼**。
+1. 在安全&合规中心，转到"**威胁管理** \> **策略** \> **""防钓鱼"。**
 
 2. 选择要修改的策略。 如果已选择，请取消选择它，然后再次选择它。
 
@@ -359,7 +367,7 @@ Microsoft Defender for Office 365 中的默认防钓鱼策略名为"Office365 �
 
 ## <a name="use-the-security--compliance-center-to-view-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>使用安全&中心查看 Microsoft Defender for Office 365
 
-1. 在安全&中心，转到威胁 **管理** \> **策略** \> **ATP 防钓鱼**。
+1. 在安全&中心，转到"**威胁** 管理策略 \>  \> **""防钓鱼"。**
 
 2. 采取以下步骤之一：
 
@@ -371,7 +379,7 @@ Microsoft Defender for Office 365 中的默认防钓鱼策略名为"Office365 �
 
 ## <a name="use-the-security--compliance-center-to-remove-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>使用安全&合规中心删除 Microsoft Defender for Office 365
 
-1. 在安全&中心，转到威胁 **管理** \> **策略** \> **ATP 防钓鱼**。
+1. 在安全&合规中心，转到"**威胁管理** \> **策略** \> **""防钓鱼"。**
 
 2. 选择要删除的策略。 如果已选择，请取消选择它，然后再次选择它。
 
@@ -621,7 +629,7 @@ Remove-AntiPhishRule -Identity "Marketing Department"
 
 若要验证您是否已成功在 Microsoft Defender for Office 365配置防钓鱼策略，请执行以下步骤之一：
 
-- 在安全&中心，转到威胁 **管理** \> **策略** \> **ATP 防钓鱼**。 验证策略列表、 **策略的 Status** 值及其 **Priority** 值。 若要查看更多详细信息，请执行下列任一步骤：
+- 在安全&合规中心，转到"**威胁管理** \> **策略** \> **""防钓鱼"。** 验证策略列表、 **策略的 Status** 值及其 **Priority** 值。 若要查看更多详细信息，请执行下列任一步骤：
 
   - 从列表中选择策略，并查看该飞出内容中的详细信息。
   - 单击 **"默认** 策略"，在飞出视图中查看详细信息。

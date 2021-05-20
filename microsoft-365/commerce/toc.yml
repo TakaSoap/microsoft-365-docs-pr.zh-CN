@@ -68,7 +68,7 @@
       href: billing-and-payments/psd2.md
 - name: 计费帐户
   items:
-    - name: 管理计费帐户
+    - name: 了解计费帐户
       href: manage-billing-accounts.md
     - name: 将租户与你的计费帐户相关联
       href: /microsoft-store/manage-mpsa-software-microsoft-store-for-business

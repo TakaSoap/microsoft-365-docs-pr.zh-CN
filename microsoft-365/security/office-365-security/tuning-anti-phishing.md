@@ -16,12 +16,12 @@ ms.collection:
 description: 管理员可以了解钓鱼邮件在电子邮件中Microsoft 365的原因和方式，以及在将来如何防止更多网络钓鱼邮件。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1772a0329825b8808352892c8d99f0d7680112f5
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 8d8f3f93b3fe1643467a12f90123b839addad2ed
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51203731"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52537843"
 ---
 # <a name="tune-anti-phishing-protection"></a>优化防钓鱼保护
 
@@ -64,9 +64,9 @@ ms.locfileid: "51203731"
 
 - 对于错误地隔离的邮件，或允许通过的邮件，我们建议你在威胁资源管理器和实时检测中搜索这些 [邮件](threat-explorer.md)。 可以按发件人、收件人或邮件 ID 进行搜索。 找到邮件后，单击主题转到详细信息。 对于隔离的邮件，查看"检测技术"是什么，以便您可以使用适当的方法进行覆盖。 对于允许的邮件，查看允许邮件的策略。
 
-- 欺骗邮件在 Defender for Office 365 中标记为网络钓鱼。 有时欺骗是恶意的，有时用户不希望隔离它。 若要尽可能减少对用户的影响，请定期查看欺骗 [智能报告](learn-about-spoof-intelligence.md)。 查看并进行必要的替代后，你可以确信地将欺骗智能配置为隔离可疑邮件，[](set-up-anti-phishing-policies.md#spoof-settings)而不是将它们发送到用户的"垃圾邮件"文件夹。
+- 来自欺骗 (发件人的电子邮件与邮件来源不匹配) 在 Defender for Office 365 中分类为网络钓鱼。 有时欺骗是恶意的，有时用户不希望隔离来自特定欺骗发件人的邮件。 若要最大程度地降低对用户的影响，请定期查看[](learn-about-spoof-intelligence.md)欺骗智能见解、租户允许[/](tenant-allow-block-list.md)阻止列表中的"欺骗"选项卡和欺骗[检测报告](view-email-security-reports.md#spoof-detections-report)。 查看允许和阻止的欺骗发件人并进行必要的替代后，你可以确信地将反网络钓鱼策略中的欺骗智能配置为隔离可疑[](set-up-anti-phishing-policies.md#spoof-settings)邮件，而不是将它们发送到用户的"垃圾邮件"文件夹。
 
-- 您可以对域中或用户 (模拟重复上述) 。 模拟报告位于威胁 **管理仪表板** \>  \> **见解下**。
+- 你可以对 Microsoft Defender for (中的模拟域或) 重复上述Office 365。 模拟报告位于威胁 **管理仪表板** \>  \> **见解下**。
 
 - 定期检查威胁 [防护状态报告](view-reports-for-mdo.md#threat-protection-status-report)。
 
@@ -76,7 +76,7 @@ ms.locfileid: "51203731"
 
   - 验证 SPF 记录是否 _标识_ 域中发件人的所有电子邮件 (不要忘记第三方服务！) 。
 
-  - 使用硬 (所有) ，以确保未经授权的发件人被配置为拒绝的电子邮件 \- 系统拒绝。 您可以使用 [欺骗智能](learn-about-spoof-intelligence.md) 来帮助识别正在使用你的域的发件人，以便可以在 SPF 记录中包括授权的第三方发件人。
+  - 使用硬 (所有) ，以确保未经授权的发件人被配置为拒绝的电子邮件 \- 系统拒绝。 您可以使用欺骗 [智能见解](learn-about-spoof-intelligence.md) 来帮助识别正在使用你的域的发件人，以便可以在 SPF 记录中包括授权的第三方发件人。
 
   有关配置说明，请参阅：
 

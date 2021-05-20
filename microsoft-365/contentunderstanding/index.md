@@ -1,7 +1,7 @@
 ---
 title: Microsoft SharePoint Syntex 简介
-ms.author: efrene
-author: efrene
+ms.author: chucked
+author: chuckedmonson
 manager: pamgreen
 ms.reviewer: ssquires, toresing
 audience: admin
@@ -13,16 +13,16 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: 了解如何查找 Microsoft SharePoint Syntex 资源。
-ms.openlocfilehash: 4282da5ca1027eaf041241e90011ead8f2942985
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 350dd1a526b56525f0aca7a167841e3a77833533
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50905724"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538071"
 ---
 # <a name="introduction-to-microsoft-sharepoint-syntex"></a>Microsoft SharePoint Syntex 简介
 
-Microsoft SharePoint Syntex 是一项 Office 365 服务，有助于组织：
+Microsoft SharePoint Syntex 是一项 Microsoft 365 服务，可帮助组织：
 
 - 使用先进的 AI 和机器教学来丰富人类体验
 - 自动化内容处理

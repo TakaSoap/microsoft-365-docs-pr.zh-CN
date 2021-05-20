@@ -15,12 +15,12 @@ appliesto:
 - Microsoft 365 Defender
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 202ebc8b79368c8d41fd3727b67359ddcb8a08fa
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: a59b24cd29ab8bf3b9b08c7818813a7ab89f7ce2
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51203853"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52537879"
 ---
 # <a name="remediate-malicious-email-delivered-in-office-365"></a>修正邮件中传递的恶意Office 365
 
@@ -32,7 +32,7 @@ ms.locfileid: "51203853"
 修正意味着对威胁采取规定操作。 发送到组织的恶意电子邮件可以通过系统、零时差自动清除 (ZAP) 或安全团队通过修正操作（如移动到收件箱、移动到垃圾邮件、移动到已删除项目、软删除或硬删除）进行 *清理。*   Microsoft Defender for Office 365 P2/E5 使安全团队可以通过手动和自动调查来修正电子邮件和协作功能中的威胁。
 
 > [!NOTE]
-> 若要修正恶意电子邮件，安全团队需要 *为其* 分配搜索和清除角色。 角色分配通过安全与合规中心的权限完成。
+> 若要修正恶意电子邮件，安全团队需要 *为其* 分配搜索和清除角色。 角色分配通过安全与 [合规中心&权限完成](permissions-in-the-security-and-compliance-center.md)。
 
 ## <a name="what-you-need-to-know-before-you-begin"></a>开始之前您需要了解哪些信息
 

@@ -20,14 +20,14 @@ ms.collection:
 - m365solution-scenario
 ms.topic: article
 ms.custom: migrationguides
-ms.date: 03/03/2021
+ms.date: 05/14/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
-ms.openlocfilehash: 0145f48a5bcf53cd06c70b18e9c48aa6e5e5c06c
-ms.sourcegitcommit: 68383240ef7a673d5f28e2ecfab9f105bf1d8c8f
+ms.openlocfilehash: 6fb6f6ccb6b30804788a147ab2db425a88998131
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "52327582"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538011"
 ---
 # <a name="migrate-from-mcafee---phase-2-set-up-microsoft-defender-for-endpoint"></a>从 McAfee 迁移 - 第 2 阶段：为终结点设置 Microsoft Defender
 
@@ -39,29 +39,36 @@ ms.locfileid: "52327582"
 |--|--|--|
 ||*你在这里！* | |
 
-**欢迎使用从 McAfee Endpoint Security ([McAfee) 迁移到 Microsoft Defender for Endpoint 的安装阶段](mcafee-to-microsoft-defender-migration.md#the-migration-process)**。 此阶段包括以下步骤：
-1. [启用 Microsoft Defender 防病毒并确认它处于被动模式](#enable-microsoft-defender-antivirus-and-confirm-its-in-passive-mode)。
-2. [获取 Microsoft Defender 防病毒的更新](#get-updates-for-microsoft-defender-antivirus)。
+**欢迎使用从 [McAfee](mcafee-to-microsoft-defender-migration.md#the-migration-process)Endpoint Security** (McAfee) Defender for Endpoint 的安装阶段。 此阶段包括以下步骤：
+
+1. [在终结点上Microsoft Defender 防病毒或启用安全配置](#reinstall-or-enable-microsoft-defender-antivirus-on-your-endpoints)。
+
+2. [为终结点配置 Defender。](#configure-defender-for-endpoint)
+
 3. [将 Microsoft Defender for Endpoint 添加到 McAfee 的排除列表](#add-microsoft-defender-for-endpoint-to-the-exclusion-list-for-mcafee)。
-4. [将 McAfee 添加到 Microsoft Defender 防病毒的排除列表](#add-mcafee-to-the-exclusion-list-for-microsoft-defender-antivirus)。
-5. [将 McAfee 添加到 Microsoft Defender for Endpoint 的排除列表](#add-mcafee-to-the-exclusion-list-for-microsoft-defender-for-endpoint)。
-6. [设置设备组、设备集合和组织单位](#set-up-your-device-groups-device-collections-and-organizational-units)。
-7. [配置反恶意软件策略和实时保护](#configure-antimalware-policies-and-real-time-protection)。
 
-## <a name="enable-microsoft-defender-antivirus-and-confirm-its-in-passive-mode"></a>启用 Microsoft Defender 防病毒并确认它处于被动模式
+4. [将 McAfee 添加到列表的排除Microsoft Defender 防病毒。](#add-mcafee-to-the-exclusion-list-for-microsoft-defender-antivirus)
 
-在某些版本的 Windows（如 Windows Server）上，安装 McAfee 解决方案时，Microsoft Defender 防病毒可能已被卸载或禁用。 这是因为安装第三方防病毒产品（如 McAfee）时，Microsoft Defender 防病毒不会进入被动或禁用模式。  (若要了解有关此的详细信息，请参阅 Microsoft [Defender 防病毒兼容性](microsoft-defender-antivirus-compatibility.md).) 
+5. [设置设备组、设备集合和组织单位](#set-up-your-device-groups-device-collections-and-organizational-units)。
+
+6. [配置反恶意软件策略和实时保护](#configure-antimalware-policies-and-real-time-protection)。
+
+## <a name="reinstall-or-enable-microsoft-defender-antivirus-on-your-endpoints"></a>在终结点上Microsoft Defender 防病毒或启用安全配置
+
+在某些版本的 Windows，Microsoft Defender 防病毒安装非 Microsoft 防病毒/反恶意软件解决方案时，可能会卸载或禁用此软件。 有关详细信息，请参阅兼容性[Microsoft Defender 防病毒兼容性](microsoft-defender-antivirus-compatibility.md)。
+
+在Windows客户端上，安装非 Microsoft 防病毒/反恶意软件解决方案时，Microsoft Defender 防病毒将自动禁用，直到这些设备载入 Defender for Endpoint。 当客户端终结点载入 Defender for Endpoint 时，Microsoft Defender 防病毒进入被动模式，直到卸载非 Microsoft 防病毒解决方案。 Microsoft Defender 防病毒仍应安装，但在迁移过程的此时可能处于禁用状态。 除非Microsoft Defender 防病毒，否则无需对客户端执行任何Windows操作。
+
+在Windows服务器上，安装非 Microsoft 防病毒/反恶意软件时，Microsoft Defender 防病毒如果尚未卸载 (，则手动禁用) 。 以下任务有助于确保在 Microsoft Defender 防病毒 服务器上安装并设置为被动Windows模式。
 
 迁移过程的这一步包括以下任务：
-- [在 Windows Server 上将 DisableAntiSpyware 设置为 false](#set-disableantispyware-to-false-on-windows-server)
-- [在 Windows Server 上重新安装 Microsoft Defender 防病毒](#reinstall-microsoft-defender-antivirus-on-windows-server);
-- [在 Windows Server 上将 Microsoft Defender 防病毒设置为被动模式](#set-microsoft-defender-antivirus-to-passive-mode-on-windows-server)
-- [在 Windows 客户端设备上启用 Microsoft Defender 防病毒](#enable-microsoft-defender-antivirus-on-your-windows-client-devices);和
-- [确认 Microsoft Defender 防病毒已设置为被动模式](#confirm-that-microsoft-defender-antivirus-is-in-passive-mode)。  
+- 仅在必要时，才将 Windows Server ([DisableAntiSpyware](#set-disableantispyware-to-false-on-windows-server)设置为 false) 
+- [在 Microsoft Defender 防病毒 服务器上重新安装Windows;](#reinstall-microsoft-defender-antivirus-on-windows-server)
+- [将Microsoft Defender 防病毒服务器设置为被动Windows模式](#set-microsoft-defender-antivirus-to-passive-mode-on-windows-server)
 
-### <a name="set-disableantispyware-to-false-on-windows-server"></a>在 Windows Server 上将 DisableAntiSpyware 设置为 false
+### <a name="set-disableantispyware-to-false-on-windows-server"></a>在 Windows 服务器上将 DisableAntiSpyware 设置为 false
 
-[过去使用 DisableAntiSpyware](/windows-hardware/customize/desktop/unattend/security-malware-windows-defender-disableantispyware)注册表项禁用 Microsoft Defender 防病毒，并部署其他防病毒产品，如 McAfee。 通常，不应在 Windows 设备和终结点上具有此注册表项;但是，如果已 `DisableAntiSpyware` 配置，下面将说明如何将它的值设置为 false：
+[过去使用 DisableAntiSpyware](/windows-hardware/customize/desktop/unattend/security-malware-windows-defender-disableantispyware)注册表项禁用 Microsoft Defender 防病毒，并部署另一个防病毒产品，如 McAfee。 通常，不应在设备上和终结点上Windows注册表项;但是，如果已 `DisableAntiSpyware` 配置，下面将说明如何将它的值设置为 false：
 
 1. 在 Windows Server 设备上，打开注册表编辑器。
 
@@ -80,12 +87,12 @@ ms.locfileid: "52327582"
 > [!TIP]
 > 若要了解有关此注册表项的信息，请参阅 [DisableAntiSpyware](/windows-hardware/customize/desktop/unattend/security-malware-windows-defender-disableantispyware)。
 
-### <a name="reinstall-microsoft-defender-antivirus-on-windows-server"></a>在 Windows Server 上重新安装 Microsoft Defender 防病毒
+### <a name="reinstall-microsoft-defender-antivirus-on-windows-server"></a>在 Microsoft Defender 防病毒 服务器上重新安装 Windows
 
 > [!NOTE]
-> 以下过程仅适用于运行以下版本的 Windows 的终结点或设备：
+> 以下过程仅适用于运行以下版本的 Windows：
 > - Windows Server 2019
-> - Windows Server 版本 1803 (仅核心模式) 
+> - Windows服务器版本 1803 (仅核心模式) 
 > - Windows Server 2016
 
 1. 作为终结点或设备的本地管理员，打开Windows PowerShell。
@@ -96,28 +103,46 @@ ms.locfileid: "52327582"
    
    `Dism /online /Get-FeatureInfo /FeatureName:Windows-Defender` <br/>
 
-> [!NOTE]
-> 在运行 PS 的任务序列内使用 DISM 命令时，需要以下cmd.exe路径。
-> 示例：<br/>
-> `c:\windows\sysnative\cmd.exe /c Dism /online /Get-FeatureInfo /FeatureName:Windows-Defender-Features`<br/>
-> `c:\windows\sysnative\cmd.exe /c Dism /online /Get-FeatureInfo /FeatureName:Windows-Defender`<br/>
+   > [!NOTE]
+   > 在运行 PS 的任务序列内使用 DISM 命令时，需要以下cmd.exe路径。
+   > 示例：
+   >
+   > `c:\windows\sysnative\cmd.exe /c Dism /online /Get-FeatureInfo /FeatureName:Windows-Defender-Features`<br/>
+   >
+   > `c:\windows\sysnative\cmd.exe /c Dism /online /Get-FeatureInfo /FeatureName:Windows-Defender`<br/>
 
-3. 若要验证 Microsoft Defender 防病毒是否正在运行，请使用以下 PowerShell cmdlet： <br/>
+3. 若要验证Microsoft Defender 防病毒运行，请使用以下 PowerShell cmdlet： <br/>
    
    `Get-Service -Name windefend`
 
-#### <a name="are-you-using-windows-server-2016"></a>是否正在使用 Windows Server 2016？
+   查找"正在运行 *"状态*。
 
-如果你使用的是 Windows Server 2016 并且无法启用 Microsoft Defender 防病毒，请使用以下 PowerShell cmdlet：
+### <a name="set-microsoft-defender-antivirus-to-passive-mode-on-windows-server"></a>将Microsoft Defender 防病毒服务器设置为被动Windows模式
+
+1. 打开注册表编辑器，然后导航到 `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection` 。
+
+2. 编辑 (或创建) **ForcePassiveMode** 的 DWORD 条目，并指定以下设置：
+
+   - 将 DWORD 的值设置为 `1` 。
+
+   - 在"基本"下，**选择"十六进制"。**
+
+> [!NOTE]
+> 载入适用于终结点的 Defender 后，可能需要在 Microsoft Defender 防病毒 服务器上将 Windows 模式。
+
+### <a name="are-you-using-windows-server-2016"></a>是否正在使用Windows Server 2016？
+
+如果你的终结点在Windows Server 2016，则不能Microsoft Defender 防病毒 Microsoft 防病毒/反恶意软件解决方案一起运行。 Microsoft Defender 防病毒无法以被动模式在Windows Server 2016。 在这种情况下，你需要卸载非 Microsoft 防病毒/反恶意软件解决方案，并安装/启用Microsoft Defender 防病毒解决方案。 若要了解更多信息，请参阅防病毒 [解决方案与 Defender for Endpoint 的兼容性](/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-compatibility)。
+
+如果您使用的是 Windows Server 2016且无法启用Microsoft Defender 防病毒，请使用以下 PowerShell cmdlet：
 
 `mpcmdrun -wdenable`
 
-> [!TIP]
-> 是否仍需要帮助？ 请参阅 [Windows Server 2016 和 Windows Server 2019 上的 Microsoft Defender 防病毒](microsoft-defender-antivirus-on-windows-server.md)。
+有关详细信息，请参阅 Microsoft Defender 防病毒[server Windows。](microsoft-defender-antivirus-on-windows-server.md)
 
-### <a name="set-microsoft-defender-antivirus-to-passive-mode-on-windows-server"></a>在 Windows Server 上将 Microsoft Defender 防病毒设置为被动模式
+### <a name="set-microsoft-defender-antivirus-to-passive-mode-on-windows-server"></a>将Microsoft Defender 防病毒服务器设置为被动Windows模式
 
-由于你的组织仍在使用 McAfee，因此你必须将 Microsoft Defender 防病毒设置为被动模式。 这样，McAfee 和 Microsoft Defender 防病毒可以并行运行，直到你完成载入到 Microsoft Defender for Endpoint。
+由于你的组织仍在使用 McAfee，因此你必须Microsoft Defender 防病毒被动模式。 这样，McAfee 和 Microsoft Defender 防病毒可以并行运行，直到你完成载入到 Defender for Endpoint。
 
 1. 打开注册表编辑器，然后导航到 <br/>
    `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection`.
@@ -133,123 +158,55 @@ ms.locfileid: "52327582"
 >- [组策略首选项](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn581922(v=ws.11))
 >- [Configuration Manager 中的程序包](/mem/configmgr/apps/deploy-use/packages-and-programs)
 
-### <a name="enable-microsoft-defender-antivirus-on-your-windows-client-devices"></a>在 Windows 客户端设备上启用 Microsoft Defender 防病毒
+## <a name="configure-defender-for-endpoint"></a>为终结点配置 Defender
 
-由于贵组织一直将 McAfee 用作主要防病毒解决方案，因此 Microsoft Defender 防病毒最有可能在组织的 Windows 设备上被禁用。 迁移过程的这一步是启用 Microsoft Defender 防病毒。 
-
-若要启用 Microsoft Defender 防病毒，建议使用 Intune。 但是，您可以采用下表中列出的任何方法：
+迁移过程的这一步是配置适用于终结点的 Defender。 我们建议使用 Intune;但是，您可以采用下表中列出的任何方法：
 
 |方法  |需执行的操作  |
 |---------|---------|
-|[Intune](/mem/intune/fundamentals/tutorial-walkthrough-endpoint-manager) <p>**注意**：Intune 现在是 Microsoft Endpoint Manager。 |1. 转到 [Microsoft Endpoint Manager 管理中心](https://go.microsoft.com/fwlink/?linkid=2109431) 并登录。<p>2.**选择"设备**  >  **配置文件"，** 然后选择要配置的配置文件类型。 <br/>如果你尚未创建设备限制配置文件类型，或者如果你想要创建新的配置文件类型，请参阅在 Microsoft Intune 中配置设备[限制设置](/intune/device-restrictions-configure)。<p>3. 选择 **"属性"，** 然后选择"**配置设置：编辑"。**<p>4. 展开 **Microsoft Defender 防病毒**。 <p>5. 启用 **云保护**。<p>6. 在"**在示例提交前提示用户"** 下拉列表中，选择"自动 **发送所有示例"。**<p>7. 在"**检测可能不需要的应用程序"** 下拉列表中，选择"**启用"** 或"审核 **"。**<p>8. 选择 **"审阅 + 保存"，** 然后选择"保存 **"。**<p>有关 Intune 设备配置文件（包括如何创建和配置其设置）的信息，请参阅[什么是 Microsoft Intune 设备配置文件？。](/intune/device-profiles)|
-|Windows 中的控制面板     |请按照以下指南： [打开 Microsoft Defender 防病毒](/mem/intune/user-help/turn-on-defender-windows)。 <p>**注意**：你可能会在某些 *版本的* Windows Windows Defender *看到防病毒，而不是 Microsoft Defender* 防病毒。        |
-|[高级组策略管理](/microsoft-desktop-optimization-pack/agpm/) <br/>或<br/>[组策略管理控制台](use-group-policy-microsoft-defender-antivirus.md)  |1. 转到 `Computer configuration > Administrative templates > Windows components > Microsoft Defender Antivirus` 。 <p>2. 查找名为"关闭 Microsoft Defender 防病毒 **"的策略**。<br/> <br/>3. 选择 **"编辑策略设置**"，并确保策略已禁用。 这将启用 Microsoft Defender 防病毒。 <p>**注意**：你可能会在某些 *版本的* Windows Windows Defender *看到防病毒，而不是 Microsoft Defender* 防病毒。 |
-
-### <a name="confirm-that-microsoft-defender-antivirus-is-in-passive-mode"></a>确认 Microsoft Defender 防病毒处于被动模式
-
-如果将 Microsoft Defender 防病毒设置为被动模式，Microsoft Defender 防病毒可以与 McAfee 一起运行。 可以使用命令提示符或 PowerShell 执行此任务，如下表所述：
-
-|方法  |需执行的操作  |
-|---------|---------|
-|命令提示符     |1. 在 Windows 设备上，以管理员角色打开命令提示符。 <p>2. 键入 `sc query windefend` ，然后按 Enter。<p>3. 查看结果以确认 Microsoft Defender 防病毒正在被动模式下运行。         |
-|PowerShell     |1.在 Windows 设备上，以Windows PowerShell打开"登录"。<p>2. 运行 [Get-MpComputerStatus](/powershell/module/defender/Get-MpComputerStatus) cmdlet。 <p>3. 在结果列表中，查找 **AMRunningMode：被动模式** 或 **AMRunningMode：SxS 被动模式**。|
-
-> [!NOTE]
-> 你可能会在某些版本的 Windows *Windows Defender* 防病毒而不是 *Microsoft Defender* 防病毒。
-
-## <a name="get-updates-for-microsoft-defender-antivirus"></a>获取 Microsoft Defender 防病毒的更新
-
-使 Microsoft Defender 防病毒保持最新至关重要，可确保你的设备具有防止新的恶意软件和攻击技术所需的最新技术和功能，即使 Microsoft Defender 防病毒在被动模式下 [运行](microsoft-defender-antivirus-compatibility.md)。
-
-有两种类型的更新与使 Microsoft Defender 防病毒保持最新有关：
-- 安全智能更新
-- 产品更新
-
-若要获取更新，请按照管理 Microsoft [Defender 防病毒更新和应用基线中的指南。](manage-updates-baselines-microsoft-defender-antivirus.md)
+|[Intune](/mem/intune/fundamentals/tutorial-walkthrough-endpoint-manager) <p>**注意**：Intune 现在是该Microsoft Endpoint Manager。 |1. 转到Microsoft Endpoint Manager[中心并](https://go.microsoft.com/fwlink/?linkid=2109431)登录。<p>2.**选择"设备**  >  **配置文件"，** 然后选择要配置的配置文件类型。 <br/>如果你尚未创建设备限制配置文件类型，或者如果你想要创建新的配置文件类型，请参阅配置设备限制设置[Microsoft Intune。](/intune/device-restrictions-configure)<p>3. 选择 **"属性"，** 然后选择"**配置设置：编辑"。**<p>4. 展开 **"Microsoft Defender 防病毒"。** <p>5. 启用 **云保护**。<p>6. 在"**在示例提交前提示用户"** 下拉列表中，选择"自动 **发送所有示例"。**<p>7. 在"**检测可能不需要的应用程序"** 下拉列表中，选择"**启用"** 或"审核 **"。**<p>8. 选择 **"审阅 + 保存"，** 然后选择"保存 **"。**<p>有关 Intune 设备配置文件（包括如何创建和配置其设置）的信息，请参阅什么是Microsoft Intune[配置文件？。](/intune/device-profiles)|
+|控制面板Windows     |请按照以下指南：[打开"Microsoft Defender 防病毒"。](/mem/intune/user-help/turn-on-defender-windows) <p>**注意**：你可能会在 *Windows Defender 防病毒* 版本中看到 Microsoft Defender 防病毒 而不是Windows。        |
+|[高级组策略管理](/microsoft-desktop-optimization-pack/agpm/) <br/>或<br/>[组策略管理控制台](use-group-policy-microsoft-defender-antivirus.md)  |1. 转到 `Computer configuration > Administrative templates > Windows components > Microsoft Defender Antivirus` 。 <p>2. 查找名为"关闭策略 **Microsoft Defender 防病毒。**<p>3. 选择 **"编辑策略设置**"，并确保策略已禁用。 这将启用Microsoft Defender 防病毒。 <p>**注意**：你可能会在 *Windows Defender 防病毒* 版本中看到 Microsoft Defender 防病毒 而不是Windows。 |
 
 ## <a name="add-microsoft-defender-for-endpoint-to-the-exclusion-list-for-mcafee"></a>将 Microsoft Defender for Endpoint 添加到 McAfee 排除列表
 
-设置过程的这一步是将 Microsoft Defender for Endpoint 添加到 McAfee 的排除列表和组织使用的其他任何安全产品。 
+设置过程的这一步是将 Defender for Endpoint 添加到 McAfee 的排除列表和组织使用的其他任何安全产品。 
 
 > [!TIP]
-> 若要获取有关配置排除项的帮助，请参阅 McAfee 文档，如以下文章 [：McAfee Endpoint Security 10.5.0 - 威胁防护模块产品指南 (McAfee ePolicy Orchestrator) - Windows：配置](https://docs.mcafee.com/bundle/endpoint-security-10.5.0-threat-prevention-product-guide-epolicy-orchestrator-windows/page/GUID-71C5FB4B-A143-43E6-8BF0-8B2C16ABE6DA.html)排除项。
+> 若要获取有关配置排除项的帮助，请参阅 McAfee 文档，如以下文章[：McAfee Endpoint Security 10.5.0 - 威胁防护模块产品指南 (McAfee ePolicy Orchestrator) - Windows：配置](https://docs.mcafee.com/bundle/endpoint-security-10.5.0-threat-prevention-product-guide-epolicy-orchestrator-windows/page/GUID-71C5FB4B-A143-43E6-8BF0-8B2C16ABE6DA.html)排除项。
 
-要配置的特定排除项取决于终结点或设备运行的 Windows 版本，下表中列出了这些排除项：
+要配置的特定排除项取决于您Windows或设备运行的是哪个版本，下表中列出了这些排除项：
 
 |操作系统 |排除项 |
 |--|--|
-|- Windows 10[版本 1803](/windows/release-health/status-windows-10-1803)或 (请参阅[Windows 10 版本) ](/windows/release-health/release-information)<br/>- Windows 10 版本 1703 或[1709（](/windows/release-health/status-windows-10-1709)已安装[KB4493441）](https://support.microsoft.com/help/4493441) <br/>- [Windows Server 2019](/windows/release-health/status-windows-10-1809-and-windows-server-2019)<br/>- [Windows Server 版本 1803](/windows-server/get-started/whats-new-in-windows-server-1803) |`C:\Program Files\Windows Defender Advanced Threat Protection\MsSense.exe`<p>`C:\Program Files\Windows Defender Advanced Threat Protection\SenseCncProxy.exe`<p>`C:\Program Files\Windows Defender Advanced Threat Protection\SenseSampleUploader.exe`<p>`C:\Program Files\Windows Defender Advanced Threat Protection\SenseIR.exe`<br/>  |
-|- [Windows 8.1](/windows/release-health/status-windows-8.1-and-windows-server-2012-r2) <br/>- [Windows 7](/windows/release-health/status-windows-7-and-windows-server-2008-r2-sp1)<br/>- [Windows Server 2016](/windows/release-health/status-windows-10-1607-and-windows-server-2016)<br/>- [Windows Server 2012 R2](/windows/release-health/status-windows-8.1-and-windows-server-2012-r2)<br/>- [Windows Server 2008 R2 SP1](/windows/release-health/status-windows-7-and-windows-server-2008-r2-sp1) |`C:\Program Files\Microsoft Monitoring Agent\Agent\Health Service State\Monitoring Host Temporary Files 6\45\MsSenseS.exe`<p>**注意**：监视主机临时文件 6\45 可以是不同的编号子文件夹。<p>`C:\Program Files\Microsoft Monitoring Agent\Agent\AgentControlPanel.exe`<p>`C:\Program Files\Microsoft Monitoring Agent\Agent\HealthService.exe`<p>`C:\Program Files\Microsoft Monitoring Agent\Agent\HSLockdown.exe`<p>`C:\Program Files\Microsoft Monitoring Agent\Agent\MOMPerfSnapshotHelper.exe`<p>`C:\Program Files\Microsoft Monitoring Agent\Agent\MonitoringHost.exe`<p>`C:\Program Files\Microsoft Monitoring Agent\Agent\TestCloudConnection.exe` |
+| Windows 10[版本 1803](/windows/release-health/status-windows-10-1803)或更高版本 (请参阅 Windows 10 release [information) ](/windows/release-health/release-information)<p>Windows 10，版本 1703 或[1709（](/windows/release-health/status-windows-10-1709)已安装[KB4493441）](https://support.microsoft.com/help/4493441) <p>[Windows Server 2019](/windows/release-health/status-windows-10-1809-and-windows-server-2019)<p>[Windows服务器版本 1803](/windows-server/get-started/whats-new-in-windows-server-1803) |`C:\Program Files\Windows Defender Advanced Threat Protection\MsSense.exe`<p>`C:\Program Files\Windows Defender Advanced Threat Protection\SenseCncProxy.exe`<p>`C:\Program Files\Windows Defender Advanced Threat Protection\SenseSampleUploader.exe`<p>`C:\Program Files\Windows Defender Advanced Threat Protection\SenseIR.exe`<br/>  |
+| [Windows 8.1](/windows/release-health/status-windows-8.1-and-windows-server-2012-r2) <p>[Windows 7](/windows/release-health/status-windows-7-and-windows-server-2008-r2-sp1)<p>[Windows Server 2016](/windows/release-health/status-windows-10-1607-and-windows-server-2016)<p>[Windows Server 2012 R2](/windows/release-health/status-windows-8.1-and-windows-server-2012-r2)<p>[Windows Server 2008 R2 SP1](/windows/release-health/status-windows-7-and-windows-server-2008-r2-sp1) |`C:\Program Files\Microsoft Monitoring Agent\Agent\Health Service State\Monitoring Host Temporary Files 6\45\MsSenseS.exe`<p>**注意**：监视主机临时文件 6\45 可以是不同的编号子文件夹。<p>`C:\Program Files\Microsoft Monitoring Agent\Agent\AgentControlPanel.exe`<p>`C:\Program Files\Microsoft Monitoring Agent\Agent\HealthService.exe`<p>`C:\Program Files\Microsoft Monitoring Agent\Agent\HSLockdown.exe`<p>`C:\Program Files\Microsoft Monitoring Agent\Agent\MOMPerfSnapshotHelper.exe`<p>`C:\Program Files\Microsoft Monitoring Agent\Agent\MonitoringHost.exe`<p>`C:\Program Files\Microsoft Monitoring Agent\Agent\TestCloudConnection.exe` |
 
-## <a name="add-mcafee-to-the-exclusion-list-for-microsoft-defender-antivirus"></a>将 McAfee 添加到 Microsoft Defender 防病毒的排除列表
+## <a name="add-mcafee-to-the-exclusion-list-for-microsoft-defender-antivirus"></a>将 McAfee 添加到列表的排除Microsoft Defender 防病毒
 
-在设置过程的这一步中，将 McAfee 和其他安全解决方案添加到 Microsoft Defender 防病毒排除列表。 
+在设置过程的这一步中，将 McAfee 和其他安全解决方案添加到Microsoft Defender 防病毒列表中。 
 
-将排除 [项添加到 Microsoft Defender 防病毒扫描时](configure-exclusions-microsoft-defender-antivirus.md)，应添加路径和进程排除项。 请记住以下几点：
-- 路径排除项排除特定文件以及这些文件访问的任何内容。
-- 进程排除排除排除进程涉及的任何内容，但不排除进程本身。
-- 如果将每个可执行文件 (.exe) 路径排除和进程排除，将排除进程及其涉及的任何内容。
-- 使用进程排除项的完整路径而不是仅按名称列出进程排除项。  (仅名称方法安全性较低。) 
+向扫描[中添加排除项Microsoft Defender 防病毒，](configure-exclusions-microsoft-defender-antivirus.md)应添加路径和进程排除项。 
 
-你可以选择多种方法将排除项添加到 Microsoft Defender 防病毒，如下表所列：
+可以从多种方法中选择将排除项添加到Microsoft Defender 防病毒，如下表所列：
 
 |方法 | 需执行的操作|
 |--|--|
-|[Intune](/mem/intune/fundamentals/tutorial-walkthrough-endpoint-manager) <p>**注意**：Intune 现在是 Microsoft Endpoint Manager。 |1. 转到 [Microsoft Endpoint Manager 管理中心](https://go.microsoft.com/fwlink/?linkid=2109431) 并登录。<p>2.**选择"设备**  >  **配置文件"，** 然后选择要配置的配置文件。<p>3. 在"**管理"下**，选择"**属性"。** <p>4. 选择 **配置设置：编辑**。<p>5. 展开 **"Microsoft Defender 防病毒**"，然后展开 **"Microsoft Defender 防病毒排除项"。**<p>6. 指定要从 Microsoft Defender 防病毒扫描中排除的文件和文件夹、扩展名和进程。 有关参考，请参阅 [Microsoft Defender 防病毒排除项](/mem/intune/configuration/device-restrictions-windows-10#microsoft-defender-antivirus-exclusions)。<p>7. 选择 **"审阅 + 保存"，** 然后选择"保存 **"。**  |
-|[Microsoft Endpoint Configuration Manager](/mem/configmgr/) |1. 使用 [Configuration Manager 控制台](/mem/configmgr/core/servers/manage/admin-console)，转到"资产和 **合规性**  >  **终结点** 保护反恶意软件策略"，然后选择要  >  修改的策略。 <p>2. 为要从 Microsoft Defender 防病毒扫描中排除的文件和文件夹、扩展和进程指定排除设置。 |
-|[组策略对象](/previous-versions/windows/desktop/Policy/group-policy-objects) | 1. 在组策略管理计算机上，打开组策略管理 [控制台](https://technet.microsoft.com/library/cc731212.aspx)，右键单击要配置的组策略对象， **然后单击编辑**。<p>2. 在组 **策略管理编辑器** 中，转到"**计算机配置"，** 然后单击"**管理模板"。**<p>3. 将树展开到 Microsoft Defender 防病毒 **>排除**> Windows 组件。<br/>**注意**：你可能会在某些 *版本的* Windows Windows Defender *看到防病毒，而不是 Microsoft Defender* 防病毒。<p>4. 双击" **路径排除项"** 设置并添加排除项。<br/>- 将选项设置为 **已启用**。<br/>- 在"选项 **"部分** 下，单击"**显示..."。**<br/>- 在"值名称"列下的其自己的 **行中指定每个** 文件夹。<br/>- 如果指定文件，请确保输入该文件的完全限定路径，包括驱动器号、文件夹路径、文件名和扩展名。 在 **"值"****列中输入** 0。<p>5. 单击"**确定"。**<p>6. 双击扩展 **排除** 项设置并添加排除项。<br/>- 将选项设置为 **已启用**。<br/>- 在"选项 **"部分** 下，单击"**显示..."。**<br/>- 在"值名称"列下，在其自己的 **行中输入每个文件** 扩展名。  在 **"值"****列中输入** 0。<p>7. 单击"**确定"。** |
-|本地组策略对象 |1. 在终结点或设备上，打开"本地组策略编辑器"。 <p>2. 转到计算机 **配置**  >  **管理模板**  >  **Windows 组件** Microsoft Defender  >  **防病毒**  >  **排除项**。 <br/>**注意**：你可能会在某些 *版本的* Windows Windows Defender *看到防病毒，而不是 Microsoft Defender* 防病毒。<p>3. 指定路径和进程排除项。 |
+|[Intune](/mem/intune/fundamentals/tutorial-walkthrough-endpoint-manager) <p>**注意**：Intune 现在是该Microsoft Endpoint Manager。 |1. 转到Microsoft Endpoint Manager[中心并](https://go.microsoft.com/fwlink/?linkid=2109431)登录。<p>2.**选择"设备**  >  **配置文件"，** 然后选择要配置的配置文件。<p>3. 在"**管理"下**，选择"**属性"。** <p>4. 选择 **配置设置：编辑**。<p>5. 展开 **Microsoft Defender 防病毒，** 然后展开 **"Microsoft Defender 防病毒排除"。**<p>6. 指定要从扫描中排除的文件和文件夹、扩展Microsoft Defender 防病毒进程。 有关参考，请参阅[Microsoft Defender 防病毒排除项](/mem/intune/configuration/device-restrictions-windows-10#microsoft-defender-antivirus-exclusions)。<p>7. 选择 **"审阅 + 保存"，** 然后选择"保存 **"。**  |
+|[Microsoft Endpoint Configuration Manager](/mem/configmgr/) |1. 使用[Configuration Manager](/mem/configmgr/core/servers/manage/admin-console)控制台，转到"资产和Endpoint Protection反恶意软件策略"，然后选择  >    >  要修改的策略。 <p>2. 为要从扫描中排除的文件和文件夹、扩展和进程指定排除Microsoft Defender 防病毒设置。 |
+|[组策略对象](/previous-versions/windows/desktop/Policy/group-policy-objects) | 1. 在组策略管理计算机上，打开组策略管理 [控制台](https://technet.microsoft.com/library/cc731212.aspx)，右键单击要配置的组策略对象， **然后单击编辑**。<p>2. 在组 **策略管理编辑器** 中，转到"**计算机配置"，** 然后单击"**管理模板"。**<p>3. 展开树以Windows **排除> Microsoft Defender 防病毒 >组件**。<br/>**注意**：你可能会在 *Windows Defender 防病毒* 版本中看到 Microsoft Defender 防病毒 而不是Windows。<p>4. 双击" **路径排除项"** 设置并添加排除项。<br/>- 将选项设置为 **已启用**。<br/>- 在"选项 **"部分** 下，单击"**显示..."。**<br/>- 在"值名称"列下的其自己的 **行中指定每个** 文件夹。<br/>- 如果指定文件，请确保输入该文件的完全限定路径，包括驱动器号、文件夹路径、文件名和扩展名。 在 **"值"****列中输入** 0。<p>5. 单击"**确定"。**<p>6. 双击扩展 **排除** 项设置并添加排除项。<br/>- 将选项设置为 **已启用**。<br/>- 在"选项 **"部分** 下，单击"**显示..."。**<br/>- 在"值名称"列下，在其自己的 **行中输入每个文件** 扩展名。  在 **"值"****列中输入** 0。<p>7. 单击"**确定"。** |
+|本地组策略对象 |1. 在终结点或设备上，打开"本地组策略编辑器"。 <p>2. 转到计算机 **配置** 管理模板  >    >  **Windows组件**  >  **Microsoft Defender 防病毒**  >  **排除项**。 <p>**注意**：你可能会在 *Windows Defender 防病毒* 版本中看到 Microsoft Defender 防病毒 而不是Windows。<p>3. 指定路径和进程排除项。 |
 |注册表项 |1. 导出以下注册表项 `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender\exclusions` ：。<p>2. 导入注册表项。 下面是两个示例：<br/>- 本地路径： `regedit.exe /s c:\temp\ MDAV_Exclusion.reg` <br/>- 网络共享： `regedit.exe /s \\FileServer\ShareName\MDAV_Exclusion.reg` |
 
-## <a name="add-mcafee-to-the-exclusion-list-for-microsoft-defender-for-endpoint"></a>将 McAfee 添加到 Microsoft Defender for Endpoint 的排除列表
+请记住以下几点：
 
-> [!IMPORTANT]
-> 通常，你不应为 Defender for Endpoint 添加排除项，尤其是在你已定义 Microsoft Defender 防病毒的排除项时。 但是，如果遇到 Microsoft Defender 防病毒不会处于被动模式的问题，请执行以下任务。 否则，跳过此部分并继续设置 [设备组、设备集合和组织单位](#set-up-your-device-groups-device-collections-and-organizational-units)。
+- 路径排除项排除特定文件以及这些文件访问的任何内容。
 
-若要将排除项添加到 Microsoft Defender for Endpoint，请创建 [指示器](indicator-file.md)。
+- 进程排除排除排除进程涉及的任何内容，但不排除进程本身。
 
-1. 转到 Microsoft Defender 安全中心 [https://aka.ms/MDATPportal](https://aka.ms/MDATPportal) () 并登录。
+- 如果将每个可执行文件 (.exe) 路径排除和进程排除，将排除进程及其涉及的任何内容。
 
-2. 在导航窗格中，选择"**设置**  >  **""规则**  >  **指示器"。**
-
-3.  在"**文件哈希"选项卡上**，选择"**添加指示器"。**
-
-3. 在" **指示器"** 选项卡上，指定以下设置：
-   - 文件哈希 (需要帮助？ 请参阅 [本文中的使用 CMPivot](#find-a-file-hash-using-cmpivot) 查找文件哈希。) 
-   - Under **Expires on (UTC) ，** choose **Never**.
-
-4. 在" **操作"** 选项卡上，指定以下设置：
-   - **响应操作**： **允许**
-   - 标题和说明
-
-5. 在"**范围"** 选项卡上的"**设备组"下**，选择"我的作用域内的所有 **设备**"或"**从列表中选择"。**
-
-6. 在"**摘要"选项卡** 上，查看设置，然后单击"保存 **"。**
-
-### <a name="find-a-file-hash-using-cmpivot"></a>使用 CMPivot 查找文件哈希
-
-CMPivot 是 Configuration Manager 的控制台内实用工具。 CMPivot 提供对环境中设备实时状态的访问权限。 它立即在目标集合中所有当前连接的设备上运行查询并返回结果。 若要了解更多信息，请参阅 [CMPivot overview](/mem/configmgr/core/servers/manage/cmpivot-overview)。
-
-若要使用 CMPivot 获取文件哈希，请按照以下步骤操作：
-
-1. 查看 [先决条件](/mem/configmgr/core/servers/manage/cmpivot#prerequisites)。
-
-2. [启动 CMPivot](/mem/configmgr/core/servers/manage/cmpivot#start-cmpivot)。 
-
-3. 连接 Configuration Manager (`SCCM_ServerName.DomainName.com`) 。
-
-4. 选择" **查询"** 选项卡。
- 
-5. 在"**设备集合"** 列表中，选择"所有系统 **" ("默认) "。**
-
-6. 在查询框中，键入以下查询：<br/>
-
-```kusto
-File(c:\\windows\\notepad.exe)
-| project Hash
-```
-> [!NOTE]
-> 在以上查询中 *，notepad.exe第* 三方安全产品进程名称。 
+- 使用进程排除项的完整路径而不是仅按名称列出进程排除项。  (仅名称方法安全性较低。) 
 
 ## <a name="set-up-your-device-groups-device-collections-and-organizational-units"></a>设置设备组、设备集合和组织单位
 
@@ -272,6 +229,6 @@ File(c:\\windows\\notepad.exe)
 
 ## <a name="next-step"></a>后续步骤
 
-**恭喜！** 你已完成从 McAfee 迁移到 [Microsoft Defender for Endpoint 的安装阶段](mcafee-to-microsoft-defender-migration.md#the-migration-process)！
+**恭喜！** 你已完成从 McAfee 迁移到 [Defender for Endpoint 的安装阶段](mcafee-to-microsoft-defender-migration.md#the-migration-process)！
 
-- [继续执行阶段 3：载入 Microsoft Defender for Endpoint](mcafee-to-microsoft-defender-onboard.md)
+- [继续执行阶段 3：载入到适用于终结点的 Defender](mcafee-to-microsoft-defender-onboard.md)

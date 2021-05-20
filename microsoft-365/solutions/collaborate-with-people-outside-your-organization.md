@@ -17,13 +17,14 @@ ms.custom:
 - seo-marvel-jun2020
 localization_priority: Normal
 f1.keywords: NOCSH
+recommendations: false
 description: 了解如何配置Microsoft 365应用程序Teams、OneDrive SharePoint组织外部人员进行协作。
-ms.openlocfilehash: 85aa77982fa15adb62bd587856546d2828edb942
-ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
+ms.openlocfilehash: 291a5e6d75ac1b1a12a2403a9aeece9cb658afd0
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "51599815"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52537819"
 ---
 # <a name="collaborating-with-people-outside-your-organization"></a>与组织外部人员进行协作
 

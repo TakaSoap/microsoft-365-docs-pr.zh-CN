@@ -15,12 +15,12 @@ ms.collection:
 description: 管理员可以了解如何创建、修改和删除 Exchange Online Protection (EOP) 组织中可用的反网络钓鱼策略，Exchange Online邮箱。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: c277558bad32e1926030483d202b70ae3c910315
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: bc3c15d2a652e9acd3407ecb91fc99b7ef295c7e
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51203755"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52537915"
 ---
 # <a name="configure-anti-phishing-policies-in-eop"></a>在 EOP 中配置反垃圾邮件策略
 
@@ -159,18 +159,20 @@ ms.locfileid: "51203755"
 
    完成后，单击任意 **页面上** 的"保存"。
 
-5. **欺骗**：单击"编辑"打开或关闭欺骗智能，在 Outlook 中打开或关闭未经身份验证的发件人标识，并配置操作以应用于来自被阻止的欺骗发件人的邮件。 有关详细信息，请参阅反网络钓鱼 [策略中的欺骗设置](set-up-anti-phishing-policies.md#spoof-settings)。
+5. **欺骗**：单击"编辑"打开或关闭欺骗智能，在 Outlook 中打开或关闭未经身份验证的发件人标识，并配置操作以应用于来自被阻止的欺骗发件人的邮件。 有关这些设置详细信息，请参阅反网络钓鱼 [策略中的欺骗设置](set-up-anti-phishing-policies.md#spoof-settings)。
 
    请注意，Defender for Office 365 中的防钓鱼策略中也提供了这些相同的Office 365。
 
-   - **欺骗筛选器设置**：默认值为 **"开**"，建议保持打开状态。 若要关闭它，将切换开关滑动到 **关闭**。 有关详细信息，请参阅在 [EOP 中配置欺骗智能](learn-about-spoof-intelligence.md)。
+   - **欺骗筛选器设置**：使用启用 **欺骗智能？** 设置打开或关闭欺骗智能。 默认值为 **On，** 建议保持打开状态。 若要将其关闭，将切换开关滑动到 **关闭** ![ 切换关闭 ](../../media/scc-toggle-off.png) 。
 
      > [!NOTE]
-     > 如果你的 MX 记录没有指向任何位置，你无需禁用反欺骗Microsoft 365;改为启用连接器的增强筛选。 有关说明，请参阅[增强的连接器筛选Exchange Online。](/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors)
+     > 如果你的 MX 记录没有指向反欺骗保护，则无需关闭Microsoft 365;改为启用连接器的增强筛选。 有关说明，请参阅[增强的连接器筛选Exchange Online。](/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors)
 
-   - **启用未经身份验证的发件人功能**：默认值为 **On**。 若要关闭它，将切换开关滑动到 **关闭**。
+   - **未经身份验证的发件人设置**：可以配置以下设置：
+     - 启用未经身份验证的发件人问号 **(？) 符号？：** 如果邮件未通过 SPF 或 DKIM 检查且邮件未通过 DMARC 或复合身份验证，则这些设置会将问号添加到 Outlook的发件人框中的发件人照片。 [](email-validation-and-authentication.md#composite-authentication) 默认值为“打开”。 若要将其关闭，将切换开关滑动到 **关闭** ![ 切换关闭 ](../../media/scc-toggle-off.png) 。
+     - **启用"via"标记？：** 此设置通过 (chris@contoso.com 添加 fabrikam.com) 不同于 DKIM 签名或 **MAIL FROM** 地址中的域。 默认值为“打开”。 若要将其关闭，将切换开关滑动到 **关闭** ![ 切换关闭 ](../../media/scc-toggle-off.png) 。
 
-   - **操作**：指定对未通过欺骗智能的邮件采取的操作：
+   - **操作**：指定对来自被阻止的欺骗发件人的邮件采取的操作：
 
      **如果电子邮件是由不允许欺骗你的域的人发送的**：
 
@@ -181,9 +183,9 @@ ms.locfileid: "51203755"
 
      - 可以单击每个 **部分** 中的"编辑"跳转回相关页面。
      - 您可以直接在此页面上切换以下设置 **：打开****或关闭**：
-
-       - **启用反应答保护**
-       - **启用未经身份验证的发件人功能**
+       - **欺骗筛选器设置**
+       - **未经身份验证的发件人设置**
+       - **Actions**
 
    完成后，单击任意 **页面上** 的"保存"。
 
@@ -197,11 +199,7 @@ ms.locfileid: "51203755"
 
 2. 在"**反网络钓鱼"页上**，单击"**默认策略"。**
 
-3. 将显示 **"编辑你的策略 Office365 反语言默认"** 页。 以下各节可用，其中包含修改自定义策略 [时相同的设置](#use-the-security--compliance-center-to-modify-anti-phishing-policies)。
-
-   - **模拟**
-   - **欺骗**
-   - **高级设置**
+3. 将显示 **"编辑你的策略 Office365 反语言默认"** 页。 只有 **"欺骗** "部分可用，其中包含修改自定义策略 [时相同的设置](#use-the-security--compliance-center-to-modify-anti-phishing-policies)。
 
    修改默认策略时，以下设置不可用：
 
@@ -217,9 +215,9 @@ ms.locfileid: "51203755"
 
 2. 请注意"状态" **列中** 的值：
 
-   - 将开关滑动到 **"关闭"** 以禁用该策略。
+   - 将切换开关滑动 **到"关闭** ![ ""关闭 ](../../media/scc-toggle-off.png) "以禁用该策略。
 
-   - 将切换开关滑动 **到"打开** "以启用策略。
+   - 将切换开关滑动 **到"打开** ![ "" ](../../media/scc-toggle-on.png) 打开"以启用策略。
 
 无法禁用默认的防钓鱼策略。
 
@@ -235,7 +233,7 @@ ms.locfileid: "51203755"
 
 若要更改策略的优先级，请单击策略属性中的"增加优先级"或"减少优先级 (你无法直接修改安全与合规中心&优先级) 。  更改策略的优先级仅在有多个策略时有意义。
 
-1. 在安全&中心，转到威胁 **管理** \> **策略** \> **ATP 防钓鱼**。
+1. 在安全&合规中心，转到"**威胁管理** \> **策略** \> **""防钓鱼"。**
 
 2. 选择要修改的策略。 如果已选择，请取消选择它，然后再次选择它。
 
@@ -309,7 +307,7 @@ ms.locfileid: "51203755"
 若要创建防钓鱼策略，请使用以下语法：
 
 ```PowerShell
-New-AntiPhishPolicy -Name "<PolicyName>" [-AdminDisplayName "<Comments>"] [-EnableSpoofIntelligence <$true | $false>] [-AuthenticationFailAction <MoveToJmf | Quarantine>] [-EnableUnauthenticatedSender <$true | $false>]
+New-AntiPhishPolicy -Name "<PolicyName>" [-AdminDisplayName "<Comments>"] [-EnableSpoofIntelligence <$true | $false>] [-AuthenticationFailAction <MoveToJmf | Quarantine>] [-EnableUnauthenticatedSender <$true | $false>] [-EnableViaTag <$true | $false>]
 ```
 
 本示例将创建一个名为"Research Quarantine"的防钓鱼策略，并具有以下设置：

@@ -23,20 +23,23 @@ search.appverid:
 - GEA150
 ms.assetid: 1561140a-16a9-4a02-822d-a989250e479d
 description: 了解如何在 Microsoft 365 中购买域名。
-ms.openlocfilehash: eb0520f605715c3403e1ce0134aa60abed0f6751
-ms.sourcegitcommit: d4604e333507c6f57d5bf327531a241b649052de
+ms.openlocfilehash: 53c71796c09f08d1f50c58704b8dd95c1a241518
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51470507"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52537567"
 ---
 # <a name="buy-a-domain-name"></a>购买域名
+
+> [!NOTE]
+> 如果你的组织使用Office 365由世纪网络在中国运营的域，请参阅如何购买由世纪Office 365中国运营的[域。](/buy-a-domain-name?view=o365-21vianet#how-to-buy-a-domain-for-office-365-operated-by-21vianet.md)
 
  *若要添加、修改或删除域，**你必须** 是企业 **或** 企业计划的 [全局管理员](https://products.office.com/business/office)。这些更改会影响整个 *租户，自定义* 管理员或常规用户将无法进行这些更改。*  
 
  如果找不到要查找的内容，请 **[查看域常见问题解答](../setup/domains-faq.yml)**。 
   
-### <a name="sign-in-and-go-to-settings--domains--buy-a-domain"></a>登录并转到设置 \> \> 域购买域
+## <a name="sign-in-and-go-to-settings--domains--buy-a-domain"></a>登录并转到设置 \> \> 域购买域
 
 1. 在管理中心，转到“**设置**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">域</a>”页面。
     
@@ -68,23 +71,21 @@ ms.locfileid: "51470507"
 > [!NOTE]
 > 选择" **购买域**"时，如果租户是通过 Microsoft 合作伙伴购买/管理的，你可能会重定向到 Microsoft 合作伙伴的网站。
 
-### <a name="domain-privacy"></a>域隐私
+## <a name="domain-privacy"></a>域隐私
 通过购买域，我们提供免费的域隐私订阅。 这样一来，你的联系人信息将附加到你的域注册中，并保留为专用 DNS。 [了解更多信息。](https://whois.icann.org/en/privacy-and-proxy-services)
   
-### <a name="buy-a-domain-from-another-domain-registrar"></a>从另一域注册机构购买域
+## <a name="buy-a-domain-from-another-domain-registrar"></a>从另一域注册机构购买域
 如果要从 GoDaddy 域注册机构（而非[GoDaddy）](https://www.godaddy.com)购买域，建议使用以下支持自动设置 (域连接) 。 
   
 - [1 &amp; 1 IONOS](https://www.1and1.com/)
 - [WordPress](https://www.wordpress.com) 
 
    
-### <a name="transfer-your-domain-to-a-different-domain-registrar"></a>将你的域转移到另一家域注册机构
+## <a name="transfer-your-domain-to-a-different-domain-registrar"></a>将你的域转移到另一家域注册机构
 
 如果注册你的域的提供商不支持所有必要的 DNS 记录，则可以将域转移到其他域注册机构。在你转移域时，为了续订并保留域名，可以更改收款人。
   
 在要将您的域移动到的注册机构请求转移。在其网站上查找" **转移 DNS**"之类的选项。请注意，完成更改后，此更新可能需要几天时间才能传遍 Internet。
- 
-
 
 
 ::: moniker range="o365-21vianet"
@@ -104,7 +105,7 @@ ms.locfileid: "51470507"
 > [!NOTE]
 > 本文SharePoint联机公共网站的信息仅适用于您的组织在 2015 年 3 Microsoft 365 9 之前购买的网站。 
 
-## <a name="domain-registrars-that-support-all-dns-records-required-for-microsoft-365"></a>支持所有 DNS 记录所需的域注册机构Microsoft 365
+### <a name="domain-registrars-that-support-all-dns-records-required-for-microsoft-365"></a>支持所有 DNS 记录所需的域注册机构Microsoft 365
 
 - [Oray](https://oray.com/)
     
@@ -116,10 +117,10 @@ ms.locfileid: "51470507"
     
 ::: moniker-end
 
-## <a name="related-articles"></a>相关文章
+## <a name="related-content"></a>相关内容
 
-[将域添加到 Microsoft 365](../setup/add-domain.md)
+[在本文Microsoft 365 (](../setup/add-domain.md)域) 
 
-[关于域的常见问题](../setup/domains-faq.yml)
+[域常见问题](../setup/domains-faq.yml) (文章) 
 
-[更新 DNS 记录以使用当前托管提供商保留您的网站](../dns/update-dns-records-to-retain-current-hosting-provider.md)。
+[更新 DNS 记录，以使用当前](../dns/update-dns-records-to-retain-current-hosting-provider.md) 托管提供商 (网站) 

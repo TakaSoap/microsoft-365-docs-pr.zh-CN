@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: 本文包含有关 Microsoft 365 合规中心中的内容搜索电子数据展示工具的参考信息，可帮助你了解有关内容搜索的众多详细信息。
-ms.openlocfilehash: f3545cc4644ca8b0a96ee37713d8fe62be7466e5
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: 14660b4cfcd09f5346fa8d0d901880d0a6c774c2
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52332890"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538479"
 ---
 # <a name="feature-reference-for-content-search"></a>内容搜索的功能参考
 
@@ -33,19 +33,7 @@ ms.locfileid: "52332890"
 
 ## <a name="content-search-limits"></a>内容搜索限制
 
-- 有关适用于内容搜索的限制说明，请参阅 [内容搜索限制](limits-for-content-search.md)。
-  
-- Microsoft 会收集由服务中所有组织运行的内容搜索的性能信息。 尽管搜索查询的复杂性可能会影响搜索项，但是影响搜索所需时长的最大因素仍然是搜索的邮箱数。 尽管 Microsoft 未为搜索时间提供服务级别协议，但是下表根据搜索中所含的邮箱数列出了内容搜索的平均搜索时间。
-  
-  |**邮箱数**|**平均搜索时间**|
-  |:-----|:-----|
-  |100  <br/> |30 秒  <br/> |
-  |1,000  <br/> |45 秒  <br/> |
-  |10,000  <br/> |4 分钟  <br/> |
-  |25,000  <br/> |10 分钟  <br/> |
-  |50,000  <br/> |20 分钟  <br/> |
-  |100,000  <br/> |25 分钟  <br/> |
-  |||
+有关适用于内容搜索的限制说明，请参阅 [内容搜索限制](limits-for-content-search.md)。
   
 ## <a name="building-a-search-query"></a>构建搜索查询
 
@@ -71,7 +59,7 @@ ms.locfileid: "52332890"
   
 - 运行内容搜索时，Microsoft 365 将会自动检查搜索查询中是否存在不受支持的字符以及未大写的布尔运算符。 不受支持的字符往往会被隐藏，并且通常会引发搜索错误或者返回意外结果。 有关检查到的不受支持字符的详细信息，请参阅[检查内容搜索查询中是否存在错误](check-your-content-search-query-for-errors.md)。
     
-- 如果搜索查询中包含非英语字符（例如中文字符）关键字，则可以单击“**查询语言-国家/地区**”“![内容搜索中的查询语言-国家/地区](../media/8d4b60c8-e1f1-40f9-88ae-ee2a7eca0886.png)”并为该搜索选择语言-国家/地区文化代码值。 默认语言/区域是中性的。 如何判断是否需要更改内容搜索的语言设置？ 如果确定内容位置中包含所搜索的非英语字符，但搜索没有返回结果，则可能是语言设置的原因。 
+- 如果搜索查询中包含非英语字符（例如中文字符）关键字，则可以单击“**查询语言-国家/地区**”“![内容搜索中的查询语言-国家/地区](../media/8d4b60c8-e1f1-40f9-88ae-ee2a7eca0886.png)”并为该搜索选择语言-国家/地区文化代码值。 默认语言/区域是中性的。 如何判断是否需要更改内容搜索的语言设置？ 如果确定内容位置中包含所搜索的非英语字符，但搜索没有返回结果，则可能是语言设置的原因。
   
 ## <a name="partially-indexed-items"></a>部分索引项
 

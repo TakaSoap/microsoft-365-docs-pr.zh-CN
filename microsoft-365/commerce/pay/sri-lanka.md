@@ -1,23 +1,24 @@
 ---
 title: 斯里兰卡的付款信息
-author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
+author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
-ms.custom: CommercePayInfo
+ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: 了解在哪里发送订阅付款。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: cf589ec2afc2f16d24bf55d3e0de8b6763036169
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: 944342f9132212f7fd94d752ee300464571508f4
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52272812"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52537807"
 ---
 # <a name="payment-information-for-sri-lanka"></a>斯里兰卡的付款信息
 
@@ -30,4 +31,4 @@ Please pay in USD only and reference your invoice number (s) on your invoice inv
 **Bank：** Bank，新加坡  
 **SWIFT 代码：** 一个  
 **帐号** ：0-817543-138  
-**帐户名称：** MICROSOFT REGIONAL SALES CORP  
+**帐户名称：** MICROSOFT REGIONAL SALES CORP
