@@ -118,8 +118,6 @@
           href: configure-junk-email-settings-on-exo-mailboxes.md
         - name: 配置出站垃圾邮件筛选
           href: configure-the-outbound-spam-policy.md
-        - name: 配置欺骗智能
-          href: learn-about-spoof-intelligence.md
         - name: 创建阻止发件人列表
           href: Create-block-sender-lists-in-office-365.md
         - name: 创建安全发件人列表
@@ -150,10 +148,6 @@
           href: support-for-anonymous-inbound-email-messages-over-ipv6.md
         - name: 安装适用于 Office 的应用程序防护
           href: install-app-guard.md
-        - name: 为政治宣传活动开发/测试环境配置组和用户
-          href: configure-groups-and-users-for-a-political-campaign-dev-test-environment.md
-        - name: 在政治宣传活动开发/测试环境中创建团队网站
-          href: create-team-sites-in-a-political-campaign-dev-test-environment.md
     - name: 迁移
       items:
         - name: 从 Google Postini、Barracuda 垃圾邮件和病毒防火墙或 Cisco IronPort 切换到 EOP
@@ -226,13 +220,13 @@
           href: campaigns.md
         - name: 调查恶意电子邮件问题
           href: investigate-malicious-email-that-was-delivered.md
-        - name: 查看安全与合规中心 Office 365 报告的 Defender
-          href: view-reports-for-mdo.md
         - name: 查看自动调查的详细信息和结果
           href: air-view-investigation-results.md
-        - name: 查看安全与合规中心内的电子邮件安全报告
+        - name: 查看 Defender for Office 365 报告
+          href: view-reports-for-mdo.md
+        - name: 查看电子邮件安全报告
           href: view-email-security-reports.md
-        - name: 查看安全与合规中心中的邮件流报告
+        - name: 查看邮件流报告
           href: view-mail-flow-reports.md
         - name: 在独立 EOP 中查看管理员审核日志
           href: view-the-admin-audit-log-eop.md
@@ -240,6 +234,8 @@
           href: reporting-and-message-trace-in-exchange-online-protection.md
         - name: 自动转发的邮件见解
           href: mfi-auto-forwarded-messages-report.md
+        - name: 模拟见解
+          href: impersonation-insight.md
         - name: 邮件流地图
           href: mfi-mail-flow-map-report.md
         - name: 手动提交邮件至 Microsoft
@@ -256,6 +252,8 @@
           href: mfi-outbound-and-inbound-mail-flow.md
         - name: SMTP 身份验证客户端见解和报告
           href: mfi-smtp-auth-clients-report.md
+        - name: 欺骗智能见解
+          href: learn-about-spoof-intelligence.md
         - name: 将恶意软件和非恶意软件提交给 Microsoft
           href: submitting-malware-and-non-malware-to-microsoft-for-analysis.md
         - name: 顶级域邮件流状态见解
@@ -266,8 +264,6 @@
           href: use-mail-flow-rules-to-see-what-your-users-are-reporting-to-microsoft.md
         - name: 队列见解
           href: mfi-queue-alerts-and-queues.md
-        - name: 演练 - 欺骗智能见解
-          href: walkthrough-spoof-intelligence-insight.md
     - name: 响应
       items:
         - name: 快速检测和处理受影响的用户帐户
