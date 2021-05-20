@@ -18,13 +18,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 7257cb50-0d5c-4f7a-ac2e-9fe5d13bb5cb
-description: 使用有效的工作或学校帐户登录时，用户可以在 Microsoft 365 体验中通过 Cortana 获得基于云的协助服务，以满足 Office 365 的企业级隐私、安全性和合规性承诺。
-ms.openlocfilehash: dd00972f6e84f5d430ad860ea9cbf637bd7c790f
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+description: 具有有效工作或学校帐户的用户可以在满足企业Microsoft 365安全承诺Office 365 Cortana 体验。
+ms.openlocfilehash: aad371fc531a03f42e1756a41405082b6b528b06
+ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52537459"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52582772"
 ---
 # <a name="cortana-in-microsoft-365"></a>Cortana in Microsoft 365
 
@@ -183,3 +183,12 @@ Cortana 发送包含你所做的任务和承诺的个性化简介电子邮件，
 3. 选择“**保存更改**”。
 
 对于受 Microsoft 服务协议[和](https://go.microsoft.com/fwlink/p/?LinkId=2109174) [Microsoft](https://privacy.microsoft.com/privacystatement)隐私声明约束的服务，Microsoft 是数据控制者。 作为数据控制者，Microsoft 根据 Microsoft 隐私声明使用数据来改进 [产品和服务](https://privacy.microsoft.com/privacystatement)。
+
+
+## <a name="related-content"></a>相关内容
+
+[Cortana 在Teams (](/microsoftteams/cortana-in-teams)中的语音) 
+
+[配置 Cortana Windows 10 (](/windows/configuration/cortana-at-work/cortana-at-work-overview)文章) 
+
+[通过 Cortana 播放我的电子邮件可以做什么？](https://support.microsoft.com/help/4558256)

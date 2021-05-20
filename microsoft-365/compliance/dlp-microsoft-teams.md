@@ -14,48 +14,74 @@ ms.collection:
 - M365-security-compliance
 search.appverid:
 - MET150
-description: 现在可以将 DLP 策略应用于Microsoft Teams和频道。 阅读本文，详细了解它的工作原理。
-ms.openlocfilehash: 9fdce86473dcfbb7ec75b9d371b8782d4141ef57
-ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
+description: Microsoft Teams聊天和频道支持数据丢失防护 (DLP) 策略。
+ms.openlocfilehash: e55bfa34b2495465f573bcede3ebda2308dbbbbc
+ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52572461"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52583384"
 ---
 # <a name="data-loss-prevention-and-microsoft-teams"></a>数据丢失防护和 Microsoft Teams
 
-> [!NOTE]
-> 数据丢失防护功能最近添加到 Microsoft Teams E5/A5、Office 365 Microsoft 365 E5/A5、Microsoft 365 信息保护和管理或 Office 365 高级合规版 许可用户的 Microsoft Teams 聊天和频道消息中。 Office 365和Microsoft 365 E3包括适用于 SharePoint Online、OneDrive 和 Exchange Online 的 DLP 保护。 这还包括通过 Teams 共享Teams使用 SharePoint Online 和 OneDrive 共享文件。
-在聊天中支持 DLP Teams需要 E5。
-要详细了解许可要求，请参阅 [Microsoft 365 租户级服务许可指南](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance)。
-
-## <a name="overview-of-dlp-for-microsoft-teams"></a>适用于 Microsoft Teams 的 DLP 概述
-
-最近 [，数据丢失防护](dlp-learn-about-dlp.md)功能进行了扩展，Microsoft Teams聊天和频道消息，**包括私人频道消息**。 
-
-> [!IMPORTANT]
-> DLP 当前仅适用于聊天或频道线程中的实际消息。 活动通知（包括短消息预览并基于用户的通知设置显示）目前不包含在 Teams DLP中。 即使已应用 DLP 策略并删除了邮件本身的敏感信息，预览中显示的邮件部分的任何敏感信息仍将在通知中可见。
-
-如果您的组织具有 DLP，则现在您可以定义防止用户共享频道或聊天会话中Microsoft Teams敏感信息的策略。 下面是此保护的工作原理的一些示例：
+如果您的组织具有 DLP (数据丢失) ，您可以定义防止用户共享 Microsoft Teams 频道或聊天会话中敏感信息的策略。 下面是此保护的工作原理的一些示例：
 
 - **示例 1：保护邮件中的敏感信息**。 假设有人尝试在来宾聊天或频道中Teams与外部用户 (敏感信息) 。 如果已定义 DLP 策略以防止出现此情况，则包含发送给外部用户的敏感信息的邮件将被删除。 根据 DLP 策略的配置方式，这会自动发生，且在数秒钟内发生。
 
     > [!NOTE]
     > 与具有Microsoft Teams的用户共享时，用于Microsoft Teams DLP 会阻止敏感内容：<br/>- [团队和](/MicrosoftTeams/guest-access) 频道中的来宾访问;或<br/>- [会议和](/MicrosoftTeams/manage-external-access) 聊天会话中的外部访问。 <p>外部聊天会话的 DLP 仅在发送方和接收方均在"仅Teams且使用本地联盟Microsoft Teams[才能工作](/microsoftteams/manage-external-access)。 DLP for Teams 不会阻止与本地[](/microsoftteams/teams-and-skypeforbusiness-coexistence-and-interoperability#interoperability-of-teams-and-skype-for-business)或非Skype for Business联盟聊天会话进行互操作的消息。
 
-- **示例 2：保护文档中的敏感信息**。 假设有人尝试在频道或聊天中与来宾共享Microsoft Teams，并且该文档包含敏感信息。 如果已定义 DLP 策略以防止出现此状态，文档将不会为这些用户打开。 请注意，在这种情况下，DLP 策略必须包含SharePoint和OneDrive，以便实施保护。  (这是 SharePoint 的 DLP 示例，显示在 Microsoft Teams 中，因此要求用户获得 Office 365 E3) 中包含的 Office 365 Office 365 DLP (的许可，但不要求用户获得 Office 365 高级合规版.) 的许可。
+- **示例 2：保护文档中的敏感信息**。 假设有人尝试在频道或聊天中与来宾共享Microsoft Teams，并且该文档包含敏感信息。 如果已定义 DLP 策略以防止出现此状态，文档将不会为这些用户打开。 DLP 策略必须包含 SharePoint 和 OneDrive，才能实施保护。 这是 SharePoint DLP 的一个示例，显示在 Microsoft Teams 中，因此要求用户获得 Office 365 E3) 中包含的 Office 365 Office 365 DLP (的许可，但不要求用户获得 Office 365 高级合规版.) 的许可。
+
+## <a name="dlp-licensing-for-microsoft-teams"></a>DLP 许可Microsoft Teams
+
+[数据丢失防护](dlp-learn-about-dlp.md)功能已扩展为包括Microsoft Teams消息，包括用于以下功能的 **专用频道** 消息：
+
+- Office 365E5/A5
+- Microsoft 365 E5/A5
+- Microsoft 365 信息保护和治理
+- Office 365 高级合规版
+
+Office 365和Microsoft 365 E3包括适用于 SharePoint Online、OneDrive 和 Exchange Online 的 DLP 保护。 这还包括通过 Teams 共享Teams使用 SharePoint Online 和 OneDrive 共享文件。
+
+在聊天中支持 DLP Teams需要 E5。
+
+要详细了解许可要求，请参阅 [Microsoft 365 租户级服务许可指南](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。
+
+> [!IMPORTANT]
+> DLP 仅适用于聊天或频道线程中的实际消息。 活动通知（包括短消息预览并基于用户的通知设置显示）不包含在 DLP Teams中。 即使已应用 DLP 策略并删除了邮件本身的敏感信息，预览中显示的邮件部分的任何敏感信息仍将在通知中可见。
+
+## <a name="scope-of-dlp-protection"></a>DLP 保护的范围
+
+DLP 保护以不同方式应用于Teams实体。
+
+|用户帐户/组/列表  |Teams实体 |可用的 DLP 保护|
+|---------|---------|---------|
+|单个用户帐户     |1：1/n 聊天         |是         |
+|     |常规聊天         |否         |
+|     |共享频道         |否         |
+|     |私人频道         |是         |
+|安全组/通讯组列表  | 1：1/n 聊天         |是         |
+|     |常规聊天         |否         |
+|     |共享频道         |否      |
+|     |私人频道         |是        |
+|Microsoft 365组    |1：1/n 聊天          |否         |
+|     |常规聊天          |是        |
+|     |共享频道|是 |
+|     |私人频道|否| 
+
 
 ## <a name="policy-tips-help-educate-users"></a>策略提示有助于培训用户
 
-与 DLP 在[Exchange、Outlook、Outlook 网页](data-loss-prevention-policies.md#policy-evaluation-in-exchange-online-outlook-and-outlook-on-the-web)版[、SharePoint Online、OneDrive for Business 网站](data-loss-prevention-policies.md#policy-evaluation-in-onedrive-for-business-and-sharepoint-online-sites)和[Office](data-loss-prevention-policies.md#policy-evaluation-in-the-office-desktop-programs)桌面客户端中的工作方式类似，当操作与 DLP 策略冲突时，会显示策略提示。 下面是策略提示的示例：
+与 DLP 在[Exchange、Outlook、Outlook 网页](data-loss-prevention-policies.md#policy-evaluation-in-exchange-online-outlook-and-outlook-on-the-web)版[、SharePoint Online、OneDrive for Business 网站](data-loss-prevention-policies.md#policy-evaluation-in-onedrive-for-business-and-sharepoint-online-sites)和[Office](data-loss-prevention-policies.md#policy-evaluation-in-the-office-desktop-programs)桌面客户端中的工作方式类似，当使用 DLP 策略触发操作时，会显示策略提示。 下面是策略提示的示例：
 
 ![阻止的邮件通知Teams](../media/dlp-teams-blockedmessage-notification.png)
 
-在这种情况下，发件人尝试在安全通道中共享Microsoft Teams号码。 The **What can I do？** link opens a dialog box that provides options for the sender to resolve the issue. 请注意，在这种情况下，发件人可以选择覆盖策略，或通知管理员查看并解决策略。
+在此，发件人尝试在一个安全通道中共享Microsoft Teams号码。 The **What can I do？** link opens a dialog box that provides options for the sender to resolve the issue. 请注意，发件人可以选择覆盖策略，或通知管理员查看并解析策略。
 
 ![用于解决阻止的邮件的选项](../media/dlp-teams-blockedmessage-possibleactions.png)
 
-在组织中，可以选择允许用户覆盖 DLP 策略。 此外，在配置 DLP 策略时，您可以使用默认策略提示，或 [为](#to-customize-policy-tips) 组织自定义策略提示。
+在组织中，可以选择允许用户覆盖 DLP 策略。 配置 DLP 策略时，可以使用默认策略提示，或 [为](#to-customize-policy-tips) 组织自定义策略提示。
 
 返回到我们的示例，其中发件人在 Teams 频道中共享了社会保险号码，以下是收件人看到的信息：
 
@@ -66,7 +92,7 @@ ms.locfileid: "52572461"
 
 若要执行该任务，须被分配具有编辑 DLP 策略权限的角色。 若要了解详细信息，请参阅[权限](data-loss-prevention-policies.md#permissions)。
 
-1. 转到安全与&中心 [https://protection.office.com](https://protection.office.com) () 并登录。
+1. 转到合规中心 [https://compliance.microsoft.com](https://compliance.microsoft.com) () 并登录。
 
 2. 选择“**数据丢失保护**” > “**策略**”。
 
@@ -93,7 +119,7 @@ ms.locfileid: "52572461"
 
 若要执行该任务，须被分配具有编辑 DLP 策略权限的角色。 若要了解详细信息，请参阅[权限](data-loss-prevention-policies.md#permissions)。
 
-1. 转到安全与&中心 [https://protection.office.com](https://protection.office.com) () 并登录。
+1. 转到合规中心 [https://compliance.microsoft.com](https://compliance.microsoft.com) () 并登录。
 
 2. 选择“**数据丢失保护**” > “**策略**”。
 
@@ -124,7 +150,7 @@ ms.locfileid: "52572461"
 
 若要执行该任务，须被分配具有编辑 DLP 策略权限的角色。 若要了解详细信息，请参阅[权限](data-loss-prevention-policies.md#permissions)。
 
-1. 转到安全与&中心 [https://protection.office.com](https://protection.office.com) () 并登录。
+1. 转到合规中心 [https://compliance.microsoft.com](https://compliance.microsoft.com) () 并登录。
 
 2. 选择 **“数据丢失保护”** > **“策略”** > **“创建策略”**。
 
@@ -148,9 +174,9 @@ ms.locfileid: "52572461"
     > [!NOTE]
     > 如果您希望确保包含敏感信息的文档未在 Teams 中以不当方式共享，请确保 **SharePoint 网站** 和 **OneDrive** 帐户以及 Teams 聊天和频道消息 **已** 打开。
 
-6. 在"**策略设置**"选项卡上的"自定义要保护的内容类型"下，保留默认的简单设置，或选择"**使用** 高级设置"，然后选择"下一步 **"。** 如果选择高级设置，你可以为策略创建或编辑规则。  (若要获取有关此的帮助，请参阅 [简单设置与高级](data-loss-prevention-policies.md#simple-settings-vs-advanced-settings)设置 。) 
+6. 在"**策略设置**"选项卡上的"自定义要保护的内容类型"下，保留默认的简单设置，或选择"**使用** 高级设置"，然后选择"下一步 **"。** 如果选择高级设置，你可以为策略创建或编辑规则。 若要获取有关此的帮助，请参阅 [简单设置与高级设置](data-loss-prevention-policies.md#simple-settings-vs-advanced-settings)。
 
-7.  在" **策略设置"** 选项卡上的 **"** 如果检测到敏感信息，想要做什么？"下，查看设置。  (可以在此处选择保留默认策略提示和电子邮件通知，或自定义它们[](use-notifications-and-policy-tips.md)。) 
+7.  在" **策略设置"** 选项卡上的 **"** 如果检测到敏感信息，想要做什么？"下，查看设置。 你可以在此处选择保留默认 [策略](use-notifications-and-policy-tips.md)提示和电子邮件通知，或自定义它们。
 
     > [!div class="mx-imgBorder"]
     > ![具有提示和通知的 DLP 策略设置](../media/dlp-teams-policysettings-tipsemails.png)
@@ -205,6 +231,5 @@ DLP 策略在尝试与外部来宾共享包含SharePoint敏感信息的文档时
 
 ## <a name="related-articles"></a>相关文章
 
-[创建、测试和优化 DLP 策略](create-test-tune-dlp-policy.md)
-
-[发送电子邮件通知并显示 DLP 策略的策略提示](use-notifications-and-policy-tips.md)
+- [创建、测试和优化 DLP 策略](create-test-tune-dlp-policy.md)
+- [发送电子邮件通知并显示 DLP 策略的策略提示](use-notifications-and-policy-tips.md)

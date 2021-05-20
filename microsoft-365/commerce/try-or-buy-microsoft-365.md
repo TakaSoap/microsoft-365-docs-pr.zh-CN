@@ -17,14 +17,14 @@ ms.custom:
 - AdminSurgePortfolio
 - commerce_purchase
 search.appverid: MET150
-description: 了解如何获取免费试用版或购买适用于Microsoft 365订阅。
+description: 注册 30 天免费试用版，Microsoft 365 商业标准版、Microsoft 365 商业高级版或 Microsoft 365 商业应用版。
 ms.date: 08/07/2020
-ms.openlocfilehash: 78716d78745616530729ff2fa5cfa31202e056c8
-ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
+ms.openlocfilehash: 20ceb683c6224e572a1c532330d45fa8fa5c8416
+ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52344682"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52583444"
 ---
 # <a name="try-or-buy-a-microsoft-365-for-business-subscription"></a>试用或购买Microsoft 365商业版订阅
 
@@ -143,9 +143,9 @@ Microsoft 365企业版是一种订阅服务，允许你在云中运行你的组�
 
 ## <a name="related-content"></a>相关内容
 
-[Microsoft 365企业培训视频 (](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)培训视频) \
+[Microsoft 365培训视频 (](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)视频) \
 [添加用户并同时分配许可证 (](../admin/add-users/add-users.md) 文章) \
 [向用户分配许可证](../admin/manage/assign-licenses-to-users.md)
 [升级到其他计划 (](subscriptions/upgrade-to-different-plan.md) 文章) \
 [购买或编辑适用于企业Microsoft 365加载项 (](buy-or-edit-an-add-on.md)文章) \
-[为订阅添加存储空间](add-storage-space.md)
+[为订阅添加存储空间 (](add-storage-space.md) 文章) 

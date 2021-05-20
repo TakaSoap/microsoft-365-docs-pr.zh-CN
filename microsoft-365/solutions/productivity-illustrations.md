@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: 32949081418a6984a2b34d039a4dc39d60a56608
-ms.sourcegitcommit: e02cf5702af178ddd2968877a808874ecb49ed2c
+ms.openlocfilehash: b47099dd0d26dba6a399ecff823bcc758be7e16d
+ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52029083"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52583636"
 ---
 # <a name="microsoft-365-productivity-illustrations"></a>Microsoft 365 生产力插图
 
@@ -83,7 +83,7 @@ Microsoft 365包括一组广泛的信息保护和合规性功能。 这些功能
 
 | 项目 | 说明 |
 |:-----|:-----|
-|[![模型海报：适用于用户的身份和设备Microsoft 365](../media/microsoft-365-policies-configurations/O365_Identity_device_protection_thumb.png)](../downloads/MSFT_cloud_architecture_identity&device_protection.pdf) <br/>  [以 PDF 格式查看](../downloads/MSFT_cloud_architecture_identity&device_protection.pdf) \|[以 PDF 格式下载](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_identity&device_protection.pdf) \|[下载为Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_identity&device_protection.vsdx)   <br/> 2020 年 9 月更新|请务必在数据、标识和设备中使用一致的保护级别。 此模型显示了可与保护标识和设备的功能相媲美的功能详细信息。  <br/> |
+|[![模型海报：适用于用户的身份和设备Microsoft 365](../media/microsoft-365-policies-configurations/o365-identity-device-protection-thumb.png)](../downloads/MSFT_cloud_architecture_identity&device_protection.pdf) <br/>  [以 PDF 格式查看](../downloads/MSFT_cloud_architecture_identity&device_protection.pdf) \|[以 PDF 格式下载](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_identity&device_protection.pdf) \|[下载为Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_identity&device_protection.vsdx)   <br/> 2020 年 9 月更新|请务必在数据、标识和设备中使用一致的保护级别。 此模型显示了可与保护标识和设备的功能相媲美的功能详细信息。  <br/> |
  
 <a name="BKMK_ediscovery"></a>
 ## <a name="advanced-ediscovery-architecture-in-microsoft-365"></a>Advanced eDiscovery体系结构Microsoft 365

@@ -16,15 +16,15 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: 管理员可以了解如何在 Exchange Online Protection (EOP) 中查看、创建、修改和删除出站垃圾邮件) 。
+description: 管理员可以了解如何在 EOP 服务中查看、创建、修改和删除Exchange Online Protection (垃圾邮件) 。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2448bb7942f7694d2a6d6e9b98537a2b7ccb14d1
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: ead8aa75c0218dd2c4cad96e50e37ed3ddc12815
+ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52331666"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52583180"
 ---
 # <a name="configure-outbound-spam-filtering-in-eop"></a>在 EOP 中配置出站垃圾邮件筛选
 
@@ -35,15 +35,15 @@ ms.locfileid: "52331666"
 - [Microsoft Defender for Office 365 计划 1 和计划 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-在邮箱在 Exchange Online 或独立 Exchange Online Protection (EOP) 组织中没有 Exchange Online 邮箱的 Microsoft 365 组织中，通过 EOP 发送的出站电子邮件将自动检查垃圾邮件和异常发送活动。
+在 Microsoft 365 组织中，邮箱在 Exchange Online 或独立 Exchange Online Protection (EOP) 组织中没有 Exchange Online 邮箱，则自动检查通过 EOP 发送的出站电子邮件是否包含垃圾邮件和异常发送活动。
 
-来自组织中用户的出站垃圾邮件通常指示帐户遭到入侵。 无论垃圾邮件可信度或 SCL) 是什么，可疑出站邮件都会标记为垃圾邮件 (并通过高风险传递池进行路由，以帮助保护[](high-risk-delivery-pool-for-outbound-messages.md)服务 (的信誉，即使 Microsoft 365 源电子邮件服务器从 IP 阻止列表) 中排除。 管理员将自动收到可疑的出站电子邮件活动的通知，并且会通过警报策略阻止 [用户](../../compliance/alert-policies.md)。
+来自组织中用户的出站垃圾邮件通常指示帐户遭到入侵。 无论垃圾邮件可信度或 SCL) ，可疑出站邮件都标记为垃圾邮件 (并通过高风险传送池进行路由，以帮助保护服务[](high-risk-delivery-pool-for-outbound-messages.md) (的信誉，即使 Microsoft 365 源电子邮件服务器不受 IP 阻止列表) 限制。 管理员将自动收到可疑的出站电子邮件活动的通知，并且会通过警报策略阻止 [用户](../../compliance/alert-policies.md)。
 
 EOP 使用出站垃圾邮件策略作为组织对垃圾邮件的整体防御的一部分。 有关详细信息，请参阅[反垃圾邮件保护](anti-spam-protection.md)。
 
 管理员可以查看、编辑和配置 (，但不能) 默认出站垃圾邮件策略。 更精细地来说，您还可以创建适用于组织中特定用户、组或域的自定义出站垃圾邮件策略。 自定义策略始终优先于默认策略，但可以更改自定义策略的优先级（即运行顺序）。
 
-您可以在安全与合规中心或 PowerShell &为在 Exchange Online 中拥有邮箱的 Microsoft 365 组织配置 (Exchange Online PowerShell 中的出站垃圾邮件策略;适用于没有 Exchange Online 邮箱的组织的独立 EOP PowerShell) 。
+您可以在安全与合规中心内或在 PowerShell & PowerShell 中为邮箱位于 (Exchange Online 中的 Microsoft 365 组织配置出站Exchange Online;适用于没有邮箱或邮箱Exchange Online的独立 EOP PowerShell) 。
 
 EOP 中的出站垃圾邮件策略的基本元素包括：
 
@@ -56,7 +56,7 @@ EOP 中的出站垃圾邮件策略的基本元素包括：
 - 修改策略时，与名称、优先级、启用或禁用以及收件人筛选器相关的设置将修改出站垃圾邮件筛选器规则。 所有其他设置修改关联的出站垃圾邮件筛选器策略。
 - 删除策略时，将删除出站垃圾邮件筛选器规则和相关出站垃圾邮件筛选器策略。
 
-在 Exchange Online PowerShell 或独立 EOP PowerShell 中，单独管理策略和规则。 有关详细信息，请参阅本文稍后的使用 Exchange Online PowerShell 或独立 [EOP PowerShell 配置出站](#use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-outbound-spam-policies) 垃圾邮件策略部分。
+在 Exchange Online PowerShell 或独立 EOP PowerShell 中，单独管理策略和规则。 有关详细信息，请参阅本文Exchange Online [PowerShell 或独立 EOP PowerShell](#use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-outbound-spam-policies)配置出站垃圾邮件策略一节。
 
 每个组织都有一个名为"默认"的内置出站垃圾邮件策略，该策略具有以下属性：
 
@@ -78,10 +78,10 @@ EOP 中的出站垃圾邮件策略的基本元素包括：
 
   有关详细信息，请参阅 [Exchange Online 中权限](/exchange/permissions-exo/permissions-exo)。
 
-  **注意**：
-
-  - 在 Microsoft 365 管理中心将用户添加到相应的 Azure Active Directory 角色后，将为用户提供所需的权限 _和_ Microsoft 365 中其他功能的所需权限。 有关详细信息，请参阅 [关于管理员角色](../../admin/add-users/about-admin-roles.md)。
-  - [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) 中的 **仅查看组织管理人员** 角色组也提供到该功能的只读访问。
+  > [!NOTE]
+  > - 在 Microsoft 365 管理中心将用户添加到相应的 Azure Active Directory 角色后，将为用户提供所需的权限 _和_ Microsoft 365 中其他功能的所需权限。 有关详细信息，请参阅 [关于管理员角色](../../admin/add-users/about-admin-roles.md)。
+  > 
+  > - [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) 中的 **仅查看组织管理人员** 角色组也提供到该功能的只读访问。
 
 - 有关针对出站垃圾邮件策略的建议设置，请参阅 [EOP 出站垃圾邮件筛选器策略设置](recommended-settings-for-eop-and-office365.md#eop-outbound-spam-policy-settings)。
 
@@ -122,7 +122,7 @@ EOP 中的出站垃圾邮件策略的基本元素包括：
 
         您添加的收件人显示在飞出 **页面的** "收件人列表"部分。 若要删除收件人，请单击"删除 ![ "按钮 ](../../media/scc-remove-icon.png) 。
 
-     1. 完成后，单击“**保存**”。
+     1. 完成时，请单击“保存”。
 
         若要禁用此设置，请清除此复选框。
 
@@ -163,7 +163,7 @@ EOP 中的出站垃圾邮件策略的基本元素包括：
 
      - **无操作，仅** 警报：发送电子邮件通知。
 
-6.  (可选 **) 展开自动** 转发部分，以控制用户向外部发件人自动转发电子邮件。 有关详细信息，请参阅在 [Microsoft 365 中控制自动外部电子邮件转发](external-email-forwarding.md)。
+6.  (可选 **) 展开自动** 转发部分，以控制用户向外部发件人自动转发电子邮件。 有关详细信息，请参阅在邮件中[控制自动外部电子邮件Microsoft 365。](external-email-forwarding.md)
 
    > [!NOTE]
    >
@@ -288,16 +288,15 @@ EOP 中的出站垃圾邮件策略的基本元素包括：
 1. 创建出站垃圾邮件筛选器策略。
 2. 创建出站垃圾邮件筛选器规则，该规则指定该规则适用的出站垃圾邮件筛选器策略。
 
- **注意**：
-
-- 您可以创建一个新的出站垃圾邮件筛选器规则，并为其分配现有的未关联的出站垃圾邮件筛选器策略。 出站垃圾邮件筛选器规则不能与多个出站垃圾邮件筛选器策略关联。
-
-- 可以在 PowerShell 中的新出站垃圾邮件筛选器策略上配置以下设置，这些设置在创建策略之前&安全与合规中心不可用：
-
-  - 在 `$false` **New-HostedOutboundSpamFilterRule** cmdlet cmdlet 上 ("禁用"的新策略) 。
-  - 在 _\<Number\>_ **New-HostedOutboundSpamFilterRule** cmdlet (中) 策略的优先级) 。
-
-- 在 PowerShell 中新建的出站垃圾邮件筛选策略在安全与合规&中不可见，除非将策略分配给垃圾邮件筛选规则。
+> [!NOTE]
+> - 您可以创建一个新的出站垃圾邮件筛选器规则，并为其分配现有的未关联的出站垃圾邮件筛选器策略。 出站垃圾邮件筛选器规则不能与多个出站垃圾邮件筛选器策略关联。
+> 
+> - 可以在 PowerShell 中的新出站垃圾邮件筛选器策略上配置以下设置，这些设置在创建策略之前&安全与合规中心不可用：
+> 
+>   - 在 `$false` **New-HostedOutboundSpamFilterRule** cmdlet cmdlet 上 ("禁用"的新策略) 。
+>   - 在 _\<Number\>_ **New-HostedOutboundSpamFilterRule** cmdlet (中) 策略的优先级) 。
+> 
+> - 在 PowerShell 中新建的出站垃圾邮件筛选策略在安全与合规&中不可见，除非将策略分配给垃圾邮件筛选规则。
 
 #### <a name="step-1-use-powershell-to-create-an-outbound-spam-filter-policy"></a>步骤 1：使用 PowerShell 创建出站垃圾邮件筛选器策略
 
@@ -309,7 +308,7 @@ New-HostedOutboundSpamFilterPolicy -Name "<PolicyName>" [-AdminDisplayName "<Com
 
 本示例创建一个名为 Contoso Executives 的新出站垃圾邮件筛选器策略，该策略具有以下设置：
 
-- 收件人速率限制仅限于默认值较小的值。 有关详细信息，请参阅跨 [Microsoft 365 选项发送限制](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits-across-office-365-options)。
+- 收件人速率限制仅限于默认值较小的值。 有关详细信息，请参阅跨邮件[发送Microsoft 365选项](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits-across-office-365-options)。
 
 - 达到其中一个限制后，将阻止用户发送邮件。
 

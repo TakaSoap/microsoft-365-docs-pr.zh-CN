@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: dcae50150eb3b21e65e68a5cea376a0cdef31a65
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 3df8fbf20fd00bd584af2fd329949939433a19eb
+ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538443"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52583480"
 ---
 # <a name="communication-compliance-feature-reference"></a>通信合规性功能参考
 
@@ -50,7 +50,7 @@ ms.locfileid: "52538443"
 
 自创建策略起，每 24 小时扫描一次通信。 例如，如果你在上午 11：00 创建冒犯性语言策略，该策略将每 24 小时在每天上午 11：00 收集通信合规性信号。 编辑策略不会更改这一次。 若要查看策略的上次扫描日期和时间，请导航到"策略"页上的"上次策略扫描 **"** 列。 创建新策略后，可能需要 24 小时才能查看第一次策略扫描日期和时间。 上次扫描的日期和时间将转换为本地系统的时区。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 >[!Important]
 >默认状态下，全局管理员没有对通信合规性功能的访问权限。 在可以访问任何通信合规性功能之前，必须在此步骤中分配角色。
@@ -311,6 +311,7 @@ ms.locfileid: "52538443"
 | **大小** | 邮件的大小（以 KB 为单位）。 |
 | **主题/标题** | 消息主题或聊天标题。 |
 | **Tags** | 分配给邮件的标记，可以是 *Questionable* *、Compliant* 或 *Non-compliant*。 |
+| **Language** | 邮件中检测到的文本语言。 邮件根据大多数邮件文本的语言进行分类。 例如，对于同时包含德语和意大利语文本的邮件，但大多数文本为德语，该邮件被归类为德语 (DE) 。 支持以下语言：简体中文 (-ZH) 、英语 (EN) 、法语 (FR) 、德语 (DE) 、意大利语 (IT) 、日语 (JP) 、葡萄牙语 (PT) 和西班牙语 (ES) 。 例如，若要筛选分类为德语和意大利语的邮件，请在"语言 (搜索框中输入"DE，IT") 2 位数字的语言代码。 若要查看检测到的邮件语言分类，请选择一封邮件，选择"查看邮件详细信息"，然后滚动到 EmailDetectedLanguage 字段。 |
 | **升级到** | 作为邮件升级操作一部分包含的用户的用户名。 |
 | **分类器** | 应用于邮件的内置和自定义分类器的名称。 一些示例 *包括冒犯性语言*、*定向冒犯**、冒犯性*、*威胁* 等。
 

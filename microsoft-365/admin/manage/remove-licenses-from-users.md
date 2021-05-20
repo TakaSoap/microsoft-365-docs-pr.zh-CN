@@ -21,12 +21,12 @@ ms.custom:
 search.appverid: MET150
 description: 了解如何从用户帐户取消分配许可证。
 ms.date: 07/01/2020
-ms.openlocfilehash: 5ef28b3065703ec224e6426c4fdbfffdb5269b22
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 4ff6a0e5554117cd1fc2d818c04edabc9e33b2a1
+ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52537495"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52582904"
 ---
 # <a name="unassign-licenses-from-users"></a>取消分配用户许可证
 
@@ -35,7 +35,7 @@ ms.locfileid: "52537495"
 > [!NOTE]
 > 作为管理员，你不能为组织中用户购买的自助购买订阅分配或取消分配许可证。 你可以 [接管自助购买订阅](../../commerce/subscriptions/manage-self-service-purchases-admins.md#take-over-a-self-service-purchase-subscription)，然后分配或取消分配许可证。
 
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>准备工作
 
 - 你必须是全局、许可证、用户管理员才能取消分配许可证。 有关详细信息，请参阅[关于 Microsoft 365 管理员角色](../add-users/about-admin-roles.md)。
 - 可[使用 Office 365 PowerShell 删除用户帐户的许可证](../../enterprise/remove-licenses-from-user-accounts-with-microsoft-365-powershell.md)。
@@ -76,19 +76,19 @@ ms.locfileid: "52537495"
 
 ::: moniker range="o365-worldwide"
 
-1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。
+1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
- 1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">活动用户</a>”页面。
+ 1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">活动用户</a>”页面。
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
- 1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">活动用户</a>”页面。
+ 1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">活动用户</a>”页面。
 
 ::: moniker-end
 
@@ -100,30 +100,30 @@ ms.locfileid: "52537495"
 
 ::: moniker range="o365-worldwide"
 
-1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。
+1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
- 1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">活动用户</a>”页面。
+ 1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">活动用户</a>”页面。
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
- 1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">活动用户</a>”页面。
+ 1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">活动用户</a>”页面。
 
 ::: moniker-end
 
 2. 选择要取消分配许可证的用户姓名旁边的圆圈。
-3. At the top， select the three dots (more actions) ， then select **Manage product licenses**.
+3. 在顶部选择三个点（更多操作），然后选择“**管理产品许可证**”。
 4. 在“**管理产品许可证**”窗格中，选择“**替换现有产品许可证分配**”\>“**下一步**”。
 5. 在"替换现有产品"窗格的底部，选中"从所选用户删除所有产品许可证"复选框，然后选择"替换"" \> **关闭"。**
 
 ## <a name="what-happens-to-a-users-data-when-you-remove-their-license"></a>删除用户许可证时，用户数据会发生什么情况？
 
-- 从用户删除许可证后，与该帐户关联的数据将存储 30 天。 30 天宽限期后，数据将被删除且无法恢复。
+- 从用户删除许可证后，Exchange帐户关联的联机数据将进行 30 天。 30 天宽限期后，数据将被删除且无法恢复。
 - 保存OneDrive for Business的文件不会删除，除非用户已从管理中心Microsoft 365 Active Directory 同步删除。 有关详细信息，请参阅OneDrive[和删除](/onedrive/retention-and-deletion)。
 - 删除许可证后，用户邮箱将不再可用电子数据展示工具（如内容搜索或Advanced eDiscovery。 有关详细信息，请参阅 Content Search in Microsoft 365 中的"搜索断开连接或已取消[许可的Microsoft 365。](../../compliance/content-search.md)
 - 如果你有一个Enterprise订阅，Office 365 企业版 E3，Exchange Online使用非活动邮箱保留已删除用户帐户的[邮箱数据](../../compliance/inactive-mailboxes-in-office-365.md)。 有关详细信息，请参阅 Create [and manage inactive mailboxes in Exchange Online](../../compliance/create-and-manage-inactive-mailboxes.md)。

@@ -1,5 +1,5 @@
 ---
-title: 更改名称服务器以使用任意域注册机构设置 Microsoft 365
+title: 更改名称服务器以设置Microsoft 365注册机构的域名
 f1.keywords:
 - CSH
 ms.author: pebaum
@@ -25,22 +25,22 @@ search.appverid:
 - GEA150
 ms.assetid: a8b487a9-2a45-4581-9dc4-5d28a47010a2
 description: 了解如何在 Microsoft 365 中添加和设置域，以便电子邮件和 Skype for Business Online 等服务使用你自己的域名。
-ms.openlocfilehash: 1348beb09fcbc5c12d01dbf197b1cb1240decded
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: 447cc69aa2c4c3edcf1c4c6a2435cdc27fc22cd2
+ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52332638"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52582988"
 ---
-# <a name="change-nameservers-to-set-up-microsoft-365-with-any-domain-registrar"></a>更改名称服务器以使用任意域注册机构设置 Microsoft 365
+# <a name="change-nameservers-to-set-up-microsoft-365-with-any-domain-registrar"></a>更改名称服务器以设置Microsoft 365注册机构的域名
 
  如果找不到要查找的内容，请 **[查看域常见问题解答](../setup/domains-faq.yml)**。 
   
-按照以下说明在 Microsoft 365 中添加和设置域，以便电子邮件和 Teams 等服务使用你自己的域名。 为此，需要验证域，然后将域的名称服务器更改为 Microsoft 365，以便可以设置正确的 DNS 记录。 如果以下语句描述了您的情况，请按照以下步骤操作：
+请按照以下说明在 Microsoft 365中添加和设置你的域，以便电子邮件Teams服务将使用你自己的域名。 为此，您需要验证您的域，然后将您的域的名称服务器更改为 Microsoft 365以便您可以设置正确的 DNS 记录。 如果以下语句描述了您的情况，请按照以下步骤操作：
   
-- 你有你自己的域，并且想要设置它以使用 Microsoft 365。
+- 你有你自己的域，并且想要设置它以使用Microsoft 365。
     
-- 希望 Microsoft 365 管理 DNS 记录。  (如果愿意，可以管理 [自己的 DNS](../setup/add-domain.md)记录 .) 
+- 您希望Microsoft 365管理 DNS 记录。  (如果愿意，可以管理 [自己的 DNS](../setup/add-domain.md)记录 .) 
     
 ## <a name="add-a-txt-or-mx-record-for-verification"></a>添加 TXT 记录或 MX 记录进行验证
 <a name="BKMK_verify"> </a>
@@ -106,7 +106,7 @@ Microsoft 365 找到正确的 TXT 记录表明域已通过验证。
 ## <a name="change-your-domains-nameserver-ns-records"></a>更改域的名称服务器 (NS) 记录
 <a name="BKMK_nameservers"> </a>
 
-在 Microsoft 365 中执行域设置向导的最后一步时，还有一项任务。 若要使用 Microsoft 365 服务（如电子邮件）设置域，请更改域注册机构中域的名称服务器 (或 NS) 记录，以指向 Microsoft 365 主名称服务器和辅助名称服务器。 然后，由于 Microsoft 365 托管 DNS，因此会自动为服务设置所需的 DNS 记录。 通过按照您的域注册机构在其网站的帮助内容中所提供步骤进行操作，您可以自己更新名称服务器记录。 如果不熟悉 DNS，请联系域注册机构的支持人员。
+当您在 Microsoft 365 中到达域设置向导的最后一步时，您还有一项任务。 若要使用 Microsoft 365 服务（如电子邮件）设置域，您可以在域注册机构中更改域的名称服务器 (或 NS) 记录，以指向 Microsoft 365 主名称服务器和辅助名称服务器。 然后，由于Microsoft 365 DNS，系统会自动为服务设置所需的 DNS 记录。 通过按照您的域注册机构在其网站的帮助内容中所提供步骤进行操作，您可以自己更新名称服务器记录。 如果不熟悉 DNS，请联系域注册机构的支持人员。
 
 ::: moniker range="o365-worldwide"
   
@@ -129,7 +129,7 @@ Microsoft 365 找到正确的 TXT 记录表明域已通过验证。
 3. 保存所做的更改。
     
 > [!CAUTION]
-> 将域的 NS 记录更改为指向 Microsoft 365 名称服务器时，当前与域关联的所有服务都受到影响。 如果您跳过了向导中的任何步骤，或是将域用于博客、购物车或其他服务，则需要执行一些附加步骤。 否则此更改可能会导致服务停机时间，例如导致电子邮件访问丢失或您的当前网站不可访问。 
+> 将域的 NS 记录更改为指向Microsoft 365服务器时，当前与域关联的所有服务都受到影响。 如果您跳过了向导中的任何步骤，或是将域用于博客、购物车或其他服务，则需要执行一些附加步骤。 否则此更改可能会导致服务停机时间，例如导致电子邮件访问丢失或您的当前网站不可访问。 
 
 ::: moniker-end
 
@@ -150,15 +150,15 @@ Microsoft 365 找到正确的 TXT 记录表明域已通过验证。
 3. 保存所做的更改。
     
 > [!CAUTION]
-> 当您将域的 NS 记录更改为指向由世纪通名称服务器运营的 Office 365 时，当前与域关联的所有服务都受到影响。 如果您跳过了向导中的任何步骤，或是将域用于博客、购物车或其他服务，则需要执行一些附加步骤。 否则此更改可能会导致服务停机时间，例如导致电子邮件访问丢失或您的当前网站不可访问。 
+> 当您将域的 NS 记录更改为指向由世纪Office 365服务器运营的域时，当前与域关联的所有服务都受到影响。 如果您跳过了向导中的任何步骤，或是将域用于博客、购物车或其他服务，则需要执行一些附加步骤。 否则此更改可能会导致服务停机时间，例如导致电子邮件访问丢失或您的当前网站不可访问。 
 
 ::: moniker-end
   
 例如，以下是电子邮件和网站托管可能需要的一些附加步骤：
   
-- 在更改 NS 记录之前，将使用你的域的所有电子邮件地址移动到 Microsoft 365。
+- 在更改 NS 记录之前，Microsoft 365域的所有电子邮件地址进行移动。
     
-- 希望添加当前用于网站地址的域，如 www.fourthcoffee.com？ 在添加域以保持其网站现在托管位置的托管位置时，您可以采取以下步骤，以便用户仍可在将域的 NS 记录更改为指向 Microsoft 365 后访问网站。
+- 希望添加当前用于网站地址的域，如 www.fourthcoffee.com？ 在添加域以保持其网站现在托管位置的托管位置时，您可以采取以下步骤，以便当您将域的 NS 记录更改为指向网站记录后，用户仍可访问Microsoft 365。
 
 1. 在管理中心，转到“**设置**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">域</a>”页面。
 
@@ -196,3 +196,10 @@ Microsoft 365 找到正确的 TXT 记录表明域已通过验证。
 > [!NOTE]
 > Your nameserver record updates may take up to several hours to update across the Internet's DNS system. 然后，你的 Microsoft 电子邮件和其他服务都将设置为使用你的域。 
   
+## <a name="related-content"></a>相关内容
+
+[添加 DNS 记录以连接域](create-dns-records-at-any-dns-hosting-provider.md) (文章) 
+
+[查找并修复添加域或 DNS 记录之后出现的问题](find-and-fix-issues.md)（文章）
+
+[管理域](index.yml)（链接页）

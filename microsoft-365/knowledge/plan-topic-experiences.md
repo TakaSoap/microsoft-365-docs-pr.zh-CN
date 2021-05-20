@@ -10,12 +10,12 @@ ms.service: o365-administration
 search.appverid: MET150
 localization_priority: Normal
 description: 了解如何规划 Microsoft Viva 主题
-ms.openlocfilehash: d64e4b341fe96d7aa3636f58bffe3dd8f388838e
-ms.sourcegitcommit: b6763a8ab240fbdd56078a7c9452445d0c4b9545
+ms.openlocfilehash: de7534ce58a7888ac822826ef4ef1b4934ed8cb1
+ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "51957535"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52583108"
 ---
 # <a name="plan-for-microsoft-viva-topics"></a>规划 Microsoft Viva 主题
 
@@ -31,6 +31,8 @@ ms.locfileid: "51957535"
 - 要为主题中心指定什么名称
 
 将尊重数据的安全和隐私，并且主题体验不会向用户授予对无权限文件的额外访问权限。 作为规划过程的一部分，我们还建议您阅读 [Microsoft Viva](topic-experiences-security-privacy.md) 主题安全和隐私。
+
+若要了解有关 Viva 主题背后的 AI 技术，请阅读 Microsoft Viva 主题中的 [Alexandria：从大数据到大数据](https://www.microsoft.com/research/blog/alexandria-in-microsoft-viva-topics-from-big-data-to-big-knowledge)。
 
 ## <a name="requirements"></a>要求
 

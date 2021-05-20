@@ -6,18 +6,18 @@ manager: pamgreen
 ms.reviewer: ssquires
 audience: admin
 ms.topic: article
-ms.date: 05/10/2021
+ms.date: 05/19/2021
 ms.prod: microsoft-365-enterprise
 search.appverid: ''
 localization_priority: None
 ROBOTS: NOINDEX, NOFOLLOW
 description: 了解如何使用Microsoft Teams解决方案创建合同管理Microsoft 365渠道。
-ms.openlocfilehash: d703f6f7286a6d9584e8b18d4e283174f42a95bd
-ms.sourcegitcommit: 58d74ff60303a879e35d112f10f79724ba41188f
+ms.openlocfilehash: 20ace5d17550c8dd800368957dd940c9857bce5d
+ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52301796"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52583132"
 ---
 # <a name="step-2-use-microsoft-teams-to-create-your-contract-management-channel"></a>步骤 2. 使用Microsoft Teams创建合同管理通道
 
@@ -44,13 +44,13 @@ ms.locfileid: "52301796"
 ## <a name="customize-your-contracts-tab-tile-view"></a>自定义"合同"选项卡磁贴视图
 
 > [!NOTE]
-> 本节引用 **solutionfiles** zip 文件中包含的 **ContractCard.json** 文件中包含的代码示例。
+> 本节引用合同管理解决方案资产存储库中包含的ContractTileFormatting.js[ on](https://github.com/pnp/syntex-samples/blob/main/scenario%20assets/Contracts%20Management/View%20Formatter/ContractTileFormatting.json) 文件中包含的代码 [示例](https://github.com/pnp/syntex-samples/tree/main/scenario%20assets/Contracts%20Management)。
 
 虽然Teams可以在磁贴视图中查看你的合同，但你可能希望对其进行自定义以查看想要在合同卡中可见的合同数据。 例如，对于" **合同** "选项卡，成员在合同卡上查看客户、承包商和费用金额非常重要。 所有这些字段都是通过应用到文档库的SharePoint提取自每个协定的。 你还希望能够针对每个状态将磁贴标题栏更改为不同的颜色，以便成员可以轻松查看合同在审批过程中的情况。 例如，所有批准的合同都将有一个蓝色标题栏。
 
    ![列表视图。](../media/content-understanding/tile.png)
 
-你使用的自定义磁贴视图要求你更改用于设置当前磁贴视图格式的 JSON 文件。 通过下载 on 文件，可以引用用于创建卡片视图ContractCard.js **JSON** 文件。 在下列部分中，你将看到代码的特定部分，这些代码适用于合同卡中的功能。
+你使用的自定义磁贴视图要求你更改用于设置当前磁贴视图格式的 JSON 文件。 你可以参考 JSON 文件，该文件用于通过查看 onContractTileFormatting.js[ 创建卡片](https://github.com/pnp/syntex-samples/blob/main/scenario%20assets/Contracts%20Management/View%20Formatter/ContractTileFormatting.json) 视图。 在下列部分中，你将看到代码的特定部分，这些代码适用于合同卡中的功能。
 
 如果要在 Teams 频道中查看或更改视图的 JSON 代码，请在 Teams 频道中，选择视图下拉菜单，然后选择"设置当前视图的格式 **"。**
 
@@ -58,7 +58,7 @@ ms.locfileid: "52301796"
 
 ## <a name="card-size-and-shape"></a>卡片大小和形状
 
-在 **ContractCard.js** zip 文件中下载的 on 文件中，查看以下部分以查看卡片的大小和形状格式的代码。
+In the [ContractTileFormatting.json](https://github.com/pnp/syntex-samples/blob/main/scenario%20assets/Contracts%20Management/View%20Formatter/ContractTileFormatting.json) file， look at the following section to see the code for how the size and shape of the card is formatted.
 
 ```JSON
                   {
@@ -84,7 +84,7 @@ ms.locfileid: "52301796"
 
 ## <a name="contract-status"></a>合同状态
 
-以下代码允许你定义每个标题卡的状态。 请注意，"新建 ("、"正在审阅"、"已批准"和"已拒绝) 值将为每个状态值显示不同的颜色代码。   在 **ContractCard.js** 上，查看定义状态的部分。
+以下代码允许你定义每个标题卡的状态。 请注意，"新建 ("、"正在审阅"、"已批准"和"已拒绝) 值将为每个状态值显示不同的颜色代码。   在 [ContractTileFormatting.js](https://github.com/pnp/syntex-samples/blob/main/scenario%20assets/Contracts%20Management/View%20Formatter/ContractTileFormatting.json) 中，查看定义状态的部分。
 
 ```JSON
           {
@@ -109,9 +109,9 @@ ms.locfileid: "52301796"
 
 每个合同卡将显示针对每个合同提取的三个字段 (*客户端*、承包商和费用) 。   此外，你还希望显示文件由用于标识它的SharePoint分类的时间/日期。 
 
-在 **ContractCard.js** 上的文件中，以下各节定义了其中每一个。
+在 [ContractTileFormatting.js](https://github.com/pnp/syntex-samples/blob/main/scenario%20assets/Contracts%20Management/View%20Formatter/ContractTileFormatting.json) 中，以下各节定义了其中每一部分。
 
-### <a name="client"></a>Client
+### <a name="client"></a>客户端
 
 此部分定义"客户端"在卡片上的显示方式，并使用特定合约的值。
 

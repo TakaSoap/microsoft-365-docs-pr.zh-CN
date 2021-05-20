@@ -22,13 +22,13 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: 77f90d4a-dc7f-4f09-8972-c1b03ea85a67
-description: '了解如何查找创建 DNS 记录所需的值/信息Microsoft 365。 '
-ms.openlocfilehash: 45994139b11a2fd5a03b2e979dd6af334bc1f00b
-ms.sourcegitcommit: eac5d9f759f290d3c51cafaf335a1a1c43ded927
+description: 收集创建 DNS 记录所需的值/信息，以将域连接到 Microsoft 365 订阅。
+ms.openlocfilehash: c8ff30c27e67c8a29b7122ea80a6a33f0594b1b9
+ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50126367"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52582952"
 ---
 # <a name="gather-the-information-you-need-to-create-dns-records"></a>收集创建 DNS 记录所需的信息
 
@@ -97,3 +97,11 @@ ms.locfileid: "50126367"
 4. 转到"在任何 DNS 托管提供商处创建 [DNS](create-dns-records-at-any-dns-hosting-provider.md)记录"，然后从注册机构列表中选择 DNS 主机，以查看有关在 DNS 主机网站上添加记录的分步说明。
     
 5. 按照在您的 DNS 主机上创建记录的步骤执行操作。
+
+## <a name="related-content"></a>相关内容
+
+[域常见问题](../setup/domains-faq.yml) (文章) 
+
+[查找并修复添加域或 DNS 记录之后出现的问题](find-and-fix-issues.md)（文章）
+
+[管理域](index.yml)（链接页）

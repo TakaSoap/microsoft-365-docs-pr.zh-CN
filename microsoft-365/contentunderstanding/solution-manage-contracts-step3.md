@@ -6,18 +6,18 @@ manager: pamgreen
 ms.reviewer: ssquires
 audience: admin
 ms.topic: article
-ms.date: 05/10/2021
+ms.date: 05/19/2021
 ms.prod: microsoft-365-enterprise
 search.appverid: ''
 localization_priority: None
 ROBOTS: NOINDEX, NOFOLLOW
 description: 了解如何使用Power Automate解决方案来创建流程以处理Microsoft 365合同。
-ms.openlocfilehash: d9892110d6aebd3eaae6fbc21d453b7eb14d7f7e
-ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
+ms.openlocfilehash: 54e92f36b19cefde92111cdbc960fad7715cf8b0
+ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52281094"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52583096"
 ---
 # <a name="step-3-use-power-automate-to-create-your-flow-to-process-your-contracts"></a>步骤 3. 使用 Power Automate 创建处理合同的流程
 
@@ -36,11 +36,11 @@ ms.locfileid: "52281094"
 
 ## <a name="prepare-your-contract-for-review"></a>准备合同进行审阅
 
-当通过你的合成文档理解SharePoint标识和分类合约时，Power Automate流将首先将状态更改为"正在审阅"。
+当合约由你的SharePoint文档理解模型标识和分类时，Power Automate流将首先将状态更改为 **"正在审阅"。**
 
 ![更新状态。](../media/content-understanding/flow-overview.png)
 
-签出文件后，将状态值更改为"正在审阅"。
+签出文件后，将状态值更改为 **"正在审阅"。**
 
 ![正在审阅状态。](../media/content-understanding/in-review.png)
 
@@ -141,7 +141,7 @@ ms.locfileid: "52281094"
 
    ![卡片状态为已批准。](../media/content-understanding/approved-contracts-tab.png)
 
-- 在流中，状态更改为"已批准"。
+- 在流中，状态更改为"已批准 **"。**
 
    ![Flow状态为已批准。](../media/content-understanding/status-approved.png)
 

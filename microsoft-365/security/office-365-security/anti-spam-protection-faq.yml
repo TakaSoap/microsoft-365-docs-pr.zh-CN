@@ -17,15 +17,15 @@ metadata:
   - m365initiative-defender-office365
   ms.custom:
   - seo-marvel-apr2020
-  description: 管理员可以查看有关 Exchange Online Protection 和 EOP 中反垃圾邮件保护的常见问题 (解答) 。
+  description: 管理员可以查看有关 EOP 中反垃圾邮件保护的常见问题Exchange Online Protection (解答) 。
   ms.technology: mdo
   ms.prod: m365-security
-  ms.openlocfilehash: 430ed10d74dea909415ee0ca32d33ad8d006ae6b
-  ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+  ms.openlocfilehash: e632ab1183c43cd50da7c2cf7832a5a18fa64d50
+  ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/12/2021
-  ms.locfileid: "52333917"
+  ms.lasthandoff: 05/20/2021
+  ms.locfileid: "52583612"
 title: 反垃圾邮件保护常见问题解答
 summary: >
   [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
@@ -40,7 +40,7 @@ summary: >
   - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 
-  本主题针对在 Exchange Online 中拥有邮箱的 Microsoft 365 组织或没有 Exchange Online 邮箱的独立 Exchange Online Protection (EOP) 组织提供了有关反恶意软件保护的常见问题和解答。
+  本主题为在 Exchange Online 中拥有邮箱的 Microsoft 365 组织或没有邮箱的独立 Exchange Online Protection (EOP) 组织提供了有关反恶意软件保护Exchange Online常见问题和解答。
 
 
   有关隔离的问题和解答，请参阅[隔离常见问题解答](quarantine-faq.yml)。
@@ -70,7 +70,9 @@ sections:
       零日垃圾邮件变体是从未捕获或分析过的第一代未知垃圾邮件变体，因此我们的反垃圾邮件筛选器还没有可用于检测它的信息。 在我们的垃圾邮件分析员捕获和分析零日垃圾邮件示例后，如果它符合垃圾邮件分类条件，我们的反垃圾邮件筛选器将进行更新以检测它，并且不再被视为"零日"。
 
 
-      **注意：** 如果您收到可能是零日垃圾邮件变体的邮件，为了帮助我们改进服务，请使用将邮件和文件报告给 Microsoft 中所述的方法之一将邮件提交给 [Microsoft。](report-junk-email-messages-to-microsoft.md)
+      > [!NOTE]
+
+      > 如果您收到可能是零日垃圾邮件变体的邮件，为了帮助我们改进服务，请使用将邮件和文件报告给 Microsoft 中所述的方法之一将邮件提交给[Microsoft。](report-junk-email-messages-to-microsoft.md)
   - question: >
       是否需要配置该服务以提供反垃圾邮件保护？
     answer: >
@@ -97,7 +99,7 @@ sections:
   - question: >
       批量电子邮件筛选是否自动启用？
     answer: >
-      正确。 有关批量电子邮件详细信息，请参阅垃圾邮件和批量电子邮件之间有什么[区别？。](what-s-the-difference-between-junk-email-and-bulk-email.md)
+      是。 For more information about bulk email, see [What's the difference between junk email and bulk email?](what-s-the-difference-between-junk-email-and-bulk-email.md)
   - question: >
       服务是否提供 URL 筛选？
     answer: >
@@ -109,13 +111,13 @@ sections:
   - question: >
       我能否收到垃圾邮件报告？
     answer: >
-      可以，例如，可以在 Microsoft 365 管理中心获取垃圾邮件检测报告。 此报告以唯一邮件计数显示垃圾邮件量。 有关报告详细信息，请参阅以下链接：
+      是的，例如，可以在管理中心获取Microsoft 365检测报告。 此报告以唯一邮件计数显示垃圾邮件量。 有关报告详细信息，请参阅以下链接：
 
 
-      Exchange Online 客户 [：在 Exchange Online 中监视、报告和邮件跟踪](/exchange/monitoring/monitoring)
+      Exchange Online客户[：监视、报告和邮件跟踪Exchange Online](/exchange/monitoring/monitoring)
 
 
-      独立 EOP 客户 [：Exchange Online Protection 中的报告和邮件跟踪](reporting-and-message-trace-in-exchange-online-protection.md)
+      独立 EOP 客户：[电子邮件中的报告和](reporting-and-message-trace-in-exchange-online-protection.md)Exchange Online Protection
   - question: >
       有人向我发送了一封邮件，我找不到它。 我怀疑它已被检测为垃圾邮件。 是否有可用于查找的工具？
     answer: >
@@ -128,19 +130,19 @@ sections:
 
       当发件人被阻止发送出站垃圾邮件时，您可以发送通知到一个特定的电子邮件地址。 有关此设置的详细信息，请参阅[配置出站垃圾邮件策略](configure-the-outbound-spam-policy.md)。
   - question: >
-      能否将第三方反垃圾邮件和反恶意软件提供程序与 Exchange Online 结合使用？
+      能否将第三方反垃圾邮件和反恶意软件提供程序与 Exchange Online？
     answer: >
-      正确。 尽管我们建议你将 MX 记录指向 Microsoft，但我们知道将你的电子邮件路由到 Microsoft 第一个地址有合法业务原因。
+      是。 尽管我们建议你将 MX 记录指向 Microsoft，但我们知道将你的电子邮件路由到 Microsoft 第一个地址有合法业务原因。
 
 
-      - **入站**：将 MX 记录更改为指向第三方提供程序，然后将邮件重定向到 EOP 进行其他处理。 有关详细信息，请参阅增强的 Exchange Online 中的 [连接器筛选](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors)。
+      - **入站**：将 MX 记录更改为指向第三方提供程序，然后将邮件重定向到 EOP 进行其他处理。 有关详细信息，请参阅增强[的筛选连接器在Exchange Online。](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors)
 
 
-      - **出站**：配置从 Microsoft 365 到目标第三方提供程序的智能主机路由。
+      - **出站**：配置从Microsoft 365到目标第三方提供程序的智能主机路由。
   - question: >
       Microsoft 是否拥有任何有关如何保护自己免受网络钓鱼诈骗之害的文档？
     answer: >
-      正确。 有关详细信息，请参阅保护 [Internet 上的隐私](https://support.microsoft.com/help/4091455)
+      是。 有关详细信息，请参阅保护 [Internet 上的隐私](https://support.microsoft.com/help/4091455)
   - question: >
       是否正在调查垃圾邮件和恶意软件邮件的发送者，或将其转移到执法机构实体？
     answer: >

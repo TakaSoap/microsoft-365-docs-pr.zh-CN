@@ -5,8 +5,7 @@ keywords: 安全解决方案， 设置， 配置， Microsoft 365 E5， 高级�
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
-ms.audience: ITPro
-audience: Admin
+audience: ITPro
 ms.topic: how-to
 ms.prod: m365-security
 ms.technology: m365d
@@ -17,12 +16,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: a0c728e5f273752792f851c72df2dfe243116221
-ms.sourcegitcommit: a46532bb422ee51331f478ff50cc5444586bf6a9
+ms.openlocfilehash: daa85b406b0fcb56dee55d9f49d39e247d0b6264
+ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/09/2021
-ms.locfileid: "51650214"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52583696"
 ---
 # <a name="configure-threat-protection-capabilities-across-microsoft-365"></a>跨组织配置威胁防护Microsoft 365
 
@@ -35,8 +34,8 @@ ms.locfileid: "51650214"
 Microsoft 已测试并推荐了一组特定的条件访问和相关策略，用于保护对所有 SaaS 应用程序（尤其是 Microsoft 365） 的访问。 建议对基线、敏感和高度管控保护使用策略。 首先实现基准保护策略。 
 
 
-[ ![ 配置标识和设备访问的常见策略](../media/microsoft-365-policies-configurations/Identity_device_access_policies_byplan.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/Identity_device_access_policies_byplan.png) 
- [请参阅此映像的较大版本](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/Identity_device_access_policies_byplan.png)
+[ ![ 配置标识和设备访问的常见策略](../media/microsoft-365-policies-configurations/identity-device-access-policies-byplan.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/identity-device-access-policies-byplan.png) 
+ [请参阅此映像的较大版本](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/identity-device-access-policies-byplan.png)
 
 ### <a name="to-implement-baseline-protection-for-microsoft-365"></a>为安全机制实现Microsoft 365
 
@@ -162,12 +161,12 @@ Microsoft 365Defender 将跨工作负载的警报、事件、自动调查和响�
 ![Microsoft 365 安全中心](../media/solutions-architecture-center/m365-security-center.png)
 
 安全Microsoft 365中心面向安全管理员和安全运营团队。 在Microsoft 365安全中心，你可以：
-- 使用安全分数 查看组织的整体 [安全运行状况](https://docs.microsoft.com/microsoft-365/security/defender/microsoft-secure-score)。
+- 使用安全分数 查看组织的整体 [安全运行状况](/microsoft-365/security/defender/microsoft-secure-score)。
 - [监视和查看](../security/defender-endpoint/threat-protection-reports.md) 有关标识、数据、设备、应用和基础结构状态的报告。
-- 连接事件触发警报[的点](https://docs.microsoft.com/microsoft-365/security/defender/incident-queue)。
+- 连接事件触发警报[的点](/microsoft-365/security/defender/incident-queue)。
 - 使用 [自动调查和修正](../security/defender/m365d-autoir.md) 来解决威胁。
-- [主动搜寻威胁](https://docs.microsoft.com/microsoft-365/security/defender/advanced-hunting-overview)，例如入侵尝试或影响电子邮件、数据、设备和标识的入侵活动。
-- [通过威胁分析了解](https://docs.microsoft.com/microsoft-365/security/defender/latest-attack-campaigns) 最新的攻击活动和技术。
+- [主动搜寻威胁](/microsoft-365/security/defender/advanced-hunting-overview)，例如入侵尝试或影响电子邮件、数据、设备和标识的入侵活动。
+- [通过威胁分析了解](/microsoft-365/security/defender/latest-attack-campaigns) 最新的攻击活动和技术。
 - ...等等！
 
 ### <a name="more-information-about-the-microsoft-365-security-center"></a>有关安全中心Microsoft 365详细信息

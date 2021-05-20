@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 ms.technology: mdo
-ms.openlocfilehash: 2bd719377e36cf608a0fe75078ab8bef004ad92e
-ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
+ms.openlocfilehash: 42ab124f3026cf0b7441edf44c0e6433be5f0ecd
+ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52346324"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52583661"
 ---
 # <a name="common-identity-and-device-access-policies"></a>常见标识和设备访问策略
 
@@ -42,7 +42,7 @@ ms.locfileid: "52346324"
 
 下图演示了推荐的一组策略。 它显示每个策略所适用的保护层，以及策略是适用于电脑、手机和平板电脑，还是适用于这两类设备。 它还指示配置这些策略的地方。
 
-[![用于配置标识和设备访问的常见策略](../../media/microsoft-365-policies-configurations/Identity_device_access_policies_byplan.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/Identity_device_access_policies_byplan.png)
+[![用于配置标识和设备访问的常见策略](../../media/microsoft-365-policies-configurations/identity-device-access-policies-byplan.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/identity-device-access-policies-byplan.png)
 
 以下是包含指向各个策略的链接的一页 PDF 摘要：
 

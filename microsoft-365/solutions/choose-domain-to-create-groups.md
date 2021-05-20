@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: 7cf5655d-e523-4bc3-a93b-3ccebf44a01a
 recommendations: false
 description: 了解如何使用 PowerShell 配置电子邮件地址策略，选择Microsoft 365组时使用的域。
-ms.openlocfilehash: a0142ea5f5aa088c4be79fc8699a616d9cdd9390
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 4d620c3344f83f56afd05c00d78615331dd413ed
+ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538215"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52583144"
 ---
 # <a name="choose-the-domain-to-use-when-creating-microsoft-365-groups"></a>选择在创建组时Microsoft 365域
 
@@ -119,10 +119,10 @@ Remove-EmailAddressPolicy -Identity StudentsGroups
     
 - 最多可为组织配置 100 个电子邮件地址策略。
     
-## <a name="related-articles"></a>相关文章
+## <a name="related-content"></a>相关内容
 
-[协作治理规划分步规划](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
+[协作治理规划分步 (](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step) 文章) 
 
-[创建协作管理计划](collaboration-governance-first.md)
+[Create your collaboration governance plan (](collaboration-governance-first.md) article) 
 
-[在管理Microsoft 365创建一个组](../admin/create-groups/create-groups.md)
+[在管理Microsoft 365中心创建一个](../admin/create-groups/create-groups.md) (组) 

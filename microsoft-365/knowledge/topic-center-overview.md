@@ -14,16 +14,16 @@ ms.collection:
 - m365initiative-viva-topics
 ROBOTS: ''
 localization_priority: None
-ms.openlocfilehash: 2e7152530dc3221eb3ab01047416993178193732
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: 073c14f84f4858a1853da062bf87ae9e78c05cbd
+ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52333814"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52583588"
 ---
 # <a name="topic-center-overview-in-microsoft-viva-topics"></a>Microsoft Viva 主题中的主题中心概述
 
-在 Microsoft Viva 主题中，主题中心是一个新式 SharePoint 网站，它充当组织的一个知识中心。 它在 Microsoft 365 管理中心的 [Viva](set-up-topic-experiences.md) 主题设置期间创建。
+在 Microsoft Viva 主题中，主题中心是一个SharePoint新式网站，可用作组织的一个知识中心。 在管理中心的[Viva 主题设置过程中](set-up-topic-experiences.md)Microsoft 365创建。
 
 主题中心具有一个包含主题 **Web** 部件的默认主页，所有许可用户都可以查看他们具有连接的主题。 
 
@@ -34,10 +34,10 @@ ms.locfileid: "52333814"
 主题中心在 Viva 主题设置期间创建。 设置完成后，管理员可以在主题中心管理页面上[找到 URL。](./topic-experiences-administration.md#to-access-topics-management-settings)
 
 
-1. 在 Microsoft 365 管理中心中，选择"设置 **"，** 然后选择"**组织设置"。**
+1. 在管理Microsoft 365，选择"设置"，然后选择"**组织设置"。**
 2. 在"**服务"** 选项卡上，选择"**主题体验"。**
 
-    ![将人员与知识连接](../media/admin-org-knowledge-options-completed.png) 
+    ![连接人员了解知识](../media/admin-org-knowledge-options-completed.png) 
 
 3. 选择" **主题中心"** 选项卡。在 **"网站地址** "下是指向主题中心的链接。
 
@@ -69,7 +69,7 @@ ms.locfileid: "52333814"
 
 ## <a name="manage-topics-page"></a>"管理主题"页
 
-若要在主题中心的 **"** 管理主题"页上工作，您需要具有知识管理器角色所需的管理主题权限。 管理员可在知识管理设置期间向用户分配这些权限[](set-up-topic-experiences.md)，或者管理员随后可通过 Microsoft 365 管理中心添加新用户。 [](topic-experiences-knowledge-rules.md)
+若要在主题中心的 **"** 管理主题"页上工作，您需要具有知识管理器角色所需的管理主题权限。 管理员可在知识管理设置期间向用户分配这些权限[](set-up-topic-experiences.md)，或者管理员随后可通过管理中心Microsoft 365用户[](topic-experiences-knowledge-rules.md)。
 
 在 **"管理主题** "页上，主题仪表板显示您有权访问的所有主题（从指定的源位置标识）。 每个主题将显示主题的发现日期。 分配了管理主题权限的用户可以查看未确认的主题，并选择：
 
@@ -79,7 +79,7 @@ ms.locfileid: "52333814"
  
 - 删除主题：使最终用户无法发现该主题。 该主题将移至" **已删除** "选项卡，稍后可以确认（如果需要）。 
 
-若要详细了解如何管理**管理主题页面上的主题，请参阅 [管理主题](manage-topics.md)。
+若要详细了解如何管理"管理主题" **页上的主题，** 请参阅管理 [主题](manage-topics.md)。
 
 ## <a name="create-or-edit-a-topic"></a>创建或编辑主题
 

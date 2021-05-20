@@ -12,12 +12,12 @@ search.appverid: ''
 localization_priority: None
 ROBOTS: NOINDEX, NOFOLLOW
 description: 了解如何使用 SharePoint Syntex 来识别合约文件，并使用 Microsoft 365 提取数据。
-ms.openlocfilehash: f246dd4ed619dd9885d2c45c69d607cfa9c2483f
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 67c0a072b070cd414f5079fe4fb61e7391839951
+ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538551"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52583564"
 ---
 # <a name="step-1-use-sharepoint-syntex-to-identify-contract-files-and-extract-data"></a>步骤 1. 使用 SharePoint Syntex 标识协定文件并提取数据
 
@@ -42,7 +42,7 @@ ms.locfileid: "52538551"
 ## <a name="steps-to-create-and-train-your-model"></a>创建和训练模型的步骤
 
 > [!NOTE]
-> 对于这些步骤，可以使用 Microsoft SharePoint[示例存储库中的示例文件](https://github.com/pnp/syntex-samples)。 此存储库中的示例包含文档了解模型文件和用于训练模型的文件。
+> 对于这些步骤，可以使用合同管理解决方案资产存储库中 [的示例文件](https://github.com/pnp/syntex-samples/tree/main/scenario%20assets/Contracts%20Management)。 此存储库中的示例包含文档了解模型文件和用于训练模型的文件。
 
 ### <a name="create-a-contract-model"></a>创建合同模型
 

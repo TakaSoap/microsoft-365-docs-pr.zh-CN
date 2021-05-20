@@ -27,12 +27,12 @@ ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: 本文中，管理员可了解 defender 保险箱链接保护，Office 365保护组织免受使用恶意 URL 的网络钓鱼和其他攻击。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 86ecea1e250821f6a7f08d204586db0e60052e5c
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: 573fd5b92400996fa595b5953028e20fcecec976
+ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52274432"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52583576"
 ---
 # <a name="safe-links-in-microsoft-defender-for-office-365"></a>保险箱Microsoft Defender for Office 365
 
@@ -52,6 +52,9 @@ ms.locfileid: "52274432"
 - **电子邮件：保险箱** 链接策略控制电子邮件中链接保险箱保护。 没有默认链接保险箱，因此若要保护电子邮件中的保险箱链接，需要创建一个或多个链接保险箱 **策略**。 有关说明，请参阅在[Microsoft Defender 保险箱设置链接策略Office 365。](set-up-safe-links-policies.md)
 
   有关电子邮件的链接保险箱保护功能，请参阅本文保险箱电子邮件的链接设置"部分。 [](#safe-links-settings-for-email-messages)
+  
+  > [!NOTE]
+  > 销售链接对启用邮件的公用文件夹不起作用。
 
 - **Microsoft Teams (** TAP Preview) ： 保险箱 Links protection for links in Teams conversations， group chats， or from channels is also controlled by 保险箱 Links policies. 没有默认链接保险箱，因此若要在 Teams 中保护 保险箱 链接，需要创建一个或多个保险箱 **链接策略**。
 
@@ -135,7 +138,7 @@ ms.locfileid: "52274432"
 - **优先级**：如果创建多个策略，可以指定策略的应用顺序。 没有两个策略可以具有相同的优先级，并且在应用第一个策略之后，策略处理将停止。
 
   有关优先级顺序以及如何评估和应用多个策略的详细信息，请参阅[电子邮件保护的顺序和优先级](how-policies-and-protections-are-combined.md)。
-
+  
 ### <a name="how-safe-links-works-in-email-messages"></a>链接保险箱在电子邮件中的工作方式
 
 在高级别上，下面将保险箱链接保护如何作用于电子邮件中的 URL：

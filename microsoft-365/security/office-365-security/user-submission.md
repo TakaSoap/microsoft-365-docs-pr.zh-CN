@@ -17,12 +17,12 @@ ms.collection:
 description: 管理员可以了解如何配置邮箱以收集用户报告的垃圾邮件和网络钓鱼电子邮件。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 321e27f22295a4da17d0eb37b477a1dc7b779d38
-ms.sourcegitcommit: 437bdbf3f99610869811e80432a59b5f244f7a87
+ms.openlocfilehash: a23f27478d01092705a47d49884f200478348182
+ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/08/2021
-ms.locfileid: "51644760"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52583708"
 ---
 # <a name="user-submissions-policy"></a>用户提交策略
 
@@ -54,7 +54,7 @@ ms.locfileid: "51644760"
 
 使用以下文章配置必备组件，以便用户报告的邮件转到自定义邮箱：
 
-- 通过创建 Exchange 邮件流规则来设置垃圾邮件可信度，跳过自定义邮箱上的垃圾邮件筛选。 请参阅 [使用 EAC 创建将邮件的 SCL](use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md#use-the-eac-to-create-a-mail-flow-rule-that-sets-the-scl-of-a-message) 设置为 **-1** 的邮件流规则。
+- 通过创建 Exchange 邮件流规则来设置垃圾邮件可信度，跳过自定义邮箱上的垃圾邮件筛选。 请参阅使用 EAC 创建邮件流规则，[该规则将邮件的 SCL](use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md#use-the-eac-to-create-a-mail-flow-rule-that-sets-the-scl-of-a-message)设置为"绕过 **垃圾邮件筛选"。**
 
 - 关闭自定义邮箱中恶意软件的扫描附件。 使用 [Defender for 保险箱](set-up-safe-attachments-policies.md)中的"设置Office 365附件策略"创建一个保险箱附件策略，其"附件未知保险箱"设置为"关闭 **"。** 
 
@@ -104,7 +104,7 @@ ms.locfileid: "51644760"
 
         - **提交后**：单击展开 ![ 图标 ](../../media/scc-expand-icon.png) 。 在 **"标题****"** 和"确认"消息框中，输入用户在使用"报告邮件"外接程序或"报告钓鱼邮件"外接程序报告邮件后看到的描述性文本。 可以使用变量 %type% 包含提交类型。
 
-      完成后，单击“**保存**”。 若要清除这些值，请单击"**用户提交**"页面上的"**还原"。**
+      完成时，请单击“保存”。 若要清除这些值，请单击"**用户提交**"页面上的"**还原"。**
     
     - **自定义最终用户报告选项**：单击此链接。 在出现的 **"自定义最终用户报告** 选项"飞出中，输入垃圾邮件报告选项的描述性文本。 
     
@@ -113,7 +113,7 @@ ms.locfileid: "51644760"
         - **自动发送报告**
         - **从不发送报告**
        
-      完成后，单击“**保存**”。
+      完成时，请单击“保存”。
 
         - **将报告的邮件发送到**：进行以下选择之一：
 
