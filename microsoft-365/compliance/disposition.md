@@ -16,18 +16,18 @@ search.appverid:
 - MOE150
 - MET150
 description: 监控和管理当你使用处置评审时或者根据配置的设置自动删除标记为记录的项目时的内容处置。
-ms.openlocfilehash: 13310eca369949e2b66163907be4268120aa0ed0
-ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
+ms.openlocfilehash: dd03c429bf1b12a4c733c2e6800d0b71ca7a691f
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52344924"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52532157"
 ---
 # <a name="disposition-of-content"></a>内容的处置
 
 >*[Microsoft 365 安全性与合规性的许可指南](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。*
 
-使用 Microsoft 365 合规中心“**记录管理**”中的“**处置**”页面来管理处置评审，并查看在保持期结束时自动删除的[记录](records-management.md#records)的元数据。
+使用 Microsoft 365 合规中心“**记录管理**”中的“**处置**”页面来管理处置评审，并查看在保持期结束时自动删除的 [记录](records-management.md#records)的元数据。
 
 > [!NOTE]
 > 推出预览版：**多阶段处置评审**
@@ -58,11 +58,19 @@ ms.locfileid: "52344924"
     未启用邮件的 Microsoft 365 组和安全组不支持此功能，也不会显示在列表中供选择。 如果需要创建新的启用邮件的安全组，请使用 Microsoft 365 管理中心的链接创建新组。 
     
     > [!IMPORTANT]
-    > 你不能禁用此权限或替换从合规中心启用的组。 但是，可使用 [Enable-ComplianceTagStorage](/powershell/module/exchange/enable-compliancetagstorage) cmdlet 启用其他启用邮件的安全组。
-    > 
-    > 例如：`Enable-ComplianceTagStorage -RecordsManagementSecurityGroupEmail dispositionreviewers@contosoi.com`
+    > 启用组后，你无法在合规中心更改组。 请参阅下一部分，了解如何使用 PowerShell 启用其他组。
 
 - 处于预览阶段：“**记录管理设置**”选项仅对记录管理管理员可见。 
+
+#### <a name="enabling-another-security-group-for-disposition"></a>启用另一个安全组用于处置
+
+在 Microsoft 365 合规中心的“**记录管理设置**”中启用了安全组用于处置后，你将无法对该组禁用此权限，也不能在合规中心中替换选定的组。 但是，可使用 [Enable-ComplianceTagStorage](/powershell/module/exchange/enable-compliancetagstorage) cmdlet 启用其他启用邮件的安全组。
+
+例如： 
+
+```PowerShell
+Enable-ComplianceTagStorage -RecordsManagementSecurityGroupEmail dispositionreviewers@contosoi.com
+````
 
 ### <a name="enable-auditing"></a>启用审核
 
@@ -127,7 +135,7 @@ ms.locfileid: "52344924"
 
 如果你需要多人在保持期结束后审阅某个项目，请再次选择“**添加阶段**”，并针对所需的阶段数重复配置过程，最多五个阶段。 
 
-在处置的每个阶段，你为该阶段指定的任何用户都有权在保持期结束后对该项目执行下一个操作。 这些用户还可将其他用户添加到其处置评审阶段。
+在处置的每个阶段，你为该阶段指定的任何用户都有权在保持期结束后对该项目执行下一个操作。这些用户还可以将其他用户添加到其处置审核阶段。
 
 > [!NOTE]
 > 通过配置标签，可以将配置用于处置评审的现有保留标签升级为使用多阶段处置评审。 在标签向导中，选择“**添加阶段**”，或者编辑现有审阅者或添加新的审阅者。
@@ -142,13 +150,17 @@ ms.locfileid: "52344924"
 
 ### <a name="how-to-customize-email-messages-for-disposition-review"></a>如何自定义处置评审的电子邮件
 
+发送给审阅者的默认电子邮件通知示例：
+
+![项目准备好进行处置审阅时包含默认文本的电子邮件通知示例](../media/disposition-review-email.png)
+
 另外在预览阶段，你还可以自定义发送给处置审阅者的电子邮件，以用于初始通知和提醒。
 
 从合规中心的任意处置页面中，选择“**记录管理设置**”：  
 
 ![记录管理设置](../media/record-management-settings.png)
 
-然后选择“**电子邮件模板**”选项卡，并指定是仅使用默认电子邮件模板，还是将你自己的文本添加到默认模板。 你的自定义文本将添加到保留标签相关信息之后和后续步骤说明之前的电子邮件说明中。
+然后选择“**处置通知**”选项卡，并指定是仅使用默认电子邮件模板，还是将你自己的文本添加到默认模板。 你的自定义文本将添加到保留标签相关信息之后和后续步骤说明之前的电子邮件说明中。
 
 可添加所有语言的文本，但当前不支持格式和图像。 URL 和电子邮件地址可以文本格式输入，根据电子邮件客户端在自定义电子邮件中显示为超链接或不设置格式的文本。
 
@@ -162,7 +174,7 @@ If you need additional information, visit the helpdesk website (https://support.
 
 ### <a name="viewing-and-disposing-of-content"></a>查看和处置内容
 
-通过电子邮件通知审阅者已准备好所需评论的内容时，他们将转到 Microsoft 365 合规中心中 **记录管理** 中的 **处置** 选项卡。 审阅者可以查看每个保留标签有多少个项目正在等待处置，“**类型**”显示为“**挂起的处置**”。 然后，他们选择一个保留标签并 **在新窗口中打开** 以查看带有该标签的所有内容：
+通过电子邮件通知审阅者已准备好需评审的内容，他们将单击邮件中的链接，转到 Microsoft 365 合规中心内“**记录管理**”中的“**处置**”页面。 在这个页面中，审阅者可以查看每个保留标签有多少个项目正在等待处置，“**类型**”显示为“**挂起的处置**”。 然后，他们选择一个保留标签并 **在新窗口中打开** 以查看带有该标签的所有内容：
 
 ![在新窗口中打开以进行处置评审](../media/open-in-new-window.png)
 

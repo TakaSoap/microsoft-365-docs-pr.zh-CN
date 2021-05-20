@@ -20,13 +20,14 @@ ms.custom:
 - Ent_Architecture
 - seo-marvel-jun2020
 ms.assetid: 1d51bd87-17bf-457c-b698-61821de3afa0
+recommendations: false
 description: 了解如何使用三层保护配置 Teams 以实现更好的文件共享安全性，从而平衡安全性和易于协作。
-ms.openlocfilehash: 37d59d968d3a8e83a5b42fcce4c0400940314a41
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: ab2dd4cbf2b9cfc7b285f049eeaa876371574202
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50916210"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52539211"
 ---
 # <a name="configure-teams-with-three-tiers-of-protection"></a>配置具有三层保护的 Teams
 
@@ -87,7 +88,7 @@ ms.locfileid: "50916210"
 
 默认情况下，团队所有者和成员可以与团队外部的人员共享网站本身，而无需将其实际添加到团队中。 建议不要使用此方法，因为这会让用户管理变得复杂，并可能会导致非团队成员的人员能够在团队拥有者不知情的情况下存取团队文件。 为了防止这种情况，从基线保护级别开始，我们建议仅允许所有者直接共享站点。
 
-尽管团队没有只读权限选项，但 SharePoint 网站有此权限。 如果你的合作伙伴组利益干系人能够查看团队文件但是不能编辑，考虑直接将其添加至具有“读取”权限的 SharePoint 网站。
+尽管团队没有只读权限选项，但 SharePoint 网站有这项权限。如果你的合作伙伴组利益干系人能够查看团队文件但是不能编辑，考虑直接将其添加至具有“读取”权限的 SharePoint 网站。
 
 ## <a name="sharing-files-and-folders"></a>共享文件和文件夹
 
@@ -99,7 +100,7 @@ ms.locfileid: "50916210"
 
 默认情况下，团队来宾共享处于关闭状态，但 Office 365 组（存储团队成员资格）和 SharePoint 的共享处于打开状态。 我们在基线层中启用 Teams共享，如果需要，可以使用敏感度标签在敏感层和高度敏感层中将其关闭。
 
-敏感度标签仅影响团队的来宾共享。 关联 SharePoint 网站的来宾共享设置是单独控制的，我们协调敏感层和高度敏感层的设置。
+敏感度标签仅影响团队的来宾共享。关联 SharePoint 网站的来宾共享设置是单独控制的，我们让你同时调整统一敏感层和高度敏感层的两个设置。
 
 在高度敏感层，我们将敏感度标签配置为加密应用标签的文件。 如果需要来宾访问这些文件，必须在创建标签时必须授予他们权限。
 
@@ -115,7 +116,7 @@ ms.locfileid: "50916210"
 
 对于敏感层和高度敏感层，我们使用敏感度标签限制对 SharePoint 内容的访问。 Azure AD 条件访问提供很多用于确定用户如何访问 Microsoft 365 的选项，包括基于位置、风险、设备合规性和其他因素的限制。 建议阅读[什么是条件访问？](/azure/active-directory/conditional-access/overview)，并考虑哪些其他策略可能适用于你的组织。
 
-请注意，来宾通常没有组织管理的设备。 如果在任何层中允许来宾，请考虑他们将使用哪些设备访问团队和网站并相应地设置非托管设备策略。
+请注意，来宾通常没有由你的组织管理的设备。如果在任何层中允许来宾，请考虑他们将使用哪些设备访问团队和网站并相应地设置非托管设备策略。
 
 ## <a name="next-step"></a>后续步骤
 

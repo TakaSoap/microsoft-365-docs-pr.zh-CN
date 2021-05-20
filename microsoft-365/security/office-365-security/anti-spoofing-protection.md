@@ -22,12 +22,12 @@ localization_priority: Priority
 description: 管理员可以了解 Exchange Online Protection (EOP) 中提供的防欺骗功能，该功能有助于缓解来自虚假发件人和域的网络钓鱼攻击。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 76ad8ac14de7b176ae12dc02272e31e790b6b410
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 7680c2f4eae54aa53eba72b328baf1bf92fbcf98
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52291027"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52537963"
 ---
 # <a name="anti-spoofing-protection-in-eop"></a>EOP 中的防欺骗防护
 
@@ -44,17 +44,28 @@ ms.locfileid: "52291027"
 
 EOP 中提供了以下反欺骗技术：
 
-- **欺骗智能**：审查来自内外部域发件人的欺骗邮件，并允许或阻止这些发件人。 有关详细信息，请参阅[在 Microsoft 365 中配置欺骗智能](learn-about-spoof-intelligence.md)。
-
-- **反网络钓鱼策略**：在 EOP 中，反网络钓鱼策略使你能够打开或关闭欺骗智能，在 Outlook 中打开或关闭未经身份验证的发件人标识，以及指定针对被阻止的虚假发件人执行的操作（移动到“垃圾邮件”文件夹或隔离）。 Microsoft Defender for Office 365 中提供的高级防钓鱼策略还包含反模拟设置（受保护的发件人和域）、邮箱智能设置和可调整的高级网络钓鱼阈值。 有关详细信息，请参阅 [Microsoft 365 中的防钓鱼策略](set-up-anti-phishing-policies.md)。
-
 - **电子邮件身份验证**：DNS 中的 SPF、DKIM 和 DMARC 记录使用的电子邮件身份验证（也称为电子邮件验证）是任何反欺骗工作必不可少的一部分。 可以为你的域配置这些记录，以便目标电子邮件系统能够检查声称来自域中发件人的邮件的有效性。 对于入站邮件，Microsoft 365 需要针对发件人域的电子邮件身份验证。 有关详细信息，请参阅 [Microsoft 365 中的电子邮件身份验证](email-validation-and-authentication.md)。
 
-从 2018 年 10 月起，在 EOP 中提供防欺骗保护。
+  EOP 可分析并阻止标准电子邮件身份验证方法和发件人信誉技术组合无法验证的邮件。
 
-EOP 可分析并阻止标准电子邮件身份验证方法和发件人信誉技术组合无法验证的邮件。
+  ![EOP 反欺骗检查](../../media/eop-anti-spoofing-protection.png)
 
-![EOP 反欺骗检查](../../media/eop-anti-spoofing-protection.png)
+- **欺骗智能保护**：审查最近 7 天内来自内外部域发件人的欺骗邮件，并允许或阻止这些发件人。 有关详细信息，请参阅[在 EOP 中配置欺骗智能保护](learn-about-spoof-intelligence.md)。
+
+- **在“租户允许/阻止列表”中允许或阻止欺骗发件人**：如果替代欺骗智能保护中的漏洞，欺骗发件人将成为仅在“租户允许/阻止列表”的“**欺骗**”选项卡上显示的手动允许或阻止条目。 在欺骗智能保护检测到欺骗发件人之前，还可手动为其创建允许或阻止条目。 有关详细信息，请参阅[管理 EOP 中的租户允许/阻止列表](tenant-allow-block-list.md)。
+
+- **反钓鱼策略**：在 EOP 中，反钓鱼策略包含以下反欺骗设置：
+  - 打开或关闭欺骗智能。
+  - 打开或关闭 Outlook 中未经身份验证的发件人标识。
+  - 指定对阻止的欺骗发件人的操作。
+
+  有关详细信息，请参阅[反钓鱼策略中的“欺骗”设置](set-up-anti-phishing-policies.md#spoof-settings)。
+
+  **注意**：Microsoft Defender for Office 365 中的反钓鱼策略包含添加保护，包括 **模拟** 保护。 有关详细信息，请参阅 [Microsoft Defender for Office 365 中反钓鱼策略中的“独占”设置](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)。
+
+- **欺骗检测报告**：有关详细信息，请参阅[欺骗检测报告](view-email-security-reports.md#spoof-detections-report)。
+
+  **注意**：Defender for Office 365 组织也可使用实时检测（计划 1）或威胁资源管理器（计划 2）查看有关钓鱼尝试的信息。 有关详细信息，请参阅 [Microsoft 365 威胁调查和响应](office-365-ti.md)。
 
 ## <a name="how-spoofing-is-used-in-phishing-attacks"></a>如何在网络钓鱼攻击中使用欺骗
 
@@ -127,12 +138,6 @@ Microsoft 区分两种不同类型的欺骗邮件：
 
 有关 DMARC 的详细信息，请参阅[在 Microsoft 365 中使用 DMARC 来验证电子邮件](use-dmarc-to-validate-email.md)。
 
-## <a name="reports-of-how-many-messages-were-marked-as-spoofed"></a>关于被标记为欺骗邮件的邮件数的报告
-
-EOP 组织可在安全与合规性中心的“报告”仪表板中使用 **欺骗检测** 报告。 有关详细信息，请参阅[欺骗检测报告](view-email-security-reports.md#spoof-detections-report)。
-
-Microsoft Defender for Office 365 组织可使用安全与合规中心中的威胁资源管理器查看有关钓鱼网站尝试的信息。 有关详细信息，请参阅 [Microsoft 365 威胁调查和响应](office-365-ti.md)。
-
 ## <a name="problems-with-anti-spoofing-protection"></a>反欺骗防护方面的问题
 
 由于转发和修改邮件的方式，邮件列表（也称为讨论列表）存在反欺骗问题。
@@ -161,7 +166,7 @@ Microsoft Defender for Office 365 组织可使用安全与合规中心中的威�
 
     如果有足够多的发件人向域所有者反映他们应该设置电子邮件身份验证记录，这会促使他们采取行动。 虽然 Microsoft 也可与域所有者合作发布所需的记录，但当个人用户提出请求时，它可以提供更多帮助。
 
-  - 在电子邮件客户端中创建邮箱规则，以将邮件移动到收件箱。 你还可以要求管理员配置覆盖，如[使用欺骗智能来配置未经身份验证的电子邮件的允许发件人](email-validation-and-authentication.md#use-spoof-intelligence-to-configure-permitted-senders-of-unauthenticated-email)中所述。
+  - 在电子邮件客户端中创建邮箱规则，以将邮件移动到收件箱。 此外，还可以要求管理员按照 [EOP 中的欺骗智能保护](learn-about-spoof-intelligence.md)和[管理租户允许/阻止列表](tenant-allow-block-list.md)部分的说明配置替代。
 
   - 使用 Microsoft 365 创建支持票证，以便为邮件列表创建替代，以将其视为合法邮件。 有关详细信息，请参阅[就商业版产品问题联系支持人员 - 管理员帮助](../../business-video/get-help-support.md)。
 

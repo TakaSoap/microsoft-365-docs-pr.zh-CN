@@ -19,12 +19,12 @@ localization_priority: Priority
 description: 管理员可了解 EOP 如何使用电子邮件身份验证（SPF、DKIM 和 DMARC）来帮助防止欺骗、网络钓鱼和垃圾邮件。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 633494717ad7cf68319a2332f435fd8b56fc8aeb
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 4815924714845b641819021ea793baa465cfc812
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51203650"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538287"
 ---
 # <a name="email-authentication-in-eop"></a>EOP 中的电子邮件身份验证
 
@@ -39,9 +39,7 @@ ms.locfileid: "51203650"
 电子邮件身份验证（也称为电子邮件验证）是一组尝试阻止欺骗（来自伪造发件人的电子邮件）的标准。 在所有 Microsoft 365 组织中，EOP 使用以下标准验证入站电子邮件：
 
 - [SPF](set-up-spf-in-office-365-to-help-prevent-spoofing.md)
-
 - [DKIM](use-dkim-to-validate-outbound-email.md)
-
 - [DMARC](use-dmarc-to-validate-email.md)
 
 电子邮件身份验证会验证发件人的电子邮件（例如，laura@contoso.com）是否合法，是否来自该电子邮件域的预期来源（例如，contoso.com。）
@@ -58,7 +56,7 @@ DMARC 通过检查邮件中的 **发件人** 地址来防止欺骗。 **发件�
 
 ![财富 500 强企业的 DMARC 策略](../../media/84e77d34-2073-4a8e-9f39-f109b32d06df.jpg)
 
-发布强电子邮件身份验证策略的中小型公司的比例更小。 对于北美和西欧以外的电子邮件域，该数字甚至更小。
+已发布强电子邮件身份验证策略的中小型公司所占比例较小，而对于北美和西欧以外的电子邮件域，发布强策略的比例更小。
 
 缺乏强大的电子邮件身份验证策略非同小可。 虽然组织可能不知道电子邮件身份验证的工作方式，但是攻击者完全了解，并且会利用电子邮件身份验证的优势。 由于网络钓鱼问题，而且强电子邮件身份验证策略的采用范围有限，因此 Microsoft 将使用 *隐式电子邮件身份验证* 来检查入站电子邮件。
 
@@ -89,7 +87,7 @@ Authentication-Results:
 
 复合身份验证可以让这些原本无法通过身份验证检查的邮件通过检查，从而解决这些限制。
 
-为简单起见，以下示例专注于电子邮件身份验证结果。 其他后端智能因素可以识别通过电子邮件身份验证的欺骗邮件，或未通过电子邮件身份验证的合法邮件。
+为简单起见，下面的例子集中关注电子邮件身份验证结果。其他后端智能因素可以识别通过电子邮件身份验证的欺骗邮件，或未通过电子邮件身份验证的合法邮件。
 
 例如，fabrikam.com 域没有 SPF、DKIM 或 DMARC 记录。 来自 fabrikam.com 域中的发件人的邮件可能无法通过复合身份验证（请注意 `compauth` 的值和理由）：
 
@@ -102,7 +100,7 @@ From: chris@fabrikam.com
 To: michelle@contoso.com
 ```
 
-如果 fabrikam.com 配置了没有 DKIM 记录的 SPF 验证，则该邮件可以通过复合身份验证。 通过 SPF 检查的域与“发件人”地址中的域保持一致：
+如果 fabrikam.com 配置了 SPF，但没有 DKIM 记录，邮件可通过复合身份验证。通过 SPF 验证的域与“发件人”地址中的域一致：
 
 ```text
 Authentication-Results: spf=pass (sender IP is 10.2.3.4)
@@ -113,7 +111,7 @@ From: chris@fabrikam.com
 To: michelle@contoso.com
 ```
 
-如果 fabrikam.com 配置了没有 SPF 记录的 DKIM 验证，则该邮件可以通过复合身份验证。 DKIM 签名中的域与“发件人”地址中的域保持一致：
+如果 fabrikam.com 配置了 DKIM，但没有 SPF 记录，邮件可通过复合身份验证。DKIM 签名中的域与“发件人”地址中的域一致：
 
 ```text
 Authentication-Results: spf=none (sender IP is 10.2.3.4)
@@ -146,9 +144,7 @@ Microsoft 365 跟踪谁在向你的组织发送未经身份验证的电子邮件
 如果你拥有多个租户或与多个租户进行交互，则可使用此方法解决组织内欺骗和跨域欺骗。 它还有助于解决跨域欺骗，即你发送给 Microsoft 365 中的其他客户或由其他提供程序托管的第三方。
 
 - [配置域的 SPF 记录](set-up-spf-in-office-365-to-help-prevent-spoofing.md)。
-
 - [为主域配置 DKIM 记录](use-dkim-to-validate-outbound-email.md)。
-
 - [考虑为你的域设置 DMARC 记录](use-dmarc-to-validate-email.md)，以确定合法发件人。
 
 Microsoft 不提供针对 SPF、DKIM 和 DMARC 记录的详细实施指南。 但是，线上提供了许多信息。 此外，还有一些第三方公司致力于帮助你的组织设置电子邮件身份验证记录。
@@ -167,17 +163,11 @@ Microsoft 365 会将来自公司基础结构的入站电子邮件视为已经过
 
 开始使用 `?all` 的 SPF 回退策略后，你可以逐步你的邮件发现和包含更多电子邮件来源，然后使用更严格的策略更新 SPF 记录。
 
-### <a name="use-spoof-intelligence-to-configure-permitted-senders-of-unauthenticated-email"></a>使用反欺骗智能保护配置允许发送未经身份验证的电子邮件的人员
+### <a name="configure-permitted-senders-of-unauthenticated-email"></a>配置允许发送未经身份验证的电子邮件的人员
 
-你也可以使用[反欺骗智能保护](learn-about-spoof-intelligence.md)允许发件人将未经身份验证的邮件传送到你的组织。
+你也可以使用[反欺骗智能保护](learn-about-spoof-intelligence.md)和[租户允许/拦截列表](tenant-allow-block-list.md)来允许发件人将未经身份验证的邮件传送到你的组织。
 
 对于外部域，欺骗用户是“发件人”地址中的域，而发送基础结构是源 IP 地址（分为 /24 个 CIDR 区域），或者是反向 DNS (PTR) 记录的组织域。
-
-在下面的屏幕截图中，源 IP 可能是 131.107.18.4，PTR 记录为 outbound.mail.protection.outlook.com。 对于发送基础结构，这将显示为 outlook.com。
-
-若要允许此发件人发送未经身份验证的电子邮件，请将“**否**”更改为“**是**”。
-
-![设置反欺骗允许的发件人](../../media/d4334921-d820-4334-8217-788279701e94.jpg)
 
 ### <a name="create-an-allow-entry-for-the-senderrecipient-pair"></a>为发件人/收件人对创建允许条目
 
@@ -189,7 +179,7 @@ Microsoft 365 会将来自公司基础结构的入站电子邮件视为已经过
 
 - 即使用户过去不需要发布电子邮件身份验证记录，也应在将电子邮件发送到 Microsoft 时执行此操作。
 
-- 设置 SPF 以发布域的发送 IP 地址，并设置 DKIM（如果可用）以对邮件进行数字签名。 他们还可以考虑设置 DMARC 记录。
+- 设置 SPF 以发布域的发送 IP 地址，并设置 DKIM（如果可用）以对邮件进行数字签名。另外，还应考虑设置 DMARC 记录。
 
 - 如果他们使用批量发件人代表他们发送电子邮件，请验证“发件人”地址（如果该地址属于他们）中的域是否与通过 SPF 或 DMARC 检查的域一致。
 

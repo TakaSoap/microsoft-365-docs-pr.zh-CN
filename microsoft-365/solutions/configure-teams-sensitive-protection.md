@@ -19,12 +19,12 @@ ms.custom:
 - Ent_Solutions
 recommendations: false
 description: 了解如何部署具有敏感数据保护的团队。
-ms.openlocfilehash: 16b60230c18f4a4f5e10b4bd421fd1bf02b39779
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: a775727882dd71a168f4049d2af6a9feb20f944c
+ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538179"
+ms.locfileid: "52572713"
 ---
 # <a name="configure-teams-with-protection-for-sensitive-data"></a>配置具有敏感数据保护的团队
 
@@ -105,7 +105,7 @@ ms.locfileid: "52538179"
 
 每次使用敏感标签创建新团队时，都需要在 SharePoint 中执行两步操作：
 
-- 更新 SharePoint 管理中心中网站的来宾共享设置，使其与创建标签时选择的内容一致，并将默认共享链接更新为“*特定用户*”。
+- 更新 SharePoint 管理中心中网站的来宾共享设置，将默认共享链接更新为“*特定人员*”。
 - 更新网站本身的网站共享设置，防止成员共享网站。
 
 ### <a name="site-guest-sharing-settings"></a>网站来宾共享设置

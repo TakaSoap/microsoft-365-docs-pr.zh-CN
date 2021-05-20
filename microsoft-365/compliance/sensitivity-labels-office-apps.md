@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: 适用于管理 Office 应用中针对桌面、移动和 Web 的敏感度标签的 IT 管理员的信息。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f280cae2364a3ad76a3a3ff91ce382fdf69eab2b
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: bca8efa15bdfe2f4b7c8c90e7a4706f40b19f85d
+ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 05/19/2021
-ms.locfileid: "52532046"
+ms.locfileid: "52572605"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>管理 Office 应用中的敏感度标签
 
@@ -194,7 +194,7 @@ Azure 信息保护统一标签客户端同时支持 Open XML 格式和 Microsoft
         - 记录在 [设置 Outlook for Mac 首选项](/DeployOffice/mac/preferences-outlook) 中的注册表项 *DisableEncryptOnly* 和 *DisableDoNotForward* 安全设置
     - Outlook 网页版: 
         - 为 [Set-IRMConfiguration](/powershell/module/exchange/set-irmconfiguration) 记录的参数 *SimplifiedClientAccessDoNotForwardDisabled* 和 *SimplifiedClientAccessEncryptOnlyDisabled*
-        - Outlook for iOS 和 Android：这些应用不支持用户在无标签的情况下应用加密，因此无需禁用任何项目。
+    - Outlook for iOS 和 Android：这些应用不支持用户在无标签的情况下应用加密，因此无需禁用任何项目。
 
 > [!NOTE]
 > 如果用户从存储在SharePoint或OneDrive中的带标签文档中手动删除加密，并且已在[SharePoint和OneDrive中为Office文件启用了敏感性标签](sensitivity-labels-sharepoint-onedrive-files.md)，则下次访问或下载文档时，标签加密将自动恢复。 

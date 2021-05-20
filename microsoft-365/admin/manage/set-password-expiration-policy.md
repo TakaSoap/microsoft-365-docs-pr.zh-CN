@@ -22,26 +22,19 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: 0f54736f-eb22-414c-8273-498a0918678f
-description: 了解如何在 Microsoft 365 管理中心为组织设置密码过期策略。
-ms.openlocfilehash: 14ff08126533d5c530fb56761a2ef1676d5864b8
-ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
+description: 了解管理员如何在 Microsoft 365 管理中心中针对你的企业、学校或非营利组织设置密码过期策略。
+ms.openlocfilehash: 5469d4dcd75bee2e6f8a188aa6f50d18ce6e06c4
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51903150"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52537483"
 ---
 # <a name="set-the-password-expiration-policy-for-your-organization"></a>为组织设置密码过期策略
 
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> 管理中心正在发生改变。 如果你的体验与此处提供的详细信息不匹配，请参阅[有关新版 Microsoft 365 管理中心](../microsoft-365-admin-center-preview.md?view=o365-worldwide)。
-
-::: moniker-end
-
 ## <a name="before-you-begin"></a>准备工作
 
-本文面向的是为企业、学校或非营利组织设置密码过期策略的人员。 若要完成这些步骤，你需要使用 Microsoft 365 管理员帐户登录。 [什么是管理员帐户？](https://docs.microsoft.com/microsoft-365/business-video/admin-center-overview)
+本文面向的是为企业、学校或非营利组织设置密码过期策略的人员。 若要完成这些步骤，你需要使用 Microsoft 365 管理员帐户登录。 [什么是管理员帐户？](../../business-video/admin-center-overview.md)
 
 作为管理员，可让用户密码在特定天数后过期，或将密码设置为永不过期。 默认情况下，密码设置为对组织永不过期。
 
@@ -49,7 +42,7 @@ ms.locfileid: "51903150"
 
 必须是 [全局管理员](../add-users/about-admin-roles.md) 才能执行这些步骤。
 
-如果你是用户，则你不没有将密码设置为永不过期的权限。 让你的工作单位或学校的技术支持人员代你执行本文中的步骤。
+如果你是用户，则你不具有将密码设置为永不过期的权限。让你的工作单位或学校的技术支持人员为你执行本文中的步骤。
 
 ## <a name="set-password-expiration-policy"></a>设置密码过期策略
 
@@ -90,12 +83,12 @@ ms.locfileid: "51903150"
 
 ## <a name="update-password-policy"></a>更新密码策略
 
-Set-MsolPasswordPolicy cmdlet 会更新指定的域或租户的密码策略。 需要两个设置：第一个用于指示密码在必须更改之前的有效时长，第二个用于指示在用户收到第一封显示其密码即将过期的通知时将触发的密码过期日期之前的剩余天数。
+Set-MsolPasswordPolicy cmdlet 将更新指定域或租户的密码策略。需要两个设置：第一个用于指示密码在必须更改之前的有效时长，第二个用于指示在用户收到第一封显示其密码即将过期的通知时将触发的密码过期日期之前的剩余天数。
 
 若要了解如何更新特定域或租户的密码策略，请参阅 [Set-MsolPasswordPolicy](/powershell/module/msonline/set-msolpasswordpolicy?view=azureadps-1.0)。
 
 ## <a name="related-content"></a>相关内容
 
-[允许用户重置自己的密码](../add-users/let-users-reset-passwords.md)
+[允许用户重置自己的密码](../add-users/let-users-reset-passwords.md)（文章）
 
-[重置密码](../add-users/reset-passwords.md)
+[重置密码](../add-users/reset-passwords.md)（文章）

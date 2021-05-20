@@ -21,13 +21,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: da585eea-f576-4f55-a1e0-87090b6aaa9d
-description: 管理员角色映射到业务功能，并授予在管理中心执行特定任务的权限。 例如，”服务管理员”可通过管理中心打开支持票证。
-ms.openlocfilehash: d220ee918f70a56ba27bdad9d7d0f45025fad451
-ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
+description: 例如服务管理员等管理员角色映射到业务功能，并授予在管理中心执行特定任务的权限。
+ms.openlocfilehash: 7ba8b6fd483901fde31a9bceca189797b4f2e16d
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51759404"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52536006"
 ---
 # <a name="about-admin-roles"></a>关于管理员角色
 
@@ -43,7 +43,7 @@ Microsoft 365 管理中心可让你管理 Azure AD 角色和 Microsoft Intune �
 
 有关在 Microsoft 365 管理中心分配角色的详细信息，请参阅[分配管理员角色](assign-admin-roles.md)。
 
-### <a name="watch-what-is-an-admin"></a>观看：什么是管理员？
+## <a name="watch-what-is-an-admin"></a>观看：什么是管理员？
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1SRc0]
 
@@ -70,7 +70,7 @@ Microsoft 365 管理中心可让你管理 Azure AD 角色和 Microsoft Intune �
 |帐务管理员     |   向购买用户分配帐单管理员角色，管理订阅和服务请求，并监视服务运行状况。 <br><br> 帐单管理员可以：<br> - 管理帐单的各个方面 <br> - 在 Azure 门户创建和管理支持票证 <br>  |
 |Exchange 管理员     |   将 Exchange 管理员角色分配给需要查看和管理用户电子邮件邮箱、Microsoft 365 组和 Exchange Online 的用户。 <br><br> Exchange 管理员还可以：<br> - 恢复用户邮箱中的已删除项目 <br> - 设置“代理发送”和“代表发送”代理 <br>  |
 |全局管理员     |   向需要全局访问 Microsoft Online Services 中的大多数管理功能和数据的用户分配全局管理员角色。 <br><br> 为太多的用户提供全局访问权限会带来安全风险，我们建议你设置 2 至 4 名全局管理员。 <br><br> 只有全局管理员才能执行以下操作：<br> - 为所有用户重置密码 <br> - 添加和管理域 <br> <br> **注意：** 已注册 Microsoft Online Services 的人员将自动成为全局管理员。 |
-|全局读取者    |   向需要在可供全局管理员查看的管理中心中查看管理员功能和设置的用户分配全局读取者角色。 全局读取者管理员不能编辑任何设置。   |
+|全局读取者    |   向需要在可供全局管理员查看的管理中心中查看管理员功能和设置的用户分配全局读取者角色。全局读取者管理员无法编辑任何设置。   |
 |组管理员     |   向需要跨管理中心（包括 Microsoft 365 管理中心和 Azure Active Directory 门户）管理所有组设置的用户分配组管理员角色。 <br><br> 组管理员可以：<br> - 创建、编辑、删除和还原 Microsoft 365 组 <br> - 创建和更新组的创建、过期和命名策略 <br> - 创建、编辑、删除和还原 Azure Active Directory 安全组| 
 |支持管理员     |   为需要执行以下操作的用户分配支持管理员角色：<br> - 重置密码 <br> - 强制用户注销 <br> - 管理服务请求 <br> - 监视服务运行状况 <br> <br> **注意**：支持管理员只能帮助非管理员用户和分配有以下角色的用户：目录读取者、来宾邀请者、支持管理员、消息中心读取者和报表阅读人员。      |
 |许可证管理员    |   为需要分配管理许可证的用户分配许可证管理员角色，删除用户的许可证并编辑其使用位置。 <br/><br/> 帐单管理员可以： <br> - 重新处理基于组的许可证分配 <br> - 将产品许可证分配给组，以便进行基于组的许可  |
@@ -93,12 +93,12 @@ Microsoft 365 管理中心可让你管理 Azure AD 角色和 Microsoft Intune �
 
 在合作伙伴将这些角色分配给用户之前，必须先将合作伙伴作为委派管理员添加到你的帐户中。 此过程由授权合作伙伴发起。 合作伙伴将向你发送一封电子邮件，询问你是否要授予其作为委派管理员的权限。有关说明，请参阅[授权或删除合作伙伴关系](../misc/add-partner.md)。
   
-## <a name="related-articles"></a>相关文章
+## <a name="related-content"></a>相关内容
 
-[分配管理员角色](assign-admin-roles.md)
+[分配管理员角色](assign-admin-roles.md)（文章）
 
-[Microsoft 365 管理中心中的 Azure AD 角色](azure-ad-roles-in-the-mac.md)
+[Microsoft 365 管理中心中的 Azure AD 角色](azure-ad-roles-in-the-mac.md)（文章）
 
-[Exchange Online 管理员角色](about-exchange-online-admin-role.md)
+[Exchange Online 管理员角色](about-exchange-online-admin-role.md)（文章）
   
-[Microsoft 365 管理中心中的活动报告](../activity-reports/activity-reports.md)
+[Microsoft 365 管理中心中的活动报告](../activity-reports/activity-reports.md)（文章）

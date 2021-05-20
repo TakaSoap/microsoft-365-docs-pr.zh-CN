@@ -16,13 +16,14 @@ ms.custom:
 - seo-marvel-apr2020
 localization_priority: Priority
 f1.keywords: NOCSH
+recommendations: false
 description: 了解在 Teams 中设置团队与来宾进行任务、对话及文档协作所必需的 Microsoft 365 配置步骤。
-ms.openlocfilehash: 4e734af198563d0bc4599b4476b3823384989212
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: c17732705c1d88ff70e56f5d26d9e268e3ff7c19
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50904656"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52539259"
 ---
 # <a name="collaborate-with-guests-in-a-team"></a>在团队中与来宾协作
 
@@ -61,7 +62,7 @@ Microsoft 365 中的共享在最高级别由 [Azure Active Directory 中的 B2B 
 
 Teams 具有用于来宾访问的主 “开/关” 开关，以及可用于控制来宾在团队中所能执行操作的各种设置。 主开关 **“允许来宾在 Teams 中访问”** 必须 **“打开”**，来宾才可以在 Teams 中工作。
 
-检查以确保 Teams 中已启用“来宾访问”，并根据你的业务需求对来宾设置作出调整。 请记住，这些设置会影响所有团队。
+检查确保 Teams 中已启用“来宾访问”，并根据你的业务需求对来宾设置作出调整。请记住，这些设置会影响所有团队。
 
 ![Teams 来宾访问切换的屏幕截图](../media/teams-guest-access-toggle-on.png)
 
@@ -81,7 +82,7 @@ Teams 具有用于来宾访问的主 “开/关” 开关，以及可用于控�
 
 ## <a name="microsoft-365-groups-guest-settings"></a>Microsoft 365 组来宾设置
 
-Teams 使用 Microsoft 365 组作为团队成员身份。 必须打开 Microsoft 365 组来宾设置，Teams 中的来宾访问才能正常工作。
+Teams 使用团队成员 Microsoft 365 组。必须打开 Microsoft 365 组来宾设置，Teams 中的来宾访问才能正常工作。
 
 ![Microsoft 365 管理中心中的 Microsoft 365 组来宾设置的屏幕截图](../media/office-365-groups-guest-settings.png)
 
@@ -146,7 +147,7 @@ Teams 内容（如文件、文件夹和列表）均存储在 SharePoint 中。 �
 5. 键入团队名称和说明，然后单击 **“创建”**。
 6. 单击 **“跳过”**。
 
-我们稍后将邀请用户。 接下来，检查与团队关联的 SharePoint 网站的网站级别共享设置非常重要。
+接下来，检查与团队关联的 SharePoint 网站的网站级别共享设置非常重要。
 
 ## <a name="sharepoint-site-level-sharing-settings"></a>SharePoint 网站级别共享设置
 

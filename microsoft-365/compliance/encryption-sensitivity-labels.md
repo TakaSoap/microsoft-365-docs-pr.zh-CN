@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: 配置加密的敏感度标签，以便通过限制访问和使用来保护你的数据。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 6163e48e3e80b76506d970b77d6cd66f7a050d51
-ms.sourcegitcommit: 8c89bc1d106b4716b07a1977d57e4d9ef98aecb3
+ms.openlocfilehash: 804cfa9da39b5dc9b9dffdcd68fb196e8676f9af
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/29/2021
-ms.locfileid: "52079255"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52532082"
 ---
 # <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>通过敏感度标签应用加密，从而限制对内容的访问
 
@@ -65,7 +65,9 @@ ms.locfileid: "52079255"
 
 4.  对于向导的 **加密** 页面，选择下列选项之一：
     
-    - **如果文件已加密，则删除加密**：有关此方案的详细信息，请参阅 [应用标签时，对现有加密的影响](#what-happens-to-existing-encryption-when-a-labels-applied)部分。 请务必注意，此设置可能会导致敏感度标签，用户没有足够的权限时，他们可能无法应用标签。
+    - **如果文件已加密，请删除加密**：仅 Azure 信息保护统一标签客户端支持此选项。 选择此选项并使用内置标签时，标签可能不会显示在应用程序中，或者会显示但未进行任何加密更改。
+        
+        有关此方案的详细信息，请参阅[应用标签时，对现有加密的影响](#what-happens-to-existing-encryption-when-a-labels-applied)部分。 请务必注意，此设置可能会导致敏感度标签，用户没有足够的权限时，他们可能无法应用标签。
     
     - **配置加密设置**：启用加密，并使加密设置可见：
         
@@ -85,13 +87,17 @@ ms.locfileid: "52079255"
 
 下表说明了在向该内容应用敏感度标签后现有加密发生的情况：
 
-| | 加密：未选择 | 加密：已配置 | 加密：删除 |
+| | 加密：未选择 | 加密：已配置 | 加密：删除<sup>\*</sup> |
 |:-----|:-----|:-----|:-----|
 |**用户指定的权限**|保留原有加密|应用新的标签加密|删除原有加密|
 |**保护模板**|保留原有加密|应用新的标签加密|删除原有加密|
 |**具有管理员定义的权限的标签**|删除原有加密|应用新的标签加密|删除原有加密|
 
-请注意，如果应用了新的标签加密或删除了原有加密，则仅在应用标签的用户具有支持此操作的使用权限或角色时才会发生此情况：
+**脚注：**
+
+<sup>\*</sup>仅受 Azure 信息保护统一标签客户端支持
+
+如果应用了新的标签加密或删除了原有加密，则仅在应用标签的用户具有支持此操作的使用权限或角色时才会发生此情况：
 
 - “导出”或“完全控制”[使用权限](/azure/information-protection/configure-usage-rights#usage-rights-and-descriptions)。
 - [权限管理颁发者/权限管理所有者](/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner)或[超级用户](/azure/information-protection/configure-super-users)角色。
@@ -269,11 +275,11 @@ ms.locfileid: "52079255"
 
 - **不转发**: 收件人无法转发、打印或复制该邮件。 例如，在 Outlook 客户端中，“转发”按钮不可用，“另存为”和“打印”菜单选项也不可用，并且你不可在“收件人”、“抄送”和“密件抄送”框中添加或更改收件人。
     
-    有关此选项工作方式的更多信息，请参阅 [电子邮件的 “不转发” 选项](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#do-not-forward-option-for-emails)。
+    有关此选项工作方式的更多信息，请参阅 [电子邮件的 “不转发” 选项](/azure/information-protection/configure-usage-rights#do-not-forward-option-for-emails)。
 
 - **只加密密**: 收件人拥有除 “另存为”、“导出” 和 “完全控制” 以外的所有使用权。 这种使用权的组合意味着收件人除了无法取消保护外，没有任何限制。 例如，收件人可以从邮件中复制、打印和转发。
     
-    有关此选项工作方式的更多信息，请参见 [电子邮件的 “只加密” 选项](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#encrypt-only-option-for-emails)。
+    有关此选项工作方式的更多信息，请参见 [电子邮件的 “只加密” 选项](/azure/information-protection/configure-usage-rights#encrypt-only-option-for-emails)。
 
 自动附加到电子邮件但未加密的 Office 文档会自动继承相同的限制。 对于“请勿转发”，适用于这些文件的使用权限是“编辑内容”，“编辑”; “保存”; “查看”、“打开”、“读取”; 以及“允许宏”。 如果用户希望对附件有不同的使用权限，或者附件并非支持该继承保护的 Office 文档，用户则需要在将文件附加到电子邮件之前对文件进行加密。
 

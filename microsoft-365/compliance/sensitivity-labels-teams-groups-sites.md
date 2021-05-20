@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用敏感度标签保护 SharePoint 和 Microsoft Teams 网站以及 Microsoft 365 组中的内容。
-ms.openlocfilehash: 4914a5911ffb493eded46631d7682c1e48cf1426
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: ef4559a278ce83f429790efcd20517b5c8545cb3
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51860871"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52531038"
 ---
 # <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>使用敏感度标签保护 Microsoft Teams、Microsoft 365 组和 SharePoint 网站中的内容
 
@@ -34,9 +34,10 @@ ms.locfileid: "51860871"
 - 外部用户访问
 - 从 SharePoint 网站进行外部共享
 - 非托管设备的访问
+- 身份验证内容（预览）
 
 > [!IMPORTANT]
-> “**非托管设备的访问**”设置可与 SharePoint 功能配合使用，从而 [控制非托管设备的访问](/sharepoint/control-access-from-unmanaged-devices)。 必须配置此从属 SharePoint 功能，才能使用配置了此设置的敏感度标签。 下面的说明中提供了其他信息。
+> 非托管设备和身份验证上下文的设置与 Azure Active Directory 条件访问结合使用。 如果要对这些设置使用敏感度标签，必须配置此依赖功能。 下面的说明中提供了其他信息。
 
 如果你将此敏感度标签应用于受支持的容器，此标签会自动向网站或组应用分类和配置保护设置。
 
@@ -47,7 +48,7 @@ ms.locfileid: "51860871"
 
 ## <a name="using-sensitivity-labels-for-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>将敏感度标签用于 Microsoft Teams、Microsoft 365 组和 SharePoint 网站
 
-在你为容器启用敏感度标签并为新设置配置敏感度标签之前，用户可在其应用中查看和应用敏感度标签。 例如，在 Word 中：
+在你为容器启用敏感度标签并为新设置配置敏感度标签之前，用户可在其应用中查看和应用敏感度标签。例如，从 Word 应用中：
 
 ![Word 桌面应用中显示的敏感度标签](../media/sensitivity-label-word.png)
 
@@ -56,6 +57,8 @@ ms.locfileid: "51860871"
 ![从 SharePoint 中创建团队网站时使用的敏感度标签](../media/sensitivity-labels-new-team-site.png)
 
 ## <a name="how-to-enable-sensitivity-labels-for-containers-and-synchronize-labels"></a>如何为容器启用敏感度标签和同步标签
+
+如果尚未对容器启用敏感度标签，请执行以下一组步骤作为一次过程：
 
 1. 由于此功能使用 Azure AD 功能，因此请按照以下 Azure AD 文档中的说明来启用敏感度标签支持：[在 Azure Active Directory 中向 Microsoft 365 组分配敏感度标签](/azure/active-directory/users-groups-roles/groups-assign-sensitivity-labels)。
 
@@ -71,7 +74,7 @@ ms.locfileid: "51860871"
 
 ## <a name="how-to-configure-groups-and-site-settings"></a>如何配置组和网站设置
 
-为容器启用敏感度标签意味着你现在可以在敏感度标签向导中为组和网站配置保护设置。 在启用此支持之前，这些设置在向导中可见，但无法对其进行配置。
+按照前一章节的内容为容器启用敏感度标签后，你可以在敏感度标签向导中为组和网站配置保护设置。 在为容器启用敏感度标签之前，设置在向导中可见，但你无法对其进行配置。
 
 1. 请遵循一般说明来 [创建或编辑敏感度标签](create-sensitivity-labels.md#create-and-configure-sensitivity-labels)，并确保为标签的作用域选择“**组和网站**”： 
     
@@ -84,7 +87,7 @@ ms.locfileid: "51860871"
 2. 然后，在 **定义组和网站的保护设置** 页面上，选择一个或两个可用选项：
     
     - “**隐私和外部用户访问设置**”用于配置“**隐私**”和“**外部用户访问**”设置。 
-    - “**设备访问和外部共享设置**”用于配置“**控制来自标记的 SharePoint 网站的外部共享**”和“**非托管设备的访问**”设置。
+    - **外部共享和条件访问设置** 用于配置 **控制来自已标记的 SharePoint 网站的外部共享** 和 **使用 Azure AD 条件访问保护已标记的 SharePoint 网站** 设置。
 
 3. 如果你选择了“**隐私和外部用户访问设置**”，现在请配置以下设置：
     
@@ -98,13 +101,25 @@ ms.locfileid: "51860871"
     
     - **外部用户访问**：控制组所有者是否可以 [向组添加来宾](/office365/admin/create-groups/manage-guest-access-in-groups)。
 
-4. 如果你选择了“**设备访问和外部共享设置**”，现在请配置以下设置：
+4. 如果你选择了“**设备外部共享和设备访问设置**”，现在请配置以下设置：
     
     - **控制来自标记为 SharePoint 网站或网站** 的外部共享：选择此选项，然后选择对任何人、新来宾和现有来宾、现有来宾或仅对组织内部人员的外部共享。 有关此配置和设置的详细信息，请参阅 SharePoint 文档，[为网站开启或关闭外部共享](/sharepoint/change-external-sharing-site)。
     
-    - **非托管设备的访问**：此选项使用利用 Azure AD 条件访问来阻止或限制从非托管设备访问 SharePoint 和 OneDrive 内容的 SharePoint 功能。 有关详细信息，请参阅 SharePoint 文档中的[控制非托管设备的访问](/sharepoint/control-access-from-unmanaged-devices)。 为此标签设置指定的选项等效于运行针对网站的 PowerShell 命令，如 SharePoint 说明中的[阻止或限制对特定 SharePoint 网站或 OneDrive](/sharepoint/control-access-from-unmanaged-devices#block-or-limit-access-to-a-specific-sharepoint-site-or-onedrive) 部分的步骤 3-5 所述。
-        
-        有关其他信息，请参阅本部分末尾的[有关非托管设备选项依赖项的详细信息](#more-information-about-the-dependencies-for-the-unmanaged-devices-option)。
+    - **使用 Azure AD 条件访问保护已标记的 SharePoint 的网站**：仅当你的组织已配置并且使用 [Azure Active Directory 条件访问](/azure/active-directory/conditional-access/overview)时，才选择此选项。 然后，选择以下一项设置：
+    
+        - **确定用户是否可以从非托管设备访问 SharePoint 网站**：此选项使用利用 Azure AD 条件访问来阻止或限制从非托管设备访问 SharePoint 和 OneDrive 内容的 SharePoint 功能。 有关详细信息，请参阅 SharePoint 文档中的[控制非托管设备的访问](/sharepoint/control-access-from-unmanaged-devices)。 为此标签设置指定的选项等效于运行针对网站的 PowerShell 命令，如 SharePoint 说明中的[阻止或限制对特定 SharePoint 网站或 OneDrive](/sharepoint/control-access-from-unmanaged-devices#block-or-limit-access-to-a-specific-sharepoint-site-or-onedrive) 部分的步骤 3-5 所述。
+            
+            有关其他配置信息，请参阅本部分末尾的[有关非托管设备选项依赖项的详细信息](#more-information-about-the-dependencies-for-the-unmanaged-devices-option)。
+            
+        - **选择现有的身份验证上下文**：当前处于预览状态，当用户访问已应用此标签的 SharePoint 网站时，此选项可让您强制执行更严格的访问条件。 当选择为组织的条件访问部署创建和发布的现有身份验证上下文时，将强制执行这些条件。 如果用户不满足配置的条件，或者使用不支持身份验证上下文的应用，则拒绝他们访问。
+            
+            有关其他配置信息，请参阅本部分末尾的[有关身份验证上下文选项依赖项的详细信息](#more-information-about-the-dependencies-for-the-authentication-context-option)。
+            
+            此标签配置的示例：
+            
+             - 选择一个身份验证上下文，该上下文配置为要求[多重身份验证 (MFA)](/azure/active-directory/conditional-access/untrusted-networks)。 此标签将应用于包含高度机密项目的 SharePoint 网站。 因此，当来自不受信网络的用户尝试访问此网站中的文档时，会看到 MFA 提示，要求其完成这些提示后才能访问该文档。
+             
+             - 选择为[使用条款 (ToU) 策略](/azure/active-directory/conditional-access/terms-of-use)配置的身份验证上下文。 此标签随后应用于包含出于法律或合规性原因需要接受使用条款的项目的 SharePoint 网站。 因此，当用户尝试访问此网站中的文档时，会看到在访问原始文档之前必须接受的使用条款文档。
 
 > [!IMPORTANT]
 > 将标签应用于团队、组或网站时，只有这些网站和组设置会生效。 如果[标签作用域](sensitivity-labels.md#label-scopes)包括文件和电子邮件，则其他标签设置（例如加密和内容标记）不适用于团队、组或网站中的内容。
@@ -118,6 +133,43 @@ ms.locfileid: "51860871"
 例如，如果你的租户被配置为“**允许仅限 Web 的受限访问**”，则允许完全访问权限的标签设置将不起作用，因为其限制性较弱。 对于此租户级设置，请选择可阻止访问的标签设置（限制性更强）或可实现受限访问的标签设置（与租户设置相同）。
 
 由于可以独立于标签配置来配置该 SharePoint 设置，因此在敏感度标签向导中不会检查依赖项是否已就位。 这些依赖项可在创建和发布标签，甚至应用标签后配置。 但是，如果已应用标签，则标签设置要在用户下次进行身份验证后才会生效。
+
+##### <a name="more-information-about-the-dependencies-for-the-authentication-context-option"></a>有关身份验证上下文选项依赖项的详细信息
+
+若要在下拉列表中显示供选择，必须在 Azure Active Directory 条件访问配置中创建、配置和发布身份验证上下文。 有关详细信息和说明，请参阅 Azure AD 条件访问文档中[配置身份验证上下文](/azure/active-directory/conditional-access/concept-conditional-access-cloud-apps#configure-authentication-contexts)部分。
+
+并非所有应用都支持身份验证上下文。 如果应用程序不受支持的用户连接到为身份验证上下文配置的网站，则他们会看到访问被拒绝的消息，或者被提示进行身份验证但被拒绝。 当前支持身份验证上下文的应用：
+
+- Web 的 Office，其中包括 Web 的 Outlook
+
+- Microsoft Planner
+
+- 适用于 Word、Excel 和 PowerPoint 的 Microsoft 365 应用版；最低版本：
+    - Windows：2103
+    - macOS：16.45.1202
+    - iOS：2.48.303
+    - Android：16.0.13924.10000
+
+- 适用于 Outlook 的 Microsoft 365 应用版；最低版本：
+    - Windows：2103
+    - macOS：16.45.1202
+    - iOS：4.2109.0
+    - Android：4.2025.1
+
+- OneDrive 同步应用，最低版本：
+    - Windows：21.002
+    - macOS：21.002
+    - iOS：12.30 版推出
+    - Android：尚不支持
+
+此预览的已知限制：
+
+- 对于 OneDrive 同步应用，仅 OneDrive 支持，其他网站不支持。
+
+- 以下功能和应用可能与身份验证上下文不兼容，因此建议你检查这些功能和应用在用户使用身份验证上下文成功访问网站后是否可继续工作：
+    
+    - 使用 PowerApps 或 Power Automate 的工作流
+    - 第三方应用
 
 ## <a name="sensitivity-label-management"></a>敏感度标签管理
 

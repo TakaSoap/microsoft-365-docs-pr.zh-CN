@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: 预览 Microsoft 365 合规中心中内容搜索或核心电子数据展示搜索返回的结果示例。
-ms.openlocfilehash: ebe4aa0d5f08ab97376cfde63eb59351fccd1911
-ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
+ms.openlocfilehash: a89c8c9ed2500b4e2a859c75be3da177203d1406
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "52314258"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538578"
 ---
 # <a name="preview-ediscovery-search-results"></a>预览电子数据展示搜索结果
 
@@ -39,9 +39,25 @@ ms.locfileid: "52314258"
 
 3. 在飞出页的底部，单击 **审阅示例**。
 
+   ![单击飞出页面上的“审阅示例”来预览结果](../media/PreviewSearchResults1.png)
+
    将显示一个包含搜索结果示例的页面。
 
 4. 选择一个项以在阅读窗格中查看其内容。
+
+   ![在阅读窗格中预览这些项。](../media/PreviewSearchResults2.png)
+
+   在上一个屏幕截图中，请注意，预览项目时，将突出显示搜索查询中的关键字。
+
+## <a name="how-the-search-result-samples-are-selected"></a>如何选择搜索结果示例
+
+最多有 1,000 个随机选择的项目可供预览。 除随机选择外，可供预览的项目还必须满足以下条件：
+
+- 最多可预览单个内容位置（邮箱或网站）的 100 个项目。 这意味着，有可能只有不到 1,000 个项目可供预览。 例如，如果搜索 4 个邮箱，搜索返回 1,500 个估计项目，则只有 400 个可用于预览，因为每个邮箱只能预览 100 个项目。
+
+- 对于邮箱项目，只有电子邮件信息可供预览。 无法预览任务、日历项目和联系人等项目。
+
+- 对于网站项目，仅文档可供预览。 无法预览文件夹、列表或列表附件等项目。
 
 ## <a name="file-types-supported-when-previewing-search-results"></a>预览搜索结果时支持的文件类型
 

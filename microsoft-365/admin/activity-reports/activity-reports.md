@@ -19,13 +19,13 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: 0d6dfb17-8582-4172-a9a9-aed798150263
-description: 获取定期报表，了解你组织中的人员当前是如何使用 Microsoft 365 服务的。 通过使用情况概述仪表板，可深入了解每个图表获取更多见解。
-ms.openlocfilehash: 3133e468ef99114b1c89e16fbd0f4b5170af30d0
-ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
+description: 获取定期报表，了解你组织中的人员当前是如何使用 Microsoft 365 服务的，并深入研究每个图表以获取更多信息。
+ms.openlocfilehash: 917a44f4b6f7458c50ac193b95c7751c66c9e7cd
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51759806"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52530966"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center"></a>管理中心中的 Microsoft 365 报表
 
@@ -63,7 +63,7 @@ ms.locfileid: "51759806"
 
 具有以下权限的人员：
   
-- 全局管理员：建议仅为公司中少量人员分配此角色。 这样做可降低商业风险。
+- 全局管理员：建议仅为公司中少量人员分配此角色。这将减少业务风险。
     
 - Exchange 管理员
     
@@ -199,6 +199,10 @@ ms.locfileid: "51759806"
   
 但是，当你选择特定日期（参见数字 3）时（截至当前日期起前 28 天），报表会在“用户详细信息”表格中显示该用户当天的使用情况（参见数字 2）。
   
-## <a name="related-articles"></a>相关文章
+## <a name="related-content"></a>相关内容
 
-[安全与合规中心中的报表](../../compliance/reports-in-security-and-compliance.md)
+[安全 &amp; 合规中心提供的报告](../../compliance/reports-in-security-and-compliance.md)（文章）
+
+[Microsoft 365 使用情况分析](../usage-analytics/usage-analytics.md)（文章）
+
+[自定义 Microsoft 365 使用情况分析中的报告](../usage-analytics/customize-reports.md)（文章）
