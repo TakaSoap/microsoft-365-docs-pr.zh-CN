@@ -19,20 +19,20 @@ ms.custom:
 - manage_licenses
 - commerce_licensing
 search.appverid: MET150
-description: 了解如何购买更多许可证或减少企业版订阅Microsoft 365许可证数量。
+description: 使用以下步骤购买更多许可证或减少企业版订阅Microsoft 365许可证数量。
 ms.date: 04/07/2021
-ms.openlocfilehash: a20e89ff28c582018c55281a85dbe115b58f9d74
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 144adbd9c21253bd0a8e47205c72e09062fe6552
+ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52537267"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52582700"
 ---
 # <a name="buy-or-remove-licenses"></a>购买或删除许可证
 
 可以通过以下步骤购买更多许可证或减少订阅的许可证数量。
 
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>准备工作
 
 - 你必须是全局管理员或帐单管理员才能执行本文中所述的任务。 有关详细信息，请参阅 [关于管理员角色](../../admin/add-users/about-admin-roles.md)。
 - 可以 [同时添加用户和分配许可证](../../admin/add-users/add-users.md)。

@@ -19,13 +19,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: b7c66b59-657a-4e1a-8aa0-8163b1f4eb54
-description: 了解如何还原已删除的Microsoft 365组。
-ms.openlocfilehash: f3b6435d82d5beddf44f5920011b076b39c7dcd5
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+description: 已删除的组将保留 30 天，您仍可以还原该组。 30 天后，该组及其内容将永久删除。
+ms.openlocfilehash: 285796ec45b1e6d77d46d7a0c39706f566bb8cf6
+ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50910542"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52582676"
 ---
 # <a name="restore-a-deleted-microsoft-365-group"></a>还原已删除的Microsoft 365组
 
@@ -81,12 +81,12 @@ ms.locfileid: "50910542"
 
 请访问[Microsoft 技术Community](https://techcommunity.microsoft.com/t5/Office-365-Groups/ct-p/Office365Groups)发布问题并参与有关用户Microsoft 365对话。 
   
-## <a name="related-articles"></a>相关文章
+## <a name="related-content"></a>相关内容
 
-[使用 PowerShell Microsoft 365组](../../enterprise/manage-microsoft-365-groups-with-powershell.md)
+[使用 PowerShell Microsoft 365组](../../enterprise/manage-microsoft-365-groups-with-powershell.md) (文章) 
   
-[使用 Remove-UnifiedGroup cmdlet 删除组](/powershell/module/exchange/remove-unifiedgroup)
+[使用 Remove-UnifiedGroup cmdlet 删除](/powershell/module/exchange/remove-unifiedgroup) (文章) 
   
-[管理连接了组的团队网站设置](https://support.microsoft.com/office/8376034d-d0c7-446e-9178-6ab51c58df42)
+[管理与组连接的团队网站设置](https://support.microsoft.com/office/8376034d-d0c7-446e-9178-6ab51c58df42) (文章) 
   
-[在 Outlook 中删除组](https://support.microsoft.com/office/ca7f5a9e-ae4f-4cbe-a4bc-89c469d1726f)
+[删除本文Outlook (](https://support.microsoft.com/office/ca7f5a9e-ae4f-4cbe-a4bc-89c469d1726f)中的) 

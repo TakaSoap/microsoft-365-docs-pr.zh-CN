@@ -24,13 +24,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 2d75860f-c527-4352-a7f6-73eba54c0c72
-description: 了解如何管理电子邮件签名，包括进入或离开组织的所有电子邮件的法律免责声明或披露声明。
-ms.openlocfilehash: e1c3df235442fdc6f569825a7137c92bfc5bb044
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+description: 管理电子邮件签名，包括进入或离开组织的所有电子邮件的法律免责声明或披露声明。
+ms.openlocfilehash: 05cfeeb01231e7f99d2a96fc37581b4c9a23f5aa
+ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244523"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52582748"
 ---
 # <a name="create-organization-wide-signatures-and-disclaimers"></a>创建组织范围内的签名和免责声明
 
@@ -115,4 +115,13 @@ ms.locfileid: "52244523"
   
 ## <a name="more-resources"></a>更多资源
 
-- 有关[使用](/exchange/security-and-compliance/mail-flow-rules/disclaimers-signatures-footers-or-headers)PowerShell 的信息，请参阅组织范围内的邮件免责声明、签名、页脚或 Exchange Online标头。
+有关使用 PowerShell 的信息，请参阅组织范围内的邮件免责声明、签名、页脚或[Exchange Online。](/exchange/security-and-compliance/mail-flow-rules/disclaimers-signatures-footers-or-headers)
+
+## <a name="related-content"></a>相关内容
+
+[将电子邮件和联系人迁移到Microsoft 365 (](migrate-email-and-contacts-admin.md)视频) 
+
+[用户电子邮件设置](../email/office-365-user-email-settings.md) (文章) 
+
+[Microsoft 365 管理中心概述](../../business-video/admin-center-overview.md)（视频）
+

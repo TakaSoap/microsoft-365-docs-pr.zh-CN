@@ -20,13 +20,13 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: 了解Microsoft 365组。
-ms.openlocfilehash: 18cb37a4aae7a163d2e198194251abc727b48848
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+description: 通过Microsoft 365组，可以通过向一组人员提供对共享资源集合的访问权限Microsoft 365跨组织推动团队合作。
+ms.openlocfilehash: bfcd2d27bc1d63fcc8b306267efe21c3f9564522
+ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50910602"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52582736"
 ---
 # <a name="overview-of-microsoft-365-groups-for-administrators"></a>面向管理员的 Microsoft 365 组概述
 
@@ -117,14 +117,14 @@ Microsoft 365组使用Azure Active Directory。 你获取的组功能取决于Az
 > 对于所有组功能，如果你有 Azure AD 高级版订阅，则用户可以加入组，无论他们是否分配有 AAD P1 许可证。 不强制执行许可。
 > 我们将定期生成使用情况报告，告知你哪些用户缺少许可证，并且需要为其分配的许可证符合许可要求。 例如，假设用户没有许可证，他们将被添加到强制执行命名策略的组。 报告将标记你需要许可证。
 
-## <a name="related-articles"></a>相关文章
+## <a name="related-content"></a>相关内容
 
-[了解Microsoft 365组](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2)
+[了解Microsoft 365组](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2) (文章) 
 
-[将通讯组列表升级到Microsoft 365组](../manage/upgrade-distribution-lists.md)
+[将通讯组列表Microsoft 365文章](../manage/upgrade-distribution-lists.md) (组) 
 
-[使用 PowerShell Microsoft 365组](../../enterprise/manage-microsoft-365-groups-with-powershell.md)
+[使用 PowerShell Microsoft 365组](../../enterprise/manage-microsoft-365-groups-with-powershell.md) (文章) 
 
-[SharePoint Online 限制](/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits)
+[SharePoint Online 限制](/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits) (文章) 
 
-[在 Microsoft Stream 中组织组和频道](/stream/groups-channels-organization)
+[在 Microsoft Stream 中组织组](/stream/groups-channels-organization) 和频道 (文章) 
