@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 189cb574a436a457cce312f6cb02ca1bf7863a18
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: 0276f0464f898d3675e4cc1d6b69185e7e390a87
+ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52333490"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52572665"
 ---
 # <a name="microsoft-defender-for-endpoint-for-us-government-customers"></a>面向美国政府客户的Microsoft Defender for Endpoint
 
@@ -33,7 +33,7 @@ ms.locfileid: "52333490"
 此产品适用于 GCC、GCC High 和 DoD 客户，并且基于与商业版本相同的预防、检测、调查和修正。 但是，此产品/服务的功能可用性存在一些差异。
 
 > [!NOTE]
-> 如果你是使用商业版 Defender for Endpoint 的 GCC 客户，请参阅公共文档页面。
+> 如果你是使用商业GCC Defender for Endpoint 的客户，请参阅公共文档页面。
 
 ## <a name="licensing-requirements"></a>许可要求
 Microsoft Defender for Endpoint for US Government 客户需要以下 Microsoft 批量许可优惠之一：
@@ -41,9 +41,9 @@ Microsoft Defender for Endpoint for US Government 客户需要以下 Microsoft �
 ### <a name="desktop-licensing"></a>桌面许可
 GCC | GCC 高 | DoD
 :---|:---|:---
-Windows 10 企业版 E5 GCC | 适用于 GCC High 的 Windows 10 企业版 E5 | 适用于 DOD 的 Windows 10 企业版 E5
-| | 适用于 GCC High 的 Microsoft 365 E5 | Microsoft 365 G5 for DOD
-| | 适用于 GCC High 的 Microsoft 365 G5 安全性 | 适用于 DOD 的 Microsoft 365 G5 安全性
+Windows 10 企业版E5 GCC | Windows 10 企业版E5 for GCC High | Windows 10 企业版E5 for DOD
+| | Microsoft 365 E5高GCC | Microsoft 365适用于 DOD 的 G5
+| | Microsoft 365G5 安全GCC高 | Microsoft 365DOD 的 G5 安全性
 Microsoft Defender for Endpoint - GCC | Microsoft Defender for Endpoint for GCC High | Microsoft Defender for Endpoint for DOD
 
 ### <a name="server-licensing"></a>服务器许可
@@ -72,15 +72,15 @@ DoD | https://securitycenter.microsoft.us
 
 操作系统版本 | GCC | GCC 高 | DoD
 :---|:---|:---|:---
-Windows 10 版本 20H2 ([KB4586853](https://support.microsoft.com/help/4586853))  | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg)
-Windows 10 版本 2004 ([KB4586853](https://support.microsoft.com/help/4586853))  | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg)
-Windows 10 版本 1909 ([KB4586819](https://support.microsoft.com/help/4586819))  | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg)
-Windows 10 版本 1903 ([KB4586819](https://support.microsoft.com/help/4586819))  | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg)
-Windows 10 版本 1809 ([KB4586839](https://support.microsoft.com/help/4586839))  | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg)
-Windows 10 版本 1803 ([KB4598245](https://support.microsoft.com/help/4598245))  | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg)
-Windows 10 版本 1709 | ![否](images/svg/check-no.svg)<br />注意：将不受支持 | ![是 ](images/svg/check-yes.svg) ，包含 [KB4499147](https://support.microsoft.com/help/4499147)<br />注意： [已弃用，](/lifecycle/announcements/revised-end-of-service-windows-10-1709)请升级 | ![否](images/svg/check-no.svg)<br />注意：将不受支持
-Windows 10 版本 1703 和更早版本 | ![否](images/svg/check-no.svg)<br />注意：将不受支持 | ![否](images/svg/check-no.svg)<br />注意：将不受支持 | ![否](images/svg/check-no.svg)<br />注意：将不受支持
-Windows Server 2019 ([KB4586839](https://support.microsoft.com/help/4586839))  | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg)
+Windows 10版本 20H2 ([KB4586853](https://support.microsoft.com/help/4586853))  | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg)
+Windows 10版本 2004 ([KB4586853](https://support.microsoft.com/help/4586853))  | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg)
+Windows 10版本 1909 ([KB4586819) ](https://support.microsoft.com/help/4586819) | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg)
+Windows 10版本 1903 ([KB4586819) ](https://support.microsoft.com/help/4586819) | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg)
+Windows 10版本 1809 ([KB4586839](https://support.microsoft.com/help/4586839))  | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg)
+Windows 10版本 1803 ([KB4598245](https://support.microsoft.com/help/4598245))  | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg)
+Windows 10，版本 1709 | ![否](images/svg/check-no.svg)<br />注意：将不受支持 | ![是 ](images/svg/check-yes.svg) ，包含 [KB4499147](https://support.microsoft.com/help/4499147)<br />注意： [已弃用，](/lifecycle/announcements/revised-end-of-service-windows-10-1709)请升级 | ![否](images/svg/check-no.svg)<br />注意：将不受支持
+Windows 10版本 1703 及更早版本 | ![否](images/svg/check-no.svg)<br />注意：将不受支持 | ![否](images/svg/check-no.svg)<br />注意：将不受支持 | ![否](images/svg/check-no.svg)<br />注意：将不受支持
+WindowsServer 2019 ([KB4586839](https://support.microsoft.com/help/4586839))  | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg)
 Windows Server 2016 | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg)
 Windows Server 2012 R2 | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg)
 Windows Server 2008 R2 SP1 | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg)
@@ -163,11 +163,11 @@ SIEM | `https://wdatp-alertexporter-us.gcc.securitycenter.windows.us` | `https:/
 :---|:---|:---|:---
 管理和 API：流式处理 API | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg)
 Web 内容筛选 | ![否](images/svg/check-no.svg) 开发中 | ![否](images/svg/check-no.svg) 开发中 | ![否](images/svg/check-no.svg) 开发中
-集成：Azure Sentinel | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg) 警报 <br /> ![否](images/svg/check-no.svg) 原始数据&事件：开发中 | ![是的。](images/svg/check-yes.svg) 警报 <br /> ![否](images/svg/check-no.svg) 原始数据&事件：开发中
+集成：Azure Sentinel | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg) 警报 <br /> ![否](images/svg/check-no.svg) 原始数据&事件：开发中 | ![是](images/svg/check-yes.svg) 警报 <br /> ![否](images/svg/check-no.svg) 原始数据&事件：开发中
 集成：Microsoft Cloud App Security | ![否](images/svg/check-no.svg) 开发中 | ![否](images/svg/check-no.svg) 开发中 | ![否](images/svg/check-no.svg) 开发中
 集成：Microsoft 合规性管理器 | ![否](images/svg/check-no.svg) 开发中 | ![否](images/svg/check-no.svg) 开发中 | ![否](images/svg/check-no.svg) 开发中
 集成：Microsoft Defender for Identity | ![否](images/svg/check-no.svg) 开发中 | ![否](images/svg/check-no.svg) 开发中 | ![否](images/svg/check-no.svg) 开发中
-集成：Microsoft Endpoint DLP | ![否](images/svg/check-no.svg) 开发中 | ![否](images/svg/check-no.svg) 工程积压工作 | ![否](images/svg/check-no.svg) 工程积压工作
-集成：Microsoft Intune | ![是](images/svg/check-yes.svg) | ![否](images/svg/check-no.svg) 开发中 | ![否](images/svg/check-no.svg) 开发中
+集成：Microsoft Endpoint DLP | ![否](images/svg/check-no.svg) 开发中 | ![否](images/svg/check-no.svg) 开发中 | ![否](images/svg/check-no.svg) 开发中
+集成：Microsoft Intune | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg) | ![是](images/svg/check-yes.svg)
 集成：Microsoft Power Automate & Azure 逻辑应用 | ![是](images/svg/check-yes.svg) | ![否](images/svg/check-no.svg) 开发中 | ![否](images/svg/check-no.svg) 开发中
 Microsoft 威胁专家 | ![否](images/svg/check-no.svg) 工程积压工作 | ![否](images/svg/check-no.svg) 工程积压工作 | ![否](images/svg/check-no.svg) 工程积压工作

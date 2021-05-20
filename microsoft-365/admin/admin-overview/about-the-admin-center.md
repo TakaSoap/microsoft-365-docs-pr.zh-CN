@@ -23,13 +23,13 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: 758befc4-0888-4009-9f14-0d147402fd23
-description: 使用管理中心在云中设置组织，还可用它来管理用户和订阅。 首先使用管理员权限登录帐户。
-ms.openlocfilehash: db88904e16cf9410d3eb4e4aac161f714993150b
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+description: 使用管理员权限登录Microsoft 365管理中心，以在云中设置组织，并管理用户和订阅。
+ms.openlocfilehash: 1d8afaf8c63124fc0dde40002214ba99d4d1a4a0
+ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52290979"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52572017"
 ---
 # <a name="about-the-microsoft-365-admin-center"></a>关于 Microsoft 365 管理中心
 
@@ -55,7 +55,7 @@ ms.locfileid: "52290979"
 
 ## <a name="admin-center-features-and-settings"></a>管理中心功能和设置
 
-可在管理中心的左侧导航中找到以下功能和设置。 在[管理员帮助](https://docs.microsoft.com/microsoft-365/business-video/admin-center-overview)中详细了解管理员任务。
+可在管理中心的左侧导航中找到以下功能和设置。 在[管理员帮助](../../business-video/admin-center-overview.md)中详细了解管理员任务。
   
 |**菜单**|**它有何用途？**|
 |-----|-----|
@@ -68,7 +68,7 @@ ms.locfileid: "52290979"
 |**Settings** <br/> |管理应用（如电子邮件、网站和 Office 套件）的全局设置。 更改你的密码策略和到期日期。 添加和更新域名，如 contoso.com。 更改组织配置文件和发布首选项。 选择合作伙伴能否访问你的管理中心。  <br/> |
 |**设置** <br/> |管理现有域、启用和管理多重身份验证、管理管理员访问权限、将用户邮箱迁移到 Office 365、管理功能更新，并帮助用户安装其 Office 应用。 |
 |**报表** <br/> |一目了然地查看组织如何使用电子邮件Microsoft 365电子邮件使用、Office激活等的详细报告。 了解如何使用新[活动报表](../activity-reports/activity-reports.md)。  <br/> |
-|**运行状况** <br/> |一目了然地查看运行状况。 还可以查看更多详细信息和运行状况历史记录。 有关详细信息[，请参阅如何检查服务运行状况](https://docs.microsoft.com/microsoft-365/enterprise/view-service-health)和[如何Windows版本](https://docs.microsoft.com/windows/deployment/update/check-release-health)运行状况。  <br/><br/>使用消息中心跟踪即将推出的功能和服务更改。 我们会在该中心发布公告，其中含有帮助你规划更改和了解更改可能对用户产生的影响的信息。 在消息中心 [获取更多详细信息](../manage/message-center.md)。 <br/> |
+|**运行状况** <br/> |一目了然地查看运行状况。 还可以查看更多详细信息和运行状况历史记录。 有关详细信息[，请参阅如何检查服务运行状况](../../enterprise/view-service-health.md)和[如何Windows版本](/windows/deployment/update/check-release-health)运行状况。  <br/><br/>使用消息中心跟踪即将推出的功能和服务更改。 我们会在该中心发布公告，其中含有帮助你规划更改和了解更改可能对用户产生的影响的信息。 在消息中心 [获取更多详细信息](../manage/message-center.md)。 <br/> |
 |**管理中心** <br/> |为 Exchange、Skype for Business、SharePoint、Yammer 和 Azure AD 打开单独的管理中心。 每个管理中心均包含可用于此服务的所有设置。  <br/> 例如,在 Exchange 管理中心中，设置和管理电子邮件、日历、通讯组等。在 SharePoint 管理中心中，创建和管理网站集、网站设置和 OneDrive for Business。在 Skype for Business 管理中心中，设置即时消息通知、电话拨入式会议和联机状态。  <br/> 深入了解 [Exchange 管理中心](/exchange/exchange-admin-center)和 [SharePoint 管理中心](/sharepoint/sharepoint-online)。<br/> **注意：** 可使用哪些管理中心取决于你的计划和区域。           |
    
 ## <a name="common-tasks-in-the-admin-center"></a>管理中心内的常见任务

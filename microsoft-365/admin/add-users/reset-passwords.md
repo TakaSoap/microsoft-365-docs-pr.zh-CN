@@ -26,13 +26,13 @@ search.appverid:
 - BEA160
 - GEA150
 ms.assetid: 7a5d073b-7fae-4aa5-8f96-9ecd041aba9c
-description: 了解如何在企业版订阅中重置Microsoft 365密码。
-ms.openlocfilehash: 8720942d60b5ce4efaca8885bd5209cb3e7e7ef8
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+description: 使用 Microsoft 365 管理员帐户登录，重置 Microsoft 365 商业版订阅中的用户密码。
+ms.openlocfilehash: 8d4666eb70b1d5349f71c906f05510a8a54ded74
+ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52290991"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52571969"
 ---
 # <a name="reset-passwords"></a>重置密码
 
@@ -40,7 +40,7 @@ ms.locfileid: "52290991"
 
 ## <a name="before-you-begin"></a>准备工作
 
-本文面向的是为企业、学校或非营利组织设置密码过期策略的人员。 若要完成这些步骤，你需要使用 Microsoft 365 管理员帐户登录。 [什么是管理员帐户？](https://docs.microsoft.com/microsoft-365/business-video/admin-center-overview)
+本文面向的是为企业、学校或非营利组织设置密码过期策略的人员。 若要完成这些步骤，你需要使用 Microsoft 365 管理员帐户登录。 [什么是管理员帐户？](../../business-video/admin-center-overview.md)
 
 您必须是全局 [管理员或密码管理员](about-admin-roles.md) 才能执行这些步骤。
 
@@ -54,7 +54,7 @@ ms.locfileid: "52290991"
   
 ## <a name="steps-reset-a-business-password-for-a-user"></a>步骤：重置用户的业务密码
 
-1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。
+1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。
 
 2. 在"**活动用户"** 页上，选择用户，然后选择"**重置密码"。**
 
@@ -93,7 +93,7 @@ ms.locfileid: "52290991"
 
 这些步骤适用于拥有数十位用户的企业。 如果你有成百上千个用户，请参阅下一部分有关批量重置密码 (一次最多 40 个用户重置) 。
   
-1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。
+1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。
 
 2. 选择"显示名称 **"旁边的** 选项以选择企业中的每个人。 然后取消选中你自己。 重置其他所有用户的密码时无法重置自己的密码。
 
@@ -122,16 +122,12 @@ ms.locfileid: "52290991"
   
 ## <a name="related-content"></a>相关内容
   
-[允许用户重置自己的密码](../add-users/let-users-reset-passwords.md)
+[允许用户重置自己的密码](../add-users/let-users-reset-passwords.md)（文章）
 
-[重置密码](../add-users/reset-passwords.md)
+[重置密码](../add-users/reset-passwords.md)（文章）
 
-[将个人用户密码设置为永不过期](set-password-to-never-expire.md)
+[将个人用户密码设置为永不过期](set-password-to-never-expire.md)（文章）
 
-[为组织设置密码过期策略](../manage/set-password-expiration-policy.md)
+[为组织设置密码过期策略， (](../manage/set-password-expiration-policy.md) 文章) 
 
-[还原用户](restore-user.md)
-
-[删除以前的员工](remove-former-employee.md)
-
-[Microsoft 365 商业版培训视频](../../business-video/index.yml)
+[Microsoft 365企业培训视频 (](../../business-video/index.yml)链接页) 

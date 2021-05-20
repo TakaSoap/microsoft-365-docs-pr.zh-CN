@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: f538bd33ad2f595aa9b3dafa8a13a5682161b52f
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: ae8b08ce3d5bcc34e91f031223108fca053348ce
+ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51688317"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52572389"
 ---
 # <a name="take-response-actions-on-a-device"></a>在设备上执行响应操作
 
@@ -166,6 +166,7 @@ ms.locfileid: "51688317"
 >[!IMPORTANT]
 >- 完全隔离适用于 Windows 10 版本 1703 上的设备。
 >- 选择性隔离适用于 Windows 10 版本 1709 或更高版本上的设备。
+>- 隔离设备时，仅允许某些进程和目标。 因此，完整 VPN 隧道后面的设备在隔离设备后将无法访问 Microsoft Defender for Endpoint 云服务。 我们建议对适用于终结点的 Microsoft Defender 使用拆分隧道 VPN，Microsoft Defender 防病毒基于云的保护相关流量。
 
 此设备隔离功能断开受损设备与网络的连接，同时保留与 Defender for Endpoint 服务的连接，该服务将继续监视设备。
 

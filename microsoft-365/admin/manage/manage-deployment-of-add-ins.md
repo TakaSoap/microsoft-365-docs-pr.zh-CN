@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
 description: 了解如何使用管理中心中的集中部署将加载项部署到组织的用户和组。
-ms.openlocfilehash: 996ef34f1fc8d9663f6fa59f13a56a169b7edd11
-ms.sourcegitcommit: d4604e333507c6f57d5bf327531a241b649052de
+ms.openlocfilehash: 2d3b90a75f38a2c1146c0b0e5470c80b0af2c63f
+ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51470519"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52572269"
 ---
 # <a name="deploy-add-ins-in-the-admin-center"></a>在管理中心部署加载项
 
@@ -129,14 +129,14 @@ Office 加载项结合了一个包含加载项相关元数据的 XML 清单文�
 
 - **Office 应用商店加载项：** 管理员从 Office 应用商店 中选择加载项后，如果 Office 应用商店 中更新了加载项，则该加载项会稍后以集中式部署方式更新。相关 Office 应用程序下次启动时，该加载项会更新。Web 应用程序可以随时更改。
   
-## <a name="learn-more"></a>了解详细信息
+## <a name="related-content"></a>相关内容
 
-[在管理中心管理加载项](manage-addins-in-the-admin-center.md)
+[管理中心中的外接程序 (](manage-addins-in-the-admin-center.md) 文章) 
 
-[生成首个 Word 任务窗格加载项](/office/dev/add-ins/quickstarts/word-quickstart?tabs=yeomangenerator)。
+[生成首个 Word 任务窗格加载项](/office/dev/add-ins/quickstarts/word-quickstart?tabs=yeomangenerator) (文章) 
 
-[次要加载项和从应用商店获取加载项](minors-and-acquiring-addins-from-the-store.md)
+[次要加载项和从应用商店获取加载项 (](minors-and-acquiring-addins-from-the-store.md) 文章) 
   
-[使用集中部署 PowerShell cmdlet 管理外接程序](../../enterprise/use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins.md)
+[使用集中部署 PowerShell cmdlet](../../enterprise/use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins.md) 管理加载项 (文章) 
   
-[疑难解答：用户看不到外接程序](/office365/troubleshoot/access-management/user-not-seeing-add-ins)
+[疑难解答：用户看不到外接程序 (](/office365/troubleshoot/access-management/user-not-seeing-add-ins) 文章) 

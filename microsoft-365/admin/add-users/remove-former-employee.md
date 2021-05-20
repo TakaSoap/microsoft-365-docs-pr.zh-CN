@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 按照此解决方案中的步骤从员工Microsoft 365并保护组织的数据。
-ms.openlocfilehash: 79baf5cbd94d555c1dff1859f5045cde3dbcfdc0
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 44741382a84cca15277308a44b3fd20470aa3a08
+ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 05/19/2021
-ms.locfileid: "52535900"
+ms.locfileid: "52572041"
 ---
 # <a name="overview-remove-a-former-employee-and-secure-data"></a>概述：删除以前的员工和安全数据
 
@@ -37,7 +37,7 @@ ms.locfileid: "52535900"
 
 :::image type="content" source="../../media/delete-user-overview.png" alt-text="Screenshot： Overview steps for removing a former employee":::
 
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>准备工作
 
 您需要是全局管理员才能完成此解决方案中的步骤。
 
@@ -59,6 +59,6 @@ ms.locfileid: "52535900"
 |[步骤 6 - 删除Microsoft 365员工的许可证](remove-former-employee-step-7.md) <br/> |移除许可证后，可将许可证分配给其他人。也可删除许可证，以便在聘用其他人员之前，无需为其付费。  <br/><br/> 移除或删除许可证时，用户的旧电子邮件、联系人和日历将保留 **30 days** ，然后永久删除。如果删除许可证但不删除其帐户，则在 30 天后仍可以访问该用户的 OneDrive 中的内容。  <br/> |
 |[步骤 7 - 删除以前员工的用户帐户](remove-former-employee-step-7.md) <br/> |这将从管理中心中删除帐户。 进行清除，保持干净。 <br/> |
 
-## <a name="related-articles"></a>相关文章
+## <a name="related-content"></a>相关内容
 
-[还原用户](restore-user.md)
+[Restore a user (](restore-user.md) article) 

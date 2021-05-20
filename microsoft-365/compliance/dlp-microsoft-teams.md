@@ -15,12 +15,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 现在可以将 DLP 策略应用于Microsoft Teams和频道。 阅读本文，详细了解它的工作原理。
-ms.openlocfilehash: ac4c326fccd6faccca92844a55c419faa61a8d4c
-ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
+ms.openlocfilehash: 9fdce86473dcfbb7ec75b9d371b8782d4141ef57
+ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52114180"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52572461"
 ---
 # <a name="data-loss-prevention-and-microsoft-teams"></a>数据丢失防护和 Microsoft Teams
 
@@ -115,7 +115,7 @@ ms.locfileid: "52114180"
     
 6. 然后选择“**下一步**”。
 
-7. 单击“保存”。
+7. 单击“**保存**”。
 
 允许大约 1 小时更改通过数据中心运行并同步到用户帐户。
 <!-- again, why user accounts? -->
@@ -157,7 +157,7 @@ ms.locfileid: "52114180"
 
     完成查看或编辑设置后，选择"下一 **步"。**
 
-8. 在"策略设置"选项卡上的"是希望先打开策略还是先测试内容 **？"** 下，选择是打开策略，还是先测试策略，[](data-loss-prevention-policies.md#roll-out-dlp-policies-gradually-with-test-mode)还是将其保持为"现在关闭"，然后选择"下一步 **"。**
+8. 在"策略设置"选项卡上的"是希望先打开策略还是先测试内容 **？"** 下，选择是打开策略，还是先测试策略，[](dlp-overview-plan-for-dlp.md#policy-deployment)还是将其保持为"现在关闭"，然后选择"下一步 **"。**
 
     > [!div class="mx-imgBorder"]
     > ![指定是否打开策略](../media/dlp-teams-policysettings-turnonnow.png)

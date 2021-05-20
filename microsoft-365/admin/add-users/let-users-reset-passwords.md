@@ -24,19 +24,19 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 5bc3f460-13cc-48c0-abd6-b80bae72d04a
-description: 了解如何使用自助服务密码重置工具重置密码。
-ms.openlocfilehash: d24e826287f69f867fdaf9a5c8b424dbad4e0ebb
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+description: 了解如何设置策略以允许用户使用自助服务密码重置工具重置自己的密码。
+ms.openlocfilehash: 2c79d5611ab2db00f4de5f227b0ec2f411955558
+ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52241828"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52571849"
 ---
 # <a name="let-users-reset-their-own-passwords"></a>允许用户重置自己的密码
 
 作为Microsoft 365管理员，你可以让用户使用自助服务密码重置工具，这样[](https://go.microsoft.com/fwlink/p/?LinkId=522677)你就不必重置其密码。 减少工作量！
   
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>准备工作
   
 - 你可以免费为云用户重置自助服务密码 **，Microsoft 365商业**、教育或非营利组织付费计划。 它不能与试用版Microsoft 365一。
 
@@ -44,7 +44,7 @@ ms.locfileid: "52241828"
 
 - **如果你使用的是本地 Active Directory，** 则上述两点不适用。 相反，你可以设置它，**但它需要 Azure AD** 订阅的付费高级版。
 
-本文面向的是为企业、学校或非营利组织设置密码过期策略的人员。 若要完成这些步骤，你需要使用 Microsoft 365 管理员帐户登录。 [什么是管理员帐户？](https://docs.microsoft.com/microsoft-365/business-video/admin-center-overview)
+本文面向的是为企业、学校或非营利组织设置密码过期策略的人员。 若要完成这些步骤，你需要使用 Microsoft 365 管理员帐户登录。 [什么是管理员帐户？](../../business-video/admin-center-overview.md)
 
 您必须是全局 [管理员或密码管理员](about-admin-roles.md) 才能执行这些步骤。
 
@@ -74,8 +74,8 @@ ms.locfileid: "52241828"
 
 ## <a name="related-content"></a>相关内容
 
-[为组织设置密码过期策略](../manage/set-password-expiration-policy.md)
+[为组织设置密码过期策略， (](../manage/set-password-expiration-policy.md) 文章) 
 
-[将个人用户密码设置为永不过期](set-password-to-never-expire.md)
+[将个人用户密码设置为永不过期](set-password-to-never-expire.md)（文章）
 
-[Microsoft 365 商业版培训视频](../../business-video/index.yml)
+[Microsoft 365 商业版培训视频 (](../../business-video/index.yml)链接页) 

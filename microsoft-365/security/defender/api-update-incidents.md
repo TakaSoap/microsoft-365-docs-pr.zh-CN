@@ -20,14 +20,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: d6872a7a4b1b2d2c131066076af02a65b4ef6d8a
-ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
+ms.openlocfilehash: e3f3919d067078ef1fd1e116dc52e8a73c0726d9
+ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52107600"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52571777"
 ---
-# <a name="update-incidents-api"></a>更新事件 API
+# <a name="update-incident-api"></a>更新事件 API
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -40,7 +40,7 @@ ms.locfileid: "52107600"
 
 ## <a name="api-description"></a>API 说明
 
-更新现有事件的属性。 可更新的属性包括 ```status``` ```determination``` ```classification``` ：、、、 ```assignedTo``` 和 ```tags``` 。
+更新现有事件的属性。 可更新的属性包括 ```status``` ```determination``` ```classification``` ：、、、、 ```assignedTo``` ```tags``` 和 ```comments``` 。
 
 ### <a name="quotas-resource-allocation-and-other-constraints"></a>配额、资源分配和其他约束
 
@@ -85,6 +85,7 @@ assignedTo | string | 事件的所有者。
 classification | 枚举 | 事件的规范。 可取值为：```Unknown```、```FalsePositive```、```TruePositive```。
 确定 | 枚举 | 指定事件的确定。 可取值为：```NotAvailable```、```Apt```、```Malware```、```SecurityPersonnel```、```SecurityTesting```、```UnwantedSoftware``` 或 ```Other```。
 tags | 字符串列表 | 事件标记列表。
+comment | string | 要添加到事件的注释。
 
 ## <a name="response"></a>响应
 
@@ -108,7 +109,19 @@ tags | 字符串列表 | 事件标记列表。
     "assignedTo": "secop2@contoso.com",
     "classification": "TruePositive",
     "determination": "Malware",
-    "tags": ["Yossi's playground", "Don't mess with the Zohan"]
+    "tags": ["Yossi's playground", "Don't mess with the Zohan"],
+    "comments": [
+          {
+              "comment": "pen testing",
+              "createdBy": "secop2@contoso.com",
+              "createdTime": "2021-05-02T09:34:21.5519738Z"
+          },
+          {
+              "comment": "valid incident",
+              "createdBy": "secop2@contoso.comt",
+              "createdTime": "2021-05-02T09:36:27.6652581Z"
+          }
+      ]
 }
 ```
 

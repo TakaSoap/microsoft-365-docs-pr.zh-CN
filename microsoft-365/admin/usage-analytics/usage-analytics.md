@@ -19,16 +19,14 @@ search.appverid:
 - MOE150
 ms.assetid: 77ff780d-ab19-4553-adea-09cb65ad0f1f
 description: 大致了解组织如何采用 Microsoft 365 服务进行通信和协作。
-ms.openlocfilehash: ac54e8bbc24393b7140fbc32efd48047beca2a1c
-ms.sourcegitcommit: 58d74ff60303a879e35d112f10f79724ba41188f
+ms.openlocfilehash: f641e2b99e2d61881eb86506a1770f4401cb98bc
+ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52301736"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52572329"
 ---
 # <a name="microsoft-365-usage-analytics"></a>Microsoft 365 使用情况分析
-
-## <a name="overview-of-microsoft-365-usage-analytics"></a>Microsoft 365 使用情况分析概述
 
 在Microsoft 365内使用Power BI使用情况分析，可深入了解组织如何采用 Microsoft 365。 你可以可视化和分析Microsoft 365数据、创建自定义报告并在组织内部共享见解。 您还可以深入了解特定区域或部门如何使用Microsoft 365。
   
@@ -119,7 +117,7 @@ The Microsoft 365 overview report contains the following reports. 您可以通�
 
 ### <a name="is-it-possible-to-work-on-and-customize-the-same-template-app-with-a-group-of-people"></a>是否可能与一组人员一起处理和自定义同一模板应用？
 
-正确。 若要使一组管理员能够共同处理同一模板应用，可以利用 Power BI 的应用工作区功能，有关详细信息，请参阅我应该如何协作和共享仪表板[和报表？](/power-bi/collaborate-share/service-how-to-collaborate-distribute-dashboards-reports) 
+是。 若要使一组管理员能够共同处理同一模板应用，可以利用 Power BI 的应用工作区功能，有关详细信息，请参阅我应该如何协作和共享仪表板[和报表？](/power-bi/collaborate-share/service-how-to-collaborate-distribute-dashboards-reports) 
 
 ### <a name="for-which-timeframe-is-data-available"></a>可以使用哪些时间范围的数据？
 
@@ -212,3 +210,11 @@ The Microsoft 365 overview report contains the following reports. 您可以通�
 ### <a name="can-i-hide-identifiable-information-such-as-user-group-and-site-names-in-reports"></a>是否可以在报表中隐藏可识别身份的信息（例如用户、组和网站名称）？
 
 是，请参阅[将收集的数据匿名。](enable-usage-analytics.md#make-the-collected-data-anonymous)
+
+## <a name="related-content"></a>相关内容
+
+[启用 Microsoft 365 使用情况分析](enable-usage-analytics.md)（文章）
+
+[导航和利用 Microsoft 365 使用情况分析 (](navigate-and-utilize-reports.md)中的) 
+
+[查看视频视频](../../business-video/act-on-report.md)Microsoft 365 (中的) 

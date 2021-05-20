@@ -15,12 +15,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 711765ca9638e310ab03f841ba3aba558b4fd1cb
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: f7f9ae22081eb7c55cf35b08844b88230bd0b201
+ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52275284"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52571813"
 ---
 # <a name="configure-end-user-interaction-with-microsoft-defender-antivirus"></a>配置最终用户与最终用户的Microsoft Defender 防病毒
 
@@ -35,8 +35,8 @@ ms.locfileid: "52275284"
 
 使用以下文章配置最终用户与最终用户的Microsoft Defender 防病毒
 
-- [配置终结点上显示的通知](configure-notifications-microsoft-defender-antivirus.md) 配置和自定义通知、通知的自定义文本，以及有关重新启动以修正的通知
+- **[配置终结点上显示的通知](configure-notifications-microsoft-defender-antivirus.md)** 配置和自定义通知，包括通知文本，以及修正所需的重启通知。
 
-- [阻止用户查看或与用户界面Microsoft Defender 防病毒交互](prevent-end-user-interaction-microsoft-defender-antivirus.md)向用户隐藏用户界面
+- **[阻止用户查看或与用户界面Microsoft Defender 防病毒交互](prevent-end-user-interaction-microsoft-defender-antivirus.md)** 对 **最终用户&** 病毒和威胁防护用户界面。
 
-- [阻止用户在本地修改策略设置](configure-local-policy-overrides-microsoft-defender-antivirus.md) 阻止 (或) 用户覆盖其各个终结点上的策略设置
+- **[阻止用户在本地修改策略设置](configure-local-policy-overrides-microsoft-defender-antivirus.md)** 防止 (或) 用户覆盖其各个终结点上的策略设置。

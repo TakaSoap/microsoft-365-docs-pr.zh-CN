@@ -16,17 +16,14 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 5e754c2f4b5406d4b91ef624415f3819d3171305
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: ef5a9ffdf45a2f8e7f262ae7f969cd19e848b7a5
+ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 05/19/2021
-ms.locfileid: "52536018"
+ms.locfileid: "52572521"
 ---
 # <a name="configure-and-validate-microsoft-defender-antivirus-network-connections"></a>配置和验证 Microsoft Defender 防病毒软件网络连接
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
-
 
 **适用于：**
 
@@ -107,11 +104,9 @@ ms.locfileid: "52536018"
 
 你还在应用扫描历史记录部分中的隔离威胁下看到Windows 安全中心检测：
 
-1. 通过Windows 安全中心任务栏中的防护图标或搜索 Defender 的"开始"菜单打开"开始 **"菜单。**
+1. 通过Windows 安全中心任务栏中的防护图标或搜索"安全"的"开始"菜单打开"安全 **"菜单。**
 
-2. 选择病毒& **威胁** 防护磁贴 (左侧菜单栏上的防护图标) "扫描 **历史记录** "标签：
-
-    !["扫描历史记录"标签在Windows 安全中心屏幕截图](images/defender/wdav-history-wdsc.png)
+2. 选择 **病毒&威胁防护"，** 然后选择"保护 **历史记录"。**
 
 3. 在" **隔离的威胁"** 部分下， **选择"查看完整历史记录** "以查看检测到的假恶意软件。
 

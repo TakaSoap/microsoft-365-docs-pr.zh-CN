@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 7fb0de4f8dc67331e7acca59e70d061fe7c19493
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 6f0c92371e7e9b7a3348f90df788ee8c3a46374b
+ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51935733"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52572149"
 ---
 # <a name="list-incidents-api-in-microsoft-365-defender"></a>在 defender 中列出Microsoft 365 API
 
@@ -110,6 +110,7 @@ classification | 事件的规范。 属性值为 *：Unknown、FalsePositive、T
 状态 | 将事件分类 (*活动"* 或"已解决 *) "* 它可以帮助您组织和管理对事件的响应。 | 活动
 severity | 指示对资产可能的影响。 严重性越高，影响越大。 通常，严重性级别较高的项目需要最直接的关注。<br /><br />下列值之一 *：Informational、Low、*Medium* 和 *High。*  | 中
 tags | 与事件关联的自定义标记数组，例如，用于标记一组具有共同特征的事件。 | \[\]
+comments | 由 secops 在管理事件时创建的注释数组，例如有关分类选择的其他信息。 | \[\]
 警报 | 包含与事件相关的所有警报以及其他信息（如严重性、警报中涉及的实体以及警报来源）的数组。 | \[\] (以下警报字段的详细信息) 
 
 ### <a name="alerts-metadata"></a>警报元数据
@@ -215,6 +216,13 @@ GET https://api.security.microsoft.com/api/incidents
             "status": "Active",
             "severity": "Medium",
             "tags": [],
+            "comments": [
+                {
+                    "comment": "test comment for docs",
+                    "createdBy": "secop123@contoso.com",
+                    "createdTime": "2021-01-26T01:00:37.8404534Z"
+                }
+            ],
             "alerts": [
                 {
                     "alertId": "caD70CFEE2-1F54-32DB-9988-3A868A1EBFAC",
@@ -323,6 +331,7 @@ GET https://api.security.microsoft.com/api/incidents
             "status": "Active",
             "severity": "Low",
             "tags": [],
+            "comments": [],
             "alerts": [
                 {
                     "alertId": "da637349914833441527_393341063",
@@ -413,6 +422,7 @@ GET https://api.security.microsoft.com/api/incidents
             "status": "Active",
             "severity": "Informational",
             "tags": [],
+            "comments": [],
             "alerts": [
                 {
                     "alertId": "faf8edc936-85f8-a603-b800-08d8525cf099",

@@ -21,13 +21,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 0b0bd900-68b1-4bf5-808b-5d240a7739f4
-description: '了解如何将多个电子邮件地址（称为电子邮件别名）与适用于Microsoft 365相关联。 '
-ms.openlocfilehash: fd5fe2906335c8c2d1f41ac7643b7312138e15f5
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+description: '了解如何将多个电子邮件地址（称为电子邮件别名）与企业Microsoft 365相关联。 '
+ms.openlocfilehash: ec5bc69a42c5183413f11649b7d7ec6baaf40b01
+ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52241684"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52572101"
 ---
 # <a name="add-another-email-alias-for-a-user"></a>为用户添加另一个电子邮件别名
   
@@ -36,7 +36,6 @@ ms.locfileid: "52241684"
 用户邮箱中Microsoft 365电子邮件地址通常是用户创建帐户时分配的电子邮件地址。 当用户向其他人发送电子邮件时，其主要电子邮件地址通常在电子邮件应用的" *发件人*  "字段中显示。 他们还可以将多个电子邮件地址与其企业帐户Microsoft 365关联。 其他地址称为别名。 
   
 例如，假设 Jenna 的电子邮件地址是 jenna@contosoco.com，但是她还想在 jen@contosoco.com 接收电子邮件，因为有人通过该姓名引用她。 你可以为她创建别名，以便两个电子邮件地址都转到 Jenna 的收件箱。
-<br><br>  
   
 最多可为一个用户创建 400 个别名。无需其他费用或许可证。
   
@@ -47,7 +46,7 @@ ms.locfileid: "52241684"
 
 为此， [你必须具有](../add-users/about-admin-roles.md) 管理员权限。 
 
-1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。
+1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。
 
 2. 在" **活动用户"** 页上，选择"管理> **和电子邮件"的用户**。 如果用户未分配许可证，则看不到此选项。 
     
@@ -86,8 +85,10 @@ ms.locfileid: "52241684"
 
 2021 年 4 月推出一项新功能，允许用户在使用 Web 上的 Outlook轻松发送别名。 当功能推出到租户管理员使用 cmdlet 的租赁时，租户内的用户将有权访问复选框列表，其中每个条目对应其 Outlook 设置中的别名。 `Set-OrganizationConfig -SendFromAliasEnabled $true` 选择别名将使其出现在"撰写"窗体的"自"下拉列表中。
   
-## <a name="related-articles"></a>相关文章
+## <a name="related-content"></a>相关内容
 
-[从不同的地址发送电子邮件](https://support.microsoft.com/office/ccba89cb-141c-4a36-8c56-6d16a8556d2e)
+[本文介绍的不同地址 (](https://support.microsoft.com/office/ccba89cb-141c-4a36-8c56-6d16a8556d2e) 发送电子邮件) 
 
-[更改用户名和电子邮件地址](../add-users/change-a-user-name-and-email-address.md)
+[更改用户名称和电子邮件地址 (](../add-users/change-a-user-name-and-email-address.md) 文章) 
+
+[在 Microsoft 365 中配置电子邮件转发](configure-email-forwarding.md)（文章）

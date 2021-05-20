@@ -24,13 +24,13 @@ search.appverid:
 - BEA160
 - GEA150
 ms.assetid: f4d8cae9-6d06-4c4b-b4e5-6581fd05ea82
-description: '将初始电子邮件地址更改为友好电子邮件地址，如 tom@fourthcoffee.com。 为此，需要购买域名，并将其添加到Microsoft 365。 '
-ms.openlocfilehash: c7ded3712fa0f8894ae0b8b9d864a1a5a58e4558
-ms.sourcegitcommit: d4604e333507c6f57d5bf327531a241b649052de
+description: 通过购买域名并添加到电子邮件地址 tom@fourthcoffee.com 将电子邮件地址更改为友好电子邮件地址，Microsoft 365。
+ms.openlocfilehash: d5e70856c9200cd7e5df0eded25b6ff460e5d1fe
+ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51470985"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52572089"
 ---
 # <a name="change-your-email-address-to-use-your-custom-domain"></a>将电子邮件地址更改为使用您的自定义域
 
@@ -54,7 +54,7 @@ ms.locfileid: "51470985"
 
 ::: moniker-end
 
-当您将域的电子邮件更改为发送到 Microsoft 365，在设置期间更新域的 MX 记录时，发送到该域的所有电子邮件都将开始Microsoft 365。 在更改 MX 记录之前，请确保你已添加用户，Microsoft 365域中拥有电子邮件的所有人创建邮箱。 不想将域中的每个人的电子邮件移动到Microsoft 365？ 你可以采取一些[步骤来Microsoft 365一些电子邮件地址进行试点](../misc/pilot-microsoft-365-from-my-custom-domain.md?view=o365-worldwide)。
+当您将域的电子邮件更改为发送到 Microsoft 365，在设置期间更新域的 MX 记录时，发送到该域的所有电子邮件都将开始Microsoft 365。 在更改 MX 记录之前，请确保你已添加用户，Microsoft 365域中拥有电子邮件的所有人创建邮箱。 不想将域中的每个人的电子邮件移动到Microsoft 365？ 你可以采取一些[步骤来Microsoft 365一些电子邮件地址进行试点](../misc/pilot-microsoft-365-from-my-custom-domain.md)。
   
 ## <a name="change-your-email-address-to-use-your-custom-domain-using-the-microsoft-365-admin-center"></a>将电子邮件地址更改为使用管理中心Microsoft 365自定义域
 
@@ -89,6 +89,6 @@ ms.locfileid: "51470985"
 > [!NOTE]
 > 如果未使用 Exchange许可证，则不能使用域从 Microsoft 365 租户发送或接收电子邮件。
   
-## <a name="related-articles"></a>相关文章
+## <a name="related-content"></a>相关内容
 
-[使用自定义域购买Microsoft 365](../get-help-with-domains/buy-a-domain-name.md)
+[使用自定义域Microsoft 365 (](../get-help-with-domains/buy-a-domain-name.md)购买) 

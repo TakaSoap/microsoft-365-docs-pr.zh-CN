@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9de497a9-2f5c-43d6-ae18-767f2e6fe6e0
 description: 了解如何将来宾添加到 Microsoft 365 组、查看来宾用户和使用 PowerShell 控制来宾访问。
-ms.openlocfilehash: 114fc1b5262f1632c7e7a8d1aa339c2470223288
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: c52f0094e724040b71d5d72cded049fed57e3969
+ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50908602"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52571933"
 ---
 # <a name="manage-guest-access-in-microsoft-365-groups"></a>管理来宾组中来宾Microsoft 365访问
 
@@ -67,12 +67,12 @@ ms.locfileid: "50908602"
 
 如果要编辑来宾的任何信息，可以使用 "添加或更新用户个人资料[Azure Active Directory"](/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal)。
 
-## <a name="see-also"></a>另请参阅
+## <a name="related-content"></a>相关内容
 
-[阻止特定组的来宾用户](../../solutions/per-group-guest-access.md)
+[阻止特定组的来宾用户 (](../../solutions/per-group-guest-access.md) 文章) 
 
-[在管理中心管理Microsoft 365组成员身份](add-or-remove-members-from-groups.md)
+[在管理中心管理Microsoft 365管理 (](add-or-remove-members-from-groups.md)成员身份) 
   
-[Azure Active Directory访问评审](/azure/active-directory/active-directory-azure-ad-controls-perform-access-review)
+[Azure Active Directory访问评审](/azure/active-directory/active-directory-azure-ad-controls-perform-access-review) (文章) 
 
-[Set-AzureADUser](/powershell/module/azuread/set-azureaduser)
+[Set-AzureADUser](/powershell/module/azuread/set-azureaduser) (文章) 

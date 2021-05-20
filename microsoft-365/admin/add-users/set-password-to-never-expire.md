@@ -21,13 +21,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: f493e3af-e1d8-4668-9211-230c245a0466
-description: 了解如何使用密码设置一些个人用户密码永不Windows PowerShell。
-ms.openlocfilehash: c70fce1c3ea9cb1dea66982a27ddb24e2b2de255
-ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
+description: 登录你的 Microsoft 365 管理员帐户，使用密码将一些个人用户密码设置为永不Windows PowerShell。
+ms.openlocfilehash: 0747e0bfe8a7389db554d5d6a7f685605e013306
+ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51222059"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52571921"
 ---
 # <a name="set-an-individual-users-password-to-never-expire"></a>设置单个用户的密码永不过期
 
@@ -35,7 +35,7 @@ ms.locfileid: "51222059"
 
 ## <a name="before-you-begin"></a>准备工作
 
-本文面向的是为企业、学校或非营利组织设置密码过期策略的人员。 若要完成这些步骤，你需要使用 Microsoft 365 管理员帐户登录。 [什么是管理员帐户？](https://docs.microsoft.com/microsoft-365/business-video/admin-center-overview) 
+本文面向的是为企业、学校或非营利组织设置密码过期策略的人员。 若要完成这些步骤，你需要使用 Microsoft 365 管理员帐户登录。 [什么是管理员帐户？](../../business-video/admin-center-overview.md) 
 
 您必须是全局 [管理员或密码管理员](about-admin-roles.md) 才能执行这些步骤。
 
@@ -128,6 +128,6 @@ Run one of the following commands:
 
 ## <a name="related-content"></a>相关内容
 
-[允许用户重置自己的密码](../add-users/let-users-reset-passwords.md)
+[允许用户重置自己的密码](../add-users/let-users-reset-passwords.md)（文章）
 
-[重置密码](../add-users/reset-passwords.md)
+[重置密码](../add-users/reset-passwords.md)（文章）

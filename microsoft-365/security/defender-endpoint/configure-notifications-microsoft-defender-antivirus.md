@@ -11,22 +11,19 @@ localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 09/03/2018
+ms.date: 05/17/2021
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 6e11c9394f250a6f3882183224f53954b1390a23
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: f885b6d7991e4175cd14be5bbe9e0a7c96b1580f
+ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52274624"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52572341"
 ---
 # <a name="configure-the-notifications-that-appear-on-endpoints"></a>配置终结点上显示的通知
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
-
 
 **适用于：**
 
@@ -50,11 +47,9 @@ ms.locfileid: "52274624"
 
 **使用Windows 安全中心应用禁用其他通知：**
 
-1. 通过Windows 安全中心任务栏中的防护图标或搜索 Defender 的"开始"菜单打开"开始 **"菜单。**
+1. 通过Windows 安全中心任务栏中的防护图标或搜索"安全"的"开始"菜单打开"安全 **"菜单。**
 
-2. 单击病毒&**威胁** 防护磁贴 (左侧菜单栏上的防护图标) 然后单击病毒防护威胁防护 **&标签：**
-
-    ![Windows 安全应用中病毒和威胁防护设置标签的屏幕截图](images/defender/wdav-protection-settings-wdsc.png)
+2. 选择 **病毒&威胁** 防护磁贴 (或左侧菜单栏上的防护图标) ，然后选择病毒防护& **威胁防护设置**
 
 3. 滚动到通知 **部分** ，然后单击更改 **通知设置**。
 

@@ -19,12 +19,12 @@ ms.topic: article
 search.appverid: met150
 ms.custom: seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: 7084b9370a0dd83265b37ff1d152e2164fe32813
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 72eb111da2f342b78aa6161c7334a7252314b4a5
+ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 05/19/2021
-ms.locfileid: "52539127"
+ms.locfileid: "52572797"
 ---
 # <a name="investigate-users-in-microsoft-365-defender"></a>调查 Microsoft 365 Defender 中的用户
 
@@ -43,7 +43,7 @@ ms.locfileid: "52539127"
 :::image type="content" source="../../media/investigate-users/incidents-ss-user-pane.png" alt-text="安全中心内事件的用户帐户摘要窗格Microsoft 365示例":::
 
 > [!NOTE]
-> "用户"Azure Active Directory (AD) 以及组，帮助您了解与用户关联的组和权限。
+> "用户"Azure Active Directory (Azure AD) 以及组，帮助你了解与用户关联的组和权限。
 
 在此飞出页面中，你可以查看用户威胁信息，包括任何当前事件、活动警报和风险级别以及用户曝光、帐户、设备等。
 

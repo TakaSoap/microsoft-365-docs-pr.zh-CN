@@ -22,12 +22,12 @@ search.appverid:
 - GEA150
 ms.assetid: f09696b2-8c29-4588-a08b-b333da19810c
 description: 了解如何从域中删除旧域Microsoft 365将用户和组移动到另一个域。
-ms.openlocfilehash: ca12a886c508024bf39ae9e619744a355376a80d
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 3586cc8b288b77725c0dd3484629688e98e0a218
+ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52296703"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52572113"
 ---
 # <a name="remove-a-domain"></a>删除域
   
@@ -47,7 +47,7 @@ ms.locfileid: "52296703"
 
 3. 选中要移动的所有用户的名称旁边的框。
 
-4. 选择 **页面顶部的**" (...) "，然后选择"更改 **域"。** 
+4. 在页面顶部，然后选择"更改 **域"。**
 
 5. 在" **更改域** "窗格中，选择其他域。
 

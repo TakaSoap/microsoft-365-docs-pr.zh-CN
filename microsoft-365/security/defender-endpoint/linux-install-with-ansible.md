@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 9cd544ca3d714ea46c74e10f8aba5e46dc0e1b35
-ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
+ms.openlocfilehash: 36095f14ad3ed71c6a8d4707522c08c07ea738c4
+ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52280989"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52572725"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-linux-with-ansible"></a>使用 Ansible 在 Linux 上部署 Microsoft Defender for Endpoint
 
@@ -127,7 +127,7 @@ ms.locfileid: "52280989"
       when: not mdatp_onboard.stat.exists
     ```
 
-- 添加适用于终结点的 Defender 存储库和密钥。
+- 添加适用于终结点的 Defender 存储库和密钥 `add_apt_repo.yml` ：
 
     Linux 上的 Defender for Endpoint 可以从以下频道之一进行部署 (下面表示为 *[channel]* *) ：insiders-fast、insiders-slow* 或 *prod*。 每个通道对应于 Linux 软件存储库。
 

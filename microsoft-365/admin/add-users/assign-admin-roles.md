@@ -27,12 +27,12 @@ search.appverid:
 - GEA150
 ms.assetid: eac4d046-1afd-4f1a-85fc-8219c79e1504
 description: 了解如何将管理员角色分配给企业中的一个或多个用户，以便他们可以在管理中心执行特定任务。
-ms.openlocfilehash: c723053d8d1a39bf0f996840bc418ffe299db089
-ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
+ms.openlocfilehash: f23a30cfd1be53982572d745d476558c3be615e6
+ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52023985"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52571861"
 ---
 # <a name="assign-admin-roles"></a>分配管理员角色
 
@@ -78,7 +78,7 @@ ms.locfileid: "52023985"
 
 ::: moniker range="o365-germany"
 
-1. 在管理中心，转到“**用户**”>“<a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">活动用户</a>”页面。
+1. 在管理中心，转到“**用户**><a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">活动用户</a>”页面。
 
 2. 在 **"活动用户"** 页上，选择要更改其管理员角色的用户。 在飞出窗格中的"角色"**旁边**，选择"编辑 **"。** 
 
@@ -90,7 +90,7 @@ ms.locfileid: "52023985"
 
 ::: moniker range="o365-21vianet"
 
-1. 在管理中心，转到“**用户**”>“<a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">活动用户</a>”页面。
+1. 在管理中心，转到“**用户**><a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">活动用户</a>”页面。
 
 2. 在 **"活动用户"** 页上，选择要更改其管理员角色的用户。 在飞出窗格中的"角色"**旁边**，选择"编辑 **"。**
 
@@ -119,12 +119,12 @@ ms.locfileid: "52023985"
 
 ::: moniker-end
 
-## <a name="related-articles"></a>相关文章
+## <a name="related-content"></a>相关内容
 
-[关于 Microsoft 365 管理员角色](about-admin-roles.md)
+[关于Microsoft 365管理员角色 (](about-admin-roles.md)文章) 
 
-[Azure Active Directory 中的管理员角色权限](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)
+[本文中的管理员Azure Active Directory (](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)权限) 
 
-[使用 PowerShell 向用户帐户分配角色](../../enterprise/assign-roles-to-user-accounts-with-microsoft-365-powershell.md)
+[使用 PowerShell 向用户帐户分配](../../enterprise/assign-roles-to-user-accounts-with-microsoft-365-powershell.md) 角色 (文章) 
 
-[授权或删除合作伙伴关系](../misc/add-partner.md)
+[授权或删除 (](../misc/add-partner.md) 文章) 

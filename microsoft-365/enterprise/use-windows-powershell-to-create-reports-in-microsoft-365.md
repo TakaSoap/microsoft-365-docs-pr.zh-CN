@@ -16,12 +16,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 1ea4d4ec-af89-496f-9678-701867f5a6fc
 description: 摘要：使用 PowerShell for Microsoft 365创建无法通过管理中心Microsoft 365的报告。
-ms.openlocfilehash: dc183ae8a315bf788befc85474d0647802ac91ee
-ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
+ms.openlocfilehash: 9e3b90dcdd32f80125175ad2e15a852db51e17f8
+ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51222775"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52572737"
 ---
 # <a name="use-powershell-to-create-reports-for-microsoft-365"></a>使用 PowerShell 创建 Microsoft 365 报告
 
@@ -57,7 +57,7 @@ ms.locfileid: "51222775"
   - [使用 Exchange Online PowerShell 显示邮箱](/exchange/recipients-in-exchange-online/manage-user-mailboxes/use-powershell-to-display-mailbox-information)
     
     
-## <a name="related-articlesl"></a>相关文章l
+## <a name="related-articles"></a>相关文章
 
 [使用 PowerShell 管理 Microsoft 365](manage-microsoft-365-with-microsoft-365-powershell.md)
   

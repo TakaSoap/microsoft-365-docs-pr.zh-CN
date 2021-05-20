@@ -21,12 +21,12 @@ ms.assetid: ba235f4f-e640-4360-81ea-04507a3a70be
 search.appverid:
 - MET150
 description: 本文将了解如何使用 PowerShell 向未授权Microsoft 365许可证。
-ms.openlocfilehash: 5fb5f9095d4f732b0bf23f26eebb22eff608b48c
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 6d7e005aff018394810082de57c68ea289057f8e
+ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50905460"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52572617"
 ---
 # <a name="assign-microsoft-365-licenses-to-user-accounts-with-powershell"></a>使用 PowerShell Microsoft 365用户帐户分配许可证
 
@@ -86,6 +86,8 @@ Set-AzureADUserLicense -ObjectId $userUPN -AssignedLicenses $LicensesToAssign
 ```
 
 ## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>使用用于 Windows PowerShell 的 Microsoft Azure Active Directory 模块
+
+请注意，当此模块的功能在较新的[PowerShell](/powershell/azuread/v2/azureactivedirectory) for Azure Active Directory 模块中可用时，我们将开始Graph模块。 我们建议创建新 PowerShell 脚本的客户使用较新的模块而不是此模块。
 
 首先，[连接到你的Microsoft 365租户](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)。
 

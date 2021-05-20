@@ -9,18 +9,18 @@ ms.sitesec: library
 localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
-ms.date: 04/30/2021
+ms.date: 05/18/2021
 ms.reviewer: ''
 manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 2b3d22fc50335516e6c50a9dfef9f7835c00a95b
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: 8c45fb4b60e3c20c2001cc0008ecc8154e854273
+ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52275260"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52572053"
 ---
 # <a name="turn-on-cloud-delivered-protection"></a>打开云传递保护
 
@@ -34,7 +34,6 @@ ms.locfileid: "52275260"
 > Microsoft Defender 防病毒云服务是一种向网络和终结点提供更新保护的机制。 尽管它称为云服务，但它并不仅仅是对存储在云中的文件的保护;相反，它使用分布式资源和机器学习以比传统安全智能更新快得多的速度为终结点提供保护。
 
 Microsoft Defender 防病毒使用多个检测和防护技术提供准确、实时和智能的保护。 了解 Microsoft Defender for Endpoint 下一代保护[的核心高级技术](https://www.microsoft.com/security/blog/2019/06/24/inside-out-get-to-know-the-advanced-technologies-at-the-core-of-microsoft-defender-atp-next-generation-protection/)。
-![Microsoft Defender AV 引擎列表](images/microsoft-defender-atp-next-generation-protection-engines.png)  
 
 可以通过多种方式Microsoft Defender 防病毒或关闭云保护：
 

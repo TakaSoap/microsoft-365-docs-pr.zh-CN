@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 843bd953b97f29a5b9c80fc44a9b19fae60a6fa7
-ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
+ms.openlocfilehash: a91a401d5d57c7757bc043178c95dc42e7733b41
+ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "51939762"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52571825"
 ---
 # <a name="access-the-microsoft-defender-for-endpoint-apis"></a>访问 Microsoft Defender for Endpoint API 
 
@@ -45,7 +45,7 @@ Defender for Endpoint 通过一组编程 API 公开其大部分数据和操作�
 >[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4d73M]
 
 通常，你将需要执行以下步骤来使用 API：
-- 创建 AAD 应用程序
+- 创建 [AAD 应用程序](/microsoft-365/security/defender-endpoint/exposed-apis-create-app-nativeapp)
 - 使用此应用程序获取访问令牌
 - 使用令牌访问 Defender for Endpoint API
 

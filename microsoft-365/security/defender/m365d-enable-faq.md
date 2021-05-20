@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 55c1a3807fe8e28ca12f4f638c1ab2ca717523ed
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 008e3cc6ee65597a032aa932b74a64ac591927f2
+ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51933429"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52572761"
 ---
 # <a name="frequently-asked-questions-when-turning-on-microsoft-365-defender"></a>打开 Defender 时Microsoft 365常见问题
 
@@ -70,7 +70,7 @@ Microsoft 365Defender 在安全Microsoft 365可用。 若要转到安全中心�
 
 ##  <a name="what-permissions-do-i-need-to-access-microsoft-365-defender-in-microsoft-365-security-center"></a>我需要哪些权限才能访问安全Microsoft 365 Defender Microsoft 365 Defender？
 
-分配了以下 AD Azure Active Directory (AD) 的帐户可以访问Microsoft 365 Defender 功能和数据：
+在 Azure AD Azure Active Directory (分配) 的帐户可以访问Microsoft 365 Defender 功能和数据：
 
 - 全局管理员
 - 安全管理员

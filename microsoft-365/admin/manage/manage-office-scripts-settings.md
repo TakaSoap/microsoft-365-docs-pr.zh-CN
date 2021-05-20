@@ -16,18 +16,18 @@ ms.collection:
 ms.custom: AdminSurgePortfolio
 search.appverid: MET150
 description: 了解如何管理Office组织中用户的脚本设置。
-ms.openlocfilehash: 75d0a9d9e98652fc11eab7e8a7d6c826be031f6e
-ms.sourcegitcommit: 50f10d83fa21db8572adab90784146e5231e3321
+ms.openlocfilehash: e0cb52c4a8f48ff2310c83ffce61e08a0236ed59
+ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "50058419"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52572305"
 ---
 # <a name="manage-office-scripts-settings"></a>管理 Office 脚本设置
 
-Office脚本允许用户通过记录、编辑和运行 Web 上Excel脚本来自动执行任务。 Office脚本适用于Power Automate，用户通过使用 Excel Online (Business) 连接器对工作簿运行脚本。 Microsoft 365管理员可以从Office管理中心管理Microsoft 365脚本设置。
+[Office脚本](/office/dev/scripts)允许用户通过录制、编辑和运行 Web 上的Excel脚本来自动执行任务。 Office脚本适用于Power Automate，用户通过使用 Excel Online (Business) 连接器对工作簿运行脚本。 Microsoft 365管理员可以从Office管理中心管理Microsoft 365脚本设置。
 
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>准备工作
 
 - 若要管理Office脚本设置，你必须是全局管理员。有关详细信息，请参阅关于[管理员角色](../add-users/about-admin-roles.md)。
 
@@ -90,7 +90,7 @@ Office脚本允许用户通过记录、编辑和运行 Web 上Excel脚本来自�
 
         若要详细了解不同类型的组，请参阅比较 [组](../create-groups/compare-groups.md)。
 
-    - 若要了解有关将 Office 脚本与 Power Automate 一起使用，包括数据丢失防护策略可能会受到怎样的影响，请参阅使用 Power Automate 运行[Office 脚本](/office/dev/scripts/develop/power-automate-integration)。
+    - 若要了解有关将脚本与 Office 一Power Automate，请参阅 Run Office [Scripts with Power Automate](/office/dev/scripts/develop/power-automate-integration)。
 
 8. 选择“**保存**”。
 

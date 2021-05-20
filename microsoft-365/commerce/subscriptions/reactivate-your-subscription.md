@@ -19,20 +19,20 @@ ms.custom:
 - AdminSurgePortfolio
 - commerce_subscriptions
 search.appverid: MET150
-description: 了解如何在订阅过期、被禁用或取消时重新激活订阅。
+description: 如果订阅过期、被禁用或取消，或者如果你在订阅期中间取消，管理员可以重新激活订阅。
 ms.date: 04/07/2021
-ms.openlocfilehash: 63c65e90d01bfd2c67d1d2ecfed32a4d4ff8d27a
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: ad408648253b3805d66b0e7b51ad90107f4eab95
+ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538455"
+ms.locfileid: "52572509"
 ---
 # <a name="reactivate-your-subscription"></a>重新激活订阅
 
 如果订阅已过期、Microsoft 已禁用或在订阅期中间取消订阅，可以在管理中心重新激活订阅。
   
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>准备工作
 
 你必须是全局管理员或帐单管理员才能重新激活订阅。 有关详细信息，请参阅 [关于管理员角色](../../admin/add-users/about-admin-roles.md)。
 

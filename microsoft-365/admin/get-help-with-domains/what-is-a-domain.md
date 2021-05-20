@@ -18,17 +18,17 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: c33d1ba6-077c-4cea-be04-cfffbe3f3ed8
-description: 了解什么是域以及如何购买域或使用企业的默认域。
+description: 了解什么是域以及如何购买域或使用企业的默认域开始使用 OneDrive 和 Microsoft 应用。
 ms.custom:
 - okr_smb
 - AdminSurgePortfolio
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: eac7de88e6d4c09e6807edbbd35d6ccc4718c671
-ms.sourcegitcommit: aff2331f9a3f22591f8ace1a646809969d28c120
+ms.openlocfilehash: b69881d72b91bd2cd36255d87444588166458c8c
+ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52464329"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52571873"
 ---
 # <a name="what-is-a-domain"></a>什么是域？
 

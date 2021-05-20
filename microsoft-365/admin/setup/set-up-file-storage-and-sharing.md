@@ -29,12 +29,12 @@ search.appverid:
 - ODB160
 ms.assetid: 7aa9cdc8-2245-4218-81ee-86fa7c35f1de
 description: 了解如何使用 OneDrive 和团队网站来Microsoft 365和Microsoft 365文件共享。
-ms.openlocfilehash: 8b100100ca91d1b904ab029a8e67602cb6111900
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: 9e739b1f90296167fc47bdd5f19bacd73c43f9e2
+ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52274396"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52572173"
 ---
 # <a name="set-up-file-storage-and-sharing-in-microsoft-365"></a>在文件中设置文件存储和Microsoft 365
 
@@ -46,7 +46,7 @@ ms.locfileid: "52274396"
 
 如果你发现此视频有帮助，请查看[适用于小型企业和 Microsoft 365 新用户的完整培训系列](../../business-video/index.yml)。
 
-## <a name="microsoft-365-document-storage-and-management"></a>"Microsoft 365文档存储和管理"
+## <a name="microsoft-365-document-storage-and-management"></a>Microsoft 365文档存储和管理
 
 - OneDrive专为个人使用而设计的，偶尔共享文件。
 
