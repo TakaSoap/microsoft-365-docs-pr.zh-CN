@@ -21,13 +21,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 8275da91-7a48-4591-94ab-3123a3f79530
-description: '了解如何更改默认主题Microsoft 365自定义主题以匹配公司徽标或颜色。 '
-ms.openlocfilehash: b7a0b142b8bd465a9e3258aaaeb951b72bc53fc7
-ms.sourcegitcommit: e5b1a900043e2e41650ea1cbf4227043729c6053
+description: 了解如何更改导航栏中导航栏顶部的默认主题Microsoft 365自定义它以匹配公司徽标或颜色。
+ms.openlocfilehash: b2177eebc31f34f7067c8464724623e4bf7d4870
+ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52060898"
+ms.lasthandoff: 05/21/2021
+ms.locfileid: "52593825"
 ---
 # <a name="customize-the-microsoft-365-theme-for-your-organization"></a>自定义Microsoft 365主题
 
@@ -59,7 +59,7 @@ ms.locfileid: "52060898"
 
 1. 如果以前为组织自定义了主题，请选择"默认主题"并使用保存的自定义项之一，或者选择"**添加主题"。**
 2. 在 **"常规** "页上，可以阻止用户覆盖其主题，并显示用户显示名称。
-3. 选择 **保存** 以保存所做的更改。  
+3. 选择“**保存**”以保存所做的更改。  
 
 > [!IMPORTANT]
 > 默认主题是唯一的，不能重命名，并且适用于组织内部的每个人。 若要删除默认主题，您必须首先删除所有其他主题。
@@ -88,7 +88,7 @@ ms.locfileid: "52060898"
 - **小型备用徽标**：添加指向徽标的 URL 位置。 此图像具有与小型默认徽标相同的要求。
 - **单击链接**：添加指向徽标的 URL 位置。 可以将徽标用作指向任何公司资源（例如，贵公司的网站）的链接。
 
-选择 **保存** 以保存所做的更改。
+选择“**保存**”以保存所做的更改。
 
 你随时都可以删除徽标。 只需返回到"**徽标"页** 并选择"删除 **"。**
 
@@ -109,7 +109,7 @@ ms.locfileid: "52060898"
 
 :::image type="content" source="../../media/default-theme-colors.png" alt-text="Screenshot： Colors tab showing default theme colors for your organization":::
 
-## <a name="frequently-asked-questions"></a>常见问题解答
+## <a name="frequently-asked-questions"></a>常见问题
 
 ### <a name="my-organization-already-has-a-theme-for-all-employees-how-will-this-change"></a>我的组织已有一个针对所有员工的主题。 这将如何更改？
 
@@ -154,8 +154,8 @@ ms.locfileid: "52060898"
 
 任何主题都将作为套件标题的一部分显示在组织的顶部导航Microsoft 365中。  
   
-## <a name="related-articles"></a>相关文章
+## <a name="related-content"></a>相关内容
 
-[向"我的应用"页面和应用启动器添加自定义磁贴](../manage/customize-the-app-launcher.md)
+[向"我的应用"页和应用启动器](../manage/customize-the-app-launcher.md) 添加自定义磁贴 (文章) 
 
-[面向管理员的 Microsoft 365 组概述](https://docs.microsoft.com/microsoft-365/admin/create-groups/office-365-groups)
+[管理员Microsoft 365组](../create-groups/office-365-groups.md)概述 (文章) 

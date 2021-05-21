@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: b4527d49-4073-4b43-8274-31b7a3166f92
 description: 确定租户和用户是否满足要求，以便可以使用集中部署Office加载项。
-ms.openlocfilehash: 482f2231c0c2c9fa30e863f25f474d90a22f52fa
-ms.sourcegitcommit: aff2331f9a3f22591f8ace1a646809969d28c120
+ms.openlocfilehash: e5d3337cdf1bbb0dc18ee6940ab8bd289d2e5f65
+ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52464401"
+ms.lasthandoff: 05/21/2021
+ms.locfileid: "52593917"
 ---
 # <a name="determine-if-centralized-deployment-of-add-ins-works-for-your-organization"></a>确定外接程序的集中部署是否适用于您的组织
 
@@ -43,7 +43,7 @@ ms.locfileid: "52464401"
 
 外接程序最多可能需要 24 小时才能显示给所有用户的客户端。
   
-## <a name="requirements"></a>要求
+## <a name="before-you-begin"></a>准备工作
 
 外接程序的集中部署要求用户使用 Microsoft 365 企业版 SKUS：E3/E5/F3 或业务 SK：Business Basic、Business Standard、Business 高级版 (，并且使用其组织 ID) 登录 Office，并且具有 Exchange Online 和活动的 Exchange Online 邮箱。 订阅目录必须位于 中，或已联合Azure Active Directory。
 可以查看下面的特定要求Office Exchange，或使用集中部署[兼容性检查器](#centralized-deployment-compatibility-checker)。

@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-viva-topics
 localization_priority: None
 description: 了解使用 Viva 主题管理组织中许多主题的最佳实践。
-ms.openlocfilehash: a11d6fd1a7435ce75faa749a6d66fba6c1cda457
-ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
+ms.openlocfilehash: d5cdae62cdec9193d354e7585364bd842a514a26
+ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52583060"
+ms.lasthandoff: 05/21/2021
+ms.locfileid: "52593873"
 ---
 # <a name="manage-topics-at-scale-in-microsoft-viva-topics"></a>在 Microsoft Viva 主题中大规模管理主题
 
@@ -29,12 +29,19 @@ ms.locfileid: "52583060"
 - **建议**: 主题已由 AI 标识，且具有足够的支持资源、连接和属性。  (UI.) 
 
 - **已** 确认：需要验证 AI 建议的主题。 当出现两种情况之一时，将进行主题验证：
-   - 知识经理确认主题。 知识经理 [在"管理主题"页上](manage-topics.md#confirmed-topics)**确认主题**。 
+
+   - 知识经理确认主题。 知识经理 [在"管理主题"页上](manage-topics.md#confirmed-topics)**确认主题**。
+
    - 多个用户确认主题。 对于使用主题卡片上的反馈机制进行投票的用户，必须获得两个肯定的投票。 例如，如果一个用户对特定主题的投票是肯定的，而一个用户投了负，则你仍然需要另外两个积极投票来确认该主题。
  
 - **已发布**：已确定的主题。 已进行手动编辑以改进其质量。
 
-- **已删除**：主题被知识管理员拒绝，并且不再对查看者可见。 可以在建议、确认或发布主题 (状态删除主题) 。 对于要删除的主题，必须使用主题卡片上的反馈机制从投票的用户那里获得两个负的投票。 例如，如果一个用户对特定主题投了负票，而一个用户对特定主题投了肯定票，你仍然需要另外两个否定的投票来删除该主题。 删除已发布的主题后，需要通过主题中心的"页面库"手动删除包含特用详细信息的页面。
+- **已删除**：主题已被拒绝，不再对查看者可见。 可以在建议、确认或发布主题 (状态删除主题) 。 当出现两种情况之一时，将删除主题：
+   - 知识经理会删除一个主题。 知识经理删除"管理主题" **页上的主题** 。
+
+   - 多个用户在主题卡片上使用反馈机制投了负票。 若要删除主题，必须存在从用户收到的两个负数投票。 例如，如果一个用户对特定主题投了负票，而一个用户对特定主题投了肯定票，你仍然需要另外两个否定的投票来删除该主题。
+
+  删除已发布的主题后，需要通过主题中心的"页面库"手动删除包含特用详细信息的页面。
 
 ## <a name="knowledge-manager-role"></a>知识管理器角色 
 

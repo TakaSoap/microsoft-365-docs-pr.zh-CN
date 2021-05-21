@@ -17,13 +17,12 @@ ms.custom: ''
 description: 管理员可以了解如何使用 Exchange Online Protection (EOP) 中的高级传递策略识别不应在特定的支持方案中筛选的邮件 (第三方网络钓鱼模拟以及传递到安全操作 (SecOps) 邮箱的邮件。
 ms.technology: mdo
 ms.prod: m365-security
-ROBOTS: NOINDEX
-ms.openlocfilehash: 9d737472be5da2af0a0a36beb4b7914b8bfe3a10
-ms.sourcegitcommit: 2655bb0ccd66279c35be2fadbd893c937d084109
+ms.openlocfilehash: 8bebc094b56a20a43f92d1acf8d374110de43d71
+ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51876061"
+ms.lasthandoff: 05/21/2021
+ms.locfileid: "52594117"
 ---
 # <a name="configure-the-delivery-of-third-party-phishing-simulations-to-users-and-unfiltered-messages-to-secops-mailboxes"></a>配置向用户传递第三方网络钓鱼模拟以及将未筛选邮件发送到 SecOps 邮箱
 
@@ -98,7 +97,7 @@ ms.locfileid: "51876061"
 
 3. 在打开 **的 SecOps** 邮箱飞出区中，输入要Exchange Online SecOps 邮箱的现有邮箱的电子邮件地址。 不允许通讯组。
 
-4. 完成后，单击“**保存**”。
+4. 完成时，请单击“保存”。
 
 您配置的 SecOps 邮箱条目显示在 **SecOps** 邮箱选项卡上。若要进行更改，请单击选项卡 **上的** "编辑"。
 

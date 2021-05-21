@@ -19,13 +19,13 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: 了解如何在管理中心中填充来宾Microsoft 365列表。
-ms.openlocfilehash: 227735c7d61aea3f48481d08ea76a96116917308
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+description: 了解如何在管理中心创建具有来宾的团队Microsoft 365以及如何以来宾角色加入团队。
+ms.openlocfilehash: c05a8d7e10b40c22bb041ce88748eb3dd919d83d
+ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51579418"
+ms.lasthandoff: 05/21/2021
+ms.locfileid: "52593861"
 ---
 # <a name="guest-users-in-microsoft-365-admin-center"></a>管理中心中的Microsoft 365用户
 
@@ -34,13 +34,13 @@ ms.locfileid: "51579418"
 
 若要查看来宾用户，Microsoft 365管理中心中的左侧导航中，展开"用户"，然后选择"来宾 **用户"。**
 
-## <a name="add-guests-to-teams"></a>将来宾添加到Teams
+## <a name="watch-create-a-team-with-guests"></a>观看：创建带来宾的团队
 
 若要了解如何将来宾添加到 Teams，请参阅以下视频： <br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FQMp]
 
-## <a name="join-a-team-as-a-guest"></a>作为来宾加入团队
+## <a name="watch-join-a-team-as-a-guest"></a>观看：作为来宾加入团队
 
 若要作为来宾加入团队，请参阅以下视频：<br><br>
 
@@ -55,10 +55,14 @@ ms.locfileid: "51579418"
 
 请参阅 [批量添加来宾以](/azure/active-directory/b2b/tutorial-bulk-invite) 邀请多个来宾与组织协作。
 
-
 ## <a name="remove-a-guest"></a>删除来宾
 
 1. 在管理Microsoft 365，展开"**用户**"，然后选择"**来宾用户"。**
 1. 在"**来宾用户"** 页面上，选择要删除的用户，然后选择"**删除用户"。** 
 
 若要在 Azure AD 门户中删除用户，请参阅 [删除来宾用户和资源](/azure/active-directory/b2b/b2b-quickstart-add-guest-users-portal#clean-up-resources)。
+
+## <a name="related-content"></a>相关内容
+
+[管理来宾组中来宾Microsoft 365 (](../create-groups/manage-guest-access-in-groups.md)文章) \
+[阻止来宾添加到特定组或Microsoft 365组Microsoft Teams组](../../solutions/per-group-guest-access.md)

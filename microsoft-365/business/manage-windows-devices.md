@@ -24,12 +24,12 @@ search.appverid:
 - BCS160
 - MET150
 description: 了解如何启用 Microsoft 365只需几步，Windows 10加入本地 Active-Directory 的设备。
-ms.openlocfilehash: c9f5a21d993200abcf9ecf1fa236879245e1c153
-ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
+ms.openlocfilehash: f16962dd3c33c3c228da507bc5c4a902d76a8a08
+ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "51939494"
+ms.lasthandoff: 05/21/2021
+ms.locfileid: "52593885"
 ---
 # <a name="enable-domain-joined-windows-10-devices-to-be-managed-by-microsoft-365-business-premium"></a>允许加入域Windows 10设备由用户Microsoft 365 商业高级版
 
@@ -119,4 +119,8 @@ PS C:\> Initialize-SecMgmtHybirdDeviceEnrollment -GroupPolicyDisplayName 'Device
 
 ## <a name="related-content"></a>相关内容
 
-[将域](manage-domain-users.md)用户同步Microsoft 365 (文章) 在管理[中心创建组](../admin/create-groups/create-groups.md) (文章) [教程：](/azure/active-directory/devices/hybrid-azuread-join-managed-domains.md)为托管域配置混合 Azure Active Directory 加入 (文章) 
+[将域用户同步Microsoft 365 (](manage-domain-users.md)文章) 
+
+[在管理中心创建组 (](../admin/create-groups/create-groups.md) 文章) 
+
+[教程：为托管Azure Active Directory配置混合域加入 (](/azure/active-directory/devices/hybrid-azuread-join-managed-domains.md)文章) 

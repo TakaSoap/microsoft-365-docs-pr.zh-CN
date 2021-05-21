@@ -22,12 +22,12 @@ search.appverid:
 - GEA150
 ms.assetid: 3b3adfa4-1777-4ff0-b606-fb8732101f47
 description: 了解如何在管理中心中设置新产品和功能更新的Microsoft 365选项。
-ms.openlocfilehash: d3692f2e1cca58fec81f2ad492b9232d5576f99b
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 5060e2dc99355d89928ec91c96b7d25e2016c7c4
+ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51579250"
+ms.lasthandoff: 05/21/2021
+ms.locfileid: "52593941"
 ---
 # <a name="set-up-the-standard-or-targeted-release-options"></a>设置标准或定向发布选项
 
@@ -104,13 +104,11 @@ ms.locfileid: "51579250"
 8. 选择 **"选择** 用户"以一次添加一个用户 **，Upload用户进行** 批量添加。
     
 9. 添加完用户后，请选择"**保存更改"。**
-
-
   
-## <a name="learn-more"></a>了解详细信息
+## <a name="next-steps"></a>后续步骤
 
 了解如何在[邮件Microsoft 365](/office365/admin/manage/message-center)[管理](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/MessageCenter)邮件，以获取有关即将推出的 Microsoft 365 更新和发布的通知。
 
-## <a name="related-articles"></a>相关文章
+## <a name="related-content"></a>相关内容
 
-[Office 预览体验成员](https://insider.office.com/join/windows)
+[加入 Office 预览体验计划](https://insider.office.com/join/windows) (文章) 

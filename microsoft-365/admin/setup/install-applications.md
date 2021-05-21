@@ -21,13 +21,13 @@ ms.custom:
 - seo-marvel-may2020
 - AdminSurgePortfolio
 - okr_smb
-description: 现在，你已设置Microsoft 365，了解如何在 Mac、电脑或移动设备上安装单个 Office 应用程序，以及如何在 Outlook 中设置电子邮件。
-ms.openlocfilehash: c1d88aa1e754424e7a4ef3e486efc8a9618d3e9b
-ms.sourcegitcommit: 89095172c9c4793d56645b4c885ac8e30936bd0a
+description: 现在，你已设置Microsoft 365，了解如何在 Mac、PC 或移动设备上Office单个应用程序。
+ms.openlocfilehash: 47f6a04e8fe42f03de0cd2008f15fd1f6f5617f3
+ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50766351"
+ms.lasthandoff: 05/21/2021
+ms.locfileid: "52593813"
 ---
 # <a name="install-office-applications"></a>安装 Office 应用程序
 
@@ -51,6 +51,6 @@ ms.locfileid: "50766351"
 
 ::: moniker-end
 
-存在问题？这些疑难解答资源可提供帮助：
+## <a name="related-content"></a>相关内容
   
-- [安装 Office 和 Microsoft 365](https://support.microsoft.com/office/35ff2def-e0b2-4dac-9784-4cf212c1f6c2)
+[本文Office Microsoft 365 (](https://support.microsoft.com/office/35ff2def-e0b2-4dac-9784-4cf212c1f6c2)安装和) 

@@ -19,13 +19,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: b9707ec8-2247-4e25-9bad-f11ddbc686e4
-description: 了解如何验证电子邮件和域所有权以接管非托管租户Microsoft 365
-ms.openlocfilehash: 72278fd0e373848a79f9823e186b19bc1cb47770
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+description: 了解如何验证你的电子邮件和域所有权以接管由自助用户注册帐户创建的非托管Microsoft 365。
+ms.openlocfilehash: c37bf153edf39f53b5c10f020b0cbb8d630eb4a6
+ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50914842"
+ms.lasthandoff: 05/21/2021
+ms.locfileid: "52593929"
 ---
 # <a name="perform-an-internal-admin-takeover"></a>执行内部管理员接管
 
@@ -66,12 +66,12 @@ ms.locfileid: "50914842"
 > [!NOTE]
 > 接管卷影租户不会影响任何现有信息或服务。 但是，如果域中的任何用户已注册需要许可证的服务，则作为接管管理员角色的一部分，将要求您购买许可证。 管理设置过程完成后，你可以购买或删除许可证。
   
-## <a name="related-articles"></a>相关文章
+## <a name="related-content"></a>相关内容
 
-[YouTube：为用户和用户执行 IT](https://www.youtube.com/watch?v=xt5EsrQBZZk)管理员接管Power BI 3 Microsoft 365
+YouTube：[执行](https://www.youtube.com/watch?v=xt5EsrQBZZk)IT 管理员接管 Power BI Microsoft 365 (视频) 
 
-[Azure AD 中的管理员接管](/azure/active-directory/users-groups-roles/domains-admin-takeover)
+[管理员接管 Azure AD](/azure/active-directory/users-groups-roles/domains-admin-takeover) (文章) 
 
-[在组织中使用自助式注册](self-service-sign-up.md)
+[在组织中使用自助服务注册 (](self-service-sign-up.md) 文章) 
   
-[了解Power BI管理员角色](/power-bi/service-admin-role)
+[了解Power BI管理员角色 (](/power-bi/service-admin-role)文章) 

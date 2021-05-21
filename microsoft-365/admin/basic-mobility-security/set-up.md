@@ -17,13 +17,13 @@ ms.custom:
 - AdminSurgePortfolio
 search.appverid:
 - MET150
-description: 设置基本移动性和安全性，以保护和管理用户的移动设备。
-ms.openlocfilehash: 2f74307d41d83dd2e6fce2b68283ce0966e850e8
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+description: 设置基本移动性和安全性，通过执行远程擦除设备等操作保护和管理用户的移动设备。
+ms.openlocfilehash: 830baa79838818501101c0c4f2d3163f57d47611
+ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50906236"
+ms.lasthandoff: 05/21/2021
+ms.locfileid: "52593413"
 ---
 # <a name="set-up-basic-mobility-and-security"></a>设置基本移动性和安全性
 
@@ -127,7 +127,8 @@ MFA 通过要求第二种形式的身份验证Microsoft 365移动设备注册保
 
 使用 Android 或 iOS 设备的用户需要安装 公司门户 应用，这是注册过程的一部分。
 
-## <a name="related-topics"></a>相关主题
+## <a name="related-content"></a>相关内容
 
-[基本移动性和安全性的功能](capabilities.md)<br/>
-[在基本移动性和安全性中创建设备安全策略](create-device-security-policies.md)
+[基本移动性和安全性功能 (](capabilities.md) 文章) 
+
+[Create device security policies in Basic Mobility and Security](create-device-security-policies.md) (article) 

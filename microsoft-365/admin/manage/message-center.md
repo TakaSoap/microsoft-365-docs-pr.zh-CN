@@ -21,13 +21,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 38fb3333-bfcc-4340-a37b-deda509c2093
-description: 大致了解邮件Microsoft 365及其在变更管理中的角色。
-ms.openlocfilehash: 01e43eb6fa9502c138bfc9ab3595c47ec33ad098
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+description: 大致了解邮件Microsoft 365及其在跟踪新功能和已更改的功能以及其他重要通知中的角色。
+ms.openlocfilehash: edef3bb5a9016cf6f65f307fcd7c706bf4424d2f
+ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52537519"
+ms.lasthandoff: 05/21/2021
+ms.locfileid: "52593953"
 ---
 # <a name="message-center"></a>消息中心
 
@@ -58,7 +58,7 @@ ms.locfileid: "52537519"
 若要取消订阅邮件中心电子邮件 [，请参阅本文](#unsubscribe-from-message-center-emails) 中的取消订阅邮件中心电子邮件。
 
   
-## <a name="frequently-asked-questions"></a>常见问题解答
+## <a name="frequently-asked-questions"></a>常见问题
 
 |**问题**|**答案**|
 |:-----|:-----|
