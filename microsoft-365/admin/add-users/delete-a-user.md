@@ -19,19 +19,19 @@ ms.custom:
 search.appverid:
 - MET150
 ms.assetid: d5155593-3bac-4d8d-9d8b-f4513a81479e
-description: 了解如何删除用户帐户。 决定使用用户的电子邮件和内容OneDrive操作。 并决定是保留产品许可证还是停止付费。
-ms.openlocfilehash: f4b1e0b1fb591d369cc09010db86dd995d7d4896
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+description: 了解如何删除用户帐户以及如何处理用户的电子邮件和内容OneDrive以及是否保留产品许可证。
+ms.openlocfilehash: c30edb598f659337778ec956737934da5fedad18
+ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52535970"
+ms.lasthandoff: 05/21/2021
+ms.locfileid: "52593401"
 ---
 # <a name="delete-a-user-from-your-organization"></a>从组织删除用户
   
 **正在查找如何删除 *Microsoft 365* 或学校使用的用户帐户？请与工作或大学中的技术支持人员联系，以执行这些步骤。**
 
-## <a name="what-you-need-to-know-about-deleting-users"></a>删除用户需知事项
+## <a name="before-you-begin"></a>准备工作
 
 - 只有具有全局[Microsoft 365](about-admin-roles.md)或企业或学校的用户管理权限的用户才能删除用户帐户。
 - 永久删除用户数据前 30 天内可[还原](restore-user.md)帐户。
@@ -60,19 +60,19 @@ ms.locfileid: "52535970"
 
 ::: moniker range="o365-worldwide"
 
-1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。
+1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
- 1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">活动用户</a>”页面。
+ 1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">活动用户</a>”页面。
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
- 1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">活动用户</a>”页面。
+ 1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">活动用户</a>”页面。
 
 ::: moniker-end
 
@@ -85,7 +85,7 @@ ms.locfileid: "52535970"
   
 ::: moniker range="o365-worldwide"
 
-1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。  
+1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。  
 
 2. 选择要删除的用户的名称，选择三个点 (执行更多) ，然后选择"删除 **用户"。**
 
@@ -95,7 +95,7 @@ ms.locfileid: "52535970"
 
 ::: moniker range="o365-germany"
 
-1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">活动用户</a>”页面。
+1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">活动用户</a>”页面。
 
 2. 选择要删除的用户的名称，在"批量操作"窗格中，选择"**删除用户"。** 
 
@@ -105,7 +105,7 @@ ms.locfileid: "52535970"
 
 ::: moniker range="o365-21vianet"
 
-1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">活动用户</a>”页面。
+1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">活动用户</a>”页面。
 
 2. 选择要删除的用户的名称，在"批量操作"窗格中，选择"**删除用户"。** 
 
@@ -169,14 +169,14 @@ ms.locfileid: "52535970"
 
 **是否要从计算机Microsoft 365文件？转到 [取消订阅](../../commerce/subscriptions/cancel-your-subscription.md)。**
 
-## <a name="related-articles"></a>相关文章
+## <a name="related-content"></a>相关内容
 
-[还原用户](restore-user.md)
+[Restore a user (](restore-user.md) article) 
   
-[永久删除邮箱](/exchange/permanently-delete-a-mailbox-exchange-2013-help)
+[本文 (](/exchange/permanently-delete-a-mailbox-exchange-2013-help) 永久删除) 
 
-[从 Office 365 中删除以前的员工](remove-former-employee.md)
+[在本文Office 365 (](remove-former-employee.md)前) 
 
-[向 Office 365 添加新员工](add-new-employee.md)
+[向新员工添加Office 365 (](add-new-employee.md)文章) 
 
-[删除用户帐户](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc753730(v=ws.11))：如果你的企业使用与 Azure AD 同步的 **Active Directory，** 请使用以下说明。 无法通过 Office 365 删除帐户。
+[删除用户帐户](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc753730(v=ws.11))：如果你的企业使用与 Azure AD 同步的 **Active Directory，** 请使用以下说明。 无法通过 Office 365 删除帐户。  (文章) 

@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: b8f56c8f2ba92073ea7ae9464f199d9c900b932f
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 81a3b41fb8e38a224a030571093b2145d2efb3d4
+ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51933957"
+ms.lasthandoff: 05/21/2021
+ms.locfileid: "52593425"
 ---
 # <a name="onboard-windows-10-devices-using-group-policy"></a>使用Windows 10载入设备 
 
@@ -103,7 +103,7 @@ ms.locfileid: "51933957"
 
 4.  单击 **"策略**"，然后单击 **"管理模板"。**
 
-5.  单击 **Windows组件**"，然后单击Windows Defender **ATP"。**
+5.  单击 **Windows组件**"，然后单击Windows Defender **SmartScreen"。**
 
 6.  选择从设备启用或禁用示例共享。
 
@@ -119,7 +119,7 @@ ms.locfileid: "51933957"
 
 所有策略都位于 下 `Computer Configuration\Policies\Administrative Templates` 。
 
-**策略位置：\Windows** Components\Windows Defender ATP
+**策略位置：\Windows** Components\Windows Defender SmartScreen*
 
 策略 | 设置 
 :---|:---
@@ -127,7 +127,7 @@ Enable\Disable Sample 集合|   已启用 - 选中"启用计算机上的示例�
 
 <br/>
 
-**策略位置：\Windows** Components\Windows Defender 防病毒
+**策略位置：\Windows** Components\Microsoft Defender 防病毒
 
 策略 | 设置 
 :---|:---
@@ -135,7 +135,7 @@ Enable\Disable Sample 集合|   已启用 - 选中"启用计算机上的示例�
 
 <br/>
 
-**策略位置：\Windows** Components\Windows Defender 防病毒\MAPS
+**策略位置：\Windows** Components\Microsoft Defender 防病毒\MAPS
 
 策略 | 设置 
 :---|:---
@@ -144,7 +144,7 @@ Enable\Disable Sample 集合|   已启用 - 选中"启用计算机上的示例�
 
 <br/>
 
-**策略位置：\Windows** Components\Windows Defender 防病毒\Real-time Protection
+**策略位置：\Windows** Components\Microsoft Defender 防病毒\Real-time Protection
 
 策略 | 设置 
 :---|:---
@@ -155,7 +155,7 @@ Enable\Disable Sample 集合|   已启用 - 选中"启用计算机上的示例�
 
 <br/>
 
-**策略位置：\Windows** Components\Windows Defender 防病毒\Scan
+**策略位置：\Windows** Components\Microsoft Defender AntivirusScan
 
 这些设置配置终结点的定期扫描。 建议在性能允许的情况下执行每周快速扫描。
 
@@ -166,7 +166,7 @@ Enable\Disable Sample 集合|   已启用 - 选中"启用计算机上的示例�
 
 <br/>
 
-**策略位置：\Windows** 组件\Windows Defender 防病毒\Windows Defender攻击防护\攻击面减少
+**策略位置：\Windows** Components\Microsoft Defender 防病毒\Microsoft Defender 攻击防护\Attack Surface Reduction
 
 从自定义攻击面减少规则获取攻击面减少 GUID [的当前列表](customize-attack-surface-reduction.md)
 

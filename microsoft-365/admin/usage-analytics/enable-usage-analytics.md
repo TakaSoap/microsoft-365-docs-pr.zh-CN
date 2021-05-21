@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9db96e9f-a622-4d5d-b134-09dcace55b6a
 description: 了解如何使用 Power BI 中的"使用率分析"Microsoft 365开始收集租户Power BI。
-ms.openlocfilehash: d9cadcc8258478fd1d5dbc0d9ae6bf4e814a8435
-ms.sourcegitcommit: b6763a8ab240fbdd56078a7c9452445d0c4b9545
+ms.openlocfilehash: 329878365aa07da4615a849ad04cde7f75a07872
+ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "51957511"
+ms.lasthandoff: 05/21/2021
+ms.locfileid: "52593365"
 ---
 # <a name="enable-microsoft-365-usage-analytics"></a>启用 Microsoft 365 使用情况分析
 
@@ -96,3 +96,11 @@ Microsoft 365使用情况分析尚不可用于美国政府Microsoft 365 Communit
 2. 选择 **"报告**"，然后选择"**显示匿名标识符"。** 此设置既适用于使用情况报告，也适用于模板应用。
   
 3. 选择“**保存更改**”。
+
+## <a name="related-content"></a>相关内容
+
+[关于使用情况分析](usage-analytics.md) (文章) 
+
+[获取使用情况分析的最新版本 (](get-the-latest-version-of-usage-analytics.md) 文章) 
+
+[导航和利用 Microsoft 365 使用情况分析 (](navigate-and-utilize-reports.md)中的) 

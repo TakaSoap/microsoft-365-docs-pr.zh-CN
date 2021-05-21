@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 ms.technology: mdo
-ms.openlocfilehash: 42ab124f3026cf0b7441edf44c0e6433be5f0ecd
-ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
+ms.openlocfilehash: e7148e666b7d96d6de328089fccc4bb444b9f502
+ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52583661"
+ms.lasthandoff: 05/21/2021
+ms.locfileid: "52594001"
 ---
 # <a name="common-identity-and-device-access-policies"></a>常见标识和设备访问策略
 
@@ -63,9 +63,9 @@ ms.locfileid: "52583661"
 ||[将应用程序保护策略 (APP) 数据保护](#apply-app-data-protection-policies)|每个平台的一个 Intune 应用保护 (Windows iOS/iPadOS、Android) 。|Microsoft 365 E3 或 E5|
 ||[需要批准的应用和应用保护](#require-approved-apps-and-app-protection)|使用 iOS、iPadOS 或 Android 对手机和平板电脑强制执行移动应用保护。|Microsoft 365 E3 或 E5|
 ||[定义设备合规性策略](#define-device-compliance-policies)|每个平台一个策略。|Microsoft 365 E3 或 E5|
-||[需要兼容电脑](#require-compliant-pcs-but-not-compliant-phones-and-tablets)|使用 MacOS 或 Windows Intune 管理电脑。|Microsoft 365 E3 或 E5|
+||[需要兼容电脑](#require-compliant-pcs-but-not-compliant-phones-and-tablets)|使用 macOS 或 Windows Intune 管理电脑。|Microsoft 365 E3 或 E5|
 |**敏感**|[登录风险低、中或高时需要MFA  ](#require-mfa-based-on-sign-in-risk)||Microsoft 365 E5或Microsoft 365 E3 E5 安全附加设备|
-||[要求兼容电脑 *和* 移动设备](#require-compliant-pcs-and-mobile-devices)|对 iOS、iPadOS 或 Android (Windows 电脑或 MacOS) 以及手机或平板电脑强制执行 Intune (iOS、iPadOS 或 Android) 。|Microsoft 365 E3 或 E5|
+||[要求兼容电脑 *和* 移动设备](#require-compliant-pcs-and-mobile-devices)|对 macOS 或 macOS (Windows和) iOS、iPadOS 或 Android (平板电脑强制执行 Intune) 。|Microsoft 365 E3 或 E5|
 |**高度管控**|[*始终* 需要 MFA](#assigning-policies-to-groups-and-users)||Microsoft 365 E3 或 E5|
 |
 

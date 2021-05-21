@@ -1,5 +1,5 @@
 ---
-title: 将非 Microsoft 终结点解决方案切换到 Microsoft Defender for Endpoint
+title: 将非 Microsoft 终结点保护切换到 Microsoft Defender for Endpoint
 description: 转换到 Microsoft Defender for Endpoint。 阅读本文，了解概述。
 keywords: 迁移， windows defender 高级终结点保护， 适用于终结点， edr
 search.product: eADQiWindows 10XVcnh
@@ -19,23 +19,23 @@ ms.collection:
 - m365solution-overview
 ms.topic: conceptual
 ms.custom: migrationguides
-ms.date: 05/14/2021
+ms.date: 05/20/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 ms.technology: mde
-ms.openlocfilehash: 013205a1b5b9db204f626a6fe6ab76ad07378558
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 2a2b78089486b432ebf9492de26396b2bb96f94d
+ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52537999"
+ms.lasthandoff: 05/21/2021
+ms.locfileid: "52593497"
 ---
-# <a name="make-the-switch-from-a-non-microsoft-endpoint-solution-to-microsoft-defender-for-endpoint"></a>将非 Microsoft 终结点解决方案切换到 Microsoft Defender for Endpoint
+# <a name="make-the-switch-from-non-microsoft-endpoint-protection-to-microsoft-defender-for-endpoint"></a>将非 Microsoft 终结点保护切换到 Microsoft Defender for Endpoint
 
-如果你计划从非 Microsoft 终结点保护解决方案切换到 [Microsoft Defender for Endpoint](microsoft-defender-endpoint.md) (Defender for Endpoint) ，你的位置正确。 使用本文作为指南。
+如果你正在考虑从非 Microsoft 终结点保护切换到 [Microsoft Defender for Endpoint](microsoft-defender-endpoint.md) (Defender for Endpoint) ，你的位置正确。 使用本文作为指南。
 
 :::image type="content" source="images/nonms-mde-migration.png" alt-text="迁移到 Defender for Endpoint 的概述":::
 
-当你切换到适用于终结点的 Defender 时，你首先在活动模式下使用非 Microsoft 解决方案，在被动模式下为终结点配置 Defender，载入到适用于终结点的 Defender，然后将 Defender for Endpoint 设置为活动模式并删除非 Microsoft 解决方案。
+当你切换到 Defender for Endpoint 时，你首先在活动模式下运行非 Microsoft 解决方案，在被动模式下为终结点配置 Defender，载入到适用于终结点的 Defender，将 Defender for Endpoint 设置为活动模式，然后删除非 Microsoft 解决方案。
 
 > [!TIP]
 > - 如果你当前正在使用 McAfee Endpoint Security (McAfee) ，请参阅从 [McAfee 迁移到 Defender for Endpoint](mcafee-to-microsoft-defender-migration.md)。
@@ -43,15 +43,15 @@ ms.locfileid: "52537999"
 
 ## <a name="the-migration-process"></a>迁移过程
 
-当你切换到 Defender for Endpoint 时，你将按照一个可以分为三个阶段的过程操作，如下表所述：
+迁移到 Defender for Endpoint 的过程分为三个阶段，如下表所述：
 
 ![迁移阶段 - 准备、设置、载入](images/phase-diagrams/migration-phases.png)
 
 |阶段 |说明 |
 |--|--|
-|[准备迁移](switch-to-microsoft-defender-prepare.md) |在 [**"准备**"](switch-to-microsoft-defender-prepare.md)阶段，更新组织的设备、获取适用于终结点的 Defender、规划角色和权限，并授予对 Microsoft Defender 安全中心。 还可以配置设备代理和 Internet 设置，以启用组织设备与适用于终结点的 Defender 之间的通信。 |
-|[设置适用于终结点的 Defender](switch-to-microsoft-defender-setup.md) |在 [设置 **阶段**](switch-to-microsoft-defender-setup.md)，启用Microsoft Defender 防病毒，并设置为被动模式。 此外，还可以配置&和Microsoft Defender 防病毒终结点保护解决方案的排除项。 然后，创建设备组、集合和组织单位。 最后，配置反恶意软件策略和实时保护设置。|
-|[载入到适用于终结点的 Defender](switch-to-microsoft-defender-onboard.md) |在 [**载入** 阶段](switch-to-microsoft-defender-onboard.md)，将设备载入 Defender for Endpoint，确认 Microsoft Defender 防病毒 正在被动模式下运行，并验证终结点是否正在与 Defender for Endpoint 通信。 然后，卸载现有终结点保护解决方案，并确保 Defender for Endpoint 正常工作。 |
+|[准备迁移](switch-to-microsoft-defender-prepare.md) |在 [" **准备"** 阶段](switch-to-microsoft-defender-prepare.md)： <p>1。更新组织的设备。 <p>2. 获取适用于终结点的 Defender。 <p>3. 规划角色和权限，并授予对Microsoft Defender 安全中心。 <p>4. 配置设备代理和 Internet 设置，以启用组织设备与适用于终结点的 Defender 之间的通信。 |
+|[设置适用于终结点的 Defender](switch-to-microsoft-defender-setup.md) |在 [设置 **阶段**：](switch-to-microsoft-defender-setup.md) <p>1. 启用/重新安装Microsoft Defender 防病毒。 <p>2. 为终结点配置 Defender。 <p>3. 将 Defender for Endpoint 添加到现有解决方案的排除列表中。 <p>4. 将现有解决方案添加到列表的排除Microsoft Defender 防病毒。 <p>5. 设置设备组、集合和组织单位。 <p>6. 配置反恶意软件策略和实时保护设置。|
+|[载入到适用于终结点的 Defender](switch-to-microsoft-defender-onboard.md) |在 [载入 **阶段**](switch-to-microsoft-defender-onboard.md)： <p>1. 将设备载入到 Defender for Endpoint。 <p>2. 运行检测测试。 <p>3. 确认Microsoft Defender 防病毒被动模式下运行。 <p>4. 获取更新Microsoft Defender 防病毒。 <p>5. 卸载现有的终结点保护解决方案。 <p>6. 确保 Defender for Endpoint 正常工作。 |
 
 ## <a name="whats-included-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint 中包含哪些内容？
 

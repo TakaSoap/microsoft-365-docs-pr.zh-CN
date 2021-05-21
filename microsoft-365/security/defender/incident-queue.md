@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: a3b6edda36d2872177d9a88f3259220dcf2e76f3
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: dba96a43f976353251b5530233667933088f6f29
+ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52291311"
+ms.lasthandoff: 05/21/2021
+ms.locfileid: "52594081"
 ---
 # <a name="prioritize-incidents-in-microsoft-365-defender"></a>确定 defender 中事件的Microsoft 365优先级
 
@@ -67,7 +67,7 @@ Microsoft 365Defender 应用相关分析，将来自不同产品的相关警报�
 
 此表列出了可用的筛选器名称。
 
-| 筛选器名称 | 说明 |
+| 筛选器名称 | 描述 |
 |:-------|:-----|
 | 分配到 | 你可以选择显示分配给你或由自动化处理警报的警报。 |
 | 类别 | 选择类别以专注于特定的策略、技术或看到的攻击组件。 |
@@ -87,7 +87,7 @@ Microsoft 365Defender 应用相关分析，将来自不同产品的相关警报�
 
 确定哪个事件需要最高优先级后，选择它并：
 
-- [管理](manage-incidents.md) 事件的属性，包括标记、向安全分析师分配和注释。
+- [管理](manage-incidents.md) 事件的属性，包括标记、分配、误报事件的即时解决和注释。
 - 开始 [调查](investigate-incidents.md)。
 
 ## <a name="see-also"></a>另请参阅

@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: c8f25b924109823951c331fe744b548d372eaf11
-ms.sourcegitcommit: b6763a8ab240fbdd56078a7c9452445d0c4b9545
+ms.openlocfilehash: 0de55eefe2f7dd8c9f891fbe126a68a49699ecd3
+ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "51957606"
+ms.lasthandoff: 05/21/2021
+ms.locfileid: "52594093"
 ---
 # <a name="configure-device-proxy-and-internet-connectivity-settings"></a>配置设备代理和 Internet 连接设置
 
@@ -44,47 +44,59 @@ Defender for Endpoint 传感器需要 Microsoft Windows HTTP (WinHTTP) 报告传
 WinHTTP 配置设置独立于 Windows Internet (WinINet) Internet 浏览代理设置，并且只能使用下列发现方法发现代理服务器：
 
 - 自动发现方法：
+
   - 透明代理
+
   - Web 代理自动发现协议 (WPAD)
 
     > [!NOTE]
     > 如果在网络拓扑中使用的是透明代理或 WPAD，则不需要特殊的配置设置。 有关代理中的 Defender 终结点 URL 排除项详细信息，请参阅在代理服务器中启用对 [Defender for Endpoint 服务 URL 的访问](#enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server)。
 
 - 手动静态代理配置：
+
   - 基于注册表的配置
+
   - 使用 netsh 命令配置的 WinHTTP – 仅适用于稳定拓扑中的桌面（例如：同一代理后面的公司网络中的桌面）
 
 ## <a name="configure-the-proxy-server-manually-using-a-registry-based-static-proxy"></a>使用基于注册表的静态代理手动配置代理服务器
 
-配置基于注册表的静态代理，以在不允许计算机连接到 Internet 时仅允许 Defender for Endpoint 传感器报告诊断数据并与 Defender for Endpoint 服务通信。
+配置基于注册表的静态代理，以允许仅 Defender for Endpoint 传感器报告诊断数据，并与 Defender for Endpoint 服务进行通信（如果不允许计算机连接到 Internet）。
 
 > [!NOTE]
-> - 在 Windows 10 或 Windows Server 2019 上使用此选项时，建议将以下 (或更高版本) 内部版本和累积更新汇总：</br>
-> Windows 10，版本 1809 或 Windows Server 2019 -https://support.microsoft.com/kb/5001384 <br>
-> Windows 10，版本 1909 -https://support.microsoft.com/kb/4601380</br>
-> Windows 10，版本 2004 -https://support.microsoft.com/kb/4601382</br>
-> Windows 10，版本 20H2 -https://support.microsoft.com/kb/4601382</br>
-> 这些更新改进了 CnC (Command and Control) 连接和可靠性。</br>
+> 在 Windows 10 或 Windows Server 2019 上使用此选项时，建议将以下 (或更高版本) 内部版本和累积更新汇总：
+>
+> - Windows 10，版本 1809 或 Windows Server 2019 -https://support.microsoft.com/kb/5001384
+> - Windows 10，版本 1909 -https://support.microsoft.com/kb/4601380
+> - Windows 10，版本 2004 -https://support.microsoft.com/kb/4601382
+> - Windows 10，版本 20H2 -https://support.microsoft.com/kb/4601382
+>
+> 这些更新改进了 CnC (Command and Control) 连接和可靠性。
 
 静态代理可以通过组策略 (GP) 配置。 可以在以下位置找到组策略：
 
-- 管理模板> Windows数据收集>预览>配置连接的用户体验和遥测服务的已验证代理使用情况
-  - 将其设置为 **已启用，** 然后选择 **"禁用经过身份验证的代理用法**： ![ 组策略的图像"设置1](images/atp-gpo-proxy1.png)
+- **管理模板> Windows数据收集>预览>配置连接的用户体验和遥测服务的已验证代理使用情况**
+
+  将其设置为"**已启用"，** 然后选择 **"禁用经过身份验证的代理用法"。**
+
+  ![组策略设置的图像1](images/atp-gpo-proxy1.png)
+
 - **配置连接> Windows遥测>数据收集** 和预览>管理模板和组件：
-  - 配置代理：<br>
-    ![组策略设置 2 的图像](images/atp-gpo-proxy2.png)
 
-    策略将注册表项 `HKLM\Software\Policies\Microsoft\Windows\DataCollection` 下的两个注册表值 `TelemetryProxyServer` 设置为 REG\u SZ，`DisableEnterpriseAuthProxy` 设置为 REG\u DWORD。
+  配置代理
 
-    注册表值 `TelemetryProxyServer` 采用以下字符串格式：
+  ![组策略设置 2 的图像](images/atp-gpo-proxy2.png)
 
-    ```text
-    <server name or ip>:<port>
-    ```
+  该策略在注册表项 下REG_SZ `TelemetryProxyServer` `DisableEnterpriseAuthProxy` 和 REG_DWORD两个注册表值 `HKLM\Software\Policies\Microsoft\Windows\DataCollection` 。
 
-    例如：10.0.0.6:8080
+  注册表值 `TelemetryProxyServer` 采用以下字符串格式：
 
-    此注册表值 `DisableEnterpriseAuthProxy` 应当设置为 1。
+  ```text
+  <server name or ip>:<port>
+  ```
+
+  例如：10.0.0.6:8080
+
+  此注册表值 `DisableEnterpriseAuthProxy` 应当设置为 1。
 
 ## <a name="configure-the-proxy-server-manually-using-netsh-command"></a>使用 netsh 命令手动配置代理服务器
 
@@ -96,9 +108,9 @@ WinHTTP 配置设置独立于 Windows Internet (WinINet) Internet 浏览代理�
 
 1. 打开提升的命令行：
 
-    a. 转到“**开始**”并键入“**cmd**”。
+   1. 转到“**开始**”并键入“**cmd**”。
 
-    b. 右键单击“**命令提示符**”，然后选择“**以管理员身份运行**”。
+   1. 右键单击“**命令提示符**”，然后选择“**以管理员身份运行**”。
 
 2. 输入以下命令，再按 **Enter**：
 
@@ -106,15 +118,15 @@ WinHTTP 配置设置独立于 Windows Internet (WinINet) Internet 浏览代理�
    netsh winhttp set proxy <proxy>:<port>
    ```
 
-   例如：netsh winhttp set proxy 10.0.0.6:8080
+   例如：`netsh winhttp set proxy 10.0.0.6:8080`
 
-若要重置 winhttp 代理，请输入以下命令并按 **Enter**
+要重置 winhttp 代理，请输入以下命令并按 **Enter** 键：
 
 ```PowerShell
 netsh winhttp reset proxy
 ```
 
-若要了解详细信息。，请参见 [Netsh 命令语法、上下文和格式](https://docs.microsoft.com/windows-server/networking/technologies/netsh/netsh-contexts)。
+若要了解详细信息。，请参见 [Netsh 命令语法、上下文和格式](/windows-server/networking/technologies/netsh/netsh-contexts)。
 
 ## <a name="enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server"></a>在代理服务器中启用对 Microsoft Defender for Endpoint 服务 URL 的访问
 
@@ -123,7 +135,7 @@ netsh winhttp reset proxy
 以下可下载的电子表格列出了网络必须能够连接到的服务及其关联 URL。 应确保没有拒绝访问这些 URL 的防火墙或网络筛选规则，或者您可能需要专门为它们创建允许规则。 
 
 
-|**域列表电子表格**|**说明**|
+| 域列表电子表格 | 描述 |
 |:-----|:-----|
 |![适用于终结点 URL 电子表格的 Microsoft Defender 缩略图](images/mdatp-urls.png)<br/>  | 服务位置、地理位置和操作系统的特定 DNS 记录的电子表格。 <br><br>[在此处下载电子表格。](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx) 
 
@@ -135,11 +147,11 @@ netsh winhttp reset proxy
 
 
 > [!NOTE]
-> 仅在运行版本 1803 或更高版本的设备Windows 10包含 v20 的 URL 才需要。 例如，运行版本 1803 或Windows 10并载入到美国数据安全中心区域的设备 ```us-v20.events.data.microsoft.com``` 存储。
+> 仅在运行版本 1803 或更高版本的设备Windows 10包含 v20 的 URL 才需要。 例如，运行版本 1803 或Windows 10并载入到美国数据安全中心区域的设备 `us-v20.events.data.microsoft.com` 存储。
 
 
 > [!NOTE]
-> 如果你正在Microsoft Defender 防病毒，请参阅配置与 Microsoft Defender 防病毒[云服务的网络连接](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-network-connections-microsoft-defender-antivirus)。
+> 如果你正在Microsoft Defender 防病毒，请参阅配置与 Microsoft Defender 防病毒[云服务的网络连接](/windows/security/threat-protection/microsoft-defender-antivirus/configure-network-connections-microsoft-defender-antivirus)。
 
 如果代理或防火墙阻止匿名流量，因为 Defender for Endpoint 传感器从系统上下文连接，请确保允许匿名流量位于前面列出的 URL 中。
 
@@ -170,7 +182,7 @@ netsh winhttp reset proxy
 
 4.  请查看 Microsoft Defender 终结点 URL 列表，了解你的地区要求的完整 (请参阅服务 URL[电子表格) 。](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx)
 
-![网站中的管理员Windows PowerShell](images/admin-powershell.png)
+    ![网站中的管理员Windows PowerShell](images/admin-powershell.png)
 
 *.ods.opinsights.azure.com、) *.oms.opinsights.azure.com 和 *.agentsvc.azure-automation.net URL 终结点中使用的通配符 (*agentsvc.azure-automation.net ID 可以替换为特定的工作区 ID。 工作区 ID 特定于你的环境和工作区，可以在租户门户内的"载入"Microsoft Defender 安全中心部分。
 
@@ -189,9 +201,9 @@ netsh winhttp reset proxy
 
 3. 打开提升的命令行：
 
-    a. 转到“**开始**”并键入“**cmd**”。
+   1. 转到“**开始**”并键入“**cmd**”。
 
-    b.  右键单击“**命令提示符**”，然后选择“**以管理员身份运行**”。
+   1.  右键单击“**命令提示符**”，然后选择“**以管理员身份运行**”。
 
 4. 输入以下命令，再按 **Enter**：
 
@@ -199,7 +211,7 @@ netsh winhttp reset proxy
     HardDrivePath\MDATPClientAnalyzer.cmd
     ```
 
-    例如，用下载 MDATPClientAnalyzer 工具的路径替换 *HardDrivePath*
+    将 *HardDrivePath* 替换为下载 MDATPClientAnalyzer 工具的路径，例如：
 
     ```PowerShell
     C:\Work\tools\MDATPClientAnalyzer\MDATPClientAnalyzer.cmd
@@ -207,7 +219,8 @@ netsh winhttp reset proxy
 
 5. 提取 *MDATPClientAnalyzerResult.zip**在 HardDrivePath* 中使用的文件夹中创建的文件。
 
-6. 打开 *MDATPClientAnalyzerResult.txt* 并验证是否已执行代理配置步骤以启用服务器发现和对服务 URL 的访问。<br><br>
+6. 打开 *MDATPClientAnalyzerResult.txt* 并验证是否已执行代理配置步骤以启用服务器发现和对服务 URL 的访问。
+
    该工具检查 Defender for Endpoint 客户端配置为与之交互的 Defender for Endpoint 服务 URL 的连接性。 然后，它将结果打印到每个可能用于与 Defender for Endpoint 服务进行通信的 URL 的 *MDATPClientAnalyzerResult.txt* 文件中。 例如：
 
    ```text
@@ -219,12 +232,12 @@ netsh winhttp reset proxy
    5 - Command line proxy: Doesn't exist
    ```
 
-如果至少有一个连接选项返回 (200) 状态，则 Defender for Endpoint 客户端可以使用此连接方法与测试的 URL 正确通信。 <br><br>
+如果至少有一个连接选项返回 (200) 状态，则 Defender for Endpoint 客户端可以使用此连接方法与测试的 URL 正确通信。
 
 但是，如果连接检查结果显示失败，则会显示 HTTP 错误（请参阅 HTTP 状态代码）。 然后，可以使用在代理服务器 中启用对 Defender [for Endpoint 服务 URL](#enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server)的访问中显示的表中的 URL。 将使用的 URL 取决于在载入过程中选择的区域。
 
 > [!NOTE]
-> Connectivity Analyzer 工具与 ASR 规则不兼容[阻止源自 PSExec 和 WMI 命令的进程创建](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction#attack-surface-reduction-rules)。 需要暂时禁用此规则才能运行连接工具。
+> Connectivity Analyzer 工具与 ASR 规则不兼容[阻止源自 PSExec 和 WMI 命令的进程创建](/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction#attack-surface-reduction-rules)。 需要暂时禁用此规则才能运行连接工具。
 
 
 > [!NOTE]
