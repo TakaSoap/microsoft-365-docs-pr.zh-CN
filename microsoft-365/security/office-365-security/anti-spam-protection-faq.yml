@@ -20,12 +20,12 @@ metadata:
   description: 管理员可以查看有关 EOP 中反垃圾邮件保护的常见问题Exchange Online Protection (解答) 。
   ms.technology: mdo
   ms.prod: m365-security
-  ms.openlocfilehash: e632ab1183c43cd50da7c2cf7832a5a18fa64d50
-  ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
+  ms.openlocfilehash: b15e7409c275810a9d5e70d1376a9c3accd07ab9
+  ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/20/2021
-  ms.locfileid: "52583612"
+  ms.lasthandoff: 05/24/2021
+  ms.locfileid: "52624905"
 title: 反垃圾邮件保护常见问题解答
 summary: >
   [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
@@ -61,7 +61,7 @@ sections:
 
       > [!IMPORTANT]
 
-      > 在 EOP 保护内部部署邮箱的混合部署中，您需要在本地 Exchange 组织中配置两个 Exchange 邮件流规则 (也称为传输规则) ，以检测添加到邮件中的 EOP 垃圾邮件筛选头。 有关详细信息，请参阅[在混合环境中将独立 EOP 配置为向“垃圾邮件”文件夹递送垃圾邮件](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md)。
+      > 在 EOP 保护内部部署 Exchange 邮箱的混合部署中，您需要在本地 Exchange 组织中配置两个 Exchange 邮件流规则 (也称为传输规则) ，以检测添加到邮件中的 EOP 垃圾邮件筛选标头。 有关详细信息，请参阅 [配置 EOP 以将垃圾邮件发送到混合环境中垃圾邮件文件夹](/exchange/standalone-eop/configure-eop-spam-protection-hybrid)。
 
        **对于出站邮件：** 邮件要么通过高风险传递池进行 [](high-risk-delivery-pool-for-outbound-messages.md)路由，要么通过未送达报告（也称为 NDR）或退回邮件 (退回给发件人) 。 有关出站垃圾邮件保护详细信息，请参阅 [出站垃圾邮件控制](outbound-spam-controls.md)。
   - question: >

@@ -16,12 +16,12 @@ metadata:
   description: 获取有关使用云托管的电子邮件筛选服务Exchange Online Protection (EOP) 常见问题的解答。
   ms.technology: mdo
   ms.prod: m365-security
-  ms.openlocfilehash: 9929bd9d90f4e63e130fc478ce974fc373dea396
-  ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+  ms.openlocfilehash: e7ae5858841384c31acf9b785fc0071607ba5f1d
+  ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/12/2021
-  ms.locfileid: "52333894"
+  ms.lasthandoff: 05/24/2021
+  ms.locfileid: "52625361"
 title: EOP 一般常见问题解答
 summary: >
   [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
@@ -69,7 +69,7 @@ sections:
   - question: >
       将 EOP 投入生产需要多久？
     answer: >
-      根据设置 EOP 服务 中概述的步骤更改 MX 记录，并且邮件通过 [EOP](set-up-your-eop-service.md)流动时，筛选将立即开始。 MX 记录可能需要 24-48 小时才能通过 DNS 传播。 在此过程中，你随时都可以微调保护设置。
+      根据设置 EOP 服务 中概述的步骤更改 MX 记录，并且邮件通过 [EOP](/exchange/standalone-eop/set-up-your-eop-service)流动时，筛选将立即开始。 MX 记录可能需要 24-48 小时才能通过 DNS 传播。 在此过程中，你随时都可以微调保护设置。
   - question: >
       我是否必须使用此组织的所有Microsoft 365 EOP？ 如果只需要 EOP 保护，这一切如何？
     answer: >
@@ -104,7 +104,7 @@ sections:
   - question: >
       我是否应注意任何限制，例如邮件大小限制？
     answer: >
-      正确。 有关 EOP 中限制的信息，请参阅Exchange Online Protection[限制。](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-limits)
+      是。 有关 EOP 中限制的信息，请参阅Exchange Online Protection[限制。](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-limits)
   - question: >
       EOP 是否支持 PowerShell？
     answer: 是，PowerShell 提供了完整的 EOP 功能：Exchange Online邮箱的组织使用 PowerShell;Exchange Online EOP 功能;独立 EOP 组织的 EOP PowerShell。 有关详细信息，请参阅 Exchange Online [PowerShell](/powershell/exchange/exchange-online-powershell)和[Exchange Online Protection PowerShell。](/powershell/exchange/exchange-online-protection-powershell)
