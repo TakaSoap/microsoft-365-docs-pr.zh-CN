@@ -18,59 +18,59 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: ea37ad4302eedf7d43e3ad03e94357a146c2216c
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 4612fbb2005145feae7bbcf9309c1ec9559a5a0d
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245572"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52636066"
 ---
-# <a name="microsoft-defender-for-endpoint-preview-features"></a><span data-ttu-id="09d82-104">适用于终结点的 Microsoft Defender 预览功能</span><span class="sxs-lookup"><span data-stu-id="09d82-104">Microsoft Defender for Endpoint preview features</span></span>
+# <a name="microsoft-defender-for-endpoint-preview-features"></a><span data-ttu-id="365d6-104">适用于终结点的 Microsoft Defender 预览功能</span><span class="sxs-lookup"><span data-stu-id="365d6-104">Microsoft Defender for Endpoint preview features</span></span>
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 >[!IMPORTANT]
-><span data-ttu-id="09d82-105">预览版本在没有服务级别协议的情况下提供，不建议用于生产工作负载。</span><span class="sxs-lookup"><span data-stu-id="09d82-105">The preview versions are provided without a service level agreement, and it's not recommended for production workloads.</span></span> <span data-ttu-id="09d82-106">某些功能可能不受支持，或者可能具有受限功能。</span><span class="sxs-lookup"><span data-stu-id="09d82-106">Certain features might not be supported or might have constrained capabilities.</span></span>
+><span data-ttu-id="365d6-105">预览版本在没有服务级别协议的情况下提供，不建议用于生产工作负载。</span><span class="sxs-lookup"><span data-stu-id="365d6-105">The preview versions are provided without a service level agreement, and it's not recommended for production workloads.</span></span> <span data-ttu-id="365d6-106">某些功能可能不受支持，或者可能具有受限功能。</span><span class="sxs-lookup"><span data-stu-id="365d6-106">Certain features might not be supported or might have constrained capabilities.</span></span>
 
-<span data-ttu-id="09d82-107">**适用于：**</span><span class="sxs-lookup"><span data-stu-id="09d82-107">**Applies to:**</span></span>
-- [<span data-ttu-id="09d82-108">Microsoft Defender for Endpoint</span><span class="sxs-lookup"><span data-stu-id="09d82-108">Microsoft Defender for Endpoint</span></span>](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [<span data-ttu-id="09d82-109">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="09d82-109">Microsoft 365 Defender</span></span>](https://go.microsoft.com/fwlink/?linkid=2118804)
+<span data-ttu-id="365d6-107">**适用于：**</span><span class="sxs-lookup"><span data-stu-id="365d6-107">**Applies to:**</span></span>
+- [<span data-ttu-id="365d6-108">Microsoft Defender for Endpoint</span><span class="sxs-lookup"><span data-stu-id="365d6-108">Microsoft Defender for Endpoint</span></span>](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [<span data-ttu-id="365d6-109">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="365d6-109">Microsoft 365 Defender</span></span>](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> <span data-ttu-id="09d82-110">想要体验 Microsoft Defender for Endpoint？</span><span class="sxs-lookup"><span data-stu-id="09d82-110">Want to experience Microsoft Defender for Endpoint?</span></span> [<span data-ttu-id="09d82-111">注册免费试用版。</span><span class="sxs-lookup"><span data-stu-id="09d82-111">Sign up for a free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> <span data-ttu-id="365d6-110">想要体验 Microsoft Defender for Endpoint？</span><span class="sxs-lookup"><span data-stu-id="365d6-110">Want to experience Microsoft Defender for Endpoint?</span></span> [<span data-ttu-id="365d6-111">注册免费试用版。</span><span class="sxs-lookup"><span data-stu-id="365d6-111">Sign up for a free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 
-<span data-ttu-id="09d82-112">Defender for Endpoint 服务会不断更新，以包含新功能增强功能和功能。</span><span class="sxs-lookup"><span data-stu-id="09d82-112">The Defender for Endpoint service is constantly being updated to include new feature enhancements and capabilities.</span></span>
+<span data-ttu-id="365d6-112">Defender for Endpoint 服务会不断更新，以包含新功能增强功能和功能。</span><span class="sxs-lookup"><span data-stu-id="365d6-112">The Defender for Endpoint service is constantly being updated to include new feature enhancements and capabilities.</span></span>
 
-<span data-ttu-id="09d82-113">了解 Defender for Endpoint 预览版中的新功能，并首先通过打开预览体验来试用即将推出的功能。</span><span class="sxs-lookup"><span data-stu-id="09d82-113">Learn about new features in the Defender for Endpoint preview release and be among the first to try upcoming features by turning on the preview experience.</span></span>
+<span data-ttu-id="365d6-113">了解 Defender for Endpoint 预览版中的新功能，并首先通过打开预览体验来试用即将推出的功能。</span><span class="sxs-lookup"><span data-stu-id="365d6-113">Learn about new features in the Defender for Endpoint preview release and be among the first to try upcoming features by turning on the preview experience.</span></span>
 
 >[!TIP]
-><span data-ttu-id="09d82-114">在此页面更新时收到通知，方法为将以下 URL 复制并粘贴到源阅读器中： `https://docs.microsoft.com/api/search/rss?search=%22In+the+navigation+pane%2C+select+Settings+%3E+Advanced+features+%3E+Preview+features.%22&locale=en-us&facet=`</span><span class="sxs-lookup"><span data-stu-id="09d82-114">Get notified when this page is updated by copying and pasting the following URL into your feed reader: `https://docs.microsoft.com/api/search/rss?search=%22In+the+navigation+pane%2C+select+Settings+%3E+Advanced+features+%3E+Preview+features.%22&locale=en-us&facet=`</span></span>
+><span data-ttu-id="365d6-114">在此页面更新时收到通知，方法为将以下 URL 复制并粘贴到源阅读器中： `https://docs.microsoft.com/api/search/rss?search=%22In+the+navigation+pane%2C+select+Settings+%3E+Advanced+features+%3E+Preview+features.%22&locale=en-us&facet=`</span><span class="sxs-lookup"><span data-stu-id="365d6-114">Get notified when this page is updated by copying and pasting the following URL into your feed reader: `https://docs.microsoft.com/api/search/rss?search=%22In+the+navigation+pane%2C+select+Settings+%3E+Advanced+features+%3E+Preview+features.%22&locale=en-us&facet=`</span></span>
 
-<span data-ttu-id="09d82-115">有关已普遍提供的新功能详细信息，请参阅 Defender for [Endpoint 中的新增功能](whats-new-in-microsoft-defender-atp.md)。</span><span class="sxs-lookup"><span data-stu-id="09d82-115">For more information on new capabilities that are generally available, see [What's new in Defender for Endpoint](whats-new-in-microsoft-defender-atp.md).</span></span>
+<span data-ttu-id="365d6-115">有关已普遍提供的新功能详细信息，请参阅 Defender for [Endpoint 中的新增功能](whats-new-in-microsoft-defender-atp.md)。</span><span class="sxs-lookup"><span data-stu-id="365d6-115">For more information on new capabilities that are generally available, see [What's new in Defender for Endpoint](whats-new-in-microsoft-defender-atp.md).</span></span>
 
-## <a name="turn-on-preview-features"></a><span data-ttu-id="09d82-116">启用预览功能</span><span class="sxs-lookup"><span data-stu-id="09d82-116">Turn on preview features</span></span>
+## <a name="turn-on-preview-features"></a><span data-ttu-id="365d6-116">启用预览功能</span><span class="sxs-lookup"><span data-stu-id="365d6-116">Turn on preview features</span></span>
 
-<span data-ttu-id="09d82-117">你有权访问即将推出的功能，可以在这些功能全面发布之前提供反馈以帮助改善整体体验。</span><span class="sxs-lookup"><span data-stu-id="09d82-117">You'll have access to upcoming features that you can provide feedback on to help improve the overall experience before features are generally available.</span></span>
+<span data-ttu-id="365d6-117">你有权访问即将推出的功能，可以在这些功能全面发布之前提供反馈以帮助改善整体体验。</span><span class="sxs-lookup"><span data-stu-id="365d6-117">You'll have access to upcoming features that you can provide feedback on to help improve the overall experience before features are generally available.</span></span>
 
-<span data-ttu-id="09d82-118">启用预览体验设置，以率先体验即将推出的功能。</span><span class="sxs-lookup"><span data-stu-id="09d82-118">Turn on the preview experience setting to be among the first to try upcoming features.</span></span>
+<span data-ttu-id="365d6-118">启用预览体验设置，以率先体验即将推出的功能。</span><span class="sxs-lookup"><span data-stu-id="365d6-118">Turn on the preview experience setting to be among the first to try upcoming features.</span></span>
 
-1. <span data-ttu-id="09d82-119">在导航窗格中，选择 **"设置**  >  **高级功能**  >  **预览功能"。**</span><span class="sxs-lookup"><span data-stu-id="09d82-119">In the navigation pane, select **Settings** > **Advanced features** > **Preview features**.</span></span>
+1. <span data-ttu-id="365d6-119">在导航窗格中，选择 **"设置**  >  **高级功能**  >  **预览功能"。**</span><span class="sxs-lookup"><span data-stu-id="365d6-119">In the navigation pane, select **Settings** > **Advanced features** > **Preview features**.</span></span>
 
-2. <span data-ttu-id="09d82-120">切换 **开和关** 之间的 **设置，** 然后选择 **保存首选项**。</span><span class="sxs-lookup"><span data-stu-id="09d82-120">Toggle the setting between **On** and **Off** and select **Save preferences**.</span></span>
+2. <span data-ttu-id="365d6-120">切换 **开和关** 之间的 **设置，** 然后选择 **保存首选项**。</span><span class="sxs-lookup"><span data-stu-id="365d6-120">Toggle the setting between **On** and **Off** and select **Save preferences**.</span></span>
 
-## <a name="preview-features"></a><span data-ttu-id="09d82-121">预览功能</span><span class="sxs-lookup"><span data-stu-id="09d82-121">Preview features</span></span>
+## <a name="preview-features"></a><span data-ttu-id="365d6-121">预览功能</span><span class="sxs-lookup"><span data-stu-id="365d6-121">Preview features</span></span>
 
-<span data-ttu-id="09d82-122">预览版中包含以下功能：</span><span class="sxs-lookup"><span data-stu-id="09d82-122">The following features are included in the preview release:</span></span>
+<span data-ttu-id="365d6-122">预览版中包含以下功能：</span><span class="sxs-lookup"><span data-stu-id="365d6-122">The following features are included in the preview release:</span></span>
 
-- [<span data-ttu-id="09d82-123">设备发现</span><span class="sxs-lookup"><span data-stu-id="09d82-123">Device discovery</span></span>](device-discovery.md) <br> <span data-ttu-id="09d82-124">帮助你查找连接到公司网络的非托管设备，而无需额外的设备或繁琐的流程更改。</span><span class="sxs-lookup"><span data-stu-id="09d82-124">Helps you find unmanaged devices connected to your corporate network without the need for extra appliances or cumbersome process changes.</span></span> <span data-ttu-id="09d82-125">使用载入的设备，可以在网络中查找非托管设备，并评估漏洞和风险。</span><span class="sxs-lookup"><span data-stu-id="09d82-125">Using onboarded devices, you can find unmanaged devices in your network and assess vulnerabilities and risks.</span></span> <span data-ttu-id="09d82-126">然后，你可以载入发现的设备，以减少与网络中具有非托管终结点相关的风险。</span><span class="sxs-lookup"><span data-stu-id="09d82-126">You can then onboard discovered devices to reduce risks associated with having unmanaged endpoints in your network.</span></span>
+- [<span data-ttu-id="365d6-123">设备发现</span><span class="sxs-lookup"><span data-stu-id="365d6-123">Device discovery</span></span>](device-discovery.md) <br> <span data-ttu-id="365d6-124">帮助你查找连接到公司网络的非托管设备，而无需额外的设备或繁琐的流程更改。</span><span class="sxs-lookup"><span data-stu-id="365d6-124">Helps you find unmanaged devices connected to your corporate network without the need for extra appliances or cumbersome process changes.</span></span> <span data-ttu-id="365d6-125">使用载入的设备，可以在网络中查找非托管设备，并评估漏洞和风险。</span><span class="sxs-lookup"><span data-stu-id="365d6-125">Using onboarded devices, you can find unmanaged devices in your network and assess vulnerabilities and risks.</span></span> <span data-ttu-id="365d6-126">然后，你可以载入发现的设备，以减少与网络中具有非托管终结点相关的风险。</span><span class="sxs-lookup"><span data-stu-id="365d6-126">You can then onboard discovered devices to reduce risks associated with having unmanaged endpoints in your network.</span></span>
 
    > [!IMPORTANT]
-   > <span data-ttu-id="09d82-127">从 2021 年 5 月 10 开始，标准发现将成为所有预览客户的默认模式。</span><span class="sxs-lookup"><span data-stu-id="09d82-127">Standard discovery will be the default mode for all preview customers starting May 10, 2021.</span></span> <span data-ttu-id="09d82-128">你可以选择通过设置页保留基本模式。</span><span class="sxs-lookup"><span data-stu-id="09d82-128">You can choose to retain the basic mode through the settings page.</span></span> 
+   > <span data-ttu-id="365d6-127">从 2021 年 7 月 19 日开始，标准发现将成为所有客户的默认模式。</span><span class="sxs-lookup"><span data-stu-id="365d6-127">Standard discovery will be the default mode for all customers starting July 19, 2021.</span></span> <span data-ttu-id="365d6-128">你可以选择通过设置页保留基本模式。</span><span class="sxs-lookup"><span data-stu-id="365d6-128">You can choose to retain the basic mode through the settings page.</span></span> 
 
 
-- [<span data-ttu-id="09d82-129">Web 内容筛选</span><span class="sxs-lookup"><span data-stu-id="09d82-129">Web Content Filtering</span></span>](web-content-filtering.md) <br> <span data-ttu-id="09d82-130">Web 内容筛选是 Microsoft Defender for Endpoint 中的 Web 保护功能的一部分。</span><span class="sxs-lookup"><span data-stu-id="09d82-130">Web content filtering is part of web protection capabilities in Microsoft Defender for Endpoint.</span></span> <span data-ttu-id="09d82-131">它使组织能够根据网站的内容类别跟踪和监管对网站的访问。</span><span class="sxs-lookup"><span data-stu-id="09d82-131">It enables your organization to track and regulate access to websites based on their content categories.</span></span> <span data-ttu-id="09d82-132">许多此类网站虽然不是恶意网站，但由于合规性法规、带宽使用情况或其他问题，可能存在问题。</span><span class="sxs-lookup"><span data-stu-id="09d82-132">Many of these websites, while not malicious, might be problematic because of compliance regulations, bandwidth usage, or other concerns.</span></span>
+- [<span data-ttu-id="365d6-129">Web 内容筛选</span><span class="sxs-lookup"><span data-stu-id="365d6-129">Web Content Filtering</span></span>](web-content-filtering.md) <br> <span data-ttu-id="365d6-130">Web 内容筛选是 Microsoft Defender for Endpoint 中的 Web 保护功能的一部分。</span><span class="sxs-lookup"><span data-stu-id="365d6-130">Web content filtering is part of web protection capabilities in Microsoft Defender for Endpoint.</span></span> <span data-ttu-id="365d6-131">它使组织能够根据网站的内容类别跟踪和监管对网站的访问。</span><span class="sxs-lookup"><span data-stu-id="365d6-131">It enables your organization to track and regulate access to websites based on their content categories.</span></span> <span data-ttu-id="365d6-132">许多此类网站虽然不是恶意网站，但由于合规性法规、带宽使用情况或其他问题，可能存在问题。</span><span class="sxs-lookup"><span data-stu-id="365d6-132">Many of these websites, while not malicious, might be problematic because of compliance regulations, bandwidth usage, or other concerns.</span></span>
 
-- [<span data-ttu-id="09d82-133">设备运行状况和合规性报告</span><span class="sxs-lookup"><span data-stu-id="09d82-133">Device health and compliance report</span></span>](machine-reports.md) <br/> <span data-ttu-id="09d82-134">设备运行状况和合规性报告提供有关组织中设备的高级别信息。</span><span class="sxs-lookup"><span data-stu-id="09d82-134">The device health and compliance report provides high-level information about the devices in your organization.</span></span>
+- [<span data-ttu-id="365d6-133">设备运行状况和合规性报告</span><span class="sxs-lookup"><span data-stu-id="365d6-133">Device health and compliance report</span></span>](machine-reports.md) <br/> <span data-ttu-id="365d6-134">设备运行状况和合规性报告提供有关组织中设备的高级别信息。</span><span class="sxs-lookup"><span data-stu-id="365d6-134">The device health and compliance report provides high-level information about the devices in your organization.</span></span>
 
 > [!TIP] 
-> <span data-ttu-id="09d82-135">想要体验 Microsoft Defender for Endpoint？</span><span class="sxs-lookup"><span data-stu-id="09d82-135">Want to experience Microsoft Defender for Endpoint?</span></span> [<span data-ttu-id="09d82-136">注册免费试用版。</span><span class="sxs-lookup"><span data-stu-id="09d82-136">Sign up for a free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-preview-belowfoldlink)  
+> <span data-ttu-id="365d6-135">想要体验 Microsoft Defender for Endpoint？</span><span class="sxs-lookup"><span data-stu-id="365d6-135">Want to experience Microsoft Defender for Endpoint?</span></span> [<span data-ttu-id="365d6-136">注册免费试用版。</span><span class="sxs-lookup"><span data-stu-id="365d6-136">Sign up for a free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-preview-belowfoldlink)  
