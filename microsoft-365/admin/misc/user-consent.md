@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7e453a40-66df-44ab-92a1-96786cb7fb34
 description: 了解用户对应用的同意，以及如何启用它们以允许第三方应用访问用户Microsoft 365信息。
-ms.openlocfilehash: 1f6f08161d6dd85964f07ec4d48f9f2cc23a1ead
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: b8f65b50e50b0e0b4d978388463bbd380ca60d4e
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50914554"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52624497"
 ---
 # <a name="managing-user-consent-to-apps-in-microsoft-365"></a>管理用户对应用程序中应用Microsoft 365
 
@@ -44,9 +44,8 @@ ms.locfileid: "50914554"
 
 2. 在" **用户同意应用"页上** ，选择打开或关闭用户同意的选项。
 
-## <a name="more-info"></a>详细信息
+## <a name="related-content"></a>相关内容 
 <a name="__toc379982114"> </a>
 
-若要了解如何在 Azure Active Directory 中配置同意设置，请阅读 [配置管理员同意工作流](/azure/active-directory/manage-apps/configure-admin-consent-workflow)。
-
-若要了解如何管理用户对应用的同意，请阅读 [管理对应用程序的同意和评估同意请求](/azure/active-directory/manage-apps/manage-consent-requests)。
+[配置管理员同意工作流](/azure/active-directory/manage-apps/configure-admin-consent-workflow) (文章) \
+[管理对应用程序的同意并评估](/azure/active-directory/manage-apps/manage-consent-requests) 同意请求 (文章) 

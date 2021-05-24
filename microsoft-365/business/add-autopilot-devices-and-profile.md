@@ -25,12 +25,12 @@ search.appverid:
 - MOE150
 ms.assetid: be5b6d90-3344-4c5e-bf40-5733eb845beb
 description: 了解如何使用 Windows AutoPilot 为Windows 10设置新设备，以便员工可以使用这些设备。
-ms.openlocfilehash: cd8777e6ae2e395506d2bf308c99309de1e24805
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: cc5495f42214b222a70b281a713be782b1bf5c4f
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51578519"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52623665"
 ---
 # <a name="use-the-step-by-step-guide-to-add-autopilot-devices-and-profile"></a>使用分步指南添加 Autopilot 设备和配置文件
 
@@ -94,3 +94,8 @@ ms.locfileid: "51578519"
     选择" **下一步**"。
     
 6. **你已完成指示** 你创建 (或选择) 的配置文件将应用到通过上传设备列表创建的设备组。 设置将在设备用户下次登录时生效。 选择“关闭”。
+
+## <a name="related-content"></a>相关内容
+
+[有关 AutoPilot 配置文件设置 (](autopilot-profile-settings.md) 文章) \
+[用于保护设备和应用数据的选项](../admin/devices/choose-device-security.md) (本文) 

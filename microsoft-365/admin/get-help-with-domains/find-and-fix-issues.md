@@ -24,12 +24,12 @@ search.appverid:
 - GEA150
 ms.assetid: 40398b0b-bdd0-4afd-ab5e-b5ae6b7990bf
 description: 了解如何通过确保正确设置 DNS 记录来跟踪在设置自定义域时遇到的任何问题。
-ms.openlocfilehash: 5959cae02b87cf481fc06edd941a6da284b71736
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 70beb877251c333766a0963316287796eb81d595
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52537543"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52623961"
 ---
 # <a name="find-and-fix-issues-after-adding-your-domain-or-dns-records"></a>查找并修复添加域或 DNS 记录之后出现的问题
 
@@ -103,5 +103,6 @@ ms.locfileid: "52537543"
 
 ## <a name="related-content"></a>相关内容
 
-[疑难解答：审核已验证域更改的数据](/azure/active-directory/reports-monitoring/troubleshoot-audit-data-verified-domain)
+[疑难解答：审核已验证域更改的数据](/azure/active-directory/reports-monitoring/troubleshoot-audit-data-verified-domain) (文章) \
+[域常见问题](../setup/domains-faq.yml) （文章）
 

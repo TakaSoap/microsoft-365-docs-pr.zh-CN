@@ -20,12 +20,12 @@ ms.collection:
 description: 管理员可以了解 Microsoft Defender for 保险箱 中的"附件"Office 365。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ab3fd89c02186dfbdb6c9a3d754a4902d8b945f8
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: cc5fabf7b0bb4a649aeb7c4e09155037fc09e9f9
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52246376"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52625001"
 ---
 # <a name="safe-attachments-in-microsoft-defender-for-office-365"></a>保险箱Microsoft Defender for Office 365
 
@@ -124,7 +124,7 @@ ms.locfileid: "52246376"
 - 已删除邮件。
 - 用户的邮箱搜索文件夹的状态为错误。
 - Exchange Online启用 Exclaimer 的组织。 若要解决此问题，请参阅[KB4014438。](https://support.microsoft.com/help/4014438)
-- [S/MIME) ](s-mime-for-message-signing-and-encryption.md) 加密邮件。
+- [S/MIME) ](/exchange/security-and-compliance/smime-exo/smime-exo) 加密邮件。
 - 在 保险箱 附件策略中配置了动态传递操作，但收件人不支持动态传递 (例如，收件人是本地 Exchange 组织中邮箱) 。 但是[保险箱 Microsoft Defender for Office 365](set-up-safe-links-policies.md)中的链接能够扫描包含 URL (的 Office 文件附件，具体取决于 保险箱[Links](configure-global-settings-for-safe-links.md)的全局设置) 。
 
 ## <a name="submitting-files-for-malware-analysis"></a>提交文件进行恶意软件分析

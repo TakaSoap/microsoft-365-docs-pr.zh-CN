@@ -22,13 +22,13 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: 2c261e42-5dd1-48b0-845f-2a016d29cfc1
-description: 了解如何还原已删除的用户帐户以及所有关联的数据。
-ms.openlocfilehash: b7d98c1f49f8252ea9fdda2d863b5b77ac5bea9d
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+description: 在删除用户帐户后的 30 天内，可以还原该帐户以及所有数据，并且用户可以使用同一帐户登录。
+ms.openlocfilehash: 83852136ee22ab3f63d8ada6a5a7290883c392e5
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52291063"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52623817"
 ---
 # <a name="restore-a-user"></a>还原用户
    
@@ -91,6 +91,8 @@ ms.locfileid: "52291063"
     
 4. 查看结果，然后选择" **关闭**"。
 
-## <a name="related-articles"></a>相关文章
+## <a name="related-content"></a>相关内容
 
-[删除用户](delete-a-user.md)
+[删除用户 (](delete-a-user.md) 文章) \
+[将管理员角色](assign-admin-roles.md) (视频) \
+[向用户分配许可证](../manage/assign-licenses-to-users.md) (本文) 

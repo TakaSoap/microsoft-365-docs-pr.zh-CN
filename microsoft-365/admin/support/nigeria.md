@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: 了解如何联系你的国家/地区或地区的支持人员。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: eef1b091b2b705a5ae83cba8dc7d5c22bd021856
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: bc500ff4418787648ee213d6f0f28bdda194e2ca
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52297928"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52623841"
 ---
 # <a name="contact-support-for-nigeria"></a>联系尼日利亚支持人员
 
@@ -26,9 +26,9 @@ ms.locfileid: "52297928"
 ## <a name="phone-number"></a>电话号码
 01 912 5070
 
-选择选项 9
+按 2 for business
 
-输入代码 7705
+按 1 Microsoft 365
 
 ## <a name="hours"></a>工作时间
 ### <a name="billing-support"></a>计费支持：

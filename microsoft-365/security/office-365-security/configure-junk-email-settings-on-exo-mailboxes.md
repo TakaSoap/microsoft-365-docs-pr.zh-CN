@@ -17,12 +17,12 @@ ms.collection:
 description: 管理员可以了解如何配置邮箱中的垃圾邮件Exchange Online设置。 这些设置中的许多设置都适用于 Outlook 或 Outlook 网页用户。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: f7e5d99198e539a46c240fadd2a7a8201236026f
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 5a401321645530d3d66ebcccd6b8aea27ce21d6e
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51203168"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52624797"
 ---
 # <a name="configure-junk-email-settings-on-exchange-online-mailboxes"></a>配置 Exchange Online 邮箱上的垃圾邮件设置
 
@@ -58,7 +58,7 @@ ms.locfileid: "51203168"
 
 - 您需在 Exchange Online权限，然后才能执行本文中的过程。 具体来说，您需要"邮件收件人"角色 (该角色默认情况下分配给"组织管理"、"收件人管理"和"自定义邮件收件人"角色组) 或"用户选项"角色 (该角色默认分配给"组织管理"和"技术支持"角色组) 。      若要将用户添加到角色角色Exchange Online，请参阅修改[角色Exchange Online。](/Exchange/permissions-exo/role-groups#modify-role-groups) 请注意，具有默认权限的用户可以在自己的邮箱上执行这些相同的过程，只要他们有权访问[Exchange Online PowerShell](/powershell/exchange/disable-access-to-exchange-online-powershell)。
 
-- 在 EOP 保护本地 Exchange 邮箱的独立 EOP 环境中，需要在本地 Exchange 中配置邮件流规则（亦称为“传输规则”），以转换 EOP 垃圾邮件筛选裁定，这样垃圾邮件规则才能将邮件移动到“垃圾邮件”文件夹。 有关详细信息，请参阅[在混合环境中将独立 EOP 配置为向“垃圾邮件”文件夹递送垃圾邮件](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md)。
+- 在 EOP 保护内部部署 Exchange 邮箱的混合环境中，您需要在本地 Exchange 中配置邮件流规则 (也称为传输规则) ，以转换 EOP 垃圾邮件筛选裁定，以便垃圾邮件规则可以将邮件移动到"垃圾邮件"文件夹。 有关详细信息，请参阅 [配置 EOP 以将垃圾邮件发送到混合环境中垃圾邮件文件夹](/exchange/standalone-eop/configure-eop-spam-protection-hybrid)。
 
 - 保险箱根据设计，共享邮箱的发件人不会同步到 Azure AD 和 EOP。
 

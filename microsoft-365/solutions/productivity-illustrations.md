@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: b47099dd0d26dba6a399ecff823bcc758be7e16d
-ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
+ms.openlocfilehash: df2c01bd0cc935ae8a541b40a96f3e067926674a
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52583636"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52625013"
 ---
 # <a name="microsoft-365-productivity-illustrations"></a>Microsoft 365 生产力插图
 
@@ -45,7 +45,7 @@ Microsoft 提供了用于将本地网络文件共享和 SharePoint Server 网站
 
 | 项目 | 说明 |
 |:-----|:-----|
-|[![模型海报：迁移到Microsoft 365](../media/solutions-architecture-center/msft-migration-thumb.png)](https://download.microsoft.com/download/0/5/b/05b7fb7c-1557-4ebb-9036-c5fc3a4cd94c/Migration-posters-mm-spmt.pdf) <br/> [以 PDF 格式下载](https://download.microsoft.com/download/0/5/b/05b7fb7c-1557-4ebb-9036-c5fc3a4cd94c/Migration-posters-mm-spmt.pdf)  \| [以 Visio 格式下载](https://download.microsoft.com/download/0/5/b/05b7fb7c-1557-4ebb-9036-c5fc3a4cd94c/Migration-posters-mm-spmt.vsdx) <br/> 2021 年 3 月更新 |包括： <ul><li>  文件共享迁移</li><li>SharePoint Server 迁移 </li> </ul><br> 有关详细信息，请参阅[将内容迁移到Microsoft 365。](/sharepointmigration/migrate-to-sharepoint-online)|
+|[![模型海报：迁移到Microsoft 365](../media/solutions-architecture-center/msft-migration-thumb.png)](https://download.microsoft.com/download/0/5/b/05b7fb7c-1557-4ebb-9036-c5fc3a4cd94c/Migration-posters-mm-spmt.pdf) <br/>[PDF](https://download.microsoft.com/download/0/5/b/05b7fb7c-1557-4ebb-9036-c5fc3a4cd94c/m365-migration-posters-mm-spmt.pdf)\|[Visio](https://download.microsoft.com/download/0/5/b/05b7fb7c-1557-4ebb-9036-c5fc3a4cd94c/m-365-migration-posters-mm-spmt.vsdx) <br/> 2021 年 3 月更新 |包括： <ul><li>  文件共享迁移</li><li>SharePoint Server 迁移 </li> </ul><br> 有关详细信息，请参阅[将内容迁移到Microsoft 365。](/sharepointmigration/migrate-to-sharepoint-online)|
 
 ## <a name="microsoft-365-information-protection-and-compliance-capabilities"></a>Microsoft 365信息保护和合规性功能
 

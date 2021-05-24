@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: aad0f00292a1a1182fc4b731e562b2e4c78d97f8
-ms.sourcegitcommit: 5a1cb7d95070eef47d401a4693cc137a90550a5e
+ms.openlocfilehash: 7592b92b74173e77e7937151ba88c23163363fde
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52259507"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52624689"
 ---
 # <a name="get-started-with-insider-risk-management-settings"></a>内部风险管理设置入门
 
@@ -60,7 +60,7 @@ ms.locfileid: "52259507"
 策略指示器分为以下几个区域。 在创建内部风险策略时，你可以选择指示器以激活和自定义每个指示器级别的指示器事件限制：
 
 - **Office指示器**：其中包括用于网站SharePoint、Microsoft Teams和电子邮件的策略指示器。
-- **设备指示器**：其中包括用于活动的策略指示器，例如通过网络或设备共享文件。 指示器包括涉及Microsoft Office文件.csv (逗号分隔值) 文件，以及.pdf (可移植文档) 活动。 如果选择"**设备指示器**"，则仅处理Windows 10版本 1809 或更高版本的设备的活动，并且必须先将设备载入合规中心。 有关配置设备以与内部风险集成的信息，请参阅本文中的以下启用设备指示器[](insider-risk-management-settings.md#OnboardDevices)和载入设备部分。
+- **设备指示器**：其中包括用于活动的策略指示器，例如通过网络或设备共享文件。 指示器包括涉及所有文件类型的活动，不包括可执行 (.exe) 和动态链接库 (.dll) 文件活动。 如果选择"**设备指示器**"，则仅处理Windows 10版本 1809 或更高版本的设备的活动，并且必须先将设备载入合规中心。 有关配置设备以与内部风险集成的信息，请参阅本文中的以下启用设备指示器[](insider-risk-management-settings.md#OnboardDevices)和载入设备部分。
 - **安全策略违反指示器 (预览**) ：其中包括 Microsoft Defender for Endpoint 中与未批准或恶意软件安装或绕过安全控制相关的指示器。 若要在内部风险管理中接收警报，必须启用有效的 Defender for Endpoint 许可证和内部风险集成。 有关为终结点配置 Defender 进行内部风险管理集成的信息，请参阅在 [Microsoft Defender for Endpoint 中配置高级功能](/windows/security/threat-protection/microsoft-defender-atp/advanced-features\#share-endpoint-alerts-with-microsoft-compliance-center)。
 - **预览版 (访问) ：** 其中包括对敏感资产进行物理访问的策略指示器。 例如，尝试访问物理保护系统日志中的受限区域可以与内部风险管理策略共享。 若要在内部风险管理中接收这些类型的警报，必须在内部风险管理中启用优先物理资产，并配置物理保护 [数据](import-physical-badging-data.md) 连接器。 若要详细了解如何配置物理访问，请参阅本文 [的优先级物理](#priority-physical-assets-preview) 访问部分。
 - **Microsoft Cloud App Security预览 (策略**) ：其中包括来自用户共享警报的策略云应用安全。 自动启用异常检测云应用安全立即开始检测和整理结果，针对用户以及连接到网络的计算机和设备中的大量行为异常。 若要将这些活动包括在内部风险管理策略警报中，请选择此部分中的一个或多个指示器。 若要详细了解云应用安全异常检测，请参阅获取[行为分析和异常检测](/cloud-app-security/anomaly-detection-policy)。

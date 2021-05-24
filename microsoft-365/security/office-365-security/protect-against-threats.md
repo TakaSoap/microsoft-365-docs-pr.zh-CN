@@ -20,12 +20,12 @@ description: 管理员可以在 Microsoft 365 中学习威胁防护并为组织�
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 3381ce66433f1f4e32f0251c45601e3cb84865b6
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 438200f3f8a6a846d49bc397d6a4b0a0a33cad40
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538719"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52624617"
 ---
 # <a name="protect-against-threats"></a>抵御威胁
 
@@ -277,7 +277,7 @@ SharePoint、OneDrive 和 Teams 这样的工作负载是为协作而构建的。
 
 - 在“[反垃圾邮件策略](anti-spam-protection.md)”中调整垃圾邮件设置为“**将消息移到垃圾邮件文件夹**”。
 
-- 用户保持默认的[垃圾邮件设置](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md)，且没有关闭垃圾邮件保护。
+- 用户保持默认的[垃圾邮件设置](configure-junk-email-settings-on-exo-mailboxes.md)，且没有关闭垃圾邮件保护。
 
 若要详细了解，请参阅[零时差自动清除 - 抵御垃圾邮件和恶意软件](zero-hour-auto-purge.md)。
 

@@ -19,12 +19,12 @@ ms.collection:
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 005c1f6ad7806c8d1ba1d38e4e82edd25034075d
-ms.sourcegitcommit: 682ed2c4e2bc6979025cdb89094866cef6c8751a
+ms.openlocfilehash: ab0f05c45afa6a4ad66c9fc1bf58e69505632171
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "51942989"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52624989"
 ---
 # <a name="evaluate-microsoft-defender-for-office-365"></a>评估 Microsoft Defender for Office 365
 
@@ -50,7 +50,7 @@ ms.locfileid: "51942989"
 
 作为设置的一部分，评估模式还配置 [连接器的增强筛选](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors)。 它通过保留 IP 地址和发件人信息来提高筛选准确度，否则当邮件通过 Defender for Office 365 前面的电子邮件安全网关 (ESG) 时，这些信息会丢失。 增强的连接器筛选功能还可以提高 EOP 策略Exchange Online Protection (EOP) 反垃圾邮件和防钓鱼策略的筛选准确度。
 
-为连接器启用的增强筛选可提高筛选准确度，但如果在 Defender for Office 365 前面有 ESG，并且当前未绕过 EOP 筛选，则某些邮件可能会改变可传递性。 影响仅限于 EOP 策略;作为评估的一部分的 MDO 策略设置是在非强制模式下创建的。 为了最大限度地减少潜在的生产影响，您可以通过创建传输规则来绕过所有 EOP 筛选，将"垃圾邮件可信度" (SCL) 设置为 -1。 有关详细信息，请参阅使用 [EAC 创建设置邮件 SCL 的邮件](use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md#use-the-eac-to-create-a-mail-flow-rule-that-sets-the-scl-of-a-message)   流规则。
+为连接器启用的增强筛选可提高筛选准确度，但如果在 Defender for Office 365 前面有 ESG，并且当前未绕过 EOP 筛选，则某些邮件可能会改变可传递性。 影响仅限于 EOP 策略;作为评估的一部分的 MDO 策略设置是在非强制模式下创建的。 为了最大限度地减少潜在的生产影响，您可以通过创建传输规则来绕过所有 EOP 筛选，将"垃圾邮件可信度" (SCL) 设置为 -1。 有关详细信息，请参阅使用 [EAC 创建设置邮件 SCL 的邮件](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl#use-the-eac-to-create-a-mail-flow-rule-that-sets-the-scl-of-a-message)   流规则。
 
 设置评估模式后，你每天将更新一个报告，其中最多包含 90 天的数据，用于量化实施策略时可能阻止的邮件 (例如删除、发送到垃圾邮件、隔离) 。 针对所有 Defender 生成针对 Office 365 和 EOP 检测的报告。 它们根据检测技术聚合 (例如，模拟) 并可以按时间范围进行筛选。 此外，还可以按需创建邮件报告，以创建自定义透视表，或者使用威胁资源管理器深入探究邮件。
 
@@ -61,9 +61,9 @@ ms.locfileid: "51942989"
 - 分析要操作的报告
 - 显示评估结果
 
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>准备工作
 
-### <a name="licensing"></a>授权
+### <a name="licensing"></a>许可
 
 若要访问评估，你将需要满足许可要求。 以下任一许可证都可用：
 

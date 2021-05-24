@@ -20,12 +20,12 @@ ms.custom:
 description: 管理员可以了解如何使用攻击模拟器在 Microsoft 365 E5 或 Microsoft Defender for Office 365 计划 2 组织中运行模拟网络钓鱼和密码攻击。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 637e84281b85e8c859207ae81342a3c6ab3d00be
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 73ad3501ed9818261c9fbec6ba12b4dc884da84f
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51203257"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52624821"
 ---
 # <a name="attack-simulator-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 中的攻击模拟器
 
@@ -43,7 +43,7 @@ ms.locfileid: "51203257"
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>开始前，有必要了解什么？
 
-- 若要打开安全与合规中心，请转到 <https://protection.office.com/>。 攻击模拟器位于威胁管理 **攻击** \> **模拟器 中**。 转到直接转到攻击模拟器，打开 <https://protection.office.com/attacksimulator> 。
+- 若要打开安全与合规中心，请转到 <https://protection.office.com/>。 攻击模拟器位于威胁管理 **攻击** \> **模拟器 中**。 若要直接转到攻击模拟器，请打开 <https://protection.office.com/attacksimulator> 。
 
 - 有关跨不同用户订阅提供攻击模拟器Microsoft 365，请参阅[Microsoft Defender for Office 365 service description](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)。
 

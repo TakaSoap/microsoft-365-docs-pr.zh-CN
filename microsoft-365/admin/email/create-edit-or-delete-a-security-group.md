@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 55c96b32-e086-4c9e-948b-a018b44510cb
 description: 了解如何创建、编辑或删除安全组。
-ms.openlocfilehash: 8f76b5fa803ea43e53e89cf6479eb7572a2857c2
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 7887a6371287ebef3a91cc1a37f2ed696df1948d
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52537591"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52623997"
 ---
 # <a name="create-edit-or-delete-a-security-group-in-the-microsoft-365-admin-center"></a>在管理中心内创建、编辑Microsoft 365安全组
 
@@ -98,4 +98,10 @@ ms.locfileid: "52537591"
   
 ## <a name="can-i-send-email-to-a-security-group"></a>我能否向安全组发送电子邮件？
 
-是的。 但是，如果你想要将组用于电子邮件和协作，我们建议你改为创建Microsoft 365[组](../create-groups/create-groups.md)。 
+是。 但是，如果你想要将组用于电子邮件和协作，我们建议你改为创建Microsoft 365[组](../create-groups/create-groups.md)。 
+
+## <a name="related-content"></a>相关内容
+
+[在管理中心创建Microsoft 365组 (](../create-groups/create-groups.md)文章) \
+[向Microsoft 365解释组 (](../create-groups/explain-groups-knowledge-worker.md)文章) \
+[管理管理中心中的Microsoft 365管理 (](../create-groups/manage-groups.md)文章) 

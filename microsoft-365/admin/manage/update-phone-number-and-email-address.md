@@ -19,13 +19,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 767349fa-f646-46d9-9dab-4a65049bdd1f
-description: 在管理中心更新管理员电话号码和电子邮件地址。 如果你想要重置自己的管理员密码，你将需要此信息。
-ms.openlocfilehash: 49e3cd3e861499d41107b9c76da175a95e74bb0e
-ms.sourcegitcommit: 9063c7a50a1d7dd6d2e1ca44f53d3c26f21f4ae8
+description: 如果要重置自己的管理员密码，请更新管理中心中的管理员电话号码和电子邮件地址。
+ms.openlocfilehash: ab4e200ae680e40dea7ca7cc4d095be0690ad375
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "52073773"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52624509"
 ---
 # <a name="update-your-admin-phone-number-and-email-address"></a>更新管理员电话号码和电子邮件地址
 
@@ -58,10 +58,7 @@ ms.locfileid: "52073773"
 
 ## <a name="related-content"></a>相关内容
 
-[将用户名和电子邮件地址 (](../add-users/change-a-user-name-and-email-address.md) 视频) 
-
-[添加新员工 (](../add-users/add-new-employee.md) 视频) 
-
-[删除前员工](../add-users/remove-former-employee.md) (视频) 
-
+[将用户名和电子邮件地址 (](../add-users/change-a-user-name-and-email-address.md) 视频) \
+[添加新员工 (](../add-users/add-new-employee.md) 视频) \
+[删除以前员工](../add-users/remove-former-employee.md) (视频) \
 [访问和备份以前用户的数据 (](../add-users/get-access-to-and-back-up-a-former-user-s-data.md) 文章) 

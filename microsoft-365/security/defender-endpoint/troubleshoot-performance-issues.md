@@ -16,12 +16,12 @@ ms.date: 04/14/2021
 audience: ITPro
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: 71c2391361c645d26cdaddff0bff86796da50391
-ms.sourcegitcommit: f000358c01a8006e5749a86b256300ee3a73174c
+ms.openlocfilehash: 1a969b6430914eb2dd667a906dc071d3cd49be8b
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2021
-ms.locfileid: "51995077"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52625325"
 ---
 # <a name="troubleshoot-performance-issues-related-to-real-time-protection"></a>解决与实时保护相关的性能问题
 
@@ -178,13 +178,13 @@ WPR 是 Windows Assessment and Deployment Kit (Windows ADK) 的一部分，可�
 
     ![UAC](images/wpt-yes.png)
 
-4. 接下来，下载 [Microsoft Defender for Endpoint 分析](https://github.com/YongRhee-MDE/Scripts/blob/master/MDAV.wprp) 配置文件，并另存为 `WD.wprp` 文件夹，如 `C:\temp` 。 
+4. 接下来，下载 [Microsoft Defender for Endpoint 分析](https://github.com/YongRhee-MDE/Scripts/blob/master/MDAV.wprp) 配置文件，并另存为 `MDAV.wprp` 文件夹，如 `C:\temp` 。 
      
 5. 在"WPR"对话框中，选择"**更多选项"。**
 
     ![选择更多选项](images/wpr-03.png)
 
-6. 选择 **"添加配置文件..."，** 然后浏览到文件 `WD.wprp` 的路径。
+6. 选择 **"添加配置文件..."，** 然后浏览到文件 `MDAV.wprp` 的路径。
 
 7. 此后，你应该会看到"自定义度量"下的 *"Microsoft Defender 终结点分析*"下的新配置文件集。
 
@@ -247,7 +247,7 @@ WPR 是 Windows Assessment and Deployment Kit (Windows ADK) 的一部分，可�
 
 命令行工具 *wpr.exe* 操作系统的一部分，从 Windows 8。 若要使用命令行工具收集 WPR 跟踪，wpr.exe：
 
-1. 将 **[Microsoft Defender for Endpoint 分析](https://github.com/YongRhee-MDE/Scripts/blob/master/MDAV.wprp)** 配置文件的性能跟踪下载到本地目录中名为 的文件，例如 `WD.wprp` `C:\traces` 。
+1. 将 **[Microsoft Defender for Endpoint 分析](https://github.com/YongRhee-MDE/Scripts/blob/master/MDAV.wprp)** 配置文件的性能跟踪下载到本地目录中名为 的文件，例如 `MDAV.wprp` `C:\traces` 。
 
 3. 右键单击"**开始"** 菜单图标，然后选择"Windows PowerShell (**管理员**) 或命令提示符 **(") "** 管理员"命令提示符窗口。
 
@@ -256,7 +256,7 @@ WPR 是 Windows Assessment and Deployment Kit (Windows ADK) 的一部分，可�
 5. 在提升的提示符下，运行以下命令以启动 Microsoft Defender for Endpoint 性能跟踪：
 
     ```console
-    wpr.exe -start C:\traces\WD.wprp!WD.Verbose -filemode
+    wpr.exe -start C:\traces\MDAV.wprp!WD.Verbose -filemode
     ```
     
     >[!WARNING]

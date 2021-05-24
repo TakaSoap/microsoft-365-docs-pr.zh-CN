@@ -20,19 +20,19 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: a7c98273-067e-4162-b3a1-4ba081796012
-description: 了解如何以通讯组列表中的通讯组列表Microsoft 365。
-ms.openlocfilehash: bb1d5a62d2b1a3bbfae87849e8aa96cef14c173e
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+description: 将电子邮件作为通讯组列表Microsoft 365以便当成员回复邮件时，邮件看起来好像来自通讯组列表。
+ms.openlocfilehash: 01bff7e1d2515670c5a6faa199355e7de591f1fb
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52332422"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52624533"
 ---
 # <a name="send-email-as-a-distribution-list"></a>以通讯组列表方式发送电子邮件
 
 在Microsoft 365中，你可以以通讯组列表方式发送电子邮件。 当通讯组列表成员答复发送到通讯组列表的邮件时，电子邮件看起来好像来自通讯组列表，而不是来自单个用户。 本主题演示如何执行此工作。
   
-## <a name="send-email-as-a-distribution-list"></a>以通讯组列表方式发送电子邮件
+## <a name="before-you-begin"></a>准备工作
 
 执行这些步骤之前，请确保你已添加到Microsoft 365通讯组列表，并且你已被授予以发送方式发送权限。
   
@@ -61,3 +61,9 @@ ms.locfileid: "52332422"
 3. 从全局 **地址列表中选择** 通讯组列表地址。
 
 4. 发送电子邮件。
+
+## <a name="related-content"></a>相关内容
+
+[在管理中心创建、编辑](../email/create-edit-or-delete-a-security-group.md)或删除Microsoft 365安全 (，) \
+[电子邮件协作](../email/email-collaboration.md) (文章) \
+[向通讯组添加用户或联系人](../email/add-user-or-contact-to-distribution-list.md)

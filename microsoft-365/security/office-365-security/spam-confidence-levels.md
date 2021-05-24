@@ -19,12 +19,12 @@ ms.custom:
 description: 管理员可以了解应用于 EOP (中的) 邮件的垃圾邮件可信度Exchange Online Protection (SCL) 。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 951bbcb5fcbcc7b7916ee1c34c4ab489d54b6667
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 55e64c72cc472e98baa8eb71e23dafb6b276ba01
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51203204"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52625277"
 ---
 # <a name="spam-confidence-level-scl-in-eop"></a>EOP 中的垃圾邮件 (SCL) 级别
 
@@ -51,7 +51,7 @@ ms.locfileid: "51203204"
 
 你会注意到，垃圾邮件筛选不会使用 SCL 2、3、4、7 和 8。
 
-您可以使用邮件流规则 (传输规则) 标记邮件上的 SCL。 如果使用邮件流规则设置 SCL，则值 5 或 6 将触发 **垃圾邮件** 的垃圾邮件筛选操作，值 7、8 或 9 将触发高可信度垃圾邮件的垃圾邮件筛选 **操作**。 有关详细信息，请参阅使用邮件 [流规则在邮件中设置 (SCL) 垃圾邮件可信度](use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md)。
+您可以使用邮件流规则 (传输规则) 标记邮件上的 SCL。 如果使用邮件流规则设置 SCL，则值 5 或 6 将触发 **垃圾邮件** 的垃圾邮件筛选操作，值 7、8 或 9 将触发高可信度垃圾邮件的垃圾邮件筛选 **操作**。 有关详细信息，请参阅使用邮件 [流规则在邮件中设置 (SCL) 垃圾邮件可信度](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl)。
 
 与 SCL 类似，BCL 中的批量投诉级别 (BCL) 识别错误批量 (也称为灰色 _邮件) 。_ BCL 越高，大量邮件产生投诉的可能性就越大（因此更有可能是垃圾邮件）。 您可以在反垃圾邮件策略中配置 BCL 阈值。 有关详细信息，请参阅在[EOP](configure-your-spam-filter-policies.md)中配置反垃圾邮件策略[、EOP ](bulk-complaint-level-values.md)) 中的批量投诉级别 (BCL) 和垃圾邮件和批量电子邮件之间有什么[区别？。](what-s-the-difference-between-junk-email-and-bulk-email.md)
 

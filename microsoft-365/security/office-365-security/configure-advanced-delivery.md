@@ -17,12 +17,12 @@ ms.custom: ''
 description: 管理员可以了解如何使用 Exchange Online Protection (EOP) 中的高级传递策略识别不应在特定的支持方案中筛选的邮件 (第三方网络钓鱼模拟以及传递到安全操作 (SecOps) 邮箱的邮件。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 8bebc094b56a20a43f92d1acf8d374110de43d71
-ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
+ms.openlocfilehash: 0e4e230fdca7fe29fc1c7a1bc68085454ba883b9
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/21/2021
-ms.locfileid: "52594117"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52624785"
 ---
 # <a name="configure-the-delivery-of-third-party-phishing-simulations-to-users-and-unfiltered-messages-to-secops-mailboxes"></a>配置向用户传递第三方网络钓鱼模拟以及将未筛选邮件发送到 SecOps 邮箱
 
@@ -107,6 +107,6 @@ ms.locfileid: "52594117"
 
 - **第三方筛选器**：如果你的域的 MX记录没有指向Office 365 (邮件将路由到其他位置) ，默认情况下，安全 [](secure-by-default.md)*不可用*。
 
-  若要绕过 Microsoft 筛选已由第三方筛选评估的邮件，请使用邮件流规则 (也称为传输规则) ，请参阅使用邮件流规则设置邮件[中的 SCL。](use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md)
+  若要绕过 Microsoft 筛选已由第三方筛选评估的邮件，请使用邮件流规则 (也称为传输规则) ，请参阅使用邮件流规则设置邮件[中的 SCL。](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl.md)
 
 - 正在审查 **的** 误报：你可能希望暂时允许 Microsoft 通过管理员提交仍在分析的某些邮件，以报告被 [](admin-submission.md)错误地标记为对 Microsoft (误报错误的已知) 。 与所有替代一样， **_强烈建议临时进行_** 这些替代。

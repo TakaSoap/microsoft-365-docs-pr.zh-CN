@@ -15,12 +15,12 @@ ms.custom:
 description: 本文将介绍适用于 EOP 管理员的 Microsoft Exchange Online Protection (报告和) 工具。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d5e5493925a17725bfb9d6698b3f94050960ccc7
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: ae55ded9d907754161813c9f7bfa7eeb14c558a8
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51203587"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52625025"
 ---
 # <a name="reporting-and-message-trace-in-eop"></a>EOP 中的报告和邮件跟踪
 
@@ -77,7 +77,7 @@ ms.locfileid: "51203587"
 
 ## <a name="audit-logging"></a>审核日志记录
 
-跟踪管理员对您的组织做出的特定更改。 这些报告可以帮助您解决配置问题或找到安全性或合规性相关问题的原因。 请参阅 [EOP 中的审核报告](auditing-reports-in-eop.md)。
+跟踪管理员对您的组织做出的特定更改。 这些报告可以帮助您解决配置问题或找到安全性或合规性相关问题的原因。 请参阅[审核报告中Exchange Online。](/exchange/security-and-compliance/exchange-auditing-reports/exchange-auditing-reports)
 
 ## <a name="reporting-and-message-trace-data-availability-and-latency"></a>报告和邮件跟踪数据的可用性与延迟
 

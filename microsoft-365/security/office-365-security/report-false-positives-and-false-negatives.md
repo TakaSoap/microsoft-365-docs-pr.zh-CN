@@ -13,12 +13,12 @@ ms.collection:
 description: 了解如何使用"报告邮件"功能在Outlook中报告误报和漏报。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e848595035501f5da7b6099efd2700ebac6f17e3
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 6f8c4fc327bfd467cdd1d0043c454e222e84125c
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52291159"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52625109"
 ---
 # <a name="report-false-positives-and-false-negatives-in-outlook"></a>在 Outlook 中报告误报和漏报
 
@@ -55,7 +55,7 @@ ms.locfileid: "52291159"
 对于收件箱或其他任何电子邮件文件夹中的邮件（垃圾邮件除外），请使用以下方法报告垃圾邮件和网络钓鱼邮件：
 
 1. 单击 **选定邮件** 右上角的"更多操作"省略号，从下拉菜单中单击"报告邮件"，然后选择"**垃圾邮件**"或"网络钓鱼 **"。**
-  
+
    > [!div class="mx-imgBorder"]
    > ![报告邮件 - 更多操作](../../media/report-message-more-actions.png)
 
@@ -67,10 +67,10 @@ ms.locfileid: "52291159"
    - 如果报告为垃圾邮件，则移动到"垃圾邮件"文件夹。
 
    - 如果报告为网络钓鱼，则将其删除。
-   
+
 ### <a name="report-messages-that-are-not-junk"></a>报告非垃圾邮件
 
-1. 单击 **选定邮件** 右上角的"更多操作"省略号，单击下拉菜单中的"报告邮件"，然后单击"非 **垃圾邮件"。**  
+1. 单击 **选定邮件** 右上角的"更多操作"省略号，单击下拉菜单中的"报告邮件"，然后单击"非 **垃圾邮件"。**
 
    > [!div class="mx-imgBorder"]
    > ![报告邮件 - 更多操作](../../media/report-message-more-actions.png)
@@ -86,4 +86,4 @@ ms.locfileid: "52291159"
 
 - 使用管理员提交门户。 有关详细信息，请参阅查看 [Microsoft 的用户提交](admin-submission.md#view-user-submissions-to-microsoft)。
 
-- 创建邮件流规则 (也称为传输规则) 传输规则，以发送报告的邮件的副本。 有关说明，请参阅 [使用邮件流规则查看用户向 Microsoft 报告哪些内容](use-mail-flow-rules-to-see-what-your-users-are-reporting-to-microsoft.md)。
+- 创建邮件流规则 (也称为传输规则) 传输规则，以发送报告的邮件的副本。 有关说明，请参阅 [使用邮件流规则查看向 Microsoft 报告的用户](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-see-what-users-are-reporting-to-microsoft)。

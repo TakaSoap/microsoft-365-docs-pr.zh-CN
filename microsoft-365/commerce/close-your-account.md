@@ -18,20 +18,20 @@ ms.custom:
 - fwlink 2133922 to Delete subscription heading
 - commerce_subscription
 search.appverid: MET150
-description: 了解如何关闭 Microsoft 帐户。
+description: 关闭 Microsoft 帐户时，将删除与帐户相关的所有信息，包括许可证、用户和用户数据。
 ms.date: 04/02/2021
-ms.openlocfilehash: ed73c191063a328490945c54dc2f5101c88f17e8
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: b212911707b5d6a967ab833a5a06bc76f5ceeb3b
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52537291"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52624321"
 ---
 # <a name="close-your-account"></a>关闭你的帐户
 
 当关闭你的 Microsoft 帐户时，与你的帐户相关的所有信息都将被删除。 此信息包括订阅、许可证、付款方式、用户和用户数据。
 
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>准备工作
 
 开始此过程之前，请确保备份要保留的所有数据。
 
@@ -52,8 +52,8 @@ ms.locfileid: "52537291"
 ## <a name="step-2-cancel-all-active-subscriptions"></a>步骤 2：取消所有活动订阅
 
 1. 在管理中心中，转到“**账单**” > “<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">你的产品</a>”页面。
-2. 在" **产品"** 选项卡上，查找活动订阅。 Select the three dots (more actions) ， then select **Cancel subscription**.
-3. 在“**取消订阅**”窗格中，选择取消原因。 (可选)提供反馈。
+2. 在" **产品"** 选项卡上，查找活动订阅。 选择三个点（更多操作），然后选择“**取消订阅**”。
+3. 在“**取消订阅**”窗格中，选择取消原因。可选择提供任何反馈。
 4. 选择“**保存**”。
 5. 重复步骤 1 至 4 以取消所有活动订阅。
 
@@ -88,3 +88,9 @@ ms.locfileid: "52537291"
 5. 如果您的组织未能通过一项或多项检查，则会看到一个链接，该链接指向有关通过检查详细信息。 通过所有检查后，选择" **删除** "以完成此过程。
 
 完成最后一步后，Microsoft 帐户将关闭并删除。
+
+## <a name="related-content"></a>相关内容 
+
+[了解适用于企业Microsoft 365的](./billing-and-payments/understand-your-invoice2.md)帐单 (发票) \
+[取消订阅 (](./subscriptions/cancel-your-subscription.md) 文章) 
+

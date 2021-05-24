@@ -17,12 +17,12 @@ ms.collection:
 description: 管理员可以了解如何配置邮箱以收集用户报告的垃圾邮件和网络钓鱼电子邮件。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a23f27478d01092705a47d49884f200478348182
-ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
+ms.openlocfilehash: 852e87ee76d9692b789ca217720ac3efb08f31a8
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52583708"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52624605"
 ---
 # <a name="user-submissions-policy"></a>用户提交策略
 
@@ -39,22 +39,18 @@ ms.locfileid: "52583708"
 
 - [报告网络钓鱼外接程序](enable-the-report-phish-add-in.md)
 
-- [Web 上的Outlook中的](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md)内置 (以前称为Outlook Web App) 
+- [第三方报告工具](#third-party-reporting-tools)
 
-- [适用于 iOS 和 Outlook Android 的内置报告](report-junk-email-and-phishing-scams-in-outlook-for-iOS-and-Android.md)
+将用户报告的邮件发送到自定义邮箱，而不是直接发送给 Microsoft，使管理员能够使用管理员提交选择性地将邮件手动 [报告给](admin-submission.md)Microsoft。
 
   > [!NOTE]
   > 如果在 Web[](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md#disable-or-enable-junk-email-reporting-in-outlook-on-the-web)上的 Outlook中禁用报告，则在此处启用用户提交将替代该设置，并使用户能够在 web 上的 Outlook 中报告邮件。
-
-还可以配置第三方邮件报告工具，将邮件转发到指定的邮箱。
-
-将用户报告的邮件发送到自定义邮箱，而不是直接发送给 Microsoft，使管理员能够使用管理员提交选择性地将邮件手动 [报告给](admin-submission.md)Microsoft。
 
 ## <a name="custom-mailbox-prerequisites"></a>自定义邮箱先决条件
 
 使用以下文章配置必备组件，以便用户报告的邮件转到自定义邮箱：
 
-- 通过创建 Exchange 邮件流规则来设置垃圾邮件可信度，跳过自定义邮箱上的垃圾邮件筛选。 请参阅使用 EAC 创建邮件流规则，[该规则将邮件的 SCL](use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md#use-the-eac-to-create-a-mail-flow-rule-that-sets-the-scl-of-a-message)设置为"绕过 **垃圾邮件筛选"。**
+- 通过创建 Exchange 邮件流规则来设置垃圾邮件可信度，跳过自定义邮箱上的垃圾邮件筛选。 请参阅使用 EAC 创建邮件流规则，[该规则将邮件的 SCL](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl#use-the-eac-to-create-a-mail-flow-rule-that-sets-the-scl-of-a-message)设置为"绕过 **垃圾邮件筛选"。**
 
 - 关闭自定义邮箱中恶意软件的扫描附件。 使用 [Defender for 保险箱](set-up-safe-attachments-policies.md)中的"设置Office 365附件策略"创建一个保险箱附件策略，其"附件未知保险箱"设置为"关闭 **"。** 
 
@@ -141,9 +137,17 @@ ms.locfileid: "52583708"
 
        完成后，单击"确认 **"。**
 
+## <a name="third-party-reporting-tools"></a>第三方报告工具
+
+可以将第三方邮件报告工具配置为将报告的邮件发送到自定义邮箱。 唯一的要求是原始邮件作为附件包含在发送到自定义邮箱的邮件中 (而不只是将原始邮件转发到自定义邮箱) 。
+
+下一节将介绍邮件格式要求。
+
 ## <a name="message-submission-format"></a>邮件提交格式
 
-发送到自定义邮箱的邮件需要遵循特定的提交邮件格式。 提交 (信封标题) 应采用以下格式：
+若要正确标识原始附加的邮件，发送到自定义邮箱的邮件需要特定格式。 如果邮件不使用此格式，则原始附加的邮件始终标识为网络钓鱼提交。
+
+为了正确标识原始附加的邮件，发送到自定义邮箱的邮件需要使用以下语法来表示"主题 (信封标题) ：
 
 `SafetyAPIAction|NetworkMessageId|SenderIp|FromAddress|(Message Subject)`
 
@@ -153,7 +157,7 @@ ms.locfileid: "52583708"
 - 2：非垃圾邮件
 - 3：网络钓鱼
 
-在下面的示例中：
+此示例使用下列值：
 
 - 邮件被报告为网络钓鱼。
 - 网络消息 ID 为 49871234-6dc6-43e8-abcd-08d797f20abe。

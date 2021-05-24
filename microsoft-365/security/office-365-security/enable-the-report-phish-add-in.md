@@ -16,12 +16,12 @@ ms.assetid: 4250c4bc-6102-420b-9e0a-a95064837676
 ms.collection:
 - M365-security-compliance
 description: 了解如何为单个用户或整个Outlook Web Outlook启用报告网络钓鱼外接程序。
-ms.openlocfilehash: 12543364943321689d0efa2c2942351b3d3ec6f9
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 44fa55a82462de336982d3af2e3996c14699fd7c
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51203751"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52625385"
 ---
 # <a name="enable-the-report-phishing-add-in"></a>启用“报告网络钓鱼”加载项
 
@@ -142,7 +142,7 @@ Microsoft 使用这些提交来提高电子邮件保护技术的有效性。 例
 
 2. 查找并选择报告 **网络钓鱼** 外接程序。
 
-3. 在出现的 **"编辑报告** 钓鱼"飞出控件中，查看和编辑适合你的组织的设置。 完成后，单击“**保存**”。
+3. 在出现的 **"编辑报告** 钓鱼"飞出控件中，查看和编辑适合你的组织的设置。 完成时，请单击“保存”。
 
 ## <a name="view-and-review-reported-messages"></a>查看和查看报告的邮件
 
@@ -150,4 +150,4 @@ Microsoft 使用这些提交来提高电子邮件保护技术的有效性。 例
 
 - 使用管理员提交门户。 有关详细信息，请参阅查看 [Microsoft 的用户提交](admin-submission.md#view-user-submissions-to-microsoft)。
 
-- 创建邮件流规则 (也称为传输规则) 传输规则，以发送报告的邮件的副本。 有关说明，请参阅 [使用邮件流规则查看用户向 Microsoft 报告哪些内容](use-mail-flow-rules-to-see-what-your-users-are-reporting-to-microsoft.md)。
+- 创建邮件流规则 (也称为传输规则) 传输规则，以发送报告的邮件的副本。 有关说明，请参阅 [使用邮件流规则查看向 Microsoft 报告的用户](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-see-what-users-are-reporting-to-microsoft)。

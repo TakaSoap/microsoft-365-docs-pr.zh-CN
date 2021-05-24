@@ -22,13 +22,13 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: 1136115a-75af-4497-b693-640c4ce70bc6
-description: '通过将自定义磁贴添加到应用启动器，创建指向SharePoint、文档、应用、网站、外部网站和其他资源的快速链接。 '
-ms.openlocfilehash: 598cfeb75fc811c87519c4479fa8fcab450466c3
-ms.sourcegitcommit: 68383240ef7a673d5f28e2ecfab9f105bf1d8c8f
+description: 通过将自定义磁贴添加到应用启动器，创建指向SharePoint、文档、应用、网站、外部网站和其他资源的快速链接。
+ms.openlocfilehash: 47f871d66f180225e877a521ef159fc745960507
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "52327206"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52623769"
 ---
 # <a name="add-custom-tiles-to-the-app-launcher"></a>向应用启动器添加自定义磁贴
 
@@ -79,6 +79,12 @@ ms.locfileid: "52327206"
     
 若要删除自定义磁贴，请在"自定义磁贴"窗口中，选择该磁贴，选择"**删除磁贴""**  >  **删除"。** 
   
-## <a name="whats-next"></a>下一步做什么？
+## <a name="next-steps"></a>后续步骤
 
 除了向应用启动器添加磁贴外，还可以将应用启动器磁贴添加到导航 ([了解) 。](https://support.microsoft.com/office/eb34a21b-52fa-4fbf-a8d5-146132242985) 若要自定义组织品牌Microsoft 365外观，请参阅自定义自定义Microsoft 365[主题](../setup/customize-your-organization-theme.md)。
+
+## <a name="related-content"></a>相关内容
+
+[将应用固定到用户的应用启动](pin-apps-to-app-launcher.md) 器 (文章) \
+[将业务Microsoft 365升级到](../setup/upgrade-users-to-latest-office-client.md)最新 Office 客户端 (文章) \
+[管理中心中的外接程序 (](../manage/manage-addins-in-the-admin-center.md) 文章) 

@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: 了解如何联系你的国家/地区或地区的支持人员。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 726af48f61a279ec29ce771b9be97f75cfa74f62
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 4762942ee7340eead0f1e025de7ace61aa00cfca
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52296583"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52624297"
 ---
 # <a name="contact-support-for-azerbaijan"></a>联系阿塞拜疆支持人员
 
@@ -26,9 +26,9 @@ ms.locfileid: "52296583"
 ## <a name="phone-number"></a>电话号码
 01 24 37 35 55
 
-选择选项 9
+按 2 for business
 
-输入代码 7706
+按 1 Microsoft 365
 
 ## <a name="hours"></a>工作时间
 ### <a name="billing-support"></a>计费支持：

@@ -15,12 +15,12 @@ ms.custom:
 description: 本文将了解如何从本地电子邮件安全Exchange Online Protection (或基于云的) 切换到 EOP 服务。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e1a5df0b11c258ebe633868bb5abca5b20552a33
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: dfbbc44ebfed6cafb97e36b18a4fc34c91840d9b
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51203821"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52624009"
 ---
 # <a name="switch-to-eop-from-google-postini-the-barracuda-spam-and-virus-firewall-or-cisco-ironport"></a>从 Google Postini、Barracuda 垃圾邮件和病毒防火墙或 Cisco IronPort 切换到 EOP
 
@@ -45,7 +45,7 @@ ms.locfileid: "51203821"
 
 ## <a name="switch-to-eop-standalone"></a>独立切换到 EOP
 
-如果当前在内部部署中托管邮箱，并使用内部部署保护设备或云邮件传递保护服务，则可以切换到 EOP 以利用其保护功能和可用性。要在独立方案中设置 EOP（这意味着在内部部署中托管邮箱并使用 EOP 提供电子邮件保护），可以按照[设置 EOP 服务](set-up-your-eop-service.md)中所述的步骤执行操作。该主题概述了设置 EOP 保护的步骤，包括注册、添加域和使用连接器设置邮件流。
+如果当前在内部部署中托管邮箱，并使用内部部署保护设备或云邮件传递保护服务，则可以切换到 EOP 以利用其保护功能和可用性。要在独立方案中设置 EOP（这意味着在内部部署中托管邮箱并使用 EOP 提供电子邮件保护），可以按照[设置 EOP 服务](/exchange/standalone-eop/set-up-your-eop-service)中所述的步骤执行操作。该主题概述了设置 EOP 保护的步骤，包括注册、添加域和使用连接器设置邮件流。
 
 ## <a name="switch-to-exchange-online"></a>切换到 Exchange Online
 
@@ -63,7 +63,7 @@ ms.locfileid: "51203821"
 
 当决定切换到 EOP 时，请确保特别留意下列几个方面：
 
-- **自定义筛选规则**：如果有自定义筛选或业务策略规则来捕获特定垃圾邮件，我们建议您在迁移规则之前先尝试使用默认设置的 EOP 一段时间。 EOP 提供了具有默认设置的企业级垃圾邮件保护，这可能表示您不需要将某些规则迁移到 EOP。 当然，如果您有现成的强制特定自定义业务策略的规则，则可以创建这些规则。 [邮件流规则 (中的](mail-flow-rules-transport-rules-0.md)) 规则Exchange Online Protection提供了在 EOP 中创建邮件流规则的详细说明。
+- **自定义筛选规则**：如果有自定义筛选或业务策略规则来捕获特定垃圾邮件，我们建议您在迁移规则之前先尝试使用默认设置的 EOP 一段时间。 EOP 提供了具有默认设置的企业级垃圾邮件保护，这可能表示您不需要将某些规则迁移到 EOP。 当然，如果您有现成的强制特定自定义业务策略的规则，则可以创建这些规则。 有关详细信息，请参阅邮件[流规则 (中的) 传输Exchange Online。](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules)
 
 - **IP 允许列表和 IP 阻止列表**：如果您有每用户允许列表和阻止列表，请留出一些时间在设置过程中将列表复制到 EOP。 有关 IP 允许列表和 IP 阻止列表的信息，请参阅 [配置连接筛选器策略](configure-the-connection-filter-policy.md)。
 

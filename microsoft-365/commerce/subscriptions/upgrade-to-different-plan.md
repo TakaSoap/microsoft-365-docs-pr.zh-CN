@@ -18,14 +18,14 @@ ms.custom:
 - AdminSurgePortfolio
 - commerce_subscriptions
 search.appverid: MET150
-description: 了解如何升级到其他计划。
+description: 升级计划的最简单方法是使用管理中心中的"升级"选项卡。 但是，"升级"选项卡并不总是受支持。
 ms.date: 04/21/2021
-ms.openlocfilehash: 4882ad4296eb05faf0bb549ebf850562a7ebf780
-ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
+ms.openlocfilehash: da0b0a826087ea7e963dde85f9b4612acf0eaf99
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52344610"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52624309"
 ---
 # <a name="upgrade-to-a-different-plan"></a>升级到其他计划
 

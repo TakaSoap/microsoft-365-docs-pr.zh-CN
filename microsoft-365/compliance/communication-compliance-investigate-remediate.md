@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 2f9777631fe9d8b3506296f30906d5280805b4cb
-ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
+ms.openlocfilehash: 02fbd70e7456f95ded920faa8004eedadb35d4f5
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52583400"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52624241"
 ---
 # <a name="investigate-and-remediate-communication-compliance-alerts"></a>调查和修正通信合规性警报
 
@@ -101,9 +101,9 @@ ms.locfileid: "52583400"
 
 查看邮件基础知识后，可以打开一封邮件来检查详细信息并确定进一步修正操作。 选择邮件以查看完整的邮件标题和正文信息。 有几种不同视图可供选择，以帮助你决定正确的行动：
 
-- **源视图**：此视图是标准邮件视图，通常可以在大多 Web 邮件平台上看到。 邮件头信息采用正常样式格式，邮件正文支持带符号的图形文件和换行文本。 如果为策略启用了光学字符识别 ([OCR ](communication-compliance-feature-reference.md#optical-character-recognition-ocr-preview)) ，则包含匹配策略条件的打印或手写文本的图像将在此视图中视为关联邮件的子项。
+- **源视图**：此视图是标准邮件视图，通常可以在大多 Web 邮件平台上看到。 邮件头信息采用正常样式格式，邮件正文支持带符号的图形文件和换行文本。 如果为策略启用了光学字符识别 ([OCR ](communication-compliance-feature-reference.md#optical-character-recognition-ocr)) ，则包含匹配策略条件的打印或手写文本的图像将在此视图中视为关联邮件的子项。
 - **文本** 视图：文本视图显示邮件的行号仅文本视图，并包括邮件和附件中与关联的通信合规性策略中匹配的敏感信息类型术语或关键字的关键字突出显示。 关键字突出显示可以帮助您快速扫描长邮件和附件中感兴趣的区域。 在某些情况下，突出显示的文本可能仅在匹配策略条件的邮件的附件中。 分配给策略的内置分类器标识的术语不支持关键字突出显示。 不显示嵌入文件，并且此视图的行号有助于在多个审阅者之间引用相关详细信息。
-- **批注视图**：此视图允许审阅者直接在邮件上添加注释，并保存在该邮件视图中。 如果为策略启用了 [OCR，](communication-compliance-feature-reference.md#optical-character-recognition-ocr-preview) 则包含符合策略条件的打印或手写文本的图像将在此视图中查看为关联邮件的子项，并可以添加注释。
+- **批注视图**：此视图允许审阅者直接在邮件上添加注释，并保存在该邮件视图中。 如果为策略启用了 [OCR，](communication-compliance-feature-reference.md#optical-character-recognition-ocr) 则包含符合策略条件的打印或手写文本的图像将在此视图中查看为关联邮件的子项，并可以添加注释。
 - **用户历史记录**：用户历史记录视图显示通信合规性策略针对发送邮件的用户生成的所有其他警报。
 - **模式检测到通知**：随着时间的推移，许多威胁和威胁操作都涉及用户重复出现相同行为的实例。 检测到 *的模式* 通知显示在警报详细信息中，并引发对警报的注意。 模式检测基于每个策略，并评估过去 30 天内发件人向同一收件人发送至少两条消息的行为。 研究人员和审阅者可以使用此通知识别重复行为，以根据情况评估警报。
 - **显示翻译视图**：此视图自动将通知消息文本转换为每个审阅者在 Microsoft 365订阅中的"显示语言"设置中配置的语言。 "翻译"视图有助于扩大对多语言用户组织的调查支持，并且无需在通信合规性审阅流程之外提供其他翻译服务。 使用 Microsoft 翻译服务，可根据需要打开和关闭"翻译"视图，并支持多种语言。 有关支持的语言的完整列表，请参阅[Microsoft 翻译工具 Languages。](https://www.microsoft.com/translator/business/languages/) 翻译视图中 *翻译工具* 语言列表中列出的语言。

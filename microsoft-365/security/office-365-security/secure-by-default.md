@@ -17,12 +17,12 @@ ms.collection:
 description: '详细了解 EOP Exchange Online Protection (中的默认设置) '
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 957ca3b563d4f1466dd537c3ae974a4fd61aa6f2
-ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
+ms.openlocfilehash: 2d5cdc8f8faa9c2d5772fd1572134ea49cdd77da
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52346312"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52624045"
 ---
 # <a name="secure-by-default-in-office-365"></a>默认情况下，安全Office 365
 
@@ -77,7 +77,7 @@ Microsoft 365邮箱的组织Exchange Online EOP Exchange Online Protection (保�
 > [!NOTE]
 > 2021 年 7 月，默认将安全扩展到Exchange传输规则 (传输规则) 。 如果使用邮件流规则允许第三方网络钓鱼模拟或未经筛选地传递至安全操作邮箱，则最终需要消除这些规则，并切换到使用高级传递策略（如果该功能可供你 [](configure-advanced-delivery.md)_使用）。_
 
-允许高可信度网络钓鱼邮件绕过筛选的唯一替代是邮件流规则。 若要使用邮件流规则绕过筛选，请参阅使用邮件流[规则设置邮件中的 SCL。](use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md)
+允许高可信度网络钓鱼邮件绕过筛选的唯一替代是邮件流规则。 若要使用邮件流规则绕过筛选，请参阅使用邮件流[规则设置邮件中的 SCL。](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl)
 
 只应考虑在下列情况下使用替代：
 

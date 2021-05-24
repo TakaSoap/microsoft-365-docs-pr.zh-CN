@@ -20,13 +20,13 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: f86e8177-936e-491e-9024-44dea2b296ff
-description: 了解如何在购买时添加订阅顾问合作伙伴作为记录合作伙伴Microsoft 365更改合作伙伴，或者从订阅中删除合作伙伴。
-ms.openlocfilehash: d45f9e3278b0a25cc5603d322c96f40eee45e6f8
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+description: 在购买时添加记录合作伙伴Microsoft 365更改合作伙伴，或者从订阅中删除合作伙伴。
+ms.openlocfilehash: e21c324bc84e360b80deae2abeec610e73834819
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52537471"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52624521"
 ---
 # <a name="add-change-or-delete-a-subscription-advisor-partner"></a>添加、更改或删除订阅顾问合作伙伴
 
@@ -42,6 +42,8 @@ ms.locfileid: "52537471"
 作为你的订阅顾问的 Microsoft 授权合作伙伴可向你提供销售、支持和技术方面的专业知识，以帮助你设置和维护订阅。 购买订阅顾问合作伙伴或其他时间时，你可以添加Microsoft 365合作伙伴作为记录合作伙伴。 如果当前未与合作伙伴合作，还可以在 [Microsoft Pinpoint](https://pinpoint.microsoft.com) 网站上找到一个合作伙伴。
 
 ::: moniker-end
+
+## <a name="before-you-begin"></a>准备工作
 
 ::: moniker range="o365-worldwide"
 
@@ -218,6 +220,7 @@ ms.locfileid: "52537471"
   
 ::: moniker-end
 
-## <a name="related-articles"></a>相关文章
+## <a name="related-content"></a>相关内容
 
-[查找你的Microsoft 365合作伙伴或经销商](../manage/find-your-partner-or-reseller.md)
+[查找你的Microsoft 365合作伙伴或经销商](../manage/find-your-partner-or-reseller.md) (文章) \
+[Plan your setup of Microsoft 365 for business (](../setup/plan-your-setup.md) article) 

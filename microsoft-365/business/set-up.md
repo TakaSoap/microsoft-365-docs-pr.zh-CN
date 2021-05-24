@@ -30,14 +30,16 @@ search.appverid:
 - MET150
 ms.assetid: 6e7a2dfd-8ec4-4eb7-8390-3ee103e5fece
 description: 了解适用于用户Microsoft 365 商业高级版步骤，包括添加域和用户、设置安全策略等。
-ms.openlocfilehash: 37607b483686fc12ac6253ae9f693ec86c073c4e
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 3e15f16db2a233d2e11d444600398102b075932d
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245036"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52624381"
 ---
 # <a name="set-up-microsoft-365-business-premium-in-the-setup-wizard"></a>在Microsoft 365 商业高级版向导中设置网站
+
+## <a name="watch-overview-of-microsoft-365-setup"></a>观看：Microsoft 365概述
 
 观看此视频，大致了解Microsoft 365 商业高级版设置。<br><br>
 
@@ -131,6 +133,6 @@ ms.locfileid: "52245036"
 
 也可以单独安装Office安装。 有关[说明Office，请参阅在电脑或 Mac 上](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658)安装设备。
 
-## <a name="see-also"></a>另请参阅
+## <a name="related-content"></a>相关内容
 
-[Microsoft 365 商业版培训视频](../business-video/index.yml)
+[Microsoft 365企业培训视频 (](../business-video/index.yml)链接页) 

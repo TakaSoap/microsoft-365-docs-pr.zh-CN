@@ -13,36 +13,52 @@ metadata:
   ms.assetid: d6a87ce8-2c22-433a-b430-5eab14f6afdc
   ms.custom:
   - seo-marvel-apr2020
-  description: 管理员可以查看有关 Microsoft 365 中针对 Microsoft 合作伙伴和经销商的委派管理任务的常见问题和解答。
+  description: 管理员可以查看 Microsoft 合作伙伴和经销商在 Microsoft 365中有关委派管理任务的常见问题和解答。
   ms.technology: mdo
   ms.prod: m365-security
-  ms.openlocfilehash: 836e52139ef2e6191bda26d6fdb92da521dff6bd
-  ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+  ms.openlocfilehash: b62c1d53d4b2a482aeb91cea147ed9feaa4027c4
+  ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/12/2021
-  ms.locfileid: "52333925"
+  ms.lasthandoff: 05/24/2021
+  ms.locfileid: "52624081"
 title: 委派管理常见问题解答
 summary: >
   [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
 
-  本文提供有关 Microsoft 365 中针对 Microsoft 合作伙伴和经销商的委派管理任务的常见问题和解答。 委派管理包括管理 Exchange Online Protection (EOP) 公司的其他租户 (EOP) 。
+  本文提供有关 Microsoft 合作伙伴和经销商的 Microsoft 365 中的委派管理任务的常见问题和解答。 委派管理包括管理 Exchange Online Protection (公司) 租户的 EOP (设置) 。
 sections:
 - name: 忽略
   questions:
   - question: >
       我是经销商，需要管理我的客户租户。 这如何工作？
-    answer: "如果你是 Microsoft 合作伙伴或经销商，并且已注册成为 Microsoft 顾问，可以在客户的 Microsoft 365 组织中请求委派管理功能。 \n\n委派管理允许你管理 Microsoft 365 (包括 EOP 设置) 就像你是该组织内的管理员一样。 下面列出了配置委派管理的步骤：\n\n1. 注册成为 [Microsoft Office 365 顾问](https://partner.microsoft.com/?cloudbenefits)。\n\n2. 注册委派管理。 在你开始管理客户的租户之前，他们必须授权你成为委派管理员。 若要获得其批准，您 [首先会向这些用户发送委派管理产品/服务](https://support.microsoft.com/office/26530dc0-ebba-415b-86b1-b55bc06b073e)。 还可以在以后为客户提供委派管理。\n\n3. 使用添加、更改或删除订阅顾问合作伙伴 中的步骤创建 [委派管理员帐户](../../admin/misc/add-partner.md)。\n\n访问 [合作伙伴：建立业务和管理合作伙伴订阅](https://support.microsoft.com/office/30dd1681-47e0-4cbc-abfe-a222cd111319) ，详细了解如何设置委派管理。\n"
+    answer: >
+      如果你是 Microsoft 合作伙伴或经销商，并且你已注册成为 Microsoft 顾问，你可以请求在你的客户的组织机构中委派Microsoft 365功能。
+
+
+      委派管理允许你管理Microsoft 365 (EOP 设置) 就像你是该组织内的管理员一样。 下面列出了配置委派管理的步骤：
+
+
+      1. 注册成为 [Microsoft Office 365 顾问](https://partner.microsoft.com/?cloudbenefits)。
+
+
+      2. 注册委派管理。 在你开始管理客户的租户之前，他们必须授权你成为委派管理员。 若要获得其批准，您 [首先会向这些用户发送委派管理产品/服务](https://support.microsoft.com/office/26530dc0-ebba-415b-86b1-b55bc06b073e)。 还可以在以后为客户提供委派管理。
+
+
+      3. 使用添加、更改或删除订阅顾问合作伙伴 中的步骤创建 [委派管理员帐户](../../admin/misc/add-partner.md)。
+
+
+      访问 [合作伙伴：建立业务和管理合作伙伴订阅](https://support.microsoft.com/office/30dd1681-47e0-4cbc-abfe-a222cd111319) ，详细了解如何设置委派管理。
   - question: >
       我是客户，不是经销商。 如何为我的子模板设置委派管理员？
     answer: >
-      委派管理仅适用于经销商和合作伙伴。 但是，有一个示例 PowerShell 脚本可帮助您将策略应用到公司或 (的) 。 有关详细信息，请参阅将 [EOP 设置应用到多个租户的示例脚本](sample-script-for-applying-eop-settings-to-multiple-tenants.md)。
+      委派管理仅适用于经销商和合作伙伴。 但是，有一个示例 PowerShell 脚本可帮助您将策略应用到公司或 (的) 。 有关详细信息，请参阅将 [EOP 设置应用到多个租户的示例脚本](/exchange/standalone-eop/sample-script-standalone-eop-settings-to-multiple-tenants)。
   - question: >
       能否阻止下级管理员修改我的策略？
     answer: >
-      错误。 Microsoft 365 当前没有此功能。
+      否。 Microsoft 365当前没有此功能。
   - question: >
       我能否获得我的所有子模板的合并报告？
-    answer: Microsoft 365 管理中心报告中未提供你管理的公司的合并报告。 但是，可以使用 [Microsoft Graph](/graph/overview)获取报告。
+    answer: 管理中心报告中未提供你管理的Microsoft 365合并报告。 但是，您可以使用 Microsoft Graph 获取[报告](/graph/overview)。

@@ -21,12 +21,12 @@ ms.custom:
 description: 管理员可以了解反垃圾邮件设置和筛选器，这些设置和筛选器有助于在 EOP Exchange Online Protection (中) 。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e6a4113925956c67e80a5239b8f9823acaf7f75b
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 52e891a86e75309dadd445736738a3f25584823e
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538311"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52624857"
 ---
 # <a name="anti-spam-protection-in-eop"></a>EOP 中的反垃圾邮件保护
 
@@ -60,7 +60,7 @@ EOP 中的反垃圾邮件设置由以下技术决定：
 - **垃圾邮件筛选 (** 内容筛选) ：EOP 使用垃圾邮件筛选裁定 **垃圾邮件**、高可信度垃圾邮件、批量电子邮件、网络钓鱼电子邮件和高可信度钓鱼电子邮件对邮件进行分类。  您可以配置要基于这些裁定采取的操作，还可以为隔离而不是传递的邮件配置最终用户通知选项。 有关详细信息，请参阅 Configure [anti-spam policies in Microsoft 365](configure-your-spam-filter-policies.md)。
 
   > [!NOTE]
-  > 默认情况下，垃圾邮件筛选配置为将标记为垃圾邮件的邮件发送到收件人的"垃圾邮件"文件夹。 但是，在 EOP 保护内部部署 Exchange 邮箱的混合环境中，您需要在本地 Exchange 组织中配置两个邮件流规则 (也称为传输规则) ，以识别添加到邮件中的 EOP 垃圾邮件头。 有关详细信息，请参阅[在混合环境中将独立 EOP 配置为向“垃圾邮件”文件夹递送垃圾邮件](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md)。
+  > 默认情况下，垃圾邮件筛选配置为将标记为垃圾邮件的邮件发送到收件人的"垃圾邮件"文件夹。 但是，在 EOP 保护内部部署 Exchange 邮箱的混合环境中，您需要在本地 Exchange 组织中配置两个邮件流规则 (也称为传输规则) ，以识别添加到邮件中的 EOP 垃圾邮件头。 有关详细信息，请参阅 [配置 EOP 以将垃圾邮件发送到混合环境中垃圾邮件文件夹](/exchange/standalone-eop/configure-eop-spam-protection-hybrid)。
 
 - **出站垃圾邮件筛选**：EOP 还会进行检查以确保您的用户不会在出站邮件内容中或超出出站邮件限制中发送垃圾邮件。 有关详细信息，请参阅 Configure [outbound spam filtering in Microsoft 365](configure-the-outbound-spam-policy.md)。
 
@@ -100,7 +100,7 @@ EOP 中的反垃圾邮件设置由以下技术决定：
 
 - **取消订阅批量电子邮件** 如果邮件是用户注册的 (新闻稿、产品公告等 ) 并且包含来自信誉良好的源的取消订阅链接，请考虑要求他们直接取消订阅。
 
-- 独立 **EOP：** 在本地 Exchange 中为 EOP 垃圾邮件筛选裁定创建邮件流规则：在 EOP 保护本地 Exchange 邮箱的独立 EOP 环境中，您需要在本地 Exchange 中配置邮件流规则 (也称为传输规则) ，以转换 EOP 垃圾邮件筛选裁定，以便垃圾邮件规则可以将邮件移动到"垃圾邮件"文件夹。 有关详细信息，请参阅[在混合环境中将独立 EOP 配置为向“垃圾邮件”文件夹递送垃圾邮件](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md)。
+- 独立 **EOP：** 在本地 Exchange 中为 EOP 垃圾邮件筛选裁定创建邮件流规则：在 EOP 保护本地 Exchange 邮箱的 EOP 环境中，您需要在本地 Exchange 中配置邮件流规则 (也称为传输规则) ，以转换 EOP 垃圾邮件筛选裁定，以便垃圾邮件规则可以将邮件移动到"垃圾邮件"文件夹。 有关详细信息，请参阅 [配置 EOP 以将垃圾邮件发送到混合环境中垃圾邮件文件夹](/exchange/standalone-eop/configure-eop-spam-protection-hybrid)。
 
 ### <a name="prevent-good-email-from-being-identified-as-spam"></a>防止将良好的电子邮件标识为垃圾邮件
 
@@ -118,7 +118,7 @@ EOP 中的反垃圾邮件设置由以下技术决定：
 
 - **验证用户是否位于发送和接收限制范围内**，如接收和发送 [](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#receiving-and-sending-limits)限制Exchange Online服务说明中所述。
 
-- **独立 EOP：使用目录同步**：如果使用独立 EOP 帮助保护本地 Exchange 组织，则应该使用目录同步将用户设置与服务同步。 执行此操作可确保 EOP 沿用用户安全发件人列表。 有关详细信息，请参阅“[使用目录同步管理邮件用户](manage-mail-users-in-eop.md#use-directory-synchronization-to-manage-mail-users)”。
+- **独立 EOP：使用目录同步**：如果使用独立 EOP 帮助保护本地 Exchange 组织，则应该使用目录同步将用户设置与服务同步。 执行此操作可确保 EOP 沿用用户安全发件人列表。 有关详细信息，请参阅“[使用目录同步管理邮件用户](/exchange/standalone-eop/manage-mail-users-in-eop#synchronize-directories-with-azure-active-directory-connect-aad-connect)”。
 
 ## <a name="anti-spam-legislation"></a>反垃圾邮件法规
 

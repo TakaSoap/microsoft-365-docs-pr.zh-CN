@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: a1229cdb-ce19-4da5-90c7-2b9b146aef0a
 description: 使用Microsoft 365自定义登录Azure Active Directory。 你可以向登录页添加插图、徽标和文本。
-ms.openlocfilehash: 9947d57e4bf35ef0a3409db58f2c663959c2dd49
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: dba75d5178f3c4a879ae2cdc9694697df45f6b8b
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51579118"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52624437"
 ---
 # <a name="add-your-company-branding-to-the-sign-in-page"></a>将公司品牌添加到登录页面
 
@@ -50,3 +50,9 @@ ms.locfileid: "51579118"
 除了登录页面，还可以自定义 Azure 中的访问面板页面。
   
 如果准备添加品牌，请浏览 Azure 内容集中的自定义选项：[在登录页和访问面板页中添加公司品牌](/azure/active-directory/fundamentals/customize-branding).
+
+## <a name="related-content"></a>相关内容
+
+[自定义Microsoft 365主题， (](customize-your-organization-theme.md)文章) \
+[设置向导和安装程序页面的区别 (](o365-setup-wizard-and-setup-page.md) 文章) \
+[为业务用户设置Microsoft 365移动设备 (](../../business/set-up-mobile-devices.md)视频) 

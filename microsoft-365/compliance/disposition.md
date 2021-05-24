@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 监控和管理当你使用处置评审时或者根据配置的设置自动删除标记为记录的项目时的内容处置。
-ms.openlocfilehash: dd03c429bf1b12a4c733c2e6800d0b71ca7a691f
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 99ab789b99385af9ad2677995606d21ece54705c
+ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52532157"
+ms.lasthandoff: 05/21/2021
+ms.locfileid: "52594069"
 ---
 # <a name="disposition-of-content"></a>内容的处置
 
@@ -30,9 +30,11 @@ ms.locfileid: "52532157"
 使用 Microsoft 365 合规中心“**记录管理**”中的“**处置**”页面来管理处置评审，并查看在保持期结束时自动删除的 [记录](records-management.md#records)的元数据。
 
 > [!NOTE]
-> 推出预览版：**多阶段处置评审**
+> 预览版：**多阶段处置评审**
 > 
 > 现在，管理员可以在保留标签中添加最多五个连续的处置评审阶段，而审阅者可以将其他用户添加到其处置评审阶段。 你还可以自定义电子邮件通知和提醒。 下面的章节提供了有关此预览版中所做的更改的详细信息。
+>
+> 要阅读发布公告，请参阅 [Microsoft 记录管理中多阶段处置公告](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/announcing-multi-stage-disposition-in-microsoft-records/ba-p/2361849)发布的博文。
 
 ## <a name="prerequisites-for-viewing-content-dispositions"></a>查看内容处置的前提条件
 
@@ -135,7 +137,7 @@ Enable-ComplianceTagStorage -RecordsManagementSecurityGroupEmail dispositionrevi
 
 如果你需要多人在保持期结束后审阅某个项目，请再次选择“**添加阶段**”，并针对所需的阶段数重复配置过程，最多五个阶段。 
 
-在处置的每个阶段，你为该阶段指定的任何用户都有权在保持期结束后对该项目执行下一个操作。这些用户还可以将其他用户添加到其处置评审阶段。
+在处置的每个阶段，你为该阶段指定的任何用户都有权在保持期结束后对该项目执行下一个操作。这些用户还可以将其他用户添加到其处置审核阶段。
 
 > [!NOTE]
 > 通过配置标签，可以将配置用于处置评审的现有保留标签升级为使用多阶段处置评审。 在标签向导中，选择“**添加阶段**”，或者编辑现有审阅者或添加新的审阅者。
@@ -152,7 +154,7 @@ Enable-ComplianceTagStorage -RecordsManagementSecurityGroupEmail dispositionrevi
 
 发送给审阅者的默认电子邮件通知示例：
 
-![项目准备好进行处置评审时包含默认文本的电子邮件通知示例](../media/disposition-review-email.png)
+![项目准备好进行处置审阅时包含默认文本的电子邮件通知示例](../media/disposition-review-email.png)
 
 另外在预览阶段，你还可以自定义发送给处置审阅者的电子邮件，以用于初始通知和提醒。
 
@@ -174,7 +176,7 @@ If you need additional information, visit the helpdesk website (https://support.
 
 ### <a name="viewing-and-disposing-of-content"></a>查看和处置内容
 
-通过电子邮件通知审阅者内容已经可以开始评审后，他们可以单击邮件中的链接，转到 Microsoft 365 合规中心内“**记录管理**”中的“**处置**”页面。 在这个页面中，审阅者可以查看每个保留标签有多少个项目正在等待处置，因为这些项目的“**类型**”显示为“**挂起的处置**”。 然后，他们选择一个保留标签并 **在新窗口中打开** 以查看带有该标签的所有内容：
+通过电子邮件通知审阅者已准备好需评审的内容，他们将单击邮件中的链接，转到 Microsoft 365 合规中心内“**记录管理**”中的“**处置**”页面。 在这个页面中，审阅者可以查看每个保留标签有多少个项目正在等待处置，“**类型**”显示为“**挂起的处置**”。 然后，他们选择一个保留标签并 **在新窗口中打开** 以查看带有该标签的所有内容：
 
 ![在新窗口中打开以进行处置评审](../media/open-in-new-window.png)
 

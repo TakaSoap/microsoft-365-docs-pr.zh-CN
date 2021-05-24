@@ -19,12 +19,12 @@ ms.collection:
 description: 什么是适用于 EOP Exchange Online Protection (和 Defender) 安全设置Office 365最佳实践？ 标准保护的当前建议是什么？ 如果要更加严格，应该使用什么？ 如果你还使用 Defender for Office 365？
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1a2f65db0934c585210827299d46737040df8efb
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 04668932747462d2636b466d87c2655d97569657
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52537891"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52624069"
 ---
 # <a name="recommended-settings-for-eop-and-microsoft-defender-for-office-365-security"></a>用于配置 EOP 和 Defender for Office 365 安全性的建议设置
 
@@ -155,7 +155,7 @@ ms.locfileid: "52537891"
 |安全功能名称|默认值|标准|Strict|评论|
 |---|:---:|:---:|:---:|---|
 |**启用反欺骗保护** <p> _EnableSpoofIntelligence_|打开 <p> `$true`|打开 <p> `$true`|打开 <p> `$true`||
-|**启用未经身份验证的发件人** <p> _EnableUnauthenticatedSender_|打开 <p> `$true`|打开 <p> `$true`|打开 <p> `$true`|向发件人 () 发件人的照片添加一Outlook问号。 有关详细信息，请参阅反网络钓鱼 [策略中的欺骗设置](set-up-anti-phishing-policies.md)。|
+|**启用未经身份验证的发件人** <p> _EnableUnauthenticatedSender_|打开 <p> `$true`|打开 <p> `$true`|打开 <p> `$true`|向发件人 () 发件人的照片添加一Outlook问号。 有关详细信息，请参阅[反钓鱼策略中的“欺骗”设置](set-up-anti-phishing-policies.md)。|
 |**如果电子邮件是由不允许欺骗你的域的人发送的** <p> _AuthenticationFailAction_|**将邮件移动到收件人的"垃圾邮件"文件夹** <p> `MoveToJmf`|**将邮件移动到收件人的"垃圾邮件"文件夹** <p> `MoveToJmf`|**隔离邮件** <p> `Quarantine`|此设置适用于欺骗性发件人，这些发件人被自动阻止，如欺骗智能见解中所示，[](learn-about-spoof-intelligence.md)或在租户允许/阻止列表中手动[阻止](tenant-allow-block-list.md)。|
 |
 
@@ -213,7 +213,7 @@ Microsoft Defender for Office 365订阅提供了其他安全优势。 有关最�
 |安全功能名称|默认值|标准|Strict|评论|
 |---|---|---|---|---|
 |**启用反欺骗保护** <p> _EnableSpoofIntelligence_|打开 <p> `$true`|打开 <p> `$true`|打开 <p> `$true`||
-|**启用未经身份验证的发件人** <p> _EnableUnauthenticatedSender_|打开 <p> `$true`|打开 <p> `$true`|打开 <p> `$true`|向发件人 () 发件人的照片添加一Outlook问号。 有关详细信息，请参阅反网络钓鱼 [策略中的欺骗设置](set-up-anti-phishing-policies.md)。|
+|**启用未经身份验证的发件人** <p> _EnableUnauthenticatedSender_|打开 <p> `$true`|打开 <p> `$true`|打开 <p> `$true`|向发件人 () 发件人的照片添加一Outlook问号。 有关详细信息，请参阅[反钓鱼策略中的“欺骗”设置](set-up-anti-phishing-policies.md)。|
 |**如果电子邮件是由不允许欺骗你的域的人发送的** <p> _AuthenticationFailAction_|**将邮件移动到收件人的"垃圾邮件"文件夹** <p> `MoveToJmf`|**将邮件移动到收件人的"垃圾邮件"文件夹** <p> `MoveToJmf`|**隔离邮件** <p> `Quarantine`|此设置适用于欺骗性发件人，这些发件人被自动阻止，如欺骗智能见解中所示，[](learn-about-spoof-intelligence.md)或在租户允许/阻止列表中手动[阻止](tenant-allow-block-list.md)。|
 |
 
@@ -322,6 +322,6 @@ Microsoft Defender for Office 365订阅提供了其他安全优势。 有关最�
 
 - 管理员和用户可以提交误报 (标记为错误) 误报 (错误电子邮件) Microsoft 进行分析。 有关详细信息，请参见[向 Microsoft 报告邮件和文件](report-junk-email-messages-to-microsoft.md)。
 
-- 使用这些链接获取有关如何设置[EOP](set-up-your-eop-service.md)服务的信息，并配置[Microsoft Defender Office 365。](defender-for-office-365.md)  不要忘记'抵御威胁中的有用[Office 365'。](protect-against-threats.md)
+- 使用这些链接获取有关如何设置[EOP](/exchange/standalone-eop/set-up-your-eop-service)服务的信息，并配置[Microsoft Defender Office 365。](defender-for-office-365.md)  不要忘记'抵御威胁中的有用[Office 365'。](protect-against-threats.md)
 
 - 有关 Windows 的安全基线，可以在此处找到：在哪里可以获取 GPO/本地选项的安全基线[？](/windows/security/threat-protection/windows-security-baselines#where-can-i-get-the-security-baselines)以及使用安全基线在 Intune 中配置 Windows 10 设备，以获得基于[Intune](/intune/protect/security-baselines)的安全性。 最后，比较适用于终结点的 Microsoft Defender Microsoft Intune安全基线之间的比较可在比较 Microsoft Defender for Endpoint 和 Windows [Intune 安全基线中获得](/windows/security/threat-protection/microsoft-defender-atp/configure-machines-security-baseline#compare-the-microsoft-defender-atp-and-the-windows-intune-security-baselines)。

@@ -16,12 +16,12 @@ f1.keywords:
 - NOCSH
 description: 数据移动是 Microsoft 将租户的服务和关联数据移动到新的数据中心地理位置时发生的后端操作。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 14563a695e5c092f9bddfbdfdcb758f90cea32c0
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: d3d44ffc1650989e5c39f5f79cb6a07065f9e9f1
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50929416"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52625253"
 ---
 # <a name="during-and-after-your-data-move"></a>数据移动期间和数据移动之后
 
@@ -102,6 +102,8 @@ ms.locfileid: "50929416"
 - 电子数据展示：在爬网选取更改之前，不会显示迁移期间更改的项目。
     
 - 数据丢失防护 (DLP) ：在爬网选取更改之前，不会对发生更改的项目强制执行策略。
+
+作为迁移的一部分，默认区域将更改，所有新内容将存储在新的默认区域。 在管理中心内首次更改 SharePoint Online 数据位置后的 90 天内，现有内容将在后台移动，不会影响你。
 
 ## <a name="microsoft-teams"></a>Microsoft Teams
 
