@@ -19,12 +19,12 @@ ms.custom:
 - Ent_Solutions
 recommendations: false
 description: 了解如何部署具有敏感数据保护的团队。
-ms.openlocfilehash: a775727882dd71a168f4049d2af6a9feb20f944c
-ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
+ms.openlocfilehash: 0590e63aa0feb5b699eca98c0056604fe09b77f5
+ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52572713"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52583648"
 ---
 # <a name="configure-teams-with-protection-for-sensitive-data"></a>配置具有敏感数据保护的团队
 
@@ -108,28 +108,18 @@ ms.locfileid: "52572713"
 - 更新 SharePoint 管理中心中网站的来宾共享设置，将默认共享链接更新为“*特定人员*”。
 - 更新网站本身的网站共享设置，防止成员共享网站。
 
-### <a name="site-guest-sharing-settings"></a>网站来宾共享设置
+### <a name="site-default-sharing-link-settings"></a>网站默认共享链接设置
 
-创建标签时选择的来宾共享设置（仅影响团队成员身份）应与关联的SharePoint 网站的来宾共享设置匹配，如下所示：
+更新网站默认共享链接类型
 
-|标签设置|SharePoint 网站设置|
-|:------------|:----------------------|
-|**允许 Office 365 组所有者将组织外部的人员添加到组** 已选中|**新来宾和现有来宾**（新团队默认值）|
-|**允许 Office 365 组所有者将组织外部的人员添加到组** 未选中|**仅组织内部人员**|
-
-更新网站设置
 1. 打开 [SharePoint 管理中心](https://admin.microsoft.com/sharepoint)。
 2. 在“**网站**”下，单击“**活动的网站**”。
 3. 单击与团队关联的网站。
 4. 在“**策略**”选项卡的“**外部共享**”下，单击“**编辑**”。
-5. 如果在创建敏感标签时允许来宾共享，请确保选定“**新来宾和现有来宾**”。 如果创建标签时不允许共享，请选择“**仅限组织中的人员**”。
-6. 在“默认共享链接类型”下，清除“**与组织级别设置相同**”复选框，然后选择“**特定人员(仅用户指定的人员)**”。
-7. 单击“**保存**”。
+5. 在“默认共享链接类型”下，清除“**与组织级别设置相同**”复选框，然后选择“**特定人员(仅用户指定的人员)**”。
+6. 单击“**保存**”。
 
-如果要将在团队创建过程中编制脚本，可使用含有以下参数的 [Set-sposite](/powershell/module/sharepoint-online/set-sposite)：
-
-- `-SharingCapability Disabled` 用于禁用来宾共享（默认启用）
-- `-DefaultSharingLinkType Internal` 用于更改“*指定人员*”的默认共享链接
+若要将脚本作为团队创建过程的一部分进行编写，可使用 [Set-SPOSite](/powershell/module/sharepoint-online/set-sposite) 和 `-DefaultSharingLinkType Direct` 参数，将默认共享链接更改为 *特定人员*。
 
 #### <a name="private-channels"></a>专用频道
 

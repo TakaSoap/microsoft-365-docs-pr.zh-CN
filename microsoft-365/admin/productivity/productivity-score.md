@@ -18,13 +18,13 @@ ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 - MOE150
-description: Microsoft 生产力分数概述。
-ms.openlocfilehash: 1d5e163e6ec8a394065c09e51879582d101a75bf
-ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
+description: 了解 Microsoft 生产力分数如何反映人员和技术体验度量，并与类似规模的组织进行比较。
+ms.openlocfilehash: ded8b3ee6cbe6df308a4e7388107ea394debe020
+ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52345234"
+ms.lasthandoff: 05/21/2021
+ms.locfileid: "52593837"
 ---
 # <a name="microsoft-productivity-score"></a>Microsoft 生产力分数 
 
@@ -44,35 +44,9 @@ ms.locfileid: "52345234"
 
 - **技术体验：** 你组织的工作效率取决于可靠、性能良好的技术以及对 Microsoft 365 的高效使用。 [终结点分析](https://aka.ms/endpointanalytics) 可帮助你了解硬件和软件的性能和运行状况问题如何影响你的组织。 Microsoft 365 应用程序健康状况可帮助你了解组织中的设备是否在推荐渠道上运行 Microsoft 365 应用程序。
 
+## <a name="before-you-begin"></a>准备工作
+
 有关概述和先决条件的详细信息，请参阅[什么是终结点分析](/mem/analytics/overview)。 若要了解有关 Microsoft 365 网络连接见解的详细信息，请参阅 [网络连接概述](../../enterprise/microsoft-365-networking-overview.md)。
-  
-
-## <a name="how-the-score-is-calculated"></a>计算分数的方式
-
-生产力分数是根据人员和技术体验类别的总分数计算出的。 每个类别的权重均等，共计 100 分。 最高可能的生产力分数为 800。
-
-### <a name="score-categories"></a>分数类别 
-
-- 沟通（100 分）
-- 会议（100 分）
-- 内容协作（100 分）
-- 团队合作（100 分）
-- 移动性（100 分）
-- 终结点分析（100 分）
-- 网络连接失败（100 分）
-- Microsoft 365 应用版运行状况（100 分）
-- **总共可能 = 800 分**
- 
-在每个得分类别中，我们都会量化你的组织在数字化转型过程中如何使用 Microsoft 365 的关键指标。 我们提供有关关键活动的 28 天和 180 天视图。 我们还提供了不计入分数但对于帮助你确定可解决的基本的使用统计和配置非常重要的支持性指标。
-
-### <a name="products-included-in-productivity-score"></a>生产力分数中包含的产品 
-
-生产力分数包括 Exchange、SharePoint、OneDrive、Teams、Word、Excel、PowerPoint、OneNote、Outlook、Yammer 和 Skype 中的数据。
-
-你的组织的分数会每天更新，反映最近 28 天（包括当天）完成的用户操作。
-
-
-## <a name="prerequisites"></a>先决条件 
 
 要获取人员体验数据，需要 Microsoft 365 商业版或 Office 365 企业版订阅。 要获取租户的终结点分析数据，需要将 Microsoft Intune 添加到你的订阅中。 Intune 通过管理设备和应用来帮助保护组织数据。 拥有 Intune 后，可在 Intune 体验内启用终结点分析。 若要了解关于 Microsoft Intune 的详细信息，请参阅 [Microsoft Intune 文档](/mem/intune/)。 
 
@@ -98,6 +72,30 @@ Microsoft 生产力分数基于角色的访问控制模型能够帮助组织使�
 Microsoft 致力于保护个人隐私。 此[隐私文件](privacy.md)解释了我们作为组织的 IT 管理员为你提供的控制措施，以确保信息的可操作性，同时不会损害你对 Microsoft 的信任。
 
 可在 Microsoft 365 管理员主页的“**报告** > **生产力分数**”下访问该体验。
+  
+## <a name="how-the-score-is-calculated"></a>计算分数的方式
+
+生产力分数是根据人员和技术体验类别的总分数计算出的。 每个类别的权重均等，共计 100 分。 最高可能的生产力分数为 800。
+
+### <a name="score-categories"></a>分数类别 
+
+- 沟通（100 分）
+- 会议（100 分）
+- 内容协作（100 分）
+- 团队合作（100 分）
+- 移动性（100 分）
+- 终结点分析（100 分）
+- 网络连接失败（100 分）
+- Microsoft 365 应用版运行状况（100 分）
+- **总共可能 = 800 分**
+ 
+在每个得分类别中，我们都会量化你的组织在数字化转型过程中如何使用 Microsoft 365 的关键指标。 我们提供有关关键活动的 28 天和 180 天视图。 我们还提供了不计入分数但对于帮助你确定可解决的基本的使用统计和配置非常重要的支持性指标。
+
+### <a name="products-included-in-productivity-score"></a>生产力分数中包含的产品 
+
+生产力分数包括 Exchange、SharePoint、OneDrive、Teams、Word、Excel、PowerPoint、OneNote、Outlook、Yammer 和 Skype 中的数据。
+
+你的组织的分数会每天更新，反映最近 28 天（包括当天）完成的用户操作。
 
 ## <a name="interpreting-your-organizations-productivity-score"></a>解读你的组织的生产力分数 
 
@@ -161,6 +159,6 @@ Microsoft 致力于保护个人隐私。 此[隐私文件](privacy.md)解释了�
 
 ## <a name="related-content"></a>相关内容
 
-[使用报告监视 Microsoft 365 活动](/microsoft-365/admin/activity-reports/activity-reports)（文章）\
-[启用 Microsoft 365 使用情况分析](/microsoft-365/admin/usage-analytics/enable-usage-analytics)（文章）\
-[Microsoft 365 管理中心概述](/microsoft-365/business-video/admin-center-overview)（视频）
+[使用报告监视 Microsoft 365 活动](../../admin/activity-reports/activity-reports.md)（文章）\
+[启用 Microsoft 365 使用情况分析](../../admin/usage-analytics/enable-usage-analytics.md)（文章）\
+[Microsoft 365 管理中心概述](../../business-video/admin-center-overview.md)（视频）

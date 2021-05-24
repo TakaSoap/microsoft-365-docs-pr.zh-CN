@@ -21,7 +21,7 @@ ms.custom:
 - manage_licenses
 - commerce_licensing
 search.appverid: MET150
-description: 分配许可证取决于是要向特定用户分配产品许可证还是向特定产品分配用户许可证。
+description: 许可证分配取决于是向特定用户分配产品许可证，还是向特定产品分配用户许可证。
 ms.date: 04/26/2021
 ms.openlocfilehash: 707c1c952aa737f0aa91d886e9fa304eabe26321
 ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad

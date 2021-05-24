@@ -22,7 +22,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: fb5ac074-e203-4e1f-9843-b9d1a3e03297
-description: '了解 Microsoft 365 全局管理员可以如何更改用户的电子邮件地址和在名称更改时显示名称。 '
+description: '了解 Microsoft 365 全局管理员可以如何更改用户的电子邮件地址以及在名称更改时更改显示名称。 '
 ms.openlocfilehash: 2614e0ae53e5ff1cf08ded384e7470cc5967e682
 ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT

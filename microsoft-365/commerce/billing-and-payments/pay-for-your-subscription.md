@@ -14,7 +14,7 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 search.appverid: MET150
-description: 使用信用卡、借记卡或银行账户支付 Microsoft 365 商业版订阅费用，或某些情况下，使用支票支付。
+description: 使用信用卡、借记卡或银行账户支付 Microsoft 365 商业版订阅费用，或在某些情况下，使用发票支付。
 ms.custom:
 - okr_SMB
 - fwlink 808700 for SEPA UI glink 906 for older uI

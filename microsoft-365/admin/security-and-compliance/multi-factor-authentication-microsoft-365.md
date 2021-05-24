@@ -22,13 +22,13 @@ search.appverid:
 - MOE150
 ms.assetid: 043807b2-21db-4d5c-b430-c8a6dee0e6ba
 ROBOTS: NOINDEX, NOFOLLOW
-description: 了解企业中的多重Microsoft 365。
-ms.openlocfilehash: 080251efa7d7d3bda6ad89e95960e43dd38d076d
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+description: MFA (多重身份验证) 密码（应该很强）和其他验证方法。
+ms.openlocfilehash: 84d26d0a9908e51ce734e71961d4643a2df3471b
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51050662"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52623685"
 ---
 # <a name="multi-factor-authentication-for-microsoft-365"></a>适用于 Microsoft 365 的 Multi-Factor Authentication
 
@@ -127,7 +127,7 @@ ms.locfileid: "51050662"
 
 ### <a name="azure-ad-identity-protection"></a>Azure AD Identity Protection
 
-借助 Azure AD Identity Protection，你可以创建其他条件访问策略，要求在登录风险中等或较高时[进行 MFA。](../../security/defender-365-security/identity-access-policies.md#require-mfa-based-on-sign-in-risk)
+借助 Azure AD Identity Protection，你可以创建其他条件访问策略，要求在登录风险中等或较高时[进行 MFA。](../../security/office-365-security/identity-access-policies.md#require-mfa-based-on-sign-in-risk)
 
 可以将 Azure AD Identity Protection 和基于风险的条件访问策略与：
 
@@ -174,8 +174,7 @@ ms.locfileid: "51050662"
 
 [为组织设置 MFA Microsoft 365](set-up-multi-factor-authentication.md)
 
-## <a name="related-topics"></a>相关主题
+## <a name="related-content"></a>相关内容
 
-[i视频：开启多重身份验证](../../business-video/turn-on-mfa.md)
-
-[i视频：为手机开启多重身份验证](../../business-video/set-up-mfa.md)
+[打开多因素身份验证](../../business-video/turn-on-mfa.md) (视频) \
+[打开手机的多重身份验证](../../business-video/set-up-mfa.md)（视频）

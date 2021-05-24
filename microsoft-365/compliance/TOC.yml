@@ -245,6 +245,10 @@
               href: dlp-chrome-learn-about.md
             - name: 了解数据丢失防护警报仪表板
               href: dlp-alerts-dashboard-learn.md
+        - name: DLP 计划
+          items:
+            - name: 数据丢失预防计划
+              href: dlp-overview-plan-for-dlp.md
         - name: 开始使用 DLP
           items:
             - name: 开始使用默认 DLP 策略

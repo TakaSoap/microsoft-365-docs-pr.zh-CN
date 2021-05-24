@@ -20,13 +20,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 9fa2539a-2211-41fd-85a0-bc37b9619ca4
-description: 了解如何加强组织对密码攻击的防护，学习应如何禁用常见密码并实现基于风险的多重身份验证。
-ms.openlocfilehash: d3f86a6e85ab2f8e469a57ea98a661e4cc453673
-ms.sourcegitcommit: 9063c7a50a1d7dd6d2e1ca44f53d3c26f21f4ae8
+description: 加强组织对密码攻击的防护，禁用常见密码并启用基于风险的多重身份验证。
+ms.openlocfilehash: f2b9b9188a6f05bbcdae45dcc22d401e1eb6f1a8
+ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "52073861"
+ms.lasthandoff: 05/21/2021
+ms.locfileid: "52593905"
 ---
 # <a name="password-policy-recommendations"></a>密码策略建议
 
@@ -74,7 +74,7 @@ ms.locfileid: "52073861"
 
 ### <a name="password-guidance-for-your-users"></a>用户密码准则
 
-下面是针对组织内部用户的一些密码准则。 请确保使你的用户了解这些建议并在组织级别上强制实施所建议的密码策略。
+下面是针对组织内部用户的一些密码准则。请确保使你的用户了解这些建议并在组织级别上强制实施所建议的密码策略。
   
 - 不要使用你在任何其他网站上所用的相同或相似密码
 

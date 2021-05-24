@@ -212,7 +212,7 @@ Set-SPOSite -Identity https://contoso.sharepoint.com -DisableCompanyWideSharingL
 
 Azure Active Directory 条件访问提供的选项可根据网络位置、设备运行状况、登录风险和其他因素限制或防止与人员共享。 查看[什么是条件访问？](/azure/active-directory/conditional-access/overview)
 
-SharePoint 提供与 Azure AD 条件访问的直接集成，适用于未托管的设备和网络位置。有关详细信息，请参阅以下参考：
+SharePoint 提供与 Azure AD 条件访问直接集成服务，适用于未托管的设备和网络位置。有关详细信息，请参阅以下参考：
 
 - [控制来自非托管设备的访问](/sharepoint/control-access-from-unmanaged-devices)
 - [根据网络位置控制对 SharePoint 和 OneDrive 数据的访问](/sharepoint/control-access-based-on-network-location)

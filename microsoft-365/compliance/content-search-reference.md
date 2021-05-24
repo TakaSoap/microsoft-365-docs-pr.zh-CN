@@ -33,7 +33,7 @@ ms.locfileid: "52538479"
 
 ## <a name="content-search-limits"></a>内容搜索限制
 
-有关适用于内容搜索的限制说明，请参阅 [内容搜索限制](limits-for-content-search.md)。
+有关适用于内容搜索的限制说明，请参阅 [内容搜索的限制](limits-for-content-search.md)。
   
 ## <a name="building-a-search-query"></a>构建搜索查询
 

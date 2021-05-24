@@ -19,7 +19,7 @@ ms.custom:
 - AdminSurgePortfolio
 - commerce_billing
 search.appverid: MET150
-description: 使用现有付款方式，或在 Microsoft 365 管理中心添加新的付款方式，从 Microsoft 购买企业产品或服务。
+description: 使用现有付款方式，或在 Microsoft 365 管理中心添加新的付款方式，购买 Microsoft 的业务产品或服务。
 ms.date: 04/02/2021
 ms.openlocfilehash: bda7eca29b92cdf131c6d3f5a6069ea2be77f6fa
 ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad

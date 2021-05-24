@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: 了解如何联系你的国家/地区或地区的支持人员。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 58cd84899c2fcf0d16c54f939da40be0ac5703cb
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 7df4e9f2a9827289ab0bd85c9696e03aac9e3bb3
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52295983"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52623629"
 ---
 # <a name="contact-support-for-kenya"></a>联系肯尼亚支持人员
 
@@ -26,9 +26,9 @@ ms.locfileid: "52295983"
 ## <a name="phone-number"></a>电话号码
 020 286 8800
 
-选择选项 9
+按 2 for business
 
-输入代码 7704
+按 1 Microsoft 365
 
 ## <a name="hours"></a>工作时间
 ### <a name="billing-support"></a>计费支持：

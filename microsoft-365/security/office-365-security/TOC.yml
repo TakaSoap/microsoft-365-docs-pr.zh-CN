@@ -164,6 +164,8 @@
           href: attack-simulation-training-insights.md
         - name: 攻击模拟培训部署注意事项和常见问题解答
           href: attack-simulation-training-faq.md
+        - name: 为第三方网络钓鱼模拟和 SecOps 邮箱配置送达
+          href: configure-advanced-delivery.md
         - name: 用于配置 EOP 和 Defender for Office 365 安全性的建议设置
           href: recommended-settings-for-eop-and-office365.md
         - name: 配置 EOP 的最佳做法

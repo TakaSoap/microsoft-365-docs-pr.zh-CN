@@ -23,13 +23,13 @@ search.appverid:
 - BSA160
 ms.assetid: 854b6b2b-0255-4089-8019-b765cff70377
 ROBOTS: NOINDEX
-description: 了解有关域及其关联的 DNS 记录，帮助你管理域。
-ms.openlocfilehash: f8d8171e306a0206facec1621bf2b1a9f8085757
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+description: 域名系统将计算机主机名映射到 IP 地址，了解 DNS 和域注册机构基本信息可帮助管理域。
+ms.openlocfilehash: f9982ad55652eac9faf33986bb1481e29897a48e
+ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50915658"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52582940"
 ---
 # <a name="dns-basics"></a>DNS 基础
 
@@ -78,8 +78,8 @@ ms.locfileid: "50915658"
 |**NS（名称服务器）记录**|**标识属于域的“权威名称服务器”的名称服务器。 当你更改域的名称服务器时，你将更改管理 DNS 记录的位置以及 DNS 系统查找邮件服务器等相关信息的位置。 Microsoft 有其自己的名称服务器，或者你也可以一直使用你的域已设置好的名称服务器。**|
 |:-----|:-----|
 |记录（地址记录）  <br/> |让一个域名和一个 IP 地址产生关联。  <br/> |
-|CNAME（别名或规范名称）记录  <br/> |将一个域重定向到 DNS 系统中的另一个域。 当名称服务器查找一个域，且找到一个 CNAME 记录时，它会用 CNAME 替换第一个域名，然后查找新的名称。  <br/> |
-|MX（邮件交换器）记录  <br/> |指向应发送您的电子邮件的位置。 它还具有一个优先级字段，以便您可以按优先顺序向不同服务器发送邮件。  <br/> |
+|CNAME（别名或规范名称）记录  <br/> |将一个域重定向到 DNS 系统中的另一个域。当名称服务器查找一个域，且找到一个 CNAME 记录时，它会用 CNAME 替换第一个域名，然后查找新的名称。  <br/> |
+|MX（邮件交换器）记录  <br/> |指向应发送您的电子邮件的位置。它还具有一个优先级字段，以便您可以按优先顺序向不同服务器发送邮件。  <br/> |
 |SPF（发送方策略框架）记录  <br/> |有助于防止电子邮件欺诈和网络钓鱼的 TXT 记录。  <br/> |
 |SRV（服务）记录  <br/> |由 Skype for Business Online 和 Exchange Online 用来协调 Microsoft 服务间的信息流。 例如在 Outlook Web App 中查看联机状态、使用 Skype for Business Online、Skype 或其他即使消息工具与其他公司的人员交流，SRV 记录必不可少。  <br/> |
 |TTL（生存时间）  <br/> |服务器查找更新版本之前名称服务器保留 DNS 记录的时间量。  <br/> |
@@ -102,7 +102,7 @@ DNS 记录就是域信息的数据库。 记录及其数值保存在区域文件
   
  *当将你的电子邮件更改为 Microsoft 365 时，在下一步中更新的域的 MX 记录，那么发送到该域的所有电子邮件都将开始传送到 Microsoft 365。*  如果其他用户的电子邮件使用你的域，必须为每个这些用户设置 Microsoft 365 邮箱。 
   
-听起来很复杂？  可能是，我们将引导您完成 Microsoft 域设置中的每个步骤。
+听起来很复杂？ 可能是，我们将引导你完成 Microsoft 域设置中的每个步骤。
   
 ### <a name="dns-tells-the-internet-where-to-look-for-websites-too"></a>DNS 告知 Internet 在哪里查找网站
 
@@ -186,7 +186,7 @@ DNS 记录就是域信息的数据库。 记录及其数值保存在区域文件
 
 ## <a name="the-dns-records-required-for-microsoft-365"></a>Microsoft 365 所需的 DNS 记录
 
-对于 Microsoft 365，需要几个 DNS 记录才能使用你的域。 除了设置您的域的 MX 记录来将电子邮件发送到 Microsoft 365，还有一些记录可以帮助您完成以下任务：确保 Outlook 可以自动连接到正确的 Exchange 服务器，设置即时消息，帮助防止垃圾电子邮件等。
+Microsoft 365 需要几个 DNS 记录才能使用你的域。除了设置你的域的 MX 记录来将电子邮件发送到 Microsoft 365，还有一些记录可以帮助你完成以下任务：确保 Outlook 可以自动连接到正确的 Exchange 服务器，设置即时消息，帮助防止垃圾电子邮件等。
   
 可[查找值列表](information-for-dns-records.md)来设置域。 它们包含在 Microsoft 365 管理中心中。 
   
@@ -198,3 +198,11 @@ DNS 记录就是域信息的数据库。 记录及其数值保存在区域文件
   
 - 不确定域的注册位置？ [获取查找域名注册机构的帮助。](find-your-domain-registrar.md)
 - 了解[为什么您必须完成向导步骤操作](../setup/add-domain.md)，然后才能将您的域与 Microsoft 365 配合使用。
+
+## <a name="related-content"></a>相关内容
+
+[域常见问题](../setup/domains-faq.yml) （文章）
+
+[查找并修复添加域或 DNS 记录之后出现的问题](find-and-fix-issues.md)（文章）
+
+[管理域](index.yml)（链接页）
