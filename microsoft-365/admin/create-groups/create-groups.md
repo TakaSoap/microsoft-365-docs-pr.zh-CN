@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 74a1ef8b-3844-4d08-9980-9f8f7a36000f
 description: 了解如何创建和删除Microsoft 365组、添加和删除组的成员，以及自定义组的工作方式。
-ms.openlocfilehash: b3fb637867229489a3e3abe93373cc46fbce365f
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: b8cbd194825ef114fa8e4ce999355248a61e7830
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52241720"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635578"
 ---
 # <a name="create-a-group-in-the-microsoft-365-admin-center"></a>在管理中心Microsoft 365组
   
@@ -80,14 +80,12 @@ ms.locfileid: "52241720"
   
 从组邮箱中删除电子邮件时，不会从任何组成员的个人邮箱中删除该电子邮件。
 
-## <a name="next-step-manage-your-group"></a>下一步：管理组
+## <a name="next-steps"></a>后续步骤
 
 创建新组并添加成员后，可以进一步配置组，例如编辑组名称或说明、更改所有者或成员，以及指定外部发件人是否可以向该组发送电子邮件以及是否将组对话的副本发送给成员。 请参阅[管理Microsoft 365组](manage-groups.md)了解相关信息。
 
 ## <a name="related-content"></a>相关内容
 
-[管理对组Microsoft 365来宾 (](https://support.microsoft.com/office/bfc7a840-868f-4fd6-a390-f347bf51aff6)文章) 
-
-[选择创建组时Microsoft 365域 (](../../solutions/choose-domain-to-create-groups.md)文章) 
-
+[管理来宾对组Microsoft 365访问 (](https://support.microsoft.com/office/bfc7a840-868f-4fd6-a390-f347bf51aff6)文章) \
+[选择创建组时Microsoft 365域 (](../../solutions/choose-domain-to-create-groups.md)文章) \
 [将通讯组列表Microsoft 365文章 (](../manage/upgrade-distribution-lists.md)组) 

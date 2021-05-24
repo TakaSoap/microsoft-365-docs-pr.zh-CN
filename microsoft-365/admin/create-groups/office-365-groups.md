@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 通过Microsoft 365组，可以通过向一组人员提供对共享资源集合的访问权限Microsoft 365跨组织推动团队合作。
-ms.openlocfilehash: bfcd2d27bc1d63fcc8b306267efe21c3f9564522
-ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
+ms.openlocfilehash: f940872a3e4ba2aeeb62247c2898d5a4c0dec85f
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52582736"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635746"
 ---
 # <a name="overview-of-microsoft-365-groups-for-administrators"></a>面向管理员的 Microsoft 365 组概述
 
@@ -119,12 +119,8 @@ Microsoft 365组使用Azure Active Directory。 你获取的组功能取决于Az
 
 ## <a name="related-content"></a>相关内容
 
-[了解Microsoft 365组](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2) (文章) 
-
-[将通讯组列表Microsoft 365文章](../manage/upgrade-distribution-lists.md) (组) 
-
-[使用 PowerShell Microsoft 365组](../../enterprise/manage-microsoft-365-groups-with-powershell.md) (文章) 
-
-[SharePoint Online 限制](/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits) (文章) 
-
+[Learn about Microsoft 365 Groups](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2) (article) \
+[Upgrade distribution lists to Microsoft 365 Groups](../manage/upgrade-distribution-lists.md) (article) \
+[使用 PowerShell Microsoft 365管理](../../enterprise/manage-microsoft-365-groups-with-powershell.md)组 (文章) \
+[SharePoint Online 限制](/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits) (文章) \
 [在 Microsoft Stream 中组织组](/stream/groups-channels-organization) 和频道 (文章) 

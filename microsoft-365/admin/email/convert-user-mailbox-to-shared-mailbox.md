@@ -20,16 +20,18 @@ search.appverid:
 - MOE150
 ms.assetid: 2e122487-e1f5-4f26-ba41-5689249d93ba
 description: '了解如何将专用邮箱转换为多个人员（而不是一个人）可以访问的共享邮箱。 '
-ms.openlocfilehash: 73e2bad40037e1343f4e08c07ca6b26df16b1a30
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 0beb85e5a69b72bcd244cd654c399e91ded06ba7
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52537615"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635470"
 ---
 # <a name="convert-a-user-mailbox-to-a-shared-mailbox"></a>将用户邮箱转换为共享邮箱
 
 将用户的邮箱转换为共享邮箱时，将保留所有现有电子邮件和日历。 现在，它才在一个共享邮箱中，多个人员将能够访问它，而不是一个人。 稍后，可以将共享邮箱转换回专用 (用户) 邮箱。
+
+## <a name="before-you-begin"></a>准备工作
 
 **以下是您需要了解的一些非常重要的事情：**
 
@@ -59,7 +61,6 @@ ms.locfileid: "52537615"
 > [!NOTE]
 > 共享邮箱不需要单独的许可证。 但是，如果你想要启用就地存档或将就地保留或诉讼保留置于共享邮箱，则必须向邮箱分配带有 Exchange Online Archiving 的 Exchange Online 计划 1 或 Exchange Online 计划 2 许可证。
 
-
 ## <a name="convert-the-mailbox-of-a-deleted-user"></a>转换已删除用户的邮箱
 
 假设你已删除用户帐户，现在想要将其旧邮箱转换为共享邮箱。 下面是你需要执行哪些工作：
@@ -77,7 +78,6 @@ ms.locfileid: "52537615"
 6. 完成后，可以从用户邮箱中删除许可证。 不要删除用户的旧邮箱。 共享邮箱需要它作为定位标记。
     
 7. 将成员添加到共享邮箱。
-
 
 ## <a name="convert-a-shared-mailbox-back-to-a-users-private-mailbox"></a>将共享邮箱转换回用户的专用 () 邮箱
 
@@ -104,12 +104,8 @@ ms.locfileid: "52537615"
 
 ## <a name="related-content"></a>相关内容
 
-[关于共享邮箱 (](about-shared-mailboxes.md) 文章) 
-
-[创建共享邮箱 (](create-a-shared-mailbox.md) 文章) 
-
-[配置共享邮箱 (](configure-a-shared-mailbox.md) 文章) 
-
-[从共享邮箱中删除许可证 (](remove-license-from-shared-mailbox.md) 文章) 
-
-[解决共享邮箱问题 (](resolve-issues-with-shared-mailboxes.md) 本文) 
+[关于共享邮箱 (](about-shared-mailboxes.md) 文章) \
+[Create a shared mailbox (](create-a-shared-mailbox.md) article) \
+[配置共享邮箱 (](configure-a-shared-mailbox.md) 文章) \
+[从共享邮箱中删除许可证 (](remove-license-from-shared-mailbox.md) 文章) \
+[解决共享邮箱相关问题](resolve-issues-with-shared-mailboxes.md)（文章）

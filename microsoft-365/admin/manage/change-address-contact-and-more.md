@@ -19,12 +19,12 @@ ms.custom:
 search.appverid: MET150
 description: 更改组织配置文件，如组织名称、地址、电话、技术联系人和电子邮件。
 ms.date: 03/30/2021
-ms.openlocfilehash: 9fc985f640f1544bf30ea1a6ccdd5c1ca19aa81f
-ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
+ms.openlocfilehash: 2646d2d83c72caa8a56f6658f005812f087101cb
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52572125"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635398"
 ---
 # <a name="change-your-organizations-address-technical-contact-and-more"></a>更改组织的地址、技术联系人和其他信息
   
@@ -81,8 +81,6 @@ ms.locfileid: "52572125"
 
 ## <a name="related-content"></a>相关内容
 
-[本文介绍的不同地址 (](https://support.microsoft.com/office/ccba89cb-141c-4a36-8c56-6d16a8556d2e) 发送电子邮件) 
-
-[更改用户名称和电子邮件地址 (](../add-users/change-a-user-name-and-email-address.md) 文章) 
-
+[从不同地址发送电子邮件， (](https://support.microsoft.com/office/ccba89cb-141c-4a36-8c56-6d16a8556d2e) 文章) \
+[Change a user name and email address (](../add-users/change-a-user-name-and-email-address.md) article) \
 [在 Microsoft 365 中配置电子邮件转发](../email/configure-email-forwarding.md)（文章）

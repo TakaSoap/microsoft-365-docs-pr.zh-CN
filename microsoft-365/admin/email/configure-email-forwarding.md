@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: ab5eb117-0f22-4fa7-a662-3a6bdb0add74
 description: 电子邮件转发允许您将发送到用户邮箱Microsoft 365电子邮件转发到组织内部或外部的另一个邮箱。
-ms.openlocfilehash: 7389651cbbec5316c307cd10b331fda6812c1cd4
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: eb72204211a8eff929c024fbcede66dfe1f4b879
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52537627"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635482"
 ---
 # <a name="configure-email-forwarding-in-microsoft-365"></a>配置电子邮件转发Microsoft 365
 
@@ -101,9 +101,7 @@ ms.locfileid: "52537627"
 
 ## <a name="related-content"></a>相关内容 
 
-[创建共享邮箱 (](../email/create-a-shared-mailbox.md) 文章) 
-
-[本文介绍的不同地址 (](https://support.microsoft.com/office/ccba89cb-141c-4a36-8c56-6d16a8556d2e) 发送电子邮件) 
-
+[Create a shared mailbox (](../email/create-a-shared-mailbox.md) article) \
+[从不同地址发送电子邮件， (](https://support.microsoft.com/office/ccba89cb-141c-4a36-8c56-6d16a8556d2e) 文章) \
 [更改用户名称和电子邮件地址 (](../add-users/change-a-user-name-and-email-address.md) 文章) 
 

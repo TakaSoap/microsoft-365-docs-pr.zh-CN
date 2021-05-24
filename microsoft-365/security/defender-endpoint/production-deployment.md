@@ -19,12 +19,12 @@ ms.collection:
 - m365solution-scenario
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 7abf1c9e4115c928ae581da3789270fd8ed036d3
-ms.sourcegitcommit: 7b8104015a76e02bc215e1cf08069979c70650ae
+ms.openlocfilehash: 6b49565c45c1f38d0d2ce71b097af079782ba4de
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51476297"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52636190"
 ---
 # <a name="set-up-microsoft-defender-for-endpoint-deployment"></a>设置 Microsoft Defender for Endpoint 部署
 
@@ -82,36 +82,9 @@ ms.locfileid: "51476297"
 
 
 ## <a name="tenant-configuration"></a>租户配置
+载入 Microsoft Defender for Endpoint 非常简单。 从导航菜单中，选择终结点部分下的任何项目，或任何 Microsoft 365 Defender 功能（如事件、搜寻、操作中心或威胁分析）以启动载入过程。
 
-首次Microsoft Defender 安全中心时，向导将指导你完成一些初始步骤。 在设置向导结束时，将创建一个 Defender for Endpoint 的专用云实例。 最简单的方法是从客户端设备Windows 10这些步骤。
-
-1. 在 Web 浏览器中，导航到 <https://securitycenter.windows.com> 。
-
-    ![为 Microsoft Defender for Endpoint 设置权限的图像](images/atp-setup-permissions-wdatp-portal.png)
-
-2. 如果通过试用版许可证，请转到"试用 <https://signup.microsoft.com/Signup?OfferId=6033e4b5-c320-4008-a936-909c2825d83c&dl=WIN_DEF_ATP&pc=xxxxxxx-xxxxxx-xxx-x> () 
-
-    授权步骤完成后，将显示 **欢迎** 屏幕。
-3. 完成授权步骤。
-
-    ![门户设置的欢迎屏幕图像](images/welcome1.png)
-
-4. 设置首选项。
-
-   **数据存储位置** - 正确设置这一点非常重要。 确定客户希望主要托管在何处：美国、欧盟或英国。 设置后，你无法更改位置，并且 Microsoft 不会从指定的地理位置传输数据。 
-
-    **数据保留** - 默认值为六个月。
-
-    **启用预览功能** - 默认为打开，可在以后更改。
-
-    ![设置中的地理位置图像](images/setup-preferences.png)
-
-5. 选择“**下一步**”。
-
-     ![最终首选项设置的图像](images/setup-preferences2.png)
-
-6. 选择"**继续"。**
-
+从 Web 浏览器中，导航到Microsoft 365[安全中心。](https://security.microsoft.com)
 
 ## <a name="network-configuration"></a>网络配置
 如果组织不要求终结点使用代理访问 Internet，请跳过此部分。

@@ -20,22 +20,22 @@ search.appverid:
 - MOE150
 ms.assetid: 9db96e9f-a622-4d5d-b134-09dcace55b6a
 description: 了解如何使用 Power BI 中的"使用率分析"Microsoft 365开始收集租户Power BI。
-ms.openlocfilehash: 329878365aa07da4615a849ad04cde7f75a07872
-ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
+ms.openlocfilehash: 01923887b4af143d1490e14d59a6174700e6ae93
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/21/2021
-ms.locfileid: "52593365"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635410"
 ---
 # <a name="enable-microsoft-365-usage-analytics"></a>启用 Microsoft 365 使用情况分析
 
 Microsoft 365使用情况分析尚不可用于美国政府Microsoft 365 Community。
   
-## <a name="steps-to-enable-microsoft-365-usage-analytics"></a>启用 Microsoft 365 使用情况分析的步骤
+## <a name="before-you-begin"></a>准备工作
 
 若要开始使用Microsoft 365分析，必须先在 Microsoft 365 管理中心提供数据，然后在 Power BI 中启动模板应用。
   
-### <a name="get-power-bi"></a>获取 Power BI
+## <a name="get-power-bi"></a>获取 Power BI
 
 如果尚未注册Power BI，可以[注册Power BI Pro。](https://go.microsoft.com/fwlink/p/?linkid=845347) 选择 **"免费试用**"以注册试用版，**或选择"** 立即购买"Power BI Pro。
   
@@ -47,7 +47,7 @@ Microsoft 365使用情况分析尚不可用于美国政府Microsoft 365 Communit
 
 若要共享数据，你和共享数据的人都需要 Power BI Pro 许可证，或者内容需要Power BI[工作区中](/power-bi/service-premium-what-is)。 
   
-### <a name="enable-the-template-app"></a>启用模板应用
+## <a name="enable-the-template-app"></a>启用模板应用
 
 若要启用模板应用，你必须是全局 **管理员**。
   
@@ -61,7 +61,7 @@ Microsoft 365使用情况分析尚不可用于美国政府Microsoft 365 Communit
   
 数据收集过程将在 2 到 48 小时内完成，具体取决于租户的大小。 数据收集 **完成后Power BI"** 转到 ("按钮) 不再灰显。 
     
-### <a name="start-the-template-app"></a>启动模板应用
+## <a name="start-the-template-app"></a>启动模板应用
 
 若要启动模板应用，你必须是全局管理员、报告读取者、Exchange管理员、Skype for Business **管理员** SharePoint **管理员**。 
   
@@ -99,8 +99,6 @@ Microsoft 365使用情况分析尚不可用于美国政府Microsoft 365 Communit
 
 ## <a name="related-content"></a>相关内容
 
-[关于使用情况分析](usage-analytics.md) (文章) 
-
-[获取使用情况分析的最新版本 (](get-the-latest-version-of-usage-analytics.md) 文章) 
-
+[关于使用情况分析](usage-analytics.md) (文章) \
+[获取使用情况分析的最新版本](get-the-latest-version-of-usage-analytics.md) (文章) \
 [导航和利用 Microsoft 365 使用情况分析 (](navigate-and-utilize-reports.md)中的) 

@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: de2da300-dbb6-4725-bb12-b85a9d296e75
 description: 保护你的业务电子邮件和数据免受网络威胁，包括勒索软件、网络钓鱼和恶意附件。
-ms.openlocfilehash: 12bdb9f12c1b0d3072a4c84c006787c26050cc8b
-ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
+ms.openlocfilehash: b274bb6bcdf71641ff8b196921a501bae9cbba28
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52582796"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635958"
 ---
 # <a name="top-10-ways-to-secure-microsoft-365-for-business-plans"></a>保护业务计划的 Microsoft 365的十大方法
 
@@ -348,8 +348,6 @@ In Outlook for PC， select **Options** in the email， and then choose **Permis
 
 ## <a name="related-content"></a>相关内容
 
-[本文介绍的Microsoft 365 (](multi-factor-authentication-microsoft-365.md)多重) 
-
-[管理并监视优先级帐户 (](../setup/priority-accounts.md) 文章) 
-
+[Microsoft 365 (](multi-factor-authentication-microsoft-365.md)多重身份验证) \
+[管理和监视优先级帐户 (](../setup/priority-accounts.md) 文章) \
 [Microsoft 365管理中心中的报告 (](../activity-reports/activity-reports.md)视频) 

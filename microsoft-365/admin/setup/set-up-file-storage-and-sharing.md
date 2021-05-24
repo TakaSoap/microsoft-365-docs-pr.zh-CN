@@ -29,18 +29,18 @@ search.appverid:
 - ODB160
 ms.assetid: 7aa9cdc8-2245-4218-81ee-86fa7c35f1de
 description: 了解如何使用 OneDrive 和团队网站来Microsoft 365和Microsoft 365文件共享。
-ms.openlocfilehash: 9e739b1f90296167fc47bdd5f19bacd73c43f9e2
-ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
+ms.openlocfilehash: f94ff8a60b1b4691b36ec2e1bd04088d96b1af8c
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52572173"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635638"
 ---
 # <a name="set-up-file-storage-and-sharing-in-microsoft-365"></a>在文件中设置文件存储和Microsoft 365
 
 为企业设置文件存储和共享的最佳方法之一是OneDrive网站和团队网站。 如果是只有几名员工的小型企业，此方法非常合适。
 
-观看有关在云中存储文件的Microsoft 365视频。<br><br>
+## <a name="watch-where-to-store-files-in-office-365"></a>观看：文件存储位置Office 365
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FTHX] 
 
@@ -207,8 +207,6 @@ To see how much storage space you have left in OneDrive， see [Manage your OneD
 
 ## <a name="related-content"></a>相关内容
 
-[为订阅添加存储空间 (](../../commerce/add-storage-space.md) 文章) 
-
-[通过视频视频Microsoft 365 商业版 (](https://support.microsoft.com/office/share-files-and-folders-with-microsoft-365-business-72f26d6c-bf9e-432c-8b96-e3c2437f5b65)共享文件和) 
-
+[为订阅添加存储空间 (](../../commerce/add-storage-space.md) 文章) \
+[通过视频视频Microsoft 365 商业版 (](https://support.microsoft.com/office/share-files-and-folders-with-microsoft-365-business-72f26d6c-bf9e-432c-8b96-e3c2437f5b65)共享文件和) \
 [自定义团队网站以存储文件和共享](customize-team-site.md) (文章) 

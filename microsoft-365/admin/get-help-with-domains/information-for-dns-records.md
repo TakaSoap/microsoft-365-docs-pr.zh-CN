@@ -23,12 +23,12 @@ search.appverid:
 - GEA150
 ms.assetid: 77f90d4a-dc7f-4f09-8972-c1b03ea85a67
 description: 收集创建 DNS 记录所需的值/信息，以将域连接到 Microsoft 365 订阅。
-ms.openlocfilehash: c8ff30c27e67c8a29b7122ea80a6a33f0594b1b9
-ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
+ms.openlocfilehash: e65d53269f5fb8625b12c4eb22f78516818045be
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52582952"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635722"
 ---
 # <a name="gather-the-information-you-need-to-create-dns-records"></a>收集创建 DNS 记录所需的信息
 
@@ -100,8 +100,6 @@ ms.locfileid: "52582952"
 
 ## <a name="related-content"></a>相关内容
 
-[域常见问题](../setup/domains-faq.yml) (文章) 
-
-[查找并修复添加域或 DNS 记录之后出现的问题](find-and-fix-issues.md)（文章）
-
+[域常见问题 (](../setup/domains-faq.yml) 文章) \
+[查找并修复在添加域](find-and-fix-issues.md) 或 DNS 记录后 (文章) \
 [管理域](index.yml)（链接页）

@@ -1,5 +1,5 @@
 ---
-title: 解决 iOS 上的 Microsoft Defender for Endpoint 的问题
+title: 排查问题并查找与 iOS 上的 Microsoft Defender for Endpoint 相关的常见问题解答
 description: 疑难解答和常见问题解答 - 适用于 iOS 上的终结点的 Microsoft Defender
 keywords: microsoft， defender， Microsoft Defender for Endpoint， ios， 疑难解答， 如何
 search.product: eADQiWindows 10XVcnh
@@ -17,14 +17,14 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 82a3fcc58b97f53f584befae77c86e8a18952a23
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 13c0a575fd2614f58eb6a2163cda04118c2a391d
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52539291"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52636274"
 ---
-# <a name="troubleshoot-issues-on-microsoft-defender-for-endpoint-on-ios"></a>解决 iOS 上的 Microsoft Defender for Endpoint 的问题
+# <a name="troubleshoot-issues-and-find-answers-to-faqs-on-microsoft-defender-for-endpoint-on-ios"></a>排查问题并查找 iOS 上 Microsoft Defender for Endpoint 上的常见问题解答
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 

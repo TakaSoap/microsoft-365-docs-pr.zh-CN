@@ -25,12 +25,12 @@ search.appverid:
 - GEA150
 ms.assetid: f4d8cae9-6d06-4c4b-b4e5-6581fd05ea82
 description: 通过购买域名并添加到电子邮件地址 tom@fourthcoffee.com 将电子邮件地址更改为友好电子邮件地址，Microsoft 365。
-ms.openlocfilehash: d5e70856c9200cd7e5df0eded25b6ff460e5d1fe
-ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
+ms.openlocfilehash: 1a248cb67bab5d0467cad35dc5be8023b8013a12
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52572089"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635518"
 ---
 # <a name="change-your-email-address-to-use-your-custom-domain"></a>将电子邮件地址更改为使用您的自定义域
 
@@ -91,4 +91,6 @@ ms.locfileid: "52572089"
   
 ## <a name="related-content"></a>相关内容
 
-[使用自定义域Microsoft 365 (](../get-help-with-domains/buy-a-domain-name.md)购买) 
+[使用自定义域Microsoft 365 (](../get-help-with-domains/buy-a-domain-name.md)购买) \
+[管理域](../get-help-with-domains/index.yml) (链接页) \
+[域常见问题](../setup/domains-faq.yml) （文章）

@@ -25,12 +25,12 @@ search.appverid:
 - MOE150
 ms.assetid: 5bc3f460-13cc-48c0-abd6-b80bae72d04a
 description: 了解如何设置策略以允许用户使用自助服务密码重置工具重置自己的密码。
-ms.openlocfilehash: 2c79d5611ab2db00f4de5f227b0ec2f411955558
-ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
+ms.openlocfilehash: 81fbe1949b8d5e4a601411703d86165f95cc7b7f
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52571849"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52634264"
 ---
 # <a name="let-users-reset-their-own-passwords"></a>允许用户重置自己的密码
 
@@ -74,8 +74,6 @@ ms.locfileid: "52571849"
 
 ## <a name="related-content"></a>相关内容
 
-[为组织设置密码过期策略， (](../manage/set-password-expiration-policy.md) 文章) 
-
-[将个人用户密码设置为永不过期](set-password-to-never-expire.md)（文章）
-
+[为组织设置密码过期策略， (](../manage/set-password-expiration-policy.md) 文章) \
+[将单个用户的密码设置为永不](set-password-to-never-expire.md) 过期， (文章) \
 [Microsoft 365 商业版培训视频 (](../../business-video/index.yml)链接页) 

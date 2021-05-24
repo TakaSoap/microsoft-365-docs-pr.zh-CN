@@ -25,12 +25,12 @@ search.appverid:
 - GEA150
 ms.assetid: a8b487a9-2a45-4581-9dc4-5d28a47010a2
 description: 了解如何在 Microsoft 365 中添加和设置域，以便电子邮件和 Skype for Business Online 等服务使用你自己的域名。
-ms.openlocfilehash: 447cc69aa2c4c3edcf1c4c6a2435cdc27fc22cd2
-ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
+ms.openlocfilehash: c6394b505e025c565713aae753879601f5a6aecf
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52582988"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635434"
 ---
 # <a name="change-nameservers-to-set-up-microsoft-365-with-any-domain-registrar"></a>更改名称服务器以设置Microsoft 365注册机构的域名
 
@@ -198,8 +198,6 @@ Microsoft 365 找到正确的 TXT 记录表明域已通过验证。
   
 ## <a name="related-content"></a>相关内容
 
-[添加 DNS 记录以连接域](create-dns-records-at-any-dns-hosting-provider.md) (文章) 
-
-[查找并修复添加域或 DNS 记录之后出现的问题](find-and-fix-issues.md)（文章）
-
+[添加 DNS 记录以连接域](create-dns-records-at-any-dns-hosting-provider.md) (文章) \
+[查找并修复在添加域](find-and-fix-issues.md) 或 DNS 记录后 (文章) \
 [管理域](index.yml)（链接页）

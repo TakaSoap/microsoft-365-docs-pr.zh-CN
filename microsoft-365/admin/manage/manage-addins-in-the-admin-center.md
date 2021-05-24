@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
 description: 了解如何使用集中式加载项将加载项部署到组织中用户和组。
-ms.openlocfilehash: c103cfc4e3e7b404ea4d31d81bc30d7990a922dc
-ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
+ms.openlocfilehash: d678755b28daea1578ce2a5d2e387492cf32d368
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/21/2021
-ms.locfileid: "52593965"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52636054"
 ---
 # <a name="manage-add-ins-in-the-admin-center"></a>在管理中心管理加载项
 
@@ -157,12 +157,8 @@ Office加载项有助于个性化设置文档，并简化访问 Web 上信息 (�
 
 ## <a name="related-content"></a>相关内容
 
-[在管理中心部署加载项 (](./manage-deployment-of-add-ins.md) 文章) 
-
-详细了解如何创建和生成[Office加载项](/office/dev/add-ins/overview/office-add-ins) (文章) 
-  
-[使用集中部署 PowerShell cmdlet](../../enterprise/use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins.md) 管理加载项 (文章) 
-  
-[疑难解答：用户看不到外接程序 (](/office365/troubleshoot/access-management/user-not-seeing-add-ins) 文章) 
-
+[在管理中心部署外接程序 (](./manage-deployment-of-add-ins.md) 文章) \
+详细了解如何创建和生成[Office加载项](/office/dev/add-ins/overview/office-add-ins) (文章) \
+[使用集中部署 PowerShell cmdlet](../../enterprise/use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins.md) 管理外接程序 (文章) \
+[疑难解答：用户看不到外接程序](/office365/troubleshoot/access-management/user-not-seeing-add-ins) (文章) \
 [本文中介绍的次要Microsoft Store (](./minors-and-acquiring-addins-from-the-store.md)外接程序) 

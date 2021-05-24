@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: a7c98273-067e-4162-b3a1-4ba081796012
 description: 将电子邮件作为通讯组列表Microsoft 365以便当成员回复邮件时，邮件看起来好像来自通讯组列表。
-ms.openlocfilehash: 01bff7e1d2515670c5a6faa199355e7de591f1fb
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: eb5ce4a08fae13ee0d2631499a8df1724ef3ef66
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 05/24/2021
-ms.locfileid: "52624533"
+ms.locfileid: "52635710"
 ---
 # <a name="send-email-as-a-distribution-list"></a>以通讯组列表方式发送电子邮件
 
@@ -66,4 +66,4 @@ ms.locfileid: "52624533"
 
 [在管理中心创建、编辑](../email/create-edit-or-delete-a-security-group.md)或删除Microsoft 365安全 (，) \
 [电子邮件协作](../email/email-collaboration.md) (文章) \
-[向通讯组添加用户或联系人](../email/add-user-or-contact-to-distribution-list.md)
+[向通讯组添加用户或联系人 (](../email/add-user-or-contact-to-distribution-list.md) 文章) 

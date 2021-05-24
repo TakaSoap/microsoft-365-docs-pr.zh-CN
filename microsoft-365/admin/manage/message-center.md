@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 38fb3333-bfcc-4340-a37b-deda509c2093
 description: 大致了解邮件Microsoft 365及其在跟踪新功能和已更改的功能以及其他重要通知中的角色。
-ms.openlocfilehash: edef3bb5a9016cf6f65f307fcd7c706bf4424d2f
-ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
+ms.openlocfilehash: 51cdf1924b3aaa507a6b41f903a6aea5d81d68f1
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/21/2021
-ms.locfileid: "52593953"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52636042"
 ---
 # <a name="message-center"></a>消息中心
 
@@ -303,8 +303,6 @@ ms.locfileid: "52593953"
 
 ## <a name="related-content"></a>相关内容
 
-[设置标准发布选项或定向发布 (](../manage/release-options-in-office-365.md) 文章) 
-
-[管理Office](../manage/show-hide-new-features.md)新增功能中的 (功能) 
-
-[商业版订阅和计费文档 (](../../commerce/index.yml) 链接) 
+[设置标准发布选项或定向发布 (](../manage/release-options-in-office-365.md) 文章) \
+[管理Office新功能在](../manage/show-hide-new-features.md)新增功能 (中) \
+[商业版订阅和帐单文档 (](../../commerce/index.yml) 链接页) 

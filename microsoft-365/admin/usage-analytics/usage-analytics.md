@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 77ff780d-ab19-4553-adea-09cb65ad0f1f
 description: 大致了解组织如何采用 Microsoft 365 服务进行通信和协作。
-ms.openlocfilehash: f641e2b99e2d61881eb86506a1770f4401cb98bc
-ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
+ms.openlocfilehash: db61ed4d4c087b76895d08e43f6b1a2c00ed8172
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52572329"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635386"
 ---
 # <a name="microsoft-365-usage-analytics"></a>Microsoft 365 使用情况分析
 
@@ -213,8 +213,6 @@ The Microsoft 365 overview report contains the following reports. 您可以通�
 
 ## <a name="related-content"></a>相关内容
 
-[启用 Microsoft 365 使用情况分析](enable-usage-analytics.md)（文章）
-
-[导航和利用 Microsoft 365 使用情况分析 (](navigate-and-utilize-reports.md)中的) 
-
+[启用 Microsoft 365 使用情况分析](enable-usage-analytics.md)（文章）\
+[导航和利用 Microsoft 365 使用情况分析 (](navigate-and-utilize-reports.md)中) \
 [查看视频视频](../../business-video/act-on-report.md)Microsoft 365 (中的) 

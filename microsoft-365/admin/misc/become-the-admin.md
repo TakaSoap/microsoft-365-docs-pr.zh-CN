@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: b9707ec8-2247-4e25-9bad-f11ddbc686e4
 description: 了解如何验证你的电子邮件和域所有权以接管由自助用户注册帐户创建的非托管Microsoft 365。
-ms.openlocfilehash: c37bf153edf39f53b5c10f020b0cbb8d630eb4a6
-ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
+ms.openlocfilehash: aa44023ffdc2b59e4db024706323c5b872566260
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/21/2021
-ms.locfileid: "52593929"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635982"
 ---
 # <a name="perform-an-internal-admin-takeover"></a>执行内部管理员接管
 
@@ -68,10 +68,7 @@ ms.locfileid: "52593929"
   
 ## <a name="related-content"></a>相关内容
 
-YouTube：[执行](https://www.youtube.com/watch?v=xt5EsrQBZZk)IT 管理员接管 Power BI Microsoft 365 (视频) 
-
-[管理员接管 Azure AD](/azure/active-directory/users-groups-roles/domains-admin-takeover) (文章) 
-
-[在组织中使用自助服务注册 (](self-service-sign-up.md) 文章) 
-  
+YouTube：[执行 IT](https://www.youtube.com/watch?v=xt5EsrQBZZk)管理员接管 Power BI 和 Microsoft 365 (视频) \
+[管理员接管 Azure AD](/azure/active-directory/users-groups-roles/domains-admin-takeover) (文章) \
+[在组织中使用自助服务注册 (](self-service-sign-up.md) 文章) \
 [了解Power BI管理员角色 (](/power-bi/service-admin-role)文章) 

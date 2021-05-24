@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
 description: 了解如何使用管理中心中的集中部署将加载项部署到组织的用户和组。
-ms.openlocfilehash: 2d3b90a75f38a2c1146c0b0e5470c80b0af2c63f
-ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
+ms.openlocfilehash: 8cc4f29cd2593d9651edaf87791f46dabdcc30b2
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52572269"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52636018"
 ---
 # <a name="deploy-add-ins-in-the-admin-center"></a>在管理中心部署加载项
 
@@ -131,12 +131,7 @@ Office 加载项结合了一个包含加载项相关元数据的 XML 清单文�
   
 ## <a name="related-content"></a>相关内容
 
-[管理中心中的外接程序 (](manage-addins-in-the-admin-center.md) 文章) 
-
-[生成首个 Word 任务窗格加载项](/office/dev/add-ins/quickstarts/word-quickstart?tabs=yeomangenerator) (文章) 
-
-[次要加载项和从应用商店获取加载项 (](minors-and-acquiring-addins-from-the-store.md) 文章) 
-  
-[使用集中部署 PowerShell cmdlet](../../enterprise/use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins.md) 管理加载项 (文章) 
-  
+[管理中心中的外接程序 (](manage-addins-in-the-admin-center.md) 文章) \
+[生成首个 Word 任务窗格加载项 (](/office/dev/add-ins/quickstarts/word-quickstart?tabs=yeomangenerator) 文章\
+[从应用商店](minors-and-acquiring-addins-from-the-store.md) 获取外接程序的次要 (文章) \ 使用集中部署 [PowerShell cmdlet](../../enterprise/use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins.md) 管理外接程序 (文章) \  
 [疑难解答：用户看不到外接程序 (](/office365/troubleshoot/access-management/user-not-seeing-add-ins) 文章) 

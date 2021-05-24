@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: fb00dd4e-2d5f-4e8d-8ff4-94b2cf002bdd
 description: 在管理中心Microsoft 365日历共享，以便用户可以与组织内外的任何人共享其日历。
-ms.openlocfilehash: 6f4c215403e16ac6658619e50e6115606f106397
-ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
+ms.openlocfilehash: ee2b48182efec3e8bc22f47fd1657cd123ec65f8
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52582712"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635806"
 ---
 # <a name="share-calendars-with-external-users"></a>与外部用户共享日历
 
@@ -50,12 +50,10 @@ ms.locfileid: "52582712"
 
 ## <a name="invite-people-to-access-calendars"></a>邀请其他人访问日历
 
-启用共享后，日历所有者可以将邀请扩展到特定用户。 有关说明，请参阅[在 Outlook Web App 中共享日历](https://support.microsoft.com/office/7ecef8ae-139c-40d9-bae2-a23977ee58d5)。
+启用共享后，日历所有者可以将邀请扩展到特定用户。 有关说明，请参阅在 Outlook Web App 中[共享日历](https://support.microsoft.com/office/7ecef8ae-139c-40d9-bae2-a23977ee58d5)。
 
 ## <a name="related-content"></a>相关内容
 
-[打开或关闭网站外部共享 (](/sharepoint/change-external-sharing-site) 文章) 
-
-[Microsoft 365 管理中心概述](../../business-video/admin-center-overview.md)（视频）
-
+[打开或关闭网站](/sharepoint/change-external-sharing-site) 外部共享 (文章) \
+[管理中心Microsoft 365视频](../../business-video/admin-center-overview.md) (概述) \
 [管理电子邮件和日历](../email/index.yml) (链接页) 

@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 2dee1193e9f852e66df324927bf38d37d736d251
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: ed4e0c477bd2a8840e920b337f05c8730965bcff
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245944"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52636238"
 ---
 # <a name="device-discovery-overview"></a>设备发现概述
 
@@ -62,7 +62,7 @@ Microsoft Defender for Endpoint 提供设备发现功能，可帮助你查找连
 
 
 > [!IMPORTANT]
-> 发现设置为基本模式。 你可以选择通过设置页保留此配置。 标准发现将是从 2021 年 5 月 10 日开始的所有预览客户的默认模式 - 除非在此日期之前通过设置页面进行了修改。
+> 发现设置为基本模式。 你可以选择通过设置页保留此配置。 标准发现将是从 2021 年 7 月 19 日开始的所有客户的默认模式 - 除非在此日期之前通过设置页面进行了修改。
 
 ### <a name="basic-discovery"></a>基本发现 
 

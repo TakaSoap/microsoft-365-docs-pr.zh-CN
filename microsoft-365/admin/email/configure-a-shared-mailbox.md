@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 创建共享邮箱并配置其用户的一些设置，例如电子邮件转发和自动答复。
-ms.openlocfilehash: ab23353f07a24f06d43172e8087819dd915ab720
-ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
+ms.openlocfilehash: c1d8007a2fcc45fbdd1a6943ee464e5aae8917b9
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52582664"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635506"
 ---
 # <a name="configure-shared-mailbox-settings"></a>配置共享邮箱设置
 
@@ -144,12 +144,8 @@ ms.locfileid: "52582664"
 
 ## <a name="related-content"></a>相关内容
 
-[关于共享邮箱](about-shared-mailboxes.md)（文章）
-
-[创建共享邮箱](create-a-shared-mailbox.md)（文章）
-
-[将用户邮箱转换为共享邮箱](convert-user-mailbox-to-shared-mailbox.md)（文章）
-
-[从共享邮箱删除许可证](remove-license-from-shared-mailbox.md)（文章）
-
-[解决共享邮箱问题](resolve-issues-with-shared-mailboxes.md)（文章）
+[关于共享邮箱 (](about-shared-mailboxes.md) 文章) \
+[Create a shared mailbox (](create-a-shared-mailbox.md) article) \
+[将用户邮箱转换为共享邮箱 (](convert-user-mailbox-to-shared-mailbox.md) 文章) \
+[从共享邮箱中删除许可证 (](remove-license-from-shared-mailbox.md) 文章) \
+[解决共享邮箱相关问题](resolve-issues-with-shared-mailboxes.md)（文章）

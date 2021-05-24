@@ -25,18 +25,18 @@ search.appverid:
 - MOE150
 ms.assetid: 2d75860f-c527-4352-a7f6-73eba54c0c72
 description: 管理电子邮件签名，包括进入或离开组织的所有电子邮件的法律免责声明或披露声明。
-ms.openlocfilehash: 05cfeeb01231e7f99d2a96fc37581b4c9a23f5aa
-ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
+ms.openlocfilehash: f72d522c7dc592a7f719d716e22ecf726d00a6de
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52582748"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635650"
 ---
 # <a name="create-organization-wide-signatures-and-disclaimers"></a>创建组织范围内的签名和免责声明
 
  您可以通过向进入或离开组织的电子邮件添加电子邮件签名、法律免责声明或披露声明来管理电子邮件签名。 可将其设置为应用于所有待收和待发邮件，如下所示。 也可将其应用到某些邮件，例如包含特定字词或文本模式的邮件。
 
- 观看有关创建公司范围电子邮件签名的简短视频。 <br><br>
+## <a name="watch-create-a-company-wide-email-signature"></a>观看：创建公司范围的电子邮件签名
   
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1IEWf] 
 
@@ -119,9 +119,7 @@ ms.locfileid: "52582748"
 
 ## <a name="related-content"></a>相关内容
 
-[将电子邮件和联系人迁移到Microsoft 365 (](migrate-email-and-contacts-admin.md)视频) 
-
-[用户电子邮件设置](../email/office-365-user-email-settings.md) (文章) 
-
+[将电子邮件和联系人迁移到Microsoft 365 (](migrate-email-and-contacts-admin.md)视频) \
+[用户电子邮件设置](../email/office-365-user-email-settings.md) (文章) \
 [Microsoft 365 管理中心概述](../../business-video/admin-center-overview.md)（视频）
 

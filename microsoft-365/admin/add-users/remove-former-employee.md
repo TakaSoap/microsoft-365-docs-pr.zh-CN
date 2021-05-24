@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 按照此解决方案中的步骤从员工Microsoft 365并保护组织的数据。
-ms.openlocfilehash: 44741382a84cca15277308a44b3fd20470aa3a08
-ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
+ms.openlocfilehash: a613d4931c730dffe195954da97af86c683041bf
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52572041"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52634240"
 ---
 # <a name="overview-remove-a-former-employee-and-secure-data"></a>概述：删除以前的员工和安全数据
 
@@ -61,4 +61,7 @@ ms.locfileid: "52572041"
 
 ## <a name="related-content"></a>相关内容
 
-[Restore a user (](restore-user.md) article) 
+[Restore a user (](restore-user.md) article) \
+[向 Microsoft 365 添加新员工](add-new-employee.md)（文章）\
+[向用户分配许可证](../manage/assign-licenses-to-users.md)
+[取消分配用户许可证 (](../manage/remove-licenses-from-users.md) 本文) 

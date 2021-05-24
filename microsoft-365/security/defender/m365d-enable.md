@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 2d69ae70b137c9e5378958721f7f9958e57c0306
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 3d7564b5d509190c8c8e799c541bb0ca583097f1
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51935637"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52636226"
 ---
 # <a name="turn-on-microsoft-365-defender"></a>打开 Microsoft 365 Defender
 
@@ -56,7 +56,7 @@ Microsoft 365Defender 聚合已部署的各种受支持服务的数据。 它将
 为了获得最佳保护并优化 Microsoft 365 Defender，我们建议在你的网络上部署所有适用的受支持服务。 有关详细信息，请阅读 [有关部署受支持的服务的信息](deploy-supported-services.md)。
 
 ## <a name="onboard-to-the-service"></a>载入到服务
-载入到 Microsoft 365 Defender 非常简单。 从导航菜单中，选择终结点部分下的任何项目，如事件、搜寻、操作中心或威胁分析，以启动载入过程。 
+载入到 Microsoft 365 Defender 非常简单。 从导航菜单中，选择任何Microsoft 365 Defender 项目，如事件、搜寻、操作中心或威胁分析，以启动载入过程。 
 
 ### <a name="data-center-location"></a>数据中心位置
 

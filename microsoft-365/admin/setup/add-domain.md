@@ -26,12 +26,12 @@ search.appverid:
 - MOE150
 ms.assetid: 6383f56d-3d09-4dcb-9b41-b5f5a5efd611
 description: 使用设置向导，通过添加 DNS Microsoft 365 DNS Microsoft 365管理中心将域添加到管理中心。
-ms.openlocfilehash: 96849e90a420dc31dbde8c55d5a1108f73f85978
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 152144737b0ff8cb8b0c27db2a4fc1051fb2a8a7
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52535826"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635674"
 ---
 # <a name="add-a-domain-to-microsoft-365"></a>将域添加到 Microsoft 365
 
@@ -136,10 +136,7 @@ ms.locfileid: "52535826"
 
 ## <a name="related-content"></a>相关内容
 
-[域常见问题](domains-faq.yml) (文章) 
-
-[什么是域？](../get-help-with-domains/what-is-a-domain.md)  (文章) 
-
-[购买域名Microsoft 365 (](../get-help-with-domains/buy-a-domain-name.md)文章) 
-
+[域常见问题 (](domains-faq.yml) 文章) \
+[什么是域？](../get-help-with-domains/what-is-a-domain.md) （文章）\
+[购买域名，Microsoft 365 (](../get-help-with-domains/buy-a-domain-name.md)文章) \
 [设置域设置](../get-help-with-domains/set-up-your-domain-host-specific-instructions.md) (文章) 

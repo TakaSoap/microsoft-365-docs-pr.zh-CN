@@ -23,12 +23,12 @@ search.appverid:
 - GEA150
 ms.assetid: 1561140a-16a9-4a02-822d-a989250e479d
 description: 了解如何在 Microsoft 365 中购买域名。
-ms.openlocfilehash: 53c71796c09f08d1f50c58704b8dd95c1a241518
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 3d5a5568a0e75a06f0880d82ea8e4a1a8d003689
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52537567"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635458"
 ---
 # <a name="buy-a-domain-name"></a>购买域名
 
@@ -119,8 +119,6 @@ ms.locfileid: "52537567"
 
 ## <a name="related-content"></a>相关内容
 
-[在本文Microsoft 365 (](../setup/add-domain.md)域) 
-
-[域常见问题](../setup/domains-faq.yml) (文章) 
-
+[在本文Microsoft 365 (](../setup/add-domain.md)域) \
+[域常见问题 (](../setup/domains-faq.yml) 文章) \
 [更新 DNS 记录，以使用当前](../dns/update-dns-records-to-retain-current-hosting-provider.md) 托管提供商 (网站) 

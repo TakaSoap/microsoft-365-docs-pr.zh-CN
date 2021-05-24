@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7dc1c01a-090f-4971-9677-f1b192d6c910
 description: 了解如何设置注册表项，以对已安装 2013 Microsoft Office新式验证。
-ms.openlocfilehash: d358cb2ffb4284a51779e5a7c1dc894052b9ebc0
-ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
+ms.openlocfilehash: 917ecd5c668ea43b0627ba2361f951ebc5e19725
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52572281"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635686"
 ---
 # <a name="enable-modern-authentication-for-office-2013-on-windows-devices"></a>在 Windows 设备上启用适用于 Office 2013 的新式验证
 
@@ -59,7 +59,6 @@ ms.locfileid: "52572281"
    
 ## <a name="related-content"></a>相关内容
 
-[使用本文Office验证方法登录到 (2013](https://support.microsoft.com/office/2b856342-170a-438e-9a4f-3c092394d3cb)) 
-
+使用本文Office验证方法登录到 ([2013](https://support.microsoft.com/office/2b856342-170a-438e-9a4f-3c092394d3cb)) \
 [Outlook提示输入密码](/outlook/troubleshoot/authentication/outlook-prompt-password-modern-authentication-enabled)，并且不使用新式验证连接到 Office 365 (文章) 
 

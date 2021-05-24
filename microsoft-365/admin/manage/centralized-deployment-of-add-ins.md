@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: b4527d49-4073-4b43-8274-31b7a3166f92
 description: 确定租户和用户是否满足要求，以便可以使用集中部署Office加载项。
-ms.openlocfilehash: e5d3337cdf1bbb0dc18ee6940ab8bd289d2e5f65
-ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
+ms.openlocfilehash: 25fe217a41274b6a239e4ee482ee105238465999
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/21/2021
-ms.locfileid: "52593917"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635446"
 ---
 # <a name="determine-if-centralized-deployment-of-add-ins-works-for-your-organization"></a>确定外接程序的集中部署是否适用于您的组织
 
@@ -160,11 +160,8 @@ Microsoft Exchange 存储组织的租户中的加载项清单。 部署外接程
 
 ## <a name="related-content"></a>相关内容
 
-[在管理中心部署加载项 (](../manage/manage-deployment-of-add-ins.md) 文章) 
-
-[管理中心中的外接程序 (](manage-addins-in-the-admin-center.md) 文章) 
-
-[集中部署常见问题](../manage/centralized-deployment-faq.md) (文章) 
-
+[在管理中心部署外接程序 (](../manage/manage-deployment-of-add-ins.md) 文章) \
+[管理中心中的外接程序 (](manage-addins-in-the-admin-center.md) 文章) \
+[集中部署常见问题](../manage/centralized-deployment-faq.md) (文章) \
 [将业务Microsoft 365升级到](../setup/upgrade-users-to-latest-office-client.md)最新 Office 客户端 (文章) 
  

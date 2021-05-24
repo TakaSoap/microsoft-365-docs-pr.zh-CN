@@ -27,12 +27,12 @@ search.appverid:
 - GEA150
 ms.assetid: 7a5d073b-7fae-4aa5-8f96-9ecd041aba9c
 description: 使用 Microsoft 365 管理员帐户登录，重置 Microsoft 365 商业版订阅中的用户密码。
-ms.openlocfilehash: 8d4666eb70b1d5349f71c906f05510a8a54ded74
-ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
+ms.openlocfilehash: 0cec6c7874b51c76fca60c6c237395c940c47bbe
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52571969"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635566"
 ---
 # <a name="reset-passwords"></a>重置密码
 
@@ -54,7 +54,7 @@ ms.locfileid: "52571969"
   
 ## <a name="steps-reset-a-business-password-for-a-user"></a>步骤：重置用户的业务密码
 
-1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。
+1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。
 
 2. 在"**活动用户"** 页上，选择用户，然后选择"**重置密码"。**
 
@@ -93,7 +93,7 @@ ms.locfileid: "52571969"
 
 这些步骤适用于拥有数十位用户的企业。 如果你有成百上千个用户，请参阅下一部分有关批量重置密码 (一次最多 40 个用户重置) 。
   
-1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。
+1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。
 
 2. 选择"显示名称 **"旁边的** 选项以选择企业中的每个人。 然后取消选中你自己。 重置其他所有用户的密码时无法重置自己的密码。
 
@@ -122,12 +122,8 @@ ms.locfileid: "52571969"
   
 ## <a name="related-content"></a>相关内容
   
-[允许用户重置自己的密码](../add-users/let-users-reset-passwords.md)（文章）
-
-[重置密码](../add-users/reset-passwords.md)（文章）
-
-[将个人用户密码设置为永不过期](set-password-to-never-expire.md)（文章）
-
-[为组织设置密码过期策略， (](../manage/set-password-expiration-policy.md) 文章) 
-
+[允许用户重置自己的密码， (](../add-users/let-users-reset-passwords.md) 文章) \
+[重置密码 (](../add-users/reset-passwords.md) 文章) \
+[将单个用户的密码设置为永不](set-password-to-never-expire.md) 过期， (文章) \
+[为组织设置密码过期策略， (](../manage/set-password-expiration-policy.md) 文章) \
 [Microsoft 365企业培训视频 (](../../business-video/index.yml)链接页) 

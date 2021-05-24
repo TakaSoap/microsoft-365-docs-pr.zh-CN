@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 8275da91-7a48-4591-94ab-3123a3f79530
 description: 了解如何更改导航栏中导航栏顶部的默认主题Microsoft 365自定义它以匹配公司徽标或颜色。
-ms.openlocfilehash: b2177eebc31f34f7067c8464724623e4bf7d4870
-ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
+ms.openlocfilehash: 5f6536d575ef055cda7a97a0860315c491100a1d
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/21/2021
-ms.locfileid: "52593825"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635922"
 ---
 # <a name="customize-the-microsoft-365-theme-for-your-organization"></a>自定义Microsoft 365主题
 
@@ -152,10 +152,9 @@ ms.locfileid: "52593825"
 
 ### <a name="if-i-define-a-theme-which-places-in-microsoft-365-will-this-be-used"></a>如果我定义主题，那么Microsoft 365使用哪个位置？
 
-任何主题都将作为套件标题的一部分显示在组织的顶部导航Microsoft 365中。  
+任何主题都作为套件标题的一部分显示在组织的顶部导航Microsoft 365中。  
   
 ## <a name="related-content"></a>相关内容
 
-[向"我的应用"页和应用启动器](../manage/customize-the-app-launcher.md) 添加自定义磁贴 (文章) 
-
+[将自定义磁贴添加到我的应用页面和应用](../manage/customize-the-app-launcher.md) 启动器 (文章) \
 [管理员Microsoft 365组](../create-groups/office-365-groups.md)概述 (文章) 

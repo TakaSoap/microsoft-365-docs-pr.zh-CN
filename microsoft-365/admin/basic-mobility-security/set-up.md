@@ -18,12 +18,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: 设置基本移动性和安全性，通过执行远程擦除设备等操作保护和管理用户的移动设备。
-ms.openlocfilehash: 830baa79838818501101c0c4f2d3163f57d47611
-ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
+ms.openlocfilehash: 02ba28deca6286456af5f87841a741262c1a135d
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/21/2021
-ms.locfileid: "52593413"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52634288"
 ---
 # <a name="set-up-basic-mobility-and-security"></a>设置基本移动性和安全性
 
@@ -129,6 +129,5 @@ MFA 通过要求第二种形式的身份验证Microsoft 365移动设备注册保
 
 ## <a name="related-content"></a>相关内容
 
-[基本移动性和安全性功能 (](capabilities.md) 文章) 
-
+[基本移动性和安全性](capabilities.md) 功能 (文章) \
 [Create device security policies in Basic Mobility and Security](create-device-security-policies.md) (article) 

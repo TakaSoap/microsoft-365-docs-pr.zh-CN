@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: e186d224-a324-4afa-8300-0e4fc0c3000a
 description: 了解如何在管理中心向组添加成员、从组中删除成员和管理Microsoft 365状态。
-ms.openlocfilehash: 3ab3ebe21caa2d9d3dfa381dd3b68c9d2512cb79
-ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
+ms.openlocfilehash: b5b0a398a5ebb47a5f27066f1daea1a822adbff2
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/21/2021
-ms.locfileid: "52593377"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635602"
 ---
 # <a name="add-or-remove-members-from-microsoft-365-groups-using-the-admin-center"></a>使用管理中心Microsoft 365或删除组的成员
 
@@ -101,7 +101,7 @@ ms.locfileid: "52593377"
 
 5. 选择“**保存**”。
 
-## <a name="more-on-managing-membership"></a>有关管理成员身份的详细信息
+## <a name="next-steps"></a>后续步骤
 
 - [在 Azure Active Directory 中动态管理组](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal)：请参阅"如何动态管理组的成员？"部分
 
@@ -111,12 +111,8 @@ ms.locfileid: "52593377"
 
 ## <a name="related-content"></a>相关内容
 
-[将通讯组列表Microsoft 365本文Outlook (](../manage/upgrade-distribution-lists.md)组) 
-
-[为什么应将通讯组列表升级至 Outlook 中的组](https://support.microsoft.com/office/7fb3d880-593b-4909-aafa-950dd50ce188)
-
-[管理来宾组中来宾Microsoft 365 (](manage-guest-access-in-groups.md)文章) 
-
-[使用 PowerShell Microsoft 365](../../enterprise/manage-microsoft-365-groups-with-powershell.md)组：本文介绍了关键 cmdlet，并提供了本文 (示例) 
-
+[将通讯组列表Microsoft 365本文Outlook (](../manage/upgrade-distribution-lists.md)组) \
+[为什么应该将通讯组列表升级到](https://support.microsoft.com/office/7fb3d880-593b-4909-aafa-950dd50ce188)Outlook (中的) \
+[管理来宾组中来宾Microsoft 365 (](manage-guest-access-in-groups.md)文章) \
+[使用 PowerShell Microsoft 365](../../enterprise/manage-microsoft-365-groups-with-powershell.md)组：本文介绍了关键 cmdlet，并提供了本文 (示例) \
 [Microsoft 365文章 (组](../../solutions/groups-naming-policy.md)命名策略) 

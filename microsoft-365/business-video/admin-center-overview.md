@@ -20,22 +20,22 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: 详细了解管理Microsoft 365中心。
-ms.openlocfilehash: 6d7fe36345ebd9234027e943d11266b7bcc2b30f
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+description: 在仪表板中，Microsoft 365简化视图来管理常见任务，或管理更复杂的设置和任务的仪表板视图。
+ms.openlocfilehash: bca3aa7bb071d9334f7a5162a78db89690421f1a
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52537387"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635886"
 ---
 # <a name="overview-of-the-microsoft-365-admin-center"></a>Microsoft 365 管理中心概述
 
-- [简化视图中的管理中心](#the-admin-center-in-simplified-view)
-- [仪表板视图中的管理中心](#the-admin-center-in-dashboard-view)
+- [简化视图中的管理中心](#watch-the-admin-center-in-simplified-view)
+- [仪表板视图中的管理中心](#watch-the-admin-center-in-dashboard-view)
 
 管理Microsoft 365有两个视图：简化的视图可帮助小型组织管理其最常见的任务。 仪表板视图包括更复杂的设置和任务。 可以从管理中心顶部的按钮切换它们。
 
-## <a name="the-admin-center-in-simplified-view"></a>简化视图中的管理中心
+## <a name="watch-the-admin-center-in-simplified-view"></a>观看：简化视图中的管理中心
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWD3sq?autoplay=false]
 
@@ -57,7 +57,7 @@ ms.locfileid: "52537387"
 
 如果需要帮助，请选择"**帮助&支持"。** 搜索需要帮助的主题并查看建议的解决方案，或选择耳机联系支持人员，然后输入你的问题及联系信息。 
 
-## <a name="the-admin-center-in-dashboard-view"></a>仪表板视图中的管理中心
+## <a name="watch-the-admin-center-in-dashboard-view"></a>观看：仪表板视图中的管理中心
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWfvDL?autoplay=false]
 
@@ -117,7 +117,7 @@ To get to the Microsoft 365 admin center， go to [admin.microsoft.com](https://
 
 在管理中心内，可以通过选择每个页面底部的"需要帮助？"按钮旁边的"提供反馈"来向Microsoft 提供有关你的体验的反馈。 告诉我们您喜欢哪些功能以及我们可以执行哪些更好的工作。 此外，你可能会时时收到弹出式调查，询问你的总体印象或新发布的特定体验。 您还可以在本文末尾选择此信息有用吗 **？**
 
-## <a name="frequently-asked-questions"></a>常见问题解答
+## <a name="frequently-asked-questions"></a>常见问题
 
 在此处看不到你的问题的答案？ 转到此页面 **底部的** "反馈"部分，提出你的问题。 
   
@@ -188,4 +188,10 @@ Microsoft 365是一个完整的智能解决方案，包括 Office 365、Windows 
 |越南语 | vi |
 |Chinese Simplified | zh-hans |
 |Chinese Traditional | zh-hant |
+
+## <a name="related-content"></a>相关内容
+
+[什么是Microsoft 365管理员？](what-is-admin.md)  (视频) \
+[添加管理员 (](add-admin.md) 视频) \
+[自定义Microsoft 365主题， (](../admin/setup/customize-your-organization-theme.md)文章) 
   

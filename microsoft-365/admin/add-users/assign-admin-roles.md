@@ -27,12 +27,12 @@ search.appverid:
 - GEA150
 ms.assetid: eac4d046-1afd-4f1a-85fc-8219c79e1504
 description: 了解如何将管理员角色分配给企业中的一个或多个用户，以便他们可以在管理中心执行特定任务。
-ms.openlocfilehash: f23a30cfd1be53982572d745d476558c3be615e6
-ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
+ms.openlocfilehash: 8a9da12a8ebc01a02e4362f09ccaa9e92c21b7e9
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52571861"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52634168"
 ---
 # <a name="assign-admin-roles"></a>分配管理员角色
 
@@ -42,7 +42,7 @@ ms.locfileid: "52571861"
 
 添加新用户时，如果你没有为其分配管理员角色，则他们担任用户角色，并且没有任何 Microsoft管理中心的管理员权限。 但是，如果你需要有关完成工作的帮助，你可以将管理员角色分配给用户。 例如，如果需要某人来帮助重置密码，则不应为其分配全局管理员角色，而应为其分配密码管理员角色。 全局管理员太多，且可无限访问数据和在线业务，因此存在安全风险。
 
-## <a name="watch-add-an-adminbrbr"></a>观看：添加管理员。<br><br>
+## <a name="watch-add-an-adminbrbr"></a>观看：添加管理员<br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOfO] 
 
@@ -78,7 +78,7 @@ ms.locfileid: "52571861"
 
 ::: moniker range="o365-germany"
 
-1. 在管理中心，转到“**用户**><a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">活动用户</a>”页面。
+1. 在管理中心，转到“**用户**”>“<a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">活动用户</a>”页面。
 
 2. 在 **"活动用户"** 页上，选择要更改其管理员角色的用户。 在飞出窗格中的"角色"**旁边**，选择"编辑 **"。** 
 
@@ -90,7 +90,7 @@ ms.locfileid: "52571861"
 
 ::: moniker range="o365-21vianet"
 
-1. 在管理中心，转到“**用户**><a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">活动用户</a>”页面。
+1. 在管理中心，转到“**用户**”>“<a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">活动用户</a>”页面。
 
 2. 在 **"活动用户"** 页上，选择要更改其管理员角色的用户。 在飞出窗格中的"角色"**旁边**，选择"编辑 **"。**
 
@@ -121,10 +121,7 @@ ms.locfileid: "52571861"
 
 ## <a name="related-content"></a>相关内容
 
-[关于Microsoft 365管理员角色 (](about-admin-roles.md)文章) 
-
-[本文中的管理员Azure Active Directory (](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)权限) 
-
-[使用 PowerShell 向用户帐户分配](../../enterprise/assign-roles-to-user-accounts-with-microsoft-365-powershell.md) 角色 (文章) 
-
+[关于Microsoft 365管理员角色](about-admin-roles.md) (文章) \
+[本文中的管理员Azure Active Directory (](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)权限) \
+[使用 PowerShell 向用户帐户分配](../../enterprise/assign-roles-to-user-accounts-with-microsoft-365-powershell.md) 角色 (文章) \
 [授权或删除 (](../misc/add-partner.md) 文章) 

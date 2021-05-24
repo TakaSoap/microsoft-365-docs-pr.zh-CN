@@ -24,24 +24,26 @@ search.appverid:
 - BCS160
 - MET150
 description: 了解如何启用 Microsoft 365只需几步，Windows 10加入本地 Active-Directory 的设备。
-ms.openlocfilehash: f16962dd3c33c3c228da507bc5c4a902d76a8a08
-ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
+ms.openlocfilehash: ec80159bdceffd8a13d09a297a2acc1b78c9b1b3
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/21/2021
-ms.locfileid: "52593885"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52636078"
 ---
 # <a name="enable-domain-joined-windows-10-devices-to-be-managed-by-microsoft-365-business-premium"></a>允许加入域Windows 10设备由用户Microsoft 365 商业高级版
 
 如果您的组织使用 Windows Server Active Directory 本地，您可以设置 Microsoft 365 商业高级版 来保护 Windows 10 设备，同时仍保留对需要本地身份验证的本地资源的访问权限。
 若要设置此保护，你可以实现加入 **混合 Azure AD 的设备**。 这些设备已加入到本地 Active Directory 和 Azure Active Directory。
 
+## <a name="watch-configure-hybrid-azure-active-directory-join"></a>观看：配置混合Azure Active Directory加入
+
 本视频介绍了如何针对最常见方案设置此方案的步骤，后续步骤中对此也进行详细介绍。
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3C9hO]
   
+## <a name="before-you-begin"></a>准备工作
 
-## <a name="before-you-get-started-make-sure-you-complete-these-steps"></a>在开始使用之前，请确保完成以下步骤：
 - 将用户与 Azure AD 同步到 Azure AD 连接。
 - 完成 Azure AD 连接组织单位 (OU) 同步。
 - 请确保您同步的所有域用户都有Microsoft 365 商业高级版。
@@ -119,8 +121,6 @@ PS C:\> Initialize-SecMgmtHybirdDeviceEnrollment -GroupPolicyDisplayName 'Device
 
 ## <a name="related-content"></a>相关内容
 
-[将域用户同步Microsoft 365 (](manage-domain-users.md)文章) 
-
-[在管理中心创建组 (](../admin/create-groups/create-groups.md) 文章) 
-
+[将域用户同步Microsoft 365 (](manage-domain-users.md)文章) \
+[在管理中心创建组 (](../admin/create-groups/create-groups.md) 文章) \
 [教程：为托管Azure Active Directory配置混合域加入 (](/azure/active-directory/devices/hybrid-azuread-join-managed-domains.md)文章) 

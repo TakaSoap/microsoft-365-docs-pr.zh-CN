@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: dba96a43f976353251b5530233667933088f6f29
-ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
+ms.openlocfilehash: df2d2660267c38dccf5ef09fa4955615d3a78141
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/21/2021
-ms.locfileid: "52594081"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52636262"
 ---
 # <a name="prioritize-incidents-in-microsoft-365-defender"></a>确定 defender 中事件的Microsoft 365优先级
 
@@ -67,7 +67,7 @@ Microsoft 365Defender 应用相关分析，将来自不同产品的相关警报�
 
 此表列出了可用的筛选器名称。
 
-| 筛选器名称 | 描述 |
+| 筛选器名称 | 说明 |
 |:-------|:-----|
 | 分配到 | 你可以选择显示分配给你或由自动化处理警报的警报。 |
 | 类别 | 选择类别以专注于特定的策略、技术或看到的攻击组件。 |
@@ -92,5 +92,5 @@ Microsoft 365Defender 应用相关分析，将来自不同产品的相关警报�
 
 ## <a name="see-also"></a>另请参阅
 - [事件概述](incidents-overview.md)
-- [调查事件](investigate-incidents.md)
 - [管理事件](manage-incidents.md)
+- [调查事件](investigate-incidents.md)

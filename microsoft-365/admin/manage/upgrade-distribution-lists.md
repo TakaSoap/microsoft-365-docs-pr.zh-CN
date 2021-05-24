@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 787d7a75-e201-46f3-a242-f698162ff09f
 description: 了解如何将一个或多个通讯组列表升级到 Microsoft 365 中的Outlook，以及如何使用 PowerShell 同时升级多个通讯组列表。
-ms.openlocfilehash: 8179937cafa26a2258f67baee29fcec65bd60632
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: 7e1fc4e971a22ec785662f684a4f9e08970c808a
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52332446"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52636006"
 ---
 # <a name="upgrade-distribution-lists-to-microsoft-365-groups-in-outlook"></a>将通讯组列表Microsoft 365组Outlook
 
@@ -177,7 +177,7 @@ Get-DistributionGroup| Foreach-Object{
 
 ### <a name="do-new-group-members-get-a-welcome-email-in-their-inbox"></a>新组的成员是否收到收件箱中的欢迎电子邮件？
 
-错误。 默认情况下，启用欢迎消息的设置设置为 false。 此设置会影响在迁移完成后可加入的现有和新的组的成员。 如果组所有者稍后允许来宾用户，则来宾用户不会在收件箱中收到欢迎电子邮件。 来宾成员可以继续使用组。
+否。 默认情况下，启用欢迎消息的设置设置为 false。 此设置会影响在迁移完成后可加入的现有和新的组的成员。 如果组所有者稍后允许来宾用户，则来宾用户不会在收件箱中收到欢迎电子邮件。 来宾成员可以继续使用组。
 
 ### <a name="what-if-one-or-some-of-the-dls-are-not-upgraded"></a>如果未升级一个或多个 DLL，将如何？
 
@@ -190,3 +190,9 @@ Get-DistributionGroup| Foreach-Object{
 ### <a name="what-happens-to-the-dl-if-the-upgrade-from-eac-fails"></a>如果从 EAC 升级失败，DL 会发生什么情况？
 
 只有在将呼叫提交到服务器时，才能进行升级。 如果升级失败，DLL 将保持不变。 他们将像以前一样工作。
+
+## <a name="related-content"></a>相关内容
+
+[比较组](../create-groups/compare-groups.md) (文章) \
+[向Microsoft 365解释组 (](../create-groups/explain-groups-knowledge-worker.md)文章) \
+[使用管理中心Microsoft 365或删除组的成员](../create-groups/add-or-remove-members-from-groups.md)

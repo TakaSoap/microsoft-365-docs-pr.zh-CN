@@ -22,12 +22,12 @@ search.appverid:
 - GEA150
 ms.assetid: f09696b2-8c29-4588-a08b-b333da19810c
 description: 了解如何从域中删除旧域Microsoft 365将用户和组移动到另一个域或取消订阅。
-ms.openlocfilehash: 089f0378109dd2a5abdf922694390bfdc943693a
-ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
+ms.openlocfilehash: a8e636059a84a2086844a8ff139d240268ee5b19
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52582928"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635698"
 ---
 # <a name="remove-a-domain"></a>删除域
   
@@ -207,7 +207,7 @@ ms.locfileid: "52582928"
   
 如果有数百或数千用户，使用 PowerShell 查询所有用户，然后将其移至另一个域。否则，可能大量用户将在 UI 中丢失，然后当你要删除域时，将无法删除而且找不到原因。有关详细信息，请参阅 [Set-MsolUserPrincipalName](/powershell/module/msonline/set-msoluserprincipalname?view=azureadps-1.0)。若要设置默认域，请使用 [Set-MsolDomain](/powershell/module/msonline/set-msoldomain?view=azureadps-1.0)。
   
-## <a name="still-need-help"></a>是否仍需要帮助？
+## <a name="still-need-help"></a>仍然需要帮助？
 
 ::: moniker range="o365-worldwide"
 
@@ -220,8 +220,6 @@ ms.locfileid: "52582928"
 
 ## <a name="related-content"></a>相关内容
 
-[域常见问题](../setup/domains-faq.yml) (文章) 
-
-[切换到其他业务Microsoft 365， (](../../commerce/subscriptions/switch-to-a-different-plan.md)文章) 
-
+[域常见问题 (](../setup/domains-faq.yml) 文章) \
+[切换到其他业务Microsoft 365， (](../../commerce/subscriptions/switch-to-a-different-plan.md)文章) \
 [取消订阅 (](../../commerce/subscriptions/cancel-your-subscription.md) 文章) 

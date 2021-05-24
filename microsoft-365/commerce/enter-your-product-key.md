@@ -21,12 +21,12 @@ ms.custom:
 - commerce_purchase
 description: 如果你从零Microsoft 365 商业标准版购买产品，请了解如何兑换产品密钥并激活你的订阅。
 ms.date: 11/13/2020
-ms.openlocfilehash: bc2b07b5a98c13a919596bdbf85a21bdc6c8d2bf
-ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
+ms.openlocfilehash: e075a9d06b45f823540a3a99a1943caa9d116954
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/21/2021
-ms.locfileid: "52593389"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52636118"
 ---
 # <a name="enter-your-product-key-for-microsoft-365-business-standard"></a>输入 Microsoft 365 商业版标准版的产品密钥
 
@@ -57,11 +57,9 @@ ms.locfileid: "52593389"
 
 若要延长到期日期或将许可证添加到现有 Microsoft 365 商业版订阅，请针对同一 Microsoft 365 计划使用未使用过的新密钥。 输入原始 Microsoft 365 产品密钥不起作用，因为已兑换的密钥不能再次使用。 请参阅 [为使用产品密钥而付费的订阅添加许可证或延长](licenses/add-licenses-using-product-key.md)。
 
-## <a name="whats-next"></a>下一步做什么？
+## <a name="next-steps"></a>后续步骤
 
 如果你没有使用 Microsoft 365 商业版，请了解如何 [Microsoft 365 商业](../admin/setup/setup.md)。
-  
-## <a name="still-having-trouble-with-product-keys"></a>仍在使用产品密钥方面遇到问题？
 
 请查看此列表中的常见错误和解决方案： [365 商业版产品密钥有问题？](product-key-errors-and-solutions.md)
   
@@ -69,8 +67,6 @@ ms.locfileid: "52593389"
 
 ## <a name="related-content"></a>相关内容
 
-[升级到其他计划 (](./subscriptions/upgrade-to-different-plan.md) 本文) 
-
-[Microsoft 365 for Business 订阅结束后对我的数据和访问有何影响？](./subscriptions/what-if-my-subscription-expires.md)  (文章) 
-
+[升级到其他计划 (](./subscriptions/upgrade-to-different-plan.md) 文章) \
+[Microsoft 365 for Business 订阅结束后对我的数据和访问有何影响？](./subscriptions/what-if-my-subscription-expires.md) （文章）\
 [了解适用于企业Microsoft 365中的](./licenses/subscriptions-and-licenses.md)订阅 (许可证) 

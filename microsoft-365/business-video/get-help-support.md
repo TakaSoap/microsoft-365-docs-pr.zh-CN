@@ -19,14 +19,16 @@ search.appverid:
 - MET150
 - MOE150
 description: 你必须是商业版订阅的管理员，才能获得管理员帮助，或在线或电话Microsoft 365 商业高级版。
-ms.openlocfilehash: e6308a9728731052d540cf3e872b6e153b64aae2
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: e1250d5c291832e5a337f34e49ce0b7cf68fb08d
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52535706"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635898"
 ---
 # <a name="get-support"></a>获取支持
+
+## <a name="watch-get-help-or-support"></a>观看：获取帮助或支持 
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOgo?autoplay=false]
 
@@ -256,8 +258,6 @@ Office 365 允许委派多个类型的管理员来行使不同的职能。此服
 
 ## <a name="related-content"></a>相关内容
 
-[查找文档和培训](find-help-answers.md) (文章) 
-
-[员工快速设置](employee-quick-setup.md) (文章) 
-
+[查找文档和培训](find-help-answers.md) (文章) \
+[Employee quick setup (](employee-quick-setup.md) article) \
 [设置Microsoft 365 商业高级版视频](setup-overview.md) (概述) 

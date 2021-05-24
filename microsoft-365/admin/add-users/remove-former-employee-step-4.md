@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 按照本文中的步骤向另一名员工授予对前员工的数据OneDrive Outlook访问权限。
-ms.openlocfilehash: cb5c27cbc7f1c184af8f0d1ad32b822660e93791
-ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
+ms.openlocfilehash: 55bc2c3d8530e5cb7702f99a77b3918bfb7c0dee
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52582688"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52634252"
 ---
 # <a name="step-4---give-another-employee-access-to-onedrive-and-outlook-data"></a>步骤 4 - 向另一名员工授予OneDrive和Outlook权限
 
@@ -41,7 +41,7 @@ ms.locfileid: "52582688"
 
 若要保留以前用户OneDrive文件，请首先向自己授予OneDrive访问权限，然后移动要保留的文件。
 
-1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。  
+1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。  
 
 2. 选择用户。
 
@@ -163,8 +163,6 @@ Outlook，除非已创建新的 Outlook Data File (.pst) 或使用了密码保�
 
 ## <a name="related-content"></a>相关内容
 
-[在帐户帐户上添加OneDrive (管理员) ](/sharepoint/manage-user-profiles#add-and-remove-admins-for-a-users-onedrive)
-
-[Restore a deleted OneDrive](/onedrive/restore-deleted-onedrive) (article) 
-  
+[在帐户帐户上添加OneDrive (管理员](/sharepoint/manage-user-profiles#add-and-remove-admins-for-a-users-onedrive)) \
+[Restore a deleted OneDrive](/onedrive/restore-deleted-onedrive) (article) \
 [OneDrive保留和删除 (](/onedrive/retention-and-deletion)文章) 

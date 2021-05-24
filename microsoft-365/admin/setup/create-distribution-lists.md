@@ -23,12 +23,12 @@ ms.custom:
 - AdminSurgePortfolio
 - okr_smb
 description: 在管理中心内创建Microsoft 365组或列表，以便你可以向组发送电子邮件，而无需键入每个收件人的姓名。
-ms.openlocfilehash: 7c04ca3e17959afd4138a6ddf9d9cbcd6c4dbafb
-ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
+ms.openlocfilehash: 845aa04e5e26beb14fca0fa3bc08c0599077b152
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52572245"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635662"
 ---
 # <a name="create-distribution-groups-in-the-microsoft-365-admin-center"></a>在管理中心Microsoft 365通讯组
   
@@ -76,8 +76,6 @@ ms.locfileid: "52572245"
 
 ## <a name="related-content"></a>相关内容
 
-[用户电子邮件设置](../email/office-365-user-email-settings.md) (文章) 
-
-[在管理中心创建](../email/create-edit-or-delete-a-security-group.md)、编辑或删除安全Microsoft 365， (管理) 
-
+[用户电子邮件设置](../email/office-365-user-email-settings.md) (文章) \
+[在管理中心创建、编辑](../email/create-edit-or-delete-a-security-group.md)或删除Microsoft 365安全 (，) \
 [创建共享邮箱](../email/create-a-shared-mailbox.md)（文章）
