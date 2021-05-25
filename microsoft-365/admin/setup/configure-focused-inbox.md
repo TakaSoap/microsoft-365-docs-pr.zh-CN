@@ -19,13 +19,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 613a845c-4b71-41de-b331-acdcf5b6625d
-description: '了解如何为组织的所有或特定用户配置重点收件箱。 '
-ms.openlocfilehash: 62a38f911e4e1b878af6489f096f17644e070978
-ms.sourcegitcommit: 437bdbf3f99610869811e80432a59b5f244f7a87
+description: 如果你负责配置为企业中的每个人配置电子邮件设置，本文介绍了如何为用户配置重点收件箱。
+ms.openlocfilehash: ddd0886988072139a199bfc3f6e8adbbf25ad58b
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/08/2021
-ms.locfileid: "51644508"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52623697"
 ---
 # <a name="configure-focused-inbox-for-everyone-in-your-organization"></a>为组织中的每个人配置重点收件箱
 
@@ -168,7 +168,7 @@ ms.locfileid: "51644508"
   
 ### <a name="is-the-focused-inbox-feature-only-available-for-office-2016-clients"></a>重点收件箱功能是否仅供 Office 2016 客户端使用？
 
-可以，仅影响 Office 2016 的用户。 Outlook 2013 或更早版本不应用此功能。
+是的，仅影响 Office 2016 的用户。Outlook 2013 或更早版本不应用此功能。
   
 ### <a name="how-long-does-it-take-for-focused-inbox-changes-to-take-place-in-outlook"></a>对重点收件箱所作的更改需多长时间才可在 Outlook 中生效？
 
@@ -180,7 +180,7 @@ ms.locfileid: "51644508"
   
 请查看由 Microsoft 的 MVP [Tony Redmond](https://www.petri.com/author/tony-redmond) 撰写的该文章： [重点收件箱如何替换 Office 365 中的待筛选邮件](https://www.petri.com/focused-inbox-office-365)。
   
-### <a name="can-i-keep-users-on-clutter-what-is-microsofts-recommendation-when-it-comes-to-using-clutter-vs-focused-inbox"></a>能否让用户继续使用待筛选邮件？ 在使用待筛选邮件还是重点收件箱方面，Microsoft 有何建议？
+### <a name="can-i-keep-users-on-clutter-what-is-microsofts-recommendation-when-it-comes-to-using-clutter-vs-focused-inbox"></a>能否让用户继续使用待筛选邮件？在使用待筛选邮件还是重点收件箱方面，Microsoft 有何建议？
 
 可以，可让用户继续使用待筛选邮件并禁用重点收件箱，但重点收件箱最终将完全替换待筛选邮件，因此 Microsoft 建议立即移到重点收件箱。若要详细了解何时在 Exchange Online 中使用待筛选邮件，请参阅以下博客文章：[Update on Focused Inbox and our plans for Clutter](https://techcommunity.microsoft.com/t5/Outlook-Blog/Update-on-Focused-Inbox-and-our-plans-for-Clutter/ba-p/136448)（重点收件箱上的更新及针对待筛选邮件的计划）。
   
@@ -206,5 +206,10 @@ Outlook​​ 通过选择具有最新时间戳的 cmdlet 来决定显示相应�
   
 ### <a name="can-i-run-a-script-to-see-who-has-turned-on-focused-inbox"></a>我能通过运行脚本来查看谁启用了重点收件箱吗？
 
-不能，这是设计决定的。 启用重点收件箱是客户端的设置，cmdlet 所能做的只是告诉你用户的邮箱是否有资格获得客户端体验。 可在一些客户端中启用它，同时在另一些客户端中禁用它，例如，在 Outlook 应用和 Outlook Mobile 中启用，但在 Outlook 网页版中禁用。
+不能，这是由设计决定的。启用重点收件箱是客户端设置，cmdlet 仅能告知你用户的邮箱是否符合客户端体验的条件。可在一些客户端中启用它，同时在另一些客户端中禁用它，例如，在 Outlook 应用和 Outlook Mobile 中启用，但在 Outlook 网页版中禁用。
 
+## <a name="related-content"></a>相关内容
+
+[为组织配置待筛选邮件](../email/configure-clutter.md)（文章）\
+[配置共享邮箱设置](../email/configure-a-shared-mailbox.md)（文章）\
+[创建签名和免责声明](create-signatures-and-disclaimers.md)（视频）
