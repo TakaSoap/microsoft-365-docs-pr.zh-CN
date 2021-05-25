@@ -23,18 +23,18 @@ search.appverid:
 - MOE150
 ms.assetid: fb5ac074-e203-4e1f-9843-b9d1a3e03297
 description: '了解 Microsoft 365 全局管理员可以如何更改用户的电子邮件地址以及在名称更改时更改显示名称。 '
-ms.openlocfilehash: 2614e0ae53e5ff1cf08ded384e7470cc5967e682
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 1aa3fd3b67333937e64aab825e64533ccb09eea9
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52535982"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52634216"
 ---
 # <a name="change-a-user-name-and-email-address"></a>更改用户名和电子邮件地址
 
 例如，若用户结婚和更改姓氏，则可能需要更改该用户的电子邮件地址和显示名称。
 
-请观看有关更改用户电子邮件地址的简短视频。 <br><br>
+## <a name="watch-change-a-users-name-or-email-address"></a>观看：更改用户的姓名或电子邮件地址
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1SJuc] 
 
@@ -253,8 +253,6 @@ Set-MsolUserPrincipalName -UserPrincipalName anne.wallace@contoso.onmicrosoft.co
   
 ## <a name="related-content"></a>相关内容
 
-[管理员：重置一个或多个用户的密码](reset-passwords.md)（文章）
-  
-[为用户添加另一个电子邮件地址](../email/add-another-email-alias-for-a-user.md)（文章）
-
+[管理员：重置一个或多个用户的密码](reset-passwords.md)（文章）\
+[为用户添加另一个电子邮件地址](../email/add-another-email-alias-for-a-user.md)（文章）\
 [创建共享邮箱](../email/create-a-shared-mailbox.md)（文章）

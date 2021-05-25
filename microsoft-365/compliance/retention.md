@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解有助于保留所需内容并删除不需要内容的保留策略和保留标签。
-ms.openlocfilehash: 2695d34e29492a88da86c2511ce32e4036031e9d
-ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
+ms.openlocfilehash: ba17a94fa4ae0d12405cc7e38d7d74e90fa7ad02
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52572653"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52625217"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>了解保留策略和保留标签
 
@@ -368,7 +368,7 @@ Office 365 安全与合规中心的保留标签概述信息与 **“信息管理
 
 如果你的保留策略没有保留锁，你可以随时删除你的策略，这将有效地关闭之前应用的保留设置。 你也可以保留该策略，但删除 SharePoint 的网站或 OneDrive 帐户，或者将位置状态更改为关闭，或禁用此策略。
  
-执行上述任一操作时，任何受策略保留限制的 SharePoint 或 OneDrive 内容将继续保留 30 天，以防止意外丢失数据。 在这 30 天宽限期内，不能删除网站，已删除的文件将仍保留（文件将继续添加到保存保留库），但会暂停定期清理保留库的计时器作业，以便必要时可还原这些文件。
+执行上述任一操作时，任何受策略保留限制的 SharePoint 或 OneDrive 内容将继续保留 30 天，以防止意外丢失数据。 在此 30 天宽限期内，将仍然保留已删除的文件（文件继续添加到保留库），但定期清理保留库的计时器作业将为这些作业暂停，以便必要时可还原这些文件。
 
 有关保留库详细信息，请参阅 [如何为 SharePoint 和 OneDrive 应用设置](retention-policies-sharepoint.md#how-retention-works-for-sharepoint-and-onedrive)。
 

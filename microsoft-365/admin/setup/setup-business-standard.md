@@ -23,13 +23,13 @@ search.appverid:
 - MET150
 - MOE150
 - BEA160
-description: 了解如何设置 Microsoft 365 商业标准版订阅。
-ms.openlocfilehash: ce45b4869000892b5640730e765dbfc9c21386ed
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+description: 购买 Microsoft 365 商业标准版时，可以选择使用自有的域，也可以在注册期间购买一个域。
+ms.openlocfilehash: cee91edaab09506dca90cf5ed64ee9bc669c98cf
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244451"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52624413"
 ---
 # <a name="set-up-microsoft-business-standard"></a>设置 Microsoft 商业标准版
 
@@ -69,7 +69,7 @@ ms.locfileid: "52244451"
 
 1. 如果你的 Microsoft 365 商业标准版订阅中存在现有用户（例如，如果使用了 Azure AD Connect），将显示现在为其分配许可证的选项。继续操作，并为这些用户添加许可证。
 
-2. 在你添加用户后，还将显示与添加的新用户共享凭据的选项。 可以选择打印、通过电子邮件发送或下载凭据。
+2. 添加用户之后，还将显示与添加的新用户共享凭据的选项。可以选择打印、通过电子邮件发送或下载凭据。
 
 ## <a name="connect-your-domain"></a>连接你的域
 
@@ -139,4 +139,7 @@ Microsoft 365 不提供适用于公司的公共网站。 如需设置一个公�
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/4839abc6-9323-4cbf-a79d-2907235f9ebb]
 
-请参阅[使用公共网站](../../business-video/create-web-site.md)，了解有关详细信息。
+## <a name="related-content"></a>相关内容
+
+[创建网站](../../business-video/create-web-site.md)（视频）\
+[适用于你的企业的 Microsoft 365](../../business-video/index.yml)（链接页面）

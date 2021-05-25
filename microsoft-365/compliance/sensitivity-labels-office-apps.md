@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: 适用于管理 Office 应用中针对桌面、移动和 Web 的敏感度标签的 IT 管理员的信息。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: bca8efa15bdfe2f4b7c8c90e7a4706f40b19f85d
-ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
+ms.openlocfilehash: dd3f1e7329612755a1806b5d9af8e13f07790cd6
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52572605"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52625121"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>管理 Office 应用中的敏感度标签
 
@@ -65,7 +65,7 @@ Office for iOS 和 Office for Android：敏感度标签内置于 [Office 应用]
 |[现在分配权限](encryption-sensitivity-labels.md#assign-permissions-now)                                 | 1910+          | 16.21+     | 2.21+ | 16.0.11231+ | [支持 - 选择加入](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[允许用户分配权限：权限 <br /> - 提示用户](encryption-sensitivity-labels.md#let-users-assign-permissions)                     |2004+ | 16.35+   | 审阅中   | 审阅中         | 审阅中                                                        |
 |[审核标签相关的用户活动](data-classification-activity-explorer.md)                      | 2011+ | 16.43+ | 2.46+ | 推出时间：16.0.13628 及以上 | 是的 <sup>\*</sup>                                                        |
-|[要求用户将标签应用于其电子邮件和文档](#require-users-to-apply-a-label-to-their-email-and-documents)   | 2101+             | 推出时间：16.45 及以上         | 即将推出：2.47+ | 即将推出：16.0.13628 及以上 | 即将推出                                            
+|[要求用户将标签应用于其电子邮件和文档](#require-users-to-apply-a-label-to-their-email-and-documents)   | 2101+             | 16.45+         | 2.47+ | 16.0.13628+ | [支持 - 选择加入](sensitivity-labels-sharepoint-onedrive-files.md)                                            
 |[将敏感度标签自动应用于内容](apply-sensitivity-label-automatically.md)                    | 2009+                                  | 推出时间：16.44 及以上 | 审阅中 | 审阅中 | [支持 - 选择加入](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[支持对标记文档和加密](sensitivity-labels-coauthoring.md) 创作和自动保存 | 预览： [频道（预览）](https://office.com/insider) | 预览: [当前频道（预览）](https://office.com/insider) | 审阅中 | 审阅中 | [支持 - 选择加入](sensitivity-labels-sharepoint-onedrive-files.md) |
 |

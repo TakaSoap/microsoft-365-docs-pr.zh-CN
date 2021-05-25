@@ -24,12 +24,12 @@ search.appverid:
 ms.assetid: 854b6b2b-0255-4089-8019-b765cff70377
 ROBOTS: NOINDEX
 description: 域名系统将计算机主机名映射到 IP 地址，了解 DNS 和域注册机构基本信息可帮助管理域。
-ms.openlocfilehash: f9982ad55652eac9faf33986bb1481e29897a48e
-ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
+ms.openlocfilehash: 19fc444c056bbf3e1ea1f601d20a9b9cbd75bec8
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52582940"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635422"
 ---
 # <a name="dns-basics"></a>DNS 基础
 
@@ -38,6 +38,8 @@ ms.locfileid: "52582940"
 ::: moniker range="o365-worldwide"
 
 域名（如 contoso.com）可通过全球范围的域注册机构和数据库托管。 域名系统（DNS ）在可人工读取的计算机主机名与网络设备所用的 IP 地址之间进行映射。 理解 DNS 和域注册机构的基础知识，有助于管理域。
+
+## <a name="watch-domains--dns-an-overview"></a>观看：域和 DNS：概述
   
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/c005f2a4-90ad-46fe-b1ab-90f41f2a9d53?autoplay=false]
   
@@ -46,6 +48,8 @@ ms.locfileid: "52582940"
 ::: moniker range="o365-germany"
 
 域名（如 contoso.com）可通过全球范围的域注册机构和数据库托管。 域名系统（DNS ）在可人工读取的计算机主机名与网络设备所用的 IP 地址之间进行映射。 理解 DNS 和域注册机构的基础知识，有助于管理域。
+
+## <a name="watch-domains--dns-an-overview"></a>观看：域和 DNS：概述
   
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/c005f2a4-90ad-46fe-b1ab-90f41f2a9d53?autoplay=false]
   
@@ -192,7 +196,7 @@ Microsoft 365 需要几个 DNS 记录才能使用你的域。除了设置你的�
   
 或者，如果您正在筹划部署，您可能希望查看 Microsoft 365 所需的所有 DNS 记录的列表、其函数和示例值。 查看 “[Microsoft 365 的外部域名系统记录](../../enterprise/external-domain-name-system-records.md)”。
   
-## <a name="how-can-i-learn-more"></a>如何了解更多信息？
+## <a name="next-steps"></a>后续步骤
 
 请查看以下内容之一： 
   
@@ -201,8 +205,6 @@ Microsoft 365 需要几个 DNS 记录才能使用你的域。除了设置你的�
 
 ## <a name="related-content"></a>相关内容
 
-[域常见问题](../setup/domains-faq.yml) （文章）
-
-[查找并修复添加域或 DNS 记录之后出现的问题](find-and-fix-issues.md)（文章）
-
+[域常见问题解答](../setup/domains-faq.yml)（文章）\
+[查找并修复添加域或 DNS 记录之后出现的问题](find-and-fix-issues.md)（文章）\
 [管理域](index.yml)（链接页）

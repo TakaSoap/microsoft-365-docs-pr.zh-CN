@@ -20,12 +20,12 @@ description: 验证域和更新注册机构的帐户中的 DNS 记录，将任�
 ms.custom:
 - okr_smb
 - AdminSurgePortfolio
-ms.openlocfilehash: facdd460bd3197e39dd6d4d9f4a5450dc972bf03
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 62b6793dd97e146b703c82e0ba23f4d7414025b6
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52537555"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52623973"
 ---
 # <a name="add-dns-records-to-connect-your-domain"></a>添加 DNS 记录以连接你的域
 
@@ -169,8 +169,6 @@ SPF 旨在帮助防骗，但有些骗术是 SPF 所无法防范的。 为了防�
 
 ## <a name="related-content"></a>相关内容
 
-[更改名称服务器以使用任意域注册机构设置 Microsoft 365](change-nameservers-at-any-domain-registrar.md)（文章）
-
-[查找并修复添加域或 DNS 记录之后出现的问题](find-and-fix-issues.md)（文章）
-
+[更改名称服务器以使用任意域注册机构设置 Microsoft 365](change-nameservers-at-any-domain-registrar.md)（文章）\
+[查找并修复添加域或 DNS 记录之后出现的问题](find-and-fix-issues.md)（文章）\
 [管理域](index.yml)（链接页）

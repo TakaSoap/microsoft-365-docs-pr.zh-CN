@@ -25,19 +25,25 @@ search.appverid:
 - BEA160
 ms.assetid: 6a3a29a0-e616-4713-99d1-15eda62d04fa
 description: 了解如何设置 Microsoft 商业高级版、Microsoft 365 商业标准版、Microsoft 365 商业基础版、Microsoft 365 商业应用版或 Office 365 教育版订阅。
-ms.openlocfilehash: d0af350ce307bc7f62b51b70b120da19bf0e2156
-ms.sourcegitcommit: a965c498e6b3890877f895d5197898b306092813
+ms.openlocfilehash: 44e15e71be85eabdf6aa80bdb8d4b5dc4cd3b8d7
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51379306"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635614"
 ---
 # <a name="set-up-microsoft-365-for-business"></a>设置 Microsoft 365 商业版
 
 查看以下链接，使用 [Microsoft 365 商业标准版](https://go.microsoft.com/fwlink/p/?LinkId=627220)、Microsoft 365 商业基础版、Microsoft 365 商业应用版或 Office 365 教育版，让你的企业或[非营利组织](https://go.microsoft.com/fwlink/p/?LinkId=627221)正常运行起来。
 
-不是企业？ 请参阅[设置 Microsoft 365 家庭版或 Microsoft 365 个人版](https://support.microsoft.com/office/65415a24-3cbf-4f30-901d-9bf9eba7fce2)。
+不是企业？请参阅[设置 Microsoft 365 家庭版或 Microsoft 365 个人版](https://support.microsoft.com/office/65415a24-3cbf-4f30-901d-9bf9eba7fce2)。
 - [设置 Microsoft 365 小型企业版](setup-business-basic.md)
 - [设置 Microsoft 商业标准版](setup-business-standard.md)
 - [设置 Microsoft 365 商业高级版](../../business/set-up.md)
 - [Microsoft 365 商业应用版](setup-apps-for-business.md)
+
+## <a name="related-content"></a>相关内容
+
+[入门](../setup/index.yml)（链接页）\
+[如何注册 - 管理员帮助](../admin-overview/sign-up-for-office-365.md)（视频）\
+[试用或购买 Microsoft 365 商业版订阅](../../commerce/try-or-buy-microsoft-365.md)（文章）

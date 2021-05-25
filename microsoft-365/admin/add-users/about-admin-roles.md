@@ -22,16 +22,16 @@ search.appverid:
 - MOE150
 ms.assetid: da585eea-f576-4f55-a1e0-87090b6aaa9d
 description: 例如服务管理员等管理员角色映射到业务功能，并授予在管理中心执行特定任务的权限。
-ms.openlocfilehash: 7ba8b6fd483901fde31a9bceca189797b4f2e16d
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 3163b7a4037a923122d2da170ac5ea9e8c2d0185
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52536006"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52634192"
 ---
 # <a name="about-admin-roles"></a>关于管理员角色
 
-Microsoft 365或Office 365订阅附带一套管理员角色，可使用Microsoft 365管理中心将其分配给组织中的用户。 每个管理员角色都映射到常用的业务功能，并授予这些用户在管理中心执行特定任务的权限。
+Microsoft 365 或 Office 365 订阅附带了一组管理员角色，可使用 Microsoft 365 管理中心将这些角色分配给组织中的用户。每个管理员角色都映射到常用的业务功能，并授予组织中的用户在管理中心执行特定任务的权限。
 
 Microsoft 365 管理中心可让你管理 Azure AD 角色和 Microsoft Intune 角色。 然而，这些角色是 Azure 门户和 Intune 管理中心中可用角色的子集。
 
@@ -95,10 +95,6 @@ Microsoft 365 管理中心可让你管理 Azure AD 角色和 Microsoft Intune �
   
 ## <a name="related-content"></a>相关内容
 
-[分配管理员角色](assign-admin-roles.md)（文章）
-
-[Microsoft 365 管理中心中的 Azure AD 角色](azure-ad-roles-in-the-mac.md)（文章）
-
-[Exchange Online 管理员角色](about-exchange-online-admin-role.md)（文章）
-  
-[Microsoft 365 管理中心中的活动报告](../activity-reports/activity-reports.md)（文章）
+[分配管理员角色](assign-admin-roles.md)（文章）\
+[Microsoft 365 管理中心中的 Azure AD 角色](azure-ad-roles-in-the-mac.md)（文章）\
+[Exchange Online 管理员角色](about-exchange-online-admin-role.md)（文章）\ [Microsoft 365 管理中心中的活动报告](../activity-reports/activity-reports.md)（文章）

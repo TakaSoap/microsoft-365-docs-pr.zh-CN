@@ -22,12 +22,12 @@ description: 使用 Microsoft 信息保护 (MIP) 中的敏感度标签对敏感�
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: bd3cc0a71fab9f2ceb6d3219a371bb4d5c030744
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 171f449a8b73ff42113358d50dbe8bde909f5d4d
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52297244"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52625181"
 ---
 # <a name="learn-about-sensitivity-labels"></a>了解敏感度标签
 
@@ -209,7 +209,7 @@ ms.locfileid: "52297244"
 
 创建为用户和组分配新敏感度标签的标签策略后，用户可在其 Office 应用中看到这些标签。 请留出长达 24 小时的时间将最新更改复制到整个组织内。
 
-可创建和发布的敏感度标签的数量没有限制，但有一种例外：如果标签应用了加密，则最多可创建 500 个标签。 但是，最佳做法是减少管理开销并降低用户复杂程度，尽量将标签的数量保持在最低限度。 事实证明，当用户拥有五个以上的主标签或者每个主标签拥有五个以上的子标签时，实际部署的效率就会显著降低。
+对于可创建和发布的敏感度标签不存在数量限制，但有一个例外情况：如果标签应用指定用户和权限的加密，则此配置最多支持 500 个标签。 但是，最佳做法是减少管理开销并降低用户复杂程度，尽量将标签的数量保持在最低限度。 事实证明，当用户拥有五个以上的主标签或者每个主标签拥有五个以上的子标签时，实际部署的效率就会显著降低。
 
 ### <a name="label-policy-priority-order-matters"></a>标签策略优先级（顺序非常重要）
 
@@ -253,7 +253,7 @@ ms.locfileid: "52297244"
 > [!NOTE]
 > Azure 门户中 Azure 信息保护标签的标签管理 **2021 年 3 月 31 日**。 有关详细信息，请参阅官方[弃用通知](https://techcommunity.microsoft.com/t5/azure-information-protection/announcing-timelines-for-sunsetting-label-management-in-the/ba-p/1226179)。
 
-如果租户尚未位于统一 [标识平台](https://docs.microsoft.com/azure/information-protection/faqs#how-can-i-determine-if-my-tenant-is-on-the-unified-labeling-platform)，必须先激活统一标签，才能使用敏感度标签。 有关说明，请参阅 [Azure 信息保护标签迁移到统一敏感度标签](/azure/information-protection/configure-policy-migrate-labels)。 
+如果租户尚未位于统一 [标识平台](/azure/information-protection/faqs#how-can-i-determine-if-my-tenant-is-on-the-unified-labeling-platform)，必须先激活统一标签，才能使用敏感度标签。 有关说明，请参阅 [Azure 信息保护标签迁移到统一敏感度标签](/azure/information-protection/configure-policy-migrate-labels)。 
 
 ## <a name="sensitivity-labels-and-the-microsoft-information-protection-sdk"></a>敏感度标签和 Microsoft 信息保护 SDK
 
