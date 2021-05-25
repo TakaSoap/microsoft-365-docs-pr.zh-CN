@@ -19,12 +19,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
-ms.openlocfilehash: bad31160bb27c79f672ddd28a5fced3bf8c2ee1b
-ms.sourcegitcommit: 682ed2c4e2bc6979025cdb89094866cef6c8751a
+ms.openlocfilehash: e7cecd645d857a5c2d5e7a98c78bd3f39b68449d
+ms.sourcegitcommit: ddf6c25d1ed6387d07614f7042e033bad7f406f9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "51943037"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "52639400"
 ---
 # <a name="microsoft-defender-for-endpoint-in-the-microsoft-365-security-center"></a>安全中心中的 Microsoft Defender Microsoft 365终结点
 
@@ -35,6 +35,28 @@ ms.locfileid: "51943037"
 - [Microsoft 365 Defender](microsoft-365-defender.md)
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/defender-for-office-365)
+
+## <a name="quick-reference"></a>快速参考
+
+图像和下表列出了安全中心Microsoft Defender 安全中心导航Microsoft 365更改。
+
+> [!div class="mx-imgBorder"]
+> ![移动到位置的图像](../../media/mde-m3d-security-center.png)
+
+| Microsoft Defender 安全中心 | Microsoft 365 安全中心 |
+|---------|---------|
+| 仪表板 <ul><li>安全操作</li><li>威胁分析</li></ul>  |主页 <ul><li>威胁分析</li></ul>   |
+| 事件 | 事件&警报 |
+| 设备清单 | 设备清单 |
+| 警报队列 | 事件&警报 |
+| 自动调查 | 操作中心 |
+| 高级搜寻 | 搜寻 |
+| 报告 | 报告 |
+| 合作伙伴& API | 合作伙伴& API |
+| 威胁&漏洞管理 | 漏洞管理 |
+| 评估和教程 | 评估&教程 |
+| 配置管理 | 配置管理 |
+| 设置 | 设置 | 
 
 改进的安全[Microsoft 365](overview-security-center.md)中心结合使用了保护、检测、调查和响应电子邮件、协作、标识 [https://security.microsoft.com](https://security.microsoft.com) 和设备威胁的管理功能。 此安全中心将现有 Microsoft 安全门户的功能汇集在一起，Microsoft Defender 安全中心安全Office 365安全&中心。
 
@@ -65,7 +87,7 @@ Microsoft 365安全中心中的 Microsoft Defender for Endpoint 支持以在 Mic
 
 ### <a name="alerts-and-actions"></a>警报和操作
 
-|**区域**  |**更改说明** |
+| 领域 | 更改说明 |
 |---------|---------|
 | [事件&警报](incidents-overview.md)  | 在Microsoft 365安全中心，可以跨所有终结点、电子邮件和标识管理事件和警报。 我们已将体验融合在一起，帮助你更轻松地查找相关事件。 有关详细信息，请参阅 [事件概述](incidents-overview.md)。   |
 | [搜寻](advanced-hunting-overview.md)  |  修改在 Microsoft Defender for Endpoint 中创建的自定义检测规则，以包含标识和电子邮件表会自动将它们Microsoft 365 Defender。 其相应的警报也会显示在 Microsoft 365 Defender 中。 有关这些更改的更多详细信息，请阅读迁移 [自定义检测规则](advanced-hunting-migrate-from-mde.md#migrate-custom-detection-rules)。 <br><br>高级 `DeviceAlertEvents` 搜寻的表在 Microsoft 365 Defender 中不可用。 若要在 Microsoft 365 Defender 中查询特定于设备的警报信息，可以使用 和 表来容纳来自各种源 `AlertInfo` `AlertEvidence` 集的更多信息。 通过以下不含 [DeviceAlertEvents](advanced-hunting-migrate-from-mde.md#write-queries-without-devicealertevents)的 Write 查询制作下一个与设备相关的查询。|
@@ -74,7 +96,7 @@ Microsoft 365安全中心中的 Microsoft Defender for Endpoint 支持以在 Mic
 
 ### <a name="endpoints"></a>终结点
 
-|**区域**  |**更改说明**  |
+| 领域 | 更改说明 |
 |---------|---------|
 |搜索   |  Microsoft Defender for Endpoint 搜索栏不是位于标题中，而是在"终结点"部分下移动。 你可以继续搜索设备、文件、用户、URL、IP、漏洞、软件和建议。  |
 |[仪表板](/windows/security/threat-protection/microsoft-defender-atp/security-operations-dashboard)   |  这是安全操作仪表板。 请参阅触发的活动警报数、处于风险中的设备、处于风险中的用户以及警报、设备和用户的严重性级别。 还可以查看任何设备是否具有传感器问题、整体服务运行状况，以及如何检测到任何未解决的警报。 |
@@ -92,9 +114,9 @@ Microsoft 365安全中心中的 Microsoft Defender for Endpoint 支持以在 Mic
 
 ### <a name="access-and-reporting"></a>访问和报告
 
-|**区域**  |**更改说明**  |
+| 领域 | 更改说明 |
 |---------|---------|
-| 报表  | 请参阅终结点和电子邮件报告&协作，包括威胁防护、设备运行状况和合规性以及易受攻击的设备。 |
+| 报告  | 请参阅终结点和电子邮件报告&协作，包括威胁防护、设备运行状况和合规性以及易受攻击的设备。 |
 | 健康  |  当前链接到管理中心 中的"服务运行状况["Microsoft 365页面](https://admin.microsoft.com/)。 |
 | 设置 |  管理安全中心、Microsoft 365 Defender、Microsoft 365、电子邮件&协作、标识和设备发现的设置。   |
 
@@ -122,7 +144,7 @@ Microsoft 365安全中心中的 Microsoft Defender for Endpoint 支持以在 Mic
 
 操作中心显示自动调查和响应功能创建调查。 Microsoft 365 Defender 中的自动自恢复功能可自动响应特定事件，帮助团队实现安全。
 
-[详细了解操作中心](m365d-action-center.md)
+[详细了解操作中心](m365d-action-center.md)。
 
 ### <a name="threat-analytics"></a>威胁分析
 
@@ -134,7 +156,7 @@ Microsoft 365安全中心中的 Microsoft Defender for Endpoint 支持以在 Mic
 
 你可以从安全中心的左上角导航Microsoft 365访问威胁分析，也可以从显示组织的主要威胁的专用仪表板卡访问威胁分析。
 
-深入了解如何使用威胁 [跟踪和响应新兴威胁](./threat-analytics.md)
+详细了解如何使用威胁 [分析跟踪和响应新出现的威胁](./threat-analytics.md)。
 
 ### <a name="endpoints-section"></a>终结点部分
 
