@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 7e453a40-66df-44ab-92a1-96786cb7fb34
 description: “**邮箱未找到**”错误意味着用来连接 Outlook 网页版的帐户没有 Exchange Online 许可证。
-ms.openlocfilehash: 5ae850da3b9a4022c01f8bf4469f5e86f44b10bd
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: cb82f917adca8f1fc183fd9516321a524c63eb69
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52537435"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635782"
 ---
 # <a name="getting-a-mailbox-not-found-error-in-outlook-on-the-web"></a>在 Outlook 网页版中遇到“邮箱未找到”错误？
 
@@ -37,8 +37,6 @@ ms.locfileid: "52537435"
 
 ## <a name="related-content"></a>相关内容
 
-[为用户添加另一个电子邮件别名](../email/add-another-email-alias-for-a-user.md)（文章）
-
-[在 Microsoft 365 中配置电子邮件转发](../email/configure-email-forwarding.md)（文章）
-
+[为用户添加另一个电子邮件别名](../email/add-another-email-alias-for-a-user.md)（文章）\
+[在 Microsoft 365 中配置电子邮件转发](../email/configure-email-forwarding.md)（文章）\
 [创建共享邮箱](../email/create-a-shared-mailbox.md)（文章）
