@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: a1e07ac2e2e544605f04e9090177004db64d2f04
-ms.sourcegitcommit: f000358c01a8006e5749a86b256300ee3a73174c
+ms.openlocfilehash: d01e1d847a8932d95e645a89eff15cf0793491e5
+ms.sourcegitcommit: 07e536f1a6e335f114da55048844e4a866fe731b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2021
-ms.locfileid: "51994993"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "52651268"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-mac"></a>Mac 上的 Microsoft Defender for Endpoint 的新增功能
 
@@ -37,6 +37,14 @@ ms.locfileid: "51994993"
 
 > [!IMPORTANT]
 > 在 macOS 11 (Sur) 上，Microsoft Defender for Endpoint 需要额外的配置文件。 如果你是从 macOS 早期版本升级的现有客户，请确保部署此页中列出的其他 [配置文件](mac-sysext-policies.md)。
+
+## <a name="1012964-20121042129640"></a>101.29.64 (20.121042.12964.0) 
+
+- 从此版本开始，在通过命令行客户端触发的按需防病毒扫描期间检测到的威胁将自动修正。 扫描期间通过用户界面触发的威胁仍然需要手动操作。
+- `mdatp diagnostic real-time-protection-statistics` 现在支持两个其他开关：
+  - `--sort`：按扫描的文件总数对输出进行降序排序
+  - `--top N`：显示前 N 个 (仅在指定了值 `--sort` 时) 
+- 性能改进 (在 BUG 修复中) &使用时的性能改进
 
 ## <a name="1012750-20121022127500"></a>101.27.50 (20.121022.12750.0) 
 

@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: cbf68b6ce8397f0339b374a041ba2629b20db699
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 4be0960e8ba868df2acb313b171a08f667c287a7
+ms.sourcegitcommit: 07e536f1a6e335f114da55048844e4a866fe731b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51933333"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "52651328"
 ---
 # <a name="privacy-for-microsoft-defender-for-endpoint-on-linux"></a>Linux 上的 Microsoft Defender for Endpoint 的隐私
 
@@ -135,6 +135,7 @@ The privacy controls for the various types of data described in the preceding se
 | cloud_service.service_uri                           | 用于与云通信的 URI。 |
 | cloud_service.diagnostic_level                      | 设备诊断级别 (可选) 。 |
 | cloud_service.automatic_sample_submission           | 设备的自动示例提交级别 (无、安全、) 。 |
+| cloud_service.automatic_definition_update_enabled   | 是否启用自动定义更新。 |
 | edr.early_preview                                   | 设备是否应该运行EDR早期预览功能。 |
 | edr.group_id                                        | 检测和响应组件使用的组标识符。 |
 | edr.tags                                            | 用户定义的标记。 |
@@ -207,6 +208,7 @@ The privacy controls for the various types of data described in the preceding se
 | antivirus_engine.scan_cache_maximum                | 产品缓存的大小。 |
 | antivirus_engine.maximum_scan_threads              | 用于扫描的最大线程数。 |
 | antivirus_engine.threat_restoration_exclusion_time | 从隔离区还原的文件可以再次检测到之前，该时间已过。 |
+| antivirus_engine.threat_type_settings              | 产品如何处理不同威胁类型的配置。 |
 | filesystem_scanner.full_scan_directory             | 完全扫描目录。 |
 | filesystem_scanner.quick_scan_directories          | 快速扫描中使用的目录列表。 |
 | edr.latency_mode                                   | 检测和响应组件使用的延迟模式。 |

@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 摘要：了解从德国 Microsoft 云迁移到德国 microsoft 云 (到德国新数据中心) Office 365 服务的迁移阶段操作和影响。
-ms.openlocfilehash: a99103083c8fabae3934a6622acc55a59ff5c9a0
-ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
+ms.openlocfilehash: df2407deeaa3cd6e0b0925b48f888a25c0435042
+ms.sourcegitcommit: 07e536f1a6e335f114da55048844e4a866fe731b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52346288"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "52651102"
 ---
 # <a name="migration-phases-actions-and-impacts-for-the-migration-from-microsoft-cloud-deutschland"></a>迁移阶段从德国 Microsoft 云迁移的操作和影响
 
@@ -305,12 +305,15 @@ Office 365"德国"地区的租户要求所有用户在租户迁移到达阶段 9
 
 **适用于：** 所有客户
 
-当 Office 365 租户完成 Azure AD 最终完成 (第 (阶段 9) ) 所有服务将过渡到全球。 任何应用程序或用户都不应针对任何 Microsoft 云德国终结点访问租户的资源。 自动完成 30 天后，Microsoft 云德国 Azure AD 服务将自动停止对已转换租户的终结点访问。 从此时开始，针对德国 Microsoft 云服务的终结点请求（如身份验证）将失败。 
+当 Office 365 租户完成迁移的最后步骤时 (阶段 9：Azure AD 最终) ，所有服务将转换到全球。 任何应用程序或用户都不应针对任何 Microsoft 云德国终结点访问租户的资源。 自动完成 30 天后，Microsoft 云德国 Azure AD 服务将自动停止对已转换租户的终结点访问。 从此时开始，针对德国 Microsoft 云服务的终结点请求（如身份验证）将失败。  
+
+Microsoft Azure租户完成到全球的迁移后（第 9 阶段) ，客户必须按照 Azure 迁移操作手册中所述的步骤转换其[Azure](/azure/germany/germany-migration-main) (工作负载。  
 
 | 步骤 (步骤)  | 说明 | 影响 |
 |:-------|:-------|:-------|
 | 更新用户终结点 | 确保所有用户使用正确的 Microsoft 全球终结点访问服务 |迁移完成 30 天后，德国 Microsoft 云终结点将停止处理请求;客户端或应用程序流量将失败。  |
 | 更新 Azure AD 应用程序终结点 | 必须将应用程序的身份验证、Azure Active Directory (Azure AD) Graph 和 MS Graph更新为 Microsoft Worldwide 服务的终结点。 | 迁移完成 30 天后，德国 Microsoft 云终结点将停止处理请求;客户端或应用程序流量将失败。 |
+| 迁移 Azure 工作负载 | Azure 服务客户必须为 Azure 服务预配新的全球订阅，并按 [Azure 迁移手册 执行迁移](/azure/germany/germany-migration-main)。 | 完全过渡到全球服务 (阶段 10) ，客户将不再能够访问 Microsoft 德国 Microsoft 云 Azure 门户中的 Azure 工作负载。 |
 ||||
 
 ### <a name="azure-ad-connect"></a>Azure AD Connect

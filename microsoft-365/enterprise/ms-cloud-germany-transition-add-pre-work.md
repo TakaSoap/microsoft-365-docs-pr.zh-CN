@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 摘要：从德国 Microsoft 云 (德国) 迁移到新的德国数据中心Office 365服务前工作。
-ms.openlocfilehash: f872a75ed11bfd53c2100f1370a4e22426437bff
-ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
+ms.openlocfilehash: 66f23d33e9e55c432c33e9d90549d33ea42536db
+ms.sourcegitcommit: 07e536f1a6e335f114da55048844e4a866fe731b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52344694"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "52651016"
 ---
 # <a name="pre-migration-activities-for-the-migration-from-microsoft-cloud-deutschland"></a>从德国 Microsoft 云迁移的迁移前活动
 
@@ -205,7 +205,7 @@ Enterprise混合部署 Exchange Online 和本地 Exchange Server 的客户运行
 如果你正在为德国 Microsoft 云实例中的 Office 365 和 Microsoft Azure 使用相同的 Azure Active Directory 标识分区，请确保你正在准备客户驱动的 Microsoft Azure 服务迁移。
 
 > [!NOTE]
-> 在 Office 365 租户达到迁移阶段 3 之前，不得开始迁移 Microsoft Azure 服务，并且必须在迁移阶段 8 完成之前完成迁移。
+> 在 Office 365 租户进入迁移阶段 9 之前，Microsoft Azure 服务的迁移可能不会启动，并且必须在迁移阶段 10 完成之前完成。
 
 使用 Office 365 和 Azure (例如网络、计算和存储) 的客户将执行资源到 Office 365 服务实例的迁移。 此迁移是客户的责任。 消息中心帖子将发出开始信号。 必须先完成迁移，然后才能在服务环境中完成 Azure AD Office 365迁移。 有关 Azure 迁移，请参阅 Azure 迁移操作手册 [（Azure 德国的迁移指南概述](https://docs.microsoft.com/azure/germany/germany-migration-main)）。
 
@@ -234,7 +234,7 @@ Office 365 Germany customers who have Azure subscriptions under the same identit
 - A Message center notification will signal the point at which customer-led migration can begin.
 -->
 
-## <a name="more-information"></a>详细信息
+## <a name="more-information"></a>更多信息
 
 入门：
 

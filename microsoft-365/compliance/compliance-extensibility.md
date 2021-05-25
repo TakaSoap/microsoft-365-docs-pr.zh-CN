@@ -20,12 +20,12 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: 了解如何使用第Microsoft 365数据连接器和 Microsoft Graph API 扩展合规性解决方案。
-ms.openlocfilehash: 676c0ba41e517dd0c3692fec29a1d4034641b634
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 1fed5ac72c7dbfa4b1be370ec03678e1beecdcd2
+ms.sourcegitcommit: 07e536f1a6e335f114da55048844e4a866fe731b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50919718"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "52651052"
 ---
 # <a name="microsoft-365-compliance-extensibility"></a>Microsoft 365合规性扩展性
 
@@ -94,3 +94,8 @@ Graph适用于 Advanced eDiscovery API 可用于以可扩展且可重复的方�
 企业资讯存档 (EIA) for Microsoft Teams 是我们的客户的一个关键方案，因为它允许客户解决法规要求。 除了我们在 Microsoft Teams 中存档内容的内置功能之外，客户和合作伙伴现在可以使用 Teams Export API 来解决自定义应用程序和集成方案。 Teams导出 API 支持批量导出 (/每个应用程序/每个租户每秒最多 200 个请求) Teams邮件附件。 此外，API 还可以在删除邮件后的最多 30 天内访问已删除的邮件。 有关导出 API Teams以及如何在应用程序中使用它们，请参阅使用导出 API 导出Microsoft Teams[内容](/microsoftteams/export-teams-content)。
 
 有关使用导出 API 的许可Teams，请参阅Microsoft 365安全与合规[&指南](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。
+
+### <a name="microsoft-graph-connector-apis-preview"></a>Microsoft Graph 连接器 API (预览) 
+
+借助[Microsoft Graph](/microsoftsearch/connectors-overview)连接器，组织可以索引第三方数据，以便数据出现在 Microsoft 搜索结果中。 此功能扩展了 Microsoft 365 生产力应用中可搜索的内容源类型以及 Microsoft 更广泛的数据源。 第三方数据可以托管在本地或公有云或私有云中。 从Advanced eDiscovery开始，我们将为开发人员预览连接的应用的内置合规性Microsoft 365预览。 这使集成到生态系统的应用Microsoft 365，从而为用户提供无缝的合规性体验。 若要了解有关如何在应用视图中合并 Microsoft Graph 连接器 API 的信息，请参阅在 Microsoft 应用视图中创建、更新[和删除Graph。](/graph/search-index-manage-connections)
+

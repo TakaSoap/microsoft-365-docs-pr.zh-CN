@@ -12,17 +12,19 @@ ms.collection: m365solution-managecontracts
 search.appverid: ''
 localization_priority: None
 ROBOTS: ''
-description: 了解如何使用 Syntex、Microsoft 365 和 SharePoint 的 Microsoft Teams 解决方案管理Power Automate。
-ms.openlocfilehash: 18866425cb331b01525dd488a6688608a3d1e559
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+description: 了解如何使用 Syntex、SharePoint、SharePoint 列表、Microsoft Teams 和 Power Automate 的 Microsoft 365 解决方案来管理Power Automate。
+ms.openlocfilehash: 219ab13eb5787bef566ede0c5dc856da29d96837
+ms.sourcegitcommit: 07e536f1a6e335f114da55048844e4a866fe731b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52636214"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "52651280"
 ---
 # <a name="manage-contracts-using-a-microsoft-365-solution"></a>使用解决方案管理Microsoft 365合同
 
 本文介绍如何使用组织的 Syntex 和 SharePoint 组件为组织创建Microsoft 365。 它提供了一个框架，可帮助你计划和创建满足你独特业务需求的解决方案。 即使此解决方案不满足您的整体业务需求，也可以将该解决方案的某些部分用于创建自定义合同管理解决方案。
+
+*此内容集记录由 Microsoft 365使用 Microsoft 新式工作解决方案策略团队开发的解决方案。*
 
 ## <a name="identify-the-business-problem"></a>确定业务问题
 

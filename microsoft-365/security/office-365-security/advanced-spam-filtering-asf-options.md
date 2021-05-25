@@ -19,12 +19,12 @@ ms.custom:
 description: 管理员可以了解 EOP (中的反) 策略中可用的高级垃圾邮件筛选器Exchange Online Protection (ASF) 。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 5ade36086d1503b89b506730b98ac7965845e86b
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 3639b12c0003c958681671fce6bb2b857b3931b8
+ms.sourcegitcommit: 07e536f1a6e335f114da55048844e4a866fe731b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51203875"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "52651196"
 ---
 # <a name="advanced-spam-filter-asf-settings-in-eop"></a>EOP 中的 (垃圾邮件筛选器) ASF 设置
 
@@ -81,6 +81,8 @@ ms.locfileid: "51203875"
 
 以下 ASF 设置将检测到 (邮件的垃圾邮件可信度 (S) CL 级别设置为 5 或 6，对应于垃圾邮件筛选器裁定和反垃圾邮件策略中的相应操作。
 
+<br>
+
 ****
 
 |反垃圾邮件策略设置|说明|已添加 X 标头|
@@ -94,6 +96,8 @@ ms.locfileid: "51203875"
 ## <a name="mark-as-spam-settings"></a>标记为垃圾邮件设置
 
 以下 ASF 设置将检测到的邮件的 SCL 设置为 9，对应于高可信度垃圾邮件筛选器裁定和反垃圾邮件策略中的相应操作。
+
+<br>
 
 ****
 

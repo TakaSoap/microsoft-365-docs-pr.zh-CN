@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 40d86f9f3a4896bbe788f0a9894a7e08efe3a690
-ms.sourcegitcommit: 58d74ff60303a879e35d112f10f79724ba41188f
+ms.openlocfilehash: 2a4b122b3ef3a1ddaf61d8f9373bec3e721db177
+ms.sourcegitcommit: 07e536f1a6e335f114da55048844e4a866fe731b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52301724"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "52651376"
 ---
 # <a name="redirecting-accounts-from-microsoft-defender-for-office-365-to-the-microsoft-365-security-center"></a>将帐户从 Microsoft Defender for Office 365重定向到Microsoft 365安全中心
 
@@ -64,13 +64,13 @@ ms.locfileid: "52301724"
 > 启用重定向后，应用此设置时的活动会话中的帐户不会从会话弹出，并且仅在结束当前会话并再次登录后路由到 Microsoft 365 安全中心。
 
 ## <a name="can-i-go-back-to-using-the-former-portal"></a>我能否返回到使用以前的门户？
-如果无法通过 Microsoft 365 安全中心门户完成某些操作或无法完成某些操作，我们希望使用门户反馈选项来收听。 如果遇到任何重定向问题，我们鼓励你通过私人预览版直接与你的 PM 好友联系，或者通过"提供反馈提交"表单告诉我们。
+如果无法通过 Microsoft 365 安全中心门户完成某些操作或无法完成某些操作，我们希望使用门户反馈选项来收听。 如果遇到重定向问题，请告诉我们。
 
 还原到以前的门户：
 
 1. [以全局](https://security.microsoft.com/)管理员Microsoft 365 Azure Active directory 中的安全管理员权限使用 和 帐户登录安全中心。
 
-2. 导航到 **设置**  >    >  **终结点常规**  >  **门户重定向。**  
+2. 导航到 **设置**  >  **电子邮件&协作**  >  **门户重定向**。   
 
 3. 将"自动重定向"设置切换为 **"关"。**
 

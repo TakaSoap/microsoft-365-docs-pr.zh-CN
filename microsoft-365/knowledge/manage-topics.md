@@ -13,12 +13,12 @@ ms.collection:
 - enabler-strategic
 - m365initiative-viva-topics
 localization_priority: None
-ms.openlocfilehash: ba8f27c90f9c84729a10f461e85b2e1441b49549
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: f2429b0ffdd4a238bc9322ae9199eebbbfd407b5
+ms.sourcegitcommit: 07e536f1a6e335f114da55048844e4a866fe731b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52625397"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "52651149"
 ---
 # <a name="manage-topics-in-the-topic-center-in-microsoft-viva-topics"></a>在 Microsoft Viva 主题的主题中心管理主题
 
@@ -82,9 +82,9 @@ ms.locfileid: "52625397"
 
 2. 在主题页面上，查看主题页面，如果需要对页面做出任何更改，请选择"编辑"。 发布任何编辑将本主题移至"已发布 **"** 选项卡。
 
-3. 查看主题后，返回到"管理 **主题"** 页。 对于所选主题，您可以：
+3. 查看主题后，返回到"管理 **主题"** 页。 对于已选择的主题，可以：
 
-   - 选择选中标记以确认主题。
+   - 选择复选标记以确认主题。
     
    - 如果要删除主题，请选择 **x。**
 
@@ -106,9 +106,9 @@ ms.locfileid: "52625397"
 
 在"管理主题"页上，在指定的 SharePoint 源位置中发现并已被知识经理确认或"众源"确认的主题 (通过卡片反馈机制平衡负用户投票与正用户投票) 将在"已确认"选项卡中列出。 如果需要，具有管理主题权限的用户可以审阅已确认的主题，并选择拒绝它们。
 
-查看已确认的主题：
+要查看已确认的主题，请：
 
-1. 在 **“确认”** 选项卡上，选择主题以打开主题页面。
+1. 在“**已确认**”选项卡上，选择主题以打开主题页面。
 
 2. 在主题页面上，查看主题页面，如果需要对页面做出任何更改，请选择"编辑"。
 
@@ -119,3 +119,11 @@ ms.locfileid: "52625397"
 已发布的主题已经过编辑，以便始终向遇到页面的任何人显示特定信息。 手动创建的主题也会在此列出。
 
    ![管理主题](../media/knowledge-management/manage-topics-new.png)
+
+## <a name="topic-count-dashboard"></a>主题计数仪表板
+
+通过仪表板视图中的此图表，可以查看 Viva 主题主题中心中的主题数量。 该图显示了每个主题生命周期阶段的主题计数，还显示了主题计数如何随着时间的推移而呈趋势。 知识管理人员可以直观地监视 AI 发现新主题的速率，以及知识管理器或用户操作确认或发布主题的速率。
+
+知识管理员在"管理主题"页上的主题列表中看到的主题数量可能与在仪表板中显示的主题数不同。 这是因为知识管理员可能无法访问所有主题。 在应用权限修整之前，会执行仪表板视图中呈现的计数。 
+
+   ![主题计数仪表板的屏幕截图](../media/knowledge-management/topic-count-dashboard.png)

@@ -1,6 +1,6 @@
 ---
 title: 第 3 步。 对第一个事件执行事后评审
-description: 如何查看 Microsoft 365 Defender 中的第一个事件。
+description: 如何在 defender 中查看第一个Microsoft 365事件。
 keywords: 事件, 警报, 调查, 关联, 攻击, 计算机, 设备, 用户, 标识, 标识, 邮箱, 电子邮件, 365, microsoft, m365
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 44f583d32de166fe3d68a182406eb3a2ee814084
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 6b5311a2923d7b299ba4f70ef3c2e8d91809e7c8
+ms.sourcegitcommit: 07e536f1a6e335f114da55048844e4a866fe731b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52297148"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "52651364"
 ---
 # <a name="step-3-perform-a-post-incident-review-of-your-first-incident"></a>步骤 3. 对第一个事件执行事后评审
 
@@ -36,9 +36,9 @@ ms.locfileid: "52297148"
 **适用于：**
 - Microsoft 365 Defender
 
-国家标准与技术协会 (NIST) 建议，一旦采取所有步骤从攻击中恢复，组织必须查看事件以从事件中学习，了解并改进安全状况或流程。 在准备下一个事件时，评估事件处理的各个方面变得非常重要。
+美国国家标准和技术协会 (NIST) 建议，一旦采取所有步骤从攻击中恢复，组织必须检查事件以从事件中学习，并改进安全状况或流程。 在准备下一个事件时，评估事件处理的各个方面变得非常重要。
 
-Microsoft 365 Defender 可通过向组织提供符合 [MITRE ATT](https://attack.mitre.org/)和 CK Framework 的警报，帮助&活动。 所有 Microsoft Defender 解决方案都根据 ATT 和 CK 策略&标记攻击。 
+Microsoft 365Defender 可以通过向组织提供符合[MITRE ATT](https://attack.mitre.org/)和 CK Framework 的警报来帮助&活动。 所有 Microsoft Defender 解决方案都根据 ATT 和 CK 策略&标记攻击。 
 
 通过向此行业框架映射警报，你可以：
 
@@ -46,7 +46,7 @@ Microsoft 365 Defender 可通过向组织提供符合 [MITRE ATT](https://attack
 - 确定对手和宣传活动属性。
 - 执行趋势分析。
 - 确定攻击方法感知中的技能差异。
-- 创建 Power Automate Playbook 以加快修正速度。 
+- 创建一Power Automate Playbook，以加快修正速度。 
 
 事件后审阅活动还可以微调安全配置和安全团队的流程，从而增强组织的响应功能。
 
