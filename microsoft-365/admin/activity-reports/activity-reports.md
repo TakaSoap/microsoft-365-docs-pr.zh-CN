@@ -19,7 +19,7 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: 0d6dfb17-8582-4172-a9a9-aed798150263
-description: 获取定期报表，了解你组织中的人员当前是如何使用 Microsoft 365 服务的，并深入研究每个图表以获取更多信息。
+description: 获取定期报表，了解组织中的人员如何使用 Microsoft 365 服务，并深入研究每个图表以获取更多见解。
 ms.openlocfilehash: 917a44f4b6f7458c50ac193b95c7751c66c9e7cd
 ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
@@ -63,7 +63,7 @@ ms.locfileid: "52530966"
 
 具有以下权限的人员：
   
-- 全局管理员：建议仅为公司中少量人员分配此角色。这将减少业务风险。
+- 全局管理员：建议仅为公司中少数人分配此角色。这将减少业务风险。
     
 - Exchange 管理员
     

@@ -62,7 +62,7 @@ Microsoft 365 中的共享在最高级别由 [Azure Active Directory 中的 B2B 
 
 Teams 具有用于来宾访问的主 “开/关” 开关，以及可用于控制来宾在团队中所能执行操作的各种设置。 主开关 **“允许来宾在 Teams 中访问”** 必须 **“打开”**，来宾才可以在 Teams 中工作。
 
-检查确保 Teams 中已启用“来宾访问”，并根据你的业务需求对来宾设置作出调整。请记住，这些设置会影响所有团队。
+检查以确保 Teams 中启用了“来宾访问”，并根据你的业务需求对来宾设置作出调整。请记住，这些设置会影响所有团队。
 
 ![Teams 来宾访问切换的屏幕截图](../media/teams-guest-access-toggle-on.png)
 
@@ -82,7 +82,7 @@ Teams 具有用于来宾访问的主 “开/关” 开关，以及可用于控�
 
 ## <a name="microsoft-365-groups-guest-settings"></a>Microsoft 365 组来宾设置
 
-Teams 使用团队成员 Microsoft 365 组。必须打开 Microsoft 365 组来宾设置，Teams 中的来宾访问才能正常工作。
+Teams 将 Microsoft 365 组用于团队成员资格。必须启用 Microsoft 365 组来宾设置，以便 Teams 中的来宾访问正常工作。
 
 ![Microsoft 365 管理中心中的 Microsoft 365 组来宾设置的屏幕截图](../media/office-365-groups-guest-settings.png)
 
@@ -147,7 +147,7 @@ Teams 内容（如文件、文件夹和列表）均存储在 SharePoint 中。 �
 5. 键入团队名称和说明，然后单击 **“创建”**。
 6. 单击 **“跳过”**。
 
-接下来，检查与团队关联的 SharePoint 网站的网站级别共享设置非常重要。
+我们随后会邀请用户。接下来，检查与团队关联的 SharePoint 网站的网站级共享设置非常重要。
 
 ## <a name="sharepoint-site-level-sharing-settings"></a>SharePoint 网站级别共享设置
 
