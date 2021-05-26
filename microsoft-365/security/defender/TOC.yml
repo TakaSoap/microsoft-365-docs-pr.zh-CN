@@ -82,6 +82,10 @@
               href: microsoft-secure-score-whats-coming.md
             - name: 最近更新
               href: microsoft-secure-score-whats-new.md
+        - name: 保护你的标识
+          items:
+            - name: 管理安全警报
+              href: ../defender-identity/manage-security-alerts.md
     - name: 调查并响应威胁
       items:
         - name: 事件
@@ -120,6 +124,12 @@
               href: 'https://docs.microsoft.com/security/compass/incident-response-playbooks'
             - name: 电子邮件通知
               href: get-incident-notifications.md
+        - name: 威胁分析
+          items:
+            - name: 跟踪和应对新出现的威胁
+              href: threat-analytics.md
+            - name: 了解分析员报告
+              href: threat-analytics-analyst-reports.md
         - name: 自动调查和响应
           items:
             - name: 概述

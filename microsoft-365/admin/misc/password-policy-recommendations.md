@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9fa2539a-2211-41fd-85a0-bc37b9619ca4
 description: 加强组织对密码攻击的防护，禁用常见密码并启用基于风险的多重身份验证。
-ms.openlocfilehash: f2b9b9188a6f05bbcdae45dcc22d401e1eb6f1a8
-ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
+ms.openlocfilehash: f42905c6bf7769e558581338fd122f26d530423e
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/21/2021
-ms.locfileid: "52593905"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635970"
 ---
 # <a name="password-policy-recommendations"></a>密码策略建议
 
@@ -128,7 +128,9 @@ ms.locfileid: "52593905"
 
 基于风险的多重身份验证可确保在我们的系统检测到可疑活动时，它能迫使用户确保其自身是合法的帐户所有者。 
   
-## <a name="want-to-know-more-recommended-reading"></a>希望了解更多信息？ 推荐阅读
+## <a name="next-steps"></a>后续步骤
+
+希望了解有关管理密码的详细信息？ 下面是一些推荐阅读：
 
 - [Do Strong Web Passwords Accomplish Anything?](https://go.microsoft.com/fwlink/p/?linkid=861008)（强大的 Web 密码是否有用？）
 
@@ -144,10 +146,7 @@ ms.locfileid: "52593905"
 
 ## <a name="related-content"></a>相关内容
 
-[重置密码](../add-users/reset-passwords.md)（文章）
-
-[将个人用户密码设置为永不过期](../add-users/set-password-to-never-expire.md)（文章）
-
-[允许用户重置自己的密码](../add-users/let-users-reset-passwords.md)（文章）
-
+[重置密码](../add-users/reset-passwords.md)（文章）\
+[将个人用户密码设置为永不过期](../add-users/set-password-to-never-expire.md)（文章）\
+[允许用户重置自己的密码](../add-users/let-users-reset-passwords.md)（文章）\
 [重新发送用户密码 - 管理员帮助](../add-users/resend-user-password.md)（文章）

@@ -23,16 +23,16 @@ search.appverid:
 - MOE150
 ms.assetid: 1dbcf12f-a9de-4d1d-b0b3-a227f8a736d8
 description: 授予用户访问其他用户邮箱的权限，此操作允许用户从其他用户的邮箱读取和发送电子邮件。
-ms.openlocfilehash: 3514be02f2ef82b727edfcf86c0bd3f6b8515510
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 0e5f7b154fa37ae9775e7208574b2a5395e7c239
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52535958"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52634276"
 ---
 # <a name="give-mailbox-permissions-to-another-user---admin-help"></a>向其他用户授予邮箱权限 - 管理员帮助
 
-作为管理员，你可能需要按照公司要求允许某些用户访问其他用户的邮箱。 例如，你可能希望使助理可以从其经理的邮箱发送或阅读电子邮件，或者希望其中某一位用户可以代表另一用户发送电子邮件。 本主题介绍如何实现这一目的。
+作为管理员，你可能需要按照公司要求允许某些用户访问其他用户的邮箱。例如，你可能希望使助理可以从其经理的邮箱发送或阅读电子邮件，或者希望其中某一位用户可以代表另一用户发送电子邮件。本主题介绍如何实现这一目的。
   
 如果需要查找有关创建和管理共享邮箱的信息，请查看[创建共享邮箱](../email/create-a-shared-mailbox.md)。
     
@@ -207,9 +207,7 @@ ms.locfileid: "52535958"
 
 ## <a name="related-content"></a>相关内容
   
-[管理他人的邮件和日历项目](https://support.microsoft.com/office/afb79d6b-2967-43b9-a944-a6b953190af5)（文章）
-    
-[代表他人或组发送电子邮件](https://support.microsoft.com/office/0f4964af-aec6-484b-a65c-0434df8cdb6b)（文章）
-
+[管理他人的邮件和日历项目](https://support.microsoft.com/office/afb79d6b-2967-43b9-a944-a6b953190af5)（文章）\   
+[代表他人或组发送电子邮件](https://support.microsoft.com/office/0f4964af-aec6-484b-a65c-0434df8cdb6b)（文章）\
 [更改用户名和电子邮件地址](../add-users/change-a-user-name-and-email-address.md)（视频）
 
