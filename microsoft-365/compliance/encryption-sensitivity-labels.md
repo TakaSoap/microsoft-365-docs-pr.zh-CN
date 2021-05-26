@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: 配置加密的敏感度标签，以便通过限制访问和使用来保护你的数据。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 804cfa9da39b5dc9b9dffdcd68fb196e8676f9af
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: f6fff2bc595e9317ef037929a8a6828935b15bbf
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52532082"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52624677"
 ---
 # <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>通过敏感度标签应用加密，从而限制对内容的访问
 
@@ -427,6 +427,10 @@ ms.locfileid: "52532082"
 - 激活 Azure 信息保护中的保护
     
     要使敏感度标签应用加密，必须为租户激活 Azure 信息保护中的保护服务（即 Azure 权限管理）。 在较新的租户中，这是默认设置，但你可能需要手动激活该服务。 有关详细信息，请参阅[激活 Azure 信息保护中的保护服务](/azure/information-protection/activate-service)。
+
+- 查看网络要求
+    
+    可能需要对防火墙等网络设备做出一些更改。 如需获取详细信息，请参阅 Azure 信息保护文档中的[防火墙和网络设施](/azure/information-protection/requirements#firewalls-and-network-infrastructure)。
 
 - 配置用于 Azure 信息保护的 Exchange
     

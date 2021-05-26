@@ -23,12 +23,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0f54736f-eb22-414c-8273-498a0918678f
 description: 了解管理员如何在 Microsoft 365 管理中心中针对你的企业、学校或非营利组织设置密码过期策略。
-ms.openlocfilehash: 5469d4dcd75bee2e6f8a188aa6f50d18ce6e06c4
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 7f12918211718b91313c0c89b11eaeb0a8cc3181
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52537483"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635818"
 ---
 # <a name="set-the-password-expiration-policy-for-your-organization"></a>为组织设置密码过期策略
 
@@ -36,7 +36,7 @@ ms.locfileid: "52537483"
 
 本文面向的是为企业、学校或非营利组织设置密码过期策略的人员。 若要完成这些步骤，你需要使用 Microsoft 365 管理员帐户登录。 [什么是管理员帐户？](../../business-video/admin-center-overview.md)
 
-作为管理员，可让用户密码在特定天数后过期，或将密码设置为永不过期。 默认情况下，密码设置为对组织永不过期。
+作为管理员，可让用户密码在特定天数后过期，或设置密码永不过期。默认情况下，组织的密码设置为永不过期。
 
 当前研究强烈表明，强制实施的密码更改弊大于利。 它们会导致用户选择安全性更弱的密码、重复使用密码，或者以很容易被黑客猜出的方式更新旧密码。 我们已建议启用 [多重身份验证](../security-and-compliance/set-up-multi-factor-authentication.md)。 要了解有关密码策略的详细信息，请查看[密码策略建议](../misc/password-policy-recommendations.md)。
 
@@ -57,13 +57,13 @@ ms.locfileid: "52537483"
   
 4. 如果不希望强制用户更改密码，请取消选择“**将用户密码设置为以下天数后过期**”旁边的复选框。
   
-5. 输入密码过期频率。 请在 14 到 730 之间选择一个天数。
+5. 键入密码应采用的过期频率。从 14 到 730 之间选择一个天数。
   
 6. 在第二个框中键入通知用户其密码将过期的时间，然后选择“**保存**”。 选择从 1 到 30 的天数。
   
 ## <a name="important-things-you-need-to-know-about-the-password-expiration-feature"></a>密码到期功能重要事项须知
   
-- 对于仅使用 Outlook 应用的用户，在其密码在缓存中过期之前，不会强制其重置 Microsoft 365 密码。这一到期时间有可能在实际到期日期数天后抵达。这一情况在管理级别尚无解决方法。
+对于仅使用 Outlook 应用的用户，在其密码在缓存中过期之前，不会强制其重置 Microsoft 365 密码。这一到期时间有可能在实际到期日期数天后抵达。这一情况在管理级别尚无解决方法。
 
 ## <a name="prevent-last-password-from-being-used-again"></a>防止再次使用上一次使用过的密码
 
@@ -90,5 +90,4 @@ Set-MsolPasswordPolicy cmdlet 将更新指定域或租户的密码策略。需�
 ## <a name="related-content"></a>相关内容
 
 [允许用户重置自己的密码](../add-users/let-users-reset-passwords.md)（文章）
-
 [重置密码](../add-users/reset-passwords.md)（文章）

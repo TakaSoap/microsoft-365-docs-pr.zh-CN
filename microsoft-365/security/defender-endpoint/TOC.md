@@ -122,7 +122,7 @@
 ###### [配置 iOS 功能](ios-configure-features.md)
 
 ##### [疑难解答]()
-###### [解决问题](ios-troubleshoot.md)
+###### [常见问题和疑难解答](ios-troubleshoot.md)
 
 ##### [隐私](ios-privacy.md)
  
@@ -481,6 +481,12 @@
 ####### [获取通知相关 IP 信息](get-alert-related-ip-info.md)
 ####### [获取警报相关设备信息](get-alert-related-machine-info.md)
 ####### [获取警报相关用户信息](get-alert-related-user-info.md)
+
+###### [漏洞和安全配置评估]()
+####### [导出评估方法和属性](get-assessmnt-1methods-properties.md)
+####### [导出安全配置评估](get-assessmnt-secure-cfg.md)
+####### [导出软件库存评估](get-assessmnt-software-inventory.md)
+####### [导出软件漏洞评估](get-assessmnt-software-vulnerabilities.md)
 
 ###### [自动调查]()
 ####### [调查方法和属性](investigation.md)
