@@ -18,12 +18,12 @@ ms.custom:
 localization_priority: Priority
 recommendations: false
 description: 了解 Microsoft 365 中可影响与组织外部人员的共享的来宾共享设置。
-ms.openlocfilehash: 60ebff4f564e7046a54cb707781acc0151aa8ad9
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: b209477e2fa205ebb6b298b7fa9f37c21e2b3d7e
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538107"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52625423"
 ---
 # <a name="microsoft-365-guest-sharing-settings-reference"></a>Microsoft 365 来宾共享设置参考
 
@@ -38,7 +38,7 @@ Azure Active Directory 是 Microsoft 365 使用的目录服务。 Azure Active D
 > [!NOTE]
 > 仅当已配置 [Azure AD B2B 的 SharePoint 和 OneDrive 集成（预览）](/sharepoint/sharepoint-azureb2b-integration-preview)时，这些设置才会影响 SharePoint。 下表假定已对此进行了配置。
 
-### <a name="organizational-relationships-settings"></a>组织关系设置
+### <a name="external-collaboration-settings"></a>外部协作设置
 
 **导航：**[Azure Active Directory 管理中心](https://aad.portal.azure.com) > Azure Active Directory > 外部标识 > 外部协作设置
 
@@ -46,11 +46,9 @@ Azure Active Directory 是 Microsoft 365 使用的目录服务。 Azure Active D
 
 | 设置 | 默认值 | 说明 |
 |:-----|:-----|:-----|
-|来宾用户权限处于限制状态|是|此设置会影响来宾可以执行的目录任务。|
-|管理员和具有“来宾邀请者”角色的用户可以邀请|是|设置为“**是**”时，管理员可以通过 Azure AD 和 Microsoft 365 共享体验（如 Teams 和 SharePoint）邀请来宾；设置为“**否**”时，则不能邀请。|
-|成员可以邀请|是|设置为“**是**”时，Azure AD 成员可以通过 Azure AD 来邀请来宾；设置为“**否**”时，则不能邀请。 设置为“是”时，Microsoft 365 组成员可以在所有者批准的情况下邀请来宾；设置为“否”时，Microsoft 365 组成员也可以在所有者批准的情况下邀请来宾，但这些所有者必须是全局管理员才能批准。 <br><br>请注意，“**成员可以邀请**”是指 Azure AD 中的成员（与来宾相对），而不是 Microsoft 365 中的网站或组成员。 <br><br>这与 Microsoft 365 安全和隐私中的“**允许用户将新的来宾添加到组织**”设置相同。|
-|来宾可以邀请|是|设置为“**是**”时，目录中的来宾可以邀请其他来宾协作处理 Azure AD 资源以及 SharePoint 和 OneDrive 中的文件和文件夹；设置为“**否**”时，则不能邀请。 <br><br>请注意，必须在 SharePoint 管理中心启用“**允许外部用户通过键入精确的电子邮件地址匹配项在目录中查找用户帐户**”，以便来宾与其他来宾共享文件和文件夹。|
-|为来宾启用电子邮件一次性密码(预览)|否|设置为“**是**”时，没有 MSA 或工作或学校帐户的来宾可以 [使用一次性密码对 Azure AD 进行身份验证](/azure/active-directory/b2b/one-time-passcode)；设置为“**否**”时，用户需要创建 Microsoft 帐户才能进行身份验证。 必须将此设置设为“**是**”，这样“[Azure AD B2B 的 SharePoint 和 OneDrive 集成（预览）](/sharepoint/sharepoint-azureb2b-integration-preview)”才能工作。|
+|来宾用户访问|来宾用户对目录对象的属性和成员资格具有受限访问权限|确定[来宾在 Azure Active Directory 中拥有的权限](/azure/active-directory/fundamentals/users-default-permissions)。|
+|来宾邀请设置|组织中的任何人都可以邀请来宾用户（包括来宾和非管理员）|确定来宾、成员和管理员是否可以邀请来宾加入组织。<br><br> 此设置会影响 Microsoft 365 共享体验，例如 Teams 和 SharePoint。|
+|通过用户流启用来宾自助注册|不支持|确定你是否可以创建用户流来允许某人注册你创建的应用并创建新的来宾帐户。|
 |协作限制|允许向任何域发送邀请|此设置允许你为共享指定允许或阻止的域列表。 如果指定了允许的域，则只能将共享邀请发送到这些域。 如果指定了拒绝的域，则不能将共享邀请发送到这些域。<br><br> 此设置会影响 Microsoft 365 共享体验，例如 Teams 和 SharePoint。 你可以通过使用 SharePoint 或 Teams 中的域筛选功能来更精确地允许或阻止域。|
 
 这些设置会影响邀请用户加入目录的方式。 它们不会影响与目录中已有的来宾进行共享。

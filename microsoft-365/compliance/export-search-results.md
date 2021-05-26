@@ -22,18 +22,18 @@ search.appverid:
 ms.assetid: ed48d448-3714-4c42-85f5-10f75f6a4278
 description: 将搜索结果从 Microsoft 365 中心的内容搜索导出到本地计算机。 电子邮件结果导出为 PST 文件。 来自SharePoint和OneDrive for Business的内容作为本机文档Office导出。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 8ec09706fecbe703fa2ab38cad5f8f8304484f44
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: b39bb52457599090f2898da222c71a3a56889290
+ms.sourcegitcommit: 727a75b604d5ff5946a0854662ad5a8b049f2874
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52536054"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "52653531"
 ---
 # <a name="export-content-search-results"></a>导出内容搜索结果
 
 成功运行内容搜索后，可以将搜索结果导出到本地计算机。 导出电子邮件结果时，它们作为 PST 文件下载到计算机。 当您从网站和SharePoint OneDrive for Business内容时，将导出本机Office文档的副本。 导出的搜索结果中包含其他文档和报告。
   
-导出内容搜索结果涉及准备结果，然后将结果下载到本地计算机。
+导出内容搜索结果涉及准备结果，然后将结果下载到本地计算机。 导出搜索结果的这些步骤也适用于导出与核心电子数据展示事例关联的搜索结果。
   
 ## <a name="before-you-export-search-results"></a>导出搜索结果之前
 
@@ -57,6 +57,8 @@ ms.locfileid: "52536054"
   > <sup>1</sup> Microsoft 不会为应用程序制作第三方扩展ClickOnce加载项。 不支持使用不支持的浏览器和第三方扩展或加载项导出搜索结果。<br/>
   > <sup>2</sup>由于最近对 Microsoft Edge 所做的更改，ClickOnce不再启用支持。 有关在 Edge 中ClickOnce支持的说明，请参阅使用 Edge 中的电子数据展示[导出Microsoft Edge。](configure-edge-to-export-search-results.md)
   
+- 在步骤 2 中用于下载搜索结果电子数据展示导出工具不支持 (脚本或运行 cmdlet 来自动) 。 强烈建议不要自动执行步骤 1 中的准备过程或步骤 2 中的下载过程。 如果自动执行上述任一过程，Microsoft 支持人员将不会在遇到问题时提供帮助。
+
 - 我们建议将搜索结果下载到本地计算机。 若要消除公司防火墙或代理基础结构在下载搜索结果时导致问题，可以考虑将搜索结果下载到网络外部的虚拟桌面。 这可以减少导出大量文件时 Azure 数据连接中发生的超时。 有关虚拟桌面的信息，请参阅虚拟Windows[桌面](https://azure.microsoft.com/services/virtual-desktop)。
 
 - 若要在下载搜索结果时提高性能，请考虑将返回大量结果的搜索划分为较小的搜索。 例如，您可以使用搜索查询中的日期范围返回一组较小的结果，可以更快地下载结果。
@@ -82,7 +84,7 @@ ms.locfileid: "52536054"
     </system.net>
     ```
 
-- 如果内容搜索结果超过 7 天并且您提交导出作业，则会显示一条错误消息，提示您重新运行搜索以更新搜索结果。 如果发生这种情况，请取消导出，重新运行搜索，然后再次开始导出。
+- 如果搜索结果超过 7 天并且您提交导出作业，则会显示一条错误消息，提示您重新运行搜索以更新搜索结果。 如果发生这种情况，请取消导出，重新运行搜索，然后再次开始导出。
 
 ## <a name="step-1-prepare-search-results-for-export"></a>第 1 步：准备要导出的搜索结果
 
@@ -169,11 +171,11 @@ ms.locfileid: "52536054"
       >- 对将搜索结果下载到的文件夹禁用防病毒扫描。<br/>
       >- 将搜索结果下载到并发下载作业的不同文件夹。
 
-6. 单击“启动”将搜索结果下载到计算机。
+7. 单击“启动”将搜索结果下载到计算机。
   
     **电子数据展示工具** 显示有关导出过程的状态信息，包括要下载的剩余项的估计数量（和大小）。 导出过程完成后，您可以在下载文件的位置访问这些文件。
 
-## <a name="more-information"></a>详细信息
+## <a name="more-information"></a>更多信息
 
 以下是有关导出搜索结果的信息。
   

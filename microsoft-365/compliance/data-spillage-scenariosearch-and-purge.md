@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: d945f7dd-f62f-4ca7-b3e7-469824cfd493
 description: 使用电子数据展示和搜索工具管理和响应组织中发生的数据泄漏事件。
-ms.openlocfilehash: da473fcdf553176d3c6d4dfa2a4c4b17b2bcce03
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 4305dbdb2fb59e4275852c88f8b74f6c4128a5cb
+ms.sourcegitcommit: 727a75b604d5ff5946a0854662ad5a8b049f2874
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51051974"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "52653519"
 ---
 # <a name="ediscovery-solution-series-data-spillage-scenario---search-and-purge"></a>电子数据展示解决方案系列：数据泄漏方案 - 搜索和清除
 
@@ -89,7 +89,7 @@ ms.locfileid: "51051974"
 
 如果为保管人或最终用户分配了一个 Office 365 E5 许可证，则使用 E5 许可证一次最多可以检查 10，000 Advanced eDiscovery。 如果超过 10，000 封要审阅的电子邮件，您可以按日期范围划分搜索查询并单独查看每个结果，因为搜索结果按日期排序。 在Advanced eDiscovery中，可以使用预览面板中的"标签为"功能标记搜索结果，并按标记筛选搜索结果。 这在您与辅助审阅者协作时很有用。 通过使用 Advanced eDiscovery 中的其他分析工具（如光学字符识别、电子邮件线程和预测编码）可以快速处理和查看数千封邮件，并标记它们以进一步查看。 请参阅[Quick setup for Advanced eDiscovery](./get-started-with-advanced-ediscovery.md)。
 
-当您找到包含溢出数据的电子邮件时，请检查邮件的收件人以确定该邮件是否与外部共享。 若要进一步跟踪邮件，可以收集发件人信息和日期范围，以便可以使用步骤 [5](#step-5-use-message-trace-log-to-check-how-spilled-data-was-shared)中所述的邮件跟踪日志。
+当您找到包含溢出数据的电子邮件时，请检查邮件的收件人以确定该邮件是否与外部共享。 若要进一步跟踪邮件，可以收集发件人信息和日期范围，以便可以使用邮件跟踪日志。 此过程在步骤 [5 中介绍](#step-5-use-message-trace-log-to-check-how-spilled-data-was-shared)。
 
 验证搜索结果后，您可能需要与他人共享您的结果，进行二级审阅。 在步骤 1 中分配给该案例的用户可以查看电子数据展示和网站中Advanced eDiscovery并批准案例结果。 还可以生成报表，而不导出实际内容。 您还可以使用此相同的报告作为删除证明，如步骤 [8 中所述](#step-8-verify-provide-a-proof-of-deletion-and-audit)。
   
@@ -105,7 +105,7 @@ ms.locfileid: "51051974"
     
 3. 选择 **"所有项目"，** 包括由于其他原因已加密或未编制索引的项目，然后单击"生成 **报告"。**
 
-4. 在电子数据展示案例中，单击 **"导出** "以显示导出作业的列表。 您可能必须 **单击"刷新** "来更新列表以显示刚创建的导出作业。
+4. 在电子数据展示案例中，单击 **"导出** "以显示导出作业的列表。 您可能必须 **单击"刷新** "以更新列表以显示您创建的导出作业。
 
 5. 单击导出作业，然后单击飞 **出页上** 的"下载报告"。
  
@@ -117,11 +117,11 @@ ms.locfileid: "51051974"
     
 ## <a name="step-5-use-message-trace-log-to-check-how-spilled-data-was-shared"></a>步骤 5：使用邮件跟踪日志检查如何共享溢出的数据
 
-若要进一步调查是否共享了包含泄漏数据的电子邮件，您可以选择使用你在步骤 4 中收集的发件人信息和日期范围信息查询邮件跟踪日志。 请注意，对于实时数据，邮件跟踪的保留期为 30 天，历史数据的保留期为 90 天。
+若要进一步调查是否共享了包含泄漏数据的电子邮件，您可以选择使用你在步骤 4 中收集的发件人信息和日期范围信息查询邮件跟踪日志。 对于实时数据，邮件跟踪的保留期为 30 天，历史数据的保留期为 90 天。
   
 可以在安全与合规中心内使用邮件跟踪，或在 PowerShell Exchange Online cmdlet。 需要注意的是，邮件跟踪无法完全保证返回的数据的完整性。 有关使用邮件跟踪的信息，请参阅： 
   
-- [安全与合规中心内的消息跟踪](../security/defender-365-security/message-trace-scc.md)
+- [安全与合规中心内的消息跟踪](../security/office-365-security/message-trace-scc.md)
     
 - [安全与合规中心&邮件跟踪](https://blogs.technet.microsoft.com/exchange/2018/05/02/new-message-trace-in-office-365-security-compliance-center/)
     
@@ -174,14 +174,20 @@ ms.locfileid: "51051974"
 
 使用在步骤 6 中收集和准备的邮箱位置和在步骤 3 中创建和优化的搜索查询来查找包含泄漏数据的电子邮件，现在可以永久删除溢出的数据。  如前所述，若要删除邮件，您必须是组织管理角色组的成员或分配有"搜索和清除"管理角色。 有关将用户添加到角色组的信息，请参阅[分配安全与合规中心中的电子数据展示权限](./assign-ediscovery-permissions.md)。
 
-若要删除溢出的邮件，请参阅搜索&删除电子邮件中的步骤 2[和](./search-for-and-delete-messages-in-your-organization.md)步骤 3
+若要删除溢出的邮件，请参阅搜索 [和删除电子邮件](search-for-and-delete-messages-in-your-organization.md)。
+
+删除溢出的数据时，请记住以下限制：
+
+- 搜索中可用于通过执行搜索和清除操作删除项目的最大邮箱数为 50，000。 如果在步骤 3 中创建的搜索搜索超过 50，000 个邮箱，则清除操作将失败。 如果将搜索配置为包括组织内的所有邮箱，则单次搜索中一般有可能搜索到超过 50,000 个邮箱。 即使包含匹配搜索查询项目的邮箱数量少于 50,000 个，这一限制仍然适用。
+
+- 每个邮箱一次最多可以删除 10 个项目。因为搜索和删除邮件的功能是用作事件响应工具，此限制有助于确保从邮箱中快速删除邮件。此功能并不是为了清理用户邮箱。
 
 > [!IMPORTANT]
 > 使用本文中的程序，无法删除高级电子数据展示案例中的审阅集中的电子邮件项目。 这是因为审阅集内的项目是实时服务中项目的副本，这些项被复制并存储在Azure 存储位置。 这意味着在步骤 3 中创建的内容搜索不会返回它们。 若要删除某个审阅集中的项目，必须删除包含该审阅集的高级电子数据展示案例。 有关详细信息，请参阅[关闭或删除高级电子数据展示案例](close-or-delete-case.md)。
   
 ## <a name="step-8-verify-provide-a-proof-of-deletion-and-audit"></a>步骤 8：验证、提供删除证明和审核
 
-工作流中用于管理数据泄漏事件的最后一步是，通过进入电子数据展示案例并重新运行用于删除该数据的相同搜索查询来验证是否从邮箱中永久删除了溢出的数据，以确认未返回任何结果。 确认已永久删除溢出的数据后，可以导出报告， (连同原始报告一) 作为删除证明。 然后， [可以关闭将](close-reopen-delete-core-ediscovery-cases.md) 允许您在以后引用的情况下重新打开它的情况。 此外，您还可以将邮箱恢复为以前的状态，删除用于查找溢出数据的搜索查询，并搜索管理数据泄漏事件时所执行任务的审核记录。
+工作流中用于管理数据泄漏事件的最后一步是，通过访问电子数据展示案例并重新运行用于删除该数据的相同搜索查询来验证是否从邮箱中永久删除了溢出的数据，以确认未返回任何结果。 确认已永久删除溢出的数据后，可以导出报告， (连同原始报告一) 作为删除证明。 然后， [如果将来必须](close-reopen-delete-core-ediscovery-cases.md) 引用案例，可以关闭允许重新打开案例。 此外，您还可以将邮箱恢复为以前的状态，删除用于查找溢出数据的搜索查询，并搜索管理数据泄漏事件时所执行任务的审核记录。
   
 ### <a name="reverting-the-mailboxes-to-their-previous-state"></a>将邮箱恢复为以前的状态
 
@@ -192,11 +198,11 @@ ms.locfileid: "51051974"
 如果在步骤 3 中创建和使用的搜索查询中的关键字包含所有实际溢出的数据，您应该删除搜索查询以防止进一步的数据泄漏。
   
 1. 在安全与合规中心，打开电子数据展示案例，转到"搜索"页面，然后选择适当的内容搜索。
-    
+
 2. 在飞出页面上， **单击删除**。
 
     ![选择搜索，然后单击飞出页面上的"删除"](../media/O365-eDiscoverySolutions-DataSpillage-DeleteSearch.png)
-    
+
 ### <a name="auditing-the-data-spillage-investigation-process"></a>审核数据泄漏调查过程
 
 你可以搜索审核日志调查期间执行电子数据展示活动。 您还可以搜索该审核日志返回在步骤 7 中运行以删除溢出数据的 **New-ComplianceSearchAction -Purge** 命令的审核记录。 有关详细信息，请参阅：

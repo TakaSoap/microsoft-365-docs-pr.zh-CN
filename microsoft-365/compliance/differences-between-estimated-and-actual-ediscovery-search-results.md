@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: 8f20ca4f-a908-46ec-99e6-9890d269ecf2
 description: 了解为什么使用电子数据展示工具在搜索中估计和实际搜索结果可能会有所不同Office 365。
-ms.openlocfilehash: d530b083b2353b66ee5d4fd4bb72b175aef28be8
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 17a4c2eea9833afa2112fa8ab918dcda074eeb36
+ms.sourcegitcommit: 727a75b604d5ff5946a0854662ad5a8b049f2874
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52532107"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "52653507"
 ---
 # <a name="differences-between-estimated-and-actual-ediscovery-search-results"></a>估计和实际电子数据展示搜索结果之间的差异
 
@@ -81,7 +81,7 @@ ms.locfileid: "52532107"
 
 - **导出过程中Exchange重复数据项**。 对于Exchange，重复数据删除可以减少导出的项目数。 可以选择在导出搜索结果时取消复制搜索结果。 对于Exchange，这意味着只导出邮件的单个实例，即使该邮件可能在多个邮箱中找到。 估计的搜索结果包括邮件的每一个实例。 因此，如果在导出搜索结果时选择"重复数据删除"选项，则导出的实际项目数可能远小于估计的项目数。
 
-    如果选择"重复数据删除"选项，另一点请记住，所有 Exchange 项目都导出到一个 PST 文件中，并且不会保留源邮箱中的文件夹结构。 导出的 PST 文件仅包含电子邮件项目。 但是，搜索结果报告包含每个导出邮件的条目，该条目标识邮件所在的源邮箱。 这有助于标识包含重复邮件的所有邮箱。 如果不启用重复数据删除，则会针对搜索中包括的每个邮箱导出一个单独的 PST 文件。
+搜索结果报告 (Results.csv包含) 重复邮件的条目，并标识重复邮件所在的源邮箱。 这有助于标识包含重复邮件的所有邮箱。
 
 > [!NOTE]
 > 如果在导出搜索结果或仅下载报告时未选择"包括已加密或具有无法识别的格式的项目"选项，将下载索引错误报告，但它们没有任何条目。 这并不意味着没有任何索引错误。 它只是意味着未索引的项目未包含在导出中。
