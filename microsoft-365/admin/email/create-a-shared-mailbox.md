@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: 871a246d-3acd-4bba-948e-5de8be0544c9
 description: 创建共享邮箱，让企业中的多名人员分担查看和答复发送到同一地址的电子邮件的责任。
-ms.openlocfilehash: 808b98b45c3d6f5ba3cd9847ba2aa843ff53d106
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: e628d72482ed7ff32a204eaf9503fdd9a271844a
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52537603"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635494"
 ---
 # <a name="create-a-shared-mailbox"></a>创建共享邮箱 
 
@@ -200,12 +200,8 @@ ms.locfileid: "52537603"
 
 ## <a name="related-content"></a>相关内容
 
-[关于共享邮箱](about-shared-mailboxes.md)（文章）
-
-[配置共享邮箱](configure-a-shared-mailbox.md)（文章）
-
-[将用户邮箱转换为共享邮箱](convert-user-mailbox-to-shared-mailbox.md)（文章）
-
-[从共享邮箱删除许可证](remove-license-from-shared-mailbox.md)（文章）
-
+[关于共享邮箱](about-shared-mailboxes.md)（文章）\
+[配置共享邮箱](configure-a-shared-mailbox.md)（文章）\
+[将用户邮箱转换为共享邮箱](convert-user-mailbox-to-shared-mailbox.md)（文章）\
+[从共享邮箱删除许可证](remove-license-from-shared-mailbox.md)（文章）\
 [解决共享邮箱相关问题](resolve-issues-with-shared-mailboxes.md)（文章）

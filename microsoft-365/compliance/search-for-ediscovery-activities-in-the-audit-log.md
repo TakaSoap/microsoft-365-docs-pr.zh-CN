@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: 67cc7f42-a53d-4751-b929-6005c80798f7
 description: 了解分配有电子数据展示权限的用户在 Microsoft 365 合规中心中执行内容搜索、核心电子数据展示Advanced eDiscovery记录哪些事件。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ce0dcc50c13ad705cb36f065639a4e971d032f22
-ms.sourcegitcommit: 727a75b604d5ff5946a0854662ad5a8b049f2874
+ms.openlocfilehash: 8b1f3f235f3411e2f637e4e32104c6179643757d
+ms.sourcegitcommit: 4f6ef4cd09c3ed36dc0be3702b0636bad6cff8a9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "52653495"
+ms.lasthandoff: 05/26/2021
+ms.locfileid: "52657689"
 ---
 # <a name="search-for-ediscovery-activities-in-the-audit-log"></a>在审核日志中搜索电子数据展示活动
 
@@ -112,7 +112,7 @@ ms.locfileid: "52653495"
 |开始导出内容搜索  <br/> |SearchExported  <br/> |New-ComplianceSearchAction  <br/> |用户导出了内容搜索的结果。  <br/> |
 |已启动导出报告  <br/> |SearchReport  <br/> |New-ComplianceSearchAction  <br/> |用户导出了内容搜索报告。  <br/> |
 |已停止内容搜索  <br/> |SearchStopped  <br/> |Stop-ComplianceSearch  <br/> |用户已停止内容搜索。  <br/> |
-|(无)|CaseViewed|Get-ComplianceCase|用户在合规中心的"核心 **电子** 数据展示"页面上或运行 cmdlet 查看Get-ComplianceCase列表。|
+|(无)|CaseViewed|Get-ComplianceCase|用户在合规中心的"核心电子数据展示"页面或"Advanced eDiscovery"页面上或通过运行Get-ComplianceCase cmdlet 查看事例列表。|
 |(无)|SearchViewed|Get-ComplianceSearch|用户查看了内容搜索列表 (合规性中心) 或运行 cmdlet 的"搜索"选项卡上列出。  当用户通过单击案例) 中的"搜索"选项卡或运行 **Get-ComplianceSearch -Case** 命令查看与电子数据展示案例 (关联的内容搜索列表时，也会记录此活动。|
 |(无)|ViewedSearchExported|Get-ComplianceSearchAction -Export|用户通过运行 cmdlet ("导出"选项卡) 查看内容搜索导出作业列表。 当用户在电子数据展示案例 (中查看导出作业列表（在案例) 中列出）或运行 **Get-ComplianceSearchAction -Case -Export** 命令时，也会记录此活动。 |
 |(无)|ViewedSearchPreviewed|Get-ComplianceSearchAction -Preview|用户在合规中心或运行 cmdlet 预览内容搜索结果。|

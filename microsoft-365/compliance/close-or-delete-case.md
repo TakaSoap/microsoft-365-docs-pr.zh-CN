@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: 了解在关闭或删除受调查案例支持的调查Advanced eDiscovery法律案件时会发生什么情况。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: ffdd93351325be0c4b5d6d8cdfb78e55b710c0be
-ms.sourcegitcommit: 6746fae2f68400fd985711b1945b66766d2a59a4
+ms.openlocfilehash: 7b11faa2ccdb44fca916b2f602d5120adadf1739
+ms.sourcegitcommit: 4f6ef4cd09c3ed36dc0be3702b0636bad6cff8a9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "44419058"
+ms.lasthandoff: 05/26/2021
+ms.locfileid: "52657632"
 ---
 # <a name="close-or-delete-an-advanced-ediscovery-case"></a>关闭或删除Advanced eDiscovery案例
 
@@ -46,11 +46,13 @@ ms.locfileid: "44419058"
 
 2. 在" **设置** 选项卡上，**"案例信息**"下， 点击 **选择**。
 
-3. 单击 **关闭案件**。
+3. 在"案例信息"飞出页面底部，单击 **" (...") "** 更多选项"，然后单击"**关闭案例"。**
+
+   !["更多选项"菜单中用于关闭事件Advanced eDiscovery选项](..\Media\CloseAdvancedeDiscoveryCase.png)
 
    完成结束过程可能需要多达 60 分钟。
 
-## <a name="reopen-a-closed-case"></a>重新打开已关闭的案例
+## <a name="reopen-a-closed-case&quot;></a>重新打开已关闭的案例
 
 当重新打开Advanced eDiscovery案例时，关闭案例时已就位的任何保留不会自动恢复。 重新打开案例后，你必须转到保留选项卡并打开以前的保留。  要打开保留，请选择它以显示弹出页面，然后将 **状态** 开关设置为 **“开”**。
 
@@ -58,9 +60,11 @@ ms.locfileid: "44419058"
 
 1. 在 **高级电子数据展示** 页面上，选择要关闭的案件。
 
-2. 在" **设置** 选项卡上，**"案例信息**"下， 点击 **选择**。
+2. 在&quot; **设置** 选项卡上，**&quot;案例信息**&quot;下， 点击 **选择**。
 
-3. 单击 **重新打开案件**。
+3. 在&quot;案例信息&quot;飞出页面底部，单击&quot; (**...") "** 更多 **选项**"，然后单击"**重新打开案例"。**
+
+   !["更多选项"菜单中用于重新打开Advanced eDiscovery选项](..\Media\ReopenAdvancedeDiscoveryCase.png)
 
    可能需要 60 分钟才能完成重新打开过程。
 
@@ -87,4 +91,6 @@ ms.locfileid: "44419058"
 
 2. 在" **设置** 选项卡上，**"案例信息**"下， 点击 **选择**。
 
-3. 单击 **删除案件**。
+3. 在"案例信息"飞出页底部，单击 **" (...")****更多选项**"，然后单击"删除 **大小写"。**
+
+   !["更多选项"菜单中用于删除Advanced eDiscovery选项](..\Media\DeleteAdvancedeDiscoveryCase.png)
