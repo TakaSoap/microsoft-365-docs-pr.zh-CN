@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 2c746a74899a34827e089f4c9c2f6ecc396bb69c
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: ec8dd97a563edc487008d028a7cdc9f6ef3d17c1
+ms.sourcegitcommit: 82a4d74020cd93ba444006317cfecc178c6d41dc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538767"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52689081"
 ---
 # <a name="mitigate-zero-day-vulnerabilities---threat-and-vulnerability-management"></a>缓解零日漏洞 - 危险和漏洞管理
 
@@ -46,7 +46,7 @@ ms.locfileid: "52538767"
 一旦发现零日漏洞，有关该漏洞的信息将通过该漏洞中的以下Microsoft Defender 安全中心。
 
 >[!NOTE]
-> 0 天功能当前不适用于 Mac、Linux Windows 等 (0 天) ;但是，以后会添加它。
+> 0 天漏洞功能当前仅适用于Windows产品。
 
 ### <a name="threat-and-vulnerability-management-dashboard"></a>威胁和漏洞管理仪表板
 

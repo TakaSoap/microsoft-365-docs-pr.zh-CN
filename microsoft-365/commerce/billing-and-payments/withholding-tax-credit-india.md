@@ -20,18 +20,18 @@ ms.custom:
 - commerce_billing
 monikerRange: o365-worldwide
 ms.date: 05/03/2021
-ms.openlocfilehash: 4866bcd07cb4a54088d230166f9b04f8258d7185
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: b34fd0fd2e35d71e6b35cde250be822201aa719a
+ms.sourcegitcommit: 82a4d74020cd93ba444006317cfecc178c6d41dc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52331786"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52689021"
 ---
 # <a name="request-a-credit-for-withholding-tax-on-your-account-india-customers"></a>向印度客户申请预扣税 (预扣) 
 
-印度客户会收到由 Microsoft Regional Sales Pte Ltd. (MRS) 计费的 Web Direct (Azure 和 Microsoft 365) 发票，然后向新加坡进行交叉付款以支付发票。 如果你在汇寄该付款时预扣了税款，本文将介绍使用 MRS 在帐户中申请预扣税 (WHT) 的信用的过程。
+印度客户会收到由 Microsoft Regional Sales Pte Ltd. (MRS) 计费的 Web Direct (Azure 和 Microsoft 365) 发票，然后向新加坡进行交叉付款以结算发票。 如果你在汇寄该付款时预扣了税款，本文将介绍使用 MRS 在帐户中申请预扣税 (WHT) 的信用的过程。
 
-## <a name="for-invoice-pay-customers-who-pay-by-check-and-wire"></a>对于通过支票和支票付款的发票支付客户
+## <a name="for-invoice-pay-customers-who-pay-by-check-or-wire"></a>对于通过支票或线路支付发票的客户
 
 如果在向 MRS 汇寄付款时预扣了税款，并且将预扣税款存入了税务部门，则必须提交 WHT 请求以支付帐户中预扣的税款金额。
 
@@ -44,7 +44,7 @@ ms.locfileid: "52331786"
 
 ## <a name="for-customers-who-pay-by-credit-card"></a>对于通过信用卡支付的客户
 
-如果你的付款方式是信用卡，并且你向 MRS 进行了完整付款，并且向收入税局支付 WHT，则必须提交 WHT 请求以申请退款的税款金额。
+如果你的付款方式是信用卡，并且你向 MRS 进行了完整付款，并且还向收入税局支付 WHT，则必须提交 WHT 请求以申请退款的税款金额。
 
 您的 WHT 请求必须包含以下项：
 
@@ -68,11 +68,11 @@ ms.locfileid: "52331786"
 >
 > - 客户在支付发票后只能提交 WHT 金额退款请求。
 > - 预扣税信用表上的发票金额必须与 TDS 证书中标识的发票金额相匹配。 如果两个窗体之间的发票金额不同，则必须在预扣税额度表单中指定差异的原因。 审查团队会检查此信息，他们可能会提出明确的问题（如果需要）。
-> - TDS 证书文件必须采用以下文件格式之一：.PDF或仅 Image (。JPEG、.PNG 和 .GIF) 。 此外，文件名不得包含空格或特殊字符。 文件大小不能超过 1 MB。
+> - TDS 证书文件必须采用以下文件格式之一：.PDF或仅 Image (。JPEG、.PNG 或 .GIF) 。 此外，文件名不得包含空格或特殊字符。 文件大小不能超过 1 MB。
 
 提交请求后，请求将进入审批流程，审批过程要么批准完成，要么发送回给你进行更正。
 
-如果请求有问题，审阅团队可能需要更正预扣金额或替换 TDS 证书。 在批准请求之前，必须重新提交请求。 审阅团队将批准请求或请求进行更多更改。
+如果请求有问题，审阅团队可能需要更正预扣金额或替换 TDS 证书。 必须先重新提交请求，然后才能批准该请求。 审阅团队将批准请求或请求进行更多更改。
 
 ## <a name="approved-requests"></a>已批准的请求
 

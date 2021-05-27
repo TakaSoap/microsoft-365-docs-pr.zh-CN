@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 69345a0db42ec838dc0758cdb0e93a49a8ba6cfd
-ms.sourcegitcommit: 5a1cb7d95070eef47d401a4693cc137a90550a5e
+ms.openlocfilehash: f3fd597181d73c1768057ea7740ab111e5af2068
+ms.sourcegitcommit: 82a4d74020cd93ba444006317cfecc178c6d41dc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52259399"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52689153"
 ---
 # <a name="microsoft-365-defender-prerequisites"></a>Microsoft 365Defender 先决条件
 
@@ -73,6 +73,18 @@ ms.locfileid: "52259399"
 - 美国政府社区云高 (GCC高) 
 - 美国国防部
 - 所有拥有商业许可证的美国政府机构
+
+
+目前，以下数据中心Office 365客户无法将 Microsoft Defender Office 365 Office 365集成到统一 Microsoft 365 Defender 功能：
+
+- 巴西 
+- 德国 
+- 挪威 
+- 新加坡 
+- 南非
+- Switzerland（瑞士） 
+- 阿拉伯联合酋长国 
+
 
 ## <a name="related-topics"></a>相关主题
 - [Microsoft 365Defender 概述](microsoft-365-defender.md)

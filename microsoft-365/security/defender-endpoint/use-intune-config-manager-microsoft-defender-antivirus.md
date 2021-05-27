@@ -1,5 +1,5 @@
 ---
-title: 使用Microsoft Defender 防病毒和 Intune 配置配置
+title: 使用Microsoft Defender 防病毒配置Microsoft Endpoint Manager
 description: 使用Microsoft Endpoint Manager和Microsoft Intune配置 Microsoft Defender AV 和 Endpoint Protection
 keywords: scep， intune， 终结点保护， 配置
 search.product: eADQiWindows 10XVcnh
@@ -11,20 +11,20 @@ localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 10/26/2018
-ms.reviewer: ''
+ms.date: 05/24/2021
+ms.reviewer: phuijbr, oogunrinde
 manager: dansimp
 ms.technology: mde
 audience: ITPro
 ms.topic: how-to
-ms.openlocfilehash: b62344945efc0bdfc495a4fc4196cea6ddcb1874
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: ab77f3ab5ac9385d1ce049061730d2192e3bcb0c
+ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52275320"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52683747"
 ---
-# <a name="use-microsoft-endpoint-manager-and-microsoft-intune-to-configure-and-manage-microsoft-defender-antivirus"></a>使用Microsoft Endpoint Manager和Microsoft Intune配置和管理Microsoft Defender 防病毒
+# <a name="use-microsoft-endpoint-manager-to-configure-and-manage-microsoft-defender-antivirus"></a>使用Microsoft Endpoint Manager配置和管理Microsoft Defender 防病毒
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -33,26 +33,32 @@ ms.locfileid: "52275320"
 
 - [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
 
-如果你正在使用 Microsoft Endpoint Manager 或 Microsoft Intune 管理你的网络上终结点，你现在可以使用 Microsoft Endpoint Manager 管理Microsoft Defender 防病毒扫描。
+可以使用此[Microsoft Endpoint Manager](/mem/endpoint-manager-overview)配置Microsoft Defender 防病毒扫描。 [Microsoft Intune](/mem/intune/fundamentals/what-is-intune)[和 Configuration Manager](/mem/configmgr/core/understand/introduction)现在属于Endpoint Manager。  
 
-1. In the Microsoft Endpoint Manager admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) ， navigate to **Endpoint Security**.
+## <a name="configure-microsoft-defender-antivirus-scans-in-endpoint-manager"></a>在Microsoft Defender 防病毒中配置Endpoint Manager
 
-2. 在 **"管理"** 下，**选择"防病毒"。**
+1. 转到管理Microsoft Endpoint Manager中心 [https://endpoint.microsoft.com](https://endpoint.microsoft.com) () ，然后登录。
 
-3. 选择你的Microsoft Defender 防病毒策略。 
+2. 导航到 **终结点安全性**。
 
-4. 在“**管理**”下，选择“**属性**”。
+3. 在 **"管理"** 下，**选择"防病毒"。**
 
-5. 选择“**配置设置**”旁的“**编辑**”。
+4. 选择你的Microsoft Defender 防病毒策略。 
 
-6. 展开扫描 **部分** ，然后查看或编辑扫描设置。
+5. 在“**管理**”下，选择“**属性**”。
 
-7. 选择 **"审阅 + 保存"**
+6. 选择“**配置设置**”旁的“**编辑**”。
 
-需要帮助? 请参阅[管理终结点安全Microsoft Intune。](/mem/intune/protect/endpoint-security)
+7. 展开扫描 **部分** ，然后查看或编辑扫描设置。
+
+8. 选择 **"审阅 + 保存"**
+
+
+> [!TIP]
+> 需要帮助? 请参阅[管理终结点安全Microsoft Intune。](/mem/intune/protect/endpoint-security)
 
 
 ## <a name="related-articles"></a>相关文章
 
-- [有关管理和配置工具的参考主题](configuration-management-reference-microsoft-defender-antivirus.md)
+- [有关管理和配置工具的参考文章](configuration-management-reference-microsoft-defender-antivirus.md)
 - [Windows 10 中的 Microsoft Defender 防病毒](microsoft-defender-antivirus-in-windows-10.md)

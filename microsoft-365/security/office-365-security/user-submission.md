@@ -17,12 +17,12 @@ ms.collection:
 description: 管理员可以了解如何配置邮箱以收集用户报告的垃圾邮件和网络钓鱼电子邮件。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 852e87ee76d9692b789ca217720ac3efb08f31a8
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: 906048609ce70c761bb014961e02c86f912cd638
+ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52624605"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52683495"
 ---
 # <a name="user-submissions-policy"></a>用户提交策略
 
@@ -141,7 +141,7 @@ ms.locfileid: "52624605"
 
 可以将第三方邮件报告工具配置为将报告的邮件发送到自定义邮箱。 唯一的要求是原始邮件作为附件包含在发送到自定义邮箱的邮件中 (而不只是将原始邮件转发到自定义邮箱) 。
 
-下一节将介绍邮件格式要求。
+下一节将介绍邮件格式要求。 格式是可选的，但如果它不符合规定格式，报告将始终作为网络钓鱼提交。
 
 ## <a name="message-submission-format"></a>邮件提交格式
 

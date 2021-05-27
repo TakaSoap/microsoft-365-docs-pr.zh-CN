@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: d945f7dd-f62f-4ca7-b3e7-469824cfd493
 description: 使用电子数据展示和搜索工具管理和响应组织中发生的数据泄漏事件。
-ms.openlocfilehash: 4305dbdb2fb59e4275852c88f8b74f6c4128a5cb
-ms.sourcegitcommit: 727a75b604d5ff5946a0854662ad5a8b049f2874
+ms.openlocfilehash: f92887018a7ab1cec35526c2a36cce4b0889172e
+ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "52653519"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52683771"
 ---
 # <a name="ediscovery-solution-series-data-spillage-scenario---search-and-purge"></a>电子数据展示解决方案系列：数据泄漏方案 - 搜索和清除
 
@@ -52,7 +52,7 @@ ms.locfileid: "52653519"
 
 - 当邮箱处于保留状态时，已删除邮件将保留在"可恢复的项目"文件夹中，直到保留期过期或保留解除。 [步骤 6](#step-6-prepare-the-mailboxes) 介绍如何从邮箱中删除保留。 在删除保留之前，请与记录管理或法律部门核实。 您的组织可能拥有一个策略，用于定义邮箱是置于保留状态还是数据泄漏事件优先。 
     
-- 若要控制数据泄漏调查人员可以搜索和管理哪些用户邮箱可以访问该案例，可以设置合规性边界并创建自定义角色组，如步骤 [1 中所述](#optional-step-1-manage-who-can-access-the-case-and-set-compliance-boundaries)。 为此，您必须是组织管理角色组的成员或分配有角色管理角色。 如果你或你组织的管理员已经设置了合规性边界，你可以跳过步骤 1。
+- 若要控制数据泄漏调查人员可以搜索和管理哪些用户邮箱可以访问该案例，可以设置合规性边界并创建自定义角色组，如步骤 [1 中所述](#optional-step-1-manage-who-can-access-the-case-and-set-compliance-boundaries)。 为此，您必须是组织管理角色组的成员或分配有角色管理角色。 如果您或您组织的管理员已经设置了合规性边界，您可以跳过步骤 1。
     
 - 若要创建案例，您必须是电子数据展示管理员角色组的成员，或者是分配了案例管理角色的自定义角色组的成员。 如果你不是成员，请让Microsoft 365[管理员将你添加到电子数据展示管理员角色组](assign-ediscovery-permissions.md)。
     
@@ -64,7 +64,7 @@ ms.locfileid: "52653519"
 
 根据组织实践，需要控制谁可以访问用于调查数据泄漏事件和设置合规性边界的电子数据展示案例。 执行此操作的最简单方法是将调查人员添加为安全 & 合规中心中现有角色组的成员，然后将该角色组添加为电子数据展示案例的成员。 有关内置电子数据展示角色组以及如何向电子数据展示案例添加成员的信息，请参阅分配 [电子数据展示权限](assign-ediscovery-permissions.md)。
   
-还可以创建一个符合组织需求的新角色组。 例如，你可能希望组织中一组数据泄漏调查人员访问所有数据泄漏案例并展开协作。 为此，你可以创建"数据泄漏调查人员"角色组，分配适当的角色 (导出、RMS 解密、审阅、预览、合规性搜索和案例管理) ，将数据泄漏调查人员添加到角色组，然后将该角色组添加为数据泄漏电子数据展示案例的成员。 有关如何[进行此操作的](tagging-and-assessment-in-advanced-ediscovery.md)详细说明，请参阅在 Office 365 中设置电子数据展示调查的合规性边界。 
+还可以创建一个符合组织需求的新角色组。 例如，你可能希望组织中一组数据泄漏调查人员访问所有数据泄漏案例并展开协作。 为此，你可以创建"数据泄漏调查人员"角色组，分配适当的角色 (导出、RMS 解密、审阅、预览、合规性搜索和案例管理) ，将数据泄漏调查人员添加到角色组，然后将该角色组添加为数据泄漏电子数据展示案例的成员。 有关如何[进行此操作的](set-up-compliance-boundaries.md)详细说明，请参阅在 Office 365 中设置电子数据展示调查的合规性边界。 
   
 ## <a name="step-2-create-an-ediscovery-case"></a>步骤 2：创建电子数据展示案例
 
@@ -123,7 +123,7 @@ ms.locfileid: "52653519"
   
 - [安全与合规中心内的消息跟踪](../security/office-365-security/message-trace-scc.md)
     
-- [安全与合规中心&邮件跟踪](https://blogs.technet.microsoft.com/exchange/2018/05/02/new-message-trace-in-office-365-security-compliance-center/)
+- [安全与合规中心&邮件跟踪](https://techcommunity.microsoft.com/t5/exchange-team-blog/new-message-trace-in-office-365-security-038-compliance-center/ba-p/607893)
     
 ## <a name="step-6-prepare-the-mailboxes"></a>步骤 6：准备邮箱
 

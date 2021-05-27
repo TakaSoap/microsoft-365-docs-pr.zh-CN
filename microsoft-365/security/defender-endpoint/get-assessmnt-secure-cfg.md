@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: f2e20415cb64903e8dfe2c82646c1970036b8f6b
-ms.sourcegitcommit: 727a75b604d5ff5946a0854662ad5a8b049f2874
+ms.openlocfilehash: ab33db7fb7acf1969973a7af8f80ea97ef3d378f
+ms.sourcegitcommit: 82a4d74020cd93ba444006317cfecc178c6d41dc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "52653620"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52689093"
 ---
 # <a name="export-secure-configuration-assessment-per-device"></a>导出每个设备的安全配置评估
 
@@ -39,19 +39,21 @@ ms.locfileid: "52653620"
 >
 基于每个设备返回所有配置及其状态。
 
-不同的 API 调用用于获取不同类型的数据。 由于数据量可能非常大，因此有两种方法可以检索数据：
+不同的 API 调用用于获取不同类型的数据。 由于数据量可能很大，因此有两种方法可以检索数据：
 
-- **OData**  API 按照 OData 协议提取组织的所有数据作为 Json 响应。 此方法最适合设备 _数少于 10 万的小组织_。 响应会分页，因此您可以使用响应中的 \@ odata.nextLink 字段获取下一个结果。
+- [导出安全配置评估 **OData：API**](#1-export-secure-configuration-assessment-odata)按照 OData 协议提取组织的所有数据作为 Json 响应。 此方法最适合使用少于 _100 K_ 设备的小组织。 响应会分页，因此您可以使用响应中的 \@ odata.nextLink 字段获取下一个结果。
 
-- **通过文件** 此 API 解决方案允许更快、更可靠地提取大量数据。 因此，建议拥有 10 万台以上设备的大型组织使用。 此 API 将组织的所有数据提取为下载文件。 该响应包含从网站下载所有数据的Azure 存储。 此 API 使你能够按如下方式从Azure 存储数据：
+- [通过文件 **导出安全配置评估**](#2-export-secure-configuration-assessment-via-files)：此 API 解决方案允许更快、更可靠地拉取大量数据。 因此，建议拥有 100 K 以上设备的大型组织使用。 此 API 将组织的所有数据提取为下载文件。 该响应包含从网站下载所有数据的Azure 存储。 此 API 使你能够按如下方式从Azure 存储数据：
 
   - 调用 API 获取包含所有组织数据的下载 URL 列表。
 
   - 使用下载 URL 下载所有文件并处理您喜欢的数据。
 
-为 _OData_ 或 (文件收集的数据) 当前状态的当前快照，不包含历史数据。 为了收集历史数据，客户必须将数据保存在自己的数据存储中。
+使用 _OData_ 或 (文件收集的数据) 当前状态的当前快照，不包含历史数据。 为了收集历史数据，客户必须将数据保存在自己的数据存储中。
 
-除非另有说明，否则列出的所有导出评估方法都是 **** 完全导出 (**** 也称作按设备 **_) 。_**
+> [!Note]
+>
+> 除非另有说明，否则列出的所有导出评估方法都是 **** 完全导出 (**** 也称作按设备 **_) 。_**
 
 ## <a name="1-export-secure-configuration-assessment-odata"></a>1. 导出 OData (安全) 
 
@@ -90,12 +92,12 @@ GET /api/machines/SecureConfigurationsAssessmentByMachine
 
 >[!Note]
 >
->- 下表中定义的属性按属性 ID 以字母数字方式列出。  运行此 API 时，生成的输出不必按这些表中列出的相同顺序返回。
+>- 下表中定义的属性按字母顺序按属性 ID 列出。  运行此 API 时，生成的输出不必按此表中列出的相同顺序返回。
 >
 >- 响应中可能会返回其他一些列。 这些列是临时的，可能会被删除，请仅使用记录列。
 >
 
-属性 (id)  | 数据类型 | 说明 | 返回值的示例
+属性 (ID)  | 数据类型 | 说明 | 返回值的示例
 :---|:---|:---|:---
 ConfigurationCategory | string | 配置所属的类别或分组：应用程序、OS、网络、帐户、安全控件 | 安全控件
 ConfigurationId | string | 特定配置的唯一标识符 | scid-10000
@@ -255,7 +257,7 @@ GET /api/machines/SecureConfigurationsAssessmentExport
 >
 >- 为了最大限度提高数据的下载速度，你可以确保从数据所在的同一 Azure 区域进行下载。
 >
-属性 (id)  | 数据类型 | 说明 | 返回值的示例
+属性 (ID)  | 数据类型 | 说明 | 返回值的示例
 :---|:---|:---|:---
 导出文件 | 数组 \[ 字符串\] | 保存组织当前快照的文件的下载 URL 列表 | [  Https://tvmexportstrstgeus.blob.core.windows.net/tvm-export...1”, “https://tvmexportstrstgeus.blob.core.windows.net/tvm-export...2” ]
 GeneratedTime | string | 导出的生成时间。 | 2021-05-20T08：00：00Z ]

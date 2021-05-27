@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 886195de38856306d69932446eae34212fe4bb0d
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: e08781455888595d57bd8a9e6f792796ea1853cd
+ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934497"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52684203"
 ---
 # <a name="deploy-updates-for-microsoft-defender-for-endpoint-on-macos"></a>在 macOS 上部署 Microsoft Defender for Endpoint 的更新
 
@@ -79,7 +79,7 @@ MAU 包括一个称为 *msupdate* 的命令行工具，该工具专为 IT 管理
 |节|值|
 |:--|:--|
 | **域** | `com.microsoft.autoupdate2` |
-| **Key** | ChannelName |
+| **键** | ChannelName |
 | **数据类型** | String |
 | **可能的值** | Beta 版本 <br/> 预览 <br/> Current |
 |||
@@ -97,7 +97,7 @@ MAU 包括一个称为 *msupdate* 的命令行工具，该工具专为 IT 管理
 |节|值|
 |:--|:--|
 | **域** | `com.microsoft.autoupdate2` |
-| **Key** | UpdateCheckFrequency |
+| **键** | UpdateCheckFrequency |
 | **数据类型** | 整数 |
 | **默认值** | 720 (分钟)  |
 | **Comment** | 此值以分钟数设置。 |
@@ -110,7 +110,7 @@ MAU 包括一个称为 *msupdate* 的命令行工具，该工具专为 IT 管理
 |节|值|
 |:--|:--|
 | **域** | `com.microsoft.autoupdate2` |
-| **Key** | HowToCheck |
+| **键** | HowToCheck |
 | **数据类型** | String |
 | **可能的值** | 手动 <br/> AutomaticCheck <br/> AutomaticDownload |
 | **Comment** |  请注意，如果可能，AutomaticDownload 将执行下载并静默安装。 |
@@ -123,7 +123,7 @@ MAU 包括一个称为 *msupdate* 的命令行工具，该工具专为 IT 管理
 |节|值|
 |:--|:--|
 | **域** | `com.microsoft.autoupdate2` |
-| **Key** | EnableCheckForUpdatesButton |
+| **键** | EnableCheckForUpdatesButton |
 | **数据类型** | Boolean |
 | **可能的值** | 为 (默认值)  <br/> False |
 
@@ -135,7 +135,7 @@ MAU 包括一个称为 *msupdate* 的命令行工具，该工具专为 IT 管理
 |节|值|
 |:--|:--|
 | **域** | `com.microsoft.autoupdate2` |
-| **Key** | DisableInsiderCheckbox |
+| **键** | DisableInsiderCheckbox |
 | **数据类型** | Boolean |
 | **可能的值** | False (默认值)  <br/> True |
 
@@ -147,7 +147,7 @@ MAU 包括一个称为 *msupdate* 的命令行工具，该工具专为 IT 管理
 |节|值|
 |:--|:--|
 | **域** | `com.microsoft.autoupdate2` |
-| **Key** | SendAllTelemetryEnabled |
+| **键** | SendAllTelemetryEnabled |
 | **数据类型** | Boolean |
 | **可能的值** | 为 (默认值)  <br/> False |
 
@@ -155,10 +155,17 @@ MAU 包括一个称为 *msupdate* 的命令行工具，该工具专为 IT 管理
 ## <a name="example-configuration-profile"></a>配置文件示例
 
 以下配置文件用于：
-- 将设备放在 Beta 渠道中
+- 将设备放在生产渠道中
 - 自动下载和安装更新
 - 在用户界面中启用"检查更新"按钮
 - 允许设备上的用户注册预览体验成员频道
+
+
+>[!WARNING]
+>以下配置是一个示例配置，如果不适当审阅设置和定制配置，则不应在生产中使用。
+
+>[!TIP]
+>为了预览新功能并提供早期反馈，建议将企业中某些设备配置为 `Beta` 或 `Preview` 。
 
 ### <a name="jamf"></a>JAMF
 
@@ -168,7 +175,7 @@ MAU 包括一个称为 *msupdate* 的命令行工具，该工具专为 IT 管理
 <plist version="1.0">
 <dict>
     <key>ChannelName</key>
-    <string>Beta</string>
+    <string>Production</string>
     <key>HowToCheck</key>
     <string>AutomaticDownload</string>
     <key>EnableCheckForUpdatesButton</key>
@@ -228,7 +235,7 @@ MAU 包括一个称为 *msupdate* 的命令行工具，该工具专为 IT 管理
             <key>PayloadEnabled</key>
             <true/>
             <key>ChannelName</key>
-            <string>Beta</string>
+            <string>Production</string>
             <key>HowToCheck</key>
             <string>AutomaticDownload</string>
             <key>EnableCheckForUpdatesButton</key>

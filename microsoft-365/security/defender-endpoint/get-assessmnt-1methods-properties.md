@@ -1,7 +1,7 @@
 ---
 title: 导出每个设备的评估方法和属性
-description: 提供有关拉取"危险和漏洞管理"数据的 API 的信息。 不同的 API 调用用于获取不同类型的数据。 通常，每个 API 调用都包含组织中设备的必要数据。 由于数据量可能非常大，因此有两种方法可以检索数据
-keywords: api， api， 导出评估， 按设备评估， 漏洞评估报告， 设备漏洞评估， 设备漏洞报告， 安全配置评估， 安全配置报告， 软件漏洞评估， 软件漏洞报告， 计算机漏洞报告，
+description: 提供有关拉取"危险和漏洞管理"数据的 API 的信息。 不同的 API 调用用于获取不同类型的数据。 通常，每个 API 调用都包含组织中设备的必要数据。 由于数据量可能很大，因此有两种方法可以检索数据
+keywords: api， api， 导出评估， 按设备评估， 每计算机评估， 漏洞评估报告， 设备漏洞评估， 设备漏洞报告， 安全配置评估， 安全配置报告， 软件漏洞评估， 软件漏洞报告， 按计算机进行漏洞报告，
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 851c792265375e5905c0c427bfc77a2366bc962d
-ms.sourcegitcommit: 727a75b604d5ff5946a0854662ad5a8b049f2874
+ms.openlocfilehash: e820875a3350761824c3e4e67311e55507a9cb6f
+ms.sourcegitcommit: 82a4d74020cd93ba444006317cfecc178c6d41dc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "52653623"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52689197"
 ---
 # <a name="export-assessment-methods-and-properties-per-device"></a>导出每个设备的评估方法和属性
 
@@ -44,19 +44,25 @@ ms.locfileid: "52653623"
 >
 > 除非另有说明，否则列出的所有导出评估方法都是 **** 完全导出 (**** 也称作按设备 **_) 。_**
 
-不同的 API 调用用于获取不同类型的数据。 由于数据量可能很大，因此有两种方法可以检索数据：
+有三种 API 方法可用于检索信息 (导出) 类型的信息：
 
-- **OData**  API 按照 OData 协议提取组织的所有数据作为 Json 响应。 此方法最适合设备 _数少于 10 万的小组织_。 响应会分页，因此您可以使用响应中的 \@ odata.nextLink 字段获取下一个结果。
+1. 导出安全配置评估
 
-- **通过文件** 此 API 解决方案允许更快、更可靠地提取大量数据。 因此，建议拥有 10 万台以上设备的大型组织使用。 此 API 将组织的所有数据提取为下载文件。 该响应包含从网站下载所有数据的Azure 存储。 此 API 使你能够按如下方式从Azure 存储数据：
+2. 导出软件库存评估
+
+3. 导出软件漏洞评估
+
+对于每个方法，都有不同的 API 调用，用于获取不同类型的数据。 由于数据量可能很大，因此有两种方法可以检索数据：
+
+- **OData**  API 按照 OData 协议提取组织的所有数据作为 Json 响应。 此方法最适合设备 _数少于 100 K_ 的小组织。 响应会分页，因此您可以使用响应中的 \@ odata.nextLink 字段获取下一个结果。
+
+- **通过文件** 此 API 解决方案允许更快、更可靠地提取大量数据。 因此，建议拥有 100 K 以上设备的大型组织使用。 此 API 将组织的所有数据提取为下载文件。 该响应包含从网站下载所有数据的Azure 存储。 此 API 使你能够按如下方式从Azure 存储数据：
 
   - 调用 API 获取包含所有组织数据的下载 URL 列表。
 
   - 使用下载 URL 下载所有文件并处理您喜欢的数据。
 
-为 _OData_ 或 (文件收集的数据) 当前状态的当前快照，不包含历史数据。 为了收集历史数据，客户必须将数据保存在自己的数据存储中。
-
-除非另有说明，否则列出的所有导出评估方法都是 **** 完全导出 (**** 也称作按设备 **_) 。_**
+使用 _OData_ 或 (文件收集的数据) 当前状态的当前快照，不包含历史数据。 为了收集历史数据，客户必须将数据保存在自己的数据存储中。
 
 ## <a name="1-export-secure-configurations-assessment"></a>1. 导出安全配置评估
 
@@ -64,10 +70,10 @@ ms.locfileid: "52653623"
 
 ### <a name="11-methods"></a>1.1 方法
 
-Method | 数据类型 | 说明
+方法 | 数据类型 | 说明
 :---|:---|:---
-[导出 OData (安全) ](get-assessmnt-secure-cfg.md#1-export-secure-configuration-assessment-odata) | 按设备集合的安全配置。 请参阅 [：1.2 OData (属性) ](#12-properties-odata) | 返回一个表，该表包含 DeviceId、ConfigurationId 每个唯一组合的条目。 为 _OData_ 或 (文件收集的数据) 当前状态的当前快照，不包含历史数据。 为了收集历史数据，客户必须将数据保存在自己的数据存储中。
-[导出通过文件 (安全配置) ](get-assessmnt-secure-cfg.md#2-export-secure-configuration-assessment-via-files) | 通过设备文件进行安全配置。 请参阅 [：1.3 属性 (文件) ](#13-properties-via-files) | 返回一个表，该表包含 DeviceId、ConfigurationId 每个唯一组合的条目。 此 API 解决方案允许更快、更可靠地提取大量数据。 因此，建议拥有 10 万台以上设备的大型组织使用。 此 API 将组织的所有数据提取为下载文件。 该响应包含从网站下载所有数据的Azure 存储。 此 API 使你能够下载所有数据Azure 存储如下所示：1.  调用 API 获取包含所有组织数据的下载 URL 列表。 2.  使用下载 URL 下载所有文件并处理您喜欢的数据。
+导出 **OData (安全)** | 按设备集合的安全配置。 请参阅 [：1.2 OData (属性) ](#12-properties-odata) | 返回一个表，该表包含 DeviceId、ConfigurationId 每个唯一组合的条目。 API 按照 OData 协议提取组织的所有数据作为 Json 响应。 此方法最适合设备数少于 100 K 的小组织。 响应将分页，因此您可以使用响应中的 @odata.nextLink 字段获取下一个结果。
+导出通过文件 **(安全配置)** | 按设备集合的安全配置。 请参阅 [：1.2 OData (属性) ](#12-properties-odata) | 返回一个表，该表包含 DeviceId、ConfigurationId 每个唯一组合的条目。 此 API 解决方案允许更快、更可靠地提取大量数据。 因此，建议拥有 100 K 以上设备的大型组织使用。 此 API 将组织的所有数据提取为下载文件。 该响应包含从网站下载所有数据的Azure 存储。 此 API 使你能够下载所有数据Azure 存储如下所示：1.  调用 API 获取包含所有组织数据的下载 URL 列表。 2.  使用下载 URL 下载所有文件并处理您喜欢的数据。
 
 ### <a name="12-properties-odata"></a>1.2 OData (属性) 
 
@@ -101,10 +107,10 @@ GeneratedTime | string | 导出的生成时间。
 
 ### <a name="21-methods"></a>2.1 方法
 
-Method | 数据类型 | 说明
+方法 | 数据类型 | 说明
 :---|:---|:---
-[导出 OData (软件清单) ](get-assessmnt-software-inventory.md#1-export-software-inventory-assessment-odata) | 按设备集合列出软件清单。 请参阅 [：2.2 OData (2.2) ](#22-properties-odata) | 返回一个表，该表包含 DeviceId、SoftwareVendor、SoftwareName、SoftwareVersion 每个唯一组合的条目。 为 _OData_ 或 (文件收集的数据) 当前状态的当前快照，不包含历史数据。 为了收集历史数据，客户必须将数据保存在自己的数据存储中。
-[通过文件库导出 (清单) ](get-assessmnt-software-inventory.md#2-export-software-inventory-assessment-via-files) | 按设备文件列出软件清单。 请参阅 [：2.3 属性 (文件) ](#23-properties-via-files) | 返回一个表，该表包含 DeviceId、SoftwareVendor、SoftwareName、SoftwareVersion 每个唯一组合的条目。 此 API 解决方案允许更快、更可靠地提取大量数据。 因此，建议拥有 10 万台以上设备的大型组织使用。 此 API 将组织的所有数据提取为下载文件。 该响应包含从网站下载所有数据的Azure 存储。 此 API 使你能够下载所有数据Azure 存储如下所示：1.  调用 API 获取包含所有组织数据的下载 URL 列表。 2.  使用下载 URL 下载所有文件并处理您喜欢的数据。
+导出 **OData (软件清单)** | 按设备集合列出软件清单。 请参阅 [：2.2 OData (2.2) ](#22-properties-odata) | 返回一个表，该表包含 DeviceId、SoftwareVendor、SoftwareName、SoftwareVersion 每个唯一组合的条目。 API 按照 OData 协议提取组织的所有数据作为 Json 响应。 此方法最适合设备数少于 100 K 的小组织。 响应将分页，因此您可以使用响应中的 @odata.nextLink 字段获取下一个结果。
+通过文件库 **导出 (清单)** | 按设备文件列出软件清单。 请参阅 [：2.3 属性 (文件) ](#23-properties-via-files) | 返回一个表，该表包含 DeviceId、SoftwareVendor、SoftwareName、SoftwareVersion 每个唯一组合的条目。 此 API 解决方案允许更快、更可靠地提取大量数据。 因此，建议拥有 100 K 以上设备的大型组织使用。 此 API 将组织的所有数据提取为下载文件。 该响应包含从网站下载所有数据的Azure 存储。 此 API 使你能够下载所有数据Azure 存储如下所示：1.  调用 API 获取包含所有组织数据的下载 URL 列表。 2.  使用下载 URL 下载所有文件并处理您喜欢的数据。
 
 ### <a name="22-properties-odata"></a>2.2 OData (2.2) 
 
@@ -132,16 +138,16 @@ SoftwareVersion | string | 软件产品的版本号。
 导出文件 | 数组 \[ 字符串\] | 保存组织当前快照的文件的下载 URL 列表。
 GeneratedTime | string | 导出的生成时间。
 
-## <a name="3-export-software-vulnerabilities-assessment-per-device"></a>3. 导出每个设备的软件漏洞评估
+## <a name="3-export-software-vulnerabilities-assessment"></a>3. 导出软件漏洞评估
 
 返回设备上所有设备的已知漏洞及其详细信息。
 
 ### <a name="31-methods"></a>3.1 方法
 
-Method | 数据类型 | 说明
+方法 | 数据类型 | 说明
 :---|:---|:---
-[导出 OData (软件) ](get-assessmnt-software-vulnerabilities.md#1-export-software-vulnerabilities-assessment-odata) | 调查集合，请参阅 [：3.2 属性 (OData) ](#32-properties-odata) | 返回一个包含 DeviceId、SoftwareVendor、SoftwareName、SoftwareVersion、CveId 每个唯一组合的条目的表。 为 _OData_ 或 (文件收集的数据) 当前状态的当前快照，不包含历史数据。 为了收集历史数据，客户必须将数据保存在自己的数据存储中。
-[导出通过文件 (软件漏洞) ](get-assessmnt-software-vulnerabilities.md#2-export-software-vulnerabilities-assessment-via-files) | 调查实体 请参阅 [：3.3 通过文件 (的属性) ](#33-properties-via-files) | 返回一个包含 DeviceId、SoftwareVendor、SoftwareName、SoftwareVersion、CveId 每个唯一组合的条目的表。 此 API 解决方案允许更快、更可靠地提取大量数据。 因此，建议拥有 10 万台以上设备的大型组织使用。 此 API 将组织的所有数据提取为下载文件。 该响应包含从网站下载所有数据的Azure 存储。 此 API 使你能够下载所有数据Azure 存储如下所示：1.  调用 API 获取包含所有组织数据的下载 URL 列表。 2.  使用下载 URL 下载所有文件并处理您喜欢的数据。
+将软件漏洞评估导出 **(OData)** | 调查集合，请参阅 [：3.2 属性 (OData) ](#32-properties-odata) | 返回一个包含 DeviceId、SoftwareVendor、SoftwareName、SoftwareVersion、CveId 每个唯一组合的条目的表。 API 按照 OData 协议提取组织的所有数据作为 Json 响应。 此方法最适合设备数少于 100 K 的小组织。 响应将分页，因此您可以使用响应中的 @odata.nextLink 字段获取下一个结果。
+导出通过文件 (**软件漏洞评估)** | 调查实体 请参阅 [：3.3 通过文件 (的属性) ](#33-properties-via-files) | 返回一个包含 DeviceId、SoftwareVendor、SoftwareName、SoftwareVersion、CveId 每个唯一组合的条目的表。 此 API 解决方案允许更快、更可靠地提取大量数据。 因此，建议拥有 100 K 以上设备的大型组织使用。 此 API 将组织的所有数据提取为下载文件。 该响应包含从网站下载所有数据的Azure 存储。 此 API 使你能够下载所有数据Azure 存储如下所示：1.  调用 API 获取包含所有组织数据的下载 URL 列表。 2.  使用下载 URL 下载所有文件并处理您喜欢的数据。
 
 ### <a name="32-properties-odata"></a>3.2 OData (属性) 
 

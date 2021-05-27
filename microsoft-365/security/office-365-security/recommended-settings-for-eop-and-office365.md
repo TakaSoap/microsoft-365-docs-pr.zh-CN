@@ -19,12 +19,12 @@ ms.collection:
 description: 什么是适用于 EOP Exchange Online Protection (和 Defender) 安全设置Office 365最佳实践？ 标准保护的当前建议是什么？ 如果要更加严格，应该使用什么？ 如果你还使用 Defender for Office 365？
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 04668932747462d2636b466d87c2655d97569657
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: 10fac8cb7241faa652bbcb4726610abef741e70c
+ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52624069"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52683267"
 ---
 # <a name="recommended-settings-for-eop-and-microsoft-defender-for-office-365-security"></a>用于配置 EOP 和 Defender for Office 365 安全性的建议设置
 
@@ -137,11 +137,11 @@ ms.locfileid: "52624069"
 
 |安全功能名称|默认值|标准|Strict|评论|
 |---|:---:|:---:|:---:|---|
-|**是否要在收件人的邮件被隔离时通知收件人？** <p> _Action_|否 <p> _DeleteMessage_|否 <p> _DeleteMessage_|否 <p> _DeleteMessage_|如果在电子邮件附件中检测到恶意软件，邮件将被隔离，并且只有管理员才能释放。|
-|**常见附件类型筛选器** <p> _EnableFileFilter_|关 <p> `$false`|开 <p> `$true`|打开 <p> `$true`|此设置根据文件类型隔离包含可执行附件的邮件，而不考虑附件内容。|
-|**恶意软件零时差自动清除** <p> _ZapEnabled_|打开 <p> `$true`|打开 <p> `$true`|打开 <p> `$true`||
-|**通知内部发件人** 未送达邮件 <p> _EnableInternalSenderNotifications_|已禁用 <p> `$false`|已禁用 <p> `$false`|已禁用 <p> `$false`||
-|**通知外部发件人** 未送达邮件 <p> _EnableExternalSenderNotifications_|已禁用 <p> `$false`|已禁用 <p> `$false`|已禁用 <p> `$false`||
+|**当邮件被隔离为恶意软件时通知收件人** <p> _Action_|否 <p> _DeleteMessage_|否 <p> _DeleteMessage_|否 <p> _DeleteMessage_|如果在电子邮件附件中检测到恶意软件，邮件将被隔离，并且只有管理员才能释放。|
+|**启用常见附件筛选器** <p> _EnableFileFilter_|关 <p> `$false`|开 <p> `$true`|打开 <p> `$true`|此设置根据文件类型隔离包含可执行附件的邮件，而不考虑附件内容。|
+|**启用恶意软件的零时差自动清除** <p> _ZapEnabled_|打开 <p> `$true`|打开 <p> `$true`|打开 <p> `$true`||
+|**将邮件隔离为恶意软件时通知内部发件人** <p> _EnableInternalSenderNotifications_|已禁用 <p> `$false`|已禁用 <p> `$false`|已禁用 <p> `$false`||
+|**当邮件被隔离为恶意软件时通知外部发件人** <p> _EnableExternalSenderNotifications_|已禁用 <p> `$false`|已禁用 <p> `$false`|已禁用 <p> `$false`||
 |
 
 ### <a name="eop-default-anti-phishing-policy-settings"></a>EOP 默认防钓鱼策略设置

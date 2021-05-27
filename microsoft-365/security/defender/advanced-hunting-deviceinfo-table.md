@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: f97947c2c9f02720facae4f0c3c29ff702416261
-ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
+ms.openlocfilehash: 99a07b1517058b0e5ab241aaae9c6899e2994432
+ms.sourcegitcommit: 82a4d74020cd93ba444006317cfecc178c6d41dc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52023125"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52689105"
 ---
 # <a name="deviceinfo"></a>DeviceInfo
 
@@ -59,7 +59,17 @@ ms.locfileid: "52023125"
 | `OSVersion` | string | 计算机上运行的操作系统版本 |
 | `MachineGroup` | string | 计算机的机器组。 基于角色的访问控制使用该组来确定对计算机的访问权限 |
 | `ReportId` | long | 基于重复计数器的事件标识符。 若要标识唯一事件，此列必须与 DeviceName 和 Timestamp 列一起使用 |
+| `OnboardingStatus` | string | 指示设备当前是否已载入 Microsoft Defender For Endpoint 或者设备是否不受支持 |
 |`AdditionalFields` | string | 有关 JSON 数组格式的事件的其他信息 |
+|`DeviceCategory` | string | 将特定设备类型分组到以下类别的更广泛的分类：终结点、网络设备、IoT、未知 |
+|`DeviceType` | string | 基于目的和功能的设备类型，例如网络设备、工作站、服务器、移动设备、游戏控制台或打印机 |
+|`DeviceSubType` | string | 某些类型的设备的其他修饰符，例如，移动设备可以是平板电脑或智能手机 |
+|`Model` | string | 供应商或制造商的产品型号或编号 |
+|`Vendor` | string | 产品供应商或制造商的名称 |
+|`OSDistribution` | string | 操作系统平台的分发，如适用于 Linux 平台的 Ubuntu 或 RedHat |
+|`OSVersionInfo` | string | 有关操作系统版本的其他信息，例如常用名称、代码名称或版本号 |
+|`MergedDeviceIds` | string | 已分配给同一设备的以前的设备 ID |
+|`MergedToDeviceId` | string | 分配给设备的最新设备 ID |
 
 `DeviceInfo`该表提供基于检测信号的设备信息，检测信号是定期报告或来自设备的信号。 每隔十五分钟，设备发送包含经常更改的属性（如 ）的部分检测信号 `LoggedOnUsers` 。 每天发送一次包含设备属性的完整检测信号。
 

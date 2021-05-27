@@ -22,12 +22,12 @@ ms.custom:
 description: 管理员可以了解零时差自动清除 (ZAP) 如何反向将 Exchange Online 邮箱中的已送达邮件移动到垃圾邮件文件夹或被反向发现为垃圾邮件或网络钓鱼的隔离邮箱。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 81d37b3d02cb1009ef718fdd0d50eeadd819d3b6
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: ee5a3fee8e189ff9cc08f187971e728670766d6d
+ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51203902"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52684191"
 ---
 # <a name="zero-hour-auto-purge-zap-in-exchange-online"></a>零时差自动清除 (ZAP) 中Exchange Online
 
@@ -53,13 +53,13 @@ ZAP 操作对于用户是无缝的;如果检测到并移动了邮件，系统不
 
 [保险箱列表、](create-safe-sender-lists-in-office-365.md)邮件流规则 (传输规则) 收件箱规则或其他筛选器优先于 ZAP。 与邮件流中发生的情况类似，这意味着即使服务确定已传递的邮件需要 ZAP，由于安全发件人配置，邮件不会处理。 这是在配置邮件以绕过筛选时要谨慎的另一个原因。
 
-### <a name="malware-zap"></a>恶意软件 ZAP
+### <a name="zap-for-malware"></a>恶意软件的 ZAP
 
 对于 **在传递后** 发现包含恶意软件的已读邮件或未读邮件，ZAP 隔离包含恶意软件附件的邮件。 只有管理员可以查看和管理隔离邮件中的恶意软件邮件。
 
-反恶意软件策略中默认启用恶意软件 ZAP。 有关详细信息，请参阅在 [EOP 中配置反恶意软件策略](configure-anti-malware-policies.md)。
+恶意软件的 ZAP 在反恶意软件策略中默认启用。 有关详细信息，请参阅在 [EOP 中配置反恶意软件策略](configure-anti-malware-policies.md)。
 
-### <a name="phish-zap"></a>钓鱼邮件 ZAP
+### <a name="zap-for-phishing"></a>网络钓鱼的 ZAP
 
 对于 **在** 传递后标识为网络钓鱼的已读邮件或未读邮件，ZAP 结果取决于在适用的反垃圾邮件策略中为网络钓鱼电子邮件筛选裁定配置的操作。 以下列表介绍了针对网络钓鱼的可用筛选裁定操作及其可能的 ZAP 结果：
 
@@ -69,11 +69,11 @@ ZAP 操作对于用户是无缝的;如果检测到并移动了邮件，系统不
 
 - **隔离邮件**：ZAP 隔离邮件。
 
-默认情况下，在反垃圾邮件策略中启用网络钓鱼 ZAP，网络钓鱼电子邮件筛选裁定的默认操作是隔离邮件，这意味着网络钓鱼ZAP 默认隔离邮件。
+默认情况下，在反垃圾邮件策略中启用网络钓鱼的 ZAP，而网络钓鱼电子邮件筛选裁定的默认操作是隔离邮件，这意味着默认情况下，网络钓鱼的 ZAP 隔离邮件。
 
 有关配置垃圾邮件筛选裁定的信息，请参阅在邮件中配置[反垃圾邮件Microsoft 365。](configure-your-spam-filter-policies.md)
 
-### <a name="spam-zap"></a>垃圾邮件 ZAP
+### <a name="zap-for-spam"></a>垃圾邮件的 ZAP
 
 对于 **在** 传递后被标识为垃圾邮件的未读邮件，ZAP 结果取决于在适用的反垃圾邮件策略中为垃圾邮件筛选裁定配置的操作。 垃圾邮件的可用筛选裁定操作及其可能的 ZAP 结果如下列表所述：
 

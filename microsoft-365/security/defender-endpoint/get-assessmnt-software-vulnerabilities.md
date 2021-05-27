@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: be21be07758c1123cdde38e3750cafe739bfb66a
-ms.sourcegitcommit: 727a75b604d5ff5946a0854662ad5a8b049f2874
+ms.openlocfilehash: 951f78ba361a12e404a5cce2071f931eab30c43f
+ms.sourcegitcommit: 82a4d74020cd93ba444006317cfecc178c6d41dc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "52653622"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52689209"
 ---
 # <a name="export-software-vulnerabilities-assessment-per-device"></a>导出每个设备的软件漏洞评估
 
@@ -37,21 +37,23 @@ ms.locfileid: "52653622"
 [!include[Prerelease information](../../includes/prerelease.md)]
 >
 >
-基于每个设备返回所有设备的所有已知漏洞及其详细信息。
+基于每个设备返回所有已知软件漏洞及其所有设备的详细信息。
 
 不同的 API 调用用于获取不同类型的数据。 由于数据量可能非常大，因此有两种方法可以检索数据：
 
-- **OData**  API 按照 OData 协议提取组织的所有数据作为 Json 响应。 此方法最适合设备 _数少于 10 万的小组织_。 响应会分页，因此您可以使用响应中的 \@ odata.nextLink 字段获取下一个结果。
+- [导出软件漏洞评估 OData](#1-export-software-vulnerabilities-assessment-odata)  API 按照 OData 协议提取组织的所有数据作为 Json 响应。 此方法最适合使用少于 _100 K_ 设备的小组织。 响应会分页，因此您可以使用响应中的 \@ odata.nextLink 字段获取下一个结果。
 
-- **通过文件** 此 API 解决方案允许更快、更可靠地提取大量数据。 因此，建议拥有 10 万台以上设备的大型组织使用。 此 API 将组织的所有数据提取为下载文件。 该响应包含从网站下载所有数据的Azure 存储。 此 API 使你能够按如下方式从Azure 存储数据：
+- [通过文件导出软件漏洞评估](#2-export-software-vulnerabilities-assessment-via-files) 此 API 解决方案允许更快、更可靠地提取大量数据。 因此，建议拥有 100 K 以上设备的大型组织使用。 此 API 将组织的所有数据提取为下载文件。 该响应包含从网站下载所有数据的Azure 存储。 此 API 使你能够按如下方式从Azure 存储数据：
 
   - 调用 API 获取包含所有组织数据的下载 URL 列表。
 
   - 使用下载 URL 下载所有文件并处理您喜欢的数据。
 
-为 _OData_ 或 (文件收集的数据) 当前状态的当前快照，不包含历史数据。 为了收集历史数据，客户必须将数据保存在自己的数据存储中。
+使用 _OData_ 或 (文件收集的数据) 当前状态的当前快照，不包含历史数据。 为了收集历史数据，客户必须将数据保存在自己的数据存储中。
 
-除非另有说明，否则列出的所有导出评估方法都是 **** 完全导出 (**** 也称作按设备 **_) 。_**
+> [!Note]
+>
+> 除非另有说明，否则列出的所有导出评估方法都是 **** 完全导出 (**** 也称作按设备 **_) 。_**
 
 ## <a name="1-export-software-vulnerabilities-assessment-odata"></a>1. 导出 OData (软件) 
 
@@ -93,10 +95,10 @@ GET /api/machines/SoftwareVulnerabilitiesByMachine
 >
 >- 响应中可能会返回其他一些列。 这些列是临时的，可能会被删除，请仅使用记录列。
 >
->- 下表中定义的属性按属性 ID 以字母数字方式列出。  运行此 API 时，生成的输出不必按这些表中列出的相同顺序返回。
+>- 下表中定义的属性按字母顺序按属性 ID 列出。  运行此 API 时，生成的输出不必按此表中列出的相同顺序返回。
 >
 
-属性 (id)  | 数据类型 | 说明 | 返回值的示例
+属性 (ID)  | 数据类型 | 说明 | 返回值的示例
 :---|:---|:---|:---
 CveId | string | 分配给 CVE 安全机制中常见漏洞和 (漏洞) 标识符。 | CVE-2020-15992
 CvssScore | string | CVE 的 CVSS 分数。 | 6.2
@@ -270,7 +272,7 @@ GET https://api.securitycenter.microsoft.com/api/machines/SoftwareVulnerabilitie
 
 ### <a name="22-permissions"></a>2.2 权限
 
-若要调用此 API，需要以下权限之一。 若要了解详细信息（包括如何选择权限），请参阅使用 [Microsoft Defender for Endpoint API 了解详细信息。](apis-intro.md)
+若要调用此 API，需要以下权限之一。 若要了解详细信息，包括如何选择权限，请参阅使用 [Microsoft Defender for Endpoint API 了解详细信息](apis-intro.md)。
 
 权限类型 | 权限 | 权限显示名称
 ---|---|---
@@ -304,10 +306,8 @@ GET /api/machines/SoftwareVulnerabilitiesExport
 >
 >- 响应中可能会返回其他一些列。 这些列是临时的，可能会被删除，请仅使用记录列。
 >
->- 下表中定义的属性按字母顺序按属性 ID 列出。  运行此 API 时，生成的输出不必按这些表中列出的相同顺序返回。
->
 
-属性 (id)  | 数据类型 | 说明 | 返回值的示例
+属性 (ID)  | 数据类型 | 说明 | 返回值的示例
 :---|:---|:---|:---
 导出文件 | 数组 \[ 字符串\]  | 保存组织当前快照的文件的下载 URL 列表。 | [  “https://tvmexportstrstgeus.blob.core.windows.net/tvm-export...1”, “https://tvmexportstrstgeus.blob.core.windows.net/tvm-export...2”  ]
 GeneratedTime | string | 导出的生成时间。 | 2021-05-20T08：00：00Z

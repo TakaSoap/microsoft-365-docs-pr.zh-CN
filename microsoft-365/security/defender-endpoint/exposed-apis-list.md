@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 656aa26d80db73bfc52511f9dd94e58e771f3ac6
-ms.sourcegitcommit: 9063c7a50a1d7dd6d2e1ca44f53d3c26f21f4ae8
+ms.openlocfilehash: f7a620ad56496b1a26e193a18fa93f4d217431df
+ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "52073825"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52684143"
 ---
 # <a name="supported-microsoft-defender-for-endpoint-apis"></a>支持的 Microsoft Defender for Endpoint API
 
@@ -61,6 +61,7 @@ ms.locfileid: "52073825"
 :---|:---
 [高级搜寻](run-advanced-query-api.md) | 从 API 运行查询。
 [警报方法和属性](alerts.md) | 运行 API 调用，如 \- 获取警报、创建警报、更新警报等。
+[导出每个设备的评估方法和属性](get-assessmnt-1methods-properties.md) | 运行 API 调用，如 \- 导出安全配置评估、导出软件清单评估和导出软件漏洞评估。
 [自动调查方法和属性](investigation.md) | 运行 API 调用，如 \- 获取调查集合。
 [获取域相关警报](get-domain-related-alerts.md) | 运行 API 调用，如 \- 获取与域相关的设备、域统计信息等。
 [文件方法和属性](files.md) | 运行 API 调用，如 \- 获取文件信息、文件相关警报、文件相关设备和文件统计信息。
@@ -69,6 +70,7 @@ ms.locfileid: "52073825"
 [计算机方法和属性](machine.md) | 运行 API 调用，如获取设备、按 ID 获取设备、有关已登录用户的信息 \- 、编辑标记等。
 [计算机操作方法和属性](machineaction.md) | 运行 API 调用， \- 如隔离、运行防病毒扫描等。
 [建议方法和属性](recommendation.md) | 运行 API 调用，例如 \- 按 ID 获取建议。
+[修正活动方法和属性](get-remediation-methods-properties.md) | 运行 API 调用（如 \- 获取所有修正任务、获取公开的设备修正任务和按 id 获取一个修正任务）。
 [分数方法和属性](score.md) | 运行 API 调用（如 \- 获取曝光分数或获取设备安全分数）。
 [软件方法和属性](software.md) | 运行 API 调用，如 \- 按软件列出漏洞。
 [用户方法](user.md) | 运行 API 调用，例如 \- 获取与用户相关的警报和与用户相关的设备。

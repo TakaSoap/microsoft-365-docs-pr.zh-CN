@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: bb436cbd2d0fa453872760c1d2656585e02d1767
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 1800cfdabd402321c49b737eff7f9d67639eb300
+ms.sourcegitcommit: 82a4d74020cd93ba444006317cfecc178c6d41dc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538863"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52688997"
 ---
 # <a name="plan-for-end-of-support-software-and-software-versions-with-threat-and-vulnerability-management"></a>规划支持终止的软件版本和 危险和漏洞管理
 
@@ -42,7 +42,7 @@ ms.locfileid: "52538863"
 安全与 IT 管理员必须协同工作，并确保组织的软件清单配置为获得最佳结果、合规性和正常的网络生态系统。 他们应检查删除或替换已到达停止支持的应用的选项，并更新不再受支持的版本。 最好在支持日期结束之前 **创建** 和实施计划。
 
 >[!NOTE]
-> EOS 功能当前不适用于 Mac、Linux Windows 等 (非) ;但是，以后会添加它。
+> 支持终止功能当前仅适用于Windows产品。
 
 ## <a name="find-software-or-software-versions-that-are-no-longer-supported"></a>查找不再受支持的软件或软件版本
 

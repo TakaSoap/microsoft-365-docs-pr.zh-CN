@@ -22,12 +22,12 @@ search.appverid:
 - GEA150
 ms.assetid: f09696b2-8c29-4588-a08b-b333da19810c
 description: 了解如何从域中删除旧域Microsoft 365将用户和组移动到另一个域或取消订阅。
-ms.openlocfilehash: a8e636059a84a2086844a8ff139d240268ee5b19
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: deec298dda037009e2c66f1b686396c689ecd883
+ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52635698"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52683351"
 ---
 # <a name="remove-a-domain"></a>删除域
   
@@ -43,7 +43,21 @@ ms.locfileid: "52635698"
 
 1. 转到<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">管理中心</a>。
 
-2. 选择 **"用户** > **""活动用户"。**
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+1. 转到<a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">管理中心</a>。  
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. 转到<a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">管理中心</a>。  
+
+::: moniker-end
+
+2. 选择 **"用户**  >  **""活动用户"。**
 
 3. 选中要移动的所有用户的名称旁边的框。
 
@@ -53,21 +67,17 @@ ms.locfileid: "52635698"
 
 如果位于要删除的域中，则也需要自行执行此过程。编辑自己帐户的域时，必须先注销，然后使用选择继续的新域重新登录。
 
+#### <a name="move-yourself"></a>移动自己
+
+::: moniker range="o365-worldwide"
+
+1. 转到<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">管理中心</a>。
+
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
 1. 转到<a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">管理中心</a>。  
-
-2. 选择 **"用户** > **""活动用户"。**
-
-3. 选中要移动的所有用户的名称旁边的框。
-
-4. 在页面顶部，选择"更多 **编辑** > **域"。**
-
-5. 在" **编辑域"** 窗格中，选择其他域。
-  
-如果位于要删除的域中，则也需要自行执行此过程。编辑自己帐户的域时，必须先注销，然后使用选择继续的新域重新登录。
 
 ::: moniker-end
 
@@ -75,23 +85,7 @@ ms.locfileid: "52635698"
 
 1. 转到<a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">管理中心</a>。  
 
-2. 选择 **"用户** > **""活动用户"。**
-
-3. 选中要移动的所有用户的名称旁边的框。
-
-4. 在页面顶部，选择"更多 **编辑** > **域"。**
-
-5. 在" **编辑域"** 窗格中，选择其他域。
-  
-如果位于要删除的域中，则也需要自行执行此过程。编辑自己帐户的域时，必须先注销，然后使用选择继续的新域重新登录。
-
 ::: moniker-end
-
-#### <a name="move-yourself"></a>移动自己
-
-::: moniker range="o365-worldwide"
-
-1. 转到<a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">管理中心</a>。
 
 2. 转到 **"用户** \> **""活动** 用户"，然后从列表中选择你的帐户。
 
@@ -101,65 +95,18 @@ ms.locfileid: "52635698"
 
 5. 使用新域和相同的密码登录。
 
-也可使用 PowerShell 将用户移动到另一个域。有关详细信息，请参阅 [Set-MsolUserPrincipalName](/powershell/module/msonline/set-msoluserprincipalname?view=azureadps-1.0)。若要设置默认域，请使用 [Set-MsolDomain](/powershell/module/msonline/set-msoldomain?view=azureadps-1.0)。
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. 转到 **"用户** \> **""** 活动用户"，在列表中选择你的姓名。
-
-2. 在" **用户名/电子邮件** "部分，选择" **编辑"，** 然后选择其他域。
-
-3. 选择 **"设置为主保存** > **关闭** > **"。**
-  
-4. At the top， select your account name， then select **Sign Out**.
-
-5. 使用新域和相同的密码登录。
-
-也可使用 PowerShell 将用户移动到另一个域。有关详细信息，请参阅 [Set-MsolUserPrincipalName](/powershell/module/msonline/set-msoluserprincipalname?view=azureadps-1.0)。若要设置默认域，请使用 [Set-MsolDomain](/powershell/module/msonline/set-msoldomain?view=azureadps-1.0)。
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-1. 转到 **"用户** \> **""** 活动用户"，在列表中选择你的姓名。
-
-2. 在" **用户名/电子邮件** "部分，选择" **编辑"，** 然后选择其他域。
-
-3. 选择 **"设置为主保存** > **关闭** > **"。**
-  
-4. At the top， select your account name， then select **Sign Out**.
-
-5. 使用新域和相同的密码登录。
-
-也可使用 PowerShell 将用户移动到另一个域。有关详细信息，请参阅 [Set-MsolUserPrincipalName](/powershell/module/msonline/set-msoluserprincipalname?view=azureadps-1.0)。若要设置默认域，请使用 [Set-MsolDomain](/powershell/module/msonline/set-msoldomain?view=azureadps-1.0)。
-
-::: moniker-end
+也可使用 PowerShell 将用户移动到另一个域。有关详细信息，请参阅 [Set-MsolUserPrincipalName](/powershell/module/msonline/set-msoluserprincipalname?view=azureadps-1.0&preserve-view=true)。若要设置默认域，请使用 [Set-MsolDomain](/powershell/module/msonline/set-msoldomain?view=azureadps-1.0&preserve-view=true)。
 
 ### <a name="step-2-move-groups-to-another-domain"></a>步骤 2：将组移动到另一个域
 
 ::: moniker range="o365-worldwide"
 
 1. 在管理中心，转到组 \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">组</a>页面。
-  
-2. 选择组名称，然后在"电子邮件地址"下的"常规 **"** 选项卡上 **，选择"主**"，选择"编辑 **"。**
-
-3. 使用下拉列表选择另一个域。
-
-4. 依次选择“**保存**”和“**关闭**”。 对与要删除的域关联的任何组或通讯组列表重复此过程。
 
 ::: moniker-end
-
 ::: moniker range="o365-germany"
 
 1. 在管理 <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">中心</a>中，转到组 > **组** 页面。
-
-2. 选择组名称，然后选择 **"名称"** 旁边的"编辑 **"。**
-
-3. 使用下拉列表选择另一个域。
-
-4. 依次选择“**保存**”和“**关闭**”。 对与要删除的域关联的任何组或通讯组列表重复此过程。
 
 ::: moniker-end
 
@@ -167,13 +114,13 @@ ms.locfileid: "52635698"
 
 1. 在管理 <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">中心</a>中，转到组 > **组** 页面。
 
-2. 选择组名称，然后选择 **"名称"** 旁边的"编辑 **"。**
+::: moniker-end
+  
+2. 选择组名称，然后在"电子邮件地址"下的"常规 **"** 选项卡上 **，选择"主**"，选择"编辑 **"。**
 
 3. 使用下拉列表选择另一个域。
 
 4. 依次选择“**保存**”和“**关闭**”。 对与要删除的域关联的任何组或通讯组列表重复此过程。
-
-::: moniker-end
 
 ### <a name="step-3-remove-the-old-domain"></a>步骤 3：删除旧域
 
@@ -205,7 +152,7 @@ ms.locfileid: "52635698"
 
 如果域未在很多位置（如安全组、通讯组列表、用户和 Microsoft 365 组）被引用，Microsoft 365删除域可能需要 5 分钟。 如果存在众多使用该域的引用，则删除域可能需要数小时（一天）。
   
-如果有数百或数千用户，使用 PowerShell 查询所有用户，然后将其移至另一个域。否则，可能大量用户将在 UI 中丢失，然后当你要删除域时，将无法删除而且找不到原因。有关详细信息，请参阅 [Set-MsolUserPrincipalName](/powershell/module/msonline/set-msoluserprincipalname?view=azureadps-1.0)。若要设置默认域，请使用 [Set-MsolDomain](/powershell/module/msonline/set-msoldomain?view=azureadps-1.0)。
+如果有数百或数千用户，使用 PowerShell 查询所有用户，然后将其移至另一个域。否则，可能大量用户将在 UI 中丢失，然后当你要删除域时，将无法删除而且找不到原因。有关详细信息，请参阅 [Set-MsolUserPrincipalName](/powershell/module/msonline/set-msoluserprincipalname?view=azureadps-1.0&preserve-view=true)。若要设置默认域，请使用 [Set-MsolDomain](/powershell/module/msonline/set-msoldomain?view=azureadps-1.0&preserve-view=true)。
   
 ## <a name="still-need-help"></a>仍然需要帮助？
 
@@ -218,8 +165,26 @@ ms.locfileid: "52635698"
   
 ::: moniker-end
 
+::: moniker range="o365-germany"
+
+> [!NOTE]
+> 无法从帐户 [中删除".onmicrosoft.de"](../setup/domains-faq.yml) 域。 删除域时，用户帐户将恢复为".onmicrosoft.de"地址作为主 SMTP/UserprincipalName。
+  
+仍然无法正常工作？你的域可能需要手动删除。[请致电我们](../../business-video/get-help-support.md?view=o365-germany&preserve-view=true)，让我们打理一切！
+  
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> 无法从帐户 [中删除".partner.onmschina.cn"](../setup/domains-faq.yml) 域。 删除域时，用户帐户将恢复为".partner.onmschina.cn"地址作为主 SMTP/UserprincipalName。
+  
+仍然无法正常工作？你的域可能需要手动删除。[请致电我们](../../business-video/get-help-support.md?view=o365-21vianet&preserve-view=true)，让我们打理一切！
+  
+::: moniker-end
+
 ## <a name="related-content"></a>相关内容
 
-[域常见问题 (](../setup/domains-faq.yml) 文章) \
+[域常见问题解答](../setup/domains-faq.yml)（文章）\
 [切换到其他业务Microsoft 365， (](../../commerce/subscriptions/switch-to-a-different-plan.md)文章) \
 [取消订阅 (](../../commerce/subscriptions/cancel-your-subscription.md) 文章) 

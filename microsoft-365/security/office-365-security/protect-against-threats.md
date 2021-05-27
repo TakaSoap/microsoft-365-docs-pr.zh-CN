@@ -20,12 +20,12 @@ description: 管理员可以在 Microsoft 365 中学习威胁防护并为组织�
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 438200f3f8a6a846d49bc397d6a4b0a0a33cad40
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: 12b519d45df005471e3d87cfdb24f87edddbf6f3
+ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52624617"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52683327"
 ---
 # <a name="protect-against-threats"></a>抵御威胁
 
@@ -78,27 +78,26 @@ ms.locfileid: "52624617"
 
 若要了解详细信息，请参阅 [安全与合规中心的访问权限](permissions-in-the-security-and-compliance-center.md)。
 
-## <a name="before-you-begin-turn-on-audit-logging-for-reporting-and-investigation"></a>开始前，打开报告和调查的审核日志
+### <a name="turn-on-audit-logging-for-reporting-and-investigation"></a>打开用于报告和调查的审核日志记录
 
-早点开始审核日志。 你将需要“**打开**”审核，以执行下面的一些步骤。 审核日志在包括[Exchange Online](/office365/servicedescriptions/exchange-online-service-description/exchange-online-service-description)的订阅中可用。 为了查看威胁防护报告中的数据，比如 [安全性仪表板](security-dashboard.md)、[电子邮件安全报告](view-email-security-reports.md)、[Explorer](threat-explorer.md)，审核日志必须“*打开*”。 有关详细信息，请参阅[打开或关闭审核日志搜索](../../compliance/turn-audit-log-search-on-or-off.md)。
+- 早点开始审核日志。 对于以下步骤中的 **一些步骤** ，你需要将审核功能启用。 审核日志在包括[Exchange Online](/office365/servicedescriptions/exchange-online-service-description/exchange-online-service-description)的订阅中可用。 为了查看威胁防护报告中的数据，比如 [安全性仪表板](security-dashboard.md)、[电子邮件安全报告](view-email-security-reports.md)、[Explorer](threat-explorer.md)，审核日志必须“*打开*”。 有关详细信息，请参阅[打开或关闭审核日志搜索](../../compliance/turn-audit-log-search-on-or-off.md)。
 
 ## <a name="part-1---anti-malware-protection"></a>第一部分 - 反恶意软件保护
 
-[反恶意软件防护](anti-malware-protection.md)在包含 [EOP](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description) 的订阅中可用。
+有关反恶意软件的建议设置详细信息，请参阅 [EOP 反恶意软件策略设置](recommended-settings-for-eop-and-office365.md#eop-anti-malware-policy-settings)。
 
-1. 在 [安全与合规中心](https://protection.office.com)中， 选择“**威胁管理**” \> “**策略**” \> “**反恶意软件**”。
+1. 打开 <https://security.microsoft.com/antimalwarev2> 。
 
-2. 双击“**默认**”策略，然后选择“**设置**”。
+2. 通过单击策略的名称选择默认策略。
 
-3. 指定以下设置：
+3. 在打开的策略详细信息飞出控件中，单击" **编辑保护设置"，** 然后配置以下设置：
+   - 选择 **"启用常用附件筛选器** "以打开常用附件筛选器。 单击 **"自定义文件类型** "以添加更多文件类型。
+   - 验证是否 **选中了"启用恶意软件的零时差自动清除** "。
+   - 验证"通知"部分未 **选择** 任何设置。
 
-    - 在“**反恶意软件检测响应**”中，保持默认设置“**不**”。
+   完成后，单击"保存 **"**
 
-    - 在“**常见附件类型筛选器**”中，选择“**打开**”。
-
-4. 单击“**保存**”。
-
-了解更多关于反恶意软件策略选项的信息，请参阅[配置反恶意软件策略](configure-anti-malware-policies.md)。
+有关配置反恶意软件策略的详细说明，请参阅在 EOP 中配置 [反恶意软件策略](configure-anti-malware-policies.md)。
 
 ## <a name="part-2---anti-phishing-protection"></a>第二部分 - 防钓鱼保护
 

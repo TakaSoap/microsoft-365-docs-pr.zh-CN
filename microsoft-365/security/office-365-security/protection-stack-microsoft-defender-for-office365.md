@@ -13,12 +13,12 @@ localization_priority: Normal
 description: 通过 Microsoft Defender for Office 365 中的威胁筛选堆栈跟踪传入Office 365。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 01ad901f7f746d9b5d2c50632c1344701120c20f
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: e892ebe04887527cf57e4ea44f67c4aaa775b228
+ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538683"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52683291"
 ---
 # <a name="step-by-step-threat-protection-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 中的威胁防护步骤
 
@@ -111,13 +111,13 @@ Microsoft Defender for Office 365 保护或筛选堆栈可以分为 4 个阶段�
 
 :::image type="content" source="../../media/mdo-filtering-stack/mdo-filter-stack-phase4.png" alt-text="Defender for Office 365筛选的第 4 阶段是传递后保护。":::
 
-1. **保险箱链接** 是 MDO 的单击时保护。 每封邮件中的每个 URL 都打包为指向 Microsoft 保险箱链接服务器。 单击 URL 时，将针对最新信誉检查 URL，然后用户重定向到目标网站。 URL 是异步沙盒，用于更新其信誉。
+1. **保险箱链接** 是适用于Office 365点击时间保护的 Defender。 每封邮件中的每个 URL 都打包为指向 Microsoft 保险箱链接服务器。 单击 URL 时，将针对最新信誉检查 URL，然后用户重定向到目标网站。 URL 是异步沙盒，用于更新其信誉。
 
-2. **网络钓鱼Zero-Hour ZAP** (自动清除) 可反作用地检测并清除已传递到 Exchange Online 邮箱的恶意网络钓鱼邮件。
+2. 适用于网络钓鱼的零时差自动 **清除 (ZAP**) 可主动检测并消除已传递到 Exchange Online 邮箱的恶意网络钓鱼邮件。
 
-3. **恶意软件 ZAP** 会主动检测并中性化已传递到邮箱的恶意Exchange Online邮件。
+3. **恶意软件的 ZAP** 可主动检测并中性化已传递到邮箱的恶意Exchange Online邮件。
 
-4. **垃圾邮件 ZAP** 可主动检测并中性化已传递到邮箱的恶意Exchange Online邮件。
+4. **网络钓鱼的 ZAP** 可主动检测并消除已传递到其他邮箱的恶意Exchange Online邮件。
 
 5. **与没有** 自动化的任何团队一样，市场活动视图使管理员能够更快、更完整地查看攻击的全局信息。 Microsoft 利用整个服务中的大量反网络钓鱼、反垃圾邮件和反恶意软件数据来帮助识别市场活动，然后允许管理员从头到尾调查它们，包括目标、影响和流，这些对象、影响和流也可在可下载的活动写入中提供。
 
@@ -129,14 +129,13 @@ Microsoft Defender for Office 365 保护或筛选堆栈可以分为 4 个阶段�
 
 9. 当选择指向文件的 URL 后，链接内容触发将显示一个警告页面，直到文件的沙盒完成，并且发现该 URL 是安全的。
 
-
 ## <a name="the-filtering-stack-diagram"></a>筛选堆栈图
 
 最终图表 (图表的所有部分一样，) 随着产品的增长和开发 *而发生变化*。 为此页面添加 **书签，并使用** 你在底部找到的反馈选项（如果需要在更新后询问）。 对于记录，这是按顺序排列的所有阶段的堆栈：
 
 :::image type="content" source="../../media/mdo-filtering-stack/mdo-filter-stack-phase5.png" alt-text="MDO 中筛选的所有阶段的顺序为 1 到 4。":::
 
-## <a name="more-information"></a>详细信息
+## <a name="more-information"></a>更多信息
 
 是否需要为 Microsoft Defender 设置 Office 365 ***now** _？ 使用此堆栈_now*，通过此 [分](protect-against-threats.md) 步操作开始保护你的组织。
 

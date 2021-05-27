@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: fb5ac074-e203-4e1f-9843-b9d1a3e03297
 description: '了解 Microsoft 365 全局管理员可以如何更改用户的电子邮件地址以及在名称更改时更改显示名称。 '
-ms.openlocfilehash: 1aa3fd3b67333937e64aab825e64533ccb09eea9
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: 4f65bade32b2998f395c3b4eab7a1d2a2e5f3f33
+ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52634216"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52683111"
 ---
 # <a name="change-a-user-name-and-email-address"></a>更改用户名和电子邮件地址
 
@@ -47,25 +47,12 @@ ms.locfileid: "52634216"
 ::: moniker range="o365-worldwide"
  
 1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。
-    
-2. 选择用户的姓名，然后在“**帐户**”选项卡上选择“**管理用户名**”。
-    
-3. 在第一个框中，键入新电子邮件地址的第一部分。如果已将自己的域添加到 Microsoft 365，则请通过使用下拉列表来选择新电子邮件别名的域。 
 
-4. 选择“**保存更改**”。
-
-   
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">活动用户</a>”页面。  
-
-2. 选择该用户。 在浮出窗格中的“**用户名/电子邮件**”旁，选择“**编辑**”。
-
-3. 在第一个框中，键入新电子邮件地址的第一部分。如果已将自己的域添加到 Microsoft 365，则可以通过使用下拉列表来选择新电子邮件别名的域。
-
-4. 选择“**保存**”。
+1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">活动用户</a>”页面。  
 
 ::: moniker-end
 
@@ -73,13 +60,13 @@ ms.locfileid: "52634216"
 
 1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">活动用户</a>”页面。 
 
-2. 选择该用户。 在浮出窗格中的“**用户名/电子邮件**”旁，选择“**编辑**”。
-
-3. 在第一个框中，键入新电子邮件地址的第一部分。如果已将自己的域添加到 Microsoft 365，则可以通过使用下拉列表来选择新电子邮件别名的域。
-
-4. 选择“**保存**”。
-
 ::: moniker-end
+
+1. 选择用户的姓名，然后在“**帐户**”选项卡上选择“**管理用户名**”。
+    
+1. 在第一个框中，键入新电子邮件地址的第一部分。如果已将自己的域添加到 Microsoft 365，则请通过使用下拉列表来选择新电子邮件别名的域。 
+
+1. 选择“**保存更改**”。
 
 > [!IMPORTANT]
 > 如果收到错误消息，请参阅[修复错误消息](#resolve-error-messages)。
@@ -89,6 +76,20 @@ ms.locfileid: "52634216"
 ::: moniker range="o365-worldwide"
 
 1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。
+
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">活动用户</a>”页面。 
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">活动用户</a>”页面。  
+
+::: moniker-end
     
 2. 选择用户的姓名，然后在“**帐户**”选项卡上选择“**管理电子邮件别名**”。
 
@@ -113,34 +114,17 @@ ms.locfileid: "52634216"
   
    - 如果还更改了密码，系统将提示他们在移动设备上输入新密码，否则将不会同步。
   
+## <a name="change-a-users-display-name"></a>更改用户的显示名称
+
+::: moniker range="o365-worldwide"
+
+1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。
+
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">活动用户</a>”页面。  
-
-2. 选择该用户。 在浮出窗格中的“**用户名/电子邮件**”旁，选择“**编辑**”。
-
-3. 对于要为其设置主要电子邮件地址的用户，将该电子邮件地址选择“**设置为主要电子邮件地址**”。 
-    
-   > [!IMPORTANT]
-   > 如果购买的 Microsoft 365 来自 GoDaddy 或提供管理控制台的其他合作伙伴服务，则不会看到“设置为主要电子邮件地址”选项。请改为登录到 GoDaddy/合作伙伴的管理控制台，设置主要别名。 
-   > 
-   > 此外，只有全局管理员才能看到此选项。如果没有看到此选项，则表明你无权更改用户名称和主要电子邮件地址。
-  
-4. 你会看到一个大的黄色警告，提示你将更改用户的登录信息。 依次选择“**保存**”和“**关闭**”。
-    
-5. 告知用户以下信息：
- 
-   - 此更改可能需要一些时间才会生效。
-  
-   - 他们的新用户名是什么。登录 Microsoft 365 时需要此用户名。
-    
-   - 如果用户使用 Skype for Business Online，需告知用户重新安排其组织召开的所有 Skype for Business Online 会议并通知其需要告知外部联系人以更新旧联系人信息。
-
-   - 如果他们使用的是 OneDrive，请告诉他们此位置的 URL 已更改。 如果他们的 OneDrive 中有 OneNote 笔记本，可能需要在 OneNote 中关闭并重新打开笔记本。 如果他们具有 OneDrive 中的共享文件，则指向这些文件的链接可能不起作用，这种情况下，用户可以重新共享。    
-  
-   - 如果还更改了密码，需告知用户系统将提示他们在移动设备上输入新密码，否则将不会同步。
+1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">活动用户</a>”页面。 
 
 ::: moniker-end
 
@@ -148,36 +132,7 @@ ms.locfileid: "52634216"
 
 1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">活动用户</a>”页面。 
 
-2. 选择该用户。 在浮出窗格中的“**用户名/电子邮件**”旁，选择“**编辑**”。
-
-3. 对于要为其设置主要电子邮件地址的用户，将该电子邮件地址选择“**设置为主要电子邮件地址**”。 
-    
-   > [!IMPORTANT]
-   > 如果购买的 Microsoft 365 来自 GoDaddy 或提供管理控制台的其他合作伙伴服务，则不会看到“设置为主要电子邮件地址”选项。请改为登录到 GoDaddy/合作伙伴的管理控制台，设置主要别名。 
-   >  
-   > 此外，只有全局管理员才能看到此选项。如果没有看到此选项，则表明你无权更改用户名称和主要电子邮件地址。
-  
-4. 你会看到一个大的黄色警告，提示你将更改用户的登录信息。 依次选择“**保存**”和“**关闭**”。
-    
-5. 告知用户以下信息：
- 
-   - 此更改可能需要一些时间才会生效。
-  
-   - 他们的新用户名是什么。登录 Microsoft 365 时需要此用户名。
-    
-   - 如果用户使用 Skype for Business Online，需告知用户重新安排其组织召开的所有 Skype for Business Online 会议并通知其需要告知外部联系人以更新旧联系人信息。
-
-   - 如果他们使用的是 OneDrive，请告诉他们此位置的 URL 已更改。 如果他们的 OneDrive 中有 OneNote 笔记本，可能需要在 OneNote 中关闭并重新打开笔记本。 如果他们具有 OneDrive 中的共享文件，则指向这些文件的链接可能不起作用，这种情况下，用户可以重新共享。    
-  
-   - 如果还更改了密码，需告知用户系统将提示他们在移动设备上输入新密码，否则将不会同步。
-
 ::: moniker-end
-  
-## <a name="change-a-users-display-name"></a>更改用户的显示名称
-
-::: moniker range="o365-worldwide"
-
-1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。
 
 2. 选择用户的姓名，然后在“**帐户**”选项卡上选择“**管理联系人信息**”。
 
@@ -186,37 +141,7 @@ ms.locfileid: "52634216"
    如果收到错误消息“**很抱歉，无法编辑该用户。请查看用户信息并重试**”，请参阅 [处理错误消息](#resolve-error-messages)。
 
 此更改最多可能需要 24 小时才会在所有服务中生效。更改生效后，用户需要使用更新后的用户名登录 Outlook、Skype for Business 和 SharePoint。
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">活动用户</a>”页面。  
-
-2. 选择该用户。 在浮出窗格中的“**联系人信息**”旁，选择“**编辑**”。
-
-3. 在“**显示名称**”框中，键入该用户的新名称，然后选择“**保存**”。
-
-   如果收到错误消息“**很抱歉，无法编辑该用户。请查看用户信息并重试**”，请参阅 [处理错误消息](#resolve-error-messages)。
-
-此更改最多可能需要 24 小时才会在所有服务中生效。更改生效后，用户需要使用更新后的用户名登录 Outlook、Skype for Business 和 SharePoint，因此请务必将更改告知用户。
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">活动用户</a>”页面。 
-
-2. 选择该用户。 在浮出窗格中的“**联系人信息**”旁，选择“**编辑**”。
-
-3. 在“**显示名称**”框中，键入该用户的新名称，然后选择“**保存**”。
-
-   如果收到错误消息“**很抱歉，无法编辑该用户。请查看用户信息并重试**”，请参阅 [处理错误消息](#resolve-error-messages)。
-
-此更改最多可能需要 24 小时才会在所有服务中生效。更改生效后，用户需要使用更新后的用户名登录 Outlook、Skype for Business 和 SharePoint，因此请务必将更改告知用户。
-
-::: moniker-end
-
+ 
 ## <a name="resolve-error-messages"></a>解决错误消息
 
 ### <a name="a-parameter-cannot-be-found-that-matches-parameter-name-emailaddresses"></a>“找不到与参数名称‘EmailAddresses’匹配的参数”

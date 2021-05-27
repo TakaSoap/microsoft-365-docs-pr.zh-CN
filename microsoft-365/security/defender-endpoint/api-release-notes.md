@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 5c8e9d8e1c8ec020b4d742f61d276c93f6730bec
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 4f9d3b365fb735805644f33b3a843ad66e777ce4
+ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245548"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52684119"
 ---
 # <a name="microsoft-defender-for-endpoint-api-release-notes"></a>Microsoft Defender for Endpoint API 发行说明
 
@@ -38,6 +38,10 @@ ms.locfileid: "52245548"
 > ```
 
 ## <a name="release-notes---newest-to-oldest-ddmmyyyy"></a>发行说明 - 最新到最旧 (dd.mm.yyyyy) 
+
+### <a name="05252021"></a>05.25.2021
+
+- 添加了新 API [导出评估方法和属性（每个设备](get-assessmnt-1methods-properties.md)）。
 
 ### <a name="03052021"></a>03.05.2021
 

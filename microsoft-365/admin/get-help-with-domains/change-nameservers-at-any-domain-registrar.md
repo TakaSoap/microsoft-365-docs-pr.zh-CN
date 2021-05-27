@@ -25,12 +25,12 @@ search.appverid:
 - GEA150
 ms.assetid: a8b487a9-2a45-4581-9dc4-5d28a47010a2
 description: 了解如何在 Microsoft 365 中添加和设置域，以便电子邮件和 Skype for Business Online 等服务使用你自己的域名。
-ms.openlocfilehash: c6394b505e025c565713aae753879601f5a6aecf
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: 7f1ade6cb3013126fb011fe9232b3b4c2e9a82d4
+ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52635434"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52683123"
 ---
 # <a name="change-nameservers-to-set-up-microsoft-365-with-any-domain-registrar"></a>更改名称服务器以设置Microsoft 365注册机构的域名
 
@@ -43,7 +43,6 @@ ms.locfileid: "52635434"
 - 您希望Microsoft 365管理 DNS 记录。  (如果愿意，可以管理 [自己的 DNS](../setup/add-domain.md)记录 .) 
     
 ## <a name="add-a-txt-or-mx-record-for-verification"></a>添加 TXT 记录或 MX 记录进行验证
-<a name="BKMK_verify"> </a>
 
 > [!NOTE]
 > 您必须仅创建这些记录中的其中一项。TXT 是首选记录类型，但某些 DNS 托管提供商不支持它，在这种情况下，您可以创建 MX 记录。 
@@ -94,17 +93,13 @@ Microsoft 365 找到正确的 TXT 记录表明域已通过验证。
   
 3. 在“**设置**”页面上，选择“**开始设置**”。
  
-    
   
 4. 在“**验证域**”页面上，选择“**验证**”。
-    
-    
   
 > [!NOTE]
 >  DNS 更改通常需要 15 分钟左右才能生效。 但是，有时可能需要更长时间，您所做的更改才会在 Internet 的 DNS 系统中更新。 如果添加 DNS 记录后遇到邮件流问题或其他问题，请参阅 [更改域名或 DNS 记录后出现的问题的疑难解答](../get-help-with-domains/find-and-fix-issues.md)。 
   
 ## <a name="change-your-domains-nameserver-ns-records"></a>更改域的名称服务器 (NS) 记录
-<a name="BKMK_nameservers"> </a>
 
 当您在 Microsoft 365 中到达域设置向导的最后一步时，您还有一项任务。 若要使用 Microsoft 365 服务（如电子邮件）设置域，您可以在域注册机构中更改域的名称服务器 (或 NS) 记录，以指向 Microsoft 365 主名称服务器和辅助名称服务器。 然后，由于Microsoft 365 DNS，系统会自动为服务设置所需的 DNS 记录。 通过按照您的域注册机构在其网站的帮助内容中所提供步骤进行操作，您可以自己更新名称服务器记录。 如果不熟悉 DNS，请联系域注册机构的支持人员。
 
@@ -199,5 +194,5 @@ Microsoft 365 找到正确的 TXT 记录表明域已通过验证。
 ## <a name="related-content"></a>相关内容
 
 [添加 DNS 记录以连接域](create-dns-records-at-any-dns-hosting-provider.md) (文章) \
-[查找并修复在添加域](find-and-fix-issues.md) 或 DNS 记录后 (文章) \
+[查找并修复添加域或 DNS 记录之后出现的问题](find-and-fix-issues.md)（文章）\
 [管理域](index.yml)（链接页）

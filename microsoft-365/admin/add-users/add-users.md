@@ -17,7 +17,7 @@ ms.custom:
 - AdminSurgePortfolio
 search.appverid:
 - MET150
-description: 每个团队成员都需要用户帐户，然后他们才能登录和访问 Microsoft 365 商业版。 了解如何同时添加用户和分配许可证。
+description: 每个团队成员都需要用户帐户，然后才能登录和访问 Microsoft 365 商业版。 了解如何添加用户和分配许可证。
 ms.date: 07/01/2020
 ms.openlocfilehash: 390576f46bed57929471b16848f9e1fd7e95304d
 ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad

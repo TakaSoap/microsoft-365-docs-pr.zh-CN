@@ -20,12 +20,12 @@ ms.custom:
 description: 本主题将指导你完成对影响租户环境安全性的租户范围内设置Microsoft 365配置。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 686768d05e37a4e103640c2973fd30abaa25630b
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 8a449d9647ae5a8b892967116f28aa6203a5e815
+ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538935"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52684167"
 ---
 # <a name="configure-your-microsoft-365-tenant-for-increased-security"></a>配置 Microsoft 365 租户以提高安全性
 
@@ -46,12 +46,14 @@ Office 365安全分数根据常规活动和安全设置分析组织的安全性�
 
 安全Microsoft 365包括用于保护环境的功能。 它还包括可用于监视和采取措施的报告和仪表板。 某些区域具有默认策略配置。 某些区域不包括默认策略或规则。 访问威胁管理下的这些策略，以调整威胁管理设置，以创建更安全的环境。
 
+<br>
+
 ****
 
 |领域|包括默认策略|建议|
 |---|---|---|
 |**防钓鱼**|是|<ul><li>模拟保护 - 如果你有适用于 Office 365 的 Defender 和自定义域，请配置默认防钓鱼策略中的模拟保护设置，以保护最有价值用户的电子邮件帐户（如 CEO）并保护你的域。 详细信息：[反网络钓鱼策略中的模拟设置和](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)[模拟见解](impersonation-insight.md)</li><li>欺骗智能 — 审查正在欺骗你的域的发件人。 阻止或允许这些发件人。 详细信息 [：EOP 中的欺骗智能](learn-about-spoof-intelligence.md) 见解 [和管理租户允许/阻止列表](tenant-allow-block-list.md)。</li></ul>|
-|**反恶意软件引擎**|是| 编辑默认策略： <ul><li>常见附件类型筛选器：选择"打开"</li></ul> <p> 您还可以创建自定义恶意软件筛选器策略，并应用于组织中指定的用户、组或域。 <p> 详细信息： <ul><li>[反恶意软件保护](anti-malware-protection.md)</li><li>[配置反恶意软件策略](configure-anti-malware-policies.md)</li></ul>|
+|**反恶意软件引擎**|是|编辑默认策略： <ul><li>选择 **"启用常用附件筛选器"**</li></ul> <p> 您还可以创建自定义恶意软件筛选器策略，并应用于组织中指定的用户、组或域。 <p> 详细信息： <ul><li>[反恶意软件保护](anti-malware-protection.md)</li><li>[配置反恶意软件策略](configure-anti-malware-policies.md)</li></ul>|
 |**保险箱Microsoft Defender for Office 365**|否|在"附件"保险箱主页上，单击"**全局设置**"并启用此设置： <ul><li>**启用适用于 SharePoint、OneDrive 和 Microsoft Teams 的 Defender for Office 365**</li></ul> <p> 使用保险箱创建"附件"策略： <ul><li> **阻止**：选择 **"阻止** "作为未知恶意软件响应。</li><li>**启用重定向**：选中此框并输入电子邮件地址，例如管理员或隔离帐户。</li><li>**如果恶意软件扫描附件出现时间过或出现错误，请** 应用上述选择：选中此框。</li><li>**_应用于_*： **收件人域是选择** \> 你的域。</li></ul> <p> 详细信息[：保险箱附件SharePoint、OneDrive和Microsoft Teams](mdo-for-spo-odb-and-teams.md)设置保险箱[附件策略](set-up-safe-attachments-policies.md)|
 |**保险箱Microsoft Defender for Office 365**|是|在"链接"保险箱，单击"**全局设置"：** <ul><li>**Use 保险箱 Links in： Office 365 applications**： Verify this setting is turned on.</li><li>**Do not track when users click 保险箱 Links**： Turn this setting off to track user clicks.</li></ul> <p> 使用保险箱创建链接策略： <ul><li>**选择邮件中未知潜在恶意 URL 的操作**：验证此设置为 **"打开"。**</li><li>**Select the action for unknown or potentially malicious urls within Microsoft Teams**： Verify this setting is **On**.</li><li>**对指向文件的可疑链接应用实时 URL** 扫描：选中此框。</li><li>**等待 URL 扫描完成，然后再传递消息**：选中此框。</li><li>**Apply 保险箱 Links to email messages sent within the organization**： Check this box</li><li>**不允许用户单击到原始 URL：** 选中此框。</li><li>**应用于**： **收件人域是选择** \> 你的域。</li></ul> <p> 详细信息：[设置保险箱链接策略。](set-up-safe-links-policies.md)|
 |**反垃圾邮件 (邮件筛选)**|是| 监视内容：垃圾邮件过多 — 选择"自定义"设置并编辑"默认垃圾邮件筛选器"策略。 详细信息[：Microsoft 365电子邮件反垃圾邮件保护。](anti-spam-protection.md)|
@@ -64,6 +66,8 @@ Office 365安全分数根据常规活动和安全设置分析组织的安全性�
 ## <a name="view-dashboards-and-reports-in-the-security--compliance-center"></a>在安全与合规中心内查看&和报告
 
 访问这些报告和仪表板，详细了解环境的运行状况。 随着组织使用服务，这些报告Office 365更加丰富。 现在，请熟悉可以监视和采取操作的操作。 有关详细信息，请参阅安全 [与合规中心&报告](../../compliance/reports-in-security-and-compliance.md)。
+
+<br>
 
 ****
 
@@ -80,6 +84,8 @@ Office 365安全分数根据常规活动和安全设置分析组织的安全性�
 
 安全中心中还包括安全中心Exchange安全和保护的许多控件。 无需在这两处配置它们。 下面是一些建议的其他设置。
 
+<br>
+
 ****
 
 |领域|包括默认策略|建议|
@@ -95,6 +101,8 @@ Microsoft 建议从SharePoint保护级别配置团队网站。 有关详细信�
 SharePoint级别配置的工作组网站允许使用匿名访问链接与外部用户共享文件。 建议采用这种方法，而不是通过电子邮件发送文件。
 
 若要支持基线保护的目标，请配置租户范围的共享策略，如此处所建议。 与租户范围策略不同，单个网站的共享设置可能更加严格，但不允许。
+
+<br>
 
 ****
 
@@ -138,9 +146,7 @@ SharePoint管理中心OneDrive for Business管理中心包含相同的设置。 
 详细信息：
 
 - [部署 Cloud App Security](/cloud-app-security/getting-started-with-cloud-app-security)
-
 - [有关 Microsoft Cloud App Security 的更多信息](https://www.microsoft.com/cloud-platform/cloud-app-security)
-
 - [什么是云应用安全？](/cloud-app-security/what-is-cloud-app-security)
 
 ![Cloud App Security 仪表板](../../media/1fb2aa65-54b8-4746-9f5e-c187d339e9f5.png)

@@ -18,21 +18,14 @@ search.appverid:
 - MET150
 description: 用户可以了解如何管理其自助购买。
 ms.date: 03/17/2021
-ms.openlocfilehash: ed6f2fc3b55756fb88dccd748fd4a4a9a34a5c81
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: fb8431bce82893d8ca2903caf96968dd3b0ef359
+ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52536078"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52683663"
 ---
 # <a name="manage-self-service-purchases-users"></a>管理自助购买（用户）
-
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> 管理中心正在发生改变。 如果你的体验与此处提供的详细信息不匹配，请参阅[有关新版 Microsoft 365 管理中心](../../admin/microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet)。
-
-::: moniker-end
 
 作为用户，你可以购买某些产品的订阅，并将这些订阅的许可证分配给团队中的人员。 你负责支付你进行的任何自助服务购买。 可以在管理中心内管理Microsoft 365<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">订阅，admin.microsoft.com。</a>
 
@@ -42,12 +35,42 @@ ms.locfileid: "52536078"
 
 可以查看已购买的所有自助购买订阅的列表。
 
-1. 在管理中心中，转到“**账单**” > “<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">你的产品</a>”页面。
+::: moniker range="o365-worldwide"
+
+1. 在管理中心中，转到“**计费**”>“<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">你的产品</a>”页面。
+
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+1. 在管理中心中，转到“**计费**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">你的产品</a>”页面。
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. 在管理中心中，转到“**计费**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">你的产品</a>”页面。
+::: moniker-end
 2. 在"**产品**"选项卡上，选择筛选器图标，然后选择"**自助服务"。**
 
 ## <a name="how-to-buy-more-or-reduce-licenses"></a>如何购买更多或减少许可证
 
-1. 在管理中心中，转到“**账单**” > “<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">你的产品</a>”页面。
+::: moniker range="o365-worldwide"
+
+1. 在管理中心中，转到“**计费**”>“<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">你的产品</a>”页面。
+
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+1. 在管理中心中，转到“**计费**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">你的产品</a>”页面。
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. 在管理中心中，转到“**计费**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">你的产品</a>”页面。
+::: moniker-end
 2. 在 **"产品** "选项卡上，选择要购买更多订阅或减少许可证的订阅。
 3. 选择 **"购买许可证**"**或"删除许可证"。**
 4. 在右窗格中的"许可证 **总数**"框中，输入此订阅的许可证总数，然后选择"保存 **"。** 例如，如果你有 100 个许可证，并且你想要再添加 5 个，请输入 105。
@@ -56,7 +79,23 @@ ms.locfileid: "52536078"
 
 ### <a name="to-assign-licenses"></a>分配许可证
 
-1. 在管理中心，转到"帐单  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">""许可证"</a>页面。
+：： moniker range="o365-worldwide"
+
+1. 在管理中心，转到“**计费**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">许可证</a>”页面。
+
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+ 1. 在管理中心，转到“**计费**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=848038" target="_blank">许可证</a>”页面。
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+ 1. 在管理中心，转到“**计费**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=850625" target="_blank">许可证</a>”页面。
+
+::: moniker-end
 2. 选择要为其分配许可证的订阅。
 3. 选择 **分配许可证**。
 4. 在“**向用户分配许可证**”窗格中，开始键入名称，然后从结果中将其选中，将其添加到列表中。 一次最多可添加 20 名用户。
@@ -66,7 +105,23 @@ ms.locfileid: "52536078"
 
 ### <a name="to-unassign-licenses"></a>取消分配许可证
 
-1. 在管理中心，转到"帐单  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">""许可证"</a>页面。
+：： moniker range="o365-worldwide"
+
+1. 在管理中心，转到“**计费**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">许可证</a>”页面。
+
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+ 1. 在管理中心，转到“**计费**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=848038" target="_blank">许可证</a>”页面。
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+ 1. 在管理中心，转到“**计费**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=850625" target="_blank">许可证</a>”页面。
+
+::: moniker-end
 2. 选择要取消分配许可证的产品。
 3. 选择要取消分配许可证的用户。
 4. 选择 **"取消分配许可证"。**
@@ -74,8 +129,23 @@ ms.locfileid: "52536078"
 
 ## <a name="cancel-a-subscription"></a>取消订阅
 
-1. 在管理中心中，转到“**账单**” > “<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">你的产品</a>”页面。
-2. 在“**产品**”选项卡上，找到要取消的订阅。 Select the three dots (more actions) ， then select **Cancel subscription**.
+::: moniker range="o365-worldwide"
+
+1. 在管理中心中，转到“**计费**”>“<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">你的产品</a>”页面。
+
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+1. 在管理中心中，转到“**计费**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">你的产品</a>”页面。
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. 在管理中心中，转到“**计费**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">你的产品</a>”页面。
+::: moniker-end
+2. 在“**产品**”选项卡上，找到要取消的订阅。 选择三个点（更多操作），然后选择“**取消订阅**”。
 3. 在“**取消订阅**”窗格中，选择取消原因。 （可选）提供你拥有的任何反馈。
 4. 选择“**保存**”。
 

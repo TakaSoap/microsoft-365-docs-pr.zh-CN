@@ -9,20 +9,20 @@ audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.date: ''
-localization_priority: Priority
+localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-description: 了解如何在安全与合规中心的图形用户界面中为 DLP 创建、修改、删除和测试自定义敏感信息类型。
+description: 了解如何在安全与合规中心内为 DLP 创建、修改、删除和测试&类型。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 36238d14d3d6a1f84b0fdcae62635922f62b58d3
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
-ms.translationtype: HT
+ms.openlocfilehash: 911d2dc3a4adeb79e2b41f3a450bbc446feee916
+ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50908486"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52683833"
 ---
 # <a name="get-started-with-custom-sensitive-information-types"></a>自定义敏感信息类型入门
 
@@ -61,10 +61,10 @@ ms.locfileid: "50908486"
 2. 填写“**名称**”和“**说明**” 的值，然后选择“**下一步**”。
 3. 选择“**创建模式**”。 在定义新的敏感信息类型时，可以创建多个模式，每个模式具有不同的元素和置信度。
 4. 选择模式的默认可信度。 这些值是“**低可信度**”、“**中可信度**”和“**高可信度**”。
-5. 选择并定义 **主要元素**。 主要元素可以是带有可选验证程序的 **正则表达式**、**关键字列表**、**关键字字典** 或预先配置的 **函数** 之一。 有关 DLP 函数的详细信息，请参阅 [DLP 函数查找的内容](what-the-dlp-functions-look-for.md)。
+5. 选择并定义 **主要元素**。 主要元素可以是带有可选验证程序的 **正则表达式**、**关键字列表**、**关键字字典** 或预先配置的 **函数** 之一。 有关 DLP 函数的详细信息，请参阅 [DLP 函数查找的内容](what-the-dlp-functions-look-for.md)。 有关日期和校验和验证程序的信息，请参阅有关 [正则表达式验证程序详细信息](#more-information-on-regular-expression-validators)。
 6. 填写 **字符领近度** 的值。
-7. （可选）添加支持元素（如有）。 支持元素可以是带有可选验证程序的正则表达式、关键字列表、关键字字典或预定义的函数之一。 
-8.  （可选）从可用检查列表中添加任何 [**其他检查**](#more-information-on-additional-checks)。
+7. （可选）添加支持元素（如有）。 支持元素可以是带有可选验证程序的正则表达式、关键字列表、关键字字典或预定义的函数之一。 支持元素可以有自己的 **字符邻近** 度配置。 
+8. （可选）从可用检查列表中添加任何 [**其他检查**](#more-information-on-additional-checks)。
 9. 选择“**创建**”。
 10. 选择“**下一步**”。
 11. 为此敏感信息类型选择 **建议的可信度**。
@@ -122,6 +122,47 @@ ms.locfileid: "50908486"
 此外，还可以使用 PowerShell 和精确的数据匹配功能创建自定义敏感信息类型。 若要了解有关这些方法的详细信息，请参阅：
 - [使用安全与合规中心 PowerShell 创建自定义敏感信息类型](create-a-custom-sensitive-information-type-in-scc-powershell.md)
 - [使用精确数据匹配 (EDM) 为 DLP 创建自定义敏感信息类型](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)
+
+## <a name="more-information-on-regular-expression-validators"></a>有关正则表达式验证程序详细信息
+
+### <a name="checksum-validator"></a>校验和验证程序
+
+如果需要对正则表达式中的数字运行校验和，可以使用 *校验和验证程序*。 例如，假设你需要为八位数的许可证号码创建 SIT，其中最后一个数字是校验和数字，使用 mod 9 计算进行验证。 你已设置校验和算法，如下所示：
+ 
+Sum = digit 1 * Weight 1 + digit 2 * weight 2 + digit 3 * weight 3 + digit 4 * weight 4 + digit 5 * weight 5 + digit 6 * weight 6 + digit 7 * weight 7 + digit 8 * weight 8 Mod value = Sum % 9 If Mod value == digit 8 Account number is valid If Mod value ！= digit 8 Account number is invalid
+
+1. 定义具有此正则表达式的主元素：
+
+`\d{8}`
+
+2. 然后添加校验和验证程序。
+3. 添加用逗号分隔的权重值、检查数字的位置和 Mod 值。 有关 Modulo 操作详细信息，请参阅 [Modulo 操作](https://en.wikipedia.org/wiki/Modulo_operation)。
+
+> [!NOTE]
+> 如果校验位不是校验和计算的一部分，则使用 0 作为校验位的权重。 例如，如果检查数字不用于计算检查数字，则上述情况下权重 8 将等于 0。  Modulo_operation) 。
+
+![已配置的校验和验证器的屏幕截图](../media/checksum-validator.png)
+
+### <a name="date-validator"></a>日期验证程序
+
+如果嵌入在正则表达式中的日期值是正在创建的新模式的一部分，可以使用日期验证程序测试它是否满足您的条件。 例如，假设你要为九位数的员工标识号创建 SIT。 前六个数字是 DDMMYY 格式的雇用日期，后三个数字是随机生成的数字。 验证前六个数字的格式是否正确。 
+
+1. 定义具有此正则表达式的主元素：
+
+`\d{9}`
+
+2. 然后添加日期验证程序。
+3. 选择日期格式和开始偏移。 由于日期字符串是前六个数字，因此偏移量是 `0` 。
+
+![已配置日期验证器的屏幕截图](../media/date-validator.png)
+
+### <a name="functional-processors-as-validators"></a>作为验证程序的功能处理器
+
+你可以对一些最常用的 SIT 使用函数处理器作为验证程序。 这允许你定义自己的正则表达式，同时确保它们通过 SIT 所需的其他检查。 例如，Func_India_Aadhar将确保您定义的自定义正则表达式传递了为"印度 Aadhar"卡所需的验证逻辑。 有关可以用作验证符的 DLP 函数详细信息，请参阅 [DLP 函数查找什么](what-the-dlp-functions-look-for.md#what-the-dlp-functions-look-for)。 
+
+### <a name="luhn-check-validator"></a>Luhn 检查验证程序
+
+如果您具有包含应传递 Luhn 算法的正则表达式的自定义敏感信息类型，您可以使用 [Luhn 检查验证程序](https://en.wikipedia.org/wiki/Luhn_algorithm)。
 
 ## <a name="more-information-on-additional-checks"></a>关于其他检查的详细信息
 

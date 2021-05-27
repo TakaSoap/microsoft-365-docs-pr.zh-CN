@@ -7,26 +7,27 @@ audience: Admin
 ms.topic: article
 ms.service: bookings
 localization_priority: Normal
-ms.assetid: 298c529b-407b-4a2b-b2c5-6e77a9d1f07f
 description: 使用此页面创建员工列表并管理员工详细信息，例如姓名、电话号码和电子邮件地址。
-ms.openlocfilehash: 11d62cc34522de21e63b8bdf6e7e15729ac73dc1
-ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
+ms.openlocfilehash: 7fd19e3281b3dc075b5f72ca0471f5c66f93752d
+ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48399189"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52683315"
 ---
 # <a name="add-staff-to-bookings"></a>向 Bookings 添加员工
 
 Bookings 中的"员工"页面是创建员工列表和管理员工详细信息（如姓名、电话号码和电子邮件地址）的地方。 您还可以在此处为每位员工设置工作时间。
 
-## <a name="add-staff"></a>添加员工
+## <a name="before-you-begin"></a>开始之前
 
 尽管 Bookings 是一项Microsoft 365功能，但并非所有员工成员都需要拥有一个Microsoft 365帐户。 所有员工都必须具有有效的电子邮件地址，以便他们可以接收预订和计划更改。
 
-观看此视频或按照以下步骤添加员工。
+## <a name="watch-add-your-staff-in-microsoft-bookings"></a>观看：在 Microsoft Bookings 中添加员工
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWuVka]
+
+## <a name="steps"></a>步骤
 
 1. 转到" [管理人员"页面，](https://outlook.office.com/bookings/staff) 然后选择" **添加员工"**
 
@@ -65,3 +66,15 @@ Bookings 中的"员工"页面是创建员工列表和管理员工详细信息（
 
     > [!NOTE]
     > 在向服务分配员工时，只会显示添加到员工页面的前 31 名员工。
+
+## <a name="next-steps"></a>后续步骤
+
+添加员工后，可以安排公司关闭和请 [假](schedule-closures-time-off-vacation.md) ， [并设置日程安排策略](set-scheduling-policies.md)。
+
+## <a name="related-content"></a>相关内容
+
+[Microsoft Bookings](bookings-overview.md)
+
+[安排公司关闭、休假和休假时间](schedule-closures-time-off-vacation.md)
+
+[设置日程安排策略](set-scheduling-policies.md)

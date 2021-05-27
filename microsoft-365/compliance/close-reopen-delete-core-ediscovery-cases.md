@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 本文介绍如何管理核心电子数据展示事例。 这包括关闭案例、重新打开已关闭的案例和删除案例。
-ms.openlocfilehash: 8a54d5c8f93d36351538bc235a6dbeaaa602c3e9
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: d729c91d4e81ad12d0b4b16574aa4edad8e239a3
+ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52532442"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52684095"
 ---
 # <a name="close-reopen-and-delete-a-core-ediscovery-case"></a>关闭、重新打开和删除核心电子数据展示案例
 
@@ -92,7 +92,7 @@ ms.locfileid: "52532442"
 
 若要删除电子数据展示保留，请：
 
-1. 转到 **要** 删除的保留项选项卡。
+1. 转到要 **删除** 的保留项选项卡。
 
 2. 选择要删除的保留。
 

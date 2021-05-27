@@ -59,7 +59,7 @@ ms.locfileid: "52538263"
 > [!NOTE]
 > Microsoft 365 自动为它的初始“onmicrosoft.com”域设置 DKIM。 这意味着无需执行任何操作，即可为任意初始域名（例如 litware.onmicrosoft.com）。 有关域的详细信息，请参阅[关于域的常见问题](../../admin/setup/domains-faq.yml#why-do-i-have-an--onmicrosoft-com--domain)。
 
-DKIM 是三种身份验证方法（SPF、DKIM 和 DMARC）之一，有助于防止攻击者发送看起来像来自你的域的邮件。
+DKIM 是三种身份验证方法（SPF、DKIM 和 DMARC）之一，可帮助防止攻击者发送看起来像来自你的域的邮件。
 
 DKIM 允许你在邮件头中为出站电子邮件添加数字签名。配置 DKIM 时，你授权域使用加密身份验证将其名称与电子邮件关联或签名。从你的域获取电子邮件的电子邮件系统可以使用此数字签名来帮助验证传入的电子邮件是否合法。
 

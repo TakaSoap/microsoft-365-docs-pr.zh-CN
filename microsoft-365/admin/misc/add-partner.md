@@ -21,12 +21,12 @@ search.appverid:
 - GEA150
 ms.assetid: f86e8177-936e-491e-9024-44dea2b296ff
 description: 在购买时添加记录合作伙伴Microsoft 365更改合作伙伴，或者从订阅中删除合作伙伴。
-ms.openlocfilehash: e21c324bc84e360b80deae2abeec610e73834819
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: 4cebbce41cbd2a500cc502b808734f6056271d12
+ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52624521"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52683339"
 ---
 # <a name="add-change-or-delete-a-subscription-advisor-partner"></a>添加、更改或删除订阅顾问合作伙伴
 
@@ -43,17 +43,17 @@ ms.locfileid: "52624521"
 
 ::: moniker-end
 
-## <a name="before-you-begin"></a>准备工作
+::: moniker range="o365-germany"
+
+作为你的订阅顾问的 Microsoft 授权合作伙伴可向你提供销售、支持和技术方面的专业知识，以帮助你设置和维护订阅。 你可以在购买 Office 365 时或其他时间将订阅顾问合作伙伴添加为在录合作伙伴。 如果当前未与合作伙伴合作，还可以在 [Microsoft Pinpoint](https://pinpoint.microsoft.com) 网站上找到一个合作伙伴。
+
+::: moniker-end
+
+## <a name="before-you-begin"></a>开始之前
 
 ::: moniker range="o365-worldwide"
 
 你选择的合作伙伴取决于您Microsoft 服务使用的服务的国家/地区或区域。 如果您要添加合作伙伴或更改您的订阅的合作伙伴，首先需要通过向合作伙伴询问来获取合作伙伴的 Microsoft 合作伙伴 ID。
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-作为你的订阅顾问的 Microsoft 授权合作伙伴可向你提供销售、支持和技术方面的专业知识，以帮助你设置和维护订阅。 你可以在购买 Office 365 时或其他时间将订阅顾问合作伙伴添加为在录合作伙伴。 如果当前未与合作伙伴合作，还可以在 [Microsoft Pinpoint](https://pinpoint.microsoft.com) 网站上找到一个合作伙伴。
 
 ::: moniker-end
 
@@ -73,7 +73,7 @@ ms.locfileid: "52624521"
 
 ## <a name="add-a-partner-at-the-time-of-purchase"></a>在购买时添加合作伙伴
 
-1. In the admin center， go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">Purchase services</a> page.
+1. In the admin center， go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">**Purchase services**</a> page.
 2. 选择要购买的产品，然后选择"购买 **"。**
 3. 若要添加新合作伙伴，请展开 **"需要订单帮助？"，** 然后选择"**从 Microsoft 合作伙伴获取帮助"。**<br>
 按照"提供程序"页上的步骤搜索或与合作伙伴匹配。
@@ -136,30 +136,22 @@ ms.locfileid: "52624521"
 ::: moniker range="o365-worldwide"
 
 1. 在管理中心中，转到“**计费**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">你的产品</a>”页面。
-2. 在订阅详细信息页面的"合作伙伴信息"**下，** 选择"删除 **"。**
-3. 键入 **新合作伙伴的 Microsoft** 合作伙伴网络 ID。 可询问合作伙伴获得合作伙伴的 Microsoft 合作伙伴 ID。
-4. 选择“**添加**”。
-  
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. 在管理中心，转到“**计费**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">订阅</a>”页面。
-2. 如果你有多个订阅，请选择要编辑的订阅的名称。
-3. 在" **合作伙伴 ID**"下，选择" **编辑在录合作伙伴**"。
-4. 键入要添加的合作伙伴的新 Microsoft 合作伙伴 ID，选择" **检查 ID**"，然后选择" **提交**"。你可以通过向合作伙伴询问来获取其 Microsoft 合作伙伴 ID。
+1. 在管理中心中，转到“**计费**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">你的产品</a>”页面。
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. 在管理中心，转到“**计费**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">订阅</a>”页面。
-2. 如果你有多个订阅，请选择要编辑的订阅的名称。
-3. 在" **合作伙伴 ID**"下，选择" **编辑在录合作伙伴**"。
-4. 键入要添加的合作伙伴的新 Microsoft 合作伙伴 ID，选择" **检查 ID**"，然后选择" **提交**"。你可以通过向合作伙伴询问来获取其 Microsoft 合作伙伴 ID。
-
+1. 在管理中心中，转到“**计费**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">你的产品</a>”页面。
 ::: moniker-end
-
+2. 在订阅详细信息页面的"合作伙伴信息"**下，** 选择"删除 **"。**
+3. 键入 **新合作伙伴的 Microsoft** 合作伙伴网络 ID。 可询问合作伙伴获得合作伙伴的 Microsoft 合作伙伴 ID。
+4. 选择“**添加**”。
+  
 ## <a name="view-your-partner-relationships"></a>查看你的合作伙伴关系
 
 - 在管理中心，转到 **"设置**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2074649" target="_blank">关系"</a>页面。 你的合作伙伴将在此页面上列出。
@@ -171,50 +163,38 @@ ms.locfileid: "52624521"
 ::: moniker range="o365-worldwide"
 
 1. 在管理中心中，转到“**计费**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">你的产品</a>”页面。
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+1. 在管理中心中，转到“**计费**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">你的产品</a>”页面。
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. 在管理中心中，转到“**计费**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">你的产品</a>”页面。
+::: moniker-end
 2. 在 **"产品** "选项卡上，选择要编辑的订阅。
 3. 在订阅详细信息页面的"合作伙伴信息 **"下**，选择"删除 **"。**
 
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. 在管理中心，转到“**计费**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">订阅</a>”页面。
-2. 如果你有多个订阅，请选择要编辑的订阅的名称。
-3. 在" **合作伙伴 ID**"下，选择" **编辑在录合作伙伴**"。
-4. 在" **合作伙伴信息**"页面上，清除" **合作伙伴 ID**"框，然后选择" **提交**"。
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-1. 在管理中心，转到“**计费**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">订阅</a>”页面。
-2. 如果你有多个订阅，请选择要编辑的订阅的名称。
-3. 在" **合作伙伴 ID**"下，选择" **编辑在录合作伙伴**"。
-4. 在" **合作伙伴信息**"页面上，清除" **合作伙伴 ID**"框，然后选择" **提交**"。
-
-::: moniker-end
-
 ## <a name="remove-a-reseller-relationship"></a>删除经销商关系
 
-::: moniker range="o365-worldwide"
-
 你无法自行删除经销商关系。
+
+::: moniker range="o365-worldwide"
   
 如果要删除经销商关系，"删除"选项将灰显，并且必须要求你的经销商合作伙伴遵循以下说明：[删除与合作伙伴的经销商关系](/partner-center/remove-a-relationship)。
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
-
-你无法自行删除经销商关系。
   
 如果要删除经销商关系，"删除"选项将灰显，并且必须要求你的经销商合作伙伴遵循以下说明：[删除与合作伙伴的经销商关系](/partner-center/remove-a-relationship)。
   
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
-
-你无法自行删除经销商关系。
   
 你必须要求你的经销商合作伙伴遵循以下说明： [删除与合作伙伴的经销商关系](/partner-center/remove-a-relationship)。
   

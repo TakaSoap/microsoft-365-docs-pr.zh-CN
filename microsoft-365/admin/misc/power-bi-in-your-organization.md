@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: d7941332-8aec-4e5e-87e8-92073ce73dc5
 ROBOTS: NOINDEX
 description: 了解Power BI组织的用户如何使用此业务分析服务。
-ms.openlocfilehash: 34a48ed6ee854f0057e79ba86dbd888a65b41c5e
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 6da25932e1813744aa38bab2b399d6ac30c3429a
+ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52537423"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52683363"
 ---
 # <a name="power-bi-in-your-organization"></a>您的组织中的 Power BI
 
@@ -83,19 +83,19 @@ Microsoft Power BI 使用户能够以全新的直观方法可视化数据、共�
 
 ::: moniker range="o365-worldwide"
 
-3. 转到 [https://admin.microsoft.com](https://admin.microsoft.com)。
+3. 转到 <a href="https://admin.microsoft.com" target="_blank">https://admin.microsoft.com</a>。
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-3. 转到 [https://portal.office.de](https://portal.office.de)。
+3. 转到 (G) <a href="https://portal.office.de" target="_blank">https://portal.office.de</a>
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-3. 转到 [https://portal.partner.microsoftonline.cn](https://portal.partner.microsoftonline.cn)。
+3. 转到 <a href="https://portal.partner.microsoftonline.cn" target="_blank">https://portal.partner.microsoftonline.cn</a>。
 
 ::: moniker-end
 
@@ -170,19 +170,19 @@ Microsoft Power BI 使用户能够以全新的直观方法可视化数据、共�
   
 ::: moniker range="o365-worldwide"
 
-1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。
+1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
- 1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">活动用户</a>”页面。
+ 1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">活动用户</a>”页面。
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
- 1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">活动用户</a>”页面。
+ 1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">活动用户</a>”页面。
 
 ::: moniker-end
 

@@ -20,18 +20,18 @@ search.appverid:
 - MET150
 ms.assetid: d5155593-3bac-4d8d-9d8b-f4513a81479e
 description: 了解如何删除用户帐户以及如何处理用户的电子邮件和内容OneDrive以及是否保留产品许可证。
-ms.openlocfilehash: ff10d3289eae87f84685c22b81db03798ca9d7eb
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: 43a57a69ce0d810af2b029f49c15d32d75a4dc33
+ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52634204"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52683135"
 ---
 # <a name="delete-a-user-from-your-organization"></a>从组织删除用户
   
 **正在查找如何删除 *Microsoft 365* 或学校使用的用户帐户？请与工作或大学中的技术支持人员联系，以执行这些步骤。**
 
-## <a name="before-you-begin"></a>准备工作
+## <a name="before-you-begin"></a>开始之前
 
 - 只有具有全局[Microsoft 365](about-admin-roles.md)或企业或学校的用户管理权限的用户才能删除用户帐户。
 - 永久删除用户数据前 30 天内可[还原](restore-user.md)帐户。
@@ -60,19 +60,19 @@ ms.locfileid: "52634204"
 
 ::: moniker range="o365-worldwide"
 
-1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。
+1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
- 1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">活动用户</a>”页面。
+ 1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">活动用户</a>”页面。
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
- 1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">活动用户</a>”页面。
+ 1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">活动用户</a>”页面。
 
 ::: moniker-end
 
@@ -85,33 +85,25 @@ ms.locfileid: "52634204"
   
 ::: moniker range="o365-worldwide"
 
-1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。  
-
-2. 选择要删除的用户的名称，选择三个点 (执行更多) ，然后选择"删除 **用户"。**
-
-   虽然删除了用户帐户， **但仍需要支付许可证费用**。 请参阅下一过程以停止支付许可证费用。  或者，你可以将许可证分配给其他用户。 它不会自动分配给某人。
+1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。  
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">活动用户</a>”页面。
-
-2. 选择要删除的用户的名称，在"批量操作"窗格中，选择"**删除用户"。** 
-
-   虽然删除了用户帐户， **但仍需要支付许可证费用**。 请参阅下一过程以停止支付许可证费用。  或者，你可以将许可证分配给其他用户。 它不会自动分配给某人。
+1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">活动用户</a>”页面。
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">活动用户</a>”页面。
-
-2. 选择要删除的用户的名称，在"批量操作"窗格中，选择"**删除用户"。** 
-
-   虽然删除了用户帐户， **但仍需要支付许可证费用**。 请参阅下一过程以停止支付许可证费用。  或者，你可以将许可证分配给其他用户。 它不会自动分配给某人。
+1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">活动用户</a>”页面。
 
 ::: moniker-end
+
+2. 选择要删除的用户的名称，选择三个点 (执行更多) ，然后选择"删除 **用户"。**
+
+   虽然删除了用户帐户， **但仍需要支付许可证费用**。 请参阅下一过程以停止支付许可证费用。  或者，你可以将许可证分配给其他用户。 它不会自动分配给某人。
 
 ### <a name="stop-paying-for-the-license"></a>停止支付许可证费用
 
@@ -119,7 +111,19 @@ ms.locfileid: "52634204"
   
 ::: moniker range="o365-worldwide"
 
-1. 在管理中心中，转到“**计费**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">你的产品</a>”页面。 如果未看到此选项，则不是全局管理员或帐单管理员，无法执行此步骤。
+1. 在管理中心中，转到“**计费**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">你的产品</a>”页面。
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+1. 在管理中心中，转到“**计费**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">你的产品</a>”页面。
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. 在管理中心中，转到“**计费**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">你的产品</a>”页面。
+::: moniker-end
 
 2. 在 **"产品** "选项卡上，选择要删除其许可证的订阅。
 
@@ -130,28 +134,6 @@ ms.locfileid: "52634204"
 5. 选择“**保存**”。
 
 稍后，当你完成将其他人添加到你的企业的步骤时，系统将提示你同时购买许可证，只需一个步骤！
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. 在管理中心，转到“**计费**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">订阅</a>”页面。 如果未看到此选项，则不是全局管理员或帐单管理员，无法执行此步骤。
-
-2. 如果你有多个 (，请选择订阅选项) 然后选择添加 **/** 删除许可证以删除许可证，这样你才会支付许可证费用，直到聘用其他人。  
-
-   稍后，当你完成将其他人添加到你的企业的步骤时，系统将提示你同时购买许可证，只需一个步骤！
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-1. 在管理中心，转到“**计费**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">订阅</a>”页面。 如果未看到此选项，则不是全局管理员或帐单管理员，无法执行此步骤。
-
-2. 如果你有多个 (，请选择订阅选项) 然后选择添加 **/** 删除许可证以删除许可证，这样你才会支付许可证费用，直到聘用其他人。  
-
-   稍后，当你完成将其他人添加到你的企业的步骤时，系统将提示你同时购买许可证，只需一个步骤！
-
-::: moniker-end
 
 ## <a name="delete-many-users-at-the-same-time"></a>同时删除多个用户
 

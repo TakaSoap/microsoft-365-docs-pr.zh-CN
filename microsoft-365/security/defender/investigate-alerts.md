@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 6a34269c414f59d40c9160d5728159ed9cddf976
-ms.sourcegitcommit: 07e536f1a6e335f114da55048844e4a866fe731b
+ms.openlocfilehash: 4957c92cb95464213cce4a81ded07de166468c73
+ms.sourcegitcommit: 82a4d74020cd93ba444006317cfecc178c6d41dc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "52651341"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52689009"
 ---
 # <a name="investigate-alerts-in-microsoft-365-defender"></a>调查 Microsoft 365 Defender 中的警报
 
@@ -78,6 +78,23 @@ ms.locfileid: "52651341"
 :::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-main.png" alt-text="安全中心内警报Microsoft 365示例":::
 
 在整个警报页面中，可以选择任意实体旁边的省略号 (**...)** 以查看可用操作，例如打开警报页面或将警报链接到其他事件。
+
+### <a name="alert-sources"></a>警报源
+Microsoft 365Defender 警报可能来自 Microsoft Defender for Endpoint、Microsoft Defender for Office 365 和 Microsoft Cloud App Security。 你可能会注意到警报中具有预置字符的警报。 下表提供了一些指南，可帮助你根据警报上的预pend字符了解警报源的映射。
+
+> [!NOTE]
+> - 预置的 GUID 仅特定于统一体验，如统一警报队列、统一警报页面、统一调查和统一事件。<br>
+> - 预置字符不会更改警报的 GUID。 对 GUID 的唯一更改是预置的组件。<br>
+
+
+警报源 | Prepended 字符 
+:---|:---
+Microsoft Defender for Office 365 | `fa{GUID}` <br> 例如：`fa123a456b-c789-1d2e-12f1g33h445h6i` 
+Microsoft Defender for Endpoint | `da` 或 `ed` 用于自定义检测警报 <br> 
+Microsoft Defender for Identity | `aa{GUID}` <br> 例如：`aa123a456b-c789-1d2e-12f1g33h445h6i` 
+Microsoft Cloud App Security |`ca{GUID}` <br> 例如：`aa123a456b-c789-1d2e-12f1g33h445h6i` 
+
+
 
 ### <a name="analyze-affected-assets"></a>分析受影响的资产
 

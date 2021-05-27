@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: f96cfd56cb8d61bc62c34e2b1ee08d6313c6a8ad
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 43a136bb3432adcd47589d29aa5de8f8f6299ba8
+ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51186637"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52683063"
 ---
 # <a name="machine-resource-type"></a>计算机资源类型
 
@@ -64,7 +64,7 @@ computerDnsName | String | [计算机](machine.md) 完全限定的名称。
 firstSeen | DateTimeOffset | Microsoft Defender for [](machine.md) Endpoint 观测到计算机的第一个日期和时间。
 lastSeen | DateTimeOffset |上次接收的完整设备报告的时间和日期。 设备通常每 24 小时发送一次完整报告。
 osPlatform | String | 操作系统平台。
-osProcessor | String | 操作系统处理器。
+osProcessor | String | 操作系统处理器。 请改为使用 osArchitecture 属性。
 version | String | 操作系统版本。
 osBuild | Nullable long | 操作系统内部版本编号。
 lastIpAddress | String | 计算机上本地 NIC 上的最后一[个 IP。](machine.md)
@@ -78,5 +78,6 @@ machineTags | String collection | 计算机 [标记](machine.md) 集。
 exposureLevel | Nullable Enum | 由 Microsoft Defender for Endpoint 评估的曝光级别。 可能的值包括："None"、"Low"、"Medium"和"High"。
 deviceValue | Nullable Enum | [设备 的值](tvm-assign-device-value.md)。 可能的值包括："Normal"、"Low"和"High"。
 ipAddresses | IpAddress 集合 | ***IpAddress 对象*** 集。 请参阅[获取计算机 API。](get-machines.md)
+osArchitecture | String | 操作系统体系结构。 可能的值是："32 位"、"64 位"。 使用此属性，而不是 osProcessor。
 
 
