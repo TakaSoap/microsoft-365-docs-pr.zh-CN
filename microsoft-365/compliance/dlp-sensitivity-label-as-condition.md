@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: 了解可在 DLP 策略中使用敏感度标签作为条件的服务和项目类型
-ms.openlocfilehash: 19bd80de225f703b5c280163e94826498fa097bd
-ms.sourcegitcommit: 2655bb0ccd66279c35be2fadbd893c937d084109
+ms.openlocfilehash: b33e6704a3311740c1e386f77f1c751382ee6958
+ms.sourcegitcommit: 07e536f1a6e335f114da55048844e4a866fe731b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51876291"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "52651088"
 ---
 # <a name="use-sensitivity-labels-as-conditions-in-dlp-policies"></a>在 DLP 策略中使用敏感度标签作为条件
 
@@ -54,7 +54,7 @@ ms.locfileid: "51876291"
 |服务  |项目类型  |可用于策略提示  |可强制实施  |
 |---------|---------|---------|---------|
 |Exchange    |电子邮件         |是         |是         |
-|Exchange    |电子邮件附件         |否*         |是 **         |
+|Exchange    |电子邮件附件         |否         |是 **         |
 |SharePoint Online     |SharePoint Online 中的列表         |是         |是         |
 |OneDrive for Business     |项目         |是         |是         |
 |Teams     |Teams 聊天和通道消息         |不适用         |不适用         |
@@ -62,7 +62,7 @@ ms.locfileid: "51876291"
 |Windows 10 设备     |项目         |是         |是         |
 |MCAS（预览版） |项目         |是         |是         |
 
-\* 支持 DLP 在传输过程中检测并强制使用电子邮件和附件上的敏感度标签。 不支持 DLP 对带有敏感度标签的电子邮件附件进行检测。
+\* 仅 Office 文件类型支持对已添加敏感度标签的电子邮件附件进行 DLP 检测。
 
 \** 在一对一聊天或频道的 Teams 中发送的附件将自动上传到 OneDrive for Business 和 SharePoint。 因此，如果你的 DLP 策略中包含 SharePoint Online 或 OneDrive for Business，则在 Teams 中发送的带标签的附件将自动包含在此条件的范围内。 不需要在 DLP 策略中选择用作位置的 Teams。
 

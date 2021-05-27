@@ -24,12 +24,12 @@ search.appverid:
 - MOE150
 - BEA160
 description: 购买 Microsoft 365 商业标准版时，可以选择使用自有的域，也可以在注册期间购买一个域。
-ms.openlocfilehash: cee91edaab09506dca90cf5ed64ee9bc669c98cf
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: ca9cc359aaabfc16a5d0c57a75362c7826dea0db
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 05/24/2021
-ms.locfileid: "52624413"
+ms.locfileid: "52635626"
 ---
 # <a name="set-up-microsoft-business-standard"></a>设置 Microsoft 商业标准版
 
@@ -69,7 +69,7 @@ ms.locfileid: "52624413"
 
 1. 如果你的 Microsoft 365 商业标准版订阅中存在现有用户（例如，如果使用了 Azure AD Connect），将显示现在为其分配许可证的选项。继续操作，并为这些用户添加许可证。
 
-2. 添加用户之后，还将显示与添加的新用户共享凭据的选项。可以选择打印、通过电子邮件发送或下载凭据。
+2. 在你添加用户后，还将显示与添加的新用户共享凭据的选项。 可以选择打印、通过电子邮件发送或下载凭据。
 
 ## <a name="connect-your-domain"></a>连接你的域
 
@@ -103,6 +103,8 @@ ms.locfileid: "52624413"
 
 3. 输入你的 Microsoft 电子邮件地址并选择“**连接**”。
 
+## <a name="watch-set-up-outlook-for-email"></a>观看：设置 Outlook，以使用电子邮件功能
+
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/9fe86884-8a83-42cc-bca9-61a12e6dad31?autoplay=false]
   
 请参阅[设置 Outlook，使用电子邮件功能](https://support.microsoft.com/office/f5bf0cd1-e1f3-4b0d-a022-ecab17efe86f)，了解有关详细信息。
@@ -123,6 +125,8 @@ ms.locfileid: "52624413"
 
     这一次，选择“**从另一程序或文件导入**”并按照以下步骤导入“导出旧的电子邮件”时创建的备份文件。
 
+## <a name="watch-import-and-redirect-email"></a>观看：导入和重定向电子邮件
+
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/40f7df36-9e24-44e5-8791-e9ed0dd8fd21?autoplay=false]
   
 请参阅[使用 Outlook 导入电子邮件](https://support.microsoft.com/office/6a3771d4-4c1d-4a25-92a6-0b8e476335de)，了解有关详细信息。
@@ -136,6 +140,8 @@ Microsoft 365 不提供适用于公司的公共网站。 如需设置一个公�
 1. 从管理中心，转到“**资源**”，然后选择“**公共网站**”。
 
 2. 在其中一个选项下选择“**了解详细信息**”，然后注册网站合作伙伴，并使用其工具设置和设计你的网站。
+
+## <a name="watch-create-your-business-website"></a>观看：创建企业网站
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/4839abc6-9323-4cbf-a79d-2907235f9ebb]
 
