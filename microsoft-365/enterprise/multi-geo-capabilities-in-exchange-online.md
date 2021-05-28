@@ -12,12 +12,12 @@ f1.keywords:
 ms.custom: seo-marvel-apr2020
 localization_priority: Normal
 description: 了解邮箱中的多地理位置Exchange Online，如功能限制和邮箱放置。
-ms.openlocfilehash: bf1c3c8f510c57f47cbfc7b2609d97f5932e05d3
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 4c8f873039cd14251931125f5af2c04b7cbfe719
+ms.sourcegitcommit: 5377b00703b6f559092afe44fb61462e97968a60
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50923728"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52694301"
 ---
 # <a name="multi-geo-capabilities-in-exchange-online"></a>Exchange Online 中的多地理位置功能
 
@@ -43,7 +43,7 @@ Exchange Online 将 **PreferredDataLocation** 属性从 Azure AD 同步到 Excha
 
 - 如果用户上未指定 **PreferredDataLocation**，则在配置邮箱时，它将被配置在中心地理位置。
 
-- 如果 **PreferredDataLocation** 代码不正确（例如，类型为 NAN 而不是 NAM），则邮箱将被配置在中心地理位置。
+- 如果 **PreferredDataLocation** 代码 (错误（例如，使用非 NAM) ，将在中央地理位置设置邮箱。
 
 **注意**：多地理位置功能和 Skype for Business Online 区域性托管会议都使用用户对象上的 **PreferredDataLocation** 属性来定位服务。 如果在区域托管会议的用户对象上配置 **PreferredDataLocation** 值，则在 Microsoft 365 租户上启用多地理位置后，这些用户的邮箱将自动移动到指定的地理位置。
 

@@ -10,18 +10,18 @@ ms.author: jaimeo
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: bbf679a01716fc48d37b241d69740f50a985f048
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: d29b9d6bdc30d981b273d95925ba740bc92304c4
+ms.sourcegitcommit: 5377b00703b6f559092afe44fb61462e97968a60
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51574603"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52694241"
 ---
 # <a name="prerequisites-for-guest-accounts"></a>来宾帐户的先决条件
 
-Microsoft 托管桌面 Azure AD 组织中需要以下设置来访问来宾帐户。 可以在 Azure 门户的"[](https://portal.azure.com)外部标识 **/外部协作"下调整这些设置**：
+Microsoft 托管桌面 Azure AD 组织中需要以下设置来访问来宾帐户。 可以在 Azure 门户的"[](https://portal.azure.com)外部标识 **/外部协作设置"下调整这些设置**：
 
--   **具有来宾邀请者角色的管理员和用户可以将邀请设置为****"是"**
+-   对于 **设置为"成员** 用户"的来宾邀请限制，分配给特定管理员角色的用户可以邀请来宾用户（包括具有 **成员权限的来宾）**
 -   对于 **"协作限制"，** 选择以下任一选项：
     -   如果选择" **允许邀请发送到任何非独占 (域) ，** 则无需其他配置。
     -   如果选择" **拒绝对指定** 域的邀请"，请确保 Microsoft.com 未列在目标域中。

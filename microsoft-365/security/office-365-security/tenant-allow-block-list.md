@@ -16,12 +16,12 @@ ms.collection:
 description: 管理员可以了解如何在安全门户的租户允许/阻止列表中配置允许和阻止。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 270e38d65857de2f4d06460fb3bb77f72a165ecf
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 636114180a1814f5ef842b2a704f2df98488f46e
+ms.sourcegitcommit: 5377b00703b6f559092afe44fb61462e97968a60
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538959"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52694481"
 ---
 # <a name="manage-the-tenant-allowblock-list"></a>管理租户允许/阻止列表
 
@@ -44,7 +44,6 @@ ms.locfileid: "52538959"
 
 - 要阻止的 URL。
 - 要阻止的文件。
-- 要允许的批量邮件发件人域。 有关批量邮件、批量可信度 (BCL) 以及反垃圾邮件策略的批量邮件筛选详细信息，请参阅批量投诉级别 [ (BCL) in EOP](bulk-complaint-level-values.md)。
 - 允许或阻止欺骗发件人。 如果替代欺骗智能见解中的允许或阻止裁定[](learn-about-spoof-intelligence.md)，欺骗发件人将成为仅出现在租户允许/阻止列表中的"欺骗"选项卡上的手动允许或阻止条目。 在欺骗智能检测到欺骗性发件人之前，还可以在此处手动创建允许或阻止欺骗发件人的允许或阻止条目。
 
 本文介绍如何在安全& 合规中心或 PowerShell (Exchange Online PowerShell 中为在 Exchange Online 中拥有邮箱的 Microsoft 365 组织配置租户允许/阻止Exchange Online;适用于没有邮箱或邮箱Exchange Online的独立 EOP PowerShell) 。
@@ -76,7 +75,7 @@ ms.locfileid: "52538959"
 - 若要连接到 Exchange Online PowerShell，请参阅[连接到 Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)。 若要连接到独立 EOP PowerShell，请参阅[连接到 Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell)。
 
 - 在 Exchange Online 网站中 分配 权限，才能执行本文中的步骤：
-  - **URL、文件和允许批量发件人**：
+  - **URL 和文件**：
     - 若要在租户允许/阻止列表中添加和删除值，你需要是组织管理或安全 **管理员角色****组** 的成员。
     - 若要对租户允许/阻止列表进行只读访问，你需要是全局读取 **者** 或安全读者 **角色组的成员** 。
   - **欺骗**：以下组合之一：
@@ -105,7 +104,7 @@ ms.locfileid: "52538959"
 
      - 验证是否关闭该设置 (关闭) 并使用"过期时间"框指定条目 ![ ](../../media/scc-toggle-off.png) 的到期日期。 
 
-       或
+       或者
 
      - 将开关移到右侧，将条目配置为永不过期： ![切换开关打开](../../media/scc-toggle-on.png).
 
@@ -127,31 +126,11 @@ ms.locfileid: "52538959"
 
      - 验证是否关闭该设置 (关闭) 并使用"过期时间"框指定条目 ![ ](../../media/scc-toggle-off.png) 的到期日期。 
 
-     或
+     或者
 
      - 将开关移到右侧，将条目配置为永不过期： ![切换开关打开](../../media/scc-toggle-on.png).
 
    - **可选说明**：输入条目的描述性文本。
-
-4. 完成后，单击“**添加**”。
-
-## <a name="use-the-security--compliance-center-to-create-allow-bulk-mail-sender-domain-entries-in-the-tenant-allowblock-list"></a>使用安全&中心在租户允许/阻止列表中创建允许批量邮件发件人域条目
-
-1. 在安全与&中心，转到威胁 **管理** \> **策略** \> **租户允许/阻止列表**。
-
-2. 在"**租户允许/阻止列表"** 页上，选择 **"BCL** 绕过"选项卡的"发件人域"，然后单击"添加 **"。**
-
-3. 在出现的 **"为 BCL 旁路添加** 发件人域"飞出区中，配置以下设置：
-
-   - **为 BCL 旁路** 添加发件人域：每行输入一个包含良好批量邮件的源域，最多 20 个。
-
-   - **永不过期**：执行下列步骤之一：
-
-     - 验证是否关闭该设置 (关闭) 并使用"过期时间"框指定条目 ![ ](../../media/scc-toggle-off.png) 的到期日期。 
-
-     或
-
-     - 将开关移到右侧，将条目配置为永不过期： ![切换开关打开](../../media/scc-toggle-on.png).
 
 4. 完成后，单击“**添加**”。
 
@@ -198,11 +177,6 @@ ms.locfileid: "52538959"
      - **上次更新日期**
      - **到期日期**
      - **注意**
-
-   - **用于 BCL 绕过的发件人域**
-     - **值**：批量邮件发件人的域。
-     - **上次更新日期**
-     - **到期日期**
 
    - **网络钓鱼**
      - **欺骗用户**
@@ -272,7 +246,7 @@ ms.locfileid: "52538959"
    - **网络钓鱼**
      - **操作**：可以将值更改为"允许 **"或**"阻止 **"。**
 
-4. 完成后，单击“**保存**”。
+4. 完成时，请单击“保存”。
 
 ## <a name="use-the-security--compliance-center-to-remove-entries-from-the-tenant-allowblock-list"></a>使用安全&中心从租户允许/阻止列表中删除条目
 
@@ -312,23 +286,6 @@ New-TenantAllowBlockListItems -ListType Url -Block -Entries ~contoso.com
 
 有关语法和参数的详细信息，请参阅 [New-TenantAllowBlockListItems](/powershell/module/exchange/new-tenantallowblocklistitems)。
 
-### <a name="use-powershell-to-add-allow-bulk-mail-sender-domain-entries-to-the-tenant-allowblock-list"></a>使用 PowerShell 将允许批量邮件发件人域条目添加到租户允许/阻止列表
-
-若要在租户允许/阻止列表中添加允许批量邮件发件人域条目，请使用以下语法：
-
-```powershell
-New-TenantAllowBlockListItems -ListType BulkSender -Block:$false -Entries "Value1","Value2",..."ValueN" <-ExpirationDate Date | -NoExpiration> [-Notes <String>]
-```
-
-本示例为永不过期的指定域添加允许的批量发件人条目。
-
-```powershell
-New-TenantAllowBlockListItem -ListType BulkSender -Block:$false -Entries contosodailydeals.com
-New-TenantAllowBlockListItems -ListType FileHash -Block -Entries "768a813668695ef2483b2bde7cf5d1b2db0423a0d3e63e498f3ab6f2eb13ea3","2c0a35409ff0873cfa28b70b8224e9aca2362241c1f0ed6f622fef8d4722fd9a" -NoExpiration
-```
-
-有关语法和参数的详细信息，请参阅 [New-TenantAllowBlockListItems](/powershell/module/exchange/new-tenantallowblocklistitems)。
-
 ### <a name="use-powershell-to-add-allow-or-block-spoofed-sender-entries-to-the-tenant-allowblock-list"></a>使用 PowerShell 将允许或阻止欺骗发件人条目添加到租户允许/阻止列表
 
 若要在租户允许/阻止列表中添加欺骗性发件人条目，请使用以下语法：
@@ -357,28 +314,6 @@ Get-TenantAllowBlockListItems -ListType FileHash -Entry "9f86d081884c7d659a2feaa
 
 ```powershell
 Get-TenantAllowBlockListItems -ListType Url -Block
-```
-
-有关语法和参数的详细信息，请参阅 [Get-TenantAllowBlockListItems](/powershell/module/exchange/get-tenantallowblocklistitems)。
-
-### <a name="use-powershell-to-view-allow-bulk-mail-sender-domain-entries-in-the-tenant-allowblock-list"></a>使用 PowerShell 查看租户允许/阻止列表中的允许批量邮件发件人域条目
-
-若要查看租户允许/阻止列表中的允许批量邮件发件人域条目，请使用以下语法：
-
-```powershell
-Get-TenantAllowBlockListItems -ListType BulkSender [-Entry <BulkSenderDomainValue>] [<-ExpirationDate Date | -NoExpiration>]
-```
-
-本示例返回所有允许的批量邮件发件人域。
-
-```powershell
-Get-TenantAllowBlockListItems -ListType BulkSender
-```
-
-本示例返回指定批量发件人域的信息。
-
-```powershell
-Get-TenantAllowBlockListItems -ListType FileHash -Entry "contosodailydeals.com"
 ```
 
 有关语法和参数的详细信息，请参阅 [Get-TenantAllowBlockListItems](/powershell/module/exchange/get-tenantallowblocklistitems)。
@@ -427,22 +362,6 @@ Set-TenantAllowBlockListItems -ListType Url -Ids "RgAAAAAI8gSyI_NmQqzeh-HXJBywBw
 
 有关语法和参数的详细信息，请参阅 [Set-TenantAllowBlockListItems](/powershell/module/exchange/set-tenantallowblocklistitems)。
 
-### <a name="use-powershell-to-modify-allow-bulk-mail-sender-domain-entries-in-the-tenant-allowblock-list"></a>使用 PowerShell 修改租户允许/阻止列表中的允许批量邮件发件人域条目
-
-若要修改租户允许/阻止列表中允许批量邮件发件人域条目，请使用以下语法：
-
-```powershell
-Get-TenantAllowBlockListItems -ListType BulkSender -Ids <"Id1","Id2",..."IdN"> [<-ExpirationDate Date | -NoExpiration>] [-Notes <String>]
-```
-
-本示例将指定允许批量邮件发件人域条目的过期时间更改为永不过期。
-
-```powershell
-Set-TenantAllowBlockListItems -ListType BulkSender -Ids "RgAAAAAI8gSyI_NmQqzeh-HXJBywBwCqfQNJY8hBTbdlKFkv6BcUAAAl_QCZAACqfQNJY8hBTbdlKFkv6BcUAAAl_oSRAAAA" -NoExpiration
-```
-
-有关语法和参数的详细信息，请参阅 [Get-TenantAllowBlockListItems](/powershell/module/exchange/get-tenantallowblocklistitems)。
-
 ### <a name="use-powershell-to-modify-allow-or-block-spoofed-sender-entries-in-the-tenant-allowblock-list"></a>使用 PowerShell 修改租户允许/阻止列表中的允许或阻止欺骗发件人条目
 
 若要修改租户允许/阻止列表中的允许或阻止欺骗发件人条目，请使用以下语法：
@@ -459,12 +378,12 @@ Set-TenantAllowBlockListItems -Ids "RgAAAAAI8gSyI_NmQqzeh-HXJBywBwCqfQNJY8hBTbdl
 
 有关语法和参数的详细信息，请参阅 [Set-TenantAllowBlockListSpoofItems](/powershell/module/exchange/set-tenantallowblocklistspoofitems)。
 
-### <a name="use-powershell-to-remove-bulk-mail-sender-domain-file-and-domain-entries-from-the-tenant-allowblock-list"></a>使用 PowerShell 从租户允许/阻止列表中删除批量邮件发件人域、文件和域条目
+### <a name="use-powershell-to-remove-url-or-file-entries-from-the-tenant-allowblock-list"></a>使用 PowerShell 从租户允许/阻止列表中删除 URL 或文件条目
 
-若要从租户允许/阻止列表中删除允许批量邮件发件人域条目、阻止文件条目和阻止 URL 条目，请使用以下语法：
+若要从租户允许/阻止列表中删除文件和 URL 条目，请使用以下语法：
 
 ```powershell
-Remove-TenantAllowBlockListItems -ListType <BulkSender | FileHash | Url> -Ids <"Id1","Id2",..."IdN">
+Remove-TenantAllowBlockListItems -ListType <FileHash | Url> -Ids <"Id1","Id2",..."IdN">
 ```
 
 此示例从租户允许/阻止列表中删除指定的阻止 URL 条目。

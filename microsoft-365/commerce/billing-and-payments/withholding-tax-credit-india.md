@@ -18,16 +18,21 @@ description: 了解如何在你的帐户上申请已支付的预扣税的信用�
 ms.custom:
 - AdminSurgePortfolio
 - commerce_billing
+ROBOTS: NOINDEX, NOFOLLOW
 monikerRange: o365-worldwide
 ms.date: 05/03/2021
-ms.openlocfilehash: b34fd0fd2e35d71e6b35cde250be822201aa719a
-ms.sourcegitcommit: 82a4d74020cd93ba444006317cfecc178c6d41dc
+ms.openlocfilehash: 68afdd9c5dddc071faa96a78981c68cc2c20e1ed
+ms.sourcegitcommit: 5377b00703b6f559092afe44fb61462e97968a60
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 05/27/2021
-ms.locfileid: "52689021"
+ms.locfileid: "52694217"
 ---
 # <a name="request-a-credit-for-withholding-tax-on-your-account-india-customers"></a>向印度客户申请预扣税 (预扣) 
+
+> [!NOTE]
+>
+> 如果你的组织不位于印度，请参阅申请帐户预扣税的信用 ([全球 ](withholding-tax-credit-global.md)客户) 。
 
 印度客户会收到由 Microsoft Regional Sales Pte Ltd. (MRS) 计费的 Web Direct (Azure 和 Microsoft 365) 发票，然后向新加坡进行交叉付款以结算发票。 如果你在汇寄该付款时预扣了税款，本文将介绍使用 MRS 在帐户中申请预扣税 (WHT) 的信用的过程。
 

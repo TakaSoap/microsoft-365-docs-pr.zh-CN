@@ -17,12 +17,12 @@ search.appverid:
 - SPO160
 - MET150
 description: 本文介绍了如何使用门户启动计划程序启动门户
-ms.openlocfilehash: d7ea64b3a9fef25ddfde43e61624e49d2b7d4352
-ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
+ms.openlocfilehash: fdf92f2bbdfb673f1db446b562e941d61679fa9a
+ms.sourcegitcommit: 5377b00703b6f559092afe44fb61462e97968a60
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52280965"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52694349"
 ---
 # <a name="launch-your-portal-using-the-sharepoint-portal-launch-scheduler"></a>使用门户启动计划SharePoint启动门户
 
@@ -95,7 +95,7 @@ ms.locfileid: "52280965"
     - 少于 10，000 个用户：两个波形
     - 10k 至 30k 用户：三个波形 
     - 30k+ 到 100，000 个用户：五个波形
-    - 超过 100，000 个用户：五个波形并联系你的 Microsoft 帐户团队
+    - 超过 100，000 个用户：五个波形，通过启动门户（用户超过 10 万）部分中列出的步骤联系 Microsoft。 
 
 5.  然后，确定 **所需的重定向** 类型：
 
@@ -118,6 +118,26 @@ ms.locfileid: "52280965"
 
 8.  确认门户启动详细信息，然后选择 **计划**。 计划启动后，对 SharePoint 门户主页的任何更改都需要在门户启动恢复之前收到正常的诊断结果。
 
+### <a name="launch-portal-with-over-100k-users"></a>拥有 10 万多个用户的启动门户
+
+如果计划迁移超过 100TB，请按照下面列出的步骤提交支持请求。 请确保包含所有请求的信息。
+
+请按以下步骤操作：
+1. 导航到 https://admin.microsoft.com
+2. 确保你使用的是新管理中心预览。
+3. 在左侧导航窗格中，选择“支持”，然后选择“新建服务请求”。 
+
+
+   这将激活屏幕右侧的“**需要帮助?**”窗格。
+
+4.  In the **Briefly describe your issue** area， enter "launch SharePoint Portal with 100k users".</br>
+5. 选择“联系支持人员”。
+6. 在 **"说明**"下，输入"SharePoint 100，000 个用户启动门户"。 
+7. 填写其余信息，然后选择“与我联系”。
+8. 创建票证后，请确保向支持专员提供以下信息：
+- 启动门户 URL 的 
+- 预期用户数
+- 估计启动时间 
 
 ## <a name="make-changes-to-a-scheduled-portal-launch"></a>对计划的门户启动进行更改
 
