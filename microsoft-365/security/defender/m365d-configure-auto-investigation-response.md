@@ -16,18 +16,18 @@ ms.custom: autoir
 ms.reviewer: evaldm, isco
 f1.keywords: CSH
 ms.technology: m365d
-ms.openlocfilehash: c9a2f41b1ec77994ef656b948ae1270dc2458dff
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: 685c23f4e8daac4f00e0bbd90dcaca9a80703559
+ms.sourcegitcommit: a3359982fea01339c7377e3ee89f223788cee0bf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52269524"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "52696510"
 ---
 # <a name="configure-automated-investigation-and-response-capabilities-in-microsoft-365-defender"></a>在 Microsoft 365 Defender 中配置自动调查和响应功能
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-Microsoft 365Defender 包括强大的[自动调查和响应功能](m365d-autoir.md)，可节省安全运营团队的时间和精力。 借助 [自我修复](m365d-autoir.md#how-automated-investigation-and-self-healing-works)功能，这些功能模仿安全分析师调查和响应威胁时要执行的步骤，只有更快且具有更多扩展能力。 
+Microsoft 365Defender 包括强大的[自动调查和响应功能](m365d-autoir.md)，可节省安全运营团队的时间和精力。 借助 [自我修复](m365d-autoir.md#how-automated-investigation-and-self-healing-works)功能，这些功能模仿安全分析师调查和响应威胁时要执行的步骤，只有更快且具有更多扩展能力。
 
 本文介绍如何通过以下步骤在 Microsoft 365 Defender 中配置自动调查和响应：
 
@@ -40,13 +40,18 @@ Microsoft 365Defender 包括强大的[自动调查和响应功能](m365d-autoir.
 
 ## <a name="prerequisites-for-automated-investigation-and-response-in-microsoft-365-defender"></a>在 Microsoft 365 Defender 中自动调查和响应的先决条件
 
-|要求 |详细信息 |
-|:----|:----|
-|订阅要求 |以下订阅之一： <br/>- Microsoft 365 E5<br/>- Microsoft 365 A5<br/>- Microsoft 365 E3加载项Microsoft 365 E5 安全性加载项<br/>- Microsoft 365 A3 Microsoft 365 A5 安全加载项<br/>- Office 365 E5 加企业移动性 + 安全性 E5 加 E5 Windows E5<p> 请参阅[Microsoft 365 Defender 许可要求](./prerequisites.md#licensing-requirements)。|
-|网络要求 |- [已启用 Microsoft Defender for Identity](/azure-advanced-threat-protection/what-is-atp)<br/>- [Microsoft Cloud App Security](/cloud-app-security/what-is-cloud-app-security)配置<br/>- [Microsoft Defender for Identity 集成](/cloud-app-security/mdi-integration) |
-|Windows 计算机要求 |- 已安装 Windows 10 版本 1709 或更高版本（请参阅 [Windows 10 发行信息](/windows/release-information/)） <br/>- 已配置以下威胁防护服务：<br/>- [Microsoft Defender for Endpoint](../defender-endpoint/configure-endpoints.md)<br/>- [Microsoft Defender 防病毒](/windows/security/threat-protection/windows-defender-antivirus/configure-windows-defender-antivirus-features) |
-|保护电子邮件内容和Office文件 |[Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/defender-for-office-365#configure-atp-policies)配置 |
-|Permissions | 若要配置自动调查和响应功能，必须在 Azure Active Directory () 或 Microsoft 365 管理中心 () 中分配全局管理员或安全 [https://portal.azure.com](https://portal.azure.com) [https://admin.microsoft.com](https://admin.microsoft.com) 管理员角色。<p>若要获取使用自动调查和响应功能（如审阅、批准或拒绝挂起操作）所需的权限，请参阅操作中心任务所需的 [权限](m365d-action-center.md#required-permissions-for-action-center-tasks)。 |
+<br>
+
+****
+
+|要求|详细信息|
+|---|---|
+|订阅要求|以下订阅之一： <ul><li>Microsoft 365 E5</li><li>Microsoft 365 A5</li><li>Microsoft 365 E3加载项Microsoft 365 E5 安全性加载项</li><li>Microsoft 365具有 Microsoft 365 A5 安全加载项的 A3</li><li>Office 365E5 以及 企业移动性 + 安全性 E5 加Windows E5</li></ul> <p> 请参阅[Microsoft 365 Defender 许可要求](./prerequisites.md#licensing-requirements)。|
+|网络要求|<ul><li>[已启用 Microsoft Defender for Identity](/azure-advanced-threat-protection/what-is-atp)</li><li>[Microsoft Cloud App Security](/cloud-app-security/what-is-cloud-app-security)配置</li><li>[Microsoft Defender for Identity 集成](/cloud-app-security/mdi-integration)</li></ul>|
+|Windows 计算机要求|<ul><li>Windows 10版本 1709 或更高版本 (请参阅Windows 10[版本) ](/windows/release-information/)</li><li>配置了以下威胁防护服务：<ul><li>[Microsoft Defender for Endpoint](../defender-endpoint/configure-endpoints.md)</li><li>[Microsoft Defender 防病毒](/windows/security/threat-protection/windows-defender-antivirus/configure-windows-defender-antivirus-features)</li></ul></li></ul>|
+|保护电子邮件内容和Office文件|[Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/defender-for-office-365#configure-atp-policies)配置|
+|权限|若要配置自动调查和响应功能，必须在 Azure Active Directory () 或 Microsoft 365 管理中心 () 中分配全局管理员或安全 <https://portal.azure.com> <https://admin.microsoft.com> 管理员角色。 <p> 若要获取使用自动调查和响应功能（如审阅、批准或拒绝挂起操作）所需的权限，请参阅操作中心任务所需的 [权限](m365d-action-center.md#required-permissions-for-action-center-tasks)。|
+|
 
 ## <a name="review-or-change-the-automation-level-for-device-groups"></a>查看或更改设备组的自动化级别
 
@@ -66,13 +71,13 @@ Microsoft 提供可帮助识别 [特定](../../compliance/alert-policies.md) 风
 
 电子邮件中的安全设置Office 365保护电子邮件和内容。 若要查看或更改这些设置，请按照防止 [威胁中的指南操作](../office-365-security/protect-against-threats.md)。
 
-1. 在安全Microsoft 365中心 [https://security.microsoft.com](https://security.microsoft.com) () ，转到"策略&**规则**  >  **威胁策略"。**
+1. 在安全Microsoft 365中心 [https://security.microsoft.com](https://security.microsoft.com) () ，转到"策略&**规则** \> **威胁策略"。**
 2. 确保已配置以下所有策略。 若要获取帮助和建议，请参阅 [防止威胁](/microsoft-365/security/office-365-security/protect-against-threats)。
-   - [反恶意软件) ](../office-365-security/protect-against-threats.md#part-1---anti-malware-protection)
+   - [反恶意软件) ](../office-365-security/protect-against-threats.md#part-1---anti-malware-protection-in-eop)
    - [防钓鱼) ](../office-365-security/protect-against-threats.md#part-2---anti-phishing-protection)
    - [安全附件](../office-365-security/protect-against-threats.md#safe-attachments-policies-in-microsoft-defender-for-office-365)
    - [安全链接](../office-365-security/protect-against-threats.md#safe-links-policies-in-microsoft-defender-for-office-365)
-   - [反垃圾邮件](../office-365-security/protect-against-threats.md#part-3---anti-spam-protection)
+   - [反垃圾邮件](../office-365-security/protect-against-threats.md#part-3---anti-spam-protection-in-eop)
 3. 请确保[Microsoft Defender for Office 365 for SharePoint、OneDrive](../office-365-security/protect-against-threats.md#part-5---verify-safe-attachments-for-sharepoint-onedrive-and-microsoft-teams-is-turned-on)和 Microsoft Teams 已打开。
 4. 确保 [电子邮件保护的零时差自动](../office-365-security/protect-against-threats.md#zero-hour-auto-purge-for-email-in-eop) 清除有效。
 5.  (可选步骤。) 在 Microsoft 365[合规](../../compliance/alert-policies.md)中心查看Office 365警报策略 [https://compliance.microsoft.com/compliancepolicies](https://compliance.microsoft.com/compliancepolicies) () 。 多个默认警报策略都属于威胁管理类别。 其中一些警报可以触发自动调查和响应。 若要了解更多信息，请参阅默认 [警报策略](../../compliance/alert-policies.md#default-alert-policies)。
@@ -85,7 +90,7 @@ Microsoft 提供可帮助识别 [特定](../../compliance/alert-policies.md) 风
 2. 在导航窗格中，查找 **事件**、**操作中心和****搜寻**，如上图所示。
    - 如果你看到 **事件**、**操作中心和** 搜寻，Microsoft 365 Defender 已打开。 请参阅 [本文的查看或更改设备组的](#review-or-change-the-automation-level-for-device-groups) 自动化级别部分。
    - 如果你看不到 *事件***、操作****中心或** 搜寻，Microsoft 365 Defender 可能无法打开。 在这种情况下，请访问 [操作中心](m365d-action-center.md)) 。
-3. 在导航窗格中，**选择**  >  **"设置Microsoft 365 Defender"。** 确认Microsoft 365 Defender 已打开。 
+3. 在导航窗格中，**选择**  >  **"设置Microsoft 365 Defender"。** 确认Microsoft 365 Defender 已打开。
 
 > [!TIP]
 > 需要帮助? 请参阅[启用 Microsoft 365 Defender。](m365d-enable.md)

@@ -20,12 +20,12 @@ description: 管理员可以在 Microsoft 365 中学习威胁防护并为组织�
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 12b519d45df005471e3d87cfdb24f87edddbf6f3
-ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
+ms.openlocfilehash: 77b76a56c34a005b0e0742f207e2824359ae8cac
+ms.sourcegitcommit: a3359982fea01339c7377e3ee89f223788cee0bf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52683327"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "52696546"
 ---
 # <a name="protect-against-threats"></a>抵御威胁
 
@@ -50,6 +50,8 @@ ms.locfileid: "52683327"
 > [!TIP]
 > 注意，在打开审核之外，还包含开启反恶意软件、反钓鱼、反垃圾邮件的 *步骤*，这些是 Office 365 Exchange Online Protection (**EOP**) 的一部分。 在你记住 (**Defender for Office 365**) 包含内容、基础、EOP 之前，这可能在 Defender for Office 365 的文章里看起来很奇怪。
 
+<br>
+
 ****
 
 |防护类型|订阅要求|
@@ -67,6 +69,8 @@ ms.locfileid: "52683327"
 
 若要配置 Defender for Office 365 策略，必须在[安全与合规中心](/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center)分配给你一个适当的角色。 看看下面的表格，了解可以执行这些操作的角色。
 
+<br>
+
 ****
 
 |角色或角色组|在哪里了解更多信息|
@@ -82,20 +86,22 @@ ms.locfileid: "52683327"
 
 - 早点开始审核日志。 对于以下步骤中的 **一些步骤** ，你需要将审核功能启用。 审核日志在包括[Exchange Online](/office365/servicedescriptions/exchange-online-service-description/exchange-online-service-description)的订阅中可用。 为了查看威胁防护报告中的数据，比如 [安全性仪表板](security-dashboard.md)、[电子邮件安全报告](view-email-security-reports.md)、[Explorer](threat-explorer.md)，审核日志必须“*打开*”。 有关详细信息，请参阅[打开或关闭审核日志搜索](../../compliance/turn-audit-log-search-on-or-off.md)。
 
-## <a name="part-1---anti-malware-protection"></a>第一部分 - 反恶意软件保护
+## <a name="part-1---anti-malware-protection-in-eop"></a>第 1 部分 - EOP 中的反恶意软件保护
 
 有关反恶意软件的建议设置详细信息，请参阅 [EOP 反恶意软件策略设置](recommended-settings-for-eop-and-office365.md#eop-anti-malware-policy-settings)。
 
 1. 打开 <https://security.microsoft.com/antimalwarev2> 。
 
-2. 通过单击策略的名称选择默认策略。
+2. 在 **"反恶意软件"** 页上，通过单击该名称选择名为 **"** 默认策略"的策略。
 
 3. 在打开的策略详细信息飞出控件中，单击" **编辑保护设置"，** 然后配置以下设置：
    - 选择 **"启用常用附件筛选器** "以打开常用附件筛选器。 单击 **"自定义文件类型** "以添加更多文件类型。
    - 验证是否 **选中了"启用恶意软件的零时差自动清除** "。
    - 验证"通知"部分未 **选择** 任何设置。
 
-   完成后，单击"保存 **"**
+   完成时，请单击“保存”。
+
+4. 返回策略详细信息飞出，**单击关闭。**
 
 有关配置反恶意软件策略的详细说明，请参阅在 EOP 中配置 [反恶意软件策略](configure-anti-malware-policies.md)。
 
@@ -135,23 +141,23 @@ ms.locfileid: "52683327"
 
 若要了解关于反钓鱼策略选项详细信息，请参阅[在 Microsoft Defender for Office 365 中配置防钓鱼策略](configure-atp-anti-phishing-policies.md)。
 
-## <a name="part-3---anti-spam-protection"></a>第三部分 - 电子邮件反垃圾邮件保护
+## <a name="part-3---anti-spam-protection-in-eop"></a>第 3 部分 - EOP 中的反垃圾邮件保护
 
-[反垃圾邮件软件防护](anti-spam-protection.md)在包含 [EOP](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description) 的订阅中可用。
+有关反垃圾邮件的建议设置详细信息，请参阅 [EOP 反垃圾邮件策略设置](recommended-settings-for-eop-and-office365.md#eop-anti-spam-policy-settings)。
 
-1. 在 [安全与合规中心](https://protection.office.com)内，依次转到“**威胁管理**”\>“**策略**”\>“**反垃圾邮件**”。
+1. 打开 <https://security.microsoft.com/antispam> 。
 
-2. 在“**自定义**”选项卡中，打开自定义设置。
+2. 在 **"反垃圾邮件策略"** 页上，通过单击名称从列表中选择名为"反垃圾邮件入站策略"的策略。
 
-3. 展开“**默认垃圾邮件筛选器策略**”，单击“**编辑策略**”，然后指定下列设置：
+3. 在出现的策略详细信息飞出控件中，单击"批量电子邮件阈值"部分中的"编辑垃圾邮件阈值和&**属性"。**
 
-   - 在“**垃圾邮件和批量操作**”中，设置值的阈值为 5 或 6。
+4. 在 **出现的垃圾邮件阈值和属性** 飞出控件中，将"批量电子邮件阈值"设置为 5 (Strict) 或 6 (Standard) 。 完成后，单击"保存 **"**
 
-   - 在“**允许列表**”中，检查（和/或编辑）你的受信任发送者和域。
+5. 返回到策略详细信息飞出控件，转到允许和阻止的发件人和域部分，并查看或编辑允许的发件人和允许的域。
 
-4. 单击“**保存**”。
+6. 完成后，单击“关闭”。
 
-了解更多关于反垃圾邮件策略选项的信息，请参阅[配置反垃圾邮件策略](configure-your-spam-filter-policies.md)。
+有关配置反垃圾邮件策略的详细说明，请参阅在 EOP 中配置 [反垃圾邮件策略](configure-your-spam-filter-policies.md)。
 
 ## <a name="part-4---protection-from-malicious-urls-and-files-safe-links-and-safe-attachments-in-defender-for-office-365"></a>第四部分 - 防护恶意 URL 和文件带来的威胁（Defender for Office 365 中的安全链接和安全附件）
 

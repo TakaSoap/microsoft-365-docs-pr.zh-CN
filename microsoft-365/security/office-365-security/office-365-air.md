@@ -22,12 +22,12 @@ ms.custom:
 - seo-marvel-mar2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: c9cd9ef649ec60fc8d880ae525469980a00f69b2
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: 7632efb2014af9f55e9cad700bceeeabe555fb8b
+ms.sourcegitcommit: a3359982fea01339c7377e3ee89f223788cee0bf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52274996"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "52696570"
 ---
 # <a name="automated-investigation-and-response-air-in-microsoft-defender-for-office-365"></a>Microsoft Defender for (AIR) 自动调查和响应Office 365
 
@@ -78,9 +78,9 @@ AIR 使安全运营团队可以更高效地操作。 AIR 功能包括自动调�
 AIR 功能包含在[Microsoft Defender for Office 365](defender-for-office-365.md#microsoft-defender-for-office-365-plan-1-and-plan-2)中，但已配置策略和警报。 需要一些帮助？ 按照防止威胁 [中的指南](protect-against-threats.md) 设置或配置以下保护设置：
 
 - [审核日志记录](../../compliance/turn-audit-log-search-on-or-off.md) (应打开) 
-- [反恶意软件策略](protect-against-threats.md#part-1---anti-malware-protection)
-- [反病毒保护](protect-against-threats.md#part-2---anti-phishing-protection)
-- [反垃圾邮件保护](protect-against-threats.md#part-3---anti-spam-protection)
+- [反恶意软件策略](protect-against-threats.md#part-1---anti-malware-protection-in-eop)
+- [防网络钓鱼钓鱼保护](protect-against-threats.md#part-2---anti-phishing-protection)
+- [Anti-spam protection](protect-against-threats.md#part-3---anti-spam-protection-in-eop)
 - [保险箱链接和保险箱附件](protect-against-threats.md#part-4---protection-from-malicious-urls-and-files-safe-links-and-safe-attachments-in-defender-for-office-365)
 - [用于 SharePoint、OneDrive 和 Microsoft Teams 的安全附件](protect-against-threats.md#part-5---verify-safe-attachments-for-sharepoint-onedrive-and-microsoft-teams-is-turned-on)
 - [零时差自动清除电子邮件](protect-against-threats.md#zero-hour-auto-purge-for-email-in-eop)

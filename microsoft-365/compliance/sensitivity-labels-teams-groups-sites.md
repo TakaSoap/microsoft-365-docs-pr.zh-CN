@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用敏感度标签保护 SharePoint 和 Microsoft Teams 网站以及 Microsoft 365 组中的内容。
-ms.openlocfilehash: ef4559a278ce83f429790efcd20517b5c8545cb3
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 6baca2e24e50bd3ee418da994adcfbe7fca8338c
+ms.sourcegitcommit: 5377b00703b6f559092afe44fb61462e97968a60
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52531038"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52694397"
 ---
 # <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>使用敏感度标签保护 Microsoft Teams、Microsoft 365 组和 SharePoint 网站中的内容
 
@@ -138,7 +138,7 @@ ms.locfileid: "52531038"
 
 若要在下拉列表中显示供选择，必须在 Azure Active Directory 条件访问配置中创建、配置和发布身份验证上下文。 有关详细信息和说明，请参阅 Azure AD 条件访问文档中[配置身份验证上下文](/azure/active-directory/conditional-access/concept-conditional-access-cloud-apps#configure-authentication-contexts)部分。
 
-并非所有应用都支持身份验证上下文。 如果应用程序不受支持的用户连接到为身份验证上下文配置的网站，则他们会看到访问被拒绝的消息，或者被提示进行身份验证但被拒绝。 当前支持身份验证上下文的应用：
+并非所有应用程序都支持身份验证上下文。如果应用程序不受支持的用户连接到为身份验证上下文配置的网站，则他们会看到访问被拒绝的消息，或者被提示进行身份验证但被拒绝。当前支持身份验证上下文的应用程序有:
 
 - Web 的 Office，其中包括 Web 的 Outlook
 
@@ -163,6 +163,20 @@ ms.locfileid: "52531038"
     - Android：尚不支持
 
 此预览的已知限制：
+
+- 此功能仍在向租户推出。 如果用户访问网站时，具有所选身份验证上下文的条件访问策略未生效，可使用 PowerShell 确认配置正确且满足所有先决条件。 您需要从网站中删除敏感度标签，然后通过使用当前 [SharePoint Online Management Shell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)中的 [Set-SPOSite](/powershell/module/sharepoint-online/set-sposite) cmdlet，为身份验证上下文配置网站。 如果此方法有效，请再等待几天，然后再次尝试应用敏感度标签。
+    
+    使用 PowerShell 测试身份验证上下文：
+    
+    ```powershell
+    Set-SPOSite -Identity <site url> -ConditionalAccessPolicy AuthenticationContext -AuthenticationContextName "Name of authentication context"
+    ```
+    
+    若要删除身份验证上下文，以便可以尝试再次应用敏感度标签：
+    
+    ```powershell
+    Set-SPOSite -Identity <site url> -ConditionalAccessPolicy AuthenticationContext -AuthenticationContextName ""
+    ```
 
 - 对于 OneDrive 同步应用，仅 OneDrive 支持，其他网站不支持。
 

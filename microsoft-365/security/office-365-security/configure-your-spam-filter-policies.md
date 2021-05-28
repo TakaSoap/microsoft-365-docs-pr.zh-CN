@@ -17,12 +17,12 @@ ms.collection:
 description: 管理员可以了解如何在 Exchange Online Protection (EOP) 中查看、创建、修改和删除反垃圾邮件策略。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1241e6ebb838938f82fce5dc08ea93a3038f4ace
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: fb4ba4f48d6f336444861b4407461efd4c8862d0
+ms.sourcegitcommit: 5377b00703b6f559092afe44fb61462e97968a60
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52624229"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52694505"
 ---
 # <a name="configure-anti-spam-policies-in-eop"></a>在 EOP 中配置反垃圾邮件策略
 
@@ -214,7 +214,7 @@ ms.locfileid: "52624229"
 
    - **阻止域**：单击 **“编辑”**。 在随即显示的 **“阻止的域列表”** 浮出控件中，执行以下步骤：
 
-      a. 输入域。 可以指定多个域，用分号 (;) 分隔。 不允许使用通配符 (*)。
+      a. 输入域。可以指定多个域，用分号 (;) 分隔。不允许使用通配符 （*）。
 
       b. 单击 ![添加图标](../../media/c2dd8b3a-5a22-412c-a7fa-143f5b2b5612.png) 添加域。
 
