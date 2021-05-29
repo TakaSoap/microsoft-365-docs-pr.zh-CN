@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 按照此解决方案中的步骤从员工Microsoft 365并保护组织的数据。
-ms.openlocfilehash: a613d4931c730dffe195954da97af86c683041bf
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: 3fb41ea393e98c1492553941a2b6208524377166
+ms.sourcegitcommit: 4bcac4cb4f9399ebbd7c8cff0abb4d6ecedb731e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52634240"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "52698924"
 ---
 # <a name="overview-remove-a-former-employee-and-secure-data"></a>概述：删除以前的员工和安全数据
 
@@ -54,8 +54,8 @@ ms.locfileid: "52634240"
 |[步骤 1 - 阻止以前的员工登录并阻止对 Microsoft 365 服务的访问](remove-former-employee-step-1.md) <br/> |这会阻止以前的员工登录Microsoft 365并阻止该员工访问Microsoft 365服务。 <br/> |
 |[步骤 2 - 保存以前员工的邮箱的内容](remove-former-employee-step-2.md) <br/> |这对将要接管员工工作或者存在诉讼的人很有用。 <br/> |
 |[步骤 3 - 将前员工的电子邮件转发给其他员工或转换为共享邮箱](remove-former-employee-step-3.md) <br/> |这可保证前员工的电子邮件地址处于活动状态。如果客户或合作伙伴仍向以前员工的地址发送电子邮件，此功能可让他们发送给接管该工作的员工。 <br/> |
-|[步骤 4 - 向另一名员工授予OneDrive和Outlook权限](remove-former-employee-step-6.md) <br/> |如果仅删除用户的许可证但不删除其帐户，则甚至 30 天后仍可访问该用户的 OneDrive 中的内容。 <br/><br/> 在删除帐户之前，应该向其他用户授予OneDrive Outlook访问权限。 删除员工帐户后，其OneDrive Outlook内容将保留 **30** 天。 但是，在这 30 天内，您可以还原用户帐户并访问其内容。 如果还原用户帐户，OneDrive Outlook 30 天后仍可供你访问。 <br/> |
-|[步骤 5 - 擦除和阻止前员工的移动设备](remove-former-employee-step-4.md) <br/> |从手机或平板电脑删除业务数据。  <br/> |
+|[步骤 4 - 向另一名员工授予OneDrive和Outlook权限](remove-former-employee-step-4.md) <br/> |如果仅删除用户的许可证但不删除其帐户，则甚至 30 天后仍可访问该用户的 OneDrive 中的内容。 <br/><br/> 在删除帐户之前，应该向其他用户授予OneDrive Outlook访问权限。 删除员工帐户后，其OneDrive Outlook内容将保留 **30** 天。 但是，在这 30 天内，您可以还原用户帐户并访问其内容。 如果还原用户帐户，OneDrive Outlook 30 天后仍可供你访问。 <br/> |
+|[步骤 5 - 擦除和阻止前员工的移动设备](remove-former-employee-step-5.md) <br/> |从手机或平板电脑删除业务数据。  <br/> |
 |[步骤 6 - 删除Microsoft 365员工的许可证](remove-former-employee-step-7.md) <br/> |移除许可证后，可将许可证分配给其他人。也可删除许可证，以便在聘用其他人员之前，无需为其付费。  <br/><br/> 移除或删除许可证时，用户的旧电子邮件、联系人和日历将保留 **30 days** ，然后永久删除。如果删除许可证但不删除其帐户，则在 30 天后仍可以访问该用户的 OneDrive 中的内容。  <br/> |
 |[步骤 7 - 删除以前员工的用户帐户](remove-former-employee-step-7.md) <br/> |这将从管理中心中删除帐户。 进行清除，保持干净。 <br/> |
 

@@ -1,8 +1,9 @@
 ---
 title: 文档理解概述
-ms.author: efrene
-author: efrene
+ms.author: chucked
+author: chuckedmonson
 manager: pamgreen
+ms.reviewer: ssquires
 audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -12,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: 获取 Microsoft SharePoint Syntex 中的文档理解概述。
-ms.openlocfilehash: 73e217e458fb9e1ccad8b64ffc81a6c9522a04f4
-ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
+ms.openlocfilehash: 7e5818a929fa0f4554a7ee4ece460b4fe0d691aa
+ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51222751"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52683819"
 ---
 # <a name="document-understanding-overview"></a>文档理解概述
 
@@ -48,16 +49,40 @@ ms.locfileid: "51222751"
 
 发布模型后，请使用内容中心将其应用到你有权访问的任何 SharePoint 文档库。  
 
-### <a name="file-limitations"></a>文件限制
+## <a name="file-limitations"></a>文件限制
 
 了解模型时，在通过光学字符识别 （OCR） 技术扫描 PDF、图像和 TIFF 文件时，包括当使用示例文件对模型进行训练时，以及针对文档库中的文件运行模型时。
 
-请注意以下差异，与 Microsoft Office 基于文本的文件和 OCR 扫描文件（PDF、图像或 TIFF）有关：
+请注意以下与 Microsoft Office 基于文本的文件和 OCR 扫描文件（PDF、图像或 TIFF）有关的差异：
 
-- Office 文件：我们截断 64，000 个字符（在培训中，当对文档库中的文件运行时）。
+- Office 文件：截断为 64,000 个字符（在培训中以及针对文档库中的文件运行时）。
+
 - OCR 扫描的文件：存在 20 个页面限制。  
 
-#### <a name="supported-file-types"></a>支持的文件类型
+### <a name="requirements"></a>要求
+
+OCR 处理最适用于满足下列要求的文档：
+
+- JPG、PNG 或 PDF 格式（文本或扫描）。 最好使用文本嵌入的 PDF，因为字符提取和位置中不会存在任何错误。
+
+- 如果 PDF 是密码锁定的，必须在提交前解除锁定。
+
+- 每个集合用于培训的文档合并文件大小不得超过 50 MB，并且 PDF 文档不能超过 500 页。
+
+- 对于图像，尺寸必须在 50 × 50 到 10,000 × 10,000 像素之间。
+   > [!NOTE]
+   > 具有非常宽或特殊尺寸（例如平面图）的图像可能在 OCR 过程中截断，并且会失去准确性。
+ 
+- 对于 PDF 文件，尺寸必须为最大 17 x 17 英寸，相当于 Legal 或 A3 纸张大小或更小。
+
+- 如果从纸质文档扫描，则扫描内容应为高质量图像。
+
+- 必须使用拉丁语字母（英文字符）。
+
+> [!NOTE]
+> AI 生成器当前不支持以下类型的表单处理输入数据：<br>- 复选框或单选按钮<br>- 签名<br>- 可填充的 PDF
+
+### <a name="supported-file-types"></a>支持的文件类型
 
 了解文档模型支持以下文件类型：
 

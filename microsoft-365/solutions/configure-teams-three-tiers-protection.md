@@ -22,18 +22,18 @@ ms.custom:
 ms.assetid: 1d51bd87-17bf-457c-b698-61821de3afa0
 recommendations: false
 description: 了解如何使用三层保护配置 Teams 以实现更好的文件共享安全性，从而平衡安全性和易于协作。
-ms.openlocfilehash: ab2dd4cbf2b9cfc7b285f049eeaa876371574202
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 34351b202575302e2929db48d7807b91e4308905
+ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52539211"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52683399"
 ---
 # <a name="configure-teams-with-three-tiers-of-protection"></a>配置具有三层保护的 Teams
 
 本系列中的文章为如何在 Microsoft Teams 中配置团队及其关联 SharePoint 网站以实现通过轻松协作权衡安全性的文件保护提供了相关建议。
 
-本文定义了四个不同的配置，首先介绍的是具有最开放的共享策略的公共团队。 每个额外配置均表示有意义的保护设置，对 Teams 中存储的文件的访问和协作限定为一组相关团队成员。 
+本文定义四个不同的配置，从具有最开放共享策略的公共团队开始。每一个附加配置意味着保护有意义的步骤，同时将团队中存储的文件的访问权限和协作功能减少到相关团队成员数量。 
 
 本文中的配置符合 Microsoft 针对数据、标识和设备的三层保护的建议：
 
@@ -117,6 +117,14 @@ ms.locfileid: "52539211"
 对于敏感层和高度敏感层，我们使用敏感度标签限制对 SharePoint 内容的访问。 Azure AD 条件访问提供很多用于确定用户如何访问 Microsoft 365 的选项，包括基于位置、风险、设备合规性和其他因素的限制。 建议阅读[什么是条件访问？](/azure/active-directory/conditional-access/overview)，并考虑哪些其他策略可能适用于你的组织。
 
 请注意，来宾通常没有你组织管理的设备。如果允许来宾进入任何层，请考虑他们将使用哪些设备访问团队和网站并相应地设置非托管设备策略。
+
+### <a name="control-device-access-across-microsoft-365"></a>控制跨 Microsoft 365 的设备访问
+
+在敏感度标签中的非托管设备设置仅影响 SharePoint 访问。 如果要将非托管设备的控制范围扩展到 SharePoint 之外，可以改为 [为组织安装的所有应用和服务创建 Azure Active Directory 条件访问策略](/azure/active-directory/conditional-access/howto-conditional-access-policy-compliant-device)。 若要专门为 [Microsoft 365 服务](/azure/active-directory/conditional-access/concept-conditional-access-cloud-apps#office-365) 配置此策略，请在“**云应用或操作**”下选择“**Office 365**”云应用。
+
+![Azure Active Directory 条件访问策略中 Office 365 云应用的屏幕截图](https://docs.microsoft.com/sharepoint/sharepointonline/media/azure-ca-office365-policy.png)
+
+使用影响所有 Microsoft 365 服务的策略可以为用户提供更好的安全性和更好的体验。 例如，当仅阻止访问 SharePoint 中非托管设备时，用户可以使用非托管设备访问团队中的聊天，但当用户尝试访问“**文件**”选项卡时将失去访问权限。使用 Office 365 云应用有助于避免 [服务依赖项](/azure/active-directory/conditional-access/service-dependencies) 的问题。
 
 ## <a name="next-step"></a>后续步骤
 

@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: ab5eb117-0f22-4fa7-a662-3a6bdb0add74
 description: 电子邮件转发允许您将发送到用户邮箱Microsoft 365电子邮件转发到组织内部或外部的另一个邮箱。
-ms.openlocfilehash: eb72204211a8eff929c024fbcede66dfe1f4b879
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: 1d16a44749b51b582b7198cb331edf7faf3cf1f8
+ms.sourcegitcommit: 4bcac4cb4f9399ebbd7c8cff0abb4d6ecedb731e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52635482"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "52698912"
 ---
 # <a name="configure-email-forwarding-in-microsoft-365"></a>配置电子邮件转发Microsoft 365
 
@@ -40,6 +40,8 @@ ms.locfileid: "52635482"
 ## <a name="configure-email-forwarding"></a>配置电子邮件转发
 
 在设置电子邮件转发之前，请注意以下事项：
+
+- 允许向远程域用户自动转发邮件。 有关详细信息 [，请参阅管理](/exchange/mail-flow-best-practices/remote-domains/manage-remote-domains) 远程域。
 
 - 设置电子邮件转发后，只会转发发送到从邮箱发送的新电子邮件。 
 
@@ -104,4 +106,3 @@ ms.locfileid: "52635482"
 [Create a shared mailbox (](../email/create-a-shared-mailbox.md) article) \
 [从不同地址发送电子邮件， (](https://support.microsoft.com/office/ccba89cb-141c-4a36-8c56-6d16a8556d2e) 文章) \
 [更改用户名称和电子邮件地址 (](../add-users/change-a-user-name-and-email-address.md) 文章) 
-
