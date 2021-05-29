@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 ms.assetid: 5b4ba843-24b8-4526-8e1f-f9b9eab89d06
 description: 了解 Microsoft 365 商业标准版 和 Microsoft 365 商业高级版 的区别以及如何升级到 Microsoft 365 商业高级版。
-ms.openlocfilehash: 1f38270c9acb6b803d16bb842140cc6df9cee768
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 0968b877820590987f6f3ceca3efbd106b62cbd1
+ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51578299"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "52705482"
 ---
 # <a name="upgrade-to-microsoft-365-business-premium-from-microsoft-365-business-standard"></a>从Microsoft 365 商业高级版升级到Microsoft 365 商业标准版
 
@@ -46,7 +46,7 @@ ms.locfileid: "51578299"
 
 我们已将这两个计划的并行比较添加到"服务说明"Microsoft 365 商业高级版[比较](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-business-service-description)。 
 
-## <a name="before-you-get-started"></a>在开始使用之前
+## <a name="before-you-begin"></a>准备工作
 
 - **应何时选择升级？** 当您想要升级分配给单个计划的所有用户时，升级是正确选择。 选择升级时，所有计划用户同时切换到另一个计划。 如果不希望升级分配到单个计划的每个人，请购买新计划的 (（本例中为 Microsoft 365 商业高级版) ）的许可证，并将这些许可证分别分配给要升级的每个用户。 [](../admin/manage/assign-licenses-to-users.md)
 

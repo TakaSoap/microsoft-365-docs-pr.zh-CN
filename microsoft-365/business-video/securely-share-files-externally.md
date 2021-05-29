@@ -19,15 +19,17 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: 了解如何在外部安全地共享业务文件。
-ms.openlocfilehash: 317267b4051b4e250cf53f2fbc375b9277c7d000
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+description: 了解如何通过安全链接安全地将业务文件共享给组织外部人员。
+ms.openlocfilehash: 17875dc403c96caac55a5487cf5649d6778ec160
+ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51578671"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "52705578"
 ---
 # <a name="securely-share-files-externally"></a>在外部安全地共享文件
+
+## <a name="watch-securely-share-files-outside-your-organization"></a>观看：安全地在组织外部共享文件
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE22Yf0?autoplay=false]
 

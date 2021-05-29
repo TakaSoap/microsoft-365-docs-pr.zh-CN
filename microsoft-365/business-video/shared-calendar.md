@@ -20,14 +20,16 @@ search.appverid:
 - MET150
 - MOE150
 description: 了解如何创建共享日历。
-ms.openlocfilehash: 21b594d1d5f28cc38c907cb8e85085a296ef20b8
-ms.sourcegitcommit: aff2331f9a3f22591f8ace1a646809969d28c120
+ms.openlocfilehash: cbc84523b52b7a38e25a35670abf6758a73d0a70
+ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52464350"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "52705638"
 ---
 # <a name="create-a-shared-calendar"></a>创建共享日历
+
+## <a name="watch-create-a-shared-calendar"></a>观看：创建共享日历
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FYWm?autoplay=false]
 
@@ -43,8 +45,6 @@ ms.locfileid: "52464350"
 
 ## <a name="related-content"></a>相关内容
 
-[管理日历和联系人Outlook (](https://support.microsoft.com/office/manage-your-calendar-and-contacts-in-outlook-631a182a-21e0-4e41-8fa2-0d83e55da02d)文章) 
-
-[电子邮件协作](../admin/email/email-collaboration.md) (文章) 
-
+[管理日历和联系人Outlook (](https://support.microsoft.com/office/manage-your-calendar-and-contacts-in-outlook-631a182a-21e0-4e41-8fa2-0d83e55da02d)文章) \
+[电子邮件协作](../admin/email/email-collaboration.md) (文章) \
 [管理中心Microsoft 365概述 (](admin-center-overview.md)文章) 
