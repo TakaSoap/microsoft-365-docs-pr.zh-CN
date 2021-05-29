@@ -27,12 +27,12 @@ ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: 本文中，管理员可了解 defender 保险箱链接保护，Office 365保护组织免受使用恶意 URL 的网络钓鱼和其他攻击。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 407f04685e41269c0e8436d3b68db7d755fce129
-ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
+ms.openlocfilehash: 675de13410ac98e18a8b72125c2226d2c9c62821
+ms.sourcegitcommit: 4bcac4cb4f9399ebbd7c8cff0abb4d6ecedb731e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/21/2021
-ms.locfileid: "52593565"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "52698984"
 ---
 # <a name="safe-links-in-microsoft-defender-for-office-365"></a>保险箱Microsoft Defender for Office 365
 
@@ -74,7 +74,7 @@ ms.locfileid: "52593565"
   - [保险箱链接设置Microsoft Teams](#safe-links-settings-for-microsoft-teams)
   - [链接策略中的"不重写保险箱 URL"](#do-not-rewrite-the-following-urls-lists-in-safe-links-policies)
 
-- **全局保险箱链接设置**：这些设置是全局配置的，而不是在保险箱策略中配置的。 但是，这些设置仅适用于活动"链接"策略保险箱用户。 这些设置包括：
+- **全局保险箱链接设置**：这些设置是全局配置的，而不是在保险箱策略中配置的。 这些设置包括：
 
   - [保险箱应用的链接Office 365设置](#safe-links-settings-for-office-365-apps)
   - [链接的"阻止以下 URL"保险箱列表](#block-the-following-urls-list-for-safe-links)
