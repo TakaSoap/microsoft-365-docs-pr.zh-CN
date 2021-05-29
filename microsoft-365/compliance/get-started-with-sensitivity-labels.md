@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 已准备好部署敏感度标签以帮助保护组织的数据，但不确定从哪里开始？ 请阅读一些可帮助你使用标签的实用指导。
-ms.openlocfilehash: 2e757f7f07dbb911a8d89890b1f1cce80d7247b5
-ms.sourcegitcommit: 58d74ff60303a879e35d112f10f79724ba41188f
+ms.openlocfilehash: c87289fc7017e75db3b8a5b84a8af3a42dc16a10
+ms.sourcegitcommit: 82a4d74020cd93ba444006317cfecc178c6d41dc
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52302108"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52689117"
 ---
 # <a name="get-started-with-sensitivity-labels"></a>开始使用敏感度标签
 
@@ -102,7 +102,7 @@ ms.locfileid: "52302108"
 - 有关内置标签: **了解更多** 菜单选项。
 - 有关 Azure 信息保护统一标签客户端: **帮助和反馈** 菜单选项 > Microsoft Azure 信息保护对话框中的 **了解更多** 链接。
 
-为了帮助编写自定义文档，请参见以下博客文章，以获取可用于培训用户和推动采用率的下载软件包： [M365中灵敏度标签的最终用户培训 – 如何加速采用](https://techcommunity.microsoft.com/t5/microsoft-security-and/end-user-training-for-sensitivity-labels-in-m365-how-to/ba-p/1750880)。 
+为帮助提供自定义文档，请参阅以下页面并下载可用于帮助培训用户的内容：[敏感度标签的最终用户培训](https://microsoft.github.io/ComplianceCxE/enduser/sensitivity/)。 
 
 此外，还可使用以下资源来获取基本说明：
 

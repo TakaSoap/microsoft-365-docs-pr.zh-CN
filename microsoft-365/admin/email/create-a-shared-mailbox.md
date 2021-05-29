@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: 871a246d-3acd-4bba-948e-5de8be0544c9
 description: 创建共享邮箱，让企业中的多名人员分担查看和答复发送到同一地址的电子邮件的责任。
-ms.openlocfilehash: e628d72482ed7ff32a204eaf9503fdd9a271844a
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: 35f1de41094c6bf3f806b3e8e01c0a67949c491e
+ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52635494"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52683243"
 ---
 # <a name="create-a-shared-mailbox"></a>创建共享邮箱 
 
@@ -116,42 +116,26 @@ ms.locfileid: "52635494"
 
 1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。
 
-2. 在用户帐户列表中，找到共享邮箱的帐户（例如，将筛选器更改为“**未经授权的用户**”）。
-
-3. 选择该用户以打开其属性窗格，然后 选择“**阻止此用户**”图标 ![“阻止此用户”图标的屏幕截图](../../media/block-user-icon.png)。
-
-   **注意**：如果已阻止该帐户，则将在顶部显示“**已阻止登录**”，并且图标将显示“**取消阻止此用户**”。
-
-4. 在“**阻止此用户?**”窗格中，选择“**阻止用户登录**”，然后选择“**保存更改**”。
-
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">活动用户</a>”页面。
-
-2. 在用户帐户列表中，找到共享邮箱的帐户（例如，将视图更改为“**未经授权的用户**”），然后选择该帐户。
-
-3. 在“属性”浮出控件中，选择“**阻止登录**”。
-
-    **注意：** 如果已阻止该帐户，该按钮将显示“**取消阻止登录**”。
-
-4. 在“**登录状态**”浮出控件中，验证确定已选择“阻止用户登录”，选择“**保存**”，然后选择“**关闭**”。
+1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">活动用户</a>”页面。
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">活动用户</a>”页面。
-
-2. 在用户帐户列表中，找到共享邮箱的帐户（例如，将视图更改为“**未经授权的用户**”），然后选择该帐户。
-
-3. 在“属性”浮出控件中，选择“**阻止登录**”。
-
-    **注意：** 如果已阻止该帐户，该按钮将显示“**取消阻止登录**”。
-
-4. 在“**登录状态**”浮出控件中，验证确定已选择“阻止用户登录”，选择“**保存**”，然后选择“**关闭**”。
+1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">活动用户</a>”页面。
 ::: moniker-end
+
+1. 在用户帐户列表中，找到共享邮箱的帐户（例如，将筛选器更改为“**未经授权的用户**”）。
+
+1. 选择该用户以打开其属性窗格，然后 选择“**阻止此用户**”图标 ![“阻止此用户”图标的屏幕截图](../../media/block-user-icon.png)。
+
+   **注意**：如果已阻止该帐户，则将在顶部显示“**已阻止登录**”，并且图标将显示“**取消阻止此用户**”。
+
+1. 在“**阻止此用户?**”窗格中，选择“**阻止用户登录**”，然后选择“**保存更改**”。
 
 有关如何使用 Azure AD PowerShell 阻止登录帐户（包括同时登录多个帐户）的说明，请参阅 [使用 Office 365 PowerShell 阻止用户帐户](../../enterprise/block-user-accounts-with-microsoft-365-powershell.md)。
 
@@ -173,7 +157,6 @@ ms.locfileid: "52635494"
 
 - <a href="https://support.microsoft.com/office/b0963400-2a51-4c64-afc7-b816d737d164" target="_blank">向共享邮箱添加规则</a>
 
-
 ## <a name="use-a-shared-mailbox-on-a-mobile-device-phone-or-tablet"></a>在移动设备（手机或平板电脑）上使用共享邮箱
 
 可采用下列两种方式在移动设备上访问共享邮箱：
@@ -190,7 +173,7 @@ ms.locfileid: "52635494"
 
 ## <a name="use-the-shared-calendar"></a>使用共享日历
 
-创建共享邮箱时，会自动创建共享日历。 我们希望使用共享邮箱日历（而不是 SharePoint 日历）来跟踪约会和位置。 共享日历与 Outlook 集成，与 SharePoint 日历相比更易于使用。
+当你创建共享邮箱的时候，会自动创建共享日历。我们希望使用共享邮箱日历（而不是 SharePoint 日历）来跟踪约会和位置。共享日历与 Outlook 集成，并且比 SharePoint 日历更易于创建和使用。
 
 1. 在 Outlook 应用中，转到日历视图，然后选择共享邮箱。
 

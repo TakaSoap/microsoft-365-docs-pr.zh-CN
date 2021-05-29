@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 已准备好实现保留策略和保留标签来管理组织的数据，但不确定从哪里入手？请阅读一些实用指南来入门。
-ms.openlocfilehash: b39f6246fc9265319e0d4e5b053db6dfddc0d43a
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: bd3ed5e354ee80831cb1af073b6da6f277418b51
+ms.sourcegitcommit: 82a4d74020cd93ba444006317cfecc178c6d41dc
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244584"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52689033"
 ---
 # <a name="get-started-with-retention-policies-and-retention-labels"></a>开始使用保留策略和保留标签
 
@@ -88,4 +88,4 @@ ms.locfileid: "52244584"
 
 由于保留标签在 Microsoft 365 应用中具有 UI 状态，因此在将标签部署到生产网络之前，请确保为最终用户和技术支持人员提供指导。 要帮助用户在 SharePoint 和 OneDrive 中应用保留标签，请参阅[将保留标签应用于 SharePoint 或 OneDrive 中的文件](https://support.microsoft.com/office/apply-retention-labels-to-files-in-sharepoint-or-onedrive-11a6835b-ec9f-40db-8aca-6f5ef18132df)。
 
-不过，最有效的最终用户文档将是你针对所选保留标签名称和配置提供的定制指南和说明。 请参阅以下博客文章，获取可用于培训用户和提高采用率的下载软件包：[最终用户培训：M365 中的保留标签 – 如何提高采纳速度](https://techcommunity.microsoft.com/t5/microsoft-security-and/end-user-training-for-retention-labels-in-m365-how-to-accelerate/ba-p/1750861)。
+不过，最有效的最终用户文档将是你针对所选保留标签名称和配置提供的定制指南和说明。 请参阅以下页面，并下载可用于帮助培训用户的内容：[有关保留标签的最终用户培训](https://microsoft.github.io/ComplianceCxE/enduser/retention/)。
