@@ -66,6 +66,8 @@
       href: billing-and-payments/change-your-billing-addresses.md
     - name: 关于付款服务指令 2 和强客户身份验证
       href: billing-and-payments/psd2.md
+    - name: 请求在账户上支付预扣税款
+      href: billing-and-payments/withholding-tax-credit-global.md
 - name: 计费帐户
   items:
     - name: 了解计费帐户
