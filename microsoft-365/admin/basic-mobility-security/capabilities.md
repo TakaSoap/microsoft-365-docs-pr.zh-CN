@@ -18,16 +18,16 @@ ms.custom:
 search.appverid:
 - MET150
 description: 基本移动性和安全性可以帮助您保护和管理移动设备。
-ms.openlocfilehash: 60de4e3f36427a69ecf0bf52e5dfd34f089991f3
-ms.sourcegitcommit: f000358c01a8006e5749a86b256300ee3a73174c
+ms.openlocfilehash: 41df5bfba7362d9c2b3a47deca4e4586902bbd98
+ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2021
-ms.locfileid: "51994969"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "52706174"
 ---
 # <a name="capabilities-of-basic-mobility-and-security"></a>基本移动性和安全性的功能
 
-基本移动性和安全性可帮助你保护和管理组织中授权 Microsoft 365 用户使用的移动设备，如 iPhone、iPad、Android 和 Windows Phones。 可以使用可帮助控制对组织的 Microsoft 365 电子邮件和文档的访问（对于受支持的移动设备和应用）的设置创建移动设备管理策略。 如果设备丢失或被盗，你可以远程擦除设备以删除敏感的组织信息。
+基本移动性和安全性可帮助你保护和管理组织中许可的 Microsoft 365 用户使用的移动设备，如 iPhone、iPad、Android 和 Windows 电话。 可以使用可帮助控制对组织的电子邮件和文档的访问权限的设置创建移动设备管理策略Microsoft 365受支持的移动设备和应用的文档。 如果设备丢失或被盗，你可以远程擦除设备以删除敏感的组织信息。
 
 ## <a name="supported-devices"></a>支持的设备
 
@@ -39,49 +39,49 @@ ms.locfileid: "51994969"
 
 - Windows 8.1<sup>1</sup>
 
-- Windows 8.1 RT<sup>1</sup>
+- Windows 8.1RT<sup>1</sup>
 
 - Windows 10<sup>2</sup>
 
-- Windows 10 移动<sup>版 2</sup>
+- Windows 10 移动版<sup>2</sup>
 
-<sup>1</sup>Windows 8.1 RT 设备的访问控制仅限于Exchange ActiveSync。
+<sup>1</sup>RT Windows 8.1的访问控制仅限于Exchange ActiveSync。
 
-<sup>2</sup>Windows 10 的访问控制需要包含 Azure AD Premium 的订阅，并且设备需要加入到 Azure Active Directory。
+<sup>2</sup>Windows 10访问控制需要包含 Azure AD 高级版且设备需要加入到 Azure Active Directory。
 
 <sup>3</sup>2020 年 6 月之后，超过 9 的 Android 版本无法管理密码设置，但 Samsung Knox 设备上除外。
 
 >[!NOTE]
 >已注册较早操作系统版本的设备仍可以继续运行，尽管这些功能可能会在不另行通知的情况下更改。
 
-如果你的组织中人员使用的移动设备不受基本移动性和安全性支持，你可能希望阻止 Exchange ActiveSync 应用访问这些设备的 Microsoft 365 电子邮件，以帮助使组织的数据更安全。 有关阻止访问Exchange ActiveSync，请参阅基本移动性和安全性中的管理 [设备访问设置](manage-device-access-settings.md)。
+如果组织成员使用的移动设备不受基本移动性和安全性支持，你可能希望阻止 Exchange ActiveSync 应用访问这些设备的 Microsoft 365 电子邮件，以帮助使组织的数据更安全。 有关阻止访问Exchange ActiveSync，请参阅基本移动性和安全性中的管理[设备访问设置](manage-device-access-settings.md)。
 
-## <a name="access-control-for-microsoft-365-email-and-documents"></a>Microsoft 365 电子邮件和文档的访问控制
+## <a name="access-control-for-microsoft-365-email-and-documents"></a>电子邮件Microsoft 365文档的访问控制
 
-下表中支持的不同类型的移动设备的应用提示用户注册基本移动性和安全性，其中存在适用于用户设备且用户之前尚未注册该设备的新移动设备管理策略。 如果用户的设备不符合策略，具体取决于策略的设置方式，用户可能会被阻止访问这些应用中的 Microsoft 365 资源，或者他们可能具有访问权限，但 Microsoft 365 报告违反策略。
+下表中支持的不同类型的移动设备的应用提示用户注册基本移动性和安全性，其中存在适用于用户设备且用户之前尚未注册该设备的新移动设备管理策略。 如果用户的设备不符合策略，则根据策略的设置方式，可能会阻止用户访问这些应用中的 Microsoft 365 资源，或者他们可能具有访问权限，但 Microsoft 365 报告违反策略。
 
 |**产品**|**iOS 10.0 或更高版本**|**Android 5.0 或更高版本**|
 |:-----|:-----|:-----|
-|**Exchange** Exchange ActiveSync内置电子邮件和第三方应用（如 TouchDown）使用 Exchange ActiveSync 14.1 或更高版本。 |邮件 |电子邮件 |
+|**Exchange Exchange ActiveSync** 内置电子邮件和第三方应用（如 TouchDown）使用 Exchange ActiveSync 14.1 或更高版本。 |邮件 |电子邮件 |
 |**Office**  和  **OneDrive for Business** |Outlook </br>OneDrive </br>Word </br>Excel </br>PowerPoint|**在手机和平板电脑上**：<br/>Outlook <br/> OneDrive <br/> Word <br/> Excel <br/> PowerPoint <br/> **仅在电话上：** <br/> Office Mobile |
 
 >[!NOTE]
-- >支持 iOS 10.0 及更高版本包括 iPhone 和 iPad 设备。
+- >对 iOS 10.0 及更高版本的支持包括iPhone和iPad设备。
 - >基本安全性和移动性不支持管理 BlackBerry 操作系统设备。 使用 BlackBerry 商业云服务 (BBCS) 管理 BlackBerry 操作系统设备。 运行 Android 操作系统的 Blackberry 设备作为标准 Android 设备受到支持
 - >如果用户使用移动浏览器访问 Microsoft 365 SharePoint 网站、Office Online 中的文档或 Outlook Web App 中的电子邮件，将不会提示用户注册，也不会被阻止或报告违反策略。
 
-下图显示了当具有新设备的用户登录支持具有基本移动性和安全性的访问控制的应用时会发生什么情况。 用户被阻止访问应用中的 Microsoft 365 资源，直到用户注册其设备。
+下图显示了当具有新设备的用户登录支持具有基本移动性和安全性的访问控制的应用时会发生什么情况。 阻止用户访问应用中Microsoft 365资源，直到用户注册其设备。
 
 :::image type="content" source="../../media/basic-mobility-security/bms-1-access-control.png" alt-text="基本移动性和安全性访问控制":::
 
 > [!NOTE]
-> 在 Microsoft 365 商业标准的基本移动性和安全性中创建的策略和访问规则将Exchange ActiveSync Exchange 管理中心中创建的移动设备邮箱策略和设备访问规则。 在 Microsoft 365 商业标准版的基本移动性和安全性中注册设备后，将忽略应用于该设备的任何 Exchange ActiveSync 移动设备邮箱策略或设备访问规则。 若要了解有关 exchange online Exchange ActiveSync，请参阅 [Exchange ActiveSync Exchange Online。](/exchange/clients-and-mobile-in-exchange-online/exchange-activesync/exchange-activesync)
+> 在基本移动性和安全性 for Microsoft 365 商业标准版 中创建的策略和访问规则Exchange ActiveSync移动设备邮箱策略和在 Exchange 管理中心中创建的设备访问规则。 在设备注册基本移动性和安全性 for Microsoft 365 商业标准版 后，Exchange ActiveSync应用于该设备的任何移动设备邮箱策略或设备访问规则都将被忽略。 若要详细了解Exchange ActiveSync，请参阅 Exchange ActiveSync [中的Exchange Online。](/exchange/clients-and-mobile-in-exchange-online/exchange-activesync/exchange-activesync)
 
 ## <a name="policy-settings-for-mobile-devices"></a>移动设备的策略设置
 
-如果创建阻止访问的策略，但某些设置已打开，则当用户使用 Microsoft 365 电子邮件和文档的访问控制中列出的受支持应用时，将阻止用户访问 [Microsoft 365 资源](capabilities.md)。 
+如果创建策略来阻止访问，但某些设置已打开，则当用户使用[Microsoft 365](capabilities.md)电子邮件和文档的访问控制中列出的受支持应用时，将阻止用户访问 Microsoft 365 资源。 
 
-以下部分包含可阻止用户访问 Microsoft 365 资源的设置：
+以下部分包含可阻止用户访问Microsoft 365资源的设置：
 
 - 安全性
 
@@ -91,11 +91,11 @@ ms.locfileid: "51994969"
 
 - 托管电子邮件配置文件  
 
-例如，下图显示了当已注册设备的用户不符合适用于其设备的移动设备管理策略中的安全设置时会发生什么情况。 用户登录支持具有基本移动性和安全性的访问控制的应用。 在设备符合安全设置之前，将阻止他们访问应用中的 Microsoft 365 资源。
+例如，下图显示了当已注册设备的用户不符合适用于其设备的移动设备管理策略中的安全设置时会发生什么情况。 用户登录支持具有基本移动性和安全性的访问控制的应用。 在设备符合Microsoft 365要求之前，将阻止他们访问应用中的 Microsoft 365 资源。
 
 :::image type="content" source="../../media/basic-mobility-security/bms-2-device-not-compliant.png" alt-text="基本移动性和安全性合规性消息":::
 
-以下部分列出了可用于帮助保护和管理连接到 Microsoft 365 组织资源的移动设备的策略设置。
+以下各节列出了可用于帮助保护和管理连接到组织资源的移动设备Microsoft 365设置。
 
 ## <a name="security-settings"></a>安全设置
 
@@ -140,8 +140,8 @@ ms.locfileid: "51994969"
 |阻止云备份 |是|否|否|
 |阻止文档同步 |是|否|否|
 |阻止照片同步  |是|否|否|
-|允许 Google 备份  |不适用|否|是|
-|允许 Google 帐户自动同步  |不适用|否|是|
+|允许 Google 备份  |无|否|是|
+|允许 Google 帐户自动同步  |无|否|是|
 
 ## <a name="system-settings"></a>系统设置
 
@@ -185,11 +185,11 @@ ms.locfileid: "51994969"
 |SystemSecurityTLS  |是|否|
 |WLANEnabled  |否|否|
 
-## <a name="settings-supported-by-windows"></a>Windows 支持的设置
+## <a name="settings-supported-by-windows"></a>设置支持Windows
 
-可以通过将 Windows 10 设备注册为移动设备来管理它们。 部署适用的策略后，使用 Windows 10 设备的用户在首次使用内置电子邮件应用访问其 Microsoft 365 电子邮件 (需要 Azure AD Premium 订阅) 时，需要注册基本移动性和安全性。
+可以通过将Windows 10注册为移动设备来管理这些设备。 部署适用的策略后，使用 Windows 10 设备的用户在首次使用内置电子邮件应用访问 Microsoft 365 电子邮件 (时，需要注册基本移动性和安全性) 。
 
-注册为移动设备的 Windows 10 设备支持以下设置。 此设置不会阻止用户访问 Microsoft 365 资源。
+注册为移动设备Windows 10设备支持以下设置。 此设置不会阻止用户访问Microsoft 365资源。
 
 ### <a name="security-settings"></a>安全设置
 
@@ -206,7 +206,7 @@ ms.locfileid: "51994969"
 - 记住密码历史记录并阻止重复使用
 
 >[!NOTE]
->以下设置管理密码仅控制本地 Windows 帐户。 通过加入域或 Azure Active Directory 提供的 Windows 帐户不受这些设置的影响。
+>以下设置管理密码仅控制本地Windows帐户。 Windows域或用户提供的Azure Active Directory帐户不受这些设置的影响。
 
 ### <a name="system-settings"></a>系统设置
 
@@ -234,12 +234,11 @@ ms.locfileid: "51994969"
 
 ## <a name="remotely-wipe-a-mobile-device"></a>远程擦除移动设备
 
-如果设备丢失或被盗，可以通过从安全与合规中心 > 数据丢失防护设备管理 执行擦除来删除敏感的组织数据，并帮助阻止访问 Microsoft 36 & 5 **组织**  >  **资源**。 你可以执行选择性擦除以仅删除组织数据，也可以执行完全擦除，以从设备中删除所有信息，并还原到其出厂设置。
+如果设备丢失或被盗，可以通过从安全与合规中心 > 数据丢失防护设备管理 执行擦除来删除敏感的组织数据，并帮助阻止访问 Microsoft 365 & 组织  >  **资源**。 你可以执行选择性擦除以仅删除组织数据，也可以执行完全擦除，以从设备中删除所有信息，并还原到其出厂设置。
 
 有关详细信息，请参阅 [Basic Mobility and Security](wipe-mobile-device.md)中的擦除移动设备。
 
-## <a name="related-topics"></a>相关主题
+## <a name="related-content"></a>相关内容
 
-[Microsoft 365 的基本移动性和安全性概述](overview.md)
-
-[在基本移动性和安全性中创建设备安全策略](create-device-security-policies.md)
+[Microsoft 365 (](overview.md) Overview of Basic Mobility and Security for) \
+[Create device security policies in Basic Mobility and Security](create-device-security-policies.md) (article) 

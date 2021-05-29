@@ -19,15 +19,17 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: 了解如何注册Microsoft 365 商业高级版。
-ms.openlocfilehash: dcc6fd42b2aab073e027135cb5e939867b2bdc9d
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+description: 了解如何注册之前称为Microsoft 365 商业高级版 (的Microsoft 365 商业版) 。
+ms.openlocfilehash: 998c1ad6a7ed30adb0d6beb9ebb7762dec8a8485
+ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51578611"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "52706482"
 ---
 # <a name="sign-up-for-microsoft-365-business-premium-subscription"></a>注册 Microsoft 365 商业高级版 订阅
+
+## <a name="watch-sign-up-for-microsoft-365-business-premium"></a>观看：注册Microsoft 365 商业高级版
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3znhX?autoplay=false]
 

@@ -21,12 +21,12 @@ ms.custom:
 search.appverid: MET150
 description: 了解如何通过进入"你的产品"页面来验证你的组织拥有哪些订阅。
 ms.date: 01/21/2021
-ms.openlocfilehash: c33ba799880e6c687a08c2d49b17cbae8e80552c
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: b0f5f11f34ec4cf84648709ae5557bc5f637a55f
+ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52535886"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "52706294"
 ---
 # <a name="what-subscription-do-i-have"></a>我有什么订阅？
 
@@ -41,10 +41,7 @@ ms.locfileid: "52535886"
 
 ## <a name="related-content"></a>相关内容
   
-[订阅和计费 (](../../commerce/index.yml) 链接) 
-
-[查看帐单或发票](../../commerce/billing-and-payments/view-your-bill-or-invoice.md) (文章) 
-
-[支付订阅费用](../../commerce/billing-and-payments/pay-for-your-subscription.md) (文章) 
-
+[订阅和计费 (](../../commerce/index.yml) 链接) \
+[查看帐单或发票](../../commerce/billing-and-payments/view-your-bill-or-invoice.md)（文章）\
+[支付订阅费用](../../commerce/billing-and-payments/pay-for-your-subscription.md) (文章) \
 [更改帐单邮寄地址](../../commerce/billing-and-payments/change-your-billing-addresses.md) (文章) 

@@ -20,15 +20,17 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: 了解如何更改用户名或电子邮件地址。
-ms.openlocfilehash: 0f2a378cccf2def9cd951483b23a11c2a414607d
-ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
+description: 了解如何通过更改用户名或电子邮件地址来更改显示名称、别名或电子邮件地址。
+ms.openlocfilehash: e012923ebe12a04b07c9236f5ebbd30623cd2dd5
+ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51903726"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "52706414"
 ---
 # <a name="change-a-users-name-or-email-address"></a>更改用户名或电子邮件地址
+
+## <a name="watch-change-a-users-name-or-email-address"></a>观看：更改用户的姓名或电子邮件地址
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1SJuc?autoplay=false]
 
@@ -63,4 +65,6 @@ ms.locfileid: "51903726"
 
 ## <a name="related-content"></a>相关内容
 
-[向其他用户](https://docs.microsoft.com/microsoft-365/admin/add-users/give-mailbox-permissions-to-another-user) 授予邮箱权限 (文章) [将](https://docs.microsoft.com/microsoft-365/admin/email/convert-user-mailbox-to-shared-mailbox) 用户邮箱转换为共享邮箱 (文章) [用户电子邮件](https://docs.microsoft.com/microsoft-365/admin/email/office-365-user-email-settings) () 
+[向其他用户授予](../admin/add-users/give-mailbox-permissions-to-another-user.md) 邮箱权限 (文章) \
+[将用户邮箱转换为共享邮箱](../admin/email/convert-user-mailbox-to-shared-mailbox.md)（文章）\
+[用户电子邮件设置](../admin/email/office-365-user-email-settings.md) (文章) 

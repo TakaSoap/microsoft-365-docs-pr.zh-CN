@@ -20,14 +20,16 @@ search.appverid:
 - MET150
 - MOE150
 description: 了解如何在团队中以来宾Microsoft Teams。
-ms.openlocfilehash: 0260365e8a064dd96cda75c9becf9f82bc6871a3
-ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
+ms.openlocfilehash: 04ee1a32e63c6cbff1f6352362ed04b06a9791fa
+ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51903714"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "52706234"
 ---
 # <a name="join-a-team-as-a-guest"></a>作为来宾加入团队
+
+## <a name="watch-join-a-team-as-a-guest"></a>观看：作为来宾加入团队
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4tyys?autoplay=false]
 
@@ -47,8 +49,10 @@ ms.locfileid: "51903714"
     如果你已在组织中使用 Teams应用作为来宾加入团队，则非常简单。
 
 1. 只需打开Microsoft Teams应用 **，然后选择"** 是"以切换到受邀加入的团队。  现在，您可以协作处理 Teams。
-2. 若要切换回公司的团队，请从"组织"下拉列表  **中选择**  它。
+1. 若要切换回公司的团队，请从"组织"下拉列表  **中选择**  它。
 
 ## <a name="related-content"></a>相关内容
 
-[](https://docs.microsoft.com/microsoftteams/guest-experience) Teams (文章) [管理](https://docs.microsoft.com/microsoftteams/enable-features-office-365)组织的 Microsoft Teams 设置 (文章) 使用来宾访问和外部访问与组织外部人员进行[协作 (文章](https://docs.microsoft.com/microsoftteams/communicate-with-users-from-other-organizations)) 
+[Teams (](/microsoftteams/guest-experience)中的来宾) \
+[管理Microsoft Teams组织设置 (](/microsoftteams/enable-features-office-365)文章) \
+[使用来宾访问和外部访问与组织外部人员](/microsoftteams/communicate-with-users-from-other-organizations) 进行协作 (文章) 

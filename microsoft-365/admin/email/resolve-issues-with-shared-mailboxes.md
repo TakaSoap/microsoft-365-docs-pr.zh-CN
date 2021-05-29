@@ -21,13 +21,13 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: 如果遇到共享邮箱问题，请尝试这些解决方案。
-ms.openlocfilehash: ba62db76edff6e4ab3d738ed0af8db2a40c18394
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+description: 设置共享邮箱时可能会出错。 如果遇到共享邮箱问题，请尝试这些解决方案。
+ms.openlocfilehash: 89cdfbe29ab035b1eb6c3a0183629eef59d67477
+ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49926482"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "52706126"
 ---
 # <a name="resolve-issues-with-shared-mailboxes"></a>解决共享邮箱问题
 
@@ -50,17 +50,13 @@ ms.locfileid: "49926482"
 
 当用户遇到Microsoft 365延迟问题时，将出现此消息。 在一小时左右的时间，当有关新共享邮箱或已添加 (用户邮箱的信息) 我们的所有数据中心进行复制时，该邮箱应该会消失。 等待一小时，然后再次尝试发送邮件。
 
-## <a name="related-articles"></a>相关文章
+## <a name="related-content"></a>相关内容
 
-[关于共享邮箱](about-shared-mailboxes.md)
-
-[创建共享邮箱](create-a-shared-mailbox.md)
-
-[配置共享邮箱](configure-a-shared-mailbox.md)
-
-[将用户邮箱转换为共享邮箱](convert-user-mailbox-to-shared-mailbox.md)
-
-[从共享邮箱删除许可证](remove-license-from-shared-mailbox.md)
+[关于共享邮箱](about-shared-mailboxes.md)（文章）\
+[Create a shared mailbox (](create-a-shared-mailbox.md) article) \
+[配置共享邮箱](configure-a-shared-mailbox.md)（文章）\
+[将用户邮箱转换为共享邮箱](convert-user-mailbox-to-shared-mailbox.md)（文章）\
+[从共享邮箱删除许可证](remove-license-from-shared-mailbox.md)（文章）
 
 
     

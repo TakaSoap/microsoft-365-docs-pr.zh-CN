@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 1b45c82f-26c8-44fb-9f3b-b45436fe2271
 description: 了解如何使用合规性边界创建逻辑边界，以控制电子数据展示管理员可在 Microsoft 365 中搜索的用户内容位置。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 8b19347ad8e1c87d5b66cb49ed2af152b4765c37
-ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
+ms.openlocfilehash: 02e2e2f048ab521ad5640003cb127ed7bfa19641
+ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "52311912"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "52706602"
 ---
 # <a name="set-up-compliance-boundaries-for-ediscovery-investigations"></a>设置电子数据展示调查的合规性边界
 
@@ -288,6 +288,8 @@ New-ComplianceSecurityFilter -FilterName "Coho Winery Hub Site Security Filter" 
 - 合规性边界不适用于电子数据展示事例中的保留。 这意味着一个公司中的电子数据展示管理者可以将用户放在不同的公司中保留。 但是，如果电子数据展示管理器搜索已保留用户的内容位置，将实施合规性边界。 这意味着电子数据展示管理器无法搜索用户的内容位置，即使他们能够保留用户。
 
     此外，保留统计信息仅适用于公司中的内容位置。
+
+- 如果您分配了搜索权限筛选器 (邮箱或网站筛选器) 并且您尝试导出包含组织中所有 SharePoint 网站的搜索的未索引项目，您将收到以下错误消息： `Unable to execute the task. Reason: The scope options UnindexedItemsOnly or BothIndexedandUnindexedItems are not allowed when the executing user has a compliance security filter applied` 。 如果分配了搜索权限筛选器，并且希望从 SharePoint 导出未索引的项目，您必须重新运行搜索并包括要搜索的特定 SharePoint 网站。 否则，只能从包含所有网站索引项的搜索中导出SharePoint项。 有关导出搜索结果时的选项的详细信息，请参阅导出 [内容搜索结果](export-search-results.md#step-1-prepare-search-results-for-export)。
 
 - 搜索权限筛选器未应用于 Exchange 公用文件夹。
 

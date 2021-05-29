@@ -18,12 +18,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: 使用基本移动性和安全性设置设备安全策略和访问规则。
-ms.openlocfilehash: e74a5df6d10f8f3fb7b420e428380af97ba75597
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 37be420a4b9499da3d1290b8b6a898b9fcb09c5b
+ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50906248"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "52706306"
 ---
 # <a name="overview-of-basic-mobility-and-security-for-microsoft-365"></a>基本移动性和安全性概述Microsoft 365
 
@@ -59,12 +59,9 @@ ms.locfileid: "50906248"
 
 如果你只需使用 MAM (移动应用) ，也许对于在其自己的设备上更新工作项目的人，Intune 提供了除注册和管理设备之外的另一个选项。 Intune 订阅允许你使用 Azure 门户设置 MAM 策略，即使用户的设备未在 Intune 中注册。 有关详细信息，请参阅应用 [保护策略概述](/mem/intune/apps/app-protection-policy)。
 
-## <a name="related-topics"></a>相关主题
+## <a name="related-content"></a>相关内容
 
-[设置基本移动性和安全性](set-up.md)
-
-[使用基本移动性和安全性注册移动设备](enroll-your-mobile-device.md)
-
-[管理在移动设备管理中注册的设备Microsoft 365](manage-enrolled-devices.md)
-
-[获取有关由基本移动性和安全性管理的设备的详细信息](get-details-about-managed-devices.md)
+[Set up Basic Mobility and Security](set-up.md) (article) \
+[使用基本移动性和安全性功能](enroll-your-mobile-device.md) 注册移动设备 (文章) \
+[管理在移动设备管理中注册的设备Microsoft 365 (](manage-enrolled-devices.md)文章) \
+[获取有关由基本移动性和安全性服务管理](get-details-about-managed-devices.md) 的设备 (文章) 

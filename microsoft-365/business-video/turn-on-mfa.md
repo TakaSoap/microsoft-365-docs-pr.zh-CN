@@ -20,15 +20,17 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: 了解如何启用多重身份验证。
-ms.openlocfilehash: 64e054defb407a3b2c1e4d124767d1d68f78452a
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+description: 了解如何启用多重身份验证（有时称为双因素身份验证）。
+ms.openlocfilehash: 7d491ac88ab928dea9b5a5316a51151b8df63eab
+ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51578575"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "52706438"
 ---
 # <a name="turn-on-multi-factor-authentication"></a>启用多重身份验证
+
+## <a name="watch-turn-on-multi-factor-authentication"></a>观看：打开多重身份验证
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2MuO3?autoplay=false]
 

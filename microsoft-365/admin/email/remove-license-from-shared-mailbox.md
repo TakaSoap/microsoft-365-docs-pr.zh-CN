@@ -20,13 +20,13 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: '从共享邮箱中删除许可证以将其分配给其他用户。 '
-ms.openlocfilehash: d552cfb77ff0ab2853939c6cb25fd4737f8c17d3
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+description: '从共享邮箱中删除许可证以将其分配给其他用户或返回许可证，以便不支付许可证费用。 '
+ms.openlocfilehash: d33487879506402c5f0de2f7942c3299c5698b73
+ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52537579"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "52706282"
 ---
 # <a name="remove-a-license-from-a-shared-mailbox"></a>从共享邮箱中删除许可证
 
@@ -45,19 +45,19 @@ ms.locfileid: "52537579"
 
 ::: moniker range="o365-worldwide"
 
-1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。
+1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
- 1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">活动用户</a>”页面。
+ 1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">活动用户</a>”页面。
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
- 1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">活动用户</a>”页面。
+ 1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">活动用户</a>”页面。
 
 ::: moniker-end
 
@@ -74,14 +74,10 @@ ms.locfileid: "52537579"
 
 6. 你仍然支付许可证费用。 若要停止付费， [请从订阅中删除许可证](../../commerce/licenses/buy-licenses.md)。
 
-## <a name="related-articles"></a>相关文章
+## <a name="related-content"></a>相关内容
 
-[关于共享邮箱](about-shared-mailboxes.md)
-
-[创建共享邮箱](create-a-shared-mailbox.md)
-
-[配置共享邮箱](configure-a-shared-mailbox.md)
-
-[将用户邮箱转换为共享邮箱](convert-user-mailbox-to-shared-mailbox.md)
-
-[解决共享邮箱问题](resolve-issues-with-shared-mailboxes.md)
+[关于共享邮箱](about-shared-mailboxes.md)（文章）\
+[Create a shared mailbox (](create-a-shared-mailbox.md) article) \
+[配置共享邮箱](configure-a-shared-mailbox.md)（文章）\
+[将用户邮箱转换为共享邮箱](convert-user-mailbox-to-shared-mailbox.md)（文章）\
+[解决共享邮箱相关问题](resolve-issues-with-shared-mailboxes.md)（文章）

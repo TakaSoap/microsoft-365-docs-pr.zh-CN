@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: 无论是将新解决方案添加到合规中心、根据反馈更新现有功能，还是推出最新更新的文档，Microsoft 365都可以帮助您随时了解不断变化的合规性环境。 了解我们本月已经进行了哪些工作。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: ae1df2ce6373e4a8f6b01c33e50bea5e6c16ca0a
-ms.sourcegitcommit: 4bcac4cb4f9399ebbd7c8cff0abb4d6ecedb731e
+ms.openlocfilehash: f249108dba279e255efd57ecd56159d3c71dcb4b
+ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "52698948"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "52706614"
 ---
 # <a name="whats-new-in-microsoft-365-compliance"></a>Microsoft 365 合规中心更新信息
 
@@ -48,7 +48,7 @@ ms.locfileid: "52698948"
 
 ### <a name="data-connectors"></a>数据连接器
 
-- [设置连接器以在 Oracle 数据上存档 Cisco Jabber]/microsoft-365/compliance/archive-ciscojabberonoracle-data) 
+- [设置连接器以在 Oracle 数据上存档 Cisco Jabber](/microsoft-365/compliance/archive-ciscojabberonoracle-data)
 - [设置连接器以在 PostgreSQL 数据上存档 Cisco Jabber](/microsoft-365/compliance/archive-ciscojabberonpostgresql-data)
 
 ### <a name="data-loss-prevention"></a>数据丢失防护
@@ -59,14 +59,15 @@ ms.locfileid: "52698948"
 
 ### <a name="retention-policies-and-retention-label-policies"></a>保留策略和保留标签策略
 
-- "Microsoft 365 组"位置现在支持将保留设置仅应用于 Microsoft 365 邮箱，或仅将[Set-RetentionCompliancePolicy PowerShell](/powershell/module/exchange/set-retentioncompliancepolicy) cmdlet 与 Applications 参数一同应用于连接的 SharePoint 站点。
+- "Microsoft 365 组"位置现在支持将保留设置仅应用于 Microsoft 365 邮箱，或仅将 [Set-RetentionCompliancePolicy PowerShell](/powershell/module/exchange/set-retentioncompliancepolicy) cmdlet 与 Applications 参数一同应用于连接的 SharePoint *站点*。
 
 ### <a name="sensitivity-labels"></a>敏感度标签
 
 Outlook版本和更新：
-- 以前仅受 AIP 统一标记客户端支持，现在内置标签支持默认标签和 [强制标签的不同设置](sensitivity-labels-office-apps.md#outlook-specific-options-for-default-label-and-mandatory-labeling)
-- Encrypt-Only macOS、iOS 和 Android 现在支持
-- 管理[Office](/microsoft-365/compliance/sensitivity-labels-office-apps)应用中的敏感度标签主题使用[Outlook](/microsoft-365/compliance/sensitivity-labels-office-apps#sensitivity-label-capabilities-in-outlook)功能表中针对默认标签的不同设置和内置标签的新[](/microsoft-365/compliance/sensitivity-labels-office-apps#outlook-specific-options-for-default-label-and-mandatory-labeling)Outlook 功能版本强制标记中的新条目进行了更新，以支持不同的默认标签和免除强制标记。 此外，Encrypt-Only选项现在受 macOS/iOS/Android 支持，并且所有 Outlook 客户端现在都支持具有变量的所有动态标记。 强制标记现已推出到其余平台。
+- [默认标签和强制标签的不同](sensitivity-labels-office-apps.md#outlook-specific-options-for-default-label-and-mandatory-labeling) 设置现在支持内置标签。 以前，这些设置仅受 AIP 统一标记客户端支持。
+- [](encryption-sensitivity-labels.md#let-users-assign-permissions) macOS、iOS 和 Android 现在支持仅加密。
+- [强制标记](sensitivity-labels-office-apps.md#require-users-to-apply-a-label-to-their-email-and-documents) 将推出到其余平台。
+- [所有客户端都支持](sensitivity-labels-office-apps.md#dynamic-markings-with-variables)使用所有变量的动态Outlook标记。
 
 ## <a name="march-2021"></a>2021 年 3 月
 

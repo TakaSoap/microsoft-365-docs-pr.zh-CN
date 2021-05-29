@@ -18,12 +18,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: 在设备上Microsoft 365服务之前，可能需要先在基本移动性和安全性中注册Microsoft 365。
-ms.openlocfilehash: 119039f86f1c7f81ffb535b4a159c935823f2f07
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 2ad0aac331969696bbf53d0b06c18ee5c0ee90f6
+ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50904224"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "52706162"
 ---
 # <a name="enroll-your-mobile-device-using-basic-mobility-and-security"></a>使用基本移动性和安全性注册移动设备
 
@@ -77,6 +77,6 @@ Intune 服务Microsoft 365用户的基本移动性和安全性适用于大多数
 
 若要使用公司门户Windows和配置 Windows 电话或电脑Microsoft 365，请参阅 Windows[中的](/intune-user-help/windows-enrollment-company-portal)Intune 公司门户。
 
-## <a name="whats-next"></a>下一步做什么？
+## <a name="next-steps"></a>后续步骤
 
 在设备注册基本移动性和安全性后，你可以开始使用Office应用处理电子邮件、日历、联系人和文档。

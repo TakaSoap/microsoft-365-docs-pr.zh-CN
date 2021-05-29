@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: a8ab5061-3346-4da0-bb7c-5260822b53ae
 description: 了解更多关于由世纪互联运营的，旨在满足中国对安全、可靠和可扩展的云服务的需求的 Office 365 的信息。
 monikerRange: o365-21vianet
-ms.openlocfilehash: 00710d53033648764ed0e55eeb51ee66518e36f7
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
-ms.translationtype: HT
+ms.openlocfilehash: bc416ca253d26cc5d391d226039223eac02720b0
+ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52297052"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "52706366"
 ---
 # <a name="office-365-operated-by-21vianet"></a>由世纪互联运营的 Office 365
 
@@ -236,8 +236,6 @@ GDPR 授予个人（或数据主体）与处理个人数据相关的某些权限
 
 ## <a name="related-content"></a>相关内容
 
-[试用或购买 Microsoft 365 商业版订阅](../../commerce/try-or-buy-microsoft-365.md)（文章）
-
-[适用于由世纪互联运营的 Office 365 的 Azure 信息保护支持](parity-between-azure-information-protection.md)（文章）
-
+[试用或购买Microsoft 365商业版订阅 (](../../commerce/try-or-buy-microsoft-365.md)文章) \
+[针对由世纪Office 365运营的 (](parity-between-azure-information-protection.md) Azure 信息保护) \
 [查看帐单或获取发票](../../commerce/billing-and-payments/view-your-bill-or-invoice.md)（文章）

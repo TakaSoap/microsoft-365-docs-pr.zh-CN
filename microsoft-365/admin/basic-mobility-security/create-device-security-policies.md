@@ -18,18 +18,18 @@ ms.custom:
 search.appverid:
 - MET150
 description: 使用基本移动性和安全性创建保护组织信息的设备策略。
-ms.openlocfilehash: 5abd27f963208140a53cfd885152301992830b5e
-ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
+ms.openlocfilehash: 5519351db428faa837a63eedb384b42c8d8ee07c
+ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52023901"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "52706318"
 ---
 # <a name="create-device-security-policies-in-basic-mobility-and-security"></a>在基本移动性和安全性中创建设备安全策略
 
 可以使用基本移动性和安全性创建设备策略，帮助保护组织信息Microsoft 365未经授权的访问。 你可以将策略应用于组织中设备用户拥有适用 Microsoft 365 许可证并且已注册基本移动性和安全性设备的任何移动设备。
 
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>准备工作
 
 > [!IMPORTANT]
 > 必须先激活和设置基本移动性和安全性，然后才能创建移动设备策略。 有关详细信息，请参阅 Overview of Basic Mobility and Security。
@@ -148,8 +148,7 @@ ms.locfileid: "52023901"
 
 还可以完全擦除设备，或选择性地擦除设备中的组织信息。 有关详细信息，请参阅 [Basic Mobility and Security](wipe-mobile-device.md)中的擦除移动设备。
 
-## <a name="related-topics"></a>相关主题
+## <a name="related-content"></a>相关内容
 
-[基本移动性和安全性概览](overview.md)
-
-[基本移动性和安全性的功能](capabilities.md)
+[Overview of Basic Mobility and Security](overview.md) (article) \
+[基本移动性和安全性功能 (](capabilities.md) 文章) 

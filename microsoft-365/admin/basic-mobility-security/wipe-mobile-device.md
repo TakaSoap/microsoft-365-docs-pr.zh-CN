@@ -18,18 +18,18 @@ ms.custom:
 search.appverid:
 - MET150
 description: 使用内置的"基本移动性和安全性"从已注册的设备中删除信息。
-ms.openlocfilehash: 7830a0f4ef609f6465c171ecab2c9e3c48198424
-ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
+ms.openlocfilehash: 8c873923505fe527f5a44df0e8b15d290e92023b
+ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52023853"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "52706138"
 ---
 # <a name="wipe-a-mobile-device-in-basic-mobility-and-security"></a>在基本移动性和安全性中擦除移动设备
 
 可以使用内置的 Microsoft 365 基本移动性和安全性来仅删除组织信息，或执行恢复出厂设置以从移动设备中删除所有信息，并还原到出厂设置。
 
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>准备工作
 
 移动设备可以存储敏感的组织信息，并提供对组织资源Microsoft 365的访问权限。 若要帮助保护组织的信息，可以执行"恢复出厂设置"或"删除公司数据"操作：
 
@@ -88,7 +88,3 @@ ms.locfileid: "52023853"
 |将删除由基本移动性和安全性创建的电子邮件配置文件，并删除设备上缓存的电子邮件。|是|不适用|
 >[!NOTE]
 >公司门户应用在适用于 iOS 的应用商店和适用于 Android 设备的 Play 应用商店中提供。
-
-## <a name="related-topics"></a>相关主题
-
-[设置基本移动性和安全性](set-up.md)

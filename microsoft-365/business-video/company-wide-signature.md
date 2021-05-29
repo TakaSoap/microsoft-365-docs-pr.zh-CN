@@ -21,14 +21,16 @@ search.appverid:
 - MET150
 - MOE150
 description: 了解如何创建公司范围的电子邮件签名。
-ms.openlocfilehash: a1a85826be2a799b56cf3d06b6416778470a116f
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 669c61d17784641d1ecc88ac0952a46575c7898b
+ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51578947"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "52706258"
 ---
 # <a name="create-a-company-wide-email-signature"></a>创建公司范围的电子邮件签名
+
+## <a name="watch-create-a-company-wide-email-signature"></a>观看：创建公司范围的电子邮件签名
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1IEWf?autoplay=false]
 

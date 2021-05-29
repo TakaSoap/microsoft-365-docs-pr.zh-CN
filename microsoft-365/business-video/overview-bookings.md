@@ -19,15 +19,17 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: 了解 Microsoft Bookings。
-ms.openlocfilehash: 826cb84acace03aaf18bcb9d3a58fa5a518d71ee
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+description: 了解 Microsoft Bookings，这是一款适用于小型企业的联机和移动应用，可为客户提供约会预订。
+ms.openlocfilehash: f797a18616f63aea873ea5c1060a54dffbe078ef
+ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51578743"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "52706222"
 ---
 # <a name="overview-of-microsoft-bookings"></a>Microsoft Bookings 概述
+
+## <a name="watch-overview-of-microsoft-bookings"></a>观看：Microsoft Bookings 概述
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE26B1q?autoplay=false]
 

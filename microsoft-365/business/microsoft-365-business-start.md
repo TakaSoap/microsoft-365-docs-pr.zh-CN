@@ -28,12 +28,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: 了解Microsoft 365，如何设置，以及如何准备用户的设备和电脑，以确保它们受到适用于Microsoft 365保护。
-ms.openlocfilehash: ddf6f8d12587c6fb562a599a41c190ffef32c147
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: be5f0e74b71f412bf647e4ef0e496cd932fc306a
+ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52293699"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "52706450"
 ---
 # <a name="get-started-with-microsoft-365-for-business"></a>企业Microsoft 365入门
 
@@ -41,7 +41,7 @@ ms.locfileid: "52293699"
 
 Microsoft 365是一套全面的业务生产力和协作工具，例如 Outlook、Word、Excel 以及其他始终保持最新的 Office 产品。 可以使用易于管理的企业级安全性在所有 iOS、Android 和 Windows 10设备上保护工作文件。
 
-观看此视频，快速了解Microsoft 365概述。<br><br>
+## <a name="watch-what-is-microsoft-365-business-premium"></a>观看：Microsoft 365 商业高级版
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2mhaA] 
   
@@ -61,7 +61,7 @@ Microsoft 365企业版最多需要 300 个许可证。 如果需要更多许可�
   
 ![A diagram that shows the setup and management flow for admins, and also for a user](../media/249f81fc-7e79-44c7-8425-3a0b7b651c3b.png)
 
-观看此视频，大致了解Microsoft 365设置。<br><br>
+## <a name="watch-set-up-microsoft-365-business"></a>观看：设置Microsoft 365 商业版
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FYSM] 
 
@@ -109,8 +109,7 @@ Microsoft 365企业版最多需要 300 个许可证。 如果需要更多许可�
     
 ## <a name="related-content"></a>相关内容
 
-[Microsoft 365文档和资源](./index.yml)
-  
-[管理Microsoft 365企业迁移](manage.md)[Microsoft 365企业部署](migrate-to-microsoft-365-business.md)
-
-[Microsoft 365 商业版培训视频](../business-video/index.yml)
+[Microsoft 365链接页 (](./index.yml)文档和资源) \
+[管理Microsoft 365企业 (](manage.md)文章) \
+[迁移到 Microsoft 365 for business (](migrate-to-microsoft-365-business.md)文章) \
+[Microsoft 365企业培训视频 (](../business-video/index.yml)链接页) 

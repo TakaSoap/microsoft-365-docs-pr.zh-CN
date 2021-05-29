@@ -20,13 +20,13 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: 了解如何将另一个域添加到订阅。
-ms.openlocfilehash: a641005913f7dfd866366f0f8065019dd5c17fe8
-ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
+description: 你的组织可能需要多个域，以便客户可以找到你。 了解如何将另一个域添加到订阅。
+ms.openlocfilehash: 13fc3cf73a112945db4372231cce70c1837c1321
+ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51903738"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "52706426"
 ---
 # <a name="add-another-domain"></a>添加其他域
 
@@ -56,4 +56,7 @@ ms.locfileid: "51903738"
 
 ## <a name="related-content"></a>相关内容
 
-[](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain)将域添加到 Microsoft 365 (文章) 添加[DNS](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider)记录以连接您的域 (文章) [更改名称服务器](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/change-nameservers-at-any-domain-registrar)以设置 Microsoft 365 与任何域注册机构 (文章) [Domains FAQ](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) (article) 
+[在本文Microsoft 365 (](../admin/setup/add-domain.md)域) \
+[添加 DNS 记录以连接域](../admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md) (文章) \
+[更改名称服务器以使用任意域注册机构设置 Microsoft 365](../admin/get-help-with-domains/change-nameservers-at-any-domain-registrar.md)（文章）\
+[域常见问题](../admin/setup/domains-faq.yml) （文章）

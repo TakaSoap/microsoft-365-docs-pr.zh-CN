@@ -19,15 +19,17 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: 了解如何在外部轻松共享业务文件。
-ms.openlocfilehash: 469e4b16277b048a539767f6fc9fd54d2ea2e6cf
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+description: 了解如何使用企业中的"任何人"Microsoft 365轻松地在外部共享业务文件。
+ms.openlocfilehash: cbe6a12fd8d0c2b2ec16db32178f9c2559a08c22
+ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51578623"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "52706494"
 ---
 # <a name="easily-share-files-externally"></a>在外部轻松共享文件
+
+## <a name="watch-share-files-with-an-anyone-link"></a>观看：使用"任何人"链接共享文件
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2dCOV?autoplay=false]
 

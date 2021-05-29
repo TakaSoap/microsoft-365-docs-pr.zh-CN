@@ -20,15 +20,17 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: 了解如何停止自动转发电子邮件。
-ms.openlocfilehash: f8bd599c7c8bca8d4789188acbcd3574b7473dcb
-ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
+description: 了解如何通过创建邮件流规则来停止自动转发电子邮件，以避免窃取专有信息。
+ms.openlocfilehash: 82e4c80b0edc501889e0fc4dc28f1ec1ad703568
+ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51903678"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "52706470"
 ---
 # <a name="stop-email-auto-forward"></a>停止电子邮件自动转发
+
+## <a name="watch-stop-auto-forwarding-emails"></a>观看：停止自动转发电子邮件
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2W6kS?autoplay=false]
 
@@ -50,4 +52,6 @@ ms.locfileid: "51903678"
 
 ## <a name="related-content"></a>相关内容
 
-[为用户添加](https://docs.microsoft.com/microsoft-365/admin/email/add-another-email-alias-for-a-user)另一个电子邮件别名 (文章) 在[Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/email/configure-email-forwarding) (中配置电子邮件转发) 查找并修复作为 Office 365 [for Business](https://docs.microsoft.com/exchange/troubleshoot/email-delivery/email-delivery-issues)管理员的电子邮件传递 (文章) 
+[为用户添加另一个电子邮件别名](../admin/email/add-another-email-alias-for-a-user.md)（文章）\
+[在 Microsoft 365 中配置电子邮件转发](../admin/email/configure-email-forwarding.md)（文章）\
+[查找并修复作为企业管理员Office 365的电子邮件](/exchange/troubleshoot/email-delivery/email-delivery-issues) (问题) 

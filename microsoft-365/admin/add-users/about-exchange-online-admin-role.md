@@ -20,21 +20,19 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: 097ae285-c4af-4319-9770-e2559d66e4c8
-description: 'Exchange管理员管理组织的电子邮件和邮箱。 例如，他们恢复用户邮箱中的已删除项目。 '
-ms.openlocfilehash: 4dc1f435571650ae4a805198782c3c24a92024fb
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+description: Exchange管理员管理组织的电子邮件和邮箱。 例如，他们恢复用户邮箱中的已删除项目。
+ms.openlocfilehash: 58f0da87c0db57a3df62834a4375d561e20a98f8
+ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51197645"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "52706210"
 ---
 # <a name="about-the-exchange-online-admin-role"></a>关于Exchange Online管理员角色
 
 为了帮助你管理Microsoft 365，可以从管理中心向用户分配[](assign-admin-roles.md)管理组织的电子邮件[和Exchange权限](/exchange/exchange-admin-center)。 为此，可将其分配到Exchange管理员角色。
   
  **提示**：在将某人分配到 Exchange 管理员角色时，还要将其分配到服务管理员角色。 这样，他们就可以在管理中心Microsoft 365重要信息，如 Exchange Online 服务的运行状况，以及更改和发布通知。
-  
-## <a name="before-you-begin"></a>开始之前
 
 下面是用户在被分配到管理员角色时可以执行Exchange任务：
   
@@ -48,7 +46,7 @@ ms.locfileid: "51197645"
 
 - [创建共享邮箱](../email/create-a-shared-mailbox.md) ，以便一组人员可以从公用电子邮件地址监视和发送电子邮件。
 
-- [组织的电子邮件反垃圾邮件](https://docs.microsoft.com/microsoft-365/security/office-365-security/anti-spam-protection) 保护和恶意软件筛选器。
+- [组织的电子邮件反垃圾邮件](../../security/office-365-security/anti-spam-protection.md) 保护和恶意软件筛选器。
 
 - 管理 Microsoft 365 组
 

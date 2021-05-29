@@ -20,12 +20,12 @@ search.appverid:
 ms.assetid: e893b19a-660c-41f2-9074-d3631c95a014
 ms.custom: seo-marvel-apr2020
 description: 如何打开或关闭安全与合规中心Microsoft 365审核日志搜索功能，以启用或禁用管理员搜索审核日志。
-ms.openlocfilehash: 091331a40a2ab6bf3c05bb289d49f63ab2dd2794
-ms.sourcegitcommit: 4f6ef4cd09c3ed36dc0be3702b0636bad6cff8a9
+ms.openlocfilehash: 457f453b001f71a095bc60932c8e0cebf46aa7b1
+ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "52657726"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "52706657"
 ---
 # <a name="turn-auditing-on-or-off"></a>打开或关闭审核
 
@@ -63,7 +63,7 @@ Microsoft 365 和 Office 365 企业版组织默认已打开审核日志搜索。
 
    如果未为组织启用审核，则会显示横幅，提示你开始录制用户和管理员活动。
 
-   ![审核页上的横幅](../media/39a9d35f-88d0-4bbe-a962-0be2f838e2bf.png)
+   ![审核页上的横幅](../media/AuditingBanner.png)
 
 3. 单击" **开始录制用户和管理员活动"** 横幅。
 

@@ -25,12 +25,12 @@ search.appverid:
 - MOE150
 ms.assetid: 70a62f09-45ea-4968-8482-43cddfb8cc01
 description: 了解如何使用文档库、列表和中心SharePoint、组织和管理团队网站。
-ms.openlocfilehash: aca2b2ff147fdb030540712133b27eba706b0985
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 47033f286f2661a8cfffa3efce0cc7deda82ea63
+ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244511"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "52706342"
 ---
 # <a name="customize-your-team-site-for-file-storage-and-sharing"></a>自定义用于文件存储和共享的团队网站
 
@@ -103,15 +103,15 @@ SharePoint可添加到网站的列表（如链接、日历、联系人或任务�
 
 管理团队网站时，可能需要添加或删除用户。 以下信息可帮助您了解、添加和管理工作组网站上的用户。
   
-使用"了解和管理组" [查看有关组的视频](https://docs.microsoft.com/learn/m365/)。 
+使用"了解和管理组" [查看有关组的视频](/learn/m365/)。 
   
 若要将用户添加到Microsoft 365组，请参阅同时[添加用户和分配许可证](../add-users/add-users.md)。
   
 了解如何通过设置和管理访问 [请求来处理访问请求](https://support.microsoft.com/office/94B26E0B-2822-49D4-929A-8455698654B3)。
   
-## <a name="here-are-more-articles-you-might-be-interested-in"></a>以下是你可能感兴趣的更多文章
+## <a name="next-steps"></a>后续步骤
 
-- **在平板电脑和手机上设置 Office 应用** 。 必须这样做，才能从平板电脑或手机编辑存储在团队网站中的文件。 如果平板电脑或手机未安装 Office 应用，那么只能查看团队网站上的文件，但不能对其进行编辑。 
+你必须在设备上Office应用，以便可以从平板电脑或手机编辑存储在团队网站中的文件。 如果平板电脑或手机未安装 Office 应用，那么只能查看团队网站上的文件，但不能对其进行编辑。 
     
   - [在 Android Office安装并设置Microsoft 365](https://support.microsoft.com/office/cafe9d6f-8b0c-4b03-b20a-12438a82a22d)
     
