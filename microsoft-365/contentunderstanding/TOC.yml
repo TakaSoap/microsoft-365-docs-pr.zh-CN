@@ -42,6 +42,8 @@
   items:
     - name: 采用入门
       href: adoption-getstarted.md
+    - name: 方案和用例
+      href: adoption-scenarios.md
     - name: 在 Microsoft 365 中管理合同
       items:
         - name: 概述
@@ -54,7 +56,7 @@
           href: solution-manage-contracts-step3.md
 - name: 设置和管理
   items:
-    - name: 设置内容理解
+    - name: 设置 SharePoint Syntex
       href: set-up-content-understanding.md
 - name: 内容服务
   items:
