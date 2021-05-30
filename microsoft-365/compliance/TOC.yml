@@ -110,12 +110,14 @@
           href: sit-modify-edm-schema-configurable-match.md
         - name: 为精确数据匹配活动创建通知（预览）
           href: sit-edm-notifications-activities.md
-        - name: 创建自定义敏感信息类型 - 安全与合规中心
+        - name: 创建自定义敏感信息类型 - 合规中心
           href: create-a-custom-sensitive-information-type.md
         - name: 创建自定义敏感信息类型 - PowerShell
           href: create-a-custom-sensitive-information-type-in-scc-powershell.md
         - name: 创建关键字字典
           href: create-a-keyword-dictionary.md
+        - name: 修改关键字词典
+          href: sit-modify-keyword-dictionary.md
         - name: 文档指纹
           href: document-fingerprinting.md
     - name: 可训练的分类器
@@ -124,8 +126,6 @@
           href: classifier-learn-about.md
         - name: 可训练的分类器入门
           href: classifier-get-started-with.md
-        - name: 如何重新训练沟通合规性中的分类器
-          href: classifier-how-to-retrain-comms-compliance.md
         - name: 如何重新训练内容资源管理器中的分类器
           href: classifier-how-to-retrain-content-explorer.md
     - name: 数据分类
