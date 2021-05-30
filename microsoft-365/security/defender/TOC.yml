@@ -18,6 +18,8 @@
           href: microsoft-365-security-mde-redirection.md
         - name: 将 Defender for Office 365 重定向到 Microsoft 365 安全中心
           href: microsoft-365-security-mdo-redirection.md
+        - name: Microsoft 365Defender 与 Azure Sentinel 集成
+          href: microsoft-365-defender-integration-with-azure-sentinel.md
         - name: 预览功能
           href: preview.md
         - name: 解决问题
