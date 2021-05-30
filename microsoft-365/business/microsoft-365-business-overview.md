@@ -28,13 +28,13 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
-description: 了解 Microsoft 365 商业高级版，这是一项订阅服务，其中包括 Office 效率类应用，以及为企业抵御网络威胁的高级保护功能。
-ms.openlocfilehash: a355c9856ead4a66f6876cc7cb5aa8eb469d7f12
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+description: 了解 Microsoft 365 商业高级版，这是一种订阅服务，Office应用和抵御网络威胁的高级防护。
+ms.openlocfilehash: e4a182c5dd5444392486dd137e70361e880534bd
+ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244848"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "52705514"
 ---
 # <a name="overview-of-microsoft-365-business-premium"></a>Microsoft 365 商业高级版概述
 
@@ -42,7 +42,7 @@ ms.locfileid: "52244848"
 
 Microsoft 365 商业高级版（旧称为“Microsoft 365 商业版”）是为员工数少于 300 人的企业提供的综合订阅服务。 它将你常用的 Office 效率类应用和服务、Microsoft Teams 等协作工具与高级安全和设备管理功能相集成。
 
-请观看下面的视频，以快速概览 Microsoft 365 商业高级版。<br><br>
+## <a name="watch-what-is-microsoft-365-business-premium"></a>观看：Microsoft 365 商业高级版
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2mhaA] 
   
@@ -71,11 +71,11 @@ Microsoft 365 商业高级版有助于在所有这些情况下保护你的数据
 
 Microsoft 365 商业高级版通过以下方式 **抵御威胁**：
 
-- 实时扫描电子邮件和文档中的链接，以阻止不安全的网站 (安全) 。
+- 实时扫描电子邮件和文档中的链接，以阻止不安全的 (保险箱链接) 。
 
-- 在沙盒环境中对电子邮件附件执行高级分析，以检测安全附件 (新开发的) 。 
+- 在沙盒环境中执行电子邮件附件的高级分析，以检测新开发的恶意软件 (保险箱附件) 。 
 
-- 启用使用机器学习模型和模拟检测的防钓鱼策略，以防范高级攻击 (Defender for Office 365 智能中心中的防钓鱼) 。 
+- 启用使用机器学习模型和模拟检测的防钓鱼策略，以防范高级攻击 (Defender 中的反网络钓鱼Office 365智能) 。 
 
 - 设置高级策略，用于禁用来自不受信任的位置的访问，或绕过受信任的位置（如办公网络）的多重身份验证（包括受信任的 IP 和条件访问的 Azure MFA）。 
 
@@ -105,7 +105,7 @@ Microsoft 365 商业高级版通过以下方式 **抵御威胁**：
 
 若要查看完整的安全功能列表，请参阅 [Microsoft 365 商业高级版安全功能](security-features.md)。 [设置 Microsoft 365 商业高级版](set-up.md)后，请参阅[增强威胁防护](increase-threat-protection.md)和[设置合规性功能](set-up-compliance.md)，以开始使用引导式安装中没有包含的安全功能。 另请参阅[保护 Office 365 和 Microsoft 365 商业高级版计划的 10 大方法](/office365/admin/security-and-compliance/secure-your-business-data)，以更好地概览如何设置保护来抵御网络罪犯和黑客。
 
-## <a name="get-microsoft-365-business-premium"></a>获取 Microsoft 365 商业高级版
+## <a name="next-steps"></a>后续步骤
 
 - 如果你有合作伙伴，他们将获取 Microsoft 365 商业高级版：[从 Microsoft 合作伙伴中心获取 Microsoft 365 商业高级版](get-microsoft-365-business.md)。
 
@@ -113,4 +113,4 @@ Microsoft 365 商业高级版通过以下方式 **抵御威胁**：
 
 ## <a name="related-content"></a>相关内容
 
-[Microsoft 365 商业高级版培训 (](../business-video/index.yml) 链接页) 
+[Microsoft 365 商业高级版培训视频 (](../business-video/index.yml)链接页) 
