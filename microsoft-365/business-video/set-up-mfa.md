@@ -20,15 +20,17 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: 了解如何在手机上设置多重身份验证。
-ms.openlocfilehash: 4a4041777b055b03e2ab5efede72eca56afdf589
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+description: 了解如何在手机上设置多重身份验证（有时也称为双重身份验证）。
+ms.openlocfilehash: 16997961c4bbe405792c40d1f1d93c511e10e740
+ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51578659"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "52705650"
 ---
 # <a name="set-up-multi-factor-authentication-on-your-phone"></a>在手机上设置多重身份验证
+
+## <a name="watch-set-up-multi-factor-authentication-with-a-mobile-device"></a>观看：使用移动设备设置多重身份验证
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2MmQR?autoplay=false]
 

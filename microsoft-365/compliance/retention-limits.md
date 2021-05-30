@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 hideEdit: true
 description: 了解策略、每个保留策略和保留标签策略项目的最大数量
-ms.openlocfilehash: 007ca6eec50b243e1b820938ffa67553d7882c7b
-ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
+ms.openlocfilehash: 1ee2d07a42aaf4dff45ae22e9dfc005b3c4593d9
+ms.sourcegitcommit: 4bcac4cb4f9399ebbd7c8cff0abb4d6ecedb731e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52107654"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "52698960"
 ---
 # <a name="limits-for-retention-policies-and-retention-label-policies"></a>保留策略和保留标签策略的限制
 
@@ -33,13 +33,15 @@ ms.locfileid: "52107654"
 
 ## <a name="maximum-number-of-policies-per-tenant"></a>每个租户策略的最大数
 
-单个租户最多可有 10,000 个策略（任何配置）。 该最大数量包括不同的保留策略和其他合规策略，例如 DLP 策略。
+单个租户最多可有 10,000 个策略（任何配置）。 此最大数量包括不同的保留策略，以及用于合规性的其他策略，例如 DLP、信息屏障、电子数据展示保留和敏感度标签。
 
-每个工作负载的保留策略最大数量：
+在此 10,000 个策略限制内，每个工作负载的最大保留策略数也有一些限制:
 
 - Exchange Online （任何配置）：1,800
 - SharePoint 或 OneDrive：（自动包含所有网站）：13
 - SharePoint 或 OneDrive（包含或排除的特定位置）：2,600
+
+尽管 Microsoft Teams 和 Yammer 的保留策略使用邮箱来存储数据以用于保留，但 Exchange Online 的最大策略数排除 Teams 和 Yammer 的保留策略。
 
 ## <a name="maximum-number-of-items-per-policy"></a>每个策略的最大项目数
 
