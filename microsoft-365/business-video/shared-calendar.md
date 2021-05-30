@@ -27,24 +27,24 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 05/29/2021
 ms.locfileid: "52705638"
 ---
-# <a name="create-a-shared-calendar"></a><span data-ttu-id="5c3f1-103">创建共享日历</span><span class="sxs-lookup"><span data-stu-id="5c3f1-103">Create a shared calendar</span></span>
+# <a name="create-a-shared-calendar"></a><span data-ttu-id="a2e10-103">创建共享日历</span><span class="sxs-lookup"><span data-stu-id="a2e10-103">Create a shared calendar</span></span>
 
-## <a name="watch-create-a-shared-calendar"></a><span data-ttu-id="5c3f1-104">观看：创建共享日历</span><span class="sxs-lookup"><span data-stu-id="5c3f1-104">Watch: Create a shared calendar</span></span>
+## <a name="watch-create-a-shared-calendar"></a><span data-ttu-id="a2e10-104">观看：创建共享日历</span><span class="sxs-lookup"><span data-stu-id="a2e10-104">Watch: Create a shared calendar</span></span>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FYWm?autoplay=false]
 
-## <a name="try-it"></a><span data-ttu-id="5c3f1-105">试一试！</span><span class="sxs-lookup"><span data-stu-id="5c3f1-105">Try it!</span></span>
+## <a name="try-it"></a><span data-ttu-id="a2e10-105">试一试！</span><span class="sxs-lookup"><span data-stu-id="a2e10-105">Try it!</span></span>
 
-<span data-ttu-id="5c3f1-106">共享日历可帮助你快速查看何时有人员可用于会议或其他活动。</span><span class="sxs-lookup"><span data-stu-id="5c3f1-106">A shared calendar can help you quickly see when people are available for meetings or other events.</span></span>
+<span data-ttu-id="a2e10-106">共享日历可帮助你快速查看何时有人员可用于会议或其他活动。</span><span class="sxs-lookup"><span data-stu-id="a2e10-106">A shared calendar can help you quickly see when people are available for meetings or other events.</span></span>
 
-1. <span data-ttu-id="5c3f1-107">在Outlook中，选择日历图标。</span><span class="sxs-lookup"><span data-stu-id="5c3f1-107">In Outlook, select the calendar icon.</span></span>
-1. <span data-ttu-id="5c3f1-108">在"**主页"** 选项卡上，选择"**添加日历"，** 然后选择"**自通讯簿"。**</span><span class="sxs-lookup"><span data-stu-id="5c3f1-108">On the **Home** tab, choose **Add Calendar**, then **From Address Book**.</span></span>
-1. <span data-ttu-id="5c3f1-109">通过输入用户的姓名或从列表中选择其姓名，将用户添加到共享日历，然后选择"确定 **"。**</span><span class="sxs-lookup"><span data-stu-id="5c3f1-109">Add users to the shared calendar by entering their name or selecting their name from the list, and then choose **OK**.</span></span>
-1. <span data-ttu-id="5c3f1-110">现在，可以查看已添加人员的日历和日历。</span><span class="sxs-lookup"><span data-stu-id="5c3f1-110">You can now view your calendar and the calendars for the people you added.</span></span>
-1. <span data-ttu-id="5c3f1-111">若要检查组的可用性，请选择"天 **"** 视图。</span><span class="sxs-lookup"><span data-stu-id="5c3f1-111">To check your group's availability, choose the **Day** view.</span></span>
+1. <span data-ttu-id="a2e10-107">在Outlook中，选择日历图标。</span><span class="sxs-lookup"><span data-stu-id="a2e10-107">In Outlook, select the calendar icon.</span></span>
+1. <span data-ttu-id="a2e10-108">在"**主页"** 选项卡上，选择"**添加日历"，** 然后选择"**自通讯簿"。**</span><span class="sxs-lookup"><span data-stu-id="a2e10-108">On the **Home** tab, choose **Add Calendar**, then **From Address Book**.</span></span>
+1. <span data-ttu-id="a2e10-109">通过输入用户的姓名或从列表中选择其姓名，将用户添加到共享日历，然后选择"确定 **"。**</span><span class="sxs-lookup"><span data-stu-id="a2e10-109">Add users to the shared calendar by entering their name or selecting their name from the list, and then choose **OK**.</span></span>
+1. <span data-ttu-id="a2e10-110">现在，可以查看已添加人员的日历和日历。</span><span class="sxs-lookup"><span data-stu-id="a2e10-110">You can now view your calendar and the calendars for the people you added.</span></span>
+1. <span data-ttu-id="a2e10-111">若要检查组的可用性，请选择"天 **"** 视图。</span><span class="sxs-lookup"><span data-stu-id="a2e10-111">To check your group's availability, choose the **Day** view.</span></span>
 
-## <a name="related-content"></a><span data-ttu-id="5c3f1-112">相关内容</span><span class="sxs-lookup"><span data-stu-id="5c3f1-112">Related content</span></span>
+## <a name="related-content"></a><span data-ttu-id="a2e10-112">相关内容</span><span class="sxs-lookup"><span data-stu-id="a2e10-112">Related content</span></span>
 
-<span data-ttu-id="5c3f1-113">[管理日历和联系人Outlook (](https://support.microsoft.com/office/manage-your-calendar-and-contacts-in-outlook-631a182a-21e0-4e41-8fa2-0d83e55da02d)文章) </span><span class="sxs-lookup"><span data-stu-id="5c3f1-113">[Manage your calendar and contacts in Outlook](https://support.microsoft.com/office/manage-your-calendar-and-contacts-in-outlook-631a182a-21e0-4e41-8fa2-0d83e55da02d) (article)</span></span>\
-<span data-ttu-id="5c3f1-114">[电子邮件协作](../admin/email/email-collaboration.md) (文章) </span><span class="sxs-lookup"><span data-stu-id="5c3f1-114">[Email collaboration](../admin/email/email-collaboration.md) (article)</span></span>\
-<span data-ttu-id="5c3f1-115">[管理中心Microsoft 365概述 (](admin-center-overview.md)文章) </span><span class="sxs-lookup"><span data-stu-id="5c3f1-115">[Overview of the Microsoft 365 admin center](admin-center-overview.md) (article)</span></span>
+<span data-ttu-id="a2e10-113">[管理日历和联系人Outlook (](https://support.microsoft.com/office/manage-your-calendar-and-contacts-in-outlook-631a182a-21e0-4e41-8fa2-0d83e55da02d)文章) </span><span class="sxs-lookup"><span data-stu-id="a2e10-113">[Manage your calendar and contacts in Outlook](https://support.microsoft.com/office/manage-your-calendar-and-contacts-in-outlook-631a182a-21e0-4e41-8fa2-0d83e55da02d) (article)</span></span>\
+<span data-ttu-id="a2e10-114">[电子邮件协作](../admin/email/email-collaboration.md) (文章) </span><span class="sxs-lookup"><span data-stu-id="a2e10-114">[Email collaboration](../admin/email/email-collaboration.md) (article)</span></span>\
+<span data-ttu-id="a2e10-115">[管理中心Microsoft 365概述 (](admin-center-overview.md)文章) </span><span class="sxs-lookup"><span data-stu-id="a2e10-115">[Overview of the Microsoft 365 admin center](admin-center-overview.md) (article)</span></span>

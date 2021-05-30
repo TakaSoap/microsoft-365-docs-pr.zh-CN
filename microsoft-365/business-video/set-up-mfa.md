@@ -20,33 +20,35 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: 了解如何在手机上设置多重身份验证。
-ms.openlocfilehash: 4a4041777b055b03e2ab5efede72eca56afdf589
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+description: 了解如何在手机上设置多重身份验证（有时也称为双重身份验证）。
+ms.openlocfilehash: 16997961c4bbe405792c40d1f1d93c511e10e740
+ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51578659"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "52705650"
 ---
-# <a name="set-up-multi-factor-authentication-on-your-phone"></a><span data-ttu-id="3a11a-103">在手机上设置多重身份验证</span><span class="sxs-lookup"><span data-stu-id="3a11a-103">Set up multi-factor authentication on your phone</span></span>
+# <a name="set-up-multi-factor-authentication-on-your-phone"></a><span data-ttu-id="7bdc0-103">在手机上设置多重身份验证</span><span class="sxs-lookup"><span data-stu-id="7bdc0-103">Set up multi-factor authentication on your phone</span></span>
+
+## <a name="watch-set-up-multi-factor-authentication-with-a-mobile-device"></a><span data-ttu-id="7bdc0-104">观看：使用移动设备设置多重身份验证</span><span class="sxs-lookup"><span data-stu-id="7bdc0-104">Watch: Set up multi-factor authentication with a mobile device</span></span>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2MmQR?autoplay=false]
 
-<span data-ttu-id="3a11a-104">多重身份验证可为你的企业提供更多安全性。</span><span class="sxs-lookup"><span data-stu-id="3a11a-104">Multi-factor authentication provides more security for your business.</span></span> <span data-ttu-id="3a11a-105">请按照以下步骤进行设置。</span><span class="sxs-lookup"><span data-stu-id="3a11a-105">Follow these steps to set it up.</span></span>
+<span data-ttu-id="7bdc0-105">多重身份验证可为你的企业提供更多安全性。</span><span class="sxs-lookup"><span data-stu-id="7bdc0-105">Multi-factor authentication provides more security for your business.</span></span> <span data-ttu-id="7bdc0-106">请按照以下步骤进行设置。</span><span class="sxs-lookup"><span data-stu-id="7bdc0-106">Follow these steps to set it up.</span></span>
 
-## <a name="try-it"></a><span data-ttu-id="3a11a-106">试一试！</span><span class="sxs-lookup"><span data-stu-id="3a11a-106">Try it!</span></span>
+## <a name="try-it"></a><span data-ttu-id="7bdc0-107">试一试！</span><span class="sxs-lookup"><span data-stu-id="7bdc0-107">Try it!</span></span>
 
-1. <span data-ttu-id="3a11a-107">登录 时 [https://office.com](https://office.com) ，你将看到"需要 **更多信息"** 提示。</span><span class="sxs-lookup"><span data-stu-id="3a11a-107">When you sign in to [https://office.com](https://office.com), you'll see the **More information required** prompt.</span></span> <span data-ttu-id="3a11a-108">选择“**下一步**”。</span><span class="sxs-lookup"><span data-stu-id="3a11a-108">Choose **Next**.</span></span>
-1. <span data-ttu-id="3a11a-109">在 **"步骤 1"\*\*\*\*下，** 从"身份验证电话 **"** 下拉列表中选择"移动应用"。</span><span class="sxs-lookup"><span data-stu-id="3a11a-109">Under **Step 1**, choose **Mobile app** from the **Authentication phone** drop-down list.</span></span>
-1. <span data-ttu-id="3a11a-110">在"希望如何使用移动应用？"下，选择要用于登录的方法：</span><span class="sxs-lookup"><span data-stu-id="3a11a-110">Under How do you want to use the mobile app?, select the method you want to use to sign in:</span></span>
-    - <span data-ttu-id="3a11a-111">选择 **"接收验证通知"，** 直接从移动应用进行身份验证，其中可能包括指纹身份验证。</span><span class="sxs-lookup"><span data-stu-id="3a11a-111">Select **Receive notifications for verification** to authenticate directly from your mobile app, which may include fingerprint authentication.</span></span>
-    - <span data-ttu-id="3a11a-112">选择 **"使用验证码** "以每次进行身份验证时输入新的验证码。</span><span class="sxs-lookup"><span data-stu-id="3a11a-112">Select **Use verification code** to enter a new verification code each time you authenticate.</span></span>
-1. <span data-ttu-id="3a11a-113">选择 **设置**。</span><span class="sxs-lookup"><span data-stu-id="3a11a-113">Choose **Set up**.</span></span>
-1. <span data-ttu-id="3a11a-114">使 **"配置移动应用"** 窗口在计算机上保持打开状态。</span><span class="sxs-lookup"><span data-stu-id="3a11a-114">Leave the **Configure mobile app** window open on your computer.</span></span>
-1. <span data-ttu-id="3a11a-115">在移动设备上，转到应用商店，搜索"Microsoft Authenticator"，选择它，安装它，然后打开它。</span><span class="sxs-lookup"><span data-stu-id="3a11a-115">On your mobile device, go to the app store, search for "Microsoft Authenticator," select it, install it, and open it.</span></span>
-1. <span data-ttu-id="3a11a-116">在Authenticator中，按照提示完成向导，然后选择加号 (+) 添加帐户。</span><span class="sxs-lookup"><span data-stu-id="3a11a-116">In Authenticator, follow the prompts to complete the wizard, and then choose the plus (+) sign to add your account.</span></span>
-1. <span data-ttu-id="3a11a-117">选择 **"工作或** 学校帐户"，在系统提示授予拍摄图片和录制视频的权限时选择"允许"，然后按照说明扫描计算机上打开窗口中的 QR 代码。 </span><span class="sxs-lookup"><span data-stu-id="3a11a-117">Choose **Work or school account**, choose **Allow** when prompted for permission to take pictures and record video, and then follow the instructions to scan the QR code in the open window on your computer.</span></span>
-1. <span data-ttu-id="3a11a-118">添加帐户后，选择"**获得它"。**</span><span class="sxs-lookup"><span data-stu-id="3a11a-118">After the account has been added, choose **Got It**.</span></span>
-1. <span data-ttu-id="3a11a-119">在计算机上，选择"下一 **步"，** 然后再次选择" **下一步** "。</span><span class="sxs-lookup"><span data-stu-id="3a11a-119">On your computer, choose **Next**, and then choose **Next** again.</span></span>
-1. <span data-ttu-id="3a11a-120">记下移动设备上显示的代码，在步骤 **2** 下的框中输入您计算机上代码，然后选择"验证 **"。**</span><span class="sxs-lookup"><span data-stu-id="3a11a-120">Make a note of the code that appears on your mobile device, enter the code on your computer in the box under **Step 2**, and then choose **Verify**.</span></span>
-1. <span data-ttu-id="3a11a-121">在"步骤 **3"下的** 框中，输入备份电话号码，如办公室号码，选择"下一步"，然后选择"完成 **"。**</span><span class="sxs-lookup"><span data-stu-id="3a11a-121">In the boxes under **Step 3**, enter a backup phone number, such as your office number, choose **Next**, and then choose **Done**.</span></span>
+1. <span data-ttu-id="7bdc0-108">登录 时 [https://office.com](https://office.com) ，你将看到"需要 **更多信息"** 提示。</span><span class="sxs-lookup"><span data-stu-id="7bdc0-108">When you sign in to [https://office.com](https://office.com), you'll see the **More information required** prompt.</span></span> <span data-ttu-id="7bdc0-109">选择“**下一步**”。</span><span class="sxs-lookup"><span data-stu-id="7bdc0-109">Choose **Next**.</span></span>
+1. <span data-ttu-id="7bdc0-110">在 **"步骤 1"\*\*\*\*下，** 从"身份验证电话 **"** 下拉列表中选择"移动应用"。</span><span class="sxs-lookup"><span data-stu-id="7bdc0-110">Under **Step 1**, choose **Mobile app** from the **Authentication phone** drop-down list.</span></span>
+1. <span data-ttu-id="7bdc0-111">在"希望如何使用移动应用？"下，选择要用于登录的方法：</span><span class="sxs-lookup"><span data-stu-id="7bdc0-111">Under How do you want to use the mobile app?, select the method you want to use to sign in:</span></span>
+    - <span data-ttu-id="7bdc0-112">选择 **"接收验证通知"，** 直接从移动应用进行身份验证，其中可能包括指纹身份验证。</span><span class="sxs-lookup"><span data-stu-id="7bdc0-112">Select **Receive notifications for verification** to authenticate directly from your mobile app, which may include fingerprint authentication.</span></span>
+    - <span data-ttu-id="7bdc0-113">选择 **"使用验证码** "以每次进行身份验证时输入新的验证码。</span><span class="sxs-lookup"><span data-stu-id="7bdc0-113">Select **Use verification code** to enter a new verification code each time you authenticate.</span></span>
+1. <span data-ttu-id="7bdc0-114">选择 **设置**。</span><span class="sxs-lookup"><span data-stu-id="7bdc0-114">Choose **Set up**.</span></span>
+1. <span data-ttu-id="7bdc0-115">使 **"配置移动应用"** 窗口在计算机上保持打开状态。</span><span class="sxs-lookup"><span data-stu-id="7bdc0-115">Leave the **Configure mobile app** window open on your computer.</span></span>
+1. <span data-ttu-id="7bdc0-116">在移动设备上，转到应用商店，搜索"Microsoft Authenticator"，选择它，安装它，然后打开它。</span><span class="sxs-lookup"><span data-stu-id="7bdc0-116">On your mobile device, go to the app store, search for "Microsoft Authenticator," select it, install it, and open it.</span></span>
+1. <span data-ttu-id="7bdc0-117">在Authenticator中，按照提示完成向导，然后选择加号 (+) 添加帐户。</span><span class="sxs-lookup"><span data-stu-id="7bdc0-117">In Authenticator, follow the prompts to complete the wizard, and then choose the plus (+) sign to add your account.</span></span>
+1. <span data-ttu-id="7bdc0-118">选择 **"工作或** 学校帐户"，在系统提示授予拍摄图片和录制视频的权限时选择"允许"，然后按照说明扫描计算机上打开窗口中的 QR 代码。 </span><span class="sxs-lookup"><span data-stu-id="7bdc0-118">Choose **Work or school account**, choose **Allow** when prompted for permission to take pictures and record video, and then follow the instructions to scan the QR code in the open window on your computer.</span></span>
+1. <span data-ttu-id="7bdc0-119">添加帐户后，选择"**获得它"。**</span><span class="sxs-lookup"><span data-stu-id="7bdc0-119">After the account has been added, choose **Got It**.</span></span>
+1. <span data-ttu-id="7bdc0-120">在计算机上，选择"下一 **步"，** 然后再次选择" **下一步** "。</span><span class="sxs-lookup"><span data-stu-id="7bdc0-120">On your computer, choose **Next**, and then choose **Next** again.</span></span>
+1. <span data-ttu-id="7bdc0-121">记下移动设备上显示的代码，在步骤 **2** 下的框中输入您计算机上代码，然后选择"验证 **"。**</span><span class="sxs-lookup"><span data-stu-id="7bdc0-121">Make a note of the code that appears on your mobile device, enter the code on your computer in the box under **Step 2**, and then choose **Verify**.</span></span>
+1. <span data-ttu-id="7bdc0-122">在"步骤 **3"下的** 框中，输入备份电话号码，如办公室号码，选择"下一步"，然后选择"完成 **"。**</span><span class="sxs-lookup"><span data-stu-id="7bdc0-122">In the boxes under **Step 3**, enter a backup phone number, such as your office number, choose **Next**, and then choose **Done**.</span></span>
