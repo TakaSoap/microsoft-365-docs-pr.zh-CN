@@ -1,8 +1,9 @@
 ---
 title: 文档理解与表单处理模型之间的差异
-ms.author: efrene
-author: efrene
+ms.author: chucked
+author: chuckedmonson
 manager: pamgreen
+ms.reviewer: lauriellis
 audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -12,15 +13,14 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: 描述文档理解与表单处理模型之间的主要差异
-ms.openlocfilehash: f12cc46e1ffcbc610f50ba327e22ad46a2591521
-ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
+ms.openlocfilehash: f19017ce8b748644177ac00f4daf7cb29ad522c6
+ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51222265"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "52706506"
 ---
 # <a name="difference-between-document-understanding-and-form-processing-models"></a>文档理解与表单处理模型之间的差异 
-
 
 通过 Microsoft SharePoint Syntex 中的内容理解功能，你可以识别上传到 SharePoint 文档库的文档、对其进行分类并从每个文件中提取相关信息。  例如，当文件上传到 SharePoint 文档库中时，所有被识别为 *采购订单* 的文件都被归类为采购订单，然后在自定义文档库视图中显示。 此外，可从每个文件中提取特定信息（例如， *PO 编号* 和 *总数*），并将其显示为文档库视图中的一列。 
 
@@ -36,16 +36,14 @@ ms.locfileid: "51222265"
 > [!NOTE]
 > 有关表单处理和文档理解方案示例的详细信息，请参阅 [SharePoint Syntex 采纳：入门指南](./adoption-getstarted.md)。
 
-
 ## <a name="structured-versus-unstructured-and-semi-structured-content"></a>结构化内容与非结构化和半结构化内容的比较
 
 使用文档理解模型从信件或合同等非结构化文档中识别和提取数据，在这些文档中，所需提取的文本实体位于文档的句子或特定区域中。 例如，一个非结构化的文件可以是一份可以用不同的方式来写的续签合同书。 然而，每份合同续签文档的正文中都有一致的信息，例如 *服务开始日期* 的文本字符串，后是实际日期。
 
-使用表单处理模型来识别文件，并从结构化或半结构化的文件（如表单或发票）中提取数据。 表单处理模型将通过示例文档来进行训练，从而了解表单的布局，并学会从相似的位置查找需要提取的数据。 表单通常具有结构化程度更高的布局，其中的实体均位于同一位置（例如，纳税表单中的社会保险号）。
+使用表单处理模型识别文件并从结构化或半结构化文档（如表单或发票）中提取数据。表单处理模型经过培训，可了解示例文档中表单的布局，并学习查找从相似位置提取的数据。窗体通常具有更结构化的布局，其中实体位于同一位置（例如，税务表单中的社会保险号）。
 
 > [!NOTE]
 > 必须有访问内容中心站点的权限，才能创建文档理解模型或将其应用于SharePoint文档库。 
-
 
 ## <a name="where-models-are-created"></a>模型创建位置
 
@@ -78,7 +76,7 @@ ms.locfileid: "51222265"
 | 位置 | 受过使用单个文档库的培训。| 可应用于多个库。|
 | 支持的文件类型| PDF、JPG、PNG 格式的培训，共50MB，500页。| 培训 5-10 个 PDF、Office 或电子邮件文件，包括反面例子。<br>Office 文件以 64k 字符为截断标准。 OCR 扫描的文件限制为 20 页以内。|
 | 与托管元数据集成 | 不支持 | 是，通过训练实体提取程序引用配置的托管元数据字段。|
-| 启用 Microsoft 信息保护时合规性功能集成 | 设置已发布的保留标签。<br>即将设置敏感度标签。 | 设置已发布的保留标签。<br>即将设置敏感度标签。 |
+| 启用 Microsoft 信息保护时合规性功能集成 | 设置已发布的保留标签。<br>即将设置敏感度标签。 | 设置已发布的保留标签。<br>设置发布的敏感度标签。 |
 | 支持的区域| 表单处理依赖于 Power Platform。 有关 Power Platform 和 AI Builder 的全球可用性信息，请参阅 [Power Platform 可用性](https://dynamics.microsoft.com/geographic-availability/)。 | 在所有地区可用。|
 | 交易性成本 | AI 生成器点数。<br>可分批购买 1M 的积分。<br>购买 300 个以上的 SharePoint Syntex 许可证，即可获得 1M 积分。<br>1M 积分可以处理 2000 个文件页。<br>| 不适用 |
 | 容量 | 使用默认的 Power Platform 环境（支持 Dataverse 数据库的自定义环境）。 | 没有容量限制。|

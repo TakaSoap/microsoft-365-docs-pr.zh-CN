@@ -22,12 +22,12 @@ search.appverid:
 - GEA150
 ms.assetid: b5b633ba-1e56-4a98-8ff5-2acaac63a5c8
 description: 了解如何使用 InterNIC 搜索查找域注册机构和 DNS 托管提供商。
-ms.openlocfilehash: 434e30709b112cf591159a1692540b8ef2b6bb65
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+ms.openlocfilehash: af883f53c8c45aee2594b0f5b8b9da57e5717f9e
+ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49655538"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "52706390"
 ---
 # <a name="find-your-domain-registrar"></a>查找域注册机构
 
@@ -40,11 +40,11 @@ ms.locfileid: "49655538"
 >[!NOTE]
 > 只有以 *.COM*、*.NET* 和 *.EDU* 结尾的域才可以使用此工具。
   
-1. 在 [InterNIC 搜索页面](https://go.microsoft.com/fwlink/p/?LinkId=402770)上的“**Whois 搜索**”框中，键入你的域。 例如  *contoso.com。* 
+1. 在 [InterNIC](https://go.microsoft.com/fwlink/p/?LinkId=402770)页面上的 **Whois 搜索** 框中，键入你的域。例如，  *contoso.com。* 
     
 2. 选择"**域**"选项，然后选择"**提交**"。
     
-3. 在" **Whois 搜索结果**"页上，查找" **注册机构**"条目。 此条目列出了针对您的域提供注册机构服务的组织的名称。 
+3. 在“**Whois 搜索结果**”页上，查找“**注册机构**”条目。此条目列出了针对您的域提供注册机构服务的组织的名称。 
     
 ## <a name="dns-hosting-provider"></a>DNS 托管提供商
   
@@ -53,13 +53,13 @@ ms.locfileid: "49655538"
 >[!NOTE]
 > 只有以 *.COM*、*.NET* 和 *.EDU* 结尾的域才可以使用此工具。
   
-1. 在 [InterNIC]( https://go.microsoft.com/fwlink/p/?LinkId=402770) 搜索页面上的" **Whois 搜索**"框中，键入你的域。 例如，contoso.com。 
+1. 在 [InterNIC]( https://go.microsoft.com/fwlink/p/?LinkId=402770)页面上的 **Whois 搜索** 框中，键入你的域。例如，contoso.com。 
     
 2. 选择"**域**"选项，然后选择"**提交**"。
     
 3. 在“**Whois 搜索结果**”页上，查找第一个“**名称服务器**”条目。 
     
-4. 复制在冒号 (:) 之后显示的名称服务器 (NS) 信息，然后将其粘贴到页面顶部的" **搜索**"框中。 选择"**名称服务器**"，然后选择"**提交**"。
+4. 复制在冒号 (:) 之后显示的名称服务器 (NS) 信息，然后将其粘贴到页面顶部的“**搜索**”框中。选择“**名称服务器**”，然后单击“**提交**”。
     
 5. 在“**Whois 搜索结果**”页上，查找“**注册机构**”条目。此条目列出了拥有您的域的名称服务器的 DNS 托管提供商。 
     

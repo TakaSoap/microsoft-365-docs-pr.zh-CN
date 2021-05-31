@@ -13,12 +13,12 @@ ms.collection:
 search.appverid: MET150
 localization_priority: Priority
 description: 在Project Cortex中设置对内容的理解
-ms.openlocfilehash: 2f9fd4e035152a127f9f1c254f4c489a6ca4c976
-ms.sourcegitcommit: f000358c01a8006e5749a86b256300ee3a73174c
+ms.openlocfilehash: 7589003505aafb480872b14a09c383cfbe0dff40
+ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2021
-ms.locfileid: "51994696"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52683544"
 ---
 # <a name="set-up-sharepoint-syntex"></a>设置 SharePoint Syntex
 
@@ -31,7 +31,7 @@ ms.locfileid: "51994696"
 
 可在 Microsoft 365 管理中心内的初始设置后更改你的设置。
 
-设置前，请确保计划在环境中设置和配置内容理解的最佳方式。 例如，你需要做出以下决策：
+设置之前，请确保规划在环境中设置和配置内容了解的最佳方式。例如，你需要做出以下决策：
 
 - 要启用表单处理的 SharePoint 网站 - 所有网站、部分网站或所选网站
 - 内容中心的名称和管理员
@@ -42,6 +42,8 @@ ms.locfileid: "51994696"
 > 必须拥有全局管理员或 SharePoint 管理员权限，才能访问 Microsoft 365 管理中心并设置 SharePoint Syntex。
 
 作为管理员，你还可在设置后随时对所选择的设置进行更改，并在整个 Microsoft 365 管理中心中的内容理解管理中设置。
+
+如果计划使用自定义 Power Platform 环境，必须 [在此环境中安装 *用于 Project Cortex 的 AI 生成器* 应用](/power-platform/admin/manage-apps#install-an-app-in-the-environment-view)，以及向其 [分配 AI 生成器点数](/power-platform/admin/capacity-add-on)，然后才能创建表单处理模型。
 
 ### <a name="licensing"></a>许可
 
@@ -67,9 +69,9 @@ ms.locfileid: "51994696"
 
 1. 在 Microsoft 365 管理中心中，选择“**设置**”，然后查看“**文件和内容**”部分。
 
-2. 在“**文件和内容**”部分中，选择“**自动内容理解**”。<br/>
+2. 在“**文件和内容**”部分中，选择“**自动内容理解**”。 请注意，当前 AI 生成器点数可用性在“**概览**”部分中显示。<br/>
 
-3. 在 **自动理解内容** 页面上，单击 **开始**， 以逐步完成设置流程。<br/>
+3. 在 **自动理解内容** 页面上，单击 **开始**， 以逐步完成设置流程。 <br/>
 
     > [!div class="mx-imgBorder"]
     > ![开始设置](../media/content-understanding/admin-content-understanding-get-started.png)</br>
@@ -93,7 +95,7 @@ ms.locfileid: "51994696"
 
     对于 **Power Platform 环境**，可以选择：
     - **使用默认环境** 以使用默认 Power Platform 环境。
-    - **使用自定义环境** 以使用某个自定义环境。 请从列表中选择要使用的环境。 必须在此环境中安装 *适用于 Project Cortex 的 AI 生成器*，并在可以创建表单处理模型之前向其分配 AI 生成器点数。
+    - **使用自定义环境** 以使用某个自定义环境。 请从列表中选择要使用的环境。 （[请参阅自定义环境的要求](/microsoft-365/contentunderstanding/set-up-content-understanding#requirements)）。
 
     单击“**下一步**”。
 

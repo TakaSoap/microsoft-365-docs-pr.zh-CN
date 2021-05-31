@@ -16,12 +16,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: 使用 Exchange Online 监视获取有关 Microsoft 365 中电子邮件事件或通报信息。
-ms.openlocfilehash: 53dc7f990f57fd8d4da68bd424947676cbf0e85d
-ms.sourcegitcommit: d81c7cea85af6ad5fef81d3c930514a51464368c
+ms.openlocfilehash: ee31f8e152d7c54e37b850563bea57971e07f61c
+ms.sourcegitcommit: 76c91e7b0d3172de57988eb4576d2b91c2f9ce18
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "49572851"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "52707292"
 ---
 # <a name="exchange-online-monitoring-for-microsoft-365"></a>用于 Microsoft 365 的 Exchange Online 监视
 
@@ -49,9 +49,9 @@ ms.locfileid: "49572851"
 
 对于满足这些要求的客户，将启用此预览版： 
 
-- 你的组织必须从以下产品之一或其组合中获取至少 10,000 的许可证计数：Office 365 E3、Microsoft 365 E3、Office 365 E5、Microsoft 365 E5。 
+- 你的组织需要从以下产品之一或其组合中获取至少 5,000 的许可证计数：Office 365 E3、Microsoft 365 E3、Office 365 E5、Microsoft 365 E5。 
 
-  例如，你的组织可以拥有 3,000 个 Office 365 E3 许可证，8,500 个 Microsoft 365 E5，即总计拥有 11,500 个合格产品许可证。
+  例如，你的组织可以具有 3,000 个 Office 365 E3 许可证，2,500 个 Microsoft 365 E5，即总计拥有 5,500 个合格产品许可证。
 
 - 你的组织需要拥有至少50 个 Exchange Online 月活跃用户。
 
@@ -95,10 +95,10 @@ ms.locfileid: "49572851"
 
 然后，请确保满足以下两项要求： 
 
-- 你的组织必须从以下产品之一或其组合中获取至少 10,000 的许可证计数：Office 365 E3、Microsoft 365 E3、Office 365 E5、Microsoft 365 E5。 
-- 你的组织需要拥有至少50 个 Exchange Online 月活跃用户。
+- 你的组织需要从以下产品之一或其组合中获取至少 5,000 的许可证计数：Office 365 E3、Microsoft 365 E3、Office 365 E5、Microsoft 365 E5。 
+- 你的组织需要具有至少50 个 Exchange Online 月活跃用户。
 
-如果你的组织的许可证计数低于 10,000 个用户，且月活跃用户低于 50 个，则在满足这些要求之前，不会启用 Exchange Online 监视。
+如果组织的许可证计数低于 5,000 个用户，且月活跃用户低于 50，则在满足这些要求之前，将不会启用 Exchange Online 监视。
 
 #### <a name="2-the-active-user-count-in-the-dashboard-for-each-client-appears-to-be-low-we-have-a-lot-of-active-licenses-assigned-to-users-what-does-this-mean"></a>2. 仪表板中每个客户端的活动用户账户计数似乎很低。 向用户分配了大量活动的许可证。 这意味着什么？ 
 
@@ -132,5 +132,5 @@ Microsoft 已直接在 Microsoft 365 管理中心中的 **服务运行状况** �
 
 #### <a name="7-where-is-the-data-instrumented-for-the-scenarios-that-show-activity-trends"></a>7. 在哪里处理这些用于显示活动趋势的方案的数据？
 
-在 Exchange Online 服务中处理这些数据。 如果在请求到达 Exchange Online 之前出现错误，或 Exchange Online 出现错误，将会看到活动信号下降。
+数据在 Exchange Online 服务中进行处理。如果在请求到达 Exchange Online 之前出现错误，或 Exchange Online 出现错误，将会看到活动信号下降。
 

@@ -17,20 +17,21 @@ ms.custom:
 - adminvideo
 search.appverid:
 - MET150
-description: 了解 Microsoft 365 商业版的功能。
+description: 了解 Microsoft 365 商业高级版，这是一种处理 IT 部分的订阅服务。
 feedback_system: None
 ms.date: 7/28/2020
-ms.openlocfilehash: 336d206b3853baa2bdde5d925113dc0887919da7
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 3f0c184cd0e0e6392f66d049b46930031e054bbe
+ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245176"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "52705662"
 ---
 # <a name="microsoft-365-business-premium"></a>Microsoft 365 商业高级版
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2mhaA?autoplay=false]
+## <a name="watch-what-is-microsoft-365-business-premium"></a>观看：什么是 Microsoft 365 商业高级版
 
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2mhaA?autoplay=false]
 
 Microsoft 365商业高级版是一项订阅服务，可让您在云中运行组织，而Microsoft则为您处理IT，管理设备，防御现实威胁并为组织提供最新的业务软件。
 
