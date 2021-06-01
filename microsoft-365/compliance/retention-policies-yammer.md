@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解适用于 Yammer 的保留策略。
-ms.openlocfilehash: 0426fdf04090e535a99f8acd3bf376adfb016796
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 1b99d0915cfb159f821818fb1425d7191a011351
+ms.sourcegitcommit: cebbdd393dcfd93ff43a1ab66ad70115853f83e7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50917798"
+ms.lasthandoff: 06/01/2021
+ms.locfileid: "52710702"
 ---
 # <a name="learn-about-retention-for-yammer"></a>了解用于 Yammer 的保留
 
@@ -49,7 +49,7 @@ ms.locfileid: "50917798"
 
 可使用保留策略在 Yammer 中保留和删除社区消息和私人消息。 私人消息存储在消息中的每个用户邮箱中的隐藏文件夹内，社区消息存储在社区组邮箱中类似的隐藏文件夹中。
 
-Yammer 消息不受针对用户或组邮箱配置的保留策略影响。 即使 Yammer 消息存储在 Exchange 中，此 Yammer 数据仍将仅包含在针对 **Yammer 社区消息** 和 **Yammer 私人消息** 位置配置的保留策略中。
+Yammer 消息不受针对用户或组邮箱配置的保留策略影响。 即使 Yammer 消息存储在 Exchange 中，此 Yammer 数据仍将仅包含在针对 **Yammer 社区消息** 和 **Yammer 用户消息** 位置配置的保留策略中。
 
 > [!NOTE]
 > 如果用户包含在保留 Yammer 数据的活动保留策略中，并且删除了包含在此策略中的用户邮箱，为了保留 Yammer 数据，邮箱会转换为[非活动邮箱](inactive-mailboxes-in-office-365.md)。 如果不需要为用户保留此 Yammer 数据，请在删除用户的邮箱之前，将用户帐户从保留策略中排除。
@@ -88,13 +88,13 @@ Yammer 消息不受针对用户或组邮箱配置的保留策略影响。 即使
 
 ## <a name="messages-and-external-users"></a>消息和外部用户
 
-默认情况下，Yammer 私人消息的保留策略应用于组织中的所有用户，但不应用于外部用户。 如果使用 **选择用户** 并指定其帐户，则可以向外部用户应用保留策略。 
+默认情况下，Yammer 用户消息的保留策略应用于组织中的所有用户，但不应用于外部用户。 如果使用 **选择用户** 并指定其帐户，则可以向外部用户应用保留策略。 
 
 目前，不支持 Azure B2B 来宾用户。
 
 ## <a name="when-a-user-leaves-the-organization"></a>如果某用户离开组织 
 
-如果用户离开你的组织，并且其 Microsoft 365 帐户被删除，则其要保留的 Yammer 私人消息将存储在非活动邮箱中。 这些消息仍受用户在其邮箱变为非活动状态之前所应用的任何保留策略的约束，并且内容支持电子数据展示搜索。 有关详细信息，请参阅 [Exchange Online 中的非活动邮箱](inactive-mailboxes-in-office-365.md)。 
+如果用户离开你的组织，并且其 Microsoft 365 帐户被删除，则其要保留的 Yammer 用户消息将存储在非活动邮箱中。 这些消息仍受用户在其邮箱变为非活动状态之前所应用的任何保留策略的约束，并且内容支持电子数据展示搜索。 有关详细信息，请参阅 [Exchange Online 中的非活动邮箱](inactive-mailboxes-in-office-365.md)。 
 
 如果用户在 Yammer 中存储了任何文件，请参阅 SharePoint 和 OneDrive 的[等效部分](retention-policies-sharepoint.md#when-a-user-leaves-the-organization)。
 
@@ -102,7 +102,7 @@ Yammer 消息不受针对用户或组邮箱配置的保留策略影响。 即使
 
 Yammer 保留策略目前处于预览阶段，我们正在不断努力优化保留功能。 在此期间，在对 Yammer 社区消息和私人消息使用保留时，需要注意以下几个限制：
 
-- 为“**Yammer 私人消息**”位置选择“**选择用户**”时，你可能会看到来宾和非邮箱用户。 保留策略并非专为这些用户设计的，因此请不要选择他们。
+- 为“**Yammer 用户消息**”位置选择“**选择用户**”时，可能看到来宾和非邮箱用户。 保留策略并非专为这些用户设计的，因此请不要选择他们。
 
 ## <a name="configuration-guidance"></a>配置指南
 

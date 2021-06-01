@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用保留策略有效掌控用户使用电子邮件、文档和对话生成的内容。 保留所需内容并删除不需要的内容。
-ms.openlocfilehash: 1faeae5dc145d6f908f9137387b875c890d22e14
-ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
+ms.openlocfilehash: 7b23ed2b45a24e8999785909f9357043bef731e5
+ms.sourcegitcommit: cebbdd393dcfd93ff43a1ab66ad70115853f83e7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52280423"
+ms.lasthandoff: 06/01/2021
+ms.locfileid: "52710690"
 ---
 # <a name="create-and-configure-retention-policies"></a>创建和配置保留策略
 
@@ -54,7 +54,7 @@ ms.locfileid: "52280423"
 - Teams 通道消息
 - Teams 聊天
 - yammer 社区消息
-- Yammer 私人消息
+- Yammer 用户消息
 
 如果你在创建保留策略时选择 Teams 或 Yammer 位置，其他位置将被自动排除。 这意味着遵循的说明取决于你需要包括 Teams 还是 Yammer 位置：
 
@@ -130,11 +130,11 @@ Teams 不只是聊天和频道消息。 如果你有从 Microsoft 365 组（以�
     
     请勿选择 **使用高级保留设置** ，因为这并不支持 Yammer 位置。 
 
-4. 有关 **选择位置** 的页面，请选择 **“让我选择特定位置”**。 然后切换到 Yammer 的一个或两个位置： **Yammer 社区消息** 和 **Yammer 私人消息**。
+4. 有关 **选择位置** 的页面，请选择 **“让我选择特定位置”**。 然后切换到 Yammer 的一个或两个位置：**Yammer 社区消息** 和 **Yammer 用户消息**。
     
     默认情况下，将选中所有社区和用户，但你可以通过指定要包括或排除的社区和用户来优化此设置。
     
-    关于 Yammer 私人消息： 
+    对于 Yammer 用户消息： 
     - 如果你保留 **“所有”** 默认值，则不包含 Azure B2B 来宾用户。 
     - 如果使用 **“选择用户”** 并指定其帐户，则可以向外部用户应用保留策略。
 

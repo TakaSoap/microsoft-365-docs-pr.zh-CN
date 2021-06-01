@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解有助于保留所需内容并删除不需要内容的保留策略和保留标签。
-ms.openlocfilehash: ba17a94fa4ae0d12405cc7e38d7d74e90fa7ad02
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: ab02559a439899fe25a560aa52718045b730ebd4
+ms.sourcegitcommit: cebbdd393dcfd93ff43a1ab66ad70115853f83e7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52625217"
+ms.lasthandoff: 06/01/2021
+ms.locfileid: "52710714"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>了解保留策略和保留标签
 
@@ -116,7 +116,7 @@ ms.locfileid: "52625217"
 - Teams 通道消息
 - Teams 聊天
 - yammer 社区消息
-- Yammer 私信
+- Yammer 用户消息
 
 可以非常高效地将一个策略应用于多个位置，也可以应用于特定的位置或用户。
 
@@ -308,7 +308,7 @@ Office 365 安全与合规中心的保留标签概述信息与 **“信息管理
     
     该Marketing SharePoint网站中的文档将保留十年，因为这是最长的保留期。
 
-3. **显式包含优先于隐式包含。** 适用于确定何时删除项目： 
+3. **显式删除优先于隐式删除。** 现在保留冲突已经解决，只有删除冲突仍然存在： 
     
     1. 与保留策略相比，保留标签（无论如何应用）都提供了显式保留，因为保留设置将应用于单个项目，而不是从容器隐式分配。 这意味着从保留标签删除操作始终优先于从任何保留策略删除操作。
         
