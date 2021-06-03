@@ -17,12 +17,12 @@ search.appverid:
 - SPO160
 - MET150
 description: 本文介绍了如何使用门户启动计划程序启动门户
-ms.openlocfilehash: fdf92f2bbdfb673f1db446b562e941d61679fa9a
-ms.sourcegitcommit: 5377b00703b6f559092afe44fb61462e97968a60
+ms.openlocfilehash: ac55a5b0cc9d252642c890b78ccec1ba720f0957
+ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52694349"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "52730254"
 ---
 # <a name="launch-your-portal-using-the-sharepoint-portal-launch-scheduler"></a>使用门户启动计划SharePoint启动门户
 
@@ -120,7 +120,7 @@ ms.locfileid: "52694349"
 
 ### <a name="launch-portal-with-over-100k-users"></a>拥有 10 万多个用户的启动门户
 
-如果计划迁移超过 100TB，请按照下面列出的步骤提交支持请求。 请确保包含所有请求的信息。
+如果计划启动拥有 100，000 多个用户的门户，请按照下面列出的步骤提交支持请求。 请确保包含所有请求的信息。
 
 请按以下步骤操作：
 1. 导航到 https://admin.microsoft.com
@@ -137,7 +137,7 @@ ms.locfileid: "52694349"
 8. 创建票证后，请确保向支持专员提供以下信息：
 - 启动门户 URL 的 
 - 预期用户数
-- 估计启动时间 
+- 预计启动时间 
 
 ## <a name="make-changes-to-a-scheduled-portal-launch"></a>对计划的门户启动进行更改
 
@@ -267,7 +267,7 @@ The SharePoint Portal launch scheduler tool was originally only available via [S
 
 2. 验证所有用户是否未发生重定向。
 
-## <a name="learn-more"></a>了解详细信息
+## <a name="learn-more"></a>了解更多
 
 [在 SharePoint Online 中规划门户启动推出计划](./planportallaunchroll-out.md)
 

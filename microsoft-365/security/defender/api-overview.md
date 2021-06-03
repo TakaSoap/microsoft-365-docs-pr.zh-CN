@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 496ad5695d9cd491817bad5daf3c76a02addefd1
-ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
+ms.openlocfilehash: b19a6072be5f97b90c117f053ccae4593587c43d
+ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51904184"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "52730888"
 ---
 # <a name="overview-of--microsoft-365-defender-apis"></a>Microsoft 365 Defender API 概述
 
@@ -46,6 +46,9 @@ Microsoft 365Defender 基于集成就绪平台构建。
 
 - **[跨产品威胁搜寻](api-advanced-hunting.md)** - 通过创建自己的自定义查询来筛选跨多个保护产品收集的原始数据，利用安全团队的组织知识搜寻泄露的迹象。
 
+使用 [流式处理 API](../defender-endpoint/raw-data-export.md) 在单个数据流中发生时提供实例中的实时事件和警报。
+
+
 除了这些Microsoft 365 Defender 特定 API 外，我们的每个其他安全产品都公开了其他[API，](api-articles.md)以帮助你充分利用它们的独特功能。
 
 
@@ -53,7 +56,7 @@ Microsoft 365Defender 基于集成就绪平台构建。
 > 转换到统一门户应该不会影响基于 Microsoft Defender for Endpoint API 的 PowerBi 仪表板。 无论交互式门户转换如何，都可以继续使用现有 API。
 
 
-## <a name="learn-more"></a>了解详细信息
+## <a name="learn-more"></a>了解更多
 
 | **了解如何访问 API** |
 |-|

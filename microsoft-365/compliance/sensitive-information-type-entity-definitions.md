@@ -19,12 +19,12 @@ hideEdit: true
 feedback_system: None
 recommendations: false
 description: 安全 (DLP) 中的数据丢失防护包括 200 多种可供您用于 DLP 策略 &amp; 的敏感信息类型。 本文列出了所有这些敏感信息类型，并演示 DLP 策略在检测到每种类型时查找的信息。
-ms.openlocfilehash: 0f3de14466cf9d2ebf5550eaec002bd4dea6e435
-ms.sourcegitcommit: 1206319a5d3fed8d52a2581b8beafc34ab064b1c
+ms.openlocfilehash: ff976389e75e96d0a018d7c5379e2831313388dc
+ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/29/2021
-ms.locfileid: "52086725"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "52730470"
 ---
 # <a name="sensitive-information-type-entity-definitions"></a>敏感信息类型属性定义
 
@@ -38,18 +38,17 @@ ms.locfileid: "52086725"
 
 ### <a name="pattern"></a>模式
 
-格式化：
-- 四个数字，以 0、1、2、3、6、7 或 8 开头
-- 连字符
+- 00-12、21-32、61-72 或 80 之间的两个数字
+- 两个数字
+- 可选连字符
 - 四个数字
-- 连字符
+- 可选连字符
 - 一个数字
 
-无格式：九个以 0、1、2、3、6、7 或 8 开头的连续数字 
 
 ### <a name="checksum"></a>校验和
 
-否
+是
 
 ### <a name="definition"></a>定义
 
@@ -427,12 +426,12 @@ DLP 策略在 300 个字符的邻近范围内检测到这种类型的敏感信�
 - 两个数字 
 - 五个数字或字母 (不区分大小写) 
 
-OR
+或
 
 - 一到两个可选字母 (不区分大小写)  
 - 四到九个数字
 
-OR
+或
 
 - 九个数字或字母 (不区分大小写) 
 
@@ -619,11 +618,12 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 
 ### <a name="format"></a>Format
 
-一个字母后跟七个数字
+八个或九个字母数字字符 
 
 ### <a name="pattern"></a>模式
 
-字母 (不区分大小写) 后跟七个数字
+- 一个字母 (N、E、D、F、A、C、U、X) 后跟 7 个数字或
+- 2 个字母 (PA、PB、PC、PD、PE、PF、PU、PW、PX、PZ) 后跟 7 个数字。
 
 ### <a name="checksum"></a>校验和
 
@@ -632,60 +632,48 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 ### <a name="definition"></a>定义
 
 DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息，可信度中等：
-- 正则表达式 Regex_australia_passport_number 找到与该模式匹配的内容。
-- 找到来自Keyword_passport或Keyword_australia_passport_number关键字。
+- 正则表达式查找 `Regex_australia_passport_number` 与模式匹配的内容。
+- 找到 的 `Keyword_australia_passport_number` 关键字。
+
+DLP 策略在 300 个字符的邻近范围内检测到这种类型的敏感信息时，其置信度较低：
+- 正则表达式查找 `Regex_australia_passport_number` 与模式匹配的内容。
 
 ```xml
-<!-- Australia Passport Number -->
-<Entity id="29869db6-602d-4853-ab93-3484f905df50" patternsProximity="300" recommendedConfidence="75">
-  <Pattern confidenceLevel="75">
+    <!-- Australia Passport Number -->
+    <Entity id="29869db6-602d-4853-ab93-3484f905df50" patternsProximity="300" recommendedConfidence="75" relaxProximity="true">
+      <Pattern confidenceLevel="75">
         <IdMatch idRef="Regex_australia_passport_number" />
-        <Any minMatches="1">
-          <Match idRef="Keyword_passport" />
-          <Match idRef="Keyword_australia_passport_number" />
-        </Any>
-   </Pattern>
-</Entity>   
+        <Match idRef="Keyword_australia_passport_number" />
+      </Pattern>
+      <Pattern confidenceLevel="65">
+        <IdMatch idRef="Regex_australia_passport_number" />
+      </Pattern>
+    </Entity>  
 ```
 
 ### <a name="keywords"></a>关键字
 
-#### <a name="keyword_passport"></a>Keyword_passport
-
-- Passport Number
-- Passport No
-- Passport #
-- Passport#
-- PassportID
-- Passportno
-- passportnumber
-- パスポート
-- パスポート番号
-- パスポのNum
-- パスポート ＃ 
-- Numéro de passeport
-- Passeport n °
-- Passeport Non
-- Passeport #
-- Passeport#
-- PasseportNon
-- Passeportn °
-
 #### <a name="keyword_australia_passport_number"></a>Keyword_australia_passport_number
 
-- passport
+- passport#
+- passport#
+- passportid
+- passports
+- passportno
+- passport no
+- passportnumber
+- passport number
+- passportnumbers
+- passport numbers
 - passport details
 - immigration and citizenship
 - commonwealth of australia
 - department of immigration
-- residential address
-- department of immigration and citizenship
-- visa
 - national identity card
-- passport number
 - travel document
 - issuing authority
-   
+
+
 ## <a name="australia-tax-file-number"></a>澳大利亚税务文件编号
 
 ### <a name="format"></a>Format
@@ -16772,7 +16760,7 @@ DLP 策略在 300 个字符的邻近度内检测到这种类型的敏感信息�
 - 六个数字
 - "A"、B、C 或"D" (类似前缀，后缀中只允许某些字符;不区分大小写) 
 
-OR
+或
 
 - 两个字母
 - 空格或短划线

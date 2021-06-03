@@ -296,6 +296,8 @@
           items:
             - name: Microsoft 365 Defender API 概述（预览版）
               href: api-overview.md
+            - name: 支持的 Microsoft 365 Defender API
+              href: api-supported.md
             - name: Microsoft 365 Defender API 入门（预览版）
               items:
                 - name: Microsoft 365 Defender API 许可证和使用条款
@@ -314,10 +316,16 @@
                   href: api-articles.md
             - name: Microsoft 365 Defender API 和架构（预览版）
               items:
-                - name: 支持的 Microsoft 365 Defender API
-                  href: api-supported.md
                 - name: 常见的 REST API 错误代码
                   href: api-error-codes.md
+                - name: 流式处理 API
+                  items:
+                    - name: Microsoft 365流式处理 API
+                      href: ../defender-endpoint/raw-data-export.md
+                    - name: 将高级搜寻事件流式传输至 Azure 事件中心
+                      href: ../defender-endpoint/raw-data-export-event-hub.md
+                    - name: 将高级搜寻事件流式传输至存储账户
+                      href: ../defender-endpoint/raw-data-export-storage.md
                 - name: 高级搜寻 API
                   href: api-advanced-hunting.md
                 - name: 事件 API

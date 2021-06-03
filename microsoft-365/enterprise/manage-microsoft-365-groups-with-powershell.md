@@ -21,12 +21,12 @@ search.appverid:
 - BCS160
 ms.assetid: aeb669aa-1770-4537-9de2-a82ac11b0540
 description: 本文将了解如何在 PowerShell 中为 Microsoft 365组执行常见管理任务。
-ms.openlocfilehash: adf796ad2f2ee7a304c578cd42c700f2b44e7a5b
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 22bf4d1f3187746483d8d904378e675562a62142
+ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50911046"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "52730554"
 ---
 # <a name="manage-microsoft-365-groups-with-powershell"></a>使用 PowerShell Microsoft 365组
 

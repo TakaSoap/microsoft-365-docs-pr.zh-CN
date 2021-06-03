@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 945645e0f20f316c094f746adb6ba193f6806f86
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: 7ed7390f67747d176145bb051d8b1633a7146a23
+ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51861355"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "52730806"
 ---
 # <a name="onboard-previous-versions-of-windows"></a>载入以前版本的 Windows
 
@@ -63,7 +63,7 @@ Defender for Endpoint 与 System Center Endpoint Protection集成，通过禁止
 
 ## <a name="install-and-configure-microsoft-monitoring-agent-mma-to-report-sensor-data-to-microsoft-defender-for-endpoint"></a>安装和配置 Microsoft Monitoring Agent (MMA) 以将传感器数据报告给 Microsoft Defender for Endpoint
 
-### <a name="before-you-begin"></a>开始之前
+### <a name="before-you-begin"></a>准备工作
 查看以下详细信息以验证最低系统要求：
 - 安装 [2018 年 2 月每月更新汇总](https://support.microsoft.com/help/4074598/windows-7-update-kb4074598)
   
@@ -78,7 +78,7 @@ Defender for Endpoint 与 System Center Endpoint Protection集成，通过禁止
     > 仅适用于 Windows 7 SP1 Enterprise Windows 7 SP1 Pro。
     > 不要安装 4.0.x .NET Framework 4.0.x，因为它将否定上述安装。
 
-- 满足 Azure Log Analytics 代理的最低系统要求。 有关详细信息，请参阅使用[Log Analytics](https://docs.microsoft.com/azure/log-analytics/log-analytics-concept-hybrid#prerequisites)从环境中的计算机收集数据
+- 满足 Azure Log Analytics 代理的最低系统要求。 有关详细信息，请参阅使用 Log [Analytics](/azure/log-analytics/log-analytics-concept-hybrid#prerequisites)从环境中的计算机收集数据。
 
 
 
@@ -111,4 +111,3 @@ Defender for Endpoint 与 System Center Endpoint Protection集成，通过禁止
 若要卸载，你可以从终结点卸载 MMA 代理或将其从报告分离到 Defender for Endpoint 工作区。 离开代理后，终结点将不再将传感器数据发送到 Defender for Endpoint。 
 
 > 想要体验适用于终结点的 Defender？ [注册免费试用版](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-downlevele-belowfoldlink)。
-

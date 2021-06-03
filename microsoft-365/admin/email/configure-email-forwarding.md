@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: ab5eb117-0f22-4fa7-a662-3a6bdb0add74
 description: 电子邮件转发允许您将发送到用户邮箱Microsoft 365电子邮件转发到组织内部或外部的另一个邮箱。
-ms.openlocfilehash: 1d16a44749b51b582b7198cb331edf7faf3cf1f8
-ms.sourcegitcommit: 4bcac4cb4f9399ebbd7c8cff0abb4d6ecedb731e
+ms.openlocfilehash: dfea738f5d786b6e476dd02dc92fd0aef452d62f
+ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "52698912"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "52730134"
 ---
 # <a name="configure-email-forwarding-in-microsoft-365"></a>配置电子邮件转发Microsoft 365
 
@@ -57,7 +57,16 @@ ms.locfileid: "52698912"
 
 4. 在"电子邮件转发"页面上，选择"转发发送到此邮箱的所有电子邮件"，输入转发地址，然后选择是否要保留转发电子邮件的副本。 如果看不到此选项，请确保将许可证分配给用户帐户。 选择“**保存更改**”。
 
-    **若要转发到多个电子邮件地址**，可以要求用户在邮箱中设置Outlook转发到地址。 若要了解更多信息，请参阅 [使用规则自动转发邮件](https://support.microsoft.com/office/45aa9664-4911-4f96-9663-ece42816d746)。
+    **若要转发到多个电子邮件地址**，可以要求用户在邮箱中设置Outlook转发到地址。 
+    
+    1.  打开 **Outlook**  >  **主页**  >   **规则**>选择"管理&**通知"**
+    1. 选择 **"新建**  >  **规则" 选择"** 在列表底部附近收到的邮件上应用规则"，然后单击"下一步 **"。**
+    1. 当 **系统** 询问"是"时，单击"是"：此规则将应用于你收到的每封邮件。 
+    1. On the next list select the actions **redirect it to people or public group** and stop processing more **rules**
+    1. 单击窗口 **底部带下划线** 的短语"人员"或"公共组"。
+    1. 在 **"收件人"** 字段中键入要转发邮件的电子邮件地址，然后单击"确定 **"。**
+    1. 选择 **"完成"**
+    
 
      或者，在管理中心创建通讯[](../setup/create-distribution-lists.md)组，将地址添加到[](add-user-or-contact-to-distribution-list.md)该组，然后按照本文中的说明将转发设置为指向 DL。
 

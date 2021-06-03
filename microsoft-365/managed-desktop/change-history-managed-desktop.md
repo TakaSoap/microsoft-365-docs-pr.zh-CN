@@ -13,12 +13,12 @@ f1.keywords:
 ms.author: jaimeo
 ms.article: article
 ms.localizationpriority: normal
-ms.openlocfilehash: 5e57f21690372b16c86a65fcfe4d00cb5c907391
-ms.sourcegitcommit: 987f70e44e406ab6b1dd35f336a9d0c228032794
+ms.openlocfilehash: bc04059d3ec63dd9395ed8f7a0e02b948e5cead1
+ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/05/2021
-ms.locfileid: "51587523"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "52730734"
 ---
 # <a name="change-history-for-microsoft-managed-desktop-documentation"></a>Microsoft 托管桌面文档更改历史记录
 
@@ -86,14 +86,14 @@ ms.locfileid: "51587523"
 新增或已更改的文章 | 说明
 --- | ---
 [先决条件](get-ready/prerequisites.md) | 更新的文章
-[使用见解](working-with-managed-desktop/insights.md) | 更新的文章
+使用见解 | 更新的文章
 [合作伙伴注册设备的步骤](get-started/register-devices-partner.md) | 更新的文章
 [访问管理门户](get-started/access-admin-portal.md) | 更新的文章
 [将应用部署到设备](get-started/deploy-apps.md) | 更新的文章
 [获取针对用户的帮助](working-with-managed-desktop/end-user-support.md) | 更新的文章
 
 
-## <a name="september-2020"></a>2020 年 9 
+## <a name="september-2020"></a>2020 年 9 月
 新增或已更改的文章 | 说明
 --- | ---
 [隐私和个人数据](service-description/privacy-personal-data.md) | 新增文章
@@ -109,7 +109,7 @@ ms.locfileid: "51587523"
 [自行注册新设备](get-started/register-devices-self.md) | 更新的文章
 [为 Microsoft 托管桌面准备证书和网络配置文件](get-ready/certs-wifi-lan.md) | 更新的文章
 [Microsoft 托管桌面的先决条件](get-ready/prerequisites.md) | 更新的文章
-[使用见解](working-with-managed-desktop/insights.md) | 更新的文章
+使用见解| 更新的文章
 
 ## <a name="august-2020"></a>2020 年 8 月
 新增或已更改的文章 | 说明
@@ -179,8 +179,8 @@ ms.locfileid: "51587523"
 新增或已更改的文章 | 说明
 --- | ---
 [安全Microsoft 托管桌面](service-description/security.md)| 更新的文章
-[使用见解](working-with-managed-desktop/insights.md) | 更新的文章
-[Windows 安全更新见解](working-with-managed-desktop/security-update-insights.md) | 新增文章
+使用见解 | 更新的文章
+Windows 安全更新见解| 新增文章
 [如何处理更新Microsoft 托管桌面](service-description/updates.md) | 更新的文章
 [Microsoft 托管桌面设备服务](service-description/device-services.md) | 更新的文章
 
@@ -206,9 +206,9 @@ ms.locfileid: "51587523"
 ## <a name="november-2019"></a>2019 年 11 月
 新增或已更改的文章 | 说明
 --- | ---
-[使用见解](working-with-managed-desktop/insights.md) | 新增文章
-[使用情况见解](working-with-managed-desktop/usage-insights.md) | 新增文章
-[可靠性见解](working-with-managed-desktop/reliability-insights.md) | 新增文章
+使用见解 | 新增文章
+使用情况见解 | 新增文章
+可靠性见解 | 新增文章
 [Microsoft 托管桌面设备](service-description/device-list.md) | 更新的文章
 [Microsoft 托管桌面主页](./index.yml) | 更新的文章
 [什么是 Microsoft 托管桌面？](./intro/index.md) | 更新的文章

@@ -147,14 +147,6 @@
           items:
             - name: 设备清点报告
               href: working-with-managed-desktop/device-inventory-report.md
-            - name: 使用情况见解
-              href: working-with-managed-desktop/usage-insights.md
-            - name: 可靠性见解
-              href: working-with-managed-desktop/reliability-insights.md
-            - name: 电池见解
-              href: working-with-managed-desktop/battery-insights.md
-            - name: Windows 安全更新见解
-              href: working-with-managed-desktop/security-update-insights.md
         - name: 管理支持
           href: working-with-managed-desktop/admin-support.md
         - name: 用户支持

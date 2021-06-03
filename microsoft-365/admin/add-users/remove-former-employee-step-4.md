@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 按照本文中的步骤向另一名员工授予对前员工的数据OneDrive Outlook访问权限。
-ms.openlocfilehash: 55bc2c3d8530e5cb7702f99a77b3918bfb7c0dee
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: abcad87498f6670fe7fe2f5457321f1b3f6e0930
+ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52634252"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "52730194"
 ---
 # <a name="step-4---give-another-employee-access-to-onedrive-and-outlook-data"></a>步骤 4 - 向另一名员工授予OneDrive和Outlook权限
 
@@ -41,7 +41,7 @@ ms.locfileid: "52634252"
 
 若要保留以前用户OneDrive文件，请首先向自己授予OneDrive访问权限，然后移动要保留的文件。
 
-1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。  
+1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。  
 
 2. 选择用户。
 
@@ -52,6 +52,30 @@ ms.locfileid: "52634252"
 > [!NOTE]
 > 一次可以移动或复制多达 500 MB 的文件和文件夹。<br/>
 > 在移动或复制具有版本历史记录的文档时，只会移动最新版本。  
+
+还可以向其他用户授予访问以前员工OneDrive。
+
+1. 以全局<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">管理员或管理员</a>管理员SharePoint管理中心。
+
+    如果您收到一条消息，指出您无权访问管理中心，则表明您组织中没有管理员权限。
+
+2. 在左窗格中，选择"管理 **中心** \> **SharePoint"。** （你可能需要选择“**全部显示**”以查看管理中心列表）。
+
+3. 如果显示经典SharePoint管理中心，请选择页面顶部的"现在打开它"以打开SharePoint管理中心。
+
+4. 在左窗格中，选择"**更多功能"。**
+
+5. 在 **"用户配置文件"下**，选择"打开 **"。**
+
+6. 在 **"人员**"下，选择 **"管理用户配置文件"。**
+
+7. 输入前员工的姓名，然后选择"查找 **"。**
+
+8. 右键单击用户，然后选择"管理 **网站集所有者"。**
+
+9. 将用户添加到 **网站集管理员，然后选择****确定。**
+
+10. 现在，用户将能够使用 OneDrive URL 访问OneDrive服务器。 
 
 ### <a name="revoke-admin-access-to-a-users-onedrive"></a>撤销管理员对用户权限OneDrive
 
@@ -104,7 +128,7 @@ ms.locfileid: "52634252"
   
     ![导出Outlook"数据文件"对话框，其中选中了顶部文件夹并选中了"包含子文件夹"](../../media/ce36616f-d76d-4ce2-b517-8ac4874e0971.jpg)
   
-7. 选择“**下一步**”。
+7. 选择 **下一步**。
 
 8. 选择 **"浏览**"选择保存Outlook文件 (.pst) 。 键入  *文件名，* 然后选择" **确定"** 继续。
 
@@ -147,7 +171,7 @@ Outlook，除非已创建新的 Outlook Data File (.pst) 或使用了密码保�
 
 5. 在 **"选项**"下，选择如何处理重复项
 
-6. 选择“**下一步**”。
+6. 选择 **下一步**。
 
 7. 如果将密码分配给 Outlook.pst (.pst) ，请输入密码，然后选择"确定 **"。**
 

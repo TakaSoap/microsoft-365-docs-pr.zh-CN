@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 0e09a313b512135785050abd5aa61bb9576ce1d8
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: 2242d195f4a4ea4b8f0c345d82fa0ad1f947bfa2
+ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52274936"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "52730758"
 ---
 # <a name="microsoft-defender-for-endpoint-on-linux"></a>Microsoft Defender for Endpoint on Linux
 
@@ -43,7 +43,7 @@ ms.locfileid: "52274936"
 
 ## <a name="how-to-install-microsoft-defender-for-endpoint-on-linux"></a>如何在 Linux 上安装 Microsoft Defender for Endpoint
 
-### <a name="prerequisites"></a>必备条件
+### <a name="prerequisites"></a>先决条件
 
 - 访问 Microsoft Defender 安全中心 门户
 - 使用系统 [系统管理器的](https://systemd.io/) Linux 分发
@@ -77,7 +77,7 @@ ms.locfileid: "52274936"
 
 ### <a name="system-requirements"></a>系统要求
 
-- 支持的 Linux 服务器分发和版本：
+- 支持 Linux 服务器分发和 x64 (AMD64/EM64T) 版本：
 
   - Red Hat Enterprise Linux 7.2 或更高版本
   - CentOS 7.2 或更高版本

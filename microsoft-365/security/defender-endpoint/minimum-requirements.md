@@ -16,18 +16,19 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 12ed9b8648630428c6da347252d077521d859482
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 6607d5029e45c77754a431c87eb61cd281e013c1
+ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245704"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "52730722"
 ---
 # <a name="minimum-requirements-for-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint 的最低要求
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **适用于：**
+
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -41,6 +42,7 @@ ms.locfileid: "52245704"
 > - Defender for Endpoint 在最新的 MITRE 评估中展示了行业领先的光学镜头和检测功能。 阅读 [：MITRE ATT 中的见解&基于 CK 的评估](https://cloudblogs.microsoft.com/microsoftsecure/2018/12/03/insights-from-the-mitre-attack-based-evaluation-of-windows-defender-atp/)。
 
 ## <a name="licensing-requirements"></a>许可要求
+
 Microsoft Defender for Endpoint 需要以下 Microsoft 批量许可优惠之一：
 
 - Windows 10 企业版E5
@@ -76,6 +78,7 @@ Microsoft Defender for Endpoint 需要以下 Microsoft 批量许可优惠之一�
 有关商业版比较Windows 10比较表，请参阅[比较 PDF。](https://wfbdevicemanagementprod.blob.core.windows.net/windowsforbusiness/Windows10_CommercialEdition_Comparison.pdf)
 
 ## <a name="browser-requirements"></a>浏览器要求
+
 通过浏览器（支持以下浏览器）访问 Defender for Endpoint：
 
 - Microsoft Edge
@@ -88,8 +91,9 @@ Microsoft Defender for Endpoint 需要以下 Microsoft 批量许可优惠之一�
 ## <a name="hardware-and-software-requirements"></a>硬件和软件要求
 
 ### <a name="supported-windows-versions"></a>支持Windows版本
-- Windows 7 SP1 Enterprise ([需要 ESU 以支持](https://docs.microsoft.com/troubleshoot/windows-client/windows-7-eos-faq/windows-7-extended-security-updates-faq).) 
-- Windows 7 SP1 Pro (需要[ESU 以支持](https://docs.microsoft.com/troubleshoot/windows-client/windows-7-eos-faq/windows-7-extended-security-updates-faq).) 
+
+- Windows 7 SP1 Enterprise ([需要 ESU 以支持](/troubleshoot/windows-client/windows-7-eos-faq/windows-7-extended-security-updates-faq).) 
+- Windows 7 SP1 Pro (需要[ESU 以支持](/troubleshoot/windows-client/windows-7-eos-faq/windows-7-extended-security-updates-faq).) 
 - Windows 8.1 企业版
 - Windows 8.1 专业版
 - Windows 10 企业版
@@ -118,17 +122,19 @@ Microsoft Defender for Endpoint 需要以下 Microsoft 批量许可优惠之一�
 
 
 ### <a name="other-supported-operating-systems"></a>其他支持的操作系统
+
 - [Android](microsoft-defender-endpoint-android.md)
 - [iOS](microsoft-defender-endpoint-ios.md)
 - [Linux](microsoft-defender-endpoint-linux.md)
 - [macOS](microsoft-defender-endpoint-mac.md)
 
 > [!NOTE]
-> 你需要确认你已与 Defender for Endpoint 兼容的 Android、iOS 和 macOS 的 Linux 分发和版本，以便集成正常工作。
+> 你需要确认 Android、iOS 和 macOS 的 Linux 分发和版本与 Defender for Endpoint 兼容，集成工作。
 
 
 
 ### <a name="network-and-data-storage-and-configuration-requirements"></a>网络和数据存储以及配置要求
+
 首次运行载入向导时，必须选择 Microsoft Defender 终结点相关信息的存储位置：欧盟、英国或美国数据中心。
 
 > [!NOTE]
@@ -188,6 +194,7 @@ Microsoft Defender for Endpoint 需要以下 Microsoft 批量许可优惠之一�
 
 
 #### <a name="internet-connectivity"></a>Internet 连接
+
 可直接或通过代理在设备上建立 Internet 连接。
 
 Defender for Endpoint 传感器可以使用每日平均带宽 5 MB 与 Defender for Endpoint 云服务进行通信并报告网络数据。 此每日平均带宽中不包含文件上载和调查包收集等一次活动。
@@ -198,26 +205,29 @@ Defender for Endpoint 传感器可以使用每日平均带宽 5 MB 与 Defender 
 
 
 ## <a name="microsoft-defender-antivirus-configuration-requirement"></a>Microsoft Defender 防病毒配置要求
+
 Defender for Endpoint 代理依赖于Microsoft Defender 防病毒扫描文件并提供有关文件的信息的能力。
 
-在 Defender for Endpoint 设备上配置安全智能更新，Microsoft Defender 防病毒反恶意软件是否有效。 有关详细信息，请参阅管理更新[Microsoft Defender 防病毒应用基线](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/manage-updates-baselines-microsoft-defender-antivirus)。
+在 Defender for Endpoint 设备上配置安全智能更新，Microsoft Defender 防病毒反恶意软件是否有效。 有关详细信息，请参阅管理更新[Microsoft Defender 防病毒应用基线](/windows/security/threat-protection/microsoft-defender-antivirus/manage-updates-baselines-microsoft-defender-antivirus)。
 
 如果Microsoft Defender 防病毒在你的组织中不是主动反恶意软件，并且你使用 Defender for Endpoint 服务，Microsoft Defender 防病毒被动模式。
 
 如果你的组织通过组策略Microsoft Defender 防病毒方法关闭已载入的设备，则必须从该组策略中排除已载入的设备。
 
-如果你正在载入服务器，Microsoft Defender 防病毒服务器上不是主动反恶意软件，Microsoft Defender 防病毒需要配置为进入被动模式或卸载。 配置取决于服务器版本。 有关详细信息，请参阅兼容性[Microsoft Defender 防病毒兼容性](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus-compatibility.md)。
+如果你正在载入服务器，Microsoft Defender 防病毒服务器上不是主动反恶意软件，Microsoft Defender 防病毒需要配置为进入被动模式或卸载。 配置取决于服务器版本。 有关详细信息，请参阅兼容性[Microsoft Defender 防病毒兼容性](/security/defender-endpoint/microsoft-defender-antivirus-compatibility)。
 
 > [!NOTE]
 > 常规组策略不适用于防篡改保护，当防篡改保护打开Microsoft Defender 防病毒将忽略对组设置所做的更改。
 
 
 ## <a name="microsoft-defender-antivirus-early-launch-antimalware-elam-driver-is-enabled"></a>Microsoft Defender 防病毒启用早期启动反恶意软件 (ELAM) 已启用
+
 如果你正在设备上Microsoft Defender 防病毒作为主要的反恶意软件产品，则 Defender for Endpoint 代理将成功载入。
 
 如果正在运行第三方反恶意软件客户端并使用移动设备管理解决方案或 Microsoft Endpoint Manager (current branch) ，则需要确保 Microsoft Defender 防病毒 ELAM 驱动程序已启用。 有关详细信息，请参阅[确保策略Microsoft Defender 防病毒禁用策略](troubleshoot-onboarding.md#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy)。
 
 
 ## <a name="related-topics"></a>相关主题
+
 - [设置 Microsoft Defender for Endpoint 部署](production-deployment.md)
 - [载入设备](onboard-configure.md)

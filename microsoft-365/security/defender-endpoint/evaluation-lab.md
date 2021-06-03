@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: ed2165c0102170256f50964180a550d8eccbce8c
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: f6ef1d3dbc111e5d10bf4d3c42dfd08e5e9d63e3
+ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51932783"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "52730617"
 ---
 # <a name="microsoft-defender-for-endpoint-evaluation-lab"></a>Microsoft Defender for Endpoint 评估实验室
 
@@ -52,7 +52,7 @@ Microsoft Defender for Endpoint 评估实验室旨在消除设备和环境配置
  安装首选模拟器，在评估实验室内运行方案，并立即查看平台的运行方式-所有这些操作都很方便，无需额外付费。 还可以方便地访问广泛的模拟数组，你可以从模拟目录访问和运行这些模拟。
     
 
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>准备工作
 你将需要满足许可要求 [，或者具有](minimum-requirements.md#licensing-requirements) 对 Microsoft Defender for Endpoint 的试用访问权限，以访问评估实验室。
 
 您必须具有 **"管理安全设置"** 权限才能：
@@ -75,9 +75,8 @@ Microsoft Defender for Endpoint 评估实验室旨在消除设备和环境配置
 
 >[!NOTE]
 >- 根据你选择的环境结构类型，设备将在激活后指定的小时数内可用。
->- 每个环境都使用一组有限的测试设备进行预配。 当你已使用预配的设备时，不会提供新设备。 已删除的设备不会刷新可用的测试设备计数。
->- 资源已用时，你无法再使用实验室。 它不会重置也不刷新。
->- 建议谨慎使用资源。实验室资源有限。 它们不会重置，也不会刷新。 
+>- 每个环境都使用一组有限的测试设备进行预配。 当你已使用预配的设备并将其删除后，你可以请求更多设备。 
+>- 你可以每月请求一次实验室资源。 
 
 已有实验室？ 请确保启用新的威胁模拟器并拥有活动设备。
 
@@ -113,26 +112,23 @@ Microsoft Defender for Endpoint 评估实验室旨在消除设备和环境配置
 
 设备将配置最新版本的操作系统和 Office 2019 Standard 以及其他应用（如 Java、Python 和 SysIntenals）。 
 
-   >[!TIP]
-   > 实验室中需要更多的设备？ 提交支持票证，让 Defender for Endpoint 团队审阅你的请求。 
-
 如果你在实验室设置期间选择添加威胁模拟器，所有设备都将在添加的设备上安装威胁模拟器代理。
 
 设备将自动载入到你的租户，同时Windows启用推荐的安全组件，并进入审核模式，无需任何努力。 
 
 在测试设备中预配置以下安全组件：
 
-- [减少攻击面](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard)
-- [首次看到时阻止](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-block-at-first-sight-microsoft-defender-antivirus)
-- [受控文件夹访问](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/controlled-folders-exploit-guard)
-- [漏洞保护](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/enable-exploit-protection)
-- [网络保护](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/network-protection-exploit-guard)
-- [可能不需要的应用程序检测](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus)
-- [云保护](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/utilize-microsoft-cloud-protection-microsoft-defender-antivirus)
-- [Microsoft Defender SmartScreen](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-smartscreen/windows-defender-smartscreen-overview)
+- [减少攻击面](attack-surface-reduction.md)
+- [首次看到时阻止](configure-block-at-first-sight-microsoft-defender-antivirus.md)
+- [受控文件夹访问](controlled-folders.md)
+- [漏洞保护](enable-exploit-protection.md)
+- [网络保护](network-protection.md)
+- [可能不需要的应用程序检测](detect-block-potentially-unwanted-apps-microsoft-defender-antivirus.md)
+- [云保护](cloud-protection-microsoft-defender-antivirus.md)
+- [Microsoft Defender SmartScreen](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview)
 
 >[!NOTE]
-> Microsoft Defender 防病毒不在审核 (审核模式下，将打开) 。 如果Microsoft Defender 防病毒阻止运行你的模拟，则可以通过以下方法在设备上关闭Windows 安全中心。 有关详细信息，请参阅配置 [始终打开保护](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus)。
+> Microsoft Defender 防病毒不在审核 (审核模式下，将打开) 。 如果Microsoft Defender 防病毒阻止运行你的模拟，则可以通过以下方法在设备上关闭Windows 安全中心。 有关详细信息，请参阅配置 [始终打开保护](configure-real-time-protection-microsoft-defender-antivirus.md)。
 
 自动调查设置将取决于租户设置。 默认情况下，它将配置为半自动化。 有关详细信息，请参阅 [自动调查概述](automated-investigations.md)。
 
@@ -163,10 +159,29 @@ Microsoft Defender for Endpoint 评估实验室旨在消除设备和环境配置
     !["设备"选项卡图像](images/machines-tab.png)
     
 
-    >[!TIP]
-    >在 **模拟器状态** 列中，你可以将鼠标悬停在信息图标上，了解代理的安装状态。
+    > [!TIP]
+    > 在 **模拟器状态** 列中，你可以将鼠标悬停在信息图标上，了解代理的安装状态。
+
+## <a name="request-for-more-devices"></a>请求更多设备
+当使用和删除所有现有设备时，你可以请求更多设备。 你可以每月请求一次实验室资源。 
 
 
+1. 从评估实验室仪表板中，选择 **"请求更多设备"。**
+
+   ![请求更多设备的图像](images/request-more-devices.png)
+
+2. 选择配置。 
+3. 提交请求。 
+
+成功提交请求后，你将看到绿色确认横幅和上次提交的日期。
+ 
+您可以在"用户操作"选项卡中查找请求的状态，该状态将在数小时内获得批准。
+
+获得批准后，请求的设备将添加到实验室设置中，你将能够创建更多设备。 
+
+
+> [!TIP]
+> 若要从实验室获取更多信息，请不要忘记查看我们的模拟库。
 
 ## <a name="simulate-attack-scenarios"></a>模拟攻击方案
 通过连接到测试设备来运行自己的攻击模拟。 
@@ -175,7 +190,7 @@ Microsoft Defender for Endpoint 评估实验室旨在消除设备和环境配置
 - " [自己执行"攻击方案](https://securitycenter.windows.com/tutorials)
 - 威胁模拟器
 
-您还可以使用 [高级搜寻](advanced-hunting-query-language.md) 来查询数据和 [威胁分析](threat-analytics.md) ，以查看有关新出现的威胁的报告。
+您还可以使用 [高级搜寻](advanced-hunting-overview.md) 来查询数据和 [威胁分析](threat-analytics.md) ，以查看有关新出现的威胁的报告。
 
 ### <a name="do-it-yourself-attack-scenarios"></a>自己动手攻击方案
 如果你要查找预先模拟，可以使用我们的"自己执行" [攻击方案](https://securitycenter.windows.com/tutorials)。 这些脚本安全、有记录且易于使用。 这些方案将反映 Defender for Endpoint 功能，并演练调查体验。

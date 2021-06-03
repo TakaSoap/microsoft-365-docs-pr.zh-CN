@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 103f5d0ad9d12a37f3a3b8065f39c24d592cc252
-ms.sourcegitcommit: f000358c01a8006e5749a86b256300ee3a73174c
+ms.openlocfilehash: 6d92cbacba72210c6accbbb1e5ecf25de660fc3c
+ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2021
-ms.locfileid: "51995053"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "52730528"
 ---
 # <a name="create-indicators-for-files"></a>创建文件指示器
 
@@ -43,7 +43,7 @@ ms.locfileid: "51995053"
 - 通过使用文件详细信息页面中的"添加指示器"按钮创建上下文指示器
 - 通过指示器 [API 创建指示器](ti-indicator.md)
 
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>准备工作
 
 在创建文件指示器之前，了解以下先决条件很重要：
 
@@ -91,11 +91,11 @@ ms.locfileid: "51995053"
 
 - 如果应用程序控制和 AppLocker Windows Defender策略不允许该文件，**则阻止**
 
-- 否则，如果 Defender 防病毒排除允许该文件 **，则允许**
+- 否则，如果文件被排除Microsoft Defender 防病毒，**则允许**
 
 - 否则，如果阻止或警告文件 IoC 阻止或警告文件，则 **阻止/警告**
 
-- 否则，如果允许文件 IOC 策略允许该文件 **，则允许**
+- 否则，如果允许文件 IoC 策略允许该文件 **，则允许**
 
 - 否则，如果该文件被 ASR 规则、CFA、AV、SmartScreen 阻止，则 **阻止**  
 

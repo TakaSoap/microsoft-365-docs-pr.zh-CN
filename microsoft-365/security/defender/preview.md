@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: c82e1abf9e539ad169bbc488ade9cd21bb8e6727
-ms.sourcegitcommit: e02cf5702af178ddd2968877a808874ecb49ed2c
+ms.openlocfilehash: 8ad5ffe2b175a8f7a42b2fad353fcde13a60cfec
+ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52029070"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "52730518"
 ---
 # <a name="microsoft-365-defender-preview-features"></a>Microsoft 365Defender 预览功能
 
@@ -68,7 +68,8 @@ ms.locfileid: "52029070"
 
 当前预览版中提供以下功能和增强功能：
 
+- **[流式 API](../defender-endpoint/raw-data-export.md)** - Microsoft 365 Defender 支持将高级搜寻提供的所有事件流式处理到事件中心和/或 Azure 存储帐户。
 - **[Microsoft 365 Defender API](api-overview.md)** - 使用顶级 Microsoft 365 Defender API，你可以根据共享事件和高级搜寻表自动执行工作流。 
-- **[在高级搜寻中采取措施](advanced-hunting-take-action.md)**- 快速包含威胁或解决你在高级搜寻中 [发现的威胁资产](advanced-hunting-overview.md)。
-- **[门户内架构参考](advanced-hunting-schema-tables.md#get-schema-information-in-the-security-center)**- 直接在安全中心获取有关高级搜寻架构表的信息。 除了表和列说明之外，此参考还包括受支持的事件类型 (`ActionType` 查询) 查询的值。
-- **[DeviceFromIP ()](advanced-hunting-devicefromip-function.md)** 函数 — 获取有关在给定时间范围内分配了特定 IP 地址的设备的信息。
+- **[在高级搜寻中采取措施](advanced-hunting-take-action.md)** - 快速包含威胁或解决你在高级搜寻中 [发现的攻击资产](advanced-hunting-overview.md)。
+- **[门户内架构参考](advanced-hunting-schema-tables.md#get-schema-information-in-the-security-center)** - 直接在安全中心获取有关高级搜寻架构表的信息。 除了表和列说明之外，此参考还包括受支持的事件类型 (`ActionType` 查询) 查询的值。
+- **[DeviceFromIP ()](advanced-hunting-devicefromip-function.md)** 函数 - 获取有关在给定时间范围内分配了特定 IP 地址的设备的信息。

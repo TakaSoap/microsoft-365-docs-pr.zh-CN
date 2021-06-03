@@ -22,12 +22,12 @@ ms.custom:
 description: 管理员可以了解零时差自动清除 (ZAP) 如何反向将 Exchange Online 邮箱中的已送达邮件移动到垃圾邮件文件夹或被反向发现为垃圾邮件或网络钓鱼的隔离邮箱。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ee5a3fee8e189ff9cc08f187971e728670766d6d
-ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
+ms.openlocfilehash: 9612f6267a0786b6f81f1c9a3f2ac270e344d0a8
+ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52684191"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "52730674"
 ---
 # <a name="zero-hour-auto-purge-zap-in-exchange-online"></a>零时差自动清除 (ZAP) 中Exchange Online
 
@@ -72,6 +72,12 @@ ZAP 操作对于用户是无缝的;如果检测到并移动了邮件，系统不
 默认情况下，在反垃圾邮件策略中启用网络钓鱼的 ZAP，而网络钓鱼电子邮件筛选裁定的默认操作是隔离邮件，这意味着默认情况下，网络钓鱼的 ZAP 隔离邮件。
 
 有关配置垃圾邮件筛选裁定的信息，请参阅在邮件中配置[反垃圾邮件Microsoft 365。](configure-your-spam-filter-policies.md)
+
+### <a name="zap-for-high-confidence-phishing"></a>用于高可信度网络钓鱼的 ZAP 
+
+对于 **在传递后** 被标识为高可信度网络钓鱼的已读邮件或未读邮件，ZAP 将隔离邮件。 只有管理员可以查看和管理隔离的高可信度钓鱼邮件。 
+
+默认情况下启用高可信度钓鱼邮件的 ZAP。 有关详细信息，请参阅安全[默认值Office 365。](secure-by-default.md)
 
 ### <a name="zap-for-spam"></a>垃圾邮件的 ZAP
 
@@ -119,6 +125,6 @@ ZAP 将基于反垃圾邮件策略的配置对邮件采取措施，如本文前�
 
 ### <a name="how-does-zap-affect-mailboxes-on-hold"></a>ZAP 对保留的邮箱有何影响？
 
-ZAP 不会隔离来自保留邮箱的邮件。 ZAP 可以基于为反垃圾邮件策略中的垃圾邮件或网络钓鱼裁定配置的操作，将邮件移动到"垃圾邮件"文件夹。
+ZAP 将隔离来自保留邮箱的邮件。 ZAP 可以基于为反垃圾邮件策略中的垃圾邮件或网络钓鱼裁定配置的操作，将邮件移动到"垃圾邮件"文件夹。
 
 有关用户中的保留Exchange Online，请参阅 Exchange Online[中的就地保留和诉讼Exchange Online。](/Exchange/security-and-compliance/in-place-and-litigation-holds)

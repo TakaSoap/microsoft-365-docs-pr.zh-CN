@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: a57cebd2cb7d35f968ed9ddfa4d9215eac2182d6
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 78ab364f8a261b1201fad17ebf86adc1a7456a46
+ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934449"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "52730831"
 ---
 # <a name="overview-of-management-and-apis"></a>管理和 API 概述 
 
@@ -71,12 +71,13 @@ Defender for Endpoint 提供分层 API 模型，在结构化、清晰且易于�
 
 响应 **API** 公开了在服务和设备上采取操作的功能，使客户能够接收指示器、管理设置、警报状态，以及以编程方式对设备执行响应操作，如将设备与网络隔离、隔离文件和其他操作。 
 
-## <a name="raw-data-streaming-api"></a>原始数据流式处理 API 
-Defender for Endpoint 原始数据流 API 使客户能够在单个数据流中发生时从其实例传送实时事件和警报，从而提供低延迟、高吞吐量的传送机制。
+## <a name="streaming-api"></a>流式处理 API 
+流式处理 API 使客户能够在单个数据流中发生时从其实例传送实时事件和警报，从而提供低延迟、高吞吐量的传送机制。
 
-Defender for Endpoint 事件信息直接推送到 Azure 存储以用于长期数据保留，或推送到 Azure 事件中心，供可视化服务或其他数据处理引擎使用。 
+事件信息直接推送到 Azure 存储以用于长期数据保留，或推送到 Azure 事件中心，供可视化服务或其他数据处理引擎使用。 
 
-有关详细信息，请参阅 [Raw data streaming API](raw-data-export.md)。
+>[!NOTE]
+>流式 API 现已移动到 Microsoft 365 Defender。 有关详细信息，请参阅流[式处理 API。](raw-data-export.md)
 
 
 ## <a name="siem-api"></a>SIEM API

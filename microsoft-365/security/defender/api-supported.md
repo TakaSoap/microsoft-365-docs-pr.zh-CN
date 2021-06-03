@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: f2c66dca326589807f5712c5548c177a0d08ade0
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: c10b2863503a5bda829cbf67379a606b687ac2e3
+ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51935721"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "52730938"
 ---
 # <a name="supported-microsoft-365-defender-apis"></a>支持的 Microsoft 365 Defender API 
 
@@ -43,6 +43,7 @@ ms.locfileid: "51935721"
 -|-
 [高级搜寻 API](api-advanced-hunting.md) | 运行高级搜寻查询。
 [事件 API](api-incident.md) | 列出和更新事件以及其他实际任务。
+[流式 API](../defender-endpoint/raw-data-export.md) (预览)  | 在单个数据流中发生时发送实时事件和警报。
 
 ### <a name="endpoint-uris"></a>终结点 URI
 
@@ -60,5 +61,6 @@ ms.locfileid: "51935721"
 
 - [Microsoft 365Defender API 概述](api-overview.md)
 - [访问 Microsoft 365 Defender API](api-access.md)
+- [流式处理 API](../defender-endpoint/raw-data-export.md)
 - [了解 API 限制和许可](api-terms.md)
 - [了解错误代码](api-error-codes.md)

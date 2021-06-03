@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 6f0c92371e7e9b7a3348f90df788ee8c3a46374b
-ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
+ms.openlocfilehash: 833bc1d8284829323cc2f0c391e42f4e563a6948
+ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52572149"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "52730878"
 ---
 # <a name="list-incidents-api-in-microsoft-365-defender"></a>在 defender 中列出Microsoft 365 API
 
@@ -34,7 +34,7 @@ ms.locfileid: "52572149"
 
 **适用于：**
 
-- Microsoft 365 Defender
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > [!IMPORTANT]
 > 某些信息与预发布的产品有关，在商业发布之前可能有重大修改。 Microsoft 对此处所提供的信息不作任何明示或默示的保证。
@@ -109,7 +109,7 @@ classification | 事件的规范。 属性值为 *：Unknown、FalsePositive、T
 确定 | 指定事件的确定。 属性值包括：NotAvailable、Apt、Malware、SecurityPersonnel、SecurityTesting、UnwantedSoftware、Other        | NotAvailable
 状态 | 将事件分类 (*活动"* 或"已解决 *) "* 它可以帮助您组织和管理对事件的响应。 | 活动
 severity | 指示对资产可能的影响。 严重性越高，影响越大。 通常，严重性级别较高的项目需要最直接的关注。<br /><br />下列值之一 *：Informational、Low、*Medium* 和 *High。*  | 中
-tags | 与事件关联的自定义标记数组，例如，用于标记一组具有共同特征的事件。 | \[\]
+标记 | 与事件关联的自定义标记数组，例如，用于标记一组具有共同特征的事件。 | \[\]
 comments | 由 secops 在管理事件时创建的注释数组，例如有关分类选择的其他信息。 | \[\]
 警报 | 包含与事件相关的所有警报以及其他信息（如严重性、警报中涉及的实体以及警报来源）的数组。 | \[\] (以下警报字段的详细信息) 
 

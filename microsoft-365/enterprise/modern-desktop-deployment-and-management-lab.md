@@ -1,5 +1,5 @@
 ---
-title: Windows和Office部署实验室工具包
+title: Windows 10和Office 365部署实验室工具包
 f1.keywords:
 - NOCSH
 ms.author: greglin
@@ -15,16 +15,16 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解有关 Windows 和 Office 部署实验室工具包的信息，以及访问的位置。
-ms.openlocfilehash: c0cf3ce239ed91261bd6e53cf317a7053168509a
-ms.sourcegitcommit: e5b1a900043e2e41650ea1cbf4227043729c6053
+ms.openlocfilehash: da51e0e3509ac2be60b9961dc2a0532d29f4f137
+ms.sourcegitcommit: cc9e3cac6af23f20d7cc5ac6fc6f6e01bc3cc5c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52060869"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "52736344"
 ---
-# <a name="windows-and-office-deployment-lab-kit"></a>Windows和Office部署实验室工具包
+# <a name="windows-10-and-office-365-deployment-lab-kit"></a>Windows 10和Office 365部署实验室工具包
 
-Windows和 Office 部署实验室工具包旨在帮助你规划、测试和验证运行 Windows 10 企业版 和 Microsoft 365 企业应用版 的桌面的部署Microsoft 365 企业应用版。 工具包中的实验室包括使用 Microsoft Endpoint Configuration Manager、桌面分析、Office自定义工具、OneDrive、Windows Autopilot 等。
+Windows 10和 Office 365 部署实验室工具包旨在帮助你规划、测试和验证运行 Windows 10 企业版 和 Microsoft 365 企业应用版 的桌面的部署Microsoft 365 企业应用版。 工具包中的实验室包括使用 Microsoft Endpoint Configuration Manager、桌面分析、Office自定义工具、OneDrive、Windows Autopilot 等。
 
 强烈建议准备升级到 Windows 8.1 的组织Windows 10。 如果当前使用的是 2019 Windows 10、Microsoft 365 企业应用版 (或 Office 365 专业增强版) ，Office适用。 作为隔离环境，生成的实验室非常适合探索部署工具更新和测试与部署相关的自动化。
 
@@ -34,9 +34,9 @@ Windows和 Office 部署实验室工具包旨在帮助你规划、测试和验�
 
 该工具包提供自动配置的虚拟实验室环境，包括加入域的桌面客户端、域控制器、Internet 网关和完全配置的 Configuration Manager 实例。 该工具包包含以下产品的最新评估版本：
 
-  - 新增内容！ Windows 10 企业版，版本 20H2
+  - 新增内容！ Windows 10 企业版，版本 21H1
   - Windows 7 企业版
-  - Microsoft Endpoint Configuration Manager，版本 2010*
+  - 新增内容！ Microsoft Endpoint Configuration Manager，版本 2103*
   - 适用于 Windows 10 的 Windows 评估和部署工具包
   - Microsoft Deployment Toolkit
   - Microsoft Application Virtualization (App-V)
@@ -47,6 +47,7 @@ Windows和 Office 部署实验室工具包旨在帮助你规划、测试和验�
 生成的实验室旨在连接到以下试用版： 
 
   - Microsoft 365 E5
+  - Microsoft 365 企业应用版
   - Office 365使用 EMS 企业移动性 + 安全性 (E5) 
 
 ## <a name="step-by-step-labs"></a>分步实验室
@@ -95,11 +96,12 @@ Windows和 Office 部署实验室工具包旨在帮助你规划、测试和验�
 
 - 准备、部署、优化
  
-## <a name="where-to-find-the-windows-and-office-deployment-lab-kit"></a>在哪里可以找到 Windows Office 部署实验室工具包
+## <a name="where-to-find-the-windows-10-and-office-365-deployment-lab-kit"></a>在哪里可以找到Windows 10 Office 365实验室工具包
 
 [下载 Windows 和 Office 部署实验室工具包](https://www.microsoft.com/evalcenter/evaluate-lab-kit)。
 
-* 可以使用和控制台内更新将安装的基线版本 2002 更新到版本 2010。 请使用宽带宽 Internet 连接下载此内容，并允许 30-45 分钟进行自动预配。 实验室环境至少需要 16 GB 的可用内存和 150 GB 的可用磁盘空间。 为获得最佳性能，建议使用 32 GB 的可用内存和 300 GB 的可用空间。 工具包将于 2021 年 7 月 22 日过期。 新版本将在过期前发布。
+> [!NOTE]
+> 请使用宽带 Internet 连接下载此内容并允许 30-45 分钟自动预配。 实验室环境至少需要 16 GB 的可用内存和 150 GB 的可用磁盘空间。 为获得最佳性能，建议使用 32 GB 的可用内存和 300 GB 的可用空间。 工具包将于 2021 年 8 月 23 日过期。 新版本将在过期前发布。
 
 ## <a name="additional-guidance"></a>其他指南
 

@@ -16,16 +16,16 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 22ff42cb399b3d07c0ebd8ec4f947352eb6f44aa
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 9b7699b1a24e7e1d74a48389d02518e814911ecc
+ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934761"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "52730866"
 ---
 # <a name="schedule-an-update-of-the-microsoft-defender-for-endpoint-linux"></a>计划更新 Microsoft Defender for Endpoint （Linux）
 
-若要在 Linux 上的 Microsoft Defender for Endpoint 上运行更新，请参阅在 Linux 上部署 [Microsoft Defender for Endpoint 的更新](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/linux-updates)。
+若要在 Linux 上的 Microsoft Defender for Endpoint 上运行更新，请参阅在 Linux 上部署 [Microsoft Defender for Endpoint 的更新](/microsoft-365/security/defender-endpoint/linux-updates)。
 
 Linux (和 Unix) 具有一个称为 **crontab** (类似于任务计划程序) 运行计划任务的工具。
 
@@ -84,7 +84,7 @@ CRON_TZ=America/Los_Angeles
 
 > #<a name="ubuntu-and-debian-systems"></a>!Ubuntu 和 Debian 系统
 
-`06**sun [$(date +\%d) -le 15] sudo apt-get install --only-upgrade mdatp>>~/mdatp_cron_job.log`
+`0 6 * * sun [$(date +\%d) -le 15] sudo apt-get install --only-upgrade mdatp>>~/mdatp_cron_job.log`
 
 > [!NOTE]
 > 在以上示例中，我们将它设置为 00 分钟、上午 6 点 (小时（24 小时制) 、每月的任何一天、星期日）。[$ (date + \% d) -le 15] == 不运行，除非它等于或小于第 3 周的第 15 (天) 。 这意味着它将在每月的第 3 个星期 (7) 上午 6：00 运行一次。 太平洋 (UTC -8) 。

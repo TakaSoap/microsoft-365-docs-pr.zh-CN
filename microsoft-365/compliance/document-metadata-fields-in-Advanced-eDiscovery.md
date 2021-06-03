@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: 本文定义审阅集内文档的元数据字段，在 Advanced eDiscovery 中Microsoft 365。
-ms.openlocfilehash: e801f60b69c796dfcd2cb6d83cc4fbc721dc7658
-ms.sourcegitcommit: 5a1cb7d95070eef47d401a4693cc137a90550a5e
+ms.openlocfilehash: 7b8628973a8b07a3cd31e2b42df28c181e77e288
+ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52259459"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "52730494"
 ---
 # <a name="document-metadata-fields-in-advanced-ediscovery"></a>高级电子数据展示中的文档元数据字段
 
@@ -47,10 +47,10 @@ ms.locfileid: "52259459"
 |CC|Cc|Email_cc|邮件类型的"抄送"字段。 格式为 **DisplayName \<SMTPAddress>**。|
 |合规性标签|ComplianceLabels|Compliance_labels|[应用于网站](retention.md)中内容的保留Office 365。|
 |复合路径|CompoundPath|Compound_path|描述项目源的可读路径。|
-|内容*|Content||已提取项目的文本。|
+|内容*|内容||已提取项目的文本。|
 |对话正文|对话正文||项目的对话正文。|
 |对话主题|对话主题||项目的对话主题。|
-|对话 ID|ConversationId|Email_conversation_ID|邮件的对话 ID。|
+|对话 ID|ConversationId|Conversation_ID|邮件的对话 ID。|
 |对话索引||Conversation_index|邮件的对话索引。|
 |对话 Pdf 时间|ConversationPdfTime||创建对话的 PDF 版本的日期。|
 |对话修订消耗时间|ConversationRedactionBurnTime||为聊天创建对话的 PDF 版本的日期。|
@@ -73,12 +73,12 @@ ms.locfileid: "52259459"
 |基准主题|DominantTheme|Dominant_theme|计算用于分析的基准主题。|
 |重复子集||Duplicate_subset|完全重复项的组 ID。|
 |EmailAction*||Email_action|值为 **None、Reply** 或 **Forward;** 基于邮件的主题行。|
-|请求的电子邮件传递回执||Email_delivery_receipt_requested|Internet 邮件头中提供的电子邮件地址，用于送达回执。|
+|请求的电子邮件传递回执||Email_delivery_receipt|Internet 邮件头中提供的电子邮件地址，用于送达回执。|
 |Importance|EmailImportance|Email_importance|邮件的重要性 **：0** - 低; **1** - 正常; **2** - 高|
 |EmailInternetHeaders|EmailInternetHeaders|Email_internet_headers|电子邮件的完整电子邮件头集|
 |EmailLevel*||Email_level|指示邮件所属电子邮件线程中的邮件级别;attachments 继承其父邮件的值。|
 |电子邮件 ID||Email_message_ID|邮件中的 Internet 邮件 ID。|
-|EmailReadReceiptRequested||Email_read_receipt_requested|在 Internet 标头中为已读回执提供的电子邮件地址。|
+|EmailReadReceiptRequested||Email_read_receipt|在 Internet 标头中为已读回执提供的电子邮件地址。|
 |电子邮件安全性|EmailSecurity|Email_security|邮件的安全策略设置 **：0** - 无; **1** - 已签名; **2** - 加密; **3** - 加密和签名。|
 |电子邮件敏感度|EmailSensitivity|email_sensitivity|邮件的敏感度设置 **：0** - 无; **1** 个人; **2** - 专用; **3** - CompanyConfidential。|
 |电子邮件集|EmailSet|Email_set|同一电子邮件集内所有邮件的组 ID。|
@@ -131,7 +131,7 @@ ms.locfileid: "52259459"
 |O365 创建日期||O365_date_created|创建日期SharePoint。|
 |O365 修改日期||O365_date_modified|上次修改日期（SharePoint）。|
 |修改者 O365||O365_modified_by|修改者SharePoint。|
-|父 ID|ParentId|Container_ID|项的父级的 ID。|
+|父 ID|ParentId|Parent_ID|项的父级的 ID。|
 |ParentNode||Parent_node|电子邮件线程中最接近的前一封电子邮件。|
 |参与者域|ParticipantDomains|Email_participant_domains|邮件参与者的所有域的列表。|
 |参与者|参与者|Email_participants|邮件的所有参与者列表;例如，发件人、收件人、抄送、密件抄送。|

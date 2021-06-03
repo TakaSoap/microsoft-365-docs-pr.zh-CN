@@ -18,17 +18,17 @@ search.appverid:
 - MET150
 ms.assetid: 26af16df-34cd-4f4a-b893-bc1d2e74039e
 ms.custom: seo-marvel-apr2020
-description: 了解如何在将 PST 文件导入到 Office 365 时，使用 Office 365 导入服务中的智能导入功能筛选Office 365。
-ms.openlocfilehash: fb978332f70495044a457147d29d8cdcf1194264
-ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
+description: 了解如何在将 PST 文件导入到 Microsoft 365 时，使用 Microsoft 365 导入服务中的智能导入功能筛选Microsoft 365。
+ms.openlocfilehash: fc89467e3ea9c0af86ec6b9ef6a9d7d61079e116
+ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52684048"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "52730566"
 ---
 # <a name="filter-data-when-importing-pst-files"></a>导入 PST 文件时筛选数据
 
-使用 Office 365 导入服务中的新智能导入功能筛选 PST 文件中实际导入到目标邮箱的项目。 以下是相应的工作方式：
+使用 Microsoft 365 导入服务中的新智能导入功能筛选 PST 文件中实际导入到目标邮箱的项目。 以下是相应的工作方式：
   
 - 创建并提交 PST 导入作业后，PST 文件将上载到 Microsoft 云中的 Azure 存储区域。
   
@@ -64,9 +64,9 @@ ms.locfileid: "52684048"
 
 创建 PST 导入作业后，请按照以下步骤筛选数据，然后再将数据导入Office 365。
   
-1. 转到 <https://compliance.microsoft.com>，然后使用你组织中的管理员帐户的凭据进行登录。
+1. 转到 <https://compliance.microsoft.com>，然后使用你组织中的管理员帐户凭据登录。
     
-2. 在合规性中心的左窗格中，Microsoft 365 **信息治理导入** \> **"。**
+2. 在 Microsoft 365 合规中心的侧左窗格中，单击“**信息治理**”\>“**导入**”。
     
     组织的导入作业列在"导入"**选项卡** 上。The **Analysis completed** value in the **Status** column indicates the import jobs that have been analysis by Microsoft 365 and are ready for you to import.
     

@@ -20,20 +20,20 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 5cc149668e49e21b38b5fb95ae3f40db6c296e1d
-ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
+ms.openlocfilehash: 587d6107b0c09b2178311d8da6606968e7fda083
+ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52572581"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "52730926"
 ---
-# <a name="microsoft-365-defender-incidents-api-and-the-incident-resource-type"></a>Microsoft 365Defender 事件 API 和事件资源类型
+# <a name="microsoft-365-defender-incidents-api-and-the-incidents-resource-type"></a>Microsoft 365Defender 事件 API 和事件资源类型
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 **适用于：**
 
-- Microsoft 365 Defender
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > [!IMPORTANT]
 > 某些信息与预发布的产品有关，在商业发布之前可能有重大修改。 Microsoft 对此处所提供的信息不作任何明示或默示的保证。
@@ -67,15 +67,15 @@ HTTP 响应代码指示你已按发送的请求数或按分配的运行时间 `4
 -|-|-
 incidentId | long | 事件唯一 ID。
 redirectIncidentId | nullable long | 当前事件合并到的事件 ID。
-incidentName | 字符串 | 事件的名称。
+incidentName | string | 事件的名称。
 createdTime | DateTimeOffset | 创建事件时 (UTC) 日期和时间。
 lastUpdateTime | DateTimeOffset | 上次更新事件 (UTC) 日期和时间。
-assignedTo | 字符串 | 事件的所有者。
+assignedTo | string | 事件的所有者。
 severity | 枚举 | 事件的严重性。 可能的值是 ```UnSpecified``` ```Informational``` ```Low``` ：、、、 ```Medium``` 和 ```High``` 。
 状态 | 枚举 | 指定事件的当前状态。 可能的值是 ```Active``` ：、 ```Resolved``` 和 ```Redirected``` 。
 classification | 枚举 | 事件的规范。 可取值为：```Unknown```、```FalsePositive```、```TruePositive```。
 确定 | 枚举 | 指定事件的确定。 可取值为：```NotAvailable```、```Apt```、```Malware```、```SecurityPersonnel```、```SecurityTesting```、```UnwantedSoftware``` 或 ```Other```。
-tags | 字符串列表 | 事件标记列表。
+标记 | 字符串列表 | 事件标记列表。
 comments | 事件注释列表 | 事件注释对象包含：注释字符串、createdBy 字符串和 createTime 日期时间。
 警报 | 警报列表 | 相关警报列表。 请参阅列表事件 API [文档](api-list-incidents.md) 的示例。
 

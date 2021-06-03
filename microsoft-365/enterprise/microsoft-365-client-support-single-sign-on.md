@@ -16,12 +16,12 @@ f1.keywords:
 - NOCSH
 description: 本文将了解哪些平台、客户端和 PowerShell 模块支持单一登录Microsoft 365。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 63090e1284bda39fe2d79c80b829891e867d2365
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 560196694e1c2aaf924e02a882e0c8a3454bf667
+ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50904897"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "52730182"
 ---
 # <a name="microsoft-365-client-app-support-single-sign-on"></a>Microsoft 365客户端应用支持：单一Sign-On
 
@@ -41,6 +41,6 @@ SSO (单一登录) 当用户登录到 SSO 中的应用程序时，可添加安�
 
 ## <a name="supported-powershell-modules"></a>支持的 PowerShell 模块
 
-- [Azure Active DirectoryPowerShell](/powershell/azure/active-directory/overview?view=azureadps-2.0)
+- [Azure Active DirectoryPowerShell](/powershell/azure/active-directory/overview)
 - [Exchange Online PowerShell](/powershell/exchange/exchange-online-powershell)
 - [SharePoint Online PowerShell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)
