@@ -593,11 +593,6 @@
 ###### [通过 PowerShell 高级搜寻](run-advanced-query-sample-powershell.md)
 ###### [使用 OData 查询](exposed-apis-odata-samples.md)
 
-#### [原始数据流式处理 API]()
-##### [原始数据流式处理](raw-data-export.md)
-##### [将高级搜寻事件流式传输至 Azure 事件中心](raw-data-export-event-hub.md)
-##### [将高级搜寻事件流式传输至存储账户](raw-data-export-storage.md)
-
 #### [SIEM 集成]()
 ##### [了解威胁智能概念](threat-indicator-concepts.md)
 ##### [了解提取检测的不同方法](configure-siem.md)
