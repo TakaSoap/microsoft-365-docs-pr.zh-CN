@@ -14,13 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: cf7c79cb6cc76af88ce0293a013ba6edbf435d8c
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: b95fa2da177a3ecb93bcf3e2085be6111c2c641e
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245488"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52770513"
 ---
 # <a name="list-all-remediation-activities"></a>列出所有修正活动
 
@@ -65,7 +66,7 @@ completerEmail | String | 如果修正活动是由某人手动完成的，此列
 completerId | String | 如果修正活动是由某人手动完成的，则此列包含其对象 ID | 空
 completionMethod | String | 如果所有设备 (都由选择"标记为已完成) 或"手动"进行修补，则修正活动可以"自动"完成。 | 自动
 createdOn | 日期时间 | 创建此修正活动的时间 | 2021-01-12T18：54：11.5499478Z
-说明 | String | 此修正活动的说明 | 将 Microsoft Silverlight 更新到更高版本，以减少影响设备的已知漏洞。
+description | String | 此修正活动的说明 | 将 Microsoft Silverlight 更新到更高版本，以减少影响设备的已知漏洞。
 dueOn | 日期时间 | 此修正活动的创建者设置的截止日期 | 2021-01-13T00：00：00Z
 fixedDevices | . | 已修复的设备数量 | 2
 id | String | 此修正活动的 ID | 097d9735-5479-4899-b1b7-77398899df92
@@ -86,7 +87,7 @@ scid | String | 相关安全建议 SCID | 空
 statusLastModifiedOn | 日期时间 | 更新状态字段的日期 | 2021-01-12T18：54：11.5499487Z
 targetDevices | 长型 | 此修正适用于的公开设备数量 | 43
 title | String | 此修正活动的标题 | 更新 Microsoft Silverlight
-type | String | 修正类型 | Update
+type | String | 修正类型 | 更新
 vendorId | String | 相关供应商名称 | Microsoft
 
 ## <a name="example"></a>示例

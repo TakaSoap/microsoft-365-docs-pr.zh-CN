@@ -16,13 +16,13 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 3526fd06-b45f-445b-aed4-5ebd37b3762a
-description: 使用安全与合规中心内的搜索和清除功能，在组织中的所有邮箱中搜索并删除电子邮件。
-ms.openlocfilehash: 629b236be3f857da47674cda9350d8b89e6f3445
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+description: 使用 Microsoft 365 合规中心中的搜索和清除功能搜索和删除组织中所有邮箱的电子邮件。
+ms.openlocfilehash: 95683ed5dc6cce8ff109976ebb0d13215593f046
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52537639"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52770705"
 ---
 # <a name="search-for-and-delete-email-messages"></a>搜索和删除电子邮件
 
@@ -46,19 +46,23 @@ ms.locfileid: "52537639"
   > [!NOTE]
   > Exchange Online 和安全与合规中心中都有 **组织管理** 角色组。 这些角色组都是独立的角色组，授予不同的权限。 作为 Exchange Online 中 **组织管理** 的成员，并没有授予删除邮件的必要权限。 如果你未被分配安全与合规中心的 **搜索并清除** 角色（直接分配或通过 **组织管理** 等角色组分配），则当你运行 **New-ComplianceSearchAction** cmdlet 时，会在步骤 3 中收到一个显示为“找不到与参数名称‘清除’相符的参数”的错误消息。
 
-- 你必须使用安全与合规中心 PowerShell 删除邮件。 有关如何连接的说明，请参阅[步骤 2](#step-2-connect-to-security--compliance-center-powershell)。
+- 你必须使用安全与合规中心 PowerShell 删除邮件。 请参阅 [步骤 1](#step-1-connect-to-security--compliance-center-powershell) ，了解如何连接的说明。
 
 - 每个邮箱一次最多可以删除 10 个项目。因为搜索和删除邮件的功能是用作事件响应工具，此限制有助于确保从邮箱中快速删除邮件。此功能并不是为了清理用户邮箱。
 
-- 在内容搜索中，可通过搜索和清除操作删除其项目的最大邮箱数为 50,000。 如果搜索（在 [步骤 1](#step-1-create-a-content-search-to-find-the-message-to-delete) 中创建）到超过 50,000 个邮箱，则清除操作（在步骤 3 中创建）将失败。 如果将搜索配置为包括组织内的所有邮箱，则单次搜索中一般有可能搜索到超过 50,000 个邮箱。 即使包含匹配搜索查询项目的邮箱数量少于 50,000 个，这一限制仍然适用。 请参阅 [详细信息](#more-information) 部分，以获取关于使用搜索权限筛选器在超过 50,000 个邮箱中搜索和清除项目的指南。
+- 在内容搜索中，可通过搜索和清除操作删除其项目的最大邮箱数为 50,000。 如果搜索（在 [步骤 2](#step-2-create-a-content-search-to-find-the-message-to-delete) 中创建）到超过 50,000 个邮箱，则清除操作（在步骤 3 中创建）将失败。 如果将搜索配置为包括组织内的所有邮箱，则单次搜索中一般有可能搜索到超过 50,000 个邮箱。 即使包含匹配搜索查询项目的邮箱数量少于 50,000 个，这一限制仍然适用。 请参阅 [详细信息](#more-information) 部分，以获取关于使用搜索权限筛选器在超过 50,000 个邮箱中搜索和清除项目的指南。
 
 - 本文中所述的步骤只能用于删除 Exchange Online 邮箱和公用文件夹中的项目。 无法将其用于删除 SharePoint 或 OneDrive for Business 网站中的内容。
 
 - 使用本文中的程序，无法删除高级电子数据展示案例中的审阅集中的电子邮件项目。 这是因为审阅集中的项目存储在 Azure 存储位置，而不是实时服务中。 这意味着，这些内容无法通过在步骤 1 中创建的内容搜索返回。 若要删除某个审阅集中的项目，必须删除包含该审阅集的高级电子数据展示案例。 有关详细信息，请参阅[关闭或删除高级电子数据展示案例](close-or-delete-case.md)。
 
-## <a name="step-1-create-a-content-search-to-find-the-message-to-delete"></a>步骤 1：创建内容搜索来查找要删除的邮件
+## <a name="step-1-connect-to-security--compliance-center-powershell"></a>步骤 1：连接到安全与合规中心 PowerShell
 
-第一步是创建并运行内容搜索以查找您想要从组织的邮箱中删除的邮件。 你可以通过使用安全与合规中心或运行 **New-ComplianceSearch** 和 **Start-ComplianceSearch** cmdlet 来创建搜索。 与此搜索的查询匹配的邮件将通过在 [步骤 3](#step-3-delete-the-message) 中运行 **New-ComplianceSearchAction -Purge** 命令来删除。 有关创建内容搜索和配置搜索查询的信息，请参阅下列主题：
+第一步是为组织连接到安全与合规中心 PowerShell。 有关分步说明，请参阅[连接到安全与合规中心 PowerShell](/powershell/exchange/connect-to-scc-powershell)。
+
+## <a name="step-2-create-a-content-search-to-find-the-message-to-delete"></a>步骤 2：创建内容搜索以查找要删除的邮件
+
+第二步是创建和运行内容搜索以查找要从组织的邮箱中删除的邮件。 可以通过使用 Microsoft 365 合规中心或在安全与合规 PowerShell 中运行 **New-ComplianceSearch** 和 **Start-ComplianceSearch** cmdlet 来创建搜索。 与此搜索的查询匹配的邮件将通过在 [步骤 3](#step-3-delete-the-message) 中运行 **New-ComplianceSearchAction -Purge** 命令来删除。 有关创建内容搜索和配置搜索查询的信息，请参阅下列主题：
 
 - [Office 365 中的内容搜索](content-search.md)
 
@@ -83,7 +87,7 @@ ms.locfileid: "52537639"
 
 - 预览搜索结果以验证搜索是否仅返回你想要删除的邮件。
 
-- 使用搜索估计统计信息（在安全与合规中心内的搜索的详细信息窗格中显示，或使用 [Get-ComplianceSearch](/powershell/module/exchange/get-compliancesearch) cmdlet）获取结果总数。
+- 使用搜索估计统计信息（显示在 Microsoft 365 合规中心的搜索细节窗格中，或使用 [Get-ComplianceSearch](/powershell/module/exchange/get-compliancesearch) cmdlet）以获得结果总数。
 
 以下是查找可疑电子邮件的两个查询示例。
 
@@ -105,12 +109,6 @@ ms.locfileid: "52537639"
 $Search=New-ComplianceSearch -Name "Remove Phishing Message" -ExchangeLocation All -ContentMatchQuery '(Received:4/13/2016..4/14/2016) AND (Subject:"Action required")'
 Start-ComplianceSearch -Identity $Search.Identity
 ```
-
-## <a name="step-2-connect-to-security--compliance-center-powershell"></a>步骤 2：连接到安全与合规中心 PowerShell
-
-下一步是连接到组织的安全与合规中心 PowerShell。 有关分步说明，请参阅[连接到安全与合规中心 PowerShell](/powershell/exchange/connect-to-scc-powershell)。
-
-连接到安全与合规中心 PowerShell 后，运行在上一步中准备的 **New-ComplianceSearch** 和 **Start-ComplianceSearch** cmdlet。
 
 ## <a name="step-3-delete-the-message"></a>步骤 3：删除邮件
 

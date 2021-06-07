@@ -1,5 +1,5 @@
 ---
-title: 步骤 1. 通过 MFA 提高远程工作者的登录安全性
+title: 步骤 1. 为具有 MFA 的混合工作者提高登录安全性
 f1.keywords:
 - NOCSH
 author: JoeDavies-MSFT
@@ -16,15 +16,15 @@ ms.collection:
 - m365solution-remotework
 - m365solution-scenario
 ms.custom: ''
-description: 要求远程工作者通过多重身份验证 (MFA) 登录。
-ms.openlocfilehash: 1c69f2ee7520a554a726bc0ffd9e2d7ebca64261
-ms.sourcegitcommit: e02cf5702af178ddd2968877a808874ecb49ed2c
+description: 要求混合工作者使用多重身份验证 （MFA） 进行登录。
+ms.openlocfilehash: 105c2f7170b4bea648427b0fda57ad081cb99a86
+ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52028964"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52788952"
 ---
-# <a name="step-1-increase-sign-in-security-for-remote-workers-with-mfa"></a>步骤 1. 通过 MFA 提高远程工作者的登录安全性
+# <a name="step-1-increase-sign-in-security-for-hybrid-workers-with-mfa"></a>步骤 1. 为具有 MFA 的混合工作者提高登录安全性
 
 要提高远程工作者的登录安全性，请使用多重身份验证 (MFA)。 MFA 要求用户登录受用户帐户密码之外的其他验证约束。 即使恶意用户确定了用户帐户密码，还必须能够响应其他验证（如发送到智能手机的短信）才能获得访问权限。
 

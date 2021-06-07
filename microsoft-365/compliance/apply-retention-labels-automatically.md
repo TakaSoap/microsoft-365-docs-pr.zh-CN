@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 创建保留标签和自动标记策略，以便你可以自动应用标签以保留需要的内容并删除不需要的内容
-ms.openlocfilehash: 12e909964422d0c15312c1794ce3d9aacc2a1da8
-ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
+ms.openlocfilehash: 0324f988402d407e30d10a725aa5acebb0a69964
+ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52107634"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52788389"
 ---
 # <a name="automatically-apply-a-retention-label-to-retain-or-delete-content"></a>自动应用保留标签来保留或删除内容
 
@@ -132,21 +132,19 @@ ms.locfileid: "52107634"
 > [!WARNING]
 > 该配置当前存在一个已知限制，即选定的敏感信息类型有匹配时，所有未标记的电子邮件始终应用所选的保留标签。 例如，即使将自动应用策略的范围限定于特定用户，或者为该策略选择了 Exchange 以外的位置，如果匹配，标签始终会应用于未标记的电子邮件。
 
-为敏感信息创建自动应用保留标签策略时，可看到与创建数据丢失防护 (DLP) 策略时相同的策略模板列表。 每个策略模板都是预配置的，用于查找特定类型的敏感信息。 例如，此处显示的模板查找来自 **隐私** 类别的美国 ITIN、SSN 和护照号码，以及 **美国个人身份信息 (PII) 数据** 模板：
+为敏感信息创建自动应用保留标签策略时，可看到与创建数据丢失防护 (DLP) 策略时相同的策略模板列表。 每个策略模板都是预配置的，用于查找特定类型的敏感信息。 在下面的示例中，敏感信息类型来自" **隐私信息** "类别， **美国个人身份信息 （PII） 数据** 模板：
 
 ![包含敏感信息类型的策略模板](../media/sensitive-info-configuration.png)
 
 若要了解有关敏感信息类型的详细信息，请参阅“[敏感信息类型实体定义](sensitive-information-type-entity-definitions.md)”。 目前[此方案](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)[完全匹配](document-fingerprinting.md)和文档指纹信息。
 
-选择策略模板后，既可以添加或删除任意类型敏感信息，也可以更改实例计数和匹配准确度。在下面的示例屏幕截图中，保留标签将只会在以下情况下自动应用：
+选择策略模板后，可添加或删除任意类型的敏感信息，且可更改可信度级别和实例计数。在上一示例屏幕截图中，这些选项已更改，因此保留标签将仅在以下情况时自动应用：
   
-- 检测到的敏感信息类型具有至少 75 的匹配准确度（或可信度）。 许多敏感信息类型都由多个模式定义，其中具有较高匹配准确度的模式需要发现较多证据（如关键字、日期或地址），而具有较低匹配准确度的模式需要较少的证据。 **最小** 匹配准确度越低，内容越容易与条件匹配。
+- 检测到的敏感信息类型具有至少 **个敏感信息类型的匹配准确度（即 [置信水平](sensitive-information-type-learn-about.md#more-on-confidence-levels)）和** 对一种敏感信息类型的 **置信度高**。 许多敏感信息类型都由多个模式定义，其中具有较高匹配准确度的模式需要发现较多证据（如关键字、日期或地址），而具有较低匹配准确度的模式需要较少的证据。 置信水平越低，内容越容易与条件匹配，且且有可能带来更多误报。
 
-- 内容包含 1 到 9 个这三种敏感信息类型的实例。 可删除“**至**”值，将其更改为“**任何**”。
+- 内容包含 1 到 9 个这三种敏感信息类型的实例。 **到** 的默认值为 **任何值**。
 
 有关这些选项的详细信息，请参阅 DLP 文档中的以下指南“[调整规则，使它们更易或更难匹配](data-loss-prevention-policies.md#tuning-rules-to-make-them-easier-or-harder-to-match)”。
-    
-![用于确定敏感信息类型的选项](../media/de255881-f596-4c8d-8359-e974e3a0819a.png)
 
 使用敏感信息类型自动应用保留标签时要考虑的事项：
 

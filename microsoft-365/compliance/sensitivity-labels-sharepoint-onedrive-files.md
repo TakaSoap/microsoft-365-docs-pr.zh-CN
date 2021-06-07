@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 管理员可以启用 Word、Excel 和 PowerPoint 中的敏感度SharePoint OneDrive。
-ms.openlocfilehash: 16186bd1e5c4cd2ca5b1ccd81c24ec81bfd33597
-ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
+ms.openlocfilehash: 8007f085e7bcba7f055f616954e2f0549f6f125a
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52684023"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52770393"
 ---
 # <a name="enable-sensitivity-labels-for-office-files-in-sharepoint-and-onedrive"></a>启用 SharePoint 和 OneDrive 中 Office 文件的敏感度标签
 
@@ -64,7 +64,7 @@ ms.locfileid: "52684023"
 
 如果当前使用 SharePoint 信息权限管理 (IRM) 保护 SharePoint 中的文档，请务必选中此页上的 SharePoint 信息权限管理[ (IRM) ](#sharepoint-information-rights-management-irm-and-sensitivity-labels)和敏感度标签部分。 
 
-## <a name="requirements"></a>Requirements
+## <a name="requirements"></a>要求
 
 这些新功能仅适用于 [敏感度](sensitivity-labels.md) 标签。 如果当前具有 Azure 信息保护标签，请首先将其迁移到敏感度标签，以便你可以为上传的新文件启用这些功能。 有关说明，请参阅 [Azure 信息保护标签迁移到统一敏感度标签](/azure/information-protection/configure-policy-migrate-labels)。
 
@@ -87,6 +87,8 @@ ms.locfileid: "52684023"
     - **选择了双** 加密技术。
     
     对于具有其中任何加密配置的标签，标签不会在 Web Office中显示。 此外，新功能不能用于已具有这些加密设置的已标记文档。 例如，这些文档不会在搜索结果中返回，即使它们已更新。
+
+- 出于性能原因，当您将文档上载或保存到 SharePoint并且文件标签不应用加密时，文档库中的"敏感度"列可能需要一段时间才能显示标签名称。 如果你使用依赖于此列中的标签名称的脚本或自动化，则此延迟的因素。
 
 - 在下列"另存为"方案中，用户打开加密文档可能会遇到延迟：使用 Office 桌面版时，用户为具有应用加密的敏感度标签的文档选择"另存为"。 用户选择SharePoint或OneDrive位置，然后立即尝试在 Web Office打开该文档。 如果该服务仍在处理加密，用户将看到一条消息，指出必须在其桌面应用中打开文档。 如果用户在几分钟后重试，文档将在 Web Office中成功打开。 
 
@@ -169,7 +171,8 @@ ms.locfileid: "52684023"
 
 1. 使用具有全局管理员或管理员权限的工作SharePoint学校帐户Microsoft 365，连接到SharePoint。 若要了解具体操作步骤，请参阅 [SharePoint 在线管理壳入门](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)。
     
-    注意：如果Microsoft 365多地理位置，请对[连接-SPOService](/powershell/module/sharepoint-online/connect-sposervice)使用 -Url 参数，并指定其中一个地理位置的 SharePoint Online 管理中心网站 URL。
+    > [!NOTE]
+    > 如果已Microsoft 365地理位置，请对[连接-SPOService](/powershell/module/sharepoint-online/connect-sposervice)使用 -Url 参数，并指定其中一个地理位置的 SharePoint Online 管理中心网站 URL。
 
 2. 运行以下命令并按 **Y** 确认：
 

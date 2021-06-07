@@ -27,12 +27,12 @@ ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: 本文中，管理员可了解 defender 保险箱链接保护，Office 365保护组织免受使用恶意 URL 的网络钓鱼和其他攻击。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 675de13410ac98e18a8b72125c2226d2c9c62821
-ms.sourcegitcommit: 4bcac4cb4f9399ebbd7c8cff0abb4d6ecedb731e
+ms.openlocfilehash: d42d7563b5267f805756125d1764d506f1700e13
+ms.sourcegitcommit: f3d1009840513703c38bab99a6e13a3656eae5ee
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "52698984"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "52793024"
 ---
 # <a name="safe-links-in-microsoft-defender-for-office-365"></a>保险箱Microsoft Defender for Office 365
 
@@ -220,7 +220,7 @@ ms.locfileid: "52698984"
 
 - 不允许用户单击指向原始 URL 的安全链接：允许或阻止用户单击桌面版 Word、Excel、PowerPoint 和 Visio 中的警告页面指向原始 **URL。** [](#warning-pages-from-safe-links) 默认值和推荐值为 **On。**
 
-若要为 保险箱应用配置Office 365链接设置，请参阅为保险箱应用配置Office 365[保护](configure-global-settings-for-safe-links.md#configure-safe-links-protection-for-office-365-apps-in-the-security--compliance-center)。
+若要为 保险箱应用配置Office 365链接设置，请参阅为保险箱应用配置Office 365[保护](configure-global-settings-for-safe-links.md#configure-safe-links-protection-for-office-365-apps-in-the-security-center)。
 
 有关"标准"和"严格"策略设置的建议值详细信息，请参阅全局设置["保险箱链接"。](recommended-settings-for-eop-and-office365.md#global-settings-for-safe-links)
 
@@ -257,7 +257,7 @@ ms.locfileid: "52698984"
 
 当活动链接策略中的保险箱单击受支持应用中的阻止链接时，他们会访问阻止[的 URL 警告](#blocked-url-warning)页面。
 
-您可以在全局设置中为"链接"配置保险箱列表。 有关说明，请参阅 [配置"阻止以下 URL"列表](configure-global-settings-for-safe-links.md#configure-the-block-the-following-urls-list-in-the-security--compliance-center)。
+您可以在全局设置中为"链接"配置保险箱列表。 有关说明，请参阅 [配置"阻止以下 URL"列表](configure-global-settings-for-safe-links.md#configure-the-block-the-following-urls-list-in-the-security-center)。
 
 **注意**：
 

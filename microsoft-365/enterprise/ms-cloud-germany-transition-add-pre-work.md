@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 摘要：从德国 Microsoft 云 (德国) 迁移到新的德国数据中心Office 365服务前工作。
-ms.openlocfilehash: 66f23d33e9e55c432c33e9d90549d33ea42536db
-ms.sourcegitcommit: 07e536f1a6e335f114da55048844e4a866fe731b
+ms.openlocfilehash: 244a784b0e28f9d5629f5af242a6cf8227abdb01
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "52651016"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52770370"
 ---
 # <a name="pre-migration-activities-for-the-migration-from-microsoft-cloud-deutschland"></a>从德国 Microsoft 云迁移的迁移前活动
 
@@ -98,16 +98,12 @@ Office 365"德国"地区的租户要求所有用户在租户迁移到达阶段 9
 
 ## <a name="active-directory-federation-services-ad-fs"></a>Active Directory 联合身份验证服务 (AD FS)
 
-<!-- before phase 4 -->
-
 **适用于：** 使用本地 AD FS 验证连接到 Microsoft Office 365<br>
-**应用时**：阶段 4 之前的任何时间
+**应用后**：阶段 2 之前的任何时间
 
 阅读和应用 [ADFS 迁移步骤](ms-cloud-germany-transition-add-adfs.md)
 
 ## <a name="sharepoint-online"></a>SharePoint Online
-
-<!-- before phase 4 -->
 
 **适用于：** 在本地使用 SharePoint 2013 的客户<br>
 **应用时**：阶段 4 之前的任何时间

@@ -1,5 +1,5 @@
 ---
-title: 步骤 6：培训远程工作者和处理使用情况反馈
+title: 步骤 6：培训员工并解决使用反馈
 f1.keywords:
 - NOCSH
 author: JoeDavies-MSFT
@@ -17,16 +17,16 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: 培训用户，并确保快速处理问题。
-ms.openlocfilehash: 66091269e4bb4844456feac1b8cfa28718b0ca36
-ms.sourcegitcommit: e02cf5702af178ddd2968877a808874ecb49ed2c
+ms.openlocfilehash: b6581533983c2e00ab8b29d73326deebda52599f
+ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52028917"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52788819"
 ---
-# <a name="step-6-train-remote-workers-and-address-usage-feedback"></a>步骤 6：培训远程工作者和处理使用情况反馈
+# <a name="step-6-train-your-workers-and-address-usage-feedback"></a>步骤 6：培训员工并解决使用反馈
 
-为远程工作者提供以下方面的培训：
+培训混合工作者：
 
 - 使用 MFA 的正确登录程序，包括注册额外的验证方法。
 - 对设备的使用，以及如何使用终结点管理策略阻止访问不合规或未托管的设备。
@@ -38,15 +38,15 @@ ms.locfileid: "52028917"
 
 此培训应包括实践练习，让工作者可以体验这些功能及其结果。
 
-创建一个论坛供远程工作者来提问或获得问题解答，例如创建一个团队或一个 Yammer 群组。
+创建一个论坛，供员工提问或解决问题，例如团队或 Yammer 组。
 
 在培训后的几周内：
 
-- 快速处理论坛中来自远程工作者的反馈，并根据需要调整远程工作者策略和配置。
+- 在论坛中快速解决员工反馈，并根据需要调整员工策略和配置。
 - 分析 Teams、电子邮件、SharePoint 网站和 OneDrive 文件夹的使用情况，并将其与你期望的用户采用情况进行比较。
 
 然后，根据需要重新培训用户。
 
 ## <a name="results-of-step-6"></a>步骤 6 的结果
 
-已对远程工作者进行培训，他们可通过一个响应迅速的开放式论坛提供反馈并发布远程访问和生产力应用方面的问题。
+混合式工作者接受过培训，通过响应式和开放论坛，通过安全性、合规性、远程访问和生产力应用提供反馈并发布问题。

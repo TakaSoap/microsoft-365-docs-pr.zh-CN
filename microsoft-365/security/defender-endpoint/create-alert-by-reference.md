@@ -14,13 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: 9066bcdae549f7a6b1372714d567674eb03c1e51
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: 8b05dde015bc96e1ccd3f80e25c416a371e03199
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51166443"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52772385"
 ---
 # <a name="create-alert-api"></a>创建警报 API
 
@@ -88,7 +89,7 @@ reportId | String | 事件的 reportId，从高级搜寻获取。 **必需**。
 machineId | String | 标识事件的设备 ID。 **必需**。
 severity | String | 警报的严重性。 属性值为："Low"、Medium 和"High"。 **必需**。
 title | String | 警报的标题。 **必需**。
-说明 | String | 警报的说明。 **必需**。
+description | String | 警报的说明。 **必需**。
 recommendedAction| String | 建议安全人员在分析警报时采取的操作。 **必需**。
 “类别”| String | 警报的类别。 属性值包括："General"、"CommandAndControl"、"Collection"、"CredentialAccess"、"DefenseEvasion"、"Discovery"、"Exfiltration"、"Exploit"、"Execution"、"InitialAccess"、"DefenseMovement"、"Malware"、"Persistence"、"PrivilegeEscalation"、"Ransomware"、"SuspiciousActivity"（ **必需**）。
 

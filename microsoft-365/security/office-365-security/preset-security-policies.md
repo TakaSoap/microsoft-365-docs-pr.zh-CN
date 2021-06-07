@@ -15,12 +15,12 @@ ms.collection:
 description: 管理员可以了解如何跨 EOP Exchange Online Protection (和 Microsoft Defender for) 保护功能应用标准策略和严格Office 365
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 7579b2d2a47135ab9628d2ec8990f53c3917514b
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: ca65f003b0c206b0f7e23f3498a4ef0d0bc03fa6
+ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51203615"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52788975"
 ---
 # <a name="preset-security-policies-in-eop-and-microsoft-defender-for-office-365"></a>在 EOP 和 Microsoft Defender for Office 365
 
@@ -31,9 +31,9 @@ ms.locfileid: "51203615"
 - [Microsoft Defender for Office 365 计划 1 和计划 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-预设安全策略提供了一个集中位置，用于一次将建议的所有垃圾邮件、恶意软件和网络钓鱼策略应用于用户。 策略设置不可配置。 相反，它们是由我们设置的，它们基于我们在数据中心中的观察和体验，以在将有害的内容远离用户而不中断他们的工作之间取得平衡。
+预设安全策略提供了一个集中位置，用于一次将建议的所有垃圾邮件、恶意软件和网络钓鱼策略应用于用户。 策略设置不可配置。 相反，它们是由我们设置的，它们基于我们在数据中心中的观察和体验，以平衡将有害的内容远离用户和避免不必要的中断。
 
-本主题的其余部分介绍了预设安全策略以及如何配置它们。
+本文的其余部分介绍了预设安全策略以及如何配置它们。
 
 ## <a name="what-preset-security-policies-are-made-of"></a>预设安全策略由什么决定
 
@@ -54,13 +54,13 @@ ms.locfileid: "51203615"
 
 使用具有条件和例外的规则，这些规则可确定配置文件的适用或不应用于哪些用户。
 
-只能使用一次条件或例外，但可以为条件或例外指定多个值。 同一个条件或例外的多个值使用“或”逻辑（例如，_\<recipient1\>_ 或 _\<recipient2\>_）。 不同的条件或例外使用“和”逻辑（例如，_\<recipient1\>_ 和 _\<member of group 1\>_）。
-
 可用的条件和例外包括：
 
-- **收件人为**：组织中邮箱、邮件用户或邮件联系人。
-- **收件人是组织中**： 组的成员。
-- **收件人域为**：在邮件中配置的接受Microsoft 365。
+- **用户**：你的组织内指定的邮箱、邮件用户或邮件联系人。
+- **组**：你的组织内指定的通讯组、启用邮件的安全组或 Microsoft 365 组。
+- **域**：你的组织内指定的 [接受域](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)中的所有收件人。
+
+只能使用一次条件或例外，但可以为条件或例外指定多个值。 同一个条件或例外的多个值使用“或”逻辑（例如，_\<recipient1\>_ 或 _\<recipient2\>_）。 不同的条件或例外使用“和”逻辑（例如，_\<recipient1\>_ 和 _\<member of group 1\>_）。
 
 ### <a name="policies-in-preset-security-policies"></a>预设安全策略中的策略
 
@@ -105,7 +105,7 @@ ms.locfileid: "51203615"
 
 ### <a name="what-do-you-need-to-know-before-you-begin"></a>开始前，有必要了解什么？
 
-- 安全与合规中心的打开网址为 <https://protection.office.com/>。 若要直接转到 **预设安全策略页面** ，请使用 <https://protection.office.com/presetSecurityPolicies> 。
+- 在 打开Microsoft 365安全中心 <https://security.microsoft.com/> 。 若要直接转到 **预设安全策略页面** ，请使用 <https://security.microsoft.com/presetSecurityPolicies> 。
 
 - 若要连接到 Exchange Online PowerShell，请参阅[连接到 Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)。
 
@@ -117,45 +117,38 @@ ms.locfileid: "51203615"
 
   **注意**：将用户添加到 Azure Active Directory 管理中心中的相应 Microsoft 365 角色会为用户提供对 Microsoft 365 中其他功能所需的权限。 有关详细信息，请参阅 [关于管理员角色](../../admin/add-users/about-admin-roles.md)。
 
-### <a name="use-the-security--compliance-center-to-assign-preset-security-policies-to-users"></a>使用安全&中心向用户分配预设安全策略
+### <a name="use-the-security-center-to-assign-preset-security-policies-to-users"></a>使用安全中心向用户分配预设安全策略
 
-1. 在安全与&中心，转到威胁 **管理** \> **策略** \> **预设安全策略**。
+1. 在安全中心，转到电子邮件& **协作** \> **策略&规则** \> **威胁** 策略 \> **模板策略** 部分 \> **预设安全策略**。
 
 2. 在 **"标准保护"** 或 **"严格保护"下，** 单击"**编辑"。**
 
-3. 将 **启动"应用标准保护** " **或"应用严格保护** "向导。 在 **"适用于步骤的 EOP** 保护"上，标识 [EOP 保护应用于](#policies-in-preset-security-policies) 的内部收件人：
+3. 将 **启动"应用标准保护** " **或"应用严格保护** "向导。 在 **"适用于 EOP** 保护"页上，标识 [EOP](#policies-in-preset-security-policies) 保护应用于以下收件人 (内部) ：
+   - **用户**
+   - **组**
+   - **域**
 
-   1. 单击 **"添加条件"。** In the dropdown that appears， select a condition under **Applied if**：
+   单击相应的框，开始键入值，然后从结果中选择所需的值。 根据需要多次重复此过程。 若要删除现有值，请单击值旁边的 ![删除图标](../../media/m365-cc-sc-remove-selection-icon.png) “删除”。
 
-      - **收件人为**
-      - **收件人是以下组的成员**
-      - **收件人域为**
+   对于用户或组，可以使用大多数标识符（姓名、显示名称、别名、电子邮件地址、帐户名称等），但是相应的显示名称会显示在结果中。 对于用户，请自行输入星号 (\*) 以查看所有可用值。
 
-      一个条件只能使用一次，但可以为此条件指定多个值。 同一条件的多个值使用 OR 逻辑 (例如 _\<recipient1\>_ ，或 _\<recipient2\>_) 。
+   - **排除这些用户、组和域**：若要为策略应用于的内部收件人添加例外（收件人例外），请选择此选项并配置例外。 设置和行为与条件完全相同。
 
-   2. 所选条件将显示在阴影部分。 In that section， click in the **Any of these** box. 如果您等待片刻，将显示一个列表，以便您可以选择一个值。 或者，您可以开始键入值以筛选列表并选择一个值。 根据需要重复执行此步骤（次数不限）。 若要删除单个值，请单击值 **上的"** ![ 删除 ](../../media/scc-remove-icon.png) ""删除"图标。 若要删除整个条件，请单击条件 ![ 上的"删除 ](../../media/scc-remove-icon.png) ""删除"图标。
+   完成后，单击“**下一步**”。
 
-   3. 若要添加另一个条件，请单击" **添加** 条件"，然后从其余条件中选择。 不同的条件使用 AND 逻辑 (例如 _\<recipient1\>_ ，和 _\<member of group 1\>_) 。
+4. 在适用于 Office 365 组织的 Microsoft Defender 中，你将访问适用于 Office 365 保护的 **Defender** 页面，以标识 Microsoft Defender 针对 [Office 365](#policies-in-preset-security-policies)保护应用于 (收件人条件) 。
 
-      重复上一步以向条件添加值，并根据需要多次重复此步骤或直到条件用完。
+   设置和行为与适用于页面 **的 EOP 保护完全相同** 。
 
-   4. 若要添加例外，请单击"**添加条件"。** In the dropdown that appears， select a condition under **Except when**. 设置和行为与条件完全相同。
+   完成后，单击“**下一步**”。
 
-   完成后，单击“下一步”。
+5. 在"**查看并确认更改"** 页上，验证您的选择，然后单击"确认 **"。**
 
-4. 如果你的组织具有适用于 Office 365 的 Microsoft Defender，你将使用 **ATP** 保护应用步骤来标识 [Microsoft Defender](#policies-in-preset-security-policies) Office 365保护应用于的内部收件人。
+### <a name="use-the-security-center-to-modify-the-assignments-of-preset-security-policies"></a>使用安全中心修改预设安全策略的分配
 
-   设置和行为与适用于步骤 **的 EOP 保护完全相同** 。
+修改标准保护或严格保护安全策略分配的步骤与最初向用户分配预设安全策略[时的步骤相同](#use-the-security-center-to-assign-preset-security-policies-to-users)。
 
-   完成后，单击“下一步”。
-
-5. 在"**确认"** 步骤中，验证您的选择，然后单击"确认 **"。**
-
-### <a name="use-the-security--compliance-center-to-modify-the-assignments-of-preset-security-policies"></a>使用安全&合规中心修改预设安全策略的分配
-
-修改标准保护或严格保护安全策略分配的步骤与最初向用户分配预设安全策略[时的步骤相同](#use-the-security--compliance-center-to-assign-preset-security-policies-to-users)。
-
-若要禁用 **标准保护** 或 **严格保护** 安全策略，同时仍保留现有条件和例外，将开关滑动到 **禁用**。 若要启用策略，将切换开关滑动到 **已启用**。
+若要禁用 **标准保护** 或 **严格** 保护安全策略，同时仍保留现有条件和例外，将开关滑动到 **禁用切换** ![ 关闭 ](../../media/scc-toggle-off.png) 。 若要启用策略，将切换开关滑动到 **启用切换** ![ 打开 ](../../media/scc-toggle-on.png) 。
 
 ### <a name="how-do-you-know-these-procedures-worked"></a>如何判断这些过程生效了？
 
@@ -163,4 +156,4 @@ ms.locfileid: "51203615"
 
 例如，对于被检测为垃圾邮件 (高可信度垃圾邮件) 验证邮件是否传递到 **标准** 保护用户的"垃圾邮件"文件夹，并隔离" **严格** 保护"用户。
 
-或者，对于 [](bulk-complaint-level-values.md)批量电子邮件，验证 BCL 值 6 或更高版本是否将邮件发送到 **标准** 保护用户的垃圾邮件文件夹，BCL 值 4 或更高值会隔离严格保护用户的邮件。
+或者，对于 [](bulk-complaint-level-values.md)批量邮件，请验证 BCL 值 6 或更高版本是否将邮件发送到 **标准** 保护用户的"垃圾邮件"文件夹，BCL 值 4 或更高值会隔离"严格保护"用户的邮件。

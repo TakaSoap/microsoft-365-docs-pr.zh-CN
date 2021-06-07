@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: b578436522998ba88cb58f29c5e303ebe0b1ce45
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 226fc389aab24dda2425a17f5fb8d49da93e35d8
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51166097"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52770657"
 ---
 # <a name="configure-and-manage-microsoft-threat-experts-capabilities"></a>配置和管理 Microsoft 威胁专家功能
 
@@ -67,8 +67,8 @@ ms.locfileid: "51166097"
 可以通过以下媒体从 Microsoft 威胁专家接收目标攻击通知：  
 - 终结点门户的 Defender **事件** 页面 
 - Defender for Endpoint 门户 **的警报** 仪表板  
-- OData 警报 [API](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/get-alerts) 和 [REST API](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/pull-alerts-using-rest-api)
-- [高级搜寻中的 DeviceAlertEvents](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-devicealertevents-table) 表
+- OData 警报 [API](/windows/security/threat-protection/microsoft-defender-atp/get-alerts) 和 [REST API](/windows/security/threat-protection/microsoft-defender-atp/pull-alerts-using-rest-api)
+- [高级搜寻中的 DeviceAlertEvents](/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-devicealertevents-table) 表
 - 您的电子邮件（如果选择进行配置） 
 
 若要通过电子邮件接收目标攻击通知，请创建电子邮件通知规则。
@@ -159,3 +159,4 @@ ms.locfileid: "51166097"
 
 ## <a name="related-topic"></a>相关主题
 - [Microsoft 威胁专家概述](microsoft-threat-experts.md)
+- [Microsoft 威胁专家概述Microsoft 365](/microsoft-365/security/mtp/microsoft-threat-experts)

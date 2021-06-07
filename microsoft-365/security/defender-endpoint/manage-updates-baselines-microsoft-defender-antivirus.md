@@ -16,13 +16,13 @@ ms.custom: nextgen
 ms.reviewer: pahuijbr
 manager: dansimp
 ms.technology: mde
-ms.date: 05/13/2021
-ms.openlocfilehash: 17a76b39b51293de82cf9b3e5f0e323ec3d28844
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.date: 06/03/2021
+ms.openlocfilehash: e67f783552cca5cc36c1563f5e5557796028ea18
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538035"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52772013"
 ---
 # <a name="manage-microsoft-defender-antivirus-updates-and-apply-baselines"></a>管理Microsoft Defender 防病毒更新并应用基线
 
@@ -465,6 +465,20 @@ Microsoft Defender 防病毒需要每月更新 [ (KB4052623](https://support.mic
 有关详细信息，请参阅适用于操作系统[安装映像Windows Microsoft Defender 更新](https://support.microsoft.com/help/4568292/defender-update-for-windows-operating-system-installation-images)。
 
 <details>
+<summary>1.1.2106.01</summary>
+
+&ensp;程序包版本 **：1.1.2106.01**    
+&ensp;平台版本 **：4.18.2104.14**   
+&ensp;引擎版本 **：1.1.18100.6**  
+&ensp;签名版本 **：1.339.1923.0**    
+    
+### <a name="fixes"></a>修补程序
+- 无
+
+### <a name="additional-information"></a>其他信息
+- 无  
+<br/>
+</details><details>
 <summary>1.1.2105.01</summary>
 
 &ensp;程序包版本 **：1.1.2105.01**    

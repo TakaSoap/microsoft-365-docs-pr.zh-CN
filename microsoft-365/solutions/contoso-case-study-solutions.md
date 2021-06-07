@@ -15,12 +15,12 @@ ms.collection:
 - M365-subscription-management
 ms.custom: ''
 description: 一个虚构但具有代表性的全球组织如何部署 Microsoft 365 解决方案。
-ms.openlocfilehash: 74eacd4a7de2cf60eb2f1f388f3690496c6cc0e1
-ms.sourcegitcommit: e02cf5702af178ddd2968877a808874ecb49ed2c
+ms.openlocfilehash: 3112dc452ff03fbd661ffff80b6b25b1f38f8a66
+ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52028918"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52788327"
 ---
 # <a name="microsoft-365-solutions-for-the-contoso-corporation"></a>Contoso Corporation 的 Microsoft 365 解决方案
 
@@ -32,7 +32,7 @@ Contoso 针对 Microsoft 365 企业版的总体目标是通过使用云服务将
 
 接下来，了解 Contoso 如何在以下解决方案和应用场景中使用 Microsoft 365：
 
-- [为远程和现场工作采取的 COVID-19 响应措施和所提供的基础设施](contoso-remote-onsite-work.md)
+- [对混合工作者进行 COVID-19 响应并提供基础结构](contoso-remote-onsite-work.md)
 
 - [负责最高机密项目的独立团队](contoso-team-for-top-secret-project.md)
 
