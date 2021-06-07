@@ -19,18 +19,18 @@ search.appverid:
 - MET150
 - MOE150
 description: 通信 - 人员体验工作效率分数的详细信息。
-ms.openlocfilehash: 6ecde5fbbffe65a80c980c70f8195b8e31507f03
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: b744f9631deabb9c7bc97ab6a0cf1ba8fc61c5dd
+ms.sourcegitcommit: 50f484fc501d81506a714b127a56a6979888d849
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51579190"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52779742"
 ---
 # <a name="communication--people-experiences"></a>通信 – 人员体验
 
 生产力分数通过深入了解组织如何使用数字转型Microsoft 365支持它的技术体验。 你组织的分数反映出人员和技术经验的衡量标准，可以与规模类似的组织的基准进行比较。 通信类别是人员体验度量的一部分。 若要了解更多信息，请查看生产力 [分数概述并](productivity-score.md) 阅读 Microsoft [隐私声明](https://privacy.microsoft.com/privacystatement)。
 
-## <a name="prerequisites"></a>必备条件
+## <a name="prerequisites"></a>先决条件
 
 若要开始使用通信见解，需要获得组织中人员的许可：
 
@@ -44,7 +44,7 @@ ms.locfileid: "51579190"
 
 ## <a name="why-your-organizations-communication-score-matters"></a>为什么组织的通信分数很重要 
 
-Microsoft 知道人们有不同的通信需求。 若要快速响应问题，您可以选择发送即时消息。 如果要向领导发送状态更新，可以选择一封电子邮件。 若要覆盖更广泛的受众，您可以选择发布社区消息。 Microsoft 365在通信模式中实现这种灵活性，以满足每个人的需要。 研究表明，使用实时通信工具可以创建一个更为统一的组织，并培养思想，而不考虑位置。 [请参阅证据](https://go.microsoft.com/fwlink/?linkid=2127669)。
+Microsoft 知道人们有不同的通信需求。 若要快速响应问题，您可以选择发送即时消息。 如果要向领导发送状态更新，可以选择一封电子邮件。 若要覆盖更广泛的受众，您可以选择发布社区消息。 Microsoft 365在通信模式中实现这种灵活性，以满足每个人的需要。 研究表明，使用实时通信工具可以创建一个更为统一的组织，并培养思想，而不考虑位置。
 
 ## <a name="how-we-calculate-the-communication-score"></a>如何计算通信分数
 

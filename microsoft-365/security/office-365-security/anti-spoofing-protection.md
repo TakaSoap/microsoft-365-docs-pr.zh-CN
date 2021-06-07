@@ -22,12 +22,12 @@ localization_priority: Priority
 description: 管理员可以了解 Exchange Online Protection (EOP) 中提供的防欺骗功能，该功能有助于缓解来自虚假发件人和域的网络钓鱼攻击。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 7680c2f4eae54aa53eba72b328baf1bf92fbcf98
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 17228f634dc4aee9cfd416ca676920a5b4e0fba2
+ms.sourcegitcommit: 50f484fc501d81506a714b127a56a6979888d849
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52537963"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52779490"
 ---
 # <a name="anti-spoofing-protection-in-eop"></a>EOP 中的防欺骗防护
 
@@ -54,7 +54,7 @@ EOP 中提供了以下反欺骗技术：
 
 - **在“租户允许/阻止列表”中允许或阻止欺骗发件人**：如果覆盖欺骗智能见解中的裁定，欺骗发件人将成为仅在“租户允许/阻止列表”的“**欺骗**”选项卡上显示的手动允许或阻止条目。 也可以在欺骗智能检测到欺骗发件人之前手动为其创建允许或阻止条目。 有关详细信息，请参阅[管理 EOP 中的租户允许/阻止列表](tenant-allow-block-list.md)。
 
-- **反钓鱼策略**：在 EOP 中，反钓鱼策略包含以下反欺骗设置：
+- **防钓鱼策略**：在 EOP 和 Microsoft Defender for Office 365 中，反钓鱼策略包含以下反欺骗设置：
   - 打开或关闭欺骗智能。
   - 打开或关闭 Outlook 中未经身份验证的发件人标识。
   - 指定对阻止的欺骗发件人的操作。
@@ -63,7 +63,7 @@ EOP 中提供了以下反欺骗技术：
 
   **注意**：Microsoft Defender for Office 365 中的反钓鱼策略包含添加保护，包括 **模拟** 保护。 有关详细信息，请参阅 [Microsoft Defender for Office 365 中反钓鱼策略中的“独占”设置](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)。
 
-- **欺骗检测报告**：有关详细信息，请参阅[欺骗检测报告](view-email-security-reports.md#spoof-detections-report)。
+- **欺骗检测报告**：有关详细信息，请参阅 [欺骗检测报告](view-email-security-reports.md#spoof-detections-report)。
 
   **注意**：Defender for Office 365 组织也可使用实时检测（计划 1）或威胁资源管理器（计划 2）查看有关钓鱼尝试的信息。 有关详细信息，请参阅 [Microsoft 365 威胁调查和响应](office-365-ti.md)。
 

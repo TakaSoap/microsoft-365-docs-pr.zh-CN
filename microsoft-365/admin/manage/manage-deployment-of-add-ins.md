@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
 description: 了解如何使用管理中心中的集中部署将加载项部署到组织的用户和组。
-ms.openlocfilehash: 8cc4f29cd2593d9651edaf87791f46dabdcc30b2
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: 796517ba13a4718c38d5200fcf9cbe38b5dc62d0
+ms.sourcegitcommit: 50f484fc501d81506a714b127a56a6979888d849
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52636018"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52779634"
 ---
 # <a name="deploy-add-ins-in-the-admin-center"></a>在管理中心部署加载项
 
@@ -38,7 +38,7 @@ Office 加载项可帮助用户个性化设置文档并加速访问 Web 上的�
 若要了解有关在部署后管理加载项的更多信息，请参阅在[管理](manage-addins-in-the-admin-center.md)中心管理加载项
   
 > [!NOTE]
->  对于 Word、Excel 和 PowerPoint 使用[SharePoint](https://dev.office.com/docs/add-ins/publish/publish-task-pane-and-content-add-ins-to-an-add-in-catalog)应用程序目录向本地环境中的用户部署外接程序，无需连接到 Microsoft 365 和/或支持所需的 SharePoint 外接程序。 For Outlook use Exchange control panel to deploy in an on-premises environment without a connection to Microsoft 365.
+>  对于 Word、Excel 和 PowerPoint 使用[SharePoint](/office/dev/add-ins/publish/publish-task-pane-and-content-add-ins-to-an-add-in-catalog)应用程序目录向本地环境中的用户部署外接程序，无需连接到 Microsoft 365 和/或支持所需的 SharePoint 外接程序。 For Outlook use Exchange control panel to deploy in an on-premises environment without a connection to Microsoft 365.
   
 ## <a name="recommended-approach-for-deploying-office-add-ins"></a>部署 Office 加载项的推荐方法
 
@@ -77,7 +77,7 @@ Office 加载项可帮助用户个性化设置文档并加速访问 Web 上的�
     > [!NOTE]
     > 若要了解适用于加载项的其他状态，请参阅 [加载项状态](./manage-addins-in-the-admin-center.md)。
   
-6. 选择“**部署**”。
+6. 选择“部署”。
   
 7. 部署加载项时，会出现绿色刻度线。 按照页面上的说明测试外接程序。
 

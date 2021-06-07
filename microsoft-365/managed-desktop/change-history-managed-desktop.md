@@ -13,16 +13,44 @@ f1.keywords:
 ms.author: jaimeo
 ms.article: article
 ms.localizationpriority: normal
-ms.openlocfilehash: bc04059d3ec63dd9395ed8f7a0e02b948e5cead1
-ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
+ms.openlocfilehash: 6b18de29b339c3367bfacb8bdc8ec9725481e3e4
+ms.sourcegitcommit: 50f484fc501d81506a714b127a56a6979888d849
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/03/2021
-ms.locfileid: "52730734"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52779851"
 ---
 # <a name="change-history-for-microsoft-managed-desktop-documentation"></a>Microsoft 托管桌面文档更改历史记录
 
 本文列出了本文中新增和更新Microsoft 托管桌面[文章](index.yml)。 "已更新"的文章有重大新增内容或更正，例如拼写错误、样式或格式设置问题的更正未列出。 你始终可以查看特定提交历史记录， (访问上存储库) 更改[GitHub的详细信息](https://github.com/MicrosoftDocs/microsoft-365-docs/tree/public/microsoft-365/managed-desktop)。
+
+## <a name="may-2021"></a>2021 年 5 月
+新增或已更改的文章 | 说明
+--- | ---
+[设置 Microsoft 托管桌面设备](get-started/set-up-devices.md) | 更新的文章
+[设备清点报告](working-with-managed-desktop/device-inventory-report.md) | 更新的文章
+[Microsoft 托管桌面的网络配置](get-ready/network.md) | 更新的文章
+[诊断日志](service-description/diagnostic-logs.md) | 新增文章
+[Microsoft 托管桌面技术](intro/technologies.md) | 更新的文章
+[来宾帐户的先决条件](get-ready/guest-accounts.md) | 更新的文章
+[处理报告](working-with-managed-desktop/reports.md) | 更新的文章
+
+## <a name="april-2021"></a>2021 年 4 月
+新增或已更改的文章 | 说明
+--- | ---
+[设备配置文件](service-description/profiles.md) | 新增文章
+[合作伙伴注册设备的步骤](get-started/register-devices-partner.md) | 更新的文章
+[自行注册新设备](get-started/register-devices-self.md) | 更新的文章
+[自行注册现有设备](get-started/register-reused-devices-self.md) | 更新的文章
+[地址设备名称依赖关系](get-ready/address-device-names.md) | 新增文章
+[设备名称](service-description/device-names.md) | 新增文章
+[删除设备](working-with-managed-desktop/remove-devices.md) | 新增文章
+[Microsoft 托管桌面的先决条件](get-ready/prerequisites.md) | 更新的文章
+[Microsoft 托管桌面中的应用](get-ready/apps.md) | 更新的文章
+[验证新设备](get-started/validate-device.md) | 新增文章
+[设置 Microsoft 托管桌面设备](get-started/set-up-devices.md) | 更新的文章
+[Microsoft 托管桌面产品生命周期](service-description/device-lifecycle.md) | 更新的文章
+[Microsoft 托管桌面设备](service-description/device-list.md) |更新的文章
 
 ## <a name="march-2021"></a>2021 年 3 月
 新增或已更改的文章 | 说明

@@ -17,12 +17,12 @@ ms.custom:
 description: 管理员可以了解 EOP Exchange Online Protection (和 Microsoft Defender for) 中提供的防钓鱼Office 365。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d20d9c3839cf72d1e99a185186d0716d9a513c5f
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 205fd5cd40d187eada4f6b87edf64c0d35f7e3b3
+ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52537855"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52788411"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>邮件中的防钓鱼Microsoft 365
 
@@ -60,7 +60,7 @@ Microsoft Defender for Office 365 中的反网络钓鱼策略仅适用于具有 
 
 若要配置防钓鱼策略，请参阅以下文章：
 
-- [在 EOP 中配置反垃圾邮件策略](configure-anti-phishing-policies-eop.md)
+- [在 EOP 中配置反网络钓鱼策略](configure-anti-phishing-policies-eop.md)
 
 - [在 Microsoft Defender for Office 365](configure-atp-anti-phishing-policies.md)
 
@@ -133,7 +133,7 @@ EOP 和 Microsoft Defender for Office 365 中的反网络钓鱼策略中提供�
 - 启用 **"via"标记？：** 当启用此设置时，如果发件人地址 (电子邮件客户端中显示的邮件发件人) 中的域不同于 DKIM 签名或 MAIL FROM 地址中的域，则通过标记 <sup>\*</sup> (chris@contoso.com <u>via</u> fabrikam.com) 将添加到"发件人"框中。 有关这些地址详细信息，请参阅 [电子邮件标准概述](how-office-365-validates-the-from-address.md#an-overview-of-email-message-standards)。
 
 > [!NOTE]
-> 目前 **，"启用""通过"标记** ？设置并非在所有组织中都可用。 如果您没有"启用""通过"标记？设置，则问号和通过标记都受组织中"启用未经身份验证的发件人问号 **(？) "** 设置控制。
+> 目前 **，"启用""通过"标记** ？设置并非在所有组织中都可用。 如果您没有"启用""通过"标记？设置，则问号和通过标记都受组织中"启用未经身份验证的发件人问号 **(？) ？"设置** 控制。
 
 若要防止向来自特定发件人的邮件添加问号或通过标记，可以使用以下选项：
 

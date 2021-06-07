@@ -17,12 +17,12 @@ ms.collection:
 description: 管理员可以了解 Exchange Online 中 Outlook 网页 (Outlook Web App) 中的内置垃圾邮件报告选项、非垃圾邮件和网络钓鱼电子邮件报告选项，以及如何为用户禁用这些报告选项。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 933387dd32a6c1ca1e27ee11e4a9384615e8fdec
-ms.sourcegitcommit: 0ff6edbf52562138a69c6675cb0274ec984986c3
+ms.openlocfilehash: 1139871f5929ff9fef29e980b7614e5bc7b92570
+ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "51615205"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52788303"
 ---
 # <a name="report-junk-and-phishing-email-in-outlook-on-the-web-in-exchange-online"></a>在电子邮件中报告Outlook网页中的垃圾邮件Exchange Online
 
@@ -37,7 +37,8 @@ ms.locfileid: "51615205"
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>开始前，有必要了解什么？
 
-- 为了获得最佳用户提交体验，我们建议使用报告邮件和报告网络钓鱼外接程序。有关详细信息 [，请参阅启用报告邮件](./enable-the-report-message-add-in.md) 外接程序 [和启用报告](./enable-the-report-phish-add-in.md) 网络钓鱼外接程序。
+> [!IMPORTANT]
+> 对于用户提交，我们建议使用报告邮件外接程序或报告网络钓鱼外接程序。 有关详细信息，请参阅[启用报告邮件或报告钓鱼外接程序](./enable-the-report-message-add-in.md)。我们不建议在应用内使用内置Outlook，因为它不使用用户[提交策略](./user-submission.md)。
 
 - 如果你是拥有多个邮箱Exchange Online管理员，我们建议你使用安全与合规中心&提交门户。 有关详细信息，请参阅使用[管理员提交将可疑的垃圾邮件、网络钓鱼、URL 和文件提交到 Microsoft。](admin-submission.md)
 
@@ -89,7 +90,7 @@ ms.locfileid: "51615205"
 
 有关语法和参数的详细信息，请参阅[Get-OwaMailboxPolicy](/powershell/module/exchange/get-owamailboxpolicy)和[Set-OwaMailboxPolicy。](/powershell/module/exchange/set-owamailboxpolicy)
 
-### <a name="how-do-you-know-this-worked"></a>如何知道操作成功？
+### <a name="how-do-you-know-this-worked"></a>如何判断是否生效？
 
 若要验证您是否已成功启用或禁用 Web 上的Outlook垃圾邮件报告，请执行以下步骤之一：
 

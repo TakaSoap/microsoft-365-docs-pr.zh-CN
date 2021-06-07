@@ -19,12 +19,12 @@ description: 管理员可以了解安全与合规中心内&提供Microsoft 365�
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a4cfb0e8638c8ad9ae921f6853ebd4c003ebbe4a
-ms.sourcegitcommit: 2655bb0ccd66279c35be2fadbd893c937d084109
+ms.openlocfilehash: a2be234805977dd1efce10032e36113a460f3d96
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51876321"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52769877"
 ---
 # <a name="permissions-in-the-security--compliance-center"></a>安全与合规中心内的权限
 
@@ -51,7 +51,7 @@ ms.locfileid: "51876321"
 
 ![显示角色组与角色和成员之间关系的图表](../../media/2a16d200-968c-4755-98ec-f1862d58cb8b.png)
 
-## <a name="permissions-needed-to-use-features-in-the-security--compliance-center"></a>使用安全与合规中心内&所需的权限
+## <a name="role-groups-in-the-security--compliance-center"></a>安全与合规中心&组
 
 下表列出了安全与合规&中提供的默认角色组，以及默认情况下分配给角色组的角色。 若要向用户授予执行合规性任务的权限，请将其添加到相应的安全与合规中心&组。
 
@@ -62,7 +62,7 @@ ms.locfileid: "51876321"
 > [!NOTE]
 > 若要查看安全 **与** 合规中心&"权限"选项卡，你需要是管理员。具体而言，您需要分配有"角色管理"角色，默认情况下，该角色仅分配给安全与合规中心&管理角色组。 此外， **角色管理** 角色允许用户查看、创建和修改角色组。
 
-<br><br>
+<br>
 
 ****
 
@@ -82,7 +82,7 @@ ms.locfileid: "51876321"
 |**内容资源管理器内容查看器**|在内容资源管理器中查看内容文件。|数据分类内容查看器|
 |**内容资源管理器列表查看器**|仅以列表格式查看内容资源管理器中的所有项目。|数据分类列表查看器|
 |**电子数据展示管理员**|成员可以执行搜索并将邮箱、SharePoint Online 网站和 OneDrive for Business 位置置于保留状态。 成员还可以创建和管理电子数据展示事例，向事例添加和删除成员，创建和编辑与事例关联的内容搜索，以及访问Advanced eDiscovery。 <p> 电子数据展示管理员是电子数据展示管理员角色组的成员，该成员已分配有其他权限。 除了电子数据展示管理员可以执行的任务之外，电子数据展示管理员可以：<ul><li>查看组织的所有电子数据展示事例。</li><li>将其自己添加为任何电子数据展示事例的成员后管理这些事例。</li></ul> <p> 电子数据 &展示管理员与电子数据展示管理员之间的主要区别在于，电子数据展示管理员可以访问安全与合规中心的"电子数据展示事例"页面上列出的所有事例。 电子数据展示管理员只能访问他们创建的事例或他们的成员案例。 有关使用户成为电子数据展示管理员的信息，请参阅[Sediscovery permissions in the Security & Compliance Center。](../../compliance/assign-ediscovery-permissions.md)|案例管理 <p> 通信 <p> 合规性搜索 <p> Custodian <p> 导出 <p> Hold <p> 预览 <p> 审阅 <p> RMS 解密|
-|**全局读取者**|成员对报告、警报具有只读访问权限，并且可以看到所有配置和设置。<p> 全局阅读器和安全读者之间的主要区别在于，全局读者可以访问 **配置和设置**。|安全读取者 <p> 敏感度标签阅读器 <p> 服务保障视图 <p> 仅供查看审核日志 <p> View-Only设备管理 <p> View-Only DLP 合规性管理 <p> View-Only符合管理 <p> View-Only管理警报 <p> 仅查看收件人 <p> View-Only记录管理 <p> View-Only保留管理|
+|**全局读者**|成员对报告、警报具有只读访问权限，并且可以看到所有配置和设置。<p> 全局阅读器和安全读者之间的主要区别在于，全局读者可以访问 **配置和设置**。|安全读取者 <p> 敏感度标签阅读器 <p> 服务保障视图 <p> 仅供查看审核日志 <p> View-Only设备管理 <p> View-Only DLP 合规性管理 <p> View-Only符合管理 <p> View-Only管理警报 <p> 仅查看收件人 <p> View-Only记录管理 <p> View-Only保留管理|
 |**内部风险管理**|使用此角色组来管理单个组中组织的预览体验成员风险管理。 通过添加指定管理员、分析师和支持人员的所有用户帐户，可在单个组中配置预览体验计划风险管理权限。 此角色组包含所有预览体验计划风险管理权限角色。 这是快速开始使用预览体验计划风险管理的最简单方法，非常适合不需要为单独的用户组定义单独权限的组织。|案例管理 <p> 内部风险管理管理员 <p> 内部风险管理分析 <p> 内部风险管理调查 <p> View-Only Case|
 |**内部风险管理管理员**|使用此角色组最初配置内部风险管理，稍后再将内部风险管理员隔离到定义的组中。 此角色组的用户可以创建、阅读、更新和删除预览体验计划风险管理策略、全局设置和角色组分配。|案例管理 <p> 内部风险管理管理员 <p> View-Only Case|
 |**预览体验计划风险管理分析员**|使用此组为将充当预览体验成员案例分析员的用户分配权限。 此角色组的用户可以访问所有预览体验计划风险管理警报、案例和通知模板。 他们无法访问预览体验成员风险内容资源管理器。|案例管理 <p> 内部风险管理分析 <p> View-Only Case|
@@ -95,7 +95,7 @@ ms.locfileid: "51876321"
 |**记录管理**|成员可以配置记录管理的各个方面，包括保留标签和处置评审。|处置管理 <p> RecordManagement <p> 保留管理|
 |**Reviewer**|成员可以在一些情况下访问[Advanced eDiscovery](../../compliance/overview-ediscovery-20.md)集。 此角色组的成员可以在他们作为成员的 Microsoft 365 合规中心中的"电子数据展示">**高级**"页面上查看和打开事例列表。 用户访问案例后Advanced eDiscovery，可以选择"审阅集"访问案例数据。  此角色不允许用户预览与案例关联的集合搜索的结果，或执行其他搜索或案例管理任务。 此角色组的成员只能访问审阅集内的数据。|审阅|
 |**安全管理员**|成员可以访问 Identity Protection Center、Privileged Identity Management、Monitor Microsoft 365 Service Health 和 Security & 安全中心等多个安全功能。 <p> 默认情况下，此角色组可能看起来没有任何成员。 但是，安全管理员角色Azure Active Directory分配给此角色组。 因此，此角色组从角色组继承安全管理员角色Azure Active Directory。 <p> 若要集中管理权限，在管理中心中添加Azure Active Directory删除组成员。 有关详细信息，请参阅管理员[角色权限Azure Active Directory。](/azure/active-directory/users-groups-roles/directory-assign-admin-roles) 如果在安全与合规中心 & (成员身份或角色) 中编辑此角色组，则这些更改仅适用于安全 & 合规中心，不适用于任何其他服务。 <p> 此角色组包括安全读者角色的所有只读权限，以及用于相同服务的其他许多管理权限：Azure 信息保护、标识保护中心、Privileged Identity Management、监视 Microsoft 365 服务运行状况和安全 & 合规中心。|审核日志 <p> 设备管理 <p> DLP 合规性管理 <p> IB 合规性管理 <p> 管理通知 <p> 隔离 <p> 安全管理员 <p> 敏感度标签管理员 <p> 标记参与者 <p> 标记管理器 <p> 标记读取器 <p> 仅供查看审核日志 <p> View-Only设备管理 <p> View-Only DLP 合规性管理 <p> View-Only符合管理 <p> View-Only管理警报|
-|**安全操作员**|成员可以管理安全警报，还可以查看安全功能的报告和设置。|合规性搜索 <p> 管理通知 <p> 安全读取者 <p> 标记参与者 <p> 标记读取器 <p> 仅供查看审核日志 <p> View-Only设备管理 <p> View-Only DLP 合规性管理 <p> View-Only符合管理 <p> View-Only管理警报|
+|**安全运算符**|成员可以管理安全警报，还可以查看安全功能的报告和设置。|合规性搜索 <p> 管理通知 <p> 安全读取者 <p> 标记参与者 <p> 标记读取器 <p> 仅供查看审核日志 <p> View-Only设备管理 <p> View-Only DLP 合规性管理 <p> View-Only符合管理 <p> View-Only管理警报|
 |**安全读者**|成员对 Identity Protection Center、Privileged Identity Management、Monitor Microsoft 365 Service Health 和 Security & 安全中心等多个安全功能具有只读访问权限。 <p> 默认情况下，此角色组可能看起来没有任何成员。 但是，安全读者角色Azure Active Directory分配给此角色组。 因此，此角色组从角色组继承安全读者角色Azure Active Directory。 <p> 若要集中管理权限，在管理中心中添加Azure Active Directory删除组成员。 有关详细信息，请参阅管理员[角色权限Azure Active Directory。](/azure/active-directory/users-groups-roles/directory-assign-admin-roles) 如果在安全与合规中心 & (成员身份或角色) 中编辑此角色组，则这些更改仅适用于安全 & 合规中心，不适用于任何其他服务。|安全读取者 <p> 敏感度标签阅读器 <p> 标记读取器 <p> View-Only设备管理 <p> View-Only DLP 合规性管理 <p> View-Only符合管理 <p> View-Only管理警报|
 |**服务保证用户**|成员可以访问安全与合规中心中的服务&部分。 服务保证提供报告和文档，介绍 Microsoft 针对存储在客户安全中心中的客户数据Microsoft 365。 它还提供有关报告的独立第三方审核Microsoft 365。 有关详细信息，请参阅安全与 [合规中心&保证](../../compliance/service-assurance.md)。|服务保障视图|
 |**监管审核**|成员可以创建和管理用于定义哪类通讯在组织中易受到审查的策略。 有关详细信息，请参阅 [为组织配置通信合规性策略](../../compliance/communication-compliance-configure.md)。|监管审核管理员|
@@ -140,7 +140,7 @@ ms.locfileid: "51876321"
 - RMS 解密
 - 监管审核管理员
 
-<br><br>
+<br>
 
 ****
 
@@ -179,7 +179,7 @@ ms.locfileid: "51876321"
 |**内部风险管理调查**|访问所有案例的所有内部风险管理警报、案例、通知模板和内容资源管理器。|内部风险管理 <p> 预览体验计划风险管理调查员|
 |**内部风险管理永久参与**|此角色组可见，但仅由后台服务使用。|IRM 参与者|
 |**内部风险管理临时参与**|此角色组可见，但仅由后台服务使用。|IRM 参与者|
-|**管理警报**|查看和编辑警报的设置和报告。|合规性管理员 <p> 合规性数据管理员 <p> 组织管理 <p> 安全管理员 <p> 安全操作员|
+|**管理通知**|查看和编辑警报的设置和报告。|合规性管理员 <p> 合规性数据管理员 <p> 组织管理 <p> 安全管理员 <p> 安全操作员|
 |**组织配置**|运行、查看和导出审核报告，并管理 DLP、设备和保留的合规性策略。|合规性管理员 <p> 合规性数据管理员 <p> 组织管理|
 |**预览**|查看从内容搜索返回的项目列表，并打开列表中的每个项目以查看其内容。|电子数据展示管理员|
 |**隔离**|允许查看和释放隔离电子邮件。|隔离管理员 <p> 安全管理员 <p> 组织管理|

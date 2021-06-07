@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: c988a609a329c8f7f8988314e56aae942beebac5
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 3ff62265783be846a95964164e372100fe1ef662
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51932889"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52769581"
 ---
 # <a name="microsoft-365-defender-advanced-hunting-api"></a>Microsoft 365Defender 高级搜寻 API
 
@@ -47,15 +47,14 @@ ms.locfileid: "51932889"
 1. 查询将浏览并返回过去 30 天的数据。
 2. 结果最多返回 100，000 行。
 3. 每个租户每分钟最多可以拨打 15 次呼叫。
-4. 每个租户每小时有 10 分钟的运行时间。
-5. 每个租户每天的总运行时间为四小时。
-6. 如果单个请求运行的时间超过 10 分钟，它将退出并返回错误。
-7. HTTP 响应代码指示你已按发送的请求数或按分配的运行时间 `429` 达到配额。 阅读响应正文，了解已达到的限制。 
+4. 如果租户一直达到 100%， 直到下一个 15 分钟周期之后，查询将被阻止。
+5. 如果单个请求运行的时间超过 10 分钟，它将退出并返回错误。
+6. HTTP 响应代码指示你已按发送的请求数或按分配的运行时间 `429` 达到配额。 阅读响应正文，了解已达到的限制。 
 
 > [!NOTE]
 > 上面列出的所有配额 (例如，每个租户大小每) 15 次呼叫。 这些配额是最小值。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 调用高级搜寻 API 需要以下权限之一。 若要了解更多信息（包括如何选择权限），请参阅访问[Microsoft 365 Defender 保护 API](api-access.md)
 

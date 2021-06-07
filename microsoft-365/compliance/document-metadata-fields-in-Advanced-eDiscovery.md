@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: 本文定义审阅集内文档的元数据字段，在 Advanced eDiscovery 中Microsoft 365。
-ms.openlocfilehash: 7b8628973a8b07a3cd31e2b42df28c181e77e288
-ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
+ms.openlocfilehash: 42f349bf01d5a777535dd04096b860a0165f1edf
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/03/2021
-ms.locfileid: "52730494"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52769565"
 ---
 # <a name="document-metadata-fields-in-advanced-ediscovery"></a>高级电子数据展示中的文档元数据字段
 
@@ -75,6 +75,7 @@ ms.locfileid: "52730494"
 |EmailAction*||Email_action|值为 **None、Reply** 或 **Forward;** 基于邮件的主题行。|
 |请求的电子邮件传递回执||Email_delivery_receipt|Internet 邮件头中提供的电子邮件地址，用于送达回执。|
 |Importance|EmailImportance|Email_importance|邮件的重要性 **：0** - 低; **1** - 正常; **2** - 高|
+|忽略处理错误|ErrorIgnored|Error_Ignored|错误已忽略且未修正。|
 |EmailInternetHeaders|EmailInternetHeaders|Email_internet_headers|电子邮件的完整电子邮件头集|
 |EmailLevel*||Email_level|指示邮件所属电子邮件线程中的邮件级别;attachments 继承其父邮件的值。|
 |电子邮件 ID||Email_message_ID|邮件中的 Internet 邮件 ID。|
@@ -88,14 +89,14 @@ ms.locfileid: "52730494"
 |||Extracted_text_path|导出中提取的文本文件的路径。|
 |ExtractedTextLength*||Extracted_text_length|提取的文本中的字符数。|
 |FamilyDuplicateSet*||Family_duplicate_set|彼此完全相同的系列的数字标识符 (内容以及所有相同的) 。|
-|家庭 ID|FamilyId|Family_ID|"系列 ID"将所有项目分组在一起;对于电子邮件，这包括邮件及其所有附件;对于文档，这包括文档和任何嵌入项目。|
+|家庭 ID|FamilyId|Family_ID|将电子邮件的所有项目分组在一起。 这包括邮件以及所有附件和提取的项目。|
 |系列大小||Family_size|家庭中的文档数。|
 |文件类|FileClass|File_class|For content from SharePoint and OneDrive： **Document**;for content from Exchange： **Email** or **Attachment**.|
 |文件 ID|FileId|File_ID|文档标识符在大小写中是唯一的。|
 |创建文件系统日期||File_system_date_created|文件系统数据的创建 (仅适用于非Office 365数据) 。|
 |修改文件系统日期||File_system_date_modified|文件系统文件的修改 (仅适用于非Office 365数据) 。|
 |文件类型|FileType||基于文件扩展名的项目的文件类型。|
-|组 ID|GroupID||分组内容的组 ID。|
+|组 ID|组 ID|Group_ID|将电子邮件和文档的所有项目分组在一起。 对于电子邮件，这包括邮件以及所有附件和提取的项目。 对于文档，这包括文档和任何嵌入项目。|
 |具有附件|HasAttachment|Email_has_attachment|指示邮件是否包含附件。|
 |有律师|HasAttorney||**如此** 当在律师列表中找到至少一个参与者;否则，值为 **False**。|
 |HasText*||Has_text|指示项目是否具有文本;可能的值是 **True** 和 **False**。|
@@ -126,6 +127,7 @@ ms.locfileid: "52730494"
 |NativeSHA256||Native_SHA_256|SHA256 哈希 (文件流中的 256) 哈希值。|
 |ND/ET 排序：排除附件|NdEtSortExclAttach|ND_ET_sort_excl_attach|将电子邮件线程连接 (ET) 设置和 (复制) 集。 此字段用于在审阅时进行有效的排序。 D 的前缀为 ND 集 **，E** 为 ET 集前缀。|
 |ND/ET 排序：包括附件|NdEtSortInclAttach|ND_ET_sort_incl_attach|将电子邮件线程连接在一 (ET) 设置和近 (ND) 集。 此字段用于在审阅时进行有效的排序。 D 的前缀为 ND 集 **，E** 为 ET 集前缀。 ET 集合中的每个电子邮件项目后跟相应的附件。|
+|近重复集||ND_set|与透视文档类似的项目共享相同的ND_set。|
 |O365 作者||O365_authors|创作自SharePoint。|
 |O365 创建者||O365_created_by|由用户SharePoint。|
 |O365 创建日期||O365_date_created|创建日期SharePoint。|
@@ -155,6 +157,7 @@ ms.locfileid: "52730494"
 |发件人域|SenderDomain|Email_sender_domain|发件人的域。|
 |发件箱|发件箱|Email_date_sent|邮件的发送日期。|
 |设置顺序：先包含|SetOrderInclusivesFirst|Set_order_inclusives_first|排序字段 - 电子邮件和附件：按时间顺序排序;documents： pivot first then by descending similarity score.|
+|设置 ID||Set_ID|同一电子邮件线程 (ND_set) 相似内容的文档或电子邮件 (Email_set) 共享相同的Set_ID。|
 |SimilarityPercent||Similarity_percent|指示文档与近重复集的透视表的相似性。|
 |本机文件大小|Size|Native_size|本机项的字节数。|
 |主题|主题|Email_subject|邮件的主题。|

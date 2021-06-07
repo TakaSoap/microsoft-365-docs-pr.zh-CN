@@ -19,18 +19,18 @@ search.appverid:
 - MET150
 - MOE150
 description: 内容协作的详细信息 - 人员体验生产力分数。
-ms.openlocfilehash: 43a5fbc3b1c4b6227cd29d79bfb0928a3b4b8ac9
-ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
+ms.openlocfilehash: cca218d15af98925bf61bbb314cfd4d35aa0711a
+ms.sourcegitcommit: 50f484fc501d81506a714b127a56a6979888d849
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51903318"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52779730"
 ---
 # <a name="content-collaboration--people-experiences"></a>内容协作 – 人员体验
 
 生产力分数通过组织对数字转型的Microsoft 365和支持它的技术体验提供见解。 你的组织的分数反映了人员和技术体验指标，并可以与类似你组织的基准进行比较。 内容协作类别是人员体验度量的一部分。 若要了解更多信息，请查看生产力 [分数概述并](productivity-score.md) 阅读 Microsoft [隐私声明](https://privacy.microsoft.com/privacystatement)。
 
-## <a name="prerequisites"></a>必备条件
+## <a name="prerequisites"></a>先决条件
 
 若要开始使用内容协作见解，需要获得组织中人员的许可：
 
@@ -44,7 +44,7 @@ ms.locfileid: "51903318"
 
 ## <a name="why-your-organization39s-content-collaboration-score-matters"></a>为什么组织&#39;协作分数很重要
 
-数字转型的一个关键方面是人们如何协作处理文件。 使用内容Microsoft 365，用户能够访问、创建、修改内容，并与来自任何位置的其他人协作处理内容。 研究表明，当用户使用联机文件进行协作时，每个人每周平均节省 100 分钟。 [请参阅证据](https://vc2prod.blob.core.windows.net/vc-resources/TEIStudies/TEI%20of%20Microsoft%20365%20E5%20-%20Oct%202018.pdf)。
+数字转型的一个关键方面是人们如何协作处理文件。 使用内容Microsoft 365，用户能够访问、创建、修改内容，并与来自任何位置的其他人协作处理内容。 研究表明，当用户使用联机文件进行协作时，每个人每周平均节省 100 分钟。
 
 ## <a name="how-we-calculate-the-content-collaboration-score"></a>如何计算内容协作分数
 

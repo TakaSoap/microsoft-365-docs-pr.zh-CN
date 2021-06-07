@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: 了解可在 DLP 策略中使用敏感度标签作为条件的服务和项目类型
-ms.openlocfilehash: b33e6704a3311740c1e386f77f1c751382ee6958
-ms.sourcegitcommit: 07e536f1a6e335f114da55048844e4a866fe731b
+ms.openlocfilehash: 94d5e9f53471f6113dcc755995a3f94e95a58e53
+ms.sourcegitcommit: 50f484fc501d81506a714b127a56a6979888d849
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "52651088"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52779839"
 ---
 # <a name="use-sensitivity-labels-as-conditions-in-dlp-policies"></a>在 DLP 策略中使用敏感度标签作为条件
 
@@ -65,6 +65,9 @@ ms.locfileid: "52651088"
 \* 仅 Office 文件类型支持对已添加敏感度标签的电子邮件附件进行 DLP 检测。
 
 \** 在一对一聊天或频道的 Teams 中发送的附件将自动上传到 OneDrive for Business 和 SharePoint。 因此，如果你的 DLP 策略中包含 SharePoint Online 或 OneDrive for Business，则在 Teams 中发送的带标签的附件将自动包含在此条件的范围内。 不需要在 DLP 策略中选择用作位置的 Teams。
+
+> [!NOTE]
+> DLP 在 SharePoint 和 OneDrive for Business 中检测敏感度标签的能力有限。 有关详细信息，请参阅 [启用 SharePoint 和 OneDrive 中 Office 文件的敏感度标签](sensitivity-labels-sharepoint-onedrive-files.md#limitations)。
 
 ### <a name="supported-scenarios"></a>支持的方案
 

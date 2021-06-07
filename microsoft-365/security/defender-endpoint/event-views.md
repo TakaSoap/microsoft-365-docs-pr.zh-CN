@@ -8,17 +8,18 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 localization_priority: Normal
 audience: ITPro
-author: dansimp
-ms.author: dansimp
+author: denisebmsft
+ms.author: deniseb
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 0a2ec16685ede2e625528fc3944943923bba3fc9
-ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
+ms.topic: article
+ms.openlocfilehash: ff82819f4e168fc57b649411fbe5e9136b0e36f4
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51569739"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52769313"
 ---
 # <a name="view-attack-surface-reduction-events"></a>查看攻击面减少规则
 
@@ -28,7 +29,8 @@ ms.locfileid: "51569739"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->想要体验 Microsoft Defender for Endpoint？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-enablesiem-abovefoldlink)
+> [!TIP]
+> 想要体验 Microsoft Defender for Endpoint？ [注册免费试用版](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-enablesiem-abovefoldlink)。
 
 查看事件查看器中的攻击面减少事件，以监视哪些规则或设置正在工作。 您还可以确定任何设置是否过于"干扰"或影响您的日常工作流。
 
@@ -36,7 +38,7 @@ ms.locfileid: "51569739"
 
 本文列出了所有事件及其关联的功能或设置，并介绍如何创建自定义视图以筛选到特定事件。
 
-获取事件和块的详细报告，Windows 安全中心 E5 订阅并使用[Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)。
+获取事件和块的详细报告，Windows 安全中心 E5 订阅并使用[Microsoft Defender for Endpoint](microsoft-defender-endpoint.md)。
 
 ## <a name="use-custom-views-to-review-attack-surface-reduction-capabilities"></a>使用自定义视图查看攻击面减少功能
 
@@ -76,7 +78,7 @@ ms.locfileid: "51569739"
 
 4. 将您希望从中筛选事件的功能的 XML 代码粘贴到 XML 部分。
 
-5. 选择“**确定**”。 为筛选器指定名称。
+5. 选择“确定”。 为筛选器指定名称。
 
 6. 它将创建一个自定义视图，该视图筛选为只显示与该功能相关的事件。
 

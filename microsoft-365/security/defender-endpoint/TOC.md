@@ -244,17 +244,14 @@
 
 ### [减少攻击面]()
 #### [减少攻击面概述](overview-attack-surface-reduction.md)
-#### [评估减少攻击面规则](evaluate-attack-surface-reduction.md)
-#### [减少攻击面配置设置](configure-attack-surface-reduction.md)
-#### [关于减少攻击面的常见问题解答](attack-surface-reduction-faq.md)
-
-#### [减少攻击面控件]()
-##### [攻击面减少规则](attack-surface-reduction.md)
-##### [启用攻击面减少规则](enable-attack-surface-reduction.md)
-##### [自定义减少攻击面规则](customize-attack-surface-reduction.md)
-##### [查看攻击面减少规则](event-views.md)
-
-#### [使用审核模式](audit-windows-defender.md)
+#### [配置攻击面减少功能](configure-attack-surface-reduction.md)
+#### [了解攻击面减少规则](attack-surface-reduction.md)
+#### [评估攻击面减少规则](evaluate-attack-surface-reduction.md)
+#### [启用攻击面减少规则](enable-attack-surface-reduction.md)
+#### [自定义减少攻击面规则](customize-attack-surface-reduction.md)
+#### [关于攻击面减少的常见问题解答](attack-surface-reduction-faq.md)
+#### [查看攻击面减少活动](event-views.md)
+#### [为攻击面减少使用审核模式](audit-windows-defender.md)
 
 ### 下一代保护
 #### [Microsoft Defender 防病毒软件概述](microsoft-defender-antivirus-in-windows-10.md)
@@ -592,6 +589,13 @@
 ###### [通过 Python 高级搜寻](run-advanced-query-sample-python.md)
 ###### [通过 PowerShell 高级搜寻](run-advanced-query-sample-powershell.md)
 ###### [使用 OData 查询](exposed-apis-odata-samples.md)
+
+
+#### [原始数据流式处理 API]()
+##### [原始数据流式处理](raw-data-export.md)
+##### [将高级搜寻事件流式传输至 Azure 事件中心](raw-data-export-event-hub.md)
+##### [将高级搜寻事件流式传输至存储账户](raw-data-export-storage.md)
+
 
 #### [SIEM 集成]()
 ##### [了解威胁智能概念](threat-indicator-concepts.md)

@@ -19,18 +19,18 @@ search.appverid:
 - MET150
 - MOE150
 description: 会议详细信息 - 人员体验生产力分数。
-ms.openlocfilehash: 803173fbbd8489802b3a3c9c11473918e0d7a858
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 47a29ee208f9c6957a3fcf7d1a4b0c71518c680b
+ms.sourcegitcommit: 50f484fc501d81506a714b127a56a6979888d849
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51579178"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52779718"
 ---
 # <a name="meetings--people-experiences"></a>会议 – 人员体验
 
 生产力分数通过组织对数字转型的Microsoft 365和支持它的技术体验提供见解。 你的组织的分数反映了人员和技术体验指标，并可以与类似你组织的基准进行比较。 会议类别是人员体验度量的一部分。 若要了解更多信息，请查看生产力 [分数概述并](productivity-score.md) 阅读 Microsoft [隐私声明](https://privacy.microsoft.com/privacystatement)。
 
-## <a name="prerequisites"></a>必备条件
+## <a name="prerequisites"></a>先决条件
 
 若要开始使用会议见解，需要获得组织中人员的许可：
 
@@ -42,7 +42,7 @@ ms.locfileid: "51579178"
 
 ## <a name="why-your-organizations-meetings-score-matters"></a>为什么组织的会议分数很重要
 
-人们在这里探索想法、规划、解决问题和做出决策的会议是组织工作效率的基础支柱。 研究表明，当用户有效地使用联机会议工具时，他们通常每周最多节省 104 分钟。 请参阅 [证据](https://vc2prod.blob.core.windows.net/vc-resources/TEIStudies/TEI%20of%20Microsoft%20365%20E5%20-%20Oct%202018.pdf)。
+人们在这里探索想法、规划、解决问题和做出决策的会议是组织工作效率的基础支柱。 研究表明，当用户有效地使用联机会议工具时，他们通常每周最多节省 104 分钟。
 
 ## <a name="how-we-calculate-the-meetings-score"></a>如何计算会议得分
 

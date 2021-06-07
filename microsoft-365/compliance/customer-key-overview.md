@@ -15,12 +15,12 @@ ms.collection:
 - m365initiative-compliance
 ms.custom: seo-marvel-apr2020
 description: 本文将介绍服务加密如何与 Microsoft 365 中的客户密钥一Microsoft 365。
-ms.openlocfilehash: 3d0c86dbca02a66547f0ade643b745ecfc8f92cd
-ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
+ms.openlocfilehash: d12a5d2f80de11a69fc4a36146a511c5f9a306f8
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52344766"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52769445"
 ---
 # <a name="service-encryption-with-customer-key"></a>使用客户密钥执行服务加密
 
@@ -52,8 +52,11 @@ Microsoft 365 DKM 密钥管理器和分布式密钥管理器BitLocker启用基�
 - Teams状态消息
 - 用户和信号Exchange Online
 - Exchange Online未通过邮箱 DEP 加密的邮箱
-- MIP 精确数据 (EDM) 数据 – (数据文件架构、规则包和用于对敏感数据进行哈希运算的) 。
-  对于 MIP 精确数据 (EDM) 和 Microsoft Teams，多工作负载 DEP 会从将 DEP 分配给租户时对新数据进行加密。 例如Exchange Online，客户密钥会加密所有现有和新数据。
+- Microsoft 信息保护：
+
+  - EDM (数据) 精确匹配，包括数据文件架构、规则包和用于对敏感数据进行哈希运算的量。 对于 EDM Microsoft Teams，多工作负载 DEP 会从将 DEP 分配给租户时对新数据进行加密。 例如Exchange Online，客户密钥会加密所有现有和新数据。
+
+  - 敏感度标签的标签配置
 
 多工作负荷 DEP 不加密以下类型的数据。 相反，Microsoft 365使用其他类型的加密来保护此数据。
 

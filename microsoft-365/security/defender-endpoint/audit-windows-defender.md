@@ -9,19 +9,21 @@ ms.sitesec: library
 ms.pagetype: security
 localization_priority: Normal
 audience: ITPro
-author: dansimp
-ms.author: dansimp
+author: denisebmsft
+ms.author: deniseb
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 7ce652d58be2d9ff28d82c088d5471a7bffdf6dc
-ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
+ms.date: 06/02/2021
+ms.topic: article
+ms.openlocfilehash: 10351d97ba72945f929e042dc72a37724a1df291
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51570968"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52769601"
 ---
-# <a name="test-how-microsoft-defender-for-endpoint-features-work-in-audit-mode"></a>测试 Microsoft Defender for Endpoint 功能在审核模式下如何工作
+# <a name="test-attack-surface-reduction-in-microsoft-defender-for-endpoint"></a>在 Microsoft Defender for Endpoint 中测试攻击面减少
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -29,8 +31,7 @@ ms.locfileid: "51570968"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-
-可以在审核模式下启用攻击面减少规则、Exploit Protection、网络保护和受控文件夹访问权限。 通过审核模式，你可以查看启用该功能后将发生的情况记录。
+如果你是组织安全团队的一员，你可以配置攻击面减少功能以在审核模式下运行，以查看这些功能在组织中如何工作。 特别是，可以在审核模式下启用攻击面减少规则、Exploit Protection、网络保护和受控文件夹访问权限。 通过审核模式，你可以查看启用该功能后将发生的情况记录。
 
 在测试这些功能在组织中工作的方式时，可能需要启用审核模式。 这将帮助确保你的业务线应用不受影响。 还可以了解在一定时段内发生的可疑文件修改尝试次数。
 
@@ -52,9 +53,4 @@ ms.locfileid: "51570968"
 | 审核适用于所有事件 | [启用网络保护](enable-network-protection.md) | [网络保护事件](evaluate-network-protection.md#review-network-protection-events-in-windows-event-viewer)
 | 审核适用于单个缓解 | [启用漏洞保护](enable-exploit-protection.md) | [Exploit Protection 事件](exploit-protection.md#review-exploit-protection-events-in-windows-event-viewer)
 
-## <a name="related-topics"></a>相关主题
 
-* [保护设备免遭攻击](exploit-protection.md)
-* [使用攻击面减少规则减少攻击面](attack-surface-reduction.md)
-* [保护你的网络](network-protection.md)
-* [保护重要文件夹](controlled-folders.md)

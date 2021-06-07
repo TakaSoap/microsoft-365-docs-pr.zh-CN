@@ -19,12 +19,12 @@ ms.collection:
 description: 了解 Microsoft Defender for Office 365 中的市场活动Office 365。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e3c84b9e6253dd813ff930314fc2c1d0a947e94e
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 04e3d76271e95d36d73dd473076029cb60c06900
+ms.sourcegitcommit: 50f484fc501d81506a714b127a56a6979888d849
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51203189"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52779435"
 ---
 # <a name="campaign-views-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 中的市场活动视图
 
@@ -33,7 +33,7 @@ ms.locfileid: "51203189"
 **适用对象**
 - [适用于 Office 365 计划 2 的 Microsoft Defender](defender-for-office-365.md)
 
-市场活动视图是 Microsoft Defender for Office 365 计划 2 中的一项功能 (例如 Microsoft 365 E5 或具有 Defender for Office 365 计划 2 加载项的) 。 安全与合规&中的活动视图标识和分类服务中的网络钓鱼攻击。 Campaign Views 可以帮助你：
+市场活动视图是 Microsoft Defender for Office 365 计划 2 中的一项功能 (例如，Microsoft 365 E5 或具有 Defender for Office 365 计划 2 附加设备) 。 活动安全中心Microsoft 365查看服务中的网络钓鱼攻击并进行分类。 Campaign Views 可以帮助你：
 
 - 高效调查和应对钓鱼攻击。
 - 更好地了解攻击范围。
@@ -54,20 +54,20 @@ Microsoft 利用整个服务中的大量反网络钓鱼、反垃圾邮件和反�
 
 活动可能是短期的，或者可能跨越几天、几周或几个月的活动和无效时段。 可能会针对你的特定组织启动市场活动，或者你的组织可能是跨多个公司进行更大活动的一部分。
 
-## <a name="campaign-views-in-the-security--compliance-center"></a>安全与合规中心&活动视图
+## <a name="campaign-views-in-the-security-center"></a>安全中心中的市场活动视图
 
-Campaign Views is available in the [Security & Compliance Center](https://protection.office.com) at Threat **management** \> **Campaigns，** or directly at <https://protection.office.com/campaigns> .
+Campaign Views is available in the [Microsoft 365 security center](https://security.microsoft.com) at Email & **collaboration** \> **Campaigns，** or directly at <https://security.microsoft.com/campaigns> .
 
-![安全和合规中心中的活动概述](../../media/campaigns-overview.png)
+![Microsoft 365中心中的市场活动概述](../../media/campaigns-overview.png)
 
 还可以从：
 
-- **威胁管理** \>**资源管理器** \>**视图** \>**市场活动**
-- **威胁管理** \>**资源管理器** \>**视图** \>**所有电子邮件** \>**"市场活动"** 选项卡
-- **威胁管理** \>**资源管理器** \>**视图** \>**钓鱼邮件** \>**"市场活动"** 选项卡
-- **威胁管理** \>**资源管理器** \>**视图** \>**恶意软件** \>**"市场活动"** 选项卡
+- **电子邮件&协作** \>**资源管理器** \>**视图** \>**市场活动**
+- **电子邮件&协作** \>**资源管理器** \>**视图** \>**所有电子邮件** \>**"市场活动"** 选项卡
+- **电子邮件&协作** \>**资源管理器** \>**视图** \>**钓鱼邮件** \>**"市场活动"** 选项卡
+- **电子邮件&协作** \>**资源管理器** \>**视图** \>**恶意软件** \>**"市场活动"** 选项卡
 
-若要访问市场活动视图，你需要是安全与合规中心内组织管理、安全管理员或安全读者&组的成员。  有关详细信息，请参阅[安全与合规中心中的权限](permissions-in-the-security-and-compliance-center.md)。
+若要访问市场活动视图，你需要是安全中心内组织管理、安全管理员或 **安全** 读者角色组的成员。 有关详细信息，请参阅安全与合规Microsoft 365[中的权限Microsoft 365安全中心。](permissions-microsoft-365-security-center.md)
 
 ## <a name="campaigns-overview"></a>市场活动概述
 
@@ -78,7 +78,7 @@ Campaign Views is available in the [Security & Compliance Center](https://protec
 > [!TIP]
 > 如果看不到任何市场活动数据，请尝试更改日期范围或 [筛选器](#filters-and-settings)。
 
-概述页的其余部分在"宣传活动"选项卡上 **显示** 以下信息：
+概述页面上图表下方的表在"活动"选项卡上 **显示** 以下信息：
 
 - **名称**
 
@@ -110,7 +110,7 @@ Campaign Views is available in the [Security & Compliance Center](https://protec
 
 ### <a name="filters-and-settings"></a>筛选器和设置
 
-在"市场活动视图"页面顶部，有几个筛选器和查询设置可帮助你查找和隔离特定市场活动。
+在" **市场活动"页面** 顶部，有几个筛选器和查询设置可帮助你查找和隔离特定市场活动。
 
 ![市场活动筛选器](../../media/campaign-filters-and-settings.png)
 
@@ -131,7 +131,6 @@ Campaign Views is available in the [Security & Compliance Center](https://protec
   - **附件的文件名**
   - **恶意软件系列**
   - **标记**：应用了指定用户标记的用户或组 (包括优先级帐户) 。 有关用户标记详细信息，请参阅用户 [标记](user-tags.md)。
-  - **系统覆盖**
   - **传递操作**
   - **其他操作**
   - **方向性**
@@ -146,7 +145,9 @@ Campaign Views is available in the [Security & Compliance Center](https://protec
   - **发件人 IP**
   - **附件 SHA256：** 若要在命令提示符中查找文件的 SHA256 哈希Windows，在命令提示符中运行以下命令： `certutil.exe -hashfile "<Path>\<Filename>" SHA256` 。
   - **群集 ID**
+  - **警报 ID**
   - **警报策略 ID**
+  - **市场活动 ID**
   - **ZAP URL 信号**
 
 - **URL：**
@@ -164,7 +165,7 @@ Campaign Views is available in the [Security & Compliance Center](https://protec
 
 完成后，单击"查询 **"** 按钮。
 
-创建基本或高级筛选器后，可以使用"保存查询"或"将查询另存为"**来保存它**。 稍后，返回到"市场活动视图"时，可以通过单击"保存的查询设置"加载 **已保存的筛选器**。
+创建基本或高级筛选器后，可以使用"保存查询"或"将查询另存为"**来保存它**。 稍后，当你返回到"市场活动"页面时，可以通过单击"保存的查询设置"加载 **已保存的筛选器**。
 
 若要导出图表或市场活动列表，请单击"导出 **"，然后选择**"**导出图表** 数据"或"**导出市场活动列表"。**
 
@@ -178,30 +179,26 @@ Campaign Views is available in the [Security & Compliance Center](https://protec
 
 在市场活动详细信息视图顶部，提供以下市场活动信息：
 
-- **ID：** 唯一市场活动标识符。
-
-- **开始****和结束**：市场活动的开始日期和结束日期。 请注意，这些日期可能超出在概述页面上选择的筛选日期。
-
-- **影响**：此部分包含所选日期范围筛选器或你在日程表 (中选择的日期范围筛选器的以下) ：
-  - 收件人总数。
-  - "收件箱"邮件 (，即传递到"收件箱"，而不是"垃圾邮件"文件夹) 。
-  - 在网络钓鱼邮件中单击 URL 有效负载的用户数。
-  - 访问 URL 的用户数量。
-
-- 目标：计算得出的百分比： (组织中活动收件人的数量) / (服务组织中所有组织中活动的收件人) 。 请注意，此值在活动的整个生命周期内计算，不会基于日期筛选器更改。
-
-- 活动活动的交互式时间线：时间线显示活动在整个生命周期中的活动。 默认情况下，阴影区域包括你在概述中选择的日期范围筛选器。 可以单击并拖动以选择特定的起始点和终点，这将更改影响区域以及页面其余部分中显示的数据，如以下各节<u>中所述</u>。
-
-在标题栏中，可以单击"下载市场活动写入"按钮"下载市场活动写入图标"，将市场活动详细信息下载到 Word 文档 (默认名为 ![ ](../../media/download-campaign-write-up-button.png) CampaignReport.docx) 。 请注意，下载包含市场活动的整个生命周期的详细信息， (所选的筛选日期) 。
+- **市场活动 ID：** 唯一市场活动标识符。
+- **活动**：活动的持续时间和活动。
+- 所选日期范围筛选器的以下数据 (在日程表中选择的日期范围) ：
+- **影响**
+- **邮件**：收件人总数。
+- **收件箱**：传递到收件箱而不是垃圾邮件文件夹的邮件数。
+- **单击的链接**：单击网络钓鱼邮件中的 URL 有效负载的用户数。
+- **访问链接**：访问 URL 的用户数。
+- **目标 (%) ：** 计算得出的百分比： (组织中活动收件人数) / (服务) 中所有组织中活动的收件人总数。 请注意，此值在活动的整个生命周期内计算，不会基于日期筛选器更改。
+- 市场活动流的开始日期/时间和结束数据/时间筛选器，如下一节中所述。
+- 活动活动的交互式时间线：时间线显示活动在整个生命周期中的活动。 你可以将鼠标悬停在图形数据点上方，以查看检测到的邮件数量。
 
 ![市场活动信息](../../media/campaign-details-campaign-info.png)
 
 ### <a name="campaign-flow"></a>活动流
 
-在活动详细信息视图的中间，有关市场活动的重要详细信息将在水平流程图的 **Flow** 部分 (称为 _Sankey_ 图表) 。 这些详细信息将帮助你了解活动的元素和组织中的潜在影响。
+在活动详细信息视图的中间，有关市场活动的重要详细信息在称为 _Sankey_ 图表 (流程图) 。 这些详细信息将帮助你了解活动的元素和组织中的潜在影响。
 
 > [!TIP]
-> 图表中显示的信息由日程表中的Flow日期范围控制，如上一节中所述。
+> 流程图中显示的信息由日程表中的日期范围筛选器控制，如上一节中所述。
 
 ![不包含用户 URL 单击次数的活动详细信息](../../media/campaign-details-no-recipient-actions.png)
 
@@ -212,6 +209,8 @@ Campaign Views is available in the [Security & Compliance Center](https://protec
 - **发件人 IP**
 - **发件人域名**
 - **筛选器裁定**：裁定值与可用网络钓鱼和垃圾邮件筛选裁定相关，如 [反垃圾邮件邮件头中所述](anti-spam-message-headers.md)。 下表介绍了可用值：
+
+  <br>
 
   ****
 
@@ -233,7 +232,7 @@ Campaign Views is available in the [Security & Compliance Center](https://protec
 
   <sup>\*\*</sup> 查看反垃圾邮件策略，因为这些邮件应该隔离，而不是传递。
 
-- 送达位置：即使用户未单击邮件中的有效负载 URL，您也可能需要调查传递到收件人 (或垃圾邮件文件夹) 的邮件。 您还可以从隔离区中删除隔离邮件。 有关详细信息，请参阅 [EOP 中的隔离电子邮件](quarantine-email-messages.md)。
+- 邮件目标：即使用户未单击邮件中的有效负载 URL，您也可能希望调查传递到收件人 (或垃圾邮件文件夹) 的邮件。 您还可以从隔离区中删除隔离邮件。 有关详细信息，请参阅 [EOP 中的隔离电子邮件](quarantine-email-messages.md)。
   - **已删除文件夹**
   - **已丢弃**
   - **外部**：收件人位于混合环境中本地电子邮件组织中。
@@ -266,7 +265,7 @@ Campaign Views is available in the [Security & Compliance Center](https://protec
 市场活动详细信息视图中的选项卡允许你进一步调查市场活动。
 
 > [!TIP]
-> 选项卡上显示的信息由时间线中带阴影的日期范围控制，如"市场活动信息" [部分中所述](#campaign-information) 。
+> 选项卡上显示的信息由时间线中的日期范围筛选器控制，如"市场活动信息" [部分中所述](#campaign-information) 。
 
 - **URL 单击**：如果用户未单击邮件中的有效负载 URL，此部分将为空。 如果用户能够单击 URL，将填充以下值：
   - **用户**<sup>\*</sup>
@@ -303,7 +302,11 @@ Campaign Views is available in the [Security & Compliance Center](https://protec
 
 ### <a name="buttons"></a>按钮
 
-通过“活动详细信息”视图中的按钮，可使用威胁资源管理器的强大功能进一步调查活动。
+通过市场活动详细信息视图底部的按钮，你可以调查和记录有关市场活动的详细信息：
 
-- **探索活动**：打开新的威胁资源管理器搜索选项卡，将 **活动 ID** 值用作搜索筛选器。
-- **浏览收件箱邮件**：打开一个新的威胁资源管理器搜索选项卡，将"市场活动 **ID"** 和"传递位置 **： 收件箱** "用作搜索筛选器。
+- **浏览邮件**：使用威胁资源管理器功能进一步调查活动：
+  - **所有邮件**：使用市场活动 **ID** 值作为搜索筛选器打开一个新的威胁资源管理器搜索选项卡。
+  - **收件箱邮件**：打开一个新的威胁资源管理器搜索选项卡，将" **市场活动 ID"** 和"传递位置 **： 收件箱** "用作搜索筛选器。
+  - **内部消息**：打开一个新的威胁资源管理器搜索选项卡，将 **"市场活动 ID"** 和"方向 **性： 组织** 内部"用作搜索筛选器。
+
+- **下载威胁报告**：将市场活动详细信息下载到 Word (，默认名为 CampaignReport.docx) 。 请注意，下载包含市场活动的整个生命周期的详细信息， (所选的筛选日期) 。

@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用保留策略有效掌控用户使用电子邮件、文档和对话生成的内容。 保留所需内容并删除不需要的内容。
-ms.openlocfilehash: 7b23ed2b45a24e8999785909f9357043bef731e5
-ms.sourcegitcommit: cebbdd393dcfd93ff43a1ab66ad70115853f83e7
+ms.openlocfilehash: 9f550aa2e0a79170c4651f29c23a8ed0c8c9b3a4
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/01/2021
-ms.locfileid: "52710690"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52769411"
 ---
 # <a name="create-and-configure-retention-policies"></a>创建和配置保留策略
 
@@ -221,11 +221,11 @@ Yammer 不仅仅是社区消息和私人消息。 若要保留和删除 Yammer �
 
 ### <a name="configuration-information-for-skype-for-business"></a>Skype for Business 的配置信息
 
-与 Exchange 电子邮件不同，将 Skype 位置的状态切换为“开”并不能添加所有用户，但启用相应位置后，就必须手动选择要保留哪些用户的对话：
+与其他位置不同，无法将 Skype 位置的状态切换为自动包含所有用户。 相反，当您打开该位置时，您必须选择 **“编辑”** 选项以手动选择要保留其对话的用户：
 
-![选择用于保留策略的 Skype 位置](../media/skype-location-retention-policies.png)
+![编辑 Skype 位置以使用保留策略](../media/skype-location-retention-policies.png)
 
-当你选择“**选择用户**”时，可通过选择“**全选**”框来快速包含所有用户。 但是，请务必了解每个用户在策略中都被算作一个特定的包含内容。 因此，如果通过选择“**全选**”框来包含 1000 名用户，则与手动选择要包含的 1000 名用户相同，这是 Skype for Business 所支持的最大上限。
+选择此 **编辑** 选项后，在 **Skype for Business** 窗格中，您可以通过选择 **名称** 列前的隐藏框快速包含所有用户。 但是，请务必了解每个用户在策略中都被算作一个特定的包含内容。 因此，如果通过选中此框包括 1，000 个用户，这与手动选择要包括的 1，000 个用户相同，这是 Skype for Business 支持的最大数量。
 
 请注意，Outlook 中的“**对话历史记录**”文件夹是一个与 Skype 存档没有任何关系的功能。 最终用户可以关闭“**对话历史记录**”，但是 Skype 的存档功能是将 Skype 对话的副本存储到隐藏的文件夹。电子数据展示可以访问该文件夹，但用户不可以。
 

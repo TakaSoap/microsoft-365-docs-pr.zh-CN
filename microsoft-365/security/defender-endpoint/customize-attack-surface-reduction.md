@@ -8,22 +8,20 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 localization_priority: Normal
 audience: ITPro
-author: dansimp
-ms.author: dansimp
+author: denisebmsft
+ms.author: deniseb
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 52a51b1035f1aa0fb152cf17dc9561cce378d59d
-ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
+ms.topic: article
+ms.openlocfilehash: 232f7133f177e3d0aa93fcb2835fb86bcfd0d37c
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51570347"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52769319"
 ---
 # <a name="customize-attack-surface-reduction-rules"></a>自定义减少攻击面规则
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
-
 
 **适用于：**
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
@@ -39,42 +37,42 @@ ms.locfileid: "51570347"
 了解如何通过排除文件和文件夹或向用户计算机上[](#exclude-files-and-folders)显示的通知警报添加自定义文本[](#customize-the-notification)来自定义攻击面减少规则。
 
 你可以为运行以下任一版本和版本的设备设置攻击面减少规则Windows：
-- Windows 10 专业版版本[1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709)或更高版本
-- Windows 10 企业版版本[1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709)或更高版本
-- Windows服务器版本[1803 (半年频道) ](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1803)或更高版本
-- [Windows Server 2019](https://docs.microsoft.com/windows-server/get-started-19/whats-new-19)可以使用组策略、PowerShell 和移动设备管理 (MDM) CSP (配置) 配置这些设置。
+- Windows 10 专业版版本[1709](/windows/whats-new/whats-new-windows-10-version-1709)或更高版本
+- Windows 10 企业版版本[1709](/windows/whats-new/whats-new-windows-10-version-1709)或更高版本
+- Windows服务器版本[1803 (半年频道) ](/windows-server/get-started/whats-new-in-windows-server-1803)或更高版本
+- [Windows Server 2019](/windows-server/get-started-19/whats-new-19)可以使用组策略、PowerShell 和移动设备管理 (MDM) CSP (配置) 配置这些设置。
 
 ## <a name="exclude-files-and-folders"></a>排除文件和文件夹
 
 你可以选择从攻击面减少规则评估中排除文件和文件夹。 排除后，即使攻击面减少规则检测到文件包含恶意行为，也不会阻止文件运行。
 
 > [!WARNING]
-> 这可能会允许不安全的文件运行并感染你的设备。 排除文件或文件夹会大大降低攻击面减少规则所提供的保护。 将允许运行规则阻止的文件，并且不会记录任何报告或事件。
+> 这可能会允许不安全的文件运行并感染你的设备。 排除文件或文件夹可以严重削弱攻击面减少规则提供的保护。 将允许运行规则阻止的文件，并且不会记录任何报告或事件。
 
-排除适用于允许排除的所有规则。 您可以为资源指定单个文件、文件夹路径或完全限定的域名。 但是，不能将排除限制到特定规则。
+排除应用于允许排除的所有规则。 您可以为资源指定单个文件、文件夹路径或完全限定的域名。 但是，不能将排除限制到特定规则。
 
 仅在已排除的应用程序或服务启动时应用排除。 例如，如果为已在运行的更新服务添加排除项，则更新服务将继续触发事件，直到停止并重新启动该服务。
 
-攻击面减少支持环境变量和通配符。 有关使用通配符的信息，请参阅在文件名和文件夹路径或扩展名排除列表中 [使用通配符](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-extension-file-exclusions-microsoft-defender-antivirus#use-wildcards-in-the-file-name-and-folder-path-or-extension-exclusion-lists)。
+攻击面减少支持环境变量和通配符。 有关使用通配符的信息，请参阅在文件名和文件夹路径或扩展名排除列表中 [使用通配符](configure-extension-file-exclusions-microsoft-defender-antivirus.md#use-wildcards-in-the-file-name-and-folder-path-or-extension-exclusion-lists) 。
 如果在检测你认为不应检测到的文件的规则方面遇到问题，请使用审核模式 [测试规则](evaluate-attack-surface-reduction.md)。
 
-规则说明 | GUID
--|-|-
-阻止所有Office应用程序创建子进程 | D4F940AB-401B-4EFC-AADC-AD5F3C50688A
-阻止执行可能混淆的脚本 | 5BEB7EFE-FD9A-4556-801D-275E5FFC04CC
-从宏中阻止 Win32 API Office调用 | 92E97FA1-2EDF-4476-BDD6-9DD0B4DDDC7B
-阻止Office应用程序创建可执行内容 | 3B576869-A4EC-4529-8536-B80A7769E899
-阻止Office代码注入其他进程 | 75668C1F-73B5-4CF0-BB93-3ECF5CB7CC84
-阻止 JavaScript 或 VBScript 启动下载的可执行内容 | D3E037E1-3EB8-44C8-A917-57927947596D
-阻止来自电子邮件客户端和 Webmail 的可执行内容 | BE9BA2D9-53EA-4CDC-84E5-9B1EEEE46550
-阻止可执行文件运行，除非它们满足普遍标准、年龄或受信任的列表条件 | 01443614-cd74-433a-b99e-2ecdc07bfc25
-使用高级防护抵御勒索软件 | c1db55ab-c21a-4637-bb3f-a12568109d35
-阻止本地安全机构子系统Windows窃取凭据 (lsass.exe)  | 9e6c4e1f-7d60-472f-ba1a-a39ef669e4b2
-阻止源自 PSExec 和 WMI 命令的进程创建 | d1e49aac-8f56-4280-b9ba-993a6d77406c
-阻止从 USB 运行的不受信任的和未签名的进程 | b2b3f03d-6a65-4f7b-a9c7-1c7ef74a9ba4
-阻止Office应用程序创建子进程 | 26190899-1602-49e8-8b27-eb1d0a1ce869
-阻止 Adobe Reader 创建子进程 | 7674ba52-37eb-4a4f-a9a1-f0f9a1619a2c
-通过 WMI 事件订阅阻止持久性 | e6db77e5-3df2-4cf1-b95a-636979351e5b
+| 规则说明 | GUID |
+|:----|:----|:----|
+| 阻止所有Office应用程序创建子进程 | `D4F940AB-401B-4EFC-AADC-AD5F3C50688A` |
+| 阻止执行可能混淆的脚本 | `5BEB7EFE-FD9A-4556-801D-275E5FFC04CC` |
+| 从宏中阻止 Win32 API Office调用 | `92E97FA1-2EDF-4476-BDD6-9DD0B4DDDC7B` |
+| 阻止Office应用程序创建可执行内容 | `3B576869-A4EC-4529-8536-B80A7769E899` |
+| 阻止Office代码注入其他进程 | `75668C1F-73B5-4CF0-BB93-3ECF5CB7CC84` |
+| 阻止 JavaScript 或 VBScript 启动下载的可执行内容 | `D3E037E1-3EB8-44C8-A917-57927947596D` |
+| 阻止来自电子邮件客户端和 Webmail 的可执行内容 | `BE9BA2D9-53EA-4CDC-84E5-9B1EEEE46550` |
+| 阻止可执行文件运行，除非它们满足普遍标准、年龄或受信任的列表条件 | `01443614-cd74-433a-b99e-2ecdc07bfc25` |
+| 使用高级防护抵御勒索软件 | `c1db55ab-c21a-4637-bb3f-a12568109d35` |
+| 阻止本地安全机构子系统Windows窃取凭据 (lsass.exe)  | `9e6c4e1f-7d60-472f-ba1a-a39ef669e4b2` |
+| 阻止源自 PSExec 和 WMI 命令的进程创建 | `d1e49aac-8f56-4280-b9ba-993a6d77406c` |
+| 阻止从 USB 运行的不受信任的和未签名的进程 | `b2b3f03d-6a65-4f7b-a9c7-1c7ef74a9ba4` |
+| 阻止Office应用程序创建子进程 | `26190899-1602-49e8-8b27-eb1d0a1ce869` |
+| 阻止 Adobe Reader 创建子进程 | `7674ba52-37eb-4a4f-a9a1-f0f9a1619a2c` |
+| 通过 WMI 事件订阅阻止持久性 | `e6db77e5-3df2-4cf1-b95a-636979351e5b` |
 
 有关 [每个规则的详细信息](attack-surface-reduction.md) ，请参阅攻击面减少主题。
 
@@ -107,7 +105,7 @@ ms.locfileid: "51570347"
 
 ### <a name="use-mdm-csps-to-exclude-files-and-folders"></a>使用 MDM CSP 排除文件和文件夹
 
-使用 [./Vendor/MSFT/Policy/Config/Defender/AttackSurfaceReductionOnlyExclusions](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-attacksurfacereductiononlyexclusions) 配置服务提供程序 (CSP) 添加排除项。
+使用 [./Vendor/MSFT/Policy/Config/Defender/AttackSurfaceReductionOnlyExclusions](/windows/client-management/mdm/policy-csp-defender#defender-attacksurfacereductiononlyexclusions) 配置服务提供程序 (CSP) 添加排除项。
 
 ## <a name="customize-the-notification"></a>自定义通知
 

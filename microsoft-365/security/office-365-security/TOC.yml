@@ -66,6 +66,8 @@
           href: protect-against-threats.md
         - name: 将 Defender for Office 365 与 Defender for Endpoint 集成
           href: integrate-office-365-ti-with-mde.md
+        - name: Microsoft 365 安全中心中的权限
+          href: permissions-microsoft-365-security-center.md
         - name: 安全与合规中心内的权限
           href: permissions-in-the-security-and-compliance-center.md
         - name: SIEM 服务器集成

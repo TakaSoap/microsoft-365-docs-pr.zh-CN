@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: b4527d49-4073-4b43-8274-31b7a3166f92
 description: 确定租户和用户是否满足要求，以便可以使用集中部署Office加载项。
-ms.openlocfilehash: 63775ed6bab2d595ae87085e1607be5818b355e2
-ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
+ms.openlocfilehash: 531281eba6accfb2e1ffdab1e662a03b077869bd
+ms.sourcegitcommit: 50f484fc501d81506a714b127a56a6979888d849
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 06/05/2021
-ms.locfileid: "52782482"
+ms.locfileid: "52779754"
 ---
 # <a name="determine-if-centralized-deployment-of-add-ins-works-for-your-organization"></a>确定外接程序的集中部署是否适用于您的组织
 
@@ -43,7 +43,7 @@ ms.locfileid: "52782482"
 
 外接程序最多可能需要 24 小时才能显示给所有用户的客户端。
   
-## <a name="before-you-begin"></a>准备工作
+## <a name="before-you-begin"></a>开始之前
 
 外接程序的集中部署要求用户使用 Microsoft 365 企业版 SKUS：E3/E5/F3 或业务 SK：Business Basic、Business Standard、Business 高级版 (，并且使用其组织 ID) 登录 Office，并且具有 Exchange Online 和活动的 Exchange Online 邮箱。 订阅目录必须位于 中，或已联合Azure Active Directory。
 可以查看下面的特定要求Office Exchange，或使用集中部署[兼容性检查器](#centralized-deployment-compatibility-checker)。
@@ -121,7 +121,7 @@ Microsoft Exchange 存储组织的租户中的加载项清单。 部署外接程
 - 支持的邮箱 - 如果使用已启用 OAuth 的邮箱
 
 > [!NOTE]
-> 使用中央部署 PowerShell 模块时不支持多重身份验证。 该模块仅适用于基本身份验证。
+> 使用中央部署 PowerShell 模块时不支持多重身份验证。
   
 ## <a name="user-and-group-assignments"></a>用户和组分配
 

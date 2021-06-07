@@ -23,17 +23,17 @@ search.appverid:
 - GEA150
 ms.assetid: 1561140a-16a9-4a02-822d-a989250e479d
 description: 了解如何在 Microsoft 365 中购买域名。
-ms.openlocfilehash: 3d5a5568a0e75a06f0880d82ea8e4a1a8d003689
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: c4b3b0ac88671e72ed567998ad9d97486dfb6342
+ms.sourcegitcommit: 50f484fc501d81506a714b127a56a6979888d849
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52635458"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52779682"
 ---
 # <a name="buy-a-domain-name"></a>购买域名
 
 > [!NOTE]
-> 如果你的组织使用Office 365由世纪网络在中国运营的域，请参阅如何购买由世纪Office 365中国运营的[域。](/buy-a-domain-name?view=o365-21vianet#how-to-buy-a-domain-for-office-365-operated-by-21vianet.md)
+> 如果你的组织使用Office 365由世纪网络在中国运营的域，请参阅如何购买由世纪Office 365中国运营的[域。](#how-to-buy-a-domain-for-office-365-operated-by-21vianet)
 
  *若要添加、修改或删除域，**你必须** 是企业 **或** 企业计划的 [全局管理员](https://products.office.com/business/office)。这些更改会影响整个 *租户，自定义* 管理员或常规用户将无法进行这些更改。*  
 
@@ -89,9 +89,8 @@ ms.locfileid: "52635458"
 
 
 ::: moniker range="o365-21vianet"
+
 ## <a name="how-to-buy-a-domain-for-office-365-operated-by-21vianet"></a>如何为由世纪互联运营的 Office 365 购买域
-
-
 
 如果尚没有自己的域，可轻松联机进行购买，可在域名注册机构、域经销商，甚至是在当前的 Internet 提供商处购买。注册 由世纪互联运营的 Office 365 时可获取一个域名，例如，contoso.onmicrosoft.com。但你可能希望使用自定义域名，例如 fourthcoffee.com。
   
@@ -120,5 +119,5 @@ ms.locfileid: "52635458"
 ## <a name="related-content"></a>相关内容
 
 [在本文Microsoft 365 (](../setup/add-domain.md)域) \
-[域常见问题 (](../setup/domains-faq.yml) 文章) \
+[域常见问题解答](../setup/domains-faq.yml)（文章）\
 [更新 DNS 记录，以使用当前](../dns/update-dns-records-to-retain-current-hosting-provider.md) 托管提供商 (网站) 

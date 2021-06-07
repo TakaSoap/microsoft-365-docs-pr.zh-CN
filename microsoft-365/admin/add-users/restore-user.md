@@ -23,12 +23,12 @@ search.appverid:
 - GEA150
 ms.assetid: 2c261e42-5dd1-48b0-845f-2a016d29cfc1
 description: 在删除用户帐户后的 30 天内，可以还原该帐户以及所有数据，并且用户可以使用同一帐户登录。
-ms.openlocfilehash: 83852136ee22ab3f63d8ada6a5a7290883c392e5
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: f849fe8e403aa9a72eccb4dd65665ec9f33618d1
+ms.sourcegitcommit: 50f484fc501d81506a714b127a56a6979888d849
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52623817"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52779646"
 ---
 # <a name="restore-a-user"></a>还原用户
    
@@ -38,7 +38,7 @@ ms.locfileid: "52623817"
   
 - 确保许可证可用于分配给帐户。
     
-- 如果你的公司使用 Active Directory，请参阅[如何解决 Office 365 中已删除的用户帐户问题](/office365/troubleshoot/active-directory/restore-deleted-user-accounts.md)以获取有关还原用户帐户的说明。 
+- 如果您的企业使用 Active Directory，有关还原用户帐户的提示，请参阅如何在 Office 365 中排除已删除[的Office 365。](/office365/troubleshoot/active-directory/restore-deleted-user-accounts) 
     
 ## <a name="restore-one-or-more-user-accounts"></a>还原一个或多个用户帐户
 

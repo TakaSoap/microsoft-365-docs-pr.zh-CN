@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 了解 Microsoft 生产力分数如何反映人员和技术体验度量，并与类似规模的组织进行比较。
-ms.openlocfilehash: ded8b3ee6cbe6df308a4e7388107ea394debe020
-ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
+ms.openlocfilehash: 0735fb6d47b475146deade6ab3ca2f8d24ec27a7
+ms.sourcegitcommit: 50f484fc501d81506a714b127a56a6979888d849
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/21/2021
-ms.locfileid: "52593837"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52779670"
 ---
 # <a name="microsoft-productivity-score"></a>Microsoft 生产力分数 
 
@@ -40,7 +40,7 @@ ms.locfileid: "52593837"
 
 - **人员的经验：** 量化组织如何使用如内容协作、移动性、通信、会议和团队合作等 Microsoft 365 类别进行工作。  
 
-    对于上述每一个类别，我们通过公共研究来确定一些最佳实践和相关益处，采用提高组织效率的形式。 例如，[Forrester](https://vc2prod.blob.core.windows.net/vc-resources/TEIStudies/TEI%20of%20Microsoft%20365%20E5%20-%20Oct%202018.pdf) 研究显示，当人们互相合作并在云端（而不是电子邮件附件）共享内容时，他们每周能省下100分钟。 此外，我们会量化这些最佳实践在你的组织中的使用情况，以帮助你了解在数字化转型历程中的位置。 
+    对于上述每一个类别，我们通过公共研究来确定一些最佳实践和相关益处，采用提高组织效率的形式。 例如，Forrester 研究显示，当人们互相合作并在云端（而不是电子邮件附件）共享内容时，他们每周能省下100分钟。 此外，我们会量化这些最佳实践在你的组织中的使用情况，以帮助你了解在数字化转型历程中的位置。 
 
 - **技术体验：** 你组织的工作效率取决于可靠、性能良好的技术以及对 Microsoft 365 的高效使用。 [终结点分析](https://aka.ms/endpointanalytics) 可帮助你了解硬件和软件的性能和运行状况问题如何影响你的组织。 Microsoft 365 应用程序健康状况可帮助你了解组织中的设备是否在推荐渠道上运行 Microsoft 365 应用程序。
 

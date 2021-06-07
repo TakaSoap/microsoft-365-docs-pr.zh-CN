@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: 了解如何使用基于精确数据匹配的分类来创建自定义敏感信息类型。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 0bb75db5b6bb1f3a3b18033b5327f014748f6512
-ms.sourcegitcommit: aff2331f9a3f22591f8ace1a646809969d28c120
+ms.openlocfilehash: 7c6db9df115020902b80328a341606cca2b1c735
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52464389"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52769457"
 ---
 # <a name="create-custom-sensitive-information-types-with-exact-data-match-based-classification"></a>使用基于精确数据匹配的分类创建自定义敏感信息类型
 
@@ -611,10 +611,6 @@ Register-ScheduledTask -TaskName $taskName -InputObject $scheduledTask -User $us
 - 针对 SharePoint 的 DLP（文件）
 - Microsoft Cloud App Security DLP 策略
 - 服务器端自动标记策略
-
-以下方案的 EDM 敏感信息类型目前正在开发中，尚不可用：
-
-- 灵敏度标签和保留标签的自动分类
 
 #### <a name="to-create-a-dlp-policy-with-edm"></a>使用 EDM 创建 DLP 策略
 
