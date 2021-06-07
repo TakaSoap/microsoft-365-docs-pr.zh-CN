@@ -14,87 +14,88 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: 70ce6adce3e14be7ee440b96587b8f9402c0b99f
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: ef10d2bd7193fc7b4a1604658f496ef38ef33555
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51166344"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52772337"
 ---
-# <a name="get-alert-related-machine-information-api"></a><span data-ttu-id="c59e4-104">获取警报相关的计算机信息 API</span><span class="sxs-lookup"><span data-stu-id="c59e4-104">Get alert related machine information API</span></span>
+# <a name="get-alert-related-machine-information-api"></a><span data-ttu-id="69cfe-104">获取警报相关的计算机信息 API</span><span class="sxs-lookup"><span data-stu-id="69cfe-104">Get alert related machine information API</span></span>
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-<span data-ttu-id="c59e4-105">**适用于：**</span><span class="sxs-lookup"><span data-stu-id="c59e4-105">**Applies to:**</span></span>
-- [<span data-ttu-id="c59e4-106">Microsoft Defender for Endpoint</span><span class="sxs-lookup"><span data-stu-id="c59e4-106">Microsoft Defender for Endpoint</span></span>](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [<span data-ttu-id="c59e4-107">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="c59e4-107">Microsoft 365 Defender</span></span>](https://go.microsoft.com/fwlink/?linkid=2118804)
+<span data-ttu-id="69cfe-105">**适用于：**</span><span class="sxs-lookup"><span data-stu-id="69cfe-105">**Applies to:**</span></span>
+- [<span data-ttu-id="69cfe-106">Microsoft Defender for Endpoint</span><span class="sxs-lookup"><span data-stu-id="69cfe-106">Microsoft Defender for Endpoint</span></span>](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [<span data-ttu-id="69cfe-107">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="69cfe-107">Microsoft 365 Defender</span></span>](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
-> <span data-ttu-id="c59e4-108">想要体验 Microsoft Defender for Endpoint？</span><span class="sxs-lookup"><span data-stu-id="c59e4-108">Want to experience Microsoft Defender for Endpoint?</span></span> [<span data-ttu-id="c59e4-109">注册免费试用版。</span><span class="sxs-lookup"><span data-stu-id="c59e4-109">Sign up for a free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+> <span data-ttu-id="69cfe-108">想要体验 Microsoft Defender for Endpoint？</span><span class="sxs-lookup"><span data-stu-id="69cfe-108">Want to experience Microsoft Defender for Endpoint?</span></span> [<span data-ttu-id="69cfe-109">注册免费试用版。</span><span class="sxs-lookup"><span data-stu-id="69cfe-109">Sign up for a free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
 
-## <a name="api-description"></a><span data-ttu-id="c59e4-110">API 说明</span><span class="sxs-lookup"><span data-stu-id="c59e4-110">API description</span></span>
-<span data-ttu-id="c59e4-111">检索 [与](machine.md) 特定警报相关的设备。</span><span class="sxs-lookup"><span data-stu-id="c59e4-111">Retrieves [Device](machine.md) related to a specific alert.</span></span>
+## <a name="api-description"></a><span data-ttu-id="69cfe-110">API 说明</span><span class="sxs-lookup"><span data-stu-id="69cfe-110">API description</span></span>
+<span data-ttu-id="69cfe-111">检索 [与](machine.md) 特定警报相关的设备。</span><span class="sxs-lookup"><span data-stu-id="69cfe-111">Retrieves [Device](machine.md) related to a specific alert.</span></span>
 
 
-## <a name="limitations"></a><span data-ttu-id="c59e4-112">限制</span><span class="sxs-lookup"><span data-stu-id="c59e4-112">Limitations</span></span>
-1. <span data-ttu-id="c59e4-113">你可以根据配置的保留期查询上次更新的警报。</span><span class="sxs-lookup"><span data-stu-id="c59e4-113">You can query on alerts last updated according to your configured retention period.</span></span>
-2. <span data-ttu-id="c59e4-114">此 API 的速率限制是每分钟 100 个调用和每小时 1500 个调用。</span><span class="sxs-lookup"><span data-stu-id="c59e4-114">Rate limitations for this API are 100 calls per minute and 1500 calls per hour.</span></span>
+## <a name="limitations"></a><span data-ttu-id="69cfe-112">限制</span><span class="sxs-lookup"><span data-stu-id="69cfe-112">Limitations</span></span>
+1. <span data-ttu-id="69cfe-113">你可以根据配置的保留期查询上次更新的警报。</span><span class="sxs-lookup"><span data-stu-id="69cfe-113">You can query on alerts last updated according to your configured retention period.</span></span>
+2. <span data-ttu-id="69cfe-114">此 API 的速率限制是每分钟 100 个调用和每小时 1500 个调用。</span><span class="sxs-lookup"><span data-stu-id="69cfe-114">Rate limitations for this API are 100 calls per minute and 1500 calls per hour.</span></span>
 
 
-## <a name="permissions"></a><span data-ttu-id="c59e4-115">权限</span><span class="sxs-lookup"><span data-stu-id="c59e4-115">Permissions</span></span>
-<span data-ttu-id="c59e4-116">若要调用此 API，需要以下权限之一。</span><span class="sxs-lookup"><span data-stu-id="c59e4-116">One of the following permissions is required to call this API.</span></span> <span data-ttu-id="c59e4-117">若要了解更多信息（包括如何选择权限），请参阅使用 [Microsoft Defender for Endpoint API](apis-intro.md)</span><span class="sxs-lookup"><span data-stu-id="c59e4-117">To learn more, including how to choose permissions, see [Use Microsoft Defender for Endpoint APIs](apis-intro.md)</span></span>
+## <a name="permissions"></a><span data-ttu-id="69cfe-115">权限</span><span class="sxs-lookup"><span data-stu-id="69cfe-115">Permissions</span></span>
+<span data-ttu-id="69cfe-116">若要调用此 API，需要以下权限之一。</span><span class="sxs-lookup"><span data-stu-id="69cfe-116">One of the following permissions is required to call this API.</span></span> <span data-ttu-id="69cfe-117">若要了解更多信息（包括如何选择权限），请参阅使用 [Microsoft Defender for Endpoint API](apis-intro.md)</span><span class="sxs-lookup"><span data-stu-id="69cfe-117">To learn more, including how to choose permissions, see [Use Microsoft Defender for Endpoint APIs](apis-intro.md)</span></span>
 
-<span data-ttu-id="c59e4-118">权限类型</span><span class="sxs-lookup"><span data-stu-id="c59e4-118">Permission type</span></span> |   <span data-ttu-id="c59e4-119">权限</span><span class="sxs-lookup"><span data-stu-id="c59e4-119">Permission</span></span>  |   <span data-ttu-id="c59e4-120">权限显示名称</span><span class="sxs-lookup"><span data-stu-id="c59e4-120">Permission display name</span></span>
+<span data-ttu-id="69cfe-118">权限类型</span><span class="sxs-lookup"><span data-stu-id="69cfe-118">Permission type</span></span> |   <span data-ttu-id="69cfe-119">权限</span><span class="sxs-lookup"><span data-stu-id="69cfe-119">Permission</span></span>  |   <span data-ttu-id="69cfe-120">权限显示名称</span><span class="sxs-lookup"><span data-stu-id="69cfe-120">Permission display name</span></span>
 :---|:---|:---
-<span data-ttu-id="c59e4-121">应用程序</span><span class="sxs-lookup"><span data-stu-id="c59e4-121">Application</span></span> |   <span data-ttu-id="c59e4-122">Machine.Read.All</span><span class="sxs-lookup"><span data-stu-id="c59e4-122">Machine.Read.All</span></span> |  <span data-ttu-id="c59e4-123">"读取所有计算机信息"</span><span class="sxs-lookup"><span data-stu-id="c59e4-123">'Read all machine information'</span></span>
-<span data-ttu-id="c59e4-124">应用程序</span><span class="sxs-lookup"><span data-stu-id="c59e4-124">Application</span></span> |   <span data-ttu-id="c59e4-125">Machine.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="c59e4-125">Machine.ReadWrite.All</span></span> | <span data-ttu-id="c59e4-126">"读取和写入所有计算机信息"</span><span class="sxs-lookup"><span data-stu-id="c59e4-126">'Read and write all machine information'</span></span>
-<span data-ttu-id="c59e4-127">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="c59e4-127">Delegated (work or school account)</span></span> | <span data-ttu-id="c59e4-128">Machine.Read</span><span class="sxs-lookup"><span data-stu-id="c59e4-128">Machine.Read</span></span> | <span data-ttu-id="c59e4-129">"读取计算机信息"</span><span class="sxs-lookup"><span data-stu-id="c59e4-129">'Read machine information'</span></span>
-<span data-ttu-id="c59e4-130">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="c59e4-130">Delegated (work or school account)</span></span> | <span data-ttu-id="c59e4-131">Machine.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="c59e4-131">Machine.ReadWrite</span></span> | <span data-ttu-id="c59e4-132">"读取和写入计算机信息"</span><span class="sxs-lookup"><span data-stu-id="c59e4-132">'Read and write machine information'</span></span>
+<span data-ttu-id="69cfe-121">应用程序</span><span class="sxs-lookup"><span data-stu-id="69cfe-121">Application</span></span> |   <span data-ttu-id="69cfe-122">Machine.Read.All</span><span class="sxs-lookup"><span data-stu-id="69cfe-122">Machine.Read.All</span></span> |  <span data-ttu-id="69cfe-123">"读取所有计算机信息"</span><span class="sxs-lookup"><span data-stu-id="69cfe-123">'Read all machine information'</span></span>
+<span data-ttu-id="69cfe-124">应用程序</span><span class="sxs-lookup"><span data-stu-id="69cfe-124">Application</span></span> |   <span data-ttu-id="69cfe-125">Machine.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="69cfe-125">Machine.ReadWrite.All</span></span> | <span data-ttu-id="69cfe-126">"读取和写入所有计算机信息"</span><span class="sxs-lookup"><span data-stu-id="69cfe-126">'Read and write all machine information'</span></span>
+<span data-ttu-id="69cfe-127">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="69cfe-127">Delegated (work or school account)</span></span> | <span data-ttu-id="69cfe-128">Machine.Read</span><span class="sxs-lookup"><span data-stu-id="69cfe-128">Machine.Read</span></span> | <span data-ttu-id="69cfe-129">"读取计算机信息"</span><span class="sxs-lookup"><span data-stu-id="69cfe-129">'Read machine information'</span></span>
+<span data-ttu-id="69cfe-130">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="69cfe-130">Delegated (work or school account)</span></span> | <span data-ttu-id="69cfe-131">Machine.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="69cfe-131">Machine.ReadWrite</span></span> | <span data-ttu-id="69cfe-132">"读取和写入计算机信息"</span><span class="sxs-lookup"><span data-stu-id="69cfe-132">'Read and write machine information'</span></span>
 
 >[!Note]
-> <span data-ttu-id="c59e4-133">使用用户凭据获取令牌时：</span><span class="sxs-lookup"><span data-stu-id="c59e4-133">When obtaining a token using user credentials:</span></span>
->- <span data-ttu-id="c59e4-134">用户至少需要具有以下角色权限："查看数据"权限 (有关详细信息，请参阅创建和管理) [](user-roles.md)</span><span class="sxs-lookup"><span data-stu-id="c59e4-134">The user needs to have at least the following role permission: 'View Data' (See [Create and manage roles](user-roles.md) for more information)</span></span>
->- <span data-ttu-id="c59e4-135">用户需要具有与警报关联的设备的访问权限，根据设备组设置 (请参阅创建和管理 [设备](machine-groups.md) 组，了解) </span><span class="sxs-lookup"><span data-stu-id="c59e4-135">The user needs to have access to the device associated with the alert, based on device group settings (See [Create and manage device groups](machine-groups.md) for more information)</span></span>
+> <span data-ttu-id="69cfe-133">使用用户凭据获取令牌时：</span><span class="sxs-lookup"><span data-stu-id="69cfe-133">When obtaining a token using user credentials:</span></span>
+>- <span data-ttu-id="69cfe-134">用户至少需要具有以下角色权限："查看数据"权限 (有关详细信息，请参阅创建和管理) [](user-roles.md)</span><span class="sxs-lookup"><span data-stu-id="69cfe-134">The user needs to have at least the following role permission: 'View Data' (See [Create and manage roles](user-roles.md) for more information)</span></span>
+>- <span data-ttu-id="69cfe-135">用户需要具有与警报关联的设备的访问权限，根据设备组设置 (请参阅创建和管理 [设备](machine-groups.md) 组，了解) </span><span class="sxs-lookup"><span data-stu-id="69cfe-135">The user needs to have access to the device associated with the alert, based on device group settings (See [Create and manage device groups](machine-groups.md) for more information)</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="c59e4-136">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="c59e4-136">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="69cfe-136">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="69cfe-136">HTTP request</span></span>
 
 ```http
 GET /api/alerts/{id}/machine
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="c59e4-137">请求标头</span><span class="sxs-lookup"><span data-stu-id="c59e4-137">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="69cfe-137">请求标头</span><span class="sxs-lookup"><span data-stu-id="69cfe-137">Request headers</span></span>
 
-<span data-ttu-id="c59e4-138">名称</span><span class="sxs-lookup"><span data-stu-id="c59e4-138">Name</span></span> | <span data-ttu-id="c59e4-139">类型</span><span class="sxs-lookup"><span data-stu-id="c59e4-139">Type</span></span> | <span data-ttu-id="c59e4-140">说明</span><span class="sxs-lookup"><span data-stu-id="c59e4-140">Description</span></span>
+<span data-ttu-id="69cfe-138">名称</span><span class="sxs-lookup"><span data-stu-id="69cfe-138">Name</span></span> | <span data-ttu-id="69cfe-139">类型</span><span class="sxs-lookup"><span data-stu-id="69cfe-139">Type</span></span> | <span data-ttu-id="69cfe-140">说明</span><span class="sxs-lookup"><span data-stu-id="69cfe-140">Description</span></span>
 :---|:---|:---
-<span data-ttu-id="c59e4-141">Authorization</span><span class="sxs-lookup"><span data-stu-id="c59e4-141">Authorization</span></span> | <span data-ttu-id="c59e4-142">String</span><span class="sxs-lookup"><span data-stu-id="c59e4-142">String</span></span> | <span data-ttu-id="c59e4-143">Bearer {token}。</span><span class="sxs-lookup"><span data-stu-id="c59e4-143">Bearer {token}.</span></span> <span data-ttu-id="c59e4-144">**必需**。</span><span class="sxs-lookup"><span data-stu-id="c59e4-144">**Required**.</span></span>
+<span data-ttu-id="69cfe-141">Authorization</span><span class="sxs-lookup"><span data-stu-id="69cfe-141">Authorization</span></span> | <span data-ttu-id="69cfe-142">String</span><span class="sxs-lookup"><span data-stu-id="69cfe-142">String</span></span> | <span data-ttu-id="69cfe-143">Bearer {token}。</span><span class="sxs-lookup"><span data-stu-id="69cfe-143">Bearer {token}.</span></span> <span data-ttu-id="69cfe-144">**必需**。</span><span class="sxs-lookup"><span data-stu-id="69cfe-144">**Required**.</span></span>
 
 
-## <a name="request-body"></a><span data-ttu-id="c59e4-145">请求正文</span><span class="sxs-lookup"><span data-stu-id="c59e4-145">Request body</span></span>
-<span data-ttu-id="c59e4-146">Empty</span><span class="sxs-lookup"><span data-stu-id="c59e4-146">Empty</span></span>
+## <a name="request-body"></a><span data-ttu-id="69cfe-145">请求正文</span><span class="sxs-lookup"><span data-stu-id="69cfe-145">Request body</span></span>
+<span data-ttu-id="69cfe-146">Empty</span><span class="sxs-lookup"><span data-stu-id="69cfe-146">Empty</span></span>
 
-## <a name="response"></a><span data-ttu-id="c59e4-147">响应</span><span class="sxs-lookup"><span data-stu-id="c59e4-147">Response</span></span>
-<span data-ttu-id="c59e4-148">如果成功且警报和设备存在 - 200 正常。</span><span class="sxs-lookup"><span data-stu-id="c59e4-148">If successful and alert and device exist - 200 OK.</span></span> <span data-ttu-id="c59e4-149">如果未找到警报或未找到设备 - 404 未找到。</span><span class="sxs-lookup"><span data-stu-id="c59e4-149">If alert not found or device not found - 404 Not Found.</span></span>
+## <a name="response"></a><span data-ttu-id="69cfe-147">响应</span><span class="sxs-lookup"><span data-stu-id="69cfe-147">Response</span></span>
+<span data-ttu-id="69cfe-148">如果成功且警报和设备存在 - 200 正常。</span><span class="sxs-lookup"><span data-stu-id="69cfe-148">If successful and alert and device exist - 200 OK.</span></span> <span data-ttu-id="69cfe-149">如果未找到警报或未找到设备 - 404 未找到。</span><span class="sxs-lookup"><span data-stu-id="69cfe-149">If alert not found or device not found - 404 Not Found.</span></span>
 
-## <a name="example"></a><span data-ttu-id="c59e4-150">示例</span><span class="sxs-lookup"><span data-stu-id="c59e4-150">Example</span></span>
+## <a name="example"></a><span data-ttu-id="69cfe-150">示例</span><span class="sxs-lookup"><span data-stu-id="69cfe-150">Example</span></span>
 
-<span data-ttu-id="c59e4-151">**请求**</span><span class="sxs-lookup"><span data-stu-id="c59e4-151">**Request**</span></span>
+<span data-ttu-id="69cfe-151">**请求**</span><span class="sxs-lookup"><span data-stu-id="69cfe-151">**Request**</span></span>
 
-<span data-ttu-id="c59e4-152">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="c59e4-152">Here is an example of the request.</span></span>
+<span data-ttu-id="69cfe-152">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="69cfe-152">Here is an example of the request.</span></span>
 
 ```http
 GET https://api.securitycenter.microsoft.com/api/alerts/636688558380765161_2136280442/machine
 ```
 
-<span data-ttu-id="c59e4-153">**响应**</span><span class="sxs-lookup"><span data-stu-id="c59e4-153">**Response**</span></span>
+<span data-ttu-id="69cfe-153">**响应**</span><span class="sxs-lookup"><span data-stu-id="69cfe-153">**Response**</span></span>
 
-<span data-ttu-id="c59e4-154">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="c59e4-154">Here is an example of the response.</span></span>
+<span data-ttu-id="69cfe-154">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="69cfe-154">Here is an example of the response.</span></span>
 
 
 ```json

@@ -14,76 +14,77 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: 133a8525a2e561062a492f7148de97a77d37444e
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: ac7a9ef932f2640bbc5325f0154c0ceb48ae3018
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934317"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52772289"
 ---
-# <a name="get-discovered-vulnerabilities"></a><span data-ttu-id="16f4e-104">发现漏洞</span><span class="sxs-lookup"><span data-stu-id="16f4e-104">Get discovered vulnerabilities</span></span>
+# <a name="get-discovered-vulnerabilities"></a><span data-ttu-id="0f7e1-104">发现漏洞</span><span class="sxs-lookup"><span data-stu-id="0f7e1-104">Get discovered vulnerabilities</span></span>
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-<span data-ttu-id="16f4e-105">**适用于：**</span><span class="sxs-lookup"><span data-stu-id="16f4e-105">**Applies to:**</span></span>
-- [<span data-ttu-id="16f4e-106">Microsoft Defender for Endpoint</span><span class="sxs-lookup"><span data-stu-id="16f4e-106">Microsoft Defender for Endpoint</span></span>](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [<span data-ttu-id="16f4e-107">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="16f4e-107">Microsoft 365 Defender</span></span>](https://go.microsoft.com/fwlink/?linkid=2118804)
+<span data-ttu-id="0f7e1-105">**适用于：**</span><span class="sxs-lookup"><span data-stu-id="0f7e1-105">**Applies to:**</span></span>
+- [<span data-ttu-id="0f7e1-106">Microsoft Defender for Endpoint</span><span class="sxs-lookup"><span data-stu-id="0f7e1-106">Microsoft Defender for Endpoint</span></span>](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [<span data-ttu-id="0f7e1-107">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="0f7e1-107">Microsoft 365 Defender</span></span>](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> <span data-ttu-id="16f4e-108">想要体验 Microsoft Defender for Endpoint？</span><span class="sxs-lookup"><span data-stu-id="16f4e-108">Want to experience Microsoft Defender for Endpoint?</span></span> [<span data-ttu-id="16f4e-109">注册免费试用版。</span><span class="sxs-lookup"><span data-stu-id="16f4e-109">Sign up for a free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+> <span data-ttu-id="0f7e1-108">想要体验 Microsoft Defender for Endpoint？</span><span class="sxs-lookup"><span data-stu-id="0f7e1-108">Want to experience Microsoft Defender for Endpoint?</span></span> [<span data-ttu-id="0f7e1-109">注册免费试用版。</span><span class="sxs-lookup"><span data-stu-id="0f7e1-109">Sign up for a free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-## <a name="api-description"></a><span data-ttu-id="16f4e-110">API 说明</span><span class="sxs-lookup"><span data-stu-id="16f4e-110">API description</span></span>
-<span data-ttu-id="16f4e-111">检索与给定设备 ID 相关的已发现漏洞的集合。</span><span class="sxs-lookup"><span data-stu-id="16f4e-111">Retrieves a collection of discovered vulnerabilities related to a given device ID.</span></span>
+## <a name="api-description"></a><span data-ttu-id="0f7e1-110">API 说明</span><span class="sxs-lookup"><span data-stu-id="0f7e1-110">API description</span></span>
+<span data-ttu-id="0f7e1-111">检索与给定设备 ID 相关的已发现漏洞的集合。</span><span class="sxs-lookup"><span data-stu-id="0f7e1-111">Retrieves a collection of discovered vulnerabilities related to a given device ID.</span></span>
 
-## <a name="limitations"></a><span data-ttu-id="16f4e-112">限制</span><span class="sxs-lookup"><span data-stu-id="16f4e-112">Limitations</span></span>
-1. <span data-ttu-id="16f4e-113">此 API 的速率限制是每分钟 50 个调用和每小时 1500 个调用。</span><span class="sxs-lookup"><span data-stu-id="16f4e-113">Rate limitations for this API are 50 calls per minute and 1500 calls per hour.</span></span>
+## <a name="limitations"></a><span data-ttu-id="0f7e1-112">限制</span><span class="sxs-lookup"><span data-stu-id="0f7e1-112">Limitations</span></span>
+1. <span data-ttu-id="0f7e1-113">此 API 的速率限制是每分钟 50 个调用和每小时 1500 个调用。</span><span class="sxs-lookup"><span data-stu-id="0f7e1-113">Rate limitations for this API are 50 calls per minute and 1500 calls per hour.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="16f4e-114">权限</span><span class="sxs-lookup"><span data-stu-id="16f4e-114">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="0f7e1-114">权限</span><span class="sxs-lookup"><span data-stu-id="0f7e1-114">Permissions</span></span>
 
-<span data-ttu-id="16f4e-115">若要调用此 API，需要以下权限之一。</span><span class="sxs-lookup"><span data-stu-id="16f4e-115">One of the following permissions is required to call this API.</span></span> <span data-ttu-id="16f4e-116">若要了解更多信息（包括如何选择权限），请参阅使用 [Microsoft Defender for Endpoint API](apis-intro.md)</span><span class="sxs-lookup"><span data-stu-id="16f4e-116">To learn more, including how to choose permissions, see [Use Microsoft Defender for Endpoint APIs](apis-intro.md)</span></span>
+<span data-ttu-id="0f7e1-115">若要调用此 API，需要以下权限之一。</span><span class="sxs-lookup"><span data-stu-id="0f7e1-115">One of the following permissions is required to call this API.</span></span> <span data-ttu-id="0f7e1-116">若要了解更多信息（包括如何选择权限），请参阅使用 [Microsoft Defender for Endpoint API](apis-intro.md)</span><span class="sxs-lookup"><span data-stu-id="0f7e1-116">To learn more, including how to choose permissions, see [Use Microsoft Defender for Endpoint APIs](apis-intro.md)</span></span>
 
-<span data-ttu-id="16f4e-117">权限类型</span><span class="sxs-lookup"><span data-stu-id="16f4e-117">Permission type</span></span> | <span data-ttu-id="16f4e-118">权限</span><span class="sxs-lookup"><span data-stu-id="16f4e-118">Permission</span></span> | <span data-ttu-id="16f4e-119">权限显示名称</span><span class="sxs-lookup"><span data-stu-id="16f4e-119">Permission display name</span></span>
+<span data-ttu-id="0f7e1-117">权限类型</span><span class="sxs-lookup"><span data-stu-id="0f7e1-117">Permission type</span></span> | <span data-ttu-id="0f7e1-118">权限</span><span class="sxs-lookup"><span data-stu-id="0f7e1-118">Permission</span></span> | <span data-ttu-id="0f7e1-119">权限显示名称</span><span class="sxs-lookup"><span data-stu-id="0f7e1-119">Permission display name</span></span>
 :---|:---|:---
-<span data-ttu-id="16f4e-120">应用程序</span><span class="sxs-lookup"><span data-stu-id="16f4e-120">Application</span></span> |<span data-ttu-id="16f4e-121">Vulnerability.Read.All</span><span class="sxs-lookup"><span data-stu-id="16f4e-121">Vulnerability.Read.All</span></span> | <span data-ttu-id="16f4e-122">"读取威胁和漏洞管理漏洞信息"</span><span class="sxs-lookup"><span data-stu-id="16f4e-122">'Read Threat and Vulnerability Management vulnerability information'</span></span>
-<span data-ttu-id="16f4e-123">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="16f4e-123">Delegated (work or school account)</span></span> | <span data-ttu-id="16f4e-124">Vulnerability.Read</span><span class="sxs-lookup"><span data-stu-id="16f4e-124">Vulnerability.Read</span></span> | <span data-ttu-id="16f4e-125">"读取威胁和漏洞管理漏洞信息"</span><span class="sxs-lookup"><span data-stu-id="16f4e-125">'Read Threat and Vulnerability Management vulnerability information'</span></span>
+<span data-ttu-id="0f7e1-120">应用程序</span><span class="sxs-lookup"><span data-stu-id="0f7e1-120">Application</span></span> |<span data-ttu-id="0f7e1-121">Vulnerability.Read.All</span><span class="sxs-lookup"><span data-stu-id="0f7e1-121">Vulnerability.Read.All</span></span> | <span data-ttu-id="0f7e1-122">"读取威胁和漏洞管理漏洞信息"</span><span class="sxs-lookup"><span data-stu-id="0f7e1-122">'Read Threat and Vulnerability Management vulnerability information'</span></span>
+<span data-ttu-id="0f7e1-123">委派（工作或学校帐户）</span><span class="sxs-lookup"><span data-stu-id="0f7e1-123">Delegated (work or school account)</span></span> | <span data-ttu-id="0f7e1-124">Vulnerability.Read</span><span class="sxs-lookup"><span data-stu-id="0f7e1-124">Vulnerability.Read</span></span> | <span data-ttu-id="0f7e1-125">"读取威胁和漏洞管理漏洞信息"</span><span class="sxs-lookup"><span data-stu-id="0f7e1-125">'Read Threat and Vulnerability Management vulnerability information'</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="16f4e-126">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="16f4e-126">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="0f7e1-126">HTTP 请求</span><span class="sxs-lookup"><span data-stu-id="0f7e1-126">HTTP request</span></span>
 
 ```
 GET /api/machines/{machineId}/vulnerabilities
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="16f4e-127">请求标头</span><span class="sxs-lookup"><span data-stu-id="16f4e-127">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="0f7e1-127">请求标头</span><span class="sxs-lookup"><span data-stu-id="0f7e1-127">Request headers</span></span>
 
-<span data-ttu-id="16f4e-128">名称</span><span class="sxs-lookup"><span data-stu-id="16f4e-128">Name</span></span> | <span data-ttu-id="16f4e-129">类型</span><span class="sxs-lookup"><span data-stu-id="16f4e-129">Type</span></span> | <span data-ttu-id="16f4e-130">说明</span><span class="sxs-lookup"><span data-stu-id="16f4e-130">Description</span></span>
+<span data-ttu-id="0f7e1-128">名称</span><span class="sxs-lookup"><span data-stu-id="0f7e1-128">Name</span></span> | <span data-ttu-id="0f7e1-129">类型</span><span class="sxs-lookup"><span data-stu-id="0f7e1-129">Type</span></span> | <span data-ttu-id="0f7e1-130">说明</span><span class="sxs-lookup"><span data-stu-id="0f7e1-130">Description</span></span>
 :---|:---|:---
-<span data-ttu-id="16f4e-131">Authorization</span><span class="sxs-lookup"><span data-stu-id="16f4e-131">Authorization</span></span> | <span data-ttu-id="16f4e-132">String</span><span class="sxs-lookup"><span data-stu-id="16f4e-132">String</span></span> | <span data-ttu-id="16f4e-133">Bearer {token}。</span><span class="sxs-lookup"><span data-stu-id="16f4e-133">Bearer {token}.</span></span> <span data-ttu-id="16f4e-134">**必需**。</span><span class="sxs-lookup"><span data-stu-id="16f4e-134">**Required**.</span></span>
+<span data-ttu-id="0f7e1-131">Authorization</span><span class="sxs-lookup"><span data-stu-id="0f7e1-131">Authorization</span></span> | <span data-ttu-id="0f7e1-132">String</span><span class="sxs-lookup"><span data-stu-id="0f7e1-132">String</span></span> | <span data-ttu-id="0f7e1-133">Bearer {token}。</span><span class="sxs-lookup"><span data-stu-id="0f7e1-133">Bearer {token}.</span></span> <span data-ttu-id="0f7e1-134">**必需**。</span><span class="sxs-lookup"><span data-stu-id="0f7e1-134">**Required**.</span></span>
 
-## <a name="request-body"></a><span data-ttu-id="16f4e-135">请求正文</span><span class="sxs-lookup"><span data-stu-id="16f4e-135">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="0f7e1-135">请求正文</span><span class="sxs-lookup"><span data-stu-id="0f7e1-135">Request body</span></span>
 
-<span data-ttu-id="16f4e-136">Empty</span><span class="sxs-lookup"><span data-stu-id="16f4e-136">Empty</span></span>
+<span data-ttu-id="0f7e1-136">Empty</span><span class="sxs-lookup"><span data-stu-id="0f7e1-136">Empty</span></span>
 
-## <a name="response"></a><span data-ttu-id="16f4e-137">响应</span><span class="sxs-lookup"><span data-stu-id="16f4e-137">Response</span></span>
+## <a name="response"></a><span data-ttu-id="0f7e1-137">响应</span><span class="sxs-lookup"><span data-stu-id="0f7e1-137">Response</span></span>
 
-<span data-ttu-id="16f4e-138">如果成功，此方法在正文中返回 200 OK 和发现的漏洞信息。</span><span class="sxs-lookup"><span data-stu-id="16f4e-138">If successful, this method returns 200 OK with the discovered vulnerability information in the body.</span></span>
+<span data-ttu-id="0f7e1-138">如果成功，此方法在正文中返回 200 OK 和发现的漏洞信息。</span><span class="sxs-lookup"><span data-stu-id="0f7e1-138">If successful, this method returns 200 OK with the discovered vulnerability information in the body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="16f4e-139">示例</span><span class="sxs-lookup"><span data-stu-id="16f4e-139">Example</span></span>
+## <a name="example"></a><span data-ttu-id="0f7e1-139">示例</span><span class="sxs-lookup"><span data-stu-id="0f7e1-139">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="16f4e-140">请求</span><span class="sxs-lookup"><span data-stu-id="16f4e-140">Request</span></span>
+### <a name="request"></a><span data-ttu-id="0f7e1-140">请求</span><span class="sxs-lookup"><span data-stu-id="0f7e1-140">Request</span></span>
 
-<span data-ttu-id="16f4e-141">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="16f4e-141">Here is an example of the request.</span></span>
+<span data-ttu-id="0f7e1-141">下面是一个请求示例。</span><span class="sxs-lookup"><span data-stu-id="0f7e1-141">Here is an example of the request.</span></span>
 
 ```http
 GET https://api.securitycenter.microsoft.com/api/machines/ac233fa6208e1579620bf44207c4006ed7cc4501/vulnerabilities
 ```
 
-### <a name="response"></a><span data-ttu-id="16f4e-142">响应</span><span class="sxs-lookup"><span data-stu-id="16f4e-142">Response</span></span>
+### <a name="response"></a><span data-ttu-id="0f7e1-142">响应</span><span class="sxs-lookup"><span data-stu-id="0f7e1-142">Response</span></span>
 
-<span data-ttu-id="16f4e-143">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="16f4e-143">Here is an example of the response.</span></span>
+<span data-ttu-id="0f7e1-143">下面是一个响应示例。</span><span class="sxs-lookup"><span data-stu-id="0f7e1-143">Here is an example of the response.</span></span>
 
 ```json
 {
@@ -107,7 +108,7 @@ GET https://api.securitycenter.microsoft.com/api/machines/ac233fa6208e1579620bf4
 }
 ```
 
-## <a name="see-also"></a><span data-ttu-id="16f4e-144">另请参阅</span><span class="sxs-lookup"><span data-stu-id="16f4e-144">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="0f7e1-144">另请参阅</span><span class="sxs-lookup"><span data-stu-id="0f7e1-144">See also</span></span>
 
-- [<span data-ttu-id="16f4e-145">基于风险的威胁&漏洞管理</span><span class="sxs-lookup"><span data-stu-id="16f4e-145">Risk-based Threat & Vulnerability Management</span></span>](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
-- [<span data-ttu-id="16f4e-146">组织中漏洞</span><span class="sxs-lookup"><span data-stu-id="16f4e-146">Vulnerabilities in your organization</span></span>](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/tvm-weaknesses)
+- [<span data-ttu-id="0f7e1-145">基于风险的威胁&漏洞管理</span><span class="sxs-lookup"><span data-stu-id="0f7e1-145">Risk-based Threat & Vulnerability Management</span></span>](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
+- [<span data-ttu-id="0f7e1-146">组织中漏洞</span><span class="sxs-lookup"><span data-stu-id="0f7e1-146">Vulnerabilities in your organization</span></span>](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/tvm-weaknesses)
