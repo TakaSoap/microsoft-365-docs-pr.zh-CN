@@ -13,7 +13,7 @@
       href: architecture-icons-templates.md
 - name: Microsoft 365 基础解决方案
   items:
-    - name: 为远程工作设置基础结构。
+    - name: 设置混合作业的基础结构
       items:
         - name: 概述
           href: empower-people-to-work-remotely.md
@@ -27,7 +27,7 @@
           href: empower-people-to-work-remotely-manage-endpoints.md
         - name: 步骤 5. 部署生产力应用和服务
           href: empower-people-to-work-remotely-teams-productivity-apps.md
-        - name: 步骤 6. 培训远程员工
+        - name: 步骤 6。培训员工
           href: empower-people-to-work-remotely-train-monitor-usage.md
     - name: 与 Microsoft 365 建立安全协作
       items:
@@ -107,7 +107,7 @@
           href: tenant-management-networking.md
         - name: 步骤 3. 标识
           href: tenant-management-identity.md
-        - name: 步骤 4. 迁移
+        - name: 步骤 4。迁移
           href: tenant-management-migration.md
         - name: 步骤 5. 设备和应用管理
           href: tenant-management-device-management.md
@@ -225,7 +225,7 @@
       items:
         - name: 适用于 Contoso Corporation 的 Microsoft 365 解决方案
           href: contoso-case-study-solutions.md
-        - name: 为远程和现场办公提供对于 COVID-19 的响应措施和支持服务
+        - name: COVID-19 响应和支持混合工作
           href: contoso-remote-onsite-work.md
         - name: 负责最高机密项目的独立团队
           href: contoso-team-for-top-secret-project.md

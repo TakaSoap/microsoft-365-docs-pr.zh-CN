@@ -322,7 +322,7 @@
                   items:
                     - name: Microsoft 365流式处理 API
                       href: ../defender-endpoint/raw-data-export.md
-                    - name: 将高级搜寻事件流式传输至 Azure 事件中心
+                    - name: 将高级搜寻事件流式处理到 Azure 事件中心
                       href: ../defender-endpoint/raw-data-export-event-hub.md
                     - name: 将高级搜寻事件流式传输至存储账户
                       href: ../defender-endpoint/raw-data-export-storage.md
