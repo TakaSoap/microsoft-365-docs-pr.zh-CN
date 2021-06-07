@@ -16,27 +16,27 @@ manager: dansimp
 ms.technology: mde
 ms.topic: article
 ms.openlocfilehash: f7f9ae22081eb7c55cf35b08844b88230bd0b201
-ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
+ms.sourcegitcommit: 83df0be7144c9c5d606f70b4efa65369e86693d2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52571813"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52778303"
 ---
-# <a name="configure-end-user-interaction-with-microsoft-defender-antivirus"></a><span data-ttu-id="9ac95-104">配置最终用户与最终用户的Microsoft Defender 防病毒</span><span class="sxs-lookup"><span data-stu-id="9ac95-104">Configure end-user interaction with Microsoft Defender Antivirus</span></span>
+# <a name="configure-end-user-interaction-with-microsoft-defender-antivirus"></a><span data-ttu-id="8fc74-104">配置最终用户与最终用户的Microsoft Defender 防病毒</span><span class="sxs-lookup"><span data-stu-id="8fc74-104">Configure end-user interaction with Microsoft Defender Antivirus</span></span>
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-<span data-ttu-id="9ac95-105">**适用于：**</span><span class="sxs-lookup"><span data-stu-id="9ac95-105">**Applies to:**</span></span>
+<span data-ttu-id="8fc74-105">**适用于：**</span><span class="sxs-lookup"><span data-stu-id="8fc74-105">**Applies to:**</span></span>
 
-- [<span data-ttu-id="9ac95-106">Microsoft Defender for Endpoint</span><span class="sxs-lookup"><span data-stu-id="9ac95-106">Microsoft Defender for Endpoint</span></span>](/microsoft-365/security/defender-endpoint/)
+- [<span data-ttu-id="8fc74-106">Microsoft Defender for Endpoint</span><span class="sxs-lookup"><span data-stu-id="8fc74-106">Microsoft Defender for Endpoint</span></span>](/microsoft-365/security/defender-endpoint/)
 
-<span data-ttu-id="9ac95-107">可以配置网络上终结点的用户与用户Microsoft Defender 防病毒。</span><span class="sxs-lookup"><span data-stu-id="9ac95-107">You can configure how users of the endpoints on your network can interact with Microsoft Defender Antivirus.</span></span> <span data-ttu-id="9ac95-108">你可以配置用户是否看到Microsoft Defender 防病毒界面、他们看到的通知，以及是否可以本地覆盖全局部署的组策略设置。</span><span class="sxs-lookup"><span data-stu-id="9ac95-108">You can configure whether users see the Microsoft Defender Antivirus interface, what notifications they see, and if they can locally override globally deployed Group Policy settings.</span></span>
+<span data-ttu-id="8fc74-107">可以配置网络上终结点的用户与用户Microsoft Defender 防病毒。</span><span class="sxs-lookup"><span data-stu-id="8fc74-107">You can configure how users of the endpoints on your network can interact with Microsoft Defender Antivirus.</span></span> <span data-ttu-id="8fc74-108">你可以配置用户是否看到Microsoft Defender 防病毒界面、他们看到的通知，以及是否可以本地覆盖全局部署的组策略设置。</span><span class="sxs-lookup"><span data-stu-id="8fc74-108">You can configure whether users see the Microsoft Defender Antivirus interface, what notifications they see, and if they can locally override globally deployed Group Policy settings.</span></span>
 
-<span data-ttu-id="9ac95-109">使用以下文章配置最终用户与最终用户的Microsoft Defender 防病毒</span><span class="sxs-lookup"><span data-stu-id="9ac95-109">Use the following articles to configure end-user interaction with Microsoft Defender Antivirus</span></span>
+<span data-ttu-id="8fc74-109">使用以下文章配置最终用户与最终用户的Microsoft Defender 防病毒</span><span class="sxs-lookup"><span data-stu-id="8fc74-109">Use the following articles to configure end-user interaction with Microsoft Defender Antivirus</span></span>
 
-- <span data-ttu-id="9ac95-110">**[配置终结点上显示的通知](configure-notifications-microsoft-defender-antivirus.md)** 配置和自定义通知，包括通知文本，以及修正所需的重启通知。</span><span class="sxs-lookup"><span data-stu-id="9ac95-110">**[Configure notifications that appear on endpoints](configure-notifications-microsoft-defender-antivirus.md)** Configure and customize notifications, including text for notifications, and notifications about reboots that are needed for remediation.</span></span>
+- <span data-ttu-id="8fc74-110">**[配置终结点上显示的通知](configure-notifications-microsoft-defender-antivirus.md)** 配置和自定义通知，包括通知文本，以及修正所需的重启通知。</span><span class="sxs-lookup"><span data-stu-id="8fc74-110">**[Configure notifications that appear on endpoints](configure-notifications-microsoft-defender-antivirus.md)** Configure and customize notifications, including text for notifications, and notifications about reboots that are needed for remediation.</span></span>
 
-- <span data-ttu-id="9ac95-111">**[阻止用户查看或与用户界面Microsoft Defender 防病毒交互](prevent-end-user-interaction-microsoft-defender-antivirus.md)** 对 **最终用户&** 病毒和威胁防护用户界面。</span><span class="sxs-lookup"><span data-stu-id="9ac95-111">**[Prevent users from seeing or interacting with the Microsoft Defender Antivirus user interface](prevent-end-user-interaction-microsoft-defender-antivirus.md)** Hide the **Virus & threat protection** user interface from end users.</span></span>
+- <span data-ttu-id="8fc74-111">**[阻止用户查看或与用户界面Microsoft Defender 防病毒交互](prevent-end-user-interaction-microsoft-defender-antivirus.md)** 对 **最终用户&** 病毒和威胁防护用户界面。</span><span class="sxs-lookup"><span data-stu-id="8fc74-111">**[Prevent users from seeing or interacting with the Microsoft Defender Antivirus user interface](prevent-end-user-interaction-microsoft-defender-antivirus.md)** Hide the **Virus & threat protection** user interface from end users.</span></span>
 
-- <span data-ttu-id="9ac95-112">**[阻止用户在本地修改策略设置](configure-local-policy-overrides-microsoft-defender-antivirus.md)** 防止 (或) 用户覆盖其各个终结点上的策略设置。</span><span class="sxs-lookup"><span data-stu-id="9ac95-112">**[Prevent users from locally modifying policy settings](configure-local-policy-overrides-microsoft-defender-antivirus.md)** Prevent (or allow) users from overriding policy settings on their individual endpoints.</span></span>
+- <span data-ttu-id="8fc74-112">**[阻止用户在本地修改策略设置](configure-local-policy-overrides-microsoft-defender-antivirus.md)** 防止 (或) 用户覆盖其各个终结点上的策略设置。</span><span class="sxs-lookup"><span data-stu-id="8fc74-112">**[Prevent users from locally modifying policy settings](configure-local-policy-overrides-microsoft-defender-antivirus.md)** Prevent (or allow) users from overriding policy settings on their individual endpoints.</span></span>
