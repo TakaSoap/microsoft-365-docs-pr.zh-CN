@@ -17,19 +17,19 @@ search.appverid:
 - SPO160
 - MET150
 description: 本文介绍了如何使用门户启动计划程序启动门户
-ms.openlocfilehash: ac55a5b0cc9d252642c890b78ccec1ba720f0957
-ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
+ms.openlocfilehash: e77668b3c21b43de1a2e30dc7181842770a24784
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/03/2021
-ms.locfileid: "52730254"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52769199"
 ---
 # <a name="launch-your-portal-using-the-sharepoint-portal-launch-scheduler"></a>使用门户启动计划SharePoint启动门户
 
 门户是 Intranet 上高流量的 SharePoint 通信网站，在几周内拥有 10，000 到 100，000 多个查看者的网站。 使用门户启动计划程序启动门户，以确保用户在访问新的门户时具有流畅的SharePoint体验。
 <br>
 <br>
-门户启动计划程序旨在帮助你遵循分阶段推出方法，方法是分批对查看者进行批处理，并管理新门户的 URL 重定向。 在每个波的启动过程中，你可以收集用户反馈、监视门户性能，并暂停启动以解决问题，然后再继续下一波。 详细了解如何在 SharePoint 中[规划门户SharePoint。](https://docs.microsoft.com/microsoft-365/Enterprise/Planportallaunchroll-out?view=o365-worldwide) 
+门户启动计划程序旨在帮助你遵循分阶段推出方法，方法是分批对查看者进行批处理，并管理新门户的 URL 重定向。 在每个波的启动过程中，你可以收集用户反馈、监视门户性能，并暂停启动以解决问题，然后再继续下一波。 详细了解如何在 SharePoint 中[规划门户SharePoint。](/microsoft-365/Enterprise/Planportallaunchroll-out?view=o365-worldwide) 
 
 **有两种类型的重定向：**
 
@@ -116,28 +116,30 @@ ms.locfileid: "52730254"
 
 7. 确定需要马上查看网站的用户，并输入其信息到"免受波形影响的用户 **"** 字段中。 这些用户被从波形中排除，并且不会在启动之前、期间或之后重定向。
 
+    >[!NOTE]
+    > 最多可以添加 50 个不同的用户或安全组。 当需要超过 50 个人才能在波形开始启动之前访问门户时，请使用安全组。 
+
 8.  确认门户启动详细信息，然后选择 **计划**。 计划启动后，对 SharePoint 门户主页的任何更改都需要在门户启动恢复之前收到正常的诊断结果。
 
-### <a name="launch-portal-with-over-100k-users"></a>拥有 10 万多个用户的启动门户
+### <a name="launch-a-portal-with-over-100k-users"></a>启动具有超过 10 万个用户的门户
 
-如果计划启动拥有 100，000 多个用户的门户，请按照下面列出的步骤提交支持请求。 请确保包含所有请求的信息。
+如果计划启动拥有 100，000 多个用户的门户，请按照下面列出的步骤提交支持请求。 确保包含所有请求的信息。
 
-请按以下步骤操作：
-1. 导航到 https://admin.microsoft.com
-2. 确保你使用的是新管理中心预览。
-3. 在左侧导航窗格中，选择“支持”，然后选择“新建服务请求”。 
-
+**请按以下步骤操作：**
+1. 转到 https://admin.microsoft.com
+2. 确保使用的是新的管理中心预览版
+3. 在左侧导航窗格中，选择" **支持**"，然后选择" **新建服务请求"**
 
    这将激活屏幕右侧的“**需要帮助?**”窗格。
 
-4.  In the **Briefly describe your issue** area， enter "launch SharePoint Portal with 100k users".</br>
-5. 选择“联系支持人员”。
-6. 在 **"说明**"下，输入"SharePoint 100，000 个用户启动门户"。 
-7. 填写其余信息，然后选择“与我联系”。
+4. For **Briefly describe your issue，** enter "Launch SharePoint Portal with 100k users"</br>
+5. 然后，选择 **"联系支持人员"**
+6. 在 **"说明**"下，输入"SharePoint 100，000 个用户启动门户"
+7. 填写其余信息，然后选择" **联系我"**
 8. 创建票证后，请确保向支持专员提供以下信息：
-- 启动门户 URL 的 
-- 预期用户数
-- 预计启动时间 
+   - 门户 URL 的 
+   - 预期用户数
+   - 估计的启动计划
 
 ## <a name="make-changes-to-a-scheduled-portal-launch"></a>对计划的门户启动进行更改
 

@@ -1,6 +1,6 @@
 ---
-title: Stream Microsoft 365 Defender 事件
-description: 了解如何配置 Microsoft 365 Defender 以将高级搜寻事件流式传输至事件中心或 Azure 存储帐户
+title: Stream Microsoft Defender for Endpoint 事件
+description: 了解如何配置 Microsoft Defender for Endpoint 以将高级搜寻事件流式传输至事件中心或 Azure 存储帐户
 keywords: 原始数据导出， 流式 API， API， 事件中心， Azure 存储， 存储帐户， 高级搜寻， 原始数据共享
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -16,37 +16,39 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 0c25ec8bc88a2714fb2f02ef8641c3eae700efe0
-ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
+ms.custom: api
+ms.openlocfilehash: 3e6d4df1c2c0f4934de1e8a54e8c1676aae230e3
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/03/2021
-ms.locfileid: "52730686"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52771617"
 ---
-# <a name="streaming-api"></a>流式处理 API
+# <a name="raw-data-streaming-api"></a>原始数据流式处理 API
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **适用于：**
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-[!include[Prerelease information](../../includes/prerelease.md)]
+> 想要体验适用于终结点的 Defender？ [注册免费试用版。](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-configuresiem-abovefoldlink) 
 
 ## <a name="stream-advanced-hunting-events-to-event-hubs-andor-azure-storage-account"></a>将高级搜寻事件流式传输至事件中心和/或 Azure 存储帐户。
 
-Microsoft 365Defender 支持将高级搜寻提供的所有事件流式[处理到事件](../defender/advanced-hunting-overview.md)中心和/或[Azure 存储帐户](/azure/event-hubs/)。 [](/azure/event-hubs/)
+Defender for Endpoint 支持将高级搜寻提供的所有事件流式[](/azure/event-hubs/)[处理到事件](advanced-hunting-overview.md)中心和/或[Azure 存储帐户](/azure/event-hubs/)。
 
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4r4ga]
 
 
 ## <a name="in-this-section"></a>本节内容
 
 主题 | 说明
 :---|:---
-[将事件流式处理到 Azure 事件中心](raw-data-export-event-hub.md)| 了解如何在租户中启用流式处理 API，并配置 Microsoft 365 Defender 以将[高级](../defender/advanced-hunting-overview.md)搜寻流式传输至事件中心。
-[将事件流式处理到 Azure 存储帐户](raw-data-export-storage.md)| 了解如何在租户中启用流式处理 API，并配置 Microsoft 365 Defender 以将[高级](../defender/advanced-hunting-overview.md)搜寻流式传输至 Azure 存储帐户。
+[将 Microsoft Defender for Endpoint 事件流式处理到 Azure 事件中心](raw-data-export-event-hub.md)| 了解如何在租户中启用流式处理 API，并配置 Defender for Endpoint 以将 [高级搜寻](advanced-hunting-overview.md) 流式传输至事件中心。
+[Stream Defender for Endpoint 事件到 Azure 存储帐户](raw-data-export-storage.md)| 了解如何在租户中启用流式处理 API，并配置 Defender for Endpoint 以将 [高级搜寻](advanced-hunting-overview.md) 流式传输至 Azure 存储帐户。
 
 
 ## <a name="related-topics"></a>相关主题
-- [高级搜寻概述](../defender/advanced-hunting-overview.md)
+- [高级搜寻概述](advanced-hunting-overview.md)
 - [Azure 事件中心文档](/azure/event-hubs/)
 - [Azure 存储帐户文档](/azure/storage/common/storage-account-overview)

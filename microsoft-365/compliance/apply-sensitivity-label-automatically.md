@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 创建敏感度标签时，你可以自动为文档或电子邮件分配标签，也可以提示用户选择你建议的标签。
-ms.openlocfilehash: d7559e5fa75db1fb23592dec1a3a5f35bad603df
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 4c39e5895c3315d77d7bfc211f0ba3e65f06659b
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538528"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52769289"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>将敏感度标签自动应用于内容
 
@@ -93,7 +93,7 @@ ms.locfileid: "52538528"
 |根据条件检查 Exchange 附件|否 | 是|
 |应用视觉标记 |是 |是（仅限电子邮件） |
 |覆盖在未带标签的情况下应用的 IRM 加密|如果用户具有“导出”的最低使用权限，则为“是” |是（仅限电子邮件） |
-|标记传入电子邮件|否 |是（未应用加密） |
+|标记传入电子邮件|否 |是|
 
 \*自动标记当前在所有区域中均不可用。 如果你的租户不支持此功能，则管理员标记中心中的“自动标记”选项卡将不可见。
 

@@ -19,12 +19,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
-ms.openlocfilehash: e7cecd645d857a5c2d5e7a98c78bd3f39b68449d
-ms.sourcegitcommit: ddf6c25d1ed6387d07614f7042e033bad7f406f9
+ms.openlocfilehash: 487fc87c613d7321e3ae608097d98d2c90f8874e
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "52639400"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52771905"
 ---
 # <a name="microsoft-defender-for-endpoint-in-the-microsoft-365-security-center"></a>安全中心中的 Microsoft Defender Microsoft 365终结点
 
@@ -51,7 +51,7 @@ ms.locfileid: "52639400"
 | 警报队列 | 事件&警报 |
 | 自动调查 | 操作中心 |
 | 高级搜寻 | 搜寻 |
-| 报告 | 报告 |
+| 报表 | 报表 |
 | 合作伙伴& API | 合作伙伴& API |
 | 威胁&漏洞管理 | 漏洞管理 |
 | 评估和教程 | 评估&教程 |
@@ -116,7 +116,7 @@ Microsoft 365安全中心中的 Microsoft Defender for Endpoint 支持以在 Mic
 
 | 领域 | 更改说明 |
 |---------|---------|
-| 报告  | 请参阅终结点和电子邮件报告&协作，包括威胁防护、设备运行状况和合规性以及易受攻击的设备。 |
+| 报表  | 请参阅终结点和电子邮件报告&协作，包括威胁防护、设备运行状况和合规性以及易受攻击的设备。 |
 | 健康  |  当前链接到管理中心 中的"服务运行状况["Microsoft 365页面](https://admin.microsoft.com/)。 |
 | 设置 |  管理安全中心、Microsoft 365 Defender、Microsoft 365、电子邮件&协作、标识和设备发现的设置。   |
 
@@ -177,6 +177,10 @@ Microsoft 365安全中心中的 Microsoft Defender for Endpoint 支持以在 Mic
 ### <a name="email-alerts"></a>电子邮件警报
 
 你可以继续使用 Defender for Endpoint 的电子邮件警报。 我们已在电子邮件中添加指向安全中心内警报页面或事件Microsoft 365链接。 有关详细信息，请参阅将帐户从[Microsoft Defender for Endpoint 重定向到Microsoft 365中心](./microsoft-365-security-mde-redirection.md)。
+
+### <a name="managed-security-service-providers-mssp"></a>MSSP (托管安全服务) 
+
+统一门户当前不支持在同一浏览会话中同时登录到多个租户。 可以通过还原到以前的 Microsoft Defender for [Endpoint](microsoft-365-security-mde-redirection.md#can-i-go-back-to-using-the-former-portal)门户来选择退出自动重定向，以维护此功能，直到问题得到解决为止。
 
 ## <a name="related-information"></a>相关信息
 

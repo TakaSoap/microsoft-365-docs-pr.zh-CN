@@ -14,13 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: bbd908c15f4d65d4923c088261c92de6d2d3cc35
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: 75b62f1bada67c30dc05237a284f8b64c3c7072d
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51187056"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52771377"
 ---
 # <a name="indicator-resource-type"></a>指示器资源类型
 
@@ -65,7 +66,7 @@ expirationTime | DateTimeOffset | 指示器的过期时间。
 lastUpdateTime | DateTimeOffset | 上次更新指示器的时间。
 severity | 枚举 | 指示器的严重性。 可能的值包括："Informational"、"Low"、"Medium"和"High"。
 title | String | 指示器标题。
-说明 | String | 指示器的说明。
+description | String | 指示器的说明。
 recommendedActions | String | 指示器的建议操作。
 rbacGroupNames | 字符串列表 | RBAC 设备组名称，其中指示器已公开且处于活动状态。 空列表，以防它向所有设备公开。
 

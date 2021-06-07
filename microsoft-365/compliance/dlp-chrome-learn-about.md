@@ -1,5 +1,5 @@
 ---
-title: 了解 Microsoft 合规性扩展（预览版）
+title: 了解 Microsoft 合规性扩展
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -18,15 +18,15 @@ ms.collection:
 - m365initiative-compliance
 search.appverid:
 - MET150
-description: Microsoft 合规性扩展可扩展对文件活动的监视和控制，并扩展对 Google Chrome 浏览器的保护操作
-ms.openlocfilehash: c8a5795b3be8b393fd3a934504449bf6db0c2f01
-ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
+description: Microsoft 合规性扩展可扩展对 Google Chrome 浏览器文件活动和保护操作的监视和控制
+ms.openlocfilehash: b8d9be88f42cce736cdbf66a97f4363106fa5820
+ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52113378"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "52730482"
 ---
-# <a name="learn-about-the-microsoft-compliance-extension-preview"></a>了解 Microsoft 合规性扩展（预览版）
+# <a name="learn-about-the-microsoft-compliance-extension"></a>了解 Microsoft 合规性扩展
 
 [终结点数据丢失防护（终结点 DLP）](endpoint-dlp-learn-about.md) 将[Microsoft 365 数据丢失防护 (DLP)](dlp-learn-about-dlp.md) 的活动监视和保护功能扩展到 Windows 10 设备上的敏感项目。 将设备加入 Microsoft 365 合规性解决方案中后，即可在[活动资源管理器](data-classification-activity-explorer.md)中看到有关用户对敏感项目执行的操作的信息，你可以通过 [DLP 策略](create-test-tune-dlp-policy.md)对这些项目执行保护性操作。
 

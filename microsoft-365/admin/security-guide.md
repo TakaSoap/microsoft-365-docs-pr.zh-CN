@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 了解企业面临的安全威胁以及你和员工保护数据、帐户和设备简单的方式。
-ms.openlocfilehash: 383b7245dc0cf2df713d4aa282a80b7481e7dd81
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 2f7509044e785350c2703f8578d7859dc4f049f7
+ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51579130"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52782425"
 ---
 # <a name="security-info-graphic-for-small-businesses"></a>小型企业的安全信息图形
 
@@ -32,4 +32,4 @@ ms.locfileid: "51579130"
 
 ![用于保护小型企业信息图形的图像](../media/smbthreatprotectioninfographic-thumbnail.png)
 
-[PDF](downloads/smbthreatprotection-infographic.pdf)  | [PowerPoint](https://github.com/MicrosoftDocs/microsoft-365-docs-pr/raw/live/m365-democracy/microsoft-365/admin/downloads/smbthreatprotection-infographic.pptx)
+[PDF](downloads/smbthreatprotection-infographic.pdf)  | [PowerPoint](downloads/smbthreatprotection-infographic.pptx)

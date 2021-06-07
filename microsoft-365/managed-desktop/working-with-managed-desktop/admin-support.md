@@ -9,38 +9,38 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 5e614581ee76d1f8cb026345f1c31ed22faafb8a
-ms.sourcegitcommit: d3c1b08b3a8af29ef19ffe77da063920f28fe290
+ms.openlocfilehash: d35ab0f4e99d466d283d49e0f51f8e868691b9a9
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "50572624"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52771737"
 ---
 # <a name="admin-support-for-microsoft-managed-desktop"></a>Microsoft 托管桌面的管理员支持
 
-可以使用 Microsoft 托管桌面管理门户向 Microsoft 提交支持票证或反馈请求。 支持请求始终优先处理反馈提交。 根据严重性定义表 中列出的严重性对支持请求进行会审 [和管理](#sev)。 将审核反馈，以及请求时提供的响应。 
+可以使用管理门户向 Microsoft 提交支持票证Microsoft 托管桌面反馈请求。 支持请求始终优先处理反馈提交。 根据严重性定义表 中列出的严重性对支持请求进行会审 [和管理](#sev)。 将审核反馈，以及请求时提供的响应。 
 
 >[!IMPORTANT]
 >请确保为 [应用打包、](../get-started/add-admin-contacts.md) 设备、安全和其他设置管理员联系人。 如果未配置管理员联系人，则你无法在任何这些方面提交支持请求。
 
 **提交支持请求**
-1. 登录到 [Microsoft Endpoint Manager](https://endpoint.microsoft.com/) 并导航到疑 **难解答 + 支持** 菜单。
-2. 查找"Microsoft 托管桌面"部分，选择"**服务请求"。**
+1. 登录到 ["Microsoft Endpoint Manager](https://endpoint.microsoft.com/)并导航到"**租户管理"** 菜单。
+2. 查找"服务Microsoft 托管桌面，选择"**服务请求"。**
 3. 在 **"支持请求"上**，选择 **"+ 新支持票证"。**
 4. 选择 **与你需要的帮助** 匹配的支持请求类型。 下表概述了这些选项。 
 5. 选择 **"严重性级别"。** 有关详细信息，请参阅支持 [请求严重性定义](#sev)。 
 
 支持请求类型 | 何时使用
 --- | ---
-事件 | 需要 Microsoft 托管桌面操作团队进行调查，如变更或服务中断的广泛影响。
-信息请求 | 你正在计划更改网络、代理配置、VPN 系统、证书过期，或者只需有关服务的一些信息。 在组织中传达更改时，建议 Microsoft 托管桌面操作团队做出响应。
-更改请求 | 需要 Microsoft 托管桌面操作团队做出更改，如在更新组之间移动设备。
+事件 | 需要由Microsoft 托管桌面团队进行调查，如变更或服务中断的广泛使用。
+信息请求 | 你正在计划更改网络、代理配置、VPN 系统、证书过期，或者只需有关服务的一些信息。 在组织内部Microsoft 托管桌面更改时，建议来自运营团队的响应。
+更改请求 | 你需要让Microsoft 托管桌面团队做出更改，如在更新组之间移动设备。
 
 <span id="sev" />
 
 ## <a name="support-request-severity-definitions"></a>支持请求严重性定义
 
-初始响应时间是从你提交支持请求到 Microsoft 托管桌面工程师联系你并开始处理支持请求的时间段。 初始响应时间因请求的业务影响而异，具体视请求严重性而异。
+初始响应时间是从你提交支持请求到你的Microsoft 托管桌面联系你并开始处理支持请求的时间段。 初始响应时间因请求的业务影响而异，具体视请求严重性而异。
 
 严重级别  | 客户情况 |  初始响应时间   | 预期的客户响应
 --- | --- | --- | ---
@@ -52,7 +52,7 @@ ms.locfileid: "50572624"
 - **支持语言** - 所有支持均以英语提供。
 - **严重性级别更改** - 如果客户无法提供足够的资源或响应以使 Microsoft 能够继续进行问题解决工作，Microsoft 可能会降级严重性级别。 
 - **营业时间** - 对于大多数国家/地区，营业时间为太平洋标准时间上午 9：00 到下午 5：00。
-- **应用程序** 兼容性 - 若要考虑应用程序兼容性问题，在以前和当前版本的 Windows 或 Office 之间，必须存在同一版本的应用程序的可重现错误。 若要解决应用程序兼容性问题，Microsoft 需要与客户联系联系。 个人必须直接与我们的 Fast Track 团队合作以调查和解决问题。
+- **应用程序** 兼容性 - 若要考虑应用程序兼容性问题，必须在早期版本或当前版本的应用程序或应用程序版本之间出现相同版本的Windows Office。 若要解决应用程序兼容性问题，Microsoft 需要与客户联系联系。 个人必须直接与我们的 Fast Track 团队合作以调查和解决问题。
 - **客户响应时间** 如果客户无法满足预期的响应要求，Microsoft 将按一个严重性级别将请求降级为最低严重性 C。如果客户对行动请求没有响应，Microsoft 将在上一个请求的 48 小时内缓解并关闭支持请求。
 
 ## <a name="provide-feedback"></a>提供反馈
@@ -66,6 +66,6 @@ ms.locfileid: "50572624"
 
 
 ## <a name="more-resources"></a>更多资源
-- [Microsoft 托管桌面的用户支持](end-user-support.md)。 
-- [支持 Microsoft 托管桌面](../service-description/support.md)。 
-- 如果你已订阅 Microsoft 托管桌面，可以在 Microsoft Endpoint [Manager](https://endpoint.microsoft.com/)中"租户管理"菜单的"Microsoft 托管桌面"部分下的"联机资源"页面的"Microsoft 托管桌面管理指南"中查找详细过程、流程流、工作说明和常见问题解答。 
+- [用户对 Microsoft 托管桌面](end-user-support.md)的支持。 
+- [支持Microsoft 托管桌面](../service-description/support.md)。 
+- 如果已订阅 Microsoft 托管桌面，可以在 Microsoft Endpoint Manager 中"租户管理"菜单的"Microsoft 托管桌面"部分下的"Microsoft 托管桌面 管理指南"中的"Microsoft 托管桌面 管理指南"中查找详细过程、流程流、工作说明[和常见问题](https://endpoint.microsoft.com/)解答。

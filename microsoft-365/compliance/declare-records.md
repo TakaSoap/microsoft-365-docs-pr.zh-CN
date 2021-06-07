@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用保留标签声明记录。
-ms.openlocfilehash: fd88858c8d5cd1870f594050607b784a9dc5b78c
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: fed988d2f880e4c0af1321cfb6ef4a873bd4e7ab
+ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50925658"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "52730542"
 ---
 # <a name="declare-records-by-using-retention-labels"></a>使用保留标签声明记录
 
@@ -54,7 +54,7 @@ ms.locfileid: "50925658"
 
 ## <a name="configuring-retention-labels-to-declare-records"></a>配置保留标签以声明记录
 
-从 Microsoft 365 合规中心的 **记录管理** 解决方案中创建或编辑保留标签时，可选择将项目标记为记录。 如果按照上一节运行 PowerShell 命令，可将项目标记为合规性记录。
+从 Microsoft 365 合规中心的 **记录管理** 解决方案中创建保留标签时，可选择将项目标记为记录。 如果按照上一节运行 PowerShell 命令，可将项目标记为合规性记录。
 
 例如：
 

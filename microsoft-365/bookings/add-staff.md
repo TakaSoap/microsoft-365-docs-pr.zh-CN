@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: bookings
 localization_priority: Normal
 description: 使用此页面创建员工列表并管理员工详细信息，例如姓名、电话号码和电子邮件地址。
-ms.openlocfilehash: 7fd19e3281b3dc075b5f72ca0471f5c66f93752d
-ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
+ms.openlocfilehash: 23757c492986936125eff1203e6a99231164da22
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52683315"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52768941"
 ---
 # <a name="add-staff-to-bookings"></a>向 Bookings 添加员工
 
@@ -23,7 +23,7 @@ Bookings 中的"员工"页面是创建员工列表和管理员工详细信息（
 
 尽管 Bookings 是一项Microsoft 365功能，但并非所有员工成员都需要拥有一个Microsoft 365帐户。 所有员工都必须具有有效的电子邮件地址，以便他们可以接收预订和计划更改。
 
-## <a name="watch-add-your-staff-in-microsoft-bookings"></a>观看：在 Microsoft Bookings 中添加员工
+## <a name="watch-add-your-staff-to-bookings"></a>观看：将员工添加到 Bookings
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWuVka]
 
@@ -67,14 +67,39 @@ Bookings 中的"员工"页面是创建员工列表和管理员工详细信息（
     > [!NOTE]
     > 在向服务分配员工时，只会显示添加到员工页面的前 31 名员工。
 
-## <a name="next-steps"></a>后续步骤
+## <a name="make-a-bookings-user-a-super-user-without-adding-them-as-staff-in-bookings"></a>使 Bookings 用户成为超级用户，而不将用户添加为 Bookings 中的 Staff
 
-添加员工后，可以安排公司关闭和请 [假](schedule-closures-time-off-vacation.md) ， [并设置日程安排策略](set-scheduling-policies.md)。
+你可能想要在 Bookings 中将人员添加到员工列表中，而不向客户或客户提供此人。 一旦使他们成为超级用户，他们将成为预订邮箱的管理员。 作为预订邮箱管理员的定义是拥有对预订邮箱的完全访问权限和发送权限。
 
-## <a name="related-content"></a>相关内容
+> [!NOTE]
+> 这些步骤仅在所添加的用户尚未在 Bookings 中 **分配查看者** 角色时运行。
 
-[Microsoft Bookings](bookings-overview.md)
+1. [连接 PowerShell Microsoft 365 。](/office365/enterprise/powershell/connect-to-office-365-powershell#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)
 
-[安排公司关闭、休假和休假时间](schedule-closures-time-off-vacation.md)
+2. 使用 PowerShell，通过以下命令分配完全访问权限：
 
-[设置日程安排策略](set-scheduling-policies.md)
+    ```powershell
+    Add-MailboxPermission -Identity <bookingmailbox@emailaddress> -User <adminusers@emailaddress> -AccessRights FullAccess -Deny:$false
+    ```
+
+3. 然后运行此命令以分配发送为权限。
+
+    ```powershell
+    Add-RecipientPermission -Identity <bookingmailbox@emailaddress> -Trustee <adminusers@emailaddress> -AccessRights SendAs -Confirm:$false
+    ```
+
+下面是一个将 Allie Bellew 添加到 Contoso 医疗保健预订邮箱的示例 PowerShell 命令。
+
+1. 首先运行此命令：
+
+    ```powershell
+    Add-MailboxPermission -Identity "daycare@contoso.com" -User "Allie Bellew" -AccessRights FullAccess -InheritanceType All
+    ```
+
+2. 然后运行此命令：
+
+    ```powershell
+    Add-RecipientPermission -Identity <bookingmailbox@emailaddress> -Trustee <adminusers@emailaddress> -AccessRights SendAs -Confirm:$false
+    ```
+
+**Allie Bellew** 现在具有管理员访问权限，但在 Bookings 中不会显示为可预订员工。

@@ -1,5 +1,5 @@
 ---
-title: 已报告邮件的管理员审阅
+title: 管理员审阅报告邮件
 f1.keywords:
 - NOCSH
 ms.author: dansimp
@@ -13,14 +13,14 @@ ms.collection:
 description: 了解如何查看报告的消息，并为用户提供反馈。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 619cd35b6a60f0d50aa6c13e4cad2b8d7ae947a8
-ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
+ms.openlocfilehash: 7386f5b283e2bfabb76eee91d33dfda0e42ec7b1
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/03/2021
-ms.locfileid: "52730951"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52769121"
 ---
-# <a name="admin-review-for-reported-messages"></a>已报告邮件的管理员审阅
+# <a name="admin-review-for-reported-messages"></a>管理员审阅报告邮件
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -40,12 +40,12 @@ ms.locfileid: "52730951"
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>开始前，有必要了解什么？
 
 - 若要修改用户提交的配置，你需要是以下角色组之一的成员：
-    - 安全中心中的组织管理或 [安全管理员](permissions-microsoft-365-compliance-security.md)。
-    - 中的组织[Exchange Online。](/Exchange/permissions-exo/permissions-exo)
+  - 组织管理或安全中心[Microsoft 365管理员](permissions-microsoft-365-security-center.md)。
+  - 中的组织[Exchange Online。](/Exchange/permissions-exo/permissions-exo)
 
 - 你还需要访问 PowerShell Exchange Online权限。 如果您尝试使用的帐户无法访问 Exchange Online PowerShell，您将收到错误消息，指出"在域中指定 *电子邮件地址"。* 有关启用或禁用对 PowerShell Exchange Online，请参阅下列主题：
-    - [启用或禁用对 Exchange Online PowerShell 的访问](/powershell/exchange/disable-access-to-exchange-online-powershell)
-    - [客户端访问规则Exchange Online](/exchange/clients-and-mobile-in-exchange-online/client-access-rules/client-access-rules)
+  - [启用或禁用对 Exchange Online PowerShell 的访问](/powershell/exchange/disable-access-to-exchange-online-powershell)
+  - [客户端访问规则Exchange Online](/exchange/clients-and-mobile-in-exchange-online/client-access-rules/client-access-rules)
 
 ## <a name="configure-the-messages-used-to-notify-users"></a>配置用于通知用户的消息
 

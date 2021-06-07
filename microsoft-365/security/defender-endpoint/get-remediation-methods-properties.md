@@ -14,13 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: 4c0ecd89c45ec2c91dc37f0c9cd0bfb868c0474e
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: 67009961ecc3755b5af21b2e773bc817ea46bec0
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245536"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52769229"
 ---
 # <a name="remediation-activity-methods-and-properties"></a>修正活动方法和属性
 
@@ -60,7 +61,7 @@ completerEmail | String | 如果修正活动是由某人手动完成的，此列
 completerId | String | 如果修正活动是由某人手动完成的，则此列包含其对象 ID
 completionMethod | String | 如果由 (选择"标记为已完成") 或"手动"修补所有设备，则修正活动可以"自动"完成。
 createdOn | 日期时间 | 创建此修正活动的时间
-说明 | String | 此修正活动的说明
+description | String | 此修正活动的说明
 dueOn | 日期时间 | 此修正活动的创建者设置的截止日期
 fixedDevices |  | 已修复的设备数量
 id | String | 此修正活动的 ID

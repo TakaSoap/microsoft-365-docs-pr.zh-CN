@@ -14,13 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: 42bab0a9d20d5e1ef78b98b3538cef209240d890
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: ce0dc0ce255e9717082687bd1f8bf5941739261d
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51187068"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52771701"
 ---
 # <a name="submit-or-update-indicator-api"></a>提交或更新指示器 API
 
@@ -78,7 +79,7 @@ indicatorType | 枚举 | 指示器的类型。 可能的值是："FileSha1"、"F
 action | 枚举 | 如果在组织中发现指示器，将采取的操作。 可能的值是："Alert"、"AlertAndBlock"和"Allowed"。 **Required**
 应用程序 | String | 与指示器关联的应用程序。 **可选**
 title | String | 指示器警报标题。 **Required**
-说明 | String | 指示器的说明。 **Required**
+description | String | 指示器的说明。 **Required**
 expirationTime | DateTimeOffset | 指示器的过期时间。 **可选**
 severity | 枚举 | 指示器的严重性。 可能的值包括："Informational"、"Low"、"Medium"和"High"。 **可选**
 recommendedActions | String | TI 指示器警报建议操作。 **可选**

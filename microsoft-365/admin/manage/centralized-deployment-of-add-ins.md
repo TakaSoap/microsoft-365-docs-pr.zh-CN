@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: b4527d49-4073-4b43-8274-31b7a3166f92
 description: 确定租户和用户是否满足要求，以便可以使用集中部署Office加载项。
-ms.openlocfilehash: 25fe217a41274b6a239e4ee482ee105238465999
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: 63775ed6bab2d595ae87085e1607be5818b355e2
+ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52635446"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52782482"
 ---
 # <a name="determine-if-centralized-deployment-of-add-ins-works-for-your-organization"></a>确定外接程序的集中部署是否适用于您的组织
 
@@ -84,7 +84,7 @@ Microsoft Exchange 存储组织的租户中的加载项清单。 部署外接程
 
 ### <a name="centralized-deployment-compatibility-checker"></a>集中部署兼容性检查器
 
-使用集中部署兼容性检查器，可以验证租户上的用户是否设置为使用 Word、Excel 和 PowerPoint 的集中部署。 Outlook 支持不需要兼容性检查器。 在[此处](https://aka.ms/officeaddindeploymentorgcompatibilitychecker)下载兼容性检查器。
+使用集中部署兼容性检查器，可以验证租户上的用户是否设置为使用 Word、Excel 和 PowerPoint 的集中部署。 Outlook 支持不需要兼容性检查器。 下载 [兼容性检查器](https://aka.ms/officeaddindeploymentorgcompatibilitychecker)。
   
 #### <a name="run-the-compatibility-checker"></a>运行兼容性检查器
   
@@ -121,7 +121,7 @@ Microsoft Exchange 存储组织的租户中的加载项清单。 部署外接程
 - 支持的邮箱 - 如果使用已启用 OAuth 的邮箱
 
 > [!NOTE]
-> 使用中央部署 PowerShell 模块时不支持多重身份验证。
+> 使用中央部署 PowerShell 模块时不支持多重身份验证。 该模块仅适用于基本身份验证。
   
 ## <a name="user-and-group-assignments"></a>用户和组分配
 
@@ -155,7 +155,7 @@ Microsoft Exchange 存储组织的租户中的加载项清单。 部署外接程
   
 |**平台**|**调式信息**|
 |:-----|:-----|
-|Office  <br/> | Charles/Fiddler 日志  <br/>  租户 ID（ [了解如何操作](/onedrive/find-your-office-365-tenant-id.md)）  <br/>  CorrelationID。 查看其中一个 Office 页面的源并查找相关 ID 值并将其发送给支持人员：  <br/>`<input name=" **wdCorrelationId**" type="hidden" value=" **{BC17079E-505F-3000-C177-26A8E27EB623}**">`  <br/>  `<input name="user_id" type="hidden" value="1003bffd96933623"></form>`  <br/> |
+|Office  <br/> | Charles/Fiddler 日志  <br/>  租户 ID（ [了解如何操作](/onedrive/find-your-office-365-tenant-id)）  <br/>  CorrelationID。 查看其中一个 Office 页面的源并查找相关 ID 值并将其发送给支持人员：  <br/>`<input name=" **wdCorrelationId**" type="hidden" value=" **{BC17079E-505F-3000-C177-26A8E27EB623}**">`  <br/>  `<input name="user_id" type="hidden" value="1003bffd96933623"></form>`  <br/> |
 |丰富的客户端（Windows、Mac）  <br/> | Charles/Fiddler 日志  <br/>  最好将客户端应用 (生成号作为文件 **/帐户设置中的**)   <br/> |
 
 ## <a name="related-content"></a>相关内容

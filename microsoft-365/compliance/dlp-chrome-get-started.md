@@ -1,5 +1,5 @@
 ---
-title: Microsoft 合规性扩展（预览版）入门
+title: Microsoft 合规性扩展入门
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -19,14 +19,14 @@ ms.collection:
 search.appverid:
 - MET150
 description: 准备及部署 Microsoft 合规性扩展。
-ms.openlocfilehash: 6ae44a86d415161cd3d7adf40671f02d93fb83c6
-ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
+ms.openlocfilehash: 084d8fea1bffb012b4a4685dd28ec93df8e29b19
+ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52113860"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "52730506"
 ---
-# <a name="get-started-with-microsoft-compliance-extension-preview"></a>Microsoft 合规性扩展（预览版）入门
+# <a name="get-started-with-microsoft-compliance-extension"></a>Microsoft 合规性扩展入门
 
 使用这些过程推出 Microsoft 合规性扩展。
 
@@ -261,9 +261,8 @@ ms.locfileid: "52113860"
 
 ### <a name="known-issues-and-limitations"></a>已知问题和限制
 
-1. 不支持对文件夹上传执行拖放操作。
-2. 不支持对云出口执行阻止替代。
-3. 不支持并必须禁用 Incognito 模式。
+1. 不支持对云出口执行阻止替代。
+2. 不支持并必须禁用 Incognito 模式。
 
 ## <a name="next-steps"></a>后续步骤
 现在，你已载入设备，并且可以在“活动资源管理器”中查看活动数据，那么就可以继续下一步，在其中创建保护敏感项目的 DLP 策略。

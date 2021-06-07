@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: 适用于管理 Office 应用中针对桌面、移动和 Web 的敏感度标签的 IT 管理员的信息。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: dd3f1e7329612755a1806b5d9af8e13f07790cd6
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: a7ac7415ce5e7f88b21128846b7cff957e388fd5
+ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52625121"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "52730374"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>管理 Office 应用中的敏感度标签
 
@@ -387,54 +387,24 @@ ${If.App.<application type>}<your visual markings text> ${If.End}
 
 ## <a name="outlook-specific-options-for-default-label-and-mandatory-labeling"></a>Outlook 特定的默认标签和强制标签选项
 
-对于内置标签，请使用此页上的 [Outlook 功能表](#sensitivity-label-capabilities-in-outlook)以及 **默认标签和强制标签的不同设置** 行来标识支持这些功能的最低版本 Outlook。
+对于内置标签，请使用此页上的 [Outlook 功能表](#sensitivity-label-capabilities-in-outlook)以及 **默认标签和强制标签的不同设置** 行来标识支持这些功能的最低版本 Outlook。 所有版本的 Azure 信息保护统一标签客户端都支持这些特定于 Outlook 的选项。
 
-默认情况下，如果选择标签策略设置 **默认情况下将此标签应用于文档和电子邮件** 和 **要求用户将标签应用于其电子邮件或文档**，则配置选择将应用于电子邮件和文档。
+Outlook 应用支持的默认标签设置与文档的默认标签设置不同时：
 
-要对电子邮件应用不同的设置，请使用 PowerShell 高级设置：
+- 在标签策略向导的 **将默认标签应用于电子邮件** 页面，可指定将应用于所有未标记电子邮件的敏感度标签选项，或指定无默认标签。 此设置独立于向导中之前 **文档策略设置** 页面上的 **默认将此标签应用于文档** 设置。
 
-- **OutlookDefaultLabel**：如需 Outlook 应用其他默认标签或不应用任何标签，请使用此设置。
+如果 Outlook 应用不支持与文档的默认标签设置不同的默认标签设置：Outlook 将始终使用你为标签策略向导的 **文档策略设置** 页面上 **默认将此标签应用于文档** 指定的值。
 
-- **DisableMandatoryInOutlook**：如需 Outlook 不提示用户为未标记的电子邮件选择标签，请使用此设置。
+当 Outlook 应用支持关闭强制标签时：
 
-有关使用 PowerShell 配置这些设置的详细信息，请参阅下一节。
+- 在标签策略向导的 **策略设置** 页面上，选择 **要求用户向其电子邮件或文档应用标签**。 然后选择“**下一步**” > “**下一步**”，并清除复选框“**要求用户向电子邮件应用标签**”。 如果要对电子邮件和文档应用强制标签，请保持选中复选框。
 
-### <a name="powershell-advanced-settings-outlookdefaultlabel-and-disablemandatoryinoutlook"></a>PowerShell 高级设置 OutlookDefaultLabel 和 DisableMandatoryInOutlook
+当 Outlook 应用不支持关闭强制标签时：如果选择“**要求用户向其电子邮件或文档应用标签**”作为策略设置，Outlook 将始终提示用户为未标记的电子邮件选择标签。
 
-使用具有 *AdvancedSettings* 参数的 PowerShell，以及来自 [安全与合规中心 PowerShell](/powershell/exchange/scc-powershell) 的 [Set-LabelPolicy](/powershell/module/exchange/set-labelpolicy) 和 [New-LabelPolicy](/powershell/module/exchange/new-labelpolicy) cmdlet 可以支持这些设置。 以前仅 Azure 信息保护统一标记客户端支持这两种高级设置，现在内置标签支持这两种设置。
-
-PowerShell 示例，其中标签策略命名为 **全局**：
-
-- 要免除 Outlook 的默认标签：
-    
-    ````powershell
-    Set-LabelPolicy -Identity Global -AdvancedSettings @{OutlookDefaultLabel="None"}
-    ````
-
-- 要免除 Outlook 强制标签，请执行以下操作：
-    
-    ````powershell
-    Set-LabelPolicy -Identity Global -AdvancedSettings @{DisableMandatoryInOutlook="True"}
-    ````
-
-目前，只有 OutlookDefaultLabel 和 DisableMandatoryInOutlook 是内置标签和 Azure 信息保护客户端都支持的 PowerShell 高级设置。
-
-其他 PowerShell 高级设置仅支持 Azure 信息保护客户端。 有关为 Azure 信息保护客户端使用高级设置的更多信息，请参阅[管理员指南：Azure 信息保护统一标记客户端的自定义配置](/azure/information-protection/rms-client/clientv2-admin-guide-customizations#configuring-advanced-settings-for-the-client-via-powershell)。
-
-#### <a name="powershell-tips-for-specifying-the-advanced-settings"></a>指定高级设置的 PowerShell 提示
-
-若要为 Outlook 指定其他默认标签，请通过其 GUID 来标识标签。 要查找此值，可使用以下命令：
-
-````powershell
-Get-Label | Format-Table -Property DisplayName, Name, Guid
-````
-
-要删除标签策略中的任意一项高级设置，请使用相同的 AdvancedSettings 参数语法，同时指定一个空字符串值。例如：
-
-````powershell
-Set-LabelPolicy -Identity Global -AdvancedSettings @{OutlookDefaultLabel=""}
-````
-
+> [!NOTE]
+> 如果已通过使用 [Set-LabelPolicy](/powershell/module/exchange/set-labelpolicy) 或 [New-LabelPolicy](/powershell/module/exchange/new-labelpolicy) cmdlet 配置 PowerShell 高级设置 **OutlookDefaultLabel** 和 **DisableMandatoryInOutlook**：
+> 
+> 为这些 PowerShell 设置选择的值将反映在标签策略向导中，并自动适用于支持这些设置的 Outlook 应用。 其他 PowerShell 高级设置仍然仅支持 Azure 信息保护统一标签客户端。
 
 ## <a name="end-user-documentation"></a>最终用户文档
 

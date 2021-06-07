@@ -21,12 +21,12 @@ description: 管理Microsoft 365中心 - 了解本月添加的功能。
 ms.custom:
 - MACDashWhatsNew
 - AdminSurgePortfolio
-ms.openlocfilehash: 964689c431b45671a92dda62ccf8a083291213a3
-ms.sourcegitcommit: ddf6c25d1ed6387d07614f7042e033bad7f406f9
+ms.openlocfilehash: 654f8de8d931f26efbcba5b60d730a9d9e477e65
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "52639534"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52769064"
 ---
 # <a name="whats-new-in-the-microsoft-365-admin-center"></a>Microsoft 365管理中心的新增功能
 
@@ -56,17 +56,17 @@ ms.locfileid: "52639534"
 
 ### <a name="keep-track-of-support-ticket-updates-using-the-admin-mobile-app"></a>使用管理移动应用跟踪支持票证更新
 
-对于在租户中创建的所有服务请求，你现在可以跟踪票证状态、查看票证详细信息，以及通过向附件添加注释来提供/请求&信息。 
+对于在租户中创建的所有服务请求，你现在可以跟踪票证状态、查看票证详细信息，以及通过向附件添加注释来提供/请求&信息。
 
-:::image type="content" source="../media/whats-new-track-support-tickets.png" alt-text="屏幕截图：跟踪支持票证更新":::
+:::image type="content" source="../media/Keep-track-support-ticket-updates2.PNG" alt-text="屏幕截图：跟踪支持票证更新":::
 
-### <a name="stay-on-top-of-all-the-major-updates-to-the-app-and-your-microsoft-365-subscription"></a>随时了解应用和你的 Microsoft 365 订阅的Microsoft 365更新 
+### <a name="stay-on-top-of-all-the-major-updates-to-the-app-and-your-microsoft-365-subscription"></a>随时了解应用和你的 Microsoft 365 订阅的Microsoft 365更新
 
-- 通过消息中心推送通知了解 Microsoft 365 订阅的所有主要更新， (默认启用) 。 
+- 通过消息中心推送通知了解 Microsoft 365 订阅的所有主要更新， (默认启用) 。
 
 - 使用新增功能部分跟踪应用中 **提供的最新** 功能。 转到 **设置**  >  **新增功能？**
 
-:::image type="content" source="../media/whats-new-updates.png" alt-text="Screenshot： Track major updates and features":::
+:::image type="content" source="../media/Stay-on-top-of-updates.PNG" alt-text="Screenshot： Track major updates and features":::
 
 ## <a name="april-2021"></a>2021 年 4 月
 

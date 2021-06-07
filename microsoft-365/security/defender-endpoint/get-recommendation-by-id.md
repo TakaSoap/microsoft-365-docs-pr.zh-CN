@@ -14,12 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 45a151fc5855a4a2b1ba63a50b54737c90e6bdd1
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: 4ec4758453f43cb211143918ed5fe8fe83e91c3f
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51199509"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52771797"
 ---
 # <a name="get-recommendation-by-id"></a>按 ID 获取建议
 

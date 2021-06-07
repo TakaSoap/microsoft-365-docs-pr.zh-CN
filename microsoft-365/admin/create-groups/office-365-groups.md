@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 通过Microsoft 365组，可以通过向一组人员提供对共享资源集合的访问权限Microsoft 365跨组织推动团队合作。
-ms.openlocfilehash: f940872a3e4ba2aeeb62247c2898d5a4c0dec85f
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: 69f7e47bcfb9e0704f8c373cf1addf98ef898cfa
+ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52635746"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52782389"
 ---
 # <a name="overview-of-microsoft-365-groups-for-administrators"></a>面向管理员的 Microsoft 365 组概述
 
@@ -45,7 +45,7 @@ Microsoft 365组是跨组织推动所有团队合作的基础Microsoft 365。 �
 
 使用Microsoft 365组，不必手动为其中每个资源分配权限。 向组添加人员会自动授予他们所需的权限。
 
-除非将组创建限制为一组特定的人员，否则 [任何用户都可以创建组](../../solutions/manage-creation-of-groups.md)。 如果限制组创建，则无法创建组的用户将无法SharePoint网站、规划人员或团队。 这些服务要求创建它们的人能够创建组。 用户仍然可以参与组活动，例如，在 Planner 中创建任务Teams聊天，但如果他们是组的成员。
+除非将组创建限制为一组特定的人员，否则 [任何用户都可以创建组](../../solutions/manage-creation-of-groups.md)。 如果限制组创建，则无法创建组的用户将无法创建 SharePoint 网站、规划人员、团队、Outlook 组日历、Stream 组、Yammer 组、OneDrive 中的共享库或共享 Power BI 工作区。 这些服务要求创建它们的人能够创建组。 用户仍然可以参与组活动，例如，在 Planner 中创建任务Teams聊天，但如果他们是组的成员。
 
 组具有以下角色：
 

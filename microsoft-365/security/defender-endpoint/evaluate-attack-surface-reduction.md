@@ -9,17 +9,17 @@ ms.sitesec: library
 ms.topic: article
 localization_priority: Normal
 audience: ITPro
-author: dansimp
-ms.author: dansimp
-ms.reviewer: dansimp
+author: denisebmsft
+ms.author: deniseb
+ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 73b23427ff401f2a37c399131d6aa01330ff9de5
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: c2dea22cc8a0ebb875f83ebd5a3e42f723e5f254
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245296"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52771317"
 ---
 # <a name="evaluate-attack-surface-reduction-rules"></a>评估减少攻击面规则
 
@@ -37,10 +37,10 @@ ms.locfileid: "52245296"
 
 为运行以下任一版本和版本的设备设置攻击面减少Windows：
 
-- Windows 10 专业版版本[1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709)或更高版本
-- Windows 10 企业版版本[1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709)或更高版本
-- Windows服务器版本[1803 (半年频道) ](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1803)或更高版本
-- [Windows Server 2019](https://docs.microsoft.com/windows-server/get-started-19/whats-new-19)
+- Windows 10 专业版版本[1709](/windows/whats-new/whats-new-windows-10-version-1709)或更高版本
+- Windows 10 企业版版本[1709](/windows/whats-new/whats-new-windows-10-version-1709)或更高版本
+- Windows服务器版本[1803 (半年频道) ](/windows-server/get-started/whats-new-in-windows-server-1803)或更高版本
+- [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
 
 了解如何通过启用审核模式直接在你的组织中测试功能来评估攻击面减少规则。
 

@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 按照以下步骤删除以前员工的用户帐户。
-ms.openlocfilehash: 5ca428079091c4af44ef1efa9be3d7340e254995
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 735821c9c4d6edf3d23fa3535ed9fa6b3d294b8c
+ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52535934"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52782377"
 ---
 # <a name="step-7---delete-a-former-employees-user-account"></a>步骤 7 - 删除以前员工的用户帐户
 
@@ -38,7 +38,7 @@ ms.locfileid: "52535934"
 > [!IMPORTANT]
 > 如果设置了电子邮件转发或将帐户转换成共享邮箱，则不要删除该帐户。这两项都需要帐户来定位转发或共享邮箱。
 
-1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。
+1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。
 2. 选择要删除的员工的姓名。
 3. 在用户名称下，选择"删除 **用户"。** 选择此用户需要的选项，然后选择"删除 **用户"。** 如果已向其他用户提供访问此用户的电子邮件和OneDrive，则不必在此处再次执行。
 
@@ -48,7 +48,7 @@ ms.locfileid: "52535934"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOfR]
 
-如果你发现此视频有帮助，请查看[适用于小型企业和 Microsoft 365 新用户的完整培训系列](../../business-video/index.yml)。
+如果你觉得这段视频有用，请查看[适用于小型企业和 Microsoft 365 新手的完整培训系列](../../business-video/index.yml)。
 
 ## <a name="does-your-organization-use-active-directory"></a>组织是否使用 Active Directory？
 
@@ -56,7 +56,7 @@ ms.locfileid: "52535934"
 
 若要了解如何删除和还原 Active Directory 中的用户帐户，请参阅删除 [用户帐户](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc753730(v=ws.11))。
   
-如果您使用的是 Azure Active Directory，请参阅[Remove-MsolUser](https://go.microsoft.com/fwlink/?linkid=842230) PowerShell cmdlet。
+如果您使用的是 Azure Active Directory，请参阅[Remove-MsolUser](/powershell/module/msonline/remove-msoluser) PowerShell cmdlet。
   
 ## <a name="what-you-need-to-know-about-terminating-an-employees-email-session"></a>终止员工电子邮件会话须知事项
 
@@ -84,8 +84,6 @@ ms.locfileid: "52535934"
   
  **对于本地和 Exchange 数据中心中的用户最快** ：使用 Azure Active Directory 管理中心/Exchange 管理中心终止会话，同时在本地环境中进行更改。否则，DirSync 将覆盖 Azure Active Directory 管理中心/Exchange 管理中心中的更改。
   
-## <a name="related-articles"></a>相关文章
+## <a name="related-content"></a>相关内容
 
-[还原用户](restore-user.md)
-
-[重置密码](reset-passwords.md)
+[Restore a user (](restore-user.md) article) / [Reset passwords](reset-passwords.md) (article) 

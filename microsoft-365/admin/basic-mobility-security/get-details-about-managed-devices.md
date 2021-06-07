@@ -18,12 +18,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: 使用Windows PowerShell获取有关组织中基本移动和安全设备的详细信息。
-ms.openlocfilehash: 92fcd6f39ffff97d7a4ecd2a69626ece54b481b2
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 7cb2369c9a31210f26db12b0453e7a4228e1cccc
+ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50904248"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52782437"
 ---
 # <a name="get-details-about-basic-mobility-and-security-managed-devices"></a>获取有关基本移动性和安全性托管设备的详细信息
 
@@ -41,7 +41,7 @@ ms.locfileid: "50904248"
 >[!NOTE]
 >本文中的命令和脚本还返回有关由 Microsoft Intune 管理 [的任何设备的详细信息](https://www.microsoft.com/cloud-platform/microsoft-intune)。
 
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>准备工作
 
 需要设置一些操作以运行本文中所述的命令和脚本。
 
@@ -49,7 +49,7 @@ ms.locfileid: "50904248"
 
 有关这些步骤详细信息，请参阅 连接 [Microsoft 365 PowerShell。](/office365/enterprise/powershell/connect-to-office-365-powershell)
 
-1. 转到"Microsoft Online Services Sign-In IT 专业人员 [RTWl"，](https://www.microsoft.com/download/details.aspx?id=41950)然后选择   "下载 **Microsoft Online Services登录助手"。**
+1. 转到"Microsoft Online Services Sign-In IT 专业人员 [RTWl"，](https://download.microsoft.com/download/7/1/E/71EF1D05-A42C-4A1F-8162-96494B5E615C/msoidcli_32bit.msi)然后选择   "下载 **Microsoft Online Services登录助手"。**
 
 2. 安装用于 Windows PowerShell 的 Microsoft Azure Active Directory 模块，具体步骤如下：
 

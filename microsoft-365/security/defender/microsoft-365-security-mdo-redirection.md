@@ -1,5 +1,5 @@
 ---
-title: 将帐户从 Microsoft Defender for Office 365重定向到新的 Microsoft 365 安全中心
+title: 将帐户从安全Office 365中心重定向到新的安全Microsoft 365中心
 description: 如何从 Defender for Office 365重定向到Microsoft 365安全中心。
 keywords: Microsoft 365安全中心，开始Microsoft 365安全中心，安全中心重定向
 search.product: eADQiWindows 10XVcnh
@@ -20,14 +20,14 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 2a4b122b3ef3a1ddaf61d8f9373bec3e721db177
-ms.sourcegitcommit: 07e536f1a6e335f114da55048844e4a866fe731b
+ms.openlocfilehash: 703d3c3c9086aa2bdfada560c009e8738dffbb18
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "52651376"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52768965"
 ---
-# <a name="redirecting-accounts-from-microsoft-defender-for-office-365-to-the-microsoft-365-security-center"></a>将帐户从 Microsoft Defender for Office 365重定向到Microsoft 365安全中心
+# <a name="redirecting-accounts-from-office-365-security-and-compliance-center-to-microsoft-365-security-center"></a>将帐户从Office 365合规中心重定向到Microsoft 365安全中心
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -36,7 +36,7 @@ ms.locfileid: "52651376"
 - Microsoft 365 Defender
 - Defender for Office 365
 
-本文介绍如何通过启用从以前的 Microsoft 安全与合规中心 (protection.office.com 或 securitycenter.microsoft.com) 到 Microsoft 365 安全中心 (security.microsoft.com) 的自动重定向，将帐户路由到 Microsoft 365 安全中心。
+本文介绍如何通过启用从以前的 Office 365 安全与合规中心 (protection.office.com) 到 Microsoft 365 安全中心 (security.microsoft.com) 的自动重定向，将帐户路由到 Microsoft 365 安全中心。
 
 ## <a name="what-to-expect"></a>预期结果
 启用并激活自动重定向后，访问 Office 365 Security and Compliance (protection.office.com) 中与安全相关的功能的用户将自动路由到 Microsoft 365 安全中心 (https://security.microsoft.com) 。  
@@ -78,7 +78,7 @@ ms.locfileid: "52651376"
 
 可以随时再次启用此设置。
 
-禁用后，帐户将不再路由到 security.microsoft.com，并且你将再次有权访问以前的门户 -securitycenter.windows.com 或 securitycenter.microsoft.com。
+禁用后，帐户将不再路由到 security.microsoft.com，并且你将再次有权访问以前的门户-securitycenter.windows.com 或 securitycenter.microsoft.com。
 
 ## <a name="related-information"></a>相关信息
 - [Microsoft 365 安全中心概述](overview-security-center.md)
