@@ -17,12 +17,12 @@ ms.collection:
 description: 了解如何为 Web 上、单个用户或整个组织的 Outlook 和 Outlook 启用报告邮件或报告网络钓鱼外接程序。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 25c4f7d67fd4fa876544a17df0f4bc1abfd7b3e7
-ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
+ms.openlocfilehash: ff91cf4c99c9552ab5f5fecd7c6d2efee8d2d9a8
+ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52782929"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52789252"
 ---
 # <a name="enable-the-report-message-or-the-report-phishing-add-ins"></a>启用报告邮件或报告钓鱼外接程序
 
@@ -53,7 +53,6 @@ Microsoft 使用这些提交来提高电子邮件保护技术的有效性。 例
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>开始前，有必要了解什么？
 
 - 报告邮件外接程序和报告网络钓鱼外接程序适用于大多数Microsoft 365订阅和以下产品：
-
   - Outlook 网页版
   - Outlook 2013 SP1 或更高版本
   - Outlook 2016 for Mac
@@ -69,6 +68,9 @@ Microsoft 使用这些提交来提高电子邮件保护技术的有效性。 例
 - 管理员需为全局管理员角色组的成员。 有关详细信息，请参阅[安全与合规中心中的权限](permissions-in-the-security-and-compliance-center.md)。
 
 - 有关如何使用"报告邮件"功能报告邮件的信息，请参阅报告邮件中的误报和[Outlook。](report-false-positives-and-false-negatives.md)
+
+> [!IMPORTANT]
+> 我们不建议在应用内使用内置Outlook，因为它不使用用户[提交策略](./user-submission.md)。 我们建议改为使用报告邮件外接程序或报告网络钓鱼外接程序。
 
 ## <a name="get-the-report-message-add-in"></a>获取报告邮件外接程序
 
@@ -153,7 +155,7 @@ Microsoft 使用这些提交来提高电子邮件保护技术的有效性。 例
 
 2. 查找并选择 **"报告邮件** "外接程序。
 
-3. 在出现的 **"编辑报告** 消息"飞出控件中，根据组织情况查看和编辑设置。 完成后，请单击“保存”。
+3. 在出现的 **"编辑报告** 消息"飞出控件中，根据组织情况查看和编辑设置。 完成后，单击“**保存**”。
 
    ![设置邮件外接程序的外接程序](../../media/EditReportMessageAddIn.png)
 
@@ -227,4 +229,4 @@ Microsoft 使用这些提交来提高电子邮件保护技术的有效性。 例
 
 2. 查找并选择报告 **网络钓鱼** 外接程序。
 
-3. 在出现的 **"编辑报告** 钓鱼"飞出控件中，查看和编辑适合你的组织的设置。 完成后，请单击“保存”。
+3. 在出现的 **"编辑报告** 钓鱼"飞出控件中，查看和编辑适合你的组织的设置。 完成后，单击“**保存**”。

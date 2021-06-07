@@ -19,12 +19,12 @@ description: 管理员可以了解如何使用欺骗智能策略和欺骗智能�
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 821488f79186e1b5c306b587764377989346eea5
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: f0e5c83bc50197e30c12f8f7aeedc83930d7ff5e
+ms.sourcegitcommit: f3d1009840513703c38bab99a6e13a3656eae5ee
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52530882"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "52793204"
 ---
 # <a name="manage-spoofed-senders-using-the-spoof-intelligence-policy-and-spoof-intelligence-insight-in-eop"></a>使用 EOP 中的欺骗智能策略和欺骗智能见解管理欺骗发件人
 
@@ -69,7 +69,7 @@ ms.locfileid: "52530882"
   - [在 EOP 中配置防钓鱼策略](configure-anti-phishing-policies-eop.md)。
   - [在 Microsoft Defender 中为用户配置Office 365。](configure-atp-anti-phishing-policies.md)
 
-- 有关建议的欺骗智能设置，请参阅 [EOP 默认防钓鱼策略设置](recommended-settings-for-eop-and-office365.md#eop-default-anti-phishing-policy-settings)。
+- 有关建议的欺骗智能设置，请参阅 [EOP 防钓鱼策略设置](recommended-settings-for-eop-and-office365.md#eop-anti-phishing-policy-settings)。
 
 ## <a name="manage-spoofed-senders"></a>管理欺骗性发件人
 
@@ -96,7 +96,7 @@ ms.locfileid: "52530882"
    - **你的域**：发件人欺骗内部域中的用户。
    - **外部域**：发件人欺骗外部域中的用户。
 
-5. 单击 ![ "允许 ](../../media/scc-expand-icon.png) 欺骗 **？"列中的&quot;展开图标** &quot;。 选择 **&quot;** 是&quot;以允许欺骗发件人，或选择&quot; **否** &quot;将邮件标记为欺骗邮件。 该操作由默认反网络钓鱼策略或自定义防钓鱼策略控制， (默认值为&quot;将邮件移动到垃圾邮件文件夹") 。  有关详细信息，请参阅反网络钓鱼 [策略中的欺骗设置](set-up-anti-phishing-policies.md#spoof-settings)。
+5. 单击 ![ "允许 ](../../media/scc-expand-icon.png) 欺骗 **？"列中的&quot;展开图标** &quot;。 选择 **&quot;** 是&quot;以允许欺骗发件人，或选择&quot; **否** &quot;将邮件标记为欺骗邮件。 该操作由默认反网络钓鱼策略或自定义防钓鱼策略控制， (默认值为&quot;将邮件移动到垃圾邮件文件夹") 。  有关详细信息，请参阅[反钓鱼策略中的“欺骗”设置](set-up-anti-phishing-policies.md#spoof-settings)。
 
    ![显示欺骗性发件人飞出以及是否允许发件人欺骗的屏幕截图](../../media/c0c062fd-f4a4-4d78-96f7-2c22009052bb.jpg)
 

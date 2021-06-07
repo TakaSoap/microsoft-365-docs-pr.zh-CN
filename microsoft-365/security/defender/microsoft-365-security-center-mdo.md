@@ -17,12 +17,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.prod: m365-security
 ms.technology: m365d
-ms.openlocfilehash: 2322dbab657d6dd73ce79b3a8e52a3d968c45809
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: ec5d22caa52ffaa061637cb8c510a0efaf566b6a
+ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52770970"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52782893"
 ---
 # <a name="microsoft-defender-for-office-365-in-the-microsoft-365-security-center"></a>Microsoft 365 安全中心中适用于 Office 365 的 Microsoft Defender
 
@@ -50,12 +50,12 @@ ms.locfileid: "52770970"
 |分类||请参阅[Microsoft 365合规中心](https://compliance.microsoft.com/homepage)||
 |数据丢失防护||请参阅[Microsoft 365合规中心](https://compliance.microsoft.com/homepage)||
 |记录管理||请参阅[Microsoft 365合规中心](https://compliance.microsoft.com/homepage) ||
-|信息管理政策||请参阅[Microsoft 365合规中心](https://compliance.microsoft.com/homepage)||
+|信息治理||请参阅[Microsoft 365合规中心](https://compliance.microsoft.com/homepage)||
 |威胁管理|电子邮件和协作|||
 |邮件流|||请参阅[Exchange管理中心](https://admin.exchange.microsoft.com/#/)|
 |数据隐私||请参阅[Microsoft 365合规中心](https://compliance.microsoft.com/homepage)||
 |搜索|搜索|||
-|报表|报告|||
+|报告|报告|||
 |服务保证|设置|||
 |
 
@@ -139,7 +139,7 @@ ms.locfileid: "52770970"
 
 操作中心显示自动调查和响应功能创建调查。 Microsoft 365 Defender 中的自动自恢复功能可自动响应特定事件，帮助团队实现安全。
 
-[深入了解操作中心](m365d-action-center.md)
+[详细了解操作中心](m365d-action-center.md)
 
 #### <a name="threat-analytics"></a>威胁分析
 

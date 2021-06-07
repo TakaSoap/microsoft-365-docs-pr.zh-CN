@@ -15,12 +15,12 @@ ms.collection:
 description: 管理员可以了解如何创建、修改和删除 Microsoft Defender for Office 365 组织提供的高级防钓鱼Office 365。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 8cbe517ef2a702e3e4fd7f6af4ee1d7ed1dd13d2
-ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
+ms.openlocfilehash: 9af3824b245cd976d1e859d6ebc4efcda47325e0
+ms.sourcegitcommit: f3d1009840513703c38bab99a6e13a3656eae5ee
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52789125"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "52793084"
 ---
 # <a name="configure-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>在 Microsoft Defender for Office 365
 
@@ -164,7 +164,7 @@ Microsoft Defender for [Office 365](defender-for-office-365.md)中的反网络�
 
        返回到"管理用于模拟 **的自定义** 域"飞出控件，您可以通过从列表中选择一个或多个条目来删除条目。 可以使用"搜索"图标"搜索 ![ "框 ](../../media/m365-cc-sc-create-icon.png) **搜索** 条目。
 
-       至少选择一个条目后，将显示"删除"图标"删除"图标，可用于删除 ![ ](../../media/m365-cc-sc-delete-icon.png) 所选条目。
+       选择至少一个条目后，将显示"删除域"图标"删除"图标，您可以使用该图标删除 ![ ](../../media/m365-cc-sc-delete-icon.png) 所选条目。
 
    - 添加 **受信任** 发件人和域：单击"管理 **(nn**) 受信任发件人" () 和域 () ，为策略指定模拟保护例外。 在 **出现的"管理用于模拟保护的** 自定义域"飞出控件中，配置以下设置：
       - **发件人：** 验证是否 **选择了"发件人** "选项卡，然后单击" ![ 添加发件人图标 ](../../media/m365-cc-sc-create-icon.png) "。 在出现的 **"添加受信任** 发件人"飞出框中，输入电子邮件地址，然后单击"添加 **"。** 根据需要重复执行此步骤（次数不限）。 若要删除现有条目，请单击 ![ 该条目 ](../../media/m365-cc-sc-close-icon.png) 的"删除图标"。
@@ -243,7 +243,7 @@ Microsoft Defender for [Office 365](defender-for-office-365.md)中的反网络�
 
    完成后，单击“**下一步**”。
 
-7. 在出现的“**审阅**”页面上，查看你的设置。 可以在每个部分中选择“**编辑**”来修改该部分中的设置。
+7. 在出现的“**审阅**”页面上，查看你的设置。 可以在每个部分中选择“**编辑**”来修改该部分中的设置。 或者，你可以单击 **"上一** 步"或在向导中选择特定页面。
 
    完成后，单击"提交 **"。**
 

@@ -20,12 +20,12 @@ description: 管理员可以在 Microsoft 365 中学习威胁防护并为组织�
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 77b76a56c34a005b0e0742f207e2824359ae8cac
-ms.sourcegitcommit: a3359982fea01339c7377e3ee89f223788cee0bf
+ms.openlocfilehash: ac90aa853769b239386d422e0b196a1f6140bf95
+ms.sourcegitcommit: f3d1009840513703c38bab99a6e13a3656eae5ee
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "52696546"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "52793192"
 ---
 # <a name="protect-against-threats"></a>抵御威胁
 
@@ -101,45 +101,57 @@ ms.locfileid: "52696546"
 
    完成时，请单击“保存”。
 
-4. 返回策略详细信息飞出，**单击关闭。**
+4. 返回策略详细信息浮出控件，单击“**关闭**”。
 
 有关配置反恶意软件策略的详细说明，请参阅在 EOP 中配置 [反恶意软件策略](configure-anti-malware-policies.md)。
 
-## <a name="part-2---anti-phishing-protection"></a>第二部分 - 防钓鱼保护
+## <a name="part-2---anti-phishing-protection-in-eop-and-defender-for-office-365"></a>第 2 部分 - EOP 和 Defender for Office 365
 
 [反钓鱼软件防护](anti-phishing-protection.md)在包含 [EOP](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description) 的订阅中可用。 高级反钓鱼保护在 [Defender for Office 365](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description) 中可用。
 
-下列过程介绍了如何在 Microsoft Defender for Office 365 中配置反钓鱼策略。 这些步骤与在 EOP 中配置反钓鱼策略相似。
+有关反网络钓鱼策略的建议设置详细信息，请参阅[EOP anti-phishing policy settings](recommended-settings-for-eop-and-office365.md#eop-anti-phishing-policy-settings)和 Microsoft Defender for Office 365 中的反网络钓鱼[策略设置](recommended-settings-for-eop-and-office365.md#anti-phishing-policy-settings-in-microsoft-defender-for-office-365)。
 
-1. 在安全 [&中心，](https://protection.office.com)选择 **"威胁管理** \> **策略** \> **""防钓鱼"。**
+以下过程介绍如何配置默认的防钓鱼策略。 设置 Defender for Office 365中提供的信息会进行清晰标记。
 
-2. 单机“**默认策略**”。
+1. 打开 <https://security.microsoft.com/antiphishing> 。
 
-3. 在“**模拟**”中，单击“**编辑**”，然后指定下列设置：
+2. 在 **"防钓鱼"** 页面上，单击该名称，选择名为 **"Office365** 反钓鱼默认 (默认) "策略。
 
-   - 在“**添加保护用户**”选项卡中，“*打开*”防护。 然后添加用户，比如组织的董事会成员、CEO、CFO 和其他高级官员。 （你可以键入个人的电子邮件账号，或单击显示一个列表。）
+3. 在出现的策略详细信息飞出中，配置以下设置：
 
-   - 在“**添加保护域**”选项卡中，开大“**自动包含我拥有的域**”。 如果你有自定义的域，添加它们。
+   - **网络钓鱼阈值&保护** 部分：单击"编辑保护设置"，然后配置打开的"编辑保护设置"飞出控件中的以下设置：
+     - **网络钓鱼电子邮件阈值**：选择 <sup>\*</sup> **2 - (** 标准) 或 3 - 更主动 (严格 **) 。**
+     - **模拟** 部分 <sup>\*</sup> ：配置以下值：
+       - 选择"允许用户保护"，单击出现的"管理 **(nn)** 发件人 () "链接，然后添加内部和外部发件人，防止模拟，例如组织的会员、CEO、CFO 和其他高级领导。
+       - 选择 **"启用域以保护"，** 然后配置出现的以下设置：
+         - 选择 **"包括我拥有域**"以保护接受域中的内部发件人 (通过单击"查看我的域) 进行模拟"。
+         - 若要保护其他域中的发件人，请选择"包括自定义域"，单击出现的"管理 (nn) 自定义域 **() "** 链接，然后添加其他域防止模拟。
+     - 添加受信任的发件人和域部分：单击"管理 (nn) 受信任发件人 () 和域 <sup>\*</sup> (**) "** 以根据需要将发件人和发件人域例外配置为模拟保护。
+     - 邮箱智能设置 <sup>\*</sup> ：验证是否 **选择了"启用邮箱智能****"和"启用模拟保护的** 智能"。
+     - **欺骗** 部分：验证 **是否选择了"启用欺骗** 智能"。
 
-   - 在“**操作**”选项卡中，选择“**隔离消息**”，对“**模拟用户**”和“**模拟域**”选项适用。 同时，打开模拟安全提示。
+     完成后，单击“**保存**”。
 
-   - 在“**邮箱智能**”选项卡中，确保邮箱智能打开，且打开邮箱基于智能的模拟防护。 在“**如果模拟用户发送电子邮件**” 列表中，选择“**隔离此消息**”。
+   - **"** 操作"部分：单击 **"编辑操作** "，然后配置打开的"编辑 **操作** "飞出控件中的以下设置：
+     - **"邮件** 操作"部分：配置以下设置：
+       - **如果邮件被检测为模拟用户** <sup>\*</sup> ：请选择 **"隔离邮件"。**
+       - **如果邮件被检测为模拟域** <sup>\*</sup> ：选择 **隔离邮件**。
+       - **如果邮箱智能检测到模拟** 用户：选择"将邮件移动到收件人的垃圾邮件文件夹" ("标准) "或"隔离 (<sup>\*</sup> 严格) "。  
+       - **如果邮件被检测** 为欺骗邮件：选择"将邮件移动到收件人的垃圾邮件文件夹" (标准) 或"隔离 (严格) "。 
+     - **安全提示&** 指示器部分：配置以下设置：
+       - **显示用户模拟安全提示：** <sup>\*</sup> 选择 (启用) 。
+       - **显示域模拟安全提示：** <sup>\*</sup> 选择 (启用) 。
+       - **显示用户模拟异常字符安全提示：** 选择 <sup>\*</sup> (打开) 。
+       - **显示 (？)** 欺骗的未经身份验证的发件人：选择 (打开) 。
+       - **显示"via"标记**：如果 (此设置) ，请选择"打开"。
 
-   - 在“**添加信任的发送者和域**”选项卡中，指定任何你想添加的信任的发送者和域。
+     完成后，单击“**保存**”。
 
-   - 检查设置后，在“**检查你的设置**”选项卡中，“**保存**”。
+   <sup>\*</sup>此设置仅在 Defender for Office 365。
 
-4. 在“**欺骗**”中，单击“**编辑**”，然后指定下列设置：
+4. 单击 **"保存"，** 然后单击" **关闭"**
 
-   - 在“**欺骗筛选器设置**”选项卡中，确保反欺骗保护已开启。
-
-   - 在“**操作**”选项卡中，选择“**隔离此消息**”。
-
-   - 检查更改后，在“**检查你的设置**”选项卡中，“**保存**”。 （如果你没有做出任何更改，“**取消**。”）
-
-5. 关闭默认策略设置页面。
-
-若要了解关于反钓鱼策略选项详细信息，请参阅[在 Microsoft Defender for Office 365 中配置防钓鱼策略](configure-atp-anti-phishing-policies.md)。
+有关配置防钓鱼策略的详细说明，请参阅在[EOP](configure-anti-phishing-policies-eop.md)中配置防钓鱼策略和在 Microsoft Defender 中配置防钓鱼策略[Office 365。](configure-atp-anti-phishing-policies.md)
 
 ## <a name="part-3---anti-spam-protection-in-eop"></a>第 3 部分 - EOP 中的反垃圾邮件保护
 
@@ -147,15 +159,13 @@ ms.locfileid: "52696546"
 
 1. 打开 <https://security.microsoft.com/antispam> 。
 
-2. 在 **"反垃圾邮件策略"** 页上，通过单击名称从列表中选择名为"反垃圾邮件入站策略"的策略。
+2. 在 **"反垃圾邮件策略**"页上，单击该名称，从 ("默认) "列表中选择名为"反垃圾邮件入站策略"的策略。
 
-3. 在出现的策略详细信息飞出控件中，单击"批量电子邮件阈值"部分中的"编辑垃圾邮件阈值和&**属性"。**
+3. 在出现的策略详细信息飞出中，执行以下步骤：
+   - **批量电子邮件阈值&"垃圾邮件属性"** 部分：单击"**编辑垃圾邮件阈值和属性"。** 在 **出现的垃圾邮件阈值和属性** 飞出控件中，将"批量电子邮件阈值"设置为 5 (Strict) 或 6 (Standard) 。 完成后，单击“**保存**”。
+   - **允许和阻止的发件人和域** 部分：查看或编辑允许的发件人和允许的域。
 
-4. 在 **出现的垃圾邮件阈值和属性** 飞出控件中，将"批量电子邮件阈值"设置为 5 (Strict) 或 6 (Standard) 。 完成后，单击"保存 **"**
-
-5. 返回到策略详细信息飞出控件，转到允许和阻止的发件人和域部分，并查看或编辑允许的发件人和允许的域。
-
-6. 完成后，单击“关闭”。
+4. 完成后，单击“关闭”。
 
 有关配置反垃圾邮件策略的详细说明，请参阅在 EOP 中配置 [反垃圾邮件策略](configure-your-spam-filter-policies.md)。
 
